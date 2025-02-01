@@ -1,49 +1,35 @@
-{{- define "main" }}
-
-<header class="page-header">
-  <h1>{{ .Title }}</h1>
-  {{- if .Description }}
-  <div class="post-description">
-    {{ .Description }}
-  </div>
-  {{- end }}
-</header>
-
-{{/* get pages from the current page's section */}}
-{{/* in this way, archives.html could be used for section archives other than the only one archives of the whole site */}}
-{{- $sections := site.Params.mainSections }}
-{{- if .Section }}
-  {{- $sections = slice .Section }}
-{{- end }}
-{{- $pages := where (where site.RegularPages "Section" "in" $sections) "Params.hidden" "!=" true }}
-
-{{- range $pages.GroupByPublishDate "2006" }}
-{{- if ne .Key "0001" }}
-<div class="archive-year">
-  <h2 class="archive-year-header">
-    {{- replace .Key "0001" "" }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
-  </h2>
-  {{- range .Pages.GroupByDate "January" }}
-  <div class="archive-month">
-    <h3 class="archive-month-header">{{- .Key }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
-    <div class="archive-posts">
-      {{- range .Pages }}
-      <div class="archive-entry">
-        <h3 class="archive-entry-title">
-          {{- .Title | markdownify }}
-          {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-        </h3>
-        <div class="archive-meta">
-          {{- partial "post_meta.html" . -}}
+{{ define "body-class" }}template-archives{{ end }}
+{{ define "main" }}
+    <header>
+        {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
+        {{- $terms := $taxonomy.Pages -}}
+        {{ if $terms }}
+        <h2 class="section-title">{{ $taxonomy.Title }}</h2>
+        <div class="subsection-list">
+            <div class="article-list--tile">
+                {{ range $terms }}
+                    {{ partial "article-list/tile" (dict "context" . "size" "250x150" "Type" "taxonomy") }}
+                {{ end }}
+            </div>
         </div>
-        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-      </div>
-      {{- end }}
-    </div>
-  </div>
-  {{- end }}
-</div>
-{{- end }}
-{{- end }}
+        {{ end }}
+    </header>
 
-{{- end }}{{/* end main */}}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    {{ $filtered := ($pages | intersect $notHidden) }}
+
+    {{ range $filtered.GroupByDate "2006" }}
+    {{ $id := lower (replace .Key " " "-") }}
+    <div class="archives-group" id="{{ $id }}">
+        <h2 class="archives-date section-title"><a href="{{ $.RelPermalink }}#{{ $id }}">{{ .Key }}</a></h2>
+        <div class="article-list--compact">
+            {{ range .Pages }}
+                {{ partial "article-list/compact" . }}
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ partialCached "footer/footer" . }}
+{{ end }}

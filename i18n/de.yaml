@@ -1,33 +1,74 @@
-- id: prev_page
-  translation: "Vorherige Seite"
+toggleMenu:
+    other: Menü umschalten
 
-- id: next_page
-  translation: "Nächste Seite"
+darkMode:
+    other: Dunkler Modus
 
-- id: read_time
-  translation:
-    one: "1 Minute"
-    other: "{{ .Count }} Minuten"
+list:
+    page:
+        one: "{{ .Count }} Seite"
+        other: "{{ .Count }} Seiten"
 
-- id: words
-  translation:
-    one : "Wort"
-    other: "{{ .Count }} Wörter"
+    section:
+        other: Abschnitt
 
-- id: toc
-  translation: "Inhaltsverzeichnis"
+    subsection:
+        one: Unterabschnitt
+        other: Unterabschnitte
 
-- id: translations
-  translation: "Übersetzungen"
+article:
+    back:
+        other: Zurück
 
-- id: home
-  translation: "Home"
+    tableOfContents:
+        other: Inhaltsverzeichnis
 
-- id: edit_post
-  translation: "Bearbeiten"
+    relatedContent:
+        other: Verwandte Inhalte
 
-- id: code_copy
-  translation: "Kopieren"
+    lastUpdatedOn:
+        other: Zuletzt aktualisiert am
 
-- id: code_copied
-  translation: "Kopiert!"
+    readingTime:
+        one: "{{ .Count }} Minute Lesezeit"
+        other: "{{ .Count }} Minuten Lesezeit"
+
+notFound:
+    title:
+        other: Seite nicht gefunden
+
+    subtitle:
+        other: Diese Seite existiert nicht
+
+widget:
+    archives:
+        title:
+            other: Archiv
+
+        more:
+            other: Weitere
+
+    tagCloud:
+        title:
+            other: Schlagwörter
+
+    categoriesCloud:
+        title:
+            other: Kategorien
+
+search:
+    title:
+        other: Suche
+
+    placeholder:
+        other: Etwas tippen...
+
+    resultTitle:
+        other: "#PAGES_COUNT Seiten (#TIME_SECONDS Sekunden)"
+
+footer:
+    builtWith:
+        other: Erstellt mit {{ .Generator }}
+
+    designedBy:
+        other: Theme {{ .Theme }} gestaltet von {{ .DesignedBy }}

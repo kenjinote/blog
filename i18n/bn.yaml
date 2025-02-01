@@ -1,28 +1,73 @@
-- id: prev_page
-  translation: "পূর্বের পাতা"
+toggleMenu:
+    other: টগল মেনু
 
-- id: next_page
-  translation: "পরবর্তী পাতা"
+darkMode:
+    other: ডার্ক মোড
 
-- id: read_time
-  translation:
-    one : "১ মিনিট"
-    other: "{{ .Count }} মিনিট"
+list:
+    page:
+        one: "{{ .Count }} পাতা"
+        other: "{{ .Count }} পাতা"
 
-- id: toc
-  translation: "সূচিপত্র"
+    section:
+        other: অনুচ্ছেদ
 
-- id: translations
-  translation: "অনুবাদসমূহ"
+    subsection:
+        one: উপ-অনুচ্ছেদ
+        other: উপ-অনুচ্ছেদ
 
-- id: home
-  translation: "হোম"
+article:
+    back:
+        other: পেছনে
 
-- id: edit_post
-  translation: "সম্পাদনা করুন"
+    tableOfContents:
+        other: সূচিপত্র
 
-- id: code_copy
-  translation: "কপি করুন"
+    relatedContent:
+        other: সম্পর্কিত বিষয়বস্তু
 
-- id: code_copied
-  translation: "কপি হয়েছে!"
+    lastUpdatedOn:
+        other: সর্বশেষ আপডেট করা হয়েছে
+
+    readingTime:
+        one: "{{ .Count }} মিনিটে পড়া যাবে"
+        other: "{{ .Count }} মিনিটে পড়া যাবে"
+
+notFound:
+    title:
+        other: পাওয়া যায়নি
+
+    subtitle:
+        other: এই পাতাটি বিদ্যমান নেই
+
+widget:
+    archives:
+        title:
+            other: আর্কাইভ
+
+        more:
+            other: আরও
+
+    tagCloud:
+        title:
+            other: ট্যাগ
+    categoriesCloud:
+        title:
+            other: বিভাগ
+
+search:
+    title:
+        other: অনুসন্ধান
+
+    placeholder:
+        other: কিছু টাইপ করুন...
+
+    resultTitle:
+        other: "#PAGES_COUNT পাতা (#TIME_SECONDS সেকেন্ড)"
+
+footer:
+    builtWith:
+        other: "{{ .Generator }} দিয়ে নির্মিত"
+
+    designedBy:
+        other: "থিম {{ .Theme }} ডিজাইন করেছেন {{ .DesignedBy }}"

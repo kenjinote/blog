@@ -1,27 +1,73 @@
-- id: prev_page
-  translation: "Pag Prec"
+toggleMenu:
+    other: Toggle Menu
 
-- id: next_page
-  translation: "Pag Succ"
+darkMode:
+    other: Dark Mode
 
-- id: read_time
-  translation:
-    one: "1 minuto"
-    other: "{{ .Count }} minuti"
+list:
+    page:
+        one: "{{ .Count }} pagina"
+        other: "{{ .Count }} pagine"
 
-- id: words
-  translation:
-    one : "parola"
-    other: "{{ .Count }} parole"
+    section:
+        other: Sezione
 
-- id: toc
-  translation: "Tabella dei Contenuti"
+    subsection:
+        one: Sottosezione
+        other: Sottosezioni
 
-- id: translations
-  translation: "Traduzioni"
+article:
+    back:
+        other: Indietro
 
-- id: code_copy
-  translation: "copia"
+    tableOfContents:
+        other: Indice
 
-- id: code_copied
-  translation: "copiato!"
+    relatedContent:
+        other: Contenuti correlati
+
+    lastUpdatedOn:
+        other: Aggiornato il
+
+    readingTime:
+        one: "{{ .Count }} min per leggere"
+        other: "{{ .Count }} min per leggere"
+
+notFound:
+    title:
+        other: Non trovato
+    subtitle:
+        other: Questa pagina non esiste.
+
+widget:
+    archives:
+        title:
+            other: Archivi
+
+        more:
+            other: Di più
+
+    tagCloud:
+        title:
+            other: Tags
+
+    categoriesCloud:
+        title:
+            other: Categorie
+
+search:
+    title:
+        other: Cerca
+
+    placeholder:
+        other: Scrivi qualcosa...
+
+    resultTitle:
+        other: "#PAGES_COUNT pagine (#TIME_SECONDS secondi)"
+
+footer:
+    builtWith:
+        other: Realizzato con {{ .Generator }}
+
+    designedBy:
+        other: Tema {{ .Theme }} realizzato da {{ .DesignedBy }}

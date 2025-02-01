@@ -1,16 +1,73 @@
-- id: prev_page
-  translation: "Halaman Sebelumnya"
+toggleMenu:
+    other: Tampilkan Menu
 
-- id: next_page
-  translation: "Halaman Selanjutnya"
+darkMode:
+    other: Mode Gelap
 
-- id: read_time
-  translation:
-    one : "1 menit"
-    other: "{{ .Count }} menit"
+list:
+    page:
+        one: "{{ .Count }} halaman"
+        other: "{{ .Count }} halaman"
 
-- id: toc
-  translation: "Daftar Isi"
+    section:
+        other: Bagian
 
-- id: translations
-  translation: "Terjemahan"
+    subsection:
+        one: Subbagian
+        other: Subbagian
+
+article:
+    back:
+        other: Kembali
+
+    tableOfContents:
+        other: Daftar Isi
+
+    relatedContent:
+        other: Konten terkait
+
+    lastUpdatedOn:
+        other: Terakhir diperbarui pada
+
+    readingTime:
+        one: "Waktu Membaca: {{ .Count }} menit"
+        other: "Waktu Membaca: {{ .Count }} menit"
+
+notFound:
+    title:
+        other: Tidak ditemukan
+    subtitle:
+        other: Halaman yang Anda akses tidak ditemukan.
+
+widget:
+    archives:
+        title:
+            other: Arsip
+
+        more:
+            other: Lebih
+
+    tagCloud:
+        title:
+            other: Tag
+
+    categoriesCloud:
+        title:
+            other: Kategori
+
+search:
+    title:
+        other: Cari
+
+    placeholder:
+        other: Ketik sesuatu...
+
+    resultTitle:
+        other: "#PAGES_COUNT halaman (#TIME_SECONDS detik)"
+
+footer:
+    builtWith:
+        other: Dibangun dengan {{ .Generator }}
+
+    designedBy:
+        other: Tema {{ .Theme }} dirancang oleh {{ .DesignedBy }}

@@ -1,33 +1,72 @@
-- id: prev_page
-  translation: "Page Précédente"
+toggleMenu:
+    other: Afficher le menu
 
-- id: next_page
-  translation: "Page Suivante"
+darkMode:
+    other: Mode sombre
 
-- id: read_time
-  translation:
-    one : "1 min"
-    other: "{{ .Count }} min"
+list:
+    page:
+        one: "{{ .Count }} page"
+        other: "{{ .Count }} pages"
 
-- id: words
-  translation:
-    one : "mot"
-    other: "{{ .Count }} mots"
+    section:
+        other: Section
 
-- id: toc
-  translation: "Table des Matières"
+    subsection:
+        one: Sous-section
+        other: Sous-sections
 
-- id: translations
-  translation: "Traductions"
+article:
+    back:
+        other: Retour
 
-- id: home
-  translation: "Accueil"
+    tableOfContents:
+        other: Table des matières
 
-- id: edit_post
-  translation: "Modifier"
+    relatedContent:
+        other: Contenus liés
 
-- id: code_copy
-  translation: "copier"
+    lastUpdatedOn:
+        other: Dernière mise à jour le
 
-- id: code_copied
-  translation: "copié!"
+    readingTime:
+        one: "{{ .Count }} minute de lecture"
+        other: "{{ .Count }} minutes de lecture"
+
+notFound:
+    title:
+        other: Page non trouvée
+    subtitle:
+        other: Cette page n'existe pas.
+
+widget:
+    archives:
+        title:
+            other: Archives
+
+        more:
+            other: Autres
+
+    tagCloud:
+        title:
+            other: Mots clés
+    categoriesCloud:
+        title:
+            other: Catégories
+
+search:
+    title:
+        other: Rechercher
+
+    placeholder:
+        other: Cherchez un article, une publication, etc.
+
+    resultTitle:
+        other: "#PAGES_COUNT pages (#TIME_SECONDS secondes)"
+
+footer:
+    builtWith:
+        other: Généré avec {{ .Generator }}
+
+    designedBy:
+        other: Thème {{ .Theme }} conçu par {{ .DesignedBy }}

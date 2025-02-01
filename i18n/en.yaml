@@ -1,36 +1,73 @@
-- id: prev_page
-  translation: "Prev Page"
+toggleMenu:
+    other: Toggle Menu
 
-- id: next_page
-  translation: "Next Page"
+darkMode:
+    other: Dark Mode
 
-- id: read_time
-  translation:
-    one : "1 min"
-    other: "{{ .Count }} min"
+list:
+    page:
+        one: "{{ .Count }} page"
+        other: "{{ .Count }} pages"
 
-- id: words
-  translation:
-    one : "word"
-    other: "{{ .Count }} words"
+    section:
+        other: Section
 
-- id: toc
-  translation: "Table of Contents"
+    subsection:
+        one: Subsection
+        other: Subsections
 
-- id: translations
-  translation: "Translations"
+article:
+    back:
+        other: Back
 
-- id: home
-  translation: "Home"
+    tableOfContents:
+        other: Table of contents
 
-- id: edit_post
-  translation: "Edit"
+    relatedContent:
+        other: Related content
 
-- id: code_copy
-  translation: "copy"
+    lastUpdatedOn:
+        other: Last updated on
 
-- id: code_copied
-  translation: "copied!"
+    readingTime:
+        one: "{{ .Count }} minute read"
+        other: "{{ .Count }} minute read"
 
-- id: comments
-  translation: "Comments"
+notFound:
+    title:
+        other: Not Found
+
+    subtitle:
+        other: This page does not exist
+
+widget:
+    archives:
+        title:
+            other: Archives
+
+        more:
+            other: More
+
+    tagCloud:
+        title:
+            other: Tags
+    categoriesCloud:
+        title:
+            other: Categories
+
+search:
+    title:
+        other: Search
+
+    placeholder:
+        other: Type something...
+
+    resultTitle:
+        other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
+
+footer:
+    builtWith:
+        other: Built with {{ .Generator }}
+
+    designedBy:
+        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}

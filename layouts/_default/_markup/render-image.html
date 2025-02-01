@@ -1,26 +1,41 @@
-{{- $url := urls.Parse .Destination -}}
-{{- if $url.Scheme -}}
-  {{/* third party image */}}
-  <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ $.Text }}" {{ with $.Title}} title="{{ . }}" {{ end }} />
-{{- else -}}
-  {{/* internal image */}}
-  {{- $img := .Page.Resources.GetMatch .Destination -}}
-  {{- if not $img -}}
-    {{- $img = resources.Get .Destination -}}
-  {{- end -}}
+{{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
+{{- $Permalink := .Destination | relURL | safeURL -}}
+{{- $alt := .PlainText | safeHTML -}}
+{{- $Width := 0 -}}
+{{- $Height := 0 -}}
+{{- $Srcset := "" -}}
 
-  {{- if $img -}}
-    {{- if eq $img.MediaType.MainType "video" -}}
-      <figure>
-      <video class="video-shortcode" preload="metadata" controls>
-        <source src="{{ $img.RelPermalink }}">
-        There should have been a video here but your browser does not seem to support it.
-      </video>
-      </figure>
-    {{- else -}}
-      <img loading="lazy" src="{{ $img.RelPermalink }}" type="" alt="{{ $.Text }}" {{ with $.Title}} title="{{ . }}" {{ end }} />
-    {{- end -}}
-  {{- else -}}
-    {{- warnf "No image found for %s from %s" .Destination .Page.File }}
-  {{- end -}}
+{{/* SVG and external images won't work with gallery layout, because their width and height attributes are unknown */}}
+{{- $galleryImage := false -}}
+
+{{- if $image -}}
+	{{- $notSVG := ne (path.Ext .Destination) ".svg" -}}
+	{{- $Permalink = $image.RelPermalink -}}
+
+	{{- if $notSVG -}}
+		{{- $Width = $image.Width -}}
+		{{- $Height = $image.Height -}}
+		{{- $galleryImage = true -}}
+
+		{{- if (default true .Page.Site.Params.imageProcessing.content.enabled) -}}
+			{{- $small := $image.Resize `480x` -}}
+			{{- $big := $image.Resize `1024x` -}}
+			{{- $Srcset = printf `%s 480w, %s 1024w` $small.RelPermalink $big.RelPermalink -}}
+		{{- end -}}
+	{{- end -}}
 {{- end -}}
+
+<img src="{{ $Permalink }}"
+	{{ with $Width }}width="{{ . }}"{{ end }}
+	{{ with $Height }}height="{{ . }}"{{ end }}
+	{{ with $Srcset }}srcset="{{ . }}"{{ end }}
+	loading="lazy"
+	{{ with $alt }}
+		alt="{{ . }}"
+	{{ end }}
+	{{ if $galleryImage }}
+		class="gallery-image" 
+		data-flex-grow="{{ div (mul $image.Width 100) $image.Height }}"
+		data-flex-basis="{{ div (mul $image.Width 240) $image.Height }}px"
+	{{ end }}
+>

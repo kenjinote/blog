@@ -1,6 +1,4 @@
-.env
-.env.build
-/.idea/
-/.hugo_build.lock
-/public/
-/resources/
+public
+resources
+assets/jsconfig.json
+.hugo_build.lock

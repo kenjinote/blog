@@ -1,25 +1,72 @@
-- id: prev_page
-  translation: "이전 페이지"
+toggleMenu:
+    other: 메뉴 여닫기
 
-- id: next_page
-  translation: "다음 페이지"
+darkMode:
+    other: 다크 모드
 
-- id: read_time
-  translation:
-    one : "1 분"
-    other: "{{ .Count }} 분"
+list:
+    page:
+        one: "{{ .Count }} 페이지"
+        other: "{{ .Count }} 페이지"
 
-- id: toc
-  translation: "목차"
+    section:
+        other: 섹션
 
-- id: translations
-  translation: "번역"
+    subsection:
+        one: 서브섹션
+        other: 서브섹션
 
-- id: home
-  translation: "홈페이지"
+article:
+    back:
+        other: 뒤로가기
 
-- id: code_copy
-  translation: "복사"
+    tableOfContents:
+        other: 목차
+        
+    relatedContent:
+        other: 관련 글
+        
+    lastUpdatedOn:
+        other: "마지막 수정: "
+        
+    readingTime:
+        one: "{{ .Count }} 분 정도"
+        other: "{{ .Count }} 분 정도"
 
-- id: code_copied
-  translation: "복사완료!"
+notFound:
+    title:
+        other: 찾을 수 없음
+        
+    subtitle:
+        other: 페이지를 찾을 수 없습니다.
+
+widget:
+    archives:
+        title:
+            other: 보관함
+        more:
+            other: 더보기
+            
+    categoriesCloud:
+        title:
+            other: 카테고리
+            
+    tagCloud:
+        title:
+            other: 태그
+
+search:
+    title:
+        other: 검색
+        
+    placeholder:
+        other: 검색어를 입력하세요...
+        
+    resultTitle:
+        other: "#PAGES_COUNT 페이지 (#TIME_SECONDS 초)"
+
+footer:
+    builtWith:
+        other: "{{ .Generator }}로 만듦"
+    designedBy:
+        other: "{{ .DesignedBy }}의 {{ .Theme }} 테마 사용 중"

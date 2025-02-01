@@ -1,6 +1,14 @@
-<figure>
-<video class="video-shortcode" preload="{{ .Get "preload" }}" controls>
-  <source src="{{ .Get "src" }}" type="{{ .Get "type" }}">
-  There should have been a video here but your browser does not seem to support it.
-</video>
-</figure>
+{{- $src := .Get "src" | default (.Get 0) -}}
+<div class="video-wrapper">
+    <video
+    controls
+    src="{{- $src -}}"
+    {{ with .Get "poster" }}poster="{{- . -}}"{{ end }}
+    {{ with .Get "autoplay" }}autoplay{{ end }}
+    >
+        <p>
+            Your browser doesn't support HTML5 video. Here is a
+            <a href="{{- $src -}}">link to the video</a> instead.
+        </p>
+    </video>
+</div>

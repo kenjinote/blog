@@ -1,28 +1,73 @@
-- id: prev_page
-  translation: "صفحه قبلی"
+toggleMenu:
+    other: منو
 
-- id: next_page
-  translation: "صفحه بعدی"
+darkMode:
+    other: حالت شب
 
-- id: read_time
-  translation:
-    one: "۱ دقیقه"
-    other: "{{ .Count }} دقیقه"
+list:
+    page:
+        one: "{{ .Count }} صفحه"
+        other: "{{ .Count }} صفحه"
 
-- id: toc
-  translation: "فهرست مطالب"
+    section:
+        other: بخش
 
-- id: translations
-  translation: "ترجمه ها"
+    subsection:
+        one: زیربخش
+        other: زیربخش
 
-- id: home
-  translation: "خانه"
+article:
+    back:
+        other: قبلی
 
-- id: edit_post
-  translation: "ویرایش"
+    tableOfContents:
+        other: فهرست
 
-- id: code_copy
-  translation: "کپی"
+    relatedContent:
+        other: مطالب مرتبط
 
-- id: code_copied
-  translation: "کپی شد!"
+    lastUpdatedOn:
+        other: آخرین بروزرسانی در
+
+    readingTime:
+        one: "مطالعه در {{ .Count }} دقیقه"
+        other: "مطالعه در {{ .Count }} دقیقه"
+
+notFound:
+    title:
+        other: یافت نشد
+
+    subtitle:
+        other: این صحه وجود ندارد
+
+widget:
+    archives:
+        title:
+            other: آرشیو
+
+        more:
+            other: بیشتر
+
+    tagCloud:
+        title:
+            other: تگ ها
+    categoriesCloud:
+        title:
+            other: دسته بندی
+
+search:
+    title:
+        other: جستجو
+
+    placeholder:
+        other: تایپ کنید ...
+
+    resultTitle:
+        other: "#PAGES_COUNT صفحه (#TIME_SECONDS ثانیه)"
+
+footer:
+    builtWith:
+        other: قدرت گرفته از {{ .Generator }}
+
+    designedBy:
+        other: قالب {{ .Theme }} ساخته شده توسط {{ .DesignedBy }}

@@ -1,78 +1,46 @@
-{{- define "main" }}
-{{- $isNewsletter := eq .Type "newsletter" }}
-
-<article class="post-single">
-  <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
-
-    {{- if $isNewsletter -}}
-      {{- partial "newsletter_brand.html" . }}
+{{ define "body-class" }}
+    article-page
+    {{/* 
+        Enable the right sidebar if
+            - Widget different from 'TOC' is enabled
+            - TOC is enabled and not empty
+    */}}
+    {{- $HasWidgetNotTOC := false -}}
+    {{- $TOCWidgetEnabled := false -}}
+    {{- range .Site.Params.widgets.page -}}
+        {{- if ne .type "toc" -}}
+            {{ $HasWidgetNotTOC = true -}}
+        {{- else -}}
+            {{ $TOCWidgetEnabled = true -}}
+        {{- end -}}
     {{- end -}}
-    <h1 class="post-title">
-      {{- if $isNewsletter -}}
-        {{- replace .Title (.Param "titlePrefix") (.Param "titlePrefixReplace") -}}
-      {{- else -}}
-        {{- .Title -}}
-      {{- end -}}
-      {{- if .Draft -}}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end -}}
-    </h1>
-    {{- if .Description }}
-    <div class="post-description">
-      {{- .Description -}}
-    </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <div class="post-meta">
-      {{- partial "post_meta.html" . -}}
-      {{/* TODO move to footer */}}
-      {{/* partial "edit_post.html" . */}}
-      {{/* partial "post_canonical.html" . */}}
-    </div>
-    {{- end }}
-  </header>
-  {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
-  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
-  {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
-  {{- end }}
 
-  {{- if .Content }}
-  <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-  </div>
-  {{- end }}
+    {{- $TOCManuallyDisabled := eq .Params.toc false -}}
+    {{- $TOCEnabled := and (not $TOCManuallyDisabled) $TOCWidgetEnabled -}}
+    {{- $hasTOC := ge (len .TableOfContents) 100 -}}
+    {{- .Scratch.Set "TOCEnabled" (and $TOCEnabled $hasTOC) -}}
+    
+    {{- .Scratch.Set "hasWidget" (or $HasWidgetNotTOC (and $TOCEnabled $hasTOC)) -}}
+{{ end }}
 
-  <footer class="post-footer">
-    {{- if (.Param "socialLinks") }}
-    {{- partial "social_links.html" . }}
-    {{- end }}
+{{ define "main" }}
+    {{ partial "article/article.html" . }}
 
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
+    {{ if .Params.links }}
+        {{ partial "article/components/links" . }}
+    {{ end }}
 
-    {{- if $isNewsletter }}
-      <div class="newsletter-sub">
-        <div class="notice">
-          {{- if site.Params.newsletter.notice.usePartial }}
-            {{- partial "newsletter_notice.html"}}
-          {{- else }}
-            {{- site.Params.newsletter.notice.content | default "Thanks for reading, if you like it, please subscribe below." }}
-          {{- end }}
-        </div>
-        {{- partial "newsletter_sub_form.html"}}
-      </div>
-    {{- end }}
+    {{ partial "article/components/related-content" . }}
+     
+    {{ if not (eq .Params.comments false) }}
+        {{ partial "comments/include" . }}
+    {{ end }}
 
-    {{- partial "post_footer.html" . }}
-  </footer>
+    {{ partialCached "footer/footer" . }}
 
-  {{- if not (.Param "noComments") }}
-    <div class="comments-separator"></div>
-    {{- partial "comments.html" . }}
-  {{- end }}
-</article>
+    {{ partialCached "article/components/photoswipe" . }}
+{{ end }}
 
-{{- end }}{{/* end main */}}
+{{ define "right-sidebar" }}
+    {{ if .Scratch.Get "hasWidget" }}{{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}{{ end}}
+{{ end }}

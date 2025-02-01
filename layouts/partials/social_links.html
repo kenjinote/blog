@@ -1,7 +1,0 @@
-<div class="social-links">
-  {{- with .Params.socialLinks.twitter }}
-    {{- if (and .id .user) }}
-    {{ partial "social_quote_tweet.html" (dict "user" .user "id" .id "title" "Discuss on Twitter") }}
-    {{- end }}
-  {{- end }}
-</div>

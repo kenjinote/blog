@@ -1,33 +1,59 @@
-- id: prev_page
-  translation: "Vorige"
+toggleMenu:
+    other: Open Menu
 
-- id: next_page
-  translation: "Volgende"
+darkMode:
+    other: Donkere modus
 
-- id: read_time
-  translation:
-      one: "1 min"
-      other: "{{ .Count }} min"
+list:
+    page:
+        one: "{{ .Count }} pagina"
+        other: "{{ .Count }} pagina's"
 
-- id: words
-  translation:
-    one : "woord"
-    other: "{{ .Count }} woorden"
+    section:
+        other: Sectie
 
-- id: toc
-  translation: "Inhoudsopgave"
+    subsection:
+        one: Subsectie
+        other: Subsecties
 
-- id: translations
-  translation: "Vertalingen"
+article:
+    relatedContent:
+        other: Gerelateerde inhoud
+    lastUpdatedOn:
+        other: Laatst bijgewerkt op
+    readingTime:
+        other: "{{ .Count }} leestijd"
 
-- id: home
-  translation: "Startpagina"
+notFound:
+    title:
+        other: Niet gevonden
+    subtitle:
+        other: Deze pagina bestaat niet.
 
-- id: edit_post
-  translation: "Bewerk"
+widget:
+    archives:
+        title:
+            other: Archief
+        more:
+            other: Meer
+    tagCloud:
+        title:
+            other: Tags
 
-- id: code_copy
-  translation: "kopieer"
+    categoriesCloud:
+        title:
+            other: Categorie
 
-- id: code_copied
-  translation: "gekopieerd!"
+search:
+    title:
+        other: Zoeken
+    placeholder:
+        other: Typ iets
+    resultTitle:
+        other: "#PAGES_COUNT pagina's (#TIME_SECONDS seconden)"
+
+footer:
+    builtWith:
+        other: Gemaakt met {{ .Generator }}
+    designedBy:
+        other: Theme {{ .Theme }} ontworpen door {{ .DesignedBy }}

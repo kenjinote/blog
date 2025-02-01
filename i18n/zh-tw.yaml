@@ -1,33 +1,73 @@
-- id: prev_page
-  translation: "上一篇"
+toggleMenu:
+    other: 切換選單
 
-- id: next_page
-  translation: "下一篇"
+darkMode:
+    other: 夜晚模式
 
-- id: read_time
-  translation:
-    one : "1 分鐘"
-    other: "{{ .Count }} 分鐘"
+list:
+    page:
+        one: "第 {{ .Count }} 頁"
+        other: "第 {{ .Count }} 頁"
 
-- id: words
-  translation:
-    one: "字"
-    other: "{{ .Count }} 字"
+    section:
+        other: 段落
 
-- id: toc
-  translation: "目錄"
+    subsection:
+        one: 小節
+        other: 小節
 
-- id: translations
-  translation: "語言"
+article:
+    back:
+        other: 返回
 
-- id: home
-  translation: "首頁"
+    tableOfContents:
+        other: 目錄
 
-- id: edit_post
-  translation: "編輯"
+    relatedContent:
+        other: 相關文章
 
-- id: code_copy
-  translation: "複製"
+    lastUpdatedOn:
+        other: 最後更新
 
-- id: code_copied
-  translation: "已複製！"
+    readingTime:
+        one: "閱讀時間: {{ .Count }} 分鐘"
+        other: "閱讀時間: {{ .Count }} 分鐘"
+
+notFound:
+    title:
+        other: 404 錯誤
+
+    subtitle:
+        other: 頁面不存在
+
+widget:
+    archives:
+        title:
+            other: 紀錄
+
+        more:
+            other: 更多
+
+    tagCloud:
+        title:
+            other: 標籤雲
+    categoriesCloud:
+        title:
+            other: 分類
+
+search:
+    title:
+        other: 搜尋
+
+    placeholder:
+        other: 輸入關鍵字...
+
+    resultTitle:
+        other: "#PAGES_COUNT 個結果 （用時 #TIME_SECONDS 秒）"
+
+footer:
+    builtWith:
+        other: 使用 {{ .Generator }} 建立
+
+    designedBy:
+        other: 主題 {{ .Theme }} 由 {{ .DesignedBy }} 設計

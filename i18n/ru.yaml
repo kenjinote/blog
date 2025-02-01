@@ -1,23 +1,63 @@
-- id: prev_page
-  translation: "Предыдущая"
+toggleMenu:
+    other: Показать/скрыть меню
 
-- id: next_page
-  translation: "Следующая"
+darkMode:
+    other: Тёмный режим
 
-- id: read_time
-  translation: "{{ .Count }} мин"
+list:
+    page:
+        one: "{{ .Count }} страница"
+        few: "{{ .Count }} страницы"
+        many: "{{ .Count }} страниц"
+        other: "{{ .Count }} страниц"
 
-- id: toc
-  translation: "Оглавление"
+    section:
+        other: Раздел
 
-- id: translations
-  translation: "Переводы"
+    subsection:
+        one: Подраздел
+        few: Подразделы
+        many: Подразделы
+        other: Подразделы
 
-- id: home
-  translation: "Главная"
+article:
+    back:
+        other: Назад
+    relatedContent:
+        other: Также рекомендуем
+    lastUpdatedOn:
+        other: Обновлено
+    tableOfContents: 
+        other: Содержание
+    readingTime: 
+        other: "Время чтения: {{ .Count }} мин."
 
-- id: code_copy
-  translation: "копировать"
+notFound:
+    title:
+        other: Не найдено
+    subtitle:
+        other: Запрашиваемая страница не существует
 
-- id: code_copied
-  translation: "скопировано!"
+widget:
+    archives:
+        title:
+            other: Архивы
+        more:
+            other: Ещё
+    tagCloud:
+        title:
+            other: Теги
+
+search:
+    title:
+        other: Поиск
+    placeholder:
+        other: Введите что-нибудь...
+    resultTitle:
+        other: "Найдено #PAGES_COUNT страниц (за #TIME_SECONDS с.)"
+
+footer:
+    builtWith:
+        other: Создано при помощи {{ .Generator }}
+    designedBy:
+        other: Тема {{ .Theme }}, дизайн {{ .DesignedBy }}

@@ -1,4 +1,0 @@
-<p><details {{ if (eq (.Get "openByDefault") true) }} open=true {{ end }}>
-  <summary markdown="span">{{ .Get 0 | markdownify }}</summary>
-  {{ .Page.RenderString .Inner }}
-</details></p>

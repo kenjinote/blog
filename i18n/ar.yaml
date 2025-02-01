@@ -1,22 +1,74 @@
-- id: prev_page
-  translation: "الصفحة السابقة"
+toggleMenu:
+    other: اخفي القائمة
 
-- id: next_page
-  translation: "الصفحة التالية"
+darkMode:
+    other: الوضع الداكن
 
-- id: read_time
-  translation:
-    one: "دقيقة واحدة"
-    two: "دقيقتان"
-    few: "بضع ثوان"
-    zero: "الآن"
-    other: "دقائق {{ .Count }}"
+list:
+    page:
+        one: "{{ .Count }} صفحه"
+        other: "{{ .Count }} صفحات"
 
-- id: toc
-  translation: "فهرس المحتوى"
+    section:
+        other: قسم
 
-- id: translations
-  translation: "ترجمات أخرى"
-  
-- id: home
-  translation: "الصفحة الرئيسية"
+    subsection:
+        one: قسم فرعي
+        other: اقسام فرعية
+
+article:
+    back:
+        other: خلف
+
+    tableOfContents:
+        other: جدول المحتويات
+
+    relatedContent:
+        other: محتوى مشابهه
+        
+    lastUpdatedOn:
+        other: التعديل الاخير
+
+    readingTime:
+        one: "تُقرأ خلال دقيقة"
+        other: "تُقرأ خلال {{ .Count }} دقائق"
+
+notFound:
+    title:
+        other: غير موجود
+
+    subtitle:
+        other: تعذر العثور على الصفحة المطلوبة.
+
+widget:
+    archives:
+        title:
+            other: الارشيفات
+
+        more:
+            other: اكثر
+
+    tagCloud:
+        title:
+            other: وسوم
+            
+    categoriesCloud:
+        title:
+            other: التصنيفات
+
+search:
+    title:
+        other: بحث
+
+    placeholder:
+        other: اكتب...
+
+    resultTitle:
+        other: "#PAGES_COUNT نتيجة (#TIME_SECONDS ثواني)"
+
+footer:
+    builtWith:
+        other: "مبني بستخدام {{ .Generator }}"
+        
+    designedBy:
+        other:  "قالب {{ .Theme }} مصمم من {{ .DesignedBy }}"

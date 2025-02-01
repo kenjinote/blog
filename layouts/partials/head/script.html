@@ -1,0 +1,3 @@
+{{ if or .Params.mermaid .Site.Params.mermaid }}
+<script src="{{"https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js" | relURL}}"></script>
+{{ end }}
