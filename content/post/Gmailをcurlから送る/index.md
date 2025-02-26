@@ -29,8 +29,6 @@ Content-Type: text/plain; charset="UTF-8"
 
 上記のファイルを作成して、以下のコマンドを実行します。
 
-```
-
 ```bash
 curl --url "smtps://smtp.gmail.com:465" --ssl-reqd --mail-from "from@gmail.com" --mail-rcpt "to@gmail.com" --user "from@gmail.com:xxxxxxxxxxxxxxxx" --upload-file mail.txt
 ```
