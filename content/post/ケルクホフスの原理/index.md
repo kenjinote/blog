@@ -3,7 +3,7 @@ title: 'ケルクホフスの原理'
 date: 2025-04-16T23:53:08+09:00
 tags: ["ケルクホフスの原理", "暗号"]
 draft: false
-image: "img_1.png"
+image: "img_2.png"
 ---
 
 # ケルクホフスの原理
@@ -118,4 +118,3 @@ image: "img_1.png"
 ---
 
 ![img.png](img.png "Auguste Kerckhoffs")
-
