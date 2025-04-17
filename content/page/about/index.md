@@ -15,7 +15,7 @@ menu:
       icon: user
 ---
 
-![img.png](img.png)
+![](img_1.png)
 
 # このブログって何を書いてるの？
 
