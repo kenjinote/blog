@@ -26,7 +26,7 @@ services:
         shortname: "kenji-blog"
     # GA Tracking ID
     googleAnalytics:
-        id: "G-7T00BV6PNK"
+        id: "GT-5R8HJJC"
 
 pagination:
     pagerSize: 5
