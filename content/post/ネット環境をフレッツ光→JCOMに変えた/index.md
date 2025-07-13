@@ -3,13 +3,14 @@ title: 'ネット環境をフレッツ光→J:COMに変えた'
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","フレッツ光","ネット回線"]
 draft: false
+image: "jcom.png"
 ---
 
 # 自宅のネット環境をフレッツ光からJ:COMに変更
 
-![](./images/flets_hikari.png)
+![](flets_hikari.png)
 
-![](./images/jcom.png)
+![](jcom.png)
 
 知人からの紹介もあり、自宅のネット回線をフレッツ光からJ:COMに変えました。理由は,
 
@@ -41,7 +42,7 @@ draft: false
 - 2022/09/06 13:30頃　3分から5分ぐらい
 - その後何度か・・・
 
-![ネットワーク診断](images/trouble_shooting.png)
+![ネットワーク診断](trouble_shooting.png)
 
 DNSが問題みたいなので、[ここ](https://internet.watch.impress.co.jp/docs/column/shimizu/1367271.html)を参考にDNSサーバを設定しました。
 これでどうなるか・・・DNSの設定でも接続できない状態に陥ったので、サポートに問い合わせをしたところ、緊急のメンテナンスをしているとのこと・・・。問い合わせ直後から接続状態がよくなったので何かしら対策をしてもらえたと思います。
