@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft MVP（2024-2025）を再受賞しました'
+title: 'Microsoft MVP（2025-2026）を再受賞しました'
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
