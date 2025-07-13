@@ -1,18 +1,18 @@
 ---
-title: 'Visual Studio Code に Qt All Extensions Pack を入れてみた'
+title: 'Visual Studio Code に Qt Extension Pack を入れてみた'
 date: 2024-09-13T00:53:53+09:00
-tags: ["Visual Studio Code", "Qt All Extensions Pack"]
+tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.png"
 ---
 
-# VSCodeでQt開発を始める：Qt All Extensions Packをインストールする方法
+# VSCodeでQt開発を始める：Qt Extension Packをインストールする方法
 
 こんにちは、Kenjiです。
 今回は「Visual Studio Code（以下VSCode）でQtの開発環境を整える方法」について紹介します。
 
 最近では、公式のQt Creatorに加えて、軽量で拡張性の高いVSCodeを使ってQtアプリを開発したい、という声も増えてきました。
-そんな方におすすめなのが「**Qt All Extensions Pack**」。
+そんな方におすすめなのが「**Qt Extension Pack**」。
 この拡張パックをインストールするだけで、Qt関連の主要な拡張機能が一括でそろいます。
 
 ---
@@ -33,9 +33,9 @@ image: "img_1.png"
 
 ---
 
-## Qt All Extensions Packとは？
+## Qt Extension Packとは？
 
-Qt All Extensions Packは、VSCode用の拡張機能パックです。
+Qt Extension Packは、VSCode用の拡張機能パックです。
 インストールすることで、以下のような機能が自動的に追加されます：
 
 * `.ui` ファイル（Qt Designer）のサポート
@@ -58,17 +58,15 @@ Qt All Extensions Packは、VSCode用の拡張機能パックです。
 またはショートカットで
 `Ctrl + Shift + X` を押してもOKです。
 
-### 3. 「Qt All Extensions Pack」と検索
+### 3. 「Qt Extension Pack」と検索
 
 検索バーに以下のキーワードを入力します：
 
 ```
-Qt All Extensions Pack
+Qt Extension Pack
 ```
 
-開発者名が `seanchas116` であるものが公式っぽくておすすめです。
-
-![検索画面のスクリーンショット例](https://example.com/screenshot.png) ← ※実際にはキャプチャを貼ると良いです
+![img.png](img.png)
 
 ### 4. インストールボタンをクリック
 
@@ -111,7 +109,7 @@ VSCode上で `.ui` ファイルを右クリック → `Open with Qt Designer` �
 | -- | --------------------------- |
 | 1  | VSCode起動                    |
 | 2  | 拡張機能パネルを開く                  |
-| 3  | 「Qt All Extensions Pack」で検索 |
+| 3  | 「Qt Extension Pack」で検索 |
 | 4  | インストールボタンをクリック              |
 
 VSCodeにQt環境を構築するのは以前よりかなり簡単になりました。
@@ -122,7 +120,7 @@ Qt Creatorの代替としても十分な機能があり、軽快に作業した�
 ## おすすめリンク集
 
 * [Qt公式](https://www.qt.io/)
-* [Qt All Extensions Pack on VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=seanchas116.qt-pack)
+* [Qt Extension Pack - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TheQtCompany.qt)
 * [VSCode公式](https://code.visualstudio.com/)
 * [CMake Tools 拡張](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 
