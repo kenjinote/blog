@@ -6,37 +6,84 @@ draft: false
 image: "img.png"
 ---
 
-# ローコード／ノーコードの歴史（1980年代～現在）
+# ローコード／ノーコード開発の歴史（1980年代～現在）
 
-ローコード／ノーコード開発とは、専門的なコーディングをほとんど（あるいはまったく）行わずにアプリやウェブサイト、データベース、ゲームなどを開発する手法を指す。1980年代から市販ソフトとして登場し、以降のPC・インターネット・クラウド時代の進展に伴って多様なプラットフォームが登場した。以下、各年代ごとに代表的な製品・サービスを挙げ、その概要と価格情報を示す（可能な限り公式情報や信頼できる資料に基づく）。
+ローコード／ノーコード開発とは、プログラミングの専門知識がなくてもアプリやウェブサイト、データベースなどを作成できる開発手法です。この考え方は1980年代から始まり、PCの普及、インターネットの進化、クラウド技術の拡大とともに、多様なプラットフォームとして発展してきました。本記事では、年代ごとに代表的なツールやサービスを取り上げ、その特徴や価格について紹介します。
 
-## 1980年代
+---
 
-- **HyperCard（Apple, 1987年）**: Macintosh用の「スタック」型アプリ開発環境。カード（画面）の概念とドラッグ＆ドロップによるGUI編集、さらにHyperTalkスクリプトで動作を記述できる ([HyperCard - Wikipedia](https://en.wikipedia.org/wiki/HyperCard#:~:text=Users%20build%20or%20modify%20stacks,Basic%20%20and%20%20113))。プロトタイピングに優れ、「フォームとRAD環境的」な仕組みを備えた。1987年発売時の価格は49.95ドル ([HyperCard - Wikipedia](https://en.wikipedia.org/wiki/HyperCard#:~:text=HyperCard%20was%20originally%20released%20in,but%20can%20run%20in%20the))（発売後は新規Mac購入者に無償同梱）。最終更新は1998年で、Mac OS X移行後は開発が停止した ([HyperCard - Wikipedia](https://en.wikipedia.org/wiki/HyperCard#:~:text=HyperCard%20was%20originally%20released%20in,but%20can%20run%20in%20the))。
-- **FileMaker（Claris/Apple, 1985年）**: グラフィカルな画面設計とデータベースエンジンを統合したリレーショナルDBソフト ([FileMaker - Wikipedia](https://en.wikipedia.org/wiki/FileMaker#:~:text=FileMaker%20is%20a%20cross,delivery%20have%20been%20released))。元はMS-DOS版「Nutshell」に由来し、Mac版として1985年4月にリリース ([FileMaker - Wikipedia](https://en.wikipedia.org/wiki/FileMaker#:~:text=Initial%20release%20April%C2%A01985%3B%2040%C2%A0years%20ago%C2%A0%281985,Stable%20release))（1990年にFileMaker Proへ改称）。表形式データのビューに加え、自在なレイアウト画面とスクリプト機能を持つ。現在はClaris FileMaker Pro（サブスクリプション版含む）が提供されており、単体ライセンスはフル版で$594.00 ([Claris FileMaker Pro 2024 License (Full Version) - Apple](https://www.apple.com/shop/product/HRK92ZM/A/claris-filemaker-pro-2024-license-full-version#:~:text=%24594))（約65,000円）で販売されている。
+## 1980年代：草創期
 
-## 1990年代
+* **HyperCard（Apple, 1987）**
+  Macintosh向けのアプリ作成ツール。カード形式で画面を構成し、GUIをドラッグ＆ドロップで作成。独自のスクリプト言語「HyperTalk」により簡易な動作制御も可能。プロトタイピング用途に好まれました。発売時価格は49.95ドルで、後に新規Mac購入者向けに無償提供されました。最終版は1998年で、Mac OS X以降の対応はありません。
 
-- **Microsoft Visual Basic（Microsoft, 1991年）**: Windows用のBASICベースIDE。GUIコントロールをフォーム上にドラッグ＆ドロップし、イベント駆動のプログラムを作成できる。RAD（Rapid Application Development）を強く意識した環境で、Windows向けGUIアプリ開発を支援した ([Visual Basic (classic) - Wikipedia](https://en.wikipedia.org/wiki/Visual_Basic_(classic)#:~:text=Visual%20Basic%20,COM%29%20technology)) ([Visual Basic (classic) - Wikipedia](https://en.wikipedia.org/wiki/Visual_Basic_(classic)#:~:text=VB%20was%20first%20released%20in,program%20on%20supported%20Windows%20operating))。1991年に第1版がリリースされ、最終版VB6.0は1998年発表 ([Visual Basic (classic) - Wikipedia](https://en.wikipedia.org/wiki/Visual_Basic_(classic)#:~:text=Visual%20Basic%20,COM%29%20technology)) ([Visual Basic (classic) - Wikipedia](https://en.wikipedia.org/wiki/Visual_Basic_(classic)#:~:text=VB%20was%20first%20released%20in,program%20on%20supported%20Windows%20operating))。当時の価格は資料が見つからないが、以降Visual Studio付属のVisual Basic.NETへと移行し、Visual Studio Communityなどで無償版も提供されている。
-- **Microsoft Access（Microsoft, 1992年）**: Windows向けのリレーショナルデータベース管理ソフト。Windows用の初期大衆向けDBとして登場し、他DB製品からの移行を果たすほど普及した ([Microsoft Access - Wikipedia](https://en.wikipedia.org/wiki/Microsoft_Access#:~:text=first%20mass,which%20failed%20to%20transition%20from))。1992年11月13日にバージョン1.0が発売された ([Microsoft Access - Wikipedia](https://en.wikipedia.org/wiki/Microsoft_Access#:~:text=Microsoft%20released%20Access%20version%201,the%20Access%20Basic%20programming%20language))。当初は単独製品だったが、後にOfficeパッケージに統合。現在はOffice 365（Microsoft 365）の一部として提供されている。
-- **PowerBuilder（Sybase/PowerSoft, 1991年）**: クライアント/サーバーアプリ開発向けの4GL RADツール。PowerSoft社が開発し、1991年7月に最初のバージョンがリリースされた ([PowerBuilder - Wikipedia](https://en.wikipedia.org/wiki/PowerBuilder#:~:text=The%20First%20version%20of%20PowerBuilder,11))。データベース連携機能が豊富で、ビジュアルに画面を設計しスクリプトを書ける。現在はSAP傘下。詳細な当時価格は不明。
-- **Macromedia Dreamweaver（Macromedia, 1997年）**: WYSIWYG対応のWebページ／サイトビルダー。テキストコードビューとデザインビューを切り替えながら編集でき、標準・XML・ASP/PHPなどのプロジェクト構成も可能。初版は1997年12月（Mac版）・1998年3月（Windows版）に発売され、当時価格は$269 ([Macromedia Dreamweaver 1.2 in 1998 - Web Design Museum](https://www.webdesignmuseum.org/software/macromedia-dreamweaver-1-2-in-1998#:~:text=))。現在はAdobe社製品のCreative Cloudとして提供されており、単体サブスクリプションは月額約$34.49（2024年1月時点） ([Amazon.com: Adobe Dreamweaver | Website and web design software | 1-month Subscription with auto-renewal, PC/Mac : Everything Else](https://www.amazon.com/Adobe-Dreamweaver-software-Subscription-auto-renewal/dp/B07Q96R12T#:~:text=1%20month%20Auto,49%2Fmonth))。
-- **Adobe (Macromedia) Flash（Macromedia, 1996年）**: ベクターグラフィック／アニメーション作成環境。もともとFutureSplash Animatorというアニメーションツールで、1996年12月にMacromediaが買収・再ブランド化しFlash 1.0としてリリースした ([Adobe Flash - Wikipedia](https://en.wikipedia.org/wiki/Adobe_Flash#:~:text=In%20December%201996%2C,42))。フラッシュアニメーターと無料のFlash Playerを組み合わせ、Web上でインタラクティブなリッチメディアやゲームを実現した。対応ブラウザプラグインとして2000年代前半に普及したが、セキュリティ問題等で2010年代にFlash Playerは廃止された。
-- **GameMaker（YoYo Games, 1999年）**: 2Dゲーム開発用エンジン。1999年11月に「Animo」(後にGameMaker)として初版が登場し、ビジュアルにオブジェクト配置・フロー制御できるドラッグ＆ドロップ言語と、必要に応じて記述可能なスクリプト言語（GML）を備える ([GameMaker - Wikipedia](https://en.wikipedia.org/wiki/GameMaker#:~:text=GameMaker%20accommodates%20the%20creation%20of,was%20originally%20designed%20to%20allow)) ([GameMaker - Wikipedia](https://en.wikipedia.org/wiki/GameMaker#:~:text=Initial%20release%2015%C2%A0November%201999%3B%2025,15%29%20Stable%20release))。当初は個人やインディーデベロッパー向けで、その後複数プラットフォーム対応のGameMaker Studioとして展開。個人利用は無償、商用エクスポート機能付き有償版もある。初版価格など詳細は省略する。
+* **FileMaker（Claris/Apple, 1985）**
+  グラフィカルなデータベースソフト。表形式のデータ表示に加え、自由なレイアウト編集とスクリプト機能を備えたリレーショナルDBツールです。現在は「Claris FileMaker Pro」として提供され、フルライセンス版は594ドル（2024年時点）。
 
-## 2000年代
+---
 
-- **WordPress（WordPress Foundation, 2003年）**: ブログ／CMS（コンテンツ管理システム）として登場したオープンソースソフトウェア ([WordPress - Wikipedia](https://en.wikipedia.org/wiki/WordPress#:~:text=WordPress%20%28WP%2C%20or%20WordPress,5)) ([WordPress - Wikipedia](https://en.wikipedia.org/wiki/WordPress#:~:text=free%20and%20open,5))。PHP+MySQL製で、プラグインやテーマによる拡張が容易。一般ユーザーでも専門知識なくウェブサイトを構築でき、世界中で広く採用された。GPLライセンスで無償提供されている ([WordPress - Wikipedia](https://en.wikipedia.org/wiki/WordPress#:~:text=WordPress%20%28WP%2C%20or%20WordPress,5)) ([WordPress - Wikipedia](https://en.wikipedia.org/wiki/WordPress#:~:text=free%20and%20open,5))。
-- **Wix（Wix.com, 2006年）**: オンラインのウェブサイトビルダーサービス。数百種のテンプレートから選び、ドラッグ＆ドロップで編集できる。フリーミアムモデルを採用し、無料プランで基本機能を利用可能、プレミアムプランで独自ドメインや追加アプリを提供 ([Wix.com - Wikipedia](https://en.wikipedia.org/wiki/Wix.com#:~:text=Users%20can%20add%20applications%20for,8))。設立当初から急成長し、世界中に数千万規模のユーザーを持つWebプラットフォームとなっている。
-- **OutSystems（OutSystems, 2001年）**: エンタープライズ向けのローコード開発プラットフォーム。ポルトガル発祥で2001年創業 ([OutSystems - Wikipedia](https://en.wikipedia.org/wiki/OutSystems#:~:text=OutSystems%20was%20founded%20in%202001,3))。企業内業務アプリをビジュアル開発でき、クラウドやオンプレミスにデプロイ可能。後年のクラウド時代に再注目され、AI連携など機能を強化している。初期価格や現在価格は導入形態により大きく異なるためここでは省略する。
-- **Scratch（MIT, 2007年）**: 教育用のビジュアルプログラミング環境。子ども向けに開発され、色分けされたブロックを組み合わせてアニメーションやゲームを作成できる ([Scratch (programming language) - Wikipedia](https://en.wikipedia.org/wiki/Scratch_(programming_language)#:~:text=Scratch%20is%20a%20high,language%27s%20official%20website%20show%20more))。MITメディアラボが開発・提供し、GUIからコーディング教育に幅広く利用されている。ソフトは無償で公開されている ([Scratch (programming language) - Wikipedia](https://en.wikipedia.org/wiki/Scratch_(programming_language)#:~:text=Scratch%20is%20a%20high,language%27s%20official%20website%20show%20more))。
-- **Airtable（Airtable Inc., 2013年）**: スプレッドシート風のデータベースツール。テーブル・ビューやカンバン・カレンダー表示が可能で、ノーコードでリレーション管理できるクラウドサービス。フリーミアムモデル（無料プラン＋有料プラン）で提供。企業のデータ管理やプロジェクト管理などに活用例が多い。
+## 1990年代：GUIアプリと業務系開発の台頭
 
-## 2010年代～2020年代
+* **Visual Basic（Microsoft, 1991）**
+  Windowsアプリ開発に特化したIDE。ボタンやラベルなどのGUI部品をドラッグ＆ドロップで配置し、イベント駆動型のアプリを簡単に構築できました。1998年のVB6.0を最後に、.NET時代へと移行しています。
 
-2010年代以降、クラウドSaaS型のノーコード／ローコードプラットフォームが急増した。ビジネスアプリ向けでは、営業支援SaaS大手Salesforceの**Lightning Platform**（旧Force.com）や、Microsoftの**Power Platform**（Power Apps/Power Automate）など、ドラッグ＆ドロップで業務アプリを構築・自動化できるサービスが登場した。ウェブサービス連携では**Zapier**や**IFTTT**（共に2010年代前半設立）によりノーコードで異なるクラウドサービス間のデータ連携が可能になった。その他、表計算型DBのAirtableや、ドキュメント共有型ワークスペースのNotion（いずれも2010年代設立）など、新世代ツールが注目を集めている。ゲーム開発分野でも**Construct 3**（2017年, Scirra）や**GameSalad**など、ノーコードでゲームを作れるツールが普及した。
+* **Microsoft Access（1992）**
+  Windows向けのデータベース開発ツール。リレーショナルDB設計とGUIでのフォーム作成が可能で、一般向け業務アプリ開発に広く使われました。現在はMicrosoft 365の一部として提供中。
 
-## 情報源
+* **PowerBuilder（PowerSoft/Sybase, 1991）**
+  業務アプリ向けの4GL開発ツール。クライアント/サーバーアーキテクチャに対応し、データベース連携に強みを持ちました。現在はSAP傘下で提供が続いています。
 
-上記各項目の情報は、公式リリース情報や各製品のメーカー公式サイト、信頼性の高い記事・資料を参照してまとめた。具体的にはHyperCardやFileMakerのWikipedia記事 ([HyperCard - Wikipedia](https://en.wikipedia.org/wiki/HyperCard#:~:text=HyperCard%20was%20originally%20released%20in,but%20can%20run%20in%20the)) ([FileMaker - Wikipedia](https://en.wikipedia.org/wiki/FileMaker#:~:text=FileMaker%20is%20a%20cross,delivery%20have%20been%20released))、MicrosoftやAdobe関連製品に関する公式ドキュメント・歴史紹介 ([Visual Basic (classic) - Wikipedia](https://en.wikipedia.org/wiki/Visual_Basic_(classic)#:~:text=Visual%20Basic%20,COM%29%20technology)) ([Adobe Flash - Wikipedia](https://en.wikipedia.org/wiki/Adobe_Flash#:~:text=In%20December%201996%2C,42))、WebDesign Museumの資料 ([Macromedia Dreamweaver 1.2 in 1998 - Web Design Museum](https://www.webdesignmuseum.org/software/macromedia-dreamweaver-1-2-in-1998#:~:text=Price))、Apple公式サイト ([Claris FileMaker Pro 2024 License (Full Version) - Apple](https://www.apple.com/shop/product/HRK92ZM/A/claris-filemaker-pro-2024-license-full-version#:~:text=%24594))、Wix公式情報 ([Wix.com - Wikipedia](https://en.wikipedia.org/wiki/Wix.com#:~:text=Users%20can%20add%20applications%20for,8))などである。各製品の価格情報は可能な範囲で最新版や発売当時の記録から引用した（価格はUSD表記）。なお2000年代以降の多くのサービスはサブスクリプション型であり、料金はプランによって異なるため大まかな価格帯の例示にとどめた。  
+* **Dreamweaver（Macromedia, 1997）**
+  Webページ作成を視覚的に行えるWYSIWYGツール。HTML編集とデザインビューの切り替えが可能で、ASPやPHP対応も備えていました。現在はAdobeが提供し、サブスクリプション（月額約34.49ドル）で利用可能。
 
+* **Flash（Macromedia, 1996）**
+  もともとはFutureSplash Animatorとして開発されたベクターアニメーション制作ツール。後にWeb用インタラクティブコンテンツ制作に活用されましたが、セキュリティ懸念から2020年にサポート終了。
+
+* **GameMaker（1999）**
+  初心者向け2Dゲーム制作ツール。オブジェクト配置やイベント制御がドラッグ＆ドロップで可能。後にスクリプト（GML）にも対応し、現在は商用利用向けに複数プランが提供されています。
+
+---
+
+## 2000年代：ウェブベースとオープンソースの広がり
+
+* **WordPress（2003）**
+  PHPとMySQLを使ったオープンソースのCMS。プログラミング知識がなくてもテーマやプラグインを使ってブログや企業サイトを構築可能。無償で配布され、世界中で最も使われているCMSの1つです。
+
+* **Wix（2006）**
+  ブラウザ上でウェブサイトを構築できるノーコードサービス。テンプレートを選んでドラッグ＆ドロップで編集できる。無料プランのほか、有料プランでは独自ドメインやeコマース機能も使用可能。
+
+* **OutSystems（2001）**
+  エンタープライズ向けローコードプラットフォーム。業務システムを素早く開発できることから、大企業や行政機関での導入が進んでいます。クラウドとオンプレミスの両方に対応。
+
+* **Scratch（MIT, 2007）**
+  子ども向けに開発されたプログラミング学習ツール。色付きブロックを組み合わせることでゲームやアニメーションを作成でき、教育現場で広く利用されています。無償提供。
+
+* **Airtable（2013）**
+  スプレッドシートとデータベースを組み合わせたクラウド型サービス。見た目はExcelに近いが、リレーションやカンバン表示、API連携などが可能。個人～法人まで幅広く利用されています。
+
+---
+
+## 2010年代〜2020年代：クラウドと自動化の時代
+
+近年、クラウドベースのローコード／ノーコードツールが急速に進化しています。
+
+* **Power Platform（Microsoft）**
+  「Power Apps」「Power Automate」などを含む統合型の業務アプリ開発・自動化プラットフォーム。企業の業務プロセスをドラッグ＆ドロップで視覚的に構築できます。
+
+* **Salesforce Lightning Platform**
+  CRMのSalesforceが提供するアプリ開発基盤。GUIで業務アプリを作成でき、他のSalesforceサービスとの統合も容易です。
+
+* **Zapier / IFTTT**
+  複数のクラウドサービス間の連携を、コーディングなしで構築できる自動化ツール。例えば「Googleフォームに入力されたらSlackに通知」などのワークフローが簡単に実現可能。
+
+* **Notion（2010年代）**
+  ドキュメント管理、タスク管理、Wikiなどを統合したオールインワン型ワークスペース。カスタムデータベース機能も備え、ノーコードでの業務改善に役立ちます。
+
+* **Construct 3 / GameSalad**
+  ドラッグ＆ドロップでゲームを作れるツール。Construct 3はHTML5対応でブラウザ上でも動作し、教育現場やインディー開発者に人気です。
+
+---
+
+## 情報ソースと補足
+
+この記事は、各製品の公式サイト、Wikipedia、信頼性の高い資料・記事（Apple・Microsoft・Adobeなど）に基づいて構成しています。価格情報は可能な限り当時または最新の公式情報を参照しています（記載は主に米ドル）。2000年代以降のツールの多くはサブスクリプション型で、プランにより料金が変動します。
