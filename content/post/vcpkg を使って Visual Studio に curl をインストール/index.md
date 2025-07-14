@@ -6,18 +6,18 @@ draft: false
 image: "img.png"
 ---
 
-## 【初心者向け】vcpkgでlibcurl（OpenSSL対応）をVisual Studioに導入する手順
+## Visual Studioでlibcurl（OpenSSL対応）を使うなら、vcpkg導入が簡単でおすすめ
 
-Visual Studio 環境で `libcurl` を使いたいけど、ビルドや依存関係の管理が面倒…
-そんなときに便利なのが、Microsoft製のC++ライブラリ管理ツール **vcpkg** です。
+C++でHTTP通信を扱いたいときによく使われるのが `libcurl`。でも、ビルドや依存関係の調整って意外と面倒ですよね。
 
-今回は、`vcpkg` を使って `libcurl`（OpenSSL対応）を導入し、Visual Studio プロジェクトからすぐに使える状態にするまでの流れをご紹介します。
+そんなときに役立つのが、Microsoft製のC++ライブラリ管理ツール「**vcpkg**」です。
+今回は、`vcpkg`を使って `libcurl`（OpenSSL対応）を導入し、Visual Studioでスムーズに使えるようにするまでの手順を紹介します。
 
 ---
 
-### 1. vcpkgをインストール（まだ導入していない場合）
+### vcpkgのインストール（未導入の方のみ）
 
-まずは `vcpkg` 自体を入手してセットアップします。以下のコマンドをPowerShellで実行してください。
+まずは `vcpkg` をインストールしましょう。以下の手順を PowerShell で実行してください。
 
 ```powershell
 git clone https://github.com/microsoft/vcpkg
@@ -25,40 +25,41 @@ cd vcpkg
 .\bootstrap-vcpkg.bat
 ```
 
-※Gitがインストールされていない場合は、先に[Git公式サイト](https://git-scm.com/)から導入してください。
+※Gitがまだ入っていない場合は、[Gitの公式サイト](https://git-scm.com/)からインストールしてください。
 
 ---
 
-### 2. libcurl（OpenSSL対応）をインストール
+### libcurl（OpenSSL対応）のインストール
 
-`vcpkg` を使って、OpenSSLサポート付きの `libcurl` をインストールします。ここでは64bit版を指定しています。
+続いて、vcpkgを使って `libcurl` をインストールします。OpenSSLに対応した64bit版を指定するには、以下のコマンドを実行します。
 
 ```powershell
 vcpkg install curl[ssl] --triplet x64-windows
 ```
 
-このコマンドで、必要な依存関係（OpenSSLなど）もまとめて自動的に解決してくれます。
+このコマンドを実行すると、必要な依存関係（OpenSSLなど）も自動的にセットアップされます。
 
 ---
 
-### 3. Visual Studio への統合
+### Visual Studioとの連携設定
 
-vcpkgでインストールしたライブラリをVisual Studioのプロジェクトから自動的に認識させるには、以下のコマンドで統合設定を行います。
+vcpkgで導入したライブラリをVisual Studioのプロジェクトから簡単に使えるようにするには、次のコマンドで統合設定を行います。
 
 ```powershell
 vcpkg integrate install
 ```
 
-この設定を行うことで、以降は **すべてのVisual Studioプロジェクトで** `#include <curl/curl.h>` が使えるようになります。ライブラリのパス設定やリンカの設定は不要です。
+この設定をしておくと、Visual Studioのプロジェクトで自動的に `#include <curl/curl.h>` が使えるようになり、ライブラリのパスやリンカの設定を手動で行う必要がなくなります。
 
 ---
 
-## まとめ
+## おわりに
 
-以上で、Visual Studio 環境に `libcurl`（OpenSSL対応）を導入する準備は完了です。
+これで、Visual Studioに `libcurl`（OpenSSL対応）を導入する準備は完了です。
 
-* ライブラリ管理には `vcpkg` が便利
-* `vcpkg install curl[ssl] --triplet x64-windows` で一発インストール
-* `vcpkg integrate install` でプロジェクト設定も自動化
+* vcpkgを使えば、面倒な依存関係も一括で管理できる
+* `vcpkg install curl[ssl] --triplet x64-windows` でlibcurlを簡単に導入
+* `vcpkg integrate install` でVisual Studioと自動連携が可能
 
-以降は、ヘッダをインクルードし、通常通り `libcurl` のAPIを使って開発を進められます。
+あとは、プロジェクト内でヘッダをインクルードして、libcurlのAPIを使って開発を始めましょう。
+便利なvcpkgを活用して、開発効率を一気に高めてみてください。
