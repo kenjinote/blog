@@ -67,9 +67,10 @@ curl -X POST ^
 
 ```json
 {
-  "access_token": "eyJ0eXAiOiJKV1QiLCJub...（省略）",
-  "token_type": "Bearer",
-  "expires_in": 3599
+  "token_type":"Bearer",
+  "expires_in":3599,
+  "ext_expires_in":3599,
+  "access_token": "eyJ0eXAiOiJKV1QiLCJub...（省略）"
 }
 ```
 
