@@ -26,10 +26,10 @@ Microsoft Teams のチャットに自動投稿したい――
 ### 2. API のアクセス許可を追加
 
 1. 左メニュー「API のアクセス許可」へ
-2. 「**Microsoft Graph**」 > 「**委任されたアクセス許可**」を選び、以下のスコープを追加：
+2. 「**Microsoft Graph**」 > 「**アクセス許可を選択する**」で下記のスコープを検索して「**アクセス許可の更新**」
 
-Chat.ReadWrite
-User.Read
+- Chat.ReadWrite
+- User.Read
 
 > ※ チャネルに投稿したい場合は `ChannelMessage.Send` も必要
 
