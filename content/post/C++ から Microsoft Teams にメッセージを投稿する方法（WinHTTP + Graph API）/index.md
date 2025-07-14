@@ -20,7 +20,7 @@ Microsoft Teams のチャットに自動投稿したい――
 まず、Microsoft Graph API を使うには、Azure にアプリを登録する必要があります。
 
 1. [Azure Portal](https://portal.azure.com) にアクセス
-2. 「**Microsoft Entra ID**」 > 「**アプリの登録**」 > 「**新規登録**」
+2. 「**Microsoft Entra ID**」 > 「**＋追加**」 > 「**アプリの登録**」 > 「**新規登録**」
 3. 任意のアプリ名を入力して「登録」
 
 ### 2. API のアクセス許可を追加
