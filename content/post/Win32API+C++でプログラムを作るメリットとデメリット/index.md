@@ -3,9 +3,8 @@ title: 'Win32API + C++ でプログラムを作るメリットとデメリット
 date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "プログラミング", "開発", "技術"]
 draft: false
-image: "img.png"
+image: "img_1.png"
 ---
-
 # Win32API + C++で開発する魅力と課題
 
 Windowsアプリ開発を突き詰めたい人にとって、**Win32API + C++** は今なお強力な選択肢です。
