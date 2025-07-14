@@ -51,23 +51,25 @@ Microsoft Teams のチャットに自動投稿したい――
 ## 🔐 アクセストークンの取得（OAuth2）
 
 取得には `client_credentials` フローを使います。  
-例：curl や Postman またはプログラムから `POST` リクエストを送信します。
+curl で下記のコマンドを実行して、アクセストークンを取得します。
 
-```http
-POST https://login.microsoftonline.com/{テナントID}/oauth2/v2.0/token
-Content-Type: application/x-www-form-urlencoded
-
-client_id={クライアントID}&
-scope=https%3A%2F%2Fgraph.microsoft.com%2F.default&
-client_secret={クライアントシークレット}&
-grant_type=client_credentials
+```bash
+curl -X POST ^
+  https://login.microsoftonline.com/{テナントID}/oauth2/v2.0/token ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -d "client_id={クライアントID}" ^
+  -d "scope=https%3A%2F%2Fgraph.microsoft.com%2F.default" ^
+  -d "client_secret={クライアントシークレット}" ^
+  -d "grant_type=client_credentials"
 ```
 
 ### レスポンス例
 
 ```json
 {
-  "access_token": "eyJ0eXAiOiJKV1QiLCJub..."
+  "access_token": "eyJ0eXAiOiJKV1QiLCJub...（省略）",
+  "token_type": "Bearer",
+  "expires_in": 3599
 }
 ```
 
