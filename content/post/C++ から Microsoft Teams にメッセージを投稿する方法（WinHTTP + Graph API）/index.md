@@ -122,6 +122,18 @@ void PostToTeamsChat(const std::wstring& accessToken, const std::wstring& chatId
     WinHttpCloseHandle(hConnect);
     WinHttpCloseHandle(hSession);
 }
+
+int main() {
+    std::wstring access;
+    std::wstring chatId = L"19:";
+    std::wstring message = L"Hello from C++!";
+    std::wcout << L"Enter your access token: ";
+    std::getline(std::wcin, access);
+    std::wcout << L"Enter chat ID: ";
+    std::getline(std::wcin, chatId);
+    PostToTeamsChat(access, chatId, message);
+    return 0;
+}
 ```
 
 ## 🔍 チャット ID の取得方法
@@ -129,8 +141,10 @@ void PostToTeamsChat(const std::wstring& accessToken, const std::wstring& chatId
 チャット ID は GET /v1.0/me/chats で確認できます。
 
 ```
-GET https://graph.microsoft.com/v1.0/me/chats
-Authorization: Bearer {access_token}
+curl -X GET ^
+  https://graph.microsoft.com/v1.0/me/chats ^
+  -H "Authorization: Bearer {access_token}" ^
+  -H "Content-Type: application/json"
 ```
 
 ### レスポンス例
