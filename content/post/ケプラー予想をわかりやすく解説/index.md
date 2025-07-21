@@ -29,9 +29,9 @@ image: "img.png"
 この人、めちゃくちゃすごい人でして。
 たとえば、惑星の軌道が楕円（だえん）になっているってことを発見したのもこの人。今では当たり前の知識ですが、当時（1600年頃）は地動説すらちゃんと信じられてなかった時代なんですよ。
 
-**・ガリレオ＝観測の天才**
-**・ケプラー＝数式で宇宙を説明した天才**
-**・ニュートン＝その理論を物理法則にまとめた超天才**
+* **ガリレオ＝観測の天才**
+* **ケプラー＝数式で宇宙を説明した天才**
+* **ニュートン＝その理論を物理法則にまとめた超天才**
 
 みたいな位置づけで、ケプラーは「数式で宇宙を語る」っていう先駆者でした。
 
@@ -41,9 +41,7 @@ image: "img.png"
 
 ## ケプラー予想ってなに？
 
-それが「ケプラー予想」です。
-
-簡単にいうと、こういう話です。
+「ケプラー予想」とは、簡単にいうと、こういう話です。
 
 ---
 
@@ -125,4 +123,4 @@ image: "img.png"
 
 [PR]
 
-<div style="background:#fff;width:120px;height:215px;box-sizing:border-box;border:1px solid #ccc;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;"><div style="line-height:0;"><img src="https://static.jp.mercari.com/assets/img/common/jp/logo_horizontal.png" width="105"></div><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:100px;background:#eee;"}" target="_blank"><img src="https://ambassador-system.mercari.com/v1/i?id=m71496725612&svc=m" style="line-height:0;width:100px;height:100px;object-fit:contain;"/></a><div style="padding:12px 0;width:100%;text-align:center;"><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:32px;background-color:#E32B36;border-radius:4px;line-height:14px;text-align:center;color:#fff;font-weight:bold;border:0;font-size:12px;display:inline-flex;justify-content:center;align-items:center;" target="_blank">今すぐ購入</a></div></div>
+<div style="background:#fff;width:120px;height:215px;box-sizing:border-box;border:1px solid #ccc;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;"><div style="line-height:0;"><img src="https://static.jp.mercari.com/assets/img/common/jp/logo_horizontal.png" width="105"></div><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:100px;background:#eee;" target="_blank"><img src="https://ambassador-system.mercari.com/v1/i?id=m71496725612&svc=m" style="line-height:0;width:100px;height:100px;object-fit:contain;"/></a><div style="padding:12px 0;width:100%;text-align:center;"><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:32px;background-color:#E32B36;border-radius:4px;line-height:14px;text-align:center;color:#fff;font-weight:bold;border:0;font-size:12px;display:inline-flex;justify-content:center;align-items:center;" target="_blank">今すぐ購入</a></div></div>
