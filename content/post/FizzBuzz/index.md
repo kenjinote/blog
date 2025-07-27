@@ -3,6 +3,7 @@ title: 'FizzBuzz'
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "アルゴリズム"]
 draft: false
+image: "img.png"
 ---
 
 ## FizzBuzzって、結局なんなの？

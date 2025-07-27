@@ -29,7 +29,7 @@ services:
         id: "GT-5R8HJJC"
 
 pagination:
-    pagerSize: 5
+    pagerSize: 20
 
 permalinks:
     post: /p/:slug/
