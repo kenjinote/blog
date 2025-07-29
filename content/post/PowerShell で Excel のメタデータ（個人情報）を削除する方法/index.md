@@ -8,7 +8,6 @@ draft: false
 # PowerShell で Excel のメタデータ（個人情報）を削除する方法
 
 ```powershell
-
 $excel = New-Object -ComObject Excel.Application
 $excel.Visible = $false
 
