@@ -67,6 +67,11 @@ signtool sign /fd SHA256 /f "D:\pfx\cert.pfx" /p "password" "C:\installer\instal
 * `/fd SHA256` は署名アルゴリズムを指定しています。
 * `/f` で PFX ファイルを指定し、`/p` でパスワードを渡します。
 * 最後に MSIX ファイルのパスを指定してください。
+* signtool のパスが通っていない場合は、フルパスで指定してください。私の環境では以下の場所にありました。
+
+```
+"C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\microsoft.windows.sdk.buildtools\10.0.26100.1742\bin\10.0.26100.0\x64\signtool.exe"
+```
 
 これで署名が完了し、対象 PC でインストール可能な MSIX が完成します。
 
