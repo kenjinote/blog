@@ -4,6 +4,7 @@ date: 2023-03-19T02:54:30+09:00
 tags: ["Chorme拡張", "ブラウザ", "Chrome", "Edge"]
 draft: false
 image: "img_4.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # おすすめのChorme拡張

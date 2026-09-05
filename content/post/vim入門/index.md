@@ -4,6 +4,7 @@ date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "テキストエディタ"]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 
 ![img_1.png](img_1.png)

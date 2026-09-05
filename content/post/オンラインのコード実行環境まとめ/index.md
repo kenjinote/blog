@@ -4,6 +4,7 @@ date: 2023-04-09T14:01:00+09:00
 tags: ["オンライン", "コード実行環境", "プログラミング"]
 draft: false
 image: "img.png"
+categories: ["プログラミング"]
 ---
 
 ## Python

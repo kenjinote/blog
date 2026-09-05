@@ -4,6 +4,7 @@ date: 2024-01-07T00:50:09+09:00
 tags: ["災害", "データ"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # 概要

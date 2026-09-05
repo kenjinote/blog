@@ -4,6 +4,7 @@ date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.png"
+categories: ["ツール・開発環境"]
 ---
 
 # VSCodeでQt開発を始める：Qt Extension Packをインストールする方法

@@ -4,6 +4,7 @@ date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "グラフ"]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 # グラフエディタ
 

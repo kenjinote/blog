@@ -5,6 +5,7 @@ tags: ["数学", "パラドックス"]
 draft: false
 math: true
 image: "img.png"
+categories: ["数学・暗号・量子"]
 ---
 
 ## バースデイパラドックスって知ってる？

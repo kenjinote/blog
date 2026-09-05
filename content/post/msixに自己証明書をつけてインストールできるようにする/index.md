@@ -4,6 +4,7 @@ date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "自己証明書", "インストール"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # msixに自己証明書をつけてインストールできるようにする

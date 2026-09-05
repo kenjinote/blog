@@ -4,6 +4,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.png"
+categories: ["ツール・開発環境"]
 ---
 
 Github Actionsで動的に変数を設定するには、下記のように$env:GITHUB_ENVに追加書き込みすることで実現できます。

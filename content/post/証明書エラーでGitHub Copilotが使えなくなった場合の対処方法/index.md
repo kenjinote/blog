@@ -4,6 +4,7 @@ date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 
 # GitHub Copilotで下記のエラーが表示された場合の対処方法

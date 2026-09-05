@@ -4,6 +4,7 @@ date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 
 # 🎯 C++から`Microsoft.Windows.AI`を呼び出す方法【サンプルコード付き】

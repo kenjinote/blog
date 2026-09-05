@@ -4,6 +4,7 @@ date: 2022-09-06T02:24:11+09:00
 tags: ["雑記"]
 draft: false
 image: "images/img.png"
+categories: ["IT・テクノロジー"]
 ---
 私が日本社会についておかしいなと思っていること・考えていることを整理しようと思う。
 

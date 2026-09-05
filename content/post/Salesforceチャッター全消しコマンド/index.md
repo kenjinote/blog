@@ -4,6 +4,7 @@ date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "チャッター"]
 draft: false
 image: "img_1.png"
+categories: ["IT・テクノロジー"]
 ---
 # Salesforceチャッター全消しコマンド
 Salesforceのチャッターで、すべての投稿と添付ファイルを全消しするコマンドです。

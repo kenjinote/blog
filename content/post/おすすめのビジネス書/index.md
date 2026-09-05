@@ -4,6 +4,7 @@ date: 2023-03-19T18:13:14+09:00
 tags: ["ビジネス書", "書籍"]
 draft: false
 image: "img.png"
+categories: ["ライフスタイル・雑記"]
 ---
 
 ## 人を動かす

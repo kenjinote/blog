@@ -4,6 +4,7 @@ date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.png"
+categories: ["ツール・開発環境"]
 ---
 dotnet.exeコマンドを使うと簡単なプログラムのビルドまで行えるため使えるようにしておくと便利です。
 

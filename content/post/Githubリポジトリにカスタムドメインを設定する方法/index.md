@@ -4,6 +4,7 @@ date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
 image: "images/octocat.png"
+categories: ["ツール・開発環境"]
 ---
 Githubリポジトリにカスタムドメインを設定するには、ドメインのDNS設定を変更する必要があります。
 ここでは、

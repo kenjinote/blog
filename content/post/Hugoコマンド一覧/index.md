@@ -4,6 +4,7 @@ date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "コマンド"]
 draft: false
 image: "img.png"
+categories: ["ブログ運営"]
 ---
 
 # Hugo とは

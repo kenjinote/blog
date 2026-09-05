@@ -4,6 +4,7 @@ date: 2024-01-05T00:14:22+09:00
 tags: ["洋楽", "音楽"]
 draft: false
 image: "img.png"
+categories: ["ライフスタイル・雑記"]
 ---
 
 # おすすめ洋楽

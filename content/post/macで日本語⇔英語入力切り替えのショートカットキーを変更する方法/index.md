@@ -4,6 +4,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "ショートカットキー", "日本語入力"]
 draft:
 image: "img.png"
+categories: ["PC・ガジェット"]
 ---
 
 # はじめに

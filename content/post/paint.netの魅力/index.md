@@ -4,6 +4,7 @@ date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.png"
+categories: ["AI・テクノロジー"]
 ---
 わたしが開発の作業を行う中でよく使っている画像編集ソフトpaint.netの紹介します。
 

@@ -4,6 +4,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.png"
+categories: ["プログラミング"]
 ---
 # rustcをアップデートする方法
 

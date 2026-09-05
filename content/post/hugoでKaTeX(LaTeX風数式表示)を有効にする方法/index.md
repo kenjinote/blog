@@ -5,6 +5,7 @@ tags: ["KaTeX", "LaTeX", "数式", "数学", "hugo"]
 draft: false
 math: true
 image: "img.png"
+categories: ["数学・暗号・量子"]
 ---
 # KaTeXとは
 KaTeXは、LaTeX風の数式をHTMLで表示するためのjavascriptライブラリです。

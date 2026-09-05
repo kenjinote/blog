@@ -4,6 +4,7 @@ date: 2024-09-19T01:10:20+09:00
 tags: ["コンピュータ", "基本知識"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # コンピュータの基本知識

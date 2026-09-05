@@ -4,6 +4,7 @@ date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.png"
+categories: ["PC・ガジェット"]
 ---
 macOSで.DS_Storeを自動生成しないようにするコマンドは以下の通りです。
 ターミナルで実行してください。

@@ -3,6 +3,7 @@ title: '与謝野晶子について'
 date: 2024-07-25T13:08:36+09:00
 tags: ["与謝野晶子"]
 draft: false
+categories: ["IT・テクノロジー"]
 ---
 
 ![img.png](img.png)

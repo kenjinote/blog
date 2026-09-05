@@ -4,6 +4,7 @@ date: 2024-12-22T00:56:14+09:00
 tags: ["株"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # 高配当株まとめ

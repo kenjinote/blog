@@ -4,6 +4,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["科学", "物理学", "半導体"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 ## なぜ青色LEDを作ることがほぼ不可能だったのか

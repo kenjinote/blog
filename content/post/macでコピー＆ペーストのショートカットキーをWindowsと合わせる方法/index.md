@@ -4,6 +4,7 @@ date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "ショートカットキー", "コピー＆ペースト"]
 draft:
 image: "img.png"
+categories: ["PC・ガジェット"]
 ---
 
 # はじめに

@@ -4,6 +4,7 @@ date: 2023-07-22T15:25:10+09:00
 tags: ["数学", "歴史"]
 draft: false
 image: "img.png"
+categories: ["数学・暗号・量子"]
 ---
 
 ### 古代ギリシアの三大作図問題

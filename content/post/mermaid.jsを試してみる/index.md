@@ -5,6 +5,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.png"
+categories: ["AI・テクノロジー"]
 ---
 
 ## mermaid.jsとは

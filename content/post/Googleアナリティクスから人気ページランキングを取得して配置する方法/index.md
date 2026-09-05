@@ -4,6 +4,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["Googleアナリティクス", "Ranklet", "HUGO"]
 draft: false
 image: "img.png"
+categories: ["ブログ運営"]
 ---
 
 ## はじめに

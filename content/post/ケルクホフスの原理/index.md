@@ -4,6 +4,7 @@ date: 2025-04-16T23:53:08+09:00
 tags: ["ケルクホフスの原理", "暗号"]
 draft: false
 image: "img_2.png"
+categories: ["数学・暗号・量子"]
 ---
 
 # ケルクホフスの原理

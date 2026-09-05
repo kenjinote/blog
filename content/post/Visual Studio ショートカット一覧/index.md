@@ -4,6 +4,7 @@ date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "ショートカット" ]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 
 # Visual Studio ショートカット一覧

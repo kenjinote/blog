@@ -4,6 +4,7 @@ date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","フレッツ光","ネット回線"]
 draft: false
 image: "jcom.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # 自宅のネット環境をフレッツ光からJ:COMに変更

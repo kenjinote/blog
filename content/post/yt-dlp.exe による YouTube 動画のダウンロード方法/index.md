@@ -4,6 +4,7 @@ date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "ダウンロード"]
 draft: false
 image: "img_1.png"
+categories: ["IT・テクノロジー"]
 ---
 # yt-dlpとは
 

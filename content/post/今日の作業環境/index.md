@@ -4,6 +4,7 @@ date: 2022-09-04T14:29:09+09:00
 tags: ["雑記","子供"]
 draft: false
 image: "images/today_workplase.jpg"
+categories: ["IT・テクノロジー"]
 ---
 
 # 子供の机

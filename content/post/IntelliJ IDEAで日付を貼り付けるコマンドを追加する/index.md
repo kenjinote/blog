@@ -4,6 +4,7 @@ date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.png"
+categories: ["IT・テクノロジー"]
 ---
 # はじめに
 このブログを書くときは、IntelliJ IDEAを使っています。Gitとの相性も良いし、マークダウンのプロビューを表示してくれるから便利です。

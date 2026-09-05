@@ -4,6 +4,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["フレーズ", "表現"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # こんにちは！今日は「ハンロンの剃刀」のお話です

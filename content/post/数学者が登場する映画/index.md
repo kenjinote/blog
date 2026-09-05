@@ -4,6 +4,7 @@ date: 2022-09-05T10:41:00+09:00
 tags: ["映画","数学者"]
 draft: false
 image: "images/img.png"
+categories: ["数学・暗号・量子"]
 ---
 数学者の主人公が登場する私のおすすめの映画3選です。
 

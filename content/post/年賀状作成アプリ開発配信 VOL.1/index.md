@@ -4,6 +4,7 @@ date: 2025-08-31T20:24:49+09:00
 tags: ["年賀状作成アプリ作成配信", "YouTube"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # 🎬 YouTube配信用 台本（年賀状作成アプリ開発・第1回）

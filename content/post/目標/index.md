@@ -4,6 +4,7 @@ date: 2024-12-08T03:32:34+09:00
 tags: ["目標"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # 長期的な目標

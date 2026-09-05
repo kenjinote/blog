@@ -4,6 +4,7 @@ date: 2024-04-16T02:13:56+09:00
 tags: ["生成AI", "YouTube", "講義"]
 draft: false
 image: "img.png"
+categories: ["AI・テクノロジー"]
 ---
 
 ## 生成AIについての講義動画

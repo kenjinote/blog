@@ -4,6 +4,7 @@ date: 2022-09-02T07:23:00+09:00
 tags: ["雑記"]
 draft: false
 image: "images/komeda.jpeg"
+categories: ["ブログ運営"]
 ---
 
 ## ブログ、はじめてみました

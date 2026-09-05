@@ -4,6 +4,7 @@ date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 ## 前提条件
 Windows 11 であること

@@ -4,6 +4,7 @@ date: 2024-04-27T02:54:12+09:00
 tags: ["git", "リポジトリ", "コマンド"]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 
 # リポジトリの最新だけ取得する

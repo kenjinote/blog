@@ -5,6 +5,7 @@ tags: ["数学"]
 draft: false
 math: true
 image: "img.png"
+categories: ["数学・暗号・量子"]
 ---
 ## ウィルソンの定理
 $p$ を素数とするとき，$(p−1)!≡−1 \pmod p$ が成り立つ

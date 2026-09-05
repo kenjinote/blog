@@ -4,6 +4,7 @@ date: 2022-10-15T17:00:43+09:00
 tags: ["名言集"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 > 愚者は経験に学び、賢者は歴史に学ぶ (フォン・ビスマルク)

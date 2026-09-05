@@ -4,6 +4,7 @@ date: 2022-09-07T16:46:56+09:00
 tags: ["アイコン","デザイン"]
 draft: false
 image: "img_2.png"
+categories: ["IT・テクノロジー"]
 ---
 
 ## Google Material Symbols and Icons

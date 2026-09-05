@@ -4,6 +4,7 @@ date: 2024-08-25T16:24:35+09:00
 tags: ["動画", "ショート"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 1. サッカー　ボールボーイ
 

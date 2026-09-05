@@ -4,6 +4,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["映画", "TODO"]
 draft: false
 image: "image.jpg"
+categories: ["ライフスタイル・雑記"]
 ---
 
 # 見たい映画（見たらチェックつけていく）

@@ -4,6 +4,7 @@ date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "枠線", "画像"]
 draft: false
 image: "img_3.png"
+categories: ["AI・テクノロジー"]
 ---
 
 paint.netを使って画像に枠線をつける方法を紹介します。

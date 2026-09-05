@@ -4,6 +4,7 @@ date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "カレンダー", "テンプレート", "祝日"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 ## Excelのカレンダーテンプレート（祝日対応版）作りました！

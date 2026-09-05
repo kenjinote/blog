@@ -4,6 +4,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["バージョン情報", "Windows", "MacOS"]
 draft: false
 image: "img.png"
+categories: ["PC・ガジェット"]
 ---
 
 # いろんなバージョン情報ダイアログ集めてみた

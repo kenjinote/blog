@@ -4,6 +4,7 @@ date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.png"
+categories: ["ツール・開発環境"]
 ---
 # はじめに
 GitHub Copilotは、GitHubが開発したAIベースのコード補完ツールです。

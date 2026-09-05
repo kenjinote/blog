@@ -4,6 +4,7 @@ date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "コマンド"]
 draft: false
 image: "img.png"
+categories: ["プログラミング"]
 ---
 # ChatGPT APIをcurlから呼び出す
 

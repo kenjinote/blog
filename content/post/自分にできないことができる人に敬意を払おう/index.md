@@ -4,6 +4,7 @@ date: 2023-08-01T23:42:31+09:00
 tags: ["ポエム", "思うこと"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # 敬意を払おう

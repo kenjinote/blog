@@ -4,6 +4,7 @@ date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "開発", "壁", "ポエム"]
 draft: false
 image: "img_1.png"
+categories: ["AI・テクノロジー"]
 ---
 
 # AI開発の壁

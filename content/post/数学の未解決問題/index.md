@@ -5,6 +5,7 @@ tags: ["数学","未解決問題"]
 draft: false
 math: true
 image: "img.png"
+categories: ["数学・暗号・量子"]
 ---
 
 # 数学の未解決問題

@@ -4,6 +4,7 @@ date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "数学", "暗号"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.jpg"
+categories: ["数学・暗号・量子"]
 ---
 
 # 【完全解剖】最強の暗号解読アルゴリズム「GNFS」をC++で実装して理解する

@@ -4,6 +4,7 @@ date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "ショートカットキー", "アプリケーション切り替え"]
 draft:
 image: "img.png"
+categories: ["PC・ガジェット"]
 ---
 
 # はじめに

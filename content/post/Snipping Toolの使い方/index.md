@@ -4,6 +4,7 @@ date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "画像", "動画", "スクリーンショット", "録画", "キャプチャー"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 ## Snipping Toolとは

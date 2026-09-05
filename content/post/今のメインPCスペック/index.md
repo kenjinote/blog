@@ -4,6 +4,7 @@ date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.png"
+categories: ["PC・ガジェット"]
 ---
 メインPCのスペックを書いておきます。
 | 項目名     | 値                                             |

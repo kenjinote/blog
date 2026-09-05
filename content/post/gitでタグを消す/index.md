@@ -4,6 +4,7 @@ date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 # ローカルのタグを消す
 

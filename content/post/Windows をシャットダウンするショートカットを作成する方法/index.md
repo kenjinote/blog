@@ -4,6 +4,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "シャットダウン", "ショートカット"]
 draft: false
 image: "img.png"
+categories: ["PC・ガジェット"]
 ---
 
 Windowsをシャットダウンさせるショートカットを作成する方法を紹介します。

@@ -4,6 +4,7 @@ date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.png"
+categories: ["ブログ運営"]
 ---
 # はじめに
 PaperModテーマはTwitter Cardに対応しています。

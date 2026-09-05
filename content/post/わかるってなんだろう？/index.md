@@ -4,6 +4,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["雑記"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 # わかるってなんだろう？
 

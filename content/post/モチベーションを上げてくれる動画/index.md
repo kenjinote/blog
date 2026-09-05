@@ -4,6 +4,7 @@ date: 2022-09-08T02:22:52+09:00
 tags: ["モチベーション", "動画"]
 draft: false
 image: "images/img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 ## 努力が認められなくてもいいじゃない

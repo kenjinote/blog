@@ -4,6 +4,7 @@ date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "プログラミング", "開発", "技術"]
 draft: false
 image: "img_1.png"
+categories: ["プログラミング"]
 ---
 # Win32API + C++で開発する魅力と課題
 

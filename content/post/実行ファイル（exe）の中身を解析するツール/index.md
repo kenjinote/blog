@@ -4,6 +4,7 @@ date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "実行ファイル", "解析"]
 draft: false
 image: "img_1.png"
+categories: ["PC・ガジェット"]
 ---
 
 # 実行ファイル（exe）とは

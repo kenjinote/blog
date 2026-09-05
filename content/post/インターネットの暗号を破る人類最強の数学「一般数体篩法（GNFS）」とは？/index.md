@@ -4,6 +4,7 @@ date: 2026-09-05T02:09:08+09:00
 tags: ["数学", "暗号", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.jpg"
+categories: ["数学・暗号・量子"]
 ---
 
 # インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？

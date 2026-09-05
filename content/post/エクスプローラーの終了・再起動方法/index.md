@@ -4,6 +4,7 @@ date: 2024-03-30T15:40:24+09:00
 tags: ["エクスプローラー"]
 draft: false
 image: "img_2.png"
+categories: ["IT・テクノロジー"]
 ---
 
 ## タスクバーの右クリックから終了する方法

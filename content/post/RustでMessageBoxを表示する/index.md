@@ -4,6 +4,7 @@ date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.png"
+categories: ["プログラミング"]
 ---
 
 下記の手順でRustでMessageBoxを表示することができます。

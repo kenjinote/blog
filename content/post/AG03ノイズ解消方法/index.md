@@ -4,6 +4,7 @@ date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "ノイズ"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # YAMAHA AG03 ノイズ解消方法

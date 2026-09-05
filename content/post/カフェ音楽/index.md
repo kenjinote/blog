@@ -4,6 +4,7 @@ date: 2022-09-08T08:39:03+09:00
 tags: ["カフェ", "音楽"]
 draft: false
 image: "images/img.png"
+categories: ["ライフスタイル・雑記"]
 ---
 **アップテンポ**
 

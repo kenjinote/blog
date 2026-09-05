@@ -4,6 +4,7 @@ date: 2024-04-06T15:36:54+09:00
 tags: ["ブラウザ拡張", "Edgeアドオン", "自動更新"]
 draft: false
 image: "img.png"
+categories: ["ブログ運営"]
 ---
 Webページを自動更新するEdgeのブラウザ拡張機能「タブの自動更新」を紹介します。
 

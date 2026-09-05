@@ -4,6 +4,7 @@ date: 2023-04-02T14:44:17+09:00
 tags: ["写真素材", "ブログ", "Unsplash"]
 draft: false
 image: "img_1.png"
+categories: ["ブログ運営"]
 ---
 ## 「Unsplash」について
 

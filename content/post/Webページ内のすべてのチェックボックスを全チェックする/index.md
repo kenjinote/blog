@@ -4,6 +4,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "自動化"]
 draft: false
 image: "img.png"
+categories: ["ブログ運営"]
 ---
 
 Webページ内のチェックボックスを全チェックするには、F12でDevToolsを開き、コンソールに以下のコードを貼り付けて実行します。

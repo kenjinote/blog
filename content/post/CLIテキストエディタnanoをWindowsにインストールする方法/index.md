@@ -4,6 +4,7 @@ date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "テキストエディタ"]
 draft: false
 image: "img_1.png"
+categories: ["ツール・開発環境"]
 ---
 
 ## nano.exeをダウンロードする

@@ -4,6 +4,7 @@ date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","ウィンドウ"]
 draft: false
 image: "images/rust_logo.png"
+categories: ["プログラミング"]
 ---
 
 Rustでシンプルなウィンドウを表示する

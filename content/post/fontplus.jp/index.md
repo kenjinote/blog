@@ -4,6 +4,7 @@ date: 2023-02-07T20:59:01+09:00
 tags: ["font","fontplus"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # 有償のWebフォントを使うためのサービス fontplus.jp

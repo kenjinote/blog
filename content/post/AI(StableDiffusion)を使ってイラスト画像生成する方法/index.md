@@ -4,6 +4,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "イラスト", "画像生成", "Google Colaboratory"]
 draft: false
 image: "img.png"
+categories: ["プログラミング"]
 ---
 
 # Stable diffusionとは

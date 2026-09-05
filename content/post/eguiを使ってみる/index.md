@@ -4,6 +4,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "GUIライブラリ"]
 draft: false
 image: "demo.gif"
+categories: ["IT・テクノロジー"]
 ---
 
 # eguiとは

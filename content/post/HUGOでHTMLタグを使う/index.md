@@ -4,6 +4,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.png"
+categories: ["ブログ運営"]
 ---
 
 HUGOのデフォルトでは記事中のHTMLタグの使用ができなくなっていますが、config.tomlに下記の記述をするとできるようになります。

@@ -4,6 +4,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["プログラミング", "フォント"]
 draft: false
 image: "img.png"
+categories: ["プログラミング"]
 ---
 
 ## JetBrains Mono

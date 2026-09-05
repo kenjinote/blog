@@ -4,6 +4,7 @@ date: 2022-09-23T01:56:52+09:00
 tags: ["雑記"]
 draft: false
 image: "img.png"
+categories: ["数学・暗号・量子"]
 ---
 
 ## なぜ数学や計算機が好きなんだろうか考えてみました

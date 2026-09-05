@@ -4,6 +4,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "テキストエディタ"]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 
 ## microをダウンロードする

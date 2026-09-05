@@ -4,6 +4,7 @@ date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "開発", "秘話"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # 「コードは書けないけど、ロジックはある人」にツールを。LogicPadを作った理由

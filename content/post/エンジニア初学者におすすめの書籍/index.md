@@ -4,6 +4,7 @@ date: 2024-05-05T16:03:33+09:00
 tags: ["エンジニア", "初学者", "書籍"]
 draft: false
 image: "img.png"
+categories: ["ライフスタイル・雑記"]
 ---
 
 1. リーダブルコード

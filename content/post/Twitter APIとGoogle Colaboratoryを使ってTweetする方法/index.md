@@ -4,6 +4,7 @@ date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.png"
+categories: ["プログラミング"]
 ---
 
 # 必要なもの

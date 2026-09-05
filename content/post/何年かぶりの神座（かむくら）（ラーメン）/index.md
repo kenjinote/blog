@@ -4,6 +4,7 @@ date: 2022-09-09T21:45:19+09:00
 tags: ["ラーメン", "神座"]
 draft: false
 image: "images/img2.jpg"
+categories: ["IT・テクノロジー"]
 ---
 
 何年かぶりに神座（かむくら）（ラーメン）に行ってきました。

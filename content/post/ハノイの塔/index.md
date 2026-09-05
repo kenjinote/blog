@@ -4,6 +4,7 @@ date: 2025-04-17T22:23:14+09:00
 tags: ["ハノイの塔", "アルゴリズム", "Python"]
 draft: false
 image: "img.png"
+categories: ["プログラミング"]
 ---
 
 # ハノイの塔

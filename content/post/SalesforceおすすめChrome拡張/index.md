@@ -4,6 +4,7 @@ date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome拡張"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 ### Salesforce DevTools

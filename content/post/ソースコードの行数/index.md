@@ -4,6 +4,7 @@ date: 2025-04-17T10:33:02+09:00
 tags: ["ソースコード", "行数"]
 draft: false
 image: "img_1.png"
+categories: ["IT・テクノロジー"]
 ---
 
 # ソースコードの行数

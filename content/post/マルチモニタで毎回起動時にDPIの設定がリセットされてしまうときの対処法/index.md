@@ -4,6 +4,7 @@ date: 2024-04-29T19:42:20+09:00
 tags: ["マルチモニタ", "DPI", "コントロールパネル"]
 draft: false
 image: "img.png"
+categories: ["IT・テクノロジー"]
 ---
 
 ※Windows 11での設定手順となります。

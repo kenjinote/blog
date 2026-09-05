@@ -4,6 +4,7 @@ date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false
 image: "img.png"
+categories: ["ツール・開発環境"]
 ---
 
 ## Visual Studioでlibcurl（OpenSSL対応）を使うなら、vcpkg導入が簡単でおすすめ

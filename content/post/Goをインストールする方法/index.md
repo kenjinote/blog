@@ -4,6 +4,7 @@ date: 2022-09-10T00:48:17+09:00
 tags: ["Go","インストール"]
 draft: false
 image: "images/cover.png"
+categories: ["プログラミング"]
 ---
 # はじめに
 Goは、Googleが2009年に公開した比較的新しいプログラミング言語です。

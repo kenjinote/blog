@@ -5,6 +5,7 @@ tags: ["エラトステネスの篩", "素数", "数学", "Rust"]
 draft: false
 math: true
 image: "img.png"
+categories: ["数学・暗号・量子"]
 ---
 
 ## エラトステネスの篩とは

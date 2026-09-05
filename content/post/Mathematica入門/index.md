@@ -4,6 +4,7 @@ date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "数学", "アルゴリズム"]
 draft: false
 image: "img.png"
+categories: ["数学・暗号・量子"]
 ---
 # Mathematica入門
 

@@ -4,6 +4,7 @@ date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "サンプルコード"]
 draft: false
 image: "img.png"
+categories: ["プログラミング"]
 ---
 
 標準ライブラリを使ったサンプルコードの紹介です。

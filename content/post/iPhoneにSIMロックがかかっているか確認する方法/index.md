@@ -4,6 +4,7 @@ date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIMロック"]
 draft: false
 image: "img.png"
+categories: ["PC・ガジェット"]
 ---
 
 # iPhoneにSIMロックがかかっているか確認する方法
