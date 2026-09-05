@@ -19,6 +19,20 @@ languages:
         params:
             sidebar:
                 subtitle: kenjinoteのブログ
+    en:
+        languageName: English
+        title: kenji.blog
+        weight: 2
+        params:
+            sidebar:
+                subtitle: kenjinote's blog
+    zh-cn:
+        languageName: 简体中文
+        title: kenji.blog
+        weight: 3
+        params:
+            sidebar:
+                subtitle: kenjinote的博客
 
 services:
     # Change it to your Disqus shortname before using
