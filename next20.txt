@@ -1,0 +1,20 @@
+c:\work\kenji.blog\content\post\Rustでシンプルなウィンドウを表示する\index.md
+c:\work\kenji.blog\content\post\Rustでテストを書く\index.md
+c:\work\kenji.blog\content\post\RustでMessageBoxを表示する\index.md
+c:\work\kenji.blog\content\post\わかるってなんだろう？\index.md
+c:\work\kenji.blog\content\post\なぜ数学や計算機が好きなんだろう\index.md
+c:\work\kenji.blog\content\post\コミュニティに必要なこと\index.md
+c:\work\kenji.blog\content\post\数学の偉人たち\index.md
+c:\work\kenji.blog\content\post\ウィンドウタイトルの列挙\index.md
+c:\work\kenji.blog\content\post\大きなフォルダーを高速一括削除\index.md
+c:\work\kenji.blog\content\post\Salesforceチャッター全消しコマンド\index.md
+c:\work\kenji.blog\content\post\Windows のショートカット・小技集\index.md
+c:\work\kenji.blog\content\post\paint.netの魅力\index.md
+c:\work\kenji.blog\content\post\Githubリポジトリにカスタムドメインを設定する方法\index.md
+c:\work\kenji.blog\content\post\dotnetコマンドで.gitignoreを生成する\index.md
+c:\work\kenji.blog\content\post\好きなゲーム11選\index.md
+c:\work\kenji.blog\content\post\macOSで.DS_Storeを自動生成しないようにするコマンド\index.md
+c:\work\kenji.blog\content\post\PowerShellで.DS_Storeを一括削除する\index.md
+c:\work\kenji.blog\content\post\HUGOで使えるショートコード\index.md
+c:\work\kenji.blog\content\post\PaperModの画像の配置変更\index.md
+c:\work\kenji.blog\content\post\PaperModでTwitter Cardを設定する方法\index.md
