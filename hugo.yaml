@@ -59,7 +59,7 @@ params:
             src: img/avatar.png
 
     article:
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:
@@ -236,6 +236,8 @@ markup:
                     inline:
                         - - \(
                           - \)
+                        - - $
+                          - $
         renderer:
             ## Set to true if you have HTML content inside Markdown
             unsafe: true
