@@ -1,11 +1,13 @@
 ---
-title: ''Cómo llamar a Microsoft.Windows.AI desde C++''
+
+title: "Cómo llamar a Microsoft.Windows.AI desde C++"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "API de Win32"]
 draft: false
 image: "img.png"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
+
 
 # 🎯 Cómo llamar a `Microsoft.Windows.AI` desde C++ 【Con código de ejemplo】
 

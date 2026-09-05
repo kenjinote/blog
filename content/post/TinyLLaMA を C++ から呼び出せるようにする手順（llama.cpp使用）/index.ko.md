@@ -1,11 +1,13 @@
 ---
-title: ''TinyLLaMA를 C++에서 호출할 수 있게 하는 절차(llama.cpp 사용)''
+
+title: "'TinyLLaMA를 C++에서 호출할 수 있게 하는 절차(llama.cpp 사용)'"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.png"
 categories: ["프로그래밍"]
 ---
+
 
 # ✅ TinyLLaMA × C++ 설정 절차(`llama.cpp` 사용)
 

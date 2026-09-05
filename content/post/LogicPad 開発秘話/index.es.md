@@ -1,11 +1,13 @@
 ---
-title: ''La historia secreta del desarrollo de LogicPad''
+
+title: "La historia secreta del desarrollo de LogicPad"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Desarrollo", "Historia Secreta"]
 draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
 
 # Herramientas para aquellos que "no pueden escribir código, pero tienen lógica". La razón por la que creé LogicPad.
 

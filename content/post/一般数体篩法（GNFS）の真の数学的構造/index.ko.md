@@ -1,11 +1,13 @@
 ---
-title: ''일반 수체 체법(GNFS)의 진정한 수학적 구조''
+
+title: "'일반 수체 체법(GNFS)의 진정한 수학적 구조'"
 date: 2026-09-05T02:26:13+09:00
 tags: ["수학", "암호", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.jpg"
 categories: ["수학・암호・양자"]
 ---
+
 
 # 일반 수체 체법(GNFS)의 진정한 수학적 구조
 

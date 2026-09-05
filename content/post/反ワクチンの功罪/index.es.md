@@ -1,11 +1,13 @@
 ---
-title: ''Los pros y contras de los antivacunas''
+
+title: "Los pros y contras de los antivacunas"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Problemas sociales", "Salud", "Alfabetización informacional"]
 draft: false
 image: "img.png"
 categories: ["Estilo de vida y notas diversas"]
 ---
+
 
 # Los pros y contras de los antivacunas: El futuro de 5.000 personas asesinado por la "ansiedad de buena fe" y las lecciones epidemiológicas que debemos aprender
 

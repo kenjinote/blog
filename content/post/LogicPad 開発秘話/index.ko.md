@@ -1,11 +1,13 @@
 ---
-title: ''LogicPad 개발 비화''
+
+title: "'LogicPad 개발 비화'"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "개발", "비화"]
 draft: false
 image: "img.png"
 categories: ["IT·테크놀로지"]
 ---
+
 
 # 「코드 작성은 못하지만 논리는 있는 사람」을 위한 도구. LogicPad를 만든 이유
 

@@ -1,11 +1,13 @@
 ---
-title: ''연하장 작성 앱 개발 방송 VOL.1 (대본)''
+
+title: "'연하장 작성 앱 개발 방송 VOL.1 (대본)'"
 date: 2025-08-31T20:24:49+09:00
 tags: ["연하장 작성 앱 개발 방송", "YouTube"]
 draft: false
 image: "img.png"
 categories: ["IT・테크놀로지"]
 ---
+
 
 # 🎬 YouTube 방송용 대본 (연하장 작성 앱 개발・제1회)
 
