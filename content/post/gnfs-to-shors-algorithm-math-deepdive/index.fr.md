@@ -1,6 +1,7 @@
 ---
 title: "【Compréhension complète avec formules】Pourquoi le « GNFS », le plus puissant des algorithmes classiques, est-il vaincu par l'algorithme quantique ? Le changement de paradigme de la factorisation en nombres premiers"
 slug: "gnfs-to-shors-algorithm-math-deepdive"
+date: 2026-09-06T12:00:00+09:00
 tags: ["Ordinateur quantique", "GNFS", "Algorithme de Shor", "Décryptage", "Mathématiques"]
 image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
 mermaid: true

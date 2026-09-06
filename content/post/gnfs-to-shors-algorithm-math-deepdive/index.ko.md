@@ -4,6 +4,7 @@
 
 title: '[수학적 고찰] 왜 암호 해독 알고리즘 ''GNFS''는 양자 컴퓨터 시대의 Shor 알고리즘에 패배하는가?'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
+date: 2026-09-06T12:00:00+09:00
 tags: ["양자 컴퓨터", "GNFS", "쇼어 알고리즘", "암호 해독", "수학"]
 image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
 mermaid: true

@@ -1,6 +1,7 @@
 ---
 title: "【用數學公式完全理解】為何最強古典演算法「GNFS」會敗給量子演算法？質因數分解的典範轉移"
 slug: "gnfs-to-shors-algorithm-math-deepdive"
+date: 2026-09-06T12:00:00+09:00
 tags: ["量子電腦", "GNFS", "Shor演算法", "密碼破解", "數學"]
 image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
 mermaid: true
