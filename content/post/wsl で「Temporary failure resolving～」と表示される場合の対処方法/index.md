@@ -33,5 +33,5 @@ nameserver 8.8.8.8
 
 上記手順で解決しない場合もあるようです。以下の記事をご参照ください。
 
-- [WSLにてapt update時の『Temporary failure resolving ~』を解決する方法](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
+- [WSLにてapt update時の『Temporary failure resolving ～』を解決する方法](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
 

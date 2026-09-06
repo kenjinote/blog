@@ -47,4 +47,4 @@ nameserver 8.8.8.8
 
 위 절차로 해결되지 않는 경우도 있는 것 같습니다. 다음 기사를 참고하세요.
 
-- [WSL에서 apt update 시의 『Temporary failure resolving ~』를 해결하는 방법](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
+- [WSL에서 apt update 시의 『Temporary failure resolving ～』를 해결하는 방법](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)

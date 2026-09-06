@@ -25,7 +25,7 @@ categories: ["블로그 운영"]
 
 ## ✅ 액세스 토큰을 사용하는 게시 방법 (Slack Web API)
 
-Slack의 "OAuth Token(xoxb-~ 등)"은 Slack의 [Web API](https://api.slack.com/methods/chat.postMessage)를 사용하여 게시하기 위한 키입니다.
+Slack의 "OAuth Token(xoxb-～ 등)"은 Slack의 [Web API](https://api.slack.com/methods/chat.postMessage)를 사용하여 게시하기 위한 키입니다.
 이 경우 Webhook과는 달리 **Slack API 엔드포인트** 에 `Authorization: Bearer` 헤더와 함께 `POST`합니다.
 
 ---

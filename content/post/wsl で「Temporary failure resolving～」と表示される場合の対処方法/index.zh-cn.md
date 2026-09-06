@@ -33,4 +33,4 @@ nameserver 8.8.8.8
 
 似乎也有上述步骤无法解决问题的情况。请参考以下文章。
 
-- [在 WSL 中 apt update 时出现『Temporary failure resolving ~』的解决方法](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
+- [在 WSL 中 apt update 时出现『Temporary failure resolving ～』的解决方法](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
