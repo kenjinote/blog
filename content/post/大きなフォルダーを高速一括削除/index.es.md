@@ -1,5 +1,6 @@
 ---
 
+
 title: "Eliminar carpetas grandes rápidamente"
 date: 2022-09-20T16:04:02+09:00
 tags: ["Símbolo del sistema"]
@@ -7,6 +8,7 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
 
 ## Eliminar carpetas grandes rápidamente
 Al eliminar carpetas grandes en el Explorador, la velocidad es lenta porque primero se realiza una búsqueda completa del contenido de la carpeta antes de ejecutar la eliminación.

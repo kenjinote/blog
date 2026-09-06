@@ -3,6 +3,7 @@
 
 
 
+
 title: "'Herramienta de grabación de pantalla en GIF animado'"
 date: 2024-02-08T01:23:01+09:00
 tags: ["Herramienta", "Grabación de pantalla", "GIF"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
 
 
 

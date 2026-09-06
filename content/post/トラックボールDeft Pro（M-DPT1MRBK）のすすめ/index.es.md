@@ -1,5 +1,6 @@
 ---
 
+
 title: "Recomendación del trackball Deft Pro (M-DPT1MRBK)"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
@@ -7,6 +8,7 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
 
 
 # Acerca del trackball Elecom Deft Pro M-DPT1MRBK

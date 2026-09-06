@@ -3,6 +3,7 @@
 
 
 
+
 title: "Cómo cerrar y reiniciar el Explorador de archivos"
 date: 2024-03-30T15:40:24+09:00
 tags: ["Explorador de archivos"]
@@ -10,6 +11,7 @@ draft: false
 image: "img_2.png"
 categories: ["TI y Tecnología"]
 ---
+
 
 
 

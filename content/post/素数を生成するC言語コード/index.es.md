@@ -4,6 +4,7 @@
 
 
 
+
 title: "Código en C para generar números primos"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Números primos", "Algoritmos", "Matemáticas"]
@@ -11,6 +12,7 @@ draft: false
 image: "img.png"
 categories: ["Matemáticas, Criptografía y Cuántica"]
 ---
+
 
 
 

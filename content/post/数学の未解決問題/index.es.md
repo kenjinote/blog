@@ -3,6 +3,7 @@
 
 
 
+
 title: "'Problemas no resueltos en matemáticas'"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Matemáticas", "Problemas no resueltos"]
@@ -11,6 +12,7 @@ math: true
 image: "img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
 
 
 

@@ -2,6 +2,7 @@
 
 
 
+
 title: "git reset을 취소하는 방법"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "복원", "취소"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["도구・개발 환경"]
 ---
+
 
 
 

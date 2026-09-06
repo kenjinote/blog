@@ -1,5 +1,6 @@
 ---
 
+
 title: "'Colección de citas'"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Colección de citas"]
@@ -7,6 +8,7 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
 
 
 > Los necios aprenden de la experiencia, los sabios aprenden de la historia. (Otto von Bismarck)

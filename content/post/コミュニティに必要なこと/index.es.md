@@ -1,5 +1,6 @@
 ---
 
+
 title: "'Lo que necesita una comunidad'"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Comunidad", "Miscelánea"]
@@ -7,6 +8,7 @@ draft: false
 image: "img.png"
 categories: ["TI / Tecnología"]
 ---
+
 
 # Lo que necesita una comunidad
 

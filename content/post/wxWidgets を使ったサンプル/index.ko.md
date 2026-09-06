@@ -1,5 +1,6 @@
 ---
 
+
 title: "'wxWidgets를 사용한 샘플'"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "샘플"]
@@ -7,6 +8,7 @@ draft: false
 image: "img.png"
 categories: ["프로그래밍"]
 ---
+
 
 
 ## wxWidgets란

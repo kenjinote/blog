@@ -1,5 +1,6 @@
 ---
 
+
 title: "Extensiones recomendadas para Chrome"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Extensiones de Chrome", "Navegador", "Chrome", "Edge"]
@@ -7,6 +8,7 @@ draft: false
 image: "img_4.png"
 categories: ["IT y Tecnología"]
 ---
+
 
 
 # Extensiones recomendadas para Chrome

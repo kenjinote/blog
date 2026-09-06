@@ -1,5 +1,6 @@
 ---
 
+
 title: "'El entorno de trabajo de hoy'"
 date: 2022-09-04T14:29:09+09:00
 tags: ["miscelánea","niños"]
@@ -7,6 +8,7 @@ draft: false
 image: "images/today_workplase.jpg"
 categories: ["IT y Tecnología"]
 ---
+
 
 
 # El escritorio del niño

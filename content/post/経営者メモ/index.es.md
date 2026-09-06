@@ -1,5 +1,6 @@
 ---
 
+
 title: "Notas de Gestión"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gerente"]
@@ -7,6 +8,7 @@ draft: false
 image: "images/img.png"
 categories: ["TI y Tecnología"]
 ---
+
 
 # Encontrar negocios que se estén popularizando
 - Preguntar a la gente de Hot Pepper o a los contadores fiscales sobre los negocios que se están popularizando

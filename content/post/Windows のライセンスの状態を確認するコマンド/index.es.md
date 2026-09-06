@@ -4,6 +4,7 @@
 
 
 
+
 title: "Comando para verificar el estado de la licencia de Windows"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licencia", "Símbolo del sistema"]
@@ -11,6 +12,7 @@ draft: false
 image: "img_1.png"
 categories: ["PC y Gadgets"]
 ---
+
 
 
 

@@ -2,6 +2,7 @@
 
 
 
+
 title: "Windows에 텍스트 에디터 micro를 설치하는 방법"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "텍스트 에디터"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["도구 및 개발 환경"]
 ---
+
 
 
 

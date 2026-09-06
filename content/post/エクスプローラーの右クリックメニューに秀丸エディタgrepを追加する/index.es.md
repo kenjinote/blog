@@ -3,6 +3,7 @@
 
 
 
+
 title: "Añadir el grep del editor Hidemaru al menú contextual del Explorador"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Editor Hidemaru", "Explorador", "Menú contextual", "grep", "Registro"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["Herramientas y Entorno de Desarrollo"]
 ---
+
 
 
 

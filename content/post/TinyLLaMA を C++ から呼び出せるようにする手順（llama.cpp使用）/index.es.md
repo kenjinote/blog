@@ -4,6 +4,7 @@
 
 
 
+
 title: "Pasos para llamar a TinyLLaMA desde C++ (usando llama.cpp)"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "IA"]
@@ -11,6 +12,7 @@ draft: false
 image: "img.png"
 categories: ["Programación"]
 ---
+
 
 
 

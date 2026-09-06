@@ -4,6 +4,7 @@
 
 
 
+
 title: "Parámetros de ffmpeg para iOS"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
@@ -11,6 +12,7 @@ draft: false
 image: "img.png"
 categories: ["PC y Gadgets"]
 ---
+
 
 
 

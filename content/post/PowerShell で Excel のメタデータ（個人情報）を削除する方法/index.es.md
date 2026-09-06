@@ -4,6 +4,7 @@
 
 
 
+
 title: "Cómo eliminar de forma masiva metadatos (información personal) de Excel, Word, etc. con PowerShell"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Metadatos", "Información personal"]
@@ -11,6 +12,7 @@ draft: false
 image: "powershell_metadata_eyecatch_1788588033601.jpg"
 categories: ["Programación"]
 ---
+
 
 
 

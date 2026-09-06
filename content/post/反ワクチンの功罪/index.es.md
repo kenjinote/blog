@@ -4,6 +4,7 @@
 
 
 
+
 title: "Los pros y contras de los antivacunas"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Problemas sociales", "Salud", "Alfabetización informacional"]
@@ -11,6 +12,7 @@ draft: false
 image: "img.png"
 categories: ["Estilo de vida y notas diversas"]
 ---
+
 
 
 

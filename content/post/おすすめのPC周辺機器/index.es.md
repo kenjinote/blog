@@ -1,5 +1,6 @@
 ---
 
+
 title: "Periféricos de PC recomendados"
 date: 2023-02-28T00:51:49+09:00
 tags: ["teclado", "trackball", "monitor"]
@@ -7,6 +8,7 @@ draft: false
 image: "img.png"
 categories: ["PC y gadgets"]
 ---
+
 
 
 # Periféricos de PC recomendados y deseados por un ingeniero en activo

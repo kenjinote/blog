@@ -1,5 +1,6 @@
 ---
 
+
 title: "La dialéctica de Hegel"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filosofía", "Hegel", "Dialéctica"]
@@ -7,6 +8,7 @@ draft: false
 image: "images/img.png"
 categories: ["IT y Tecnología"]
 ---
+
 
 ## ¿Qué es la dialéctica de Hegel?
 

@@ -3,6 +3,7 @@
 
 
 
+
 title: "Obtener solo lo más reciente de un repositorio git"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repositorio", "comando"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["Herramientas y entorno de desarrollo"]
 ---
+
 
 
 

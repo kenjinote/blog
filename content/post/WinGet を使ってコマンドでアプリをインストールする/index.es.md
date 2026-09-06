@@ -1,5 +1,6 @@
 ---
 
+
 title: "'Instalar aplicaciones mediante comandos usando WinGet'"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
@@ -7,6 +8,7 @@ draft: false
 image: "img.png"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
+
 
 ## Requisitos previos
 Debe ser Windows 11

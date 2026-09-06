@@ -1,5 +1,6 @@
 ---
 
+
 title: "'Lista de TODO de películas'"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Películas", "TODO"]
@@ -7,6 +8,7 @@ draft: false
 image: "image.jpg"
 categories: ["Estilo de vida y miscelánea"]
 ---
+
 
 
 # Películas que quiero ver (marcar al verlas)

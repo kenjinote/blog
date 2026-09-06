@@ -3,6 +3,7 @@
 
 
 
+
 title: "'Probando mermaid.js'"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
@@ -11,6 +12,7 @@ mermaid: true
 image: "img_2.png"
 categories: ["IA y Tecnología"]
 ---
+
 
 
 

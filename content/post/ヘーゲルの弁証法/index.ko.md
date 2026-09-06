@@ -1,5 +1,6 @@
 ---
 
+
 title: "헤겔의 변증법"
 date: 2022-09-09T23:13:19+09:00
 tags: ["철학", "헤겔", "변증법"]
@@ -7,6 +8,7 @@ draft: false
 image: "images/img.png"
 categories: ["IT・테크놀로지"]
 ---
+
 
 ## 헤겔의 변증법이란
 

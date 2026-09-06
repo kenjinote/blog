@@ -3,6 +3,7 @@
 
 
 
+
 title: "Liberación del código fuente de MS-DOS 4.0"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "código abierto"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
 
 
 

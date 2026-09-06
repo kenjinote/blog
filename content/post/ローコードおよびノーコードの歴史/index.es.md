@@ -4,6 +4,7 @@
 
 
 
+
 title: "Historia del no-code en entornos locales"
 date: 2025-04-26T16:46:11+09:00
 tags: ["low-code", "no-code", "historia"]
@@ -11,6 +12,7 @@ draft: false
 image: "img.png"
 categories: ["TI / Tecnología"]
 ---
+
 
 
 

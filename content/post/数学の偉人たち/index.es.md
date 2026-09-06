@@ -1,5 +1,6 @@
 ---
 
+
 title: "Grandes Matemáticos"
 date: 2022-09-22T23:06:37+09:00
 tags: ["matemáticos"]
@@ -7,6 +8,7 @@ draft: false
 image: "img.png"
 categories: ["Matemáticas, Criptografía y Cuántica"]
 ---
+
 
 ### Fermat (P, de Fermat, 1601-1665)
 Matemático francés representante del siglo XVII. Sentó las bases de la geometría analítica, la teoría de la probabilidad, el cálculo diferencial, etc. También es el fundador de la teoría de números.

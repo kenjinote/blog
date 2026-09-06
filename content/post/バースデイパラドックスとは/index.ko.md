@@ -2,6 +2,7 @@
 
 
 
+
 title: "'생일 역설이란?'"
 date: 2024-04-02T01:20:50+09:00
 tags: ["수학", "역설"]
@@ -10,6 +11,7 @@ math: true
 image: "img.png"
 categories: ["수학・암호・양자"]
 ---
+
 
 
 

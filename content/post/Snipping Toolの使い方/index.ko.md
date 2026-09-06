@@ -2,6 +2,7 @@
 
 
 
+
 title: "'Snipping Tool 사용법'"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "이미지", "동영상", "스크린샷", "녹화", "캡처"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["IT・테크놀로지"]
 ---
+
 
 
 

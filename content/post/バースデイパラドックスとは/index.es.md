@@ -3,6 +3,7 @@
 
 
 
+
 title: "'¿Qué es la paradoja del cumpleaños?'"
 date: 2024-04-02T01:20:50+09:00
 tags: ["Matemáticas", "Paradojas"]
@@ -11,6 +12,7 @@ math: true
 image: "img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
 
 
 

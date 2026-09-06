@@ -1,5 +1,6 @@
 ---
 
+
 title: "인터넷 환경을 플렛츠 광→J:COM으로 변경했다"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","플렛츠 광","인터넷 회선"]
@@ -7,6 +8,7 @@ draft: false
 image: "jcom.png"
 categories: ["IT・테크놀로지"]
 ---
+
 
 
 # 자택의 인터넷 환경을 플렛츠 광에서 J:COM으로 변경
