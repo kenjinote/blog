@@ -10,6 +10,7 @@ DefaultContentLanguage: ja
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: true
+enableRobotsTXT: true
 
 languages:
     ja:
@@ -85,6 +86,7 @@ languages:
                 subtitle: kenjinotes Blog
     ar:
         languageName: العربية
+        languageDirection: rtl
         title: kenji.blog
         weight: 11
         params:

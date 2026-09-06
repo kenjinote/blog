@@ -1,2 +1,15 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4878278447183799"
         crossorigin="anonymous"></script>
+
+{{/* Multilingual SEO: Inject hreflang links */}}
+{{ if .IsTranslated }}
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+  {{ end }}
+  {{/* x-default is usually the primary language or a language selector page */}}
+  {{ range .AllTranslations }}
+    {{ if eq .Language.Lang "ja" }}
+      <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{ end }}
+  {{ end }}
+{{ end }}
