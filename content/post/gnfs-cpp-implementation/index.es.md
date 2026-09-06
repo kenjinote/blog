@@ -1,12 +1,18 @@
 ---
 
-title: "【Análisis Completo】Entendiendo el algoritmo de descifrado más fuerte ''GNFS'' implementándolo en C++"
+
+
+
+title: "GNFS"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Matemáticas", "Criptografía"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.jpg"
 categories: ["Matemáticas/Criptografía/Cuántica"]
 ---
+
+
+
 
 
 # 【Análisis Completo】Entendiendo el algoritmo de descifrado más fuerte "GNFS" implementándolo en C++

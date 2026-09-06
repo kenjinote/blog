@@ -34,6 +34,21 @@ languages:
             sidebar:
                 subtitle: kenjinote的博客
 
+    es:
+        languageName: Español
+        title: kenji.blog
+        weight: 4
+        params:
+            sidebar:
+                subtitle: blog de kenjinote
+    ko:
+        languageName: 한국어
+        title: kenji.blog
+        weight: 5
+        params:
+            sidebar:
+                subtitle: kenjinote의 블로그
+
 services:
     # Change it to your Disqus shortname before using
     disqus:

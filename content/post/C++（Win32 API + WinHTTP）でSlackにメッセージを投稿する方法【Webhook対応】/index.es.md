@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Cómo enviar un mensaje a Slack en C++ (Win32 API + WinHTTP) [Soporte de Webhook]"
 date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["Administración de blog"]
 ---
+
+
+
 
 
 # Cómo enviar un mensaje a Slack en C++ (Win32 API + WinHTTP) [Soporte de Webhook]

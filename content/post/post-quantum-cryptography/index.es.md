@@ -1,11 +1,17 @@
 ---
 
+
+
+
 title: "【PQC】La visión completa de la criptografía post-cuántica: La criptografía de próxima generación de la era de las computadoras cuánticas"
 tags: ["Criptografía", "PQC", "Seguridad", "Tecnología de próxima generación"]
 image: "post_quantum_cryptography_1788613735417.jpg"
 date: 2026-09-05T22:09:22+09:00
 categories: ["Matemáticas, Criptografía y Cuántica"]
 ---
+
+
+
 
 
 ## Introducción: La "amenaza" de las computadoras cuánticas a la criptografía

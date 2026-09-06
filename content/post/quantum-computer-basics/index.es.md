@@ -1,11 +1,17 @@
 ---
 
+
+
+
 title: "【Análisis Completo】¿Qué es una computadora cuántica? 〜El principio de cálculo definitivo desde cero〜"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Computación cuántica", "Física", "Tecnología"]
 image: "quantum_basics_eyecatch_1788613712487.jpg"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
+
+
 
 
 ## Introducción: El "cambio de paradigma computacional" que traen las computadoras cuánticas
