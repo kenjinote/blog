@@ -4,6 +4,7 @@
 
 author: "Hugo Authors"
 title: "마크다운 구문 가이드"
+slug: "マークダウンのサンプル"
 date: "2019-03-11"
 description: "HTML 요소를 위한 기본 마크다운 구문과 포맷팅을 보여주는 샘플 문서입니다."
 tags: ["마크다운", "css", "html", "테마"]

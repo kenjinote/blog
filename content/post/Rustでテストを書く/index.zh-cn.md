@@ -1,5 +1,6 @@
 ---
 title: '在 Rust 中编写测试'
+slug: "Rustでテストを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","测试"]
 draft: false

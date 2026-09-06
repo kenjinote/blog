@@ -1,5 +1,6 @@
 ---
 title: 'Hugo命令一览'
+slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "命令"]
 draft: false

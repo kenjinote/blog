@@ -1,5 +1,6 @@
 ---
 title: "【Vollständige Analyse】Was ist ein Quantencomputer? ~Das ultimative Berechnungsprinzip von Grund auf verstehen~"
+slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Quantencomputer", "Physik", "Technologie"]
 image: "quantum_basics_eyecatch_1788613712487.jpg"

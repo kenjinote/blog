@@ -7,6 +7,7 @@
 
 
 title: "Cómo instalar el editor de texto micro en Windows"
+slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "editor de texto"]
 draft: false

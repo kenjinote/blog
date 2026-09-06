@@ -1,5 +1,6 @@
 ---
 title: '生成AIについて'
+slug: "生成AIについて"
 date: 2024-04-16T02:13:56+09:00
 tags: ["生成AI", "YouTube", "講義"]
 draft: false

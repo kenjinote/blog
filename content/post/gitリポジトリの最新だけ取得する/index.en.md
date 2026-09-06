@@ -1,5 +1,6 @@
 ---
 title: 'Get only the latest of a git repository'
+slug: "gitリポジトリの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repository", "command"]
 draft: false

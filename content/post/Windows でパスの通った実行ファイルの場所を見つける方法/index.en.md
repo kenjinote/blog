@@ -1,5 +1,6 @@
 ---
 title: 'How to find the location of an executable in Windows'
+slug: "Windows でパスの通った実行ファイルの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Path", "Executable", "Command Prompt"]
 draft: false

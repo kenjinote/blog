@@ -7,6 +7,7 @@
 
 
 title: "El problema de Monty Hall"
+slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["Matemáticas", "Probabilidad", "Problema de Monty Hall"]
 draft: false

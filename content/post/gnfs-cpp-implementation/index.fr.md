@@ -1,5 +1,6 @@
 ---
 title: "【Anatomie Complète】Comprendre et implémenter l'algorithme de décryptage ultime « GNFS » en C++"
+slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Mathématiques", "Cryptographie"]
 draft: false

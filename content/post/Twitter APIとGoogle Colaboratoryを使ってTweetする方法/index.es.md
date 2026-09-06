@@ -3,6 +3,7 @@
 
 
 title: "Cómo tuitear usando la API de Twitter y Google Colaboratory"
+slug: "Twitter APIとGoogle Colaboratoryを使ってTweetする方法"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false

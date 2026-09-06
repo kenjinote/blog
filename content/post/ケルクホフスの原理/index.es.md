@@ -8,6 +8,7 @@
 
 
 title: "Principio de Kerckhoffs"
+slug: "ケルクホフスの原理"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Principio de Kerckhoffs", "Criptografía"]
 draft: false

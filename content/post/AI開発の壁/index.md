@@ -1,5 +1,6 @@
 ---
 title: 'AI開発の壁'
+slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "開発", "壁", "ポエム"]
 draft: false

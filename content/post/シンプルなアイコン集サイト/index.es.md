@@ -4,6 +4,7 @@
 
 
 title: "Sitios de colecciones de iconos simples"
+slug: "シンプルなアイコン集サイト"
 date: 2022-09-07T16:46:56+09:00
 tags: ["iconos", "diseño"]
 draft: false

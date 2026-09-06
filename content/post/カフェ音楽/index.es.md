@@ -4,6 +4,7 @@
 
 
 title: "Música de cafetería"
+slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00
 tags: ["cafetería", "música"]
 draft: false

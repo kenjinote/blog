@@ -2,6 +2,7 @@
 
 
 title: "Cómo mostrar japonés en egui"
+slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "biblioteca GUI", "japonés"]
 draft: false

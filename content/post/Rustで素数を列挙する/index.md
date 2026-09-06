@@ -1,5 +1,6 @@
 ---
 title: 'Rustで素数を列挙する'
+slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","素数","アルゴリズム"]
 draft: false

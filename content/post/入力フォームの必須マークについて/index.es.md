@@ -8,6 +8,7 @@
 
 
 title: "Sobre la marca obligatoria en los formularios de entrada"
+slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formularios", "Desarrollo Web", "UX"]
 draft: false

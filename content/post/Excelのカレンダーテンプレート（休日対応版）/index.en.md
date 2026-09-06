@@ -1,5 +1,6 @@
 ---
 title: 'Excel Calendar Template (with Holiday Support)'
+slug: "Excelのカレンダーテンプレート（休日対応版）"
 date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "Calendar", "Template", "Holidays"]
 draft: false

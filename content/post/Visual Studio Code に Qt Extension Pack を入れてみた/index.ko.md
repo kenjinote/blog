@@ -8,6 +8,7 @@
 
 
 title: "'Visual Studio Code에 Qt Extension Pack을 설치해 보았다'"
+slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
 date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false

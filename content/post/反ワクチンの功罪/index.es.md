@@ -8,6 +8,7 @@
 
 
 title: "Los pros y contras de los antivacunas"
+slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Problemas sociales", "Salud", "Alfabetización informacional"]
 draft: false

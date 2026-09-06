@@ -8,6 +8,7 @@
 
 
 title: "양자 컴퓨터는 정말 RSA 암호를 파괴할 것인가? ~쇼어의 알고리즘과 현재의 도달점~"
+slug: "shors-algorithm-and-rsa-breaking"
 tags: ["양자 컴퓨터", "암호 해독", "Shor의 알고리즘", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.jpg"
 date: 2026-09-05T22:09:21+09:00

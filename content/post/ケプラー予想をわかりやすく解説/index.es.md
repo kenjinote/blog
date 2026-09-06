@@ -8,6 +8,7 @@
 
 
 title: "La conjetura de Kepler explicada de forma sencilla"
+slug: "ケプラー予想をわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Matemáticas", "Conjetura de Kepler", "Explicación"]
 draft: false

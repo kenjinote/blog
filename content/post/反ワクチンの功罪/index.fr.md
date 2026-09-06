@@ -1,5 +1,6 @@
 ---
 title: "Les mérites et les démérites des anti-vaccins"
+slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["problèmes sociaux", "santé", "littératie informationnelle"]
 draft: false

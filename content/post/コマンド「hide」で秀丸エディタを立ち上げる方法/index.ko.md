@@ -7,6 +7,7 @@
 
 
 title: "명령어 ''hide''로 Hidemaru 에디터를 실행하는 방법"
+slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["명령어", "Hidemaru 에디터", "레지스트리"]
 draft: false

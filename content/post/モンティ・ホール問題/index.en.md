@@ -1,5 +1,6 @@
 ---
 title: 'Monty Hall problem'
+slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["Math", "Probability", "Monty Hall problem"]
 draft: false

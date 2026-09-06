@@ -3,6 +3,7 @@
 
 
 title: "'Go를 설치하는 방법'"
+slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","설치"]
 draft: false

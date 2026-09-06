@@ -1,5 +1,6 @@
 ---
 title: 'ThinkPad（中古）を買った'
+slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "ノートパソコン"]
 draft: false

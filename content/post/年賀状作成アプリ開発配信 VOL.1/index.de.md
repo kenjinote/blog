@@ -1,5 +1,6 @@
 ---
 title: "Stream zur Entwicklung der Neujahrskarten-App VOL.1 (Skript)"
+slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["Stream zur Entwicklung der Neujahrskarten-App", "YouTube"]
 draft: false

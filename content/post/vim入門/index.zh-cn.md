@@ -1,5 +1,6 @@
 ---
 title: 'vim入门'
+slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "文本编辑器"]
 draft: false

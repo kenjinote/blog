@@ -1,5 +1,6 @@
 ---
 title: 'TeamViewerで簡単リモート接続'
+slug: "TeamViewerで簡単リモート接続"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "コマンド", "リモート接続"]
 draft: false

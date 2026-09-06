@@ -1,5 +1,6 @@
 ---
 title: 'Check all checkboxes in a web page'
+slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automation"]
 draft: false

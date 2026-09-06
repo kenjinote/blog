@@ -1,5 +1,6 @@
 ---
 title: '关于可用于博客的照片素材网站“Unsplash”'
+slug: "ブログで使える写真素材サイト「Unsplash」について"
 date: 2023-04-02T14:44:17+09:00
 tags: ["照片素材", "博客", "Unsplash"]
 draft: false

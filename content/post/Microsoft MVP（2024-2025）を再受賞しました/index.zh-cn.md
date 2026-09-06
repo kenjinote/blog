@@ -1,5 +1,6 @@
 ---
 title: '再次荣获 Microsoft MVP（2024-2025）'
+slug: "Microsoft MVP（2024-2025）を再受賞しました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: "【PQC】量子電腦時代的次世代密碼學「抗量子計算機密碼學」全貌"
+slug: "post-quantum-cryptography"
 tags: ["密碼技術", "PQC", "資安", "次世代技術"]
 image: "post_quantum_cryptography_1788613735417.jpg"
 date: 2026-09-05T22:09:22+09:00

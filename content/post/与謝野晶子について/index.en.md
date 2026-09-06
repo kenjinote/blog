@@ -1,5 +1,6 @@
 ---
 title: 'About Akiko Yosano'
+slug: "与謝野晶子について"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Akiko Yosano"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: 'AG03噪音消除方法'
+slug: "AG03ノイズ解消方法"
 date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "噪音"]
 draft: false

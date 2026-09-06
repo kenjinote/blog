@@ -7,6 +7,7 @@
 
 
 title: "LoadIcon no necesita llamar a DestroyIcon"
+slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["icono", "LoadIcon", "DestroyIcon", "Programación en Windows"]
 draft: false

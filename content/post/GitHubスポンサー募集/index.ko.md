@@ -3,6 +3,7 @@
 
 
 title: "'GitHub 스폰서 모집'"
+slug: "GitHubスポンサー募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "스폰서"]
 draft: false

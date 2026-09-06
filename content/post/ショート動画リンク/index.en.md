@@ -1,5 +1,6 @@
 ---
 title: 'Short Video Links'
+slug: "ショート動画リンク"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Video", "Shorts"]
 draft: false

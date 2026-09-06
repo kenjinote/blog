@@ -3,6 +3,7 @@
 
 
 title: "블로그에서 사용할 수 있는 사진 소재 사이트 \\\"Unsplash\\\"에 대하여"
+slug: "ブログで使える写真素材サイト「Unsplash」について"
 date: 2023-04-02T14:44:17+09:00
 tags: ["사진 소재", "블로그", "Unsplash"]
 draft: false

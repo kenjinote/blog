@@ -1,5 +1,6 @@
 ---
 title: 'History of No-Code in Local Environments'
+slug: "ローコードおよびノーコードの歴史"
 date: 2025-04-26T16:46:11+09:00
 tags: ["Low-code", "No-code", "History"]
 draft: false

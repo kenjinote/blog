@@ -1,5 +1,6 @@
 ---
 title: 'Installing Apps via Command Line Using WinGet'
+slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false

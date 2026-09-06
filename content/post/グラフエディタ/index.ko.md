@@ -5,6 +5,7 @@
 
 
 title: "그래프 에디터"
+slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "그래프"]
 draft: false

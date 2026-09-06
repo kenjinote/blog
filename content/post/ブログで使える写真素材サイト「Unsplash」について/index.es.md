@@ -2,6 +2,7 @@
 
 
 title: "Sobre ''Unsplash'', un sitio de fotos de archivo que puedes usar en tu blog"
+slug: "ブログで使える写真素材サイト「Unsplash」について"
 date: 2023-04-02T14:44:17+09:00
 tags: ["fotos de archivo", "blog", "Unsplash"]
 draft: false

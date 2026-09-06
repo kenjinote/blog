@@ -1,5 +1,6 @@
 ---
 title: 'Advantages and Disadvantages of Creating Programs with Win32API + C++'
+slug: "Win32API+C++でプログラムを作るメリットとデメリット"
 date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "Programming", "Development", "Technology"]
 draft: false

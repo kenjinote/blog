@@ -1,5 +1,6 @@
 ---
 title: 'MS-DOS 4.0 のオープンソース化'
+slug: "MS-DOS 4.0 のオープンソース化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "オープンソース"]
 draft: false

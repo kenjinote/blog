@@ -2,6 +2,7 @@
 
 
 title: "Cómo configurar un dominio personalizado en un repositorio de Github"
+slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github", "Dominio"]
 draft: false

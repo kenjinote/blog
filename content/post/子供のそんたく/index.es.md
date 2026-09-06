@@ -4,6 +4,7 @@
 
 
 title: "'La consideración de los niños'"
+slug: "子供のそんたく"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Niños"]
 draft: false

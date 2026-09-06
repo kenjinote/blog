@@ -1,5 +1,6 @@
 ---
 title: "量子電腦真的會破壞RSA加密嗎？〜Shor演算法與目前的發展階段〜"
+slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子電腦", "密碼破解", "Shor演算法", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.jpg"
 date: 2026-09-05T22:09:21+09:00

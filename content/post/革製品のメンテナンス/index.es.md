@@ -8,6 +8,7 @@
 
 
 title: "Mantenimiento de productos de cuero"
+slug: "革製品のメンテナンス"
 date: 2024-10-30T00:31:46+09:00
 tags: ["Productos de cuero", "Pasatiempos"]
 draft: fales

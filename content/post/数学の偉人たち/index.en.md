@@ -1,5 +1,6 @@
 ---
 title: 'Great Figures in Mathematics'
+slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Mathematician"]
 draft: false

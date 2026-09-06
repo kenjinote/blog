@@ -4,6 +4,7 @@
 
 
 title: "'Mac에서 복사 및 붙여넣기 단축키를 Windows와 맞추는 방법'"
+slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "단축키", "복사 및 붙여넣기"]
 draft:

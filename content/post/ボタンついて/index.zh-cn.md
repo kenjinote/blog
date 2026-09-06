@@ -1,5 +1,6 @@
 ---
 title: '关于按钮'
+slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["按钮", "GUI"]
 draft: false

@@ -8,6 +8,7 @@
 
 
 title: '[완전 해부] 최강의 암호 해독 알고리즘 ''GNFS''를 C++로 구현하고 이해하기'
+slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "수학", "암호"]
 draft: false

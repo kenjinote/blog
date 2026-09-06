@@ -4,6 +4,7 @@
 
 
 title: "Cómo enumerar los números primos hasta 1000 usando la criba de Eratóstenes"
+slug: "エラトステネスの篩を使って1000以下の素数を列挙する方法"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Criba de Eratóstenes", "Números primos", "Matemáticas", "Rust"]
 draft: false

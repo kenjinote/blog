@@ -1,5 +1,6 @@
 ---
 title: '【初心者向け】vcpkgでlibcurl（OpenSSL対応）をVisual Studioに導入する手順'
+slug: "vcpkg を使って Visual Studio に curl をインストール"
 date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false

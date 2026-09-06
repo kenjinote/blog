@@ -1,5 +1,6 @@
 ---
 title: 'Rust 入门'
+slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false

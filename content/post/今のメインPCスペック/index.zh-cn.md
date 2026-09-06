@@ -1,5 +1,6 @@
 ---
 title: '当前主力电脑配置'
+slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false

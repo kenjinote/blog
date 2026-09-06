@@ -1,5 +1,6 @@
 ---
 title: '使用 Slack App + OAuth2 向 Slack 发布消息的方法'
+slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
 date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false

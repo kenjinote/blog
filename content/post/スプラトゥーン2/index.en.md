@@ -1,5 +1,6 @@
 ---
 title: 'Splatoon 2'
+slug: "スプラトゥーン2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Game", "Nintendo Switch"]
 draft: false

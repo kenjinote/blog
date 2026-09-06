@@ -7,6 +7,7 @@
 
 
 title: "Cómo deshacer git reset"
+slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurar", "deshacer"]
 draft: false

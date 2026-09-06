@@ -1,5 +1,6 @@
 ---
 title: 'Pythonコード片'
+slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "サンプルコード"]
 draft: false

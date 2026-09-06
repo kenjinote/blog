@@ -8,6 +8,7 @@
 
 
 title: "La historia secreta del desarrollo de LogicPad"
+slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Desarrollo", "Historia Secreta"]
 draft: false

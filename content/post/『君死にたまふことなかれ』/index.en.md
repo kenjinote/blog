@@ -1,5 +1,6 @@
 ---
 title: 'Thou Shalt Not Die'
+slug: "『君死にたまふことなかれ』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "Thou Shalt Not Die", "Poem", "Anti-war poem"]
 draft: false

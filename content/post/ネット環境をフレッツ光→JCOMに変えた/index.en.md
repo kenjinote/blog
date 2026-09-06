@@ -1,5 +1,6 @@
 ---
 title: 'Changed my internet environment from Flets Hikari to J:COM'
+slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flets Hikari","Internet Connection"]
 draft: false

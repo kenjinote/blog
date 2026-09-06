@@ -7,6 +7,7 @@
 
 
 title: "Cómo restaurar el menú contextual clásico en Windows 11"
+slug: "Windows 11の右クリックメニューを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Explorador de archivos"]
 draft: false

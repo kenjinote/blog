@@ -1,5 +1,6 @@
 ---
 title: 'The Untold Story of LogicPad Development'
+slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Development", "Untold Story"]
 draft: false

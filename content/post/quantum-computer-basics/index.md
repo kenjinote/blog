@@ -1,5 +1,6 @@
 ---
 title: "【完全解剖】量子コンピュータとは何か？〜ゼロからわかる究極の計算原理〜"
+slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["量子コンピュータ", "物理学", "テクノロジー"]
 image: "quantum_basics_eyecatch_1788613712487.jpg"

@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce Chatter Bulk Delete Command'
+slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false

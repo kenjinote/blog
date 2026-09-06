@@ -1,5 +1,6 @@
 ---
 title: '在 IntelliJ IDEA 中使用 GitHub Copilot'
+slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false

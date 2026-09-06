@@ -1,5 +1,6 @@
 ---
 title: 'How to fix GitHub Copilot becoming unusable due to a certificate error'
+slug: "証明書エラーでGitHub Copilotが使えなくなった場合の対処方法"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: '查看Windows许可证状态的命令'
+slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "许可证", "命令提示符"]
 draft: false

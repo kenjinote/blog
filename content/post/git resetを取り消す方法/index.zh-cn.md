@@ -1,5 +1,6 @@
 ---
 title: '撤销git reset的方法'
+slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "恢复", "撤销"]
 draft: false

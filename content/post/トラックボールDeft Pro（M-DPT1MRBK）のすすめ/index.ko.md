@@ -5,6 +5,7 @@
 
 
 title: "트랙볼 Deft Pro(M-DPT1MRBK) 추천"
+slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["트랙볼", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: '在Rust中显示MessageBox'
+slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false

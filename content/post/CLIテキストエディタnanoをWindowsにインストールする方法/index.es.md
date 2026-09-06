@@ -7,6 +7,7 @@
 
 
 title: "'Cómo instalar el editor de texto CLI nano en Windows'"
+slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "editor de texto"]
 draft: false

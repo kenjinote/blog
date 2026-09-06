@@ -3,6 +3,7 @@
 
 
 title: "'Github 저장소에 커스텀 도메인을 설정하는 방법'"
+slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","도메인"]
 draft: false

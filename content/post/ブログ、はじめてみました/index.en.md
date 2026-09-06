@@ -1,5 +1,6 @@
 ---
 title: 'I Started a Blog'
+slug: "ブログ、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Miscellaneous"]
 draft: false

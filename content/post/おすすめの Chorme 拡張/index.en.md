@@ -1,5 +1,6 @@
 ---
 title: 'Recommended Chrome Extensions'
+slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome Extensions", "Browser", "Chrome", "Edge"]
 draft: false

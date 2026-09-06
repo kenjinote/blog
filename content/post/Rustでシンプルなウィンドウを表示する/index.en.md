@@ -1,5 +1,6 @@
 ---
 title: 'Displaying a simple window in Rust'
+slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "Window"]
 draft: false

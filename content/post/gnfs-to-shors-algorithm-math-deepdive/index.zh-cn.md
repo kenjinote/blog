@@ -1,5 +1,6 @@
 ---
 title: "【公式完全解析】经典最强“GNFS”为何败给量子算法？因数分解的范式转变"
+slug: "gnfs-to-shors-algorithm-math-deepdive"
 tags: ["量子计算机", "GNFS", "Shor算法", "密码破解", "数学"]
 image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
 mermaid: true

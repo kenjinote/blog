@@ -4,6 +4,7 @@
 
 
 title: "Kamukura (Ramen) por primera vez en años"
+slug: "何年かぶりの神座（かむくら）（ラーメン）"
 date: 2022-09-09T21:45:19+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false

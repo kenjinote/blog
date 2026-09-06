@@ -1,5 +1,6 @@
 ---
 title: "[PQC] The Complete Guide to Post-Quantum Cryptography in the Quantum Computer Era"
+slug: "post-quantum-cryptography"
 tags: ["Cryptography", "PQC", "Security", "Next-Gen Tech"]
 image: "post_quantum_cryptography_1788613735417.jpg"
 date: 2026-09-05T22:09:22+09:00

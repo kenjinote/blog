@@ -1,5 +1,6 @@
 ---
 title: '推荐的Chrome扩展'
+slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome扩展", "浏览器", "Chrome", "Edge"]
 draft: false

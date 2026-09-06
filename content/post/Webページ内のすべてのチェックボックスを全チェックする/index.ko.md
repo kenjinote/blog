@@ -4,6 +4,7 @@
 
 
 title: "Web페이지 내의 모든 체크박스를 전체 체크하기"
+slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "자동화"]
 draft: false

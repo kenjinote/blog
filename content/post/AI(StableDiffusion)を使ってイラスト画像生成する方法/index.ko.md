@@ -3,6 +3,7 @@
 
 
 title: "'AI(StableDiffusion)를 사용하여 일러스트 이미지를 생성하는 방법'"
+slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "일러스트", "이미지 생성", "Google Colaboratory"]
 draft: false

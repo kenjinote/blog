@@ -1,5 +1,6 @@
 ---
 title: 'Hanlon''s Razor'
+slug: "ハンロンの剃刀"
 date: 2024-09-24T18:14:34+09:00
 tags: ["Phrase", "Expression"]
 draft: false

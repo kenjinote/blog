@@ -3,6 +3,7 @@
 
 
 title: "'egui에서 일본어를 표시하는 방법'"
+slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rsut", "egui", "GUI 라이브러리", "일본어"]
 draft: false

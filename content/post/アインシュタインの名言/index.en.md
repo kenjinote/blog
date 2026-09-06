@@ -1,5 +1,6 @@
 ---
 title: 'Einstein''s Quote'
+slug: "アインシュタインの名言"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Quote", "Philosophy", "Science", "Physics"]
 draft: false

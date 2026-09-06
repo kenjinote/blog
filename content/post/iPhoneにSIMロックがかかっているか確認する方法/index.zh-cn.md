@@ -1,5 +1,6 @@
 ---
 title: '如何确认iPhone是否有SIM卡锁'
+slug: "iPhoneにSIMロックがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIM卡锁"]
 draft: false

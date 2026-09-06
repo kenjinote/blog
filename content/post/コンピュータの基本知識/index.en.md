@@ -1,5 +1,6 @@
 ---
 title: 'Basic Knowledge of Computers'
+slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Computer", "Basic Knowledge"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: 'Visual Studio Code推荐扩展'
+slug: "Visual Studio Codeおすすめ拡張機能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "扩展", "插件"]
 draft: false

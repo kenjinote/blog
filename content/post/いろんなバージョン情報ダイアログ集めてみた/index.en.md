@@ -1,5 +1,6 @@
 ---
 title: 'I Collected Various Version Information Dialogs'
+slug: "いろんなバージョン情報ダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Version Information", "Windows", "MacOS"]
 draft: false

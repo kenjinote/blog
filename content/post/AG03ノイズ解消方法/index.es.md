@@ -2,6 +2,7 @@
 
 
 title: "'Cómo solucionar el ruido de la AG03'"
+slug: "AG03ノイズ解消方法"
 date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "Ruido"]
 draft: false

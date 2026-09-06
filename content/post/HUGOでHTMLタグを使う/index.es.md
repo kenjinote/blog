@@ -3,6 +3,7 @@
 
 
 title: "Usar etiquetas HTML en HUGO"
+slug: "HUGOでHTMLタグを使う"
 date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false

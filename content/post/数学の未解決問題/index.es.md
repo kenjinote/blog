@@ -7,6 +7,7 @@
 
 
 title: "'Problemas no resueltos en matemáticas'"
+slug: "数学の未解決問題"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Matemáticas", "Problemas no resueltos"]
 draft: false

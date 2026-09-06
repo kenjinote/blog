@@ -8,6 +8,7 @@
 
 
 title: "'curl로 Gmail 보내기'"
+slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false

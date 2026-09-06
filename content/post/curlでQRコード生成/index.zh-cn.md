@@ -1,5 +1,6 @@
 ---
 title: '使用 curl 生成二维码'
+slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["二维码", "curl", "命令提示符"]
 draft: false

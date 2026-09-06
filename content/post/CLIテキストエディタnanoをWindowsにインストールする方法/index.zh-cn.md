@@ -1,5 +1,6 @@
 ---
 title: '在Windows上安装CLI文本编辑器nano的方法'
+slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "文本编辑器"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: '[Complete Anatomy] Understanding the Strongest Cryptanalysis Algorithm "GNFS" by Implementing it in C++'
+slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Math", "Cryptography"]
 draft: false

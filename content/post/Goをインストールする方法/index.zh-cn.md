@@ -1,5 +1,6 @@
 ---
 title: '如何安装 Go'
+slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","安装"]
 draft: false

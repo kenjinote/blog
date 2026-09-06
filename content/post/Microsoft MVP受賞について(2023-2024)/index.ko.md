@@ -4,6 +4,7 @@
 
 
 title: "'Microsoft MVP 수상에 대하여(2023-2024)'"
+slug: "Microsoft MVP受賞について(2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "수상"]
 draft: false

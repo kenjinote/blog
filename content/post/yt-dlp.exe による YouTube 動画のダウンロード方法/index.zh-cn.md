@@ -1,5 +1,6 @@
 ---
 title: '使用yt-dlp.exe下载YouTube视频的方法'
+slug: "yt-dlp.exe による YouTube 動画のダウンロード方法"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "下载"]
 draft: false

@@ -4,6 +4,7 @@
 
 
 title: "Lista de lenguajes de programación"
+slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["Lenguajes de programación"]
 draft: true

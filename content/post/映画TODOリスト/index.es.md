@@ -4,6 +4,7 @@
 
 
 title: "'Lista de TODO de películas'"
+slug: "映画TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Películas", "TODO"]
 draft: false

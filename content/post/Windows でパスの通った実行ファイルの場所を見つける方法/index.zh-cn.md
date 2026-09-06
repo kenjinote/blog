@@ -1,5 +1,6 @@
 ---
 title: '在 Windows 中查找已添加到 PATH 路径的可执行文件位置的方法'
+slug: "Windows でパスの通った実行ファイルの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "路径", "可执行文件", "命令提示符"]
 draft: false

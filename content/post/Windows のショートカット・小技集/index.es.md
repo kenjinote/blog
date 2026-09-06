@@ -3,6 +3,7 @@
 
 
 title: "'Colección de Atajos y Trucos de Windows'"
+slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Trucos", "Atajos"]
 draft: false

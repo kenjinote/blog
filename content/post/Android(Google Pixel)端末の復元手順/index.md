@@ -1,5 +1,6 @@
 ---
 title: 'Android (Google Pixel) 端末のソフトウェア復元（初期化・修復）手順'
+slug: "Android(Google Pixel)端末の復元手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "復元", "トラブルシューティング"]
 draft: false

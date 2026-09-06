@@ -3,6 +3,7 @@
 
 
 title: "'Cómo obtener el número de registros creados por día usando SOQL de Salesforce'"
+slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "fecha", "agregación"]
 draft: false

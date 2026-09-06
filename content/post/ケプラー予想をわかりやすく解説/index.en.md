@@ -1,5 +1,6 @@
 ---
 title: 'A Simple Explanation of Kepler''s Conjecture'
+slug: "ケプラー予想をわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Mathematics", "Kepler's Conjecture", "Explanation"]
 draft: false

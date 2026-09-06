@@ -3,6 +3,7 @@
 
 
 title: "¿Qué es i18n?"
+slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00
 tags: ["Internacionalización", "i18n", "Terminología"]
 draft: false

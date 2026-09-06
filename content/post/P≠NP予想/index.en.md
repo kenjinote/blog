@@ -1,5 +1,6 @@
 ---
 title: 'P≠NP Conjecture'
+slug: "P≠NP予想"
 date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP conjecture", "Math", "Unsolved problems"]
 draft: false

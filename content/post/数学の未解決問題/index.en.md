@@ -1,5 +1,6 @@
 ---
 title: 'Unsolved Problems in Mathematics'
+slug: "数学の未解決問題"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Mathematics", "Unsolved Problems"]
 draft: false

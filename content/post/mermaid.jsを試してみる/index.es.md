@@ -7,6 +7,7 @@
 
 
 title: "'Probando mermaid.js'"
+slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
 draft: false

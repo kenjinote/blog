@@ -1,5 +1,6 @@
 ---
 title: 'About Buttons'
+slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["Button", "GUI"]
 draft: false

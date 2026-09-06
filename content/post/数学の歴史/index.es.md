@@ -4,6 +4,7 @@
 
 
 title: "'Historia de las Matemáticas'"
+slug: "数学の歴史"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Matemáticas", "Historia"]
 draft: false

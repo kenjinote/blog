@@ -7,6 +7,7 @@
 
 
 title: "Añadir el grep del editor Hidemaru al menú contextual del Explorador"
+slug: "エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Editor Hidemaru", "Explorador", "Menú contextual", "grep", "Registro"]
 draft: false

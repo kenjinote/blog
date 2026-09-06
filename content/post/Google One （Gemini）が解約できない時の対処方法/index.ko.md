@@ -8,6 +8,7 @@
 
 
 title: "Google One (Gemini) 해지가 안 될 때의 대처 방법"
+slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "해지", "대처 방법"]
 draft: false

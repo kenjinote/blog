@@ -1,5 +1,6 @@
 ---
 title: "【PQC】量子计算时代的新一代密码学：后量子密码学全景"
+slug: "post-quantum-cryptography"
 tags: ["密码技术", "PQC", "安全", "下一代技术"]
 image: "post_quantum_cryptography_1788613735417.jpg"
 date: 2026-09-05T22:09:22+09:00

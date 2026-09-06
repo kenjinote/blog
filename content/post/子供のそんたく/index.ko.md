@@ -5,6 +5,7 @@
 
 
 title: "아이의 배려"
+slug: "子供のそんたく"
 date: 2022-09-07T04:40:52+09:00
 tags: ["아이"]
 draft: false

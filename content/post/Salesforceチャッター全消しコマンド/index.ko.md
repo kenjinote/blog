@@ -4,6 +4,7 @@
 
 
 title: "'Salesforce Chatter 전체 삭제 명령어'"
+slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "채터"]
 draft: false

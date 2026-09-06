@@ -1,5 +1,6 @@
 ---
 title: 'AI开发的壁垒'
+slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "开发", "壁垒", "随笔"]
 draft: false

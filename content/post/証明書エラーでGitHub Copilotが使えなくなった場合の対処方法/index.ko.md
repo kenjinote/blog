@@ -7,6 +7,7 @@
 
 
 title: "인증서 오류로 GitHub Copilot을 사용할 수 없게 된 경우의 대처 방법"
+slug: "証明書エラーでGitHub Copilotが使えなくなった場合の対処方法"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false

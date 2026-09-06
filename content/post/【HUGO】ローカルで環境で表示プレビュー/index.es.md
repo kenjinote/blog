@@ -4,6 +4,7 @@
 
 
 title: "【HUGO】Vista previa en entorno local"
+slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false

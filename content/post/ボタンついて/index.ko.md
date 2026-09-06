@@ -5,6 +5,7 @@
 
 
 title: "버튼에 대하여"
+slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["버튼", "GUI"]
 draft: false

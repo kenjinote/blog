@@ -8,6 +8,7 @@
 
 
 title: "Cómo descargar videos de YouTube con yt-dlp.exe"
+slug: "yt-dlp.exe による YouTube 動画のダウンロード方法"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "Descarga"]
 draft: false

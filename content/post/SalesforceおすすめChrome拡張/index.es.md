@@ -3,6 +3,7 @@
 
 
 title: "Extensiones de Chrome recomendadas para Salesforce"
+slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Extensiones de Chrome"]
 draft: false

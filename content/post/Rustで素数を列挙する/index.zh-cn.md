@@ -1,5 +1,6 @@
 ---
 title: '在 Rust 中枚举素数'
+slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","素数","算法"]
 draft: false

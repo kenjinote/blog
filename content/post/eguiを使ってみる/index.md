@@ -1,5 +1,6 @@
 ---
 title: 'eguiを使ってみる'
+slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "GUIライブラリ"]
 draft: false

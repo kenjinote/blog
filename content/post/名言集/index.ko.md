@@ -5,6 +5,7 @@
 
 
 title: "'명언집'"
+slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["명언집"]
 draft: false

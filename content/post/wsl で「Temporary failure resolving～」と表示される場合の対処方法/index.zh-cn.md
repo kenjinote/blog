@@ -1,5 +1,6 @@
 ---
 title: '在 WSL 中出现“Temporary failure resolving～”时的解决方法'
+slug: "wsl で「Temporary failure resolving～」と表示される場合の対処方法"
 date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "解决方法"]
 draft: false

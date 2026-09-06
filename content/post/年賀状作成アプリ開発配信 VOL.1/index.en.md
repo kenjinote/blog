@@ -1,5 +1,6 @@
 ---
 title: 'New Year''s Card Creation App Development Stream VOL.1 (Script)'
+slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["New Year's Card Creation App Development Stream", "YouTube"]
 draft: false

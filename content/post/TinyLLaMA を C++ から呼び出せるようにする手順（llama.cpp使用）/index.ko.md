@@ -8,6 +8,7 @@
 
 
 title: "'TinyLLaMA를 C++에서 호출할 수 있게 하는 절차(llama.cpp 사용)'"
+slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: 'Let us respect people who can do things we cannot'
+slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
 tags: ["Opinion", "Thoughts"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: "Les ordinateurs quantiques vont-ils vraiment détruire le cryptage RSA ? ~ L'algorithme de Shor et les avancées actuelles ~"
+slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Ordinateur quantique", "Décryptage", "Algorithme de Shor", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.jpg"
 date: 2026-09-05T22:09:21+09:00

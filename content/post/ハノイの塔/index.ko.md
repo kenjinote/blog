@@ -8,6 +8,7 @@
 
 
 title: "'하노이의 탑'"
+slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00
 tags: ["하노이의 탑", "알고리즘", "Python"]
 draft: false

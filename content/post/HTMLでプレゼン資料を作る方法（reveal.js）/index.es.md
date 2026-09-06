@@ -2,6 +2,7 @@
 
 
 title: "Cómo crear presentaciones con HTML (reveal.js)"
+slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "Presentación"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: '如何在paint.net中为图片的特定部分添加马赛克'
+slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "边框", "图片"]
 draft: false

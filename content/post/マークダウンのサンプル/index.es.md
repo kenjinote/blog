@@ -3,6 +3,7 @@
 
 author: "Hugo Authors"
 title: "Guía de sintaxis de Markdown"
+slug: "マークダウンのサンプル"
 date: "2019-03-11"
 description: "Artículo de muestra que presenta la sintaxis básica de Markdown y el formato para elementos HTML."
 tags: ["markdown", "css", "html", "themes"]

@@ -1,5 +1,6 @@
 ---
 title: 'Blog Title'
+slug: "000_テンプレート"
 date: 2022-01-01T00:00:00+09:00
 tags: ["Tag 1", "Tag 2"]
 draft: true

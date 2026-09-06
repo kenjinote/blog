@@ -1,5 +1,6 @@
 ---
 title: 'GIF动画屏幕录制工具'
+slug: "GIFアニメ画面録画ツール"
 date: 2024-02-08T01:23:01+09:00
 tags: ["工具", "屏幕录制", "GIF"]
 draft: false

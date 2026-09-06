@@ -1,5 +1,6 @@
 ---
 title: "Diffusion de développement d'application de cartes de vœux VOL.1 (Script)"
+slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["Diffusion de développement d'application de cartes de vœux", "YouTube"]
 draft: false

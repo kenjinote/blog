@@ -1,5 +1,6 @@
 ---
 title: '在 git 中删除标签'
+slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false

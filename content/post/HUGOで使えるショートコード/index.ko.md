@@ -4,6 +4,7 @@
 
 
 title: "'HUGO에서 사용할 수 있는 쇼트코드'"
+slug: "HUGOで使えるショートコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false

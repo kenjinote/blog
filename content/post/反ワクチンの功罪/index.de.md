@@ -1,5 +1,6 @@
 ---
 title: "Die Vor- und Nachteile von Anti-Impf-Bewegungen"
+slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Gesellschaftliche Probleme", "Gesundheit", "Informationskompetenz"]
 draft: false

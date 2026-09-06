@@ -1,5 +1,6 @@
 ---
 title: 'Installing an MSIX with a Self-Signed Certificate'
+slug: "msixに自己証明書をつけてインストールできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "self-signed certificate", "installation"]
 draft: false

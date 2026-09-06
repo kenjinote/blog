@@ -8,6 +8,7 @@
 
 
 title: "Introducción a Mathematica"
+slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Matemáticas", "Algoritmo"]
 draft: false

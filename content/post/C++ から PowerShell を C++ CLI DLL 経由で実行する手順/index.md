@@ -1,5 +1,6 @@
 ---
 title: 'C++ から PowerShell を C++/CLI DLL 経由で実行する手順'
+slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false

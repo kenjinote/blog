@@ -7,6 +7,7 @@
 
 
 title: "'Qué hacer cuando GitHub Copilot deja de funcionar debido a un error de certificado'"
+slug: "証明書エラーでGitHub Copilotが使えなくなった場合の対処方法"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false

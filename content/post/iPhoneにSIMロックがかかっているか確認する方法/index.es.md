@@ -8,6 +8,7 @@
 
 
 title: "Cómo comprobar si tu iPhone tiene bloqueo de SIM"
+slug: "iPhoneにSIMロックがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "Bloqueo de SIM"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: 'Fast Batch Deletion of Large Folders'
+slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
 tags: ["Command Prompt"]
 draft: false

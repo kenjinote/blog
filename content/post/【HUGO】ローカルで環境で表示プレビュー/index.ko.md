@@ -5,6 +5,7 @@
 
 
 title: "'【HUGO】로컬 환경에서 표시 프리뷰'"
+slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false

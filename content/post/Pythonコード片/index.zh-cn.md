@@ -1,5 +1,6 @@
 ---
 title: 'Python代码片段'
+slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "示例代码"]
 draft: false

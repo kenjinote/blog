@@ -1,5 +1,6 @@
 ---
 title: 'Auto-refresh Web Page Browser Extension (Edge Add-on)'
+slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Browser Extension", "Edge Add-on", "Auto Refresh"]
 draft: false

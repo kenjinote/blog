@@ -1,5 +1,6 @@
 ---
 title: 'What a Community Needs'
+slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Community", "Miscellaneous"]
 draft: false

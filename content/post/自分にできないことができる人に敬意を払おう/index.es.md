@@ -7,6 +7,7 @@
 
 
 title: "'Respetemos a quienes pueden hacer lo que nosotros no podemos'"
+slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
 tags: ["poema", "pensamientos"]
 draft: false

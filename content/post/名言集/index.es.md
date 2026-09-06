@@ -4,6 +4,7 @@
 
 
 title: "'Colección de citas'"
+slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Colección de citas"]
 draft: false

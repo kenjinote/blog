@@ -8,6 +8,7 @@
 
 
 title: "'Hugo 명령어 목록'"
+slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "명령어"]
 draft: false

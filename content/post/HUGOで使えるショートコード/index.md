@@ -1,5 +1,6 @@
 ---
 title: 'HUGOで使えるショートコード'
+slug: "HUGOで使えるショートコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false

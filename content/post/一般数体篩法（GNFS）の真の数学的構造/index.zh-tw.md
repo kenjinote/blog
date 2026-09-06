@@ -1,5 +1,6 @@
 ---
 title: "一般數域篩法（GNFS）的真正數學結構"
+slug: "一般数体篩法（GNFS）の真の数学的構造"
 date: 2026-09-05T02:26:13+09:00
 tags: ["數學", "密碼學", "RSA", "GNFS"]
 draft: false

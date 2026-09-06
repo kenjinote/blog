@@ -1,6 +1,7 @@
 ---
 author: "Hugo Authors"
 title: "Markdown 语法指南"
+slug: "マークダウンのサンプル"
 date: "2019-03-11"
 description: "展示基本 Markdown 语法和 HTML 元素格式化的示例文章。"
 tags: ["markdown", "css", "html", "主题"]

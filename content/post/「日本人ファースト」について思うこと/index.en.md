@@ -1,5 +1,6 @@
 ---
 title: 'The Illusion and Reality of "Japanese First": The Defense Mechanism Called "Coexistence" Facing Japan in 2026'
+slug: "「日本人ファースト」について思うこと"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Japanese First", "Politics", "Social Issues"]
 draft: false

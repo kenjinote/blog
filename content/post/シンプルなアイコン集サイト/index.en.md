@@ -1,5 +1,6 @@
 ---
 title: 'Simple Icon Collection Sites'
+slug: "シンプルなアイコン集サイト"
 date: 2022-09-07T16:46:56+09:00
 tags: ["Icon", "Design"]
 draft: false

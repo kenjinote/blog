@@ -1,5 +1,6 @@
 ---
 title: '使用 wxWidgets 的示例'
+slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "示例"]
 draft: false

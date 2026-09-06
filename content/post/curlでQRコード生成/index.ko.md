@@ -7,6 +7,7 @@
 
 
 title: "curl로 QR 코드 생성"
+slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["QR 코드", "curl", "명령 프롬프트"]
 draft: false

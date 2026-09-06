@@ -7,6 +7,7 @@
 
 
 title: "'GIF 애니메이션 화면 녹화 도구'"
+slug: "GIFアニメ画面録画ツール"
 date: 2024-02-08T01:23:01+09:00
 tags: ["도구", "화면 녹화", "GIF"]
 draft: false

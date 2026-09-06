@@ -1,5 +1,6 @@
 ---
 title: 'What it Takes to Avoid Falling for Conspiracy Theories'
+slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00
 tags: ["Conspiracy Theories", "Poem"]
 draft: false

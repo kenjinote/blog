@@ -3,6 +3,7 @@
 
 
 title: "'Enumerando números primos en Rust'"
+slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","números primos","algoritmos"]
 draft: false

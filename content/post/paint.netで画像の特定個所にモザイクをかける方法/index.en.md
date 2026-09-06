@@ -1,5 +1,6 @@
 ---
 title: 'How to apply a mosaic to specific areas of an image in paint.net'
+slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "border", "image"]
 draft: false

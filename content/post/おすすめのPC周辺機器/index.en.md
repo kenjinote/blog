@@ -1,5 +1,6 @@
 ---
 title: 'Recommended PC Peripherals'
+slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["Keyboard", "Trackball", "Display"]
 draft: false

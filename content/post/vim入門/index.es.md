@@ -7,6 +7,7 @@
 
 
 title: "Introducción a vim"
+slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "editor de texto"]
 draft: false

@@ -2,6 +2,7 @@
 
 
 title: "Acerca de fontplus.jp"
+slug: "fontplus.jp"
 date: 2023-02-07T20:59:01+09:00
 tags: ["fuente","fontplus"]
 draft: false

@@ -8,6 +8,7 @@
 
 
 title: "'Python 코드 조각'"
+slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "샘플 코드"]
 draft: false

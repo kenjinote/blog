@@ -1,5 +1,6 @@
 ---
 title: "[Complete Mathematical Guide] Why the Ultimate Classical 'GNFS' Loses to Quantum Algorithms: The Paradigm Shift in Prime Factorization"
+slug: "gnfs-to-shors-algorithm-math-deepdive"
 tags: ["Quantum Computer", "GNFS", "Shor's Algorithm", "Cryptography", "Mathematics"]
 image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
 mermaid: true

@@ -4,6 +4,7 @@
 
 
 title: "Recomendación del trackball Deft Pro (M-DPT1MRBK)"
+slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false

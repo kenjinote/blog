@@ -1,5 +1,6 @@
 ---
 title: 'dotnetコマンドで.gitignoreを生成する'
+slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false

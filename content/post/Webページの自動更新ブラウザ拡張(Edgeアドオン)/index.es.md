@@ -7,6 +7,7 @@
 
 
 title: "Extensión de navegador de actualización automática de páginas web (Complemento de Edge)"
+slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Extensión de navegador", "Complemento de Edge", "Actualización automática"]
 draft: false

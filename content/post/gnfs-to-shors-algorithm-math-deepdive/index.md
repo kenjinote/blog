@@ -1,5 +1,6 @@
 ---
 title: "【数式で完全理解】古典最強「GNFS」はなぜ量子アルゴリズムに敗れるのか？素因数分解のパラダイムシフト"
+slug: "gnfs-to-shors-algorithm-math-deepdive"
 tags: ["量子コンピュータ", "GNFS", "Shorのアルゴリズム", "暗号解読", "数学"]
 image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
 mermaid: true

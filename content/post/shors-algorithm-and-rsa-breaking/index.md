@@ -1,5 +1,6 @@
 ---
 title: "量子コンピュータは本当にRSA暗号を破壊するのか？〜ショアのアルゴリズムと現在の到達点〜"
+slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子コンピュータ", "暗号解読", "Shorのアルゴリズム", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.jpg"
 date: 2026-09-05T22:09:21+09:00

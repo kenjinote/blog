@@ -1,5 +1,6 @@
 ---
 title: '使用curl调用ChatGPT API'
+slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "命令"]
 draft: false

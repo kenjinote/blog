@@ -4,6 +4,7 @@
 
 
 title: "'i18n이란?'"
+slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00
 tags: ["국제화", "i18n", "용어"]
 draft: false

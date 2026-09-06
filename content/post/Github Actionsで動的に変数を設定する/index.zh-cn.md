@@ -1,5 +1,6 @@
 ---
 title: '在 GitHub Actions 中动态设置变量'
+slug: "Github Actionsで動的に変数を設定する"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false

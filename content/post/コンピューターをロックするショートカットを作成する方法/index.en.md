@@ -1,5 +1,6 @@
 ---
 title: 'How to Create a Shortcut to Lock Your Computer'
+slug: "コンピューターをロックするショートカットを作成する方法"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Lock Computer", "Shortcut"]
 draft: false

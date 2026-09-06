@@ -1,5 +1,6 @@
 ---
 title: 'テキストエディタmicroをWindowsにインストールする方法'
+slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "テキストエディタ"]
 draft: false

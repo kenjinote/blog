@@ -1,5 +1,6 @@
 ---
 title: 'paint.netを使って画像に枠線をつける方法'
+slug: "paint.netを使って画像に枠線をつける方法"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "枠線", "画像"]
 draft: false

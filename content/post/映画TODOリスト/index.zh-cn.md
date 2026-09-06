@@ -1,5 +1,6 @@
 ---
 title: '电影待办清单'
+slug: "映画TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["电影", "TODO"]
 draft: false

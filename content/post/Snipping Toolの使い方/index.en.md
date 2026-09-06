@@ -1,5 +1,6 @@
 ---
 title: 'How to Use Snipping Tool'
+slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Image", "Video", "Screenshot", "Recording", "Capture"]
 draft: false

@@ -3,6 +3,7 @@
 
 
 title: "'Comando para evitar la creación automática de .DS_Store en macOS'"
+slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false

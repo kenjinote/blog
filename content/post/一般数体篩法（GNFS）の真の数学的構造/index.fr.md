@@ -1,5 +1,6 @@
 ---
 title: "La Véritable Structure Mathématique du Crible Général du Corps de Nombres (GNFS)"
+slug: "一般数体篩法（GNFS）の真の数学的構造"
 date: 2026-09-05T02:26:13+09:00
 tags: ["Mathématiques", "Cryptographie", "RSA", "GNFS"]
 draft: false

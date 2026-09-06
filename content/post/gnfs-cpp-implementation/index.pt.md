@@ -1,5 +1,6 @@
 ---
 title: "【Análise Completa】Entendendo e Implementando o Mais Forte Algoritmo de Quebra de Criptografia 'GNFS' em C++"
+slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Matemática", "Criptografia"]
 draft: false

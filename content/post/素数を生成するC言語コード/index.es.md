@@ -8,6 +8,7 @@
 
 
 title: "Código en C para generar números primos"
+slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Números primos", "Algoritmos", "Matemáticas"]
 draft: false

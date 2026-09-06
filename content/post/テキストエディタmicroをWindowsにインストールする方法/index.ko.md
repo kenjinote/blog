@@ -7,6 +7,7 @@
 
 
 title: "Windows에 텍스트 에디터 micro를 설치하는 방법"
+slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "텍스트 에디터"]
 draft: false

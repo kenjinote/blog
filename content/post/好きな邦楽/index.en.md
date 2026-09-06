@@ -1,5 +1,6 @@
 ---
 title: 'Favorite Japanese Music'
+slug: "好きな邦楽"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Japanese Music", "Music"]
 draft: false

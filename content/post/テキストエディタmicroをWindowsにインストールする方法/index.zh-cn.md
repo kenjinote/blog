@@ -1,5 +1,6 @@
 ---
 title: '在Windows上安装文本编辑器micro的方法'
+slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "文本编辑器"]
 draft: false

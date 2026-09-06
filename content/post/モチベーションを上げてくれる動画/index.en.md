@@ -1,5 +1,6 @@
 ---
 title: 'Videos that Boost Motivation'
+slug: "モチベーションを上げてくれる動画"
 date: 2022-09-08T02:22:52+09:00
 tags: ["Motivation", "Video"]
 draft: false

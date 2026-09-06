@@ -8,6 +8,7 @@
 
 
 title: "Por qué era casi imposible crear un LED azul"
+slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
 date: 2024-09-15T00:43:52+09:00
 tags: ["Ciencia", "Física", "Semiconductores"]
 draft: false

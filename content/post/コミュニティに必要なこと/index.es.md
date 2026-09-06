@@ -4,6 +4,7 @@
 
 
 title: "'Lo que necesita una comunidad'"
+slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Comunidad", "Miscelánea"]
 draft: false

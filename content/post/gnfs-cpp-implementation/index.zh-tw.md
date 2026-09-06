@@ -1,5 +1,6 @@
 ---
 title: "【完全解剖】最強密碼破解演算法「GNFS」C++實作與理解"
+slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "數學", "密碼學"]
 draft: false

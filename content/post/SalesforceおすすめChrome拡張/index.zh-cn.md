@@ -1,5 +1,6 @@
 ---
 title: 'Salesforce 推荐 Chrome 扩展'
+slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome扩展"]
 draft: false

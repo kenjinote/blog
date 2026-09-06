@@ -1,5 +1,6 @@
 ---
 title: 'Goals'
+slug: "目標"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Goals"]
 draft: false

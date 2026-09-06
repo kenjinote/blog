@@ -4,6 +4,7 @@
 
 
 title: "La dialéctica de Hegel"
+slug: "ヘーゲルの弁証法"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filosofía", "Hegel", "Dialéctica"]
 draft: false

@@ -4,6 +4,7 @@
 
 
 title: "macOS에서 .DS_Store를 자동 생성하지 않도록 하는 명령어"
+slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false

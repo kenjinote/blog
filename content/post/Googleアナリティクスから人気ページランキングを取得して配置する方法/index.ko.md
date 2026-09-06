@@ -3,6 +3,7 @@
 
 
 title: "Google 애널리틱스에서 인기 페이지 랭킹을 가져와 배치하는 방법"
+slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google 애널리틱스", "Ranklet", "HUGO"]
 draft: false

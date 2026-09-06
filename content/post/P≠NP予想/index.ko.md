@@ -8,6 +8,7 @@
 
 
 title: "'P≠NP 예상'"
+slug: "P≠NP予想"
 date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP 예상", "수학", "미해결 문제"]
 draft: false

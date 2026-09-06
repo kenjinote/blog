@@ -5,6 +5,7 @@
 
 
 title: "좋아하는 수식"
+slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00
 tags: ["수학"]
 draft: false

@@ -4,6 +4,7 @@
 
 
 title: "Windows를 종료하는 바로 가기 만들기"
+slug: "Windows をシャットダウンするショートカットを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "종료", "바로 가기"]
 draft: false

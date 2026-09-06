@@ -7,6 +7,7 @@
 
 
 title: "Colección de fuentes para usar en programación"
+slug: "プログラミングで使えるフォント集"
 date: 2024-03-30T02:21:31+09:00
 tags: ["programación", "fuentes"]
 draft: false

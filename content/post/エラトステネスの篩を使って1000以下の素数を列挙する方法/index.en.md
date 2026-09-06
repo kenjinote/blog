@@ -1,5 +1,6 @@
 ---
 title: 'How to Enumerate Prime Numbers Up to 1000 Using the Sieve of Eratosthenes'
+slug: "エラトステネスの篩を使って1000以下の素数を列挙する方法"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Sieve of Eratosthenes", "Prime Numbers", "Math", "Rust"]
 draft: false

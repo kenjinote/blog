@@ -1,5 +1,6 @@
 ---
 title: '【完全解剖】最強の暗号解読アルゴリズム「GNFS」をC++で実装して理解する'
+slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "数学", "暗号"]
 draft: false

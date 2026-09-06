@@ -1,5 +1,6 @@
 ---
 title: "[Complete Guide] What is a Quantum Computer? ~The Ultimate Computing Principle from Scratch~"
+slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Quantum Computer", "Physics", "Technology"]
 image: "quantum_basics_eyecatch_1788613712487.jpg"

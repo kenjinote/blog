@@ -1,5 +1,6 @@
 ---
 title: '将Windows 11的右键菜单恢复为经典版的方法'
+slug: "Windows 11の右クリックメニューを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "资源管理器"]
 draft: false

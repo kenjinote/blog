@@ -1,5 +1,6 @@
 ---
 title: 'Why Making the Blue LED Was Almost Impossible'
+slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
 date: 2024-09-15T00:43:52+09:00
 tags: ["Science", "Physics", "Semiconductor"]
 draft: false

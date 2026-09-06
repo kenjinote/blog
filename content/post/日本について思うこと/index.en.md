@@ -1,5 +1,6 @@
 ---
 title: 'My Thoughts on Japan'
+slug: "日本について思うこと"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Miscellaneous"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: 'Recommended Business Books'
+slug: "おすすめのビジネス書"
 date: 2023-03-19T18:13:14+09:00
 tags: ["Business Books", "Books"]
 draft: false

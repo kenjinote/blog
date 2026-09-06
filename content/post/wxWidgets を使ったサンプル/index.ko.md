@@ -5,6 +5,7 @@
 
 
 title: "'wxWidgets를 사용한 샘플'"
+slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "샘플"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: 'RustでMessageBoxを表示する'
+slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false

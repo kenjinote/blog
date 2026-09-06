@@ -1,5 +1,6 @@
 ---
 title: 'Add Hidemaru Editor Grep to Explorer Right-Click Menu'
+slug: "エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorer", "Context Menu", "grep", "Registry"]
 draft: false

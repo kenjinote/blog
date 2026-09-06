@@ -1,5 +1,6 @@
 ---
 title: 'Kerckhoffs''s Principle'
+slug: "ケルクホフスの原理"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Kerckhoffs's Principle", "Cryptography"]
 draft: false

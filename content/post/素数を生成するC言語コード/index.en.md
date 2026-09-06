@@ -1,5 +1,6 @@
 ---
 title: 'C Language Code to Generate Prime Numbers'
+slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C Language", "Prime Numbers", "Algorithm", "Mathematics"]
 draft: false

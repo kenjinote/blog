@@ -7,6 +7,7 @@
 
 
 title: "Qué hacer cuando la configuración de DPI se restablece en cada inicio con monitores múltiples"
+slug: "マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法"
 date: 2024-04-29T19:42:20+09:00
 tags: ["Monitores múltiples", "DPI", "Panel de control"]
 draft: false

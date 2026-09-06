@@ -4,6 +4,7 @@
 
 
 title: "Salesforce 추천 Chrome 확장 프로그램"
+slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome 확장 프로그램"]
 draft: false

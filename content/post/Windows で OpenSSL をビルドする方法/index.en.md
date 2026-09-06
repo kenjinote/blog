@@ -1,5 +1,6 @@
 ---
 title: 'How to build OpenSSL on Windows'
+slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: 'Trying out egui'
+slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
 tags: ["rust", "egui", "GUI library"]
 draft: false

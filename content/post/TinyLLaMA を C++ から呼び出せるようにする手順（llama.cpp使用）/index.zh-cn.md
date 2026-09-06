@@ -1,5 +1,6 @@
 ---
 title: '从 C++ 调用 TinyLLaMA 的步骤（使用 llama.cpp）'
+slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false

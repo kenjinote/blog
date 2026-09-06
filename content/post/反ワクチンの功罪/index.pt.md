@@ -1,5 +1,6 @@
 ---
 title: "Os prós e contras dos movimentos antivacina"
+slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Problemas Sociais", "Saúde", "Alfabetização Informacional"]
 draft: false

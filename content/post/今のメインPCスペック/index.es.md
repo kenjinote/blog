@@ -4,6 +4,7 @@
 
 
 title: "Especificaciones actuales de mi PC principal"
+slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false

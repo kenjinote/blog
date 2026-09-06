@@ -1,5 +1,6 @@
 ---
 title: 'How to fix DPI settings resetting on every startup with multi-monitors'
+slug: "マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法"
 date: 2024-04-29T19:42:20+09:00
 tags: ["Multi-monitor", "DPI", "Control Panel"]
 draft: false

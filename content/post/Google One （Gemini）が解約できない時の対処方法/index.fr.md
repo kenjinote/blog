@@ -1,5 +1,6 @@
 ---
 title: "Que faire lorsque vous ne pouvez pas résilier Google One (Gemini)"
+slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Annulation", "Solution"]
 draft: false

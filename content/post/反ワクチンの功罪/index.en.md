@@ -1,5 +1,6 @@
 ---
 title: 'The Pros and Cons of Anti-Vaccination'
+slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Social Issues", "Health", "Information Literacy"]
 draft: false

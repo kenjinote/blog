@@ -1,5 +1,6 @@
 ---
 title: 'Qu''est-ce que le "Crible du corps de nombres généralisé (GNFS)", la mathématique la plus puissante de l''humanité qui brise le chiffrement d''Internet ?'
+slug: "インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？"
 date: 2026-09-05T02:09:08+09:00
 tags: ["Mathématiques", "Cryptographie", "RSA", "GNFS"]
 draft: false

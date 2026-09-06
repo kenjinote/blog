@@ -8,6 +8,7 @@
 
 
 title: "'Mathematica 입문'"
+slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "수학", "알고리즘"]
 draft: false

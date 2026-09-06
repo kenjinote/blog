@@ -1,5 +1,6 @@
 ---
 title: "A Ilusão e a Realidade do 'Japão em Primeiro Lugar': A Defesa Chamada 'Coexistência' Enfrentada pelo Japão em 2026"
+slug: "「日本人ファースト」について思うこと"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Japão em Primeiro Lugar", "Política", "Problemas Sociais"]
 draft: false

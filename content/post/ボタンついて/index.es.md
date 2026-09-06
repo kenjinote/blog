@@ -4,6 +4,7 @@
 
 
 title: "Acerca de los botones"
+slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["botón", "GUI"]
 draft: false

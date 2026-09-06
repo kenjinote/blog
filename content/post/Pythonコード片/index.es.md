@@ -8,6 +8,7 @@
 
 
 title: "Fragmentos de código de Python"
+slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "Código de ejemplo"]
 draft: false

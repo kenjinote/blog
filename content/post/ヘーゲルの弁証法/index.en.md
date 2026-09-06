@@ -1,5 +1,6 @@
 ---
 title: "Hegel's Dialectic"
+slug: "ヘーゲルの弁証法"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophy","Hegel","Dialectic"]
 draft: false

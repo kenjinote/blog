@@ -7,6 +7,7 @@
 
 
 title: "Visual Studio Code 추천 확장 기능"
+slug: "Visual Studio Codeおすすめ拡張機能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "확장 기능", "익스텐션"]
 draft: false

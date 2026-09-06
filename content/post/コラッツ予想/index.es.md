@@ -8,6 +8,7 @@
 
 
 title: "La conjetura de Collatz"
+slug: "コラッツ予想"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Conjetura de Collatz", "Matemáticas", "Programación", "Algoritmos"]
 draft: false

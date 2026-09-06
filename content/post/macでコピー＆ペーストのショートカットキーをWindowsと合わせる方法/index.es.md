@@ -3,6 +3,7 @@
 
 
 title: "Cómo igualar los atajos de teclado de copiar y pegar en Mac con los de Windows"
+slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "atajos de teclado", "copiar y pegar"]
 draft: 

@@ -8,6 +8,7 @@
 
 
 title: "Lista de comandos de Hugo"
+slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "comandos"]
 draft: false

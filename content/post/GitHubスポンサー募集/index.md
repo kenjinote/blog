@@ -1,5 +1,6 @@
 ---
 title: 'GitHubスポンサー募集'
+slug: "GitHubスポンサー募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "スポンサー"]
 draft: false

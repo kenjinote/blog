@@ -4,6 +4,7 @@
 
 
 title: "Windows 단축키・팁 모음"
+slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows","팁","단축키"]
 draft: false

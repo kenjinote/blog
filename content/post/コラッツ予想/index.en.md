@@ -1,5 +1,6 @@
 ---
 title: 'Collatz Conjecture'
+slug: "コラッツ予想"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Collatz Conjecture", "Math", "Programming", "Algorithm"]
 draft: false

@@ -4,6 +4,7 @@
 
 
 title: "'PaperMod에서 Twitter Card를 설정하는 방법'"
+slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false

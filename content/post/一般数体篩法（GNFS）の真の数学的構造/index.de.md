@@ -1,5 +1,6 @@
 ---
 title: "Die wahre mathematische Struktur des allgemeinen Zahlkörpersiebs (GNFS)"
+slug: "一般数体篩法（GNFS）の真の数学的構造"
 date: 2026-09-05T02:26:13+09:00
 tags: ["Mathematik", "Kryptographie", "RSA", "GNFS"]
 draft: false

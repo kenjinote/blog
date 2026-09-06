@@ -1,5 +1,6 @@
 ---
 title: 'paint.net的魅力'
+slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false

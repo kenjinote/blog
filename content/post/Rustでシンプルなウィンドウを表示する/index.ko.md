@@ -4,6 +4,7 @@
 
 
 title: "'Rust에서 간단한 창 표시하기'"
+slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","창"]
 draft: false

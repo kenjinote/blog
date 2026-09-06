@@ -4,6 +4,7 @@
 
 
 title: "'El entorno de trabajo de hoy'"
+slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
 tags: ["miscelánea","niños"]
 draft: false

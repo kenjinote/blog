@@ -8,6 +8,7 @@
 
 
 title: "'iOS용 ffmpeg 파라미터'"
+slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false

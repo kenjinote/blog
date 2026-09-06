@@ -4,6 +4,7 @@
 
 
 title: "He empezado un blog"
+slug: "ブログ、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Notas diversas"]
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: 'Favorite Mathematical Formulas'
+slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Mathematics"]
 draft: false

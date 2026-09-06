@@ -1,5 +1,6 @@
 ---
 title: 'Why do I like math and computers?'
+slug: "なぜ数学や計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00
 tags: ["Misc"]
 draft: false

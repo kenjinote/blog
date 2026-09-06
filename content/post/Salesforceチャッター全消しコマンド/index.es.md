@@ -3,6 +3,7 @@
 
 
 title: "Comando para eliminar todo en Salesforce Chatter"
+slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false

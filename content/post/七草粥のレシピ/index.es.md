@@ -7,6 +7,7 @@
 
 
 title: "'Receta de Nanakusa-gayu'"
+slug: "七草粥のレシピ"
 date: 2024-01-06T22:22:00+09:00
 tags: ["Nanakusa-gayu", "Cocina"]
 draft: false

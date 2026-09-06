@@ -1,5 +1,6 @@
 ---
 title: '使用HTML制作演示文稿的方法（reveal.js）'
+slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "演示文稿"]
 draft: false

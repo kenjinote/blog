@@ -1,5 +1,6 @@
 ---
 title: 'Install PowerToys via Command Prompt'
+slug: "PowerToysのインストール"
 date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "Command Prompt", "PowerToys", "winget"]
 draft: false

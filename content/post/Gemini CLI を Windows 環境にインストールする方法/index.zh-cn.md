@@ -1,5 +1,6 @@
 ---
 title: '如何在 Windows 环境下安装 Gemini CLI'
+slug: "Gemini CLI を Windows 環境にインストールする方法"
 date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "安装", "开发"]
 draft: false

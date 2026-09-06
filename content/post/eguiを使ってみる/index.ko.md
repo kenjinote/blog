@@ -3,6 +3,7 @@
 
 
 title: "'egui 사용해보기'"
+slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "GUI 라이브러리"]
 draft: false

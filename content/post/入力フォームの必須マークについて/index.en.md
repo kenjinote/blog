@@ -1,5 +1,6 @@
 ---
 title: 'About Required Marks in Input Forms'
+slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Input Form", "Web Development", "UX"]
 draft: false
