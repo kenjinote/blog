@@ -83,6 +83,27 @@ languages:
         params:
             sidebar:
                 subtitle: kenjinotes Blog
+    ar:
+        languageName: العربية
+        title: kenji.blog
+        weight: 11
+        params:
+            sidebar:
+                subtitle: مدونة kenjinote
+    ru:
+        languageName: Русский
+        title: kenji.blog
+        weight: 12
+        params:
+            sidebar:
+                subtitle: Блог kenjinote
+    id:
+        languageName: Bahasa Indonesia
+        title: kenji.blog
+        weight: 13
+        params:
+            sidebar:
+                subtitle: blog kenjinote
 
 
 services:
