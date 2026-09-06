@@ -48,6 +48,42 @@ languages:
         params:
             sidebar:
                 subtitle: kenjinote의 블로그
+    pt:
+        languageName: Português
+        title: kenji.blog
+        weight: 6
+        params:
+            sidebar:
+                subtitle: blog do kenjinote
+    zh-tw:
+        languageName: 繁體中文
+        title: kenji.blog
+        weight: 7
+        params:
+            sidebar:
+                subtitle: kenjinote的部落格
+    hi:
+        languageName: हिन्दी
+        title: kenji.blog
+        weight: 8
+        params:
+            sidebar:
+                subtitle: kenjinote का ब्लॉग
+    fr:
+        languageName: Français
+        title: kenji.blog
+        weight: 9
+        params:
+            sidebar:
+                subtitle: blog de kenjinote
+    de:
+        languageName: Deutsch
+        title: kenji.blog
+        weight: 10
+        params:
+            sidebar:
+                subtitle: kenjinotes Blog
+
 
 services:
     # Change it to your Disqus shortname before using
