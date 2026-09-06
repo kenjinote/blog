@@ -1,39 +1,55 @@
 ---
-title: 'Tools for Analyzing the Contents of Executable Files (exe)'
-slug: "実行ファイル（exe）の中身を解析するツール"
+title: "Tools to Analyze the Contents of Executable Files (exe)"
+slug: "tools-to-analyze-executable-files"
 date: 2023-04-05T23:31:06+09:00
-tags: ["windows", "exe", "executable file", "analysis"]
+tags: ["windows", "exe", "executable files", "analysis"]
 draft: false
 image: "img_1.png"
-categories: ["PC/Gadget"]
+categories: ["PC and Gadgets"]
 ---
 
-# What is an executable file (exe)?
+# What is an Executable File (exe)
 
-A file that can be executed on Windows. It is basically written in what is called the PE format.
-It contains machine code for execution, as well as resources such as icons and images.
+A file that can be executed on Windows. Basically, it is written in a format called PE format.
+It contains machine code to execute, as well as resources such as icons and images.
 
-There are several tools for analyzing executable files, so I will introduce them this time.
+Since there are several tools to analyze executable files, I will introduce them here.
 
 ## 7-Zip
 
 ![img.png](img.png)
 
-EXE files can become large in size, so they are sometimes created by compressing the file. In this case, by using the file compression/decompression software 7-Zip, you can decompress the executable file and examine its contents. There is also a tool called WinRAR that can decompress files in the same way.
+EXE files are sometimes compressed because their size tends to be large otherwise. In this case, by using the file compression and decompression software 7-Zip, you can extract the executable file and examine its contents. WinRAR is another tool that can extract them similarly.
 
 ## Resource Hacker
 ![img_2.png](img_2.png)
 
-It allows you to extract resources (icons, bitmaps, dialog boxes, strings, etc.) within an EXE file. Also, since it functions as a binary editor, you can edit and rewrite the contents of an EXE file.
+It allows you to extract resources (icons, bitmaps, dialog boxes, strings, etc.) inside an EXE file. Additionally, since it functions as a binary editor, you can edit and rewrite the contents of an EXE file.
 
 ## PE Explorer
 ![img_3.png](img_3.png)
 
-It can analyze PE files for Windows (EXE, DLL, OCX, SYS, drivers). PE Explorer provides various analysis features such as displaying file structures, file headers, directory entries, and exported functions and symbols.
+It can analyze PE files (EXE, DLL, OCX, SYS, drivers) for Windows. PE Explorer provides various analysis features, such as displaying the file structure, file headers, directory entries, and exported functions and symbols.
 
 ## Dependency Walker
 ![img_4.png](img_4.png)
 
-It allows you to examine the DLL files that an EXE file depends on, and verify whether they are loaded correctly. You can also trace the function calls of the DLL files.
+You can investigate the DLL files that an EXE file depends on and verify whether they are loaded correctly. You can also trace the function calls of DLL files.
 
-These tools are useful for examining the contents of EXE files, but caution is required. Editing files or using them for unauthorized purposes may cause copyright or security problems, so please use them with full understanding.
+## Ghidra
+
+This is a powerful reverse engineering tool developed by the NSA (National Security Agency) and released for free as open source. It is highly popular because it not only disassembles EXE files (converts them to assembly language) but also has decompilation capabilities to convert them into a form close to C language.
+
+## IDA Free / IDA Pro
+
+These are high-performance disassemblers and decompilers that have become a global industry standard in malware analysis and reverse engineering. The Pro version is very expensive, but you can use the functionally restricted version "IDA Free" for free for personal or non-commercial purposes.
+
+## x64dbg (x32dbg)
+
+An open source debugger for Windows. It specializes in "dynamic analysis," which involves analyzing the internal state and memory step-by-step while running the executable file. It is commonly used for solving crackmes (challenge programs for analysis) and investigating malware behavior.
+
+## ILSpy / dotPeek
+
+If the target EXE file is created in a .NET language such as C#, using these tools allows you to decompile (reverse compile) it into almost the exact same state as the original source code, completely exposing its contents.
+
+These tools are useful for examining the contents of EXE files, but caution is required. Modifying files or using them for unauthorized purposes can cause copyright and security issues, so please ensure you fully understand this before using them.
