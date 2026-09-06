@@ -7,7 +7,7 @@
 
 
 
-title: "GNFS"
+title: '[Análisis completo] Implementando y entendiendo el algoritmo de descifrado más fuerte ''GNFS'' en C++'
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Matemáticas", "Criptografía"]
 draft: false

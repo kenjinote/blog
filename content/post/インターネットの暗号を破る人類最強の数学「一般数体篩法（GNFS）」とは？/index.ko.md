@@ -7,7 +7,7 @@
 
 
 
-title: "GNFS"
+title: '인터넷 암호를 깨는 인류 최강의 수학 ''일반 수체 체(GNFS)''란?'
 date: 2026-09-05T02:09:08+09:00
 tags: ["수학", "암호", "RSA", "GNFS"]
 draft: false
