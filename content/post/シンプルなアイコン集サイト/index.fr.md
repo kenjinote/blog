@@ -1,0 +1,49 @@
+---
+title: "Sites de collection d'icônes simples"
+slug: "sites-de-collection-dicones-simples"
+date: 2022-09-07T16:46:56+09:00
+tags: ["Icônes", "Design"]
+draft: false
+image: "img_2.png"
+categories: ["Informatique et Technologie"]
+---
+
+## Google Material Symbols and Icons
+
+[https://fonts.google.com/icons](https://fonts.google.com/icons)
+![img.png](img.png)
+
+## GitHub Octicons
+
+[https://primer.style/octicons/](https://primer.style/octicons/)
+![img.png](images/img_4.png)
+
+## Sargam Icons
+
+[https://sargamicons.com/](https://sargamicons.com/)
+![img_3.png](img_3.png)
+
+## Des milliers d'icônes gratuites
+ 
+- [https://icon-icons.com/](https://icon-icons.com/)
+![img.png](images/img.png)
+
+## flaticon
+
+[https://www.flaticon.com/](https://www.flaticon.com/)
+![img_1.png](images/img_1.png)
+
+## ICONFINDER
+
+[https://www.iconfinder.com/](https://www.iconfinder.com/)
+![img_2.png](images/img_2.png)
+
+## iconfont
+
+[https://www.iconfont.cn/](https://www.iconfont.cn/)
+![img_3.png](images/img_3.png)
+
+## open-iconic
+
+- [https://github.com/iconic/open-iconic](https://github.com/iconic/open-iconic)
+![img_1.png](img_1.png)
