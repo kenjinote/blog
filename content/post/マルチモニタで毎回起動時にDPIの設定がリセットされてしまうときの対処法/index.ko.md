@@ -1,6 +1,7 @@
 ---
 
 
+
 title: "멀티 모니터에서 매번 부팅 시 DPI 설정이 초기화되는 문제 해결 방법"
 date: 2024-04-29T19:42:20+09:00
 tags: ["멀티 모니터", "DPI", "제어판"]
@@ -8,6 +9,7 @@ draft: false
 image: "img.png"
 categories: ["IT·테크놀로지"]
 ---
+
 
 
 

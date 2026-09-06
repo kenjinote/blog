@@ -1,6 +1,7 @@
 ---
 
 
+
 title: "wsl에서 「Temporary failure resolving～」라고 표시되는 경우의 대처 방법"
 date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "대처 방법"]
@@ -8,6 +9,7 @@ draft: false
 image: "img.png"
 categories: ["툴・개발환경"]
 ---
+
 
 
 

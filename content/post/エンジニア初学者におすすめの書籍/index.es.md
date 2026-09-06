@@ -2,6 +2,7 @@
 
 
 
+
 title: "Libros recomendados para ingenieros principiantes"
 date: 2024-05-05T16:03:33+09:00
 tags: ["ingeniero", "principiantes", "libros"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["estilo de vida y notas misceláneas"]
 ---
+
 
 
 

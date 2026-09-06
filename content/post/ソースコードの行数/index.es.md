@@ -3,6 +3,7 @@
 
 
 
+
 title: "Número de líneas de código fuente"
 date: 2025-04-17T10:33:02+09:00
 tags: ["código fuente", "líneas de código"]
@@ -10,6 +11,7 @@ draft: false
 image: "img_1.png"
 categories: ["IT y Tecnología"]
 ---
+
 
 
 

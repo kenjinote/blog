@@ -3,6 +3,7 @@
 
 
 
+
 title: "La conjetura de Kepler explicada de forma sencilla"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Matemáticas", "Conjetura de Kepler", "Explicación"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
 
 
 

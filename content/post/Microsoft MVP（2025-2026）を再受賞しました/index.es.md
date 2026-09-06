@@ -3,6 +3,7 @@
 
 
 
+
 title: "He sido galardonado nuevamente como Microsoft MVP (2025-2026)"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
+
 
 
 

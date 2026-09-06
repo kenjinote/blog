@@ -3,6 +3,7 @@
 
 
 
+
 title: "Ventajas y desventajas de crear programas con Win32API + C++"
 date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "Programación", "Desarrollo", "Tecnología"]
@@ -10,6 +11,7 @@ draft: false
 image: "img_1.png"
 categories: ["Programación"]
 ---
+
 
 
 

@@ -3,6 +3,7 @@
 
 
 
+
 title: "Market-in y Product-out"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Desarrollo", "Negocios", "Poema"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["Estilo de vida/Notas diversas"]
 ---
+
 
 
 

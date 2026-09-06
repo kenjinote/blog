@@ -2,6 +2,7 @@
 
 
 
+
 title: "'Windows 라이선스 상태를 확인하는 명령어'"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "라이선스", "명령 프롬프트"]
@@ -9,6 +10,7 @@ draft: false
 image: "img_1.png"
 categories: ["PC・가젯"]
 ---
+
 
 
 

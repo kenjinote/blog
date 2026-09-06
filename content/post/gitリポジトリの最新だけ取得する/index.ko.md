@@ -1,6 +1,7 @@
 ---
 
 
+
 title: "git 저장소의 최신 커밋만 가져오기"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "저장소", "명령어"]
@@ -8,6 +9,7 @@ draft: false
 image: "img.png"
 categories: ["도구·개발환경"]
 ---
+
 
 
 

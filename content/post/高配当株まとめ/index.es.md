@@ -3,6 +3,7 @@
 
 
 
+
 title: "Resumen de acciones de altos dividendos"
 date: 2024-12-22T00:56:14+09:00
 tags: ["acciones"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["Tecnología de la información"]
 ---
+
 
 
 

@@ -1,6 +1,7 @@
 ---
 
 
+
 title: "'자신이 할 수 없는 일을 하는 사람에게 경의를 표하자'"
 date: 2023-08-01T23:42:31+09:00
 tags: ["시", "생각"]
@@ -8,6 +9,7 @@ draft: false
 image: "img.png"
 categories: ["IT・기술"]
 ---
+
 
 
 

@@ -3,6 +3,7 @@
 
 
 
+
 title: "La barrera del desarrollo de IA"
 date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "Desarrollo", "Barrera", "Poema"]
@@ -10,6 +11,7 @@ draft: false
 image: "img_1.png"
 categories: ["IA y Tecnología"]
 ---
+
 
 
 

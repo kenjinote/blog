@@ -2,6 +2,7 @@
 
 
 
+
 title: "Cómo iniciar el editor Hidemaru con el comando ''hide''"
 date: 2024-03-29T23:45:37+09:00
 tags: ["Comandos", "Editor Hidemaru", "Registro"]
@@ -9,6 +10,7 @@ draft: false
 image: "img_2.png"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
+
 
 
 

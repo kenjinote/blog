@@ -2,6 +2,7 @@
 
 
 
+
 title: "Qué hacer cuando aparece ''Temporary failure resolving~'' en WSL"
 date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "solución"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
+
 
 
 

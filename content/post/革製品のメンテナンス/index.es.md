@@ -3,6 +3,7 @@
 
 
 
+
 title: "Mantenimiento de productos de cuero"
 date: 2024-10-30T00:31:46+09:00
 tags: ["Productos de cuero", "Pasatiempos"]
@@ -10,6 +11,7 @@ draft: fales
 image: "img.png"
 categories: ["Estilo de vida y miscelánea"]
 ---
+
 
 
 

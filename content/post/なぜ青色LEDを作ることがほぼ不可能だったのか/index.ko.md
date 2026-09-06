@@ -2,6 +2,7 @@
 
 
 
+
 title: "'왜 청색 LED를 만드는 것이 거의 불가능했는가'"
 date: 2024-09-15T00:43:52+09:00
 tags: ["과학", "물리학", "반도체"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["IT·테크놀로지"]
 ---
+
 
 
 

@@ -3,6 +3,7 @@
 
 
 
+
 title: "Por qué era casi imposible crear un LED azul"
 date: 2024-09-15T00:43:52+09:00
 tags: ["Ciencia", "Física", "Semiconductores"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
 
 
 

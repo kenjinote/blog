@@ -2,6 +2,7 @@
 
 
 
+
 title: "'목표'"
 date: 2024-12-08T03:32:34+09:00
 tags: ["목표"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["IT·테크놀로지"]
 ---
+
 
 
 

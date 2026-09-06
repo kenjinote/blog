@@ -2,6 +2,7 @@
 
 
 
+
 title: "'LogicPad 개발 비화'"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "개발", "비화"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["IT·테크놀로지"]
 ---
+
 
 
 

@@ -2,6 +2,7 @@
 
 
 
+
 title: "'PowerShell로 Excel이나 Word 등의 메타데이터(개인 정보)를 일괄 삭제하는 방법'"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "메타데이터", "개인정보"]
@@ -9,6 +10,7 @@ draft: false
 image: "powershell_metadata_eyecatch_1788588033601.jpg"
 categories: ["프로그래밍"]
 ---
+
 
 
 

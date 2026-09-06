@@ -3,6 +3,7 @@
 
 
 
+
 title: "Reflexiones sobre el Primero los Japoneses"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Primero los Japoneses", "Política", "Problemas sociales"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
 
 
 

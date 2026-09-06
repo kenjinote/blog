@@ -2,6 +2,7 @@
 
 
 
+
 title: "Sobre la IA generativa"
 date: 2024-04-16T02:13:56+09:00
 tags: ["IA generativa", "YouTube", "Conferencia"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["IA y tecnología"]
 ---
+
 
 
 

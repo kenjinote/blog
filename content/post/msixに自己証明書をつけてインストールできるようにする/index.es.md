@@ -3,6 +3,7 @@
 
 
 
+
 title: "Habilitar la instalación de msix con un certificado autofirmado"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "certificado autofirmado", "instalación"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["IT / Tecnología"]
 ---
+
 
 
 

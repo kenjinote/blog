@@ -2,6 +2,7 @@
 
 
 
+
 title: "'Android (Google Pixel) 단말기 소프트웨어 복원(초기화·복구) 절차'"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "복원", "트러블슈팅"]
@@ -9,6 +10,7 @@ draft: false
 image: "pixel_restore_eyecatch_1788588727945.jpg"
 categories: ["프로그래밍"]
 ---
+
 
 
 

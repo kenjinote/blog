@@ -2,6 +2,7 @@
 
 
 
+
 title: "Cómo deshacer git reset"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurar", "deshacer"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
+
 
 
 

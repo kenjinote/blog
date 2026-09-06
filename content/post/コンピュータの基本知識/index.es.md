@@ -3,6 +3,7 @@
 
 
 
+
 title: "Conocimientos básicos de computación"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Computadora", "Conocimientos básicos"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
 
 
 

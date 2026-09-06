@@ -3,12 +3,14 @@
 
 
 
+
 title: "Conjetura P≠NP"
 date: 2024-09-11T02:22:39+09:00
 tags: ["Conjetura P≠NP", "Matemáticas", "Problemas no resueltos"]
 draft: false
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
 
 
 

@@ -2,6 +2,7 @@
 
 
 
+
 title: "Introducción a vim"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "editor de texto"]
@@ -9,6 +10,7 @@ draft: false
 image: "img.png"
 categories: ["Herramientas・Entorno de desarrollo"]
 ---
+
 
 
 

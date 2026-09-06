@@ -3,6 +3,7 @@
 
 
 
+
 title: "Citas de Einstein"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Citas", "Filosofía", "Ciencia", "Física"]
@@ -10,6 +11,7 @@ draft: false
 image: "Solvay_conference_1927.jpg"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
 
 
 

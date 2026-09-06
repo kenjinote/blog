@@ -3,6 +3,7 @@
 
 
 
+
 title: "Qué hacer cuando no puedes cancelar Google One (Gemini)"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Cancelar", "Solución"]
@@ -11,6 +12,7 @@ image: "img.png"
 description: '¿Se te cobrará cuando termine la prueba gratuita de Google One (Gemini)? Resumen de cómo cancelar'
 categories: ["Programación"]
 ---
+
 
 
 

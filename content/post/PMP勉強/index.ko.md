@@ -1,6 +1,7 @@
 ---
 
 
+
 title: "'PMP 공부'"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "공부"]
@@ -8,6 +9,7 @@ draft: false
 image: "img.png"
 categories: ["IT・테크놀로지"]
 ---
+
 
 
 

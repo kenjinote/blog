@@ -3,6 +3,7 @@
 
 
 
+
 title: "Sobre la marca obligatoria en los formularios de entrada"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formularios", "Desarrollo Web", "UX"]
@@ -10,6 +11,7 @@ draft: false
 image: "img.png"
 categories: ["Gestión del blog"]
 ---
+
 
 
 

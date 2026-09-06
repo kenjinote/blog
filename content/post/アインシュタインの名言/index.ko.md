@@ -2,6 +2,7 @@
 
 
 
+
 title: "'아인슈타인의 명언'"
 date: 2024-08-24T18:38:47+09:00
 tags: ["아인슈타인", "명언", "철학", "과학", "물리학"]
@@ -9,6 +10,7 @@ draft: false
 image: "Solvay_conference_1927.jpg"
 categories: ["수학・암호・양자"]
 ---
+
 
 
 
