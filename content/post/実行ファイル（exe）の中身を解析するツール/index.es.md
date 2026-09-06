@@ -38,17 +38,25 @@ Puede verificar de qué archivos DLL depende un archivo EXE y si se han cargado 
 
 ## Ghidra
 
+![img_5.png](img_5.png)
+
 Es una poderosa herramienta de ingeniería inversa desarrollada por la NSA (Agencia de Seguridad Nacional de EE. UU.) y publicada gratuitamente como código abierto. No solo desensambla (convierte a lenguaje ensamblador) archivos EXE, sino que también tiene una función de descompilación a un formato cercano al lenguaje C, lo que la hace muy popular.
 
 ## IDA Free / IDA Pro
+
+![img_6.png](img_6.png)
 
 Es un desensamblador y descompilador avanzado que se ha convertido en un estándar mundial de la industria en análisis de malware e ingeniería inversa. La versión Pro es muy cara, pero si es para fines personales o no comerciales, puede usar la versión con funciones limitadas "IDA Free" de forma gratuita.
 
 ## x64dbg (x32dbg)
 
+![img_7.png](img_7.png)
+
 Es un depurador de código abierto para Windows. Se especializa en "análisis dinámico", que analiza el contenido y el estado de la memoria paso a paso mientras se ejecuta el archivo ejecutable, y se usa a menudo para descifrar crackmes (programas de desafío de análisis) e investigar el comportamiento del malware.
 
 ## ILSpy / dotPeek
+
+![img_8.png](img_8.png)
 
 Si el archivo EXE de destino fue creado en un lenguaje del sistema .NET como C#, puede usar estas herramientas para descompilarlo a un estado casi idéntico al código fuente original y exponer completamente su contenido.
 

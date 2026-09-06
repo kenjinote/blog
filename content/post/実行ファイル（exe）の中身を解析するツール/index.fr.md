@@ -38,17 +38,25 @@ Vous pouvez vérifier les fichiers DLL dont dépend un fichier EXE et vous assur
 
 ## Ghidra
 
+![img_5.png](img_5.png)
+
 Il s'agit d'un puissant outil de rétro-ingénierie développé par la NSA (National Security Agency) et publié gratuitement en open source. Il est très populaire car il dispose non seulement d'une fonction de désassemblage des fichiers EXE (conversion en langage assembleur) mais aussi d'une fonction de décompilation vers un format proche du langage C.
 
 ## IDA Free / IDA Pro
+
+![img_6.png](img_6.png)
 
 Il s'agit d'un désassembleur et décompilateur très avancé qui est devenu une norme mondiale de l'industrie pour l'analyse de logiciels malveillants et la rétro-ingénierie. La version Pro est très chère, mais pour un usage personnel ou non commercial, vous pouvez utiliser gratuitement la version aux fonctionnalités limitées "IDA Free".
 
 ## x64dbg (x32dbg)
 
+![img_7.png](img_7.png)
+
 Il s'agit d'un débogueur open source pour Windows. Il est spécialisé dans "l'analyse dynamique", qui permet d'analyser le contenu et l'état de la mémoire étape par étape lors de l'exécution du fichier exécutable, et est souvent utilisé pour décoder des crackmes (programmes de défi pour l'analyse) ou enquêter sur le comportement de logiciels malveillants.
 
 ## ILSpy / dotPeek
+
+![img_8.png](img_8.png)
 
 Si le fichier EXE cible est créé avec un langage de la famille .NET tel que C#, l'utilisation de ces outils vous permet de le décompiler (rétro-compiler) à un état presque identique au code source d'origine pour en révéler tout le contenu.
 

@@ -38,17 +38,25 @@ Você pode descobrir de quais arquivos DLL o arquivo EXE depende e verificar se 
 
 ## Ghidra
 
+![img_5.png](img_5.png)
+
 É uma poderosa ferramenta de engenharia reversa desenvolvida pela NSA (Agência de Segurança Nacional dos EUA) e lançada gratuitamente como código aberto. É muito popular porque não só desmonta arquivos EXE (os converte para linguagem assembly), mas também tem uma função de descompilação para um formato próximo à linguagem C.
 
 ## IDA Free / IDA Pro
+
+![img_6.png](img_6.png)
 
 É um desmontador e descompilador de alto desempenho que se tornou o padrão global da indústria em análise de malware e engenharia reversa. A versão Pro é muito cara, mas se for para uso pessoal ou não comercial, você pode usar a versão de função limitada "IDA Free" gratuitamente.
 
 ## x64dbg (x32dbg)
 
+![img_7.png](img_7.png)
+
 É um depurador de código aberto para Windows. Ele é especializado em "análise dinâmica", onde o conteúdo e o estado da memória são analisados passo a passo enquanto o arquivo executável é executado, e é frequentemente usado para decifrar crackmes (programas de desafio para análise) e investigar o comportamento de malware.
 
 ## ILSpy / dotPeek
+
+![img_8.png](img_8.png)
 
 Se o arquivo EXE alvo for criado em uma linguagem .NET como C#, usando essas ferramentas, você pode descompilar o arquivo para um estado quase idêntico ao código-fonte original e ver o que está dentro.
 

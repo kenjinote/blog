@@ -38,17 +38,25 @@ Sie können die DLL-Dateien untersuchen, von denen eine EXE-Datei abhängt, und 
 
 ## Ghidra
 
+![img_5.png](img_5.png)
+
 Ein leistungsstarkes Reverse-Engineering-Tool, das von der NSA (National Security Agency der USA) entwickelt und als Open Source kostenlos veröffentlicht wurde. Es ist sehr beliebt, da es nicht nur EXE-Dateien disassemblieren (in Assemblersprache umwandeln) kann, sondern auch eine Dekompilierungsfunktion in eine Form bietet, die der C-Sprache nahekommt.
 
 ## IDA Free / IDA Pro
+
+![img_6.png](img_6.png)
 
 Ein hochfunktionaler Disassembler und Dekompiler, der zum weltweiten Industriestandard für die Malware-Analyse und das Reverse Engineering geworden ist. Die Pro-Version ist sehr teuer, aber Sie können die funktionseingeschränkte "IDA Free"-Version für den persönlichen oder nicht-kommerziellen Gebrauch kostenlos nutzen.
 
 ## x64dbg (x32dbg)
 
+![img_7.png](img_7.png)
+
 Ein Open-Source-Debugger für Windows. Er ist auf die "dynamische Analyse" spezialisiert, bei der der Inhalt und der Speicherstatus durch schrittweise Ausführung analysiert werden, während die ausführbare Datei ausgeführt wird. Er wird häufig zum Entschlüsseln von Crackmes (Aufgabenprogramme zur Analyse) und zur Untersuchung des Verhaltens von Malware verwendet.
 
 ## ILSpy / dotPeek
+
+![img_8.png](img_8.png)
 
 Wenn die Ziel-EXE-Datei in einer .NET-Sprache wie C# geschrieben ist, können Sie diese Tools verwenden, um sie fast auf den Zustand des ursprünglichen Quellcodes zu dekompilieren (Rückübersetzung) und ihren Inhalt vollständig offenzulegen.
 
