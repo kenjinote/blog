@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'i18n이란?'"
 date: 2023-04-07T00:42:02+09:00
 tags: ["국제화", "i18n", "용어"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 
 # i18n이란?

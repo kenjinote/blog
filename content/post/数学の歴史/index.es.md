@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "'Historia de las Matemáticas'"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Matemáticas", "Historia"]
@@ -8,6 +10,8 @@ draft: false
 image: "img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
+
 
 
 

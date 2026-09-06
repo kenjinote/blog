@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Uso de GitHub Copilot en IntelliJ IDEA"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
@@ -7,6 +9,8 @@ draft: false
 image: "images/img.png"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
+
+
 
 # Introducción
 GitHub Copilot es una herramienta de autocompletado de código basada en IA desarrollada por GitHub.

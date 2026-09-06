@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "¿Qué significa entender?"
 date: 2022-09-24T02:38:18+09:00
 tags: ["Miscelánea"]
@@ -8,6 +10,8 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
+
 
 
 # ¿Qué significa entender?

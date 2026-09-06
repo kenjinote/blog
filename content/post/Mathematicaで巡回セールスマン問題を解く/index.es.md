@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Resolver el problema del viajante con Mathematica"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problema del viajante", "Algoritmos", "Matemáticas"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
+
 
 # Resolver el problema del viajante con Mathematica
 

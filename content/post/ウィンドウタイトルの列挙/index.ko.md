@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "'윈도우 타이틀 열거'"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
@@ -8,6 +11,9 @@ draft: false
 image: "img.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 
 # 윈도우 타이틀 열거

@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "'Colección de Atajos y Trucos de Windows'"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Trucos", "Atajos"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["PC・Gadgets"]
 ---
+
+
 
 Aquí hay una pequeña colección de trucos que uso habitualmente en Windows. Espero que aquellos que acaban de empezar a usar Windows lo encuentren útil.
 Se asume el uso de Windows 11, pero creo que la mayoría también funcionan en Windows 10.

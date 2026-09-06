@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "'iOS용 ffmpeg 파라미터'"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
@@ -11,6 +14,9 @@ draft: false
 image: "img.png"
 categories: ["PC・가젯"]
 ---
+
+
+
 
 
 

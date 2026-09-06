@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "mac에 CocoaPods를 설치하는 방법"
 date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]
@@ -7,6 +10,9 @@ draft: false
 image: "img_1.png"
 categories: ["PC・가젯"]
 ---
+
+
+
 
 
 # 터미널에서 설치

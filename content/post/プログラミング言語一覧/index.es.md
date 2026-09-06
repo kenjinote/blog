@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Lista de lenguajes de programación"
 date: 2023-04-01T03:45:53+09:00
 tags: ["Lenguajes de programación"]
@@ -8,6 +10,8 @@ draft: true
 image: "img.png"
 categories: ["Programación"]
 ---
+
+
 
 
 

@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Mostrar una ventana simple en Rust"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","Ventana"]
@@ -7,6 +9,8 @@ draft: false
 image: "images/rust_logo.png"
 categories: ["Programación"]
 ---
+
+
 
 
 Mostrar una ventana simple en Rust

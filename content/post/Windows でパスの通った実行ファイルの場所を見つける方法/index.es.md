@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cómo encontrar la ubicación de un archivo ejecutable en el path en Windows"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "path", "archivo ejecutable", "símbolo del sistema"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["PC y Gadgets"]
 ---
+
+
 
 
 # Cómo encontrar la ubicación de un archivo ejecutable en el path en Windows

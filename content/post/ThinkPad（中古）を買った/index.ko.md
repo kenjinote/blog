@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'ThinkPad(중고)를 샀다'"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "노트북"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 
 # 노트북 ThinkPad(중고)를 샀다

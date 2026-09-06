@@ -3,6 +3,9 @@
 
 
 
+
+
+
 title: "생성형 AI에 대하여"
 date: 2024-04-16T02:13:56+09:00
 tags: ["생성형 AI", "YouTube", "강의"]
@@ -10,6 +13,9 @@ draft: false
 image: "img.png"
 categories: ["AI・테크놀로지"]
 ---
+
+
+
 
 
 

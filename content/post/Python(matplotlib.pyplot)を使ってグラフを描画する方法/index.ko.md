@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Python(matplotlib.pyplot)을 사용하여 그래프를 그리는 방법"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "그래프", "수학", "matplotlib", "pyplot", "Google Colaboratory"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["수학・암호・양자"]
 ---
+
+
+
 
 
 ![img_1.png](img_1.png)

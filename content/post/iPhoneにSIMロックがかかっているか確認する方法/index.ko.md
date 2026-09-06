@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "iPhone에 SIM락이 걸려있는지 확인하는 방법"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIM락"]
@@ -11,6 +14,9 @@ draft: false
 image: "img.png"
 categories: ["PC・가젯"]
 ---
+
+
+
 
 
 

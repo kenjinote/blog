@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cómo añadir un borde a una imagen usando paint.net"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "borde", "imagen"]
@@ -7,6 +9,8 @@ draft: false
 image: "img_3.png"
 categories: ["IA y Tecnología"]
 ---
+
+
 
 
 Te mostraré cómo añadir un borde a una imagen usando paint.net.

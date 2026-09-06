@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "paint.net에서 이미지의 특정 부분에 모자이크 처리하는 방법"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "테두리", "이미지"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["AI・테크놀로지"]
 ---
+
+
+
 
 
 paint.net에서 이미지의 특정 부분에 모자이크 처리하는 방법을 소개합니다.

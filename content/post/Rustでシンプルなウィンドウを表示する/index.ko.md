@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'Rust에서 간단한 창 표시하기'"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","창"]
@@ -7,6 +10,9 @@ draft: false
 image: "images/rust_logo.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 
 Rust에서 간단한 창 표시하기

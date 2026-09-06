@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'hugo에서 KaTeX(LaTeX 스타일 수식 표시) 활성화하는 방법'"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "수식", "수학", "hugo"]
@@ -8,6 +11,9 @@ math: true
 image: "img.png"
 categories: ["수학・암호・양자"]
 ---
+
+
+
 
 # KaTeX란?
 KaTeX는 LaTeX 스타일의 수식을 HTML로 표시하기 위한 javascript 라이브러리입니다.

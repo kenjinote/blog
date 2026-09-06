@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "GNFS"
 date: 2026-09-05T02:09:08+09:00
 tags: ["수학", "암호", "RSA", "GNFS"]
@@ -11,6 +14,9 @@ draft: false
 image: "gnfs_two_worlds_1788542142485.jpg"
 categories: ["수학・암호・양자"]
 ---
+
+
+
 
 
 

@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "'Cómo crear un acceso directo para apagar Windows'"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "apagar", "acceso directo"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["PC y Gadgets"]
 ---
+
+
 
 
 Aquí se explica cómo crear un acceso directo para apagar Windows.

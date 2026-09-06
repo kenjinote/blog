@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Escribiendo pruebas en Rust"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","Pruebas"]
@@ -7,6 +9,8 @@ draft: false
 image: "images/rust_logo.png"
 categories: ["Programación"]
 ---
+
+
 
 
 Para escribir pruebas en Rust, crea una función añadiendo el atributo `#[test]` en la línea superior de la definición de la función de prueba.

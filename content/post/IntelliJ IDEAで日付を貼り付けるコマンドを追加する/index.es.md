@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Añadir un comando para insertar la fecha en IntelliJ IDEA"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
@@ -7,6 +9,8 @@ draft: false
 image: "images/IntelliJ_logo.png"
 categories: ["IT y Tecnología"]
 ---
+
+
 
 # Introducción
 Cuando escribo en este blog, utilizo IntelliJ IDEA. Es conveniente porque tiene buena compatibilidad con Git y muestra una vista previa del markdown.

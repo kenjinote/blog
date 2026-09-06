@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Kamukura (Ramen) por primera vez en años"
 date: 2022-09-09T21:45:19+09:00
 tags: ["Ramen", "Kamukura"]
@@ -8,6 +10,8 @@ draft: false
 image: "images/img2.jpg"
 categories: ["TI y Tecnología"]
 ---
+
+
 
 
 

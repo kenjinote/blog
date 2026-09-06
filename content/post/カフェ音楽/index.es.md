@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Música de cafetería"
 date: 2022-09-08T08:39:03+09:00
 tags: ["cafetería", "música"]
@@ -8,6 +10,8 @@ draft: false
 image: "images/img.png"
 categories: ["estilo de vida y miscelánea"]
 ---
+
+
 
 
 **Ritmo rápido**

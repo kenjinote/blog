@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "'Cómo crear un acceso directo para bloquear la computadora'"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Bloquear la computadora", "Acceso directo"]
@@ -11,6 +13,8 @@ draft: false
 image: "img.png"
 categories: ["PC y gadgets"]
 ---
+
+
 
 
 

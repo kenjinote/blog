@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "WinGet을 사용하여 명령어로 앱 설치하기"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
@@ -8,6 +11,9 @@ draft: false
 image: "img.png"
 categories: ["도구 및 개발 환경"]
 ---
+
+
+
 
 
 ## 전제 조건

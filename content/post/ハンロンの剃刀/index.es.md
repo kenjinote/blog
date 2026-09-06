@@ -5,6 +5,8 @@
 
 
 
+
+
 title: "El principio de Hanlon"
 date: 2024-09-24T18:14:34+09:00
 tags: ["Frases", "Expresiones"]
@@ -12,6 +14,8 @@ draft: false
 image: "img.png"
 categories: ["TI・Tecnología"]
 ---
+
+
 
 
 

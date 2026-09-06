@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'Rust의 특징'"
 date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 # Rust(러스트)의 특징
 

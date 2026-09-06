@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "Atajos de teclado de Microsoft Word"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Atajos de teclado"]
@@ -11,6 +13,8 @@ draft: false
 image: "img.png"
 categories: ["Herramientas y Entorno de Desarrollo"]
 ---
+
+
 
 
 

@@ -3,6 +3,9 @@
 
 
 
+
+
+
 title: "'여러 가지 버전 정보 대화 상자를 모아보았다'"
 date: 2024-03-02T21:32:11+09:00
 tags: ["버전 정보", "Windows", "MacOS"]
@@ -10,6 +13,9 @@ draft: false
 image: "img.png"
 categories: ["PC・가젯"]
 ---
+
+
+
 
 
 

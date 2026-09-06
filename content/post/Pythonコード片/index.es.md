@@ -5,6 +5,8 @@
 
 
 
+
+
 title: "Fragmentos de código de Python"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "Código de ejemplo"]
@@ -12,6 +14,8 @@ draft: false
 image: "img.png"
 categories: ["Programación"]
 ---
+
+
 
 
 

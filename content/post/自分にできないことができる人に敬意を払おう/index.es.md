@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "'Respetemos a quienes pueden hacer lo que nosotros no podemos'"
 date: 2023-08-01T23:42:31+09:00
 tags: ["poema", "pensamientos"]
@@ -11,6 +13,8 @@ draft: false
 image: "img.png"
 categories: ["TI・Tecnología"]
 ---
+
+
 
 
 

@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cambio de paleta de colores de PaperMod"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["Administración del blog"]
 ---
+
+
 
 He cambiado la paleta de colores del tema PaperMod. Me referí al siguiente enlace para saber cómo hacerlo:
 

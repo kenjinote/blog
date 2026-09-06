@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Comando para eliminar todo en Salesforce Chatter"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
@@ -7,6 +9,8 @@ draft: false
 image: "img_1.png"
 categories: ["IT y Tecnología"]
 ---
+
+
 
 # Comando para eliminar todo en Salesforce Chatter
 Este es un comando para eliminar todas las publicaciones y archivos adjuntos en Salesforce Chatter.

@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Windows 단축키・팁 모음"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows","팁","단축키"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["PC・가젯"]
 ---
+
+
+
 
 Windows에서 평소 사용하는 소소한 팁 모음입니다. Windows를 처음 사용하시는 분들이 읽어주시면 좋겠습니다.
 Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 수 있을 것입니다.

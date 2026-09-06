@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "'Cambio de disposición de imágenes en PaperMod'"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
@@ -7,6 +9,8 @@ draft: false
 image: "images/img.png"
 categories: ["Administración del blog"]
 ---
+
+
 
 El diseño por defecto coloca las imágenes en el centro con un 100% de ancho, pero como a veces sentía que eran demasiado grandes, intenté hacer que la imagen se acomodara debajo del título y cambiar el ancho a unos 150px.
 

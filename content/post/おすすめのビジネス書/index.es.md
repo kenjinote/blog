@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Libros de negocios recomendados"
 date: 2023-03-19T18:13:14+09:00
 tags: ["Libros de negocios", "Libros"]
@@ -8,6 +10,8 @@ draft: false
 image: "img.png"
 categories: ["Estilo de vida y notas varias"]
 ---
+
+
 
 
 

@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'PaperMod에서 Twitter Card를 설정하는 방법'"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
@@ -7,6 +10,9 @@ draft: false
 image: "images/img.png"
 categories: ["블로그 운영"]
 ---
+
+
+
 
 # 시작하며
 PaperMod 테마는 Twitter Card를 지원합니다.

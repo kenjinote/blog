@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cómo configurar Twitter Card en PaperMod"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
@@ -7,6 +9,8 @@ draft: false
 image: "images/img.png"
 categories: ["Administración del blog"]
 ---
+
+
 
 # Introducción
 El tema PaperMod soporta Twitter Cards.

@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Marcar todas las casillas de verificación en una página web"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatización"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["gestión de blog"]
 ---
+
+
 
 
 Para marcar todas las casillas de verificación en una página web, abra DevTools con F12, pegue el siguiente código en la consola y ejecútelo.

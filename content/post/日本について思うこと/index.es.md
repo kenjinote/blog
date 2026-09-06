@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "'Mis pensamientos sobre Japón'"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Miscelánea"]
@@ -8,6 +10,8 @@ draft: false
 image: "images/img.png"
 categories: ["TI y tecnología"]
 ---
+
+
 
 
 Voy a organizar lo que pienso y me parece extraño de la sociedad japonesa.

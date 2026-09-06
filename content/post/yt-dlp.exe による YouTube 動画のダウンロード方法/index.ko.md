@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "'yt-dlp.exe를 이용한 YouTube 동영상 다운로드 방법'"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "다운로드"]
@@ -11,6 +14,9 @@ draft: false
 image: "img_1.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 
 

@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "'C++에서 Microsoft Teams로 메시지를 게시하는 방법(WinHTTP + Graph API)'"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
@@ -11,6 +14,9 @@ draft: false
 image: "img.png"
 categories: ["도구 및 개발 환경"]
 ---
+
+
+
 
 
 

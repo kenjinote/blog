@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'Rust 시작하기'"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
@@ -7,6 +10,9 @@ draft: false
 image: "images/rust_logo.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 # 시작하며
 Rust는 빠르고 메모리 효율이 높은 모듈을 모던한 표기법으로 작성할 수 있는 비교적 새로운 프로그래밍 언어입니다.

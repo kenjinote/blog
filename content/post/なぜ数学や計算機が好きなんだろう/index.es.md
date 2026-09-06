@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Por qué me gustan las matemáticas y las computadoras"
 date: 2022-09-23T01:56:52+09:00
 tags: ["Miscelánea"]
@@ -8,6 +10,8 @@ draft: false
 image: "img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
+
 
 
 

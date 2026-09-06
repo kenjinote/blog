@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Códigos cortos que se pueden usar en HUGO"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["Operación de blog"]
 ---
+
+
 
 # Códigos cortos que se pueden usar en HUGO
 

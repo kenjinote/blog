@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Compré un ThinkPad (usado)"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Portátil"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
+
 
 
 # Compré un portátil ThinkPad (usado)

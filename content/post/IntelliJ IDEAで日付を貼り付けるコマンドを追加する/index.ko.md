@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "IntelliJ IDEA에서 날짜를 삽입하는 명령 추가하기"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
@@ -7,6 +10,9 @@ draft: false
 image: "images/IntelliJ_logo.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 # 머리말
 이 블로그를 작성할 때는 IntelliJ IDEA를 사용하고 있습니다. Git과의 호환성도 좋고, 마크다운의 프리뷰를 표시해 주기 때문에 편리합니다.

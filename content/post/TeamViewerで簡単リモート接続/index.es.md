@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Conexión remota sencilla con TeamViewer"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "comando", "conexión remota"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
+
 
 
 # Conexión remota sencilla con TeamViewer

@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Eliminar carpetas grandes rápidamente"
 date: 2022-09-20T16:04:02+09:00
 tags: ["Símbolo del sistema"]
@@ -8,6 +10,8 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
+
 
 
 ## Eliminar carpetas grandes rápidamente

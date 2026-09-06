@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "paint.net의 매력"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["AI・테크놀로지"]
 ---
+
+
+
 
 제가 개발 작업을 하면서 자주 사용하는 이미지 편집 프로그램 paint.net을 소개합니다.
 

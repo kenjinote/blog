@@ -5,6 +5,8 @@
 
 
 
+
+
 title: "La conjetura de Collatz"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Conjetura de Collatz", "Matemáticas", "Programación", "Algoritmos"]
@@ -12,6 +14,8 @@ draft: false
 image: "img.png"
 categories: ["Matemáticas, Criptografía y Cuántica"]
 ---
+
+
 
 
 

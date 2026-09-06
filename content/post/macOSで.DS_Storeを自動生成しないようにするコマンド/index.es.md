@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "'Comando para evitar la creación automática de .DS_Store en macOS'"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["PC y Gadgets"]
 ---
+
+
 
 El comando para evitar la creación automática de .DS_Store en macOS es el siguiente.
 Ejecútalo en la terminal.

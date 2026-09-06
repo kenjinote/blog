@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "영화 TODO 리스트"
 date: 2023-04-17T00:34:13+09:00
 tags: ["영화", "TODO"]
@@ -8,6 +11,9 @@ draft: false
 image: "image.jpg"
 categories: ["라이프스타일・잡기"]
 ---
+
+
+
 
 
 

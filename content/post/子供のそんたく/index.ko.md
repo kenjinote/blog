@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "아이의 배려"
 date: 2022-09-07T04:40:52+09:00
 tags: ["아이"]
@@ -8,6 +11,9 @@ draft: false
 image: "images/img.png"
 categories: ["IT・기술"]
 ---
+
+
+
 
 
 엄마가 몸이 안 좋아 누워 계실 때,

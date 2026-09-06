@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cómo cambiar de aplicación en mac al estilo Windows (Alt+Tab)"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "atajos de teclado", "cambiar de aplicación"]
@@ -7,6 +9,8 @@ draft:
 image: "img.png"
 categories: ["PC y gadgets"]
 ---
+
+
 
 
 # Introducción

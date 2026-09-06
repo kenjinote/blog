@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "'Compré un mac mini (2018)'"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["PC y gadgets"]
 ---
+
+
 
 
 # Compré un mac mini (2018)

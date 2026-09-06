@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Web페이지 내의 모든 체크박스를 전체 체크하기"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "자동화"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["블로그 운영"]
 ---
+
+
+
 
 
 Web페이지 내의 체크박스를 전체 체크하려면, F12로 DevTools를 열고, 콘솔에 다음 코드를 붙여넣어 실행합니다.

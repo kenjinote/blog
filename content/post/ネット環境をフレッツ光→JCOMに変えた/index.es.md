@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Cambié mi entorno de internet de Flets Hikari a J:COM"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flets Hikari","Conexión a internet"]
@@ -8,6 +10,8 @@ draft: false
 image: "jcom.png"
 categories: ["IT y tecnología"]
 ---
+
+
 
 
 

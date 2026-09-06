@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cómo dibujar un gráfico usando Python (matplotlib.pyplot)"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Gráfico", "Matemáticas", "matplotlib", "pyplot", "Google Colaboratory"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
+
 
 
 ![img_1.png](img_1.png)

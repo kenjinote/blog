@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "Desastres en Japón"
 date: 2024-01-07T00:50:09+09:00
 tags: ["Desastres", "Datos"]
@@ -11,6 +13,8 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
+
 
 
 

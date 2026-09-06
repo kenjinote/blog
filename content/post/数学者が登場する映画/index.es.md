@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Películas sobre matemáticos"
 date: 2022-09-05T10:41:00+09:00
 tags: ["Películas","Matemáticos"]
@@ -8,6 +10,8 @@ draft: false
 image: "images/img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
+
 
 
 Estas son mis películas recomendadas en las que el protagonista es un matemático.

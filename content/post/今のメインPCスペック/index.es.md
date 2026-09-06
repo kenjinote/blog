@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Especificaciones actuales de mi PC principal"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
@@ -8,6 +10,8 @@ draft: false
 image: "images/img.png"
 categories: ["PC y gadgets"]
 ---
+
+
 
 
 Aquí dejo las especificaciones de mi PC principal.

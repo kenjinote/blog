@@ -3,6 +3,9 @@
 
 
 
+
+
+
 title: "명령 프롬프트에서 PowerToys 설치하기"
 date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "명령 프롬프트", "PowerToys", "winget"]
@@ -10,6 +13,9 @@ draft: false
 image: "img.png"
 categories: ["도구 및 개발 환경"]
 ---
+
+
+
 
 
 

@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Windows를 종료하는 바로 가기 만들기"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "종료", "바로 가기"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["PC·가젯"]
 ---
+
+
+
 
 
 Windows를 종료하는 바로 가기를 만드는 방법을 소개합니다.

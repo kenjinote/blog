@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cómo empezar con Rust"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
@@ -7,6 +9,8 @@ draft: false
 image: "images/rust_logo.png"
 categories: ["Programación"]
 ---
+
+
 
 # Introducción
 Rust es un lenguaje de programación relativamente nuevo que permite escribir módulos rápidos y eficientes en el uso de la memoria con una sintaxis moderna.

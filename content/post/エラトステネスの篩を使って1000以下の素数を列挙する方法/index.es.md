@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Cómo enumerar los números primos hasta 1000 usando la criba de Eratóstenes"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Criba de Eratóstenes", "Números primos", "Matemáticas", "Rust"]
@@ -9,6 +11,8 @@ math: true
 image: "img.png"
 categories: ["Matemáticas・Criptografía・Cuántica"]
 ---
+
+
 
 
 

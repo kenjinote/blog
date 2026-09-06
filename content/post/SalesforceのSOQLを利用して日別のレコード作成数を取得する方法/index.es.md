@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "'Cómo obtener el número de registros creados por día usando SOQL de Salesforce'"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "fecha", "agregación"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
+
 
 
 # Cómo obtener el número de registros creados por día usando SOQL de Salesforce

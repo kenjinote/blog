@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "Cómo restaurar el menú contextual clásico en Windows 11"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Explorador de archivos"]
@@ -11,6 +13,8 @@ draft: false
 image: "img.png"
 categories: ["PC y Gadgets"]
 ---
+
+
 
 
 

@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'Twitter API와 Google Colaboratory를 사용하여 트윗하는 방법'"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 
 # 필요한 것

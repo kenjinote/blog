@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "'C++에서 PowerShell을 C++/CLI DLL을 통해 실행하는 방법'"
 date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
@@ -11,6 +14,9 @@ draft: false
 image: "img.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 
 

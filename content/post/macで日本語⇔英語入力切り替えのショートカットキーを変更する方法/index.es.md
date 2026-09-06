@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cómo cambiar el atajo de teclado para cambiar entre entrada en japonés e inglés en mac"
 date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "atajos de teclado", "entrada en japonés"]
@@ -7,6 +9,8 @@ draft:
 image: "img.png"
 categories: ["PC y Gadgets"]
 ---
+
+
 
 
 # Introducción

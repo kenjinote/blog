@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "macOS에서 .DS_Store를 자동 생성하지 않도록 하는 명령어"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["PC・가젯"]
 ---
+
+
+
 
 macOS에서 .DS_Store를 자동 생성하지 않도록 하는 명령어는 다음과 같습니다.
 터미널에서 실행해 주세요.

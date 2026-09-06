@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'PaperMod 이미지 배치 변경'"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
@@ -7,6 +10,9 @@ draft: false
 image: "images/img.png"
 categories: ["블로그 운영"]
 ---
+
+
+
 
 기본 레이아웃은 이미지가 중앙에 가로폭 100%로 배치되어 있지만,
 조금 크다고 느껴질 때가 있어서, 이미지를 제목 아래에 둘러싸이게 하고,

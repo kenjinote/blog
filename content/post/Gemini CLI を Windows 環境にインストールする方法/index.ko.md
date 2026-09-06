@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "'Gemini CLI를 Windows 환경에 설치하는 방법'"
 date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "설치", "개발"]
@@ -11,6 +14,9 @@ draft: false
 image: "img.png"
 categories: ["PC・가젯"]
 ---
+
+
+
 
 
 

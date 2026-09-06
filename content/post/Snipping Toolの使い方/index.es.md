@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "Cómo usar Snipping Tool"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Imagen", "Video", "Captura de pantalla", "Grabación", "Captura"]
@@ -11,6 +13,8 @@ draft: false
 image: "img.png"
 categories: ["IT y Tecnología"]
 ---
+
+
 
 
 

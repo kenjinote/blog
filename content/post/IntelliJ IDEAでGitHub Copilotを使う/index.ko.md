@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "IntelliJ IDEA에서 GitHub Copilot 사용하기"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
@@ -7,6 +10,9 @@ draft: false
 image: "images/img.png"
 categories: ["도구 및 개발 환경"]
 ---
+
+
+
 
 # 소개
 GitHub Copilot은 GitHub가 개발한 AI 기반 코드 자동 완성 도구입니다.

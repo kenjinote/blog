@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Mostrar un MessageBox en Rust"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
@@ -7,6 +9,8 @@ draft: false
 image: "images/rust_logo.png"
 categories: ["Programación"]
 ---
+
+
 
 
 Puede mostrar un MessageBox en Rust siguiendo los pasos a continuación.

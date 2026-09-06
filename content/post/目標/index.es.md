@@ -5,6 +5,8 @@
 
 
 
+
+
 title: "Objetivos"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Objetivos"]
@@ -12,6 +14,8 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
+
 
 
 

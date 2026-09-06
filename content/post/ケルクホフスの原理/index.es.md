@@ -5,6 +5,8 @@
 
 
 
+
+
 title: "Principio de Kerckhoffs"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Principio de Kerckhoffs", "Criptografía"]
@@ -12,6 +14,8 @@ draft: false
 image: "img_2.png"
 categories: ["Matemáticas, Criptografía y Cuántica"]
 ---
+
+
 
 
 

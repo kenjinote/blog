@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Mac에서 Windows처럼 (Alt+Tab) 애플리케이션 전환하는 방법"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "단축키", "애플리케이션 전환"]
@@ -7,6 +10,9 @@ draft:
 image: "img.png"
 categories: ["PC·가젯"]
 ---
+
+
+
 
 
 # 소개

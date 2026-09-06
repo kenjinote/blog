@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "'C++에서 Microsoft.Windows.AI를 호출하는 방법'"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
@@ -11,6 +14,9 @@ draft: false
 image: "img.png"
 categories: ["도구 및 개발 환경"]
 ---
+
+
+
 
 
 

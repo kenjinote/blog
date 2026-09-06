@@ -3,6 +3,9 @@
 
 
 
+
+
+
 title: "스플래툰 2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["스플래툰 2", "게임", "Nintendo Switch"]
@@ -10,6 +13,9 @@ draft: false
 image: "img.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 
 

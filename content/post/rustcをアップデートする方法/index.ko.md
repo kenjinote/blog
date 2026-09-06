@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "rustc를 업데이트하는 방법"
 date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 # rustc를 업데이트하는 방법
 

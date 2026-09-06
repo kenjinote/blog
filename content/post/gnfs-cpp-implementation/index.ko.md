@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "GNFS"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "수학", "암호"]
@@ -11,6 +14,9 @@ draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.jpg"
 categories: ["수학·암호·양자"]
 ---
+
+
+
 
 
 

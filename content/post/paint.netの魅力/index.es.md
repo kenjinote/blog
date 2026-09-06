@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "El atractivo de paint.net"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
@@ -7,6 +9,8 @@ draft: false
 image: "img.png"
 categories: ["IA y Tecnología"]
 ---
+
+
 
 Les presento paint.net, un software de edición de imágenes que utilizo a menudo durante mis tareas de desarrollo.
 

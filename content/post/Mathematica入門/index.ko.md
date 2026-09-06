@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "'Mathematica 입문'"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "수학", "알고리즘"]
@@ -11,6 +14,9 @@ draft: false
 image: "img.png"
 categories: ["수학・암호・양자"]
 ---
+
+
+
 
 
 

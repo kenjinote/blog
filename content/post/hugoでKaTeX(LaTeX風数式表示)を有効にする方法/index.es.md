@@ -1,5 +1,7 @@
 ---
 
+
+
 title: "Cómo habilitar KaTeX (fórmulas matemáticas estilo LaTeX) en hugo"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "fórmulas", "matemáticas", "hugo"]
@@ -8,6 +10,8 @@ math: true
 image: "img.png"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
+
+
 
 # Qué es KaTeX
 KaTeX es una biblioteca de JavaScript para mostrar fórmulas matemáticas estilo LaTeX en HTML.

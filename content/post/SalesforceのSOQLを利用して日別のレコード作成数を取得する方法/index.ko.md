@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Salesforce의 SOQL을 이용하여 일별 레코드 생성 수를 가져오는 방법"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "날짜", "집계"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 
 # Salesforce의 SOQL을 이용하여 일별 레코드 생성 수를 가져오는 방법

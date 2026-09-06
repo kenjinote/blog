@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Rust에서 소수 나열하기"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","소수","알고리즘"]
@@ -7,6 +10,9 @@ draft: false
 image: "images/img.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 Rust로 소수를 나열하는 프로그램을 작성해 보았습니다.
 

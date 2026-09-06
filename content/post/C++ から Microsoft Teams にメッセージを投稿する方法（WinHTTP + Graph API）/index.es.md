@@ -5,6 +5,8 @@
 
 
 
+
+
 title: "Cómo publicar mensajes en Microsoft Teams desde C++ (WinHTTP + Graph API)"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
@@ -12,6 +14,8 @@ draft: false
 image: "img.png"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
+
+
 
 
 

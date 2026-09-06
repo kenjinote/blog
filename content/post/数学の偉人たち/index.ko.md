@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "'수학의 위인들'"
 date: 2022-09-22T23:06:37+09:00
 tags: ["수학자"]
@@ -8,6 +11,9 @@ draft: false
 image: "img.png"
 categories: ["수학・암호・양자"]
 ---
+
+
+
 
 
 ### 페르마 (P. de Fermat, 1601-1665)

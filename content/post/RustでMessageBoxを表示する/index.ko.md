@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'Rust에서 MessageBox 표시하기'"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
@@ -7,6 +10,9 @@ draft: false
 image: "images/rust_logo.png"
 categories: ["프로그래밍"]
 ---
+
+
+
 
 
 다음 절차에 따라 Rust에서 MessageBox를 표시할 수 있습니다.

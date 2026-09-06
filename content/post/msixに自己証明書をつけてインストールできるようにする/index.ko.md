@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "'msix에 자체 서명 인증서를 추가하여 설치할 수 있게 만들기'"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "자체 서명 인증서", "설치"]
@@ -11,6 +14,9 @@ draft: false
 image: "img.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 
 

@@ -5,6 +5,8 @@
 
 
 
+
+
 title: "La historia de la pareja de ancianos y el burro"
 date: 2024-09-18T00:56:59+09:00
 tags: ["La historia de la pareja de ancianos y el burro", "Sátira"]
@@ -12,6 +14,8 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
+
 
 
 

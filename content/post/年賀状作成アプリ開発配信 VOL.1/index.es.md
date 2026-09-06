@@ -5,6 +5,8 @@
 
 
 
+
+
 title: "Transmisión de desarrollo de app de tarjetas de Año Nuevo VOL.1 (Guion)"
 date: 2025-08-31T20:24:49+09:00
 tags: ["Transmisión de desarrollo de app de tarjetas de Año Nuevo", "YouTube"]
@@ -12,6 +14,8 @@ draft: false
 image: "img.png"
 categories: ["Tecnología de la Información"]
 ---
+
+
 
 
 

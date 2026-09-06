@@ -4,6 +4,9 @@
 
 
 
+
+
+
 title: "Google One (Gemini) 해지가 안 될 때의 대처 방법"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "해지", "대처 방법"]
@@ -12,6 +15,9 @@ image: "img.png"
 description: 'Google One (Gemini) 무료 체험이 끝나면 청구된다? 해지 방법 정리'
 categories: ["프로그래밍"]
 ---
+
+
+
 
 
 

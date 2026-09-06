@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "'Cómo instalar el editor de texto CLI nano en Windows'"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "editor de texto"]
@@ -11,6 +13,8 @@ draft: false
 image: "img_1.png"
 categories: ["Herramientas/Entorno de desarrollo"]
 ---
+
+
 
 
 

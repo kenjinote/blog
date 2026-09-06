@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "'경영자 메모'"
 date: 2022-09-07T02:36:11+09:00
 tags: ["경영자"]
@@ -8,6 +11,9 @@ draft: false
 image: "images/img.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 
 # 유행하기 시작하는 사업 찾기

@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "현재 메인 PC 사양"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
@@ -8,6 +11,9 @@ draft: false
 image: "images/img.png"
 categories: ["PC・가젯"]
 ---
+
+
+
 
 
 메인 PC의 사양을 적어둡니다.

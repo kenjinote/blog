@@ -1,6 +1,8 @@
 ---
 
 
+
+
 title: "Notas de Gestión"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gerente"]
@@ -8,6 +10,8 @@ draft: false
 image: "images/img.png"
 categories: ["TI y Tecnología"]
 ---
+
+
 
 
 # Encontrar negocios que se estén popularizando

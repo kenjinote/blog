@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "'블로그, 시작해 보았습니다'"
 date: 2022-09-02T07:23:00+09:00
 tags: ["잡기"]
@@ -8,6 +11,9 @@ draft: false
 image: "images/komeda.jpeg"
 categories: ["블로그 운영"]
 ---
+
+
+
 
 
 

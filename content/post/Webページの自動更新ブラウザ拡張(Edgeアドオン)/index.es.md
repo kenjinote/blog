@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "Extensión de navegador de actualización automática de páginas web (Complemento de Edge)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Extensión de navegador", "Complemento de Edge", "Actualización automática"]
@@ -11,6 +13,8 @@ draft: false
 image: "img.png"
 categories: ["Gestión del blog"]
 ---
+
+
 
 
 

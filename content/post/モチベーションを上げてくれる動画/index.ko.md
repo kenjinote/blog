@@ -1,6 +1,9 @@
 ---
 
 
+
+
+
 title: "동기 부여를 해주는 동영상"
 date: 2022-09-08T02:22:52+09:00
 tags: ["동기 부여", "동영상"]
@@ -8,6 +11,9 @@ draft: false
 image: "images/img.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 
 

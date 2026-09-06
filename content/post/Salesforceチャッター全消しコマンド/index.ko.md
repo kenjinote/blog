@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "'Salesforce Chatter 전체 삭제 명령어'"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "채터"]
@@ -7,6 +10,9 @@ draft: false
 image: "img_1.png"
 categories: ["IT・테크놀로지"]
 ---
+
+
+
 
 # Salesforce Chatter 전체 삭제 명령어
 Salesforce의 Chatter에서 모든 게시글과 첨부 파일을 전체 삭제하는 명령어입니다.

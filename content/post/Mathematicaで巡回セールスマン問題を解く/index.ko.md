@@ -1,5 +1,8 @@
 ---
 
+
+
+
 title: "Mathematica로 순회 외판원 문제 풀기"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "순회 외판원 문제", "알고리즘", "수학"]
@@ -7,6 +10,9 @@ draft: false
 image: "img.png"
 categories: ["수학・암호・양자"]
 ---
+
+
+
 
 # Mathematica로 순회 외판원 문제 풀기
 

@@ -3,6 +3,9 @@
 
 
 
+
+
+
 title: "Vim 입문"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "텍스트 에디터"]
@@ -10,6 +13,9 @@ draft: false
 image: "img.png"
 categories: ["도구・개발 환경"]
 ---
+
+
+
 
 
 

@@ -4,6 +4,8 @@
 
 
 
+
+
 title: "Generar código QR con curl"
 date: 2024-04-16T00:42:27+09:00
 tags: ["Código QR", "curl", "Símbolo del sistema"]
@@ -11,6 +13,8 @@ draft: false
 image: "img.png"
 categories: ["TI y Tecnología"]
 ---
+
+
 
 
 
