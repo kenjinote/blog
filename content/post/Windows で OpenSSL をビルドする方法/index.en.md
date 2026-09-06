@@ -26,7 +26,7 @@ Below, we will introduce the build procedure.
   Download `2.16.01/nasm-2.16.01-win64.zip` from `Download` at [https://www.nasm.us/](https://www.nasm.us/). The latest non-rc version should be fine.
   After installation, you need to add the folder where NASM was installed to the environment variable PATH.
 
-- **Visual Studio 2022** or **Build Tools for Visual Studio 2022**
+- **Visual Studio 2022 ** or ** Build Tools for Visual Studio 2022**
 
   Install `Visual Studio 2022 Community` or `Build Tools for Visual Studio 2022` from [https://visualstudio.microsoft.com/ja/downloads/](https://visualstudio.microsoft.com/ja/downloads/).
   

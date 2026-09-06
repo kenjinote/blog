@@ -12,7 +12,7 @@ categories: ["ブログ運営"]
 SlackにC++からメッセージを投稿したい。
 Node.js や Python ではよくあるけど、「C++ × Win32 API × WinHTTP」でやるケースは少ないですよね。
 
-この記事では、**Webhook URLを使ってSlackにC++からメッセージを送信する方法**を、ステップ・バイ・ステップでわかりやすく解説します。
+この記事では、**Webhook URLを使ってSlackにC++からメッセージを送信する方法** を、ステップ・バイ・ステップでわかりやすく解説します。
 
 ---
 
@@ -36,8 +36,8 @@ Slackでは、Incoming Webhooksという機能を使って、簡単に外部サ�
 1. [https://api.slack.com/apps](https://api.slack.com/apps) にアクセス
 2. `Create New App` をクリック
 3. `From scratch` を選んでアプリ名と投稿先のワークスペースを選択
-4. 左メニューから「**Incoming Webhooks**」を選び、有効化
-5. 「**Add New Webhook to Workspace**」をクリックし、チャンネルを選択
+4. 左メニューから **「Incoming Webhooks」** を選び、有効化
+5. **「Add New Webhook to Workspace」** をクリックし、チャンネルを選択
 6. 発行されたURL（例: `https://hooks.slack.com/services/xxx/yyy/zzz`）をコピー
 
 このURLが、APIキーのように機能します。

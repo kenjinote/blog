@@ -27,7 +27,7 @@ categories: ["Herramientas y Entornos de Desarrollo"]
 
 Hola, soy kenji.
 
-Quiero compartir una noticia con ustedes. Este año, he sido galardonado nuevamente como **Microsoft MVP (Most Valuable Professional)**. Esta es la **novena vez** que recibo este premio.
+Quiero compartir una noticia con ustedes. Este año, he sido galardonado nuevamente como **Microsoft MVP (Most Valuable Professional)**. Esta es la ** novena vez** que recibo este premio.
 
 Muchas gracias a todos los que siempre me apoyan.
 

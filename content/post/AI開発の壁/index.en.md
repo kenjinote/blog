@@ -50,7 +50,7 @@ The reason is simple: "AI makes it look like it's done, but leaves the final adj
 * Rejected by Apple/Google review
 * (Almost) causes an uproar by violating legal requirements
 
-In other words, **AI is good at creating a prototype that looks like a finished product**, but **finishing it into a product that actually works in the real world is still a human's job today**.
+In other words, **AI is good at creating a prototype that looks like a finished product **, but ** finishing it into a product that actually works in the real world is still a human's job today**.
 
 ---
 

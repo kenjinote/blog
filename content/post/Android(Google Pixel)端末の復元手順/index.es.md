@@ -72,7 +72,7 @@ Haz clic en el botón "Conectar dispositivo" en el navegador; se abrirá una ven
 ### Paso 4: Descarga e instalación del software
 Una vez reconocido el dispositivo, se seleccionará automáticamente la versión más adecuada del sistema operativo Android (firmware). Al hacer clic en "Instalar", el software se descargará en el PC e inmediatamente comenzará a escribirse (flashearse) en el dispositivo.
 
-> ⚠️ **Advertencia:** Durante este proceso, **nunca desconectes el cable USB ni apagues el PC.**
+> ⚠️ **Advertencia:** Durante este proceso, ** nunca desconectes el cable USB ni apagues el PC.**
 
 ### Paso 5: Finalización y configuración inicial
 El proceso de restauración será un éxito cuando la barra de progreso alcance el 100% y aparezca el mensaje de "Completado". El dispositivo se reiniciará automáticamente y mostrará la pantalla de configuración inicial, como cuando lo compraste (la pantalla de "Hola").

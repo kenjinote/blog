@@ -27,7 +27,7 @@ categories: ["Herramientas y Entornos de Desarrollo"]
 
 ¿Quieres publicar mensajes automáticamente en el chat de Microsoft Teams?  
 Para eso puedes usar la **Microsoft Graph API**.  
-En este artículo, presentaremos un **ejemplo de código en C++ usando WinHTTP** y los **pasos de autenticación de la API necesarios**, paso a paso.
+En este artículo, presentaremos un **ejemplo de código en C++ usando WinHTTP ** y los ** pasos de autenticación de la API necesarios**, paso a paso.
 
 ---
 
@@ -37,13 +37,13 @@ En este artículo, presentaremos un **ejemplo de código en C++ usando WinHTTP**
 Primero, para usar la Microsoft Graph API, debes registrar una aplicación en Azure.
 
 1. Accede al [Azure Portal](https://portal.azure.com)
-2. Ve a "**Microsoft Entra ID**" > "**+ Agregar**" > "**Registros de aplicaciones**" > "**Nuevo registro**"
+2. Ve a "**Microsoft Entra ID **" > "**+ Agregar **" > "** Registros de aplicaciones **" > "** Nuevo registro**"
 3. Ingresa un nombre para la aplicación y haz clic en "Registrar"
 
 ### 2. Agregar permisos de API
 
 1. Ve al menú izquierdo "Permisos de API"
-2. En "**Microsoft Graph**" > "**Permisos delegados**" (o seleccionar permisos), busca los siguientes ámbitos (scopes) y haz clic en "**Actualizar permisos**" (o agregar permisos)
+2. En "**Microsoft Graph **" > "** Permisos delegados **" (o seleccionar permisos), busca los siguientes ámbitos (scopes) y haz clic en "** Actualizar permisos**" (o agregar permisos)
 
 - Chat.ReadWrite
 - User.Read

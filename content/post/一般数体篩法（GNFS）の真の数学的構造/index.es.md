@@ -55,7 +55,7 @@ Un homomorfismo es la propiedad de **"transportarse a otro mundo sin destruir la
 *   $\phi(X \times Y) = \phi(X) \times \phi(Y)$
 *   $\phi(X^2) = \phi(X)^2$
 
-Qué significa esto. Si podemos crear un **"cuadrado ($\gamma^2$)"** de algún elemento complejo $\gamma$ en el "Mundo A (el mundo de $\alpha$)", al transportarlo al "Mundo B (el mundo de los restos)" con $\phi$, **la forma del cuadrado $\phi(\gamma)^2$ se conservará perfectamente**.
+Qué significa esto. Si podemos crear un **"cuadrado ($\gamma^2$)"** de algún elemento complejo $\gamma$ en el "Mundo A (el mundo de $\alpha$)", al transportarlo al "Mundo B (el mundo de los restos)" con $\phi$, ** la forma del cuadrado $\phi(\gamma)^2$ se conservará perfectamente**.
 
 ---
 

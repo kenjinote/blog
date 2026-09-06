@@ -11,7 +11,7 @@ categories: ["工具·开发环境"]
 
 想自动向 Microsoft Teams 聊天发送消息吗？  
 这时候就可以使用 **Microsoft Graph API**。  
-本文将逐步介绍**使用 WinHTTP 的 C++ 代码示例**以及**所需的 API 认证步骤**。
+本文将逐步介绍 **使用 WinHTTP 的 C++ 代码示例 ** 以及 ** 所需的 API 认证步骤**。
 
 ---
 
@@ -21,13 +21,13 @@ categories: ["工具·开发环境"]
 首先，要使用 Microsoft Graph API，需要在 Azure 中注册一个应用。
 
 1. 访问 [Azure Portal](https://portal.azure.com)
-2. 选择「**Microsoft Entra ID**」 > 「**＋添加**」 > 「**应用注册**」 > 「**新注册**」
+2. 选择 **「Microsoft Entra ID」** > **「＋添加」** > **「应用注册」** > **「新注册」**
 3. 输入任意应用名称并点击「注册」
 
 ### 2. 添加 API 权限
 
 1. 进入左侧菜单「API 权限」
-2. 在「**Microsoft Graph**」 > 「**选择权限**」中搜索以下作用域并点击「**更新权限**」
+2. 在 **「Microsoft Graph」** > **「选择权限」** 中搜索以下作用域并点击 **「更新权限」**
 
 - Chat.ReadWrite
 - User.Read
@@ -45,7 +45,7 @@ categories: ["工具·开发环境"]
 
 1. 进入「证书和密码」选项卡
 2. 选择「新客户端密码」 > 设置过期时间，然后点击「添加」
-3. **务必当场记录**显示的值（密码）
+3. **务必当场记录** 显示的值（密码）
 
 ---
 

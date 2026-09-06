@@ -12,7 +12,7 @@ categories: ["工具与开发环境"]
 这次我荣获了Microsoft MVP (2023-2024)。
 这是我自2017年以来连续第7年获奖。
 
-获奖类别是**Developer Technologies**。
+获奖类别是 **Developer Technologies**。
 
 回顾我过去的活动，我进行了以下活动：
 

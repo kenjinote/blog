@@ -9,9 +9,9 @@ categories: ["ツール・開発環境"]
 
 # 🎯 C++から`Microsoft.Windows.AI`を呼び出す方法【サンプルコード付き】
 
-Windows 10以降、Windowsには標準で**ONNX形式のAIモデルを実行できるランタイム**が搭載されています。それが **Windows ML (Windows.AI.MachineLearning)** です。
+Windows 10以降、Windowsには標準で **ONNX形式のAIモデルを実行できるランタイム ** が搭載されています。それが ** Windows ML (Windows.AI.MachineLearning)** です。
 
-この記事では、**C++（Win32アプリベース）** から `Microsoft.Windows.AI.MachineLearning` を呼び出す方法を、**サンプルコード付きで具体的に解説**します。
+この記事では、**C++（Win32アプリベース）** から `Microsoft.Windows.AI.MachineLearning` を呼び出す方法を、** サンプルコード付きで具体的に解説** します。
 
 ---
 
@@ -93,7 +93,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
 
 ## ✅ 補足：入力・出力Tensorの指定方法
 
-モデルによっては、推論前に **Tensor の作成とバインド**が必要です。
+モデルによっては、推論前に **Tensor の作成とバインド** が必要です。
 
 例：
 

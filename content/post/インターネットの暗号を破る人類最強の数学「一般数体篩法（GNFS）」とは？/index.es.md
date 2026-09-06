@@ -58,7 +58,7 @@ Al factorizar $X^2 - Y^2$, se convierte en **$(X - Y)(X + Y)$**.
 El hecho de que esto sea un múltiplo de $N$ significa que en algún lugar de esta multiplicación están escondidos los números primos secretos $p$ y $q$.
 
 Aquí ocurre un milagro.
-La probabilidad de que los dos números primos $p$ y $q$ se separen en habitaciones diferentes, **"$p$ va a la habitación de $(X - Y)$" y "$q$ va a la habitación de $(X + Y)$"**, es matemáticamente del **50% (un medio)**.
+La probabilidad de que los dos números primos $p$ y $q$ se separen en habitaciones diferentes, **"$p$ va a la habitación de $(X - Y)$" y "$q$ va a la habitación de $(X + Y)$"**, es matemáticamente del ** 50% (un medio)**.
 
 Con solo el número primo $p$ entrando en la habitación de $(X - Y)$, calculemos el **"máximo común divisor (la pieza común más grande)"** de $(X - Y)$ y $N$.
 * Contenido de $(X - Y)$ = $p \times$ algún número

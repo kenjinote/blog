@@ -130,6 +130,6 @@ target_link_libraries(MyApp PRIVATE Qt6::Widgets)
 ## 最后
 
 今后，我打算在这个环境中推进使用 Qt UI 工具和 QML 的开发。
-下次，我计划讲解**如何从 VSCode 构建和运行 Qt 的 Hello World 应用程序**。
+下次，我计划讲解 **如何从 VSCode 构建和运行 Qt 的 Hello World 应用程序**。
 
 再见！

@@ -34,7 +34,7 @@ categories: ["프로그래밍"]
   [https://www.nasm.us/](https://www.nasm.us/)의 `Download`에서 `2.16.01/nasm-2.16.01-win64.zip`을 다운로드합니다. 버전은 rc가 아닌 최신 버전이어도 무방합니다.
   설치 후에는 NASM이 설치된 폴더를 환경 변수 PATH에 등록해야 합니다.
 
-- **Visual Studio 2022** 또는 **Build Tools for Visual Studio 2022**
+- **Visual Studio 2022 ** 또는 ** Build Tools for Visual Studio 2022**
 
   [https://visualstudio.microsoft.com/ja/downloads/](https://visualstudio.microsoft.com/ja/downloads/)에서 `Visual Studio 2022 Community` 또는 `Build Tools for Visual Studio 2022`를 설치합니다.
   

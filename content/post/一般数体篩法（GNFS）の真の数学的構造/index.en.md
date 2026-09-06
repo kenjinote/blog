@@ -39,7 +39,7 @@ A homomorphism is the property of **"warping to another world without breaking t
 *   $\phi(X \times Y) = \phi(X) \times \phi(Y)$
 *   $\phi(X^2) = \phi(X)^2$
 
-What does this mean? If we can create a **"square ($\gamma^2$)"** of some complex element $\gamma$ in "World A (the world of $\alpha$)", warping it to "World B (the modulo world)" via $\phi$ will **perfectly preserve the square form $\phi(\gamma)^2$**.
+What does this mean? If we can create a **"square ($\gamma^2$)"** of some complex element $\gamma$ in "World A (the world of $\alpha$)", warping it to "World B (the modulo world)" via $\phi$ will ** perfectly preserve the square form $\phi(\gamma)^2$**.
 
 ---
 

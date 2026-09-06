@@ -11,7 +11,7 @@ categories: ["Programming"]
 
 Office files like Excel automatically save "metadata (personal information)" such as the author, last modifier, and company name. There are many cases where you want to delete this information, such as when sharing files outside the company.
 
-In this article, we will explain in detail how to delete Excel metadata using PowerShell, focusing on **batch processing within a folder** and **applying it to other Office files like Word and PowerPoint**.
+In this article, we will explain in detail how to delete Excel metadata using PowerShell, focusing on **batch processing within a folder ** and ** applying it to other Office files like Word and PowerPoint**.
 
 ---
 
@@ -41,7 +41,7 @@ $excel.Quit()
 [System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
 ```
 
-> **Note:** Be sure to specify an **absolute path (full path)** for the path passed to `Workbooks.Open()`. Using a relative path may cause an error.
+> **Note:** Be sure to specify an ** absolute path (full path)** for the path passed to `Workbooks.Open()`. Using a relative path may cause an error.
 
 ---
 

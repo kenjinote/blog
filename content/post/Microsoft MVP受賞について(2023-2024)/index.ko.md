@@ -20,7 +20,7 @@ categories: ["도구 및 개발 환경"]
 이번에 Microsoft MVP(2023-2024)를 수상하게 되었습니다.
 2017년부터 7년 연속 수상입니다.
 
-수상한 카테고리는 **Developer Technologies**입니다.
+수상한 카테고리는 **Developer Technologies** 입니다.
 
 지금까지의 활동을 돌아보면 다음과 같은 활동을 해왔습니다.
 

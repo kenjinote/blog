@@ -11,7 +11,7 @@ categories: ["Tools & Development Environment"]
 
 I want to automatically post to a Microsoft Teams chat --  
 **Microsoft Graph API** is exactly what you can use in such cases.  
-In this article, I will introduce a **C++ code example using WinHTTP** and the **necessary API authentication steps** step by step.
+In this article, I will introduce a **C++ code example using WinHTTP ** and the ** necessary API authentication steps** step by step.
 
 ---
 
@@ -21,13 +21,13 @@ In this article, I will introduce a **C++ code example using WinHTTP** and the *
 First, to use the Microsoft Graph API, you need to register an app in Azure.
 
 1. Access the [Azure Portal](https://portal.azure.com)
-2. "**Microsoft Entra ID**" > "**+ Add**" > "**App registrations**" > "**New registration**"
+2. "**Microsoft Entra ID **" > "**+ Add **" > "** App registrations **" > "** New registration**"
 3. Enter any app name and click "Register"
 
 ### 2. Add API Permissions
 
 1. Go to the "API permissions" left menu
-2. Under "**Microsoft Graph**" > "**Add a permission**", search for the following scopes and click "**Update permissions**"
+2. Under "**Microsoft Graph **" > "** Add a permission **", search for the following scopes and click "** Update permissions**"
 
 - Chat.ReadWrite
 - User.Read
@@ -45,7 +45,7 @@ Make a note of the following two items displayed on the "Overview" tab:
 
 1. Go to the "Certificates & secrets" tab
 2. "New client secret" > set the expiration date, and click "Add"
-3. **Be sure to note** the displayed value (secret) **on the spot**
+3. **Be sure to note ** the displayed value (secret) ** on the spot**
 
 ---
 

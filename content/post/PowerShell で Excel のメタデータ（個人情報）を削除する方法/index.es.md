@@ -27,7 +27,7 @@ categories: ["Programación"]
 
 Los archivos de Office como Excel guardan automáticamente "metadatos (información personal)" como el autor, la persona que lo modificó por última vez, el nombre de la empresa, etc. Hay muchos casos en los que se desea eliminar esta información, como al compartir archivos fuera de la empresa.
 
-En este artículo, explicaremos en detalle cómo eliminar metadatos de Excel usando PowerShell, enfocándonos en el **procesamiento por lotes en una carpeta** y su **aplicación a otros archivos de Office como Word y PowerPoint**.
+En este artículo, explicaremos en detalle cómo eliminar metadatos de Excel usando PowerShell, enfocándonos en el **procesamiento por lotes en una carpeta ** y su ** aplicación a otros archivos de Office como Word y PowerPoint**.
 
 ---
 
@@ -57,7 +57,7 @@ $excel.Quit()
 [System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
 ```
 
-> **Nota:** La ruta que se pasa a `Workbooks.Open()` debe ser siempre una **ruta absoluta (ruta completa)**. El uso de rutas relativas puede causar errores.
+> **Nota:** La ruta que se pasa a `Workbooks.Open()` debe ser siempre una ** ruta absoluta (ruta completa)**. El uso de rutas relativas puede causar errores.
 
 ---
 

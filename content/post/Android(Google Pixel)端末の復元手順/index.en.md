@@ -56,7 +56,7 @@ Click the "Connect your phone" button on the browser, and a pop-up will open lis
 ### Step 4: Download and Install Software
 Once the device is recognized, the optimal version of the Android OS (firmware) will automatically be selected. When you click "Install", the software will be downloaded to your PC, and it will begin writing (flashing) to the device.
 
-> ⚠️ **Warning:** During this process, **absolutely do not unplug the USB cable or turn off the PC.**
+> ⚠️ **Warning:** During this process, ** absolutely do not unplug the USB cable or turn off the PC.**
 
 ### Step 5: Completion and Initial Setup
 The restoration is successful when the progress bar reaches 100% and a completion message is displayed. The device will automatically restart and display the same initial setup screen ("Hello" screen) as when it was purchased.

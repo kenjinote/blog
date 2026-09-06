@@ -47,7 +47,7 @@ One of the pillars of the logic supporting "Japanese First" is the image that "J
 
 ### 1. Labor Force: The "Indispensable Blood" Maintaining the Japanese Economy
 
-According to the Ministry of Health, Labour and Welfare's "Foreigner Employment Situation (as of the end of October 2024)", the number of foreign workers was **2,048,675**. Current estimates in 2026 show it has already surpassed **2.3 million**.
+According to the Ministry of Health, Labour and Welfare's "Foreigner Employment Situation (as of the end of October 2024)", the number of foreign workers was **2,048,675 **. Current estimates in 2026 show it has already surpassed ** 2.3 million**.
 
 | Industrial Sector | Ratio/Increase Rate of Foreign Workers | Reality and Role |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ Comparing the number of arrested persons per 100,000 population (crime rate) rev
 | Category | Arrested Persons per 100,000 Population (Estimate) |
 | --- | --- |
 | **Japanese (All Ages)** | Approx. 142.7 people |
-| **Foreign Residents (Settled/Residents)** | **Approx. 120.0 people** |
+| **Foreign Residents (Settled/Residents)** | ** Approx. 120.0 people** |
 
 It is a statistical fact that the **crime rate of foreigners residing in Japan in the medium to long term is lower than the overall average for Japanese**.
 

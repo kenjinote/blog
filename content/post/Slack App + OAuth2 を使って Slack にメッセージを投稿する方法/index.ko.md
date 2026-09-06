@@ -26,13 +26,13 @@ categories: ["블로그 운영"]
 ## ✅ 액세스 토큰을 사용하는 게시 방법 (Slack Web API)
 
 Slack의 "OAuth Token(xoxb-~ 등)"은 Slack의 [Web API](https://api.slack.com/methods/chat.postMessage)를 사용하여 게시하기 위한 키입니다.
-이 경우 Webhook과는 달리 **Slack API 엔드포인트**에 `Authorization: Bearer` 헤더와 함께 `POST`합니다.
+이 경우 Webhook과는 달리 **Slack API 엔드포인트** 에 `Authorization: Bearer` 헤더와 함께 `POST`합니다.
 
 ---
 
 ## 🔑 필요한 전제 조건
 
-Slack 앱에서 **OAuth 범위(scope)에 `chat:write`**를 포함해야 합니다:
+Slack 앱에서 **OAuth 범위(scope)에 `chat:write`** 를 포함해야 합니다:
 
 ### 설정 절차
 
@@ -150,4 +150,4 @@ https://app.slack.com/client/Txxxxx/C0123456789
 * C++에서 Slack에 게시하려면 Slack Web API + Bearer Token 방식이 확실함
 * `chat.postMessage` 엔드포인트를 HTTPS POST로 사용
 * 토큰은 Bearer 헤더로 전송할 것
-* 채널은 **ID 지정**이 확실함
+* 채널은 **ID 지정** 이 확실함

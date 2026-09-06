@@ -104,7 +104,7 @@ String^ PowerShellWrapper::PowerShellExecutor::Execute(String^ script)
 ### 2. 참조 설정
 
 - 프로젝트 우클릭 → [참조 추가] → [프로젝트] → `PowerShellWrapper` 추가
-- [구성 속성] → [C/C++] → [공용 언어 런타임 지원] → **/clr**로 변경
+- [구성 속성] → [C/C++] → [공용 언어 런타임 지원] → **/clr** 로 변경
 
 ---
 

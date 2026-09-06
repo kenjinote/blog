@@ -25,9 +25,9 @@ categories: ["도구 및 개발 환경"]
 
 # 🎯 C++에서 `Microsoft.Windows.AI`를 호출하는 방법【샘플 코드 포함】
 
-Windows 10 이후, Windows에는 기본적으로 **ONNX 형식의 AI 모델을 실행할 수 있는 런타임**이 탑재되어 있습니다. 그것이 바로 **Windows ML (Windows.AI.MachineLearning)** 입니다.
+Windows 10 이후, Windows에는 기본적으로 **ONNX 형식의 AI 모델을 실행할 수 있는 런타임 ** 이 탑재되어 있습니다. 그것이 바로 ** Windows ML (Windows.AI.MachineLearning)** 입니다.
 
-이 글에서는 **C++(Win32 앱 기반)** 에서 `Microsoft.Windows.AI.MachineLearning`을 호출하는 방법을 **샘플 코드와 함께 구체적으로 설명**합니다.
+이 글에서는 **C++(Win32 앱 기반)** 에서 `Microsoft.Windows.AI.MachineLearning`을 호출하는 방법을 ** 샘플 코드와 함께 구체적으로 설명** 합니다.
 
 ---
 
@@ -109,7 +109,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
 
 ## ✅ 보충: 입력 및 출력 Tensor 지정 방법
 
-모델에 따라 추론 전에 **Tensor의 생성 및 바인딩**이 필요할 수 있습니다.
+모델에 따라 추론 전에 **Tensor의 생성 및 바인딩** 이 필요할 수 있습니다.
 
 예:
 

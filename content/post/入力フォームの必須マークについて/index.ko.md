@@ -64,7 +64,7 @@ categories: ["블로그 운영"]
 
 ## ✅ 구현 시 추천 어프로치
 
-* **폼 앞부분**에 설명문 추가：
+* **폼 앞부분** 에 설명문 추가：
 
   > Fields marked with \* are required.
   > (또는 일괄적으로 "All fields are required", 선택 항목이 있는 경우는 "unless marked optional")

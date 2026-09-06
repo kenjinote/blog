@@ -27,7 +27,7 @@ categories: ["Matemáticas/Criptografía/Cuántica"]
 
 El cifrado "RSA" es la base que sostiene la Internet moderna. Su robustez depende de la creencia matemática de que "factorizar un número compuesto gigante en números primos es virtualmente imposible con las computadoras actuales".
 
-Sin embargo, la humanidad nunca se rinde. Actualmente, existe el **algoritmo más fuerte y avanzado de la humanidad** para realizar factorizaciones gigantescas en computadoras clásicas (computadoras normales, no cuánticas). Este es el **"General Number Field Sieve (GNFS) o Criba General del Cuerpo de Números"**.
+Sin embargo, la humanidad nunca se rinde. Actualmente, existe el **algoritmo más fuerte y avanzado de la humanidad ** para realizar factorizaciones gigantescas en computadoras clásicas (computadoras normales, no cuánticas). Este es el **"General Number Field Sieve (GNFS) o Criba General del Cuerpo de Números"**.
 
 En este artículo, publicaremos todo el código de implementación que modela estrictamente la lógica computacional más avanzada de GNFS en C++ (usando enteros de precisión múltiple `boost::multiprecision` de la biblioteca Boost), y explicaremos a fondo los abismos de la "teoría algebraica de números" detrás de él.
 

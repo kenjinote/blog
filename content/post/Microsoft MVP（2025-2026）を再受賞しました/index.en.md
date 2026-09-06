@@ -11,7 +11,7 @@ categories: ["Tools & Development Environments"]
 
 Hello, I'm kenji.
 
-I have an announcement. I was awarded the **Microsoft MVP (Most Valuable Professional)** again this year. This is my **9th time** receiving the award.
+I have an announcement. I was awarded the **Microsoft MVP (Most Valuable Professional)** again this year. This is my ** 9th time** receiving the award.
 
 Thank you so much to everyone who always supports me.
 

@@ -83,7 +83,7 @@ python3 convert.py ./hf_model --outfile tinyllama.gguf
 ./quantize ./tinyllama.gguf ./tinyllama-q4.gguf q4_0
 ```
 
-> `q4_0`은 4bit 양자화입니다. 모델 크기가 약 **350MB 내외**로 작아집니다.
+> `q4_0`은 4bit 양자화입니다. 모델 크기가 약 **350MB 내외** 로 작아집니다.
 
 ---
 

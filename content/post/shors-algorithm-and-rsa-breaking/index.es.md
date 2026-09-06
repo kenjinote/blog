@@ -167,7 +167,7 @@ Entonces, para descifrar realmente RSA-2048, ¿cuántos recursos se necesitan pa
 En una estimación de recursos revolucionaria realizada en un artículo de 2021 por Craig Gidney (Google) y Martin Ekerå, utilizando un algoritmo de Shor optimizado y realizando la corrección de errores con código de superficie, se requerirían los siguientes recursos:
 
 * **Número de cúbits lógicos** : Aproximadamente 4,096
-* **Número de cúbits físicos** : **Aproximadamente 20 millones** (asumiendo una tasa de error de alrededor de $10^{-3}$)
+* **Número de cúbits físicos ** : ** Aproximadamente 20 millones** (asumiendo una tasa de error de alrededor de $10^{-3}$)
 * **Tiempo de cálculo** : Aproximadamente 8 horas (se requieren de millones a miles de millones de operaciones de puertas físicas)
 
 Por el contrario, ¿cuál es el nivel alcanzado por el hardware cuántico actual?

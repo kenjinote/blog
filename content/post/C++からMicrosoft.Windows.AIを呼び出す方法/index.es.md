@@ -25,9 +25,9 @@ categories: ["Herramientas y Entornos de Desarrollo"]
 
 # 🎯 Cómo llamar a `Microsoft.Windows.AI` desde C++ 【Con código de ejemplo】
 
-A partir de Windows 10, Windows incluye de forma estándar un **runtime capaz de ejecutar modelos de IA en formato ONNX**. Este es **Windows ML (Windows.AI.MachineLearning)**.
+A partir de Windows 10, Windows incluye de forma estándar un **runtime capaz de ejecutar modelos de IA en formato ONNX **. Este es ** Windows ML (Windows.AI.MachineLearning)**.
 
-En este artículo, **explicaremos detalladamente con código de ejemplo** cómo llamar a `Microsoft.Windows.AI.MachineLearning` desde **C++ (basado en aplicaciones Win32)**.
+En este artículo, **explicaremos detalladamente con código de ejemplo ** cómo llamar a `Microsoft.Windows.AI.MachineLearning` desde ** C++ (basado en aplicaciones Win32)**.
 
 ---
 

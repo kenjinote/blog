@@ -9,9 +9,9 @@ categories: ["Tools & Development Environment"]
 
 # 🎯 How to call `Microsoft.Windows.AI` from C++ [With Sample Code]
 
-Since Windows 10, Windows has been equipped with a built-in **runtime capable of executing ONNX format AI models**. This is **Windows ML (Windows.AI.MachineLearning)**.
+Since Windows 10, Windows has been equipped with a built-in **runtime capable of executing ONNX format AI models **. This is ** Windows ML (Windows.AI.MachineLearning)**.
 
-In this article, we will specifically explain **how to call `Microsoft.Windows.AI.MachineLearning` from C++ (Win32 app based)**, along with **sample code**.
+In this article, we will specifically explain **how to call `Microsoft.Windows.AI.MachineLearning` from C++ (Win32 app based)**, along with ** sample code**.
 
 ---
 

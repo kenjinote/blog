@@ -79,7 +79,7 @@ An excellent "quantum algorithm" masterfully manipulates quantum states during t
 
 ## Chapter 3: How Do They Compute? "Quantum Gates" and "Quantum Circuits"
 
-Just as classical computers use logic gates (AND, OR, NOT, etc.) to perform calculations, quantum computers apply operations called **"Quantum Gates"** to qubits to advance calculations. A combination of multiple quantum gates is called a **Quantum Circuit**.
+Just as classical computers use logic gates (AND, OR, NOT, etc.) to perform calculations, quantum computers apply operations called **"Quantum Gates"** to qubits to advance calculations. A combination of multiple quantum gates is called a ** Quantum Circuit**.
 
 The state of a qubit is mathematically represented as a point on the surface of a 3-dimensional sphere called a "Bloch sphere." The North Pole is "0", the South Pole is "1", and the equator represents a state where "0 and 1 are equally superimposed." A quantum gate is nothing more than an operation that rotates the state (vector) on the surface of this sphere.
 
@@ -155,7 +155,7 @@ Finally, let's take a bird's-eye view of how quantum computers were born and whe
 - **1980s**: Physicists Paul Benioff and Richard Feynman proposed the concept of a computer using the principles of quantum mechanics. The phrase "If you want to make a simulation of nature, you'd better make it quantum mechanical" was the starting point.
 - **1994**: Peter Shor published a quantum algorithm for prime factorization (Shor's algorithm). It shocked the world and triggered a massive influx of research funding.
 - **1996**: Lov Grover published Grover's algorithm to speed up data search.
-- **2019**: A historical milestone. Google announced that using its 53-qubit superconducting processor "Sycamore," it completed a random number generation verification calculation in about 200 seconds that would have taken a classical supercomputer 10,000 years (so they claimed). This caused a sensation as the world's first declaration of demonstrating **"Quantum Supremacy"** (although IBM and others later improved the classical supercomputer algorithm and argued it could be calculated in a few days, leading to heated debates).
+- **2019 **: A historical milestone. Google announced that using its 53-qubit superconducting processor "Sycamore," it completed a random number generation verification calculation in about 200 seconds that would have taken a classical supercomputer 10,000 years (so they claimed). This caused a sensation as the world's first declaration of demonstrating **"Quantum Supremacy"** (although IBM and others later improved the classical supercomputer algorithm and argued it could be calculated in a few days, leading to heated debates).
 - **From 2023 onwards**: IBM announced the processor "Condor" with over 1,000 qubits. Furthermore, early demonstrations of error correction technology are being reported one after another, such as Harvard University's success in creating and manipulating "logical qubits."
 
 ### Towards the Technology of the Next Generation

@@ -48,7 +48,7 @@ categories: ["博客运营"]
 
 ## ✅ 开发实现建议方案
 
-* **表单开头**添加说明文：
+* **表单开头** 添加说明文：
 
   > Fields marked with \* are required.
   > （或者统一写 "All fields are required"，有选填项时写 "unless marked optional"）

@@ -51,7 +51,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 #### 출처가 없는 인용구
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> 인용구 내에서 _마크다운 구문_을 사용할 수 있다는 점을 **참고**하세요.
+> 인용구 내에서 _마크다운 구문_을 사용할 수 있다는 점을 **참고** 하세요.
 
 #### 출처가 있는 인용구
 

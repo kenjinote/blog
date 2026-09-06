@@ -26,7 +26,7 @@ categories: ["编程"]
   从 [https://www.nasm.us/](https://www.nasm.us/) 的 `Download` 下载 `2.16.01/nasm-2.16.01-win64.zip`。我认为除了 rc 版本外的最新版本就可以了。
   安装后，需要将 NASM 安装的文件夹注册到环境变量 PATH 中。
 
-- **Visual Studio 2022** 或 **Build Tools for Visual Studio 2022**
+- **Visual Studio 2022 ** 或 ** Build Tools for Visual Studio 2022**
 
   从 [https://visualstudio.microsoft.com/ja/downloads/](https://visualstudio.microsoft.com/ja/downloads/) 安装 `Visual Studio 2022 Community` 或 `Build Tools for Visual Studio 2022`。
   

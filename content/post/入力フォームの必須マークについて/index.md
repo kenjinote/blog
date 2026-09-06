@@ -48,7 +48,7 @@ categories: ["ブログ運営"]
 
 ## ✅ 実装上のおすすめアプローチ
 
-* **フォーム冒頭**に説明文を追加：
+* **フォーム冒頭** に説明文を追加：
 
   > Fields marked with \* are required.
   > （または一括で "All fields are required"、任意がある場合は "unless marked optional"）

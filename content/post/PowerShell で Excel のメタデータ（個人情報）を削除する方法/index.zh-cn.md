@@ -11,7 +11,7 @@ categories: ["编程"]
 
 Excel 等 Office 文件会自动保存作者、最后修改者、公司名称等“元数据（个人信息）”。在与公司外部共享文件时，往往会有删除这些信息的需求。
 
-本文将重点介绍如何使用 PowerShell 删除 Excel 的元数据，并详细讲解**对文件夹内文件进行批量处理**，以及**应用于 Word、PowerPoint 等其他 Office 文件**的方法。
+本文将重点介绍如何使用 PowerShell 删除 Excel 的元数据，并详细讲解 **对文件夹内文件进行批量处理 **，以及 ** 应用于 Word、PowerPoint 等其他 Office 文件** 的方法。
 
 ---
 
@@ -41,7 +41,7 @@ $excel.Quit()
 [System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
 ```
 
-> **注意：**传递给 `Workbooks.Open()` 的路径必须指定为**绝对路径 (完整路径)**。如果使用相对路径，可能会出现错误。
+> **注意：** 传递给 `Workbooks.Open()` 的路径必须指定为 ** 绝对路径 (完整路径)**。如果使用相对路径，可能会出现错误。
 
 ---
 

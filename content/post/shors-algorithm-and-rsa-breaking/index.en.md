@@ -149,7 +149,7 @@ So, how many resources are actually needed to run Shor's algorithm to decrypt RS
 According to a groundbreaking resource estimation in a 2021 paper by Craig Gidney (Google) and Martin Ekerå, if an optimized Shor's algorithm is used and error correction by surface codes is performed, the following resources will be required:
 
 * **Number of logical qubits**: Approx. 4,096
-* **Number of physical qubits**: **Approx. 20 million** (Assuming an error rate of about $10^{-3}$)
+* **Number of physical qubits **: ** Approx. 20 million** (Assuming an error rate of about $10^{-3}$)
 * **Computation time**: Approx. 8 hours (Millions to billions of physical gate operations required)
 
 In contrast, what is the current state of quantum hardware?

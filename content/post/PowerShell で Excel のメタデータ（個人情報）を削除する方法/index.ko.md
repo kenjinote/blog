@@ -27,7 +27,7 @@ categories: ["프로그래밍"]
 
 Excel 등의 Office 파일에는 작성자, 최종 수정자, 회사명 등의 '메타데이터(개인 정보)'가 자동으로 저장됩니다. 사외에 파일을 공유할 때 등, 이러한 정보를 삭제하고 싶은 경우가 많습니다.
 
-이 글에서는 PowerShell을 사용하여 Excel의 메타데이터를 삭제하는 방법을 중심으로, **폴더 내 일괄 처리**나, **Word・PowerPoint 등 다른 Office 파일에 대한 응용**까지 자세히 해설합니다.
+이 글에서는 PowerShell을 사용하여 Excel의 메타데이터를 삭제하는 방법을 중심으로, **폴더 내 일괄 처리 ** 나, ** Word・PowerPoint 등 다른 Office 파일에 대한 응용** 까지 자세히 해설합니다.
 
 ---
 
@@ -57,7 +57,7 @@ $excel.Quit()
 [System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
 ```
 
-> **주의점:** `Workbooks.Open()`에 전달하는 경로는 반드시 **절대 경로(전체 경로)**를 지정해 주세요. 상대 경로일 경우 오류가 발생할 수 있습니다.
+> **주의점:** `Workbooks.Open()`에 전달하는 경로는 반드시 ** 절대 경로(전체 경로)** 를 지정해 주세요. 상대 경로일 경우 오류가 발생할 수 있습니다.
 
 ---
 

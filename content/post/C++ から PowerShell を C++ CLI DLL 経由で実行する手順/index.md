@@ -114,7 +114,7 @@ int main()
 
 ## 💡 補足（IDL / TLB / COM 登録）
 
-- この構成は COM ではなく .NET DLL を直接参照する方式のため、**IDL や TLB、COM 登録は不要**です。
+- この構成は COM ではなく .NET DLL を直接参照する方式のため、**IDL や TLB、COM 登録は不要** です。
 
 ---
 

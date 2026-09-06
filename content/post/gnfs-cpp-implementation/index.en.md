@@ -11,7 +11,7 @@ categories: ["Math/Cryptography/Quantum"]
 
 The "RSA cryptography" fundamentally supports the modern Internet. Its robustness relies on the mathematical belief that "factoring huge composite numbers is practically impossible with current computers."
 
-However, humanity has never given up. Currently, for classical computers (regular computers, not quantum computers), there exists the **strongest and most advanced algorithm of humanity** for performing giant prime factorizations. That is the **"General Number Field Sieve (GNFS)"**.
+However, humanity has never given up. Currently, for classical computers (regular computers, not quantum computers), there exists the **strongest and most advanced algorithm of humanity ** for performing giant prime factorizations. That is the **"General Number Field Sieve (GNFS)"**.
 
 In this article, we will strictly model the state-of-the-art computational logic of GNFS in C++ (using the multiple-precision integer `boost::multiprecision` from the Boost library), publish the entire implementation code, and thoroughly explain the depths of "algebraic number theory" behind it.
 

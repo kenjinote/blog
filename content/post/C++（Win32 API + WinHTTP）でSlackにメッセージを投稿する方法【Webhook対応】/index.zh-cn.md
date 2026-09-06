@@ -12,7 +12,7 @@ categories: ["博客运营"]
 想从 C++ 向 Slack 发布消息。
 在 Node.js 或 Python 中很常见，但是使用「C++ × Win32 API × WinHTTP」的情况却很少见，对吧？
 
-在本文中，我将**通过分步图文并茂的方式，简单易懂地讲解如何使用 Webhook URL 从 C++ 向 Slack 发送消息**。
+在本文中，我将 **通过分步图文并茂的方式，简单易懂地讲解如何使用 Webhook URL 从 C++ 向 Slack 发送消息**。
 
 ---
 

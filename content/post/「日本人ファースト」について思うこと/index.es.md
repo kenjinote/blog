@@ -63,7 +63,7 @@ Uno de los pilares de la lógica de quienes apoyan "Primero los Japoneses" es la
 
 ### 1. Fuerza laboral: La "sangre indispensable" que mantiene la economía japonesa
 
-Según la "Situación del Empleo de Extranjeros (a finales de octubre de 2024)" del Ministerio de Salud, Trabajo y Bienestar, el número de trabajadores extranjeros era de **2.048.675 personas**. En las estimaciones actuales de 2026, ya ha superado los **2.3 millones**.
+Según la "Situación del Empleo de Extranjeros (a finales de octubre de 2024)" del Ministerio de Salud, Trabajo y Bienestar, el número de trabajadores extranjeros era de **2.048.675 personas **. En las estimaciones actuales de 2026, ya ha superado los ** 2.3 millones**.
 
 | Sector industrial | Porcentaje / Tasa de aumento de trabajadores extranjeros | Realidad y rol |
 | --- | --- | --- |
@@ -77,7 +77,7 @@ Actualmente, no se trata de trabajos que los japoneses quieran hacer y no puedan
 
 Lo que más se difunde en las redes sociales es el discurso de que "los extranjeros reciben asistencia pública de forma preferencial". Sin embargo, al revisar las estadísticas del Ministerio de Salud, Trabajo y Bienestar, la proporción de hogares encabezados por extranjeros entre todos los hogares receptores es de **aproximadamente 2.8% a 2.9%**. Esta cifra se ha mantenido casi estable durante los últimos 10 años.
 
-Por el contrario, al observar la composición por edad de los extranjeros residentes, la mayoría pertenece a la **generación activa de entre 20 y 40 años**. Ellos pagan la pensión de bienestar social y las primas del seguro de salud, asumiendo el rol de **"aportantes" que sostienen las pensiones y los gastos médicos que reciben los "ancianos japoneses"**. Quienes llenan el vacío de la generación activa que dejaron los japoneses y prolongan la vida del sistema de seguridad social japonés son, sin lugar a dudas, ellos.
+Por el contrario, al observar la composición por edad de los extranjeros residentes, la mayoría pertenece a la **generación activa de entre 20 y 40 años **. Ellos pagan la pensión de bienestar social y las primas del seguro de salud, asumiendo el rol de **"aportantes" que sostienen las pensiones y los gastos médicos que reciben los "ancianos japoneses"**. Quienes llenan el vacío de la generación activa que dejaron los japoneses y prolongan la vida del sistema de seguridad social japonés son, sin lugar a dudas, ellos.
 
 ---
 
@@ -94,7 +94,7 @@ Si comparamos el número de arrestos por cada 100.000 habitantes (tasa de crimin
 | Categoría | Personas arrestadas por cada 100.000 habitantes (estimación) |
 | --- | --- |
 | **Japoneses (todas las edades)** | Aprox. 142.7 personas |
-| **Extranjeros residentes (residentes permanentes / a largo plazo)** | **Aprox. 120.0 personas** |
+| **Extranjeros residentes (residentes permanentes / a largo plazo)** | ** Aprox. 120.0 personas** |
 
 El hecho estadístico es que **la tasa de criminalidad de los extranjeros que viven en Japón a mediano y largo plazo es menor que el promedio general de los japoneses**.
 
