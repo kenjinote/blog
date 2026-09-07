@@ -4,7 +4,7 @@ slug: "как-установить-текстовый-редактор-micro-н�
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "текстовый редактор"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Инструменты и среда разработки"]
 ---
 
@@ -28,7 +28,7 @@ https://github.com/zyedidia/micro/releases
 ## Как использовать micro
 
 При вводе `micro` в командной строке и выполнении появится следующий экран.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 Основные операции и сочетания клавиш следующие:
 

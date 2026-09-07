@@ -12,7 +12,7 @@ slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00
 tags: ["컴퓨터", "기본 지식"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・테크놀로지"]
 ---
 

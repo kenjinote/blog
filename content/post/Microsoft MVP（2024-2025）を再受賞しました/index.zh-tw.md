@@ -4,13 +4,13 @@ slug: "再次榮獲-microsoft-mvp-2024-2025"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具與開發環境"]
 ---
 
 # 再次榮獲 Microsoft MVP (2024-2025)
 
-![img\_1.png](img_1.png)
+![img\_1.png](img_1.webp)
 
 大家好，我是 kenji。
 很高興向大家報告，我今年再次榮獲 **Microsoft MVP (Most Valuable Professional)** 獎項。這是我第 8 次獲得此殊榮。

@@ -4,7 +4,7 @@ slug: "Windows をシャットダウンするショートカットを作成す�
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "シャットダウン", "ショートカット"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・ガジェット"]
 ---
 
@@ -16,33 +16,33 @@ Windowsをシャットダウンさせるショートカットを作成する方�
 
 #### 1. デスクトップで右クリックして、`新規作成`＞`ショートカット`を選択
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 2. ショートカットの作成画面が表示されるので`shutdown.exe -s -f -t 0`を入力して`次へ`をクリック
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 #### 3. ショートカットの名前`シャットダウン`を入力して`完了`をクリック
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. 作成されたショートカットのアイコンを変更する
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 作成されたショートカットを右クリックして`プロパティ`を選択
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 `アイコンの変更`をクリック
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 赤色の四角のアイコンを選択して`OK`をクリック、再度`OK`をクリックしてプロパティを閉じる
 
 以上。
 
-![img.png](img.png)
+![img.png](img.webp)
 
 作成されたショートカットをダブルクリックするとWindowsがシャットダウンされます。
 

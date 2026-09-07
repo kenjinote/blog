@@ -4,7 +4,7 @@ slug: "Templat Kalender Excel (Versi yang Mendukung Hari Libur)"
 date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "kalender", "templat", "hari libur"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI dan Teknologi"]
 ---
 

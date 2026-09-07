@@ -4,7 +4,7 @@ slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["键盘", "轨迹球", "显示器"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["电脑数码"]
 ---
 
@@ -25,7 +25,7 @@ categories: ["电脑数码"]
 我使用的是 [Logitech MX Ergo](https://amzn.to/3IYOwtf)。这是一款售价超过1万日元的昂贵产品，但我认为它物超所值。
 
 球体较大、由食指和中指操作的 [DEFT PRO(M-DPT1MRXBK)](https://amzn.to/3Zu5tB8) 我也很感兴趣。
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 显示器
 

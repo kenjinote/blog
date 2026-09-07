@@ -1,0 +1,5 @@
+content/post\gnfs-cpp-implementation\index.md : title: '【完全解剖】最強の暗号解読アルゴリズム「GNFS」をC++で実装して理解する'
+content/post\gnfs-to-shors-algorithm-math-deepdive\index.md : title: "【数式で完全理解】古典最強「GNFS」はなぜ量子アルゴリズムに敗れるのか？素因数分解のパラダイムシフト"
+content/post\shors-algorithm-and-rsa-breaking\index.md : title: "量子コンピュータは本当にRSA暗号を破壊するのか？〜ショアのアルゴリズムと現在の到達点〜"
+content/post\インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？\index.md : title: 'インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？'
+content/post\一般数体篩法（GNFS）の真の数学的構造\index.md : title: '一般数体篩法（GNFS）の真の数学的構造'

@@ -8,7 +8,7 @@ slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "빌드", "C++"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["프로그래밍"]
 ---
 

@@ -4,7 +4,7 @@ slug: "market-in-and-product-out"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Entwicklung", "Business", "Gedanken"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Lifestyle & Sonstiges"]
 ---
 

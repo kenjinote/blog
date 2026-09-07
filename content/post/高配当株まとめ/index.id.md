@@ -4,7 +4,7 @@ slug: "ringkasan-saham-dividen-tinggi"
 date: 2024-12-22T00:56:14+09:00
 tags: ["Saham"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI & Teknologi"]
 ---
 

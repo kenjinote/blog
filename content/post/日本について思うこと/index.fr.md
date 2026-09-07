@@ -4,7 +4,7 @@ slug: "ce-que-je-pense-du-japon"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Divers"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT et Technologie"]
 ---
 Je voudrais organiser ce que je trouve étrange et ce que je pense de la société japonaise.
@@ -13,8 +13,8 @@ Je voudrais organiser ce que je trouve étrange et ce que je pense de la sociét
 Quand on parle de bourses d'études au Japon, la plupart sont des prêts avec intérêts qui doivent être remboursés (prêts étudiants).
 De plus, les frais de scolarité universitaires n'ont cessé d'augmenter depuis 1950, et le taux de bénéficiaires de bourses est également en hausse.
 
-![Évolution des frais de scolarité](./images/japanese_tuition_fee.png)
-![Évolution du taux de bénéficiaires de bourses](./images/receipt_rate.png)
+![Évolution des frais de scolarité](./images/japanese_tuition_fee.webp)
+![Évolution du taux de bénéficiaires de bourses](./images/receipt_rate.webp)
 
 D'un autre côté, le montant total moyen emprunté récemment semble atteindre 3,24 millions de yens.
 

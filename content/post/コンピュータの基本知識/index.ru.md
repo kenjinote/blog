@@ -4,7 +4,7 @@ slug: "базовые-знания-о-компьютерах"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Компьютер", "Базовые знания"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT и Технологии"]
 ---
 

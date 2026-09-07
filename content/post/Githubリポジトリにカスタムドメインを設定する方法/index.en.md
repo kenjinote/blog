@@ -4,7 +4,7 @@ slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","Domain"]
 draft: false
-image: "images/octocat.png"
+image: "images/octocat.webp"
 categories: ["Tools / Development Environment"]
 ---
 To set up a custom domain for a Github repository, you need to change the domain's DNS settings.
@@ -31,7 +31,7 @@ To change the DNS settings, configure them as follows:
 9. Ensure that the checkbox in "Confirm name server change for DNS record settings" is checked and click "Proceed to setting screen"
 10. If the screen "To prevent unintended DNS setting changes" appears, click "Do not set" (select as necessary)
 11. Confirm the setting details and click "Set up"
-![img.png](images/img.png)
+![img.png](images/img.webp)
 12. This completes the DNS settings. It may take up to 72 hours for the reflection to complete.
 13. If it is not reflected after 72 hours, please try contacting Onamae.com support.
 

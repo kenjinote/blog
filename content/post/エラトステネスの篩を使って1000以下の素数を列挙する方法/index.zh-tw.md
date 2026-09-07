@@ -5,7 +5,7 @@ date: 2023-04-09T12:54:24+09:00
 tags: ["埃拉托斯特尼篩法", "質數", "數學", "Rust"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["數學・密碼學・量子"]
 ---
 

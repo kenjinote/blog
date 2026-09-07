@@ -4,7 +4,7 @@ slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Dicas", "Atalhos"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC e Gadgets"]
 ---
 Esta é uma coleção de pequenas dicas e atalhos úteis para o uso diário do Windows. Espero que seja útil para iniciantes.
@@ -48,27 +48,27 @@ Embora seja focado no Windows 11, a maioria também deve funcionar no Windows 10
 ## Desligar o Windows
 - Com a área de trabalho visível (usando `Win + M` ou `Win + D`) ou a barra de tarefas ativa (`Win + T` ou `Win + B`), pressione `Alt + F4`. Uma caixa de diálogo como a mostrada abaixo aparecerá; certifique-se de que "Desligar" esteja selecionado e pressione `Enter`.
   Também pode ser feito com `Win + R` → `Alt + F4` → `Alt + F4`.
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - Você pode desligar usando `Win + X` → `U` → `U`.
 - No Prompt de Comando ou em "Executar" (`Win + R`), digite `shutdown /s /t 0` para desligar. Adicionar `/f` forçará o desligamento.
 
 ## Reiniciar o Windows
 - Com a área de trabalho visível (usando `Win + M` ou `Win + D`) ou a barra de tarefas ativa (`Win + T` ou `Win + B`), pressione `Alt + F4`. Uma caixa de diálogo aparecerá; pressione `↓` uma vez para selecionar "Reiniciar" e pressione `Enter`.
 　Também pode ser feito com `Win + R` → `Alt + F4` → `Alt + F4`.
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - Você pode reiniciar usando `Win + X` → `U` → `R`.
 - Você pode reiniciar com `shutdown /r /t 0`. Adicionar `/f` forçará a reinicialização.
 
 ## Suspender (Dormir) o Windows
 - Com a área de trabalho visível (usando `Win + M` ou `Win + D`) ou a barra de tarefas ativa (`Win + T` ou `Win + B`), pressione `Alt + F4`. Uma caixa de diálogo aparecerá; pressione `↑` uma vez para selecionar "Suspender" e pressione `Enter`.
   Também pode ser feito com `Win + R` → `Alt + F4` → `Alt + F4`.
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - Em `Win + R` ou no Prompt de Comando, digite `rundll32.exe powrprof.dll,SetSuspendState` para hibernar.
 
 ## Sair do Windows (Logoff)
 - Com a área de trabalho visível (usando `Win + M` ou `Win + D`) ou a barra de tarefas ativa (`Win + T` ou `Win + B`), pressione `Alt + F4`. Uma caixa de diálogo aparecerá; pressione `↑` duas vezes para selecionar "Sair" e pressione `Enter`.
   Também pode ser feito com `Win + R` → `Alt + F4` → `Alt + F4`.
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - `Win + X` → `U` → `I`
 - `Ctrl + Alt + Del` → 2 vezes `Tab` ou 2 vezes `↓` → `Enter` ou `Espaço`
 - Você pode sair (fazer logoff) digitando `logoff`.
@@ -84,7 +84,7 @@ Embora seja focado no Windows 11, a maioria também deve funcionar no Windows 10
 ※ Como a janela segue o cursor do mouse, você pode resgatá-la mesmo se ela estiver fora da tela visível.
 
 ## Encerrar processos com o Gerenciador de Tarefas
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. Você pode abrir o Gerenciador de Tarefas com `Ctrl + Shift + Esc`.
 2. Alterne entre as abas usando `Ctrl + Tab`.
 3. Na aba `Detalhes`, após pressionar `Tab`, você pode buscar o processo digitando letras iniciais no teclado.
@@ -114,85 +114,85 @@ Por exemplo, `taskkill /f /im explorer.exe` encerrará o Explorer.
 Você pode selecionar textos ou imagens copiados anteriormente para copiá-los novamente.
 
 ## Executar (Arquivo)
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - `Win + R` abre a caixa de diálogo "Executar".
 
 Abaixo estão alguns comandos que podem ser usados em "Executar" ou no Prompt de Comando.
 
 ## Abrir o Edge
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - Digite `msedge` e pressione `Enter`
 
 ## Abrir o Internet Explorer 11 (IE11)
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - Digite `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` e pressione `Enter`
 
 ## Abrir o Terminal
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - Digite `wt` e pressione `Enter`
 
 ## Abrir o Painel de Controle
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - Digite `control` e pressione `Enter`
 - Também pode ser aberto com `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}`.
 
 ## Iniciar o Bloco de Notas
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - Digite `notepad` e pressione `Enter`  
 
 ## Iniciar a Calculadora
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - Digite `calc` e pressione `Enter`
 
 ## Iniciar o Paint
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - Digite `mspaint` e pressione `Enter`  
 
 ## Iniciar o PowerShell
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - Digite `powershell` e pressione `Enter`  
 
 ## Iniciar o Visual Studio Code
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - Digite `code` e pressione `Enter`
 
 ## Iniciar o Excel
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - Digite `excel` e pressione `Enter`  
 ※ Apenas se o Excel estiver instalado.
 
 ## Abrir o Word
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - Digite `winword` e pressione `Enter`  
 ※ Apenas se o Word estiver instalado.
 
 ## Abrir o PowerPoint
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - Digite `powerpnt` e pressione `Enter`  
   ※ Apenas se o PowerPoint estiver instalado.
 
 ## Abrir a Configuração do Sistema
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - Digite `msconfig` e pressione `Enter`  
 
 ## Abrir as Propriedades do Sistema
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - Digite `sysdm.cpl` e pressione `Enter`
 
 ## Abrir informações sobre o Windows
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - Digite `winver` e pressione `Enter`
 
 ## Abrir o Teclado Virtual
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - Digite `osk` e pressione `Enter`
 
 ## Abrir o WordPad
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - Digite `wordpad` ou `write` e pressione `Enter`
 
 ## Abrir o Editor do Registro
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - Digite `regedit` e pressione `Enter`
 
 ## Abrir Programas e Recursos
@@ -202,18 +202,18 @@ Abaixo estão alguns comandos que podem ser usados em "Executar" ou no Prompt de
 - Digite `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}` e pressione `Enter`
 
 ## Abrir Propriedades do Mouse
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - Digite `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}` e pressione `Enter`
 
 ## Abrir Configurações de Som
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - Digite `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}` e pressione `Enter`
 
 ## Abrir Contas de Usuário
 - Digite `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}` e pressione `Enter`
 
 ## Copiar o texto de caixas de mensagem padrão
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - Você pode copiar o texto de uma caixa de mensagem padrão com `Ctrl + C`.
 Se você copiar a caixa de mensagem acima, o seguinte será copiado para a área de transferência:
 ```

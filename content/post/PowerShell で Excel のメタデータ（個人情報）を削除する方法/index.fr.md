@@ -4,7 +4,7 @@ slug: "Comment supprimer les métadonnées (informations personnelles) d'Excel a
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Métadonnées", "Informations personnelles"]
 draft: false
-image: "powershell_metadata_eyecatch_1788588033601.jpg"
+image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["Programmation"]
 ---
 

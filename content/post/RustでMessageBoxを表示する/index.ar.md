@@ -4,7 +4,7 @@ slug: "عرض-messagebox-في-rust"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["برمجة"]
 ---
 
@@ -53,7 +53,7 @@ fn main() {
 ```
 
 6. قم بتشغيل `cargo run` في موجه الأوامر.
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. لإنشاء إصدار (release build)، قم بتشغيل `cargo build --release`.
 

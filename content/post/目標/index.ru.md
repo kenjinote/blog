@@ -4,7 +4,7 @@ slug: "goals"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Цели"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ИТ и технологии"]
 ---
 

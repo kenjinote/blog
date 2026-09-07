@@ -4,7 +4,7 @@ slug: "collatz-conjecture"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Гипотеза Коллатца", "математика", "программирование", "алгоритмы"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Математика, криптография, кванты"]
 ---
 

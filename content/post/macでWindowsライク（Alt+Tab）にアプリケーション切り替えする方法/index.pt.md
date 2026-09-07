@@ -4,7 +4,7 @@ slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替�
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "teclas de atalho", "alternar aplicativos"]
 draft: 
-image: "img.png"
+image: "img.webp"
 categories: ["PC e Gadgets"]
 ---
 

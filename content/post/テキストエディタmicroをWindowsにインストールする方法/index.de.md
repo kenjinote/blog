@@ -4,7 +4,7 @@ slug: "so-installieren-sie-den-micro-texteditor-unter-windows"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "Texteditor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
 ---
 
@@ -28,7 +28,7 @@ Um `micro.exe` über die Eingabeaufforderung verwenden zu können, müssen Sie d
 ## So verwenden Sie micro
 
 Wenn Sie in der Eingabeaufforderung `micro` eingeben und ausführen, wird der folgende Bildschirm angezeigt.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 Die wichtigsten Vorgänge und Tastenkombinationen sind wie folgt:
 

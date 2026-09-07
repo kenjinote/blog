@@ -11,7 +11,7 @@ slug: "PMP勉強"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Estudio"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI y Tecnología"]
 ---
 

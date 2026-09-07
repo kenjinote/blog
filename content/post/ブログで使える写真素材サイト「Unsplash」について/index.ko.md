@@ -7,7 +7,7 @@ slug: "ブログで使える写真素材サイト「Unsplash」について"
 date: 2023-04-02T14:44:17+09:00
 tags: ["사진 소재", "블로그", "Unsplash"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["블로그 운영"]
 ---
 

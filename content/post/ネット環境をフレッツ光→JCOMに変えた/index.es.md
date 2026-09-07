@@ -8,7 +8,7 @@ slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flets Hikari","Conexión a internet"]
 draft: false
-image: "jcom.png"
+image: "jcom.webp"
 categories: ["IT y tecnología"]
 ---
 
@@ -18,9 +18,9 @@ categories: ["IT y tecnología"]
 
 # Cambié el entorno de internet de mi casa de Flets Hikari a J:COM
 
-![](flets_hikari.png)
+![](flets_hikari.webp)
 
-![](jcom.png)
+![](jcom.webp)
 
 Por recomendación de un conocido, cambié la conexión a internet de mi casa de Flets Hikari a J:COM. Las razones fueron,
 
@@ -49,7 +49,7 @@ Como el cambio es reciente, si tengo más impresiones o experiencias de uso, me 
 - 06/09/2022 alrededor de las 13:30 Durante 3 a 5 minutos
 - Después unas cuantas veces más...
 
-![Diagnóstico de red](trouble_shooting.png)
+![Diagnóstico de red](trouble_shooting.webp)
 
 Parece ser un problema de DNS, así que configuré el servidor DNS tomando como referencia [aquí](https://internet.watch.impress.co.jp/docs/column/shimizu/1367271.html).
 A ver qué pasa con esto... Incluso con la configuración de DNS caí en un estado en el que no podía conectarme, así que cuando me puse en contacto con el soporte, me dijeron que estaban haciendo un mantenimiento de emergencia... Justo después de contactarlos, el estado de la conexión mejoró, así que creo que tomaron alguna medida.

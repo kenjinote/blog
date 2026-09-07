@@ -4,7 +4,7 @@ slug: "notes-de-gestion"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gestionnaire"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Informatique et Technologie"]
 ---
 # Trouver des entreprises qui deviennent populaires

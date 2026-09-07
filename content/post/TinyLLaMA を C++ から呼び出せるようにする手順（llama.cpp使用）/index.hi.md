@@ -4,7 +4,7 @@ slug: "TinyLLaMA को C++ से कॉल करने की प्रक्
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 

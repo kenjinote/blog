@@ -4,11 +4,11 @@ slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "Texteditor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Einführung in vim
 

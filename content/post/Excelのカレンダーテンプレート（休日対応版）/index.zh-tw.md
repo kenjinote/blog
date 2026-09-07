@@ -4,7 +4,7 @@ slug: "Excelのカレンダーテンプレート（休日対応版）"
 date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "日曆", "範本", "假日"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT與科技"]
 ---
 

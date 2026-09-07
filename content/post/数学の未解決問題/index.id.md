@@ -5,7 +5,7 @@ date: 2024-03-02T22:57:36+09:00
 tags: ["matematika", "masalah yang belum terpecahkan"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Matematika, Kriptografi, dan Kuantum"]
 ---
 

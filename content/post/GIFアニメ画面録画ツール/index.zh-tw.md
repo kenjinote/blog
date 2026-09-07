@@ -4,7 +4,7 @@ slug: "GIF動畫螢幕錄影工具"
 date: 2024-02-08T01:23:01+09:00
 tags: ["工具", "螢幕錄影", "GIF"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT與科技"]
 ---
 

@@ -4,7 +4,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "ライセンス", "コマンドプロンプト"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC・ガジェット"]
 ---
 
@@ -36,7 +36,7 @@ slmgr /dli
 
 3. 数秒待つと、以下のようなライセンス情報が表示されます。
 
-   ![Windowsライセンス確認画面](img.png)
+   ![Windowsライセンス確認画面](img.webp)
 
 ## 表示される主な情報
 

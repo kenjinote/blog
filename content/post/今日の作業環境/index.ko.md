@@ -9,7 +9,7 @@ slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
 tags: ["잡기","아이"]
 draft: false
-image: "images/today_workplase.jpg"
+image: "images/today_workplase.webp"
 categories: ["IT・테크놀로지"]
 ---
 

@@ -4,7 +4,7 @@ slug: "msixに自己証明書をつけてインストールできるようにす
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "شهادة ذاتية", "تثبيت"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

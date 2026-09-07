@@ -4,15 +4,15 @@ slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome擴充功能"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 
 ### Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 您可以搜尋自訂欄位，或是一次大量匯出自訂物件的欄位。
 
@@ -22,7 +22,7 @@ categories: ["IT・科技"]
 
 ### Salesforce advanced Code searcher
 
-![img.png](img.png)
+![img.png](img.webp)
 
 這在搜尋 Salesforce 程式碼時非常方便。
 

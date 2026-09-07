@@ -9,7 +9,7 @@ slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["트랙볼", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・테크놀로지"]
 ---
 
@@ -31,7 +31,7 @@ categories: ["IT・테크놀로지"]
 ## 좋은 점
 - 마우스에 비해 손목을 움직일 필요가 없어서, 손목의 부담이 줄어듦
 - 버튼 수가 많아서, 버튼에 다양한 기능을 할당할 수 있음
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 현재는 위와 같이 할당하고 있습니다. 애플리케이션마다 버튼 할당을 변경할 수도 있습니다.
 ※ 버튼 할당에는 전용 소프트웨어 설치가 필요합니다.
 - 버튼이 크기 때문에 트랙볼 중에서는 비교적 섬세한 조작도 하기 쉬움

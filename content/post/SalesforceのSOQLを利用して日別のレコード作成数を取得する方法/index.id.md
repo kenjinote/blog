@@ -4,7 +4,7 @@ slug: "cara-mendapatkan-jumlah-pembuatan-record-per-hari-menggunakan-soql-di-sal
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "tanggal", "agregasi"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT dan Teknologi"]
 ---
 

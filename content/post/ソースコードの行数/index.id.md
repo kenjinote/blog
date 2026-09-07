@@ -4,7 +4,7 @@ slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00
 tags: ["kode sumber", "jumlah baris"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["TI & Teknologi"]
 ---
 

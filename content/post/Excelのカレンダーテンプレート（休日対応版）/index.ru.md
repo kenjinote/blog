@@ -4,7 +4,7 @@ slug: "Шаблон календаря Excel (версия с выходными
 date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "календарь", "шаблон", "праздник"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT и технологии"]
 ---
 

@@ -4,7 +4,7 @@ slug: "geschichte-der-mathematik"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Mathematik", "Geschichte"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
 ---
 

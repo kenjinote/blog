@@ -4,7 +4,7 @@ slug: "تغيير-نظام-الألوان-في-PaperMod"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["إدارة المدونة"]
 ---
 لقد قمت بتغيير نظام الألوان لسمة PaperMod. لقد أشرت إلى ما يلي لطريقة التغيير.

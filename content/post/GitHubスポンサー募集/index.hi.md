@@ -4,7 +4,7 @@ slug: "GitHub प्रायोजकों की तलाश"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "प्रायोजक"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["उपकरण और विकास पर्यावरण"]
 ---
 

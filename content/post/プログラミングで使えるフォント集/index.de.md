@@ -4,7 +4,7 @@ slug: "schriftartensammlung-fuer-die-programmierung"
 date: 2024-03-30T02:21:31+09:00
 tags: ["Programmierung", "Schriftarten"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Programmierung"]
 ---
 

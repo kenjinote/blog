@@ -4,7 +4,7 @@ slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "Pengembangan", "Tembok", "Puisi"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["AI & Teknologi"]
 ---
 
@@ -36,7 +36,7 @@ Pembayaran? API Stripe cukup copy-paste.
 Di sini, Anda mulai berkhayal, "Apakah saya sudah menjadi seorang engineer?"
 Namun, neraka yang sesungguhnya baru saja dimulai.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ---
 
@@ -107,4 +107,4 @@ Tapi dari situlah ujian sebenarnya dimulai.
 Dan mungkin, saat kita mencapai puncak, akan ada masa depan yang menunggu di mana kita bertanya,
 "Apakah kita benar-benar perlu mendaki gunung ini?"
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

@@ -4,7 +4,7 @@ slug: "विज़ुअल स्टूडियो शॉर्टकट स�
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "शॉर्टकट" ]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["उपकरण और विकास वातावरण"]
 ---
 
@@ -54,5 +54,5 @@ categories: ["उपकरण और विकास वातावरण"]
 
 - [विज़ुअल स्टूडियो में डिफ़ॉल्ट कीबोर्ड शॉर्टकट](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 

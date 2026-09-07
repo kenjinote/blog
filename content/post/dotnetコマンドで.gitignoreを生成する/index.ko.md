@@ -7,7 +7,7 @@ slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["도구・개발 환경"]
 ---
 

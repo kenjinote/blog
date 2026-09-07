@@ -4,7 +4,7 @@ slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "画像", "動画", "スクリーンショット", "録画", "キャプチャー"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・テクノロジー"]
 ---
 
@@ -20,7 +20,7 @@ Snipping Toolは、Windowsに標準搭載されているスクリーンショッ
 - `Winキー` + `Rキー`を押して、`snippingtool`と入力して`Enterキー`を押す。
 
 ## Snipping Toolの使い方
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### キャプチャー画像を保存する方法は以下の通りです。
 

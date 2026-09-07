@@ -4,7 +4,7 @@ slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["perintah", "editor Hidemaru", "registry"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
 ---
 
@@ -29,4 +29,4 @@ Windows Registry Editor Version 5.00
 ```
 Jika Anda menyimpan konten di atas dalam file `.reg` dan menjalankannya, pengaturan akan ditambahkan ke registry.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

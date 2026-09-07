@@ -4,7 +4,7 @@ slug: "ziele"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Ziele"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT und Technologie"]
 ---
 

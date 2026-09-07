@@ -4,7 +4,7 @@ slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Разработка", "Бизнес", "Поэма"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Стиль жизни и разное"]
 ---
 

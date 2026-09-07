@@ -4,7 +4,7 @@ slug: "كيفية-الحصول-على-عدد-السجلات-المنشأة-يو�
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "تاريخ", "تجميع"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

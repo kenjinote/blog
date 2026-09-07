@@ -11,7 +11,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "editor de texto"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Herramientas/Entorno de desarrollo"]
 ---
 
@@ -44,7 +44,7 @@ Para usar `nano.exe` desde el símbolo del sistema, necesitas configurar las var
 
 Cuando escribes `nano` y lo ejecutas, se muestra la siguiente pantalla.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Una descripción de los accesos directos se muestra en la parte inferior de la pantalla.
 

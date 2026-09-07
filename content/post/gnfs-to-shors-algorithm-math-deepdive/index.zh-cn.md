@@ -3,7 +3,7 @@ title: "【公式完全解析】经典最强“GNFS”为何败给量子算法�
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["量子计算机", "GNFS", "Shor算法", "密码破解", "数学"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
+image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["数学・密码・量子"]

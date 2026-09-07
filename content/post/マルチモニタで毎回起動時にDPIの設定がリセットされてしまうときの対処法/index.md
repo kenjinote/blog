@@ -4,7 +4,7 @@ slug: "マルチモニタで毎回起動時にDPIの設定がリセットされ�
 date: 2024-04-29T19:42:20+09:00
 tags: ["マルチモニタ", "DPI", "コントロールパネル"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・テクノロジー"]
 ---
 

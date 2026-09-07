@@ -4,7 +4,7 @@ slug: "Kisah Sepasang Suami Istri Tua dan Seekor Keledai"
 date: 2024-09-18T00:56:59+09:00
 tags: ["Kisah Sepasang Suami Istri Tua dan Seekor Keledai", "Satire"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT dan Teknologi"]
 ---
 

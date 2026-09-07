@@ -4,7 +4,7 @@ slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Manajemen Blog"]
 ---
 # Pendahuluan
@@ -20,7 +20,7 @@ Jika Anda menempatkan gambar di folder `static`, Anda hanya perlu menentukan nam
 
 ```
 [params]
-  images = ["twitter_card.jpg"]
+  images = ["twitter_card.webp"]
 ```
 
 Struktur folder
@@ -32,9 +32,9 @@ root
 │      └─folder artikel
 │         │  index.md (Tulis di sini)
 │         └─images
-│             cover.png (Tempatkan di sini)
+│             cover.webp (Tempatkan di sini)
 └─static
-    twitter_card.jpg (Tempatkan di sini)
+    twitter_card.webp (Tempatkan di sini)
 ```
 
 ## Informasi header setiap artikel
@@ -43,7 +43,7 @@ Jika Anda mengatur `relative` menjadi `true`, Anda dapat menentukannya dengan pa
 
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
 ```
 
@@ -51,7 +51,7 @@ cover:
 Jika Anda tidak ingin menampilkan gambar sampul di bagian atas artikel, tambahkan item bernama `hidden` di bawah `cover` dan atur menjadi `true`.
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
   hidden: true
 ```

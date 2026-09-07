@@ -8,7 +8,7 @@ slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "grafos"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas y entorno de desarrollo"]
 ---
 
@@ -26,6 +26,6 @@ También parece que es posible mover elementos con el ratón.
 
 Al hacer clic en `Directed` también puede crear grafos dirigidos.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Los grafos creados se pueden guardar como imagen usando `Download as PNG`.

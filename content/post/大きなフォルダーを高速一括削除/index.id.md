@@ -4,7 +4,7 @@ slug: "penghapusan-massal-cepat-untuk-folder-besar"
 date: 2022-09-20T16:04:02+09:00
 tags: ["Command Prompt"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI dan Teknologi"]
 ---
 ## Penghapusan Massal Cepat untuk Folder Besar

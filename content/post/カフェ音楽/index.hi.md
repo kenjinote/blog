@@ -4,7 +4,7 @@ slug: "cafe-music"
 date: 2022-09-08T08:39:03+09:00
 tags: ["कैफे", "संगीत"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["जीवन शैली / विविध"]
 ---
 **अप-टेम्पो (Up-tempo)**

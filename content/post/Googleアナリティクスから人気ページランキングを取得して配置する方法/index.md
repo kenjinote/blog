@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Googleアナリティクス", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ブログ運営"]
 ---
 
@@ -16,7 +16,7 @@ categories: ["ブログ運営"]
 
 ## 動作イメージ
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 準備
 - サイトにGoogleアナリティクスを設定していること
@@ -25,20 +25,20 @@ categories: ["ブログ運営"]
 
 1. `Ranklet`にアクセスする
 2. `Sign in with Google`をクリックしてGoogleアカウントでログインする（Googleアナリティクスのアカウントと紐づけられていること）
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 `許可`をクリック
 
 3. 基本情報を設定する
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 上記のように設定しました。
 
 - `Google Analytics ビュー`ではランキングを取得したいビューを選択します。
 
 4. テキストの置換を設定する
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 上記のように設定しました。
 ページタイトルの` | kenji.blog`を削除するために設定しています。
 
@@ -144,7 +144,7 @@ categories: ["ブログ運営"]
 
 6. サイトへの掲載よりHTMLをコピーする
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 表示されているHTMLをコピーする
 

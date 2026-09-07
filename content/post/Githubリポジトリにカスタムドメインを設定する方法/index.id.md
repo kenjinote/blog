@@ -4,7 +4,7 @@ slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
-image: "images/octocat.png"
+image: "images/octocat.webp"
 categories: ["ツール・開発環境"]
 ---
 Untuk mengatur domain kustom pada repositori Github, Anda perlu mengubah pengaturan DNS domain tersebut.
@@ -35,7 +35,7 @@ Untuk mengubah pengaturan DNS, ikuti langkah-langkah berikut.
 9. Di "Konfirmasi perubahan server nama untuk pengaturan catatan DNS", pastikan kotak dicentang dan klik "Lanjut ke layar pengaturan"
 10. Jika layar bertuliskan "Untuk mencegah perubahan pengaturan DNS yang tidak disengaja" muncul, klik "Jangan atur" (pilih sesuai kebutuhan)
 11. Periksa pengaturan dan klik "Atur"
-![img.png](images/img.png)
+![img.png](images/img.webp)
 12. Ini melengkapi pengaturan DNS. Mungkin butuh hingga sekitar 72 jam agar pembaruan selesai.
 13. Jika perubahan tidak tercermin setelah 72 jam, silakan hubungi dukungan Onamae.com.
 

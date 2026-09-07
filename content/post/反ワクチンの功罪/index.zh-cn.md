@@ -4,7 +4,7 @@ slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["社会问题", "健康", "信息素养"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["生活方式・杂记"]
 ---
 

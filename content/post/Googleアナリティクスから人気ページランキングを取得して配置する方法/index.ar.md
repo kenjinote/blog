@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Googleアナリティクス", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ブログ運営"]
 ---
 
@@ -16,7 +16,7 @@ categories: ["ブログ運営"]
 
 ## صورة للعمل
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## التحضير
 - يجب إعداد Google Analytics في الموقع
@@ -25,20 +25,20 @@ categories: ["ブログ運営"]
 
 1. قم بالوصول إلى **Ranklet**
 2. انقر فوق **Sign in with Google** لتسجيل الدخول بحساب Google (يجب أن يكون مرتبطًا بحساب Google Analytics)
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 انقر فوق **السماح**
 
 3. قم بتعيين المعلومات الأساسية
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 لقد قمت بإعداده كما هو موضح أعلاه.
 
 - في **Google Analytics View** حدد العرض الذي تريد الحصول على الترتيب له.
 
 4. قم بتعيين استبدال النص
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 لقد قمت بإعداده كما هو موضح أعلاه.
 تم تعيين هذا لإزالة ` | kenji.blog` من عنوان الصفحة.
 
@@ -144,7 +144,7 @@ categories: ["ブログ運営"]
 
 6. انسخ HTML من النشر على الموقع
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 انسخ HTML المعروض
 

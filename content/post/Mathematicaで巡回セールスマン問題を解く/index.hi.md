@@ -4,7 +4,7 @@ slug: "Mathematica-के-साथ-ट्रैवलिंग-सेल्स�
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "ट्रैवलिंग सेल्समैन समस्या", "एल्गोरिदम", "गणित"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["गणित, क्रिप्टोग्राफी, क्वांटम"]
 ---
 # Mathematica के साथ ट्रैवलिंग सेल्समैन समस्या को हल करना

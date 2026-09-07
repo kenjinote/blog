@@ -4,7 +4,7 @@ slug: "數學的歷史"
 date: 2023-07-22T15:25:10+09:00
 tags: ["數學", "歷史"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["數學・密碼學・量子"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Wird der Quantencomputer wirklich die RSA-Verschlüsselung knacken? ~ Shors Algorithmus und der aktuelle Stand ~"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Quantencomputer", "Kryptoanalyse", "Shors Algorithmus", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.jpg"
+image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
 categories: ["Mathematik, Kryptographie, Quanten"]
 ---

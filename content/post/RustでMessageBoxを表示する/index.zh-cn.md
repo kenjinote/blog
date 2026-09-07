@@ -4,7 +4,7 @@ slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["编程"]
 ---
 
@@ -53,7 +53,7 @@ fn main() {
 ```
 
 6. 在命令提示符中执行 `cargo run`。
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. 如果要进行发布构建，请执行 `cargo build --release`。
 

@@ -4,7 +4,7 @@ slug: "любимая-японская-музыка"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Японская музыка", "Музыка"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Стиль жизни и разное"]
 ---
 

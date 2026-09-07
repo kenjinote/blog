@@ -4,7 +4,7 @@ slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Extensão de navegador", "Add-on Edge", "Atualização automática"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Gestão de blog"]
 ---
 Apresentamos o "Tab Auto Refresh", uma extensão do navegador Edge que atualiza automaticamente as páginas web.
@@ -15,24 +15,24 @@ Apresentamos o "Tab Auto Refresh", uma extensão do navegador Edge que atualiza 
 
 Acesse o site acima e clique em `Instalar`.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Clique em `Adicionar extensão`.
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 ## Como usar
 
 Após a instalação, um ícone será adicionado no canto superior direito do Edge.
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 Abra a página web que deseja atualizar automaticamente e clique no ícone para iniciar a atualização automática.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 A área destacada em verde é o intervalo de atualização automática. Selecione o momento em que deseja que a atualização automática ocorra.
 
 Para parar a atualização automática, clique no ícone e depois clique em `Stop reloading this tab`.
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)

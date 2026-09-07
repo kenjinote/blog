@@ -4,7 +4,7 @@ slug: "wie-man-den-hidemaru-editor-mit-dem-befehl-hide-startet"
 date: 2024-03-29T23:45:37+09:00
 tags: ["Befehl", "Hidemaru Editor", "Registrierung"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Werkzeuge und Entwicklungsumgebung"]
 ---
 
@@ -29,4 +29,4 @@ Windows Registry Editor Version 5.00
 ```
 Wenn Sie den obigen Inhalt in einer `.reg`-Datei speichern und ausführen, werden die Einstellungen zur Registrierung hinzugefügt.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

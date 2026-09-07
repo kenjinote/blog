@@ -11,7 +11,7 @@ slug: "MS-DOS 4.0 のオープンソース化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "código abierto"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI y Tecnología"]
 ---
 

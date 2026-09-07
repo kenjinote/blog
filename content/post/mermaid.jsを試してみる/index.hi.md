@@ -5,7 +5,7 @@ date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
 draft: false
 mermaid: true
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["AI और प्रौद्योगिकी"]
 ---
 

@@ -4,7 +4,7 @@ slug: "जनरेटिव-एआई-के-बारे-में"
 date: 2024-04-16T02:13:56+09:00
 tags: ["जनरेटिव एआई", "YouTube", "व्याख्यान"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["एआई और प्रौद्योगिकी"]
 ---
 

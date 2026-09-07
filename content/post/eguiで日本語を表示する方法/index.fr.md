@@ -4,7 +4,7 @@ slug: "comment-afficher-japonais-egui"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "Bibliothèque GUI", "Japonais"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 
@@ -41,4 +41,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## Vous pouvez maintenant afficher du japonais.
 
-![img.png](img.png)
+![img.png](img.webp)

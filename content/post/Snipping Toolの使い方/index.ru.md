@@ -4,7 +4,7 @@ slug: "how-to-use-snipping-tool"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Изображение", "Видео", "Скриншот", "Запись", "Захват"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ИТ и технологии"]
 ---
 
@@ -20,7 +20,7 @@ Snipping Tool — это стандартный инструмент для со
 - Нажмите клавишу `Win` + `R`, введите `snippingtool` и нажмите клавишу `Enter`.
 
 ## Как использовать Snipping Tool
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### Способ сохранения захваченного изображения следующий:
 

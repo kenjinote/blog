@@ -4,7 +4,7 @@ slug: "So installieren Sie das Gemini CLI unter Windows"
 date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "Installation", "Entwicklung"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・Gadgets"]
 ---
 

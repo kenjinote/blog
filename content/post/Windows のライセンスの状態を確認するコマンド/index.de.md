@@ -4,7 +4,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Lizenz", "Eingabeaufforderung"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC & Gadgets"]
 ---
 
@@ -36,7 +36,7 @@ Wenn Sie diesen Befehl ausführen, werden einige Lizenzinformationen in einem Fe
 
 3. Nach ein paar Sekunden Wartezeit werden Lizenzinformationen wie die folgenden angezeigt.
 
-   ![Windows-Lizenzüberprüfungsbildschirm](img.png)
+   ![Windows-Lizenzüberprüfungsbildschirm](img.webp)
 
 ## Angezeigte Hauptinformationen
 

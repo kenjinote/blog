@@ -4,7 +4,7 @@ slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得�
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "日期", "汇总"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT·科技"]
 ---
 

@@ -4,7 +4,7 @@ slug: "management-notes"
 date: 2022-09-07T02:36:11+09:00
 tags: ["प्रबंधक"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 # लोकप्रिय हो रहे व्यवसायों की खोज करें

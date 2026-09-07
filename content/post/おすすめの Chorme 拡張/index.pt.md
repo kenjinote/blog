@@ -4,7 +4,7 @@ slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Extensões do Chrome", "Navegador", "Chrome", "Edge"]
 draft: false
-image: "img_4.png"
+image: "img_4.webp"
 categories: ["TI / Tecnologia"]
 ---
 
@@ -14,7 +14,7 @@ Aqui estão as extensões do Chrome que uso atualmente. Apesar de serem para o C
 
 ## 1. simpleGestures
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 É uma extensão que permite usar gestos do mouse.
 Você pode operar o navegador sem usar o teclado ou mirar nos botões da barra de ferramentas.
@@ -28,7 +28,7 @@ Como também é de código aberto, é altamente confiável.
 
 ## 2. uBlock Origin
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 Uma extensão para bloquear anúncios. Por ser de código aberto, é altamente confiável. Além disso, usa pouca CPU e memória, funcionando de forma rápida e confortável.
 
@@ -37,7 +37,7 @@ Uma extensão para bloquear anúncios. Por ser de código aberto, é altamente c
 
 ## 3. Tradutor DeepL
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Uma extensão do Chrome que permite traduzir a página usando o mundialmente famoso serviço de tradução DeepL. Quando você seleciona o texto que deseja traduzir no navegador, o ícone do DeepL aparece e, ao clicar, ele é traduzido automaticamente.
 
@@ -45,7 +45,7 @@ Uma extensão do Chrome que permite traduzir a página usando o mundialmente fam
 
 ## 4. ChatGPT Sidebar
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Uma extensão para usar o ChatGPT em uma barra lateral. Você pode exibir a barra lateral com Ctrl+P e fazer perguntas à IA imediatamente.
 Se houver texto selecionado na página, ele será copiado diretamente para a pergunta, então você pode perguntar imediatamente com Ctrl+Enter.
@@ -54,7 +54,7 @@ Se houver texto selecionado na página, ele será copiado diretamente para a per
 
 ## 5. Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Uma extensão que adiciona recursos úteis para o desenvolvimento no Salesforce.
 Acredito que não seja necessária para quem não usa o Salesforce.

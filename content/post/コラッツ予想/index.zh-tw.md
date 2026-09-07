@@ -4,7 +4,7 @@ slug: "コラッツ予想"
 date: 2025-07-15T18:03:03+09:00
 tags: ["コラッツ予想", "数学", "プログラミング", "アルゴリズム"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["数学・暗号・量子"]
 ---
 

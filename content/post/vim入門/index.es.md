@@ -11,7 +11,7 @@ slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "editor de texto"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas・Entorno de desarrollo"]
 ---
 
@@ -22,7 +22,7 @@ categories: ["Herramientas・Entorno de desarrollo"]
 
 
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Introducción a vim
 

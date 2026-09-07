@@ -4,7 +4,7 @@ slug: "paint.netを使って画像に枠線をつける方法"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "边框", "图片"]
 draft: false
-image: "img_3.png"
+image: "img_3.webp"
 categories: ["AI与科技"]
 ---
 
@@ -15,15 +15,15 @@ categories: ["AI与科技"]
 #### 1. 在paint.net中打开想要添加边框的图片
 #### 2. 设置次要颜色（这将成为边框的颜色）
 
-![img.png](img.png)
+![img.png](img.webp)
 
 如果没有显示调色板，请按键盘上的`F8`键。
 
-如果要设置为黑色，请点击![img_1.png](img_1.png)。
+如果要设置为黑色，请点击![img_1.png](img_1.webp)。
 
 #### 3. 选择菜单＞图像＞调整画布大小
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 将宽度和高度各增加2像素。增加2像素的话，边框将为1像素。
 如果想让边框变为5像素，则将宽度和高度各增加10像素。

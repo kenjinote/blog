@@ -4,7 +4,7 @@ slug: "如何解決因憑證錯誤導致-github-copilot-無法使用的問題"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具與開發環境"]
 ---
 
@@ -19,7 +19,7 @@ categories: ["工具與開發環境"]
 
 ## 解決方法
 這似乎是 ESET 的錯誤。在 ESET 的進階設定中，將「啟用 SSL/TLS」關閉。
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 參考
 

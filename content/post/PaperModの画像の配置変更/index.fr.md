@@ -4,7 +4,7 @@ slug: "Modifier la disposition des images dans PaperMod"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ブログ運営"]
 ---
 La disposition par défaut place l'image au centre avec une largeur de 100 %,

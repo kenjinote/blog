@@ -4,7 +4,7 @@ slug: "何年かぶりの神座（かむくら）（ラーメン）"
 date: 2022-09-09T21:45:19+09:00
 tags: ["रामन", "कामुकुरा"]
 draft: false
-image: "images/img2.jpg"
+image: "images/img2.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 
@@ -12,8 +12,8 @@ categories: ["आईटी और प्रौद्योगिकी"]
 
 **हरी प्याज किमची रामन**
 
-![img1.jpg](images/img1.jpg)
+![img1.jpg](images/img1.webp)
 
-![img2.png](images/img2.jpg)
+![img2.png](images/img2.webp)
 
 यह स्वादिष्ट था। यह एक ऐसा स्वाद है जिसे आप कभी-कभी खाना चाहते हैं।

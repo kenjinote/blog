@@ -4,7 +4,7 @@ slug: "nanakusa-gayu-recipe"
 date: 2024-01-06T22:22:00+09:00
 tags: ["नानाकुसा-गायू", "खाना बनाना"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 # सात जड़ी बूटियां (ननाकुसा)

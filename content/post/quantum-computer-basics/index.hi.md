@@ -3,7 +3,7 @@ title: "【पूर्ण विश्लेषण】 क्वांटम क
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["क्वांटम कंप्यूटर", "भौतिकी", "प्रौद्योगिकी"]
-image: "quantum_basics_eyecatch_1788613712487.jpg"
+image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]
 ---
 

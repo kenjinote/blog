@@ -4,7 +4,7 @@ slug: "オンラインのコード実行環境まとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["線上", "程式碼執行環境", "程式設計"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["程式設計"]
 ---
 

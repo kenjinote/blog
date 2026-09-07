@@ -4,7 +4,7 @@ slug: "招募 GitHub 贊助者"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "贊助者"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具與開發環境"]
 ---
 

@@ -4,7 +4,7 @@ slug: "mengubah-skema-warna-papermod"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Manajemen Blog"]
 ---
 Saya telah mengubah skema warna tema PaperMod. Saya merujuk ke bawah ini untuk metode perubahannya.

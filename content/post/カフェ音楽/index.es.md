@@ -8,7 +8,7 @@ slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00
 tags: ["cafetería", "música"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["estilo de vida y miscelánea"]
 ---
 

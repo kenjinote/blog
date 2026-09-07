@@ -9,7 +9,7 @@ slug: "オンラインのコード実行環境まとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["온라인", "코드 실행 환경", "프로그래밍"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["프로그래밍"]
 ---
 

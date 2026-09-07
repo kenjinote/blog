@@ -4,7 +4,7 @@ slug: "好きな邦楽"
 date: 2024-01-06T04:11:01+09:00
 tags: ["邦楽", "音楽"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ライフスタイル・雑記"]
 ---
 

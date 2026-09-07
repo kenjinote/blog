@@ -4,7 +4,7 @@ slug: "ماذا تفعل عندما لا يمكنك إلغاء اشتراك Goog
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "إلغاء الاشتراك", "الحل"]
 draft: false
-image: "img.png"
+image: "img.webp"
 description: "هل سيتم تحصيل رسوم منك بعد انتهاء الفترة التجريبية المجانية لـ Gemini؟ ملخص لكيفية الإلغاء"
 categories: ["برمجة"]
 ---

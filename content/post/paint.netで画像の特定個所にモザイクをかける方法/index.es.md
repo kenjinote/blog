@@ -7,7 +7,7 @@ slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "borde", "imagen"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IA y Tecnología"]
 ---
 
@@ -24,11 +24,11 @@ Usando paint.net puedes procesar la imagen rápidamente.
 #### 1. Abre la imagen a la que deseas aplicar el mosaico en paint.net
 #### 2. Usa la herramienta de selección para seleccionar la parte a la que deseas aplicar el mosaico (es posible la selección múltiple)
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 #### 3. Selecciona Menú > Efectos > Distorsión > Mosaico
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 - Configura la aspereza del mosaico con el tamaño de celda. Cuanto mayor sea el valor, mayor será la ocultación.
 - [Reducción] Selecciona `Método bilineal multimuestreo`
@@ -38,6 +38,6 @@ Cierra el cuadro de diálogo con `OK`.
 
 #### 4. La imagen será procesada con el efecto de mosaico, procede a guardarla.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Eso es todo.

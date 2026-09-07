@@ -4,7 +4,7 @@ slug: "zitate-von-einstein"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Zitate", "Philosophie", "Wissenschaft", "Physik"]
 draft: false
-image: "Solvay_conference_1927.jpg"
+image: "Solvay_conference_1927.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
 ---
 

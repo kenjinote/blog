@@ -4,7 +4,7 @@ slug: "PaperModの配色変更"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Administration du blog"]
 ---
 J'ai modifié la palette de couleurs du thème PaperMod. Je me suis référé au lien suivant pour la méthode de modification.

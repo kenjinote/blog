@@ -4,7 +4,7 @@ slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00
 tags: ["市场导向", "产品导向", "开发", "商业", "随笔"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["生活方式・杂记"]
 ---
 

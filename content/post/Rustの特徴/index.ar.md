@@ -4,7 +4,7 @@ slug: "Rustの特徴"
 date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["البرمجة"]
 ---
 # ميزات Rust

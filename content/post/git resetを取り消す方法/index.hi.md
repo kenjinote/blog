@@ -4,7 +4,7 @@ slug: "git-reset-ko-kaise-undo-kare"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "रिस्टोर", "अनडू"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["उपकरण और विकास पर्यावरण"]
 ---
 # git reset को कैसे अनडू करें

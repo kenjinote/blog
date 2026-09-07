@@ -4,7 +4,7 @@ slug: "menampilkan-jendela-sederhana-di-rust"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "jendela"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["pemrograman"]
 ---
 

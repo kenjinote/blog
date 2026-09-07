@@ -4,7 +4,7 @@ slug: "Salesforce SOQL का उपयोग करके प्रतिदि
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "तिथि", "एकत्रीकरण"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

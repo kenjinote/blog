@@ -4,7 +4,7 @@ slug: "como-instalar-o-editor-de-texto-micro-no-windows"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "editor de texto"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 
@@ -28,7 +28,7 @@ Para usar o `micro.exe` pelo Prompt de Comando, você precisa configurar as vari
 ## Como usar o micro
 
 Ao digitar `micro` no Prompt de Comando e executá-lo, a seguinte tela será exibida.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 As principais operações e teclas de atalho são as seguintes:
 

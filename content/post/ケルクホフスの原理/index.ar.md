@@ -4,7 +4,7 @@ slug: "kerckhoffs-principle"
 date: 2025-04-16T23:53:08+09:00
 tags: ["مبدأ كيركهوفس", "التشفير"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["الرياضيات، التشفير، الكم"]
 ---
 
@@ -118,4 +118,4 @@ categories: ["الرياضيات، التشفير، الكم"]
 
 ---
 
-![Auguste Kerckhoffs](img.png)
+![Auguste Kerckhoffs](img.webp)

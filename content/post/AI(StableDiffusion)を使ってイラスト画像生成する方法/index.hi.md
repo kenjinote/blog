@@ -4,7 +4,7 @@ slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "इलस्ट्रेशन", "इमेज जनरेशन", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 
@@ -26,7 +26,7 @@ Stable diffusion म्यूनिख विश्वविद्यालय, 
 2. ऊपर बाईं ओर `फ़ाइल` से `नई नोटबुक` चुनें
 3. `संपादित करें` से `नोटबुक सेटिंग` चुनें
 4. `हार्डवेयर एक्सेलेरेटर` को `GPU` में बदलें
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 5. नीचे दिए गए कोड को पेस्ट करें और चलाएं
 ```
 !pip install diffusers==0.8.0 transformers
@@ -52,11 +52,11 @@ image
 यहाँ उपयोग किया गया `Prompt`, [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5) के `Prompt` पर आधारित है।
 
 ## जनरेट किए गए परिणाम (कुछ)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 ## संदर्भ
 

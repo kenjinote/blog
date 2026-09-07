@@ -4,7 +4,7 @@ slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["ИТ и технологии"]
 ---
 # Команда для удаления всех данных Salesforce Chatter

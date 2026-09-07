@@ -4,7 +4,7 @@ slug: "programming-fonts-collection"
 date: 2024-03-30T02:21:31+09:00
 tags: ["प्रोग्रामिंग", "फ़ॉन्ट्स"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 

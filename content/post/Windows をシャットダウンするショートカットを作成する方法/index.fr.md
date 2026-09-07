@@ -4,7 +4,7 @@ slug: "Comment créer un raccourci pour arrêter Windows"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Arrêter", "Raccourci"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC et Gadgets"]
 ---
 
@@ -16,33 +16,33 @@ C'est pratique car vous pouvez éteindre l'ordinateur en double-cliquant simplem
 
 #### 1. Faites un clic droit sur le bureau et sélectionnez `Nouveau` > `Raccourci`
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 2. L'écran de création de raccourci s'affiche, tapez `shutdown.exe -s -f -t 0` et cliquez sur `Suivant`
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 #### 3. Entrez le nom du raccourci `Arrêter` et cliquez sur `Terminer`
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. Changez l'icône du raccourci créé
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 Faites un clic droit sur le raccourci créé et sélectionnez `Propriétés`
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Cliquez sur `Changer d'icône`
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 Sélectionnez l'icône carrée rouge et cliquez sur `OK`, puis cliquez à nouveau sur `OK` pour fermer les propriétés.
 
 C'est tout.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Windows s'arrêtera lorsque vous double-cliquerez sur le raccourci créé.
 

@@ -6,7 +6,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Gestión de blog"]
 ---
 
@@ -20,7 +20,7 @@ En este artículo, te mostraremos cómo colocarlo en un blog HUGO.
 
 ## Imagen de funcionamiento
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Preparación
 - Asegúrate de haber configurado Google Analytics en tu sitio.
@@ -29,20 +29,20 @@ En este artículo, te mostraremos cómo colocarlo en un blog HUGO.
 
 1. Accede a `Ranklet`
 2. Haz clic en `Sign in with Google` e inicia sesión con tu cuenta de Google (asegúrate de que esté vinculada a tu cuenta de Google Analytics)
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Haz clic en `Permitir` (`許可`)
 
 3. Configura la información básica
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 Lo he configurado como se muestra arriba.
 
 - En `Vista de Google Analytics` (`Google Analytics ビュー`), selecciona la vista de la que deseas obtener la clasificación.
 
 4. Configura el reemplazo de texto
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 Lo he configurado como se muestra arriba.
 Se configura para eliminar ` | kenji.blog` del título de la página.
 
@@ -148,7 +148,7 @@ Se configura para eliminar ` | kenji.blog` del título de la página.
 
 6. Copia el HTML de "Publicación en el sitio" (`サイトへの掲載`)
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Copia el HTML que se muestra.
 

@@ -4,7 +4,7 @@ slug: "давайте-уважать-тех-кто-может-делать-то-
 date: 2023-08-01T23:42:31+09:00
 tags: ["поэма", "мысли"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT и технологии"]
 ---
 

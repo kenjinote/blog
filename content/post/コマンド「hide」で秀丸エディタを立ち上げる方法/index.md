@@ -4,7 +4,7 @@ slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["コマンド", "秀丸エディタ", "レジストリ"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["ツール・開発環境"]
 ---
 
@@ -29,4 +29,4 @@ Windows Registry Editor Version 5.00
 ```
 上記の内容を`.reg`ファイルに保存して実行すると、レジストリに設定が追加されます。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

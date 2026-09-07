@@ -4,7 +4,7 @@ slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["Bahasa C", "Bilangan Prima", "Algoritma", "Matematika"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
 ---
 

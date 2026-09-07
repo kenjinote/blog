@@ -4,7 +4,7 @@ slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","インストール"]
 draft: false
-image: "images/cover.png"
+image: "images/cover.webp"
 categories: ["プログラミング"]
 ---
 # はじめに
@@ -19,17 +19,17 @@ Goのコンパイラ、ツール、ライブラリは、オープンソースで
 上記サイトから各プラットフォーム向けにインストーラが公開されています。
 
 画面にしたがってインストールを進めていきます。
-![img.png](images/img.png)
+![img.png](images/img.webp)
 
-![img_1.png](images/img_1.png)
+![img_1.png](images/img_1.webp)
 
-![img_2.png](images/img_2.png)
+![img_2.png](images/img_2.webp)
 
-![img_3.png](images/img_3.png)
+![img_3.png](images/img_3.webp)
 
-![img_5.png](images/img_5.png)
+![img_5.png](images/img_5.webp)
 
-![img_6.png](images/img_6.png)
+![img_6.png](images/img_6.webp)
 
 インストール完了しました。簡単ですね。
 
@@ -56,7 +56,7 @@ func main() {
 
 [https://go.dev/play/](https://go.dev/play/)
 
-![img_7.png](images/img_7.png)
+![img_7.png](images/img_7.webp)
 
 # 日本語ドキュメント
 

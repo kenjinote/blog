@@ -4,7 +4,7 @@ slug: "hide-command-ke-saath-hidemaru-editor-kaise-shuru-karein"
 date: 2024-03-29T23:45:37+09:00
 tags: ["कमांड", "हिदेमारू एडिटर", "रजिस्ट्री"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["उपकरण और विकास पर्यावरण"]
 ---
 
@@ -29,4 +29,4 @@ Windows Registry Editor Version 5.00
 ```
 यदि आप उपरोक्त सामग्री को `.reg` फ़ाइल के रूप में सहेजते हैं और इसे चलाते हैं, तो सेटिंग्स रजिस्ट्री में जोड़ दी जाएंगी।
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

@@ -5,7 +5,7 @@ date: 2023-04-09T12:54:24+09:00
 tags: ["エラトステネスの篩", "素数", "数学", "Rust"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["数学・暗号・量子"]
 ---
 

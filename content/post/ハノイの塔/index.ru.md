@@ -4,7 +4,7 @@ slug: "ханойская-башня"
 date: 2025-04-17T22:23:14+09:00
 tags: ["Ханойская башня", "Алгоритмы", "Python"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Программирование"]
 ---
 

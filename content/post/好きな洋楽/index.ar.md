@@ -4,7 +4,7 @@ slug: "الموسيقى الغربية المفضلة"
 date: 2024-01-05T00:14:22+09:00
 tags: ["موسيقى غربية", "موسيقى"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["أسلوب الحياة ومتفرقات"]
 ---
 

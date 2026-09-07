@@ -4,7 +4,7 @@ slug: "otobrazhenie-prostogo-okna-v-rust"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "окно"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["программирование"]
 ---
 

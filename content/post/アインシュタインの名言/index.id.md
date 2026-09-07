@@ -4,7 +4,7 @@ slug: "Kutipan-Albert-Einstein"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Albert Einstein", "Kutipan", "Filsafat", "Sains", "Fisika"]
 draft: false
-image: "Solvay_conference_1927.jpg"
+image: "Solvay_conference_1927.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
 ---
 

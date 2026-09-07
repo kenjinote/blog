@@ -4,7 +4,7 @@ slug: "いろんなバージョン情報ダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["معلومات الإصدار", "Windows", "MacOS"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الكمبيوتر والأدوات الذكية"]
 ---
 
@@ -12,100 +12,100 @@ categories: ["الكمبيوتر والأدوات الذكية"]
 
 ## Windows 11
 أولاً، هذه معلومات إصدار Windows 11 التي أستخدمها حاليًا.
-![img.png](img.png)
+![img.png](img.webp)
 
 ## IntelliJ IDEA (Community Edition)
 هذه هي البيئة التي أكتب فيها هذه المدونة.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Visual Studio Code
 هذا محرر أستخدمه كثيرًا أيضًا. إنه بسيط بشكل مدهش.
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 ## Visual Studio
 هذه هي بيئة التطوير التي أستخدمها لـ C++.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 ## LINE(Windows)
 هذه نسخة Windows من LINE.
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 ## Paint.NET
 هذا برنامج تحرير صور.
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 ## sakuraエディタ
 هذا محرر نصوص.
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 ## Google Chrome
 هذا هو Google Chrome. لم أعد أستخدمه كثيرًا بعد ظهور Edge.
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 ## Firefox
 هذا هو Firefox. لم أستخدمه كثيرًا مؤخرًا.
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 
 ## Microsoft Edge
 هذا هو Microsoft Edge. أستخدمه كثيرًا مؤخرًا.
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 
 ## OBS Studio
 هذا هو OBS Studio. لم أستخدمه كثيرًا مؤخرًا.
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 
 ## TradingView
 هذا هو TradingView. أستخدمه مؤخرًا لمشاهدة مخطط الدولار/الين.
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 
 ## Spy++
 هذا هو Spy++. إنها أداة مضمنة في Windows SDK.
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 
 ## depency walker
 هذا هو depency walker. إنها أداة مضمنة في Windows SDK.
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 
 ## resource hacker
 هذا هو resource hacker. إنها أداة لتحرير واستخراج الموارد من الملفات القابلة للتنفيذ.
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 
 ## Microsoft Excel
 هذا هو Microsoft Excel.
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 
 ## bandy cam
 هذا هو bandy cam. إنها أداة لالتقاط الفيديو.
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 
 ## winmerge
 هذا هو winmerge. إنها أداة لعرض اختلافات الملفات.
-![img_17.png](img_17.png)
+![img_17.png](img_17.webp)
 
 ## iTunes
 هذا هو iTunes. لم أستخدمه كثيرًا مؤخرًا.
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 
 ## 秀丸エディタ
 هذا هو محرر Hidemaru. إنه محرر نصوص.
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 
 ## Adobe Photoshop CS6
 هذا هو Adobe Photoshop CS6.
-![img_20.png](img_20.png)
+![img_20.png](img_20.webp)
 
 ## Adobe Illustrator CS6
 هذا هو Adobe Illustrator CS6.
-![img_21.png](img_21.png)
+![img_21.png](img_21.webp)
 
 ## ESET NOD32
 هذا هو ESET NOD32.
-![img_22.png](img_22.png)
+![img_22.png](img_22.webp)
 
 ## NotePad++
 هذا هو NotePad++. إنه محرر نصوص.
-![img_23.png](img_23.png)
+![img_23.png](img_23.webp)
 
 ## MIFES
 هذا هو MIFES. لم أستخدمه كثيرًا مؤخرًا.
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)

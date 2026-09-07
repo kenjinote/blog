@@ -4,7 +4,7 @@ slug: "如何安裝-go"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "安裝"]
 draft: false
-image: "images/cover.png"
+image: "images/cover.webp"
 categories: ["程式設計"]
 ---
 # 簡介
@@ -19,17 +19,17 @@ Go 的編譯器、工具和函式庫都是開源的。
 上述網站提供了各個平台的安裝程式。
 
 按照螢幕上的指示進行安裝。
-![img.png](images/img.png)
+![img.png](images/img.webp)
 
-![img_1.png](images/img_1.png)
+![img_1.png](images/img_1.webp)
 
-![img_2.png](images/img_2.png)
+![img_2.png](images/img_2.webp)
 
-![img_3.png](images/img_3.png)
+![img_3.png](images/img_3.webp)
 
-![img_5.png](images/img_5.png)
+![img_5.png](images/img_5.webp)
 
-![img_6.png](images/img_6.png)
+![img_6.png](images/img_6.webp)
 
 安裝完成。很簡單吧。
 
@@ -56,7 +56,7 @@ func main() {
 
 [https://go.dev/play/](https://go.dev/play/)
 
-![img_7.png](images/img_7.png)
+![img_7.png](images/img_7.webp)
 
 # 日文文件
 

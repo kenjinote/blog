@@ -5,7 +5,7 @@ date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "rumus", "matematika", "hugo"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
 ---
 # Apa itu KaTeX?

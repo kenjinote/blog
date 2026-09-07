@@ -4,7 +4,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "éditeur de texte"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Outils et environnement de développement"]
 ---
 
@@ -30,7 +30,7 @@ Pour utiliser `nano.exe` à partir de l'invite de commande, vous devez configure
 
 Lorsque vous tapez `nano` et l'exécutez, l'écran suivant s'affiche.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Les descriptions des raccourcis sont affichées au bas de l'écran.
 

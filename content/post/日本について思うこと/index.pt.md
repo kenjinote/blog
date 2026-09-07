@@ -4,7 +4,7 @@ slug: "o-que-eu-penso-sobre-o-japao"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Miscelânea"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["TI e Tecnologia"]
 ---
 Vou organizar o que eu acho estranho e o que penso sobre a sociedade japonesa.
@@ -13,8 +13,8 @@ Vou organizar o que eu acho estranho e o que penso sobre a sociedade japonesa.
 Quando se fala em bolsas de estudo no Japão, a maioria delas tem juros e devem ser devolvidas (empréstimos estudantis).
 Além disso, as mensalidades universitárias têm aumentado constantemente desde 1950, e a taxa de recebimento de bolsas também está em tendência de aumento.
 
-![Evolução das mensalidades](./images/japanese_tuition_fee.png)
-![Evolução da taxa de recebimento de bolsas](./images/receipt_rate.png)
+![Evolução das mensalidades](./images/japanese_tuition_fee.webp)
+![Evolução da taxa de recebimento de bolsas](./images/receipt_rate.webp)
 
 Por outro lado, parece que o valor médio total emprestado recentemente chega a 3,24 milhões de ienes.
 

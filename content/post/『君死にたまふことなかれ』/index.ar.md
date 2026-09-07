@@ -7,7 +7,7 @@ draft: false
 categories: ["تكنولوجيا المعلومات"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # أكيكو يوسانو
 

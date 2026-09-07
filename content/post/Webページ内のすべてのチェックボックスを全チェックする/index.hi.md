@@ -4,7 +4,7 @@ slug: "वेबपेज में सभी चेकबॉक्स को �
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "स्वचालन"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ब्लॉग प्रबंधन"]
 ---
 

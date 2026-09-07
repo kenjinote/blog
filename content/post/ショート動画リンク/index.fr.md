@@ -4,7 +4,7 @@ slug: "liens-de-videos-courtes"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Vidéo", "Court"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 1. Ramasseur de balles de football

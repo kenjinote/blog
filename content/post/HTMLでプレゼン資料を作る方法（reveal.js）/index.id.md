@@ -4,7 +4,7 @@ slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "Presentasi"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Pemrograman"]
 ---
 

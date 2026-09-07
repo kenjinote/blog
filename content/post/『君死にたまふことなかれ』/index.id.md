@@ -7,7 +7,7 @@ draft: false
 categories: ["TI dan Teknologi"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Akiko Yosano
 

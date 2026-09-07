@@ -4,7 +4,7 @@ slug: "how-to-use-snipping-tool"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Gambar", "Video", "Tangkapan Layar", "Rekaman", "Capture"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT dan Teknologi"]
 ---
 
@@ -20,7 +20,7 @@ Terutama dapat dijalankan dengan 3 cara berikut:
 - Tekan tombol `Win` + `R`, ketik `snippingtool`, lalu tekan tombol `Enter`.
 
 ## Cara Menggunakan Snipping Tool
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### Cara menyimpan gambar yang ditangkap adalah sebagai berikut:
 

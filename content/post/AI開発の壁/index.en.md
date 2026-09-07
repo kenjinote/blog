@@ -4,7 +4,7 @@ slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "Development", "Wall", "Poem"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["AI & Technology"]
 ---
 
@@ -36,7 +36,7 @@ Billing? Just copy-paste the Stripe API.
 Here, you get the illusion of "Am I an engineer now?".
 But the real hell begins from here.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ---
 
@@ -101,4 +101,4 @@ But the real thing starts from there.
 
 And by the time we reach the summit, a future might be waiting where we ask ourselves, "Did we even need to climb the mountain?".
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

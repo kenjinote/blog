@@ -4,7 +4,7 @@ slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "टिप्स", "शॉर्टकट"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・गैजेट"]
 ---
 Windows में रोज़ाना इस्तेमाल होने वाले कुछ छोटे टिप्स का संग्रह। अगर आप Windows का उपयोग करना शुरू कर रहे हैं, तो यह आपके लिए मददगार हो सकता है।
@@ -49,27 +49,27 @@ Windows में रोज़ाना इस्तेमाल होने �
 ## Windows को शटडाउन करना
 - जब आप `Win + M` या `Win + D` के साथ डेस्कटॉप पर हों, या `Win + T` या `Win + B` के साथ टास्कबार सक्रिय हो, तो `Alt + F4` दबाने पर नीचे दिखाया गया डायलॉग दिखाई देगा। सुनिश्चित करें कि "शट डाउन" चुना गया है और `Enter` दबाएँ।
   `Win + R` → `Alt + F4` → `Alt + F4` भी काम करता है।
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - आप `Win + X` → `U` → `U` दबाकर शटडाउन कर सकते हैं।
 - आप कमांड प्रॉम्प्ट या `Win + R` से "Run" में `shutdown /s /t 0` लिखकर शटडाउन कर सकते हैं। `/f` जोड़ने से फोर्स शटडाउन हो जाएगा।
 
 ## Windows को रीस्टार्ट करना
 - जब आप `Win + M` या `Win + D` के साथ डेस्कटॉप पर हों, या `Win + T` या `Win + B` के साथ टास्कबार सक्रिय हो, तो `Alt + F4` दबाने पर नीचे दिखाया गया डायलॉग दिखाई देगा। एक बार `↓` दबाएँ, "रीस्टार्ट" चुनें और `Enter` दबाएँ।
   `Win + R` → `Alt + F4` → `Alt + F4` भी काम करता है।
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - आप `Win + X` → `U` → `R` दबाकर रीस्टार्ट कर सकते हैं।
 - `shutdown /r /t 0` से आप रीस्टार्ट कर सकते हैं। `/f` जोड़ने से फोर्स रीस्टार्ट हो जाएगा।
 
 ## Windows को स्लीप मोड में डालना
 - जब आप `Win + M` या `Win + D` के साथ डेस्कटॉप पर हों, या `Win + T` या `Win + B` के साथ टास्कबार सक्रिय हो, तो `Alt + F4` दबाने पर नीचे दिखाया गया डायलॉग दिखाई देगा। एक बार `↑` दबाएँ, "स्लीप" चुनें और `Enter` दबाएँ।
   `Win + R` → `Alt + F4` → `Alt + F4` भी काम करता है।
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - आप `Win + R` → या कमांड प्रॉम्प्ट में `rundll32.exe powrprof.dll,SetSuspendState` टाइप करके हाइबरनेट (hibernate) कर सकते हैं।
 
 ## Windows से साइन आउट (लॉगऑफ़) करना
 - जब आप `Win + M` या `Win + D` के साथ डेस्कटॉप पर हों, या `Win + T` या `Win + B` के साथ टास्कबार सक्रिय हो, तो `Alt + F4` दबाने पर नीचे दिखाया गया डायलॉग दिखाई देगा। दो बार `↑` दबाएँ, "साइन आउट" चुनें और `Enter` दबाएँ।
   `Win + R` → `Alt + F4` → `Alt + F4` भी काम करता है।
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - `Win + X` → `U` → `I`
 - `Ctrl + Alt + Del` → दो बार `Tab` या दो बार `↓` → `Enter` या `Space`
 - आप `logoff` लिखकर साइन आउट (लॉगऑफ़) कर सकते हैं।
@@ -85,7 +85,7 @@ Windows में रोज़ाना इस्तेमाल होने �
 ※ चूँकि विंडो माउस कर्सर का अनुसरण करेगी, इसलिए यदि विंडो स्क्रीन से बाहर चली गई है तो भी आप उसे वापस ला सकते हैं।
 
 ## टास्क मैनेजर में प्रक्रिया को समाप्त करना
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. आप `Ctrl + Shift + Esc` दबाकर टास्क मैनेजर खोल सकते हैं।
 2. आप `Ctrl + Tab` से टैब के बीच स्विच कर सकते हैं।
 3. `Details` टैब पर जाने के बाद `Tab` दबाएँ, फिर कीबोर्ड से टाइप करके प्रक्रिया को नाम से खोज सकते हैं।
@@ -115,85 +115,85 @@ Windows में रोज़ाना इस्तेमाल होने �
 आप पहले कॉपी किए गए टेक्स्ट या छवि का चयन करके उसे फिर से कॉपी कर सकते हैं।
 
 ## रन (Run) खोलना
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - आप `Win + R` से "Run" डायलॉग खोल सकते हैं।
 
 नीचे कुछ कमांड दिए गए हैं जिन्हें आप "Run" या कमांड प्रॉम्प्ट से चला सकते हैं।
 
 ## Edge खोलना
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - `msedge` टाइप करें और `Enter` दबाएँ।
 
 ## Internet Explorer 11 (IE11) खोलना
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` टाइप करें और `Enter` दबाएँ।
 
 ## टर्मिनल (Terminal) खोलना
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - `wt` टाइप करें और `Enter` दबाएँ।
 
 ## कंट्रोल पैनल खोलना
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - `control` टाइप करें और `Enter` दबाएँ।
 - आप `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}` का उपयोग करके भी इसे खोल सकते हैं।
 
 ## नोटपैड खोलना
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - `notepad` टाइप करें और `Enter` दबाएँ।  
 
 ## कैलकुलेटर खोलना
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - `calc` टाइप करें और `Enter` दबाएँ।
 
 ## पेंट (Paint) खोलना
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - `mspaint` टाइप करें और `Enter` दबाएँ।  
 
 ## PowerShell खोलना
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - `powershell` टाइप करें और `Enter` दबाएँ।  
 
 ## Visual Studio Code खोलना
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - `code` टाइप करें और `Enter` दबाएँ।
 
 ## Excel खोलना
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - `excel` टाइप करें और `Enter` दबाएँ।  
 ※ केवल तभी जब Excel स्थापित हो।
 
 ## Word खोलना
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - `winword` टाइप करें और `Enter` दबाएँ।  
 ※ केवल तभी जब Word स्थापित हो।
 
 ## PowerPoint खोलना
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - `powerpnt` टाइप करें और `Enter` दबाएँ।  
   ※ केवल तभी जब PowerPoint स्थापित हो।
 
 ## सिस्टम कॉन्फ़िगरेशन (System Configuration) खोलना
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - `msconfig` टाइप करें और `Enter` दबाएँ।  
 
 ## सिस्टम प्रॉपर्टीज़ (System Properties) खोलना
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - `sysdm.cpl` टाइप करें और `Enter` दबाएँ।
 
 ## Windows का वर्ज़न जानकारी खोलना
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - `winver` टाइप करें और `Enter` दबाएँ।
 
 ## ऑन-स्क्रीन कीबोर्ड (On-Screen Keyboard) खोलना
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - `osk` टाइप करें और `Enter` दबाएँ।
 
 ## वर्डपैड (WordPad) खोलना
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - `wordpad` या `write` टाइप करें और `Enter` दबाएँ।
 
 ## रजिस्ट्री एडिटर (Registry Editor) खोलना
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - `regedit` टाइप करें और `Enter` दबाएँ।
 
 ## प्रोग्राम और फीचर्स (Programs and Features) खोलना
@@ -203,18 +203,18 @@ Windows में रोज़ाना इस्तेमाल होने �
 - `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}` टाइप करें और `Enter` दबाएँ।
 
 ## माउस प्रॉपर्टीज़ (Mouse Properties) खोलना
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}` टाइप करें और `Enter` दबाएँ।
 
 ## साउंड (Sound) सेटिंग्स खोलना
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}` टाइप करें और `Enter` दबाएँ।
 
 ## यूजर अकाउंट्स (User Accounts) खोलना
 - `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}` टाइप करें और `Enter` दबाएँ।
 
 ## मानक संदेश बॉक्स की स्ट्रिंग कॉपी करना
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - आप `Ctrl + C` के साथ एक मानक संदेश बॉक्स के टेक्स्ट को कॉपी कर सकते हैं।
 उपरोक्त संदेश बॉक्स को कॉपी करने पर क्लिपबोर्ड पर निम्न टेक्स्ट कॉपी हो जाएगा:
 ```

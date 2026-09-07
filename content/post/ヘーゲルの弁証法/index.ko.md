@@ -9,7 +9,7 @@ slug: "ヘーゲルの弁証法"
 date: 2022-09-09T23:13:19+09:00
 tags: ["철학", "헤겔", "변증법"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・테크놀로지"]
 ---
 

@@ -4,7 +4,7 @@ slug: "ウィンドウタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["编程"]
 ---
 # 枚举窗口标题

@@ -4,7 +4,7 @@ slug: "wie-man-einen-git-reset-rueckgaengig-macht"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "wiederherstellen", "rückgängig machen"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools & Entwicklungsumgebung"]
 ---
 # Wie man einen git reset rückgängig macht

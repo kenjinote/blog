@@ -5,7 +5,7 @@ date: 2024-03-02T22:57:36+09:00
 tags: ["数学","未解决问题"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["数学・密码・量子"]
 ---
 

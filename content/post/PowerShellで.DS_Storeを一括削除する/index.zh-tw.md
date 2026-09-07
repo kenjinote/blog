@@ -4,7 +4,7 @@ slug: "使用 PowerShell 批次刪除 .DS_Store"
 date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["程式設計"]
 ---
 

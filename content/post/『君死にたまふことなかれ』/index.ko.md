@@ -23,7 +23,7 @@ categories: ["IT・테크놀로지"]
 
 
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # 요사노 아키코
 

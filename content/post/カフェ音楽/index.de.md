@@ -4,7 +4,7 @@ slug: "cafe-musik"
 date: 2022-09-08T08:39:03+09:00
 tags: ["Café", "Musik"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Lifestyle / Sonstiges"]
 ---
 **Up-tempo**

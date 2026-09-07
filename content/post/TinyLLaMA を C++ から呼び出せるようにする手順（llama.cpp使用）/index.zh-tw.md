@@ -4,7 +4,7 @@ slug: "從 C++ 呼叫 TinyLLaMA 的步驟（使用 llama.cpp）"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["程式設計"]
 ---
 

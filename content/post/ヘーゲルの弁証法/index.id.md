@@ -4,7 +4,7 @@ slug: "ヘーゲルの弁証法"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filsafat", "Hegel", "Dialektika"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["TI dan Teknologi"]
 ---
 ## Apa itu Dialektika Hegel

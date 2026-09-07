@@ -4,13 +4,13 @@ slug: "أُعيد منحي جائزة Microsoft MVP لعام (2024-2025)"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الأدوات وبيئة التطوير"]
 ---
 
 # أُعيد منحي جائزة Microsoft MVP لعام (2024-2025)
 
-![img\_1.png](img_1.png)
+![img\_1.png](img_1.webp)
 
 مرحبًا، أنا kenji.
 أود أن أبلغكم أنني حصلت على جائزة **Microsoft MVP (Most Valuable Professional)** هذا العام أيضًا. هذه هي المرة الثامنة التي أحصل فيها على هذه الجائزة.

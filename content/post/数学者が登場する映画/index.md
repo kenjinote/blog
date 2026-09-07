@@ -4,38 +4,38 @@ slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00
 tags: ["映画","数学者"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["数学・暗号・量子"]
 ---
 数学者の主人公が登場する私のおすすめの映画3選です。
 
 # ビューティフル・マインド
-![](./images/beautiful_mind.jpg)  
+![](./images/beautiful_mind.webp)  
 実在するアメリカの天才数学者の半生を描いた作品。最後は驚きの展開に。
 主演のラッセルクロウがいい味出しています。
 
 # エニグマ
-![](./images/enigma.jpg)  
+![](./images/enigma.webp)  
 > ロバート・ハリスの小説『暗号機エニグマへの挑戦』を映画化した2001年公開の映画。
 > wikipediaより
 
 エニグマ暗号機というドイツがつく出した暗号を解読する物語。
 
 # イミテーション・ゲーム
-![](./images/imitation_game.jpg) 
+![](./images/imitation_game.webp) 
 
 こちらもエニグマを扱った暗号解読の物語。当時の世界観が好きです。
 
 # 奇跡がくれた数式
-![img.png](img.png)
+![img.png](img.webp)
 
 ケンブリッジ大学の数学者ハーディと、インドの数学者ラマヌジャンの交流を描いた作品。数学の美しさを感じることができます。
 
 # 博士と彼女のセオリー
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ホーキング博士の半生を描いた作品。
 
 # パーティクル・フィーバー
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)

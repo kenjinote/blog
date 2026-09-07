@@ -4,7 +4,7 @@ slug: "recomendacao-do-trackball-deft-pro-m-dpt1mrbk"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 
@@ -21,7 +21,7 @@ Faz cerca de uma semana que comprei o trackball "Deft Pro M-DPT1MRBK" da Elecom,
 ## Pontos Positivos
 - Como não há necessidade de mover o pulso em comparação com um mouse, a tensão no pulso é reduzida.
 - Como o número de botões é grande, você pode atribuir várias funções a eles.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 Atualmente, estão atribuídas como acima. Você também pode alterar a atribuição dos botões para cada aplicativo.
 * É necessário instalar um software dedicado para atribuir botões.
 - Como a bola é grande, é relativamente fácil fazer movimentos finos para um trackball.

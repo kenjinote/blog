@@ -4,7 +4,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "editor de texto"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 
@@ -30,7 +30,7 @@ Para usar o `nano.exe` no Prompt de Comando, você precisa configurar as variáv
 
 Ao digitar `nano` e executar, a seguinte tela será exibida:
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 As descrições dos atalhos são exibidas na parte inferior da tela.
 

@@ -4,7 +4,7 @@ slug: "respectons-ceux-qui-peuvent-faire-ce-que-nous-ne-pouvons-pas"
 date: 2023-08-01T23:42:31+09:00
 tags: ["Poème", "Pensées"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・Technologie"]
 ---
 

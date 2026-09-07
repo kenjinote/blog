@@ -4,7 +4,7 @@ slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["社区", "杂记"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 # 社区需要的东西

@@ -6,7 +6,7 @@ slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
 

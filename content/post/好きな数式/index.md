@@ -5,7 +5,7 @@ date: 2022-10-05T13:24:50+09:00
 tags: ["数学"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["数学・暗号・量子"]
 ---
 ## ウィルソンの定理

@@ -4,11 +4,11 @@ slug: "Python (matplotlib.pyplot) का उपयोग करके ग्र�
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "ग्राफ़", "गणित", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # आपको क्या चाहिए
 - Google खाता
@@ -30,7 +30,7 @@ plt.show()
 
 # निष्पादन परिणाम
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # संदर्भ
 

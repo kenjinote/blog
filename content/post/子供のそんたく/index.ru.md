@@ -4,7 +4,7 @@ slug: "detskaya-chutkost"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Дети"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ИТ и технологии"]
 ---
 Когда мама плохо себя чувствовала и лежала в постели,

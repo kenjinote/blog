@@ -15,7 +15,7 @@ menu:
       icon: user
 ---
 
-![](img_1.png)
+![](img_1.webp)
 
 # 이 블로그에는 어떤 글을 쓰나요?
 

@@ -4,7 +4,7 @@ slug: "قالب تقويم Excel (إصدار متوافق مع أيام العط
 date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "تقويم", "قالب", "عطلة"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

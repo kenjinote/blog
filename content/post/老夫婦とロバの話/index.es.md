@@ -12,7 +12,7 @@ slug: "老夫婦とロバの話"
 date: 2024-09-18T00:56:59+09:00
 tags: ["La historia de la pareja de ancianos y el burro", "Sátira"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI y Tecnología"]
 ---
 

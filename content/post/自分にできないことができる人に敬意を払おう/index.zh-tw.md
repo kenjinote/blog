@@ -4,7 +4,7 @@ slug: "對能做到我們做不到的事的人致敬"
 date: 2023-08-01T23:42:31+09:00
 tags: ["隨筆", "想法"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 

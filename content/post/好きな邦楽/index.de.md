@@ -4,7 +4,7 @@ slug: "lieblings-japanische-musik"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Japanische Musik", "Musik"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Lebensstil & Sonstiges"]
 ---
 

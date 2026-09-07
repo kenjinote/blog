@@ -4,7 +4,7 @@ slug: "pengetahuan-dasar-komputer"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Komputer", "Pengetahuan Dasar"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Teknologi"]
 ---
 

@@ -4,7 +4,7 @@ slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["博客运营"]
 ---
 # 简介
@@ -20,7 +20,7 @@ PaperMod主题支持Twitter Card。
 
 ```
 [params]
-  images = ["twitter_card.jpg"]
+  images = ["twitter_card.webp"]
 ```
 
 文件夹结构
@@ -32,9 +32,9 @@ root
 │      └─文章文件夹
 │         │  index.md (在此编写)
 │         └─images
-│             cover.png (放置在此)
+│             cover.webp (放置在此)
 └─static
-    twitter_card.jpg (放置在此)
+    twitter_card.webp (放置在此)
 ```
 
 ## 各文章的头部信息
@@ -43,7 +43,7 @@ root
 
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
 ```
 
@@ -51,7 +51,7 @@ cover:
 如果不想在文章顶部显示封面图像，可以在`cover`下添加一个名为`hidden`的项目，并将其设置为`true`。
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
   hidden: true
 ```

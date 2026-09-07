@@ -12,7 +12,7 @@ slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["입력 폼", "Web 개발", "UX"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["블로그 운영"]
 ---
 

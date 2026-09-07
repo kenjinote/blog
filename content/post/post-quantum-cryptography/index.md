@@ -2,7 +2,7 @@
 title: "【PQC】量子コンピュータ時代の次世代暗号「耐量子計算機暗号」の全貌"
 slug: "post-quantum-cryptography"
 tags: ["暗号技術", "PQC", "セキュリティ", "次世代技術"]
-image: "post_quantum_cryptography_1788613735417.jpg"
+image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["数学・暗号・量子"]
 ---

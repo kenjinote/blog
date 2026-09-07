@@ -1,0 +1,204 @@
+--- .ko.md ---
+**aaabbb**
+**〜8부 능선까지 왔지만, 거기서부터가 지옥이었던 이야기〜**
+**대단해, 이제 사람은 필요 없는 거 아냐? 하고 생각하게 되잖아요.**
+만 말이죠, 그건 **후지산의 8부 능선에 샌들을 신고 내리는 것과 같은 것**입니다.
+즉, **AI는 "겉보기에는 완성된 것 같은 프로토타입"을 만드는 것은 잘하지만**,
+**"실제로 세상에 내놓고 통용되는 프로덕트"로 마무리하는 것은, 지금도 여전히 사람의 일**입니다.
+여기서 하나의 **역설**을 깨닫게 됩니다.
+그때는, **인류가 앱을 만들 필요 자체가 없어질**지도 모릅니다.
+**"AI로 앱을 만든다"라는 목표가 실현되었을 때, 앱 자체가 필요 없는 세상이 올**지도 모른다는 것입
+하지만, **"무엇을 만들 것인가"나 "왜 만드는가"는, 아직 우리 인간의 질문으로 남아 있습니다.**
+**AI 개발의 벽이란, 기술이 아니라 구조의 역설이다**
+이 제공하는 공식 **'Pixel Update and Software Repair'** 도구를 사용하면 
+🔗 **[Pixel Update and Software Repair 공식 사이트](https://pixelrepair.withgoogle.com/carrier_selection)**
+> **※주의사항※**
+, 연락처 등)가 **모두 삭제(초기화)**될 수 있습니다. 
+1. **배터리 충전**
+2. **정품 USB 케이블 준비**
+3. **(필요에 따라) 드라이버 설치**
+원을 끈 상태에서 **'전원 버튼'과 '볼륨 작게 버튼'을 동시에 길게 눌러**, Fastboot
+> ⚠️ **경고:** 이 과정 중에는 **절대로 USB 케이
+할 수 있는 것이 **Microsoft Graph API**입니다.  
+이 문서에서는 **WinHTTP를 사용한 C++ 코드 예제**와 **필요한 AP
+2. 「**Microsoft Entra ID**」 > 「**＋추가
+**」 > 「**앱 등록**」 > 「**새 등
+2. 「**Microsoft Graph**」 > 「**권한 
+추가**」에서 아래 스코프를 검색하여 「**권한 업데이트**」
+된 값(시크릿)을 **그 자리에서 반드시 기록**
+→ [C++] → **CLR 클래스 라이브러리 (.NET Framework)**
+런타임 지원] → **/clr**로 변경
+하는 방식이므로, **IDL이나 TLB, COM 등록이 필요하지 않습니다**.
+s에는 기본적으로 **ONNX 형식의 AI 모델을 실행할 수 있는 런타임**이 탑재되어 있습니
+다. 그것이 바로 **Windows ML (Windows.AI.MachineLearning)** 입니다.
+이 글에서는 **C++(Win32 앱 기반)** 에서 `Micro
+ 호출하는 방법을 **샘플 코드와 함께 구체적으로 설명**합니다.
+ 따라 추론 전에 **Tensor의 생성 및 바인딩**이 필요할 수 있습
+me`을 사용하면 **WinRT 없이 C++에서 완전히 ONNX 모델을 다룰 수 있습니다**.
+이 글에서는 **Webhook URL을 사용하여 Slack에 C++로 메시지를 전송하는 방법**을 단계별로 알기 
+ 왼쪽 메뉴에서 「**Incoming Webhooks**」를 선택하고 활성
+5. 「**Add New Webhook to Workspace**」를 클릭하고 채널
+* **파일 첨부**
+* **버튼이 포함된 UI**
+* **Slack App + OAuth2에 의한 유연한 API 조작**
+* **Node.js**
+* **npm (Node.js에 포함된 패키지 관리 도구)**
+* **npx (npm에 포함된 명령어 실행 도구)**
+를 수행하기 위한 **인류 최강·최첨단 알고리즘**이 존재합니다. 그
+것이 바로 **「일반 수체 체(GNFS: General Number Field Sieve)」**입니다.
+NFS를 구성하는 **「5가지 필수 파이프라인(단계)」**을 추출하여 클래스
+호제법을 사용하여 **$\gcd(X-Y, N)$**을 계산하면, $N
+대수체 세계」라는 **두 세계**를 만들어내고, 계
+--- .es.md ---
+**aaabbb**
+**〜Llegué a la octava estación, pero a partir de ahí fue un infierno〜**
+**Increíble, ya no necesitamos a los humanos, ¿verdad? Eso es lo que uno piensa.**
+n? Eso es **como aterrizar en la octava estación del Monte Fuji en sandalias**.
+ resumen, **la IA es buena para crear prototipos que "parecen productos terminados"**,
+pero **convertirlos en un producto real que funcione en el mundo sigue siendo, hoy por hoy, un trabajo para humanos**.
+tamos una **paradoja**.
+ momento, **la necesidad misma de que la humanidad cree aplicaciones podría desaparecer**.
+**cuando se alcance el objetivo de "crear aplicaciones con IA", podría llegar un mundo donde las aplicaciones en sí mismas ya no sean necesarias**.
+Pero, **"qué crear" y "por qué crearlo" siguen siendo preguntas para nosotros, los humanos**.
+**La barrera del desarrollo de IA no es la tecnología, sino una paradoja estructural.**
+de Google **"Pixel Update and Software Repair"** para repa
+🔗 **[Sitio oficial de Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/carrier_selection)**
+> **※Nota※**
+os, etc.) **se borren (inicialicen) por completo**. Si el di
+1. **Cargar la batería**
+2. **Preparar el cable USB original**
+3. **(Si es necesario) Instalar controladores**
+ apagado, **mantén presionados simultáneamente el "botón de encendido" y el "botón de bajar volumen"** para inic
+> ⚠️ **Advertencia:** Durante e
+ proceso, **nunca desconectes el cable USB ni apagues el PC.**
+s usar la **Microsoft Graph API**.  
+aremos un **ejemplo de código en C++ usando WinHTTP** y los **p
+2. Ve a "**Microsoft Entra ID**" > "**+ A
+gregar**" > "**Registros 
+licaciones**" > "**Nuevo regi
+2. En "**Microsoft Graph**" > "**Per
+ delegados**" (o seleccionar permisos), busca los siguientes ámbitos (scopes) y haz clic en "**Actualizar
+3. **Asegúrate de copiar el valor mostrado (secreto) en este momento**, ya que n
+→ [C++] → **Biblioteca de clases CLR (.NET Framework)**
+Cambiar a **/clr**
+lo tanto, **no se requiere IDL, TLB ni registro COM**.
+tándar un **runtime capaz de ejecutar modelos de IA en formato ONNX**. Este es 
+**Windows ML (Windows.AI.MachineLearning)**.
+artículo, **explicaremos detalladamente con código de ejemplo** cómo llam
+ng` desde **C++ (basado en aplicaciones Win32)**.
+necesario **crear y vincular un Tensor** antes de 
+icrosoft, **puede manejar modelos ONNX desde C++ completamente sin WinRT**.
+so a paso **cómo enviar un mensaje a Slack desde C++ usando una URL de Webhook**.
+lecciona "**Incoming Webhooks**" y actíva
+ clic en "**Add New Webhook to Workspace**" y selecc
+* **Adjuntar archivos**
+* **Interfaz de usuario con botones**
+* **Operaciones API flexibles con Slack App + OAuth2**
+* **Node.js**
+* **npm (herramienta de gestión de paquetes incluida con Node.js)**
+* **npx (herramienta de ejecución de comandos incluida con npm)**
+existe el **algoritmo más fuerte y avanzado de la humanidad** para real
+ste es el **"General Number Field Sieve (GNFS) o Criba General del Cuerpo de Números"**.
+odela las **"5 tuberías (fases) esenciales"** que compo
+--- .zh-cn.md ---
+**aaabbb**
+**〜虽然到了八合目，但接下来的路才是地狱〜**
+**很厉害吧，是不是觉得已经不需要人类了呢？**
+但是呢，那**就像穿着凉鞋降落在富士山的八合目一样**啊。
+也就是说，**AI很擅长制作“看起来像是完成了的原型”**，
+**但要把其打磨成“真正在世上行得通的产品”，至今依然是人类的工作**。
+在这里我们会发现一个**悖论**。
+到那时，**人类制作应用的需求本身可能就不存在了**。
+**当“用AI制作应用”的目标实现之时，可能就会迎来一个应用本身已不再需要的世界**。
+但是，**“要做什么”和“为什么要做”，依然是我们人类去提出的问题**。
+**AI开发的壁垒，不是技术，而是结构的悖论**
+gle 官方提供的 **“Pixel Update and Software Repair”** 工具，通过浏览器安
+🔗 **[Pixel Update and Software Repair 官网](https://pixelrepair.withgoogle.com/carrier_selection)**
+> **※注意事项※**
+片、应用、联系人等）**被全部清除（初始化）**。如果设备仍可操作，
+1. **电池充电**
+2. **准备原装 USB 数据线**
+3. **（必要时）安装驱动程序**
+，在设备关机状态下，**同时长按“电源键”和“音量减键”**，启动 Fastbo
+> ⚠️ **警告:** 在此过程中，**绝对不要拔下 USB
+这时候就可以使用 **Microsoft Graph API**。  
+本文将逐步介绍**使用 WinHTTP 的 C++ 代码示例**以及**所需的 AP
+2. 选择「**Microsoft Entra ID**」 > 「**＋添加
+**」 > 「**应用注册**」 > 「**新注册
+2. 在「**Microsoft Graph**」 > 「**选择权
+限**」中搜索以下作用域并点击「**更新权限**」
+3. **务必当场记录**显示的值（密码）
+→ [C++] → **CLR 类库 (.NET Framework)**
+支持] → 更改为 **/clr**
+而不是 COM，因此**无需 IDL、TLB 或 COM 注册**。
+dows 标准配备了**可以运行 ONNX 格式 AI 模型的运行时**。这就是 **Win
+本文将**通过示例代码详细讲解**如何从 **C++（
+同，在推理前可能需要**创建并绑定 Tensor**。
+ntime`，就可以**在完全不使用 WinRT 的情况下从 C++ 处理 ONNX 模型**。
+在本文中，我将**通过分步图文并茂的方式，简单易懂地讲解如何使用 Webhook URL 从 C++ 向 Slack 发送消息**。
+ 从左侧菜单中选择“**Incoming Webhooks**”并启用它
+5. 点击“**Add New Webhook to Workspace**”并选择一个频道
+* **文件附件**
+* **带按钮的 UI**
+* **Slack App + OAuth2 带来的灵活 API 操作**
+* **Node.js**
+* **npm（Node.js 附带的包管理工具）**
+* **npx（包含在 npm 中的命令执行工具）**
+进行巨大素数分解的 **人类最强、最尖端的算法**。那就是 **「一般
+取了构成GNFS的 **「5个必备流水线（阶段）」** 进行类设计，并在不
+使用辗转相除法计算 **$\gcd(X-Y, N)$**，就可以轻而易举地求
+项式的代数域世界” **这两个世界**，并将计算分散开来。
+一个极其重要的性质：**“当变量 $x$ 代入 $m$ 时，结果正好是 $N$（$f(m) = N$）”**。换句话说，$f(m
+pha$ 所支配的 **“代数域世界 $\mathbb{Z}[\alpha]$”**，与普通的 **“有
+1. **有理侧的值** ： $a - bm
+--- .en.md ---
+**aaabbb**
+**〜Made it to the 8th station, but from there it was hell〜**
+**It's amazing, you'd think we don't need humans anymore, right?**
+at's like **landing at the 8th station of Mount Fuji in sandals**.
+er words, **AI is good at creating a prototype that looks like a finished product**, but **fi
+otice one **paradox**.
+hat time, **the need for humanity to create apps itself might disappear**.
+er words, **when the goal of "making apps with AI" is realized, a world where apps themselves are unnecessary might arrive**.
+But, **"what to make" and "why to make it" remain questions for us humans**.
+**The wall of AI development is not a paradox of technology, but of structure**
+ official **"Pixel Update and Software Repair"** tool prov
+🔗 **[Pixel Update and Software Repair Official Site](https://pixelrepair.withgoogle.com/carrier_selection)**
+> **※ Note ※**
+ocess may **completely erase (initialize)** the data 
+1. **Charge the Battery**
+2. **Prepare a Genuine USB Cable**
+3. **Install Drivers (If Necessary)**
+ff state, **press and hold the "Power button" and "Volume Down button" simultaneously** to launch
+> ⚠️ **Warning:** During th
+ process, **absolutely do not unplug the USB cable or turn off the PC.**
+**Microsoft Graph API** is exactl
+troduce a **C++ code example using WinHTTP** and the *
+2. "**Microsoft Entra ID**" > "**+ A
+dd**" > "**App registrations**" > "**New
+2. Under "**Microsoft Graph**" > "**Add
+permission**", search for the following scopes and click "**Update per
+3. **Be sure to note** the displ
+ (secret) **on the spot**
+→ [C++] → **CLR Class Library (.NET Framework)**
+Change to **/clr**
+sing COM, **IDL, TLB, and COM registration are not required**.
+ built-in **runtime capable of executing ONNX format AI models**. This is 
+**Windows ML (Windows.AI.MachineLearning)**.
+y explain **how to call `Microsoft.Windows.AI.MachineLearning` from C++ (Win32 app based)**, along wi
+th **sample code**.
+essary to **create and bind Tensors** before in
+Runtime`, **you can handle ONNX models from C++ entirely without WinRT**.
+l explain **how to send messages from C++ to Slack using a Webhook URL**, step-by-
+. Select "**Incoming Webhooks**" from the
+5. Click "**Add New Webhook to Workspace**" and sele
+* **File attachments**
+* **UI with buttons**
+* **Flexible API operations with Slack App + OAuth2**
+* **Node.js**
+* **npm (Package management tool included with Node.js)**
+* **npx (Command execution tool included with npm)**
+xists the **strongest and most advanced algorithm of humanity** for perfo
+at is the **"General Number Field Sieve (GNFS)"**.
+racts the **"5 essential pipelines (phases)"** that make
+e compute **$\gcd(X-Y, N)$** using the

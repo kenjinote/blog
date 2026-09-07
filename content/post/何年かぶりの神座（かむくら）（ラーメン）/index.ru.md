@@ -4,7 +4,7 @@ slug: "Камукура (рамэн) впервые за несколько ле
 date: 2022-09-09T21:45:19+09:00
 tags: ["рамэн", "Камукура"]
 draft: false
-image: "images/img2.jpg"
+image: "images/img2.webp"
 categories: ["ИТ/Технологии"]
 ---
 
@@ -12,8 +12,8 @@ categories: ["ИТ/Технологии"]
 
  **Рамэн с зеленым луком и кимчи** 
 
-![img1.jpg](images/img1.jpg)
+![img1.jpg](images/img1.webp)
 
-![img2.png](images/img2.jpg)
+![img2.png](images/img2.webp)
 
 Было очень вкусно. Это вкус, которого иногда хочется.

@@ -4,7 +4,7 @@ slug: "GIFアニメ画面録画ツール"
 date: 2024-02-08T01:23:01+09:00
 tags: ["Tool", "Screen Recording", "GIF"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Technology"]
 ---
 

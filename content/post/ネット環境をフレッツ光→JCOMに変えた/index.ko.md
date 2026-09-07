@@ -9,7 +9,7 @@ slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","플렛츠 광","인터넷 회선"]
 draft: false
-image: "jcom.png"
+image: "jcom.webp"
 categories: ["IT・테크놀로지"]
 ---
 
@@ -20,9 +20,9 @@ categories: ["IT・테크놀로지"]
 
 # 자택의 인터넷 환경을 플렛츠 광에서 J:COM으로 변경
 
-![](flets_hikari.png)
+![](flets_hikari.webp)
 
-![](jcom.png)
+![](jcom.webp)
 
 지인의 소개도 있어서, 자택의 인터넷 회선을 플렛츠 광에서 J:COM으로 바꿨습니다. 이유는,
 
@@ -54,7 +54,7 @@ categories: ["IT・테크놀로지"]
 - 2022/09/06 13:30경 3분에서 5분 정도
 - 그 후 몇 번인가...
 
-![네트워크 진단](trouble_shooting.png)
+![네트워크 진단](trouble_shooting.webp)
 
 DNS가 문제인 것 같아서, [여기](https://internet.watch.impress.co.jp/docs/column/shimizu/1367271.html)를 참고하여 DNS 서버를 설정했습니다.
 이걸로 어떻게 될지... DNS 설정으로도 접속할 수 없는 상태에 빠져서, 지원팀에 문의를 했더니, 긴급 유지보수를 하고 있다는 것.... 문의 직후부터 접속 상태가 좋아져서 뭔가 대책을 세워주었다고 생각합니다.

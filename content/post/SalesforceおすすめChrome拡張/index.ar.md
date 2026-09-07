@@ -4,15 +4,15 @@ slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "إضافات Chrome"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات والتقنية"]
 ---
 
 ### Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 يمكنك البحث عن الحقول المخصصة، أو إخراج حقول الكائنات المخصصة دفعة واحدة.
 
@@ -22,7 +22,7 @@ categories: ["تكنولوجيا المعلومات والتقنية"]
 
 ### Salesforce advanced Code searcher
 
-![img.png](img.png)
+![img.png](img.webp)
 
 مفيد عند البحث عن كود Salesforce.
 

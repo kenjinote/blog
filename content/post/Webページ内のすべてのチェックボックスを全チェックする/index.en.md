@@ -4,7 +4,7 @@ slug: "Webページ内のすべてのチェックボックスを全チェック�
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automation"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["blogging"]
 ---
 

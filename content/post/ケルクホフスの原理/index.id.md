@@ -4,7 +4,7 @@ slug: "prinsip-kerckhoffs"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Prinsip Kerckhoffs", "Kriptografi"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
 ---
 
@@ -118,4 +118,4 @@ Saya yakin jika Anda mempelajarinya sedikit demi sedikit tanpa merasa terbebani,
 
 ---
 
-![Auguste Kerckhoffs](img.png)
+![Auguste Kerckhoffs](img.webp)

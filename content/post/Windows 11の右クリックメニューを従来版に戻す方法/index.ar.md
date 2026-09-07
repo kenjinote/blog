@@ -4,7 +4,7 @@ slug: "كيفية-استعادة-قائمة-النقر-بزر-الماوس-ال�
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "مستكشف الملفات"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الكمبيوتر والأدوات"]
 ---
 
@@ -15,7 +15,7 @@ categories: ["الكمبيوتر والأدوات"]
 1. افتح محرر التسجيل.
 
 اضغط على `مفتاح Win` + `مفتاح R`، واكتب `regedit`، ثم اضغط على `مفتاح Enter`.
-![img_1.png](img_1.png)　
+![img_1.png](img_1.webp)　
 
 2. انتقل إلى `HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}`. إذا لم يكن هذا المفتاح موجودًا، فقم بإنشائه.
 
@@ -23,7 +23,7 @@ categories: ["الكمبيوتر والأدوات"]
 4. انتقل إلى `HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32`. إذا لم يكن هذا المفتاح موجودًا، فقم بإنشائه.
 5. تأكد من أن القيمة `(الافتراضي)` داخل `InprocServer32` فارغة.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 6. أعد تشغيل الكمبيوتر.
 7. تحقق من عودة قائمة النقر بزر الماوس الأيمن إلى الإصدار الكلاسيكي.

@@ -4,7 +4,7 @@ slug: "numero-de-linhas-de-codigo-fonte"
 date: 2025-04-17T10:33:02+09:00
 tags: ["código-fonte", "linhas de código"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["TI e Tecnologia"]
 ---
 

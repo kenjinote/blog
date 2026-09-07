@@ -4,7 +4,7 @@ slug: "目前的個人電腦規格"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["PC・ガジェット"]
 ---
 我會寫下我目前主要個人電腦的規格。

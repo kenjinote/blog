@@ -4,7 +4,7 @@ slug: "استخدام-github-copilot-في-intellij-idea"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["الأدوات وبيئة التطوير"]
 ---
 # مقدمة
@@ -15,28 +15,28 @@ GitHub Copilot هي أداة لإكمال التعليمات البرمجية ت
 # طريقة التثبيت
 1. اختر Settings (الإعدادات) من قائمة File (ملف) في IntelliJ IDEA
 2. اختر Plugins (الإضافات) وابحث عن "GitHub Copilot" في البحث
-![img.png](images/img_0.png)
+![img.png](images/img_0.webp)
 3. قم بالتثبيت من زر التثبيت (Install)
-![img_1.png](images/img_1.png)
+![img_1.png](images/img_1.webp)
 4. اضغط على زر Restart IDE (إعادة تشغيل بيئة التطوير) لإعادة تشغيل IntelliJ IDEA
-![img_2.png](images/img_2.png)
-![img_3.png](images/img_3.png)
+![img_2.png](images/img_2.webp)
+![img_3.png](images/img_3.webp)
 بمجرد إعادة تشغيل IntelliJ IDEA، يكتمل التثبيت.
 
 # التفعيل
 1. انقر على الأيقونة في أسفل اليمين
 2. انقر على Login to Github (تسجيل الدخول إلى Github)
-![img_4.png](images/img_4.png)
+![img_4.png](images/img_4.webp)
 3. انقر على زر Copy and Open (نسخ وفتح)
-![img_6.png](images/img_6.png)
+![img_6.png](images/img_6.webp)
 4. سيفتح المتصفح. إذا لم تكن مسجلاً الدخول إلى Github، قم بتسجيل الدخول، ثم الصق الرمز باستخدام Ctrl+V وانقر على زر Continue (متابعة)
-![img_7.png](images/img_7.png)
+![img_7.png](images/img_7.webp)
 5. انقر على زر Authorize GitHub Copilot Plugin (تصريح إضافة GitHub Copilot)
-![img_8.png](images/img_8.png)
-![img_9.png](images/img_9.png)
+![img_8.png](images/img_8.webp)
+![img_9.png](images/img_9.webp)
 إذا ظهرت الشاشة أعلاه، فقد اكتمل التفعيل.
 
 # تجربة الاستخدام
-![img_10.png](images/img_10.png)
+![img_10.png](images/img_10.webp)
 عند إدخال بضعة أحرف في محرر IntelliJ IDEA، سيقترح GitHub Copilot استمرار التعليمات البرمجية.
 استمتع بميزة الإكمال القوية المدعومة بالذكاء الاصطناعي!

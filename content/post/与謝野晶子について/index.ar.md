@@ -7,7 +7,7 @@ draft: false
 categories: ["تكنولوجيا المعلومات"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## 🔹 نظرة عامة على الشخصية
 

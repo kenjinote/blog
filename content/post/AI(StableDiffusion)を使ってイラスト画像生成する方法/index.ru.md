@@ -4,7 +4,7 @@ slug: "как-создать-иллюстрации-с-помощью-ии-stabl
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "иллюстрация", "генерация изображений", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Программирование"]
 ---
 
@@ -26,7 +26,7 @@ Stable diffusion — это ИИ, генерирующий изображени�
 2. В левом верхнем углу выберите `Файл` и нажмите `Создать блокнот`
 3. В меню `Редактировать` выберите `Настройки блокнота`
 4. Измените `Аппаратный ускоритель` на `GPU`
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 5. Вставьте следующий код и выполните его
 ```
 !pip install diffusers==0.8.0 transformers
@@ -52,11 +52,11 @@ image
 Используемый здесь `Prompt` основан на `Prompt` с [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5).
 
 ## Результаты генерации (несколько)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 ## Ссылки
 

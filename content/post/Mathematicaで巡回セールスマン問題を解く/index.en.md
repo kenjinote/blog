@@ -4,7 +4,7 @@ slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Traveling Salesperson Problem", "Algorithm", "Mathematics"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematics/Cryptography/Quantum"]
 ---
 # Solving the Traveling Salesperson Problem with Mathematica

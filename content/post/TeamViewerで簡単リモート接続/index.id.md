@@ -4,7 +4,7 @@ slug: "koneksi-jarak-jauh-mudah-teamviewer"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Perintah", "Koneksi Jarak Jauh"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT / Teknologi"]
 ---
 

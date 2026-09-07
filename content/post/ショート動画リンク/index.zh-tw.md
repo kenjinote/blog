@@ -4,7 +4,7 @@ slug: "短影片連結"
 date: 2024-08-25T16:24:35+09:00
 tags: ["影片", "短片"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 1. 足球 球僮

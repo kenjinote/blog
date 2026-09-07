@@ -7,7 +7,7 @@ slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "일러스트", "이미지 생성", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["프로그래밍"]
 ---
 
@@ -32,7 +32,7 @@ Stable diffusion은 독일 뮌헨 대학교의 연구팀이 개발한, 입력된
 2. 왼쪽 상단의 `파일`에서 `새 노트 만들기`를 선택합니다.
 3. `수정`에서 `노트 설정`을 선택합니다.
 4. `하드웨어 가속기`를 `GPU`로 변경합니다.
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 5. 아래의 코드를 붙여넣고 실행합니다.
 ```
 !pip install diffusers==0.8.0 transformers
@@ -58,11 +58,11 @@ image
 여기서 사용한 `Prompt`는 [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5)의 `Prompt`를 참고했습니다.
 
 ## 생성 결과 (일부)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 ## 참고
 

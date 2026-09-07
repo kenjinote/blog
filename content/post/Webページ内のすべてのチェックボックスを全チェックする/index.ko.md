@@ -8,7 +8,7 @@ slug: "Webページ内のすべてのチェックボックスを全チェック�
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "자동화"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["블로그 운영"]
 ---
 

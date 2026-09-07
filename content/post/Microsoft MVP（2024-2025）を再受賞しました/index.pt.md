@@ -4,13 +4,13 @@ slug: "fui-premiado-novamente-como-microsoft-mvp-2024-2025"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 
 # Fui premiado novamente como Microsoft MVP (2024-2025)
 
-![img\_1.png](img_1.png)
+![img\_1.png](img_1.webp)
 
 Olá, eu sou o kenji.
 É com grande satisfação que anuncio que fui novamente premiado como **Microsoft MVP (Most Valuable Professional)** este ano. Esta é a minha 8ª vez recebendo o prêmio.

@@ -4,7 +4,7 @@ slug: "Membeli mac mini(2018)"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC dan Gadget"]
 ---
 
@@ -27,9 +27,9 @@ Harganya adalah 77.000 yen.
 # Langsung menginstal xcode dan inteliJ IDEA
 
 Versi xcode adalah Version 14.3 (14E222b)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Versi inteliJ IDEA adalah 2023.1
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Ayo! Saya akan mulai mengembangkan!

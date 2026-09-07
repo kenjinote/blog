@@ -4,7 +4,7 @@ slug: "如何使用-hide-指令啟動-hidemaru-編輯器"
 date: 2024-03-29T23:45:37+09:00
 tags: ["指令", "Hidemaru 編輯器", "登錄檔"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["工具與開發環境"]
 ---
 
@@ -29,4 +29,4 @@ Windows Registry Editor Version 5.00
 ```
 如果您將上述內容儲存為 `.reg` 檔案並執行它，這些設定將被新增至登錄檔中。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

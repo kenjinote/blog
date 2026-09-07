@@ -4,7 +4,7 @@ slug: "so-rufen-sie-microsoft-windows-ai-aus-cpp-auf"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
 ---
 

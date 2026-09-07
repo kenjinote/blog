@@ -4,7 +4,7 @@ slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "取消", "解決方法"]
 draft: false
-image: "img.png"
+image: "img.webp"
 description: "Google One (Gemini) 免費體驗結束後會被收費？取消訂閱方法總結"
 categories: ["程式設計"]
 ---

@@ -4,7 +4,7 @@ slug: "receita-de-mingau-das-sete-ervas"
 date: 2024-01-06T22:22:00+09:00
 tags: ["Mingau das Sete Ervas", "Culinária"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tecnologia da Informação"]
 ---
 # As Sete Ervas

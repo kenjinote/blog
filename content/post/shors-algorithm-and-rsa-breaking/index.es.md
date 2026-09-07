@@ -10,7 +10,7 @@
 title: "¿Realmente las computadoras cuánticas destruirán el cifrado RSA? ~ El algoritmo de Shor y el estado actual ~"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Computación cuántica", "Criptoanálisis", "Algoritmo de Shor", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.jpg"
+image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
 categories: ["Matemáticas, Criptografía y Cuántica"]
 ---

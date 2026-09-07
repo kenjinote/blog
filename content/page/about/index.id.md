@@ -15,7 +15,7 @@ menu:
       icon: user
 ---
 
-![](img_1.png)
+![](img_1.webp)
 
 # Apa yang saya tulis di blog ini?
 

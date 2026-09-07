@@ -8,7 +8,7 @@ slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome 확장 프로그램"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・테크놀로지"]
 ---
 
@@ -18,9 +18,9 @@ categories: ["IT・테크놀로지"]
 
 ### Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 사용자 정의 필드를 검색하거나, 사용자 정의 객체의 필드를 일괄적으로 출력할 수 있습니다.
 
@@ -30,7 +30,7 @@ categories: ["IT・테크놀로지"]
 
 ### Salesforce advanced Code searcher
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Salesforce 코드를 검색할 때 편리합니다.
 

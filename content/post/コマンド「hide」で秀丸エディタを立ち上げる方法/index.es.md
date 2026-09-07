@@ -11,7 +11,7 @@ slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["Comandos", "Editor Hidemaru", "Registro"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
 
@@ -43,4 +43,4 @@ Windows Registry Editor Version 5.00
 ```
 Si guardas el contenido anterior en un archivo `.reg` y lo ejecutas, la configuración se agregará al registro.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

@@ -4,7 +4,7 @@ slug: "كيفية تثبيت Go"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","تثبيت"]
 draft: false
-image: "images/cover.png"
+image: "images/cover.webp"
 categories: ["برمجة"]
 ---
 # مقدمة
@@ -19,17 +19,17 @@ Go هي لغة برمجة حديثة نسبيًا أصدرتها Google في ع�
 المثبتات متاحة لكل منصة من الموقع أعلاه.
 
 اتبع التعليمات التي تظهر على الشاشة لمتابعة التثبيت.
-![img.png](images/img.png)
+![img.png](images/img.webp)
 
-![img_1.png](images/img_1.png)
+![img_1.png](images/img_1.webp)
 
-![img_2.png](images/img_2.png)
+![img_2.png](images/img_2.webp)
 
-![img_3.png](images/img_3.png)
+![img_3.png](images/img_3.webp)
 
-![img_5.png](images/img_5.png)
+![img_5.png](images/img_5.webp)
 
-![img_6.png](images/img_6.png)
+![img_6.png](images/img_6.webp)
 
 اكتمل التثبيت. إنه سهل، أليس كذلك؟
 
@@ -56,7 +56,7 @@ func main() {
 
 [https://go.dev/play/](https://go.dev/play/)
 
-![img_7.png](images/img_7.png)
+![img_7.png](images/img_7.webp)
 
 # المستندات
 

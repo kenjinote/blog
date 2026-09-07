@@ -4,7 +4,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "License", "Command Prompt"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC & Gadgets"]
 ---
 
@@ -36,7 +36,7 @@ When you run this command, partial license information will be displayed in a wi
 
 3. After waiting a few seconds, license information like the following will be displayed.
 
-   ![Windows license confirmation screen](img.png)
+   ![Windows license confirmation screen](img.webp)
 
 ## Main information displayed
 

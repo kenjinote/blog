@@ -6,7 +6,7 @@ slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github", "Dominio"]
 draft: false
-image: "images/octocat.png"
+image: "images/octocat.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
 
@@ -39,7 +39,7 @@ Para cambiar la configuración de DNS, configúralo de la siguiente manera:
 9. Asegúrate de que esté marcada la casilla en "Confirmación de cambio de servidor de nombres para configuración de registros DNS" (DNSレコード設定用ネームサーバー変更確認) y haz clic en "Ir a la pantalla de configuración" (設定画面へ進む).
 10. Si aparece una pantalla que dice "Para evitar cambios no deseados en la configuración de DNS" (意図しないDNS設定変更を防ぐために), haz clic en "No configurar" (設定しない) (selecciónalo según sea necesario).
 11. Confirma los detalles de la configuración y haz clic en "Configurar" (設定する).
-![img.png](images/img.png)
+![img.png](images/img.webp)
 12. Con esto concluye la configuración de DNS. Puede tardar hasta 72 horas en reflejarse completamente.
 13. Si no se refleja después de 72 horas, intenta contactar al soporte de Onamae.com.
 

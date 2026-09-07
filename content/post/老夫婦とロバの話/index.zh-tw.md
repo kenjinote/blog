@@ -4,7 +4,7 @@ slug: "老夫婦與驢子的故事"
 date: 2024-09-18T00:56:59+09:00
 tags: ["老夫婦與驢子的故事", "諷刺"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 

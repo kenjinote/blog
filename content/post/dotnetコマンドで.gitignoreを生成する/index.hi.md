@@ -4,7 +4,7 @@ slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["ツール・開発環境"]
 ---
 dotnet.exe कमांड का उपयोग करना उपयोगी है क्योंकि यह आपको सरल प्रोग्राम बनाने की अनुमति भी देता है।

@@ -4,7 +4,7 @@ slug: "pflege-von-lederprodukten"
 date: 2024-10-30T00:31:46+09:00
 tags: ["Lederprodukte", "Hobby"]
 draft: fales
-image: "img.png"
+image: "img.webp"
 categories: ["Lifestyle und Vermischtes"]
 ---
 
@@ -13,7 +13,7 @@ In letzter Zeit habe ich mich für Lederprodukte interessiert und verschiedene A
 # Kürzlich Gekaufte Lederpflegeprodukte
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 Preis: ca. 1.320 Yen
 
@@ -24,7 +24,7 @@ Da sie farblos ist, halte ich sie für sehr vielseitig. Da es eine eher dünnfl�
 kann es gut sein, im Vergleich zu anderen Cremes etwas mehr davon zu verwenden.
 
 ## Collonil 1909 Supreme Creme de Luxe
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 Preis: ca. 1.777 Yen
 
@@ -32,7 +32,7 @@ Eine bekannte, standardmäßige und vielseitige Creme, die nicht leicht Flecken 
 Sie verleiht ein wenig Glanz. Da sie weiß ist, scheint auch eine wasserabweisende Wirkung zu erwarten zu sein.
 
 ## M.MOWBRAY SHOE CREAM (Schwarz)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 Preis: ca. 1.000 Yen
 
@@ -44,7 +44,7 @@ Ich verwende sie für meine Anzugschuhe.
 
 Preis: ca. 700 Yen
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 Dieses Produkt war dabei, als ich eine Bürste gekauft habe.
 Wasserbasierter Reiniger für Schuhe. Entfernt Schmutz vom Leder.

@@ -4,7 +4,7 @@ slug: "數學的偉人們"
 date: 2022-09-22T23:06:37+09:00
 tags: ["數學家"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["數學・密碼・量子"]
 ---
 ### 費馬 (P, de Fermat, 1601-1665)

@@ -4,7 +4,7 @@ slug: "cara-menghasilkan-gambar-ilustrasi-menggunakan-ai-stablediffusion"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "ilustrasi", "generasi gambar", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Pemrograman"]
 ---
 
@@ -26,7 +26,7 @@ Hanya itu
 2. Dari menu `File` di kiri atas, pilih `Buku catatan baru`
 3. Dari menu `Edit`, pilih `Setelan buku catatan`
 4. Ubah `Akselerator hardware` menjadi `GPU`
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 5. Tempelkan kode berikut dan jalankan
 ```
 !pip install diffusers==0.8.0 transformers
@@ -52,11 +52,11 @@ image
 `Prompt` yang digunakan di sini didasarkan pada `Prompt` dari [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5).
 
 ## Hasil pembuatan (beberapa)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 ## Referensi
 

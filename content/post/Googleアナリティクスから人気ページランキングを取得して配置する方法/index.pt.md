@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Operação do Blog"]
 ---
 
@@ -16,7 +16,7 @@ Neste artigo, apresentamos como adicioná-lo a um blog HUGO.
 
 ## Exemplo de funcionamento
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Preparação
 - Ter o Google Analytics configurado em seu site
@@ -25,20 +25,20 @@ Neste artigo, apresentamos como adicioná-lo a um blog HUGO.
 
 1. Acesse o `Ranklet`
 2. Clique em `Sign in with Google` e faça login com sua conta do Google (ela deve estar vinculada à sua conta do Google Analytics)
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Clique em `Permitir` (`許可`)
 
 3. Configure as informações básicas
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 Configurei como mostrado acima.
 
 - Em `Google Analytics ビュー` (Visualização do Google Analytics), selecione a visualização da qual deseja obter o ranking.
 
 4. Configure a substituição de texto
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 Configurei como mostrado acima.
 Esta configuração serve para remover ` | kenji.blog` do título da página.
 
@@ -144,7 +144,7 @@ Esta configuração serve para remover ` | kenji.blog` do título da página.
 
 6. Copie o HTML da seção de publicação no site
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Copie o HTML exibido
 

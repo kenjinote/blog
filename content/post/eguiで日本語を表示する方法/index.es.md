@@ -6,7 +6,7 @@ slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "biblioteca GUI", "japonés"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI y Tecnología"]
 ---
 
@@ -45,4 +45,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## Ahora podrás mostrar texto en japonés.
 
-![img.png](img.png)
+![img.png](img.webp)

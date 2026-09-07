@@ -12,7 +12,7 @@ slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00
 tags: ["마켓 인", "프로덕트 아웃", "개발", "비즈니스", "포엠"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["라이프스타일・잡기"]
 ---
 

@@ -12,7 +12,7 @@ slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp�
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["프로그래밍"]
 ---
 

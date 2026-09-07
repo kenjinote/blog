@@ -4,7 +4,7 @@ slug: "obtenir-uniquement-la-derniere-version-du-depot-git"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "dépôt", "commande"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils et environnement de développement"]
 ---
 

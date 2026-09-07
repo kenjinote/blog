@@ -11,7 +11,7 @@ slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "텍스트 에디터"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["도구・개발 환경"]
 ---
 
@@ -22,7 +22,7 @@ categories: ["도구・개발 환경"]
 
 
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Vim 입문
 

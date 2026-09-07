@@ -11,7 +11,7 @@ slug: "wsl で「Temporary failure resolving～」と表示される場合の対
 date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "solución"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
 

@@ -4,7 +4,7 @@ slug: "سبلاتون-2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["سبلاتون 2", "ألعاب", "نينتندو سويتش"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

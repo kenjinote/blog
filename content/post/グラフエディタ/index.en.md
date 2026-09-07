@@ -4,7 +4,7 @@ slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "graph"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools & Development Environment"]
 ---
 # Graph Editor
@@ -18,6 +18,6 @@ You can also move elements around using the mouse.
 
 By clicking `Directed`, you can create directed graphs as well.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 You can save the graphs you create as images using `Download as PNG`.

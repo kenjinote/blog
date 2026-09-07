@@ -4,7 +4,7 @@ slug: "kepler-conjecture-simple-explanation"
 date: 2025-07-21T22:53:03+09:00
 tags: ["गणित", "केप्लर अनुमान", "व्याख्या"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]
 ---
 
@@ -123,4 +123,4 @@ categories: ["गणित・क्रिप्टोग्राफी・क्
 
 [PR]
 
-<div style="background:#fff;width:120px;height:215px;box-sizing:border-box;border:1px solid #ccc;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;"><div style="line-height:0;"><img src="https://static.jp.mercari.com/assets/img/common/jp/logo_horizontal.png" width="105"></div><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:100px;background:#eee;" target="_blank"><img src="https://ambassador-system.mercari.com/v1/i?id=m71496725612&svc=m" style="line-height:0;width:100px;height:100px;object-fit:contain;"/></a><div style="padding:12px 0;width:100%;text-align:center;"><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:32px;background-color:#E32B36;border-radius:4px;line-height:14px;text-align:center;color:#fff;font-weight:bold;border:0;font-size:12px;display:inline-flex;justify-content:center;align-items:center;" target="_blank">今すぐ購入</a></div></div>
+<div style="background:#fff;width:120px;height:215px;box-sizing:border-box;border:1px solid #ccc;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;"><div style="line-height:0;"><img src="https://static.jp.mercari.com/assets/img/common/jp/logo_horizontal.webp" width="105"></div><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:100px;background:#eee;" target="_blank"><img src="https://ambassador-system.mercari.com/v1/i?id=m71496725612&svc=m" style="line-height:0;width:100px;height:100px;object-fit:contain;"/></a><div style="padding:12px 0;width:100%;text-align:center;"><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:32px;background-color:#E32B36;border-radius:4px;line-height:14px;text-align:center;color:#fff;font-weight:bold;border:0;font-size:12px;display:inline-flex;justify-content:center;align-items:center;" target="_blank">今すぐ購入</a></div></div>

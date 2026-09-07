@@ -7,7 +7,7 @@ draft: false
 categories: ["IT・技术"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # 与谢野晶子
 

@@ -4,7 +4,7 @@ slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
-image: "images/IntelliJ_logo.png"
+image: "images/IntelliJ_logo.webp"
 categories: ["IT・テクノロジー"]
 ---
 # Pendahuluan
@@ -15,14 +15,14 @@ Setiap kali menulis blog, saya harus menuliskan tanggal di header file md, namun
 
 # Langkah-langkah Pengaturan
 1. Buka menu "File" > "Settings..."  
-   ![settings](./images/settings.png)
+   ![settings](./images/settings.webp)
 2. Pilih "Editor" > "Live Template" > "HTML/XML", lalu klik tombol "+"
 3. Pilih Live Template
 4. Masukkan "date" pada Abbreviation
 5. Masukkan "Menyisipkan tanggal dan waktu" pada Description
 6. Masukkan "$date$" pada Template Text
 7. Klik tombol Edit Variables  
-   ![edit_template_variables](./images/edit_template_variables.png)
+   ![edit_template_variables](./images/edit_template_variables.webp)
 8. Masukkan "date" pada Name
 9. Masukkan ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` pada Expression
 10. Tutup dialog dengan menekan OK

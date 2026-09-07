@@ -4,7 +4,7 @@ slug: "wie-man-japanisch-in-egui-anzeigt"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI-Bibliothek", "Japanisch"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT und Technologie"]
 ---
 
@@ -41,4 +41,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## Jetzt können Sie Japanisch anzeigen.
 
-![img.png](img.png)
+![img.png](img.webp)

@@ -4,7 +4,7 @@ slug: "anti-vaccine-pros-cons-ru"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Социальные проблемы", "Здоровье", "Информационная грамотность"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Образ жизни и разное"]
 ---
 

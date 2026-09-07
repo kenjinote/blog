@@ -4,7 +4,7 @@ slug: "نصل-هانلون"
 date: 2024-09-24T18:14:34+09:00
 tags: ["عبارات", "تعبيرات"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

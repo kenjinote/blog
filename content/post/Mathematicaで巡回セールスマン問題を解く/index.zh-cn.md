@@ -4,7 +4,7 @@ slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "旅行商问题", "算法", "数学"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["数学・密码学・量子"]
 ---
 # 用 Mathematica 解决旅行商问题

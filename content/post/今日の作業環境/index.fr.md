@@ -4,7 +4,7 @@ slug: "environnement-de-travail-daujourdhui"
 date: 2022-09-04T14:29:09+09:00
 tags: ["Divers", "Enfants"]
 draft: false
-image: "images/today_workplase.jpg"
+image: "images/today_workplase.webp"
 categories: ["Informatique et Technologie"]
 ---
 

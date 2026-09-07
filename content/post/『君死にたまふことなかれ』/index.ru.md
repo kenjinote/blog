@@ -7,7 +7,7 @@ draft: false
 categories: ["ИТ и Технологии"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Акико Ёсано
 

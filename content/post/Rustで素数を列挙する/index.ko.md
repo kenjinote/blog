@@ -8,7 +8,7 @@ slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","소수","알고리즘"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["프로그래밍"]
 ---
 

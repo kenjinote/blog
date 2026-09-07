@@ -8,7 +8,7 @@ slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Colección de citas"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT y Tecnología"]
 ---
 
@@ -38,4 +38,4 @@ categories: ["IT y Tecnología"]
 
 > Aquellos que conocen el estado actual de la teoría del álgebra simbólica son conscientes de que la validez de este proceso analítico no depende de la interpretación de los símbolos empleados, sino únicamente de las leyes mediante las cuales se combinan. (George Boole, al comienzo de su obra "El análisis matemático de la lógica", 1847)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

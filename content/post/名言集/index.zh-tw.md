@@ -4,7 +4,7 @@ slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["名言集"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT與技術"]
 ---
 
@@ -30,4 +30,4 @@ categories: ["IT與技術"]
 
 > 了解符號代數理論現狀的人都知道，這種分析過程的有效性，並不取決於所用符號的解釋，而是僅取決於它們組合的法則。 (喬治·布爾，在《邏輯的數學分析》開篇 1847)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

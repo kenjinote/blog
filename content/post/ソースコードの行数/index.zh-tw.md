@@ -4,7 +4,7 @@ slug: "source-code-lines"
 date: 2025-04-17T10:33:02+09:00
 tags: ["原始碼", "行數"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["IT・科技"]
 ---
 

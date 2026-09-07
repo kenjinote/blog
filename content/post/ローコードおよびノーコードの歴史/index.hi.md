@@ -4,7 +4,7 @@ slug: "low-code-and-no-code-history"
 date: 2025-04-26T16:46:11+09:00
 tags: ["लो-कोड", "नो-कोड", "इतिहास"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

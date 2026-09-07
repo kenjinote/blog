@@ -4,7 +4,7 @@ slug: "解析執行檔（exe）內容的工具"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "執行檔", "解析"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC・小工具"]
 ---
 
@@ -17,46 +17,46 @@ categories: ["PC・小工具"]
 
 ## 7-Zip
 
-![img.png](img.png)
+![img.png](img.webp)
 
 EXE 檔案有時會因為體積容易變大，而透過壓縮檔案來建立。在這種情況下，使用檔案壓縮與解壓縮軟體 7-Zip，可以將執行檔解壓縮並檢查其內容。同樣能進行解壓縮的工具還有一款叫作 WinRAR。
 
 ## Resource Hacker
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 可以從 EXE 檔案中提取出資源（圖示、點陣圖、對話方塊、字串等）。此外，因為也具備二進位編輯器的功能，所以也能夠編輯並改寫 EXE 檔案的內容。
 
 ## PE Explorer
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 可以解析 Windows 用的 PE 檔案（EXE、DLL、OCX、SYS、驅動程式）。PE Explorer 提供各種解析功能，例如顯示檔案結構、顯示檔案標頭、顯示目錄項目、顯示匯出的函式與符號等。
 
 ## Dependency Walker
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 可以檢查 EXE 檔案所依賴的 DLL 檔案，並確認它們是否有被正確載入。此外，也能追蹤 DLL 檔案的函式呼叫。
 
 ## Ghidra
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 由 NSA（美國國家安全局）開發並作為開源軟體免費公開的強大逆向工程工具。不僅能對 EXE 檔案進行反組譯（轉換為組合語言），還具備能反編譯成接近 C 語言形式的功能，非常受歡迎。
 
 ## IDA Free / IDA Pro
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 在惡意軟體解析與逆向工程領域，成為全球業界標準的高階反組譯器與反編譯器。Pro 版非常昂貴，但如果是個人或非商業用途，可以免費使用功能限制版的「IDA Free」。
 
 ## x64dbg (x32dbg)
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 Windows 專用的開源除錯器。專門用於一邊執行執行檔，一邊以逐步執行來解析內容與記憶體狀態的「動態解析」，常被用於解讀 Crackme（用於解析練習的程式）或調查惡意軟體的行為。
 
 ## ILSpy / dotPeek
 
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 
 如果目標的 EXE 檔案是使用 C# 等 .NET 相關語言所建立，透過使用這些工具，可以將其反編譯到幾乎與原始程式碼相同的狀態，將內容完全曝光。
 

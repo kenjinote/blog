@@ -3,7 +3,7 @@ title: "[Análise Completa] O que é um Computador Quântico? ~ Princípios Fina
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Computador Quântico", "Física", "Tecnologia"]
-image: "quantum_basics_eyecatch_1788613712487.jpg"
+image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["Matemática・Criptografia・Quântica"]
 ---
 

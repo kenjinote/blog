@@ -4,7 +4,7 @@ slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","простые числа","алгоритм"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["программирование"]
 ---
 Я написал программу для перечисления простых чисел на Rust.

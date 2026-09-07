@@ -4,7 +4,7 @@ slug: "पसंदीदा-जापानी-संगीत"
 date: 2024-01-06T04:11:01+09:00
 tags: ["जापानी संगीत", "संगीत"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["जीवन शैली और विविध"]
 ---
 

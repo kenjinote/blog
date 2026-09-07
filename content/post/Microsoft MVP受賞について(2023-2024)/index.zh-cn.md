@@ -4,7 +4,7 @@ slug: "Microsoft MVP受賞について(2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "获奖"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具与开发环境"]
 ---
 

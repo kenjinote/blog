@@ -4,7 +4,7 @@ slug: "Sobre o Prêmio Microsoft MVP (2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Prêmio"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 

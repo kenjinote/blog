@@ -4,7 +4,7 @@ slug: "如何從 C++ 向 Microsoft Teams 發佈訊息（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具與開發環境"]
 ---
 

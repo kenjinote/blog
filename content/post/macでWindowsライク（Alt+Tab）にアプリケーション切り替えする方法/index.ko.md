@@ -8,7 +8,7 @@ slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替�
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "단축키", "애플리케이션 전환"]
 draft: 
-image: "img.png"
+image: "img.webp"
 categories: ["PC·가젯"]
 ---
 

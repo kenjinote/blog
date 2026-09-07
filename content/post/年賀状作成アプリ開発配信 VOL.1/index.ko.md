@@ -12,7 +12,7 @@ slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["연하장 작성 앱 개발 방송", "YouTube"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・테크놀로지"]
 ---
 

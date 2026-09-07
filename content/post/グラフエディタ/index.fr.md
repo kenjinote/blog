@@ -4,7 +4,7 @@ slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "graphes"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils / Environnement de développement"]
 ---
 # Éditeur de graphes
@@ -18,6 +18,6 @@ De plus, il semble que vous puissiez également déplacer les éléments avec la
 
 Vous pouvez également créer un graphe orienté en cliquant sur `Directed`.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Vous pouvez enregistrer les graphes que vous avez créés sous forme d'image à l'aide de `Download as PNG`.

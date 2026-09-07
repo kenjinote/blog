@@ -4,7 +4,7 @@ slug: "Afficher une MessageBox en Rust"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["Programmation"]
 ---
 
@@ -53,7 +53,7 @@ fn main() {
 ```
 
 6. Exécutez `cargo run` dans l'invite de commande.
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. Si vous souhaitez effectuer une version de release, exécutez `cargo build --release`.
 

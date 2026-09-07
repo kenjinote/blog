@@ -4,11 +4,11 @@ slug: "Wie man Diagramme mit Python (matplotlib.pyplot) zeichnet"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Diagramme", "Mathematik", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematik・Kryptographie・Quanten"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Was Sie brauchen
 - Google-Konto
@@ -30,7 +30,7 @@ plt.show()
 
 # Ausführungsergebnis
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Referenzen
 

@@ -4,7 +4,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "许可证", "命令提示符"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC・数码"]
 ---
 
@@ -36,7 +36,7 @@ slmgr /dli
 
 3. 等待几秒钟，将显示如下所示的许可证信息。
 
-   ![Windows许可证确认画面](img.png)
+   ![Windows许可证确认画面](img.webp)
 
 ## 显示的主要信息
 

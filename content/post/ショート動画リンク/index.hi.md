@@ -4,7 +4,7 @@ slug: "शॉर्ट-वीडियो-लिंक"
 date: 2024-08-25T16:24:35+09:00
 tags: ["वीडियो", "शॉर्ट"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी-प्रौद्योगिकी"]
 ---
 1. फुटबॉल बॉल बॉय

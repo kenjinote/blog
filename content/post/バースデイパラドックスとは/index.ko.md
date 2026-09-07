@@ -12,7 +12,7 @@ date: 2024-04-02T01:20:50+09:00
 tags: ["수학", "역설"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["수학・암호・양자"]
 ---
 

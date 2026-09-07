@@ -11,7 +11,7 @@ slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "복원", "취소"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["도구・개발 환경"]
 ---
 

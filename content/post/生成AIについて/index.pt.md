@@ -4,7 +4,7 @@ slug: "sobre-a-ia-generativa"
 date: 2024-04-16T02:13:56+09:00
 tags: ["IA Generativa", "YouTube", "Palestra"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IA e Tecnologia"]
 ---
 

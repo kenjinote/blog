@@ -4,7 +4,7 @@ slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["الأدوات وبيئة التطوير"]
 ---
 يعد أمر dotnet.exe مفيدًا لأنه يسمح لك حتى بإنشاء برامج بسيطة، لذلك من الملائم أن يكون جاهزًا للاستخدام.

@@ -4,7 +4,7 @@ slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ブログ運営"]
 ---
 # Introdução
@@ -20,7 +20,7 @@ Se você colocar a imagem na pasta `static`, especificar apenas o nome do arquiv
 
 ```
 [params]
-  images = ["twitter_card.jpg"]
+  images = ["twitter_card.webp"]
 ```
 
 Estrutura de Pastas
@@ -32,9 +32,9 @@ root
 │      └─Pasta do artigo
 │         │  index.md (Escreva aqui)
 │         └─images
-│             cover.png (Coloque aqui)
+│             cover.webp (Coloque aqui)
 └─static
-    twitter_card.jpg (Coloque aqui)
+    twitter_card.webp (Coloque aqui)
 ```
 
 ## Informações de Cabeçalho de Cada Artigo
@@ -43,7 +43,7 @@ Se você definir `relative` como `true`, poderá especificar com um caminho rela
 
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
 ```
 
@@ -51,7 +51,7 @@ cover:
 Se você não deseja exibir a imagem de capa na parte superior do artigo, adicione um item chamado `hidden` sob `cover` e defina-o como `true`.
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
   hidden: true
 ```

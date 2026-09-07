@@ -4,7 +4,7 @@ slug: "mengapa-saya-menyukai-matematika-dan-komputer"
 date: 2022-09-23T01:56:52+09:00
 tags: ["catatan-kecil"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Matematika, Kriptografi, dan Kuantum"]
 ---
 

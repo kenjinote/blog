@@ -4,7 +4,7 @@ slug: "Alle Kontrollkästchen auf einer Webseite aktivieren"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatisierung"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["blog-management"]
 ---
 

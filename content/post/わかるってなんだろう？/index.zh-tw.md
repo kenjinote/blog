@@ -4,7 +4,7 @@ slug: "懂了是什麼意思"
 date: 2022-09-24T02:38:18+09:00
 tags: ["雜記"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT與科技"]
 ---
 # 懂了是什麼意思？

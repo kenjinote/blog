@@ -4,7 +4,7 @@ slug: "Bildlayout in PaperMod ändern"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ブログ運営"]
 ---
 Das Standardlayout zentriert das Bild mit einer Breite von 100 %,

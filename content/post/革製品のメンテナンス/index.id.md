@@ -4,7 +4,7 @@ slug: "Perawatan Produk Kulit"
 date: 2024-10-30T00:31:46+09:00
 tags: ["Produk Kulit", "Hobi"]
 draft: fales
-image: "img.png"
+image: "img.webp"
 categories: ["Gaya Hidup dan Serba-serbi"]
 ---
 
@@ -13,7 +13,7 @@ Baru-baru ini, saya mulai tertarik dengan produk kulit dan telah membeli berbaga
 # Produk Perawatan Kulit yang Baru Saja Dibeli
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 Harga: sekitar 1.320 yen
 
@@ -24,7 +24,7 @@ Karena tidak berwarna, saya rasa krim ini sangat serbaguna. Karena teksturnya ya
 mungkin lebih baik menggunakan sedikit lebih banyak dibandingkan krim lainnya.
 
 ## Collonil 1909 Supreme Creme de Luxe
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 Harga: sekitar 1.777 yen
 
@@ -32,7 +32,7 @@ Krim yang terkenal, standar, dan serbaguna yang tidak mudah meninggalkan noda. K
 Memberikan sedikit kilau. Berwarna putih dan tampaknya juga memiliki efek menolak air.
 
 ## M.MOWBRAY SHOE CREAM (Hitam)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 Harga: sekitar 1.000 yen
 
@@ -44,7 +44,7 @@ Saya menggunakannya untuk sepatu jas saya.
 
 Harga: sekitar 700 yen
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 Ini adalah produk yang didapat saat saya membeli sikat.
 Pembersih sepatu berbahan dasar air. Menghilangkan kotoran dari kulit.

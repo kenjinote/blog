@@ -12,7 +12,7 @@ slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "명령어"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["프로그래밍"]
 ---
 

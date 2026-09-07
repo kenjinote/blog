@@ -4,7 +4,7 @@ slug: "comment-lancer-l-editeur-hidemaru-avec-la-commande-hide"
 date: 2024-03-29T23:45:37+09:00
 tags: ["commande", "Éditeur Hidemaru", "registre"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Outils et Environnement de Développement"]
 ---
 
@@ -29,4 +29,4 @@ Windows Registry Editor Version 5.00
 ```
 Si vous enregistrez le contenu ci-dessus dans un fichier `.reg` et que vous l'exécutez, les paramètres seront ajoutés au registre.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

@@ -12,7 +12,7 @@ slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00
 tags: ["음모론", "포엠"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT·테크놀로지"]
 ---
 

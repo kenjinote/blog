@@ -4,7 +4,7 @@ slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
 ---
 Perintah dotnet.exe berguna karena memungkinkan Anda untuk membangun program sederhana, jadi sangat praktis untuk disiapkan.

@@ -4,7 +4,7 @@ slug: "cara-menutup-dan-memulai-ulang-file-explorer"
 date: 2024-03-30T15:40:24+09:00
 tags: ["File Explorer"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["IT dan Teknologi"]
 ---
 
@@ -13,18 +13,18 @@ categories: ["IT dan Teknologi"]
 Metode ini berlaku untuk Windows 10. Di Windows 11, menu tersebut sepertinya tidak muncul.
 Jika Anda mengklik kanan pada taskbar sambil menahan tombol `Shift` dan `Ctrl`, opsi `Keluar dari Explorer` akan muncul di menu.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## Cara Menutup melalui Task Manager
 
 1. Tekan tombol `Ctrl` + `Shift` + `Esc` untuk membuka Task Manager.
 2. Pilih `Detail`.
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 3. Pilih `explorer.exe`, tekan tombol `Delete`, dan ketika ditanya `Apakah Anda ingin mengakhiri explorer.exe?`, pilih `Akhiri proses`.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Cara Menutup melalui Command Prompt
 

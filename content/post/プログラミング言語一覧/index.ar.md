@@ -4,7 +4,7 @@ slug: "قائمة-لغات-البرمجة"
 date: 2023-04-01T03:45:53+09:00
 tags: ["لغات البرمجة"]
 draft: true
-image: "img.png"
+image: "img.webp"
 categories: ["برمجة"]
 ---
 

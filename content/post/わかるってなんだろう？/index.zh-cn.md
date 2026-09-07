@@ -4,7 +4,7 @@ slug: "わかるってなんだろう？"
 date: 2022-09-24T02:38:18+09:00
 tags: ["杂记"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 # 什么是“懂”？

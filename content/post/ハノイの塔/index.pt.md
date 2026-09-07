@@ -4,7 +4,7 @@ slug: "torre-de-hanoi"
 date: 2025-04-17T22:23:14+09:00
 tags: ["Torre de Hanói", "Algoritmo", "Python"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Programação"]
 ---
 

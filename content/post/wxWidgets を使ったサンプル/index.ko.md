@@ -9,7 +9,7 @@ slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "샘플"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["프로그래밍"]
 ---
 
@@ -130,7 +130,7 @@ void MyFrame::OnHello(wxCommandEvent& event)
 ```
 10. 빌드하고 실행하면 아래와 같은 창이 열립니다.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 
 ## 참고

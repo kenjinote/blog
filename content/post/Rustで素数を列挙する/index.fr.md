@@ -4,7 +4,7 @@ slug: "Énumération des nombres premiers en Rust"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","Nombres Premiers","Algorithme"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Programmation"]
 ---
 J'ai écrit un programme pour énumérer les nombres premiers en Rust.

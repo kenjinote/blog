@@ -4,7 +4,7 @@ slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Komunitas", "Lain-lain"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI dan Teknologi"]
 ---
 # Apa yang Dibutuhkan Komunitas

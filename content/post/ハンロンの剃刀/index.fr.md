@@ -4,7 +4,7 @@ slug: "le-rasoir-de-hanlon"
 date: 2024-09-24T18:14:34+09:00
 tags: ["Expression", "Locution"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 

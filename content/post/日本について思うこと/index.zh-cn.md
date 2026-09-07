@@ -4,7 +4,7 @@ slug: "日本について思うこと"
 date: 2022-09-06T02:24:11+09:00
 tags: ["杂记"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・技术"]
 ---
 我打算整理一下自己认为日本社会中有些奇怪的地方以及我的一些思考。
@@ -13,8 +13,8 @@ categories: ["IT・技术"]
 说到日本的奖学金，大部分都是带息并且必须偿还的。
 另外，大学学费从1950年起就一直在增加，（奖学金的）领取率也呈上升趋势。
 
-![学费的推移](./images/japanese_tuition_fee.png)
-![奖学金领取率的推移](./images/receipt_rate.png)
+![学费的推移](./images/japanese_tuition_fee.webp)
+![奖学金领取率的推移](./images/receipt_rate.webp)
 
 另一方面，最近的平均借款总额似乎高达324万日元。
 

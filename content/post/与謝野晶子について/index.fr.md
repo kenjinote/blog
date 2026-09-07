@@ -7,7 +7,7 @@ draft: false
 categories: ["Informatique et Technologie"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## 🔹 Aperçu du profil
 

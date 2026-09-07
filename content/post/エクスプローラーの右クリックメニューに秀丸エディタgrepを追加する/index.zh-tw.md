@@ -4,7 +4,7 @@ slug: "將-hidemaru-editor-grep-新增至檔案總管的右鍵選單"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "檔案總管", "右鍵選單", "grep", "登錄檔"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具與開發環境"]
 ---
 

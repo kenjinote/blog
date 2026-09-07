@@ -4,7 +4,7 @@ slug: "bacche-ka-vichar"
 date: 2022-09-07T04:40:52+09:00
 tags: ["बच्चा"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 जब माँ बीमार हो गई और बिस्तर पर थी,

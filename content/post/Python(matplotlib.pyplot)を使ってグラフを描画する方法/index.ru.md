@@ -4,11 +4,11 @@ slug: "как-рисовать-графики-с-помощью-python-matplotli
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "график", "математика", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Математика, криптография, квант"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Требования
 - Аккаунт Google
@@ -30,7 +30,7 @@ plt.show()
 
 # Результат
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Ссылки
 

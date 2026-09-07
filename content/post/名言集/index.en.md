@@ -4,7 +4,7 @@ slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Quotes"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Technology"]
 ---
 
@@ -30,4 +30,4 @@ categories: ["IT & Technology"]
 
 > They who are acquainted with the present state of the theory of Symbolical Algebra, are aware, that the validity of the processes of analysis does not depend upon the interpretation of the symbols which are employed, but solely upon the laws of their combination. (George Boole, at the beginning of his book *The Mathematical Analysis of Logic*, 1847)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

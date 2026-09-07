@@ -4,7 +4,7 @@ slug: "Ferramenta de gravação de tela em GIF animado"
 date: 2024-02-08T01:23:01+09:00
 tags: ["Ferramenta", "Gravação de tela", "GIF"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 

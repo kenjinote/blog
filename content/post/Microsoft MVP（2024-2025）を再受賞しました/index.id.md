@@ -4,13 +4,13 @@ slug: "Saya Kembali Menerima Penghargaan Microsoft MVP (2024-2025)"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
 ---
 
 # Saya Kembali Menerima Penghargaan Microsoft MVP (2024-2025)
 
-![img\_1.png](img_1.png)
+![img\_1.png](img_1.webp)
 
 Halo, saya kenji.
 Saya ingin mengabarkan bahwa tahun ini saya kembali menerima penghargaan **Microsoft MVP (Most Valuable Professional)**. Ini adalah penghargaan ke-8 saya.

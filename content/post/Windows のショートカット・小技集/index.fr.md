@@ -4,7 +4,7 @@ slug: "Raccourcis et astuces Windows"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Astuces", "Raccourcis"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC et Gadgets"]
 ---
 Voici une collection de petites astuces pour Windows que vous pouvez utiliser au quotidien. J'espère que ceux qui commencent à utiliser Windows la trouveront utile.
@@ -48,27 +48,27 @@ Elle est conçue pour Windows 11, mais je pense que la plupart des astuces fonct
 ## Éteindre Windows
 - Si vous affichez le bureau avec `Win + M` ou `Win + D`, ou si la barre des tâches est active avec `Win + T` ou `Win + B`, appuyer sur `Alt + F4` affichera une boîte de dialogue comme ci-dessous. Assurez-vous que "Arrêter" est sélectionné et appuyez sur `Enter`.
   Vous pouvez aussi faire `Win + R` → `Alt + F4` → `Alt + F4`.
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - Vous pouvez éteindre avec `Win + X` → `U` → `U`.
 - Vous pouvez éteindre en tapant `shutdown /s /t 0` dans l'Invite de commandes ou dans "Exécuter" (`Win + R`). Ajouter `/f` forcera l'arrêt.
 
 ## Redémarrer Windows
 - Si vous affichez le bureau avec `Win + M` ou `Win + D`, ou si la barre des tâches est active avec `Win + T` ou `Win + B`, appuyer sur `Alt + F4` affichera une boîte de dialogue comme ci-dessous. Appuyez sur `↓` une fois pour sélectionner "Redémarrer" et appuyez sur `Enter`.
   Vous pouvez aussi faire `Win + R` → `Alt + F4` → `Alt + F4`.
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - Vous pouvez redémarrer avec `Win + X` → `U` → `R`.
 - Vous pouvez redémarrer avec `shutdown /r /t 0`. Ajouter `/f` forcera le redémarrage.
 
 ## Mettre Windows en veille
 - Si vous affichez le bureau avec `Win + M` ou `Win + D`, ou si la barre des tâches est active avec `Win + T` ou `Win + B`, appuyer sur `Alt + F4` affichera une boîte de dialogue comme ci-dessous. Appuyez sur `↑` une fois pour sélectionner "Veille" et appuyez sur `Enter`.
   Vous pouvez aussi faire `Win + R` → `Alt + F4` → `Alt + F4`.
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - Vous pouvez mettre en veille prolongée en tapant `rundll32.exe powrprof.dll,SetSuspendState` dans `Win + R` ou l'Invite de commandes.
 
 ## Se déconnecter de Windows
 - Si vous affichez le bureau avec `Win + M` ou `Win + D`, ou si la barre des tâches est active avec `Win + T` ou `Win + B`, appuyer sur `Alt + F4` affichera une boîte de dialogue comme ci-dessous. Appuyez sur `↑` deux fois pour sélectionner "Se déconnecter" et appuyez sur `Enter`.
   Vous pouvez aussi faire `Win + R` → `Alt + F4` → `Alt + F4`.
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - `Win + X` → `U` → `I`
 - `Ctrl + Alt + Del` → `Tab` deux fois ou `↓` deux fois → `Enter` ou `Space`
 - Vous pouvez vous déconnecter avec `logoff`.
@@ -84,7 +84,7 @@ Elle est conçue pour Windows 11, mais je pense que la plupart des astuces fonct
 * La fenêtre suivra le curseur de la souris, vous permettant de la récupérer même si elle est affichée hors de l'écran.
 
 ## Terminer un processus avec le Gestionnaire des tâches
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. Vous pouvez lancer le Gestionnaire des tâches avec `Ctrl + Shift + Esc`.
 2. Vous pouvez changer d'onglet avec `Ctrl + Tab`.
 3. Après avoir appuyé sur `Tab` dans l'onglet `Détails`, vous pouvez rechercher des processus par préfixe en utilisant la saisie alphanumérique du clavier.
@@ -114,85 +114,85 @@ Par exemple, vous pouvez terminer l'Explorateur avec `taskkill /f /im explorer.e
 Vous pouvez sélectionner des textes ou images précédemment copiés pour les copier à nouveau.
 
 ## Exécuter
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - Vous pouvez lancer "Exécuter" avec `Win + R`.
 
 Voici quelques commandes que vous pouvez exécuter dans "Exécuter" ou dans l'Invite de commandes.
 
 ## Ouvrir Edge
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - Tapez `msedge` et appuyez sur `Enter`
 
 ## Ouvrir Internet Explorer 11 (IE11)
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - Tapez `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` et appuyez sur `Enter`
 
 ## Ouvrir Terminal
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - Tapez `wt` et appuyez sur `Enter`
 
 ## Ouvrir le Panneau de configuration
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - Tapez `control` et appuyez sur `Enter`
 - Vous pouvez également l'ouvrir avec `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}`.
 
 ## Lancer le Bloc-notes
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - Tapez `notepad` et appuyez sur `Enter`  
 
 ## Lancer la Calculatrice
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - Tapez `calc` et appuyez sur `Enter`
 
 ## Lancer Paint
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - Tapez `mspaint` et appuyez sur `Enter`  
 
 ## Lancer PowerShell
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - Tapez `powershell` et appuyez sur `Enter`  
 
 ## Lancer Visual Studio Code
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - Tapez `code` et appuyez sur `Enter`
 
 ## Lancer Excel
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - Tapez `excel` et appuyez sur `Enter`  
 * Uniquement si Excel est installé.
 
 ## Ouvrir Word
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - Tapez `winword` et appuyez sur `Enter`  
 * Uniquement si Word est installé.
 
 ## Ouvrir PowerPoint
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - Tapez `powerpnt` et appuyez sur `Enter`  
   * Uniquement si PowerPoint est installé.
 
 ## Ouvrir la Configuration du système
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - Tapez `msconfig` et appuyez sur `Enter`  
 
 ## Ouvrir les Propriétés système
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - Tapez `sysdm.cpl` et appuyez sur `Enter`
 
 ## Ouvrir À propos de Windows
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - Tapez `winver` et appuyez sur `Enter`
 
 ## Ouvrir le Clavier visuel
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - Tapez `osk` et appuyez sur `Enter`
 
 ## Ouvrir WordPad
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - Tapez `wordpad` ou `write` et appuyez sur `Enter`
 
 ## Ouvrir l'Éditeur du Registre
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - Tapez `regedit` et appuyez sur `Enter`
 
 ## Ouvrir Programmes et fonctionnalités
@@ -202,18 +202,18 @@ Voici quelques commandes que vous pouvez exécuter dans "Exécuter" ou dans l'In
 - Tapez `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}` et appuyez sur `Enter`
 
 ## Ouvrir les Propriétés de Souris
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - Tapez `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}` et appuyez sur `Enter`
 
 ## Ouvrir Son
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - Tapez `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}` et appuyez sur `Enter`
 
 ## Ouvrir Comptes d'utilisateurs
 - Tapez `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}` et appuyez sur `Enter`
 
 ## Copier le texte d'une boîte de message standard
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - Vous pouvez copier le texte d'une boîte de message standard avec `Ctrl + C`.
 Copier la boîte de message ci-dessus copiera ceci dans le presse-papiers :
 ```

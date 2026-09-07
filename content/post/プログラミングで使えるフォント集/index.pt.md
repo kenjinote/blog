@@ -4,7 +4,7 @@ slug: "colecao-de-fontes-para-programacao"
 date: 2024-03-30T02:21:31+09:00
 tags: ["Programação", "Fontes"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Programação"]
 ---
 

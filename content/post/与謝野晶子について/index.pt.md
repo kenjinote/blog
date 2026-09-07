@@ -7,7 +7,7 @@ draft: false
 categories: ["Tecnologia da Informação"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## 🔹 Resumo do Perfil
 

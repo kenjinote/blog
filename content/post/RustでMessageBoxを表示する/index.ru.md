@@ -4,7 +4,7 @@ slug: "отображение-messagebox-в-rust"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["Программирование"]
 ---
 
@@ -53,7 +53,7 @@ fn main() {
 ```
 
 6. Выполните команду `cargo run` в командной строке.
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. Для сборки релиза выполните `cargo build --release`.
 

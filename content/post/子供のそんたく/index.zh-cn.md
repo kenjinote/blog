@@ -4,7 +4,7 @@ slug: "子供のそんたく"
 date: 2022-09-07T04:40:52+09:00
 tags: ["孩子"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・技术"]
 ---
 妈妈身体不舒服卧床休息的时候，

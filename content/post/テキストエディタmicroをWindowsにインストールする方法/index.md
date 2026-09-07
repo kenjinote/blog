@@ -4,7 +4,7 @@ slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "テキストエディタ"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ツール・開発環境"]
 ---
 
@@ -28,7 +28,7 @@ zipファイルを解凍して、ファイルを一式任意のフォルダー�
 ## microの使い方
 
 コマンドプロンプトで`micro`と入力して実行すると、以下のような画面が表示される。
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 主な操作方法とショートカットキーは下記のとおりです。
 

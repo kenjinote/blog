@@ -4,7 +4,7 @@ slug: "Resolvendo o Problema do Caixeiro Viajante com Mathematica"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problema do Caixeiro Viajante", "Algoritmo", "Matemática"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Matemática, Criptografia, Quântica"]
 ---
 # Resolvendo o Problema do Caixeiro Viajante com Mathematica

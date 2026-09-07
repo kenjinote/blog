@@ -4,7 +4,7 @@ slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00
 tags: ["マーケットイン", "プロダクトアウト", "開発", "ビジネス", "ポエム"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ライフスタイル・雑記"]
 ---
 

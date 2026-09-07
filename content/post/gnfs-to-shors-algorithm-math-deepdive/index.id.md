@@ -3,7 +3,7 @@ title: "【Pemahaman Lengkap dengan Rumus】 Mengapa \"GNFS\" Klasik Terkuat Dik
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Komputer Kuantum", "GNFS", "Algoritma Shor", "Kriptanalisis", "Matematika"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
+image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Matematika, Kriptografi, Kuantum"]

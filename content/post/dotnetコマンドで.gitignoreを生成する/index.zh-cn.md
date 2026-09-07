@@ -4,7 +4,7 @@ slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["工具与开发环境"]
 ---
 使用 dotnet.exe 命令甚至可以进行简单的程序构建，因此配置好它是很方便的。

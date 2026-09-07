@@ -4,7 +4,7 @@ slug: "सर्टिफिकेट-एरर-के-कारण-github-copil
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["उपकरण और विकास परिवेश"]
 ---
 
@@ -19,7 +19,7 @@ categories: ["उपकरण और विकास परिवेश"]
 
 ## समाधान
 यह ESET का एक बग प्रतीत होता है। ESET की उन्नत सेटिंग्स में "SSL/TLS सक्षम करें" को बंद करें।
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## संदर्भ
 

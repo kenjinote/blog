@@ -4,7 +4,7 @@ slug: "cara-menampilkan-bahasa-jepang-di-egui"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "pustaka-GUI", "jepang"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Teknologi-TI"]
 ---
 
@@ -41,4 +41,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## Sekarang Anda Dapat Menampilkan Bahasa Jepang.
 
-![img.png](img.png)
+![img.png](img.webp)

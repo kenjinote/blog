@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["博客运营"]
 ---
 
@@ -16,7 +16,7 @@ categories: ["博客运营"]
 
 ## 运行效果
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 准备工作
 - 网站已设置 Google Analytics
@@ -25,20 +25,20 @@ categories: ["博客运营"]
 
 1. 访问 `Ranklet`
 2. 点击 `Sign in with Google`，使用 Google 账号登录（需与 Google Analytics 账号绑定）
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 点击 `允许`
 
 3. 设置基本信息
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 如上图所示进行了设置。
 
 - 在 `Google Analytics ビュー`（Google Analytics 视图）中，选择要获取排行榜的视图。
 
 4. 设置文本替换
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 如上图所示进行了设置。
 设置目的是删除页面标题中的 ` | kenji.blog`。
 
@@ -144,7 +144,7 @@ categories: ["博客运营"]
 
 6. 从网站发布中复制 HTML
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 复制显示的 HTML
 

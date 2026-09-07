@@ -4,7 +4,7 @@ slug: "comment-creer-un-raccourci-pour-verrouiller-votre-ordinateur"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Verrouiller l'ordinateur", "Raccourci"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC et Gadgets"]
 ---
 
@@ -16,32 +16,32 @@ C'est pratique car vous pouvez verrouiller votre ordinateur en double-cliquant s
 
 #### 1. Faites un clic droit sur le bureau, sélectionnez `Nouveau` > `Raccourci`
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 #### 2. L'écran de création de raccourci apparaîtra, entrez `rundll32.exe user32.dll,LockWorkStation` et cliquez sur `Suivant`
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 3. Entrez le nom du raccourci `Verrouiller l'ordinateur` et cliquez sur `Terminer`
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. Modifier l'icône du raccourci créé
 
 Faites un clic droit sur le raccourci créé et sélectionnez `Propriétés`
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 Cliquez sur `Changer d'icône`
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 Sélectionnez l'icône de cadenas jaune et cliquez sur `OK`, puis cliquez à nouveau sur `OK` pour fermer les propriétés
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 C'est tout.
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 Double-cliquer sur le raccourci créé verrouillera l'ordinateur.
 

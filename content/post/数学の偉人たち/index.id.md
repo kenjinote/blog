@@ -4,7 +4,7 @@ slug: "tokoh-tokoh-besar-matematika"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Matematikawan"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
 ---
 ### Fermat (P. de Fermat, 1601-1665)

@@ -8,7 +8,7 @@ slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows","팁","단축키"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・가젯"]
 ---
 
@@ -57,27 +57,27 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 ## Windows 종료(셧다운)
 - `Win + M`이나 `Win + D`로 바탕 화면을 표시한 상태 또는 `Win + T`나 `Win + B`로 작업 표시줄이 활성화된 상태에서 `Alt + F4`를 누르면 아래와 같은 대화 상자가 표시되므로 "시스템 종료"가 선택된 것을 확인하고 `Enter`
   `Win + R` → `Alt + F4` → `Alt + F4`도 가능.
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - `Win + X` → `U` → `U`로 종료할 수 있습니다.
 - 명령 프롬프트나 `Win + R`의 "실행"에서 `shutdown /s /t 0`을 입력하면 종료할 수 있습니다. 추가로 `/f`를 붙이면 강제 종료가 됩니다.
 
 ## Windows 다시 시작
 - `Win + M`이나 `Win + D`로 바탕 화면을 표시한 상태 또는 `Win + T`나 `Win + B`로 작업 표시줄이 활성화된 상태에서 `Alt + F4`를 누르면 아래와 같은 대화 상자가 표시되므로 1번 `↓`를 눌러 "다시 시작"을 선택하고 `Enter`
  　`Win + R` → `Alt + F4` → `Alt + F4`도 가능.
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - `Win + X` → `U` → `R`로 다시 시작할 수 있습니다.
 - `shutdown /r /t 0`으로 다시 시작할 수 있습니다. 추가로 `/f`를 붙이면 강제 다시 시작이 됩니다.
 
 ## Windows 절전 모드
 - `Win + M`이나 `Win + D`로 바탕 화면을 표시한 상태 또는 `Win + T`나 `Win + B`로 작업 표시줄이 활성화된 상태에서 `Alt + F4`를 누르면 아래와 같은 대화 상자가 표시되므로 1번 `↑`를 눌러 "절전"을 선택하고 `Enter`
   `Win + R` → `Alt + F4` → `Alt + F4`도 가능.
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - `Win + R` → 또는 명령 프롬프트에서 `rundll32.exe powrprof.dll,SetSuspendState`를 입력하면 최대 절전 모드로 전환할 수 있습니다.
 
 ## Windows 로그아웃
 - `Win + M`이나 `Win + D`로 바탕 화면을 표시한 상태 또는 `Win + T`나 `Win + B`로 작업 표시줄이 활성화된 상태에서 `Alt + F4`를 누르면 아래와 같은 대화 상자가 표시되므로 2번 `↑`를 눌러 "로그아웃"을 선택하고 `Enter`
   `Win + R` → `Alt + F4` → `Alt + F4`도 가능.
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - `Win + X` → `U` → `I`
 - `Ctrl + Alt + Del` → 2번 `Tab` or 2번 `↓` → `Enter` or `Space`
 - `logoff`로 로그아웃할 수 있습니다.
@@ -93,7 +93,7 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 ※ 마우스 커서에 창이 따라오는 상태가 되므로, 화면 밖으로 창이 표시된 상태에서도 구출할 수 있습니다.
 
 ## 작업 관리자에서 프로세스 종료
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. `Ctrl + Shift + Esc`로 작업 관리자를 실행할 수 있습니다.
 2. `Ctrl + Tab`으로 탭을 전환할 수 있습니다.
 3. `세부 정보` 탭에서 `Tab`을 누른 후, 키보드 영숫자 입력으로 프로세스를 전방 일치 검색할 수 있습니다.
@@ -123,85 +123,85 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 과거에 복사한 텍스트나 이미지를 선택하면 다시 복사할 수 있습니다.
 
 ## 실행
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - `Win + R`로 "실행"을 열 수 있습니다.
 
 다음은 "실행" 또는 명령 프롬프트에서 실행할 수 있는 명령어 몇 가지를 소개합니다.
 
 ## Edge 열기
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - `msedge`를 입력하고 `Enter`
 
 ## Internet Explorer 11(IE11) 열기
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"`를 입력하고 `Enter`
 
 ## 터미널 열기
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - `wt`를 입력하고 `Enter`
 
 ## 제어판 열기
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - `control`을 입력하고 `Enter`
 - `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}` 로도 열 수 있습니다.
 
 ## 메모장 실행
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - `notepad`를 입력하고 `Enter`  
 
 ## 계산기 실행
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - `calc`를 입력하고 `Enter`
 
 ## 그림판 실행
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - `mspaint`를 입력하고 `Enter`  
 
 ## PowerShell 실행
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - `powershell`을 입력하고 `Enter`  
 
 ## Visual Studio Code 실행
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - `code`를 입력하고 `Enter`
 
 ## Excel 실행
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - `excel`을 입력하고 `Enter`  
 ※ Excel이 설치되어 있는 경우에만.
 
 ## Word 열기
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - `winword`를 입력하고 `Enter`  
 ※ Word가 설치되어 있는 경우에만.
 
 ## PowerPoint 열기
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - `powerpnt`를 입력하고 `Enter`  
   ※ PowerPoint가 설치되어 있는 경우에만.
 
 ## 시스템 구성 열기
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - `msconfig`를 입력하고 `Enter`  
 
 ## 시스템 속성 열기
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - `sysdm.cpl`을 입력하고 `Enter`
 
 ## Windows 버전 정보 열기
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - `winver`를 입력하고 `Enter`
 
 ## 화상 키보드 열기
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - `osk`를 입력하고 `Enter`
 
 ## 워드패드 열기
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - `wordpad` 또는 `write`를 입력하고 `Enter`
 
 ## 레지스트리 편집기 열기
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - `regedit`을 입력하고 `Enter`
 
 ## 프로그램 및 기능 열기
@@ -211,18 +211,18 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 - `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}`을 입력하고 `Enter`
 
 ## 마우스 속성 열기
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}`을 입력하고 `Enter`
 
 ## 소리 열기
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}`를 입력하고 `Enter`
 
 ## 사용자 계정 열기
 - `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}`를 입력하고 `Enter`
 
 ## 표준 메시지 상자의 문자열 복사
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - `Ctrl + C`로 표준 메시지 상자의 문자열을 복사할 수 있습니다.
 위의 메시지 상자를 복사하면 아래 내용이 클립보드에 복사됩니다.
 ```

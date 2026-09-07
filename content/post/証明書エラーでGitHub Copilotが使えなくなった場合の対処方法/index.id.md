@@ -4,7 +4,7 @@ slug: "cara-mengatasi-github-copilot-yang-tidak-dapat-digunakan-karena-kesalahan
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ツール・開発環境"]
 ---
 
@@ -19,7 +19,7 @@ GitHub Copilot berhenti berfungsi sekitar tanggal 19 April 2024. Pesan kesalahan
 
 ## Cara Mengatasi
 Tampaknya ini adalah bug pada ESET. Di pengaturan lanjutan ESET, matikan "Aktifkan SSL/TLS".
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Referensi
 

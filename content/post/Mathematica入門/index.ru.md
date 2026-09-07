@@ -4,7 +4,7 @@ slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Математика", "Алгоритмы"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Математика, Криптография и Квантовые вычисления"]
 ---
 # Введение в Mathematica

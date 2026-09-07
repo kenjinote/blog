@@ -4,7 +4,7 @@ slug: "何年かぶりの神座（かむくら）（ラーメン）"
 date: 2022-09-09T21:45:19+09:00
 tags: ["拉麵", "神座"]
 draft: false
-image: "images/img2.jpg"
+image: "images/img2.webp"
 categories: ["IT與科技"]
 ---
 
@@ -12,8 +12,8 @@ categories: ["IT與科技"]
 
 **蔥泡菜拉麵**
 
-![img1.jpg](images/img1.jpg)
+![img1.jpg](images/img1.webp)
 
-![img2.png](images/img2.jpg)
+![img2.png](images/img2.webp)
 
 非常好吃。這是一種偶爾會想念的味道。

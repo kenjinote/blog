@@ -4,7 +4,7 @@ slug: "Ссылки на короткие видео"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Видео", "Короткие"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ИТ и технологии"]
 ---
 1. Футбол - Болбой

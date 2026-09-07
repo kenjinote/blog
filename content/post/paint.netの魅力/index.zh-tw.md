@@ -4,12 +4,12 @@ slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI・テクノロジー"]
 ---
 我將介紹我在開發工作中經常使用的影像編輯軟體 paint.net。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Windows內建小畫家做不到的實用優點
 - 可以處理透明度和不透明度
@@ -31,7 +31,7 @@ categories: ["AI・テクノロジー"]
 
 如果您選擇免費版本，請點擊連結中下方紅框的部分。
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 如果您透過 Microsoft Store 安裝似乎需要付費，但作為替代，它可以自動更新。
 即使是免費版本，也會通知您最新的更新資訊，因此您可以相當順利地進行更新。

@@ -4,7 +4,7 @@ slug: "حل-مشكلة-البائع-المتجول-باستخدام-mathematica"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "مشكلة البائع المتجول", "خوارزمية", "رياضيات"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الرياضيات والتشفير والكم"]
 ---
 # حل مشكلة البائع المتجول باستخدام Mathematica

@@ -4,7 +4,7 @@ slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "小技", "ショートカット"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・ガジェット"]
 ---
 هذه مجموعة صغيرة من الحيل والاختصارات التي تستخدم عادة في ويندوز. نأمل أن تكون مفيدة لأولئك الذين بدأوا للتو في استخدام ويندوز.
@@ -49,27 +49,27 @@ categories: ["PC・ガジェット"]
 ## إيقاف تشغيل ويندوز
 - عندما يتم عرض سطح المكتب باستخدام `Win + M` أو `Win + D`، أو عندما يكون شريط المهام نشطًا باستخدام `Win + T` أو `Win + B`، اضغط على `Alt + F4`، وسيتم عرض مربع الحوار أدناه، فتأكد من تحديد "إيقاف التشغيل" واضغط على `Enter`.
   يمكن أيضًا استخدام `Win + R` ← `Alt + F4` ← `Alt + F4`.
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - يمكنك إيقاف التشغيل بالضغط على `Win + X` ← `U` ← `U`.
 - في موجه الأوامر أو مربع حوار "تشغيل" (`Win + R`)، اكتب `shutdown /s /t 0` لإيقاف التشغيل. إضافة `/f` سيؤدي إلى فرض إيقاف التشغيل.
 
 ## إعادة تشغيل ويندوز
 - عندما يتم عرض سطح المكتب باستخدام `Win + M` أو `Win + D`، أو عندما يكون شريط المهام نشطًا باستخدام `Win + T` أو `Win + B`، اضغط على `Alt + F4`، وسيتم عرض مربع الحوار أدناه، اضغط على `↓` مرة واحدة لاختيار "إعادة التشغيل" واضغط على `Enter`.
 　يمكن أيضًا استخدام `Win + R` ← `Alt + F4` ← `Alt + F4`.
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - يمكنك إعادة التشغيل بالضغط على `Win + X` ← `U` ← `R`.
 - يمكنك إعادة التشغيل بكتابة `shutdown /r /t 0`. إضافة `/f` سيؤدي إلى فرض إعادة التشغيل.
 
 ## وضع السكون لويندوز
 - عندما يتم عرض سطح المكتب باستخدام `Win + M` أو `Win + D`، أو عندما يكون شريط المهام نشطًا باستخدام `Win + T` أو `Win + B`، اضغط على `Alt + F4`، وسيتم عرض مربع الحوار أدناه، اضغط على `↑` مرة واحدة لاختيار "سكون" واضغط على `Enter`.
   يمكن أيضًا استخدام `Win + R` ← `Alt + F4` ← `Alt + F4`.
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - `Win + R` ← أو في موجه الأوامر اكتب `rundll32.exe powrprof.dll,SetSuspendState` لوضع الجهاز في وضع الإسبات.
 
 ## تسجيل الخروج من ويندوز (تسجيل الخروج)
 - عندما يتم عرض سطح المكتب باستخدام `Win + M` أو `Win + D`، أو عندما يكون شريط المهام نشطًا باستخدام `Win + T` أو `Win + B`، اضغط على `Alt + F4`، وسيتم عرض مربع الحوار أدناه، اضغط على `↑` مرتين لاختيار "تسجيل الخروج" واضغط على `Enter`.
   يمكن أيضًا استخدام `Win + R` ← `Alt + F4` ← `Alt + F4`.
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - `Win + X` ← `U` ← `I`
 - `Ctrl + Alt + Del` ← مرتين `Tab` أو مرتين `↓` ← `Enter` أو `Space`
 - يمكنك تسجيل الخروج بكتابة `logoff`.
@@ -85,7 +85,7 @@ categories: ["PC・ガジェット"]
 ※ نظرًا لأن النافذة ستتبع مؤشر الماوس، يمكنك إنقاذ نافذة حتى لو كانت معروضة خارج الشاشة.
 
 ## إنهاء عملية في إدارة المهام
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. يمكنك فتح إدارة المهام بالضغط على `Ctrl + Shift + Esc`.
 2. يمكنك تبديل علامات التبويب بالضغط على `Ctrl + Tab`.
 3. في علامة التبويب "التفاصيل"، بعد الضغط على `Tab`، يمكنك البحث عن عملية تطابق بداية الاسم عن طريق إدخال أحرف باللغة الإنجليزية باستخدام لوحة المفاتيح.
@@ -115,85 +115,85 @@ categories: ["PC・ガジェット"]
 من خلال تحديد النص أو الصورة المنسوخة سابقًا، يمكنك نسخها مرة أخرى.
 
 ## تشغيل (مربع حوار)
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - يمكنك تشغيل مربع حوار "تشغيل" باستخدام `Win + R`.
 
 فيما يلي بعض الأوامر التي يمكنك تنفيذها من "تشغيل" أو من موجه الأوامر.
 
 ## فتح Edge
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - اكتب `msedge` ثم اضغط على `Enter`
 
 ## فتح Internet Explorer 11 (IE11)
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - اكتب `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` ثم اضغط على `Enter`
 
 ## فتح Terminal
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - اكتب `wt` ثم اضغط على `Enter`
 
 ## فتح لوحة التحكم
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - اكتب `control` ثم اضغط على `Enter`
 - يمكنك فتحه أيضًا بـ `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}`.
 
 ## فتح المفكرة
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - اكتب `notepad` ثم اضغط على `Enter`  
 
 ## فتح الآلة الحاسبة
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - اكتب `calc` ثم اضغط على `Enter`
 
 ## فتح الرسام
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - اكتب `mspaint` ثم اضغط على `Enter`  
 
 ## فتح PowerShell
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - اكتب `powershell` ثم اضغط على `Enter`  
 
 ## فتح Visual Studio Code
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - اكتب `code` ثم اضغط على `Enter`
 
 ## فتح Excel
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - اكتب `excel` ثم اضغط على `Enter`  
 ※ فقط في حالة تثبيت Excel.
 
 ## فتح Word
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - اكتب `winword` ثم اضغط على `Enter`  
 ※ فقط في حالة تثبيت Word.
 
 ## فتح PowerPoint
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - اكتب `powerpnt` ثم اضغط على `Enter`  
   ※ فقط في حالة تثبيت PowerPoint.
 
 ## فتح تكوين النظام
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - اكتب `msconfig` ثم اضغط على `Enter`  
 
 ## فتح خصائص النظام
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - اكتب `sysdm.cpl` ثم اضغط على `Enter`
 
 ## فتح معلومات حول ويندوز
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - اكتب `winver` ثم اضغط على `Enter`
 
 ## فتح لوحة المفاتيح على الشاشة
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - اكتب `osk` ثم اضغط على `Enter`
 
 ## فتح الدفتر
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - اكتب `wordpad` أو `write` ثم اضغط على `Enter`
 
 ## فتح محرر التسجيل
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - اكتب `regedit` ثم اضغط على `Enter`
 
 ## فتح البرامج والميزات
@@ -203,18 +203,18 @@ categories: ["PC・ガジェット"]
 - اكتب `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}` ثم اضغط على `Enter`
 
 ## فتح خصائص الماوس
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - اكتب `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}` ثم اضغط على `Enter`
 
 ## فتح الصوت
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - اكتب `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}` ثم اضغط على `Enter`
 
 ## فتح حسابات المستخدمين
 - اكتب `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}` ثم اضغط على `Enter`
 
 ## نسخ السلسلة من مربع رسالة قياسي
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - يمكنك استخدام `Ctrl + C` لنسخ النص من مربع رسالة قياسي.
 عند نسخ مربع الرسالة أعلاه، سيتم نسخ ما يلي إلى الحافظة:
 ```

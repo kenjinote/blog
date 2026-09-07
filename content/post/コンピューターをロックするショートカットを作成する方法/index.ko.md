@@ -11,7 +11,7 @@ slug: "コンピューターをロックするショートカットを作成す�
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "컴퓨터 잠금", "바로 가기"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・가젯"]
 ---
 
@@ -30,32 +30,32 @@ categories: ["PC・가젯"]
 
 #### 1. 바탕화면에서 우클릭하여, `새로 만들기`＞`바로 가기`를 선택
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 #### 2. 바로 가기 만들기 화면이 표시되면 `rundll32.exe user32.dll,LockWorkStation`을 입력하고 `다음`을 클릭
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 3. 바로 가기 이름 `컴퓨터 잠금`을 입력하고 `마침`을 클릭
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. 생성된 바로 가기 아이콘 변경하기
 
 생성된 바로 가기를 우클릭하여 `속성`을 선택
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 `아이콘 변경`을 클릭
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 노란색 사각형 아이콘을 선택하고 `확인`을 클릭, 다시 `확인`을 클릭하여 속성 창을 닫음
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 이상.
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 생성된 바로 가기를 더블클릭하면 컴퓨터가 잠깁니다.
 

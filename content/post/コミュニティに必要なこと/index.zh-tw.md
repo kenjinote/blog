@@ -4,7 +4,7 @@ slug: "社群所需要的事物"
 date: 2022-09-23T01:37:43+09:00
 tags: ["社群", "雜記"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 # 社群所需要的事物

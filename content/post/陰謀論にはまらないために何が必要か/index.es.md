@@ -12,7 +12,7 @@ slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00
 tags: ["Teorías de conspiración", "Poema"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI / Tecnología"]
 ---
 

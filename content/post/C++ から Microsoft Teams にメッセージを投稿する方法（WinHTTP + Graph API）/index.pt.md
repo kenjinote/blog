@@ -4,7 +4,7 @@ slug: "como-postar-mensagens-no-microsoft-teams-a-partir-de-cpp-winhttp-graph-ap
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 

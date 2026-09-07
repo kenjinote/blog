@@ -7,7 +7,7 @@ slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","설치"]
 draft: false
-image: "images/cover.png"
+image: "images/cover.webp"
 categories: ["프로그래밍"]
 ---
 
@@ -25,17 +25,17 @@ Go의 컴파일러, 도구, 라이브러리는 오픈 소스로 공개되어 있
 위 사이트에서 각 플랫폼용 설치 프로그램이 공개되어 있습니다.
 
 화면에 따라 설치를 진행합니다.
-![img.png](images/img.png)
+![img.png](images/img.webp)
 
-![img_1.png](images/img_1.png)
+![img_1.png](images/img_1.webp)
 
-![img_2.png](images/img_2.png)
+![img_2.png](images/img_2.webp)
 
-![img_3.png](images/img_3.png)
+![img_3.png](images/img_3.webp)
 
-![img_5.png](images/img_5.png)
+![img_5.png](images/img_5.webp)
 
-![img_6.png](images/img_6.png)
+![img_6.png](images/img_6.webp)
 
 설치가 완료되었습니다. 간단하죠.
 
@@ -62,7 +62,7 @@ func main() {
 
 [https://go.dev/play/](https://go.dev/play/)
 
-![img_7.png](images/img_7.png)
+![img_7.png](images/img_7.webp)
 
 # 일본어 문서
 

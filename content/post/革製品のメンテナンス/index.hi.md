@@ -4,7 +4,7 @@ slug: "leather-products-maintenance"
 date: 2024-10-30T00:31:46+09:00
 tags: ["चमड़े के उत्पाद", "शौक"]
 draft: fales
-image: "img.png"
+image: "img.webp"
 categories: ["जीवन शैली और विविध नोट्स"]
 ---
 
@@ -13,7 +13,7 @@ categories: ["जीवन शैली और विविध नोट्स"]
 # हाल ही में खरीदे गए चमड़े के रखरखाव उत्पाद
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 कीमत: लगभग 1,320 येन
 
@@ -24,7 +24,7 @@ categories: ["जीवन शैली और विविध नोट्स"]
 अन्य क्रीमों की तुलना में थोड़ा अधिक उपयोग करना बेहतर हो सकता है।
 
 ## Collonil 1909 Supreme Creme de Luxe
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 कीमत: लगभग 1,777 येन
 
@@ -32,7 +32,7 @@ categories: ["जीवन शैली और विविध नोट्स"]
 इससे थोड़ी सी चमक आती है। सफेद रंग की होने के कारण, इससे पानी विकर्षक प्रभाव की भी उम्मीद की जा सकती है।
 
 ## M.MOWBRAY SHOE CREAM (काला)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 कीमत: लगभग 1,000 येन
 
@@ -44,7 +44,7 @@ categories: ["जीवन शैली और विविध नोट्स"]
 
 कीमत: लगभग 700 येन
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 यह वह चीज है जो मुझे ब्रश खरीदने पर साथ मिली थी।
 जूतों के लिए पानी आधारित क्लीनर। यह चमड़े की गंदगी हटाता है।

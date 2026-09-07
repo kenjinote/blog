@@ -4,7 +4,7 @@ slug: "splatoon-2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["斯普拉遁 2", "遊戲", "Nintendo Switch"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT與科技"]
 ---
 

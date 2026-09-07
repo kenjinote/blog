@@ -4,7 +4,7 @@ slug: "برج-هانوي"
 date: 2025-04-17T22:23:14+09:00
 tags: ["برج هانوي", "خوارزمية", "Python"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["برمجة"]
 ---
 

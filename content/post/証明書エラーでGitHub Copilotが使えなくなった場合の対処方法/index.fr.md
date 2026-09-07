@@ -4,7 +4,7 @@ slug: "comment-resoudre-erreur-certificat-github-copilot"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils et Environnement de Développement"]
 ---
 
@@ -19,7 +19,7 @@ Depuis environ le 19/04/2024, GitHub Copilot a cessé de fonctionner. Le message
 
 ## Solution
 Il semble que ce soit un bug de ESET. Dans les paramètres avancés de ESET, désactivez "Activer SSL/TLS".
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Référence
 

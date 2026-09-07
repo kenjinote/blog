@@ -4,7 +4,7 @@ slug: "macでコピー＆ペーストのショートカットキーをWindowsと
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "مفاتيح الاختصار", "النسخ واللصق"]
 draft:
-image: "img.png"
+image: "img.webp"
 categories: ["أجهزة الكمبيوتر والأدوات"]
 ---
 

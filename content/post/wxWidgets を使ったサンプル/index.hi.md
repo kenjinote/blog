@@ -4,7 +4,7 @@ slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "उदाहरण"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 
@@ -120,7 +120,7 @@ void MyFrame::OnHello(wxCommandEvent& event)
 ```
 10. बिल्ड और रन करने पर, नीचे दिए गए अनुसार एक विंडो खुलेगी।
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 
 ## संदर्भ

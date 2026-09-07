@@ -4,7 +4,7 @@ slug: "ajouter-hidemaru-editor-grep-au-menu-contextuel-de-l-explorateur"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorateur", "Menu contextuel", "grep", "Registre"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils et environnement de développement"]
 ---
 

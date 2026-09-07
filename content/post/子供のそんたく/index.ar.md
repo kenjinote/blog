@@ -4,7 +4,7 @@ slug: "مراعاة-الأطفال"
 date: 2022-09-07T04:40:52+09:00
 tags: ["أطفال"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 عندما كانت الأم مريضة وترقد في السرير،

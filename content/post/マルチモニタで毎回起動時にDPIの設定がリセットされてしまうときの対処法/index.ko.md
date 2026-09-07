@@ -11,7 +11,7 @@ slug: "マルチモニタで毎回起動時にDPIの設定がリセットされ�
 date: 2024-04-29T19:42:20+09:00
 tags: ["멀티 모니터", "DPI", "제어판"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT·테크놀로지"]
 ---
 

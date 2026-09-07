@@ -4,7 +4,7 @@ slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chorme拡張", "ブラウザ", "Chrome", "Edge"]
 draft: false
-image: "img_4.png"
+image: "img_4.webp"
 categories: ["IT・テクノロジー"]
 ---
 
@@ -14,7 +14,7 @@ categories: ["IT・テクノロジー"]
 
 ## 1. simpleGestures
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 マウスジェスチャーを使えるようにする拡張です
 キーボードを使ったりツールバーのボタンに合わせなくてもブラウザの操作ができます。
@@ -28,7 +28,7 @@ categories: ["IT・テクノロジー"]
 
 ## 2. uBlock Origin
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 広告をブロックする拡張です。オープンソースのため信頼性が高い。また、CPUやメモリの使用量も少なく快適に動作します。
 
@@ -37,7 +37,7 @@ categories: ["IT・テクノロジー"]
 
 ## 3. DeepL翻訳
 
-![img.png](img.png)
+![img.png](img.webp)
 
 世界的に有名な翻訳サービスDeepLを使ってページ内を翻訳できるChorme拡張です。ブラウザ上で翻訳させたい文章を選択すると、DeepLのアイコンが表示され、クリックすると自動翻訳されます。
 
@@ -45,7 +45,7 @@ categories: ["IT・テクノロジー"]
 
 ## 4. ChatGPT Sidebar
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 ChatGPTをスライドバーで使えるようにするための拡張です。Ctrl+Pをでスライドバーを表示でき、すぐにAIに質問することができます。
 ページ内で選択された文字列があればそのまま質問文にコピーされるためCtrl+Enterですぐに質問することができます。
@@ -54,7 +54,7 @@ ChatGPTをスライドバーで使えるようにするための拡張です。C
 
 ## 5. Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Salesforceの開発に便利な機能を追加する拡張です。
 こちらはSalesforceを使っていない方には不要と思います。

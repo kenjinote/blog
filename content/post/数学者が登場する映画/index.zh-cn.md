@@ -4,38 +4,38 @@ slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00
 tags: ["电影", "数学家"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["数学·密码·量子"]
 ---
 这是我推荐的3部以数学家为主角的电影。
 
 # 美丽心灵
-![](./images/beautiful_mind.jpg)  
+![](./images/beautiful_mind.webp)  
 描绘了真实存在的美国天才数学家半生的作品。最后有令人惊讶的剧情展开。
 主演罗素·克劳的表现非常出彩。
 
 # 拦截密码战
-![](./images/enigma.jpg)  
+![](./images/enigma.webp)  
 > 改编自罗伯特·哈里斯的小说《挑战恩尼格玛密码机》，于2001年上映的电影。
 > 摘自维基百科
 
 讲述了解码德国制造的恩尼格玛密码的故事。
 
 # 模仿游戏
-![](./images/imitation_game.jpg) 
+![](./images/imitation_game.webp) 
 
 这也是一部关于破解恩尼格玛密码的故事。我很喜欢当时的世界观设定。
 
 # 知无涯者
-![img.png](img.png)
+![img.png](img.webp)
 
 描绘了剑桥大学数学家哈代与印度数学家拉马努金之间交流的作品。能让人感受到数学之美。
 
 # 万物理论
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 描绘了霍金博士半生的作品。
 
 # 粒子狂热
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)

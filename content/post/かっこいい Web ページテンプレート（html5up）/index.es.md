@@ -8,7 +8,7 @@ slug: "かっこいい Web ページテンプレート（html5up）"
 date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Plantilla de página web"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Gestión del blog"]
 ---
 

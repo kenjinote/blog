@@ -4,7 +4,7 @@ slug: "उन-लोगों-का-सम्मान-करें-जो-व�
 date: 2023-08-01T23:42:31+09:00
 tags: ["कविता", "विचार"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

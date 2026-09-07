@@ -4,7 +4,7 @@ slug: "تاريخ-الرياضيات"
 date: 2023-07-22T15:25:10+09:00
 tags: ["رياضيات", "تاريخ"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["رياضيات، تشفير، كم"]
 ---
 

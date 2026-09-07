@@ -4,7 +4,7 @@ slug: "l-histoire-du-vieux-couple-et-de-l-ane"
 date: 2024-09-18T00:56:59+09:00
 tags: ["L'histoire du vieux couple et de l'âne", "Satire"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・Technologie"]
 ---
 

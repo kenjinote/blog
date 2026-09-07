@@ -4,7 +4,7 @@ slug: "Comment utiliser l'outil Capture d'écran (Snipping Tool)"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Image", "Vidéo", "Capture d'écran", "Enregistrement", "Capture"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT et Technologie"]
 ---
 
@@ -20,7 +20,7 @@ Il y a principalement 3 façons de le démarrer :
 - Appuyez sur les touches `Win` + `R`, tapez `snippingtool` et appuyez sur la `Touche Entrée`.
 
 ## Comment utiliser l'outil Capture d'écran
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### Les étapes pour enregistrer une image capturée sont les suivantes :
 

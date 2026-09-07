@@ -4,7 +4,7 @@ slug: "notas-de-gestao"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gestor"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["TI e Tecnologia"]
 ---
 # Encontrar negócios que estão se tornando populares

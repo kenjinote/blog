@@ -4,7 +4,7 @@ slug: "Android(Google Pixel)端末の復元手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "恢复", "故障排除"]
 draft: false
-image: "pixel_restore_eyecatch_1788588727945.jpg"
+image: "pixel_restore_eyecatch_1788588727945.webp"
 categories: ["编程"]
 ---
 

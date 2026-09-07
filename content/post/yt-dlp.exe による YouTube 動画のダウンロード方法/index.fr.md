@@ -4,7 +4,7 @@ slug: "yt-dlp.exe による YouTube 動画のダウンロード方法"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "Télécharger"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Informatique/Technologie"]
 ---
 # Qu'est-ce que yt-dlp

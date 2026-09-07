@@ -4,7 +4,7 @@ slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI库", "日语"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT与技术"]
 ---
 
@@ -41,4 +41,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## 现在就可以显示日语了。
 
-![img.png](img.png)
+![img.png](img.webp)

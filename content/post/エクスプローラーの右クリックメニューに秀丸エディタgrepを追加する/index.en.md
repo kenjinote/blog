@@ -4,7 +4,7 @@ slug: "エクスプローラーの右クリックメニューに秀丸エディ�
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorer", "Context Menu", "grep", "Registry"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools & Development Environment"]
 ---
 

@@ -4,7 +4,7 @@ slug: "PaperMod में इमेज लेआउट बदलना"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ブログ運営"]
 ---
 डिफ़ॉल्ट लेआउट में इमेज को 100% चौड़ाई के साथ केंद्र में रखा गया है,

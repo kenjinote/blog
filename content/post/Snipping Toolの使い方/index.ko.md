@@ -11,7 +11,7 @@ slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "이미지", "동영상", "스크린샷", "녹화", "캡처"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・테크놀로지"]
 ---
 
@@ -34,7 +34,7 @@ Snipping Tool은 Windows에 기본 탑재되어 있는 스크린샷 도구입니
 - `Win키` + `R키`를 누르고, `snippingtool`을 입력한 후 `Enter키`를 누릅니다.
 
 ## Snipping Tool 사용법
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### 캡처 이미지를 저장하는 방법은 다음과 같습니다.
 

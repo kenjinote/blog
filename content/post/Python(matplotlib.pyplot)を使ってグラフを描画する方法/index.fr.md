@@ -4,11 +4,11 @@ slug: "Comment dessiner des graphiques avec Python (matplotlib.pyplot)"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Graphiques", "Mathématiques", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Mathématiques・Cryptographie・Quantique"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Ce dont vous avez besoin
 - Compte Google
@@ -30,7 +30,7 @@ plt.show()
 
 # Résultat de l'exécution
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Références
 

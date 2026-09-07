@@ -4,15 +4,15 @@ slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome एक्सटेंशन"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 
 ### Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 आप कस्टम फ़ील्ड खोज सकते हैं या कस्टम ऑब्जेक्ट फ़ील्ड को एक साथ निर्यात कर सकते हैं।
 
@@ -22,7 +22,7 @@ categories: ["आईटी और प्रौद्योगिकी"]
 
 ### Salesforce advanced Code searcher
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Salesforce कोड खोजते समय उपयोगी।
 

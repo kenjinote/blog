@@ -4,7 +4,7 @@ slug: "Como remover metadados (informações pessoais) do Excel com o PowerShell
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Metadados", "Informações Pessoais"]
 draft: false
-image: "powershell_metadata_eyecatch_1788588033601.jpg"
+image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["Programação"]
 ---
 

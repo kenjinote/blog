@@ -4,7 +4,7 @@ slug: "オンラインのコード実行環境まとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["在线", "代码执行环境", "编程"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["编程"]
 ---
 

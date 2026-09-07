@@ -4,7 +4,7 @@ slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Tools/Development Environment"]
 ---
 Since the `dotnet.exe` command can even build simple programs, it is useful to know how to use it.

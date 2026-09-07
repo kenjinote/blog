@@ -4,7 +4,7 @@ slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["Teclado", "Trackball", "Monitor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC e Gadgets"]
 ---
 
@@ -25,7 +25,7 @@ Para dispositivos apontadores, os trackballs são recomendados em vez de mouses,
 O que eu uso é o [Logitech MX Ergo](https://amzn.to/3IYOwtf). Este é um dispositivo caro, custando mais de 10 mil ienes, mas acredito que vale mais do que esse valor.
 
 Também estou interessado no [DEFT PRO(M-DPT1MRXBK)](https://amzn.to/3Zu5tB8), que é operado com o dedo indicador e médio com uma bola maior.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Monitor
 

@@ -4,7 +4,7 @@ slug: "hegel-ki-dvandvatmakata"
 date: 2022-09-09T23:13:19+09:00
 tags: ["दर्शन", "हेगेल", "द्वंद्वात्मकता"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 ## हेगेल का द्वंद्वात्मकता क्या है

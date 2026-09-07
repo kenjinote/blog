@@ -4,7 +4,7 @@ slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "文本编辑器"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具・开发环境"]
 ---
 
@@ -28,7 +28,7 @@ https://github.com/zyedidia/micro/releases
 ## micro 的使用方法
 
 在命令提示符中输入 `micro` 并执行，将显示如下界面。
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 主要操作方法和快捷键如下：
 

@@ -7,7 +7,7 @@ slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["Programación"]
 ---
 
@@ -59,7 +59,7 @@ fn main() {
 ```
 
 6. Ejecute `cargo run` en el símbolo del sistema.
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. Para compilar una versión de lanzamiento, ejecute `cargo build --release`.
 

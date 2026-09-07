@@ -5,7 +5,7 @@ date: 2023-04-09T12:54:24+09:00
 tags: ["Sieb des Eratosthenes", "Primzahlen", "Mathematik", "Rust"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematik, Kryptografie, Quanten"]
 ---
 

@@ -4,7 +4,7 @@ slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["博客运营"]
 ---
 默认布局中，图片位于中央且宽度为 100%，但我有时觉得太大了，所以尝试将图片绕排在标题下方，并将其宽度更改为 150px 左右。

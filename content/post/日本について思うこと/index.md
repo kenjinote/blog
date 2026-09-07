@@ -4,7 +4,7 @@ slug: "日本について思うこと"
 date: 2022-09-06T02:24:11+09:00
 tags: ["雑記"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・テクノロジー"]
 ---
 私が日本社会についておかしいなと思っていること・考えていることを整理しようと思う。
@@ -13,8 +13,8 @@ categories: ["IT・テクノロジー"]
 日本の奨学金といえば、ほとんどは有利子で返さなくてはならないものになっています。
 また、大学の学費は1950年からからずっと増加していて、受給率も増加傾向にあります。
 
-![学費の推移](./images/japanese_tuition_fee.png)
-![奨学金受給率の推移](./images/receipt_rate.png)
+![学費の推移](./images/japanese_tuition_fee.webp)
+![奨学金受給率の推移](./images/receipt_rate.webp)
 
 一方で最近の平均の借入総額は324万円に上るようです。
 

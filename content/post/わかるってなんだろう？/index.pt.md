@@ -4,7 +4,7 @@ slug: "o-que-significa-entender"
 date: 2022-09-24T02:38:18+09:00
 tags: ["Miscelânea"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 # O que significa entender?

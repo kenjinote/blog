@@ -4,7 +4,7 @@ slug: "Характеристики моего текущего основног
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ПК и Гаджеты"]
 ---
 Здесь представлены характеристики моего основного ПК.

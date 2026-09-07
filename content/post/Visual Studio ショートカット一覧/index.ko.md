@@ -11,7 +11,7 @@ slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "단축키" ]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["도구・개발환경"]
 ---
 
@@ -68,4 +68,4 @@ Visual Studio의 단축키는 키보드 조작을 익힘으로써 효율적으�
 
 - [Visual Studio의 키보드 단축키](https://learn.microsoft.com/ko-kr/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

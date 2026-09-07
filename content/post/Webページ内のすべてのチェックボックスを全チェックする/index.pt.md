@@ -4,7 +4,7 @@ slug: "Marcar todas as caixas de seleção em uma página da web"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatização"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["gestão de blog"]
 ---
 

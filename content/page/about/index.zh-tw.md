@@ -15,7 +15,7 @@ menu:
       icon: user
 ---
 
-![](img_1.png)
+![](img_1.webp)
 
 # 這個部落格寫些什麼呢？
 

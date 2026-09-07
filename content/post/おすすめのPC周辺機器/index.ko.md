@@ -9,7 +9,7 @@ slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["키보드", "트랙볼", "디스플레이"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・가젯"]
 ---
 
@@ -35,7 +35,7 @@ categories: ["PC・가젯"]
 사용하고 있는 것은 [Logitech MX Ergo](https://amzn.to/3IYOwtf)입니다. 이것은 1만 엔 이상하는 고가품이지만, 그 이상의 가치가 있다고 생각합니다.
 
 볼이 큰 타입으로 집게손가락·가운뎃손가락으로 조작하는 [DEFT PRO(M-DPT1MRXBK)](https://amzn.to/3Zu5tB8)도 관심이 갑니다.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 디스플레이
 

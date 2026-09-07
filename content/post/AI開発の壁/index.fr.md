@@ -4,7 +4,7 @@ slug: "le-mur-du-developpement-de-l-ia"
 date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "développement", "mur", "poème"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["IA et Technologie"]
 ---
 
@@ -36,7 +36,7 @@ Paiement ? L'API de Stripe peut se régler par un simple copier-coller.
 À ce stade, on se fait l'illusion : "Je suis ingénieur maintenant, non ?"
 Mais le véritable enfer commence ici.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ---
 
@@ -107,4 +107,4 @@ Mais le vrai défi commence à partir de là.
 Et quand nous atteindrons le sommet,
 un avenir où nous nous demanderons "Avions-nous vraiment besoin de gravir la montagne ?" nous attendra peut-être.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

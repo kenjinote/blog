@@ -4,7 +4,7 @@ slug: "о-генеративном-ии"
 date: 2024-04-16T02:13:56+09:00
 tags: ["Генеративный ИИ", "YouTube", "Лекция"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ИИ и технологии"]
 ---
 

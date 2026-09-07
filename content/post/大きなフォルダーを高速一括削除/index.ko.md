@@ -9,7 +9,7 @@ slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
 tags: ["명령 프롬프트"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT·테크놀로지"]
 ---
 

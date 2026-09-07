@@ -1,0 +1,5 @@
+content/post\gnfs-cpp-implementation\index.ko.md : title: "GNFS"
+content/post\gnfs-to-shors-algorithm-math-deepdive\index.ko.md : title: "GNFS"
+content/post\shors-algorithm-and-rsa-breaking\index.ko.md : title: "양자 컴퓨터는 정말 RSA 암호를 파괴할 것인가? ~쇼어의 알고리즘과 현재의 도달점~"
+content/post\インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？\index.ko.md : title: "GNFS"
+content/post\一般数体篩法（GNFS）の真の数学的構造\index.ko.md : title: "GNFS"

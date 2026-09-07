@@ -4,15 +4,15 @@ links:
   - title: GitHub
     description: GitHub is the world's largest software development platform.
     website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.webp
   - title: X
     description: A short-text SNS platform.
     website: https://x.com
-    image: https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.png
+    image: https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.webp
   - title: Stack
     description: Card-style theme designed for bloggers.
     website: https://stack.jimmycai.com/
-    image: stack.png
+    image: stack.webp
 menu:
     main: 
         weight: -50

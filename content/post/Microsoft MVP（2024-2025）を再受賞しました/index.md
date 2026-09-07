@@ -4,13 +4,13 @@ slug: "Microsoft MVP（2024-2025）を再受賞しました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ツール・開発環境"]
 ---
 
 # Microsoft MVP（2024-2025）を再受賞しました
 
-![img\_1.png](img_1.png)
+![img\_1.png](img_1.webp)
 
 こんにちは、kenjiです。
 ご報告になりますが、今年も **Microsoft MVP（Most Valuable Professional）** を受賞しました。今回で８回目の受賞になります。

@@ -8,7 +8,7 @@ slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00
 tags: ["matemáticos"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Matemáticas, Criptografía y Cuántica"]
 ---
 

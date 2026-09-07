@@ -7,7 +7,7 @@ slug: "rustcをアップデートする方法"
 date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "ACTUALIZAR"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Programación"]
 ---
 

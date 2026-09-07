@@ -4,7 +4,7 @@ slug: "विंडोज वातावरण में Gemini CLI कैस�
 date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "विंडोज", "इंस्टॉल", "विकास"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・गैजेट्स"]
 ---
 

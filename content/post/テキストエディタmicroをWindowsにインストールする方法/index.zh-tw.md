@@ -4,7 +4,7 @@ slug: "如何在-windows-上安裝-micro-文字編輯器"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "文字編輯器"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具與開發環境"]
 ---
 
@@ -28,7 +28,7 @@ https://github.com/zyedidia/micro/releases
 ## micro 的使用方法
 
 在命令提示字元中輸入 `micro` 並執行後，將顯示以下畫面。
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 主要的操作方法與快捷鍵如下：
 

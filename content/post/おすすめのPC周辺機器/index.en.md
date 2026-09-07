@@ -4,7 +4,7 @@ slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["Keyboard", "Trackball", "Display"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC/Gadgets"]
 ---
 
@@ -25,7 +25,7 @@ For pointing devices, I recommend a trackball over a mouse, as it reduces fatigu
 I currently use the [Logitech MX Ergo](https://amzn.to/3IYOwtf). This is an expensive device costing over 10,000 yen, but I think it is well worth the price.
 
 I am also interested in the [DEFT PRO (M-DPT1MRXBK)](https://amzn.to/3Zu5tB8), which has a large ball and is operated with the index and middle fingers.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Display
 

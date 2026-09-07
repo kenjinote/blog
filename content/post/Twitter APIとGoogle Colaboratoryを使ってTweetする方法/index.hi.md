@@ -4,7 +4,7 @@ slug: "how-to-tweet-using-twitter-api-and-google-colaboratory-hi"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 

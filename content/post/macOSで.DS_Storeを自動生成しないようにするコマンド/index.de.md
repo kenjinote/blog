@@ -4,7 +4,7 @@ slug: "befehl-um-die-automatische-generierung-von-ds-store-unter-macos-zu-verhin
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・Gadget"]
 ---
 Der Befehl, um die automatische Generierung von .DS_Store unter macOS zu verhindern, lautet wie folgt.

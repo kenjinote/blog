@@ -4,7 +4,7 @@ slug: "PowerToysのインストール"
 date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "командная строка", "PowerToys", "winget"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Инструменты и среда разработки"]
 ---
 

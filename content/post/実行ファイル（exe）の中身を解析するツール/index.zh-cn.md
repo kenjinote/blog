@@ -4,7 +4,7 @@ slug: "分析可执行文件（exe）内容的工具"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "可执行文件", "分析"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["电脑・数码产品"]
 ---
 
@@ -17,46 +17,46 @@ Windows上可执行的文件。基本上是以称为PE格式的格式编写的�
 
 ## 7-Zip
 
-![img.png](img.png)
+![img.png](img.webp)
 
 EXE文件如果不处理通常体积会比较大，因此有时会通过文件压缩来创建。在这种情况下，可以使用文件压缩和解压软件7-Zip来解压可执行文件并检查其内容。还有一个名为WinRAR的类似工具也可以用来解压。
 
 ## Resource Hacker
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 可以提取EXE文件中的资源（图标、位图、对话框、字符串等）。此外，由于它还可以作为十六进制编辑器使用，因此也可以编辑和修改EXE文件的内容。
 
 ## PE Explorer
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 可以分析Windows的PE文件（EXE、DLL、OCX、SYS、驱动程序）。PE Explorer提供了各种分析功能，如显示文件结构、显示文件头、显示目录项、显示导出的函数和符号等。
 
 ## Dependency Walker
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 可以检查EXE文件所依赖的DLL文件，并确认它们是否被正确加载。此外，还可以跟踪DLL文件的函数调用。
 
 ## Ghidra
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 由NSA（美国国家安全局）开发并作为开源免费发布的一款强大的逆向工程工具。它不仅具备将EXE文件反汇编（转换为汇编语言）的功能，还具有反编译为接近C语言形式的功能，非常受欢迎。
 
 ## IDA Free / IDA Pro
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 在恶意软件分析和逆向工程领域，它是全球行业标准的高级反汇编器和反编译器。Pro版本非常昂贵，但如果是个人或非商业目的，可以免费使用功能受限版的“IDA Free”。
 
 ## x64dbg (x32dbg)
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 适用于Windows的开源调试器。专门用于“动态分析”，即在执行文件的同时通过步进执行来分析内容和内存状态，常用于破解（供分析用的挑战程序）和调查恶意软件的行为。
 
 ## ILSpy / dotPeek
 
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 
 如果目标EXE文件是用C#等 .NET 系语言编写的，通过使用这些工具，可以将其反编译到几乎与原始源代码相同的状态，从而彻底暴露其内容。
 

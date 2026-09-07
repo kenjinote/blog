@@ -4,7 +4,7 @@ slug: "a-historia-do-casal-de-idosos-e-do-burro"
 date: 2024-09-18T00:56:59+09:00
 tags: ["A História do Casal de Idosos e do Burro", "Sátira"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・Tecnologia"]
 ---
 

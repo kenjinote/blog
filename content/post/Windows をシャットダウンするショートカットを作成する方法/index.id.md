@@ -4,7 +4,7 @@ slug: "Windows をシャットダウンするショートカットを作成す�
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Mematikan", "Pintasan"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC dan Gadget"]
 ---
 
@@ -16,33 +16,33 @@ Sangat praktis karena Anda bisa mematikan komputer dengan mengklik ganda pintasa
 
 #### 1. Klik kanan pada desktop, lalu pilih `Baru` > `Pintasan`
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 2. Layar pembuatan pintasan akan muncul, masukkan `shutdown.exe -s -f -t 0` lalu klik `Berikutnya`
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 #### 3. Masukkan nama pintasan `Matikan` lalu klik `Selesai`
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. Ubah ikon pintasan yang dibuat
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 Klik kanan pintasan yang dibuat, lalu pilih `Properti`
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Klik `Ubah Ikon`
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 Pilih ikon kotak merah dan klik `OK`, lalu klik `OK` lagi untuk menutup jendela properti.
 
 Selesai.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Jika Anda mengklik ganda pintasan yang dibuat, Windows akan dimatikan.
 

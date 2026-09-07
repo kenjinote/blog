@@ -4,7 +4,7 @@ slug: "вызов-api-chatgpt-из-curl"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "Команда"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Программирование"]
 ---
 # Вызов API ChatGPT из curl

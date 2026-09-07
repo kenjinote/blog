@@ -4,7 +4,7 @@ slug: "commande-pour-empecher-la-generation-automatique-de-ds-store-sur-macos"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・Gadget"]
 ---
 La commande pour empêcher la génération automatique de .DS_Store sur macOS est la suivante.

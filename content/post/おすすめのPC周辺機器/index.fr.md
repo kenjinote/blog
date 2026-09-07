@@ -4,7 +4,7 @@ slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["Clavier", "Trackball", "Écran"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC et Gadgets"]
 ---
 
@@ -25,7 +25,7 @@ Pour les dispositifs de pointage, les trackballs sont recommandés au lieu des s
 Celui que j'utilise est le [Logitech MX Ergo](https://amzn.to/3IYOwtf). C'est un appareil coûteux, à plus de 10 000 yens, mais je pense qu'il en vaut largement le prix.
 
 Je suis également intéressé par le [DEFT PRO(M-DPT1MRXBK)](https://amzn.to/3Zu5tB8), qui est un type de grosse boule actionné avec l'index et le majeur.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Écran
 

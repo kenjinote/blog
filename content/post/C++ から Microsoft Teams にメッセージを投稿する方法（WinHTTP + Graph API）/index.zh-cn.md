@@ -4,7 +4,7 @@ slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinH
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具·开发环境"]
 ---
 

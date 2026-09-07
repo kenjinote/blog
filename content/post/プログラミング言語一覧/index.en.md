@@ -4,7 +4,7 @@ slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["Programming Language"]
 draft: true
-image: "img.png"
+image: "img.webp"
 categories: ["Programming"]
 ---
 

@@ -4,7 +4,7 @@ slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["Tastatur", "Trackball", "Monitor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC und Gadgets"]
 ---
 
@@ -25,7 +25,7 @@ Als Zeigegeräte sind Trackballs anstelle von Mäusen zu empfehlen, da sie die E
 Ich benutze die [Logitech MX Ergo](https://amzn.to/3IYOwtf). Das ist ein teures Gerät, das über 10.000 Yen kostet, aber ich glaube, es ist seinen Preis mehr als wert.
 
 Ich interessiere mich auch für die [DEFT PRO(M-DPT1MRXBK)](https://amzn.to/3Zu5tB8) mit einer großen Kugel, die mit dem Zeige- und Mittelfinger bedient wird.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Monitor
 

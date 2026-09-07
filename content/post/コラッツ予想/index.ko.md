@@ -12,7 +12,7 @@ slug: "コラッツ予想"
 date: 2025-07-15T18:03:03+09:00
 tags: ["콜라츠 추측", "수학", "프로그래밍", "알고리즘"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["수학・암호・양자"]
 ---
 

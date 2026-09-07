@@ -4,7 +4,7 @@ slug: "在-hugo-中使用-html-標籤"
 date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["部落格營運"]
 ---
 

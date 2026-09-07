@@ -4,7 +4,7 @@ slug: "die-geschichte-vom-alten-ehepaar-und-dem-esel"
 date: 2024-09-18T00:56:59+09:00
 tags: ["Die Geschichte vom alten Ehepaar und dem Esel", "Satire"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・Technologie"]
 ---
 

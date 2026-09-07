@@ -4,7 +4,7 @@ slug: "so-beheben-sie-das-zuruecksetzen-der-dpi-einstellungen-beim-start-mit-meh
 date: 2024-04-29T19:42:20+09:00
 tags: ["Mehrere Monitore", "DPI", "Systemsteuerung"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Technologie"]
 ---
 

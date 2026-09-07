@@ -4,7 +4,7 @@ slug: "我開始寫部落格了"
 date: 2022-09-02T07:23:00+09:00
 tags: ["雜記"]
 draft: false
-image: "images/komeda.jpeg"
+image: "images/komeda.webp"
 categories: ["部落格營運"]
 ---
 

@@ -4,7 +4,7 @@ slug: "مجموعة-خطوط-للبرمجة"
 date: 2024-03-30T02:21:31+09:00
 tags: ["برمجة", "خطوط"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["برمجة"]
 ---
 

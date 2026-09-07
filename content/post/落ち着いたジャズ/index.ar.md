@@ -4,7 +4,7 @@ slug: "موسيقى الجاز الهادئة"
 date: 2022-09-08T17:40:26+09:00
 tags: ["موسيقى الجاز", "موسيقى"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["نمط الحياة ومتفرقات"]
 ---
 **قائمة تشغيل موسيقى الجاز الهادئة**

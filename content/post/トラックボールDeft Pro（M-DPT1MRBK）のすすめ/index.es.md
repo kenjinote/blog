@@ -8,7 +8,7 @@ slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT y Tecnología"]
 ---
 
@@ -29,7 +29,7 @@ Ha pasado aproximadamente una semana desde que compré el trackball "Deft Pro M-
 ## Puntos buenos
 - A diferencia de un mouse, no es necesario mover la muñeca, lo que reduce la tensión en la misma.
 - Debido a la gran cantidad de botones, se pueden asignar varias funciones a los botones.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 Actualmente están asignados como se muestra arriba. También puedes cambiar la asignación de botones para cada aplicación.
 ※ La instalación de un software dedicado es necesaria para la asignación de botones.
 - Como la bola es grande, es relativamente fácil realizar movimientos finos para un trackball.

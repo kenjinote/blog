@@ -4,7 +4,7 @@ slug: "モチベーションを上げてくれる動画"
 date: 2022-09-08T02:22:52+09:00
 tags: ["动力", "视频"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT·科技"]
 ---
 

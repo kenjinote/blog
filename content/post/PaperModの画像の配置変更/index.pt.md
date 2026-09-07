@@ -4,7 +4,7 @@ slug: "Alterar o Layout da Imagem no PaperMod"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ブログ運営"]
 ---
 O layout padrão posiciona a imagem no centro com 100% de largura,

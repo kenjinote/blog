@@ -4,7 +4,7 @@ slug: "История о старой паре и осле"
 date: 2024-09-18T00:56:59+09:00
 tags: ["История о старой паре и осле", "сатира"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT и Технологии"]
 ---
 

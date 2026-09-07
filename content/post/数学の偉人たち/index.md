@@ -4,7 +4,7 @@ slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00
 tags: ["数学者"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["数学・暗号・量子"]
 ---
 ### フェルマー (P, de Fermat, 1601-1665)

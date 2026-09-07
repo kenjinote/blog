@@ -4,7 +4,7 @@ slug: "die-grossen-mathematiker"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Mathematiker"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
 ---
 

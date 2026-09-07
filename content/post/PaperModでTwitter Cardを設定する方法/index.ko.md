@@ -8,7 +8,7 @@ slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["블로그 운영"]
 ---
 
@@ -28,7 +28,7 @@ PaperMod 테마는 Twitter Card를 지원합니다.
 
 ```
 [params]
-  images = ["twitter_card.jpg"]
+  images = ["twitter_card.webp"]
 ```
 
 폴더 구성
@@ -40,9 +40,9 @@ root
 │      └─게시물 폴더
 │         │  index.md (여기에 작성)
 │         └─images
-│             cover.png (여기에 배치)
+│             cover.webp (여기에 배치)
 └─static
-    twitter_card.jpg (여기에 배치)
+    twitter_card.webp (여기에 배치)
 ```
 
 ## 각 게시물의 헤더 정보
@@ -51,7 +51,7 @@ root
 
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
 ```
 
@@ -59,7 +59,7 @@ cover:
 게시물 상단에 커버 이미지를 표시하고 싶지 않은 경우에는 `cover` 아래에 `hidden`이라는 항목을 추가하고 `true`로 설정합니다.
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
   hidden: true
 ```

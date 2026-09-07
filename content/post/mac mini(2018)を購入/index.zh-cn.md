@@ -4,7 +4,7 @@ slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・小工具"]
 ---
 
@@ -27,9 +27,9 @@ categories: ["PC・小工具"]
 # 马上安装了 xcode 和 inteliJ IDEA
 
 xcode版本为Version 14.3 (14E222b)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 inteliJ IDEA版本为2023.1
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 好！开始开发吧！

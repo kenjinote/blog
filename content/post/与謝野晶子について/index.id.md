@@ -7,7 +7,7 @@ draft: false
 categories: ["IT・Teknologi"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## 🔹 Ringkasan Tokoh
 

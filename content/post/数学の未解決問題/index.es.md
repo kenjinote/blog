@@ -12,7 +12,7 @@ date: 2024-03-02T22:57:36+09:00
 tags: ["Matemáticas", "Problemas no resueltos"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
 

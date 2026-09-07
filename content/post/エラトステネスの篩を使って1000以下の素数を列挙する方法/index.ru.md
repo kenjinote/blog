@@ -5,7 +5,7 @@ date: 2023-04-09T12:54:24+09:00
 tags: ["Решето Эратосфена", "Простые числа", "Математика", "Rust"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Математика, криптография, квант"]
 ---
 

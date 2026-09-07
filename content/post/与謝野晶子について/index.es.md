@@ -23,7 +23,7 @@ categories: ["TI y Tecnología"]
 
 
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## 🔹 Resumen de la persona
 

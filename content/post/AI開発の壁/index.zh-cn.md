@@ -4,7 +4,7 @@ slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "开发", "壁垒", "随笔"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["AI・技术"]
 ---
 
@@ -36,7 +36,7 @@ UI？ChatGPT给我吐出了React代码。
 到了这里，你就会产生一种错觉：“我该不会已经是工程师了吧？”
 但是，真正的地狱才刚刚开始。
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ---
 
@@ -107,4 +107,4 @@ AI是工具、是上升的阶梯、有时也是竞争对手。
 而且，等到终于登顶的时候，
 也许等待着我们的将是重新发问：“这山，我们有必要登吗？”的未来。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

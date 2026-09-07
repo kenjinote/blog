@@ -4,7 +4,7 @@ slug: "Ekstensi Visual Studio Code yang Direkomendasikan"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Ekstensi", "Add-ons"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
 ---
 

@@ -4,7 +4,7 @@ slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome扩展", "浏览器", "Chrome", "Edge"]
 draft: false
-image: "img_4.png"
+image: "img_4.webp"
 categories: ["IT・科技"]
 ---
 
@@ -14,7 +14,7 @@ categories: ["IT・科技"]
 
 ## 1. simpleGestures
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 这是一个使浏览器能够使用鼠标手势的扩展。
 无需使用键盘或将鼠标对准工具栏按钮即可操作浏览器。
@@ -28,7 +28,7 @@ categories: ["IT・科技"]
 
 ## 2. uBlock Origin
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 这是一个拦截广告的扩展。由于它是开源的，所以可靠性很高。此外，它的CPU和内存使用率也很低，运行十分流畅。
 
@@ -37,7 +37,7 @@ categories: ["IT・科技"]
 
 ## 3. DeepL翻译
 
-![img.png](img.png)
+![img.png](img.webp)
 
 这是一个可以在页面内使用全球知名的翻译服务DeepL进行翻译的Chrome扩展。在浏览器上选择想要翻译的文本，就会显示DeepL的图标，点击即可自动翻译。
 
@@ -45,7 +45,7 @@ categories: ["IT・科技"]
 
 ## 4. ChatGPT Sidebar
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 这是一个在侧边栏使用ChatGPT的扩展。按下Ctrl+P即可显示侧边栏，并立刻向AI提问。
 如果页面内有选中的文本，它会直接复制到提问框中，按下Ctrl+Enter就能马上提问。
@@ -54,7 +54,7 @@ categories: ["IT・科技"]
 
 ## 5. Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 这是一个为Salesforce开发提供便利功能的扩展。
 如果您不使用Salesforce，则不需要这个扩展。

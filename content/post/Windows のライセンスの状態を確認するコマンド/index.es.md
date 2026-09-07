@@ -12,7 +12,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licencia", "Símbolo del sistema"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC y Gadgets"]
 ---
 
@@ -52,7 +52,7 @@ Al ejecutar este comando, se mostrará parte de la información de la licencia e
 
 3. Espera unos segundos y se mostrará la información de la licencia de la siguiente manera.
 
-   ![Pantalla de verificación de licencia de Windows](img.png)
+   ![Pantalla de verificación de licencia de Windows](img.webp)
 
 ## Principal información mostrada
 

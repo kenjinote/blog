@@ -4,7 +4,7 @@ slug: "إضافات Visual Studio Code الموصى بها"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "إضافات", "ملحقات"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الأدوات وبيئة التطوير"]
 ---
 

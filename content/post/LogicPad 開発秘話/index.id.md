@@ -4,7 +4,7 @@ slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Pengembangan", "Kisah"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT dan Teknologi"]
 ---
 
@@ -38,7 +38,7 @@ Sekali saja.
 Dengan pemikiran itu, saya mulai merumuskan konsep LogicPad. Itu sekitar 6 tahun yang lalu (sekitar tahun 2019).
 (Ide awalnya sendiri adalah sekitar tahun 2015 ketika saya mengetahui tentang Blueprints, bahasa pemrograman visual di Unreal Engine.)
 
-![ブループリント](img_1.png)
+![ブループリント](img_1.webp)
 ---
 
 ## Anda Tidak Bisa Ikut Campur Karena Tidak Bisa Menulis Kode. Bukankah Itu Sayang Sekali?

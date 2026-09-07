@@ -8,7 +8,7 @@ slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["teclado", "trackball", "monitor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC y gadgets"]
 ---
 
@@ -33,7 +33,7 @@ Para el dispositivo señalador, recomiendo un trackball en lugar de un ratón, y
 El que utilizo es el [Logitech MX Ergo](https://amzn.to/3IYOwtf). Es un dispositivo caro que cuesta más de 10,000 yenes, pero creo que vale más que eso.
 
 También me interesa el [DEFT PRO (M-DPT1MRXBK)](https://amzn.to/3Zu5tB8), que tiene una bola grande y se maneja con el dedo índice y medio.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Monitor
 

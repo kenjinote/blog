@@ -4,7 +4,7 @@ slug: "anti-vaccine-pros-cons-ar"
 date: 2026-01-24T15:41:23+09:00
 tags: ["قضايا اجتماعية", "صحة", "محو الأمية المعلوماتية"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["أسلوب الحياة ومتنوعات"]
 ---
 

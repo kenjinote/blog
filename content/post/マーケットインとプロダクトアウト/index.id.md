@@ -4,7 +4,7 @@ slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Pengembangan", "Bisnis", "Puisi"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Gaya Hidup & Serba-serbi"]
 ---
 

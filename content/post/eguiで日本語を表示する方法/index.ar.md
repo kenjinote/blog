@@ -4,7 +4,7 @@ slug: "how-to-display-japanese-in-egui-ar"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "مكتبة-واجهة-المستخدم", "ياباني"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا-المعلومات"]
 ---
 
@@ -41,4 +41,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## الآن يمكنك عرض اللغة اليابانية.
 
-![img.png](img.png)
+![img.png](img.webp)

@@ -3,7 +3,7 @@ title: "【Compreensão Completa com Fórmulas】Por que o 'GNFS', o mais forte 
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Computador Quântico", "GNFS", "Algoritmo de Shor", "Criptoanálise", "Matemática"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
+image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Matemática, Criptografia e Quântica"]

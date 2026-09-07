@@ -4,7 +4,7 @@ slug: "vamos-respeitar-aqueles-que-podem-fazer-o-que-nos-nao-podemos"
 date: 2023-08-01T23:42:31+09:00
 tags: ["Poema", "Pensamentos"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI・Tecnologia"]
 ---
 

@@ -4,7 +4,7 @@ slug: "ब्लॉग-के-लिए-इस्तेमाल-होने-�
 date: 2023-04-02T14:44:17+09:00
 tags: ["फोटो सामग्री", "ब्लॉग", "Unsplash"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["ब्लॉग प्रबंधन"]
 ---
 ## "Unsplash" के बारे में

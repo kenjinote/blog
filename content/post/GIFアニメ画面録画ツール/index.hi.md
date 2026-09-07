@@ -4,7 +4,7 @@ slug: "GIF एनिमेटेड स्क्रीन रिकॉर्ड�
 date: 2024-02-08T01:23:01+09:00
 tags: ["टूल", "स्क्रीन रिकॉर्डिंग", "GIF"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

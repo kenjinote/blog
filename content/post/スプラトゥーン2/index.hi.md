@@ -4,7 +4,7 @@ slug: "splatoon-2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["स्पलैटून 2", "गेम्स", "Nintendo Switch"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

@@ -4,15 +4,15 @@ slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome拡張"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・テクノロジー"]
 ---
 
 ### Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 カスタム項目を検索したり、カスタムオブジェクトの項目を一括で出力することができます。
 
@@ -22,7 +22,7 @@ categories: ["IT・テクノロジー"]
 
 ### Salesforce advanced Code searcher
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Salesforceのコードを検索する際に便利です。
 

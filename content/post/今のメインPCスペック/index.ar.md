@@ -4,7 +4,7 @@ slug: "مواصفات جهاز الكمبيوتر الرئيسي الحالي"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["الكمبيوتر والأدوات"]
 ---
 سأكتب مواصفات جهاز الكمبيوتر الرئيسي الخاص بي.

@@ -8,7 +8,7 @@ slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Ejemplo"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Programación"]
 ---
 
@@ -128,7 +128,7 @@ void MyFrame::OnHello(wxCommandEvent& event)
 ```
 10. Al compilar y ejecutar se abrirá una ventana como la siguiente.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 
 ## Referencias

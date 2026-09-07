@@ -4,7 +4,7 @@ slug: "a-navalha-de-hanlon"
 date: 2024-09-24T18:14:34+09:00
 tags: ["Frase", "Expressão"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 

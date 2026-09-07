@@ -3,7 +3,7 @@ title: "【完全解剖】什么是量子计算机？〜从零开始理解终极
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["量子计算机", "物理学", "技术"]
-image: "quantum_basics_eyecatch_1788613712487.jpg"
+image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["数学・密码学・量子"]
 ---
 

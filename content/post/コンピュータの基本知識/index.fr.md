@@ -4,7 +4,7 @@ slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Ordinateur", "Connaissances de base"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 

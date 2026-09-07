@@ -4,7 +4,7 @@ slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["轨迹球", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 
@@ -21,7 +21,7 @@ categories: ["IT・科技"]
 ## 优点
 - 与鼠标相比，不需要移动手腕，减轻了手腕的负担
 - 按钮数量多，可以为按钮分配各种功能
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 目前我的分配如上图所示。还可以为不同的应用程序分配不同的按钮功能。
 ※分配按钮功能需要安装专用软件。
 - 因为球体较大，在轨迹球中算是比较容易进行精细操作的

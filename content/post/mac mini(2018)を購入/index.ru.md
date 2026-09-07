@@ -4,7 +4,7 @@ slug: "Покупка mac mini(2018)"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ПК и гаджеты"]
 ---
 
@@ -27,9 +27,9 @@ categories: ["ПК и гаджеты"]
 # Сразу же установил xcode и inteliJ IDEA
 
 Версия xcode — Version 14.3 (14E222b)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Версия inteliJ IDEA — 2023.1
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Ну что ж! Начнем разработку!

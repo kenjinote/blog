@@ -4,7 +4,7 @@ slug: "collection-de-polices-pour-la-programmation"
 date: 2024-03-30T02:21:31+09:00
 tags: ["Programmation", "Polices"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Programmation"]
 ---
 

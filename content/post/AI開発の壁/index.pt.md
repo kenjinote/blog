@@ -4,7 +4,7 @@ slug: "barreira-do-desenvolvimento-de-ia"
 date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "desenvolvimento", "barreira", "poema"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["IA e Tecnologia"]
 ---
 
@@ -36,7 +36,7 @@ Pagamento? A API do Stripe pode ser resolvida com copiar e colar.
 Aqui, você tem a ilusão de que "Eu já sou um engenheiro, não sou?".
 Mas o verdadeiro inferno começa a partir daqui.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ---
 
@@ -107,4 +107,4 @@ Mas o verdadeiro desafio começa a partir daí.
 E quando chegarmos ao topo,
 um futuro onde nos perguntaremos "Precisávamos mesmo escalar a montanha?" pode estar nos esperando.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

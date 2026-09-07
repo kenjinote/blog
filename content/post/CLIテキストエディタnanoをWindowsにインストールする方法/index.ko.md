@@ -11,7 +11,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "텍스트 에디터"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["툴・개발환경"]
 ---
 
@@ -44,7 +44,7 @@ zip 파일을 압축 해제하고, 임의의 폴더에 `nano.exe`를 배치한�
 
 `nano`를 입력하여 실행하면, 다음과 같은 화면이 표시된다.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 화면 하단에 단축키 설명이 표시되어 있다.
 

@@ -4,7 +4,7 @@ slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "grafik"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Alat dan Lingkungan Pengembangan"]
 ---
 # Editor Grafik
@@ -18,6 +18,6 @@ Selain itu, sepertinya Anda juga dapat memindahkan elemen menggunakan mouse.
 
 Dengan mengklik `Directed`, Anda juga dapat membuat grafik berarah.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Anda dapat menyimpan grafik yang telah Anda buat atau grafik yang dibuat melalui `Download as PNG` sebagai gambar.

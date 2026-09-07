@@ -4,7 +4,7 @@ slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "kode sampel"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Pemrograman"]
 ---
 
@@ -18,7 +18,7 @@ import os
 import webbrowser
 import time
 
-url = "https://www.aomori-ringo.or.jp/kids/wp-content/uploads/2021/11/apple.png"
+url = "https://www.aomori-ringo.or.jp/kids/wp-content/uploads/2021/11/apple.webp"
 
 try:
     with urllib.request.urlopen(url) as response:

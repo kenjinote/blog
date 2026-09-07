@@ -4,7 +4,7 @@ slug: "一般数体篩法（GNFS）の真の数学的構造"
 date: 2026-09-05T02:26:13+09:00
 tags: ["数学", "暗号", "RSA", "GNFS"]
 draft: false
-image: "rsa_encryption_break_1788542156523.jpg"
+image: "rsa_encryption_break_1788542156523.webp"
 categories: ["数学・暗号・量子"]
 ---
 

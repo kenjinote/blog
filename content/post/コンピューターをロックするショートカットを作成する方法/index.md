@@ -4,7 +4,7 @@ slug: "コンピューターをロックするショートカットを作成す�
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "コンピューターをロック", "ショートカット"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・ガジェット"]
 ---
 
@@ -16,32 +16,32 @@ categories: ["PC・ガジェット"]
 
 #### 1. デスクトップで右クリックして、`新規作成`＞`ショートカット`を選択
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 #### 2. ショートカットの作成画面が表示されるので`rundll32.exe user32.dll,LockWorkStation`を入力して`次へ`をクリック
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 3. ショートカットの名前`コンピューターをロック`を入力して`完了`をクリック
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. 作成されたショートカットのアイコンを変更する
 
 作成されたショートカットを右クリックして`プロパティ`を選択
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 `アイコンの変更`をクリック
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 黄色の四角のアイコンを選択して`OK`をクリック、再度`OK`をクリックしてプロパティを閉じる
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 以上。
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 作成されたショートカットをダブルクリックするとコンピューターをロックされます。
 

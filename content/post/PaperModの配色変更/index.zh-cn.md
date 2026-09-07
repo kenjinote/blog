@@ -4,7 +4,7 @@ slug: "PaperModの配色変更"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["博客运营"]
 ---
 我更改了 PaperMod 主题的配色。更改方法参考了以下链接：

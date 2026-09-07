@@ -4,7 +4,7 @@ slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "ショートカット" ]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ツール・開発環境"]
 ---
 
@@ -54,4 +54,4 @@ Visual Studio のショートカットは、キーボードの操作を覚える
 
 - [Visual Studio のキーボード ショートカット](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

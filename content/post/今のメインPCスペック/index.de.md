@@ -4,7 +4,7 @@ slug: "aktuelle-haupt-pc-spezifikationen"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["PC・ガジェット"]
 ---
 Hier sind die Spezifikationen meines aktuellen Haupt-PCs.

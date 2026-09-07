@@ -4,7 +4,7 @@ slug: "كيفية-إصلاح-خطأ-شهادة-github-copilot"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ツール・開発環境"]
 ---
 
@@ -19,7 +19,7 @@ categories: ["ツール・開発環境"]
 
 ## كيفية الإصلاح
 يبدو أن هذا الخلل من برنامج ESET. في الإعدادات المتقدمة لـ ESET، قم بإيقاف تشغيل "Enable SSL/TLS".
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## المراجع
 

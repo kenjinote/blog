@@ -4,7 +4,7 @@ slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00
 tags: ["计算机", "基础知识"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT与科技"]
 ---
 

@@ -4,7 +4,7 @@ slug: "cara-menginstal-teks-editor-micro-di-windows"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "teks editor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
 ---
 
@@ -28,7 +28,7 @@ Untuk menggunakan `micro.exe` dari Command Prompt, Anda perlu mengatur variabel 
 ## Cara Menggunakan micro
 
 Saat Anda mengetik `micro` di Command Prompt dan menjalankannya, layar seperti berikut akan ditampilkan.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 Operasi utama dan pintasan keyboard adalah sebagai berikut.
 

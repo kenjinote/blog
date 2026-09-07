@@ -4,7 +4,7 @@ slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Управление блогом"]
 ---
 # Введение
@@ -20,7 +20,7 @@ categories: ["Управление блогом"]
 
 ```
 [params]
-  images = ["twitter_card.jpg"]
+  images = ["twitter_card.webp"]
 ```
 
 Структура папок
@@ -32,9 +32,9 @@ root
 │      └─папка статьи
 │         │  index.md (писать здесь)
 │         └─images
-│             cover.png (поместить здесь)
+│             cover.webp (поместить здесь)
 └─static
-    twitter_card.jpg (поместить здесь)
+    twitter_card.webp (поместить здесь)
 ```
 
 ## Информация в заголовке каждой статьи
@@ -43,7 +43,7 @@ root
 
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
 ```
 
@@ -51,7 +51,7 @@ cover:
 Если вы не хотите отображать обложку в верхней части статьи, добавьте элемент с именем `hidden` в разделе `cover` и установите его в `true`.
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
   hidden: true
 ```

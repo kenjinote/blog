@@ -4,7 +4,7 @@ slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["إدارة المدونة"]
 ---
 # مقدمة
@@ -20,7 +20,7 @@ categories: ["إدارة المدونة"]
 
 ```
 [params]
-  images = ["twitter_card.jpg"]
+  images = ["twitter_card.webp"]
 ```
 
 هيكل المجلد
@@ -32,9 +32,9 @@ root
 │      └─مجلد المقال
 │         │  index.md (اكتب هنا)
 │         └─images
-│             cover.png (ضع هنا)
+│             cover.webp (ضع هنا)
 └─static
-    twitter_card.jpg (ضع هنا)
+    twitter_card.webp (ضع هنا)
 ```
 
 ## معلومات رأس كل مقال
@@ -43,7 +43,7 @@ root
 
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
 ```
 
@@ -51,7 +51,7 @@ cover:
 إذا كنت لا ترغب في عرض صورة الغلاف أعلى المقال، أضف عنصرًا يسمى `hidden` تحت `cover` وقم بتعيينه إلى `true`.
 ```
 cover:
-  image: "images/cover.jpg"
+  image: "images/cover.webp"
   relative: true
   hidden: true
 ```

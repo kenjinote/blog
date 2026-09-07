@@ -4,7 +4,7 @@ slug: "la-dialectique-de-hegel"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophie", "Hegel", "Dialectique"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Informatique et Technologie"]
 ---
 ## Qu'est-ce que la dialectique de Hegel ?

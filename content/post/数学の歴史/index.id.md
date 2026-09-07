@@ -4,7 +4,7 @@ slug: "sejarah-matematika"
 date: 2023-07-22T15:25:10+09:00
 tags: ["matematika", "sejarah"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["matematika, kriptografi, kuantum"]
 ---
 

@@ -10,7 +10,7 @@
 title: "[PQC] 양자 컴퓨터 시대의 차세대 암호 ''양자 내성 암호''의 전모"
 slug: "post-quantum-cryptography"
 tags: ['암호 기술', 'PQC', '보안', '차세대 기술']
-image: 'post_quantum_cryptography_1788613735417.jpg'
+image: 'post_quantum_cryptography_1788613735417.webp'
 date: 2026-09-05T22:09:22+09:00
 categories: ['수학·암호·양자']
 ---

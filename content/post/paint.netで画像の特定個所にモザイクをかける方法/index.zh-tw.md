@@ -4,7 +4,7 @@ slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "邊框", "圖片"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI與科技"]
 ---
 
@@ -17,11 +17,11 @@ categories: ["AI與科技"]
 #### 1. 使用 paint.net 開啟您想要進行馬賽克處理的圖片
 #### 2. 使用選取工具，選擇您想要加上馬賽克的部分（可複選）
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 #### 3. 選擇選單＞效果＞扭曲＞馬賽克
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 - 透過儲存格大小來設定馬賽克處理的粗糙度。數值越大，隱蔽性越高。
 - [縮小] 選擇 `多重取樣雙線性`
@@ -31,6 +31,6 @@ categories: ["AI與科技"]
 
 #### 4. 圖片將會被加上馬賽克，接著請儲存圖片。
 
-![img.png](img.png)
+![img.png](img.webp)
 
 以上。

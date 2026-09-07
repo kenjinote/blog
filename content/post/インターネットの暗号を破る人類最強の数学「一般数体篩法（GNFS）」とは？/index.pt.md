@@ -4,7 +4,7 @@ slug: "インターネットの暗号を破る人類最強の数学「一般数�
 date: 2026-09-05T02:09:08+09:00
 tags: ["Matemática", "Criptografia", "RSA", "GNFS"]
 draft: false
-image: "gnfs_two_worlds_1788542142485.jpg"
+image: "gnfs_two_worlds_1788542142485.webp"
 categories: ["Matemática・Criptografia・Quântica"]
 ---
 

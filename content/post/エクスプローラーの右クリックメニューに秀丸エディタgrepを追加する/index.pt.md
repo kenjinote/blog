@@ -4,7 +4,7 @@ slug: "adicionar-hidemaru-editor-grep-ao-menu-de-contexto-do-explorer"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorer", "Menu de contexto", "grep", "Registro"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 

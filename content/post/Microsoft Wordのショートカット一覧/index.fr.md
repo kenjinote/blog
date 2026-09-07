@@ -4,7 +4,7 @@ slug: "Microsoft Wordのショートカット一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Raccourcis"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils et Environnement de Développement"]
 ---
 ## Liste des raccourcis

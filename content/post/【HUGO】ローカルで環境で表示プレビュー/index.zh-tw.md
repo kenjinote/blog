@@ -4,7 +4,7 @@ slug: "【HUGO】本機環境顯示預覽"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["部落格營運"]
 ---
 # 安裝 HUGO

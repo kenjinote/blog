@@ -4,7 +4,7 @@ slug: "柯克霍夫原則"
 date: 2025-04-16T23:53:08+09:00
 tags: ["柯克霍夫原則", "密碼學"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["數學、密碼學與量子"]
 ---
 
@@ -117,4 +117,4 @@ categories: ["數學、密碼學與量子"]
 
 ---
 
-![Auguste Kerckhoffs](img.png)
+![Auguste Kerckhoffs](img.webp)

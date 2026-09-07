@@ -4,7 +4,7 @@ slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00
 tags: ["कंप्यूटर", "बुनियादी ज्ञान"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

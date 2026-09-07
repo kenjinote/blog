@@ -4,7 +4,7 @@ slug: "was-ich-ueber-japan-denke"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Vermischtes"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT & Technologie"]
 ---
 Ich möchte ordnen, was ich an der japanischen Gesellschaft seltsam finde und was ich darüber denke.
@@ -13,8 +13,8 @@ Ich möchte ordnen, was ich an der japanischen Gesellschaft seltsam finde und wa
 Wenn es in Japan um Stipendien geht, sind die meisten davon verzinst und müssen zurückgezahlt werden (Studienkredite).
 Darüber hinaus steigen die Studiengebühren an Universitäten seit 1950 stetig an, und auch die Quote der Stipendienempfänger weist einen Aufwärtstrend auf.
 
-![Entwicklung der Studiengebühren](./images/japanese_tuition_fee.png)
-![Entwicklung der Stipendienempfängerquote](./images/receipt_rate.png)
+![Entwicklung der Studiengebühren](./images/japanese_tuition_fee.webp)
+![Entwicklung der Stipendienempfängerquote](./images/receipt_rate.webp)
 
 Andererseits scheint der durchschnittliche Gesamtkreditbetrag in letzter Zeit 3,24 Millionen Yen erreicht zu haben.
 

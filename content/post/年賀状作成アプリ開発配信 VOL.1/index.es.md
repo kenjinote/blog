@@ -12,7 +12,7 @@ slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["Transmisión de desarrollo de app de tarjetas de Año Nuevo", "YouTube"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tecnología de la Información"]
 ---
 

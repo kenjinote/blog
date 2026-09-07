@@ -4,7 +4,7 @@ slug: "Rust में MessageBox प्रदर्शित करें"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 
@@ -53,7 +53,7 @@ fn main() {
 ```
 
 6. कमांड प्रॉम्प्ट में `cargo run` चलाएँ।
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. रिलीज़ बिल्ड बनाने के लिए `cargo build --release` चलाएँ।
 

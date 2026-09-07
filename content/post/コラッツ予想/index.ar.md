@@ -4,7 +4,7 @@ slug: "collatz-conjecture"
 date: 2025-07-15T18:03:03+09:00
 tags: ["حدسية كولاتز", "رياضيات", "برمجة", "خوارزميات"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الرياضيات والتشفير والكم"]
 ---
 

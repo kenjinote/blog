@@ -4,7 +4,7 @@ slug: "я-купил-thinkpad-бу"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Ноутбук"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT и Технологии"]
 ---
 

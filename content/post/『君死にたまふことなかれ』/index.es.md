@@ -23,7 +23,7 @@ categories: ["TI y tecnología"]
 
 
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Akiko Yosano
 

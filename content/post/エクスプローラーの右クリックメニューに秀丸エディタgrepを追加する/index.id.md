@@ -4,7 +4,7 @@ slug: "Menambahkan grep Hidemaru Editor ke menu klik kanan File Explorer"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "File Explorer", "Menu klik kanan", "grep", "Registry"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
 ---
 

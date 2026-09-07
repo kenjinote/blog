@@ -4,7 +4,7 @@ slug: "TeamViewer के साथ आसान रिमोट कनेक्�
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "कमांड", "रिमोट कनेक्शन"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी・प्रौद्योगिकी"]
 ---
 

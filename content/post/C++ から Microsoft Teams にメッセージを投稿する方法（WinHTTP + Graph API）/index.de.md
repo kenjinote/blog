@@ -4,7 +4,7 @@ slug: "Wie man Nachrichten von C++ an Microsoft Teams sendet (WinHTTP + Graph AP
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
 ---
 

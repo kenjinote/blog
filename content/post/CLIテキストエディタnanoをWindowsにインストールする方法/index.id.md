@@ -4,7 +4,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "teks editor"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
 ---
 
@@ -30,7 +30,7 @@ Untuk menggunakan `nano.exe` dari Command Prompt, Anda perlu mengatur variabel l
 
 Saat Anda mengetik `nano` dan menjalankannya, layar berikut akan ditampilkan.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Penjelasan tentang pintasan ditampilkan di bagian bawah layar.
 

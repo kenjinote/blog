@@ -10,7 +10,7 @@ date: 2023-04-09T12:54:24+09:00
 tags: ["에라토스테네스의 체", "소수", "수학", "Rust"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["수학·암호·양자"]
 ---
 

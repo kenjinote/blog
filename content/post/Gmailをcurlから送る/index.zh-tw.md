@@ -4,7 +4,7 @@ slug: "透過-curl-發送-gmail"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI 與科技"]
 ---
 

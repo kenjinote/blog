@@ -4,7 +4,7 @@ slug: "a-propos-du-site-de-photos-pour-blogs-unsplash"
 date: 2023-04-02T14:44:17+09:00
 tags: ["Matériel photo", "Blog", "Unsplash"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Gestion de blog"]
 ---
 ## À propos d'"Unsplash"

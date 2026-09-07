@@ -4,7 +4,7 @@ slug: "comment-corriger-la-reinitialisation-des-parametres-dpi-au-demarrage-avec
 date: 2024-04-29T19:42:20+09:00
 tags: ["Plusieurs moniteurs", "DPI", "Panneau de configuration"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et technologie"]
 ---
 

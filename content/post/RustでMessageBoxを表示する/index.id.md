@@ -4,7 +4,7 @@ slug: "menampilkan-messagebox-di-rust"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["Pemrograman"]
 ---
 
@@ -53,7 +53,7 @@ fn main() {
 ```
 
 6. Jalankan `cargo run` di command prompt.
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. Untuk melakukan build rilis, jalankan `cargo build --release`.
 

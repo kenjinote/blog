@@ -9,7 +9,7 @@ slug: "映画TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["영화", "TODO"]
 draft: false
-image: "image.jpg"
+image: "image.webp"
 categories: ["라이프스타일・잡기"]
 ---
 

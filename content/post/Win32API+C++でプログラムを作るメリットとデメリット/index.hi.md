@@ -4,7 +4,7 @@ slug: "Win32API+C++でプログラムを作るメリットとデメリット"
 date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "प्रोग्रामिंग", "विकास", "तकनीक"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 # Win32API + C++ के साथ विकास का आकर्षण और चुनौतियाँ

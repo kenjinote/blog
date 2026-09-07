@@ -4,7 +4,7 @@ slug: "anti-vaccine-pros-cons-id"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Masalah Sosial", "Kesehatan", "Literasi Informasi"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Gaya Hidup / Serbaneka"]
 ---
 

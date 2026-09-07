@@ -4,7 +4,7 @@ slug: "o-que-uma-comunidade-precisa"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Comunidade", "Diversos"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI・Tecnologia"]
 ---
 # O que uma comunidade precisa

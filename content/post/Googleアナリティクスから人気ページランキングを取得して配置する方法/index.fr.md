@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Gestion de blog"]
 ---
 
@@ -16,7 +16,7 @@ Dans cet article, nous allons vous présenter comment l'intégrer sur un blog HU
 
 ## Aperçu du fonctionnement
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Préparation
 - Avoir configuré Google Analytics sur votre site
@@ -25,20 +25,20 @@ Dans cet article, nous allons vous présenter comment l'intégrer sur un blog HU
 
 1. Accédez à `Ranklet`
 2. Cliquez sur `Sign in with Google` pour vous connecter avec votre compte Google (celui-ci doit être associé à votre compte Google Analytics)
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Cliquez sur `Autoriser` (`許可`)
 
 3. Configurez les informations de base
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 La configuration a été effectuée comme indiqué ci-dessus.
 
 - Dans `Vue Google Analytics` (`Google Analytics ビュー`), sélectionnez la vue dont vous souhaitez obtenir le classement.
 
 4. Configurez le remplacement de texte
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 La configuration a été effectuée comme indiqué ci-dessus.
 Ce paramètre est défini pour supprimer ` | kenji.blog` du titre de la page.
 
@@ -144,7 +144,7 @@ Ce paramètre est défini pour supprimer ` | kenji.blog` du titre de la page.
 
 6. Copiez le code HTML depuis « Publier sur le site »
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Copiez le code HTML affiché
 

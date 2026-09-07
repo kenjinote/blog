@@ -4,7 +4,7 @@ slug: "histoire-du-low-code-et-no-code"
 date: 2025-04-26T16:46:11+09:00
 tags: ["Low-code", "No-code", "Histoire"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 

@@ -4,7 +4,7 @@ slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["名言集"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 
@@ -30,4 +30,4 @@ categories: ["IT・科技"]
 
 > 了解符号代数理论现状的人都知道，这个分析过程的有效性并不取决于所用符号的解释，而仅仅取决于组合这些符号的法则。 (乔治·布尔，在其著作《逻辑学的数学分析》开篇 1847)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

@@ -4,7 +4,7 @@ slug: "使用-Mathematica-解決旅行推銷員問題"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "旅行推銷員問題", "演算法", "數學"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["數學・密碼・量子"]
 ---
 # 使用 Mathematica 解決旅行推銷員問題

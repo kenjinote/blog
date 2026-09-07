@@ -4,7 +4,7 @@ slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["エクスプローラー"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["IT・テクノロジー"]
 ---
 
@@ -13,18 +13,18 @@ categories: ["IT・テクノロジー"]
 こちらはWindows 10での方法です。Windows 11ではメニューが表示されないようです。
 タスクバーで`Shift`キーと`Ctrl`キーを押しながら右クリックをすると、メニューに`エクスプローラーの終了`が表示されます。
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## タスクマネージャーから終了する方法
 
 1. `Ctrl` + `Shift` + `Esc` キーを押してタスクマネージャーを起動します。
 2. `詳細`を選択します。
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 3. `explorer.exe` を選択し、`Delete`キーを押下し、`explorer.exe を終了しますか？`と聞かれるので、`プロセスの終了`を選択します。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## コマンドプロンプトから終了する方法
 

@@ -4,12 +4,12 @@ slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI & Teknologi"]
 ---
 Saya ingin memperkenalkan paint.net, perangkat lunak pengeditan gambar yang sering saya gunakan saat melakukan pekerjaan pengembangan.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Fitur berguna yang tidak bisa dilakukan dengan Paint standar Windows
 - Dapat menangani transparansi/opasitas
@@ -31,7 +31,7 @@ Perangkat lunak ini memiliki fungsionalitas tinggi namun mudah digunakan. Saya s
 
 Jika Anda memilih versi gratis, silakan klik bagian berbingkai merah di tautan di bawah ini.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Jika Anda menginstalnya melalui Microsoft Store, perangkat lunak ini berbayar sebagai gantinya Anda mendapatkan fitur pembaruan otomatis.
 Bahkan dengan versi gratis, pembaruan dapat dilakukan dengan cukup lancar karena memberi tahu Anda tentang informasi pembaruan terbaru.

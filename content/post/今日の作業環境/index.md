@@ -4,7 +4,7 @@ slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
 tags: ["雑記","子供"]
 draft: false
-image: "images/today_workplase.jpg"
+image: "images/today_workplase.webp"
 categories: ["IT・テクノロジー"]
 ---
 

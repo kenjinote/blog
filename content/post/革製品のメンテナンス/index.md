@@ -4,7 +4,7 @@ slug: "革製品のメンテナンス"
 date: 2024-10-30T00:31:46+09:00
 tags: ["革製品", "趣味"]
 draft: fales
-image: "img.png"
+image: "img.webp"
 categories: ["ライフスタイル・雑記"]
 ---
 
@@ -13,7 +13,7 @@ categories: ["ライフスタイル・雑記"]
 # 最近購入した革製品のメンテナンス製品
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 価格: 1,320円程度
 
@@ -24,7 +24,7 @@ categories: ["ライフスタイル・雑記"]
 他のクリームに比べて多少多めに使うといいかもしれません。
 
 ## コロニル 1909 シュプリーム クリーム デラックス
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 価格: 1,777円程度
 
@@ -32,7 +32,7 @@ categories: ["ライフスタイル・雑記"]
 少し光沢が出ます。白色で撥水効果も期待できるようです。
 
 ## M.MOWBRAY SHOE CREAM (ブラック)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 価格: 1,000円程度
 
@@ -44,7 +44,7 @@ categories: ["ライフスタイル・雑記"]
 
 価格: 700円程度
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 ブラシを買ったときについてきたものです。
 靴用の水性クリーナー。革の汚れを落とす。

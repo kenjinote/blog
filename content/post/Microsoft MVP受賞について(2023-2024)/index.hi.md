@@ -4,7 +4,7 @@ slug: "Microsoft MVP अवार्ड प्राप्त करने क�
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "अवार्ड"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["उपकरण और विकास का माहौल"]
 ---
 

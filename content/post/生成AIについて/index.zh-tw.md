@@ -4,7 +4,7 @@ slug: "關於生成式ai"
 date: 2024-04-16T02:13:56+09:00
 tags: ["生成式AI", "YouTube", "講座"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI與科技"]
 ---
 

@@ -4,7 +4,7 @@ slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["檔案總管"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["IT與科技"]
 ---
 
@@ -13,18 +13,18 @@ categories: ["IT與科技"]
 這是在 Windows 10 上的方法。在 Windows 11 中似乎不會顯示該選單。
 在工作列上按住 `Shift` 鍵與 `Ctrl` 鍵的同時點擊滑鼠右鍵，選單中就會顯示 `結束檔案總管`。
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## 從工作管理員關閉的方法
 
 1. 按下 `Ctrl` + `Shift` + `Esc` 鍵以啟動工作管理員。
 2. 選擇 `詳細資料`。
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 3. 選擇 `explorer.exe` 並按下 `Delete` 鍵，當系統詢問 `確定要結束 explorer.exe 嗎？` 時，選擇 `結束處理程序`。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 從命令提示字元關閉的方法
 

@@ -4,7 +4,7 @@ slug: "perhatian-anak"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Anak"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT dan Teknologi"]
 ---
 Saat ibu sedang tidak enak badan dan harus berbaring di tempat tidur,

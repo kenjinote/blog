@@ -4,7 +4,7 @@ slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00
 tags: ["欧美音乐", "音乐"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["生活方式・杂记"]
 ---
 

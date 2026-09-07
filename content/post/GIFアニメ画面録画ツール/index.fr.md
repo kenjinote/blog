@@ -4,7 +4,7 @@ slug: "Outil d'enregistrement d'écran en GIF animé"
 date: 2024-02-08T01:23:01+09:00
 tags: ["Outil", "Enregistrement d'écran", "GIF"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 

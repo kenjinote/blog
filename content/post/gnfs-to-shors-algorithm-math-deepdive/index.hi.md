@@ -3,7 +3,7 @@ title: "[गणितीय सूत्रों से पूर्ण सम�
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["क्वांटम कंप्यूटर", "GNFS", "शोर का एल्गोरिदम", "क्रिप्टोग्राफी", "गणित"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
+image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]

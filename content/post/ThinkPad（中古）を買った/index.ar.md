@@ -4,7 +4,7 @@ slug: "اشتريت-جهاز-thinkpad-مستعمل"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "كمبيوتر محمول"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

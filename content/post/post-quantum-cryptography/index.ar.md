@@ -2,7 +2,7 @@
 title: "【PQC】الصورة الكاملة لـ \"تشفير ما بعد الكم\" تشفير الجيل القادم في عصر الحوسبة الكمومية"
 slug: "post-quantum-cryptography"
 tags: ["تكنولوجيا التشفير", "PQC", "الأمن", "تكنولوجيا الجيل القادم"]
-image: "post_quantum_cryptography_1788613735417.jpg"
+image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["الرياضيات، التشفير، الكم"]
 ---

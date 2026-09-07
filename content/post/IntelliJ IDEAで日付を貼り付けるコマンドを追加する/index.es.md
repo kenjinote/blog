@@ -7,7 +7,7 @@ slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
-image: "images/IntelliJ_logo.png"
+image: "images/IntelliJ_logo.webp"
 categories: ["IT y Tecnología"]
 ---
 
@@ -21,14 +21,14 @@ Como tengo que escribir `date` en el encabezado del md cada vez que escribo un p
 
 # Pasos de configuración
 1. Abrir "File" > "Settings..." en el menú  
-   ![settings](./images/settings.png)
+   ![settings](./images/settings.webp)
 2. Seleccionar "Editor" > "Live Template" > "HTML/XML" y hacer clic en "+"
 3. Seleccionar "Live Template"
 4. Ingresar "date" en Abbreviation
 5. Ingresar "Insertar fecha y hora" en Description
 6. Ingresar "$date$" en Template Text
 7. Hacer clic en el botón Edit Variables  
-   ![edit_template_variables](./images/edit_template_variables.png)
+   ![edit_template_variables](./images/edit_template_variables.webp)
 8. Ingresar "date" en Name
 9. Ingresar ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` en Expression
 10. Cerrar el cuadro de diálogo con OK

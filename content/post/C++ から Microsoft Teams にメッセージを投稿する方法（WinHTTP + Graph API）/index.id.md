@@ -4,7 +4,7 @@ slug: "Cara Memposting Pesan ke Microsoft Teams dari C++ (WinHTTP + Graph API)"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
 ---
 

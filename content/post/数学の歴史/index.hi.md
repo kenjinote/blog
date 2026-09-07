@@ -4,7 +4,7 @@ slug: "history-of-mathematics"
 date: 2023-07-22T15:25:10+09:00
 tags: ["गणित", "इतिहास"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["गणित, क्रिप्टोग्राफी और क्वांटम"]
 ---
 

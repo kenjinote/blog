@@ -4,7 +4,7 @@ slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "गणित", "एल्गोरिथ्म"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]
 ---
 # Mathematica का परिचय

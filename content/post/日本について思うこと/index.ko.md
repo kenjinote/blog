@@ -9,7 +9,7 @@ slug: "日本について思うこと"
 date: 2022-09-06T02:24:11+09:00
 tags: ["잡기"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・테크놀로지"]
 ---
 
@@ -23,8 +23,8 @@ categories: ["IT・테크놀로지"]
 일본의 장학금이라고 하면, 대부분은 이자가 있어 갚아야 하는 것으로 되어 있습니다.
 또한, 대학의 학비는 1950년부터 계속 증가하고 있으며, 수급률도 증가하는 추세에 있습니다.
 
-![학비의 추이](./images/japanese_tuition_fee.png)
-![장학금 수급률의 추이](./images/receipt_rate.png)
+![학비의 추이](./images/japanese_tuition_fee.webp)
+![장학금 수급률의 추이](./images/receipt_rate.webp)
 
 한편으로 최근의 평균 차입 총액은 324만 엔에 달하는 것 같습니다.
 

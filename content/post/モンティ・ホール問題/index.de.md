@@ -4,7 +4,7 @@ slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["Mathematik", "Wahrscheinlichkeit", "Ziegenproblem"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Mathematik, Kryptographie und Quantenphysik"]
 ---
 

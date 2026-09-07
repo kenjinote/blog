@@ -2,7 +2,7 @@
 title: "क्या क्वांटम कंप्यूटर वास्तव में RSA एन्क्रिप्शन को नष्ट कर देगा? ~ शोर का एल्गोरिदम और वर्तमान स्थिति ~"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["क्वांटम कंप्यूटर", "क्रिप्टैनालिसिस", "शोर का एल्गोरिदम", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.jpg"
+image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]
 ---

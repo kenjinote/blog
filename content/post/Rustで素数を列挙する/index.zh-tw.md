@@ -4,7 +4,7 @@ slug: "在 Rust 中列舉質數"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","質數","演算法"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["程式設計"]
 ---
 我寫了一個在 Rust 中列舉質數的程式。

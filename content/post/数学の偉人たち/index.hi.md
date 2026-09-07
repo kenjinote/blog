@@ -4,7 +4,7 @@ slug: "गणित के महान लोग"
 date: 2022-09-22T23:06:37+09:00
 tags: ["गणितज्ञ"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]
 ---
 ### फेरमा (P, de Fermat, 1601-1665)

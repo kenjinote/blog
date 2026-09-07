@@ -4,7 +4,7 @@ slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "图"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具与开发环境"]
 ---
 # 图编辑器
@@ -18,6 +18,6 @@ categories: ["工具与开发环境"]
 
 点击 `Directed` 也可以创建有向图。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 可以将创建的图通过 `Download as PNG` 保存为图像。

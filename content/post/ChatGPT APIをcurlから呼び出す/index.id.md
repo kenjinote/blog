@@ -4,7 +4,7 @@ slug: "memanggil-api-chatgpt-dari-curl"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "Perintah"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Pemrograman"]
 ---
 # Memanggil API ChatGPT dari curl

@@ -4,7 +4,7 @@ slug: "respektieren-wir-diejenigen-die-koennen-was-wir-nicht-koennen"
 date: 2023-08-01T23:42:31+09:00
 tags: ["Gedicht", "Gedanken"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・Technologie"]
 ---
 

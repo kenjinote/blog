@@ -4,7 +4,7 @@ slug: "【HUGO】स्थानीय वातावरण में पूर
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ब्लॉग संचालन"]
 ---
 # HUGO की स्थापना

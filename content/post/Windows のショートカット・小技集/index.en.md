@@ -4,7 +4,7 @@ slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Tips", "Shortcuts"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC / Gadgets"]
 ---
 This is a collection of useful little tips and shortcuts I use regularly on Windows. I hope this will be helpful for beginners just starting to use Windows.
@@ -48,27 +48,27 @@ This assumes Windows 11, but many of them should work on Windows 10 as well.
 ## Shut Down Windows
 - When the desktop is shown with `Win + M` or `Win + D`, or the taskbar is active with `Win + T` or `Win + B`, pressing `Alt + F4` will display the dialog below. Make sure "Shut down" is selected and press `Enter`.
   Alternatively, you can use `Win + R` -> `Alt + F4` -> `Alt + F4`.
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - You can shut down using `Win + X` -> `U` -> `U`.
 - Entering `shutdown /s /t 0` in Command Prompt or the "Run" dialog (`Win + R`) will shut down the system. Adding `/f` will force a shutdown.
 
 ## Restart Windows
 - When the desktop is shown with `Win + M` or `Win + D`, or the taskbar is active with `Win + T` or `Win + B`, pressing `Alt + F4` will display the dialog below. Press `↓` once to select "Restart" and press `Enter`.
   Alternatively, you can use `Win + R` -> `Alt + F4` -> `Alt + F4`.
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - You can restart using `Win + X` -> `U` -> `R`.
 - `shutdown /r /t 0` restarts the system. Adding `/f` will force a restart.
 
 ## Sleep Windows
 - When the desktop is shown with `Win + M` or `Win + D`, or the taskbar is active with `Win + T` or `Win + B`, pressing `Alt + F4` will display the dialog below. Press `↑` once to select "Sleep" and press `Enter`.
   Alternatively, you can use `Win + R` -> `Alt + F4` -> `Alt + F4`.
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - Entering `rundll32.exe powrprof.dll,SetSuspendState` in `Win + R` or Command Prompt will put the system into hibernation.
 
 ## Sign Out (Log Off) Windows
 - When the desktop is shown with `Win + M` or `Win + D`, or the taskbar is active with `Win + T` or `Win + B`, pressing `Alt + F4` will display the dialog below. Press `↑` twice to select "Sign out" and press `Enter`.
   Alternatively, you can use `Win + R` -> `Alt + F4` -> `Alt + F4`.
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - `Win + X` -> `U` -> `I`
 - `Ctrl + Alt + Del` -> `Tab` twice or `↓` twice -> `Enter` or `Space`
 - `logoff` to sign out (log off).
@@ -84,7 +84,7 @@ This assumes Windows 11, but many of them should work on Windows 10 as well.
 * Since the window will follow the mouse cursor, you can rescue a window even if it is displayed off-screen.
 
 ## End Process with Task Manager
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. `Ctrl + Shift + Esc` launches Task Manager.
 2. `Ctrl + Tab` switches tabs.
 3. After pressing `Tab` on the `Details` tab, you can search for a process by typing its prefix in alphanumeric mode.
@@ -114,85 +114,85 @@ For example, `taskkill /f /im explorer.exe` ends File Explorer.
 Selecting previously copied text or images will copy them again.
 
 ## Run
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - `Win + R` opens the "Run" dialog.
 
 Here are a few commands you can execute in "Run" or Command Prompt.
 
 ## Open Edge
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - Type `msedge` and press `Enter`
 
 ## Open Internet Explorer 11 (IE11)
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - Type `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` and press `Enter`
 
 ## Open Terminal
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - Type `wt` and press `Enter`
 
 ## Open Control Panel
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - Type `control` and press `Enter`
 - You can also open it with `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}`.
 
 ## Launch Notepad
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - Type `notepad` and press `Enter`  
 
 ## Launch Calculator
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - Type `calc` and press `Enter`
 
 ## Launch Paint
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - Type `mspaint` and press `Enter`  
 
 ## Launch PowerShell
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - Type `powershell` and press `Enter`  
 
 ## Launch Visual Studio Code
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - Type `code` and press `Enter`
 
 ## Launch Excel
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - Type `excel` and press `Enter`  
 * Only if Excel is installed.
 
 ## Open Word
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - Type `winword` and press `Enter`  
 * Only if Word is installed.
 
 ## Open PowerPoint
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - Type `powerpnt` and press `Enter`  
   * Only if PowerPoint is installed.
 
 ## Open System Configuration
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - Type `msconfig` and press `Enter`  
 
 ## Open System Properties
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - Type `sysdm.cpl` and press `Enter`
 
 ## Open Windows About (Version Info)
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - Type `winver` and press `Enter`
 
 ## Open On-Screen Keyboard
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - Type `osk` and press `Enter`
 
 ## Open WordPad
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - Type `wordpad` or `write` and press `Enter`
 
 ## Open Registry Editor
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - Type `regedit` and press `Enter`
 
 ## Open Programs and Features
@@ -202,18 +202,18 @@ Here are a few commands you can execute in "Run" or Command Prompt.
 - Type `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}` and press `Enter`
 
 ## Open Mouse Properties
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - Type `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}` and press `Enter`
 
 ## Open Sound
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - Type `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}` and press `Enter`
 
 ## Open User Accounts
 - Type `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}` and press `Enter`
 
 ## Copy String from a Standard Message Box
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - `Ctrl + C` allows you to copy the text from a standard message box.
 Copying the message box above will copy the following to the clipboard:
 ```

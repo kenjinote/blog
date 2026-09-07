@@ -8,7 +8,7 @@ slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
 

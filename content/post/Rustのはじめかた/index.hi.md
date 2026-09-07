@@ -4,7 +4,7 @@ slug: "Rust के साथ कैसे शुरू करें"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 # परिचय

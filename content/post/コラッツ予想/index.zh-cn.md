@@ -4,7 +4,7 @@ slug: "コラッツ予想"
 date: 2025-07-15T18:03:03+09:00
 tags: ["考拉兹猜想", "数学", "编程", "算法"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["数学・密码・量子"]
 ---
 

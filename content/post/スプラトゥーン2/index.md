@@ -4,7 +4,7 @@ slug: "スプラトゥーン2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["スプラトゥーン2", "ゲーム", "Nintendo Switch"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・テクノロジー"]
 ---
 

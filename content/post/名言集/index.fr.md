@@ -4,7 +4,7 @@ slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Collection de Citations"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 
@@ -30,4 +30,4 @@ categories: ["Informatique et Technologie"]
 
 > Ceux qui connaissent l'état actuel de la théorie de l'algèbre symbolique savent que la validité des processus d'analyse ne dépend pas de l'interprétation des symboles employés, mais uniquement des lois de leur combinaison. (George Boole, au début de "L'Analyse mathématique de la logique", 1847)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

@@ -4,7 +4,7 @@ slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "开发", "秘辛"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 
@@ -38,7 +38,7 @@ categories: ["IT・科技"]
 怀着这样的想法，我开始构思 LogicPad。大约是在 6 年前（2019年左右）。
 （而最初的灵感，其实可以追溯到更早的 2015 年左右，当时我了解到了虚幻引擎的视觉化编程语言 Blueprint。）
 
-![Blueprint](img_1.png)
+![Blueprint](img_1.webp)
 ---
 
 ## 因为不会写代码就无法动手实现。这难道不可惜吗？

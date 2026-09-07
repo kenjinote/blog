@@ -4,7 +4,7 @@ slug: "So richten Sie eine benutzerdefinierte Domain in einem Github-Repository 
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
-image: "images/octocat.png"
+image: "images/octocat.webp"
 categories: ["ツール・開発環境"]
 ---
 Um eine benutzerdefinierte Domain in einem Github-Repository einzurichten, müssen Sie die DNS-Einstellungen Ihrer Domain ändern.
@@ -29,7 +29,7 @@ Um die DNS-Einstellungen zu ändern, konfigurieren Sie sie wie folgt:
 9. Vergewissern Sie sich, dass das Kontrollkästchen unter „Bestätigung der Nameserver-Änderung für DNS-Eintrags-Einstellungen“ aktiviert ist, und klicken Sie auf „Zum Einstellungsbildschirm gehen“
 10. Wenn ein Bildschirm mit der Meldung „Um unbeabsichtigte Änderungen der DNS-Einstellungen zu verhindern“ angezeigt wird, klicken Sie auf „Nicht einstellen“ (wählen Sie nach Bedarf aus)
 11. Überprüfen Sie die Einstellungsdetails und klicken Sie auf „Einstellen“
-![img.png](images/img.png)
+![img.png](images/img.webp)
 12. Damit sind die DNS-Einstellungen abgeschlossen. Es kann bis zu etwa 72 Stunden dauern, bis die Übernahme abgeschlossen ist.
 13. Wenn dies nach 72 Stunden nicht der Fall ist, versuchen Sie bitte, den Support von Onamae.com zu kontaktieren.
 

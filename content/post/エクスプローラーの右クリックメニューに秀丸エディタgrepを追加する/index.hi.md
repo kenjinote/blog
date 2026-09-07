@@ -4,7 +4,7 @@ slug: "एक्सप्लोरर-संदर्भ-मेनू-में-
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "एक्सप्लोरर", "संदर्भ मेनू", "grep", "रजिस्ट्री"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["उपकरण और विकास पर्यावरण"]
 ---
 

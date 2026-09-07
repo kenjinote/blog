@@ -4,7 +4,7 @@ slug: "革製品のメンテナンス"
 date: 2024-10-30T00:31:46+09:00
 tags: ["皮革制品", "爱好"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["生活方式・杂记"]
 ---
 
@@ -13,7 +13,7 @@ categories: ["生活方式・杂记"]
 # 最近购买的皮革保养产品
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 价格: 约1,320日元
 
@@ -24,7 +24,7 @@ categories: ["生活方式・杂记"]
 与其他乳霜相比，稍微多用一点可能会更好。
 
 ## Collonil 1909 Supreme Creme Deluxe
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 价格: 约1,777日元
 
@@ -32,7 +32,7 @@ categories: ["生活方式・杂记"]
 会产生少许光泽。白色的，似乎也能期待其防水效果。
 
 ## M.MOWBRAY SHOE CREAM (黑色)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 价格: 约1,000日元
 
@@ -44,7 +44,7 @@ categories: ["生活方式・杂记"]
 
 价格: 约700日元
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 这是买鞋刷时附赠的。
 用于鞋子的水性清洁剂。能去除皮革的污垢。

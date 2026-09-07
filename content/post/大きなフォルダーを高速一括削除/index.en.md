@@ -4,7 +4,7 @@ slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
 tags: ["Command Prompt"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT / Technology"]
 ---
 ## Fast Batch Deletion of Large Folders

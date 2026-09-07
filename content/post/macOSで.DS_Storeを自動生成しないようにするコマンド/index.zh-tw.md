@@ -4,7 +4,7 @@ slug: "在macos上避免自動產生.ds_store的指令"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・Gadget"]
 ---
 在 macOS 上避免自動產生 .DS_Store 的指令如下。

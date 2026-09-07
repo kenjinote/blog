@@ -4,15 +4,15 @@ slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","FLET'S光","网络线路"]
 draft: false
-image: "jcom.png"
+image: "jcom.webp"
 categories: ["IT・科技"]
 ---
 
 # 将家庭网络环境从FLET'S光变更为J:COM
 
-![](flets_hikari.png)
+![](flets_hikari.webp)
 
-![](jcom.png)
+![](jcom.webp)
 
 经朋友介绍，我将家里的网络线路从FLET'S光换成了J:COM。原因如下：
 
@@ -43,7 +43,7 @@ categories: ["IT・科技"]
 - 2022/09/06 13:30左右　大约3到5分钟
 - 之后又出现了几次……
 
-![网络诊断](trouble_shooting.png)
+![网络诊断](trouble_shooting.webp)
 
 好像是DNS的问题，所以我参考了[这里](https://internet.watch.impress.co.jp/docs/column/shimizu/1367271.html)设置了DNS服务器。
 不知道这样行不行……不过即使设置了DNS还是陷入了无法连接的状态，于是我询问了客服，他们说正在进行紧急维护……。由于询问之后连接状态马上就变好了，我想他们应该是采取了什么措施。

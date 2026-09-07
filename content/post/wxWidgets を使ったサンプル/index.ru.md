@@ -4,7 +4,7 @@ slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "サンプル"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["プログラミング"]
 ---
 
@@ -120,7 +120,7 @@ void MyFrame::OnHello(wxCommandEvent& event)
 ```
 10. После сборки и запуска откроется следующее окно.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 
 ## Ссылки

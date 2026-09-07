@@ -2,7 +2,7 @@
 title: "Will Quantum Computers Really Break RSA Encryption? ~Shor's Algorithm and the Current State of the Art~"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Quantum Computer", "Cryptanalysis", "Shor's Algorithm", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.jpg"
+image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
 categories: ["Mathematics, Cryptography & Quantum"]
 ---

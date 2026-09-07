@@ -4,7 +4,7 @@ slug: "コンピューターをロックするショートカットを作成す�
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Lock Computer", "Shortcut"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC & Gadgets"]
 ---
 
@@ -16,32 +16,32 @@ It is convenient because you can lock your computer by simply double-clicking th
 
 #### 1. Right-click on the desktop and select `New` > `Shortcut`
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 #### 2. The Create Shortcut screen will appear. Enter `rundll32.exe user32.dll,LockWorkStation` and click `Next`
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 3. Enter the shortcut name `Lock Computer` and click `Finish`
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. Change the icon of the created shortcut
 
 Right-click the created shortcut and select `Properties`
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 Click `Change Icon`
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 Select the yellow padlock icon and click `OK`. Click `OK` again to close the properties.
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 That's it.
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 Double-clicking the created shortcut will lock your computer.
 

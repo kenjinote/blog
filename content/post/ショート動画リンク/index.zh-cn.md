@@ -4,7 +4,7 @@ slug: "ショート動画リンク"
 date: 2024-08-25T16:24:35+09:00
 tags: ["视频", "短视频"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 1. 足球 球童

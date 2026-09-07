@@ -12,7 +12,7 @@ slug: "ケルクホフスの原理"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Principio de Kerckhoffs", "Criptografía"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Matemáticas, Criptografía y Cuántica"]
 ---
 
@@ -134,4 +134,4 @@ Sin presiones, si vamos aprendiendo poco a poco, seguro que traerá cosas buenas
 
 ---
 
-![Auguste Kerckhoffs](img.png)
+![Auguste Kerckhoffs](img.webp)

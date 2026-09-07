@@ -4,7 +4,7 @@ slug: "PowerShell का उपयोग करके Excel का मेटा�
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "मेटाडेटा", "व्यक्तिगत जानकारी"]
 draft: false
-image: "powershell_metadata_eyecatch_1788588033601.jpg"
+image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 

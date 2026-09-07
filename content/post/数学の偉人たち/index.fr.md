@@ -4,7 +4,7 @@ slug: "grands-hommes-des-mathematiques"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Mathématiciens"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Mathématiques, Cryptographie, Quantique"]
 ---
 ### Fermat (P. de Fermat, 1601-1665)

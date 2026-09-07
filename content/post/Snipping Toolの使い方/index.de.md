@@ -4,7 +4,7 @@ slug: "So verwenden Sie das Snipping Tool"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Bild", "Video", "Screenshot", "Aufnahme", "Erfassen"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Technologie"]
 ---
 
@@ -20,7 +20,7 @@ Es gibt hauptsächlich 3 Möglichkeiten, es zu starten:
 - Drücken Sie die Tasten `Win` + `R`, geben Sie `snippingtool` ein und drücken Sie die `Eingabetaste`.
 
 ## So verwenden Sie das Snipping Tool
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### Die Schritte zum Speichern eines aufgenommenen Bildes sind wie folgt:
 

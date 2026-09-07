@@ -4,7 +4,7 @@ slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","域名"]
 draft: false
-image: "images/octocat.png"
+image: "images/octocat.webp"
 categories: ["工具·开发环境"]
 ---
 要为 Github 仓库配置自定义域名，你需要修改域名的 DNS 设置。
@@ -36,7 +36,7 @@ categories: ["工具·开发环境"]
 9. 确认勾选了“DNS 记录设置用名称服务器更改确认”，然后点击“进入设置界面”
 10. 如果出现“为了防止意外的 DNS 设置更改”的界面，请点击“不设置”（可根据需要选择）
 11. 确认设置内容，然后点击“设置”
-![img.png](images/img.png)
+![img.png](images/img.webp)
 12. 这样 DNS 设置就完成了。最多可能需要约 72 小时才能完成生效。
 13. 如果 72 小时后仍未生效，请尝试联系お名前.com的支持人员。
 

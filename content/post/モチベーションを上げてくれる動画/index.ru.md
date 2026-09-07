@@ -4,7 +4,7 @@ slug: "видео-которые-поднимают-мотивацию"
 date: 2022-09-08T02:22:52+09:00
 tags: ["Мотивация", "Видео"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ИТ и технологии"]
 ---
 

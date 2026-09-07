@@ -2,7 +2,7 @@
 title: "【PQC】 Vue d'ensemble de la cryptographie post-quantique, le chiffrement de nouvelle génération à l'ère de l'informatique quantique"
 slug: "post-quantum-cryptography"
 tags: ["Technologie de chiffrement", "PQC", "Sécurité", "Technologie de nouvelle génération"]
-image: "post_quantum_cryptography_1788613735417.jpg"
+image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["Mathématiques, Cryptographie, Quantique"]
 ---

@@ -4,7 +4,7 @@ slug: "comment-annuler-un-git-reset"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurer", "annuler"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils et Environnement de Développement"]
 ---
 # Comment annuler un git reset

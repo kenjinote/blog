@@ -4,7 +4,7 @@ slug: "生成質數的c語言程式碼"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C語言", "質數", "演算法", "數學"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["數學・密碼・量子"]
 ---
 

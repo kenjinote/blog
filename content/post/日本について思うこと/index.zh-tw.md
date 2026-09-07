@@ -4,7 +4,7 @@ slug: "關於我對日本的看法"
 date: 2022-09-06T02:24:11+09:00
 tags: ["雜記"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・科技"]
 ---
 我想整理一下我對日本社會感到奇怪和思考的事情。
@@ -13,8 +13,8 @@ categories: ["IT・科技"]
 說到日本的獎學金，大部分都是有息貸款並且必須償還的。
 此外，大學的學費自1950年以來一直在持續增長，領取獎學金的比例也呈現上升趨勢。
 
-![學費的變化](./images/japanese_tuition_fee.png)
-![獎學金領取率的變化](./images/receipt_rate.png)
+![學費的變化](./images/japanese_tuition_fee.webp)
+![獎學金領取率的變化](./images/receipt_rate.webp)
 
 另一方面，最近的平均總借款額似乎高達324萬日圓。
 

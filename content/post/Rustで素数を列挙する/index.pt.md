@@ -4,7 +4,7 @@ slug: "Enumerando Números Primos em Rust"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","Números Primos","Algoritmo"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Programação"]
 ---
 Escrevi um programa para enumerar números primos em Rust.

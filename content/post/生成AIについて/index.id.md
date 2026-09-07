@@ -4,7 +4,7 @@ slug: "tentang-ai-generatif"
 date: 2024-04-16T02:13:56+09:00
 tags: ["AI Generatif", "YouTube", "Kuliah"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI & Teknologi"]
 ---
 

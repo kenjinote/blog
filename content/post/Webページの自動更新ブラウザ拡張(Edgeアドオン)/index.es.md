@@ -11,7 +11,7 @@ slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Extensión de navegador", "Complemento de Edge", "Actualización automática"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Gestión del blog"]
 ---
 
@@ -29,24 +29,24 @@ Les presento "Actualización automática de pestañas", una extensión de navega
 
 Acceda al sitio web anterior y haga clic en `Instalar`.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Haga clic en `Agregar extensión`.
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 ## Cómo usar
 
 Una vez completada la instalación, se agregará un icono en la parte superior derecha de Edge.
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 Abra la página web que desea actualizar automáticamente y haga clic en el icono para comenzar la actualización automática.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 La parte en el recuadro verde es el intervalo de actualización automática. Seleccione el momento para la actualización automática.
 
 Para detener la actualización automática, haga clic en el icono y luego en `Stop reloading this tab`.
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)

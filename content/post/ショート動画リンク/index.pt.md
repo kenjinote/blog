@@ -4,7 +4,7 @@ slug: "links-de-videos-curtos"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Vídeo", "Curto"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 1. Futebol Gandula

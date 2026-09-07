@@ -4,7 +4,7 @@ slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "text editor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools & Development Environment"]
 ---
 
@@ -28,7 +28,7 @@ To use `micro.exe` from the command prompt, you need to set the environment vari
 ## How to use micro
 
 When you type `micro` in the command prompt and execute it, the following screen is displayed.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 The main operations and shortcut keys are as follows.
 

@@ -4,7 +4,7 @@ slug: "コンピューターをロックするショートカットを作成す�
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "锁定计算机", "快捷方式"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC/数码"]
 ---
 
@@ -16,32 +16,32 @@ categories: ["PC/数码"]
 
 #### 1. 在桌面上右键单击，选择 `新建` ＞ `快捷方式`
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 #### 2. 会显示创建快捷方式的画面，输入 `rundll32.exe user32.dll,LockWorkStation`，然后点击 `下一步`
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 3. 输入快捷方式的名称 `锁定计算机`，然后点击 `完成`
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. 更改已创建的快捷方式的图标
 
 右键单击已创建的快捷方式，选择 `属性`
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 点击 `更改图标`
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 选择黄色的方形图标并点击 `确定`，再次点击 `确定` 关闭属性窗口
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 以上。
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 双击已创建的快捷方式即可锁定计算机。
 

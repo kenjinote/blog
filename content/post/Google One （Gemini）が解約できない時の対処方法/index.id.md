@@ -4,7 +4,7 @@ slug: "Apa yang harus dilakukan saat Anda tidak dapat membatalkan Google One (Ge
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Pembatalan", "Solusi"]
 draft: false
-image: "img.png"
+image: "img.webp"
 description: "Apakah Anda akan ditagih setelah uji coba gratis Gemini berakhir? Ringkasan cara membatalkan"
 categories: ["Pemrograman"]
 ---

@@ -7,7 +7,7 @@ slug: "macで日本語⇔英語入力切り替えのショートカットキー�
 date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "atajos de teclado", "entrada en japonés"]
 draft: 
-image: "img.png"
+image: "img.webp"
 categories: ["PC y Gadgets"]
 ---
 

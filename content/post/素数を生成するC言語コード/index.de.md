@@ -4,7 +4,7 @@ slug: "c-code-zur-generierung-von-primzahlen"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Primzahlen", "Algorithmus", "Mathematik"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
 ---
 

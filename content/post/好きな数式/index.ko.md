@@ -10,7 +10,7 @@ date: 2022-10-05T13:24:50+09:00
 tags: ["수학"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["수학・암호・양자"]
 ---
 

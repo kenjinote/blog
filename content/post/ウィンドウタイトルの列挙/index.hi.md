@@ -4,7 +4,7 @@ slug: "विंडो शीर्षक की गणना करना"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 # विंडो शीर्षक की गणना करना

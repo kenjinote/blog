@@ -11,7 +11,7 @@ slug: "エクスプローラーの右クリックメニューに秀丸エディ�
 date: 2024-04-03T00:00:46+09:00
 tags: ["히데마루 에디터", "파일 탐색기", "우클릭 메뉴", "grep", "레지스트리"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["도구・개발 환경"]
 ---
 

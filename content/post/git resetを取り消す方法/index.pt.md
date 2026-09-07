@@ -4,7 +4,7 @@ slug: "como-desfazer-git-reset"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurar", "desfazer"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 # Como desfazer um git reset

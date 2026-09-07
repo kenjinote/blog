@@ -4,11 +4,11 @@ slug: "如何使用 Python (matplotlib.pyplot) 繪製圖表"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "圖表", "數學", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["數學・密碼學・量子"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # 需要的東西
 - Google 帳號
@@ -30,7 +30,7 @@ plt.show()
 
 # 執行結果
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # 參考資料
 

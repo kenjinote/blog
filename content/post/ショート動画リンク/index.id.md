@@ -4,7 +4,7 @@ slug: "Tautan Video Pendek"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Video", "Pendek"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI & Teknologi"]
 ---
 1. Sepak bola - Anak Gawang

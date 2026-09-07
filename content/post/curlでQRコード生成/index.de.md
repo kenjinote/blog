@@ -4,7 +4,7 @@ slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["QR-Code", "curl", "Eingabeaufforderung"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Technologie"]
 ---
 
@@ -49,11 +49,11 @@ curl qrenco.de/kenji.blog
 `api.qrserver.com` gibt ein Bild zurück.
 
 ```
-curl -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - Ausgabeergebnis
-![](qr.png)
+![](qr.webp)
 
 #### Referenz
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)

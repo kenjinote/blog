@@ -4,7 +4,7 @@ slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Математика", "Криптография"]
 draft: false
-image: "gnfs_cpp_blog_eyecatch_1788580949217.jpg"
+image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
 categories: ["Математика, криптография и кванты"]
 ---
 

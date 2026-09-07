@@ -4,7 +4,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licence", "Invite de commandes"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC et Gadgets"]
 ---
 
@@ -36,7 +36,7 @@ Lorsque vous exécutez cette commande, certaines informations sur la licence s'a
 
 3. Après avoir attendu quelques secondes, des informations de licence telles que les suivantes s'afficheront.
 
-   ![Écran de vérification de licence Windows](img.png)
+   ![Écran de vérification de licence Windows](img.webp)
 
 ## Principales informations affichées
 

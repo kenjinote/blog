@@ -4,7 +4,7 @@ slug: "бритва-хэнлона"
 date: 2024-09-24T18:14:34+09:00
 tags: ["фразы", "выражения"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT и технологии"]
 ---
 

@@ -11,7 +11,7 @@ slug: "証明書エラーでGitHub Copilotが使えなくなった場合の対�
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
 ---
 
@@ -33,7 +33,7 @@ GitHub Copilot dejó de funcionar alrededor del 19 de abril de 2024. El mensaje 
 
 ## Solución
 Parece ser un problema con ESET. En la configuración avanzada de ESET, desactiva la opción "Habilitar SSL/TLS".
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Referencia
 

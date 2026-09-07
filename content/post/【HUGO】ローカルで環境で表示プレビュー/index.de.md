@@ -4,7 +4,7 @@ slug: "【HUGO】Vorschau in der lokalen Umgebung anzeigen"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Blog-Betrieb"]
 ---
 # HUGO Installation

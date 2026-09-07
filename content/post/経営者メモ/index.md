@@ -4,7 +4,7 @@ slug: "経営者メモ"
 date: 2022-09-07T02:36:11+09:00
 tags: ["経営者"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・テクノロジー"]
 ---
 # 流行りつつある事業を見つける

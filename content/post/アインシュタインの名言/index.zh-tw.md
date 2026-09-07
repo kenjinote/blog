@@ -4,7 +4,7 @@ slug: "愛因斯坦的名言"
 date: 2024-08-24T18:38:47+09:00
 tags: ["愛因斯坦", "名言", "哲學", "科學", "物理學"]
 draft: false
-image: "Solvay_conference_1927.jpg"
+image: "Solvay_conference_1927.webp"
 categories: ["數學・密碼・量子"]
 ---
 

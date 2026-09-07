@@ -4,7 +4,7 @@ slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "巡回セールスマン問題", "アルゴリズム", "数学"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["数学・暗号・量子"]
 ---
 # Mathematicaで巡回セールスマン問題を解く

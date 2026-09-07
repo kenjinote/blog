@@ -4,7 +4,7 @@ slug: "Windows 的快速鍵與小技巧集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "小技巧", "快速鍵"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・小工具"]
 ---
 這是一些在 Windows 中常用的小技巧。希望剛開始使用 Windows 的使用者能閱讀這篇文章。
@@ -49,27 +49,27 @@ categories: ["PC・小工具"]
 ## 關閉 Windows
 - 在按下 `Win + M` 或 `Win + D` 顯示桌面時，或者按下 `Win + T` 或 `Win + B` 啟動工作列時，按下 `Alt + F4`，將顯示如下對話方塊，確認已選擇「關機」，然後按下 `Enter`
   也可以透過 `Win + R` → `Alt + F4` → `Alt + F4` 執行。
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - 依序按下 `Win + X` → `U` → `U` 即可關機。
 - 在命令提示字元或 `Win + R` 開啟的「執行」中輸入 `shutdown /s /t 0` 即可關機。若加上 `/f` 則會強制關機。
 
 ## 重新啟動 Windows
 - 在按下 `Win + M` 或 `Win + D` 顯示桌面時，或者按下 `Win + T` 或 `Win + B` 啟動工作列時，按下 `Alt + F4`，將顯示如下對話方塊，按 1 次 `↓` 選擇「重新啟動」，然後按下 `Enter`
   也可以透過 `Win + R` → `Alt + F4` → `Alt + F4` 執行。
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - 依序按下 `Win + X` → `U` → `R` 即可重新啟動。
 - 輸入 `shutdown /r /t 0` 即可重新啟動。若加上 `/f` 則會強制重新啟動。
 
 ## 睡眠 Windows
 - 在按下 `Win + M` 或 `Win + D` 顯示桌面時，或者按下 `Win + T` 或 `Win + B` 啟動工作列時，按下 `Alt + F4`，將顯示如下對話方塊，按 1 次 `↑` 選擇「睡眠」，然後按下 `Enter`
   也可以透過 `Win + R` → `Alt + F4` → `Alt + F4` 執行。
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - 透過 `Win + R` → 或在命令提示字元中輸入 `rundll32.exe powrprof.dll,SetSuspendState` 即可進入休眠狀態。
 
 ## 登出 Windows
 - 在按下 `Win + M` 或 `Win + D` 顯示桌面時，或者按下 `Win + T` 或 `Win + B` 啟動工作列時，按下 `Alt + F4`，將顯示如下對話方塊，按 2 次 `↑` 選擇「登出」，然後按下 `Enter`
   也可以透過 `Win + R` → `Alt + F4` → `Alt + F4` 執行。
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - 依序按下 `Win + X` → `U` → `I`
 - `Ctrl + Alt + Del` → 按 2 次 `Tab` 或 2 次 `↓` → `Enter` 或 `Space`
 - 輸入 `logoff` 即可登出。
@@ -85,7 +85,7 @@ categories: ["PC・小工具"]
   ※因為視窗會跟隨游標，即使視窗顯示在螢幕外也可以將其移回。
 
 ## 在工作管理員中結束處理程序
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. 按下 `Ctrl + Shift + Esc` 可啟動工作管理員。
 2. 按下 `Ctrl + Tab` 可切換分頁。
 3. 在 `詳細資料` 分頁中按下 `Tab`，接著使用鍵盤英數輸入搜尋處理程序的前綴。
@@ -115,85 +115,85 @@ categories: ["PC・小工具"]
   選取以前複製的文字或圖片即可再次複製。
 
 ## 執行
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - 按下 `Win + R` 即可啟動「執行」。
 
 以下介紹幾個可在「執行」或命令提示字元中執行的命令。
 
 ## 開啟 Edge
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - 輸入 `msedge` 並按下 `Enter`
 
 ## 開啟 Internet Explorer 11 (IE11)
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - 輸入 `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` 並按下 `Enter`
 
 ## 開啟終端機
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - 輸入 `wt` 並按下 `Enter`
 
 ## 開啟控制台
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - 輸入 `control` 並按下 `Enter`
 - 也可以輸入 `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}` 開啟。
 
 ## 啟動記事本
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - 輸入 `notepad` 並按下 `Enter`  
 
 ## 啟動小算盤
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - 輸入 `calc` 並按下 `Enter`
 
 ## 啟動小畫家
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - 輸入 `mspaint` 並按下 `Enter`  
 
 ## 啟動 PowerShell
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - 輸入 `powershell` 並按下 `Enter`  
 
 ## 啟動 Visual Studio Code
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - 輸入 `code` 並按下 `Enter`
 
 ## 啟動 Excel
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - 輸入 `excel` 並按下 `Enter`  
   ※僅限安裝了 Excel 的情況。
 
 ## 開啟 Word
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - 輸入 `winword` 並按下 `Enter`  
   ※僅限安裝了 Word 的情況。
 
 ## 開啟 PowerPoint
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - 輸入 `powerpnt` 並按下 `Enter`  
   ※僅限安裝了 PowerPoint 的情況。
 
 ## 開啟系統設定
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - 輸入 `msconfig` 並按下 `Enter`  
 
 ## 開啟系統內容
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - 輸入 `sysdm.cpl` 並按下 `Enter`
 
 ## 開啟 Windows 關於
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - 輸入 `winver` 並按下 `Enter`
 
 ## 開啟螢幕小鍵盤
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - 輸入 `osk` 並按下 `Enter`
 
 ## 開啟寫字板
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - 輸入 `wordpad` 或 `write` 並按下 `Enter`
 
 ## 開啟登錄編輯程式
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - 輸入 `regedit` 並按下 `Enter`
 
 ## 開啟程式和功能
@@ -203,18 +203,18 @@ categories: ["PC・小工具"]
 - 輸入 `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}` 並按下 `Enter`
 
 ## 開啟滑鼠內容
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - 輸入 `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}` 並按下 `Enter`
 
 ## 開啟聲音
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - 輸入 `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}` 並按下 `Enter`
 
 ## 開啟使用者帳戶
 - 輸入 `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}` 並按下 `Enter`
 
 ## 複製標準訊息方塊中的字串
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - 按下 `Ctrl + C` 即可複製標準訊息方塊中的字串。
   複製上述的訊息方塊時，會將以下內容複製到剪貼簿：
 ```

@@ -9,7 +9,7 @@ slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome 확장 프로그램", "브라우저", "Chrome", "Edge"]
 draft: false
-image: "img_4.png"
+image: "img_4.webp"
 categories: ["IT・테크놀로지"]
 ---
 
@@ -24,7 +24,7 @@ categories: ["IT・테크놀로지"]
 
 ## 1. simpleGestures
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 마우스 제스처를 사용할 수 있게 해주는 확장 프로그램입니다.
 키보드를 사용하거나 툴바의 버튼에 맞추지 않아도 브라우저를 조작할 수 있습니다.
@@ -38,7 +38,7 @@ categories: ["IT・테크놀로지"]
 
 ## 2. uBlock Origin
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 광고를 차단하는 확장 프로그램입니다. 오픈 소스이기 때문에 신뢰성이 높습니다. 또한, CPU나 메모리 사용량도 적어 쾌적하게 동작합니다.
 
@@ -47,7 +47,7 @@ categories: ["IT・테크놀로지"]
 
 ## 3. DeepL 번역
 
-![img.png](img.png)
+![img.png](img.webp)
 
 세계적으로 유명한 번역 서비스 DeepL을 사용하여 페이지 내를 번역할 수 있는 Chrome 확장 프로그램입니다. 브라우저에서 번역하고 싶은 문장을 선택하면 DeepL 아이콘이 표시되며, 클릭하면 자동 번역됩니다.
 
@@ -55,7 +55,7 @@ categories: ["IT・테크놀로지"]
 
 ## 4. ChatGPT Sidebar
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 ChatGPT를 슬라이드 바에서 사용할 수 있게 해주는 확장 프로그램입니다. Ctrl+P를 눌러 슬라이드 바를 표시할 수 있으며, 바로 AI에게 질문할 수 있습니다.
 페이지 내에서 선택된 문자열이 있으면 그대로 질문 문장으로 복사되기 때문에 Ctrl+Enter로 바로 질문할 수 있습니다.
@@ -64,7 +64,7 @@ ChatGPT를 슬라이드 바에서 사용할 수 있게 해주는 확장 프로�
 
 ## 5. Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Salesforce 개발에 유용한 기능을 추가하는 확장 프로그램입니다.
 Salesforce를 사용하지 않는 분들에게는 필요 없을 것이라 생각합니다.

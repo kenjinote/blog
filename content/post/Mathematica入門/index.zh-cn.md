@@ -4,7 +4,7 @@ slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "数学", "算法"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["数学・密码・量子"]
 ---
 # Mathematica入门

@@ -4,7 +4,7 @@ slug: "market-in-and-product-out"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Desenvolvimento", "Negócios", "Poema"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Estilo de vida e Diversos"]
 ---
 

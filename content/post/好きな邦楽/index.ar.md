@@ -4,7 +4,7 @@ slug: "الموسيقى-اليابانية-المفضلة"
 date: 2024-01-06T04:11:01+09:00
 tags: ["موسيقى يابانية", "موسيقى"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["نمط الحياة ومتفرقات"]
 ---
 

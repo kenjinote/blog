@@ -4,7 +4,7 @@ slug: "كاموكورا (رامن) لأول مرة منذ سنوات"
 date: 2022-09-09T21:45:19+09:00
 tags: ["رامن", "كاموكورا"]
 draft: false
-image: "images/img2.jpg"
+image: "images/img2.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 
@@ -12,8 +12,8 @@ categories: ["تكنولوجيا المعلومات"]
 
  **رامن كيمتشي البصل الأخضر** 
 
-![img1.jpg](images/img1.jpg)
+![img1.jpg](images/img1.webp)
 
-![img2.png](images/img2.jpg)
+![img2.png](images/img2.webp)
 
 كان لذيذاً. إنه طعم أشتهيه من حين لآخر.

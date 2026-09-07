@@ -8,7 +8,7 @@ slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "그래프", "수학", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["수학・암호・양자"]
 ---
 
@@ -16,7 +16,7 @@ categories: ["수학・암호・양자"]
 
 
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # 필요한 것
 - Google 계정
@@ -38,7 +38,7 @@ plt.show()
 
 # 실행 결과
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # 참고
 

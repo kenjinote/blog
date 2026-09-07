@@ -1,0 +1,122 @@
+[
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/HTMLでプレゼン資料を作る方法（reveal.js）/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/HTMLでプレゼン資料を作る方法（reveal.js）/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/Goをインストールする方法/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/Goをインストールする方法/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/Goをインストールする方法/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/Goをインストールする方法/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/gnfs-to-shors-algorithm-math-deepdive/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/gnfs-to-shors-algorithm-math-deepdive/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/gnfs-to-shors-algorithm-math-deepdive/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/gnfs-to-shors-algorithm-math-deepdive/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/gitでタグを消す/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/gitでタグを消す/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/gitでタグを消す/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/gitでタグを消す/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/GitHubスポンサー募集/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/GitHubスポンサー募集/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/GitHubスポンサー募集/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/GitHubスポンサー募集/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/Github Actionsで動的に変数を設定する/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/Github Actionsで動的に変数を設定する/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/Github Actionsで動的に変数を設定する/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/Github Actionsで動的に変数を設定する/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/fontplus.jp/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/fontplus.jp/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/fontplus.jp/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/fontplus.jp/index.ko.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "ES Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/eguiを使ってみる/index.md into Spanish.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Spanish. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/eguiを使ってみる/index.es.md.\n4. Do not commit or push."
+  },
+  {
+    "TypeName": "self",
+    "Role": "KO Translator",
+    "Model": "pro",
+    "Prompt": "Translate the blog post at c:/work/kenji.blog/content/post/eguiを使ってみる/index.md into Korean.\n1. Read the original file.\n2. Translate front matter (title, tags, categories) and markdown body to Korean. Preserve date, image. Replace single quotes with '' in frontmatter title if any.\n3. Save to c:/work/kenji.blog/content/post/eguiを使ってみる/index.ko.md.\n4. Do not commit or push."
+  }
+]

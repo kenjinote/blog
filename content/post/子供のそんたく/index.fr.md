@@ -4,7 +4,7 @@ slug: "la-consideration-d-un-enfant"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Enfant"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Informatique et technologie"]
 ---
 Quand la mère est tombée malade et a dû rester au lit,

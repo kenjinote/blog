@@ -2,7 +2,7 @@
 title: "【PQC】क्वांटम कंप्यूटर युग की अगली पीढ़ी की क्रिप्टोग्राफी \"पोस्ट-क्वांटम क्रिप्टोग्राफी\" का पूरा अवलोकन"
 slug: "post-quantum-cryptography"
 tags: ["क्रिप्टोग्राफी", "PQC", "सुरक्षा", "अगली पीढ़ी की तकनीक"]
-image: "post_quantum_cryptography_1788613735417.jpg"
+image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["गणित, क्रिप्टोग्राफी, क्वांटम"]
 ---

@@ -4,7 +4,7 @@ slug: "hidemaru-editor-grep-zum-explorer-kontextmenue-hinzufuegen"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorer", "Kontextmenü", "grep", "Registrierung"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Werkzeuge und Entwicklungsumgebung"]
 ---
 

@@ -4,7 +4,7 @@ slug: "source-code-lines"
 date: 2025-04-17T10:33:02+09:00
 tags: ["सोर्स कोड", "पंक्तियों की संख्या"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["आईटी・प्रौद्योगिकी"]
 ---
 

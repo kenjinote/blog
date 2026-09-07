@@ -2,7 +2,7 @@
 title: "【PQC】Gambaran Lengkap \"Kriptografi Pasca-Kuantum\", Kriptografi Generasi Berikutnya di Era Komputer Kuantum"
 slug: "post-quantum-cryptography"
 tags: ["Teknologi Kriptografi", "PQC", "Keamanan", "Teknologi Generasi Berikutnya"]
-image: "post_quantum_cryptography_1788613735417.jpg"
+image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["Matematika, Kriptografi, Kuantum"]
 ---

@@ -4,7 +4,7 @@ slug: "ハンロンの剃刀"
 date: 2024-09-24T18:14:34+09:00
 tags: ["フレーズ", "表現"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・テクノロジー"]
 ---
 

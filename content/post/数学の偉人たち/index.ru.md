@@ -4,7 +4,7 @@ slug: "великие-математики"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Математики"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Математика, криптография, квант"]
 ---
 ### Ферма (P. de Fermat, 1601-1665)

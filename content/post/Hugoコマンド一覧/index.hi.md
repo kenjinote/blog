@@ -4,7 +4,7 @@ slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "कमांड"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ब्लॉग संचालन"]
 ---
 

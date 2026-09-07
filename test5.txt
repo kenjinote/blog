@@ -1,0 +1,3 @@
+이것은**강조**입니다. -> 이것은 **강조** 입니다.
+**bold**. -> **bold**.
+This is**bold**text -> This is **bold** text

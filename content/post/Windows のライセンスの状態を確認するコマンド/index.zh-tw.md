@@ -4,7 +4,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "授權", "命令提示字元"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC・小工具"]
 ---
 
@@ -36,7 +36,7 @@ slmgr /dli
 
 3. 等待幾秒鐘後，將顯示如下的授權資訊。
 
-   ![Windows授權檢查畫面](img.png)
+   ![Windows授權檢查畫面](img.webp)
 
 ## 顯示的主要資訊
 

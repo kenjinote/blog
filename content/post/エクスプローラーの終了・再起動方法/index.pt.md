@@ -4,7 +4,7 @@ slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["Explorador de Arquivos"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["TI e Tecnologia"]
 ---
 
@@ -13,18 +13,18 @@ categories: ["TI e Tecnologia"]
 Este método funciona no Windows 10. Parece que o menu não aparece no Windows 11.
 Se você segurar as teclas `Shift` e `Ctrl` e clicar com o botão direito na barra de tarefas, `Sair do Explorer` aparecerá no menu.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## Como fechar usando o Gerenciador de Tarefas
 
 1. Pressione as teclas `Ctrl` + `Shift` + `Esc` para abrir o Gerenciador de Tarefas.
 2. Selecione `Detalhes`.
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 3. Selecione `explorer.exe`, pressione a tecla `Delete`, e quando perguntado `Deseja finalizar o explorer.exe?`, selecione `Finalizar processo`.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Como fechar usando o Prompt de Comando
 

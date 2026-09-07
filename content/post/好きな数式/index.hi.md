@@ -5,7 +5,7 @@ date: 2022-10-05T13:24:50+09:00
 tags: ["गणित"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["गणित, क्रिप्टोग्राफी, क्वांटम"]
 ---
 ## विल्सन की प्रमेय

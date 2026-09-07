@@ -4,7 +4,7 @@ slug: "如何從C++呼叫Microsoft.Windows.AI"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具・開發環境"]
 ---
 

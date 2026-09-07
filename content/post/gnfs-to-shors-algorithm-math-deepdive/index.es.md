@@ -5,7 +5,7 @@ title: '[Consideración matemática] ¿Por qué el algoritmo de descifrado ''GNF
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Computación cuántica", "GNFS", "Algoritmo de Shor", "Criptoanálisis", "Matemáticas"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
+image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Matemáticas・Criptografía・Cuántica"]

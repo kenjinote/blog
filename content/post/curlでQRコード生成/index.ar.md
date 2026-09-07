@@ -4,7 +4,7 @@ slug: "إنشاء-رمز-الاستجابة-السريعة-باستخدام-curl
 date: 2024-04-16T00:42:27+09:00
 tags: ["رمز الاستجابة السريعة", "curl", "موجه الأوامر"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 
@@ -49,11 +49,11 @@ curl qrenco.de/kenji.blog
 يرجع `api.qrserver.com` صورة.
 
 ```
-curl -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - نتيجة الإخراج
-![](qr.png)
+![](qr.webp)
 
 #### المراجع
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)

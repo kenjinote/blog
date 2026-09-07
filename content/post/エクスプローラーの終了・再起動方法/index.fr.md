@@ -4,7 +4,7 @@ slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["Explorateur"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["IT et Technologie"]
 ---
 
@@ -13,18 +13,18 @@ categories: ["IT et Technologie"]
 Cette méthode fonctionne sous Windows 10. Il semble que le menu ne s'affiche pas sous Windows 11.
 Si vous maintenez les touches `Shift` et `Ctrl` enfoncées et faites un clic droit sur la barre des tâches, `Quitter l'Explorateur` apparaîtra dans le menu.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## Comment fermer depuis le Gestionnaire des tâches
 
 1. Appuyez sur les touches `Ctrl` + `Shift` + `Esc` pour ouvrir le Gestionnaire des tâches.
 2. Sélectionnez `Détails`.
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 3. Sélectionnez `explorer.exe`, appuyez sur la touche `Suppr`, et lorsqu'on vous demande `Voulez-vous mettre fin à explorer.exe ?`, sélectionnez `Fin de tâche`.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Comment fermer depuis l'Invite de commandes
 

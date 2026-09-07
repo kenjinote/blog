@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Googleアナリティクス", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ブログ運営"]
 ---
 
@@ -16,7 +16,7 @@ Dalam artikel ini, saya akan menunjukkan cara menempatkannya di blog HUGO.
 
 ## Contoh Hasil
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Persiapan
 - Google Analytics harus disiapkan di situs
@@ -25,20 +25,20 @@ Dalam artikel ini, saya akan menunjukkan cara menempatkannya di blog HUGO.
 
 1. Akses **Ranklet**
 2. Klik **Sign in with Google** untuk masuk dengan akun Google (harus ditautkan ke akun Google Analytics)
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Klik **Izinkan**
 
 3. Atur informasi dasar
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 Saya telah mengaturnya seperti yang ditunjukkan di atas.
 
 - Pada **Google Analytics View** , pilih tampilan yang ingin Anda dapatkan peringkatnya.
 
 4. Atur penggantian teks
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 Saya telah mengaturnya seperti yang ditunjukkan di atas.
 Ini diatur untuk menghapus ` | kenji.blog` dari judul halaman.
 
@@ -144,7 +144,7 @@ Ini diatur untuk menghapus ` | kenji.blog` dari judul halaman.
 
 6. Salin HTML dari publikasi di situs
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Salin HTML yang ditampilkan
 

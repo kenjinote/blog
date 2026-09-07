@@ -4,7 +4,7 @@ slug: "老夫婦とロバの話"
 date: 2024-09-18T00:56:59+09:00
 tags: ["The Old Couple and the Donkey", "Satire"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT and Technology"]
 ---
 

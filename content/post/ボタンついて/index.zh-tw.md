@@ -4,7 +4,7 @@ slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["按鈕", "GUI"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT與科技"]
 ---
 

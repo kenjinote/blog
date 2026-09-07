@@ -4,7 +4,7 @@ slug: "pochemu-mne-nravitsya-matematika-i-kompyutery"
 date: 2022-09-23T01:56:52+09:00
 tags: ["заметки"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Математика, криптография и кванты"]
 ---
 

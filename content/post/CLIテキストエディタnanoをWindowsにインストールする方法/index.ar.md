@@ -4,7 +4,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "محرر نصوص"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["الأدوات وبيئة التطوير"]
 ---
 
@@ -30,7 +30,7 @@ https://sourceforge.net/projects/nano-for-windows/
 
 عند كتابة `nano` وتشغيله، ستظهر الشاشة التالية.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 يتم عرض تفسيرات الاختصارات أسفل الشاشة.
 

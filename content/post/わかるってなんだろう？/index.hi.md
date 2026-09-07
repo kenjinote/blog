@@ -4,7 +4,7 @@ slug: "samajhne-ka-kya-matlab-hai"
 date: 2022-09-24T02:38:18+09:00
 tags: ["विविध"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 # समझने का क्या मतलब है?

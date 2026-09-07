@@ -4,7 +4,7 @@ slug: "comment-installer-l-editeur-de-texte-micro-sur-windows"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "éditeur de texte"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils et environnement de développement"]
 ---
 
@@ -28,7 +28,7 @@ Pour utiliser `micro.exe` depuis l'Invite de commandes, vous devez configurer le
 ## Comment utiliser micro
 
 Lorsque vous tapez `micro` dans l'Invite de commandes et l'exécutez, l'écran suivant s'affiche.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 Les principales opérations et les raccourcis clavier sont les suivants :
 

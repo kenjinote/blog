@@ -4,7 +4,7 @@ slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "शब्दावली"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और तकनीक"]
 ---
 

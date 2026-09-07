@@ -4,7 +4,7 @@ slug: "como-iniciar-o-hidemaru-editor-com-o-comando-hide"
 date: 2024-03-29T23:45:37+09:00
 tags: ["comando", "Hidemaru Editor", "registro"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 
@@ -29,4 +29,4 @@ Windows Registry Editor Version 5.00
 ```
 Se você salvar o conteúdo acima em um arquivo `.reg` e executá-lo, as configurações serão adicionadas ao registro.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

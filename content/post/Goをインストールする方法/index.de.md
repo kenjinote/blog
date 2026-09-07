@@ -4,7 +4,7 @@ slug: "wie-man-go-installiert"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "Installation"]
 draft: false
-image: "images/cover.png"
+image: "images/cover.webp"
 categories: ["Programmierung"]
 ---
 # Einführung
@@ -19,17 +19,17 @@ Darüber hinaus ist Go eine statisch typisierte Sprache wie C oder Java, aber si
 Auf der obigen Website stehen Installationsprogramme für jede Plattform zur Verfügung.
 
 Befolgen Sie die Anweisungen auf dem Bildschirm, um mit der Installation fortzufahren.
-![img.png](images/img.png)
+![img.png](images/img.webp)
 
-![img_1.png](images/img_1.png)
+![img_1.png](images/img_1.webp)
 
-![img_2.png](images/img_2.png)
+![img_2.png](images/img_2.webp)
 
-![img_3.png](images/img_3.png)
+![img_3.png](images/img_3.webp)
 
-![img_5.png](images/img_5.png)
+![img_5.png](images/img_5.webp)
 
-![img_6.png](images/img_6.png)
+![img_6.png](images/img_6.webp)
 
 Die Installation ist abgeschlossen. Einfach, oder?
 
@@ -56,7 +56,7 @@ Wenn Sie `hello.exe` ausführen, wird `Hello, world!` ausgegeben.
 
 [https://go.dev/play/](https://go.dev/play/)
 
-![img_7.png](images/img_7.png)
+![img_7.png](images/img_7.webp)
 
 # Japanische Dokumentation
 

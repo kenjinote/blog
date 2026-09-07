@@ -4,7 +4,7 @@ slug: "شراء mac mini(2018)"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الكمبيوتر والأدوات"]
 ---
 
@@ -27,9 +27,9 @@ categories: ["الكمبيوتر والأدوات"]
 # قمت بتثبيت xcode و inteliJ IDEA على الفور
 
 إصدار xcode هو Version 14.3 (14E222b)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 إصدار inteliJ IDEA هو 2023.1
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 هيا بنا! سأبدأ في التطوير!

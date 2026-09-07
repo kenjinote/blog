@@ -4,7 +4,7 @@ slug: "Как отменить git reset"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "восстановление", "отмена"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Инструменты и среда разработки"]
 ---
 # Как отменить git reset

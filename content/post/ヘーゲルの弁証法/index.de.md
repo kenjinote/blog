@@ -4,7 +4,7 @@ slug: "hegels-dialektik"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophie", "Hegel", "Dialektik"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT und Technologie"]
 ---
 ## Was ist Hegels Dialektik?

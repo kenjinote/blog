@@ -4,7 +4,7 @@ slug: "लक्ष्य"
 date: 2024-12-08T03:32:34+09:00
 tags: ["लक्ष्य"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

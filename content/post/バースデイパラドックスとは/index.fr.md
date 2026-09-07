@@ -5,7 +5,7 @@ date: 2024-04-02T01:20:50+09:00
 tags: ["Mathématiques", "Paradoxe"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Mathématiques, Cryptographie, Quantique"]
 ---
 

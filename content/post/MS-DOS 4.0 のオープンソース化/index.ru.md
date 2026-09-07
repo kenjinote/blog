@@ -4,7 +4,7 @@ slug: "ms-dos-4-0-open-source"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "Открытый исходный код"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ИТ и Технологии"]
 ---
 

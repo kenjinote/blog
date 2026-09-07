@@ -4,7 +4,7 @@ slug: "principe-de-kerckhoffs"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Principe de Kerckhoffs", "Cryptographie"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Mathématiques, Cryptographie et Quantique"]
 ---
 
@@ -117,4 +117,4 @@ Si vous apprenez petit à petit sans vous sentir accablé, je suis sûr que de b
 
 ---
 
-![Auguste Kerckhoffs](img.png)
+![Auguste Kerckhoffs](img.webp)

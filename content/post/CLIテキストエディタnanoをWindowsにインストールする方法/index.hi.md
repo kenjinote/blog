@@ -4,7 +4,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "टेक्स्ट एडिटर"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["उपकरण और विकास वातावरण"]
 ---
 
@@ -30,7 +30,7 @@ https://sourceforge.net/projects/nano-for-windows/
 
 जब आप `nano` टाइप करते हैं और चलाते हैं, तो निम्न स्क्रीन प्रदर्शित होती है।
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 शॉर्टकट का विवरण स्क्रीन के नीचे प्रदर्शित होता है।
 

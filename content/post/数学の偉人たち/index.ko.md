@@ -9,7 +9,7 @@ slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00
 tags: ["수학자"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["수학・암호・양자"]
 ---
 

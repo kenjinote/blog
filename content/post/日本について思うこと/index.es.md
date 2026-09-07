@@ -8,7 +8,7 @@ slug: "日本について思うこと"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Miscelánea"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["TI y tecnología"]
 ---
 
@@ -21,8 +21,8 @@ Voy a organizar lo que pienso y me parece extraño de la sociedad japonesa.
 Hablando de las becas en Japón, la mayoría devengan intereses y deben ser reembolsadas.
 Además, las tasas universitarias han estado aumentando constantemente desde 1950, y la tasa de beneficiarios también está en aumento.
 
-![Evolución de las tasas universitarias](./images/japanese_tuition_fee.png)
-![Evolución de la tasa de beneficiarios de becas](./images/receipt_rate.png)
+![Evolución de las tasas universitarias](./images/japanese_tuition_fee.webp)
+![Evolución de la tasa de beneficiarios de becas](./images/receipt_rate.webp)
 
 Por otro lado, la cantidad media total prestada recientemente parece ascender a 3,24 millones de yenes.
 

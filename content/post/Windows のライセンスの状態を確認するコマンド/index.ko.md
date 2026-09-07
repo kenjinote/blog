@@ -12,7 +12,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "라이선스", "명령 프롬프트"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC・가젯"]
 ---
 
@@ -52,7 +52,7 @@ slmgr /dli
 
 3. 몇 초 기다리면 다음과 같은 라이선스 정보가 표시됩니다.
 
-   ![Windows 라이선스 확인 화면](img.png)
+   ![Windows 라이선스 확인 화면](img.webp)
 
 ## 표시되는 주요 정보
 

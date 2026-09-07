@@ -4,7 +4,7 @@ slug: "egui-me-japanese-kaise-pradarshit-kare"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI लाइब्रेरी", "जापानी"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT और प्रौद्योगिकी"]
 ---
 
@@ -41,4 +41,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## अब आप जापानी प्रदर्शित कर सकते हैं।
 
-![img.png](img.png)
+![img.png](img.webp)

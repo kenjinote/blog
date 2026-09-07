@@ -4,7 +4,7 @@ slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["सामाजिक समस्या", "स्वास्थ्य", "सूचना साक्षरता"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["जीवन शैली और विविध"]
 ---
 

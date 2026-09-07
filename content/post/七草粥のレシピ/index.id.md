@@ -4,7 +4,7 @@ slug: "resep-bubur-tujuh-ramuan"
 date: 2024-01-06T22:22:00+09:00
 tags: ["bubur tujuh ramuan", "memasak"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI & Teknologi"]
 ---
 # Tujuh Ramuan

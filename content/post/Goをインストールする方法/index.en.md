@@ -4,7 +4,7 @@ slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "Install"]
 draft: false
-image: "images/cover.png"
+image: "images/cover.webp"
 categories: ["Programming"]
 ---
 # Introduction
@@ -19,17 +19,17 @@ Also, Go is a statically typed language like C and Java, but it does not use poi
 Installers for each platform are available from the site above.
 
 Follow the instructions on the screen to proceed with the installation.
-![img.png](images/img.png)
+![img.png](images/img.webp)
 
-![img_1.png](images/img_1.png)
+![img_1.png](images/img_1.webp)
 
-![img_2.png](images/img_2.png)
+![img_2.png](images/img_2.webp)
 
-![img_3.png](images/img_3.png)
+![img_3.png](images/img_3.webp)
 
-![img_5.png](images/img_5.png)
+![img_5.png](images/img_5.webp)
 
-![img_6.png](images/img_6.png)
+![img_6.png](images/img_6.webp)
 
 Installation is complete. It's easy, isn't it?
 
@@ -56,7 +56,7 @@ Executing `hello.exe` will output `Hello, world!`.
 
 [https://go.dev/play/](https://go.dev/play/)
 
-![img_7.png](images/img_7.png)
+![img_7.png](images/img_7.webp)
 
 # Japanese Documentation
 

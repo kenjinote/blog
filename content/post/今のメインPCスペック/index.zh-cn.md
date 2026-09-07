@@ -4,7 +4,7 @@ slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["PC・数码产品"]
 ---
 记录一下当前主力电脑的配置。

@@ -4,7 +4,7 @@ slug: "trackball-deft-pro-m-dpt1mrbk-empfehlung"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT und Technologie"]
 ---
 
@@ -21,7 +21,7 @@ Es ist etwa eine Woche her, dass ich den Elecom-Trackball "Deft Pro M-DPT1MRBK" 
 ## Gute Punkte
 - Da das Handgelenk im Vergleich zu einer Maus nicht bewegt werden muss, wird die Belastung des Handgelenks reduziert.
 - Da es viele Tasten gibt, können Sie den Tasten verschiedene Funktionen zuweisen.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 Derzeit sind sie wie oben zugewiesen. Sie können die Tastenbelegung auch für jede Anwendung ändern.
 * Für die Tastenbelegung ist die Installation einer speziellen Software erforderlich.
 - Da der Ball groß ist, ist es für einen Trackball relativ einfach, feine Bewegungen auszuführen.

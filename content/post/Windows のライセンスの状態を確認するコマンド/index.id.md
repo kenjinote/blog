@@ -4,7 +4,7 @@ slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "lisensi", "command prompt"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["PC・ガジェット"]
 ---
 
@@ -36,7 +36,7 @@ Saat Anda menjalankan perintah ini, sebagian informasi lisensi akan ditampilkan 
 
 3. Setelah menunggu beberapa detik, informasi lisensi berikut akan ditampilkan.
 
-   ![Layar konfirmasi lisensi Windows](img.png)
+   ![Layar konfirmasi lisensi Windows](img.webp)
 
 ## Informasi utama yang ditampilkan
 

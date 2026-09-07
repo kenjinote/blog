@@ -12,7 +12,7 @@ slug: "ケルクホフスの原理"
 date: 2025-04-16T23:53:08+09:00
 tags: ["케르크호프스의 원리", "암호"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["수학・암호・양자"]
 ---
 
@@ -135,4 +135,4 @@ categories: ["수학・암호・양자"]
 
 ---
 
-![Auguste Kerckhoffs](img.png)
+![Auguste Kerckhoffs](img.webp)

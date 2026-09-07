@@ -4,7 +4,7 @@ slug: "Windows でパスの通った実行ファイルの場所を見つける�
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "路徑", "執行檔", "命令提示字元"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・ガジェット"]
 ---
 

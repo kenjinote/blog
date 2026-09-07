@@ -5,7 +5,7 @@ date: 2022-10-05T13:24:50+09:00
 tags: ["数学"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["数学・密码学・量子"]
 ---
 ## 威尔逊定理

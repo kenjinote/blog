@@ -4,7 +4,7 @@ slug: "rekomendasi-trackball-deft-pro-m-dpt1mrbk"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Teknologi"]
 ---
 
@@ -21,7 +21,7 @@ Sudah sekitar satu minggu sejak saya membeli trackball Elecom "Deft Pro M-DPT1MR
 ## Kelebihan
 - Dibandingkan dengan mouse, tidak perlu menggerakkan pergelangan tangan, sehingga beban pada pergelangan tangan berkurang
 - Karena jumlah tombolnya banyak, berbagai fungsi dapat ditetapkan ke tombol
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 Saat ini saya menetapkannya seperti gambar di atas. Anda juga dapat mengubah penetapan tombol untuk setiap aplikasi.
 ※ Instalasi perangkat lunak khusus diperlukan untuk penetapan tombol.
 - Karena bolanya besar, relatif mudah untuk melakukan gerakan presisi di antara trackball

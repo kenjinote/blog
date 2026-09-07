@@ -4,7 +4,7 @@ slug: "आइंस्टीन-के-उद्धरण"
 date: 2024-08-24T18:38:47+09:00
 tags: ["आइंस्टीन", "उद्धरण", "दर्शन", "विज्ञान", "भौतिकी"]
 draft: false
-image: "Solvay_conference_1927.jpg"
+image: "Solvay_conference_1927.webp"
 categories: ["गणित, क्रिप्टोग्राफी और क्वांटम"]
 ---
 

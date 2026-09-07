@@ -4,7 +4,7 @@ slug: "como-corrigir-configuracoes-dpi-redefinidas-inicializacao-varios-monitore
 date: 2024-04-29T19:42:20+09:00
 tags: ["Vários monitores", "DPI", "Painel de controle"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 

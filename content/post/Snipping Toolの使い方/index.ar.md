@@ -4,7 +4,7 @@ slug: "how-to-use-snipping-tool"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "صورة", "فيديو", "لقطة شاشة", "تسجيل", "التقاط"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 
@@ -20,7 +20,7 @@ categories: ["تكنولوجيا المعلومات"]
 - اضغط على مفتاح `Win` + `R`، واكتب `snippingtool`، ثم اضغط على مفتاح `Enter`.
 
 ## كيفية استخدام أداة القطع
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### كيفية حفظ صورة الملتقطة كالتالي:
 

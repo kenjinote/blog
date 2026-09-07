@@ -4,7 +4,7 @@ slug: "عرض-نافذة-بسيطة-في-rust"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "نافذة"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["برمجة"]
 ---
 

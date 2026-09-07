@@ -4,7 +4,7 @@ slug: "nombre-de-lignes-de-code-source"
 date: 2025-04-17T10:33:02+09:00
 tags: ["code source", "lignes de code"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["IT & Technologie"]
 ---
 

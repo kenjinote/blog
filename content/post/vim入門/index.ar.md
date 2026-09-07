@@ -4,11 +4,11 @@ slug: "vim-introduction"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "محرر نصوص"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["أدوات وبيئة التطوير"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # مقدمة إلى Vim
 

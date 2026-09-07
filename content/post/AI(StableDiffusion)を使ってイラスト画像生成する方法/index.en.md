@@ -4,7 +4,7 @@ slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "Illustration", "Image Generation", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Programming"]
 ---
 
@@ -26,7 +26,7 @@ That's all.
 2. Select `File` on the top left and choose `New notebook`
 3. Select `Edit` and choose `Notebook settings`
 4. Change the `Hardware accelerator` to `GPU`
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 5. Paste and execute the following code
 ```
 !pip install diffusers==0.8.0 transformers
@@ -52,11 +52,11 @@ image
 The `Prompt` used here is based on the `Prompt` at [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5).
 
 ## Generation results (some)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 ## References
 

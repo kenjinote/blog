@@ -4,7 +4,7 @@ slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["输入表单", "Web开发", "UX"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["博客运营"]
 ---
 

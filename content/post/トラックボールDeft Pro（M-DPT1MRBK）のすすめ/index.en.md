@@ -4,7 +4,7 @@ slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Technology"]
 ---
 
@@ -21,7 +21,7 @@ It has been about a week since I purchased the Elecom trackball "Deft Pro M-DPT1
 ## Pros
 - Unlike a mouse, you don't need to move your wrist, which reduces wrist strain.
 - With many buttons, you can assign various functions to them.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 I currently have them assigned as shown above. You can also change button assignments per application.
 * Dedicated software installation is required for button assignment.
 - Since the buttons are large, it is relatively easy to make precise movements for a trackball.

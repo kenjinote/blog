@@ -4,7 +4,7 @@ slug: "عظماء-الرياضيات"
 date: 2022-09-22T23:06:37+09:00
 tags: ["رياضياتيون"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الرياضيات والتعمية والكم"]
 ---
 ### فيرما (P. de Fermat, 1601-1665)

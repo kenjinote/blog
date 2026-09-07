@@ -4,7 +4,7 @@ slug: "Microsoft Wordのショートカット一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "快捷键"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具・开发环境"]
 ---
 ## 快捷键一览

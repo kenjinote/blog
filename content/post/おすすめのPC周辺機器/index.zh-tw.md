@@ -4,7 +4,7 @@ slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00
 tags: ["鍵盤", "軌跡球", "顯示器"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["電腦・小工具"]
 ---
 
@@ -25,7 +25,7 @@ categories: ["電腦・小工具"]
 我使用的是 [Logitech MX Ergo](https://amzn.to/3IYOwtf)。這雖然是價格超過1萬日圓的昂貴產品，但我認為它有超越其價格的價值。
 
 我也對使用食指和中指操作的大球款式 [DEFT PRO(M-DPT1MRXBK)](https://amzn.to/3Zu5tB8) 很感興趣。
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 顯示器
 

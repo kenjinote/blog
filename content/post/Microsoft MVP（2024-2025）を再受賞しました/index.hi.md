@@ -4,13 +4,13 @@ slug: "mujhe-phir-se-microsoft-mvp-2024-2025-se-sammanit-kiya-gaya-hai"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["उपकरण और विकास का माहौल"]
 ---
 
 # मुझे फिर से Microsoft MVP (2024-2025) से सम्मानित किया गया है
 
-![img\_1.png](img_1.png)
+![img\_1.png](img_1.webp)
 
 नमस्ते, मैं kenji हूँ।
 मुझे यह बताते हुए खुशी हो रही है कि मुझे इस साल भी **Microsoft MVP (Most Valuable Professional)** से सम्मानित किया गया है। यह 8वीं बार है जब मुझे यह पुरस्कार मिला है।

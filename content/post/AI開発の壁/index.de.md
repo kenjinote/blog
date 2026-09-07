@@ -4,7 +4,7 @@ slug: "die-barriere-der-ki-entwicklung"
 date: 2025-07-20T21:52:42+09:00
 tags: ["KI", "Entwicklung", "Barriere", "Gedicht"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["KI & Technologie"]
 ---
 
@@ -36,7 +36,7 @@ Zahlung? Die Stripe-API lässt sich per Copy & Paste erledigen.
 Hier hat man die Illusion: "Bin ich jetzt ein Ingenieur?"
 Aber die wahre Hölle beginnt erst hier.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ---
 
@@ -107,4 +107,4 @@ Aber die wahre Herausforderung beginnt erst ab dort.
 Und wenn wir den Gipfel erreichen,
 könnte eine Zukunft auf uns warten, in der wir uns fragen: "Mussten wir den Berg wirklich besteigen?"
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

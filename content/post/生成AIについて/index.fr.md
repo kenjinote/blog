@@ -4,7 +4,7 @@ slug: "a-propos-de-l-ia-generative"
 date: 2024-04-16T02:13:56+09:00
 tags: ["IA générative", "YouTube", "Conférence"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IA et Technologie"]
 ---
 

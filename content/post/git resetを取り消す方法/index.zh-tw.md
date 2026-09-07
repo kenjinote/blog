@@ -4,7 +4,7 @@ slug: "如何取消-git-reset"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "復原", "取消"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具與開發環境"]
 ---
 # 如何取消 git reset

@@ -4,7 +4,7 @@ slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C语言", "素数", "算法", "数学"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["数学・密码・量子"]
 ---
 

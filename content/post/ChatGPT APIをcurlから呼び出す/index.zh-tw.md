@@ -4,7 +4,7 @@ slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "命令"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["程式設計"]
 ---
 # 透過 curl 呼叫 ChatGPT API

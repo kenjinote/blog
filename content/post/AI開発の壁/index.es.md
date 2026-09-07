@@ -12,7 +12,7 @@ slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "Desarrollo", "Barrera", "Poema"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["IA y Tecnología"]
 ---
 
@@ -52,7 +52,7 @@ Desarrollar con IA es realmente fácil al principio.
 Aquí es donde te haces la ilusión de: "¿Acaso ya soy ingeniero?".
 Pero el verdadero infierno comienza a partir de aquí.
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ---
 
@@ -123,4 +123,4 @@ Pero a partir de ahí empieza lo de verdad.
 Y, para cuando lleguemos a la cima,
 tal vez nos espere un futuro en el que nos preguntemos: "¿De verdad era necesario escalar la montaña?".
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

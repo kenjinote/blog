@@ -7,7 +7,7 @@ draft: false
 categories: ["IT・テクノロジー"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # 与謝野晶子
 

@@ -4,7 +4,7 @@ slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Shortcuts" ]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools & Development Environment"]
 ---
 
@@ -54,4 +54,4 @@ By memorizing keyboard operations for Visual Studio shortcuts, you can perform d
 
 - [Keyboard shortcuts in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

@@ -4,11 +4,11 @@ slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "グラフ", "数学", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["数学・暗号・量子"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # 必要なもの
 - Google アカウント
@@ -30,7 +30,7 @@ plt.show()
 
 # 実行結果
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # 参考
 

@@ -12,7 +12,7 @@ slug: "「日本人ファースト」について思うこと"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Primero los Japoneses", "Política", "Problemas sociales"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT y Tecnología"]
 ---
 

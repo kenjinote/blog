@@ -4,7 +4,7 @@ slug: "Gemini CLI を Windows 環境にインストールする方法"
 date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "install", "development"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC & Gadgets"]
 ---
 

@@ -4,7 +4,7 @@ slug: "specifications-de-mon-pc-principal-actuel"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["PC・ガジェット"]
 ---
 Voici les spécifications de mon PC principal.

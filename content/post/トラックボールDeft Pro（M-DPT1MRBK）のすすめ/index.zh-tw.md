@@ -4,7 +4,7 @@ slug: "trackball-deft-pro-m-dpt1mrbk-recommendation"
 date: 2023-05-02T23:28:33+09:00
 tags: ["軌跡球", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT與技術"]
 ---
 
@@ -21,7 +21,7 @@ categories: ["IT與技術"]
 ## 優點
 - 與滑鼠相比，不需移動手腕，減輕了手腕的負擔
 - 按鈕數量多，可為按鈕分配各種功能
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 目前分配如上。您也可以針對每個應用程式更改按鈕分配。
 ※按鈕分配需要安裝專用軟體。
 - 因為球體較大，在軌跡球中相對容易進行細微的操作

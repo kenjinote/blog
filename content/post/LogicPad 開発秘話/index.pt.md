@@ -4,7 +4,7 @@ slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Desenvolvimento", "História Secreta"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 
@@ -38,7 +38,7 @@ Apenas uma vez seria suficiente.
 Com isso em mente, comecei a elaborar o conceito do LogicPad. Isso foi há cerca de 6 anos (por volta de 2019).
 (A ideia original em si foi por volta de 2015, quando conheci o Blueprint, a linguagem de programação visual da Unreal Engine.)
 
-![Blueprint](img_1.png)
+![Blueprint](img_1.webp)
 ---
 
 ## Não consigo colocar as mãos porque não sei escrever código. Isso não é um desperdício?

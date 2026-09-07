@@ -4,11 +4,11 @@ slug: "vim-introduction"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "текстовый редактор"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["инструменты и среда разработки"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Введение в Vim
 

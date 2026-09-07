@@ -4,7 +4,7 @@ slug: "nur-die-neueste-version-des-git-repositorys-abrufen"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "Repository", "Befehl"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
 ---
 

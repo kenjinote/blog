@@ -4,12 +4,12 @@ slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI・テクノロジー"]
 ---
 Apresentarei o software de edição de imagens paint.net, que costumo usar no meu trabalho de desenvolvimento.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Pontos úteis que o Paint padrão do Windows não faz
 - Pode lidar com transparência e opacidade
@@ -31,7 +31,7 @@ Apresentarei o software de edição de imagens paint.net, que costumo usar no me
 
 Se você escolher a versão gratuita, clique na parte circulada em vermelho abaixo no link.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Parece que se você instalar pela Microsoft Store, será pago, mas em troca receberá atualizações automáticas.
 Mesmo com a versão gratuita, você será notificado sobre as atualizações mais recentes, para que possa atualizar sem problemas.

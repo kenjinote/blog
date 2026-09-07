@@ -4,7 +4,7 @@ slug: "daftar-bahasa-pemrograman"
 date: 2023-04-01T03:45:53+09:00
 tags: ["Bahasa Pemrograman"]
 draft: true
-image: "img.png"
+image: "img.webp"
 categories: ["Pemrograman"]
 ---
 

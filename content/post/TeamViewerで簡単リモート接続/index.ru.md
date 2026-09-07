@@ -4,7 +4,7 @@ slug: "prostoe-udalennoe-podklyuchenie-s-teamviewer"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Команда", "Удаленное подключение"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT и Технологии"]
 ---
 

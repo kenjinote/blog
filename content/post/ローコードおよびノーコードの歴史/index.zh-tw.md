@@ -4,7 +4,7 @@ slug: "low-code-and-no-code-history"
 date: 2025-04-26T16:46:11+09:00
 tags: ["低代碼", "無代碼", "歷史"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT與技術"]
 ---
 

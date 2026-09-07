@@ -4,7 +4,7 @@ slug: "kurzvideo-links"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Video", "Kurz"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT & Technologie"]
 ---
 1. Fußball Balljunge

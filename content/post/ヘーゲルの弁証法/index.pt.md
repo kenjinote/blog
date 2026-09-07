@@ -4,7 +4,7 @@ slug: "a-dialetica-de-hegel"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filosofia", "Hegel", "Dialética"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["TI e Tecnologia"]
 ---
 ## O que é a Dialética de Hegel

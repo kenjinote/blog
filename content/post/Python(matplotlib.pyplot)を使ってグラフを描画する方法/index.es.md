@@ -7,14 +7,14 @@ slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Gráfico", "Matemáticas", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
 ---
 
 
 
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Requisitos
 - Cuenta de Google
@@ -36,7 +36,7 @@ plt.show()
 
 # Resultado de la ejecución
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Referencias
 

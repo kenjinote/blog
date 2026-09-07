@@ -4,7 +4,7 @@ slug: "Tool zur GIF-animierten Bildschirmaufnahme"
 date: 2024-02-08T01:23:01+09:00
 tags: ["Tool", "Bildschirmaufnahme", "GIF"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT und Technologie"]
 ---
 

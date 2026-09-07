@@ -7,7 +7,7 @@ slug: "paint.netを使って画像に枠線をつける方法"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "borde", "imagen"]
 draft: false
-image: "img_3.png"
+image: "img_3.webp"
 categories: ["IA y Tecnología"]
 ---
 
@@ -21,15 +21,15 @@ Te mostraré cómo añadir un borde a una imagen usando paint.net.
 #### 1. Abre la imagen a la que quieres añadir un borde en paint.net.
 #### 2. Configura el color secundario (este será el color del borde).
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Si no se muestra la paleta de colores, presiona la tecla `F8` en tu teclado.
 
-Si deseas configurarlo en negro, haz clic en ![img_1.png](img_1.png).
+Si deseas configurarlo en negro, haz clic en ![img_1.png](img_1.webp).
 
 #### 3. Selecciona el menú > Imagen > Cambiar tamaño del lienzo.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Aumenta el ancho y el alto en 2 píxeles cada uno. Si aumentas 2 píxeles, el borde será de 1 píxel.
 Si quieres un borde de 5 píxeles, aumenta el ancho y el alto en 10 píxeles cada uno.

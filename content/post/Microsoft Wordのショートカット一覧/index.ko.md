@@ -11,7 +11,7 @@ slug: "Microsoft Wordのショートカット一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "단축키"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["도구·개발 환경"]
 ---
 

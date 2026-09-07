@@ -4,7 +4,7 @@ slug: "сводка-акций-с-высокими-дивидендами"
 date: 2024-12-22T00:56:14+09:00
 tags: ["Акции"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ИТ и Технологии"]
 ---
 

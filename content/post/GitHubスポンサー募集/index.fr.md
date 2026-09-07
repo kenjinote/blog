@@ -4,7 +4,7 @@ slug: "Recherche de sponsors GitHub"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils et environnement de développement"]
 ---
 

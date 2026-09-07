@@ -4,7 +4,7 @@ slug: "recette-du-nanakusa-gayu"
 date: 2024-01-06T22:22:00+09:00
 tags: ["Nanakusa-gayu", "Cuisine"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT et technologie"]
 ---
 # Les Sept Herbes

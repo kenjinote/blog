@@ -4,7 +4,7 @@ slug: "如何使用 PowerShell 刪除 Excel 的元數據（個人資訊）"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "元數據", "個人資訊"]
 draft: false
-image: "powershell_metadata_eyecatch_1788588033601.jpg"
+image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["程式設計"]
 ---
 

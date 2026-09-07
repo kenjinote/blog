@@ -4,7 +4,7 @@ slug: "kumpulan-kutipan"
 date: 2022-10-15T17:00:43+09:00
 tags: ["kutipan"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT dan Teknologi"]
 ---
 
@@ -30,4 +30,4 @@ categories: ["IT dan Teknologi"]
 
 > Mereka yang menyadari keadaan teori simbolik aljabar saat ini, tahu bahwa validitas proses analisis tidak bergantung pada interpretasi simbol yang digunakan, melainkan semata-mata pada hukum kombinasinya. (George Boole, di awal bukunya "The Mathematical Analysis of Logic" 1847)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

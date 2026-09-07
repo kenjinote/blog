@@ -4,7 +4,7 @@ slug: "صيانة المنتجات الجلدية"
 date: 2024-10-30T00:31:46+09:00
 tags: ["المنتجات الجلدية", "هواية"]
 draft: fales
-image: "img.png"
+image: "img.webp"
 categories: ["أسلوب الحياة - منوعات"]
 ---
 
@@ -13,7 +13,7 @@ categories: ["أسلوب الحياة - منوعات"]
 # منتجات صيانة الجلود التي اشتريتها مؤخراً
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 السعر: حوالي 1,320 ين
 
@@ -24,7 +24,7 @@ categories: ["أسلوب الحياة - منوعات"]
 قد يكون من الأفضل استخدام كمية أكبر قليلاً مقارنة بالكريمات الأخرى.
 
 ## Collonil 1909 Supreme Creme de Luxe
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 السعر: حوالي 1,777 ين
 
@@ -32,7 +32,7 @@ categories: ["أسلوب الحياة - منوعات"]
 يعطي لمعاناً خفيفاً. وهو أبيض اللون ويبدو أنه يوفر تأثيراً طارداً للماء أيضاً.
 
 ## M.MOWBRAY SHOE CREAM (أسود)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 السعر: حوالي 1,000 ين
 
@@ -44,7 +44,7 @@ categories: ["أسلوب الحياة - منوعات"]
 
 السعر: حوالي 700 ين
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 هذا ما جاء مع الفرشاة عندما اشتريتها.
 منظف مائي للأحذية. يزيل الأوساخ من الجلد.

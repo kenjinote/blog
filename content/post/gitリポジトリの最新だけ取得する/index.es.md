@@ -11,7 +11,7 @@ slug: "gitリポジトリの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repositorio", "comando"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas y entorno de desarrollo"]
 ---
 

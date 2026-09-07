@@ -4,7 +4,7 @@ slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "रद्द करना", "समाधान"]
 draft: false
-image: "img.png"
+image: "img.webp"
 description: "क्या Google One (Gemini) का मुफ़्त ट्रायल खत्म होने पर बिल भेजा जाएगा? रद्द करने का तरीका जानें"
 categories: ["प्रोग्रामिंग"]
 ---

@@ -4,7 +4,7 @@ slug: "البحث-عن-رعاة-على-github"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "راعي"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["أدوات وبيئة التطوير"]
 ---
 

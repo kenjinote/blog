@@ -4,7 +4,7 @@ slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Coleção de Citações"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 
@@ -30,4 +30,4 @@ categories: ["TI e Tecnologia"]
 
 > Aqueles que conhecem o estado atual da teoria da Álgebra Simbólica sabem que a validade dos processos de análise não depende da interpretação dos símbolos empregados, mas exclusivamente das leis de sua combinação. (George Boole, no início de "A Análise Matemática da Lógica", 1847)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

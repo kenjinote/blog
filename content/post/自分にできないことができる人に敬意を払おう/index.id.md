@@ -4,7 +4,7 @@ slug: "mari-kita-hormati-orang-yang-bisa-melakukan-apa-yang-tidak-bisa-kita-laku
 date: 2023-08-01T23:42:31+09:00
 tags: ["puisi", "pemikiran"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI & Teknologi"]
 ---
 

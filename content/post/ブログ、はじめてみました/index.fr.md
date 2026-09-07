@@ -4,7 +4,7 @@ slug: "jai-commence-un-blog"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Divers"]
 draft: false
-image: "images/komeda.jpeg"
+image: "images/komeda.webp"
 categories: ["Gestion de blog"]
 ---
 

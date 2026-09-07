@@ -4,7 +4,7 @@ slug: "ich-habe-einen-blog-gestartet"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Verschiedenes"]
 draft: false
-image: "images/komeda.jpeg"
+image: "images/komeda.webp"
 categories: ["Blog-Betrieb"]
 ---
 

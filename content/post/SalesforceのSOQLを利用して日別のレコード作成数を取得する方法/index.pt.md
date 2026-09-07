@@ -4,7 +4,7 @@ slug: "Como obter o número de registros criados por dia usando SOQL do Salesfor
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "data", "agregação"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI e Tecnologia"]
 ---
 

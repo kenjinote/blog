@@ -4,7 +4,7 @@ slug: "Comment obtenir le nombre d'enregistrements créés par jour à l'aide de
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "date", "agrégation"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 

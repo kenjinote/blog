@@ -4,7 +4,7 @@ slug: "consideracao-de-uma-crianca"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Criança"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["TI e Tecnologia"]
 ---
 Quando a mãe ficou doente e estava de cama,

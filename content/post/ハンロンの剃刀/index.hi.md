@@ -4,7 +4,7 @@ slug: "hanlons-razor"
 date: 2024-09-24T18:14:34+09:00
 tags: ["वाक्यांश", "अभिव्यक्ति"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

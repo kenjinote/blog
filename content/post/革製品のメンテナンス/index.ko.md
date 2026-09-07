@@ -12,7 +12,7 @@ slug: "革製品のメンテナンス"
 date: 2024-10-30T00:31:46+09:00
 tags: ["가죽 제품", "취미"]
 draft: fales
-image: "img.png"
+image: "img.webp"
 categories: ["라이프스타일・잡기"]
 ---
 
@@ -29,7 +29,7 @@ categories: ["라이프스타일・잡기"]
 # 최근 구매한 가죽 제품 유지 관리 제품
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 가격: 1,320엔 정도
 
@@ -40,7 +40,7 @@ categories: ["라이프스타일・잡기"]
 다른 크림에 비해 다소 넉넉하게 사용하는 것이 좋을지도 모릅니다.
 
 ## 콜로닐 1909 슈프림 크림 디럭스
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 가격: 1,777엔 정도
 
@@ -48,7 +48,7 @@ categories: ["라이프스타일・잡기"]
 약간의 광택이 납니다. 백색으로 발수 효과도 기대할 수 있는 것 같습니다.
 
 ## M.MOWBRAY SHOE CREAM (블랙)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 가격: 1,000엔 정도
 
@@ -60,7 +60,7 @@ categories: ["라이프스타일・잡기"]
 
 가격: 700엔 정도
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 브러시를 샀을 때 딸려 온 것입니다.
 구두용 수성 클리너. 가죽의 오염을 제거합니다.

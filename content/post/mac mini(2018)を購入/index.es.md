@@ -7,7 +7,7 @@ slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC y gadgets"]
 ---
 
@@ -33,9 +33,9 @@ El precio es de ￥ 77,000
 # Instalé xcode e inteliJ IDEA de inmediato
 
 La versión de xcode es Versión 14.3 (14E222b)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 La versión de inteliJ IDEA es 2023.1
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 ¡Bien! ¡A desarrollar!

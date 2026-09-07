@@ -6,7 +6,7 @@ slug: "ブログで使える写真素材サイト「Unsplash」について"
 date: 2023-04-02T14:44:17+09:00
 tags: ["fotos de archivo", "blog", "Unsplash"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["gestión de blogs"]
 ---
 

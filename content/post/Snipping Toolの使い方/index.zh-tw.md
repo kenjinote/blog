@@ -4,7 +4,7 @@ slug: "剪取工具的使用方法"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "圖片", "影片", "螢幕截圖", "錄影", "擷取"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 
@@ -20,7 +20,7 @@ categories: ["IT・科技"]
 - 按下 `Win` + `R` 鍵，輸入 `snippingtool`，然後按下 `Enter` 鍵。
 
 ## 剪取工具的使用方法
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### 儲存擷取圖片的方法如下：
 

@@ -4,15 +4,15 @@ slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Extension Chrome"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et technologie"]
 ---
 
 ### Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Vous pouvez rechercher des champs personnalisés ou exporter des champs d'objets personnalisés en masse.
 
@@ -22,7 +22,7 @@ Il est également utile de pouvoir créer du SOQL sur place.
 
 ### Salesforce advanced Code searcher
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Pratique lors de la recherche de code Salesforce.
 

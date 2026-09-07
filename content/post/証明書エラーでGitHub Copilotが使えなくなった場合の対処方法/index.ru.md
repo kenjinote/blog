@@ -4,7 +4,7 @@ slug: "как-исправить-ошибку-сертификата-github-copi
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ツール・開発環境"]
 ---
 
@@ -19,7 +19,7 @@ GitHub Copilot перестал работать примерно 19 апрел�
 
 ## Как исправить
 Похоже, это ошибка в ESET. В расширенных настройках ESET отключите параметр "Включить SSL/TLS".
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Ссылки
 

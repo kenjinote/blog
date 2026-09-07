@@ -4,7 +4,7 @@ slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00
 tags: ["汉诺塔", "算法", "Python"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["编程"]
 ---
 

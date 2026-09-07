@@ -4,7 +4,7 @@ slug: "アインシュタインの名言"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Quote", "Philosophy", "Science", "Physics"]
 draft: false
-image: "Solvay_conference_1927.jpg"
+image: "Solvay_conference_1927.webp"
 categories: ["Math/Crypto/Quantum"]
 ---
 

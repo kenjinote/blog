@@ -8,7 +8,7 @@ slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["프로그래밍"]
 ---
 
@@ -61,7 +61,7 @@ fn main() {
 ```
 
 6. 명령 프롬프트에서 `cargo run`을 실행합니다.
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. 릴리스 빌드를 하려면 `cargo build --release`를 실행합니다.
 

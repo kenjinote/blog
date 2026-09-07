@@ -4,7 +4,7 @@ slug: "Любимая западная музыка"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Западная музыка", "Музыка"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Образ жизни и разное"]
 ---
 

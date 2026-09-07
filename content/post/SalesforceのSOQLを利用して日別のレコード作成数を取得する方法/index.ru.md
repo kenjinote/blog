@@ -4,7 +4,7 @@ slug: "как-получить-количество-созданных-запи�
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "дата", "агрегация"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT и технологии"]
 ---
 

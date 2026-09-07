@@ -4,7 +4,7 @@ slug: "как-вывести-текущее-время-в-формате-iso8601
 date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "Время", "ISO8601"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Программирование"]
 ---
 

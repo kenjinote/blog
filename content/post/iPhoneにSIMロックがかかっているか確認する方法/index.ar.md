@@ -4,7 +4,7 @@ slug: "كيفية-التحقق-مما-إذا-كان-جهاز-iphone-الخاص-�
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "قفل SIM"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الكمبيوتر والأجهزة الذكية"]
 ---
 

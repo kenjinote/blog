@@ -7,7 +7,7 @@ draft: false
 categories: ["IT / Technology"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Akiko Yosano
 

@@ -4,7 +4,7 @@ slug: "如何建立鎖定電腦的捷徑"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "鎖定電腦", "捷徑"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["電腦與小工具"]
 ---
 
@@ -16,32 +16,32 @@ categories: ["電腦與小工具"]
 
 #### 1. 在桌面上按一下右鍵，選擇 `新增` ＞ `捷徑`
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 #### 2. 將顯示建立捷徑的畫面，輸入 `rundll32.exe user32.dll,LockWorkStation` 然後點擊 `下一步`
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 3. 輸入捷徑名稱 `鎖定電腦` 然後點擊 `完成`
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. 變更建立好的捷徑圖示
 
 在建立好的捷徑上按一下右鍵，選擇 `內容`
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 點擊 `變更圖示`
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 選擇黃色的鎖頭圖示並點擊 `確定`，再次點擊 `確定` 以關閉內容視窗
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 就是這樣。
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 連按兩下建立好的捷徑就會鎖定電腦。
 

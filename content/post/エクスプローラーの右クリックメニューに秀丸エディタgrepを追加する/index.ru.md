@@ -4,7 +4,7 @@ slug: "Добавление grep Hidemaru Editor в контекстное ме�
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Проводник", "Контекстное меню", "grep", "Реестр"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Инструменты и среда разработки"]
 ---
 

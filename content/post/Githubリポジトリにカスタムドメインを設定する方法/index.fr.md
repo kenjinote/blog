@@ -4,7 +4,7 @@ slug: "Comment configurer un domaine personnalisé sur un dépôt Github"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
-image: "images/octocat.png"
+image: "images/octocat.webp"
 categories: ["ツール・開発環境"]
 ---
 Pour configurer un domaine personnalisé sur un dépôt Github, vous devez modifier les paramètres DNS de votre domaine.
@@ -29,7 +29,7 @@ Pour modifier les paramètres DNS, configurez-les comme suit :
 9. Assurez-vous que la case est cochée sous « Confirmation de modification du serveur de noms pour la configuration des enregistrements DNS », puis cliquez sur « Aller à l'écran de configuration »
 10. Si un écran indiquant « Pour éviter des modifications involontaires des paramètres DNS » s'affiche, cliquez sur « Ne pas configurer » (sélectionnez selon vos besoins)
 11. Vérifiez les détails de la configuration et cliquez sur « Configurer »
-![img.png](images/img.png)
+![img.png](images/img.webp)
 12. Ceci termine la configuration DNS. La prise en compte peut prendre jusqu'à environ 72 heures.
 13. Si ce n'est pas pris en compte après 72 heures, essayez de contacter le support d'Onamae.com.
 

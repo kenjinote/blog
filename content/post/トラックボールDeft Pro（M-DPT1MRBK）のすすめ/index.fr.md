@@ -4,7 +4,7 @@ slug: "recommandation-trackball-deft-pro-m-dpt1mrbk"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique et Technologie"]
 ---
 
@@ -21,7 +21,7 @@ Cela fait environ une semaine que j'ai acheté le trackball "Deft Pro M-DPT1MRBK
 ## Points positifs
 - Comme il n'est pas nécessaire de bouger le poignet par rapport à une souris, la tension sur le poignet est réduite.
 - Comme le nombre de boutons est important, vous pouvez leur attribuer diverses fonctions.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 Actuellement, ils sont attribués comme ci-dessus. Vous pouvez également modifier l'attribution des boutons pour chaque application.
 * L'installation d'un logiciel dédié est requise pour l'attribution des boutons.
 - La boule étant grande, il est relativement facile de faire des mouvements précis pour un trackball.

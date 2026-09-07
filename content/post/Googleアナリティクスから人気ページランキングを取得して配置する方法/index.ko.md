@@ -7,7 +7,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google 애널리틱스", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["블로그 운영"]
 ---
 
@@ -22,7 +22,7 @@ categories: ["블로그 운영"]
 
 ## 동작 이미지
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 준비
 - 사이트에 Google 애널리틱스가 설정되어 있을 것
@@ -31,20 +31,20 @@ categories: ["블로그 운영"]
 
 1. `Ranklet`에 접속합니다.
 2. `Sign in with Google`을 클릭하여 Google 계정으로 로그인합니다 (Google 애널리틱스 계정과 연결되어 있어야 합니다).
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 `허용`을 클릭
 
 3. 기본 정보를 설정합니다.
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 위와 같이 설정했습니다.
 
 - `Google Analytics 뷰`에서는 랭킹을 가져오고 싶은 뷰를 선택합니다.
 
 4. 텍스트 치환을 설정합니다.
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 위와 같이 설정했습니다.
 페이지 제목의 ` | kenji.blog`를 삭제하기 위해 설정했습니다.
 
@@ -150,7 +150,7 @@ categories: ["블로그 운영"]
 
 6. 사이트 게재에서 HTML을 복사합니다.
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 표시된 HTML을 복사합니다.
 

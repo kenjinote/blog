@@ -4,7 +4,7 @@ slug: "在 Rust 中顯示 MessageBox"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
-image: "images/rust_logo.png"
+image: "images/rust_logo.webp"
 categories: ["程式設計"]
 ---
 
@@ -53,7 +53,7 @@ fn main() {
 ```
 
 6. 在命令提示字元中執行 `cargo run`。
-   ![img.png](img.png)
+   ![img.png](img.webp)
 
 7. 如果您想建立發布版本，請執行 `cargo build --release`。
 

@@ -7,7 +7,7 @@ slug: "macでコピー＆ペーストのショートカットキーをWindowsと
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "atajos de teclado", "copiar y pegar"]
 draft: 
-image: "img.png"
+image: "img.webp"
 categories: ["PC y Gadgets"]
 ---
 

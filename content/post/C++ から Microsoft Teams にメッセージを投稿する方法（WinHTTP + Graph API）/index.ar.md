@@ -4,7 +4,7 @@ slug: "كيفية نشر رسائل إلى Microsoft Teams من C++ (WinHTTP + G
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["أدوات وبيئة التطوير"]
 ---
 

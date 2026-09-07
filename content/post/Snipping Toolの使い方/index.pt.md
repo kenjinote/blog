@@ -4,7 +4,7 @@ slug: "Como usar a Ferramenta de Captura"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Imagem", "Vídeo", "Captura de tela", "Gravação", "Captura"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT / Tecnologia"]
 ---
 
@@ -20,7 +20,7 @@ Existem principalmente 3 maneiras de iniciá-la:
 - Pressione as teclas `Win` + `R`, digite `snippingtool` e pressione a tecla `Enter`.
 
 ## Como usar a Ferramenta de Captura
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### As etapas para salvar uma imagem capturada são as seguintes:
 

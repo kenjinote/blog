@@ -4,7 +4,7 @@ slug: "वर्तमान-मुख्य-पीसी-विनिर्द�
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["PC・ガジェット"]
 ---
 मैं अपने वर्तमान मुख्य पीसी के विनिर्देशों को लिख रहा हूँ।

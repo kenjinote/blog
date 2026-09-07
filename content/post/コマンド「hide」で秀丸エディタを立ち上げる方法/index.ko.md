@@ -11,7 +11,7 @@ slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["명령어", "Hidemaru 에디터", "레지스트리"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["도구・개발환경"]
 ---
 
@@ -43,4 +43,4 @@ Windows Registry Editor Version 5.00
 ```
 위의 내용을 `.reg` 파일로 저장하여 실행하면, 레지스트리에 설정이 추가됩니다.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

@@ -9,7 +9,7 @@ slug: "数学の歴史"
 date: 2023-07-22T15:25:10+09:00
 tags: ["수학", "역사"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["수학・암호・양자"]
 ---
 

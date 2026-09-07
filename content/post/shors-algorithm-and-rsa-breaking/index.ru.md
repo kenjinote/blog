@@ -2,7 +2,7 @@
 title: "Действительно ли квантовые компьютеры уничтожат шифрование RSA? ~ Алгоритм Шора и текущий этап ~"
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Квантовый компьютер", "Дешифрование", "Алгоритм Шора", "RSA"]
-image: "quantum_breaking_rsa_1788613722990.jpg"
+image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
 categories: ["Математика・Криптография・Квант"]
 ---

@@ -4,7 +4,7 @@ slug: "os-grandes-genios-da-matematica"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Matemáticos"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Matemática, Criptografia e Quântica"]
 ---
 ### Fermat (P. de Fermat, 1601-1665)

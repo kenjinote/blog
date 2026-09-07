@@ -4,7 +4,7 @@ slug: "لماذا-أحب-الرياضيات-وأجهزة-الكمبيوتر"
 date: 2022-09-23T01:56:52+09:00
 tags: ["متفرقات"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الرياضيات والتشفير والكم"]
 ---
 

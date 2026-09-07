@@ -4,7 +4,7 @@ slug: "Liste des raccourcis de Visual Studio"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Raccourcis" ]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Outils et Environnement de développement"]
 ---
 
@@ -54,5 +54,5 @@ En mémorisant les raccourcis clavier de Visual Studio, vous pouvez effectuer de
 
 - [Raccourcis clavier par défaut dans Visual Studio](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 

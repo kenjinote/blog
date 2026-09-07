@@ -4,7 +4,7 @@ slug: "高配当株まとめ"
 date: 2024-12-22T00:56:14+09:00
 tags: ["स्टॉक्स"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी・प्रौद्योगिकी"]
 ---
 

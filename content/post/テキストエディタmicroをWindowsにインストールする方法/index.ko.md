@@ -11,7 +11,7 @@ slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "텍스트 에디터"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["도구 및 개발 환경"]
 ---
 
@@ -42,7 +42,7 @@ zip 파일의 압축을 풀고, 파일 일체를 임의의 폴더에 배치합�
 ## micro 사용 방법
 
 명령 프롬프트에서 `micro`라고 입력하여 실행하면, 다음과 같은 화면이 표시됩니다.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 주요 조작 방법과 단축키는 다음과 같습니다.
 

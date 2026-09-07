@@ -4,7 +4,7 @@ slug: "tentang-tanda-wajib-pada-formulir-input"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formulir Input", "Pengembangan Web", "UX"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Manajemen Blog"]
 ---
 

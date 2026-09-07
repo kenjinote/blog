@@ -4,7 +4,7 @@ slug: "so-erstellen-sie-eine-verknuepfung-zum-sperren-ihres-computers"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Computer sperren", "Verknüpfung"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC & Gadgets"]
 ---
 
@@ -16,32 +16,32 @@ Es ist praktisch, da Sie Ihren Computer sperren können, indem Sie einfach auf d
 
 #### 1. Klicken Sie mit der rechten Maustaste auf den Desktop und wählen Sie `Neu` > `Verknüpfung`
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 #### 2. Der Bildschirm zur Erstellung von Verknüpfungen wird angezeigt. Geben Sie `rundll32.exe user32.dll,LockWorkStation` ein und klicken Sie auf `Weiter`
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 #### 3. Geben Sie den Namen der Verknüpfung `Computer sperren` ein und klicken Sie auf `Fertig stellen`
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 #### 4. Ändern Sie das Symbol der erstellten Verknüpfung
 
 Klicken Sie mit der rechten Maustaste auf die erstellte Verknüpfung und wählen Sie `Eigenschaften`
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 
 Klicken Sie auf `Anderes Symbol...`
 
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 
 Wählen Sie das gelbe Schloss-Symbol und klicken Sie auf `OK`. Klicken Sie dann erneut auf `OK`, um die Eigenschaften zu schließen.
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Das war's.
 
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 
 Durch Doppelklicken auf die erstellte Verknüpfung wird der Computer gesperrt.
 

@@ -8,7 +8,7 @@ slug: "macでコピー＆ペーストのショートカットキーをWindowsと
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "단축키", "복사 및 붙여넣기"]
 draft:
-image: "img.png"
+image: "img.webp"
 categories: ["PC・가젯"]
 ---
 

@@ -4,7 +4,7 @@ slug: "iPhoneにSIMロックがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIM 卡鎖定"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・小工具"]
 ---
 

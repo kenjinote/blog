@@ -4,15 +4,15 @@ slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Расширения Chrome"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ИТ и технологии"]
 ---
 
 ### Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Вы можете искать пользовательские поля или выводить поля пользовательских объектов все сразу.
 
@@ -22,7 +22,7 @@ categories: ["ИТ и технологии"]
 
 ### Salesforce advanced Code searcher
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Это удобно при поиске кода Salesforce.
 

@@ -4,7 +4,7 @@ slug: "孩子的體貼"
 date: 2022-09-07T04:40:52+09:00
 tags: ["孩子"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT與科技"]
 ---
 當媽媽生病躺在床上的時候，

@@ -4,7 +4,7 @@ slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "開發", "秘辛"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・科技"]
 ---
 
@@ -38,7 +38,7 @@ categories: ["IT・科技"]
 帶著這樣的想法，我開始構思 LogicPad。那是大約 6 年前（ 2019 年左右 ）的事情。
 （最初的想法本身是在大約 2015 年前了解到 Unreal Engine 的視覺化程式語言 Blueprint 時產生的。）
 
-![藍圖](img_1.png)
+![藍圖](img_1.webp)
 ---
 
 ## 因為不會寫程式碼所以無法著手。那不是很可惜嗎？

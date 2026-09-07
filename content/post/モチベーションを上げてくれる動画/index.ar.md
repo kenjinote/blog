@@ -4,7 +4,7 @@ slug: "فيديوهات-ترفع-المعنويات"
 date: 2022-09-08T02:22:52+09:00
 tags: ["الدافع", "فيديو"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

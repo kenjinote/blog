@@ -4,7 +4,7 @@ slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・ガジェット"]
 ---
 
@@ -27,9 +27,9 @@ categories: ["PC・ガジェット"]
 # तुरंत xcode और inteliJ IDEA स्थापित करना
 
 xcode का संस्करण Version 14.3 (14E222b) है
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 inteliJ IDEA का संस्करण 2023.1 है
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 चलिए! विकास शुरू करते हैं!

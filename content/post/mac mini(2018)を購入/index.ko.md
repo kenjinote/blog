@@ -8,7 +8,7 @@ slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・가젯"]
 ---
 
@@ -35,9 +35,9 @@ categories: ["PC・가젯"]
 # 바로 xcode와 IntelliJ IDEA를 설치
 
 xcode는 버전이 Version 14.3 (14E222b)
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 IntelliJ IDEA는 버전이 2023.1
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 자! 개발해 보자!

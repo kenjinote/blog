@@ -4,7 +4,7 @@ slug: "comando-para-evitar-a-geracao-automatica-de-ds-store-no-macos"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・Gadget"]
 ---
 O comando para evitar a geração automática do .DS_Store no macOS é o seguinte.

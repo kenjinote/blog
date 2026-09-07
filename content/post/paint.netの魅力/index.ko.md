@@ -8,7 +8,7 @@ slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI・테크놀로지"]
 ---
 
@@ -17,7 +17,7 @@ categories: ["AI・테크놀로지"]
 
 제가 개발 작업을 하면서 자주 사용하는 이미지 편집 프로그램 paint.net을 소개합니다.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Windows 기본 그림판에서는 불가능한 유용한 점
 - 투명 및 투과율을 다룰 수 있다
@@ -39,7 +39,7 @@ categories: ["AI・테크놀로지"]
 
 무료 버전을 선택할 경우에는 링크 대상의 아래 빨간 테두리 부분을 클릭해 주세요.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Microsoft Store를 경유하여 설치하면 유료가 되는 대신 자동 업데이트가 가능해지는 것 같습니다.
 무료 버전에서도 최신 버전 업데이트 정보를 알려주므로 비교적 원활하게 업데이트할 수 있습니다.

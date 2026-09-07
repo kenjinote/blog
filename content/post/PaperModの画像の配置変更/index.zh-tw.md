@@ -4,7 +4,7 @@ slug: "更改 PaperMod 中的圖片佈局"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["ブログ運営"]
 ---
 預設的佈局是將圖片置中且寬度為 100%，

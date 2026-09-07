@@ -4,7 +4,7 @@ slug: "黑格爾的辯證法"
 date: 2022-09-09T23:13:19+09:00
 tags: ["哲學", "黑格爾", "辯證法"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・科技"]
 ---
 ## 什麼是黑格爾的辯證法

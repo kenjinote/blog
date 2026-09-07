@@ -4,7 +4,7 @@ slug: "エクスプローラーの右クリックメニューに秀丸エディ�
 date: 2024-04-03T00:00:46+09:00
 tags: ["秀丸编辑器", "资源管理器", "右键菜单", "grep", "注册表"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["工具与开发环境"]
 ---
 

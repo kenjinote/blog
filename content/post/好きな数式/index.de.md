@@ -5,7 +5,7 @@ date: 2022-10-05T13:24:50+09:00
 tags: ["Mathematik"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematik, Kryptographie, Quanten"]
 ---
 ## Satz von Wilson

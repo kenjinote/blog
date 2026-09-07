@@ -4,7 +4,7 @@ slug: "chto-znachit-ponimat"
 date: 2022-09-24T02:38:18+09:00
 tags: ["Разное"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・Технологии"]
 ---
 # Что значит понимать?

@@ -4,7 +4,7 @@ slug: "ローコードおよびノーコードの歴史"
 date: 2025-04-26T16:46:11+09:00
 tags: ["低代码", "无代码", "历史"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT·技术"]
 ---
 

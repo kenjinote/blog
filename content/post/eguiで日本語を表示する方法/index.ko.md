@@ -7,7 +7,7 @@ slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rsut", "egui", "GUI 라이브러리", "일본어"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・테크놀로지"]
 ---
 
@@ -47,4 +47,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## 이제 일본어를 표시할 수 있습니다.
 
-![img.png](img.png)
+![img.png](img.webp)

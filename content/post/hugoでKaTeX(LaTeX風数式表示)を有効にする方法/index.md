@@ -5,7 +5,7 @@ date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "数式", "数学", "hugo"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["数学・暗号・量子"]
 ---
 # KaTeXとは

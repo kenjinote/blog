@@ -4,7 +4,7 @@ slug: "kerckhoffs-prinzip"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Kerckhoffs' Prinzip", "Kryptographie"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
 ---
 
@@ -117,4 +117,4 @@ Wenn man Stück für Stück lernt, ohne sich überfordert zu fühlen, werden sic
 
 ---
 
-![Auguste Kerckhoffs](img.png)
+![Auguste Kerckhoffs](img.webp)

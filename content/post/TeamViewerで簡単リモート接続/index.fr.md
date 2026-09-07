@@ -4,7 +4,7 @@ slug: "Connexion à Distance Facile avec TeamViewer"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Commande", "Connexion à Distance"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Informatique・Technologie"]
 ---
 

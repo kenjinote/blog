@@ -4,7 +4,7 @@ slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
-image: "images/IntelliJ_logo.png"
+image: "images/IntelliJ_logo.webp"
 categories: ["IT・テクノロジー"]
 ---
 # Introduction
@@ -15,14 +15,14 @@ J'utilise IntelliJ IDEA lorsque j'écris ce blog. C'est pratique car sa compatib
 
 # Procédure de configuration
 1. Ouvrez "File" > "Settings..." dans le menu  
-   ![settings](./images/settings.png)
+   ![settings](./images/settings.webp)
 2. Avec "Editor" > "Live Template" > "HTML/XML" sélectionné, cliquez sur "+"
 3. Sélectionnez Live Template
 4. Entrez "date" dans Abbreviation
 5. Entrez "Insérer la date et l'heure" dans Description
 6. Entrez "$date$" dans Template Text
 7. Cliquez sur le bouton Edit Variables  
-   ![edit_template_variables](./images/edit_template_variables.png)
+   ![edit_template_variables](./images/edit_template_variables.webp)
 8. Entrez "date" dans Name
 9. Entrez ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` dans Expression
 10. Fermez la boîte de dialogue avec OK

@@ -8,7 +8,7 @@ slug: "わかるってなんだろう？"
 date: 2022-09-24T02:38:18+09:00
 tags: ["Miscelánea"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT y Tecnología"]
 ---
 

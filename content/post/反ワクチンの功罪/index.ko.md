@@ -12,7 +12,7 @@ slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["사회문제", "건강", "정보 리터러시"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["라이프스타일·잡기"]
 ---
 

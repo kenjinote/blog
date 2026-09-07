@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Blog-Betrieb"]
 ---
 
@@ -16,7 +16,7 @@ In diesem Artikel zeige ich Ihnen, wie Sie dieses Ranking in einem HUGO-Blog ein
 
 ## Vorschau
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Vorbereitung
 - Auf Ihrer Website muss Google Analytics eingerichtet sein.
@@ -25,20 +25,20 @@ In diesem Artikel zeige ich Ihnen, wie Sie dieses Ranking in einem HUGO-Blog ein
 
 1. Rufen Sie `Ranklet` auf.
 2. Klicken Sie auf `Sign in with Google` und melden Sie sich mit Ihrem Google-Konto an (dieses muss mit Ihrem Google Analytics-Konto verknüpft sein).
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Klicken Sie auf `Zulassen` (`許可`).
 
 3. Richten Sie die grundlegenden Informationen ein.
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 Die Einstellungen wurden wie oben abgebildet vorgenommen.
 
 - Wählen Sie unter `Google Analytics-Ansicht` (`Google Analytics ビュー`) die Datenansicht aus, aus der Sie das Ranking abrufen möchten.
 
 4. Richten Sie die Textersetzung ein.
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 Die Einstellungen wurden wie oben abgebildet vorgenommen.
 Dies ist so eingestellt, dass ` | kenji.blog` aus dem Seitentitel entfernt wird.
 
@@ -144,7 +144,7 @@ Dies ist so eingestellt, dass ` | kenji.blog` aus dem Seitentitel entfernt wird.
 
 6. Kopieren Sie den HTML-Code aus „Auf Website einbinden“ (`サイトへの掲載`)
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Kopieren Sie den angezeigten HTML-Code.
 

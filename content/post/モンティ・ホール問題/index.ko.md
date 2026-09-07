@@ -11,7 +11,7 @@ slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["수학", "확률", "몬티 홀 문제"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["수학・암호・양자"]
 ---
 

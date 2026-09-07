@@ -4,7 +4,7 @@ slug: "HUGOで使えるショートコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["部落格營運"]
 ---
 # HUGO 可用的 Shortcodes

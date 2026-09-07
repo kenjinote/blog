@@ -4,7 +4,7 @@ slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
 date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Инструменты и среда разработки"]
 ---
 
@@ -68,7 +68,7 @@ Qt Extension Pack — это пакет расширений для VSCode.
 Qt Extension Pack
 ```
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ### 4. Нажмите кнопку установки
 

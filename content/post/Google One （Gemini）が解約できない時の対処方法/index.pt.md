@@ -4,7 +4,7 @@ slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "cancelamento", "solução"]
 draft: false
-image: "img.png"
+image: "img.webp"
 description: "Serei cobrado quando o teste gratuito do Gemini terminar? Resumo de como cancelar"
 categories: ["Programação"]
 ---

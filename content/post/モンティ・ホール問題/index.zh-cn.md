@@ -4,7 +4,7 @@ slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["数学", "概率", "蒙提霍尔问题"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["数学·密码·量子"]
 ---
 

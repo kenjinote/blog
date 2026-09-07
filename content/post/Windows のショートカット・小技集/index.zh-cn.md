@@ -4,7 +4,7 @@ slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "小技巧", "快捷键"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・数码"]
 ---
 这是平时使用Windows时的一些小技巧集。希望能对刚开始使用Windows的人有所帮助。
@@ -49,27 +49,27 @@ categories: ["PC・数码"]
 ## 关机
 - 在使用 `Win + M` 或 `Win + D` 显示桌面的状态下，或在使用 `Win + T` 或 `Win + B` 激活任务栏的状态下，按 `Alt + F4` 会显示如下对话框，确认已选择“关机”后按 `Enter`。
   或者 `Win + R` → `Alt + F4` → `Alt + F4` 也可以。
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - 按 `Win + X` → `U` → `U` 即可关机。
 - 在命令提示符或 `Win + R` 的“运行”中输入 `shutdown /s /t 0` 即可关机。如果加上 `/f` 则为强制关机。
 
 ## 重启Windows
 - 在使用 `Win + M` 或 `Win + D` 显示桌面的状态下，或在使用 `Win + T` 或 `Win + B` 激活任务栏的状态下，按 `Alt + F4` 会显示如下对话框，按 1 次 `↓` 键选择“重启”后按 `Enter`。
 　或者 `Win + R` → `Alt + F4` → `Alt + F4` 也可以。
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - 按 `Win + X` → `U` → `R` 即可重启。
 - 输入 `shutdown /r /t 0` 即可重启。如果加上 `/f` 则为强制重启。
 
 ## 睡眠
 - 在使用 `Win + M` 或 `Win + D` 显示桌面的状态下，或在使用 `Win + T` 或 `Win + B` 激活任务栏的状态下，按 `Alt + F4` 会显示如下对话框，按 1 次 `↑` 键选择“睡眠”后按 `Enter`。
   或者 `Win + R` → `Alt + F4` → `Alt + F4` 也可以。
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - `Win + R` → 或在命令提示符中输入 `rundll32.exe powrprof.dll,SetSuspendState` 可进入休眠状态。
 
 ## 注销（登出）
 - 在使用 `Win + M` 或 `Win + D` 显示桌面的状态下，或在使用 `Win + T` 或 `Win + B` 激活任务栏的状态下，按 `Alt + F4` 会显示如下对话框，按 2 次 `↑` 键选择“注销”后按 `Enter`。
   或者 `Win + R` → `Alt + F4` → `Alt + F4` 也可以。
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - `Win + X` → `U` → `I`
 - `Ctrl + Alt + Del` → 按 2次 `Tab` 或 2次 `↓` → `Enter` 或 `Space`
 - 输入 `logoff` 即可注销（登出）。
@@ -85,7 +85,7 @@ categories: ["PC・数码"]
 ※此时窗口会跟随鼠标光标移动，因此即使窗口显示在屏幕外，也能将其“救”回来。
 
 ## 在任务管理器中结束进程
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. 使用 `Ctrl + Shift + Esc` 可以启动任务管理器。
 2. 使用 `Ctrl + Tab` 可以切换标签页。
 3. 在“详细信息”标签页中按 `Tab` 后，通过键盘输入英数字母可以进行前缀匹配搜索进程。
@@ -115,85 +115,85 @@ categories: ["PC・数码"]
 选择过去复制过的文本或图片即可再次复制。
 
 ## 运行
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - 使用 `Win + R` 可以启动“运行”。
 
 下面介绍一些可以在“运行”或命令提示符中执行的命令。
 
 ## 打开 Edge
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - 输入 `msedge` 并按 `Enter`
 
 ## 打开 Internet Explorer 11（IE11）
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - 输入 `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` 并按 `Enter`
 
 ## 打开终端
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - 输入 `wt` 并按 `Enter`
 
 ## 打开控制面板
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - 输入 `control` 并按 `Enter`
 - 也可以通过 `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}` 打开。
 
 ## 启动记事本
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - 输入 `notepad` 并按 `Enter`  
 
 ## 启动计算器
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - 输入 `calc` 并按 `Enter`
 
 ## 启动画图
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - 输入 `mspaint` 并按 `Enter`  
 
 ## 启动 PowerShell
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - 输入 `powershell` 并按 `Enter`  
 
 ## 启动 Visual Studio Code
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - 输入 `code` 并按 `Enter`
 
 ## 启动 Excel
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - 输入 `excel` 并按 `Enter`  
 ※仅限已安装 Excel 的情况。
 
 ## 打开 Word
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - 输入 `winword` 并按 `Enter`  
 ※仅限已安装 Word 的情况。
 
 ## 打开 PowerPoint
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - 输入 `powerpnt` 并按 `Enter`  
   ※仅限已安装 PowerPoint 的情况。
 
 ## 打开系统配置
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - 输入 `msconfig` 并按 `Enter`  
 
 ## 打开系统属性
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - 输入 `sysdm.cpl` 并按 `Enter`
 
 ## 打开 Windows 版本信息
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - 输入 `winver` 并按 `Enter`
 
 ## 打开屏幕键盘
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - 输入 `osk` 并按 `Enter`
 
 ## 打开写字板
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - 输入 `wordpad` 或 `write` 并按 `Enter`
 
 ## 打开注册表编辑器
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - 输入 `regedit` 并按 `Enter`
 
 ## 打开程序和功能
@@ -203,18 +203,18 @@ categories: ["PC・数码"]
 - 输入 `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}` 并按 `Enter`
 
 ## 打开鼠标属性
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - 输入 `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}` 并按 `Enter`
 
 ## 打开声音
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - 输入 `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}` 并按 `Enter`
 
 ## 打开用户帐户
 - 输入 `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}` 并按 `Enter`
 
 ## 复制标准消息框的内容
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - 使用 `Ctrl + C` 可以复制标准消息框的内容。
 复制上述消息框后，剪贴板中会保存如下内容：
 ```

@@ -4,7 +4,7 @@ slug: "Ekstensi Chrome yang Direkomendasikan"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Ekstensi Chrome", "Browser", "Chrome", "Edge"]
 draft: false
-image: "img_4.png"
+image: "img_4.webp"
 categories: ["IT & Teknologi"]
 ---
 
@@ -14,7 +14,7 @@ Saya akan memperkenalkan ekstensi Chrome yang saya gunakan saat ini. Meskipun un
 
 ## 1. simpleGestures
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Ekstensi yang memungkinkan Anda menggunakan gerakan mouse.
 Anda dapat mengontrol browser tanpa menggunakan keyboard atau menyejajarkan tombol pada toolbar.
@@ -28,7 +28,7 @@ Ini juga sumber terbuka, sehingga sangat andal.
 
 ## 2. uBlock Origin
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 Ekstensi yang memblokir iklan. Sumber terbuka sehingga sangat andal. Selain itu, ekstensi ini menggunakan sedikit CPU dan memori serta berjalan lancar.
 
@@ -37,7 +37,7 @@ Ekstensi yang memblokir iklan. Sumber terbuka sehingga sangat andal. Selain itu,
 
 ## 3. Terjemahan DeepL
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Ekstensi Chrome yang memungkinkan Anda menerjemahkan halaman menggunakan layanan terjemahan DeepL yang terkenal di dunia. Saat Anda memilih teks yang ingin Anda terjemahkan di browser, ikon DeepL akan ditampilkan, dan mengkliknya akan menerjemahkannya secara otomatis.
 
@@ -45,7 +45,7 @@ Ekstensi Chrome yang memungkinkan Anda menerjemahkan halaman menggunakan layanan
 
 ## 4. Bilah Sisi ChatGPT
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Ekstensi untuk menggunakan ChatGPT di bilah sisi. Anda dapat menampilkan bilah sisi dengan menekan Ctrl+P, dan segera mengajukan pertanyaan kepada AI.
 Jika teks apa pun dipilih pada halaman, teks tersebut akan langsung disalin ke pertanyaan Anda, sehingga Anda dapat segera bertanya dengan Ctrl+Enter.
@@ -54,7 +54,7 @@ Jika teks apa pun dipilih pada halaman, teks tersebut akan langsung disalin ke p
 
 ## 5. Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Ekstensi yang menambahkan fitur berguna untuk pengembangan Salesforce.
 Saya rasa ini tidak perlu bagi mereka yang tidak menggunakan Salesforce.

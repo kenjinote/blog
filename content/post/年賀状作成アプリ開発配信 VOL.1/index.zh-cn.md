@@ -4,7 +4,7 @@ slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["新年贺卡制作应用开发直播", "YouTube"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・技术"]
 ---
 

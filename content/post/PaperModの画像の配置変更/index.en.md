@@ -4,7 +4,7 @@ slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["Blog Management"]
 ---
 In the default layout, images are placed in the center with a width of 100%.

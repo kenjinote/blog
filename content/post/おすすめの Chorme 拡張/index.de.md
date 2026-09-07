@@ -4,7 +4,7 @@ slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome-Erweiterungen", "Browser", "Chrome", "Edge"]
 draft: false
-image: "img_4.png"
+image: "img_4.webp"
 categories: ["IT / Technologie"]
 ---
 
@@ -14,7 +14,7 @@ Hier stelle ich die Chrome-Erweiterungen vor, die ich derzeit verwende. Obwohl s
 
 ## 1. simpleGestures
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Dies ist eine Erweiterung, mit der Sie Mausgesten verwenden können.
 Sie können den Browser bedienen, ohne die Tastatur zu benutzen oder auf die Schaltflächen der Symbolleiste zielen zu müssen.
@@ -28,7 +28,7 @@ Da sie Open Source ist, ist sie auch sehr zuverlässig.
 
 ## 2. uBlock Origin
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 Eine Erweiterung zum Blockieren von Werbung. Da sie Open Source ist, ist sie äußerst zuverlässig. Außerdem verbraucht sie wenig CPU und Speicherplatz und läuft sehr flüssig.
 
@@ -37,7 +37,7 @@ Eine Erweiterung zum Blockieren von Werbung. Da sie Open Source ist, ist sie äu
 
 ## 3. DeepL Übersetzer
 
-![img.png](img.png)
+![img.png](img.webp)
 
 Eine Chrome-Erweiterung, mit der Sie Seiten mithilfe des weltbekannten Übersetzungsdienstes DeepL übersetzen können. Wenn Sie den zu übersetzenden Text im Browser markieren, erscheint das DeepL-Symbol, und mit einem Klick wird er automatisch übersetzt.
 
@@ -45,7 +45,7 @@ Eine Chrome-Erweiterung, mit der Sie Seiten mithilfe des weltbekannten Übersetz
 
 ## 4. ChatGPT Sidebar
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Eine Erweiterung, um ChatGPT in einer Seitenleiste nutzen zu können. Sie können die Seitenleiste mit Ctrl+P einblenden und der KI sofort Fragen stellen.
 Wenn ein Text auf der Seite markiert ist, wird dieser direkt in die Frage kopiert, sodass Sie sofort mit Ctrl+Enter fragen können.
@@ -54,7 +54,7 @@ Wenn ein Text auf der Seite markiert ist, wird dieser direkt in die Frage kopier
 
 ## 5. Salesforce DevTools
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 Eine Erweiterung, die nützliche Funktionen für die Salesforce-Entwicklung hinzufügt.
 Ich denke, dies ist für diejenigen, die Salesforce nicht verwenden, nicht erforderlich.

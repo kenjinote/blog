@@ -11,7 +11,7 @@ slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Accesos directos" ]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas y Entorno de Desarrollo"]
 ---
 
@@ -68,4 +68,4 @@ Aprender los atajos de teclado de Visual Studio te permite trabajar en el desarr
 
 - [Atajos de teclado de Visual Studio](https://learn.microsoft.com/es-es/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

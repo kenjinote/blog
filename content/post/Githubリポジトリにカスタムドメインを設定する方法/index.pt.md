@@ -4,7 +4,7 @@ slug: "Como configurar um domínio personalizado em um repositório Github"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
-image: "images/octocat.png"
+image: "images/octocat.webp"
 categories: ["ツール・開発環境"]
 ---
 Para configurar um domínio personalizado em um repositório Github, você precisa alterar as configurações de DNS do seu domínio.
@@ -29,7 +29,7 @@ Para alterar as configurações de DNS, configure da seguinte forma:
 9. Certifique-se de que a caixa de seleção está marcada em "Confirmação de alteração do servidor de nomes para configuração de registro DNS" e clique em "Ir para a tela de configuração"
 10. Se for exibida uma tela dizendo "Para evitar alterações não intencionais nas configurações de DNS", clique em "Não configurar" (selecione conforme necessário)
 11. Verifique os detalhes da configuração e clique em "Configurar"
-![img.png](images/img.png)
+![img.png](images/img.webp)
 12. Isso conclui as configurações de DNS. Pode levar até cerca de 72 horas para que a reflexão seja concluída.
 13. Se não for refletido após 72 horas, tente entrar em contato com o suporte do Onamae.com.
 

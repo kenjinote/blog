@@ -4,7 +4,7 @@ slug: "how-to-display-japanese-in-egui-ru"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "библиотека-GUI", "японский"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT-технологии"]
 ---
 
@@ -41,4 +41,4 @@ cc.egui_ctx.set_fonts(fonts);
 
 ## Теперь вы можете отображать японский язык.
 
-![img.png](img.png)
+![img.png](img.webp)

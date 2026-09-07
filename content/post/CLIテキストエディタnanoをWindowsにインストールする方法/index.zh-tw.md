@@ -4,7 +4,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "文字編輯器"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["工具與開發環境"]
 ---
 
@@ -30,7 +30,7 @@ https://sourceforge.net/projects/nano-for-windows/
 
 輸入 `nano` 並執行後，會顯示以下畫面。
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 畫面下方會顯示快捷鍵的說明。
 

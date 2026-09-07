@@ -3,7 +3,7 @@ title: "【用數學公式完全理解】為何最強古典演算法「GNFS」�
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["量子電腦", "GNFS", "Shor演算法", "密碼破解", "數學"]
-image: "quantum_vs_gnfs_eyecatch_1788616101508.jpg"
+image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["數學・密碼・量子"]

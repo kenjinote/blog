@@ -4,7 +4,7 @@ slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows","小技","ショートカット"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・ガジェット"]
 ---
 Windowsで普段使うちょっとした小技集です。Windowsを使い始めの方に読んでもらえれば幸いです。
@@ -49,27 +49,27 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 ## Windowsのシャットダウン
 - `Win + M`や`Win + D`でデスクトップ表示した状態や`Win + T`や`Win + B`でタスクバーがアクティブな状態で`Alt + F4`を押すと下記のようなダイアログが表示されるので「シャットダウン」が選択されているのを確認して`Enter`
   `Win + R`→`Alt + F4`→`Alt + F4`でも可。
-  ![img_20.png](img_20.png)
+  ![img_20.png](img_20.webp)
 - `Win + X`→`U`→`U`でシャットダウンできます。
 - コマンドプロンプトまたは`Win + R`の「ファイル名を指定して実行」で`shutdown /s /t 0`と入力するとシャットダウンできます。追加で`/f`をつけると強制シャットダウンになります。
 
 ## Windowsの再起動
 - `Win + M`や`Win + D`でデスクトップ表示した状態や`Win + T`や`Win + B`でタスクバーがアクティブな状態で`Alt + F4`を押すと下記のようなダイアログが表示されるので1回`↓`を押して「再起動」を選択して`Enter`
 　`Win + R`→`Alt + F4`→`Alt + F4`でも可。
-  ![img_21.png](img_21.png)
+  ![img_21.png](img_21.webp)
 - `Win + X`→`U`→`R`で再起動できます。
 - `shutdown /r /t 0`で再起動できます。追加で`/f`をつけると強制再起動になります。
 
 ## Windowsのスリープ
 - `Win + M`や`Win + D`でデスクトップ表示した状態や`Win + T`や`Win + B`でタスクバーがアクティブな状態で`Alt + F4`を押すと下記のようなダイアログが表示されるので1回`↑`を押して「スリープ」を選択して`Enter`
   `Win + R`→`Alt + F4`→`Alt + F4`でも可。
-  ![img_23.png](img_23.png)
+  ![img_23.png](img_23.webp)
 - `Win + R`→またはコマンドプロンプトで`rundll32.exe powrprof.dll,SetSuspendState`と入力すると休止状態にできます。
 
 ## Windowsのサインアウト（ログオフ）
 - `Win + M`や`Win + D`でデスクトップ表示した状態や`Win + T`や`Win + B`でタスクバーがアクティブな状態で`Alt + F4`を押すと下記のようなダイアログが表示されるので2回`↑`を押して「サインアウト」を選択して`Enter`
   `Win + R`→`Alt + F4`→`Alt + F4`でも可。
-  ![img_22.png](img_22.png)
+  ![img_22.png](img_22.webp)
 - `Win + X`→`U`→`I`
 - `Ctrl + Alt + Del`→2回`Tab` or 2回`↓`→`Enter` or `Space`
 - `logoff`でサインアウト（ログオフ）できます。
@@ -85,7 +85,7 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 ※マウスカーソルにウィンドウが追従する状態となるため、画面外にウィンドウが表示されている状態でも救出することができます。
 
 ## タスクマネージャーでプロセスを終了
-![img_24.png](img_24.png)
+![img_24.png](img_24.webp)
 1. `Ctrl + Shift + Esc`でタスクマネージャーを起動できます。
 2. `Ctrl + Tab`でタブを切り替えられます。
 3. `詳細`でタブで`Tab`を押した後、キーボードの英数入力でプロセスを前方一致検索できます。
@@ -115,85 +115,85 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 過去にコピーしたテキストや画像を選択すると再度コピーできます。
 
 ## ファイル名を指定して実行
-![img_28.png](img_28.png)
+![img_28.png](img_28.webp)
 - `Win + R`で「ファイル名を指定して実行」が起動できます。
 
 以下いくつか「ファイル名を指定して実行」またはコマンドプロンプトで実行できるコマンドの紹介します。
 
 ## Edgeを開く
-![img_18.png](img_18.png)
+![img_18.png](img_18.webp)
 - `msedge`と入力して`Enter`
 
 ## Internet Explorer 11（IE11）を開く
-![img_25.png](img_25.png)
+![img_25.png](img_25.webp)
 - `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"`と入力して`Enter`
 
 ## ターミナルを開く
-![img_19.png](img_19.png)
+![img_19.png](img_19.webp)
 - `wt`と入力して`Enter`
 
 ## コントロールパネルを開く
-![img_15.png](img_15.png)
+![img_15.png](img_15.webp)
 - `control`と入力して`Enter`
 - `explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}` でも開けます。
 
 ## メモ帳を起動
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 - `notepad`と入力して`Enter`  
 
 ## 電卓を起動
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 - `calc`と入力して`Enter`
 
 ## ペイントを起動
-![img_6.png](img_6.png)
+![img_6.png](img_6.webp)
 - `mspaint`と入力して`Enter`  
 
 ## PowerShellを起動
-![img_7.png](img_7.png)
+![img_7.png](img_7.webp)
 - `powershell`と入力して`Enter`  
 
 ## Visual Studio Codeを起動
-![img_8.png](img_8.png)
+![img_8.png](img_8.webp)
 - `code`と入力して`Enter`
 
 ## Excelを起動
-![img_9.png](img_9.png)
+![img_9.png](img_9.webp)
 - `excel`と入力して`Enter`  
 ※Excelがインストールされている場合のみ。
 
 ## Wordを開く
-![img_10.png](img_10.png)
+![img_10.png](img_10.webp)
 - `winword`と入力して`Enter`  
 ※Wordがインストールされている場合のみ。
 
 ## PowerPointを開く
-![img_11.png](img_11.png)
+![img_11.png](img_11.webp)
 - `powerpnt`と入力して`Enter`  
   ※PowerPointがインストールされている場合のみ。
 
 ## システム構成を開く
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 - `msconfig`と入力して`Enter`  
 
 ## システムのプロパティを開く
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 - `sysdm.cpl`と入力して`Enter`
 
 ## Windowsのバージョン情報を開く
-![img_27.png](img_27.png)
+![img_27.png](img_27.webp)
 - `winver`と入力して`Enter`
 
 ## スクリーンキーボードを開く
-![img_14.png](img_14.png)
+![img_14.png](img_14.webp)
 - `osk`と入力して`Enter`
 
 ## ワードパッドを開く
-![img_12.png](img_12.png)
+![img_12.png](img_12.webp)
 - `wordpad`または`write`と入力して`Enter`
 
 ## レジストリエディタを開く
-![img_13.png](img_13.png)
+![img_13.png](img_13.webp)
 - `regedit`と入力して`Enter`
 
 ## プログラムと機能を開く
@@ -203,18 +203,18 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 - `explorer.exe shell:::{725BE8F7-668E-4C7B-8F90-46BDB0936430}`と入力して`Enter`
 
 ## マウスのプロパティを開く
-![img_16.png](img_16.png)
+![img_16.png](img_16.webp)
 - `explorer.exe shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}`と入力して`Enter`
 
 ## サウンドを開く
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 - `explorer.exe shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}`と入力して`Enter`
 
 ## ユーザーアカウントを開く
 - `explorer.exe shell:::{60632754-c523-4b62-b45c-4172da012619}`と入力して`Enter`
 
 ## 標準メッセージボックスの文字列をコピー
-![img_26.png](img_26.png)
+![img_26.png](img_26.webp)
 - `Ctrl + C`で標準のメッセージボックスの文字列をコピーできます。
 上記のメッセージボックスをコピーすると下記がクリップボードにコピーされます。
 ```

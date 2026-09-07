@@ -4,7 +4,7 @@ slug: "membuat-kode-qr-dengan-curl"
 date: 2024-04-16T00:42:27+09:00
 tags: ["Kode QR", "curl", "command prompt"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・Teknologi"]
 ---
 
@@ -49,11 +49,11 @@ curl qrenco.de/kenji.blog
 `api.qrserver.com` mengembalikan gambar.
 
 ```
-curl -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - Hasil output
-![](qr.png)
+![](qr.webp)
 
 #### Referensi
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)

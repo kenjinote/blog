@@ -4,7 +4,7 @@ slug: "Mengapa Hampir Mustahil Membuat LED Biru"
 date: 2024-09-15T00:43:52+09:00
 tags: ["Sains", "Fisika", "Semikonduktor"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI dan Teknologi"]
 ---
 

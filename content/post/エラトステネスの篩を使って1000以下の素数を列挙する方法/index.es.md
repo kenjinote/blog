@@ -9,7 +9,7 @@ date: 2023-04-09T12:54:24+09:00
 tags: ["Criba de Eratóstenes", "Números primos", "Matemáticas", "Rust"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Matemáticas・Criptografía・Cuántica"]
 ---
 

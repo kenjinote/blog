@@ -4,7 +4,7 @@ slug: "pemikiran-saya-tentang-jepang"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Catatan Harian"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT & Teknologi"]
 ---
 Saya ingin menyusun pemikiran dan apa yang menurut saya aneh tentang masyarakat Jepang.
@@ -13,8 +13,8 @@ Saya ingin menyusun pemikiran dan apa yang menurut saya aneh tentang masyarakat 
 Berbicara tentang beasiswa di Jepang, sebagian besar adalah pinjaman dengan bunga yang harus dikembalikan.
 Selain itu, biaya kuliah universitas terus meningkat sejak tahun 1950, dan tingkat penerima beasiswa juga menunjukkan tren yang meningkat.
 
-![Tren biaya kuliah](./images/japanese_tuition_fee.png)
-![Tren tingkat penerimaan beasiswa](./images/receipt_rate.png)
+![Tren biaya kuliah](./images/japanese_tuition_fee.webp)
+![Tren tingkat penerimaan beasiswa](./images/receipt_rate.webp)
 
 Di sisi lain, jumlah rata-rata total pinjaman baru-baru ini tampaknya mencapai 3,24 juta yen.
 

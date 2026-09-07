@@ -4,7 +4,7 @@ slug: "ma-mana-an-tafham"
 date: 2022-09-24T02:38:18+09:00
 tags: ["متفرقات"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 # ما معنى أن تفهم؟

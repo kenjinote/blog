@@ -9,7 +9,7 @@ slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "그래프"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["도구 및 개발 환경"]
 ---
 
@@ -28,6 +28,6 @@ categories: ["도구 및 개발 환경"]
 
 `Directed`를 클릭하면 방향 그래프(유향 그래프)도 생성할 수 있습니다.
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 생성된 그래프는 `Download as PNG`를 통해 이미지로 저장할 수 있습니다.

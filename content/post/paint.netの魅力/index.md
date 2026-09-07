@@ -4,12 +4,12 @@ slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["AI・テクノロジー"]
 ---
 わたしが開発の作業を行う中でよく使っている画像編集ソフトpaint.netの紹介します。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Windows標準のペイントではできない重宝している点
 - 透明・透過率を扱うことができる
@@ -31,7 +31,7 @@ categories: ["AI・テクノロジー"]
 
 無償版を選択する場合はリンク先の下記の赤枠の部分をクリックしてください。
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Microsoft Store経由でインストールすると有償となる代わりに自動アップデートができるようになるようです。
 無償版でも、最新が更新情報を教えてくるので割とスムーズにアップデートできます。

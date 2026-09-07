@@ -4,7 +4,7 @@ slug: "ambiente-de-trabalho-de-hoje"
 date: 2022-09-04T14:29:09+09:00
 tags: ["Miscelânea", "Crianças"]
 draft: false
-image: "images/today_workplase.jpg"
+image: "images/today_workplase.webp"
 categories: ["TI e Tecnologia"]
 ---
 

@@ -5,7 +5,7 @@ date: 2024-03-02T22:57:36+09:00
 tags: ["رياضيات", "مشاكل غير محلولة"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["رياضيات وتشفير وكم"]
 ---
 

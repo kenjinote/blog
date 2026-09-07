@@ -5,7 +5,7 @@ date: 2023-04-09T12:54:24+09:00
 tags: ["इरेटोस्थनीज की छलनी", "अभाज्य संख्याएँ", "गणित", "Rust"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]
 ---
 

@@ -4,7 +4,7 @@ slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "チャッター"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["IT・テクノロジー"]
 ---
 # Salesforceチャッター全消しコマンド

@@ -4,7 +4,7 @@ slug: "hugo-में-html-टैग-का-उपयोग-करना"
 date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ब्लॉग प्रबंधन"]
 ---
 

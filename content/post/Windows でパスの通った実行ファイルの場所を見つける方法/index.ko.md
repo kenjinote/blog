@@ -8,7 +8,7 @@ slug: "Windows でパスの通った実行ファイルの場所を見つける�
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "경로", "실행 파일", "명령 프롬프트"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・가젯"]
 ---
 

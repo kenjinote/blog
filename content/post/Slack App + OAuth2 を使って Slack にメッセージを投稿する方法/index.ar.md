@@ -4,7 +4,7 @@ slug: "كيفية نشر رسالة على Slack باستخدام Slack App + OA
 date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["إدارة المدونة"]
 ---
 

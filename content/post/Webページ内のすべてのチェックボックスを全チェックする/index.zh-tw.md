@@ -4,7 +4,7 @@ slug: "勾選網頁中的所有核取方塊"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "自動化"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["部落格營運"]
 ---
 

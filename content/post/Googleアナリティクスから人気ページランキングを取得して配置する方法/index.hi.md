@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ब्लॉग संचालन"]
 ---
 
@@ -16,7 +16,7 @@ categories: ["ब्लॉग संचालन"]
 
 ## डेमो छवि
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## तैयारी
 - साइट पर Google Analytics सेटअप होना चाहिए
@@ -25,20 +25,20 @@ categories: ["ब्लॉग संचालन"]
 
 1. `Ranklet` पर जाएं
 2. `Sign in with Google` पर क्लिक करें और Google खाते से लॉग इन करें (यह Google Analytics खाते से जुड़ा होना चाहिए)
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 `अनुमति दें` पर क्लिक करें
 
 3. बुनियादी जानकारी सेट करें
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 मैंने इसे ऊपर दिखाए अनुसार कॉन्फ़िगर किया।
 
 - `Google Analytics View` में वह व्यू चुनें जिससे आप रैंकिंग प्राप्त करना चाहते हैं।
 
 4. टेक्स्ट प्रतिस्थापन सेट करें
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 मैंने इसे ऊपर दिखाए अनुसार सेट किया।
 पेज शीर्षक से ` | kenji.blog` को हटाने के लिए इसे सेट किया गया है।
 
@@ -144,7 +144,7 @@ categories: ["ब्लॉग संचालन"]
 
 6. "साइट पर प्रकाशित करें" से HTML कॉपी करें
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 प्रदर्शित HTML को कॉपी करें
 

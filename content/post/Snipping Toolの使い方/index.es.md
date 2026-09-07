@@ -11,7 +11,7 @@ slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Imagen", "Video", "Captura de pantalla", "Grabación", "Captura"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT y Tecnología"]
 ---
 
@@ -34,7 +34,7 @@ Se puede iniciar principalmente de las 3 siguientes maneras:
 - Presione las teclas `Win` + `R`, escriba `snippingtool` y presione `Enter`.
 
 ## Cómo usar Snipping Tool
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### El método para guardar una imagen capturada es el siguiente:
 

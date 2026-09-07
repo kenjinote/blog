@@ -4,7 +4,7 @@ slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00
 tags: ["كود مصدري", "عدد الأسطر"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

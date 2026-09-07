@@ -4,7 +4,7 @@ slug: "日本について思うこと"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Miscellaneous"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT & Technology"]
 ---
 I'd like to organize my thoughts on what I find strange or think about Japanese society.
@@ -13,8 +13,8 @@ I'd like to organize my thoughts on what I find strange or think about Japanese 
 Speaking of scholarships in Japan, most of them are interest-bearing student loans that must be repaid.
 In addition, university tuition fees have been continuously increasing since 1950, and the percentage of students receiving these loans is also on an upward trend.
 
-![Changes in Tuition Fees](./images/japanese_tuition_fee.png)
-![Changes in Scholarship Receipt Rate](./images/receipt_rate.png)
+![Changes in Tuition Fees](./images/japanese_tuition_fee.webp)
+![Changes in Scholarship Receipt Rate](./images/receipt_rate.webp)
 
 On the other hand, it seems that the recent average total borrowing amount reaches 3.24 million yen.
 

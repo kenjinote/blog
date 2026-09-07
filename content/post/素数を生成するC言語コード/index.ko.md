@@ -12,7 +12,7 @@ slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C 언어", "소수", "알고리즘", "수학"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["수학·암호·양자"]
 ---
 

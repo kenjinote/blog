@@ -4,7 +4,7 @@ slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "图像", "视频", "屏幕截图", "录屏", "截图"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT・技术"]
 ---
 
@@ -20,7 +20,7 @@ Snipping Tool 是 Windows 自带的屏幕截图工具。您可以截取屏幕的
 - 按 `Win键` + `R键`，输入 `snippingtool` 并按 `Enter键`。
 
 ## Snipping Tool 使用方法
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### 保存截图的方法如下：
 

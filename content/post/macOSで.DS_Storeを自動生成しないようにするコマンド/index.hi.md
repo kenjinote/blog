@@ -4,7 +4,7 @@ slug: "macos-par-ds-store-ko-svachalit-roop-se-utpann-hone-se-rokne-ke-liye-comm
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC・Gadget"]
 ---
 macOS पर .DS_Store को स्वचालित रूप से उत्पन्न होने से रोकने के लिए कमांड निम्नलिखित है।

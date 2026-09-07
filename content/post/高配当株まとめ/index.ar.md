@@ -4,7 +4,7 @@ slug: "ملخص-أسهم-الأرباح-العالية"
 date: 2024-12-22T00:56:14+09:00
 tags: ["أسهم"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
 ---
 

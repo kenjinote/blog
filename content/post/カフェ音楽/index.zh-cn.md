@@ -4,7 +4,7 @@ slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00
 tags: ["咖啡馆", "音乐"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["生活方式・杂记"]
 ---
 **快节奏**

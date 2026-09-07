@@ -5,7 +5,7 @@ date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "math", "mathematics", "hugo"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematics, Cryptography, Quantum"]
 ---
 # What is KaTeX

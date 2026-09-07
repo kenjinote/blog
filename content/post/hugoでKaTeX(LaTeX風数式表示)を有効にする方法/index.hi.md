@@ -5,7 +5,7 @@ date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "सूत्र", "गणित", "hugo"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["गणित/क्रिप्टोग्राफी/क्वांटम"]
 ---
 # KaTeX क्या है

@@ -4,7 +4,7 @@ slug: "comment-publier-un-message-sur-slack-en-cpp-api-win32-winhttp-support-web
 date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "API Win32", "WinHTTP", "Slack", "Webhook"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Gestion de blog"]
 ---
 

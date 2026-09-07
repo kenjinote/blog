@@ -12,7 +12,7 @@ slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00
 tags: ["La Torre de Hanói", "Algoritmo", "Python"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Programación"]
 ---
 

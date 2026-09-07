@@ -4,7 +4,7 @@ slug: "如何在 Github 儲存庫中設定自訂網域"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
-image: "images/octocat.png"
+image: "images/octocat.webp"
 categories: ["ツール・開発環境"]
 ---
 要為 Github 儲存庫設定自訂網域，您需要變更網域的 DNS 設定。
@@ -29,7 +29,7 @@ categories: ["ツール・開発環境"]
 9. 確認已勾選「DNS 記錄設定用名稱伺服器變更確認」，然後點擊「前往設定畫面」
 10. 如果出現「為了防止意外的 DNS 設定變更」畫面，請點擊「不設定」（請視需要選擇）
 11. 確認設定內容，然後點擊「設定」
-![img.png](images/img.png)
+![img.png](images/img.webp)
 12. 這樣 DNS 設定就完成了。最多可能需要約 72 小時才能完成生效。
 13. 如果 72 小時後仍未生效，請嘗試聯絡 Onamae.com 的支援團隊。
 

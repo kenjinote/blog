@@ -4,7 +4,7 @@ slug: "استدعاء-واجهة-برمجة-تطبيقات-chatgpt-من-curl"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "أمر"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["برمجة"]
 ---
 # استدعاء واجهة برمجة تطبيقات ChatGPT من curl

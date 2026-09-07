@@ -4,7 +4,7 @@ slug: "程式語言列表"
 date: 2023-04-01T03:45:53+09:00
 tags: ["プログラミング言語"]
 draft: true
-image: "img.png"
+image: "img.webp"
 categories: ["プログラミング"]
 ---
 

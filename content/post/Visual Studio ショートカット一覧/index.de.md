@@ -4,7 +4,7 @@ slug: "Visual Studio Tastenkombinationen"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Tastenkombinationen" ]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools & Entwicklungsumgebung"]
 ---
 
@@ -54,5 +54,5 @@ Indem Sie die Tastenkombinationen von Visual Studio lernen, können Sie Entwickl
 
 - [Standardtastenkombinationen in Visual Studio](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 

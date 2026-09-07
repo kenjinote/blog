@@ -4,7 +4,7 @@ slug: "manutencao-de-produtos-de-couro"
 date: 2024-10-30T00:31:46+09:00
 tags: ["produtos de couro", "hobby"]
 draft: fales
-image: "img.png"
+image: "img.webp"
 categories: ["estilo de vida e notas diversas"]
 ---
 
@@ -13,7 +13,7 @@ Recentemente, fiquei interessado em produtos de couro e tenho comprado vários i
 # Produtos de Manutenção de Couro Comprados Recentemente
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 Preço: cerca de 1.320 ienes
 
@@ -24,7 +24,7 @@ Por ser incolor, acredito que tenha alta versatilidade. Como é um creme mais fl
 pode ser bom usar um pouco mais em comparação com outros cremes.
 
 ## Collonil 1909 Supreme Creme de Luxe
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 Preço: cerca de 1.777 ienes
 
@@ -32,7 +32,7 @@ Um creme famoso, padrão e versátil que dificilmente causa manchas. É um creme
 Dá um pouco de brilho. Sendo branco, também parece oferecer efeito repelente à água.
 
 ## M.MOWBRAY SHOE CREAM (Preto)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 Preço: cerca de 1.000 ienes
 
@@ -44,7 +44,7 @@ Eu o utilizo em sapatos de terno.
 
 Preço: cerca de 700 ienes
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 Foi algo que veio junto quando comprei uma escova.
 Limpador à base de água para sapatos. Remove sujeira do couro.

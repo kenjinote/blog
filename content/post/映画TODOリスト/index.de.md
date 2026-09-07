@@ -4,7 +4,7 @@ slug: "映画TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Filme", "TODO"]
 draft: false
-image: "image.jpg"
+image: "image.webp"
 categories: ["Lifestyle und Diverses"]
 ---
 

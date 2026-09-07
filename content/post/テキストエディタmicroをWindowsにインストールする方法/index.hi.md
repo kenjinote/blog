@@ -4,7 +4,7 @@ slug: "विंडोज-पर-micro-टेक्स्ट-एडिटर-क
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "टेक्स्ट एडिटर"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["उपकरण और विकास का वातावरण"]
 ---
 
@@ -28,7 +28,7 @@ https://github.com/zyedidia/micro/releases
 ## micro का उपयोग कैसे करें
 
 जब आप कमांड प्रॉम्प्ट में `micro` टाइप करते हैं और इसे निष्पादित करते हैं, तो निम्नलिखित स्क्रीन दिखाई देगी।
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 मुख्य संचालन और शॉर्टकट कुंजियाँ इस प्रकार हैं:
 

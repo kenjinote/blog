@@ -4,11 +4,11 @@ slug: "cara-menggambar-grafik-menggunakan-python-matplotlib-pyplot"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "grafik", "matematika", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # Prasyarat
 - Akun Google
@@ -30,7 +30,7 @@ plt.show()
 
 # Hasil
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # Referensi
 

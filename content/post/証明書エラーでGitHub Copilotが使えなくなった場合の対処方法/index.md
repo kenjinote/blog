@@ -4,7 +4,7 @@ slug: "証明書エラーでGitHub Copilotが使えなくなった場合の対�
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ツール・開発環境"]
 ---
 
@@ -19,7 +19,7 @@ categories: ["ツール・開発環境"]
 
 ## 対処方法
 これは、ESETの不具合のようです。ESETの詳細設定で「SSL/TLSを有効にする」をOFFにする。
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## 参考
 

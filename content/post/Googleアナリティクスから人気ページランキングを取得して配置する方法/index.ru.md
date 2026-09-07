@@ -4,7 +4,7 @@ slug: "Googleアナリティクスから人気ページランキングを取得�
 date: 2023-04-10T20:26:57+09:00
 tags: ["Googleアナリティクス", "Ranklet", "HUGO"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ブログ運営"]
 ---
 
@@ -16,7 +16,7 @@ categories: ["ブログ運営"]
 
 ## Пример работы
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Подготовка
 - Google Analytics должен быть настроен на сайте
@@ -25,20 +25,20 @@ categories: ["ブログ運営"]
 
 1. Перейдите в **Ranklet**
 2. Нажмите **Sign in with Google** , чтобы войти с помощью учетной записи Google (должна быть привязана к учетной записи Google Analytics)
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Нажмите **Разрешить**
 
 3. Настройте основную информацию
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 Я настроил, как показано выше.
 
 - В **Google Analytics View** выберите представление, для которого вы хотите получить рейтинг.
 
 4. Настройте замену текста
 
-![img_4.png](img_4.png)
+![img_4.png](img_4.webp)
 Я настроил, как показано выше.
 Это настроено для удаления ` | kenji.blog` из заголовка страницы.
 
@@ -144,7 +144,7 @@ categories: ["ブログ運営"]
 
 6. Скопируйте HTML из публикации на сайте
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.webp)
 
 Скопируйте отображаемый HTML
 

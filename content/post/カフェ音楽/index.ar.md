@@ -4,7 +4,7 @@ slug: "موسيقى-المقهى"
 date: 2022-09-08T08:39:03+09:00
 tags: ["مقهى", "موسيقى"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["أسلوب الحياة ومتفرقات"]
 ---
 **إيقاع سريع**

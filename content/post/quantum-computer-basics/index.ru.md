@@ -3,7 +3,7 @@ title: "【Полный разбор】 Что такое квантовый к�
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Квантовый компьютер", "Физика", "Технологии"]
-image: "quantum_basics_eyecatch_1788613712487.jpg"
+image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["Математика, криптография, кванты"]
 ---
 

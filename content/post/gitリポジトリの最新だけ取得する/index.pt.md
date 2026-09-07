@@ -4,7 +4,7 @@ slug: "obter-apenas-a-versao-mais-recente-do-repositorio-git"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repositório", "comando"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 

@@ -2,7 +2,7 @@
 title: "【PQC】A Visão Geral da \"Criptografia Pós-Quântica\", a Criptografia da Próxima Geração na Era da Computação Quântica"
 slug: "post-quantum-cryptography"
 tags: ["Criptografia", "PQC", "Segurança", "Tecnologia de Próxima Geração"]
-image: "post_quantum_cryptography_1788613735417.jpg"
+image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["Matemática, Criptografia e Quântica"]
 ---

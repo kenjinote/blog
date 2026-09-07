@@ -4,7 +4,7 @@ slug: "so-beheben-sie-zertifikatfehler-github-copilot"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
 ---
 
@@ -19,7 +19,7 @@ Etwa seit dem 19.04.2024 funktioniert GitHub Copilot nicht mehr. Die Fehlermeldu
 
 ## Lösung
 Dies scheint ein Fehler in ESET zu sein. Deaktivieren Sie in den erweiterten Einstellungen von ESET die Option "SSL/TLS aktivieren".
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Referenz
 

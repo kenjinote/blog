@@ -4,7 +4,7 @@ slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Zitatsammlung"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT und Technologie"]
 ---
 
@@ -30,4 +30,4 @@ categories: ["IT und Technologie"]
 
 > Diejenigen, die den gegenwärtigen Stand der Theorie der symbolischen Algebra kennen, wissen, dass die Gültigkeit der Analyseprozesse nicht von der Interpretation der verwendeten Symbole abhängt, sondern allein von den Gesetzen ihrer Kombination. (George Boole, zu Beginn von "The Mathematical Analysis of Logic", 1847)
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

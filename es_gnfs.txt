@@ -1,0 +1,5 @@
+content/post\gnfs-cpp-implementation\index.es.md : title: "GNFS"
+content/post\gnfs-to-shors-algorithm-math-deepdive\index.es.md : title: "GNFS"
+content/post\shors-algorithm-and-rsa-breaking\index.es.md : title: "¿Realmente las computadoras cuánticas destruirán el cifrado RSA? ~ El algoritmo de Shor y el estado actual ~"
+content/post\インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？\index.es.md : title: "GNFS"
+content/post\一般数体篩法（GNFS）の真の数学的構造\index.es.md : title: "GNFS"

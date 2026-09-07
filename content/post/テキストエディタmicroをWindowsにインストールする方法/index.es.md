@@ -11,7 +11,7 @@ slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "editor de texto"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Herramientas y Entorno de Desarrollo"]
 ---
 
@@ -42,7 +42,7 @@ Para usar `micro.exe` desde el símbolo del sistema, es necesario configurar las
 ## Cómo usar micro
 
 Al escribir `micro` en el símbolo del sistema y ejecutarlo, se mostrará la siguiente pantalla.
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 A continuación se muestran las operaciones principales y los atajos de teclado.
 

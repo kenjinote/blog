@@ -5,7 +5,7 @@ date: 2024-04-02T01:20:50+09:00
 tags: ["数学", "悖论"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["数学・密码・量子"]
 ---
 

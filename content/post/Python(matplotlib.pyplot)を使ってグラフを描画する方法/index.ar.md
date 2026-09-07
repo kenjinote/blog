@@ -4,11 +4,11 @@ slug: "كيفية-رسم-الرسوم-البيانية-باستخدام-python-m
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "رسوم بيانية", "رياضيات", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["الرياضيات، التشفير، الكم"]
 ---
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 # المتطلبات
 - حساب جوجل
@@ -30,7 +30,7 @@ plt.show()
 
 # النتيجة
 
-![img.png](img.png)
+![img.png](img.webp)
 
 # المراجع
 

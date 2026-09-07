@@ -4,7 +4,7 @@ slug: "entretien-des-produits-en-cuir"
 date: 2024-10-30T00:31:46+09:00
 tags: ["produits en cuir", "loisir"]
 draft: fales
-image: "img.png"
+image: "img.webp"
 categories: ["style de vie et notes diverses"]
 ---
 
@@ -13,7 +13,7 @@ Récemment, je me suis intéressé aux produits en cuir et j'ai acheté divers a
 # Produits d'Entretien du Cuir Achetés Récemment
 
 ## M.MOWBRAY DELICATE CREAM
-![image1.JPEG](image1.JPEG)
+![image1.JPEG](image1.webp)
 
 Prix : environ 1 320 yens
 
@@ -24,7 +24,7 @@ Comme elle est incolore, je pense qu'elle est très polyvalente. Étant donné q
 il peut être bon d'en utiliser un peu plus par rapport à d'autres crèmes.
 
 ## Collonil 1909 Supreme Creme de Luxe
-![image3.JPEG](image3.JPEG)
+![image3.JPEG](image3.webp)
 
 Prix : environ 1 777 yens
 
@@ -32,7 +32,7 @@ Une crème célèbre, standard et polyvalente qui ne tache pas facilement. C'est
 Elle donne un peu de brillance. Étant blanche, on peut également s'attendre à un effet hydrofuge.
 
 ## M.MOWBRAY SHOE CREAM (Noir)
-![image2.JPEG](image2.JPEG)
+![image2.JPEG](image2.webp)
 
 Prix : environ 1 000 yens
 
@@ -44,7 +44,7 @@ Je l'utilise pour mes chaussures de costume.
 
 Prix : environ 700 yens
 
-![image4.JPEG](image4.JPEG)
+![image4.JPEG](image4.webp)
 
 C'est un produit qui était inclus lorsque j'ai acheté une brosse.
 Nettoyant à base d'eau pour chaussures. Enlève la saleté du cuir.

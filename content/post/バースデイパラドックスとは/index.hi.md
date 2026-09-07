@@ -5,7 +5,7 @@ date: 2024-04-02T01:20:50+09:00
 tags: ["गणित", "विरोधाभास"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["गणित, क्रिप्टोग्राफी, क्वांटम"]
 ---
 

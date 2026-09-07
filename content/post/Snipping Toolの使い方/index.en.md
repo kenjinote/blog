@@ -4,7 +4,7 @@ slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Image", "Video", "Screenshot", "Recording", "Capture"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT / Technology"]
 ---
 
@@ -20,7 +20,7 @@ You can mainly launch it in the following 3 ways.
 - Press `Win` + `R`, type `snippingtool`, and press the `Enter` key.
 
 ## How to Use Snipping Tool
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ### The steps to save a captured image are as follows:
 

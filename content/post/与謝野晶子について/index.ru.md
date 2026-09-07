@@ -7,7 +7,7 @@ draft: false
 categories: ["IT・Технологии"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## 🔹 Обзор личности
 

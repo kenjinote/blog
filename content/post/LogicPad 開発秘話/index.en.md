@@ -4,7 +4,7 @@ slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Development", "Untold Story"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["IT / Technology"]
 ---
 
@@ -38,7 +38,7 @@ Just once is enough.
 With that thought, I started conceptualizing LogicPad. This was about 6 years ago (around 2019).
 (The original idea itself came about 10 years ago in 2015 when I learned about Blueprint, the visual programming language of Unreal Engine.)
 
-![Blueprint](img_1.png)
+![Blueprint](img_1.webp)
 ---
 
 ## It's a waste to hold back just because you can't write code, isn't it?

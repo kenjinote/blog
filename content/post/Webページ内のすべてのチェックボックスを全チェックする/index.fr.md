@@ -4,7 +4,7 @@ slug: "Cocher toutes les cases sur une page web"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatisation"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["gestion de blog"]
 ---
 

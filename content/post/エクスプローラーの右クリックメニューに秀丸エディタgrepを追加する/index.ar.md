@@ -4,7 +4,7 @@ slug: "إضافة Hidemaru Editor grep إلى قائمة النقر بزر ال�
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "File Explorer", "Right-click menu", "grep", "Registry"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["أدوات وبيئة التطوير"]
 ---
 

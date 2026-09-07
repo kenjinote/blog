@@ -4,7 +4,7 @@ slug: "モチベーションを上げてくれる動画"
 date: 2022-09-08T02:22:52+09:00
 tags: ["प्रेरणा", "वीडियो"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

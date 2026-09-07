@@ -4,7 +4,7 @@ slug: "ai-development-barrier"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "開發", "壁壘", "隨筆"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["AI與科技"]
 ---
 
@@ -36,7 +36,7 @@ UI？ChatGPT已經幫我寫出React程式碼了。
 在這裡，你會產生一種錯覺：「我，是不是已經是個工程師了？」
 但是，真正的地獄從這裡才開始。
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ---
 
@@ -107,4 +107,4 @@ AI是工具、是升降機，有時也是競爭對手。
 而且，當我們終於登頂時，
 或許會迎來一個讓我們重新思考：「我們真的有必要爬這座山嗎？」的未來。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

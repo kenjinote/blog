@@ -7,7 +7,7 @@ draft: false
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 
-![img.png](img.png)
+![img.png](img.webp)
 
 ## 🔹 व्यक्ति का अवलोकन
 

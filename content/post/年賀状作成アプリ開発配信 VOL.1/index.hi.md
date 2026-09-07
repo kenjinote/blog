@@ -4,7 +4,7 @@ slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["नए साल के कार्ड बनाने वाले ऐप का विकास स्ट्रीम", "YouTube"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
 ---
 

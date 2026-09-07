@@ -4,7 +4,7 @@ slug: "loesung-des-problems-des-handlungsreisenden-mit-mathematica"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problem des Handlungsreisenden", "Algorithmus", "Mathematik"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Mathematik, Kryptographie, Quanten"]
 ---
 # Lösung des Problems des Handlungsreisenden mit Mathematica

@@ -5,7 +5,7 @@ date: 2022-10-05T13:24:50+09:00
 tags: ["Mathématiques"]
 draft: false
 math: true
-image: "img.png"
+image: "img.webp"
 categories: ["Mathématiques, Cryptographie, Quantique"]
 ---
 ## Théorème de Wilson

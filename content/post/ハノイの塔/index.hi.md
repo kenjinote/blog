@@ -4,7 +4,7 @@ slug: "tower-of-hanoi"
 date: 2025-04-17T22:23:14+09:00
 tags: ["हनोई का टॉवर", "एल्गोरिथम", "Python"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["प्रोग्रामिंग"]
 ---
 

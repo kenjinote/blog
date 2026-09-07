@@ -4,7 +4,7 @@ slug: "Procurando por Patrocinadores no GitHub"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Patrocinador"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 ---
 

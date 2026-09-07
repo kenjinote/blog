@@ -4,7 +4,7 @@ slug: "periferal-pc-yang-direkomendasikan"
 date: 2023-02-28T00:51:49+09:00
 tags: ["Keyboard", "Trackball", "Layar"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["PC & Gadget"]
 ---
 
@@ -25,7 +25,7 @@ Sebagai perangkat penunjuk, trackball direkomendasikan daripada mouse karena dap
 Perangkat yang saya gunakan adalah [Logitech MX Ergo](https://amzn.to/3IYOwtf). Ini adalah produk mahal yang harganya lebih dari 10.000 yen, tetapi saya pikir nilainya lebih dari itu.
 
 Saya juga tertarik dengan [DEFT PRO(M-DPT1MRXBK)](https://amzn.to/3Zu5tB8), yaitu tipe yang memiliki bola besar dan dioperasikan dengan jari telunjuk dan jari tengah.
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 ## Layar
 

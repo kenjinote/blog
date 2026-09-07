@@ -4,7 +4,7 @@ slug: "CLIテキストエディタnanoをWindowsにインストールする方�
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "text editor"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["Tools and Development Environment"]
 ---
 
@@ -30,7 +30,7 @@ In order to use `nano.exe` from the command prompt, you need to set the environm
 
 When you type `nano` and execute it, a screen like the following will be displayed.
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.webp)
 
 Shortcut descriptions are displayed at the bottom of the screen.
 

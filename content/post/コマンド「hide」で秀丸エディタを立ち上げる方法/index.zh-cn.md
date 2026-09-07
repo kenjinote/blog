@@ -4,7 +4,7 @@ slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["命令", "秀丸编辑器", "注册表"]
 draft: false
-image: "img_2.png"
+image: "img_2.webp"
 categories: ["工具与开发环境"]
 ---
 
@@ -29,4 +29,4 @@ Windows Registry Editor Version 5.00
 ```
 将上述内容保存为 `.reg` 文件并运行，即可将这些设置添加到注册表中。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)

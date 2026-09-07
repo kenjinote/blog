@@ -12,7 +12,7 @@ slug: "目標"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Objetivos"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["TI y Tecnología"]
 ---
 

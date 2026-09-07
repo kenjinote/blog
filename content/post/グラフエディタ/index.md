@@ -4,7 +4,7 @@ slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "グラフ"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["ツール・開発環境"]
 ---
 # グラフエディタ
@@ -18,6 +18,6 @@ categories: ["ツール・開発環境"]
 
 `Directed`をクリックすると有向グラフの作成もできます。
 
-![img_1.png](img_1.png)
+![img_1.png](img_1.webp)
 
 作成したグラフや`Download as PNG`で作成したグラフを画像として保存することができます。

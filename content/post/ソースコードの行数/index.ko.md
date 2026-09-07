@@ -12,7 +12,7 @@ slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00
 tags: ["소스 코드", "줄 수"]
 draft: false
-image: "img_1.png"
+image: "img_1.webp"
 categories: ["IT・테크놀로지"]
 ---
 

@@ -4,7 +4,7 @@ slug: "ヘーゲルの弁証法"
 date: 2022-09-09T23:13:19+09:00
 tags: ["哲学","ヘーゲル","弁証法"]
 draft: false
-image: "images/img.png"
+image: "images/img.webp"
 categories: ["IT・テクノロジー"]
 ---
 ## ヘーゲルの弁証法とは

@@ -4,7 +4,7 @@ slug: "मैंने-एक-ब्लॉग-शुरू-किया-है"
 date: 2022-09-02T07:23:00+09:00
 tags: ["विविध"]
 draft: false
-image: "images/komeda.jpeg"
+image: "images/komeda.webp"
 categories: ["ब्लॉग संचालन"]
 ---
 

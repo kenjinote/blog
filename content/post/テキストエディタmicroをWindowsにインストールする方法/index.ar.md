@@ -4,7 +4,7 @@ slug: "كيفية-تثبيت-محرر-النصوص-micro-على-نظام-windows
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "محرر نصوص"]
 draft: false
-image: "img.png"
+image: "img.webp"
 categories: ["أدوات وبيئة تطوير"]
 ---
 
@@ -28,7 +28,7 @@ https://github.com/zyedidia/micro/releases
 ## كيفية استخدام micro
 
 عند كتابة `micro` في موجه الأوامر وتشغيله، ستظهر لك شاشة مشابهة لهذه:
-![img_3.png](img_3.png)
+![img_3.png](img_3.webp)
 
 تتضمن طرق التشغيل الرئيسية واختصارات لوحة المفاتيح ما يلي:
 
