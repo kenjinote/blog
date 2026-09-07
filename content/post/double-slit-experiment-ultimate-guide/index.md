@@ -6,6 +6,7 @@ tags: ["物理学", "量子力学", "二重スリット実験", "シュレーデ
 categories: ["物理・科学"]
 math: true
 mermaid: true
+image: "cover.webp"
 ---
 
 ## 1. 【導入】二重スリット実験とは何か？
