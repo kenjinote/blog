@@ -213,11 +213,11 @@ $$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
 
 ```mermaid
 graph LR
-    subgraph 高真空チャンバー内 (High Vacuum Chamber)
-    A[電子銃<br>Electron Gun] -->|電子ビームまたは<br>単一電子| B(二重スリット遮蔽板<br>Double Slit Barrier)
-    B -->|スリット A| C[空間]
-    B -->|スリット B| C[空間]
-    C --> D[高感度スクリーン / 検出器<br>Detector Screen]
+    subgraph Chamber ["高真空チャンバー内 (High Vacuum Chamber)"]
+    A["電子銃<br>Electron Gun"] -->|"電子ビームまたは<br>単一電子"| B("二重スリット遮蔽板<br>Double Slit Barrier")
+    B -->|"スリット A"| C["空間"]
+    B -->|"スリット B"| C
+    C --> D["高感度スクリーン / 検出器<br>Detector Screen"]
     end
 
     style A fill:#ffcccc,stroke:#cc0000,stroke-width:2px
