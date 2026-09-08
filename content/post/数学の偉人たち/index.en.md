@@ -1,5 +1,5 @@
 ---
-title: 'Great Mathematicians'
+title: 'Great Figures in Mathematics'
 slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Mathematicians"]
@@ -7,169 +7,169 @@ draft: false
 image: "img.webp"
 categories: ["Mathematics, Cryptography, and Quantum"]
 ---
-Here is an introduction to the great mathematicians who have left their names in history, presented in order of their birth.
+Here is an introduction to the great mathematicians who left their names in history, in order of birth.
 
-### Pythagoras (c. 582 BC - c. 496 BC)
-An ancient Greek mathematician and philosopher. He advocated the philosophy that "All things are numbers" and founded the Pythagorean brotherhood. He is famous for the "Pythagorean theorem," which shows the relationship between the lengths of the sides of a right triangle, but legend has it that the discovery of irrational numbers shook the foundation of his brotherhood.
+### Pythagoras (Pythagoras, c. 582 BC - c. 496 BC)
+Ancient Greek mathematician and philosopher. He promoted the idea that "all is number" and founded the Pythagorean brotherhood in Croton. He is famous for the "Pythagorean theorem," which shows the relationship between the lengths of the sides of a right-angled triangle. However, there is also a terrifying legend that when his disciple Hippasus discovered irrational numbers, which violated the fundamental doctrine of the brotherhood, he was thrown into the sea to silence him. Pythagoras also focused on the relationship between music and mathematics and is known for laying the foundations of the musical scale.
 
-### Archimedes (c. 287 BC - 212 BC)
-An ancient Greek mathematician, physicist, and inventor. Using the method of exhaustion, he accurately calculated an approximation of pi and discovered formulas for the volume and surface area of a sphere. He is considered the greatest mathematician of antiquity, having used techniques that could be called the buds of calculus.
+### Archimedes (Archimedes, c. 287 BC - 212 BC)
+Ancient Greek mathematician, physicist, and inventor. Using the method of exhaustion, he accurately calculated an approximation of pi and discovered the formulas for the volume and surface area of a sphere. He is regarded as the greatest mathematician of antiquity, employing methods that could be considered the early signs of calculus. The anecdote of him shouting "Eureka! (I have found it!)" and running naked through the streets in excitement when he discovered "Archimedes' principle" is extremely famous. During the Siege of Syracuse, he devised numerous new weapons that troubled the Roman army, but he was killed by a soldier while he was absorbed in drawing geometric figures on the ground.
 
-### Euclid (c. 3rd century BC)
-A Greek mathematician of ancient Egypt. In his book "Elements," he established the "axiomatic system" of logically deriving theorems starting from a small number of axioms, which had an immeasurable impact on the subsequent development of mathematics and science.
+### Euclid (Euclid, c. 3rd century BC)
+A Greek mathematician from ancient Egypt, believed to have been active in Alexandria. In his book "Elements" (Euclid's Elements), he established an "axiomatic system" that logically derives theorems starting from a small number of axioms and postulates, which had an immeasurable impact on the subsequent development of mathematics and science. When the king asked him if there was a shortcut to learning geometry, he is said to have firmly replied, "There is no royal road to geometry." The Euclidean geometry he constructed reigned as absolute truth until the birth of non-Euclidean geometry in the 19th century.
 
-### Diophantus (c. 207 - c. 291)
-A Greek mathematician. He is famous for introducing symbolism and for his study of rational solutions. His representative work is "Arithmetica." The field of finding rational solutions to equations is called Diophantine analysis.
+### Diophantus (Diophantus, c. 207 - c. 291)
+Greek mathematician often called the "father of algebra." He is famous for the introduction of symbolic notation and the study of rational solutions to equations. Although little is known about his life, there is a legend that his tombstone bore an algebraic word problem to determine his lifespan. His representative work is "Arithmetica," and the field of finding integer or rational solutions to equations is still called "Diophantine equations." This book garnered historical attention when Fermat later read it and left his famous "Fermat's Last Theorem" in the margin.
 
-### L. Fibonacci (c. 1175 - c. 1250)
-An Italian mathematician. In his main work "Liber Abaci" (The Book of Calculation), he used Hindu-Arabic numerals and worked to popularize them. He also discussed congruent numbers in his "Liber Quadratorum" (The Book of Squares).
+### Fibonacci (L. Fibonacci, c. 1175 - c. 1250)
+A medieval Italian mathematician. His real name was Leonardo of Pisa. He wrote his major work "Liber Abaci" (The Book of Calculation) and made efforts to introduce and popularize the Hindu-Arabic numerals and the positional notation system, which were convenient for calculation, replacing the Roman numerals that were common in Europe at the time. He is internationally known as the discoverer of the "Fibonacci sequence" (1, 1, 2, 3, 5, 8...), which was derived from a problem modeling the population growth of a pair of rabbits. This sequence is known to be closely related to the golden ratio that appears everywhere in nature, such as in the arrangement of sunflower seeds and the shell of the nautilus.
 
-### C. G. Bachet (1581 - 1638)
-A French nobleman who studied number puzzles as a hobby. He published a Latin translation of Diophantus's "Arithmetica" and included his own research as annotations in it.
+### Bachet (C. G. Bachet, 1581-1638)
+A 17th-century French aristocrat and amateur mathematician who engaged in number puzzles and mathematical research as a hobby. He made a great contribution by translating the original Greek text of Diophantus's "Arithmetica" into Latin and publishing it with his own research as annotations. It was Fermat's reading of this Bachet edition of "Arithmetica" and leaving numerous notes in its margins that would later set the mathematical world in significant motion. He also published a classic collection of recreational mathematics problems, such as river crossing puzzles and number-guessing magic, and is highly regarded as a pioneer of recreational mathematics.
 
-### M. Mersenne (1588 - 1648)
-A French Minim friar. He acted as a mediator for the correspondence of mathematicians from various places. The numbers bearing the name "Mersenne numbers" were actually conceived by Fermat.
+### Mersenne (M. Mersenne, 1588-1648)
+A French Minim friar and priest. Although his name is preserved in "Mersenne numbers," it is said that these numbers were actually conceived by his friend Fermat. From his monastery, he corresponded with top-tier scholars from all over Europe at the time, including Descartes, Fermat, Pascal, and Galileo. Acting as a "walking academy of sciences" by relaying their research, he played an extremely important role in the development of scholarship. He also achieved results in the field of acoustics and is known for discovering "Mersenne's laws" regarding the frequency of vibration of strings.
 
-### R. Descartes (1596 - 1650)
-An original French philosopher. His representative works include "Discourse on the Method," "Geometry," and "The World" (Cosmology).
+### Descartes (R. Descartes, 1596-1650)
+A highly original 17th-century French philosopher and mathematician. Known for the proposition "I think, therefore I am." His major works include "Discourse on the Method" and "Geometry." His greatest achievement in mathematics was the invention of the "Cartesian coordinate system," in which the X and Y axes intersect at right angles on a plane. This made it possible to express geometric figures using algebraic equations, founding "analytic geometry" which integrated geometry and algebra. There is a famous anecdote that he came up with the idea of coordinates while lying in bed watching a fly crawling on the ceiling.
 
-### P. de Fermat (1601 - 1665)
-A French mathematician representing the 17th century. He laid the foundations for analytic geometry, probability theory, and differential calculus. He is also the founder of number theory.
+### Fermat (P. de Fermat, 1601-1665)
+A 17th-century French mathematician. His main profession was as a judge at the court in Toulouse, and he was the "king of amateur mathematicians" who practiced mathematics purely as a hobby in his spare time. He laid the foundations for analytic geometry, probability theory, and calculus. He is also the founder of number theory, and "Fermat's Last Theorem," which he wrote in the margin of Diophantus's "Arithmetica"—saying, "I have discovered a truly marvelous proof of this, which this margin is too narrow to contain"—continued to puzzle the world's genius mathematicians for over 360 years thereafter.
 
-### G. P. de Roberval (1602 - 1675)
-A French mathematician. He was almost the only person at the time who held a professorship as a mathematician and is known for his study of the cycloid.
+### Roberval (G. P. de Roberval, 1602-1675)
+A 17th-century French mathematician. Unusually for his time, he was a professional who held the position of mathematics professor at the Collège Royal. He is known for his research on calculating the area of a cycloid (the curve traced by a point on a rolling wheel). Using the reasoning of indivisibles, he made pioneering achievements in calculus. He had a somewhat human side; to maintain his professorship (since the position was awarded to the winner of mathematics contests), he kept his discovered theorems and methods secret, delaying the publication of his papers, and often engaging in fierce disputes over priority with other mathematicians.
 
-### J. Wallis (1616 - 1703)
-An English mathematician. In his main work "Arithmetica Infinitorum" (The Arithmetic of Infinitesimals), he gave mathematical form to the concept of limits and contributed to the foundation of calculus.
+### Wallis (J. Wallis, 1616-1703)
+A 17th-century English mathematician and professor at the University of Oxford. In his major work "Arithmetica Infinitorum," he gave a mathematical form to the concept of limits, significantly contributing to the foundation of calculus that would be followed by Newton and others. He was the first to invent and use the infinity symbol "∞" that we take for granted today in a mathematical book. He was also a genius at cryptography; during the English Civil War, he made a name for himself by successfully deciphering the Royalist encrypted documents one after another for the Parliamentarians. He was also active as one of the founding members of the Royal Society.
 
-### W. Brouncker (1620 - 1684)
-An Irish nobleman. The first President of the Royal Society. He was a mathematics enthusiast and interacted with Wallis and others.
+### Brouncker (W. Brouncker, 1620-1684)
+An Irish aristocrat (the 2nd Viscount Brouncker) who served as the first President of the Royal Society of England. He deeply loved mathematics and actively interacted with contemporaries like Wallis. He left his mark on the history of mathematics by discovering a beautiful "continued fraction" formula to represent pi. Furthermore, in response to the Pell's equation problem that Fermat sent as a challenge to English mathematicians, he collaborated with Wallis to derive an original solution method, acting as an intellectual who played a leading and important role in the development of 17th-century mathematics.
 
-### B. Pascal (1623 - 1662)
-A French philosopher known for his study of probability theory and fluids. He later joined the Jansenists and engaged in religious activities. "Pensées" is his work from that time.
+### Pascal (B. Pascal, 1623-1662)
+A 17th-century French philosopher, mathematician, physicist, and religious thinker. Famous for the quote "Man is a thinking reed." Displaying his genius from childhood, he discovered "Pascal's theorem" in his teens and invented the "Pascaline," the world's first mechanical calculator, to help with his father's tax calculations. He is also known for laying the foundations of modern probability theory through his correspondence with Fermat. Later, after a mystical experience known as the "Night of Fire" (Pascal's experience), he converted to Jansenism, and in his later years, he stepped away from mathematics to engage in religious activities and philosophical reflection. "Pensées" is the collection of his posthumous fragments from that period.
 
-### I. Newton (1642 - 1727)
-An English physicist, mathematician, and astronomer. He founded calculus independently of Leibniz and laid the foundation for classical mechanics. His main work "Principia" is one of the most important books in the history of science. He is also known for his discovery of the law of universal gravitation.
+### Isaac Newton (I. Newton, 1642-1727)
+An English physicist, mathematician, and astronomer. Considered one of the greatest scientists in history. During the "Year of Wonders" when the university was closed due to a plague outbreak and he evacuated to his hometown, he is said to have gained the inspiration for his three major achievements: the law of universal gravitation, calculus, and the foundations of optics. He founded calculus independently of Leibniz, but later engaged in a fierce mudslinging dispute over priority. His major work, "Principia," laid the foundation for classical mechanics. The anecdote of him coming up with gravity after seeing an apple fall from a tree is said to have been told by Newton himself in his later years.
 
-### T. Seki (c. 1642 - 1708)
-A Japanese mathematician from the early Edo period. He is the leading figure who elevated "Wasan" (traditional Japanese mathematics) into a highly advanced mathematical system and is revered as a "Saint of Mathematics." He deployed world-class mathematics for his time, discovering concepts equivalent to determinants earlier than Leibniz in the West and independently discovering Bernoulli numbers.
+### Takakazu Seki (T. Seki, c. 1642-1708)
+A Japanese mathematician from the early Edo period. He was the leading figure who elevated "Wasan" (traditional Japanese mathematics) into an advanced mathematical system and is revered as a "mathematics sage." He discovered a concept equivalent to determinants for solving simultaneous equations earlier than Leibniz in the West, independently discovered Bernoulli numbers, and developed world-class mathematics in Japan while the country was in isolation. He accurately calculated pi to 11 decimal places and laid the foundation for "Enri" (circle principle), an early stage of calculus. The Seki school he founded became the mainstream of Wasan and greatly contributed to the development of Japan's unique and advanced mathematical culture.
 
-### G. W. Leibniz (1646 - 1716)
-A German philosopher and mathematician. He founded calculus independently of Newton and devised the calculus notations we currently use (such as dy/dx, ∫). He also contributed to the study of the binary system and the formalization of logic.
+### Gottfried Leibniz (G. W. Leibniz, 1646-1716)
+A philosopher and mathematician representing 17th-century Germany. A "universal genius" who also worked as a diplomat and librarian. He founded calculus independently of Newton and devised the calculus notations (dy/dx, ∫, etc.) that we still use today. His symbols were intuitively easy to understand and contributed greatly to the later development of mathematics. He also contributed to the study of the binary system and the formalization of logic, making him an important figure in the history of computers as well. He is also known for advocating an optimistic philosophy that "this world is the best of all possible worlds."
 
-### L. Euler (1707 - 1783)
-A king of mathematics born in Switzerland. He achieved results in every conceivable field of mathematics. He left behind over 700 papers and 45 books.
+### Euler (L. Euler, 1707-1783)
+The greatest "King of Mathematics" in history, born in 18th-century Switzerland. Even though he lost his sight in both eyes in the latter half of his life, he continued his research with an astonishing memory and mental calculation ability, leaving an unprecedented record of over 700 papers and 45 books. "Euler's identity" (e^iπ + 1 = 0) is praised as the most beautiful formula in the world. He standardized notations such as the function symbol f(x), the base of the natural logarithm e, and the mathematical constant π, laying the foundations for all fields of mathematics including analysis, number theory, and geometry. He is considered the ultimate genius, described as having "calculated as easily as men breathe."
 
-### J. L. Lagrange (1736 - 1813)
-An Italian-born French mathematician. He served as the Director of Mathematics at the Berlin Academy as Euler's successor. He achieved great results in number theory, analytical mechanics, and other fields.
+### Lagrange (J. L. Lagrange, 1736-1813)
+An 18th-century Italian-born French mathematician and astronomer. Napoleon praised him as the "lofty pyramid of the mathematical sciences." Recommended by Euler, he served as the director of mathematics at the Prussian Academy of Sciences in Berlin. His greatest achievement is the writing of "Mécanique Analytique" (Analytical Mechanics), which rebuilt mechanics purely through algebraic calculations by eliminating geometric intuition. He also made tremendous achievements in number theory, the calculus of variations, and research on the formulas for the roots of equations (a precursor to Galois theory). He contributed to the foundation of modern society by serving as a committee member for the establishment of the metric system.
 
-### A. M. Legendre (1752 - 1833)
-A French mathematician. He left numerous achievements in number theory, elliptic integrals, and the problem of attraction. The word "Number Theory" (Théorie des Nombres) originates from his main work of the same name.
+### Legendre (A. M. Legendre, 1752-1833)
+A French mathematician. He left numerous achievements in number theory, elliptic integrals, and the problem of gravitational attraction, and is especially known for engaging in a fierce priority dispute with Gauss over the discovery of the method of least squares. The term "number theory" (Théorie des Nombres) originates from his major work of the same name, and he is highly renowned for his conjecture of the prime number theorem and his contribution to the rigorous proof of the law of quadratic reciprocity. However, many of his achievements suffered the misfortune of being completed in a more general form later by Gauss, Abel, and others.
 
-### C. F. Gauss (1777 - 1855)
-A king of mathematics born in Germany. Known for his research in number theory, non-Euclidean geometry, geodesy, hypergeometric series, surface theory, and geomagnetism. A perfectionist, he is said not to have published his results unless they were so complete that the scaffolding was no longer visible. His main work is "Disquisitiones Arithmeticae."
+### Gauss (C. F. Gauss, 1777-1855)
+A German genius praised as the "Prince of Mathematics." He made groundbreaking achievements in an extremely wide range of fields, including number theory, non-Euclidean geometry, geodesy, and astronomy. He was an extreme perfectionist, and under his motto "Few, but ripe" (Pauca sed matura), he never published his results unless they were perfectly polished and complete. Consequently, astonishing discoveries were found one after another from his unpublished manuscripts after his death. His major work "Disquisitiones Arithmeticae" is a monumental achievement in modern number theory, and the anecdote of him instantly calculating the sum of numbers from 1 to 100 in his childhood is widely known.
 
-### A. L. Cauchy (1789 - 1857)
-A French mathematician. He was prolific and had many achievements in theoretical physics and mathematics. In France, he is said to be as respected as Gauss.
+### Cauchy (A. L. Cauchy, 1789-1857)
+A French mathematician. A prolific researcher said to be second only to Euler, he established a decisive foundation for analysis, including the creation of complex analysis and the rigorous formulation of calculus. As an ardent royalist and devout Catholic, he lived a turbulent life, often being forced into exile or resignation during times of political upheaval. He also has the tragic mathematical history legacy of misplacing crucial manuscripts from Abel and Galois due to his bad habit of neglecting the peer review of other people's papers.
 
-### G. Lamé (1795 - 1870)
-A French mathematician. He contributed to the theory of elasticity and heat conduction.
+### Lamé (G. Lamé, 1795-1870)
+A French mathematician and physicist. He constructed the theory of curvilinear coordinates and made major contributions to applied mathematics and mathematical physics, such as the theory of elasticity and heat conduction. He attempted to prove Fermat's Last Theorem and was one of the people who succeeded in proving the case for n=7, but he is also famous for the episode where he fell into the trap regarding the unique factorization theorem in complex integers. His name is remembered in the "Lamé curve" and the "Lamé parameters" in elasticity theory, and he is one of the 72 French scientists whose names are inscribed on the Eiffel Tower.
 
-### N. H. Abel (1802 - 1829)
-A Norwegian mathematician. He achieved outstanding results such as the insolvability of the general quintic equation, the theory of elliptic functions, and the theory of Abelian integrals, but died young.
+### Abel (N. H. Abel, 1802-1829)
+A Norwegian mathematician. While struggling with extreme poverty, he achieved the monumental mathematical feat of proving the impossibility of solving the general quintic equation algebraically at the tender age of 21. He also showed genius inspiration comparable to Jacobi in the theory of elliptic functions and Abelian integrals, but his papers were neglected by Cauchy, and he was not properly recognized during his lifetime. He is known as a tragic genius who died of tuberculosis at the young age of 26, just days before the news arrived that he had been appointed to a university professorship.
 
-### C. G. J. Jacobi (1804 - 1851)
-A Jewish-German mathematician. He left great achievements in the theory of elliptic functions, theta functions, differential equations, and the calculus of variations. He introduced Abel's achievements to the world. He is also known for rejecting pragmatism, stating that the purpose of science is for the "honor of the human spirit."
+### Jacobi (C. G. J. Jacobi, 1804-1851)
+A German mathematician of Jewish descent. Displaying overwhelming computational ability and insight in the theory of elliptic functions, theta functions, partial differential equations, and the theory of determinants, he left his mark with the "Jacobian." He maintained a good rivalry with his contemporary Abel and made great efforts to introduce Abel's achievements to the world after his premature death. An extremely famous episode is his rebuttal to Fourier's assertion that "science should contribute to the exploration of nature and the public good," responding that "the sole end of science is the honor of the human mind," strongly defending the supremacy of pure mathematics.
 
-### J. Liouville (1809 - 1882)
-A French mathematician. He contributed to differential equations, transcendental number theory, and function theory.
+### Liouville (J. Liouville, 1809-1882)
+A French mathematician. He left his name on many fundamental concepts of analysis, such as "Liouville's theorem" in complex analysis and the "Sturm-Liouville boundary value problem" in differential equations. He is also known for the discovery of "Liouville numbers," which constituted the first concrete proof of the existence of transcendental numbers. Exhibiting exceptional skill as an educator and academic journal editor, he deciphered and published the difficult posthumous manuscripts of Galois, who had been completely unappreciated during his lifetime, becoming the greatest contributor to the recognition of Galois' group theory in the mathematical community.
 
-### E. E. Kummer (1810 - 1893)
-A German mathematician. He achieved great success by applying the number theory of cyclotomic fields to Fermat's Last Theorem.
+### Kummer (E. E. Kummer, 1810-1893)
+A German mathematician. He introduced the concept of "ideal numbers" (a precursor to ideals) in algebraic number theory and deeply studied the number theory of cyclotomic fields. Applying this to Fermat's Last Theorem, he achieved a groundbreaking result for his time by proving that the theorem holds true for prime numbers that satisfy a specific condition, known as "regular primes." He worked as a gymnasium (secondary school) teacher for 10 years, and was also an excellent educator who discovered and nurtured the talents of later great mathematicians such as Kronecker and Weierstrass.
 
-### É. Galois (1811 - 1832)
-A French mathematician. He clarified Abel's theorem that equations of degree 5 or higher cannot generally be solved algebraically by introducing the concept of a group. He fell in a duel at a young age, but it is now known that the trigger was a trivial romantic dispute.
+### Galois (É. Galois, 1811-1832)
+A French mathematician. An unparalleled genius who opened the door to modern algebra by clarifying the conditions for equations to be solvable algebraically using a completely new concept called a "group." However, because his theory was too precocious and difficult to understand, it was repeatedly ignored by the Academy during his lifetime. As a fanatic republican, he became deeply involved in political movements, suffering imprisonment and leading a short, turbulent life. Although he lost his life in a duel stemming from a romantic dispute at the age of only 20, the mathematical testament he wrote to his best friend on the night before his death has had an immeasurable impact on subsequent mathematics.
 
-### K. Weierstrass (1815 - 1897)
-A German mathematician. He introduced the ε-δ (epsilon-delta) method to calculus, which had previously relied on intuition, providing it with a rigorous foundation, and is called the "father of modern analysis." He also left immense achievements in the theory of elliptic functions and complex analysis.
+### Karl Weierstrass (K. Weierstrass, 1815-1897)
+A German mathematician. In contrast to the calculus of his time, which relied on geometric intuition, he established the rigorous "ε-δ (epsilon-delta) logic," solidifying the foundations of analysis and earning the title of the "father of modern analysis." He shocked the mathematical world of his time by presenting a function that is "continuous everywhere but differentiable nowhere." He spent many years as a gymnasium teacher, teaching everything from gymnastics to calligraphy, but later became a university professor and is known for his gentle personality, having mentored many brilliant students, including Sofia Kovalevskaya.
 
-### L. Kronecker (1823 - 1891)
-A Jewish-German mathematician. He contributed to the theory of elliptic functions and number theory. Although known for advocating the arithmetization of mathematics, his highly subjective personality led him to make unreasonable criticisms against his colleague at the University of Berlin, Weierstrass, and to hinder Cantor's employment, which cast a negative image on his life.
+### Kronecker (L. Kronecker, 1823-1891)
+A German mathematician of Jewish descent. Leaving his name to the "Kronecker delta," he made significant contributions to algebraic number theory and elliptic functions. As shown by his famous quote, "God made the integers, all else is the work of man," he took a strict constructivist stance that mathematics should only deal with things that can be constructed through a finite number of operations. Due to his extreme beliefs and highly subjective personality, he fiercely attacked Cantor's set theory as a "disease of mathematics," driving Cantor to a mental breakdown, and criticized his colleague Weierstrass, casting a dark shadow over the history of mathematics.
 
-### B. Riemann (1826 - 1866)
-A German mathematician. He achieved great results concerning the fundamentals of mathematics, such as the concept of Riemann surfaces in complex function theory and Riemannian geometry.
+### Riemann (B. Riemann, 1826-1866)
+A German mathematician. A beloved disciple of Gauss, he created a series of groundbreaking concepts that form the basis of modern mathematics and physics, such as the "Riemann surface" in complex analysis, the "Riemann integral" which defined the basis of integration, and "Riemannian geometry" which became the mathematical framework for Einstein's general theory of relativity. The "Riemann hypothesis," proposed in his only paper on number theory published in 1859, continues to thwart many geniuses today as the greatest unsolved problem in the history of mathematics regarding the distribution of prime numbers. Extremely shy and sickly, he died prematurely of tuberculosis at the age of 39.
 
-### G. Cantor (1845 - 1918)
-A German mathematician. He is the founder of set theory, proved that there is a hierarchy (cardinality) in the sizes of infinite sets, and proposed the continuum hypothesis. His innovative theories faced fierce criticism from the mathematical community of the time but were later highly evaluated by Hilbert and others.
+### Georg Cantor (G. Cantor, 1845-1918)
+A German mathematician. He single-handedly founded "set theory," which can be called the language of modern mathematics, and used the diagonal argument to prove the astonishing fact that there is a hierarchy of different "cardinalities" of infinity. However, his profound theory, which defied human intuition, was subjected to fierce attacks and ridicule by authorities of the time, such as Kronecker and Poincaré, who labeled him a "heretic out to destroy mathematics." He suffered from severe depression due to his deadlock in proving the continuum hypothesis and the persecution from his surroundings, passing away in obscurity in a mental institution. Today, however, he is regarded as one of the greatest revolutionaries in the history of mathematics.
 
-### H. Poincaré (1854 - 1912)
-A French mathematician called the last universalist in mathematics. He left outstanding writings not only in the theory of automorphic functions, non-Euclidean geometry, differential equations, celestial mechanics, and electrodynamics, but also in scientific criticism.
+### Poincaré (H. Poincaré, 1854-1912)
+A French genius hailed as the "last universal scientist." He left monumental achievements in all fields of mathematics, including the creation of the theory of automorphic functions, laying the foundation of topology, and the qualitative theory of differential equations. His intuition was extraordinary; he initiated "chaos theory" from his study of the three-body problem in celestial mechanics, and closely approached the special theory of relativity in physics. He was extremely nearsighted and forgetful, and his style was to completely formulate his thoughts in his head before writing them all down at once. The "Poincaré conjecture" was finally solved about 100 years later by Perelman.
 
-### K. Hensel (1861 - 1941)
-A German mathematician. A student of Kronecker. He introduced the theory of p-adic numbers (p-adic analysis) to number theory by applying function-theoretic methods.
+### Hensel (K. Hensel, 1861-1941)
+A German mathematician and a disciple of Kronecker. By bringing ideas from the theory of algebraic functions into number theory, he discovered and introduced the concept of "p-adic numbers," a completely new completion over the field of rational numbers. The theory of p-adic numbers has become an indispensable and extremely powerful tool in modern arithmetic geometry and algebraic number theory. Born into a family of musicians, he is also known for his artistic background; his grandfather was the composer Fanny Mendelssohn (sister of Felix Mendelssohn), and his father was a painter.
 
-### D. Hilbert (1862 - 1943)
-A German mathematician. He left massive footprints in every field of mathematics, including invariant theory, algebraic number theory, and the foundations of mathematics. The 23 problems he proposed at the International Congress of Mathematicians in Paris (1900) had a huge impact on the development of mathematics.
+### Hilbert (D. Hilbert, 1862-1943)
+A German mathematician. A giant who led every field of mathematics at the turn of the 19th to the 20th century, including the finiteness theorem in invariant theory, his comprehensive report on algebraic number theory "Zahlbericht," and the axiomatization of geometry. "Hilbert's 23 problems," proposed at the International Congress of Mathematicians in Paris in 1900, became the guidepost for the direction of mathematics in the 20th century. "Hilbert's program," which sought to prove the consistency of mathematics, was thwarted by Gödel's incompleteness theorems, but the framework of mathematical logic born in the process became the foundation of modern logic. His epitaph, "We must know, we will know," is incredibly famous.
 
-### T. Takagi (1875 - 1960)
-A Japanese mathematician. He constructed "class field theory," a colossal theory in algebraic number theory, and is the greatest contributor who elevated modern Japanese mathematics to a global standard for the first time. He also served as a member of the first Fields Medal selection committee in 1936.
+### Teiji Takagi (T. Takagi, 1875-1960)
+A Japanese mathematician. After studying in Germany under Hilbert, he deepened his independent research during the academic isolation caused by World War I, completing the grand theory of "Class Field Theory," which revealed the full picture of Abelian extensions. With this achievement, he suddenly propelled the mathematics of Japan, then a developing country, to the highest level in the world. In 1936, he also served the honorable role of selection committee member for the first Fields Medals. Textbooks he wrote, such as "Introduction to Analysis" and "Lectures on Elementary Number Theory," remain famous classics that continue to be read by many Japanese mathematics students today.
 
-### A. E. Noether (1882 - 1935)
-A German mathematician. She made extremely important contributions to abstract algebra (ring theory and ideal theory). Moreover, "Noether's theorem" in theoretical physics connects symmetry and conservation laws, and she was praised by Einstein as "the most significant creative mathematical genius thus far produced since the higher education of women began".
+### Emmy Noether (A. E. Noether, 1882-1935)
+A German mathematician. The greatest contributor who practically single-handedly created the field of modern "abstract algebra" by axiomatizing ring theory and ideal theory. In physics as well, she proved "Noether's theorem," which shows that continuous symmetries correspond to conservation laws, providing an indispensable foundation for modern physics. In an era when prejudice against women was strong, she was coldly treated as an unpaid lecturer for a long time, but brilliant students ("Noether's boys") always gathered around her. Being of Jewish descent, she was driven from the university under the Nazi regime and fled to America, passing away suddenly at the age of 53 as an indomitable genius.
 
-### S. Ramanujan (1887 - 1920)
-An Indian mathematician. Having received almost no formal mathematical education, he studied mathematics on his own and discovered numerous astounding formulas regarding pi and integer partitions through intuition and flashes of insight. Called the "Magician of India," he made a name for himself through his joint research with G. H. Hardy but passed away young due to illness.
+### Srinivasa Ramanujan (S. Ramanujan, 1887-1920)
+An Indian mathematician. Without receiving much formal mathematical education, he researched mathematics on his own and discovered numerous astonishing formulas regarding pi and partition numbers through intuition and flashes of genius. Known as the "Indian Magician," he made a name for himself through his joint research with G. H. Hardy. Many of the formulas he discovered were without proofs, and he famously claimed that "a goddess told them to me in a dream," providing no shortage of mystical anecdotes. After moving to England, he blossomed under Hardy's guidance, but his health deteriorated due to the harsh British climate and differences in lifestyle, leading to his premature death from illness at the young age of 32. The "Ramanujan's notebooks" he left behind have continued to inspire many mathematicians for many years after his death.
 
-### L. J. Mordell (1888 - 1972)
-An American-born mathematician. His parents were immigrants from Lithuania. He has numerous papers on Diophantine equations, but Mordell's theorem in the theory of elliptic curves is especially famous. Weil extended this to the case of general algebraic curves, and from there, arithmetic algebraic geometry would achieve explosive development.
+### Mordell (L. J. Mordell, 1888-1972)
+An American-born British mathematician. His parents were immigrants from Lithuania. Although he authored many papers in the theory of Diophantine equations, Mordell's theorem in the theory of elliptic curves (that the group of rational points is finitely generated) is particularly famous. He traveled alone to England to take a scholarship exam for Cambridge University and subsequently based his activities in the UK. The theorem he proved in 1922 was later extended by André Weil to the case of general algebraic varieties (or Abelian varieties) as the "Mordell-Weil theorem," causing arithmetic algebraic geometry to achieve explosive development from this point. In addition, the "Mordell conjecture" he proposed was proven in later years by Faltings.
 
-### C. L. Siegel (1896 - 1981)
-A German number theorist. He made numerous contributions to the analytic theory of numbers.
+### Siegel (C. L. Siegel, 1896-1981)
+A German number theorist. He made numerous groundbreaking contributions in fields such as analytic number theory and celestial mechanics. He is particularly renowned for the analytic theory of quadratic forms, "Siegel's theorem on integral points" concerning the finiteness of integer solutions to Diophantine equations, and "Siegel's lemma" in transcendental number theory. Known as a very strict person with high standards, in the 20th-century mathematical world where abstraction was progressing, he strongly criticized the trend of abstract mathematics represented by Bourbaki and valued concrete classical analytic methods. His solitary and principled stance garnered much respect, and he is counted among the great mathematicians representing the 20th century.
 
-### H. Hasse (1898 - 1979)
-A German mathematician. A student of Hensel, he contributed to the foundation and application of p-adic analysis. His work includes the consolidation of class field theory and the study of L-functions of elliptic curves.
+### Hasse (H. Hasse, 1898-1979)
+A German mathematician. As a disciple of Kurt Hensel, he developed the theory of p-adic numbers and made enormous contributions to the foundation of p-adic analysis and its application to number theory. He established the "local-global principle (Hasse principle)" and left a significant mark in the refinement of class field theory and the study of L-functions of elliptic curves. He is also known for introducing Teiji Takagi's class field theory to Europe and striving for its popularization and development alongside Emil Artin. His name is crowned in concepts like the "Hasse diagram" and the "Hasse-Weil L-function," making him a central figure who led algebraic number theory in the first half of the 20th century.
 
-### K. Oka (1901 - 1978)
-A Japanese mathematician. In the theory of functions of several complex variables, he achieved the astonishing feat of independently solving all of the "Three Great Problems" that no mathematician in the world at the time had been able to solve, after years of solitary research. He is also known for his philosophy that emphasizes unique emotions, and his essay collection "Ten Night Tales of Spring" (Shunsho Juwa) is widely read.
+### Kiyoshi Oka (K. Oka, 1901-1978)
+A Japanese mathematician. In the theory of several complex variables, he single-handedly accomplished the astonishing feat of solving all of the "Three Great Problems" (including Levi's problem), which no mathematician in the world could solve at the time, after years of solitary research. Due to the extreme pioneering nature and difficulty of his work, it is said that it took time for the global mathematical community to properly understand it upon its initial publication. He is also known for his view of mathematics and educational philosophy that valued unique "emotion" (jocho), and his essays such as "Ten Lectures on Spring Evenings," which talk about the beauty of mathematics on spring nights, are widely beloved by general readers. His eccentricities, such as walking in rubber boots even on sunny days, are also the stuff of legend.
 
-### J. von Neumann (1903 - 1957)
-A Hungarian-born American mathematician. In addition to the mathematical foundation of quantum mechanics, the founding of game theory, and the study of cellular automata, he conceived the "stored-program concept" (von Neumann architecture), which is the basic structure of modern computers. Due to his overwhelming computing power and memory, he was called the "Devil's Brain."
+### John von Neumann (J. von Neumann, 1903-1957)
+A Hungarian-born American mathematician. Crossing the boundary between pure and applied mathematics, he left decisive achievements in an extremely wide range of fields, including the rigorous mathematical foundation of quantum mechanics, the creation of game theory, and the study of cellular automata. He also proposed the "stored-program concept (von Neumann architecture)," the basic structure of modern computers, driving the development of computer science. Showing genius abilities in languages and mental arithmetic from childhood, he was called a "demonic brain" and a "Martian" due to his overwhelmingly powerful computational ability, memory, and logical thinking skills. He was also deeply involved in military research such as the Manhattan Project.
 
-### A. Weil (1906 - 1998)
-A Jewish-French mathematician. In his youth, he took an interest in Fermat's problem and, with the goal of applying it to number theory, fundamentally reviewed algebraic geometry and provided it with a rigorous foundation. He is also known for his writings on the history of mathematics.
+### Weil (A. Weil, 1906-1998)
+A French mathematician of Jewish descent. The de facto leader and one of the founding members of "Bourbaki," a group of mathematicians that had a massive influence on 20th-century mathematics. He established the rigorous foundations of algebraic geometry and used them to prove the Riemann hypothesis for algebraic curves over finite fields. The "Weil conjectures," which he proposed in 1949, became the driving force behind the explosive development of algebraic geometry over the next several decades. He possessed deep knowledge of various languages and philosophies (especially Indian philosophy) and also left works on the history of mathematics. He led a turbulent life, including being imprisoned during World War II for refusing military service.
 
-### K. Gödel (1906 - 1978)
-An Austrian-born logician and mathematician. His "Incompleteness Theorems," published in 1931, showed that in any consistent formal axiomatic system, there are propositions that can neither be proved nor disproved, bringing an end to Hilbert's program and delivering a fundamental shock to the foundations of mathematics.
+### Kurt Gödel (K. Gödel, 1906-1978)
+An Austrian-born logician and mathematician. His "incompleteness theorems," published in 1931, showed that in any sufficiently expressive consistent formal axiomatic system, there are propositions that can neither be proven nor disproven, putting an end to Hilbert's program and delivering a fundamental shock to the mathematical and philosophical worlds. He also left great achievements in set theory, such as proving the relative consistency of the "continuum hypothesis." He had a close friendship with Einstein, and their walks and discussions at the Institute for Advanced Study in Princeton were a famous sight. In his later years, he suffered from obsessive-compulsive disorder and paranoia, eventually starving to death out of fear of being poisoned.
 
-### A. Turing (1912 - 1954)
-An English mathematician and cryptographer. He devised the "Turing machine," which formalized the concept of computation, and is called the father of modern computer science and artificial intelligence. During World War II, he made massive contributions to cracking the German Enigma code.
+### Alan Turing (A. Turing, 1912-1954)
+A British mathematician, logician, and cryptographer. He devised the "Turing machine," a virtual machine that mathematically formalized the concept of computation, and is called the father of modern computer science and artificial intelligence (AI). During World War II, he made massive contributions to cracking the German "Enigma" cipher at Bletchley Park, leading the Allies to victory. After the war, he worked on the development of computers and mathematical biological modeling of morphogenesis (Turing patterns). However, under the British laws of the time, he was convicted for homosexuality, and subsequently met a tragic end at the age of 41 by biting into an apple laced with cyanide.
 
-### K. Kodaira (1915 - 1997)
-A Japanese mathematician. In 1954, he became the first Japanese to receive the Fields Medal. By applying the theory of harmonic integrals, he brought numerous breakthrough results to algebraic geometry and the theory of complex manifolds (such as the Kodaira vanishing theorem) and made tremendous contributions to the development of geometry in the 20th century.
+### Kunihiko Kodaira (K. Kodaira, 1915-1997)
+A Japanese mathematician. His talent was discovered by Hermann Weyl, leading him to move to the United States, where he was active at the Institute for Advanced Study in Princeton. In 1954, he became the first Japanese person to win the Fields Medal. Applying the theory of harmonic integrals to algebraic geometry and complex manifold theory, he brought about numerous groundbreaking results such as the "Kodaira vanishing theorem," the "Kodaira embedding theorem," and the classification of complex analytic surfaces, making an immense contribution to the development of 20th-century geometry. After returning to Japan, he taught at the University of Tokyo and other institutions, dedicating himself to nurturing the next generation and mathematical education. Anecdotes remain of his valuing stubbornly unglamorous effort, such as repeating calculations until the edges of his notebooks turned completely black.
 
-### K. Ito (1915 - 2008)
-A Japanese mathematician. He founded a field called "stochastic differential equations" (Ito's formula, Ito's lemma) in probability theory. This theory later became the mathematical foundation for financial engineering on Wall Street (such as the Black-Scholes equation) and had a profound impact on economics and physics, earning him the inaugural Gauss Prize.
+### Kiyosi Ito (K. Ito, 1915-2008)
+A Japanese mathematician. He founded entirely new fields in probability theory known as "stochastic integration" and "stochastic differential equations" (Ito's formula, Ito's lemma). His theory for describing random movements later became the mathematical foundation for Wall Street's financial engineering (such as the Black-Scholes equation) and had a tremendous impact not only on economics but also on a wide range of fields including physics and biology. In recognition of this vast contribution to applications, he received the inaugural Gauss Prize at the International Congress of Mathematicians in 2006. It is a beautiful example of a theory born from pure mathematical inquiry bringing about immeasurable applications in the real world.
 
-### Y. Taniyama (1927 - 1958)
-A Japanese mathematician. At the young age of 28, he proposed the prototype of the "Taniyama-Shimura conjecture," which states that "all elliptic curves are modular," but took his own life shortly after. This conjecture later became the greatest breakthrough in Wiles's complete proof of Fermat's Last Theorem.
+### Yutaka Taniyama (Y. Taniyama, 1927-1958)
+A Japanese mathematician. At a 1955 international symposium, at the young age of 28, he proposed the prototype of a grand conjecture that would later be known as the "Taniyama-Shimura conjecture": "All elliptic curves over the field of rational numbers are modular." This conjecture later became the greatest breakthrough (the bridge) for solving Fermat's Last Theorem, which was thought to be completely unrelated. However, Taniyama, who had produced numerous ideas with his genius inspiration, suddenly took his own life in 1958 at the age of 31 while engaged to be married. His legacy was carried on by his best friend Goro Shimura and others, becoming one of the most important cornerstones in modern number theory.
 
-### A. Grothendieck (1928 - 2014)
-A French mathematician. He introduced scheme theory and topos theory, fundamentally rewriting algebraic geometry in the late 20th century. His immense abstraction methods had an immeasurable impact on modern mathematics as a whole, but he later abruptly withdrew from the mathematical community.
+### Alexander Grothendieck (A. Grothendieck, 1928-2014)
+A French mathematician. The greatest giant who introduced grand concepts such as scheme theory, topos theory, and motives, fundamentally rewriting the landscape of algebraic geometry in the late 20th century. His methods of radical generalization and abstraction had an immeasurable impact on the entirety of modern mathematics and provided a decisive path to the resolution of the Weil conjectures. He received the Fields Medal in 1966, but in protest against military research, he abruptly left the center stage of mathematics and lived a reclusive life at the foot of the Pyrenees. He left behind thousands of pages of unpublished manuscripts, and his ideas remain deeply rooted everywhere in the mathematical world today.
 
-### G. Shimura (1930 - 2019)
-A Japanese mathematician. Taking over the will of his close friend Yutaka Taniyama, he elevated their joint research into a rigorous mathematical formulation known as the "Taniyama-Shimura conjecture." He left massive achievements in the theory of complex multiplication of Abelian varieties in arithmetic geometry.
+### Goro Shimura (G. Shimura, 1930-2019)
+A Japanese mathematician. Professor Emeritus at Princeton University. Following the tragic death of his best friend Yutaka Taniyama, he carried on Taniyama's will and elevated his ambiguous intuition into a rigorous mathematical formulation known as the "Taniyama-Shimura conjecture." This conjecture became the key to Andrew Wiles's proof of Fermat's Last Theorem. In addition, he left enormous achievements in the study of complex multiplication of abelian varieties and automorphic forms in arithmetic geometry, leaving his name in concepts such as "Shimura varieties." He was known for his extremely strict and uncompromising personality, maintaining a severe stance toward mathematical accuracy even in his own writings.
 
-### H. Hironaka (1931 - )
-A Japanese mathematician. In 1970, he became the second Japanese to receive the Fields Medal. He brilliantly proved the "resolution of singularities of algebraic varieties over a field of characteristic zero," which was considered an extremely difficult problem in algebraic geometry, and gave a strong impact on the subsequent development of algebraic geometry.
+### Heisuke Hironaka (H. Hironaka, 1931-)
+A Japanese mathematician. In 1970, he became the second Japanese mathematician to receive the Fields Medal, following Kunihiko Kodaira. In algebraic geometry, he masterfully proved the "resolution of singularities of an algebraic variety over a field of characteristic 0," which had been considered an extremely difficult problem, after hundreds of pages of complex logical demonstration. This had a tremendous impact on the subsequent development of algebraic geometry and singularity theory. Calling himself a "muddy effort type," he maintained a stance of obsessively thinking through a single problem to the very end. He also passionately engaged in mathematics education for younger generations and the development of young researchers, such as by establishing the "Mathematical Sciences Promotion Foundation."
 
-### A. Baker (1939 - )
-An English number theorist. He was awarded the Fields Medal along with Heisuke Hironaka for his contributions to transcendental number theory.
+### Baker (A. Baker, 1939-)
+A British number theorist. At the 1970 International Congress of Mathematicians, he was awarded the Fields Medal alongside Heisuke Hironaka and others. He proved "Baker's theorem," which gives a non-trivial lower bound for linear forms in the logarithms of algebraic numbers, bringing a groundbreaking leap to transcendental number theory. This powerful theorem made it possible to calculate upper bounds for integer solutions to Diophantine equations, leading to the sequential resolution of long-standing unsolved problems, such as Gauss's class number problem (the determination of imaginary quadratic fields with class number 1). He led number theory research at Trinity College, Cambridge, for many years.
 
-### A. Wiles (1953 - )
-An English-born mathematician. He made major contributions through his research on the main conjecture of Iwasawa theory, the Birch and Swinnerton-Dyer conjecture, and others. In 1995, he completely proved Fermat's Last Theorem, erecting an immortal monumental achievement in the history of mathematics.
+### Wiles (A. Wiles, 1953-)
+A British-born mathematician. He made major contributions to important topics in arithmetic geometry, such as Iwasawa theory and the Birch and Swinnerton-Dyer conjecture. Fascinated by "Fermat's Last Theorem" when he encountered it at a library at the age of 10, he continued 7 years of solitary research in secret even after becoming a mathematician. Although he announced a proof in 1993, a flaw was found. After enduring hardship and with the cooperation of his former student Richard Taylor, he published a complete proof in 1995, putting an end to the greatest unsolved problem in the history of mathematics, which had lasted for 350 years. For this monumental achievement, he was awarded a special silver plaque from the International Mathematical Union.
 
-### G. Faltings (1954 - )
-A German mathematician. He solved the Mordell conjecture in 1983 and was awarded the Fields Medal.
+### Faltings (G. Faltings, 1954-)
+A German mathematician. In 1983, at the age of 28, he stunned mathematicians worldwide by proving the "Mordell conjecture" (that there are only finitely many rational points on an algebraic curve of genus greater than or equal to 2), a super-difficult problem in algebraic and arithmetic geometry. For this achievement, he was awarded the Fields Medal in 1986. Furthermore, he resolved the Shafarevich conjecture and the Tate conjecture in quick succession, demonstrating the power of the abstract theory built by Grothendieck. Known for having extremely rigorous and deep insight, he continues to have a massive influence on younger generations as one of the researchers who reigns at the highest peak of arithmetic geometry today.
 
 ### References
-Fermat's Last Theorem Has Been Solved! From Euler to Wiles' Proof, Kodansha
+Fermat's Last Theorem is Solved! From Euler to Wiles's Proof (Kodansha)
