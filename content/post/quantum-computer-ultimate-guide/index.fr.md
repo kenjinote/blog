@@ -1200,7 +1200,7 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333
+    style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(Remarque : La figure ci-dessus représente les interconnexions logiques. Les lignes horizontales continues indiquent l'écoulement du temps pour chaque qubit (fils quantiques), montrant une structure dans laquelle le qubit de contrôle, après avoir traversé la `Porte H`, contrôle le `⊕` du qubit cible au point `●`. L'état de sortie global obtenu est l'état de Bell $|\Phi^+\rangle$.)*

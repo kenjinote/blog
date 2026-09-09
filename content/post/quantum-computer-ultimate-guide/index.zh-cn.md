@@ -1202,7 +1202,7 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333
+    style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(注: 上图表示逻辑连接。实线水平线表示各个量子比特的时间流（量子导线），展示了穿过 `H门` 的控制比特在 `●` 位置控制目标比特的 `⊕` 的结构。整体输出状态得到贝尔态 $|\Phi^+\rangle$ 。)*

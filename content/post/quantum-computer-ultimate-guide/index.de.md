@@ -1202,7 +1202,7 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333
+    style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(Hinweis: Das obige Diagramm stellt die logische Verschaltung dar. Die durchgehenden horizontalen Linien zeigen den zeitlichen Verlauf jedes Qubits (Quantendraht), und es wird die Struktur gezeigt, in der das Kontroll-Qubit nach Passieren des `H-Gatters` das `⊕` des Ziel-Qubits an der Position `●` steuert. Als Gesamtausgangszustand erhält man den Bell-Zustand $|\Phi^+\rangle$.)*

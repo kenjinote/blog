@@ -1202,7 +1202,7 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333
+    style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(註：上圖呈現了邏輯上的連線。實線水平線代表各量子位元的時間流（量子線，Quantum wire），通過 `H閘` 的控制位元在 `●` 的位置控制目標位元的 `⊕` 結構。整體的輸出狀態將得到貝爾態 $|\Phi^+\rangle$。)*

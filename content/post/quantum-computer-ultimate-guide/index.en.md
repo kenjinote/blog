@@ -1202,7 +1202,7 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333
+    style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(Note: The diagram above depicts the logical connections. The solid horizontal lines indicate the flow of time for each qubit (quantum wires), showing the structure where the control qubit passes through the `H Gate` and controls the target qubit's `⊕` at the `●` position. As the output of the overall circuit, the Bell state $|\Phi^+\rangle$ is obtained.)*

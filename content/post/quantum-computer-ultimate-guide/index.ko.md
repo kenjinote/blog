@@ -1202,7 +1202,7 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333
+    style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(참고: 위 그림은 논리적인 연결선을 나타냅니다. 실선의 수평선이 각 양자 비트의 시간 흐름(양자 와이어)을 나타내며, `H 게이트` 를 통과한 제어 비트가 `●` 의 위치에서 표적 비트의 `⊕` 를 제어하는 구조를 보여줍니다. 전체 출력 상태로서 벨 상태 $|\Phi^+\rangle$ 가 얻어집니다.)*

@@ -1202,7 +1202,7 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333
+    style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(Nota: El diagrama anterior muestra el conexionado lógico. Las líneas horizontales continuas indican el flujo temporal de cada cúbit (hilos cuánticos), mostrando la estructura en la que el cúbit de control, habiendo pasado por la `puerta H`, controla al cúbit objetivo `⊕` en la posición `●`. Como estado de salida global se obtiene el estado de Bell $|\Phi^+\rangle$.)*

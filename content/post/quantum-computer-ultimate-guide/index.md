@@ -1202,7 +1202,7 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333
+    style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(注: 上図は論理的な結線を表しています。実線の水平線が各量子ビットの時間の流れ（量子ワイヤー）を示し、`Hゲート` を通過した制御ビットが `●` の位置で標的ビットの `⊕` を制御する構造を示しています。全体の出力状態としてベル状態 $|\Phi^+\rangle$ が得られます。)*
