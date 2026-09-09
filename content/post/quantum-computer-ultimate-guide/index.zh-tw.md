@@ -804,21 +804,21 @@ $$
 
 從這個一般化的公式，可以演繹出繞著直交座標軸的基本旋轉閘群。
 
-### 繞 X 軸的旋轉閘 **$R_x(\theta)$** 
+### 繞 X 軸的旋轉閘 $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### 繞 Y 軸的旋轉閘 **$R_y(\theta)$** 
+### 繞 Y 軸的旋轉閘 $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### 繞 Z 軸的旋轉閘 **$R_z(\theta)$** 
+### 繞 Z 軸的旋轉閘 $R_z(\theta)$ 
 
 
 $$

@@ -804,21 +804,21 @@ $$
 
 이 일반적인 정식화로부터 직교 좌표축 주위의 기본 회전 게이트군이 연역됩니다.
 
-### X축 주위의 회전 게이트 **$R_x(\theta)$** 
+### X축 주위의 회전 게이트 $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Y축 주위의 회전 게이트 **$R_y(\theta)$** 
+### Y축 주위의 회전 게이트 $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Z축 주위의 회전 게이트 **$R_z(\theta)$** 
+### Z축 주위의 회전 게이트 $R_z(\theta)$ 
 
 
 $$

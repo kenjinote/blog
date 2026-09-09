@@ -760,7 +760,7 @@ $$
 
 Este grupo de puertas manipula únicamente la fase relativa de la componente **$|1\rangle$** , tomando un estado de superposición **$\alpha|0\rangle + \beta|1\rangle$** y convirtiéndolo en la forma **$\alpha|0\rangle + \beta e^{i\phi}|1\rangle$** . Los dos siguientes son de particular importancia.
 
-### 4.4.1 Puerta S (Puerta de Fase, **$\sqrt{Z}$** )
+### 4.4.1 Puerta S (Puerta de Fase, $\sqrt{Z}$ )
 
 El caso en el que **$\phi = \pi/2$** se denomina puerta S.
 
@@ -777,7 +777,7 @@ $$
 
 Esto hace que el estado transite hacia la dirección positiva del eje Y en el ecuador de la esfera de Bloch (el estado propio de la base Y). El grupo compuesto por el grupo de Pauli y las puertas H y S se denomina grupo de Clifford (Clifford group), y según el teorema de Gottesman-Knill, se ha demostrado que los circuitos cuánticos compuestos únicamente por el grupo de Clifford pueden simularse de manera eficiente en un ordenador clásico.
 
-### 4.4.2 Puerta T (Puerta **$\pi/8$** , **$\sqrt{S}$** , **$\sqrt[4]{Z}$** )
+### 4.4.2 Puerta T (Puerta $\pi/8$ , $\sqrt{S}$ , $\sqrt[4]{Z}$ )
 
 El caso en el que **$\phi = \pi/4$** se denomina puerta T.
 
@@ -804,21 +804,21 @@ $$
 
 A partir de esta formulación general, se deducen los grupos básicos de puertas de rotación alrededor de los ejes de coordenadas ortogonales.
 
-### Puerta de Rotación alrededor del eje X **$R_x(\theta)$** 
+### Puerta de Rotación alrededor del eje X $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Puerta de Rotación alrededor del eje Y **$R_y(\theta)$** 
+### Puerta de Rotación alrededor del eje Y $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Puerta de Rotación alrededor del eje Z **$R_z(\theta)$** 
+### Puerta de Rotación alrededor del eje Z $R_z(\theta)$ 
 
 
 $$

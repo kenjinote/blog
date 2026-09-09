@@ -804,21 +804,21 @@ $$
 
 Dari rumusan umum ini, kelompok gerbang rotasi dasar di sekitar sumbu koordinat ortogonal dapat dideduksi.
 
-### Gerbang rotasi di sekitar sumbu X **$R_x(\theta)$** 
+### Gerbang rotasi di sekitar sumbu X $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Gerbang rotasi di sekitar sumbu Y **$R_y(\theta)$** 
+### Gerbang rotasi di sekitar sumbu Y $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Gerbang rotasi di sekitar sumbu Z **$R_z(\theta)$** 
+### Gerbang rotasi di sekitar sumbu Z $R_z(\theta)$ 
 
 
 $$

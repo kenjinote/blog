@@ -804,21 +804,21 @@ $$
 
 From this general formulation, the basic rotation gates about the Cartesian coordinate axes are deduced:
 
-### Rotation Gate About the X-Axis **$R_x(\theta)$** 
+### Rotation Gate About the X-Axis $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Rotation Gate About the Y-Axis **$R_y(\theta)$** 
+### Rotation Gate About the Y-Axis $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Rotation Gate About the Z-Axis **$R_z(\theta)$** 
+### Rotation Gate About the Z-Axis $R_z(\theta)$ 
 
 
 $$

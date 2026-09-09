@@ -804,21 +804,21 @@ $$
 
 Из этой общей формулировки выводятся базовые группы вращательных вентилей вокруг осей прямоугольной системы координат.
 
-### Вращательный вентиль вокруг оси X **$R_x(\theta)$** 
+### Вращательный вентиль вокруг оси X $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Вращательный вентиль вокруг оси Y **$R_y(\theta)$** 
+### Вращательный вентиль вокруг оси Y $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Вращательный вентиль вокруг оси Z **$R_z(\theta)$** 
+### Вращательный вентиль вокруг оси Z $R_z(\theta)$ 
 
 
 $$

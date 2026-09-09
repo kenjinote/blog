@@ -804,21 +804,21 @@ $$
 
 इस सामान्य सूत्रीकरण से, कार्तीय निर्देशांक अक्षों के परितः मूलभूत रोटेशन गेट्स का निगमन किया जाता है:
 
-### X-अक्ष के परितः रोटेशन गेट **$R_x(\theta)$** 
+### X-अक्ष के परितः रोटेशन गेट $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Y-अक्ष के परितः रोटेशन गेट **$R_y(\theta)$** 
+### Y-अक्ष के परितः रोटेशन गेट $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Z-अक्ष के परितः रोटेशन गेट **$R_z(\theta)$** 
+### Z-अक्ष के परितः रोटेशन गेट $R_z(\theta)$ 
 
 
 $$

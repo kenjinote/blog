@@ -804,21 +804,21 @@ $$
 
 A partir desta formulação geral, os grupos básicos de portas de rotação em torno dos eixos coordenados ortogonais são deduzidos.
 
-### Porta de rotação em torno do eixo X **$R_x(\theta)$** 
+### Porta de rotação em torno do eixo X $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Porta de rotação em torno do eixo Y **$R_y(\theta)$** 
+### Porta de rotação em torno do eixo Y $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Porta de rotação em torno do eixo Z **$R_z(\theta)$** 
+### Porta de rotação em torno do eixo Z $R_z(\theta)$ 
 
 
 $$

@@ -804,19 +804,19 @@ $$
 
 À partir de cette formulation générale, les groupes de portes de rotation fondamentales autour des axes orthogonaux sont déduits.
 
-### Porte de rotation autour de l'axe X **$R_x(\theta)$** 
+### Porte de rotation autour de l'axe X $R_x(\theta)$ 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Porte de rotation autour de l'axe Y **$R_y(\theta)$** 
+### Porte de rotation autour de l'axe Y $R_y(\theta)$ 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Porte de rotation autour de l'axe Z **$R_z(\theta)$** 
+### Porte de rotation autour de l'axe Z $R_z(\theta)$ 
 
 $$
 R_z(\theta) = e^{-i \frac{\theta}{2} Z} = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix}
@@ -2182,7 +2182,7 @@ Si l'on revient au point de vue géométrique, l'expression de l'opérateur $U_s
 
 ## 9.4 Interprétation géométrique de l'amplification d'amplitude (rotation pure par double réflexion)
 
-L' **opérateur de Grover** $G$ **, unité de répétition d'une itération de Grover, est défini comme l'application consécutive de l'oracle $U_w$ et de l'opérateur de diffusion $U_s$, c'est-à-dire par leur produit :
+L' **opérateur de Grover** $G$, unité de répétition d'une itération de Grover, est défini comme l'application consécutive de l'oracle $U_w$ et de l'opérateur de diffusion $U_s$, c'est-à-dire par leur produit :
 
 $$
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)

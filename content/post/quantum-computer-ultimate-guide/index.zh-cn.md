@@ -804,21 +804,21 @@ $$
 
 从这一一般性的公式中，可以推导出绕正交坐标轴的基本旋转门群。
 
-### 绕X轴的旋转门 **$R_x(\theta)$** 
+### 绕X轴的旋转门 $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### 绕Y轴的旋转门 **$R_y(\theta)$** 
+### 绕Y轴的旋转门 $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### 绕Z轴的旋转门 **$R_z(\theta)$** 
+### 绕Z轴的旋转门 $R_z(\theta)$ 
 
 
 $$

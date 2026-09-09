@@ -804,21 +804,21 @@ $$
 
 この一般的な定式化から、直交座標軸周りの基本回転ゲート群が演繹されます。
 
-### X軸周りの回転ゲート **$R_x(\theta)$** 
+### X軸周りの回転ゲート $R_x(\theta)$ 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Y軸周りの回転ゲート **$R_y(\theta)$** 
+### Y軸周りの回転ゲート $R_y(\theta)$ 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Z軸周りの回転ゲート **$R_z(\theta)$** 
+### Z軸周りの回転ゲート $R_z(\theta)$ 
 
 
 $$
