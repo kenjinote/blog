@@ -9,7 +9,6 @@ mermaid: true
 image: "cover.webp"
 ---
 
-
 # 第1章: 量子電腦的黎明與極限
 
 ## 1.1 古典計算的物理極限與摩爾定律的終結
@@ -19,7 +18,9 @@ image: "cover.webp"
 當電晶體的閘極絕緣層厚度或通道長度縮小至數奈米尺度，亦即僅相當於數個至數十個原子的厚度時，電子便會藉由波函數的滲漏，以一定機率穿透在古典力學上原本無法跨越的能量障壁。根據 WKB 近似，質量為 $m$ 、能量為 $E < V_0$ 的電子，入射至位能障壁為 $V_0$ 、寬度為 $a$ 的區域時，其穿透機率 $T$ 可由下式給出：
 
 $$
+
 T \approx \exp \left( - \frac{2}{\hbar} \int_{0}^{a} \sqrt{2m(V_0 - E)} \, dx \right)
+
 $$
 
 在此， $\hbar$ 為約化普朗克常數。隨著微縮化使得障壁寬度 $a$ 減小，穿透機率 $T$ 將呈現指數級增加，導致即使在關閉（off）狀態下也會有電流通過的「漏電流（leakage current）」達到不可忽視的規模。這不僅會造成耗電量劇增與發熱問題，更意味著電晶體作為古典決定論開關元件的功能走向崩潰。
@@ -27,7 +28,9 @@ $$
 此外，資訊處理的熱力學極限同樣不容忽視。1961 年，羅夫·朗道爾（Rolf Landauer）指出，在抹除資訊（執行不可逆邏輯運算）的過程中，必然會產生熱量（朗道爾原理，Landauer's Principle）。抹除 1 位元資訊時釋放到環境中的最小熱量 $\Delta Q$ 可表示為：
 
 $$
+
 \Delta Q \ge k_B T \ln 2
+
 $$
 
 在此， $k_B$ 為波茲曼常數， $T$ 為絕對溫度。只要古典電腦仍使用傳統邏輯閘（例如 AND 閘或 OR 閘等不可逆邏輯閘），就無法規避這個熱力學下限。隨著微縮化持續進行，單一元件所處理的能量逐漸逼近此極限，古典電腦的演進終將受限於根本的物理定律而面臨瓶頸。
@@ -41,13 +44,17 @@ $$
 這番話的背後，存在著一個物理事實：描述量子系統狀態的「希爾伯特空間（Hilbert Space）」的維度，會隨著粒子數量呈指數級爆炸。讓我們考慮一個由 $N$ 個自旋 $1/2$ 粒子（即具有兩個量子態的系統）所組成的系統。單一粒子的狀態由二維複數向量空間 $\mathbb{C}^2$ 所描述。因此，由 $N$ 個粒子組成的複合系統之狀態空間 $\mathcal{H}$ ，是由各子系統狀態空間的張量積（Tensor Product）構成：
 
 $$
+
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
+
 $$
 
 此系統的純態（Pure State） $|\Psi\rangle$ 可表示為 $2^N$ 個基底向量的線性組合（疊加態）。在此，若採用狄拉克符號（Bra-ket notation），任何量子態皆可展開如下：
 
 $$
+
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
+
 $$
 
 在此， $|x\rangle$ 為計算基底（Computational Basis），而 $c_x \in \mathbb{C}$ 則是稱為機率振幅（Probability Amplitude）的複數。狀態向量必須滿足正規化條件 $\sum_{x=0}^{2^N-1} |c_x|^2 = 1$ 。
@@ -63,19 +70,25 @@ $$
 量子計算的基本單位是「量子位元（Qubit）」。傳統的古典位元只能處於確定為 $0$ 或 $1$ 的狀態，而量子位元則可以處於 $|0\rangle$ 與 $|1\rangle$ 的任意線性疊加態：
 
 $$
+
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle \quad (\alpha, \ beta \in \mathbb{C}, \ |\alpha|^2 + |\beta|^2 = 1)
+
 $$
 
 對該量子位元執行的運算，是由線性且保持範數（norm-preserving）的運算——亦即么正矩陣（滿足 $U^\dagger U = I$ 的矩陣，其中 $U^\dagger$ 為共軛轉置矩陣， $I$ 為單位矩陣）所表示。例如，作用於單量子位元上的代表性邏輯閘——阿達馬閘（Hadamard Gate） $H$ 定義如下：
 
 $$
+
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
+
 $$
 
 將阿達馬運算作用於基底狀態 $|0\rangle$ 上，可得：
 
 $$
+
 H |0\rangle = \frac{1}{\sqrt{2}} \left( |0\rangle + |1\rangle \right)
+
 $$
 
 藉此，系統將轉換為以均等機率觀測到 $|0\rangle$ 與 $|1\rangle$ 的完全疊加態。德意志的功績在於將量子力學的這項基本原理昇華為計算模型，並以嚴格的數學證明了通用量子電腦（Universal Quantum Computer）在原理上具備可行性。
@@ -87,13 +100,17 @@ $$
 誠然，對 $N$ 個量子位元的系統平行套用阿達馬閘，確實僅需單次操作就能產生包含所有 $2^N$ 種狀態的疊加態：
 
 $$
+
 H^{\otimes N} |0\rangle^{\otimes N} = \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle
+
 $$
 
 接著，若套用評估某函數 $f(x)$ 的么正算符 $U_f$ ，狀態將產生如下變化：
 
 $$
+
 U_f \left( \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle |0\rangle \right) = \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle |f(x)\rangle
+
 $$
 
 表面上看來，單次操作確實彷彿同時「計算」了所有 $2^N$ 個 $x$ 所對應的 $f(x)$ 數值。然而，量子力學的鐵律——「觀測公理（波恩定則，Born Rule）」隨之而來。當我們對這個疊加態進行測量（觀測）時，最終所能獲得的結果僅僅只有一個，狀態會以機率 $P(x) = 1/2^N$ 隨機塌縮（Wavefunction Collapse）到某個隨機的 $|x\rangle |f(x)\rangle$ 。換言之，即便所有答案都被同時計算出來，測量時能夠取出的卻僅僅是「隨機的一個」，這與隨機擲骰子來挑選解答毫無二致。
@@ -105,7 +122,9 @@ $$
 作為一個簡單的範例，讓我們觀察相位翻轉與阿達馬變換所產生的干涉效應。若對狀態 $\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ 再次套用阿達馬閘，會發生什麼事？
 
 $$
+
 H \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) = \frac{1}{2} \big( (|0\rangle + |1\rangle) - (|0\rangle - |1\rangle) \big) = \frac{1}{2} (2|1\rangle) = |1\rangle
+
 $$
 
 在此處，通往 $|0\rangle$ 狀態的機率振幅變為 $1/2 - 1/2 = 0$ ，被完全抵消（破壞性干涉／相消干涉）。另一方面，通往 $|1\rangle$ 狀態的振幅則為 $1/2 + 1/2 = 1$ ，獲得了放大（建設性干涉／相長干涉）。
@@ -163,13 +182,17 @@ graph TD
 讓我們用更形式化的向量空間語言來表達。古典位元的狀態可以使用二維實數向量空間 $\mathbb{R}^2$ 中的標準基底來表示。我們將狀態 $0$ 與狀態 $1$ 分別定義為以下的行向量：
 
 $$
+
 \mathbf{v}_0 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad \mathbf{v}_1 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+
 $$
 
 在決定性（Deterministic）的古典系統中，位元的狀態必定會固定為 $\mathbf{v}_0$ 或 $\mathbf{v}_1$ 的其中一個。然而，當存在熱雜訊等噪聲，或是我們的知識具有不確定性時，就有必要將狀態描述為古典機率性（Probabilistic）位元。在這種情況下，位元的狀態將表示為機率分佈，且狀態向量 $\mathbf{p}$ 可寫成基底向量的凸組合（Convex combination）：
 
 $$
+
 \mathbf{p} = p_0 \mathbf{v}_0 + p_1 \mathbf{v}_1 = \begin{pmatrix} p_0 \\ p_1 \end{pmatrix}
+
 $$
 
 這裡， $p_0, p_1$ 分別代表狀態為 $0$ 與 $1$ 的機率實數，並且根據柯爾莫哥洛夫的機率公理，必須滿足以下條件：
@@ -180,7 +203,9 @@ $$
 在古典位元的世界中，由多個位元組合而成的複合系統，是由各個機率向量的張量積（克羅內克積）來描述的。例如，兩個古典位元的聯合機率如下所示：
 
 $$
+
 \mathbf{p}_{AB} = \mathbf{p}_A \otimes \mathbf{p}_B = \begin{pmatrix} p_{A0} \\ p_{A1} \end{pmatrix} \otimes \begin{pmatrix} p_{B0} \\ p_{B1} \end{pmatrix} = \begin{pmatrix} p_{A0}p_{B0} \\ p_{A0}p_{B1} \\ p_{A1}p_{B0} \\ p_{A1}p_{B1} \end{pmatrix}
+
 $$
 
 古典資訊理論的框架非常強大，構成了現代數位社會的基礎，但由於狀態終究是由實數機率的相加所構成，因此在原理上不可能表現出如波的干涉般「機率的相互抵消」。這正是古典物理學的極限，也是飛躍至量子資訊的必要性所在。
@@ -194,25 +219,33 @@ $$
 代表量子態的行向量被稱為 **Ket向量（Ket vector）** ，並標記為 $|\psi\rangle$ 。作為對應於古典位元 $0$ 與 $1$ 的狀態，我們引入稱為計算基底（Computational basis）的單範正交基底。這些也被稱為量子位元的 $Z$ 基底，分別定義為 $|0\rangle$ 與 $|1\rangle$ ：
 
 $$
+
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+
 $$
 
 另一方面，根據里斯表示定理（Riesz representation theorem），希爾伯特空間中的任意 Ket 向量，都與作為連續線性泛函的對偶空間（Dual space）元素有著唯一對應關係。這被稱為 **Bra向量（Bra vector）** ，並標記為 $\langle\psi|$ 。在矩陣表示中，將 Ket 向量取厄米共軛（即複數共軛轉置，以 $^\dagger$ 表示），即可得到對應的 Bra 向量：
 
 $$
+
 \langle\psi| = (|\psi\rangle)^\dagger = (|\psi\rangle^*)^T
+
 $$
 
 例如，基底的 Bra 向量為以下的列向量：
 
 $$
+
 \langle 0| = \begin{pmatrix} 1 & 0 \end{pmatrix}, \quad \langle 1| = \begin{pmatrix} 0 & 1 \end{pmatrix}
+
 $$
 
 狄拉克符號的真正價值在於，它讓內積的計算在視覺上變得極為明瞭。Bra $\langle\phi|$ 與 Ket $|\psi\rangle$ 的內積寫為 $\langle\phi|\psi\rangle$ （這源自狄拉克的文字遊戲，即 Bra 與 Ket 結合形成 Bracket）。由於計算基底 $\{|0\rangle, |1\rangle\}$ 構成單範正交系（Orthonormal system），可以使用克羅內克 δ 函數 $\delta_{ij}$ 表示如下：
 
 $$
+
 \langle i | j \rangle = \delta_{ij} \quad (i, j \in \{0, 1\})
+
 $$
 
 具體而言，與自身的內積為 $1$ （ $\langle 0|0\rangle = 1$ , $\langle 1|1\rangle = 1$ ），而不同基底間的內積為 $0$ （ $\langle 0|1\rangle = 0$ , $\langle 1|0\rangle = 0$ ）。
@@ -220,13 +253,17 @@ $$
 此外，Bra 與 Ket 的張量積（相當於外積）記為 $|\psi\rangle\langle\phi|$ ，這代表了從空間到空間的線性算符（矩陣）。例如，投影至某個狀態空間的投影算符（Projection operator）構成如下：
 
 $$
+
 |0\rangle\langle 0| = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \begin{pmatrix} 1 & 0 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
+
 $$
 
 任意二維複數向量空間的單位算符 $I$ （Identity operator），可以分解表示為基底的完備性關係（Completeness relation），這在量子力學的計算中是極為頻繁使用的強大工具：
 
 $$
+
 I = |0\rangle\langle 0| + |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+
 $$
 
 ## 2.3 量子疊加原理與複數機率幅
@@ -236,7 +273,9 @@ $$
 因此，單一量子位元最一般的純態（Pure state） $|\psi\rangle$ ，可使用計算基底展開如下：
 
 $$
+
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
+
 $$
 
 這裡， $\alpha$ 與 $\beta$ 是被稱為 **複數機率幅（Complex probability amplitude）** 的複數（ $\alpha, \beta \in \mathbb{C}$ ）。與古典機率為非負實數形成對比，量子態擁有「複數」係數，這正是量子電腦擁有超越古典電腦計算能力的根本原因。由於複數具有相位（Phase），且能指向複數平面上的任何方向，因此可以像波一樣互相增強（建設性干涉）或互相抵消（破壞性干涉）。量子演算法的本質，就在於巧妙地操縱這種干涉效應，以放大正確答案的機率幅，並抵消錯誤答案的機率幅。
@@ -244,40 +283,54 @@ $$
 從量子系統中萃取古典資訊的過程稱為「測量（Measurement）」。當考慮投影測量（Projective measurement）時，根據波恩定則（Born rule），以計算基底 $\{|0\rangle, |1\rangle\}$ 測量狀態 $|\psi\rangle$ ，得到結果為 $0$ 的機率 $P(0)$ 與得到 $1$ 的機率 $P(1)$ ，分別由其機率幅絕對值的平方給出：
 
 $$
+
 P(0) = |\langle 0|\psi\rangle|^2 = |\alpha|^2 = \alpha \alpha^*
+
 $$
 $$
+
 P(1) = |\langle 1|\psi\rangle|^2 = |\beta|^2 = \beta \beta^*
+
 $$
 
 為了確保系統必定能被觀測為某種狀態，總機率的總和必須嚴格等於 $1$ 。因此，量子狀態向量 $|\psi\rangle$ 的範數（長度）必須始終為 $1$ 。這就是 **規格化條件（Normalization condition）** ：
 
 $$
+
 \langle\psi|\psi\rangle = (\alpha^* \langle 0| + \beta^* \langle 1|)(\alpha |0\rangle + \beta |1\rangle) = |\alpha|^2 + |\beta|^2 = 1
+
 $$
 
 為了更深入探討這個複數機率幅的幾何意義，讓我們將 $\alpha$ 與 $\beta$ 用極座標表示：
 
 $$
+
 \alpha = r_0 e^{i\phi_0}, \quad \beta = r_1 e^{i\phi_1}
+
 $$
 
 這裡 $r_0, r_1 \ge 0$ 是振幅的大小， $\phi_0, \phi_1 \in [0, 2\pi)$ 分別是它們的相位角。由於規格化條件使得 $r_0^2 + r_1^2 = 1$ ，我們可以使用實數參數 $\theta \in [0, \pi]$ ，令 $r_0 = \cos(\frac{\theta}{2})$ 、 $r_1 = \sin(\frac{\theta}{2})$ 。將其代入原本的狀態向量中：
 
 $$
+
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) e^{i\phi_0} |0\rangle + \sin\left(\frac{\theta}{2}\right) e^{i\phi_1} |1\rangle
+
 $$
 
 讓我們將整體提出一個共同的相位因子 $e^{i\phi_0}$ ：
 
 $$
+
 |\psi\rangle = e^{i\phi_0} \left( \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i(\phi_1 - \phi_0)} \sin\left(\frac{\theta}{2}\right) |1\rangle \right)
+
 $$
 
 在量子力學中，乘在整個狀態向量上的相位因子 $e^{i\phi_0}$ 被稱為「全域相位（Global phase）」。藉由計算任意觀測量（厄米算符） $A$ 的期望值 $\langle A \rangle$ 就可以明白：
 
 $$
+
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
+
 $$
 
 如上所示，由於全域相位相乘後會互相抵消，因此不可能透過任何物理測量來觀測到它。也就是說， $|\psi\rangle$ 與 $e^{i\phi_0}|\psi\rangle$ 在希爾伯特空間上雖然是不同的向量（作為射線則是相同的），但在物理上代表完全相同的狀態。
@@ -285,7 +338,9 @@ $$
 因此，透過忽略全域相位，並僅保留 $|0\rangle$ 與 $|1\rangle$ 之間的相對相位（Relative phase） $\varphi = \phi_1 - \phi_0$ （其中 $\varphi \in [0, 2\pi)$ ）作為參數，任意單一量子位元的純態可唯一且嚴格地表示為以下的 **標準形式** ：
 
 $$
+
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\varphi} \sin\left(\frac{\theta}{2}\right) |1\rangle
+
 $$
 
 ## 2.4 布洛赫球（Bloch Sphere）的幾何視覺化
@@ -316,33 +371,45 @@ graph TD
 這個布洛赫球的座標 $\mathbf{r} = (x, y, z)$ ，可嚴格推導為量子力學中觀測量（Observable）—— **包立矩陣（Pauli matrices）** 的期望值。作為二維系統厄米算符基底的包立矩陣定義如下：
 
 $$
+
 X = \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
 Y = \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
 Z = \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+
 $$
 
 對於任意狀態 $|\psi\rangle$ ，這些包立觀測量的期望值可以透過狄拉克括號計算求得：
 
 $$
+
 x = \langle\psi| X |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \cos\varphi
+
 $$
 $$
+
 y = \langle\psi| Y |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \sin\varphi
+
 $$
 $$
+
 z = \langle\psi| Z |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \cos^2\left(\frac{\theta}{2}\right) - \sin^2\left(\frac{\theta}{2}\right) = \cos\theta
+
 $$
 
 藉此，布洛赫向量 $\mathbf{r} = (x, y, z)$ 完美地表示為了三維空間的單位向量 $\mathbf{r} = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$ 。此外，對應於任意純態的密度矩陣（Density matrix） $\rho = |\psi\rangle\langle\psi|$ ，可以使用包立向量 $\boldsymbol{\sigma} = (X, Y, Z)$ 與單位矩陣 $I$ 極為優雅地描述：
 
 $$
+
 \rho = \frac{1}{2} \left( I + \mathbf{r} \cdot \boldsymbol{\sigma} \right) = \frac{1}{2} \left( I + xX + yY + zZ \right)
+
 $$
 
 將矩陣的元素明確展開並確認後，結果如下：
 
 $$
+
 \rho = \frac{1}{2} \begin{pmatrix} 1 + z & x - iy \\ x + iy & 1 - z \end{pmatrix} = \begin{pmatrix} \cos^2(\frac{\theta}{2}) & e^{-i\varphi}\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) \\ e^{i\varphi}\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) & \sin^2(\frac{\theta}{2}) \end{pmatrix}
+
 $$
 
 這完全吻合根據張量積定義計算的外積 $|\psi\rangle\langle\psi|$ 的結果。這裡特別值得一提的是，在純態中，布洛赫向量的範數為 $|\mathbf{r}| = 1$ ，且滿足密度矩陣的跡數 $\text{Tr}(\rho^2) = 1$ ；但是，在因與環境交互作用或控制不完美而導致量子資訊流失（退相干，Decoherence）的混合態（Mixed state）中，由於它是純態的統計系綜（Statistical ensemble），因此會有 $|\mathbf{r}| < 1$ 。其結果是，混合態並非表示為布洛赫球表面的點，而是「內部」的點，而完全失去資訊的最大混合態（Maximally mixed state） $\rho = I/2$ 則會位於布洛赫球的中心點 $\mathbf{r} = (0,0,0)$ 。
@@ -356,25 +423,33 @@ $$
 為在數學上嚴謹地描述測量，我們使用投影算符的集合 $\{ P_m \}$ 。 $Z$ 測量情況下的投影算符如下：
 
 $$
+
 P_0 = |0\rangle\langle 0|, \quad P_1 = |1\rangle\langle 1|
+
 $$
 
 這些算符滿足完備性關係 $P_0 + P_1 = I$ 以及正交性 $P_i P_j = \delta_{ij} P_i$ 。根據波恩定則，得到測量結果 $m \in \{0, 1\}$ 的機率 $P(m)$ 為：
 
 $$
+
 P(m) = \langle\psi| P_m^\dagger P_m |\psi\rangle = \langle\psi| P_m |\psi\rangle
+
 $$
 
 此計算結果完全吻合先前的 $|\alpha|^2$ 與 $|\beta|^2$ 。而最重要的一點是，在獲得測量結果 $m$ 後的瞬間，新的量子狀態 $|\psi'\rangle$ 將會是原本狀態作用了投影算符後，再以新的範數重新規格化的結果：
 
 $$
+
 |\psi'\rangle = \frac{P_m |\psi\rangle}{\sqrt{P(m)}}
+
 $$
 
 如果結果為 $0$ ，
 
 $$
+
 |\psi'\rangle = \frac{|0\rangle\langle 0| (\alpha|0\rangle + \beta|1\rangle)}{|\alpha|} = \frac{\alpha}{|\alpha|} |0\rangle = e^{i\phi_0} |0\rangle \equiv |0\rangle
+
 $$
 
 如此一來，狀態將完全塌縮至 $|0\rangle$ （忽略全域相位）。這就是被稱為波包塌縮（Wavefunction collapse）現象的數學描述。一旦進行了測量並使狀態發生塌縮，原本疊加態中包含的相對相位 $\varphi$ 與振幅的資訊（ $\alpha, \beta$ ）便會永遠遺失。因此，想要透過對單一副本進行一次測量來讀取量子態的完整資訊，在原理上是不可能的（這也與「不可複製定理（No-cloning theorem）」有著深刻的關聯）。
@@ -384,13 +459,17 @@ $$
 在深入理解了單一量子位元的性質後，我們也在此觸及下一章起將正式探討的「多量子位元系統」的數學基礎。古典機率分佈是透過卡氏積（Cartesian product）來擴展狀態空間，相對地，量子力學中複合系統的希爾伯特空間 $\mathcal{H}_{AB}$ ，是由各子系統的希爾伯特空間 $\mathcal{H}_A$ 與 $\mathcal{H}_B$ 的 **張量積（Tensor product）** 所構成：
 
 $$
+
 \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
+
 $$
 
 兩個獨立量子位元狀態的張量積可展開如下，並形成四維的複數向量空間：
 
 $$
+
 |\Psi\rangle_{AB} = (\alpha_0|0\rangle + \alpha_1|1\rangle) \otimes (\beta_0|0\rangle + \beta_1|1\rangle) = \alpha_0\beta_0|00\rangle + \alpha_0\beta_1|01\rangle + \alpha_1\beta_0|10\rangle + \alpha_1\beta_1|11\rangle
+
 $$
 
 在此，無法被因式分解為狀態張量積的狀態（例如貝爾態（Bell state） $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$ ）的存在，便是量子糾纏（Entanglement）的源泉。透過張量積帶來的維度指數級爆炸（ $N$ 個量子位元會產生 $2^N$ 維），正是量子電腦能夠發揮壓倒性平行計算能力的基礎。
@@ -419,7 +498,9 @@ $$
 根據保羅·狄拉克（Paul Dirac）所引入的狄拉克符號（Bra-ket notation，或稱括號記號），狀態向量被視為行向量（Column vector），並記為 Ket（右矢） ** $| \psi \rangle$ ** 。屬於對偶空間 $\mathcal{H}^*$ 的列向量（Row vector）則記為 Bra（左矢） ** $\langle \psi |$ ** ，它們彼此互為厄米共軛（Hermitian conjugate，即複數共軛轉置）的關係。也就是說：
 
 $$
+
 \langle \psi | = ( | \psi \rangle )^\dagger
+
 $$
 
 在希爾伯特空間中，任意兩個狀態 ** $| \phi \rangle$ ** 與 ** $| \psi \rangle$ ** 的內積，可計算為 Bra 與 Ket 的乘積 ** $\langle \phi | \psi \rangle$ ** ，並給出一個複數值。此內積滿足以下性質：
@@ -431,7 +512,9 @@ $$
 為了使機率詮釋成立，物理狀態必須始終滿足歸一化條件（Normalization condition）。換言之，狀態向量 ** $| \psi \rangle$ ** 的範數為 1：
 
 $$
+
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
+
 $$
 
 此外，由於柯西-舒瓦茲不等式（Cauchy-Schwarz inequality） $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ 成立，因此歸一化狀態之間內積的絕對值將始終落在 0 到 1 之間。這就構成了日後被詮釋為「機率」的數學基礎。
@@ -443,19 +526,25 @@ $$
 在希爾伯特空間 $\mathcal{H}$ 中，存在著單範正交基底（Orthonormal basis，或稱標準正交基底） $\{ | e_i \rangle \}$ 。這些基底彼此正交，且已經過歸一化：
 
 $$
+
 \langle e_i | e_j \rangle = \delta_{ij}
+
 $$
 
 （ $\delta_{ij}$ 為克羅內克 δ 函數，Kronecker delta）。此外，作為完備性關係（Completeness relation）或分解恆等式，恆等算符 $I$ 可以展開如下：
 
 $$
+
 I = \sum_i | e_i \rangle \langle e_i |
+
 $$
 
 對於任意量子態 ** $| \psi \rangle$ ** ，透過作用此恆等算符，可以唯一地展開為基底的線性組合：
 
 $$
+
 | \psi \rangle = I | \psi \rangle = \left( \sum_i | e_i \rangle \langle e_i | \right) | \psi \rangle = \sum_i \langle e_i | \psi \rangle | e_i \rangle = \sum_i c_i | e_i \rangle
+
 $$
 
 這裡的展開係數 $c_i = \langle e_i | \psi \rangle$ 被稱為複數機率幅（Complex probability amplitude），在後文所述的波恩定則中扮演著決定性的角色。由歸一化條件 $\langle \psi | \psi \rangle = 1$ 可導出 $\sum_i |c_i|^2 = 1$ 。
@@ -478,7 +567,9 @@ $$
 因此，對於任意的可觀測量 $A$ ，我們可以使用其本徵值 $a_i$ 與本徵向量 ** $| a_i \rangle$ ** ，將其表示為投影算符（Projection operator） $P_i = | a_i \rangle \langle a_i |$ 的線性組合，進行譜分解（Spectral decomposition）：
 
 $$
+
 A = \sum_i a_i | a_i \rangle \langle a_i |
+
 $$
 
 透過這個公式化，「測量物理量」這個行為便能被理解為：向希爾伯特空間特定基底（本徵向量）進行投影的幾何學操作。例如，量子位元的 $\sigma_z$ 觀測，就可以完全描述為投影到對應於本徵值 $+1$ 的狀態 ** $| 0 \rangle$ ** ，以及對應於本徵值 $-1$ 的狀態 ** $| 1 \rangle$ ** 這組正交基底上的操作。
@@ -493,7 +584,9 @@ $$
 描述時間演化的基礎方程式——含時薛丁格方程式（Time-dependent Schrödinger equation）表示如下：
 
 $$
+
 i\hbar \frac{d}{dt} | \psi(t) \rangle = H | \psi(t) \rangle
+
 $$
 
 這裡 $i$ 是虛數單位， $\hbar$ 是約化普朗克常數（Reduced Planck constant）， $H$ 是對應於系統總能量的可觀測量，即哈密頓算符（Hamiltonian operator，或哈密頓量）。
@@ -501,7 +594,9 @@ $$
 若考慮哈密頓算符 $H$ 不依賴時間（時間不變）的系統，這個微分方程式可以形式上進行積分，其解給出如下：
 
 $$
+
 | \psi(t) \rangle = \exp\left( -\frac{i}{\hbar} H (t - t_0) \right) | \psi(t_0) \rangle
+
 $$
 
 這個以指數函數表示的算符 $U(t, t_0) = \exp\left( -i H (t - t_0) / \hbar \right)$ 即為時間演化算符。由於哈密頓算符 $H$ 是厄米的（ $H = H^\dagger$ ），根據史東定理（Stone's theorem）， $U$ 必然是一個么正算符（Unitary operator）。所謂么正算符，是指其厄米共軛等於其反矩陣（ $U^\dagger U = U U^\dagger = I$ ）的算符。
@@ -516,19 +611,25 @@ $$
 對於處於狀態 ** $| \psi \rangle$ ** 的系統，當對具有譜分解 $A = \sum_i a_i P_i$ 的可觀測量 $A$ 進行觀測時，所獲得的測量值必定是 $A$ 的本徵值 $a_i$ 之一。獲得特定本徵值 $a_k$ 的機率 $p(a_k)$ ，根據波恩定則由下式給出：
 
 $$
+
 p(a_k) = \langle \psi | P_k | \psi \rangle = \| P_k | \psi \rangle \|^2
+
 $$
 
 若本徵值 $a_k$ 是非簡併的（對應的本徵向量 ** $| a_k \rangle$ ** 僅有一個），投影算符即為 $P_k = | a_k \rangle \langle a_k |$ ，此時機率可計算為狀態對本徵向量之內積絕對值的平方：
 
 $$
+
 p(a_k) = \langle \psi | a_k \rangle \langle a_k | \psi \rangle = | \langle a_k | \psi \rangle |^2
+
 $$
 
 這正是將狀態向量 ** $| \psi \rangle$ ** 在基底 $\{ | a_i \rangle \}$ 上展開時，係數 $c_k = \langle a_k | \psi \rangle$ 的絕對值平方 $|c_k|^2$ 。複數機率幅 $c_k$ 本身無法被直接觀測，但其絕對值的平方卻作為現實世界中的觀測機率浮現。提出這項定則的馬克斯·波恩（Max Born）的洞見，是將物理學從決定論轉化為機率論的里程碑。可觀測量 $A$ 的期望值 $\langle A \rangle$ ，可計算為所有本徵值與其出現機率之乘積的總和，最終以狀態向量內積的形式極為優美地表現出來：
 
 $$
+
 \langle A \rangle = \sum_i a_i p(a_i) = \sum_i a_i \langle \psi | P_i | \psi \rangle = \langle \psi | \left( \sum_i a_i P_i \right) | \psi \rangle = \langle \psi | A | \psi \rangle
+
 $$
 
 ## 3.6 觀測所致的波包塌縮（狀態還原）與退相干
@@ -539,7 +640,9 @@ $$
 透過觀測獲得本徵值 $a_k$ 直後系統的狀態 ** $| \psi' \rangle$ ** ，將會瞬間變化（塌縮）為：將對應的投影算符 $P_k$ 作用於原狀態向量並重新歸一化後的結果。
 
 $$
+
 | \psi' \rangle = \frac{P_k | \psi \rangle}{\sqrt{p(a_k)}}
+
 $$
 
 若觀測儀器是理想的，且系統的狀態塌縮至非簡併的本徵值 $a_k$ ，則觀測後的狀態將嚴格等於本徵向量 ** $| a_k \rangle$ ** 本身。也就是說，若緊接著重複進行完全相同的觀測，將會以機率 1（100%）再次獲得 $a_k$ 。這被稱為「第一種測量（Measurement of the first kind）」。
@@ -553,7 +656,9 @@ $$
 另一方面，在觀測過程中若我們不知道系統塌縮到了哪一個狀態（或遺失了資訊），系統就必須被描述為古典的機率性混合態（混態，Mixed state）。例如，以機率 $p(a_k)$ 塌縮至狀態 ** $| a_k \rangle$ ** 的系統系綜（Ensemble），其密度算符如下所示：
 
 $$
+
 \rho' = \sum_k p(a_k) | a_k \rangle \langle a_k |
+
 $$
 
 此時，原本純態中 $\rho = | \psi \rangle \langle \psi |$ 的非對角項（干涉項），會因觀測這一行為而完全消失。這種干涉性的喪失，正是「退相干（Decoherence）」的核心。
@@ -563,7 +668,9 @@ $$
 觀測儀器本身也是由大量粒子組成的量子系統的一部分，當量子系統與巨大的環境（觀測儀器或熱庫等）產生交互作用時，就會產生「量子糾纏（量子纏結，Quantum entanglement）」。若將環境的自由度跡除（部分跡，Partial trace），計算出僅針對目標系統的約化密度矩陣（Reduced density matrix），原本處於純態的系統狀態向量將會迅速過渡為混態，系統各分量之間的相位干涉性隨之喪失：
 
 $$
+
 \rho_{S} = \mathrm{Tr}_{E} [ | \Psi_{SE} \rangle \langle \Psi_{SE} | ]
+
 $$
 
 如此一來，在巨觀尺度上疊加態便會消失，其行為表現得就像古典的機率性混合。波包塌縮絕非物理定律的崩潰，而是可以被視為由於與環境進行不可逆的交互作用所導致的資訊耗散。克服這種退相干，正是實現容錯量子電腦（Fault-tolerant quantum computer）的過程中人類所面臨的最大挑戰。
@@ -603,19 +710,25 @@ graph TD
 量子系統的時間演化，是使用特徵化系統的厄米算符——哈密頓量 ** $H$ ** （ ** $H^\dagger = H$ ** ），由以下的薛丁格方程式所支配：
 
 $$
+
 i\hbar \frac{d}{dt} |\psi(t)\rangle = H |\psi(t)\rangle
+
 $$
 
 在假設哈密頓量 ** $H$ ** 不隨時間改變的系統下，任意時刻 ** $t$ ** 的量子態 ** $|\psi(t)\rangle$ ** ，從初始狀態 ** $|\psi(0)\rangle$ ** 形式上可做如下積分：
 
 $$
+
 |\psi(t)\rangle = e^{-\frac{i}{\hbar}Ht} |\psi(0)\rangle
+
 $$
 
 我們將此處出現的時間演化算符定義為 ** $U(t) = e^{-\frac{i}{\hbar}Ht}$ ** 。由於指數函數肩膀上的 ** $H$ ** 是厄米的，計算此算符 ** $U(t)$ ** 的伴隨算符（厄米共軛） ** $U(t)^\dagger$ ** 時，會導出以下極為重要的性質：
 
 $$
+
 U(t)^\dagger U(t) = \left( e^{-\frac{i}{\hbar}Ht} \right)^\dagger e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}H^\dagger t} e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}Ht} e^{-\frac{i}{\hbar}Ht} = I
+
 $$
 
 同樣地， ** $U(t) U(t)^\dagger = I$ ** 也會成立。像這樣，其伴隨矩陣與自身的反矩陣一致的矩陣（ ** $U^\dagger = U^{-1}$ ** ），我們稱之為「么正矩陣（Unitary Matrix）」。單一量子位元閘無非就是透過物理控制（例如照射特定頻率與持續時間的微波脈衝等）來刻意設計的哈密頓量所實現的 ** $2 \times 2$ ** 么正矩陣。
@@ -623,7 +736,9 @@ $$
 么正矩陣在量子力學中絕對不可或缺的理由，是因為它是唯一能從數學上擔保「機率守恆（範數守恆）」的線性變換。讓我們計算一下對任意量子態 ** $|\psi\rangle$ ** 和 ** $|\phi\rangle$ ** 施加么正變換 ** $U$ ** 之後的狀態內積：
 
 $$
+
 \langle \phi' | \psi' \rangle = ( \langle \phi | U^\dagger ) ( U |\psi\rangle ) = \langle \phi | U^\dagger U | \psi \rangle = \langle \phi | I | \psi \rangle = \langle \phi | \psi \rangle
+
 $$
 
 內積守恆這件事，意味著狀態向量本身的範數（長度的平方）也就是 ** $\langle \psi | \psi \rangle$ ** 也同樣守恆。根據量子力學的波恩定則（Born rule），狀態向量振幅的絕對值平方總和必須是全機率「1」，因此為了不讓量子閘操作破壞這個機率詮釋，操作必須是么正的，這就是絕對的前提條件。
@@ -631,7 +746,9 @@ $$
 此外，根據譜定理（Spectral theorem），任意的么正矩陣 ** $U$ ** ，可以使用具有實數特徵值 ** $\lambda_k$ ** 的厄米矩陣 ** $K$ ** 來表示為 ** $U = e^{iK}$ ** 。么正矩陣的特徵值總是呈現絕對值為 1 的複數（ ** $e^{i\theta}$ ** ）形式，且其特徵向量構成相互正交的完備系。
 
 $$
+
 U = \sum_{j=1}^{d} e^{i \theta_j} |\phi_j\rangle \langle \phi_j|
+
 $$
 
 這顯示了量子閘的作用可以完全分解為「對特定的正交基底 ** $|\phi_j\rangle$ ** ，僅賦予純粹的相位旋轉 ** $e^{i\theta_j}$ ** 」的操作。
@@ -645,16 +762,22 @@ $$
 包立 X 閘是古典邏輯電路中 NOT 閘的量子力學擴展。使用狄拉克括號表示法的外積（投影算符）表示中，其定義如下：
 
 $$
+
 X = \sigma_x = |0\rangle\langle 1| + |1\rangle\langle 0| = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
+
 $$
 
 透過嚴格的矩陣計算來確認對計算基底（ ** $|0\rangle, |1\rangle$ ** ）的作用：
 
 $$
+
 X |0\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} = |1\rangle
+
 $$
 $$
+
 X |1\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} = |0\rangle
+
 $$
 
 如此這般，它將振幅完全反轉。幾何上，它對應於在布洛赫球中以 X 軸為旋轉軸進行 ** $\pi$ ** （180度）的旋轉操作。北極（ ** $|0\rangle$ ** ）被映射到南極（ ** $|1\rangle$ ** ），而南極則被映射到北極。
@@ -664,13 +787,17 @@ $$
 包立 Y 閘會同時引起位元反轉與相位反轉，並進一步賦予虛數單位 ** $i$ ** 的相位因子。其外積表示與矩陣表示如下：
 
 $$
+
 Y = \sigma_y = -i|0\rangle\langle 1| + i|1\rangle\langle 0| = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
+
 $$
 
 對計算基底的作用為：
 
 $$
+
 Y |0\rangle = i|1\rangle, \quad Y |1\rangle = -i|0\rangle
+
 $$
 
 在布洛赫球上，它表示繞 Y 軸的 ** $\pi$ ** 旋轉。乘上虛數單位 ** $i$ ** （即 ** $e^{i\pi/2}$ ** ）意味著不只是單純的反轉，還包括狀態在相位空間中往正交方向的平移。
@@ -680,13 +807,17 @@ $$
 包立 Z 閘是古典邏輯中不存在的、量子特有的純粹「相位操作」。它完全不改變振幅的大小（測量機率），僅對 ** $|1\rangle$ ** 的成分給予 ** $-1$ ** （即 ** $e^{i\pi}$ ** ）的相位平移。
 
 $$
+
 Z = \sigma_z = |0\rangle\langle 0| - |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+
 $$
 
 其作用顯然為：
 
 $$
+
 Z |0\rangle = |0\rangle, \quad Z |1\rangle = -|1\rangle
+
 $$
 
 這對應於繞 Z 軸的 ** $\pi$ ** 旋轉。由於計算基底 ** $|0\rangle, |1\rangle$ ** 是 Z 矩陣的特徵向量（特徵值分別為 +1, -1），因此套用 Z 閘也不會使狀態發生躍遷。然而，若是作用於疊加態（例如： ** $\alpha|0\rangle + \beta|1\rangle$ ** ），相對相位會劇烈反轉為 ** $\alpha|0\rangle - \beta|1\rangle$ ** ，進而決定性地改變後續階段的干涉結果。
@@ -697,13 +828,21 @@ $$
 
 1. **自伴隨性（厄米性）與么正性的兩立**： ** $X = X^\dagger$ ** 、 ** $Y = Y^\dagger$ ** 、 ** $Z = Z^\dagger$ ** ，且同時滿足 ** $X^\dagger X = I$ ** （即 ** $X = X^{-1}$ ** ）。它既是物理量（可觀測量），同時本身又是么正的時間演化生成元（閘），這是一種罕見的性質。連續套用兩次就會回到恆等變換（對合： ** $X^2 = Y^2 = Z^2 = I$ ** ）。
 2. **完全反交換關係**：不同的包立矩陣之間交換相乘順序時，符號會反轉。
+
    $$
+
    \{X, Y\} = XY + YX = 0, \quad \{Y, Z\} = 0, \quad \{Z, X\} = 0
+
    $$
+
 3. **交換關係與李代數**：使用交換子 ** $[A, B] = AB - BA$ ** 時，它們明確地展示了作為 ** $SU(2)$ ** 李代數生成元的結構（使用完全反對稱張量 ** $\epsilon_{ijk}$ ** ）。
+
    $$
+
    [\sigma_j, \sigma_k] = 2i \sum_{l \in \{x,y,z\}} \epsilon_{jkl} \sigma_l
+
    $$
+
    具體而言，即為 ** $XY = iZ$ ** 、 ** $YZ = iX$ ** 、 ** $ZX = iY$ ** 。這個代數結構為定義後述任意旋轉閘提供了數學基礎。
 
 ## 4.3 哈達瑪閘（H 閘）：量子疊加的創造
@@ -711,16 +850,22 @@ $$
 在量子演算法（例如 Deutsch-Jozsa 演算法或 Shor 演算法）中，幾乎可以說在初始化之後必定會套用的就是哈達瑪（Hadamard）閘。它扮演著從決定性狀態創造出所有狀態以等機率出現的「最大疊加態」的核心角色。
 
 $$
+
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \left( |0\rangle\langle 0| + |0\rangle\langle 1| + |1\rangle\langle 0| - |1\rangle\langle 1| \right)
+
 $$
 
 將哈達瑪矩陣作用於計算基底：
 
 $$
+
 H |0\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{|0\rangle + |1\rangle}{\sqrt{2}} \equiv |+\rangle
+
 $$
 $$
+
 H |1\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{|0\rangle - |1\rangle}{\sqrt{2}} \equiv |-\rangle
+
 $$
 
 所生成的 ** $|+\rangle$ ** 與 ** $|-\rangle$ ** 被稱為 X 基底（或對角基底），且為包立 X 矩陣的特徵態。由於哈達瑪矩陣本身也是實對稱且正交矩陣（實數空間中的么正矩陣），因此滿足 ** $H = H^\dagger = H^{-1}$ ** 以及 ** $H^2 = I$ ** 。
@@ -728,10 +873,14 @@ $$
 在代數上，H 閘是轉換 X 基底與 Z 基底的么正變換。這作為矩陣的相似變換，可以被極為優美地描述如下：
 
 $$
+
 H X H^\dagger = H X H = Z
+
 $$
 $$
+
 H Z H^\dagger = H Z H = X
+
 $$
 
 由於這個性質，透過用 H 閘夾住「由 Z 閘造成的相位反轉」，就可以合成出「由 X 閘造成的位元反轉」。在幾何上，H 閘相當於以布洛赫球上的單位向量 ** $\hat{n} = \frac{1}{\sqrt{2}}(\hat{x} + \hat{z})$ ** 為軸進行 ** $\pi$ ** 旋轉。
@@ -741,7 +890,9 @@ $$
 將包立 Z 閘更為一般化，圍繞布洛赫球 Z 軸的任意旋轉操作群，被稱為相位平移閘 ** $P(\phi)$ ** （或 ** $R_\phi$ ** ）。
 
 $$
+
 P(\phi) = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi} \end{pmatrix} = |0\rangle\langle 0| + e^{i\phi} |1\rangle\langle 1|
+
 $$
 
 此閘群對於疊加態 ** $\alpha|0\rangle + \beta|1\rangle$ ** ，會以 ** $\alpha|0\rangle + \beta e^{i\phi}|1\rangle$ ** 的形式，僅操作 ** $|1\rangle$ ** 成分的相對相位。特別是以下兩個極為重要：
@@ -751,14 +902,18 @@ $$
 當 ** $\phi = \pi/2$ ** 的情況稱為 S 閘。
 
 $$
+
 S = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
+
 $$
 
 從矩陣的性質可以明顯看出，套用兩次就會變成 Z 閘（ ** $S^2 = Z$ ** ）。
 將 S 閘作用於 ** $|+\rangle$ ** 狀態：
 
 $$
+
 S |+\rangle = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ i \end{pmatrix} = \frac{|0\rangle + i|1\rangle}{\sqrt{2}} \equiv |+i\rangle
+
 $$
 
 狀態會躍遷至位於布洛赫球赤道上 Y 軸的正方向（Y 基底的特徵態）。由包立群與 H、S 閘所構成的群稱為克里福群（Clifford group），根據 Gottesman-Knill 定理，已經證明僅由克里福群構成的量子電路，可以用古典電腦有效率地進行模擬。
@@ -768,7 +923,9 @@ $$
 當 ** $\phi = \pi/4$ ** 的情況稱為 T 閘。
 
 $$
+
 T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & \frac{1+i}{\sqrt{2}} \end{pmatrix}
+
 $$
 
 若將全域相位 ** $e^{i\pi/8}$ ** 提出，對角成分會變成 ** $e^{-i\pi/8}$ ** 與 ** $e^{i\pi/8}$ ** ，因此在歷史上也被稱為 ** $\pi/8$ ** 閘。
@@ -779,36 +936,51 @@ T 閘不屬於克里福群，會破壞古典模擬的高效性。然而，量子
 對單一量子位元最一般的操作，是以布洛赫球中任意的單位向量 ** $\hat{n} = (n_x, n_y, n_z)$ ** （其中 ** $n_x^2 + n_y^2 + n_z^2 = 1$ ** ）為旋轉軸，旋轉角度 ** $\theta$ ** 的么正變換。使用包立矩陣的線性組合，這個旋轉算符 ** $R_{\hat{n}}(\theta)$ ** 可以被優美地公式化為如下的矩陣指數函數：
 
 $$
+
 R_{\hat{n}}(\theta) = \exp\left(-i \frac{\theta}{2} (\hat{n} \cdot \vec{\sigma})\right) = \exp\left(-i \frac{\theta}{2} (n_x X + n_y Y + n_z Z)\right)
+
 $$
 
 在此，利用 ** $(\hat{n} \cdot \vec{\sigma})^2 = (n_x X + n_y Y + n_z Z)^2 = (n_x^2 + n_y^2 + n_z^2)I = I$ ** 這個包立矩陣強大的反交換性，將指数函數進行泰勒展開（ ** $e^{iAx} = \cos(x)I + i\sin(x)A$ ** （在 ** $A^2=I$ ** 的情況下）），無限級數會被劇烈地簡化，進而得到以下尤拉公式的矩陣擴展版：
 
 $$
+
 R_{\hat{n}}(\theta) = \cos\left(\frac{\theta}{2}\right) I - i \sin\left(\frac{\theta}{2}\right) (\hat{n} \cdot \vec{\sigma})
+
 $$
 
 從這個一般化的公式，可以演繹出繞著直交座標軸的基本旋轉閘群。
 
 ### 繞 X 軸的旋轉閘 ** $R_x(\theta)$ **
+
 $$
+
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
+
 $$
 
 ### 繞 Y 軸的旋轉閘 ** $R_y(\theta)$ **
+
 $$
+
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
+
 $$
 
 ### 繞 Z 軸的旋轉閘 ** $R_z(\theta)$ **
+
 $$
+
 R_z(\theta) = e^{-i \frac{\theta}{2} Z} = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix}
+
 $$
 
 使用這些旋轉矩陣，任意的單一量子位元么正矩陣 ** $U \in SU(2)$ ** ，可以被完全因式分解為使用三個尤拉角（ ** $\alpha, \beta, \gamma$ ** ）的「Z-Y-Z 分解」，如下所示：
 
 $$
+
 U = e^{i\delta} R_z(\alpha) R_y(\beta) R_z(\gamma)
+
 $$
 
 這個定理在物理學上保證了，只要能在硬體層級高精度地實作 Z 軸旋轉與 Y 軸旋轉，就能執行針對單一量子位元的任何複雜演算法。
@@ -843,53 +1015,71 @@ graph LR
 量子電路圖雖然是從左寫到右，但對於狀態向量的線性代數算符乘法是「從左依序」相乘，因此整體的么正算符 ** $U_{total}$ ** 式子會以與時間相反的順序從右排到左。
 
 $$
+
 U_{total} = H S H
+
 $$
 
 代入各閘的矩陣表示來導出合成矩陣：
 
 $$
+
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}, \quad S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
+
 $$
 
 首先，計算初始狀態後直接套用的 ** $H$ ** ，與其後的 ** $S$ ** 的乘積 ** $SH$ ** ：
 
 $$
+
 S H = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1\cdot 1 + 0\cdot 1 & 1\cdot 1 + 0\cdot(-1) \\ 0\cdot 1 + i\cdot 1 & 0\cdot 1 + i\cdot(-1) \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
+
 $$
 
 接著，從這個結果的左側乘上最後的 ** $H$ ** ：
 
 $$
+
 U_{total} = H (S H) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
+
 $$
 
 將純量倍數 ** $\frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$ ** 提出到前面，並謹慎地執行矩陣相乘：
 
 $$
+
 U_{total} = \frac{1}{2} \begin{pmatrix} 1\cdot 1 + 1\cdot i & 1\cdot 1 + 1\cdot(-i) \\ 1\cdot 1 + (-1)\cdot i & 1\cdot 1 + (-1)\cdot(-i) \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix}
+
 $$
 
 這就是將整體電路視為一個黑盒子時的單一么正矩陣表示。
 將這個 ** $U_{total}$ ** 作用於初始狀態 ** $|0\rangle$ ** ，計算最終狀態 ** $|\psi_{final}\rangle$ ** ：
 
 $$
+
 |\psi_{final}\rangle = U_{total} |0\rangle = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i \\ 1 - i \end{pmatrix}
+
 $$
 
 用狄拉克表示法展開它，會得到以下結果：
 
 $$
+
 |\psi_{final}\rangle = \frac{1+i}{2} |0\rangle + \frac{1-i}{2} |1\rangle
+
 $$
 
 在此，為了驗證么正性（機率總和為 1）是否遭到破壞，我們計算觀測各基底的機率。使用複數絕對值的平方 ** $|z|^2 = z z^*$ ** ：
 
 $$
+
 P(0) = |\langle 0 | \psi_{final} \rangle|^2 = \left| \frac{1+i}{2} \right|^2 = \frac{1^2 + 1^2}{4} = \frac{2}{4} = \frac{1}{2}
+
 $$
 $$
+
 P(1) = |\langle 1 | \psi_{final} \rangle|^2 = \left| \frac{1-i}{2} \right|^2 = \frac{1^2 + (-1)^2}{4} = \frac{2}{4} = \frac{1}{2}
+
 $$
 
 機率之和為 ** $P(0) + P(1) = 1$ ** ，證明了這是物理上妥當的狀態。測量時會以 50% 的機率得到 0、50% 的機率得到 1，但這並非單純的古典亂數。為了提取隱藏在狀態背後的「相位」，讓我們將狀態向量變形為布洛赫球的極座標形式：
@@ -897,13 +1087,17 @@ $$
 作為整體的共同因子，強制提出振幅 ** $1/\sqrt{2}$ ** 與全域相位 ** $e^{i\pi/4}$ ** （ ** $\frac{1+i}{\sqrt{2}}$ ** ）：
 
 $$
+
 |\psi_{final}\rangle = \frac{1}{\sqrt{2}} \left( \frac{1+i}{\sqrt{2}} |0\rangle + \frac{1-i}{\sqrt{2}} |1\rangle \right) = e^{i\pi/4} \left( \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}} e^{-i\pi/2} |1\rangle \right)
+
 $$
 
 全域相位 ** $e^{i\pi/4}$ ** 在計算任何可觀測量（厄米算符）的期望值時，都會變成 ** $e^{-i\pi/4} e^{i\pi/4} = 1$ ** 而被抵消，因此它不具物理意義。如果我們僅提取相對相位部分：
 
 $$
+
 |\psi_{final}'\rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{i}{\sqrt{2}} |1\rangle
+
 $$
 
 結果如上。透過將其與極座標表示 ** $\cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$ ** 進行比較，可以完美地確定布洛赫向量指向天頂角 ** $\theta = \pi/2$ ** （赤道上）、方位角 ** $\phi = -\pi/2$ ** （Y 軸的負方向）。這通常是被標記為 ** $|-i\rangle$ ** 的狀態。
@@ -911,13 +1105,17 @@ $$
 讓我們提出一個更深奧的事實。使用剛才導出的指數函數旋轉閘公式，試著寫下繞 X 軸旋轉 ** $\pi/2$ ** 的 ** $R_x(\pi/2)$ ** 矩陣：
 
 $$
+
 R_x(\pi/2) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix}
+
 $$
 
 另一方面，讓我們再次看看我們先前計算的整體矩陣 ** $U_{total}$ ** ：
 
 $$
+
 U_{total} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & \frac{1-i}{1+i} \\ \frac{1-i}{1+i} & 1 \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix} = e^{i\pi/4} R_x(\pi/2)
+
 $$
 
 令人驚訝的是，這證明了「 ** $H \rightarrow S \rightarrow H$ ** 」這種繞著完全不同軸的離散閘群所進行的連續操作，若排除全域相位，在數學上一字不差地等價於單一的「繞 X 軸的 ** $\pi/2$ ** 旋轉操作」。
@@ -940,28 +1138,36 @@ $$
 讓我們考慮一個由兩個量子位元（量子位元 A 與量子位元 B）所組成的系統。計算基底被定義為各個單一量子位元基底狀態的張量積：
 
 $$
+
 |0\rangle_A \otimes |0\rangle_B \equiv |00\rangle, \quad
 |0\rangle_A \otimes |1\rangle_B \equiv |01\rangle, \quad
 |1\rangle_A \otimes |0\rangle_B \equiv |10\rangle, \quad
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
+
 $$
 
 在此，讓我們嚴格計算張量積的矩陣表示（克羅內克積，Kronecker product）。若將單一量子位元的基底表示為行向量（Column vector）：
 
 $$
+
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+
 $$
 
 使用它們來計算，例如狀態 ** $|10\rangle$ ** 的計算結果將如下所示：
 
 $$
+
 |10\rangle = |1\rangle \otimes |0\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \otimes \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \\ 1 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}
+
 $$
 
 在這個 4 維向量空間中，最一般的 2 量子位元系統純態（Pure state） ** $|\Psi\rangle$ ** ，可描述為這 4 個基底向量的線性組合（疊加）：
 
 $$
+
 |\Psi\rangle = c_{00} |00\rangle + c_{01} |01\rangle + c_{10} |10\rangle + c_{11} |11\rangle
+
 $$
 
 其中，$c_{ij} \in \mathbb{C}$ 為機率幅，且根據玻恩定則（Born rule），狀態必須被歸一化，亦即滿足歸一化條件 $\sum_{i,j \in \{0,1\}} |c_{ij}|^2 = 1$。
@@ -969,7 +1175,9 @@ $$
 合成系統中的算符（閘）也同樣是使用張量積來建構。對量子位元 A 應用算符 ** $U_A$ ** 、對量子位元 B 應用算符 ** $U_B$ ** 的操作，將被表示為對整個合成系統作用的算符 ** $U_A \otimes U_B$ ** ，且對任意的積態（Product state）產生如下作用：
 
 $$
+
 (U_A \otimes U_B)(|\psi\rangle_A \otimes |\phi\rangle_B) = (U_A |\psi\rangle_A) \otimes (U_B |\phi\rangle_B)
+
 $$
 
 基於線性性質，這個作用也可以擴展到任意的疊加態上。
@@ -982,7 +1190,9 @@ $$
 當狀態 ** $|\Psi\rangle$ ** 可以被描述為各個子系統狀態的單純張量積時，亦即：
 
 $$
+
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
+
 $$
 
 我們便稱該狀態是可分離的。反之，若一個狀態 **無法** 被表示為任何子系統狀態的張量積時，我們就定義它為 **量子纏結態（Entangled State）** 。
@@ -990,29 +1200,41 @@ $$
 在 2 量子位元系統中，產生最強量子纏結的狀態被稱為 **貝爾態** （Bell States），或稱為 EPR 對（EPR pairs）。貝爾態由以下 4 個正交的純態組成，並形成 4 維希爾伯特空間中一組完備的正交歸一基底（貝爾基底）：
 
 $$
+
 |\Phi^+\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle + |11\rangle \Big)
+
 $$
 $$
+
 |\Phi^-\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle - |11\rangle \Big)
+
 $$
 $$
+
 |\Psi^+\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle + |10\rangle \Big)
+
 $$
 $$
+
 |\Psi^-\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle - |10\rangle \Big)
+
 $$
 
 現在，讓我們利用反證法來嚴格證明狀態 ** $|\Phi^+\rangle$ ** 是不可分離的。
 假設 ** $|\Phi^+\rangle$ ** 是可分離態，可以被描述為未知的單一量子位元狀態之張量積：
 
 $$
+
 |\Phi^+\rangle = (a|0\rangle + b|1\rangle)_A \otimes (c|0\rangle + d|1\rangle)_B
+
 $$
 
 將其展開後得到：
 
 $$
+
 |\Phi^+\rangle = ac|00\rangle + ad|01\rangle + bc|10\rangle + bd|11\rangle
+
 $$
 
 將其與原定義式中的係數進行比較，我們可以得到以下的聯立方程式：
@@ -1032,16 +1254,22 @@ $$
 貝爾態是「最大量子纏結」的這項事實，可以透過計算描述子系統資訊的 **縮減密度矩陣** （Reduced Density Matrix）而變得更加清晰。當整個系統處於純態 ** $\rho = |\Phi^+\rangle \langle\Phi^+|$ ** 時，我們將量子位元 B 進行偏跡（部分跡，Partial trace），以求得量子位元 A 的局部狀態：
 
 $$
+
 \rho_A = \text{Tr}_B(|\Phi^+\rangle \langle\Phi^+|) = \text{Tr}_B \left[ \frac{1}{2} (|00\rangle\langle00| + |00\rangle\langle11| + |11\rangle\langle00| + |11\rangle\langle11|) \right]
+
 $$
 
 利用部分跡的性質 $\text{Tr}_B(|i,j\rangle\langle k,l|) = |i\rangle\langle k| \cdot \langle l|j\rangle = |i\rangle\langle k| \delta_{jl}$，可以得到：
 
 $$
+
 \rho_A = \frac{1}{2} \Big( |0\rangle\langle0| \cdot \langle0|0\rangle + |0\rangle\langle1| \cdot \langle1|0\rangle + |1\rangle\langle0| \cdot \langle0|1\rangle + |1\rangle\langle1| \cdot \langle1|1\rangle \Big)
+
 $$
 $$
+
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
+
 $$
 
 這意味著，如果我們僅去觀測量子位元 A，它的狀態將是一個完全混合態（Completely Mixed State），其馮·諾伊曼熵（Von Neumann entropy） $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ 將會取得最大值 $1$。也就是說，「儘管整個系統擁有一份完整的資訊（純態），但若單獨觀察各個子系統，其資訊卻是完全不確定的（最大熵）」，這種在古典力學中根本不可能發生的極端相關性，正是最大量子纏結的本質。
@@ -1057,27 +1285,33 @@ CNOT 閘作用於 2 個量子位元上，將其中一個視為「控制位元（
 對計算基底的作用如下（我們將第一個量子位元作為控制位元，第二個作為目標位元）：
 
 $$
+
 \text{CNOT} |00\rangle = |00\rangle \\
 \text{CNOT} |01\rangle = |01\rangle \\
 \text{CNOT} |10\rangle = |11\rangle \\
 \text{CNOT} |11\rangle = |10\rangle
+
 $$
 
 如果將其表示為 4 維的么正矩陣（Unitary matrix），則如下所示：
 
 $$
+
 \text{CNOT} = \begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 1 & 0
 \end{pmatrix}
+
 $$
 
 而一個更具數學洗練感的表示方式，是使用投影算符與包立矩陣之張量積的總和來表示：
 
 $$
+
 \text{CNOT} = |0\rangle\langle0| \otimes I + |1\rangle\langle1| \otimes X
+
 $$
 
 這個公式極其直觀地表達了 CNOT 閘的物理意義。第一項的意思是「在第一量子位元投影到 $|0\rangle$ 的狀態空間中，對第二量子位元應用單位算符 $I$」；第二項的意思是「在第一量子位元投影到 $|1\rangle$ 的狀態空間中，對第二量子位元應用位元反轉算符 $X$」。
@@ -1093,26 +1327,39 @@ CNOT 閘的一個重要性質是，它同時滿足厄米性（ $\text{CNOT}^\dag
 所需的組成元素，僅包含作用於單一量子位元的阿達馬閘（Hadamard gate） ** $H$ ** ，以及前面提到的 ** $\text{CNOT}$ ** 閘。阿達馬矩陣的定義如下：
 
 $$
+
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
+
 $$
 
 ### 量子狀態推移計算
 
 **步驟 1:** 初始化
 系統處於計算基底的初始狀態。
-$$ |\psi_0\rangle = |0\rangle_A \otimes |0\rangle_B = |00\rangle $$
+
+$$
+
+|\psi_0\rangle = |0\rangle_A \otimes |0\rangle_B = |00\rangle
+
+$$
 
 **步驟 2:** 對控制位元（量子位元 A）應用阿達馬閘
 僅對量子位元 A 應用阿達馬閘，創造出疊加態。對整個系統的算符為 ** $H \otimes I$ ** 。
 
 $$
+
 |\psi_1\rangle = (H \otimes I) |00\rangle = (H|0\rangle_A) \otimes (I|0\rangle_B)
+
 $$
 $$
+
 = \left( \frac{1}{\sqrt{2}} (|0\rangle_A + |1\rangle_A) \right) \otimes |0\rangle_B
+
 $$
 $$
+
 = \frac{1}{\sqrt{2}} (|00\rangle + |10\rangle)
+
 $$
 
 在這個時間點，狀態依然是可分離態。因為它仍然可以寫成張量積的形式。
@@ -1121,16 +1368,22 @@ $$
 接著，應用以量子位元 A 為控制位元、量子位元 B 為目標位元的 CNOT 閘。根據算符的線性性質，CNOT 閘會獨立作用於疊加的每一項上。
 
 $$
+
 |\psi_2\rangle = \text{CNOT} \left[ \frac{1}{\sqrt{2}} (|00\rangle + |10\rangle) \right]
+
 $$
 $$
+
 = \frac{1}{\sqrt{2}} (\text{CNOT}|00\rangle + \text{CNOT}|10\rangle)
+
 $$
 
 應用我們剛才定義的 CNOT 對基底的作用規則，由於 $\text{CNOT}|00\rangle = |00\rangle$、$\text{CNOT}|10\rangle = |11\rangle$，所以：
 
 $$
+
 |\psi_2\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
+
 $$
 
 漂亮地，我們從最初的可分離態成功生成了貝爾態 ** $|\Phi^+\rangle$ ** 。由阿達馬閘所創造出來的「控制位元處於 0 與 1 的疊加」，在接收到 CNOT 閘後，目標位元的反轉 / 不反轉會連動控制位元的各個狀態而產生分歧，從而在整體上形成了纏結。
@@ -1221,18 +1474,23 @@ graph LR
 在量子力學中，封閉系統的任意物理演化都可以由么正算符 ** $U$ ** 來描述。因此，這台影印機的運作被定義為滿足以下方程式的么正變換 ** $U$ ** ：
 
 $$
+
 U (|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle
+
 $$
 
 由於假設這對「任意」狀態都成立，因此對於另一個任意量子態 ** $|\phi\rangle$ ** 也必須以相同的方式運作：
 
 $$
+
 U (|\phi\rangle \otimes |0\rangle) = |\phi\rangle \otimes |\phi\rangle
+
 $$
 
 在此，我們將這兩個式子取內積（純量積）。利用么正算符 ** $U$ ** 的性質（ ** $U^\dagger U = I$ ** ）。左邊的內積如下所示：
 
 $$
+
 \begin{aligned}
 \left( U (|\psi\rangle \otimes |0\rangle) \right)^\dagger \left( U (|\phi\rangle \otimes |0\rangle) \right) 
 &= (\langle \psi | \otimes \langle 0 |) U^\dagger U (|\phi\rangle \otimes |0\rangle) \\
@@ -1240,6 +1498,7 @@ $$
 &= \langle \psi | \phi \rangle \cdot \langle 0 | 0 \rangle \\
 &= \langle \psi | \phi \rangle
 \end{aligned}
+
 $$
 
 （這裡我們使用了 ** $\langle 0 | 0 \rangle = 1$ ** 。）
@@ -1247,24 +1506,30 @@ $$
 另一方面，右邊被複製狀態彼此的內積如下所示：
 
 $$
+
 \begin{aligned}
 \left( |\psi\rangle \otimes |\psi\rangle \right)^\dagger \left( |\phi\rangle \otimes |\phi\rangle \right) 
 &= (\langle \psi | \otimes \langle \psi |) (|\phi\rangle \otimes |\phi\rangle) \\
 &= \langle \psi | \phi \rangle \cdot \langle \psi | \phi \rangle \\
 &= (\langle \psi | \phi \rangle)^2
 \end{aligned}
+
 $$
 
 由於左邊與右邊必須相等，我們可得到以下等式：
 
 $$
+
 \langle \psi | \phi \rangle = (\langle \psi | \phi \rangle)^2
+
 $$
 
 這個方程式 ** $x = x^2$ ** 在複數範圍內成立的條件，僅有 ** $x = 0$ ** 或是 ** $x = 1$ ** 。也就是說，
 
 $$
+
 \langle \psi | \phi \rangle = 0 \quad \text{或} \quad \langle \psi | \phi \rangle = 1
+
 $$
 
 這意味著，只有在兩個狀態「完全正交（毫不相關）」或「完全相同的狀態」時，才可能存在能正確複製兩者的么正變換。換句話說，「不存在能夠複製任意（非正交）未知量子態的通用么正變換」，這點已被極為簡單且優雅地證明了。
@@ -1275,30 +1540,38 @@ $$
 考慮一個能夠複製兩個正交基底態 ** $|0\rangle$ ** 與 ** $|1\rangle$ ** 的么正算符 ** $U$ ** ：
 
 $$
+
 U |0\rangle |0\rangle = |0\rangle |0\rangle
+
 $$
 $$
+
 U |1\rangle |0\rangle = |1\rangle |1\rangle
+
 $$
 
 到這裡為止沒有問題。這與複製古典位元的 0 與 1 是一樣的。那麼，如果試圖複製由這些疊加而成的未知狀態 ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ ** 會發生什麼事呢？根據么正算符時間演化的線性，結果會如下所示：
 
 $$
+
 \begin{aligned}
 U (|\psi\rangle |0\rangle) &= U \left( (\alpha|0\rangle + \beta|1\rangle) |0\rangle \right) \\
 &= U (\alpha|0\rangle |0\rangle + \beta|1\rangle |0\rangle) \\
 &= \alpha U(|0\rangle |0\rangle) + \beta U(|1\rangle |0\rangle) \\
 &= \alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle
 \end{aligned}
+
 $$
 
 然而，我們真正想要的「完美複製」的輸出，應該是如下的張量積：
 
 $$
+
 \begin{aligned}
 |\psi\rangle \otimes |\psi\rangle &= (\alpha|0\rangle + \beta|1\rangle) \otimes (\alpha|0\rangle + \beta|1\rangle) \\
 &= \alpha^2|0\rangle |0\rangle + \alpha\beta|0\rangle |1\rangle + \alpha\beta|1\rangle |0\rangle + \beta^2|1\rangle |1\rangle
 \end{aligned}
+
 $$
 
 由線性所推導出的結果 ** $\alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle$ ** ，與我們所求的複製狀態 ** $|\psi\rangle \otimes |\psi\rangle$ ** 明顯不同（缺少了交叉項 ** $|0\rangle |1\rangle$ ** 或 ** $|1\rangle |0\rangle$ ** ）。這再次證明了，要複製未知的疊加態是不可能的。
@@ -1317,25 +1590,33 @@ $$
 愛麗絲擁有一個想傳送給鮑伯的未知單量子位元狀態 ** $|\psi\rangle$ ** ：
 
 $$
+
 |\psi\rangle_C = \alpha|0\rangle_C + \beta|1\rangle_C \quad (|\alpha|^2 + |\beta|^2 = 1)
+
 $$
+
 下標 $C$ 表示這是我們想要傳輸的目標量子位元。
 
 為了實現這項傳輸，我們假設愛麗絲與鮑伯事先共享了一組最大纏結的雙量子位元態（稱為 EPR 對或貝爾對）。在此我們使用以下狀態：
 
 $$
+
 |\Phi^+\rangle_{AB} = \frac{1}{\sqrt{2}} \left( |0\rangle_A \otimes |0\rangle_B + |1\rangle_A \otimes |1\rangle_B \right)
+
 $$
+
 下標 $A$ 代表由愛麗絲持有的量子位元， $B$ 代表由鮑伯持有的量子位元。
 
 整個系統的初始狀態 ** $|\Psi_0\rangle$ ** ，可描述為愛麗絲想要傳輸的狀態與共享 EPR 對的張量積：
 
 $$
+
 \begin{aligned}
 |\Psi_0\rangle &= |\psi\rangle_C \otimes |\Phi^+\rangle_{AB} \\
 &= (\alpha|0\rangle_C + \beta|1\rangle_C) \otimes \frac{1}{\sqrt{2}} (|0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B) \\
 &= \frac{1}{\sqrt{2}} \Big( \alpha|0\rangle_C |0\rangle_A |0\rangle_B + \alpha|0\rangle_C |1\rangle_A |1\rangle_B + \beta|1\rangle_C |0\rangle_A |0\rangle_B + \beta|1\rangle_C |1\rangle_A |1\rangle_B \Big)
 \end{aligned}
+
 $$
 
 ### 愛麗絲的操作與貝爾基底測量
@@ -1346,33 +1627,40 @@ $$
 愛麗絲將量子位元 $C$ 作為控制位元，量子位元 $A$ 作為目標位元，套用 CNOT（受控反閘）閘 ** $CX_{CA}$ ** 。CNOT 只有在控制位元為 $|1\rangle$ 時才會反轉目標位元。
 
 $$
+
 \begin{aligned}
 |\Psi_1\rangle &= CX_{CA} |\Psi_0\rangle \\
 &= \frac{1}{\sqrt{2}} \Big( \alpha|0\rangle_C |0\rangle_A |0\rangle_B + \alpha|0\rangle_C |1\rangle_A |1\rangle_B + \beta|1\rangle_C |1\rangle_A |0\rangle_B + \beta|1\rangle_C |0\rangle_A |1\rangle_B \Big)
 \end{aligned}
+
 $$
+
 （第三項的 $|0\rangle_A$ 被反轉為 $|1\rangle_A$ ，第四項的 $|1\rangle_A$ 被反轉為 $|0\rangle_A$ 。）
 
 **步驟 2：套用阿達馬閘**
 接著，愛麗絲對量子位元 $C$ 套用阿達馬閘 ** $H_C$ ** 。阿達馬變換會將 $|0\rangle \to \frac{|0\rangle+|1\rangle}{\sqrt{2}}$ ， $|1\rangle \to \frac{|0\rangle-|1\rangle}{\sqrt{2}}$ 。
 
 $$
+
 \begin{aligned}
 |\Psi_2\rangle &= H_C |\Psi_1\rangle \\
 &= \frac{1}{2} \Big[ \alpha(|0\rangle_C + |1\rangle_C) |0\rangle_A |0\rangle_B + \alpha(|0\rangle_C + |1\rangle_C) |1\rangle_A |1\rangle_B \\
 &\quad + \beta(|0\rangle_C - |1\rangle_C) |1\rangle_A |0\rangle_B + \beta(|0\rangle_C - |1\rangle_C) |0\rangle_A |1\rangle_B \Big]
 \end{aligned}
+
 $$
 
 我們將它針對愛麗絲所持有的量子位元 $C$ 與 $A$ 的狀態（ $|00\rangle, |01\rangle, |10\rangle, |11\rangle$ ）重新整理。這個重組正是量子遙傳的核心數學步驟：
 
 $$
+
 \begin{aligned}
 |\Psi_2\rangle &= \frac{1}{2} |0\rangle_C |0\rangle_A \otimes (\alpha|0\rangle_B + \beta|1\rangle_B) \\
 &\quad + \frac{1}{2} |0\rangle_C |1\rangle_A \otimes (\alpha|1\rangle_B + \beta|0\rangle_B) \\
 &\quad + \frac{1}{2} |1\rangle_C |0\rangle_A \otimes (\alpha|0\rangle_B - \beta|1\rangle_B) \\
 &\quad + \frac{1}{2} |1\rangle_C |1\rangle_A \otimes (\alpha|1\rangle_B - \beta|0\rangle_B)
 \end{aligned}
+
 $$
 
 值得注意的是，根據愛麗絲的測量結果，鮑伯的量子位元 $B$ 會被投影到各自不同的狀態上。
@@ -1449,7 +1737,9 @@ graph LR
 我們再次假設愛麗絲與鮑伯事先共享了 EPR 對：
 
 $$
+
 |\Phi^+\rangle_{AB} = \frac{1}{\sqrt{2}} \left( |0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B \right)
+
 $$
 
 愛麗絲想要傳送 2 位元的古典訊息 $b_1 b_2 \in \{00, 01, 10, 11\}$ 給鮑伯。
@@ -1458,19 +1748,44 @@ $$
 1. **當訊息為 `00` 時：**
    愛麗絲不作任何事（套用恆等算符 $I$ ）。
    整體的狀態不變。
-   $$ |\Psi_{00}\rangle = (I \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle $$
+   
+
+$$
+
+|\Psi_{00}\rangle = (I \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
+
+$$
 
 2. **當訊息為 `01` 時：**
    愛麗絲套用包立 Z 閘。
-   $$ |\Psi_{01}\rangle = (Z \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (Z|0\rangle|0\rangle + Z|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle) = |\Phi^-\rangle $$
+   
+
+$$
+
+|\Psi_{01}\rangle = (Z \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (Z|0\rangle|0\rangle + Z|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle) = |\Phi^-\rangle
+
+$$
 
 3. **當訊息為 `10` 時：**
    愛麗絲套用包立 X 閘。
-   $$ |\Psi_{10}\rangle = (X \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (X|0\rangle|0\rangle + X|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|10\rangle + |01\rangle) = |\Psi^+\rangle $$
+   
+
+$$
+
+|\Psi_{10}\rangle = (X \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (X|0\rangle|0\rangle + X|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|10\rangle + |01\rangle) = |\Psi^+\rangle
+
+$$
 
 4. **當訊息為 `11` 時：**
    愛麗絲先套用包立 Z 閘，接著再套用包立 X 閘（相當於 $iY$ ）。
-   $$ |\Psi_{11}\rangle = (ZX \otimes I) |\Phi^+\rangle = (Z \otimes I) |\Psi^+\rangle = \frac{1}{\sqrt{2}} (Z|1\rangle|0\rangle + Z|0\rangle|1\rangle) = \frac{1}{\sqrt{2}} (-|10\rangle + |01\rangle) = -|\Psi^-\rangle $$
+   
+
+$$
+
+|\Psi_{11}\rangle = (ZX \otimes I) |\Phi^+\rangle = (Z \otimes I) |\Psi^+\rangle = \frac{1}{\sqrt{2}} (Z|1\rangle|0\rangle + Z|0\rangle|1\rangle) = \frac{1}{\sqrt{2}} (-|10\rangle + |01\rangle) = -|\Psi^-\rangle
+
+$$
+
    （由於整體帶有的負號為全域相位，因此不影響觀測機率，但為了方便起見，我們將正負號整理，對應為 ** $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ ** 來考慮。）
 
 愛麗絲將操作後的自己的量子位元 A，透過量子通訊通道（如光纖等）發送給鮑伯。
@@ -1553,7 +1868,11 @@ $$
 
 我們準備一個輸入暫存器（ $n$ 個量子位元）與一個目標暫存器（ $1$ 個量子位元）。代表神諭的么正算子（Unitary Operator） ** $U_f$ ** 對計算基底態的作用如下：
 
-$$ U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle $$
+$$
+
+U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle
+
+$$
 
 在這裡， $\oplus$ 代表模 2 加法（XOR）。這個轉換若是對自身再次應用一次，便會回到原本的狀態（ $U_f^2 = I$ ），因此這明顯是可逆且具備么正性的。
 
@@ -1561,13 +1880,31 @@ $$ U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle $$
 
 在量子資訊科學中，最為重要且最反直覺的技巧之一就是「相位反衝」。讓我們來看看，如果不將目標暫存器的狀態設定為古典的 $|0\rangle$ 或 $|1\rangle$ ，而是設定為通過阿達馬閘（Hadamard Gate）的疊加態 $|-\rangle$ 時，會發生什麼事。
 
-$$ |-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}} $$
+$$
+
+|-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}
+
+$$
 
 將這個狀態輸入到目標暫存器中，並應用神諭 ** $U_f$ ** ：
 
-$$ U_f |x\rangle |-\rangle = U_f \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) $$
-$$ = \frac{1}{\sqrt{2}} \left( U_f |x\rangle |0\rangle - U_f |x\rangle |1\rangle \right) $$
-$$ = \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right) $$
+$$
+
+U_f |x\rangle |-\rangle = U_f \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
+
+$$
+
+$$
+
+= \frac{1}{\sqrt{2}} \left( U_f |x\rangle |0\rangle - U_f |x\rangle |1\rangle \right)
+
+$$
+
+$$
+
+= \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right)
+
+$$
 
 這裡，我們根據 $f(x)$ 的值進行分類討論：
 - 當 $f(x) = 0$ 時：
@@ -1577,7 +1914,11 @@ $$ = \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \o
 
 將這些整合在一起，我們就能得到如下的優美等式：
 
-$$ U_f |x\rangle |-\rangle = (-1)^{f(x)} |x\rangle |-\rangle $$
+$$
+
+U_f |x\rangle |-\rangle = (-1)^{f(x)} |x\rangle |-\rangle
+
+$$
 
 這是一個驚人的結果。目標暫存器的狀態 $|-\rangle$ 完全沒有改變，但是函數 ** $f(x)$ ** 的評估結果卻作為「相位（Phase）的符號」，被「反衝（Kickback）」到了輸入暫存器 ** $|x\rangle$ ** 這一側。這樣一來，便能將資訊編碼為振幅的相位。
 
@@ -1599,25 +1940,46 @@ graph LR
 
 將作為輸入暫存器的 $n$ 個量子位元初始化為 $|0\rangle^{\otimes n}$ ，並將作為目標暫存器的 1 個量子位元初始化為 $|1\rangle$ 。
 
-$$ |\psi_0\rangle = |0\rangle^{\otimes n} |1\rangle $$
+$$
+
+|\psi_0\rangle = |0\rangle^{\otimes n} |1\rangle
+
+$$
 
 ### 步驟 2：對所有量子位元應用阿達馬閘
 
 對所有的量子位元應用阿達馬閘（ $H$ ），以產生完全的疊加態。
 對 $n$ 個量子位元的阿達馬轉換 $H^{\otimes n}$ 的作用如下：
 
-$$ H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle $$
+$$
+
+H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle
+
+$$
 
 因此，整個系統的狀態將變為如下：
 
-$$ |\psi_1\rangle = \left( \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle \right) \otimes \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) $$
-$$ = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle |-\rangle $$
+$$
+
+|\psi_1\rangle = \left( \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle \right) \otimes \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
+
+$$
+
+$$
+
+= \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle |-\rangle
+
+$$
 
 ### 步驟 3：應用量子神諭（相位反衝）
 
 在這裡我們應用神諭 ** $U_f$ ** 。藉由前一節所證明的相位反衝效應，每個基底態 $|x\rangle$ 的相位都會乘上 $(-1)^{f(x)}$ 。
 
-$$ |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} (-1)^{f(x)} |x\rangle |-\rangle $$
+$$
+
+|\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} (-1)^{f(x)} |x\rangle |-\rangle
+
+$$
 
 在這個時間點，計算結果 ** $f(x)$ ** 的所有資訊（共 $2^n$ 個），僅透過一次運算便平行地被嵌入到了疊加態的各個相位之中。這被稱為「量子平行性（Quantum Parallelism）」。
 
@@ -1626,14 +1988,32 @@ $$ |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\
 由於此後不再使用目標暫存器，我們將其忽略。對於輸入暫存器的 $n$ 個量子位元，我們再次應用阿達馬轉換 $H^{\otimes n}$ 。
 對於任意基底 $|x\rangle$ ， $H^{\otimes n}$ 的作用通常可以表示為以下的一般公式：
 
-$$ H^{\otimes n} |x\rangle = \frac{1}{\sqrt{2^n}} \sum_{z \in \{0,1\}^n} (-1)^{x \cdot z} |z\rangle $$
+$$
+
+H^{\otimes n} |x\rangle = \frac{1}{\sqrt{2^n}} \sum_{z \in \{0,1\}^n} (-1)^{x \cdot z} |z\rangle
+
+$$
 
 在這裡， $x \cdot z$ 代表逐位元的內積 $x \cdot z = x_1 z_1 \oplus x_2 z_2 \oplus \dots \oplus x_n z_n$ 。
 將其應用到 $|\psi_2\rangle$ 的輸入暫存器部分後，最終狀態 $|\psi_3\rangle$ 即可展開如下：
 
-$$ |\psi_3\rangle = H^{\otimes n} \left( \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} |x\rangle \right) $$
-$$ = \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} \left( \frac{1}{\sqrt{2^n}} \sum_{z} (-1)^{x \cdot z} |z\rangle \right) $$
-$$ = \frac{1}{2^n} \sum_{z \in \{0,1\}^n} \left( \sum_{x \in \{0,1\}^n} (-1)^{f(x) + x \cdot z} \right) |z\rangle $$
+$$
+
+|\psi_3\rangle = H^{\otimes n} \left( \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} |x\rangle \right)
+
+$$
+
+$$
+
+= \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} \left( \frac{1}{\sqrt{2^n}} \sum_{z} (-1)^{x \cdot z} |z\rangle \right)
+
+$$
+
+$$
+
+= \frac{1}{2^n} \sum_{z \in \{0,1\}^n} \left( \sum_{x \in \{0,1\}^n} (-1)^{f(x) + x \cdot z} \right) |z\rangle
+
+$$
 
 這是一個極度重要的數學式，代表了測量前的量子狀態。量子力學的「干涉」正發生在這個和式 $\sum_x$ 之中。
 
@@ -1642,7 +2022,11 @@ $$ = \frac{1}{2^n} \sum_{z \in \{0,1\}^n} \left( \sum_{x \in \{0,1\}^n} (-1)^{f(
 在演算法的最後，我們要在計算基底上測量輸入暫存器的 $n$ 個量子位元。
 我們所感興趣的，是所有量子位元皆為 $0$ ，也就是測量到狀態 ** $|0\rangle^{\otimes n}$ ** 的機率。讓我們來考慮上述公式中 $z = 00\dots0$ 的情況。這時，對於任意的 $x$ 皆會有 $x \cdot 0 = 0$ ，因此狀態 ** $|0\rangle^{\otimes n}$ ** 的振幅（係數）可以計算如下：
 
-$$ \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \sum_{x \in \{0,1\}^n} (-1)^{f(x)} $$
+$$
+
+\text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \sum_{x \in \{0,1\}^n} (-1)^{f(x)}
+
+$$
 
 在這裡，我們根據承諾（Promise）來驗證兩種情況：
 
@@ -1652,17 +2036,33 @@ $$ \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \sum_{x \in \{0,1\
 - 如果總是 $1$ ，則 $(-1)^{f(x)} = -1$ ，和為 $\sum -1 = -2^n$ 。振幅為 $\frac{-2^n}{2^n} = -1$ 。
 
 測量機率 $P(0)$ 為振幅絕對值的平方，因此：
-$$ P(00\dots0) = | \pm 1 |^2 = 1 $$
+
+$$
+
+P(00\dots0) = | \pm 1 |^2 = 1
+
+$$
+
 也就是說， **當函數為常數函數時，將會以 100% 的機率測量到 $|0\rangle^{\otimes n}$ ** 。
 
 #### 情況 2：函數 $f$ 為平衡函數時
 使得 $f(x) = 0$ 的 $x$ ，與使得 $f(x) = 1$ 的 $x$ 剛好各占一半（分別有 $2^{n-1}$ 個）。
 因此， $(-1)^{f(x)}$ 會有一半是 $+1$ ，剩下一半是 $-1$ ，將它們全部加總後會完全抵消歸零（完全的破壞性干涉）。
 
-$$ \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \left( 2^{n-1}(+1) + 2^{n-1}(-1) \right) = 0 $$
+$$
+
+\text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \left( 2^{n-1}(+1) + 2^{n-1}(-1) \right) = 0
+
+$$
 
 測量機率 $P(0)$ 為振幅絕對值的平方，因此：
-$$ P(00\dots0) = | 0 |^2 = 0 $$
+
+$$
+
+P(00\dots0) = | 0 |^2 = 0
+
+$$
+
 也就是說， **當函數為平衡函數時，測量到 $|0\rangle^{\otimes n}$ 的機率是 0%，必定會測量到至少有 1 個位元為 $1$ 的狀態** 。
 
 ## 7.6 具體範例： $n=2$ 時的完整追蹤
@@ -1671,18 +2071,39 @@ $$ P(00\dots0) = | 0 |^2 = 0 $$
 
 ### 當為常數函數時： $f(x) = 1$ （全部為 1）
 應用神諭前的狀態 $|\psi_1\rangle$ ，其輸入暫存器部分如下所示：
-$$ \frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle ) $$
+
+$$
+
+\frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle )
+
+$$
 
 應用神諭後，由於相位反衝，所有的項都會乘上 $(-1)^{f(x)} = -1$ ：
-$$ |\psi_2\rangle_{in} = -\frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle ) $$
+
+$$
+
+|\psi_2\rangle_{in} = -\frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle )
+
+$$
 
 我們對此再次應用 $H^{\otimes 2}$ 。利用 $H^{\otimes 2} (|00\rangle + |01\rangle + |10\rangle + |11\rangle) = 2 |00\rangle$ 的特性：
-$$ |\psi_3\rangle_{in} = - |00\rangle $$
+
+$$
+
+|\psi_3\rangle_{in} = - |00\rangle
+
+$$
+
 測量結果會以機率 $100\%$ 得到 $00$ 。
 
 ### 當為平衡函數時： $f(00)=0, f(01)=1, f(10)=1, f(11)=0$
 應用神諭後，由於相位反衝，只有在 $f(x)=1$ 的項前面會加上負號：
-$$ |\psi_2\rangle_{in} = \frac{1}{2} ( |00\rangle - |01\rangle - |10\rangle + |11\rangle ) $$
+
+$$
+
+|\psi_2\rangle_{in} = \frac{1}{2} ( |00\rangle - |01\rangle - |10\rangle + |11\rangle )
+
+$$
 
 對此應用 $H^{\otimes 2}$ 。若計算並代入對各個基底的 $H^{\otimes 2}$ 作用，並著眼於 $|00\rangle$ 的係數，會得到 $\frac{1}{4} (1 - 1 - 1 + 1) = 0$ ，漂亮地相互抵消（破壞性干涉）。
 整理剩餘的項後，最終狀態將是 $|11\rangle$ （在這個範例中會以 100% 的機率測量到 11，但在一般的平衡函數中，則會測量到 00 以外的某種狀態）。我們確認了測量出 $00$ 的機率完全是 0%。
@@ -1709,9 +2130,21 @@ $$ |\psi_2\rangle_{in} = \frac{1}{2} ( |00\rangle - |01\rangle - |10\rangle + |1
 作為加密金鑰的指數 $e$ ，其選擇必須滿足 $1 < e < \phi(N)$ 且 $\text{gcd}(e, \phi(N)) = 1$ （亦即與 $\phi(N)$ 互質）。然後，計算作為解密私鑰的指數 $d$ ，使其滿足同餘式 $ed \equiv 1 \pmod{\phi(N)}$ 。這可以使用擴展歐幾里得演算法，在多項式時間內輕易求得。
 
 若將明文設為整數 $M$ （其中 $0 \le M < N$），加密則是透過模 $N$ 的指數運算來進行如下：
-$$ C \equiv M^e \pmod{N} $$
+
+$$
+
+C \equiv M^e \pmod{N}
+
+$$
+
 進行解密時，使用私鑰 $d$ 進行相同的計算：
-$$ M' \equiv C^d \pmod{N} $$
+
+$$
+
+M' \equiv C^d \pmod{N}
+
+$$
+
 根據尤拉定理，因為 $C^d \equiv M^{ed} \equiv M^{1 + k\phi(N)} \equiv M \pmod{N}$ 成立，所以保證能夠完全還原出原始明文 $M$ 。
 
 這裡的關鍵在於，為了從公開資訊 $(N, e)$ 中求得私鑰 $d$ ，就必須知道 $\phi(N)$ ，而為此就必須將 $N$ 質因數分解為 $p$ 和 $q$ 。若使用古典電腦，即使採用目前已知最快的質因數分解演算法——普通數域篩法（General Number Field Sieve, GNFS），其計算複雜度也是次指數函數時間 $O\left(\exp\left(c (\log N)^{1/3} (\log \log N)^{2/3}\right)\right)$ 。這意味著計算時間會相對於 $N$ 的位元數呈爆炸性增長，例如要用古典超級電腦對2048位元的整數進行質因數分解，估計需要超過宇宙年齡的時間。
@@ -1725,18 +2158,52 @@ $$ M' \equiv C^d \pmod{N} $$
 讓我們來逐步檢視對給定合成數 $N$ 進行質因數分解的步驟。首先，隨機選擇一個滿足 $1 < a < N$ 的整數 $a$ 。使用歐幾里得演算法計算最大公因數 $\text{gcd}(a, N)$ 。如果這個值大於 $1$ ，代表我們非常幸運地已經找到了 $N$ 的非平凡因數，計算就此結束（但在密碼學所使用的龐大數字中，這種情況偶然發生的機率是天文數字般的低）。
 
 如果 $\text{gcd}(a, N) = 1$ ，則 $a$ 與 $N$ 互質。在這裡，我們定義以下的模指數函數：
-$$ f(x) = a^x \bmod N $$
+
+$$
+
+f(x) = a^x \bmod N
+
+$$
+
 用群論的語言來說，$a$ 是乘法群 $(\mathbb{Z}/N\mathbb{Z})^\times$ 的元素，而函數 $f(x)$ 構成了從整數加法群 $\mathbb{Z}$ 到乘法群 $(\mathbb{Z}/N\mathbb{Z})^\times$ 的同態映射。根據有限群的性質，這個函數必然具有週期性。亦即，存在某個最小的正整數 $r$ ，滿足以下方程式：
-$$ a^r \equiv 1 \pmod{N} $$
+
+$$
+
+a^r \equiv 1 \pmod{N}
+
+$$
+
 這個最小的正整數 $r$ ，就稱為在模 $N$ 之下 $a$ 的「階（Order）」，或是函數 $f(x)$ 的「週期（Period）」。
 
 如果能夠找到這個階 $r$ ，並且 $r$ 是偶數，且滿足 $a^{r/2} \not\equiv -1 \pmod{N}$ 這個條件，那麼就能獲得如下強而有力的質因數分解線索：
-$$ a^r - 1 \equiv 0 \pmod{N} $$
-$$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod{N} $$
+
+$$
+
+a^r - 1 \equiv 0 \pmod{N}
+
+$$
+
+$$
+
+(a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod{N}
+
+$$
+
 這個方程式意味著 $N$ 能夠整除 $(a^{r/2} - 1)$ 與 $(a^{r/2} + 1)$ 的乘積。然而，因為 $a^{r/2} \not\equiv 1$ （因為 $r$ 是最小週期）且 $a^{r/2} \not\equiv -1$ （根據條件），所以 $N$ 無法單獨整除這兩項中的任何一項。因此，$N$ 的質因數必定分散包含在這兩項之中。
 結論是，透過計算：
-$$ p = \text{gcd}(a^{r/2} - 1, N) $$
-$$ q = \text{gcd}(a^{r/2} + 1, N) $$
+
+$$
+
+p = \text{gcd}(a^{r/2} - 1, N)
+
+$$
+
+$$
+
+q = \text{gcd}(a^{r/2} + 1, N)
+
+$$
+
 就能確實地找出 $N$ 的非平凡質因數。
 
 透過這個古典的歸約，問題被集中到一點：「如何快速找出函數 $f(x) = a^x \bmod N$ 的週期 $r$ 」。在古典電腦中，為了解出這個週期，必須依序計算 $x=1, 2, 3, \dots$ ，且因為 $r$ 的數量級可能與 $N$ 相當，結果將會耗費指數級的時間。在此，終於輪到量子電腦大顯身手了。
@@ -1746,13 +2213,31 @@ $$ q = \text{gcd}(a^{r/2} + 1, N) $$
 為了在多項式時間內萃取出函數 $f(x)$ 隱藏的週期 $r$ ，量子演算法的心臟地帶就是「量子傅立葉轉換（Quantum Fourier Transform, QFT）」。QFT 是古典離散傅立葉轉換（DFT）在量子力學上的類比，是作用於狀態空間機率幅的么正轉換。
 
 對於維度為 $M = 2^n$ 的希爾伯特空間 $\mathcal{H}$ 中的計算基底 $|j\rangle$ （$j = 0, 1, \dots, M-1$），量子傅立葉轉換的作用被嚴格定義如下：
-$$ \text{QFT} |j\rangle = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} e^{2\pi i j k / M} |k\rangle $$
+
+$$
+
+\text{QFT} |j\rangle = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} e^{2\pi i j k / M} |k\rangle
+
+$$
+
 對於任意量子態 ** $|\psi\rangle$ ** ，根據線性性質，其作用如下：
-$$ \text{QFT} \sum_{j=0}^{M-1} x_j |j\rangle = \sum_{k=0}^{M-1} \left( \frac{1}{\sqrt{M}} \sum_{j=0}^{M-1} x_j e^{2\pi i j k / M} \right) |k\rangle = \sum_{k=0}^{M-1} y_k |k\rangle $$
+
+$$
+
+\text{QFT} \sum_{j=0}^{M-1} x_j |j\rangle = \sum_{k=0}^{M-1} \left( \frac{1}{\sqrt{M}} \sum_{j=0}^{M-1} x_j e^{2\pi i j k / M} \right) |k\rangle = \sum_{k=0}^{M-1} y_k |k\rangle
+
+$$
+
 這裡得到的新機率幅 $y_k$ ，與透過古典離散傅立葉轉換所得到的係數完全一致。然而，古典的快速傅立葉轉換（FFT）計算整個向量需要耗費 $O(M \log M) = O(n 2^n)$ 的時間，相較之下，QFT 能夠僅用 $O(n^2)$ 的量子閘操作就能轉換 $n$ 個量子位元的「狀態」，實現了計算複雜度戲劇性的降低。
 
 為了理解為何只需 $O(n^2)$ 這麼少數的閘就能實現這一點，我們必須將 QFT 所得到的狀態分解為張量積的形式來表現。將整數 $j$ 表示為二進位形式 $j = j_1 2^{n-1} + j_2 2^{n-2} + \dots + j_n 2^0$ （其中 $j_1$ 為最高有效位元，$j_n$ 為最低有效位元）時，輸出狀態會漂亮地分解為如下 $n$ 個獨立量子位元狀態的張量積：
-$$ \text{QFT} |j_1 j_2 \dots j_n\rangle = \frac{1}{\sqrt{2^n}} \left(|0\rangle + e^{2\pi i 0.j_n} |1\rangle\right) \otimes \left(|0\rangle + e^{2\pi i 0.j_{n-1} j_n} |1\rangle\right) \otimes \dots \otimes \left(|0\rangle + e^{2\pi i 0.j_1 j_2 \dots j_n} |1\rangle\right) $$
+
+$$
+
+\text{QFT} |j_1 j_2 \dots j_n\rangle = \frac{1}{\sqrt{2^n}} \left(|0\rangle + e^{2\pi i 0.j_n} |1\rangle\right) \otimes \left(|0\rangle + e^{2\pi i 0.j_{n-1} j_n} |1\rangle\right) \otimes \dots \otimes \left(|0\rangle + e^{2\pi i 0.j_1 j_2 \dots j_n} |1\rangle\right)
+
+$$
+
 其中，$0.j_l \dots j_m$ 代表二進位小數，且 $0.j_l \dots j_m = j_l/2 + j_{l+1}/4 + \dots + j_m/2^{m-l+1}$ 。
 
 這個數學式極具啟發性。它表明第 $m$ 個量子位元的狀態，僅依賴於從輸入位元 $j_{n-m+1}$ 到 $j_n$ 的資訊來進行相位旋轉。因此，創造出此狀態的量子電路，可以單純透過作用於單一量子位元的阿達馬閘 $H$ ，以及作用於兩個量子位元之間的受控相位平移閘 $R_k$ （將相位旋轉 $e^{2\pi i / 2^k}$ 的閘）的組合，以遞迴的方式建構出來。對第1個量子位元應用 $H$ ，接著受控於第2、第3個位元應用 $R_2, R_3, \dots$ ，對每個位元重複此操作，總計使用 $n + (n-1) + \dots + 1 = n(n+1)/2 = O(n^2)$ 個閘，就能精確地實作 QFT 。
@@ -1794,32 +2279,68 @@ flowchart LR
 **【步驟1：初始化與生成疊加態】**
 將整個系統設定為初始狀態 ** $|\psi_0\rangle$ ** $= |0\rangle^{\otimes t} |0\rangle^{\otimes L}$ 。
 接著，對第1個暫存器的所有量子位元應用阿達馬閘 $H^{\otimes t}$ ，生成指數級多個狀態的等機率疊加態。
-$$ |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |0\rangle $$
+
+$$
+
+|\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |0\rangle
+
+$$
+
 在此，第1個暫存器同時保持著從 $0$ 到 $M-1$ 所有整數的狀態。
 
 **【步驟2：透過量子預言機進行函數求值】**
 應用量子預言機 $U_f$ ，在疊加狀態下計算函數 $f(x) = a^x \bmod N$ ，並將結果儲存於第2個暫存器中。
-$$ |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |a^x \bmod N\rangle $$
+
+$$
+
+|\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |a^x \bmod N\rangle
+
+$$
+
 這個狀態 ** $|\psi_2\rangle$ ** 是輸入 $x$ 與輸出 $f(x)$ 呈現強烈糾纏的狀態。
 
 **【步驟3：第2暫存器的觀測（概念性）】**
 為了便於理解理論，我們假設在此觀測了第2個暫存器（在實際的演算法中，即使省略觀測，數學上的結果也完全相同）。透過觀測，第2個暫存器會塌縮成某個特定的值 $y = a^{x_0} \bmod N$ 。這裡的 $x_0$ 是滿足 $0 \le x_0 < r$ 的某個最小偏移值。
 此時，第1個暫存器會瞬間塌縮為「使得函數 $f(x)$ 輸出為 $y$ 的所有輸入 $x$」的疊加態。由於函數具有週期 $r$ ，這類的 $x$ 會以等間距排列，即 $x_0, x_0 + r, x_0 + 2r, \dots$ 。
-$$ |\psi_3\rangle = \frac{1}{\sqrt{A}} \sum_{m=0}^{A-1} |x_0 + m r\rangle \otimes |y\rangle $$
+
+$$
+
+|\psi_3\rangle = \frac{1}{\sqrt{A}} \sum_{m=0}^{A-1} |x_0 + m r\rangle \otimes |y\rangle
+
+$$
+
 其中 $A$ 是疊加態中包含的項數，且 $A \approx M/r$ 。
 若專注於第1個暫存器，這是一個具有週期 $r$ 的梳狀機率分佈狀態。然而，如果直接對這個狀態進行測量，只會等機率地得到隨機的 $x_0 + mr$ ，因為偏移值 $x_0$ 是未知的，所以無法得知週期 $r$ 。這時就需要 QFT 的出場了。
 
 **【步驟4：應用反量子傅立葉轉換】**
 對第1個暫存器應用反量子傅立葉轉換（QFT$^\dagger$）。
-$$ \text{QFT}^\dagger |\psi_3\rangle = \frac{1}{\sqrt{A M}} \sum_{k=0}^{M-1} \sum_{m=0}^{A-1} e^{-2\pi i k (x_0 + m r) / M} |k\rangle $$
+
+$$
+
+\text{QFT}^\dagger |\psi_3\rangle = \frac{1}{\sqrt{A M}} \sum_{k=0}^{M-1} \sum_{m=0}^{A-1} e^{-2\pi i k (x_0 + m r) / M} |k\rangle
+
+$$
+
 針對狀態 $|k\rangle$ 進行整理，並探究其機率幅 $c_k$ 。
-$$ c_k = \frac{1}{\sqrt{A M}} e^{-2\pi i k x_0 / M} \sum_{m=0}^{A-1} e^{-2\pi i k m r / M} $$
+
+$$
+
+c_k = \frac{1}{\sqrt{A M}} e^{-2\pi i k x_0 / M} \sum_{m=0}^{A-1} e^{-2\pi i k m r / M}
+
+$$
+
 這個式子中加總的部分，是公比為 $e^{-2\pi i k r / M}$ 的等比數列總和。如果相位 $k r / M$ 大幅偏離整數，向量會在複數平面上一邊旋轉一邊相加，因而產生破壞性干涉（Destructive Interference），使得機率幅幾乎為 $0$ 。
 相反地，如果 $k r / M$ 極度接近整數 $j$ ，亦即當 $k \approx j \frac{M}{r}$ 時，複數平面上的向量會指向同一個方向，並透過建設性干涉（Constructive Interference）使得機率幅被放大。
 
 **【步驟5：測量與連分數展開】**
 測量第1個暫存器時，將會以高機率觀測到滿足 $k \approx j \frac{M}{r}$ 的整數 $k$ 。將兩邊除以 $M$ ，可得到以下關係：
-$$ \frac{k}{M} \approx \frac{j}{r} $$
+
+$$
+
+\frac{k}{M} \approx \frac{j}{r}
+
+$$
+
 其中，$k$ 與 $M$ 是已知的值，而 $j$ 與 $r$ 是未知的。由於我們選擇 $t$ 使得 $M \ge N^2$ ，因此 $k/M$ 對於未知的分數 $j/r$ 提供了一個極高精度的近似： $\left| \frac{k}{M} - \frac{j}{r} \right| \le \frac{1}{2M} < \frac{1}{2r^2}$ 。
 根據丟番圖近似定理（勒讓德定理），滿足此條件的有理數 $j/r$ ，必然包含在實數 $k/M$ 的「連分數展開（Continued Fraction Expansion）」的漸近分數中。
 因此，藉由使用古典電腦在多項式時間內計算 $k/M$ 的連分數展開，就可以決定出作為分母的週期 $r$ 。至此求階問題已獲解決，其結果使得導出RSA加密的金鑰，也就是質因數 $p$ 與 $q$ 成為可能。
@@ -1856,25 +2377,33 @@ $$ \frac{k}{M} \approx \frac{j}{r} $$
 量子演算法的第一步，總是從為了同時綜觀整個搜尋空間的準備工作開始。為了創造出所有可能性均等疊加的狀態，我們對 $n$ 個量子位元的初始狀態 $|0\rangle^{\otimes n}$，透過張量積平行地對每個量子位元應用Hadamard閘 $H$。我們將由此獲得的初始均等疊加態定義為 $|s\rangle$。
 
 $$
+
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
+
 $$
 
 這個狀態 ** $|s\rangle$ ** ，在希爾伯特空間中，可以明確地分離為正確答案狀態 $|w\rangle$ 與其他所有錯誤答案狀態的線性組合。為了讓未來的幾何學解釋更容易在視覺上掌握，我們導入一個僅將錯誤答案狀態均等疊加並正規化的新向量 $|s^\perp\rangle$，其定義如下：
 
 $$
+
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
+
 $$
 
 根據這個定義，狀態 $|s^\perp\rangle$ 與正確答案狀態 $|w\rangle$ 是互相正交的（ $\langle s^\perp | w \rangle = 0$ ）。於是，初始的均等疊加態 ** $|s\rangle$ ** ，在這些互為正交的兩個向量 $|w\rangle$ 與 $|s^\perp\rangle$ 所張成的二維希爾伯特子空間上，可以極為簡單地展開如下：
 
 $$
+
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
+
 $$
 
 在此，我們導入一個微小的角度 $\theta$，使得 $\sin \theta = \frac{1}{\sqrt{N}}$（當 $N$ 夠大時， $\theta \approx 1/\sqrt{N}$）。那麼，這個狀態可以使用三角函數改寫為更優雅的幾何學表示：
 
 $$
+
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
+
 $$
 
 這個數學式所訴說的，是在初始狀態 ** $|s\rangle$ ** 中觀測到正確答案狀態 $|w\rangle$ 的機率，僅僅只有冷酷的 $|\sin \theta|^2 = \frac{1}{N}$ 這個事實。Grover演算法的至高目標，就在於透過反覆應用後述的神諭與擴散算符的組合，將這個狀態向量 ** $|s\rangle$ ** 在希爾伯特空間的二維平面內，逐漸朝 $|w\rangle$ 的方向「旋轉」，並將觀測到正確答案的機率無限逼近理論極限的 $1$（放大振幅）。
@@ -1886,40 +2415,54 @@ $$
 通常，這個神諭會使用一個輔助量子位元（ancilla qubit），以可逆的形式實作函數的評估。我們將表示搜尋條件的布林函數 $f(x)$ 定義為：當 $x = w$ 時回傳 $f(w) = 1$，而對於其他所有 $x \neq w$ 則回傳 $f(x) = 0$。此時，神諭的作用可以使用互斥或（XOR） $\oplus$ 寫成如下形式：
 
 $$
+
 O_f \left( |x\rangle \otimes |y\rangle \right) = |x\rangle \otimes |y \oplus f(x)\rangle
+
 $$
 
 在這裡，Grover演算法的巧妙之處便閃耀出來。我們不輸入計算基底，而是預先將輔助量子位元 $|y\rangle$ 初始化為 $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ 的疊加態後輸入。接著，就會發生被稱為 **相位反衝（Phase Kickback）** 的量子特有驚人現象。讓我們具體計算一下：
 
 $$
+
 \begin{align*}
 O_f \left( |x\rangle \otimes |-\rangle \right) &= O_f \left( |x\rangle \otimes \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) \\
 &= \frac{1}{\sqrt{2}} \left( O_f |x\rangle |0\rangle - O_f |x\rangle |1\rangle \right) \\
 &= \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right)
 \end{align*}
+
 $$
 
 我們將這個式子分為輸入狀態是錯誤答案和正確答案兩種情況來評估。
 如果 $x \neq w$（也就是 $f(x) = 0$），狀態完全不會改變。
+
 $$
+
 \frac{1}{\sqrt{2}} \left( |x\rangle |0\rangle - |x\rangle |1\rangle \right) = |x\rangle |-\rangle
+
 $$
 
 另一方面，如果 $x = w$（也就是 $f(w) = 1$），輔助量子位元的狀態會反轉 $0 \to 1$、$1 \to 0$，整體上會有一個負號跑到狀態的前面。
+
 $$
+
 \frac{1}{\sqrt{2}} \left( |x\rangle |1\rangle - |x\rangle |0\rangle \right) = - \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) = - |x\rangle |-\rangle
+
 $$
 
 這個結果極為重要。輔助量子位元 $|-\rangle$ 的狀態在運算前後完全不變，僅僅作為「催化劑」發揮作用。取而代之的是，函數的評估結果 $f(x)$ 被作為主量子暫存器 $|x\rangle$ 的 **振幅正負號（相位）** 「反衝（Kickback）」了回來。利用這個性質，我們可以省略輔助量子位元的描述，將神諭對主暫存器的作用，以新的么正算符 $U_w$ 簡單且優雅地重新定義如下：
 
 $$
+
 U_w |x\rangle = (-1)^{f(x)} |x\rangle = \begin{cases} -|x\rangle & (x = w) \\ |x\rangle & (x \neq w) \end{cases}
+
 $$
 
 這個相位神諭 $U_w$，可以使用狄拉克的括號標記法（bra-ket notation）的投影算符表示，明確地描述如下：
 
 $$
+
 U_w = I - 2|w\rangle\langle w|
+
 $$
 
 這裡 $I$ 是 $N \times N$ 的單位算符。如果訴諸幾何學的直覺，這個神諭 $U_w$ 在由 $|s^\perp\rangle$ 和 $|w\rangle$ 所張成的二維實數平面中，正是 **以橫軸 $|s^\perp\rangle$ 軸為對稱軸對狀態向量進行的鏡射（Reflection）** 。因為只有正確答案狀態的成分被反轉了符號，而錯誤答案狀態的成分則保持原樣。
@@ -1931,7 +2474,9 @@ $$
 擴散算符 $U_s$ 在數學上定義如下：
 
 $$
+
 U_s = 2|s\rangle\langle s| - I
+
 $$
 
 這個算符為何被稱為「繞平均值反轉（Inversion about the mean）」，我們用一般的疊加態 $|\psi\rangle = \sum_{x=0}^{N-1} \alpha_x |x\rangle$ 來嚴格證明其機制。
@@ -1939,7 +2484,9 @@ $$
 首先，計算均等疊加態 $|s\rangle$ 與當前狀態 $|\psi\rangle$ 的內積。
 
 $$
+
 \langle s | \psi \rangle = \left( \frac{1}{\sqrt{N}} \sum_{y=0}^{N-1} \langle y| \right) \left( \sum_{x=0}^{N-1} \alpha_x |x\rangle \right) = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} \alpha_x
+
 $$
 
 將這個內積的值再除以 $\sqrt{N}$，就會得到所有振幅 $\alpha_x$ 的算術平均值（我們將其定義為 $\mu$）。也就是說，可以表示為 $\mu = \frac{1}{N} \sum_{x=0}^{N-1} \alpha_x = \frac{1}{\sqrt{N}} \langle s | \psi \rangle$。因此， $\langle s | \psi \rangle = \sqrt{N} \mu$。
@@ -1947,6 +2494,7 @@ $$
 利用這個關係式，我們計算 $U_s$ 作用於狀態 $|\psi\rangle$ 的結果。
 
 $$
+
 \begin{align*}
 U_s |\psi\rangle &= (2|s\rangle\langle s| - I) \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
 &= 2|s\rangle \langle s | \psi \rangle - \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
@@ -1954,6 +2502,7 @@ U_s |\psi\rangle &= (2|s\rangle\langle s| - I) \sum_{x=0}^{N-1} \alpha_x |x\rang
 &= 2 \mu \sum_{x=0}^{N-1} |x\rangle - \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
 &= \sum_{x=0}^{N-1} (2\mu - \alpha_x) |x\rangle
 \end{align*}
+
 $$
 
 結果所得狀態的各個基底 $|x\rangle$ 的新振幅變成了 $(2\mu - \alpha_x)$。這個式子可以變形為 $\mu + (\mu - \alpha_x)$。這顯示了原本的振幅 $\alpha_x$ 以整體的平均值 $\mu$ 為基準，反轉到了正好相反（對稱）的位置。這正是擴散算符被稱為「繞平均值反轉」的數學根據。
@@ -1969,7 +2518,9 @@ $$
 Grover演算法的1次反覆單位，亦即 **Grover算符 $G$** ，被定義為神諭 $U_w$ 與擴散算符 $U_s$ 的連續應用，也就是它們的乘積。
 
 $$
+
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
+
 $$
 
 在這裡，歐幾里得幾何學與線性代數交織而成的極度優美的定理成為了主角。這個定理是：「以兩條互相相交的直線為對稱軸的連續兩次鏡射（Reflection）組合，會等同於一個純旋轉（Rotation），其旋轉角度為該兩直線夾角的兩倍」。
@@ -1989,39 +2540,51 @@ $$
 使用數學歸納法，我們來證明經過 $t$ 次反覆後的狀態總是能簡潔地表示如下：
 
 $$
+
 |\psi_t\rangle = G^t |s\rangle = \cos((2t+1)\theta) |s^\perp\rangle + \sin((2t+1)\theta) |w\rangle
+
 $$
 
 當 $t=0$ 時，顯然成立。假設 $|\psi_t\rangle$ 如上式給出，我們進一步計算進行了1次迭代的狀態 $|\psi_{t+1}\rangle = G |\psi_t\rangle$。
 首先，應用神諭 $U_w$， $|w\rangle$ 成分的符號會反轉。
 
 $$
+
 U_w |\psi_t\rangle = \cos((2t+1)\theta) |s^\perp\rangle - \sin((2t+1)\theta) |w\rangle
+
 $$
 
 接著，應用擴散算符 $U_s = 2|s\rangle\langle s| - I$。為了計算這個，導入使用基底向量 $\{|s^\perp\rangle, |w\rangle\}$ 的 2×2 矩陣表示是最清晰的。
 
 神諭 $U_w$ 的矩陣表示是以下的對角矩陣：
+
 $$
+
 U_w = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+
 $$
 
 因為初始狀態向量 $|s\rangle$ 可以用行向量 $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ 表示，投影算符 $|s\rangle\langle s|$ 使用外積計算後，由此求得的 $U_s$ 如下所示：
 
 $$
+
 \begin{align*}
 U_s &= 2 \begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix} \begin{pmatrix} \cos\theta & \sin\theta \end{pmatrix} - \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \\
 &= \begin{pmatrix} 2\cos^2\theta - 1 & 2\sin\theta\cos\theta \\ 2\sin\theta\cos\theta & 2\sin^2\theta - 1 \end{pmatrix} \\
 &= \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\theta) \end{pmatrix}
 \end{align*}
+
 $$
+
 （這裡，使用了倍角公式 $\cos(2\theta) = 2\cos^2\theta - 1$ 與 $\sin(2\theta) = 2\sin\theta\cos\theta$）
 
 因此，Grover算符 $G = U_s U_w$ 整體的矩陣表示，就是這兩個矩陣的乘積。
 
 $$
+
 G = \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\theta) \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 = \begin{pmatrix} \cos(2\theta) & -\sin(2\theta) \\ \sin(2\theta) & \cos(2\theta) \end{pmatrix}
+
 $$
 
 令人驚訝的是，得到的矩陣正是幾何學中非常為人熟知的 **角度 $2\theta$ 的旋轉矩陣** 。因此，對初始向量 $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ 連續應用算符 $G$ 達 $t$ 次，在幾何學上就等於每次將向量逆時針旋轉 $2\theta$。因此，總角度為初始角度 $\theta$ 加上 $t \times 2\theta$，即 $\theta + 2t\theta = (2t+1)\theta$。如此便優美地完成了歸納法的證明。
@@ -2049,7 +2612,9 @@ graph LR
 這個電路圖所展示的，是擴散算符 $U_s = 2|s\rangle\langle s| - I$ 極具實用性的實作方法。因為狀態 $|s\rangle$ 是作為 $H^{\otimes n} |0\rangle^{\otimes n}$ 產生的，所以算符可以分解如下：
 
 $$
+
 U_s = 2(H^{\otimes n} |0\rangle^{\otimes n})(\langle 0|^{\otimes n} H^{\otimes n}) - I = H^{\otimes n} (2|0\rangle\langle 0| - I) H^{\otimes n}
+
 $$
 
 換句話說，透過Hadamard轉換 $H^{\otimes n}$ 轉換到計算基底，接著應用條件式相位平移算符，該算符僅在所有量子位元都為 $|0\rangle$ 時不反轉相位（或者定義為僅在 $|0\rangle$ 時給予負相位，兩者是等價的，僅僅是全域相位的差異），然後再次透過Hadamard轉換回到原來的基底。透過採取這種三明治結構，就可以在任何量子電腦上有效率地實作「繞平均值反轉」。
@@ -2061,19 +2626,25 @@ $$
 在進行了 $t$ 次反覆後，在計算基底上觀測量子暫存器，並得到正確答案狀態 $|w\rangle$ 的機率 $P(w)$，是由狀態向量 $|\psi_t\rangle$ 的 $|w\rangle$ 成分的振幅絕對值的平方所給出：
 
 $$
+
 P(w) = |\langle w | \psi_t \rangle|^2 = \sin^2((2t+1)\theta)
+
 $$
 
 我們的終極目標，是將這個機率 $P(w)$ 最大化，也就是盡可能逼近理論上的上限 $1$。正弦函數的平方 $\sin^2(x)$ 取得最大值 $1$ 的時候，是當引數 $x$ 等於 $\frac{\pi}{2}$（90度）時。因此，為了求得最佳的反覆次數 $t$，我們可以列出如下的方程式：
 
 $$
+
 (2t+1)\theta \approx \frac{\pi}{2}
+
 $$
 
 解這個關於 $t$ 的方程式，得到：
 
 $$
+
 t \approx \frac{\pi}{4\theta} - \frac{1}{2}
+
 $$
 
 在實用規模的資料庫搜尋中，元素數量 $N$ 將是一個天文數字般巨大的數。此時，角度 $\theta$ 將是極度接近 $0$ 的微小值。對於微小的 $\theta$，透過取泰勒展開（麥克勞林展開）的一次項，會有很好的近似 $\sin \theta \approx \theta$ 成立。由於初始状態的定義為 $\sin \theta = \frac{1}{\sqrt{N}}$，所以可以視為 $\theta \approx \frac{1}{\sqrt{N}}$。
@@ -2081,7 +2652,9 @@ $$
 將這個近似式代入剛才推導出的 $t$ 的方程式中，最佳的反覆次數（最佳迭代數） $R$ 就可以鮮明地推導如下：
 
 $$
+
 R \approx \frac{\pi}{4} \sqrt{N}
+
 $$
 
 這個結果所代表的意義，驚人得足以撼動資訊科學的歷史。在古典電腦中，為了從隨機洗牌的搜尋空間中找出正確答案，最壞的情況下需要 $N$ 次，即使取平均值也需要 $N/2$ 次，也就是不可避免地需要與元素數量成正比的搜尋時間（計算複雜度為 $O(N)$ ）。然而，在量子電腦上運作的Grover演算法，透過利用干涉來放大機率，僅僅需要 $\frac{\pi}{4} \sqrt{N}$ 次的查詢次數，就幾乎可以肯定地（以 $1 - O(1/N)$ 極高的機率）抵達正確答案狀態。計算複雜度變成了 $O(\sqrt{N})$，成功地將計算時間壓縮到了平方根的尺度。
@@ -2095,16 +2668,22 @@ $$
 當存在 $M$ 個解時，我們將所有正確答案狀態的均等疊加態重新定義為 $|W\rangle$，並將所有錯誤答案狀態的均等疊加態重新定義為 $|W^\perp\rangle$：
 
 $$
+
 |W\rangle = \frac{1}{\sqrt{M}} \sum_{x \in \text{Solutions}} |x\rangle
+
 $$
 $$
+
 |W^\perp\rangle = \frac{1}{\sqrt{N-M}} \sum_{x \notin \text{Solutions}} |x\rangle
+
 $$
 
 於是，初始的均等疊加態 $|s\rangle$，可以使用這兩個正交的向量展開如下：
 
 $$
+
 |s\rangle = \sqrt{\frac{N-M}{N}} |W^\perp\rangle + \sqrt{\frac{M}{N}} |W\rangle
+
 $$
 
 在此，我們定義一個新的角度 $\theta'$，使得 $\sin \theta' = \sqrt{\frac{M}{N}}$。在這個定義下，應用與單一解情況完全相同的Grover算符 $G$（不過神諭已被擴展為會對全部 $M$ 個解反轉相位），狀態向量就會在由 $|W^\perp\rangle$ 與 $|W\rangle$ 所張成的平面內，每次反覆都旋轉 $2\theta'$。
@@ -2112,7 +2691,9 @@ $$
 透過相同的邏輯推演，最佳的反覆次數為 $\frac{\pi}{4\theta'}$，在 $M \ll N$ 的情況下，可以近似如下：
 
 $$
+
 R \approx \frac{\pi}{4} \sqrt{\frac{N}{M}}
+
 $$
 
 這個式子表明，理所當然地，解的數量 $M$ 越多，所需的問題反覆次數（搜尋時間）就越短。例如，如果存在4個解，所需的時間就會減半。即使解的數量 $M$ 是未知的，也可以透過使用結合Grover演算法與量子相位估計（Quantum Phase Estimation）的高階手法——被稱為 **量子計數演算法（Quantum Counting Algorithm）** ——來快速估計出解的數量 $M$ 本身，然後再進行適當次數的振幅放大。
@@ -2142,17 +2723,43 @@ Shor的質因數分解演算法巧妙地利用了整數乘法群所具有的「�
 為了嚴謹地描述量子系統的去相干，必須將視角從基於封閉系統狀態向量的純態動力學，轉移到開放量子系統的密度矩陣動力學。考慮環境系統 $E$ 與主系統 $S$ 之複合系統中的么正演化，並透過部分跡（Partial Trace）消除環境系統的自由度，主系統的狀態變化便可描述為「完全正值保跡映射（Completely Positive Trace-Preserving Map, CPTP 映射）」。
 
 任意量子通道 $\mathcal{E}$ 皆可使用克勞斯表示（Kraus Representation）展開如下：
-$$ \mathcal{E}(\rho) = \sum_{k} E_k \rho E_k^\dagger $$
+
+$$
+
+\mathcal{E}(\rho) = \sum_{k} E_k \rho E_k^\dagger
+
+$$
+
 這裡， $E_k$ 被稱為克勞斯算符（Kraus Operators），滿足代表機率守恆的保跡條件 $\sum_k E_k^\dagger E_k = I$ 。
 
 在古典資訊中，對資訊單位位元的錯誤僅有「0變成1」或「1變成0」的位元翻轉（Bit Flip）。然而，在量子系統中存在著疊加態相位發生變動的致命錯誤，稱為「相位翻轉（Phase Flip）」。代表性的單一量子位元雜訊通道之克勞斯算符如下所示：
 
 1. ** 位元翻轉通道 (Bit Flip Channel) ** ：以機率 $p$ 作用 $X$ 閘。
-   $$ E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} X $$
+   
+
+$$
+
+E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} X
+
+$$
+
 2. ** 相位翻轉通道 (Phase Flip Channel) ** ：以機率 $p$ 作用 $Z$ 閘。用來描述相對相位的崩潰（純粹去相干）。這是純態 $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ 的密度矩陣非對角成分呈指數衰減現象的直接原因。
-   $$ E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} Z $$
+   
+
+$$
+
+E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} Z
+
+$$
+
 3. ** 去極化通道 (Depolarizing Channel) ** ：以機率 $p$ 使狀態完全趨近於最大混合態（白雜訊） $I/2$ 。
-   $$ E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{\frac{p}{3}} X, \quad E_2 = \sqrt{\frac{p}{3}} Y, \quad E_3 = \sqrt{\frac{p}{3}} Z $$
+   
+
+$$
+
+E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{\frac{p}{3}} X, \quad E_2 = \sqrt{\frac{p}{3}} Y, \quad E_3 = \sqrt{\frac{p}{3}} Z
+
+$$
 
 在建構量子錯誤更正時，阻擋在前的第一道障礙便是「不可複製定理（No-Cloning Theorem）」。不存在任何么正轉換能夠將未知的量子態 $|\psi\rangle$ 複製成如 $|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$ 的狀態。因此，像古典錯誤更正那樣「將相同資訊複製到三個位元並進行多數決」的樸素方法，在量子系統中是不可能的。此外，一旦測量量子態就會引起波包塌縮，疊加態也會隨之被破壞。如何在不破壞未知資訊的情況下特定出錯誤，成為了核心課題。
 
@@ -2162,7 +2769,13 @@ $$ \mathcal{E}(\rho) = \sum_{k} E_k \rho E_k^\dagger $$
 
 作為最簡單的例子，我們建構一個「3量子位元位元翻轉碼」，以保護 1 個量子位元的狀態 $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ 免受機率性位元翻轉的影響。
 將邏輯基底（Logical Basis）定義如下：
-$$ |0\rangle_L = |000\rangle, \quad |1\rangle_L = |111\rangle $$
+
+$$
+
+|0\rangle_L = |000\rangle, \quad |1\rangle_L = |111\rangle
+
+$$
+
 邏輯態變為 $|\psi\rangle_L = \alpha |000\rangle + \beta |111\rangle$ 。這並非複製，而是編碼為 GHZ 型的糾纏態。
 
 在此，假設第 1 個量子位元發生了位元翻轉錯誤 $X_1 = X \otimes I \otimes I$ 。狀態將變化為 $|\psi'\rangle = \alpha |100\rangle + \beta |011\rangle$ 。
@@ -2170,12 +2783,29 @@ $$ |0\rangle_L = |000\rangle, \quad |1\rangle_L = |111\rangle $$
 
 原始編碼空間中的任意向量 $|\psi\rangle_L$ ，都是 $Z_1 Z_2$ 與 $Z_2 Z_3$ 對應特徵值 $+1$ 的特徵向量（亦即， $Z_1 Z_2 |\psi\rangle_L = |\psi\rangle_L$ ）。
 然而，對於錯誤狀態 $|\psi'\rangle$ ，由於 $X$ 與 $Z$ 反對易（ $\{X, Z\} = 0$ ）的包立代數性質：
-$$ Z_1 Z_2 |\psi'\rangle = Z_1 Z_2 X_1 |\psi\rangle_L = -X_1 Z_1 Z_2 |\psi\rangle_L = - |\psi'\rangle $$
-$$ Z_2 Z_3 |\psi'\rangle = Z_2 Z_3 X_1 |\psi\rangle_L = X_1 Z_2 Z_3 |\psi\rangle_L = + |\psi'\rangle $$
+
+$$
+
+Z_1 Z_2 |\psi'\rangle = Z_1 Z_2 X_1 |\psi\rangle_L = -X_1 Z_1 Z_2 |\psi\rangle_L = - |\psi'\rangle
+
+$$
+
+$$
+
+Z_2 Z_3 |\psi'\rangle = Z_2 Z_3 X_1 |\psi\rangle_L = X_1 Z_2 Z_3 |\psi\rangle_L = + |\psi'\rangle
+
+$$
+
 測量結果（症狀）將為 $(-1, +1)$ ，藉此僅確立了「第 1 個位元發生了 $X$ 錯誤」的事實。由於完全沒有洩漏關於疊加態係數 $\alpha, \beta$ 的資訊，因此不會發生測量導致的狀態破壞。其後，再次套用 $X_1$ 即可完全復原為原始狀態 $|\psi\rangle_L$ 。
 
 同理，為了更正相位翻轉錯誤 $Z$ ，我們使用基於阿達瑪基底 $\{|+\rangle, |-\rangle\}$ 的「3量子位元相位翻轉碼」。
-$$ |0\rangle_L = |+++\rangle, \quad |1\rangle_L = |---\rangle $$
+
+$$
+
+|0\rangle_L = |+++\rangle, \quad |1\rangle_L = |---\rangle
+
+$$
+
 在這種情況下，症狀測量則使用 $X_1 X_2$ 與 $X_2 X_3$ 。
 
 在此展現了量子力學令人驚嘆的特性。因與環境交互作用產生的錯誤，通常是如同 $E(\theta) = \cos(\theta) I - i \sin(\theta) X$ 般的連續旋轉。然而，透過進行症狀測量，該狀態將機率性地 ** 投影 ** 至「無錯誤（ $I$ ）」或「完全錯誤（ $X$ ）」任一特徵態。也就是說，無限存在的連續性錯誤，會透過測量在量子力學上被「數位化」為離散的包立錯誤。
@@ -2185,19 +2815,50 @@ $$ |0\rangle_L = |+++\rangle, \quad |1\rangle_L = |---\rangle $$
 前述的編碼只能更正位元翻轉或相位翻轉其中之一。1995 年，彼得·秀爾發表了能同時更正兩種錯誤的劃時代「秀爾 9 量子位元碼（Shor's 9-Qubit Code）」。它是將 3 量子位元的位元翻轉碼串接（Concatenation）並嵌套在 3 量子位元的相位翻轉碼的各個節點內部所建構而成。
 
 邏輯基底如下所示：
-$$ |0\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle ) $$
-$$ |1\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle ) $$
+
+$$
+
+|0\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle )
+
+$$
+
+$$
+
+|1\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle )
+
+$$
 
 將秀爾碼等錯誤更正予以一般化，並賦予穩固數學基礎的，是丹尼爾·高斯曼（Daniel Gottesman）提出的「穩定子形式（Stabilizer Formalism）」。
 令 $n$ 量子位元的包立群為 $\mathcal{P}_n$ 。穩定子群 $\mathcal{S}$ 是 $\mathcal{P}_n$ 的可換子群，並將編碼空間 $\mathcal{C}$ 定義為「對於群 $\mathcal{S}$ 中的所有元素 $S \in \mathcal{S}$ ，其特徵值皆為 $+1$ 的狀態 $|\psi\rangle$ 的集合」。在 $n$ 量子位元系統中若有 $k$ 個獨立的生成元（Generator），編碼空間的維度即為 $2^{n-k}$ ，這代表了邏輯量子位元數。
 
 在秀爾碼（ $n=9$ ）的情況下，為編碼 1 個邏輯位元，是由 $k=8$ 個獨立的生成元所構成。
 用於偵測位元翻轉的 $Z$ 系統穩定子（6 個）：
-$$ S_1 = Z_1 Z_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9, \quad S_2 = I_1 Z_2 Z_3 I_4 I_5 I_6 I_7 I_8 I_9 $$
-$$ \dots, \quad S_6 = I_1 I_2 I_3 I_4 I_5 I_6 I_7 Z_8 Z_9 $$
+
+$$
+
+S_1 = Z_1 Z_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9, \quad S_2 = I_1 Z_2 Z_3 I_4 I_5 I_6 I_7 I_8 I_9
+
+$$
+
+$$
+
+\dots, \quad S_6 = I_1 I_2 I_3 I_4 I_5 I_6 I_7 Z_8 Z_9
+
+$$
+
 用於偵測相位翻轉的 $X$ 系統穩定子（2 個）：
-$$ S_7 = X_1 X_2 X_3 X_4 X_5 X_6 I_7 I_8 I_9 $$
-$$ S_8 = I_1 I_2 I_3 X_4 X_5 X_6 X_7 X_8 X_9 $$
+
+$$
+
+S_7 = X_1 X_2 X_3 X_4 X_5 X_6 I_7 I_8 I_9
+
+$$
+
+$$
+
+S_8 = I_1 I_2 I_3 X_4 X_5 X_6 X_7 X_8 X_9
+
+$$
 
 若在任意量子位元上發生了錯誤 $E \in \mathcal{P}_n$ ，只要它與 $\mathcal{S}$ 的任何一個生成元反對易，該穩定子的測量結果便會是 $-1$ ，進而特定出錯誤的種類與位置。穩定子的概念並非追蹤量子態本身，而是追蹤規定系統對稱性的算符之代數結構，提供了一種類似海森堡繪景（Heisenberg Picture）極為強大的方法。
 
@@ -2238,7 +2899,13 @@ graph TD
 
 在表面碼中，量子位元配置在二維晶格的頂點（或邊）上，僅使用相鄰量子位元間的局部交互作用來執行穩定子測量。
 哈密頓算符描述如下：
-$$ H = - \sum_{v} A_v - \sum_{p} B_p $$
+
+$$
+
+H = - \sum_{v} A_v - \sum_{p} B_p
+
+$$
+
 這裡， $A_v$ 是對頂點（Vertex）周圍 4 個量子位元作用之 $X$ 算符的張量積（頂點算符： $A_v = \prod_{i \in \text{star}(v)} X_i$ ）， $B_p$ 是對格狀區塊（面，Plaquette）周圍 4 個量子位元作用之 $Z$ 算符的張量積（面算符： $B_p = \prod_{i \in \text{boundary}(p)} Z_i$ ）。
 它們彼此對易（ $[A_v, B_p] = 0$ ），邏輯狀態被編碼在所有 $A_v$ 與 $B_p$ 的特徵值皆為 $+1$ 的基態空間中。令人驚嘆的是，建構於虧格（Genus）為 $g$ 的二維流形上之環面碼，其基態簡併度為 $4^g$ ，在環面（ $g=1$ ）上自然地編碼了 2 個邏輯量子位元。
 
@@ -2287,7 +2954,9 @@ $$ H = - \sum_{v} A_v - \sum_{p} B_p $$
 微細加工製造的常規 LC 共振電路（由電感 $ L $ 與電容 $ C $ 組成的系統），在冷卻至極低溫並予以量子化後，會形成量子力學中的簡諧振子（Harmonic Oscillator）。其哈密頓量可利用創生算符 $ \hat{a}^\dagger $ 與湮滅算符 $ \hat{a} $ 表示如下：
 
 $$
+
 \hat{H}_{\text{LC}} = \hbar \omega_r \left( \hat{a}^\dagger \hat{a} + \frac{1}{2} \right)
+
 $$
 
 其中 $ \omega_r = 1/\sqrt{LC} $ 為共振頻率。此系統的能階 $ E_n = \hbar \omega_r (n + 1/2) $ 為等間距分佈。若將此系統的最低能量態 $ |0\rangle $ 與第一激發態 $ |1\rangle $ 作為量子位元使用，當照射頻率為 $ \omega_r $ 的微波以執行量子閘操作（例如 $ |0\rangle \leftrightarrow |1\rangle $ 的躍遷）時，能階間距相同的 $ |1\rangle \leftrightarrow |2\rangle $ 與 $ |2\rangle \leftrightarrow |3\rangle $ 等躍遷亦會同時被激發。如此一來，系統便無法作為有效的二能階系統運作。
@@ -2302,19 +2971,25 @@ Transmon 是透過刻意大幅增加與約瑟夫森能量 $ E_J $ 並聯的分�
 代表庫珀對數目的電荷算符 $ \hat{n} $ 與代表超導相位差的相位算符 $ \hat{\phi} $ 為一對正則共軛變數，滿足對易關係 $ [\hat{\phi}, \hat{n}] = i $ 。Transmon 的哈密頓量可嚴格表述如下：
 
 $$
+
 \hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+
 $$
 
 其中， $ n_g $ 為環境或閘極電壓所引起的偏移電荷（offset charge）。在 $ E_J \gg E_C $ 的極限下，相位的量子漲落被有效抑制，因此可對餘弦項進行泰勒展開，將其視為非諧振子（Anharmonic Oscillator）處理：
 
 $$
+
 - E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+
 $$
 
 正是此 $ \hat{\phi}^4 $ 項為系統賦予了非簡諧性（Anharmonicity）。經微擾理論計算，能階間的非簡諧性 $ \alpha $ 可近似為：
 
 $$
+
 \alpha \equiv (E_2 - E_1) - (E_1 - E_0) \approx -E_C
+
 $$
 
 由於存在此負非簡諧性（即 $ E_1 \to E_2 $ 的躍遷頻率小於 $ E_0 \to E_1 $ ），我們便能利用微波脈衝在 $ |0\rangle $ 與 $ |1\rangle $ 的計算基底空間內，安全地執行單量子位元閘操作，而不致洩漏至更高能階。
@@ -2325,13 +3000,17 @@ $$
 量子位元與讀取用微波共振腔所組成的耦合系統，可由簡斯-卡明斯（Jaynes-Cummings）模型加以描述：
 
 $$
+
 \hat{H}_{\text{JC}} = \frac{\hbar \omega_q}{2} \hat{\sigma}_z + \hbar \omega_r \hat{a}^\dagger \hat{a} + \hbar g (\hat{\sigma}_+ \hat{a} + \hat{\sigma}_- \hat{a}^\dagger)
+
 $$
 
 此處 $ g $ 為耦合強度。當量子位元的躍遷頻率 $ \omega_q $ 與共振腔頻率 $ \omega_r $ 相距較遠的色散體系（dispersive regime，即 $ |\omega_q - \omega_r| \gg g $ ）中，透過施里弗-沃爾夫轉換（Schrieffer-Wolff transformation），有效哈密頓量可對角化如下：
 
 $$
+
 \hat{H}_{\text{disp}} \approx \frac{\hbar \omega_q}{2} \hat{\sigma}_z + \hbar \left( \omega_r + \frac{g^2}{\Delta} \hat{\sigma}_z \right) \hat{a}^\dagger \hat{a}
+
 $$
 
 其中 $ \Delta = \omega_q - \omega_r $ 為失諧量（detuning）。此式中第二項所揭示的物理意義至關重要：共振腔的有效頻率會依據量子位元的狀態（ $ \hat{\sigma}_z = +1 $ 或 $ -1 $ ）產生 $ \pm g^2/\Delta $ 的頻移。因此，只要使探針微波穿透或反射共振腔並測量其相位偏移，便能對量子位元的狀態完成投影測量。
@@ -2350,7 +3029,9 @@ $$
 被束縛的離子會在超高真空腔體內接受雷射冷卻（都卜勒冷卻與邊帶冷卻）。藉此，離子的運動動能被剝奪至量子力學的基態（聲子數 $ n=0 $ ）。量子位元的計算基底則編碼於離子的內部電子態中。其內部態的哈密頓量十分簡潔：
 
 $$
+
 \hat{H}_{\text{internal}} = \frac{\hbar \omega_0}{2} \hat{\sigma}_z
+
 $$
 
 ### 11.2.2 藍姆-迪克體系與 Mølmer-Sørensen 閘的數理機制
@@ -2360,13 +3041,17 @@ $$
 實現雙量子位元閘最標準的方案是 Mølmer-Sørensen（MS）閘。對兩個離子同時照射兩束相對於聲子模頻率 $ \omega_m $ 具有微小失諧的雙色雷射。在藍姆-迪克參數（Lamb-Dicke parameter） $ \eta = k z_0 $ 足夠小的藍姆-迪克體系（ $ \eta \sqrt{n} \ll 1 $ ）中，交互作用哈密頓量可展開如下：
 
 $$
+
 \hat{H}_{\text{int}} \approx \hbar \Omega \sum_{j=1,2} \hat{\sigma}_\phi^{(j)} \left( \eta \hat{a} e^{i \delta t} + \eta \hat{a}^\dagger e^{-i \delta t} \right)
+
 $$
 
 此處 $ \Omega $ 為拉比頻率（Rabi frequency）， $ \delta $ 為失諧量（detuning）。利用馬格努斯展開（Magnus expansion）計算時間演化算符可得：在經歷合適的量子閘時長後，運動模態會回歸初始狀態，同時在內部電子態之間賦予幾何相位，留下有效的自旋-自旋相互作用：
 
 $$
+
 \hat{U}_{\text{MS}} = \exp\left( -i \frac{\pi}{4} \hat{\sigma}_\phi \otimes \hat{\sigma}_\phi \right)
+
 $$
 
 此操作能生成最大糾纏態，並具備與 CNOT 閘等價的計算能力。能實現任意兩位元之間的全連接性（All-to-all connectivity），正是離子阱與只能和相鄰量子位元耦合的超導方案之間最決定性的差異。
@@ -2383,7 +3068,9 @@ $$
 在我們所處的三維空間中，基本粒子僅有玻色子與費米子兩類。然而在二維拓撲物質系統中，卻可能存在透過粒子交換操作使波函數獲得任意相位的「任意子（Anyon）」。更為奇特的是「非阿貝爾任意子（Non-Abelian anyon）」，當交換其中兩個粒子時，系統會從相同能量的簡併態么正旋轉至另一個正交態：
 
 $$
+
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
+
 $$
 
 這種非阿貝爾任意子最有希望的物理候選者，便是凝態物理學中作為準粒子的「馬約拉納零能模（Majorana Zero Modes, MZM）」。使一維半導體奈米線（如 InSb）具備強自旋軌道耦合，並與 s 波超導體產生鄰近效應接面，再施加外部磁場。根據齊塔耶夫（Alexei Kitaev）提出的模型，在特定參數區間內，奈米線會發生相變進入拓撲超導相，並在奈米線的兩端局域化產生作為邊緣態的零能量馬約拉納粒子。
@@ -2391,7 +3078,9 @@ $$
 馬約拉納算符 $ \hat{\gamma}_1, \hat{\gamma}_2 $ 為自伴算符（ $ \hat{\gamma}_j = \hat{\gamma}_j^\dagger $ ），且滿足反對易關係 $ \{ \hat{\gamma}_i, \hat{\gamma}_j \} = 2\delta_{ij} $ 。常規狄拉克費米子的創生與湮滅算符，可利用這兩個馬約拉納算符以空間非局域的方式建構出來：
 
 $$
+
 \hat{c} = \frac{1}{2}(\hat{\gamma}_1 + i\hat{\gamma}_2), \quad \hat{c}^\dagger = \frac{1}{2}(\hat{\gamma}_1 - i\hat{\gamma}_2)
+
 $$
 
 此單一電子狀態（費米子宇稱，fermion parity）被「分割」並編碼於奈米線兩端在空間上彼此隔離的兩點。由於局部雜訊同時且帶有精確關聯性去擾動系統兩端的機率極其微小，因此量子資訊在本質上便免於退相干的破壞（拓撲保護，topological protection）。
@@ -2460,13 +3149,17 @@ Google 在展示量子霸權的實驗中，採用稱為交叉熵基準測試（C
 讓我們以數學形式來描述。假設初始狀態為 $ |\psi_0\rangle = |0\rangle^{\otimes n} $ 。對此作用隨機選取的么正轉換 $ U = U_d U_{d-1} \dots U_1 $ 。最終狀態 $ |\psi_f\rangle $ 可使用張量積與線性組合表示如下：
 
 $$
+
 |\psi_f\rangle = U |0\rangle^{\otimes n} = \sum_{x \in \{0, 1\}^n} \alpha_x |x\rangle
+
 $$
 
 這裡的 $ \alpha_x = \langle x | U | 0 \rangle^{\otimes n} $ 是觀測到特定位元字串 $x$ 的機率幅，它是一個複數。此時，藉由測量得到位元字串 $x$ 的理想機率 $ P_{\text{ideal}}(x) $ ，根據量子力學中的玻恩定則（Born Rule）由下式給出：
 
 $$
+
 P_{\text{ideal}}(x) = |\alpha_x|^2 = \left| \langle x | U | 0 \rangle^{\otimes n} \right|^2
+
 $$
 
 在足夠深（ $d$ 很大）的隨機量子電路中，各振幅 $ \alpha_x $ 在複數平面上會展現類似隨機漫步的行為，已知其機率分佈 $ P_{\text{ideal}}(x) $ 會遵循波特-湯瑪斯分佈（Porter-Thomas distribution）。也就是說，出現機率 $p$ 的機率密度函數為 $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $ 。這意味著某些特定的位元字串會比其他位元字串更容易被觀測到，從而形成「散斑（Speckle）圖樣」。
@@ -2476,7 +3169,9 @@ $$
 為了評估實驗的成敗，研究團隊引入了線性交叉熵基準測試（Linear Cross-Entropy Benchmarking, XEB）。保真度（Fidelity） $ \mathcal{F}_{\text{XEB}} $ 定義如下：
 
 $$
+
 \mathcal{F}_{\text{XEB}} = 2^n \sum_{x \in \{0, 1\}^n} P_{\text{ideal}}(x) P_{\text{exp}}(x) - 1
+
 $$
 
 此處 $ P_{\text{exp}}(x) $ 是從實際量子處理器（包含硬體雜訊）所獲得的經驗機率分佈。若裝置輸出的是完全隨機的雜訊（即完全混合態的密度矩陣 $ \rho = \frac{I}{2^n} $ ），則 $ P_{\text{exp}}(x) = \frac{1}{2^n} $ ，此時 $ \mathcal{F}_{\text{XEB}} = 0 $ 。另一方面，若是輸出完全無雜訊之理想純態的量子電腦，則 $ \mathcal{F}_{\text{XEB}} \approx 1 $ 。在 Google 的實驗中，確認到了 $ \mathcal{F}_{\text{XEB}} \approx 0.002 $ 這個明顯大於零且具有統計顯著性的數值。即使保真度如此微小，但由於在古典電腦上生成同等品質的樣本在計算複雜度理論上是極其困難的，因此這項結果被視為量子霸權的實證。
@@ -2500,7 +3195,9 @@ graph TD
 這項誤解源自於一項事實：透過阿達馬閘（Hadamard gate）等所產生的狀態疊加 $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $ ，使得對所有輸入的函數評估得以在「單次操作中」完成（即量子平行性）。若使用預言機（負責運算的么正算符） ** $U_f$ ** ，對處於疊加態的系統執行函數 $ f(x) $ 的運算，整個狀態會依據線性性質演化如下：
 
 $$
+
 U_f \left( \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |0\rangle \right) = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |f(x)\rangle
+
 $$
 
 誠然，在此狀態向量的內部，確實將所有 $x$ 所對應的 $f(x)$ 解答作為機率幅的子系統包含在其中。然而，請回想量子力學中的 **觀測公理** （波函數塌縮）。當我們對此輸出暫存器進行測量操作時，所能得到的僅僅是以機率 $\frac{1}{2^n}$ 隨機選出的單一數對 $ (x, f(x)) $ 。其餘 $ 2^n - 1 $ 個資訊，都會因為不可逆的投影測量而永遠喪失。也就是說，在「平行計算（狀態演化）」與「從平行計算的結果中提取我們所需的特定資訊（狀態讀取）」之間，存在著無法跨越的絕望鴻溝。
@@ -2514,7 +3211,9 @@ $$
 葛洛夫迭代算符 ** $G$ ** ，定義為預言機對正確解答態施加的相位反轉算符 $ U_\omega = I - 2|\omega\rangle\langle\omega| $ 與繞平均值反轉算符 $ U_s = 2|s\rangle\langle s| - I $ 的乘積：
 
 $$
+
 G = U_s U_\omega = (2|s\rangle\langle s| - I)(I - 2|\omega\rangle\langle\omega|)
+
 $$
 
 將此么正算符 ** $G$ ** 施加約 $ \frac{\pi}{4}\sqrt{N} $ 次，狀態向量便會旋轉至目標的 $ |\omega\rangle $ ，從而將觀測到正確答案的機率提高至接近 1（100%）。然而，此處極其重要的一項事實是：這終究只是「平方根加速」，而非指數級別的加速（ $ O(2^n) \to O(\text{poly}(n)) $ ）。時至今日，尚未發現任何能夠在多項式時間內解開 NP完全問題一般情況的量子干涉模式。許多量子資訊科學家與計算機科學家皆深信，作為計算複雜度理論的核心猜想， ** $\text{BQP} \not\supset \text{NP-Complete}$ ** （即量子電腦無法有效率地解決 NP完全問題）是成立的。
@@ -2532,16 +3231,22 @@ $$
 在表面碼中，負責儲存量子資訊的「資料量子位元」被配置在二維晶格的邊（Edge）上，而用於偵測錯誤的「症候測量量子位元（輔助量子位元 / Ancilla qubit）」則配置於晶格的面（Plaquette）與頂點（Vertex）上。隨後，定義由下列包立算符之張量積所構成的穩定子算符群：
 
 $$
+
 B_p = \bigotimes_{i \in \partial p} Z_i \quad \text{（面算符：偵測 Z 錯誤）}
+
 $$
 $$
+
 A_v = \bigotimes_{i \in \delta v} X_i \quad \text{（頂點算符：偵測 X 錯誤）}
+
 $$
 
 此處所有的 $ B_p $ 與 $ A_v $ 皆彼此對易（可交換、不反交換），亦即滿足交換關係 $ [B_p, A_v] = 0 $ 。我們所寫入資訊的「邏輯狀態（碼空間）」 ** $|\psi_L\rangle$ ** ，被嚴格定義為所有這些穩定子算符的特徵值皆為 $+1$ 的共同特徵態所張成的子空間：
 
 $$
+
 B_p |\psi_L\rangle = +1 |\psi_L\rangle, \quad A_v |\psi_L\rangle = +1 |\psi_L\rangle \quad (\text{for all } p, v)
+
 $$
 
 假設由於外部熱雜訊或操作誤差，某個物理量子位元發生了非預期的位元翻轉錯誤（包立 $X$ ）或相位翻轉錯誤（包立 $Z$ ）。此時，由於該錯誤算符與相鄰的特定穩定子算符具有反對易關係（ $\{X, Z\} = 0 $ ），對該穩定子進行測量的結果（症候值 / Syndrome）將會由 $+1$ 翻轉為 $-1$ 。我們完全無需觀測或破壞受保護的邏輯態本身（即權重係數 $\alpha, \beta$ 的數值），只需持續追蹤這些呈現 $-1$ 的位置（缺陷 / Defect）配對。接著，利用「最小權重完美匹配（Minimum Weight Perfect Matching, MWPM）」等古典演算法進行最大概似估計，推斷在哪個物理量子位元路徑上發生了何種錯誤，進而透過軟體修正或在物理上施加反向操作來予以更正。
