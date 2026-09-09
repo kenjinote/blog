@@ -82,7 +82,7 @@ Dengan demikian, sistem beralih ke keadaan superposisi sempurna di mana $|0\rang
 
 ## 1.4 Esensi Komputer Kuantum: Menghilangkan Kesalahpahaman Bahwa Ini Hanyalah "Komputasi Paralel Masif"
 
-Mengapa komputer kuantum dapat memiliki kemampuan komputasi yang melampaui komputer klasik? Sebagai penjelasan umum untuk pertanyaan ini, sering kali dijelaskan bahwa "komputer kuantum bercabang ke alam semesta paralel yang tak terhitung jumlahnya (dunia paralel), menghitung semua kemungkinan secara bersamaan, dan secara instan menemukan jawaban yang benar dari semuanya." Ini merupakan representasi metaforis dari "paralelisme kuantum (Quantum Parallelism)", tetapi ini adalah **penjelasan yang tidak akurat dan dapat menyebabkan kesalahpahaman yang sangat serius**.
+Mengapa komputer kuantum dapat memiliki kemampuan komputasi yang melampaui komputer klasik? Sebagai penjelasan umum untuk pertanyaan ini, sering kali dijelaskan bahwa "komputer kuantum bercabang ke alam semesta paralel yang tak terhitung jumlahnya (dunia paralel), menghitung semua kemungkinan secara bersamaan, dan secara instan menemukan jawaban yang benar dari semuanya." Ini merupakan representasi metaforis dari "paralelisme kuantum (Quantum Parallelism)", tetapi ini adalah **penjelasan yang tidak akurat dan dapat menyebabkan kesalahpahaman yang sangat serius** .
 
 Memang benar, dengan menerapkan gerbang Hadamard secara paralel pada sebuah sistem dengan $N$ qubit, kita dapat menciptakan superposisi dari semua $2^N$ keadaan dalam satu operasi.
 
@@ -98,9 +98,9 @@ $$
 
 Di sini memang terlihat seolah-olah nilai $f(x)$ untuk semua $2^N$ buah $x$ sedang "dihitung" dalam satu operasi. Namun, "aksioma pengamatan (Aturan Born, Born Rule)" yang merupakan persyaratan dari mekanika kuantum akan menghalangi. Ketika kita mengukur (mengamati) keadaan superposisi ini, hasil yang kita peroleh hanyalah satu, dan keadaan tersebut akan mengalami keruntuhan fungsi gelombang (Wavefunction Collapse) secara acak menjadi $|x\rangle |f(x)\rangle$ dengan probabilitas $P(x) = 1/2^N$. Dengan kata lain, bahkan jika semua jawaban dihitung secara bersamaan, apa yang dapat diekstraksi dari pengukuran hanyalah "satu jawaban acak", dan ini tidak ada bedanya dengan melakukan perhitungan dengan melempar dadu secara acak.
 
-Lalu, apa kekuatan sejati dari komputer kuantum? Jawabannya adalah **"Interferensi Kuantum (Quantum Interference)"**.
+Lalu, apa kekuatan sejati dari komputer kuantum? Jawabannya adalah **"Interferensi Kuantum (Quantum Interference)"** .
 
-Amplitudo probabilitas $c_x$ yang mendeskripsikan keadaan kuantum bukanlah suatu probabilitas positif melainkan sebuah "bilangan kompleks", sehingga dapat bernilai positif, negatif, bahkan imajiner. Rahasia utama dari algoritma kuantum terletak pada penggabungan transformasi uniter yang cerdik dalam proses komputasi, sedemikian rupa sehingga **"amplitudo probabilitas dari keadaan yang tidak tepat akan saling meniadakan (interferensi destruktif: Destructive Interference), dan amplitudo probabilitas dari keadaan yang tepat akan saling menguatkan (interferensi konstruktif: Constructive Interference)"**.
+Amplitudo probabilitas $c_x$ yang mendeskripsikan keadaan kuantum bukanlah suatu probabilitas positif melainkan sebuah "bilangan kompleks", sehingga dapat bernilai positif, negatif, bahkan imajiner. Rahasia utama dari algoritma kuantum terletak pada penggabungan transformasi uniter yang cerdik dalam proses komputasi, sedemikian rupa sehingga **"amplitudo probabilitas dari keadaan yang tidak tepat akan saling meniadakan (interferensi destruktif: Destructive Interference), dan amplitudo probabilitas dari keadaan yang tepat akan saling menguatkan (interferensi konstruktif: Constructive Interference)"** .
 
 Sebagai contoh sederhana, mari kita lihat interferensi melalui pembalikan fase dan transformasi Hadamard. Apa yang terjadi jika kita kembali menerapkan gerbang Hadamard pada keadaan $\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$?
 
@@ -239,7 +239,7 @@ $$
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
 $$
 
-Di sini, $\alpha$ dan $\beta$ adalah bilangan kompleks ($\alpha, \beta \in \mathbb{C}$) yang disebut **amplitudo probabilitas kompleks (Complex probability amplitude)**. Berbeda dengan probabilitas klasik yang merupakan bilangan riil non-negatif, fakta bahwa keadaan kuantum memiliki koefisien "bilangan kompleks" adalah alasan mendasar mengapa komputer kuantum memiliki kekuatan komputasi yang melampaui komputer klasik. Bilangan kompleks memiliki fase (Phase) dan dapat mengarah ke segala arah pada bidang kompleks, sehingga memungkinkan keadaan-keadaan tersebut untuk saling memperkuat (interferensi konstruktif) atau saling meniadakan (interferensi destruktif) layaknya gelombang. Esensi dari algoritma kuantum terletak pada manipulasi cerdik dari efek interferensi ini, memperkuat amplitudo probabilitas dari solusi yang benar dan membatalkan amplitudo probabilitas dari solusi yang salah.
+Di sini, $\alpha$ dan $\beta$ adalah bilangan kompleks ($\alpha, \beta \in \mathbb{C}$) yang disebut **amplitudo probabilitas kompleks (Complex probability amplitude)** . Berbeda dengan probabilitas klasik yang merupakan bilangan riil non-negatif, fakta bahwa keadaan kuantum memiliki koefisien "bilangan kompleks" adalah alasan mendasar mengapa komputer kuantum memiliki kekuatan komputasi yang melampaui komputer klasik. Bilangan kompleks memiliki fase (Phase) dan dapat mengarah ke segala arah pada bidang kompleks, sehingga memungkinkan keadaan-keadaan tersebut untuk saling memperkuat (interferensi konstruktif) atau saling meniadakan (interferensi destruktif) layaknya gelombang. Esensi dari algoritma kuantum terletak pada manipulasi cerdik dari efek interferensi ini, memperkuat amplitudo probabilitas dari solusi yang benar dan membatalkan amplitudo probabilitas dari solusi yang salah.
 
 Proses mengekstraksi informasi klasik dari sistem kuantum adalah "pengukuran (Measurement)". Ketika mempertimbangkan pengukuran proyektif (Projective measurement), menurut aturan Born (Born rule), probabilitas $P(0)$ untuk memperoleh hasil $0$ dan probabilitas $P(1)$ untuk memperoleh hasil $1$ saat mengukur keadaan $|\psi\rangle$ dalam basis komputasi $\{|0\rangle, |1\rangle\}$ diberikan oleh kuadrat nilai mutlak dari masing-masing amplitudo probabilitasnya:
 
@@ -251,7 +251,7 @@ $$
 P(1) = |\langle 1|\psi\rangle|^2 = |\beta|^2 = \beta \beta^*
 $$
 
-Agar sistem selalu teramati dalam suatu keadaan tertentu, jumlah total seluruh probabilitas harus tepat bernilai $1$. Oleh karena itu, norma (panjang) dari vektor keadaan kuantum $|\psi\rangle$ harus selalu sama dengan $1$. Inilah yang disebut **kondisi normalisasi (Normalization condition)**:
+Agar sistem selalu teramati dalam suatu keadaan tertentu, jumlah total seluruh probabilitas harus tepat bernilai $1$. Oleh karena itu, norma (panjang) dari vektor keadaan kuantum $|\psi\rangle$ harus selalu sama dengan $1$. Inilah yang disebut **kondisi normalisasi (Normalization condition)** :
 
 $$
 \langle\psi|\psi\rangle = (\alpha^* \langle 0| + \beta^* \langle 1|)(\alpha |0\rangle + \beta |1\rangle) = |\alpha|^2 + |\beta|^2 = 1
@@ -291,7 +291,7 @@ $$
 
 ## 2.4 Visualisasi Geometris dengan Bola Bloch (Bloch Sphere)
 
-Parameterisasi yang diturunkan pada bagian sebelumnya menunjukkan bahwa ruang keadaan dari sebuah qubit tunggal secara geometris isomorfik dengan permukaan bola satuan dalam ruang 3 dimensi (bola 2 dimensi $S^2$). Representasi visual ini dinamai **bola Bloch (Bloch Sphere)**, diambil dari nama penggagasnya, fisikawan Swiss Felix Bloch.
+Parameterisasi yang diturunkan pada bagian sebelumnya menunjukkan bahwa ruang keadaan dari sebuah qubit tunggal secara geometris isomorfik dengan permukaan bola satuan dalam ruang 3 dimensi (bola 2 dimensi $S^2$). Representasi visual ini dinamai **bola Bloch (Bloch Sphere)** , diambil dari nama penggagasnya, fisikawan Swiss Felix Bloch.
 
 Sudut $\theta$ berkorespondensi tepat dengan sudut polar (Polar angle) dari arah positif sumbu $Z$, dan sudut $\varphi$ berkorespondensi dengan sudut azimut (Azimuthal angle) pada bidang $X$-$Y$.
 
@@ -314,7 +314,7 @@ graph TD
 
 Sifat yang paling penting dari bola Bloch adalah bahwa "keadaan ortogonal (keadaan dengan perkalian dalam sama dengan 0) dalam ruang Hilbert terletak pada titik antipodal (Antipodal points: titik yang berlawanan 180 derajat) satu sama lain pada ruang riil 3 dimensi bola Bloch." Sebagai contoh, keadaan yang ortogonal terhadap $|0\rangle$ (kutub utara, $\theta=0$) adalah $|1\rangle$ (kutub selatan, $\theta=\pi$). Perhitungan perkalian dalam antara keadaan yang saling ortogonal dalam ruang Hilbert $\langle 0 | 1 \rangle = 0$ bersesuaian dengan pemisahan sudut sebesar $\pi$ (180 derajat) pada bola Bloch. Di sinilah letak keniscayaan matematis digunakannya sudut setengah $\theta/2$ dalam parameterisasi, karena sudut geometris bernilai dua kali lipat dari sudut dalam ruang Hilbert.
 
-Koordinat $\mathbf{r} = (x, y, z)$ pada bola Bloch ini diturunkan secara ketat sebagai nilai ekspektasi dari **matriks Pauli (Pauli matrices)**, yang merupakan besaran teramati (Observable) dalam mekanika kuantum. Matriks Pauli yang menjadi basis operator Hermite untuk sistem 2 dimensi didefinisikan sebagai berikut:
+Koordinat $\mathbf{r} = (x, y, z)$ pada bola Bloch ini diturunkan secara ketat sebagai nilai ekspektasi dari **matriks Pauli (Pauli matrices)** , yang merupakan besaran teramati (Observable) dalam mekanika kuantum. Matriks Pauli yang menjadi basis operator Hermite untuk sistem 2 dimensi didefinisikan sebagai berikut:
 
 $$
 X = \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
@@ -416,22 +416,22 @@ Dalam bab ini, kita akan merumuskan dengan ketat tanpa kompromi proses dari desk
 
 Aksioma pertama dalam mekanika kuantum menentukan bagaimana "keadaan" suatu sistem fisik direpresentasikan secara matematis.
 
-**Aksioma 1 (Representasi Keadaan)**:
-Keadaan dari sistem fisik tertutup dideskripsikan sepenuhnya oleh sebuah vektor satuan dengan norma 1 pada ruang Hilbert (Hilbert space) $\mathcal{H}$, yang merupakan ruang hasil kali dalam kompleks yang memenuhi kelengkapan. Ini disebut **vektor keadaan**.
+ **Aksioma 1 (Representasi Keadaan)** :
+Keadaan dari sistem fisik tertutup dideskripsikan sepenuhnya oleh sebuah vektor satuan dengan norma 1 pada ruang Hilbert (Hilbert space) $\mathcal{H}$, yang merupakan ruang hasil kali dalam kompleks yang memenuhi kelengkapan. Ini disebut **vektor keadaan** .
 
-Menurut notasi Bra-ket (Bra-ket notation) yang diperkenalkan oleh Paul Dirac, vektor keadaan diperlakukan sebagai vektor kolom dan ditulis sebagai ket ** $| \psi \rangle$ **. Vektor baris yang termasuk dalam ruang dual $\mathcal{H}^*$ ditulis sebagai bra ** $\langle \psi |$ **, dan keduanya memiliki hubungan konjugat Hermitian (transpose konjugat kompleks) satu sama lain. Yaitu,
+Menurut notasi Bra-ket (Bra-ket notation) yang diperkenalkan oleh Paul Dirac, vektor keadaan diperlakukan sebagai vektor kolom dan ditulis sebagai ket **$| \psi \rangle$** . Vektor baris yang termasuk dalam ruang dual $\mathcal{H}^*$ ditulis sebagai bra **$\langle \psi |$** , dan keduanya memiliki hubungan konjugat Hermitian (transpose konjugat kompleks) satu sama lain. Yaitu,
 
 $$
 \langle \psi | = ( | \psi \rangle )^\dagger
 $$
 
-Hasil kali dalam (inner product) dari dua keadaan sembarang ** $| \phi \rangle$ ** dan ** $| \psi \rangle$ ** dalam ruang Hilbert dihitung sebagai perkalian bra dan ket ** $\langle \phi | \psi \rangle$ **, yang menghasilkan nilai kompleks. Hasil kali dalam ini memenuhi sifat-sifat berikut:
+Hasil kali dalam (inner product) dari dua keadaan sembarang **$| \phi \rangle$** dan **$| \psi \rangle$** dalam ruang Hilbert dihitung sebagai perkalian bra dan ket **$\langle \phi | \psi \rangle$** , yang menghasilkan nilai kompleks. Hasil kali dalam ini memenuhi sifat-sifat berikut:
 
-1. **Definit Positif**: Untuk setiap ** $| \psi \rangle \neq 0$ **, berlaku $\langle \psi | \psi \rangle > 0$
-2. **Linearitas**: $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
-3. **Simetri Konjugat**: $\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*$ ( $*$ adalah konjugat kompleks)
+1. **Definit Positif** : Untuk setiap **$| \psi \rangle \neq 0$** , berlaku $\langle \psi | \psi \rangle > 0$
+2. **Linearitas** : $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
+3. **Simetri Konjugat** : $\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*$ ( $*$ adalah konjugat kompleks)
 
-Karena keadaan fisik memerlukan interpretasi probabilitas agar valid, keadaan tersebut harus selalu memenuhi kondisi normalisasi (Normalization condition). Yaitu, norma dari vektor keadaan ** $| \psi \rangle$ ** adalah 1.
+Karena keadaan fisik memerlukan interpretasi probabilitas agar valid, keadaan tersebut harus selalu memenuhi kondisi normalisasi (Normalization condition). Yaitu, norma dari vektor keadaan **$| \psi \rangle$** adalah 1.
 
 $$
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
@@ -441,7 +441,7 @@ Lebih lanjut, karena ketaksamaan Cauchy-Schwarz (Cauchy-Schwarz inequality) $|\l
 
 ### Prinsip Superposisi dan Basis Ortonormal Lengkap
 
-Karakteristik yang paling menonjol dari mekanika kuantum adalah "Prinsip Superposisi" (Superposition principle). Jika ** $| \phi \rangle$ ** dan ** $| \psi \rangle$ ** adalah keadaan yang secara fisik diizinkan, maka kombinasi linear kompleks sembarang dari keduanya $c_1 | \phi \rangle + c_2 | \psi \rangle$ juga akan menjadi keadaan yang secara fisik diizinkan (jika dilakukan normalisasi). Sifat ini diturunkan langsung dari linearitas ruang Hilbert.
+Karakteristik yang paling menonjol dari mekanika kuantum adalah "Prinsip Superposisi" (Superposition principle). Jika **$| \phi \rangle$** dan **$| \psi \rangle$** adalah keadaan yang secara fisik diizinkan, maka kombinasi linear kompleks sembarang dari keduanya $c_1 | \phi \rangle + c_2 | \psi \rangle$ juga akan menjadi keadaan yang secara fisik diizinkan (jika dilakukan normalisasi). Sifat ini diturunkan langsung dari linearitas ruang Hilbert.
 
 Di dalam ruang Hilbert $\mathcal{H}$, terdapat basis ortonormal (Orthonormal basis) $\{ | e_i \rangle \}$. Basis-basis ini saling ortogonal dan telah dinormalisasi.
 
@@ -455,7 +455,7 @@ $$
 I = \sum_i | e_i \rangle \langle e_i |
 $$
 
-Keadaan kuantum sembarang ** $| \psi \rangle$ ** dapat diekspansi dengan tepat satu cara sebagai kombinasi linear dari basis dengan menerapkan operator identitas ini.
+Keadaan kuantum sembarang **$| \psi \rangle$** dapat diekspansi dengan tepat satu cara sebagai kombinasi linear dari basis dengan menerapkan operator identitas ini.
 
 $$
 | \psi \rangle = I | \psi \rangle = \left( \sum_i | e_i \rangle \langle e_i | \right) | \psi \rangle = \sum_i \langle e_i | \psi \rangle | e_i \rangle = \sum_i c_i | e_i \rangle
@@ -467,7 +467,7 @@ Di sini, koefisien ekspansi $c_i = \langle e_i | \psi \rangle$ disebut sebagai a
 
 Dalam mekanika klasik, besaran fisis (observabel) seperti posisi, momentum, dan energi dijelaskan sebagai fungsi bernilai riil. Namun, dalam mekanika kuantum terjadi pergeseran paradigma yang mendasar.
 
-**Aksioma 2 (Besaran Fisis)**:
+ **Aksioma 2 (Besaran Fisis)** :
 Besaran fisis yang dapat diobservasi (observabel) dideskripsikan oleh operator swa-adjoin linear (operator Hermitian) $A$ pada ruang Hilbert $\mathcal{H}$.
 
 Operator Hermitian adalah operator yang konjugat Hermitiannya sama dengan dirinya sendiri. Artinya, ia memenuhi $A = A^\dagger$. Jika direpresentasikan sebagai matriks dalam ruang berdimensi hingga, ini berarti elemen-elemennya memiliki simetri konjugat kompleks ( $A_{ij} = A_{ji}^*$ ).
@@ -475,23 +475,23 @@ Operator Hermitian adalah operator yang konjugat Hermitiannya sama dengan diriny
 Alasan mengapa besaran fisis harus didefinisikan sebagai operator Hermitian terletak pada "Nilai Eigen" (Eigenvalues) miliknya. Menurut teorema spektral (Spectral theorem) dalam aljabar linear, operator Hermitian memiliki sifat-sifat yang sangat penting berikut:
 
 1. **Semua nilai eigen $a_i$ adalah bilangan riil.** (Karena besaran fisis yang diukur harus selalu bernilai riil, ini sesuai dengan persyaratan fisis.)
-2. **Vektor eigen yang terkait dengan nilai eigen yang berbeda saling ortogonal.**
-3. **Vektor eigen dari operator $\{ | a_i \rangle \}$ membentuk basis ortonormal lengkap dari ruang Hilbert.**
+2. **Vektor eigen yang terkait dengan nilai eigen yang berbeda saling ortogonal.** 
+3. **Vektor eigen dari operator $\{ | a_i \rangle \}$ membentuk basis ortonormal lengkap dari ruang Hilbert.** 
 
-Oleh karena itu, setiap observabel $A$ dapat didekomposisi secara spektral (Spectral decomposition) sebagai kombinasi linear dari operator proyeksi $P_i = | a_i \rangle \langle a_i |$, menggunakan nilai eigen $a_i$ dan vektor eigen ** $| a_i \rangle$ **.
+Oleh karena itu, setiap observabel $A$ dapat didekomposisi secara spektral (Spectral decomposition) sebagai kombinasi linear dari operator proyeksi $P_i = | a_i \rangle \langle a_i |$, menggunakan nilai eigen $a_i$ dan vektor eigen **$| a_i \rangle$** .
 
 $$
 A = \sum_i a_i | a_i \rangle \langle a_i |
 $$
 
-Melalui rumusan ini, tindakan "mengukur besaran fisis" dapat dipahami sebagai operasi geometris berupa proyeksi ke basis tertentu (vektor eigen) dari ruang Hilbert. Misalnya, pengukuran $\sigma_z$ dari sebuah qubit sepenuhnya dijelaskan sebagai operasi proyeksi ke basis ortogonal yang terdiri dari keadaan ** $| 0 \rangle$ ** yang sesuai dengan nilai eigen $+1$ dan keadaan ** $| 1 \rangle$ ** yang sesuai dengan nilai eigen $-1$.
+Melalui rumusan ini, tindakan "mengukur besaran fisis" dapat dipahami sebagai operasi geometris berupa proyeksi ke basis tertentu (vektor eigen) dari ruang Hilbert. Misalnya, pengukuran $\sigma_z$ dari sebuah qubit sepenuhnya dijelaskan sebagai operasi proyeksi ke basis ortogonal yang terdiri dari keadaan **$| 0 \rangle$** yang sesuai dengan nilai eigen $+1$ dan keadaan **$| 1 \rangle$** yang sesuai dengan nilai eigen $-1$.
 
 ## 3.4 Aksioma Ketiga: Evolusi Waktu Uniter dan Persamaan Schrödinger
 
 Jika suatu sistem kuantum terisolasi dan tidak berinteraksi dengan sistem lain, keadaannya berubah terhadap waktu secara deterministik dan reversibel (dapat dibalik).
 
-**Aksioma 3 (Evolusi Waktu)**:
-Evolusi waktu dari keadaan sistem kuantum yang terisolasi mengikuti persamaan Schrödinger (Schrödinger equation). Atau dalam ekspresi yang setara, keadaan ** $| \psi(t_0) \rangle$ ** pada waktu $t_0$ berevolusi menjadi keadaan ** $| \psi(t) \rangle$ ** pada waktu $t$ dengan menerapkan operator uniter $U(t, t_0)$.
+ **Aksioma 3 (Evolusi Waktu)** :
+Evolusi waktu dari keadaan sistem kuantum yang terisolasi mengikuti persamaan Schrödinger (Schrödinger equation). Atau dalam ekspresi yang setara, keadaan **$| \psi(t_0) \rangle$** pada waktu $t_0$ berevolusi menjadi keadaan **$| \psi(t) \rangle$** pada waktu $t$ dengan menerapkan operator uniter $U(t, t_0)$.
 
 Persamaan Schrödinger bergantung waktu, yang merupakan persamaan dasar untuk mendeskripsikan evolusi waktu, dinyatakan sebagai berikut:
 
@@ -509,26 +509,26 @@ $$
 
 Operator yang dinyatakan dengan fungsi eksponensial ini, $U(t, t_0) = \exp\left( -i H (t - t_0) / \hbar \right)$, adalah operator evolusi waktu. Karena Hamiltonian $H$ bersifat Hermitian ( $H = H^\dagger$ ), berdasarkan teorema Stone (Stone's theorem), $U$ menjadi operator uniter (Unitary operator). Operator uniter adalah operator yang konjugat Hermitiannya sama dengan matriks inversnya ( $U^\dagger U = U U^\dagger = I$ ).
 
-Makna fisik yang sangat penting dari transformasi uniter adalah bahwa ia **"mempertahankan norma (panjang) dan hasil kali dalam dari vektor keadaan"**. Dengan kata lain, tidak peduli berapa banyak waktu yang berlalu, $\langle \psi(t) | \psi(t) \rangle = \langle \psi(t_0) | U^\dagger U | \psi(t_0) \rangle = 1$ selalu dijamin, sehingga hukum fisika yang menyatakan bahwa total probabilitas adalah 1 tidak akan pernah dilanggar. "Gerbang kuantum" pada komputer kuantum tidak lain adalah operasi yang secara artifisial merancang dan mengendalikan evolusi waktu uniter ini. Misalnya, gerbang Hadamard dan gerbang CNOT semuanya direpresentasikan sebagai matriks uniter.
+Makna fisik yang sangat penting dari transformasi uniter adalah bahwa ia **"mempertahankan norma (panjang) dan hasil kali dalam dari vektor keadaan"** . Dengan kata lain, tidak peduli berapa banyak waktu yang berlalu, $\langle \psi(t) | \psi(t) \rangle = \langle \psi(t_0) | U^\dagger U | \psi(t_0) \rangle = 1$ selalu dijamin, sehingga hukum fisika yang menyatakan bahwa total probabilitas adalah 1 tidak akan pernah dilanggar. "Gerbang kuantum" pada komputer kuantum tidak lain adalah operasi yang secara artifisial merancang dan mengendalikan evolusi waktu uniter ini. Misalnya, gerbang Hadamard dan gerbang CNOT semuanya direpresentasikan sebagai matriks uniter.
 
 ## 3.5 Aksioma Keempat: Pengukuran dan Aturan Born (Born rule)
 
 Konsep "Pengukuran" (Measurement) dalam mekanika kuantum secara fundamental berbeda dengan fisika klasik. Dalam sistem klasik, tindakan pengukuran dianggap sebagai tindakan pasif untuk mengetahui nilai tanpa mengganggu keadaan sistem. Namun, dalam mekanika kuantum, pengukuran secara aktif mengintervensi keadaan dan menyebabkan perubahan yang tidak dapat dibalik.
 
-**Aksioma 4 (Pengukuran dan Aturan Born)**:
-Ketika dilakukan pengukuran terhadap observabel $A$, yang memiliki dekomposisi spektral $A = \sum_i a_i P_i$, pada sistem dalam keadaan ** $| \psi \rangle$ **, nilai terukur yang diperoleh pasti salah satu dari nilai eigen $a_i$ dari $A$. Probabilitas $p(a_k)$ untuk mendapatkan nilai eigen tertentu $a_k$ diberikan oleh Aturan Born sebagai berikut:
+ **Aksioma 4 (Pengukuran dan Aturan Born)** :
+Ketika dilakukan pengukuran terhadap observabel $A$, yang memiliki dekomposisi spektral $A = \sum_i a_i P_i$, pada sistem dalam keadaan **$| \psi \rangle$** , nilai terukur yang diperoleh pasti salah satu dari nilai eigen $a_i$ dari $A$. Probabilitas $p(a_k)$ untuk mendapatkan nilai eigen tertentu $a_k$ diberikan oleh Aturan Born sebagai berikut:
 
 $$
 p(a_k) = \langle \psi | P_k | \psi \rangle = \| P_k | \psi \rangle \|^2
 $$
 
-Jika nilai eigen $a_k$ tidak terdegenerasi (hanya ada satu vektor eigen ** $| a_k \rangle$ ** yang bersesuaian), operator proyeksi menjadi $P_k = | a_k \rangle \langle a_k |$, dan probabilitas dihitung sebagai kuadrat dari nilai mutlak hasil kali dalam dari keadaan dengan vektor eigen tersebut.
+Jika nilai eigen $a_k$ tidak terdegenerasi (hanya ada satu vektor eigen **$| a_k \rangle$** yang bersesuaian), operator proyeksi menjadi $P_k = | a_k \rangle \langle a_k |$, dan probabilitas dihitung sebagai kuadrat dari nilai mutlak hasil kali dalam dari keadaan dengan vektor eigen tersebut.
 
 $$
 p(a_k) = \langle \psi | a_k \rangle \langle a_k | \psi \rangle = | \langle a_k | \psi \rangle |^2
 $$
 
-Ini tiada lain adalah kuadrat dari nilai mutlak $|c_k|^2$ dari koefisien $c_k = \langle a_k | \psi \rangle$ ketika vektor keadaan ** $| \psi \rangle$ ** diekspansi menggunakan basis $\{ | a_i \rangle \}$. Meskipun amplitudo probabilitas kompleks $c_k$ itu sendiri tidak dapat diamati secara langsung, kuadrat dari nilai mutlaknya muncul sebagai probabilitas pengamatan di dunia nyata. Wawasan Max Born yang mengusulkan aturan ini merupakan pencapaian monumental yang mengubah fisika dari determinisme menjadi teori probabilitas. Nilai harapan $\langle A \rangle$ dari observabel $A$ dihitung sebagai jumlah dari perkalian semua nilai eigen dengan probabilitas kemunculannya, dan pada akhirnya diekspresikan dengan sangat indah dalam bentuk hasil kali dalam yang melibatkan vektor keadaan.
+Ini tiada lain adalah kuadrat dari nilai mutlak $|c_k|^2$ dari koefisien $c_k = \langle a_k | \psi \rangle$ ketika vektor keadaan **$| \psi \rangle$** diekspansi menggunakan basis $\{ | a_i \rangle \}$. Meskipun amplitudo probabilitas kompleks $c_k$ itu sendiri tidak dapat diamati secara langsung, kuadrat dari nilai mutlaknya muncul sebagai probabilitas pengamatan di dunia nyata. Wawasan Max Born yang mengusulkan aturan ini merupakan pencapaian monumental yang mengubah fisika dari determinisme menjadi teori probabilitas. Nilai harapan $\langle A \rangle$ dari observabel $A$ dihitung sebagai jumlah dari perkalian semua nilai eigen dengan probabilitas kemunculannya, dan pada akhirnya diekspresikan dengan sangat indah dalam bentuk hasil kali dalam yang melibatkan vektor keadaan.
 
 $$
 \langle A \rangle = \sum_i a_i p(a_i) = \sum_i a_i \langle \psi | P_i | \psi \rangle = \langle \psi | \left( \sum_i a_i P_i \right) | \psi \rangle = \langle \psi | A | \psi \rangle
@@ -538,22 +538,22 @@ $$
 
 Aksioma pengukuran mencakup langkah krusial dan paling diperdebatkan tentang apa yang terjadi pada keadaan sistem "setelah" pengukuran. Ini adalah fenomena yang disebut "Keruntuhan Fungsi Gelombang" (Wavefunction collapse) atau "Reduksi Keadaan" (State reduction). Proses ini, yang dikenal sebagai postulat proyeksi von Neumann (Projection postulate), dirumuskan sebagai berikut:
 
-**Postulat Proyeksi**:
-Keadaan sistem ** $| \psi' \rangle$ ** sesaat setelah pengukuran yang menghasilkan nilai eigen $a_k$, berubah seketika (runtuh) menjadi keadaan yang telah dikenai operator proyeksi $P_k$ yang sesuai pada vektor keadaan awal dan dinormalisasi kembali.
+ **Postulat Proyeksi** :
+Keadaan sistem **$| \psi' \rangle$** sesaat setelah pengukuran yang menghasilkan nilai eigen $a_k$, berubah seketika (runtuh) menjadi keadaan yang telah dikenai operator proyeksi $P_k$ yang sesuai pada vektor keadaan awal dan dinormalisasi kembali.
 
 $$
 | \psi' \rangle = \frac{P_k | \psi \rangle}{\sqrt{p(a_k)}}
 $$
 
-Jika alat ukur sangat ideal dan keadaan sistem runtuh ke nilai eigen tak-terdegenerasi $a_k$, maka keadaan sesaat setelah pengukuran akan persis sama dengan vektor eigen ** $| a_k \rangle$ ** itu sendiri. Dengan kata lain, jika pengukuran yang sama persis diulangi sesaat kemudian, $a_k$ akan didapatkan kembali dengan probabilitas 1 (100%). Hal ini disebut "pengukuran jenis pertama" (first kind measurement).
+Jika alat ukur sangat ideal dan keadaan sistem runtuh ke nilai eigen tak-terdegenerasi $a_k$, maka keadaan sesaat setelah pengukuran akan persis sama dengan vektor eigen **$| a_k \rangle$** itu sendiri. Dengan kata lain, jika pengukuran yang sama persis diulangi sesaat kemudian, $a_k$ akan didapatkan kembali dengan probabilitas 1 (100%). Hal ini disebut "pengukuran jenis pertama" (first kind measurement).
 
 "Keruntuhan fungsi gelombang" ini memiliki sifat (diskontinyu, probabilistik, ireversibel) yang jelas-jelas bertentangan dengan evolusi waktu uniter (kontinyu, deterministik, reversibel) yang dijelaskan oleh persamaan Schrödinger. Mekanika kuantum mengandung dinamika ganda: ia berevolusi secara uniter saat sistem terisolasi, dan mengalami keruntuhan non-uniter seketika saat bersentuhan dengan alat ukur makroskopik.
 
 ### Dari Keadaan Murni ke Keadaan Campuran: Pengenalan Operator Densitas
 
-Untuk memahami paradoks keruntuhan fungsi gelombang dengan lebih dalam, konsep "Operator Densitas" (Density operator) sangatlah penting. Vektor keadaan ** $| \psi \rangle$ ** yang telah kita tangani sejauh ini adalah "Keadaan Murni" (Pure state) yang memuat informasi maksimal tentang sistem. Operator densitas dari keadaan murni didefinisikan sebagai $\rho = | \psi \rangle \langle \psi |$.
+Untuk memahami paradoks keruntuhan fungsi gelombang dengan lebih dalam, konsep "Operator Densitas" (Density operator) sangatlah penting. Vektor keadaan **$| \psi \rangle$** yang telah kita tangani sejauh ini adalah "Keadaan Murni" (Pure state) yang memuat informasi maksimal tentang sistem. Operator densitas dari keadaan murni didefinisikan sebagai $\rho = | \psi \rangle \langle \psi |$.
 
-Di sisi lain, jika kita tidak tahu keadaan mana yang dihasilkan dari keruntuhan pada proses pengukuran (atau jika informasinya hilang), sistem harus dideskripsikan sebagai keadaan campuran probabilistik klasik (Mixed state). Misalnya, operator densitas yang mewakili ensambel sistem yang telah runtuh ke keadaan ** $| a_k \rangle$ ** dengan probabilitas $p(a_k)$ adalah sebagai berikut:
+Di sisi lain, jika kita tidak tahu keadaan mana yang dihasilkan dari keruntuhan pada proses pengukuran (atau jika informasinya hilang), sistem harus dideskripsikan sebagai keadaan campuran probabilistik klasik (Mixed state). Misalnya, operator densitas yang mewakili ensambel sistem yang telah runtuh ke keadaan **$| a_k \rangle$** dengan probabilitas $p(a_k)$ adalah sebagai berikut:
 
 $$
 \rho' = \sum_k p(a_k) | a_k \rangle \langle a_k |
@@ -603,41 +603,41 @@ Landasan dari komputasi kuantum adalah manipulasi presisi terhadap keadaan kuant
 
 ## 4.1 Postulat Mekanika Kuantum dan Keniscayaan Matriks Unitari
 
-Evolusi waktu dari sistem kuantum diatur oleh persamaan Schrödinger berikut, menggunakan Hamiltonian ** $H$ ** ( ** $H^\dagger = H$ ** ) yang merupakan operator Hermitian yang mengarakterisasi sistem tersebut.
+Evolusi waktu dari sistem kuantum diatur oleh persamaan Schrödinger berikut, menggunakan Hamiltonian **$H$** ( **$H^\dagger = H$** ) yang merupakan operator Hermitian yang mengarakterisasi sistem tersebut.
 
 $$
 i\hbar \frac{d}{dt} |\psi(t)\rangle = H |\psi(t)\rangle
 $$
 
-Jika diasumsikan sistem dengan Hamiltonian ** $H$ ** yang tidak bergantung pada waktu, keadaan kuantum ** $|\psi(t)\rangle$ ** pada sembarang waktu ** $t$ ** dapat diintegralkan secara formal dari keadaan awal ** $|\psi(0)\rangle$ ** sebagai berikut:
+Jika diasumsikan sistem dengan Hamiltonian **$H$** yang tidak bergantung pada waktu, keadaan kuantum **$|\psi(t)\rangle$** pada sembarang waktu **$t$** dapat diintegralkan secara formal dari keadaan awal **$|\psi(0)\rangle$** sebagai berikut:
 
 $$
 |\psi(t)\rangle = e^{-\frac{i}{\hbar}Ht} |\psi(0)\rangle
 $$
 
-Operator evolusi waktu yang muncul di sini didefinisikan sebagai ** $U(t) = e^{-\frac{i}{\hbar}Ht}$ **. Karena ** $H$ ** yang berada pada pangkat fungsi eksponensial adalah Hermitian, dengan menghitung operator adjoin (konjugat Hermitian) ** $U(t)^\dagger$ ** dari operator ** $U(t)$ ** ini, sifat yang sangat penting berikut ini dapat diturunkan.
+Operator evolusi waktu yang muncul di sini didefinisikan sebagai **$U(t) = e^{-\frac{i}{\hbar}Ht}$** . Karena **$H$** yang berada pada pangkat fungsi eksponensial adalah Hermitian, dengan menghitung operator adjoin (konjugat Hermitian) **$U(t)^\dagger$** dari operator **$U(t)$** ini, sifat yang sangat penting berikut ini dapat diturunkan.
 
 $$
 U(t)^\dagger U(t) = \left( e^{-\frac{i}{\hbar}Ht} \right)^\dagger e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}H^\dagger t} e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}Ht} e^{-\frac{i}{\hbar}Ht} = I
 $$
 
-Sama halnya, ** $U(t) U(t)^\dagger = I$ ** juga berlaku. Dengan demikian, matriks yang matriks adjoinnya sama dengan inversnya sendiri ( ** $U^\dagger = U^{-1}$ ** ) disebut "Matriks Unitari (Unitary Matrix)". Gerbang kuantum tunggal tidak lain adalah matriks unitari berukuran ** $2 \times 2$ ** yang direalisasikan oleh Hamiltonian yang dirancang secara sengaja melalui kendali fisik (misalnya, iradiasi pulsa gelombang mikro dengan frekuensi dan durasi tertentu).
+Sama halnya, **$U(t) U(t)^\dagger = I$** juga berlaku. Dengan demikian, matriks yang matriks adjoinnya sama dengan inversnya sendiri ( **$U^\dagger = U^{-1}$** ) disebut "Matriks Unitari (Unitary Matrix)". Gerbang kuantum tunggal tidak lain adalah matriks unitari berukuran **$2 \times 2$** yang direalisasikan oleh Hamiltonian yang dirancang secara sengaja melalui kendali fisik (misalnya, iradiasi pulsa gelombang mikro dengan frekuensi dan durasi tertentu).
 
-Alasan mengapa matriks unitari mutlak diperlukan dalam mekanika kuantum adalah karena ini merupakan satu-satunya transformasi linear yang secara matematis menjamin "kekekalan probabilitas (kekekalan norma)". Mari kita hitung hasil kali dalam (inner product) dari keadaan setelah menerapkan transformasi unitari ** $U$ ** terhadap sembarang keadaan kuantum ** $|\psi\rangle$ ** dan ** $|\phi\rangle$ **.
+Alasan mengapa matriks unitari mutlak diperlukan dalam mekanika kuantum adalah karena ini merupakan satu-satunya transformasi linear yang secara matematis menjamin "kekekalan probabilitas (kekekalan norma)". Mari kita hitung hasil kali dalam (inner product) dari keadaan setelah menerapkan transformasi unitari **$U$** terhadap sembarang keadaan kuantum **$|\psi\rangle$** dan **$|\phi\rangle$** .
 
 $$
 \langle \phi' | \psi' \rangle = ( \langle \phi | U^\dagger ) ( U |\psi\rangle ) = \langle \phi | U^\dagger U | \psi \rangle = \langle \phi | I | \psi \rangle = \langle \phi | \psi \rangle
 $$
 
-Fakta bahwa hasil kali dalam kekal berarti bahwa norma (kuadrat dari panjang) dari vektor keadaan itu sendiri, yaitu ** $\langle \psi | \psi \rangle$ **, juga kekal. Menurut aturan Born (Born rule) dalam mekanika kuantum, jumlah kuadrat dari nilai mutlak amplitudo vektor keadaan harus memiliki probabilitas total "1". Oleh karena itu, agar interpretasi probabilitas ini tidak runtuh akibat operasi gerbang kuantum, operasi tersebut mutlak harus bersifat unitari sebagai prasyarat utama.
+Fakta bahwa hasil kali dalam kekal berarti bahwa norma (kuadrat dari panjang) dari vektor keadaan itu sendiri, yaitu **$\langle \psi | \psi \rangle$** , juga kekal. Menurut aturan Born (Born rule) dalam mekanika kuantum, jumlah kuadrat dari nilai mutlak amplitudo vektor keadaan harus memiliki probabilitas total "1". Oleh karena itu, agar interpretasi probabilitas ini tidak runtuh akibat operasi gerbang kuantum, operasi tersebut mutlak harus bersifat unitari sebagai prasyarat utama.
 
-Lebih jauh lagi, menurut teorema spektral, sembarang matriks unitari ** $U$ ** dapat dinyatakan sebagai ** $U = e^{iK}$ ** dengan menggunakan matriks Hermitian ** $K$ ** yang memiliki nilai eigen bilangan real ** $\lambda_k$ **. Nilai eigen dari matriks unitari selalu berupa bilangan kompleks dengan nilai mutlak 1 (dalam bentuk ** $e^{i\theta}$ ** ), dan vektor-vektor eigennya membentuk sistem lengkap yang saling ortogonal.
+Lebih jauh lagi, menurut teorema spektral, sembarang matriks unitari **$U$** dapat dinyatakan sebagai **$U = e^{iK}$** dengan menggunakan matriks Hermitian **$K$** yang memiliki nilai eigen bilangan real **$\lambda_k$** . Nilai eigen dari matriks unitari selalu berupa bilangan kompleks dengan nilai mutlak 1 (dalam bentuk **$e^{i\theta}$** ), dan vektor-vektor eigennya membentuk sistem lengkap yang saling ortogonal.
 
 $$
 U = \sum_{j=1}^{d} e^{i \theta_j} |\phi_j\rangle \langle \phi_j|
 $$
 
-Hal ini menunjukkan bahwa aksi gerbang kuantum dapat didekomposisi sepenuhnya menjadi operasi yang "hanya memberikan rotasi fase murni ** $e^{i\theta_j}$ ** pada basis ortogonal tertentu ** $|\phi_j\rangle$ **".
+Hal ini menunjukkan bahwa aksi gerbang kuantum dapat didekomposisi sepenuhnya menjadi operasi yang "hanya memberikan rotasi fase murni **$e^{i\theta_j}$** pada basis ortogonal tertentu **$|\phi_j\rangle$** ".
 
 ## 4.2 Matriks Pauli dan Gerbang Dasar (Gerbang X, Y, Z)
 
@@ -651,7 +651,7 @@ $$
 X = \sigma_x = |0\rangle\langle 1| + |1\rangle\langle 0| = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
 $$
 
-Jika kita memverifikasi aksinya pada basis komputasi ( ** $|0\rangle, |1\rangle$ ** ) secara ketat dengan perhitungan matriks:
+Jika kita memverifikasi aksinya pada basis komputasi ( **$|0\rangle, |1\rangle$** ) secara ketat dengan perhitungan matriks:
 
 $$
 X |0\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} = |1\rangle
@@ -661,11 +661,11 @@ $$
 X |1\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} = |0\rangle
 $$
 
-Dengan cara ini, amplitudo sepenuhnya dibalik. Secara geometris, pada bola Bloch, ini bersesuaian dengan operasi rotasi sebesar ** $\pi$ ** (180 derajat) dengan sumbu X sebagai sumbu rotasi. Kutub utara ( ** $|0\rangle$ ** ) dipetakan ke kutub selatan ( ** $|1\rangle$ ** ), dan kutub selatan dipetakan ke kutub utara.
+Dengan cara ini, amplitudo sepenuhnya dibalik. Secara geometris, pada bola Bloch, ini bersesuaian dengan operasi rotasi sebesar **$\pi$** (180 derajat) dengan sumbu X sebagai sumbu rotasi. Kutub utara ( **$|0\rangle$** ) dipetakan ke kutub selatan ( **$|1\rangle$** ), dan kutub selatan dipetakan ke kutub utara.
 
 ### 4.2.2 Gerbang Pauli Y (Gerbang Pembalik Bit dan Fase)
 
-Gerbang Pauli Y menyebabkan pembalikan bit dan pembalikan fase secara bersamaan, dan selanjutnya memberikan faktor fase berupa satuan imajiner ** $i$ **. Representasi produk luar dan representasi matriksnya adalah sebagai berikut:
+Gerbang Pauli Y menyebabkan pembalikan bit dan pembalikan fase secara bersamaan, dan selanjutnya memberikan faktor fase berupa satuan imajiner **$i$** . Representasi produk luar dan representasi matriksnya adalah sebagai berikut:
 
 $$
 Y = \sigma_y = -i|0\rangle\langle 1| + i|1\rangle\langle 0| = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
@@ -677,11 +677,11 @@ $$
 Y |0\rangle = i|1\rangle, \quad Y |1\rangle = -i|0\rangle
 $$
 
-Pada bola Bloch, ini merepresentasikan rotasi ** $\pi$ ** di sekitar sumbu Y. Pengalian dengan satuan imajiner ** $i$ ** (yaitu ** $e^{i\pi/2}$ ** ) berarti tidak sekadar pembalikan, melainkan juga pergeseran ke arah ortogonal dalam ruang fase dari keadaan tersebut.
+Pada bola Bloch, ini merepresentasikan rotasi **$\pi$** di sekitar sumbu Y. Pengalian dengan satuan imajiner **$i$** (yaitu **$e^{i\pi/2}$** ) berarti tidak sekadar pembalikan, melainkan juga pergeseran ke arah ortogonal dalam ruang fase dari keadaan tersebut.
 
 ### 4.2.3 Gerbang Pauli Z (Gerbang Pembalik Fase)
 
-Gerbang Pauli Z adalah "operasi fase" murni yang unik pada kuantum dan tidak ada dalam logika klasik. Tanpa mengubah besarnya amplitudo (probabilitas pengukuran) sama sekali, ia hanya memberikan pergeseran fase sebesar ** $-1$ ** (yaitu ** $e^{i\pi}$ ** ) pada komponen ** $|1\rangle$ **.
+Gerbang Pauli Z adalah "operasi fase" murni yang unik pada kuantum dan tidak ada dalam logika klasik. Tanpa mengubah besarnya amplitudo (probabilitas pengukuran) sama sekali, ia hanya memberikan pergeseran fase sebesar **$-1$** (yaitu **$e^{i\pi}$** ) pada komponen **$|1\rangle$** .
 
 $$
 Z = \sigma_z = |0\rangle\langle 0| - |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
@@ -693,14 +693,14 @@ $$
 Z |0\rangle = |0\rangle, \quad Z |1\rangle = -|1\rangle
 $$
 
-Ini bersesuaian dengan rotasi ** $\pi$ ** di sekitar sumbu Z. Karena basis komputasi ** $|0\rangle, |1\rangle$ ** adalah vektor eigen dari matriks Z (dengan nilai eigen berturut-turut +1 dan -1), mengaplikasikan gerbang Z tidak mengubah keadaan tersebut. Namun, jika diterapkan pada keadaan superposisi (contoh: ** $\alpha|0\rangle + \beta|1\rangle$ ** ), fase relatifnya akan berbalik secara dramatis menjadi ** $\alpha|0\rangle - \beta|1\rangle$ **, yang akan mengubah secara meyakinkan hasil interferensi pada tahap selanjutnya.
+Ini bersesuaian dengan rotasi **$\pi$** di sekitar sumbu Z. Karena basis komputasi **$|0\rangle, |1\rangle$** adalah vektor eigen dari matriks Z (dengan nilai eigen berturut-turut +1 dan -1), mengaplikasikan gerbang Z tidak mengubah keadaan tersebut. Namun, jika diterapkan pada keadaan superposisi (contoh: **$\alpha|0\rangle + \beta|1\rangle$** ), fase relatifnya akan berbalik secara dramatis menjadi **$\alpha|0\rangle - \beta|1\rangle$** , yang akan mengubah secara meyakinkan hasil interferensi pada tahap selanjutnya.
 
 ### 4.2.4 Struktur Aljabar Mendalam dari Grup Pauli
 
-Grup matriks Pauli ** $\{I, X, Y, Z\}$ ** membentuk struktur aljabar yang sangat indah sebagai operator linear pada ruang Hilbert.
+Grup matriks Pauli **$\{I, X, Y, Z\}$** membentuk struktur aljabar yang sangat indah sebagai operator linear pada ruang Hilbert.
 
-1. **Koeksistensi Sifat Adjoin Diri (Hermitian) dan Unitari**: ** $X = X^\dagger$ **, ** $Y = Y^\dagger$ **, ** $Z = Z^\dagger$ **, dan pada saat yang sama memenuhi ** $X^\dagger X = I$ ** (yaitu ** $X = X^{-1}$ ** ). Ini adalah sifat langka di mana mereka bertindak sebagai kuantitas fisik (besaran yang dapat diobservasi) dan sekaligus menjadi generator evolusi waktu unitari (gerbang). Jika diterapkan dua kali secara berurutan, ia akan kembali ke transformasi identitas (involusi: ** $X^2 = Y^2 = Z^2 = I$ ** ).
-2. **Relasi Antikomutasi Penuh**: Matriks Pauli yang berbeda akan mengalami pembalikan tanda jika urutan perkaliannya ditukar.
+1. **Koeksistensi Sifat Adjoin Diri (Hermitian) dan Unitari** : **$X = X^\dagger$** , **$Y = Y^\dagger$** , **$Z = Z^\dagger$** , dan pada saat yang sama memenuhi **$X^\dagger X = I$** (yaitu **$X = X^{-1}$** ). Ini adalah sifat langka di mana mereka bertindak sebagai kuantitas fisik (besaran yang dapat diobservasi) dan sekaligus menjadi generator evolusi waktu unitari (gerbang). Jika diterapkan dua kali secara berurutan, ia akan kembali ke transformasi identitas (involusi: **$X^2 = Y^2 = Z^2 = I$** ).
+2. **Relasi Antikomutasi Penuh** : Matriks Pauli yang berbeda akan mengalami pembalikan tanda jika urutan perkaliannya ditukar.
    
 
 $$
@@ -708,7 +708,7 @@ $$
 $$
 
 
-3. **Relasi Komutasi dan Aljabar Lie**: Jika menggunakan komutator ** $[A, B] = AB - BA$ **, hal ini secara jelas menunjukkan strukturnya sebagai generator dari aljabar Lie ** $SU(2)$ ** (menggunakan tensor antisimetris penuh ** $\epsilon_{ijk}$ ** ).
+3. **Relasi Komutasi dan Aljabar Lie** : Jika menggunakan komutator **$[A, B] = AB - BA$** , hal ini secara jelas menunjukkan strukturnya sebagai generator dari aljabar Lie **$SU(2)$** (menggunakan tensor antisimetris penuh **$\epsilon_{ijk}$** ).
    
 
 $$
@@ -716,7 +716,7 @@ $$
 $$
 
 
-   Secara spesifik, ** $XY = iZ$ **, ** $YZ = iX$ **, ** $ZX = iY$ **. Struktur aljabar ini memberikan landasan matematis dalam mendefinisikan gerbang rotasi sembarang yang akan dibahas kemudian.
+   Secara spesifik, **$XY = iZ$** , **$YZ = iX$** , **$ZX = iY$** . Struktur aljabar ini memberikan landasan matematis dalam mendefinisikan gerbang rotasi sembarang yang akan dibahas kemudian.
 
 ## 4.3 Gerbang Hadamard (Gerbang H): Penciptaan Superposisi Kuantum
 
@@ -736,8 +736,8 @@ $$
 H |1\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{|0\rangle - |1\rangle}{\sqrt{2}} \equiv |-\rangle
 $$
 
-Keadaan ** $|+\rangle$ ** dan ** $|-\rangle$ ** yang dihasilkan disebut basis X (atau basis diagonal), dan merupakan keadaan eigen dari matriks Pauli X. Karena matriks Hadamard itu sendiri merupakan matriks ortogonal dan simetris real (matriks unitari dalam ruang real), maka ia memenuhi ** $H = H^\dagger = H^{-1}$ ** dan ** $H^2 = I$ **.
-Oleh karena itu, ** $H |+\rangle = |0\rangle$ **, yang berarti ia juga memiliki fungsi untuk menginterferensikan (mengembalikan) keadaan superposisi kembali ke basis komputasi yang deterministik.
+Keadaan **$|+\rangle$** dan **$|-\rangle$** yang dihasilkan disebut basis X (atau basis diagonal), dan merupakan keadaan eigen dari matriks Pauli X. Karena matriks Hadamard itu sendiri merupakan matriks ortogonal dan simetris real (matriks unitari dalam ruang real), maka ia memenuhi **$H = H^\dagger = H^{-1}$** dan **$H^2 = I$** .
+Oleh karena itu, **$H |+\rangle = |0\rangle$** , yang berarti ia juga memiliki fungsi untuk menginterferensikan (mengembalikan) keadaan superposisi kembali ke basis komputasi yang deterministik.
 Secara aljabar, gerbang H adalah transformasi unitari yang mengonversi antara basis X dan basis Z. Hal ini dideskripsikan secara sangat indah sebagai transformasi similaritas matriks berikut:
 
 $$
@@ -748,28 +748,28 @@ $$
 H Z H^\dagger = H Z H = X
 $$
 
-Sifat ini memungkinkan sintesis "pembalikan bit oleh gerbang X" dengan cara mengapit "pembalikan fase oleh gerbang Z" dengan gerbang H. Secara geometris, gerbang H setara dengan rotasi ** $\pi$ ** dengan sumbu berupa vektor satuan ** $\hat{n} = \frac{1}{\sqrt{2}}(\hat{x} + \hat{z})$ ** pada bola Bloch.
+Sifat ini memungkinkan sintesis "pembalikan bit oleh gerbang X" dengan cara mengapit "pembalikan fase oleh gerbang Z" dengan gerbang H. Secara geometris, gerbang H setara dengan rotasi **$\pi$** dengan sumbu berupa vektor satuan **$\hat{n} = \frac{1}{\sqrt{2}}(\hat{x} + \hat{z})$** pada bola Bloch.
 
 ## 4.4 Kelompok Gerbang Pergeseran Fase: Gerbang S dan Gerbang T
 
-Kelompok operasi rotasi sembarang di sekitar sumbu Z pada bola Bloch, yang merupakan generalisasi lebih lanjut dari gerbang Pauli Z, disebut sebagai gerbang pergeseran fase ** $P(\phi)$ ** (atau ** $R_\phi$ ** ).
+Kelompok operasi rotasi sembarang di sekitar sumbu Z pada bola Bloch, yang merupakan generalisasi lebih lanjut dari gerbang Pauli Z, disebut sebagai gerbang pergeseran fase **$P(\phi)$** (atau **$R_\phi$** ).
 
 $$
 P(\phi) = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi} \end{pmatrix} = |0\rangle\langle 0| + e^{i\phi} |1\rangle\langle 1|
 $$
 
-Kelompok gerbang ini hanya memanipulasi fase relatif dari komponen ** $|1\rangle$ **, mengubah keadaan superposisi ** $\alpha|0\rangle + \beta|1\rangle$ ** menjadi ** $\alpha|0\rangle + \beta e^{i\phi}|1\rangle$ **. Dua gerbang berikut ini secara khusus sangat penting.
+Kelompok gerbang ini hanya memanipulasi fase relatif dari komponen **$|1\rangle$** , mengubah keadaan superposisi **$\alpha|0\rangle + \beta|1\rangle$** menjadi **$\alpha|0\rangle + \beta e^{i\phi}|1\rangle$** . Dua gerbang berikut ini secara khusus sangat penting.
 
 ### 4.4.1 Gerbang S (Gerbang Fase, $\sqrt{Z}$)
 
-Kasus di mana ** $\phi = \pi/2$ ** disebut gerbang S.
+Kasus di mana **$\phi = \pi/2$** disebut gerbang S.
 
 $$
 S = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
 $$
 
-Seperti yang jelas dari sifat matriksnya, menerapkannya dua kali akan menjadi gerbang Z ( ** $S^2 = Z$ ** ).
-Jika gerbang S diterapkan pada keadaan ** $|+\rangle$ **:
+Seperti yang jelas dari sifat matriksnya, menerapkannya dua kali akan menjadi gerbang Z ( **$S^2 = Z$** ).
+Jika gerbang S diterapkan pada keadaan **$|+\rangle$** :
 
 $$
 S |+\rangle = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ i \end{pmatrix} = \frac{|0\rangle + i|1\rangle}{\sqrt{2}} \equiv |+i\rangle
@@ -779,24 +779,24 @@ sehingga ia mentransisikan keadaan ke arah positif dari sumbu Y (keadaan eigen d
 
 ### 4.4.2 Gerbang T (Gerbang $\pi/8$, $\sqrt{S}$, $\sqrt[4]{Z}$)
 
-Kasus di mana ** $\phi = \pi/4$ ** disebut gerbang T.
+Kasus di mana **$\phi = \pi/4$** disebut gerbang T.
 
 $$
 T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & \frac{1+i}{\sqrt{2}} \end{pmatrix}
 $$
 
-Jika kita mengeluarkan fase global ** $e^{i\pi/8}$ **, komponen diagonalnya menjadi ** $e^{-i\pi/8}$ ** dan ** $e^{i\pi/8}$ **, sehingga secara historis gerbang ini juga disebut gerbang ** $\pi/8$ **.
+Jika kita mengeluarkan fase global **$e^{i\pi/8}$** , komponen diagonalnya menjadi **$e^{-i\pi/8}$** dan **$e^{i\pi/8}$** , sehingga secara historis gerbang ini juga disebut gerbang **$\pi/8$** .
 Gerbang T tidak termasuk dalam grup Clifford, dan menghancurkan efisiensi simulasi klasik. Namun, terdapat teorema yang sangat penting dalam teori komputasi kuantum bahwa dengan menambahkan satu saja gerbang T ini ke dalam grup Clifford, terbentuklah "Set Gerbang Kuantum Universal (Universal Quantum Gate Set)" yang dapat mengaproksimasi transformasi unitari apa pun pada qubit tunggal dengan presisi sembarang. Dalam komputasi kuantum yang toleran terhadap kesalahan (fault-tolerant), karena sulit untuk menjalankan gerbang T secara langsung pada kode koreksi kesalahan, ia diimplementasikan menggunakan metode yang sangat mahal yang disebut "Distilasi Keadaan Ajaib (Magic State Distillation)".
 
 ## 4.5 Representasi Fungsi Eksponensial dan Universalitas dari Gerbang Rotasi Sembarang
 
-Operasi paling umum pada qubit tunggal adalah transformasi unitari yang memutar sebesar sudut ** $\theta$ ** dengan sumbu rotasi berupa sembarang vektor satuan ** $\hat{n} = (n_x, n_y, n_z)$ ** (di mana ** $n_x^2 + n_y^2 + n_z^2 = 1$ ** ) pada bola Bloch. Dengan menggunakan kombinasi linear dari matriks Pauli, operator rotasi ** $R_{\hat{n}}(\theta)$ ** ini diformulasikan dengan indah sebagai fungsi eksponensial dari matriks berikut.
+Operasi paling umum pada qubit tunggal adalah transformasi unitari yang memutar sebesar sudut **$\theta$** dengan sumbu rotasi berupa sembarang vektor satuan **$\hat{n} = (n_x, n_y, n_z)$** (di mana **$n_x^2 + n_y^2 + n_z^2 = 1$** ) pada bola Bloch. Dengan menggunakan kombinasi linear dari matriks Pauli, operator rotasi **$R_{\hat{n}}(\theta)$** ini diformulasikan dengan indah sebagai fungsi eksponensial dari matriks berikut.
 
 $$
 R_{\hat{n}}(\theta) = \exp\left(-i \frac{\theta}{2} (\hat{n} \cdot \vec{\sigma})\right) = \exp\left(-i \frac{\theta}{2} (n_x X + n_y Y + n_z Z)\right)
 $$
 
-Di sini, dengan memanfaatkan sifat antikomutasi kuat dari matriks Pauli, yaitu ** $(\hat{n} \cdot \vec{\sigma})^2 = (n_x X + n_y Y + n_z Z)^2 = (n_x^2 + n_y^2 + n_z^2)I = I$ **, jika fungsi eksponensial tersebut diekspansi menggunakan deret Taylor ( ** $e^{iAx} = \cos(x)I + i\sin(x)A$ ** (pada kasus ** $A^2=I$ ** )), deret tak terhingga tersebut dapat disederhanakan secara dramatis, dan kita akan memperoleh bentuk perluasan matriks dari rumus Euler berikut.
+Di sini, dengan memanfaatkan sifat antikomutasi kuat dari matriks Pauli, yaitu **$(\hat{n} \cdot \vec{\sigma})^2 = (n_x X + n_y Y + n_z Z)^2 = (n_x^2 + n_y^2 + n_z^2)I = I$** , jika fungsi eksponensial tersebut diekspansi menggunakan deret Taylor ( **$e^{iAx} = \cos(x)I + i\sin(x)A$** (pada kasus **$A^2=I$** )), deret tak terhingga tersebut dapat disederhanakan secara dramatis, dan kita akan memperoleh bentuk perluasan matriks dari rumus Euler berikut.
 
 $$
 R_{\hat{n}}(\theta) = \cos\left(\frac{\theta}{2}\right) I - i \sin\left(\frac{\theta}{2}\right) (\hat{n} \cdot \vec{\sigma})
@@ -804,28 +804,28 @@ $$
 
 Dari rumusan umum ini, kelompok gerbang rotasi dasar di sekitar sumbu koordinat ortogonal dapat dideduksi.
 
-### Gerbang rotasi di sekitar sumbu X ** $R_x(\theta)$ **
+### Gerbang rotasi di sekitar sumbu X **$R_x(\theta)$** 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Gerbang rotasi di sekitar sumbu Y ** $R_y(\theta)$ **
+### Gerbang rotasi di sekitar sumbu Y **$R_y(\theta)$** 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Gerbang rotasi di sekitar sumbu Z ** $R_z(\theta)$ **
+### Gerbang rotasi di sekitar sumbu Z **$R_z(\theta)$** 
 
 
 $$
 R_z(\theta) = e^{-i \frac{\theta}{2} Z} = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix}
 $$
 
-Dengan menggunakan matriks-matriks rotasi ini, sembarang matriks unitari qubit tunggal ** $U \in SU(2)$ ** dapat difaktorkan secara sempurna melalui "dekomposisi Z-Y-Z" menggunakan tiga sudut Euler ( ** $\alpha, \beta, \gamma$ ** ) sebagai berikut.
+Dengan menggunakan matriks-matriks rotasi ini, sembarang matriks unitari qubit tunggal **$U \in SU(2)$** dapat difaktorkan secara sempurna melalui "dekomposisi Z-Y-Z" menggunakan tiga sudut Euler ( **$\alpha, \beta, \gamma$** ) sebagai berikut.
 
 $$
 U = e^{i\delta} R_z(\alpha) R_y(\beta) R_z(\gamma)
@@ -858,9 +858,9 @@ graph LR
 
 Untuk menyublimasikan konsep abstrak ke dalam intuisi fisik, kita akan menelusuri secara ketat dengan perhitungan manual tanpa ada yang dihilangkan, mengenai bagaimana keadaan kuantum berinterferensi dan bertransisi dengan mengalikan beberapa matriks unitari.
 
-Misalkan keadaan awal adalah keadaan basis ** $|\psi_0\rangle = |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ **.
-Operasi yang akan dieksekusi adalah urutan "gerbang ** $H$ **" $\rightarrow$ "gerbang ** $S$ **" $\rightarrow$ "gerbang ** $H$ **" yang mirip dengan diagram rangkaian di atas.
-Meskipun diagram rangkaian kuantum ditulis dari kiri ke kanan, perkalian operator aljabar linear terhadap vektor keadaan diaplikasikan "secara berurutan dari kiri", sehingga persamaan operator unitari keseluruhan ** $U_{total}$ ** akan tersusun dari kanan ke kiri yang berlawanan dengan waktu.
+Misalkan keadaan awal adalah keadaan basis **$|\psi_0\rangle = |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$** .
+Operasi yang akan dieksekusi adalah urutan "gerbang **$H$** " $\rightarrow$ "gerbang **$S$** " $\rightarrow$ "gerbang **$H$** " yang mirip dengan diagram rangkaian di atas.
+Meskipun diagram rangkaian kuantum ditulis dari kiri ke kanan, perkalian operator aljabar linear terhadap vektor keadaan diaplikasikan "secara berurutan dari kiri", sehingga persamaan operator unitari keseluruhan **$U_{total}$** akan tersusun dari kanan ke kiri yang berlawanan dengan waktu.
 
 $$
 U_{total} = H S H
@@ -872,26 +872,26 @@ $$
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}, \quad S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
 $$
 
-Pertama, kita menghitung hasil kali dari ** $H$ ** yang diaplikasikan segera setelah keadaan awal, dan ** $S$ ** setelahnya, yaitu ** $SH$ **.
+Pertama, kita menghitung hasil kali dari **$H$** yang diaplikasikan segera setelah keadaan awal, dan **$S$** setelahnya, yaitu **$SH$** .
 
 $$
 S H = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1\cdot 1 + 0\cdot 1 & 1\cdot 1 + 0\cdot(-1) \\ 0\cdot 1 + i\cdot 1 & 0\cdot 1 + i\cdot(-1) \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
 $$
 
-Selanjutnya, kita mengalikan ** $H$ ** terakhir dari sisi kiri pada hasil ini.
+Selanjutnya, kita mengalikan **$H$** terakhir dari sisi kiri pada hasil ini.
 
 $$
 U_{total} = H (S H) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
 $$
 
-Kita keluarkan pengali skalar ** $\frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$ ** ke depan, dan melakukan perkalian matriks dengan hati-hati.
+Kita keluarkan pengali skalar **$\frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$** ke depan, dan melakukan perkalian matriks dengan hati-hati.
 
 $$
 U_{total} = \frac{1}{2} \begin{pmatrix} 1\cdot 1 + 1\cdot i & 1\cdot 1 + 1\cdot(-i) \\ 1\cdot 1 + (-1)\cdot i & 1\cdot 1 + (-1)\cdot(-i) \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix}
 $$
 
 Ini adalah representasi matriks unitari tunggal ketika keseluruhan rangkaian dipandang sebagai satu kotak hitam (black box).
-Kita aplikasikan ** $U_{total}$ ** ini pada keadaan awal ** $|0\rangle$ ** untuk menghitung keadaan akhir ** $|\psi_{final}\rangle$ **.
+Kita aplikasikan **$U_{total}$** ini pada keadaan awal **$|0\rangle$** untuk menghitung keadaan akhir **$|\psi_{final}\rangle$** .
 
 $$
 |\psi_{final}\rangle = U_{total} |0\rangle = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i \\ 1 - i \end{pmatrix}
@@ -913,35 +913,35 @@ $$
 P(1) = |\langle 1 | \psi_{final} \rangle|^2 = \left| \frac{1-i}{2} \right|^2 = \frac{1^2 + (-1)^2}{4} = \frac{2}{4} = \frac{1}{2}
 $$
 
-Jumlah probabilitasnya menjadi ** $P(0) + P(1) = 1$ **, yang membuktikan bahwa ini adalah keadaan yang valid secara fisis. Jika diukur, nilai 0 akan diperoleh dengan probabilitas 50%, dan nilai 1 dengan probabilitas 50%, tetapi ini bukanlah sekadar bilangan acak klasik biasa. Untuk mengeluarkan "fase" yang tersembunyi di balik keadaan tersebut, mari kita ubah vektor keadaan menjadi bentuk koordinat polar pada bola Bloch.
+Jumlah probabilitasnya menjadi **$P(0) + P(1) = 1$** , yang membuktikan bahwa ini adalah keadaan yang valid secara fisis. Jika diukur, nilai 0 akan diperoleh dengan probabilitas 50%, dan nilai 1 dengan probabilitas 50%, tetapi ini bukanlah sekadar bilangan acak klasik biasa. Untuk mengeluarkan "fase" yang tersembunyi di balik keadaan tersebut, mari kita ubah vektor keadaan menjadi bentuk koordinat polar pada bola Bloch.
 
-Sebagai faktor persekutuan keseluruhan, kita akan mengeluarkan amplitudo ** $1/\sqrt{2}$ ** dan fase global ** $e^{i\pi/4}$ ** secara paksa ( ** $\frac{1+i}{\sqrt{2}}$ ** ).
+Sebagai faktor persekutuan keseluruhan, kita akan mengeluarkan amplitudo **$1/\sqrt{2}$** dan fase global **$e^{i\pi/4}$** secara paksa ( **$\frac{1+i}{\sqrt{2}}$** ).
 
 $$
 |\psi_{final}\rangle = \frac{1}{\sqrt{2}} \left( \frac{1+i}{\sqrt{2}} |0\rangle + \frac{1-i}{\sqrt{2}} |1\rangle \right) = e^{i\pi/4} \left( \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}} e^{-i\pi/2} |1\rangle \right)
 $$
 
-Karena fase global ** $e^{i\pi/4}$ ** dalam perhitungan nilai ekspektasi untuk besaran observasi mana pun (operator Hermitian) akan menjadi ** $e^{-i\pi/4} e^{i\pi/4} = 1$ ** sehingga saling meniadakan, jika kita hanya mengekstrak bagian fase relatif yang memiliki makna fisis:
+Karena fase global **$e^{i\pi/4}$** dalam perhitungan nilai ekspektasi untuk besaran observasi mana pun (operator Hermitian) akan menjadi **$e^{-i\pi/4} e^{i\pi/4} = 1$** sehingga saling meniadakan, jika kita hanya mengekstrak bagian fase relatif yang memiliki makna fisis:
 
 $$
 |\psi_{final}'\rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{i}{\sqrt{2}} |1\rangle
 $$
 
-Dengan membandingkan hal ini dengan representasi koordinat polar ** $\cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$ **, secara sempurna teridentifikasi bahwa vektor Bloch tersebut mengarah pada sudut zenith ** $\theta = \pi/2$ ** (pada ekuator) dan sudut azimuth ** $\phi = -\pi/2$ ** (arah negatif sumbu Y). Ini adalah keadaan yang biasanya dinotasikan sebagai ** $|-i\rangle$ **.
+Dengan membandingkan hal ini dengan representasi koordinat polar **$\cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$** , secara sempurna teridentifikasi bahwa vektor Bloch tersebut mengarah pada sudut zenith **$\theta = \pi/2$** (pada ekuator) dan sudut azimuth **$\phi = -\pi/2$** (arah negatif sumbu Y). Ini adalah keadaan yang biasanya dinotasikan sebagai **$|-i\rangle$** .
 
-Mari kita tunjukkan fakta yang lebih mendalam lagi. Dengan menggunakan rumus gerbang rotasi berdasarkan fungsi eksponensial yang diturunkan sebelumnya, kita akan menuliskan matriks rotasi ** $\pi/2$ ** di sekitar sumbu X, yaitu ** $R_x(\pi/2)$ **.
+Mari kita tunjukkan fakta yang lebih mendalam lagi. Dengan menggunakan rumus gerbang rotasi berdasarkan fungsi eksponensial yang diturunkan sebelumnya, kita akan menuliskan matriks rotasi **$\pi/2$** di sekitar sumbu X, yaitu **$R_x(\pi/2)$** .
 
 $$
 R_x(\pi/2) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix}
 $$
 
-Di sisi lain, mari kita lihat kembali matriks keseluruhan ** $U_{total}$ ** yang kita hitung.
+Di sisi lain, mari kita lihat kembali matriks keseluruhan **$U_{total}$** yang kita hitung.
 
 $$
 U_{total} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & \frac{1-i}{1+i} \\ \frac{1-i}{1+i} & 1 \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix} = e^{i\pi/4} R_x(\pi/2)
 $$
 
-Secara menakjubkan, hal ini membuktikan bahwa operasi berurutan dari gerbang diskrit di sekitar sumbu yang sama sekali berbeda, yaitu " ** $H \rightarrow S \rightarrow H$ ** ", apabila mengabaikan fase globalnya, ekuivalen secara matematis kata demi kata dengan operasi tunggal berupa "rotasi ** $\pi/2$ ** di sekitar sumbu X".
+Secara menakjubkan, hal ini membuktikan bahwa operasi berurutan dari gerbang diskrit di sekitar sumbu yang sama sekali berbeda, yaitu " **$H \rightarrow S \rightarrow H$** ", apabila mengabaikan fase globalnya, ekuivalen secara matematis kata demi kata dengan operasi tunggal berupa "rotasi **$\pi/2$** di sekitar sumbu X".
 Dengan cara ini, meskipun keadaan kuantum menempuh jalur interferensi kompleks yang menolak intuisi klasik kita, melalui kerangka matematika aljabar linear yang kokoh, perilakunya dapat dikendalikan dan diprediksi secara penuh tanpa ada kesalahan sekecil apa pun (bahkan satu bit).
 
 Pada bab selanjutnya, dengan menggunakan pengetahuan tentang operasi qubit tunggal yang kuat ini sebagai pijakan, kita akan melangkah ke dalam dunia yang lebih mendalam mengenai perkalian tensor (tensor product) yang meledakkan dimensi ruang Hilbert secara eksponensial, serta gerbang multi-qubit yang menghasilkan "keterikatan kuantum (entanglement)" yang pernah disebut oleh Einstein sebagai "aksi seram dari jarak jauh" (spooky action at a distance).
@@ -954,9 +954,9 @@ Dalam bab-bab sebelumnya, kita telah membahas secara mendalam sifat superposisi 
 
 ## 5.1 Deskripsi Matematis Keadaan Banyak-Benda dengan Produk Tensor ($\otimes$)
 
-Menurut aksioma mekanika kuantum, ketika ruang keadaan dari sistem fisik yang independen masing-masing dideskripsikan oleh ruang Hilbert ** $\mathcal{H}_A$ ** dan ** $\mathcal{H}_B$ **, ruang keadaan dari sistem komposit yang menggabungkan keduanya diberikan sebagai **produk tensor** (Tensor Product) dari masing-masing ruang, yaitu ** $\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$ **.
+Menurut aksioma mekanika kuantum, ketika ruang keadaan dari sistem fisik yang independen masing-masing dideskripsikan oleh ruang Hilbert **$\mathcal{H}_A$** dan **$\mathcal{H}_B$** , ruang keadaan dari sistem komposit yang menggabungkan keduanya diberikan sebagai **produk tensor** (Tensor Product) dari masing-masing ruang, yaitu **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** .
 
-Ruang keadaan dari qubit tunggal adalah ruang vektor kompleks dua dimensi ** $\mathbb{C}^2$ **. Oleh karena itu, ruang keadaan dari sistem yang terdiri dari $n$ qubit adalah ruang Hilbert berdimensi $2^n$, yaitu ** $(\mathbb{C}^2)^{\otimes n}$ **. Pertumbuhan dimensi secara eksponensial terhadap jumlah qubit $n$ inilah yang menjadi fondasi matematis dari paralelisme kuantum.
+Ruang keadaan dari qubit tunggal adalah ruang vektor kompleks dua dimensi **$\mathbb{C}^2$** . Oleh karena itu, ruang keadaan dari sistem yang terdiri dari $n$ qubit adalah ruang Hilbert berdimensi $2^n$, yaitu **$(\mathbb{C}^2)^{\otimes n}$** . Pertumbuhan dimensi secara eksponensial terhadap jumlah qubit $n$ inilah yang menjadi fondasi matematis dari paralelisme kuantum.
 
 Mari kita tinjau sistem yang terdiri dari dua qubit (qubit A dan qubit B). Basis komputasi didefinisikan sebagai produk tensor dari keadaan basis masing-masing qubit tunggal.
 
@@ -973,13 +973,13 @@ $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 $$
 
-Dengan menggunakan basis ini, sebagai contoh, perhitungan untuk keadaan ** $|10\rangle$ ** adalah sebagai berikut:
+Dengan menggunakan basis ini, sebagai contoh, perhitungan untuk keadaan **$|10\rangle$** adalah sebagai berikut:
 
 $$
 |10\rangle = |1\rangle \otimes |0\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \otimes \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \\ 1 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}
 $$
 
-Dalam ruang vektor 4 dimensi ini, keadaan murni paling umum dari sistem 2-qubit, ** $|\Psi\rangle$ **, dideskripsikan sebagai kombinasi linear (superposisi) dari keempat vektor basis ini:
+Dalam ruang vektor 4 dimensi ini, keadaan murni paling umum dari sistem 2-qubit, **$|\Psi\rangle$** , dideskripsikan sebagai kombinasi linear (superposisi) dari keempat vektor basis ini:
 
 $$
 |\Psi\rangle = c_{00} |00\rangle + c_{01} |01\rangle + c_{10} |10\rangle + c_{11} |11\rangle
@@ -987,7 +987,7 @@ $$
 
 Di sini, $c_{ij} \in \mathbb{C}$ adalah amplitudo probabilitas, dan berdasarkan aturan Born, keadaannya harus dinormalisasi, yaitu memenuhi syarat normalisasi $\sum_{i,j \in \{0,1\}} |c_{ij}|^2 = 1$.
 
-Operator (gerbang) dalam sistem komposit juga dikonstruksi menggunakan produk tensor. Operasi penerapan operator ** $U_A$ ** pada qubit A dan operator ** $U_B$ ** pada qubit B direpresentasikan sebagai operator ** $U_A \otimes U_B$ ** untuk keseluruhan sistem komposit, yang beraksi pada keadaan produk sembarang sebagai berikut:
+Operator (gerbang) dalam sistem komposit juga dikonstruksi menggunakan produk tensor. Operasi penerapan operator **$U_A$** pada qubit A dan operator **$U_B$** pada qubit B direpresentasikan sebagai operator **$U_A \otimes U_B$** untuk keseluruhan sistem komposit, yang beraksi pada keadaan produk sembarang sebagai berikut:
 
 $$
 (U_A \otimes U_B)(|\psi\rangle_A \otimes |\phi\rangle_B) = (U_A |\psi\rangle_A) \otimes (U_B |\phi\rangle_B)
@@ -1000,13 +1000,13 @@ Berdasarkan linearitas, aksi ini diperluas ke keadaan superposisi sembarang.
 ## 5.2 Representasi Matematis Keadaan Bell (Keadaan Terikat Maksimal)
 
 Keadaan dalam sistem kuantum banyak-benda secara garis besar diklasifikasikan menjadi dua: "keadaan dapat terpisahkan (Separable State)" dan "keadaan terikat (Entangled State)".
-Ketika suatu keadaan ** $|\Psi\rangle$ ** dapat dideskripsikan semata-mata sebagai produk tensor dari keadaan masing-masing subsistem, yaitu
+Ketika suatu keadaan **$|\Psi\rangle$** dapat dideskripsikan semata-mata sebagai produk tensor dari keadaan masing-masing subsistem, yaitu
 
 $$
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
 $$
 
-maka keadaan tersebut dikatakan dapat terpisahkan (separable). Sebaliknya, keadaan yang **tidak dapat** dinyatakan sebagai produk tensor dari keadaan subsistem mana pun didefinisikan sebagai **keadaan terikat secara kuantum (Entangled State)**.
+maka keadaan tersebut dikatakan dapat terpisahkan (separable). Sebaliknya, keadaan yang **tidak dapat** dinyatakan sebagai produk tensor dari keadaan subsistem mana pun didefinisikan sebagai **keadaan terikat secara kuantum (Entangled State)** .
 
 Dalam sistem dua-qubit, keadaan yang terikat secara kuantum paling kuat disebut **keadaan Bell** (Bell States), atau pasangan EPR. Keadaan Bell terdiri dari empat keadaan murni ortogonal berikut, yang membentuk basis ortonormal lengkap (basis Bell) bagi ruang Hilbert 4 dimensi:
 
@@ -1026,8 +1026,8 @@ $$
 |\Psi^-\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle - |10\rangle \Big)
 $$
 
-Di sini, mari kita buktikan secara ketat dengan kontradiksi (reductio ad absurdum) bahwa keadaan ** $|\Phi^+\rangle$ ** tidak dapat dipisahkan.
-Andaikan keadaan ** $|\Phi^+\rangle$ ** adalah keadaan yang dapat dipisahkan, dan asumsikan ia dapat dituliskan sebagai produk tensor dari keadaan qubit tunggal yang belum diketahui:
+Di sini, mari kita buktikan secara ketat dengan kontradiksi (reductio ad absurdum) bahwa keadaan **$|\Phi^+\rangle$** tidak dapat dipisahkan.
+Andaikan keadaan **$|\Phi^+\rangle$** adalah keadaan yang dapat dipisahkan, dan asumsikan ia dapat dituliskan sebagai produk tensor dari keadaan qubit tunggal yang belum diketahui:
 
 $$
 |\Phi^+\rangle = (a|0\rangle + b|1\rangle)_A \otimes (c|0\rangle + d|1\rangle)_B
@@ -1049,11 +1049,11 @@ Dengan membandingkan koefisien pada persamaan definisi awal, kita memperoleh sis
 Dari Persamaan 3 ($ad = 0$), maka $a = 0$ atau $d = 0$.
 Jika $a = 0$, dari Persamaan 1 diperoleh $ac = 0$, yang berkontradiksi dengan $ac = \frac{1}{\sqrt{2}}$.
 Jika $d = 0$, dari Persamaan 2 diperoleh $bd = 0$, yang berkontradiksi dengan $bd = \frac{1}{\sqrt{2}}$.
-Oleh karena itu, bilangan kompleks $a, b, c, d$ seperti itu tidak ada, sehingga terbukti secara ketat bahwa keadaan ** $|\Phi^+\rangle$ ** tidak pernah dapat difaktorkan sebagai produk dari dua keadaan independen.
+Oleh karena itu, bilangan kompleks $a, b, c, d$ seperti itu tidak ada, sehingga terbukti secara ketat bahwa keadaan **$|\Phi^+\rangle$** tidak pernah dapat difaktorkan sebagai produk dari dua keadaan independen.
 
 ### Matriks Densitas Tereduksi dan Entropi Keterikatan
 
-Fakta bahwa keadaan Bell merupakan "keterikatan maksimal" menjadi semakin jelas dengan menghitung **matriks densitas tereduksi** (Reduced Density Matrix) yang mendeskripsikan informasi subsistem. Ketika keseluruhan sistem berada dalam keadaan murni ** $\rho = |\Phi^+\rangle \langle\Phi^+|$ **, kita menelusuri keluar (partial trace) qubit B untuk mencari keadaan lokal dari qubit A:
+Fakta bahwa keadaan Bell merupakan "keterikatan maksimal" menjadi semakin jelas dengan menghitung **matriks densitas tereduksi** (Reduced Density Matrix) yang mendeskripsikan informasi subsistem. Ketika keseluruhan sistem berada dalam keadaan murni **$\rho = |\Phi^+\rangle \langle\Phi^+|$** , kita menelusuri keluar (partial trace) qubit B untuk mencari keadaan lokal dari qubit A:
 
 $$
 \rho_A = \text{Tr}_B(|\Phi^+\rangle \langle\Phi^+|) = \text{Tr}_B \left[ \frac{1}{2} (|00\rangle\langle00| + |00\rangle\langle11| + |11\rangle\langle00| + |11\rangle\langle11|) \right]
@@ -1113,9 +1113,9 @@ Sebagai sifat penting dari gerbang CNOT, karena gerbang ini secara bersamaan mem
 
 ## 5.4 Sirkuit Pembangkit Keterikatan Kuantum Menggunakan CNOT
 
-Lalu, berangkat dari keadaan yang dapat terpisahkan, bagaimana cara kita membangkitkan keadaan Bell yang merupakan keadaan terikat maksimal? Di sini, kita akan membangun sirkuit kuantum standar untuk menghasilkan ** $|\Phi^+\rangle$ ** dari keadaan awal komputer kuantum ** $|00\rangle$ **, dan menelusuri evolusi keadaannya melalui perumusan matematis.
+Lalu, berangkat dari keadaan yang dapat terpisahkan, bagaimana cara kita membangkitkan keadaan Bell yang merupakan keadaan terikat maksimal? Di sini, kita akan membangun sirkuit kuantum standar untuk menghasilkan **$|\Phi^+\rangle$** dari keadaan awal komputer kuantum **$|00\rangle$** , dan menelusuri evolusi keadaannya melalui perumusan matematis.
 
-Komponen yang diperlukan hanyalah gerbang Hadamard ** $H$ ** yang beraksi pada qubit tunggal, dan gerbang ** $\text{CNOT}$ ** yang telah dijelaskan sebelumnya. Matriks Hadamard didefinisikan sebagai berikut:
+Komponen yang diperlukan hanyalah gerbang Hadamard **$H$** yang beraksi pada qubit tunggal, dan gerbang **$\text{CNOT}$** yang telah dijelaskan sebelumnya. Matriks Hadamard didefinisikan sebagai berikut:
 
 $$
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
@@ -1123,7 +1123,7 @@ $$
 
 ### Perhitungan Evolusi Keadaan Kuantum
 
-**Langkah 1:** Inisialisasi
+ **Langkah 1:** Inisialisasi
 Sistem berada pada keadaan awal basis komputasi:
 
 
@@ -1131,8 +1131,8 @@ $$
 |\psi_0\rangle = |0\rangle_A \otimes |0\rangle_B = |00\rangle
 $$
 
-**Langkah 2:** Penerapan Gerbang Hadamard pada Qubit Kontrol (Qubit A)
-Gerbang Hadamard diterapkan hanya pada qubit A untuk menciptakan keadaan superposisi. Operator untuk keseluruhan sistem adalah ** $H \otimes I$ **.
+ **Langkah 2:** Penerapan Gerbang Hadamard pada Qubit Kontrol (Qubit A)
+Gerbang Hadamard diterapkan hanya pada qubit A untuk menciptakan keadaan superposisi. Operator untuk keseluruhan sistem adalah **$H \otimes I$** .
 
 $$
 |\psi_1\rangle = (H \otimes I) |00\rangle = (H|0\rangle_A) \otimes (I|0\rangle_B)
@@ -1148,7 +1148,7 @@ $$
 
 Pada titik ini, keadaannya masih berupa keadaan yang dapat terpisahkan. Hal ini dikarenakan ia masih dapat dituliskan dalam bentuk produk tensor.
 
-**Langkah 3:** Penerapan Gerbang CNOT
+ **Langkah 3:** Penerapan Gerbang CNOT
 Selanjutnya, kita menerapkan gerbang CNOT dengan qubit A sebagai qubit kontrol dan qubit B sebagai qubit target. Berdasarkan linearitas operator, gerbang CNOT beraksi secara independen pada setiap suku superposisi:
 
 $$
@@ -1165,7 +1165,7 @@ $$
 |\psi_2\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
 $$
 
-Secara elegan, keadaan Bell ** $|\Phi^+\rangle$ ** berhasil dibangkitkan dari keadaan awal yang dapat terpisahkan. Ketika gerbang CNOT menerima "superposisi qubit kontrol antara 0 dan 1" yang dihasilkan oleh gerbang Hadamard, proses pembalikan/tanpa-pembalikan pada qubit target bercabang secara terikat dengan masing-masing keadaan qubit kontrol, sehingga keterikatan kuantum terbentuk pada sistem secara keseluruhan.
+Secara elegan, keadaan Bell **$|\Phi^+\rangle$** berhasil dibangkitkan dari keadaan awal yang dapat terpisahkan. Ketika gerbang CNOT menerima "superposisi qubit kontrol antara 0 dan 1" yang dihasilkan oleh gerbang Hadamard, proses pembalikan/tanpa-pembalikan pada qubit target bercabang secara terikat dengan masing-masing keadaan qubit kontrol, sehingga keterikatan kuantum terbentuk pada sistem secara keseluruhan.
 
 Dengan konfigurasi sirkuit yang serupa, dengan mengubah keadaan awal menjadi $|01\rangle, |10\rangle, |11\rangle$, kita dapat membangkitkan ketiga keadaan Bell yang tersisa, yaitu berturut-turut $|\Psi^+\rangle, |\Phi^-\rangle, |\Psi^-\rangle$, secara deterministik.
 
@@ -1202,8 +1202,8 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333,shape:circle,r:5px
-    style X fill:#fff,stroke:#333,stroke-width:2px,shape:circle
+    style Dot fill:#333,stroke:#333
+    style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(Catatan: Diagram di atas merepresentasikan interkoneksi logis. Garis horizontal solid menunjukkan aliran waktu dari masing-masing qubit (kabel kuantum), memperlihatkan struktur tempat qubit kontrol yang telah melewati `Gerbang H` mengontrol qubit target pada `⊕` di posisi `●`. Keadaan Bell $|\Phi^+\rangle$ diperoleh sebagai keadaan keluaran keseluruhan.)*
 
@@ -1211,9 +1211,9 @@ graph LR
 
 ## 5.5 Paradoks EPR dan Non-Lokalitas
 
-Hal yang menunjukkan bahwa konsep keterikatan kuantum bukan sekadar permainan matematis, melainkan mengajukan pertanyaan tajam terhadap fondasi fisika, adalah publikasi tahun 1935 oleh Albert Einstein, Boris Podolsky, dan Nathan Rosen yang dikenal sebagai **makalah EPR**. Mereka berargumen bahwa karena deskripsi mekanika kuantum berkontradiksi dengan "realisme lokal (Local Realism)", maka mekanika kuantum merupakan teori yang tidak lengkap (memerlukan variabel tersembunyi).
+Hal yang menunjukkan bahwa konsep keterikatan kuantum bukan sekadar permainan matematis, melainkan mengajukan pertanyaan tajam terhadap fondasi fisika, adalah publikasi tahun 1935 oleh Albert Einstein, Boris Podolsky, dan Nathan Rosen yang dikenal sebagai **makalah EPR** . Mereka berargumen bahwa karena deskripsi mekanika kuantum berkontradiksi dengan "realisme lokal (Local Realism)", maka mekanika kuantum merupakan teori yang tidak lengkap (memerlukan variabel tersembunyi).
 
-Mari kita lakukan eksperimen pikiran dengan membayangkan dua pengamat, Alice dan Bob, berbagi keadaan Bell ** $|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$ ** yang telah dibangkitkan sebelumnya. Asumsikan bahwa Alice memegang qubit pertama, Bob memegang qubit kedua, dan mereka terpisah di ujung-ujung alam semesta yang saling berjauhan (misalnya Bumi dan Galaksi Andromeda).
+Mari kita lakukan eksperimen pikiran dengan membayangkan dua pengamat, Alice dan Bob, berbagi keadaan Bell **$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$** yang telah dibangkitkan sebelumnya. Asumsikan bahwa Alice memegang qubit pertama, Bob memegang qubit kedua, dan mereka terpisah di ujung-ujung alam semesta yang saling berjauhan (misalnya Bumi dan Galaksi Andromeda).
 
 Dalam keadaan ini, hasil pengukuran masing-masing qubit pada dasarnya bersifat acak. Ketika Alice mengukur qubit yang dipegangnya dalam basis komputasi $\{|0\rangle, |1\rangle\}$, ia memperoleh $0$ (keadaan $|0\rangle$) dengan probabilitas 50%, dan $1$ (keadaan $|1\rangle$) dengan probabilitas 50%.
 
@@ -1226,9 +1226,9 @@ Einstein menyebut fenomena ini sebagai "aksi seram dari jarak jauh (spooky actio
 ### Teorema Tanpa-Sinyal dan Ketidaksamaan Bell
 
 Lantas, apakah mekanika kuantum berkontradiksi dengan teori relativitas? Kesimpulannya adalah: tidak ada kontradiksi.
-Paradoks yang tampak ini diselesaikan oleh **Teorema Tanpa-Sinyal (No-Communication Theorem)**. Meskipun keadaan Bob terdeterminasi seketika akibat pengukuran Alice, pada prinsipnya mustahil bagi Alice sendiri untuk mengendalikan apakah ia akan memperoleh hasil $0$ atau $1$. Dari sisi Bob, tidak ada cara untuk mengetahui fakta bahwa Alice telah melakukan pengukuran, dan hasil pengukuran terhadap qubitnya sendiri tetap tampak sepenuhnya acak (probabilitas 50% untuk 0 atau 1). Seperti yang telah dibuktikan pada bagian matriks densitas tereduksi, basis pengukuran apa pun yang dipilih oleh Alice sama sekali tidak mengubah matriks densitas lokal Bob, $\rho_B$. Oleh karena itu, kita tidak dapat mentransmisikan "informasi yang bermakna" melebihi kecepatan cahaya dengan memanfaatkan keterikatan kuantum.
+Paradoks yang tampak ini diselesaikan oleh **Teorema Tanpa-Sinyal (No-Communication Theorem)** . Meskipun keadaan Bob terdeterminasi seketika akibat pengukuran Alice, pada prinsipnya mustahil bagi Alice sendiri untuk mengendalikan apakah ia akan memperoleh hasil $0$ atau $1$. Dari sisi Bob, tidak ada cara untuk mengetahui fakta bahwa Alice telah melakukan pengukuran, dan hasil pengukuran terhadap qubitnya sendiri tetap tampak sepenuhnya acak (probabilitas 50% untuk 0 atau 1). Seperti yang telah dibuktikan pada bagian matriks densitas tereduksi, basis pengukuran apa pun yang dipilih oleh Alice sama sekali tidak mengubah matriks densitas lokal Bob, $\rho_B$. Oleh karena itu, kita tidak dapat mentransmisikan "informasi yang bermakna" melebihi kecepatan cahaya dengan memanfaatkan keterikatan kuantum.
 
-Kendati demikian, korelasi kuat yang dimiliki oleh keterikatan kuantum ini bukanlah sesuatu yang dapat diakomodasi dalam kerangka fisika klasik. Pada tahun 1964, John Stewart Bell menurunkan **Ketidaksamaan Bell**. Bell membuktikan secara matematis bahwa "jika dunia dideskripsikan oleh realisme lokal (teori variabel tersembunyi yang diajukan Einstein), maka kekuatan korelasi ketika Alice dan Bob masing-masing melakukan pengukuran pada sumbu yang berbeda tidak akan melampaui batas atas tertentu (pada ketidaksamaan CHSH, $|S| \leq 2$)".
+Kendati demikian, korelasi kuat yang dimiliki oleh keterikatan kuantum ini bukanlah sesuatu yang dapat diakomodasi dalam kerangka fisika klasik. Pada tahun 1964, John Stewart Bell menurunkan **Ketidaksamaan Bell** . Bell membuktikan secara matematis bahwa "jika dunia dideskripsikan oleh realisme lokal (teori variabel tersembunyi yang diajukan Einstein), maka kekuatan korelasi ketika Alice dan Bob masing-masing melakukan pengukuran pada sumbu yang berbeda tidak akan melampaui batas atas tertentu (pada ketidaksamaan CHSH, $|S| \leq 2$)".
 
 Mekanika kuantum memprediksi pelanggaran terhadap batas atas ini ( $|S| = 2\sqrt{2}$ ) pada konfigurasi tertentu. Eksperimen fisika presisi berikutnya oleh Alain Aspect dan kawan-kawan telah membuktikan secara eksperimental pelanggaran terhadap ketidaksamaan Bell, dan memastikan bahwa alam semesta tempat kita hidup **bukanlah** bersifat realisme lokal. Korelasi non-lokal akibat keterikatan kuantum merupakan fenomena fisika universal yang nyata-nyata ada di alam semesta.
 
@@ -1240,7 +1240,7 @@ Dalam bab ini, kita akan menggali lebih dalam tentang protokol paling penting da
 
 ## 6.1 Teorema Tanpa-Kloning (No-Cloning Theorem)
 
-Dalam komputer klasik, menyalin (menggandakan) data adalah operasi yang sangat trivial. Deretan bit dapat dengan mudah disalin dan disimpan dalam media penyimpanan yang tak terhitung jumlahnya. Namun, di dunia yang diatur oleh mekanika kuantum, ada sebuah teorema mengejutkan yang menyatakan bahwa ** "Membuat salinan sempurna dari keadaan kuantum yang tidak diketahui adalah hal yang mustahil" **. Inilah "Teorema Tanpa-Kloning (No-Cloning Theorem)", yang dibuktikan secara independen oleh Wootters dan Zurek, serta oleh Dieks pada tahun 1982.
+Dalam komputer klasik, menyalin (menggandakan) data adalah operasi yang sangat trivial. Deretan bit dapat dengan mudah disalin dan disimpan dalam media penyimpanan yang tak terhitung jumlahnya. Namun, di dunia yang diatur oleh mekanika kuantum, ada sebuah teorema mengejutkan yang menyatakan bahwa **"Membuat salinan sempurna dari keadaan kuantum yang tidak diketahui adalah hal yang mustahil"** . Inilah "Teorema Tanpa-Kloning (No-Cloning Theorem)", yang dibuktikan secara independen oleh Wootters dan Zurek, serta oleh Dieks pada tahun 1982.
 
 Teorema ini adalah prinsip fundamental yang menjamin keamanan kriptografi kuantum (distribusi kunci kuantum), sekaligus menjadi alasan mengapa koreksi kesalahan kuantum harus menggunakan pendekatan kompleks yang sama sekali berbeda dari kode pengulangan klasik (sekadar suara terbanyak).
 
@@ -1248,21 +1248,21 @@ Teorema ini adalah prinsip fundamental yang menjamin keamanan kriptografi kuantu
 
 Bukti Teorema Tanpa-Kloning diturunkan murni dari sifat-sifat yang sangat dasar dari mekanika kuantum, yaitu linearitas dan uniteritas.
 
-Mari kita asumsikan keberadaan "mesin penyalin kuantum universal" yang dapat menyalin keadaan kuantum yang tidak diketahui ** $|\psi\rangle$ **. Mesin penyalin ini seharusnya menerima keadaan asli ** $|\psi\rangle$ ** dan qubit target yang telah diinisialisasi (setara dengan buku catatan kosong) ** $|0\rangle$ ** sebagai input, dan menghasilkan dua keadaan identik ** $|\psi\rangle \otimes |\psi\rangle$ ** (ditulis secara ringkas sebagai ** $|\psi\rangle |\psi\rangle$ **) sebagai output.
+Mari kita asumsikan keberadaan "mesin penyalin kuantum universal" yang dapat menyalin keadaan kuantum yang tidak diketahui **$|\psi\rangle$** . Mesin penyalin ini seharusnya menerima keadaan asli **$|\psi\rangle$** dan qubit target yang telah diinisialisasi (setara dengan buku catatan kosong) **$|0\rangle$** sebagai input, dan menghasilkan dua keadaan identik **$|\psi\rangle \otimes |\psi\rangle$** (ditulis secara ringkas sebagai **$|\psi\rangle |\psi\rangle$** ) sebagai output.
 
-Dalam mekanika kuantum, setiap evolusi fisik dari sistem tertutup dijelaskan oleh sebuah operator uniter ** $U$ **. Oleh karena itu, operasi dari mesin penyalin ini didefinisikan sebagai transformasi uniter ** $U$ ** yang memenuhi persamaan berikut.
+Dalam mekanika kuantum, setiap evolusi fisik dari sistem tertutup dijelaskan oleh sebuah operator uniter **$U$** . Oleh karena itu, operasi dari mesin penyalin ini didefinisikan sebagai transformasi uniter **$U$** yang memenuhi persamaan berikut.
 
 $$
 U (|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle
 $$
 
-Karena diasumsikan ini berlaku untuk keadaan "sebarang", mesin tersebut juga harus berfungsi dengan cara yang sama untuk sebarang keadaan kuantum lain ** $|\phi\rangle$ **.
+Karena diasumsikan ini berlaku untuk keadaan "sebarang", mesin tersebut juga harus berfungsi dengan cara yang sama untuk sebarang keadaan kuantum lain **$|\phi\rangle$** .
 
 $$
 U (|\phi\rangle \otimes |0\rangle) = |\phi\rangle \otimes |\phi\rangle
 $$
 
-Sekarang, mari kita ambil hasil kali dalam (produk skalar) dari kedua persamaan ini. Kita menggunakan sifat operator uniter ** $U$ ** ( ** $U^\dagger U = I$ ** ). Hasil kali dalam di ruas kiri adalah sebagai berikut.
+Sekarang, mari kita ambil hasil kali dalam (produk skalar) dari kedua persamaan ini. Kita menggunakan sifat operator uniter **$U$** ( **$U^\dagger U = I$** ). Hasil kali dalam di ruas kiri adalah sebagai berikut.
 
 $$
 \begin{aligned}
@@ -1274,7 +1274,7 @@ $$
 \end{aligned}
 $$
 
-(Di sini, kita menggunakan ** $\langle 0 | 0 \rangle = 1$ **.)
+(Di sini, kita menggunakan **$\langle 0 | 0 \rangle = 1$** .)
 
 Di sisi lain, hasil kali dalam dari keadaan yang disalin di ruas kanan adalah sebagai berikut.
 
@@ -1293,7 +1293,7 @@ $$
 \langle \psi | \phi \rangle = (\langle \psi | \phi \rangle)^2
 $$
 
-Kondisi agar persamaan ** $x = x^2$ ** berlaku dalam domain bilangan kompleks hanyalah ** $x = 0$ ** atau ** $x = 1$ **. Artinya,
+Kondisi agar persamaan **$x = x^2$** berlaku dalam domain bilangan kompleks hanyalah **$x = 0$** atau **$x = 1$** . Artinya,
 
 $$
 \langle \psi | \phi \rangle = 0 \quad \text{atau} \quad \langle \psi | \phi \rangle = 1
@@ -1304,7 +1304,7 @@ Ini berarti bahwa hanya jika dua keadaan "benar-benar ortogonal (tidak berhubung
 ### Bukti dari Linearitas (Reductio ad absurdum)
 
 Kita juga dapat melakukan pendekatan dari linearitas (prinsip superposisi) mekanika kuantum.
-Pertimbangkan sebuah operator uniter ** $U$ ** yang dapat menyalin dua keadaan basis ortogonal ** $|0\rangle$ ** dan ** $|1\rangle$ **.
+Pertimbangkan sebuah operator uniter **$U$** yang dapat menyalin dua keadaan basis ortogonal **$|0\rangle$** dan **$|1\rangle$** .
 
 $$
 U |0\rangle |0\rangle = |0\rangle |0\rangle
@@ -1314,7 +1314,7 @@ $$
 U |1\rangle |0\rangle = |1\rangle |1\rangle
 $$
 
-Sejauh ini tidak ada masalah. Ini sama dengan menyalin bit klasik 0 dan 1. Lalu, apa yang terjadi jika kita mencoba menyalin keadaan tidak diketahui yang merupakan superposisi dari keadaan-keadaan tersebut, ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ **? Dari linearitas evolusi waktu oleh operator uniter, kita mendapatkan:
+Sejauh ini tidak ada masalah. Ini sama dengan menyalin bit klasik 0 dan 1. Lalu, apa yang terjadi jika kita mencoba menyalin keadaan tidak diketahui yang merupakan superposisi dari keadaan-keadaan tersebut, **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** ? Dari linearitas evolusi waktu oleh operator uniter, kita mendapatkan:
 
 $$
 \begin{aligned}
@@ -1334,7 +1334,7 @@ $$
 \end{aligned}
 $$
 
-Hasil yang diturunkan oleh linearitas ** $\alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle$ ** jelas berbeda dari keadaan salinan yang diinginkan ** $|\psi\rangle \otimes |\psi\rangle$ ** (suku silang ** $|0\rangle |1\rangle$ ** dan ** $|1\rangle |0\rangle$ ** hilang). Hal ini sekali lagi menunjukkan bahwa tidak mungkin menyalin keadaan superposisi yang tidak diketahui.
+Hasil yang diturunkan oleh linearitas **$\alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle$** jelas berbeda dari keadaan salinan yang diinginkan **$|\psi\rangle \otimes |\psi\rangle$** (suku silang **$|0\rangle |1\rangle$** dan **$|1\rangle |0\rangle$** hilang). Hal ini sekali lagi menunjukkan bahwa tidak mungkin menyalin keadaan superposisi yang tidak diketahui.
 
 ---
 
@@ -1347,7 +1347,7 @@ Satu hal yang perlu diperhatikan di sini adalah bahwa partikel fisik itu sendiri
 ### Pengaturan Protokol dan Keadaan Awal
 
 Anggaplah pengirimnya adalah Alice dan penerimanya adalah Bob.
-Alice memiliki keadaan qubit tunggal yang tidak diketahui ** $|\psi\rangle$ ** yang ingin ia kirimkan ke Bob.
+Alice memiliki keadaan qubit tunggal yang tidak diketahui **$|\psi\rangle$** yang ingin ia kirimkan ke Bob.
 
 $$
 |\psi\rangle_C = \alpha|0\rangle_C + \beta|1\rangle_C \quad (|\alpha|^2 + |\beta|^2 = 1)
@@ -1365,7 +1365,7 @@ $$
 
 Subskrip $A$ mewakili qubit yang dipegang oleh Alice, dan $B$ mewakili qubit yang dipegang oleh Bob.
 
-Keadaan awal keseluruhan sistem ** $|\Psi_0\rangle$ ** digambarkan sebagai produk tensor dari keadaan yang ingin ditransfer oleh Alice dan pasangan EPR yang dibagikan.
+Keadaan awal keseluruhan sistem **$|\Psi_0\rangle$** digambarkan sebagai produk tensor dari keadaan yang ingin ditransfer oleh Alice dan pasangan EPR yang dibagikan.
 
 $$
 \begin{aligned}
@@ -1379,8 +1379,8 @@ $$
 
 Alice memiliki qubit $C$ dan $A$ di tangannya. Alice melakukan pengukuran bersama yang disebut "pengukuran Bell" pada dua qubit ini. Dalam terminologi sirkuit, hal ini setara dengan menerapkan gerbang CNOT yang diikuti oleh gerbang Hadamard, dan kemudian mengukurnya dalam basis standar (basis komputasi).
 
-**Langkah 1: Penerapan Gerbang CNOT**
-Alice menerapkan gerbang CNOT (Controlled-NOT) ** $CX_{CA}$ ** dengan qubit $C$ sebagai bit kontrol dan qubit $A$ sebagai bit target. CNOT membalik bit target hanya jika bit kontrol bernilai $|1\rangle$.
+ **Langkah 1: Penerapan Gerbang CNOT** 
+Alice menerapkan gerbang CNOT (Controlled-NOT) **$CX_{CA}$** dengan qubit $C$ sebagai bit kontrol dan qubit $A$ sebagai bit target. CNOT membalik bit target hanya jika bit kontrol bernilai $|1\rangle$.
 
 $$
 \begin{aligned}
@@ -1392,8 +1392,8 @@ $$
 
 (Suku ketiga $|0\rangle_A$ dibalik menjadi $|1\rangle_A$, dan suku keempat $|1\rangle_A$ dibalik menjadi $|0\rangle_A$.)
 
-**Langkah 2: Penerapan Gerbang Hadamard**
-Selanjutnya, Alice menerapkan gerbang Hadamard ** $H_C$ ** pada qubit $C$. Transformasi Hadamard mengubah $|0\rangle \to \frac{|0\rangle+|1\rangle}{\sqrt{2}}$, dan $|1\rangle \to \frac{|0\rangle-|1\rangle}{\sqrt{2}}$.
+ **Langkah 2: Penerapan Gerbang Hadamard** 
+Selanjutnya, Alice menerapkan gerbang Hadamard **$H_C$** pada qubit $C$. Transformasi Hadamard mengubah $|0\rangle \to \frac{|0\rangle+|1\rangle}{\sqrt{2}}$, dan $|1\rangle \to \frac{|0\rangle-|1\rangle}{\sqrt{2}}$.
 
 $$
 \begin{aligned}
@@ -1416,26 +1416,26 @@ $$
 
 Hal yang patut diperhatikan adalah bahwa bergantung pada hasil pengukuran Alice, qubit $B$ milik Bob diproyeksikan ke keadaan yang berbeda-beda.
 
-**Langkah 3: Pengukuran dan Komunikasi Klasik**
+ **Langkah 3: Pengukuran dan Komunikasi Klasik** 
 Alice mengamati (mengukur) qubit $C$ dan $A$ miliknya. Hasil yang didapat dan probabilitasnya adalah sebagai berikut. Masing-masing terjadi dengan probabilitas 25%.
 
-- Saat hasil pengukuran `00`: Qubit Bob menjadi ** $\alpha|0\rangle + \beta|1\rangle$ **, yang merupakan keadaan asli ** $|\psi\rangle$ ** itu sendiri.
-- Saat hasil pengukuran `01`: Qubit Bob menjadi ** $\alpha|1\rangle + \beta|0\rangle$ **. Ini adalah keadaan asli setelah diterapkan gerbang Pauli X, yaitu ** $X|\psi\rangle$ **.
-- Saat hasil pengukuran `10`: Qubit Bob menjadi ** $\alpha|0\rangle - \beta|1\rangle$ **. Ini adalah keadaan asli setelah diterapkan gerbang Pauli Z, yaitu ** $Z|\psi\rangle$ **.
-- Saat hasil pengukuran `11`: Qubit Bob menjadi ** $\alpha|1\rangle - \beta|0\rangle$ **. Ini adalah keadaan asli setelah diterapkan gerbang Pauli X dan dilanjutkan dengan gerbang Pauli Z, yaitu ** $ZX|\psi\rangle$ ** (atau $Y|\psi\rangle$ jika mengabaikan fase).
+- Saat hasil pengukuran `00`: Qubit Bob menjadi **$\alpha|0\rangle + \beta|1\rangle$** , yang merupakan keadaan asli **$|\psi\rangle$** itu sendiri.
+- Saat hasil pengukuran `01`: Qubit Bob menjadi **$\alpha|1\rangle + \beta|0\rangle$** . Ini adalah keadaan asli setelah diterapkan gerbang Pauli X, yaitu **$X|\psi\rangle$** .
+- Saat hasil pengukuran `10`: Qubit Bob menjadi **$\alpha|0\rangle - \beta|1\rangle$** . Ini adalah keadaan asli setelah diterapkan gerbang Pauli Z, yaitu **$Z|\psi\rangle$** .
+- Saat hasil pengukuran `11`: Qubit Bob menjadi **$\alpha|1\rangle - \beta|0\rangle$** . Ini adalah keadaan asli setelah diterapkan gerbang Pauli X dan dilanjutkan dengan gerbang Pauli Z, yaitu **$ZX|\psi\rangle$** (atau $Y|\psi\rangle$ jika mengabaikan fase).
 
 Alice mengirimkan hasil pengukuran 2 bit ini (informasi klasik) kepada Bob menggunakan saluran komunikasi klasik seperti telepon atau internet. Karena menggunakan komunikasi klasik, transmisi keadaan tidak akan pernah melebihi kecepatan cahaya.
 
 ### Operasi Pemulihan oleh Bob
 
-Bob menerapkan gerbang Pauli (atau tidak melakukan apa-apa) pada qubit miliknya bergantung pada informasi klasik 2 bit yang diterima dari Alice untuk sepenuhnya memulihkan keadaan asli ** $|\psi\rangle$ **.
+Bob menerapkan gerbang Pauli (atau tidak melakukan apa-apa) pada qubit miliknya bergantung pada informasi klasik 2 bit yang diterima dari Alice untuk sepenuhnya memulihkan keadaan asli **$|\psi\rangle$** .
 
 - Menerima `00`: Tanpa operasi ( $I$ )
 - Menerima `01`: Terapkan gerbang Pauli X ( $X \cdot X = I$ )
 - Menerima `10`: Terapkan gerbang Pauli Z ( $Z \cdot Z = I$ )
 - Menerima `11`: Terapkan gerbang Pauli X, diikuti gerbang Pauli Z ( $Z \cdot X \cdot ZX = I$ )
 
-Dengan cara ini, keadaan yang sama persis yang dimiliki oleh Alice, yaitu ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ **, akan direkonstruksi kembali di tangan Bob. Mengingat qubit asli Alice hancur oleh pengukuran, maka informasi telah sepenuhnya ditransfer (diteleportasi).
+Dengan cara ini, keadaan yang sama persis yang dimiliki oleh Alice, yaitu **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** , akan direkonstruksi kembali di tangan Bob. Mengingat qubit asli Alice hancur oleh pengukuran, maka informasi telah sepenuhnya ditransfer (diteleportasi).
 
 ### Representasi dengan Diagram Sirkuit Kuantum
 
@@ -1466,8 +1466,8 @@ graph LR
     gateZ --> out["|ψ⟩ (Pemulihan)"]
     end
     
-    M1 -. "Komunikasi Klasik (0/1)" .-> gateX
-    M2 -. "Komunikasi Klasik (0/1)" .-> gateZ
+    M1 -.->|"Komunikasi Klasik (0/1)"| gateX
+    M2 -.->|"Komunikasi Klasik (0/1)"| gateZ
 
     classDef quantum fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
     classDef classical fill:#fbe9e7,stroke:#bf360c,stroke-width:2px,stroke-dasharray: 5 5;
@@ -1492,10 +1492,9 @@ $$
 $$
 
 Alice ingin mengirim pesan klasik 2 bit $b_1 b_2 \in \{00, 01, 10, 11\}$ kepada Bob.
-Bergantung pada pesan yang ingin ia kirim, Alice melakukan operasi gerbang qubit tunggal tertentu **hanya pada qubit A miliknya**.
+Bergantung pada pesan yang ingin ia kirim, Alice melakukan operasi gerbang qubit tunggal tertentu **hanya pada qubit A miliknya** .
 
-1. **Jika pesan `00`:**
-   Alice tidak melakukan apa pun (menerapkan operator identitas $I$).
+1. **Jika pesan `00`:** Alice tidak melakukan apa pun (menerapkan operator identitas $I$).
    Keadaan keseluruhan tidak berubah.
    
 
@@ -1503,24 +1502,21 @@ $$
 |\Psi_{00}\rangle = (I \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
 $$
 
-2. **Jika pesan `01`:**
-   Alice menerapkan gerbang Pauli Z.
+2. **Jika pesan `01`:** Alice menerapkan gerbang Pauli Z.
    
 
 $$
 |\Psi_{01}\rangle = (Z \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (Z|0\rangle|0\rangle + Z|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle) = |\Phi^-\rangle
 $$
 
-3. **Jika pesan `10`:**
-   Alice menerapkan gerbang Pauli X.
+3. **Jika pesan `10`:** Alice menerapkan gerbang Pauli X.
    
 
 $$
 |\Psi_{10}\rangle = (X \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (X|0\rangle|0\rangle + X|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|10\rangle + |01\rangle) = |\Psi^+\rangle
 $$
 
-4. **Jika pesan `11`:**
-   Alice menerapkan gerbang Pauli Z, dan kemudian menerapkan gerbang Pauli X (setara dengan $iY$).
+4. **Jika pesan `11`:** Alice menerapkan gerbang Pauli Z, dan kemudian menerapkan gerbang Pauli X (setara dengan $iY$).
    
 
 $$
@@ -1528,11 +1524,11 @@ $$
 $$
 
 
-   (Tanda negatif keseluruhan adalah fase global, sehingga tidak memengaruhi probabilitas observasi. Namun, demi kenyamanan di sini, kita akan mengatur ulang tanda tersebut untuk berkorespondensi dengan ** $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ **.)
+   (Tanda negatif keseluruhan adalah fase global, sehingga tidak memengaruhi probabilitas observasi. Namun, demi kenyamanan di sini, kita akan mengatur ulang tanda tersebut untuk berkorespondensi dengan **$|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$** .)
 
 Alice kemudian mengirimkan qubit A miliknya yang telah dioperasikan kepada Bob melalui saluran komunikasi kuantum (seperti serat optik).
 
-Fakta luar biasa yang patut diperhatikan: Alice **hanya mengirimkan 1 qubit secara fisik** kepada Bob. Dan dia tidak menyentuh qubit Bob sama sekali. Namun, sebagai hasil dari operasi Alice, keadaan seluruh sistem secara deterministik telah bertransisi ke salah satu dari 4 keadaan kuantum ortogonal sempurna (yang kita sebut **basis Bell**).
+Fakta luar biasa yang patut diperhatikan: Alice **hanya mengirimkan 1 qubit secara fisik** kepada Bob. Dan dia tidak menyentuh qubit Bob sama sekali. Namun, sebagai hasil dari operasi Alice, keadaan seluruh sistem secara deterministik telah bertransisi ke salah satu dari 4 keadaan kuantum ortogonal sempurna (yang kita sebut **basis Bell** ).
 
 ### Dekode oleh Bob dan Pengukuran Bell
 
@@ -1542,23 +1538,19 @@ Dengan kata lain, ia menerapkan gerbang CNOT dengan qubit A sebagai bit kontrol 
 
 Mari kita pastikan perkembangan matematis untuk setiap kasus:
 
-- **Jika keadaan adalah $|\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)$ (Pesan `00`):**
-  Menerapkan CNOT menghasilkan $\frac{1}{\sqrt{2}} (|00\rangle + |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |0\rangle$.
+- **Jika keadaan adalah $|\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)$ (Pesan `00`):** Menerapkan CNOT menghasilkan $\frac{1}{\sqrt{2}} (|00\rangle + |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |0\rangle$.
   Menerapkan Hadamard pada A menghasilkan $|0\rangle |0\rangle$.
   Saat Bob mengukur, ia pasti akan mendapatkan `00`.
 
-- **Jika keadaan adalah $|\Phi^-\rangle = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle)$ (Pesan `01`):**
-  Menerapkan CNOT menghasilkan $\frac{1}{\sqrt{2}} (|00\rangle - |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |0\rangle$.
+- **Jika keadaan adalah $|\Phi^-\rangle = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle)$ (Pesan `01`):** Menerapkan CNOT menghasilkan $\frac{1}{\sqrt{2}} (|00\rangle - |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |0\rangle$.
   Menerapkan Hadamard pada A menghasilkan $|1\rangle |0\rangle$.
   Saat Bob mengukur, ia pasti akan mendapatkan `10`. (*Catatan: Korespondensi bit dengan operasi Alice berbeda menurut definisi sirkuit, namun dapat dibedakan secara unik*)
 
-- **Jika keadaan adalah $|\Psi^+\rangle = \frac{1}{\sqrt{2}} (|01\rangle + |10\rangle)$ (Pesan `10`):**
-  Menerapkan CNOT menghasilkan $\frac{1}{\sqrt{2}} (|01\rangle + |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |1\rangle$.
+- **Jika keadaan adalah $|\Psi^+\rangle = \frac{1}{\sqrt{2}} (|01\rangle + |10\rangle)$ (Pesan `10`):** Menerapkan CNOT menghasilkan $\frac{1}{\sqrt{2}} (|01\rangle + |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |1\rangle$.
   Menerapkan Hadamard pada A menghasilkan $|0\rangle |1\rangle$.
   Saat Bob mengukur, ia pasti akan mendapatkan `01`.
 
-- **Jika keadaan adalah $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ (Pesan `11`):**
-  Menerapkan CNOT menghasilkan $\frac{1}{\sqrt{2}} (|01\rangle - |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |1\rangle$.
+- **Jika keadaan adalah $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ (Pesan `11`):** Menerapkan CNOT menghasilkan $\frac{1}{\sqrt{2}} (|01\rangle - |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |1\rangle$.
   Menerapkan Hadamard pada A menghasilkan $|1\rangle |1\rangle$.
   Saat Bob mengukur, ia pasti akan mendapatkan `11`.
 
@@ -1583,32 +1575,32 @@ Dalam bab ini, kita akan mengungkap gambaran lengkap dari algoritma bersejarah i
 
 ## 7.2 Pengaturan Masalah: Fungsi Konstan atau Fungsi Seimbang?
 
-Pertama-tama, mari kita definisikan masalah yang harus diselesaikan oleh algoritma. Misalkan kita diberikan sebuah kotak hitam (*oracle*). *Oracle* ini menerima input $n$ bit $x \in \{0, 1\}^n$ dan menghitung fungsi ** $f$ ** yang mengembalikan output 1 bit $f(x) \in \{0, 1\}$.
+Pertama-tama, mari kita definisikan masalah yang harus diselesaikan oleh algoritma. Misalkan kita diberikan sebuah kotak hitam (*oracle*). *Oracle* ini menerima input $n$ bit $x \in \{0, 1\}^n$ dan menghitung fungsi **$f$** yang mengembalikan output 1 bit $f(x) \in \{0, 1\}$.
 
-Di sini, fungsi ** $f$ ** ini memiliki sebuah janji (Promise) yang kuat bahwa ia "pasti memenuhi salah satu dari dua sifat berikut":
+Di sini, fungsi **$f$** ini memiliki sebuah janji (Promise) yang kuat bahwa ia "pasti memenuhi salah satu dari dua sifat berikut":
 
-1. **Fungsi Konstan (Constant Function)**: Untuk sembarang input $x$, fungsi selalu mengembalikan $f(x) = 0$ atau selalu mengembalikan $f(x) = 1$.
-2. **Fungsi Seimbang (Balanced Function)**: Dari semua kemungkinan input $x$, fungsi mengembalikan $f(x) = 0$ untuk tepat setengahnya, dan mengembalikan $f(x) = 1$ untuk setengah sisanya.
+1. **Fungsi Konstan (Constant Function)** : Untuk sembarang input $x$, fungsi selalu mengembalikan $f(x) = 0$ atau selalu mengembalikan $f(x) = 1$.
+2. **Fungsi Seimbang (Balanced Function)** : Dari semua kemungkinan input $x$, fungsi mengembalikan $f(x) = 0$ untuk tepat setengahnya, dan mengembalikan $f(x) = 1$ untuk setengah sisanya.
 
-Tujuan kita adalah untuk menentukan apakah *oracle* ** $f$ ** yang diberikan merupakan fungsi konstan atau fungsi seimbang, dengan meminimalkan jumlah pertanyaan (kueri) ke *oracle*.
+Tujuan kita adalah untuk menentukan apakah *oracle* **$f$** yang diberikan merupakan fungsi konstan atau fungsi seimbang, dengan meminimalkan jumlah pertanyaan (kueri) ke *oracle*.
 
 ### Batasan dalam Komputasi Klasik
 
-Mari kita pertimbangkan kasus menyelesaikan masalah ini dengan komputer klasik. Pola input untuk fungsi ** $f$ ** secara total ada sebanyak $N = 2^n$ kemungkinan.
+Mari kita pertimbangkan kasus menyelesaikan masalah ini dengan komputer klasik. Pola input untuk fungsi **$f$** secara total ada sebanyak $N = 2^n$ kemungkinan.
 
 Mari kita asumsikan skenario terburuk. Misalkan sejak pertanyaan pertama secara berturut-turut untuk $2^{n-1}$ kueri (yaitu setengah dari keseluruhan input), diperoleh output yang sama (misalnya: semuanya bernilai $0$ ). Pada titik ini, kedua kemungkinan masih tetap terbuka: kemungkinan bahwa fungsi tersebut adalah fungsi konstan (setengah sisanya juga semuanya $0$ ), atau fungsi seimbang (setengah sisanya semuanya $1$ ).
 
-Oleh karena itu, agar komputer klasik dapat menentukan dengan kepastian 100% apakah fungsi tersebut merupakan fungsi konstan atau fungsi seimbang, diperlukan ** dalam kasus terburuk sebanyak $2^{n-1} + 1$ kali kueri ** . Jumlah kueri ini meningkat secara eksponensial terhadap jumlah bit input $n$. Dengan kata lain, kompleksitas komputasi klasik (kompleksitas kueri) adalah $O(2^n)$.
+Oleh karena itu, agar komputer klasik dapat menentukan dengan kepastian 100% apakah fungsi tersebut merupakan fungsi konstan atau fungsi seimbang, diperlukan **dalam kasus terburuk sebanyak $2^{n-1} + 1$ kali kueri** . Jumlah kueri ini meningkat secara eksponensial terhadap jumlah bit input $n$. Dengan kata lain, kompleksitas komputasi klasik (kompleksitas kueri) adalah $O(2^n)$.
 
-Secara mengejutkan, dengan menggunakan komputasi kuantum, masalah ini dapat ditentukan dengan benar dengan probabilitas 100% hanya dalam ** 1 kali kueri ** . Inilah esensi dari keunggulan kuantum.
+Secara mengejutkan, dengan menggunakan komputasi kuantum, masalah ini dapat ditentukan dengan benar dengan probabilitas 100% hanya dalam **1 kali kueri** . Inilah esensi dari keunggulan kuantum.
 
 ## 7.3 Oracle Kuantum dan Geometri Tendangan Balik Fase
 
-Untuk membangun algoritma kuantum, pertama-tama kita perlu merepresentasikan kembali fungsi klasik ** $f(x)$ ** ke dalam bentuk yang memenuhi persyaratan mekanika kuantum (uniteritas = reversibilitas). Untuk tujuan inilah "Oracle Kuantum (Quantum Oracle)" diperkenalkan.
+Untuk membangun algoritma kuantum, pertama-tama kita perlu merepresentasikan kembali fungsi klasik **$f(x)$** ke dalam bentuk yang memenuhi persyaratan mekanika kuantum (uniteritas = reversibilitas). Untuk tujuan inilah "Oracle Kuantum (Quantum Oracle)" diperkenalkan.
 
 ### Oracle Kuantum $U_f$
 
-Kita menyiapkan register input ( $n$ qubit) dan register target ( $1$ qubit). Operator uniter ** $U_f$ ** yang merepresentasikan oracle bekerja pada keadaan basis komputasi sebagai berikut:
+Kita menyiapkan register input ( $n$ qubit) dan register target ( $1$ qubit). Operator uniter **$U_f$** yang merepresentasikan oracle bekerja pada keadaan basis komputasi sebagai berikut:
 
 $$
 U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle
@@ -1624,7 +1616,7 @@ $$
 |-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
-Kita memasukkan keadaan ini ke dalam register target, lalu menerapkan oracle ** $U_f$ ** .
+Kita memasukkan keadaan ini ke dalam register target, lalu menerapkan oracle **$U_f$** .
 
 $$
 U_f |x\rangle |-\rangle = U_f \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
@@ -1650,7 +1642,7 @@ $$
 U_f |x\rangle |-\rangle = (-1)^{f(x)} |x\rangle |-\rangle
 $$
 
-Ini adalah hasil yang luar biasa. Keadaan register target $|-\rangle$ sama sekali tidak mengalami perubahan, namun hasil evaluasi dari fungsi ** $f(x)$ ** "ditendang balik" (kickback) ke sisi register input ** $|x\rangle$ ** sebagai "tanda fase (Phase)". Hal ini memungkinkan kita untuk menyandikan informasi ke dalam fase amplitudo.
+Ini adalah hasil yang luar biasa. Keadaan register target $|-\rangle$ sama sekali tidak mengalami perubahan, namun hasil evaluasi dari fungsi **$f(x)$** "ditendang balik" (kickback) ke sisi register input **$|x\rangle$** sebagai "tanda fase (Phase)". Hal ini memungkinkan kita untuk menyandikan informasi ke dalam fase amplitudo.
 
 ## 7.4 Algoritma Deutsch-Jozsa: Diagram Sirkuit dan Ekspansi Matematis Lengkap
 
@@ -1695,13 +1687,13 @@ $$
 
 ### Langkah 3: Penerapan Oracle Kuantum (Tendangan Balik Fase)
 
-Di sini kita menerapkan oracle ** $U_f$ ** . Berdasarkan efek tendangan balik fase yang telah dibuktikan pada bagian sebelumnya, setiap keadaan basis $|x\rangle$ dikalikan dengan fase $(-1)^{f(x)}$.
+Di sini kita menerapkan oracle **$U_f$** . Berdasarkan efek tendangan balik fase yang telah dibuktikan pada bagian sebelumnya, setiap keadaan basis $|x\rangle$ dikalikan dengan fase $(-1)^{f(x)}$.
 
 $$
 |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} (-1)^{f(x)} |x\rangle |-\rangle
 $$
 
-Pada titik ini, seluruh informasi (sebanyak $2^n$ nilai) dari hasil evaluasi ** $f(x)$ ** telah disematkan secara paralel ke dalam setiap fase keadaan superposisi melalui satu kali operasi komputasi. Hal ini disebut "Paralelisme Kuantum (Quantum Parallelism)".
+Pada titik ini, seluruh informasi (sebanyak $2^n$ nilai) dari hasil evaluasi **$f(x)$** telah disematkan secara paralel ke dalam setiap fase keadaan superposisi melalui satu kali operasi komputasi. Hal ini disebut "Paralelisme Kuantum (Quantum Parallelism)".
 
 ### Langkah 4: Terjadinya Interferensi pada Register Input
 
@@ -1732,7 +1724,7 @@ Ini adalah persamaan yang sangat penting yang merepresentasikan keadaan kuantum 
 ### Langkah 5: Pengukuran dan Analisis Hasil
 
 Di akhir algoritma, kita mengukur $n$ qubit pada register input dalam basis komputasi.
-Hal yang menjadi pusat perhatian kita adalah probabilitas di mana semua qubit bernilai $0$, yaitu keadaan ** $|0\rangle^{\otimes n}$ ** yang terukur. Mari kita tinjau kasus ketika $z = 00\dots0$ pada persamaan di atas. Pada kondisi ini, karena $x \cdot 0 = 0$ untuk sembarang $x$, amplitudo (koefisien) dari keadaan ** $|0\rangle^{\otimes n}$ ** dihitung sebagai berikut:
+Hal yang menjadi pusat perhatian kita adalah probabilitas di mana semua qubit bernilai $0$, yaitu keadaan **$|0\rangle^{\otimes n}$** yang terukur. Mari kita tinjau kasus ketika $z = 00\dots0$ pada persamaan di atas. Pada kondisi ini, karena $x \cdot 0 = 0$ untuk sembarang $x$, amplitudo (koefisien) dari keadaan **$|0\rangle^{\otimes n}$** dihitung sebagai berikut:
 
 $$
 \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \sum_{x \in \{0,1\}^n} (-1)^{f(x)}
@@ -1753,7 +1745,7 @@ P(00\dots0) = | \pm 1 |^2 = 1
 $$
 
 
-Dengan kata lain, ** ketika fungsinya adalah fungsi konstan, $|0\rangle^{\otimes n}$ akan terukur dengan probabilitas 100% ** .
+Dengan kata lain, **ketika fungsinya adalah fungsi konstan, $|0\rangle^{\otimes n}$ akan terukur dengan probabilitas 100%** .
 
 #### Kasus 2: Ketika fungsi $f$ adalah fungsi seimbang
 Terdapat jumlah yang tepat sama antara $x$ yang menghasilkan $f(x) = 0$ dan $x$ yang menghasilkan $f(x) = 1$ (masing-masing sebanyak $2^{n-1}$ buah).
@@ -1771,7 +1763,7 @@ P(00\dots0) = | 0 |^2 = 0
 $$
 
 
-Dengan kata lain, ** ketika fungsinya adalah fungsi seimbang, probabilitas untuk mengukur $|0\rangle^{\otimes n}$ adalah 0%, dan keadaan di mana setidaknya satu bit bernilai $1$ pasti akan selalu terukur ** .
+Dengan kata lain, **ketika fungsinya adalah fungsi seimbang, probabilitas untuk mengukur $|0\rangle^{\otimes n}$ adalah 0%, dan keadaan di mana setidaknya satu bit bernilai $1$ pasti akan selalu terukur** .
 
 ## 7.6 Contoh Konkret: Penelusuran Lengkap untuk Kasus $n=2$
 
@@ -1817,10 +1809,10 @@ Jika kita menyederhanakan suku-suku yang tersisa, keadaan akhirnya menjadi $|11\
 
 Keajaiban dari algoritma Deutsch-Jozsa terletak pada keberhasilannya memetakan $2^n$ informasi ke dalam ruang fase melalui tendangan balik fase, serta mengendalikan "Interferensi (Interference)" yang ditimbulkan oleh transformasi Hadamard terakhir.
 
-- Dalam kasus **Fungsi Konstan**: Gelombang dari semua lintasan mengalami "interferensi konstruktif (Constructive Interference)", dan amplitudonya terkonsentrasi 100% pada keadaan ** $|0\rangle^{\otimes n}$ ** .
-- Dalam kasus **Fungsi Seimbang**: Gelombang positif dan gelombang negatif mengalami "interferensi destruktif (Destructive Interference)", yang sepenuhnya melenyapkan amplitudo keadaan ** $|0\rangle^{\otimes n}$ ** .
+- Dalam kasus **Fungsi Konstan** : Gelombang dari semua lintasan mengalami "interferensi konstruktif (Constructive Interference)", dan amplitudonya terkonsentrasi 100% pada keadaan **$|0\rangle^{\otimes n}$** .
+- Dalam kasus **Fungsi Seimbang** : Gelombang positif dan gelombang negatif mengalami "interferensi destruktif (Destructive Interference)", yang sepenuhnya melenyapkan amplitudo keadaan **$|0\rangle^{\otimes n}$** .
 
-Melalui struktur matematis yang luar biasa ini, masalah yang pada komputer klasik memerlukan kueri paling buruk $O(2^n)$ (secara spesifik $2^{n-1} + 1$ kali) dapat dipecahkan oleh komputer kuantum hanya dalam ** 1 kali kueri tunggal ( $O(1)$ ) ** , dan secara deterministik (dengan tingkat akurasi 100%).
+Melalui struktur matematis yang luar biasa ini, masalah yang pada komputer klasik memerlukan kueri paling buruk $O(2^n)$ (secara spesifik $2^{n-1} + 1$ kali) dapat dipecahkan oleh komputer kuantum hanya dalam **1 kali kueri tunggal ( $O(1)$ )** , dan secara deterministik (dengan tingkat akurasi 100%).
 
 Fakta yang dibuktikan dalam bab ini menjadi sebuah tonggak sejarah yang sangat penting dalam sejarah umat manusia, membuktikan bahwa dengan menerapkan prinsip-prinsip mekanika kuantum ke dalam pemrosesan informasi, batas fisik teori informasi klasik dapat ditembus.
 
@@ -1921,7 +1913,7 @@ $$
 $$
 
 
-Terhadap sembarang keadaan kuantum ** $|\psi\rangle$ ** , berdasarkan linearitas, ia akan beraksi sebagai berikut:
+Terhadap sembarang keadaan kuantum **$|\psi\rangle$** , berdasarkan linearitas, ia akan beraksi sebagai berikut:
 
 
 $$
@@ -1977,8 +1969,8 @@ flowchart LR
     Measure --> Classical["Pemrosesan klasik melalui ekspansi pecahan berlanjut (Derivasi r)"]
 ```
 
-**【Langkah 1: Inisialisasi dan Pembuatan Superposisi】**
-Seluruh sistem diatur ke keadaan awal ** $|\psi_0\rangle$ ** $= |0\rangle^{\otimes t} |0\rangle^{\otimes L}$.
+ **【Langkah 1: Inisialisasi dan Pembuatan Superposisi】** 
+Seluruh sistem diatur ke keadaan awal **$|\psi_0\rangle$** $= |0\rangle^{\otimes t} |0\rangle^{\otimes L}$.
 Selanjutnya, kita menerapkan gerbang Hadamard $H^{\otimes t}$ ke semua qubit di register pertama untuk menghasilkan superposisi ekuiprobabel dari keadaan yang secara eksponensial banyak.
 
 
@@ -1989,7 +1981,7 @@ $$
 
 Di sini, register pertama memegang semua kemungkinan keadaan bilangan bulat dari $0$ hingga $M-1$ secara bersamaan.
 
-**【Langkah 2: Evaluasi Fungsi oleh Oracle Kuantum】**
+ **【Langkah 2: Evaluasi Fungsi oleh Oracle Kuantum】** 
 Kita menerapkan oracle kuantum $U_f$, menghitung fungsi $f(x) = a^x \bmod N$ selagi tetap berada dalam keadaan superposisi, dan menyimpan hasilnya di register kedua.
 
 
@@ -1998,9 +1990,9 @@ $$
 $$
 
 
-Keadaan ** $|\psi_2\rangle$ ** ini adalah keadaan di mana masukan $x$ dan keluaran $f(x)$ sangat terbelit (entangled).
+Keadaan **$|\psi_2\rangle$** ini adalah keadaan di mana masukan $x$ dan keluaran $f(x)$ sangat terbelit (entangled).
 
-**【Langkah 3: Observasi Register Kedua (Konseptual)】**
+ **【Langkah 3: Observasi Register Kedua (Konseptual)】** 
 Untuk memfasilitasi pemahaman teoretis, mari kita asumsikan bahwa kita mengukur register kedua di sini (dalam algoritma sebenarnya, konsekuensi matematisnya akan persis sama meskipun pengukurannya dihilangkan). Melalui pengamatan, register kedua runtuh menjadi suatu nilai tertentu $y = a^{x_0} \bmod N$. Di sini $x_0$ adalah nilai offset terkecil yang memenuhi $0 \le x_0 < r$.
 Pada saat ini, register pertama runtuh seketika menjadi keadaan superposisi dari "semua masukan $x$ sedemikian rupa sehingga keluaran fungsi $f(x)$ menjadi $y$". Karena fungsi tersebut memiliki periode $r$, nilai $x$ tersebut berjarak sama (equidistant) seperti $x_0, x_0 + r, x_0 + 2r, \dots$.
 
@@ -2013,7 +2005,7 @@ $$
 Di mana $A$ adalah jumlah suku yang termasuk dalam superposisi, dengan $A \approx M/r$.
 Jika kita fokus pada register pertama, ini adalah keadaan distribusi probabilitas berbentuk sisir (comb-like) dengan periode $r$. Namun, meskipun kita langsung mengukur keadaan ini, kita hanya akan mendapatkan $x_0 + mr$ acak dengan probabilitas yang sama, dan karena offset $x_0$ tidak diketahui, kita tidak dapat mengetahui periode $r$. Di sinilah QFT diperlukan.
 
-**【Langkah 4: Penerapan Invers Transformasi Fourier Kuantum】**
+ **【Langkah 4: Penerapan Invers Transformasi Fourier Kuantum】** 
 Kita menerapkan Invers Transformasi Fourier Kuantum (QFT$^\dagger$) ke register pertama.
 
 
@@ -2033,7 +2025,7 @@ $$
 Bagian jumlahan dari persamaan ini adalah jumlah dari deret geometri dengan rasio umum $e^{-2\pi i k r / M}$. Jika fase $k r / M$ melenceng jauh dari bilangan bulat, vektor-vektor dijumlahkan sambil berputar pada bidang kompleks, sehingga interferensi destruktif (Destructive Interference) terjadi dan amplitudonya menjadi hampir $0$.
 Sebaliknya, jika $k r / M$ sangat dekat dengan suatu bilangan bulat $j$, yaitu ketika $k \approx j \frac{M}{r}$, vektor-vektor pada bidang kompleks menunjuk ke arah yang sama, dan amplitudo diperkuat oleh interferensi konstruktif (Constructive Interference).
 
-**【Langkah 5: Pengukuran dan Ekspansi Pecahan Berlanjut】**
+ **【Langkah 5: Pengukuran dan Ekspansi Pecahan Berlanjut】** 
 Ketika register pertama diukur, dengan probabilitas yang tinggi kita akan mengamati bilangan bulat $k$ yang memenuhi $k \approx j \frac{M}{r}$. Jika kita membagi kedua ruas dengan $M$, kita mendapatkan hubungan berikut:
 
 
@@ -2065,15 +2057,15 @@ Komputer kuantum bukanlah tongkat ajaib yang serba bisa, dan ia tidak dapat meny
 
 Dalam ilmu informasi modern, "masalah pencarian" untuk menemukan elemen yang memenuhi kondisi tertentu dari kumpulan data berskala besar merupakan tantangan yang sangat penting, sekaligus salah satu pertanyaan paling mendasar dalam ilmu komputer. Jika kumpulan data memiliki semacam struktur (misalnya, elemen diurutkan berdasarkan abjad atau numerik), algoritma klasik yang efisien seperti pencarian biner dapat digunakan, dan waktu pencarian dapat ditekan menjadi $O(\log N)$ relatif terhadap jumlah elemen $N$. Namun, pencarian dalam **"Basis Data Tidak Terstruktur" (Unstructured Database)** yang disusun secara acak sepenuhnya tidak memiliki pilihan selain mengandalkan pencarian linear (Linear Search) dengan memeriksa elemen satu per satu secara berurutan dalam kerangka kerja komputer klasik, yang membutuhkan paling buruk $N$ kali, dan rata-rata $N/2$ kali kueri, yaitu langkah komputasi sebesar $O(N)$ terhadap jumlah elemen $N$.
 
-Namun, **Algoritma Grover**, yang ditemukan oleh fisikawan Bell Labs Lov Grover pada tahun 1996, berhasil memecahkan masalah pencarian tak terstruktur ini dengan jumlah kueri $O(\sqrt{N})$ dengan sangat cerdas dan indah memanfaatkan prinsip "Superposisi" (Superposition) dan "Interferensi" (Interference) yang mendasari mekanika kuantum. Ini berbeda dengan algoritma Shor, yang mengurangi waktu komputasi secara eksponensial (Exponential speedup) terhadap ukuran masalah, melainkan memberikan **percepatan kuadratik (Quadratic speedup)** yang merupakan jenis percepatan polinomial. Akan tetapi, mengingat masalah pencarian tak terstruktur yang menjadi target muncul secara universal di setiap area yang dapat dibayangkan, seperti pencarian brute-force untuk masalah NP-complete dan pencarian kunci dalam sistem kriptografi, luasnya jangkauan aplikasi dan dampak praktisnya tidak terukur. Dalam bidang ilmu informasi kuantum yang luas, algoritma Grover telah memantapkan posisinya sebagai salah satu algoritma yang paling serbaguna dan paling penting.
+Namun, **Algoritma Grover** , yang ditemukan oleh fisikawan Bell Labs Lov Grover pada tahun 1996, berhasil memecahkan masalah pencarian tak terstruktur ini dengan jumlah kueri $O(\sqrt{N})$ dengan sangat cerdas dan indah memanfaatkan prinsip "Superposisi" (Superposition) dan "Interferensi" (Interference) yang mendasari mekanika kuantum. Ini berbeda dengan algoritma Shor, yang mengurangi waktu komputasi secara eksponensial (Exponential speedup) terhadap ukuran masalah, melainkan memberikan **percepatan kuadratik (Quadratic speedup)** yang merupakan jenis percepatan polinomial. Akan tetapi, mengingat masalah pencarian tak terstruktur yang menjadi target muncul secara universal di setiap area yang dapat dibayangkan, seperti pencarian brute-force untuk masalah NP-complete dan pencarian kunci dalam sistem kriptografi, luasnya jangkauan aplikasi dan dampak praktisnya tidak terukur. Dalam bidang ilmu informasi kuantum yang luas, algoritma Grover telah memantapkan posisinya sebagai salah satu algoritma yang paling serbaguna dan paling penting.
 
-Pada bab ini, kita akan mengungkap mekanisme mendalam yang disebut **"Amplifikasi Amplitudo" (Amplitude Amplification)**, yang merupakan inti dari algoritma Grover ini, menggunakan perspektif geometris yang intuitif dan pendekatan aljabar linear yang ketat tanpa kompromi, secara terperinci sehingga bahkan para ahli pun akan menemukan penemuan baru saat membacanya.
+Pada bab ini, kita akan mengungkap mekanisme mendalam yang disebut **"Amplifikasi Amplitudo" (Amplitude Amplification)** , yang merupakan inti dari algoritma Grover ini, menggunakan perspektif geometris yang intuitif dan pendekatan aljabar linear yang ketat tanpa kompromi, secara terperinci sehingga bahkan para ahli pun akan menemukan penemuan baru saat membacanya.
 
 ## 9.1 Formulasi Masalah dan Persiapan Keadaan Superposisi Awal
 
 Pertama, mari kita merumuskan secara matematis dan ketat masalah pencarian yang harus kita pecahkan. Misalkan terdapat basis data tak terstruktur berukuran $N = 2^n$, dan setiap elemen dikodekan sebagai keadaan basis komputasi $|x\rangle$ (di mana $x \in \{0, 1\}^n$, yaitu $x = 0, 1, \dots, N-1$) yang direpresentasikan menggunakan $n$ qubit. Diasumsikan bahwa dalam ruang basis data yang luas ini, hanya ada satu keadaan spesifik (keadaan benar) yang ingin kita temukan, dan kita mendeskripsikan keadaan khusus ini sebagai $|w\rangle$.
 
-Tujuan dari masalah ini didefinisikan sebagai "menggunakan fungsi kotak hitam yang diberikan (yang disebut sebagai **oracle**), untuk menemukan keadaan benar $|w\rangle$ dengan jumlah kueri sesedikit mungkin, dan dengan probabilitas tinggi."
+Tujuan dari masalah ini didefinisikan sebagai "menggunakan fungsi kotak hitam yang diberikan (yang disebut sebagai **oracle** ), untuk menemukan keadaan benar $|w\rangle$ dengan jumlah kueri sesedikit mungkin, dan dengan probabilitas tinggi."
 
 Langkah pertama dalam algoritma kuantum selalu dimulai dengan persiapan untuk mensurvei seluruh ruang pencarian secara bersamaan. Untuk menciptakan keadaan di mana semua kemungkinan disuperposisikan secara merata, kita menerapkan gerbang Hadamard $H$ secara paralel sebagai produk tensor ke setiap qubit pada keadaan awal $|0\rangle^{\otimes n}$ dari $n$ qubit. Keadaan superposisi merata awal yang diperoleh dengan ini didefinisikan sebagai $|s\rangle$.
 
@@ -2081,13 +2073,13 @@ $$
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
 $$
 
-Keadaan ** $|s\rangle$ ** ini dapat dipisahkan secara jelas di ruang Hilbert sebagai kombinasi linear dari keadaan benar $|w\rangle$ dan semua keadaan tidak benar lainnya. Untuk mempermudah menangkap interpretasi geometris di masa mendatang secara visual, kita memperkenalkan vektor ternormalisasi baru $|s^\perp\rangle$ yang merupakan superposisi merata hanya dari keadaan tidak benar sebagai berikut.
+Keadaan **$|s\rangle$** ini dapat dipisahkan secara jelas di ruang Hilbert sebagai kombinasi linear dari keadaan benar $|w\rangle$ dan semua keadaan tidak benar lainnya. Untuk mempermudah menangkap interpretasi geometris di masa mendatang secara visual, kita memperkenalkan vektor ternormalisasi baru $|s^\perp\rangle$ yang merupakan superposisi merata hanya dari keadaan tidak benar sebagai berikut.
 
 $$
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
 $$
 
-Dengan definisi ini, keadaan $|s^\perp\rangle$ dan keadaan benar $|w\rangle$ saling ortogonal ( $\langle s^\perp | w \rangle = 0$ ). Kemudian, keadaan superposisi merata awal ** $|s\rangle$ ** dapat diekspansi secara sangat sederhana sebagai berikut pada subruang Hilbert 2 dimensi yang direntangkan oleh dua vektor yang saling ortogonal $|w\rangle$ dan $|s^\perp\rangle$ ini.
+Dengan definisi ini, keadaan $|s^\perp\rangle$ dan keadaan benar $|w\rangle$ saling ortogonal ( $\langle s^\perp | w \rangle = 0$ ). Kemudian, keadaan superposisi merata awal **$|s\rangle$** dapat diekspansi secara sangat sederhana sebagai berikut pada subruang Hilbert 2 dimensi yang direntangkan oleh dua vektor yang saling ortogonal $|w\rangle$ dan $|s^\perp\rangle$ ini.
 
 $$
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
@@ -2099,7 +2091,7 @@ $$
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
 $$
 
-Fakta kejam yang diceritakan oleh persamaan ini adalah bahwa probabilitas untuk mengamati keadaan benar $|w\rangle$ pada keadaan awal ** $|s\rangle$ ** hanyalah sebesar $|\sin \theta|^2 = \frac{1}{N}$. Tujuan tertinggi dari algoritma Grover adalah dengan menerapkan kombinasi oracle dan operator difusi, yang akan dijelaskan nanti, secara iteratif untuk "memutar" vektor keadaan ** $|s\rangle$ ** ini secara bertahap ke arah $|w\rangle$ di bidang 2 dimensi ruang Hilbert, dan membawa probabilitas mengamati jawaban yang benar sedekat mungkin ke batas teoretisnya yaitu $1$ (memperkuat amplitudo).
+Fakta kejam yang diceritakan oleh persamaan ini adalah bahwa probabilitas untuk mengamati keadaan benar $|w\rangle$ pada keadaan awal **$|s\rangle$** hanyalah sebesar $|\sin \theta|^2 = \frac{1}{N}$. Tujuan tertinggi dari algoritma Grover adalah dengan menerapkan kombinasi oracle dan operator difusi, yang akan dijelaskan nanti, secara iteratif untuk "memutar" vektor keadaan **$|s\rangle$** ini secara bertahap ke arah $|w\rangle$ di bidang 2 dimensi ruang Hilbert, dan membawa probabilitas mengamati jawaban yang benar sedekat mungkin ke batas teoretisnya yaitu $1$ (memperkuat amplitudo).
 
 ## 9.2 Definisi Quantum Oracle dan Phase Kickback
 
@@ -2148,7 +2140,7 @@ $$
 U_w = I - 2|w\rangle\langle w|
 $$
 
-Di mana $I$ adalah operator identitas $N \times N$. Jika kita merujuk pada intuisi geometris, oracle $U_w$ ini tidak lain adalah operator yang melakukan ** refleksi (Reflection) vektor keadaan dengan sumbu horizontal $|s^\perp\rangle$ sebagai sumbu simetris ** dalam bidang riil 2 dimensi yang direntangkan oleh $|s^\perp\rangle$ dan $|w\rangle$. Ini karena hanya tanda dari komponen keadaan benar yang dibalik, sementara komponen keadaan tidak benar tetap dipertahankan seperti aslinya.
+Di mana $I$ adalah operator identitas $N \times N$. Jika kita merujuk pada intuisi geometris, oracle $U_w$ ini tidak lain adalah operator yang melakukan **refleksi (Reflection) vektor keadaan dengan sumbu horizontal $|s^\perp\rangle$ sebagai sumbu simetris** dalam bidang riil 2 dimensi yang direntangkan oleh $|s^\perp\rangle$ dan $|w\rangle$. Ini karena hanya tanda dari komponen keadaan benar yang dibalik, sementara komponen keadaan tidak benar tetap dipertahankan seperti aslinya.
 
 ## 9.3 Operator Difusi (Diffusion Operator) dan Struktur Matematis dari Inversi terhadap Nilai Rata-rata
 
@@ -2184,15 +2176,15 @@ $$
 
 Amplitudo baru untuk setiap basis $|x\rangle$ dari keadaan yang dihasilkan adalah $(2\mu - \alpha_x)$. Persamaan ini dapat diubah bentuknya menjadi $\mu + (\mu - \alpha_x)$. Hal ini menunjukkan bahwa amplitudo asli $\alpha_x$ telah dibalik tepat ke sisi yang berlawanan (posisi simetris) relatif terhadap nilai rata-rata keseluruhan $\mu$. Inilah dasar matematis mengapa operator difusi disebut "inversi terhadap nilai rata-rata".
 
-Oleh aksi oracle $U_w$, hanya amplitudo dari keadaan benar $|w\rangle$ saja yang menjadi bernilai negatif ( $-\alpha_w$ ). Amplitudo dari $N-1$ keadaan tidak benar lainnya yang sangat banyak tetap positif. Akibatnya, nilai rata-rata keseluruhan $\mu$ sedikit berkurang, tetapi tetap mempertahankan nilai positif. Jika kita menerapkan operator difusi ini di sini, "amplitudo negatif yang besar" dari keadaan benar akan dibalik di sekitar "nilai rata-rata positif $\mu$ ". Sebagai hasilnya, amplitudo dari keadaan benar **melonjak (diperkuat) secara dramatis menjadi nilai positif yang jauh lebih besar daripada amplitudo aslinya**.
+Oleh aksi oracle $U_w$, hanya amplitudo dari keadaan benar $|w\rangle$ saja yang menjadi bernilai negatif ( $-\alpha_w$ ). Amplitudo dari $N-1$ keadaan tidak benar lainnya yang sangat banyak tetap positif. Akibatnya, nilai rata-rata keseluruhan $\mu$ sedikit berkurang, tetapi tetap mempertahankan nilai positif. Jika kita menerapkan operator difusi ini di sini, "amplitudo negatif yang besar" dari keadaan benar akan dibalik di sekitar "nilai rata-rata positif $\mu$ ". Sebagai hasilnya, amplitudo dari keadaan benar **melonjak (diperkuat) secara dramatis menjadi nilai positif yang jauh lebih besar daripada amplitudo aslinya** .
 
 Sebaliknya, amplitudo dari keadaan tidak benar memiliki nilai yang sedikit lebih besar dari nilai rata-rata, sehingga ketika dibalik terhadap nilai rata-rata, nilainya ditekan ke bawah menjadi nilai positif yang sedikit lebih kecil dari aslinya. Proses ini adalah inti dari algoritma, menggunakan interferensi kuantum untuk membatalkan probabilitas dari keadaan yang tidak diinginkan, dan memperkuat probabilitas dari keadaan target secara konstruktif.
 
-Kembali ke perspektif geometris, representasi operator $U_s = 2|s\rangle\langle s| - I$ secara jelas menunjukkan bahwa ini adalah operasi yang melakukan ** refleksi (Reflection) vektor keadaan dengan sumbu vektor keadaan awal $|s\rangle$ sebagai sumbu simetris **.
+Kembali ke perspektif geometris, representasi operator $U_s = 2|s\rangle\langle s| - I$ secara jelas menunjukkan bahwa ini adalah operasi yang melakukan **refleksi (Reflection) vektor keadaan dengan sumbu vektor keadaan awal $|s\rangle$ sebagai sumbu simetris** .
 
 ## 9.4 Interpretasi Geometris dari Amplifikasi Amplitudo (Rotasi Murni oleh Refleksi Ganda)
 
-** Operator Grover $G$ **, yang merupakan unit iterasi tunggal dari algoritma Grover, didefinisikan sebagai penerapan berurutan dari oracle $U_w$ dan operator difusi $U_s$, yaitu hasil kalinya.
+ **Operator Grover $G$** , yang merupakan unit iterasi tunggal dari algoritma Grover, didefinisikan sebagai penerapan berurutan dari oracle $U_w$ dan operator difusi $U_s$, yaitu hasil kalinya.
 
 $$
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
@@ -2202,13 +2194,13 @@ Di sini, teorema yang sangat indah yang ditenun oleh geometri Euclidean dan alja
 
 Dari analisis sejauh ini, dijamin bahwa vektor keadaan, tidak peduli operasi apa pun yang dikenakan, akan selalu tetap berada di dalam ruang vektor riil 2 dimensi (bidang) yang direntangkan oleh $|s^\perp\rangle$ dan $|w\rangle$. Mari kita pastikan kembali aksi dari setiap operator di dalam bidang ini.
 
-1. ** Refleksi oleh oracle $U_w$ **:
-   Terhadap vektor keadaan saat ini, $U_w$ hanya membalikkan tanda komponen dalam arah $|w\rangle$, yang merupakan sumbu vertikal dalam sistem koordinat ortogonal. Secara geometris, ini adalah ** refleksi dengan sumbu horizontal $|s^\perp\rangle$ sebagai sumbu simetris **.
-2. ** Refleksi oleh operator difusi $U_s$ **:
-   $U_s$ berikutnya akan merefleksikan vektor keadaan dengan ** arah vektor $|s\rangle$ yang dimiringkan sebesar sudut $\theta$ di bidang tersebut sebagai sumbu simetris **.
+1. **Refleksi oleh oracle $U_w$** :
+   Terhadap vektor keadaan saat ini, $U_w$ hanya membalikkan tanda komponen dalam arah $|w\rangle$, yang merupakan sumbu vertikal dalam sistem koordinat ortogonal. Secara geometris, ini adalah **refleksi dengan sumbu horizontal $|s^\perp\rangle$ sebagai sumbu simetris** .
+2. **Refleksi oleh operator difusi $U_s$** :
+   $U_s$ berikutnya akan merefleksikan vektor keadaan dengan **arah vektor $|s\rangle$ yang dimiringkan sebesar sudut $\theta$ di bidang tersebut sebagai sumbu simetris** .
 
 Keadaan awal $|s\rangle$ miring ke atas sebesar sudut $\theta$ dari sumbu horizontal $|s^\perp\rangle$ (di sini $\sin \theta = \frac{1}{\sqrt{N}}$).
-Oleh karena itu, jika tepat setelah melakukan refleksi terhadap sumbu $|s^\perp\rangle$, kita melakukan refleksi terhadap sumbu $|s\rangle$ yang miring sejauh sudut $\theta$ dari sumbu tersebut, maka aksi keseluruhan $G$ menjadi ** operasi yang memutar vektor keadaan berlawanan arah jarum jam sebesar $2\theta$ di dalam bidang 2 dimensi ini **.
+Oleh karena itu, jika tepat setelah melakukan refleksi terhadap sumbu $|s^\perp\rangle$, kita melakukan refleksi terhadap sumbu $|s\rangle$ yang miring sejauh sudut $\theta$ dari sumbu tersebut, maka aksi keseluruhan $G$ menjadi **operasi yang memutar vektor keadaan berlawanan arah jarum jam sebesar $2\theta$ di dalam bidang 2 dimensi ini** .
 
 Mari kita buktikan wawasan geometris yang intuitif ini secara matematis dan ketat menggunakan matriks rotasi. Misalkan keadaan tepat setelah menyelesaikan $t$ kali iterasi adalah $|\psi_t\rangle$. Keadaan awal adalah saat $t=0$, di mana $|\psi_0\rangle = |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle$.
 
@@ -2254,7 +2246,7 @@ G = \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\the
 = \begin{pmatrix} \cos(2\theta) & -\sin(2\theta) \\ \sin(2\theta) & \cos(2\theta) \end{pmatrix}
 $$
 
-Secara mengejutkan, matriks yang diperoleh tidak lain adalah ** matriks rotasi dengan sudut $2\theta$ ** yang sangat terkenal dalam geometri. Dengan demikian, menerapkan operator $G$ secara berurutan sebanyak $t$ kali pada vektor awal $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ secara geometris setara dengan memutar vektor berlawanan arah jarum jam sebesar $2\theta$ setiap kalinya. Oleh karena itu, sudut totalnya adalah sudut awal $\theta$ ditambah dengan $t \times 2\theta$, yang menghasilkan $\theta + 2t\theta = (2t+1)\theta$. Dengan ini, pembuktian induksi selesai dengan indah.
+Secara mengejutkan, matriks yang diperoleh tidak lain adalah **matriks rotasi dengan sudut $2\theta$** yang sangat terkenal dalam geometri. Dengan demikian, menerapkan operator $G$ secara berurutan sebanyak $t$ kali pada vektor awal $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ secara geometris setara dengan memutar vektor berlawanan arah jarum jam sebesar $2\theta$ setiap kalinya. Oleh karena itu, sudut totalnya adalah sudut awal $\theta$ ditambah dengan $t \times 2\theta$, yang menghasilkan $\theta + 2t\theta = (2t+1)\theta$. Dengan ini, pembuktian induksi selesai dengan indah.
 
 Di sini, kami menampilkan diagram sirkuit kuantum (notasi Mermaid) yang mewakili satu kali iterasi algoritma Grover, memvisualisasikan korespondensi antara teori dan implementasinya.
 
@@ -2360,7 +2352,7 @@ Dampaknya pada teknologi kriptografi juga sangat fatal dan mendalam. Kekuatan da
 
 Terakhir, mari kita bahas sebuah teorema yang sangat penting dari perspektif fisika teoretis dan ilmu komputer. Itulah **Teorema BBBV** yang dibuktikan oleh Bennett, Bernstein, Brassard, dan Vazirani pada tahun 1997. Teorema ini membuktikan secara matematis dan ketat bahwa "bahkan jika menggunakan komputer kuantum, masalah pencarian tidak terstruktur oleh kotak hitam mutlak memerlukan kueri sebanyak $\Omega(\sqrt{N})$ kali."
 
-Apa makna dari hal ini? Hal itu merupakan fakta mendalam bahwa ** "kompleksitas komputasi $O(\sqrt{N})$ yang dicapai oleh algoritma Grover adalah batas teoretis absolut yang diizinkan oleh hukum alam (mekanika kuantum), dan percepatan yang lebih dari ini tidak mungkin dilakukan terlepas dari hukum fisika mana pun di alam semesta yang digunakan." ** Grover tidak hanya menemukan algoritma yang unggul, tetapi juga telah mencapai batas akhir antara informasi dan hukum fisika.
+Apa makna dari hal ini? Hal itu merupakan fakta mendalam bahwa **"kompleksitas komputasi $O(\sqrt{N})$ yang dicapai oleh algoritma Grover adalah batas teoretis absolut yang diizinkan oleh hukum alam (mekanika kuantum), dan percepatan yang lebih dari ini tidak mungkin dilakukan terlepas dari hukum fisika mana pun di alam semesta yang digunakan."** Grover tidak hanya menemukan algoritma yang unggul, tetapi juga telah mencapai batas akhir antara informasi dan hukum fisika.
 
 Selain itu, paradigma "Amplifikasi Amplitudo" (Amplitude Amplification) itu sendiri yang dirinci dalam bab ini telah diaplikasikan secara luas sebagai blok bangunan dasar untuk menyusun algoritma kuantum tingkat lanjut yang tak terhitung jumlahnya, seperti subrutin dalam Quantum Random Walks (Langkah Acak Kuantum) atau Quantum Machine Learning (Pembelajaran Mesin Kuantum). Metode yang indah dan elegan yang ditemukan Grover, yaitu "secara geometris memutar dan memperkuat amplitudo probabilitas dengan menggunakan refleksi ganda terhadap dua sumbu yang ortogonal," akan terus bersinar sebagai salah satu pilar yang paling kuat dan sangat diperlukan yang menopang struktur raksasa keilmuan yaitu ilmu informasi kuantum dari akar-akarnya.
 
@@ -2452,7 +2444,7 @@ $$
 
 Dalam kasus ini, $X_1 X_2$ dan $X_2 X_3$ digunakan untuk pengukuran sindrom.
 
-Di sinilah sifat mekanika kuantum yang menakjubkan bekerja. Kesalahan yang diakibatkan oleh interaksi dengan lingkungan umumnya berupa rotasi kontinu seperti $E(\theta) = \cos(\theta) I - i \sin(\theta) X$. Namun, dengan melakukan pengukuran sindrom, keadaan tersebut secara probabilistik ** diproyeksikan ** ke salah satu keadaan eigen: "tanpa kesalahan ( $I$ )" atau "kesalahan total ( $X$ )". Artinya, kesalahan kontinu yang jumlahnya tak hingga di-"digitalisasi"-kan secara mekanika kuantum menjadi kesalahan Pauli diskret melalui pengukuran.
+Di sinilah sifat mekanika kuantum yang menakjubkan bekerja. Kesalahan yang diakibatkan oleh interaksi dengan lingkungan umumnya berupa rotasi kontinu seperti $E(\theta) = \cos(\theta) I - i \sin(\theta) X$. Namun, dengan melakukan pengukuran sindrom, keadaan tersebut secara probabilistik **diproyeksikan** ke salah satu keadaan eigen: "tanpa kesalahan ( $I$ )" atau "kesalahan total ( $X$ )". Artinya, kesalahan kontinu yang jumlahnya tak hingga di-"digitalisasi"-kan secara mekanika kuantum menjadi kesalahan Pauli diskret melalui pengukuran.
 
 ## 10.3 Kode 9-Qubit Shor (Shor Code) dan Formalisme Stabilizer
 
@@ -2562,7 +2554,7 @@ Tongkat ajaib untuk mengatasi kendala teorema ini dan merealisasikan FTQC univer
 
 Puncak dari semua upaya teoretis ini adalah "Teorema Ambang Batas Kuantum" (Quantum Threshold Theorem).
 Teorema ini, yang dibuktikan oleh Dorit Aharonov, Michael Ben-Or, dan lainnya, menyatakan dengan tegas sebagai berikut:
-** "Jika probabilitas kesalahan $p$ dari komponen fisik (gerbang, pengukuran, inisialisasi) berada di bawah ambang batas tertentu $p_{th}$, maka dengan menyusun kode koreksi kesalahan kuantum secara hierarkis (Concatenation) atau terus memperbesar ukuran kisi kode topologis (jarak kode $d$ ), komputasi kuantum untuk waktu yang sewenang-wenang panjangnya dapat dijalankan dengan presisi sewenang-wenang." **
+ **"Jika probabilitas kesalahan $p$ dari komponen fisik (gerbang, pengukuran, inisialisasi) berada di bawah ambang batas tertentu $p_{th}$, maka dengan menyusun kode koreksi kesalahan kuantum secara hierarkis (Concatenation) atau terus memperbesar ukuran kisi kode topologis (jarak kode $d$ ), komputasi kuantum untuk waktu yang sewenang-wenang panjangnya dapat dijalankan dengan presisi sewenang-wenang."** 
 
 Meskipun nilai ambang batas $p_{th}$ bergantung pada jenis kode dan arsitektur yang digunakan, pada kode permukaan nilainya berada pada kisaran $10^{-2}$ (1%), yang merupakan nilai yang sangat realistis dan dapat dicapai. Menekan tingkat kesalahan fisik jauh di bawah ambang batas ini (penyempurnaan Lapisan Fisik / Physical Layer) serta mengembangkan dekoder sindrom yang lebih efisien dan varian kode permukaan (penyempurnaan Lapisan Logis / Logical Layer) keduanya menjadi medan pertempuran utama dalam persaingan global pengembangan komputer kuantum saat ini.
 
@@ -2639,7 +2631,7 @@ $$
 
 Di sini, $ \Delta = \omega_q - \omega_r $ . Makna fisik yang ditunjukkan oleh suku kedua persamaan ini sangatlah krusial: frekuensi efektif resonator bergeser sebesar $ \pm g^2/\Delta $ bergantung pada keadaan qubit (apakah $ \hat{\sigma}_z = +1 $ atau $ -1 $ ). Oleh karena itu, dengan mentransmisikan atau merefleksikan gelombang mikro penyelidik (probe microwave) melalui resonator dan mengukur pergeseran fasenya, pengukuran proyektif terhadap keadaan qubit dapat dilakukan.
 
-**Keunggulan dan Kelemahan**
+ **Keunggulan dan Kelemahan** 
 Keunggulan terbesar dari pendekatan superkonduktor terletak pada skalabilitas desain pengkabelan di atas cip berkat pemanfaatan teknologi litografi semikonduktor yang sudah ada, serta operasi gerbang yang sangat cepat pada skala nanodetik. Di sisi lain, kelemahannya adalah karena merupakan struktur makroskopis buatan manusia, sistem ini sangat rentan terhadap cacat material mikroskopis (TLS) dan derau elektromagnetik, serta mutlak memerlukan lingkungan pendingin pengenceran (dilution refrigerator) di dekat nol mutlak (sekitar 10 mK).
 
 ## 11.2 Pendekatan Perangkap Ion: Puncak Fisika Atom dan Keidentikan Sempurna
@@ -2674,7 +2666,7 @@ $$
 
 Operasi ini menghasilkan keadaan terbelit sempurna dan memiliki daya komputasi yang setara dengan gerbang CNOT. Kemampuan konektivitas antarsemua (all-to-all connectivity) ini merupakan pembeda krusial dibandingkan pendekatan superkonduktor yang hanya dapat berinteraksi dengan qubit tetangga terdekat.
 
-**Tantangan dan Keterbatasan**
+ **Tantangan dan Keterbatasan** 
 Waktu operasi gerbang berada pada kisaran puluhan mikrodetik, beberapa orde besaran lebih lambat dibandingkan pendekatan superkonduktor. Selain itu, jika puluhan ion atau lebih ditempatkan dalam satu perangkap satu dimensi, spektrum mode vibrasi menjadi terlalu padat sehingga crosstalk tidak dapat dihindari. Teknologi penskalaan seperti arsitektur QCCD (Quantum Charge-Coupled Device) untuk mengatasi kendala ini merupakan fokus penelitian utama saat ini.
 
 ## 11.3 Qubit Topologis: Anyon Non-Abelian dan Ketahanan Mutlak
@@ -2714,7 +2706,7 @@ graph TD
 
 Karena hanya topologi dari "simpul" yang dibentuk oleh lintasan partikel yang menentukan hasil komputasi, meskipun lintasannya mengalami sedikit fluktuasi, selama topologinya tidak berubah, transformasi uniter $ \hat{U} $ dieksekusi secara presisi dengan nol galat. Inilah toleransi kesalahan (fault-tolerance) pada tingkat perangkat keras.
 
-**Tantangan dan Keterbatasan**
+ **Tantangan dan Keterbatasan** 
 Bukti eksperimental definitif yang menunjukkan keberadaan mode nol Majorana masih menjadi bahan perdebatan, dan pembuktian fisik dari penjalinan (braiding) belum berhasil dicapai. Selain itu, penjalinan anyon Ising saja tidak cukup untuk menyusun set gerbang kuantum universal, sehingga diperlukan operasi tambahan non-topologis seperti distilasi keadaan ajaib (magic state distillation).
 
 ## 11.4 Qubit Fotonik: Optika Linier dan Keterikatan Terinduksi Pengukuran
@@ -2774,7 +2766,7 @@ $$
 
 Dalam sirkuit kuantum acak yang cukup dalam ($d$ bernilai besar), setiap amplitudo $ \alpha_x $ menunjukkan perilaku seperti jalan acak (random walk) pada bidang kompleks, dan diketahui bahwa distribusi probabilitasnya $ P_{\text{ideal}}(x) $ mengikuti distribusi Porter-Thomas (Porter-Thomas distribution). Dengan kata lain, fungsi kepekatan probabilitas untuk kemunculan probabilitas $p$ adalah $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $. Ini berarti bahwa string bit tertentu membentuk "pola bintik (speckle pattern)" yang lebih mudah diamati daripada string bit lainnya.
 
-Untuk melakukan pengambilan sampel secara eksak dari distribusi ini menggunakan komputer klasik, amplitudo $ \alpha_x $ harus dihitung secara langsung melalui kalkulasi kontraksi jaringan tensor yang sangat besar. Dimensi vektor keadaan adalah $ 2^n $, dan untuk kasus $ n = 53 $, sekitar $ 9 \times 10^{15} $ amplitudo bilangan kompleks (memori kelas petabita) harus dilacak, yang berhadapan dengan dinding komputasi yang memerlukan waktu luar biasa lama bahkan jika menggunakan superkomputer tercepat di dunia saat itu. Di sisi lain, komputer kuantum secara inheren mempertahankan keadaan sistem fisik itu sendiri ** $|\psi_f\rangle$ ** sebagai vektor alami pada ruang Hilbert, dan melakukan pengambilan sampel sesuai pola bintik secara instan (dalam puluhan mikrodetik) dengan satu kali pengukuran.
+Untuk melakukan pengambilan sampel secara eksak dari distribusi ini menggunakan komputer klasik, amplitudo $ \alpha_x $ harus dihitung secara langsung melalui kalkulasi kontraksi jaringan tensor yang sangat besar. Dimensi vektor keadaan adalah $ 2^n $, dan untuk kasus $ n = 53 $, sekitar $ 9 \times 10^{15} $ amplitudo bilangan kompleks (memori kelas petabita) harus dilacak, yang berhadapan dengan dinding komputasi yang memerlukan waktu luar biasa lama bahkan jika menggunakan superkomputer tercepat di dunia saat itu. Di sisi lain, komputer kuantum secara inheren mempertahankan keadaan sistem fisik itu sendiri **$|\psi_f\rangle$** sebagai vektor alami pada ruang Hilbert, dan melakukan pengambilan sampel sesuai pola bintik secara instan (dalam puluhan mikrodetik) dengan satu kali pengukuran.
 
 Untuk mengevaluasi keberhasilan eksperimen tersebut, tolok ukur entropi silang linear (Linear Cross-Entropy Benchmarking, XEB) diperkenalkan. Fidelitas (Fidelity) $ \mathcal{F}_{\text{XEB}} $ didefinisikan sebagai berikut:
 
@@ -2800,7 +2792,7 @@ graph TD
 
 Dalam laporan media umum maupun buku-buku sains populer mengenai komputer kuantum, sering kali kita melihat kata-kata ajaib seperti "karena dapat menghitung $2^n$ keadaan secara bersamaan, ia dapat memecahkan masalah apa pun dalam sekejap". Namun, hal ini secara tegas salah dari sudut pandang teori kompleksitas komputasi. Komputer kuantum sama sekali bukanlah tongkat sihir yang dapat menyelesaikan "masalah NP-Lengkap (NP-Complete)" tanpa syarat dalam waktu polinomial.
 
-Kesalahpahaman ini berpangkal pada fakta (paralelisme kuantum) bahwa evaluasi fungsi untuk semua input dapat dilakukan "dalam satu operasi" melalui superposisi keadaan $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $ menggunakan gerbang Hadamard dan sejenisnya. Dengan menggunakan oracle (operator uniter yang bertanggung jawab atas perhitungan) ** $U_f$ ** , ketika perhitungan fungsi $ f(x) $ dieksekusi pada keadaan superposisi, seluruh keadaan akan berevolusi sesuai prinsip linearitas sebagai berikut:
+Kesalahpahaman ini berpangkal pada fakta (paralelisme kuantum) bahwa evaluasi fungsi untuk semua input dapat dilakukan "dalam satu operasi" melalui superposisi keadaan $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $ menggunakan gerbang Hadamard dan sejenisnya. Dengan menggunakan oracle (operator uniter yang bertanggung jawab atas perhitungan) **$U_f$** , ketika perhitungan fungsi $ f(x) $ dieksekusi pada keadaan superposisi, seluruh keadaan akan berevolusi sesuai prinsip linearitas sebagai berikut:
 
 $$
 U_f \left( \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |0\rangle \right) = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |f(x)\rangle
@@ -2810,25 +2802,25 @@ Memang benar bahwa di dalam vektor keadaan ini, jawaban $f(x)$ untuk semua $x$ t
 
 Agar algoritma kuantum dapat benar-benar mengungguli algoritma klasik, kita tidak hanya membutuhkan evaluasi paralel semata, melainkan juga harus merancang dan memanfaatkan "interferensi kuantum (Quantum Interference)" secara cerdik. Kita harus membangun transformasi uniter global yang sangat khusus yang memperkuat amplitudo probabilitas yang bersesuaian dengan keadaan solusi yang dicari melalui interferensi konstruktif (constructive interference), sekaligus meniadakan amplitudo probabilitas dari jawaban-jawaban salah yang tak terhitung jumlahnya melalui interferensi destruktif (destructive interference) dengan pembalikan fase.
 
-Di bawah batasan ini, kelas kompleksitas masalah yang dapat dipecahkan oleh komputer kuantum dalam waktu polinomial dengan menjaga tingkat akurasi tetap tinggi secara signifikan disebut ** BQP ** (Bounded-error Quantum Polynomial time). Di sisi lain, kelas masalah di mana validitas suatu solusi dapat diverifikasi dalam waktu polinomial ketika solusi tersebut diberikan disebut ** NP **, dan kumpulan masalah tersulit di dalamnya adalah ** Masalah NP-Lengkap ** (seperti Masalah Pedagang Keliling / Traveling Salesperson Problem, Masalah Pemenuhan Boolean / SAT, dll.).
+Di bawah batasan ini, kelas kompleksitas masalah yang dapat dipecahkan oleh komputer kuantum dalam waktu polinomial dengan menjaga tingkat akurasi tetap tinggi secara signifikan disebut **BQP** (Bounded-error Quantum Polynomial time). Di sisi lain, kelas masalah di mana validitas suatu solusi dapat diverifikasi dalam waktu polinomial ketika solusi tersebut diberikan disebut **NP** , dan kumpulan masalah tersulit di dalamnya adalah **Masalah NP-Lengkap** (seperti Masalah Pedagang Keliling / Traveling Salesperson Problem, Masalah Pemenuhan Boolean / SAT, dll.).
 
 Algoritma Grover (Grover's algorithm) mempercepat pencarian basis data tak terstruktur dengan $ N = 2^n $ elemen secara kuadratik, dari $ O(N) $ pada komputasi klasik menjadi $ O(\sqrt{N}) $ pada komputasi kuantum. Meninjau kembali representasi matematis dari Amplifikasi Amplitudo (Amplitude Amplification), algoritma ini bermuara pada operasi pemutaran (rotasi) vektor keadaan secara geometris di dalam subruang 2 dimensi (bidang) yang direntang oleh keadaan superposisi seragam awal $ |s\rangle $ dan keadaan jawaban benar yang ingin kita cari $ |\omega\rangle $.
 
-Operator iterasi Grover ** $G$ ** didefinisikan sebagai perkalian antara operator pembalikan fase keadaan jawaban benar oleh oracle $ U_\omega = I - 2|\omega\rangle\langle\omega| $ dan operator pembalikan di sekitar nilai rata-rata $ U_s = 2|s\rangle\langle s| - I $.
+Operator iterasi Grover **$G$** didefinisikan sebagai perkalian antara operator pembalikan fase keadaan jawaban benar oleh oracle $ U_\omega = I - 2|\omega\rangle\langle\omega| $ dan operator pembalikan di sekitar nilai rata-rata $ U_s = 2|s\rangle\langle s| - I $.
 
 $$
 G = U_s U_\omega = (2|s\rangle\langle s| - I)(I - 2|\omega\rangle\langle\omega|)
 $$
 
-Dengan menerapkan operator uniter ** $G$ ** ini sekitar $ \frac{\pi}{4}\sqrt{N} $ kali, vektor keadaan akan berotasi menuju $ |\omega\rangle $ target, dan probabilitas untuk mengamati jawaban yang benar dapat ditingkatkan hingga mendekati 1 (100%). Namun, fakta yang sangat penting di sini adalah bahwa ini murni merupakan "percepatan akar kuadrat", bukan percepatan eksponensial ( $ O(2^n) \to O(\text{poly}(n)) $ ). Hingga saat ini, belum ada pola interferensi kuantum yang ditemukan yang dapat menyelesaikan kasus umum dari masalah NP-Lengkap dalam waktu polinomial. Sebagian besar ilmuwan informasi kuantum dan ilmuwan komputer sangat meyakini ** $\text{BQP} \not\supset \text{NP-Complete}$ ** (komputer kuantum tidak dapat menyelesaikan masalah NP-Lengkap secara efisien) sebagai dugaan mendasar dalam teori kompleksitas komputasi.
+Dengan menerapkan operator uniter **$G$** ini sekitar $ \frac{\pi}{4}\sqrt{N} $ kali, vektor keadaan akan berotasi menuju $ |\omega\rangle $ target, dan probabilitas untuk mengamati jawaban yang benar dapat ditingkatkan hingga mendekati 1 (100%). Namun, fakta yang sangat penting di sini adalah bahwa ini murni merupakan "percepatan akar kuadrat", bukan percepatan eksponensial ( $ O(2^n) \to O(\text{poly}(n)) $ ). Hingga saat ini, belum ada pola interferensi kuantum yang ditemukan yang dapat menyelesaikan kasus umum dari masalah NP-Lengkap dalam waktu polinomial. Sebagian besar ilmuwan informasi kuantum dan ilmuwan komputer sangat meyakini **$\text{BQP} \not\supset \text{NP-Complete}$** (komputer kuantum tidak dapat menyelesaikan masalah NP-Lengkap secara efisien) sebagai dugaan mendasar dalam teori kompleksitas komputasi.
 
 Komputer kuantum pada hakikatnya adalah koprosesor khusus yang sangat canggih yang memberikan percepatan super-polinomial melalui Transformasi Fourier Kuantum (QFT) hanya ketika terdapat "struktur aljabar seperti periodisitas yang tersembunyi di dalam masalah", sebagaimana pada faktorisasi prima dalam algoritma Shor.
 
 ## 12.3 Koreksi Kesalahan Kuantum dan Peta Jalan dari NISQ ke FTQC
 
-Meskipun keunggulan kuantum telah dibuktikan, perangkat berskala puluhan hingga ratusan qubit saat ini seperti Sycamore disebut sebagai perangkat ** NISQ ** (Noisy Intermediate-Scale Quantum), dan tidak dapat sepenuhnya mencegah masuknya derau (noise) dari lingkungan. Keadaan kuantum yang rapuh sangat mudah mengalami dekoherensi (keterbatasan waktu relaksasi fase $T_2$ dan waktu relaksasi energi $T_1$) akibat interaksi dengan lingkungan, seperti fluktuasi termal dan interferensi gelombang elektromagnetik. Seiring bertambah dalamnya komputasi (jumlah lapisan gerbang bertambah), ketidaksempurnaan gerbang dan derau akibat dekoherensi akan terakumulasi secara eksponensial, sehingga hasil akhir akan runtuh menjadi keadaan campuran sempurna yang sama sekali tidak memiliki makna.
+Meskipun keunggulan kuantum telah dibuktikan, perangkat berskala puluhan hingga ratusan qubit saat ini seperti Sycamore disebut sebagai perangkat **NISQ** (Noisy Intermediate-Scale Quantum), dan tidak dapat sepenuhnya mencegah masuknya derau (noise) dari lingkungan. Keadaan kuantum yang rapuh sangat mudah mengalami dekoherensi (keterbatasan waktu relaksasi fase $T_2$ dan waktu relaksasi energi $T_1$) akibat interaksi dengan lingkungan, seperti fluktuasi termal dan interferensi gelombang elektromagnetik. Seiring bertambah dalamnya komputasi (jumlah lapisan gerbang bertambah), ketidaksempurnaan gerbang dan derau akibat dekoherensi akan terakumulasi secara eksponensial, sehingga hasil akhir akan runtuh menjadi keadaan campuran sempurna yang sama sekali tidak memiliki makna.
 
-Satu-satunya jalur teoretis untuk menembus batas fisik ini dan memungkinkan pelaksanaan algoritma kuantum skala besar yang praktis hingga ratusan juta langkah adalah realisasi **Komputasi Kuantum Toleran Kesalahan (Fault-Tolerant Quantum Computation, FTQC)** menggunakan **Koreksi Kesalahan Kuantum (Quantum Error Correction, QEC)**. Koreksi kesalahan pada komputer klasik (seperti kode suara mayoritas melalui replikasi bit) tidak dapat diterapkan pada keadaan kuantum karena "Teorema Tanpa Kloning (No-Cloning Theorem)" yang merupakan fondasi mekanika kuantum. Secara matematis, tidak ada transformasi uniter yang dapat menyalin keadaan kuantum yang tidak diketahui ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ ** secara sempurna menjadi ** $|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$ ** .
+Satu-satunya jalur teoretis untuk menembus batas fisik ini dan memungkinkan pelaksanaan algoritma kuantum skala besar yang praktis hingga ratusan juta langkah adalah realisasi **Komputasi Kuantum Toleran Kesalahan (Fault-Tolerant Quantum Computation, FTQC)** menggunakan **Koreksi Kesalahan Kuantum (Quantum Error Correction, QEC)** . Koreksi kesalahan pada komputer klasik (seperti kode suara mayoritas melalui replikasi bit) tidak dapat diterapkan pada keadaan kuantum karena "Teorema Tanpa Kloning (No-Cloning Theorem)" yang merupakan fondasi mekanika kuantum. Secara matematis, tidak ada transformasi uniter yang dapat menyalin keadaan kuantum yang tidak diketahui **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** secara sempurna menjadi **$|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$** .
 
 Namun, fisika teoretis menemukan solusi yang elegan untuk mengatasi keputusasaan ini. Informasi kuantum dapat dilindungi bukan dengan menyalin keadaan secara individual, melainkan dengan "menyembunyikan satu informasi logis yang disebarkan ke dalam topologi 'ruang keterikatan (entanglement)' dari ruang Hilbert raksasa yang dibentuk oleh banyak qubit fisik". Saat ini, "Kode Permukaan (Surface Code)", yang dipandang paling menjanjikan dari perspektif implementasi perangkat keras, didasarkan pada Formalisme Penstabil (Stabilizer Formalism) pada kisi 2 dimensi.
 
@@ -2842,7 +2834,7 @@ $$
 A_v = \bigotimes_{i \in \delta v} X_i \quad \text{(Operator Vertex: Mendeteksi kesalahan X)}
 $$
 
-Di sini, semua $ B_p $ dan $ A_v $ saling komutatif (tidak anti-komutatif), yaitu memenuhi relasi komutasi $ [B_p, A_v] = 0 $. "Keadaan logis (ruang kode)" ** $|\psi_L\rangle$ ** tempat kita menuliskan informasi didefinisikan secara ketat sebagai subruang yang direntang oleh keadaan eigen simultan sedemikian rupa sehingga nilai eigen dari seluruh operator penstabil ini adalah $+1$.
+Di sini, semua $ B_p $ dan $ A_v $ saling komutatif (tidak anti-komutatif), yaitu memenuhi relasi komutasi $ [B_p, A_v] = 0 $. "Keadaan logis (ruang kode)" **$|\psi_L\rangle$** tempat kita menuliskan informasi didefinisikan secara ketat sebagai subruang yang direntang oleh keadaan eigen simultan sedemikian rupa sehingga nilai eigen dari seluruh operator penstabil ini adalah $+1$.
 
 $$
 B_p |\psi_L\rangle = +1 |\psi_L\rangle, \quad A_v |\psi_L\rangle = +1 |\psi_L\rangle \quad (\text{untuk semua } p, v)
@@ -2856,7 +2848,7 @@ Ditinjau dari tahapan puluhan hingga ratusan qubit fisik saat ini, ini adalah ta
 
 ## 12.4 Penutup: Cakrawala dan Masa Depan Ilmu Informasi Kuantum
 
-Dimulai dari pengenalan superposisi ** $|0\rangle$ ** dan ** $|1\rangle$ ** dengan notasi bra-ket di Bab 1, evolusi waktu menggunakan matriks uniter, formulasi matematis sistem banyak-partikel melalui produk tensor, runtuhnya realisme lokal Einstein akibat ketidaksetaraan Bell, hingga keindahan struktur matematis dari algoritma kuantum Shor dan Grover, kita telah menelusuri puncak pengetahuan "Ilmu Informasi Kuantum" secara sangat ketat melalui keseluruhan 12 bab dalam seri ini.
+Dimulai dari pengenalan superposisi **$|0\rangle$** dan **$|1\rangle$** dengan notasi bra-ket di Bab 1, evolusi waktu menggunakan matriks uniter, formulasi matematis sistem banyak-partikel melalui produk tensor, runtuhnya realisme lokal Einstein akibat ketidaksetaraan Bell, hingga keindahan struktur matematis dari algoritma kuantum Shor dan Grover, kita telah menelusuri puncak pengetahuan "Ilmu Informasi Kuantum" secara sangat ketat melalui keseluruhan 12 bab dalam seri ini.
 
 Jika komputer klasik didasarkan pada "nilai kebenaran deterministik (aljabar Boolean)", maka komputer kuantum didasarkan pada "rotasi uniter dan produk tensor dalam ruang Hilbert kompleks (aljabar linear)". Pergeseran paradigma fundamental ini melampaui sekadar aspek industri atau praktis mengenai "peningkatan kecepatan komputasi", serta menghadapkan kita pada pertanyaan filosofis mendalam di mana teori informasi dan fisika fundamental menyatu seutuhnya: "Apakah kapasitas pemrosesan informasi pamungkas di alam semesta ini?" dan "Bagaimana komputabilitas serta kompleksitas bergantung pada struktur hukum fisika di alam semesta tempat kita hidup?".
 
@@ -2869,4 +2861,4 @@ Pertarungan melawan derau selama beberapa dekade mendatang (perjalanan berat dar
 Penulis merasa sangat bahagia jika seri ini dapat membantu para pembaca memahami wujud sejati komputer kuantum beserta struktur matematis dan fisik yang begitu indah serta ketat di baliknya, tanpa terhanyut oleh kata kunci superfisial atau inflasi ekspektasi yang berlebihan. Dunia kuantum jauh melampaui akal sehat kita: begitu mendalam, ganjil, dan memesona secara luar biasa. Kita saat ini berdiri di gerbang perbatasan ilmiah dan teknologi paling menarik dalam sejarah umat manusia. Penjelajahan intelektual nan megah untuk menyingkap kebenaran alam semesta ini baru saja dimulai.
 
 ---
-**Seri "Prinsip-prinsip Komputer Kuantum" (Total 12 Bab) Selesai**
+ **Seri "Prinsip-prinsip Komputer Kuantum" (Total 12 Bab) Selesai** 

@@ -82,7 +82,7 @@ This transitions the system into an equal superposition state in which $|0\rangl
 
 ## 1.4 The Essence of Quantum Computing: Dispelling the Misconception of Pure "Massive Parallelism"
 
-Why do quantum computers possess computational capabilities exceeding those of classical machines? A popular explanation frequently encountered is: "A quantum computer branches across countless parallel universes, computes all possibilities simultaneously, and instantly pulls out the correct solution." While this serves as a colorful metaphor for "quantum parallelism," it is ** an extremely misleading and inaccurate explanation ** .
+Why do quantum computers possess computational capabilities exceeding those of classical machines? A popular explanation frequently encountered is: "A quantum computer branches across countless parallel universes, computes all possibilities simultaneously, and instantly pulls out the correct solution." While this serves as a colorful metaphor for "quantum parallelism," it is **an extremely misleading and inaccurate explanation** .
 
 To be sure, by applying Hadamard gates in parallel to an $N$ -qubit system, one can construct an equal superposition of all $2^N$ states in a single operation:
 
@@ -98,9 +98,9 @@ $$
 
 At this stage, it indeed seems as if the values of $f(x)$ for all $2^N$ inputs $x$ have been evaluated simultaneously in a single computational step. However, the foundational postulate of quantum mechanics—the "Born Rule" governing observation—presents an unavoidable barrier. When this superposition state is measured (observed), only a single outcome is acquired, as wavefunction collapse forces the state into a single random $|x\rangle |f(x)\rangle$ with probability $P(x) = 1/2^N$ . In other words, even if all solutions were computed simultaneously, measurement extracts nothing more than a single randomly selected candidate—no better than evaluating a single input chosen by rolling dice.
 
-What, then, is the genuine source of power in quantum computing? It is ** "Quantum Interference" ** .
+What, then, is the genuine source of power in quantum computing? It is **"Quantum Interference"** .
 
-Because the probability amplitudes $c_x$ describing a quantum state are complex numbers rather than classical non-negative probabilities, they can assume positive, negative, or complex phase values. The true art of quantum algorithms lies in structuring unitary transformations so that ** "probability amplitudes corresponding to incorrect solutions cancel one another out through destructive interference, while probability amplitudes corresponding to the correct solution constructively interfere and amplify." **
+Because the probability amplitudes $c_x$ describing a quantum state are complex numbers rather than classical non-negative probabilities, they can assume positive, negative, or complex phase values. The true art of quantum algorithms lies in structuring unitary transformations so that **"probability amplitudes corresponding to incorrect solutions cancel one another out through destructive interference, while probability amplitudes corresponding to the correct solution constructively interfere and amplify."** 
 
 As an elementary illustration, consider interference via phase inversion and a subsequent Hadamard transform. What happens when the Hadamard gate is applied once more to the state $\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ ?
 
@@ -189,7 +189,7 @@ While the framework of classical information theory is exceptionally powerful an
 
 The first postulate of quantum mechanics states that "the state of an isolated physical system is completely described by a unit vector (state vector) in a Hilbert space $\mathcal{H}$, which is a complete vector space equipped with a complex inner product." In the context of quantum computation, since continuous spatial degrees of freedom can be neglected, this Hilbert space is typically a finite-dimensional complex vector space $\mathbb{C}^d$.
 
-The fundamental unit of quantum information, the "qubit," is rigorously defined as a state in a two-dimensional complex Hilbert space $\mathcal{H} \cong \mathbb{C}^2$. To describe states in this vector space, it is standard to use **bra-ket notation**, introduced by physicist Paul Dirac.
+The fundamental unit of quantum information, the "qubit," is rigorously defined as a state in a two-dimensional complex Hilbert space $\mathcal{H} \cong \mathbb{C}^2$. To describe states in this vector space, it is standard to use **bra-ket notation** , introduced by physicist Paul Dirac.
 
 A column vector representing a quantum state is called a **ket vector** and is denoted as $|\psi\rangle$. Corresponding to the classical states $0$ and $1$, let us introduce an orthonormal basis called the computational basis. These are also referred to as the $Z$ basis of the qubit, and are defined respectively as $|0\rangle$ and $|1\rangle$:
 
@@ -239,7 +239,7 @@ $$
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
 $$
 
-Here, $\alpha$ and $\beta$ are complex numbers ($\alpha, \beta \in \mathbb{C}$) known as **complex probability amplitudes**. In contrast to classical probabilities being non-negative real numbers, the fact that quantum states possess "complex" coefficients is the fundamental reason quantum computers possess computational capabilities that surpass classical computers. Because complex numbers possess phase and can point in any direction on the complex plane, they can reinforce each other (constructive interference) or cancel each other out (destructive interference) like waves. The essence of quantum algorithms lies in skillfully manipulating these interference effects to amplify the probability amplitude of the correct answer and cancel out the probability amplitudes of incorrect answers.
+Here, $\alpha$ and $\beta$ are complex numbers ($\alpha, \beta \in \mathbb{C}$) known as **complex probability amplitudes** . In contrast to classical probabilities being non-negative real numbers, the fact that quantum states possess "complex" coefficients is the fundamental reason quantum computers possess computational capabilities that surpass classical computers. Because complex numbers possess phase and can point in any direction on the complex plane, they can reinforce each other (constructive interference) or cancel each other out (destructive interference) like waves. The essence of quantum algorithms lies in skillfully manipulating these interference effects to amplify the probability amplitude of the correct answer and cancel out the probability amplitudes of incorrect answers.
 
 The process of extracting classical information from a quantum system is "measurement." When considering projective measurement, according to the Born rule, the probability $P(0)$ of obtaining $0$ and the probability $P(1)$ of obtaining $1$ upon measuring state $|\psi\rangle$ in the computational basis $\{|0\rangle, |1\rangle\}$ are given by the squared absolute values of their respective probability amplitudes:
 
@@ -251,7 +251,7 @@ $$
 P(1) = |\langle 1|\psi\rangle|^2 = |\beta|^2 = \beta \beta^*
 $$
 
-For the system to always be observed in some definite state, the sum of all probabilities must strictly equal $1$. Therefore, the norm (length) of the quantum state vector $|\psi\rangle$ must always be $1$. This is the **normalization condition**:
+For the system to always be observed in some definite state, the sum of all probabilities must strictly equal $1$. Therefore, the norm (length) of the quantum state vector $|\psi\rangle$ must always be $1$. This is the **normalization condition** :
 
 $$
 \langle\psi|\psi\rangle = (\alpha^* \langle 0| + \beta^* \langle 1|)(\alpha |0\rangle + \beta |1\rangle) = |\alpha|^2 + |\beta|^2 = 1
@@ -283,7 +283,7 @@ $$
 
 Because global phases cancel each other out in this manner, it is impossible to observe them through any physical measurement. That is, although $|\psi\rangle$ and $e^{i\phi_0}|\psi\rangle$ are distinct vectors in Hilbert space (representing the same ray), physically they represent the exact same state.
 
-Therefore, by ignoring the global phase and retaining only the relative phase $\varphi = \phi_1 - \phi_0$ (where $\varphi \in [0, 2\pi)$) between $|0\rangle$ and $|1\rangle$ as a parameter, any pure state of a single qubit can be uniquely and rigorously expressed in the following **canonical form**:
+Therefore, by ignoring the global phase and retaining only the relative phase $\varphi = \phi_1 - \phi_0$ (where $\varphi \in [0, 2\pi)$) between $|0\rangle$ and $|1\rangle$ as a parameter, any pure state of a single qubit can be uniquely and rigorously expressed in the following **canonical form** :
 
 $$
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\varphi} \sin\left(\frac{\theta}{2}\right) |1\rangle
@@ -314,7 +314,7 @@ graph TD
 
 The most remarkable property of the Bloch sphere is that "orthogonal states in Hilbert space (states whose inner product is 0) are located at antipodal points (points 180 degrees opposite to each other) in the three-dimensional real space of the Bloch sphere." For example, the state orthogonal to $|0\rangle$ (North Pole, $\theta=0$) is $|1\rangle$ (South Pole, $\theta=\pi$). The inner product calculation $\langle 0 | 1 \rangle = 0$ between mutually orthogonal states in Hilbert space corresponds to an angular separation of $\pi$ (180 degrees) on the Bloch sphere. Because geometric angles are twice the angles in Hilbert space, there is a mathematical necessity for using the half-angle $\theta/2$ in the parameterization.
 
-The coordinates $\mathbf{r} = (x, y, z)$ of this Bloch sphere are rigorously derived as the expectation values of the **Pauli matrices**, which are observables in quantum mechanics. The Pauli matrices, which form the basis for Hermitian operators on two-dimensional systems, are defined as follows:
+The coordinates $\mathbf{r} = (x, y, z)$ of this Bloch sphere are rigorously derived as the expectation values of the **Pauli matrices** , which are observables in quantum mechanics. The Pauli matrices, which form the basis for Hermitian operators on two-dimensional systems, are defined as follows:
 
 $$
 X = \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
@@ -416,22 +416,22 @@ In this chapter, we will strictly formulate the processes ranging from the descr
 
 The first axiom in quantum mechanics determines how the "state" of a physical system is represented mathematically.
 
-**Axiom 1 (Representation of States)**:
-The state of a closed physical system is completely described by a unit vector with a norm of 1 in a Hilbert space $\mathcal{H}$, which is a complete complex inner product space. This is called a **state vector**.
+ **Axiom 1 (Representation of States)** :
+The state of a closed physical system is completely described by a unit vector with a norm of 1 in a Hilbert space $\mathcal{H}$, which is a complete complex inner product space. This is called a **state vector** .
 
-According to the Bra-ket notation introduced by Paul Dirac, a state vector is treated as a column vector and is denoted as a ket ** $| \psi \rangle$ **. A row vector belonging to the dual space $\mathcal{H}^*$ is denoted as a bra ** $\langle \psi |$ **, and these are Hermitian conjugates (complex conjugate transposes) of each other. That is,
+According to the Bra-ket notation introduced by Paul Dirac, a state vector is treated as a column vector and is denoted as a ket **$| \psi \rangle$** . A row vector belonging to the dual space $\mathcal{H}^*$ is denoted as a bra **$\langle \psi |$** , and these are Hermitian conjugates (complex conjugate transposes) of each other. That is,
 
 $$
 \langle \psi | = ( | \psi \rangle )^\dagger
 $$
 
-The inner product of any two states ** $| \phi \rangle$ ** and ** $| \psi \rangle$ ** in the Hilbert space is calculated as the product of the bra and the ket ** $\langle \phi | \psi \rangle$ **, yielding a complex value. This inner product satisfies the following properties:
+The inner product of any two states **$| \phi \rangle$** and **$| \psi \rangle$** in the Hilbert space is calculated as the product of the bra and the ket **$\langle \phi | \psi \rangle$** , yielding a complex value. This inner product satisfies the following properties:
 
-1. **Positive definiteness**: For any ** $| \psi \rangle \neq 0$ **, $\langle \psi | \psi \rangle > 0$
-2. **Linearity**: $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
-3. **Conjugate symmetry**: $\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*$ (where $*$ denotes the complex conjugate)
+1. **Positive definiteness** : For any **$| \psi \rangle \neq 0$** , $\langle \psi | \psi \rangle > 0$
+2. **Linearity** : $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
+3. **Conjugate symmetry** : $\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*$ (where $*$ denotes the complex conjugate)
 
-To establish a probabilistic interpretation, physical states must always satisfy the normalization condition. That is, the norm of the state vector ** $| \psi \rangle$ ** is 1.
+To establish a probabilistic interpretation, physical states must always satisfy the normalization condition. That is, the norm of the state vector **$| \psi \rangle$** is 1.
 
 $$
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
@@ -441,7 +441,7 @@ Furthermore, since the Cauchy-Schwarz inequality $|\langle \phi | \psi \rangle|^
 
 ### Superposition Principle and Complete Orthonormal Basis
 
-The most prominent feature of quantum mechanics is the "Superposition principle". If ** $| \phi \rangle$ ** and ** $| \psi \rangle$ ** are physically permissible states, then any complex linear combination of them $c_1 | \phi \rangle + c_2 | \psi \rangle$ is also a physically permissible state (once normalized). This property is directly derived from the linearity of Hilbert space.
+The most prominent feature of quantum mechanics is the "Superposition principle". If **$| \phi \rangle$** and **$| \psi \rangle$** are physically permissible states, then any complex linear combination of them $c_1 | \phi \rangle + c_2 | \psi \rangle$ is also a physically permissible state (once normalized). This property is directly derived from the linearity of Hilbert space.
 
 In the Hilbert space $\mathcal{H}$, there exists an orthonormal basis $\{ | e_i \rangle \}$. These basis vectors are mutually orthogonal and normalized.
 
@@ -455,7 +455,7 @@ $$
 I = \sum_i | e_i \rangle \langle e_i |
 $$
 
-By applying this identity operator, any arbitrary quantum state ** $| \psi \rangle$ ** can be uniquely expanded as a linear combination of the basis vectors:
+By applying this identity operator, any arbitrary quantum state **$| \psi \rangle$** can be uniquely expanded as a linear combination of the basis vectors:
 
 $$
 | \psi \rangle = I | \psi \rangle = \left( \sum_i | e_i \rangle \langle e_i | \right) | \psi \rangle = \sum_i \langle e_i | \psi \rangle | e_i \rangle = \sum_i c_i | e_i \rangle
@@ -467,7 +467,7 @@ Here, the expansion coefficients $c_i = \langle e_i | \psi \rangle$ are called c
 
 In classical mechanics, physical quantities (observables) such as position, momentum, and energy are described as real-valued functions. However, a fundamental paradigm shift occurs in quantum mechanics.
 
-**Axiom 2 (Observables)**:
+ **Axiom 2 (Observables)** :
 Observable physical quantities (observables) are described by linear self-adjoint operators (Hermitian operators) $A$ on the Hilbert space $\mathcal{H}$.
 
 A Hermitian operator is an operator whose Hermitian conjugate is equal to itself. That is, it satisfies $A = A^\dagger$. When represented as a matrix in a finite-dimensional space, it means that its elements are complex conjugate symmetric ( $A_{ij} = A_{ji}^*$ ).
@@ -475,23 +475,23 @@ A Hermitian operator is an operator whose Hermitian conjugate is equal to itself
 The reason observables must be defined as Hermitian operators lies in their "Eigenvalues". According to the spectral theorem of linear algebra, Hermitian operators have the following critically important properties:
 
 1. **All eigenvalues $a_i$ are real numbers.** (Since observed physical quantities must always be real numbers, this matches the physical requirements.)
-2. **Eigenvectors belonging to different eigenvalues are orthogonal to each other.**
-3. **The eigenvectors $\{ | a_i \rangle \}$ of the operator form a complete orthonormal basis for the Hilbert space.**
+2. **Eigenvectors belonging to different eigenvalues are orthogonal to each other.** 
+3. **The eigenvectors $\{ | a_i \rangle \}$ of the operator form a complete orthonormal basis for the Hilbert space.** 
 
-Therefore, any observable $A$ can be subjected to a spectral decomposition as a linear combination of projection operators $P_i = | a_i \rangle \langle a_i |$, using its eigenvalues $a_i$ and eigenvectors ** $| a_i \rangle$ **:
+Therefore, any observable $A$ can be subjected to a spectral decomposition as a linear combination of projection operators $P_i = | a_i \rangle \langle a_i |$, using its eigenvalues $a_i$ and eigenvectors **$| a_i \rangle$** :
 
 $$
 A = \sum_i a_i | a_i \rangle \langle a_i |
 $$
 
-Through this formulation, the act of "measuring a physical quantity" can be understood as a geometric operation of projecting onto a specific basis (eigenvectors) in the Hilbert space. For example, the $\sigma_z$ observation of a qubit is completely described as a projection operation onto an orthogonal basis consisting of the state ** $| 0 \rangle$ ** corresponding to the eigenvalue $+1$, and the state ** $| 1 \rangle$ ** corresponding to the eigenvalue $-1$.
+Through this formulation, the act of "measuring a physical quantity" can be understood as a geometric operation of projecting onto a specific basis (eigenvectors) in the Hilbert space. For example, the $\sigma_z$ observation of a qubit is completely described as a projection operation onto an orthogonal basis consisting of the state **$| 0 \rangle$** corresponding to the eigenvalue $+1$, and the state **$| 1 \rangle$** corresponding to the eigenvalue $-1$.
 
 ## 3.4 The Third Axiom: Unitary Time Evolution and the Schrödinger Equation
 
 When a quantum system is isolated and does not interact with other systems, its state changes deterministically and reversibly over time.
 
-**Axiom 3 (Time Evolution)**:
-The time evolution of the state of an isolated quantum system obeys the Schrödinger equation. Or, as an equivalent expression, the state ** $| \psi(t_0) \rangle$ ** at time $t_0$ evolves into the state ** $| \psi(t) \rangle$ ** at time $t$ by the action of a unitary operator $U(t, t_0)$.
+ **Axiom 3 (Time Evolution)** :
+The time evolution of the state of an isolated quantum system obeys the Schrödinger equation. Or, as an equivalent expression, the state **$| \psi(t_0) \rangle$** at time $t_0$ evolves into the state **$| \psi(t) \rangle$** at time $t$ by the action of a unitary operator $U(t, t_0)$.
 
 The time-dependent Schrödinger equation, which is the fundamental equation describing time evolution, is expressed as follows:
 
@@ -509,26 +509,26 @@ $$
 
 The operator $U(t, t_0) = \exp\left( -i H (t - t_0) / \hbar \right)$ represented by this exponential function is the time evolution operator. Since the Hamiltonian $H$ is Hermitian ( $H = H^\dagger$ ), by Stone's theorem, $U$ becomes a unitary operator. A unitary operator is an operator whose Hermitian conjugate equals its inverse ( $U^\dagger U = U U^\dagger = I$ ).
 
-The extremely important physical significance of a unitary transformation is that it **"preserves the norm (length) and inner product of state vectors"**. That is, no matter how much time passes, $\langle \psi(t) | \psi(t) \rangle = \langle \psi(t_0) | U^\dagger U | \psi(t_0) \rangle = 1$ is always guaranteed, meaning the physical law that the sum of probabilities is 1 is never violated. The "quantum gates" of a quantum computer are nothing other than operations that artificially design and control this unitary time evolution. For example, the Hadamard gate and the CNOT gate are all represented as unitary matrices.
+The extremely important physical significance of a unitary transformation is that it **"preserves the norm (length) and inner product of state vectors"** . That is, no matter how much time passes, $\langle \psi(t) | \psi(t) \rangle = \langle \psi(t_0) | U^\dagger U | \psi(t_0) \rangle = 1$ is always guaranteed, meaning the physical law that the sum of probabilities is 1 is never violated. The "quantum gates" of a quantum computer are nothing other than operations that artificially design and control this unitary time evolution. For example, the Hadamard gate and the CNOT gate are all represented as unitary matrices.
 
 ## 3.5 The Fourth Axiom: Observation and Born's Rule
 
 The concept of "Measurement" in quantum mechanics fundamentally differs from classical physics. In classical systems, observation is considered a passive act of knowing a value without disturbing the state of the system. However, in quantum mechanics, observation actively intervenes in the state, bringing about an irreversible change.
 
-**Axiom 4 (Observation and Born's Rule)**:
-When an observation of an observable $A$ with spectral decomposition $A = \sum_i a_i P_i$ is performed on a system in state ** $| \psi \rangle$ **, the obtained measurement value is always one of the eigenvalues $a_i$ of $A$. The probability $p(a_k)$ of obtaining a specific eigenvalue $a_k$ is given according to Born's rule as follows:
+ **Axiom 4 (Observation and Born's Rule)** :
+When an observation of an observable $A$ with spectral decomposition $A = \sum_i a_i P_i$ is performed on a system in state **$| \psi \rangle$** , the obtained measurement value is always one of the eigenvalues $a_i$ of $A$. The probability $p(a_k)$ of obtaining a specific eigenvalue $a_k$ is given according to Born's rule as follows:
 
 $$
 p(a_k) = \langle \psi | P_k | \psi \rangle = \| P_k | \psi \rangle \|^2
 $$
 
-If the eigenvalue $a_k$ is non-degenerate (meaning there is only one corresponding eigenvector ** $| a_k \rangle$ **), the projection operator is $P_k = | a_k \rangle \langle a_k |$, and the probability is calculated as the absolute square of the inner product of the state onto the eigenvector:
+If the eigenvalue $a_k$ is non-degenerate (meaning there is only one corresponding eigenvector **$| a_k \rangle$** ), the projection operator is $P_k = | a_k \rangle \langle a_k |$, and the probability is calculated as the absolute square of the inner product of the state onto the eigenvector:
 
 $$
 p(a_k) = \langle \psi | a_k \rangle \langle a_k | \psi \rangle = | \langle a_k | \psi \rangle |^2
 $$
 
-This is precisely the absolute square $|c_k|^2$ of the coefficient $c_k = \langle a_k | \psi \rangle$ when the state vector ** $| \psi \rangle$ ** is expanded in the basis $\{ | a_i \rangle \}$. The complex probability amplitude $c_k$ itself cannot be directly observed, but its absolute square emerges as the observation probability in the real world. The insight of Max Born, who proposed this rule, is a monumental achievement that transformed physics from determinism to probability theory. The expected value $\langle A \rangle$ of the observable $A$ is calculated as the sum of the products of all eigenvalues and their appearance probabilities, and is ultimately expressed very beautifully in the form of an inner product involving the state vector:
+This is precisely the absolute square $|c_k|^2$ of the coefficient $c_k = \langle a_k | \psi \rangle$ when the state vector **$| \psi \rangle$** is expanded in the basis $\{ | a_i \rangle \}$. The complex probability amplitude $c_k$ itself cannot be directly observed, but its absolute square emerges as the observation probability in the real world. The insight of Max Born, who proposed this rule, is a monumental achievement that transformed physics from determinism to probability theory. The expected value $\langle A \rangle$ of the observable $A$ is calculated as the sum of the products of all eigenvalues and their appearance probabilities, and is ultimately expressed very beautifully in the form of an inner product involving the state vector:
 
 $$
 \langle A \rangle = \sum_i a_i p(a_i) = \sum_i a_i \langle \psi | P_i | \psi \rangle = \langle \psi | \left( \sum_i a_i P_i \right) | \psi \rangle = \langle \psi | A | \psi \rangle
@@ -538,22 +538,22 @@ $$
 
 The axiom of observation contains a crucial step that has sparked the most debate: what happens to the state of the system "after" the observation. This is the phenomenon known as "Wavefunction collapse" or "State reduction". This process, known as von Neumann's Projection postulate, is formulated as follows:
 
-**Projection Postulate**:
-Immediately after obtaining the eigenvalue $a_k$ through observation, the state of the system ** $| \psi' \rangle$ ** instantaneously changes (collapses) into a state where the projection operator $P_k$ corresponding to the original state vector is applied, and then re-normalized:
+ **Projection Postulate** :
+Immediately after obtaining the eigenvalue $a_k$ through observation, the state of the system **$| \psi' \rangle$** instantaneously changes (collapses) into a state where the projection operator $P_k$ corresponding to the original state vector is applied, and then re-normalized:
 
 $$
 | \psi' \rangle = \frac{P_k | \psi \rangle}{\sqrt{p(a_k)}}
 $$
 
-If the observation apparatus is ideal and the system's state collapses to a non-degenerate eigenvalue $a_k$, the state immediately following the observation becomes exactly the eigenvector ** $| a_k \rangle$ ** itself. That is, if the exact same observation is repeated immediately afterward, $a_k$ will be obtained again with a probability of 1 (100%). This is called a "measurement of the first kind".
+If the observation apparatus is ideal and the system's state collapses to a non-degenerate eigenvalue $a_k$, the state immediately following the observation becomes exactly the eigenvector **$| a_k \rangle$** itself. That is, if the exact same observation is repeated immediately afterward, $a_k$ will be obtained again with a probability of 1 (100%). This is called a "measurement of the first kind".
 
 This "wavefunction collapse" possesses properties (discontinuous, probabilistic, irreversible) that explicitly contradict the unitary time evolution (continuous, deterministic, reversible) described by the Schrödinger equation. Quantum mechanics encapsulates a dualistic dynamics: the system evolves unitarily when it is isolated, and undergoes a non-unitary collapse the moment it comes into contact with a macroscopic observation apparatus.
 
 ### From Pure States to Mixed States: Introduction of the Density Operator
 
-To gain a deeper understanding of the paradox of wavefunction collapse, the concept of a "Density operator" is essential. The state vector ** $| \psi \rangle$ ** we have dealt with so far is a "Pure state" that possesses maximum information about the system. The density operator for a pure state is defined as $\rho = | \psi \rangle \langle \psi |$.
+To gain a deeper understanding of the paradox of wavefunction collapse, the concept of a "Density operator" is essential. The state vector **$| \psi \rangle$** we have dealt with so far is a "Pure state" that possesses maximum information about the system. The density operator for a pure state is defined as $\rho = | \psi \rangle \langle \psi |$.
 
-On the other hand, if we do not know to which state the system collapsed during the observation process (or if we have lost that information), the system must be described as a classical probabilistic mixed state. For example, the density operator representing an ensemble of a system that has collapsed to the state ** $| a_k \rangle$ ** with probability $p(a_k)$ is as follows:
+On the other hand, if we do not know to which state the system collapsed during the observation process (or if we have lost that information), the system must be described as a classical probabilistic mixed state. For example, the density operator representing an ensemble of a system that has collapsed to the state **$| a_k \rangle$** with probability $p(a_k)$ is as follows:
 
 $$
 \rho' = \sum_k p(a_k) | a_k \rangle \langle a_k |
@@ -603,41 +603,41 @@ At the foundation of quantum computation lies the precise manipulation of quantu
 
 ## 4.1 Postulates of Quantum Mechanics and the Inevitability of Unitary Matrices
 
-The time evolution of a quantum system is governed by the Schrödinger equation below, using the Hamiltonian ** $H$ ** ( ** $H^\dagger = H$ ** ), which is the Hermitian operator characterizing the system:
+The time evolution of a quantum system is governed by the Schrödinger equation below, using the Hamiltonian **$H$** ( **$H^\dagger = H$** ), which is the Hermitian operator characterizing the system:
 
 $$
 i\hbar \frac{d}{dt} |\psi(t)\rangle = H |\psi(t)\rangle
 $$
 
-Assuming a time-independent Hamiltonian ** $H$ **, the quantum state ** $|\psi(t)\rangle$ ** at any arbitrary time ** $t$ ** can be formally integrated from the initial state ** $|\psi(0)\rangle$ ** as follows:
+Assuming a time-independent Hamiltonian **$H$** , the quantum state **$|\psi(t)\rangle$** at any arbitrary time **$t$** can be formally integrated from the initial state **$|\psi(0)\rangle$** as follows:
 
 $$
 |\psi(t)\rangle = e^{-\frac{i}{\hbar}Ht} |\psi(0)\rangle
 $$
 
-We define the time-evolution operator appearing here as ** $U(t) = e^{-\frac{i}{\hbar}Ht}$ **. Since ** $H$ ** in the exponent is Hermitian, calculating the adjoint operator (Hermitian conjugate) ** $U(t)^\dagger$ ** of this operator ** $U(t)$ ** leads to the following crucial property:
+We define the time-evolution operator appearing here as **$U(t) = e^{-\frac{i}{\hbar}Ht}$** . Since **$H$** in the exponent is Hermitian, calculating the adjoint operator (Hermitian conjugate) **$U(t)^\dagger$** of this operator **$U(t)$** leads to the following crucial property:
 
 $$
 U(t)^\dagger U(t) = \left( e^{-\frac{i}{\hbar}Ht} \right)^\dagger e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}H^\dagger t} e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}Ht} e^{-\frac{i}{\hbar}Ht} = I
 $$
 
-Similarly, ** $U(t) U(t)^\dagger = I$ ** also holds. A matrix whose conjugate transpose is equal to its own inverse ( ** $U^\dagger = U^{-1}$ ** ) is called a "unitary matrix." A single-qubit gate is nothing other than a ** $2 \times 2$ ** unitary matrix implemented by an intentionally engineered Hamiltonian via physical control (such as irradiating microwave pulses with specific frequencies and durations).
+Similarly, **$U(t) U(t)^\dagger = I$** also holds. A matrix whose conjugate transpose is equal to its own inverse ( **$U^\dagger = U^{-1}$** ) is called a "unitary matrix." A single-qubit gate is nothing other than a **$2 \times 2$** unitary matrix implemented by an intentionally engineered Hamiltonian via physical control (such as irradiating microwave pulses with specific frequencies and durations).
 
-The reason unitary matrices are absolutely indispensable in quantum mechanics is that they are the only linear transformations that mathematically guarantee "conservation of probability (conservation of norm)." Let us compute the inner product of the states after applying a unitary transformation ** $U$ ** to arbitrary quantum states ** $|\psi\rangle$ ** and ** $|\phi\rangle$ **:
+The reason unitary matrices are absolutely indispensable in quantum mechanics is that they are the only linear transformations that mathematically guarantee "conservation of probability (conservation of norm)." Let us compute the inner product of the states after applying a unitary transformation **$U$** to arbitrary quantum states **$|\psi\rangle$** and **$|\phi\rangle$** :
 
 $$
 \langle \phi' | \psi' \rangle = ( \langle \phi | U^\dagger ) ( U |\psi\rangle ) = \langle \phi | U^\dagger U | \psi \rangle = \langle \phi | I | \psi \rangle = \langle \phi | \psi \rangle
 $$
 
-The conservation of the inner product implies that the norm squared of the state vector itself, ** $\langle \psi | \psi \rangle$ **, is also conserved. According to Born's rule in quantum mechanics, the sum of the squared magnitudes of the amplitudes of a state vector must equal the total probability of 1. Therefore, for the probabilistic interpretation not to break down under quantum gate operations, unitarity of the operation is an absolute prerequisite.
+The conservation of the inner product implies that the norm squared of the state vector itself, **$\langle \psi | \psi \rangle$** , is also conserved. According to Born's rule in quantum mechanics, the sum of the squared magnitudes of the amplitudes of a state vector must equal the total probability of 1. Therefore, for the probabilistic interpretation not to break down under quantum gate operations, unitarity of the operation is an absolute prerequisite.
 
-Furthermore, according to the spectral theorem, any unitary matrix ** $U$ ** can be written as ** $U = e^{iK}$ ** using a Hermitian matrix ** $K$ ** with real eigenvalues ** $\lambda_k$ **. The eigenvalues of a unitary matrix are always complex numbers with unit modulus (of the form ** $e^{i\theta}$ ** ), and its eigenvectors form an orthonormal, complete basis:
+Furthermore, according to the spectral theorem, any unitary matrix **$U$** can be written as **$U = e^{iK}$** using a Hermitian matrix **$K$** with real eigenvalues **$\lambda_k$** . The eigenvalues of a unitary matrix are always complex numbers with unit modulus (of the form **$e^{i\theta}$** ), and its eigenvectors form an orthonormal, complete basis:
 
 $$
 U = \sum_{j=1}^{d} e^{i \theta_j} |\phi_j\rangle \langle \phi_j|
 $$
 
-This demonstrates that the action of a quantum gate can be completely decomposed into an operation that "imparts purely a phase rotation ** $e^{i\theta_j}$ ** onto specific orthonormal basis states ** $|\phi_j\rangle$ **."
+This demonstrates that the action of a quantum gate can be completely decomposed into an operation that "imparts purely a phase rotation **$e^{i\theta_j}$** onto specific orthonormal basis states **$|\phi_j\rangle$** ."
 
 ## 4.2 Pauli Matrices and Fundamental Gates (X, Y, Z Gates)
 
@@ -651,7 +651,7 @@ $$
 X = \sigma_x = |0\rangle\langle 1| + |1\rangle\langle 0| = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
 $$
 
-Verifying its action on the computational basis states ( ** $|0\rangle, |1\rangle$ ** ) explicitly through matrix multiplication:
+Verifying its action on the computational basis states ( **$|0\rangle, |1\rangle$** ) explicitly through matrix multiplication:
 
 $$
 X |0\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} = |1\rangle
@@ -661,11 +661,11 @@ $$
 X |1\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} = |0\rangle
 $$
 
-Thus, it completely flips the amplitudes. Geometrically, this corresponds to a rotation by ** $\pi$ ** (180 degrees) about the X-axis on the Bloch sphere. The North Pole ( ** $|0\rangle$ ** ) is mapped to the South Pole ( ** $|1\rangle$ ** ), and the South Pole is mapped to the North Pole.
+Thus, it completely flips the amplitudes. Geometrically, this corresponds to a rotation by **$\pi$** (180 degrees) about the X-axis on the Bloch sphere. The North Pole ( **$|0\rangle$** ) is mapped to the South Pole ( **$|1\rangle$** ), and the South Pole is mapped to the North Pole.
 
 ### 4.2.2 Pauli-Y Gate (Bit-and-Phase-Flip Gate)
 
-The Pauli-Y gate simultaneously induces both a bit flip and a phase flip, additionally imparting a phase factor of the imaginary unit ** $i$ **. Its outer-product representation and matrix representation are as follows:
+The Pauli-Y gate simultaneously induces both a bit flip and a phase flip, additionally imparting a phase factor of the imaginary unit **$i$** . Its outer-product representation and matrix representation are as follows:
 
 $$
 Y = \sigma_y = -i|0\rangle\langle 1| + i|1\rangle\langle 0| = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
@@ -677,11 +677,11 @@ $$
 Y |0\rangle = i|1\rangle, \quad Y |1\rangle = -i|0\rangle
 $$
 
-On the Bloch sphere, it represents a ** $\pi$ ** rotation about the Y-axis. The multiplication by the imaginary unit ** $i$ ** (that is, ** $e^{i\pi/2}$ ** ) signifies not merely a reversal, but a shift toward the orthogonal direction in the state's phase space.
+On the Bloch sphere, it represents a **$\pi$** rotation about the Y-axis. The multiplication by the imaginary unit **$i$** (that is, **$e^{i\pi/2}$** ) signifies not merely a reversal, but a shift toward the orthogonal direction in the state's phase space.
 
 ### 4.2.3 Pauli-Z Gate (Phase-Flip Gate)
 
-The Pauli-Z gate is a purely quantum "phase operation" that has no counterpart in classical logic. Without changing the magnitude of the amplitudes (measurement probabilities) whatsoever, it applies a phase shift of ** $-1$ ** (namely, ** $e^{i\pi}$ ** ) exclusively to the component of ** $|1\rangle$ **.
+The Pauli-Z gate is a purely quantum "phase operation" that has no counterpart in classical logic. Without changing the magnitude of the amplitudes (measurement probabilities) whatsoever, it applies a phase shift of **$-1$** (namely, **$e^{i\pi}$** ) exclusively to the component of **$|1\rangle$** .
 
 $$
 Z = \sigma_z = |0\rangle\langle 0| - |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
@@ -693,14 +693,14 @@ $$
 Z |0\rangle = |0\rangle, \quad Z |1\rangle = -|1\rangle
 $$
 
-This corresponds to a ** $\pi$ ** rotation about the Z-axis. Since the computational basis states ** $|0\rangle, |1\rangle$ ** are eigenvectors of the Z matrix (with eigenvalues +1 and -1, respectively), applying the Z gate does not induce a transition between these basis states. However, when applied to a superposition state (e.g., ** $\alpha|0\rangle + \beta|1\rangle$ ** ), the relative phase is dramatically flipped to ** $\alpha|0\rangle - \beta|1\rangle$ **, decisively altering subsequent interference outcomes.
+This corresponds to a **$\pi$** rotation about the Z-axis. Since the computational basis states **$|0\rangle, |1\rangle$** are eigenvectors of the Z matrix (with eigenvalues +1 and -1, respectively), applying the Z gate does not induce a transition between these basis states. However, when applied to a superposition state (e.g., **$\alpha|0\rangle + \beta|1\rangle$** ), the relative phase is dramatically flipped to **$\alpha|0\rangle - \beta|1\rangle$** , decisively altering subsequent interference outcomes.
 
 ### 4.2.4 Profound Algebraic Structure of the Pauli Group
 
-The Pauli matrix set ** $\{I, X, Y, Z\}$ ** forms an exceptionally elegant algebraic structure as linear operators on Hilbert space:
+The Pauli matrix set **$\{I, X, Y, Z\}$** forms an exceptionally elegant algebraic structure as linear operators on Hilbert space:
 
-1. **Simultaneous Self-Adjointness (Hermiticity) and Unitarity**: ** $X = X^\dagger$ **, ** $Y = Y^\dagger$ **, ** $Z = Z^\dagger$ **, while simultaneously satisfying ** $X^\dagger X = I$ ** (i.e., ** $X = X^{-1}$ ** ). They possess the rare property of being physical observables while simultaneously serving as unitary generators of time evolution (quantum gates). Applying them twice consecutively returns to the identity transformation (involution: ** $X^2 = Y^2 = Z^2 = I$ ** ).
-2. **Complete Anti-Commutation Relations**: Interchanging the order of multiplication between different Pauli matrices reverses their sign:
+1. **Simultaneous Self-Adjointness (Hermiticity) and Unitarity** : **$X = X^\dagger$** , **$Y = Y^\dagger$** , **$Z = Z^\dagger$** , while simultaneously satisfying **$X^\dagger X = I$** (i.e., **$X = X^{-1}$** ). They possess the rare property of being physical observables while simultaneously serving as unitary generators of time evolution (quantum gates). Applying them twice consecutively returns to the identity transformation (involution: **$X^2 = Y^2 = Z^2 = I$** ).
+2. **Complete Anti-Commutation Relations** : Interchanging the order of multiplication between different Pauli matrices reverses their sign:
    
 
 $$
@@ -708,7 +708,7 @@ $$
 $$
 
 
-3. **Commutation Relations and Lie Algebra**: Using the commutator ** $[A, B] = AB - BA$ **, they clearly exhibit their structure as generators of the ** $SU(2)$ ** Lie algebra (using the completely antisymmetric Levi-Civita tensor ** $\epsilon_{jkl}$ ** ):
+3. **Commutation Relations and Lie Algebra** : Using the commutator **$[A, B] = AB - BA$** , they clearly exhibit their structure as generators of the **$SU(2)$** Lie algebra (using the completely antisymmetric Levi-Civita tensor **$\epsilon_{jkl}$** ):
    
 
 $$
@@ -716,7 +716,7 @@ $$
 $$
 
 
-   Specifically, ** $XY = iZ$ **, ** $YZ = iX$ **, and ** $ZX = iY$ **. This algebraic structure provides the mathematical foundation for defining arbitrary rotation gates, as discussed later.
+   Specifically, **$XY = iZ$** , **$YZ = iX$** , and **$ZX = iY$** . This algebraic structure provides the mathematical foundation for defining arbitrary rotation gates, as discussed later.
 
 ## 4.3 Hadamard Gate (H Gate): Creation of Quantum Superposition
 
@@ -736,8 +736,8 @@ $$
 H |1\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{|0\rangle - |1\rangle}{\sqrt{2}} \equiv |-\rangle
 $$
 
-The generated states ** $|+\rangle$ ** and ** $|-\rangle$ ** are called the X-basis (or diagonal basis) and are the eigenstates of the Pauli-X matrix. Because the Hadamard matrix itself is real symmetric and orthogonal (a unitary matrix in real space), it satisfies ** $H = H^\dagger = H^{-1}$ ** and ** $H^2 = I$ **.
-Consequently, ** $H |+\rangle = |0\rangle$ **, meaning it also functions to make a superposition state interfere back into a deterministic computational basis state.
+The generated states **$|+\rangle$** and **$|-\rangle$** are called the X-basis (or diagonal basis) and are the eigenstates of the Pauli-X matrix. Because the Hadamard matrix itself is real symmetric and orthogonal (a unitary matrix in real space), it satisfies **$H = H^\dagger = H^{-1}$** and **$H^2 = I$** .
+Consequently, **$H |+\rangle = |0\rangle$** , meaning it also functions to make a superposition state interfere back into a deterministic computational basis state.
 Algebraically, the H gate is a unitary transformation that converts between the X-basis and the Z-basis. This can be expressed remarkably elegantly as matrix similarity transformations:
 
 $$
@@ -748,28 +748,28 @@ $$
 H Z H^\dagger = H Z H = X
 $$
 
-By virtue of this property, sandwiching a "phase flip via a Z gate" between H gates allows one to synthesize a "bit flip via an X gate." Geometrically, the H gate corresponds to a ** $\pi$ ** rotation about the unit vector axis ** $\hat{n} = \frac{1}{\sqrt{2}}(\hat{x} + \hat{z})$ ** on the Bloch sphere.
+By virtue of this property, sandwiching a "phase flip via a Z gate" between H gates allows one to synthesize a "bit flip via an X gate." Geometrically, the H gate corresponds to a **$\pi$** rotation about the unit vector axis **$\hat{n} = \frac{1}{\sqrt{2}}(\hat{x} + \hat{z})$** on the Bloch sphere.
 
 ## 4.4 Phase-Shift Gate Family: S Gate and T Gate
 
-The family of arbitrary rotations about the Z-axis of the Bloch sphere, which generalizes the Pauli-Z gate, is known as phase-shift gates ** $P(\phi)$ ** (or ** $R_\phi$ ** ):
+The family of arbitrary rotations about the Z-axis of the Bloch sphere, which generalizes the Pauli-Z gate, is known as phase-shift gates **$P(\phi)$** (or **$R_\phi$** ):
 
 $$
 P(\phi) = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi} \end{pmatrix} = |0\rangle\langle 0| + e^{i\phi} |1\rangle\langle 1|
 $$
 
-This gate family acts on a superposition state ** $\alpha|0\rangle + \beta|1\rangle$ ** to yield ** $\alpha|0\rangle + \beta e^{i\phi}|1\rangle$ **, manipulating solely the relative phase of the ** $|1\rangle$ ** component. The following two gates are particularly vital:
+This gate family acts on a superposition state **$\alpha|0\rangle + \beta|1\rangle$** to yield **$\alpha|0\rangle + \beta e^{i\phi}|1\rangle$** , manipulating solely the relative phase of the **$|1\rangle$** component. The following two gates are particularly vital:
 
 ### 4.4.1 S Gate (Phase Gate, $\sqrt{Z}$ )
 
-The case where ** $\phi = \pi/2$ ** is called the S gate:
+The case where **$\phi = \pi/2$** is called the S gate:
 
 $$
 S = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
 $$
 
-As is evident from its matrix properties, applying it twice results in the Z gate ( ** $S^2 = Z$ ** ).
-Applying the S gate to the ** $|+\rangle$ ** state:
+As is evident from its matrix properties, applying it twice results in the Z gate ( **$S^2 = Z$** ).
+Applying the S gate to the **$|+\rangle$** state:
 
 $$
 S |+\rangle = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ i \end{pmatrix} = \frac{|0\rangle + i|1\rangle}{\sqrt{2}} \equiv |+i\rangle
@@ -779,24 +779,24 @@ This transitions the state toward the positive Y-axis direction on the equator o
 
 ### 4.4.2 T Gate ( $\pi/8$ Gate, $\sqrt{S}$ , $\sqrt[4]{Z}$ )
 
-The case where ** $\phi = \pi/4$ ** is called the T gate:
+The case where **$\phi = \pi/4$** is called the T gate:
 
 $$
 T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & \frac{1+i}{\sqrt{2}} \end{pmatrix}
 $$
 
-When factoring out a global phase of ** $e^{i\pi/8}$ **, the diagonal entries become ** $e^{-i\pi/8}$ ** and ** $e^{i\pi/8}$ **, which is why it is historically also called the ** $\pi/8$ ** gate.
+When factoring out a global phase of **$e^{i\pi/8}$** , the diagonal entries become **$e^{-i\pi/8}$** and **$e^{i\pi/8}$** , which is why it is historically also called the **$\pi/8$** gate.
 The T gate does not belong to the Clifford group, thereby breaking the efficiency of classical simulation. Crucially, an essential theorem in quantum computation theory establishes that appending even a single T gate to the Clifford group completes a "universal quantum gate set," capable of approximating any unitary transformation on a single qubit to arbitrary accuracy. In fault-tolerant quantum computing, because it is difficult to implement the T gate transversally on quantum error-correcting codes, it is realized through a very costly technique known as "magic state distillation."
 
 ## 4.5 Exponential Representation of Arbitrary Rotation Gates and Universality
 
-The most general operation on a single qubit is a unitary transformation that rotates the state by an angle ** $\theta$ ** about an arbitrary unit vector axis ** $\hat{n} = (n_x, n_y, n_z)$ ** (where ** $n_x^2 + n_y^2 + n_z^2 = 1$ ** ) on the Bloch sphere. Using linear combinations of the Pauli matrices, this rotation operator ** $R_{\hat{n}}(\theta)$ ** can be formulated elegantly as a matrix exponential:
+The most general operation on a single qubit is a unitary transformation that rotates the state by an angle **$\theta$** about an arbitrary unit vector axis **$\hat{n} = (n_x, n_y, n_z)$** (where **$n_x^2 + n_y^2 + n_z^2 = 1$** ) on the Bloch sphere. Using linear combinations of the Pauli matrices, this rotation operator **$R_{\hat{n}}(\theta)$** can be formulated elegantly as a matrix exponential:
 
 $$
 R_{\hat{n}}(\theta) = \exp\left(-i \frac{\theta}{2} (\hat{n} \cdot \vec{\sigma})\right) = \exp\left(-i \frac{\theta}{2} (n_x X + n_y Y + n_z Z)\right)
 $$
 
-Here, by utilizing the powerful anti-commutation properties of the Pauli matrices, which give ** $(\hat{n} \cdot \vec{\sigma})^2 = (n_x X + n_y Y + n_z Z)^2 = (n_x^2 + n_y^2 + n_z^2)I = I$ **, and Taylor expanding the exponential function ( ** $e^{iAx} = \cos(x)I + i\sin(x)A$ ** when ** $A^2=I$ ** ), the infinite series simplifies dramatically to yield the following matrix extension of Euler's formula:
+Here, by utilizing the powerful anti-commutation properties of the Pauli matrices, which give **$(\hat{n} \cdot \vec{\sigma})^2 = (n_x X + n_y Y + n_z Z)^2 = (n_x^2 + n_y^2 + n_z^2)I = I$** , and Taylor expanding the exponential function ( **$e^{iAx} = \cos(x)I + i\sin(x)A$** when **$A^2=I$** ), the infinite series simplifies dramatically to yield the following matrix extension of Euler's formula:
 
 $$
 R_{\hat{n}}(\theta) = \cos\left(\frac{\theta}{2}\right) I - i \sin\left(\frac{\theta}{2}\right) (\hat{n} \cdot \vec{\sigma})
@@ -804,28 +804,28 @@ $$
 
 From this general formulation, the basic rotation gates about the Cartesian coordinate axes are deduced:
 
-### Rotation Gate About the X-Axis ** $R_x(\theta)$ **
+### Rotation Gate About the X-Axis **$R_x(\theta)$** 
 
 
 $$
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Rotation Gate About the Y-Axis ** $R_y(\theta)$ **
+### Rotation Gate About the Y-Axis **$R_y(\theta)$** 
 
 
 $$
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
 $$
 
-### Rotation Gate About the Z-Axis ** $R_z(\theta)$ **
+### Rotation Gate About the Z-Axis **$R_z(\theta)$** 
 
 
 $$
 R_z(\theta) = e^{-i \frac{\theta}{2} Z} = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix}
 $$
 
-Using these rotation matrices, any arbitrary single-qubit unitary matrix ** $U \in SU(2)$ ** can be completely factorized via the "Z-Y-Z decomposition" using three Euler angles ( ** $\alpha, \beta, \gamma$ ** ) as follows:
+Using these rotation matrices, any arbitrary single-qubit unitary matrix **$U \in SU(2)$** can be completely factorized via the "Z-Y-Z decomposition" using three Euler angles ( **$\alpha, \beta, \gamma$** ) as follows:
 
 $$
 U = e^{i\delta} R_z(\alpha) R_y(\beta) R_z(\gamma)
@@ -858,9 +858,9 @@ graph LR
 
 To elevate abstract concepts into physical intuition, we will rigorously track by hand—without omitting any steps—how quantum states interfere and transition through the multiplication of multiple unitary matrices.
 
-Let the initial state be the ground state ** $|\psi_0\rangle = |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ **.
-The operation to be executed is the sequence similar to the above circuit: " ** $H$ ** gate" $\rightarrow$ " ** $S$ ** gate" $\rightarrow$ " ** $H$ ** gate".
-While quantum circuit diagrams are written from left to right, operator multiplication in linear algebra on state vectors is applied from the left; therefore, the expression for the total unitary operator ** $U_{total}$ ** is ordered from right to left, reverse to time:
+Let the initial state be the ground state **$|\psi_0\rangle = |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$** .
+The operation to be executed is the sequence similar to the above circuit: " **$H$** gate" $\rightarrow$ " **$S$** gate" $\rightarrow$ " **$H$** gate".
+While quantum circuit diagrams are written from left to right, operator multiplication in linear algebra on state vectors is applied from the left; therefore, the expression for the total unitary operator **$U_{total}$** is ordered from right to left, reverse to time:
 
 $$
 U_{total} = H S H
@@ -872,26 +872,26 @@ $$
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}, \quad S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
 $$
 
-First, we compute the product ** $SH$ ** of ** $H$ **, which is applied immediately after the initial state, and the subsequent ** $S$ **:
+First, we compute the product **$SH$** of **$H$** , which is applied immediately after the initial state, and the subsequent **$S$** :
 
 $$
 S H = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1\cdot 1 + 0\cdot 1 & 1\cdot 1 + 0\cdot(-1) \\ 0\cdot 1 + i\cdot 1 & 0\cdot 1 + i\cdot(-1) \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
 $$
 
-Next, we multiply this result from the left by the final ** $H$ **:
+Next, we multiply this result from the left by the final **$H$** :
 
 $$
 U_{total} = H (S H) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
 $$
 
-Factoring out the scalar product ** $\frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$ **, we carefully perform the matrix multiplication:
+Factoring out the scalar product **$\frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$** , we carefully perform the matrix multiplication:
 
 $$
 U_{total} = \frac{1}{2} \begin{pmatrix} 1\cdot 1 + 1\cdot i & 1\cdot 1 + 1\cdot(-i) \\ 1\cdot 1 + (-1)\cdot i & 1\cdot 1 + (-1)\cdot(-i) \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix}
 $$
 
 This is the single unitary matrix representation when treating the entire circuit as a single black box.
-Applying this ** $U_{total}$ ** to the initial state ** $|0\rangle$ **, we compute the final state ** $|\psi_{final}\rangle$ **:
+Applying this **$U_{total}$** to the initial state **$|0\rangle$** , we compute the final state **$|\psi_{final}\rangle$** :
 
 $$
 |\psi_{final}\rangle = U_{total} |0\rangle = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i \\ 1 - i \end{pmatrix}
@@ -913,50 +913,50 @@ $$
 P(1) = |\langle 1 | \psi_{final} \rangle|^2 = \left| \frac{1-i}{2} \right|^2 = \frac{1^2 + (-1)^2}{4} = \frac{2}{4} = \frac{1}{2}
 $$
 
-The sum of probabilities is ** $P(0) + P(1) = 1$ **, proving that this is a physically valid state. Upon measurement, 0 is obtained with 50% probability and 1 with 50% probability, but this is not mere classical randomness. To extract the "phase" hidden behind the state, let us transform the state vector into polar coordinate form on the Bloch sphere.
+The sum of probabilities is **$P(0) + P(1) = 1$** , proving that this is a physically valid state. Upon measurement, 0 is obtained with 50% probability and 1 with 50% probability, but this is not mere classical randomness. To extract the "phase" hidden behind the state, let us transform the state vector into polar coordinate form on the Bloch sphere.
 
-We factor out as a common overall factor the amplitude ** $1/\sqrt{2}$ ** and the global phase ** $e^{i\pi/4}$ ** ( ** $\frac{1+i}{\sqrt{2}}$ ** ):
+We factor out as a common overall factor the amplitude **$1/\sqrt{2}$** and the global phase **$e^{i\pi/4}$** ( **$\frac{1+i}{\sqrt{2}}$** ):
 
 $$
 |\psi_{final}\rangle = \frac{1}{\sqrt{2}} \left( \frac{1+i}{\sqrt{2}} |0\rangle + \frac{1-i}{\sqrt{2}} |1\rangle \right) = e^{i\pi/4} \left( \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}} e^{-i\pi/2} |1\rangle \right)
 $$
 
-Since the global phase ** $e^{i\pi/4}$ ** cancels out as ** $e^{-i\pi/4} e^{i\pi/4} = 1$ ** in the expectation value calculation of any observable (Hermitian operator), extracting only the physically meaningful relative phase part gives:
+Since the global phase **$e^{i\pi/4}$** cancels out as **$e^{-i\pi/4} e^{i\pi/4} = 1$** in the expectation value calculation of any observable (Hermitian operator), extracting only the physically meaningful relative phase part gives:
 
 $$
 |\psi_{final}'\rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{i}{\sqrt{2}} |1\rangle
 $$
 
-Comparing this with the spherical coordinate representation ** $\cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$ **, the Bloch vector is completely identified as pointing at polar angle (zenith angle) ** $\theta = \pi/2$ ** (on the equator) and azimuthal angle ** $\phi = -\pi/2$ ** (along the negative Y-axis). This state is commonly denoted as ** $|-i\rangle$ **.
+Comparing this with the spherical coordinate representation **$\cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$** , the Bloch vector is completely identified as pointing at polar angle (zenith angle) **$\theta = \pi/2$** (on the equator) and azimuthal angle **$\phi = -\pi/2$** (along the negative Y-axis). This state is commonly denoted as **$|-i\rangle$** .
 
-Let us reveal an even more profound fact. Using the formula for rotation gates via matrix exponentials derived earlier, we write out the matrix for a rotation by ** $\pi/2$ ** about the X-axis, ** $R_x(\pi/2)$ **:
+Let us reveal an even more profound fact. Using the formula for rotation gates via matrix exponentials derived earlier, we write out the matrix for a rotation by **$\pi/2$** about the X-axis, **$R_x(\pi/2)$** :
 
 $$
 R_x(\pi/2) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix}
 $$
 
-On the other hand, let us look again at the total matrix ** $U_{total}$ ** we calculated:
+On the other hand, let us look again at the total matrix **$U_{total}$** we calculated:
 
 $$
 U_{total} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & \frac{1-i}{1+i} \\ \frac{1-i}{1+i} & 1 \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix} = e^{i\pi/4} R_x(\pi/2)
 $$
 
-Astonishingly, a sequence of operations using a discrete set of gates around entirely different axes—" ** $H \rightarrow S \rightarrow H$ ** "—is proven to be mathematically equivalent, down to the last detail (up to a global phase), to a single "rotation of ** $\pi/2$ ** about the X-axis."
+Astonishingly, a sequence of operations using a discrete set of gates around entirely different axes—" **$H \rightarrow S \rightarrow H$** "—is proven to be mathematically equivalent, down to the last detail (up to a global phase), to a single "rotation of **$\pi/2$** about the X-axis."
 In this manner, quantum states traverse complex interference pathways that defy our classical intuition; yet, through the robust mathematical framework of linear algebra, their behavior can be completely governed and predicted without an error of a single bit.
 
 In the next chapter, building upon this strong foundation of single-qubit operations, we will step into the profound world of the tensor product, which causes the dimensionality of Hilbert space to explode exponentially, and multi-qubit gates, which generate what Einstein called "spooky action at a distance"—"quantum entanglement."
 
 # Chapter 5: Multi-Qubit Systems and Quantum Entanglement
 
-In the preceding chapters, we explored in detail the superposition property of single qubits and single-qubit gates described as rotation operations on the Bloch sphere. However, the true source of quantum computing's power to surpass classical computation—often referred to as "quantum supremacy" or "quantum advantage"—lies precisely in many-body systems where multiple qubits interact. In this chapter, we introduce **quantum entanglement**, the central and most mysterious concept of quantum information, providing a comprehensive explanation ranging from the rigorous mathematical description of multi-qubit systems to circuits that generate quantum entanglement, and up to the EPR paradox that shook the very foundations of physics.
+In the preceding chapters, we explored in detail the superposition property of single qubits and single-qubit gates described as rotation operations on the Bloch sphere. However, the true source of quantum computing's power to surpass classical computation—often referred to as "quantum supremacy" or "quantum advantage"—lies precisely in many-body systems where multiple qubits interact. In this chapter, we introduce **quantum entanglement** , the central and most mysterious concept of quantum information, providing a comprehensive explanation ranging from the rigorous mathematical description of multi-qubit systems to circuits that generate quantum entanglement, and up to the EPR paradox that shook the very foundations of physics.
 
 ---
 
 ## 5.1 Mathematical Description of Many-Body States via Tensor Product ($\otimes$)
 
-According to the postulates of quantum mechanics, when the state spaces of independent physical systems are described by Hilbert spaces ** $\mathcal{H}_A$ ** and ** $\mathcal{H}_B$ **, respectively, the state space of the combined composite system is given by the **tensor product** of the respective spaces, ** $\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$ **.
+According to the postulates of quantum mechanics, when the state spaces of independent physical systems are described by Hilbert spaces **$\mathcal{H}_A$** and **$\mathcal{H}_B$** , respectively, the state space of the combined composite system is given by the **tensor product** of the respective spaces, **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** .
 
-The state space of a single qubit is the two-dimensional complex vector space ** $\mathbb{C}^2$ **. Therefore, the state space of a system composed of $n$ qubits is the $2^n$-dimensional Hilbert space ** $(\mathbb{C}^2)^{\otimes n}$ **. This exponential increase of dimensionality with respect to the number of qubits $n$ is the mathematical foundation of quantum parallelism.
+The state space of a single qubit is the two-dimensional complex vector space **$\mathbb{C}^2$** . Therefore, the state space of a system composed of $n$ qubits is the $2^n$-dimensional Hilbert space **$(\mathbb{C}^2)^{\otimes n}$** . This exponential increase of dimensionality with respect to the number of qubits $n$ is the mathematical foundation of quantum parallelism.
 
 Let us consider a system composed of two qubits (qubit A and qubit B). The computational basis is defined as the tensor product of the basis states of each individual qubit:
 
@@ -973,13 +973,13 @@ $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 $$
 
-Using these, calculating state ** $|10\rangle$ **, for example, yields the following:
+Using these, calculating state **$|10\rangle$** , for example, yields the following:
 
 $$
 |10\rangle = |1\rangle \otimes |0\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \otimes \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \\ 1 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}
 $$
 
-In this four-dimensional vector space, the most general pure state ** $|\Psi\rangle$ ** of a two-qubit system is described as a linear combination (superposition) of these four basis vectors:
+In this four-dimensional vector space, the most general pure state **$|\Psi\rangle$** of a two-qubit system is described as a linear combination (superposition) of these four basis vectors:
 
 $$
 |\Psi\rangle = c_{00} |00\rangle + c_{01} |01\rangle + c_{10} |10\rangle + c_{11} |11\rangle
@@ -987,7 +987,7 @@ $$
 
 Here, $c_{ij} \in \mathbb{C}$ are probability amplitudes, and according to the Born rule, the state must be normalized, satisfying the normalization condition $\sum_{i,j \in \{0,1\}} |c_{ij}|^2 = 1$.
 
-Operators (gates) on composite systems are also constructed using tensor products. The operation of applying an operator ** $U_A$ ** to qubit A and an operator ** $U_B$ ** to qubit B is represented as the operator ** $U_A \otimes U_B$ ** acting on the overall composite system, and acts on any product state as follows:
+Operators (gates) on composite systems are also constructed using tensor products. The operation of applying an operator **$U_A$** to qubit A and an operator **$U_B$** to qubit B is represented as the operator **$U_A \otimes U_B$** acting on the overall composite system, and acts on any product state as follows:
 
 $$
 (U_A \otimes U_B)(|\psi\rangle_A \otimes |\phi\rangle_B) = (U_A |\psi\rangle_A) \otimes (U_B |\phi\rangle_B)
@@ -1000,13 +1000,13 @@ By linearity, this action extends to arbitrary superposition states.
 ## 5.2 Mathematical Representation of Bell States (Maximally Entangled States)
 
 States in multi-body quantum systems are broadly classified into two categories: "separable states" and "entangled states".
-When a state ** $|\Psi\rangle$ ** can be written as a simple tensor product of states of the individual subsystems, namely:
+When a state **$|\Psi\rangle$** can be written as a simple tensor product of states of the individual subsystems, namely:
 
 $$
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
 $$
 
-the state is said to be separable. Conversely, a state that **cannot** be expressed as the tensor product of any subsystem states is defined as an **entangled state**.
+the state is said to be separable. Conversely, a state that **cannot** be expressed as the tensor product of any subsystem states is defined as an **entangled state** .
 
 In a two-qubit system, the states possessing maximal quantum entanglement are called **Bell states** or EPR pairs. The Bell states consist of the following four orthogonal pure states, forming a complete orthonormal basis (the Bell basis) of the four-dimensional Hilbert space:
 
@@ -1026,8 +1026,8 @@ $$
 |\Psi^-\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle - |10\rangle \Big)
 $$
 
-Here, let us rigorously prove that the state ** $|\Phi^+\rangle$ ** is inseparable using a proof by contradiction.
-Suppose that ** $|\Phi^+\rangle$ ** is a separable state, and assume it can be expressed as the tensor product of unknown single-qubit states:
+Here, let us rigorously prove that the state **$|\Phi^+\rangle$** is inseparable using a proof by contradiction.
+Suppose that **$|\Phi^+\rangle$** is a separable state, and assume it can be expressed as the tensor product of unknown single-qubit states:
 
 $$
 |\Phi^+\rangle = (a|0\rangle + b|1\rangle)_A \otimes (c|0\rangle + d|1\rangle)_B
@@ -1049,11 +1049,11 @@ Comparing coefficients with the original definition yields the following system 
 From Equation 3 ($ad = 0$), either $a = 0$ or $d = 0$.
 If $a = 0$, then from Equation 1 we have $ac = 0$, which contradicts $ac = \frac{1}{\sqrt{2}}$.
 If $d = 0$, then from Equation 2 we have $bd = 0$, which contradicts $bd = \frac{1}{\sqrt{2}}$.
-Therefore, no such complex numbers $a, b, c, d$ exist, rigorously proving that the state ** $|\Phi^+\rangle$ ** can never be factorized into a product of two independent states.
+Therefore, no such complex numbers $a, b, c, d$ exist, rigorously proving that the state **$|\Phi^+\rangle$** can never be factorized into a product of two independent states.
 
 ### Reduced Density Matrix and Entanglement Entropy
 
-The fact that the Bell state is "maximally entangled" becomes even clearer by calculating the **reduced density matrix**, which describes the information of a subsystem. When the overall system is in the pure state ** $\rho = |\Phi^+\rangle \langle\Phi^+|$ **, we trace out (take the partial trace over) qubit B to find the local state of qubit A:
+The fact that the Bell state is "maximally entangled" becomes even clearer by calculating the **reduced density matrix** , which describes the information of a subsystem. When the overall system is in the pure state **$\rho = |\Phi^+\rangle \langle\Phi^+|$** , we trace out (take the partial trace over) qubit B to find the local state of qubit A:
 
 $$
 \rho_A = \text{Tr}_B(|\Phi^+\rangle \langle\Phi^+|) = \text{Tr}_B \left[ \frac{1}{2} (|00\rangle\langle00| + |00\rangle\langle11| + |11\rangle\langle00| + |11\rangle\langle11|) \right]
@@ -1113,9 +1113,9 @@ An important property of the CNOT gate is that it satisfies both Hermiticity ( $
 
 ## 5.4 Circuit for Generating Quantum Entanglement Using CNOT
 
-How, then, starting from a separable state, do we generate the maximally entangled Bell state? Here, we construct the canonical quantum circuit that generates ** $|\Phi^+\rangle$ ** from the quantum computer's initial state ** $|00\rangle$ **, and trace the state evolution step-by-step using mathematical equations.
+How, then, starting from a separable state, do we generate the maximally entangled Bell state? Here, we construct the canonical quantum circuit that generates **$|\Phi^+\rangle$** from the quantum computer's initial state **$|00\rangle$** , and trace the state evolution step-by-step using mathematical equations.
 
-The only required building blocks are the Hadamard gate ** $H$ ** acting on a single qubit and the aforementioned ** $\text{CNOT}$ ** gate. The Hadamard matrix is defined as follows:
+The only required building blocks are the Hadamard gate **$H$** acting on a single qubit and the aforementioned **$\text{CNOT}$** gate. The Hadamard matrix is defined as follows:
 
 $$
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
@@ -1123,7 +1123,7 @@ $$
 
 ### Step-by-Step State Evolution Calculation
 
-**Step 1:** Initialization
+ **Step 1:** Initialization
 The system starts in the initial state of the computational basis:
 
 
@@ -1131,8 +1131,8 @@ $$
 |\psi_0\rangle = |0\rangle_A \otimes |0\rangle_B = |00\rangle
 $$
 
-**Step 2:** Applying the Hadamard Gate to the Control Qubit (Qubit A)
-We apply the Hadamard gate only to qubit A, creating a superposition state. The operator acting on the composite system is ** $H \otimes I$ **.
+ **Step 2:** Applying the Hadamard Gate to the Control Qubit (Qubit A)
+We apply the Hadamard gate only to qubit A, creating a superposition state. The operator acting on the composite system is **$H \otimes I$** .
 
 $$
 |\psi_1\rangle = (H \otimes I) |00\rangle = (H|0\rangle_A) \otimes (I|0\rangle_B)
@@ -1148,7 +1148,7 @@ $$
 
 At this point, the state is still a separable state, because it can be factored into tensor product form.
 
-**Step 3:** Applying the CNOT Gate
+ **Step 3:** Applying the CNOT Gate
 Next, we apply the CNOT gate with qubit A as the control qubit and qubit B as the target qubit. Due to the linearity of the operator, the CNOT gate acts independently on each term in the superposition:
 
 $$
@@ -1165,7 +1165,7 @@ $$
 |\psi_2\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
 $$
 
-Remarkably, the Bell state ** $|\Phi^+\rangle$ ** has been generated from an initial separable state. By taking the superposition of 0 and 1 on the control qubit created by the Hadamard gate and feeding it into the CNOT gate, the flipping/non-flipping of the target qubit branches in lockstep with each state of the control qubit, forging entanglement across the system as a whole.
+Remarkably, the Bell state **$|\Phi^+\rangle$** has been generated from an initial separable state. By taking the superposition of 0 and 1 on the control qubit created by the Hadamard gate and feeding it into the CNOT gate, the flipping/non-flipping of the target qubit branches in lockstep with each state of the control qubit, forging entanglement across the system as a whole.
 
 With a similar circuit configuration, changing the initial state to $|01\rangle, |10\rangle, |11\rangle$ allows deterministic generation of the remaining Bell states $|\Psi^+\rangle, |\Phi^-\rangle, |\Psi^-\rangle$, respectively.
 
@@ -1202,8 +1202,8 @@ graph LR
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
-    style Dot fill:#333,stroke:#333,shape:circle,r:5px
-    style X fill:#fff,stroke:#333,stroke-width:2px,shape:circle
+    style Dot fill:#333,stroke:#333
+    style X fill:#fff,stroke:#333,stroke-width:2px
 ```
 *(Note: The diagram above depicts the logical connections. The solid horizontal lines indicate the flow of time for each qubit (quantum wires), showing the structure where the control qubit passes through the `H Gate` and controls the target qubit's `⊕` at the `●` position. As the output of the overall circuit, the Bell state $|\Phi^+\rangle$ is obtained.)*
 
@@ -1211,9 +1211,9 @@ graph LR
 
 ## 5.5 The EPR Paradox and Non-Locality
 
-It was the landmark 1935 paper by Albert Einstein, Boris Podolsky, and Nathan Rosen—commonly known as the **EPR paper**—that demonstrated that the concept of quantum entanglement is not merely a mathematical curiosity, but poses profound questions to the very foundations of physics. They argued that because quantum mechanical descriptions conflict with "local realism", quantum mechanics must be an incomplete theory (requiring hidden variables).
+It was the landmark 1935 paper by Albert Einstein, Boris Podolsky, and Nathan Rosen—commonly known as the **EPR paper** —that demonstrated that the concept of quantum entanglement is not merely a mathematical curiosity, but poses profound questions to the very foundations of physics. They argued that because quantum mechanical descriptions conflict with "local realism", quantum mechanics must be an incomplete theory (requiring hidden variables).
 
-Let us consider a thought experiment where two observers, Alice and Bob, share the Bell state generated earlier, ** $|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$ **. Suppose Alice holds the first qubit and Bob holds the second qubit, and they separate to opposite ends of the universe (for example, Earth and the Andromeda Galaxy).
+Let us consider a thought experiment where two observers, Alice and Bob, share the Bell state generated earlier, **$|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$** . Suppose Alice holds the first qubit and Bob holds the second qubit, and they separate to opposite ends of the universe (for example, Earth and the Andromeda Galaxy).
 
 In this state, the measurement outcome of each individual qubit is inherently random. If Alice measures her qubit in the computational basis $\{|0\rangle, |1\rangle\}$, she obtains $0$ (state $|0\rangle$) with 50% probability and $1$ (state $|1\rangle$) with 50% probability.
 
@@ -1228,7 +1228,7 @@ Einstein famously termed this "spooky action at a distance" (*spukhafte Fernwirk
 Does quantum mechanics then contradict the theory of relativity? In short, it does not.
 This apparent paradox is resolved by the **no-signaling theorem** (or no-communication theorem). While Bob's state is instantaneously determined upon Alice's measurement, it is fundamentally impossible for Alice to control whether she obtains $0$ or $1$. From Bob's perspective, there is no way of knowing that Alice performed a measurement, and the outcome of measuring his own qubit remains completely random (0 or 1 with 50% probability each). As proved in the section on reduced density matrices, no matter what measurement basis Alice chooses, Bob's local density matrix $\rho_B$ remains completely unchanged. Consequently, entanglement cannot be used to transmit "meaningful information" faster than light.
 
-Nevertheless, the striking correlations exhibited by quantum entanglement could not be accommodated within the framework of classical physics. In 1964, John Stewart Bell derived **Bell's inequality**. Bell mathematically proved that "if the world is described by local realism (hidden-variable theories as envisioned by Einstein), the strength of correlations when Alice and Bob perform measurements along different axes cannot exceed a certain upper bound (specifically, $|S| \leq 2$ in the CHSH inequality)".
+Nevertheless, the striking correlations exhibited by quantum entanglement could not be accommodated within the framework of classical physics. In 1964, John Stewart Bell derived **Bell's inequality** . Bell mathematically proved that "if the world is described by local realism (hidden-variable theories as envisioned by Einstein), the strength of correlations when Alice and Bob perform measurements along different axes cannot exceed a certain upper bound (specifically, $|S| \leq 2$ in the CHSH inequality)".
 
 Quantum mechanics predicts that this bound is violated in specific settings ($|S| = 2\sqrt{2}$). Subsequent precision physics experiments by Alain Aspect and others demonstrated the violation of Bell's inequality, establishing that the universe we inhabit is **not** locally realistic. Non-local correlation via quantum entanglement is a universal physical phenomenon that genuinely exists in nature.
 
@@ -1240,7 +1240,7 @@ In this chapter, we will delve deep into the most important and fundamental prot
 
 ## 6.1 No-Cloning Theorem
 
-In classical computers, copying (replicating) data is an extremely trivial operation. Bit strings are easily replicated and stored in countless memory devices. However, in the world governed by quantum mechanics, there exists an astonishing theorem stating that ** "it is impossible to create an exact copy of an unknown quantum state" **. This is the "No-Cloning Theorem," independently proven by Wootters and Zurek, and by Dieks in 1982.
+In classical computers, copying (replicating) data is an extremely trivial operation. Bit strings are easily replicated and stored in countless memory devices. However, in the world governed by quantum mechanics, there exists an astonishing theorem stating that **"it is impossible to create an exact copy of an unknown quantum state"** . This is the "No-Cloning Theorem," independently proven by Wootters and Zurek, and by Dieks in 1982.
 
 This theorem is the fundamental principle that guarantees the security of quantum cryptography (quantum key distribution), and at the same time, it is the reason why quantum error correction is forced to take a completely different and more complex approach compared to classical repetition codes (simple majority vote).
 
@@ -1248,21 +1248,21 @@ This theorem is the fundamental principle that guarantees the security of quantu
 
 The proof of the no-cloning theorem is derived solely from the very basic properties of quantum mechanics: linearity and unitarity.
 
-Suppose there existed a "universal quantum cloning machine" that could copy an unknown quantum state ** $|\psi\rangle$ **. This cloning machine would take the original state to be copied ** $|\psi\rangle$ ** and an initialized target qubit (a state equivalent to a blank notebook) ** $|0\rangle$ ** as inputs, and should produce two identical states ** $|\psi\rangle \otimes |\psi\rangle$ ** (abbreviated as ** $|\psi\rangle |\psi\rangle$ **) as the output.
+Suppose there existed a "universal quantum cloning machine" that could copy an unknown quantum state **$|\psi\rangle$** . This cloning machine would take the original state to be copied **$|\psi\rangle$** and an initialized target qubit (a state equivalent to a blank notebook) **$|0\rangle$** as inputs, and should produce two identical states **$|\psi\rangle \otimes |\psi\rangle$** (abbreviated as **$|\psi\rangle |\psi\rangle$** ) as the output.
 
-In quantum mechanics, any physical evolution of a closed system is described by a unitary operator ** $U$ **. Therefore, the operation of this cloning machine is defined as a unitary transformation ** $U$ ** that satisfies the following equation:
+In quantum mechanics, any physical evolution of a closed system is described by a unitary operator **$U$** . Therefore, the operation of this cloning machine is defined as a unitary transformation **$U$** that satisfies the following equation:
 
 $$
 U (|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle
 $$
 
-Since we assume this holds for "any" state, it must also function similarly for another arbitrary quantum state ** $|\phi\rangle$ **:
+Since we assume this holds for "any" state, it must also function similarly for another arbitrary quantum state **$|\phi\rangle$** :
 
 $$
 U (|\phi\rangle \otimes |0\rangle) = |\phi\rangle \otimes |\phi\rangle
 $$
 
-Now, let's take the inner product (scalar product) of these two equations. We will use the property of the unitary operator ** $U$ ** ( ** $U^\dagger U = I$ ** ). The inner product of the left-hand sides is as follows:
+Now, let's take the inner product (scalar product) of these two equations. We will use the property of the unitary operator **$U$** ( **$U^\dagger U = I$** ). The inner product of the left-hand sides is as follows:
 
 $$
 \begin{aligned}
@@ -1274,7 +1274,7 @@ $$
 \end{aligned}
 $$
 
-(Here, we used ** $\langle 0 | 0 \rangle = 1$ **.)
+(Here, we used **$\langle 0 | 0 \rangle = 1$** .)
 
 On the other hand, the inner product of the copied states on the right-hand sides is as follows:
 
@@ -1293,7 +1293,7 @@ $$
 \langle \psi | \phi \rangle = (\langle \psi | \phi \rangle)^2
 $$
 
-The conditions for this equation ** $x = x^2$ ** to hold within the range of complex numbers are only ** $x = 0$ ** or ** $x = 1$ **. That is,
+The conditions for this equation **$x = x^2$** to hold within the range of complex numbers are only **$x = 0$** or **$x = 1$** . That is,
 
 $$
 \langle \psi | \phi \rangle = 0 \quad \text{or} \quad \langle \psi | \phi \rangle = 1
@@ -1304,7 +1304,7 @@ What this means is that a unitary transformation capable of correctly replicatin
 ### Proof from Linearity (Proof by Contradiction)
 
 It is also possible to approach this from the linearity of quantum mechanics (the principle of superposition).
-Consider a unitary operator ** $U$ ** that can clone two orthogonal basis states ** $|0\rangle$ ** and ** $|1\rangle$ **.
+Consider a unitary operator **$U$** that can clone two orthogonal basis states **$|0\rangle$** and **$|1\rangle$** .
 
 $$
 U |0\rangle |0\rangle = |0\rangle |0\rangle
@@ -1314,7 +1314,7 @@ $$
 U |1\rangle |0\rangle = |1\rangle |1\rangle
 $$
 
-So far, there is no problem. This is equivalent to cloning classical bits 0 and 1. Now, what happens if we try to copy an unknown state that is a superposition of these, ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ **? From the linearity of time evolution by a unitary operator, we get the following:
+So far, there is no problem. This is equivalent to cloning classical bits 0 and 1. Now, what happens if we try to copy an unknown state that is a superposition of these, **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** ? From the linearity of time evolution by a unitary operator, we get the following:
 
 $$
 \begin{aligned}
@@ -1334,7 +1334,7 @@ $$
 \end{aligned}
 $$
 
-The result derived by linearity, ** $\alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle$ **, is clearly different from the desired cloned state ** $|\psi\rangle \otimes |\psi\rangle$ ** (the cross terms ** $|0\rangle |1\rangle$ ** and ** $|1\rangle |0\rangle$ ** are missing). This once again demonstrates that it is impossible to copy an unknown superposition state.
+The result derived by linearity, **$\alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle$** , is clearly different from the desired cloned state **$|\psi\rangle \otimes |\psi\rangle$** (the cross terms **$|0\rangle |1\rangle$** and **$|1\rangle |0\rangle$** are missing). This once again demonstrates that it is impossible to copy an unknown superposition state.
 
 ---
 
@@ -1347,7 +1347,7 @@ It should be noted here that the physical particle itself does not move through 
 ### Protocol Setup and Initial State
 
 Let the sender be Alice and the receiver be Bob.
-Alice holds an unknown single-qubit state ** $|\psi\rangle$ ** that she wants to send to Bob.
+Alice holds an unknown single-qubit state **$|\psi\rangle$** that she wants to send to Bob.
 
 $$
 |\psi\rangle_C = \alpha|0\rangle_C + \beta|1\rangle_C \quad (|\alpha|^2 + |\beta|^2 = 1)
@@ -1365,7 +1365,7 @@ $$
 
 The subscript $A$ represents the qubit held by Alice, and $B$ represents the qubit held by Bob.
 
-The initial state of the entire system ** $|\Psi_0\rangle$ ** is described as the tensor product of the state Alice wants to transfer and the shared EPR pair.
+The initial state of the entire system **$|\Psi_0\rangle$** is described as the tensor product of the state Alice wants to transfer and the shared EPR pair.
 
 $$
 \begin{aligned}
@@ -1379,8 +1379,8 @@ $$
 
 Alice has qubits $C$ and $A$ in her possession. She performs a joint measurement on these two qubits known as a "Bell measurement." In terms of circuits, this corresponds to applying a CNOT gate followed by a Hadamard gate, and then measuring in the standard basis (computational basis).
 
-**Step 1: Application of CNOT Gate**
-Alice applies a CNOT (Controlled-NOT) gate ** $CX_{CA}$ **, using qubit $C$ as the control bit and qubit $A$ as the target bit. The CNOT gate flips the target bit only when the control bit is $|1\rangle$.
+ **Step 1: Application of CNOT Gate** 
+Alice applies a CNOT (Controlled-NOT) gate **$CX_{CA}$** , using qubit $C$ as the control bit and qubit $A$ as the target bit. The CNOT gate flips the target bit only when the control bit is $|1\rangle$.
 
 $$
 \begin{aligned}
@@ -1392,8 +1392,8 @@ $$
 
 (In the third term, $|0\rangle_A$ is flipped to $|1\rangle_A$, and in the fourth term, $|1\rangle_A$ is flipped to $|0\rangle_A$.)
 
-**Step 2: Application of Hadamard Gate**
-Next, Alice applies a Hadamard gate ** $H_C$ ** to qubit $C$. The Hadamard transformation converts $|0\rangle \to \frac{|0\rangle+|1\rangle}{\sqrt{2}}$ and $|1\rangle \to \frac{|0\rangle-|1\rangle}{\sqrt{2}}$.
+ **Step 2: Application of Hadamard Gate** 
+Next, Alice applies a Hadamard gate **$H_C$** to qubit $C$. The Hadamard transformation converts $|0\rangle \to \frac{|0\rangle+|1\rangle}{\sqrt{2}}$ and $|1\rangle \to \frac{|0\rangle-|1\rangle}{\sqrt{2}}$.
 
 $$
 \begin{aligned}
@@ -1416,26 +1416,26 @@ $$
 
 What is remarkable here is that depending on Alice's measurement result, Bob's qubit $B$ is projected into different states respectively.
 
-**Step 3: Measurement and Classical Communication**
+ **Step 3: Measurement and Classical Communication** 
 Alice observes (measures) her qubits $C$ and $A$. The possible results and their probabilities are as follows. Each occurs with a 25% probability.
 
-- When the measurement result is `00`: Bob's qubit becomes ** $\alpha|0\rangle + \beta|1\rangle$ **, which is exactly the original state ** $|\psi\rangle$ **.
-- When the measurement result is `01`: Bob's qubit becomes ** $\alpha|1\rangle + \beta|0\rangle$ **. This is the state where a Pauli-X gate has been applied to the original state, ** $X|\psi\rangle$ **.
-- When the measurement result is `10`: Bob's qubit becomes ** $\alpha|0\rangle - \beta|1\rangle$ **. This is the state where a Pauli-Z gate has been applied to the original state, ** $Z|\psi\rangle$ **.
-- When the measurement result is `11`: Bob's qubit becomes ** $\alpha|1\rangle - \beta|0\rangle$ **. This is the state where a Pauli-X gate has been applied followed by a Pauli-Z gate to the original state, ** $ZX|\psi\rangle$ ** (or $Y|\psi\rangle$ ignoring a global phase).
+- When the measurement result is `00`: Bob's qubit becomes **$\alpha|0\rangle + \beta|1\rangle$** , which is exactly the original state **$|\psi\rangle$** .
+- When the measurement result is `01`: Bob's qubit becomes **$\alpha|1\rangle + \beta|0\rangle$** . This is the state where a Pauli-X gate has been applied to the original state, **$X|\psi\rangle$** .
+- When the measurement result is `10`: Bob's qubit becomes **$\alpha|0\rangle - \beta|1\rangle$** . This is the state where a Pauli-Z gate has been applied to the original state, **$Z|\psi\rangle$** .
+- When the measurement result is `11`: Bob's qubit becomes **$\alpha|1\rangle - \beta|0\rangle$** . This is the state where a Pauli-X gate has been applied followed by a Pauli-Z gate to the original state, **$ZX|\psi\rangle$** (or $Y|\psi\rangle$ ignoring a global phase).
 
 Alice transmits this 2-bit measurement result (classical information) to Bob using a classical communication channel such as a telephone or the internet. Because classical communication is used, the transfer of the state never exceeds the speed of light.
 
 ### Bob's Recovery Operations
 
-Based on the 2 bits of classical information received from Alice, Bob applies Pauli gates (or does nothing) to his qubit, perfectly recovering the original state ** $|\psi\rangle$ **.
+Based on the 2 bits of classical information received from Alice, Bob applies Pauli gates (or does nothing) to his qubit, perfectly recovering the original state **$|\psi\rangle$** .
 
 - Receives `00`: No operation ( $I$ )
 - Receives `01`: Applies Pauli-X gate ( $X \cdot X = I$ )
 - Receives `10`: Applies Pauli-Z gate ( $Z \cdot Z = I$ )
 - Receives `11`: Applies Pauli-X gate, followed by Pauli-Z gate ( $Z \cdot X \cdot ZX = I$ )
 
-As a result, the exact same state ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ ** that Alice possessed is reconstructed in Bob's hands. Since Alice's original qubit is destroyed by the measurement, the information has been perfectly transferred (teleported).
+As a result, the exact same state **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** that Alice possessed is reconstructed in Bob's hands. Since Alice's original qubit is destroyed by the measurement, the information has been perfectly transferred (teleported).
 
 ### Representation by Quantum Circuit Diagram
 
@@ -1466,8 +1466,8 @@ graph LR
     gateZ --> out["|ψ⟩ (Recovered)"]
     end
     
-    M1 -. "Classical Comm (0/1)" .-> gateX
-    M2 -. "Classical Comm (0/1)" .-> gateZ
+    M1 -.->|"Classical Comm (0/1)"| gateX
+    M2 -.->|"Classical Comm (0/1)"| gateZ
 
     classDef quantum fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
     classDef classical fill:#fbe9e7,stroke:#bf360c,stroke-width:2px,stroke-dasharray: 5 5;
@@ -1492,10 +1492,9 @@ $$
 $$
 
 Alice wishes to send a 2-bit classical message $b_1 b_2 \in \{00, 01, 10, 11\}$ to Bob.
-Depending on the message she wants to send, Alice performs specific single-qubit gate operations **only on the qubit A in her possession**.
+Depending on the message she wants to send, Alice performs specific single-qubit gate operations **only on the qubit A in her possession** .
 
-1. **If the message is `00`:**
-   Alice does nothing (applies the identity operator $I$).
+1. **If the message is `00`:** Alice does nothing (applies the identity operator $I$).
    The overall state does not change.
    
 
@@ -1503,24 +1502,21 @@ $$
 |\Psi_{00}\rangle = (I \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
 $$
 
-2. **If the message is `01`:**
-   Alice applies the Pauli-Z gate.
+2. **If the message is `01`:** Alice applies the Pauli-Z gate.
    
 
 $$
 |\Psi_{01}\rangle = (Z \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (Z|0\rangle|0\rangle + Z|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle) = |\Phi^-\rangle
 $$
 
-3. **If the message is `10`:**
-   Alice applies the Pauli-X gate.
+3. **If the message is `10`:** Alice applies the Pauli-X gate.
    
 
 $$
 |\Psi_{10}\rangle = (X \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (X|0\rangle|0\rangle + X|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|10\rangle + |01\rangle) = |\Psi^+\rangle
 $$
 
-4. **If the message is `11`:**
-   Alice applies the Pauli-Z gate, followed by the Pauli-X gate (equivalent to $iY$).
+4. **If the message is `11`:** Alice applies the Pauli-Z gate, followed by the Pauli-X gate (equivalent to $iY$).
    
 
 $$
@@ -1528,11 +1524,11 @@ $$
 $$
 
 
-   (The overall negative sign is a global phase and thus does not affect measurement probabilities, but for convenience here, we adjust the sign to associate it with ** $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ **.)
+   (The overall negative sign is a global phase and thus does not affect measurement probabilities, but for convenience here, we adjust the sign to associate it with **$|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$** .)
 
 Alice then sends her operated qubit A to Bob through a quantum communication channel (such as an optical fiber).
 
-A remarkable fact to note: Alice has **physically transmitted only 1 qubit** to Bob. Furthermore, she hasn't touched Bob's qubit at all. However, as a result of Alice's operation, the state of the entire system has deterministically transitioned to one of four mutually orthogonal quantum states (called the **Bell basis**).
+A remarkable fact to note: Alice has **physically transmitted only 1 qubit** to Bob. Furthermore, she hasn't touched Bob's qubit at all. However, as a result of Alice's operation, the state of the entire system has deterministically transitioned to one of four mutually orthogonal quantum states (called the **Bell basis** ).
 
 ### Bob's Decoding and Bell Measurement
 
@@ -1542,23 +1538,19 @@ That is, he applies a CNOT gate with qubit A as the control bit and B as the tar
 
 Let's verify the mathematical development for each case.
 
-- **When the state is $|\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)$ (message `00`):**
-  Applying CNOT yields $\frac{1}{\sqrt{2}} (|00\rangle + |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |0\rangle$.
+- **When the state is $|\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)$ (message `00`):** Applying CNOT yields $\frac{1}{\sqrt{2}} (|00\rangle + |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |0\rangle$.
   Applying Hadamard to A yields $|0\rangle |0\rangle$.
   When Bob measures, he obtains `00` with certainty.
 
-- **When the state is $|\Phi^-\rangle = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle)$ (message `01`):**
-  Applying CNOT yields $\frac{1}{\sqrt{2}} (|00\rangle - |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |0\rangle$.
+- **When the state is $|\Phi^-\rangle = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle)$ (message `01`):** Applying CNOT yields $\frac{1}{\sqrt{2}} (|00\rangle - |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |0\rangle$.
   Applying Hadamard to A yields $|1\rangle |0\rangle$.
   When Bob measures, he obtains `10` with certainty. (*Note: The mapping of bits to Alice's operations depends on the circuit definition, but they are uniquely distinguishable.)
 
-- **When the state is $|\Psi^+\rangle = \frac{1}{\sqrt{2}} (|01\rangle + |10\rangle)$ (message `10`):**
-  Applying CNOT yields $\frac{1}{\sqrt{2}} (|01\rangle + |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |1\rangle$.
+- **When the state is $|\Psi^+\rangle = \frac{1}{\sqrt{2}} (|01\rangle + |10\rangle)$ (message `10`):** Applying CNOT yields $\frac{1}{\sqrt{2}} (|01\rangle + |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |1\rangle$.
   Applying Hadamard to A yields $|0\rangle |1\rangle$.
   When Bob measures, he obtains `01` with certainty.
 
-- **When the state is $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ (message `11`):**
-  Applying CNOT yields $\frac{1}{\sqrt{2}} (|01\rangle - |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |1\rangle$.
+- **When the state is $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ (message `11`):** Applying CNOT yields $\frac{1}{\sqrt{2}} (|01\rangle - |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |1\rangle$.
   Applying Hadamard to A yields $|1\rangle |1\rangle$.
   When Bob measures, he obtains `11` with certainty.
 
@@ -1584,32 +1576,32 @@ In this chapter, we will rigorously uncover the full mathematical picture of thi
 
 ## 7.2 Problem Setup: Constant Function or Balanced Function?
 
-First, let us define the problem that the algorithm is designed to solve. Suppose we are given a black box (an oracle). This oracle takes an $n$-bit input $x \in \{0, 1\}^n$ and computes a function ** $f$ ** that returns a 1-bit output $f(x) \in \{0, 1\}$.
+First, let us define the problem that the algorithm is designed to solve. Suppose we are given a black box (an oracle). This oracle takes an $n$-bit input $x \in \{0, 1\}^n$ and computes a function **$f$** that returns a 1-bit output $f(x) \in \{0, 1\}$.
 
-Here, this function ** $f$ ** comes with a strong promise that it strictly satisfies one of the following two properties:
+Here, this function **$f$** comes with a strong promise that it strictly satisfies one of the following two properties:
 
-1. **Constant Function**: For any input $x$, it always returns $f(x) = 0$ or always returns $f(x) = 1$.
-2. **Balanced Function**: Of all inputs $x$, it returns $f(x) = 0$ for exactly half, and returns $f(x) = 1$ for the remaining half.
+1. **Constant Function** : For any input $x$, it always returns $f(x) = 0$ or always returns $f(x) = 1$.
+2. **Balanced Function** : Of all inputs $x$, it returns $f(x) = 0$ for exactly half, and returns $f(x) = 1$ for the remaining half.
 
-Our goal is to determine whether the given oracle ** $f$ ** is a constant function or a balanced function, with the minimum number of queries to the oracle.
+Our goal is to determine whether the given oracle **$f$** is a constant function or a balanced function, with the minimum number of queries to the oracle.
 
 ### Limits in Classical Computing
 
-Consider solving this problem with a classical computer. There are a total of $N = 2^n$ possible input patterns for the function ** $f$ **.
+Consider solving this problem with a classical computer. There are a total of $N = 2^n$ possible input patterns for the function **$f$** .
 
 Let us assume the worst-case scenario. Suppose that for the first $2^{n-1}$ consecutive queries (that is, half of the total), the same output (e.g., all $0$) is obtained for the inputs. At this point, both possibilities remain open: the function could be a constant function (the remaining half are all $0$) or a balanced function (the remaining half are all $1$).
 
-Therefore, for a classical computer to determine with 100% certainty whether the function is a constant function or a balanced function, ** in the worst case $2^{n-1} + 1$ queries ** are required. This number of queries increases exponentially with respect to the number of input bits $n$. In other words, the classical computational complexity (query complexity) is $O(2^n)$.
+Therefore, for a classical computer to determine with 100% certainty whether the function is a constant function or a balanced function, **in the worst case $2^{n-1} + 1$ queries** are required. This number of queries increases exponentially with respect to the number of input bits $n$. In other words, the classical computational complexity (query complexity) is $O(2^n)$.
 
-Remarkably, by using quantum computing, this problem can be correctly determined with 100% probability in ** just 1 query **. This is the true essence of quantum advantage.
+Remarkably, by using quantum computing, this problem can be correctly determined with 100% probability in **just 1 query** . This is the true essence of quantum advantage.
 
 ## 7.3 Quantum Oracle and the Geometry of Phase Kickback
 
-To construct a quantum algorithm, we must first reformulate the classical function ** $f(x)$ ** into a form that satisfies the requirements of quantum mechanics (unitarity = reversibility). For this purpose, the "Quantum Oracle" is introduced.
+To construct a quantum algorithm, we must first reformulate the classical function **$f(x)$** into a form that satisfies the requirements of quantum mechanics (unitarity = reversibility). For this purpose, the "Quantum Oracle" is introduced.
 
 ### Quantum Oracle $U_f$
 
-We prepare an input register ( $n$ qubits) and a target register ( $1$ qubit). The unitary operator ** $U_f$ ** representing the oracle acts on the computational basis states as follows:
+We prepare an input register ( $n$ qubits) and a target register ( $1$ qubit). The unitary operator **$U_f$** representing the oracle acts on the computational basis states as follows:
 
 $$
 U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle
@@ -1625,7 +1617,7 @@ $$
 |-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}
 $$
 
-We input this state into the target register and apply the oracle ** $U_f$ **:
+We input this state into the target register and apply the oracle **$U_f$** :
 
 $$
 U_f |x\rangle |-\rangle = U_f \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
@@ -1651,7 +1643,7 @@ $$
 U_f |x\rangle |-\rangle = (-1)^{f(x)} |x\rangle |-\rangle
 $$
 
-This is an astonishing result. While the state of the target register $|-\rangle$ has not changed at all, the evaluation result of the function ** $f(x)$ ** is "kicked back" to the input register ** $|x\rangle$ ** side as the "sign of the phase". This allows information to be encoded into the phase of the amplitude.
+This is an astonishing result. While the state of the target register $|-\rangle$ has not changed at all, the evaluation result of the function **$f(x)$** is "kicked back" to the input register **$|x\rangle$** side as the "sign of the phase". This allows information to be encoded into the phase of the amplitude.
 
 ## 7.4 The Deutsch-Jozsa Algorithm: Circuit Diagram and Full Mathematical Expansion
 
@@ -1696,13 +1688,13 @@ $$
 
 ### Step 3: Application of the Quantum Oracle (Phase Kickback)
 
-Here we apply the oracle ** $U_f$ **. Due to the phase kickback effect proven in the previous section, $(-1)^{f(x)}$ is multiplied onto the phase of each basis state $|x\rangle$:
+Here we apply the oracle **$U_f$** . Due to the phase kickback effect proven in the previous section, $(-1)^{f(x)}$ is multiplied onto the phase of each basis state $|x\rangle$:
 
 $$
 |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} (-1)^{f(x)} |x\rangle |-\rangle
 $$
 
-At this point, all information of the evaluation results ** $f(x)$ ** (all $2^n$ values) has been embedded in parallel as the respective phases of the superposition state in a single operation. This is called "Quantum Parallelism."
+At this point, all information of the evaluation results **$f(x)$** (all $2^n$ values) has been embedded in parallel as the respective phases of the superposition state in a single operation. This is called "Quantum Parallelism."
 
 ### Step 4: Inducing Interference on the Input Register
 
@@ -1733,7 +1725,7 @@ This is an extraordinarily important equation representing the quantum state imm
 ### Step 5: Measurement and Analysis of Results
 
 At the end of the algorithm, we measure the $n$ qubits of the input register in the computational basis.
-What we are interested in is the probability that all qubits are measured as $0$, that is, the state ** $|0\rangle^{\otimes n}$ ** is measured. Let us consider the case where $z = 00\dots0$ in the above equation. In this case, since $x \cdot 0 = 0$ for any $x$, the amplitude (coefficient) of the state ** $|0\rangle^{\otimes n}$ ** is calculated as follows:
+What we are interested in is the probability that all qubits are measured as $0$, that is, the state **$|0\rangle^{\otimes n}$** is measured. Let us consider the case where $z = 00\dots0$ in the above equation. In this case, since $x \cdot 0 = 0$ for any $x$, the amplitude (coefficient) of the state **$|0\rangle^{\otimes n}$** is calculated as follows:
 
 $$
 \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \sum_{x \in \{0,1\}^n} (-1)^{f(x)}
@@ -1754,7 +1746,7 @@ P(00\dots0) = | \pm 1 |^2 = 1
 $$
 
 
-In other words, ** when the function is a constant function, $|0\rangle^{\otimes n}$ is measured with 100% probability **.
+In other words, **when the function is a constant function, $|0\rangle^{\otimes n}$ is measured with 100% probability** .
 
 #### Case 2: When the function $f$ is a Balanced Function
 There are exactly equal numbers of $x$ for which $f(x) = 0$ and $x$ for which $f(x) = 1$ (each numbering $2^{n-1}$).
@@ -1772,7 +1764,7 @@ P(00\dots0) = | 0 |^2 = 0
 $$
 
 
-In other words, ** when the function is a balanced function, the probability of measuring $|0\rangle^{\otimes n}$ is 0%, and a state with at least one bit equal to $1$ is always measured **.
+In other words, **when the function is a balanced function, the probability of measuring $|0\rangle^{\otimes n}$ is 0%, and a state with at least one bit equal to $1$ is always measured** .
 
 ## 7.6 Concrete Example: Complete Trace for the Case of $n=2$
 
@@ -1818,10 +1810,10 @@ Rearranging the remaining terms, the final state is $|11\rangle$ (in this exampl
 
 The marvel of the Deutsch-Jozsa algorithm lies in having deployed $2^n$ pieces of information into phase space via phase kickback, and controlling the "Interference" generated by the final Hadamard transform.
 
-- In the case of a **Constant Function**: Waves from all paths undergo "Constructive Interference", and the amplitude is 100% concentrated on the state ** $|0\rangle^{\otimes n}$ **.
-- In the case of a **Balanced Function**: Positive and negative waves undergo "Destructive Interference", and completely cancel out the amplitude of the state ** $|0\rangle^{\otimes n}$ **.
+- In the case of a **Constant Function** : Waves from all paths undergo "Constructive Interference", and the amplitude is 100% concentrated on the state **$|0\rangle^{\otimes n}$** .
+- In the case of a **Balanced Function** : Positive and negative waves undergo "Destructive Interference", and completely cancel out the amplitude of the state **$|0\rangle^{\otimes n}$** .
 
-With this exquisite mathematical structure, a problem that required at worst $O(2^n)$ queries (specifically $2^{n-1} + 1$ queries) on a classical computer can be solved by a quantum computer in ** just a single query ( $O(1)$ ) **, and deterministically (with 100% accuracy).
+With this exquisite mathematical structure, a problem that required at worst $O(2^n)$ queries (specifically $2^{n-1} + 1$ queries) on a classical computer can be solved by a quantum computer in **just a single query ( $O(1)$ )** , and deterministically (with 100% accuracy).
 
 The fact demonstrated in this chapter stands as an exceptionally significant milestone in human history, proving that by applying the principles of quantum mechanics to information processing, the physical limits of classical information theory can be broken.
 
@@ -1922,7 +1914,7 @@ $$
 $$
 
 
-For an arbitrary quantum state ** $|\psi\rangle$ **, it acts by linearity as follows:
+For an arbitrary quantum state **$|\psi\rangle$** , it acts by linearity as follows:
 
 
 $$
@@ -1978,8 +1970,8 @@ flowchart LR
     Measure --> Classical["Classical post-processing by continued fraction expansion (Derivation of r)"]
 ```
 
-**[Step 1: Initialization and Generation of Superposition]**
-The entire system is set to the initial state ** $|\psi_0\rangle$ ** $= |0\rangle^{\otimes t} |0\rangle^{\otimes L}$.
+ **[Step 1: Initialization and Generation of Superposition]** 
+The entire system is set to the initial state **$|\psi_0\rangle$** $= |0\rangle^{\otimes t} |0\rangle^{\otimes L}$.
 Next, a Hadamard gate $H^{\otimes t}$ is applied to all qubits in the first register, generating an equal-probability superposition of an exponentially large number of states.
 
 
@@ -1990,7 +1982,7 @@ $$
 
 Here, the first register simultaneously holds all integer states from $0$ to $M-1$.
 
-**[Step 2: Function Evaluation by Quantum Oracle]**
+ **[Step 2: Function Evaluation by Quantum Oracle]** 
 The quantum oracle $U_f$ is applied, computing the function $f(x) = a^x \bmod N$ while remaining in the superposition state, and storing the result in the second register.
 
 
@@ -1999,9 +1991,9 @@ $$
 $$
 
 
-This state ** $|\psi_2\rangle$ ** is a state where the input $x$ and output $f(x)$ are strongly entangled.
+This state **$|\psi_2\rangle$** is a state where the input $x$ and output $f(x)$ are strongly entangled.
 
-**[Step 3: Observation of the Second Register (Conceptual)]**
+ **[Step 3: Observation of the Second Register (Conceptual)]** 
 To facilitate theoretical understanding, let us assume here that the second register is observed (in the actual algorithm, the mathematical consequences are exactly the same even if the observation is omitted). By observation, the second register collapses to a specific value $y = a^{x_0} \bmod N$. Here, $x_0$ is a minimum offset value satisfying $0 \le x_0 < r$.
 At this time, the first register instantaneously collapses to a superposition state of "all inputs $x$ such that the output of the function $f(x)$ becomes $y$." Since the function has a period $r$, such $x$ are lined up at equal intervals as $x_0, x_0 + r, x_0 + 2r, \dots$.
 
@@ -2014,7 +2006,7 @@ $$
 Here, $A$ is the number of terms included in the superposition, and $A \approx M/r$.
 Focusing on the first register, this is a comb-like probability distribution state with period $r$. However, even if this state is measured directly, a random $x_0 + mr$ is obtained with equal probability, and since the offset $x_0$ is unknown, the period $r$ cannot be determined. This is where the QFT is required.
 
-**[Step 4: Application of the Inverse Quantum Fourier Transform]**
+ **[Step 4: Application of the Inverse Quantum Fourier Transform]** 
 The Inverse Quantum Fourier Transform (QFT$^\dagger$) is applied to the first register.
 
 
@@ -2034,7 +2026,7 @@ $$
 The summation part of this formula is the sum of a geometric progression with a common ratio of $e^{-2\pi i k r / M}$. If the phase $k r / M$ deviates significantly from an integer, the vectors are added while rotating on the complex plane, causing Destructive Interference, and the amplitude becomes nearly $0$.
 Conversely, when $k r / M$ is very close to an integer $j$, i.e., when $k \approx j \frac{M}{r}$, the vectors on the complex plane point in the same direction, and the amplitude is amplified by Constructive Interference.
 
-**[Step 5: Measurement and Continued Fraction Expansion]**
+ **[Step 5: Measurement and Continued Fraction Expansion]** 
 When the first register is measured, an integer $k$ satisfying $k \approx j \frac{M}{r}$ is observed with high probability. Dividing both sides by $M$ yields the following relationship:
 
 
@@ -2066,15 +2058,15 @@ Quantum computers are not omnipotent magic wands and cannot solve every problem 
 
 In modern information science, the "search problem"—finding an element satisfying specific conditions from a massive dataset—is a critically important challenge and simultaneously one of the most fundamental questions in computer science. When some structure exists within the dataset (for example, elements sorted in alphabetical or numerical order), efficient classical algorithms such as binary search can be utilized, keeping the search time down to $O(\log N)$ for $N$ elements. However, searching within a completely randomly arranged **"unstructured database"** forces classical computers to rely on linear search, checking elements sequentially one by one. For $N$ elements, this requires in the worst case $N$ queries and on average $N/2$ queries—that is, $O(N)$ computational steps.
 
-However, **Grover's algorithm**, discovered in 1996 by Bell Labs physicist Lov Grover, succeeded in solving this unstructured search problem with $O(\sqrt{N})$ queries by masterfully and elegantly utilizing the principles of "superposition" and "interference" fundamental to quantum mechanics. Unlike Shor's algorithm, which provides an exponential speedup in computation time relative to problem size, Grover's algorithm provides a form of polynomial acceleration known as a **quadratic speedup**. Nonetheless, considering that unstructured search problems appear universally across all domains—such as brute-force searches for NP-complete problems and key recovery in cryptographic systems—its breadth of application and practical impact are immeasurable. In the vast field of quantum information science, Grover's algorithm occupies an unshakeable position as one of the most versatile and essential algorithms.
+However, **Grover's algorithm** , discovered in 1996 by Bell Labs physicist Lov Grover, succeeded in solving this unstructured search problem with $O(\sqrt{N})$ queries by masterfully and elegantly utilizing the principles of "superposition" and "interference" fundamental to quantum mechanics. Unlike Shor's algorithm, which provides an exponential speedup in computation time relative to problem size, Grover's algorithm provides a form of polynomial acceleration known as a **quadratic speedup** . Nonetheless, considering that unstructured search problems appear universally across all domains—such as brute-force searches for NP-complete problems and key recovery in cryptographic systems—its breadth of application and practical impact are immeasurable. In the vast field of quantum information science, Grover's algorithm occupies an unshakeable position as one of the most versatile and essential algorithms.
 
-In this chapter, we will unpack the profound mechanism of **"amplitude amplification"**, which lies at the core of Grover's algorithm, in rigorous detail from both an intuitive geometric perspective and an uncompromising, exact linear-algebraic framework, offering deep insights even for experts.
+In this chapter, we will unpack the profound mechanism of **"amplitude amplification"** , which lies at the core of Grover's algorithm, in rigorous detail from both an intuitive geometric perspective and an uncompromising, exact linear-algebraic framework, offering deep insights even for experts.
 
 ## 9.1 Problem Formulation and Preparation of the Initial Superposition State
 
 First, let us formulate the search problem to be solved with mathematical rigor. Suppose we have an unstructured database of size $N = 2^n$, where each element is encoded as a computational basis state $|x\rangle$ represented by $n$ qubits (where $x \in \{0, 1\}^n$, i.e., $x = 0, 1, \dots, N-1$). We assume that within this vast database space, there exists exactly one specific state that we wish to find (the target or "correct" state), denoted by $|w\rangle$.
 
-The goal of the problem is defined as: "Using a given black-box function (referred to as an **oracle**), identify the target state $|w\rangle$ with high probability in as few queries as possible."
+The goal of the problem is defined as: "Using a given black-box function (referred to as an **oracle** ), identify the target state $|w\rangle$ with high probability in as few queries as possible."
 
 The first step of a quantum algorithm always begins with preparing to survey the entire search space simultaneously. To create an equal superposition of all possibilities, we apply the Hadamard gate $H$ in parallel as a tensor product across each qubit of the $n$-qubit initial state $|0\rangle^{\otimes n}$. We define the resulting initial uniform superposition state as $|s\rangle$:
 
@@ -2082,13 +2074,13 @@ $$
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
 $$
 
-In the Hilbert space, this state ** $|s\rangle$ ** can be clearly decomposed into a linear combination of the target state $|w\rangle$ and all other non-target (incorrect) states. To make the subsequent geometric interpretation visually accessible, we introduce a new normalized vector $|s^\perp\rangle$, which is an equal superposition of non-target states only:
+In the Hilbert space, this state **$|s\rangle$** can be clearly decomposed into a linear combination of the target state $|w\rangle$ and all other non-target (incorrect) states. To make the subsequent geometric interpretation visually accessible, we introduce a new normalized vector $|s^\perp\rangle$, which is an equal superposition of non-target states only:
 
 $$
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
 $$
 
-By this definition, the state $|s^\perp\rangle$ and the target state $|w\rangle$ are mutually orthogonal ( $\langle s^\perp | w \rangle = 0$ ). Consequently, the initial uniform superposition state ** $|s\rangle$ ** can be expanded very simply on the two-dimensional Hilbert subspace spanned by these two mutually orthogonal vectors $|w\rangle$ and $|s^\perp\rangle$:
+By this definition, the state $|s^\perp\rangle$ and the target state $|w\rangle$ are mutually orthogonal ( $\langle s^\perp | w \rangle = 0$ ). Consequently, the initial uniform superposition state **$|s\rangle$** can be expanded very simply on the two-dimensional Hilbert subspace spanned by these two mutually orthogonal vectors $|w\rangle$ and $|s^\perp\rangle$:
 
 $$
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
@@ -2100,7 +2092,7 @@ $$
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
 $$
 
-What this equation tells us is the stark reality that in the initial state ** $|s\rangle$ **, the probability of observing the target state $|w\rangle$ is merely $|\sin \theta|^2 = \frac{1}{N}$. The ultimate goal of Grover's algorithm is to iteratively apply a combination of an oracle and a diffusion operator (discussed below) to gradually "rotate" this state vector ** $|s\rangle$ ** toward $|w\rangle$ within the two-dimensional plane of the Hilbert space, driving the probability of observing the correct state arbitrarily close to the theoretical limit of $1$ (amplifying its amplitude).
+What this equation tells us is the stark reality that in the initial state **$|s\rangle$** , the probability of observing the target state $|w\rangle$ is merely $|\sin \theta|^2 = \frac{1}{N}$. The ultimate goal of Grover's algorithm is to iteratively apply a combination of an oracle and a diffusion operator (discussed below) to gradually "rotate" this state vector **$|s\rangle$** toward $|w\rangle$ within the two-dimensional plane of the Hilbert space, driving the probability of observing the correct state arbitrarily close to the theoretical limit of $1$ (amplifying its amplitude).
 
 ## 9.2 Definition of the Quantum Oracle and Phase Kickback
 
@@ -2149,7 +2141,7 @@ $$
 U_w = I - 2|w\rangle\langle w|
 $$
 
-Here, $I$ is the $N \times N$ identity operator. Appealing to geometric intuition, this oracle $U_w$ is none other than an operator that performs a ** reflection of the state vector across the horizontal $|s^\perp\rangle$ axis ** in the two-dimensional real plane spanned by $|s^\perp\rangle$ and $|w\rangle$. This is because only the component corresponding to the target state has its sign flipped, while the components of all non-target states remain preserved.
+Here, $I$ is the $N \times N$ identity operator. Appealing to geometric intuition, this oracle $U_w$ is none other than an operator that performs a **reflection of the state vector across the horizontal $|s^\perp\rangle$ axis** in the two-dimensional real plane spanned by $|s^\perp\rangle$ and $|w\rangle$. This is because only the component corresponding to the target state has its sign flipped, while the components of all non-target states remain preserved.
 
 ## 9.3 The Diffusion Operator and the Mathematical Structure of Inversion About the Mean
 
@@ -2185,15 +2177,15 @@ $$
 
 The resulting new amplitude for each basis state $|x\rangle$ is $(2\mu - \alpha_x)$. This expression can be rewritten as $\mu + (\mu - \alpha_x)$. This clearly demonstrates that the original amplitude $\alpha_x$ is reflected to the exactly opposite (symmetric) position with respect to the overall mean $\mu$. This is the precise mathematical rationale behind why the diffusion operator is called "inversion about the mean."
 
-Through the action of the oracle $U_w$, only the amplitude of the single target state $|w\rangle$ has been inverted to a negative value ($-\alpha_w$). The amplitudes of the vast remaining $N-1$ non-target states remain positive. As a result, although the overall mean $\mu$ slightly decreases, it remains firmly positive. Applying the diffusion operator at this stage inverts the large negative amplitude of the target state about this positive mean $\mu$. Consequently, the amplitude of the target state ** jumps dramatically to a positive value far larger than its original amplitude (amplification) **.
+Through the action of the oracle $U_w$, only the amplitude of the single target state $|w\rangle$ has been inverted to a negative value ($-\alpha_w$). The amplitudes of the vast remaining $N-1$ non-target states remain positive. As a result, although the overall mean $\mu$ slightly decreases, it remains firmly positive. Applying the diffusion operator at this stage inverts the large negative amplitude of the target state about this positive mean $\mu$. Consequently, the amplitude of the target state **jumps dramatically to a positive value far larger than its original amplitude (amplification)** .
 
 Conversely, because the amplitudes of the non-target states were slightly larger than the mean value, reflecting them about the mean depresses them to slightly smaller positive values. This process is the core essence of the algorithm: quantum interference is harnessed to cancel out probabilities of undesired states and constructively enhance the probability of the desired target state.
 
-Returning to a geometric perspective, the operator expression $U_s = 2|s\rangle\langle s| - I$ vividly demonstrates that it represents a ** reflection of the state vector across the axis of the initial state vector $|s\rangle$ **.
+Returning to a geometric perspective, the operator expression $U_s = 2|s\rangle\langle s| - I$ vividly demonstrates that it represents a **reflection of the state vector across the axis of the initial state vector $|s\rangle$** .
 
 ## 9.4 Geometric Interpretation of Amplitude Amplification (Pure Rotation via Dual Reflections)
 
-The single iteration unit of Grover's algorithm, the ** Grover operator $G$ **, is defined as the successive application—that is, the product—of the oracle $U_w$ and the diffusion operator $U_s$:
+The single iteration unit of Grover's algorithm, the **Grover operator $G$** , is defined as the successive application—that is, the product—of the oracle $U_w$ and the diffusion operator $U_s$:
 
 $$
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
@@ -2203,13 +2195,13 @@ Here, an exquisitely beautiful theorem woven from Euclidean geometry and linear 
 
 From the analysis so far, it is guaranteed that no matter which of these operations is applied, the state vector always remains strictly within the two-dimensional real vector space (plane) spanned by $|s^\perp\rangle$ and $|w\rangle$. Let us re-examine the action of each operator within this plane:
 
-1. ** Reflection by the Oracle $U_w$ **:
-   Acting on the current state vector, $U_w$ flips only the sign of the component along the vertical axis $|w\rangle$ in orthogonal coordinates. Geometrically, this is a ** reflection across the horizontal $|s^\perp\rangle$ axis **.
-2. ** Reflection by the Diffusion Operator $U_s$ **:
-   The subsequent $U_s$ performs a ** reflection of the state vector across the axis of the vector $|s\rangle$ **, which is inclined at an angle $\theta$ within the plane.
+1. **Reflection by the Oracle $U_w$** :
+   Acting on the current state vector, $U_w$ flips only the sign of the component along the vertical axis $|w\rangle$ in orthogonal coordinates. Geometrically, this is a **reflection across the horizontal $|s^\perp\rangle$ axis** .
+2. **Reflection by the Diffusion Operator $U_s$** :
+   The subsequent $U_s$ performs a **reflection of the state vector across the axis of the vector $|s\rangle$** , which is inclined at an angle $\theta$ within the plane.
 
 The initial state $|s\rangle$ is tilted upward from the horizontal axis $|s^\perp\rangle$ by an angle $\theta$ (where $\sin \theta = \frac{1}{\sqrt{N}}$).
-Therefore, reflecting across the $|s^\perp\rangle$ axis immediately followed by reflecting across the $|s\rangle$ axis (tilted by $\theta$) makes the overall action $G$ an ** operation that rotates the state vector counterclockwise by $2\theta$ within this two-dimensional plane **.
+Therefore, reflecting across the $|s^\perp\rangle$ axis immediately followed by reflecting across the $|s\rangle$ axis (tilted by $\theta$) makes the overall action $G$ an **operation that rotates the state vector counterclockwise by $2\theta$ within this two-dimensional plane** .
 
 Let us mathematically prove this intuitive geometric insight with full rigor using rotation matrices. Let $|\psi_t\rangle$ be the state immediately after completing $t$ iterations. The initial state corresponds to $t=0$, where $|\psi_0\rangle = |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle$.
 
@@ -2255,7 +2247,7 @@ G = \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\the
 = \begin{pmatrix} \cos(2\theta) & -\sin(2\theta) \\ \sin(2\theta) & \cos(2\theta) \end{pmatrix}
 $$
 
-Remarkably, the resulting matrix is precisely the well-known ** rotation matrix for an angle $2\theta$ ** from geometry. Consequently, applying the operator $G$ sequentially $t$ times to the initial vector $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ is geometrically equivalent to rotating the vector counterclockwise by $2\theta$ at each step. Thus, the overall angle becomes the initial angle $\theta$ plus $t \times 2\theta$, yielding $\theta + 2t\theta = (2t+1)\theta$. This elegantly completes the induction proof.
+Remarkably, the resulting matrix is precisely the well-known **rotation matrix for an angle $2\theta$** from geometry. Consequently, applying the operator $G$ sequentially $t$ times to the initial vector $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ is geometrically equivalent to rotating the vector counterclockwise by $2\theta$ at each step. Thus, the overall angle becomes the initial angle $\theta$ plus $t \times 2\theta$, yielding $\theta + 2t\theta = (2t+1)\theta$. This elegantly completes the induction proof.
 
 Here, we provide the quantum circuit diagram representing a single Grover iteration using Mermaid syntax to visualize the correspondence between theory and implementation:
 
@@ -2347,7 +2339,7 @@ $$
 R \approx \frac{\pi}{4} \sqrt{\frac{N}{M}}
 $$
 
-This formula illustrates that as the number of solutions $M$ increases, the required number of iterations (search time) is naturally reduced. For example, if there are 4 solutions, the required time is cut in half. Even when the number of solutions $M$ is unknown a priori, an advanced technique known as the **quantum counting algorithm**—which combines Grover's algorithm with Quantum Phase Estimation (QPE)—enables us to rapidly estimate the number of solutions $M$ first, and subsequently perform amplitude amplification for the appropriate number of iterations.
+This formula illustrates that as the number of solutions $M$ increases, the required number of iterations (search time) is naturally reduced. For example, if there are 4 solutions, the required time is cut in half. Even when the number of solutions $M$ is unknown a priori, an advanced technique known as the **quantum counting algorithm** —which combines Grover's algorithm with Quantum Phase Estimation (QPE)—enables us to rapidly estimate the number of solutions $M$ first, and subsequently perform amplitude amplification for the appropriate number of iterations.
 
 ## 9.7 Theoretical Significance of Quadratic Speedup and the Limits of Quantum Computation (BBBV Theorem)
 
@@ -2359,9 +2351,9 @@ This impact is most vividly demonstrated in the intractable problems belonging t
 
 The impact on cryptography is likewise decisive and profound. The security of symmetric-key cryptosystems such as AES, which currently underpin the safety of the Internet, relies entirely on the intractability of brute-force attacks against the key space. For example, the search space for AES-128 (with a 128-bit key space) is an astronomical $N = 2^{128}$. While a classical computer requires an average of $2^{127}$ key verification evaluations, a quantum computer using Grover's algorithm can reliably discover the correct key in merely $\frac{\pi}{4} 2^{64}$ evaluations. This fact is the primary reason why standards organizations worldwide (such as NIST) regard the transition to Post-Quantum Cryptography (PQC) as an urgent imperative, strongly recommending migration away from AES-128 to AES-256 (which still requires $2^{128}$ operations even with quantum computers).
 
-Finally, we must mention a theorem of paramount importance from the perspectives of theoretical physics and computer science: the **BBBV theorem**, proven in 1997 by Bennett, Bernstein, Brassard, and Vazirani. This theorem rigorously proved that "even with a quantum computer, solving a black-box unstructured search problem unconditionally requires $\Omega(\sqrt{N})$ queries."
+Finally, we must mention a theorem of paramount importance from the perspectives of theoretical physics and computer science: the **BBBV theorem** , proven in 1997 by Bennett, Bernstein, Brassard, and Vazirani. This theorem rigorously proved that "even with a quantum computer, solving a black-box unstructured search problem unconditionally requires $\Omega(\sqrt{N})$ queries."
 
-What does this signify? It reveals the profound fact that ** the computational complexity of $O(\sqrt{N})$ achieved by Grover's algorithm represents the absolute theoretical limit permitted by the laws of nature (quantum mechanics), and no further speedup is possible using any known physical laws of the universe **. Grover did not merely discover an ingenious algorithm; he reached the ultimate boundary between information and physical law.
+What does this signify? It reveals the profound fact that **the computational complexity of $O(\sqrt{N})$ achieved by Grover's algorithm represents the absolute theoretical limit permitted by the laws of nature (quantum mechanics), and no further speedup is possible using any known physical laws of the universe** . Grover did not merely discover an ingenious algorithm; he reached the ultimate boundary between information and physical law.
 
 Furthermore, the paradigm of "amplitude amplification" detailed in this chapter serves as a foundational building block for constructing countless advanced quantum algorithms, including quantum random walks and subroutines in quantum machine learning. This beautiful and elegant method discovered by Grover—geometrically rotating and amplifying probability amplitudes through dual reflections across two axes—will continue to shine as one of the most solid and indispensable pillars underpinning the grand edifice of quantum information science.
 
@@ -2563,7 +2555,7 @@ The magic wand that circumvents the constraints of this theorem to realize unive
 
 The culmination of all these theoretical efforts is the "Quantum Threshold Theorem."
 Proved by Dorit Aharonov, Michael Ben-Or, and others, this theorem resoundingly proclaims:
-** "If the error probability $p$ of physical components (gates, measurements, initialization) is below a certain threshold $p_{th}$, it is possible to perform arbitrarily long quantum computations with arbitrary accuracy by hierarchically concatenating quantum error-correcting codes or continually expanding the lattice size (code distance $d$) of topological codes." **
+ **"If the error probability $p$ of physical components (gates, measurements, initialization) is below a certain threshold $p_{th}$, it is possible to perform arbitrarily long quantum computations with arbitrary accuracy by hierarchically concatenating quantum error-correcting codes or continually expanding the lattice size (code distance $d$) of topological codes."** 
 
 Although the threshold $p_{th}$ depends on the code and architecture used, in surface codes it possesses an extraordinarily realistic and achievable value of approximately $10^{-2}$ (1%). Both suppressing physical error rates well below this threshold (Physical Layer improvements) and developing more efficient syndrome decoders and surface code variants (Logical Layer refinements) constitute the primary battleground in the worldwide race for quantum computer development today.
 
@@ -2574,11 +2566,11 @@ Quantum error correction and FTQC are not mere engineering patches. They represe
 Up to Chapter 10, we have detailed the theoretical foundations of quantum information science and the mathematical structure of algorithms. No matter how advanced quantum algorithms are designed and theoretical Quantum Supremacy is proven within the framework of computational complexity theory, without "quantum hardware" as a physical entity to execute them, it remains a play of pure mathematics. In this chapter, we will rigorously explain state-of-the-art hardware implementation schemes for materializing the state vector $ |\psi\rangle $ in an abstract Hilbert space into the physical world, starting from the deep principles of quantum physics behind them.
 
 In order to artificially control a quantum physical system and make it function as a universal computer, five severe physical requirements called DiVincenzo's criteria must be met.
-1. **A scalable physical system with well-characterized qubits**: The tensor product structure of the Hilbert space $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ must be physically secured.
-2. **The ability to initialize the state of the qubits to a simple fiducial state**: The ability to reset the system to a pure state (typically $ |00\dots0\rangle $) with high fidelity.
-3. **Long relevant decoherence times**: The decoherence times of quantum states (T1 and T2) must be many orders of magnitude longer than the time required for a single gate operation.
-4. **A "universal" set of quantum gates**: Any unitary transformation $ \hat{U} \in SU(2^n) $ can be approximated with arbitrary precision by a combination of a finite number of basis gates (e.g., H, T, CNOT gates).
-5. **A qubit-specific measurement capability**: The ability to read out the probability distribution for a specific basis with high precision, accompanied by the collapse of the quantum state.
+1. **A scalable physical system with well-characterized qubits** : The tensor product structure of the Hilbert space $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ must be physically secured.
+2. **The ability to initialize the state of the qubits to a simple fiducial state** : The ability to reset the system to a pure state (typically $ |00\dots0\rangle $) with high fidelity.
+3. **Long relevant decoherence times** : The decoherence times of quantum states (T1 and T2) must be many orders of magnitude longer than the time required for a single gate operation.
+4. **A "universal" set of quantum gates** : Any unitary transformation $ \hat{U} \in SU(2^n) $ can be approximated with arbitrary precision by a combination of a finite number of basis gates (e.g., H, T, CNOT gates).
+5. **A qubit-specific measurement capability** : The ability to read out the probability distribution for a specific basis with high precision, accompanied by the collapse of the quantum state.
 
 Constructing a system that satisfies all of these simultaneously and with high fidelity is a historic challenge in modern physics and engineering. If the system is completely isolated from the environment, the decoherence time increases, but this simultaneously makes it difficult to manipulate or measure the system. How to overcome this ultimate tradeoff is the core of the design philosophy for each hardware scheme.
 
@@ -2640,7 +2632,7 @@ $$
 
 Here, $ \Delta = \omega_q - \omega_r $. The physical meaning indicated by the second term of this equation is extremely important. The effective frequency of the resonator shifts by $ \pm g^2/\Delta $ depending on the qubit state (whether $ \hat{\sigma}_z = +1 $ or $ -1 $). Therefore, by transmitting or reflecting a probe microwave through the resonator and measuring its phase shift, the state of the qubit can be projectively measured.
 
-**Pros and Cons**
+ **Pros and Cons** 
 The greatest advantage of the superconducting scheme is its excellent scalability through on-chip wiring design, as existing semiconductor lithography technology can be repurposed, and its extremely fast gate operation on the nanosecond scale. On the other hand, the disadvantage is that, being macroscopic artifacts, they are extremely vulnerable to minute material defects (TLS) and electromagnetic noise, making a dilution refrigerator environment near absolute zero (about 10 mK) essential.
 
 ## 11.2 Trapped Ion Scheme: The Pinnacle of Atomic Physics and Perfect Identity
@@ -2675,7 +2667,7 @@ $$
 
 This operation generates a fully entangled state and has equivalent computational power to a CNOT gate. The fact that all-to-all connectivity is possible is a decisive difference from superconducting schemes, which can only couple with adjacent qubits.
 
-**Challenges and Limitations**
+ **Challenges and Limitations** 
 The gate operation time is tens of microseconds, orders of magnitude slower than superconducting schemes. Furthermore, placing dozens or more ions in a single one-dimensional trap leads to an overcrowded vibrational mode spectrum, making crosstalk inevitable. Scaling technologies such as the QCCD (Quantum Charge-Coupled Device) architecture to break through this are currently major research topics.
 
 ## 11.3 Topological Qubits: Non-Abelian Anyons and Ultimate Robustness
@@ -2715,7 +2707,7 @@ graph TD
 
 Since only the topology of the "knots" drawn by the particle trajectories determines the calculation result, even if the trajectories fluctuate somewhat, as long as the topology does not change, the unitary transformation $ \hat{U} $ is executed strictly with zero errors. This is fault-tolerance at the hardware level.
 
-**Challenges and Limitations**
+ **Challenges and Limitations** 
 Conclusive experimental evidence for the existence of Majorana zero modes remains a subject of debate, and physical demonstration of braiding has not yet been achieved. Furthermore, braiding using Ising anyons alone cannot construct a universal quantum gate set, necessitating a non-topological supplementary operation known as magic state distillation.
 
 ## 11.4 Photonic Qubits: Linear Optics and Measurement-Induced Entanglement
@@ -2727,7 +2719,7 @@ Another approach that is fundamentally robust against environmental noise is the
 Photonic qubits are often encoded using spatial path modes. In dual-rail encoding, the state where a photon is in the upper waveguide is defined as $ |0\rangle = |1, 0\rangle $, and the state where it is in the lower waveguide is $ |1\rangle = |0, 1\rangle $.
 
 Single-qubit gates can be completely realized with linear optical elements such as beam splitters (BS) and phase shifters (PS). However, since photons do not interact directly with each other, it is impossible to create a deterministic two-qubit gate using only linear optical elements.
-In 2001, Knill, Laflamme, and Milburn proposed the "KLM protocol," proving that by combining single-photon sources, linear optical elements, and **projective measurements using photon detectors**, probabilistic yet scalable universal quantum computation is possible. Nonlinearity is injected into the system post-selectionally through pure quantum interference effects like the Hong-Ou-Mandel effect and the irreversibility of measurement.
+In 2001, Knill, Laflamme, and Milburn proposed the "KLM protocol," proving that by combining single-photon sources, linear optical elements, and **projective measurements using photon detectors** , probabilistic yet scalable universal quantum computation is possible. Nonlinearity is injected into the system post-selectionally through pure quantum interference effects like the Hong-Ou-Mandel effect and the irreversibility of measurement.
 
 ### 11.4.2 Continuous Variables (CV) and Cluster States
 
@@ -2745,7 +2737,7 @@ In the quantum supremacy experiment demonstrated by Google, an index called cros
 
 ### 11.5.2 Transition to Quantum Error Correction (The Dawn of FTQC)
 
-To break through the limits of NISQ devices and establish true "quantum supremacy" in chemical calculations, materials science, or cryptography, rather than relying on a single physical system, the transition to **FTQC (Fault-Tolerant Quantum Computing)**, which constructs a single error-free "logical qubit" by bundling numerous physical qubits, is an absolute requirement.
+To break through the limits of NISQ devices and establish true "quantum supremacy" in chemical calculations, materials science, or cryptography, rather than relying on a single physical system, the transition to **FTQC (Fault-Tolerant Quantum Computing)** , which constructs a single error-free "logical qubit" by bundling numerous physical qubits, is an absolute requirement.
 
 For example, when using a topological error-correcting code called the Surface Code, as long as the error rate of physical qubits is below the threshold, the logical error rate decreases exponentially as the system is expanded. However, as a tradeoff, an overhead of 1,000 to 10,000 physical qubits is required to construct a single logical qubit.
 
@@ -2775,7 +2767,7 @@ $$
 
 In a sufficiently deep (large $d$) random quantum circuit, each amplitude $ \alpha_x $ exhibits random walk-like behavior on the complex plane, and it is known that its probability distribution $ P_{\text{ideal}}(x) $ follows the Porter-Thomas distribution. In other words, the probability density function for the appearance of probability $p$ is $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $. This means that it forms a "speckle pattern" where specific bitstrings are more likely to be observed than others.
 
-To perform exact sampling from this distribution using a classical computer, it is necessary to calculate the amplitudes $ \alpha_x $ directly through giant tensor network contraction calculations. The dimensionality of the state vector is $ 2^n $, and in the case of $ n = 53 $, we must track approximately $ 9 \times 10^{15} $ complex amplitudes (petabytes of memory). This confronts a computational wall that would take a tremendous amount of time even using the world's fastest supercomputers of that time. On the other hand, a quantum computer inherently maintains the state ** $|\psi_f\rangle$ ** physically as a natural vector on a Hilbert space, and it instantly (in tens of microseconds) performs sampling according to the speckle pattern with a single measurement.
+To perform exact sampling from this distribution using a classical computer, it is necessary to calculate the amplitudes $ \alpha_x $ directly through giant tensor network contraction calculations. The dimensionality of the state vector is $ 2^n $, and in the case of $ n = 53 $, we must track approximately $ 9 \times 10^{15} $ complex amplitudes (petabytes of memory). This confronts a computational wall that would take a tremendous amount of time even using the world's fastest supercomputers of that time. On the other hand, a quantum computer inherently maintains the state **$|\psi_f\rangle$** physically as a natural vector on a Hilbert space, and it instantly (in tens of microseconds) performs sampling according to the speckle pattern with a single measurement.
 
 To evaluate the success or failure of the experiment, Linear Cross-Entropy Benchmarking (XEB) was introduced. The fidelity $ \mathcal{F}_{\text{XEB}} $ is defined as follows:
 
@@ -2801,7 +2793,7 @@ graph TD
 
 In general media reports and popular science books regarding quantum computers, catchphrases such as "Because it can compute $2^n$ states simultaneously, it can solve any problem in an instant" are occasionally seen. However, from the perspective of computational complexity theory, this is definitively incorrect. A quantum computer is by no means a magic wand that can unconditionally solve "NP-Complete" problems in polynomial time.
 
-This misconception stems from the fact (quantum parallelism) that through state superposition via Hadamard gates, $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $, the evaluation of a function for all inputs can be performed "in a single operation." Using an oracle (the unitary operator responsible for the computation) ** $U_f$ **, when the computation of function $ f(x) $ is executed on a superposition state, the entire state evolves according to linearity as follows:
+This misconception stems from the fact (quantum parallelism) that through state superposition via Hadamard gates, $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $, the evaluation of a function for all inputs can be performed "in a single operation." Using an oracle (the unitary operator responsible for the computation) **$U_f$** , when the computation of function $ f(x) $ is executed on a superposition state, the entire state evolves according to linearity as follows:
 
 $$
 U_f \left( \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |0\rangle \right) = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |f(x)\rangle
@@ -2811,25 +2803,25 @@ Indeed, within this state vector, the answers $f(x)$ for all $x$ are encapsulate
 
 For a quantum algorithm to truly surpass a classical algorithm, it is necessary to ingeniously design and utilize not just parallel evaluation, but "Quantum Interference." One must construct an extremely specialized global unitary transformation that amplifies the probability amplitude corresponding to the desired correct state via constructive interference, while cancelling out the infinitely many probability amplitudes of incorrect answers via destructive interference (phase inversion).
 
-Under these constraints, the complexity class of problems that a quantum computer can solve in polynomial time while maintaining a significantly high probability of correctness is called ** BQP ** (Bounded-error Quantum Polynomial time). On the other hand, the class of problems for which a given solution's validity can be verified in polynomial time is ** NP **, and the most difficult group of problems within it is the ** NP-Complete ** problems (such as the Traveling Salesperson Problem and the Boolean Satisfiability Problem/SAT).
+Under these constraints, the complexity class of problems that a quantum computer can solve in polynomial time while maintaining a significantly high probability of correctness is called **BQP** (Bounded-error Quantum Polynomial time). On the other hand, the class of problems for which a given solution's validity can be verified in polynomial time is **NP** , and the most difficult group of problems within it is the **NP-Complete** problems (such as the Traveling Salesperson Problem and the Boolean Satisfiability Problem/SAT).
 
 Grover's algorithm quadratically accelerates the database search of unstructured $ N = 2^n $ elements from classical $ O(N) $ to quantum $ O(\sqrt{N}) $. Looking back at the mathematical representation of Amplitude Amplification, the algorithm comes down to the geometric rotation of the state vector within a 2-dimensional subspace (plane) spanned by the initial uniform superposition state $ |s\rangle $ and the correct state we wish to find $ |\omega\rangle $.
 
-Grover's iteration operator ** $G$ ** is defined as the product of the phase inversion operator of the correct state by the oracle $ U_\omega = I - 2|\omega\rangle\langle\omega| $ and the inversion operator about the mean $ U_s = 2|s\rangle\langle s| - I $.
+Grover's iteration operator **$G$** is defined as the product of the phase inversion operator of the correct state by the oracle $ U_\omega = I - 2|\omega\rangle\langle\omega| $ and the inversion operator about the mean $ U_s = 2|s\rangle\langle s| - I $.
 
 $$
 G = U_s U_\omega = (2|s\rangle\langle s| - I)(I - 2|\omega\rangle\langle\omega|)
 $$
 
-By applying this unitary operator ** $G$ ** approximately $ \frac{\pi}{4}\sqrt{N} $ times, the state vector rotates towards the target $ |\omega\rangle $, raising the probability of observing the correct answer to almost 1 (100%). However, an extremely important fact here is that this is merely a "square-root speedup," and not an exponential speedup ($ O(2^n) \to O(\text{poly}(n)) $). To date, no pattern of quantum interference has been found that solves general cases of NP-complete problems in polynomial time. Many quantum information scientists and computer scientists strongly believe that ** $\text{BQP} \not\supset \text{NP-Complete}$ ** (quantum computers cannot efficiently solve NP-complete problems) as a foundational conjecture of computational complexity theory.
+By applying this unitary operator **$G$** approximately $ \frac{\pi}{4}\sqrt{N} $ times, the state vector rotates towards the target $ |\omega\rangle $, raising the probability of observing the correct answer to almost 1 (100%). However, an extremely important fact here is that this is merely a "square-root speedup," and not an exponential speedup ($ O(2^n) \to O(\text{poly}(n)) $). To date, no pattern of quantum interference has been found that solves general cases of NP-complete problems in polynomial time. Many quantum information scientists and computer scientists strongly believe that **$\text{BQP} \not\supset \text{NP-Complete}$** (quantum computers cannot efficiently solve NP-complete problems) as a foundational conjecture of computational complexity theory.
 
 A quantum computer is an extremely refined, specialized co-processor that yields superpolynomial speedups through the Quantum Fourier Transform (QFT) only when there is an "algebraic structure such as a hidden periodicity within the problem," as seen in factorization in Shor's algorithm.
 
 ## 12.3 Quantum Error Correction and the Roadmap from NISQ to FTQC
 
-Even though quantum supremacy has been demonstrated, current devices with tens to hundreds of qubits like Sycamore are called ** NISQ ** (Noisy Intermediate-Scale Quantum) devices, and they cannot completely prevent the invasion of noise from the environment. Delicate quantum states extremely easily induce decoherence (constrained by phase relaxation time $T_2$ and energy relaxation time $T_1$) due to interactions with the environment, such as thermal fluctuations and electromagnetic interference. As computations become deeper (the number of gate layers increases), noise caused by gate imperfections and decoherence accumulates exponentially, and the final output result collapses entirely into a meaningless completely mixed state.
+Even though quantum supremacy has been demonstrated, current devices with tens to hundreds of qubits like Sycamore are called **NISQ** (Noisy Intermediate-Scale Quantum) devices, and they cannot completely prevent the invasion of noise from the environment. Delicate quantum states extremely easily induce decoherence (constrained by phase relaxation time $T_2$ and energy relaxation time $T_1$) due to interactions with the environment, such as thermal fluctuations and electromagnetic interference. As computations become deeper (the number of gate layers increases), noise caused by gate imperfections and decoherence accumulates exponentially, and the final output result collapses entirely into a meaningless completely mixed state.
 
-The only theoretical path to breaking through this physical limit and enabling practical large-scale quantum algorithms spanning hundreds of millions of steps to be completed is the realization of **Fault-Tolerant Quantum Computation (FTQC)** using **Quantum Error Correction (QEC)**. Error correction in classical computers (such as majority vote codes via bit replication) cannot be applied to quantum states due to the "No-Cloning Theorem," which forms the foundation of quantum mechanics. There is mathematically no unitary transformation that can perfectly copy an unknown quantum state ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ ** into something like ** $|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$ **.
+The only theoretical path to breaking through this physical limit and enabling practical large-scale quantum algorithms spanning hundreds of millions of steps to be completed is the realization of **Fault-Tolerant Quantum Computation (FTQC)** using **Quantum Error Correction (QEC)** . Error correction in classical computers (such as majority vote codes via bit replication) cannot be applied to quantum states due to the "No-Cloning Theorem," which forms the foundation of quantum mechanics. There is mathematically no unitary transformation that can perfectly copy an unknown quantum state **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** into something like **$|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$** .
 
 However, theoretical physics has found an elegant solution to overcome this despair. Quantum information can be protected not by replicating individual states, but by "distributing and hiding a single piece of logical information within the topology of an 'entanglement space' of a giant Hilbert space composed of a large number of physical qubit groups." Currently, the "Surface Code," which is considered the most promising from a hardware implementation perspective, is based on the Stabilizer Formalism on a 2-dimensional lattice.
 
@@ -2843,7 +2835,7 @@ $$
 A_v = \bigotimes_{i \in \delta v} X_i \quad \text{(Vertex operator: detects X errors)}
 $$
 
-Here, all $ B_p $ and $ A_v $ commute with each other (do not anti-commute), meaning they satisfy the commutation relation $ [B_p, A_v] = 0 $. The "logical state (code space)" ** $|\psi_L\rangle$ ** into which we write information is strictly defined as the subspace spanned by the simultaneous eigenstates where the eigenvalues of all these stabilizer operators are $+1$.
+Here, all $ B_p $ and $ A_v $ commute with each other (do not anti-commute), meaning they satisfy the commutation relation $ [B_p, A_v] = 0 $. The "logical state (code space)" **$|\psi_L\rangle$** into which we write information is strictly defined as the subspace spanned by the simultaneous eigenstates where the eigenvalues of all these stabilizer operators are $+1$.
 
 $$
 B_p |\psi_L\rangle = +1 |\psi_L\rangle, \quad A_v |\psi_L\rangle = +1 |\psi_L\rangle \quad (\text{for all } p, v)
@@ -2857,7 +2849,7 @@ Viewed from the current stage of tens to hundreds of physical qubits, this poses
 
 ## 12.4 Conclusion: The Horizon and Future of Quantum Information Science
 
-Beginning with the introduction of the superposition of ** $|0\rangle$ ** and ** $|1\rangle$ ** through bra-ket notation in Chapter 1, progressing through time evolution by unitary matrices, the mathematical description of many-body systems by tensor products, the breakdown of Einstein's local realism through Bell's inequalities, and finally reaching the elegant mathematical structures of Shor's and Grover's quantum algorithms, we have traced the culmination of knowledge known as "quantum information science" in an extremely rigorous form throughout this entire 12-chapter series.
+Beginning with the introduction of the superposition of **$|0\rangle$** and **$|1\rangle$** through bra-ket notation in Chapter 1, progressing through time evolution by unitary matrices, the mathematical description of many-body systems by tensor products, the breakdown of Einstein's local realism through Bell's inequalities, and finally reaching the elegant mathematical structures of Shor's and Grover's quantum algorithms, we have traced the culmination of knowledge known as "quantum information science" in an extremely rigorous form throughout this entire 12-chapter series.
 
 While classical computers are based on "deterministic truth values (Boolean algebra)," quantum computers are based on "unitary rotations and tensor products in complex Hilbert spaces (linear algebra)." This fundamental paradigm shift transcends the industrial and practical aspect of merely "speeding up calculations"; it confronts us with profound philosophical questions where information theory and fundamental physics are perfectly unified: "What is the ultimate information processing capability of this universe?" and "How do computability and complexity depend on the structure of the physical laws of the universe in which we live?"
 
@@ -2870,4 +2862,4 @@ The battle against noise (the grueling journey from NISQ to FTQC) spanning the c
 If this series has served to deeply convey to readers the true nature of quantum computers and the extremely beautiful and rigorous mathematical and physical structures behind them—without being swept away by superficial buzzwords or the inflation of excessive expectations—then as the author, there could be no greater joy. The quantum world is deeply, bizarrely, and overwhelmingly beautiful, far beyond our common sense. We now stand at the entrance to the most exciting technological and scientific frontier in human history. This grand intellectual voyage exploring the truth of this universe has only just begun.
 
 ---
-**The Series "Principles of Quantum Computing" (12 Chapters in Total) - End**
+ **The Series "Principles of Quantum Computing" (12 Chapters in Total) - End** 
