@@ -2597,13 +2597,13 @@ Transmon 通过在约瑟夫森能量 $ E_J $ 旁故意引入巨大的并联分�
 表示库珀对数量的电荷算符 $ \hat{n} $ 与表示超导相位差的相位算符 $ \hat{\phi} $ 是一对正则共轭变量，满足对易关系 $ [\hat{\phi}, \hat{n}] = i $ 。Transmon 的哈密顿量可以精确表述为：
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 其中， $ n_g $ 是由环境或栅极电压引起的偏置电荷。在 $ E_J \gg E_C $ 的极限下，相位的量子涨落被抑制得很小，因此可以将余弦项进行泰勒展开，将其作为非简谐振子处理：
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 正是这个 $ \hat{\phi}^4 $ 项为系统带来了非简谐性（Anharmonicity）。根据微扰论的计算结果，能级间的非简谐性 $ \alpha $ 可以近似表示为：

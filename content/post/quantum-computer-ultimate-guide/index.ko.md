@@ -2597,13 +2597,13 @@ $$
 쿠퍼 쌍의 수를 나타내는 전하 연산자 $ \hat{n} $ 과 초전도 위상차를 나타내는 위상 연산자 $ \hat{\phi} $ 는 정준 공액인 변수이며 교환 관계 $ [\hat{\phi}, \hat{n}] = i $ 를 만족한다. 트랜스몬의 해밀토니안은 다음과 같이 엄밀하게 기술된다.
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 여기서 $ n_g $ 는 환경이나 게이트 전압에 의한 오프셋 전하이다. $ E_J \gg E_C $ 의 극한에서 위상의 양자 요동은 작게 억제되므로 코사인 항을 테일러 전개하여 비조화 진동자로 다룰 수 있다.
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 이 $ \hat{\phi}^4 $ 의 항이 계에 비조화성(Anharmonicity)을 가져온다. 섭동론에 의한 계산 결과로서 에너지 준위 간의 비조화성 $ \alpha $ 는 다음과 같이 근사된다.

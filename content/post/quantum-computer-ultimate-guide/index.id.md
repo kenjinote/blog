@@ -2597,13 +2597,13 @@ Transmon beroperasi pada rezim di mana kapasitansi pirau (shunt capacitance) par
 Operator muatan $ \hat{n} $ yang menyatakan jumlah pasangan Cooper dan operator fase $ \hat{\phi} $ yang menyatakan beda fase superkonduksi merupakan variabel konjugat kanonik, yang memenuhi relasi komutasi $ [\hat{\phi}, \hat{n}] = i $ . Hamiltonian transmon dapat dirumuskan secara eksak sebagai berikut:
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 Di sini, $ n_g $ adalah muatan ofset yang disebabkan oleh lingkungan atau tegangan gerbang. Pada limit $ E_J \gg E_C $ , fluktuasi kuantum dari fase dapat ditekan hingga kecil, sehingga suku kosinus dapat diekspansi secara deret Taylor dan sistem dapat diperlakukan sebagai osilator anharmonik:
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 Suku $ \hat{\phi}^4 $ inilah yang memunculkan sifat anharmonisitas (Anharmonicity) pada sistem. Dari hasil perhitungan menggunakan teori perturbasi, anharmonisitas $ \alpha $ antar tingkat energi dapat didekati sebagai:

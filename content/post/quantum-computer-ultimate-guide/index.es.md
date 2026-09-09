@@ -2598,13 +2598,13 @@ El transmon opera en un régimen donde se incrementa deliberadamente una capacit
 El operador de carga $ \hat{n} $ , que representa el número de pares de Cooper, y el operador de fase $ \hat{\phi} $ , que representa la diferencia de fase superconductora, son variables canónicamente conjugadas que satisfacen la relación de conmutación $ [\hat{\phi}, \hat{n}] = i $ . El hamiltoniano del transmon se describe rigurosamente como:
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 donde $ n_g $ representa la carga de desplazamiento (offset) debida al entorno o al voltaje de puerta. En el límite $ E_J \gg E_C $ , las fluctuaciones cuánticas de la fase se mantienen reducidas, lo que permite desarrollar el término del coseno en serie de Taylor y tratar el sistema como un oscilador anarmónico:
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 Este término cuártico $ \hat{\phi}^4 $ confiere anarmonicidad (Anharmonicity) al sistema. Como resultado del cálculo mediante teoría de perturbaciones, la anarmonicidad $ \alpha $ entre los niveles de energía se aproxima como:

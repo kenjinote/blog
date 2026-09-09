@@ -2595,13 +2595,13 @@ Le transmon opère dans un régime où une très grande capacité shunt est volo
 L'opérateur de charge $ \hat{n} $ (représentant le nombre de paires de Cooper) et l'opérateur de phase $ \hat{\phi} $ (différence de phase supraconductrice) constituent des variables canoniquement conjuguées, vérifiant la relation de commutation $ [\hat{\phi}, \hat{n}] = i $ . L'hamiltonien exact du transmon s'écrit :
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 où $ n_g $ représente la charge de décalage induite par l'environnement ou les grilles électrostatiques. Dans la limite $ E_J \gg E_C $ , les fluctuations quantiques de la phase restent faibles, autorisant un développement en série de Taylor du terme cosinus qui ramène le système à un oscillateur anharmonique :
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 Ce terme en $ \hat{\phi}^4 $ introduit une anharmonicité (Anharmonicity) au sein du spectre énergétique. Par un calcul en théorie des perturbations, l'anharmonicité $ \alpha $ entre les premiers niveaux d'énergie s'évalue à :

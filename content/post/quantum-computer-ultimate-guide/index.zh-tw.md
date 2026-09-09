@@ -2597,13 +2597,13 @@ Transmon 是透過刻意大幅增加與約瑟夫森能量 $ E_J $ 並聯的分�
 代表庫珀對數目的電荷算符 $ \hat{n} $ 與代表超導相位差的相位算符 $ \hat{\phi} $ 為一對正則共軛變數，滿足對易關係 $ [\hat{\phi}, \hat{n}] = i $ 。Transmon 的哈密頓量可嚴格表述如下：
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 其中， $ n_g $ 為環境或閘極電壓所引起的偏移電荷（offset charge）。在 $ E_J \gg E_C $ 的極限下，相位的量子漲落被有效抑制，因此可對餘弦項進行泰勒展開，將其視為非諧振子（Anharmonic Oscillator）處理：
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 正是此 $ \hat{\phi}^4 $ 項為系統賦予了非簡諧性（Anharmonicity）。經微擾理論計算，能階間的非簡諧性 $ \alpha $ 可近似為：

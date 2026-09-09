@@ -2597,13 +2597,13 @@ $$
 クーパー対の数を表す電荷演算子 $ \hat{n} $ と、超伝導位相差を表す位相演算子 $ \hat{\phi} $ は正準共役な変数であり、交換関係 $ [\hat{\phi}, \hat{n}] = i $ を満たす。トランズモンのハミルトニアンは次のように厳密に記述される。
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 ここで、 $ n_g $ は環境やゲート電圧によるオフセット電荷である。 $ E_J \gg E_C $ の極限において、位相の量子ゆらぎは小さく抑えられるため、コサイン項をテイラー展開し、非調和振動子として扱うことができる。
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 この $ \hat{\phi}^4 $ の項が、系に非調和性（Anharmonicity）をもたらす。摂動論による計算結果として、エネルギー準位間の非調和性 $ \alpha $ は以下のように近似される。

@@ -2598,13 +2598,13 @@ The transmon operates in a regime where the parallel shunt capacitance is intent
 The charge operator $ \hat{n} $ representing the number of Cooper pairs and the phase operator $ \hat{\phi} $ representing the superconducting phase difference are canonical conjugate variables, satisfying the commutation relation $ [\hat{\phi}, \hat{n}] = i $. The Hamiltonian of the transmon is exactly described as follows.
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 Here, $ n_g $ is the offset charge due to the environment or gate voltage. In the limit of $ E_J \gg E_C $, the quantum fluctuations of the phase are kept small, so the cosine term can be Taylor expanded and treated as an anharmonic oscillator.
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 This $ \hat{\phi}^4 $ term brings anharmonicity to the system. As a calculation result using perturbation theory, the anharmonicity $ \alpha $ between energy levels is approximated as follows.

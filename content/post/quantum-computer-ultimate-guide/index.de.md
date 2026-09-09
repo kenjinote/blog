@@ -2598,13 +2598,13 @@ Das Transmon arbeitet in einem Regime, in dem parallel zur Josephson-Energie $ E
 Der Ladungsoperator $ \hat{n} $ , der die Anzahl der Cooper-Paare beschreibt, und der Phasenoperator $ \hat{\phi} $ , der die supraleitende Phasendifferenz beschreibt, sind kanonisch konjugierte Variablen und erfüllen die Kommutatorrelation $ [\hat{\phi}, \hat{n}] = i $ . Der Hamiltonoperator des Transmons lässt sich exakt wie folgt formulieren:
 
 $$
-\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
+\hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 -E_J \cos \hat{\phi}
 $$
 
 Hierbei ist $ n_g $ die durch Umgebungseinflüsse oder Gate-Spannungen bedingte Offset-Ladung. Im Grenzfall $ E_J \gg E_C $ werden die quantenmechanischen Phasenschwankungen klein gehalten, sodass der Kosinusterm als Taylor-Reihe entwickelt und das System als anharmonischer Oszillator behandelt werden kann:
 
 $$
-- E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
+-E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
 $$
 
 Dieser Term proportional zu $ \hat{\phi}^4 $ verleiht dem System seine Anharmonizität (Anharmonicity). Als Ergebnis einer störungstheoretischen Berechnung lässt sich die Anharmonizität $ \alpha $ zwischen den Energieniveaus wie folgt nähern:
