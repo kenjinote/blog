@@ -1,11 +1,12 @@
 ---
-title: "So finden Sie den Speicherort einer ausführbaren Datei im PATH unter Windows"
+title: 'So finden Sie den Speicherort (Pfad) einer ausführbaren Datei im Pfad unter Windows [where-Befehl]'
 slug: "Windows でパスの通った実行ファイルの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Pfad", "Ausführbare Datei", "Eingabeaufforderung"]
 draft: false
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'Wir erklären, wie Sie den Speicherort (vollständigen Pfad) von ausführbaren Dateien in der Windows-Eingabeaufforderung oder PowerShell einfach überprüfen können. Wir stellen einen nützlichen Trick vor, um mit dem Befehl „where“ schnell den genauen Speicherort von Apps im Pfad zu ermitteln.'
 ---
 
 # So finden Sie den Speicherort einer ausführbaren Datei im PATH unter Windows

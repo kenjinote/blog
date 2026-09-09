@@ -1,5 +1,5 @@
 ---
-title: 'What is the Birthday Paradox?'
+title: 'What is the Birthday Paradox? Why the Probability of Shared Birthdays Exceeds 50% with 23 People'
 slug: "バースデイパラドックスとは"
 date: 2024-04-02T01:20:50+09:00
 tags: ["Mathematics", "Paradox"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Math, Cryptography, Quantum"]
+description: 'If 23 people gather, is the probability of someone having the same birthday over 50%!? We explain the counterintuitive and fascinating phenomenon known as the ''Birthday Paradox'' in an easy-to-understand way, using mathematical reasons and formulas. Let''s experience the wonder of probability.'
 ---
 
 ## Do you know the Birthday Paradox?

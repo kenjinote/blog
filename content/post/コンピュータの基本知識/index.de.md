@@ -1,11 +1,12 @@
 ---
-title: "Grundwissen über Computer"
+title: 'Was sind die fünf Hauptkomponenten eines Computers? Grundwissen über Hardware und Software, das IT-Anfänger kennen sollten'
 slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Computer", "Grundwissen"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technologie"]
+description: 'Wir erklären auf leicht verständliche Weise, wie Computer für IT-Anfänger funktionieren. Wir haben das Grundwissen zusammengestellt, das man als Grundlage der IT kennen sollte, von der Rolle der „fünf Hauptkomponenten“ Eingabe, Ausgabe, Speicher, Steuerung und arithmetische Operationen bis hin zur Beziehung zwischen Hardware und Software (Programmen).'
 ---
 
 # Grundwissen über Computer

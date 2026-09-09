@@ -6,13 +6,14 @@
 
 
 
-title: "Lista de accesos directos de Visual Studio"
+title: 'Lista de atajos de teclado útiles de Visual Studio 【Mejora de eficiencia】'
 slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Accesos directos" ]
 draft: false
 image: "img.webp"
 categories: ["Herramientas y Entorno de Desarrollo"]
+description: 'Hemos recopilado una lista de atajos de teclado útiles en Visual Studio (VS2022) que mejoran drásticamente la eficiencia del desarrollo. Seleccionamos cuidadosamente los atajos indispensables más utilizados durante la programación, como operaciones de depuración, compilación y marcadores.'
 ---
 
 

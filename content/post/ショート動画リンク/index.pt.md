@@ -1,11 +1,12 @@
 ---
-title: "Links de vídeos curtos"
+title: 'Um resumo de vídeos curtos populares | O drama de resgate do gandula do Tottenham, etc.'
 slug: "links-de-videos-curtos"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Vídeo", "Curto"]
 draft: false
 image: "img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Apresentamos um resumo de links de vídeos curtos recomendados que viraram assunto nas redes sociais, como o emocionante episódio do gandula que salvou a equipe na partida do Tottenham e foi elogiado por Mourinho.'
 ---
 1. Futebol Gandula
 

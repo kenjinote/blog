@@ -1,11 +1,12 @@
 ---
-title: 'Why Making the Blue LED Was Almost Impossible'
+title: 'Why Was Developing Blue LEDs Nearly Impossible? Unraveling the Mystery'
 slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
 date: 2024-09-15T00:43:52+09:00
 tags: ["Science", "Physics", "Semiconductor"]
 draft: false
 image: "img.webp"
 categories: ["IT / Technology"]
+description: 'An introduction to an English documentary program explaining how difficult it was to realize blue LEDs. Touches upon the great achievement of the Japanese researchers who solved a problem thought impossible, and the gap in how it was evaluated domestically.'
 ---
 
 ## Why Making the Blue LED Was Almost Impossible

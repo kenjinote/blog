@@ -1,11 +1,12 @@
 ---
-title: "Alat untuk menganalisis isi file executable (exe)"
+title: '4 Alat Praktis untuk Menganalisis dan Mengekstrak Isi File Executable (exe) Windows'
 slug: "実行ファイル（exe）の中身を解析するツール"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "file executable", "analisis"]
 draft: false
 image: "img_1.webp"
 categories: ["PC & Gadget"]
+description: 'Kami memperkenalkan alat-alat yang direkomendasikan untuk menganalisis dan mengekstrak (dekompresi) isi file eksekusi (exe) di Windows. Kami akan menjelaskan secara mudah tentang cara memeriksa struktur format PE, mengekstrak sumber daya, dan melakukan pengeditan biner menggunakan 7-Zip, Resource Hacker, dan lain-lain.'
 ---
 
 # Apa itu file executable (exe)?

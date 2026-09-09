@@ -1,11 +1,12 @@
 ---
-title: 'Hugo Command List'
+title: 'Hugo CLI Installation and List of Frequently Used Basic Commands'
 slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "command"]
 draft: false
 image: "img.webp"
 categories: ["blog management"]
+description: 'We introduce the CLI installation method for the fast static site generator Hugo, and a list of basic commands frequently used in blog operation. We explain the operations Hugo beginners should remember, such as launching a new site, creating articles, starting a local server, and building.'
 ---
 
 # What is Hugo?

@@ -1,11 +1,12 @@
 ---
-title: "Livres d'Affaires Recommandés"
+title: 'Ça change la vie ! Résumé des chefs-d''œuvre et livres d''affaires recommandés qu''il faut absolument lire'
 slug: "livres-daffaires-recommandes"
 date: 2023-03-19T18:13:14+09:00
 tags: ["Livres d'Affaires", "Livres"]
 draft: false
 image: "img.webp"
 categories: ["Style de Vie et Divers"]
+description: 'Nous avons sélectionné et vous présentons des chefs-d''œuvre et des livres d''affaires recommandés utiles pour le développement personnel et l''amélioration des compétences, que tout professionnel devrait lire au moins une fois, comme ''Comment se faire des amis'', ''Le courage de ne pas être aimé'', ''LIFE SHIFT'', et ''Les 7 habitudes de ceux qui réalisent tout ce qu''ils entreprennent''.'
 ---
 
 ## Comment Se Faire des Amis

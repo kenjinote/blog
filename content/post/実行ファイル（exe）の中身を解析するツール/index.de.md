@@ -1,11 +1,12 @@
 ---
-title: "Tools zur Analyse des Inhalts einer ausführbaren Datei (exe)"
+title: '4 nützliche Tools zum Analysieren und Entpacken des Inhalts von ausführbaren Windows-Dateien (exe)'
 slug: "tools-zur-analyse-des-inhalts-einer-ausfuehrbaren-datei-exe"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "ausführbare datei", "analyse"]
 draft: false
 image: "img_1.webp"
 categories: ["PC und Gadgets"]
+description: 'Wir stellen empfohlene Tools vor, mit denen sich der Inhalt ausführbarer Windows-Dateien (exe) analysieren und entpacken lässt. Wir erklären leicht verständlich, wie Sie mit Programmen wie 7-Zip und Resource Hacker die PE-Formatstruktur überprüfen, Ressourcen extrahieren und Binärdaten bearbeiten können.'
 ---
 
 # Was ist eine ausführbare Datei (exe)?

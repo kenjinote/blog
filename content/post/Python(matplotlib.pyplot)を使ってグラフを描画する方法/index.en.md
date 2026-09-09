@@ -1,11 +1,12 @@
 ---
-title: 'How to draw graphs using Python (matplotlib.pyplot)'
+title: 'How to Draw Graphs with Python and matplotlib [Google Colab Compatible]'
 slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Graph", "Math", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["Math/Cryptography/Quantum"]
+description: 'Explains the steps for beginners to easily draw and display sine and cosine wave graphs using Python''s matplotlib.pyplot library with Google Colaboratory. You can try it immediately without any environment setup.'
 ---
 
 ![img_1.png](img_1.webp)

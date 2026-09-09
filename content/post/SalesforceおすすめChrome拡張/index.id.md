@@ -1,11 +1,12 @@
 ---
-title: "Ekstensi Chrome yang Direkomendasikan untuk Salesforce"
+title: 'Pengembangan Salesforce Menjadi Lebih Mudah! Ringkasan Ekstensi Chrome yang Direkomendasikan'
 slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Ekstensi Chrome"]
 draft: false
 image: "img.webp"
 categories: ["TI & Teknologi"]
+description: 'Memperkenalkan ekstensi Chrome yang direkomendasikan yang secara dramatis merampingkan pengembangan dan pengoperasian Salesforce. Kami memilih alat yang wajib dilihat oleh para insinyur, seperti DevTools yang berguna untuk mencari bidang khusus dan menyusun SOQL, serta ekstensi yang berguna untuk pencarian kode.'
 ---
 
 ### Salesforce DevTools

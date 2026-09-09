@@ -1,11 +1,12 @@
 ---
-title: 'Simple Icon Collection Sites'
+title: 'Free to Use! 7 Recommended Simple Free Icon Material Sites'
 slug: "シンプルなアイコン集サイト"
 date: 2022-09-07T16:46:56+09:00
 tags: ["Icon", "Design"]
 draft: false
 image: "img_2.webp"
 categories: ["IT & Technology"]
+description: 'Carefully selects and introduces simple, easy-to-use, free icon material sites useful for web design and document creation. Packed with handy sites like Google Material Icons and GitHub Octicons that are also available for commercial use.'
 ---
 
 ## Google Material Symbols and Icons

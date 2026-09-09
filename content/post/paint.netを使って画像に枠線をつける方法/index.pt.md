@@ -1,11 +1,12 @@
 ---
-title: "Como adicionar uma borda a uma imagem usando paint.net"
+title: 'Método e passos simples para adicionar bordas a imagens com o paint.net'
 slug: "como-adicionar-uma-borda-a-uma-imagem-usando-paint-net"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "borda", "imagem"]
 draft: false
 image: "img_3.webp"
 categories: ["Tecnologia IA"]
+description: 'Explicamos como adicionar uma borda a uma imagem usando o software de edição de imagem paint.net. Apresentamos aos iniciantes o procedimento de criação de bordas utilizando a especificação de cores com a cor secundária e a alteração do tamanho da tela. Uma técnica útil que serve imediatamente quando você deseja decorar imagens em blogs e na criação de documentos.'
 ---
 
 Vou mostrar como adicionar uma borda a uma imagem usando o paint.net.

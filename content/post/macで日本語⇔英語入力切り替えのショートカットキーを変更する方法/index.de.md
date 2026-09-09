@@ -1,11 +1,12 @@
 ---
-title: "So ändern Sie die Tastenkombination zum Umschalten der Eingabe zwischen Japanisch und Englisch auf dem Mac"
+title: 'Wie man die Tastenkombination zum Wechseln zwischen japanischer und englischer Eingabe auf dem Mac ändert (für US-Tastaturen)'
 slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
 date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "ショートカットキー", "日本語入力"]
 draft: 
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'Erklärt, wie man das Umschalten zwischen japanischer und englischer Eingabe auf einem Mac (US-Tastatur) auf eine beliebige Tastenkombination wie „Alt + `“ ändert. Stellt auch die Einrichtungsschritte für macOS Ventura und Einstellungen vor, um zu verhindern, dass beim Umschalten Katakana eingefügt werden.'
 ---
 
 # Einführung

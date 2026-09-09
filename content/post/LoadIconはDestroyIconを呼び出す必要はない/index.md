@@ -1,10 +1,11 @@
 ---
-title: 'LoadIconはDestroyIconを呼び出す必要はない'
+title: 'LoadIcon関数で取得したアイコンはDestroyIconが不要な理由'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["アイコン", "LoadIcon", "DestroyIcon", "Windowsプログラミング"]
 draft: false
 categories: ["プログラミング"]
+description: 'Windows APIのLoadIconやLoadImageで取得したアイコンリソースに対してDestroyIconを呼び出すべきか否かの条件について解説します。リソースリークを防ぐための正しい仕様を整理しました。'
 ---
 
 # DestroyIconを呼び出す必要について

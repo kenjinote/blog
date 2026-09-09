@@ -1,11 +1,12 @@
 ---
-title: "J'ai acheté un ThinkPad (d'occasion)"
+title: 'Achat d''un ThinkPad T470s d''occasion ! Un avis honnête sur ses spécifications, sa facilité d''utilisation et ses défauts'
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Ordinateur portable"]
 draft: false
 image: "img.webp"
 categories: ["IT・Technologie"]
+description: 'Il s''agit d''un article de revue sur l''achat d''un ThinkPad T470s d''occasion pour le travail à distance. Présente l''expérience réelle de son utilisation, y compris ses spécifications de Core i7, 24 Go de RAM, l''écran WQHD, son état, ainsi que les plaintes telles que la disposition du clavier.'
 ---
 
 # J'ai acheté un ordinateur portable ThinkPad (d'occasion)

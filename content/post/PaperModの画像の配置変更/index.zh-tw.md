@@ -1,11 +1,12 @@
 ---
-title: "更改 PaperMod 中的圖片佈局"
+title: '使用 CSS 自訂 Hugo PaperMod 主題的圖片大小與配置方法'
 slug: "更改 PaperMod 中的圖片佈局"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["ブログ運営"]
+description: '說明如何在 Hugo 的 PaperMod 主題中自訂文章內的圖片大小與配置。介紹如何編輯 CSS (blank.css 與 post-entry.css)，將預設的寬度 100%、置中對齊，改為圖片文繞圖或縮小等具體步驟。'
 ---
 預設的佈局是將圖片置中且寬度為 100%，
 但因為有時覺得有點大，所以我嘗試讓圖片環繞在標題下方，

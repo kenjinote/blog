@@ -2,13 +2,14 @@
 
 
 
-title: "Cómo añadir un borde a una imagen usando paint.net"
+title: 'Pasos y métodos sencillos para agregar bordes a imágenes con paint.net'
 slug: "paint.netを使って画像に枠線をつける方法"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "borde", "imagen"]
 draft: false
 image: "img_3.webp"
 categories: ["IA y Tecnología"]
+description: 'Explicamos cómo añadir bordes a las imágenes utilizando el software de edición paint.net. Presentamos pasos para principiantes sobre cómo crear bordes especificando colores con el color secundario y cambiando el tamaño del lienzo. Una técnica útil para decorar imágenes en blogs y presentaciones.'
 ---
 
 

@@ -1,10 +1,11 @@
 ---
-title: "【Kupas Tuntas】 Apa itu Komputer Kuantum? 〜Prinsip Komputasi Utama dari Nol〜"
+title: 'Apa itu Komputer Kuantum? Penjelasan dari Nol tentang Prinsip Komputasi Tertinggi seperti Superposisi dan Keterikatan Kuantum'
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Komputer Kuantum", "Fisika", "Teknologi"]
 image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["Matematika・Kriptografi・Kuantum"]
+description: 'Menjelaskan dasar-dasar ''komputer kuantum'', yang memiliki potensi untuk melampaui batas superkomputer konvensional. Kami mengupas tuntas dan mudah dipahami bagaimana fenomena aneh mekanika kuantum seperti superposisi, keterikatan kuantum, dan gerbang kuantum digunakan untuk perhitungan.'
 ---
 
 ## Pendahuluan: "Pergeseran Paradigma Komputasi" yang Dibawa oleh Komputer Kuantum

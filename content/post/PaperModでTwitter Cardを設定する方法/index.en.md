@@ -1,11 +1,12 @@
 ---
-title: 'How to set up Twitter Card in PaperMod'
+title: 'How to Set Up Twitter Cards (X Cards) in Hugo PaperMod'
 slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
 categories: ["Blog Management"]
+description: 'Explains how to set up Twitter Cards in Hugo''s PaperMod theme. Introduces how to write in config.toml to apply it to the entire site, and how to specify images individually in the Markdown header of each article. These are setup steps useful for displaying eye-catching images when sharing on SNS.'
 ---
 # Introduction
 The PaperMod theme supports Twitter Cards.

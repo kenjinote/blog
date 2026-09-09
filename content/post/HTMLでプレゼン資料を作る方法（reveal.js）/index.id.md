@@ -1,11 +1,12 @@
 ---
-title: "Cara Membuat Presentasi dengan HTML (reveal.js)"
+title: 'Cara Menggunakan reveal.js: Membuat Materi Presentasi dengan HTML dan Markdown'
 slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "Presentasi"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Menjelaskan instalasi dan penggunaan dasar ''reveal.js'', sebuah alat yang memungkinkan Anda membuat presentasi secara intuitif menggunakan HTML dan Markdown. Memperkenalkan metode pemanfaatan yang mendukung animasi dan output PDF, serta sangat kompatibel dengan manajemen versi seperti Git.'
 ---
 
 # Cara Membuat Presentasi dengan HTML

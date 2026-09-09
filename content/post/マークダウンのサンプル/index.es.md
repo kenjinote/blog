@@ -2,10 +2,10 @@
 
 
 author: "Hugo Authors"
-title: "Guía de sintaxis de Markdown"
+title: 'Ejemplos de sintaxis Markdown para Hugo: sintaxis básica de encabezados, párrafos, etc.'
 slug: "マークダウンのサンプル"
 date: "2019-03-11"
-description: "Artículo de muestra que presenta la sintaxis básica de Markdown y el formato para elementos HTML."
+description: 'Presentamos ejemplos de sintaxis Markdown básica que puedes usar al crear contenido en el generador de sitios estáticos Hugo. Podrás ver cómo los encabezados (H1 a H6) y los párrafos son estilizados por el CSS de tu tema.'
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]
 series: ["Themes Guide"]

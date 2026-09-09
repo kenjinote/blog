@@ -3,13 +3,14 @@
 
 
 
-title: "Películas sobre matemáticos"
+title: '¡Protagonizadas por genios matemáticos! Obras maestras cinematográficas recomendadas e historias de criptografía'
 slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00
 tags: ["Películas","Matemáticos"]
 draft: false
 image: "images/img.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
+description: 'Te presentamos películas clásicas recomendadas que cuentan con matemáticos geniales como protagonistas. Esta es una selección de obras maestras donde la belleza de las matemáticas se entrelaza con el drama humano, como "Una mente maravillosa", "The Imitation Game" sobre el descifrado de la máquina Enigma y la historia real de Ramanujan "El hombre que conocía el infinito".'
 ---
 
 

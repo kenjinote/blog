@@ -1,11 +1,12 @@
 ---
-title: "【HUGO】本機環境顯示預覽"
+title: '【Hugo入門】Windows 上的安裝與在本機環境中的預覽顯示方法'
 slug: "【HUGO】本機環境顯示預覽"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["部落格營運"]
+description: '淺顯易懂地解說在 Windows 環境下安裝靜態網站產生器「Hugo」的步驟、設定環境變數 Path 的方法，以及啟動本機伺服器預覽部落格文章的指令用法。'
 ---
 # 安裝 HUGO
 

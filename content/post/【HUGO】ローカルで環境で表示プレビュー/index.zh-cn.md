@@ -1,11 +1,12 @@
 ---
-title: '【HUGO】在本地环境预览显示'
+title: '【Hugo入门】在Windows上的安装与本地环境预览显示方法'
 slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["博客运营"]
+description: '通俗易懂地讲解在Windows环境中安装静态网站生成器“Hugo”的步骤、配置环境变量Path的方法，以及启动本地服务器预览博客文章的命令用法。'
 ---
 # 安装 HUGO
 

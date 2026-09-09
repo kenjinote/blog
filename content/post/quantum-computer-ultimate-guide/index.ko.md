@@ -1,5 +1,5 @@
 ---
-title: "[완벽 가이드] 양자 컴퓨터의 원리와 메커니즘: 양자역학부터 알고리즘까지"
+title: '양자 컴퓨터의 원리와 구조 [완전 총망라] 무어의 법칙의 한계에서 양자 역학까지'
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"
 tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
@@ -7,6 +7,7 @@ categories: ["Math, Crypto, Quantum"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: '고전 컴퓨터의 물리적 한계와 무어의 법칙의 종말부터, 양자 터널 효과라는 양자 역학적 효과의 장벽까지, 양자 컴퓨터의 서막에 이르는 배경을 철저히 설명합니다. 차세대 정보 처리 기술을 이해하기 위한 완전 가이드 제1장입니다.'
 ---
 
 

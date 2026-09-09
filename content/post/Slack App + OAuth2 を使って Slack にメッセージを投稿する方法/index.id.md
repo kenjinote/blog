@@ -1,11 +1,12 @@
 ---
-title: "Cara Memposting Pesan ke Slack Menggunakan Slack App + OAuth2"
+title: 'Cara Memposting Pesan dengan Slack API dan OAuth2 (Contoh Implementasi C++)'
 slug: "Cara Memposting Pesan ke Slack Menggunakan Slack App + OAuth2"
 date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["Manajemen Blog"]
+description: 'Menjelaskan cara menggunakan token OAuth Aplikasi Slack untuk memposting pesan melalui Slack Web API. Memperkenalkan langkah-langkah pengaturan ruang lingkup dan mendapatkan token akses, hingga contoh kode implementasi spesifik dalam C++ yang menggunakan WinHTTP.'
 ---
 
 ## ✅ Cara Memposting Menggunakan Token Akses (Slack Web API)

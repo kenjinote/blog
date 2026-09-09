@@ -1,11 +1,12 @@
 ---
-title: 'I Collected Various Version Information Dialogs'
+title: 'A Collection of Version Information Dialog Screens from Various Software'
 slug: "いろんなバージョン情報ダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Version Information", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
 categories: ["PC/Gadgets"]
+description: 'Introduces a list of UI designs for ''Version Information Dialog'' screens from various PC software and tools used daily, such as Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge, and LINE.'
 ---
 
 # I Collected Various Version Information Dialogs

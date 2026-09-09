@@ -1,11 +1,12 @@
 ---
-title: "C++ से C++/CLI DLL के माध्यम से PowerShell को निष्पादित करने के चरण"
+title: '【VS2022】C++ से PowerShell चलाएं! C++/CLI DLL के माध्यम से एकीकरण प्रक्रिया'
 slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
 categories: ["प्रोग्रामिंग"]
+description: 'क्या आप मूल C++ से PowerShell स्क्रिप्ट को कॉल करने और निष्पादित करने का तरीका ढूंढ रहे हैं? हम Visual Studio 2022 वातावरण में C++/CLI रैपर DLL बनाने और सुचारू सिस्टम एकीकरण प्राप्त करने के लिए विशिष्ट कार्यान्वयन चरणों की पूरी तरह से व्याख्या करेंगे。'
 ---
 
 # 🎯 C++ से C++/CLI DLL के माध्यम से PowerShell को निष्पादित करने के चरण (Visual Studio 2022 / C++)

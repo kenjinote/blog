@@ -3,13 +3,14 @@
 
 
 
-title: "TeamViewer로 간단한 원격 연결"
+title: '[초보자용] TeamViewer로 간단하게 원격 데스크톱에 연결하는 방법'
 slug: "TeamViewerで簡単リモート接続"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "명령어", "원격 연결"]
 draft: false
 image: "img.webp"
 categories: ["IT·테크놀로지"]
+description: 'TeamViewer를 사용하여 간단하게 원격 데스크톱 연결을 하는 방법을 설명합니다. 명령줄에서 ID나 비밀번호를 지정하고 바로가기로 연결을 자동화 및 간소화하는 유용한 팁도 함께 소개합니다.'
 ---
 
 

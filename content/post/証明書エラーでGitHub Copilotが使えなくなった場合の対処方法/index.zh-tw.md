@@ -1,11 +1,12 @@
 ---
-title: "如何解決因憑證錯誤導致 GitHub Copilot 無法使用的問題"
+title: 'GitHub Copilot的憑證錯誤解決方法（UNABLE_TO_VERIFY_LEAF_SIGNATURE）'
 slug: "如何解決因憑證錯誤導致-github-copilot-無法使用的問題"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
 categories: ["工具與開發環境"]
+description: '解說當GitHub Copilot發生「unable to verify the first certificate」等憑證錯誤而無法使用時的解決方法。介紹透過變更ESET設定的具體步驟。'
 ---
 
 # 當 GitHub Copilot 顯示以下錯誤時的解決方法

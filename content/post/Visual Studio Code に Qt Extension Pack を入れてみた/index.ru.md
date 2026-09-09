@@ -1,11 +1,12 @@
 ---
-title: "Я попробовал установить Qt Extension Pack в Visual Studio Code"
+title: 'Создание среды разработки Qt в VSCode! Установка и использование Qt Extension Pack'
 slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
 date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
 categories: ["Инструменты и среда разработки"]
+description: 'Представлены шаги по интеграции расширения «Qt Extension Pack» для разработки приложений Qt в VSCode (Visual Studio Code). Рекомендуется для тех, кто хочет создать легкую среду разработки, заменяющую Qt Creator.'
 ---
 
 # Начинаем разработку на Qt в VSCode: Как установить Qt Extension Pack

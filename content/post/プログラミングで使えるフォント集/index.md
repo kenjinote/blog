@@ -1,11 +1,12 @@
 ---
-title: 'プログラミングで使えるフォント集'
+title: 'プログラミング向けおすすめフォント集｜見やすく開発効率が上がる無料フォント'
 slug: "プログラミングで使えるフォント集"
 date: 2024-03-30T02:21:31+09:00
 tags: ["プログラミング", "フォント"]
 draft: false
 image: "img.webp"
 categories: ["プログラミング"]
+description: 'JetBrains Mono、HackGen（白源）、Ricty Diminished、Cica、Miguなど、コーディングに最適なプログラミング用フォントをご紹介します。エディタの視認性を高めて開発効率をアップさせましょう。'
 ---
 
 ## JetBrains Mono

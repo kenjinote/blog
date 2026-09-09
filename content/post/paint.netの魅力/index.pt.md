@@ -1,11 +1,12 @@
 ---
-title: "O encanto do paint.net"
+title: 'Gratuito e rico em recursos! Características e atrativos do software de edição de imagem ''paint.net'''
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"
 categories: ["AI・テクノロジー"]
+description: 'Apresentamos os atrativos do software de edição de imagem ''paint.net'', gratuito e altamente funcional. Repleto de recursos convenientes que não estão no Paint padrão do Windows, como camadas, ajuste de transparência, vários efeitos, etc. Explicamos claramente as suas características de operação leve e intuitiva, e o procedimento de instalação da versão gratuita.'
 ---
 Apresentarei o software de edição de imagens paint.net, que costumo usar no meu trabalho de desenvolvimento.
 

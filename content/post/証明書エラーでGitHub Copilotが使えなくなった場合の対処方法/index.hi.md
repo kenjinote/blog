@@ -1,11 +1,12 @@
 ---
-title: "सर्टिफिकेट एरर के कारण GitHub Copilot काम न करने पर कैसे ठीक करें"
+title: 'GitHub Copilot के लिए प्रमाणपत्र त्रुटि समाधान (UNABLE_TO_VERIFY_LEAF_SIGNATURE)'
 slug: "सर्टिफिकेट-एरर-के-कारण-github-copilot-काम-न-करने-पर-कैसे-ठीक-करें"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
 categories: ["उपकरण और विकास परिवेश"]
+description: 'हम समझाएंगे कि जब ''unable to verify the first certificate'' जैसी प्रमाणपत्र त्रुटि के कारण GitHub Copilot अनुपयोगी हो जाता है तो इसे कैसे हल करें। ESET सेटिंग्स को बदलकर विशिष्ट प्रक्रियाएं प्रस्तुत की जाती हैं।'
 ---
 
 # GitHub Copilot में निम्नलिखित त्रुटि प्रदर्शित होने पर क्या करें

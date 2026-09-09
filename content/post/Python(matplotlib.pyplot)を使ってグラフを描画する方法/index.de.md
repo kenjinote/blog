@@ -1,11 +1,12 @@
 ---
-title: "Wie man Diagramme mit Python (matplotlib.pyplot) zeichnet"
+title: 'Wie man Graphen mit Python und matplotlib zeichnet 【Google Colab kompatibel】'
 slug: "Wie man Diagramme mit Python (matplotlib.pyplot) zeichnet"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Diagramme", "Mathematik", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["Mathematik・Kryptographie・Quanten"]
+description: 'Erklärt für Anfänger die Schritte zum einfachen Zeichnen und Anzeigen von Sinus- und Kosinus-Graphen mit der matplotlib.pyplot-Bibliothek von Python unter Verwendung von Google Colaboratory. Kann sofort und ohne Einrichtung einer Umgebung ausprobiert werden.'
 ---
 
 ![img_1.png](img_1.webp)

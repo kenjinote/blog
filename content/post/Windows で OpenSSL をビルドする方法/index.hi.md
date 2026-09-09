@@ -1,11 +1,12 @@
 ---
-title: "Windows पर OpenSSL को कैसे बिल्ड करें"
+title: 'Windows वातावरण में OpenSSL को बिल्ड/इंस्टॉल करने की प्रक्रिया और वातावरण निर्माण का तरीका'
 slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'Windows वातावरण में C भाषा के लिए एन्क्रिप्शन संचार लाइब्रेरी ''OpenSSL'' को बिल्ड करने का तरीका समझाया गया है। Perl, NASM, Visual Studio 2022 जैसे आवश्यक उपकरणों की तैयारी से लेकर वास्तविक स्रोत कोड को बिल्ड करने की प्रक्रिया तक विस्तार से जानकारी दी गई है।'
 ---
 
 # OpenSSL क्या है?

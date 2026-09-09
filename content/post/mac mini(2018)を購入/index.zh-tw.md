@@ -1,11 +1,12 @@
 ---
-title: "購買了 mac mini (2018)"
+title: '為了開發iOS應用程式而購買二手Mac mini(2018)的理由與規格'
 slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: '為了在家建立舒適的iOS應用程式開發環境，我在Mercari上購買了舊款的Mac mini (2018)。在此為您介紹決定購買的理由、詳細規格，以及環境建置的第一步。'
 ---
 
 # 購買了 mac mini (2018)

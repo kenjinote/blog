@@ -1,11 +1,12 @@
 ---
-title: "Menara Hanoi"
+title: '[Pengantar Python] Penjelasan Algoritma ''Menara Hanoi'' yang Diselesaikan dengan Pemrosesan Rekursif'
 slug: "menara-hanoi"
 date: 2025-04-17T22:23:14+09:00
 tags: ["Menara Hanoi", "Algoritma", "Python"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Dengan menggunakan teka-teki populer ''Menara Hanoi'' sebagai subjek, artikel ini menjelaskan secara jelas konsep ''pemanggilan rekursif (recursive)'' dalam pemrograman lengkap dengan contoh kode di Python. Direkomendasikan bagi para pemula yang ingin belajar dasar algoritma.'
 ---
 
 # Menara Hanoi

@@ -1,11 +1,12 @@
 ---
-title: "Como fechar e reiniciar o Explorador de Arquivos"
+title: 'Resumo de como encerrar e reiniciar o Windows Explorer'
 slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["Explorador de Arquivos"]
 draft: false
 image: "img_2.webp"
 categories: ["TI e Tecnologia"]
+description: 'Explicamos várias maneiras de encerrar e reiniciar o Explorer (explorer.exe) no Windows. Apresentamos procedimentos fáceis de entender usando a barra de tarefas, o gerenciador de tarefas e o prompt de comando.'
 ---
 
 ## Como fechar usando o botão direito na barra de tarefas

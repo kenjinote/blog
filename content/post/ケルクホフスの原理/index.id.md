@@ -1,11 +1,12 @@
 ---
-title: "Prinsip Kerckhoffs"
+title: 'Apa Itu Prinsip Kerckhoffs? Penjelasan Mudah Konsep Penting yang Mendukung Keamanan Kriptografi'
 slug: "prinsip-kerckhoffs"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Prinsip Kerckhoffs", "Kriptografi"]
 draft: false
 image: "img_2.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Penjelasan sederhana bagi pemula tentang ''Prinsip Kerckhoffs'' yang esensial dalam mempelajari keamanan informasi dan kriptografi. Menjelaskan dengan rinci alasan dan ide penting yang menjadi pilar keamanan modern: ''sistem enkripsi harus tetap aman meski cara kerjanya diketahui''.'
 ---
 
 # Prinsip Kerckhoffs

@@ -4,13 +4,14 @@
 
 
 
-title: "WinGet을 사용하여 명령어로 앱 설치하기"
+title: 'Windows 11의 WinGet 명령으로 앱을 간단히 설치 및 관리하는 방법'
 slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["도구 및 개발 환경"]
+description: 'Windows 11의 패키지 매니저 ''WinGet''을 사용하여 명령어로 앱을 설치하는 방법을 해설합니다. Chrome이나 VSCode, Slack 등의 주요 소프트웨어를 명령줄에서 빠르게 도입하고 관리하는 절차를 소개합니다.'
 ---
 
 

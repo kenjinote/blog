@@ -1,11 +1,12 @@
 ---
-title: 'FizzBuzz'
+title: '编程入门的敲门砖“FizzBuzz问题”是什么？讲解Python的写法'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "算法"]
 draft: false
 image: "img.webp"
 categories: ["编程"]
+description: '针对程序员面试中经常出现的“FizzBuzz问题”，本文将简单明了地讲解其概念以及使用Python的具体代码示例（条件分支）。无论是初学者还是想要复习基础的人都不容错过。'
 ---
 
 ## FizzBuzz到底是什么？

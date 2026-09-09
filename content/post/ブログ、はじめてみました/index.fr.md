@@ -1,11 +1,12 @@
 ---
-title: "J'ai commencé un blog"
+title: 'J''ai lancé un blog avec le générateur de site statique Hugo ! Notes quotidiennes et techniques'
 slug: "jai-commence-un-blog"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Divers"]
 draft: false
 image: "images/komeda.webp"
 categories: ["Gestion de blog"]
+description: 'J''ai créé un nouveau blog personnel en utilisant le générateur de site statique « Hugo ». J''ai l''intention d''y publier de manière détendue, comme dans un bloc-notes, des mémos techniques, du code de programmation et des petits événements du quotidien.'
 ---
 
 ## J'ai commencé un blog

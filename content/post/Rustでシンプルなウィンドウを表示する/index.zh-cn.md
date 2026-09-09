@@ -1,11 +1,12 @@
 ---
-title: '用 Rust 显示一个简单的窗口'
+title: '使用Rust和winapi创建并显示Windows简单窗口的方法'
 slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","窗口"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["编程"]
+description: '介绍在Rust中使用`winapi`创建并显示Windows简单窗口的方法。从Cargo.toml的设置到窗口过程的实现，详细讲解GUI编程基础的源代码。'
 ---
 
 用 Rust 显示一个简单的窗口

@@ -1,11 +1,12 @@
 ---
-title: '简单的图标集合网站'
+title: '免费使用！7个简约实用的免费图标素材网站推荐'
 slug: "シンプルなアイコン集サイト"
 date: 2022-09-07T16:46:56+09:00
 tags: ["图标","设计"]
 draft: false
 image: "img_2.webp"
 categories: ["IT・科技"]
+description: '精选介绍有助于网页设计和制作资料、简约且易用的免费图标素材网站。汇集了Google Material Icons、GitHub Octicons等可免费商用的实用网站。'
 ---
 
 ## Google Material Symbols and Icons

@@ -1,11 +1,12 @@
 ---
-title: "如何修復多螢幕每次開機時DPI設定被重設的問題"
+title: '【Windows 11】多螢幕環境下開機時DPI設定被重置的錯誤解決方法'
 slug: "如何修復多螢幕每次開機時dpi設定被重設的問題"
 date: 2024-04-29T19:42:20+09:00
 tags: ["多螢幕", "DPI", "控制台"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '解說在Windows 11的多螢幕環境中，電腦開機時螢幕的DPI（縮放）設定會自動被重置的問題解決方法。整理了從控制台停用快速啟動的步驟。'
 ---
 
 ※ 此為 Windows 11 的設定步驟。

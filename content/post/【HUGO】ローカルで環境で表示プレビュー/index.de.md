@@ -1,11 +1,12 @@
 ---
-title: "【HUGO】Vorschau in der lokalen Umgebung anzeigen"
+title: '[Hugo Einführung] Von der Installation unter Windows bis zur Vorschau in einer lokalen Umgebung'
 slug: "【HUGO】Vorschau in der lokalen Umgebung anzeigen"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["Blog-Betrieb"]
+description: 'Wir erklären auf leicht verständliche Weise die Schritte zur Installation des statischen Website-Generators „Hugo“ in einer Windows-Umgebung, wie man den Pfad der Umgebungsvariablen setzt und wie man Befehle verwendet, um einen lokalen Server zu starten und Blog-Artikel in der Vorschau anzuzeigen.'
 ---
 # HUGO Installation
 

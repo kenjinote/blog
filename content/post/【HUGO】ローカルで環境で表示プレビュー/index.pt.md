@@ -1,11 +1,12 @@
 ---
-title: "【HUGO】Visualização no ambiente local"
+title: '[Introdução ao Hugo] Da instalação no Windows a como exibir a visualização no ambiente local'
 slug: "【HUGO】Visualização no ambiente local"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["Operação do Blog"]
+description: 'Explicamos de forma fácil de entender os procedimentos para instalar o gerador de sites estáticos ''Hugo'' em um ambiente Windows, como definir a variável de ambiente Path, e como usar comandos para iniciar um servidor local e visualizar os artigos do blog.'
 ---
 # Instalação do HUGO
 

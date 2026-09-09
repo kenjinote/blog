@@ -1,11 +1,12 @@
 ---
-title: 'How to Create a Shortcut to Lock Your Computer'
+title: 'Lock Your Windows PC in 1 Second! How to Create and Use a Handy Shortcut'
 slug: "コンピューターをロックするショートカットを作成する方法"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Lock Computer", "Shortcut"]
 draft: false
 image: "img.webp"
 categories: ["PC & Gadgets"]
+description: 'Clearly explains how to create a shortcut to lock your Windows computer with a single click, complete with images. Also introduces the method of locking instantly using the Win+L keys, useful as a security measure when leaving your desk.'
 ---
 
 Here is how to create a shortcut to lock your computer.

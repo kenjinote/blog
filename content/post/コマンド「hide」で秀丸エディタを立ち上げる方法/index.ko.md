@@ -6,13 +6,14 @@
 
 
 
-title: "명령어 ''hide''로 Hidemaru 에디터를 실행하는 방법"
+title: '히데마루 에디터를 ''hide'' 명령 한 방에 실행! Windows의 편리한 설정 방법'
 slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["명령어", "Hidemaru 에디터", "레지스트리"]
 draft: false
 image: "img_2.webp"
 categories: ["도구・개발환경"]
+description: 'Windows 10/11에서 ''실행''이나 명령 프롬프트에 ''hide''라고 입력하는 것만으로 히데마루 에디터를 빠르게 실행하는 방법을 해설합니다. 레지스트리 편집기의 App Paths를 사용한 편리한 맞춤 설정 절차입니다.'
 ---
 
 

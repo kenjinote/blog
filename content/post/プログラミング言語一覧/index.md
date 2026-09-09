@@ -1,11 +1,12 @@
 ---
-title: 'プログラミング言語一覧'
+title: 'メジャーからマイナーまで！プログラミング言語一覧とそれぞれの特徴まとめ'
 slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["プログラミング言語"]
 draft: true
 image: "img.webp"
 categories: ["プログラミング"]
+description: 'C言語、Python、Java、JavaScriptから、Rust、Go、OCaml、Clojureといった様々なプログラミング言語を一覧化しました。開発や学習の参考に、各言語の概要や特徴を確認してみましょう。'
 ---
 
 # プログラミング言語一覧

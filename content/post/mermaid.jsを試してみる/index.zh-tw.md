@@ -1,5 +1,5 @@
 ---
-title: "嘗試使用 mermaid.js"
+title: '什麼是 Mermaid.js？導入 Hugo 並繪製圖表的方法'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
@@ -7,6 +7,7 @@ draft: false
 mermaid: true
 image: "img_2.webp"
 categories: ["AI・科技"]
+description: '淺顯易懂地說明能夠以純文字繪製流程圖、甘特圖等圖表的 JavaScript 函式庫「Mermaid.js」的概要，以及將其導入靜態網站生成器 Hugo 並進行設定、使其可供使用的具體步驟。'
 ---
 
 ## 什麼是 mermaid.js

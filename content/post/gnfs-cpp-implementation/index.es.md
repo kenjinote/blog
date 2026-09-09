@@ -7,13 +7,14 @@
 
 
 
-title: '[Análisis completo] Implementando y entendiendo el algoritmo de descifrado más fuerte ''GNFS'' en C++'
+title: 'Implementación del algoritmo de criba general de cuerpos de números (GNFS) en C++｜Cómo funciona el algoritmo para descifrar RSA'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Matemáticas", "Criptografía"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
 categories: ["Matemáticas/Criptografía/Cuántica"]
+description: 'Una explicación exhaustiva con código en C++ sobre cómo funciona la "criba general de cuerpos de números (GNFS)", un algoritmo de factorización de enteros utilizado para descifrar RSA. Un contenido indispensable para amantes de la programación que profundiza en la lógica de cálculo usando la librería Boost y las profundidades de la teoría algebraica de números.'
 ---
 
 

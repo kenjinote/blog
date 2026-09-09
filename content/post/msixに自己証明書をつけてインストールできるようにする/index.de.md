@@ -1,11 +1,12 @@
 ---
-title: "Zulassen der msix-Installation mit einem selbstsignierten Zertifikat"
+title: 'Ein Muss für Windows-App-Entwickler! Wie man MSIX mit einem selbstsignierten Zertifikat für die lokale Installation versieht'
 slug: "msixに自己証明書をつけてインストールできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "自己証明書", "インストール"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'Erklärt leicht verständlich mit PowerShell-Befehlen die konkreten Schritte zur Erstellung und Zuweisung eines selbstsignierten Zertifikats ohne kommerzielles Zertifikat für MSIX-Pakete, die sich für die Testverteilung von Windows-Apps eignen, um die Installation in einer lokalen Umgebung zu ermöglichen.'
 ---
 
 # Zulassen der msix-Installation mit einem selbstsignierten Zertifikat

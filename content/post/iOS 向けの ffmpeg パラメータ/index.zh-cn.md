@@ -1,11 +1,12 @@
 ---
-title: '面向 iOS 的 ffmpeg 参数'
+title: '面向iOS优化！让视频流畅播放的ffmpeg转换参数'
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
 categories: ["PC与数码"]
+description: '介绍为了在iPhone或iPad等iOS设备上流畅播放视频的最佳ffmpeg命令和参数设置。详细讲解各选项的含义及设置要点。'
 ---
 
 # 面向 iOS 优化的 ffmpeg 转换参数

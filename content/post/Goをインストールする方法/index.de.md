@@ -1,11 +1,12 @@
 ---
-title: "Wie man Go installiert"
+title: 'Installationsschritte für die Go-Sprache (Golang) und wie Sie Ihr erstes Programm ausführen'
 slug: "wie-man-go-installiert"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "Installation"]
 draft: false
 image: "images/cover.webp"
 categories: ["Programmierung"]
+description: 'Wir erklären Anfängern, wie sie die von Google entwickelte Programmiersprache „Go (Golang)“ installieren. Vom Herunterladen des Installationsprogramms über das Erstellen eines Hello World-Programms bis hin zum Kompilieren und Ausführen ist dies perfekt für den Einstieg in die Go-Sprache.'
 ---
 # Einführung
 Go ist eine relativ neue Programmiersprache, die 2009 von Google veröffentlicht wurde.

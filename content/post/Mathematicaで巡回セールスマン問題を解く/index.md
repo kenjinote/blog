@@ -1,11 +1,12 @@
 ---
-title: 'Mathematicaで巡回セールスマン問題を解く'
+title: 'Mathematicaで巡回セールスマン問題（TSP）を解く方法'
 slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "巡回セールスマン問題", "アルゴリズム", "数学"]
 draft: false
 image: "img.webp"
 categories: ["数学・暗号・量子"]
+description: '数式処理システムMathematicaを用いて、巡回セールスマン問題（TSP）を解く方法を解説します。SparseArray関数を使って都市間の距離行列を作成し、FindShortestTourで最短ルートを求める手順を紹介します。'
 ---
 # Mathematicaで巡回セールスマン問題を解く
 

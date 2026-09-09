@@ -7,13 +7,14 @@
 
 
 
-title: "'연하장 작성 앱 개발 방송 VOL.1 (대본)'"
+title: '【C++】연하장 제작 앱 개발 방송 VOL.1: 환경 구축과 Direct2D 초기화'
 slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["연하장 작성 앱 개발 방송", "YouTube"]
 draft: false
 image: "img.webp"
 categories: ["IT・테크놀로지"]
+description: 'C++를 사용한 연하장 제작 앱 개발의 YouTube 방송 제1회입니다. GIT 저장소 생성부터 메인 윈도우 표시, Direct2D의 초기화 및 HelloWorld의 구현까지, 앱 개발의 기반이 되는 환경 구축 절차를 소스 코드와 함께 해설합니다.'
 ---
 
 

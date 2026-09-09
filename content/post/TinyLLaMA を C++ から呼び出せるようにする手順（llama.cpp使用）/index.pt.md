@@ -1,11 +1,12 @@
 ---
-title: "Passos para chamar o TinyLLaMA a partir de C++ (usando llama.cpp)"
+title: 'Rodar o TinyLLaMA em C++! Passos de construção do ambiente LLM local usando o llama.cpp'
 slug: "Passos para chamar o TinyLLaMA a partir de C++ (usando llama.cpp)"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
 categories: ["Programação"]
+description: 'Explicamos o passo a passo da configuração do TinyLLaMA para chamá-lo em C++. Resumimos tudo de maneira acessível aos iniciantes, desde o build do llama.cpp até o download do modelo no HuggingFace e seus diferentes tipos de ambientes de construção.'
 ---
 
 # ✅ Configuração do TinyLLaMA × C++ (usando `llama.cpp`)

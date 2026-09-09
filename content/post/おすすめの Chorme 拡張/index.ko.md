@@ -4,13 +4,14 @@
 
 
 
-title: "'추천하는 Chrome 확장 프로그램'"
+title: 'Chrome·Edge를 극적으로 편리하게 해주는 추천 브라우저 확장 프로그램 모음'
 slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome 확장 프로그램", "브라우저", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
 categories: ["IT・테크놀로지"]
+description: '마우스 제스처, 광고 차단, DeepL 번역, ChatGPT 사이드바 이용 등 Google Chrome이나 Microsoft Edge 브라우징을 극적으로 효율화하는 추천 확장 프로그램을 소개합니다.'
 ---
 
 

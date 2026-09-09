@@ -1,11 +1,12 @@
 ---
-title: '如何创建关闭 Windows 的快捷方式'
+title: '一键关闭电脑电源！创建Windows关机快捷方式的方法'
 slug: "Windows をシャットダウンするショートカットを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "关机", "快捷方式"]
 draft: false
 image: "img.webp"
 categories: ["PC・数码"]
+description: '讲解如何创建能从桌面一键关闭Windows的便捷快捷方式。图文并茂地详细介绍使用“shutdown.exe”命令的设置步骤以及更改为醒目图标的方法。'
 ---
 
 本文介绍如何创建关闭 Windows 的快捷方式。

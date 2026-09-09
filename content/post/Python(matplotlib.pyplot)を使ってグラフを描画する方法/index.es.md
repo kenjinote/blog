@@ -2,13 +2,14 @@
 
 
 
-title: "Cómo dibujar un gráfico usando Python (matplotlib.pyplot)"
+title: 'Cómo dibujar gráficos con Python y matplotlib 【Compatible con Google Colab】'
 slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Gráfico", "Matemáticas", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
+description: 'Explicamos para principiantes los pasos para dibujar y mostrar fácilmente gráficos de ondas sinusoidales y cosenoidales usando la biblioteca matplotlib.pyplot de Python en Google Colaboratory. Puedes probarlo de inmediato sin necesidad de configurar un entorno.'
 ---
 
 

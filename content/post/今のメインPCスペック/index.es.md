@@ -3,13 +3,14 @@
 
 
 
-title: "Especificaciones actuales de mi PC principal"
+title: '【Core i7-8700K / 32GB de RAM】Especificaciones de mi PC principal actual y entorno de trabajo'
 slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
 categories: ["PC y gadgets"]
+description: 'He resumido las especificaciones de mi PC principal actual (Core i7-8700K, 32GB de RAM, Windows 11) y mi entorno de trabajo. Introduzco esta configuración actual usando un PC de escritorio de Mouse Computer como un memorándum.'
 ---
 
 

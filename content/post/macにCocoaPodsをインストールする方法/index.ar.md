@@ -1,11 +1,12 @@
 ---
-title: "طريقة تثبيت CocoaPods على mac"
+title: 'كيفية تثبيت CocoaPods على Mac وحل الأخطاء'
 slug: "طريقة-تثبيت-cocoapods-على-mac"
 date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]
 draft: false
 image: "img_1.webp"
 categories: ["PC・ガジェット"]
+description: 'نشرح بالتفصيل خطوات تثبيت CocoaPods باستخدام الوحدة الطرفية (Terminal) في بيئة Mac. كما نقدم طرق حل الأخطاء عند تنفيذ "sudo gem install cocoapods" وأمر التثبيت باستخدام Homebrew.'
 ---
 
 # التثبيت عبر الجهاز الطرفي

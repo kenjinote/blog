@@ -1,11 +1,12 @@
 ---
-title: "Cara Memulai dengan Rust"
+title: 'Pengenalan Bahasa Rust: Cara Memulai, dari Fitur hingga Instalasi dan Hello World'
 slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Pemrograman"]
+description: 'Menjelaskan cara memulai bahasa pemrograman Rust yang cepat dan aman memori untuk pemula. Kami memperkenalkannya secara komprehensif, dari fitur bahasa dan metode instalasi, hingga prosedur menjalankan program pertama yaitu Hello World, dan rekomendasi dokumentasi berbahasa Jepang.'
 ---
 # Pengantar
 Rust adalah bahasa pemrograman yang relatif baru yang memungkinkan Anda menulis modul yang cepat dan efisien dalam penggunaan memori dengan sintaksis modern.

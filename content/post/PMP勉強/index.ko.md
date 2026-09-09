@@ -6,13 +6,14 @@
 
 
 
-title: "'PMP 공부'"
+title: 'PMP 시험의 기초 지식과 수험 공부 요약: PMBOK 제7판 대응'
 slug: "PMP勉強"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "공부"]
 draft: false
 image: "img.webp"
 categories: ["IT・테크놀로지"]
+description: '프로젝트 관리 자격증 ''PMP''의 시험공부를 위한 핵심을 정리했습니다. 시험 개요와 합격 기준 외에도 서번트 리더십의 10가지 원칙, 애자일 소프트웨어 개발 선언의 4가지 가치관 등 PMBOK 제7판에 대응하는 중요 항목을 설명합니다.'
 ---
 
 

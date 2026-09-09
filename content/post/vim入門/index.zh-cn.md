@@ -1,11 +1,12 @@
 ---
-title: 'vim入门'
+title: '【初学者指南】Vim入门：从安装到基础的启动、退出及模式解析'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "文本编辑器"]
 draft: false
 image: "img.webp"
 categories: ["工具与开发环境"]
+description: '面向初学者讲解Vim的基本使用方法。全面涵盖Windows环境下的安装方法、启动与退出的命令（如保存、强制退出等），以及命令模式与输入模式的区别等入门第一步的必知内容。'
 ---
 
 ![img_1.png](img_1.webp)

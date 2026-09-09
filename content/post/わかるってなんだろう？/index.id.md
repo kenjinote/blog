@@ -1,11 +1,12 @@
 ---
-title: "Apa itu Mengerti?"
+title: 'Apa Artinya ''Memahami''? Tentang Ambiguitas Pemahaman dan Nilainya'
 slug: "apa-itu-mengerti"
 date: 2022-09-24T02:38:18+09:00
 tags: ["Catatan"]
 draft: false
 image: "img.webp"
 categories: ["IT・Teknologi"]
+description: 'Mengeksplorasi hakikat dari sensasi ''paham'' yang kita rasakan dalam kehidupan sehari-hari. Walaupun kita dapat bertahan hidup tanpa pemahaman sempurna, artikel ini menjelaskan nilai dari pemahaman yang mendalam serta betapa menariknya hal-hal yang ''tidak diketahui'' di dunia ini.'
 ---
 # Apa itu Mengerti?
 

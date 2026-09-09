@@ -7,12 +7,13 @@
 
 
 
-title: "【Análisis Completo】¿Qué es una computadora cuántica? 〜El principio de cálculo definitivo desde cero〜"
+title: '¿Qué es un ordenador cuántico? Explicación desde cero del principio de cálculo definitivo: superposición y entrelazamiento cuántico'
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Computación cuántica", "Física", "Tecnología"]
 image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
+description: 'Explicamos los fundamentos del ''ordenador cuántico'', que tiene el potencial de superar los límites de las supercomputadoras convencionales. Desentrañamos de manera profesional y comprensible cómo se utilizan para el cálculo los fenómenos asombrosos de la mecánica cuántica, como la superposición, el entrelazamiento cuántico y las puertas cuánticas.'
 ---
 
 

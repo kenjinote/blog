@@ -1,11 +1,12 @@
 ---
-title: 'How to switch applications like Windows (Alt+Tab) on a Mac'
+title: 'Setting Method to Switch Apps Windows-Style (Alt+Tab) on Mac'
 slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "shortcut keys", "application switching"]
 draft: 
 image: "img.webp"
 categories: ["PC/Gadgets"]
+description: 'We clearly explain the installation procedure and setting method for a convenient third-party app that realizes application switching like ''Alt+Tab'' on Windows, which is difficult with Mac''s standard features.'
 ---
 
 # Introduction

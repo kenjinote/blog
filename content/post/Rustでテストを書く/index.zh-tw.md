@@ -1,11 +1,12 @@
 ---
-title: "在 Rust 中編寫測試"
+title: 'Rust 測試撰寫與執行方法入門 (cargo test)'
 slug: "Rustでテストを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","測試"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["程式設計"]
+description: '為初學者說明在 Rust 中撰寫測試程式碼的方法，以及使用 cargo test 指令執行測試的步驟。搭配具體程式碼範例，詳細介紹 #[test] 屬性的用法，以及成功或失敗時的輸出結果。'
 ---
 
 在 Rust 中編寫測試時，需要在測試函數定義的上一行加上 `#[test]` 屬性來建立函數。

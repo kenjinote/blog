@@ -1,11 +1,12 @@
 ---
-title: 'How to build OpenSSL on Windows'
+title: 'Steps and Environment Setup to Build and Install OpenSSL in a Windows Environment'
 slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'Explains how to build the ''OpenSSL'' cryptographic communication library for C in a Windows environment. Details everything from preparing necessary tools like Perl, NASM, and Visual Studio 2022 to the actual source code build process.'
 ---
 
 # What is OpenSSL?

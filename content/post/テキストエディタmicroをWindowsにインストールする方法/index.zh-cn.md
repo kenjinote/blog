@@ -1,11 +1,12 @@
 ---
-title: '在Windows上安装文本编辑器micro的方法'
+title: '支持Windows！轻量级文本编辑器“micro”的安装方法'
 slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "文本编辑器"]
 draft: false
 image: "img.webp"
 categories: ["工具・开发环境"]
+description: '通俗易懂地讲解如何在Windows上安装可在命令提示符中流畅运行的终端文本编辑器“micro”，以及配置环境变量并使其可用的步骤。'
 ---
 
 ## 下载 micro

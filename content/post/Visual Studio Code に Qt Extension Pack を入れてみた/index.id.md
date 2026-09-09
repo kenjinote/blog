@@ -1,11 +1,12 @@
 ---
-title: "Saya Mencoba Menginstal Qt Extension Pack di Visual Studio Code"
+title: 'Membangun Lingkungan Pengembangan Qt di VSCode! Instalasi dan Penggunaan Paket Ekstensi Qt'
 slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
 date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
+description: 'Memperkenalkan prosedur pengenalan ''Paket Ekstensi Qt'', ekstensi untuk mengembangkan aplikasi Qt di VSCode (Visual Studio Code). Disarankan bagi mereka yang ingin membangun lingkungan pengembangan yang ringan sebagai alternatif dari Qt Creator.'
 ---
 
 # Memulai Pengembangan Qt di VSCode: Cara Menginstal Qt Extension Pack

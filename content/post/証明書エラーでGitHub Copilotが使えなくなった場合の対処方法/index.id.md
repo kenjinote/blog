@@ -1,11 +1,12 @@
 ---
-title: "Cara Mengatasi GitHub Copilot yang Tidak Dapat Digunakan Karena Kesalahan Sertifikat"
+title: 'Solusi Kesalahan Sertifikat GitHub Copilot (UNABLE_TO_VERIFY_LEAF_SIGNATURE)'
 slug: "cara-mengatasi-github-copilot-yang-tidak-dapat-digunakan-karena-kesalahan-sertifikat"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'Kami akan menjelaskan mengenai cara mengatasi masalah saat GitHub Copilot tidak bisa digunakan dikarenakan muncul kesalahan (error) pada sertifikat seperti ''unable to verify the first certificate''. Kami memperkenalkan prosedur khusus dengan mengubah konfigurasi ESET.'
 ---
 
 # Cara Mengatasi Pesan Kesalahan Berikut di GitHub Copilot

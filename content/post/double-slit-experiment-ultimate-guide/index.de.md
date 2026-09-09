@@ -1,5 +1,5 @@
 ---
-title: "【Umfassender Leitfaden】Alles über das schönste Experiment der Physik: das „Doppelspaltexperiment“ – Die Quantenwelt und die wahre Natur der Realität"
+title: '[Umfassender Leitfaden] Das größte Rätsel der Quantenmechanik, das „Doppelspaltexperiment“, leicht verständlich und detailliert erklärt'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Physik", "Quantenmechanik", "Doppelspaltexperiment", "Schrödinger-Gleichung"]
@@ -7,6 +7,7 @@ categories: ["Physik/Wissenschaft"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: 'Wir erklären detailliert das sogenannte schönste Experiment in der Geschichte der Physik, das „Doppelspaltexperiment“. Die Anomalien der Mikrowelt, in der der gesunde Menschenverstand der Makrowelt nicht gilt, und die tiefen Geheimnisse der Quantenmechanik sind auch für Anfänger leicht verständlich zusammengefasst.'
 ---
 ## 1. 【Einführung】Was ist das Doppelspaltexperiment?
 

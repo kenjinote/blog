@@ -1,11 +1,12 @@
 ---
-title: "Pisau Cukur Hanlon"
+title: 'Apa Itu ''Pisau Cukur Hanlon'', Cara Berpikir yang Mempermudah Hubungan Antar Manusia? Menjelaskan Makna dan Asal Usulnya'
 slug: "pisau-cukur-hanlon"
 date: 2024-09-24T18:14:34+09:00
 tags: ["frasa", "ungkapan"]
 draft: false
 image: "img.webp"
 categories: ["IT dan Teknologi"]
+description: 'Memperkenalkan ''Pisau Cukur Hanlon'', suatu pendekatan psikologis untuk ''mengartikan tindakan orang lain bukan sebagai sebuah niat jahat, melainkan sekadar kecerobohan belaka''. Memberikan petunjuk untuk menghilangkan kekesalan harian semacam balasan LINE yang lama, serta upaya mengurangi beban stres dalam menjalin relasi antarmanusia.'
 ---
 
 # Halo! Hari ini kita berbicara tentang "Pisau Cukur Hanlon"

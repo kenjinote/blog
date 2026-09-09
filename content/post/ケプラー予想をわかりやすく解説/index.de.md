@@ -1,11 +1,12 @@
 ---
-title: "Die Kepler-Vermutung Einfach Erklärt"
+title: 'Ein 400 Jahre altes Rätsel! Was ist die keplersche Vermutung? Eine verständliche Erklärung der Romantik der Mathematik, die wir vom Packen von Wassermelonen lernen können'
 slug: "kepler-vermutung-einfach-erklaert"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Mathematik", "Kepler-Vermutung", "Erklärung"]
 draft: false
 image: "img.webp"
 categories: ["Mathematik・Kryptographie・Quanten"]
+description: 'Wir erklären auf leicht verständliche Weise die „keplersche Vermutung“, ein schwieriges mathematisches Problem, das aus der vertrauten Frage „Wie packt man Wassermelonen am dichtesten?“ entstanden ist. Lassen Sie uns gemeinsam etwas über die Romantik und den Reiz des Kugelpackungsproblems lernen, das von dem genialen Astronomen Kepler vorgeschlagen und über 400 Jahre lang nicht bewiesen wurde.'
 ---
 
 # Die Kepler-Vermutung Einfach Erklärt! ~Der beste Weg, Wassermelonen zu verpacken~

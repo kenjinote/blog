@@ -1,11 +1,12 @@
 ---
-title: "Buku yang Direkomendasikan untuk Insinyur Pemula"
+title: '15 Buku Wajib yang Direkomendasikan untuk Insinyur Pemula! Dari Dasar Pemrograman hingga Desain'
 slug: "エンジニア初学者におすすめの書籍"
 date: 2024-05-05T16:03:33+09:00
 tags: ["insinyur", "pemula", "buku"]
 draft: false
 image: "img.webp"
 categories: ["Gaya Hidup & Lain-lain"]
+description: 'Wajib dibaca bagi insinyur yang ingin naik kelas dari pemula ke tingkat menengah dalam pemrograman! Kami merekomendasikan 15 buku pilihan yang wajib dibaca pemula, seperti ''The Art of Readable Code'' dan ''The Pragmatic Programmer'', di mana Anda bisa mempelajari pengetahuan dasar pengembangan perangkat lunak dan teknik desain.'
 ---
 
 1. The Art of Readable Code

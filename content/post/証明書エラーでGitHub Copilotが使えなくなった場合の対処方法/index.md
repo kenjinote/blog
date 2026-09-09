@@ -1,11 +1,12 @@
 ---
-title: '証明書エラーでGitHub Copilotが使えなくなった場合の対処方法'
+title: 'GitHub Copilotの証明書エラー対処法（UNABLE_TO_VERIFY_LEAF_SIGNATURE）'
 slug: "証明書エラーでGitHub Copilotが使えなくなった場合の対処方法"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'GitHub Copilotで「unable to verify the first certificate」等の証明書エラーが発生して使えなくなった際の解決方法を解説します。ESETの設定変更による具体的な手順を紹介しています。'
 ---
 
 # GitHub Copilotで下記のエラーが表示された場合の対処方法

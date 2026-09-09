@@ -1,11 +1,12 @@
 ---
-title: "Résumé des Actions à Haut Dividende"
+title: 'Liste récapitulative des meilleures actions japonaises à haut rendement en dividendes'
 slug: "高配当株まとめ"
 date: 2024-12-22T00:56:14+09:00
 tags: ["Actions"]
 draft: false
 image: "img.webp"
 categories: ["Informatique・Technologie"]
+description: 'Nous présentons sous forme de liste des actions japonaises recommandées de grandes entreprises offrant un excellent rendement, telles que Mitsubishi UFJ, Mitsubishi Corporation, NTT et KDDI. C''est une liste d''actions à surveiller incontournable pour ceux qui s''intéressent à l''investissement à long terme visant des dividendes ou à la constitution d''un portefeuille.'
 ---
 
 # Résumé des Actions à Haut Dividende

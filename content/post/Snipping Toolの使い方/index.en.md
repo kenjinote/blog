@@ -1,11 +1,12 @@
 ---
-title: 'How to Use Snipping Tool'
+title: 'How to Use the Standard Windows ''Snipping Tool'' and Methods for Screen Recording and Capture'
 slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Image", "Video", "Screenshot", "Recording", "Capture"]
 draft: false
 image: "img.webp"
 categories: ["IT / Technology"]
+description: 'Explains the basic usage of the ''Snipping Tool'', a screen capture tool built into Windows as standard. Clearly introduces everything from quick launch methods using shortcut keys to saving partial image crops and screen recording procedures for videos.'
 ---
 
 ## What is Snipping Tool?

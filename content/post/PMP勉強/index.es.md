@@ -6,13 +6,14 @@
 
 
 
-title: "'Estudio PMP'"
+title: 'Conocimientos básicos y resumen de estudio para el examen PMP: Compatible con la 7ª edición del PMBOK'
 slug: "PMP勉強"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Estudio"]
 draft: false
 image: "img.webp"
 categories: ["TI y Tecnología"]
+description: 'Hemos resumido los puntos clave para prepararse para el examen de la certificación en gestión de proyectos ''PMP''. Además de la visión general del examen y la puntuación de aprobación, explicamos elementos importantes compatibles con la 7ª edición del PMBOK, como los 10 principios del liderazgo de servicio y los 4 valores del Manifiesto Ágil.'
 ---
 
 

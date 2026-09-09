@@ -1,11 +1,12 @@
 ---
-title: 'Coleção de Citações'
+title: 'Coleção de citações que enriquecem a vida: Uma compilação de palavras comoventes de grandes figuras históricas e celebridades'
 slug: "colecao-de-citacoes"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Citações"]
 draft: false
 image: "img.webp"
 categories: ["TI・Tecnologia"]
+description: 'Apresentaremos cuidadosamente citações que tocam o coração, ditas por grandes figuras históricas e celebridades como Steve Jobs e Laozi. Através de provérbios que servem como lições de vida e citações úteis para a motivação, vamos aprender com a sabedoria dos nossos antecessores e descobrir dicas para enriquecer a nossa vida e o dia a dia.'
 ---
 
 > Os tolos aprendem com a experiência, os sábios aprendem com a história (Otto von Bismarck)

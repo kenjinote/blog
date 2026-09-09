@@ -1,11 +1,12 @@
 ---
-title: "喜歡的西洋音樂"
+title: '推薦西洋名曲總整理：超越時代備受喜愛的經典熱門歌曲'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00
 tags: ["西洋音樂", "音樂"]
 draft: false
 image: "img.webp"
 categories: ["生活方式與雜記"]
+description: '介紹The Beatles、Coldplay、Ed Sheeran等超越時代、廣受喜愛的推薦西洋名曲。從動人心弦的抒情歌到讓人情緒高漲的流行樂，整理了絕對不能錯過的經典熱門歌曲。'
 ---
 
 # 推薦西洋音樂

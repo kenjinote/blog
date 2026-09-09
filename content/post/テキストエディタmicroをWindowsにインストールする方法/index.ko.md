@@ -6,13 +6,14 @@
 
 
 
-title: "Windows에 텍스트 에디터 micro를 설치하는 방법"
+title: 'Windows에서 쓸 수 있다! 경량 텍스트 에디터 ''micro'' 설치 방법'
 slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "텍스트 에디터"]
 draft: false
 image: "img.webp"
 categories: ["도구 및 개발 환경"]
+description: '명령 프롬프트에서 쾌적하게 작동하는 터미널용 텍스트 에디터 ''micro''를 Windows에 설치하고 환경 변수를 설정하여 사용할 수 있게 하기까지의 절차를 알기 쉽게 해설합니다.'
 ---
 
 

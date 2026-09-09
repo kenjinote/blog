@@ -1,11 +1,12 @@
 ---
-title: 'Changing the Image Layout in PaperMod'
+title: 'How to Customize Image Size and Placement in Hugo PaperMod Theme Using CSS'
 slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["Blog Management"]
+description: 'Explains how to customize the size and placement of images within articles in Hugo''s PaperMod theme. Introduces specific editing steps for CSS (blank.css and post-entry.css) to wrap or shrink images from the default 100% width and center alignment.'
 ---
 In the default layout, images are placed in the center with a width of 100%.
 However, I felt this was a bit too large, so I tried wrapping the image under the title and changing the width to around 150px.

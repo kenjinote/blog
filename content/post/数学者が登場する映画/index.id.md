@@ -1,11 +1,12 @@
 ---
-title: "Film yang Menampilkan Matematikawan"
+title: 'Ahli Matematika Jenius Sebagai Protagonis! Film Masterpiece Rekomendasi dan Kisah Pemecahan Kode'
 slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00
 tags: ["film", "matematikawan"]
 draft: false
 image: "images/img.webp"
 categories: ["Matematika・Kriptografi・Kuantum"]
+description: 'Kami akan memperkenalkan rekomendasi film mahakarya di mana jenius matematika adalah tokoh utamanya. Pilihan mahakarya tentang perpotongan antara keindahan matematika dan drama manusia, seperti ''A Beautiful Mind'', ''The Imitation Game'' yang menggambarkan pemecahan Enigma, dan kisah nyata Ramanujan ''The Man Who Knew Infinity''.'
 ---
 Berikut adalah 3 film rekomendasi saya yang menampilkan matematikawan sebagai karakter utama.
 

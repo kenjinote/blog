@@ -2,13 +2,14 @@
 
 
 
-title: "Resolver el problema del viajante con Mathematica"
+title: 'Cómo resolver el problema del viajante de comercio (TSP) con Mathematica'
 slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problema del viajante", "Algoritmos", "Matemáticas"]
 draft: false
 image: "img.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
+description: 'Explicamos cómo resolver el problema del viajante de comercio (TSP) utilizando el sistema de álgebra computacional Mathematica. Presentamos los pasos para crear una matriz de distancias entre ciudades con la función SparseArray y encontrar la ruta más corta con FindShortestTour.'
 ---
 
 

@@ -1,11 +1,12 @@
 ---
-title: '如何更新rustc'
+title: '将Rust编译器(rustc)更新到最新版本的方法'
 slug: "rustcをアップデートする方法"
 date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
 categories: ["编程"]
+description: '讲解将Rust编译器rustc更新到最新版本的简单方法。只需在终端或命令提示符中执行一行`rustup update`命令，即可包括相关组件在内进行一键更新。'
 ---
 # 如何更新rustc
 

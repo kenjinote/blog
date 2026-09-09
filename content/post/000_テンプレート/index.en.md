@@ -1,10 +1,11 @@
 ---
-title: 'Blog Title'
+title: '[Complete Guide] Blog Article Creation Template! SEO-Friendly Heading Structure and Writing Tips'
 slug: "000_テンプレート"
 date: 2022-01-01T00:00:00+09:00
 tags: ["Tag 1", "Tag 2"]
 draft: true
 categories: ["IT / Technology"]
+description: 'Introducing a useful template for creating blog articles. It covers basic Markdown formats useful for SEO-conscious article creation, such as heading structure, lists, code blocks, and quotes. Please use it for efficient article writing.'
 ---
 
 # Blog Title

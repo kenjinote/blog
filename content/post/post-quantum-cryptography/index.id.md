@@ -1,10 +1,11 @@
 ---
-title: "【PQC】Gambaran Lengkap \"Kriptografi Pasca-Kuantum\", Kriptografi Generasi Berikutnya di Era Komputer Kuantum"
+title: '[PQC] Ancaman Komputer Kuantum dan Gambaran Utuh Kriptografi Pasca-Kuantum Generasi Berikutnya'
 slug: "post-quantum-cryptography"
 tags: ["Teknologi Kriptografi", "PQC", "Keamanan", "Teknologi Generasi Berikutnya"]
 image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Kriptografi kunci publik memiliki risiko untuk didekripsi di masa mendatang akibat komersialisasi komputer kuantum. Artikel ini menjelaskan secara detail mekanisme dan pentingnya teknologi keamanan generasi berikutnya ''Kriptografi Pasca-Kuantum (PQC)'', yang sedang dikembangkan untuk melawan ancaman ini (Masalah Y2Q).'
 ---
 
 ## Pengantar: "Ancaman" terhadap Teknologi Kriptografi yang Dibawa oleh Komputer Kuantum

@@ -1,11 +1,12 @@
 ---
-title: '在Windows上安装CLI文本编辑器nano的方法'
+title: '在Windows上安装CLI文本编辑器nano及设置环境变量的方法'
 slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "文本编辑器"]
 draft: false
 image: "img_1.webp"
 categories: ["工具・开发环境"]
+description: '本文将讲解在Windows上安装轻量级CLI文本编辑器“nano”，并设置环境变量以便从命令提示符使用的步骤。内容涵盖从下载到PATH设置，以及基本使用方法。'
 ---
 
 ## 下载nano.exe

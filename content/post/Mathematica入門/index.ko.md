@@ -7,13 +7,14 @@
 
 
 
-title: "'Mathematica 입문'"
+title: 'Mathematica 입문: 방정식·미분적분 등 기본 명령어 사용법'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "수학", "알고리즘"]
 draft: false
 image: "img.webp"
 categories: ["수학・암호・양자"]
+description: '초보자를 위해 Mathematica의 기본적인 사용법과 계산 명령어를 설명합니다. 방정식과 연립방정식 풀이(Solve), 부등식(Reduce), 미분(D), 적분(Integrate), 행렬 계산 등 자주 사용하는 함수의 구체적인 예를 정리했습니다.'
 ---
 
 

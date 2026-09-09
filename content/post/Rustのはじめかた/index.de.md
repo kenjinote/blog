@@ -1,11 +1,12 @@
 ---
-title: "Wie man mit Rust anfängt"
+title: 'Einführung in die Programmiersprache Rust: Von den Eigenschaften über die Installation bis zum ersten Hello World'
 slug: "Wie man mit Rust anfängt"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programmierung"]
+description: 'Erklärt für Anfänger den Einstieg in die schnelle und speichersichere Programmiersprache Rust. Bietet eine umfassende Einführung, von den Eigenschaften der Sprache und der Installationsmethode über die Ausführungsschritte des ersten Programms, Hello World, bis hin zu empfohlener japanischer Dokumentation.'
 ---
 # Einführung
 Rust ist eine relativ neue Programmiersprache, mit der Sie schnelle und speichereffiziente Module mit moderner Syntax schreiben können.

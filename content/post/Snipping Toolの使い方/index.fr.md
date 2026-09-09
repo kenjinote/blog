@@ -1,11 +1,12 @@
 ---
-title: "Comment utiliser l'outil Capture d'écran (Snipping Tool)"
+title: 'Comment utiliser le ''Snipping Tool'' standard de Windows et les méthodes d''enregistrement d''écran et de capture'
 slug: "Comment utiliser l'outil Capture d'écran (Snipping Tool)"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Image", "Vidéo", "Capture d'écran", "Enregistrement", "Capture"]
 draft: false
 image: "img.webp"
 categories: ["IT et Technologie"]
+description: 'Explique l''utilisation de base de ''Snipping Tool'', un outil de capture d''écran intégré à Windows. Présente de manière simple la méthode de lancement rapide avec les raccourcis clavier, la sauvegarde par découpage d''une partie de l''image, jusqu''à la procédure d''enregistrement vidéo de l''écran.'
 ---
 
 ## Qu'est-ce que l'outil Capture d'écran

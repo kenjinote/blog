@@ -1,11 +1,12 @@
 ---
-title: "Música Japonesa Favorita"
+title: 'Lista das melhores músicas japonesas recomendadas: J-POP nostálgico e canções clássicas que tocam o coração'
 slug: "musica-japonesa-favorita"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Música Japonesa", "Música"]
 draft: false
 image: "img.webp"
 categories: ["Estilo de Vida e Variedades"]
+description: 'Apresentaremos músicas japonesas recomendadas que tocam a alma, como de Tulip, RADWIMPS e Hikaru Utada. Das nostálgicas obras-primas do período Showa aos sucessos de J-POP da era Heisei e baladas clássicas, aproveite esta fantástica seleção de músicas japonesas amadas por todas as gerações.'
 ---
 
 # Música Japonesa Recomendada

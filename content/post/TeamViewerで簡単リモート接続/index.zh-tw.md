@@ -1,11 +1,12 @@
 ---
-title: "使用 TeamViewer 輕鬆進行遠端連線"
+title: '【初學者適用】使用 TeamViewer 輕鬆進行遠端桌面連線的方法'
 slug: "使用 TeamViewer 輕鬆進行遠端連線"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "指令", "遠端連線"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '說明如何使用 TeamViewer 輕鬆進行遠端桌面連線。同時介紹從命令列指定 ID 和密碼，並透過捷徑自動化及簡化連線步驟的實用小技巧。'
 ---
 
 # 使用 TeamViewer 輕鬆進行遠端連線

@@ -3,13 +3,14 @@
 
 
 
-title: "'El entorno de trabajo de hoy'"
+title: '¿Trabajando en el escritorio de mis hijos? El entorno de trabajo remoto y teletrabajo real durante la crianza'
 slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
 tags: ["miscelánea","niños"]
 draft: false
 image: "images/today_workplase.webp"
 categories: ["IT y Tecnología"]
+description: 'Te presento mi entorno de trabajo de hoy utilizando el tiempo limitado durante la crianza de mis hijos. El precioso momento de concentración mientras los niños toman la siesta. Escribo sobre el trabajo remoto en la vida real, utilizando el escritorio de los niños y resolviendo de manera ingeniosa con un iPad y un adaptador.'
 ---
 
 

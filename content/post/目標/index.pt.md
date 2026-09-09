@@ -1,11 +1,12 @@
 ---
-title: "Objetivos"
+title: 'O roteiro de empreendedorismo e desenvolvimento de software: Metas e tarefas de curto e longo prazo'
 slug: "objetivos"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Objetivos"]
 draft: false
 image: "img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Uma nota de plano de negócios que organiza a definição de metas de curto e longo prazo e tarefas recentes para iniciar um negócio de desenvolvimento de software. Revela desde a visão para alcançar 10 bilhões de ienes em vendas anuais, captação de recursos, lançamento de software gratuito e pago, até as etapas específicas para pesquisa de mercado e análise de necessidades.'
 ---
 
 # Objetivos de Longo Prazo

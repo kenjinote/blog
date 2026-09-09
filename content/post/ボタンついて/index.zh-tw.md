@@ -1,11 +1,12 @@
 ---
-title: "關於按鈕"
+title: '在Windows API中建立按鈕（GUI控制項）與實作事件處理的方法'
 slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["按鈕", "GUI"]
 draft: false
 image: "img.webp"
 categories: ["IT與科技"]
+description: '針對GUI應用程式的基礎「按鈕」，附上範例程式碼解說如何使用Windows標準API（Win32 API）進行建立，以及如何實作點擊時的事件處理（WM_COMMAND訊息）。'
 ---
 
 # 什麼是按鈕

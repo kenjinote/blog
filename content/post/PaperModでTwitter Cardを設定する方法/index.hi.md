@@ -1,11 +1,12 @@
 ---
-title: "PaperMod में Twitter Card कैसे सेट करें"
+title: 'Hugo PaperMod में Twitter Card (X Card) कैसे सेट करें'
 slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
 categories: ["ブログ運営"]
+description: 'हम बताते हैं कि Hugo के PaperMod विषय में Twitter Card कैसे सेट करें। पूरी साइट पर लागू config.toml में लिखने का तरीका और प्रत्येक लेख के Markdown हेडर में अलग-अलग छवियां निर्दिष्ट करने का तरीका प्रस्तुत करता है। यह SNS पर साझा करते समय आई-कैचिंग छवियों को प्रदर्शित करने के लिए एक उपयोगी सेटिंग प्रक्रिया है।'
 ---
 # परिचय
 PaperMod थीम Twitter Card का समर्थन करती है।

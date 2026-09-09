@@ -1,11 +1,12 @@
 ---
-title: 'Introduction to Vim'
+title: '[For Beginners] Introduction to Vim: From Installation to Basic Startup, Shutdown, and Mode Explanations'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "text editor"]
 draft: false
 image: "img.webp"
 categories: ["Tools & Development Environment"]
+description: 'Explains the basic usage of Vim for beginners. Comprehensively covers the first steps, including the installation method in a Windows environment, startup and shutdown commands (such as save and force quit), and the difference between command mode and insert mode.'
 ---
 
 ![img_1.png](img_1.webp)

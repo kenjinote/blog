@@ -6,13 +6,14 @@
 
 
 
-title: "'탐색기 종료 및 재시작 방법'"
+title: 'Windows 파일 탐색기 종료 및 재시작 방법 모음'
 slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["탐색기"]
 draft: false
 image: "img_2.webp"
 categories: ["IT・테크놀로지"]
+description: 'Windows에서 파일 탐색기(explorer.exe)를 종료하고 재시작하는 다양한 방법을 해설합니다. 작업 표시줄, 작업 관리자, 명령 프롬프트를 사용한 절차를 알기 쉽게 소개합니다.'
 ---
 
 

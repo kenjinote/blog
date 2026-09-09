@@ -1,11 +1,12 @@
 ---
-title: "如何使用「hide」指令啟動 Hidemaru 編輯器"
+title: '用「hide」指令一秒啟動秀丸編輯器！Windows 實用設定方法'
 slug: "如何使用-hide-指令啟動-hidemaru-編輯器"
 date: 2024-03-29T23:45:37+09:00
 tags: ["指令", "Hidemaru 編輯器", "登錄檔"]
 draft: false
 image: "img_2.webp"
 categories: ["工具與開發環境"]
+description: '解說在 Windows 10/11 中，只需從「執行」或命令提示字元輸入「hide」，就能快速啟動秀丸編輯器的方法。這是使用登錄編輯程式 App Paths 的實用自訂步驟。'
 ---
 
 ## 以下介紹如何使用「hide」指令啟動 Hidemaru 編輯器。

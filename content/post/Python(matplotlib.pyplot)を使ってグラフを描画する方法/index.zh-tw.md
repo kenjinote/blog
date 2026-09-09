@@ -1,11 +1,12 @@
 ---
-title: "如何使用 Python (matplotlib.pyplot) 繪製圖表"
+title: '使用 Python 與 matplotlib 繪製圖表的方法【支援 Google Colab】'
 slug: "如何使用 Python (matplotlib.pyplot) 繪製圖表"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "圖表", "數學", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["數學・密碼學・量子"]
+description: '為初學者說明如何使用 Google Colaboratory，透過 Python 的 matplotlib.pyplot 函式庫輕鬆繪製並顯示正弦波與餘弦波圖表的步驟。無須建置環境即可立即測試。'
 ---
 
 ![img_1.png](img_1.webp)

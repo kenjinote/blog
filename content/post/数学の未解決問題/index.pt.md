@@ -1,5 +1,5 @@
 ---
-title: "Problemas Não Resolvidos da Matemática"
+title: 'Fascinantes problemas não resolvidos da matemática: O que são números perfeitos, a Conjectura de Goldbach e a Hipótese de Riemann?'
 slug: "problemas-nao-resolvidos-da-matematica"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Matemática","Problemas não resolvidos"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matemática・Criptografia・Quântica"]
+description: 'Explicaremos de forma fácil de entender problemas matemáticos fascinantes e não resolvidos que, embora simples em si mesmos, ainda não foram provados. Existem infinitos números perfeitos? Abordaremos vários problemas misteriosos que continuam a atormentar os matemáticos, como a Conjectura de Goldbach e a difícil Hipótese de Riemann.'
 ---
 
 # Problemas Não Resolvidos da Matemática

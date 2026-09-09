@@ -1,11 +1,12 @@
 ---
-title: 'My Current Main PC Specs'
+title: '[Core i7-8700K / 32GB RAM] Current Main PC Specs and Workspace Setup'
 slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
 categories: ["PC & Gadgets"]
+description: 'I have summarized the specs of my current main PC (Core i7-8700K, 32GB memory, Windows 11) and my workspace setup. I introduce the current configuration using a Mouse Computer desktop PC as a memorandum.'
 ---
 Here are the specs for my main PC.
 

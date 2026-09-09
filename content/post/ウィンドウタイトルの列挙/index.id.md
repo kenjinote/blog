@@ -1,11 +1,12 @@
 ---
-title: "Mendaftar Judul Jendela"
+title: 'Cara Mengambil dan Mendaftar Judul Jendela yang Sedang Terbuka dengan PowerShell'
 slug: "Mendaftar Judul Jendela"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Menjelaskan cara mudah membuat daftar dan mendapatkan judul dari semua jendela yang saat ini terbuka di PC menggunakan PowerShell. Disajikan dengan mudah bagi pemula, dilengkapi perintah nyata dan contoh output.'
 ---
 # Mendaftar Judul Jendela
 

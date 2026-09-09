@@ -1,11 +1,12 @@
 ---
-title: "Vídeos que aumentam a sua motivação"
+title: '[Yusuke Narita / Hayao Miyazaki] Vídeos recomendados e formas de pensar que aumentam a motivação'
 slug: "モチベーションを上げてくれる動画"
 date: 2022-09-08T02:22:52+09:00
 tags: ["Motivação", "Vídeos"]
 draft: false
 image: "images/img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Apresentamos vídeos para aumentar a motivação que você vai querer assistir quando seus esforços não forem reconhecidos ou quando estiver com problemas. Eles estão cheios de citações famosas que afetam positivamente suas ações e sua vida, como a perspectiva de Yusuke Narita sobre valores diversos e a forma de pensar do diretor Hayao Miyazaki.'
 ---
 
 ## Não tem problema se o seu esforço não for reconhecido

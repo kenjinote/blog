@@ -1,11 +1,12 @@
 ---
-title: "為 msix 加上自簽憑證以便安裝"
+title: 'Windows 應用程式開發者必看！為 MSIX 附加自我簽署憑證並進行本機安裝的方法'
 slug: "msixに自己証明書をつけてインストールできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "自己証明書", "インストール"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: '針對便於測試發布 Windows 應用程式的 MSIX 套件，淺顯易懂地說明不使用商業憑證，而是建立並附加自我簽署憑證，使其可安裝於本機環境的具體步驟，並附上 PowerShell 指令。'
 ---
 
 # 為 msix 加上自簽憑證以便安裝

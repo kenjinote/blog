@@ -1,11 +1,12 @@
 ---
-title: "Befehl zum Überprüfen des Lizenzstatus von Windows"
+title: 'So überprüfen Sie den Aktivierungsstatus der Windows-Lizenz! Einfache Überprüfung mit einem einzigen Befehl'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Lizenz", "Eingabeaufforderung"]
 draft: false
 image: "img_1.webp"
 categories: ["PC & Gadgets"]
+description: 'Wir erklären, wie Sie überprüfen können, ob Ihre Windows-Lizenz ordnungsgemäß authentifiziert ist. Wir zeigen Ihnen, wie Sie durch Ausführen des Befehls „slmgr“ über die Eingabeaufforderung detaillierte Statusinformationen wie Produktschlüssel, Lizenztyp und Ablaufdatum ganz einfach überprüfen können.'
 ---
 
 # 【Windows】So überprüfen Sie den Lizenzstatus (1 Befehl reicht aus)

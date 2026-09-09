@@ -1,11 +1,12 @@
 ---
-title: "Le Problème de Monty Hall"
+title: 'Qu''est-ce que le problème de Monty Hall ? Explication simple de ce paradoxe probabiliste contre-intuitif et de sa solution'
 slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["Mathématiques", "Probabilité", "Problème de Monty Hall"]
 draft: false
 image: "img_1.webp"
 categories: ["Mathématiques, Cryptographie et Quantique"]
+description: 'Nous expliquons simplement ce qu''est le problème de Monty Hall, sa signification et sa solution. C''est un célèbre paradoxe probabiliste basé sur un jeu télévisé américain. Nous expliquons logiquement pourquoi changer de porte augmente vos chances de gagner.'
 ---
 
 ## Qu'est-ce que le problème de Monty Hall ?

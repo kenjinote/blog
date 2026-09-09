@@ -1,11 +1,12 @@
 ---
-title: 'PMP学习'
+title: 'PMP考试基础知识与备考总结：对应PMBOK第7版'
 slug: "PMP勉強"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "学习"]
 draft: false
 image: "img.webp"
 categories: ["IT・技术"]
+description: '总结了项目管理认证“PMP”备考的要点。除了考试概况和及格线外，还讲解了对应PMBOK第7版的重要内容，如服务型领导的10项原则、敏捷软件开发宣言的4个价值观等。'
 ---
 
 # PMP备考学习总结

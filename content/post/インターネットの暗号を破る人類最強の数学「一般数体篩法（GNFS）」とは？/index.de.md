@@ -1,11 +1,12 @@
 ---
-title: 'Was ist das "General Number Field Sieve (GNFS)", die stärkste Mathematik der Menschheit, die die Internetverschlüsselung knackt?'
+title: 'Einfach erklärte stärkste Mathematik der Menschheit zum Knacken von Codes: Das „Zahlkörpersieb“ (GNFS)'
 slug: "インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？"
 date: 2026-09-05T02:09:08+09:00
 tags: ["Mathematik", "Kryptographie", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
 categories: ["Mathematik・Kryptographie・Quanten"]
+description: 'Wir erklären die Funktionsweise der stärksten Mathematik der Menschheit, dem „Zahlkörpersieb“ (GNFS), das die RSA-Verschlüsselung bricht, die die Internetkommunikation schützt. Wir verzichten auf Fachjargon und nähern uns der Magie dieses Algorithmus, die mit dem Wissen der Mathematik der Mittelstufe verstanden werden kann.'
 ---
 
 # Was ist das "General Number Field Sieve (GNFS)", die stärkste Mathematik der Menschheit, die die Internetverschlüsselung knackt?

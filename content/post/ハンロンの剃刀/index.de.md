@@ -1,11 +1,12 @@
 ---
-title: "Hanlons Rasiermesser"
+title: 'Was ist „Hanlons Rasiermesser“, eine Denkweise, die zwischenmenschliche Beziehungen erleichtert? Bedeutung und Herkunft erklärt'
 slug: "hanlons-rasiermesser"
 date: 2024-09-24T18:14:34+09:00
 tags: ["Phrase", "Ausdruck"]
 draft: false
 image: "img.webp"
 categories: ["IT und Technologie"]
+description: 'Wir stellen den psychologischen Ansatz „Hanlons Rasiermesser“ vor: „Betrachten Sie das Verhalten anderer nicht als Bösartigkeit, sondern als bloße Unachtsamkeit“. Wir erläutern Tipps, wie man mit alltäglichem Ärger wie verspäteten LINE-Antworten umgeht und Stress in zwischenmenschlichen Beziehungen abbaut.'
 ---
 
 # Hallo! Heute geht es um "Hanlons Rasiermesser"

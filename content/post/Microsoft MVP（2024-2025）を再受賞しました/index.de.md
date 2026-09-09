@@ -1,11 +1,12 @@
 ---
-title: "Ich wurde erneut als Microsoft MVP (2024-2025) ausgezeichnet"
+title: 'Ich wurde erneut als Microsoft MVP (2024-2025) ausgezeichnet! Inklusive Erklärung des MVP-Programms'
 slug: "ich-wurde-erneut-als-microsoft-mvp-2024-2025-ausgezeichnet"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["Werkzeuge und Entwicklungsumgebung"]
+description: 'Ein Bericht über meine erneute Auszeichnung als Microsoft MVP (2024-2025), nun zum achten Mal. Ich stelle den Überblick über das Microsoft MVP-Programm, die bewerteten Aktivitäten, die Gründe für die diesjährige Auszeichnung und einen Rückblick auf das vergangene Jahr vor.'
 ---
 
 # Ich wurde erneut als Microsoft MVP (2024-2025) ausgezeichnet

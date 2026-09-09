@@ -1,11 +1,12 @@
 ---
-title: "Wie man die Tastenkombinationen für Kopieren und Einfügen auf dem Mac an Windows anpasst"
+title: 'Wie man die Tastenkombinationen zum Kopieren und Einfügen auf dem Mac auf die gleichen Einstellungen wie bei Windows ändert'
 slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "ショートカットキー", "コピー＆ペースト"]
 draft: 
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'Wir stellen die Schritte zum Ändern der Sondertasten über die Systemeinstellungen vor, um die Tastenkombinationen zum Kopieren und Einfügen an den Windows-Stil (basiert auf der Strg-Taste) anzupassen, was praktisch ist, wenn man Mac und Windows parallel nutzt.'
 ---
 
 # Einführung

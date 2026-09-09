@@ -6,13 +6,14 @@
 
 
 
-title: "Cómo iniciar el editor Hidemaru con el comando ''hide''"
+title: '¡Inicia el Hidemaru Editor con solo el comando ''hide''! Práctica configuración en Windows'
 slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["Comandos", "Editor Hidemaru", "Registro"]
 draft: false
 image: "img_2.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
+description: 'Explicamos cómo iniciar rápidamente el Hidemaru Editor simplemente escribiendo ''hide'' en ''Ejecutar'' o en el Símbolo del sistema en Windows 10/11. Un útil procedimiento de personalización utilizando las rutas de aplicación (App Paths) en el Editor del Registro.'
 ---
 
 

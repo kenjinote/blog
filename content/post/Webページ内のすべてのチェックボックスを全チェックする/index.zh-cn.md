@@ -1,11 +1,12 @@
 ---
-title: '全选网页内的所有复选框'
+title: '【JS】一键勾选网页内所有复选框的方法（附书签脚本）'
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "自动化"]
 draft: false
 image: "img.webp"
 categories: ["博客运营"]
+description: '讲解如何一键勾选网页内的所有复选框。介绍在Chrome的DevTools控制台中执行的JavaScript代码，以及创建可一键全选/全不选的便捷书签脚本的步骤。'
 ---
 
 要全选网页内的所有复选框，请按F12打开DevTools，将以下代码粘贴到控制台并执行。

@@ -1,11 +1,12 @@
 ---
-title: 'Tokoh-tokoh Hebat Matematika'
+title: 'Matematikawan Hebat yang Mengubah Sejarah: Dari Pythagoras, Archimedes hingga Euclid'
 slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Matematikawan"]
 draft: false
 image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Kami akan memperkenalkan secara detail riwayat matematikawan hebat zaman Yunani kuno dan Mesir yang tercatat dalam sejarah berdasarkan urutan kelahiran mereka. Kami akan menjelaskan dengan mudah penemuan luar biasa mereka maupun anekdot yang tidak banyak diketahui orang, seperti Teorema Pythagoras, Prinsip Archimedes, hingga Elemen Euclid.'
 ---
 Berikut adalah perkenalan tokoh-tokoh matematikawan hebat yang meninggalkan jejak dalam sejarah, diurutkan berdasarkan tahun kelahiran.
 

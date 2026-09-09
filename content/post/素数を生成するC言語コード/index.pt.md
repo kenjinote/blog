@@ -1,11 +1,12 @@
 ---
-title: "Código C para gerar números primos"
+title: 'Código de exemplo simples em C para gerar e determinar números primos em um intervalo especificado'
 slug: "codigo-c-para-gerar-numeros-primos"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Números primos", "Algoritmo", "Matemática"]
 draft: false
 image: "img.webp"
 categories: ["Matemática, Criptografia e Quântica"]
+description: 'Apresentamos um código de exemplo simples em C que determina, gera e enumera números primos num intervalo especificado (de 1 a n). Com um algoritmo eficiente usando a função isPrime, publicamos exemplos de implementação de programação e explicações que são fáceis de entender, mesmo para iniciantes.'
 ---
 
 Abaixo está um código C simples que gera números primos dentro de um intervalo especificado. Neste exemplo, enumeramos números primos de 1 a n.

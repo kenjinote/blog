@@ -1,11 +1,12 @@
 ---
-title: "Como gerar imagens de ilustração usando IA (Stable Diffusion)"
+title: '[Grátis e Muito Fácil] Como Gerar Ilustrações com IA Usando o Stable Diffusion! Tutorial do Google Colab'
 slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["IA", "Stable Diffusion", "Ilustração", "Geração de Imagens", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["Programação"]
+description: 'Que tal criar ilustrações do seu gosto usando a IA ''Stable Diffusion'', que gera imagens de alta qualidade a partir de texto? Explicamos de forma simples como qualquer pessoa pode começar a gerar imagens com IA usando apenas o Google Colab e uma conta gratuita.'
 ---
 
 # O que é o Stable diffusion

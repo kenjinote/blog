@@ -1,11 +1,12 @@
 ---
-title: "Ce qu'il faut pour ne pas tomber dans les théories du complot"
+title: '6 mesures pour éviter de tomber dans les théories du complot | Améliorez la sécurité de votre esprit'
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00
 tags: ["Théorie du complot", "Poème"]
 draft: false
 image: "img.webp"
 categories: ["Informatique et technologie"]
+description: 'Nous expliquons comment préparer la « sécurité de l''esprit » nécessaire pour ne pas être entraîné dans les théories du complot sur Internet. Voici des astuces pour survivre intelligemment dans la société en ligne moderne, comme la capacité de suspendre son jugement sans lier directement anxiété et réponse, et des conseils pour recueillir des informations afin d''éviter le biais de confirmation.'
 ---
 
 ## La « sécurité mentale » nécessaire pour ne pas se laisser entraîner par les théories du complot

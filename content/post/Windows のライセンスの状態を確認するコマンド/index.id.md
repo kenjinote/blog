@@ -1,11 +1,12 @@
 ---
-title: "Perintah untuk Memeriksa Status Lisensi Windows"
+title: 'Cara Memeriksa Status Aktivasi Lisensi Windows! Cek Mudah dengan Satu Perintah'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "lisensi", "command prompt"]
 draft: false
 image: "img_1.webp"
 categories: ["PC・ガジェット"]
+description: 'Menjelaskan cara memverifikasi apakah lisensi Windows telah diaktifkan dengan benar. Memperkenalkan langkah mudah memeriksa status secara rinci, termasuk kunci produk, jenis lisensi, dan tanggal kedaluwarsa, hanya dengan menjalankan perintah ''slmgr'' di Command Prompt.'
 ---
 
 # 【Windows】Cara Memeriksa Status Lisensi (Hanya dengan Satu Perintah)

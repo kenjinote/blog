@@ -3,13 +3,14 @@
 
 
 
-title: "macOS에서 .DS_Store를 자동 생성하지 않도록 하는 명령어"
+title: 'macOS에서 .DS_Store의 자동 생성을 비활성화 및 정지하는 터미널 명령'
 slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.webp"
 categories: ["PC・가젯"]
+description: 'macOS 환경에서 네트워크 드라이브 등에 불필요한 ''.DS_Store'' 파일이 자동 생성되는 것을 방지하는 터미널 명령을 소개합니다. 원래 설정으로 되돌리는 방법이나 Finder의 재부팅 절차도 정리하고 있습니다.'
 ---
 
 

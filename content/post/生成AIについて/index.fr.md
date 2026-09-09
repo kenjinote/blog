@@ -1,11 +1,12 @@
 ---
-title: "À propos de l'IA générative"
+title: 'Apprendre sur l''IA générative ! Vidéos de cours recommandées par des professeurs de l''Université de Tokyo'
 slug: "a-propos-de-l-ia-generative"
 date: 2024-04-16T02:13:56+09:00
 tags: ["IA générative", "YouTube", "Conférence"]
 draft: false
 image: "img.webp"
 categories: ["IA et Technologie"]
+description: 'Un résumé de vidéos de conférences données par des professeurs de l''Université de Tokyo pour en apprendre davantage sur l''IA générative très en vogue. Nous présentons des vidéos d''explications claires et utiles réalisées entre 2023 et 2024 par des experts de premier plan en recherche sur l''IA, tels que le professeur Masayuki Nakao, le professeur Kuniyoshi Sakai et le professeur Yutaka Matsuo.'
 ---
 
 ## Vidéos de conférences sur l'IA générative

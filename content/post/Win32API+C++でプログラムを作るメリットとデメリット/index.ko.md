@@ -7,13 +7,14 @@
 
 
 
-title: "Win32API + C++로 프로그램을 만드는 장점과 단점"
+title: 'Win32API+C++로 Windows 앱 개발! 현역 엔지니어가 알려주는 장점과 단점'
 slug: "Win32API+C++でプログラムを作るメリットとデメリット"
 date: 2025-07-12T12:30:35+09:00
 tags: ['Win32API', 'C++', '프로그래밍', '개발', '기술']
 draft: false
 image: 'img_1.webp'
 categories: ['프로그래밍']
+description: '''Win32API+C++''를 이용한 Windows 앱 개발의 장점과 단점을 현역 엔지니어가 해설합니다. 초고속 실행 속도, 자유도 높은 제어, 런타임이 필요 없어 배포하기 쉬운 점 등 네이티브 개발만의 매력과 학습의 과제를 소개합니다.'
 ---
 
 

@@ -1,11 +1,12 @@
 ---
-title: 'C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）'
+title: '【自動化】C++からTeamsへメッセージ投稿！Graph APIとWinHTTPの実装手順'
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'C++からMicrosoft Teamsへ自動メッセージ投稿を実装したい方必見！WinHTTPとGraph APIを用いたC++コードの具体例や、必須となるAzureのアプリ登録・API認証手順をステップバイステップで分かりやすく解説します。'
 ---
 
 # C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）

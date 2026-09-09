@@ -1,11 +1,12 @@
 ---
-title: "Bildlayout in PaperMod ändern"
+title: 'Wie man Bildgröße und -platzierung im Hugo PaperMod-Theme mit CSS anpasst'
 slug: "Bildlayout in PaperMod ändern"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["ブログ運営"]
+description: 'Erklärt, wie man Bildgröße und -platzierung in Artikeln des Hugo PaperMod-Themes anpasst. Stellt konkrete Bearbeitungsschritte für CSS (blank.css und post-entry.css) vor, um von der standardmäßigen 100%-Breite und Zentrierung zu Textumfluss und Bildverkleinerung zu wechseln.'
 ---
 Das Standardlayout zentriert das Bild mit einer Breite von 100 %,
 aber da es mir manchmal etwas zu groß vorkam, habe ich versucht, das Bild unter dem Titel umfließen zu lassen,

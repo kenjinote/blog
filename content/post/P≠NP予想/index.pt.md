@@ -1,10 +1,11 @@
 ---
-title: "Conjectura P≠NP"
+title: 'O que é o problema P versus NP? Explicação fácil do problema não resolvido da teoria da complexidade e da diferença entre as classes P e NP'
 slug: "P≠NP予想"
 date: 2024-09-11T02:22:39+09:00
 tags: ["Conjectura P≠NP", "Matemática", "Problemas Não Resolvidos"]
 draft: false
 categories: ["Matemática, Criptografia e Quântica"]
+description: 'Sobre o ''problema P versus NP'', o maior problema não resolvido da ciência da computação, explicamos a sua visão geral de forma clara do ponto de vista de uma máquina de Turing determinística, misturando a diferença entre a ''Classe P'', que pode ser resolvida em tempo polinomial, e a ''Classe NP'', onde a validade da solução pode ser verificada em tempo polinomial.'
 ---
 
 # Visão Geral

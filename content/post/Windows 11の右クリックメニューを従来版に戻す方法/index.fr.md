@@ -1,11 +1,12 @@
 ---
-title: "Comment restaurer le menu contextuel classique dans Windows 11"
+title: 'Comment restaurer le menu du clic droit de Windows 11 à sa version classique (ancienne spécification) [Paramètres du registre]'
 slug: "comment-restaurer-le-menu-contextuel-classique-dans-windows-11"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Explorateur de fichiers"]
 draft: false
 image: "img.webp"
 categories: ["PC et Gadgets"]
+description: 'Nous expliquons comment restaurer le nouveau menu du clic droit (menu contextuel) de Windows 11 à la version classique de Windows 10. Nous présentons une procédure simple pour toujours afficher le menu de l''ancienne spécification en modifiant les paramètres à l''aide de l''éditeur du registre.'
 ---
 
 # Comment restaurer le menu contextuel classique dans Windows 11

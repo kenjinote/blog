@@ -1,11 +1,12 @@
 ---
-title: "Apa yang Dibutuhkan agar Tidak Terjebak Teori Konspirasi"
+title: '6 Penanggulangan untuk Mencegah Terperangkap dalam Teori Konspirasi | Mari Tingkatkan Keamanan Pikiran'
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00
 tags: ["Teori Konspirasi", "Puisi"]
 draft: false
 image: "img.webp"
 categories: ["IT dan Teknologi"]
+description: 'Memberikan pencerahan mengenai metode penataan ''keamanan pikiran'' yang dibutuhkan demi mencegah diri terjerumus ke dalam teori konspirasi di dunia maya (internet). Ini merupakan petunjuk tentang cara hidup cerdas di tengah masyarakat jaringan era modern, seperti petunjuk pencarian informasi agar menghindar dari bias konfirmasi, serta daya tahan agar tidak terburu-buru menyimpulkan antara ketidakpastian dan jawaban.'
 ---
 
 ## "Keamanan Mental" yang Dibutuhkan untuk Menghindari Teori Konspirasi

@@ -1,11 +1,12 @@
 ---
-title: "Cara Memposting Pesan ke Microsoft Teams dari C++ (WinHTTP + Graph API)"
+title: '[Otomatisasi] Posting Pesan dari C++ ke Teams! Langkah Implementasi Graph API dan WinHTTP'
 slug: "Cara Memposting Pesan ke Microsoft Teams dari C++ (WinHTTP + Graph API)"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
+description: 'Wajib dibaca bagi yang ingin mengimplementasikan posting pesan otomatis dari C++ ke Microsoft Teams! Kami menjelaskan langkah demi langkah secara mudah contoh kode C++ menggunakan WinHTTP dan Graph API, serta prosedur registrasi aplikasi Azure dan autentikasi API yang wajib dilakukan.'
 ---
 
 # Cara Memposting Pesan ke Microsoft Teams dari C++ (WinHTTP + Graph API)

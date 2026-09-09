@@ -1,11 +1,12 @@
 ---
-title: "Saya mulai menulis blog"
+title: 'Mulai Membuat Blog dengan Static Site Generator Hugo! Catatan Keseharian dan Memo Teknis'
 slug: "saya-mulai-menulis-blog"
 date: 2022-09-02T07:23:00+09:00
 tags: ["雑記"]
 draft: false
 image: "images/komeda.webp"
 categories: ["ブログ運営"]
+description: 'Saya baru saja membuka blog pribadi baru menggunakan static site generator ''Hugo''. Saya berencana untuk membagikan hal-hal ringan sebagai buku catatan, seperti memo teknis, kode pemrograman, dan sedikit kejadian sehari-hari.'
 ---
 
 ## Saya mulai menulis blog

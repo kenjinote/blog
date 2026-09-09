@@ -1,11 +1,12 @@
 ---
-title: "Lösung des Problems des Handlungsreisenden mit Mathematica"
+title: 'Wie man das Problem des Handlungsreisenden (TSP) mit Mathematica löst'
 slug: "loesung-des-problems-des-handlungsreisenden-mit-mathematica"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problem des Handlungsreisenden", "Algorithmus", "Mathematik"]
 draft: false
 image: "img.webp"
 categories: ["Mathematik, Kryptographie, Quanten"]
+description: 'Erklärt, wie man das Problem des Handlungsreisenden (TSP) mit dem Computeralgebrasystem Mathematica löst. Stellt die Schritte vor, um mit der Funktion SparseArray eine Distanzmatrix zwischen Städten zu erstellen und mit FindShortestTour die kürzeste Route zu finden.'
 ---
 # Lösung des Problems des Handlungsreisenden mit Mathematica
 

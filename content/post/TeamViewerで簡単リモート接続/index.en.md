@@ -1,11 +1,12 @@
 ---
-title: 'Easy Remote Connection with TeamViewer'
+title: '[For Beginners] How to Easily Make a Remote Desktop Connection with TeamViewer'
 slug: "TeamViewerで簡単リモート接続"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Command", "Remote Connection"]
 draft: false
 image: "img.webp"
 categories: ["IT Technology"]
+description: 'Explains how to easily make a remote desktop connection using TeamViewer. Also introduces handy tips to automate and streamline connections with shortcuts by specifying IDs and passwords from the command line.'
 ---
 
 # Easy Remote Connection with TeamViewer

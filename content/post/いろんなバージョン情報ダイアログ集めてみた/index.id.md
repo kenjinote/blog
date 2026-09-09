@@ -1,11 +1,12 @@
 ---
-title: "Saya mengumpulkan banyak dialog informasi versi"
+title: 'Kumpulan Tampilan Layar Dialog Informasi Versi dari Berbagai Perangkat Lunak'
 slug: "いろんなバージョン情報ダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Informasi versi", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
 categories: ["PC & Gadget"]
+description: 'Memperkenalkan desain UI dari layar ''dialog informasi versi'' untuk berbagai perangkat lunak dan alat PC yang digunakan sehari-hari dalam sebuah daftar, seperti Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge, dan LINE.'
 ---
 
 # "Saya mengumpulkan banyak dialog informasi versi"

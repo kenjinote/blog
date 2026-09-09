@@ -1,11 +1,12 @@
 ---
-title: "買了一台 ThinkPad（二手）"
+title: '購買了二手 ThinkPad T470s！規格、使用體驗與不滿意之處真心話評測'
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "筆記型電腦"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '這是為了遠端工作購買二手 ThinkPad T470s 的評測文章。介紹包含 Core i7、RAM 24GB、WQHD 螢幕的規格與狀態，以及鍵盤配置等不滿意之處在內的實際使用心得。'
 ---
 
 # 買了一台筆記型電腦 ThinkPad（二手）

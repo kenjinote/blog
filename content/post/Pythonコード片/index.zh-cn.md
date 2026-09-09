@@ -1,11 +1,12 @@
 ---
-title: 'Python代码片段'
+title: '使用Python下载图片并临时保存、显示的示例代码'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "示例代码"]
 draft: false
 image: "img.webp"
 categories: ["编程"]
+description: '介绍一套实用的示例代码：仅使用Python标准库，从网络图片URL下载数据并保存到临时文件，在浏览器中显示后自动删除。'
 ---
 
 介绍使用标准库的示例代码。

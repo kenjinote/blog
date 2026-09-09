@@ -1,11 +1,12 @@
 ---
-title: "Résoudre le problème du voyageur de commerce avec Mathematica"
+title: 'Comment résoudre le problème du voyageur de commerce (TSP) avec Mathematica'
 slug: "resoudre-le-probleme-du-voyageur-de-commerce-avec-mathematica"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problème du voyageur de commerce", "Algorithme", "Mathématiques"]
 draft: false
 image: "img.webp"
 categories: ["Mathématiques, Cryptographie, Quantique"]
+description: 'Explique comment résoudre le problème du voyageur de commerce (TSP) à l''aide du système de calcul formel Mathematica. Présente la procédure de création d''une matrice de distances entre les villes en utilisant la fonction SparseArray et la recherche du parcours le plus court avec FindShortestTour.'
 ---
 # Résoudre le problème du voyageur de commerce avec Mathematica
 

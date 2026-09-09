@@ -1,11 +1,12 @@
 ---
-title: "Comment créer un raccourci pour arrêter Windows"
+title: 'Éteindre le PC en un clic ! Comment créer un raccourci pour arrêter Windows'
 slug: "Comment créer un raccourci pour arrêter Windows"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Arrêter", "Raccourci"]
 draft: false
 image: "img.webp"
 categories: ["PC et Gadgets"]
+description: 'Nous expliquons comment créer un raccourci pratique permettant d''arrêter Windows en un seul clic depuis le bureau. Nous détaillons avec des images la procédure de configuration utilisant la commande ''shutdown.exe'', ainsi que la façon de le remplacer par une icône explicite.'
 ---
 
 Voici comment créer un raccourci pour arrêter Windows.

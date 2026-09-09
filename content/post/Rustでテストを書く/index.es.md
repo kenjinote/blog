@@ -2,13 +2,14 @@
 
 
 
-title: "Escribiendo pruebas en Rust"
+title: 'Introducción a cómo escribir y ejecutar pruebas en Rust (cargo test)'
 slug: "Rustでテストを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","Pruebas"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programación"]
+description: 'Explicamos para principiantes cómo escribir código de prueba en Rust y los pasos para ejecutar las pruebas usando el comando cargo test. Mostramos en detalle el uso del atributo #[test] y los resultados mostrados en caso de éxito o fracaso, junto con ejemplos de código específicos.'
 ---
 
 

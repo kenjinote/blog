@@ -1,13 +1,14 @@
 ---
 
 
-title: "Cómo obtener y colocar una clasificación de páginas populares desde Google Analytics"
+title: 'Cómo mostrar el ranking de artículos populares desde Google Analytics usando Ranklet'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["Gestión de blog"]
+description: 'Explicamos cómo usar "Ranklet", un servicio que permite visualizar fácilmente un ranking de las páginas más populares de tu sitio conectándolo con Google Analytics. Tomando el blog de HUGO como ejemplo, presentamos los pasos de configuración y cómo personalizar la plantilla HTML/CSS.'
 ---
 
 

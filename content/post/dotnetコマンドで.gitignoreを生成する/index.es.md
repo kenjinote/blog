@@ -1,13 +1,14 @@
 ---
 
 
-title: "Generar .gitignore con el comando dotnet"
+title: 'Cómo generar fácilmente un .gitignore para tu proyecto usando el comando dotnet'
 slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
 categories: ["Herramientas y entorno de desarrollo"]
+description: 'Explicamos de forma sencilla cómo generar automáticamente un archivo .gitignore adecuado para entornos de desarrollo como Visual Studio utilizando el comando dotnet (dotnet new gitignore) incluido en el SDK de .NET.'
 ---
 
 

@@ -1,11 +1,12 @@
 ---
-title: 'Windows 快捷键与小技巧集'
+title: '【Windows 11/10】让工作效率剧增的实用快捷键与小技巧汇总'
 slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "小技巧", "快捷键"]
 draft: false
 image: "img.webp"
 categories: ["PC・数码"]
+description: '精选介绍能提升Windows 11和Windows 10工作效率的实用快捷键与小技巧。这是一份适合从初学者到高级用户日常使用的必备技巧集，涵盖窗口操作、显示桌面、语音输入、屏幕截图等功能。'
 ---
 这是平时使用Windows时的一些小技巧集。希望能对刚开始使用Windows的人有所帮助。
 虽然以Windows 11为前提，但其中的很多内容在Windows 10中也能使用。

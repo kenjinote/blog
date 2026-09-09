@@ -1,11 +1,11 @@
 ---
-title: "Apa yang harus dilakukan saat Anda tidak dapat membatalkan Google One (Gemini)"
+title: 'Tidak Bisa Membatalkan Berlangganan Google One (Gemini)? Penjelasan Cara Berhenti yang Benar'
 slug: "Apa yang harus dilakukan saat Anda tidak dapat membatalkan Google One (Gemini)"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Pembatalan", "Solusi"]
 draft: false
 image: "img.webp"
-description: "Apakah Anda akan ditagih setelah uji coba gratis Gemini berakhir? Ringkasan cara membatalkan"
+description: 'Menjelaskan prosedur pembatalan yang benar untuk mencegah keanggotaan Google One seharga 2.900 yen/bulan berlanjut secara otomatis setelah uji coba gratis Gemini 1 bulan berakhir. Jika Anda pusing karena ''tidak bisa membatalkan'', silakan rujuk cara berhenti di artikel ini.'
 categories: ["Pemrograman"]
 ---
 

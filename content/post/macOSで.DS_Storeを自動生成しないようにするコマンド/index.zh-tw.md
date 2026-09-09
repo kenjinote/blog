@@ -1,11 +1,12 @@
 ---
-title: "在macOS上避免自動產生.DS_Store的指令"
+title: '在macOS中停用並停止自動生成.DS_Store的終端機指令'
 slug: "在macos上避免自動產生.ds_store的指令"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.webp"
 categories: ["PC・Gadget"]
+description: '介紹能在macOS環境中，防止於網路磁碟等地方自動生成不必要的「.DS_Store」檔案的終端機指令。同時也整理了恢復原狀的方法與Finder的重新啟動步驟。'
 ---
 在 macOS 上避免自動產生 .DS_Store 的指令如下。
 請在終端機中執行。

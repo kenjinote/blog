@@ -2,13 +2,14 @@
 
 
 
-title: "HTML로 프레젠테이션 자료를 만드는 방법 (reveal.js)"
+title: 'reveal.js 사용법: HTML과 Markdown으로 프레젠테이션 자료 작성'
 slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "프레젠테이션"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: 'HTML과 Markdown으로 직관적으로 프레젠테이션을 작성할 수 있는 도구 ''reveal.js''의 설치 및 기본적인 사용법을 해설합니다. 애니메이션이나 PDF 출력에 대응하며, Git 등의 버전 관리와도 궁합이 뛰어난 활용법을 소개합니다.'
 ---
 
 

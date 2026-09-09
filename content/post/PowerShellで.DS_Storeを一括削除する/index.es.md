@@ -2,13 +2,14 @@
 
 
 
-title: "Eliminar .DS_Store por lotes con PowerShell"
+title: 'Comando sencillo de PowerShell para eliminar masivamente archivos .DS_Store'
 slug: "PowerShellで.DS_Storeを一括削除する"
 date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["Programación"]
+description: 'Explicamos cómo eliminar masivamente los molestos archivos .DS_Store de Mac en un entorno Windows, incluyendo subcarpetas, utilizando PowerShell. Puedes limpiar archivos innecesarios fácilmente con un solo comando corto.'
 ---
 
 

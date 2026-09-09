@@ -1,11 +1,12 @@
 ---
-title: 'テキストエディタmicroをWindowsにインストールする方法'
+title: 'Windowsで使える！軽量テキストエディタ「micro」のインストール方法'
 slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "テキストエディタ"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'コマンドプロンプトで快適に動作するターミナル向けテキストエディタ「micro」をWindowsにインストールし、環境変数を設定して使えるようにするまでの手順を分かりやすく解説します。'
 ---
 
 ## microをダウンロードする

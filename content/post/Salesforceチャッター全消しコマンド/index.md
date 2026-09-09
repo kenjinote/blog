@@ -1,11 +1,12 @@
 ---
-title: 'Salesforceチャッター全消しコマンド'
+title: 'Salesforce：チャッターの投稿と添付ファイルを全消しするコマンド'
 slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "チャッター"]
 draft: false
 image: "img_1.webp"
 categories: ["IT・テクノロジー"]
+description: 'Salesforceで組織のストレージ容量が逼迫した際に役立つ、チャッターの全投稿や添付ファイル、ゴミ箱のデータを一括削除するコマンドを紹介します。開発者コンソールから匿名実行ウィンドウを使用して素早くクリーンアップする方法です。'
 ---
 # Salesforceチャッター全消しコマンド
 Salesforceのチャッターで、すべての投稿と添付ファイルを全消しするコマンドです。

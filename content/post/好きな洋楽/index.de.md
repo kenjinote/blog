@@ -1,11 +1,12 @@
 ---
-title: "Lieblings Westliche Musik"
+title: 'Zusammenfassung empfohlener Meisterwerke der westlichen Musik: Klassische Hits, die über Epochen hinweg geliebt werden'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Westliche Musik", "Musik"]
 draft: false
 image: "img.webp"
 categories: ["Lebensstil und Sonstiges"]
+description: 'Wir stellen empfohlene Meisterwerke der westlichen Musik vor, die über Epochen hinweg geliebt werden, wie die Beatles, Coldplay und Ed Sheeran. Von herzergreifenden Balladen bis hin zu Popmusik, die die Stimmung hebt, haben wir klassische Hits zusammengestellt, die Sie unbedingt hören sollten.'
 ---
 
 # Empfohlene westliche Musik

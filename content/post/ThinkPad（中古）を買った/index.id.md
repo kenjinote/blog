@@ -1,11 +1,12 @@
 ---
-title: "Saya Membeli ThinkPad (Bekas)"
+title: 'Membeli ThinkPad T470s Bekas! Ulasan Jujur tentang Spesifikasi, Kegunaan, dan Kekurangan'
 slug: "saya-membeli-thinkpad-bekas"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Laptop"]
 draft: false
 image: "img.webp"
 categories: ["TI dan Teknologi"]
+description: 'Ini adalah artikel ulasan pembelian ThinkPad T470s bekas untuk pekerjaan jarak jauh. Kami memperkenalkan pengalaman penggunaan nyata, termasuk spesifikasi Core i7, RAM 24GB, dan layar LCD WQHD, kondisinya, serta kekurangan seperti tata letak keyboard.'
 ---
 
 # Saya Membeli Laptop ThinkPad (Bekas)

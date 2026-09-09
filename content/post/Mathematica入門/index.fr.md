@@ -1,11 +1,12 @@
 ---
-title: "Introduction à Mathematica"
+title: 'Introduction à Mathematica : comment utiliser les commandes de base pour les équations, le calcul différentiel et intégral'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Mathématiques", "Algorithme"]
 draft: false
 image: "img.webp"
 categories: ["Mathématiques・Cryptographie・Quantique"]
+description: 'Explique l''utilisation de base et les commandes de calcul de Mathematica pour les débutants. Compile des exemples concrets de fonctions couramment utilisées telles que la résolution d''équations et de systèmes d''équations (Solve), les inéquations (Reduce), la dérivation (D), l''intégration (Integrate) et le calcul matriciel.'
 ---
 # Introduction à Mathematica
 

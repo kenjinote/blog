@@ -3,13 +3,14 @@
 
 
 
-title: "paint.net의 매력"
+title: '무료이면서 고기능! 이미지 편집 소프트웨어 ''paint.net''의 특징과 매력'
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"
 categories: ["AI・테크놀로지"]
+description: '무료이면서 고기능인 이미지 편집 소프트웨어 paint.net의 매력을 소개합니다. 레이어, 투명도 조절, 다양한 효과 등 Windows 기본 그림판에는 없는 편리한 기능이 가득합니다. 가볍게 동작하고 직관적으로 조작할 수 있는 특징과 무료 버전의 설치 절차를 알기 쉽게 설명합니다.'
 ---
 
 

@@ -6,13 +6,14 @@
 
 
 
-title: "Visual Studio Code 추천 확장 기능"
+title: 'VSCode 추천 확장 기능 정리! 개발 효율이 극적으로 향상되는 플러그인 목록'
 slug: "Visual Studio Codeおすすめ拡張機能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "확장 기능", "익스텐션"]
 draft: false
 image: "img.webp"
 categories: ["도구·개발 환경"]
+description: 'Visual Studio Code(VSCode)를 더욱 편리하게 해주는 추천 확장 기능을 목록으로 소개합니다. 컨테이너 관리, Git 코드 관리, Copilot에 의한 AI 코드 자동 완성 등 개발 효율을 높여주는 필수 플러그인을 엄선했습니다.'
 ---
 
 

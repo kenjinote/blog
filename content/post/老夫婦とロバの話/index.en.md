@@ -1,11 +1,12 @@
 ---
-title: 'The Story of the Old Couple and the Donkey'
+title: 'Learning from the Story of the Old Couple and the Donkey: How to Live Without Being Swayed by Others'' Opinions'
 slug: "老夫婦とロバの話"
 date: 2024-09-18T00:56:59+09:00
 tags: ["The Old Couple and the Donkey", "Satire"]
 draft: false
 image: "img.webp"
 categories: ["IT and Technology"]
+description: 'Through the famous fable ''The Old Couple and the Donkey'', we examine the negative effects of caring too much about others'' eyes and the modern relationship dilemma of ''whose voice should we believe?''. We deliver hints for living a life unswayed by the opinions of others.'
 ---
 
 ## The Old Couple, the Donkey, and Our Problem of "Whose Voice to Listen To"

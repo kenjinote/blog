@@ -1,11 +1,12 @@
 ---
-title: '如何为 Github 仓库配置自定义域名'
+title: '为GitHub仓库设置自定义域名的方法｜Onamae.com篇'
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","域名"]
 draft: false
 image: "images/octocat.webp"
 categories: ["工具·开发环境"]
+description: '本文讲解为GitHub仓库（GitHub Pages）设置自定义域名的步骤。这次将介绍从“Onamae.com”的管理界面添加/修改DNS的A记录，并与GitHub关联的具体步骤。'
 ---
 要为 Github 仓库配置自定义域名，你需要修改域名的 DNS 设置。
 这里我们假设你是在

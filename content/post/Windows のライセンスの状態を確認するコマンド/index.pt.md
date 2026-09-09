@@ -1,11 +1,12 @@
 ---
-title: "Comando para verificar o status da licença do Windows"
+title: 'Como verificar o status de ativação da licença do Windows! Verifique facilmente com um único comando'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licença", "Prompt de Comando"]
 draft: false
 image: "img_1.webp"
 categories: ["PC e Gadgets"]
+description: 'Explicamos como confirmar se a licença do Windows está ativada corretamente. Apresentamos um procedimento para verificar facilmente status detalhados, como chave do produto, tipo de licença e data de expiração, apenas executando o comando ''slmgr'' no prompt de comando.'
 ---
 
 # 【Windows】Como verificar o status da licença (OK com 1 comando)

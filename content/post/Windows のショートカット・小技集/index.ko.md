@@ -3,13 +3,14 @@
 
 
 
-title: "Windows 단축키・팁 모음"
+title: '[Windows 11/10] 작업 효율이 극적으로 오르는 유용한 단축키·팁 모음'
 slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows","팁","단축키"]
 draft: false
 image: "img.webp"
 categories: ["PC・가젯"]
+description: 'Windows 11 및 Windows 10에서 작업 효율을 높여주는 유용한 단축키와 팁을 엄선하여 소개합니다. 창 조작, 바탕화면 표시, 음성 입력, 화면 캡처 등 초보자부터 숙련자까지 평소에 유용하게 쓸 수 있는 필수 테크닉 모음입니다.'
 ---
 
 

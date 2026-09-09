@@ -1,11 +1,12 @@
 ---
-title: 'WinGetを使ってコマンドでアプリをインストールする'
+title: 'Windows 11のWinGetコマンドでアプリを簡単インストール・管理する方法'
 slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'Windows 11のパッケージマネージャー「WinGet」を使い、コマンドからアプリをインストールする方法を解説します。ChromeやVSCode、Slackなどの主要ソフトを、コマンドラインで素早く導入・管理する手順を紹介します。'
 ---
 ## 前提条件
 Windows 11 であること

@@ -1,5 +1,5 @@
 ---
-title: "Experimentando o mermaid.js"
+title: 'O que é o Mermaid.js? Como introduzir no Hugo e desenhar diagramas e gráficos'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
@@ -7,6 +7,7 @@ draft: false
 mermaid: true
 image: "img_2.webp"
 categories: ["IA e Tecnologia"]
+description: 'Explicamos de forma clara a visão geral do Mermaid.js, uma biblioteca JavaScript que permite desenhar diagramas como fluxogramas e gráficos de Gantt baseados em texto, e os passos específicos para introduzir, configurar e disponibilizá-lo no gerador de sites estáticos Hugo.'
 ---
 
 ## O que é o mermaid.js

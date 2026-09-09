@@ -1,11 +1,12 @@
 ---
-title: "Liens de vidéos courtes"
+title: 'Compilation de vidéos courtes virales | L''histoire du ramasseur de balles de Tottenham qui sauve la mise, etc.'
 slug: "liens-de-videos-courtes"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Vidéo", "Court"]
 draft: false
 image: "img.webp"
 categories: ["Informatique et Technologie"]
+description: 'Nous présentons une compilation de liens vers des vidéos courtes recommandées devenues virales sur les réseaux sociaux, comme l''épisode touchant du ramasseur de balles loué par Mourinho pour avoir sauvé l''équipe lors d''un match de Tottenham.'
 ---
 1. Ramasseur de balles de football
 

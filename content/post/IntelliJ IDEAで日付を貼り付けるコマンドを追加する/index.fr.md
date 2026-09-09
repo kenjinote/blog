@@ -1,11 +1,12 @@
 ---
-title: "Ajouter une commande pour insérer la date dans IntelliJ IDEA"
+title: 'Comment créer un raccourci pour insérer la date actuelle dans IntelliJ IDEA'
 slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["IT・テクノロジー"]
+description: 'Nous présentons en détail, étape par étape, la méthode de configuration des « Live Templates » qui insère automatiquement la date et l''heure actuelles, ce qui est très pratique lors de la rédaction d''un blog dans IntelliJ IDEA. Épargnez-vous l''effort de le taper à chaque fois.'
 ---
 # Introduction
 J'utilise IntelliJ IDEA lorsque j'écris ce blog. C'est pratique car sa compatibilité avec Git est bonne et il affiche un aperçu Markdown.

@@ -1,11 +1,12 @@
 ---
-title: "Comment dessiner des graphiques avec Python (matplotlib.pyplot)"
+title: 'Comment tracer des graphiques avec Python et matplotlib [Compatible Google Colab]'
 slug: "Comment dessiner des graphiques avec Python (matplotlib.pyplot)"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Graphiques", "Mathématiques", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["Mathématiques・Cryptographie・Quantique"]
+description: 'Explique pour les débutants la procédure pour dessiner et afficher facilement des graphiques d''ondes sinusoïdales et cosinusoïdales en utilisant la bibliothèque matplotlib.pyplot de Python via Google Colaboratory. Vous pouvez l''essayer immédiatement sans aucune configuration d''environnement.'
 ---
 
 ![img_1.png](img_1.webp)

@@ -1,11 +1,12 @@
 ---
-title: 'What it Takes to Avoid Falling for Conspiracy Theories'
+title: '6 Measures to Avoid Falling for Conspiracy Theories | Enhance Your Mental Security'
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00
 tags: ["Conspiracy Theories", "Poem"]
 draft: false
 image: "img.webp"
 categories: ["IT / Technology"]
+description: 'We explain how to prepare ''mental security'' necessary to avoid being drawn into online conspiracy theories. It provides hints for wisely surviving modern internet society, such as the ability to hold off connecting anxiety with answers directly, and tips for gathering information to prevent confirmation bias.'
 ---
 
 ## "Mental Security" Needed to Avoid Being Drawn into Conspiracy Theories

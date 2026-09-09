@@ -1,11 +1,12 @@
 ---
-title: "Wie man mit paint.net einen Rahmen zu einem Bild hinzufügt"
+title: 'Einfache Methode und Schritte zum Hinzufügen von Rändern zu Bildern mit paint.net'
 slug: "wie-man-mit-paint-net-einen-rahmen-hinzufuegt"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "Rahmen", "Bild"]
 draft: false
 image: "img_3.webp"
 categories: ["KI & Technologie"]
+description: 'Erklärt, wie man mit der Bildbearbeitungssoftware paint.net Rahmen zu Bildern hinzufügt. Stellt für Anfänger vor, wie man Farben mit der Sekundärfarbe festlegt und die Leinwandgröße ändert, um Rahmen zu erstellen. Eine praktische Technik, die nützlich ist, wenn man Bilder für Blogs oder Präsentationen dekorieren möchte.'
 ---
 
 Hier wird gezeigt, wie man mit paint.net einen Rahmen zu einem Bild hinzufügt.

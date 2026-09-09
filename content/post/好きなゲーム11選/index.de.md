@@ -1,11 +1,12 @@
 ---
-title: "11 Lieblingsspiele"
+title: 'Ein Muss für Retro-Gamer! 11 empfohlene Meisterwerke für den ersten Game Boy und SNES'
 slug: "11-lieblingsspiele"
 date: 2022-09-12T19:28:50+09:00
 tags: ["Spiele"]
 draft: false
 image: "img_12.webp"
 categories: ["IT / Technologie"]
+description: 'Wir stellen 11 empfohlene Meisterwerke aus nostalgischen Retro-Spielen wie dem ersten Game Boy und Super Famicom (SNES) vor. Es ist voller Klassiker der Hall-of-Fame-Klasse, die auch heute noch nicht verblassen, wie „Sa·Ga 2: Hihou Densetsu“, „Kirby''s Dream Land“ und „Pokémon Rot/Grün“. Wir blicken auf die Reize der Meisterwerke zurück.'
 ---
 Als ich mich an meine Lieblingsspiele erinnerte, bestand die Liste schließlich nur aus Klassikern.
 Da es sich um viele ältere Spiele handelt, probieren Sie sie bitte aus, falls Sie sie noch nicht gespielt haben.

@@ -1,11 +1,12 @@
 ---
-title: "Schriftartensammlung für die Programmierung"
+title: 'Empfohlene Schriftarten für die Programmierung | Kostenlose Fonts, die gut lesbar sind und die Entwicklungseffizienz steigern'
 slug: "schriftartensammlung-fuer-die-programmierung"
 date: 2024-03-30T02:21:31+09:00
 tags: ["Programmierung", "Schriftarten"]
 draft: false
 image: "img.webp"
 categories: ["Programmierung"]
+description: 'Wir stellen optimale Programmier-Schriftarten für das Coding vor, wie JetBrains Mono, HackGen, Ricty Diminished, Cica und Migu. Verbessern Sie die Lesbarkeit im Editor und steigern Sie so Ihre Entwicklungseffizienz.'
 ---
 
 ## JetBrains Mono

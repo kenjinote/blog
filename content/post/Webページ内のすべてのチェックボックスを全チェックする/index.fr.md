@@ -1,11 +1,12 @@
 ---
-title: "Cocher toutes les cases sur une page web"
+title: '[JS] Comment cocher toutes les cases d''une page Web en une seule fois (avec bookmarklet)'
 slug: "Cocher toutes les cases sur une page web"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatisation"]
 draft: false
 image: "img.webp"
 categories: ["gestion de blog"]
+description: 'Nous expliquons comment cocher toutes les cases à cocher d''une page Web en une seule fois. Nous présentons le code JavaScript à exécuter dans la console DevTools de Chrome, ainsi que la procédure pour créer un bookmarklet pratique permettant de tout sélectionner ou désélectionner en un seul clic.'
 ---
 
 Pour cocher toutes les cases sur une page web, ouvrez les DevTools avec F12, collez le code suivant dans la console et exécutez-le.

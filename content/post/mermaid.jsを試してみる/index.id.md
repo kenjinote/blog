@@ -1,5 +1,5 @@
 ---
-title: "Mencoba mermaid.js"
+title: 'Apa itu Mermaid.js? Cara Menginstal di Hugo dan Menggambar Diagram atau Bagan'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
@@ -7,6 +7,7 @@ draft: false
 mermaid: true
 image: "img_2.webp"
 categories: ["AI dan Teknologi"]
+description: 'Penjelasan yang mudah dipahami tentang ikhtisar ''Mermaid.js'', pustaka JavaScript yang dapat menggambar diagram seperti diagram alur dan bagan Gantt berbasis teks, serta prosedur spesifik untuk menginstal, mengonfigurasi, dan menggunakannya pada generator situs statis Hugo.'
 ---
 
 ## Apa itu mermaid.js

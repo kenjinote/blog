@@ -1,11 +1,12 @@
 ---
-title: "Musiques Occidentales Préférées"
+title: 'Résumé des chefs-d''œuvre recommandés de la musique occidentale : Des tubes classiques aimés à travers les époques'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Musique Occidentale", "Musique"]
 draft: false
 image: "img.webp"
 categories: ["Style de vie et Divers"]
+description: 'Nous vous présentons des chefs-d''œuvre recommandés de la musique occidentale qui traversent le temps, comme The Beatles, Coldplay et Ed Sheeran. Des ballades touchantes aux morceaux pop entraînants, nous avons compilé les chansons à succès incontournables.'
 ---
 
 # Musique Occidentale Recommandée

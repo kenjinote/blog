@@ -1,5 +1,5 @@
 ---
-title: '在hugo中启用KaTeX（类似LaTeX的数学公式显示）的方法'
+title: '在Hugo中引入KaTeX，显示类似LaTeX的优美数学公式的方法'
 slug: "hugoでKaTeX(LaTeX風数式表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "数学公式", "数学", "hugo"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["数学・密码学・量子"]
+description: '本文讲解将高速数学公式渲染库“KaTeX”引入静态网站生成器Hugo的步骤。从创建math.html到设置加载到头部，让您轻松了解如何在博客中启用类似LaTeX的优美数学公式显示。'
 ---
 # 什么是KaTeX
 KaTeX是一个在HTML中显示类似LaTeX的数学公式的JavaScript库。

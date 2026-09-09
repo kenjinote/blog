@@ -6,13 +6,14 @@
 
 
 
-title: "Qué hacer cuando aparece ''Temporary failure resolving~'' en WSL"
+title: 'Solución al error ''Temporary failure resolving'' al hacer apt update en WSL'
 slug: "wsl で「Temporary failure resolving～」と表示される場合の対処方法"
 date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "solución"]
 draft: false
 image: "img.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
+description: 'Explicamos cómo solucionar el error ''Temporary failure resolving'' que aparece al ejecutar ''sudo apt update'' en el entorno WSL. Presentamos el procedimiento para cambiar la configuración del servidor DNS y restablecer correctamente la comunicación del administrador de paquetes.'
 ---
 
 

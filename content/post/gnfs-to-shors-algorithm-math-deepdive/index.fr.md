@@ -1,5 +1,5 @@
 ---
-title: "【Compréhension complète avec formules】Pourquoi le « GNFS », le plus puissant des algorithmes classiques, est-il vaincu par l'algorithme quantique ? Le changement de paradigme de la factorisation en nombres premiers"
+title: 'Casser le chiffrement RSA ? Explication approfondie des algorithmes GNFS et de Shor avec des formules mathématiques'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Ordinateur quantique", "GNFS", "Algorithme de Shor", "Décryptage", "Mathématiques"]
@@ -7,6 +7,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Mathématiques, Cryptographie et Quantique"]
+description: 'Le problème de la factorisation qui sous-tend la sécurité du chiffrement RSA. Depuis le mécanisme mathématique de « l''algorithme du Crible du Corps de Nombres Généralisé (GNFS) », le plus puissant des algorithmes classiques, jusqu''aux raisons pour lesquelles « l''algorithme de Shor » des ordinateurs quantiques le surpasse, nous l''expliquerons en profondeur à l''aide de formules et de schémas conceptuels.'
 ---
 
 Dans la société Internet moderne, la sécurité des informations est protégée par des systèmes de cryptographie à clé publique tels que le chiffrement RSA. Le fondement de la sécurité du chiffrement RSA repose sur le fait suivant : **« la factorisation de nombres composés géants est extrêmement difficile sur le plan de la complexité des calculs »**.

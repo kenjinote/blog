@@ -1,11 +1,12 @@
 ---
-title: 'Collatz Conjecture'
+title: 'What is the Collatz Conjecture? Verifying a Mathematical Unsolved Problem Where Any Number Eventually Reaches 1 in Python'
 slug: "collatz-conjecture"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Collatz Conjecture", "Math", "Programming", "Algorithm"]
 draft: false
 image: "img.webp"
 categories: ["Math/Cryptography/Quantum"]
+description: 'Will repeating ''halve if even, multiply by 3 and add 1 if odd'' always result in 1? An easy-to-understand explanation of the mysterious rules behind the famous unsolved mathematical problem, the ''Collatz Conjecture''. Furthermore, we''ll write a Python program to simulate and see if sequences actually converge to 1.'
 ---
 
 # "Any number will eventually become 1"? ── Playing with the Collatz Conjecture

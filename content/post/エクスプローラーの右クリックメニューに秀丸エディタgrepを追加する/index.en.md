@@ -1,11 +1,12 @@
 ---
-title: 'Add Hidemaru Editor Grep to Explorer Right-Click Menu'
+title: 'How to Add Hidemaru Editor''s grep to the Windows Right-Click Menu'
 slug: "エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorer", "Context Menu", "grep", "Registry"]
 draft: false
 image: "img.webp"
 categories: ["Tools & Development Environment"]
+description: 'Introduces handy setup steps to add Hidemaru Editor''s grep function to the Explorer right-click menu in Windows 10/11. Clearly explains a simple method using a registry registration file.'
 ---
 
 Here is how to add Hidemaru Editor's grep to the right-click menu of Explorer in Windows 10/11.

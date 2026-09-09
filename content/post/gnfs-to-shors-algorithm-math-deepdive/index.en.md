@@ -1,5 +1,5 @@
 ---
-title: "[Complete Mathematical Guide] Why the Ultimate Classical 'GNFS' Loses to Quantum Algorithms: The Paradigm Shift in Prime Factorization"
+title: 'Breaking RSA Encryption? Thorough Mathematical Explanation of GNFS and Shor''s Algorithm'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Quantum Computer", "GNFS", "Shor's Algorithm", "Cryptography", "Mathematics"]
@@ -7,6 +7,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Math, Cryptography, Quantum"]
+description: 'The prime factorization problem that underpins the security of RSA encryption. We thoroughly explain with formulas and conceptual diagrams everything from the mathematical mechanism of the strongest classical algorithm ''General Number Field Sieve (GNFS)'' to why ''Shor''s Algorithm'' by quantum computers can break it.'
 ---
 
 Information security in the modern internet society is protected by public-key cryptography, such as RSA cryptography. The basis for the security of RSA relies on the fact that **"the prime factorization of huge composite numbers is computationally extremely difficult."**

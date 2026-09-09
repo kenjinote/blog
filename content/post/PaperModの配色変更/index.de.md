@@ -1,11 +1,12 @@
 ---
-title: "Ändern des Farbschemas von PaperMod"
+title: 'Wie man das Farbschema und Farbthema des Hugo PaperMod-Themes mit CSS ändert'
 slug: "PaperModの配色変更"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
 categories: ["Blog-Verwaltung"]
+description: 'Erklärt, wie man das allgemeine Farbschema im PaperMod-Theme von Hugo anpasst. Stellt konkrete Beispiele für Variableneinstellungen vor, um ein bevorzugtes Farbschema anzuwenden, indem das CSS (blank.css) bearbeitet wird, das Stildefinitionen für Hintergrundfarbe, Textfarbe, Codeblöcke usw. enthält.'
 ---
 Ich habe das Farbschema des PaperMod-Themas geändert. Für die Änderungsmethode habe ich Folgendes konsultiert.
 

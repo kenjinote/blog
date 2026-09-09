@@ -1,11 +1,12 @@
 ---
-title: 'HTMLでプレゼン資料を作る方法（reveal.js）'
+title: 'reveal.jsの使い方：HTMLとMarkdownでプレゼン資料を作成'
 slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "プレゼン"]
 draft: false
 image: "img.webp"
 categories: ["プログラミング"]
+description: 'HTMLとMarkdownで直感的にプレゼンテーションが作成できるツール「reveal.js」のインストールと基本的な使い方を解説します。アニメーションやPDF出力に対応し、Git等のバージョン管理とも相性抜群の活用法を紹介します。'
 ---
 
 # HTMLでプレゼン資料を作る方法

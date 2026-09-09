@@ -1,11 +1,12 @@
 ---
-title: 'Slack App + OAuth2 を使って Slack にメッセージを投稿する方法'
+title: 'Slack APIとOAuth2でメッセージを投稿する方法（C++実装例）'
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
 date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["ブログ運営"]
+description: 'Slack AppのOAuthトークンを利用して、Slack Web API経由でメッセージを投稿する方法を解説します。スコープの設定やアクセストークンの取得手順から、WinHTTPを使ったC++での具体的な実装コード例まで紹介します。'
 ---
 
 ## ✅ アクセストークンを使う投稿方法（Slack Web API）

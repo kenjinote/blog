@@ -4,13 +4,14 @@
 
 
 
-title: "'프로그래밍 언어 목록'"
+title: '메이저부터 마이너까지! 프로그래밍 언어 목록과 각각의 특징 정리'
 slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["프로그래밍 언어"]
 draft: true
 image: "img.webp"
 categories: ["프로그래밍"]
+description: 'C언어, Python, Java, JavaScript부터 Rust, Go, OCaml, Clojure 등 다양한 프로그래밍 언어를 목록화했습니다. 개발이나 학습에 참고가 되도록 각 언어의 개요와 특징을 확인해 보세요.'
 ---
 
 

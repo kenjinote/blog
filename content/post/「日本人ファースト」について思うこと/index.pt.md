@@ -1,11 +1,12 @@
 ---
-title: "A Ilusão e a Realidade do 'Japão em Primeiro Lugar': A Defesa Chamada 'Coexistência' Enfrentada pelo Japão em 2026"
+title: 'A imagem falsa e verdadeira do ''Primeiro os Japoneses'': Os desafios que o Japão enfrenta em 2026 e o caminho para a coexistência'
 slug: "「日本人ファースト」について思うこと"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Japão em Primeiro Lugar", "Política", "Problemas Sociais"]
 draft: false
 image: "img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Analisamos a realidade do aumento dos preços e o envelhecimento da população com menos nascimentos por trás da expressão ''Primeiro os Japoneses'', que está ganhando apoio no Japão em 2026. Eliminando o sentimentalismo, discutimos a verdadeira natureza das questões sociais com base em dados objetivos e como a coexistência deve ser no futuro.'
 ---
 
 # A Ilusão e a Realidade do "Japão em Primeiro Lugar": A Defesa Chamada "Coexistência" Enfrentada pelo Japão em 2026

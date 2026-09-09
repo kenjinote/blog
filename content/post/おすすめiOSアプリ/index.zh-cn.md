@@ -1,11 +1,12 @@
 ---
-title: '推荐iOS应用'
+title: '真正实用！精选推荐iOS应用汇总'
 slug: "おすすめiOSアプリ"
 date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "应用", "推荐"]
 draft: false
 image: "img.webp"
 categories: ["PC・数码"]
+description: '精选推荐能让iPhone和iPad更好用的iOS应用。带您一览在工作和生活中派得上用场的便捷工具，以及丰富生活的必备应用。'
 ---
 
 ## 推荐iOS应用

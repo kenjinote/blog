@@ -1,11 +1,12 @@
 ---
-title: "Sejarah Matematika"
+title: 'Sejarah Matematika dan Masalah Sulit di Zaman Kuno: Mempelajari Tiga Masalah Konstruksi Besar dan Spiral Archimedes'
 slug: "sejarah-matematika"
 date: 2023-07-22T15:25:10+09:00
 tags: ["matematika", "sejarah"]
 draft: false
 image: "img.webp"
 categories: ["matematika, kriptografi, kuantum"]
+description: 'Kami akan mengulas sejarah matematika bersama dengan peristiwa dan kronologi kuno. Kami akan menjelaskan secara mendetail tentang penemuan penting dan jejak sejarah yang mendukung perkembangan matematika, seperti tiga masalah besar konstruksi dari zaman Yunani kuno (mengkuadratkan lingkaran, membagi tiga sudut, menggandakan kubus), Spiral Archimedes, dan Teorema Pappus.'
 ---
 
 ### Tiga masalah konstruksi Yunani Kuno

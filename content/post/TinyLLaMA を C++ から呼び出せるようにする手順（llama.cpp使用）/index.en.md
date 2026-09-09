@@ -1,11 +1,12 @@
 ---
-title: 'Steps to call TinyLLaMA from C++ (using llama.cpp)'
+title: 'Run TinyLLaMA in C++! Local LLM Environment Setup Guide Using llama.cpp'
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'Explains the setup steps to call and run TinyLLaMA from C++. Summarizes the process from building llama.cpp and acquiring the model from HuggingFace to building methods in various environments, in a way that is easy to understand for beginners.'
 ---
 
 # ✅ TinyLLaMA × C++ Setup Steps (using `llama.cpp`)

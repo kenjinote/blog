@@ -1,11 +1,12 @@
 ---
-title: "嘗試在 Visual Studio Code 中安裝 Qt Extension Pack"
+title: '在 VSCode 中建置 Qt 開發環境！Qt Extension Pack 的安裝與使用方法'
 slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
 date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
 categories: ["ツール・開発環境"]
+description: '介紹在 VSCode (Visual Studio Code) 中用以開發 Qt 應用程式的擴充功能「Qt Extension Pack」導入步驟。推薦給想建置輕量級開發環境以取代 Qt Creator 的使用者。'
 ---
 
 # 在 VSCode 中開始 Qt 開發：如何安裝 Qt Extension Pack

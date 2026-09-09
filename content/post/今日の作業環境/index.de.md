@@ -1,11 +1,12 @@
 ---
-title: "Heutige Arbeitsumgebung"
+title: 'Den Schreibtisch des Kindes für die Arbeit ausleihen? Die reale Arbeitsumgebung von Telearbeit/Remote-Arbeit während der Kindererziehung'
 slug: "heutige-arbeitsumgebung"
 date: 2022-09-04T14:29:09+09:00
 tags: ["Verschiedenes", "Kinder"]
 draft: false
 image: "images/today_workplase.webp"
 categories: ["IT und Technologie"]
+description: 'Wir stellen die heutige Arbeitsumgebung vor, die in der begrenzten Zeit während der Kinderbetreuung genutzt wird. Die kostbare Zeit, in der sich das Kind zum Mittagsschlaf hinlegt, kann man sich konzentrieren. Wir beschreiben den realen Alltag der Remote-Arbeit, z. B. die Nutzung des Schreibtischs des Kindes oder den cleveren Einsatz eines iPads mit einem Konvertierungsadapter.'
 ---
 
 # Kinderschreibtisch

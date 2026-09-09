@@ -1,11 +1,12 @@
 ---
-title: "كيفية إعداد نطاق مخصص لمستودع Github"
+title: 'كيفية تعيين نطاق مخصص (Custom Domain) لمستودع GitHub | إصدار Onamae.com'
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
 image: "images/octocat.webp"
 categories: ["ツール・開発環境"]
+description: 'نشرح خطوات إعداد نطاق مخصص لمستودع GitHub Pages. نقدم هذه المرة خطوات محددة من إضافة وتعديل سجل DNS A من لوحة تحكم ''Onamae.com'' وحتى ربطه بـ GitHub.'
 ---
 لإعداد نطاق مخصص لمستودع Github، تحتاج إلى تغيير إعدادات DNS للنطاق.
 هنا، سنفترض أنك تدير نطاقك باستخدام

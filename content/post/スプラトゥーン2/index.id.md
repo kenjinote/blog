@@ -1,11 +1,12 @@
 ---
-title: "Splatoon 2"
+title: 'Rahasia Menikmati Splatoon 2 dalam Waktu Lama! Rekomendasi Senjata dan Tips Strategi'
 slug: "splatoon-2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Game", "Nintendo Switch"]
 draft: false
 image: "img.webp"
 categories: ["TI & Teknologi"]
+description: 'Memperkenalkan daya tarik gim mahakarya yang bisa dimainkan lama, ''Splatoon 2'', serta senjata andalan untuk pemula (seperti Splattershot Jr., berbagai macam Roller, dll.). Ini adalah buku harian bermain untuk menikmati permainan sekaligus mempertahankan peringkat A+ hingga S+ di Ranked Battle.'
 ---
 
 # Splatoon 2

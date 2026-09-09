@@ -2,13 +2,14 @@
 
 
 
-title: "Conexión remota sencilla con TeamViewer"
+title: '【Para principiantes】Cómo realizar una conexión de escritorio remoto fácilmente con TeamViewer'
 slug: "TeamViewerで簡単リモート接続"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "comando", "conexión remota"]
 draft: false
 image: "img.webp"
 categories: ["IT y Tecnología"]
+description: 'Explicamos cómo realizar fácilmente una conexión de escritorio remoto usando TeamViewer. También presentamos pequeños trucos útiles como especificar el ID y la contraseña desde la línea de comandos, y automatizar/omitir la conexión mediante accesos directos.'
 ---
 
 

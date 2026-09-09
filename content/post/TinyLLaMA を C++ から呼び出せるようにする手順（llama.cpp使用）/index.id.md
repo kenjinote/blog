@@ -1,11 +1,12 @@
 ---
-title: "Langkah-langkah Memanggil TinyLLaMA dari C++ (menggunakan llama.cpp)"
+title: 'Menjalankan TinyLLaMA di C++! Prosedur Pembangunan Lingkungan LLM Lokal Menggunakan llama.cpp'
 slug: "langkah-langkah-memanggil-tinyllama-dari-cpp-menggunakan-llama-cpp"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Menjelaskan prosedur pengaturan untuk memanggil dan menjalankan TinyLLaMA dari C++. Merangkumnya dengan mudah dipahami oleh pemula, mulai dari membangun llama.cpp hingga mendapatkan model dari HuggingFace, dan metode pembangunan di berbagai lingkungan.'
 ---
 
 # ✅ Langkah Persiapan TinyLLaMA × C++ (menggunakan `llama.cpp`)

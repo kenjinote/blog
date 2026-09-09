@@ -1,11 +1,12 @@
 ---
-title: "Pemikiran Saya tentang Jepang"
+title: 'Masalah dan Rasa Kejanggalan pada Masyarakat Jepang: Penurunan Angka Kelahiran Dilihat dari Masalah Beasiswa dan Teori Tanggung Jawab Pribadi'
 slug: "pemikiran-saya-tentang-jepang"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Catatan Harian"]
 draft: false
 image: "images/img.webp"
 categories: ["IT & Teknologi"]
+description: 'Ini adalah artikel yang menyusun dan mempertimbangkan secara personal tentang masalah serta rasa kejanggalan terhadap masyarakat Jepang. Kami mempertanyakan keadaan masyarakat sekarang di mana menyebarnya teori tanggung jawab pribadi yang dingin dan angka kelahiran yang menurun dikarenakan beban utang generasi muda akibat beasiswa berbunga, dan berbicara mengenai betapa pentingnya menyelamatkan mereka yang rentan serta memiliki semangat saling membantu.'
 ---
 Saya ingin menyusun pemikiran dan apa yang menurut saya aneh tentang masyarakat Jepang.
 

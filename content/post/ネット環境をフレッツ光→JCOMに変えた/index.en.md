@@ -1,11 +1,12 @@
 ---
-title: 'Changed my internet environment from Flets Hikari to J:COM'
+title: 'The Results of Switching from FLET''S Hikari to J:COM! Real Thoughts on Price and Connection Speed'
 slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flets Hikari","Internet Connection"]
 draft: false
 image: "jcom.webp"
 categories: ["IT & Technology"]
+description: 'An experience report of switching the home internet connection from FLET''S Hikari to J:COM. Unreservedly reviews actual usage impressions, such as the monthly cost savings effect, improved download speeds, conversely decreased upload speeds, and connection stability.'
 ---
 
 # Changed my home internet environment from Flets Hikari to J:COM

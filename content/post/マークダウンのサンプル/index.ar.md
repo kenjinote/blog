@@ -1,9 +1,9 @@
 ---
 author: "Hugo Authors"
-title: "دليل بناء جملة ماركداون"
+title: 'أمثلة على صيغة Markdown للاستخدام في Hugo: القواعد الأساسية للعناوين والفقرات'
 slug: "マークダウンのサンプル"
 date: "2019-03-11"
-description: "مقال نموذجي يعرض بناء جملة Markdown الأساسي والتنسيق لعناصر HTML."
+description: 'نقدم أمثلة على القواعد الأساسية (الصيغة) لـ Markdown التي يمكن استخدامها في إنشاء المحتوى لمنشئ المواقع الثابتة Hugo. يمكنك التحقق من كيفية تنسيق العناوين (H1 إلى H6) والفقرات وغيرها بواسطة CSS الخاص بالقالب.'
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]
 series: ["Themes Guide"]

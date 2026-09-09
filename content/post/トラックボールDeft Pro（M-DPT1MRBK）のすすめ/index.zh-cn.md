@@ -1,11 +1,12 @@
 ---
-title: '推荐使用轨迹球Deft Pro（M-DPT1MRBK）'
+title: '宜丽客Deft Pro评测！8键轨迹球鼠标的优缺点'
 slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["轨迹球", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '宜丽客中型轨迹球鼠标“Deft Pro（M-DPT1MRBK）”的一周使用评测。讲解减轻手腕负担、丰富的按键分配等优点，以及清洁麻烦、需要适应操作感等缺点。'
 ---
 
 # 关于宜丽客（Elecom）轨迹球 Deft Pro M-DPT1MRBK

@@ -1,11 +1,12 @@
 ---
-title: "Videos, die deine Motivation steigern"
+title: '【Yusuke Narita / Hayao Miyazaki】Empfohlene Videos und Denkweisen zur Steigerung der Motivation'
 slug: "モチベーションを上げてくれる動画"
 date: 2022-09-08T02:22:52+09:00
 tags: ["Motivation", "Videos"]
 draft: false
 image: "images/img.webp"
 categories: ["IT und Technologie"]
+description: 'Wir stellen Videos vor, die die Motivation steigern, wenn Ihre Bemühungen nicht anerkannt werden oder Sie Sorgen haben. Es ist voller Zitate, die das Handeln und das Leben positiv beeinflussen, wie z.B. Yusuke Naritas Ansichten zu vielfältigen Werten und die Denkweise von Regisseur Hayao Miyazaki.'
 ---
 
 ## Es ist okay, wenn deine Bemühungen nicht anerkannt werden

@@ -3,13 +3,14 @@
 
 
 
-title: "'Lo que necesita una comunidad'"
+title: '¿Qué se necesita para una buena comunidad? Pistas de gestión de las directrices de Scratch'
 slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Comunidad", "Miscelánea"]
 draft: false
 image: "img.webp"
 categories: ["TI / Tecnología"]
+description: 'Consideramos los elementos necesarios para gestionar una comunidad sana y agradable a partir de las sofisticadas directrices de la comunidad del sitio de aprendizaje de programación ''Scratch''. Presentamos perspectivas importantes aplicables a cualquier grupo, como el respeto a los demás y garantizar la seguridad.'
 ---
 
 

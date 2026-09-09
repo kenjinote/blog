@@ -3,13 +3,14 @@
 
 
 
-title: "Enumeración de títulos de ventanas"
+title: 'Cómo enumerar y obtener los títulos de las ventanas actualmente abiertas con PowerShell'
 slug: "ウィンドウタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["Programación"]
+description: 'Explicamos cómo enumerar y obtener fácilmente los títulos de todas las ventanas actualmente abiertas en el PC utilizando PowerShell. Lo presentamos de forma comprensible para principiantes, con comandos reales y ejemplos de salida.'
 ---
 
 

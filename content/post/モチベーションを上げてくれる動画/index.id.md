@@ -1,11 +1,12 @@
 ---
-title: "Video yang Meningkatkan Motivasi"
+title: '[Yusuke Narita & Hayao Miyazaki] Video Rekomendasi dan Cara Berpikir yang Akan Meningkatkan Motivasi Anda'
 slug: "video-yang-meningkatkan-motivasi"
 date: 2022-09-08T02:22:52+09:00
 tags: ["Motivasi", "Video"]
 draft: false
 image: "images/img.webp"
 categories: ["TI & Teknologi"]
+description: 'Kami akan merekomendasikan video yang dapat meningkatkan motivasi, cocok untuk ditonton ketika usaha Anda tidak diakui atau saat Anda sedang bimbang. Penuh dengan kutipan-kutipan yang memberikan dampak positif pada tindakan dan kehidupan, seperti pemikiran Yusuke Narita mengenai nilai-nilai yang beragam dan cara berpikir sutradara Hayao Miyazaki.'
 ---
 
 ## Tidak apa-apa jika usaha Anda tidak diakui

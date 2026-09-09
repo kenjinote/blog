@@ -1,11 +1,12 @@
 ---
-title: "Comment appliquer une mosaïque à des parties spécifiques d'une image en utilisant paint.net"
+title: 'Explication simple : Comment appliquer une mosaïque sur une zone spécifique d''une image avec paint.net'
 slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "bordure", "image"]
 draft: false
 image: "img.webp"
 categories: ["IA et Technologie"]
+description: 'Explique comment appliquer un effet de mosaïque à une partie d''une image à l''aide du logiciel de retouche d''image gratuit ''paint.net''. Présente pour les débutants la procédure de spécification de la zone avec l''outil de sélection et la configuration de la fonction d''effet. C''est une technique de protection de la vie privée utile lors du téléchargement d''images sur les réseaux sociaux ou les blogs.'
 ---
 
 Je vais vous montrer comment appliquer une mosaïque à des parties spécifiques d'une image en utilisant paint.net.

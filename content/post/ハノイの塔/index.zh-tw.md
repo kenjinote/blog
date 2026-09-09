@@ -1,11 +1,12 @@
 ---
-title: "漢諾塔"
+title: '【Python入門】用遞迴處理求解「河內塔」演算法解說'
 slug: "hanoi-tower"
 date: 2025-04-17T22:23:14+09:00
 tags: ["漢諾塔", "演算法", "Python"]
 draft: false
 image: "img.webp"
 categories: ["程式設計"]
+description: '以著名的益智遊戲「河內塔」為題材，搭配 Python 範例程式碼，淺顯易懂地解說程式設計中「遞迴呼叫（Recursive）」的概念。推薦給想學習演算法基礎的初學者。'
 ---
 
 # 漢諾塔

@@ -1,10 +1,11 @@
 ---
-title: "【PQC】A Visão Geral da \"Criptografia Pós-Quântica\", a Criptografia da Próxima Geração na Era da Computação Quântica"
+title: '[PQC] A Ameaça dos Computadores Quânticos e o Panorama da Criptografia Pós-Quântica de Próxima Geração'
 slug: "post-quantum-cryptography"
 tags: ["Criptografia", "PQC", "Segurança", "Tecnologia de Próxima Geração"]
 image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["Matemática, Criptografia e Quântica"]
+description: 'A criptografia de chave pública corre o risco de ser quebrada no futuro devido à aplicação prática dos computadores quânticos. Neste artigo, explicamos em detalhes os mecanismos e a importância da ''Criptografia Pós-Quântica (PQC)'', a tecnologia de segurança de próxima geração em desenvolvimento para combater essa ameaça (o problema Y2Q).'
 ---
 
 ## Introdução: A "Ameaça" dos Computadores Quânticos à Criptografia

@@ -3,13 +3,14 @@
 
 
 
-title: "Python(matplotlib.pyplot)을 사용하여 그래프를 그리는 방법"
+title: 'Python과 matplotlib로 그래프를 그리는 방법 [Google Colab 대응]'
 slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "그래프", "수학", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["수학・암호・양자"]
+description: 'Google Colaboratory를 사용하여 Python의 matplotlib.pyplot 라이브러리로 사인파 및 코사인파 그래프를 간단히 그리고 표시하는 절차를 초보자를 위해 설명합니다. 환경 구축 없이 바로 테스트해 볼 수 있습니다.'
 ---
 
 

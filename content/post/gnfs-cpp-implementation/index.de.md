@@ -1,11 +1,12 @@
 ---
-title: "【Komplette Anatomie】Den stärksten Kryptographie-Knack-Algorithmus „GNFS“ in C++ implementieren und verstehen"
+title: 'Implementierung des Allgemeinen Zahlkörpersiebs (GNFS) in C++ | Die Mechanismen des RSA-Entschlüsselungsalgorithmus'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Mathematik", "Kryptographie"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
 categories: ["Mathematik・Kryptographie・Quanten"]
+description: 'Eine detaillierte Erklärung der Mechanismen des Faktorisierungsalgorithmus „Allgemeines Zahlkörpersieb (GNFS)“, der zur Entschlüsselung von RSA-Verschlüsselungen verwendet wird, mit C++-Implementierungscode. Ein Muss für Programmierliebhaber, das sich mit der Rechenlogik unter Verwendung der Boost-Bibliothek und den Tiefen der algebraischen Zahlentheorie befasst.'
 ---
 
 # 【Komplette Anatomie】Den stärksten Kryptographie-Knack-Algorithmus „GNFS“ in C++ implementieren und verstehen

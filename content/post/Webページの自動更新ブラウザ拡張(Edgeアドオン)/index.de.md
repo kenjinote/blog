@@ -1,11 +1,12 @@
 ---
-title: "Webseiten-Auto-Refresh-Browsererweiterung (Edge-Add-on)"
+title: 'Automatisches Aktualisieren von Webseiten in Edge! Verwendung der nützlichen Browser-Erweiterung „Tab Auto Refresh“'
 slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Browsererweiterung", "Edge-Add-on", "Auto-Refresh"]
 draft: false
 image: "img.webp"
 categories: ["Blog-Management"]
+description: 'Erklärt die Verwendung der Browser-Erweiterung „Tab Auto Refresh“, mit der Webseiten in Microsoft Edge regelmäßig automatisch aktualisiert werden können. Stellt mit Bildern und leicht verständlich alles von der Installationsmethode über die Einstellung des Aktualisierungsintervalls bis hin zu den Stoppschritten vor.'
 ---
 Hier stellen wir „Tab Auto Refresh“ vor, eine Edge-Browsererweiterung, die Webseiten automatisch aktualisiert.
 

@@ -1,11 +1,11 @@
 ---
-title: "Que faire lorsque vous ne pouvez pas résilier Google One (Gemini)"
+title: 'Impossible de résilier Google One (Gemini) ? Explication de la méthode d''annulation correcte'
 slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Annulation", "Solution"]
 draft: false
 image: "img.webp"
-description: "Serez-vous facturé après la fin de l'essai gratuit de Gemini ? Résumé de la procédure d'annulation"
+description: 'Nous expliquons la procédure d''annulation correcte pour éviter que l''abonnement à Google One à 2 900 yens par mois ne soit automatiquement reconduit après la fin de la période d''essai gratuit d''un mois de Gemini. Si vous rencontrez des difficultés à résilier, veuillez consulter la méthode d''annulation présentée dans cet article.'
 categories: ["Programmation"]
 ---
 

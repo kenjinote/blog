@@ -6,13 +6,14 @@
 
 
 
-title: "Introducción a vim"
+title: '【Para principiantes】Introducción a Vim: Desde su instalación hasta el inicio, cierre y explicación de modos básicos'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "editor de texto"]
 draft: false
 image: "img.webp"
 categories: ["Herramientas・Entorno de desarrollo"]
+description: 'Explicamos el uso básico de Vim para principiantes. Cubrimos exhaustivamente los primeros pasos, incluyendo el método de instalación en el entorno de Windows, comandos de inicio y cierre (como guardar y forzar cierre), y la diferencia entre el modo de comando y el modo de inserción.'
 ---
 
 

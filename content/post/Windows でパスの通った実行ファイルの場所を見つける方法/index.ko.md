@@ -3,13 +3,14 @@
 
 
 
-title: "Windows에서 환경 변수 경로가 설정된 실행 파일의 위치를 찾는 방법"
+title: 'Windows에서 패스가 설정된 실행 파일의 위치(패스)를 찾는 방법 [where 명령]'
 slug: "Windows でパスの通った実行ファイルの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "경로", "실행 파일", "명령 프롬프트"]
 draft: false
 image: "img.webp"
 categories: ["PC・가젯"]
+description: 'Windows의 명령 프롬프트나 PowerShell에서 실행 파일의 저장 위치(전체 경로)를 쉽게 찾는 방법을 해설합니다. ''where'' 명령을 사용하여 패스가 설정된 앱의 정확한 배치 위치를 빠르게 특정하는 유용한 팁을 소개합니다.'
 ---
 
 

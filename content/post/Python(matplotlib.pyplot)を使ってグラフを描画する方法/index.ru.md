@@ -1,11 +1,12 @@
 ---
-title: "Как рисовать графики с помощью Python (matplotlib.pyplot)"
+title: 'Как рисовать графики с помощью Python и matplotlib [Поддержка Google Colab]'
 slug: "как-рисовать-графики-с-помощью-python-matplotlib-pyplot"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "график", "математика", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["Математика, криптография, квант"]
+description: 'Объясняется для новичков процедура легкого рисования и отображения графиков синуса и косинуса с использованием библиотеки matplotlib.pyplot для Python в Google Colaboratory. Вы можете попробовать это сразу, без настройки среды.'
 ---
 
 ![img_1.png](img_1.webp)

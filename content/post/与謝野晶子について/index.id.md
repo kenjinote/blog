@@ -1,10 +1,11 @@
 ---
-title: "Tentang Akiko Yosano"
+title: 'Siapa Yosano Akiko? Penjelasan Karya Utama Seperti ''Midaregami'' dan ''Kimi Shinitamou Koto Nakare'', serta Perjalanan Hidupnya'
 slug: "tentang-akiko-yosano"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Akiko Yosano"]
 draft: false
 categories: ["IT・Teknologi"]
+description: 'Kami akan menjelaskan perjalanan hidup dan karya utama dari penyair Yosano Akiko yang aktif dari zaman Meiji hingga Showa. Kami akan memperkenalkan pencapaiannya dengan cara yang mudah dipahami, seperti koleksi puisi debut ''Midaregami'' yang mengekspresikan perasaan cinta wanita dengan penuh gairah, dan puisi pasifis ''Kimi Shinitamou Koto Nakare'' yang mengkritik Perang Rusia-Jepang.'
 ---
 
 ![img.png](img.webp)

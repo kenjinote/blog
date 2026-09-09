@@ -7,13 +7,14 @@
 
 
 
-title: "Objetivos"
+title: 'Hoja de ruta para el emprendimiento y el desarrollo de software: Objetivos y tareas a corto y largo plazo'
 slug: "目標"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Objetivos"]
 draft: false
 image: "img.webp"
 categories: ["TI y Tecnología"]
+description: 'Un memorando de plan de negocios que organiza metas a corto y largo plazo y tareas recientes para iniciar un negocio a través del desarrollo de software. Desde conseguir financiación, el lanzamiento de software gratuito y de pago, la visión de alcanzar 10 mil millones de yenes de ventas anuales, hasta los pasos específicos de la investigación de mercado y el análisis de necesidades.'
 ---
 
 

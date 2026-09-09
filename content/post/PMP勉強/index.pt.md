@@ -1,11 +1,12 @@
 ---
-title: "Estudo PMP"
+title: 'Conhecimentos básicos e resumo de estudos para o exame PMP: Compatível com PMBOK 7ª edição'
 slug: "PMP勉強"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "勉強"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'Resumimos os pontos principais para estudar para a qualificação em gerenciamento de projetos ''PMP''. Além do resumo do exame e da linha de aprovação, explicamos os itens importantes correspondentes ao PMBOK 7ª edição, como os 10 princípios da liderança servidora e os 4 valores do Manifesto de Desenvolvimento Ágil de Software.'
 ---
 
 # Resumo do Estudo para o Exame PMP

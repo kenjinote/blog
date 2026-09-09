@@ -3,13 +3,14 @@
 
 
 
-title: "Eliminar carpetas grandes rápidamente"
+title: 'Cómo eliminar por lotes y a alta velocidad carpetas grandes en Windows 【Símbolo del sistema】'
 slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
 tags: ["Símbolo del sistema"]
 draft: false
 image: "img.webp"
 categories: ["TI y Tecnología"]
+description: 'Te explicamos cómo eliminar de manera rápida y masiva carpetas de gran tamaño en el entorno de Windows. Tareas de eliminación que toman mucho tiempo en el Explorador se pueden acelerar drásticamente usando los comandos DEL y RMDIR en el símbolo del sistema.'
 ---
 
 

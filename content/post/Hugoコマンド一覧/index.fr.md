@@ -1,11 +1,12 @@
 ---
-title: "Liste des Commandes Hugo"
+title: 'Installation de la CLI Hugo et liste des commandes de base fréquemment utilisées'
 slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "commandes"]
 draft: false
 image: "img.webp"
 categories: ["Opération de Blog"]
+description: 'Nous présentons comment installer la CLI du générateur de site statique rapide Hugo et une liste des commandes de base fréquemment utilisées pour la gestion de blog. Nous expliquons les opérations que les débutants sur Hugo doivent retenir, telles que le lancement d''un nouveau site, la création d''articles, le démarrage d''un serveur local et la compilation.'
 ---
 
 # Qu'est-ce que Hugo

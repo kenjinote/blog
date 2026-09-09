@@ -1,11 +1,12 @@
 ---
-title: "Wie man eine Nachricht in Slack mit Slack App + OAuth2 postet"
+title: 'Wie man Nachrichten mit der Slack-API und OAuth2 sendet (C++ Implementierungsbeispiel)'
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
 date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["ブログ運営"]
+description: 'Erklärt, wie man Nachrichten über die Slack Web API unter Verwendung des OAuth-Tokens der Slack App sendet. Stellt die Schritte von der Festlegung des Bereichs und dem Abrufen des Zugriffstokens bis hin zu konkreten Implementierungscode-Beispielen in C++ mit WinHTTP vor.'
 ---
 
 ## ✅ Methode zum Posten mit einem Access Token (Slack Web API)

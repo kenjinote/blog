@@ -1,11 +1,12 @@
 ---
-title: "Como postar mensagens no Microsoft Teams a partir de C++ (WinHTTP + Graph API)"
+title: '[Automação] Como Enviar Mensagens para o Teams via C++! Tutorial de Implementação com Graph API e WinHTTP'
 slug: "como-postar-mensagens-no-microsoft-teams-a-partir-de-cpp-winhttp-graph-api"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+description: 'Essencial para quem deseja implementar o envio automático de mensagens para o Microsoft Teams via C++! Explicamos o passo a passo com exemplos de código usando WinHTTP e Graph API, além do processo necessário de registro e autenticação de API no Azure.'
 ---
 
 # Como postar mensagens no Microsoft Teams a partir de C++ (WinHTTP + Graph API)

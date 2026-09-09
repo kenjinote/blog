@@ -1,11 +1,12 @@
 ---
-title: "Tentei coletar várias caixas de diálogo de informações de versão"
+title: 'Coletei telas de diálogo de informações de versão de vários softwares'
 slug: "いろんなバージョン情報ダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Informações de Versão", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
 categories: ["PC e Gadgets"]
+description: 'Apresentamos uma lista de designs de interface de usuário de telas de ''diálogo de informações de versão'' de vários softwares e ferramentas de PC usados diariamente, como Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge, LINE, etc.'
 ---
 
 # Tentei coletar várias caixas de diálogo de informações de versão

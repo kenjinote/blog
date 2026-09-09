@@ -1,11 +1,12 @@
 ---
-title: "Ce dont une communauté a besoin"
+title: 'Que faut-il pour avoir une bonne communauté ? Des conseils de gestion tirés des directives de Scratch'
 slug: "ce-dont-une-communaute-a-besoin"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Communauté", "Divers"]
 draft: false
 image: "img.webp"
 categories: ["Informatique・Technologie"]
+description: 'À partir des directives communautaires sophistiquées du site d''apprentissage de la programmation ''Scratch'', nous examinons les éléments nécessaires à la gestion d''une communauté saine et agréable. Nous présentons des perspectives importantes valables pour tout rassemblement, telles que le respect d''autrui et la garantie de la sécurité.'
 ---
 # Ce dont une communauté a besoin
 

@@ -1,11 +1,12 @@
 ---
-title: "Filme TODO Liste"
+title: 'Ein Muss! Eine persönliche Film-TODO-Liste und Aufzeichnungen bereits gesehener empfohlener Werke'
 slug: "映画TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Filme", "TODO"]
 draft: false
 image: "image.webp"
 categories: ["Lifestyle und Diverses"]
+description: 'Dies ist eine TODO-Liste von Film-Meisterwerken und Animes, die ich in Zukunft sehen möchte. Wir stellen sie zusammen mit Überprüfungsaufzeichnungen bereits gesehener Werke vor, von mathematikbezogenen Filmen wie „Der Professor und seine geliebte Gleichung“ und „Good Will Hunting“ bis hin zu beliebten Animes wie „Summer Wars“ und „Weathering With You“.'
 ---
 
 # Filme, die ich sehen möchte (beim Ansehen abhaken)

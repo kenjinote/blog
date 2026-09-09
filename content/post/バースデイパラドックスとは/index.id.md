@@ -1,5 +1,5 @@
 ---
-title: "Apa itu Paradoks Ulang Tahun?"
+title: 'Apa itu Paradoks Ulang Tahun? Alasan Mengapa Peluang Dua Orang Berulang Tahun Sama dalam Grup Berisi 23 Orang Lebih dari 50%'
 slug: "バースデイパラドックスとは"
 date: 2024-04-02T01:20:50+09:00
 tags: ["Matematika", "Paradoks"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matematika・Kriptografi・Kuantum"]
+description: 'Apakah mungkin peluang ada dua orang dengan hari ulang tahun yang sama dalam sebuah grup berisi 23 orang mencapai lebih dari 50%!? Kami akan menjelaskan fenomena aneh yang berlawanan dengan intuisi ini, yaitu ''Paradoks Ulang Tahun'', dengan alasan matematis dan rumus perhitungan yang mudah dipahami. Mari rasakan keajaiban probabilitas.'
 ---
 
 ## Tahukah Anda tentang paradoks ulang tahun?

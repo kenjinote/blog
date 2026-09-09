@@ -1,11 +1,12 @@
 ---
-title: 'The Pros and Cons of Anti-Vaccination'
+title: 'Pros and Cons of Anti-Vaxxers and Epidemiology Lessons: The ''Illusion of Causality'' Highlighted by the Pandemic'
 slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Social Issues", "Health", "Information Literacy"]
 draft: false
 image: "img.webp"
 categories: ["Lifestyle and Miscellaneous"]
+description: 'We explain the pros and cons of ''anti-vaccine'' movements surrounding the COVID-19 vaccination and the lessons of epidemiology. We explore the importance of scientific thinking without being misled by media information, by understanding cognitive biases like ''confounding'' and ''illusion of causality'' in post-vaccination cases.'
 ---
 
 # The Pros and Cons of Anti-Vaccination - The Futures of 5,000 People Killed by "Good-Intentioned Anxiety" and the Epidemiological Lessons We Must Learn

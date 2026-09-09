@@ -1,11 +1,12 @@
 ---
-title: "Tests in Rust schreiben"
+title: 'Einführung in das Schreiben und Ausführen von Tests in Rust (cargo test)'
 slug: "Rustでテストを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","Tests"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programmierung"]
+description: 'Erklärt für Anfänger, wie man Testcode in Rust schreibt und Tests mit dem Befehl cargo test ausführt. Stellt die Verwendung des #[test]-Attributs und die Ausgabeergebnisse bei Erfolg oder Fehlschlag mit konkreten Codebeispielen ausführlich vor.'
 ---
 
 Um Tests in Rust zu schreiben, erstellen Sie eine Funktion, indem Sie das Attribut `#[test]` eine Zeile über der Definition der Testfunktion hinzufügen.

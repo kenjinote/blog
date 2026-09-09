@@ -1,11 +1,12 @@
 ---
-title: "Cara Menggambar Grafik Menggunakan Python (matplotlib.pyplot)"
+title: 'Cara Menggambar Grafik dengan Python dan matplotlib [Sesuai dengan Google Colab]'
 slug: "cara-menggambar-grafik-menggunakan-python-matplotlib-pyplot"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "grafik", "matematika", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Menjelaskan prosedur untuk pemula tentang cara dengan mudah menggambar dan menampilkan grafik gelombang sinus dan kosinus dengan pustaka matplotlib.pyplot milik Python menggunakan Google Colaboratory. Anda dapat langsung mencobanya tanpa perlu menyiapkan lingkungan.'
 ---
 
 ![img_1.png](img_1.webp)

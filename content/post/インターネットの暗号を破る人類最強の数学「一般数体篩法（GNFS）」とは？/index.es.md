@@ -7,13 +7,14 @@
 
 
 
-title: '¿Qué es la ''Criba General del Cuerpo de Números (GNFS)'', la matemática más fuerte de la humanidad que rompe el cifrado de Internet?'
+title: 'Explicación sencilla de ''Criba general del cuerpo de números (GNFS)'', la matemática más poderosa de la humanidad que rompe el cifrado de Internet'
 slug: "インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？"
 date: 2026-09-05T02:09:08+09:00
 tags: ["Matemáticas", "Criptografía", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
 categories: ["Matemáticas, Criptografía y Cuántica"]
+description: 'Explicamos cómo funciona la ''Criba general del cuerpo de números (GNFS)'', la matemática más poderosa de la humanidad que rompe el cifrado RSA que protege las comunicaciones de Internet. Omitiendo la jerga técnica, nos acercamos al mecanismo de este algoritmo mágico que se puede entender solo con conocimientos de matemáticas de secundaria.'
 ---
 
 

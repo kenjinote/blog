@@ -1,11 +1,12 @@
 ---
-title: "Cara Tweet Menggunakan Twitter API dan Google Colaboratory"
+title: 'Cara Melakukan Cuitan Otomatis dengan Twitter API dan Google Colaboratory [Python]'
 slug: "cara-tweet-menggunakan-twitter-api-dan-google-colaboratory"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Menjelaskan prosedur untuk menjalankan cuitan otomatis di Python (tweepy) menggunakan Twitter API dan Google Colaboratory. Anda dapat langsung mencobanya dengan salin tempel, mulai dari pengaturan kunci API hingga kode aktual.'
 ---
 
 # Apa yang Dibutuhkan

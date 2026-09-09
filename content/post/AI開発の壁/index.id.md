@@ -1,11 +1,12 @@
 ---
-title: "Tembok Pengembangan AI"
+title: 'Dinding Pengembangan AI Ternyata Tinggi... Alasan dan Realitas Mengapa ''Neraka Dimulai dari Titik 80%'' dalam Pembuatan Aplikasi'
 slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "Pengembangan", "Tembok", "Puisi"]
 draft: false
 image: "img_1.webp"
 categories: ["AI & Teknologi"]
+description: 'Benarkah ini era ''membuat aplikasi itu mudah jika mengandalkan AI''? Meskipun mudah mencapai titik 80% dengan no-code atau kode hasil AI, neraka yang menyiksa manusia menunggu untuk penyesuaian akhir dan perbaikan bug setelahnya. Kami secara terbuka menceritakan jebakan nyata pengembangan AI dan wujud asli ''dinding'' yang dihadapi.'
 ---
 
 # Tembok Pengembangan AI

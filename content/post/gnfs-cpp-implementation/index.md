@@ -1,11 +1,12 @@
 ---
-title: '【完全解剖】最強の暗号解読アルゴリズム「GNFS」をC++で実装して理解する'
+title: '一般数体篩法（GNFS）をC++で実装｜RSA暗号解読アルゴリズムの仕組み'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "数学", "暗号"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
 categories: ["数学・暗号・量子"]
+description: 'RSA暗号の解読に使われる素因数分解アルゴリズム「一般数体篩法（GNFS）」の仕組みをC++の実装コード付きで徹底解説。Boostライブラリを活用した計算ロジックや代数的整数論の深淵に迫る、プログラミング好き必見の内容です。'
 ---
 
 # 【完全解剖】最強の暗号解読アルゴリズム「GNFS」をC++で実装して理解する

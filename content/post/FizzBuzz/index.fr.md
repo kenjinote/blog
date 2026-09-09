@@ -1,11 +1,12 @@
 ---
-title: "FizzBuzz"
+title: 'Qu''est-ce que le « test de FizzBuzz », la porte d''entrée de la programmation ? Explication de la méthode de rédaction en Python'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algorithme"]
 draft: false
 image: "img.webp"
 categories: ["Programmation"]
+description: 'Nous expliquons clairement le « test de FizzBuzz », qui est souvent posé lors des entretiens pour les programmeurs, son aperçu et des exemples de code spécifiques (branchements conditionnels) en utilisant Python. C''est un contenu incontournable des débutants à ceux qui souhaitent revoir les bases.'
 ---
 
 ## Au fait, qu'est-ce que FizzBuzz ?

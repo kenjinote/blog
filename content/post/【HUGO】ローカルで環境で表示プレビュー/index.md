@@ -1,11 +1,12 @@
 ---
-title: '【HUGO】ローカルで環境で表示プレビュー'
+title: '【Hugo入門】Windowsでのインストールからローカル環境でのプレビュー表示方法'
 slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["ブログ運営"]
+description: '静的サイトジェネレーター「Hugo」をWindows環境へインストールする手順や環境変数Pathの通し方、ローカルサーバーを立ち上げてブログ記事をプレビュー確認するコマンドの使い方をわかりやすく解説。'
 ---
 # HUGOのインストール
 

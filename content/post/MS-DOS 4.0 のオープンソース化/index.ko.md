@@ -6,13 +6,14 @@
 
 
 
-title: "'MS-DOS 4.0의 오픈소스화'"
+title: '약 40년 전의 OS ''MS-DOS 4.0''이 오픈 소스화되어 공개'
 slug: "MS-DOS 4.0 のオープンソース化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "오픈소스"]
 draft: false
 image: "img.webp"
 categories: ["IT·테크놀로지"]
+description: '약 40년 전에 출시된 OS ''MS-DOS 4.0''의 소스 코드가 오픈 소스로 전환되어 GitHub에 공개되었다는 뉴스를 소개합니다. 코드의 대부분이 8086 어셈블리로 작성된 역사적인 자료에 대해 설명합니다.'
 ---
 
 

@@ -1,11 +1,12 @@
 ---
-title: "Sobre o Prêmio Microsoft MVP (2023-2024)"
+title: 'Fui premiado como Microsoft MVP (2023-2024)'
 slug: "Sobre o Prêmio Microsoft MVP (2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Prêmio"]
 draft: false
 image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+description: 'Este é o anúncio do meu prêmio na categoria Developer Technologies do Microsoft MVP (2023-2024). Este é o 7º ano consecutivo em que sou premiado desde 2017. Analisamos a disseminação de informações e atividades da comunidade no meu blog de tecnologia até o momento.'
 ---
 
 # Sobre o Prêmio Microsoft MVP (2023-2024)

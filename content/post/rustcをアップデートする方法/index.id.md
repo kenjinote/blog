@@ -1,11 +1,12 @@
 ---
-title: "Cara memperbarui rustc"
+title: 'Cara Memperbarui Kompiler Rust (rustc) ke Versi Terbaru'
 slug: "rustcをアップデートする方法"
 date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Menjelaskan cara mudah untuk memperbarui rustc, kompiler Rust, ke versi terbaru. Hanya dengan menjalankan sebaris perintah ''rustup update'' di terminal atau command prompt, Anda dapat memperbarui semuanya secara massal, termasuk komponen terkait.'
 ---
 # Cara memperbarui rustc
 

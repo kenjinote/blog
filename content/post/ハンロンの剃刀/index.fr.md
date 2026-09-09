@@ -1,11 +1,12 @@
 ---
-title: "Le Rasoir de Hanlon"
+title: 'Qu''est-ce que le ''Rasoir d''Hanlon'', ce mode de pensée qui facilite les relations humaines ? Explication de son sens et de son origine'
 slug: "le-rasoir-de-hanlon"
 date: 2024-09-24T18:14:34+09:00
 tags: ["Expression", "Locution"]
 draft: false
 image: "img.webp"
 categories: ["Informatique et Technologie"]
+description: 'Nous présentons l''approche psychologique du ''Rasoir d''Hanlon'', qui consiste à ''ne pas interpréter le comportement de l''autre comme malveillant, mais le considérer comme une simple négligence''. Nous expliquons des astuces pour réduire le stress dans les relations interpersonnelles en dissipant les frustrations quotidiennes, comme les réponses tardives sur LINE.'
 ---
 
 # Bonjour ! Aujourd'hui, nous parlons du "Rasoir de Hanlon"

@@ -1,11 +1,12 @@
 ---
-title: "Como usar a Ferramenta de Captura"
+title: 'Como usar o ''Snipping Tool'' padrão do Windows, gravação de tela e captura'
 slug: "Como usar a Ferramenta de Captura"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Imagem", "Vídeo", "Captura de tela", "Gravação", "Captura"]
 draft: false
 image: "img.webp"
 categories: ["IT / Tecnologia"]
+description: 'Explicamos o uso básico da ''Snipping Tool'', a ferramenta de captura de tela que vem como padrão no Windows. Mostramos desde o método de inicialização rápida com teclas de atalho, passando por recortar e salvar uma parte da imagem, até o procedimento para gravar a tela em vídeo de forma fácil de entender.'
 ---
 
 ## O que é a Ferramenta de Captura

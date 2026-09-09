@@ -2,13 +2,14 @@
 
 
 
-title: "Códigos cortos que se pueden usar en HUGO"
+title: 'Lista de shortcodes incorporados en Hugo: Incrustar YouTube, Twitter, etc.'
 slug: "HUGOで使えるショートコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["Operación de blog"]
+description: 'Presentamos los útiles shortcodes integrados (como YouTube, Twitter, Instagram, Vimeo) que puedes usar en tu blog Hugo. También explicamos tips de gran ayuda, como la manera de escapar (deshabilitar) los shortcodes dentro de los artículos.'
 ---
 
 

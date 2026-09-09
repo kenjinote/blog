@@ -1,11 +1,12 @@
 ---
-title: "Kerckhoffs' Prinzip"
+title: 'Was ist das Kerckhoffssche Prinzip? Eine verständliche Erklärung des wichtigen Konzepts, das die Sicherheit kryptografischer Techniken unterstützt'
 slug: "kerckhoffs-prinzip"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Kerckhoffs' Prinzip", "Kryptographie"]
 draft: false
 image: "img_2.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
+description: 'Wir erklären das „Kerckhoffssche Prinzip“, das für das Studium von Informationssicherheit und Kryptographie unerlässlich ist, in einer für Anfänger leicht verständlichen Weise. Wir erklären detailliert das wichtige Konzept und den Grund, der die Grundlage der modernen Sicherheit bildet: „Ein kryptografisches System sollte auch dann sicher sein, wenn seine Funktionsweise bekannt ist“.'
 ---
 
 # "Kerckhoffs' Prinzip"

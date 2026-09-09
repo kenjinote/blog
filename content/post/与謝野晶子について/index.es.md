@@ -7,12 +7,13 @@
 
 
 
-title: "Sobre Akiko Yosano"
+title: '¿Quién fue Akiko Yosano? Explicación de su vida y obras maestras como ''Midaregami'' y ''Kimi Shinitamou Koto Nakare'''
 slug: "与謝野晶子について"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Akiko Yosano"]
 draft: false
 categories: ["TI y Tecnología"]
+description: 'Explicamos la vida y las obras representativas de Akiko Yosano, una poeta que estuvo activa desde la era Meiji hasta la era Showa. Presentamos de manera sencilla sus logros, como su primera antología ''Midaregami'' que expresa apasionadamente el romance femenino, y su poema pacifista ''Kimi Shinitamou Koto Nakare'' criticando la guerra ruso-japonesa.'
 ---
 
 

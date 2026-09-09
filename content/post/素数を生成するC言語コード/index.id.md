@@ -1,11 +1,12 @@
 ---
-title: "Kode Bahasa C untuk Menghasilkan Bilangan Prima"
+title: 'Contoh Kode Bahasa C Sederhana untuk Menghasilkan dan Menentukan Bilangan Prima dalam Rentang yang Ditentukan'
 slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["Bahasa C", "Bilangan Prima", "Algoritma", "Matematika"]
 draft: false
 image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Kami memperkenalkan contoh kode bahasa C sederhana yang akan menilai, menghasilkan serta menghitung bilangan prima dalam rentang yang telah ditentukan (dari 1 hingga n). Dengan menggunakan algoritma efisien yang memanfaatkan fungsi isPrime, kami mempublikasikan panduan beserta contoh implementasi pemrograman yang mudah dimengerti bahkan untuk para pemula.'
 ---
 
 Berikut ini adalah kode sederhana dalam bahasa C untuk menghasilkan bilangan prima dalam rentang yang ditentukan. Dalam contoh ini, kita mencantumkan bilangan prima dari 1 hingga n.

@@ -1,11 +1,12 @@
 ---
-title: "【完全解剖】最強密碼破解演算法「GNFS」C++實作與理解"
+title: '以C++實作普通數域篩法（GNFS）｜RSA密碼破解演算法原理'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "數學", "密碼學"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
 categories: ["數學・密碼學・量子"]
+description: '附上C++實作程式碼，徹底解說用於破解RSA密碼的質因數分解演算法「普通數域篩法（GNFS）」之原理。這是一篇深入探討活用Boost函式庫的計算邏輯與代數數論奧秘，程式設計愛好者必看的文章。'
 ---
 
 # 【完全解剖】最強密碼破解演算法「GNFS」C++實作與理解

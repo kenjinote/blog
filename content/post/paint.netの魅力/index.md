@@ -1,11 +1,12 @@
 ---
-title: 'paint.netの魅力'
+title: '無料で高機能！画像編集ソフト「paint.net」の特徴と魅力'
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"
 categories: ["AI・テクノロジー"]
+description: '無料で高機能な画像編集ソフトpaint.netの魅力を紹介します。レイヤーや透過率調整、多彩なエフェクトなどWindows標準ペイントにない便利機能が満載です。動作が軽く直感的に操作できる特徴や、無償版のインストール手順をわかりやすく解説します。'
 ---
 わたしが開発の作業を行う中でよく使っている画像編集ソフトpaint.netの紹介します。
 

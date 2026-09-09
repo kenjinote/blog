@@ -1,11 +1,12 @@
 ---
-title: "Tentang AI Generatif"
+title: 'Belajar AI Generatif! Kumpulan Video Kuliah Rekomendasi oleh Para Profesor Universitas Tokyo'
 slug: "tentang-ai-generatif"
 date: 2024-04-16T02:13:56+09:00
 tags: ["AI Generatif", "YouTube", "Kuliah"]
 draft: false
 image: "img.webp"
 categories: ["AI & Teknologi"]
+description: 'Ini adalah kumpulan video perkuliahan oleh profesor dari Universitas Tokyo di mana Anda bisa belajar lebih dalam mengenai AI Generatif yang sedang ramai diperbincangkan. Kami memperkenalkan video penjelasan yang mudah dipahami dan bermanfaat, yang dibawakan antara tahun 2023 dan 2024 oleh para ahli penelitian AI terkemuka, seperti Profesor Masayuki Nakao, Profesor Kuniyoshi Sakai, dan Profesor Yutaka Matsuo.'
 ---
 
 ## Video Kuliah tentang AI Generatif

@@ -1,11 +1,12 @@
 ---
-title: "O Problema de Monty Hall"
+title: 'O que é o problema de Monty Hall? Explicando o paradoxo contra-intuitivo da probabilidade e sua solução de forma simples'
 slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["Matemática", "Probabilidade", "O Problema de Monty Hall"]
 draft: false
 image: "img_1.webp"
 categories: ["Matemática, Criptografia e Quântica"]
+description: 'Explicaremos de forma fácil de entender o que é o problema de Monty Hall, seu significado e como resolvê-lo. É um famoso paradoxo de probabilidade baseado em um game show da TV americana, e explicaremos logicamente por que suas chances de ganhar são maiores se você mudar de porta.'
 ---
 
 ## O que é o Problema de Monty Hall?

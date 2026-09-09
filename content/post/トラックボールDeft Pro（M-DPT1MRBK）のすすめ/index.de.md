@@ -1,11 +1,12 @@
 ---
-title: "Trackball Deft Pro (M-DPT1MRBK) Empfehlung"
+title: 'Elecom Deft Pro Bewertung! Vor- und Nachteile der 8-Tasten-Trackball-Maus'
 slug: "trackball-deft-pro-m-dpt1mrbk-empfehlung"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
 categories: ["IT und Technologie"]
+description: 'Ein Erfahrungsbericht nach einwöchiger Nutzung der mittelgroßen Trackball-Maus „Deft Pro (M-DPT1MRBK)“ von Elecom. Wir erläutern die Vorteile, wie die Entlastung des Handgelenks und die vielen Tastenbelegungen, sowie die Nachteile, wie der Aufwand für die Reinigung und die Gewöhnung an das Bediengefühl.'
 ---
 
 # Über den Elecom Trackball Deft Pro M-DPT1MRBK

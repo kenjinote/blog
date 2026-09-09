@@ -1,11 +1,12 @@
 ---
-title: "Conexão Remota Fácil com TeamViewer"
+title: '[Para iniciantes] Como se conectar facilmente a um desktop remoto com o TeamViewer'
 slug: "Conexão Remota Fácil com TeamViewer"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Comando", "Conexão Remota"]
 draft: false
 image: "img.webp"
 categories: ["TI・Tecnologia"]
+description: 'Explicamos como conectar a um desktop remoto de forma fácil usando o TeamViewer. Apresentamos também uma dica útil que automatiza ou omite o processo de conexão a partir de atalhos, especificando o ID e a senha via linha de comando.'
 ---
 
 # Conexão Remota Fácil com TeamViewer

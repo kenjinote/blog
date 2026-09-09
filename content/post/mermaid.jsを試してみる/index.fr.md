@@ -1,5 +1,5 @@
 ---
-title: "Essayer mermaid.js"
+title: 'Qu''est-ce que Mermaid.js ? Comment l''intégrer à Hugo et dessiner des diagrammes et des graphiques'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
@@ -7,6 +7,7 @@ draft: false
 mermaid: true
 image: "img_2.webp"
 categories: ["IA et Technologie"]
+description: 'Explique clairement la présentation de ''Mermaid.js'', une bibliothèque JavaScript permettant de dessiner des diagrammes tels que des organigrammes et des diagrammes de Gantt basés sur du texte, ainsi que les étapes spécifiques pour l''intégrer, le configurer et l''utiliser avec le générateur de sites statiques Hugo.'
 ---
 
 ## Qu'est-ce que mermaid.js

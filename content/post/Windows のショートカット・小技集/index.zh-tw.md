@@ -1,11 +1,12 @@
 ---
-title: "Windows 的快速鍵與小技巧集"
+title: '【Windows 11/10】能大幅提升工作效率的實用快捷鍵・小技巧集'
 slug: "Windows 的快速鍵與小技巧集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "小技巧", "快速鍵"]
 draft: false
 image: "img.webp"
 categories: ["PC・小工具"]
+description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實用快捷鍵與小技巧。包含視窗操作、顯示桌面、語音輸入、螢幕擷取等，從初學者到進階使用者在日常使用上都派得上用場的必備技巧集。'
 ---
 這是一些在 Windows 中常用的小技巧。希望剛開始使用 Windows 的使用者能閱讀這篇文章。
 預設環境為 Windows 11，但許多技巧在 Windows 10 中也適用。

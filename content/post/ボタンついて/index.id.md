@@ -1,11 +1,12 @@
 ---
-title: "Tentang Tombol"
+title: 'Cara Membuat Tombol (Kontrol GUI) dan Menerapkan Pemrosesan Acara (Event) Menggunakan Windows API'
 slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["tombol", "GUI"]
 draft: false
 image: "img.webp"
 categories: ["IT dan Teknologi"]
+description: 'Mengenai ''tombol'' yang merupakan dasar aplikasi GUI, kami akan menjelaskan cara pembuatannya menggunakan API standar Windows (Win32 API) dan cara mengimplementasikan pemrosesan acara (pesan WM_COMMAND) saat diklik, lengkap dengan contoh kodenya.'
 ---
 
 # Apa itu tombol

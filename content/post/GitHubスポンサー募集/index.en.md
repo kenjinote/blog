@@ -1,11 +1,12 @@
 ---
-title: 'Looking for GitHub Sponsors'
+title: 'Notice of Recruiting GitHub Sponsors | Request for Development Support'
 slug: "GitHubスポンサー募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false
 image: "img.webp"
 categories: ["Tools / Development Environment"]
+description: 'Our project is recruiting GitHub sponsors. The funds provided by your support will be carefully utilized as activity expenses to provide better software, such as developing useful tools and obtaining code signing certificates.'
 ---
 
 # Looking for GitHub Sponsors

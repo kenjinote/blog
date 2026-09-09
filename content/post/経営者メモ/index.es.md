@@ -3,13 +3,14 @@
 
 
 
-title: "Notas de Gestión"
+title: 'Los secretos para elegir un negocio exitoso y sistematizarlo: Notas prácticas para directivos'
 slug: "経営者メモ"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gerente"]
 draft: false
 image: "images/img.webp"
 categories: ["TI y Tecnología"]
+description: 'Publicación de notas prácticas que los ejecutivos deben conocer, como formas de encontrar negocios que se volverán populares, imitación exhaustiva y mejora, y los puntos clave de la sistematización que cualquiera puede hacer. También profundizamos en la esencia de la filosofía de gestión de "maximizar los beneficios corporativos".'
 ---
 
 

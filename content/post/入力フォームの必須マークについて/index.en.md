@@ -1,11 +1,12 @@
 ---
-title: 'About Required Marks in Input Forms'
+title: 'Optimizing Required Marks in Input Forms | Best Practices from Global UI Guidelines'
 slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Input Form", "Web Development", "UX"]
 draft: false
 image: "img.webp"
 categories: ["Blog Management"]
+description: 'We explain best practices for ''required field'' marks in web forms based on global UI guidelines. We summarized the correct use of asterisks (*), clearly stating ''Required'', and how to utilize ARIA attributes to improve accessibility.'
 ---
 
 I have summarized information about the "required" mark in overseas screen UI (forms), along with UI guideline materials.

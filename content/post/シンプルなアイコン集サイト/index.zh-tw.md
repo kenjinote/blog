@@ -1,11 +1,12 @@
 ---
-title: "簡單的圖示集網站"
+title: '免費使用！簡約實用的免費圖示素材網站推薦 7 選'
 slug: "簡單的圖示集網站"
 date: 2022-09-07T16:46:56+09:00
 tags: ["圖示", "設計"]
 draft: false
 image: "img_2.webp"
 categories: ["IT和技術"]
+description: '嚴選介紹對網頁設計或製作簡報有幫助，簡約且容易使用的免費圖示素材網站。充滿了如 Google Material Icons 與 GitHub Octicons 等可用於商業用途的便利網站。'
 ---
 
 ## Google Material Symbols and Icons

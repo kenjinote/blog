@@ -1,11 +1,12 @@
 ---
-title: "So installieren Sie den micro-Texteditor unter Windows"
+title: 'Verfügbar für Windows! So installieren Sie den schlanken Texteditor „micro“'
 slug: "so-installieren-sie-den-micro-texteditor-unter-windows"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "Texteditor"]
 draft: false
 image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
+description: 'Wir erklären anschaulich die Schritte zur Installation des terminalbasierten Texteditors „micro“, der bequem in der Eingabeaufforderung funktioniert, unter Windows, sowie das Setzen von Umgebungsvariablen, um ihn nutzbar zu machen.'
 ---
 
 ## micro herunterladen

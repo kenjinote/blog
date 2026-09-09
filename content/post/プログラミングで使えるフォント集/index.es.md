@@ -6,13 +6,14 @@
 
 
 
-title: "Colección de fuentes para usar en programación"
+title: 'Colección de fuentes recomendadas para programación | Fuentes gratuitas fáciles de leer que mejoran la eficiencia en el desarrollo'
 slug: "プログラミングで使えるフォント集"
 date: 2024-03-30T02:21:31+09:00
 tags: ["programación", "fuentes"]
 draft: false
 image: "img.webp"
 categories: ["programación"]
+description: 'Te presentamos fuentes ideales para programar como JetBrains Mono, HackGen, Ricty Diminished, Cica y Migu. Mejora la visibilidad en tu editor de código y aumenta tu eficiencia en el desarrollo.'
 ---
 
 

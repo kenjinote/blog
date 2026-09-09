@@ -1,11 +1,12 @@
 ---
-title: "كيفية التغريد باستخدام Twitter API و Google Colaboratory"
+title: 'كيفية التغريد التلقائي باستخدام Twitter API و Google Colaboratory 【Python】'
 slug: "كيفية-التغريد-باستخدام-twitter-api-و-google-colaboratory"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
 categories: ["برمجة"]
+description: 'نشرح خطوات تنفيذ التغريد التلقائي عبر Python (tweepy) باستخدام Twitter API و Google Colaboratory. بدءاً من إعدادات مفاتيح API إلى الكود الفعلي، يمكنك تجربة ذلك فوراً عن طريق النسخ واللصق.'
 ---
 
 # المتطلبات

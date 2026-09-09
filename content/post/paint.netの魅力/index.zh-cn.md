@@ -1,11 +1,12 @@
 ---
-title: 'paint.net的魅力'
+title: '免费且功能强大！图片编辑软件“paint.net”的特点与魅力'
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"
 categories: ["AI・技术"]
+description: '介绍免费且功能强大的图片编辑软件paint.net的魅力。它包含了Windows自带画图工具所没有的丰富实用功能，如图层、透明度调整及各种特效等。同时通俗讲解其运行轻巧、操作直观的特点，以及免费版的安装步骤。'
 ---
 介绍一下我在开发工作中经常使用的图像编辑软件paint.net。
 

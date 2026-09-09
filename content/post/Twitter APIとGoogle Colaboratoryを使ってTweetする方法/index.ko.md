@@ -3,13 +3,14 @@
 
 
 
-title: "'Twitter API와 Google Colaboratory를 사용하여 트윗하는 방법'"
+title: 'Twitter API와 Google Colaboratory로 자동 트윗하는 방법 [Python]'
 slug: "Twitter APIとGoogle Colaboratoryを使ってTweetする方法"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: 'Twitter API와 Google Colaboratory를 이용하여 Python(tweepy)으로 자동 트윗을 실행하는 절차를 설명합니다. API 키 설정부터 실제 코드까지, 복사 및 붙여넣기로 바로 테스트해 볼 수 있습니다.'
 ---
 
 

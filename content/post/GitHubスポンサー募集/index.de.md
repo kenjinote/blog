@@ -1,11 +1,12 @@
 ---
-title: "Suche nach GitHub-Sponsoren"
+title: 'Ankündigung zur Suche nach GitHub-Sponsoren | Bitte um Entwicklungsunterstützung'
 slug: "Suche nach GitHub-Sponsoren"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false
 image: "img.webp"
 categories: ["Werkzeuge und Entwicklungsumgebung"]
+description: 'Unser Projekt sucht nach GitHub-Sponsoren. Die durch Ihre Unterstützung bereitgestellten Mittel werden sorgfältig als Betriebskosten für die Bereitstellung besserer Software verwendet, wie z. B. für die Entwicklung nützlicher Tools oder den Erwerb von Code-Signing-Zertifikaten.'
 ---
 
 # Suche nach GitHub-Sponsoren

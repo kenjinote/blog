@@ -4,13 +4,14 @@
 
 
 
-title: "'카페 음악'"
+title: '작업이나 공부에 집중할 수 있는! 추천하는 세련된 카페 음악 및 BGM 모음'
 slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00
 tags: ["카페", "음악"]
 draft: false
 image: "images/img.webp"
 categories: ["라이프스타일·잡기"]
+description: '프로그래밍이나 공부, 재택근무용 BGM으로 딱 맞는 카페 음악을 정리했습니다. 업템포의 Electro Swing부터 편안하게 집중할 수 있는 LoFi Hip Hop이나 재즈까지 추천하는 작업용 음악을 소개합니다.'
 ---
 
 

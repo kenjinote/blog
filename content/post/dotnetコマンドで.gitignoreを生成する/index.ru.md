@@ -1,11 +1,12 @@
 ---
-title: "Создание .gitignore с помощью команды dotnet"
+title: 'Как легко сгенерировать .gitignore для проекта с помощью команды dotnet'
 slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
 categories: ["Инструменты / Среда разработки"]
+description: 'Понятно объясняется, как автоматически создать файл .gitignore, подходящий для сред разработки, таких как Visual Studio, используя команду dotnet (dotnet new gitignore), входящую в состав .NET SDK.'
 ---
 Команда dotnet.exe позволяет выполнять сборку даже простых программ, поэтому её полезно иметь под рукой.
 

@@ -1,11 +1,12 @@
 ---
-title: "Cara Mengembalikan Menu Klik Kanan Klasik di Windows 11"
+title: 'Cara Mengembalikan Menu Klik Kanan Windows 11 ke Versi Klasik (Spesifikasi Lama) [Pengaturan Registri]'
 slug: "cara-mengembalikan-menu-klik-kanan-klasik-di-windows-11"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "File Explorer"]
 draft: false
 image: "img.webp"
 categories: ["PC & Gadget"]
+description: 'Menjelaskan cara mengembalikan menu klik kanan (menu konteks) baru di Windows 11 ke versi klasik seperti di Windows 10. Memperkenalkan langkah mudah menggunakan Editor Registri agar menu spesifikasi lama selalu ditampilkan.'
 ---
 
 # Cara Mengembalikan Menu Klik Kanan Klasik di Windows 11

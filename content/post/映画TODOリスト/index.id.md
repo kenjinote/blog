@@ -1,11 +1,12 @@
 ---
-title: "Daftar TODO Film"
+title: 'Wajib Tonton! Daftar TODO Pribadi untuk Menonton Film dan Catatan Karya Rekomendasi yang Sudah Ditonton'
 slug: "映画TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["film", "TODO"]
 draft: false
 image: "image.webp"
 categories: ["Gaya Hidup & Serbaneka"]
+description: 'Ini adalah daftar TODO film masterpiece dan anime yang ingin saya tonton di masa depan. Kami memperkenalkannya dengan tanda ceklist (centang) mengenai daftar yang telah ditonton, dari film terkait matematika seperti ''The Professor and His Beloved Equation'' dan ''Good Will Hunting'' hingga anime populer seperti ''Summer Wars'' dan ''Weathering with You''.'
 ---
 
 # Film yang ingin ditonton (beri centang setelah menonton)

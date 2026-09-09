@@ -3,13 +3,14 @@
 
 
 
-title: "'Rust의 특징'"
+title: '프로그래밍 언어 Rust(러스트)의 5가지 주요 특징이란?'
 slug: "Rustの特徴"
 date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: 'Mozilla가 개발하는 프로그래밍 언어 ''Rust''의 주요 특징을 알기 쉽게 설명합니다. 빠른 실행 속도, 가비지 컬렉션 없음, 소유권과 빌림에 의한 메모리 안전성, 크로스 플랫폼 지원 등 선택받는 이유를 소개합니다.'
 ---
 
 

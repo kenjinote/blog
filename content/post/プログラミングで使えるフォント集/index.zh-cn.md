@@ -1,11 +1,12 @@
 ---
-title: '编程中可用的字体集合'
+title: '推荐编程使用的字体合集｜清晰易读、提高开发效率的免费字体'
 slug: "プログラミングで使えるフォント集"
 date: 2024-03-30T02:21:31+09:00
 tags: ["编程", "字体"]
 draft: false
 image: "img.webp"
 categories: ["编程"]
+description: '为您介绍JetBrains Mono、HackGen（白源）、Ricty Diminished、Cica、Migu等非常适合编程的字体。提升编辑器的可视性，从而提高开发效率吧。'
 ---
 
 ## JetBrains Mono

@@ -1,11 +1,12 @@
 ---
-title: '如何从Google Analytics获取并配置热门页面排行榜'
+title: '使用Ranklet显示Google Analytics热门文章排行榜的方法'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["博客运营"]
+description: '本文讲解如何使用可与Google Analytics关联，轻松自动显示网站热门页面排行榜的服务“Ranklet”。以HUGO博客为例，介绍设置步骤和HTML/CSS模板的自定义方法。'
 ---
 
 ## 简介

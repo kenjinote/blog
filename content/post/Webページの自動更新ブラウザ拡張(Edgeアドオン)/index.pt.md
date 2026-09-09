@@ -1,11 +1,12 @@
 ---
-title: "Extensão de atualização automática de páginas web (Add-on Edge)"
+title: 'Atualização automática de páginas web no Edge! Como usar a útil extensão de navegador ''Atualização automática de guias'''
 slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Extensão de navegador", "Add-on Edge", "Atualização automática"]
 draft: false
 image: "img.webp"
 categories: ["Gestão de blog"]
+description: 'Explicamos como usar a extensão do navegador ''Atualização automática de guias'', que permite atualizar páginas da web automaticamente de forma periódica no Microsoft Edge. Mostramos desde o método de instalação até a configuração do intervalo de atualização e o processo de parada com imagens fáceis de entender.'
 ---
 Apresentamos o "Tab Auto Refresh", uma extensão do navegador Edge que atualiza automaticamente as páginas web.
 

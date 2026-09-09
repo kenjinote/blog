@@ -7,13 +7,14 @@
 
 
 
-title: "'msix에 자체 서명 인증서를 추가하여 설치할 수 있게 만들기'"
+title: 'Windows 앱 개발자 필독! MSIX에 자체 인증서를 추가하여 로컬 설치하는 방법'
 slug: "msixに自己証明書をつけてインストールできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "자체 서명 인증서", "설치"]
 draft: false
 image: "img.webp"
 categories: ["IT・테크놀로지"]
+description: 'Windows 앱의 테스트 배포에 유용한 MSIX 패키지용으로, 상용 인증서를 사용하지 않고 자체 인증서를 생성 및 부여하여 로컬 환경에 설치할 수 있도록 하는 구체적인 절차를 PowerShell 명령어와 함께 알기 쉽게 설명합니다.'
 ---
 
 

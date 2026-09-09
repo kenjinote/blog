@@ -1,11 +1,12 @@
 ---
-title: '通过命令“hide”启动秀丸编辑器的方法'
+title: '通过“hide”命令一键启动秀丸编辑器！Windows的便捷设置方法'
 slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["命令", "秀丸编辑器", "注册表"]
 draft: false
 image: "img_2.webp"
 categories: ["工具与开发环境"]
+description: '讲解在Windows 10/11中，只需在“运行”或命令提示符中输入“hide”即可快速启动秀丸编辑器的方法。介绍使用注册表编辑器App Paths的便捷自定义步骤。'
 ---
 
 ## 介绍如何通过命令“hide”启动秀丸编辑器。

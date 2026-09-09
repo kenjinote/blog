@@ -1,11 +1,12 @@
 ---
-title: 'yt-dlp.exeによるYouTube動画のダウンロード方法'
+title: 'yt-dlpの使い方：YouTube動画・音声をダウンロード・保存する方法'
 slug: "yt-dlp.exe による YouTube 動画のダウンロード方法"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "ダウンロード"]
 draft: false
 image: "img_1.webp"
 categories: ["IT・テクノロジー"]
+description: 'コマンドラインツール「yt-dlp」を使って、YouTube動画を高画質でダウンロード・保存する方法や、mp3音声ファイルとして抽出・保存する手順を分かりやすく解説。インストールから使い方まで網羅。'
 ---
 # yt-dlpとは
 

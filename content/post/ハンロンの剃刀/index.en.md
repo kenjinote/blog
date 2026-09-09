@@ -1,11 +1,12 @@
 ---
-title: 'Hanlon''s Razor'
+title: 'What is ''Hanlon''s Razor'', a Way of Thinking to Ease Human Relationships? Explaining Its Meaning and Origins'
 slug: "ハンロンの剃刀"
 date: 2024-09-24T18:14:34+09:00
 tags: ["Phrase", "Expression"]
 draft: false
 image: "img.webp"
 categories: ["IT/Technology"]
+description: 'Introduces ''Hanlon''s Razor'', a psychological approach that suggests ''never attributing to malice that which is adequately explained by stupidity or carelessness''. Explains hints for resolving daily frustrations, such as slow LINE replies, and reducing relationship stress.'
 ---
 
 # Hello! Today's story is about "Hanlon's Razor"

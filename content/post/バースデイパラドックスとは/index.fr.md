@@ -1,5 +1,5 @@
 ---
-title: "Qu'est-ce que le paradoxe des anniversaires ?"
+title: 'Qu''est-ce que le paradoxe des anniversaires ? Pourquoi la probabilité que deux personnes aient le même anniversaire dépasse 50 % avec 23 personnes'
 slug: "バースデイパラドックスとは"
 date: 2024-04-02T01:20:50+09:00
 tags: ["Mathématiques", "Paradoxe"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Mathématiques, Cryptographie, Quantique"]
+description: 'Saviez-vous qu''avec 23 personnes, la probabilité que deux d''entre elles partagent le même anniversaire est supérieure à 50 % !? Nous expliquons ce phénomène contre-intuitif et fascinant, le « paradoxe des anniversaires », en utilisant des raisons mathématiques et des formules simples. Découvrez la magie des probabilités.'
 ---
 
 ## Connaissez-vous le paradoxe des anniversaires ?

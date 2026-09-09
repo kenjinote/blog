@@ -1,11 +1,12 @@
 ---
-title: "Sobre o Botão"
+title: 'Criação de botões (controles de GUI) e método de implementação do tratamento de eventos na API do Windows'
 slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["Botão", "GUI"]
 draft: false
 image: "img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Explicaremos, com código de exemplo, como criar um ''botão'', a base das aplicações GUI, usando a API padrão do Windows (Win32 API), e como implementar o tratamento de eventos ao clicar (mensagem WM_COMMAND).'
 ---
 
 # O que é um botão

@@ -1,11 +1,12 @@
 ---
-title: "iOS 的 ffmpeg 參數"
+title: '專為iOS最佳化！讓影片流暢播放的ffmpeg轉檔參數'
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: '介紹為了在iPhone或iPad等iOS裝置上讓影片流暢播放，最合適的ffmpeg指令與參數設定。我們也詳細解說了各選項的意義與設定重點。'
 ---
 
 # 針對 iOS 最佳化的 ffmpeg 轉換參數

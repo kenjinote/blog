@@ -1,11 +1,12 @@
 ---
-title: "在 git 中刪除標籤"
+title: '在Git中刪除本機與遠端標籤(tag)的方法'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
 categories: ["工具與開發環境"]
+description: '簡單解說如何在Git中刪除不再需要的標籤（tag）。內容涵蓋透過「git tag -d」在本地環境刪除標籤，到使用「git push origin --delete」刪除遠端儲存庫上的標籤。'
 ---
 # 刪除本地標籤
 

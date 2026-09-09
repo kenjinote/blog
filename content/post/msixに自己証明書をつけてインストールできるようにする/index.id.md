@@ -1,11 +1,12 @@
 ---
-title: "Menginstal MSIX dengan Sertifikat yang Ditandatangani Sendiri"
+title: 'Wajib Dilihat oleh Pengembang Aplikasi Windows! Cara Menyematkan Sertifikat Mandiri ke MSIX untuk Instalasi Lokal'
 slug: "msixに自己証明書をつけてインストールできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "sertifikat yang ditandatangani sendiri", "instalasi"]
 draft: false
 image: "img.webp"
 categories: ["IT dan Teknologi"]
+description: 'Menjelaskan dengan mudah prosedur spesifik, lengkap dengan perintah PowerShell, untuk membuat dan memberikan sertifikat mandiri tanpa menggunakan sertifikat komersial guna memungkinkan instalasi ke lingkungan lokal untuk paket MSIX yang berguna untuk distribusi pengujian aplikasi Windows.'
 ---
 
 # Menginstal MSIX dengan Sertifikat yang Ditandatangani Sendiri

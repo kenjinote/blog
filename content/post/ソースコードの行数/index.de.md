@@ -1,11 +1,12 @@
 ---
-title: "Anzahl der Zeilen im Quellcode"
+title: 'Wie hat sich der Umfang der Software verändert? Die Geschichte und Entwicklung von Quellcode-Zeilen'
 slug: "anzahl-der-zeilen-im-quellcode"
 date: 2025-04-17T10:33:02+09:00
 tags: ["Quellcode", "Codezeilen"]
 draft: false
 image: "img_1.webp"
 categories: ["IT & Technologie"]
+description: 'Wir erklären die dramatische Zunahme der Quellcode-Zeilen im Laufe der Zeit, von 420.000 Zeilen im Space Shuttle bis zu 2 Milliarden Zeilen bei Google. Wir stellen auch den Zusammenhang zwischen den Vorteilen von mehr Code und dem Risiko von Fehlern sowie das Beispiel des Linux-Kernels vor.'
 ---
 
 # Anzahl der Zeilen im Quellcode

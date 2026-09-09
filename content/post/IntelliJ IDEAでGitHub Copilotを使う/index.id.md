@@ -1,11 +1,12 @@
 ---
-title: "Menggunakan GitHub Copilot di IntelliJ IDEA"
+title: 'Cara Menginstal dan Mengaktifkan GitHub Copilot di IntelliJ IDEA'
 slug: "menggunakan-github-copilot-di-intellij-idea"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["Alat dan Lingkungan Pengembangan"]
+description: 'Menjelaskan dengan mudah beserta gambar, langkah konkret instalasi dan prosedur pengaktifan untuk menggunakan GitHub Copilot di IntelliJ IDEA. Mari tingkatkan efisiensi pengembangan secara drastis dengan memanfaatkan AI.'
 ---
 # Pendahuluan
 GitHub Copilot adalah alat pelengkap kode berbasis AI yang dikembangkan oleh GitHub.

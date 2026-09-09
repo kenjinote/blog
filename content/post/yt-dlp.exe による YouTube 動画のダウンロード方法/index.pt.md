@@ -1,11 +1,12 @@
 ---
-title: "Como baixar vídeos do YouTube com yt-dlp.exe"
+title: 'Como usar o yt-dlp: Como baixar e salvar vídeos e áudios do YouTube'
 slug: "yt-dlp.exe による YouTube 動画のダウンロード方法"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "Download"]
 draft: false
 image: "img_1.webp"
 categories: ["IT/Tecnologia"]
+description: 'Explicamos de forma fácil de entender como usar a ferramenta de linha de comando ''yt-dlp'' para baixar e salvar vídeos do YouTube em alta qualidade, bem como o procedimento para extrair e salvar como arquivos de áudio mp3. Cobrindo desde a instalação até o uso.'
 ---
 # O que é o yt-dlp
 

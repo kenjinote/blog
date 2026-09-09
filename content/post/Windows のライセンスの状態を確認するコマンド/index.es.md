@@ -7,13 +7,14 @@
 
 
 
-title: "Comando para verificar el estado de la licencia de Windows"
+title: '¡Cómo verificar el estado de activación de la licencia de Windows! Comprobación fácil con un solo comando'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licencia", "Símbolo del sistema"]
 draft: false
 image: "img_1.webp"
 categories: ["PC y Gadgets"]
+description: 'Explicamos cómo verificar si la licencia de Windows está activada correctamente. Presentamos el procedimiento para comprobar fácilmente detalles como la clave del producto, el tipo de licencia y la fecha de vencimiento con solo ejecutar el comando ''slmgr'' desde el Símbolo del sistema.'
 ---
 
 

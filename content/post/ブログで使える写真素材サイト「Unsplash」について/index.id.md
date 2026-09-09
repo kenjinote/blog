@@ -1,11 +1,12 @@
 ---
-title: "Tentang situs materi foto \"Unsplash\" yang dapat digunakan untuk blog"
+title: 'Cara Menggunakan Situs Stok Foto Gratis ''Unsplash'' untuk Blog Beserta Lisensi dan Penggunaan Komersialnya'
 slug: "ブログで使える写真素材サイト「Unsplash」について"
 date: 2023-04-02T14:44:17+09:00
 tags: ["Materi Foto", "Blog", "Unsplash"]
 draft: false
 image: "img_1.webp"
 categories: ["Manajemen Blog"]
+description: 'Kami akan memperkenalkan ''Unsplash'', situs stok foto gratis yang sangat cocok untuk artikel blog. Ini adalah layanan gambar berkualitas tinggi yang sangat praktis, gratis, boleh digunakan untuk komersial, dapat diedit, serta tidak memerlukan pencantuman kredit atau izin penggunaan.'
 ---
 ## Tentang "Unsplash"
 

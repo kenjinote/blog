@@ -1,5 +1,5 @@
 ---
-title: 'Trying out mermaid.js'
+title: 'What is Mermaid.js? How to Introduce it to Hugo and Draw Diagrams and Charts'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
@@ -7,6 +7,7 @@ draft: false
 mermaid: true
 image: "img_2.webp"
 categories: ["AI & Technology"]
+description: 'An easy-to-understand explanation of the overview of the JavaScript library ''Mermaid.js'', which allows drawing diagrams like flowcharts and Gantt charts using text, and the specific steps to introduce, configure, and make it usable in the static site generator Hugo.'
 ---
 
 ## What is mermaid.js?

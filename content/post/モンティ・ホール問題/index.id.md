@@ -1,11 +1,12 @@
 ---
-title: "Masalah Monty Hall"
+title: 'Apa itu Masalah Monty Hall? Penjelasan Mudah Mengenai Paradoks Probabilitas Berlawanan Intuisi dan Solusinya'
 slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["matematika", "probabilitas", "masalah Monty Hall"]
 draft: false
 image: "img_1.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Kami akan menjelaskan dengan mudah apa itu masalah Monty Hall, maknanya, serta solusinya. Ini adalah paradoks probabilitas terkenal berdasarkan permainan dari acara TV Amerika, di mana kami secara logis akan menjelaskan mengapa mengubah pilihan pintu meningkatkan kemungkinan menang.'
 ---
 
 ## Apa itu Masalah Monty Hall

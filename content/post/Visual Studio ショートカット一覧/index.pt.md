@@ -1,11 +1,12 @@
 ---
-title: "Lista de Atalhos do Visual Studio"
+title: 'Lista de atalhos convenientes para o Visual Studio [Aumento de Eficiência]'
 slug: "Lista de Atalhos do Visual Studio"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Atalhos" ]
 draft: false
 image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+description: 'Uma lista selecionada dos atalhos mais convenientes e indispensáveis da vida diária na programação que o desenvolvedor utilizará no Visual Studio (VS2022). O pacote reúne diversas ferramentas essenciais sobre depuração e compilação além dos métodos para realizar marcação de páginas.'
 ---
 
 # Lista de Atalhos do Visual Studio

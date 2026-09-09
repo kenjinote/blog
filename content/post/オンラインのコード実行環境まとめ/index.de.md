@@ -1,11 +1,12 @@
 ---
-title: "[Nach Sprache] Zusammenfassung der Online-Code-Ausführungsumgebungen"
+title: '[Nach Sprache] Funktioniert im Browser! Zusammenfassung kostenloser Online-Programmierausführungsumgebungen'
 slug: "オンラインのコード実行環境まとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["Online", "Code-Ausführungsumgebung", "Programmierung"]
 draft: false
 image: "img.webp"
 categories: ["Programmierung"]
+description: 'Wir haben praktische Online-Code-Ausführungsumgebungen nach Sprache (Python, JavaScript, C++ usw.) zusammengestellt, in denen Sie einfach mit dem Programmieren beginnen können, ohne eine Umgebung einrichten zu müssen. Wir erklären ausführlich die Funktionen von Google Colab, AWS Cloud9 und anderen.'
 ---
 
 ## Python

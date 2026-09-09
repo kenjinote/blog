@@ -1,5 +1,5 @@
 ---
-title: 'How to Enumerate Prime Numbers Up to 1000 Using the Sieve of Eratosthenes'
+title: 'What is the Sieve of Eratosthenes? Algorithm and Implementation for Enumerating Primes Under 1000'
 slug: "エラトステネスの篩を使って1000以下の素数を列挙する方法"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Sieve of Eratosthenes", "Prime Numbers", "Math", "Rust"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Math/Crypto/Quantum"]
+description: 'Clearly explains the mechanism and specific steps of the ''Sieve of Eratosthenes'', an algorithm for finding prime numbers efficiently. Also introduces an implementation example in Rust to enumerate primes up to 1000.'
 ---
 
 ## What is the Sieve of Eratosthenes?

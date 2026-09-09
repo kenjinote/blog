@@ -1,11 +1,12 @@
 ---
-title: "Templat Kalender Excel (Versi yang Mendukung Hari Libur Nasional)"
+title: '[Unduhan Gratis] Templat Kalender Excel yang Mendukung Tampilan Libur Otomatis'
 slug: "Templat Kalender Excel (Versi yang Mendukung Hari Libur)"
 date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "kalender", "templat", "hari libur"]
 draft: false
 image: "img.webp"
 categories: ["TI dan Teknologi"]
+description: 'Kami mendistribusikan secara gratis templat kalender Excel praktis yang secara otomatis menampilkan hari libur Jepang untuk bulan tersebut hanya dengan memasukkan tahun dan bulan. Silakan unduh dan gunakan untuk manajemen jadwal dan efisiensi kerja.'
 ---
 
 ## Saya membuat templat kalender Excel (versi yang mendukung hari libur nasional)!

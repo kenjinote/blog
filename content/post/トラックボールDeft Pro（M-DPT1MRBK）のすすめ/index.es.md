@@ -3,13 +3,14 @@
 
 
 
-title: "Recomendación del trackball Deft Pro (M-DPT1MRBK)"
+title: '¡Reseña del ELECOM Deft Pro! Ventajas y desventajas del ratón trackball de 8 botones'
 slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
 categories: ["IT y Tecnología"]
+description: 'Reseña tras usar durante una semana el ratón trackball de tamaño mediano ''Deft Pro (M-DPT1MRBK)'' de ELECOM. Explicamos desde sus ventajas, como la reducción de la fatiga de la muñeca y la asignación abundante de botones, hasta sus desventajas, como el esfuerzo de limpieza y la curva de aprendizaje en el manejo.'
 ---
 
 

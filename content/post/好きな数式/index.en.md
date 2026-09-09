@@ -1,5 +1,5 @@
 ---
-title: 'Favorite Mathematical Formulas'
+title: 'The Overly Beautiful World of Mathematics: A Collection of Favorite Formulas Like Wilson''s Theorem and Euler''s Formula'
 slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Mathematics"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Mathematics, Cryptography, Quantum"]
+description: 'We introduce fascinating mathematical formulas that let you feel the depth and beauty of mathematics, such as Wilson''s Theorem, Euler''s Formula, Fermat''s Last Theorem, and the Basel Problem. Please take a look at these moving and beautiful formulas that are simple yet represent the truth of the world.'
 ---
 ## Wilson's Theorem
 When $p$ is a prime number, $(p−1)!≡−1 \pmod p$ holds.

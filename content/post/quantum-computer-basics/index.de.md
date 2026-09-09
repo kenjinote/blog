@@ -1,10 +1,11 @@
 ---
-title: "【Vollständige Analyse】Was ist ein Quantencomputer? ~Das ultimative Berechnungsprinzip von Grund auf verstehen~"
+title: 'Was ist ein Quantencomputer? Die ultimativen Berechnungsprinzipien wie Superposition und Quantenverschränkung von Grund auf erklärt'
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Quantencomputer", "Physik", "Technologie"]
 image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
+description: 'Erklärt die Grundlagen von „Quantencomputern“, die das Potenzial haben, die Grenzen herköculicher Supercomputer zu überschreiten. Entwirrt fachlich und leicht verständlich die Mechanismen, wie mysteriöse Phänomene der Quantenmechanik wie Superposition, Quantenverschränkung und Quantengatter für Berechnungen genutzt werden.'
 ---
 
 ## Einführung: Der "Paradigmawechsel der Berechnung", den Quantencomputer bringen

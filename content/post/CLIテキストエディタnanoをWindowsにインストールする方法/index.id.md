@@ -1,11 +1,12 @@
 ---
-title: "Cara Menginstal Teks Editor CLI nano di Windows"
+title: 'Cara Menginstal Teks Editor CLI nano di Windows dan Mengatur Variabel Lingkungan'
 slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "teks editor"]
 draft: false
 image: "img_1.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
+description: 'Menjelaskan langkah-langkah menginstal teks editor CLI ringan ''nano'' di Windows dan mengatur variabel lingkungan agar dapat digunakan dari Command Prompt. Mencakup mulai dari pengunduhan, pengaturan PATH, hingga cara penggunaan dasar.'
 ---
 
 ## Mengunduh nano.exe

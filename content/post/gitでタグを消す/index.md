@@ -1,11 +1,12 @@
 ---
-title: 'gitでタグを消す'
+title: 'Gitでローカルとリモートのタグを削除する方法'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'Gitで不要になったタグ（tag）を削除する方法をシンプルに解説。「git tag -d」によるローカル環境でのタグ削除から、「git push origin --delete」を使ったリモートリポジトリ上のタグ削除まで網羅。'
 ---
 # ローカルのタグを消す
 

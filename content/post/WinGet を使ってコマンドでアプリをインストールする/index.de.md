@@ -1,11 +1,12 @@
 ---
-title: "Apps über die Befehlszeile mit WinGet installieren"
+title: 'So installieren und verwalten Sie Apps einfach mit dem WinGet-Befehl von Windows 11'
 slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
+description: 'Wir erklären, wie Sie Apps über die Befehlszeile mit dem Windows 11-Paketmanager „WinGet“ installieren. Wir zeigen Ihnen, wie Sie wichtige Software wie Chrome, VSCode und Slack schnell über die Befehlszeile einführen und verwalten können.'
 ---
 ## Voraussetzungen
 Windows 11 muss installiert sein

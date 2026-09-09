@@ -1,11 +1,12 @@
 ---
-title: 'What is the "General Number Field Sieve (GNFS)", Humanity''s Strongest Math that Breaks Internet Cryptography?'
+title: 'An Easy-to-Understand Explanation of ''General Number Field Sieve (GNFS)'', Humanity''s Strongest Math for Breaking Ciphers'
 slug: "インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？"
 date: 2026-09-05T02:09:08+09:00
 tags: ["Math", "Cryptography", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
 categories: ["Math, Cryptography & Quantum"]
+description: 'Explains the mechanism of ''General Number Field Sieve (GNFS)'', humanity''s strongest mathematics for breaking the RSA encryption that protects internet communications. Omits jargon to reveal the tricks of this magical algorithm, understandable with just junior high school math.'
 ---
 
 # What is the "General Number Field Sieve (GNFS)", Humanity's Strongest Math that Breaks Internet Cryptography?

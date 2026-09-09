@@ -1,11 +1,12 @@
 ---
-title: '使用 Slack App + OAuth2 向 Slack 发布消息的方法'
+title: '使用Slack API和OAuth2发送消息的方法（C++实现示例）'
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
 date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["博客运营"]
+description: '讲解如何利用Slack App的OAuth令牌，通过Slack Web API发送消息。从权限范围（Scope）设置与访问令牌的获取步骤，到使用WinHTTP在C++中的具体实现代码示例，为您一一介绍。'
 ---
 
 ## ✅ 使用访问令牌的发布方法（Slack Web API）

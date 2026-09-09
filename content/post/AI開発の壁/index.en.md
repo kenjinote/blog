@@ -1,11 +1,12 @@
 ---
-title: 'The Wall of AI Development'
+title: 'The Wall of AI Development Was High... The Reality and Why App Creation is ''Hell After the 8th Station'''
 slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "Development", "Wall", "Poem"]
 draft: false
 image: "img_1.webp"
 categories: ["AI & Technology"]
+description: 'Is the era of ''making apps easily by asking AI'' real? Even if it''s a breeze up to the 8th station with no-code or AI-generated code, a human-crying hell of final adjustments and bug fixes awaited after that. We candidly talk about the real pitfalls of AI development and the true nature of the ''wall'' you face.'
 ---
 
 # The Wall of AI Development

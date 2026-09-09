@@ -1,11 +1,12 @@
 ---
-title: "Die wahre mathematische Struktur des allgemeinen Zahlkörpersiebs (GNFS)"
+title: 'Was ist die wahre mathematische Struktur des Zahlkörpersiebs (GNFS)? Wie die Primfaktorzerlegung mithilfe von Homomorphismen funktioniert'
 slug: "一般数体篩法（GNFS）の真の数学的構造"
 date: 2026-09-05T02:26:13+09:00
 tags: ["Mathematik", "Kryptographie", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
+description: 'Wir erklären die wahre mathematische Struktur des Zahlkörpersiebs (GNFS), eines Algorithmus zur Primfaktorzerlegung. Wir enträtseln den fortschrittlichen Mechanismus zur effizienten Faktorisierung riesiger zusammengesetzter Zahlen mithilfe von „Homomorphismen“, die die Welt der realen ganzen Zahlen und die Welt der algebraischen Zahlkörper verbinden.'
 ---
 
 # Die wahre mathematische Struktur des allgemeinen Zahlkörpersiebs (GNFS)

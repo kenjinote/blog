@@ -1,5 +1,5 @@
 ---
-title: 'hugoでKaTeX(LaTeX風数式表示)を有効にする方法'
+title: 'HugoでKaTeXを導入し、LaTeX風の美しい数式を表示する方法'
 slug: "hugoでKaTeX(LaTeX風数式表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "数式", "数学", "hugo"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["数学・暗号・量子"]
+description: '高速な数式レンダリングライブラリ「KaTeX」を静的サイトジェネレータHugoへ導入する手順を解説します。math.htmlの作成からヘッダーへの読み込み設定まで、LaTeX風の美しい数式表示をブログで有効化する方法が簡単に分かります。'
 ---
 # KaTeXとは
 KaTeXは、LaTeX風の数式をHTMLで表示するためのjavascriptライブラリです。

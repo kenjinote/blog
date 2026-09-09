@@ -1,5 +1,5 @@
 ---
-title: '尝试使用mermaid.js'
+title: '什么是Mermaid.js？引入Hugo并绘制图表的教程'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
@@ -7,6 +7,7 @@ draft: false
 mermaid: true
 image: "img_2.webp"
 categories: ["AI・技术"]
+description: '通俗易懂地介绍能够使用纯文本绘制流程图和甘特图等图表的JavaScript库“Mermaid.js”，并详细讲解如何将其引入静态网站生成器Hugo、进行配置并投入使用的具体步骤。'
 ---
 
 ## mermaid.js是什么

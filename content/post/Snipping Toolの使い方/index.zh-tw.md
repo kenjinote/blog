@@ -1,11 +1,12 @@
 ---
-title: "剪取工具的使用方法"
+title: 'Windows 內建「剪取工具」的使用方法及螢幕錄影、擷取教學'
 slug: "剪取工具的使用方法"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "圖片", "影片", "螢幕截圖", "錄影", "擷取"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '解說 Windows 內建螢幕擷取工具「剪取工具 (Snipping Tool)」的基本使用方法。從使用快速鍵快速啟動的方法，到圖片的部分裁切儲存、影片的螢幕錄影步驟，皆淺顯易懂地介紹。'
 ---
 
 ## 什麼是剪取工具

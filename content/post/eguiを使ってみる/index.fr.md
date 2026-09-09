@@ -1,11 +1,12 @@
 ---
-title: "Essayer egui"
+title: 'Comment débuter avec la bibliothèque GUI légère Rust « egui » et procédure d''exécution d''exemples'
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "GUIライブラリ"]
 draft: false
 image: "demo.gif"
 categories: ["IT・テクノロジー"]
+description: 'Nous présentons l''utilisation de base de la bibliothèque GUI « egui », qui est facile à manipuler en Rust. Nous expliquons la procédure simple pour cloner un modèle depuis GitHub et lancer/exécuter l''application d''exemple avec la commande cargo run.'
 ---
 
 # Qu'est-ce que egui

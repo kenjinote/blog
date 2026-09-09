@@ -1,11 +1,12 @@
 ---
-title: 'FizzBuzz'
+title: 'What is the Programming Gateway ''FizzBuzz Problem''? Explaining How to Write it in Python'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algorithm"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'We clearly explain the overview and specific code examples (conditional branching) using Python for the ''FizzBuzz Problem'', which is often asked in programmer interviews. This is must-see content for everyone from beginners to those who want to review the basics.'
 ---
 
 ## What exactly is FizzBuzz, anyway?

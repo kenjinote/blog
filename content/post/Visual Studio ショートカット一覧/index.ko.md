@@ -6,13 +6,14 @@
 
 
 
-title: "'Visual Studio 단축키 목록'"
+title: 'Visual Studio의 편리한 단축키 목록 [작업 효율 향상]'
 slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "단축키" ]
 draft: false
 image: "img.webp"
 categories: ["도구・개발환경"]
+description: '개발 효율을 극적으로 향상시키는 Visual Studio(VS2022)의 유용한 단축키 목록을 정리했습니다. 디버깅 및 빌드, 북마크 조작 등 프로그래밍 중에 자주 사용하는 필수 단축키를 엄선하여 소개합니다.'
 ---
 
 

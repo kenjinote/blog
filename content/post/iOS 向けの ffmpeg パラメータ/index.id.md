@@ -1,11 +1,12 @@
 ---
-title: "Parameter ffmpeg untuk iOS"
+title: 'Dioptimalkan untuk iOS! Parameter Konversi ffmpeg untuk Memutar Video dengan Lancar'
 slug: "Parameter ffmpeg untuk iOS"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'Memperkenalkan perintah dan pengaturan parameter ffmpeg yang paling optimal untuk memastikan pemutaran video yang lancar di perangkat iOS seperti iPhone dan iPad. Menguraikan secara mendetail arti setiap opsi dan poin penting dalam pengaturannya.'
 ---
 
 # Parameter konversi ffmpeg yang dioptimalkan untuk iOS

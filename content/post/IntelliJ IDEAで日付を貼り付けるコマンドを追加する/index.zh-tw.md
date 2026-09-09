@@ -1,11 +1,12 @@
 ---
-title: "在 IntelliJ IDEA 中新增插入日期的指令"
+title: '在IntelliJ IDEA中建立插入現在日期快捷鍵的方法'
 slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["IT・テクノロジー"]
+description: '一步一步詳細介紹在IntelliJ IDEA中，設定可自動插入現在日期與時間的「Live Template」方法。在撰寫部落格等時候非常方便，省去每次手動輸入的麻煩。'
 ---
 # 前言
 寫這個部落格時，我使用的是 IntelliJ IDEA。它不僅與 Git 的相容性很好，還能顯示 Markdown 的預覽，非常方便。

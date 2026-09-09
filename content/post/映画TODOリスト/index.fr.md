@@ -1,11 +1,12 @@
 ---
-title: "Liste de Films TODO"
+title: 'Incontournable ! Ma liste de films personnels à voir et les recommandations des œuvres déjà visionnées'
 slug: "映画TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["Films", "TODO"]
 draft: false
 image: "image.webp"
 categories: ["Style de Vie et Divers"]
+description: 'Voici ma liste TODO des grands films et animes que je veux voir à l''avenir. Des films liés aux mathématiques comme « Le Professeur et la Sirène » ou « Will Hunting » aux animes populaires comme « Summer Wars » et « Les Enfants du Temps », je les présentent avec mon suivi des films déjà regardés.'
 ---
 
 # Films à voir (cochez après avoir vu)

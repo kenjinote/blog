@@ -1,9 +1,9 @@
 ---
 author: "Hugo Authors"
-title: "Markdown Syntax Guide"
+title: 'Hugoで使えるMarkdown記法サンプル：見出し・段落などの基本シンタックス'
 slug: "マークダウンのサンプル"
 date: "2019-03-11"
-description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+description: '静的サイトジェネレーターHugoのコンテンツ作成で使える、基本的なMarkdown記法（シンタックス）のサンプルをご紹介します。見出し（H1〜H6）や段落など、テーマのCSSでどのように装飾されるかを確認できます。'
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]
 series: ["Themes Guide"]

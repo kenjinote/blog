@@ -1,11 +1,12 @@
 ---
-title: "Fui premiado com o Microsoft MVP (2025-2026) novamente"
+title: 'Relatório de nova premiação do Microsoft MVP (2025-2026) e atividades até agora'
 slug: "fui-premiado-com-o-microsoft-mvp-2025-2026-novamente"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'Este é o anúncio do meu 9º prêmio como Microsoft MVP (2025-2026). Juntamente com a explicação do programa MVP, que contribui para a comunidade de tecnologia, trazemos uma retrospectiva da disseminação de informações técnicas e atividades da comunidade nas quais me concentrei particularmente neste último ano.'
 ---
 
 # Fui premiado com o Microsoft MVP (2025-2026) novamente!

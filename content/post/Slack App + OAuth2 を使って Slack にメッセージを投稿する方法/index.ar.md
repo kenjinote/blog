@@ -1,11 +1,12 @@
 ---
-title: "كيفية نشر رسالة على Slack باستخدام Slack App + OAuth2"
+title: 'كيفية نشر رسائل باستخدام Slack API و OAuth2 (مثال بلغة C++)'
 slug: "كيفية نشر رسالة على Slack باستخدام Slack App + OAuth2"
 date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["إدارة المدونة"]
+description: 'نشرح كيفية نشر الرسائل عبر Slack Web API باستخدام رموز OAuth المميزة (Tokens) لتطبيقات Slack. نقدم خطوات إعداد النطاقات (Scopes) والحصول على رموز الوصول (Access Tokens)، وحتى أمثلة على الكود الملموس بلغة C++ باستخدام WinHTTP.'
 ---
 
 ## ✅ طريقة النشر باستخدام رمز الوصول (Slack Web API)

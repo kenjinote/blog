@@ -1,11 +1,12 @@
 ---
-title: "Code C pour générer des nombres premiers"
+title: 'Code source simple en langage C pour générer et déterminer les nombres premiers dans une plage spécifiée'
 slug: "code-c-pour-generer-des-nombres-premiers"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Nombres premiers", "Algorithme", "Mathématiques"]
 draft: false
 image: "img.webp"
 categories: ["Mathématiques, Cryptographie et Quantique"]
+description: 'Nous présentons un code source simple en langage C qui détermine, génère et énumère les nombres premiers dans une plage spécifiée (de 1 à n). Il comprend un algorithme efficace utilisant la fonction isPrime, avec un exemple d''implémentation de programmation facile à comprendre même pour les débutants, et des explications.'
 ---
 
 Voici un code C simple qui génère des nombres premiers dans une plage spécifiée. Dans cet exemple, nous énumérons les nombres premiers de 1 à n.

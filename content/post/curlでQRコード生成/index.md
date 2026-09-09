@@ -1,11 +1,12 @@
 ---
-title: 'curlでQRコード生成'
+title: 'curlコマンドを使ってコマンドプロンプトでQRコードを生成する方法'
 slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["QRコード", "curl", "コマンドプロンプト"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'Windowsのコマンドプロンプトでcurlコマンドを使用してテキストベースのQRコードを生成・表示する方法を紹介します。外部API（qrenco.de）を利用するため、個人情報の取り扱いに関する注意点も解説します。'
 ---
 
 ## curlでQRコード生成

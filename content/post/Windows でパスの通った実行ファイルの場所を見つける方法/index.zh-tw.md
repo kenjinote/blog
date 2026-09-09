@@ -1,11 +1,12 @@
 ---
-title: "如何在 Windows 中尋找路徑中的執行檔位置"
+title: '在 Windows 中尋找已設定環境變數路徑的執行檔位置（路徑）的方法【where 指令】'
 slug: "Windows でパスの通った実行ファイルの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "路徑", "執行檔", "命令提示字元"]
 draft: false
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: '解說如何在 Windows 的命令提示字元或 PowerShell 中，輕鬆查詢執行檔的儲存位置（完整路徑）。介紹使用「where」指令，快速鎖定已設定路徑應用程式確切位置的實用小技巧。'
 ---
 
 # 如何在 Windows 中尋找路徑中的執行檔位置

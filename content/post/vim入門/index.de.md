@@ -1,11 +1,12 @@
 ---
-title: "Einführung in vim"
+title: '【Für Anfänger】Einführung in Vim: Von der Installation über das grundlegende Starten und Beenden bis hin zur Erklärung der Modi'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "Texteditor"]
 draft: false
 image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
+description: 'Erklärt für Anfänger die grundlegende Verwendung von Vim. Deckt die ersten Schritte vollständig ab, einschließlich Installationsmethoden in Windows-Umgebungen, Befehle zum Starten und Beenden (Speichern, erzwungenes Beenden usw.) und den Unterschied zwischen Befehlsmodus und Eingabemodus.'
 ---
 
 ![img_1.png](img_1.webp)

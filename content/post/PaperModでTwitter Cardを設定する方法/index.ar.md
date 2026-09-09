@@ -1,11 +1,12 @@
 ---
-title: "كيفية إعداد Twitter Card في PaperMod"
+title: 'كيفية إعداد Twitter Card (X Card) في قالب Hugo PaperMod'
 slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
 categories: ["إدارة المدونة"]
+description: 'نشرح كيفية إعداد Twitter Card في قالب PaperMod في Hugo. نعرض طريقة الكتابة في ملف config.toml لتطبيق الإعدادات على الموقع بالكامل، وطريقة تحديد صورة لكل مقال على حدة في ترويسة Markdown. هذه خطوة مفيدة لإعداد صورة الغلاف (Eye-catch) عند المشاركة على الشبكات الاجتماعية.'
 ---
 # مقدمة
 يدعم قالب PaperMod ميزة Twitter Card.

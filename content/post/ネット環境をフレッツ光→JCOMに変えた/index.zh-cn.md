@@ -1,11 +1,12 @@
 ---
-title: '将网络环境从FLET''S光变更为J:COM'
+title: '从FLET''S光换到J:COM的结果！关于资费与网速的真实感受'
 slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","FLET'S光","网络线路"]
 draft: false
 image: "jcom.webp"
 categories: ["IT・科技"]
+description: '将家里网络从FLET''S光换到J:COM的真实体验。毫不掩饰地评测实际使用感受，包括月租费节省效果、下载速度提升、相反上传速度下降的情况，以及网络稳定性等。'
 ---
 
 # 将家庭网络环境从FLET'S光变更为J:COM

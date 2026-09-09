@@ -1,5 +1,5 @@
 ---
-title: "【用數學公式完全理解】為何最強古典演算法「GNFS」會敗給量子演算法？質因數分解的典範轉移"
+title: '破解RSA密碼？透過數學公式徹底解說GNFS與Shor演算法'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["量子電腦", "GNFS", "Shor演算法", "密碼破解", "數學"]
@@ -7,6 +7,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["數學・密碼・量子"]
+description: '質因數分解問題是RSA密碼安全性的基石。本文將透過數學公式與概念圖，徹底解說古典最強演算法「普通數域篩法（GNFS）」的數學機制，以及為何量子電腦的「秀爾演算法(Shor''s algorithm)」能將其攻破。'
 ---
 
 現代網際網路社會中的資訊安全，主要依賴以RSA密碼為首的公開金鑰密碼系統來保護。RSA密碼安全性的基礎，仰賴於 **「對巨大的合成數進行質因數分解，在計算複雜度上是極度困難的」** 這個事實。

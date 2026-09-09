@@ -1,11 +1,12 @@
 ---
-title: "Exemplo usando wxWidgets"
+title: 'Como usar o wxWidgets: desde o método de instalação até a criação do projeto de exemplo'
 slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Exemplo"]
 draft: false
 image: "img.webp"
 categories: ["Programação"]
+description: 'Explicamos de forma fácil de entender para iniciantes, desde os procedimentos de instalação da biblioteca GUI multiplataforma C++ ''wxWidgets'' até como criar um projeto de exemplo usando o Visual Studio.'
 ---
 
 ## O que é wxWidgets

@@ -1,11 +1,12 @@
 ---
-title: "Daftar Bahasa Pemrograman"
+title: 'Dari Mayor hingga Minor! Daftar Bahasa Pemrograman dan Rangkuman Karakteristik Masing-masing'
 slug: "daftar-bahasa-pemrograman"
 date: 2023-04-01T03:45:53+09:00
 tags: ["Bahasa Pemrograman"]
 draft: true
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Kami telah membuat daftar berbagai bahasa pemrograman dari C, Python, Java, JavaScript hingga Rust, Go, OCaml, dan Clojure. Mari kita periksa gambaran umum dan karakteristik setiap bahasa sebagai referensi untuk pengembangan dan pembelajaran.'
 ---
 
 # Daftar Bahasa Pemrograman

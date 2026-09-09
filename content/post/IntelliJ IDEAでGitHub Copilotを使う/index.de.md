@@ -1,11 +1,12 @@
 ---
-title: "Verwendung von GitHub Copilot in IntelliJ IDEA"
+title: 'Wie man GitHub Copilot in IntelliJ IDEA einführt und aktiviert'
 slug: "verwendung-von-github-copilot-in-intellij-idea"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["ツール・開発環境"]
+description: 'Wir erklären mit Bildern verständlich die konkrete Installationsmethode und die Aktivierungsschritte für die Nutzung von GitHub Copilot in IntelliJ IDEA. Nutzen Sie die KI, um Ihre Entwicklungseffizienz drastisch zu steigern.'
 ---
 # Einführung
 GitHub Copilot ist ein KI-basiertes Code-Vervollständigungstool, das von GitHub entwickelt wurde.

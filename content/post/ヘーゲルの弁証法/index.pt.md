@@ -1,11 +1,12 @@
 ---
-title: "A Dialética de Hegel"
+title: 'O que é a dialética de Hegel? O conceito de Aufheben (sublimação) e sua aplicação no dia a dia e na programação'
 slug: "a-dialetica-de-hegel"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filosofia", "Hegel", "Dialética"]
 draft: false
 image: "images/img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Explicaremos a ''dialética de Hegel'', que supera oposições e contradições para evoluir a um nível superior. Analisaremos de forma simples com exemplos próximos, não apenas como conceitos filosóficos, mas também nas leis da natureza e na evolução através da correção de bugs em programas de computador.'
 ---
 ## O que é a Dialética de Hegel
 

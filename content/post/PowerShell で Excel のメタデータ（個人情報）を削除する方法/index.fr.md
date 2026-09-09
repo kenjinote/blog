@@ -1,11 +1,12 @@
 ---
-title: "Comment supprimer par lots les métadonnées (informations personnelles) d'Excel, Word, etc. avec PowerShell"
+title: 'Comment supprimer en masse les métadonnées (informations personnelles) d''Excel et Word avec PowerShell'
 slug: "Comment supprimer les métadonnées (informations personnelles) d'Excel avec PowerShell"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Métadonnées", "Informations personnelles"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["Programmation"]
+description: 'Explique comment utiliser PowerShell pour supprimer les métadonnées telles que l''auteur contenues dans les fichiers Office. Traitant d''un fichier unique jusqu''aux scripts pour la suppression en masse des fichiers Excel et Word dans un dossier, présente des techniques d''automatisation utiles pour empêcher les fuites d''informations lors du partage en externe.'
 ---
 
 # "Comment supprimer par lots les métadonnées (informations personnelles) d'Excel, Word, etc. avec PowerShell"

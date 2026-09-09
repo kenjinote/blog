@@ -7,13 +7,14 @@
 
 
 
-title: "Citas de Einstein"
+title: '¡No te rindas ante las críticas! Pistas para vivir con fuerza aprendidas de las citas de Einstein'
 slug: "アインシュタインの名言"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Citas", "Filosofía", "Ciencia", "Física"]
 draft: false
 image: "Solvay_conference_1927.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
+description: 'Presentamos las profundas citas de Albert Einstein. Explicamos sus enseñanzas para mantenerse fuerte y creer en uno mismo sin dejarse llevar por las evaluaciones o críticas de los demás. Lleno de pistas que se pueden aplicar a la vida diaria moderna, como en el trabajo o las redes sociales.'
 ---
 
 

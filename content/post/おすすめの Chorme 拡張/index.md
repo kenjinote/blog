@@ -1,11 +1,12 @@
 ---
-title: 'おすすめのChorme拡張'
+title: 'Chrome・Edgeを劇的に便利にするおすすめブラウザ拡張機能まとめ'
 slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chorme拡張", "ブラウザ", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
 categories: ["IT・テクノロジー"]
+description: 'マウスジェスチャー、広告ブロック、DeepL翻訳、ChatGPTのサイドバー利用など、Google ChromeやMicrosoft Edgeのブラウジングを劇的に効率化するおすすめの拡張機能を紹介します。'
 ---
 
 # おすすめのChorme拡張

@@ -7,13 +7,14 @@
 
 
 
-title: "'Python 코드 조각'"
+title: 'Python으로 이미지를 다운로드하고 임시 저장 및 표시하는 샘플 코드'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "샘플 코드"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: 'Python의 표준 라이브러리만을 사용하여 웹상의 이미지 URL에서 데이터를 다운로드하고 임시 파일로 저장한 후, 브라우저에 표시하고 자동 삭제하는 일련의 실용적인 샘플 코드를 소개합니다.'
 ---
 
 

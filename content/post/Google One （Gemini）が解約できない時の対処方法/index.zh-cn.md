@@ -1,11 +1,11 @@
 ---
-title: '无法取消 Google One (Gemini) 时的解决方法'
+title: 'Google One（Gemini）无法取消？正确的退订方法解析'
 slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "取消", "解决方法"]
 draft: false
 image: "img.webp"
-description: 'Google One (Gemini) 免费体验结束后会被收费？取消订阅方法汇总'
+description: '本文讲解如何防止Gemini 1个月免费体验结束后自动续期每月2,900日元的Google One会员，并提供正确的取消步骤。如果您正为“无法取消”而烦恼，请参考本文的退订方法。'
 categories: ["编程"]
 ---
 

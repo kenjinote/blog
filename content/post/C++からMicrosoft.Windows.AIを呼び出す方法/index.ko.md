@@ -7,13 +7,14 @@
 
 
 
-title: "'C++에서 Microsoft.Windows.AI를 호출하는 방법'"
+title: '【샘플 포함】 C++에서 Windows.AI를 호출하여 ONNX 모델을 실행하는 방법'
 slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
 categories: ["도구 및 개발 환경"]
+description: 'Windows 표준의 Windows ML을 활용하여 AI 기능에 액세스! Win32 앱의 C++ 환경에서 ''Microsoft.Windows.AI''를 호출하고, ONNX 형식의 AI 모델을 실행하는 구체적인 절차를 샘플 코드와 함께 알기 쉽게 해설합니다.'
 ---
 
 

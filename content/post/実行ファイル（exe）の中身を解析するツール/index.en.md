@@ -1,11 +1,12 @@
 ---
-title: "Tools to Analyze the Contents of Executable Files (exe)"
+title: '4 Useful Tools to Analyze and Extract the Contents of Windows Executable Files (exe)'
 slug: "tools-to-analyze-executable-files"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "executable files", "analysis"]
 draft: false
 image: "img_1.webp"
 categories: ["PC and Gadgets"]
+description: 'We introduce recommended tools that can analyze and extract the contents of Windows executable files (exe). We explain in an easy-to-understand way how to check PE format structures, extract resources, and edit binaries using tools like 7-Zip and Resource Hacker.'
 ---
 
 # What is an Executable File (exe)

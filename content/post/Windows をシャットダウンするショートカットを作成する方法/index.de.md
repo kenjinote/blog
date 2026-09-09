@@ -1,11 +1,12 @@
 ---
-title: "So erstellen Sie eine Verknüpfung zum Herunterfahren von Windows"
+title: 'PC mit einem Klick ausschalten! So erstellen Sie eine Verknüpfung zum Herunterfahren von Windows'
 slug: "So erstellen Sie eine Verknüpfung zum Herunterfahren von Windows"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Herunterfahren", "Verknüpfung"]
 draft: false
 image: "img.webp"
 categories: ["PC und Gadgets"]
+description: 'Wir erklären, wie Sie eine praktische Verknüpfung erstellen, mit der Sie Windows mit einem Klick vom Desktop aus herunterfahren können. Wir erläutern das Einrichtungsverfahren mit dem Befehl „shutdown.exe“ und wie Sie das Symbol mit Bildern ausführlich in ein leicht verständliches Symbol ändern können.'
 ---
 
 Hier wird beschrieben, wie Sie eine Verknüpfung zum Herunterfahren von Windows erstellen.

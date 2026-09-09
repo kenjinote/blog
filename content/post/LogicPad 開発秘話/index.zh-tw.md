@@ -1,11 +1,12 @@
 ---
-title: "LogicPad 開發秘辛"
+title: '低程式碼工具「LogicPad」開發秘辛：為什麼要開發這個？'
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "開發", "秘辛"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '專為「不會寫程式碼但有邏輯概念的人」所開發的低程式碼(Low-code)工具「LogicPad」誕生秘辛。熱情分享開發背後作者個人的想法，以及自身面對職涯的態度。'
 ---
 
 # 為「不會寫程式碼，但有邏輯的人」提供工具。創建 LogicPad 的理由

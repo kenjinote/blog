@@ -1,10 +1,11 @@
 ---
-title: "LoadIcon muss DestroyIcon nicht aufrufen"
+title: 'Warum für Icons, die mit der Funktion LoadIcon abgerufen wurden, kein DestroyIcon erforderlich ist'
 slug: "LoadIcon-muss-DestroyIcon-nicht-aufrufen"
 date: 2024-04-19T01:55:17+09:00
 tags: ["Symbol", "LoadIcon", "DestroyIcon", "Windows-Programmierung"]
 draft: false
 categories: ["Programmierung"]
+description: 'Wir erklären die Bedingungen, unter denen DestroyIcon für Icon-Ressourcen aufgerufen werden sollte oder nicht, die mit LoadIcon oder LoadImage in der Windows API abgerufen wurden. Wir haben die korrekten Spezifikationen zusammengestellt, um Ressourcenlecks zu vermeiden.'
 ---
 
 # Über die Notwendigkeit, DestroyIcon aufzurufen

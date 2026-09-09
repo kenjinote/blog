@@ -1,11 +1,12 @@
 ---
-title: "Empfohlene Bücher für angehende Ingenieure"
+title: '15 empfohlene Pflichtbücher für angehende Ingenieure! Von den Grundlagen der Programmierung bis zum Design'
 slug: "Empfohlene Bücher für angehende Ingenieure"
 date: 2024-05-05T16:03:33+09:00
 tags: ["Ingenieure", "Anfänger", "Bücher"]
 draft: false
 image: "img.webp"
 categories: ["Lifestyle & Diverses"]
+description: 'Ein Muss für Ingenieure, die vom Anfänger- zum Mittelstufenprogrammierer aufsteigen wollen! Wir stellen eine sorgfältige Auswahl von 15 empfehlenswerten und unverzichtbaren Büchern für Anfänger vor, in denen Sie grundlegendes Wissen und Entwurfsmethoden für die Softwareentwicklung erlernen können, wie „Clean Code“ und „Der pragmatische Programmierer“.'
 ---
 
 1. Lesbarer Code

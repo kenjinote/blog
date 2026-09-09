@@ -1,11 +1,12 @@
 ---
-title: "FizzBuzz"
+title: 'Was ist das „FizzBuzz-Problem“, das Tor zum Programmieren? Eine Erklärung, wie man es in Python schreibt'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algorithmus"]
 draft: false
 image: "img.webp"
 categories: ["Programmierung"]
+description: 'Wir erklären leicht verständlich den Überblick über das „FizzBuzz-Problem“, das oft in Vorstellungsgesprächen für Programmierer vorkommt, und zeigen konkrete Codebeispiele (bedingte Verzweigungen) mit Python. Ein Muss für Anfänger und alle, die die Grundlagen wiederholen möchten.'
 ---
 
 ## Was genau ist eigentlich FizzBuzz?

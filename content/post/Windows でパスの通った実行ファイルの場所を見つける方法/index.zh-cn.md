@@ -1,11 +1,12 @@
 ---
-title: '在 Windows 中查找已添加到 PATH 路径的可执行文件位置的方法'
+title: '在Windows中查找已配置环境变量的可执行文件位置（路径）的方法【where命令】'
 slug: "Windows でパスの通った実行ファイルの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "路径", "可执行文件", "命令提示符"]
 draft: false
 image: "img.webp"
 categories: ["PC与数码"]
+description: '讲解如何在Windows命令提示符或PowerShell中，轻松查找可执行文件的保存位置（完整路径）。介绍使用“where”命令快速定位已配置环境变量的应用程序准确位置的实用小技巧。'
 ---
 
 # 在 Windows 中查找已添加到 PATH 路径的可执行文件位置的方法

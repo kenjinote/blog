@@ -1,11 +1,12 @@
 ---
-title: "Modification de la palette de couleurs de PaperMod"
+title: 'Comment modifier le schéma de couleurs et le thème de couleur du thème Hugo PaperMod avec CSS'
 slug: "PaperModの配色変更"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
 categories: ["Administration du blog"]
+description: 'Explique comment personnaliser la palette de couleurs globale dans le thème PaperMod de Hugo. Présente des exemples spécifiques de configuration de variables pour éditer le CSS (blank.css) qui inclut des définitions de style pour les couleurs d''arrière-plan, les couleurs de texte et les blocs de code, afin d''appliquer un schéma de couleurs personnalisé.'
 ---
 J'ai modifié la palette de couleurs du thème PaperMod. Je me suis référé au lien suivant pour la méthode de modification.
 

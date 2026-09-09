@@ -3,7 +3,7 @@
 
 
 
-title: "Cómo enumerar los números primos hasta 1000 usando la criba de Eratóstenes"
+title: '¿Qué es la criba de Eratóstenes? Algoritmo e implementación para enumerar números primos hasta 1000'
 slug: "エラトステネスの篩を使って1000以下の素数を列挙する方法"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Criba de Eratóstenes", "Números primos", "Matemáticas", "Rust"]
@@ -11,6 +11,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matemáticas・Criptografía・Cuántica"]
+description: 'Explicamos de manera clara el mecanismo y el procedimiento específico de la ''criba de Eratóstenes'', un algoritmo para encontrar números primos de manera eficiente. También presentamos un ejemplo de implementación utilizando el lenguaje Rust para enumerar los números primos hasta el 1000.'
 ---
 
 

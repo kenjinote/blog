@@ -7,13 +7,14 @@
 
 
 
-title: "'C++에서 PowerShell을 C++/CLI DLL을 통해 실행하는 방법'"
+title: '【VS2022】 C++에서 PowerShell 실행! C++/CLI DLL 경유 연동 절차'
 slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: '네이티브 C++에서 PowerShell 스크립트를 호출하여 실행하는 방법을 찾고 계십니까? Visual Studio 2022 환경에서 C++/CLI를 통한 래퍼 DLL을 작성하고 원활하게 시스템 연동을 실현하는 구체적인 구현 단계를 철저히 해설합니다.'
 ---
 
 

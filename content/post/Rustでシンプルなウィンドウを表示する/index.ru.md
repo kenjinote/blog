@@ -1,11 +1,12 @@
 ---
-title: "Отображение простого окна в Rust"
+title: 'Как создать и отобразить простое окно Windows с помощью Rust и winapi'
 slug: "otobrazhenie-prostogo-okna-v-rust"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "окно"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["программирование"]
+description: 'Представлен метод создания и отображения простого окна Windows в Rust с использованием `winapi`. Подробно объясняется исходный код, который является основой программирования GUI, от настройки Cargo.toml до реализации оконной процедуры.'
 ---
 
 Отображение простого окна в Rust

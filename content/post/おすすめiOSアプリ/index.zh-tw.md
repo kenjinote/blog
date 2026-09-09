@@ -1,11 +1,12 @@
 ---
-title: "推薦的 iOS 應用程式"
+title: '真正實用！推薦 iOS 應用程式嚴選總整理'
 slug: "推薦的-ios-應用程式"
 date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "應用程式", "推薦"]
 draft: false
 image: "img.webp"
 categories: ["PC・小工具"]
+description: '嚴選介紹能讓 iPhone 或 iPad 活用得更便利的推薦 iOS 應用程式。一起來看看能在工作或私領域派上用場的實用工具，以及豐富生活的必備應用程式吧。'
 ---
 
 ## 推薦的 iOS 應用程式

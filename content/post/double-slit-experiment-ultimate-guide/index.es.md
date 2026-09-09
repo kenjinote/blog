@@ -1,5 +1,5 @@
 ---
-title: "[Guía completa] Todo sobre el \"experimento de la doble rendija\", el más hermoso de la física: el mundo cuántico y la verdadera naturaleza de la realidad"
+title: '【Guía Completa】El mayor misterio de la mecánica cuántica: el "experimento de la doble rendija" explicado detalladamente'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Física", "Mecánica cuántica", "Experimento de la doble rendija", "Ecuación de Schrödinger"]
@@ -7,6 +7,7 @@ categories: ["Física y Ciencia"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: 'Una explicación profunda sobre el "experimento de la doble rendija", conocido como el experimento más hermoso de la historia de la física. Resumimos para principiantes las anomalías del mundo microscópico donde el sentido común del mundo macroscópico no aplica, y los profundos misterios de la mecánica cuántica.'
 ---
 ## 1. [Introducción] ¿Qué es el experimento de la doble rendija?
 

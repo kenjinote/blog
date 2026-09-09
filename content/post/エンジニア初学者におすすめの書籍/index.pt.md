@@ -1,11 +1,12 @@
 ---
-title: "Livros recomendados para engenheiros iniciantes"
+title: '15 livros obrigatórios recomendados para iniciantes em engenharia! Dos fundamentos de programação ao design'
 slug: "Livros recomendados para engenheiros iniciantes"
 date: 2024-05-05T16:03:33+09:00
 tags: ["Engenheiros", "Iniciantes", "Livros"]
 draft: false
 image: "img.webp"
 categories: ["Estilo de vida e Diversos"]
+description: 'Leitura obrigatória para engenheiros que querem passar de iniciantes a intermediários em programação! Apresentamos uma seleção de 15 livros recomendados que são leituras obrigatórias para iniciantes aprenderem conhecimentos básicos e métodos de design no desenvolvimento de software, como ''Código Limpo'' e ''O Programador Pragmático''.'
 ---
 
 1. Código Legível

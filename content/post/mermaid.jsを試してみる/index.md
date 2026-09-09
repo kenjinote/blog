@@ -1,5 +1,5 @@
 ---
-title: 'mermaid.jsを試してみる'
+title: 'Mermaid.jsとは？Hugoに導入して図やチャートを描画する方法'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00
 tags: ["mermaid.js"]
@@ -7,6 +7,7 @@ draft: false
 mermaid: true
 image: "img_2.webp"
 categories: ["AI・テクノロジー"]
+description: 'テキストベースでフローチャートやガントチャートなどの図表を描画できるJavaScriptライブラリ「Mermaid.js」の概要と、静的サイトジェネレーターHugoに導入・設定して利用可能にする具体的な手順についてわかりやすく解説します。'
 ---
 
 ## mermaid.jsとは

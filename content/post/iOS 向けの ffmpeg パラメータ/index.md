@@ -1,11 +1,12 @@
 ---
-title: 'iOS 向けの ffmpeg パラメータ'
+title: 'iOS向けに最適化！動画をスムーズに再生するffmpeg変換パラメータ'
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'iPhoneやiPadなどのiOSデバイスで動画をスムーズに再生させるための最適なffmpegコマンドとパラメータ設定を紹介します。各オプションの意味や設定のポイントも詳しく解説しています。'
 ---
 
 # iOS向けに最適化した ffmpeg の変換パラメータ

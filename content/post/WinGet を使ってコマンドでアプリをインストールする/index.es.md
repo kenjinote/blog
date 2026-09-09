@@ -3,13 +3,14 @@
 
 
 
-title: "'Instalar aplicaciones mediante comandos usando WinGet'"
+title: 'Cómo instalar y gestionar aplicaciones fácilmente con el comando WinGet en Windows 11'
 slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["Herramientas y Entornos de Desarrollo"]
+description: 'Explicamos cómo instalar aplicaciones desde la línea de comandos usando ''WinGet'', el administrador de paquetes de Windows 11. Presentamos el procedimiento para instalar y gestionar rápidamente software principal como Chrome, VSCode y Slack a través de la línea de comandos.'
 ---
 
 

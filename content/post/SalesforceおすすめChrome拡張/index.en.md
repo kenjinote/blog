@@ -1,11 +1,12 @@
 ---
-title: 'Recommended Chrome Extensions for Salesforce'
+title: 'Boost Your Salesforce Development! A Summary of Recommended Chrome Extensions'
 slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome Extension"]
 draft: false
 image: "img.webp"
 categories: ["IT / Technology"]
+description: 'Introduces recommended Chrome extensions that dramatically streamline Salesforce development and operations. We have carefully selected must-see tools for engineers, such as DevTools useful for searching custom fields and assembling SOQL, and extensions helpful for code search.'
 ---
 
 ### Salesforce DevTools

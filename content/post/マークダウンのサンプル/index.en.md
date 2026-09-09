@@ -1,9 +1,9 @@
 ---
 author: "Hugo Authors"
-title: "Markdown Syntax Guide"
+title: 'Markdown Syntax Samples for Hugo: Basic Syntax for Headings, Paragraphs, etc.'
 slug: "マークダウンのサンプル"
 date: "2019-03-11"
-description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+description: 'Introducing basic Markdown syntax samples you can use when creating content for the static site generator Hugo. You can check how headings (H1-H6) and paragraphs are styled with your theme''s CSS.'
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]
 series: ["Themes Guide"]

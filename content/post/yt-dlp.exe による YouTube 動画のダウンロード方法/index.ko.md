@@ -7,13 +7,14 @@
 
 
 
-title: "'yt-dlp.exe를 이용한 YouTube 동영상 다운로드 방법'"
+title: 'yt-dlp 사용법: YouTube 동영상 및 오디오를 다운로드하고 저장하는 방법'
 slug: "yt-dlp.exe による YouTube 動画のダウンロード方法"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "다운로드"]
 draft: false
 image: "img_1.webp"
 categories: ["IT・테크놀로지"]
+description: '명령줄 도구 ''yt-dlp''를 사용하여 YouTube 동영상을 고화질로 다운로드하고 저장하는 방법이나, mp3 오디오 파일로 추출하여 저장하는 절차를 알기 쉽게 해설합니다. 설치부터 사용법까지 망라했습니다.'
 ---
 
 

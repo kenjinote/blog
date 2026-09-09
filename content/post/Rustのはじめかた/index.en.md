@@ -1,11 +1,12 @@
 ---
-title: 'Getting Started with Rust'
+title: 'Rust Language Introduction: Getting Started from Features to Installation and Hello World'
 slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programming"]
+description: 'Explains how to get started with Rust, a fast and memory-safe programming language, for beginners. Comprehensively introduces everything from the language''s features and installation methods to the execution steps of the first program, Hello World, and recommended Japanese documentation.'
 ---
 # Introduction
 Rust is a relatively new programming language that allows you to write fast and memory-efficient modules using modern syntax.

@@ -1,11 +1,12 @@
 ---
-title: 'Windows Shortcuts and Tips'
+title: '[Windows 11/10] A Collection of Handy Shortcut Keys and Tips to Dramatically Boost Work Efficiency'
 slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Tips", "Shortcuts"]
 draft: false
 image: "img.webp"
 categories: ["PC / Gadgets"]
+description: 'Carefully selected handy shortcut keys and tips to boost your work efficiency in Windows 11 and 10. A collection of essential techniques useful for everyday use, from beginners to advanced users, covering window operations, desktop display, voice typing, and screen capture.'
 ---
 This is a collection of useful little tips and shortcuts I use regularly on Windows. I hope this will be helpful for beginners just starting to use Windows.
 This assumes Windows 11, but many of them should work on Windows 10 as well.

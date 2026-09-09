@@ -1,5 +1,5 @@
 ---
-title: "【Panduan Lengkap】Segala Hal Tentang 'Eksperimen Celah Ganda' yang Paling Indah dalam Fisika: Dunia Kuantum dan Hakikat Realitas"
+title: '[Cakupan Lengkap] Penjelasan Menyeluruh dan Mudah Dipahami tentang ''Eksperimen Celah Ganda'', Misteri Terbesar Mekanika Kuantum'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Fisika", "Mekanika Kuantum", "Eksperimen celah ganda", "Persamaan Schrödinger"]
@@ -7,6 +7,7 @@ categories: ["Fisika & Sains"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: 'Penjelasan menyeluruh tentang ''eksperimen celah ganda'' yang disebut sebagai eksperimen terindah dalam sejarah fisika. Kami merangkum dengan mudah bagi pemula tentang keanehan dunia mikro di mana akal sehat dunia makro tidak berlaku, serta misteri mendalam dari mekanika kuantum.'
 ---
 ## 1. [Pengantar] Apa Itu Eksperimen Celah Ganda?
 

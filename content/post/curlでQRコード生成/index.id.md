@@ -1,11 +1,12 @@
 ---
-title: "Membuat Kode QR dengan curl"
+title: 'Cara Membuat Kode QR di Command Prompt Menggunakan Perintah curl'
 slug: "membuat-kode-qr-dengan-curl"
 date: 2024-04-16T00:42:27+09:00
 tags: ["Kode QR", "curl", "command prompt"]
 draft: false
 image: "img.webp"
 categories: ["IT・Teknologi"]
+description: 'Memperkenalkan cara membuat dan menampilkan kode QR berbasis teks di Command Prompt Windows menggunakan perintah curl. Karena menggunakan API eksternal (qrenco.de), kami juga menjelaskan poin-poin penting mengenai penanganan informasi pribadi.'
 ---
 
 ## Membuat Kode QR dengan curl

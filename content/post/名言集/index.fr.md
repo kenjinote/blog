@@ -1,11 +1,12 @@
 ---
-title: 'Citations'
+title: 'Collection de citations pour enrichir la vie : Des mots touchants de personnalités historiques et célèbres'
 slug: "citations"
 date: 2022-10-15T17:00:43+09:00
 tags: ["citations"]
 draft: false
 image: "img.webp"
 categories: ["IT et Technologie"]
+description: 'Nous présentons une sélection de citations inspirantes de grands personnages historiques et célébrités comme Steve Jobs et Lao Tseu. À travers ces mots qui servent de leçons de vie ou ces maximes utiles pour booster la motivation, apprenez de la sagesse des anciens et trouvez des indices pour enrichir votre propre vie et votre quotidien.'
 ---
 
 > Les sots apprennent de l'expérience, les sages apprennent de l'histoire (Otto von Bismarck)

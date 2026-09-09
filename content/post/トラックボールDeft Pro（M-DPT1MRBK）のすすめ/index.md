@@ -1,11 +1,12 @@
 ---
-title: 'トラックボールDeft Pro（M-DPT1MRBK）のすすめ'
+title: 'エレコムDeft Proレビュー！8ボタン搭載トラックボールマウスのメリット・デメリット'
 slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["トラックボール", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'エレコムの中型トラックボールマウス「Deft Pro（M-DPT1MRBK）」を1週間使用したレビュー。手首の負担軽減や豊富なボタン割り当てなどのメリットから、掃除の手間や操作感の慣れといったデメリットまで解説します。'
 ---
 
 # エレコム トラックボール Deft Pro M-DPT1MRBK について

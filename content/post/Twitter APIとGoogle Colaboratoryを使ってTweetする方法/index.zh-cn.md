@@ -1,11 +1,12 @@
 ---
-title: '使用 Twitter API 和 Google Colaboratory 发送推文的方法'
+title: '使用Twitter API与Google Colaboratory实现自动发推的方法【Python】'
 slug: "Twitter APIとGoogle Colaboratoryを使ってTweetする方法"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
 categories: ["编程"]
+description: '讲解利用Twitter API和Google Colaboratory，通过Python（tweepy）执行自动发推的步骤。从API密钥的设置到实际代码，复制粘贴即可轻松尝试。'
 ---
 
 # 所需条件

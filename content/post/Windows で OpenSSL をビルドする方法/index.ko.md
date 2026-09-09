@@ -3,13 +3,14 @@
 
 
 
-title: "'Windows에서 OpenSSL 빌드하는 방법'"
+title: 'Windows 환경에서 OpenSSL을 빌드 및 설치하는 절차와 환경 구축 방법'
 slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "빌드", "C++"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: 'Windows 환경에서 C언어용 암호화 통신 라이브러리 ''OpenSSL''을 빌드하는 방법을 해설합니다. Perl, NASM, Visual Studio 2022 등 필요한 도구의 준비부터 실제 소스 코드의 빌드 절차까지 자세히 소개합니다.'
 ---
 
 

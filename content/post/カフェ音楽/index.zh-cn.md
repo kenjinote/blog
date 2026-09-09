@@ -1,11 +1,12 @@
 ---
-title: '咖啡馆音乐'
+title: '能专注工作与学习！时尚咖啡馆音乐与BGM推荐集'
 slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00
 tags: ["咖啡馆", "音乐"]
 draft: false
 image: "images/img.webp"
 categories: ["生活方式・杂记"]
+description: '整理了非常适合编程、学习和远程办公时作为背景音乐的咖啡馆音乐。介绍从节奏轻快的Electro Swing，到能让人放松专注的LoFi Hip Hop和爵士乐等推荐工作BGM。'
 ---
 **快节奏**
 

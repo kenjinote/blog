@@ -1,11 +1,12 @@
 ---
-title: "Über die Pflichtfeld-Markierung in Eingabeformularen"
+title: 'Optimierung der Pflichtfeld-Markierungen in Eingabeformularen | Best Practices aus internationalen UI-Richtlinien'
 slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Eingabeformular", "Webentwicklung", "UX"]
 draft: false
 image: "img.webp"
 categories: ["Blog-Betrieb"]
+description: 'Wir erklären Best Practices für die Kennzeichnung von „Pflichtfeldern“ in Webformularen auf der Grundlage internationaler UI-Richtlinien. Wir haben die korrekte Verwendung von Sternchen (*), die klare Angabe von „Required“ und die Nutzung von ARIA-Attributen zur Verbesserung der Barrierefreiheit zusammengefasst.'
 ---
 
 Wir haben Informationen über die "Pflicht"-Markierung in Benutzeroberflächen (Formularen) im Ausland zusammen mit UI-Richtlinienmaterialien zusammengefasst.

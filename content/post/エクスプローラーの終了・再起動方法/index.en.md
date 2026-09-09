@@ -1,11 +1,12 @@
 ---
-title: 'How to exit and restart Explorer'
+title: 'A Summary of How to Close and Restart Windows Explorer'
 slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["Explorer"]
 draft: false
 image: "img_2.webp"
 categories: ["IT & Technology"]
+description: 'Explains various methods to close and restart Explorer (explorer.exe) in Windows. Clearly introduces procedures using the Taskbar, Task Manager, and Command Prompt.'
 ---
 
 ## How to exit from the taskbar right-click menu

@@ -1,11 +1,12 @@
 ---
-title: "Kutipan Albert Einstein"
+title: 'Jangan Menyerah pada Kritik! Tips Hidup Kuat Belajar dari Kutipan Einstein'
 slug: "Kutipan-Albert-Einstein"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Albert Einstein", "Kutipan", "Filsafat", "Sains", "Fisika"]
 draft: false
 image: "Solvay_conference_1927.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Memperkenalkan kutipan mendalam dari Einstein. Menjelaskan ajarannya agar tidak terombang-ambing oleh penilaian dan kritik orang lain, serta tetap percaya diri dan tangguh. Penuh dengan tips yang bisa diterapkan di tempat kerja, media sosial, dan kehidupan sehari-hari di zaman modern.'
 ---
 
 Halo semuanya!

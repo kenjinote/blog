@@ -1,11 +1,12 @@
 ---
-title: 'Visual Studio Shortcut List'
+title: 'List of Useful Shortcut Keys for Visual Studio [Boost Work Efficiency]'
 slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Shortcuts" ]
 draft: false
 image: "img.webp"
 categories: ["Tools & Development Environment"]
+description: 'Summarized a list of useful shortcut keys for Visual Studio (VS2022) that dramatically improve development efficiency. Carefully introduces essential shortcuts frequently used during programming, such as debugging, building, and bookmark operations.'
 ---
 
 # Visual Studio Shortcut List

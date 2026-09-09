@@ -7,13 +7,14 @@
 
 
 
-title: "La barrera del desarrollo de IA"
+title: 'El muro del desarrollo de IA era alto... La razón y la realidad de por qué "crear una aplicación es un infierno a partir del 80%"'
 slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "Desarrollo", "Barrera", "Poema"]
 draft: false
 image: "img_1.webp"
 categories: ["IA y Tecnología"]
+description: '¿Es cierta la era en la que "puedes crear fácilmente una aplicación con solo pedírselo a una IA"? Incluso si llegar al 80% es fácil con No-Code y código generado por IA, después te espera un infierno de ajustes finales y corrección de errores que hacen llorar a los humanos. Hablaremos sin tapujos sobre las verdaderas trampas del desarrollo de IA y la naturaleza del "muro" al que nos enfrentamos.'
 ---
 
 

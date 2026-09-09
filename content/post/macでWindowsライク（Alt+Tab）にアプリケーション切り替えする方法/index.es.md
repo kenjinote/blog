@@ -2,13 +2,14 @@
 
 
 
-title: "Cómo cambiar de aplicación en mac al estilo Windows (Alt+Tab)"
+title: 'Cómo configurar un cambio de aplicaciones al estilo Windows (Alt+Tab) en Mac'
 slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "atajos de teclado", "cambiar de aplicación"]
 draft:
 image: "img.webp"
 categories: ["PC y gadgets"]
+description: 'Explicamos paso a paso cómo instalar y configurar una práctica aplicación de terceros que permite cambiar entre aplicaciones al estilo de "Alt+Tab" de Windows, algo que es difícil de conseguir con las funciones estándar de Mac.'
 ---
 
 

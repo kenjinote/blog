@@ -1,11 +1,12 @@
 ---
-title: "如何使用 Salesforce SOQL 獲取每天建立的記錄數"
+title: 'Salesforce：使用 SOQL 取得每日記錄建立數量的方法'
 slug: "如何使用 Salesforce SOQL 獲取每天建立的記錄數"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "日期", "聚合"]
 draft: false
 image: "img.webp"
 categories: ["IT與技術"]
+description: '說明如何從 Salesforce 的開發人員主控台使用 SOQL，彙整並取得客戶等每日記錄建立數量的具體方法與查詢語法。您將了解利用 GROUP BY 子句進行便利數據分析的步驟。'
 ---
 
 # 如何使用 Salesforce SOQL 獲取每天建立的記錄數

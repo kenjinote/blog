@@ -1,11 +1,12 @@
 ---
-title: '在mac上安装CocoaPods的方法'
+title: '在Mac上安装CocoaPods的方法及错误处理'
 slug: "macにCocoaPodsをインストールする方法"
 date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]
 draft: false
 image: "img_1.webp"
 categories: ["电脑・数码"]
+description: '详细讲解在Mac环境中使用终端安装CocoaPods的步骤。同时介绍执行“sudo gem install cocoapods”时发生错误的解决方法，以及使用Homebrew的安装命令。'
 ---
 
 # 在终端中安装

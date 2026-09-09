@@ -1,11 +1,12 @@
 ---
-title: "Langkah-langkah Menjalankan PowerShell dari C++ melalui C++/CLI DLL"
+title: '[VS2022] Menjalankan PowerShell dari C++! Langkah Integrasi Melalui C++/CLI DLL'
 slug: "Langkah-langkah Menjalankan PowerShell dari C++ melalui C++ CLI DLL"
 date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Mencari cara untuk memanggil dan menjalankan skrip PowerShell dari C++ native? Kami menjelaskan secara menyeluruh langkah implementasi konkret untuk membuat wrapper DLL dengan C++/CLI di lingkungan Visual Studio 2022 dan mewujudkan integrasi sistem yang lancar.'
 ---
 
 # 🎯 Langkah-langkah Menjalankan PowerShell dari C++ melalui C++/CLI DLL (Visual Studio 2022 / C++)

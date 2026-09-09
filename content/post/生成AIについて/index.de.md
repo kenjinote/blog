@@ -1,11 +1,12 @@
 ---
-title: "Über generative KI"
+title: 'Lernen über Generative KI! Eine Zusammenfassung empfohlener Vorlesungsvideos von Professoren der Universität Tokio'
 slug: "ueber-generative-ki"
 date: 2024-04-16T02:13:56+09:00
 tags: ["Generative KI", "YouTube", "Vorlesung"]
 draft: false
 image: "img.webp"
 categories: ["KI und Technologie"]
+description: 'Dies ist eine Zusammenfassung von Vorlesungsvideos von Professoren der Universität Tokio, in denen Sie tiefgreifend über die viel diskutierte generative KI lernen können. Wir stellen leicht verständliche und nützliche Erklärungsvideos vor, die von führenden Persönlichkeiten der KI-Forschung wie den Professoren Masayuki Nakao, Kuniyoshi Sakai und Yutaka Matsuo in den Jahren 2023 bis 2024 gehalten wurden.'
 ---
 
 ## Vorlesungsvideos über generative KI

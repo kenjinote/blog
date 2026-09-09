@@ -1,11 +1,12 @@
 ---
-title: "什麼是 i18n？"
+title: 'i18n（國際化）是什麼？在軟體開發中的意義與對應項目'
 slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "術語"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '淺顯易懂地解說在軟體開發中常聽到的「i18n（Internationalization：國際化）」的意義與字源。為您整理在將應用程式或系統進行全球化應對時，應考慮的主要項目，如文字編碼、日期時間格式、貨幣資訊等。'
 ---
 
 # 什麼是 i18n？

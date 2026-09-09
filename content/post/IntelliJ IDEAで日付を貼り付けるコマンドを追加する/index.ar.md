@@ -1,11 +1,12 @@
 ---
-title: "إضافة أمر لإدراج التاريخ في IntelliJ IDEA"
+title: 'كيفية إنشاء اختصار لإدراج التاريخ الحالي في IntelliJ IDEA'
 slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["IT・テクノロジー"]
+description: 'نقدم شرحًا مفصلاً خطوة بخطوة لكيفية إعداد ''Live Template'' لإدراج التاريخ والوقت الحاليين تلقائيًا، وهو أمر مفيد عند كتابة المدونات وغيرها في بيئة IntelliJ IDEA. دعنا نوفر عناء الكتابة اليدوية في كل مرة.'
 ---
 # مقدمة
 عند كتابة هذه المدونة، أستخدم IntelliJ IDEA. إنه مناسب لأن توافقه مع Git جيد ويعرض معاينة Markdown.

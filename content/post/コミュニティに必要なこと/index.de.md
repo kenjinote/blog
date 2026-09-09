@@ -1,11 +1,12 @@
 ---
-title: "Was eine Community braucht"
+title: 'Was braucht eine gute Community? Management-Tipps aus den Scratch-Richtlinien'
 slug: "was-eine-community-braucht"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Community", "Verschiedenes"]
 draft: false
 image: "img.webp"
 categories: ["IT・Technologie"]
+description: 'Wir betrachten die Elemente, die für den Betrieb einer gesunden und komfortablen Community erforderlich sind, anhand der ausgefeilten Community-Richtlinien der Programmier-Lernseite „Scratch“. Wir stellen wichtige Perspektiven vor, die auf jede Versammlung anwendbar sind, wie z. B. Respekt gegenüber anderen und die Gewährleistung der Sicherheit.'
 ---
 # Was eine Community braucht
 

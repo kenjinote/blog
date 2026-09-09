@@ -1,11 +1,12 @@
 ---
-title: 'Colección de Citas'
+title: 'Colección de citas que enriquecen la vida: Palabras inspiradoras de figuras históricas y celebridades'
 slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["名言集"]
 draft: false
 image: "img.webp"
 categories: ["IT・Tecnología"]
+description: 'Presentamos una cuidada selección de citas inspiradoras de personajes históricos y celebridades como Steve Jobs y Lao-Tse. Aprende de la sabiduría de tus predecesores a través de palabras que sirven de lección de vida o como máximas para elevar la motivación, y encuentra consejos para enriquecer tu vida y tu día a día.'
 ---
 
 > Los tontos aprenden de la experiencia, los sabios de la historia (Otto von Bismarck)

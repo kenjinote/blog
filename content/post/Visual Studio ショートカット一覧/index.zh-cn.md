@@ -1,11 +1,12 @@
 ---
-title: 'Visual Studio 快捷键一览'
+title: 'Visual Studio实用快捷键大全【提升工作效率】'
 slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "快捷键" ]
 draft: false
 image: "img.webp"
 categories: ["工具与开发环境"]
+description: '为您整理了能大幅提升开发效率的Visual Studio（VS2022）实用快捷键大全。精选了在编程时经常使用的必备快捷键，涵盖调试、编译、书签操作等。'
 ---
 
 # Visual Studio 快捷键一览

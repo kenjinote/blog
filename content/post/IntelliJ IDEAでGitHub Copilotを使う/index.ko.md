@@ -3,13 +3,14 @@
 
 
 
-title: "IntelliJ IDEA에서 GitHub Copilot 사용하기"
+title: 'IntelliJ IDEA에 GitHub Copilot을 도입 및 활성화하는 방법'
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["도구 및 개발 환경"]
+description: 'IntelliJ IDEA에서 GitHub Copilot을 사용하기 위한 구체적인 설치 방법과 활성화 절차를 이미지와 함께 알기 쉽게 해설합니다. AI를 활용하여 개발 효율을 획기적으로 향상시켜 보세요.'
 ---
 
 

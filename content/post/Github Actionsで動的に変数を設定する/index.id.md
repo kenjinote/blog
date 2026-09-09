@@ -1,11 +1,12 @@
 ---
-title: "Mengatur variabel secara dinamis di Github Actions"
+title: 'Cara Mengatur Variabel Lingkungan secara Dinamis di GitHub Actions [Lingkungan Windows]'
 slug: "Mengatur variabel secara dinamis di Github Actions"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["ツール・開発環境"]
+description: 'Menjelaskan cara mengatur variabel lingkungan secara dinamis di dalam alur kerja GitHub Actions. Mengambil contoh lingkungan Windows, memperkenalkan langkah menulis ke ''$env:GITHUB_ENV'' dan contoh nyata mereferensikan variabel di langkah berikutnya untuk digunakan dalam pembuatan rilis.'
 ---
 
 Untuk mengatur variabel secara dinamis di Github Actions, Anda dapat mencapainya dengan menulis tambahan ke $env:GITHUB_ENV seperti di bawah ini.

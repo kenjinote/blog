@@ -1,11 +1,11 @@
 ---
-title: "Como resolver quando você não consegue cancelar o Google One (Gemini)"
+title: 'Não Consegue Cancelar o Google One (Gemini)? Saiba Como Desativar Corretamente'
 slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "cancelamento", "solução"]
 draft: false
 image: "img.webp"
-description: "Serei cobrado quando o teste gratuito do Gemini terminar? Resumo de como cancelar"
+description: 'Explicamos o passo a passo adequado para cancelar a associação ao Google One de 2.900 ienes/mês e evitar renovações automáticas após o fim do teste gratuito de 1 mês do Gemini. Se estiver com problemas para cancelar, consulte as instruções deste artigo.'
 categories: ["Programação"]
 ---
 

@@ -1,11 +1,12 @@
 ---
-title: 'Goをインストールする方法'
+title: 'Go言語（Golang）のインストール手順と初めてのプログラム実行方法'
 slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","インストール"]
 draft: false
 image: "images/cover.webp"
 categories: ["プログラミング"]
+description: 'Googleが開発したプログラミング言語「Go（Golang）」のインストール方法を初心者向けに解説します。インストーラの取得から、Hello Worldプログラムの作成、コンパイル、実行手順まで、初めてのGo言語入門に最適です。'
 ---
 # はじめに
 Goは、Googleが2009年に公開した比較的新しいプログラミング言語です。

@@ -3,7 +3,7 @@
 
 
 
-title: "'hugo에서 KaTeX(LaTeX 스타일 수식 표시) 활성화하는 방법'"
+title: 'Hugo에 KaTeX를 도입하여 LaTeX 스타일의 아름다운 수식을 표시하는 방법'
 slug: "hugoでKaTeX(LaTeX風数式表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "수식", "수학", "hugo"]
@@ -11,6 +11,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["수학・암호・양자"]
+description: '고속 수식 렌더링 라이브러리 ''KaTeX''를 정적 사이트 생성기 Hugo에 도입하는 절차를 해설합니다. math.html 작성부터 헤더에 불러오기 설정까지, LaTeX 스타일의 아름다운 수식 표시를 블로그에서 활성화하는 방법을 쉽게 알 수 있습니다.'
 ---
 
 

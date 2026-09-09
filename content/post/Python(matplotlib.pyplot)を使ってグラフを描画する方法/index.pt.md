@@ -1,11 +1,12 @@
 ---
-title: "Como desenhar gráficos usando Python (matplotlib.pyplot)"
+title: 'Como desenhar gráficos usando Python e matplotlib [Compatível com Google Colab]'
 slug: "Como desenhar gráficos usando Python (matplotlib.pyplot)"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Gráficos", "Matemática", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["Matemática・Criptografia・Quântica"]
+description: 'Explicamos para iniciantes os passos para desenhar e exibir facilmente gráficos de ondas senoidais e cosseno usando a biblioteca matplotlib.pyplot do Python, através do Google Colaboratory. Você pode testar imediatamente sem a necessidade de configurar o ambiente.'
 ---
 
 ![img_1.png](img_1.webp)

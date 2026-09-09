@@ -1,11 +1,12 @@
 ---
-title: "Ekstensi Visual Studio Code yang Direkomendasikan"
+title: 'Ringkasan Ekstensi VSCode yang Direkomendasikan! Daftar Plugin yang Secara Dramatis Meningkatkan Efisiensi Pengembangan'
 slug: "Ekstensi Visual Studio Code yang Direkomendasikan"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Ekstensi", "Add-ons"]
 draft: false
 image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
+description: 'Memperkenalkan daftar ekstensi yang direkomendasikan yang membuat Visual Studio Code (VSCode) menjadi lebih nyaman. Kami telah menyeleksi plugin penting yang meningkatkan efisiensi pengembangan, seperti manajemen kontainer, manajemen kode Git, dan pelengkapan kode AI dengan Copilot.'
 ---
 
 # Daftar Ekstensi Visual Studio Code yang Direkomendasikan

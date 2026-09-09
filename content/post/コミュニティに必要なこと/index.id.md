@@ -1,11 +1,12 @@
 ---
-title: "Apa yang Dibutuhkan Komunitas"
+title: 'Apa yang Dibutuhkan untuk Komunitas yang Baik? Tips Manajemen Belajar dari Pedoman Scratch'
 slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Komunitas", "Lain-lain"]
 draft: false
 image: "img.webp"
 categories: ["TI dan Teknologi"]
+description: 'Menyelidiki elemen-elemen yang diperlukan untuk menjalankan komunitas yang sehat dan nyaman berdasarkan pedoman komunitas canggih dari situs belajar pemrograman ''Scratch''. Memperkenalkan perspektif penting yang berlaku di setiap perkumpulan, seperti rasa hormat kepada orang lain dan memastikan keamanan.'
 ---
 # Apa yang Dibutuhkan Komunitas
 

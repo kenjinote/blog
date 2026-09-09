@@ -1,11 +1,12 @@
 ---
-title: 'A Simple Explanation of Kepler''s Conjecture'
+title: 'A 400-Year Mystery! What is the Kepler Conjecture? Explaining the Romance of Mathematics Learned from Packing Watermelons'
 slug: "ケプラー予想をわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Mathematics", "Kepler's Conjecture", "Explanation"]
 draft: false
 image: "img.webp"
 categories: ["Math/Cryptography/Quantum"]
+description: 'An easy-to-understand explanation of the ''Kepler Conjecture'', a difficult mathematical problem born from the familiar question: ''What is the tightest way to pack watermelons?'' Let''s learn together about the romance and fascination of this sphere-packing problem proposed by genius astronomer Kepler, which went unproven for over 400 years.'
 ---
 
 # A Simple Explanation of Kepler's Conjecture! ~The Best Way to Pack Watermelons Tightly~

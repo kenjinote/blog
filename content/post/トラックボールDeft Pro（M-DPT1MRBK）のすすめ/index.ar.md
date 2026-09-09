@@ -1,11 +1,12 @@
 ---
-title: "توصية باستخدام كرة التتبع Deft Pro (M-DPT1MRBK)"
+title: 'مراجعة Elecom Deft Pro! مزايا وعيوب ماوس كرة التتبع المزود بـ 8 أزرار'
 slug: "توصية-باستخدام-كرة-التتبع-deft-pro-m-dpt1mrbk"
 date: 2023-05-02T23:28:33+09:00
 tags: ["كرة التتبع", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
 categories: ["تكنولوجيا المعلومات"]
+description: 'مراجعة بعد استخدام ماوس كرة التتبع متوسط الحجم "Deft Pro (M-DPT1MRBK)" من شركة Elecom لمدة أسبوع. نشرح من المزايا مثل تقليل الضغط على المعصم وتعيينات الأزرار الغنية، إلى العيوب مثل متاعب التنظيف والتعود على الشعور التشغيلي.'
 ---
 
 # حول كرة التتبع Deft Pro M-DPT1MRBK من Elecom

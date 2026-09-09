@@ -1,11 +1,12 @@
 ---
-title: "Einfache Remoteverbindung mit TeamViewer"
+title: '【Für Anfänger】Wie man ganz einfach eine Remote-Desktop-Verbindung mit TeamViewer herstellt'
 slug: "Einfache Remoteverbindung mit TeamViewer"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Befehl", "Remoteverbindung"]
 draft: false
 image: "img.webp"
 categories: ["IT・Technologie"]
+description: 'Erklärt, wie man mit TeamViewer ganz einfach eine Remote-Desktop-Verbindung herstellt. Stellt auch praktische Tricks vor, wie die Angabe von ID und Passwort über die Befehlszeile, um die Verbindung mit Verknüpfungen zu automatisieren und zu optimieren.'
 ---
 
 # Einfache Remoteverbindung mit TeamViewer

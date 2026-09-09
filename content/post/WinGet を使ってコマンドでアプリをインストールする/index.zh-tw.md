@@ -1,11 +1,12 @@
 ---
-title: "使用 WinGet 透過命令列安裝應用程式"
+title: '使用 Windows 11 的 WinGet 指令輕鬆安裝與管理應用程式的方法'
 slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["工具與開發環境"]
+description: '解說如何使用 Windows 11 的套件管理員「WinGet」，透過指令安裝應用程式。介紹在命令列中快速導入與管理 Chrome、VSCode、Slack 等主要軟體的步驟。'
 ---
 ## 先決條件
 必須為 Windows 11

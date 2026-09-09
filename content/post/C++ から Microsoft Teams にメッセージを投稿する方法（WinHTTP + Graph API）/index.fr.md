@@ -1,11 +1,12 @@
 ---
-title: "Comment publier un message dans Microsoft Teams depuis C++ (WinHTTP + Graph API)"
+title: '[Automatisation] Publication de messages sur Teams depuis C++ ! Étapes d''implémentation de Graph API et WinHTTP'
 slug: "comment-publier-un-message-dans-microsoft-teams-depuis-c-winhttp-graph-api"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
 categories: ["Outils et Environnement de Développement"]
+description: 'Incontournable pour ceux qui souhaitent implémenter la publication automatique de messages sur Microsoft Teams depuis C++ ! Nous expliquons étape par étape et de manière claire des exemples concrets de code C++ utilisant WinHTTP et Graph API, ainsi que les procédures obligatoires d''enregistrement d''application Azure et d''authentification API.'
 ---
 
 # Comment publier un message dans Microsoft Teams depuis C++ (WinHTTP + Graph API)

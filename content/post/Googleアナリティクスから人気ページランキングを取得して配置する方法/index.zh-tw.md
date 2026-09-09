@@ -1,11 +1,12 @@
 ---
-title: "如何從 Google Analytics 取得並配置熱門頁面排行榜"
+title: '使用Ranklet顯示Google Analytics熱門文章排行榜的方法'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["部落格營運"]
+description: '為您解說能與Google Analytics整合，輕鬆自動顯示網站熱門文章排行榜的服務「Ranklet」的使用方法。以HUGO部落格為例，介紹設定步驟與HTML/CSS範本的客製化方法。'
 ---
 
 ## 前言

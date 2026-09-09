@@ -1,11 +1,12 @@
 ---
-title: "Perubahan Tata Letak Gambar PaperMod"
+title: 'Cara Mengkustomisasi Ukuran dan Penempatan Gambar pada Tema Hugo PaperMod dengan CSS'
 slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["Manajemen Blog"]
+description: 'Menjelaskan cara mengkustomisasi ukuran dan penempatan gambar dalam artikel di tema PaperMod di Hugo. Kami memperkenalkan prosedur pengeditan spesifik CSS (blank.css dan post-entry.css) untuk membuat gambar membungkus teks atau diperkecil dari default lebar 100% dan perataan tengah.'
 ---
 Tata letak default menempatkan gambar di tengah dengan lebar 100%, tetapi kadang-kadang saya merasa itu agak terlalu besar, jadi saya mencoba membungkus gambar di bawah judul dan mengubah lebarnya menjadi sekitar 150px.
 

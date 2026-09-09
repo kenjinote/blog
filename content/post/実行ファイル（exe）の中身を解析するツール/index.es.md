@@ -1,11 +1,12 @@
 ---
-title: "Herramientas para analizar el contenido de archivos ejecutables (exe)"
+title: '4 herramientas útiles para analizar y extraer el contenido de archivos ejecutables (exe) en Windows'
 slug: "herramientas-para-analizar-el-contenido-de-archivos-ejecutables-exe"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "archivo ejecutable", "análisis"]
 draft: false
 image: "img_1.webp"
 categories: ["PC y Gadgets"]
+description: 'Te presentamos herramientas recomendadas que pueden analizar y extraer el contenido de los archivos ejecutables (exe) de Windows. Explicamos de forma sencilla cómo comprobar la estructura del formato PE, extraer recursos y editar archivos binarios utilizando programas como 7-Zip y Resource Hacker.'
 ---
 
 # Qué es un archivo ejecutable (exe)

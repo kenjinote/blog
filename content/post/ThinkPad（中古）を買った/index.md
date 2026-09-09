@@ -1,11 +1,12 @@
 ---
-title: 'ThinkPad（中古）を買った'
+title: '中古のThinkPad T470sを購入！スペックや使い勝手、不満点を本音レビュー'
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "ノートパソコン"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'リモート作業用に中古のThinkPad T470sを購入したレビュー記事です。Core i7・RAM 24GB・WQHD液晶のスペックや状態、キーボード配置などの不満点も含め、実際の使用感を紹介します。'
 ---
 
 # ノートPC ThinkPad（中古）を買った

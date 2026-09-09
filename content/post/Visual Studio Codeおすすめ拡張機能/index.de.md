@@ -1,11 +1,12 @@
 ---
-title: "Empfohlene Erweiterungen für Visual Studio Code"
+title: 'Zusammenfassung empfohlener VSCode-Erweiterungen! Eine Liste von Plugins, die die Entwicklungseffizienz drastisch steigern'
 slug: "Visual Studio Codeおすすめ拡張機能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Erweiterungen", "Erweiterung"]
 draft: false
 image: "img.webp"
 categories: ["Werkzeuge und Entwicklungsumgebung"]
+description: 'Stellt empfohlene Erweiterungen vor, die Visual Studio Code (VSCode) noch komfortabler machen. Sorgfältig ausgewählte, unverzichtbare Plugins, die die Entwicklungseffizienz steigern, wie Containerverwaltung, Git-Code-Verwaltung und KI-Code-Vervollständigung durch Copilot.'
 ---
 
 # Liste der empfohlenen Erweiterungen für Visual Studio Code

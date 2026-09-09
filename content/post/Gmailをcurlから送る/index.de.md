@@ -1,11 +1,12 @@
 ---
-title: "Gmail mit curl senden"
+title: 'Wie man E-Mails über Gmail mit dem curl-Befehl sendet'
 slug: "gmail-mit-curl-senden"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["KI & Technologie"]
+description: 'Wir erklären, wie man E-Mails über ein Gmail-Konto mit dem Kommandozeilentool „curl“ sendet. Wir stellen detailliert die Schritte zum Abrufen eines Google-App-Passworts bis zur Angabe von curl-Optionen sowie zur Erstellung der E-Mail-Textdatei und zum Senden-Befehl vor.'
 ---
 
 # Gmail mit curl senden

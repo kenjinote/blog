@@ -1,11 +1,12 @@
 ---
-title: '文件资源管理器的关闭与重启方法'
+title: 'Windows资源管理器的结束与重启方法汇总'
 slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["文件资源管理器"]
 draft: false
 image: "img_2.webp"
 categories: ["IT・科技"]
+description: '讲解在Windows中结束和重启资源管理器（explorer.exe）的多种方法。通俗易懂地介绍使用任务栏、任务管理器、命令提示符的步骤。'
 ---
 
 ## 从任务栏右键菜单关闭的方法

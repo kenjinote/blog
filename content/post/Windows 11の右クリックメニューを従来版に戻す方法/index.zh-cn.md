@@ -1,11 +1,12 @@
 ---
-title: '将Windows 11的右键菜单恢复为经典版的方法'
+title: '将Windows 11右键菜单恢复为传统版（旧规范）的方法【注册表设置】'
 slug: "Windows 11の右クリックメニューを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "资源管理器"]
 draft: false
 image: "img.webp"
 categories: ["电脑・数码"]
+description: '讲解如何将Windows 11的新版右键菜单（上下文菜单）恢复为Windows 10的传统版。介绍使用注册表编辑器更改设置、使旧规范菜单始终显示的简单步骤。'
 ---
 
 # 将Windows 11的右键菜单恢复为经典版的方法

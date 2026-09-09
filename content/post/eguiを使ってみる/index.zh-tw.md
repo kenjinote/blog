@@ -1,11 +1,12 @@
 ---
-title: "試用 egui"
+title: 'Rust輕量GUI函式庫「egui」的入門與範例執行步驟'
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "GUIライブラリ"]
 draft: false
 image: "demo.gif"
 categories: ["IT・テクノロジー"]
+description: '介紹可在Rust中輕鬆使用的GUI函式庫「egui」之基本用法。為您解說從GitHub複製範本(clone)，到使用cargo run指令啟動並執行範例應用程式的簡單步驟。'
 ---
 
 # 什麼是 egui

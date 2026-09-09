@@ -7,13 +7,14 @@
 
 
 
-title: "'curl로 Gmail 보내기'"
+title: 'curl 명령을 사용하여 Gmail에서 이메일을 보내는 방법'
 slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["AI・기술"]
+description: '명령줄 도구인 ''curl''을 사용하여 Gmail 계정을 통해 이메일을 보내는 방법을 해설합니다. Google의 앱 비밀번호 취득 절차부터 curl의 옵션 지정이나 이메일 본문 파일 작성 및 전송 명령까지 자세히 소개합니다.'
 ---
 
 

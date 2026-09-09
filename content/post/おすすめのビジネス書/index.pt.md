@@ -1,11 +1,12 @@
 ---
-title: "Livros de Negócios Recomendados"
+title: 'Mude de vida! Resumo de obras-primas e livros de negócios recomendados que você deve ler'
 slug: "livros-de-negocios-recomendados"
 date: 2023-03-19T18:13:14+09:00
 tags: ["Livros de Negócios", "Livros"]
 draft: false
 image: "img.webp"
 categories: ["Estilo de Vida e Miscelânea"]
+description: 'Apresentamos uma seleção de livros de negócios e obras-primas recomendadas que são úteis para autodesenvolvimento e aprimoramento de habilidades que os profissionais de negócios devem ler pelo menos uma vez, como ''Como Fazer Amigos e Influenciar Pessoas'', ''A Coragem de Não Agradar'', ''The 100-Year Life'' e ''Os 7 Hábitos das Pessoas Altamente Eficazes''.'
 ---
 
 ## Como Fazer Amigos e Influenciar Pessoas

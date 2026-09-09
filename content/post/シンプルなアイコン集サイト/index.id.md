@@ -1,11 +1,12 @@
 ---
-title: "Situs Koleksi Ikon Sederhana"
+title: 'Bisa Dipakai Gratis! 7 Situs Bahan Ikon Gratis Sederhana yang Direkomendasikan'
 slug: "situs-koleksi-ikon-sederhana"
 date: 2022-09-07T16:46:56+09:00
 tags: ["Ikon","Desain"]
 draft: false
 image: "img_2.webp"
 categories: ["TI dan Teknologi"]
+description: 'Rekomendasi khusus situs-situs ikon gratis berdesain sederhana dan mudah digunakan yang bermanfaat untuk desain Web serta pembuatan presentasi. Berisi banyak situs praktis yang bisa digunakan untuk kepentingan komersial, seperti Google Material Icons dan GitHub Octicons.'
 ---
 
 ## Google Material Symbols and Icons

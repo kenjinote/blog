@@ -1,11 +1,12 @@
 ---
-title: "Como criar um atalho para bloquear o computador"
+title: 'Bloqueie o seu PC com Windows em 1 segundo! Como criar e usar atalhos úteis'
 slug: "como-criar-um-atalho-para-bloquear-o-computador"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Bloquear Computador", "Atalho"]
 draft: false
 image: "img.webp"
 categories: ["PC e Gadgets"]
+description: 'Explicamos com imagens como criar atalhos que podem bloquear o seu PC Windows com apenas um clique. Também apresentamos o método de bloqueio instantâneo usando as teclas Win+L, o que é útil como medida de segurança ao se afastar da mesa.'
 ---
 
 Aqui está como criar um atalho para bloquear o computador.

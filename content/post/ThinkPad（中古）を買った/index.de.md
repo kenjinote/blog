@@ -1,11 +1,12 @@
 ---
-title: "Ich habe ein ThinkPad (Gebraucht) gekauft"
+title: 'Ein gebrauchtes ThinkPad T470s gekauft! Eine ehrliche Bewertung von Spezifikationen, Benutzerfreundlichkeit und Kritikpunkten'
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Laptop"]
 draft: false
 image: "img.webp"
 categories: ["IT・Technologie"]
+description: 'Ein Testbericht über den Kauf eines gebrauchten ThinkPad T470s für Remote-Arbeit. Stellt die tatsächliche Benutzererfahrung vor, einschließlich der Spezifikationen und des Zustands (Core i7, 24 GB RAM, WQHD-Display) sowie Kritikpunkte wie das Tastaturlayout.'
 ---
 
 # Ich habe einen ThinkPad Laptop (Gebraucht) gekauft

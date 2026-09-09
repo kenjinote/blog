@@ -1,11 +1,12 @@
 ---
-title: 'Einstein''s Quote'
+title: 'Don''t Give in to Criticism! Tips for Living Strong Learned from Einstein''s Quotes'
 slug: "アインシュタインの名言"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Quote", "Philosophy", "Science", "Physics"]
 draft: false
 image: "Solvay_conference_1927.webp"
 categories: ["Math/Crypto/Quantum"]
+description: 'Introduces profound quotes by Einstein. Explains his teachings on believing in oneself and continuing to stand strong without being swayed by others'' evaluations or criticism. Packed with hints that can be applied to modern daily life, such as at the workplace and on SNS.'
 ---
 
 Hello!

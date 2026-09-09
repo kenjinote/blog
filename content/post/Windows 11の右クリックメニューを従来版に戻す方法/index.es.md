@@ -6,13 +6,14 @@
 
 
 
-title: "Cómo restaurar el menú contextual clásico en Windows 11"
+title: 'Cómo restaurar el menú contextual de Windows 11 a la versión clásica (especificación antigua) [Configuración del registro]'
 slug: "Windows 11の右クリックメニューを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Explorador de archivos"]
 draft: false
 image: "img.webp"
 categories: ["PC y Gadgets"]
+description: 'Explicamos cómo restaurar el nuevo menú contextual de Windows 11 a la versión clásica de Windows 10. Presentamos un procedimiento sencillo para que siempre se muestre el menú de la antigua especificación modificando la configuración con el Editor del Registro.'
 ---
 
 

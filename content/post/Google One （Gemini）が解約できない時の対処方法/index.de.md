@@ -1,11 +1,11 @@
 ---
-title: "Was tun, wenn sich Google One (Gemini) nicht kündigen lässt"
+title: 'Können Sie Google One (Gemini) nicht kündigen? Erklärung der korrekten Stornierungsmethode'
 slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Kündigung", "Fehlerbehebung"]
 draft: false
 image: "img.webp"
-description: "Wird man nach der kostenlosen Testphase von Google One (Gemini) zur Kasse gebeten? Eine Zusammenfassung zur Kündigung"
+description: 'Wir erklären die korrekten Kündigungsschritte, um zu verhindern, dass die Google One-Mitgliedschaft für 2.900 Yen pro Monat nach dem 1-monatigen kostenlosen Testzeitraum von Gemini automatisch verlängert wird. Wenn Sie Probleme bei der Kündigung haben, beziehen Sie sich bitte auf die Abmeldemethode in diesem Artikel.'
 categories: ["Programmieren"]
 ---
 

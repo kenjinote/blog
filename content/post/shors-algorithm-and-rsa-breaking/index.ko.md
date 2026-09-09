@@ -7,12 +7,13 @@
 
 
 
-title: "양자 컴퓨터는 정말 RSA 암호를 파괴할 것인가? ~쇼어의 알고리즘과 현재의 도달점~"
+title: '양자 컴퓨터는 RSA 암호를 깰 것인가? 쇼어의 알고리즘 설명'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["양자 컴퓨터", "암호 해독", "Shor의 알고리즘", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
 categories: ["수학・암호・양자"]
+description: '양자 컴퓨터의 대두로 인해 현대의 통신 인프라를 지탱하는 RSA 암호가 어떻게 위협받는지에 대해 설명합니다. 쇼어의 알고리즘 원리부터 NISQ 시대 하드웨어의 현황까지, 차세대 암호 해독과 보안의 미래를 고찰합니다.'
 ---
 
 

@@ -1,11 +1,12 @@
 ---
-title: "خطوات استدعاء TinyLLaMA من C++ (باستخدام llama.cpp)"
+title: 'تشغيل TinyLLaMA باستخدام C++! خطوات إعداد بيئة LLM محلية باستخدام llama.cpp'
 slug: "خطوات-استدعاء-tinyllama-من-cpp-باستخدام-llama-cpp"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
 categories: ["برمجة"]
+description: 'نشرح خطوات الإعداد لاستدعاء وتشغيل نموذج TinyLLaMA من C++. قمنا بتلخيص الخطوات بوضوح للمبتدئين، بدءاً من بناء llama.cpp، مروراً بالحصول على النموذج من HuggingFace، ووصولاً إلى طرق الإعداد في مختلف البيئات.'
 ---
 
 # ✅ خطوات إعداد TinyLLaMA × C++ (باستخدام `llama.cpp`)

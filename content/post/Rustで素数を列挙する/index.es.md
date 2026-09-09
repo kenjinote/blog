@@ -2,13 +2,14 @@
 
 
 
-title: "'Enumerando números primos en Rust'"
+title: 'Ejemplo de código y creación de un programa en Rust para enumerar números primos'
 slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","números primos","algoritmos"]
 draft: false
 image: "images/img.webp"
 categories: ["programación"]
+description: 'Como aprendizaje de programación en Rust, presentamos un ejemplo de implementación de un algoritmo simple para enumerar números primos hasta un valor límite especificado. Explicamos de forma sencilla métodos de codificación básicos usando bucles y condiciones con código de muestra concreto.'
 ---
 
 

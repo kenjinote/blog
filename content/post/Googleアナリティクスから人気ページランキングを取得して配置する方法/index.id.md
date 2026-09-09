@@ -1,11 +1,12 @@
 ---
-title: "Cara Mendapatkan dan Menempatkan Peringkat Halaman Populer dari Google Analytics"
+title: 'Cara Menampilkan Peringkat Artikel Populer Google Analytics dengan Ranklet'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Googleアナリティクス", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["ブログ運営"]
+description: 'Menjelaskan cara menggunakan ''Ranklet'', sebuah layanan yang dapat dengan mudah menampilkan peringkat halaman populer situs secara otomatis dengan menghubungkannya ke Google Analytics. Mengambil contoh blog HUGO, kami memperkenalkan langkah pengaturan dan cara menyesuaikan templat HTML/CSS.'
 ---
 
 ## Pengantar

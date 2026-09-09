@@ -1,11 +1,12 @@
 ---
-title: "Kumpulan Pintasan dan Trik Kecil Windows"
+title: '[Windows 11/10] Kumpulan Tombol Pintasan dan Trik Praktis yang Meningkatkan Efisiensi Kerja secara Drastis'
 slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Trik", "Pintasan"]
 draft: false
 image: "img.webp"
 categories: ["PC・Gadget"]
+description: 'Memperkenalkan pintasan keyboard dan trik pilihan yang berguna untuk meningkatkan efisiensi kerja di Windows 11 dan Windows 10. Kumpulan teknik penting untuk pemula hingga mahir, yang bermanfaat sehari-hari seperti manajemen jendela, tampilan desktop, input suara, dan tangkapan layar.'
 ---
 Berikut adalah kumpulan trik kecil yang biasa digunakan di Windows. Saya akan sangat senang jika pengguna baru Windows membacanya.
 Meskipun ini ditujukan untuk Windows 11, banyak di antaranya yang mungkin juga bisa digunakan di Windows 10.

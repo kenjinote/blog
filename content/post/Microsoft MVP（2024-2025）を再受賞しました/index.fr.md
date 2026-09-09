@@ -1,11 +1,12 @@
 ---
-title: "J'ai été de nouveau récompensé par le titre de Microsoft MVP (2024-2025)"
+title: 'J''ai de nouveau reçu le prix Microsoft MVP (2024-2025) ! Explication également du programme MVP'
 slug: "jai-ete-de-nouveau-recompense-par-le-titre-de-microsoft-mvp-2024-2025"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["Outils et environnement de développement"]
+description: 'Annonce du renouvellement du prix Microsoft MVP (2024-2025), ma 8ème fois cette année. Présente la vue d''ensemble du programme Microsoft MVP, le contenu des activités évaluées, les raisons de la récompense de cette année et une rétrospective de cette dernière année.'
 ---
 
 # J'ai été de nouveau récompensé par le titre de Microsoft MVP (2024-2025)

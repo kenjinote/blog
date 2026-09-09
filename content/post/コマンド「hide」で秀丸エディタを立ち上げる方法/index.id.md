@@ -1,11 +1,12 @@
 ---
-title: "Cara Menjalankan Editor Hidemaru dengan Perintah «hide»"
+title: 'Buka Hidemaru Editor Seketika dengan Perintah ''hide''! Cara Pengaturan Praktis di Windows'
 slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["perintah", "editor Hidemaru", "registry"]
 draft: false
 image: "img_2.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
+description: 'Menjelaskan cara cepat membuka Hidemaru Editor di Windows 10/11 hanya dengan mengetik ''hide'' dari dialog ''Run'' atau Command Prompt. Ini adalah prosedur penyesuaian yang bermanfaat menggunakan App Paths di Editor Registri.'
 ---
 
 ## Berikut adalah cara menjalankan Editor Hidemaru dengan perintah «hide».

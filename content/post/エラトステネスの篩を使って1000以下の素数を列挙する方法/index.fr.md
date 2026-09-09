@@ -1,5 +1,5 @@
 ---
-title: "Comment lister les nombres premiers inférieurs à 1000 en utilisant le Crible d'Ératosthène"
+title: 'Qu''est-ce que le crible d''Ératosthène ? Algorithme et implémentation pour énumérer les nombres premiers jusqu''à 1000'
 slug: "Comment lister les nombres premiers inférieurs à 1000 en utilisant le Crible d'Ératosthène"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Crible d'Ératosthène", "Nombres premiers", "Mathématiques", "Rust"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Mathématiques, Cryptographie, Quantique"]
+description: 'Nous expliquons clairement le fonctionnement et les étapes spécifiques de l''algorithme ''Crible d''Ératosthène'' pour trouver efficacement les nombres premiers. Nous présentons également un exemple d''implémentation utilisant le langage Rust pour énumérer les nombres premiers inférieurs ou égaux à 1000.'
 ---
 
 ## Qu'est-ce que le Crible d'Ératosthène ?

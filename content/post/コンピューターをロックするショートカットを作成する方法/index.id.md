@@ -1,11 +1,12 @@
 ---
-title: "Cara Membuat Pintasan untuk Mengunci Komputer"
+title: 'Kunci PC Windows dalam 1 Detik! Cara Membuat dan Menggunakan Pintasan yang Praktis'
 slug: "cara-membuat-pintasan-untuk-mengunci-komputer"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Kunci Komputer", "Pintasan"]
 draft: false
 image: "img.webp"
 categories: ["PC dan Gadget"]
+description: 'Menjelaskan dengan mudah beserta gambar, cara membuat pintasan yang mampu mengunci PC Windows dengan satu klik. Juga memperkenalkan cara instan mengunci sistem dengan tombol Win+L, yang sangat bermanfaat sebagai langkah pengamanan saat Anda meninggalkan meja.'
 ---
 
 Berikut adalah cara membuat pintasan untuk mengunci komputer.

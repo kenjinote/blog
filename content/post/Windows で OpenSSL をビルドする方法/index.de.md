@@ -1,11 +1,12 @@
 ---
-title: "Wie man OpenSSL unter Windows kompiliert"
+title: 'Schritte und Umgebungseinrichtung zum Kompilieren und Installieren von OpenSSL unter Windows'
 slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Kompilierung", "C++"]
 draft: false
 image: "img.webp"
 categories: ["Programmierung"]
+description: 'Wir erklären, wie Sie die C-Sprach-Verschlüsselungskommunikationsbibliothek „OpenSSL“ in einer Windows-Umgebung kompilieren. Wir erläutern ausführlich die Vorbereitung der erforderlichen Tools wie Perl, NASM und Visual Studio 2022 bis hin zum eigentlichen Kompiliervorgang des Quellcodes.'
 ---
 
 # Was ist OpenSSL?

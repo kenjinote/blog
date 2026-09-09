@@ -7,13 +7,13 @@
 
 
 
-title: "Google One (Gemini) 해지가 안 될 때의 대처 방법"
+title: 'Google One(Gemini)을 해지할 수 없다? 올바른 탈퇴 방법 해설'
 slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "해지", "대처 방법"]
 draft: false
 image: "img.webp"
-description: 'Google One (Gemini) 무료 체험이 끝나면 청구된다? 해지 방법 정리'
+description: 'Gemini의 1개월 무료 체험 종료 후 월 2,900엔의 Google One 멤버십이 자동 연장되는 것을 막기 위한 올바른 해지 절차를 해설합니다. ''해지할 수 없다''고 고민하시는 분들은 본 기사의 탈퇴 방법을 참고해 주세요.'
 categories: ["프로그래밍"]
 ---
 

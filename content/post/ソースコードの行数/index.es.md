@@ -7,13 +7,14 @@
 
 
 
-title: "Número de líneas de código fuente"
+title: '¿Cómo ha cambiado la escala del software? La historia y evolución de las líneas de código fuente'
 slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00
 tags: ["código fuente", "líneas de código"]
 draft: false
 image: "img_1.webp"
 categories: ["IT y Tecnología"]
+description: 'Explicamos el dramático aumento en las líneas de código fuente con el paso del tiempo, desde las 400,000 líneas del transbordador espacial hasta los 2 mil millones de líneas de Google. También presentamos la relación entre los beneficios del aumento de código y el riesgo de errores, así como el ejemplo del núcleo de Linux.'
 ---
 
 

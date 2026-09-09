@@ -1,11 +1,12 @@
 ---
-title: "Marcar todas as caixas de seleção em uma página da web"
+title: '[JS] Como marcar todas as caixas de seleção em uma página da web de uma só vez (com bookmarklet)'
 slug: "Marcar todas as caixas de seleção em uma página da web"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatização"]
 draft: false
 image: "img.webp"
 categories: ["gestão de blog"]
+description: 'Explicamos como marcar todas as caixas de seleção em uma página da web de uma só vez. Apresentamos o código JavaScript para executar no console DevTools do Chrome e os passos para criar um bookmarklet útil que permite selecionar e desmarcar tudo com um clique.'
 ---
 
 Para marcar todas as caixas de seleção em uma página da web, abra o DevTools com F12, cole o seguinte código no console e execute-o.

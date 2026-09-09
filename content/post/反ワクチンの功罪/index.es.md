@@ -7,13 +7,14 @@
 
 
 
-title: "Los pros y contras de los antivacunas"
+title: 'Los pros y contras del movimiento antivacunas y las lecciones epidemiológicas: La "ilusión de causalidad" que destacó la pandemia de COVID-19'
 slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Problemas sociales", "Salud", "Alfabetización informacional"]
 draft: false
 image: "img.webp"
 categories: ["Estilo de vida y notas diversas"]
+description: 'Analizamos los pros y contras del movimiento "antivacunas" respecto a la vacunación contra el COVID-19 y las lecciones para la epidemiología. Exploraremos la importancia del pensamiento científico, que no se deja engañar por los medios de comunicación, comprendiendo sesgos cognitivos como la "ilusión de causalidad" y los casos coincidentes posteriores a la vacunación.'
 ---
 
 

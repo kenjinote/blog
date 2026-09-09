@@ -7,13 +7,14 @@
 
 
 
-title: "'하노이의 탑'"
+title: '[Python 입문] 재귀 처리로 푸는 ''하노이의 탑'' 알고리즘 해설'
 slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00
 tags: ["하노이의 탑", "알고리즘", "Python"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: '유명한 퍼즐 ''하노이의 탑''을 소재로, 프로그래밍에서의 ''재귀 호출(Recursive)'' 개념을 Python 샘플 코드와 함께 알기 쉽게 해설합니다. 알고리즘의 기초를 배우고 싶은 초보자에게 추천합니다.'
 ---
 
 

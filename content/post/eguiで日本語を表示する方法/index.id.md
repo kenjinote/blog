@@ -1,11 +1,12 @@
 ---
-title: "Cara Menampilkan Bahasa Jepang di egui"
+title: 'Cara Memuat dan Menampilkan Font Bahasa Jepang di Library GUI Rust ''egui'''
 slug: "cara-menampilkan-bahasa-jepang-di-egui"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "pustaka-GUI", "jepang"]
 draft: false
 image: "img.webp"
 categories: ["Teknologi-TI"]
+description: 'Menjelaskan metode implementasi untuk menampilkan bahasa Jepang dengan benar di ''egui'', library GUI yang ringan untuk Rust. Memperkenalkan sampel kode konkret untuk memuat font Meiryo Windows dan menerapkannya pada aplikasi.'
 ---
 
 ## Mendapatkan Contoh egui

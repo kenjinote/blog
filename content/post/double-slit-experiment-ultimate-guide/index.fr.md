@@ -1,5 +1,5 @@
 ---
-title: "【Guide Ultime】Tout sur l'« expérience de la double fente », la plus belle expérience de la physique : le monde quantique et la véritable nature de la réalité"
+title: '[Guide Complet] Explication approfondie et claire du plus grand mystère de la mécanique quantique : « L''expérience des fentes de Young »'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Physique", "Mécanique quantique", "Expérience de la double fente", "Équation de Schrödinger"]
@@ -7,6 +7,7 @@ categories: ["Physique et Science"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: 'Nous expliquons en détail « l''expérience des fentes de Young », souvent qualifiée de plus belle expérience de l''histoire de la physique. Nous résumons de manière accessible pour les débutants les anomalies du monde microscopique, où le bon sens du monde macroscopique ne s''applique pas, ainsi que les profonds mystères de la mécanique quantique.'
 ---
 ## 1. 【Introduction】 Qu'est-ce que l'expérience de la double fente ?
 

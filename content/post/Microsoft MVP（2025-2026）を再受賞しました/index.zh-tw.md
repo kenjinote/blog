@@ -1,11 +1,12 @@
 ---
-title: "再次榮獲 Microsoft MVP (2025-2026)"
+title: '再次榮獲 Microsoft MVP (2025-2026) 報告與過往活動回顧'
 slug: "再次榮獲-microsoft-mvp-2025-2026"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: '報告累計第 9 次榮獲 Microsoft MVP (2025-2026)。除了介紹貢獻於技術社群的 MVP 制度外，也將回顧這一年來特別致力於技術資訊發布與社群活動的歷程。'
 ---
 
 # 再次榮獲 Microsoft MVP (2025-2026)！

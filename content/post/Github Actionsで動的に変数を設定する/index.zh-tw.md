@@ -1,11 +1,12 @@
 ---
-title: "在 Github Actions 中動態設定變數"
+title: '在GitHub Actions中動態設定環境變數的方法【Windows環境】'
 slug: "Github Actionsで動的に変数を設定する"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["ツール・開発環境"]
+description: '為您解說如何在GitHub Actions的workflow中動態設定環境變數。以Windows環境為例，介紹寫入「$env:GITHUB_ENV」的步驟，以及在後續步驟中參考變數並應用於建立Release的具體範例。'
 ---
 
 若要在 Github Actions 中動態設定變數，可以透過附加寫入到 $env:GITHUB_ENV 來實現，如下所示。

@@ -1,11 +1,12 @@
 ---
-title: 'FizzBuzz'
+title: 'プログラミングの登竜門「FizzBuzz問題」とは？Pythonでの書き方を解説'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "アルゴリズム"]
 draft: false
 image: "img.webp"
 categories: ["プログラミング"]
+description: 'プログラマーの面接でもよく出題される「FizzBuzz問題」について、その概要とPythonを使った具体的なコード例（条件分岐）をわかりやすく解説します。初心者から基本を振り返りたい方まで必見の内容です。'
 ---
 
 ## FizzBuzzって、結局なんなの？

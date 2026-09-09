@@ -1,11 +1,12 @@
 ---
-title: "Visual Studio Code 推薦擴充功能"
+title: 'VSCode 推薦擴充功能總整理！可大幅提升開發效率的外掛清單'
 slug: "Visual Studio Codeおすすめ拡張機能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "擴充功能", "插件"]
 draft: false
 image: "img.webp"
 categories: ["工具與開發環境"]
+description: '表列介紹讓 Visual Studio Code (VSCode) 更便利的推薦擴充功能。精選可提升開發效率的必備外掛，如容器管理、Git 程式碼管理、使用 Copilot 的 AI 程式碼補齊等。'
 ---
 
 # Visual Studio Code 推薦擴充功能列表

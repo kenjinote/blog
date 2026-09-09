@@ -1,11 +1,12 @@
 ---
-title: 'Collection of Fonts Useful for Programming'
+title: 'Recommended Fonts for Programming | Free Fonts for Better Visibility and Development Efficiency'
 slug: "プログラミングで使えるフォント集"
 date: 2024-03-30T02:21:31+09:00
 tags: ["Programming", "Font"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'Introducing ideal programming fonts for coding such as JetBrains Mono, HackGen, Ricty Diminished, Cica, and Migu. Improve editor visibility and boost your development efficiency.'
 ---
 
 ## JetBrains Mono

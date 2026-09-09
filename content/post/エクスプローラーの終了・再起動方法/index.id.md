@@ -1,11 +1,12 @@
 ---
-title: "Cara Menutup dan Memulai Ulang File Explorer"
+title: 'Kumpulan Cara Mengakhiri dan Merestart Windows Explorer'
 slug: "cara-menutup-dan-memulai-ulang-file-explorer"
 date: 2024-03-30T15:40:24+09:00
 tags: ["File Explorer"]
 draft: false
 image: "img_2.webp"
 categories: ["IT dan Teknologi"]
+description: 'Menjelaskan berbagai cara untuk menutup dan merestart Explorer (explorer.exe) di Windows. Memperkenalkan prosedur dengan jelas menggunakan taskbar, Task Manager, dan Command Prompt.'
 ---
 
 ## Cara Menutup melalui Klik Kanan Taskbar

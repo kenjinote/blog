@@ -1,11 +1,12 @@
 ---
-title: 'History of No-Code in Local Environments'
+title: 'History of Low-Code and No-Code Development (1980s-Present) | From HyperCard to Latest Tools'
 slug: "ローコードおよびノーコードの歴史"
 date: 2025-04-26T16:46:11+09:00
 tags: ["Low-code", "No-code", "History"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technology"]
+description: 'We explain the history of low-code and no-code development from the 1980s to the present. We introduce how systems for building apps without programming have evolved, along with representative tools by decade like HyperCard and FileMaker.'
 ---
 
 # History of Low-Code / No-Code Development (1980s - Present)

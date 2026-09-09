@@ -1,11 +1,12 @@
 ---
-title: "Cara mengubah pintasan keyboard untuk beralih antara input bahasa Jepang dan bahasa Inggris di mac"
+title: 'Cara Mengubah Pintasan Keyboard untuk Beralih Input Bahasa Jepang/Inggris di Mac (Untuk Keyboard US)'
 slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
 date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "ショートカットキー", "日本語入力"]
 draft:
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'Menjelaskan cara mengubah peralihan input antara bahasa Jepang dan Inggris di Mac (Keyboard US) ke pintasan keyboard pilihan Anda, seperti ''Alt + `''. Kami juga memperkenalkan prosedur pengaturan di macOS Ventura dan pengaturan untuk mencegah penyertaan katakana saat beralih.'
 ---
 
 # Pengantar

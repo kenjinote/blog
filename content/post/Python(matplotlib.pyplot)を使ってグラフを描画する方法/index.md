@@ -1,11 +1,12 @@
 ---
-title: 'Python(matplotlib.pyplot)を使ってグラフを描画する方法'
+title: 'Pythonとmatplotlibでグラフを描画する方法【Google Colab対応】'
 slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "グラフ", "数学", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["数学・暗号・量子"]
+description: 'Google Colaboratoryを使って、Pythonのmatplotlib.pyplotライブラリでサイン波とコサイン波のグラフを簡単に描画・表示する手順を初心者向けに解説します。環境構築不要ですぐに試せます。'
 ---
 
 ![img_1.png](img_1.webp)

@@ -3,13 +3,14 @@
 
 
 
-title: "'【Por idioma】Resumen de entornos de ejecución de código en línea'"
+title: '[Por idioma] ¡Funciona en el navegador! Resumen de entornos de ejecución de código de programación en línea gratuitos'
 slug: "オンラインのコード実行環境まとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["En línea", "Entorno de ejecución de código", "Programación"]
 draft: false
 image: "img.webp"
 categories: ["Programación"]
+description: 'Hemos recopilado entornos de ejecución de código en línea útiles por lenguaje (Python, JavaScript, C++, etc.) donde puedes comenzar a programar fácilmente sin necesidad de configurar un entorno. Explicamos detalladamente las características de herramientas como Google Colab y AWS Cloud9.'
 ---
 
 

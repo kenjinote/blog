@@ -3,13 +3,14 @@
 
 
 
-title: "Salesforce 추천 Chrome 확장 프로그램"
+title: 'Salesforce 개발이 순조로워진다! 추천 Chrome 확장 프로그램 정리'
 slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome 확장 프로그램"]
 draft: false
 image: "img.webp"
 categories: ["IT・테크놀로지"]
+description: 'Salesforce 개발 및 운영을 극적으로 효율화해 주는 추천 Chrome 확장 프로그램을 소개합니다. 사용자 지정 필드 검색이나 SOQL 작성에 편리한 DevTools, 코드 검색에 유용한 확장 프로그램 등 엔지니어 필수 도구를 엄선했습니다.'
 ---
 
 

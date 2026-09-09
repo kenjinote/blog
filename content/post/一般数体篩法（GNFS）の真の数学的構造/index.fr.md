@@ -1,11 +1,12 @@
 ---
-title: "La Véritable Structure Mathématique du Crible Général du Corps de Nombres (GNFS)"
+title: 'Quelle est la véritable structure mathématique du crible général du corps de nombres (GNFS) ? Le mécanisme de la factorisation via l''homomorphisme'
 slug: "一般数体篩法（GNFS）の真の数学的構造"
 date: 2026-09-05T02:26:13+09:00
 tags: ["Mathématiques", "Cryptographie", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"
 categories: ["Mathématiques, Cryptographie et Quantique"]
+description: 'Nous expliquons la véritable structure mathématique du crible général du corps de nombres (GNFS), un algorithme de factorisation en nombres premiers. Nous décortiquons le mécanisme avancé pour factoriser efficacement d''énormes nombres composés, en utilisant l''« homomorphisme » qui relie le monde des nombres entiers réels au monde des corps algébriques.'
 ---
 
 # La Véritable Structure Mathématique du Crible Général du Corps de Nombres (GNFS)

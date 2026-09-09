@@ -1,11 +1,12 @@
 ---
-title: '如何使用 PowerShell 批量删除 Excel、Word 等的元数据（个人信息）'
+title: '如何使用PowerShell批量删除Excel和Word的元数据（个人信息）'
 slug: "PowerShell で Excel のメタデータ（個人情報）を削除する方法"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "元数据", "个人信息"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["编程"]
+description: '讲解如何使用PowerShell删除Office文件中包含的作者等元数据。从单个文件的处理，到批量删除文件夹内Excel和Word等文件的脚本，为您介绍防止对外分享时发生信息泄露的便捷自动化技巧。'
 ---
 
 # 如何使用 PowerShell 批量删除 Excel、Word 等的元数据（个人信息）

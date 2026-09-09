@@ -1,11 +1,12 @@
 ---
-title: "Cara Membuat Pintasan untuk Mematikan Windows"
+title: 'Matikan PC dengan Satu Klik! Cara Membuat Pintasan untuk Mematikan Windows'
 slug: "Windows をシャットダウンするショートカットを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Mematikan", "Pintasan"]
 draft: false
 image: "img.webp"
 categories: ["PC dan Gadget"]
+description: 'Menjelaskan cara membuat pintasan praktis untuk mematikan Windows dengan satu klik dari desktop. Memperkenalkan langkah pengaturan menggunakan perintah ''shutdown.exe'', hingga cara mengubah ikon agar mudah dikenali, lengkap dengan gambar.'
 ---
 
 Saya akan menunjukkan cara membuat pintasan untuk mematikan Windows.

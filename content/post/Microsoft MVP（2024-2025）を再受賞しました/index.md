@@ -1,11 +1,12 @@
 ---
-title: 'Microsoft MVP（2024-2025）を再受賞しました'
+title: 'Microsoft MVP（2024-2025）を再受賞しました！MVP制度の解説も'
 slug: "Microsoft MVP（2024-2025）を再受賞しました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: '今年で8回目となるMicrosoft MVP（2024-2025）を再受賞したご報告です。Microsoft MVP制度の概要や評価される活動内容、今回の受賞理由やこの1年の振り返りについて紹介します。'
 ---
 
 # Microsoft MVP（2024-2025）を再受賞しました

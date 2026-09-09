@@ -2,13 +2,14 @@
 
 
 
-title: "Cómo tuitear usando la API de Twitter y Google Colaboratory"
+title: 'Cómo publicar tweets automáticos usando la API de Twitter y Google Colaboratory 【Python】'
 slug: "Twitter APIとGoogle Colaboratoryを使ってTweetする方法"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
 categories: ["Programación"]
+description: 'Explicamos los pasos para ejecutar tweets automáticos con Python (tweepy) usando la API de Twitter y Google Colaboratory. Desde la configuración de la API key hasta el código real, puedes probarlo rápidamente copiando y pegando.'
 ---
 
 

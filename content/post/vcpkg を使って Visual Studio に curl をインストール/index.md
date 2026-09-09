@@ -1,11 +1,12 @@
 ---
-title: '【初心者向け】vcpkgでlibcurl（OpenSSL対応）をVisual Studioに導入する手順'
+title: 'vcpkgで簡単！Visual StudioにOpenSSL対応libcurlをインストールする方法'
 slug: "vcpkg を使って Visual Studio に curl をインストール"
 date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'C++開発において便利なパッケージ管理ツール「vcpkg」を使い、OpenSSL対応のlibcurlをVisual Studio環境に導入する手順を解説。ビルドや依存関係をスムーズに解決できます。'
 ---
 
 ## Visual Studioでlibcurl（OpenSSL対応）を使うなら、vcpkg導入が簡単でおすすめ

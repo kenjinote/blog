@@ -1,11 +1,12 @@
 ---
-title: 'Excel Calendar Template (with Holiday Support)'
+title: '[Free Download] Excel Calendar Template with Automatic Holiday Display'
 slug: "Excelのカレンダーテンプレート（休日対応版）"
 date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "Calendar", "Template", "Holidays"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technology"]
+description: 'We distribute for free a convenient Excel calendar template that automatically reflects Japanese holidays for that month simply by entering the year and month. Please download and use it for schedule management and business efficiency.'
 ---
 
 ## I created an Excel calendar template (with holiday support)!

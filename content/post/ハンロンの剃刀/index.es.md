@@ -7,13 +7,14 @@
 
 
 
-title: "El principio de Hanlon"
+title: '¿Qué es el ''Principio de Hanlon'', la forma de pensar que facilita las relaciones humanas? Significado y origen explicados'
 slug: "ハンロンの剃刀"
 date: 2024-09-24T18:14:34+09:00
 tags: ["Frases", "Expresiones"]
 draft: false
 image: "img.webp"
 categories: ["TI・Tecnología"]
+description: 'Presentamos el ''Principio de Hanlon'', un enfoque psicológico que dice: ''No atribuyas a la malicia lo que puede ser explicado por el descuido''. Explicamos cómo aplicar este principio para disipar frustraciones cotidianas, como las respuestas lentas en LINE, y reducir el estrés en las relaciones humanas.'
 ---
 
 

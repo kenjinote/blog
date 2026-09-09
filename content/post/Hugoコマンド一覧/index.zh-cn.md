@@ -1,11 +1,12 @@
 ---
-title: 'Hugo命令一览'
+title: 'Hugo CLI的安装与常用基本命令一览'
 slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "命令"]
 draft: false
 image: "img.webp"
 categories: ["博客运营"]
+description: '介绍高速静态网站生成器Hugo CLI的安装方法，以及博客运营中频繁使用的基本命令一览。涵盖创建新网站、撰写文章、启动本地服务器、构建等Hugo初学者应掌握的操作。'
 ---
 
 # Hugo 是什么

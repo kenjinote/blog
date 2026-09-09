@@ -1,11 +1,12 @@
 ---
-title: 'Monty Hall problem'
+title: 'What is the Monty Hall Problem? Easy Explanation of the Counterintuitive Probability Paradox and its Solution'
 slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["Math", "Probability", "Monty Hall problem"]
 draft: false
 image: "img_1.webp"
 categories: ["Math・Cryptography・Quantum"]
+description: 'We provide an easy-to-understand explanation of what the Monty Hall problem is, its meaning, and its solution. Using the famous probability paradox based on an American TV game show, we logically explain why changing doors increases the probability of winning.'
 ---
 
 ## What is the Monty Hall problem?

@@ -1,11 +1,12 @@
 ---
-title: '买了二手ThinkPad'
+title: '入手二手ThinkPad T470s！从配置、使用体验到槽点的真实评测'
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "笔记本电脑"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '这是一篇关于为远程办公购买二手ThinkPad T470s的评测文章。为您分享实际的使用体验，包括Core i7、24GB内存、WQHD屏幕的配置与成色，以及键盘布局等令人不满的地方。'
 ---
 
 # 买了二手笔记本电脑ThinkPad

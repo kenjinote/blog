@@ -1,5 +1,5 @@
 ---
-title: "Wie man Primzahlen unter 1000 mit dem Sieb des Eratosthenes auflistet"
+title: 'Was ist das Sieb des Eratosthenes? Algorithmus und Implementierung zur Auflistung von Primzahlen bis 1000'
 slug: "Wie man Primzahlen unter 1000 mit dem Sieb des Eratosthenes auflistet"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Sieb des Eratosthenes", "Primzahlen", "Mathematik", "Rust"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Mathematik, Kryptografie, Quanten"]
+description: 'Wir erklären den Mechanismus und die spezifischen Schritte des „Siebs des Eratosthenes“, eines Algorithmus zum effizienten Finden von Primzahlen, auf leicht verständliche Weise. Wir stellen auch ein Implementierungsbeispiel vor, das Primzahlen bis zu 1000 mit der Sprache Rust auflistet.'
 ---
 
 ## Was ist das Sieb des Eratosthenes?

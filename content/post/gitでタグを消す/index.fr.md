@@ -1,11 +1,12 @@
 ---
-title: "Supprimer des tags dans git"
+title: 'Comment supprimer les balises locales et distantes dans Git'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
 categories: ["Outils et Environnement de Développement"]
+description: 'Nous expliquons simplement comment supprimer les balises (tag) inutilisées dans Git. De la suppression des balises dans l''environnement local à l''aide de « git tag -d » à la suppression des balises sur le dépôt distant avec « git push origin --delete ».'
 ---
 # Supprimer un tag local
 

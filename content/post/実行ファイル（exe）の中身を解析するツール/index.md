@@ -1,11 +1,12 @@
 ---
-title: '実行ファイル（exe）の中身を解析するツール'
+title: 'Windowsの実行ファイル（exe）の中身を解析・展開できる便利ツール4選'
 slug: "実行ファイル（exe）の中身を解析するツール"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "実行ファイル", "解析"]
 draft: false
 image: "img_1.webp"
 categories: ["PC・ガジェット"]
+description: 'Windowsの実行ファイル（exe）の中身を解析・解凍できるおすすめツールを紹介します。7-ZipやResource Hacker等を用い、PEフォーマットの構造確認やリソース抽出、バイナリ編集を行う方法を分かりやすく解説します。'
 ---
 
 # 実行ファイル（exe）とは

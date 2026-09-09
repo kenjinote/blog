@@ -1,11 +1,12 @@
 ---
-title: "Rust 的特徵"
+title: '程式語言 Rust 的 5 大主要特色為何？'
 slug: "Rustの特徴"
 date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
 categories: ["程式設計"]
+description: '淺顯易懂地解說 Mozilla 開發的程式語言「Rust」的主要特色。介紹其受到青睞的原因，如高速執行、無垃圾回收機制、透過所有權與借用實現記憶體安全性、跨平台支援等。'
 ---
 # Rust 的特徵
 

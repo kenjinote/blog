@@ -1,11 +1,12 @@
 ---
-title: "Aktuelle Haupt-PC-Spezifikationen"
+title: '【Core i7-8700K, 32GB RAM】Aktuelle Haupt-PC-Spezifikationen und Arbeitsumgebung'
 slug: "aktuelle-haupt-pc-spezifikationen"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
 categories: ["PC・ガジェット"]
+description: 'Ich habe die Spezifikationen meines derzeit verwendeten Haupt-PCs (Core i7-8700K, 32 GB Speicher, Windows 11) und meine Arbeitsumgebung zusammengefasst. Die aktuelle Konfiguration, bei der ein Desktop-PC von Mouse Computer verwendet wird, wird als Referenz vorgestellt.'
 ---
 Hier sind die Spezifikationen meines aktuellen Haupt-PCs.
 

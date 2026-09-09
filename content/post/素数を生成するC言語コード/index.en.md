@@ -1,11 +1,12 @@
 ---
-title: 'C Language Code to Generate Prime Numbers'
+title: 'Simple C Language Sample Code to Generate and Determine Primes Within a Specified Range'
 slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C Language", "Prime Numbers", "Algorithm", "Mathematics"]
 draft: false
 image: "img.webp"
 categories: ["Mathematics, Cryptography, and Quantum"]
+description: 'We introduce a simple C language sample code that determines, generates, and lists prime numbers within a specified range (from 1 to n). We provide a programming implementation example and explanation easy for beginners to understand, using an efficient algorithm with an isPrime function.'
 ---
 
 Here is a simple C language code that generates prime numbers within a specified range. In this example, it enumerates prime numbers from 1 to n.

@@ -1,11 +1,12 @@
 ---
-title: "vim入門"
+title: '【初學者適用】Vim 入門：從安裝到基本啟動、結束及模式解說'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "文字編輯器"]
 draft: false
 image: "img.webp"
 categories: ["工具與開發環境"]
+description: '為初學者解說 Vim 的基本使用方法。全面涵蓋最初的步驟，包含在 Windows 環境的安裝方法、啟動與結束指令 (如儲存、強制結束等)，以及指令模式與輸入模式的差異。'
 ---
 
 ![img_1.png](img_1.webp)

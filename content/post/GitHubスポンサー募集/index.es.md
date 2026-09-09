@@ -1,13 +1,14 @@
 ---
 
 
-title: "Buscando Patrocinadores en GitHub"
+title: 'Anuncio de búsqueda de patrocinadores en GitHub｜Solicitud de apoyo para el desarrollo'
 slug: "GitHubスポンサー募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Patrocinador"]
 draft: false
 image: "img.webp"
 categories: ["Herramientas y Entorno de Desarrollo"]
+description: 'En este proyecto estamos buscando patrocinadores en GitHub. Los fondos que recibamos se utilizarán cuidadosamente como gastos para ofrecer mejor software, como el desarrollo de herramientas útiles y la obtención de certificados de firma de código.'
 ---
 
 

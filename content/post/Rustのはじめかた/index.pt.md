@@ -1,11 +1,12 @@
 ---
-title: "Como começar com Rust"
+title: 'Introdução à linguagem Rust: Como começar, desde os recursos até a instalação e o Hello World'
 slug: "Como começar com Rust"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programação"]
+description: 'Explicamos de forma amigável para iniciantes como começar com Rust, uma linguagem de programação rápida e segura em relação à memória. Abordamos abrangentemente desde os recursos da linguagem e os métodos de instalação, passando pelo procedimento de execução do Hello World, o primeiro programa, até recomendações de documentação em japonês.'
 ---
 # Introdução
 Rust é uma linguagem de programação relativamente nova que permite escrever módulos rápidos e eficientes em memória com uma sintaxe moderna.

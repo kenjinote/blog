@@ -1,11 +1,12 @@
 ---
-title: "Tornar possível instalar o msix com um certificado autoassinado"
+title: 'Atenção desenvolvedores de aplicativos Windows! Como anexar um auto-certificado ao MSIX e instalar localmente'
 slug: "msixに自己証明書をつけてインストールできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "自己証明書", "インストール"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'Explicamos detalhadamente e com comandos do PowerShell o procedimento específico para criar e atribuir um certificado autoassinado (sem usar certificados comerciais) a pacotes MSIX, que são úteis para distribuição de testes de aplicativos do Windows, permitindo a instalação no ambiente local.'
 ---
 
 # Tornar possível instalar o msix com um certificado autoassinado

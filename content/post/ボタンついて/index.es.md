@@ -3,13 +3,14 @@
 
 
 
-title: "Acerca de los botones"
+title: 'Cómo crear botones (controles GUI) e implementar el procesamiento de eventos con la API de Windows'
 slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["botón", "GUI"]
 draft: false
 image: "img.webp"
 categories: ["TI y Tecnología"]
+description: 'Explicaremos con código de ejemplo cómo crear un "botón", la base de las aplicaciones GUI, utilizando la API estándar de Windows (Win32 API), y cómo implementar el procesamiento de eventos (mensaje WM_COMMAND) al hacer clic.'
 ---
 
 

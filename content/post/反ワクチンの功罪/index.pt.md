@@ -1,11 +1,12 @@
 ---
-title: "Os prós e contras dos movimentos antivacina"
+title: 'Os prós e contras do movimento antivacina e as lições da epidemiologia: O que é a ''ilusão de causalidade'' destacada pela pandemia do coronavírus'
 slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Problemas Sociais", "Saúde", "Alfabetização Informacional"]
 draft: false
 image: "img.webp"
 categories: ["Estilo de Vida / Diversos"]
+description: 'Explicaremos os prós e contras do movimento ''antivacina'' envolvendo as vacinações contra a COVID-19 e as lições epidemiológicas. Vamos entender os vieses cognitivos, como ''confusão'' e ''ilusão de causalidade'' nos casos pós-vacinação, e investigar a importância de um raciocínio científico não influenciado por informações da mídia.'
 ---
 
 # Os prós e contras dos movimentos antivacina ―― Como a "ansiedade bem-intencionada" matou o futuro de 5000 pessoas e as lições epidemiológicas que devemos aprender

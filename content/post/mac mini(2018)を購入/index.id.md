@@ -1,11 +1,12 @@
 ---
-title: "Membeli mac mini(2018)"
+title: 'Alasan dan Spesifikasi Pembelian Mac mini (2018) Bekas untuk Pengembangan Aplikasi iOS'
 slug: "Membeli mac mini(2018)"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
 categories: ["PC dan Gadget"]
+description: 'Demi membangun lingkungan pengembangan aplikasi iOS yang nyaman di rumah, saya membeli Mac mini (2018) model lawas di Mercari. Saya akan membagikan alasan utama pembelian, detail spesifikasi, serta langkah awal dalam mengatur lingkungannya.'
 ---
 
 # Membeli mac mini(2018)

@@ -1,11 +1,12 @@
 ---
-title: '在Rust中显示MessageBox'
+title: '使用Rust和winapi显示Windows消息框(MessageBox)的方法'
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["编程"]
+description: '详细讲解在Rust中使用`winapi`和`user32-sys`包，通过调用Windows API来显示简单的消息框（MessageBox）的方法，从项目创建到代码实现一步步带您操作。'
 ---
 
 可以通过以下步骤在Rust中显示MessageBox。

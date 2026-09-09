@@ -1,11 +1,12 @@
 ---
-title: "[Por Linguagem] Resumo de Ambientes de Execução de Código Online"
+title: '[Por idioma] Funciona no navegador! Resumo de ambientes gratuitos de execução de código de programação online'
 slug: "オンラインのコード実行環境まとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["Online", "Ambiente de Execução de Código", "Programação"]
 draft: false
 image: "img.webp"
 categories: ["Programação"]
+description: 'Compilamos ambientes úteis de execução de código online por idioma (Python, JavaScript, C++, etc.) onde você pode começar a programar facilmente sem configurar um ambiente. Explicaremos detalhadamente os recursos do Google Colab e do AWS Cloud9.'
 ---
 
 ## Python

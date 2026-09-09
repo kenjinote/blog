@@ -3,13 +3,14 @@
 
 
 
-title: "'Mac에서 복사 및 붙여넣기 단축키를 Windows와 맞추는 방법'"
+title: 'Mac의 복사 및 붙여넣기용 바로 가기 키를 Windows와 동일한 설정으로 변경하는 방법'
 slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "단축키", "복사 및 붙여넣기"]
 draft:
 image: "img.webp"
 categories: ["PC・가젯"]
+description: 'Mac과 Windows를 병용할 때 편리한, 복사 및 붙여넣기 바로 가기 키를 Windows 스타일(Ctrl 키 기반)에 맞추기 위한 시스템 환경 설정에서의 보조 키 변경 절차를 소개합니다.'
 ---
 
 

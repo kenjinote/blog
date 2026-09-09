@@ -1,11 +1,12 @@
 ---
-title: '推荐的Chrome扩展'
+title: '让Chrome与Edge变得极其好用的推荐浏览器扩展程序汇总'
 slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome扩展", "浏览器", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
 categories: ["IT・科技"]
+description: '介绍鼠标手势、广告拦截、DeepL翻译、使用ChatGPT侧边栏等，能够大幅提升Google Chrome和Microsoft Edge浏览效率的推荐扩展程序。'
 ---
 
 # 推荐的Chrome扩展

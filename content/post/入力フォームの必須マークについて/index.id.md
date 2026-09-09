@@ -1,11 +1,12 @@
 ---
-title: "Tentang Tanda Wajib pada Formulir Input"
+title: 'Optimasi Tanda Wajib di Formulir Input | Praktik Terbaik yang Dipelajari dari Pedoman UI Luar Negeri'
 slug: "tentang-tanda-wajib-pada-formulir-input"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formulir Input", "Pengembangan Web", "UX"]
 draft: false
 image: "img.webp"
 categories: ["Manajemen Blog"]
+description: 'Kami akan menjelaskan praktik terbaik untuk penanda ''item wajib'' di formulir Web berdasarkan pedoman UI luar negeri. Kami merangkum cara penggunaan tanda bintang (*) yang benar, penyebutan jelas ''Required'', dan cara memanfaatkan atribut ARIA untuk meningkatkan aksesibilitas.'
 ---
 
 Kami merangkum informasi tentang tanda "wajib" pada UI layar (formulir) di luar negeri, beserta materi pedoman UI.

@@ -1,11 +1,11 @@
 ---
-title: 'What to do when you cannot cancel Google One (Gemini)'
+title: 'Can''t Cancel Google One (Gemini)? Explaining the Correct Withdrawal Method'
 slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Cancellation", "Troubleshooting"]
 draft: false
 image: "img.webp"
-description: 'Will you be charged after the Google One (Gemini) free trial ends? A guide on how to cancel.'
+description: 'We explain the correct cancellation procedure to prevent the 2,900 yen/month Google One membership from automatically continuing after the 1-month free trial of Gemini ends. If you are troubled by ''cannot cancel'', please refer to the withdrawal method in this article.'
 categories: ["Programming"]
 ---
 

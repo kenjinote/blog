@@ -1,11 +1,12 @@
 ---
-title: "A História Secreta do Desenvolvimento do LogicPad"
+title: 'A História por Trás do Desenvolvimento da Ferramenta Low-Code ''LogicPad'': Por Que Foi Criada?'
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Desenvolvimento", "História Secreta"]
 draft: false
 image: "img.webp"
 categories: ["TI e Tecnologia"]
+description: 'A história da criação da ''LogicPad'', uma ferramenta low-code para ''aqueles que não programam mas têm lógica''. O autor compartilha os seus pensamentos pessoais apaixonados sobre os bastidores do desenvolvimento e sua abordagem à própria carreira.'
 ---
 
 # Uma ferramenta para "Pessoas que não sabem escrever código, mas têm lógica". O motivo pelo qual criei o LogicPad

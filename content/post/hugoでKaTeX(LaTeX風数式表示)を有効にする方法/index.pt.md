@@ -1,5 +1,5 @@
 ---
-title: "Como habilitar KaTeX (exibição de fórmulas no estilo LaTeX) no hugo"
+title: 'Como Adicionar o KaTeX no Hugo e Exibir Belas Fórmulas Matemáticas no Estilo LaTeX'
 slug: "como-habilitar-katex-no-hugo"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "fórmulas", "matemática", "hugo"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matemática/Criptografia/Quântica"]
+description: 'Explicamos os passos para introduzir a rápida biblioteca de renderização de equações ''KaTeX'' no gerador de sites estáticos Hugo. Descubra como habilitar a bela exibição de fórmulas matemáticas estilo LaTeX em seu blog, desde a criação do math.html até o carregamento no cabeçalho.'
 ---
 # O que é KaTeX
 KaTeX é uma biblioteca javascript para exibir fórmulas no estilo LaTeX em HTML.

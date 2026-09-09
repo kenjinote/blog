@@ -1,11 +1,12 @@
 ---
-title: "Ich habe versucht, verschiedene Versionsinformationsdialoge zu sammeln"
+title: 'Ich habe Dialogfenster mit Versionsinformationen für verschiedene Software gesammelt'
 slug: "いろんなバージョン情報ダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Versionsinformationen", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
 categories: ["PC und Gadgets"]
+description: 'Wir präsentieren eine Liste der UI-Designs von „Versionsinformationsdialog“-Bildschirmen verschiedener PC-Software und Tools, die täglich verwendet werden, wie Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge und LINE.'
 ---
 
 # Ich habe versucht, verschiedene Versionsinformationsdialoge zu sammeln

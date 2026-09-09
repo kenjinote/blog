@@ -1,11 +1,12 @@
 ---
-title: '年賀状作成アプリ作成配信 VOL.1 (台本)'
+title: '【C++】年賀状作成アプリ開発配信 VOL.1：環境構築とDirect2Dの初期化'
 slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["年賀状作成アプリ作成配信", "YouTube"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'C++を使った年賀状作成アプリ開発のYouTube配信第1回。GITリポジトリの作成からメインウィンドウ表示、Direct2Dの初期化とHelloWorldの実装まで、アプリ開発の基盤となる環境構築の手順をソースコードと共に解説します。'
 ---
 
 # 🎬 YouTube配信用 台本（年賀状作成アプリ開発・第1回）

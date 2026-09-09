@@ -6,13 +6,14 @@
 
 
 
-title: "Música japonesa favorita"
+title: 'Colección de canciones japonesas recomendadas: Conmovedores J-POP y éxitos clásicos nostálgicos'
 slug: "好きな邦楽"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Música japonesa", "Música"]
 draft: false
 image: "img.webp"
 categories: ["Estilo de vida y miscelánea"]
+description: 'Te presentamos grandes canciones japonesas que tocan el corazón, como las de Tulip, RADWIMPS y Hikaru Utada. Disfruta de la maravillosa música japonesa amada a través de las generaciones, desde clásicos nostálgicos de la era Showa, éxitos del J-POP de la era Heisei, hasta baladas clásicas.'
 ---
 
 

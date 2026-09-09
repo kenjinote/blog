@@ -1,11 +1,12 @@
 ---
-title: "Número de Linhas de Código-Fonte"
+title: 'Como a escala do software mudou? A história e a evolução das linhas de código-fonte'
 slug: "numero-de-linhas-de-codigo-fonte"
 date: 2025-04-17T10:33:02+09:00
 tags: ["código-fonte", "linhas de código"]
 draft: false
 image: "img_1.webp"
 categories: ["TI e Tecnologia"]
+description: 'Explicamos sobre as linhas de código-fonte que aumentam dramaticamente com a era, dos 420 mil do Space Shuttle para 2 bilhões do Google. Introduzimos a relação entre o benefício de código aumentado e o risco de ocorrência de bugs, junto com o caso do kernel do Linux.'
 ---
 
 # Número de Linhas de Código-Fonte

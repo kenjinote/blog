@@ -1,11 +1,12 @@
 ---
-title: "Que signifie comprendre ?"
+title: 'Que signifie ''comprendre'' ? Sur l''ambiguïté de la compréhension et sa valeur'
 slug: "que-signifie-comprendre"
 date: 2022-09-24T02:38:18+09:00
 tags: ["Divers"]
 draft: false
 image: "img.webp"
 categories: ["IT et Technologie"]
+description: 'Réflexion sur la véritable nature du sentiment de ''comprendre'' ressenti dans la vie quotidienne. Tout en pouvant vivre sans une compréhension parfaite, nous expliquons la valeur d''une compréhension profonde et l''intérêt des choses qui résolution restent ''incomprises'' dans le monde.'
 ---
 # Que signifie comprendre ?
 

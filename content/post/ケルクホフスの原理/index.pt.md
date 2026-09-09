@@ -1,11 +1,12 @@
 ---
-title: "Princípio de Kerckhoffs"
+title: 'O que é o Princípio de Kerckhoffs? Uma explicação simples do conceito importante que sustenta a segurança criptográfica'
 slug: "principio-de-kerckhoffs"
 date: 2025-04-16T23:53:08+09:00
 tags: ["Princípio de Kerckhoffs", "Criptografia"]
 draft: false
 image: "img_2.webp"
 categories: ["Matemática, Criptografia e Quântica"]
+description: 'Uma explicação simples para iniciantes sobre o ''Princípio de Kerckhoffs'', essencial para aprender segurança da informação e tecnologia criptográfica. Explicaremos o conceito importante e os motivos que servem de base para a segurança moderna de que ''deve ser seguro mesmo que o mecanismo criptográfico seja descoberto''.'
 ---
 
 # "Princípio de Kerckhoffs"

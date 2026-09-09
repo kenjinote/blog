@@ -1,11 +1,12 @@
 ---
-title: "Die Vor- und Nachteile von Anti-Impf-Bewegungen"
+title: 'Die Vor- und Nachteile von Anti-Impf-Bewegungen und die Lehren aus der Epidemiologie: Was ist die „Illusion der Kausalität“, die die Corona-Pandemie hervorgehoben hat?'
 slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["Gesellschaftliche Probleme", "Gesundheit", "Informationskompetenz"]
 draft: false
 image: "img.webp"
 categories: ["Lifestyle & Vermischtes"]
+description: 'Wir erklären die Vor- und Nachteile der „Anti-Impf-Bewegung“ im Zusammenhang mit der COVID-19-Impfung und die Lehren der Epidemiologie. Wir verstehen kognitive Verzerrungen wie das „Confounding“ und die „Illusion der Kausalität“ in Fällen nach der Impfung und untersuchen die Bedeutung des wissenschaftlichen Denkens, das sich nicht von Medieninformationen irreführen lässt.'
 ---
 
 # Die Vor- und Nachteile von Anti-Impf-Bewegungen ―― Wie "gut gemeinte Angst" die Zukunft von 5000 Menschen tötete und die epidemiologischen Lehren, die wir daraus ziehen sollten

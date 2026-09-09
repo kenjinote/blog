@@ -7,13 +7,14 @@
 
 
 
-title: "La Torre de Hanói"
+title: '[Introducción a Python] Explicación del algoritmo de las ''Torres de Hanói'' resuelto mediante recursividad'
 slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00
 tags: ["La Torre de Hanói", "Algoritmo", "Python"]
 draft: false
 image: "img.webp"
 categories: ["Programación"]
+description: 'Explicamos claramente, con ejemplos de código en Python, el concepto de ''llamada recursiva'' en la programación, utilizando como tema el famoso rompecabezas de las ''Torres de Hanói''. Recomendado para principiantes que quieren aprender los fundamentos de los algoritmos.'
 ---
 
 

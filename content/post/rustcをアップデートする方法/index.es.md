@@ -2,13 +2,14 @@
 
 
 
-title: "Cómo actualizar rustc"
+title: 'Cómo actualizar el compilador de Rust (rustc) a la última versión'
 slug: "rustcをアップデートする方法"
 date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "ACTUALIZAR"]
 draft: false
 image: "img.webp"
 categories: ["Programación"]
+description: 'Explicamos una forma sencilla de actualizar rustc, el compilador de Rust, a su última versión. Simplemente ejecutando una línea de comando `rustup update` en la terminal o símbolo del sistema, puedes actualizar todo de manera masiva, incluyendo los componentes relacionados.'
 ---
 
 

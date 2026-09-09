@@ -1,11 +1,12 @@
 ---
-title: "在 Rust 中顯示 MessageBox"
+title: '使用 Rust 與 winapi 顯示 Windows 訊息方塊 (MessageBox) 的方法'
 slug: "在 Rust 中顯示 MessageBox"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["程式設計"]
+description: '說明如何在 Rust 中利用 `winapi` 與 `user32-sys` Crate，呼叫 Windows API 來顯示簡單的訊息方塊 (MessageBox)，涵蓋從建立專案到程式碼實作的步驟。'
 ---
 
 您可以按照以下步驟在 Rust 中顯示 MessageBox。

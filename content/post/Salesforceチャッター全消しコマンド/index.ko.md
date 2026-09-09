@@ -3,13 +3,14 @@
 
 
 
-title: "'Salesforce Chatter 전체 삭제 명령어'"
+title: 'Salesforce: 채터의 게시물과 첨부 파일을 모두 삭제하는 명령어'
 slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "채터"]
 draft: false
 image: "img_1.webp"
 categories: ["IT・테크놀로지"]
+description: 'Salesforce에서 조직의 저장소 용량이 부족할 때 유용한 채터의 모든 게시물, 첨부 파일, 휴지통 데이터를 일괄 삭제하는 명령어를 소개합니다. 개발자 콘솔의 익명 실행 창을 사용하여 빠르게 정리하는 방법입니다.'
 ---
 
 

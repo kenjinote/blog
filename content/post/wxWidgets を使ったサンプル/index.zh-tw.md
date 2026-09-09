@@ -1,11 +1,12 @@
 ---
-title: "使用 wxWidgets 的範例"
+title: 'wxWidgets 的使用與安裝方法及範例專案建立'
 slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "範例"]
 draft: false
 image: "img.webp"
 categories: ["程式設計"]
+description: '針對初學者淺顯易懂地解說 C++ 跨平台 GUI 函式庫「wxWidgets」的安裝步驟，以及如何使用 Visual Studio 建立範例專案的方法。'
 ---
 
 ## 什麼是 wxWidgets

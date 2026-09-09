@@ -1,11 +1,12 @@
 ---
-title: "كيفية تشغيل محرر Hidemaru باستخدام الأمر «hide»"
+title: 'تشغيل محرر Hidemaru بأمر "hide" واحد! طريقة إعداد مفيدة في Windows'
 slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["الأوامر", "محرر Hidemaru", "سجل الويندوز"]
 draft: false
 image: "img_2.webp"
 categories: ["الأدوات وبيئة التطوير"]
+description: 'نشرح كيفية تشغيل محرر Hidemaru بسرعة في Windows 10/11 بمجرد كتابة "hide" في "Run" أو موجه الأوامر. هي خطوات تخصيص مفيدة باستخدام App Paths في محرر التسجيل.'
 ---
 
 ## أقدم لكم كيفية تشغيل محرر Hidemaru باستخدام الأمر «hide».

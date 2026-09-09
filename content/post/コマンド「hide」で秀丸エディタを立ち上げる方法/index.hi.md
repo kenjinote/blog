@@ -1,11 +1,12 @@
 ---
-title: "'hide' कमांड के साथ हिदेमारू एडिटर (Hidemaru Editor) कैसे शुरू करें"
+title: '''hide'' कमांड से Hidemaru Editor को तुरंत शुरू करें! Windows में सुविधाजनक सेटिंग का तरीका'
 slug: "hide-command-ke-saath-hidemaru-editor-kaise-shuru-karein"
 date: 2024-03-29T23:45:37+09:00
 tags: ["कमांड", "हिदेमारू एडिटर", "रजिस्ट्री"]
 draft: false
 image: "img_2.webp"
 categories: ["उपकरण और विकास पर्यावरण"]
+description: 'Windows 10/11 में ''रन'' या कमांड प्रॉम्प्ट से ''hide'' टाइप करके Hidemaru Editor को जल्दी से शुरू करने का तरीका समझाया गया है। यह रजिस्ट्री एडिटर के ऐप पाथ्स का उपयोग करके एक सुविधाजनक कस्टमाइज़ेशन प्रक्रिया है।'
 ---
 
 ## यहाँ 'hide' कमांड के साथ हिदेमारू एडिटर (Hidemaru Editor) को शुरू करने का तरीका बताया गया है।

@@ -1,11 +1,12 @@
 ---
-title: "Editor Grafik"
+title: 'Buat Grafik dengan Mudah di Browser! Cara Menggunakan Editor Grafik Web Gratis yang Praktis'
 slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "grafik"]
 draft: false
 image: "img.webp"
 categories: ["Alat dan Lingkungan Pengembangan"]
+description: 'Memperkenalkan editor grafik berbasis web yang praktis untuk membuat bagan dan grafik dengan mudah hanya dengan memasukkan angka di browser. Juga menjelaskan fitur memindahkan elemen dengan mouse, membuat grafik berarah, dan kemampuan mengunduh hasil grafik sebagai gambar PNG.'
 ---
 # Editor Grafik
 

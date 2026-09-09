@@ -1,11 +1,12 @@
 ---
-title: "適合寫程式的字體集合"
+title: '程式設計推薦字型集｜易於閱讀且能提升開發效率的免費字型'
 slug: "適合寫程式的字體集合"
 date: 2024-03-30T02:21:31+09:00
 tags: ["程式設計", "字體"]
 draft: false
 image: "img.webp"
 categories: ["程式設計"]
+description: '介紹最適合寫程式的字型，例如JetBrains Mono、HackGen（白源）、Ricty Diminished、Cica、Migu等。提升編輯器的視覺清晰度，進而提高開發效率吧。'
 ---
 
 ## JetBrains Mono

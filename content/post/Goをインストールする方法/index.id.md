@@ -1,11 +1,12 @@
 ---
-title: "Cara Menginstal Go"
+title: 'Langkah Instalasi Bahasa Go (Golang) dan Cara Menjalankan Program Pertama'
 slug: "Cara Menginstal Go"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","instalasi"]
 draft: false
 image: "images/cover.webp"
 categories: ["pemrograman"]
+description: 'Menjelaskan untuk pemula cara menginstal bahasa pemrograman ''Go (Golang)'' yang dikembangkan oleh Google. Sangat cocok sebagai pengantar bahasa Go pertama Anda, mulai dari mendapatkan installer, hingga langkah pembuatan program Hello World, kompilasi, dan penjalanan.'
 ---
 # Pengantar
 Go adalah bahasa pemrograman yang relatif baru yang dirilis oleh Google pada tahun 2009.

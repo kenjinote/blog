@@ -1,11 +1,12 @@
 ---
-title: 'Snipping Toolの使い方'
+title: 'Windows標準「Snipping Tool」の使い方と画面録画・キャプチャ方法'
 slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "画像", "動画", "スクリーンショット", "録画", "キャプチャー"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'Windowsに標準搭載されている画面キャプチャツール「Snipping Tool」の基本的な使い方を解説します。ショートカットキーを使った素早い起動方法から、画像の一部切り取り保存、動画の画面録画手順まで分かりやすく紹介します。'
 ---
 
 ## Snipping Toolとは

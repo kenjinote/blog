@@ -1,5 +1,5 @@
 ---
-title: "【完全指南】量子電腦原理與機制：從量子力學到演算法與未來展望"
+title: '量子電腦的原理與機制【完全指南】從摩爾定律的極限到量子力學'
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"
 tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
@@ -7,6 +7,7 @@ categories: ["Math, Crypto, Quantum"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: '從古典電腦的物理極限與摩爾定律的終結，到量子穿隧效應等量子力學效應的壁壘，徹底解說量子電腦拉開序幕的背景。這是了解次世代資訊處理技術的完全指南第 1 章。'
 ---
 
 

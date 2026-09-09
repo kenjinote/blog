@@ -6,13 +6,14 @@
 
 
 
-title: "'좋아하는 팝송'"
+title: '추천 팝송 명곡 모음: 시대를 초월해 사랑받는 대표 히트송'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00
 tags: ["팝송", "음악"]
 draft: false
 image: "img.webp"
 categories: ["라이프스타일・잡기"]
+description: 'The Beatles, Coldplay, Ed Sheeran 등 시대를 초월해 사랑받는 추천 팝송 명곡을 소개합니다. 마음에 와닿는 발라드부터 텐션이 오르는 팝까지, 꼭 들어봐야 할 대표 히트송을 정리했습니다.'
 ---
 
 

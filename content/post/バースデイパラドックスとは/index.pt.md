@@ -1,5 +1,5 @@
 ---
-title: "O que é o Paradoxo do Aniversário?"
+title: 'O que é o Paradoxo do Aniversário? Por que a probabilidade de duas pessoas fazerem aniversário no mesmo dia entre 23 pessoas ultrapassa 50%'
 slug: "バースデイパラドックスとは"
 date: 2024-04-02T01:20:50+09:00
 tags: ["Matemática", "Paradoxo"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matemática, Criptografia, Quântica"]
+description: 'Se 23 pessoas se reunirem, a probabilidade de duas fazerem aniversário no mesmo dia é superior a 50%!? Explicaremos o ''Paradoxo do Aniversário'', um fenômeno estranho e contra-intuitivo, usando razões e fórmulas matemáticas fáceis de entender. Vamos experimentar a maravilha das probabilidades.'
 ---
 
 ## Você conhece o Paradoxo do Aniversário?

@@ -1,11 +1,12 @@
 ---
-title: 'I Started a Blog'
+title: 'Started a Blog with Static Site Generator Hugo! Recording Daily Life and Tech Memos'
 slug: "ブログ、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Miscellaneous"]
 draft: false
 image: "images/komeda.webp"
 categories: ["Blog Management"]
+description: 'I opened a new personal blog using the static site generator ''Hugo''. I plan to casually post technical memorandums, programming codes, and small daily events as a notepad.'
 ---
 
 ## I Started a Blog

@@ -1,11 +1,12 @@
 ---
-title: 'Send Gmail from curl'
+title: 'How to Send Email from Gmail using the curl Command'
 slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["AI & Technology"]
+description: 'We explain how to send an email via a Gmail account using the command line tool ''curl''. We detail the procedure from obtaining a Google app password to specifying curl options and the commands for creating and sending an email body file.'
 ---
 
 # Send Gmail from curl

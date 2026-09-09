@@ -1,11 +1,12 @@
 ---
-title: "推薦軌跡球 Deft Pro (M-DPT1MRBK)"
+title: 'Elecom Deft Pro 評測！搭載 8 個按鍵的軌跡球滑鼠優缺點'
 slug: "trackball-deft-pro-m-dpt1mrbk-recommendation"
 date: 2023-05-02T23:28:33+09:00
 tags: ["軌跡球", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
 categories: ["IT與技術"]
+description: '使用 Elecom 中型軌跡球滑鼠「Deft Pro（M-DPT1MRBK）」一週的評測。解說減輕手腕負擔與豐富按鍵自訂等優點，以及清潔費時或操作手感需適應等缺點。'
 ---
 
 # 關於 Elecom 軌跡球 Deft Pro M-DPT1MRBK

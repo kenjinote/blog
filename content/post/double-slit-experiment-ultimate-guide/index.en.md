@@ -1,5 +1,5 @@
 ---
-title: "[Complete Guide] Everything About the 'Double-Slit Experiment', the Most Beautiful Experiment in Physics: The Quantum World and the True Nature of Reality"
+title: '[Comprehensive] Thorough and Easy-to-Understand Explanation of Quantum Mechanics'' Greatest Mystery ''Double-Slit Experiment'''
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Physics", "Quantum Mechanics", "Double-Slit Experiment", "Schrödinger Equation"]
@@ -7,6 +7,7 @@ categories: ["Physics & Science"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: 'A thorough explanation of the ''double-slit experiment'', known as the most beautiful experiment in the history of physics. We summarize the abnormalities of the micro world, where the common sense of the macro world does not apply, and the profound mysteries of quantum mechanics in a way that is easy for beginners to understand.'
 ---
 ## 1. [Introduction] What is the Double-Slit Experiment?
 

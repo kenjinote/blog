@@ -1,11 +1,12 @@
 ---
-title: "Les mérites et les démérites des anti-vaccins"
+title: 'Les mérites et démérites de l''anti-vaccin et les leçons de l''épidémiologie : Qu''est-ce que « l''illusion de causalité » révélée par la pandémie ?'
 slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00
 tags: ["problèmes sociaux", "santé", "littératie informationnelle"]
 draft: false
 image: "img.webp"
 categories: ["style de vie / notes diverses"]
+description: 'Nous expliquons les mérites et démérites de l''« anti-vaccin » entourant la vaccination contre le COVID-19 et les leçons de l''épidémiologie. Nous comprenons les biais cognitifs comme les « confusions » et l''« illusion de causalité » dans les cas post-vaccination, et explorons l''importance d''une pensée scientifique non induite en erreur par les médias.'
 ---
 
 # Les mérites et les démérites des anti-vaccins - Comment "l'anxiété de bonne volonté" a tué l'avenir de 5 000 personnes, et les leçons épidémiologiques que nous devrions en tirer

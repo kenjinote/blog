@@ -1,11 +1,12 @@
 ---
-title: "\"Japaner First\" – Schein und Wirklichkeit: Japans Verteidigungsstrategie der \"Koexistenz\" im Jahr 2026"
+title: 'Das virtuelle und das reale Bild von „Japaner zuerst“: Die Herausforderungen vor denen Japan 2026 steht und der Weg zur Koexistenz'
 slug: "「日本人ファースト」について思うこと"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Japaner First", "Politik", "Gesellschaftsprobleme"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technologie"]
+description: 'Wir analysieren die Realität der steigenden Preise und der sinkenden Geburtenrate gepaart mit einer alternden Bevölkerung, die hinter dem im Japan von 2026 populären Begriff „Japaner zuerst“ stehen. Wir schließen emotionale Argumente aus und betrachten die wahre Natur gesellschaftlicher Probleme auf Basis objektiver Daten sowie die zukünftige Art der Koexistenz.'
 ---
 
 # "Japaner First" – Schein und Wirklichkeit: Japans Verteidigungsstrategie der "Koexistenz" im Jahr 2026

@@ -1,11 +1,12 @@
 ---
-title: '关于按钮'
+title: 'Windows API中按钮（GUI控件）的创建与事件处理的实现方法'
 slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["按钮", "GUI"]
 draft: false
 image: "img.webp"
 categories: ["IT·技术"]
+description: '针对GUI应用程序的基础——“按钮”，我们将结合示例代码解说如何使用Windows标准API（Win32 API）进行创建，以及点击时的事件处理（WM_COMMAND消息）的实现方法。'
 ---
 
 # 什么是按钮

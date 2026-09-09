@@ -1,5 +1,5 @@
 ---
-title: "【Compreensão Completa com Fórmulas】Por que o 'GNFS', o mais forte algoritmo clássico, é derrotado pelos algoritmos quânticos? A mudança de paradigma da fatoração"
+title: 'Quebrando a Criptografia RSA? GNFS e o Algoritmo de Shor Explicados por Fórmulas Matemáticas'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Computador Quântico", "GNFS", "Algoritmo de Shor", "Criptoanálise", "Matemática"]
@@ -7,6 +7,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Matemática, Criptografia e Quântica"]
+description: 'O problema da fatoração de inteiros, que garante a segurança da criptografia RSA. Explicamos detalhadamente, usando equações e diagramas conceituais, desde o mecanismo matemático do mais forte algoritmo clássico, o ''General Number Field Sieve (GNFS)'', até o motivo pelo qual o ''Algoritmo de Shor'' num computador quântico consegue derrotá-lo.'
 ---
 
 A segurança da informação na sociedade da internet moderna é protegida por sistemas de criptografia de chave pública, como a criptografia RSA. A base para a segurança da criptografia RSA depende do fato de que **"a fatoração de números compostos gigantescos é computacionalmente extremamente difícil"** .

@@ -1,11 +1,12 @@
 ---
-title: "À propos des Marques Obligatoires dans les Formulaires de Saisie"
+title: 'Optimisation de la marque « obligatoire » des formulaires de saisie | Les meilleures pratiques des directives UI internationales'
 slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formulaire", "Développement Web", "UX"]
 draft: false
 image: "img.webp"
 categories: ["Gestion du Blog"]
+description: 'Nous expliquons les meilleures pratiques pour la marque « champ obligatoire » dans les formulaires web, sur la base des directives UI internationales. Nous résumons comment utiliser correctement l''astérisque (*), la mention explicite de « Required », et l''utilisation des attributs ARIA pour améliorer l''accessibilité.'
 ---
 
 Nous avons résumé les informations concernant la marque "obligatoire" sur les interfaces utilisateur (formulaires) à l'étranger, accompagnées de documents de directives UI.

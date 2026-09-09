@@ -1,11 +1,12 @@
 ---
-title: 'List of Programming Languages'
+title: 'From Major to Minor! List of Programming Languages and Their Characteristics'
 slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["Programming Language"]
 draft: true
 image: "img.webp"
 categories: ["Programming"]
+description: 'We have listed various programming languages, from C, Python, Java, and JavaScript to Rust, Go, OCaml, and Clojure. Check the overview and characteristics of each language as a reference for development and learning.'
 ---
 
 # List of Programming Languages

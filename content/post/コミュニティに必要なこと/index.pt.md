@@ -1,11 +1,12 @@
 ---
-title: "O que uma comunidade precisa"
+title: 'O que é necessário para uma boa comunidade? Dicas de gerenciamento aprendidas com as diretrizes do Scratch'
 slug: "o-que-uma-comunidade-precisa"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Comunidade", "Diversos"]
 draft: false
 image: "img.webp"
 categories: ["TI・Tecnologia"]
+description: 'Discutimos os elementos essenciais para administrar uma comunidade saudável e confortável a partir das sofisticadas diretrizes da comunidade do site de aprendizado de programação ''Scratch''. Apresentamos perspectivas importantes aplicáveis a qualquer grupo, como o respeito aos outros e a garantia de segurança.'
 ---
 # O que uma comunidade precisa
 

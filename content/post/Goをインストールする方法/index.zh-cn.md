@@ -1,11 +1,12 @@
 ---
-title: '如何安装 Go'
+title: 'Go语言（Golang）的安装步骤与首次程序运行方法'
 slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","安装"]
 draft: false
 image: "images/cover.webp"
 categories: ["编程"]
+description: '面向初学者讲解Google开发的编程语言“Go（Golang）”的安装方法。涵盖从获取安装程序，到创建Hello World程序、编译、运行的步骤，非常适合初次接触Go语言的入门者。'
 ---
 # 简介
 Go 是 Google 于 2009 年发布的一种相对较新的编程语言。

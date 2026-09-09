@@ -1,11 +1,12 @@
 ---
-title: '使用自签名证书实现 MSIX 的安装'
+title: 'Windows开发者必看！为MSIX添加自签名证书以进行本地安装的方法'
 slug: "msixに自己証明書をつけてインストールできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "自签名证书", "安装"]
 draft: false
 image: "img.webp"
 categories: ["IT・技术"]
+description: '针对便于测试分发Windows应用程序的MSIX包，使用PowerShell命令通俗易懂地讲解如何创建并赋予自签名证书（无需商业证书），从而使其能在本地环境中安装的具体步骤。'
 ---
 
 # 使用自签名证书实现 MSIX 的安装

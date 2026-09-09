@@ -1,11 +1,12 @@
 ---
-title: 'Recommendation for the Deft Pro (M-DPT1MRBK) Trackball'
+title: 'Elecom Deft Pro Review! Pros and Cons of an 8-Button Trackball Mouse'
 slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technology"]
+description: 'A review of using Elecom''s medium-sized trackball mouse, ''Deft Pro (M-DPT1MRBK)'', for a week. Explains everything from pros like reduced wrist strain and abundant button assignments to cons like cleaning effort and the learning curve for operation.'
 ---
 
 # About the Elecom Trackball Deft Pro M-DPT1MRBK

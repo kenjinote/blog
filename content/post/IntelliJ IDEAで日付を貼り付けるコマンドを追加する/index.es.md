@@ -2,13 +2,14 @@
 
 
 
-title: "Añadir un comando para insertar la fecha en IntelliJ IDEA"
+title: 'Cómo crear un atajo para insertar la fecha actual en IntelliJ IDEA'
 slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["IT y Tecnología"]
+description: 'Presentamos detalladamente, paso a paso, cómo configurar una "Live Template" en IntelliJ IDEA para insertar automáticamente la fecha y la hora actuales, muy útil cuando escribes en un blog u otras tareas similares. Ahórrate el esfuerzo de escribirla cada vez.'
 ---
 
 

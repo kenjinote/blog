@@ -1,11 +1,12 @@
 ---
-title: "Torre de Hanói"
+title: '[Introdução ao Python] Explicação do algoritmo ''Torre de Hanói'' resolvido com processo recursivo'
 slug: "torre-de-hanoi"
 date: 2025-04-17T22:23:14+09:00
 tags: ["Torre de Hanói", "Algoritmo", "Python"]
 draft: false
 image: "img.webp"
 categories: ["Programação"]
+description: 'Explicamos o conceito de ''chamada recursiva'' em programação usando como tema o famoso quebra-cabeça ''Torre de Hanói'', acompanhado de código de exemplo Python. Recomendado para iniciantes que querem aprender os fundamentos dos algoritmos.'
 ---
 
 # Torre de Hanói

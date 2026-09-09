@@ -1,11 +1,12 @@
 ---
-title: '[Complete Anatomy] Understanding the Strongest Cryptanalysis Algorithm "GNFS" by Implementing it in C++'
+title: 'Implementing General Number Field Sieve (GNFS) in C++ | Mechanism of RSA Cryptanalysis Algorithm'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Math", "Cryptography"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
 categories: ["Math/Cryptography/Quantum"]
+description: 'A thorough explanation with C++ implementation code of the mechanism of the ''General Number Field Sieve (GNFS)'', a prime factorization algorithm used to crack RSA encryption. Must-see content for programming enthusiasts, approaching the abyss of calculation logic using the Boost library and algebraic number theory.'
 ---
 
 # [Complete Anatomy] Understanding the Strongest Cryptanalysis Algorithm "GNFS" by Implementing it in C++

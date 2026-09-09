@@ -1,10 +1,11 @@
 ---
-title: "LoadIcon tidak perlu memanggil DestroyIcon"
+title: 'Alasan Mengapa Ikon yang Diperoleh dengan Fungsi LoadIcon Tidak Memerlukan DestroyIcon'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["ikon", "LoadIcon", "DestroyIcon", "pemrograman Windows"]
 draft: false
 categories: ["Pemrograman"]
+description: 'Menjelaskan kondisi tentang perlu tidaknya memanggil DestroyIcon untuk sumber daya ikon yang didapatkan melalui LoadIcon atau LoadImage dari Windows API. Kami merangkum spesifikasi yang benar untuk mencegah kebocoran sumber daya (resource leak).'
 ---
 
 # Tentang kebutuhan untuk memanggil DestroyIcon

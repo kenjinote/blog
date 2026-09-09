@@ -1,11 +1,12 @@
 ---
-title: "Mengapa Saya Menyukai Matematika dan Komputer"
+title: 'Mengapa Saya Menyukai Matematika dan Komputer? Menelaah Daya Tarik dan Alasan Ketertarikannya'
 slug: "mengapa-saya-menyukai-matematika-dan-komputer"
 date: 2022-09-23T01:56:52+09:00
 tags: ["catatan-kecil"]
 draft: false
 image: "img.webp"
 categories: ["Matematika, Kriptografi, dan Kuantum"]
+description: 'Mengkaji alasan mengapa matematika dan komputer begitu menarik. Membahas pesona mendalam dari keduanya, karena berlaku adil bagi semua orang dengan aturan yang jelas, jawaban yang selamanya benar, selalu memiliki masalah yang belum terpecahkan, serta menawarkan tingkat kesulitan yang pas.'
 ---
 
 ## Saya berpikir tentang mengapa saya menyukai matematika dan komputer

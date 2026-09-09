@@ -1,11 +1,12 @@
 ---
-title: 'macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法'
+title: 'Macのコピペ用ショートカットキーをWindowsと同じ設定に変更する方法'
 slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "ショートカットキー", "コピー＆ペースト"]
 draft:
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'MacとWindowsを併用する際に便利な、コピー＆ペーストのショートカットキーをWindows風（Ctrlキーベース）に合わせるための、システム環境設定からの修飾キー変更手順を紹介します。'
 ---
 
 # はじめに

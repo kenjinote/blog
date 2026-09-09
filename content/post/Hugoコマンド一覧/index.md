@@ -1,11 +1,12 @@
 ---
-title: 'Hugoコマンド一覧'
+title: 'Hugo CLIのインストールとよく使う基本コマンド一覧'
 slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "コマンド"]
 draft: false
 image: "img.webp"
 categories: ["ブログ運営"]
+description: '高速な静的サイトジェネレーターHugoのCLIインストール方法と、ブログ運営で頻繁に使用する基本コマンド一覧を紹介します。新規サイト立ち上げ、記事の作成、ローカルサーバー起動、ビルドなど、Hugo初心者が覚えておくべき操作を解説します。'
 ---
 
 # Hugo とは

@@ -1,11 +1,12 @@
 ---
-title: "Ein einfaches Fenster in Rust anzeigen"
+title: 'Wie man mit Rust und winapi ein einfaches Windows-Fenster erstellt und anzeigt'
 slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "Fenster"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programmierung"]
+description: 'Stellt vor, wie man in Rust mit `winapi` ein einfaches Windows-Fenster erstellt und anzeigt. Erklärt den Quellcode, der die Grundlage der GUI-Programmierung bildet, im Detail, von den Einstellungen in Cargo.toml bis zur Implementierung der Fensterprozedur.'
 ---
 
 Ein einfaches Fenster in Rust anzeigen

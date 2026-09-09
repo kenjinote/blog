@@ -1,10 +1,11 @@
 ---
-title: "À propos de Yosano Akiko"
+title: 'Qui est Akiko Yosano ? Explication de sa vie et de ses œuvres majeures comme « Midaregami » et « Kimi Shinitamou Koto Nakare »'
 slug: "a-propos-de-yosano-akiko"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Yosano Akiko"]
 draft: false
 categories: ["Informatique et Technologie"]
+description: 'Nous expliquons la vie et les œuvres majeures de la poétesse Akiko Yosano, active de l''ère Meiji à l''ère Showa. Nous présentons clairement ses réalisations, comme son premier recueil de poèmes « Midaregami » (Cheveux emmêlés) exprimant passionnément les sentiments amoureux féminins, et son poème pacifiste « Kimi Shinitamou Koto Nakare » (Ne donne pas ta vie) critiquant la guerre russo-japonaise.'
 ---
 
 ![img.png](img.webp)

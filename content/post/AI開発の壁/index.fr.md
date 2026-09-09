@@ -1,11 +1,12 @@
 ---
-title: "Le Mur du Développement de l'IA"
+title: 'Le mur du développement de l''IA était haut... Raisons et réalités pour lesquelles la création d''applications est « un enfer à partir du 8ème palier »'
 slug: "le-mur-du-developpement-de-l-ia"
 date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "développement", "mur", "poème"]
 draft: false
 image: "img_1.webp"
 categories: ["IA et Technologie"]
+description: 'L''ère où l''on peut « facilement créer des applications en s''appuyant sur l''IA » est-elle réelle ? Même si le no-code ou le code généré par l''IA permettent d''atteindre facilement le 8ème palier, l''enfer des ajustements finaux et des corrections de bugs attend les humains par la suite. Nous parlons ouvertement des pièges réels du développement de l''IA et de la véritable nature du « mur » auquel nous sommes confrontés.'
 ---
 
 # Le Mur du Développement de l'IA

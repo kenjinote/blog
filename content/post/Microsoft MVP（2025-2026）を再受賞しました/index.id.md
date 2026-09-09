@@ -1,11 +1,12 @@
 ---
-title: "Saya kembali menerima penghargaan Microsoft MVP (2025-2026)"
+title: 'Laporan Penerimaan Kembali Penghargaan Microsoft MVP (2025-2026) dan Aktivitas Sejauh Ini'
 slug: "Saya kembali menerima penghargaan Microsoft MVP (2025-2026)"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["Alat dan Lingkungan Pengembangan"]
+description: 'Ini adalah laporan bahwa saya menerima penghargaan Microsoft MVP (2025-2026) untuk yang ke-9 kalinya secara total. Bersama dengan penjelasan sistem MVP yang berkontribusi pada komunitas teknologi, kami menyajikan kilas balik penyebaran informasi teknologi dan aktivitas komunitas yang sangat saya fokuskan selama setahun terakhir.'
 ---
 
 # Saya kembali menerima penghargaan Microsoft MVP (2025-2026)!

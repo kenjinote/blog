@@ -1,11 +1,12 @@
 ---
-title: 'How to install the text editor micro on Windows'
+title: 'Use it on Windows! How to Install the Lightweight Text Editor ''micro'''
 slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "text editor"]
 draft: false
 image: "img.webp"
 categories: ["Tools & Development Environment"]
+description: 'Clearly explains the steps to install ''micro'', a terminal-based text editor that works comfortably in the Command Prompt, on Windows and set environment variables so it''s ready to use.'
 ---
 
 ## Download micro

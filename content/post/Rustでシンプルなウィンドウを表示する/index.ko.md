@@ -3,13 +3,14 @@
 
 
 
-title: "'Rust에서 간단한 창 표시하기'"
+title: 'Rust와 winapi를 사용하여 Windows의 간단한 창을 생성 및 표시하는 방법'
 slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","창"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["프로그래밍"]
+description: 'Rust에서 `winapi`를 사용하여 Windows의 간단한 창을 만들고 표시하는 방법을 소개합니다. Cargo.toml 설정부터 창 프로시저의 구현까지 GUI 프로그래밍의 기초가 되는 소스 코드를 자세히 설명합니다.'
 ---
 
 

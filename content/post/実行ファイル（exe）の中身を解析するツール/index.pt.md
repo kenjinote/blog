@@ -1,11 +1,12 @@
 ---
-title: "Ferramentas para analisar o conteúdo de arquivos executáveis (exe)"
+title: '4 ferramentas úteis que podem analisar e extrair o conteúdo de arquivos executáveis (exe) do Windows'
 slug: "ferramentas-para-analisar-o-conteudo-de-arquivos-executaveis-exe"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "arquivo executável", "análise"]
 draft: false
 image: "img_1.webp"
 categories: ["PC e Gadgets"]
+description: 'Apresentamos ferramentas recomendadas capazes de analisar e extrair arquivos executáveis (exe) do Windows. Explicaremos de forma fácil de entender como verificar a estrutura do formato PE, extrair recursos e editar binários usando o 7-Zip, Resource Hacker, etc.'
 ---
 
 # O que é um arquivo executável (exe)

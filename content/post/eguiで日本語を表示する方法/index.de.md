@@ -1,11 +1,12 @@
 ---
-title: "Wie man Japanisch in egui anzeigt"
+title: 'Wie man japanische Schriftarten in der Rust GUI-Bibliothek „egui“ lädt und anzeigt'
 slug: "wie-man-japanisch-in-egui-anzeigt"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI-Bibliothek", "Japanisch"]
 draft: false
 image: "img.webp"
 categories: ["IT und Technologie"]
+description: 'Wir erklären die Implementierungsmethode zur korrekten Darstellung von Japanisch in der leichtgewichtigen GUI-Bibliothek „egui“ für Rust. Wir stellen konkrete Codebeispiele vor, um die Windows-Schriftart Meiryo zu laden und auf Anwendungen anzuwenden.'
 ---
 
 ## Holen Sie sich das egui Beispiel

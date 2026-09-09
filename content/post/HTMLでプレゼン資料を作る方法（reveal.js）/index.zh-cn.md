@@ -1,11 +1,12 @@
 ---
-title: '使用HTML制作演示文稿的方法（reveal.js）'
+title: 'reveal.js使用教程：用HTML和Markdown制作演示文稿'
 slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "演示文稿"]
 draft: false
 image: "img.webp"
 categories: ["编程"]
+description: '本文讲解能用HTML和Markdown直观创建演示文稿的工具“reveal.js”的安装和基本使用方法。支持动画和PDF输出，并介绍与Git等版本控制系统兼容性极佳的运用方法。'
 ---
 
 # 使用HTML制作演示文稿的方法

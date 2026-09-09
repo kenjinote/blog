@@ -1,11 +1,12 @@
 ---
-title: "Koneksi Jarak Jauh yang Mudah dengan TeamViewer"
+title: '[Untuk Pemula] Cara Mudah Menghubungkan ke Desktop Jarak Jauh dengan TeamViewer'
 slug: "koneksi-jarak-jauh-mudah-teamviewer"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Perintah", "Koneksi Jarak Jauh"]
 draft: false
 image: "img.webp"
 categories: ["IT / Teknologi"]
+description: 'Menjelaskan cara terhubung ke desktop jarak jauh dengan mudah menggunakan TeamViewer. Kami juga memperkenalkan trik praktis untuk mengotomatiskan dan mempersingkat koneksi dengan pintasan dengan menentukan ID dan kata sandi dari baris perintah.'
 ---
 
 # Koneksi Jarak Jauh yang Mudah dengan TeamViewer

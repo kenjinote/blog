@@ -1,11 +1,12 @@
 ---
-title: "FizzBuzz"
+title: 'O que é o Desafio ''FizzBuzz''? Uma Introdução à Programação e Como Codificar em Python'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algoritmo"]
 draft: false
 image: "img.webp"
 categories: ["Programação"]
+description: 'Explicamos claramente a visão geral do problema ''FizzBuzz'', muito comum em entrevistas para programadores, e apresentamos exemplos práticos de código em Python (condicionais). Leitura obrigatória para iniciantes e para quem deseja rever o básico.'
 ---
 
 ## Afinal, o que é FizzBuzz?

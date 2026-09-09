@@ -1,11 +1,12 @@
 ---
-title: "Wie man das Ranking beliebter Seiten aus Google Analytics abruft und einbindet"
+title: 'Wie man mit Ranklet ein Ranking der beliebtesten Artikel aus Google Analytics anzeigt'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["Blog-Betrieb"]
+description: 'Wir erklären die Verwendung von „Ranklet“, einem Dienst, mit dem Sie in Verbindung mit Google Analytics ganz einfach ein automatisches Ranking der beliebtesten Seiten Ihrer Website anzeigen können. Am Beispiel eines HUGO-Blogs stellen wir die Einrichtungsschritte und die Anpassung von HTML/CSS-Vorlagen vor.'
 ---
 
 ## Einleitung

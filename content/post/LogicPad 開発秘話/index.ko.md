@@ -7,13 +7,14 @@
 
 
 
-title: "'LogicPad 개발 비화'"
+title: '로우코드 도구 ''LogicPad'' 개발 비화: 왜 이것을 만들었는가?'
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "개발", "비화"]
 draft: false
 image: "img.webp"
 categories: ["IT·테크놀로지"]
+description: '''코드는 쓸 수 없지만 로직은 있는 사람''을 위한 로우코드 도구 ''LogicPad''의 탄생 비화. 개발 이면에 있는 작성자의 개인적인 생각이나 자신의 커리어를 마주하는 방식에 대해 열정적으로 이야기합니다.'
 ---
 
 

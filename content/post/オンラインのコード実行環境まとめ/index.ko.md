@@ -4,13 +4,14 @@
 
 
 
-title: "【언어별】 온라인 코드 실행 환경 정리"
+title: '[언어별] 브라우저에서 실행되는! 무료 온라인 프로그래밍 코드 실행 환경 모음'
 slug: "オンラインのコード実行環境まとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["온라인", "코드 실행 환경", "프로그래밍"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: '환경 구축 없이 손쉽게 프로그래밍을 시작할 수 있는 편리한 온라인 코드 실행 환경을 언어별(Python, JavaScript, C++ 등)로 정리했습니다. Google Colab이나 AWS Cloud9 등의 특징을 자세히 해설합니다.'
 ---
 
 

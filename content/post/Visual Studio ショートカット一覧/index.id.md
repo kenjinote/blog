@@ -1,11 +1,12 @@
 ---
-title: "Daftar Pintasan Visual Studio"
+title: 'Daftar Pintasan Keyboard Visual Studio yang Berguna [Peningkatan Efisiensi Kerja]'
 slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Pintasan" ]
 draft: false
 image: "img.webp"
 categories: ["Alat dan Lingkungan Pengembangan"]
+description: 'Kami merangkum daftar pintasan keyboard yang berguna di Visual Studio (VS2022) yang secara dramatis meningkatkan efisiensi pengembangan. Memilih dan memperkenalkan dengan saksama pintasan penting yang sering digunakan saat memprogram, seperti penelusuran kesalahan (debugging), pembangunan (building), dan pengoperasian penanda (bookmark).'
 ---
 
 # Daftar Pintasan Visual Studio

@@ -6,13 +6,14 @@
 
 
 
-title: "'Snipping Tool 사용법'"
+title: 'Windows 기본 ''캡처 도구(Snipping Tool)'' 사용법과 화면 녹화 및 캡처 방법'
 slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "이미지", "동영상", "스크린샷", "녹화", "캡처"]
 draft: false
 image: "img.webp"
 categories: ["IT・테크놀로지"]
+description: 'Windows에 기본으로 탑재된 화면 캡처 도구인 ''캡처 도구(Snipping Tool)''의 기본적인 사용법을 설명합니다. 단축키를 이용한 빠른 실행 방법부터 이미지의 일부 잘라내어 저장하기, 동영상 화면 녹화 절차까지 알기 쉽게 소개합니다.'
 ---
 
 

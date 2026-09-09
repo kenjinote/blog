@@ -1,11 +1,12 @@
 ---
-title: 'eguiを使ってみる'
+title: 'Rustの軽量GUIライブラリ「egui」の始め方とサンプル実行手順'
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "GUIライブラリ"]
 draft: false
 image: "demo.gif"
 categories: ["IT・テクノロジー"]
+description: 'Rustで手軽に扱えるGUIライブラリ「egui」の基本的な使い方を紹介します。GitHubからテンプレートをクローンし、cargo runコマンドでサンプルアプリを起動・実行するまでの簡単な手順を解説します。'
 ---
 
 # eguiとは

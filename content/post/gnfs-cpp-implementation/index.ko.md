@@ -7,13 +7,14 @@
 
 
 
-title: '[완전 해부] 최강의 암호 해독 알고리즘 ''GNFS''를 C++로 구현하고 이해하기'
+title: '일반 수체 체(GNFS)를 C++로 구현｜RSA 암호 해독 알고리즘의 원리'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "수학", "암호"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
 categories: ["수학·암호·양자"]
+description: 'RSA 암호 해독에 사용되는 소인수분해 알고리즘 ''일반 수체 체(GNFS)''의 원리를 C++ 구현 코드와 함께 철저히 해설합니다. Boost 라이브러리를 활용한 계산 로직이나 대수적 정수론의 심연에 다가가는, 프로그래밍 애호가라면 꼭 봐야 할 내용입니다.'
 ---
 
 

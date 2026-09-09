@@ -1,11 +1,12 @@
 ---
-title: "Menambahkan grep Hidemaru Editor ke menu klik kanan File Explorer"
+title: 'Cara Menambahkan Fitur grep Hidemaru Editor ke Menu Klik Kanan di Windows'
 slug: "Menambahkan grep Hidemaru Editor ke menu klik kanan File Explorer"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "File Explorer", "Menu klik kanan", "grep", "Registry"]
 draft: false
 image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
+description: 'Memperkenalkan langkah pengaturan yang berguna untuk menambahkan fitur grep Hidemaru Editor ke menu klik kanan di Explorer pada Windows 10/11. Menjelaskan cara mudahnya dengan jelas, menggunakan file pendaftaran registri.'
 ---
 
 Kami akan menunjukkan cara menambahkan fungsi grep dari Hidemaru Editor ke menu klik kanan di File Explorer pada Windows 10/11.

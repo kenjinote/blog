@@ -1,5 +1,5 @@
 ---
-title: "Panduan Lengkap: Prinsip dan Mekanisme Komputer Kuantum"
+title: 'Prinsip dan Mekanisme Komputer Kuantum [Cakupan Penuh] Dari Batas Hukum Moore hingga Mekanika Kuantum'
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"
 tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
@@ -7,6 +7,7 @@ categories: ["Math, Crypto, Quantum"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: 'Kami menjelaskan secara tuntas latar belakang yang mengarah pada dimulainya komputer kuantum, dari batas fisik komputer klasik dan berakhirnya Hukum Moore, hingga hambatan efek mekanika kuantum seperti efek terowongan kuantum. Ini adalah bab pertama dari panduan lengkap untuk memahami teknologi pemrosesan informasi generasi berikutnya.'
 ---
 
 

@@ -1,11 +1,12 @@
 ---
-title: "Cara Mengatur Domain Kustom untuk Repositori Github"
+title: 'Cara Mengatur Domain Kustom ke Repositori GitHub | Edisi Onamae.com'
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
 image: "images/octocat.webp"
 categories: ["ツール・開発環境"]
+description: 'Menjelaskan langkah-langkah mengatur domain kustom untuk repositori GitHub (GitHub Pages). Kali ini, kami memperkenalkan langkah spesifik dari menambahkan/mengubah A record DNS dari layar manajemen ''Onamae.com'' hingga mengintegrasikannya dengan GitHub.'
 ---
 Untuk mengatur domain kustom pada repositori Github, Anda perlu mengubah pengaturan DNS domain tersebut.
 Di sini, kami berasumsi bahwa Anda mengelola domain Anda menggunakan

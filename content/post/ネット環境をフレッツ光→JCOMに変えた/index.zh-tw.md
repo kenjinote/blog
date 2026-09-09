@@ -1,11 +1,12 @@
 ---
-title: "把網路環境從Flet's光換成了J:COM"
+title: '將 FLET''S 光纖換成 J:COM 的結果！關於月租費與通訊速度的真實感想'
 slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flet's光","網路線路"]
 draft: false
 image: "jcom.webp"
 categories: ["IT・科技"]
+description: '將家裡網路從 FLET''S 光纖換成 J:COM 的體驗談。毫無保留地評測實際的使用感受，包含月租費的節省效果、下載速度提升、上傳速度反而下降的點，以及通訊穩定性等。'
 ---
 
 # 自宅的網路環境從Flet's光變更為J:COM

@@ -1,11 +1,12 @@
 ---
-title: "Como remover em lote metadados (informações pessoais) do Excel, Word, etc. usando o PowerShell"
+title: 'Como excluir metadados (informações pessoais) do Excel e Word em lote usando PowerShell'
 slug: "Como remover metadados (informações pessoais) do Excel com o PowerShell"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Metadados", "Informações Pessoais"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["Programação"]
+description: 'Explicamos como remover metadados, como o criador, incluídos em arquivos do Office usando o PowerShell. Desde o processamento de um único arquivo até um script de remoção em lote para arquivos Excel e Word em uma pasta, apresentamos uma técnica de automação conveniente para evitar o vazamento de informações ao compartilhar externamente.'
 ---
 
 # "Como remover em lote metadados (informações pessoais) do Excel, Word, etc. usando o PowerShell"

@@ -1,5 +1,5 @@
 ---
-title: "[Guia Completo] Tudo Sobre a Experiência da \"Dupla Fenda\", a Mais Bela da Física: O Mundo Quântico e a Verdadeira Natureza da Realidade"
+title: '[Guia Completo] Entenda o ''Experimento da Dupla Fenda'', o Maior Mistério da Mecânica Quântica'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Física", "Mecânica Quântica", "Experiência da Dupla Fenda", "Equação de Schrödinger"]
@@ -7,6 +7,7 @@ categories: ["Física e Ciência"]
 math: true
 mermaid: true
 image: "cover.webp"
+description: 'Uma análise detalhada sobre o ''Experimento da Dupla Fenda'', frequentemente considerado o experimento mais bonito da história da física. Resumimos de forma clara e acessível aos iniciantes as anomalias do mundo microscópico, onde o senso comum macroscópico falha, e os profundos mistérios da mecânica quântica.'
 ---
 ## 1. [Introdução] O Que É a Experiência da Dupla Fenda?
 

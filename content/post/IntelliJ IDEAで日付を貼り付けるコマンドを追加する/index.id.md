@@ -1,11 +1,12 @@
 ---
-title: "Menambahkan Perintah untuk Menyisipkan Tanggal di IntelliJ IDEA"
+title: 'Cara Membuat Pintasan untuk Menyisipkan Tanggal Saat Ini di IntelliJ IDEA'
 slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["IT・テクノロジー"]
+description: 'Memperkenalkan secara rinci langkah demi langkah pengaturan ''Live Template'' yang berguna untuk secara otomatis menyisipkan tanggal dan waktu saat ini ketika menulis blog di IntelliJ IDEA. Mari hilangkan repotnya mengetik setiap saat.'
 ---
 # Pendahuluan
 Saat menulis blog ini, saya menggunakan IntelliJ IDEA. Sangat nyaman karena memiliki kompatibilitas yang baik dengan Git dan dapat menampilkan pratinjau Markdown.

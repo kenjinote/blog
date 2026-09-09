@@ -1,11 +1,12 @@
 ---
-title: 'Visual Studio Codeおすすめ拡張機能'
+title: 'VSCodeおすすめ拡張機能まとめ！開発効率が劇的に上がるプラグイン一覧'
 slug: "Visual Studio Codeおすすめ拡張機能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "拡張機能", "エクステンション"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'Visual Studio Code（VSCode）をさらに便利にするおすすめ拡張機能を一覧で紹介。コンテナ管理、Gitコード管理、CopilotによるAIコード補完など、開発効率を上げる必須プラグインを厳選しました。'
 ---
 
 # Visual Studio Code おすすめ拡張機能一覧

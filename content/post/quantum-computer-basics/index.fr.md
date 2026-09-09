@@ -1,10 +1,11 @@
 ---
-title: "【Anatomie Complète】 Qu\"est-ce qu\"un ordinateur quantique ? 〜 Le principe de calcul ultime expliqué de zéro 〜"
+title: 'Qu''est-ce qu''un ordinateur quantique ? Explication des principes de calcul ultimes tels que la superposition et l''intrication quantique à partir de zéro'
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Ordinateur quantique", "Physique", "Technologie"]
 image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["Mathématiques, Cryptographie et Quantique"]
+description: 'Explique les bases des ''ordinateurs quantiques'' qui ont le potentiel de dépasser les limites des superordinateurs traditionnels. Démêle de manière professionnelle et compréhensible les mécanismes qui utilisent des phénomènes mystérieux de la mécanique quantique comme la superposition, l''intrication quantique et les portes quantiques pour le calcul.'
 ---
 
 ## Introduction : Le « changement de paradigme de calcul » apporté par l'ordinateur quantique

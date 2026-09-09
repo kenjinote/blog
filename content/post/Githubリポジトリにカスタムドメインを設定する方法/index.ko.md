@@ -2,13 +2,14 @@
 
 
 
-title: "'Github 저장소에 커스텀 도메인을 설정하는 방법'"
+title: 'GitHub 리포지토리에 사용자 정의 도메인을 설정하는 방법｜오나마에.com 편'
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","도메인"]
 draft: false
 image: "images/octocat.webp"
 categories: ["도구·개발 환경"]
+description: 'GitHub 리포지토리(GitHub Pages)에 사용자 정의 도메인을 설정하는 절차를 해설합니다. 이번에는 ''오나마에.com''의 관리 화면에서 DNS의 A 레코드를 추가 및 변경하고, GitHub와 연동하기까지의 구체적인 단계를 소개합니다.'
 ---
 
 

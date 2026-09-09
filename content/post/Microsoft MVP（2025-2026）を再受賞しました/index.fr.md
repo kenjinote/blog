@@ -1,11 +1,12 @@
 ---
-title: "J'ai été récompensé en tant que Microsoft MVP (2025-2026) à nouveau"
+title: 'Annonce du renouvellement du prix Microsoft MVP (2025-2026) et de mes activités passées'
 slug: "j-ai-ete-recompense-en-tant-que-microsoft-mvp-2025-2026-a-nouveau"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'Annonce de l''obtention du prix Microsoft MVP (2025-2026) pour la 9ème fois au total. Avec des explications sur le programme MVP qui contribue à la communauté technique, je partage une rétrospective des publications d''informations techniques et des activités communautaires sur lesquelles j''ai particulièrement mis l''accent cette dernière année.'
 ---
 
 # J'ai été récompensé en tant que Microsoft MVP (2025-2026) à nouveau !

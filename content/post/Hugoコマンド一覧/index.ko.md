@@ -7,13 +7,14 @@
 
 
 
-title: "'Hugo 명령어 목록'"
+title: 'Hugo CLI 설치 및 자주 사용하는 기본 명령어 목록'
 slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "명령어"]
 draft: false
 image: "img.webp"
 categories: ["블로그 운영"]
+description: '고속 정적 사이트 생성기 Hugo의 CLI 설치 방법과 블로그 운영에서 자주 사용하는 기본 명령어 목록을 소개합니다. 신규 사이트 구축, 기사 작성, 로컬 서버 기동, 빌드 등 Hugo 초보자가 기억해야 할 조작을 해설합니다.'
 ---
 
 

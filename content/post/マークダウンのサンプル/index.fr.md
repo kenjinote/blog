@@ -1,9 +1,9 @@
 ---
 author: "Hugo Authors"
-title: "Guide de Syntaxe Markdown"
+title: 'Exemples de syntaxe Markdown utilisables avec Hugo : syntaxe de base comme les titres et paragraphes'
 slug: "マークダウンのサンプル"
 date: "2019-03-11"
-description: "Article d'exemple présentant la syntaxe Markdown de base et le formatage des éléments HTML."
+description: 'Nous présentons des exemples de syntaxe Markdown de base (syntaxe) pouvant être utilisés dans la création de contenu avec le générateur de site statique Hugo. Vous pouvez voir comment les titres (H1 à H6) et les paragraphes sont décorés par le CSS du thème.'
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]
 series: ["Themes Guide"]

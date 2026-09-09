@@ -1,11 +1,12 @@
 ---
-title: "在 IntelliJ IDEA 中使用 GitHub Copilot"
+title: '在IntelliJ IDEA中導入並啟用GitHub Copilot的方法'
 slug: "在-intellij-idea-中使用-github-copilot"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["ツール・開発環境"]
+description: '透過圖文並茂的方式，淺顯易懂地解說在IntelliJ IDEA中使用GitHub Copilot的具體安裝方法與啟用步驟。一起活用AI，讓開發效率大幅提升吧。'
 ---
 # 簡介
 GitHub Copilot 是由 GitHub 開發的基於 AI 的程式碼完成工具。

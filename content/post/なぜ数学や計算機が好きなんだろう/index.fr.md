@@ -1,11 +1,12 @@
 ---
-title: "Pourquoi j'aime les mathématiques et les ordinateurs"
+title: 'Pourquoi j''aime les mathématiques et les ordinateurs ? Réflexions sur leur attrait et les raisons de mon attirance'
 slug: "なぜ数学や計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00
 tags: ["Notes"]
 draft: false
 image: "img.webp"
 categories: ["Mathématiques・Cryptographie・Quantique"]
+description: 'Réflexion sur les raisons de l''attrait pour les mathématiques et les ordinateurs. Nous discutons de leur charme profond, tel que le fait d''être égaux pour tous avec des règles claires, que les réponses obtenues sont éternellement justes, et qu''il y a toujours des problèmes non résolus avec un niveau de difficulté approprié.'
 ---
 
 ## J'ai réfléchi à pourquoi j'aime les mathématiques et les ordinateurs

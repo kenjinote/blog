@@ -1,11 +1,12 @@
 ---
-title: "So beheben Sie das Zurücksetzen der DPI-Einstellungen beim Start mit mehreren Monitoren"
+title: '【Windows 11】Lösungen für das Problem, dass sich die DPI-Einstellungen bei Multi-Monitoren bei jedem Start zurücksetzen'
 slug: "so-beheben-sie-das-zuruecksetzen-der-dpi-einstellungen-beim-start-mit-mehreren-monitoren"
 date: 2024-04-29T19:42:20+09:00
 tags: ["Mehrere Monitore", "DPI", "Systemsteuerung"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technologie"]
+description: 'Wir erklären Lösungen für das Phänomen in Windows 11-Umgebungen mit mehreren Monitoren, bei dem die DPI-Einstellungen (Skalierung) des Bildschirms bei jedem PC-Start automatisch zurückgesetzt werden. Wir haben die Schritte zusammengefasst, um den Schnellstart über die Systemsteuerung zu deaktivieren.'
 ---
 
 ※ Dies ist das Konfigurationsverfahren für Windows 11.

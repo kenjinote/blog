@@ -3,13 +3,14 @@
 
 
 
-title: "'Mis pensamientos sobre Japón'"
+title: 'Problemas y sensación de incongruencia en la sociedad japonesa: Una mirada a la disminución de la natalidad y a la teoría de la responsabilidad individual a través del problema de los préstamos estudiantiles'
 slug: "日本について思うこと"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Miscelánea"]
 draft: false
 image: "images/img.webp"
 categories: ["TI y tecnología"]
+description: 'Este es un artículo que organiza y examina las incongruencias y desafíos personales frente a la sociedad japonesa. Cuestionamos el estado de una sociedad plagada de teorías de responsabilidad individual sin empatía y la situación actual donde la carga de la deuda para los jóvenes, debida a las becas con intereses, lleva a una disminución en la tasa de natalidad, y se habla de la importancia de socorrer a los más vulnerables y el espíritu de ayuda mutua.'
 ---
 
 

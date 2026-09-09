@@ -1,11 +1,12 @@
 ---
-title: 'ブログで使える写真素材サイト「Unsplash」について'
+title: 'ブログで使える無料写真素材サイト「Unsplash」の使い方とライセンス・商用利用について'
 slug: "ブログで使える写真素材サイト「Unsplash」について"
 date: 2023-04-02T14:44:17+09:00
 tags: ["写真素材", "ブログ", "Unsplash"]
 draft: false
 image: "img_1.webp"
 categories: ["ブログ運営"]
+description: 'ブログ記事に最適なフリー写真素材サイト「Unsplash」をご紹介します。無料・商用利用OK・加工可能・クレジット表記や使用許可も不要という、非常に使い勝手の良い高品質な画像サービスです。'
 ---
 ## 「Unsplash」について
 

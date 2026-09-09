@@ -2,13 +2,14 @@
 
 
 
-title: "Cómo empezar con Rust"
+title: 'Introducción al lenguaje Rust: Desde sus características y la instalación hasta Hola Mundo'
 slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programación"]
+description: 'Explicamos de manera exhaustiva para principiantes cómo comenzar con Rust, un lenguaje de programación rápido y con seguridad de memoria. Cubrimos todo, desde las características del lenguaje y el método de instalación hasta los pasos para ejecutar el primer programa, Hola Mundo, y recomendamos documentación en japonés.'
 ---
 
 

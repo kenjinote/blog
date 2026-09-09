@@ -1,11 +1,12 @@
 ---
-title: "Extensões Recomendadas para Visual Studio Code"
+title: 'Resumo de extensões recomendadas para o VSCode! Lista de plugins que aumentam muito a eficiência'
 slug: "Visual Studio Codeおすすめ拡張機能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Extensões", "Extensão"]
 draft: false
 image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+description: 'Apresentamos em formato de lista as extensões recomendadas para tornar o Visual Studio Code (VSCode) ainda mais conveniente. Selecionamos plugins essenciais para aumentar a eficiência de desenvolvimento, como o gerenciamento de containers e códigos com Git, além de autocompletar códigos com a IA Copilot.'
 ---
 
 # Lista de Extensões Recomendadas para Visual Studio Code

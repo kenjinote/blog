@@ -1,11 +1,12 @@
 ---
-title: "Wie man den Explorer schließt und neu startet"
+title: 'Zusammenfassung der Methoden zum Beenden und Neustarten des Windows-Explorers'
 slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["Explorer"]
 draft: false
 image: "img_2.webp"
 categories: ["IT und Technologie"]
+description: 'Wir erklären verschiedene Methoden zum Beenden und Neustarten des Datei-Explorers (explorer.exe) in Windows. Wir stellen die Schritte über die Taskleiste, den Task-Manager und die Eingabeaufforderung auf leicht verständliche Weise vor.'
 ---
 
 ## Wie man über das Rechtsklick-Menü der Taskleiste schließt

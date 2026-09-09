@@ -1,11 +1,12 @@
 ---
-title: "Sobre o site de material fotográfico para blogs \"Unsplash\""
+title: 'Como usar o site de fotos gratuitas para blogs ''Unsplash'' e informações sobre licenças e uso comercial'
 slug: "sobre-o-site-de-material-fotografico-para-blogs-unsplash"
 date: 2023-04-02T14:44:17+09:00
 tags: ["Material fotográfico", "Blog", "Unsplash"]
 draft: false
 image: "img_1.webp"
 categories: ["Gestão de blog"]
+description: 'Apresentamos o ''Unsplash'', um site de fotos gratuitas ideal para artigos de blog. É um serviço de imagens de alta qualidade muito fácil de usar: gratuito, permite uso comercial, permite modificações e não exige créditos ou permissão de uso.'
 ---
 ## Sobre o "Unsplash"
 

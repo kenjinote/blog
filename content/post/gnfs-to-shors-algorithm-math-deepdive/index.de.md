@@ -1,5 +1,5 @@
 ---
-title: "【Vollständiges Verständnis durch Formeln】 Warum das stärkste klassische Verfahren GNFS von Quantenalgorithmen besiegt wird: Der Paradigmenwechsel der Primfaktorzerlegung"
+title: 'RSA-Verschlüsselung knacken? Detaillierte Erklärung der Algorithmen von GNFS und Shor mit mathematischen Formeln'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Quantencomputer", "GNFS", "Shor-Algorithmus", "Kryptanalyse", "Mathematik"]
@@ -7,6 +7,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Mathematik, Kryptographie, Quanten"]
+description: 'Das Faktorisierungsproblem, das die Sicherheit der RSA-Verschlüsselung untermauert. Wir erklären detailliert mit mathematischen Formeln und Konzeptdiagrammen, vom mathematischen Mechanismus des stärksten klassischen Algorithmus, dem „Allgemeinen Zahlkörpersieb (GNFS)“, bis hin dazu, warum „Shors Algorithmus“ durch Quantencomputer dieses Problem lösen kann.'
 ---
 
 In der heutigen Internetgesellschaft wird die Informationssicherheit durch Public-Key-Kryptographie wie das RSA-Kryptosystem geschützt. Die Grundlage der Sicherheit des RSA-Kryptosystems beruht auf der Tatsache, dass **„die Primfaktorzerlegung riesiger zusammengesetzter Zahlen rechnerisch extrem schwierig ist“** .

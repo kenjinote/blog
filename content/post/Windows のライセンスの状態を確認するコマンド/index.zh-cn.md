@@ -1,11 +1,12 @@
 ---
-title: '查看Windows许可证状态的命令'
+title: '确认Windows许可证激活状态的方法！一键执行命令轻松检查'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "许可证", "命令提示符"]
 draft: false
 image: "img_1.webp"
 categories: ["PC・数码"]
+description: '讲解如何确认Windows许可证是否已正确激活。介绍只需在命令提示符中执行“slmgr”命令，即可轻松检查产品密钥、许可证类型及有效期等详细状态的步骤。'
 ---
 
 # 【Windows】查看许可证状态的方法（只需一条命令）

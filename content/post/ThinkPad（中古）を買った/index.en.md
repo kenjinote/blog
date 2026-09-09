@@ -1,11 +1,12 @@
 ---
-title: 'Bought a Used ThinkPad'
+title: 'Bought a Used ThinkPad T470s! An Honest Review of Specs, Usability, and Dissatisfactions'
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Laptop"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technology"]
+description: 'A review article about purchasing a used ThinkPad T470s for remote work. Introduces the actual usability, including the specs and condition of the Core i7, 24GB RAM, and WQHD display, as well as dissatisfactions such as the keyboard layout.'
 ---
 
 # Bought a Used ThinkPad Laptop

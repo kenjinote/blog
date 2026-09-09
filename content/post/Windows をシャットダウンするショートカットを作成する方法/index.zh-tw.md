@@ -1,11 +1,12 @@
 ---
-title: "如何建立用來關閉 Windows 的捷徑"
+title: '一鍵關閉電腦電源！建立 Windows 關機捷徑的方法'
 slug: "如何建立用來關閉 Windows 的捷徑"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "關機", "捷徑"]
 draft: false
 image: "img.webp"
 categories: ["PC・小工具"]
+description: '解說如何建立在桌面上一鍵就能讓 Windows 關機的實用捷徑。附圖詳細介紹使用「shutdown.exe」指令的設定步驟，以及變更為易懂圖示的方法。'
 ---
 
 在此介紹如何建立用來關閉 Windows 的捷徑。

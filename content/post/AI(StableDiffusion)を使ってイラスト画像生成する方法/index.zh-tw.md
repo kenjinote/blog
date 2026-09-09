@@ -1,11 +1,12 @@
 ---
-title: "如何使用 AI (Stable Diffusion) 生成插圖"
+title: '【免費・超簡單】使用Stable Diffusion生成AI插畫圖片的方法！Google Colab步驟解說'
 slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "插圖", "圖像生成", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["程式設計"]
+description: '想不想試試使用能從輸入文字生成高品質圖片的AI「Stable Diffusion」，來創作您喜歡的插畫呢？本文將為您清楚解說，只需透過Google Colab與免費帳號，任何人都能輕鬆開始生成AI圖片的步驟。'
 ---
 
 # 什麼是 Stable diffusion

@@ -1,11 +1,12 @@
 ---
-title: "Aufzählung von Primzahlen in Rust"
+title: 'Wie man ein Programm zur Aufzählung von Primzahlen in Rust erstellt und Codebeispiele'
 slug: "Aufzählung von Primzahlen in Rust"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","Primzahlen","Algorithmus"]
 draft: false
 image: "images/img.webp"
 categories: ["Programmierung"]
+description: 'Stellt als Lernmaterial für die Rust-Programmierung ein Implementierungsbeispiel eines einfachen Algorithmus vor, der Primzahlen bis zu einer angegebenen Obergrenze aufzählt. Erklärt leicht verständlich grundlegende Codierungsmethoden mit Schleifen und bedingten Verzweigungen zusammen mit konkretem Beispielcode.'
 ---
 Ich habe ein Programm geschrieben, um Primzahlen in Rust aufzuzählen.
 

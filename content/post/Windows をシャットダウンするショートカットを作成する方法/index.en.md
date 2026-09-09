@@ -1,11 +1,12 @@
 ---
-title: 'How to create a shortcut to shutdown Windows'
+title: 'One-Click PC Power Off! How to Create a Windows Shutdown Shortcut'
 slug: "Windows をシャットダウンするショートカットを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Shutdown", "Shortcut"]
 draft: false
 image: "img.webp"
 categories: ["PC & Gadgets"]
+description: 'Explains how to create a handy shortcut that lets you shut down Windows with a single click from the desktop. Details the setup process using the ''shutdown.exe'' command and how to change it to an easy-to-understand icon, complete with images.'
 ---
 
 Here is how to create a shortcut to shut down Windows.

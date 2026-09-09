@@ -1,11 +1,12 @@
 ---
-title: '在 Windows 上构建 OpenSSL 的方法'
+title: '在Windows环境下编译与安装OpenSSL的步骤及环境搭建方法'
 slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "构建", "C++"]
 draft: false
 image: "img.webp"
 categories: ["编程"]
+description: '讲解如何在Windows环境下编译C语言加密通信库“OpenSSL”。详细介绍从准备Perl、NASM、Visual Studio 2022等必要工具，到实际源码编译步骤的全过程。'
 ---
 
 # 什么是 OpenSSL

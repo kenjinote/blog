@@ -1,11 +1,12 @@
 ---
-title: "Salesforce अनुशंसित Chrome एक्सटेंशन"
+title: 'Salesforce का विकास तेज़ होगा! अनुशंसित Chrome एक्सटेंशन की सूची'
 slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome एक्सटेंशन"]
 draft: false
 image: "img.webp"
 categories: ["आईटी और प्रौद्योगिकी"]
+description: 'हम अनुशंसित Chrome एक्सटेंशन प्रस्तुत करते हैं जो Salesforce के विकास और संचालन को नाटकीय रूप से सुव्यवस्थित करते हैं। हमने कस्टम फ़ील्ड्स को खोजने और SOQL बनाने के लिए सुविधाजनक DevTools, और कोड खोजने के लिए एक्सटेंशन जैसे इंजीनियरों के लिए आवश्यक टूल का चयन किया है।'
 ---
 
 ### Salesforce DevTools

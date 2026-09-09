@@ -1,11 +1,12 @@
 ---
-title: "Obter apenas a versão mais recente do repositório git"
+title: 'Como Obter Apenas o Último Commit de um Repositório usando Git Clone'
 slug: "obter-apenas-a-versao-mais-recente-do-repositorio-git"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repositório", "comando"]
 draft: false
 image: "img.webp"
 categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+description: 'Aprenda a fazer o download apenas do commit mais recente (shallow clone) em vez de baixar todo o histórico de um repositório Git. Uma técnica útil que economiza espaço em disco e acelera o clone do repositório utilizando a opção ''--depth 1''.'
 ---
 
 # Obter apenas a versão mais recente do repositório git

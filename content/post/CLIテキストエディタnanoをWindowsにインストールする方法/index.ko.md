@@ -6,13 +6,14 @@
 
 
 
-title: "CLI 텍스트 에디터 nano를 Windows에 설치하는 방법"
+title: 'Windows에 CLI 텍스트 편집기 nano를 설치하고 환경 변수를 설정하는 방법'
 slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "텍스트 에디터"]
 draft: false
 image: "img_1.webp"
 categories: ["툴・개발환경"]
+description: '가벼운 CLI 텍스트 편집기 ''nano''를 Windows에 설치하고, 명령 프롬프트에서 사용할 수 있도록 환경 변수를 설정하는 절차를 해설합니다. 다운로드부터 PATH 설정, 기본적인 사용법까지 망라하고 있습니다.'
 ---
 
 

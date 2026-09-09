@@ -1,11 +1,12 @@
 ---
-title: "Filme mit Mathematikern"
+title: 'Geniale Mathematiker in der Hauptrolle! Empfohlene Film-Meisterwerke und Geschichten über Entschlüsselung'
 slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00
 tags: ["Filme", "Mathematiker"]
 draft: false
 image: "images/img.webp"
 categories: ["Mathematik, Kryptographie, Quanten"]
+description: 'Wir stellen empfohlene Film-Meisterwerke vor, in denen geniale Mathematiker die Hauptrolle spielen. Es ist eine Auswahl an Meisterwerken, in denen sich die Schönheit der Mathematik und menschliches Drama überschneiden, wie „A Beautiful Mind“, „The Imitation Game“, das die Entschlüsselung des Enigma-Codes darstellt, und die wahre Geschichte von Ramanujan, „Die Poesie des Unendlichen“.'
 ---
 Hier sind meine 3 besten Filmempfehlungen mit Mathematikern als Hauptfiguren.
 

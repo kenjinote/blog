@@ -1,11 +1,12 @@
 ---
-title: "Histoire des Mathématiques"
+title: 'Histoire des mathématiques et anciens problèmes difficiles : Découvrir les trois problèmes de l''Antiquité et la spirale d''Archimède'
 slug: "histoire-des-mathematiques"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Mathématiques", "Histoire"]
 draft: false
 image: "img.webp"
 categories: ["Mathématiques, Cryptographie et Quantique"]
+description: 'Nous retraçons l''histoire des mathématiques avec les événements et la chronologie antiques. Nous expliquons en détail les découvertes majeures et la trajectoire historique qui ont soutenu le développement des mathématiques, comme les trois grands problèmes géométriques grecs (la quadrature du cercle, la trisection de l''angle et la duplication du cube), la spirale d''Archimède et le théorème de Pappus.'
 ---
 
 ### Les trois problèmes classiques de l'Antiquité grecque

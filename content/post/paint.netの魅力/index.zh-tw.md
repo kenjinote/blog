@@ -1,11 +1,12 @@
 ---
-title: "paint.net的魅力"
+title: '免費又強大！圖片編輯軟體「paint.net」的特色與魅力'
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"
 categories: ["AI・テクノロジー"]
+description: '介紹免費且功能強大的圖片編輯軟體 paint.net 的魅力。充滿了圖層、透明度調整、豐富效果等 Windows 內建小畫家所沒有的實用功能。淺顯易懂地說明其運作輕巧、操作直覺的特色，以及免費版的安裝步驟。'
 ---
 我將介紹我在開發工作中經常使用的影像編輯軟體 paint.net。
 

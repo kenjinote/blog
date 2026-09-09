@@ -1,11 +1,12 @@
 ---
-title: 'Android (Google Pixel) 端末のソフトウェア復元（初期化・修復）手順'
+title: '【ブートループ修復】Google Pixel端末のソフトウェア復元・初期化の公式手順'
 slug: "Android(Google Pixel)端末の復元手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "復元", "トラブルシューティング"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
 categories: ["プログラミング"]
+description: 'Google Pixelが再起動を繰り返す、ロゴから進まない等の深刻なエラーにお困りですか？公式の修復ツールを利用した、安全で確実な端末のソフトウェア復元・初期化の手順と、実行前の重要な注意点を分かりやすく徹底解説します。'
 ---
 
 # Android (Google Pixel) 端末の復元手順

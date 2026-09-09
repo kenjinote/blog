@@ -1,11 +1,12 @@
 ---
-title: "C-Code zur Generierung von Primzahlen"
+title: 'Einfacher C-Code zur Generierung und Bestimmung von Primzahlen innerhalb eines bestimmten Bereichs'
 slug: "c-code-zur-generierung-von-primzahlen"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Primzahlen", "Algorithmus", "Mathematik"]
 draft: false
 image: "img.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
+description: 'Wir stellen einen einfachen C-Beispielcode vor, der Primzahlen in einem bestimmten Bereich (von 1 bis n) bestimmt, generiert und auflistet. Es enthält ein leicht verständliches Programmierbeispiel und eine Erklärung für Anfänger mit einem effizienten Algorithmus, der die isPrime-Funktion verwendet.'
 ---
 
 Nachfolgend finden Sie einen einfachen C-Code, der Primzahlen innerhalb eines bestimmten Bereichs generiert. In diesem Beispiel zählen wir Primzahlen von 1 bis n auf.

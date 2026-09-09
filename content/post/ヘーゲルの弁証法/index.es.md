@@ -3,13 +3,14 @@
 
 
 
-title: "La dialéctica de Hegel"
+title: '¿Qué es la dialéctica de Hegel? El concepto de Aufheben (superación) y su aplicación en la vida diaria y en la programación'
 slug: "ヘーゲルの弁証法"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filosofía", "Hegel", "Dialéctica"]
 draft: false
 image: "images/img.webp"
 categories: ["IT y Tecnología"]
+description: 'Explicaremos la "dialéctica de Hegel", que se desarrolla hacia una dimensión superior superando conflictos y contradicciones. Lo analizaremos de manera sencilla con ejemplos cotidianos, no solo como concepto filosófico, sino también a través de las leyes de la naturaleza y la evolución en la corrección de errores de los programas informáticos.'
 ---
 
 

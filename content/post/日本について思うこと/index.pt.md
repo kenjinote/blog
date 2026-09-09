@@ -1,11 +1,12 @@
 ---
-title: "O que eu penso sobre o Japão"
+title: 'Desafios e desconforto na sociedade japonesa: O declínio da taxa de natalidade e a teoria da responsabilidade individual vistos pelo problema das bolsas de estudo'
 slug: "o-que-eu-penso-sobre-o-japao"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Miscelânea"]
 draft: false
 image: "images/img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Um artigo que organiza e considera desconfortos e desafios pessoais em relação à sociedade japonesa. Levanta questões sobre a situação atual onde o endividamento dos jovens com bolsas de estudo com juros leva à queda na taxa de natalidade, e a sociedade onde a fria teoria da responsabilidade individual é desenfreada, falando sobre a importância do socorro aos vulneráveis e do espírito de ajuda mútua.'
 ---
 Vou organizar o que eu acho estranho e o que penso sobre a sociedade japonesa.
 

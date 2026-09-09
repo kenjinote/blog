@@ -1,11 +1,12 @@
 ---
-title: 'Kumpulan Kutipan'
+title: 'Kumpulan Kutipan yang Memperkaya Hidup: Rangkuman Kata-kata Berkesan dari Tokoh Sejarah dan Tokoh Terkenal'
 slug: "kumpulan-kutipan"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Kumpulan Kutipan"]
 draft: false
 image: "img.webp"
 categories: ["IT・Teknologi"]
+description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sejarah dan tokoh terkenal, seperti Steve Jobs dan Laozi. Temukan petunjuk untuk memperkaya kehidupan sehari-hari melalui kata-kata yang menjadi pelajaran hidup atau sebagai pendorong motivasi, dengan belajar dari kebijaksanaan para pendahulu.'
 ---
 
 > Orang bodoh belajar dari pengalaman, orang bijak belajar dari sejarah (Otto von Bismarck)

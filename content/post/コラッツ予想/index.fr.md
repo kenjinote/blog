@@ -1,11 +1,12 @@
 ---
-title: 'Conjecture de Collatz'
+title: 'Qu''est-ce que la conjecture de Collatz ? Vérification en Python d''un problème mathématique non résolu où tout nombre finit par 1'
 slug: "コラッツ予想"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Conjecture de Collatz", "Mathématiques", "Programmation", "Algorithme"]
 draft: false
 image: "img.webp"
 categories: ["Mathématiques, Cryptographie et Quantique"]
+description: 'Si vous répétez ''diviser par deux si pair, multiplier par trois et ajouter un si impair'', finirez-vous toujours par 1 ? Nous expliquons clairement la règle mystérieuse de la célèbre ''Conjecture de Collatz'', un problème mathématique non résolu. De plus, nous écrirons un programme en Python pour simuler si la séquence converge réellement vers 1.'
 ---
 
 # Est-il vrai que « n'importe quel nombre finit par devenir 1 » ? ── J'ai joué avec la conjecture de Collatz

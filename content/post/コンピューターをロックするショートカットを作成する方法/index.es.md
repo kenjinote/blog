@@ -6,13 +6,14 @@
 
 
 
-title: "'Cómo crear un acceso directo para bloquear la computadora'"
+title: '¡Bloquea tu PC Windows en 1 segundo! Cómo crear y usar un acceso directo práctico'
 slug: "コンピューターをロックするショートカットを作成する方法"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Bloquear la computadora", "Acceso directo"]
 draft: false
 image: "img.webp"
 categories: ["PC y gadgets"]
+description: 'Explicamos con imágenes cómo crear un acceso directo que te permite bloquear tu PC con Windows con un solo clic. También presentamos el método conveniente usando las teclas Win+L para bloquear la pantalla al instante, como medida de seguridad cuando te alejas de tu asiento.'
 ---
 
 

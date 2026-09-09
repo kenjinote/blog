@@ -1,11 +1,12 @@
 ---
-title: "Catatan Manajemen"
+title: 'Kunci Sukses dalam Memilih Bisnis dan Sistematisasi: Catatan Praktis untuk Para Pemimpin Perusahaan'
 slug: "経営者メモ"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Manajemen"]
 draft: false
 image: "images/img.webp"
 categories: ["IT dan Teknologi"]
+description: 'Mempublikasikan catatan praktis yang sebaiknya diketahui oleh pemimpin perusahaan (manajemen), seperti poin-poin agar sistem berjalan bagi siapapun, tiruan maupun perbaikan yang mendalam, dan cara menemukan bisnis yang sedang tren. Kami juga menyoroti hakikat filosofi manajemen: ''Memaksimalkan keuntungan perusahaan''.'
 ---
 # Menemukan Bisnis yang Sedang Tren
 - Tanyakan kepada orang dalam Hot Pepper atau akuntan pajak mengenai bisnis yang sedang tren.

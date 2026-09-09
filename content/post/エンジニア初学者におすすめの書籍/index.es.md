@@ -6,13 +6,14 @@
 
 
 
-title: "Libros recomendados para ingenieros principiantes"
+title: '¡15 libros esenciales recomendados para ingenieros principiantes! Desde los conceptos básicos de programación hasta el diseño'
 slug: "エンジニア初学者におすすめの書籍"
 date: 2024-05-05T16:03:33+09:00
 tags: ["ingeniero", "principiantes", "libros"]
 draft: false
 image: "img.webp"
 categories: ["estilo de vida y notas misceláneas"]
+description: '¡Imprescindible para ingenieros que quieren pasar de principiantes a intermedios en programación! Presentamos una cuidada selección de 15 libros esenciales recomendados para principiantes, como ''Código legible'' (The Art of Readable Code) y ''El programador pragmático'', donde puedes aprender conocimientos fundamentales y metodologías de diseño en el desarrollo de software.'
 ---
 
 

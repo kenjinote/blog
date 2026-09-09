@@ -1,11 +1,11 @@
 ---
-title: 'Google One （Gemini）が解約できない時の対処方法'
+title: 'Google One（Gemini）が解約できない？正しい退会方法を解説'
 slug: "Google One （Gemini）が解約できない時の対処方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "解約", "対処方法"]
 draft: false
 image: "img.webp"
-description: 'Google One （Gemini）の無償体験が終わると請求される？解約のやり方まとめ'
+description: 'Geminiの1ヶ月無償体験終了後に月額2,900円のGoogle Oneメンバーシップが自動継続されるのを防ぐための、正しい解約手順を解説します。「解約できない」と悩んでいる方は、本記事の退会方法を参考にしてください。'
 categories: ["プログラミング"]
 ---
 

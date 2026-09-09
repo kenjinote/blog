@@ -1,11 +1,12 @@
 ---
-title: "dotnet कमांड के साथ .gitignore जनरेट करें"
+title: 'dotnet कमांड का उपयोग करके प्रोजेक्ट के लिए आसानी से .gitignore जेनरेट करने का तरीका'
 slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
 categories: ["ツール・開発環境"]
+description: 'हम .NET SDK में शामिल dotnet कमांड (dotnet new gitignore) का उपयोग करके Visual Studio जैसे विकास परिवेश के लिए उपयुक्त .gitignore फ़ाइल को स्वचालित रूप से उत्पन्न करने के तरीके को स्पष्ट रूप से समझाएंगे。'
 ---
 dotnet.exe कमांड का उपयोग करना उपयोगी है क्योंकि यह आपको सरल प्रोग्राम बनाने की अनुमति भी देता है।
 

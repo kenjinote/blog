@@ -1,5 +1,5 @@
 ---
-title: 'Unsolved Problems in Mathematics'
+title: 'Fascinating Unsolved Math Problems: What are Perfect Numbers, Goldbach''s Conjecture, and the Riemann Hypothesis?'
 slug: "数学の未解決問題"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Mathematics", "Unsolved Problems"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Math, Crypto, Quantum"]
+description: 'We explain fascinating unsolved math problems that remain unproven despite their simple premises. Are there infinitely many perfect numbers? We explore the mysterious problems that continue to puzzle mathematicians, such as Goldbach''s conjecture and the difficult Riemann Hypothesis.'
 ---
 
 # Unsolved Problems in Mathematics

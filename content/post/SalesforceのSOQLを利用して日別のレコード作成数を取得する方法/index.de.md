@@ -1,11 +1,12 @@
 ---
-title: "So erhalten Sie die Anzahl der pro Tag erstellten Datensätze mithilfe von Salesforce SOQL"
+title: 'Salesforce: Wie man die tägliche Anzahl an Datensatzerstellungen mit SOQL abruft'
 slug: "So erhalten Sie die Anzahl der pro Tag erstellten Datensätze mithilfe von Salesforce SOQL"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "datum", "aggregation"]
 draft: false
 image: "img.webp"
 categories: ["IT und Technologie"]
+description: 'Erklärt die konkrete Methode und die Abfragesyntax, um die tägliche Anzahl der erstellten Datensätze für Accounts usw. durch Aggregation mit SOQL in der Salesforce Developer Console abzurufen. Zeigt praktische Datenanalyse-Schritte unter Verwendung der GROUP BY-Klausel.'
 ---
 
 # So erhalten Sie die Anzahl der pro Tag erstellten Datensätze mithilfe von Salesforce SOQL

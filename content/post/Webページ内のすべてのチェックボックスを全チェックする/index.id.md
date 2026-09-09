@@ -1,11 +1,12 @@
 ---
-title: "Mencentang Semua Kotak Centang di Halaman Web"
+title: '[JS] Cara Memeriksa Semua Kotak Centang di Halaman Web Sekaligus (Termasuk Bookmarklet)'
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "otomatisasi"]
 draft: false
 image: "img.webp"
 categories: ["manajemen blog"]
+description: 'Menjelaskan cara memeriksa semua kotak centang di halaman web sekaligus. Memperkenalkan kode JavaScript untuk dijalankan di konsol DevTools Chrome, serta prosedur pembuatan bookmarklet praktis yang dapat memilih/membatalkan semua pilihan dengan satu klik.'
 ---
 
 Untuk mencentang semua kotak centang di halaman web, buka DevTools dengan F12, tempelkan kode berikut ke dalam konsol, dan jalankan.

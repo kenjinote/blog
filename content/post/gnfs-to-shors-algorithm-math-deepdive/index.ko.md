@@ -2,7 +2,7 @@
 
 
 
-title: '[수학적 고찰] 왜 암호 해독 알고리즘 ''GNFS''는 양자 컴퓨터 시대의 Shor 알고리즘에 패배하는가?'
+title: 'RSA 암호를 깨다? GNFS와 Shor의 알고리즘을 수식으로 철저 해설'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["양자 컴퓨터", "GNFS", "쇼어 알고리즘", "암호 해독", "수학"]
@@ -10,6 +10,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["수학・암호・양자"]
+description: 'RSA 암호의 안전성을 뒷받침하는 소인수분해 문제. 고전 최강의 알고리즘 ''일반 수체 체(GNFS)''의 수학적 메커니즘부터, 양자 컴퓨터에 의한 ''쇼어의 알고리즘''이 왜 그것을 깨뜨리는지 수식과 개념도로 철저히 해설합니다.'
 ---
 
 

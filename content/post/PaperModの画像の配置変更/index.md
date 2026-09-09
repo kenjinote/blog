@@ -1,11 +1,12 @@
 ---
-title: 'PaperModの画像の配置変更'
+title: 'Hugo PaperModテーマの画像サイズ・配置をCSSでカスタマイズする方法'
 slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["ブログ運営"]
+description: 'HugoのPaperModテーマで、記事内の画像サイズや配置をカスタマイズする方法を解説します。既定の横幅100%・中央揃えから、画像の回り込みや縮小を行うためのCSS（blank.cssとpost-entry.css）の具体的な編集手順を紹介します。'
 ---
 既定のレイアウトは、画像を中央に横幅100%で配置されていますが、
 少し大きいなと感じることがあったため、画像をタイトルの下に周り込ませて、

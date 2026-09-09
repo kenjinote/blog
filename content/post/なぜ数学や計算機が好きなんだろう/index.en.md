@@ -1,11 +1,12 @@
 ---
-title: 'Why do I like math and computers?'
+title: 'Why Do I Like Math and Computers? Contemplating Their Appeal and Why I''m Drawn to Them'
 slug: "なぜ数学や計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00
 tags: ["Misc"]
 draft: false
 image: "img.webp"
 categories: ["Mathematics, Cryptography, Quantum"]
+description: 'Explores the reasons for being drawn to math and computers. Discusses their profound appeal, such as being equal to everyone with clear rules, answers derived remaining forever correct, and the moderate difficulty presented by ever-present unsolved problems.'
 ---
 
 ## I thought about why I like mathematics and computers

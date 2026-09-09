@@ -1,11 +1,12 @@
 ---
-title: '在 Mac 上实现类似 Windows (Alt+Tab) 的应用程序切换方法'
+title: '在Mac上实现类似Windows（Alt+Tab）切换应用的设置方法'
 slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "快捷键", "应用程序切换"]
 draft:
 image: "img.webp"
 categories: ["PC・数码"]
+description: '简单明了地讲解如何安装和设置实用的第三方应用，以实现在Mac标准功能中难以实现的类似Windows的“Alt+Tab”应用切换。'
 ---
 
 # 简介

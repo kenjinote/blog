@@ -1,11 +1,12 @@
 ---
-title: 'How to Get the Daily Record Creation Count Using SOQL in Salesforce'
+title: 'Salesforce: How to Get Daily Record Creation Counts Using SOQL'
 slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "date", "aggregation"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technology"]
+description: 'Explains the specific method and query syntax to aggregate and retrieve daily record creation counts for Accounts and other objects using SOQL from the Salesforce Developer Console. You will understand the procedure for convenient data analysis using the GROUP BY clause.'
 ---
 
 # How to Get the Daily Record Creation Count Using SOQL in Salesforce

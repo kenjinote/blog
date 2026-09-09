@@ -2,13 +2,14 @@
 
 
 
-title: "Google 애널리틱스에서 인기 페이지 랭킹을 가져와 배치하는 방법"
+title: 'Ranklet으로 Google 애널리틱스의 인기 기사 랭킹을 표시하는 방법'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google 애널리틱스", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["블로그 운영"]
+description: 'Google 애널리틱스와 연동하여 사이트의 인기 페이지 랭킹을 쉽게 자동 표시할 수 있는 서비스 ''Ranklet''의 사용법을 해설합니다. HUGO 블로그를 예로 들어 설정 절차나 HTML/CSS 템플릿의 커스터마이즈 방법을 소개합니다.'
 ---
 
 

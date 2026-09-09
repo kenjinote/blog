@@ -1,5 +1,5 @@
 ---
-title: "Cara Mengaktifkan KaTeX (Tampilan Rumus Gaya LaTeX) di hugo"
+title: 'Cara Menerapkan KaTeX di Hugo dan Menampilkan Rumus Indah ala LaTeX'
 slug: "hugoでKaTeX(LaTeX風数式表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "rumus", "matematika", "hugo"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Menjelaskan langkah-langkah mengimplementasikan library rendering rumus cepat ''KaTeX'' ke pembuat situs statis Hugo. Anda dapat dengan mudah mengetahui cara mengaktifkan tampilan rumus ala LaTeX yang indah di blog Anda, mulai dari membuat math.html hingga pengaturan pemuatan ke header.'
 ---
 # Apa itu KaTeX?
 KaTeX adalah pustaka javascript untuk menampilkan rumus matematika bergaya LaTeX dalam HTML.

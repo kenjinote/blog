@@ -1,5 +1,5 @@
 ---
-title: "【公式完全解析】经典最强“GNFS”为何败给量子算法？因数分解的范式转变"
+title: '破解RSA密码？用公式彻底解析GNFS与Shor算法'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["量子计算机", "GNFS", "Shor算法", "密码破解", "数学"]
@@ -7,6 +7,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["数学・密码・量子"]
+description: '支撑RSA密码安全性的因数分解问题。从经典最强算法“一般数域筛法（GNFS）”的数学机制，到量子计算机的“Shor算法”为何能将其击破，本文将结合公式和概念图进行彻底解析。'
 ---
 
 现代互联网社会中的信息安全，是由以RSA密码为首的公开密钥密码体制来保障的。RSA密码安全性的依据依赖于这样一个事实：**“对巨大的合数进行因数分解在计算上是极其困难的”**。

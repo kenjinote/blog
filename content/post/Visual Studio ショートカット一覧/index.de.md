@@ -1,11 +1,12 @@
 ---
-title: "Visual Studio Tastenkombinationen"
+title: 'Liste nützlicher Tastenkombinationen für Visual Studio 【Arbeitseffizienz steigern】'
 slug: "Visual Studio Tastenkombinationen"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Tastenkombinationen" ]
 draft: false
 image: "img.webp"
 categories: ["Tools & Entwicklungsumgebung"]
+description: 'Eine Zusammenfassung nützlicher Tastenkombinationen für Visual Studio (VS2022), die die Entwicklungseffizienz drastisch verbessern. Sorgfältig ausgewählte, unverzichtbare Tastenkombinationen, die während der Programmierung häufig verwendet werden, wie Debugging, Erstellung und Lesezeichen-Operationen.'
 ---
 
 # Visual Studio Tastenkombinationen

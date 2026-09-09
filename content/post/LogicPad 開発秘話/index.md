@@ -1,11 +1,12 @@
 ---
-title: 'LogicPad 開発秘話'
+title: 'ローコードツール「LogicPad」開発秘話：なぜこれを作ったのか？'
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "開発", "秘話"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: '「コードは書けないけどロジックはある人」向けのローコードツール「LogicPad」の誕生秘話。開発の裏側にある作者の個人的な想いや、自身のキャリアへの向き合い方について熱く語ります。'
 ---
 
 # 「コードは書けないけど、ロジックはある人」にツールを。LogicPadを作った理由

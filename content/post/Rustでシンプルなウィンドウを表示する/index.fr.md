@@ -1,11 +1,12 @@
 ---
-title: "Afficher une fenêtre simple en Rust"
+title: 'Comment créer et afficher une simple fenêtre Windows avec Rust et winapi'
 slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "Fenêtre"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programmation"]
+description: 'Présente comment utiliser `winapi` en Rust pour créer et afficher une fenêtre simple sous Windows. De la configuration de Cargo.toml à l''implémentation de la procédure de fenêtre, explique en détail le code source qui forme la base de la programmation d''interface graphique.'
 ---
 
 Afficher une fenêtre simple en Rust

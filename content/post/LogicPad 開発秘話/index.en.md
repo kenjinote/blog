@@ -1,11 +1,12 @@
 ---
-title: 'The Untold Story of LogicPad Development'
+title: 'Low-Code Tool ''LogicPad'' Development Secret Story: Why Was This Created?'
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Development", "Untold Story"]
 draft: false
 image: "img.webp"
 categories: ["IT / Technology"]
+description: 'The birth story of ''LogicPad'', a low-code tool for ''people who can''t write code but have logic''. The author passionately talks about their personal thoughts behind the development and their approach to their career.'
 ---
 
 # Tools for those who "have logic but can't write code." Why I created LogicPad

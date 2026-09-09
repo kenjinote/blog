@@ -1,11 +1,12 @@
 ---
-title: "So verwenden Sie das Snipping Tool"
+title: 'Verwendung des Windows-Standardprogramms „Snipping Tool“ und Methoden zur Bildschirmaufzeichnung und -erfassung'
 slug: "So verwenden Sie das Snipping Tool"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Bild", "Video", "Screenshot", "Aufnahme", "Erfassen"]
 draft: false
 image: "img.webp"
 categories: ["IT & Technologie"]
+description: 'Erklärt die grundlegende Verwendung des standardmäßig in Windows integrierten Bildschirmaufnahme-Tools „Snipping Tool“. Stellt leicht verständlich vor, von schnellen Startmethoden mit Tastenkombinationen über das Ausschneiden und Speichern von Bildteilen bis hin zu Schritten der Bildschirmaufzeichnung als Video.'
 ---
 
 ## Was ist das Snipping Tool

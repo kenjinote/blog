@@ -1,5 +1,5 @@
 ---
-title: "【Pemahaman Lengkap dengan Rumus】 Mengapa \"GNFS\" Klasik Terkuat Dikalahkan oleh Algoritma Kuantum? Pergeseran Paradigma dalam Faktorisasi Prima"
+title: 'Memecahkan Sandi RSA? Penjelasan Menyeluruh Algoritme GNFS dan Shor dengan Rumus Matematika'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Komputer Kuantum", "GNFS", "Algoritma Shor", "Kriptanalisis", "Matematika"]
@@ -7,6 +7,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Masalah faktorisasi prima yang menopang keamanan sandi RSA. Kami menjelaskan secara menyeluruh dengan rumus matematika dan diagram konsep mulai dari mekanisme matematis algoritme klasik terkuat ''General Number Field Sieve (GNFS)'', hingga mengapa ''Algoritme Shor'' oleh komputer kuantum dapat mengalahkannya.'
 ---
 
 Keamanan informasi dalam masyarakat internet modern dilindungi oleh kriptografi kunci publik seperti kriptografi RSA. Dasar keamanan kriptografi RSA bergantung pada fakta bahwa **"faktorisasi prima dari bilangan komposit yang sangat besar sangatlah sulit secara komputasi"** .

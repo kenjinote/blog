@@ -1,11 +1,12 @@
 ---
-title: 'RustでMessageBoxを表示する'
+title: 'Rustとwinapiを使ってWindowsのメッセージボックス(MessageBox)を表示する方法'
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["プログラミング"]
+description: 'Rustで`winapi`と`user32-sys`クレートを利用し、Windows APIを呼び出してシンプルなメッセージボックス（MessageBox）を表示する方法を、プロジェクトの作成からコード実装まで手順を追って解説します。'
 ---
 
 下記の手順でRustでMessageBoxを表示することができます。

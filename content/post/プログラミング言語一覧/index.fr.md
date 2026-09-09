@@ -1,11 +1,12 @@
 ---
-title: "Liste des langages de programmation"
+title: 'Des majeurs aux mineurs ! Liste des langages de programmation et résumé de leurs caractéristiques'
 slug: "Liste des langages de programmation"
 date: 2023-04-01T03:45:53+09:00
 tags: ["プログラミング言語"]
 draft: true
 image: "img.webp"
 categories: ["プログラミング"]
+description: 'Nous avons listé divers langages de programmation, allant du C, Python, Java, JavaScript à Rust, Go, OCaml et Clojure. Découvrez les aperçus et caractéristiques de chaque langage pour vous aider dans votre développement ou apprentissage.'
 ---
 
 # Liste des langages de programmation

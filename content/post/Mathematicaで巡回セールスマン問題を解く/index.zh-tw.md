@@ -1,11 +1,12 @@
 ---
-title: "使用 Mathematica 解決旅行推銷員問題"
+title: '使用 Mathematica 解決旅行推銷員問題 (TSP) 的方法'
 slug: "使用-Mathematica-解決旅行推銷員問題"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "旅行推銷員問題", "演算法", "數學"]
 draft: false
 image: "img.webp"
 categories: ["數學・密碼・量子"]
+description: '說明如何使用數式處理系統 Mathematica 來解決旅行推銷員問題 (TSP)。介紹使用 SparseArray 函數建立城市間距離矩陣，並透過 FindShortestTour 找出最短路線的步驟。'
 ---
 # 使用 Mathematica 解決旅行推銷員問題
 

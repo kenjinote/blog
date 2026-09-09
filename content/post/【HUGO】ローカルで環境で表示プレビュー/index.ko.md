@@ -4,13 +4,14 @@
 
 
 
-title: "'【HUGO】로컬 환경에서 표시 프리뷰'"
+title: '[Hugo 입문] Windows에서의 설치부터 로컬 환경에서의 미리보기 표시 방법'
 slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["블로그 운영"]
+description: '정적 사이트 생성기 ''Hugo''를 Windows 환경에 설치하는 절차나 환경 변수 Path 설정법, 로컬 서버를 띄워 블로그 기사를 미리보기로 확인하는 명령의 사용법을 알기 쉽게 해설합니다.'
 ---
 
 

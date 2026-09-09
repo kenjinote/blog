@@ -2,13 +2,14 @@
 
 
 
-title: "'Go를 설치하는 방법'"
+title: 'Go 언어(Golang) 설치 절차 및 첫 프로그램 실행 방법'
 slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","설치"]
 draft: false
 image: "images/cover.webp"
 categories: ["프로그래밍"]
+description: 'Google이 개발한 프로그래밍 언어 ''Go(Golang)''의 설치 방법을 초보자를 위해 해설합니다. 설치 프로그램 가져오기부터 Hello World 프로그램 작성, 컴파일, 실행 절차까지 첫 Go 언어 입문에 최적입니다.'
 ---
 
 

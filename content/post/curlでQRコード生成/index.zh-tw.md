@@ -1,11 +1,12 @@
 ---
-title: "使用 curl 產生 QR Code"
+title: '使用curl指令在命令提示字元中生成QR Code的方法'
 slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["QR Code", "curl", "命令提示字元"]
 draft: false
 image: "img.webp"
 categories: ["IT 與科技"]
+description: '介紹如何使用Windows的命令提示字元與curl指令，生成並顯示基於文字的QR Code。由於需要利用外部API（qrenco.de），本文也會說明處理個人資訊時應注意的事項。'
 ---
 
 ## 使用 curl 產生 QR Code

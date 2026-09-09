@@ -1,11 +1,12 @@
 ---
-title: 'Splatoon 2'
+title: 'Secrets to Enjoying Splatoon 2 for a Long Time! Recommended Weapons and Positioning Tips'
 slug: "スプラトゥーン2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Game", "Nintendo Switch"]
 draft: false
 image: "img.webp"
 categories: ["IT / Technology"]
+description: 'Introduces the appeal of the long-lasting masterpiece game ''Splatoon 2'' and recommended weapons for beginners (Splattershot Jr., various Rollers, etc.). A play diary aimed at enjoying matches while maintaining an A+ to S+ rank in Ranked Battles.'
 ---
 
 # Splatoon 2

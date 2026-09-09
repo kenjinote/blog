@@ -1,11 +1,12 @@
 ---
-title: "إضافات Visual Studio Code الموصى بها"
+title: 'ملخص لأفضل إضافات VSCode! قائمة بالمكونات الإضافية التي ترفع كفاءة التطوير بشكل كبير'
 slug: "إضافات Visual Studio Code الموصى بها"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "إضافات", "ملحقات"]
 draft: false
 image: "img.webp"
 categories: ["الأدوات وبيئة التطوير"]
+description: 'نعرض قائمة بالإضافات الموصى بها التي تجعل Visual Studio Code (VSCode) أكثر فائدة. قمنا باختيار المكونات الإضافية الأساسية التي تزيد من كفاءة التطوير، مثل إدارة الحاويات، وإدارة كود Git، وإكمال الكود بالذكاء الاصطناعي بواسطة Copilot.'
 ---
 
 # قائمة إضافات Visual Studio Code الموصى بها

@@ -1,11 +1,12 @@
 ---
-title: "Comment annuler un git reset"
+title: 'Comment annuler un git reset exécuté par erreur | Procédure de restauration de commit'
 slug: "comment-annuler-un-git-reset"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurer", "annuler"]
 draft: false
 image: "img.webp"
 categories: ["Outils et Environnement de Développement"]
+description: 'Nous expliquons comment annuler une réinitialisation et restaurer l''état du commit d''origine lorsque vous avez exécuté par erreur un « git reset » sur Git. Nous présentons clairement la procédure pour vérifier l''ID du commit à l''aide de « git reflog » et restaurer correctement l''état.'
 ---
 # Comment annuler un git reset
 Après avoir effectué un git commit, si vous exécutez accidentellement un git reset, voici comment annuler le git reset (comment restaurer l'état au moment du git commit).

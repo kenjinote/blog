@@ -1,11 +1,12 @@
 ---
-title: "【HUGO】Pratinjau Tampilan di Lingkungan Lokal"
+title: '[Pengantar Hugo] Dari Instalasi di Windows hingga Cara Menampilkan Pratinjau di Lingkungan Lokal'
 slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["ブログ運営"]
+description: 'Menjelaskan dengan mudah prosedur instalasi pembuat situs statis ''Hugo'' di lingkungan Windows, cara mengatur variabel lingkungan Path, dan cara menggunakan perintah untuk menjalankan server lokal agar bisa melihat pratinjau artikel blog.'
 ---
 # Instalasi HUGO
 

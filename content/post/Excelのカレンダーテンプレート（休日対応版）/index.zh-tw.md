@@ -1,11 +1,12 @@
 ---
-title: "Excel日曆範本（支援假日版）"
+title: '【免費下載】支援國定假日自動顯示的Excel日曆範本'
 slug: "Excelのカレンダーテンプレート（休日対応版）"
 date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "日曆", "範本", "假日"]
 draft: false
 image: "img.webp"
 categories: ["IT與科技"]
+description: '免費提供只要輸入年份與月份，即可自動顯示該月份日本國定假日的實用Excel日曆範本。歡迎下載使用，以提升您的行程管理與工作效率。'
 ---
 
 ## 我製作了Excel的日曆範本（支援假日版）！

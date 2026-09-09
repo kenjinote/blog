@@ -1,11 +1,12 @@
 ---
-title: 'How to update rustc'
+title: 'How to Update the Rust Compiler (rustc) to the Latest Version'
 slug: "rustcをアップデートする方法"
 date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'Explains a simple method to update rustc, the Rust compiler, to the latest version. By just running the single command `rustup update` in the terminal or command prompt, you can update everything at once, including related components.'
 ---
 # How to update rustc
 

@@ -1,11 +1,12 @@
 ---
-title: "Qu'est-ce que l'i18n ?"
+title: 'Qu''est-ce que l''i18n (Internationalisation) ? Signification et éléments de compatibilité dans le développement de logiciels'
 slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "Terminologie"]
 draft: false
 image: "img.webp"
 categories: ["IT / Technologie"]
+description: 'Nous expliquons clairement la signification et l''étymologie de l''« i18n » (Internationalisation) dont on entend souvent parler dans le développement de logiciels. Nous avons résumé les principaux éléments à prendre en compte lors de l''adaptation mondiale d''une application ou d''un système, tels que le codage des caractères, l''affichage des dates et heures, et les informations sur les devises.'
 ---
 
 # Qu'est-ce que l'i18n ?

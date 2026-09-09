@@ -2,13 +2,14 @@
 
 
 
-title: "'Cómo aplicar el efecto mosaico a una parte específica de una imagen en paint.net'"
+title: 'Explicación sencilla de cómo aplicar un efecto mosaico a áreas específicas de una imagen en paint.net'
 slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "borde", "imagen"]
 draft: false
 image: "img.webp"
 categories: ["IA y Tecnología"]
+description: 'Explicamos cómo aplicar un efecto de mosaico a una parte de una imagen utilizando el software de edición de imágenes gratuito ''paint.net''. Dirigido a principiantes, mostramos los pasos para seleccionar el área y configurar la función de efecto. Una técnica de protección de la privacidad muy útil al subir imágenes a redes sociales o blogs.'
 ---
 
 

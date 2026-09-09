@@ -1,11 +1,12 @@
 ---
-title: 'Rustでシンプルなウィンドウを表示する'
+title: 'Rustとwinapiを使ってWindowsのシンプルなウィンドウを作成・表示する方法'
 slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","ウィンドウ"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["プログラミング"]
+description: 'Rustで`winapi`を使用し、Windowsのシンプルなウィンドウを作成して表示する方法を紹介します。Cargo.tomlの設定からウィンドウプロシージャの実装まで、GUIプログラミングの基礎となるソースコードを詳しく解説します。'
 ---
 
 Rustでシンプルなウィンドウを表示する

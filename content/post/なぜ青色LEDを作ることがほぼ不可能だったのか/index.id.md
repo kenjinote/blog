@@ -1,11 +1,12 @@
 ---
-title: "Mengapa Hampir Mustahil Membuat LED Biru"
+title: 'Mengapa Pengembangan LED Biru Hampir Mustahil? Mengungkap Misterinya'
 slug: "Mengapa Hampir Mustahil Membuat LED Biru"
 date: 2024-09-15T00:43:52+09:00
 tags: ["Sains", "Fisika", "Semikonduktor"]
 draft: false
 image: "img.webp"
 categories: ["TI dan Teknologi"]
+description: 'Memperkenalkan program dokumenter berbahasa Inggris yang menjelaskan betapa sulitnya menciptakan LED biru. Turut menyinggung pencapaian gemilang ilmuwan Jepang yang berhasil memecahkan tantangan yang dianggap mustahil, serta kesenjangan apresiasi di dalam negeri.'
 ---
 
 ## Mengapa Hampir Mustahil Membuat LED Biru

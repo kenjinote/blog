@@ -1,11 +1,12 @@
 ---
-title: "Éditeur de graphes"
+title: 'Création facile de graphiques dans le navigateur ! Comment utiliser un éditeur de graphiques Web gratuit et pratique'
 slug: "グラフエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "graphes"]
 draft: false
 image: "img.webp"
 categories: ["Outils / Environnement de développement"]
+description: 'Nous présentons un éditeur de graphiques Web pratique qui vous permet de créer facilement des diagrammes et des graphiques en saisissant simplement des chiffres dans le navigateur. Nous expliquons également en détail la manipulation des éléments à la souris, la création de graphes orientés et la fonction de téléchargement des graphiques créés sous forme d''images PNG.'
 ---
 # Éditeur de graphes
 

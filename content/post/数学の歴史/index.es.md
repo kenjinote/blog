@@ -3,13 +3,14 @@
 
 
 
-title: "'Historia de las Matemáticas'"
+title: 'La historia de las matemáticas y los antiguos problemas difíciles: Aprende sobre los tres grandes problemas de construcción y la espiral de Arquímedes'
 slug: "数学の歴史"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Matemáticas", "Historia"]
 draft: false
 image: "img.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
+description: 'Hacemos un repaso de la historia de las matemáticas mediante eventos y cronologías de la antigüedad. Explicamos en detalle los descubrimientos y la trayectoria histórica que apoyaron el desarrollo de las matemáticas, como los tres problemas clásicos de la antigua Grecia (la cuadratura del círculo, la trisección del ángulo, la duplicación del cubo), la espiral de Arquímedes y el teorema de Pappus.'
 ---
 
 

@@ -1,11 +1,12 @@
 ---
-title: "Como encontrar a localização de um arquivo executável no PATH do Windows"
+title: 'Como encontrar a localização (caminho) do arquivo executável no PATH do Windows [comando where]'
 slug: "Windows でパスの通った実行ファイルの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Caminho", "Arquivo executável", "Prompt de Comando"]
 draft: false
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'Explicamos como verificar facilmente o local de salvamento (caminho completo) do arquivo executável no Prompt de Comando do Windows ou no PowerShell. Apresentamos um truque útil para localizar rapidamente o local exato do aplicativo no caminho usando o comando ''where''.'
 ---
 
 # Como encontrar a localização de um arquivo executável no PATH do Windows

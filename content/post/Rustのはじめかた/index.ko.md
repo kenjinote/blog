@@ -3,13 +3,14 @@
 
 
 
-title: "'Rust 시작하기'"
+title: 'Rust 언어 입문: 특징부터 설치, Hello World까지의 시작 방법'
 slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["프로그래밍"]
+description: '빠르고 메모리 안전성이 뛰어난 프로그래밍 언어 Rust의 시작 방법을 초보자를 위해 설명합니다. 언어의 특징 및 설치 방법부터 첫 번째 프로그램인 Hello World의 실행 절차, 추천 문서까지 종합적으로 소개합니다.'
 ---
 
 

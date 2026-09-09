@@ -1,11 +1,12 @@
 ---
-title: "So stellen Sie das klassische Kontextmenü in Windows 11 wieder her"
+title: 'So stellen Sie das Rechtsklick-Menü von Windows 11 auf die klassische Version (alte Spezifikation) zurück [Registrierungseinstellungen]'
 slug: "so-stellen-sie-das-klassische-kontextmenue-in-windows-11-wieder-her"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Datei-Explorer"]
 draft: false
 image: "img.webp"
 categories: ["PC und Gadgets"]
+description: 'Wir erklären, wie Sie das neue Rechtsklick-Menü (Kontextmenü) von Windows 11 auf die klassische Version von Windows 10 zurücksetzen. Wir zeigen Ihnen eine einfache Vorgehensweise, um mit dem Registrierungseditor die Einstellungen zu ändern und das Menü der alten Spezifikation dauerhaft anzuzeigen.'
 ---
 
 # So stellen Sie das klassische Kontextmenü in Windows 11 wieder her

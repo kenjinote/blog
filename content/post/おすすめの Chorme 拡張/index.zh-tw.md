@@ -1,11 +1,12 @@
 ---
-title: "推薦的 Chrome 擴充功能"
+title: '讓 Chrome、Edge 變得超級便利的推薦瀏覽器擴充功能總整理'
 slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome 擴充功能", "瀏覽器", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
 categories: ["IT 科技"]
+description: '介紹能大幅提升 Google Chrome 或 Microsoft Edge 瀏覽效率的推薦擴充功能，例如滑鼠手勢、廣告阻擋、DeepL 翻譯、ChatGPT 側邊欄使用等。'
 ---
 
 # 推薦的 Chrome 擴充功能

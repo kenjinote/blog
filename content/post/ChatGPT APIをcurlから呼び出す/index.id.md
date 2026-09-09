@@ -1,11 +1,12 @@
 ---
-title: "Memanggil API ChatGPT dari curl"
+title: 'Cara Memanggil API ChatGPT dari curl di Command Prompt Windows'
 slug: "memanggil-api-chatgpt-dari-curl"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "Perintah"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Menjelaskan cara memanggil API ChatGPT dari OpenAI melalui perintah curl menggunakan Command Prompt (cmd) Windows. Kami memperkenalkan dengan mudah perintah yang diperlukan dan cara mengatur parameternya.'
 ---
 # Memanggil API ChatGPT dari curl
 

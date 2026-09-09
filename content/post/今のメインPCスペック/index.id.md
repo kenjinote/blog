@@ -1,11 +1,12 @@
 ---
-title: "Spesifikasi PC Utama Saat Ini"
+title: '[Core i7-8700K / RAM 32GB] Spesifikasi PC Utama dan Lingkungan Kerja Saat Ini'
 slug: "Spesifikasi PC Utama Saat Ini"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
 categories: ["PC & Gadget"]
+description: 'Saya merangkum spesifikasi PC utama yang saya gunakan saat ini (Core i7-8700K, memori 32GB, Windows 11) beserta lingkungan kerjanya. Saya memperkenalkan konfigurasi saat ini menggunakan PC desktop dari Mouse Computer sebagai catatan.'
 ---
 Berikut adalah spesifikasi PC utama saya.
 | Nama Item | Nilai |

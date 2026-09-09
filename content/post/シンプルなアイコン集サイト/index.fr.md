@@ -1,11 +1,12 @@
 ---
-title: "Sites de collection d'icônes simples"
+title: 'Utilisation gratuite ! 7 sites de ressources d''icônes simples et gratuites recommandés'
 slug: "sites-de-collection-dicones-simples"
 date: 2022-09-07T16:46:56+09:00
 tags: ["Icônes", "Design"]
 draft: false
 image: "img_2.webp"
 categories: ["Informatique et Technologie"]
+description: 'Nous avons sélectionné et présentons des sites de ressources d''icônes gratuites, simples et faciles à utiliser, utiles pour la conception de sites Web ou la création de documents. Rempli de sites pratiques, y compris pour un usage commercial, tels que Google Material Icons et GitHub Octicons.'
 ---
 
 ## Google Material Symbols and Icons

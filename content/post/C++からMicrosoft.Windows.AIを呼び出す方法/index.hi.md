@@ -1,11 +1,12 @@
 ---
-title: "C++ से Microsoft.Windows.AI को कॉल करने का तरीका"
+title: '【नमूने के साथ】C++ से Windows.AI को कॉल करके ONNX मॉडल निष्पादित करने की विधि'
 slug: "C++-से-Microsoft.Windows.AI-को-कॉल-करने-का-तरीका"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
 categories: ["उपकरण और विकास परिवेश"]
+description: 'AI सुविधाओं तक पहुँचने के लिए Windows के मानक Windows ML का उपयोग करें! हम नमूना कोड के साथ स्पष्ट रूप से समझाएंगे कि Win32 ऐप के C++ वातावरण से "Microsoft.Windows.AI" को कैसे कॉल किया जाए और ONNX प्रारूप में AI मॉडल को कैसे निष्पादित किया जाए।'
 ---
 
 # 🎯 C++ से `Microsoft.Windows.AI` को कॉल करने का तरीका【उदाहरण कोड के साथ】

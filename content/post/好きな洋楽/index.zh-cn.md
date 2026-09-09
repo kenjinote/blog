@@ -1,11 +1,12 @@
 ---
-title: '喜欢的欧美音乐'
+title: '欧美经典名曲推荐总结：跨越时代广受喜爱的经典热门单曲'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00
 tags: ["欧美音乐", "音乐"]
 draft: false
 image: "img.webp"
 categories: ["生活方式・杂记"]
+description: '为您介绍The Beatles、Coldplay、Ed Sheeran等跨越时代依然备受喜爱的欧美经典名曲。从深入人心的抒情歌到令人兴奋的流行乐，总结了绝对不能错过的经典热门单曲。'
 ---
 
 # 推荐的欧美音乐

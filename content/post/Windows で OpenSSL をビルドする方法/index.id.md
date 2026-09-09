@@ -1,11 +1,12 @@
 ---
-title: "Cara Membangun OpenSSL di Windows"
+title: 'Prosedur dan Cara Membangun Lingkungan untuk Build dan Instal OpenSSL di Lingkungan Windows'
 slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'Menjelaskan cara build pustaka komunikasi terenkripsi untuk bahasa C, ''OpenSSL'', di lingkungan Windows. Memperkenalkan secara rinci mulai dari persiapan alat yang dibutuhkan seperti Perl, NASM, dan Visual Studio 2022, hingga prosedur build kode sumber yang sebenarnya.'
 ---
 
 # Apa itu OpenSSL

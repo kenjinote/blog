@@ -1,11 +1,12 @@
 ---
-title: "Comprei um mac mini (2018)"
+title: 'Por Que Comprei um Mac mini Usado (2018) para Desenvolvimento de Apps iOS e Suas Especificações'
 slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'Para montar um ambiente confortável de desenvolvimento de aplicativos para iOS em casa, comprei um modelo mais antigo de Mac mini (2018) no Mercari. Compartilho os motivos da compra, as especificações detalhadas e o primeiro passo na preparação do ambiente.'
 ---
 
 # Comprei um mac mini (2018)

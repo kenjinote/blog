@@ -7,13 +7,14 @@
 
 
 
-title: "Lista de comandos de Hugo"
+title: 'Instalación de la CLI de Hugo y lista de comandos básicos más usados'
 slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "comandos"]
 draft: false
 image: "img.webp"
 categories: ["Operación del blog"]
+description: 'Presentamos cómo instalar la CLI de Hugo, un rápido generador de sitios estáticos, y una lista de comandos básicos que usarás frecuentemente al gestionar tu blog. Explicamos las operaciones que los principiantes en Hugo deben memorizar: crear un sitio nuevo, escribir artículos, iniciar el servidor local, hacer la build, etc.'
 ---
 
 

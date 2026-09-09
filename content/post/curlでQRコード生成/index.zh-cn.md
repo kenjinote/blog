@@ -1,11 +1,12 @@
 ---
-title: '使用 curl 生成二维码'
+title: '使用curl命令在命令提示符下生成二维码的方法'
 slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["二维码", "curl", "命令提示符"]
 draft: false
 image: "img.webp"
 categories: ["IT・技术"]
+description: '本文介绍在Windows命令提示符下使用curl命令生成和显示基于文本的二维码的方法。由于使用了外部API（qrenco.de），还将讲解处理个人信息时的注意事项。'
 ---
 
 ## 使用 curl 生成二维码

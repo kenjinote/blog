@@ -1,11 +1,12 @@
 ---
-title: "إضافة Hidemaru Editor grep إلى قائمة النقر بزر الماوس الأيمن في مستكشف الملفات"
+title: 'كيفية إضافة ميزة grep الخاصة بمحرر Hidemaru إلى قائمة النقر بزر الماوس الأيمن في Windows'
 slug: "إضافة Hidemaru Editor grep إلى قائمة النقر بزر الماوس الأيمن في مستكشف الملفات"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "File Explorer", "Right-click menu", "grep", "Registry"]
 draft: false
 image: "img.webp"
 categories: ["أدوات وبيئة التطوير"]
+description: 'نقدم خطوات إعداد مفيدة لإضافة ميزة grep الخاصة بمحرر Hidemaru إلى قائمة النقر بزر الماوس الأيمن في مستكشف Windows 10/11. نشرح بوضوح الطريقة السهلة باستخدام ملف تسجيل السجل.'
 ---
 
 نقدم لكم طريقة لإضافة grep الخاص بـ Hidemaru Editor إلى قائمة النقر بزر الماوس الأيمن في مستكشف الملفات في Windows 10/11.

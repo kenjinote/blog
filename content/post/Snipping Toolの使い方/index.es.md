@@ -6,13 +6,14 @@
 
 
 
-title: "Cómo usar Snipping Tool"
+title: 'Cómo usar ''Snipping Tool'' de Windows, grabar la pantalla y capturarla'
 slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Imagen", "Video", "Captura de pantalla", "Grabación", "Captura"]
 draft: false
 image: "img.webp"
 categories: ["IT y Tecnología"]
+description: 'Explicamos el uso básico de la herramienta de captura de pantalla ''Snipping Tool'', incluida por defecto en Windows. Presentamos de manera fácil de entender desde cómo iniciarla rápidamente con atajos de teclado, guardar partes de una imagen, hasta los pasos para grabar la pantalla en video.'
 ---
 
 

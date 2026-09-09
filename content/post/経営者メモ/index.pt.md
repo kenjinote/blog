@@ -1,11 +1,12 @@
 ---
-title: "Notas de Gestão"
+title: 'O segredo para a escolha de negócios de sucesso e sistematização: Notas práticas para gestores'
 slug: "notas-de-gestao"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gestor"]
 draft: false
 image: "images/img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Disponibilizamos anotações práticas que os proprietários de negócios devem saber, como encontrar negócios que estão se tornando populares, imitação e melhoria completas, e pontos de sistematização que qualquer pessoa pode fazer. Abordamos também a essência da filosofia de gestão de ''maximizar os lucros da empresa''.'
 ---
 # Encontrar negócios que estão se tornando populares
 - Pergunte a pessoas de dentro do Hot Pepper e a contadores sobre negócios que estão em alta

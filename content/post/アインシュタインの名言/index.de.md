@@ -1,11 +1,12 @@
 ---
-title: "Zitate von Einstein"
+title: 'Geben Sie der Kritik nicht nach! Tipps für ein starkes Leben aus Einsteins Zitaten'
 slug: "zitate-von-einstein"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Zitate", "Philosophie", "Wissenschaft", "Physik"]
 draft: false
 image: "Solvay_conference_1927.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
+description: 'Wir stellen tiefe Zitate von Einstein vor. Wir erläutern die Lehre, wie man weiterhin stark an sich selbst glaubt und sich nicht von den Bewertungen oder der Kritik anderer beeinflussen lässt. Voller Tipps, die im modernen Alltag, wie am Arbeitsplatz und in sozialen Medien, angewendet werden können.'
 ---
 
 Hallo!

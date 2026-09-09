@@ -7,13 +7,14 @@
 
 
 
-title: "Transmisión de desarrollo de app de tarjetas de Año Nuevo VOL.1 (Guion)"
+title: '【C++】Transmisión de desarrollo de la aplicación para crear tarjetas de Año Nuevo VOL.1: Configuración del entorno e inicialización de Direct2D'
 slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["Transmisión de desarrollo de app de tarjetas de Año Nuevo", "YouTube"]
 draft: false
 image: "img.webp"
 categories: ["Tecnología de la Información"]
+description: 'Primera emisión en YouTube sobre el desarrollo de una aplicación para crear tarjetas de Año Nuevo (Nengajo) usando C++. Explicamos junto con el código fuente el procedimiento de configuración del entorno, que es la base del desarrollo de la aplicación, desde la creación del repositorio GIT, mostrar la ventana principal e inicializar Direct2D hasta la implementación de HelloWorld.'
 ---
 
 

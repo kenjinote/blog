@@ -7,13 +7,14 @@
 
 
 
-title: "'iOS용 ffmpeg 파라미터'"
+title: 'iOS용으로 최적화! 동영상을 원활하게 재생하는 ffmpeg 변환 매개변수'
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
 categories: ["PC・가젯"]
+description: 'iPhone이나 iPad 등의 iOS 기기에서 동영상을 원활하게 재생하기 위한 최적의 ffmpeg 명령과 매개변수 설정을 소개합니다. 각 옵션의 의미와 설정의 포인트도 자세히 해설하고 있습니다.'
 ---
 
 

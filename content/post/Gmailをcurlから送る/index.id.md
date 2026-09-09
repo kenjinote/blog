@@ -1,11 +1,12 @@
 ---
-title: "Mengirim email Gmail dengan curl"
+title: 'Cara Mengirim Email dari Gmail Menggunakan Perintah curl'
 slug: "mengirim-email-gmail-dengan-curl"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["AI・テクノロジー"]
+description: 'Menjelaskan cara mengirim email melalui akun Gmail menggunakan alat baris perintah ''curl''. Memperkenalkan secara rinci mulai dari langkah memperoleh kata sandi aplikasi Google hingga penentuan opsi curl, serta pembuatan file isi email dan perintah pengirimannya.'
 ---
 
 # Mengirim email Gmail dengan curl

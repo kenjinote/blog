@@ -1,12 +1,13 @@
 ---
 
 
-title: "Título del blog"
+title: '【Versión Completa】¡Plantilla para la creación de artículos de blog! Estructura de encabezados fuerte para SEO y consejos de escritura'
 slug: "000_テンプレート"
 date: 2022-01-01T00:00:00+09:00
 tags: ["etiqueta1", "etiqueta2"]
 draft: true
 categories: ["TI y tecnología"]
+description: 'Presentamos una plantilla útil para la creación de artículos de blog. Cubre el formato básico de Markdown útil para crear artículos teniendo en cuenta el SEO, incluyendo la estructura de encabezados, listas, bloques de código, citas, etc. Úsala para escribir artículos de manera eficiente.'
 ---
 
 

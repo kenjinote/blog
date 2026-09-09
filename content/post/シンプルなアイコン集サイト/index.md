@@ -1,11 +1,12 @@
 ---
-title: 'シンプルなアイコン集サイト'
+title: '無料で使える！シンプルなフリーアイコン素材サイトおすすめ7選'
 slug: "シンプルなアイコン集サイト"
 date: 2022-09-07T16:46:56+09:00
 tags: ["アイコン","デザイン"]
 draft: false
 image: "img_2.webp"
 categories: ["IT・テクノロジー"]
+description: 'Webデザインや資料作成に役立つ、シンプルで使いやすい無料のアイコン素材サイトを厳選して紹介。Google Material IconsやGitHub Octiconsなど、商用利用も可能な便利サイトが満載です。'
 ---
 
 ## Google Material Symbols and Icons

@@ -1,11 +1,12 @@
 ---
-title: "Comment fermer et redémarrer l'Explorateur"
+title: 'Résumé des méthodes pour fermer et redémarrer l''Explorateur Windows'
 slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00
 tags: ["Explorateur"]
 draft: false
 image: "img_2.webp"
 categories: ["IT et Technologie"]
+description: 'Nous expliquons diverses méthodes pour fermer et redémarrer l''Explorateur Windows (explorer.exe). Nous présentons clairement les procédures utilisant la barre des tâches, le gestionnaire des tâches et l''invite de commande.'
 ---
 
 ## Comment fermer depuis le menu du clic droit de la barre des tâches

@@ -1,11 +1,12 @@
 ---
-title: "Musik Jepang Favorit"
+title: 'Rangkuman Lagu Jepang Terkenal Rekomendasi: J-POP Klasik Nostalgia yang Menyentuh Hati'
 slug: "musik-jepang-favorit"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Musik Jepang", "Musik"]
 draft: false
 image: "img.webp"
 categories: ["Gaya Hidup & Lain-lain"]
+description: 'Kami akan memperkenalkan rekomendasi lagu klasik Jepang (J-POP) yang menyentuh hati, seperti karya Tulip, RADWIMPS, dan Hikaru Utada. Nikmati berbagai karya musik Jepang luar biasa yang terus dicintai lintas generasi, mulai dari lagu mahakarya nostalgia era Showa, lagu hit J-POP era Heisei, hingga balada klasik.'
 ---
 
 # Rekomendasi Musik Jepang

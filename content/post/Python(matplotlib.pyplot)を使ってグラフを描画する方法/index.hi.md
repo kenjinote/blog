@@ -1,11 +1,12 @@
 ---
-title: "Python (matplotlib.pyplot) का उपयोग करके ग्राफ़ कैसे बनाएं"
+title: 'Python और matplotlib के साथ ग्राफ़ कैसे बनाएं [Google Colab समर्थित]'
 slug: "Python (matplotlib.pyplot) का उपयोग करके ग्राफ़ कैसे बनाएं"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "ग्राफ़", "गणित", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["गणित・क्रिप्टोग्राफी・क्वांटम"]
+description: 'Google Colaboratory का उपयोग करके Python की matplotlib.pyplot लाइब्रेरी के साथ साइन और कोसाइन तरंगों के ग्राफ़ को आसानी से बनाने और प्रदर्शित करने की प्रक्रिया शुरुआती लोगों के लिए बताई गई है। आप पर्यावरण स्थापित किए बिना इसे तुरंत आज़मा सकते हैं।'
 ---
 
 ![img_1.png](img_1.webp)

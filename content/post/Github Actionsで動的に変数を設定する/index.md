@@ -1,11 +1,12 @@
 ---
-title: 'Github Actionsで動的に変数を設定する'
+title: 'GitHub Actionsで動的に環境変数を設定する方法【Windows環境】'
 slug: "Github Actionsで動的に変数を設定する"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["ツール・開発環境"]
+description: 'GitHub Actionsのワークフロー内で動的に環境変数を設定する方法を解説します。Windows環境を例に「$env:GITHUB_ENV」へ書き込む手順や、後続のステップで変数を参照してリリース作成に活用する具体例を紹介。'
 ---
 
 Github Actionsで動的に変数を設定するには、下記のように$env:GITHUB_ENVに追加書き込みすることで実現できます。

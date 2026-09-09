@@ -1,11 +1,12 @@
 ---
-title: "Menulis Pengujian di Rust"
+title: 'Pengenalan Cara Menulis dan Menjalankan Pengujian di Rust (cargo test)'
 slug: "Rustでテストを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust", "pengujian"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["pemrograman"]
+description: 'Menjelaskan untuk pemula cara menulis kode pengujian di Rust dan prosedur untuk menjalankan pengujian menggunakan perintah cargo test. Kami juga memperkenalkan secara rinci cara menggunakan atribut #[test] dan hasil keluaran jika berhasil atau gagal, lengkap dengan contoh kode spesifik.'
 ---
 
 Untuk menulis pengujian di Rust, buat sebuah fungsi dan tambahkan atribut `#[test]` satu baris di atas definisi fungsi pengujian tersebut.

@@ -1,11 +1,12 @@
 ---
-title: "Cara membatalkan git reset"
+title: 'Cara Membatalkan git reset yang Tidak Sengaja Dijalankan | Langkah Pemulihan Commit'
 slug: "Cara membatalkan git reset"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "memulihkan", "membatalkan"]
 draft: false
 image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
+description: 'Menjelaskan cara membatalkan reset dan mengembalikan ke keadaan commit semula ketika Anda tidak sengaja menjalankan ''git reset'' di Git. Memperkenalkan dengan mudah langkah-langkah untuk memeriksa ID commit menggunakan ''git reflog'' dan mengembalikan kondisi dengan benar.'
 ---
 # Cara membatalkan git reset
 Jika Anda tidak sengaja menjalankan git reset setelah melakukan git commit, berikut ini adalah cara membatalkan git reset (cara memulihkan status saat git commit).

@@ -1,11 +1,12 @@
 ---
-title: "Como restaurar o menu de contexto clássico no Windows 11"
+title: 'Como restaurar o menu de contexto do Windows 11 para a versão clássica (especificação antiga) [Configurações do Registro]'
 slug: "como-restaurar-o-menu-de-contexto-classico-no-windows-11"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Explorador de Arquivos"]
 draft: false
 image: "img.webp"
 categories: ["PC e Gadgets"]
+description: 'Explicamos como restaurar o novo menu de contexto do Windows 11 para a versão clássica do Windows 10. Apresentamos um procedimento simples para sempre mostrar o menu da especificação antiga alterando as configurações usando o Editor do Registro.'
 ---
 
 # Como restaurar o menu de contexto clássico no Windows 11

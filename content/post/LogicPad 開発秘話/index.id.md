@@ -1,11 +1,12 @@
 ---
-title: "Kisah Pengembangan LogicPad"
+title: 'Kisah di Balik Layar Pengembangan Alat Low-Code ''LogicPad'': Mengapa Membuat Ini?'
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Pengembangan", "Kisah"]
 draft: false
 image: "img.webp"
 categories: ["IT dan Teknologi"]
+description: 'Kisah awal mula ''LogicPad'', sebuah alat low-code untuk ''orang yang tidak bisa menulis kode tetapi memiliki logika''. Kami menceritakan dengan antusias tentang perasaan pribadi penulis di balik pengembangannya, serta cara pandangnya terhadap kariernya sendiri.'
 ---
 
 # Alat untuk Mereka yang "Tidak Bisa Menulis Kode, tetapi Memiliki Logika". Mengapa Saya Membuat LogicPad

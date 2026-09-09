@@ -1,11 +1,12 @@
 ---
-title: "Música de Café"
+title: 'Você pode se concentrar no trabalho e nos estudos! Coleção de músicas de café elegantes e BGM recomendados'
 slug: "musica-de-cafe"
 date: 2022-09-08T08:39:03+09:00
 tags: ["Café", "Música"]
 draft: false
 image: "images/img.webp"
 categories: ["Estilo de Vida / Diversos"]
+description: 'Compilamos músicas de café perfeitas como BGM de fundo para programação, estudos e teletrabalho. Apresentamos músicas de trabalho recomendadas, desde Electro Swing acelerado até LoFi Hip Hop e jazz relaxantes onde você pode se concentrar.'
 ---
 **Up-tempo**
 

@@ -1,11 +1,12 @@
 ---
-title: "Connaissances de Base sur les Ordinateurs"
+title: 'Quels sont les 5 principaux composants d''un ordinateur ? Connaissances de base sur le matériel et les logiciels pour les débutants en informatique'
 slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Ordinateur", "Connaissances de base"]
 draft: false
 image: "img.webp"
 categories: ["Informatique et Technologie"]
+description: 'Nous expliquons clairement le fonctionnement d''un ordinateur pour les débutants en informatique. Du rôle des ''5 principaux composants'' (entrée, sortie, mémoire, contrôle et opérations) à la relation entre le matériel et les logiciels (programmes), nous résumons les connaissances de base nécessaires en informatique.'
 ---
 
 # Connaissances de Base sur les Ordinateurs

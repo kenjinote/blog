@@ -3,10 +3,10 @@
 
 
 author: "Hugo Authors"
-title: "마크다운 구문 가이드"
+title: 'Hugo에서 사용할 수 있는 마크다운(Markdown) 문법 샘플: 제목·단락 등 기본 신택스'
 slug: "マークダウンのサンプル"
 date: "2019-03-11"
-description: "HTML 요소를 위한 기본 마크다운 구문과 포맷팅을 보여주는 샘플 문서입니다."
+description: '정적 사이트 생성기 Hugo의 콘텐츠 작성에 사용할 수 있는 기본적인 마크다운(Markdown) 문법(신택스) 샘플을 소개합니다. 제목(H1~H6)이나 단락 등 테마의 CSS에서 어떻게 장식되는지 확인할 수 있습니다.'
 tags: ["마크다운", "css", "html", "테마"]
 categories: ["테마", "구문"]
 series: ["테마 가이드"]

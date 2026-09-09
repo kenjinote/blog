@@ -7,13 +7,14 @@
 
 
 
-title: "FizzBuzz"
+title: '¿Qué es el "Problema FizzBuzz", la prueba de fuego en programación? Explicando cómo escribirlo en Python'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algoritmos"]
 draft: false
 image: "img.webp"
 categories: ["Programación"]
+description: 'Explicamos de manera sencilla qué es el "Problema FizzBuzz", a menudo planteado en entrevistas a programadores, y mostramos ejemplos de código específicos (uso de condicionales) en Python. Un contenido indispensable desde principiantes hasta aquellos que deseen repasar lo básico.'
 ---
 
 

@@ -3,7 +3,7 @@
 
 
 
-title: "'Fórmulas favoritas'"
+title: 'El mundo ultra hermoso de las matemáticas: Mi colección de fórmulas favoritas como el Teorema de Wilson y la Fórmula de Euler'
 slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Matemáticas"]
@@ -11,6 +11,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
+description: 'Presentamos fórmulas atractivas que te hacen sentir la profundidad y belleza de las matemáticas, como el teorema de Wilson, la fórmula de Euler, el último teorema de Fermat y el problema de Basilea. Echa un vistazo a la multitud de hermosas fórmulas, tan simples pero que representan la verdad del mundo, y que inspiran asombro.'
 ---
 
 

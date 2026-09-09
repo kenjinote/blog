@@ -1,11 +1,12 @@
 ---
-title: "11 Game Favorit Saya"
+title: 'Wajib Dilihat oleh Retro Gamer! 11 Rekomendasi Game Masterpiece untuk Game Boy Orisinal dan Super Famicom'
 slug: "11-game-favorit-saya"
 date: 2022-09-12T19:28:50+09:00
 tags: ["Game"]
 draft: false
 image: "img_12.webp"
 categories: ["IT・Teknologi"]
+description: 'Kami akan memperkenalkan 11 rekomendasi game masterpiece retro nostalgia, seperti Game Boy generasi pertama dan Super Famicom (SNES). Penuh dengan game luar biasa setingkat Hall of Fame yang tak lekang oleh waktu jika dimainkan saat ini, seperti ''SaGa 2: Hihou Densetsu'', ''Kirby''s Dream Land'', dan ''Pokemon Red/Green''. Mari bernostalgia dengan pesona dari mahakarya ini.'
 ---
 Ketika saya mengingat game favorit saya, ternyata sebagian besar adalah game klasik yang legendaris.
 Karena banyak game lama, bagi yang belum memainkannya silakan coba mainkan.

@@ -1,11 +1,12 @@
 ---
-title: "Menginstal Aplikasi dengan Perintah menggunakan WinGet"
+title: 'Cara Mudah Instal dan Kelola Aplikasi dengan Perintah WinGet di Windows 11'
 slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'Menjelaskan cara menginstal aplikasi dari command line menggunakan manajer paket Windows 11, ''WinGet''. Memperkenalkan prosedur cepat untuk menerapkan dan mengelola perangkat lunak utama seperti Chrome, VSCode, dan Slack melalui antarmuka baris perintah.'
 ---
 ## Prasyarat
 Harus Windows 11

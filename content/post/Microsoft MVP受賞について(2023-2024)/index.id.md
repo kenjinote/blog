@@ -1,11 +1,12 @@
 ---
-title: "Tentang Penghargaan Microsoft MVP (2023-2024)"
+title: 'Saya Menerima Penghargaan Microsoft MVP (2023-2024)'
 slug: "Microsoft MVP受賞について(2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Penghargaan"]
 draft: false
 image: "img.webp"
 categories: ["Alat & Lingkungan Pengembangan"]
+description: 'Ini adalah laporan bahwa saya menerima penghargaan Microsoft MVP (2023-2024) dalam kategori Developer Technologies. Ini merupakan penghargaan selama 7 tahun berturut-turut sejak 2017. Saya melihat kembali penyebaran informasi di blog teknologi dan aktivitas komunitas saya selama ini.'
 ---
 
 # Tentang Penghargaan Microsoft MVP (2023-2024)

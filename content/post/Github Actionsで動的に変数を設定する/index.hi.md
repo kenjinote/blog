@@ -1,11 +1,12 @@
 ---
-title: "Github Actions में डायनामिक रूप से वेरिएबल सेट करना"
+title: 'GitHub Actions में डायनामिक रूप से पर्यावरण चर सेट करने का तरीका 【Windows वातावरण】'
 slug: "Github Actionsで動的に変数を設定する"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["ツール・開発環境"]
+description: 'हम बताएंगे कि GitHub Actions वर्कफ़्लो के भीतर डायनामिक रूप से पर्यावरण चर (Environment Variables) कैसे सेट करें। Windows वातावरण का उपयोग करते हुए, हम "$env:GITHUB_ENV" पर लिखने की प्रक्रिया और बाद के चरणों में चर का संदर्भ देकर रिलीज़ निर्माण के लिए इसका उपयोग करने के विशिष्ट उदाहरण पेश करेंगे。'
 ---
 
 Github Actions में डायनामिक रूप से वेरिएबल सेट करने के लिए, आप इसे $env:GITHUB_ENV में जोड़कर प्राप्त कर सकते हैं, जैसा कि नीचे दिखाया गया है।

@@ -1,11 +1,12 @@
 ---
-title: "Comment télécharger des vidéos YouTube avec yt-dlp.exe"
+title: 'Utilisation de yt-dlp : Comment télécharger et enregistrer des vidéos et audios YouTube'
 slug: "yt-dlp.exe による YouTube 動画のダウンロード方法"
 date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "Télécharger"]
 draft: false
 image: "img_1.webp"
 categories: ["Informatique/Technologie"]
+description: 'Nous expliquons clairement comment télécharger et enregistrer des vidéos YouTube en haute qualité à l''aide de l''outil en ligne de commande ''yt-dlp'', ainsi que la procédure pour les extraire et les sauvegarder sous forme de fichiers audio mp3. Couvre tout, de l''installation à l''utilisation.'
 ---
 # Qu'est-ce que yt-dlp
 

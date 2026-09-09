@@ -1,11 +1,12 @@
 ---
-title: "Splatoon 2"
+title: 'Le secret pour profiter longtemps de Splatoon 2 ! Armes recommandées et astuces de positionnement'
 slug: "splatoon-2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Jeux", "Nintendo Switch"]
 draft: false
 image: "img.webp"
 categories: ["IT et Technologie"]
+description: 'Nous présentons l''attrait du chef-d''œuvre ''Splatoon 2'' auquel on peut jouer longtemps, ainsi que des armes recommandées pour les débutants (Liquidateur Jr., divers rouleaux, etc.). Ceci est un journal de jeu sur la façon d''apprécier les matchs tout en maintenant un rang A+ à S+ en match pro.'
 ---
 
 # Splatoon 2

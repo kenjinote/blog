@@ -1,11 +1,12 @@
 ---
-title: "La Dialectique de Hegel"
+title: 'Qu''est-ce que la dialectique de Hegel ? Le concept d''Aufheben (dépassement) et son application au quotidien et en programmation'
 slug: "la-dialectique-de-hegel"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophie", "Hegel", "Dialectique"]
 draft: false
 image: "images/img.webp"
 categories: ["Informatique et Technologie"]
+description: 'Nous expliquons la « dialectique de Hegel », qui consiste à surmonter les oppositions et les contradictions pour évoluer vers une dimension supérieure. À travers des exemples familiers, nous examinons ce concept non seulement en philosophie, mais aussi dans les lois de la nature et l''évolution via la correction de bugs dans les programmes informatiques.'
 ---
 ## Qu'est-ce que la dialectique de Hegel ?
 

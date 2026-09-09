@@ -1,11 +1,12 @@
 ---
-title: "Resolvendo o Problema do Caixeiro Viajante com Mathematica"
+title: 'Como resolver o problema do caixeiro-viajante (TSP) com o Mathematica'
 slug: "Resolvendo o Problema do Caixeiro Viajante com Mathematica"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problema do Caixeiro Viajante", "Algoritmo", "Matemática"]
 draft: false
 image: "img.webp"
 categories: ["Matemática, Criptografia, Quântica"]
+description: 'Explicamos como resolver o problema do caixeiro-viajante (TSP) usando o sistema de computação algébrica Mathematica. Apresentamos os passos para criar uma matriz de distâncias entre cidades usando a função SparseArray e encontrar a rota mais curta com o FindShortestTour.'
 ---
 # Resolvendo o Problema do Caixeiro Viajante com Mathematica
 

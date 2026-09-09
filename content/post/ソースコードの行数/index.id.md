@@ -1,11 +1,12 @@
 ---
-title: "Jumlah Baris Kode Sumber"
+title: 'Bagaimana Skala Perangkat Lunak Berubah? Sejarah dan Evolusi Jumlah Baris Kode Sumber'
 slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00
 tags: ["kode sumber", "jumlah baris"]
 draft: false
 image: "img_1.webp"
 categories: ["TI & Teknologi"]
+description: 'Membahas tentang betapa drastisnya peningkatan jumlah baris pada kode sumber dari waktu ke waktu, mulai dari 420.000 baris untuk program Pesawat Ulang Alik hingga 2 miliar baris milik Google. Juga memperkenalkan hubungan antara bertambahnya kode dan risiko munculnya bug, dilengkapi dengan studi kasus kernel Linux.'
 ---
 
 # Jumlah Baris Kode Sumber

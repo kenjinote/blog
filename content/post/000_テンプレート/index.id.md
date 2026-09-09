@@ -1,10 +1,11 @@
 ---
-title: "Judul Blog"
+title: '[Edisi Lengkap] Templat Pembuatan Artikel Blog! Struktur Heading Ramah SEO dan Tips Menulis'
 slug: "000_templat"
 date: 2022-01-01T00:00:00+09:00
 tags: ["tag1", "tag2"]
 draft: true
 categories: ["TI dan Teknologi"]
+description: 'Memperkenalkan templat yang berguna untuk membuat artikel blog. Templat ini mencakup format dasar Markdown yang berguna untuk pembuatan artikel yang sadar SEO, seperti struktur heading, daftar, blok kode, dan kutipan. Silakan manfaatkan untuk penulisan artikel yang efisien.'
 ---
 
 # Judul Blog

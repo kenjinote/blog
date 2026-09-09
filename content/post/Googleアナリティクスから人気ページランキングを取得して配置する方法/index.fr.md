@@ -1,11 +1,12 @@
 ---
-title: "Comment obtenir et intégrer un classement des pages populaires depuis Google Analytics"
+title: 'Comment afficher le classement des articles populaires de Google Analytics avec Ranklet'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["Gestion de blog"]
+description: 'Nous expliquons comment utiliser « Ranklet », un service qui se synchronise avec Google Analytics et permet d''afficher automatiquement et facilement le classement des pages populaires de votre site. En prenant un blog HUGO comme exemple, nous présentons la procédure de configuration et les méthodes de personnalisation des modèles HTML/CSS.'
 ---
 
 ## Introduction

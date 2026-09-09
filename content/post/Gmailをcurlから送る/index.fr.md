@@ -1,11 +1,12 @@
 ---
-title: "Envoyer un Gmail avec curl"
+title: 'Comment envoyer un e-mail avec Gmail à l''aide de la commande curl'
 slug: "envoyer-un-gmail-avec-curl"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["IA et Technologie"]
+description: 'Nous expliquons comment envoyer un e-mail via votre compte Gmail à l''aide de l''outil de ligne de commande « curl ». Nous présentons en détail la procédure d''obtention d''un mot de passe d''application Google, la spécification des options de curl, ainsi que la création et l''envoi d''un fichier de corps d''e-mail.'
 ---
 
 # Envoyer un Gmail avec curl

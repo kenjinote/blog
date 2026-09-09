@@ -1,11 +1,12 @@
 ---
-title: 'Command to prevent automatic generation of .DS_Store in macOS'
+title: 'Terminal Command to Disable and Stop Automatic Generation of .DS_Store in macOS'
 slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.webp"
 categories: ["PC and Gadgets"]
+description: 'We introduce a terminal command to prevent unnecessary ''.DS_Store'' files from being automatically generated on network drives, etc. in a macOS environment. Procedures to revert to original settings and restart Finder are also summarized.'
 ---
 The command to prevent the automatic generation of .DS_Store on macOS is as follows.
 Please execute it in the terminal.

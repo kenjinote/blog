@@ -1,11 +1,12 @@
 ---
-title: "Lista de Linguagens de Programação"
+title: 'Do popular ao nicho! Lista de linguagens de programação e resumo de suas características'
 slug: "Lista de Linguagens de Programação"
 date: 2023-04-01T03:45:53+09:00
 tags: ["プログラミング言語"]
 draft: true
 image: "img.webp"
 categories: ["プログラミング"]
+description: 'Listamos várias linguagens de programação, desde C, Python, Java, JavaScript até Rust, Go, OCaml e Clojure. Confira a visão geral e as características de cada linguagem para servir de referência em seu desenvolvimento ou aprendizado.'
 ---
 
 # Lista de Linguagens de Programação

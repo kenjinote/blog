@@ -1,11 +1,12 @@
 ---
-title: 'Cafe Music'
+title: 'Focus on Work and Study! A Collection of Recommended Stylish Cafe Music and BGM'
 slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00
 tags: ["Cafe", "Music"]
 draft: false
 image: "images/img.webp"
 categories: ["Lifestyle & Misc"]
+description: 'A compilation of cafe music perfect as BGM for programming, studying, or teleworking. Introduces recommended work music, from up-tempo Electro Swing to relaxing and focus-inducing LoFi Hip Hop and Jazz.'
 ---
 **Up-tempo**
 

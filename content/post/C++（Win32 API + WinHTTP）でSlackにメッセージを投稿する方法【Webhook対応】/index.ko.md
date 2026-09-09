@@ -7,13 +7,14 @@
 
 
 
-title: "'C++(Win32 API + WinHTTP)로 Slack에 메시지를 전송하는 방법 【Webhook 지원】'"
+title: '【WinHTTP】 C++(Win32 API)에서 Slack으로 Webhook을 통해 메시지 게시하는 방법'
 slug: "C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】"
 date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["블로그 운영"]
+description: 'Node.js나 Python이 아닌, 굳이 ''C++ × Win32 API × WinHTTP''로 Slack에 자동 게시하고 싶은 분들께! Incoming Webhooks를 활용하여 C++에서 POST 요청으로 메시지를 전송하는 구체적인 절차를 알기 쉽게 해설합니다.'
 ---
 
 

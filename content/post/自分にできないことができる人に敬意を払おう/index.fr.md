@@ -1,11 +1,12 @@
 ---
-title: "Respectons ceux qui peuvent faire ce que nous ne pouvons pas"
+title: 'Faites preuve de respect envers ceux qui peuvent faire ce que vous ne pouvez pas | État d''esprit pour supprimer la supériorité au travail'
 slug: "respectons-ceux-qui-peuvent-faire-ce-que-nous-ne-pouvons-pas"
 date: 2023-08-01T23:42:31+09:00
 tags: ["Poème", "Pensées"]
 draft: false
 image: "img.webp"
 categories: ["IT・Technologie"]
+description: 'Ceci est un essai qui prêche l''importance de ne pas classer les métiers et les positions sociales, et de respecter toutes les personnes qui accomplissent des tâches dont vous êtes incapable. Nous vous présentons des éléments clés de cette façon de penser pour faciliter les relations humaines et se respecter mutuellement.'
 ---
 
 # Montrons du respect

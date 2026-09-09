@@ -1,11 +1,12 @@
 ---
-title: "So wenden Sie ein Mosaik auf bestimmte Teile eines Bildes mit paint.net an"
+title: 'Einfache Erklärung, wie man mit paint.net bestimmte Bildbereiche verpixelt'
 slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "Rand", "Bild"]
 draft: false
 image: "img.webp"
 categories: ["KI und Technologie"]
+description: 'Erklärt, wie man mit der kostenlosen Bildbearbeitungssoftware „paint.net“ Teile eines Bildes verpixelt. Stellt die Bereichsauswahl mit dem Auswahlwerkzeug und die Einstellung der Effektfunktion für Anfänger vor. Eine Technik zum Schutz der Privatsphäre, die beim Hochladen von Bildern in soziale Netzwerke oder Blogs nützlich ist.'
 ---
 
 Ich werde Ihnen zeigen, wie Sie mit paint.net ein Mosaik auf bestimmte Teile eines Bildes anwenden.

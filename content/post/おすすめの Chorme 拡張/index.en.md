@@ -1,11 +1,12 @@
 ---
-title: 'Recommended Chrome Extensions'
+title: 'A Summary of Recommended Browser Extensions to Dramatically Improve Chrome and Edge'
 slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome Extensions", "Browser", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
 categories: ["IT / Technology"]
+description: 'Introduces recommended extensions that dramatically streamline browsing in Google Chrome and Microsoft Edge, including mouse gestures, ad blockers, DeepL translation, and using ChatGPT in the sidebar.'
 ---
 
 # Recommended Chrome Extensions

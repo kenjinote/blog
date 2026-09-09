@@ -1,11 +1,12 @@
 ---
-title: "Microsoft Word 快捷鍵列表"
+title: '【提升工作效率】Microsoft Word 實用快速鍵一覽'
 slug: "Microsoft Wordのショートカット一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "快捷鍵"]
 draft: false
 image: "img.webp"
 categories: ["工具與開發環境"]
+description: '可大幅提升 Microsoft Word 工作效率的實用快速鍵一覽。透過清楚的表格整理並介紹文字裝飾、複製貼上、搜尋取代、儲存等日常文章撰寫與編輯時常用的必備快速鍵。'
 ---
 ## 快捷鍵列表
 

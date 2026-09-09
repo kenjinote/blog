@@ -1,11 +1,12 @@
 ---
-title: 'How to Install Go'
+title: 'Go Language (Golang) Installation Steps and How to Execute Your First Program'
 slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "Install"]
 draft: false
 image: "images/cover.webp"
 categories: ["Programming"]
+description: 'A beginner-friendly explanation on how to install the programming language ''Go (Golang)'' developed by Google. From obtaining the installer to creating, compiling, and executing a Hello World program, it is ideal for a first introduction to the Go language.'
 ---
 # Introduction
 Go is a relatively new programming language released by Google in 2009.

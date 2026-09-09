@@ -1,11 +1,12 @@
 ---
-title: "إعداد المتغيرات ديناميكيًا في Github Actions"
+title: 'كيفية تعيين متغيرات البيئة ديناميكيًا في GitHub Actions 【بيئة Windows】'
 slug: "إعداد المتغيرات ديناميكيًا في Github Actions"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["ツール・開発環境"]
+description: 'نشرح كيفية تعيين متغيرات البيئة بشكل ديناميكي داخل مسارات عمل GitHub Actions. باستخدام بيئة Windows كمثال، نقدم خطوات الكتابة إلى ''$env:GITHUB_ENV'' وأمثلة عملية للإشارة إلى المتغيرات في الخطوات اللاحقة لاستخدامها في إنشاء الإصدارات.'
 ---
 
 لإعداد المتغيرات ديناميكيًا في Github Actions، يمكنك تحقيق ذلك عن طريق الإضافة إلى $env:GITHUB_ENV كما هو موضح أدناه.

@@ -2,13 +2,14 @@
 
 
 
-title: "GitHub Actions에서 동적으로 변수 설정하기"
+title: 'GitHub Actions에서 동적으로 환경 변수를 설정하는 방법【Windows 환경】'
 slug: "Github Actionsで動的に変数を設定する"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["도구·개발환경"]
+description: 'GitHub Actions 워크플로 내에서 동적으로 환경 변수를 설정하는 방법을 해설합니다. Windows 환경을 예로 들어 ''$env:GITHUB_ENV''에 기록하는 절차나, 후속 단계에서 변수를 참조하여 릴리스 작성에 활용하는 구체적인 예를 소개합니다.'
 ---
 
 

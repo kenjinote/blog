@@ -1,11 +1,12 @@
 ---
-title: 'Favorite Japanese Music'
+title: 'Collection of Recommended Japanese Masterpieces: Heart-Touching Nostalgic J-POP & Classic Songs'
 slug: "好きな邦楽"
 date: 2024-01-06T04:11:01+09:00
 tags: ["Japanese Music", "Music"]
 draft: false
 image: "img.webp"
 categories: ["Lifestyle & Miscellaneous"]
+description: 'We introduce recommended Japanese music masterpieces that touch the heart, such as Tulip, RADWIMPS, and Hikaru Utada. Enjoy a variety of wonderful Japanese music loved across generations, from nostalgic Showa-era classics to Heisei J-POP hits and classic ballads.'
 ---
 
 # Recommended Japanese Music

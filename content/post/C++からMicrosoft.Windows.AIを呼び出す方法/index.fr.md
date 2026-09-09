@@ -1,11 +1,12 @@
 ---
-title: "Comment appeler Microsoft.Windows.AI depuis C++"
+title: '[Avec Exemples] Comment appeler Windows.AI depuis C++ et exécuter des modèles ONNX'
 slug: "comment-appeler-microsoft-windows-ai-depuis-c++"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
 categories: ["Outils et environnement de développement"]
+description: 'Accédez aux fonctionnalités de l''IA en utilisant le Windows ML standard de Windows ! Nous expliquons clairement avec des exemples de code les étapes spécifiques pour appeler « Microsoft.Windows.AI » depuis l''environnement C++ d''une application Win32 et exécuter des modèles d''IA au format ONNX.'
 ---
 
 # 🎯 Comment appeler `Microsoft.Windows.AI` depuis C++ 【Avec code d'exemple】

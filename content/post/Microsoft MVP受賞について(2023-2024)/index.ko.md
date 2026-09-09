@@ -3,13 +3,14 @@
 
 
 
-title: "'Microsoft MVP 수상에 대하여(2023-2024)'"
+title: 'Microsoft MVP(2023-2024)를 수상했습니다'
 slug: "Microsoft MVP受賞について(2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "수상"]
 draft: false
 image: "img.webp"
 categories: ["도구 및 개발 환경"]
+description: 'Microsoft MVP(2023-2024)의 Developer Technologies 카테고리를 수상했다는 보고입니다. 2017년부터 7년 연속 수상하게 되었습니다. 그동안의 기술 블로그를 통한 정보 발신 및 커뮤니티 활동 등을 되돌아봅니다.'
 ---
 
 

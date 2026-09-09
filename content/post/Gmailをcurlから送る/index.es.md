@@ -7,13 +7,14 @@
 
 
 
-title: "Enviar Gmail desde curl"
+title: 'Cómo enviar un correo electrónico desde Gmail usando el comando curl'
 slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["IA y Tecnología"]
+description: 'Explicamos cómo enviar un correo a través de una cuenta de Gmail utilizando la herramienta de línea de comandos "curl". Detallamos el proceso desde la obtención de contraseñas de aplicaciones de Google, hasta la especificación de las opciones del curl y el comando para enviar un archivo de texto como cuerpo del correo.'
 ---
 
 

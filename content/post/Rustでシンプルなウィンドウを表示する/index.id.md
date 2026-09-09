@@ -1,11 +1,12 @@
 ---
-title: "Menampilkan jendela sederhana di Rust"
+title: 'Cara Membuat dan Menampilkan Jendela Sederhana Windows Menggunakan Rust dan winapi'
 slug: "menampilkan-jendela-sederhana-di-rust"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "jendela"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["pemrograman"]
+description: 'Memperkenalkan cara menggunakan ''winapi'' di Rust untuk membuat dan menampilkan jendela Windows sederhana. Kami menjelaskan secara rinci kode sumber yang menjadi dasar pemrograman GUI, dari pengaturan Cargo.toml hingga implementasi prosedur jendela.'
 ---
 
 Menampilkan jendela sederhana di Rust

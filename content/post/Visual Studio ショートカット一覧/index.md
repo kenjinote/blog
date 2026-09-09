@@ -1,11 +1,12 @@
 ---
-title: 'Visual Studio ショートカット一覧'
+title: 'Visual Studioの便利なショートカットキー一覧【作業効率アップ】'
 slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "ショートカット" ]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: '開発効率を劇的に向上させる、Visual Studio（VS2022）の便利なショートカットキー一覧をまとめました。デバッグやビルド、ブックマーク操作など、プログラミング中によく使う必須ショートカットを厳選紹介。'
 ---
 
 # Visual Studio ショートカット一覧

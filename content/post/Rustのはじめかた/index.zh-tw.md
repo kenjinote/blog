@@ -1,11 +1,12 @@
 ---
-title: "如何開始使用 Rust"
+title: 'Rust 語言入門：從特色、安裝到 Hello World 的開始方式'
 slug: "如何開始使用 Rust"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["程式設計"]
+description: '為初學者說明如何開始使用快速且記憶體安全的程式語言 Rust。全面介紹語言特色、安裝方法，到第一個程式 Hello World 的執行步驟，以及推薦的日文說明文件。'
 ---
 # 簡介
 Rust 是一種相對較新的程式語言，它允許您使用現代語法編寫快速且記憶體效率高的模組。

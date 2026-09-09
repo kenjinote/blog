@@ -1,11 +1,12 @@
 ---
-title: "Commande pour vérifier l'état de la licence de Windows"
+title: 'Comment vérifier l''état d''activation de la licence Windows ! Vérification facile en une seule commande'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licence", "Invite de commandes"]
 draft: false
 image: "img_1.webp"
 categories: ["PC et Gadgets"]
+description: 'Nous expliquons comment vérifier si la licence Windows est correctement activée. Nous présentons la procédure pour vérifier facilement les détails tels que la clé de produit, le type de licence et la date d''expiration, en exécutant simplement la commande ''slmgr'' depuis l''invite de commande.'
 ---
 
 # 【Windows】Comment vérifier l'état de la licence (1 commande suffit)

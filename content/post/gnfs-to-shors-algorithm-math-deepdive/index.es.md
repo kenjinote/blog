@@ -1,7 +1,7 @@
 ---
 
 
-title: '[Consideración matemática] ¿Por qué el algoritmo de descifrado ''GNFS'' es derrotado por el algoritmo de Shor en la era cuántica?'
+title: '¿Romper el cifrado RSA? Explicación matemática detallada del GNFS y el algoritmo de Shor'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00
 tags: ["Computación cuántica", "GNFS", "Algoritmo de Shor", "Criptoanálisis", "Matemáticas"]
@@ -9,6 +9,7 @@ image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
 categories: ["Matemáticas・Criptografía・Cuántica"]
+description: 'El problema de la factorización de enteros que respalda la seguridad del cifrado RSA. Desde los mecanismos matemáticos del "algoritmo de criba general de cuerpos de números (GNFS)", el algoritmo clásico más potente, hasta una explicación profunda con fórmulas y diagramas de por qué el "algoritmo de Shor" por ordenadores cuánticos lo derrotaría.'
 ---
 
 

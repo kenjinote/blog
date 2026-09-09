@@ -2,13 +2,14 @@
 
 
 
-title: "'Características de Rust'"
+title: '¿Cuáles son las 5 características principales del lenguaje de programación Rust?'
 slug: "Rustの特徴"
 date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
 categories: ["Programación"]
+description: 'Explicamos de manera comprensible las principales características del lenguaje de programación ''Rust'' desarrollado por Mozilla. Presentamos las razones por las que es elegido, como su rápida ejecución, ausencia de recolección de basura, seguridad de memoria mediante propiedad y préstamo, y su soporte multiplataforma.'
 ---
 
 

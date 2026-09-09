@@ -1,10 +1,11 @@
 ---
-title: "[PQC] The Complete Guide to Post-Quantum Cryptography in the Quantum Computer Era"
+title: '[PQC] The Threat of Quantum Computers and the Full Picture of Next-Generation Post-Quantum Cryptography'
 slug: "post-quantum-cryptography"
 tags: ["Cryptography", "PQC", "Security", "Next-Gen Tech"]
 image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
 categories: ["Math, Crypto, Quantum"]
+description: 'Public key cryptography faces the risk of being decrypted in the future due to the practical application of quantum computers. This article explains in detail the mechanism and importance of ''Post-Quantum Cryptography (PQC)'', a next-generation security technology being developed to counter this threat (the Y2Q problem).'
 ---
 
 ## Introduction: The "Threat" Quantum Computers Pose to Cryptography

@@ -3,13 +3,14 @@
 
 
 
-title: "'mac mini(2018) 구매'"
+title: 'iOS 앱 개발용으로 중고 Mac mini(2018)를 구매한 이유와 스펙'
 slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
 categories: ["PC・가젯"]
+description: '자택에서의 쾌적한 iOS 앱 개발 환경을 구축하기 위해 메루카리에서 구형 Mac mini(2018)를 구매했습니다. 구매의 결정적인 이유나 상세한 스펙, 환경 구축의 첫걸음에 대해 소개합니다.'
 ---
 
 

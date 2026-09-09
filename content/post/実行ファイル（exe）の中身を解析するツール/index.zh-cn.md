@@ -1,11 +1,12 @@
 ---
-title: "分析可执行文件（exe）内容的工具"
+title: '能够解析和提取Windows可执行文件（exe）内容的4款实用工具'
 slug: "分析可执行文件（exe）内容的工具"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "可执行文件", "分析"]
 draft: false
 image: "img_1.webp"
 categories: ["电脑・数码产品"]
+description: '为您介绍可以解析和解包Windows可执行文件（exe）内容的推荐工具。通俗易懂地解说如何使用7-Zip、Resource Hacker等工具进行PE格式结构确认、资源提取以及二进制编辑的方法。'
 ---
 
 # 什么是可执行文件（exe）

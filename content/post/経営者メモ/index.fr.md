@@ -1,11 +1,12 @@
 ---
-title: "Notes de Gestion"
+title: 'Les secrets du choix d''une entreprise prospère et de sa systématisation : Mémo pratique pour les dirigeants'
 slug: "notes-de-gestion"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gestionnaire"]
 draft: false
 image: "images/img.webp"
 categories: ["Informatique et Technologie"]
+description: 'Nous partageons des notes pratiques que tout dirigeant devrait connaître, comme comment trouver des entreprises tendance, l''art de l''imitation minutieuse et de l''amélioration, ou les points clés pour mettre en place un système réalisable par n''importe qui. Nous abordons également l''essence de la philosophie de gestion visant à « maximiser les profits de l''entreprise ».'
 ---
 # Trouver des entreprises qui deviennent populaires
 - Demandez aux personnes de Hot Pepper et aux comptables quelles sont les entreprises à la mode

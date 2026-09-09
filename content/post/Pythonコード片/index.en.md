@@ -1,11 +1,12 @@
 ---
-title: 'Python Code Snippets'
+title: 'Sample Code to Download, Temporarily Save, and Display an Image in Python'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "Sample Code"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'Introduces a series of practical sample codes using only Python''s standard libraries to download data from an image URL on the web, save it to a temporary file, display it in a browser, and then automatically delete it.'
 ---
 
 Introduction of sample code using standard libraries.

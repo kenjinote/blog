@@ -1,11 +1,12 @@
 ---
-title: "Transmissão de Desenvolvimento de App de Cartões de Ano Novo VOL.1 (Roteiro)"
+title: '[C++] Transmissão do desenvolvimento de um aplicativo de criação de cartão de Ano Novo VOL.1: Configuração do ambiente e inicialização do Direct2D'
 slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["Transmissão de Desenvolvimento de App de Cartões de Ano Novo", "YouTube"]
 draft: false
 image: "img.webp"
 categories: ["TI e Tecnologia"]
+description: 'Primeira transmissão no YouTube do desenvolvimento do aplicativo para a criação de cartões de Ano Novo utilizando C++. Explicaremos as etapas da configuração do ambiente que é a base do desenvolvimento do app, com o código-fonte, desde a criação do repositório GIT, passando pela exibição da janela principal, até a inicialização do Direct2D e a implementação do HelloWorld.'
 ---
 
 # 🎬 Roteiro para Transmissão no YouTube (Desenvolvimento de App de Cartões de Ano Novo - Parte 1)

@@ -1,5 +1,5 @@
 ---
-title: "Cara Menemukan Bilangan Prima Hingga 1000 Menggunakan Saringan Eratosthenes"
+title: 'Apa Itu Saringan Eratosthenes? Algoritma dan Implementasi Daftar Bilangan Prima di Bawah 1000'
 slug: "cara-menemukan-bilangan-prima-hingga-1000-menggunakan-saringan-eratosthenes"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Saringan Eratosthenes", "Bilangan Prima", "Matematika", "Rust"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matematika, Kriptografi, Kuantum"]
+description: 'Menjelaskan mekanisme dan langkah konkret dari ''Saringan Eratosthenes'', sebuah algoritma yang secara efisien menemukan bilangan prima. Juga memperkenalkan contoh implementasi untuk mencetak daftar bilangan prima di bawah 1000 menggunakan bahasa pemrograman Rust.'
 ---
 
 ## Apa itu Saringan Eratosthenes

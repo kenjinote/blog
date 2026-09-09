@@ -6,13 +6,14 @@
 
 
 
-title: "Generar código QR con curl"
+title: 'Cómo generar códigos QR en el símbolo del sistema usando el comando curl'
 slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["Código QR", "curl", "Símbolo del sistema"]
 draft: false
 image: "img.webp"
 categories: ["TI y Tecnología"]
+description: 'Mostramos cómo usar el comando curl en el símbolo del sistema de Windows para generar y visualizar códigos QR basados en texto. Como se usa una API externa (qrenco.de), también explicamos las precauciones respecto al manejo de información personal.'
 ---
 
 

@@ -6,13 +6,14 @@
 
 
 
-title: "Enlaces de videos cortos"
+title: 'Colección de videos cortos virales | El rescate del recogepelotas del Tottenham, etc.'
 slug: "ショート動画リンク"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Videos", "Cortos"]
 draft: false
 image: "img.webp"
 categories: ["Tecnología"]
+description: 'Presentamos una colección de enlaces a videos cortos recomendados que se han vuelto virales en las redes sociales, incluyendo el conmovedor episodio del recogepelotas que salvó a su equipo en un partido del Tottenham y fue elogiado por Mourinho.'
 ---
 
 

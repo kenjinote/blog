@@ -7,13 +7,14 @@
 
 
 
-title: "Microsoft MVP（2025-2026）를 재수상했습니다"
+title: 'Microsoft MVP(2025-2026) 재수상 보고와 그동안의 활동'
 slug: "Microsoft MVP（2025-2026）を再受賞しました"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["도구・개발환경"]
+description: '통산 9회째가 되는 Microsoft MVP(2025-2026)를 수상했다는 보고입니다. 기술 커뮤니티에 기여하는 MVP 제도에 대한 설명과 함께, 지난 1년간 특히 힘써온 기술 정보 발신 및 커뮤니티 활동의 회고를 전해드립니다.'
 ---
 
 

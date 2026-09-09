@@ -1,11 +1,12 @@
 ---
-title: 'Goals'
+title: 'Roadmap for Entrepreneurship and Software Development: Short and Long-Term Goals and Tasks'
 slug: "目標"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Goals"]
 draft: false
 image: "img.webp"
 categories: ["IT/Technology"]
+description: 'A business plan memo organizing long-term and short-term goal settings and upcoming tasks toward starting a business through software development. It publicly details everything from visions like funding, releasing free/paid software, and achieving 10 billion yen in annual sales, to specific steps for market research and needs analysis.'
 ---
 
 # Long-term Goals

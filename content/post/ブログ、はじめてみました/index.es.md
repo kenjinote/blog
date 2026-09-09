@@ -3,13 +3,14 @@
 
 
 
-title: "He empezado un blog"
+title: '¡He empezado un blog con el generador de sitios estáticos Hugo! Registro de mi día a día y notas técnicas'
 slug: "ブログ、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Notas diversas"]
 draft: false
 image: "images/komeda.webp"
 categories: ["Gestión del blog"]
+description: 'He creado un nuevo blog personal utilizando el generador de sitios estáticos "Hugo". Planeo usarlo como un bloc de notas relajado para compartir mis notas técnicas, código de programación y pequeños acontecimientos diarios.'
 ---
 
 

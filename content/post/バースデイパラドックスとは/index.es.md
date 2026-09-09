@@ -6,7 +6,7 @@
 
 
 
-title: "'¿Qué es la paradoja del cumpleaños?'"
+title: '¿Qué es la paradoja del cumpleaños? Por qué la probabilidad de que 23 personas compartan el mismo cumpleaños supera el 50%'
 slug: "バースデイパラドックスとは"
 date: 2024-04-02T01:20:50+09:00
 tags: ["Matemáticas", "Paradojas"]
@@ -14,6 +14,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matemáticas, Criptografía, Cuántica"]
+description: '¡¿Si se reúnen 23 personas, la probabilidad de que dos tengan el mismo cumpleaños es de más del 50%?! Explicaremos la "paradoja del cumpleaños", un fenómeno curioso y contraintuitivo, de forma sencilla utilizando razones matemáticas y fórmulas. Experimentemos la magia de las probabilidades.'
 ---
 
 

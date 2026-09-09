@@ -1,11 +1,12 @@
 ---
-title: 'Auto-refresh Web Page Browser Extension (Edge Add-on)'
+title: 'Auto-Refresh Web Pages in Edge! How to Use the Convenient Browser Extension ''Tab Auto Refresh'''
 slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Browser Extension", "Edge Add-on", "Auto Refresh"]
 draft: false
 image: "img.webp"
 categories: ["Blog Management"]
+description: 'Explains how to use the browser extension ''Tab Auto Refresh'', which can periodically auto-refresh web pages in Microsoft Edge. Introduces everything from the installation method and update interval settings to the stop procedure clearly with images.'
 ---
 I would like to introduce "Tab Auto Refresh", an Edge browser extension that automatically refreshes web pages.
 

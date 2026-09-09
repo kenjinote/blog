@@ -1,11 +1,12 @@
 ---
-title: '11 Favorite Games'
+title: 'A Must-See for Retro Gamers! 11 Recommended Masterpiece Games for the Original GB & SNES'
 slug: "好きなゲーム11選"
 date: 2022-09-12T19:28:50+09:00
 tags: ["Game"]
 draft: false
 image: "img_12.webp"
 categories: ["IT/Technology"]
+description: 'We introduce 11 recommended masterpieces from nostalgic retro games such as the original Game Boy and Super Famicom. Packed with hall-of-fame-level godly games that haven''t faded even today, such as ''SaGa 2'', ''Kirby''s Dream Land'', and ''Pokémon Red/Green''. We look back on the charm of these masterpieces.'
 ---
 When I thought about my favorite games, they all ended up being hall-of-famers.
 Since there are many old games, if you haven't played them yet, please give them a try.

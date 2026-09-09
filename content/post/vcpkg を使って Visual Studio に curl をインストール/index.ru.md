@@ -1,11 +1,12 @@
 ---
-title: "[Для начинающих] Шаги по установке libcurl (с поддержкой OpenSSL) в Visual Studio с помощью vcpkg"
+title: 'Просто с vcpkg! Как установить libcurl с поддержкой OpenSSL в Visual Studio'
 slug: "vcpkg を使って Visual Studio に curl をインストール"
 date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'Объясняется процесс интеграции libcurl с поддержкой OpenSSL в среду Visual Studio с использованием «vcpkg», удобного инструмента управления пакетами для разработки на C++. Вы сможете легко разрешить проблемы со сборкой и зависимостями.'
 ---
 
 ## Если вы хотите использовать libcurl (с поддержкой OpenSSL) в Visual Studio, то установка vcpkg — это простой и рекомендуемый способ

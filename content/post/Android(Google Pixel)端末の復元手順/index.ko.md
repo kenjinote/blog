@@ -7,13 +7,14 @@
 
 
 
-title: "'Android (Google Pixel) 단말기 소프트웨어 복원(초기화·복구) 절차'"
+title: '【무한 재부팅 복구】 Google Pixel 단말기 소프트웨어 복원 및 초기화 공식 절차'
 slug: "Android(Google Pixel)端末の復元手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "복원", "트러블슈팅"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
 categories: ["프로그래밍"]
+description: 'Google Pixel이 재부팅을 반복하거나 로고 화면에서 넘어가지 않는 등 심각한 오류로 곤란하신가요? 공식 복구 도구를 이용한 안전하고 확실한 단말기 소프트웨어 복원 및 초기화 절차와 실행 전의 중요한 주의사항을 알기 쉽게 철저히 해설합니다.'
 ---
 
 

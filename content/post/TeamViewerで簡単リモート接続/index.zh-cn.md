@@ -1,11 +1,12 @@
 ---
-title: '使用TeamViewer轻松进行远程连接'
+title: '【初学者指南】使用TeamViewer轻松进行远程桌面连接的方法'
 slug: "TeamViewerで簡単リモート接続"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "命令", "远程连接"]
 draft: false
 image: "img.webp"
 categories: ["IT・科技"]
+description: '讲解如何使用TeamViewer轻松进行远程桌面连接。同时介绍通过命令行指定ID和密码，以及利用快捷方式实现自动连接、省略步骤的实用小技巧。'
 ---
 
 # 使用TeamViewer轻松进行远程连接

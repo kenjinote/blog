@@ -7,13 +7,14 @@
 
 
 
-title: "'Windows 라이선스 상태를 확인하는 명령어'"
+title: 'Windows의 라이선스 인증 상태를 확인하는 방법! 명령 한 번으로 간단하게 체크'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "라이선스", "명령 프롬프트"]
 draft: false
 image: "img_1.webp"
 categories: ["PC・가젯"]
+description: 'Windows의 라이선스가 올바르게 인증되었는지 확인하는 방법을 해설합니다. 명령 프롬프트에서 ''slmgr'' 명령을 실행하는 것만으로 제품 키나 라이선스 종류, 유효기간 등의 상세한 상태를 간단하게 확인하는 절차를 소개합니다.'
 ---
 
 

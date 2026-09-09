@@ -1,11 +1,12 @@
 ---
-title: 'O que é o "General Number Field Sieve (GNFS)", a matemática mais poderosa da humanidade que quebra a criptografia da internet?'
+title: 'Uma explicação fácil de entender sobre o General Number Field Sieve (GNFS), a matemática mais forte da humanidade para quebrar códigos'
 slug: "インターネットの暗号を破る人類最強の数学「一般数体篩法（GNFS）」とは？"
 date: 2026-09-05T02:09:08+09:00
 tags: ["Matemática", "Criptografia", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
 categories: ["Matemática・Criptografia・Quântica"]
+description: 'Explicamos o mecanismo do General Number Field Sieve (GNFS), a matemática mais forte da humanidade que quebra a criptografia RSA que protege a comunicação na Internet. Omitimos jargões técnicos e abordamos o mecanismo desse algoritmo mágico que pode ser compreendido apenas com o conhecimento de matemática do ensino médio.'
 ---
 
 # O que é o "General Number Field Sieve (GNFS)", a matemática mais poderosa da humanidade que quebra a criptografia da internet?

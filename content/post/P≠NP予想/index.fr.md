@@ -1,10 +1,11 @@
 ---
-title: "Conjecture P≠NP"
+title: 'Qu''est-ce que la conjecture P≠NP ? Explication claire d''un problème non résolu en théorie de la complexité et la différence entre les classes P et NP'
 slug: "P≠NP予想"
 date: 2024-09-11T02:22:39+09:00
 tags: ["Conjecture P≠NP", "Mathématiques", "Problèmes non résolus"]
 draft: false
 categories: ["Mathématiques, Cryptographie et Quantique"]
+description: 'Concernant le plus grand problème non résolu de l''informatique ''La conjecture P≠NP'', explique clairement la vue d''ensemble du point de vue des machines de Turing déterministes, tout en abordant la différence entre la ''Classe P'', qui peut être résolue en temps polynomial, et la ''Classe NP'', où la validité de la solution peut être vérifiée en temps polynomial.'
 ---
 
 # Aperçu

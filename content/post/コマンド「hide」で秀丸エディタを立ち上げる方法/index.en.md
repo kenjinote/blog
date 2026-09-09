@@ -1,11 +1,12 @@
 ---
-title: 'How to Launch Hidemaru Editor with the "hide" Command'
+title: 'Launch Hidemaru Editor with a Single ''hide'' Command! Handy Windows Setup Method'
 slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["Command", "Hidemaru Editor", "Registry"]
 draft: false
 image: "img_2.webp"
 categories: ["Tools & Development Environment"]
+description: 'Explains how to quickly launch Hidemaru Editor in Windows 10/11 simply by typing ''hide'' from ''Run'' or the Command Prompt. A handy customization procedure using the Registry Editor''s App Paths.'
 ---
 
 ## Here is how to launch Hidemaru Editor with the "hide" command.

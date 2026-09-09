@@ -1,11 +1,12 @@
 ---
-title: "Пример использования wxWidgets"
+title: 'Использование wxWidgets: от установки до создания простого проекта'
 slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "サンプル"]
 draft: false
 image: "img.webp"
 categories: ["プログラミング"]
+description: 'Понятное для новичков объяснение: от шагов установки кроссплатформенной GUI-библиотеки «wxWidgets» для C++ до создания простого проекта с использованием Visual Studio.'
 ---
 
 ## Что такое wxWidgets

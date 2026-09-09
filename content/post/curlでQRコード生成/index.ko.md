@@ -6,13 +6,14 @@
 
 
 
-title: "curl로 QR 코드 생성"
+title: 'curl 명령을 사용하여 명령 프롬프트에서 QR 코드를 생성하는 방법'
 slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["QR 코드", "curl", "명령 프롬프트"]
 draft: false
 image: "img.webp"
 categories: ["IT・테크놀로지"]
+description: 'Windows 명령 프롬프트에서 curl 명령을 사용하여 텍스트 기반의 QR 코드를 생성 및 표시하는 방법을 소개합니다. 외부 API(qrenco.de)를 이용하기 때문에 개인정보 취급에 관한 주의사항도 함께 해설합니다.'
 ---
 
 

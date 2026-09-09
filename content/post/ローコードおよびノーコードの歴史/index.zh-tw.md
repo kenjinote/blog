@@ -1,11 +1,12 @@
 ---
-title: "本地環境中無代碼的歷史"
+title: '低程式碼與無程式碼開發的歷史（1980年代至今）｜從HyperCard到最新工具'
 slug: "low-code-and-no-code-history"
 date: 2025-04-26T16:46:11+09:00
 tags: ["低代碼", "無代碼", "歷史"]
 draft: false
 image: "img.webp"
 categories: ["IT與技術"]
+description: '解說從1980年代至今的低程式碼（Low-Code）與無程式碼（No-Code）開發歷史。介紹不需寫程式就能製作應用程式的機制是如何發展的，並分享HyperCard、FileMaker等各年代具代表性的工具。'
 ---
 
 # 低代碼／無代碼開發的歷史（1980年代～至今）

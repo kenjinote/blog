@@ -1,11 +1,12 @@
 ---
-title: "Ce que je pense du Japon"
+title: 'Enjeux et malaises de la société japonaise : Baisse de la natalité et théorie de la responsabilité individuelle vue à travers le problème des bourses d''études'
 slug: "ce-que-je-pense-du-japon"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Divers"]
 draft: false
 image: "images/img.webp"
 categories: ["IT et Technologie"]
+description: 'Ceci est un article qui organise et réfléchit sur des malaises personnels et les défis de la société japonaise. Je remets en question la réalité où le fardeau des dettes des jeunes dû aux bourses avec intérêts entraîne une baisse de la natalité, et la façon dont la froide théorie de la responsabilité individuelle imprègne la société, et je parle de l''importance de l''aide aux personnes vulnérables et de l''esprit d''entraide.'
 ---
 Je voudrais organiser ce que je trouve étrange et ce que je pense de la société japonaise.
 

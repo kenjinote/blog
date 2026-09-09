@@ -1,11 +1,12 @@
 ---
-title: 'Pythonコード片'
+title: 'Pythonで画像をダウンロードして一時保存・表示するサンプルコード'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "サンプルコード"]
 draft: false
 image: "img.webp"
 categories: ["プログラミング"]
+description: 'Pythonの標準ライブラリのみを使用し、Web上の画像URLからデータをダウンロードして一時ファイルに保存、ブラウザで表示した後に自動削除する一連の実用的なサンプルコードを紹介します。'
 ---
 
 標準ライブラリを使ったサンプルコードの紹介です。

@@ -1,11 +1,12 @@
 ---
-title: 'i18nとは？'
+title: 'i18n（国際化）とは？ソフトウェア開発における意味と対応項目'
 slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "用語"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'ソフトウェア開発でよく聞く「i18n（Internationalization：国際化）」の意味や語源を分かりやすく解説します。文字コード、日時表記、通貨情報など、アプリやシステムをグローバル対応する際に考慮すべき主な項目をまとめました。'
 ---
 
 # i18nとは？

@@ -1,11 +1,12 @@
 ---
-title: "Fenstertitel auflisten"
+title: 'So listen und rufen Sie die Titel der aktuell geöffneten Fenster mit PowerShell ab'
 slug: "Fenstertitel auflisten"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["Programmierung"]
+description: 'Wir erklären, wie Sie mit PowerShell ganz einfach die Titel aller derzeit auf Ihrem PC geöffneten Fenster auflisten und abrufen können. Wir stellen es mit echten Befehlen und Ausgabebeispielen vor, damit es auch für Anfänger leicht verständlich ist.'
 ---
 # Fenstertitel auflisten
 

@@ -1,11 +1,12 @@
 ---
-title: 'Purchased a mac mini (2018)'
+title: 'Reasons for Purchasing a Used Mac mini (2018) for iOS App Development and Its Specs'
 slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
 categories: ["PC/Gadgets"]
+description: 'To build a comfortable iOS app development environment at home, I purchased an older model Mac mini (2018) on Mercari. I will introduce the reasons that led to the purchase, detailed specs, and the first steps of environment setup.'
 ---
 
 # Purchased a mac mini (2018)

@@ -1,11 +1,12 @@
 ---
-title: "勾選網頁中的所有核取方塊"
+title: '【JS】一次勾選網頁中所有核取方塊的方法（附書籤小工具）'
 slug: "勾選網頁中的所有核取方塊"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "自動化"]
 draft: false
 image: "img.webp"
 categories: ["部落格營運"]
+description: '解說如何一次勾選網頁中所有的核取方塊。介紹在 Chrome 的 DevTools 主控台中執行的 JavaScript 程式碼，以及能一鍵全選・全取消的實用書籤小工具建立步驟。'
 ---
 
 要勾選網頁中的所有核取方塊，請按 F12 開啟 DevTools，將以下代碼貼上到主控台並執行。

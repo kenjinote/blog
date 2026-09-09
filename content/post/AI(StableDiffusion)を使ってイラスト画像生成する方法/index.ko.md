@@ -2,13 +2,14 @@
 
 
 
-title: "'AI(StableDiffusion)를 사용하여 일러스트 이미지를 생성하는 방법'"
+title: '【무료·초간단】 Stable Diffusion으로 AI 일러스트 이미지 생성하는 방법! Google Colab 절차 해설'
 slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "일러스트", "이미지 생성", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: '입력한 문자에서 고품질 이미지를 생성할 수 있는 AI ''Stable Diffusion''을 사용하여 취향에 맞는 일러스트를 만들어 보시겠습니까? Google Colab과 무료 계정만으로 누구나 쉽게 AI 이미지 생성을 시작할 수 있는 절차를 알기 쉽게 해설합니다.'
 ---
 
 

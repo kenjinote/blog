@@ -1,11 +1,12 @@
 ---
-title: "從 C++ 呼叫 TinyLLaMA 的步驟（使用 llama.cpp）"
+title: '使用 C++ 執行 TinyLLaMA！透過 llama.cpp 建置本機 LLM 環境步驟'
 slug: "從 C++ 呼叫 TinyLLaMA 的步驟（使用 llama.cpp）"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
 categories: ["程式設計"]
+description: '解說如何從 C++ 呼叫並執行 TinyLLaMA 的設定步驟。從編譯 llama.cpp、從 HuggingFace 取得模型，到在各種環境中的建置方法，為初學者整理得淺顯易懂。'
 ---
 
 # ✅ TinyLLaMA × C++ 設定步驟（使用 `llama.cpp`）

@@ -3,13 +3,14 @@
 
 
 
-title: "Windows를 종료하는 바로 가기 만들기"
+title: '원클릭으로 PC 전원 끄기! Windows를 종료하는 바로가기 생성 방법'
 slug: "Windows をシャットダウンするショートカットを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "종료", "바로 가기"]
 draft: false
 image: "img.webp"
 categories: ["PC·가젯"]
+description: '바탕화면에서 원클릭으로 Windows를 종료할 수 있는 편리한 바로가기 생성 방법을 해설합니다. ''shutdown.exe'' 명령을 사용한 설정 절차나, 알기 쉬운 아이콘으로 변경하는 방법까지 사진과 함께 자세히 소개합니다.'
 ---
 
 

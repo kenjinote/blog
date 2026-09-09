@@ -1,11 +1,12 @@
 ---
-title: "Geschichte der Mathematik"
+title: 'Geschichte der Mathematik und antike Probleme: Die drei klassischen Probleme der Konstruktion und die archimedische Spirale'
 slug: "geschichte-der-mathematik"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Mathematik", "Geschichte"]
 draft: false
 image: "img.webp"
 categories: ["Mathematik, Kryptographie und Quanten"]
+description: 'Wir blicken auf die Geschichte der Mathematik zusammen mit antiken Ereignissen und einer Zeitleiste zurück. Wir erklären detailliert wichtige Entdeckungen und historische Meilensteine, die die Entwicklung der Mathematik unterstützt haben, wie die drei klassischen Probleme der Konstruktion im antiken Griechenland (Quadratur des Kreises, Dreiteilung des Winkels, Verdoppelung des Würfels), die archimedische Spirale und den Satz von Pappos.'
 ---
 
 ### Die drei klassischen Probleme der Antike

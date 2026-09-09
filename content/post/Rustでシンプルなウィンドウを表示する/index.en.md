@@ -1,11 +1,12 @@
 ---
-title: 'Displaying a simple window in Rust'
+title: 'How to Create and Display a Simple Windows Window Using Rust and winapi'
 slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "Window"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programming"]
+description: 'Introduces how to create and display a simple Windows window using `winapi` in Rust. It provides a detailed explanation of the source code that forms the basis of GUI programming, from Cargo.toml settings to the implementation of the window procedure.'
 ---
 
 Displaying a simple window in Rust

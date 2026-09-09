@@ -1,11 +1,12 @@
 ---
-title: 'Rust 入门'
+title: 'Rust语言入门：从特点、安装到Hello World的入门指南'
 slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["编程"]
+description: '面向初学者讲解如何入门快速且内存安全的编程语言Rust。全面介绍其语言特点、安装方法、第一个程序Hello World的执行步骤，以及推荐的日文文档等。'
 ---
 # 简介
 Rust 是一种相对较新的编程语言，它允许使用现代语法编写高速且内存高效的模块。

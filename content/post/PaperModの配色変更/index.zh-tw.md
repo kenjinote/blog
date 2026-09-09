@@ -1,11 +1,12 @@
 ---
-title: "更改 PaperMod 的配色方案"
+title: '使用 CSS 變更 Hugo PaperMod 主題的配色與色彩主題方法'
 slug: "PaperModの配色変更"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
 categories: ["部落格營運"]
+description: '說明如何自訂 Hugo 的 PaperMod 主題的整體配色。介紹如何編輯包含背景色、文字顏色、程式碼區塊等樣式定義的 CSS (blank.css)，並提供具體的變數設定範例，以套用您喜歡的配色方案。'
 ---
 我更改了 PaperMod 主題的配色方案。更改方法參考了以下連結。
 

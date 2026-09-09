@@ -2,13 +2,14 @@
 
 
 
-title: "Cómo encontrar la ubicación de un archivo ejecutable en el path en Windows"
+title: 'Cómo averiguar la ubicación (ruta) de un archivo ejecutable en el path en Windows [Comando where]'
 slug: "Windows でパスの通った実行ファイルの場所を見つける方法"
 date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "path", "archivo ejecutable", "símbolo del sistema"]
 draft: false
 image: "img.webp"
 categories: ["PC y Gadgets"]
+description: 'Explicamos cómo averiguar fácilmente la ubicación de guardado (ruta completa) de un archivo ejecutable usando el Símbolo del sistema o PowerShell en Windows. Presentamos un truco práctico para localizar rápidamente la ubicación exacta de las aplicaciones en el path utilizando el comando ''where''.'
 ---
 
 

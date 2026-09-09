@@ -1,11 +1,12 @@
 ---
-title: '仅获取git仓库的最新内容'
+title: '使用Git clone仅获取仓库最新提交的方法'
 slug: "gitリポジトリの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "仓库", "命令"]
 draft: false
 image: "img.webp"
 categories: ["工具·开发环境"]
+description: '本文讲解不下载Git仓库的所有历史记录，仅获取最新提交（浅克隆）的方法。这是一项使用“--depth 1”选项节省磁盘空间，并快速克隆仓库的实用技巧。'
 ---
 
 # 仅获取仓库的最新内容

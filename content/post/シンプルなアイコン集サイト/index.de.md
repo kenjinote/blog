@@ -1,11 +1,12 @@
 ---
-title: "Einfache Icon-Sammelseiten"
+title: 'Kostenlos nutzbar! 7 empfohlene Seiten für einfaches kostenloses Icon-Material'
 slug: "einfache-icon-sammelseiten"
 date: 2022-09-07T16:46:56+09:00
 tags: ["Symbole", "Design"]
 draft: false
 image: "img_2.webp"
 categories: ["IT und Technologie"]
+description: 'Wir stellen eine sorgfältige Auswahl kostenloser, einfacher und leicht zu bedienender Websites für Icon-Materialien vor, die für das Webdesign und die Erstellung von Dokumenten nützlich sind. Voller praktischer Websites, die auch für kommerzielle Zwecke genutzt werden können, wie Google Material Icons und GitHub Octicons.'
 ---
 
 ## Google Material Symbols and Icons

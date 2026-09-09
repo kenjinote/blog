@@ -1,11 +1,12 @@
 ---
-title: "如何使用 Slack App + OAuth2 發送訊息到 Slack"
+title: '使用 Slack API 與 OAuth2 發布訊息的方法 (C++ 實作範例)'
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
 date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["ブログ運営"]
+description: '說明如何利用 Slack App 的 OAuth 權杖，透過 Slack Web API 發布訊息。從設定權限範圍及取得存取權杖的步驟，到使用 WinHTTP 的 C++ 具體實作程式碼範例，皆有介紹。'
 ---
 
 ## ✅ 使用存取權杖的發文方法（Slack Web API）

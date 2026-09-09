@@ -1,5 +1,5 @@
 ---
-title: "Ungelöste Probleme in der Mathematik"
+title: 'Faszinierende ungelöste mathematische Probleme: Was sind vollkommene Zahlen, die Goldbachsche Vermutung und die Riemannsche Vermutung?'
 slug: "ungeloeste-probleme-in-der-mathematik"
 date: 2024-03-02T22:57:36+09:00
 tags: ["Mathematik","Ungelöste Probleme"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Mathematik・Kryptographie・Quanten"]
+description: 'Wir erklären leicht verständlich faszinierende ungelöste mathematische Probleme, die zwar an sich einfach sind, aber noch nicht bewiesen wurden. Gibt es unendlich viele vollkommene Zahlen? Wir befassen uns mit zahlreichen mysteriösen Problemen, die Mathematiker weiterhin beschäftigen, wie der Goldbachschen Vermutung und der schwierigen Riemannschen Vermutung.'
 ---
 
 # Ungelöste Probleme in der Mathematik

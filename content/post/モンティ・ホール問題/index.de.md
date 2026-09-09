@@ -1,11 +1,12 @@
 ---
-title: "Das Ziegenproblem (Monty-Hall-Problem)"
+title: 'Was ist das Ziegenproblem (Monty-Hall-Problem)? Eine leicht verständliche Erklärung des kontraintuitiven Wahrscheinlichkeitsparadoxons und seiner Lösung'
 slug: "モンティ・ホール問題"
 date: 2024-03-31T23:41:51+09:00
 tags: ["Mathematik", "Wahrscheinlichkeit", "Ziegenproblem"]
 draft: false
 image: "img_1.webp"
 categories: ["Mathematik, Kryptographie und Quantenphysik"]
+description: 'Wir erklären leicht verständlich, was das Ziegenproblem (Monty-Hall-Problem) ist, seine Bedeutung und seine Lösung. Anhand dieses berühmten Wahrscheinlichkeitsparadoxons aus einer amerikanischen Fernsehshow erklären wir logisch, warum die Gewinnwahrscheinlichkeit steigt, wenn man die Tür wechselt.'
 ---
 
 ## Was ist das Ziegenproblem?

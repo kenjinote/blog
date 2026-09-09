@@ -1,11 +1,12 @@
 ---
-title: "Chamar a API do ChatGPT pelo curl"
+title: 'Como Chamar a API do ChatGPT com o comando curl no Prompt de Comando do Windows'
 slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "Comando"]
 draft: false
 image: "img.webp"
 categories: ["Programação"]
+description: 'Aprenda a chamar a API do ChatGPT da OpenAI via comando curl usando o Prompt de Comando do Windows (cmd). Mostramos de forma clara como configurar os comandos e parâmetros necessários.'
 ---
 # Chamar a API do ChatGPT pelo curl
 

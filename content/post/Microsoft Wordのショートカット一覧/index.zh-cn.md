@@ -1,11 +1,12 @@
 ---
-title: 'Microsoft Word 快捷键一览'
+title: '【提升效率】Microsoft Word常用快捷键大全'
 slug: "Microsoft Wordのショートカット一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "快捷键"]
 draft: false
 image: "img.webp"
 categories: ["工具・开发环境"]
+description: '大幅提升Microsoft Word工作效率的实用快捷键大全。以表格形式直观整理了平时在文档创建与编辑中最常用的必备快捷键，包括文字排版、复制粘贴、查找替换以及保存等。'
 ---
 ## 快捷键一览
 

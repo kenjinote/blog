@@ -1,10 +1,11 @@
 ---
-title: "[Análise Completa] O que é um Computador Quântico? ~ Princípios Finais da Computação do Zero ~"
+title: 'O que é um Computador Quântico? Explicando do zero os princípios fundamentais da computação como superposição e emaranhamento quântico'
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Computador Quântico", "Física", "Tecnologia"]
 image: "quantum_basics_eyecatch_1788613712487.webp"
 categories: ["Matemática・Criptografia・Quântica"]
+description: 'Explicamos os fundamentos dos ''computadores quânticos'', que escondem o potencial de ultrapassar os limites dos supercomputadores tradicionais. Desvendamos de forma especializada, mas fácil de entender, o mecanismo que utiliza os misteriosos fenômenos da mecânica quântica, como superposição, emaranhamento quântico e portas quânticas para cálculos.'
 ---
 
 ## Introdução: A "Mudança de Paradigma da Computação" Trazida pelos Computadores Quânticos

@@ -7,12 +7,13 @@
 
 
 
-title: "No mueras, hermano mío"
+title: 'Texto completo y análisis de ''Tú no debes morir'' de Akiko Yosano: los sentimientos hacia su hermano en un poema pacifista'
 slug: "『君死にたまふことなかれ』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "No mueras", "poesía", "poesía pacifista"]
 draft: false
 categories: ["TI y tecnología"]
+description: 'Publicamos el texto completo de ''Tú no debes morir'' (Kimi Shinitamou koto nakare), el representativo poema pacifista de Akiko Yosano, compuesto pensando en su hermano menor que servía en el asedio de Port Arthur durante la Guerra Ruso-Japonesa. Desciframos los antecedentes de esta obra maestra que apela al amor familiar y a la santidad de la vida, y su profundo mensaje.'
 ---
 
 

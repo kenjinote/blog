@@ -1,11 +1,12 @@
 ---
-title: 'How to Batch Delete Metadata (Personal Information) from Excel, Word, etc. using PowerShell'
+title: 'How to Batch Delete Metadata (Personal Information) in Excel and Word with PowerShell'
 slug: "PowerShell で Excel のメタデータ（個人情報）を削除する方法"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Metadata", "Personal Information"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["Programming"]
+description: 'Explains how to delete metadata such as the creator included in Office files using PowerShell. Introduces convenient automation techniques to prevent information leakage when sharing externally, from processing a single file to a batch deletion script for Excel and Word files in a folder.'
 ---
 
 # How to Batch Delete Metadata (Personal Information) from Excel, Word, etc. using PowerShell

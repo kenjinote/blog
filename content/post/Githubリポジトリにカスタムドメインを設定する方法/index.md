@@ -1,11 +1,12 @@
 ---
-title: 'Githubリポジトリにカスタムドメインを設定する方法'
+title: 'GitHubリポジトリにカスタムドメインを設定する方法｜お名前.com編'
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
 image: "images/octocat.webp"
 categories: ["ツール・開発環境"]
+description: 'GitHubリポジトリ（GitHub Pages）にカスタムドメインを設定する手順を解説します。今回は「お名前.com」の管理画面からDNSのAレコードを追加・変更し、GitHubと連携させるまでの具体的なステップを紹介します。'
 ---
 Githubリポジトリにカスタムドメインを設定するには、ドメインのDNS設定を変更する必要があります。
 ここでは、

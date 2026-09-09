@@ -6,13 +6,14 @@
 
 
 
-title: "Música occidental favorita"
+title: 'Colección de canciones recomendadas de música occidental: Éxitos clásicos amados a través de los tiempos'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Música occidental", "Música"]
 draft: false
 image: "img.webp"
 categories: ["Estilo de vida y miscelánea"]
+description: 'Te presentamos clásicos atemporales y recomendados de la música occidental, desde The Beatles hasta Coldplay y Ed Sheeran. Hemos compilado una lista de canciones exitosas imprescindibles, desde baladas conmovedoras hasta música pop estimulante.'
 ---
 
 

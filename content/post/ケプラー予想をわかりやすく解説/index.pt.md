@@ -1,11 +1,12 @@
 ---
-title: "Explicação Fácil da Conjectura de Kepler"
+title: 'Um mistério de 400 anos! O que é a Conjectura de Kepler? Uma explicação fácil de entender do romance matemático aprendido sobre como embalar melancias'
 slug: "explicacao-facil-da-conjectura-de-kepler"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Matemática", "Conjectura de Kepler", "Explicação"]
 draft: false
 image: "img.webp"
 categories: ["Matemática・Criptografia・Quântica"]
+description: 'Uma explicação simples sobre a ''Conjectura de Kepler'', um difícil problema matemático nascido de uma questão familiar: ''Qual a maneira de empacotar melancias mais densamente?''. Vamos aprender o romance e a diversão sobre o problema do empacotamento de esferas, que foi proposto pelo gênio astrônomo Kepler e permaneceu sem prova por mais de 400 anos.'
 ---
 
 # Explicação Fácil da Conjectura de Kepler! ~A melhor forma de empacotar melancias~

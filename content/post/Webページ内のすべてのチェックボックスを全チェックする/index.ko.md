@@ -3,13 +3,14 @@
 
 
 
-title: "Web페이지 내의 모든 체크박스를 전체 체크하기"
+title: '[JS] 웹 페이지 내의 모든 체크박스를 일괄 체크하는 방법 (북마크릿 포함)'
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "자동화"]
 draft: false
 image: "img.webp"
 categories: ["블로그 운영"]
+description: '웹 페이지 내의 체크박스를 모두 일괄로 체크하는 방법을 해설합니다. Chrome의 DevTools 콘솔에서 실행하는 JavaScript 코드나, 원클릭으로 전체 선택/전체 해제할 수 있는 편리한 북마크릿 작성 절차를 소개합니다.'
 ---
 
 

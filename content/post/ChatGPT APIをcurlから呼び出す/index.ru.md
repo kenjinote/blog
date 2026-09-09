@@ -1,11 +1,12 @@
 ---
-title: "Вызов API ChatGPT из curl"
+title: 'Как вызвать ChatGPT API через curl в командной строке Windows'
 slug: "вызов-api-chatgpt-из-curl"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "Команда"]
 draft: false
 image: "img.webp"
 categories: ["Программирование"]
+description: 'В этой статье объясняется, как вызвать ChatGPT API от OpenAI через команду curl, используя командную строку Windows (cmd). Понятно описываются необходимые команды и способы настройки параметров.'
 ---
 # Вызов API ChatGPT из curl
 

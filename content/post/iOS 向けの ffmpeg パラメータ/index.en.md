@@ -1,11 +1,12 @@
 ---
-title: 'ffmpeg Parameters for iOS'
+title: 'Optimized for iOS! ffmpeg Conversion Parameters for Smooth Video Playback'
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
 categories: ["PC & Gadgets"]
+description: 'We introduce the optimal ffmpeg commands and parameter settings for smooth video playback on iOS devices such as iPhone and iPad. The meaning of each option and points for setting are also explained in detail.'
 ---
 
 # ffmpeg Conversion Parameters Optimized for iOS

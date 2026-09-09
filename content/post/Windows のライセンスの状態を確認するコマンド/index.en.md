@@ -1,11 +1,12 @@
 ---
-title: 'Command to check Windows license status'
+title: 'How to Check Windows License Activation Status! Easy Check with a Single Command'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "License", "Command Prompt"]
 draft: false
 image: "img_1.webp"
 categories: ["PC & Gadgets"]
+description: 'Explains how to verify if your Windows license is correctly activated. Introduces the steps to easily check detailed status such as product key, license type, and expiration date just by running the ''slmgr'' command from the Command Prompt.'
 ---
 
 # [Windows] How to check license status (just one command)

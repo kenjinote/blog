@@ -3,13 +3,14 @@
 
 
 
-title: "'PaperMod 이미지 배치 변경'"
+title: 'Hugo PaperMod 테마의 이미지 크기 및 배치를 CSS로 커스터마이징하는 방법'
 slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["블로그 운영"]
+description: 'Hugo의 PaperMod 테마에서 게시물 내 이미지 크기와 배치를 커스터마이징하는 방법을 설명합니다. 기본 가로 100% 및 가운데 정렬에서 이미지 텍스트 감싸기 또는 축소를 수행하기 위한 CSS(blank.css 및 post-entry.css)의 구체적인 편집 절차를 소개합니다.'
 ---
 
 

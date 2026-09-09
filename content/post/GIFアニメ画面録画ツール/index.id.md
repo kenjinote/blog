@@ -1,11 +1,12 @@
 ---
-title: "Alat Perekam Layar Animasi GIF"
+title: 'Mudah! Cara Menggunakan dan Mengunduh Alat Perekam Layar Animasi GIF'
 slug: "GIFアニメ画面録画ツール"
 date: 2024-02-08T01:23:01+09:00
 tags: ["alat", "perekam layar", "GIF"]
 draft: false
 image: "img.webp"
 categories: ["TI & Teknologi"]
+description: 'Pengenalan dan cara mengunduh alat gratis yang dapat merekam operasi layar PC dan mengubahnya menjadi animasi GIF. Berguna untuk dibagikan di alat komunikasi seperti Microsoft Teams. Menjelaskan dengan mudah dari penentuan area operasi hingga langkah perekaman.'
 ---
 
 # Alat Perekam Layar Animasi GIF

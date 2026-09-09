@@ -1,11 +1,12 @@
 ---
-title: 'macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法'
+title: 'MacでWindows風（Alt+Tab）にアプリを切り替える設定方法'
 slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "ショートカットキー", "アプリケーション切り替え"]
 draft:
 image: "img.webp"
 categories: ["PC・ガジェット"]
+description: 'Macの標準機能では難しい、Windowsの「Alt+Tab」のようなアプリケーション切り替えを実現する便利なサードパーティ製アプリのインストール手順と設定方法を分かりやすく解説します。'
 ---
 
 # はじめに

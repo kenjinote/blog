@@ -1,11 +1,12 @@
 ---
-title: "Extension de rafraîchissement automatique des pages Web (Module complémentaire Edge)"
+title: 'Actualisation automatique des pages Web dans Edge ! Comment utiliser l''extension de navigateur pratique ''Actualisation automatique de l''onglet'''
 slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Extension de navigateur", "Module complémentaire Edge", "Rafraîchissement automatique"]
 draft: false
 image: "img.webp"
 categories: ["Gestion de blog"]
+description: 'Explique comment utiliser l''extension de navigateur ''Actualisation automatique de l''onglet'' qui permet d''actualiser automatiquement les pages Web de manière périodique dans Microsoft Edge. Présente de manière simple avec des images la méthode d''installation, la configuration de l''intervalle de rafraîchissement et la procédure d''arrêt.'
 ---
 Voici "Tab Auto Refresh", une extension de navigateur Edge qui actualise automatiquement les pages Web.
 

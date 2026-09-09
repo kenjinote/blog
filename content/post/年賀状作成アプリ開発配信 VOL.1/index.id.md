@@ -1,11 +1,12 @@
 ---
-title: "Siaran Pengembangan Aplikasi Pembuatan Kartu Tahun Baru VOL.1 (Naskah)"
+title: '[C++] Siaran Pengembangan Aplikasi Pembuatan Kartu Tahun Baru VOL.1: Pengaturan Lingkungan dan Inisialisasi Direct2D'
 slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["年賀状作成アプリ作成配信", "YouTube"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'Siaran YouTube pertama tentang pengembangan aplikasi pembuatan kartu tahun baru menggunakan C++. Kami akan menjelaskan langkah-langkah pengaturan lingkungan yang menjadi dasar pengembangan aplikasi beserta dengan kode sumbernya, mulai dari pembuatan repositori GIT hingga menampilkan jendela utama, inisialisasi Direct2D, dan implementasi HelloWorld.'
 ---
 
 # 🎬 Naskah Siaran YouTube (Pengembangan Aplikasi Pembuatan Kartu Tahun Baru・Bagian 1)

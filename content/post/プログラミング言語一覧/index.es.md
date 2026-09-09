@@ -3,13 +3,14 @@
 
 
 
-title: "Lista de lenguajes de programación"
+title: '¡De los más populares a los menos conocidos! Lista de lenguajes de programación y sus características'
 slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["Lenguajes de programación"]
 draft: true
 image: "img.webp"
 categories: ["Programación"]
+description: 'Hemos recopilado una lista de varios lenguajes de programación, desde C, Python, Java y JavaScript hasta Rust, Go, OCaml y Clojure. Consulta el resumen y las características de cada lenguaje como referencia para el desarrollo o el aprendizaje.'
 ---
 
 

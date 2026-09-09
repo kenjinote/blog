@@ -1,11 +1,12 @@
 ---
-title: "Comment installer CocoaPods sur mac"
+title: 'Comment installer CocoaPods sur Mac et comment résoudre les erreurs'
 slug: "macにCocoaPodsをインストールする方法"
 date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]
 draft: false
 image: "img_1.webp"
 categories: ["PC・ガジェット"]
+description: 'Explique en détail les étapes pour installer CocoaPods à l''aide du terminal dans un environnement Mac. Présente également comment résoudre les erreurs lors de l''exécution de ''sudo gem install cocoapods'' et les commandes d''installation à l''aide de Homebrew.'
 ---
 
 # Installation via le Terminal

@@ -1,11 +1,12 @@
 ---
-title: '再次荣获 Microsoft MVP（2025-2026）'
+title: '荣获Microsoft MVP（2025-2026）的汇报与过往活动回顾'
 slug: "Microsoft MVP（2025-2026）を再受賞しました"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
 categories: ["工具与开发环境"]
+description: '汇报本人总计第9次荣获Microsoft MVP（2025-2026）。在解说旨在为技术社区做贡献的MVP制度的同时，也将回顾过去一年里特别致力于技术信息分享与社区活动的心得。'
 ---
 
 # 再次荣获 Microsoft MVP（2025-2026）！

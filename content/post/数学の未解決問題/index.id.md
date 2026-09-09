@@ -1,5 +1,5 @@
 ---
-title: "Masalah Matematika yang Belum Terpecahkan"
+title: 'Masalah Matematika yang Belum Terpecahkan yang Memesona: Apa itu Bilangan Sempurna, Dugaan Goldbach, dan Hipotesis Riemann?'
 slug: "masalah-matematika-yang-belum-terpecahkan"
 date: 2024-03-02T22:57:36+09:00
 tags: ["matematika", "masalah yang belum terpecahkan"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matematika, Kriptografi, dan Kuantum"]
+description: 'Kami menjelaskan dengan mudah mengenai masalah-masalah matematika yang belum terpecahkan yang memesona padahal soalnya sendiri sangatlah sederhana dan belum pernah dibuktikan hingga saat ini. Apakah jumlah bilangan sempurna itu tak terhingga? Kita akan mengupas lebih dalam teka-teki dari masalah misterius yang masih membingungkan banyak ahli matematika hingga kini, seperti dugaan Goldbach dan pertanyaan rumit tentang Hipotesis Riemann.'
 ---
 
 # Masalah Matematika yang Belum Terpecahkan

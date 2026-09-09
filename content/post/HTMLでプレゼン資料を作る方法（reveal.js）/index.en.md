@@ -1,11 +1,12 @@
 ---
-title: 'How to make a presentation with HTML (reveal.js)'
+title: 'How to Use reveal.js: Creating Presentation Materials with HTML and Markdown'
 slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "Presentation"]
 draft: false
 image: "img.webp"
 categories: ["Programming"]
+description: 'We explain the installation and basic usage of ''reveal.js'', a tool that allows you to intuitively create presentations using HTML and Markdown. We introduce ways to utilize it that support animations and PDF output, and have excellent compatibility with version control like Git.'
 ---
 
 # How to make a presentation with HTML

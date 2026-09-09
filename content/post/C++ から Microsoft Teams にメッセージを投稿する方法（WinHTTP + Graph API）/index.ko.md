@@ -7,13 +7,14 @@
 
 
 
-title: "'C++에서 Microsoft Teams로 메시지를 게시하는 방법(WinHTTP + Graph API)'"
+title: '【자동화】 C++에서 Teams로 메시지 게시! Graph API 및 WinHTTP 구현 절차'
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
 categories: ["도구 및 개발 환경"]
+description: 'C++에서 Microsoft Teams로 자동 메시지 게시를 구현하고 싶은 분 필독! WinHTTP 및 Graph API를 이용한 C++ 코드의 구체적인 예나 필수가 되는 Azure의 앱 등록 및 API 인증 절차를 단계별로 알기 쉽게 해설합니다.'
 ---
 
 

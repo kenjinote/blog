@@ -2,13 +2,14 @@
 
 
 
-title: "Cómo cambiar el atajo de teclado para cambiar entre entrada en japonés e inglés en mac"
+title: 'Cómo cambiar el atajo de teclado para cambiar entre entrada en japonés e inglés en Mac (para teclados US)'
 slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
 date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "atajos de teclado", "entrada en japonés"]
 draft: 
 image: "img.webp"
 categories: ["PC y Gadgets"]
+description: 'Explicamos cómo cambiar el atajo para alternar entre la entrada en japonés e inglés en una Mac (teclado US) a tu atajo favorito, como ''Alt + `''. También presentamos los pasos de configuración en macOS Ventura y cómo evitar que se incluya katakana al cambiar.'
 ---
 
 

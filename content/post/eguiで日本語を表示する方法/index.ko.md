@@ -2,13 +2,14 @@
 
 
 
-title: "'egui에서 일본어를 표시하는 방법'"
+title: 'Rust의 GUI 라이브러리 ''egui''에서 일본어 폰트를 불러와 표시하는 방법'
 slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rsut", "egui", "GUI 라이브러리", "일본어"]
 draft: false
 image: "img.webp"
 categories: ["IT・테크놀로지"]
+description: 'Rust용 경량 GUI 라이브러리 ''egui''에서 일본어를 올바르게 표시하기 위한 구현 방법을 해설합니다. Windows의 메이리오(Meiryo) 폰트를 불러와, 애플리케이션에 적용하는 구체적인 코드 샘플을 소개합니다.'
 ---
 
 

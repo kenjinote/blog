@@ -1,11 +1,12 @@
 ---
-title: 'Leather Product Maintenance'
+title: 'For Beginners: Recommended Maintenance Products and Care Methods for Leather Goods'
 slug: "革製品のメンテナンス"
 date: 2024-10-30T00:31:46+09:00
 tags: ["Leather Products", "Hobbies"]
 draft: false
 image: "img.webp"
 categories: ["Lifestyle & Miscellaneous"]
+description: 'For leather goods maintenance beginners, we introduce recommended care products that were actually great purchases, such as M.MOWBRAY Delicate Cream and Collonil Supreme Cream. These are care techniques to make your precious leather items last longer.'
 ---
 
 Recently, I have become interested in leather products and have been purchasing various items. Along with this, I've developed an interest in the maintenance of leather products and have gathered some related items, which I would like to introduce.

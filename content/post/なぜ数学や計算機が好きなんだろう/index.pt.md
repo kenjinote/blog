@@ -1,11 +1,12 @@
 ---
-title: "Por que gosto de matemática e computadores"
+title: 'Por que eu gosto de matemática e computadores? Pensei em seus encantos e razões para me atrair'
 slug: "なぜ数学や計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00
 tags: ["Notas"]
 draft: false
 image: "img.webp"
 categories: ["Matemática・Criptografia・Quântica"]
+description: 'Examinamos os motivos pelos quais me sinto atraído por matemática e computadores. Falamos sobre seu profundo encanto, como ser igual para todos com regras claras, que a resposta derivada é eternamente correta, e que sempre há problemas não resolvidos e um nível adequado de dificuldade.'
 ---
 
 ## Pensei sobre por que gosto de matemática e computadores

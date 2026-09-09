@@ -1,11 +1,12 @@
 ---
-title: "So beheben Sie den Zertifikatfehler, wenn GitHub Copilot nicht mehr funktioniert"
+title: 'Lösung für Zertifikatsfehler in GitHub Copilot (UNABLE_TO_VERIFY_LEAF_SIGNATURE)'
 slug: "so-beheben-sie-zertifikatfehler-github-copilot"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
 categories: ["Tools und Entwicklungsumgebung"]
+description: 'Wir erklären die Lösung für den Fall, dass GitHub Copilot aufgrund eines Zertifikatsfehlers wie „unable to verify the first certificate“ nicht mehr verwendet werden kann. Es werden spezifische Schritte zur Änderung der ESET-Einstellungen vorgestellt.'
 ---
 
 # Was tun, wenn der folgende Fehler in GitHub Copilot angezeigt wird

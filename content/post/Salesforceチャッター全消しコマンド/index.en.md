@@ -1,11 +1,12 @@
 ---
-title: 'Salesforce Chatter Bulk Delete Command'
+title: 'Salesforce: A Command to Delete All Chatter Posts and Attachments'
 slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false
 image: "img_1.webp"
 categories: ["IT / Technology"]
+description: 'Introduces a command useful when an organization''s storage capacity is tight in Salesforce, to batch delete all Chatter posts, attachments, and recycle bin data. It''s a method to quickly clean up using the Execute Anonymous window from the Developer Console.'
 ---
 # Salesforce Chatter Bulk Delete Command
 This is a command to delete all posts and attachments in Salesforce Chatter.

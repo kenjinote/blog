@@ -1,11 +1,12 @@
 ---
-title: "Afficher une MessageBox en Rust"
+title: 'Comment afficher une boîte de message Windows (MessageBox) avec Rust et winapi'
 slug: "Afficher une MessageBox en Rust"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["Programmation"]
+description: 'Explique, étape par étape de la création du projet jusqu''à l''implémentation du code, comment utiliser les crates `winapi` et `user32-sys` en Rust pour appeler l''API Windows et afficher une simple boîte de message (MessageBox).'
 ---
 
 Vous pouvez afficher une MessageBox en Rust en suivant les étapes ci-dessous.

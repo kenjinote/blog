@@ -1,11 +1,12 @@
 ---
-title: "كيفية إصلاح خطأ شهادة GitHub Copilot"
+title: 'كيفية إصلاح خطأ الشهادة في GitHub Copilot (UNABLE_TO_VERIFY_LEAF_SIGNATURE)'
 slug: "كيفية-إصلاح-خطأ-شهادة-github-copilot"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
 categories: ["ツール・開発環境"]
+description: 'نشرح كيفية حل المشكلة عندما يتوقف GitHub Copilot عن العمل بسبب ظهور أخطاء في الشهادة مثل "unable to verify the first certificate". نستعرض خطوات محددة تشمل تعديل إعدادات برنامج ESET.'
 ---
 
 # كيفية إصلاح رسالة الخطأ التالية في GitHub Copilot

@@ -1,11 +1,12 @@
 ---
-title: "Comment obtenir le nombre d'enregistrements créés par jour à l'aide de Salesforce SOQL"
+title: 'Salesforce : Comment obtenir le nombre d''enregistrements créés par jour avec SOQL'
 slug: "Comment obtenir le nombre d'enregistrements créés par jour à l'aide de Salesforce SOQL"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "date", "agrégation"]
 draft: false
 image: "img.webp"
 categories: ["Informatique et Technologie"]
+description: 'Explique la méthode spécifique et la syntaxe de la requête pour agréger et obtenir le nombre quotidien de création d''enregistrements tels que les comptes, en utilisant SOQL à partir de la console de développement de Salesforce. Vous comprendrez la procédure utile d''analyse de données utilisant la clause GROUP BY.'
 ---
 
 # Comment obtenir le nombre d'enregistrements créés par jour à l'aide de Salesforce SOQL

@@ -1,11 +1,12 @@
 ---
-title: "كيفية نشر رسائل إلى Slack باستخدام C++ (Win32 API + WinHTTP) [دعم Webhook]"
+title: '【WinHTTP】كيفية نشر الرسائل إلى Slack عبر Webhook من C++ (Win32 API)'
 slug: "كيفية-نشر-رسائل-إلى-Slack-باستخدام-C++-(Win32-API-+-WinHTTP)-[دعم-Webhook]"
 date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["إدارة المدونة"]
+description: 'إلى من يرغبون في النشر التلقائي إلى Slack باستخدام ''C++ × Win32 API × WinHTTP'' بدلاً من Node.js أو Python! نشرح بطريقة سهلة الفهم الخطوات المحددة لإرسال الرسائل عبر طلبات POST من C++ بالاستفادة من Incoming Webhooks.'
 ---
 
 # كيفية نشر رسائل إلى Slack باستخدام C++ (Win32 API + WinHTTP) [دعم Webhook]

@@ -1,11 +1,12 @@
 ---
-title: "Comment installer l'éditeur de texte CLI nano sur Windows"
+title: 'Comment installer l''éditeur de texte CLI nano sur Windows et définir les variables d''environnement'
 slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "éditeur de texte"]
 draft: false
 image: "img_1.webp"
 categories: ["Outils et environnement de développement"]
+description: 'Nous expliquons la procédure pour installer l''éditeur de texte CLI léger « nano » sur Windows et configurer les variables d''environnement afin de pouvoir l''utiliser depuis l''invite de commande. De la réalisation du téléchargement à la configuration du PATH et à l''utilisation de base.'
 ---
 
 ## Télécharger nano.exe

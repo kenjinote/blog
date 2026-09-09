@@ -1,11 +1,12 @@
 ---
-title: "Cuplikan Kode Python"
+title: 'Kode Contoh untuk Mengunduh, Menyimpan Sementara, dan Menampilkan Gambar di Python'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "kode sampel"]
 draft: false
 image: "img.webp"
 categories: ["Pemrograman"]
+description: 'Memperkenalkan serangkaian kode contoh praktis yang menggunakan pustaka standar Python saja, untuk mengunduh data dari URL gambar di web, menyimpannya dalam file sementara, menampilkannya di browser, dan kemudian menghapusnya secara otomatis.'
 ---
 
 Pengenalan pada kode sampel menggunakan pustaka standar.

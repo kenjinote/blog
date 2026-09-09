@@ -7,13 +7,14 @@
 
 
 
-title: "'FizzBuzz'"
+title: '프로그래밍의 등용문 ''FizzBuzz 문제''란? Python 작성법 해설'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "알고리즘"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: '프로그래머 면접에서도 자주 출제되는 ''FizzBuzz 문제''에 대해, 그 개요와 Python을 사용한 구체적인 코드 예시(조건 분기)를 알기 쉽게 해설합니다. 초보자부터 기본을 되짚어보고 싶은 분들까지 필독할 만한 내용입니다.'
 ---
 
 

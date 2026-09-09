@@ -1,11 +1,12 @@
 ---
-title: "Enumeração de Títulos de Janelas"
+title: 'Como enumerar e obter os títulos de janelas atualmente abertas com o PowerShell'
 slug: "Enumeração de Títulos de Janelas"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["Programação"]
+description: 'Explicamos como enumerar e obter facilmente os títulos de todas as janelas atualmente abertas no PC usando o PowerShell. Apresentado de forma fácil de entender para iniciantes com comandos reais e exemplos de saída.'
 ---
 # Enumeração de Títulos de Janelas
 

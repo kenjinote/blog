@@ -1,11 +1,12 @@
 ---
-title: "Mitos dan Realitas \"Jepang Pertama\": Pertahanan Jepang Atas Nama \"Koeksistensi\" di Tahun 2026"
+title: 'Ilusi dan Realitas ''Japan First'': Tantangan Jepang di Tahun 2026 dan Jalan Menuju Koeksistensi'
 slug: "「日本人ファースト」について思うこと"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Jepang Pertama", "Politik", "Masalah Sosial"]
 draft: false
 image: "img.webp"
 categories: ["IT dan Teknologi"]
+description: 'Menganalisis realitas kenaikan harga dan populasi yang menua di balik istilah ''Japan First'' yang mendapat dukungan di Jepang pada tahun 2026. Mengesampingkan argumen emosional, menelaah sifat sebenarnya dari isu-isu sosial berdasarkan data objektif, serta masa depan hidup berdampingan.'
 ---
 
 # Mitos dan Realitas "Jepang Pertama": Pertahanan Jepang Atas Nama "Koeksistensi" di Tahun 2026

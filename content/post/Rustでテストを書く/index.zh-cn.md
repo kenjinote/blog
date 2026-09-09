@@ -1,11 +1,12 @@
 ---
-title: '在 Rust 中编写测试'
+title: 'Rust中测试的编写与执行方法入门（cargo test）'
 slug: "Rustでテストを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","测试"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["编程"]
+description: '面向初学者讲解在Rust中编写测试代码的方法，以及使用cargo test命令执行测试的步骤。结合具体的代码示例，详细介绍#[test]属性的用法以及成功或失败时的输出结果。'
 ---
 
 在 Rust 中编写测试，只需在测试函数的定义上方添加 `#[test]` 属性即可创建测试函数。

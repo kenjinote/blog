@@ -6,13 +6,14 @@
 
 
 
-title: "Vim 입문"
+title: '[초보자용] Vim 입문: 설치부터 기본 실행 및 종료, 모드 설명까지'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "텍스트 에디터"]
 draft: false
 image: "img.webp"
 categories: ["도구・개발 환경"]
+description: 'Vim의 기본적인 사용법을 초보자를 위해 설명합니다. Windows 환경에서의 설치 방법을 비롯하여 실행 및 종료 명령어(저장 및 강제 종료 등), 명령 모드와 입력 모드의 차이 등 첫 단계를 완전 총망라합니다.'
 ---
 
 

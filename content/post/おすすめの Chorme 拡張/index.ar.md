@@ -1,11 +1,12 @@
 ---
-title: "إضافات Chrome الموصى بها"
+title: 'ملخص لأفضل إضافات المتصفح الموصى بها التي تجعل Chrome و Edge أكثر فائدة بشكل كبير'
 slug: "إضافات Chrome الموصى بها"
 date: 2023-03-19T02:54:30+09:00
 tags: ["إضافات Chrome", "متصفح", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
 categories: ["تكنولوجيا المعلومات"]
+description: 'نقدم إضافات المتصفح الموصى بها التي ترفع من كفاءة التصفح في Google Chrome و Microsoft Edge بشكل كبير، مثل إيماءات الماوس، حظر الإعلانات، ترجمة DeepL، واستخدام شريط جانبي لـ ChatGPT.'
 ---
 
 # إضافات Chrome الموصى بها

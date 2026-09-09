@@ -4,13 +4,14 @@
 
 
 
-title: "'wxWidgets를 사용한 샘플'"
+title: 'wxWidgets 사용법: 설치 방법부터 샘플 프로젝트 생성까지'
 slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "샘플"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: 'C++의 크로스 플랫폼 GUI 라이브러리 ''wxWidgets''의 설치 절차부터 Visual Studio를 사용한 샘플 프로젝트 생성 방법까지 초보자를 위해 알기 쉽게 해설합니다.'
 ---
 
 

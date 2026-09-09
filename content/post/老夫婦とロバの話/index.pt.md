@@ -1,11 +1,12 @@
 ---
-title: "A História do Casal de Idosos e do Burro"
+title: 'Aprendendo com a história do velho casal e do burro: Uma forma de viver sem ser influenciado pelas opiniões dos outros'
 slug: "a-historia-do-casal-de-idosos-e-do-burro"
 date: 2024-09-18T00:56:59+09:00
 tags: ["A História do Casal de Idosos e do Burro", "Sátira"]
 draft: false
 image: "img.webp"
 categories: ["IT・Tecnologia"]
+description: 'Através da famosa fábula ''A história do velho casal e do burro'', consideraremos os efeitos nocivos de nos importarmos demais com os olhos dos outros e a preocupação dos relacionamentos modernos sobre ''de quem devemos acreditar nas vozes''. Forneceremos dicas para viver sem ser influenciado pelas opiniões dos outros.'
 ---
 
 ## O casal de idosos, o burro e o nosso problema de "quem escutar"

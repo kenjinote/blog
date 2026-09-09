@@ -1,11 +1,12 @@
 ---
-title: "Buku Bisnis yang Direkomendasikan"
+title: 'Mengubah Hidup! Kumpulan Mahakarya & Buku Bisnis Rekomendasi yang Wajib Dibaca'
 slug: "おすすめのビジネス書"
 date: 2023-03-19T18:13:14+09:00
 tags: ["buku bisnis", "buku"]
 draft: false
 image: "img.webp"
 categories: ["Gaya Hidup & Catatan"]
+description: 'Kami mengulas secara eksklusif mahakarya dan buku bisnis pilihan yang setidaknya harus dibaca sekali oleh seorang pebisnis untuk pengembangan diri dan peningkatan keterampilan, seperti ''How to Win Friends and Influence People'', ''The Courage to be Disliked'', ''LIFE SHIFT'', dan ''The 7 Habits of Highly Effective People''.'
 ---
 
 ## Bagaimana Mencari Kawan dan Mempengaruhi Orang Lain

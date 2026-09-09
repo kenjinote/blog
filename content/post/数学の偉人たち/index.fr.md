@@ -1,11 +1,12 @@
 ---
-title: 'Les grands mathématiciens'
+title: 'Les grands mathématiciens qui ont changé l''histoire : De Pythagore et Archimède à Euclide'
 slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00
 tags: ["Mathématiciens"]
 draft: false
 image: "img.webp"
 categories: ["Mathématiques, Cryptographie, Quantique"]
+description: 'Nous présentons en détail les grands mathématiciens de la Grèce antique et de l''Égypte qui ont laissé leur nom dans l''histoire, dans l''ordre de leur naissance. Nous expliquons clairement leurs découvertes étonnantes et leurs anecdotes méconnues, comme le théorème de Pythagore, le principe d''Archimède et les Éléments d''Euclide.'
 ---
 Voici une présentation, par ordre chronologique de naissance, des grands mathématiciens qui ont marqué l'histoire.
 

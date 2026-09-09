@@ -1,11 +1,12 @@
 ---
-title: "Ich habe meine Internetumgebung von Flet's Hikari auf J:COM umgestellt"
+title: 'Das Ergebnis des Wechsels von Flet''s Hikari zu J:COM! Reale Eindrücke von Preisen und Kommunikationsgeschwindigkeiten'
 slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flet's Hikari","Internetleitung"]
 draft: false
 image: "jcom.webp"
 categories: ["IT・Technologie"]
+description: 'Ein Erfahrungsbericht über den Wechsel der Internetverbindung zu Hause von Flet''s Hikari zu J:COM. Wir geben einen ungeschönten Bericht über das tatsächliche Nutzungserlebnis, einschließlich der Einsparungen bei den monatlichen Gebühren, der Verbesserung der Download-Geschwindigkeit, aber auch der Verringerung der Upload-Geschwindigkeit und der Stabilität der Kommunikation.'
 ---
 
 # Umstellung der Internetumgebung zu Hause von Flet's Hikari auf J:COM

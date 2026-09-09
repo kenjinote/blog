@@ -1,11 +1,12 @@
 ---
-title: '如何在paint.net中为图片的特定部分添加马赛克'
+title: '在paint.net中对图片特定区域打马赛克的简单方法'
 slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "边框", "图片"]
 draft: false
 image: "img.webp"
 categories: ["AI·技术"]
+description: '讲解如何使用免费图片编辑软件“paint.net”对图片局部进行马赛克处理。面向初学者介绍使用选择工具指定范围以及效果功能的设置步骤。这是在上传图片到社交网络或博客时非常实用的隐私保护技巧。'
 ---
 
 本文将介绍如何在paint.net中为图片的特定部分添加马赛克。

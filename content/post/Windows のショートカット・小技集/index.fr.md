@@ -1,11 +1,12 @@
 ---
-title: "Raccourcis et astuces Windows"
+title: '[Windows 11/10] Une collection de raccourcis clavier et d''astuces pratiques pour augmenter considérablement l''efficacité du travail'
 slug: "Raccourcis et astuces Windows"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Astuces", "Raccourcis"]
 draft: false
 image: "img.webp"
 categories: ["PC et Gadgets"]
+description: 'Nous présentons une sélection de raccourcis clavier et d''astuces pratiques qui améliorent l''efficacité du travail sur Windows 11 et Windows 10. Il s''agit d''une collection de techniques essentielles utiles au quotidien pour les débutants comme pour les utilisateurs avancés, telles que la manipulation des fenêtres, l''affichage du bureau, la saisie vocale et la capture d''écran.'
 ---
 Voici une collection de petites astuces pour Windows que vous pouvez utiliser au quotidien. J'espère que ceux qui commencent à utiliser Windows la trouveront utile.
 Elle est conçue pour Windows 11, mais je pense que la plupart des astuces fonctionnent également sur Windows 10.

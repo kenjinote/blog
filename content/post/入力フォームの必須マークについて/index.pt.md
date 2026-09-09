@@ -1,11 +1,12 @@
 ---
-title: "Sobre a Marca de Obrigatório em Formulários de Entrada"
+title: 'Otimização das marcas obrigatórias em formulários de entrada | As melhores práticas aprendidas nos guias de UI internacionais'
 slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00
 tags: ["Formulário", "Desenvolvimento Web", "UX"]
 draft: false
 image: "img.webp"
 categories: ["Operação do Blog"]
+description: 'Explicaremos as melhores práticas para a marca de ''campo obrigatório'' em formulários web, com base em diretrizes de UI internacionais. Resumimos como usar o asterisco (*) corretamente, especificar claramente ''Required'' e como usar atributos ARIA para melhorar a acessibilidade.'
 ---
 
 Organizamos informações sobre a marca de "obrigatório" na interface do usuário (formulários) no exterior, juntamente com materiais de diretrizes de UI.

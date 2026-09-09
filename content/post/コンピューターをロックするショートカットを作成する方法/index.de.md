@@ -1,11 +1,12 @@
 ---
-title: "So erstellen Sie eine Verknüpfung zum Sperren Ihres Computers"
+title: 'Sperren Sie Ihren Windows-PC in 1 Sekunde! So erstellen und verwenden Sie praktische Verknüpfungen'
 slug: "so-erstellen-sie-eine-verknuepfung-zum-sperren-ihres-computers"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Computer sperren", "Verknüpfung"]
 draft: false
 image: "img.webp"
 categories: ["PC & Gadgets"]
+description: 'Wir erklären mit Bildern verständlich, wie Sie eine Verknüpfung erstellen, mit der Sie Ihren Windows-Computer mit einem Klick sperren können. Wir stellen auch eine Methode vor, um ihn mit der Tastenkombination Win+L sofort zu sperren, was als Sicherheitsmaßnahme praktisch ist, wenn Sie sich von Ihrem Schreibtisch entfernen.'
 ---
 
 Hier erfahren Sie, wie Sie eine Verknüpfung zum Sperren Ihres Computers erstellen.

@@ -1,11 +1,12 @@
 ---
-title: "FizzBuzz"
+title: '程式設計的入門磚「FizzBuzz問題」是什麼？Python寫法解說'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "演算法"]
 draft: false
 image: "img.webp"
 categories: ["程式設計"]
+description: '針對程式設計師面試中常出現的「FizzBuzz問題」，淺顯易懂地解說其概要，並提供使用Python的具體程式碼範例（條件分支）。內容適合初學者或想複習基礎知識的朋友閱讀。'
 ---
 
 ## FizzBuzz 到底是什麼？

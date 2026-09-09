@@ -1,11 +1,12 @@
 ---
-title: 'Gmailをcurlから送る'
+title: 'curlコマンドを使ってGmailからメールを送信する方法'
 slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["AI・テクノロジー"]
+description: 'コマンドラインツールの「curl」を使ってGmailアカウント経由でメールを送信する方法を解説。Googleのアプリパスワード取得手順から、curlのオプション指定やメール本文ファイルの作成・送信コマンドまで詳しく紹介します。'
 ---
 
 # Gmailをcurlから送る

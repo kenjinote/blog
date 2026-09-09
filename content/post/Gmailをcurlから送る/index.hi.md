@@ -1,11 +1,12 @@
 ---
-title: "curl के साथ Gmail भेजें"
+title: 'curl कमांड का उपयोग करके Gmail से ईमेल कैसे भेजें'
 slug: "curl-ke-saath-gmail-bhejen"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["AI और प्रौद्योगिकी"]
+description: 'हम बताएंगे कि कमांड लाइन टूल "curl" का उपयोग करके Gmail खाते के माध्यम से ईमेल कैसे भेजें। Google के ऐप पासवर्ड प्राप्त करने की प्रक्रिया से लेकर curl के विकल्प निर्दिष्ट करने और ईमेल मुख्य फ़ाइल बनाने और भेजने के कमांड तक, हम सब कुछ विस्तार से पेश करेंगे。'
 ---
 
 # curl के साथ Gmail भेजें

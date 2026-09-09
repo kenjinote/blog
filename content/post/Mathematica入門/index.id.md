@@ -1,11 +1,12 @@
 ---
-title: "Pengantar Mathematica"
+title: 'Pengenalan Mathematica: Cara Menggunakan Perintah Dasar seperti Persamaan dan Kalkulus'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Matematika", "Algoritma"]
 draft: false
 image: "img.webp"
 categories: ["Matematika/Kriptografi/Kuantum"]
+description: 'Menjelaskan cara dasar menggunakan Mathematica dan perintah perhitungan untuk pemula. Kami merangkum contoh spesifik fungsi yang sering digunakan, seperti pemecahan persamaan dan sistem persamaan (Solve), pertidaksamaan (Reduce), turunan (D), integral (Integrate), dan perhitungan matriks.'
 ---
 # Pengantar Mathematica
 

@@ -1,11 +1,12 @@
 ---
-title: "Définir dynamiquement des variables dans Github Actions"
+title: 'Comment configurer dynamiquement des variables d''environnement dans GitHub Actions [Environnement Windows]'
 slug: "Github Actionsで動的に変数を設定する"
 date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["ツール・開発環境"]
+description: 'Nous expliquons comment configurer dynamiquement des variables d''environnement dans les flux de travail GitHub Actions. En prenant l''environnement Windows comme exemple, nous présentons la procédure d''écriture dans « $env:GITHUB_ENV » et des exemples spécifiques d''utilisation en référençant la variable lors des étapes suivantes pour la création de versions.'
 ---
 
 Pour définir dynamiquement des variables dans Github Actions, vous pouvez le faire en les ajoutant à $env:GITHUB_ENV comme ci-dessous.

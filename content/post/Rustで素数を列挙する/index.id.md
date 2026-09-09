@@ -1,11 +1,12 @@
 ---
-title: "Menghitung Bilangan Prima di Rust"
+title: 'Cara Membuat Program untuk Menghitung Bilangan Prima di Rust dan Contoh Kodenya'
 slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","bilangan prima","algoritma"]
 draft: false
 image: "images/img.webp"
 categories: ["pemrograman"]
+description: 'Sebagai pembelajaran pemrograman Rust, kami memperkenalkan contoh implementasi algoritme sederhana yang menghitung bilangan prima hingga nilai batas atas yang ditentukan. Kami menjelaskan dengan mudah metode pengkodean dasar menggunakan perulangan dan percabangan kondisional, beserta kode contoh spesifik.'
 ---
 Saya menulis program untuk membuat daftar bilangan prima di Rust.
 

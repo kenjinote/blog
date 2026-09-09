@@ -1,11 +1,12 @@
 ---
-title: '今のメインPCスペック'
+title: '【Core i7-8700K・メモリ32GB】現在のメインPCスペックと作業環境'
 slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
 categories: ["PC・ガジェット"]
+description: '私が現在使用しているメインPCのスペック（Core i7-8700K、メモリ32GB、Windows 11）や作業環境についてまとめました。マウスコンピューター製のデスクトップPCを利用した現在の構成を備忘録として紹介しています。'
 ---
 メインPCのスペックを書いておきます。
 | 項目名     | 値                                             |

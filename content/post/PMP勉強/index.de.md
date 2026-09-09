@@ -1,11 +1,12 @@
 ---
-title: "PMP-Studium"
+title: 'Grundwissen und Studienzusammenfassung für die PMP-Prüfung: Entsprechend PMBOK 7. Ausgabe'
 slug: "PMP勉強"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "勉強"]
 draft: false
 image: "img.webp"
 categories: ["IT・テクノロジー"]
+description: 'Fasst die wesentlichen Punkte für das Studium zur Projektmanagement-Zertifizierung „PMP“ zusammen. Neben dem Prüfungsüberblick und der Bestehensgrenze werden wichtige Themen gemäß der 7. Ausgabe des PMBOK erläutert, wie die 10 Prinzipien der Servant Leadership und die 4 Werte des Agilen Manifests für Softwareentwicklung.'
 ---
 
 # Zusammenfassung des PMP-Studiums

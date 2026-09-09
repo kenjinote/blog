@@ -1,5 +1,5 @@
 ---
-title: "Formules Mathématiques Préférées"
+title: 'Le monde trop beau des mathématiques : Mes formules préférées comme le théorème de Wilson ou la formule d''Euler'
 slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Mathématiques"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Mathématiques, Cryptographie, Quantique"]
+description: 'Nous présentons des formules fascinantes qui vous font ressentir la profondeur et la beauté des mathématiques, telles que le théorème de Wilson, la formule d''Euler, le dernier théorème de Fermat et le problème de Bâle. Découvrez ces nombreuses et belles formules, à la fois simples et émouvantes, qui semblent exprimer les vérités du monde.'
 ---
 ## Théorème de Wilson
 Lorsque $p$ est un nombre premier, $(p−1)!≡−1 \pmod p$ est vérifié.

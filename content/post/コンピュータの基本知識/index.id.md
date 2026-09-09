@@ -1,11 +1,12 @@
 ---
-title: "Pengetahuan Dasar Komputer"
+title: 'Apa Itu 5 Komponen Utama Komputer? Pengetahuan Dasar Hardware dan Software yang Wajib Diketahui Pemula IT'
 slug: "pengetahuan-dasar-komputer"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Komputer", "Pengetahuan Dasar"]
 draft: false
 image: "img.webp"
 categories: ["IT & Teknologi"]
+description: 'Menjelaskan cara kerja komputer secara sederhana untuk pemula IT. Merangkum pengetahuan dasar yang perlu diketahui sebagai fondasi IT, mulai dari peran ''5 Komponen Utama'' (Input, Output, Penyimpanan, Kontrol, dan Pemrosesan) hingga hubungan antara perangkat keras dan perangkat lunak (program).'
 ---
 
 # Pengetahuan Dasar Komputer

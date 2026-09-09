@@ -3,13 +3,14 @@
 
 
 
-title: "rustc를 업데이트하는 방법"
+title: 'Rust 컴파일러(rustc)를 최신 버전으로 업데이트하는 방법'
 slug: "rustcをアップデートする方法"
 date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
 categories: ["프로그래밍"]
+description: 'Rust의 컴파일러인 rustc를 최신 버전으로 업데이트하는 간단한 방법을 설명합니다. 터미널이나 명령 프롬프트에서 `rustup update` 명령어를 한 줄 실행하는 것만으로 관련 구성 요소를 포함하여 일괄 업데이트할 수 있습니다.'
 ---
 
 

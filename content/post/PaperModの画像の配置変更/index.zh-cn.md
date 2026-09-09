@@ -1,11 +1,12 @@
 ---
-title: '更改 PaperMod 的图片布局'
+title: '如何通过CSS自定义Hugo PaperMod主题的图片大小与对齐方式'
 slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["博客运营"]
+description: '讲解如何在Hugo的PaperMod主题中自定义文章内图片的大小与对齐方式。介绍如何修改CSS（blank.css和post-entry.css），将默认的100%宽度及居中对齐更改为图片环绕或缩小的具体步骤。'
 ---
 默认布局中，图片位于中央且宽度为 100%，但我有时觉得太大了，所以尝试将图片绕排在标题下方，并将其宽度更改为 150px 左右。
 

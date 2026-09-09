@@ -1,5 +1,5 @@
 ---
-title: "Fórmulas Matemáticas Favoritas"
+title: 'O belo mundo da matemática: Coleção de fórmulas favoritas como o Teorema de Wilson e a Fórmula de Euler'
 slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Matemática"]
@@ -7,6 +7,7 @@ draft: false
 math: true
 image: "img.webp"
 categories: ["Matemática, Criptografia, Quântica"]
+description: 'Apresentamos fórmulas matemáticas fascinantes que permitem que você sinta a profundidade e a beleza da matemática, como o Teorema de Wilson, a Fórmula de Euler, o Último Teorema de Fermat e o Problema de Basileia. Por favor, dê uma olhada nessas muitas fórmulas maravilhosas, que são emocionantes e simples, mas que parecem representar as verdades do mundo.'
 ---
 ## Teorema de Wilson
 Quando $p$ é um número primo, $(p−1)!≡−1 \pmod p$ é válido.

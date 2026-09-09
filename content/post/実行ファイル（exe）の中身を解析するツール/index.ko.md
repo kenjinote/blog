@@ -1,11 +1,12 @@
 ---
-title: "실행 파일(exe)의 내용을 분석하는 도구"
+title: 'Windows 실행 파일(exe)의 내부를 분석·해제할 수 있는 편리한 도구 4선'
 slug: "실행 파일(exe)의 내용을 분석하는 도구"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "실행 파일", "분석"]
 draft: false
 image: "img_1.webp"
 categories: ["PC・가젯"]
+description: 'Windows 실행 파일(exe)의 내부를 분석·압축 해제할 수 있는 추천 도구를 소개합니다. 7-Zip이나 Resource Hacker 등을 이용하여 PE 포맷의 구조 확인이나 리소스 추출, 바이너리 편집을 하는 방법을 알기 쉽게 해설합니다.'
 ---
 
 # 실행 파일(exe)이란?
