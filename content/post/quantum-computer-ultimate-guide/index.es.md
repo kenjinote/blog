@@ -147,7 +147,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|Medición (observación)| Result
+    Interference -->|"Medición (observación)"| Result
 ```
 
 De este modo, la computación cuántica no representa una mera medida temporal para prolongar la vida útil de los sistemas eludiendo los límites de la física clásica (como los límites de miniaturización o los límites termodinámicos), sino un verdadero cambio de paradigma que reconstruye la definición misma de información y cómputo sobre la base de los postulados de la mecánica cuántica. En el siguiente capítulo, profundizaremos en los detalles de las «compuertas cuánticas» y los «circuitos cuánticos», herramientas matemáticas concretas para manipular libremente esta interferencia cuántica.
@@ -588,7 +588,7 @@ graph TD
     
     Obs -->|"Probabilidad $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
     Obs -->|"Probabilidad $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
-    Obs -->|...| StateN["Estado colapsado n: $| a_n \rangle$"]:::state
+    Obs -->|"..."| StateN["Estado colapsado n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoherencia (pérdida de interferencia de fase) y estado mixto"]:::measure
     State2 --> Decoherence
@@ -1198,7 +1198,7 @@ graph LR
     X --> Out1
 
     %% CNOT Connection (Control to Target)
-    Dot -.->|CNOT| X
+    Dot -.->|"CNOT"| X
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
@@ -1956,7 +1956,7 @@ flowchart LR
         aux["|0⟩^L"] --> Uf_in[" "]
     end
 
-    Uf["Oráculo cuántico U_f \n |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
+    Uf["Oráculo cuántico U_f <br/> |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
 
     H0 --> Uf
     H1 --> Uf
@@ -2699,8 +2699,8 @@ Las puertas lógicas cuánticas en este sistema se ejecutan mediante el «trenza
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Trenzado topológico"]
-    A["Eje temporal t"] -->|Línea de universo del anión 1| B["Operación de intercambio (trenzado)"]
-    C["Línea de universo del anión 2"] -->|Trenzado| B
+    A["Eje temporal t"] -->|"Línea de universo del anión 1"| B["Operación de intercambio (trenzado)"]
+    C["Línea de universo del anión 2"] -->|"Trenzado"| B
     B --> D["Rotación unitaria U del vector de estado"]
     end
 ```

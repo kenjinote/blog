@@ -147,7 +147,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|測量（觀測）| Result
+    Interference -->|"測量（觀測）"| Result
 ```
 
 由此可見，量子電腦並非只是為了繞過古典力學極限（如微縮化極限與熱力學極限）而採取的權宜延命手段，而是依據量子力學公理徹底重構資訊與計算定義的真正典範轉移（paradigm shift）。在下一章中，我們將更深入探討用以隨心所欲操控這種量子干涉的具體數學工具——「量子閘」與「量子電路」的細節。
@@ -588,7 +588,7 @@ graph TD
     
     Obs -->|"機率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["塌縮狀態 1: $| a_1 \rangle$"]:::state
     Obs -->|"機率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["塌縮狀態 2: $| a_2 \rangle$"]:::state
-    Obs -->|...| StateN["塌縮狀態 n: $| a_n \rangle$"]:::state
+    Obs -->|"..."| StateN["塌縮狀態 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["退相干（相位干涉的喪失）與混態化"]:::measure
     State2 --> Decoherence
@@ -1198,7 +1198,7 @@ graph LR
     X --> Out1
 
     %% CNOT Connection (Control to Target)
-    Dot -.->|CNOT| X
+    Dot -.->|"CNOT"| X
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
@@ -1955,7 +1955,7 @@ flowchart LR
         aux["|0⟩^L"] --> Uf_in[" "]
     end
 
-    Uf["量子預言機 U_f \n |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
+    Uf["量子預言機 U_f <br/> |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
 
     H0 --> Uf
     H1 --> Uf
@@ -2698,8 +2698,8 @@ $$
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["拓撲編織"]
-    A["時間軸 t"] -->|任意子 1 的世界線| B["交換操作（編織）"]
-    C["任意子 2 的世界線"] -->|編織| B
+    A["時間軸 t"] -->|"任意子 1 的世界線"| B["交換操作（編織）"]
+    C["任意子 2 的世界線"] -->|"編織"| B
     B --> D["狀態向量發生么正旋轉 U"]
     end
 ```

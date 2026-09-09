@@ -147,7 +147,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|測定（観測）| Result
+    Interference -->|"測定（観測）"| Result
 ```
 
 このように、量子コンピュータは古典力学の限界（微細化限界や熱力学的限界）を迂回するための一時的な延命策ではなく、情報と計算の定義そのものを量子力学の公理に基づき再構築する、真のパラダイムシフトなのである。次章では、この量子干渉を自在に操るための具体的な数学的ツールである「量子ゲート」と「量子回路」の詳細について、より深く踏み込んでいく。
@@ -588,7 +588,7 @@ graph TD
     
     Obs -->|"確率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["収縮状態 1: $| a_1 \rangle$"]:::state
     Obs -->|"確率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["収縮状態 2: $| a_2 \rangle$"]:::state
-    Obs -->|...| StateN["収縮状態 n: $| a_n \rangle$"]:::state
+    Obs -->|"..."| StateN["収縮状態 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["デコヒーレンス（位相干渉の喪失）と混合状態化"]:::measure
     State2 --> Decoherence
@@ -1198,7 +1198,7 @@ graph LR
     X --> Out1
 
     %% CNOT Connection (Control to Target)
-    Dot -.->|CNOT| X
+    Dot -.->|"CNOT"| X
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
@@ -1955,7 +1955,7 @@ flowchart LR
         aux["|0⟩^L"] --> Uf_in[" "]
     end
 
-    Uf["量子オラクル U_f \n |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
+    Uf["量子オラクル U_f <br/> |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
 
     H0 --> Uf
     H1 --> Uf
@@ -2698,8 +2698,8 @@ $$
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["トポロジカル・ブレイディング"]
-    A["時間軸 t"] -->|エニオン1の世界線| B["交換操作（ブレイド）"]
-    C["エニオン2の世界線"] -->|ブレイド| B
+    A["時間軸 t"] -->|"エニオン1の世界線"| B["交換操作（ブレイド）"]
+    C["エニオン2の世界線"] -->|"ブレイド"| B
     B --> D["状態ベクトルがユニタリ回転 U"]
     end
 ```

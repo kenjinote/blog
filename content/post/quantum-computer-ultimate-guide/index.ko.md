@@ -147,7 +147,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|측정(관측)| Result
+    Interference -->|"측정(관측)"| Result
 ```
 
 이와 같이 양자 컴퓨터는 고전역학의 한계(미세화 한계나 열역학적 한계)를 우회하기 위한 일시적인 연명책이 아니라, 정보와 계산의 정의 그 자체를 양자역학의 공리에 기반하여 재구축하는 진정한 패러다임 전환이다. 다음 장에서는 이 양자 간섭을 자유자재로 다루기 위한 구체적인 수학적 도구인 '양자 게이트'와 '양자 회로'의 상세한 내용에 대해 더욱 깊이 파고들 것이다.
@@ -588,7 +588,7 @@ graph TD
     
     Obs -->|"확률 $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["수축 상태 1: $| a_1 \rangle$"]:::state
     Obs -->|"확률 $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["수축 상태 2: $| a_2 \rangle$"]:::state
-    Obs -->|...| StateN["수축 상태 n: $| a_n \rangle$"]:::state
+    Obs -->|"..."| StateN["수축 상태 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["결어긋남(위상 간섭의 상실)과 혼합 상태화"]:::measure
     State2 --> Decoherence
@@ -1198,7 +1198,7 @@ graph LR
     X --> Out1
 
     %% CNOT Connection (Control to Target)
-    Dot -.->|CNOT| X
+    Dot -.->|"CNOT"| X
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
@@ -1955,7 +1955,7 @@ flowchart LR
         aux["|0⟩^L"] --> Uf_in[" "]
     end
 
-    Uf["양자 오라클 U_f \n |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
+    Uf["양자 오라클 U_f <br/> |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
 
     H0 --> Uf
     H1 --> Uf
@@ -2698,8 +2698,8 @@ $$
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["위상 브레이딩"]
-    A["시간축 t"] -->|애니온 1의 세계선| B["교환 조작(브레이드)"]
-    C["애니온 2의 세계선"] -->|브레이드| B
+    A["시간축 t"] -->|"애니온 1의 세계선"| B["교환 조작(브레이드)"]
+    C["애니온 2의 세계선"] -->|"브레이드"| B
     B --> D["상태 벡터가 유니터리 회전 U"]
     end
 ```

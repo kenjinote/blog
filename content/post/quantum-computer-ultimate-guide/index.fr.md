@@ -147,7 +147,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|Mesure (observation)| Result
+    Interference -->|"Mesure (observation)"| Result
 ```
 
 Ainsi, l'ordinateur quantique n'est pas un simple expédient provisoire visant à contourner les limites de la mécanique classique (limites de miniaturisation ou limites thermodynamiques), mais un véritable changement de paradigme qui refonde la définition même de l'information et du calcul sur les axiomes de la mécanique quantique. Dans le prochain chapitre, nous approfondirons les détails des « portes quantiques » et des « circuits quantiques », les outils mathématiques concrets permettant de manipuler cette interférence quantique à volonté.
@@ -588,7 +588,7 @@ graph TD
     
     Obs -->|"Probabilité $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["État effondré 1 : $| a_1 \rangle$"]:::state
     Obs -->|"Probabilité $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["État effondré 2 : $| a_2 \rangle$"]:::state
-    Obs -->|...| StateN["État effondré n : $| a_n \rangle$"]:::state
+    Obs -->|"..."| StateN["État effondré n : $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Décohérence (perte d'interférence de phase) et passage à l'état mixte"]:::measure
     State2 --> Decoherence
@@ -1196,7 +1196,7 @@ graph LR
     X --> Out1
 
     %% CNOT Connection (Control to Target)
-    Dot -.->|CNOT| X
+    Dot -.->|"CNOT"| X
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
@@ -1953,7 +1953,7 @@ flowchart LR
         aux["|0⟩^L"] --> Uf_in[" "]
     end
 
-    Uf["Oracle quantique U_f \n |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
+    Uf["Oracle quantique U_f <br/> |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
 
     H0 --> Uf
     H1 --> Uf
@@ -2696,8 +2696,8 @@ Les opérations logiques s'effectuent en guidant ces modes de Majorana les uns a
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Tressage topologique"]
-    A["Axe du temps t"] -->|Ligne d'univers de l'anyon 1| B["Opération d'échange (tresse)"]
-    C["Ligne d'univers de l'anyon 2"] -->|Tresse| B
+    A["Axe du temps t"] -->|"Ligne d'univers de l'anyon 1"| B["Opération d'échange (tresse)"]
+    C["Ligne d'univers de l'anyon 2"] -->|"Tresse"| B
     B --> D["Rotation unitaire U du vecteur d'état"]
     end
 ```

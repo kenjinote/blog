@@ -147,7 +147,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|Pengukuran (Observasi)| Result
+    Interference -->|"Pengukuran (Observasi)"| Result
 ```
 
 Dengan cara ini, komputer kuantum bukanlah sekadar solusi sementara untuk menghindari batasan mekanika klasik (batasan miniaturisasi dan batasan termodinamika), melainkan sebuah perubahan paradigma yang sejati yang merekonstruksi definisi informasi dan komputasi itu sendiri berdasarkan aksioma mekanika kuantum. Pada bab berikutnya, kita akan membahas lebih dalam mengenai rincian "gerbang kuantum" dan "sirkuit kuantum", yang merupakan alat matematika spesifik untuk memanipulasi interferensi kuantum ini secara bebas.
@@ -588,7 +588,7 @@ graph TD
     
     Obs -->|"Probabilitas $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Keadaan Runtuh 1: $| a_1 \rangle$"]:::state
     Obs -->|"Probabilitas $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Keadaan Runtuh 2: $| a_2 \rangle$"]:::state
-    Obs -->|...| StateN["Keadaan Runtuh n: $| a_n \rangle$"]:::state
+    Obs -->|"..."| StateN["Keadaan Runtuh n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Dekoherensi (Hilangnya Interferensi Fase) dan Transisi ke Keadaan Campuran"]:::measure
     State2 --> Decoherence
@@ -1198,7 +1198,7 @@ graph LR
     X --> Out1
 
     %% CNOT Connection (Control to Target)
-    Dot -.->|CNOT| X
+    Dot -.->|"CNOT"| X
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
@@ -1955,7 +1955,7 @@ flowchart LR
         aux["|0⟩^L"] --> Uf_in[" "]
     end
 
-    Uf["Oracle Kuantum U_f \n |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
+    Uf["Oracle Kuantum U_f <br/> |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
 
     H0 --> Uf
     H1 --> Uf
@@ -2698,8 +2698,8 @@ Gerbang logika kuantum dalam sistem ini dieksekusi melalui "penjalinan (Braiding
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Penjalinan Topologis"]
-    A["Sumbu waktu t"] -->|Garis dunia anyon 1| B["Operasi pertukaran (jalinan/braid)"]
-    C["Garis dunia anyon 2"] -->|Jalinan| B
+    A["Sumbu waktu t"] -->|"Garis dunia anyon 1"| B["Operasi pertukaran (jalinan/braid)"]
+    C["Garis dunia anyon 2"] -->|"Jalinan"| B
     B --> D["Vektor keadaan berotasi secara uniter U"]
     end
 ```

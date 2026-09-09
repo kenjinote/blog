@@ -147,7 +147,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|Medição (Observação)| Result
+    Interference -->|"Medição (Observação)"| Result
 ```
 
 Dessa forma, o computador quântico não é uma mera medida paliativa temporária para contornar os limites da mecânica clássica (limites de miniaturização e termodinâmicos), mas sim uma verdadeira mudança de paradigma que reconstrói a própria definição de informação e computação com base nos axiomas da mecânica quântica. No próximo capítulo, aprofundaremos nas ferramentas matemáticas concretas para manipular livremente essa interferência quântica: as "portas quânticas" e os "circuitos quânticos".
@@ -588,7 +588,7 @@ graph TD
     
     Obs -->|"Probabilidade $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
     Obs -->|"Probabilidade $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
-    Obs -->|...| StateN["Estado colapsado n: $| a_n \rangle$"]:::state
+    Obs -->|"..."| StateN["Estado colapsado n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoerência (perda de interferência de fase) e transição para estado misto"]:::measure
     State2 --> Decoherence
@@ -1198,7 +1198,7 @@ graph LR
     X --> Out1
 
     %% CNOT Connection (Control to Target)
-    Dot -.->|CNOT| X
+    Dot -.->|"CNOT"| X
     
     %% Styles
     style H fill:#f9f,stroke:#333,stroke-width:2px
@@ -1956,7 +1956,7 @@ flowchart LR
         aux["|0⟩^L"] --> Uf_in[" "]
     end
 
-    Uf["Oráculo Quântico U_f \n |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
+    Uf["Oráculo Quântico U_f <br/> |x⟩|y⟩ → |x⟩|y ⊕ (a^x mod N)⟩"]
 
     H0 --> Uf
     H1 --> Uf
@@ -2699,8 +2699,8 @@ As portas lógicas quânticas neste sistema são executadas pelo "Trançado" (Br
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Trançado Topológico"]
-    A["Eixo de tempo t"] -->|Linha de mundo do Anyon 1| B["Operação de troca (Braiding)"]
-    C["Linha de mundo do Anyon 2"] -->|Braiding| B
+    A["Eixo de tempo t"] -->|"Linha de mundo do Anyon 1"| B["Operação de troca (Braiding)"]
+    C["Linha de mundo do Anyon 2"] -->|"Braiding"| B
     B --> D["Vetor de estado sofre rotação unitária U"]
     end
 ```
