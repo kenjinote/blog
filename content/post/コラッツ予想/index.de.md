@@ -1,53 +1,53 @@
 ---
-title: "コラッツ予想"
+title: 'Collatz-Problem'
 slug: "コラッツ予想"
 date: 2025-07-15T18:03:03+09:00
-tags: ["コラッツ予想", "数学", "プログラミング", "アルゴリズム"]
+tags: ["Collatz-Problem", "Mathematik", "Programmieren", "Algorithmus"]
 draft: false
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["Mathematik, Kryptographie & Quanten"]
 ---
 
-# "Stimmt es, dass jede Zahl am Ende zu 1 wird?" ── Spielen mit der Collatz-Vermutung
+# Stimmt es, dass „jede Zahl am Ende zu 1 wird“? ── Mit dem Collatz-Problem gespielt
 
-Hallo! Hier ist kenji.
+Hallo! Ich bin kenji.
 
-Wenn man plötzlich hört "eine Regel, bei der jede Zahl schließlich zu 1 wird",
-klingt das nicht ein bisschen seltsam?
+Ganz unvermittelt: Wenn man von einer „Regel hört, nach der jede Zahl am Ende zu 1 wird“,
+klingt das nicht ein bisschen wundersam?
 
-> Zum Beispiel 19, 87 oder auch 1000000.
-> Wenn man die Zahlen nach einer bestimmten Regel manipuliert, konvergieren sie aus irgendeinem Grund am Ende gegen "1".
+> Zum Beispiel bei 19, oder 87, oder sogar bei 1000000.
+> Wenn man die Zahl nach einer bestimmten Regel verändert, konvergiert sie am Ende aus irgendeinem Grund auf „1“.
 
-Diese traumhafte Geschichte ist die ** Collatz-Vermutung (Collatz Conjecture) **.
+So eine traumhafte Geschichte ist das **Collatz-Problem (Collatz Conjecture)**.
 
 ---
 
-## Was ist die Collatz-Vermutung eigentlich?
+## Was genau ist das Collatz-Problem?
 
-Zuerst stelle ich die Regeln vor.
+Zuerst stelle ich die Regel vor.
 
-* Start: Wähle eine beliebige ** positive ganze Zahl **.
+* Start: Wähle eine beliebige **positive ganze Zahl**.
 * Operation:
 
-    * Wenn sie gerade ist → halbiere sie (n → n / 2)
-    * Wenn sie ungerade ist → multipliziere mit 3 und addiere 1 (n → 3n + 1)
+    * Wenn gerade → halbieren (n → n / 2)
+    * Wenn ungerade → verdreifachen und 1 addieren (n → 3n + 1)
 
-Wenn man dies immer wieder wiederholt, ist es eine Vermutung, dass ** jede Zahl schließlich 1 erreicht **.
+Wenn man dies immer weiter wiederholt, lautet die Vermutung, dass **jede Zahl letztendlich die 1 erreicht**.
 
-Zum Beispiel, beginnend mit `6`:
+Wenn wir zum Beispiel mit `6` beginnen:
 
 ```
 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1
 ```
 
-Es wurde ordentlich "1". Willkommen zurück!
+Sie ist brav zur „1“ geworden. Willkommen zurück!
 
 ---
 
-## Machen wir es mit Code: Collatz in Python
+## Lass es uns im Code ausprobieren: Collatz in Python
 
-Nun, in solchen Zeiten ist es schneller, mit Code zu testen!
-Lassen Sie uns die "Collatz-Folge" in Python ausgeben.
+Nun, in solchen Fällen ist es am schnellsten, es im Code auszuprobieren!
+Lass uns die „Collatz-Folge“ in Python ausgeben.
 
 ```python
 def collatz(n):
@@ -60,27 +60,27 @@ def collatz(n):
         steps.append(n)
     return steps
 
-# Beispiel: beginnend mit 19
+# Beispiel: Wir beginnen mit 19
 print(collatz(19))
 ```
 
-Bei Ausführung:
+Wenn man es ausführt:
 
 ```
 [19, 58, 29, 88, 44, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
 ```
 
-Es erreicht brillant die 1.
-Obwohl es viele Umwege macht, erreicht es am Ende das Ziel!
+Es erreicht wunderbar die 1.
+Obwohl es ziemlich viele Umwege gemacht hat, ist es am Ende sicher im Ziel gelandet!
 
 
-Übrigens, wenn Sie mit 29 beginnen, werden Sie auf die gleiche Weise 1 erreichen.
+Übrigens, selbst wenn wir mit **27** beginnen, erreicht es auf die gleiche Weise die 1.
 
-```python
-print(collatz(29))
+```
+print(collatz(27))
 ```
 
-Bei Ausführung
+Wenn man es ausführt:
 
 ```
 [27, 82, 41, 124, 62, 31, 94, 47, 142, 71, 214, 107, 322, 161, 484, 242,
@@ -93,108 +93,154 @@ Bei Ausführung
 106, 53, 160, 80, 40, 20, 10, 5, 16, 8, 4, 2, 1]
 ```
 
-Wow, es dauert 111 Schritte!
+Unglaublich, es dauert 111 Schritte!
 
-Und es gibt auch Szenen, in denen es unterwegs auf über 9000 anschwillt.
-Es ist ein Muster, bei dem man einen verrückten Umweg macht, bevor man das Ziel erreicht.
+Und zwischendurch gibt es sogar Phasen, in denen die Zahl auf über 9000 anwächst.
+Ein Muster, bei dem es extrem viele Umwege macht, bevor es ins Ziel kommt.
 
 ---
 
-## Und, was ist daran so toll?
+## Und was ist nun das Besondere daran?
 
-Das Tolle an dieser Vermutung ist,
+Das Besondere an dieser Vermutung ist Folgendes:
 
-> ** Obwohl es nicht bewiesen ist, scheint es, dass jede Zahl, die man versucht, zu 1 wird **
+> **Obwohl sie nicht bewiesen ist, scheint sie bei jeder Zahl zur 1 zu führen.**
 
-Das ist es.
+Das ist der Punkt.
 
-Äh? Und was ist mit 1 Billion oder 10 Billiarden...?
+Häh? Was ist dann mit 1 Billion oder 1 Billiarde...?
 
-Für diejenigen, die so dachten: sehr scharfsinnig.
-Tatsächlich wurde es mit Computern bis zu etwa "2 hoch 68",
-und ** alle haben 1 erreicht **. Unglaublich...
+Wer so denkt, ist scharfsinnig.
+Tatsächlich wurde dies mithilfe von Computern bis etwa „2 hoch 68“ überprüft,
+und **alle haben die 1 erreicht**. Unglaublich...
 
-Aber ** es wurde nicht theoretisch bewiesen, dass "alle so sein werden" **.
-Das ist ein sogenanntes "ungelöstes Problem" in der Welt der Mathematik.
+Aber **es wurde theoretisch nicht bewiesen, dass „alle das tun“**.
+Das ist das, was man in der Mathematikwelt ein „ungelöstes Problem“ nennt.
+
+---
+
+## Warum wird es „1“? Ein Ansatz aus der Wahrscheinlichkeitstheorie (Mathematischer Hintergrund)
+
+Dass jede Zahl letztendlich 1 wird, scheint wie Magie zu sein, aber aus einer **wahrscheinlichkeitstheoretischen Perspektive** gibt es einen rationalen Grund, zu sagen: „Nun, es sieht so aus, als würde es passieren.“
+
+Wenn wir `3n + 1` auf eine ungerade Zahl $n$ anwenden, ist die Antwort immer eine **gerade Zahl**.
+Daher wird sie im nächsten Schritt immer durch 2 geteilt, was praktisch $\frac{3n + 1}{2} \approx 1.5n$ ergibt.
+
+Und die Wahrscheinlichkeit, dass diese Zahl wieder gerade ist, beträgt $\frac{1}{2}$.
+Wenn sie gerade ist, wird sie weiter durch 2 geteilt und wird zu $0.75n$, was kleiner als die ursprüngliche Zahl ist.
+
+Auch wenn es mathematisch nicht streng ist, ist bekannt, dass das geometrische Mittel des „Multiplikators“ beim Sprung von einer ungeraden zur nächsten ungeraden Zahl **ungefähr das $\frac{3}{4}$-Fache** beträgt (heuristisches Wahrscheinlichkeitsmodell).
+Das heißt, **im Durchschnitt tendiert der Wert dazu, zu schrumpfen**, sodass er letztendlich quasi in die 1 hineingezogen wird.
+
+## Was passiert, wenn man die Regeln ein wenig ändert? (Vergleich mit anderen Vermutungen)
+
+Man möchte vielleicht denken: „Nun, was ist, wenn man es mit 5 statt mit 3 multipliziert?“
+Tatsächlich ist dies als das **$5n + 1$-Problem** bekannt, und in diesem Fall konvergieren nicht alle Zahlen gegen 1.
+
+Beim $5n + 1$-Problem wurde bestätigt, dass mehrere verschiedene Schleifen (Zyklen) existieren, und es wurde auch auf die Möglichkeit hingewiesen, dass Zahlen existieren, die unendlich weiter wachsen (Divergenz).
+Auch beim **$3n - 1$-Problem** gibt es neben der Schleife „$1 \to 2 \to 1$“ eine weitere Schleife wie „$5 \to 14 \to 7 \to 20 \to 10 \to 5$“.
+
+Wir können sehen, welch feine Balance der Eigenschaft des Collatz-Problems zugrunde liegt, dass „alles gegen 1 (die $4 \to 2 \to 1$-Schleife) konvergiert“.
+
+---
+
+## Der Stand der Menschheit ①: Die Grenzen der Brute-Force durch Computer
+
+Gegenwärtig berechnen Mathematiker und Informatik-Enthusiasten auf der ganzen Welt unermüdlich das Collatz-Problem und nutzen dabei verteiltes Rechnen (Projekte, die die Rechenleistung von PCs weltweit bündeln) und GPUs.
+
+Stand 2020 haben Computer bestätigt, dass das Collatz-Problem für alle Startwerte bis unglaublichen **$2^{68}$ (etwa 295 Trilliarden)** richtig ist (also letztendlich 1 erreicht).
+
+In der Mathematikwelt kann man jedoch nicht sagen: „Wir haben es bis 295 Trilliarden überprüft, also wird es für alle richtig sein.“ Denn angesichts des endlosen Ozeans an Zahlen ist selbst $2^{68}$ nur „der erste Tropfen“.
+
+---
+
+## Der Stand der Menschheit ②: Unentscheidbarkeit und der Durchbruch von Terence Tao
+
+Auf die Frage „Warum kann es niemand beweisen?“ bewies der geniale britische Mathematiker John Conway 1972, dass ein leicht erweitertes Problem des Collatz-Problems **„unentscheidbar“ (Turing-vollständig)** ist.
+Dies ist eine erschreckende Tatsache, die das Fundament der Informatik betrifft: Je nach Regel „existiert im Prinzip kein Algorithmus, um zu entscheiden, ob es 1 erreicht oder nicht“. Es ist sogar möglich, dass das Collatz-Problem selbst eine im Rahmen der modernen Mathematik unbeweisbare Aussage ist.
+
+Doch 2019 gab es endlich einen großen Durchbruch.
+**Terence Tao**, einer der größten Mathematikgenies der modernen Zeit, bewies mit Methoden der partiellen Differentialgleichungen und der Wahrscheinlichkeitstheorie, dass „(obwohl man nicht streng sagen kann, dass es für alle gilt) **die Collatz-Folge bei fast allen Startwerten letztendlich einen viel kleineren Wert als die ursprüngliche Zahl erreicht**“.
+
+Dies ist zwar kein vollständiger Beweis dafür, dass „alles zu 1 wird“, aber es sorgte in der mathematischen Welt für Aufsehen als der **historische Meilenstein, an dem die Menschheit der Wahrheit des Collatz-Problems am nächsten kam**.
 
 ---
 
 ## Wer ist Herr Collatz?
 
-Wenn Sie bis hierher gelesen haben, fragen Sie sich wahrscheinlich: "Wer ist Collatz eigentlich?".
-Ich werde ihn richtig vorstellen!
+Wer bis hierhin gelesen hat, denkt sich bestimmt: „Wer ist eigentlich dieser Collatz?“
+Ich werde ihn kurz vorstellen!
 
-* Name: ** Lothar Collatz (Lothar Collatz) **
+* Name: **Lothar Collatz**
 * Nationalität: Deutschland
-* Geburtsjahr: 1910 bis 1990
+* Geburts-/Todesjahr: 1910–1990
 * Titel: Mathematiker (aktiv in den Bereichen Funktionalanalysis und Zahlentheorie)
 
 Er schlug diese Vermutung 1937 vor,
-und seither, seit über 80 Jahren, ** konnte niemand sie beweisen oder widerlegen **.
+und seitdem, über mehr als 80 Jahre hinweg, **konnte niemand sie beweisen oder widerlegen**.
 
-Übrigens ist dieses Problem so einfach und doch so tiefgründig, dass
-selbst Paul Erdős (super berühmter Mathematiker) so etwas sagte.
+Übrigens ist dieses Problem so simpel und doch so tiefgründig, dass sogar Paul Erdős (ein superberühmter Mathematiker) einmal sagte:
 
-> "Die Mathematik ist noch nicht reif für die Collatz-Vermutung"
+> „Die Mathematik ist noch nicht reif genug, um mit solchen Problemen umzugehen.“
 
-Mit anderen Worten, die Theorie, dass die Mathematik der Menschheit dieses Mysterium noch nicht eingeholt hat...
+Das heißt, es gibt die Theorie, dass die menschliche Mathematik dieses Rätsel noch nicht eingeholt hat...
 
 ---
 
-## "Schwierige mathematische Formeln" sind nicht erforderlich
+## „Komplizierte Formeln“ sind nicht nötig
 
-Das Gute an der Collatz-Vermutung ist, dass ** jeder mitspielen kann **.
+Das Schöne am Collatz-Problem ist, dass **jeder damit spielen kann**.
 
 Man kann es mit Papier und Stift machen.
-Wenn man den Code in Python schreibt, kann man ihn automatisch testen.
-Und dennoch ** nehmen ihn Spitzenmathematiker ernst **.
+Wenn man Code in Python schreibt, kann man es automatisch ausprobieren.
+Und trotzdem **stellen sich die führenden Mathematiker diesem Problem ernsthaft**.
 
-Irgendwie aufregend, nicht wahr?
+Ist das nicht irgendwie aufregend?
 
 ---
 
 ## Bonus: Code, um alles auf einmal zu testen
 
-Ich werde auch einen Code posten, um verschiedene Zahlen gleichzeitig zu testen.
+Ich füge auch einen Code bei, um viele Zahlen auf einmal auszuprobieren.
 
 ```python
 for n in range(1, 21):
     steps = collatz(n)
-    print(f"{n}: {steps} (Schritte: {len(steps)-1})")
+    print(f"{n}: {steps} (Anzahl der Schritte: {len(steps)-1})")
 ```
 
-Dadurch erhalten wir die Collatz-Folgen von "1 bis 20" auf einmal.
+Dies gibt uns die Collatz-Folgen für „1 bis 20“ auf einen Schlag aus.
 
 ---
 
-## Fazit: Diese Welt ist doch mysteriös
+## Fazit: Diese Welt ist wirklich wundersam
 
-Das ist also die Collatz-Vermutung.
+Das war also das Collatz-Problem.
 
-* Obwohl es super einfach ist
-* Niemand kann es beweisen
-* Ein großes Problem in der Welt der Mathematik
+* Obwohl es extrem simpel ist
+* Kann es niemand beweisen
+* Und es ist ein riesiges Problem in der Mathematikwelt
 
-Es war eine Existenz wie eine Masse von Mysterien.
+Es ist wie ein massives Bündel an Wundersamkeit.
 
-Sogar Programmieranfänger können es versuchen, also spielen Sie bitte damit!
+Auch Programmier-Anfänger können es ausprobieren, also spielt auf jeden Fall mal damit herum!
 
 ---
 
 ## Empfohlene Links (für Interessierte)
 
-* [Wikipedia: Collatz-Vermutung](https://ja.wikipedia.org/wiki/コラッツ予想)
-* [Terence Tao Paper (Englisch)](https://arxiv.org/abs/1909.03562)
-* Es macht auch Spaß, eine visualisierte Version in Python zu erstellen! (Ich werde eine machen, wenn es gewünscht wird)
+* [Wikipedia: Collatz-Problem](https://de.wikipedia.org/wiki/Collatz-Problem)
+* [Paper von Terence Tao (Englisch)](https://arxiv.org/abs/1909.03562)
+* Es macht auch Spaß, eine visualisierte Version in Python zu erstellen! (Wenn es Nachfrage gibt, werde ich eine machen)
 
 ---
 
-Wenn Sie mehr über dieses Material "Mysteriöse Mathematik x Programmierung" erfahren möchten,
-zögern Sie nicht, anzufragen und zu sagen: "Bring mir mehr bei".
-Schließlich werde ich verschiedene Dinge wie die Riemann-Vermutung und Primzahlen vorstellen!
+Wer mehr über solche „wundersame Mathematik × Programmierung“-Themen wissen möchte,
+kann gerne ungeniert „Erzähl mir mehr“ anfragen.
+Irgendwann werde ich auch über die Riemannsche Vermutung, Primzahlen und vieles mehr berichten!
 
 ---
 
-📮Ende!
+📮 Ende!
 
 ---
