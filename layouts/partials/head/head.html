@@ -10,6 +10,19 @@
 
 <link rel='canonical' href='{{ .Permalink }}'>
 
+{{- range .AllTranslations -}}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+{{- end -}}
+{{- if eq .Language.Lang site.DefaultContentLanguage -}}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{- else if .IsTranslated -}}
+    {{- range .Translations -}}
+        {{- if eq .Language.Lang site.DefaultContentLanguage -}}
+            <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
 {{- partial "head/style.html" . -}}
 {{- partial "head/script.html" . -}}
 {{- partial "head/opengraph/include.html" . -}}
