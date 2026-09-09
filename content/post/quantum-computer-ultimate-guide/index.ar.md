@@ -124,17 +124,17 @@ graph TD
 
     Start["الحالة الابتدائية |0⟩"]:::quantum
 
-    subgraph "توليد حالة التراكب الكمومي"
+    subgraph sg_1 ["توليد حالة التراكب الكمومي"]
         H1["بوابة هادامارد (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "العمليات الوحدوية (التحكم بالطور عبر الأوراكل وغيره)"
+    subgraph sg_2 ["العمليات الوحدوية (التحكم بالطور عبر الأوراكل وغيره)"]
         U_op["إزاحة الطور / التطور الوحدوي (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "عملية التداخل الكمومي (جوهر الخوارزمية)"
+    subgraph sg_3 ["عملية التداخل الكمومي (جوهر الخوارزمية)"]
         H2["بوابة هادامارد (H)"]:::quantum
         Interference["إلغاء السعات وتضخيمها<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph "Bloch Sphere Visualization"
+    subgraph sg_4 ["Bloch Sphere Visualization"]
     direction LR
     Z_pos["|0⟩ (القطب الشمالي: θ=0)"] --- Center["المركز (نقطة الأصل: حالة مختلطة)"]
     Center --- Z_neg["|1⟩ (القطب الجنوبي: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["قياس الكمية الفيزيائية $A$ (مؤثر الإسقاط $P_k$)"]:::measure
     
-    Obs -->|احتمال $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["حالة الانهيار 1: $| a_1 \rangle$"]:::state
-    Obs -->|احتمال $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["حالة الانهيار 2: $| a_2 \rangle$"]:::state
+    Obs -->|"احتمال $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["حالة الانهيار 1: $| a_1 \rangle$"]:::state
+    Obs -->|"احتمال $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["حالة الانهيار 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["حالة الانهيار n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["فقدان الترابط الكمومي (فقدان التداخل الطوري) والتحول إلى حالة مختلطة"]:::measure
@@ -839,7 +839,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "مثال لدائرة كيوبت مفرد"
+    subgraph sg_5 ["مثال لدائرة كيوبت مفرد"]
     direction LR
     Q0["|0⟩"] --> G1["بوابة H"]
     G1 --> G2["بوابة S"]
@@ -1440,7 +1440,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "نظام Alice"
+    subgraph sg_6 ["نظام Alice"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (نصف EPR)"] --> T1["⊕ (Target)"]
     
@@ -1449,7 +1449,7 @@ graph LR
     H1 --> M2["قياس (M_C)"]
     end
     
-    subgraph "توليد EPR"
+    subgraph sg_7 ["توليد EPR"]
     epr0["|0⟩"] --> eprH["بوابة H"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1457,7 +1457,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "نظام Bob"
+    subgraph sg_8 ["نظام Bob"]
     qB["|0⟩ (نصف EPR)"] --> gateX["بوابة X (if M_A=1)"]
     gateX --> gateZ["بوابة Z (if M_C=1)"]
     gateZ --> out["|ψ⟩ (استرداد)"]
@@ -1960,8 +1960,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"الحالة |x⟩"| QFT["QFT† (تحويل فورييه الكمومي المعكوس)"]
-    Uf -->|"الحالة |a^x mod N⟩"| Discard["دون قياس (تشابك مع البيئة)"]
+    Uf -->|""الحالة |x⟩""| QFT["QFT† (تحويل فورييه الكمومي المعكوس)"]
+    Uf -->|""الحالة |a^x mod N⟩""| Discard["دون قياس (تشابك مع البيئة)"]
 
     QFT --> Measure["قياس (k)"]
     Measure --> Classical["معالجة لاحقة كلاسيكية بالكسور المستمرة (استخراج r)"]
@@ -2257,7 +2257,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "تكرار غروفر (المؤثر G)"
+    subgraph sg_9 ["تكرار غروفر (المؤثر G)"]
         direction LR
         A["حالة الإدخال |ψ_t⟩"] --> B["الأوراكل U_w"]
         B --> C["H^⊗n (تحويل الأساس)"]
@@ -2501,7 +2501,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logical Qubit Encoding (Shor Code Conceptual)"
+    subgraph sg_10 ["Logical Qubit Encoding (Shor Code Conceptual)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phase Flip Encoding (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2702,7 +2702,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph التضفير الطوبولوجي
+    subgraph sg_unq_11 ["التضفير الطوبولوجي"]
     A["محور الزمن t"] -->|خط مسار الأنيون 1| B["عملية التبادل (الجديلة)"]
     C["خط مسار الأنيون 2"] -->|الجديلة| B
     B --> D["دوران وحدوي لمتجه الحالة U"]

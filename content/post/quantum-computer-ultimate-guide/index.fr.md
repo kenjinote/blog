@@ -124,17 +124,17 @@ graph TD
 
     Start["État initial |0⟩"]:::quantum
 
-    subgraph "Génération de la superposition quantique"
+    subgraph sg_1 ["Génération de la superposition quantique"]
         H1["Porte de Hadamard (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "Opération unitaire (manipulation de phase par oracle, etc.)"
+    subgraph sg_2 ["Opération unitaire (manipulation de phase par oracle, etc.)"]
         U_op["Déphasage / Évolution unitaire (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "Processus d'interférence quantique (cœur de l'algorithme)"
+    subgraph sg_3 ["Processus d'interférence quantique (cœur de l'algorithme)"]
         H2["Porte de Hadamard (H)"]:::quantum
         Interference["Annulation et amplification des amplitudes<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ L'angle $\theta$ correspond exactement à l'angle polaire (Polar angle) mesuré 
 
 ```mermaid
 graph TD
-    subgraph "Visualisation de la sphère de Bloch"
+    subgraph sg_4 ["Visualisation de la sphère de Bloch"]
     direction LR
     Z_pos["|0⟩ (Pôle Nord : θ=0)"] --- Center["Centre (Origine : état mixte)"]
     Center --- Z_neg["|1⟩ (Pôle Sud : θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["Observation de la grandeur physique $A$ (Opérateur de projection $P_k$)"]:::measure
     
-    Obs -->|Probabilité $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["État effondré 1 : $| a_1 \rangle$"]:::state
-    Obs -->|Probabilité $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["État effondré 2 : $| a_2 \rangle$"]:::state
+    Obs -->|"Probabilité $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["État effondré 1 : $| a_1 \rangle$"]:::state
+    Obs -->|"Probabilité $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["État effondré 2 : $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["État effondré n : $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Décohérence (perte d'interférence de phase) et passage à l'état mixte"]:::measure
@@ -836,7 +836,7 @@ Un circuit quantique est la disposition chronologique de ces portes. L'état év
 
 ```mermaid
 graph LR
-    subgraph "Exemple de circuit à un seul qubit"
+    subgraph sg_5 ["Exemple de circuit à un seul qubit"]
     direction LR
     Q0["|0⟩"] --> G1["Porte H"]
     G1 --> G2["Porte S"]
@@ -1441,7 +1441,7 @@ Le processus ci-dessus peut être représenté sous la forme d'un circuit quanti
 
 ```mermaid
 graph LR
-    subgraph "Système d'Alice"
+    subgraph sg_6 ["Système d'Alice"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (Moitié EPR)"] --> T1["⊕ (Cible)"]
     
@@ -1450,7 +1450,7 @@ graph LR
     H1 --> M2["Mesure (M_C)"]
     end
     
-    subgraph "Génération EPR"
+    subgraph sg_7 ["Génération EPR"]
     epr0["|0⟩"] --> eprH["Porte H"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1458,7 +1458,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Système de Bob"
+    subgraph sg_8 ["Système de Bob"]
     qB["|0⟩ (Moitié EPR)"] --> gateX["Porte X (si M_A=1)"]
     gateX --> gateZ["Porte Z (si M_C=1)"]
     gateZ --> out["|ψ⟩ (Reconstitué)"]
@@ -1960,8 +1960,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|État |x⟩| QFT["QFT† (Transformée de Fourier quantique inverse)"]
-    Uf -->|État |a^x mod N⟩| Discard["Non observé (Intriqué avec l'environnement)"]
+    Uf -->|"État |x⟩"| QFT["QFT† (Transformée de Fourier quantique inverse)"]
+    Uf -->|"État |a^x mod N⟩"| Discard["Non observé (Intriqué avec l'environnement)"]
 
     QFT --> Measure["Mesure (k)"]
     Measure --> Classical["Post-traitement classique par développement en fractions continues (dérivation de r)"]
@@ -2250,7 +2250,7 @@ Présentons à présent le circuit quantique (en syntaxe Mermaid) représentant 
 
 ```mermaid
 graph LR
-    subgraph "Itération de Grover (Opérateur G)"
+    subgraph sg_9 ["Itération de Grover (Opérateur G)"]
         direction LR
         A["État d'entrée |ψ_t⟩"] --> B["Oracle U_w"]
         B --> C["H^⊗n (Changement de base)"]
@@ -2494,7 +2494,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Encodage de qubit logique (conceptuel du code de Shor)"
+    subgraph sg_10 ["Encodage de qubit logique (conceptuel du code de Shor)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Encodage de basculement de phase (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Bloc 1"]:::qubit
         PhaseEncoding --> Branch2["Bloc 2"]:::qubit
@@ -2695,7 +2695,7 @@ Les opérations logiques s'effectuent en guidant ces modes de Majorana les uns a
 
 ```mermaid
 graph TD
-    subgraph Tressage topologique
+    subgraph sg_unq_11 ["Tressage topologique"]
     A["Axe du temps t"] -->|Ligne d'univers de l'anyon 1| B["Opération d'échange (tresse)"]
     C["Ligne d'univers de l'anyon 2"] -->|Tresse| B
     B --> D["Rotation unitaire U du vecteur d'état"]

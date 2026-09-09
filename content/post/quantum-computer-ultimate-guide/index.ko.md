@@ -124,17 +124,17 @@ graph TD
 
     Start["초기 상태 |0⟩"]:::quantum
 
-    subgraph "양자 상태의 중첩 생성"
+    subgraph sg_1 ["양자 상태의 중첩 생성"]
         H1["아다마르 게이트 (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "유니터리 연산 (오라클 등에 의한 위상 조작)"
+    subgraph sg_2 ["유니터리 연산 (오라클 등에 의한 위상 조작)"]
         U_op["위상 시프트 / 유니터리 진화 (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "양자 간섭 프로세스 (알고리즘의 핵심)"
+    subgraph sg_3 ["양자 간섭 프로세스 (알고리즘의 핵심)"]
         H2["아다마르 게이트 (H)"]:::quantum
         Interference["진폭의 상쇄와 증폭<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph "Bloch Sphere Visualization"
+    subgraph sg_4 ["Bloch Sphere Visualization"]
     direction LR
     Z_pos["|0⟩ (북극: θ=0)"] --- Center["중심 (원점: 혼합 상태)"]
     Center --- Z_neg["|1⟩ (남극: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["물리량 $A$ 의 관측 (사영 연산자 $P_k$)"]:::measure
     
-    Obs -->|확률 $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["수축 상태 1: $| a_1 \rangle$"]:::state
-    Obs -->|확률 $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["수축 상태 2: $| a_2 \rangle$"]:::state
+    Obs -->|"확률 $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["수축 상태 1: $| a_1 \rangle$"]:::state
+    Obs -->|"확률 $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["수축 상태 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["수축 상태 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["결어긋남(위상 간섭의 상실)과 혼합 상태화"]:::measure
@@ -839,7 +839,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "단일 양자 비트 회로의 예"
+    subgraph sg_5 ["단일 양자 비트 회로의 예"]
     direction LR
     Q0["|0⟩"] --> G1["H 게이트"]
     G1 --> G2["S 게이트"]
@@ -1443,7 +1443,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Alice의 시스템"
+    subgraph sg_6 ["Alice의 시스템"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (EPR 절반)"] --> T1["⊕ (Target)"]
     
@@ -1452,7 +1452,7 @@ graph LR
     H1 --> M2["측정 (M_C)"]
     end
     
-    subgraph "EPR 생성"
+    subgraph sg_7 ["EPR 생성"]
     epr0["|0⟩"] --> eprH["H 게이트"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1460,7 +1460,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Bob의 시스템"
+    subgraph sg_8 ["Bob의 시스템"]
     qB["|0⟩ (EPR 절반)"] --> gateX["X 게이트 (if M_A=1)"]
     gateX --> gateZ["Z 게이트 (if M_C=1)"]
     gateZ --> out["|ψ⟩ (복원)"]
@@ -1962,8 +1962,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|상태 |x⟩| QFT["QFT† (역양자 푸리에 변환)"]
-    Uf -->|상태 |a^x mod N⟩| Discard["관측하지 않음 (환경과 얽힘)"]
+    Uf -->|"상태 |x⟩"| QFT["QFT† (역양자 푸리에 변환)"]
+    Uf -->|"상태 |a^x mod N⟩"| Discard["관측하지 않음 (환경과 얽힘)"]
 
     QFT --> Measure["측정 (k)"]
     Measure --> Classical["연분수 전개를 통한 고전적 후처리 (r의 도출)"]
@@ -2252,7 +2252,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Grover Iteration (Operator G)"
+    subgraph sg_9 ["Grover Iteration (Operator G)"]
         direction LR
         A["입력 상태 |ψ_t⟩"] --> B["오라클 U_w"]
         B --> C["H^⊗n (기저 변환)"]
@@ -2496,7 +2496,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logical Qubit Encoding (Shor Code Conceptual)"
+    subgraph sg_10 ["Logical Qubit Encoding (Shor Code Conceptual)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phase Flip Encoding (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2697,7 +2697,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph 위상 브레이딩
+    subgraph sg_unq_11 ["위상 브레이딩"]
     A["시간축 t"] -->|애니온 1의 세계선| B["교환 조작(브레이드)"]
     C["애니온 2의 세계선"] -->|브레이드| B
     B --> D["상태 벡터가 유니터리 회전 U"]

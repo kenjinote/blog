@@ -124,17 +124,17 @@ graph TD
 
     Start["Keadaan Awal |0⟩"]:::quantum
 
-    subgraph "Pembuatan Superposisi Keadaan Kuantum"
+    subgraph sg_1 ["Pembuatan Superposisi Keadaan Kuantum"]
         H1["Gerbang Hadamard (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "Operasi Uniter (Operasi fase melalui Oracle, dll.)"
+    subgraph sg_2 ["Operasi Uniter (Operasi fase melalui Oracle, dll.)"]
         U_op["Pergeseran Fase / Evolusi Uniter (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "Proses Interferensi Kuantum (Inti dari Algoritma)"
+    subgraph sg_3 ["Proses Interferensi Kuantum (Inti dari Algoritma)"]
         H2["Gerbang Hadamard (H)"]:::quantum
         Interference["Penghapusan dan Penguatan Amplitudo<br>(Konstruktif / Destruktif)"]:::quantum
     end
@@ -297,7 +297,7 @@ Sudut $\theta$ berkorespondensi tepat dengan sudut polar (Polar angle) dari arah
 
 ```mermaid
 graph TD
-    subgraph "Visualisasi Bola Bloch"
+    subgraph sg_4 ["Visualisasi Bola Bloch"]
     direction LR
     Z_pos["|0⟩ (Kutub Utara: θ=0)"] --- Center["Pusat (Titik Asal: Keadaan Campuran)"]
     Center --- Z_neg["|1⟩ (Kutub Selatan: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["Pengukuran Observabel $A$ (Operator Proyeksi $P_k$)"]:::measure
     
-    Obs -->|Probabilitas $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["Keadaan Runtuh 1: $| a_1 \rangle$"]:::state
-    Obs -->|Probabilitas $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["Keadaan Runtuh 2: $| a_2 \rangle$"]:::state
+    Obs -->|"Probabilitas $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Keadaan Runtuh 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Probabilitas $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Keadaan Runtuh 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["Keadaan Runtuh n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Dekoherensi (Hilangnya Interferensi Fase) dan Transisi ke Keadaan Campuran"]:::measure
@@ -839,7 +839,7 @@ Rangkaian kuantum adalah susunan gerbang-gerbang tersebut yang disusun secara be
 
 ```mermaid
 graph LR
-    subgraph "Contoh Rangkaian Qubit Tunggal"
+    subgraph sg_5 ["Contoh Rangkaian Qubit Tunggal"]
     direction LR
     Q0["|0⟩"] --> G1["Gerbang H"]
     G1 --> G2["Gerbang S"]
@@ -1443,7 +1443,7 @@ Jika proses di atas direpresentasikan sebagai sirkuit kuantum, maka akan terliha
 
 ```mermaid
 graph LR
-    subgraph "Sistem Alice"
+    subgraph sg_6 ["Sistem Alice"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (Setengah EPR)"] --> T1["⊕ (Target)"]
     
@@ -1452,7 +1452,7 @@ graph LR
     H1 --> M2["Pengukuran (M_C)"]
     end
     
-    subgraph "Pembuatan EPR"
+    subgraph sg_7 ["Pembuatan EPR"]
     epr0["|0⟩"] --> eprH["Gerbang H"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1460,7 +1460,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Sistem Bob"
+    subgraph sg_8 ["Sistem Bob"]
     qB["|0⟩ (Setengah EPR)"] --> gateX["Gerbang X (jika M_A=1)"]
     gateX --> gateZ["Gerbang Z (jika M_C=1)"]
     gateZ --> out["|ψ⟩ (Pemulihan)"]
@@ -1962,8 +1962,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|Keadaan |x⟩| QFT["QFT† (Invers Transformasi Fourier Kuantum)"]
-    Uf -->|Keadaan |a^x mod N⟩| Discard["Tidak diukur (Terbelit dengan lingkungan)"]
+    Uf -->|"Keadaan |x⟩"| QFT["QFT† (Invers Transformasi Fourier Kuantum)"]
+    Uf -->|"Keadaan |a^x mod N⟩"| Discard["Tidak diukur (Terbelit dengan lingkungan)"]
 
     QFT --> Measure["Pengukuran (k)"]
     Measure --> Classical["Pemrosesan klasik melalui ekspansi pecahan berlanjut (Derivasi r)"]
@@ -2252,7 +2252,7 @@ Di sini, kami menampilkan diagram sirkuit kuantum (notasi Mermaid) yang mewakili
 
 ```mermaid
 graph LR
-    subgraph "Grover Iteration (Operator G)"
+    subgraph sg_9 ["Grover Iteration (Operator G)"]
         direction LR
         A["Keadaan input |ψ_t⟩"] --> B["Oracle U_w"]
         B --> C["H^⊗n (Transformasi basis)"]
@@ -2496,7 +2496,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logical Qubit Encoding (Shor Code Conceptual)"
+    subgraph sg_10 ["Logical Qubit Encoding (Shor Code Conceptual)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phase Flip Encoding (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2697,7 +2697,7 @@ Gerbang logika kuantum dalam sistem ini dieksekusi melalui "penjalinan (Braiding
 
 ```mermaid
 graph TD
-    subgraph Penjalinan Topologis
+    subgraph sg_unq_11 ["Penjalinan Topologis"]
     A["Sumbu waktu t"] -->|Garis dunia anyon 1| B["Operasi pertukaran (jalinan/braid)"]
     C["Garis dunia anyon 2"] -->|Jalinan| B
     B --> D["Vektor keadaan berotasi secara uniter U"]

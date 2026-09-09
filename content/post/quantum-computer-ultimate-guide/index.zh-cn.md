@@ -124,17 +124,17 @@ graph TD
 
     Start["初始状态 |0⟩"]:::quantum
 
-    subgraph "量子态叠加生成"
+    subgraph sg_1 ["量子态叠加生成"]
         H1["阿达马门 (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "酉运算（预言机等引起的相位操作）"
+    subgraph sg_2 ["酉运算（预言机等引起的相位操作）"]
         U_op["相移 / 酉演化 (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "量子干涉过程 (算法核心)"
+    subgraph sg_3 ["量子干涉过程 (算法核心)"]
         H2["阿达马门 (H)"]:::quantum
         Interference["振幅的相消与放大<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph "Bloch Sphere Visualization"
+    subgraph sg_4 ["Bloch Sphere Visualization"]
     direction LR
     Z_pos["|0⟩ (北极: θ=0)"] --- Center["中心 (原点: 混合态)"]
     Center --- Z_neg["|1⟩ (南极: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["物理量 $A$ 的观测 (投影算子 $P_k$)"]:::measure
     
-    Obs -->|概率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["塌缩状态 1: $| a_1 \rangle$"]:::state
-    Obs -->|概率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["塌缩状态 2: $| a_2 \rangle$"]:::state
+    Obs -->|"概率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["塌缩状态 1: $| a_1 \rangle$"]:::state
+    Obs -->|"概率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["塌缩状态 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["塌缩状态 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["退相干（相位干涉丧失）与转为混合态"]:::measure
@@ -839,7 +839,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "单量子比特电路示例"
+    subgraph sg_5 ["单量子比特电路示例"]
     direction LR
     Q0["|0⟩"] --> G1["H门"]
     G1 --> G2["S门"]
@@ -1443,7 +1443,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Alice的系统"
+    subgraph sg_6 ["Alice的系统"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (EPR一半)"] --> T1["⊕ (Target)"]
     
@@ -1452,7 +1452,7 @@ graph LR
     H1 --> M2["测量 (M_C)"]
     end
     
-    subgraph "EPR生成"
+    subgraph sg_7 ["EPR生成"]
     epr0["|0⟩"] --> eprH["H门"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1460,7 +1460,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Bob的系统"
+    subgraph sg_8 ["Bob的系统"]
     qB["|0⟩ (EPR一半)"] --> gateX["X门 (if M_A=1)"]
     gateX --> gateZ["Z门 (if M_C=1)"]
     gateZ --> out["|ψ⟩ (恢复)"]
@@ -1962,8 +1962,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|状态 |x⟩| QFT["QFT† (逆量子傅里叶变换)"]
-    Uf -->|状态 |a^x mod N⟩| Discard["不进行观测 (与环境纠缠)"]
+    Uf -->|"状态 |x⟩"| QFT["QFT† (逆量子傅里叶变换)"]
+    Uf -->|"状态 |a^x mod N⟩"| Discard["不进行观测 (与环境纠缠)"]
 
     QFT --> Measure["测量 (k)"]
     Measure --> Classical["利用连分数展开进行经典后处理 (推导 r)"]
@@ -2252,7 +2252,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Grover Iteration (Operator G)"
+    subgraph sg_9 ["Grover Iteration (Operator G)"]
         direction LR
         A["输入状态 |ψ_t⟩"] --> B["预言机 U_w"]
         B --> C["H^⊗n (基底变换)"]
@@ -2496,7 +2496,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logical Qubit Encoding (Shor Code Conceptual)"
+    subgraph sg_10 ["Logical Qubit Encoding (Shor Code Conceptual)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phase Flip Encoding (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2699,7 +2699,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph 拓扑编织
+    subgraph sg_unq_11 ["拓扑编织"]
     A["时间轴 t"] -->|任意子1的世界线| B["交换操作（编织）"]
     C["任意子2的世界线"] -->|编织| B
     B --> D["态矢量发生幺正旋转 U"]

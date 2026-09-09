@@ -124,17 +124,17 @@ graph TD
 
     Start["Начальное состояние |0⟩"]:::quantum
 
-    subgraph "Генерация суперпозиции квантовых состояний"
+    subgraph sg_1 ["Генерация суперпозиции квантовых состояний"]
         H1["Вентиль Адамара (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "Унитарная операция (фазовые манипуляции через оракул и т.д.)"
+    subgraph sg_2 ["Унитарная операция (фазовые манипуляции через оракул и т.д.)"]
         U_op["Фазовый сдвиг / унитарная эволюция (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "Процесс квантовой интерференции (ядро алгоритма)"
+    subgraph sg_3 ["Процесс квантовой интерференции (ядро алгоритма)"]
         H2["Вентиль Адамара (H)"]:::quantum
         Interference["Взаимное гашение и усиление амплитуд<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph "Визуализация сферы Блоха"
+    subgraph sg_4 ["Визуализация сферы Блоха"]
     direction LR
     Z_pos["|0⟩ (Северный полюс: θ=0)"] --- Center["Центр (начало координат: смешанное состояние)"]
     Center --- Z_neg["|1⟩ (Южный полюс: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["Наблюдение физической величины $A$ (Проекционный оператор $P_k$)"]:::measure
     
-    Obs -->|Вероятность $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["Состояние коллапса 1: $| a_1 \rangle$"]:::state
-    Obs -->|Вероятность $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["Состояние коллапса 2: $| a_2 \rangle$"]:::state
+    Obs -->|"Вероятность $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Состояние коллапса 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Вероятность $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Состояние коллапса 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["Состояние коллапса n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Декогеренция (потеря фазовой когерентности) и переход в смешанное состояние"]:::measure
@@ -839,7 +839,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Пример однокубитной схемы"
+    subgraph sg_5 ["Пример однокубитной схемы"]
     direction LR
     Q0["|0⟩"] --> G1["Вентиль H"]
     G1 --> G2["Вентиль S"]
@@ -1443,7 +1443,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Система Алисы"
+    subgraph sg_6 ["Система Алисы"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (Половина ЭПР)"] --> T1["⊕ (Target)"]
     
@@ -1452,7 +1452,7 @@ graph LR
     H1 --> M2["Измерение (M_C)"]
     end
     
-    subgraph "Генерация ЭПР"
+    subgraph sg_7 ["Генерация ЭПР"]
     epr0["|0⟩"] --> eprH["Вентиль H"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1460,7 +1460,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Система Боба"
+    subgraph sg_8 ["Система Боба"]
     qB["|0⟩ (Половина ЭПР)"] --> gateX["Вентиль X (if M_A=1)"]
     gateX --> gateZ["Вентиль Z (if M_C=1)"]
     gateZ --> out["|ψ⟩ (Восстановлено)"]
@@ -1962,8 +1962,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|Состояние |x⟩| QFT["QFT† (Обратное квантовое преобразование Фурье)"]
-    Uf -->|Состояние |a^x mod N⟩| Discard["Без измерения (запутанность с окружением)"]
+    Uf -->|"Состояние |x⟩"| QFT["QFT† (Обратное квантовое преобразование Фурье)"]
+    Uf -->|"Состояние |a^x mod N⟩"| Discard["Без измерения (запутанность с окружением)"]
 
     QFT --> Measure["Измерение (k)"]
     Measure --> Classical["Классическая постобработка с помощью цепных дробей (вывод r)"]
@@ -2252,7 +2252,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Grover Iteration (Operator G)"
+    subgraph sg_9 ["Grover Iteration (Operator G)"]
         direction LR
         A["Входное состояние |ψ_t⟩"] --> B["Оракул U_w"]
         B --> C["H^⊗n (Преобразование базиса)"]
@@ -2496,7 +2496,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logical Qubit Encoding (Shor Code Conceptual)"
+    subgraph sg_10 ["Logical Qubit Encoding (Shor Code Conceptual)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phase Flip Encoding (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2697,7 +2697,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph Топологический брейдинг
+    subgraph sg_unq_11 ["Топологический брейдинг"]
     A["Ось времени t"] -->|Мировая линия эниона 1| B["Операция обмена (брейд)"]
     C["Мировая линия эниона 2"] -->|Брейд| B
     B --> D["Вектор состояния совершает унитарное вращение U"]

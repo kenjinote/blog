@@ -124,17 +124,17 @@ graph TD
 
     Start["初期状態 |0⟩"]:::quantum
 
-    subgraph "量子状態の重ね合わせ生成"
+    subgraph sg_1 ["量子状態の重ね合わせ生成"]
         H1["アダマールゲート (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "ユニタリ演算（オラクル等による位相操作）"
+    subgraph sg_2 ["ユニタリ演算（オラクル等による位相操作）"]
         U_op["位相シフト / ユニタリ進化 (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "量子干渉プロセス (アルゴリズムの核心)"
+    subgraph sg_3 ["量子干渉プロセス (アルゴリズムの核心)"]
         H2["アダマールゲート (H)"]:::quantum
         Interference["振幅の相殺と増幅<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph "Bloch Sphere Visualization"
+    subgraph sg_4 ["Bloch Sphere Visualization"]
     direction LR
     Z_pos["|0⟩ (北極: θ=0)"] --- Center["中心 (原点: 混合状態)"]
     Center --- Z_neg["|1⟩ (南極: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["物理量 $A$ の観測 (射影演算子 $P_k$)"]:::measure
     
-    Obs -->|確率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["収縮状態 1: $| a_1 \rangle$"]:::state
-    Obs -->|確率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["収縮状態 2: $| a_2 \rangle$"]:::state
+    Obs -->|"確率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["収縮状態 1: $| a_1 \rangle$"]:::state
+    Obs -->|"確率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["収縮状態 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["収縮状態 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["デコヒーレンス（位相干渉の喪失）と混合状態化"]:::measure
@@ -839,7 +839,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "単一量子ビット回路の例"
+    subgraph sg_5 ["単一量子ビット回路の例"]
     direction LR
     Q0["|0⟩"] --> G1["Hゲート"]
     G1 --> G2["Sゲート"]
@@ -1443,7 +1443,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Aliceのシステム"
+    subgraph sg_6 ["Aliceのシステム"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (EPR半分)"] --> T1["⊕ (Target)"]
     
@@ -1452,7 +1452,7 @@ graph LR
     H1 --> M2["測定 (M_C)"]
     end
     
-    subgraph "EPR生成"
+    subgraph sg_7 ["EPR生成"]
     epr0["|0⟩"] --> eprH["Hゲート"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1460,7 +1460,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Bobのシステム"
+    subgraph sg_8 ["Bobのシステム"]
     qB["|0⟩ (EPR半分)"] --> gateX["Xゲート (if M_A=1)"]
     gateX --> gateZ["Zゲート (if M_C=1)"]
     gateZ --> out["|ψ⟩ (復元)"]
@@ -1962,8 +1962,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|状態 |x⟩| QFT["QFT† (逆量子フーリエ変換)"]
-    Uf -->|状態 |a^x mod N⟩| Discard["観測せず (環境とエンタングル)"]
+    Uf -->|"状態 |x⟩"| QFT["QFT† (逆量子フーリエ変換)"]
+    Uf -->|"状態 |a^x mod N⟩"| Discard["観測せず (環境とエンタングル)"]
 
     QFT --> Measure["測定 (k)"]
     Measure --> Classical["連分数展開による古典的後処理 (r の導出)"]
@@ -2252,7 +2252,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Grover Iteration (Operator G)"
+    subgraph sg_9 ["Grover Iteration (Operator G)"]
         direction LR
         A["入力状態 |ψ_t⟩"] --> B["オラクル U_w"]
         B --> C["H^⊗n (基底変換)"]
@@ -2496,7 +2496,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logical Qubit Encoding (Shor Code Conceptual)"
+    subgraph sg_10 ["Logical Qubit Encoding (Shor Code Conceptual)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phase Flip Encoding (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2697,7 +2697,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph トポロジカル・ブレイディング
+    subgraph sg_unq_11 ["トポロジカル・ブレイディング"]
     A["時間軸 t"] -->|エニオン1の世界線| B["交換操作（ブレイド）"]
     C["エニオン2の世界線"] -->|ブレイド| B
     B --> D["状態ベクトルがユニタリ回転 U"]

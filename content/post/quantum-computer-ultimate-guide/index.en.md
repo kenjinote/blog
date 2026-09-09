@@ -124,17 +124,17 @@ graph TD
 
     Start["Initial State |0⟩"]:::quantum
 
-    subgraph "Quantum Superposition Generation"
+    subgraph sg_1 ["Quantum Superposition Generation"]
         H1["Hadamard Gate (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "Unitary Operation (Phase Manipulation via Oracle, etc.)"
+    subgraph sg_2 ["Unitary Operation (Phase Manipulation via Oracle, etc.)"]
         U_op["Phase Shift / Unitary Evolution (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "Quantum Interference Process (Core of Algorithm)"
+    subgraph sg_3 ["Quantum Interference Process (Core of Algorithm)"]
         H2["Hadamard Gate (H)"]:::quantum
         Interference["Amplitude Cancellation and Amplification<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ The angle $\theta$ corresponds exactly to the polar angle measured from the posi
 
 ```mermaid
 graph TD
-    subgraph "Bloch Sphere Visualization"
+    subgraph sg_4 ["Bloch Sphere Visualization"]
     direction LR
     Z_pos["|0⟩ (North Pole: θ=0)"] --- Center["Center (Origin: Mixed State)"]
     Center --- Z_neg["|1⟩ (South Pole: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["Observation of observable $A$ (Projection operator $P_k$)"]:::measure
     
-    Obs -->|Probability $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["Collapsed state 1: $| a_1 \rangle$"]:::state
-    Obs -->|Probability $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["Collapsed state 2: $| a_2 \rangle$"]:::state
+    Obs -->|"Probability $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Collapsed state 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Probability $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Collapsed state 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["Collapsed state n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoherence (loss of phase coherence) and mixing of states"]:::measure
@@ -839,7 +839,7 @@ Arranging these gates in chronological order forms a quantum circuit. The state 
 
 ```mermaid
 graph LR
-    subgraph "Example of a Single-Qubit Circuit"
+    subgraph sg_5 ["Example of a Single-Qubit Circuit"]
     direction LR
     Q0["|0⟩"] --> G1["H Gate"]
     G1 --> G2["S Gate"]
@@ -1443,7 +1443,7 @@ Expressing the above process as a quantum circuit yields the following:
 
 ```mermaid
 graph LR
-    subgraph "Alice's System"
+    subgraph sg_6 ["Alice's System"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (Half of EPR)"] --> T1["⊕ (Target)"]
     
@@ -1452,7 +1452,7 @@ graph LR
     H1 --> M2["Measurement (M_C)"]
     end
     
-    subgraph "EPR Generation"
+    subgraph sg_7 ["EPR Generation"]
     epr0["|0⟩"] --> eprH["H Gate"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1460,7 +1460,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Bob's System"
+    subgraph sg_8 ["Bob's System"]
     qB["|0⟩ (Half of EPR)"] --> gateX["X Gate (if M_A=1)"]
     gateX --> gateZ["Z Gate (if M_C=1)"]
     gateZ --> out["|ψ⟩ (Recovered)"]
@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|State |x⟩| QFT["QFT† (Inverse Quantum Fourier Transform)"]
-    Uf -->|State |a^x mod N⟩| Discard["Do not observe (Entangle with environment)"]
+    Uf -->|"State |x⟩"| QFT["QFT† (Inverse Quantum Fourier Transform)"]
+    Uf -->|"State |a^x mod N⟩"| Discard["Do not observe (Entangle with environment)"]
 
     QFT --> Measure["Measure (k)"]
     Measure --> Classical["Classical post-processing by continued fraction expansion (Derivation of r)"]
@@ -2253,7 +2253,7 @@ Here, we provide the quantum circuit diagram representing a single Grover iterat
 
 ```mermaid
 graph LR
-    subgraph "Grover Iteration (Operator G)"
+    subgraph sg_9 ["Grover Iteration (Operator G)"]
         direction LR
         A["Input state |ψ_t⟩"] --> B["Oracle U_w"]
         B --> C["H^⊗n (Basis Transformation)"]
@@ -2497,7 +2497,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logical Qubit Encoding (Shor Code Conceptual)"
+    subgraph sg_10 ["Logical Qubit Encoding (Shor Code Conceptual)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phase Flip Encoding (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2698,7 +2698,7 @@ Quantum logic gates in this system are executed by "braiding," which swaps the s
 
 ```mermaid
 graph TD
-    subgraph Topological Braiding
+    subgraph sg_unq_11 ["Topological Braiding"]
     A["Time axis t"] -->|Worldline of Anyon 1| B["Exchange operation (Braid)"]
     C["Worldline of Anyon 2"] -->|Braid| B
     B --> D["State vector undergoes unitary rotation U"]

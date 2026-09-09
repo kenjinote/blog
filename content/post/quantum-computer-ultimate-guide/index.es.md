@@ -124,17 +124,17 @@ graph TD
 
     Start["Estado inicial |0⟩"]:::quantum
 
-    subgraph "Generación de superposición de estados cuánticos"
+    subgraph sg_1 ["Generación de superposición de estados cuánticos"]
         H1["Compuerta de Hadamard (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "Operación unitaria (manipulación de fase mediante oráculos, etc.)"
+    subgraph sg_2 ["Operación unitaria (manipulación de fase mediante oráculos, etc.)"]
         U_op["Desplazamiento de fase / Evolución unitaria (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "Proceso de interferencia cuántica (el núcleo del algoritmo)"
+    subgraph sg_3 ["Proceso de interferencia cuántica (el núcleo del algoritmo)"]
         H2["Compuerta de Hadamard (H)"]:::quantum
         Interference["Cancelación y amplificación de amplitudes<br>(Constructiva / Destructiva)"]:::quantum
     end
@@ -297,7 +297,7 @@ El ángulo $\theta$ corresponde exactamente al ángulo polar (Polar angle) medid
 
 ```mermaid
 graph TD
-    subgraph "Visualización de la esfera de Bloch"
+    subgraph sg_4 ["Visualización de la esfera de Bloch"]
     direction LR
     Z_pos["|0⟩ (Polo norte: θ=0)"] --- Center["Centro (Origen: estado mixto)"]
     Center --- Z_neg["|1⟩ (Polo sur: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["Observación de la magnitud física $A$ (Operador de proyección $P_k$)"]:::measure
     
-    Obs -->|Probabilidad $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
-    Obs -->|Probabilidad $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
+    Obs -->|"Probabilidad $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Probabilidad $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["Estado colapsado n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoherencia (pérdida de interferencia de fase) y estado mixto"]:::measure
@@ -839,7 +839,7 @@ Un circuito cuántico es la disposición de estas puertas en orden cronológico.
 
 ```mermaid
 graph LR
-    subgraph "Ejemplo de Circuito de un Solo Qubit"
+    subgraph sg_5 ["Ejemplo de Circuito de un Solo Qubit"]
     direction LR
     Q0["|0⟩"] --> G1["Puerta H"]
     G1 --> G2["Puerta S"]
@@ -1443,7 +1443,7 @@ El proceso anterior se puede representar como un circuito cuántico de la siguie
 
 ```mermaid
 graph LR
-    subgraph "Sistema de Alice"
+    subgraph sg_6 ["Sistema de Alice"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (Mitad de EPR)"] --> T1["⊕ (Target)"]
     
@@ -1452,7 +1452,7 @@ graph LR
     H1 --> M2["Medición (M_C)"]
     end
     
-    subgraph "Generación de EPR"
+    subgraph sg_7 ["Generación de EPR"]
     epr0["|0⟩"] --> eprH["Puerta H"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1460,7 +1460,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Sistema de Bob"
+    subgraph sg_8 ["Sistema de Bob"]
     qB["|0⟩ (Mitad de EPR)"] --> gateX["Puerta X (si M_A=1)"]
     gateX --> gateZ["Puerta Z (si M_C=1)"]
     gateZ --> out["|ψ⟩ (Reconstruido)"]
@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|Estado |x⟩| QFT["QFT† (Transformada cuántica de Fourier inversa)"]
-    Uf -->|Estado |a^x mod N⟩| Discard["Sin medición (entrelazado con el entorno)"]
+    Uf -->|"Estado |x⟩"| QFT["QFT† (Transformada cuántica de Fourier inversa)"]
+    Uf -->|"Estado |a^x mod N⟩"| Discard["Sin medición (entrelazado con el entorno)"]
 
     QFT --> Measure["Medición (k)"]
     Measure --> Classical["Poscálculo clásico por fracciones continuas (deducción de r)"]
@@ -2253,7 +2253,7 @@ A continuación, mostramos un diagrama de circuito cuántico (notación Mermaid)
 
 ```mermaid
 graph LR
-    subgraph "Grover Iteration (Operator G)"
+    subgraph sg_9 ["Grover Iteration (Operator G)"]
         direction LR
         A["Estado de entrada |ψ_t⟩"] --> B["Oráculo U_w"]
         B --> C["H^⊗n (Cambio de base)"]
@@ -2497,7 +2497,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Codificación de Cúbit Lógico (Conceptual del Código de Shor)"
+    subgraph sg_10 ["Codificación de Cúbit Lógico (Conceptual del Código de Shor)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Codificación de Inversión de Fase (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Bloque 1"]:::qubit
         PhaseEncoding --> Branch2["Bloque 2"]:::qubit
@@ -2698,7 +2698,7 @@ Las puertas lógicas cuánticas en este sistema se ejecutan mediante el «trenza
 
 ```mermaid
 graph TD
-    subgraph Trenzado topológico
+    subgraph sg_unq_11 ["Trenzado topológico"]
     A["Eje temporal t"] -->|Línea de universo del anión 1| B["Operación de intercambio (trenzado)"]
     C["Línea de universo del anión 2"] -->|Trenzado| B
     B --> D["Rotación unitaria U del vector de estado"]

@@ -124,17 +124,17 @@ graph TD
 
     Start["Anfangszustand |0⟩"]:::quantum
 
-    subgraph "Erzeugung der Quantenzustands-Superposition"
+    subgraph sg_1 ["Erzeugung der Quantenzustands-Superposition"]
         H1["Hadamard-Gatter (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "Unitäre Operation (Phasenmanipulation, z. B. durch ein Orakel)"
+    subgraph sg_2 ["Unitäre Operation (Phasenmanipulation, z. B. durch ein Orakel)"]
         U_op["Phasenverschiebung / Unitäre Entwicklung (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "Quanteninterferenzprozess (Der Kern des Algorithmus)"
+    subgraph sg_3 ["Quanteninterferenzprozess (Der Kern des Algorithmus)"]
         H2["Hadamard-Gatter (H)"]:::quantum
         Interference["Auslöschung und Verstärkung von Amplituden<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ Der Winkel $\theta$ entspricht exakt dem Polarwinkel (Polar angle), gemessen von
 
 ```mermaid
 graph TD
-    subgraph "Bloch Sphere Visualization"
+    subgraph sg_4 ["Bloch Sphere Visualization"]
     direction LR
     Z_pos["|0⟩ (Nordpol: θ=0)"] --- Center["Zentrum (Ursprung: Gemischter Zustand)"]
     Center --- Z_neg["|1⟩ (Südpol: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["Messung der physikalischen Größe $A$ (Projektionsoperator $P_k$)"]:::measure
     
-    Obs -->|Wahrscheinlichkeit $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["Kollabierter Zustand 1: $| a_1 \rangle$"]:::state
-    Obs -->|Wahrscheinlichkeit $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["Kollabierter Zustand 2: $| a_2 \rangle$"]:::state
+    Obs -->|"Wahrscheinlichkeit $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Kollabierter Zustand 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Wahrscheinlichkeit $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Kollabierter Zustand 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["Kollabierter Zustand n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Dekohärenz (Verlust der Phasenkohärenz) und Übergang zum gemischten Zustand"]:::measure
@@ -839,7 +839,7 @@ Eine Quantenschaltung entsteht, wenn diese Gatter in chronologischer Reihenfolge
 
 ```mermaid
 graph LR
-    subgraph "Beispiel einer Einzel-Qubit-Schaltung"
+    subgraph sg_5 ["Beispiel einer Einzel-Qubit-Schaltung"]
     direction LR
     Q0["|0⟩"] --> G1["H-Gatter"]
     G1 --> G2["S-Gatter"]
@@ -1443,7 +1443,7 @@ Stellt man den obigen Prozess als Quantenschaltkreis dar, ergibt sich Folgendes:
 
 ```mermaid
 graph LR
-    subgraph "Alices System"
+    subgraph sg_6 ["Alices System"]
     qC["|ψ⟩"] --> C1["● (Strg)"]
     qA["|0⟩ (EPR-Hälfte)"] --> T1["⊕ (Ziel)"]
     
@@ -1452,7 +1452,7 @@ graph LR
     H1 --> M2["Messung (M_C)"]
     end
     
-    subgraph "EPR-Erzeugung"
+    subgraph sg_7 ["EPR-Erzeugung"]
     epr0["|0⟩"] --> eprH["H-Gatter"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1460,7 +1460,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Bobs System"
+    subgraph sg_8 ["Bobs System"]
     qB["|0⟩ (EPR-Hälfte)"] --> gateX["X-Gatter (falls M_A=1)"]
     gateX --> gateZ["Z-Gatter (falls M_C=1)"]
     gateZ --> out["|ψ⟩ (Wiederhergestellt)"]
@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|Zustand |x⟩| QFT["QFT† (Inverse Quanten-Fouriertransformation)"]
-    Uf -->|Zustand |a^x mod N⟩| Discard["Nicht gemessen (Mit Umgebung verschränkt)"]
+    Uf -->|"Zustand |x⟩"| QFT["QFT† (Inverse Quanten-Fouriertransformation)"]
+    Uf -->|"Zustand |a^x mod N⟩"| Discard["Nicht gemessen (Mit Umgebung verschränkt)"]
 
     QFT --> Measure["Messung (k)"]
     Measure --> Classical["Klassische Nachbearbeitung durch Kettenbruchentwicklung (Ableitung von r)"]
@@ -2253,7 +2253,7 @@ Nachfolgend visualisiert ein Quantenschaltplan (in Mermaid-Syntax) eine einzelne
 
 ```mermaid
 graph LR
-    subgraph "Grover-Iteration (Operator G)"
+    subgraph sg_9 ["Grover-Iteration (Operator G)"]
         direction LR
         A["Eingangszustand |ψ_t⟩"] --> B["Orakel U_w"]
         B --> C["H^⊗n (Basiswechsel)"]
@@ -2497,7 +2497,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logische Qubit-Codierung (Shor-Code Konzept)"
+    subgraph sg_10 ["Logische Qubit-Codierung (Shor-Code Konzept)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phasen-Flip-Codierung (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2698,7 +2698,7 @@ Quantenlogikgatter werden in diesem System durch das sogenannte „Braiding“ (
 
 ```mermaid
 graph TD
-    subgraph Topologisches Braiding
+    subgraph sg_unq_11 ["Topologisches Braiding"]
     A["Zeitachse t"] -->|Weltlinie von Anyon 1| B["Austauschoperation (Braid)"]
     C["Weltlinie von Anyon 2"] -->|Braid| B
     B --> D["Zustandsvektor erfährt unitäre Rotation U"]

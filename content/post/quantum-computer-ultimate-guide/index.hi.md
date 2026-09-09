@@ -124,17 +124,17 @@ graph TD
 
     Start["प्रारंभिक अवस्था |0⟩"]:::quantum
 
-    subgraph "क्वांटम अवस्था के अध्यारोपण का निर्माण"
+    subgraph sg_1 ["क्वांटम अवस्था के अध्यारोपण का निर्माण"]
         H1["हैडामर्ड गेट (H)"]:::quantum
         SuperPos["1/√2 (|0⟩ + |1⟩)"]:::quantum
     end
 
-    subgraph "एकात्मक संक्रिया (ऑरेकल आदि द्वारा कला हेरफेर)"
+    subgraph sg_2 ["एकात्मक संक्रिया (ऑरेकल आदि द्वारा कला हेरफेर)"]
         U_op["कला बदलाव / एकात्मक विकास (U)"]:::quantum
         PhaseState["1/√2 (|0⟩ - e^{iθ} |1⟩)"]:::quantum
     end
 
-    subgraph "क्वांटम व्यतिकरण प्रक्रिया (एल्गोरिदम का मूल)"
+    subgraph sg_3 ["क्वांटम व्यतिकरण प्रक्रिया (एल्गोरिदम का मूल)"]
         H2["हैडामर्ड गेट (H)"]:::quantum
         Interference["आयामों का निरस्तीकरण और प्रवर्धन<br>(Constructive / Destructive)"]:::quantum
     end
@@ -297,7 +297,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph "ब्लोच गोले का दृश्यांकन (Bloch Sphere Visualization)"
+    subgraph sg_4 ["ब्लोच गोले का दृश्यांकन (Bloch Sphere Visualization)"]
     direction LR
     Z_pos["|0⟩ (उत्तरी ध्रुव: θ=0)"] --- Center["केंद्र (मूल बिंदु: मिश्रित अवस्था)"]
     Center --- Z_neg["|1⟩ (दक्षिणी ध्रुव: θ=π)"]
@@ -586,8 +586,8 @@ graph TD
     
     Evolved --> Obs["भौतिक राशि $A$ का प्रेक्षण (प्रक्षेप ऑपरेटर $P_k$)"]:::measure
     
-    Obs -->|प्रायिकता $p(a_1) = \langle \psi | P_1 | \psi \rangle$| State1["संकुचित अवस्था 1: $| a_1 \rangle$"]:::state
-    Obs -->|प्रायिकता $p(a_2) = \langle \psi | P_2 | \psi \rangle$| State2["संकुचित अवस्था 2: $| a_2 \rangle$"]:::state
+    Obs -->|"प्रायिकता $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["संकुचित अवस्था 1: $| a_1 \rangle$"]:::state
+    Obs -->|"प्रायिकता $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["संकुचित अवस्था 2: $| a_2 \rangle$"]:::state
     Obs -->|...| StateN["संकुचित अवस्था n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["डिकोहेरेंस (कला सुसंगतता की हानि) और मिश्रित अवस्था में संक्रमण"]:::measure
@@ -839,7 +839,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "एकल-क्यूबिट परिपथ का उदाहरण"
+    subgraph sg_5 ["एकल-क्यूबिट परिपथ का उदाहरण"]
     direction LR
     Q0["|0⟩"] --> G1["H गेट"]
     G1 --> G2["S गेट"]
@@ -1444,7 +1444,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Alice का सिस्टम"
+    subgraph sg_6 ["Alice का सिस्टम"]
     qC["|ψ⟩"] --> C1["● (Ctrl)"]
     qA["|0⟩ (EPR आधा)"] --> T1["⊕ (Target)"]
     
@@ -1453,7 +1453,7 @@ graph LR
     H1 --> M2["माप (M_C)"]
     end
     
-    subgraph "EPR जनरेशन"
+    subgraph sg_7 ["EPR जनरेशन"]
     epr0["|0⟩"] --> eprH["H गेट"]
     epr1["|0⟩"] --> eprT["⊕"]
     eprH --> eprC["●"]
@@ -1461,7 +1461,7 @@ graph LR
     eprT --> qB
     end
     
-    subgraph "Bob का सिस्टम"
+    subgraph sg_8 ["Bob का सिस्टम"]
     qB["|0⟩ (EPR आधा)"] --> gateX["X गेट (if M_A=1)"]
     gateX --> gateZ["Z गेट (if M_C=1)"]
     gateZ --> out["|ψ⟩ (पुनर्प्राप्ति)"]
@@ -1964,8 +1964,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|अवस्था |x⟩| QFT["QFT† (व्युत्क्रम क्वांटम फूरियर रूपांतरण)"]
-    Uf -->|अवस्था |a^x mod N⟩| Discard["मापन नहीं किया गया (पर्यावरण के साथ उलझा हुआ)"]
+    Uf -->|"अवस्था |x⟩"| QFT["QFT† (व्युत्क्रम क्वांटम फूरियर रूपांतरण)"]
+    Uf -->|"अवस्था |a^x mod N⟩"| Discard["मापन नहीं किया गया (पर्यावरण के साथ उलझा हुआ)"]
 
     QFT --> Measure["मापन (k)"]
     Measure --> Classical["सतत भिन्न विस्तार द्वारा क्लासिकल पश्च-प्रसंस्करण (r का निर्धारण)"]
@@ -2254,7 +2254,7 @@ $$
 
 ```mermaid
 graph LR
-    subgraph "Grover Iteration (Operator G)"
+    subgraph sg_9 ["Grover Iteration (Operator G)"]
         direction LR
         A["इनपुट अवस्था |ψ_t⟩"] --> B["ओरेकल U_w"]
         B --> C["H^⊗n (आधार परिवर्तन)"]
@@ -2498,7 +2498,7 @@ graph TD
     classDef gate fill:#2980b9,stroke:#2c3e50,stroke-width:2px,color:#fff;
     classDef measure fill:#c0392b,stroke:#c0392b,stroke-width:2px,color:#fff;
     
-    subgraph "Logical Qubit Encoding (Shor Code Conceptual)"
+    subgraph sg_10 ["Logical Qubit Encoding (Shor Code Conceptual)"]
         Input["|psi>"]:::qubit --> PhaseEncoding["Phase Flip Encoding (H, CNOTs)"]:::gate
         PhaseEncoding --> Branch1["Block 1"]:::qubit
         PhaseEncoding --> Branch2["Block 2"]:::qubit
@@ -2699,7 +2699,7 @@ $$
 
 ```mermaid
 graph TD
-    subgraph टोपोलॉजिकल ब्रेडिंग
+    subgraph sg_unq_11 ["टोपोलॉजिकल ब्रेडिंग"]
     A["समय अक्ष t"] -->|एनियन 1 की विश्व-रेखा| B["विनिमय संक्रिया (ब्रेड)"]
     C["एनियन 2 की विश्व-रेखा"] -->|ब्रेड| B
     B --> D["अवस्था सदिश का एकात्मक घूर्णन U"]
