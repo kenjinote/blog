@@ -9,6 +9,7 @@ mermaid: true
 image: "cover.webp"
 ---
 
+
 # 第1章: 量子コンピュータの幕開けと限界
 
 ## 1.1 古典計算の物理的限界とムーアの法則の終焉
@@ -18,9 +19,7 @@ image: "cover.webp"
 トランジスタのゲート絶縁膜やチャネル長が数ナノメートルスケール、すなわち原子数個から数十個分の厚さにまで薄くなると、電子は古典力学的に越えられないはずのエネルギー障壁を、波動関数の染み出しによって確率的にすり抜けてしまう。ポテンシャル障壁 $V_0$ 、幅 $a$ の領域に入射する質量 $m$ の電子（エネルギー $E < V_0$ ）の透過確率 $T$ は、WKB近似によれば次式で与えられる。
 
 $$
-
 T \approx \exp \left( - \frac{2}{\hbar} \int_{0}^{a} \sqrt{2m(V_0 - E)} \, dx \right)
-
 $$
 
 ここで $\hbar$ は換算プランク定数である。微細化によって障壁の幅 $a$ が減少すると、透過確率 $T$ は指数関数的に増大し、結果としてオフ状態でも電流が流れる「漏れ電流（リーク電流）」が無視できない規模となる。これは消費電力の増大と発熱を招き、古典的な決定論的スイッチング素子としての機能の破綻を意味する。
@@ -28,9 +27,7 @@ $$
 さらに、情報処理の熱力学的限界も無視できない。1961年にロルフ・ランダウアーは、情報を消去する（不可逆な論理演算を行う）過程で必然的に熱が発生することを示した（ランダウアーの原理）。1ビットの情報を消去する際に環境へ放出される最小の熱量 $\Delta Q$ は、次のように表される。
 
 $$
-
 \Delta Q \ge k_B T \ln 2
-
 $$
 
 ここで $k_B$ はボルツマン定数、 $T$ は絶対温度である。古典計算機が論理ゲート（例えばANDゲートやORゲートなどの非可逆ゲート）を駆動する限り、この熱力学的下限を回避することはできない。微細化が進み、一つの素子が扱うエネルギーがこの限界に近づくにつれ、古典計算機の進化は根本的な物理法則によって頭打ちとなるのである。
@@ -44,17 +41,13 @@ $$
 この発言の背景には、量子系の状態を記述する「ヒルベルト空間（Hilbert Space）」の次元が、粒子数に対して指数関数的に爆発するという事実がある。スピン $1/2$ の粒子（すなわち、2つの量子状態を持つ系）を $N$ 個集めた系を考えてみよう。1つの粒子の状態は2次元の複素ベクトル空間 $\mathbb{C}^2$ で記述される。したがって、 $N$ 個の粒子からなる合成系の状態空間 $\mathcal{H}$ は、各部分系の状態空間のテンソル積として構成される。
 
 $$
-
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
-
 $$
 
 この系の純粋状態（Pure State） $|\Psi\rangle$ は、 $2^N$ 個の基底ベクトルの線形結合（重ね合わせ）として表現される。ここで、ディラックのブラケット記法（Bra-ket notation）を用いると、任意の量子状態は以下のように展開できる。
 
 $$
-
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
-
 $$
 
 ここで、$|x\rangle$ は計算基底（Computational Basis）であり、$c_x \in \mathbb{C}$ は確率振幅（Probability Amplitude）と呼ばれる複素数である。状態ベクトルは規格化条件 $\sum_{x=0}^{2^N-1} |c_x|^2 = 1$ を満たさなければならない。
@@ -70,25 +63,19 @@ $$
 量子計算の基本単位となるのが「量子ビット（Qubit）」である。古典ビットが $0$ または $1$ の確定した状態しかとれないのに対し、量子ビットは $|0\rangle$ と $|1\rangle$ の任意の線形重ね合わせ状態をとることができる。
 
 $$
-
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle \quad (\alpha, \beta \in \mathbb{C}, \ |\alpha|^2 + |\beta|^2 = 1)
-
 $$
 
 この量子ビットに対して行われる演算は、線形かつノルムを保存する演算、すなわちユニタリ行列（ $U^\dagger U = I$ を満たす行列、ここで $U^\dagger$ は随伴行列、 $I$ は単位行列）によって表現される。例えば、単一量子ビットに対する代表的なゲートであるアダマールゲート（Hadamard Gate） $H$ は次のように定義される。
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
-
 $$
 
 基底状態 $|0\rangle$ に対してアダマール演算を適用すると、以下のようになる。
 
 $$
-
 H |0\rangle = \frac{1}{\sqrt{2}} \left( |0\rangle + |1\rangle \right)
-
 $$
 
 これにより、系は $|0\rangle$ と $|1\rangle$ が等確率で観測される完全な重ね合わせ状態へと移行する。ドイチュの功績は、このような量子力学の基本原理を計算モデルとして昇華させ、万能量子コンピュータ（Universal Quantum Computer）が原理的に構築可能であることを数学的に証明した点にある。
@@ -100,17 +87,13 @@ $$
 確かに、 $N$ 量子ビットの系に対してアダマールゲートを並列に適用することで、 $2^N$ 個のすべての状態の重ね合わせを一度の操作で作り出すことはできる。
 
 $$
-
 H^{\otimes N} |0\rangle^{\otimes N} = \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle
-
 $$
 
 そして、ある関数 $f(x)$ を評価するユニタリ演算子 $U_f$ を適用すると、状態は次のように変化する。
 
 $$
-
 U_f \left( \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle |0\rangle \right) = \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle |f(x)\rangle
-
 $$
 
 ここで確かに、一度の操作で $2^N$ 個すべての $x$ に対する $f(x)$ の値が「計算」されているように見える。しかし、量子力学の要請である「観測の公理（ボルンの規則、Born Rule）」が立ちはだかる。この重ね合わせ状態を測定（観測）したとき、我々が得られる結果はただ一つであり、状態は確率 $P(x) = 1/2^N$ でランダムな $|x\rangle |f(x)\rangle$ に波束の収縮（Wavefunction Collapse）を起こしてしまう。つまり、すべての答えを同時に計算しても、測定によって取り出せるのは「ランダムな一つ」に過ぎず、これでは単にランダムにサイコロを振って計算するのとなんら変わらない。
@@ -122,9 +105,7 @@ $$
 簡単な例として、位相の反転とアダマール変換による干渉を見てみよう。状態 $\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ に対して再びアダマールゲートを適用するとどうなるか。
 
 $$
-
 H \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) = \frac{1}{2} \big( (|0\rangle + |1\rangle) - (|0\rangle - |1\rangle) \big) = \frac{1}{2} (2|1\rangle) = |1\rangle
-
 $$
 
 ここでは、 $|0\rangle$ 状態へ向かう確率振幅が $1/2 - 1/2 = 0$ となり、完全に相殺（破壊的干渉）されている。一方で $|1\rangle$ 状態への振幅は $1/2 + 1/2 = 1$ と増幅（建設的干渉）されている。
@@ -182,17 +163,13 @@ graph TD
 これをより形式的なベクトル空間の言葉で表現してみましょう。古典ビットの状態は、2次元の実ベクトル空間 $\mathbb{R}^2$ における標準基底を用いて表現することができます。状態 $0$ および状態 $1$ をそれぞれ以下のような列ベクトルとして定義します。
 
 $$
-
 \mathbf{v}_0 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad \mathbf{v}_1 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 確定的（Deterministic）な古典系では、ビットの状態は必ず $\mathbf{v}_0$ か $\mathbf{v}_1$ のどちらか一つに定まります。しかし、熱雑音などのノイズや、我々の知識の不確実性が存在する場合、古典確率的（Probabilistic）ビットとして状態を記述する必要があります。この場合、ビットの状態は確率分布として表現され、状態ベクトル $\mathbf{p}$ は基底ベクトルの凸結合（Convex combination）として次のように書けます。
 
 $$
-
 \mathbf{p} = p_0 \mathbf{v}_0 + p_1 \mathbf{v}_1 = \begin{pmatrix} p_0 \\ p_1 \end{pmatrix}
-
 $$
 
 ここで、$p_0, p_1$ はそれぞれ状態が $0$ および $1$ である確率を表す実数であり、コルモゴロフの確率の公理から以下の条件を満たす必要があります。
@@ -203,9 +180,7 @@ $$
 古典ビットの世界において、複数のビットを組み合わせた合成系は、それぞれの確率ベクトルのテンソル積（クロネッカー積）によって記述されます。例えば2つの古典ビットの同時確率は以下のようになります。
 
 $$
-
 \mathbf{p}_{AB} = \mathbf{p}_A \otimes \mathbf{p}_B = \begin{pmatrix} p_{A0} \\ p_{A1} \end{pmatrix} \otimes \begin{pmatrix} p_{B0} \\ p_{B1} \end{pmatrix} = \begin{pmatrix} p_{A0}p_{B0} \\ p_{A0}p_{B1} \\ p_{A1}p_{B0} \\ p_{A1}p_{B1} \end{pmatrix}
-
 $$
 
 古典情報理論の枠組みは非常に強力であり、現代のデジタル社会の基盤を成していますが、あくまで実数確率の足し合わせによって状態が構成されるため、波の干渉のような「確率の打ち消し合い」を表現することは原理的に不可能です。ここに、古典物理学の限界と、量子情報への飛躍の必要性が生じます。
@@ -219,33 +194,25 @@ $$
 量子状態を表す列ベクトルを **ケットベクトル（Ket vector）** と呼び、$|\psi\rangle$ のように表記します。古典ビットの $0$ と $1$ に対応する状態として、計算基底（Computational basis）と呼ばれる正規直交基底を導入しましょう。これらは、量子ビットの $Z$ 基底とも呼ばれ、それぞれ $|0\rangle$ および $|1\rangle$ と定義されます。
 
 $$
-
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 一方、リースの表現定理（Riesz representation theorem）により、ヒルベルト空間の任意のケットベクトルには、連続線形汎関数として機能する双対空間（Dual space）の元が一意に対応します。これを **ブラベクトル（Bra vector）** と呼び、 $\langle\psi|$ と表記します。行列表示においては、ケットベクトルのエルミート共役（複素共役転置、$^\dagger$ で表す）をとることで対応するブラベクトルが得られます。
 
 $$
-
 \langle\psi| = (|\psi\rangle)^\dagger = (|\psi\rangle^*)^T
-
 $$
 
 例えば、基底のブラベクトルは以下の行ベクトルとなります。
 
 $$
-
 \langle 0| = \begin{pmatrix} 1 & 0 \end{pmatrix}, \quad \langle 1| = \begin{pmatrix} 0 & 1 \end{pmatrix}
-
 $$
 
 ブラケット記法の真価は、内積の計算が視覚的に極めて明快になる点にあります。ブラ $\langle\phi|$ とケット $|\psi\rangle$ の内積は $\langle\phi|\psi\rangle$ と書かれます（これはBraとKetが合わさってBracketを形成するというディラックの言葉遊びに由来します）。計算基底 $\{|0\rangle, |1\rangle\}$ は正規直交系（Orthonormal system）をなすため、クロネッカーのデルタ $\delta_{ij}$ を用いて以下のように表されます。
 
 $$
-
 \langle i | j \rangle = \delta_{ij} \quad (i, j \in \{0, 1\})
-
 $$
 
 具体的には、自己との内積は $1$（$\langle 0|0\rangle = 1$, $\langle 1|1\rangle = 1$）、異なる基底間の内積は $0$（$\langle 0|1\rangle = 0$, $\langle 1|0\rangle = 0$）となります。
@@ -253,17 +220,13 @@ $$
 さらに、ブラとケットのテンソル積（外積に相当）は $|\psi\rangle\langle\phi|$ と記述され、これは空間から空間への線形演算子（行列）を表します。例えば、ある状態空間への射影演算子（Projection operator）は以下のように構成されます。
 
 $$
-
 |0\rangle\langle 0| = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \begin{pmatrix} 1 & 0 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
-
 $$
 
 任意の2次元複素ベクトル空間の恒等演算子 $I$ （Identity operator）は、基底の完全性関係（Completeness relation）として以下のように分解して表現することができ、これは量子力学の計算において極めて頻繁に用いられる強力な道具となります。
 
 $$
-
 I = |0\rangle\langle 0| + |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
-
 $$
 
 ## 2.3 量子重ね合わせの原理と複素確率振幅
@@ -273,9 +236,7 @@ $$
 したがって、単一の量子ビットの最も一般的な純粋状態（Pure state） $|\psi\rangle$ は、計算基底を用いて次のように展開されます。
 
 $$
-
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
-
 $$
 
 ここで、 $\alpha$ および $\beta$ は **複素確率振幅（Complex probability amplitude）** と呼ばれる複素数（$\alpha, \beta \in \mathbb{C}$）です。古典確率が非負の実数であったことと対照的に、量子状態は「複素数」の係数を持つことが、量子コンピュータが古典コンピュータを凌駕する計算能力を持つ根源的な理由です。複素数は位相（Phase）を持ち、複素平面上のあらゆる方向を向くことができるため、波のように互いに強め合ったり（構成的干渉）、打ち消し合ったり（破壊的干渉）することが可能です。量子アルゴリズムの本質は、この干渉効果を巧みに操り、正解の確率振幅を増幅し、不正解の確率振幅を相殺することにあります。
@@ -283,54 +244,41 @@ $$
 量子系から古典情報を抽出するプロセスが「測定（Measurement）」です。射影測定（Projective measurement）を考えたとき、ボルンの規則（Born rule）によれば、状態 $|\psi\rangle$ を計算基底 $\{|0\rangle, |1\rangle\}$ で測定した結果として $0$ が得られる確率 $P(0)$ と $1$ が得られる確率 $P(1)$ は、それぞれの確率振幅の絶対値の2乗で与えられます。
 
 $$
-
 P(0) = |\langle 0|\psi\rangle|^2 = |\alpha|^2 = \alpha \alpha^*
-
-$$
 $$
 
+$$
 P(1) = |\langle 1|\psi\rangle|^2 = |\beta|^2 = \beta \beta^*
-
 $$
 
 系が必ず何らかの状態として観測されるためには、全確率の総和が厳密に $1$ にならなければなりません。したがって、量子状態ベクトル $|\psi\rangle$ のノルム（長さ）は常に $1$ でなければなりません。これが **規格化条件（Normalization condition）** です。
 
 $$
-
 \langle\psi|\psi\rangle = (\alpha^* \langle 0| + \beta^* \langle 1|)(\alpha |0\rangle + \beta |1\rangle) = |\alpha|^2 + |\beta|^2 = 1
-
 $$
 
 この複素確率振幅の幾何学的意味をより深く探るために、 $\alpha$ と $\beta$ を極座標表示で表してみましょう。
 
 $$
-
 \alpha = r_0 e^{i\phi_0}, \quad \beta = r_1 e^{i\phi_1}
-
 $$
 
 ここで $r_0, r_1 \ge 0$ は振幅の大きさであり、 $\phi_0, \phi_1 \in [0, 2\pi)$ はそれぞれの位相角です。規格化条件から $r_0^2 + r_1^2 = 1$ となるため、実数パラメータ $\theta \in [0, \pi]$ を用いて $r_0 = \cos(\frac{\theta}{2})$、$r_1 = \sin(\frac{\theta}{2})$ と置くことができます。これを元の状態ベクトルに代入すると、
 
 $$
-
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) e^{i\phi_0} |0\rangle + \sin\left(\frac{\theta}{2}\right) e^{i\phi_1} |1\rangle
-
 $$
 
 全体を共通の位相因子 $e^{i\phi_0}$ で括り出してみましょう。
 
 $$
-
 |\psi\rangle = e^{i\phi_0} \left( \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i(\phi_1 - \phi_0)} \sin\left(\frac{\theta}{2}\right) |1\rangle \right)
-
 $$
 
 量子力学において、状態ベクトル全体にかかる位相因子 $e^{i\phi_0}$ は「グローバル位相（Global phase）」と呼ばれます。任意の観測量（エルミート演算子） $A$ に対する期待値 $\langle A \rangle$ を計算してみるとわかりますが、
 
 $$
-
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
-
 $$
 
 このようにグローバル位相は互いに相殺されるため、いかなる物理的測定によっても観測することは不可能です。すなわち、$|\psi\rangle$ と $e^{i\phi_0}|\psi\rangle$ はヒルベルト空間上では異なるベクトル（射線としては同一）ですが、物理的には全く同一の状態を表します。
@@ -338,9 +286,7 @@ $$
 したがってグローバル位相を無視し、 $|0\rangle$ と $|1\rangle$ の間の相対位相（Relative phase） $\varphi = \phi_1 - \phi_0$ （ここで $\varphi \in [0, 2\pi)$）のみをパラメータとして残すことで、任意の単一量子ビットの純粋状態は以下の **標準形** として一意かつ厳密に表現されます。
 
 $$
-
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\varphi} \sin\left(\frac{\theta}{2}\right) |1\rangle
-
 $$
 
 ## 2.4 ブロッホ球（Bloch Sphere）による幾何学的可視化
@@ -371,45 +317,35 @@ graph TD
 このブロッホ球の座標 $\mathbf{r} = (x, y, z)$ は、量子力学における観測量（Observable）である **パウリ行列（Pauli matrices）** の期待値として厳密に導出されます。2次元系のエルミート演算子の基底となるパウリ行列は以下のように定義されます。
 
 $$
-
 X = \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
 Y = \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
 Z = \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 任意の状態 $|\psi\rangle$ に対するこれらパウリ観測量の期待値は、ブラケット計算により求まります。
 
 $$
-
 x = \langle\psi| X |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \cos\varphi
-
-$$
 $$
 
+$$
 y = \langle\psi| Y |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \sin\varphi
-
-$$
 $$
 
+$$
 z = \langle\psi| Z |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \cos^2\left(\frac{\theta}{2}\right) - \sin^2\left(\frac{\theta}{2}\right) = \cos\theta
-
 $$
 
 これにより、ブロッホベクトル $\mathbf{r} = (x, y, z)$ は、3次元空間の単位ベクトル $\mathbf{r} = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$ として見事に表現されます。また、任意の純粋状態に対応する密度行列（Density matrix） $\rho = |\psi\rangle\langle\psi|$ は、パウリベクトル $\boldsymbol{\sigma} = (X, Y, Z)$ と恒等行列 $I$ を用いて極めてエレガントに記述されます。
 
 $$
-
 \rho = \frac{1}{2} \left( I + \mathbf{r} \cdot \boldsymbol{\sigma} \right) = \frac{1}{2} \left( I + xX + yY + zZ \right)
-
 $$
 
 行列の要素を明示的に展開して確認すると以下のようになります。
 
 $$
-
 \rho = \frac{1}{2} \begin{pmatrix} 1 + z & x - iy \\ x + iy & 1 - z \end{pmatrix} = \begin{pmatrix} \cos^2(\frac{\theta}{2}) & e^{-i\varphi}\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) \\ e^{i\varphi}\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) & \sin^2(\frac{\theta}{2}) \end{pmatrix}
-
 $$
 
 これはまさにテンソル積の定義による外積 $|\psi\rangle\langle\psi|$ の計算結果と完全に一致します。ここで特筆すべきは、純粋状態においてはブロッホベクトルのノルムが $|\mathbf{r}| = 1$ であり、密度行列のトレースが $\text{Tr}(\rho^2) = 1$ を満たしますが、環境との相互作用や不完全な制御により量子情報の欠損（デコヒーレンス）が生じた混合状態（Mixed state）では、純粋状態の統計的アンサンブルとなるため $|\mathbf{r}| < 1$ となります。その結果、混合状態はブロッホ球の表面ではなく「内部」の点として表現され、完全に情報が失われた最大混合状態（Maximally mixed state） $\rho = I/2$ はブロッホ球の中心点 $\mathbf{r} = (0,0,0)$ に位置することになります。
@@ -423,33 +359,25 @@ $$
 測定を数学的に厳密に記述するためには、射影演算子の集合 $\{ P_m \}$ を用います。$Z$ 測定の場合の射影演算子は以下のようになります。
 
 $$
-
 P_0 = |0\rangle\langle 0|, \quad P_1 = |1\rangle\langle 1|
-
 $$
 
 これらは完全性関係 $P_0 + P_1 = I$ および直交性 $P_i P_j = \delta_{ij} P_i$ を満たします。ボルンの規則によれば、測定結果 $m \in \{0, 1\}$ が得られる確率 $P(m)$ は、
 
 $$
-
 P(m) = \langle\psi| P_m^\dagger P_m |\psi\rangle = \langle\psi| P_m |\psi\rangle
-
 $$
 
 として計算され、これは先ほどの $|\alpha|^2$ および $|\beta|^2$ と完全に一致します。そして最も重要なことは、測定結果 $m$ が得られた直後の新しい量子状態 $|\psi'\rangle$ は、元の状態に射影演算子を作用させ、それを新たなノルムで再規格化したものになるということです。
 
 $$
-
 |\psi'\rangle = \frac{P_m |\psi\rangle}{\sqrt{P(m)}}
-
 $$
 
 結果が $0$ であった場合、
 
 $$
-
 |\psi'\rangle = \frac{|0\rangle\langle 0| (\alpha|0\rangle + \beta|1\rangle)}{|\alpha|} = \frac{\alpha}{|\alpha|} |0\rangle = e^{i\phi_0} |0\rangle \equiv |0\rangle
-
 $$
 
 となり、状態は完全に $|0\rangle$ へと収縮します（グローバル位相は無視されます）。これが波束の収縮（Wavefunction collapse）と呼ばれる現象の数学的記述であり、一度測定を行って状態が収縮してしまえば、元の重ね合わせ状態に含まれていた相対位相 $\varphi$ や振幅の情報（$\alpha, \beta$）は永遠に失われてしまいます。したがって、量子状態の完全な情報を単一のコピーに対する一度の測定で読み出すことは原理的に不可能なのです（これは「ノー・クローニング定理」とも深く関連しています）。
@@ -459,17 +387,13 @@ $$
 単一の量子ビットの性質を深く理解したところで、次章以降で本格的に扱う「多量子ビット系」の数学的基礎にも触れておきます。古典確率分布がデカルト積によって状態空間を拡張するのに対し、量子力学における合成系のヒルベルト空間 $\mathcal{H}_{AB}$ は、各部分系のヒルベルト空間 $\mathcal{H}_A$ と $\mathcal{H}_B$ の **テンソル積（Tensor product）** によって構成されます。
 
 $$
-
 \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
-
 $$
 
 2つの独立した量子ビット状態のテンソル積は次のように展開され、4次元の複素ベクトル空間を形成します。
 
 $$
-
 |\Psi\rangle_{AB} = (\alpha_0|0\rangle + \alpha_1|1\rangle) \otimes (\beta_0|0\rangle + \beta_1|1\rangle) = \alpha_0\beta_0|00\rangle + \alpha_0\beta_1|01\rangle + \alpha_1\beta_0|10\rangle + \alpha_1\beta_1|11\rangle
-
 $$
 
 ここで、状態のテンソル積として因数分解できない状態（例：ベル状態 $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$）が存在することが、量子もつれ（Entanglement）の源泉となります。テンソル積による次元の指数関数的爆発（$N$量子ビットで $2^N$ 次元）こそが、量子コンピュータが圧倒的な並列計算能力を発揮する基盤となります。
@@ -498,9 +422,7 @@ $$
 ポール・ディラック（Paul Dirac）が導入したブラ・ケット記法（Bra-ket notation）によれば、状態ベクトルは列ベクトルとして扱われ、ケット ** $| \psi \rangle$ ** と表記されます。双対空間 $\mathcal{H}^*$ に属する行ベクトルはブラ ** $\langle \psi |$ ** と表記され、これらは互いにエルミート共役（複素共役転置）の関係にあります。すなわち、
 
 $$
-
 \langle \psi | = ( | \psi \rangle )^\dagger
-
 $$
 
 です。ヒルベルト空間上の任意の二つの状態 ** $| \phi \rangle$ ** と ** $| \psi \rangle$ ** の内積は、ブラとケットの積 ** $\langle \phi | \psi \rangle$ ** として計算され、複素数値を与えます。この内積は以下の性質を満たします。
@@ -512,9 +434,7 @@ $$
 物理的な状態は確率解釈を成立させるため、常に規格化条件（Normalization condition）を満たす必要があります。すなわち、状態ベクトル ** $| \psi \rangle$ ** のノルムは1です。
 
 $$
-
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
-
 $$
 
 さらに、コーシー・シュワルツの不等式（Cauchy-Schwarz inequality） $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ が成り立つため、規格化された状態間の内積の絶対値は常に0から1の間に収まります。これが後に「確率」として解釈されるための数学的な土台となります。
@@ -526,25 +446,19 @@ $$
 ヒルベルト空間 $\mathcal{H}$ には、完全直交基底（Orthonormal basis） $\{ | e_i \rangle \}$ が存在します。これらの基底は互いに直交し、かつ規格化されています。
 
 $$
-
 \langle e_i | e_j \rangle = \delta_{ij}
-
 $$
 
 （ $\delta_{ij}$ はクロネッカーのデルタ）。また、完全性関係（Completeness relation）または分解の恒等式として、恒等演算子 $I$ を次のように展開できます。
 
 $$
-
 I = \sum_i | e_i \rangle \langle e_i |
-
 $$
 
 任意の量子状態 ** $| \psi \rangle$ ** は、この恒等演算子を作用させることで、基底の線形結合としてただ一通りに展開できます。
 
 $$
-
 | \psi \rangle = I | \psi \rangle = \left( \sum_i | e_i \rangle \langle e_i | \right) | \psi \rangle = \sum_i \langle e_i | \psi \rangle | e_i \rangle = \sum_i c_i | e_i \rangle
-
 $$
 
 ここで展開係数 $c_i = \langle e_i | \psi \rangle$ は複素確率振幅と呼ばれ、後述するボルンの規則において決定的な役割を果たします。規格化条件 $\langle \psi | \psi \rangle = 1$ より、 $\sum_i |c_i|^2 = 1$ が導かれます。
@@ -567,9 +481,7 @@ $$
 したがって、任意のオブザーバブル $A$ は、その固有値 $a_i$ と固有ベクトル ** $| a_i \rangle$ ** を用いて、射影演算子 $P_i = | a_i \rangle \langle a_i |$ の線形結合としてスペクトル分解（Spectral decomposition）することが可能です。
 
 $$
-
 A = \sum_i a_i | a_i \rangle \langle a_i |
-
 $$
 
 この定式化により、「物理量を測定する」という行為が、ヒルベルト空間の特定の基底（固有ベクトル）への射影という幾何学的な操作として理解できるようになります。例えば、量子ビットの $\sigma_z$ 観測は、固有値 $+1$ に対応する状態 ** $| 0 \rangle$ ** と、固有値 $-1$ に対応する状態 ** $| 1 \rangle$ ** という直交基底への射影操作として完全に記述されます。
@@ -584,9 +496,7 @@ $$
 時間発展を記述する基礎方程式である時間依存シュレーディンガー方程式は次のように表されます。
 
 $$
-
 i\hbar \frac{d}{dt} | \psi(t) \rangle = H | \psi(t) \rangle
-
 $$
 
 ここで $i$ は虚数単位、 $\hbar$ は換算プランク定数、 $H$ は系の総エネルギーに対応するオブザーバブルであるハミルトニアン（Hamiltonian）演算子です。
@@ -594,9 +504,7 @@ $$
 ハミルトニアン $H$ が時間に依存しない（時間的に不変な）系を考えた場合、この微分方程式は形式的に積分され、解は以下のように与えられます。
 
 $$
-
 | \psi(t) \rangle = \exp\left( -\frac{i}{\hbar} H (t - t_0) \right) | \psi(t_0) \rangle
-
 $$
 
 この指数関数で表される演算子 $U(t, t_0) = \exp\left( -i H (t - t_0) / \hbar \right)$ が、時間発展演算子です。ハミルトニアン $H$ がエルミート（ $H = H^\dagger$ ）であるため、ストーンの定理（Stone's theorem）により $U$ はユニタリ演算子（Unitary operator）となります。ユニタリ演算子とは、自身のエルミート共役が逆行列に等しい（ $U^\dagger U = U U^\dagger = I$ ）演算子のことです。
@@ -611,25 +519,19 @@ $$
 状態 ** $| \psi \rangle$ ** にある系に対して、スペクトル分解 $A = \sum_i a_i P_i$ を持つオブザーバブル $A$ の観測を行ったとき、得られる測定値は必ず $A$ の固有値 $a_i$ のいずれかである。特定の固有値 $a_k$ が得られる確率 $p(a_k)$ は、ボルンの規則に従って以下のように与えられる。
 
 $$
-
 p(a_k) = \langle \psi | P_k | \psi \rangle = \| P_k | \psi \rangle \|^2
-
 $$
 
 もし固有値 $a_k$ が非退化（対応する固有ベクトル ** $| a_k \rangle$ ** が1つのみ）である場合、射影演算子は $P_k = | a_k \rangle \langle a_k |$ となり、確率は状態の固有ベクトルへの内積の絶対値の二乗として計算されます。
 
 $$
-
 p(a_k) = \langle \psi | a_k \rangle \langle a_k | \psi \rangle = | \langle a_k | \psi \rangle |^2
-
 $$
 
 これはまさに、状態ベクトル ** $| \psi \rangle$ ** を基底 $\{ | a_i \rangle \}$ で展開したときの係数 $c_k = \langle a_k | \psi \rangle$ の絶対値の二乗 $|c_k|^2$ に他なりません。複素確率振幅 $c_k$ 自体は直接観測できませんが、その絶対値の二乗が現実世界における観測確率として立ち現れるのです。この規則を提唱したマックス・ボルン（Max Born）の洞察は、物理学を決定論から確率論へと変革した金字塔です。オブザーバブル $A$ の期待値 $\langle A \rangle$ は、全ての固有値とその出現確率の積の和として計算され、最終的に状態ベクトルによる内積の形で極めて美しく表現されます。
 
 $$
-
 \langle A \rangle = \sum_i a_i p(a_i) = \sum_i a_i \langle \psi | P_i | \psi \rangle = \langle \psi | \left( \sum_i a_i P_i \right) | \psi \rangle = \langle \psi | A | \psi \rangle
-
 $$
 
 ## 3.6 観測による波束の収縮（状態の還元）とデコヒーレンス
@@ -640,9 +542,7 @@ $$
 観測によって固有値 $a_k$ が得られた直後の系の状態 ** $| \psi' \rangle$ ** は、元の状態ベクトルに該当する射影演算子 $P_k$ を作用させ、再規格化したものへと瞬時に変化（収縮）する。
 
 $$
-
 | \psi' \rangle = \frac{P_k | \psi \rangle}{\sqrt{p(a_k)}}
-
 $$
 
 もし観測器が理想的であり、系の状態が非退化の固有値 $a_k$ に収縮した場合、観測直後の状態は厳密に固有ベクトル ** $| a_k \rangle$ ** そのものになります。すなわち、直後に全く同じ観測を繰り返せば、確率1（100%）で再び $a_k$ が得られます。これを「第一種測定」と呼びます。
@@ -656,9 +556,7 @@ $$
 一方、観測プロセスにおいて系がどの状態に収縮したかを知らない（あるいは情報を失った）場合、系は古典的な確率的混合状態（Mixed state）として記述されなければなりません。例えば、確率 $p(a_k)$ で状態 ** $| a_k \rangle$ ** に収縮した系のアンサンブルを表す密度演算子は、以下のようになります。
 
 $$
-
 \rho' = \sum_k p(a_k) | a_k \rangle \langle a_k |
-
 $$
 
 このとき、純粋状態にあった $\rho = | \psi \rangle \langle \psi |$ の非対角成分（干渉項）は、観測という行為によって完全に消失します。この干渉性の喪失こそが「デコヒーレンス（Decoherence）」の核心です。
@@ -668,9 +566,7 @@ $$
 観測器もまた多数の粒子からなる量子系の一部であり、量子系と巨大な環境（観測器や熱浴など）が相互作用することで「エンタングルメント（量子もつれ）」が生じます。環境の自由度をトレースアウト（部分トレース、Partial trace）して対象系のみの縮約密度行列（Reduced density matrix）を計算すると、純粋状態であった系の状態ベクトルは急速に混合状態へと移行し、系の各成分の間の位相干渉性が失われます。
 
 $$
-
 \rho_{S} = \mathrm{Tr}_{E} [ | \Psi_{SE} \rangle \langle \Psi_{SE} | ]
-
 $$
 
 これにより、巨視的なスケールでは重ね合わせが消失し、古典的な確率的混合として振る舞うように見えるのです。波束の収縮は、決して物理法則の破綻ではなく、環境との不可逆な相互作用による情報の散逸と見なすことができます。このデコヒーレンスの克服こそが、誤り耐性量子コンピュータを実現するための人類最大の挑戦となっています。
@@ -710,25 +606,19 @@ graph TD
 量子系の時間発展は、系を特徴づけるエルミート演算子であるハミルトニアン ** $H$ ** （ ** $H^\dagger = H$ ** ）を用いて、以下のシュレディンガー方程式によって支配されます。
 
 $$
-
 i\hbar \frac{d}{dt} |\psi(t)\rangle = H |\psi(t)\rangle
-
 $$
 
 ハミルトニアン ** $H$ ** が時間に依存しない系を仮定した場合、任意の時刻 ** $t$ ** における量子状態 ** $|\psi(t)\rangle$ ** は、初期状態 ** $|\psi(0)\rangle$ ** から形式的に次のように積分されます。
 
 $$
-
 |\psi(t)\rangle = e^{-\frac{i}{\hbar}Ht} |\psi(0)\rangle
-
 $$
 
 ここで現れる時間発展演算子を ** $U(t) = e^{-\frac{i}{\hbar}Ht}$ ** と定義します。指数関数の肩に乗っている ** $H$ ** がエルミートであるため、この演算子 ** $U(t)$ ** の随伴演算子（エルミート共役） ** $U(t)^\dagger$ ** を計算すると以下の極めて重要な性質が導出されます。
 
 $$
-
 U(t)^\dagger U(t) = \left( e^{-\frac{i}{\hbar}Ht} \right)^\dagger e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}H^\dagger t} e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}Ht} e^{-\frac{i}{\hbar}Ht} = I
-
 $$
 
 同様に、 ** $U(t) U(t)^\dagger = I$ ** も成立します。このように、その随伴行列が自身の逆行列と一致する行列（ ** $U^\dagger = U^{-1}$ ** ）を「ユニタリ行列（Unitary Matrix）」と呼びます。単一量子ビットゲートは、物理的な制御（例えば、特定の周波数と継続時間を持つマイクロ波パルスの照射など）を通じて意図的に設計されたハミルトニアンによって実現される、 ** $2 \times 2$ ** のユニタリ行列に他なりません。
@@ -736,9 +626,7 @@ $$
 ユニタリ行列が量子力学において絶対的に不可欠な理由は、「確率の保存（ノルムの保存）」を数学的に担保する唯一の線形変換だからです。任意の量子状態 ** $|\psi\rangle$ ** と ** $|\phi\rangle$ ** に対してユニタリ変換 ** $U$ ** を施した後の状態の内積を計算してみましょう。
 
 $$
-
 \langle \phi' | \psi' \rangle = ( \langle \phi | U^\dagger ) ( U |\psi\rangle ) = \langle \phi | U^\dagger U | \psi \rangle = \langle \phi | I | \psi \rangle = \langle \phi | \psi \rangle
-
 $$
 
 内積が保存されるということは、状態ベクトル自身のノルム（長さの二乗）である ** $\langle \psi | \psi \rangle$ ** も保存されることを意味します。量子力学のボルンの規則（Born rule）によれば、状態ベクトルの振幅の絶対値の二乗の総和は全確率「1」でなければならないため、量子ゲート操作によってこの確率解釈が破綻しないためには、操作がユニタリであることが絶対の前提条件となるのです。
@@ -746,9 +634,7 @@ $$
 さらに、スペクトル定理によれば、任意のユニタリ行列 ** $U$ ** は、実数の固有値 ** $\lambda_k$ ** を持つエルミート行列 ** $K$ ** を用いて ** $U = e^{iK}$ ** と表すことができます。ユニタリ行列の固有値は常に絶対値が1の複素数（ ** $e^{i\theta}$ ** ）の形を取り、固有ベクトルは互いに直交する完全系をなします。
 
 $$
-
 U = \sum_{j=1}^{d} e^{i \theta_j} |\phi_j\rangle \langle \phi_j|
-
 $$
 
 これは、量子ゲートの作用が「特定の直交基底 ** $|\phi_j\rangle$ ** に対して、純粋な位相回転 ** $e^{i\theta_j}$ ** のみを与える」操作として完全に分解できることを示しています。
@@ -762,22 +648,17 @@ $$
 パウリXゲートは、古典論理回路におけるNOTゲートの量子力学的拡張です。ディラックのブラケット記法を用いた外積（プロジェクター）表現では次のように定義されます。
 
 $$
-
 X = \sigma_x = |0\rangle\langle 1| + |1\rangle\langle 0| = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
-
 $$
 
 計算基底（ ** $|0\rangle, |1\rangle$ ** ）に対する作用を厳密に行列計算で確認すると、
 
 $$
-
 X |0\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} = |1\rangle
-
-$$
 $$
 
+$$
 X |1\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} = |0\rangle
-
 $$
 
 このように、振幅を完全に反転させます。幾何学的には、ブロッホ球においてX軸を回転軸とした ** $\pi$ ** （180度）の回転操作に対応します。北極（ ** $|0\rangle$ ** ）は南極（ ** $|1\rangle$ ** ）へ、南極は北極へとマッピングされます。
@@ -787,17 +668,13 @@ $$
 パウリYゲートは、ビットの反転と位相の反転を同時に引き起こし、さらに虚数単位 ** $i$ ** の位相因子を付与します。外積表現と行列表現は以下の通りです。
 
 $$
-
 Y = \sigma_y = -i|0\rangle\langle 1| + i|1\rangle\langle 0| = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
-
 $$
 
 計算基底への作用は、
 
 $$
-
 Y |0\rangle = i|1\rangle, \quad Y |1\rangle = -i|0\rangle
-
 $$
 
 となります。ブロッホ球上では、Y軸周りの ** $\pi$ ** 回転を表します。虚数単位 ** $i$ ** （つまり ** $e^{i\pi/2}$ ** ）が掛かることは、単なる反転だけでなく状態の位相空間における直交方向へのシフトを意味します。
@@ -807,17 +684,13 @@ $$
 パウリZゲートは古典論理には存在しない、量子特有の純粋な「位相操作」です。振幅の大きさ（測定確率）を一切変えずに、 ** $|1\rangle$ ** の成分にのみ ** $-1$ ** （すなわち ** $e^{i\pi}$ ** ）の位相シフトを与えます。
 
 $$
-
 Z = \sigma_z = |0\rangle\langle 0| - |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 作用は自明に、
 
 $$
-
 Z |0\rangle = |0\rangle, \quad Z |1\rangle = -|1\rangle
-
 $$
 
 となります。これはZ軸周りの ** $\pi$ ** 回転に対応します。計算基底 ** $|0\rangle, |1\rangle$ ** はZ行列の固有ベクトル（固有値はそれぞれ+1, -1）であるため、Zゲートを適用しても状態は遷移しません。しかし、重ね合わせ状態（例： ** $\alpha|0\rangle + \beta|1\rangle$ ** ）に作用させた場合、相対位相が ** $\alpha|0\rangle - \beta|1\rangle$ ** と劇的に反転し、後段の干渉結果を決定的に変化させます。
@@ -828,20 +701,20 @@ $$
 
 1. **自己随伴性（エルミート性）とユニタリ性の両立**: ** $X = X^\dagger$ **, ** $Y = Y^\dagger$ **, ** $Z = Z^\dagger$ ** であり、同時に ** $X^\dagger X = I$ ** （すなわち ** $X = X^{-1}$ ** ）を満たします。物理量（観測量）であると同時に、それ自体がユニタリな時間発展生成子（ゲート）となる稀有な性質です。二度連続して適用すると恒等変換に戻ります（インボリューション： ** $X^2 = Y^2 = Z^2 = I$ ** ）。
 2. **完全反交換関係**: 異なるパウリ行列同士は積の順序を入れ替えると符号が反転します。
+   
 
-   $$
+$$
+\{X, Y\} = XY + YX = 0, \quad \{Y, Z\} = 0, \quad \{Z, X\} = 0
+$$
 
-   \{X, Y\} = XY + YX = 0, \quad \{Y, Z\} = 0, \quad \{Z, X\} = 0
-
-   $$
 
 3. **交換関係とリー代数**: 交換子 ** $[A, B] = AB - BA$ ** を用いると、これらは ** $SU(2)$ ** リー代数の生成子としての構造を明確に示します（完全反対称テンソル ** $\epsilon_{ijk}$ ** を使用）。
+   
 
-   $$
+$$
+[\sigma_j, \sigma_k] = 2i \sum_{l \in \{x,y,z\}} \epsilon_{jkl} \sigma_l
+$$
 
-   [\sigma_j, \sigma_k] = 2i \sum_{l \in \{x,y,z\}} \epsilon_{jkl} \sigma_l
-
-   $$
 
    具体的には、 ** $XY = iZ$ **, ** $YZ = iX$ **, ** $ZX = iY$ ** となります。この代数構造が、後述する任意の回転ゲートを定義する上での数学的基盤を与えます。
 
@@ -850,22 +723,17 @@ $$
 量子アルゴリズム（例えばドイチュ・ジョサのアルゴリズムやショアのアルゴリズム）において、初期化直後に必ずと言ってよいほど適用されるのがアダマール（Hadamard）ゲートです。決定論的な状態から、全状態が等確率で現れる「最大重ね合わせ状態」を創出する中核的な役割を担います。
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \left( |0\rangle\langle 0| + |0\rangle\langle 1| + |1\rangle\langle 0| - |1\rangle\langle 1| \right)
-
 $$
 
 計算基底に対してアダマール行列を作用させると、
 
 $$
-
 H |0\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{|0\rangle + |1\rangle}{\sqrt{2}} \equiv |+\rangle
-
-$$
 $$
 
+$$
 H |1\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{|0\rangle - |1\rangle}{\sqrt{2}} \equiv |-\rangle
-
 $$
 
 生成された ** $|+\rangle$ ** と ** $|-\rangle$ ** は、X基底（または対角基底）と呼ばれ、パウリX行列の固有状態となっています。アダマール行列自身も実対称かつ直交行列（実数空間でのユニタリ行列）であるため、 ** $H = H^\dagger = H^{-1}$ ** および ** $H^2 = I$ ** を満たします。
@@ -873,14 +741,11 @@ $$
 代数的には、HゲートはX基底とZ基底を変換するユニタリ変換です。これは行列の相似変換として次のように極めて美しく記述されます。
 
 $$
-
 H X H^\dagger = H X H = Z
-
-$$
 $$
 
+$$
 H Z H^\dagger = H Z H = X
-
 $$
 
 この性質により、「Zゲートによる位相反転」をHゲートで挟み込むことで「Xゲートによるビット反転」を合成することが可能となります。幾何学的には、Hゲートはブロッホ球上の単位ベクトル ** $\hat{n} = \frac{1}{\sqrt{2}}(\hat{x} + \hat{z})$ ** を軸とした ** $\pi$ ** 回転に相当します。
@@ -890,9 +755,7 @@ $$
 パウリZゲートをより一般化した、ブロッホ球のZ軸周りの任意の回転操作群を位相シフトゲート ** $P(\phi)$ ** （または ** $R_\phi$ ** ）と呼びます。
 
 $$
-
 P(\phi) = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi} \end{pmatrix} = |0\rangle\langle 0| + e^{i\phi} |1\rangle\langle 1|
-
 $$
 
 このゲート群は、重ね合わせ状態 ** $\alpha|0\rangle + \beta|1\rangle$ ** に対して ** $\alpha|0\rangle + \beta e^{i\phi}|1\rangle$ ** という形で、 ** $|1\rangle$ ** 成分の相対位相のみを操作します。特に以下の二つが重要です。
@@ -902,18 +765,14 @@ $$
 ** $\phi = \pi/2$ ** の場合をSゲートと呼びます。
 
 $$
-
 S = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
-
 $$
 
 行列の性質から明らかなように、二回適用するとZゲートになります（ ** $S^2 = Z$ ** ）。
 Sゲートを ** $|+\rangle$ ** 状態に作用させると、
 
 $$
-
 S |+\rangle = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ i \end{pmatrix} = \frac{|0\rangle + i|1\rangle}{\sqrt{2}} \equiv |+i\rangle
-
 $$
 
 となり、ブロッホ球の赤道上にあるY軸の正の方向（Y基底の固有状態）へと状態を遷移させます。パウリ群とH, Sゲートからなる群をクリフォード群（Clifford group）と呼び、ゴッテスマン・クニルの定理により、クリフォード群のみで構成された量子回路は古典計算機で効率的にシミュレート可能であることが証明されています。
@@ -923,9 +782,7 @@ $$
 ** $\phi = \pi/4$ ** の場合をTゲートと呼びます。
 
 $$
-
 T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & \frac{1+i}{\sqrt{2}} \end{pmatrix}
-
 $$
 
 グローバル位相 ** $e^{i\pi/8}$ ** を括り出すと、対角成分が ** $e^{-i\pi/8}$ ** と ** $e^{i\pi/8}$ ** となるため、歴史的に ** $\pi/8$ ** ゲートとも呼ばれます。
@@ -936,51 +793,42 @@ Tゲートはクリフォード群には属さず、古典シミュレーショ�
 単一量子ビットに対する最も一般的な操作は、ブロッホ球における任意の単位ベクトル ** $\hat{n} = (n_x, n_y, n_z)$ ** （ただし ** $n_x^2 + n_y^2 + n_z^2 = 1$ ** ）を回転軸とし、角度 ** $\theta$ ** だけ回転させるユニタリ変換です。パウリ行列の線形結合を用いると、この回転演算子 ** $R_{\hat{n}}(\theta)$ ** は次のような行列の指数関数として美しく定式化されます。
 
 $$
-
 R_{\hat{n}}(\theta) = \exp\left(-i \frac{\theta}{2} (\hat{n} \cdot \vec{\sigma})\right) = \exp\left(-i \frac{\theta}{2} (n_x X + n_y Y + n_z Z)\right)
-
 $$
 
 ここで、 ** $(\hat{n} \cdot \vec{\sigma})^2 = (n_x X + n_y Y + n_z Z)^2 = (n_x^2 + n_y^2 + n_z^2)I = I$ ** というパウリ行列の強力な反交換性を利用し、指数関数をテイラー展開（ ** $e^{iAx} = \cos(x)I + i\sin(x)A$ ** （ ** $A^2=I$ ** の場合））すると、無限級数が劇的に単純化され、以下のオイラーの公式の行列拡張版が得られます。
 
 $$
-
 R_{\hat{n}}(\theta) = \cos\left(\frac{\theta}{2}\right) I - i \sin\left(\frac{\theta}{2}\right) (\hat{n} \cdot \vec{\sigma})
-
 $$
 
 この一般的な定式化から、直交座標軸周りの基本回転ゲート群が演繹されます。
 
 ### X軸周りの回転ゲート ** $R_x(\theta)$ **
 
+
 $$
-
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
-
 $$
 
 ### Y軸周りの回転ゲート ** $R_y(\theta)$ **
 
+
 $$
-
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
-
 $$
 
 ### Z軸周りの回転ゲート ** $R_z(\theta)$ **
 
+
 $$
-
 R_z(\theta) = e^{-i \frac{\theta}{2} Z} = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix}
-
 $$
 
 これらの回転行列を用いると、任意の単一量子ビットユニタリ行列 ** $U \in SU(2)$ ** は、3つのオイラー角（ ** $\alpha, \beta, \gamma$ ** ）を用いた「Z-Y-Z分解」として、次のように完全に因数分解可能です。
 
 $$
-
 U = e^{i\delta} R_z(\alpha) R_y(\beta) R_z(\gamma)
-
 $$
 
 この定理は、ハードウェアレベルでZ軸回転とY軸回転さえ高精度に実装できれば、単一量子ビットに対するいかなる複雑なアルゴリズムも実行可能であることを物理学的に保証しています。
@@ -1015,71 +863,54 @@ graph LR
 量子回路図は左から右へ記述しますが、状態ベクトルに対する線形代数の演算子乗算は「左から順に」掛けられるため、全体のユニタリ演算子 ** $U_{total}$ ** の式は時間と逆順に右から左へ並びます。
 
 $$
-
 U_{total} = H S H
-
 $$
 
 各ゲートの行列表現を代入して合成行列を導出します。
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}, \quad S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
-
 $$
 
 まず、初期状態の直後に適用される ** $H$ ** と、その次の ** $S$ ** の積 ** $SH$ ** を計算します。
 
 $$
-
 S H = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1\cdot 1 + 0\cdot 1 & 1\cdot 1 + 0\cdot(-1) \\ 0\cdot 1 + i\cdot 1 & 0\cdot 1 + i\cdot(-1) \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
-
 $$
 
 次に、この結果の左側から最後の ** $H$ ** を乗算します。
 
 $$
-
 U_{total} = H (S H) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
-
 $$
 
 スカラー倍 ** $\frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$ ** を前に出し、行列の積を慎重に実行します。
 
 $$
-
 U_{total} = \frac{1}{2} \begin{pmatrix} 1\cdot 1 + 1\cdot i & 1\cdot 1 + 1\cdot(-i) \\ 1\cdot 1 + (-1)\cdot i & 1\cdot 1 + (-1)\cdot(-i) \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix}
-
 $$
 
 これが全体の回路を一つのブラックボックスと見なしたときの、単一のユニタリ行列表現です。
 この ** $U_{total}$ ** を初期状態 ** $|0\rangle$ ** に作用させ、最終状態 ** $|\psi_{final}\rangle$ ** を計算します。
 
 $$
-
 |\psi_{final}\rangle = U_{total} |0\rangle = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i \\ 1 - i \end{pmatrix}
-
 $$
 
 これをディラック記法で展開すると以下のようになります。
 
 $$
-
 |\psi_{final}\rangle = \frac{1+i}{2} |0\rangle + \frac{1-i}{2} |1\rangle
-
 $$
 
 ここで、ユニタリ性（確率の総和が1であること）が破壊されていないかを検証するために、各基底を観測する確率を計算します。複素数の絶対値の二乗 ** $|z|^2 = z z^*$ ** を用います。
 
 $$
-
 P(0) = |\langle 0 | \psi_{final} \rangle|^2 = \left| \frac{1+i}{2} \right|^2 = \frac{1^2 + 1^2}{4} = \frac{2}{4} = \frac{1}{2}
-
-$$
 $$
 
+$$
 P(1) = |\langle 1 | \psi_{final} \rangle|^2 = \left| \frac{1-i}{2} \right|^2 = \frac{1^2 + (-1)^2}{4} = \frac{2}{4} = \frac{1}{2}
-
 $$
 
 確率の和は ** $P(0) + P(1) = 1$ ** となり、物理的に妥当な状態であることが証明されました。測定すると50%の確率で0、50%の確率で1が得られますが、これは単なる古典的な乱数ではありません。状態の背後に隠された「位相」を取り出すために、状態ベクトルをブロッホ球の極座標形式へと式変形してみましょう。
@@ -1087,17 +918,13 @@ $$
 全体の共通因子として、振幅 ** $1/\sqrt{2}$ ** とグローバル位相 ** $e^{i\pi/4}$ ** （ ** $\frac{1+i}{\sqrt{2}}$ ** ）を強制的に括り出します。
 
 $$
-
 |\psi_{final}\rangle = \frac{1}{\sqrt{2}} \left( \frac{1+i}{\sqrt{2}} |0\rangle + \frac{1-i}{\sqrt{2}} |1\rangle \right) = e^{i\pi/4} \left( \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}} e^{-i\pi/2} |1\rangle \right)
-
 $$
 
 グローバル位相 ** $e^{i\pi/4}$ ** はどんな観測量（エルミート演算子）の期待値計算においても ** $e^{-i\pi/4} e^{i\pi/4} = 1$ ** となって相殺されるため、物理的な意味を持たない相対位相部分だけを抽出すると、
 
 $$
-
 |\psi_{final}'\rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{i}{\sqrt{2}} |1\rangle
-
 $$
 
 となります。これを極座標表示 ** $\cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$ ** と比較することで、ブロッホベクトルは天頂角 ** $\theta = \pi/2$ ** （赤道上）、方位角 ** $\phi = -\pi/2$ ** （Y軸の負の方向）を向いていることが完璧に特定されました。これは通常 ** $|-i\rangle$ ** と表記される状態です。
@@ -1105,17 +932,13 @@ $$
 さらに深淵な事実を提示しましょう。先ほど導出した指数関数による回転ゲートの公式を用いて、X軸周りの ** $\pi/2$ ** 回転 ** $R_x(\pi/2)$ ** の行列を書き下してみます。
 
 $$
-
 R_x(\pi/2) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix}
-
 $$
 
 一方、我々が計算した全体行列 ** $U_{total}$ ** を再度見てみましょう。
 
 $$
-
 U_{total} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & \frac{1-i}{1+i} \\ \frac{1-i}{1+i} & 1 \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix} = e^{i\pi/4} R_x(\pi/2)
-
 $$
 
 驚くべきことに、「 ** $H \rightarrow S \rightarrow H$ ** 」という全く異なる軸周りの離散的なゲート群による連続的な操作が、グローバル位相を除けば、単一の「X軸周りの ** $\pi/2$ ** 回転操作」と数学的に一言一句違わず等価であることが証明されたのです。
@@ -1138,36 +961,28 @@ $$
 2つの量子ビット（量子ビットAと量子ビットB）からなる系を考えましょう。計算基底は、それぞれの単一量子ビットの基底状態のテンソル積として定義されます。
 
 $$
-
 |0\rangle_A \otimes |0\rangle_B \equiv |00\rangle, \quad
 |0\rangle_A \otimes |1\rangle_B \equiv |01\rangle, \quad
 |1\rangle_A \otimes |0\rangle_B \equiv |10\rangle, \quad
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
-
 $$
 
 ここで、テンソル積の行列表現（クロネッカー積）を厳密に計算してみましょう。単一量子ビットの基底を縦ベクトルとして表すと、
 
 $$
-
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 となります。これらを用いて、例えば状態 ** $|10\rangle$ ** を計算すると以下のようになります。
 
 $$
-
 |10\rangle = |1\rangle \otimes |0\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \otimes \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \\ 1 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}
-
 $$
 
 この4次元ベクトル空間において、2量子ビット系の最も一般的な純粋状態 ** $|\Psi\rangle$ ** は、これら4つの基底ベクトルの線形結合（重ね合わせ）として記述されます。
 
 $$
-
 |\Psi\rangle = c_{00} |00\rangle + c_{01} |01\rangle + c_{10} |10\rangle + c_{11} |11\rangle
-
 $$
 
 ここで、$c_{ij} \in \mathbb{C}$ は確率振幅であり、ボルンの規則により状態が正規化されていること、すなわち規格化条件 $\sum_{i,j \in \{0,1\}} |c_{ij}|^2 = 1$ を満たす必要があります。
@@ -1175,9 +990,7 @@ $$
 合成系における演算子（ゲート）もまた、テンソル積を用いて構成されます。量子ビットAに演算子 ** $U_A$ ** 、量子ビットBに演算子 ** $U_B$ ** を適用する操作は、合成系全体に対する演算子 ** $U_A \otimes U_B$ ** として表現され、任意の積状態に対して以下のように作用します。
 
 $$
-
 (U_A \otimes U_B)(|\psi\rangle_A \otimes |\phi\rangle_B) = (U_A |\psi\rangle_A) \otimes (U_B |\phi\rangle_B)
-
 $$
 
 線形性により、この作用は任意の重ね合わせ状態に対しても拡張されます。
@@ -1190,9 +1003,7 @@ $$
 状態 ** $|\Psi\rangle$ ** が、それぞれの部分系の状態の単なるテンソル積、すなわち
 
 $$
-
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
-
 $$
 
 として記述できるとき、その状態は分離可能であると言います。逆に、いかなる部分系の状態のテンソル積としても表現**できない**状態のことを、**量子もつれ状態（Entangled State）** と定義します。
@@ -1200,41 +1011,32 @@ $$
 2量子ビット系において、最も強く量子もつれを起こしている状態を **ベル状態** （Bell States）、あるいはEPRペアと呼びます。ベル状態は以下の4つの直交する純粋状態で構成され、4次元ヒルベルト空間の完全な正規直交基底（ベル基底）を形成します。
 
 $$
-
 |\Phi^+\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle + |11\rangle \Big)
-
-$$
 $$
 
+$$
 |\Phi^-\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle - |11\rangle \Big)
-
-$$
 $$
 
+$$
 |\Psi^+\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle + |10\rangle \Big)
-
-$$
 $$
 
+$$
 |\Psi^-\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle - |10\rangle \Big)
-
 $$
 
 ここで、状態 ** $|\Phi^+\rangle$ ** が分離不可能であることを背理法を用いて厳密に証明しましょう。
 仮に ** $|\Phi^+\rangle$ ** が分離可能状態であるとし、未知の単一量子ビット状態のテンソル積として記述できると仮定します。
 
 $$
-
 |\Phi^+\rangle = (a|0\rangle + b|1\rangle)_A \otimes (c|0\rangle + d|1\rangle)_B
-
 $$
 
 これを展開すると、
 
 $$
-
 |\Phi^+\rangle = ac|00\rangle + ad|01\rangle + bc|10\rangle + bd|11\rangle
-
 $$
 
 元の定義式の係数と比較すると、以下の連立方程式が得られます。
@@ -1254,22 +1056,17 @@ $$
 ベル状態が「最大量子もつれ」であるという事実は、部分系の情報を記述する **縮約密度行列** （Reduced Density Matrix）を計算することでより明確になります。系全体が純粋状態 ** $\rho = |\Phi^+\rangle \langle\Phi^+|$ ** にあるとき、量子ビットBをトレースアウト（部分トレース）して量子ビットAの局所的な状態を求めます。
 
 $$
-
 \rho_A = \text{Tr}_B(|\Phi^+\rangle \langle\Phi^+|) = \text{Tr}_B \left[ \frac{1}{2} (|00\rangle\langle00| + |00\rangle\langle11| + |11\rangle\langle00| + |11\rangle\langle11|) \right]
-
 $$
 
 部分トレース $\text{Tr}_B(|i,j\rangle\langle k,l|) = |i\rangle\langle k| \cdot \langle l|j\rangle = |i\rangle\langle k| \delta_{jl}$ の性質を用いると、
 
 $$
-
 \rho_A = \frac{1}{2} \Big( |0\rangle\langle0| \cdot \langle0|0\rangle + |0\rangle\langle1| \cdot \langle1|0\rangle + |1\rangle\langle0| \cdot \langle0|1\rangle + |1\rangle\langle1| \cdot \langle1|1\rangle \Big)
-
-$$
 $$
 
+$$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
-
 $$
 
 これは、量子ビットAだけを観測した場合、その状態は完全に混合された状態（Completely Mixed State）であり、フォン・ノイマンエントロピー $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ が最大値の $1$ を取ることを意味します。すなわち、「系全体としては完全な情報（純粋状態）を持っているにもかかわらず、各々の部分系を見ると情報は完全に不確定（最大エントロピー）になっている」という、古典力学では到底あり得ない極限の相関関係が最大量子もつれの本質です。
@@ -1285,33 +1082,27 @@ CNOTゲートは2量子ビットに作用し、一方を「制御ビット（Con
 計算基底に対する作用は以下の通りです（1つ目の量子ビットを制御ビット、2つ目を標的ビットとします）。
 
 $$
-
 \text{CNOT} |00\rangle = |00\rangle \\
 \text{CNOT} |01\rangle = |01\rangle \\
 \text{CNOT} |10\rangle = |11\rangle \\
 \text{CNOT} |11\rangle = |10\rangle
-
 $$
 
 これを4次元のユニタリ行列として表現すると、次のようになります。
 
 $$
-
 \text{CNOT} = \begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 1 & 0
 \end{pmatrix}
-
 $$
 
 より数学的に洗練された表現として、射影演算子とパウリ行列を用いたテンソル積の和による表記があります。
 
 $$
-
 \text{CNOT} = |0\rangle\langle0| \otimes I + |1\rangle\langle1| \otimes X
-
 $$
 
 この式はCNOTゲートの物理的意味を極めて直感的に表しています。第1項は「第1量子ビットが $|0\rangle$ に射影される状態空間では、第2量子ビットには恒等演算子 $I$ を適用する」ことを意味し、第2項は「第1量子ビットが $|1\rangle$ に射影される状態空間では、第2量子ビットにビット反転演算子 $X$ を適用する」ことを意味しています。
@@ -1327,9 +1118,7 @@ CNOTゲートの重要な性質として、エルミート性（ $\text{CNOT}^\d
 必要な構成要素は、単一量子ビットに作用するアダマールゲート ** $H$ ** と、前述の ** $\text{CNOT}$ ** ゲートのみです。アダマール行列は以下のように定義されます。
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
-
 $$
 
 ### 量子状態の推移計算
@@ -1337,29 +1126,24 @@ $$
 **ステップ 1:** 初期化
 システムは計算基底の初期状態にあります。
 
+
 $$
-
 |\psi_0\rangle = |0\rangle_A \otimes |0\rangle_B = |00\rangle
-
 $$
 
 **ステップ 2:** 制御ビット（量子ビットA）へのアダマールゲート適用
 量子ビットAのみにアダマールゲートを適用し、重ね合わせ状態を作り出します。系全体に対する演算子は ** $H \otimes I$ ** となります。
 
 $$
-
 |\psi_1\rangle = (H \otimes I) |00\rangle = (H|0\rangle_A) \otimes (I|0\rangle_B)
-
-$$
 $$
 
+$$
 = \left( \frac{1}{\sqrt{2}} (|0\rangle_A + |1\rangle_A) \right) \otimes |0\rangle_B
-
-$$
 $$
 
+$$
 = \frac{1}{\sqrt{2}} (|00\rangle + |10\rangle)
-
 $$
 
 この時点では、状態は依然として分離可能状態です。なぜなら、テンソル積の形で書き表すことができるからです。
@@ -1368,22 +1152,17 @@ $$
 次に、量子ビットAを制御ビット、量子ビットBを標的ビットとするCNOTゲートを適用します。演算子の線形性により、CNOTゲートは重ね合わせの各項に対して独立に作用します。
 
 $$
-
 |\psi_2\rangle = \text{CNOT} \left[ \frac{1}{\sqrt{2}} (|00\rangle + |10\rangle) \right]
-
-$$
 $$
 
+$$
 = \frac{1}{\sqrt{2}} (\text{CNOT}|00\rangle + \text{CNOT}|10\rangle)
-
 $$
 
 先ほど定義したCNOTの基底に対する作用規則を適用すると、$\text{CNOT}|00\rangle = |00\rangle$、$\text{CNOT}|10\rangle = |11\rangle$ となるため、
 
 $$
-
 |\psi_2\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
-
 $$
 
 見事に、初期の分離可能状態からベル状態 ** $|\Phi^+\rangle$ ** が生成されました。アダマールゲートが作り出した「制御ビットが0と1の重ね合わせ」をCNOTゲートが受けることで、制御ビットの各状態に標的ビットの反転/非反転が連動して分岐し、全体としてエンタングルメントが形成されたのです。
@@ -1474,23 +1253,18 @@ graph LR
 量子力学において、閉鎖系の任意の物理的進化はユニタリ演算子 ** $U$ ** によって記述されます。したがって、このコピー機の動作は以下の式を満たすユニタリ変換 ** $U$ ** として定義されます。
 
 $$
-
 U (|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle
-
 $$
 
 これが「任意の」状態に対して成り立つと仮定しているため、別の任意の量子状態 ** $|\phi\rangle$ ** についても同様に機能しなければなりません。
 
 $$
-
 U (|\phi\rangle \otimes |0\rangle) = |\phi\rangle \otimes |\phi\rangle
-
 $$
 
 ここで、これら2つの式の内積（スカラー積）をとってみましょう。ユニタリ演算子 ** $U$ ** の性質（ ** $U^\dagger U = I$ ** ）を利用します。左辺の内積は以下のようになります。
 
 $$
-
 \begin{aligned}
 \left( U (|\psi\rangle \otimes |0\rangle) \right)^\dagger \left( U (|\phi\rangle \otimes |0\rangle) \right) 
 &= (\langle \psi | \otimes \langle 0 |) U^\dagger U (|\phi\rangle \otimes |0\rangle) \\
@@ -1498,7 +1272,6 @@ $$
 &= \langle \psi | \phi \rangle \cdot \langle 0 | 0 \rangle \\
 &= \langle \psi | \phi \rangle
 \end{aligned}
-
 $$
 
 （ここで、 ** $\langle 0 | 0 \rangle = 1$ ** を用いました。）
@@ -1506,30 +1279,24 @@ $$
 一方、右辺のコピーされた状態同士の内積は以下のようになります。
 
 $$
-
 \begin{aligned}
 \left( |\psi\rangle \otimes |\psi\rangle \right)^\dagger \left( |\phi\rangle \otimes |\phi\rangle \right) 
 &= (\langle \psi | \otimes \langle \psi |) (|\phi\rangle \otimes |\phi\rangle) \\
 &= \langle \psi | \phi \rangle \cdot \langle \psi | \phi \rangle \\
 &= (\langle \psi | \phi \rangle)^2
 \end{aligned}
-
 $$
 
 左辺と右辺は等しくならなければならないため、以下の等式が得られます。
 
 $$
-
 \langle \psi | \phi \rangle = (\langle \psi | \phi \rangle)^2
-
 $$
 
 この方程式 ** $x = x^2$ ** が複素数の範囲で成立するための条件は、 ** $x = 0$ ** または ** $x = 1$ ** のみです。つまり、
 
 $$
-
 \langle \psi | \phi \rangle = 0 \quad \text{または} \quad \langle \psi | \phi \rangle = 1
-
 $$
 
 これが意味するのは、2つの状態が「完全に直交している（無関係である）」か、「全く同じ状態である」場合に限り、その両方を正しく複製するユニタリ変換が存在し得るということです。言い換えれば、「任意の（非直交な）未知の量子状態を複製できる普遍的なユニタリ変換は存在しない」ということが、極めてシンプルかつエレガントに証明されたことになります。
@@ -1540,38 +1307,31 @@ $$
 直交する2つの基底状態 ** $|0\rangle$ ** と ** $|1\rangle$ ** をコピーできるユニタリ演算子 ** $U$ ** を考えます。
 
 $$
-
 U |0\rangle |0\rangle = |0\rangle |0\rangle
-
-$$
 $$
 
+$$
 U |1\rangle |0\rangle = |1\rangle |1\rangle
-
 $$
 
 ここまでは問題ありません。古典ビットの0と1を複製することと同じです。では、これらが重ね合わさった未知の状態 ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ ** をコピーしようとするとどうなるでしょうか。ユニタリ演算子による時間発展の線形性から、以下のようになります。
 
 $$
-
 \begin{aligned}
 U (|\psi\rangle |0\rangle) &= U \left( (\alpha|0\rangle + \beta|1\rangle) |0\rangle \right) \\
 &= U (\alpha|0\rangle |0\rangle + \beta|1\rangle |0\rangle) \\
 &= \alpha U(|0\rangle |0\rangle) + \beta U(|1\rangle |0\rangle) \\
 &= \alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle
 \end{aligned}
-
 $$
 
 しかし、私たちが本当に欲しかった「完全な複製」の出力は、次のようなテンソル積になるはずです。
 
 $$
-
 \begin{aligned}
 |\psi\rangle \otimes |\psi\rangle &= (\alpha|0\rangle + \beta|1\rangle) \otimes (\alpha|0\rangle + \beta|1\rangle) \\
 &= \alpha^2|0\rangle |0\rangle + \alpha\beta|0\rangle |1\rangle + \alpha\beta|1\rangle |0\rangle + \beta^2|1\rangle |1\rangle
 \end{aligned}
-
 $$
 
 線形性によって導かれた結果 ** $\alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle$ ** は、求める複製状態 ** $|\psi\rangle \otimes |\psi\rangle$ ** とは明らかに異なります（交差項 ** $|0\rangle |1\rangle$ ** や ** $|1\rangle |0\rangle$ ** が欠落しています）。これにより、未知の重ね合わせ状態をコピーすることは不可能であることが再び示されました。
@@ -1590,33 +1350,29 @@ $$
 アリスは、ボブに送りたい未知の1量子ビット状態 ** $|\psi\rangle$ ** を持っています。
 
 $$
-
 |\psi\rangle_C = \alpha|0\rangle_C + \beta|1\rangle_C \quad (|\alpha|^2 + |\beta|^2 = 1)
-
 $$
+
 
 添え字の $C$ は、これが転送したい対象の量子ビットであることを示します。
 
 この転送を実現するために、アリスとボブは事前に最大限にもつれた2量子ビット状態（EPRペアまたはベルペアと呼ばれます）を1組共有していると仮定します。ここでは以下の状態を用いることとします。
 
 $$
-
 |\Phi^+\rangle_{AB} = \frac{1}{\sqrt{2}} \left( |0\rangle_A \otimes |0\rangle_B + |1\rangle_A \otimes |1\rangle_B \right)
-
 $$
+
 
 添え字の $A$ はアリスが保持する量子ビット、 $B$ はボブが保持する量子ビットを表します。
 
 系全体の初期状態 ** $|\Psi_0\rangle$ ** は、アリスが転送したい状態と、共有されたEPRペアのテンソル積として記述されます。
 
 $$
-
 \begin{aligned}
 |\Psi_0\rangle &= |\psi\rangle_C \otimes |\Phi^+\rangle_{AB} \\
 &= (\alpha|0\rangle_C + \beta|1\rangle_C) \otimes \frac{1}{\sqrt{2}} (|0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B) \\
 &= \frac{1}{\sqrt{2}} \Big( \alpha|0\rangle_C |0\rangle_A |0\rangle_B + \alpha|0\rangle_C |1\rangle_A |1\rangle_B + \beta|1\rangle_C |0\rangle_A |0\rangle_B + \beta|1\rangle_C |1\rangle_A |1\rangle_B \Big)
 \end{aligned}
-
 $$
 
 ### アリスの操作とベル基底測定
@@ -1627,13 +1383,12 @@ $$
 アリスは、量子ビット $C$ を制御ビット、量子ビット $A$ を標的ビットとしてCNOT（Controlled-NOT）ゲート ** $CX_{CA}$ ** を適用します。CNOTは制御ビットが $|1\rangle$ のときのみ標的ビットを反転させます。
 
 $$
-
 \begin{aligned}
 |\Psi_1\rangle &= CX_{CA} |\Psi_0\rangle \\
 &= \frac{1}{\sqrt{2}} \Big( \alpha|0\rangle_C |0\rangle_A |0\rangle_B + \alpha|0\rangle_C |1\rangle_A |1\rangle_B + \beta|1\rangle_C |1\rangle_A |0\rangle_B + \beta|1\rangle_C |0\rangle_A |1\rangle_B \Big)
 \end{aligned}
-
 $$
+
 
 （第3項の $|0\rangle_A$ が $|1\rangle_A$ に、第4項の $|1\rangle_A$ が $|0\rangle_A$ に反転しています。）
 
@@ -1641,26 +1396,22 @@ $$
 次に、アリスは量子ビット $C$ に対してアダマールゲート ** $H_C$ ** を適用します。アダマール変換は $|0\rangle \to \frac{|0\rangle+|1\rangle}{\sqrt{2}}$、 $|1\rangle \to \frac{|0\rangle-|1\rangle}{\sqrt{2}}$ と変換します。
 
 $$
-
 \begin{aligned}
 |\Psi_2\rangle &= H_C |\Psi_1\rangle \\
 &= \frac{1}{2} \Big[ \alpha(|0\rangle_C + |1\rangle_C) |0\rangle_A |0\rangle_B + \alpha(|0\rangle_C + |1\rangle_C) |1\rangle_A |1\rangle_B \\
 &\quad + \beta(|0\rangle_C - |1\rangle_C) |1\rangle_A |0\rangle_B + \beta(|0\rangle_C - |1\rangle_C) |0\rangle_A |1\rangle_B \Big]
 \end{aligned}
-
 $$
 
 これを、アリスが保持する量子ビット $C$ と $A$ の状態（ $|00\rangle, |01\rangle, |10\rangle, |11\rangle$ ）について整理し直します。この再構成こそが量子テレポーテーションの核心的数学ステップです。
 
 $$
-
 \begin{aligned}
 |\Psi_2\rangle &= \frac{1}{2} |0\rangle_C |0\rangle_A \otimes (\alpha|0\rangle_B + \beta|1\rangle_B) \\
 &\quad + \frac{1}{2} |0\rangle_C |1\rangle_A \otimes (\alpha|1\rangle_B + \beta|0\rangle_B) \\
 &\quad + \frac{1}{2} |1\rangle_C |0\rangle_A \otimes (\alpha|0\rangle_B - \beta|1\rangle_B) \\
 &\quad + \frac{1}{2} |1\rangle_C |1\rangle_A \otimes (\alpha|1\rangle_B - \beta|0\rangle_B)
 \end{aligned}
-
 $$
 
 注目すべきは、アリスの測定結果によって、ボブの量子ビット $B$ がそれぞれ異なる状態に射影されていることです。
@@ -1737,9 +1488,7 @@ graph LR
 アリスとボブは、再び事前にEPRペアを共有しているとします。
 
 $$
-
 |\Phi^+\rangle_{AB} = \frac{1}{\sqrt{2}} \left( |0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B \right)
-
 $$
 
 アリスは、ボブに2ビットの古典メッセージ $b_1 b_2 \in \{00, 01, 10, 11\}$ を送りたいと考えています。
@@ -1751,9 +1500,7 @@ $$
    
 
 $$
-
 |\Psi_{00}\rangle = (I \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
-
 $$
 
 2. **メッセージが `01` の場合:**
@@ -1761,9 +1508,7 @@ $$
    
 
 $$
-
 |\Psi_{01}\rangle = (Z \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (Z|0\rangle|0\rangle + Z|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle) = |\Phi^-\rangle
-
 $$
 
 3. **メッセージが `10` の場合:**
@@ -1771,9 +1516,7 @@ $$
    
 
 $$
-
 |\Psi_{10}\rangle = (X \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (X|0\rangle|0\rangle + X|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|10\rangle + |01\rangle) = |\Psi^+\rangle
-
 $$
 
 4. **メッセージが `11` の場合:**
@@ -1781,10 +1524,9 @@ $$
    
 
 $$
-
 |\Psi_{11}\rangle = (ZX \otimes I) |\Phi^+\rangle = (Z \otimes I) |\Psi^+\rangle = \frac{1}{\sqrt{2}} (Z|1\rangle|0\rangle + Z|0\rangle|1\rangle) = \frac{1}{\sqrt{2}} (-|10\rangle + |01\rangle) = -|\Psi^-\rangle
-
 $$
+
 
    （全体にかかる負の符号はグローバル位相であるため、観測確率には影響しませんが、ここでは便宜上符号を整理して ** $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ ** と対応づけて考えます。）
 
@@ -1869,9 +1611,7 @@ $$
 入力レジスタ（ $n$ 量子ビット）とターゲットレジスタ（ $1$ 量子ビット）を用意します。オラクルを表すユニタリ演算子 ** $U_f$ ** は、計算基底状態に対して次のように作用します。
 
 $$
-
 U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle
-
 $$
 
 ここで、 $\oplus$ はモジュロ2の加算（XOR）を表します。この変換は、自分自身をもう一度適用すると元の状態に戻る（ $U_f^2 = I$ ）ため、明らかに可逆かつユニタリです。
@@ -1881,29 +1621,21 @@ $$
 量子情報科学において最も重要で、かつ非直感的なテクニックの一つが「位相キックバック」です。ターゲットレジスタの状態を古典的な $|0\rangle$ や $|1\rangle$ ではなく、アダマールゲートを通した重ね合わせ状態 $|-\rangle$ に設定した場合に何が起きるかを見てみましょう。
 
 $$
-
 |-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}
-
 $$
 
 この状態をターゲットレジスタに入力し、オラクル ** $U_f$ ** を適用します。
 
 $$
-
 U_f |x\rangle |-\rangle = U_f \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2}} \left( U_f |x\rangle |0\rangle - U_f |x\rangle |1\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right)
-
 $$
 
 ここで、 $f(x)$ の値に応じて場合分けをします。
@@ -1915,9 +1647,7 @@ $$
 これを一つにまとめると、次のような美しい等式が得られます。
 
 $$
-
 U_f |x\rangle |-\rangle = (-1)^{f(x)} |x\rangle |-\rangle
-
 $$
 
 これは驚くべき結果です。ターゲットレジスタの状態 $|-\rangle$ は全く変化していませんが、関数 ** $f(x)$ ** の評価結果が「位相（Phase）の符号」として、入力レジスタ ** $|x\rangle$ ** 側に「キックバック（Kickback）」されているのです。これにより、情報を振幅の位相としてエンコードすることが可能になります。
@@ -1941,9 +1671,7 @@ graph LR
 入力レジスタとして $n$ 個の量子ビットを $|0\rangle^{\otimes n}$ に、ターゲットレジスタとして1個の量子ビットを $|1\rangle$ に初期化します。
 
 $$
-
 |\psi_0\rangle = |0\rangle^{\otimes n} |1\rangle
-
 $$
 
 ### ステップ2：全量子ビットへのアダマールゲートの適用
@@ -1952,23 +1680,17 @@ $$
 $n$ 量子ビットに対するアダマール変換 $H^{\otimes n}$ は、次のように作用します。
 
 $$
-
 H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle
-
 $$
 
 したがって、系全体の状態は次のようになります。
 
 $$
-
 |\psi_1\rangle = \left( \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle \right) \otimes \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle |-\rangle
-
 $$
 
 ### ステップ3：量子オラクルの適用（位相キックバック）
@@ -1976,9 +1698,7 @@ $$
 ここでオラクル ** $U_f$ ** を適用します。前節で証明した位相キックバック効果により、各基底状態 $|x\rangle$ の位相に $(-1)^{f(x)}$ が掛かります。
 
 $$
-
 |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} (-1)^{f(x)} |x\rangle |-\rangle
-
 $$
 
 この時点で、計算結果 ** $f(x)$ ** のすべての情報（ $2^n$ 個分）が、重ね合わせ状態の各位相として一度の演算で並列に埋め込まれました。これを「量子並列性（Quantum Parallelism）」と呼びます。
@@ -1989,30 +1709,22 @@ $$
 任意の基底 $|x\rangle$ に対する $H^{\otimes n}$ の作用は、一般的な公式として次のように表されます。
 
 $$
-
 H^{\otimes n} |x\rangle = \frac{1}{\sqrt{2^n}} \sum_{z \in \{0,1\}^n} (-1)^{x \cdot z} |z\rangle
-
 $$
 
 ここで、 $x \cdot z$ はビットごとの内積 $x \cdot z = x_1 z_1 \oplus x_2 z_2 \oplus \dots \oplus x_n z_n$ を表します。
 これを $|\psi_2\rangle$ の入力レジスタ部分に適用すると、最終状態 $|\psi_3\rangle$ は次のように展開されます。
 
 $$
-
 |\psi_3\rangle = H^{\otimes n} \left( \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} |x\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} \left( \frac{1}{\sqrt{2^n}} \sum_{z} (-1)^{x \cdot z} |z\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{2^n} \sum_{z \in \{0,1\}^n} \left( \sum_{x \in \{0,1\}^n} (-1)^{f(x) + x \cdot z} \right) |z\rangle
-
 $$
 
 これが測定直前の量子状態を表す極めて重要な数式です。量子力学的な「干渉」がこの和 $\sum_x$ の中で起きています。
@@ -2023,9 +1735,7 @@ $$
 私たちが興味を持つのは、すべての量子ビットが $0$ 、すなわち状態 ** $|0\rangle^{\otimes n}$ ** が測定される確率です。上の式で $z = 00\dots0$ の場合を考えましょう。このとき、任意の $x$ に対して $x \cdot 0 = 0$ となるため、状態 ** $|0\rangle^{\otimes n}$ ** の振幅（係数）は次のように計算されます。
 
 $$
-
 \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \sum_{x \in \{0,1\}^n} (-1)^{f(x)}
-
 $$
 
 ここで、約束（Promise）に従って2つのケースを検証します。
@@ -2037,11 +1747,11 @@ $$
 
 測定確率 $P(0)$ は振幅の絶対値の2乗であるため、
 
-$$
 
+$$
 P(00\dots0) = | \pm 1 |^2 = 1
-
 $$
+
 
 つまり、**関数が定数関数の場合、100%の確率で $|0\rangle^{\otimes n}$ が測定されます**。
 
@@ -2050,18 +1760,16 @@ $f(x) = 0$ となる $x$ と、 $f(x) = 1$ となる $x$ がちょうど半分�
 したがって、 $(-1)^{f(x)}$ は半分が $+1$ 、残り半分が $-1$ となり、これらをすべて足し合わせると完全に相殺されてゼロになります（完全に破壊的な干渉）。
 
 $$
-
 \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \left( 2^{n-1}(+1) + 2^{n-1}(-1) \right) = 0
-
 $$
 
 測定確率 $P(0)$ は振幅の絶対値の2乗であるため、
 
-$$
 
+$$
 P(00\dots0) = | 0 |^2 = 0
-
 $$
+
 
 つまり、**関数が平衡関数の場合、 $|0\rangle^{\otimes n}$ が測定される確率は0%であり、必ず1つ以上のビットが $1$ となる状態が測定されます**。
 
@@ -2072,37 +1780,34 @@ $$
 ### 定数関数の場合： $f(x) = 1$ （すべて1）
 オラクル適用前の状態 $|\psi_1\rangle$ の入力レジスタ部分は以下のようになります。
 
+
 $$
-
 \frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle )
-
 $$
 
 オラクル適用後、位相キックバックによりすべての項に $(-1)^{f(x)} = -1$ が掛かります。
 
+
 $$
-
 |\psi_2\rangle_{in} = -\frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle )
-
 $$
 
 これに再度 $H^{\otimes 2}$ を適用します。 $H^{\otimes 2} (|00\rangle + |01\rangle + |10\rangle + |11\rangle) = 2 |00\rangle$ であることを利用すると：
 
-$$
 
+$$
 |\psi_3\rangle_{in} = - |00\rangle
-
 $$
+
 
 測定結果は確率 $100\%$ で $00$ となります。
 
 ### 平衡関数の場合： $f(00)=0, f(01)=1, f(10)=1, f(11)=0$
 オラクル適用後、位相キックバックにより、 $f(x)=1$ となる項にのみマイナスが付きます。
 
+
 $$
-
 |\psi_2\rangle_{in} = \frac{1}{2} ( |00\rangle - |01\rangle - |10\rangle + |11\rangle )
-
 $$
 
 これに $H^{\otimes 2}$ を適用します。それぞれの基底に対する $H^{\otimes 2}$ の作用を計算し代入すると、 $|00\rangle$ の係数に着目すれば $\frac{1}{4} (1 - 1 - 1 + 1) = 0$ となり、見事に相殺（破壊的干渉）されます。
@@ -2131,19 +1836,19 @@ $$
 
 平文を整数 $M$ （ただし $0 \le M < N$）とすると、暗号化はモジュロ $N$ のべき乗演算によって次のように行われます。
 
-$$
 
+$$
 C \equiv M^e \pmod{N}
-
 $$
+
 
 復号化を行う際は、秘密鍵 $d$ を用いて同様に計算します。
 
-$$
 
+$$
 M' \equiv C^d \pmod{N}
-
 $$
+
 
 オイラーの定理から $C^d \equiv M^{ed} \equiv M^{1 + k\phi(N)} \equiv M \pmod{N}$ が成り立つため、元の平文 $M$ が完全に復元されることが保証されています。
 
@@ -2159,50 +1864,46 @@ $$
 
 $\text{gcd}(a, N) = 1$ である場合、$a$ と $N$ は互いに素です。ここで、以下のようなモジュロ指数関数を定義します。
 
-$$
 
+$$
 f(x) = a^x \bmod N
-
 $$
+
 
 群論の言葉で言えば、$a$ は乗法群 $(\mathbb{Z}/N\mathbb{Z})^\times$ の元であり、関数 $f(x)$ は整数の加法群 $\mathbb{Z}$ から乗法群 $(\mathbb{Z}/N\mathbb{Z})^\times$ への準同型写像を形成します。有限群の性質により、この関数は必ず周期性を持ちます。すなわち、ある最小の正の整数 $r$ が存在し、次の方程式を満たします。
 
-$$
 
+$$
 a^r \equiv 1 \pmod{N}
-
 $$
+
 
 この最小の正の整数 $r$ のことを、モジュロ $N$ における $a$ の「位数（Order）」、あるいは関数 $f(x)$ の「周期（Period）」と呼びます。
 
 もしこの位数 $r$ を見つけることができ、さらに $r$ が偶数であり、かつ $a^{r/2} \not\equiv -1 \pmod{N}$ という条件を満たしているならば、次のように因数分解の強力な手がかりが得られます。
 
-$$
 
+$$
 a^r - 1 \equiv 0 \pmod{N}
-
 $$
 
 $$
-
 (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod{N}
-
 $$
+
 
 この方程式は、$N$ が $(a^{r/2} - 1)$ と $(a^{r/2} + 1)$ の積を割り切ることを意味しています。しかし、$a^{r/2} \not\equiv 1$ （$r$ が最小の周期であるため）かつ $a^{r/2} \not\equiv -1$ （条件より）であるため、$N$ はこれらのどちらか一方の項を単独で割り切ることはできません。したがって、$N$ の素因数はこれら2つの項に分散して含まれていることになります。
 結論として、
 
-$$
 
+$$
 p = \text{gcd}(a^{r/2} - 1, N)
-
 $$
 
 $$
-
 q = \text{gcd}(a^{r/2} + 1, N)
-
 $$
+
 
 を計算することで、$N$ の非自明な素因数を確実に見つけ出すことができるのです。
 
@@ -2214,29 +1915,29 @@ $$
 
 次元 $M = 2^n$ のヒルベルト空間 $\mathcal{H}$ における計算基底 $|j\rangle$ （$j = 0, 1, \dots, M-1$）に対する量子フーリエ変換の作用は、次のように厳密に定義されます。
 
-$$
 
+$$
 \text{QFT} |j\rangle = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} e^{2\pi i j k / M} |k\rangle
-
 $$
+
 
 任意の量子状態 ** $|\psi\rangle$ ** に対しては、線形性によって次のように作用します。
 
-$$
 
+$$
 \text{QFT} \sum_{j=0}^{M-1} x_j |j\rangle = \sum_{k=0}^{M-1} \left( \frac{1}{\sqrt{M}} \sum_{j=0}^{M-1} x_j e^{2\pi i j k / M} \right) |k\rangle = \sum_{k=0}^{M-1} y_k |k\rangle
-
 $$
+
 
 ここで得られる新しい振幅 $y_k$ は、古典的な離散フーリエ変換によって得られる係数と完全に一致します。しかし、古典的な高速フーリエ変換（FFT）がベクトル全体を計算するのに $O(M \log M) = O(n 2^n)$ の時間を要するのに対し、QFTは $n$ 個の量子ビットの「状態」をわずか $O(n^2)$ の量子ゲート操作で変換できるという、劇的な計算複雑性の低減を実現しています。
 
 なぜ $O(n^2)$ という少数のゲートでこれが実現できるのかを理解するためには、QFTによって得られる状態をテンソル積の形で分解して表現する必要があります。整数 $j$ を二進数表現 $j = j_1 2^{n-1} + j_2 2^{n-2} + \dots + j_n 2^0$ （ここで $j_1$ が最上位ビット、$j_n$ が最下位ビット）としたとき、出力状態は以下のような $n$ 個の独立した量子ビット状態のテンソル積へと見事に分解されます。
 
-$$
 
+$$
 \text{QFT} |j_1 j_2 \dots j_n\rangle = \frac{1}{\sqrt{2^n}} \left(|0\rangle + e^{2\pi i 0.j_n} |1\rangle\right) \otimes \left(|0\rangle + e^{2\pi i 0.j_{n-1} j_n} |1\rangle\right) \otimes \dots \otimes \left(|0\rangle + e^{2\pi i 0.j_1 j_2 \dots j_n} |1\rangle\right)
-
 $$
+
 
 ここで、$0.j_l \dots j_m$ は二進小数を表し、$0.j_l \dots j_m = j_l/2 + j_{l+1}/4 + \dots + j_m/2^{m-l+1}$ です。
 
@@ -2280,22 +1981,22 @@ flowchart LR
 システム全体を初期状態 ** $|\psi_0\rangle$ ** $= |0\rangle^{\otimes t} |0\rangle^{\otimes L}$ にセットします。
 次に、第1レジスタのすべての量子ビットにアダマールゲート $H^{\otimes t}$ を適用し、指数関数的に多くの状態の等確率な重ね合わせを生成します。
 
-$$
 
+$$
 |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |0\rangle
-
 $$
+
 
 ここで、第1レジスタは $0$ から $M-1$ までのあらゆる整数の状態を同時に保持しています。
 
 **【ステップ2: 量子オラクルによる関数評価】**
 量子オラクル $U_f$ を適用し、重ね合わせ状態のまま関数 $f(x) = a^x \bmod N$ を計算し、その結果を第2レジスタに格納します。
 
-$$
 
+$$
 |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |a^x \bmod N\rangle
-
 $$
+
 
 この状態 ** $|\psi_2\rangle$ ** は、入力 $x$ と出力 $f(x)$ が強くエンタングルした状態です。
 
@@ -2303,11 +2004,11 @@ $$
 理論の理解を容易にするため、ここで第2レジスタを観測したと仮定しましょう（実際のアルゴリズムでは観測を省略しても数学的帰結は全く同じになります）。観測によって、第2レジスタはある特定の値 $y = a^{x_0} \bmod N$ に収縮します。ここで $x_0$ は $0 \le x_0 < r$ を満たすある最小のオフセット値です。
 このとき、第1レジスタは「関数 $f(x)$ の出力が $y$ となるようなすべての入力 $x$」の重ね合わせ状態に瞬時に収縮します。関数は周期 $r$ を持つため、そのような $x$ は $x_0, x_0 + r, x_0 + 2r, \dots$ と等間隔に並んでいます。
 
-$$
 
+$$
 |\psi_3\rangle = \frac{1}{\sqrt{A}} \sum_{m=0}^{A-1} |x_0 + m r\rangle \otimes |y\rangle
-
 $$
+
 
 ここで $A$ は重ね合わせに含まれる項の数であり、$A \approx M/r$ です。
 第1レジスタに注目すると、これは周期 $r$ を持つ櫛（くし）状の確率分布状態です。しかし、この状態をそのまま測定しても、ランダムな $x_0 + mr$ が等確率で得られるだけで、オフセット $x_0$ が未知であるため周期 $r$ を知ることはできません。ここでQFTが必要となります。
@@ -2315,19 +2016,19 @@ $$
 **【ステップ4: 逆量子フーリエ変換の適用】**
 第1レジスタに対して逆量子フーリエ変換（QFT$^\dagger$）を適用します。
 
-$$
 
+$$
 \text{QFT}^\dagger |\psi_3\rangle = \frac{1}{\sqrt{A M}} \sum_{k=0}^{M-1} \sum_{m=0}^{A-1} e^{-2\pi i k (x_0 + m r) / M} |k\rangle
-
 $$
+
 
 これを状態 $|k\rangle$ について整理し、その確率振幅 $c_k$ を調べます。
 
-$$
 
+$$
 c_k = \frac{1}{\sqrt{A M}} e^{-2\pi i k x_0 / M} \sum_{m=0}^{A-1} e^{-2\pi i k m r / M}
-
 $$
+
 
 この式の和の部分は、公比 $e^{-2\pi i k r / M}$ の等比数列の和です。もし位相 $k r / M$ が整数から大きく外れている場合、複素平面上でベクトルが回転しながら足し合わされるため、相殺的干渉（Destructive Interference）が起きて振幅はほぼ $0$ になります。
 逆に、$k r / M$ が整数 $j$ に極めて近い場合、すなわち $k \approx j \frac{M}{r}$ となるとき、複素平面上のベクトルは同じ方向を向き、建設的干渉（Constructive Interference）によって振幅が増幅されます。
@@ -2335,11 +2036,11 @@ $$
 **【ステップ5: 測定と連分数展開】**
 第1レジスタを測定すると、高確率で $k \approx j \frac{M}{r}$ を満たす整数 $k$ が観測されます。両辺を $M$ で割ると、次の関係が得られます。
 
-$$
 
+$$
 \frac{k}{M} \approx \frac{j}{r}
-
 $$
+
 
 ここで、$k$ と $M$ は既知の値ですが、$j$ と $r$ は未知です。$M \ge N^2$ となるように $t$ を選んでいるため、$k/M$ は未知の分数 $j/r$ に対して $\left| \frac{k}{M} - \frac{j}{r} \right| \le \frac{1}{2M} < \frac{1}{2r^2}$ という極めて精度の高い近似を与えます。
 ディオファントス近似の定理（ルジャンドルの定理）によれば、この条件を満たす有理数 $j/r$ は、実数 $k/M$ の「連分数展開（Continued Fraction Expansion）」の近似分数の中に必ず含まれます。
@@ -2377,33 +2078,25 @@ $$
 量子アルゴリズムの第一歩は常に、探索空間全体を同時に見渡すための準備から始まります。すべての可能性が均等に重ね合わされた状態を作り出すために、$n$ 量子ビットの初期状態 $|0\rangle^{\otimes n}$ に対して、各量子ビットにアダマールゲート $H$ をテンソル積として並列に適用します。これにより得られる初期の均等な重ね合わせ状態を $|s\rangle$ と定義します。
 
 $$
-
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
-
 $$
 
 この状態 ** $|s\rangle$ ** は、ヒルベルト空間において、正解状態 $|w\rangle$ とそれ以外のすべての不正解状態との線形結合として明確に分離することができます。今後の幾何学的解釈を視覚的に捉えやすくするために、不正解状態のみを均等に重ね合わせた新しい正規化されたベクトル $|s^\perp\rangle$ を次のように導入します。
 
 $$
-
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
-
 $$
 
 この定義により、状態 $|s^\perp\rangle$ と正解状態 $|w\rangle$ は互いに直交（ $\langle s^\perp | w \rangle = 0$ ）します。すると、初期の均等重ね合わせ状態 ** $|s\rangle$ ** は、これら互いに直交する2つのベクトル $|w\rangle$ と $|s^\perp\rangle$ が張る2次元のヒルベルト部分空間上で、次のように極めてシンプルに展開できます。
 
 $$
-
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
-
 $$
 
 ここで、 $\sin \theta = \frac{1}{\sqrt{N}}$ となるような微小な角度 $\theta$ を導入します（ $N$ が十分大きい場合、 $\theta \approx 1/\sqrt{N}$ となります）。すると、この状態は三角関数を用いてよりエレガントな幾何学的表現へと書き直されます。
 
 $$
-
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
-
 $$
 
 この数式が物語っているのは、初期状態 ** $|s\rangle$ ** において正解状態 $|w\rangle$ を観測する確率はわずか $|\sin \theta|^2 = \frac{1}{N}$ に過ぎないという冷酷な事実です。グローバーのアルゴリズムの至上の目的は、後述するオラクルと拡散演算子の組み合わせを反復的に適用することで、この状態ベクトル ** $|s\rangle$ ** をヒルベルト空間の2次元平面内で $|w\rangle$ の方向へと徐々に「回転」させ、正解の観測確率を理論上の極限である $1$ に限りなく近づける（振幅を増幅する）ことにあります。
@@ -2415,54 +2108,44 @@ $$
 通常、このオラクルは補助量子ビット（アンシラ量子ビット）を1つ用いて、関数の評価を可逆な形で実装します。探索条件を表現するブール関数 $f(x)$ を、 $x = w$ のとき $f(w) = 1$、それ以外のすべての $x \neq w$ について $f(x) = 0$ を返す関数として定義します。このとき、オラクルの作用は排他的論理和（XOR） $\oplus$ を用いて次のように書かれます。
 
 $$
-
 O_f \left( |x\rangle \otimes |y\rangle \right) = |x\rangle \otimes |y \oplus f(x)\rangle
-
 $$
 
 ここで、グローバーのアルゴリズムの巧妙さが光ります。補助量子ビット $|y\rangle$ を、計算基底ではなく、あらかじめ $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ という重ね合わせ状態に初期化して入力します。すると、**位相キックバック（Phase Kickback）**と呼ばれる量子特有の驚くべき現象が発生します。具体的に計算してみましょう。
 
 $$
-
 \begin{align*}
 O_f \left( |x\rangle \otimes |-\rangle \right) &= O_f \left( |x\rangle \otimes \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) \\
 &= \frac{1}{\sqrt{2}} \left( O_f |x\rangle |0\rangle - O_f |x\rangle |1\rangle \right) \\
 &= \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right)
 \end{align*}
-
 $$
 
 この式を、入力状態が不正解の場合と正解の場合に分けて評価します。
 もし $x \neq w$（すなわち $f(x) = 0$）ならば、状態は全く変化しません。
 
+
 $$
-
 \frac{1}{\sqrt{2}} \left( |x\rangle |0\rangle - |x\rangle |1\rangle \right) = |x\rangle |-\rangle
-
 $$
 
 一方、 $x = w$（すなわち $f(w) = 1$）ならば、補助量子ビットの状態が $0 \to 1$、$1 \to 0$ へと反転し、全体としてマイナスの符号が状態の前に出ます。
 
+
 $$
-
 \frac{1}{\sqrt{2}} \left( |x\rangle |1\rangle - |x\rangle |0\rangle \right) = - \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) = - |x\rangle |-\rangle
-
 $$
 
 この結果は極めて重要です。補助量子ビット $|-\rangle$ の状態は演算前後で完全に不変であり、単なる「触媒」として働いています。その代わり、関数の評価結果 $f(x)$ が、メインの量子レジスタ $|x\rangle$ の**振幅の符号（位相）**として「キックバック（蹴り返し）」されているのです。この性質を利用することで、補助量子ビットを記述から省略し、メインレジスタに対するオラクルの作用を、新しいユニタリ演算子 $U_w$ として次のようにシンプルかつエレガントに定義し直すことができます。
 
 $$
-
 U_w |x\rangle = (-1)^{f(x)} |x\rangle = \begin{cases} -|x\rangle & (x = w) \\ |x\rangle & (x \neq w) \end{cases}
-
 $$
 
 この位相オラクル $U_w$ は、ディラックのブラケット記法を用いた射影演算子表現によって、次のように明示的に記述できます。
 
 $$
-
 U_w = I - 2|w\rangle\langle w|
-
 $$
 
 ここで $I$ は $N \times N$ の恒等演算子です。幾何学的な直感に訴えかければ、このオラクル $U_w$ は、 $|s^\perp\rangle$ と $|w\rangle$ が張る2次元の実平面において、**横軸である $|s^\perp\rangle$ 軸を対称軸とする状態ベクトルの鏡映（Reflection）**を行っている演算子に他なりません。正解状態の成分だけが符号を反転され、不正解状態の成分はそのまま維持されるからです。
@@ -2474,9 +2157,7 @@ $$
 拡散演算子 $U_s$ は数学的に次のように定義されます。
 
 $$
-
 U_s = 2|s\rangle\langle s| - I
-
 $$
 
 この演算子がなぜ「平均値まわりの反転（Inversion about the mean）」と呼ばれるのか、そのメカニズムを一般的な重ね合わせ状態 $|\psi\rangle = \sum_{x=0}^{N-1} \alpha_x |x\rangle$ を用いて厳密に証明しましょう。
@@ -2484,9 +2165,7 @@ $$
 まず、均等重ね合わせ状態 $|s\rangle$ と現在の状態 $|\psi\rangle$ の内積を計算します。
 
 $$
-
 \langle s | \psi \rangle = \left( \frac{1}{\sqrt{N}} \sum_{y=0}^{N-1} \langle y| \right) \left( \sum_{x=0}^{N-1} \alpha_x |x\rangle \right) = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} \alpha_x
-
 $$
 
 この内積の値をさらに $\sqrt{N}$ で割ったものは、すべての振幅 $\alpha_x$ の算術平均値（これを $\mu$ と定義します）となります。すなわち、 $\mu = \frac{1}{N} \sum_{x=0}^{N-1} \alpha_x = \frac{1}{\sqrt{N}} \langle s | \psi \rangle$ と表現できます。したがって、 $\langle s | \psi \rangle = \sqrt{N} \mu$ となります。
@@ -2494,7 +2173,6 @@ $$
 この関係式を用いて、 $U_s$ を状態 $|\psi\rangle$ に作用させた結果を計算します。
 
 $$
-
 \begin{align*}
 U_s |\psi\rangle &= (2|s\rangle\langle s| - I) \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
 &= 2|s\rangle \langle s | \psi \rangle - \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
@@ -2502,7 +2180,6 @@ U_s |\psi\rangle &= (2|s\rangle\langle s| - I) \sum_{x=0}^{N-1} \alpha_x |x\rang
 &= 2 \mu \sum_{x=0}^{N-1} |x\rangle - \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
 &= \sum_{x=0}^{N-1} (2\mu - \alpha_x) |x\rangle
 \end{align*}
-
 $$
 
 結果として得られた状態の各基底 $|x\rangle$ の新しい振幅は $(2\mu - \alpha_x)$ となりました。この式は $\mu + (\mu - \alpha_x)$ と変形できます。これは、元の振幅 $\alpha_x$ が、全体の平均値 $\mu$ を基準として、ちょうど反対側（対称な位置）へと反転したことを示しています。これこそが、拡散演算子が「平均値まわりの反転」と呼ばれる数学的根拠です。
@@ -2518,9 +2195,7 @@ $$
 グローバーのアルゴリズムの1回の反復単位である**グローバー演算子 $G$** は、オラクル $U_w$ と拡散演算子 $U_s$ の連続した適用、すなわち積として定義されます。
 
 $$
-
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
-
 $$
 
 ここでは、ユークリッド幾何学と線形代数が織りなす極めて美しい定理が主役となります。「互いに交差する2つの直線を対称軸とする2回の鏡映（Reflection）の合成は、その2直線のなす角の2倍の角度を持つ純粋な回転（Rotation）になる」という定理です。
@@ -2540,51 +2215,43 @@ $$
 数学的帰納法を用いて、 $t$ 回の反復後の状態が常に次のように簡潔に表されることを証明します。
 
 $$
-
 |\psi_t\rangle = G^t |s\rangle = \cos((2t+1)\theta) |s^\perp\rangle + \sin((2t+1)\theta) |w\rangle
-
 $$
 
 $t=0$ のときは自明に成り立ちます。 $|\psi_t\rangle$ が上記の形で与えられたとして、さらに1回イテレーションを行った状態 $|\psi_{t+1}\rangle = G |\psi_t\rangle$ を計算します。
 まず、オラクル $U_w$ を作用させると、 $|w\rangle$ の成分の符号が反転します。
 
 $$
-
 U_w |\psi_t\rangle = \cos((2t+1)\theta) |s^\perp\rangle - \sin((2t+1)\theta) |w\rangle
-
 $$
 
 次に、拡散演算子 $U_s = 2|s\rangle\langle s| - I$ を作用させます。これを計算するためには、基底ベクトル $\{|s^\perp\rangle, |w\rangle\}$ を用いた2×2の行列表現を導入するのが最も見通しが良くなります。
 
 オラクル $U_w$ の行列表現は次の対角行列です。
 
+
 $$
-
 U_w = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 初期状態ベクトル $|s\rangle$ は列ベクトル $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ で表現されるため、射影演算子 $|s\rangle\langle s|$ は外積を用いて計算され、そこから $U_s$ を求めると次のようになります。
 
 $$
-
 \begin{align*}
 U_s &= 2 \begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix} \begin{pmatrix} \cos\theta & \sin\theta \end{pmatrix} - \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \\
 &= \begin{pmatrix} 2\cos^2\theta - 1 & 2\sin\theta\cos\theta \\ 2\sin\theta\cos\theta & 2\sin^2\theta - 1 \end{pmatrix} \\
 &= \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\theta) \end{pmatrix}
 \end{align*}
-
 $$
+
 
 （ここで、倍角の公式 $\cos(2\theta) = 2\cos^2\theta - 1$ と $\sin(2\theta) = 2\sin\theta\cos\theta$ を用いました）
 
 したがって、グローバー演算子 $G = U_s U_w$ の全体としての行列表現は、この2つの行列の積となります。
 
 $$
-
 G = \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\theta) \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 = \begin{pmatrix} \cos(2\theta) & -\sin(2\theta) \\ \sin(2\theta) & \cos(2\theta) \end{pmatrix}
-
 $$
 
 驚くべきことに、得られた行列は幾何学で非常によく知られた**角度 $2\theta$ の回転行列**そのものです。ゆえに、初期ベクトル $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ に対して演算子 $G$ を $t$ 回連続して適用するということは、幾何学的にはベクトルを毎回 $2\theta$ ずつ反時計回りに回転させることに等しくなります。したがって、全体の角度は初期角度 $\theta$ に $t \times 2\theta$ を加えた $\theta + 2t\theta = (2t+1)\theta$ となります。これで帰納法の証明が美しく完了しました。
@@ -2612,9 +2279,7 @@ graph LR
 この回路図が示しているのは、拡散演算子 $U_s = 2|s\rangle\langle s| - I$ の極めて実用的な実装方法です。状態 $|s\rangle$ は $H^{\otimes n} |0\rangle^{\otimes n}$ として生成されるため、演算子は次のように分解できます。
 
 $$
-
 U_s = 2(H^{\otimes n} |0\rangle^{\otimes n})(\langle 0|^{\otimes n} H^{\otimes n}) - I = H^{\otimes n} (2|0\rangle\langle 0| - I) H^{\otimes n}
-
 $$
 
 つまり、アダマール変換 $H^{\otimes n}$ によって計算基底に変換し、すべての量子ビットが $|0\rangle$ のときのみ位相を反転させない（あるいは $|0\rangle$ のときのみ負の位相を与えるという定義も同値ですが、グローバル位相の違いに過ぎません）条件付き位相シフト演算子を適用し、再度アダマール変換で元の基底に戻すというサンドイッチ構造をとることで、任意の量子コンピュータ上で効率的に「平均値まわりの反転」が実装可能となるのです。
@@ -2626,25 +2291,19 @@ $$
 $t$ 回の反復を行った後、量子レジスタを計算基底で観測し、正解状態 $|w\rangle$ を得る確率 $P(w)$ は、状態ベクトル $|\psi_t\rangle$ の $|w\rangle$ 成分の振幅の絶対値の2乗として与えられます。
 
 $$
-
 P(w) = |\langle w | \psi_t \rangle|^2 = \sin^2((2t+1)\theta)
-
 $$
 
 我々の究極の目標は、この確率 $P(w)$ を最大化すること、つまり理論的な上限である $1$ に可能な限り近づけることです。正弦関数の2乗 $\sin^2(x)$ が最大値 $1$ を取るのは、引数 $x$ が $\frac{\pi}{2}$（90度）に等しいときです。したがって、最適な反復回数 $t$ を求めるための方程式は次のように立式されます。
 
 $$
-
 (2t+1)\theta \approx \frac{\pi}{2}
-
 $$
 
 これを $t$ について解くと、
 
 $$
-
 t \approx \frac{\pi}{4\theta} - \frac{1}{2}
-
 $$
 
 実用的な規模のデータベース探索において、要素数 $N$ は天文学的に巨大な数になります。このとき、角度 $\theta$ は極めて $0$ に近い微小な値となります。微小な $\theta$ に対しては、テイラー展開（マクローリン展開）の1次の項をとることで $\sin \theta \approx \theta$ という良好な近似が成り立ちます。初期状態の定義から $\sin \theta = \frac{1}{\sqrt{N}}$ であったため、 $\theta \approx \frac{1}{\sqrt{N}}$ と見なすことができます。
@@ -2652,9 +2311,7 @@ $$
 この近似式を先ほど導出した $t$ の方程式に代入すると、最適な反復回数（最適イテレーション数） $R$ は次のように鮮やかに導出されます。
 
 $$
-
 R \approx \frac{\pi}{4} \sqrt{N}
-
 $$
 
 この結果が持つ意味合いは、情報科学の歴史を揺るがすほど驚異的なものです。古典コンピュータでは、ランダムにシャッフルされた探索空間から正解を見つけ出すために、最悪のケースで $N$ 回、平均値をとっても $N/2$ 回という、要素数に比例した探索時間（計算量 $O(N)$ ）が不可避でした。しかし、量子コンピュータ上で動作するグローバーのアルゴリズムは、干渉を利用して確率を増幅させることで、わずか $\frac{\pi}{4} \sqrt{N}$ 回というクエリ回数で、ほぼ確実に（確率は $1 - O(1/N)$ という極めて高い精度で）正解状態に到達してしまうのです。計算量は $O(\sqrt{N})$ となり、二乗根のスケールへと計算時間を圧縮することに成功しています。
@@ -2668,22 +2325,17 @@ $$
 解が $M$ 個存在する場合、すべての正解状態の均等な重ね合わせ状態を $|W\rangle$、すべての不正解状態の均等な重ね合わせ状態を $|W^\perp\rangle$ と再定義します。
 
 $$
-
 |W\rangle = \frac{1}{\sqrt{M}} \sum_{x \in \text{Solutions}} |x\rangle
-
-$$
 $$
 
+$$
 |W^\perp\rangle = \frac{1}{\sqrt{N-M}} \sum_{x \notin \text{Solutions}} |x\rangle
-
 $$
 
 すると、初期の均等重ね合わせ状態 $|s\rangle$ は、これら2つの直交するベクトルを用いて次のように展開できます。
 
 $$
-
 |s\rangle = \sqrt{\frac{N-M}{N}} |W^\perp\rangle + \sqrt{\frac{M}{N}} |W\rangle
-
 $$
 
 ここで、新たな角度 $\theta'$ を $\sin \theta' = \sqrt{\frac{M}{N}}$ となるように定義します。この定義のもとで、単一解の場合と全く同じグローバー演算子 $G$（ただしオラクルは $M$ 個の解すべてに対して位相を反転させるように拡張されています）を適用すると、状態ベクトルは $|W^\perp\rangle$ と $|W\rangle$ が張る平面内において、反復ごとに $2\theta'$ ずつ回転していきます。
@@ -2691,9 +2343,7 @@ $$
 最適な反復回数は、同様の論理展開により $\frac{\pi}{4\theta'}$ となり、 $M \ll N$ の場合には次のように近似されます。
 
 $$
-
 R \approx \frac{\pi}{4} \sqrt{\frac{N}{M}}
-
 $$
 
 この式は、解の個数 $M$ が増えれば増えるほど、当然のことながら必要な反復回数（探索時間）が短縮されることを示しています。例えば、解が4個存在すれば、必要な時間は半分になります。解の個数 $M$ が未知の場合であっても、**量子計数アルゴリズム（Quantum Counting Algorithm）**と呼ばれるグローバーのアルゴリズムと量子位相推定（Quantum Phase Estimation）を組み合わせた高度な手法を用いることで、解の個数 $M$ 自体を高速に推定し、その後に適切な回数の振幅増幅を行うことが可能です。
@@ -2724,11 +2374,11 @@ $$
 
 任意の量子チャネル $\mathcal{E}$ は、クラウス表現（Kraus Representation）を用いて以下のように展開されます。
 
-$$
 
+$$
 \mathcal{E}(\rho) = \sum_{k} E_k \rho E_k^\dagger
-
 $$
+
 
 ここで、 $E_k$ はクラウス演算子（Kraus Operators）と呼ばれ、確率の保存を意味するトレース保存条件 $\sum_k E_k^\dagger E_k = I$ を満たします。
 
@@ -2738,27 +2388,23 @@ $$
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} X
-
 $$
+
 
 2. **位相反転チャネル (Phase Flip Channel):** 確率 $p$ で $Z$ ゲートが作用します。相対位相の崩壊（純粋なデコヒーレンス）を表現します。純粋状態 $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ の密度行列の非対角成分が指数関数的に減衰する現象の直接的な原因です。
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} Z
-
 $$
+
 
 3. **脱分極チャネル (Depolarizing Channel):** 確率 $p$ で状態が完全に混合状態（ホワイトノイズ） $I/2$ に近づきます。
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{\frac{p}{3}} X, \quad E_2 = \sqrt{\frac{p}{3}} Y, \quad E_3 = \sqrt{\frac{p}{3}} Z
-
 $$
 
 量子エラー訂正を構築する上で立ちはだかる最初の障壁が「ノー・クローニング定理（No-Cloning Theorem）」です。未知の量子状態 $|\psi\rangle$ を複製して $|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$ のような状態を作るユニタリ変換は存在しません。したがって、古典エラー訂正のように「同じ情報を3つのビットにコピーし、多数決をとる」という素朴なアプローチは量子系では不可能です。さらに、量子状態を測定すれば波束の収縮が起こり、重ね合わせは破壊されてしまいます。未知の情報を破壊せずに、いかにしてエラーを特定するかが核心的な課題となります。
@@ -2770,11 +2416,11 @@ $$
 最も単純な例として、確率的ビット反転から1量子ビットの状態 $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ を保護する「3量子ビット・ビット反転符号」を構成します。
 論理基底（Logical Basis）を次のように定義します。
 
-$$
 
+$$
 |0\rangle_L = |000\rangle, \quad |1\rangle_L = |111\rangle
-
 $$
+
 
 論理状態は、 $|\psi\rangle_L = \alpha |000\rangle + \beta |111\rangle$ となります。これは複製ではなく、GHZ型のエンタングルメント状態へのエンコードです。
 
@@ -2784,27 +2430,25 @@ $$
 元の符号空間の任意のベクトル $|\psi\rangle_L$ は、 $Z_1 Z_2$ と $Z_2 Z_3$ の固有値 $+1$ の固有ベクトルです（すなわち、 $Z_1 Z_2 |\psi\rangle_L = |\psi\rangle_L$ ）。
 しかし、エラー状態 $|\psi'\rangle$ に対しては、 $X$ と $Z$ が反交換（ $\{X, Z\} = 0$ ）するというパウリ代数の性質により、
 
-$$
 
+$$
 Z_1 Z_2 |\psi'\rangle = Z_1 Z_2 X_1 |\psi\rangle_L = -X_1 Z_1 Z_2 |\psi\rangle_L = - |\psi'\rangle
-
 $$
 
 $$
-
 Z_2 Z_3 |\psi'\rangle = Z_2 Z_3 X_1 |\psi\rangle_L = X_1 Z_2 Z_3 |\psi\rangle_L = + |\psi'\rangle
-
 $$
+
 
 となります。測定結果（シンドローム）は $(-1, +1)$ となり、これにより「1番目のビットに $X$ エラーが起きた」という事実のみが確定します。重ね合わせの係数 $\alpha, \beta$ に関する情報は一切漏洩しないため、測定による状態の破壊は起きません。その後、 $X_1$ を再び適用することで完全に元の状態 $|\psi\rangle_L$ に復元できます。
 
 同様に、位相反転エラー $Z$ を訂正するには、アダマール基底 $\{|+\rangle, |-\rangle\}$ を用いた「3量子ビット・位相反転符号」を用います。
 
-$$
 
+$$
 |0\rangle_L = |+++\rangle, \quad |1\rangle_L = |---\rangle
-
 $$
+
 
 この場合、シンドローム測定には $X_1 X_2$ および $X_2 X_3$ を用います。
 
@@ -2816,16 +2460,13 @@ $$
 
 論理基底は以下のようになります。
 
-$$
 
+$$
 |0\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle )
-
 $$
 
 $$
-
 |1\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle )
-
 $$
 
 ショア符号などのエラー訂正を一般化し、強固な数学的基盤を与えたのがダニエル・ゴッテスマンによる「スタビライザー形式（Stabilizer Formalism）」です。
@@ -2834,30 +2475,25 @@ $n$ 量子ビットのパウリ群を $\mathcal{P}_n$ とします。スタビ�
 ショア符号（ $n=9$ ）の場合、1つの論理ビットをエンコードするため、 $k=8$ 個の独立なジェネレータによって構成されます。
 ビット反転を検知するための $Z$ 系のスタビライザー（6つ）：
 
-$$
 
+$$
 S_1 = Z_1 Z_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9, \quad S_2 = I_1 Z_2 Z_3 I_4 I_5 I_6 I_7 I_8 I_9
-
 $$
 
 $$
-
 \dots, \quad S_6 = I_1 I_2 I_3 I_4 I_5 I_6 I_7 Z_8 Z_9
-
 $$
+
 
 位相反転を検知するための $X$ 系のスタビライザー（2つ）：
 
-$$
 
+$$
 S_7 = X_1 X_2 X_3 X_4 X_5 X_6 I_7 I_8 I_9
-
 $$
 
 $$
-
 S_8 = I_1 I_2 I_3 X_4 X_5 X_6 X_7 X_8 X_9
-
 $$
 
 もし、任意の量子ビットにエラー $E \in \mathcal{P}_n$ が生じた場合、それが $\mathcal{S}$ の生成元のいずれかと反交換すれば、そのスタビライザーの測定結果は $-1$ となり、エラーの種類と位置が特定されます。スタビライザーの概念は、量子状態そのものを追跡するのではなく、系の対称性を規定する演算子の代数構造を追跡するという、ハイゼンベルク描像に近い極めて強力なアプローチを提供します。
@@ -2900,11 +2536,11 @@ graph TD
 表面符号では、量子ビットは2次元格子の頂点（または辺）に配置され、隣接する量子ビット間の局所的な相互作用のみを用いてスタビライザー測定を実行します。
 ハミルトニアンは以下のように記述されます。
 
-$$
 
+$$
 H = - \sum_{v} A_v - \sum_{p} B_p
-
 $$
+
 
 ここで、 $A_v$ は頂点（Vertex）周囲の4つの量子ビットに対する $X$ 演算子のテンソル積（頂点演算子: $A_v = \prod_{i \in \text{star}(v)} X_i$ ）、 $B_p$ はプラケット（面、Plaquette）周囲の4つの量子ビットに対する $Z$ 演算子のテンソル積（面演算子: $B_p = \prod_{i \in \text{boundary}(p)} Z_i$ ）です。
 これらは互いに可換（ $[A_v, B_p] = 0$ ）であり、論理状態は全ての $A_v$ と $B_p$ の固有値が $+1$ となる基底状態空間にエンコードされます。驚くべきことに、種数（Genus） $g$ の2次元多様体上に構成されたトーリック符号の基底状態の縮退度は $4^g$ となり、トーラス（ $g=1$ ）の上では2つの論理量子ビットが自然にエンコードされます。
@@ -2954,9 +2590,7 @@ $$
 微細加工された通常のLC共振回路（インダクタ $ L $ とキャパシタ $ C $ からなる系）は、極低温に冷却して量子化すると量子力学的な調和振動子（Harmonic Oscillator）となる。そのハミルトニアンは、生成演算子 $ \hat{a}^\dagger $ と消滅演算子 $ \hat{a} $ を用いて次のように書ける。
 
 $$
-
 \hat{H}_{\text{LC}} = \hbar \omega_r \left( \hat{a}^\dagger \hat{a} + \frac{1}{2} \right)
-
 $$
 
 ここで $ \omega_r = 1/\sqrt{LC} $ は共振周波数である。この系のエネルギー準位 $ E_n = \hbar \omega_r (n + 1/2) $ は等間隔である。もしこの系の最低エネルギー状態 $ |0\rangle $ と第一励起状態 $ |1\rangle $ を量子ビットとして用いた場合、周波数 $ \omega_r $ のマイクロ波を照射してゲート操作（例えば $ |0\rangle \leftrightarrow |1\rangle $ の遷移）を行おうとすると、同時に等間隔な $ |1\rangle \leftrightarrow |2\rangle $ や $ |2\rangle \leftrightarrow |3\rangle $ の遷移も駆動されてしまう。これでは2準位系として機能しない。
@@ -2971,25 +2605,19 @@ $$
 クーパー対の数を表す電荷演算子 $ \hat{n} $ と、超伝導位相差を表す位相演算子 $ \hat{\phi} $ は正準共役な変数であり、交換関係 $ [\hat{\phi}, \hat{n}] = i $ を満たす。トランズモンのハミルトニアンは次のように厳密に記述される。
 
 $$
-
 \hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
-
 $$
 
 ここで、 $ n_g $ は環境やゲート電圧によるオフセット電荷である。 $ E_J \gg E_C $ の極限において、位相の量子ゆらぎは小さく抑えられるため、コサイン項をテイラー展開し、非調和振動子として扱うことができる。
 
 $$
-
 - E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
-
 $$
 
 この $ \hat{\phi}^4 $ の項が、系に非調和性（Anharmonicity）をもたらす。摂動論による計算結果として、エネルギー準位間の非調和性 $ \alpha $ は以下のように近似される。
 
 $$
-
 \alpha \equiv (E_2 - E_1) - (E_1 - E_0) \approx -E_C
-
 $$
 
 この負の非調和性（ $ E_1 \to E_2 $ の遷移周波数が $ E_0 \to E_1 $ よりも小さい）により、マイクロ波パルスを用いて $ |0\rangle $ と $ |1\rangle $ の計算基底空間内で安全に単一量子ビットゲートを実行可能となる。
@@ -3000,17 +2628,13 @@ $$
 量子ビットと読み出し用マイクロ波共振器の結合系は、ジェインズ・カミングス（Jaynes-Cummings）モデルによって記述される。
 
 $$
-
 \hat{H}_{\text{JC}} = \frac{\hbar \omega_q}{2} \hat{\sigma}_z + \hbar \omega_r \hat{a}^\dagger \hat{a} + \hbar g (\hat{\sigma}_+ \hat{a} + \hat{\sigma}_- \hat{a}^\dagger)
-
 $$
 
 ここで $ g $ は結合強度である。量子ビットの遷移周波数 $ \omega_q $ と共振器の周波数 $ \omega_r $ が大きく離れている分散領域（ $ |\omega_q - \omega_r| \gg g $ ）においては、シュリーファー・ウルフ変換により有効ハミルトニアンは次のように対角化される。
 
 $$
-
 \hat{H}_{\text{disp}} \approx \frac{\hbar \omega_q}{2} \hat{\sigma}_z + \hbar \left( \omega_r + \frac{g^2}{\Delta} \hat{\sigma}_z \right) \hat{a}^\dagger \hat{a}
-
 $$
 
 ここで $ \Delta = \omega_q - \omega_r $ である。この式の第二項が示す物理的意味は極めて重要である。共振器の有効周波数が量子ビットの状態（ $ \hat{\sigma}_z = +1 $ か $ -1 $ か）に応じて $ \pm g^2/\Delta $ だけシフトする。したがって、共振器にプローブ用マイクロ波を透過または反射させ、その位相シフトを測定することで、量子ビットの状態を射影測定することができる。
@@ -3029,9 +2653,7 @@ $$
 トラップされたイオンは、真空チャンバー内でレーザー冷却（ドップラー冷却およびサイドバンド冷却）を施される。これにより、イオンの運動エネルギーは量子力学的な基底状態（フォノン数 $ n=0 $ ）まで奪い去られる。量子ビットの計算基底は、イオンの内部電子状態にエンコードされる。内部状態のハミルトニアンは単純である。
 
 $$
-
 \hat{H}_{\text{internal}} = \frac{\hbar \omega_0}{2} \hat{\sigma}_z
-
 $$
 
 ### 11.2.2 ラム・ディッケ領域とMølmer-Sørensenゲートの数理
@@ -3041,17 +2663,13 @@ $$
 2量子ビットゲートの実装として最も標準的なのが Mølmer-Sørensen（MS）ゲート である。2つのイオンに対して、フォノンモードの周波数 $ \omega_m $ に対してわずかに離調させた2色のレーザー光を同時に照射する。ラム・ディッケ・パラメータ $ \eta = k z_0 $ が十分に小さいラム・ディッケ領域（ $ \eta \sqrt{n} \ll 1 $ ）において、相互作用ハミルトニアンは次のように展開できる。
 
 $$
-
 \hat{H}_{\text{int}} \approx \hbar \Omega \sum_{j=1,2} \hat{\sigma}_\phi^{(j)} \left( \eta \hat{a} e^{i \delta t} + \eta \hat{a}^\dagger e^{-i \delta t} \right)
-
 $$
 
 ここで $ \Omega $ はラビ周波数、 $ \delta $ は離調である。マグナス展開を用いて時間発展演算子を計算すると、適切なゲート時間の後、運動モードは元の状態に復帰しつつ、内部状態の間に幾何学的な位相が付与され、有効なスピン-スピン相互作用が残留する。
 
 $$
-
 \hat{U}_{\text{MS}} = \exp\left( -i \frac{\pi}{4} \hat{\sigma}_\phi \otimes \hat{\sigma}_\phi \right)
-
 $$
 
 この演算は、完全にエンタングルした状態を生成し、CNOTゲートと等価な計算能力を持つ。全結合（All-to-all connectivity）が可能である点が、近接する量子ビットとしか結合できない超伝導方式との決定的な違いである。
@@ -3068,9 +2686,7 @@ $$
 我々が住む3次元空間において、素粒子はボソンとフェルミオンの2種類しか存在しない。しかし、2次元のトポロジカル物質系においては、粒子の交換操作によって波動関数が任意の位相を獲得する「エニオン（Anyon）」が存在し得る。さらに特異な「非可換エニオン（Non-Abelian anyon）」の場合、2つの粒子を交換すると、系は同じエネルギーの縮退状態から別の直交状態へとユニタリ回転する。
 
 $$
-
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
-
 $$
 
 この非可換エニオンの最も有力な物理的候補が、物性物理学における準粒子としての「マヨラナ・ゼロ・モード（Majorana Zero Modes, MZM）」である。1次元半導体ナノワイヤ（InSbなど）に強いスピン軌道相互作用を持たせ、s波超伝導体に近接接合させ、外部磁場を印加する。キタエフ（Alexei Kitaev）が提案したモデルに従えば、特定のパラメータ領域においてナノワイヤはトポロジカル超伝導相へ相転移し、ワイヤの両端にエッジ状態としてゼロエネルギーのマヨラナ粒子が局在する。
@@ -3078,9 +2694,7 @@ $$
 マヨラナ演算子 $ \hat{\gamma}_1, \hat{\gamma}_2 $ は、自己共役（ $ \hat{\gamma}_j = \hat{\gamma}_j^\dagger $ ）かつ反交換関係 $ \{ \hat{\gamma}_i, \hat{\gamma}_j \} = 2\delta_{ij} $ を満たす。通常のディラック・フェルミオンの生成・消滅演算子は、この2つのマヨラナ演算子を用いて空間的に非局所的に構成できる。
 
 $$
-
 \hat{c} = \frac{1}{2}(\hat{\gamma}_1 + i\hat{\gamma}_2), \quad \hat{c}^\dagger = \frac{1}{2}(\hat{\gamma}_1 - i\hat{\gamma}_2)
-
 $$
 
 この1つの電子状態（フェルミオン・パリティ）が、ナノワイヤの両端という空間的に隔離された2点に「分割」されてエンコードされる。局所的なノイズが系の両端を同時に、かつ正確な相関をもって擾乱させる確率は極めて低いため、量子情報は本質的にデコヒーレンスから保護される（トポロジカル保護）。
@@ -3149,17 +2763,13 @@ NISQデバイスの限界を打破し、化学計算、材料科学、あるい�
 数学的に記述しましょう。初期状態を $ |\psi_0\rangle = |0\rangle^{\otimes n} $ とします。ここに、ランダムに選択されたユニタリ変換 $ U = U_d U_{d-1} \dots U_1 $ を作用させます。最終状態 $ |\psi_f\rangle $ はテンソル積と線形結合を用いて以下のように表されます。
 
 $$
-
 |\psi_f\rangle = U |0\rangle^{\otimes n} = \sum_{x \in \{0, 1\}^n} \alpha_x |x\rangle
-
 $$
 
 ここで $ \alpha_x = \langle x | U | 0 \rangle^{\otimes n} $ は、特定のビット列 $x$ が観測される確率振幅であり、複素数です。このとき、測定によってビット列 $x$ が得られる理想的な確率 $ P_{\text{ideal}}(x) $ は、量子力学におけるボルンの規則（Born Rule）により次のように与えられます。
 
 $$
-
 P_{\text{ideal}}(x) = |\alpha_x|^2 = \left| \langle x | U | 0 \rangle^{\otimes n} \right|^2
-
 $$
 
 十分に深い（$d$ が大きい）ランダム量子回路においては、各振幅 $ \alpha_x $ は複素平面上でランダムウォーク的な振る舞いを示し、その確率分布 $ P_{\text{ideal}}(x) $ はポーター・トーマス分布（Porter-Thomas distribution）に従うことが知られています。すなわち、確率 $p$ が出現する確率密度関数は $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $ となります。これは、特定のビット列が他のビット列よりも観測されやすい「スペックル（斑点）パターン」を形成することを意味します。
@@ -3169,9 +2779,7 @@ $$
 実験の成否を評価するために導入されたのが、線形クロスエントロピーベンチマーク（Linear Cross-Entropy Benchmarking, XEB）です。忠実度（Fidelity） $ \mathcal{F}_{\text{XEB}} $ は次のように定義されます。
 
 $$
-
 \mathcal{F}_{\text{XEB}} = 2^n \sum_{x \in \{0, 1\}^n} P_{\text{ideal}}(x) P_{\text{exp}}(x) - 1
-
 $$
 
 ここで、$ P_{\text{exp}}(x) $ は実際の量子プロセッサ（ハードウェアのノイズを含む）から得られた経験的な確率分布です。もし装置が完全にランダムなノイズ（完全な混合状態の密度行列 $ \rho = \frac{I}{2^n} $ ）を出力する場合、$ P_{\text{exp}}(x) = \frac{1}{2^n} $ となり、$ \mathcal{F}_{\text{XEB}} = 0 $ となります。一方、完全なノイズレスの理想的な純粋状態を出力する量子コンピュータであれば、$ \mathcal{F}_{\text{XEB}} \approx 1 $ となります。Googleの実験では $ \mathcal{F}_{\text{XEB}} \approx 0.002 $ というゼロより明確に大きく、統計的有意性を持つ値が確認されました。このわずかな忠実度であっても、古典コンピュータで同等のサンプルを生成することが計算複雑性理論的に極めて困難であるため、量子超越性の証明と見なされたのです。
@@ -3195,9 +2803,7 @@ graph TD
 この誤解は、アダマールゲートなどによる状態の重ね合わせ $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $ によって全ての入力に対する関数の評価を「一度の操作で」行えるという事実（量子並列性）に起因しています。オラクル（計算を担うユニタリ演算子） ** $U_f$ ** を用いて、関数 $ f(x) $ の計算を重ね合わせ状態に対して実行すると、状態全体は線形性に従って次のように発展します。
 
 $$
-
 U_f \left( \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |0\rangle \right) = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |f(x)\rangle
-
 $$
 
 確かにこの状態ベクトルの内部には、全ての $x$ に対する $f(x)$ の答えが確率振幅の部分系として内包されています。しかし、量子力学における**観測の公理**（波動関数の収縮）を思い出してください。この出力レジスタに対して測定操作を行った場合、得られるのは確率 $\frac{1}{2^n}$ でランダムに選ばれた単一のペア $ (x, f(x)) $ に過ぎません。残りの $ 2^n - 1 $ 個の情報は、非可逆的な射影測定によって永遠に失われます。つまり、「並列に計算すること（状態の発展）」と「並列に計算した結果から我々が欲しい特定の情報を抽出すること（状態の読み出し）」の間には、越えられない絶望的なギャップが存在するのです。
@@ -3211,9 +2817,7 @@ $$
 グローバーの反復演算子 ** $G$ ** は、オラクルによる正解状態の位相反転演算子 $ U_\omega = I - 2|\omega\rangle\langle\omega| $ と、平均値の周りでの反転演算子 $ U_s = 2|s\rangle\langle s| - I $ の積として定義されます。
 
 $$
-
 G = U_s U_\omega = (2|s\rangle\langle s| - I)(I - 2|\omega\rangle\langle\omega|)
-
 $$
 
 このユニタリ演算子 ** $G$ ** を約 $ \frac{\pi}{4}\sqrt{N} $ 回適用することで、状態ベクトルは目的の $ |\omega\rangle $ へと回転し、正解を観測する確率をほぼ1（100%）に高めることができます。しかし、ここで極めて重要な事実は、これはあくまで「平方根の加速」であり、指数関数的な加速（ $ O(2^n) \to O(\text{poly}(n)) $ ）ではないということです。現在に至るまで、NP完全問題の一般ケースを多項式時間で解明するような量子干渉のパターンは見つかっていません。多くの量子情報科学者や計算機科学者は、計算複雑性理論の根幹的な予想として ** $\text{BQP} \not\supset \text{NP-Complete}$ ** （量子コンピュータはNP完全問題を効率的に解けない）であると強く信じています。
@@ -3231,22 +2835,17 @@ $$
 表面符号では、量子情報を保持する「データ量子ビット」を2次元格子のエッジ（辺）に配置し、エラーを検知するための「シンドローム測定用量子ビット（アンシラ量子ビット）」を格子のプラケット（面）と頂点（バーテックス）に配置します。そして、次のようなパウリ演算子のテンソル積からなるスタビライザー演算子群を定義します。
 
 $$
-
 B_p = \bigotimes_{i \in \partial p} Z_i \quad \text{(プラケット演算子：Zエラーを検出)}
-
-$$
 $$
 
+$$
 A_v = \bigotimes_{i \in \delta v} X_i \quad \text{(バーテックス演算子：Xエラーを検出)}
-
 $$
 
 ここで、すべての $ B_p $ と $ A_v $ は互いに可換（反交換しない）、すなわち交換関係 $ [B_p, A_v] = 0 $ を満たします。我々が情報を書き込む「論理状態（符号空間）」 ** $|\psi_L\rangle$ ** は、これら全てのスタビライザー演算子の固有値が $+1$ であるような、同時固有状態の張る部分空間として厳密に定義されます。
 
 $$
-
 B_p |\psi_L\rangle = +1 |\psi_L\rangle, \quad A_v |\psi_L\rangle = +1 |\psi_L\rangle \quad (\text{for all } p, v)
-
 $$
 
 外部からの熱ノイズや操作エラーによって、いずれかの物理量子ビットに予期せぬ反転エラー（パウリ $X$）や位相エラー（パウリ $Z$）が発生したとしましょう。すると、そのエラー演算子は近接する特定のスタビライザー演算子と反交換関係（ $\{X, Z\} = 0 $ ）を持つため、そのスタビライザーを測定した結果（シンドローム値）が $+1$ から $-1$ へと反転フリップします。我々は、保護されている論理状態そのもの（重み係数 $\alpha, \beta$ の値）を一切観測・破壊することなく、この $-1$ となる位置（デフェクト）のペアを継続的にトラッキングします。そして、「最小重み完全マッチング（Minimum Weight Perfect Matching）」などの古典アルゴリズムを用いて、どの物理量子ビットの経路上でどのようなエラーが起きたかを最尤推定し、ソフトウェア的に、あるいは物理的に逆操作を施して訂正するのです。

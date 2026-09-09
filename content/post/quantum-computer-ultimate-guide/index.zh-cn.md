@@ -9,6 +9,7 @@ mermaid: true
 image: "cover.webp"
 ---
 
+
 # 第1章: 量子计算机的开端与局限
 
 ## 1.1 经典计算的物理极限与摩尔定律的终结
@@ -18,9 +19,7 @@ image: "cover.webp"
 当晶体管的栅极绝缘层或沟道长度达到几纳米尺度，即相当于几个至几十个原子的厚度时，电子便会因波函数的渗透，以一定的概率穿透在经典力学中本无法逾越的能量势垒。根据WKB近似，对于入射到势垒高度为 $V_0$ 、宽度为 $a$ 的区域中质量为 $m$ 的电子（能量 $E < V_0$ ），其透射概率 $T$ 由下式给出：
 
 $$
-
 T \approx \exp \left( - \frac{2}{\hbar} \int_{0}^{a} \sqrt{2m(V_0 - E)} \, dx \right)
-
 $$
 
 这里 $\hbar$ 是约化普朗克常数。随着微细化导致势垒宽度 $a$ 减小，透射概率 $T$ 将呈指数级增大，结果导致即使在关断状态下也会有电流通过，即“漏电流（Leakage Current）”达到不可忽视的规模。这不仅会导致功耗剧增与发热，更意味着晶体管作为经典确定性开关元件的功能走向崩溃。
@@ -28,9 +27,7 @@ $$
 此外，信息处理的热力学极限同样不容忽视。1961年，罗尔夫·兰道尔（Rolf Landauer）指出，在擦除信息（执行不可逆逻辑运算）的过程中，必然会产生热量（兰道尔原理）。在擦除1比特信息时，向环境中耗散的最小热量 $\Delta Q$ 表示如下：
 
 $$
-
 \Delta Q \ge k_B T \ln 2
-
 $$
 
 这里 $k_B$ 是玻尔兹曼常数， $T$ 是绝对温度。只要经典计算机使用逻辑门（例如AND门、OR门等不可逆逻辑门）进行运算，就无法回避这一热力学下限。随着微细化的推进，当单个元件所操控的能量逼近这一极限时，经典计算机的发展便会受到根本物理定律的限制而陷入停滞。
@@ -44,17 +41,13 @@ $$
 这番话的背后，揭示了描述量子系统状态的“希尔伯特空间（Hilbert Space）”维度随粒子数呈指数级爆炸的事实。考虑一个由 $N$ 个自旋为 $1/2$ 的粒子（即具有两个量子态的系统）构成的系统。单个粒子的状态由二维复向量空间 $\mathbb{C}^2$ 描述。因此，由 $N$ 个粒子组成的复合系统的状态空间 $\mathcal{H}$ ，可由各子系统状态空间的张量积构建而成：
 
 $$
-
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
-
 $$
 
 该系统的纯态（Pure State） $|\Psi\rangle$ 可表示为 $2^N$ 个基底向量的线性组合（叠加）。在此，使用狄拉克符号（Bra-ket notation），任意量子态均可展开如下：
 
 $$
-
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
-
 $$
 
 这里 $|x\rangle$ 是计算基底（Computational Basis）， $c_x \in \mathbb{C}$ 是被称为概率幅（Probability Amplitude）的复数。状态向量必须满足归一化条件 $\sum_{x=0}^{2^N-1} |c_x|^2 = 1$ 。
@@ -70,25 +63,19 @@ $$
 量子计算的基本单元是“量子比特（Qubit）”。经典比特只能处于 $0$ 或 $1$ 的确定状态，与此相反，量子比特可以处于 $|0\rangle$ 和 $|1\rangle$ 的任意线性叠加态：
 
 $$
-
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle \quad (\alpha, \beta \in \mathbb{C}, \ |\alpha|^2 + |\beta|^2 = 1)
-
 $$
 
 对该量子比特施加的操作是线性且保持范数不变的运算，即由酉矩阵（满足 $U^\dagger U = I$ 的矩阵，其中 $U^\dagger$ 为伴随矩阵， $I$ 为单位矩阵）表示。例如，作用于单量子比特的代表性量子门——阿达马门（Hadamard Gate） $H$ 定义如下：
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
-
 $$
 
 将阿达马操作作用于基态 $|0\rangle$ ，可得：
 
 $$
-
 H |0\rangle = \frac{1}{\sqrt{2}} \left( |0\rangle + |1\rangle \right)
-
 $$
 
 由此，系统转入以相同概率观测到 $|0\rangle$ 和 $|1\rangle$ 的完全叠加态。多伊奇的功绩在于将这种量子力学的基本原理升华为计算模型，并在数学上证明了通用量子计算机（Universal Quantum Computer）在原理上是可构建的。
@@ -100,17 +87,13 @@ $$
 确实，通过对 $N$ 个量子比特的系统并行施加阿达马门，仅通过一次操作就能生成全部 $2^N$ 个状态的叠加态：
 
 $$
-
 H^{\otimes N} |0\rangle^{\otimes N} = \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle
-
 $$
 
 进而，应用一个评估特定函数 $f(x)$ 的酉算子 $U_f$ ，状态将发生如下变化：
 
 $$
-
 U_f \left( \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle |0\rangle \right) = \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle |f(x)\rangle
-
 $$
 
 在此，表面上看似乎确实通过一次操作就“计算”出了所有 $2^N$ 个 $x$ 对应的 $f(x)$ 值。然而，量子力学的基本要求——“测量公理（玻恩定则，Born Rule）”横亘在前。当我们对这一叠加态进行测量（观测）时，我们所能获得的结果仅仅只有一个，系统将以概率 $P(x) = 1/2^N$ 发生波函数坍缩（Wavefunction Collapse），随机坍缩到某一个状态 $|x\rangle |f(x)\rangle$ 。换言之，即便同时计算出了所有答案，通过测量能够提取出来的也仅仅是“随机的一个”，这与单纯靠随机掷骰子进行计算毫无二致。
@@ -122,9 +105,7 @@ $$
 作为简单的示例，我们来看看由相位反转与阿达马变换引起的干涉。对状态 $\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ 再次施加阿达马门会发生什么？
 
 $$
-
 H \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) = \frac{1}{2} \big( (|0\rangle + |1\rangle) - (|0\rangle - |1\rangle) \big) = \frac{1}{2} (2|1\rangle) = |1\rangle
-
 $$
 
 在这里，通往 $|0\rangle$ 态的概率幅为 $1/2 - 1/2 = 0$ ，被完全抵消（相消干涉 / 破坏性干涉）。而通往 $|1\rangle$ 态的振幅则变为 $1/2 + 1/2 = 1$ ，被有效放大（相长干涉 / 建设性干涉）。
@@ -182,17 +163,13 @@ graph TD
 让我们用更形式化的向量空间语言来表达这一点。经典比特的状态可以使用二维实数向量空间 $\mathbb{R}^2$ 中的标准基来表示。我们将状态 $0$ 和状态 $1$ 分别定义为以下列向量：
 
 $$
-
 \mathbf{v}_0 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad \mathbf{v}_1 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 在确定性（Deterministic）的经典系统中，比特的状态必定确定为 $\mathbf{v}_0$ 或 $\mathbf{v}_1$ 之一。然而，如果存在热噪声等干扰或我们知识的不确定性时，必须将其描述为经典概率的（Probabilistic）比特状态。在这种情况下，比特的状态表示为一个概率分布，状态向量 $\mathbf{p}$ 可以写为基向量的凸组合（Convex combination）：
 
 $$
-
 \mathbf{p} = p_0 \mathbf{v}_0 + p_1 \mathbf{v}_1 = \begin{pmatrix} p_0 \\ p_1 \end{pmatrix}
-
 $$
 
 其中， $p_0, p_1$ 是分别表示状态为 $0$ 和 $1$ 的概率的实数，且必须满足柯尔莫哥洛夫概率公理的以下条件：
@@ -203,9 +180,7 @@ $$
 在经典比特的世界中，由多个比特组合而成的复合系统，由各自概率向量的张量积（克罗内克积）来描述。例如，两个经典比特的联合概率如下：
 
 $$
-
 \mathbf{p}_{AB} = \mathbf{p}_A \otimes \mathbf{p}_B = \begin{pmatrix} p_{A0} \\ p_{A1} \end{pmatrix} \otimes \begin{pmatrix} p_{B0} \\ p_{B1} \end{pmatrix} = \begin{pmatrix} p_{A0}p_{B0} \\ p_{A0}p_{B1} \\ p_{A1}p_{B0} \\ p_{A1}p_{B1} \end{pmatrix}
-
 $$
 
 经典信息理论的框架非常强大，构成了现代数字社会的基础，但它终究是通过实数概率的相加来构造状态的，因此在原理上无法表现波的干涉那样“概率的相互抵消”。这正是经典物理学的局限性所在，也揭示了向量子信息飞跃的必要性。
@@ -219,33 +194,25 @@ $$
 表示量子状态的列向量称为 **右矢（Ket vector）** ，记作 $|\psi\rangle$ 。对应于经典比特的 $0$ 和 $1$ 的状态，我们引入称为计算基（Computational basis）的标准正交基。它们也被称为量子比特的 $Z$ 基，分别定义为 $|0\rangle$ 和 $|1\rangle$ 。
 
 $$
-
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 另一方面，根据里斯表示定理（Riesz representation theorem），希尔伯特空间中的任意右矢，都唯一对应着一个对偶空间（Dual space）中的元素，作为连续线性泛函起作用。这被称为 **左矢（Bra vector）** ，记作 $\langle\psi|$ 。在矩阵表示中，对右矢取厄米共轭（复共轭转置，用 $^\dagger$ 表示）即可得到相应的左矢。
 
 $$
-
 \langle\psi| = (|\psi\rangle)^\dagger = (|\psi\rangle^*)^T
-
 $$
 
 例如，基底的左矢为以下行向量：
 
 $$
-
 \langle 0| = \begin{pmatrix} 1 & 0 \end{pmatrix}, \quad \langle 1| = \begin{pmatrix} 0 & 1 \end{pmatrix}
-
 $$
 
 狄拉克符号的真正价值在于，它使内积计算的视觉呈现变得极其清晰。左矢 $\langle\phi|$ 和右矢 $|\psi\rangle$ 的内积写作 $\langle\phi|\psi\rangle$ （这源于狄拉克的文字游戏，Bra 和 Ket 组合成 Bracket，即括号）。由于计算基 $\{|0\rangle, |1\rangle\}$ 构成标准正交系（Orthonormal system），使用克罗内克 $\delta_{ij}$ 可以表示如下：
 
 $$
-
 \langle i | j \rangle = \delta_{ij} \quad (i, j \in \{0, 1\})
-
 $$
 
 具体而言，自身与自身的内积为 $1$ （ $\langle 0|0\rangle = 1$ ， $\langle 1|1\rangle = 1$ ），不同基之间的内积为 $0$ （ $\langle 0|1\rangle = 0$ ， $\langle 1|0\rangle = 0$ ）。
@@ -253,17 +220,13 @@ $$
 此外，左矢和右矢的张量积（相当于外积）写作 $|\psi\rangle\langle\phi|$ ，这表示从一个空间到另一个空间的线性算子（矩阵）。例如，到某个状态空间的投影算子（Projection operator）的构造如下：
 
 $$
-
 |0\rangle\langle 0| = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \begin{pmatrix} 1 & 0 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
-
 $$
 
 任意二维复向量空间的恒等算子 $I$ （Identity operator），可以通过基底的完备性关系（Completeness relation）分解表示如下，这在量子力学计算中是使用极其频繁且强大的工具。
 
 $$
-
 I = |0\rangle\langle 0| + |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
-
 $$
 
 ## 2.3 量子叠加原理与复数概率幅
@@ -273,9 +236,7 @@ $$
 因此，单个量子比特最一般的纯态（Pure state） $|\psi\rangle$ ，可使用计算基展开如下：
 
 $$
-
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
-
 $$
 
 这里， $\alpha$ 和 $\beta$ 是被称为 **复数概率幅（Complex probability amplitude）** 的复数（ $\alpha, \beta \in \mathbb{C}$ ）。与经典概率为非负实数形成对比，量子状态具有“复数”的系数，这是量子计算机拥有超越经典计算机计算能力的根本原因。由于复数具有相位（Phase），并且可以指向复平面上的任意方向，因此它们可以像波一样相互增强（相长干涉）或相互抵消（相消干涉）。量子算法的本质在于巧妙地操控这种干涉效应，放大正确答案的概率幅，并抵消错误答案的概率幅。
@@ -283,54 +244,41 @@ $$
 从量子系统中提取经典信息的过程就是“测量（Measurement）”。考虑投影测量（Projective measurement），根据玻恩定则（Born rule），在使用计算基 $\{|0\rangle, |1\rangle\}$ 测量状态 $|\psi\rangle$ 时，得到结果为 $0$ 的概率 $P(0)$ 和得到结果为 $1$ 的概率 $P(1)$ ，分别由它们各自概率幅的绝对值的平方给出。
 
 $$
-
 P(0) = |\langle 0|\psi\rangle|^2 = |\alpha|^2 = \alpha \alpha^*
-
-$$
 $$
 
+$$
 P(1) = |\langle 1|\psi\rangle|^2 = |\beta|^2 = \beta \beta^*
-
 $$
 
 为了使系统必然被观测为某种状态，所有概率的总和必须严格为 $1$ 。因此，量子状态向量 $|\psi\rangle$ 的范数（长度）必须始终为 $1$ 。这就是 **归一化条件（Normalization condition）** 。
 
 $$
-
 \langle\psi|\psi\rangle = (\alpha^* \langle 0| + \beta^* \langle 1|)(\alpha |0\rangle + \beta |1\rangle) = |\alpha|^2 + |\beta|^2 = 1
-
 $$
 
 为了更深入地探讨这种复数概率幅的几何意义，让我们用极坐标表示 $\alpha$ 和 $\beta$ 。
 
 $$
-
 \alpha = r_0 e^{i\phi_0}, \quad \beta = r_1 e^{i\phi_1}
-
 $$
 
 其中 $r_0, r_1 \ge 0$ 是振幅的大小， $\phi_0, \phi_1 \in [0, 2\pi)$ 是各自的相位角。由于归一化条件使得 $r_0^2 + r_1^2 = 1$ ，我们可以引入实数参数 $\theta \in [0, \pi]$ 并设定 $r_0 = \cos(\frac{\theta}{2})$ ， $r_1 = \sin(\frac{\theta}{2})$ 。将此代入原状态向量，得到：
 
 $$
-
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) e^{i\phi_0} |0\rangle + \sin\left(\frac{\theta}{2}\right) e^{i\phi_1} |1\rangle
-
 $$
 
 让我们将整体提取出一个公共相位因子 $e^{i\phi_0}$ ：
 
 $$
-
 |\psi\rangle = e^{i\phi_0} \left( \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i(\phi_1 - \phi_0)} \sin\left(\frac{\theta}{2}\right) |1\rangle \right)
-
 $$
 
 在量子力学中，作用于整个状态向量的相位因子 $e^{i\phi_0}$ 被称为“全局相位（Global phase）”。计算对于任意可观测量（厄米算子） $A$ 的期望值 $\langle A \rangle$ 即可发现：
 
 $$
-
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
-
 $$
 
 因此，全局相位会相互抵消，这意味着通过任何物理测量都无法观测到它。也就是说， $|\psi\rangle$ 和 $e^{i\phi_0}|\psi\rangle$ 在希尔伯特空间上是不同的向量（作为射线则是同一的），但在物理上它们表示完全相同的状态。
@@ -338,9 +286,7 @@ $$
 因此，如果忽略全局相位，仅将 $|0\rangle$ 和 $|1\rangle$ 之间的相对相位（Relative phase） $\varphi = \phi_1 - \phi_0$ （这里 $\varphi \in [0, 2\pi)$ ）作为参数保留，任意单个量子比特的纯态就可以唯一且严格地表示为以下的 **标准形式** 。
 
 $$
-
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\varphi} \sin\left(\frac{\theta}{2}\right) |1\rangle
-
 $$
 
 ## 2.4 布洛赫球面（Bloch Sphere）的几何可视化
@@ -371,45 +317,35 @@ graph TD
 该布洛赫球面的坐标 $\mathbf{r} = (x, y, z)$ 可以作为量子力学中可观测量（Observable）—— **泡利矩阵（Pauli matrices）** ——的期望值被严格推导出来。作为二维系统厄米算子基的泡利矩阵定义如下：
 
 $$
-
 X = \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
 Y = \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
 Z = \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 对于任意状态 $|\psi\rangle$ ，这些泡利可观测量的期望值可以通过狄拉克符号计算求得。
 
 $$
-
 x = \langle\psi| X |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \cos\varphi
-
-$$
 $$
 
+$$
 y = \langle\psi| Y |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \sin\varphi
-
-$$
 $$
 
+$$
 z = \langle\psi| Z |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \cos^2\left(\frac{\theta}{2}\right) - \sin^2\left(\frac{\theta}{2}\right) = \cos\theta
-
 $$
 
 由此，布洛赫向量 $\mathbf{r} = (x, y, z)$ 完美地表示为了三维空间中的单位向量 $\mathbf{r} = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$ 。此外，任意纯态对应的密度矩阵（Density matrix） $\rho = |\psi\rangle\langle\psi|$ ，可以使用泡利向量 $\boldsymbol{\sigma} = (X, Y, Z)$ 和恒等矩阵 $I$ 极为优雅地写出：
 
 $$
-
 \rho = \frac{1}{2} \left( I + \mathbf{r} \cdot \boldsymbol{\sigma} \right) = \frac{1}{2} \left( I + xX + yY + zZ \right)
-
 $$
 
 如果显式展开矩阵元素并进行确认，结果如下：
 
 $$
-
 \rho = \frac{1}{2} \begin{pmatrix} 1 + z & x - iy \\ x + iy & 1 - z \end{pmatrix} = \begin{pmatrix} \cos^2(\frac{\theta}{2}) & e^{-i\varphi}\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) \\ e^{i\varphi}\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) & \sin^2(\frac{\theta}{2}) \end{pmatrix}
-
 $$
 
 这恰与张量积定义的外积 $|\psi\rangle\langle\psi|$ 的计算结果完全一致。特别需要指出的是，在纯态下，布洛赫向量的范数 $|\mathbf{r}| = 1$ ，且密度矩阵的迹满足 $\text{Tr}(\rho^2) = 1$ ；而在由于与环境交互或不完美的控制导致量子信息丢失（退相干）的混合态（Mixed state）中，由于它是纯态的统计系综，所以 $|\mathbf{r}| < 1$ 。因此，混合态表示为布洛赫球面“内部”的点，而信息完全丢失的最大混合态（Maximally mixed state） $\rho = I/2$ 则位于布洛赫球面的中心点 $\mathbf{r} = (0,0,0)$ 。
@@ -423,33 +359,25 @@ $$
 为了在数学上严格描述测量，我们使用投影算子的集合 $\{ P_m \}$ 。在 $Z$ 测量的情况下，投影算子如下：
 
 $$
-
 P_0 = |0\rangle\langle 0|, \quad P_1 = |1\rangle\langle 1|
-
 $$
 
 它们满足完备性关系 $P_0 + P_1 = I$ 和正交性 $P_i P_j = \delta_{ij} P_i$ 。根据玻恩定则，得到测量结果 $m \in \{0, 1\}$ 的概率 $P(m)$ 计算如下：
 
 $$
-
 P(m) = \langle\psi| P_m^\dagger P_m |\psi\rangle = \langle\psi| P_m |\psi\rangle
-
 $$
 
 这与之前的 $|\alpha|^2$ 和 $|\beta|^2$ 完全一致。最重要的是，在获得测量结果 $m$ 后得到的新量子状态 $|\psi'\rangle$ ，是将原始状态作用以投影算子，并使用新的范数重新归一化的结果。
 
 $$
-
 |\psi'\rangle = \frac{P_m |\psi\rangle}{\sqrt{P(m)}}
-
 $$
 
 如果结果为 $0$ ，则
 
 $$
-
 |\psi'\rangle = \frac{|0\rangle\langle 0| (\alpha|0\rangle + \beta|1\rangle)}{|\alpha|} = \frac{\alpha}{|\alpha|} |0\rangle = e^{i\phi_0} |0\rangle \equiv |0\rangle
-
 $$
 
 于是，状态完全坍缩为 $|0\rangle$ （全局相位被忽略）。这就是被称为波函数坍缩（Wavefunction collapse）现象的数学描述。一旦进行了测量且状态发生了坍缩，原本包含在叠加态中的相对相位 $\varphi$ 和振幅信息（ $\alpha, \beta$ ）将永远丢失。因此，原则上不可能通过对单个副本进行一次测量来读取量子态的完整信息（这也与“不可克隆定理”密切相关）。
@@ -459,17 +387,13 @@ $$
 在深入理解了单量子比特的性质之后，我们也简要提及在接下来的章节中将正式处理的“多量子比特系统”的数学基础。不同于经典概率分布通过笛卡尔积扩展状态空间，量子力学中复合系统的希尔伯特空间 $\mathcal{H}_{AB}$ 由各子系统希尔伯特空间 $\mathcal{H}_A$ 和 $\mathcal{H}_B$ 的 **张量积（Tensor product）** 构成。
 
 $$
-
 \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
-
 $$
 
 两个独立量子比特状态的张量积展开如下，形成一个四维复向量空间。
 
 $$
-
 |\Psi\rangle_{AB} = (\alpha_0|0\rangle + \alpha_1|1\rangle) \otimes (\beta_0|0\rangle + \beta_1|1\rangle) = \alpha_0\beta_0|00\rangle + \alpha_0\beta_1|01\rangle + \alpha_1\beta_0|10\rangle + \alpha_1\beta_1|11\rangle
-
 $$
 
 在这里，存在无法被因式分解为状态的张量积的状态（例如：贝尔态 $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$ ），这是量子纠缠（Entanglement）的源泉。张量积导致的维度呈指数级爆炸（ $N$ 个量子比特具有 $2^N$ 维度）正是量子计算机发挥压倒性并行计算能力的基石。
@@ -498,9 +422,7 @@ $$
 根据保罗·狄拉克（Paul Dirac）引入的狄拉克符号（Bra-ket notation），态向量作为列向量处理，记作右矢（Ket） ** $| \psi \rangle$ ** 。属于对偶空间 $\mathcal{H}^*$ 的行向量记作左矢（Bra） ** $\langle \psi |$ ** ，它们互为厄米共轭（复共轭转置）关系。也就是说，
 
 $$
-
 \langle \psi | = ( | \psi \rangle )^\dagger
-
 $$
 
 在希尔伯特空间上，任意两个状态 ** $| \phi \rangle$ ** 与 ** $| \psi \rangle$ ** 的内积，通过左矢与右矢的乘积 ** $\langle \phi | \psi \rangle$ ** 计算，给出复数值。该内积满足以下性质：
@@ -512,9 +434,7 @@ $$
 为了使概率解释成立，物理状态必须始终满足归一化条件（Normalization condition）。也就是说，态向量 ** $| \psi \rangle$ ** 的范数为 1：
 
 $$
-
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
-
 $$
 
 此外，由于柯西-施瓦茨不等式（Cauchy-Schwarz inequality） $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ 成立，归一化状态之间内积的绝对值始终在 0 到 1 之间。这构成了后文将其解释为“概率”的数学基础。
@@ -526,25 +446,19 @@ $$
 在希尔伯特空间 $\mathcal{H}$ 中，存在完备正交基（Orthonormal basis） $\{ | e_i \rangle \}$ 。这些基底彼此正交且已归一化：
 
 $$
-
 \langle e_i | e_j \rangle = \delta_{ij}
-
 $$
 
 （ $\delta_{ij}$ 为克罗内克符号，Kronecker delta）。此外，作为完备性关系（Completeness relation）或恒等分解，恒等算子 $I$ 可以展开如下：
 
 $$
-
 I = \sum_i | e_i \rangle \langle e_i |
-
 $$
 
 任意量子态 ** $| \psi \rangle$ ** ，通过作用该恒等算子，可以唯一地展开为基底的线性组合：
 
 $$
-
 | \psi \rangle = I | \psi \rangle = \left( \sum_i | e_i \rangle \langle e_i | \right) | \psi \rangle = \sum_i \langle e_i | \psi \rangle | e_i \rangle = \sum_i c_i | e_i \rangle
-
 $$
 
 这里的展开系数 $c_i = \langle e_i | \psi \rangle$ 被称为复概率幅，在后文所述的玻恩定则中起着决定性作用。由归一化条件 $\langle \psi | \psi \rangle = 1$ 可导出 $\sum_i |c_i|^2 = 1$ 。
@@ -567,9 +481,7 @@ $$
 因此，任意可观测量 $A$ 均可利用其本征值 $a_i$ 与本征向量 ** $| a_i \rangle$ ** ，表示为投影算子 $P_i = | a_i \rangle \langle a_i |$ 的线性组合，即进行谱分解（Spectral decomposition）：
 
 $$
-
 A = \sum_i a_i | a_i \rangle \langle a_i |
-
 $$
 
 通过这种形式化表述，“测量物理量”这一行为便可理解为向希尔伯特空间特定基底（本征向量）投影的几何操作。例如，量子比特的 $\sigma_z$ 观测，可以完全描述为向对应于本征值 $+1$ 的状态 ** $| 0 \rangle$ ** 与对应于本征值 $-1$ 的状态 ** $| 1 \rangle$ ** 构成的正交基上的投影操作。
@@ -584,9 +496,7 @@ $$
 描述时间演化的基础方程——含时薛定谔方程表示如下：
 
 $$
-
 i\hbar \frac{d}{dt} | \psi(t) \rangle = H | \psi(t) \rangle
-
 $$
 
 其中 $i$ 为虚数单位， $\hbar$ 为约化普朗克常数， $H$ 为对应系统总能量的可观测量——哈密顿算子（Hamiltonian）。
@@ -594,9 +504,7 @@ $$
 在考虑哈密顿量 $H$ 不含时（随时间不变）的系统时，该微分方程可形式上进行积分，其解由下式给出：
 
 $$
-
 | \psi(t) \rangle = \exp\left( -\frac{i}{\hbar} H (t - t_0) \right) | \psi(t_0) \rangle
-
 $$
 
 该指数函数形式的算子 $U(t, t_0) = \exp\left( -i H (t - t_0) / \hbar \right)$ 即为时间演化算子。由于哈密顿量 $H$ 是厄米的（ $H = H^\dagger$ ），根据斯通定理（Stone's theorem）， $U$ 必然是酉算子（Unitary operator）。所谓酉算子，是指其厄米共轭等于其逆算子（ $U^\dagger U = U U^\dagger = I$ ）的算子。
@@ -611,25 +519,19 @@ $$
 对处于状态 ** $| \psi \rangle$ ** 的系统进行具有谱分解 $A = \sum_i a_i P_i$ 的可观测量 $A$ 的观测时，获得的测量值必然是 $A$ 的本征值 $a_i$ 之一。获得特定本征值 $a_k$ 的概率 $p(a_k)$ 遵循玻恩定则，由下式给出：
 
 $$
-
 p(a_k) = \langle \psi | P_k | \psi \rangle = \| P_k | \psi \rangle \|^2
-
 $$
 
 若本征值 $a_k$ 是非简并的（对应本征向量 ** $| a_k \rangle$ ** 仅有一个），则投影算子为 $P_k = | a_k \rangle \langle a_k |$ ，该概率可计算为状态与该本征向量内积的模平方（绝对值平方）：
 
 $$
-
 p(a_k) = \langle \psi | a_k \rangle \langle a_k | \psi \rangle = | \langle a_k | \psi \rangle |^2
-
 $$
 
 这正是将态向量 ** $| \psi \rangle$ ** 在基底 $\{ | a_i \rangle \}$ 下展开时的展开系数 $c_k = \langle a_k | \psi \rangle$ 的模平方 $|c_k|^2$ 。复概率幅 $c_k$ 本身虽然无法直接观测，但其模平方却作为现实世界中的观测概率呈现出来。提出该定则的马克斯·玻恩（Max Born）的这一深刻洞见，是将物理学从决定论推向概率论的划时代丰碑。可观测量 $A$ 的期望值 $\langle A \rangle$ 计算为所有本征值与其出现概率乘积之和，最终能以基于态向量的内积形式极其优美地表示出来：
 
 $$
-
 \langle A \rangle = \sum_i a_i p(a_i) = \sum_i a_i \langle \psi | P_i | \psi \rangle = \langle \psi | \left( \sum_i a_i P_i \right) | \psi \rangle = \langle \psi | A | \psi \rangle
-
 $$
 
 ## 3.6 观测引起的波包塌缩（态的归约）与退相干
@@ -640,9 +542,7 @@ $$
 因观测获得本征值 $a_k$ 后瞬间系统的状态 ** $| \psi' \rangle$ ** ，将瞬间转变（塌缩）为对原有态向量作用对应的投影算子 $P_k$ 并重新归一化后的状态：
 
 $$
-
 | \psi' \rangle = \frac{P_k | \psi \rangle}{\sqrt{p(a_k)}}
-
 $$
 
 若测量仪器是理想的，且系统状态塌缩到了非简并本征值 $a_k$ ，则观测后瞬间的状态严格成为本征向量 ** $| a_k \rangle$ ** 本身。换言之，若紧接着重复完全相同的观测，将以概率 1（100%）再次得到 $a_k$ 。这被称为“第一类测量”。
@@ -656,9 +556,7 @@ $$
 另一方面，若在观测过程中未知系统塌缩到了哪个状态（或者丢失了该信息），系统则必须被描述为经典的概率混合态（Mixed state）。例如，以概率 $p(a_k)$ 塌缩到状态 ** $| a_k \rangle$ ** 的系统系综，其密度算子如下所示：
 
 $$
-
 \rho' = \sum_k p(a_k) | a_k \rangle \langle a_k |
-
 $$
 
 此时，原处于纯态 $\rho = | \psi \rangle \langle \psi |$ 的非对角元（干涉项），因观测行为而完全消失。这种相干性的丧失正是“退相干（Decoherence）”的核心本质。
@@ -668,9 +566,7 @@ $$
 观测仪器本身同样是由大量粒子构成的量子系统的一部分，当量子系统与巨大的宏观环境（观测仪器、热库等）相互作用时，便会产生“量子纠缠（Entanglement）”。当对环境的自由度求偏迹（Partial trace）并计算出目标系统的约化密度矩阵（Reduced density matrix）后，原本处于纯态的系统态向量会迅速过渡为混合态，系统各分量之间的相位干涉性（相干性）也随之丧失：
 
 $$
-
 \rho_{S} = \mathrm{Tr}_{E} [ | \Psi_{SE} \rangle \langle \Psi_{SE} | ]
-
 $$
 
 由此，在宏观尺度上叠加态消失，系统表现得如同经典的概率混合一样。波包塌缩绝非物理定律的崩溃，而是可以视为与环境发生不可逆相互作用导致的信息耗散。克服这种退相干，正是实现容错量子计算机所面临的人类最大挑战。
@@ -710,25 +606,19 @@ graph TD
 量子系统的时间演化由表征系统的厄米算符即哈密顿量 ** $H$ ** （ ** $H^\dagger = H$ ** ）控制，遵循以下薛定谔方程：
 
 $$
-
 i\hbar \frac{d}{dt} |\psi(t)\rangle = H |\psi(t)\rangle
-
 $$
 
 假设哈密顿量 ** $H$ ** 是一个与时间无关的系统，任意时刻 ** $t$ ** 的量子态 ** $|\psi(t)\rangle$ ** 可以从初始态 ** $|\psi(0)\rangle$ ** 形式上积分如下：
 
 $$
-
 |\psi(t)\rangle = e^{-\frac{i}{\hbar}Ht} |\psi(0)\rangle
-
 $$
 
 我们将这里出现的时间演化算符定义为 ** $U(t) = e^{-\frac{i}{\hbar}Ht}$ ** 。由于指数函数肩上的 ** $H$ ** 是厄米的，计算该算符 ** $U(t)$ ** 的伴随算符（厄米共轭） ** $U(t)^\dagger$ ** 就会导出以下极其重要的性质：
 
 $$
-
 U(t)^\dagger U(t) = \left( e^{-\frac{i}{\hbar}Ht} \right)^\dagger e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}H^\dagger t} e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}Ht} e^{-\frac{i}{\hbar}Ht} = I
-
 $$
 
 同样地， ** $U(t) U(t)^\dagger = I$ ** 也成立。像这样，其伴随矩阵与自身逆矩阵相等的矩阵（ ** $U^\dagger = U^{-1}$ ** ）被称为“酉矩阵（Unitary Matrix）”。单量子比特门正是通过物理控制（例如照射具有特定频率和持续时间的微波脉冲等）有意设计的哈密顿量所实现的 ** $2 \times 2$ ** 酉矩阵。
@@ -736,9 +626,7 @@ $$
 酉矩阵在量子力学中绝对不可或缺的原因在于，它是唯一在数学上保证“概率守恒（范数守恒）”的线性变换。让我们计算一下任意量子态 ** $|\psi\rangle$ ** 和 ** $|\phi\rangle$ ** 施加酉变换 ** $U$ ** 后的状态内积：
 
 $$
-
 \langle \phi' | \psi' \rangle = ( \langle \phi | U^\dagger ) ( U |\psi\rangle ) = \langle \phi | U^\dagger U | \psi \rangle = \langle \phi | I | \psi \rangle = \langle \phi | \psi \rangle
-
 $$
 
 内积守恒意味着状态向量自身的范数（长度的平方）即 ** $\langle \psi | \psi \rangle$ ** 也守恒。根据量子力学的玻恩法则（Born rule），状态向量振幅绝对值的平方总和必须为总概率“1”，因此为了使量子门操作不破坏这种概率解释，操作必须是酉变换，这是绝对的前提条件。
@@ -746,9 +634,7 @@ $$
 此外，根据谱定理，任意酉矩阵 ** $U$ ** 可以使用具有实数特征值 ** $\lambda_k$ ** 的厄米矩阵 ** $K$ ** 表示为 ** $U = e^{iK}$ ** 。酉矩阵的特征值总是呈现绝对值为1的复数（ ** $e^{i\theta}$ ** ）的形式，且特征向量构成彼此正交的完备系。
 
 $$
-
 U = \sum_{j=1}^{d} e^{i \theta_j} |\phi_j\rangle \langle \phi_j|
-
 $$
 
 这表明，量子门的作用可以完全分解为“对特定的正交基底 ** $|\phi_j\rangle$ ** ，仅仅赋予纯粹的相位旋转 ** $e^{i\theta_j}$ ** ”的操作。
@@ -762,22 +648,17 @@ $$
 泡利X门是经典逻辑电路中NOT门的量子力学推广。使用狄拉克括号记法的外积（投影算符）表示定义如下：
 
 $$
-
 X = \sigma_x = |0\rangle\langle 1| + |1\rangle\langle 0| = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
-
 $$
 
 严格通过矩阵计算来确认其对计算基底（ ** $|0\rangle, |1\rangle$ ** ）的作用：
 
 $$
-
 X |0\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} = |1\rangle
-
-$$
 $$
 
+$$
 X |1\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} = |0\rangle
-
 $$
 
 如此一来，振幅被完全翻转。几何上，它对应于在布洛赫球中以X轴为旋转轴的 ** $\pi$ ** （180度）旋转操作。北极（ ** $|0\rangle$ ** ）被映射到南极（ ** $|1\rangle$ ** ），南极被映射到北极。
@@ -787,17 +668,13 @@ $$
 泡利Y门同时引起比特翻转和相位翻转，并进一步赋予虚数单位 ** $i$ ** 的相位因子。其外积表示与矩阵表示如下：
 
 $$
-
 Y = \sigma_y = -i|0\rangle\langle 1| + i|1\rangle\langle 0| = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
-
 $$
 
 对计算基底的作用为：
 
 $$
-
 Y |0\rangle = i|1\rangle, \quad Y |1\rangle = -i|0\rangle
-
 $$
 
 在布洛赫球上，它表示绕Y轴的 ** $\pi$ ** 旋转。乘以虚数单位 ** $i$ ** （即 ** $e^{i\pi/2}$ ** ）意味着不仅是单纯的翻转，状态在相空间中还发生了正交方向的平移。
@@ -807,17 +684,13 @@ $$
 泡利Z门是经典逻辑中不存在的、量子特有的纯粹的“相位操作”。它完全不改变振幅的大小（测量概率），仅对 ** $|1\rangle$ ** 的分量赋予 ** $-1$ ** （即 ** $e^{i\pi}$ ** ）的相位偏移。
 
 $$
-
 Z = \sigma_z = |0\rangle\langle 0| - |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 其作用显而易见地为：
 
 $$
-
 Z |0\rangle = |0\rangle, \quad Z |1\rangle = -|1\rangle
-
 $$
 
 这对应于绕Z轴的 ** $\pi$ ** 旋转。由于计算基底 ** $|0\rangle, |1\rangle$ ** 是Z矩阵的特征向量（特征值分别为+1, -1），因此即使施加Z门，状态也不会发生跃迁。然而，当它作用于叠加态（例如： ** $\alpha|0\rangle + \beta|1\rangle$ ** ）时，相对相位会发生 ** $\alpha|0\rangle - \beta|1\rangle$ ** 的剧烈反转，从而决定性地改变后续的干涉结果。
@@ -828,20 +701,20 @@ $$
 
 1. **自伴随性（厄米性）与酉性的共存**： ** $X = X^\dagger$ ** 、 ** $Y = Y^\dagger$ ** 、 ** $Z = Z^\dagger$ ** ，并且同时满足 ** $X^\dagger X = I$ ** （即 ** $X = X^{-1}$ ** ）。这是既作为物理量（可观测量），同时本身又能成为酉时间演化生成元（门）的罕见性质。连续施加两次会恢复为恒等变换（对合： ** $X^2 = Y^2 = Z^2 = I$ ** ）。
 2. **完全反交换关系**：不同的泡利矩阵互相交换乘积顺序时，符号会发生反转。
+   
 
-   $$
+$$
+\{X, Y\} = XY + YX = 0, \quad \{Y, Z\} = 0, \quad \{Z, X\} = 0
+$$
 
-   \{X, Y\} = XY + YX = 0, \quad \{Y, Z\} = 0, \quad \{Z, X\} = 0
-
-   $$
 
 3. **交换关系与李代数**：使用交换子 ** $[A, B] = AB - BA$ ** 时，它们明确地展现出作为 ** $SU(2)$ ** 李代数生成元的结构（使用完全反对称张量 ** $\epsilon_{ijk}$ ** ）。
+   
 
-   $$
+$$
+[\sigma_j, \sigma_k] = 2i \sum_{l \in \{x,y,z\}} \epsilon_{jkl} \sigma_l
+$$
 
-   [\sigma_j, \sigma_k] = 2i \sum_{l \in \{x,y,z\}} \epsilon_{jkl} \sigma_l
-
-   $$
 
    具体而言， ** $XY = iZ$ ** 、 ** $YZ = iX$ ** 、 ** $ZX = iY$ ** 。这种代数结构为定义后文所述的任意旋转门提供了数学基础。
 
@@ -850,22 +723,17 @@ $$
 在量子算法（例如多伊奇-乔萨算法或秀尔算法）中，几乎可以说在初始化之后必定会施加阿达马（Hadamard）门。它承担着从决定性状态创造出所有状态等概率出现的“最大叠加态”的核心作用。
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \left( |0\rangle\langle 0| + |0\rangle\langle 1| + |1\rangle\langle 0| - |1\rangle\langle 1| \right)
-
 $$
 
 将阿达马矩阵作用于计算基底：
 
 $$
-
 H |0\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{|0\rangle + |1\rangle}{\sqrt{2}} \equiv |+\rangle
-
-$$
 $$
 
+$$
 H |1\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{|0\rangle - |1\rangle}{\sqrt{2}} \equiv |-\rangle
-
 $$
 
 生成的 ** $|+\rangle$ ** 和 ** $|-\rangle$ ** 被称为X基底（或对角基底），它们是泡利X矩阵的本征态。由于阿达马矩阵自身也是实对称且正交的矩阵（实数空间中的酉矩阵），因此满足 ** $H = H^\dagger = H^{-1}$ ** 以及 ** $H^2 = I$ ** 。
@@ -873,14 +741,11 @@ $$
 在代数上，H门是转换X基底与Z基底的酉变换。作为矩阵的相似变换，它可以被极其优美地描述如下：
 
 $$
-
 H X H^\dagger = H X H = Z
-
-$$
 $$
 
+$$
 H Z H^\dagger = H Z H = X
-
 $$
 
 得益于这一性质，通过用H门夹住“由Z门造成的相位翻转”，就可以合成出“由X门造成的比特翻转”。几何上，H门相当于绕布洛赫球上的单位向量 ** $\hat{n} = \frac{1}{\sqrt{2}}(\hat{x} + \hat{z})$ ** 为轴进行 ** $\pi$ ** 旋转。
@@ -890,9 +755,7 @@ $$
 将泡利Z门更加一般化，把布洛赫球上绕Z轴的任意旋转操作群称为相移门 ** $P(\phi)$ ** （或 ** $R_\phi$ ** ）。
 
 $$
-
 P(\phi) = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi} \end{pmatrix} = |0\rangle\langle 0| + e^{i\phi} |1\rangle\langle 1|
-
 $$
 
 这个门群对叠加态 ** $\alpha|0\rangle + \beta|1\rangle$ ** 仅仅操作 ** $|1\rangle$ ** 分量的相对相位，使其变为 ** $\alpha|0\rangle + \beta e^{i\phi}|1\rangle$ ** 的形式。其中以下两个尤为重要。
@@ -902,18 +765,14 @@ $$
 ** $\phi = \pi/2$ ** 的情况被称为S门。
 
 $$
-
 S = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
-
 $$
 
 从矩阵性质可以明显看出，施加两次即变成Z门（ ** $S^2 = Z$ ** ）。
 将S门作用于 ** $|+\rangle$ ** 态时，
 
 $$
-
 S |+\rangle = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ i \end{pmatrix} = \frac{|0\rangle + i|1\rangle}{\sqrt{2}} \equiv |+i\rangle
-
 $$
 
 状态将跃迁至位于布洛赫球赤道上的Y轴正方向（Y基底的本征态）。由泡利群以及H、S门组成的群被称为克利福德群（Clifford group），根据哥特斯曼-克尼尔定理，已经证明仅由克利福德群构成的量子电路可以被经典计算机高效地模拟。
@@ -923,9 +782,7 @@ $$
 ** $\phi = \pi/4$ ** 的情况被称为T门。
 
 $$
-
 T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & \frac{1+i}{\sqrt{2}} \end{pmatrix}
-
 $$
 
 如果提取出全局相位 ** $e^{i\pi/8}$ ** ，对角线元素将变为 ** $e^{-i\pi/8}$ ** 和 ** $e^{i\pi/8}$ ** ，因此历史上也被称为 ** $\pi/8$ ** 门。
@@ -936,51 +793,42 @@ T门不属于克利福德群，它打破了经典模拟的高效性。然而，�
 对单量子比特最一般的操作是，以布洛赫球中任意单位向量 ** $\hat{n} = (n_x, n_y, n_z)$ ** （其中 ** $n_x^2 + n_y^2 + n_z^2 = 1$ ** ）为旋转轴，旋转 ** $\theta$ ** 角度的酉变换。利用泡利矩阵的线性组合，该旋转算符 ** $R_{\hat{n}}(\theta)$ ** 可以优美地公式化为如下的矩阵指数函数：
 
 $$
-
 R_{\hat{n}}(\theta) = \exp\left(-i \frac{\theta}{2} (\hat{n} \cdot \vec{\sigma})\right) = \exp\left(-i \frac{\theta}{2} (n_x X + n_y Y + n_z Z)\right)
-
 $$
 
 在这里，利用泡利矩阵强大的反交换性： ** $(\hat{n} \cdot \vec{\sigma})^2 = (n_x X + n_y Y + n_z Z)^2 = (n_x^2 + n_y^2 + n_z^2)I = I$ ** ，并对指数函数进行泰勒展开（即在 ** $A^2=I$ ** 时， ** $e^{iAx} = \cos(x)I + i\sin(x)A$ ** ），无限级数将被戏剧性地简化，从而得到以下欧拉公式的矩阵扩展版：
 
 $$
-
 R_{\hat{n}}(\theta) = \cos\left(\frac{\theta}{2}\right) I - i \sin\left(\frac{\theta}{2}\right) (\hat{n} \cdot \vec{\sigma})
-
 $$
 
 从这一一般性的公式中，可以推导出绕正交坐标轴的基本旋转门群。
 
 ### 绕X轴的旋转门 ** $R_x(\theta)$ **
 
+
 $$
-
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
-
 $$
 
 ### 绕Y轴的旋转门 ** $R_y(\theta)$ **
 
+
 $$
-
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
-
 $$
 
 ### 绕Z轴的旋转门 ** $R_z(\theta)$ **
 
+
 $$
-
 R_z(\theta) = e^{-i \frac{\theta}{2} Z} = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix}
-
 $$
 
 利用这些旋转矩阵，任意单量子比特酉矩阵 ** $U \in SU(2)$ ** 都可以使用3个欧拉角（ ** $\alpha, \beta, \gamma$ ** ）作为“Z-Y-Z分解”，被完全因式分解如下：
 
 $$
-
 U = e^{i\delta} R_z(\alpha) R_y(\beta) R_z(\gamma)
-
 $$
 
 这个定理在物理学上保证了：只要能在硬件层面上高精度地实现Z轴旋转和Y轴旋转，就可以执行任何针对单量子比特的复杂算法。
@@ -1015,71 +863,54 @@ graph LR
 量子电路图是从左向右书写的，但由于线性代数中对状态向量的算符乘法是“从左侧依次”相乘，因此整体酉算符 ** $U_{total}$ ** 的表达式将与时间顺序相反，从右向左排列。
 
 $$
-
 U_{total} = H S H
-
 $$
 
 代入各个门的矩阵表示来推导出合成矩阵。
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}, \quad S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
-
 $$
 
 首先，计算在初始态之后立即施加的 ** $H$ ** 与其后的 ** $S$ ** 的乘积 ** $SH$ ** 。
 
 $$
-
 S H = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1\cdot 1 + 0\cdot 1 & 1\cdot 1 + 0\cdot(-1) \\ 0\cdot 1 + i\cdot 1 & 0\cdot 1 + i\cdot(-1) \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
-
 $$
 
 接着，从该结果的左侧乘以最后的 ** $H$ ** 。
 
 $$
-
 U_{total} = H (S H) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
-
 $$
 
 提取出标量倍数 ** $\frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$ ** ，并仔细执行矩阵的乘积计算。
 
 $$
-
 U_{total} = \frac{1}{2} \begin{pmatrix} 1\cdot 1 + 1\cdot i & 1\cdot 1 + 1\cdot(-i) \\ 1\cdot 1 + (-1)\cdot i & 1\cdot 1 + (-1)\cdot(-i) \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix}
-
 $$
 
 这就是将整个电路视为一个黑盒时，单一的酉矩阵表示。
 将此 ** $U_{total}$ ** 作用于初始态 ** $|0\rangle$ ** ，计算最终态 ** $|\psi_{final}\rangle$ ** 。
 
 $$
-
 |\psi_{final}\rangle = U_{total} |0\rangle = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i \\ 1 - i \end{pmatrix}
-
 $$
 
 将其用狄拉克记法展开如下：
 
 $$
-
 |\psi_{final}\rangle = \frac{1+i}{2} |0\rangle + \frac{1-i}{2} |1\rangle
-
 $$
 
 在这里，为了验证酉性（概率总和为1）是否被破坏，计算观测到各个基底的概率。使用复数绝对值的平方 ** $|z|^2 = z z^*$ ** 。
 
 $$
-
 P(0) = |\langle 0 | \psi_{final} \rangle|^2 = \left| \frac{1+i}{2} \right|^2 = \frac{1^2 + 1^2}{4} = \frac{2}{4} = \frac{1}{2}
-
-$$
 $$
 
+$$
 P(1) = |\langle 1 | \psi_{final} \rangle|^2 = \left| \frac{1-i}{2} \right|^2 = \frac{1^2 + (-1)^2}{4} = \frac{2}{4} = \frac{1}{2}
-
 $$
 
 概率之和为 ** $P(0) + P(1) = 1$ ** ，这证明了它是一个在物理上合理的状态。测量时会有50%的概率得到0，50%的概率得到1，但这绝非单纯的经典随机数。为了提取隐藏在状态背后的“相位”，让我们将状态向量变换为布洛赫球的极坐标形式。
@@ -1087,17 +918,13 @@ $$
 作为整体的公因子，强制提取出振幅 ** $1/\sqrt{2}$ ** 和全局相位 ** $e^{i\pi/4}$ ** （ ** $\frac{1+i}{\sqrt{2}}$ ** ）。
 
 $$
-
 |\psi_{final}\rangle = \frac{1}{\sqrt{2}} \left( \frac{1+i}{\sqrt{2}} |0\rangle + \frac{1-i}{\sqrt{2}} |1\rangle \right) = e^{i\pi/4} \left( \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}} e^{-i\pi/2} |1\rangle \right)
-
 $$
 
 由于全局相位 ** $e^{i\pi/4}$ ** 在任何可观测量（厄米算符）的期望值计算中都会因为 ** $e^{-i\pi/4} e^{i\pi/4} = 1$ ** 而被抵消，因此提取出唯一具有物理意义的相对相位部分：
 
 $$
-
 |\psi_{final}'\rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{i}{\sqrt{2}} |1\rangle
-
 $$
 
 通过将其与极坐标表示 ** $\cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$ ** 进行比较，完美确定了布洛赫向量指向天顶角 ** $\theta = \pi/2$ ** （赤道上），方位角 ** $\phi = -\pi/2$ ** （Y轴的负方向）。这通常被记为 ** $|-i\rangle$ ** 态。
@@ -1105,17 +932,13 @@ $$
 让我们提出一个更深奥的事实。使用刚才导出的由指数函数表示的旋转门公式，写下绕X轴的 ** $\pi/2$ ** 旋转 ** $R_x(\pi/2)$ ** 的矩阵：
 
 $$
-
 R_x(\pi/2) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix}
-
 $$
 
 另一方面，让我们再次看看我们计算出的整体矩阵 ** $U_{total}$ ** ：
 
 $$
-
 U_{total} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & \frac{1-i}{1+i} \\ \frac{1-i}{1+i} & 1 \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix} = e^{i\pi/4} R_x(\pi/2)
-
 $$
 
 令人惊讶的是，“ ** $H \rightarrow S \rightarrow H$ ** ”这种由绕着完全不同轴的离散门群组成的连续操作，在剔除全局相位后，在数学上被证明与单一的“绕X轴的 ** $\pi/2$ ** 旋转操作”一字不差地等价。
@@ -1138,36 +961,28 @@ $$
 我们来考虑由两个量子比特（量子比特A和量子比特B）构成的系统。计算基底被定义为各个单量子比特基底状态的张量积：
 
 $$
-
 |0\rangle_A \otimes |0\rangle_B \equiv |00\rangle, \quad
 |0\rangle_A \otimes |1\rangle_B \equiv |01\rangle, \quad
 |1\rangle_A \otimes |0\rangle_B \equiv |10\rangle, \quad
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
-
 $$
 
 在此，我们来严格计算张量积的矩阵表示（克罗内克积，Kronecker product）。将单量子比特的基底表示为列向量：
 
 $$
-
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 利用这些表示，例如计算状态 ** $|10\rangle$ ** 可以得到如下结果：
 
 $$
-
 |10\rangle = |1\rangle \otimes |0\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \otimes \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \\ 1 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}
-
 $$
 
 在这个四维向量空间中，两量子比特系统最一般的纯态 ** $|\Psi\rangle$ ** 可被描述为这四个基底向量的线性组合（叠加态）：
 
 $$
-
 |\Psi\rangle = c_{00} |00\rangle + c_{01} |01\rangle + c_{10} |10\rangle + c_{11} |11\rangle
-
 $$
 
 这里，$c_{ij} \in \mathbb{C}$ 为概率幅，根据玻恩定则状态必须归一化，即需要满足归一化条件 $\sum_{i,j \in \{0,1\}} |c_{ij}|^2 = 1$ 。
@@ -1175,9 +990,7 @@ $$
 复合系统中的算符（量子门）同样使用张量积来构建。对量子比特A施加算符 ** $U_A$ ** 、对量子比特B施加算符 ** $U_B$ ** 的操作，表示为对整个复合系统的算符 ** $U_A \otimes U_B$ ** ，它对任意积态的作用如下：
 
 $$
-
 (U_A \otimes U_B)(|\psi\rangle_A \otimes |\phi\rangle_B) = (U_A |\psi\rangle_A) \otimes (U_B |\phi\rangle_B)
-
 $$
 
 根据线性性质，该作用可推广至任意叠加态。
@@ -1190,9 +1003,7 @@ $$
 当状态 ** $|\Psi\rangle$ ** 可以描述为各个子系统状态的简单张量积，即
 
 $$
-
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
-
 $$
 
 时，该状态被称为可分的。相反，对于**无法**表示为任何子系统状态的张量积的状态，定义为 **量子纠缠态（Entangled State）** 。
@@ -1200,41 +1011,32 @@ $$
 在两量子比特系统中，发生最强量子纠缠的状态被称为 **贝尔态** （Bell States）或EPR对。贝尔态由以下四个正交纯态构成，形成四维希尔伯特空间的完备标准正交基（贝尔基）：
 
 $$
-
 |\Phi^+\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle + |11\rangle \Big)
-
-$$
 $$
 
+$$
 |\Phi^-\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle - |11\rangle \Big)
-
-$$
 $$
 
+$$
 |\Psi^+\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle + |10\rangle \Big)
-
-$$
 $$
 
+$$
 |\Psi^-\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle - |10\rangle \Big)
-
 $$
 
 在此，我们利用反证法严格证明状态 ** $|\Phi^+\rangle$ ** 是不可分的。
 反设 ** $|\Phi^+\rangle$ ** 是可分态，并假设它可以描述为未知的单量子比特状态的张量积：
 
 $$
-
 |\Phi^+\rangle = (a|0\rangle + b|1\rangle)_A \otimes (c|0\rangle + d|1\rangle)_B
-
 $$
 
 将其展开后得到：
 
 $$
-
 |\Phi^+\rangle = ac|00\rangle + ad|01\rangle + bc|10\rangle + bd|11\rangle
-
 $$
 
 与原始定义式的系数对比，可得以下联立方程组：
@@ -1254,22 +1056,17 @@ $$
 贝尔态是“最大量子纠缠态”这一事实，可以通过计算描述子系统信息的 **约化密度矩阵** （Reduced Density Matrix）得到更加明确的体现。当整个系统处于纯态 ** $\rho = |\Phi^+\rangle \langle\Phi^+|$ ** 时，对量子比特B求偏迹（部分迹）以求得量子比特A的局域状态：
 
 $$
-
 \rho_A = \text{Tr}_B(|\Phi^+\rangle \langle\Phi^+|) = \text{Tr}_B \left[ \frac{1}{2} (|00\rangle\langle00| + |00\rangle\langle11| + |11\rangle\langle00| + |11\rangle\langle11|) \right]
-
 $$
 
 利用部分迹的性质 $\text{Tr}_B(|i,j\rangle\langle k,l|) = |i\rangle\langle k| \cdot \langle l|j\rangle = |i\rangle\langle k| \delta_{jl}$ ，可得：
 
 $$
-
 \rho_A = \frac{1}{2} \Big( |0\rangle\langle0| \cdot \langle0|0\rangle + |0\rangle\langle1| \cdot \langle1|0\rangle + |1\rangle\langle0| \cdot \langle0|1\rangle + |1\rangle\langle1| \cdot \langle1|1\rangle \Big)
-
-$$
 $$
 
+$$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
-
 $$
 
 这意味着，若仅观测量子比特A，其状态为完全混合态（Completely Mixed State），冯·诺依曼熵 $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ 取最大值 $1$ 。换言之，“尽管系统作为一个整体拥有完全的信息（纯态），但孤立地看待各个子系统时，信息却是完全不确定的（最大熵）”，这种在经典力学中绝不可能存在的极限关联性，正是最大量子纠缠的本质。
@@ -1285,33 +1082,27 @@ CNOT门作用于两个量子比特，将其中一个视为“控制比特（Cont
 对计算基底的作用如下（设第一个量子比特为控制比特，第二个量子比特为目标比特）：
 
 $$
-
 \text{CNOT} |00\rangle = |00\rangle \\
 \text{CNOT} |01\rangle = |01\rangle \\
 \text{CNOT} |10\rangle = |11\rangle \\
 \text{CNOT} |11\rangle = |10\rangle
-
 $$
 
 将其表示为四维酉矩阵如下：
 
 $$
-
 \text{CNOT} = \begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 1 & 0
 \end{pmatrix}
-
 $$
 
 作为在数学上更为精炼的表达形式，可以使用投影算符与泡利矩阵的张量积之和来表示：
 
 $$
-
 \text{CNOT} = |0\rangle\langle0| \otimes I + |1\rangle\langle1| \otimes X
-
 $$
 
 该公式极其直观地揭示了CNOT门的物理意义。第一项表示“在第一量子比特投影到 $|0\rangle$ 的状态空间中，对第二量子比特施加恒等算符 $I$ ”；第二项表示“在第一量子比特投影到 $|1\rangle$ 的状态空间中，对第二量子比特施加比特翻转算符 $X$ ”。
@@ -1327,9 +1118,7 @@ $$
 所需的组成元件仅为作用于单量子比特的阿达马门 ** $H$ ** 以及上述的 ** $\text{CNOT}$ ** 门。阿达马矩阵定义如下：
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
-
 $$
 
 ### 量子态演化计算
@@ -1337,29 +1126,24 @@ $$
 **步骤 1：** 初始化
 系统处于计算基底的初始状态：
 
+
 $$
-
 |\psi_0\rangle = |0\rangle_A \otimes |0\rangle_B = |00\rangle
-
 $$
 
 **步骤 2：** 对控制比特（量子比特A）施加阿达马门
 仅对量子比特A施加阿达马门，制备出叠加态。作用于整个系统的算符为 ** $H \otimes I$ ** ：
 
 $$
-
 |\psi_1\rangle = (H \otimes I) |00\rangle = (H|0\rangle_A) \otimes (I|0\rangle_B)
-
-$$
 $$
 
+$$
 = \left( \frac{1}{\sqrt{2}} (|0\rangle_A + |1\rangle_A) \right) \otimes |0\rangle_B
-
-$$
 $$
 
+$$
 = \frac{1}{\sqrt{2}} (|00\rangle + |10\rangle)
-
 $$
 
 此时，该状态仍然是可分态，因为它可以写成张量积的形式。
@@ -1368,22 +1152,17 @@ $$
 接下来，以量子比特A为控制比特、量子比特B为目标比特施加CNOT门。由于算符的线性性质，CNOT门独立作用于叠加态的每一项：
 
 $$
-
 |\psi_2\rangle = \text{CNOT} \left[ \frac{1}{\sqrt{2}} (|00\rangle + |10\rangle) \right]
-
-$$
 $$
 
+$$
 = \frac{1}{\sqrt{2}} (\text{CNOT}|00\rangle + \text{CNOT}|10\rangle)
-
 $$
 
 应用前文定义的CNOT对基底的作用规则，由于 $\text{CNOT}|00\rangle = |00\rangle$ ， $\text{CNOT}|10\rangle = |11\rangle$ ，因此：
 
 $$
-
 |\psi_2\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
-
 $$
 
 令人赞叹的是，从最初的可分态成功生成了贝尔态 ** $|\Phi^+\rangle$ ** 。阿达马门制备的“控制比特处于0和1的叠加”，在输入CNOT门后，目标比特的翻转/不翻转与控制比特的各个状态产生联动分流，从而在整体上形成了纠缠。
@@ -1474,23 +1253,18 @@ graph LR
 在量子力学中，孤立系统的任意物理演化都由幺正算符 ** $U$ ** 来描述。因此，这台克隆机的操作可以定义为满足以下方程的幺正变换 ** $U$ ** ：
 
 $$
-
 U (|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle
-
 $$
 
 因为假设这对于“任意”状态都成立，所以对于另一个任意的量子态 ** $|\phi\rangle$ ** 也必须同样有效：
 
 $$
-
 U (|\phi\rangle \otimes |0\rangle) = |\phi\rangle \otimes |\phi\rangle
-
 $$
 
 现在，让我们取这两个方程的内积（标量积）。利用幺正算符 ** $U$ ** 的性质（ ** $U^\dagger U = I$ ** ）。左边的内积如下所示：
 
 $$
-
 \begin{aligned}
 \left( U (|\psi\rangle \otimes |0\rangle) \right)^\dagger \left( U (|\phi\rangle \otimes |0\rangle) \right) 
 &= (\langle \psi | \otimes \langle 0 |) U^\dagger U (|\phi\rangle \otimes |0\rangle) \\
@@ -1498,7 +1272,6 @@ $$
 &= \langle \psi | \phi \rangle \cdot \langle 0 | 0 \rangle \\
 &= \langle \psi | \phi \rangle
 \end{aligned}
-
 $$
 
 （这里使用了 ** $\langle 0 | 0 \rangle = 1$ ** 。）
@@ -1506,30 +1279,24 @@ $$
 另一方面，右边复制后状态之间的内积如下：
 
 $$
-
 \begin{aligned}
 \left( |\psi\rangle \otimes |\psi\rangle \right)^\dagger \left( |\phi\rangle \otimes |\phi\rangle \right) 
 &= (\langle \psi | \otimes \langle \psi |) (|\phi\rangle \otimes |\phi\rangle) \\
 &= \langle \psi | \phi \rangle \cdot \langle \psi | \phi \rangle \\
 &= (\langle \psi | \phi \rangle)^2
 \end{aligned}
-
 $$
 
 由于左边和右边必须相等，我们得到以下等式：
 
 $$
-
 \langle \psi | \phi \rangle = (\langle \psi | \phi \rangle)^2
-
 $$
 
 这个方程 ** $x = x^2$ ** 在复数范围内成立的条件只有 ** $x = 0$ ** 或 ** $x = 1$ ** 。也就是说：
 
 $$
-
 \langle \psi | \phi \rangle = 0 \quad \text{或者} \quad \langle \psi | \phi \rangle = 1
-
 $$
 
 这意味着，只有当两个状态“完全正交（互不相关）”或“完全相同”时，才可能存在正确复制它们的幺正变换。换句话说，这极其简单而优雅地证明了“不存在可以克隆任意（非正交的）未知量子态的普适幺正变换”。
@@ -1540,38 +1307,31 @@ $$
 考虑一个能够克隆两个正交基态 ** $|0\rangle$ ** 和 ** $|1\rangle$ ** 的幺正算符 ** $U$ ** ：
 
 $$
-
 U |0\rangle |0\rangle = |0\rangle |0\rangle
-
-$$
 $$
 
+$$
 U |1\rangle |0\rangle = |1\rangle |1\rangle
-
 $$
 
 到目前为止没有问题。这与复制经典比特的 0 和 1 是一样的。那么，当我们试图拷贝它们的叠加未知态 ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ ** 时会发生什么呢？根据幺正算符时间演化的线性，我们得到：
 
 $$
-
 \begin{aligned}
 U (|\psi\rangle |0\rangle) &= U \left( (\alpha|0\rangle + \beta|1\rangle) |0\rangle \right) \\
 &= U (\alpha|0\rangle |0\rangle + \beta|1\rangle |0\rangle) \\
 &= \alpha U(|0\rangle |0\rangle) + \beta U(|1\rangle |0\rangle) \\
 &= \alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle
 \end{aligned}
-
 $$
 
 然而，我们真正想要的“完全克隆”输出，应该是如下的张量积：
 
 $$
-
 \begin{aligned}
 |\psi\rangle \otimes |\psi\rangle &= (\alpha|0\rangle + \beta|1\rangle) \otimes (\alpha|0\rangle + \beta|1\rangle) \\
 &= \alpha^2|0\rangle |0\rangle + \alpha\beta|0\rangle |1\rangle + \alpha\beta|1\rangle |0\rangle + \beta^2|1\rangle |1\rangle
 \end{aligned}
-
 $$
 
 由线性推导出的结果 ** $\alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle$ ** 与我们所求的克隆状态 ** $|\psi\rangle \otimes |\psi\rangle$ ** 明显不同（缺失了交叉项 ** $|0\rangle |1\rangle$ ** 和 ** $|1\rangle |0\rangle$ ** ）。这再次证明了不可能对未知的叠加态进行克隆。
@@ -1590,33 +1350,29 @@ $$
 爱丽丝拥有一个想要发送给鲍勃的未知单量子比特态 ** $|\psi\rangle$ ** ：
 
 $$
-
 |\psi\rangle_C = \alpha|0\rangle_C + \beta|1\rangle_C \quad (|\alpha|^2 + |\beta|^2 = 1)
-
 $$
+
 
 下标 $C$ 表示这是要转移的目标量子比特。
 
 为了实现这种转移，假设爱丽丝和鲍勃预先共享了一对最大纠缠的两量子比特态（称为 EPR 对或贝尔对）。这里我们使用以下状态：
 
 $$
-
 |\Phi^+\rangle_{AB} = \frac{1}{\sqrt{2}} \left( |0\rangle_A \otimes |0\rangle_B + |1\rangle_A \otimes |1\rangle_B \right)
-
 $$
+
 
 下标 $A$ 表示爱丽丝持有的量子比特， $B$ 表示鲍勃持有的量子比特。
 
 整个系统的初始状态 ** $|\Psi_0\rangle$ ** 可以描述为爱丽丝想要转移的状态与共享的 EPR 对的张量积：
 
 $$
-
 \begin{aligned}
 |\Psi_0\rangle &= |\psi\rangle_C \otimes |\Phi^+\rangle_{AB} \\
 &= (\alpha|0\rangle_C + \beta|1\rangle_C) \otimes \frac{1}{\sqrt{2}} (|0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B) \\
 &= \frac{1}{\sqrt{2}} \Big( \alpha|0\rangle_C |0\rangle_A |0\rangle_B + \alpha|0\rangle_C |1\rangle_A |1\rangle_B + \beta|1\rangle_C |0\rangle_A |0\rangle_B + \beta|1\rangle_C |1\rangle_A |1\rangle_B \Big)
 \end{aligned}
-
 $$
 
 ### 爱丽丝的操作与贝尔基测量
@@ -1627,13 +1383,12 @@ $$
 爱丽丝以量子比特 $C$ 为控制比特，量子比特 $A$ 为目标比特，应用 CNOT（受控非）门 ** $CX_{CA}$ ** 。CNOT 门仅在控制比特为 $|1\rangle$ 时翻转目标比特。
 
 $$
-
 \begin{aligned}
 |\Psi_1\rangle &= CX_{CA} |\Psi_0\rangle \\
 &= \frac{1}{\sqrt{2}} \Big( \alpha|0\rangle_C |0\rangle_A |0\rangle_B + \alpha|0\rangle_C |1\rangle_A |1\rangle_B + \beta|1\rangle_C |1\rangle_A |0\rangle_B + \beta|1\rangle_C |0\rangle_A |1\rangle_B \Big)
 \end{aligned}
-
 $$
+
 
 （第 3 项的 $|0\rangle_A$ 翻转为 $|1\rangle_A$ ，第 4 项的 $|1\rangle_A$ 翻转为 $|0\rangle_A$ 。）
 
@@ -1641,26 +1396,22 @@ $$
 接下来，爱丽丝对量子比特 $C$ 应用阿达马门 ** $H_C$ ** 。阿达马变换的规则是 $|0\rangle \to \frac{|0\rangle+|1\rangle}{\sqrt{2}}$ ， $|1\rangle \to \frac{|0\rangle-|1\rangle}{\sqrt{2}}$ 。
 
 $$
-
 \begin{aligned}
 |\Psi_2\rangle &= H_C |\Psi_1\rangle \\
 &= \frac{1}{2} \Big[ \alpha(|0\rangle_C + |1\rangle_C) |0\rangle_A |0\rangle_B + \alpha(|0\rangle_C + |1\rangle_C) |1\rangle_A |1\rangle_B \\
 &\quad + \beta(|0\rangle_C - |1\rangle_C) |1\rangle_A |0\rangle_B + \beta(|0\rangle_C - |1\rangle_C) |0\rangle_A |1\rangle_B \Big]
 \end{aligned}
-
 $$
 
 现在，我们将这个表达式按照爱丽丝持有的量子比特 $C$ 和 $A$ 的状态（ $|00\rangle, |01\rangle, |10\rangle, |11\rangle$ ）重新整理。这种重新排列正是量子隐形传态的核心数学步骤：
 
 $$
-
 \begin{aligned}
 |\Psi_2\rangle &= \frac{1}{2} |0\rangle_C |0\rangle_A \otimes (\alpha|0\rangle_B + \beta|1\rangle_B) \\
 &\quad + \frac{1}{2} |0\rangle_C |1\rangle_A \otimes (\alpha|1\rangle_B + \beta|0\rangle_B) \\
 &\quad + \frac{1}{2} |1\rangle_C |0\rangle_A \otimes (\alpha|0\rangle_B - \beta|1\rangle_B) \\
 &\quad + \frac{1}{2} |1\rangle_C |1\rangle_A \otimes (\alpha|1\rangle_B - \beta|0\rangle_B)
 \end{aligned}
-
 $$
 
 值得注意的是，根据爱丽丝的测量结果，鲍勃的量子比特 $B$ 会被投影到不同的状态。
@@ -1737,9 +1488,7 @@ graph LR
 假设爱丽丝和鲍勃再次预先共享了一对 EPR 对：
 
 $$
-
 |\Phi^+\rangle_{AB} = \frac{1}{\sqrt{2}} \left( |0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B \right)
-
 $$
 
 爱丽丝想向鲍勃发送 2 个比特的经典消息 $b_1 b_2 \in \{00, 01, 10, 11\}$ 。
@@ -1751,9 +1500,7 @@ $$
    
 
 $$
-
 |\Psi_{00}\rangle = (I \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
-
 $$
 
 2. **消息为 `01` 的情况：**
@@ -1761,9 +1508,7 @@ $$
    
 
 $$
-
 |\Psi_{01}\rangle = (Z \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (Z|0\rangle|0\rangle + Z|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle) = |\Phi^-\rangle
-
 $$
 
 3. **消息为 `10` 的情况：**
@@ -1771,9 +1516,7 @@ $$
    
 
 $$
-
 |\Psi_{10}\rangle = (X \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (X|0\rangle|0\rangle + X|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|10\rangle + |01\rangle) = |\Psi^+\rangle
-
 $$
 
 4. **消息为 `11` 的情况：**
@@ -1781,10 +1524,9 @@ $$
    
 
 $$
-
 |\Psi_{11}\rangle = (ZX \otimes I) |\Phi^+\rangle = (Z \otimes I) |\Psi^+\rangle = \frac{1}{\sqrt{2}} (Z|1\rangle|0\rangle + Z|0\rangle|1\rangle) = \frac{1}{\sqrt{2}} (-|10\rangle + |01\rangle) = -|\Psi^-\rangle
-
 $$
+
 
    （由于整体上的负号只是一个全局相位，不影响观测概率，这里为了方便，我们整理符号将其与 ** $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ ** 对应起来考虑。）
 
@@ -1869,9 +1611,7 @@ $$
 我们准备一个输入寄存器（ $n$ 个量子比特）和一个目标寄存器（ $1$ 个量子比特）。表示预言机的幺正算符 ** $U_f$ ** 对计算基态的作用如下：
 
 $$
-
 U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle
-
 $$
 
 这里， $\oplus$ 表示模2加法（XOR）。这种变换只要再次应用其自身就能恢复到原始状态（ $U_f^2 = I$ ），因此显然是可逆且幺正的。
@@ -1881,29 +1621,21 @@ $$
 在量子信息科学中，“相位反冲”是最重要且最反直觉的技巧之一。让我们看看如果将目标寄存器的状态设定为经过阿达马门（Hadamard gate）处理后的叠加态 $|-\rangle$ ，而不是经典的 $|0\rangle$ 或 $|1\rangle$ ，会发生什么情况。
 
 $$
-
 |-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}
-
 $$
 
 将这个状态输入到目标寄存器中，并应用预言机 ** $U_f$ ** ：
 
 $$
-
 U_f |x\rangle |-\rangle = U_f \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2}} \left( U_f |x\rangle |0\rangle - U_f |x\rangle |1\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right)
-
 $$
 
 在这里，根据 $f(x)$ 的值进行分类讨论：
@@ -1915,9 +1647,7 @@ $$
 将这些结合在一起，就能得到如下美妙的等式：
 
 $$
-
 U_f |x\rangle |-\rangle = (-1)^{f(x)} |x\rangle |-\rangle
-
 $$
 
 这是一个令人惊讶的结果。目标寄存器的状态 $|-\rangle$ 完全没有发生变化，但函数 ** $f(x)$ ** 的求值结果却作为“相位（Phase）的符号”，被“反冲（Kickback）”到了输入寄存器 ** $|x\rangle$ ** 一侧。由此，我们就可以将信息编码为振幅的相位。
@@ -1941,9 +1671,7 @@ graph LR
 将作为输入寄存器的 $n$ 个量子比特初始化为 $|0\rangle^{\otimes n}$ ，将作为目标寄存器的1个量子比特初始化为 $|1\rangle$ 。
 
 $$
-
 |\psi_0\rangle = |0\rangle^{\otimes n} |1\rangle
-
 $$
 
 ### 步骤2：对所有量子比特应用阿达马门
@@ -1952,23 +1680,17 @@ $$
 针对 $n$ 个量子比特的阿达马变换 $H^{\otimes n}$ 的作用如下：
 
 $$
-
 H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle
-
 $$
 
 因此，整个系统的状态将如下所示：
 
 $$
-
 |\psi_1\rangle = \left( \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle \right) \otimes \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle |-\rangle
-
 $$
 
 ### 步骤3：应用量子预言机（相位反冲）
@@ -1976,9 +1698,7 @@ $$
 此时应用预言机 ** $U_f$ ** 。由于上一节中证明的相位反冲效应，每个基态 $|x\rangle$ 的相位都会乘上 $(-1)^{f(x)}$ 。
 
 $$
-
 |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} (-1)^{f(x)} |x\rangle |-\rangle
-
 $$
 
 在这一阶段，计算结果 ** $f(x)$ ** 的所有信息（共 $2^n$ 个），已经通过一次运算以叠加态各个相位的形式被并行地嵌入其中。这被称为“量子并行性（Quantum Parallelism）”。
@@ -1989,30 +1709,22 @@ $$
 对于任意基底 $|x\rangle$ ， $H^{\otimes n}$ 的作用可以表示为如下的通用公式：
 
 $$
-
 H^{\otimes n} |x\rangle = \frac{1}{\sqrt{2^n}} \sum_{z \in \{0,1\}^n} (-1)^{x \cdot z} |z\rangle
-
 $$
 
 其中， $x \cdot z$ 表示按位的内积 $x \cdot z = x_1 z_1 \oplus x_2 z_2 \oplus \dots \oplus x_n z_n$ 。
 将其应用到 $|\psi_2\rangle$ 的输入寄存器部分，最终状态 $|\psi_3\rangle$ 将展开如下：
 
 $$
-
 |\psi_3\rangle = H^{\otimes n} \left( \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} |x\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} \left( \frac{1}{\sqrt{2^n}} \sum_{z} (-1)^{x \cdot z} |z\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{2^n} \sum_{z \in \{0,1\}^n} \left( \sum_{x \in \{0,1\}^n} (-1)^{f(x) + x \cdot z} \right) |z\rangle
-
 $$
 
 这就是表示测量前一刻量子状态的极其重要的数学公式。量子力学上的“干涉”就发生在这个求和 $\sum_x$ 之中。
@@ -2023,9 +1735,7 @@ $$
 我们感兴趣的是，所有量子比特都为 $0$ ，即状态 ** $|0\rangle^{\otimes n}$ ** 被测量出来的概率。让我们考虑上述公式中 $z = 00\dots0$ 的情况。此时，对于任意的 $x$ 都有 $x \cdot 0 = 0$ ，因此状态 ** $|0\rangle^{\otimes n}$ ** 的振幅（系数）可以计算如下：
 
 $$
-
 \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \sum_{x \in \{0,1\}^n} (-1)^{f(x)}
-
 $$
 
 这里，根据最初的承诺（Promise），我们来验证两种情况。
@@ -2037,11 +1747,11 @@ $$
 
 因为测量概率 $P(0)$ 是振幅绝对值的平方，所以：
 
-$$
 
+$$
 P(00\dots0) = | \pm 1 |^2 = 1
-
 $$
+
 
 也就是说， **如果函数为常数函数，将以100%的概率测量出 $|0\rangle^{\otimes n}$ ** 。
 
@@ -2050,18 +1760,16 @@ $$
 因此， $(-1)^{f(x)}$ 将有一半是 $+1$ ，剩下的一半是 $-1$ ，将它们全部相加会完全抵消变为零（完全的相消干涉）。
 
 $$
-
 \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \left( 2^{n-1}(+1) + 2^{n-1}(-1) \right) = 0
-
 $$
 
 因为测量概率 $P(0)$ 是振幅绝对值的平方，所以：
 
-$$
 
+$$
 P(00\dots0) = | 0 |^2 = 0
-
 $$
+
 
 也就是说， **如果函数为平衡函数， $|0\rangle^{\otimes n}$ 被测量出的概率为0%，必然会测量出至少有一个比特为 $1$ 的状态** 。
 
@@ -2072,37 +1780,34 @@ $$
 ### 常数函数的情况： $f(x) = 1$ （全为1）
 应用预言机前，状态 $|\psi_1\rangle$ 的输入寄存器部分如下所示：
 
+
 $$
-
 \frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle )
-
 $$
 
 应用预言机后，由于相位反冲，所有的项都会乘上 $(-1)^{f(x)} = -1$ ：
 
+
 $$
-
 |\psi_2\rangle_{in} = -\frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle )
-
 $$
 
 对此再次应用 $H^{\otimes 2}$ 。利用 $H^{\otimes 2} (|00\rangle + |01\rangle + |10\rangle + |11\rangle) = 2 |00\rangle$ 这一事实，可得：
 
-$$
 
+$$
 |\psi_3\rangle_{in} = - |00\rangle
-
 $$
+
 
 测量结果将以 $100\%$ 的概率变为 $00$ 。
 
 ### 平衡函数的情况： $f(00)=0, f(01)=1, f(10)=1, f(11)=0$
 应用预言机后，由于相位反冲，只有满足 $f(x)=1$ 的项会带上负号：
 
+
 $$
-
 |\psi_2\rangle_{in} = \frac{1}{2} ( |00\rangle - |01\rangle - |10\rangle + |11\rangle )
-
 $$
 
 对此应用 $H^{\otimes 2}$ 。计算 $H^{\otimes 2}$ 对各个基底的作用并代入，如果我们关注 $|00\rangle$ 的系数，会发现它变成了 $\frac{1}{4} (1 - 1 - 1 + 1) = 0$ ，被完美地抵消（相消干涉）了。
@@ -2131,19 +1836,19 @@ $$
 
 设明文为整数 $M$（其中 $0 \le M < N$），加密过程通过模 $N$ 的指数运算进行：
 
-$$
 
+$$
 C \equiv M^e \pmod{N}
-
 $$
+
 
 进行解密时，利用私钥 $d$ 进行同样的模幂计算：
 
-$$
 
+$$
 M' \equiv C^d \pmod{N}
-
 $$
+
 
 根据欧拉定理，有 $C^d \equiv M^{ed} \equiv M^{1 + k\phi(N)} \equiv M \pmod{N}$ 成立，因此保证了原始明文 $M$ 能够被完全恢复。
 
@@ -2159,50 +1864,46 @@ Shor算法的天才洞见在于：“并非直接去求解质因数分解问题�
 
 若 $\text{gcd}(a, N) = 1$，则 $a$ 与 $N$ 互质。此时，我们定义如下模指数函数：
 
-$$
 
+$$
 f(x) = a^x \bmod N
-
 $$
+
 
 用群论的语言来说，$a$ 是乘法群 $(\mathbb{Z}/N\mathbb{Z})^\times$ 的元素，而函数 $f(x)$ 构成了从整数加法群 $\mathbb{Z}$ 到乘法群 $(\mathbb{Z}/N\mathbb{Z})^\times$ 的同态映射。根据有限群的性质，该函数必然具有周期性。也就是说，存在某个最小的正整数 $r$，满足以下方程：
 
-$$
 
+$$
 a^r \equiv 1 \pmod{N}
-
 $$
+
 
 这个最小正整数 $r$ 被称为 $a$ 模 $N$ 的“阶（Order）”，或者函数 $f(x)$ 的“周期（Period）”。
 
 若能够找到这个阶 $r$，且 $r$ 为偶数，并且满足 $a^{r/2} \not\equiv -1 \pmod{N}$，那么我们便能获得分解因数的强有力线索：
 
-$$
 
+$$
 a^r - 1 \equiv 0 \pmod{N}
-
 $$
 
 $$
-
 (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod{N}
-
 $$
+
 
 该方程意味着 $N$ 能整除 $(a^{r/2} - 1)$ 与 $(a^{r/2} + 1)$ 的乘积。但是，由于 $a^{r/2} \not\equiv 1$（因为 $r$ 是最小周期）且 $a^{r/2} \not\equiv -1$（根据假设条件），因此 $N$ 无法单独整除这两项中的任意一项。由此可知，$N$ 的质因数必然分散包含在这两项之中。
 结论是，通过计算：
 
-$$
 
+$$
 p = \text{gcd}(a^{r/2} - 1, N)
-
 $$
 
 $$
-
 q = \text{gcd}(a^{r/2} + 1, N)
-
 $$
+
 
 便能确定地找出 $N$ 的非平凡质因数。
 
@@ -2214,29 +1915,29 @@ $$
 
 在维度为 $M = 2^n$ 的希尔伯特空间 $\mathcal{H}$ 中，量子傅里叶变换对计算基底 $|j\rangle$（$j = 0, 1, \dots, M-1$）的作用被严格定义为：
 
-$$
 
+$$
 \text{QFT} |j\rangle = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} e^{2\pi i j k / M} |k\rangle
-
 $$
+
 
 对于任意量子态 ** $|\psi\rangle$ ** ，根据线性性质，其作用如下：
 
-$$
 
+$$
 \text{QFT} \sum_{j=0}^{M-1} x_j |j\rangle = \sum_{k=0}^{M-1} \left( \frac{1}{\sqrt{M}} \sum_{j=0}^{M-1} x_j e^{2\pi i j k / M} \right) |k\rangle = \sum_{k=0}^{M-1} y_k |k\rangle
-
 $$
+
 
 此处得到的新振幅 $y_k$ 与通过经典离散傅里叶变换得到的系数完全一致。然而，经典的快速傅里叶变换（FFT）计算整个向量需要 $O(M \log M) = O(n 2^n)$ 的时间，而QFT仅需 $O(n^2)$ 个量子门操作即可完成对 $n$ 个量子比特“状态”的变换，实现了计算复杂度的急剧降低。
 
 为了理解为何仅需 $O(n^2)$ 如此少量的量子门便能实现该变换，需要将QFT得到的态表示为张量积的形式。将整数 $j$ 写成二进制形式 $j = j_1 2^{n-1} + j_2 2^{n-2} + \dots + j_n 2^0$（其中 $j_1$ 为最高有效位，$j_n$ 为最低有效位），此时输出态可以巧妙地分解为如下 $n$ 个独立量子比特态的张量积：
 
-$$
 
+$$
 \text{QFT} |j_1 j_2 \dots j_n\rangle = \frac{1}{\sqrt{2^n}} \left(|0\rangle + e^{2\pi i 0.j_n} |1\rangle\right) \otimes \left(|0\rangle + e^{2\pi i 0.j_{n-1} j_n} |1\rangle\right) \otimes \dots \otimes \left(|0\rangle + e^{2\pi i 0.j_1 j_2 \dots j_n} |1\rangle\right)
-
 $$
+
 
 其中 $0.j_l \dots j_m$ 表示二进制小数，即 $0.j_l \dots j_m = j_l/2 + j_{l+1}/4 + \dots + j_m/2^{m-l+1}$。
 
@@ -2280,22 +1981,22 @@ flowchart LR
 将整个系统置于初始状态 ** $|\psi_0\rangle$ ** $= |0\rangle^{\otimes t} |0\rangle^{\otimes L}$。
 随后，对第1寄存器的所有量子比特应用阿达马门 $H^{\otimes t}$，生成包含指数级数量状态的等概率叠加态：
 
-$$
 
+$$
 |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |0\rangle
-
 $$
+
 
 此时，第1寄存器同时保持了从 $0$ 到 $M-1$ 所有整数的状态。
 
 **【步骤2：量子预言机进行函数求值】**
 应用量子预言机 $U_f$，在保持叠加态的同时计算函数 $f(x) = a^x \bmod N$，并将计算结果存入第2寄存器：
 
-$$
 
+$$
 |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |a^x \bmod N\rangle
-
 $$
+
 
 该状态 ** $|\psi_2\rangle$ ** 是输入 $x$ 与输出 $f(x)$ 高度纠缠的态。
 
@@ -2303,11 +2004,11 @@ $$
 为了便于理解理论，我们假设此时对第2寄存器进行了观测（在实际算法中即便省略观测，数学结论也完全相同）。观测会导致第2寄存器塌缩到某个特定值 $y = a^{x_0} \bmod N$，其中 $x_0$ 是满足 $0 \le x_0 < r$ 的某个最小偏移量。
 此时，第1寄存器瞬间塌缩为“使函数 $f(x)$ 输出为 $y$ 的所有输入 $x$”的叠加态。由于该函数具有周期 $r$，这些 $x$ 以等间距排列为 $x_0, x_0 + r, x_0 + 2r, \dots$：
 
-$$
 
+$$
 |\psi_3\rangle = \frac{1}{\sqrt{A}} \sum_{m=0}^{A-1} |x_0 + m r\rangle \otimes |y\rangle
-
 $$
+
 
 其中 $A$ 为叠加态中包含的项数，满足 $A \approx M/r$。
 关注第1寄存器，这是一个具有周期 $r$ 的梳状（comb-like）概率分布状态。然而，若直接对该状态进行测量，只能以等概率得到随机的 $x_0 + mr$；由于偏移量 $x_0$ 未知，我们依然无法直接得知周期 $r$。此时便需要借助QFT。
@@ -2315,19 +2016,19 @@ $$
 **【步骤4：应用逆量子傅里叶变换】**
 对第1寄存器应用逆量子傅里叶变换（QFT$^\dagger$）：
 
-$$
 
+$$
 \text{QFT}^\dagger |\psi_3\rangle = \frac{1}{\sqrt{A M}} \sum_{k=0}^{M-1} \sum_{m=0}^{A-1} e^{-2\pi i k (x_0 + m r) / M} |k\rangle
-
 $$
+
 
 将其按状态 $|k\rangle$ 整理，并考察其概率振幅 $c_k$：
 
-$$
 
+$$
 c_k = \frac{1}{\sqrt{A M}} e^{-2\pi i k x_0 / M} \sum_{m=0}^{A-1} e^{-2\pi i k m r / M}
-
 $$
+
 
 该式中的求和部分是以 $e^{-2\pi i k r / M}$ 为公比的等比数列之和。若相位 $k r / M$ 显著偏离整数，复平面上的向量将在旋转相加中发生相消干涉（Destructive Interference），振幅几乎为 $0$。
 反之，当 $k r / M$ 极其接近某个整数 $j$ 时，即 $k \approx j \frac{M}{r}$ 时，复平面上的向量指向相同方向，通过相长干涉（Constructive Interference）使得振幅极大增强。
@@ -2335,11 +2036,11 @@ $$
 **【步骤5：测量与连分数展开】**
 对第1寄存器进行测量，将以极大概率观测到满足 $k \approx j \frac{M}{r}$ 的整数 $k$。两边同除以 $M$，得到如下关系：
 
-$$
 
+$$
 \frac{k}{M} \approx \frac{j}{r}
-
 $$
+
 
 在此，$k$ 与 $M$ 是已知值，但 $j$ 与 $r$ 未知。由于我们选取了满足 $M \ge N^2$ 的 $t$，因而 $k/M$ 对未知分数 $j/r$ 给出了极高精度的逼近，满足 $\left| \frac{k}{M} - \frac{j}{r} \right| \le \frac{1}{2M} < \frac{1}{2r^2}$。
 根据丢番图逼近定理（勒让德定理），满足此条件的有理数 $j/r$ 必然包含在实数 $k/M$ 的“连分数展开（Continued Fraction Expansion）”渐近分数中。
@@ -2377,33 +2078,25 @@ Shor算法之所以成为历史性的重大突破，原因在于它并非单纯�
 量子算法的第一步总是从准备同时俯瞰整个搜索空间开始。为了创造出所有可能性均匀叠加的状态，我们对 $n$ 量子比特的初始状态 $|0\rangle^{\otimes n}$ 中的每个量子比特，并行地应用阿达马门 $H$ 作为张量积。由此获得的初始均匀叠加态定义为 $|s\rangle$。
 
 $$
-
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
-
 $$
 
 这一状态 ** $|s\rangle$ ** 在希尔伯特空间中，可以明确地分解为目标状态 $|w\rangle$ 与所有其他非目标状态的线性组合。为了使后续的几何解释在直观上更容易理解，我们引入由所有非目标状态均匀叠加而成的新的归一化向量 $|s^\perp\rangle$：
 
 $$
-
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
-
 $$
 
 根据这一定义，状态 $|s^\perp\rangle$ 与目标状态 $|w\rangle$ 相互正交（ $\langle s^\perp | w \rangle = 0$ ）。于是，初始均匀叠加态 ** $|s\rangle$ ** 就可以在由这两个相互正交的向量 $|w\rangle$ 与 $|s^\perp\rangle$ 所张成的二维希尔伯特子空间上，极其简洁地展开如下：
 
 $$
-
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
-
 $$
 
 在此，我们引入一个满足 $\sin \theta = \frac{1}{\sqrt{N}}$ 的微小角度 $\theta$（当 $N$ 足够大时， $\theta \approx 1/\sqrt{N}$ ）。这样，该状态便可利用三角函数改写为更为优雅的几何表达形式：
 
 $$
-
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
-
 $$
 
 该数学公式揭示了一个残酷的事实：在初始状态 ** $|s\rangle$ ** 中观测到目标状态 $|w\rangle$ 的概率仅为 $|\sin \theta|^2 = \frac{1}{N}$。Grover算法的终极目标，就是通过反复应用后文详述的预言机与扩散算符的组合，将该状态向量 ** $|s\rangle$ ** 在希尔伯特空间的二维平面内逐渐向 $|w\rangle$ 的方向“旋转”，从而使测量到正确答案的概率无限逼近其理论极限 $1$ （即放大振幅）。
@@ -2415,54 +2108,44 @@ $$
 通常，该预言机使用一个辅助量子比特（Ancilla qubit），以可逆形式实现函数的评估。我们将表示搜索条件的布尔函数 $f(x)$ 定义为：当 $x = w$ 时 $f(w) = 1$，而对于所有其他 $x \neq w$ 返回 $f(x) = 0$。此时，预言机的作用可使用异或（XOR） $\oplus$ 表示如下：
 
 $$
-
 O_f \left( |x\rangle \otimes |y\rangle \right) = |x\rangle \otimes |y \oplus f(x)\rangle
-
 $$
 
 在这里，Grover算法展现了其巧妙之处。我们将辅助量子比特 $|y\rangle$ 不作为计算基态，而是预先初始化为叠加态 $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ 后再行输入。此时，就会发生被称为 **相位反冲（Phase Kickback）** 的量子特有惊人现象。让我们进行具体计算：
 
 $$
-
 \begin{align*}
 O_f \left( |x\rangle \otimes |-\rangle \right) &= O_f \left( |x\rangle \otimes \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) \\
 &= \frac{1}{\sqrt{2}} \left( O_f |x\rangle |0\rangle - O_f |x\rangle |1\rangle \right) \\
 &= \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right)
 \end{align*}
-
 $$
 
 我们将该式分为输入状态为非目标状态与目标状态两种情况来分别计算。
 如果 $x \neq w$（即 $f(x) = 0$），则状态完全不发生变化：
 
+
 $$
-
 \frac{1}{\sqrt{2}} \left( |x\rangle |0\rangle - |x\rangle |1\rangle \right) = |x\rangle |-\rangle
-
 $$
 
 另一方面，如果 $x = w$（即 $f(w) = 1$），则辅助量子比特的状态在 $0 \to 1$ 和 $1 \to 0$ 之间翻转，整体状态前方出现一个负号：
 
+
 $$
-
 \frac{1}{\sqrt{2}} \left( |x\rangle |1\rangle - |x\rangle |0\rangle \right) = - \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) = - |x\rangle |-\rangle
-
 $$
 
 这一结果至关重要。辅助量子比特 $|-\rangle$ 的状态在操作前后完全不变，仅仅起到了“催化剂”的作用。取而代之的是，函数评估结果 $f(x)$ 作为主量子寄存器 $|x\rangle$ 的 **振幅符号（相位）** 被“反冲（踢回）”了过来。利用这一性质，我们可以省略对辅助量子比特的描述，将预言机对主寄存器的作用重新定义为一个简洁且优雅的新幺正算符 $U_w$：
 
 $$
-
 U_w |x\rangle = (-1)^{f(x)} |x\rangle = \begin{cases} -|x\rangle & (x = w) \\ |x\rangle & (x \neq w) \end{cases}
-
 $$
 
 这一相位预言机 $U_w$ 可以利用狄拉克符号的投影算符表示显式写为：
 
 $$
-
 U_w = I - 2|w\rangle\langle w|
-
 $$
 
 其中 $I$ 是 $N \times N$ 的恒等算符。从几何直觉上讲，该预言机 $U_w$ 正是在由 $|s^\perp\rangle$ 与 $|w\rangle$ 所张成的二维实平面中， **以横轴 $|s^\perp\rangle$ 轴为对称轴进行状态向量镜像（Reflection）** 的算符。因为只有目标状态的分量符号被反转，而非目标状态的分量则被原样保持。
@@ -2474,9 +2157,7 @@ $$
 扩散算符 $U_s$ 在数学上定义如下：
 
 $$
-
 U_s = 2|s\rangle\langle s| - I
-
 $$
 
 该算符为何被称为“基于均值的反转（Inversion about the mean）”？让我们使用一般的叠加态 $|\psi\rangle = \sum_{x=0}^{N-1} \alpha_x |x\rangle$ 来严格证明其内在机制。
@@ -2484,9 +2165,7 @@ $$
 首先，计算均匀叠加态 $|s\rangle$ 与当前状态 $|\psi\rangle$ 的内积：
 
 $$
-
 \langle s | \psi \rangle = \left( \frac{1}{\sqrt{N}} \sum_{y=0}^{N-1} \langle y| \right) \left( \sum_{x=0}^{N-1} \alpha_x |x\rangle \right) = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} \alpha_x
-
 $$
 
 将该内积的值再除以 $\sqrt{N}$，即可得到所有振幅 $\alpha_x$ 的算术平均值（将其定义为 $\mu$）。即可以表示为 $\mu = \frac{1}{N} \sum_{x=0}^{N-1} \alpha_x = \frac{1}{\sqrt{N}} \langle s | \psi \rangle$。因此，有 $\langle s | \psi \rangle = \sqrt{N} \mu$。
@@ -2494,7 +2173,6 @@ $$
 利用这一关系式，我们计算 $U_s$ 作用于状态 $|\psi\rangle$ 上的结果：
 
 $$
-
 \begin{align*}
 U_s |\psi\rangle &= (2|s\rangle\langle s| - I) \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
 &= 2|s\rangle \langle s | \psi \rangle - \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
@@ -2502,7 +2180,6 @@ U_s |\psi\rangle &= (2|s\rangle\langle s| - I) \sum_{x=0}^{N-1} \alpha_x |x\rang
 &= 2 \mu \sum_{x=0}^{N-1} |x\rangle - \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
 &= \sum_{x=0}^{N-1} (2\mu - \alpha_x) |x\rangle
 \end{align*}
-
 $$
 
 计算所得状态中每个基态 $|x\rangle$ 的新振幅变为 $(2\mu - \alpha_x)$。该式可以变形为 $\mu + (\mu - \alpha_x)$。这表明，原始振幅 $\alpha_x$ 以整体平均值 $\mu$ 为基准，恰好翻转到了对称的另一侧。这正是扩散算符被称为“基于均值的反转”的数学根据。
@@ -2518,9 +2195,7 @@ $$
 Grover算法的单次迭代单元—— **Grover算符 $G$ ** ，定义为预言机 $U_w$ 与扩散算符 $U_s$ 的相继作用，即两者的乘积：
 
 $$
-
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
-
 $$
 
 在此，由欧几里得几何与线性代数交织出的极其优美的定理成为主角：“以两条相交直线为对称轴的两次相继镜像（Reflection）之复合，等价于旋转角为两直线夹角两倍的纯旋转（Rotation）”。
@@ -2540,51 +2215,43 @@ $$
 我们使用数学归纳法证明：在经过 $t$ 次迭代后，状态总是可以简洁地表示为：
 
 $$
-
 |\psi_t\rangle = G^t |s\rangle = \cos((2t+1)\theta) |s^\perp\rangle + \sin((2t+1)\theta) |w\rangle
-
 $$
 
 当 $t=0$ 时显然成立。假设 $|\psi_t\rangle$ 满足上述形式，我们计算再进行一次迭代后的状态 $|\psi_{t+1}\rangle = G |\psi_t\rangle$。
 首先，作用预言机 $U_w$， $|w\rangle$ 分量的符号发生反转：
 
 $$
-
 U_w |\psi_t\rangle = \cos((2t+1)\theta) |s^\perp\rangle - \sin((2t+1)\theta) |w\rangle
-
 $$
 
 接下来，作用扩散算符 $U_s = 2|s\rangle\langle s| - I$。为了进行此项计算，引入在基底向量 $\{|s^\perp\rangle, |w\rangle\}$ 下的 2×2 矩阵表示最为直观明了。
 
 预言机 $U_w$ 的矩阵表示为如下对角矩阵：
 
+
 $$
-
 U_w = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 由于初始状态向量 $|s\rangle$ 可由列向量 $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ 表示，投影算符 $|s\rangle\langle s|$ 可通过外积进行计算，进而求得 $U_s$ 如下：
 
 $$
-
 \begin{align*}
 U_s &= 2 \begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix} \begin{pmatrix} \cos\theta & \sin\theta \end{pmatrix} - \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \\
 &= \begin{pmatrix} 2\cos^2\theta - 1 & 2\sin\theta\cos\theta \\ 2\sin\theta\cos\theta & 2\sin^2\theta - 1 \end{pmatrix} \\
 &= \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\theta) \end{pmatrix}
 \end{align*}
-
 $$
+
 
 （此处用到了二倍角公式 $\cos(2\theta) = 2\cos^2\theta - 1$ 与 $\sin(2\theta) = 2\sin\theta\cos\theta$）
 
 因此，Grover算符 $G = U_s U_w$ 的整体矩阵表示即为这两个矩阵的乘积：
 
 $$
-
 G = \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\theta) \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 = \begin{pmatrix} \cos(2\theta) & -\sin(2\theta) \\ \sin(2\theta) & \cos(2\theta) \end{pmatrix}
-
 $$
 
 令人惊叹的是，所得矩阵正是几何学中极为熟知的 **旋转角为 $2\theta$ 的旋转矩阵** 本身。因此，对初始向量 $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ 连续作用 $t$ 次算符 $G$，在几何上等价于每次将该向量逆时针旋转 $2\theta$。由此，总角度变为初始角 $\theta$ 加上 $t \times 2\theta$，即 $\theta + 2t\theta = (2t+1)\theta$。至此，归纳法证明优美完成。
@@ -2612,9 +2279,7 @@ graph LR
 该线路图展示了扩散算符 $U_s = 2|s\rangle\langle s| - I$ 极其高效实用的实现方案。由于状态 $|s\rangle$ 由 $H^{\otimes n} |0\rangle^{\otimes n}$ 生成，该算符可分解如下：
 
 $$
-
 U_s = 2(H^{\otimes n} |0\rangle^{\otimes n})(\langle 0|^{\otimes n} H^{\otimes n}) - I = H^{\otimes n} (2|0\rangle\langle 0| - I) H^{\otimes n}
-
 $$
 
 也就是说，首先通过阿达马变换 $H^{\otimes n}$ 转换到计算基底，接着应用条件相位移算符——仅当所有量子比特均为 $|0\rangle$ 时才不反转相位（或者仅当全为 $|0\rangle$ 时赋予负相位，二者完全等价，仅相差一个全局相位），最后再次通过阿达马变换回到原基底。通过采用这种“三明治”三层结构，便可在任意量子计算机上高效实现“基于均值的反转”。
@@ -2626,25 +2291,19 @@ $$
 在进行 $t$ 次迭代后，在计算基底上测量量子寄存器以获得目标状态 $|w\rangle$ 的概率 $P(w)$，由状态向量 $|\psi_t\rangle$ 在 $|w\rangle$ 分量上振幅模的平方给出：
 
 $$
-
 P(w) = |\langle w | \psi_t \rangle|^2 = \sin^2((2t+1)\theta)
-
 $$
 
 我们的终极目标是最大化该概率 $P(w)$，即使其尽可能逼近理论上限 $1$。正弦平方函数 $\sin^2(x)$ 取得最大值 $1$ 的条件是自变量 $x$ 等于 $\frac{\pi}{2}$（即90度）。因此，求解最优迭代次数 $t$ 的方程列出如下：
 
 $$
-
 (2t+1)\theta \approx \frac{\pi}{2}
-
 $$
 
 将其关于 $t$ 解出：
 
 $$
-
 t \approx \frac{\pi}{4\theta} - \frac{1}{2}
-
 $$
 
 在具有实际规模的数据库搜索中，元素数量 $N$ 是天文数字。此时，角度 $\theta$ 是极其接近 $0$ 的微小值。对于微小的 $\theta$，取泰勒展开（麦克劳林展开）的一阶项可得良好的近似 $\sin \theta \approx \theta$。由初始状态的定义已知 $\sin \theta = \frac{1}{\sqrt{N}}$，因此可视为 $\theta \approx \frac{1}{\sqrt{N}}$。
@@ -2652,9 +2311,7 @@ $$
 将该近似式代入前述 $t$ 的方程中，最优迭代次数 $R$ 便可优美地导出如下：
 
 $$
-
 R \approx \frac{\pi}{4} \sqrt{N}
-
 $$
 
 该结果所具有的意义足以震撼信息科学的历史。在经典计算机中，为了从随机洗牌的搜索空间中找出正确答案，最坏情况下需要 $N$ 次，平均而言也需要 $N/2$ 次，与元素数量成正比的搜索时间（计算复杂度 $O(N)$ ）是不可避免的。然而，在量子计算机上运行的Grover算法，通过利用干涉放大极小概率，仅需 $\frac{\pi}{4} \sqrt{N}$ 次查询，就能以极高确定性（成功概率达到 $1 - O(1/N)$ 的极高精度）抵达目标状态。其计算复杂度为 $O(\sqrt{N})$，成功将计算时间压缩至平方根尺度。
@@ -2668,22 +2325,17 @@ $$
 当存在 $M$ 个解时，我们将所有目标状态的均匀叠加态重新定义为 $|W\rangle$，并将所有非目标状态的均匀叠加态重新定义为 $|W^\perp\rangle$：
 
 $$
-
 |W\rangle = \frac{1}{\sqrt{M}} \sum_{x \in \text{Solutions}} |x\rangle
-
-$$
 $$
 
+$$
 |W^\perp\rangle = \frac{1}{\sqrt{N-M}} \sum_{x \notin \text{Solutions}} |x\rangle
-
 $$
 
 于是，初始均匀叠加态 $|s\rangle$ 可以利用这两个相互正交的向量展开如下：
 
 $$
-
 |s\rangle = \sqrt{\frac{N-M}{N}} |W^\perp\rangle + \sqrt{\frac{M}{N}} |W\rangle
-
 $$
 
 在此，我们定义新的角度 $\theta'$ 满足 $\sin \theta' = \sqrt{\frac{M}{N}}$。在这一新定义下，应用与单解情况完全相同的Grover算符 $G$（预言机被扩展为对全部 $M$ 个解均反转相位），状态向量便会在由 $|W^\perp\rangle$ 与 $|W\rangle$ 张成的平面内，每次迭代旋转 $2\theta'$。
@@ -2691,9 +2343,7 @@ $$
 由完全相同的逻辑推演，最优迭代次数为 $\frac{\pi}{4\theta'}$，在 $M \ll N$ 时可近似为：
 
 $$
-
 R \approx \frac{\pi}{4} \sqrt{\frac{N}{M}}
-
 $$
 
 该公式表明，解的数量 $M$ 越多，所需的迭代次数（搜索时间）自然就越短。例如，若存在4个解，所需时间便减半。即使在解的数量 $M$ 未知的情况下，也可以借助称为 **量子计数算法（Quantum Counting Algorithm）** 的高级技术——将Grover算法与量子相位估计（Quantum Phase Estimation）相结合——以快速估计出解的数量 $M$ 本身，随后再执行相应次数的振幅放大。
@@ -2724,11 +2374,11 @@ Shor的大整数质因数分解算法巧妙地利用了整数乘法群所具备�
 
 任意量子信道 $\mathcal{E}$ 均可利用克劳斯表示（Kraus Representation）展开如下：
 
-$$
 
+$$
 \mathcal{E}(\rho) = \sum_{k} E_k \rho E_k^\dagger
-
 $$
+
 
 这里， $E_k$ 被称为克劳斯算符（Kraus Operators），满足代表概率守恒的保迹条件 $\sum_k E_k^\dagger E_k = I$ 。
 
@@ -2738,27 +2388,23 @@ $$
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} X
-
 $$
+
 
 2. **相位翻转信道 (Phase Flip Channel):** 以概率 $p$ 作用 $Z$ 门。它表现了相对相位的坍缩（纯粹的退相干）。纯态 $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ 密度矩阵的非对角元呈指数衰减的现象直接归因于此。
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} Z
-
 $$
+
 
 3. **去极化信道 (Depolarizing Channel):** 以概率 $p$ 使状态完全逼近最大混合态（白噪声） $I/2$ 。
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{\frac{p}{3}} X, \quad E_2 = \sqrt{\frac{p}{3}} Y, \quad E_3 = \sqrt{\frac{p}{3}} Z
-
 $$
 
 构建量子纠错所面临的第一道障碍是“不可克隆定理（No-Cloning Theorem）”。不存在任何幺正变换能够复制未知的量子态 $|\psi\rangle$ 并制备出形如 $|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$ 的状态。因此，像经典纠错那样“将相同信息复制到3个比特上并采用多数表决”的朴素方法在量子系统中是不可能的。此外，如果对量子态进行测量就会引发波包塌缩，从而破坏叠加态。如何在不破坏未知信息的前提下精确定位错误，便成了核心课题。
@@ -2770,11 +2416,11 @@ $$
 作为最简单的示例，我们构建一个“3量子比特比特翻转码”，用来保护1个量子比特的状态 $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ 免受概率性比特翻转的影响。
 将逻辑基（Logical Basis）定义如下：
 
-$$
 
+$$
 |0\rangle_L = |000\rangle, \quad |1\rangle_L = |111\rangle
-
 $$
+
 
 逻辑状态为 $|\psi\rangle_L = \alpha |000\rangle + \beta |111\rangle$ 。这并不是复制，而是编码到GHZ型纠缠态。
 
@@ -2784,27 +2430,25 @@ $$
 原始码空间中的任意矢量 $|\psi\rangle_L$ 都是 $Z_1 Z_2$ 和 $Z_2 Z_3$ 对应本征值为 $+1$ 的本征矢量（即 $Z_1 Z_2 |\psi\rangle_L = |\psi\rangle_L$ ）。
 然而，对于错误状态 $|\psi'\rangle$ ，由于 $X$ 和 $Z$ 满足反对易（ $\{X, Z\} = 0$ ）的泡利代数性质，
 
-$$
 
+$$
 Z_1 Z_2 |\psi'\rangle = Z_1 Z_2 X_1 |\psi\rangle_L = -X_1 Z_1 Z_2 |\psi\rangle_L = - |\psi'\rangle
-
 $$
 
 $$
-
 Z_2 Z_3 |\psi'\rangle = Z_2 Z_3 X_1 |\psi\rangle_L = X_1 Z_2 Z_3 |\psi\rangle_L = + |\psi'\rangle
-
 $$
+
 
 测量结果（伴随式）为 $(-1, +1)$ ，这就仅确定了“第1个比特发生了 $X$ 错误”这一事实。由于关于叠加系数 $\alpha, \beta$ 的信息完全没有泄漏，因此测量并不会破坏状态。随后，再次施加 $X_1$ 即可完全恢复为原来的状态 $|\psi\rangle_L$ 。
 
 同样地，为了纠正相位翻转错误 $Z$ ，可以使用基于阿达马基 $\{|+\rangle, |-\rangle\}$ 的“3量子比特相位翻转码”。
 
-$$
 
+$$
 |0\rangle_L = |+++\rangle, \quad |1\rangle_L = |---\rangle
-
 $$
+
 
 在这种情况下，伴随式测量使用 $X_1 X_2$ 和 $X_2 X_3$ 。
 
@@ -2816,16 +2460,13 @@ $$
 
 逻辑基如下所示：
 
-$$
 
+$$
 |0\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle )
-
 $$
 
 $$
-
 |1\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle )
-
 $$
 
 将肖尔码等纠错方法加以一般化并赋予其坚实数学基础的，是丹尼尔·戈特斯曼提出的“稳定子形式（Stabilizer Formalism）”。
@@ -2834,30 +2475,25 @@ $$
 在肖尔码（ $n=9$ ）的情况下，为了编码 1 个逻辑比特，由 $k=8$ 个独立的生成元构成。
 用于检测比特翻转的 $Z$ 体系稳定子（6个）：
 
-$$
 
+$$
 S_1 = Z_1 Z_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9, \quad S_2 = I_1 Z_2 Z_3 I_4 I_5 I_6 I_7 I_8 I_9
-
 $$
 
 $$
-
 \dots, \quad S_6 = I_1 I_2 I_3 I_4 I_5 I_6 I_7 Z_8 Z_9
-
 $$
+
 
 用于检测相位翻转的 $X$ 体系稳定子（2个）：
 
-$$
 
+$$
 S_7 = X_1 X_2 X_3 X_4 X_5 X_6 I_7 I_8 I_9
-
 $$
 
 $$
-
 S_8 = I_1 I_2 I_3 X_4 X_5 X_6 X_7 X_8 X_9
-
 $$
 
 如果任意量子比特上发生了错误 $E \in \mathcal{P}_n$ ，只要它与 $\mathcal{S}$ 的任何一个生成元反对易，那么该稳定子的测量结果就会变成 $-1$ ，从而能够确定错误的种类与位置。稳定子的概念提供了一种极其强大的方法，它不直接追踪量子态本身，而是追踪决定系统对称性的算符代数结构，这与海森堡绘景非常接近。
@@ -2900,11 +2536,11 @@ graph TD
 在表面码中，量子比特被配置在二维晶格的顶点（或边）上，并且仅使用相邻量子比特之间的局域相互作用来执行稳定子测量。
 哈密顿量可以写成如下形式：
 
-$$
 
+$$
 H = - \sum_{v} A_v - \sum_{p} B_p
-
 $$
+
 
 这里， $A_v$ 是针对顶点（Vertex）周围 4 个量子比特的 $X$ 算符的张量积（顶点算符: $A_v = \prod_{i \in \text{star}(v)} X_i$ ）， $B_p$ 是针对面元（面，Plaquette）周围 4 个量子比特的 $Z$ 算符的张量积（面算符: $B_p = \prod_{i \in \text{boundary}(p)} Z_i$ ）。
 它们彼此对易（ $[A_v, B_p] = 0$ ），并且逻辑状态被编码在所有 $A_v$ 和 $B_p$ 的本征值均为 $+1$ 的基态空间中。令人惊讶的是，在亏格（Genus）为 $g$ 的二维流形上构建的复曲面码，其基态的简并度为 $4^g$ ，在环面（ $g=1$ ）上自然地编码了 2 个逻辑量子比特。
@@ -2954,9 +2590,7 @@ $$
 通过微细加工制造的普通 LC 谐振电路（由电感 $ L $ 和电容 $ C $ 构成的系统），在冷却至极低温并进行量子化后，会成为量子力学中的简谐振子（Harmonic Oscillator）。其哈密顿量可以使用产生算符 $ \hat{a}^\dagger $ 和湮灭算符 $ \hat{a} $ 表示为：
 
 $$
-
 \hat{H}_{\text{LC}} = \hbar \omega_r \left( \hat{a}^\dagger \hat{a} + \frac{1}{2} \right)
-
 $$
 
 其中 $ \omega_r = 1/\sqrt{LC} $ 为谐振频率。该系统的能级 $ E_n = \hbar \omega_r (n + 1/2) $ 是完全等间距的。如果将该系统的最低能量态 $ |0\rangle $ 和第一激发态 $ |1\rangle $ 用作量子比特，当我们施加频率为 $ \omega_r $ 的微波脉冲以执行门操作（例如 $ |0\rangle \leftrightarrow |1\rangle $ 跃迁）时，能级间距相同的 $ |1\rangle \leftrightarrow |2\rangle $ 以及 $ |2\rangle \leftrightarrow |3\rangle $ 等跃迁也会被同时驱动。这样一来，系统便无法作为双能级系统正常工作。
@@ -2971,25 +2605,19 @@ Transmon 通过在约瑟夫森能量 $ E_J $ 旁故意引入巨大的并联分�
 表示库珀对数量的电荷算符 $ \hat{n} $ 与表示超导相位差的相位算符 $ \hat{\phi} $ 是一对正则共轭变量，满足对易关系 $ [\hat{\phi}, \hat{n}] = i $ 。Transmon 的哈密顿量可以精确表述为：
 
 $$
-
 \hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
-
 $$
 
 其中， $ n_g $ 是由环境或栅极电压引起的偏置电荷。在 $ E_J \gg E_C $ 的极限下，相位的量子涨落被抑制得很小，因此可以将余弦项进行泰勒展开，将其作为非简谐振子处理：
 
 $$
-
 - E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
-
 $$
 
 正是这个 $ \hat{\phi}^4 $ 项为系统带来了非简谐性（Anharmonicity）。根据微扰论的计算结果，能级间的非简谐性 $ \alpha $ 可以近似表示为：
 
 $$
-
 \alpha \equiv (E_2 - E_1) - (E_1 - E_0) \approx -E_C
-
 $$
 
 得益于这种负非简谐性（ $ E_1 \to E_2 $ 的跃迁频率小于 $ E_0 \to E_1 $ ），我们能够利用微波脉冲在计算基底空间 $ |0\rangle $ 和 $ |1\rangle $ 内安全地执行单量子比特门操作。
@@ -3000,17 +2628,13 @@ $$
 量子比特与读出用微波谐振腔的耦合系统由贾恩斯-卡明斯（Jaynes-Cummings）模型所描述：
 
 $$
-
 \hat{H}_{\text{JC}} = \frac{\hbar \omega_q}{2} \hat{\sigma}_z + \hbar \omega_r \hat{a}^\dagger \hat{a} + \hbar g (\hat{\sigma}_+ \hat{a} + \hat{\sigma}_- \hat{a}^\dagger)
-
 $$
 
 其中 $ g $ 为耦合强度。在量子比特的跃迁频率 $ \omega_q $ 与谐振腔频率 $ \omega_r $ 相距较远的色散区间（ $ |\omega_q - \omega_r| \gg g $ ）内，通过施里弗-沃尔夫变换，有效哈密顿量可对角化为：
 
 $$
-
 \hat{H}_{\text{disp}} \approx \frac{\hbar \omega_q}{2} \hat{\sigma}_z + \hbar \left( \omega_r + \frac{g^2}{\Delta} \hat{\sigma}_z \right) \hat{a}^\dagger \hat{a}
-
 $$
 
 其中 $ \Delta = \omega_q - \omega_r $ 。该式第二项所蕴含的物理意义极为重要：谐振腔的有效谐振频率会根据量子比特的状态（ $ \hat{\sigma}_z = +1 $ 还是 $ -1 $ ）发生 $ \pm g^2/\Delta $ 的频移。因此，通过向谐振腔注入探测微波并测量其透射或反射微波的相位移动，便可实现对量子比特状态的投影测量。
@@ -3030,9 +2654,7 @@ $$
 被捕获的离子在真空腔内接受激光冷却（多普勒冷却和边带冷却）。由此，离子的动能被剥离到量子力学基态（声子数 $ n=0 $ ）。量子比特的计算基底被编码在离子的内部电子态中。其内部状态的哈密顿量非常简单：
 
 $$
-
 \hat{H}_{\text{internal}} = \frac{\hbar \omega_0}{2} \hat{\sigma}_z
-
 $$
 
 ### 11.2.2 兰姆-迪克极限与 Mølmer-Sørensen 门的数学原理
@@ -3042,17 +2664,13 @@ $$
 实现双量子比特门最标准的方案是 Mølmer-Sørensen（MS）门 。对两个离子，同时照射相对声子模频率 $ \omega_m $ 存在微小失谐的双色激光。在兰姆-迪克参数 $ \eta = k z_0 $ 足够小的兰姆-迪克区间（ $ \eta \sqrt{n} \ll 1 $ ）内，相互作用哈密顿量可展开为：
 
 $$
-
 \hat{H}_{\text{int}} \approx \hbar \Omega \sum_{j=1,2} \hat{\sigma}_\phi^{(j)} \left( \eta \hat{a} e^{i \delta t} + \eta \hat{a}^\dagger e^{-i \delta t} \right)
-
 $$
 
 其中 $ \Omega $ 为拉比频率， $ \delta $ 为失谐量。利用马格努斯展开计算时间演化算符可以发现，在经过适当的门操作时间后，运动模将复原到初始状态，而在内部状态之间则被赋予了几何相位，从而留下了等效的自旋-自旋相互作用：
 
 $$
-
 \hat{U}_{\text{MS}} = \exp\left( -i \frac{\pi}{4} \hat{\sigma}_\phi \otimes \hat{\sigma}_\phi \right)
-
 $$
 
 该操作能够生成最大纠缠态，并具有与 CNOT 门等价的计算能力。能够实现全连接（All-to-all connectivity），是离子阱方案相比于只能与相邻量子比特耦合的超导方案的一大决定性差异。
@@ -3070,9 +2688,7 @@ $$
 在我们生活的3维空间中，基本粒子只有玻色子和费米子两类。然而，在2维拓扑物质系统中，通过粒子的交换操作，波函数可以获得任意相位的准粒子——“任意子（Anyon）”是可能存在的。在更为奇特的“非阿贝尔任意子（Non-Abelian anyon）”系统中，交换两个粒子会使系统在具有相同能量的简并态跃迁到另一个相互正交的状态：
 
 $$
-
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
-
 $$
 
 这种非阿贝尔任意子最有希望的物理候选者，是凝聚态物理学中作为准粒子的“马约拉纳零能模（Majorana Zero Modes, MZM）”。在具有强自旋轨道耦合的1维半导体纳米线（如 InSb）中，将其与 s 波超导体近邻接触并施加外加磁场。根据基塔耶夫（Alexei Kitaev）提出的理论模型，在特定的参数区间内，纳米线会发生相变进入拓扑超导相，在纳米线的两端产生局域化的零能量马约拉纳边缘态。
@@ -3080,9 +2696,7 @@ $$
 马约拉纳算符 $ \hat{\gamma}_1, \hat{\gamma}_2 $ 满足自共轭性（ $ \hat{\gamma}_j = \hat{\gamma}_j^\dagger $ ）以及反对易关系 $ \{ \hat{\gamma}_i, \hat{\gamma}_j \} = 2\delta_{ij} $ 。普通的狄拉克费米子产生算符与湮灭算符可以通过这两个马约拉纳算符在空间上非局域地构建：
 
 $$
-
 \hat{c} = \frac{1}{2}(\hat{\gamma}_1 + i\hat{\gamma}_2), \quad \hat{c}^\dagger = \frac{1}{2}(\hat{\gamma}_1 - i\hat{\gamma}_2)
-
 $$
 
 这样，一个电子态（费米子宇称）便被“分割”并编码在纳米线两端这两个空间上彼此隔离的位置。由于局域噪声同时且以精确相关的方式扰动系统两端的概率极低，因此量子信息在本质上免受退相干的影响（拓扑保护）。
@@ -3152,17 +2766,13 @@ graph TD
 让我们用数学语言进行描述。设初始状态为 $ |\psi_0\rangle = |0\rangle^{\otimes n} $ 。对其作用随机选择的幺正变换 $ U = U_d U_{d-1} \dots U_1 $ 。最终状态 $ |\psi_f\rangle $ 可利用张量积与线性组合表示如下：
 
 $$
-
 |\psi_f\rangle = U |0\rangle^{\otimes n} = \sum_{x \in \{0, 1\}^n} \alpha_x |x\rangle
-
 $$
 
 这里 $ \alpha_x = \langle x | U | 0 \rangle^{\otimes n} $ 是观测到特定比特串 $x$ 的概率幅，是一个复数。此时，通过测量得到比特串 $x$ 的理想概率 $ P_{\text{ideal}}(x) $ 根据量子力学中的玻恩定则（Born Rule）由下式给出：
 
 $$
-
 P_{\text{ideal}}(x) = |\alpha_x|^2 = \left| \langle x | U | 0 \rangle^{\otimes n} \right|^2
-
 $$
 
 在足够深（$d$ 很大）的随机量子线路中，每个振幅 $ \alpha_x $ 在复平面上表现出随机游走的特性，已知其概率分布 $ P_{\text{ideal}}(x) $ 服从波特-托马斯分布（Porter-Thomas distribution）。换言之，出现概率为 $p$ 的概率密度函数为 $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $ 。这意味着某些比特串会比其他比特串更容易被观测到，从而形成一种“散斑（斑点）图样（Speckle pattern）”。
@@ -3172,9 +2782,7 @@ $$
 为了评估实验的成败，引入了线性交叉熵基准（Linear Cross-Entropy Benchmarking, XEB）。保真度（Fidelity） $ \mathcal{F}_{\text{XEB}} $ 定义如下：
 
 $$
-
 \mathcal{F}_{\text{XEB}} = 2^n \sum_{x \in \{0, 1\}^n} P_{\text{ideal}}(x) P_{\text{exp}}(x) - 1
-
 $$
 
 这里，$ P_{\text{exp}}(x) $ 是从实际量子处理器（包含硬件噪声）获得的经验概率分布。如果设备输出的是完全随机的噪声（即完全混合态的密度矩阵 $ \rho = \frac{I}{2^n} $ ），则 $ P_{\text{exp}}(x) = \frac{1}{2^n} $ ，导致 $ \mathcal{F}_{\text{XEB}} = 0 $ 。反之，若是输出完全无噪声的理想纯态的量子计算机，则有 $ \mathcal{F}_{\text{XEB}} \approx 1 $ 。在Google的实验中，测得 $ \mathcal{F}_{\text{XEB}} \approx 0.002 $ ，这是一个显著大于零且具有统计显著性的数值。即使保真度如此微小，但由于在计算复杂性理论上经典计算机生成同等样本极其困难，因此被视为量子优越性（量子霸权）的实证。
@@ -3198,9 +2806,7 @@ graph TD
 这种误解源于这样一个事实：利用阿达马门等构建的状态叠加 $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $ ，可以通过“单次操作”对所有输入进行函数求值（量子并行性）。当利用预言机（Oracle，负责计算的幺正算符） ** $U_f$ ** 对叠加态执行函数 $ f(x) $ 的计算时，整个状态将遵循线性规律演化如下：
 
 $$
-
 U_f \left( \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |0\rangle \right) = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |f(x)\rangle
-
 $$
 
 诚然，在这一态矢量的内部，确实以概率幅子系统的形式蕴含了所有 $x$ 对应的 $f(x)$ 的答案。然而，请回想量子力学中的 **测量公理** （波函数坍缩）。当对该输出寄存器执行测量操作时，所能获得的仅仅是以 $\frac{1}{2^n}$ 的概率随机选出的单个数据对 $ (x, f(x)) $ 。其余 $ 2^n - 1 $ 个信息都在不可逆的投影测量中永远丢失了。也就是说，在“并行计算（状态演化）”与“从并行计算的结果中提取出我们所需的特定信息（状态读取）”之间，存在着一条难以逾越的绝望鸿沟。
@@ -3214,9 +2820,7 @@ Grover算法（Grover's algorithm）将针对无结构 $ N = 2^n $ 个元素的�
 Grover迭代算符 ** $G$ ** 被定义为由预言机实现的目标态相位反转算符 $ U_\omega = I - 2|\omega\rangle\langle\omega| $ 与围绕均值反转算符 $ U_s = 2|s\rangle\langle s| - I $ 的乘积：
 
 $$
-
 G = U_s U_\omega = (2|s\rangle\langle s| - I)(I - 2|\omega\rangle\langle\omega|)
-
 $$
 
 通过将此幺正算符 ** $G$ ** 作用约 $ \frac{\pi}{4}\sqrt{N} $ 次，态矢量便会旋转至目标态 $ |\omega\rangle $ ，从而将观测到正确解的概率提升至接近 1（100%）。然而，此处一个极其重要的事实在于，这仅仅是“平方根加速”，而非指数级加速（ $ O(2^n) \to O(\text{poly}(n)) $ ）。时至今日，尚未发现能在多项式时间内求解一般NP完全问题的量子干涉模式。许多量子信息科学家和计算机科学家坚信计算复杂性理论的核心猜想之一： ** $\text{BQP} \not\supset \text{NP-Complete}$ ** （量子计算机无法高效求解NP完全问题）。
@@ -3234,22 +2838,17 @@ $$
 在表面码中，用于保持量子信息的“数据量子比特”配置在二维网格的边（edge）上，而用于检测错误的“伴随式测量量子比特（辅助量子比特）”则配置在网格的面（plaquette）和顶点（vertex）上。接着，定义如下由泡利算符张量积构成的稳定子算符群：
 
 $$
-
 B_p = \bigotimes_{i \in \partial p} Z_i \quad \text{(格面算符：检测Z错误)}
-
-$$
 $$
 
+$$
 A_v = \bigotimes_{i \in \delta v} X_i \quad \text{(顶点算符：检测X错误)}
-
 $$
 
 此处，所有的 $ B_p $ 与 $ A_v $ 彼此对易（反对易子为零），即满足对易关系 $ [B_p, A_v] = 0 $ 。我们写入信息的“逻辑态（码空间）” ** $|\psi_L\rangle$ ** 被严格定义为所有这些稳定子算符本征值均为 $+1$ 的共同本征态所张成的子空间：
 
 $$
-
 B_p |\psi_L\rangle = +1 |\psi_L\rangle, \quad A_v |\psi_L\rangle = +1 |\psi_L\rangle \quad (\text{for all } p, v)
-
 $$
 
 假设施加在某个物理量子比特上的外部热噪声或操作失误导致了意外的比特翻转错误（泡利 $X$）或相位错误（泡利 $Z$）。由于该错误算符与邻近的特定稳定子算符满足反对易关系（ $\{X, Z\} = 0 $ ），测量该稳定子的结果（伴随式值 / syndrome）就会由 $+1$ 翻转为 $-1$ 。我们在完全不观测且不破坏受保护的逻辑态本身（权重系数 $\alpha, \beta$ 的取值）的前提下，持续追踪呈现 $-1$ 的位置（缺陷 / defect）对。随后，利用“最小权重完美匹配（Minimum Weight Perfect Matching, MWPM）”等经典算法，最大似然估计在哪个物理量子比特路径上发生了何种错误，再通过软件记录或物理上施加逆操作来予以纠正。

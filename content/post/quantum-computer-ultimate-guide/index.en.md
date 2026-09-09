@@ -9,6 +9,7 @@ mermaid: true
 image: "cover.webp"
 ---
 
+
 # Chapter 1: The Dawn and Limits of Quantum Computing
 
 ## 1.1 Physical Limits of Classical Computing and the End of Moore's Law
@@ -18,9 +19,7 @@ The dramatic advancement of information processing technology in modern society 
 When a transistor's gate dielectric film and channel length shrink to a scale of several nanometers—equivalent to a thickness of merely a few to several dozen atoms—electrons can probabilistically penetrate energy barriers that are insurmountable under classical mechanics, due to the leakage of their wavefunctions. For an electron of mass $m$ and energy $E < V_0$ incident upon a region with potential barrier $V_0$ and width $a$ , the transmission probability $T$ is given by the WKB approximation as:
 
 $$
-
 T \approx \exp \left( - \frac{2}{\hbar} \int_{0}^{a} \sqrt{2m(V_0 - E)} \, dx \right)
-
 $$
 
 Here, $\hbar$ is the reduced Planck constant. As miniaturization reduces the barrier width $a$ , the transmission probability $T$ increases exponentially. Consequently, "leakage current" flowing even in the off-state reaches a non-negligible magnitude. This triggers increased power dissipation and thermal load, signifying the operational collapse of the transistor as a classical deterministic switching device.
@@ -28,9 +27,7 @@ Here, $\hbar$ is the reduced Planck constant. As miniaturization reduces the bar
 Furthermore, the thermodynamic constraints of information processing cannot be disregarded. In 1961, Rolf Landauer demonstrated that heat dissipation is inevitable whenever information is erased (i.e., during irreversible logical operations)—a principle known as Landauer's Principle. The minimum quantity of heat $\Delta Q$ released into the environment when erasing 1 bit of information is expressed as:
 
 $$
-
 \Delta Q \ge k_B T \ln 2
-
 $$
 
 Here, $k_B$ is the Boltzmann constant and $T$ is the absolute temperature. As long as classical computers rely on irreversible logic gates (such as AND and OR gates), this thermodynamic lower bound cannot be circumvented. As fabrication continues to scale down and the energy consumed per switching event approaches this fundamental limit, the advancement of classical computing hits a ceiling imposed by the laws of physics.
@@ -44,17 +41,13 @@ As classical computing approached these physical limits, the demand emerged for 
 Underlying this insight is the fact that the dimensionality of the "Hilbert space" describing quantum states explodes exponentially with the number of particles. Consider an ensemble of $N$ spin- $1/2$ particles (i.e., two-level quantum systems). The state of a single particle is described by a 2-dimensional complex vector space $\mathbb{C}^2$ . Thus, the state space $\mathcal{H}$ of a composite system of $N$ particles is constructed as the tensor product of the individual state spaces:
 
 $$
-
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
-
 $$
 
 A pure state $|\Psi\rangle$ of this system is represented as a linear combination (superposition) of $2^N$ basis vectors. Utilizing Dirac's bra-ket notation, an arbitrary quantum state can be expanded as:
 
 $$
-
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
-
 $$
 
 Here, $|x\rangle$ denotes the computational basis states, and $c_x \in \mathbb{C}$ are complex numbers termed probability amplitudes. The state vector must satisfy the normalization condition $\sum_{x=0}^{2^N-1} |c_x|^2 = 1$ .
@@ -70,25 +63,19 @@ Deutsch extended Alan Turing's deterministic model to formulate the concept of t
 The foundational unit of quantum computation is the "quantum bit" or "qubit." Whereas a classical bit is restricted to the definite states $0$ or $1$ , a qubit can exist in an arbitrary linear superposition of $|0\rangle$ and $|1\rangle$ :
 
 $$
-
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle \quad (\alpha, \beta \in \mathbb{C}, \ |\alpha|^2 + |\beta|^2 = 1)
-
 $$
 
 Operations executed on qubits are linear, norm-preserving operations represented by unitary matrices (matrices satisfying $U^\dagger U = I$ , where $U^\dagger$ is the conjugate transpose / adjoint matrix and $I$ is the identity matrix). For instance, the Hadamard gate $H$ , a quintessential single-qubit gate, is defined as:
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
-
 $$
 
 Applying the Hadamard transform to the basis state $|0\rangle$ yields:
 
 $$
-
 H |0\rangle = \frac{1}{\sqrt{2}} \left( |0\rangle + |1\rangle \right)
-
 $$
 
 This transitions the system into an equal superposition state in which $|0\rangle$ and $|1\rangle$ are observed with equal probability. Deutsch's crucial contribution was elevating these core principles of quantum mechanics into an abstract model of computation, proving mathematically that a Universal Quantum Computer is physically realizable in principle.
@@ -100,17 +87,13 @@ Why do quantum computers possess computational capabilities exceeding those of c
 To be sure, by applying Hadamard gates in parallel to an $N$ -qubit system, one can construct an equal superposition of all $2^N$ states in a single operation:
 
 $$
-
 H^{\otimes N} |0\rangle^{\otimes N} = \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle
-
 $$
 
 Then, evaluating a given function $f(x)$ via an applied unitary operator $U_f$ evolves the state to:
 
 $$
-
 U_f \left( \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle |0\rangle \right) = \frac{1}{\sqrt{2^N}} \sum_{x=0}^{2^N-1} |x\rangle |f(x)\rangle
-
 $$
 
 At this stage, it indeed seems as if the values of $f(x)$ for all $2^N$ inputs $x$ have been evaluated simultaneously in a single computational step. However, the foundational postulate of quantum mechanics—the "Born Rule" governing observation—presents an unavoidable barrier. When this superposition state is measured (observed), only a single outcome is acquired, as wavefunction collapse forces the state into a single random $|x\rangle |f(x)\rangle$ with probability $P(x) = 1/2^N$ . In other words, even if all solutions were computed simultaneously, measurement extracts nothing more than a single randomly selected candidate—no better than evaluating a single input chosen by rolling dice.
@@ -122,9 +105,7 @@ Because the probability amplitudes $c_x$ describing a quantum state are complex 
 As an elementary illustration, consider interference via phase inversion and a subsequent Hadamard transform. What happens when the Hadamard gate is applied once more to the state $\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ ?
 
 $$
-
 H \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) = \frac{1}{2} \big( (|0\rangle + |1\rangle) - (|0\rangle - |1\rangle) \big) = \frac{1}{2} (2|1\rangle) = |1\rangle
-
 $$
 
 Here, the probability amplitude contributing to state $|0\rangle$ is $1/2 - 1/2 = 0$ , canceling out completely (destructive interference). Meanwhile, the amplitude contributing to state $|1\rangle$ is $1/2 + 1/2 = 1$ , undergoing amplification (constructive interference).
@@ -182,17 +163,13 @@ In the history of computer science, the foundation of information theory establi
 Let us express this in the more formal language of vector spaces. The state of a classical bit can be represented using the standard basis of the two-dimensional real vector space $\mathbb{R}^2$. We define state $0$ and state $1$ as the following column vectors:
 
 $$
-
 \mathbf{v}_0 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad \mathbf{v}_1 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 In a deterministic classical system, the state of a bit is always definitively either $\mathbf{v}_0$ or $\mathbf{v}_1$. However, when noise such as thermal fluctuations or uncertainty in our knowledge exists, it becomes necessary to describe the state as a classical probabilistic bit. In this case, the state of the bit is represented as a probability distribution, and the state vector $\mathbf{p}$ can be written as a convex combination of the basis vectors:
 
 $$
-
 \mathbf{p} = p_0 \mathbf{v}_0 + p_1 \mathbf{v}_1 = \begin{pmatrix} p_0 \\ p_1 \end{pmatrix}
-
 $$
 
 Here, $p_0$ and $p_1$ are real numbers representing the probabilities of being in state $0$ and state $1$, respectively. According to Kolmogorov's axioms of probability, they must satisfy the following conditions:
@@ -203,9 +180,7 @@ Here, $p_0$ and $p_1$ are real numbers representing the probabilities of being i
 In the realm of classical bits, a composite system formed by combining multiple bits is described by the tensor product (Kronecker product) of their respective probability vectors. For example, the joint probability vector of two classical bits is given by:
 
 $$
-
 \mathbf{p}_{AB} = \mathbf{p}_A \otimes \mathbf{p}_B = \begin{pmatrix} p_{A0} \\ p_{A1} \end{pmatrix} \otimes \begin{pmatrix} p_{B0} \\ p_{B1} \end{pmatrix} = \begin{pmatrix} p_{A0}p_{B0} \\ p_{A0}p_{B1} \\ p_{A1}p_{B0} \\ p_{A1}p_{B1} \end{pmatrix}
-
 $$
 
 While the framework of classical information theory is exceptionally powerful and serves as the bedrock of modern digital society, because states are constructed purely by adding real non-negative probabilities, it is fundamentally impossible to represent the cancellation of probabilities analogous to wave interference. Herein lies the limitation of classical physics and the necessity of the leap to quantum information.
@@ -219,33 +194,25 @@ The fundamental unit of quantum information, the "qubit," is rigorously defined 
 A column vector representing a quantum state is called a **ket vector** and is denoted as $|\psi\rangle$. Corresponding to the classical states $0$ and $1$, let us introduce an orthonormal basis called the computational basis. These are also referred to as the $Z$ basis of the qubit, and are defined respectively as $|0\rangle$ and $|1\rangle$:
 
 $$
-
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 On the other hand, by the Riesz representation theorem, to any ket vector in a Hilbert space there uniquely corresponds an element of the dual space acting as a continuous linear functional. This is called a **bra vector** and is denoted as $\langle\psi|$. In matrix representation, taking the Hermitian conjugate (conjugate transpose, denoted by $^\dagger$) of a ket vector yields the corresponding bra vector:
 
 $$
-
 \langle\psi| = (|\psi\rangle)^\dagger = (|\psi\rangle^*)^T
-
 $$
 
 For example, the bra vectors of the computational basis are the following row vectors:
 
 $$
-
 \langle 0| = \begin{pmatrix} 1 & 0 \end{pmatrix}, \quad \langle 1| = \begin{pmatrix} 0 & 1 \end{pmatrix}
-
 $$
 
 The true power of bra-ket notation lies in how visually clear inner product calculations become. The inner product between a bra $\langle\phi|$ and a ket $|\psi\rangle$ is written as $\langle\phi|\psi\rangle$ (originating from Dirac's wordplay where "bra" and "ket" join together to form a "bracket"). Because the computational basis $\{|0\rangle, |1\rangle\}$ forms an orthonormal system, it is expressed using the Kronecker delta $\delta_{ij}$ as:
 
 $$
-
 \langle i | j \rangle = \delta_{ij} \quad (i, j \in \{0, 1\})
-
 $$
 
 Specifically, the inner product with itself is $1$ ($\langle 0|0\rangle = 1$, $\langle 1|1\rangle = 1$), and the inner product between distinct basis states is $0$ ($\langle 0|1\rangle = 0$, $\langle 1|0\rangle = 0$).
@@ -253,17 +220,13 @@ Specifically, the inner product with itself is $1$ ($\langle 0|0\rangle = 1$, $\
 Furthermore, the tensor product of a ket and a bra (equivalent to an outer product) is written as $|\psi\rangle\langle\phi|$, which represents a linear operator (matrix) from the space to itself. For example, the projection operator onto a given state subspace is constructed as follows:
 
 $$
-
 |0\rangle\langle 0| = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \begin{pmatrix} 1 & 0 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
-
 $$
 
 The identity operator $I$ on any two-dimensional complex vector space can be resolved via the completeness relation of the basis as follows, which serves as an indispensable and powerful tool in quantum mechanical calculations:
 
 $$
-
 I = |0\rangle\langle 0| + |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
-
 $$
 
 ## 2.3 The Principle of Quantum Superposition and Complex Probability Amplitudes
@@ -273,9 +236,7 @@ Whereas a classical bit is always definitely in state $0$ or state $1$, or in a 
 Therefore, the most general pure state $|\psi\rangle$ of a single qubit is expanded in the computational basis as:
 
 $$
-
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
-
 $$
 
 Here, $\alpha$ and $\beta$ are complex numbers ($\alpha, \beta \in \mathbb{C}$) known as **complex probability amplitudes**. In contrast to classical probabilities being non-negative real numbers, the fact that quantum states possess "complex" coefficients is the fundamental reason quantum computers possess computational capabilities that surpass classical computers. Because complex numbers possess phase and can point in any direction on the complex plane, they can reinforce each other (constructive interference) or cancel each other out (destructive interference) like waves. The essence of quantum algorithms lies in skillfully manipulating these interference effects to amplify the probability amplitude of the correct answer and cancel out the probability amplitudes of incorrect answers.
@@ -283,54 +244,41 @@ Here, $\alpha$ and $\beta$ are complex numbers ($\alpha, \beta \in \mathbb{C}$) 
 The process of extracting classical information from a quantum system is "measurement." When considering projective measurement, according to the Born rule, the probability $P(0)$ of obtaining $0$ and the probability $P(1)$ of obtaining $1$ upon measuring state $|\psi\rangle$ in the computational basis $\{|0\rangle, |1\rangle\}$ are given by the squared absolute values of their respective probability amplitudes:
 
 $$
-
 P(0) = |\langle 0|\psi\rangle|^2 = |\alpha|^2 = \alpha \alpha^*
-
-$$
 $$
 
+$$
 P(1) = |\langle 1|\psi\rangle|^2 = |\beta|^2 = \beta \beta^*
-
 $$
 
 For the system to always be observed in some definite state, the sum of all probabilities must strictly equal $1$. Therefore, the norm (length) of the quantum state vector $|\psi\rangle$ must always be $1$. This is the **normalization condition**:
 
 $$
-
 \langle\psi|\psi\rangle = (\alpha^* \langle 0| + \beta^* \langle 1|)(\alpha |0\rangle + \beta |1\rangle) = |\alpha|^2 + |\beta|^2 = 1
-
 $$
 
 To delve deeper into the geometric meaning of these complex probability amplitudes, let us express $\alpha$ and $\beta$ in polar coordinates:
 
 $$
-
 \alpha = r_0 e^{i\phi_0}, \quad \beta = r_1 e^{i\phi_1}
-
 $$
 
 Here, $r_0, r_1 \ge 0$ denote the magnitudes of the amplitudes, and $\phi_0, \phi_1 \in [0, 2\pi)$ are their respective phase angles. From the normalization condition $r_0^2 + r_1^2 = 1$, we can parameterize them using a real parameter $\theta \in [0, \pi]$ by setting $r_0 = \cos(\frac{\theta}{2})$ and $r_1 = \sin(\frac{\theta}{2})$. Substituting these into the original state vector yields:
 
 $$
-
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) e^{i\phi_0} |0\rangle + \sin\left(\frac{\theta}{2}\right) e^{i\phi_1} |1\rangle
-
 $$
 
 Let us factor out the common phase factor $e^{i\phi_0}$ from the entire expression:
 
 $$
-
 |\psi\rangle = e^{i\phi_0} \left( \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i(\phi_1 - \phi_0)} \sin\left(\frac{\theta}{2}\right) |1\rangle \right)
-
 $$
 
 In quantum mechanics, the phase factor $e^{i\phi_0}$ acting across the entire state vector is called the "global phase." As can be seen by calculating the expectation value $\langle A \rangle$ for any arbitrary observable (Hermitian operator) $A$:
 
 $$
-
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
-
 $$
 
 Because global phases cancel each other out in this manner, it is impossible to observe them through any physical measurement. That is, although $|\psi\rangle$ and $e^{i\phi_0}|\psi\rangle$ are distinct vectors in Hilbert space (representing the same ray), physically they represent the exact same state.
@@ -338,9 +286,7 @@ Because global phases cancel each other out in this manner, it is impossible to 
 Therefore, by ignoring the global phase and retaining only the relative phase $\varphi = \phi_1 - \phi_0$ (where $\varphi \in [0, 2\pi)$) between $|0\rangle$ and $|1\rangle$ as a parameter, any pure state of a single qubit can be uniquely and rigorously expressed in the following **canonical form**:
 
 $$
-
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\varphi} \sin\left(\frac{\theta}{2}\right) |1\rangle
-
 $$
 
 ## 2.4 Geometric Visualization via the Bloch Sphere
@@ -371,45 +317,35 @@ The most remarkable property of the Bloch sphere is that "orthogonal states in H
 The coordinates $\mathbf{r} = (x, y, z)$ of this Bloch sphere are rigorously derived as the expectation values of the **Pauli matrices**, which are observables in quantum mechanics. The Pauli matrices, which form the basis for Hermitian operators on two-dimensional systems, are defined as follows:
 
 $$
-
 X = \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
 Y = \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
 Z = \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 The expectation values of these Pauli observables for an arbitrary state $|\psi\rangle$ are determined through bra-ket calculations:
 
 $$
-
 x = \langle\psi| X |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \cos\varphi
-
-$$
 $$
 
+$$
 y = \langle\psi| Y |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \sin\varphi
-
-$$
 $$
 
+$$
 z = \langle\psi| Z |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \cos^2\left(\frac{\theta}{2}\right) - \sin^2\left(\frac{\theta}{2}\right) = \cos\theta
-
 $$
 
 Through this, the Bloch vector $\mathbf{r} = (x, y, z)$ is elegantly represented as a unit vector in three-dimensional space: $\mathbf{r} = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$. Furthermore, the density matrix $\rho = |\psi\rangle\langle\psi|$ corresponding to any pure state can be written extremely elegantly using the Pauli vector $\boldsymbol{\sigma} = (X, Y, Z)$ and the identity matrix $I$:
 
 $$
-
 \rho = \frac{1}{2} \left( I + \mathbf{r} \cdot \boldsymbol{\sigma} \right) = \frac{1}{2} \left( I + xX + yY + zZ \right)
-
 $$
 
 Expanding the matrix elements explicitly to verify:
 
 $$
-
 \rho = \frac{1}{2} \begin{pmatrix} 1 + z & x - iy \\ x + iy & 1 - z \end{pmatrix} = \begin{pmatrix} \cos^2(\frac{\theta}{2}) & e^{-i\varphi}\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) \\ e^{i\varphi}\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) & \sin^2(\frac{\theta}{2}) \end{pmatrix}
-
 $$
 
 This matches the result computed from the outer product $|\psi\rangle\langle\psi|$ by definition of the tensor product completely. What is noteworthy here is that for pure states, the norm of the Bloch vector is $|\mathbf{r}| = 1$, and the trace of the density matrix squared satisfies $\text{Tr}(\rho^2) = 1$. In contrast, for mixed states (Mixed state) where quantum information loss (decoherence) occurs due to interactions with the environment or imperfect control, the state becomes a statistical ensemble of pure states, so $|\mathbf{r}| < 1$. As a result, mixed states are represented as points inside the "interior" of the Bloch sphere rather than on its surface, and the maximally mixed state $\rho = I/2$, where information is completely lost, is positioned at the center point of the Bloch sphere, $\mathbf{r} = (0,0,0)$.
@@ -423,33 +359,25 @@ For example, consider performing a measurement in the $Z$ basis (that is, taking
 To describe measurement mathematically rigorously, a set of projection operators $\{ P_m \}$ is used. The projection operators for a $Z$ measurement are as follows:
 
 $$
-
 P_0 = |0\rangle\langle 0|, \quad P_1 = |1\rangle\langle 1|
-
 $$
 
 These satisfy the completeness relation $P_0 + P_1 = I$ and orthogonality $P_i P_j = \delta_{ij} P_i$. According to the Born rule, the probability $P(m)$ of obtaining measurement outcome $m \in \{0, 1\}$ is calculated as:
 
 $$
-
 P(m) = \langle\psi| P_m^\dagger P_m |\psi\rangle = \langle\psi| P_m |\psi\rangle
-
 $$
 
 which agrees completely with $|\alpha|^2$ and $|\beta|^2$ from before. Most importantly, the new quantum state $|\psi'\rangle$ immediately after obtaining measurement outcome $m$ is obtained by applying the projection operator to the original state and renormalizing it with the new norm:
 
 $$
-
 |\psi'\rangle = \frac{P_m |\psi\rangle}{\sqrt{P(m)}}
-
 $$
 
 If the outcome was $0$:
 
 $$
-
 |\psi'\rangle = \frac{|0\rangle\langle 0| (\alpha|0\rangle + \beta|1\rangle)}{|\alpha|} = \frac{\alpha}{|\alpha|} |0\rangle = e^{i\phi_0} |0\rangle \equiv |0\rangle
-
 $$
 
 and the state collapses completely into $|0\rangle$ (the global phase is ignored). This is the mathematical description of the phenomenon known as wavefunction collapse. Once a measurement is performed and the state collapses, the relative phase $\varphi$ and amplitude information ($\alpha, \beta$) contained in the original superposition state are lost forever. Therefore, it is fundamentally impossible to read out complete information about a quantum state from a single measurement on a single copy (which is also deeply connected to the "No-Cloning Theorem").
@@ -459,17 +387,13 @@ and the state collapses completely into $|0\rangle$ (the global phase is ignored
 Having deeply understood the properties of a single qubit, we also touch upon the mathematical foundations of "multi-qubit systems," which will be treated in earnest in subsequent chapters. Whereas classical probability distributions extend the state space via Cartesian products, the Hilbert space $\mathcal{H}_{AB}$ of a composite system in quantum mechanics is formed by the **tensor product** of the Hilbert spaces $\mathcal{H}_A$ and $\mathcal{H}_B$ of the respective subsystems:
 
 $$
-
 \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
-
 $$
 
 The tensor product of two independent qubit states expands as follows, forming a four-dimensional complex vector space:
 
 $$
-
 |\Psi\rangle_{AB} = (\alpha_0|0\rangle + \alpha_1|1\rangle) \otimes (\beta_0|0\rangle + \beta_1|1\rangle) = \alpha_0\beta_0|00\rangle + \alpha_0\beta_1|01\rangle + \alpha_1\beta_0|10\rangle + \alpha_1\beta_1|11\rangle
-
 $$
 
 Here, the existence of states that cannot be factorized into a tensor product of states (e.g., the Bell state $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$) is the origin of quantum entanglement. The exponential explosion of dimensions via the tensor product ($2^N$ dimensions for $N$ qubits) is precisely the foundation that enables quantum computers to demonstrate overwhelming parallel computing power.
@@ -498,9 +422,7 @@ The state of a closed physical system is completely described by a unit vector w
 According to the Bra-ket notation introduced by Paul Dirac, a state vector is treated as a column vector and is denoted as a ket ** $| \psi \rangle$ **. A row vector belonging to the dual space $\mathcal{H}^*$ is denoted as a bra ** $\langle \psi |$ **, and these are Hermitian conjugates (complex conjugate transposes) of each other. That is,
 
 $$
-
 \langle \psi | = ( | \psi \rangle )^\dagger
-
 $$
 
 The inner product of any two states ** $| \phi \rangle$ ** and ** $| \psi \rangle$ ** in the Hilbert space is calculated as the product of the bra and the ket ** $\langle \phi | \psi \rangle$ **, yielding a complex value. This inner product satisfies the following properties:
@@ -512,9 +434,7 @@ The inner product of any two states ** $| \phi \rangle$ ** and ** $| \psi \rangl
 To establish a probabilistic interpretation, physical states must always satisfy the normalization condition. That is, the norm of the state vector ** $| \psi \rangle$ ** is 1.
 
 $$
-
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
-
 $$
 
 Furthermore, since the Cauchy-Schwarz inequality $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ holds, the absolute value of the inner product between normalized states always falls between 0 and 1. This becomes the mathematical foundation for later interpreting it as a "probability".
@@ -526,25 +446,19 @@ The most prominent feature of quantum mechanics is the "Superposition principle"
 In the Hilbert space $\mathcal{H}$, there exists an orthonormal basis $\{ | e_i \rangle \}$. These basis vectors are mutually orthogonal and normalized.
 
 $$
-
 \langle e_i | e_j \rangle = \delta_{ij}
-
 $$
 
 (where $\delta_{ij}$ is the Kronecker delta). Also, as the completeness relation or resolution of the identity, the identity operator $I$ can be expanded as follows:
 
 $$
-
 I = \sum_i | e_i \rangle \langle e_i |
-
 $$
 
 By applying this identity operator, any arbitrary quantum state ** $| \psi \rangle$ ** can be uniquely expanded as a linear combination of the basis vectors:
 
 $$
-
 | \psi \rangle = I | \psi \rangle = \left( \sum_i | e_i \rangle \langle e_i | \right) | \psi \rangle = \sum_i \langle e_i | \psi \rangle | e_i \rangle = \sum_i c_i | e_i \rangle
-
 $$
 
 Here, the expansion coefficients $c_i = \langle e_i | \psi \rangle$ are called complex probability amplitudes, and they play a decisive role in Born's rule, which will be discussed later. From the normalization condition $\langle \psi | \psi \rangle = 1$, it follows that $\sum_i |c_i|^2 = 1$.
@@ -567,9 +481,7 @@ The reason observables must be defined as Hermitian operators lies in their "Eig
 Therefore, any observable $A$ can be subjected to a spectral decomposition as a linear combination of projection operators $P_i = | a_i \rangle \langle a_i |$, using its eigenvalues $a_i$ and eigenvectors ** $| a_i \rangle$ **:
 
 $$
-
 A = \sum_i a_i | a_i \rangle \langle a_i |
-
 $$
 
 Through this formulation, the act of "measuring a physical quantity" can be understood as a geometric operation of projecting onto a specific basis (eigenvectors) in the Hilbert space. For example, the $\sigma_z$ observation of a qubit is completely described as a projection operation onto an orthogonal basis consisting of the state ** $| 0 \rangle$ ** corresponding to the eigenvalue $+1$, and the state ** $| 1 \rangle$ ** corresponding to the eigenvalue $-1$.
@@ -584,9 +496,7 @@ The time evolution of the state of an isolated quantum system obeys the Schrödi
 The time-dependent Schrödinger equation, which is the fundamental equation describing time evolution, is expressed as follows:
 
 $$
-
 i\hbar \frac{d}{dt} | \psi(t) \rangle = H | \psi(t) \rangle
-
 $$
 
 Here, $i$ is the imaginary unit, $\hbar$ is the reduced Planck constant, and $H$ is the Hamiltonian operator, which is the observable corresponding to the total energy of the system.
@@ -594,9 +504,7 @@ Here, $i$ is the imaginary unit, $\hbar$ is the reduced Planck constant, and $H$
 If we consider a system where the Hamiltonian $H$ is independent of time (time-invariant), this differential equation can be formally integrated, and the solution is given as follows:
 
 $$
-
 | \psi(t) \rangle = \exp\left( -\frac{i}{\hbar} H (t - t_0) \right) | \psi(t_0) \rangle
-
 $$
 
 The operator $U(t, t_0) = \exp\left( -i H (t - t_0) / \hbar \right)$ represented by this exponential function is the time evolution operator. Since the Hamiltonian $H$ is Hermitian ( $H = H^\dagger$ ), by Stone's theorem, $U$ becomes a unitary operator. A unitary operator is an operator whose Hermitian conjugate equals its inverse ( $U^\dagger U = U U^\dagger = I$ ).
@@ -611,25 +519,19 @@ The concept of "Measurement" in quantum mechanics fundamentally differs from cla
 When an observation of an observable $A$ with spectral decomposition $A = \sum_i a_i P_i$ is performed on a system in state ** $| \psi \rangle$ **, the obtained measurement value is always one of the eigenvalues $a_i$ of $A$. The probability $p(a_k)$ of obtaining a specific eigenvalue $a_k$ is given according to Born's rule as follows:
 
 $$
-
 p(a_k) = \langle \psi | P_k | \psi \rangle = \| P_k | \psi \rangle \|^2
-
 $$
 
 If the eigenvalue $a_k$ is non-degenerate (meaning there is only one corresponding eigenvector ** $| a_k \rangle$ **), the projection operator is $P_k = | a_k \rangle \langle a_k |$, and the probability is calculated as the absolute square of the inner product of the state onto the eigenvector:
 
 $$
-
 p(a_k) = \langle \psi | a_k \rangle \langle a_k | \psi \rangle = | \langle a_k | \psi \rangle |^2
-
 $$
 
 This is precisely the absolute square $|c_k|^2$ of the coefficient $c_k = \langle a_k | \psi \rangle$ when the state vector ** $| \psi \rangle$ ** is expanded in the basis $\{ | a_i \rangle \}$. The complex probability amplitude $c_k$ itself cannot be directly observed, but its absolute square emerges as the observation probability in the real world. The insight of Max Born, who proposed this rule, is a monumental achievement that transformed physics from determinism to probability theory. The expected value $\langle A \rangle$ of the observable $A$ is calculated as the sum of the products of all eigenvalues and their appearance probabilities, and is ultimately expressed very beautifully in the form of an inner product involving the state vector:
 
 $$
-
 \langle A \rangle = \sum_i a_i p(a_i) = \sum_i a_i \langle \psi | P_i | \psi \rangle = \langle \psi | \left( \sum_i a_i P_i \right) | \psi \rangle = \langle \psi | A | \psi \rangle
-
 $$
 
 ## 3.6 Wavefunction Collapse (State Reduction) and Decoherence via Observation
@@ -640,9 +542,7 @@ The axiom of observation contains a crucial step that has sparked the most debat
 Immediately after obtaining the eigenvalue $a_k$ through observation, the state of the system ** $| \psi' \rangle$ ** instantaneously changes (collapses) into a state where the projection operator $P_k$ corresponding to the original state vector is applied, and then re-normalized:
 
 $$
-
 | \psi' \rangle = \frac{P_k | \psi \rangle}{\sqrt{p(a_k)}}
-
 $$
 
 If the observation apparatus is ideal and the system's state collapses to a non-degenerate eigenvalue $a_k$, the state immediately following the observation becomes exactly the eigenvector ** $| a_k \rangle$ ** itself. That is, if the exact same observation is repeated immediately afterward, $a_k$ will be obtained again with a probability of 1 (100%). This is called a "measurement of the first kind".
@@ -656,9 +556,7 @@ To gain a deeper understanding of the paradox of wavefunction collapse, the conc
 On the other hand, if we do not know to which state the system collapsed during the observation process (or if we have lost that information), the system must be described as a classical probabilistic mixed state. For example, the density operator representing an ensemble of a system that has collapsed to the state ** $| a_k \rangle$ ** with probability $p(a_k)$ is as follows:
 
 $$
-
 \rho' = \sum_k p(a_k) | a_k \rangle \langle a_k |
-
 $$
 
 At this point, the off-diagonal components (interference terms) of $\rho = | \psi \rangle \langle \psi |$, which was in a pure state, completely vanish due to the act of observation. This loss of coherence is precisely the core of "Decoherence".
@@ -668,9 +566,7 @@ At this point, the off-diagonal components (interference terms) of $\rho = | \ps
 The observation apparatus is also part of a quantum system composed of numerous particles, and "entanglement" occurs when the quantum system interacts with a macroscopic environment (such as the observation apparatus or a thermal bath). When we trace out the degrees of freedom of the environment (Partial trace) to calculate the reduced density matrix of the target system alone, the state vector of the system, which was originally a pure state, rapidly transitions to a mixed state, and the phase coherence between the various components of the system is lost:
 
 $$
-
 \rho_{S} = \mathrm{Tr}_{E} [ | \Psi_{SE} \rangle \langle \Psi_{SE} | ]
-
 $$
 
 As a result, superposition disappears on a macroscopic scale, and the system appears to behave as a classical probabilistic mixture. Wavefunction collapse is by no means a failure of physical laws, but rather can be viewed as the dissipation of information due to irreversible interaction with the environment. Overcoming this decoherence has become humanity's greatest challenge in realizing fault-tolerant quantum computers.
@@ -710,25 +606,19 @@ At the foundation of quantum computation lies the precise manipulation of quantu
 The time evolution of a quantum system is governed by the Schrödinger equation below, using the Hamiltonian ** $H$ ** ( ** $H^\dagger = H$ ** ), which is the Hermitian operator characterizing the system:
 
 $$
-
 i\hbar \frac{d}{dt} |\psi(t)\rangle = H |\psi(t)\rangle
-
 $$
 
 Assuming a time-independent Hamiltonian ** $H$ **, the quantum state ** $|\psi(t)\rangle$ ** at any arbitrary time ** $t$ ** can be formally integrated from the initial state ** $|\psi(0)\rangle$ ** as follows:
 
 $$
-
 |\psi(t)\rangle = e^{-\frac{i}{\hbar}Ht} |\psi(0)\rangle
-
 $$
 
 We define the time-evolution operator appearing here as ** $U(t) = e^{-\frac{i}{\hbar}Ht}$ **. Since ** $H$ ** in the exponent is Hermitian, calculating the adjoint operator (Hermitian conjugate) ** $U(t)^\dagger$ ** of this operator ** $U(t)$ ** leads to the following crucial property:
 
 $$
-
 U(t)^\dagger U(t) = \left( e^{-\frac{i}{\hbar}Ht} \right)^\dagger e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}H^\dagger t} e^{-\frac{i}{\hbar}Ht} = e^{\frac{i}{\hbar}Ht} e^{-\frac{i}{\hbar}Ht} = I
-
 $$
 
 Similarly, ** $U(t) U(t)^\dagger = I$ ** also holds. A matrix whose conjugate transpose is equal to its own inverse ( ** $U^\dagger = U^{-1}$ ** ) is called a "unitary matrix." A single-qubit gate is nothing other than a ** $2 \times 2$ ** unitary matrix implemented by an intentionally engineered Hamiltonian via physical control (such as irradiating microwave pulses with specific frequencies and durations).
@@ -736,9 +626,7 @@ Similarly, ** $U(t) U(t)^\dagger = I$ ** also holds. A matrix whose conjugate tr
 The reason unitary matrices are absolutely indispensable in quantum mechanics is that they are the only linear transformations that mathematically guarantee "conservation of probability (conservation of norm)." Let us compute the inner product of the states after applying a unitary transformation ** $U$ ** to arbitrary quantum states ** $|\psi\rangle$ ** and ** $|\phi\rangle$ **:
 
 $$
-
 \langle \phi' | \psi' \rangle = ( \langle \phi | U^\dagger ) ( U |\psi\rangle ) = \langle \phi | U^\dagger U | \psi \rangle = \langle \phi | I | \psi \rangle = \langle \phi | \psi \rangle
-
 $$
 
 The conservation of the inner product implies that the norm squared of the state vector itself, ** $\langle \psi | \psi \rangle$ **, is also conserved. According to Born's rule in quantum mechanics, the sum of the squared magnitudes of the amplitudes of a state vector must equal the total probability of 1. Therefore, for the probabilistic interpretation not to break down under quantum gate operations, unitarity of the operation is an absolute prerequisite.
@@ -746,9 +634,7 @@ The conservation of the inner product implies that the norm squared of the state
 Furthermore, according to the spectral theorem, any unitary matrix ** $U$ ** can be written as ** $U = e^{iK}$ ** using a Hermitian matrix ** $K$ ** with real eigenvalues ** $\lambda_k$ **. The eigenvalues of a unitary matrix are always complex numbers with unit modulus (of the form ** $e^{i\theta}$ ** ), and its eigenvectors form an orthonormal, complete basis:
 
 $$
-
 U = \sum_{j=1}^{d} e^{i \theta_j} |\phi_j\rangle \langle \phi_j|
-
 $$
 
 This demonstrates that the action of a quantum gate can be completely decomposed into an operation that "imparts purely a phase rotation ** $e^{i\theta_j}$ ** onto specific orthonormal basis states ** $|\phi_j\rangle$ **."
@@ -762,22 +648,17 @@ To speak the language of quantum information, understanding the group of Pauli m
 The Pauli-X gate is the quantum-mechanical generalization of the NOT gate in classical logic circuits. In Dirac bracket notation using an outer-product (projector) representation, it is defined as follows:
 
 $$
-
 X = \sigma_x = |0\rangle\langle 1| + |1\rangle\langle 0| = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
-
 $$
 
 Verifying its action on the computational basis states ( ** $|0\rangle, |1\rangle$ ** ) explicitly through matrix multiplication:
 
 $$
-
 X |0\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} = |1\rangle
-
-$$
 $$
 
+$$
 X |1\rangle = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} = |0\rangle
-
 $$
 
 Thus, it completely flips the amplitudes. Geometrically, this corresponds to a rotation by ** $\pi$ ** (180 degrees) about the X-axis on the Bloch sphere. The North Pole ( ** $|0\rangle$ ** ) is mapped to the South Pole ( ** $|1\rangle$ ** ), and the South Pole is mapped to the North Pole.
@@ -787,17 +668,13 @@ Thus, it completely flips the amplitudes. Geometrically, this corresponds to a r
 The Pauli-Y gate simultaneously induces both a bit flip and a phase flip, additionally imparting a phase factor of the imaginary unit ** $i$ **. Its outer-product representation and matrix representation are as follows:
 
 $$
-
 Y = \sigma_y = -i|0\rangle\langle 1| + i|1\rangle\langle 0| = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
-
 $$
 
 Its action on the computational basis states is:
 
 $$
-
 Y |0\rangle = i|1\rangle, \quad Y |1\rangle = -i|0\rangle
-
 $$
 
 On the Bloch sphere, it represents a ** $\pi$ ** rotation about the Y-axis. The multiplication by the imaginary unit ** $i$ ** (that is, ** $e^{i\pi/2}$ ** ) signifies not merely a reversal, but a shift toward the orthogonal direction in the state's phase space.
@@ -807,17 +684,13 @@ On the Bloch sphere, it represents a ** $\pi$ ** rotation about the Y-axis. The 
 The Pauli-Z gate is a purely quantum "phase operation" that has no counterpart in classical logic. Without changing the magnitude of the amplitudes (measurement probabilities) whatsoever, it applies a phase shift of ** $-1$ ** (namely, ** $e^{i\pi}$ ** ) exclusively to the component of ** $|1\rangle$ **.
 
 $$
-
 Z = \sigma_z = |0\rangle\langle 0| - |1\rangle\langle 1| = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 Its action is trivially:
 
 $$
-
 Z |0\rangle = |0\rangle, \quad Z |1\rangle = -|1\rangle
-
 $$
 
 This corresponds to a ** $\pi$ ** rotation about the Z-axis. Since the computational basis states ** $|0\rangle, |1\rangle$ ** are eigenvectors of the Z matrix (with eigenvalues +1 and -1, respectively), applying the Z gate does not induce a transition between these basis states. However, when applied to a superposition state (e.g., ** $\alpha|0\rangle + \beta|1\rangle$ ** ), the relative phase is dramatically flipped to ** $\alpha|0\rangle - \beta|1\rangle$ **, decisively altering subsequent interference outcomes.
@@ -828,20 +701,20 @@ The Pauli matrix set ** $\{I, X, Y, Z\}$ ** forms an exceptionally elegant algeb
 
 1. **Simultaneous Self-Adjointness (Hermiticity) and Unitarity**: ** $X = X^\dagger$ **, ** $Y = Y^\dagger$ **, ** $Z = Z^\dagger$ **, while simultaneously satisfying ** $X^\dagger X = I$ ** (i.e., ** $X = X^{-1}$ ** ). They possess the rare property of being physical observables while simultaneously serving as unitary generators of time evolution (quantum gates). Applying them twice consecutively returns to the identity transformation (involution: ** $X^2 = Y^2 = Z^2 = I$ ** ).
 2. **Complete Anti-Commutation Relations**: Interchanging the order of multiplication between different Pauli matrices reverses their sign:
+   
 
-   $$
+$$
+\{X, Y\} = XY + YX = 0, \quad \{Y, Z\} = 0, \quad \{Z, X\} = 0
+$$
 
-   \{X, Y\} = XY + YX = 0, \quad \{Y, Z\} = 0, \quad \{Z, X\} = 0
-
-   $$
 
 3. **Commutation Relations and Lie Algebra**: Using the commutator ** $[A, B] = AB - BA$ **, they clearly exhibit their structure as generators of the ** $SU(2)$ ** Lie algebra (using the completely antisymmetric Levi-Civita tensor ** $\epsilon_{jkl}$ ** ):
+   
 
-   $$
+$$
+[\sigma_j, \sigma_k] = 2i \sum_{l \in \{x,y,z\}} \epsilon_{jkl} \sigma_l
+$$
 
-   [\sigma_j, \sigma_k] = 2i \sum_{l \in \{x,y,z\}} \epsilon_{jkl} \sigma_l
-
-   $$
 
    Specifically, ** $XY = iZ$ **, ** $YZ = iX$ **, and ** $ZX = iY$ **. This algebraic structure provides the mathematical foundation for defining arbitrary rotation gates, as discussed later.
 
@@ -850,22 +723,17 @@ The Pauli matrix set ** $\{I, X, Y, Z\}$ ** forms an exceptionally elegant algeb
 In quantum algorithms (such as the Deutsch-Jozsa algorithm or Shor's algorithm), the Hadamard gate is applied almost without exception immediately after initialization. It plays the core role of transforming a deterministic state into an "equal superposition state," where all computational basis states appear with equal probability:
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \left( |0\rangle\langle 0| + |0\rangle\langle 1| + |1\rangle\langle 0| - |1\rangle\langle 1| \right)
-
 $$
 
 Applying the Hadamard matrix to the computational basis states:
 
 $$
-
 H |0\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{|0\rangle + |1\rangle}{\sqrt{2}} \equiv |+\rangle
-
-$$
 $$
 
+$$
 H |1\rangle = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{|0\rangle - |1\rangle}{\sqrt{2}} \equiv |-\rangle
-
 $$
 
 The generated states ** $|+\rangle$ ** and ** $|-\rangle$ ** are called the X-basis (or diagonal basis) and are the eigenstates of the Pauli-X matrix. Because the Hadamard matrix itself is real symmetric and orthogonal (a unitary matrix in real space), it satisfies ** $H = H^\dagger = H^{-1}$ ** and ** $H^2 = I$ **.
@@ -873,14 +741,11 @@ Consequently, ** $H |+\rangle = |0\rangle$ **, meaning it also functions to make
 Algebraically, the H gate is a unitary transformation that converts between the X-basis and the Z-basis. This can be expressed remarkably elegantly as matrix similarity transformations:
 
 $$
-
 H X H^\dagger = H X H = Z
-
-$$
 $$
 
+$$
 H Z H^\dagger = H Z H = X
-
 $$
 
 By virtue of this property, sandwiching a "phase flip via a Z gate" between H gates allows one to synthesize a "bit flip via an X gate." Geometrically, the H gate corresponds to a ** $\pi$ ** rotation about the unit vector axis ** $\hat{n} = \frac{1}{\sqrt{2}}(\hat{x} + \hat{z})$ ** on the Bloch sphere.
@@ -890,9 +755,7 @@ By virtue of this property, sandwiching a "phase flip via a Z gate" between H ga
 The family of arbitrary rotations about the Z-axis of the Bloch sphere, which generalizes the Pauli-Z gate, is known as phase-shift gates ** $P(\phi)$ ** (or ** $R_\phi$ ** ):
 
 $$
-
 P(\phi) = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi} \end{pmatrix} = |0\rangle\langle 0| + e^{i\phi} |1\rangle\langle 1|
-
 $$
 
 This gate family acts on a superposition state ** $\alpha|0\rangle + \beta|1\rangle$ ** to yield ** $\alpha|0\rangle + \beta e^{i\phi}|1\rangle$ **, manipulating solely the relative phase of the ** $|1\rangle$ ** component. The following two gates are particularly vital:
@@ -902,18 +765,14 @@ This gate family acts on a superposition state ** $\alpha|0\rangle + \beta|1\ran
 The case where ** $\phi = \pi/2$ ** is called the S gate:
 
 $$
-
 S = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/2} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
-
 $$
 
 As is evident from its matrix properties, applying it twice results in the Z gate ( ** $S^2 = Z$ ** ).
 Applying the S gate to the ** $|+\rangle$ ** state:
 
 $$
-
 S |+\rangle = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ i \end{pmatrix} = \frac{|0\rangle + i|1\rangle}{\sqrt{2}} \equiv |+i\rangle
-
 $$
 
 This transitions the state toward the positive Y-axis direction on the equator of the Bloch sphere (an eigenstate of the Y-basis). The group generated by the Pauli group together with the H and S gates is called the Clifford group. According to the Gottesman-Knill theorem, any quantum circuit consisting exclusively of Clifford gates can be efficiently simulated on a classical computer.
@@ -923,9 +782,7 @@ This transitions the state toward the positive Y-axis direction on the equator o
 The case where ** $\phi = \pi/4$ ** is called the T gate:
 
 $$
-
 T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & \frac{1+i}{\sqrt{2}} \end{pmatrix}
-
 $$
 
 When factoring out a global phase of ** $e^{i\pi/8}$ **, the diagonal entries become ** $e^{-i\pi/8}$ ** and ** $e^{i\pi/8}$ **, which is why it is historically also called the ** $\pi/8$ ** gate.
@@ -936,51 +793,42 @@ The T gate does not belong to the Clifford group, thereby breaking the efficienc
 The most general operation on a single qubit is a unitary transformation that rotates the state by an angle ** $\theta$ ** about an arbitrary unit vector axis ** $\hat{n} = (n_x, n_y, n_z)$ ** (where ** $n_x^2 + n_y^2 + n_z^2 = 1$ ** ) on the Bloch sphere. Using linear combinations of the Pauli matrices, this rotation operator ** $R_{\hat{n}}(\theta)$ ** can be formulated elegantly as a matrix exponential:
 
 $$
-
 R_{\hat{n}}(\theta) = \exp\left(-i \frac{\theta}{2} (\hat{n} \cdot \vec{\sigma})\right) = \exp\left(-i \frac{\theta}{2} (n_x X + n_y Y + n_z Z)\right)
-
 $$
 
 Here, by utilizing the powerful anti-commutation properties of the Pauli matrices, which give ** $(\hat{n} \cdot \vec{\sigma})^2 = (n_x X + n_y Y + n_z Z)^2 = (n_x^2 + n_y^2 + n_z^2)I = I$ **, and Taylor expanding the exponential function ( ** $e^{iAx} = \cos(x)I + i\sin(x)A$ ** when ** $A^2=I$ ** ), the infinite series simplifies dramatically to yield the following matrix extension of Euler's formula:
 
 $$
-
 R_{\hat{n}}(\theta) = \cos\left(\frac{\theta}{2}\right) I - i \sin\left(\frac{\theta}{2}\right) (\hat{n} \cdot \vec{\sigma})
-
 $$
 
 From this general formulation, the basic rotation gates about the Cartesian coordinate axes are deduced:
 
 ### Rotation Gate About the X-Axis ** $R_x(\theta)$ **
 
+
 $$
-
 R_x(\theta) = e^{-i \frac{\theta}{2} X} = \begin{pmatrix} \cos\frac{\theta}{2} & -i \sin\frac{\theta}{2} \\ -i \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
-
 $$
 
 ### Rotation Gate About the Y-Axis ** $R_y(\theta)$ **
 
+
 $$
-
 R_y(\theta) = e^{-i \frac{\theta}{2} Y} = \begin{pmatrix} \cos\frac{\theta}{2} & -\sin\frac{\theta}{2} \\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2} \end{pmatrix}
-
 $$
 
 ### Rotation Gate About the Z-Axis ** $R_z(\theta)$ **
 
+
 $$
-
 R_z(\theta) = e^{-i \frac{\theta}{2} Z} = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix}
-
 $$
 
 Using these rotation matrices, any arbitrary single-qubit unitary matrix ** $U \in SU(2)$ ** can be completely factorized via the "Z-Y-Z decomposition" using three Euler angles ( ** $\alpha, \beta, \gamma$ ** ) as follows:
 
 $$
-
 U = e^{i\delta} R_z(\alpha) R_y(\beta) R_z(\gamma)
-
 $$
 
 This theorem physically guarantees that as long as rotations about the Z-axis and Y-axis can be implemented with high fidelity at the hardware level, any arbitrary complex algorithm on a single qubit can be executed.
@@ -1015,71 +863,54 @@ The operation to be executed is the sequence similar to the above circuit: " ** 
 While quantum circuit diagrams are written from left to right, operator multiplication in linear algebra on state vectors is applied from the left; therefore, the expression for the total unitary operator ** $U_{total}$ ** is ordered from right to left, reverse to time:
 
 $$
-
 U_{total} = H S H
-
 $$
 
 We substitute the matrix representations of each gate to derive the composite matrix:
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}, \quad S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
-
 $$
 
 First, we compute the product ** $SH$ ** of ** $H$ **, which is applied immediately after the initial state, and the subsequent ** $S$ **:
 
 $$
-
 S H = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1\cdot 1 + 0\cdot 1 & 1\cdot 1 + 0\cdot(-1) \\ 0\cdot 1 + i\cdot 1 & 0\cdot 1 + i\cdot(-1) \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
-
 $$
 
 Next, we multiply this result from the left by the final ** $H$ **:
 
 $$
-
 U_{total} = H (S H) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix}
-
 $$
 
 Factoring out the scalar product ** $\frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$ **, we carefully perform the matrix multiplication:
 
 $$
-
 U_{total} = \frac{1}{2} \begin{pmatrix} 1\cdot 1 + 1\cdot i & 1\cdot 1 + 1\cdot(-i) \\ 1\cdot 1 + (-1)\cdot i & 1\cdot 1 + (-1)\cdot(-i) \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix}
-
 $$
 
 This is the single unitary matrix representation when treating the entire circuit as a single black box.
 Applying this ** $U_{total}$ ** to the initial state ** $|0\rangle$ **, we compute the final state ** $|\psi_{final}\rangle$ **:
 
 $$
-
 |\psi_{final}\rangle = U_{total} |0\rangle = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \frac{1}{2} \begin{pmatrix} 1 + i \\ 1 - i \end{pmatrix}
-
 $$
 
 Expanding this in Dirac notation yields:
 
 $$
-
 |\psi_{final}\rangle = \frac{1+i}{2} |0\rangle + \frac{1-i}{2} |1\rangle
-
 $$
 
 Here, to verify that unitarity (the sum of probabilities being 1) is preserved, we compute the probability of observing each basis state, using the squared absolute value of complex numbers ** $|z|^2 = z z^*$ **:
 
 $$
-
 P(0) = |\langle 0 | \psi_{final} \rangle|^2 = \left| \frac{1+i}{2} \right|^2 = \frac{1^2 + 1^2}{4} = \frac{2}{4} = \frac{1}{2}
-
-$$
 $$
 
+$$
 P(1) = |\langle 1 | \psi_{final} \rangle|^2 = \left| \frac{1-i}{2} \right|^2 = \frac{1^2 + (-1)^2}{4} = \frac{2}{4} = \frac{1}{2}
-
 $$
 
 The sum of probabilities is ** $P(0) + P(1) = 1$ **, proving that this is a physically valid state. Upon measurement, 0 is obtained with 50% probability and 1 with 50% probability, but this is not mere classical randomness. To extract the "phase" hidden behind the state, let us transform the state vector into polar coordinate form on the Bloch sphere.
@@ -1087,17 +918,13 @@ The sum of probabilities is ** $P(0) + P(1) = 1$ **, proving that this is a phys
 We factor out as a common overall factor the amplitude ** $1/\sqrt{2}$ ** and the global phase ** $e^{i\pi/4}$ ** ( ** $\frac{1+i}{\sqrt{2}}$ ** ):
 
 $$
-
 |\psi_{final}\rangle = \frac{1}{\sqrt{2}} \left( \frac{1+i}{\sqrt{2}} |0\rangle + \frac{1-i}{\sqrt{2}} |1\rangle \right) = e^{i\pi/4} \left( \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}} e^{-i\pi/2} |1\rangle \right)
-
 $$
 
 Since the global phase ** $e^{i\pi/4}$ ** cancels out as ** $e^{-i\pi/4} e^{i\pi/4} = 1$ ** in the expectation value calculation of any observable (Hermitian operator), extracting only the physically meaningful relative phase part gives:
 
 $$
-
 |\psi_{final}'\rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{i}{\sqrt{2}} |1\rangle
-
 $$
 
 Comparing this with the spherical coordinate representation ** $\cos(\theta/2)|0\rangle + e^{i\phi}\sin(\theta/2)|1\rangle$ **, the Bloch vector is completely identified as pointing at polar angle (zenith angle) ** $\theta = \pi/2$ ** (on the equator) and azimuthal angle ** $\phi = -\pi/2$ ** (along the negative Y-axis). This state is commonly denoted as ** $|-i\rangle$ **.
@@ -1105,17 +932,13 @@ Comparing this with the spherical coordinate representation ** $\cos(\theta/2)|0
 Let us reveal an even more profound fact. Using the formula for rotation gates via matrix exponentials derived earlier, we write out the matrix for a rotation by ** $\pi/2$ ** about the X-axis, ** $R_x(\pi/2)$ **:
 
 $$
-
 R_x(\pi/2) = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix}
-
 $$
 
 On the other hand, let us look again at the total matrix ** $U_{total}$ ** we calculated:
 
 $$
-
 U_{total} = \frac{1}{2} \begin{pmatrix} 1 + i & 1 - i \\ 1 - i & 1 + i \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & \frac{1-i}{1+i} \\ \frac{1-i}{1+i} & 1 \end{pmatrix} = \frac{1+i}{2} \begin{pmatrix} 1 & -i \\ -i & 1 \end{pmatrix} = e^{i\pi/4} R_x(\pi/2)
-
 $$
 
 Astonishingly, a sequence of operations using a discrete set of gates around entirely different axes—" ** $H \rightarrow S \rightarrow H$ ** "—is proven to be mathematically equivalent, down to the last detail (up to a global phase), to a single "rotation of ** $\pi/2$ ** about the X-axis."
@@ -1138,36 +961,28 @@ The state space of a single qubit is the two-dimensional complex vector space **
 Let us consider a system composed of two qubits (qubit A and qubit B). The computational basis is defined as the tensor product of the basis states of each individual qubit:
 
 $$
-
 |0\rangle_A \otimes |0\rangle_B \equiv |00\rangle, \quad
 |0\rangle_A \otimes |1\rangle_B \equiv |01\rangle, \quad
 |1\rangle_A \otimes |0\rangle_B \equiv |10\rangle, \quad
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
-
 $$
 
 Here, let us rigorously compute the matrix representation of the tensor product (the Kronecker product). Representing the basis of a single qubit as column vectors:
 
 $$
-
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-
 $$
 
 Using these, calculating state ** $|10\rangle$ **, for example, yields the following:
 
 $$
-
 |10\rangle = |1\rangle \otimes |0\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \otimes \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \\ 1 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}
-
 $$
 
 In this four-dimensional vector space, the most general pure state ** $|\Psi\rangle$ ** of a two-qubit system is described as a linear combination (superposition) of these four basis vectors:
 
 $$
-
 |\Psi\rangle = c_{00} |00\rangle + c_{01} |01\rangle + c_{10} |10\rangle + c_{11} |11\rangle
-
 $$
 
 Here, $c_{ij} \in \mathbb{C}$ are probability amplitudes, and according to the Born rule, the state must be normalized, satisfying the normalization condition $\sum_{i,j \in \{0,1\}} |c_{ij}|^2 = 1$.
@@ -1175,9 +990,7 @@ Here, $c_{ij} \in \mathbb{C}$ are probability amplitudes, and according to the B
 Operators (gates) on composite systems are also constructed using tensor products. The operation of applying an operator ** $U_A$ ** to qubit A and an operator ** $U_B$ ** to qubit B is represented as the operator ** $U_A \otimes U_B$ ** acting on the overall composite system, and acts on any product state as follows:
 
 $$
-
 (U_A \otimes U_B)(|\psi\rangle_A \otimes |\phi\rangle_B) = (U_A |\psi\rangle_A) \otimes (U_B |\phi\rangle_B)
-
 $$
 
 By linearity, this action extends to arbitrary superposition states.
@@ -1190,9 +1003,7 @@ States in multi-body quantum systems are broadly classified into two categories:
 When a state ** $|\Psi\rangle$ ** can be written as a simple tensor product of states of the individual subsystems, namely:
 
 $$
-
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
-
 $$
 
 the state is said to be separable. Conversely, a state that **cannot** be expressed as the tensor product of any subsystem states is defined as an **entangled state**.
@@ -1200,41 +1011,32 @@ the state is said to be separable. Conversely, a state that **cannot** be expres
 In a two-qubit system, the states possessing maximal quantum entanglement are called **Bell states** or EPR pairs. The Bell states consist of the following four orthogonal pure states, forming a complete orthonormal basis (the Bell basis) of the four-dimensional Hilbert space:
 
 $$
-
 |\Phi^+\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle + |11\rangle \Big)
-
-$$
 $$
 
+$$
 |\Phi^-\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle - |11\rangle \Big)
-
-$$
 $$
 
+$$
 |\Psi^+\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle + |10\rangle \Big)
-
-$$
 $$
 
+$$
 |\Psi^-\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle - |10\rangle \Big)
-
 $$
 
 Here, let us rigorously prove that the state ** $|\Phi^+\rangle$ ** is inseparable using a proof by contradiction.
 Suppose that ** $|\Phi^+\rangle$ ** is a separable state, and assume it can be expressed as the tensor product of unknown single-qubit states:
 
 $$
-
 |\Phi^+\rangle = (a|0\rangle + b|1\rangle)_A \otimes (c|0\rangle + d|1\rangle)_B
-
 $$
 
 Expanding this:
 
 $$
-
 |\Phi^+\rangle = ac|00\rangle + ad|01\rangle + bc|10\rangle + bd|11\rangle
-
 $$
 
 Comparing coefficients with the original definition yields the following system of equations:
@@ -1254,22 +1056,17 @@ Therefore, no such complex numbers $a, b, c, d$ exist, rigorously proving that t
 The fact that the Bell state is "maximally entangled" becomes even clearer by calculating the **reduced density matrix**, which describes the information of a subsystem. When the overall system is in the pure state ** $\rho = |\Phi^+\rangle \langle\Phi^+|$ **, we trace out (take the partial trace over) qubit B to find the local state of qubit A:
 
 $$
-
 \rho_A = \text{Tr}_B(|\Phi^+\rangle \langle\Phi^+|) = \text{Tr}_B \left[ \frac{1}{2} (|00\rangle\langle00| + |00\rangle\langle11| + |11\rangle\langle00| + |11\rangle\langle11|) \right]
-
 $$
 
 Using the property of the partial trace $\text{Tr}_B(|i,j\rangle\langle k,l|) = |i\rangle\langle k| \cdot \langle l|j\rangle = |i\rangle\langle k| \delta_{jl}$:
 
 $$
-
 \rho_A = \frac{1}{2} \Big( |0\rangle\langle0| \cdot \langle0|0\rangle + |0\rangle\langle1| \cdot \langle1|0\rangle + |1\rangle\langle0| \cdot \langle0|1\rangle + |1\rangle\langle1| \cdot \langle1|1\rangle \Big)
-
-$$
 $$
 
+$$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
-
 $$
 
 This means that if only qubit A is observed, its state is a completely mixed state, and the von Neumann entropy $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ attains its maximum value of $1$. In other words, "even though the composite system as a whole possesses complete information (a pure state), looking at each individual subsystem reveals that the information is completely undetermined (maximal entropy)"—this extreme correlation, impossible in classical mechanics, is the very essence of maximal quantum entanglement.
@@ -1285,33 +1082,27 @@ The CNOT gate acts on two qubits, treating one as the "control qubit" and the ot
 Its action on the computational basis is as follows (with the first qubit being the control qubit and the second qubit being the target qubit):
 
 $$
-
 \text{CNOT} |00\rangle = |00\rangle \\
 \text{CNOT} |01\rangle = |01\rangle \\
 \text{CNOT} |10\rangle = |11\rangle \\
 \text{CNOT} |11\rangle = |10\rangle
-
 $$
 
 Expressing this as a four-dimensional unitary matrix yields the following:
 
 $$
-
 \text{CNOT} = \begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 1 & 0
 \end{pmatrix}
-
 $$
 
 As a more mathematically elegant expression, it can be written as a sum of tensor products using projection operators and Pauli matrices:
 
 $$
-
 \text{CNOT} = |0\rangle\langle0| \otimes I + |1\rangle\langle1| \otimes X
-
 $$
 
 This equation represents the physical meaning of the CNOT gate in an exceptionally intuitive manner. The first term means "in the subspace where the first qubit is projected onto $|0\rangle$, apply the identity operator $I$ to the second qubit", and the second term means "in the subspace where the first qubit is projected onto $|1\rangle$, apply the bit-flip operator $X$ to the second qubit".
@@ -1327,9 +1118,7 @@ How, then, starting from a separable state, do we generate the maximally entangl
 The only required building blocks are the Hadamard gate ** $H$ ** acting on a single qubit and the aforementioned ** $\text{CNOT}$ ** gate. The Hadamard matrix is defined as follows:
 
 $$
-
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
-
 $$
 
 ### Step-by-Step State Evolution Calculation
@@ -1337,29 +1126,24 @@ $$
 **Step 1:** Initialization
 The system starts in the initial state of the computational basis:
 
+
 $$
-
 |\psi_0\rangle = |0\rangle_A \otimes |0\rangle_B = |00\rangle
-
 $$
 
 **Step 2:** Applying the Hadamard Gate to the Control Qubit (Qubit A)
 We apply the Hadamard gate only to qubit A, creating a superposition state. The operator acting on the composite system is ** $H \otimes I$ **.
 
 $$
-
 |\psi_1\rangle = (H \otimes I) |00\rangle = (H|0\rangle_A) \otimes (I|0\rangle_B)
-
-$$
 $$
 
+$$
 = \left( \frac{1}{\sqrt{2}} (|0\rangle_A + |1\rangle_A) \right) \otimes |0\rangle_B
-
-$$
 $$
 
+$$
 = \frac{1}{\sqrt{2}} (|00\rangle + |10\rangle)
-
 $$
 
 At this point, the state is still a separable state, because it can be factored into tensor product form.
@@ -1368,22 +1152,17 @@ At this point, the state is still a separable state, because it can be factored 
 Next, we apply the CNOT gate with qubit A as the control qubit and qubit B as the target qubit. Due to the linearity of the operator, the CNOT gate acts independently on each term in the superposition:
 
 $$
-
 |\psi_2\rangle = \text{CNOT} \left[ \frac{1}{\sqrt{2}} (|00\rangle + |10\rangle) \right]
-
-$$
 $$
 
+$$
 = \frac{1}{\sqrt{2}} (\text{CNOT}|00\rangle + \text{CNOT}|10\rangle)
-
 $$
 
 Applying the action rules of CNOT on the basis states defined earlier, $\text{CNOT}|00\rangle = |00\rangle$ and $\text{CNOT}|10\rangle = |11\rangle$, we obtain:
 
 $$
-
 |\psi_2\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
-
 $$
 
 Remarkably, the Bell state ** $|\Phi^+\rangle$ ** has been generated from an initial separable state. By taking the superposition of 0 and 1 on the control qubit created by the Hadamard gate and feeding it into the CNOT gate, the flipping/non-flipping of the target qubit branches in lockstep with each state of the control qubit, forging entanglement across the system as a whole.
@@ -1474,23 +1253,18 @@ Suppose there existed a "universal quantum cloning machine" that could copy an u
 In quantum mechanics, any physical evolution of a closed system is described by a unitary operator ** $U$ **. Therefore, the operation of this cloning machine is defined as a unitary transformation ** $U$ ** that satisfies the following equation:
 
 $$
-
 U (|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle
-
 $$
 
 Since we assume this holds for "any" state, it must also function similarly for another arbitrary quantum state ** $|\phi\rangle$ **:
 
 $$
-
 U (|\phi\rangle \otimes |0\rangle) = |\phi\rangle \otimes |\phi\rangle
-
 $$
 
 Now, let's take the inner product (scalar product) of these two equations. We will use the property of the unitary operator ** $U$ ** ( ** $U^\dagger U = I$ ** ). The inner product of the left-hand sides is as follows:
 
 $$
-
 \begin{aligned}
 \left( U (|\psi\rangle \otimes |0\rangle) \right)^\dagger \left( U (|\phi\rangle \otimes |0\rangle) \right) 
 &= (\langle \psi | \otimes \langle 0 |) U^\dagger U (|\phi\rangle \otimes |0\rangle) \\
@@ -1498,7 +1272,6 @@ $$
 &= \langle \psi | \phi \rangle \cdot \langle 0 | 0 \rangle \\
 &= \langle \psi | \phi \rangle
 \end{aligned}
-
 $$
 
 (Here, we used ** $\langle 0 | 0 \rangle = 1$ **.)
@@ -1506,30 +1279,24 @@ $$
 On the other hand, the inner product of the copied states on the right-hand sides is as follows:
 
 $$
-
 \begin{aligned}
 \left( |\psi\rangle \otimes |\psi\rangle \right)^\dagger \left( |\phi\rangle \otimes |\phi\rangle \right) 
 &= (\langle \psi | \otimes \langle \psi |) (|\phi\rangle \otimes |\phi\rangle) \\
 &= \langle \psi | \phi \rangle \cdot \langle \psi | \phi \rangle \\
 &= (\langle \psi | \phi \rangle)^2
 \end{aligned}
-
 $$
 
 Since the left and right sides must be equal, we obtain the following equation:
 
 $$
-
 \langle \psi | \phi \rangle = (\langle \psi | \phi \rangle)^2
-
 $$
 
 The conditions for this equation ** $x = x^2$ ** to hold within the range of complex numbers are only ** $x = 0$ ** or ** $x = 1$ **. That is,
 
 $$
-
 \langle \psi | \phi \rangle = 0 \quad \text{or} \quad \langle \psi | \phi \rangle = 1
-
 $$
 
 What this means is that a unitary transformation capable of correctly replicating both states can only exist if the two states are either "completely orthogonal (unrelated)" or "exactly the same state." In other words, it has been proven extremely simply and elegantly that "there is no universal unitary transformation that can clone an arbitrary (non-orthogonal) unknown quantum state."
@@ -1540,38 +1307,31 @@ It is also possible to approach this from the linearity of quantum mechanics (th
 Consider a unitary operator ** $U$ ** that can clone two orthogonal basis states ** $|0\rangle$ ** and ** $|1\rangle$ **.
 
 $$
-
 U |0\rangle |0\rangle = |0\rangle |0\rangle
-
-$$
 $$
 
+$$
 U |1\rangle |0\rangle = |1\rangle |1\rangle
-
 $$
 
 So far, there is no problem. This is equivalent to cloning classical bits 0 and 1. Now, what happens if we try to copy an unknown state that is a superposition of these, ** $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ **? From the linearity of time evolution by a unitary operator, we get the following:
 
 $$
-
 \begin{aligned}
 U (|\psi\rangle |0\rangle) &= U \left( (\alpha|0\rangle + \beta|1\rangle) |0\rangle \right) \\
 &= U (\alpha|0\rangle |0\rangle + \beta|1\rangle |0\rangle) \\
 &= \alpha U(|0\rangle |0\rangle) + \beta U(|1\rangle |0\rangle) \\
 &= \alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle
 \end{aligned}
-
 $$
 
 However, the "exact copy" output we really wanted should be a tensor product like the following:
 
 $$
-
 \begin{aligned}
 |\psi\rangle \otimes |\psi\rangle &= (\alpha|0\rangle + \beta|1\rangle) \otimes (\alpha|0\rangle + \beta|1\rangle) \\
 &= \alpha^2|0\rangle |0\rangle + \alpha\beta|0\rangle |1\rangle + \alpha\beta|1\rangle |0\rangle + \beta^2|1\rangle |1\rangle
 \end{aligned}
-
 $$
 
 The result derived by linearity, ** $\alpha|0\rangle |0\rangle + \beta|1\rangle |1\rangle$ **, is clearly different from the desired cloned state ** $|\psi\rangle \otimes |\psi\rangle$ ** (the cross terms ** $|0\rangle |1\rangle$ ** and ** $|1\rangle |0\rangle$ ** are missing). This once again demonstrates that it is impossible to copy an unknown superposition state.
@@ -1590,33 +1350,29 @@ Let the sender be Alice and the receiver be Bob.
 Alice holds an unknown single-qubit state ** $|\psi\rangle$ ** that she wants to send to Bob.
 
 $$
-
 |\psi\rangle_C = \alpha|0\rangle_C + \beta|1\rangle_C \quad (|\alpha|^2 + |\beta|^2 = 1)
-
 $$
+
 
 The subscript $C$ indicates that this is the target qubit to be transferred.
 
 To realize this transfer, we assume that Alice and Bob pre-share a maximally entangled pair of two qubits (called an EPR pair or Bell pair). Here, we will use the following state:
 
 $$
-
 |\Phi^+\rangle_{AB} = \frac{1}{\sqrt{2}} \left( |0\rangle_A \otimes |0\rangle_B + |1\rangle_A \otimes |1\rangle_B \right)
-
 $$
+
 
 The subscript $A$ represents the qubit held by Alice, and $B$ represents the qubit held by Bob.
 
 The initial state of the entire system ** $|\Psi_0\rangle$ ** is described as the tensor product of the state Alice wants to transfer and the shared EPR pair.
 
 $$
-
 \begin{aligned}
 |\Psi_0\rangle &= |\psi\rangle_C \otimes |\Phi^+\rangle_{AB} \\
 &= (\alpha|0\rangle_C + \beta|1\rangle_C) \otimes \frac{1}{\sqrt{2}} (|0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B) \\
 &= \frac{1}{\sqrt{2}} \Big( \alpha|0\rangle_C |0\rangle_A |0\rangle_B + \alpha|0\rangle_C |1\rangle_A |1\rangle_B + \beta|1\rangle_C |0\rangle_A |0\rangle_B + \beta|1\rangle_C |1\rangle_A |1\rangle_B \Big)
 \end{aligned}
-
 $$
 
 ### Alice's Operations and Bell Basis Measurement
@@ -1627,13 +1383,12 @@ Alice has qubits $C$ and $A$ in her possession. She performs a joint measurement
 Alice applies a CNOT (Controlled-NOT) gate ** $CX_{CA}$ **, using qubit $C$ as the control bit and qubit $A$ as the target bit. The CNOT gate flips the target bit only when the control bit is $|1\rangle$.
 
 $$
-
 \begin{aligned}
 |\Psi_1\rangle &= CX_{CA} |\Psi_0\rangle \\
 &= \frac{1}{\sqrt{2}} \Big( \alpha|0\rangle_C |0\rangle_A |0\rangle_B + \alpha|0\rangle_C |1\rangle_A |1\rangle_B + \beta|1\rangle_C |1\rangle_A |0\rangle_B + \beta|1\rangle_C |0\rangle_A |1\rangle_B \Big)
 \end{aligned}
-
 $$
+
 
 (In the third term, $|0\rangle_A$ is flipped to $|1\rangle_A$, and in the fourth term, $|1\rangle_A$ is flipped to $|0\rangle_A$.)
 
@@ -1641,26 +1396,22 @@ $$
 Next, Alice applies a Hadamard gate ** $H_C$ ** to qubit $C$. The Hadamard transformation converts $|0\rangle \to \frac{|0\rangle+|1\rangle}{\sqrt{2}}$ and $|1\rangle \to \frac{|0\rangle-|1\rangle}{\sqrt{2}}$.
 
 $$
-
 \begin{aligned}
 |\Psi_2\rangle &= H_C |\Psi_1\rangle \\
 &= \frac{1}{2} \Big[ \alpha(|0\rangle_C + |1\rangle_C) |0\rangle_A |0\rangle_B + \alpha(|0\rangle_C + |1\rangle_C) |1\rangle_A |1\rangle_B \\
 &\quad + \beta(|0\rangle_C - |1\rangle_C) |1\rangle_A |0\rangle_B + \beta(|0\rangle_C - |1\rangle_C) |0\rangle_A |1\rangle_B \Big]
 \end{aligned}
-
 $$
 
 We rearrange this expression with respect to the states of qubits $C$ and $A$ held by Alice ( $|00\rangle, |01\rangle, |10\rangle, |11\rangle$ ). This rearrangement is the core mathematical step of quantum teleportation.
 
 $$
-
 \begin{aligned}
 |\Psi_2\rangle &= \frac{1}{2} |0\rangle_C |0\rangle_A \otimes (\alpha|0\rangle_B + \beta|1\rangle_B) \\
 &\quad + \frac{1}{2} |0\rangle_C |1\rangle_A \otimes (\alpha|1\rangle_B + \beta|0\rangle_B) \\
 &\quad + \frac{1}{2} |1\rangle_C |0\rangle_A \otimes (\alpha|0\rangle_B - \beta|1\rangle_B) \\
 &\quad + \frac{1}{2} |1\rangle_C |1\rangle_A \otimes (\alpha|1\rangle_B - \beta|0\rangle_B)
 \end{aligned}
-
 $$
 
 What is remarkable here is that depending on Alice's measurement result, Bob's qubit $B$ is projected into different states respectively.
@@ -1737,9 +1488,7 @@ Under classical physical laws, a single two-level system (a single bit or the po
 Suppose Alice and Bob once again pre-share an EPR pair.
 
 $$
-
 |\Phi^+\rangle_{AB} = \frac{1}{\sqrt{2}} \left( |0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B \right)
-
 $$
 
 Alice wishes to send a 2-bit classical message $b_1 b_2 \in \{00, 01, 10, 11\}$ to Bob.
@@ -1751,9 +1500,7 @@ Depending on the message she wants to send, Alice performs specific single-qubit
    
 
 $$
-
 |\Psi_{00}\rangle = (I \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle
-
 $$
 
 2. **If the message is `01`:**
@@ -1761,9 +1508,7 @@ $$
    
 
 $$
-
 |\Psi_{01}\rangle = (Z \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (Z|0\rangle|0\rangle + Z|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle) = |\Phi^-\rangle
-
 $$
 
 3. **If the message is `10`:**
@@ -1771,9 +1516,7 @@ $$
    
 
 $$
-
 |\Psi_{10}\rangle = (X \otimes I) |\Phi^+\rangle = \frac{1}{\sqrt{2}} (X|0\rangle|0\rangle + X|1\rangle|1\rangle) = \frac{1}{\sqrt{2}} (|10\rangle + |01\rangle) = |\Psi^+\rangle
-
 $$
 
 4. **If the message is `11`:**
@@ -1781,10 +1524,9 @@ $$
    
 
 $$
-
 |\Psi_{11}\rangle = (ZX \otimes I) |\Phi^+\rangle = (Z \otimes I) |\Psi^+\rangle = \frac{1}{\sqrt{2}} (Z|1\rangle|0\rangle + Z|0\rangle|1\rangle) = \frac{1}{\sqrt{2}} (-|10\rangle + |01\rangle) = -|\Psi^-\rangle
-
 $$
+
 
    (The overall negative sign is a global phase and thus does not affect measurement probabilities, but for convenience here, we adjust the sign to associate it with ** $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ **.)
 
@@ -1870,9 +1612,7 @@ To construct a quantum algorithm, we must first reformulate the classical functi
 We prepare an input register ( $n$ qubits) and a target register ( $1$ qubit). The unitary operator ** $U_f$ ** representing the oracle acts on the computational basis states as follows:
 
 $$
-
 U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle
-
 $$
 
 Here, $\oplus$ represents modulo 2 addition (XOR). This transformation is clearly reversible and unitary because applying it once more restores the original state ( $U_f^2 = I$ ).
@@ -1882,29 +1622,21 @@ Here, $\oplus$ represents modulo 2 addition (XOR). This transformation is clearl
 One of the most important and counterintuitive techniques in quantum information science is "Phase Kickback." Let us examine what happens when the state of the target register is set not to the classical $|0\rangle$ or $|1\rangle$, but to the superposition state $|-\rangle$ prepared by passing through a Hadamard gate:
 
 $$
-
 |-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}
-
 $$
 
 We input this state into the target register and apply the oracle ** $U_f$ **:
 
 $$
-
 U_f |x\rangle |-\rangle = U_f \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2}} \left( U_f |x\rangle |0\rangle - U_f |x\rangle |1\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right)
-
 $$
 
 Here, we divide into cases based on the value of $f(x)$:
@@ -1916,9 +1648,7 @@ Here, we divide into cases based on the value of $f(x)$:
 Combining these into one yields the following beautiful equation:
 
 $$
-
 U_f |x\rangle |-\rangle = (-1)^{f(x)} |x\rangle |-\rangle
-
 $$
 
 This is an astonishing result. While the state of the target register $|-\rangle$ has not changed at all, the evaluation result of the function ** $f(x)$ ** is "kicked back" to the input register ** $|x\rangle$ ** side as the "sign of the phase". This allows information to be encoded into the phase of the amplitude.
@@ -1942,9 +1672,7 @@ graph LR
 We initialize the $n$ qubits of the input register to $|0\rangle^{\otimes n}$ and the 1 qubit of the target register to $|1\rangle$:
 
 $$
-
 |\psi_0\rangle = |0\rangle^{\otimes n} |1\rangle
-
 $$
 
 ### Step 2: Application of Hadamard Gates to All Qubits
@@ -1953,23 +1681,17 @@ We apply Hadamard gates ( $H$ ) to all qubits to generate a complete superpositi
 The Hadamard transform $H^{\otimes n}$ on $n$ qubits acts as follows:
 
 $$
-
 H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle
-
 $$
 
 Therefore, the state of the entire system becomes:
 
 $$
-
 |\psi_1\rangle = \left( \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle \right) \otimes \left( \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle |-\rangle
-
 $$
 
 ### Step 3: Application of the Quantum Oracle (Phase Kickback)
@@ -1977,9 +1699,7 @@ $$
 Here we apply the oracle ** $U_f$ **. Due to the phase kickback effect proven in the previous section, $(-1)^{f(x)}$ is multiplied onto the phase of each basis state $|x\rangle$:
 
 $$
-
 |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} (-1)^{f(x)} |x\rangle |-\rangle
-
 $$
 
 At this point, all information of the evaluation results ** $f(x)$ ** (all $2^n$ values) has been embedded in parallel as the respective phases of the superposition state in a single operation. This is called "Quantum Parallelism."
@@ -1990,30 +1710,22 @@ Since the target register is not used from here on, we ignore it. We apply the H
 The action of $H^{\otimes n}$ on any basis state $|x\rangle$ is expressed by the following general formula:
 
 $$
-
 H^{\otimes n} |x\rangle = \frac{1}{\sqrt{2^n}} \sum_{z \in \{0,1\}^n} (-1)^{x \cdot z} |z\rangle
-
 $$
 
 Here, $x \cdot z$ represents the bitwise inner product $x \cdot z = x_1 z_1 \oplus x_2 z_2 \oplus \dots \oplus x_n z_n$.
 Applying this to the input register part of $|\psi_2\rangle$, the final state $|\psi_3\rangle$ is expanded as follows:
 
 $$
-
 |\psi_3\rangle = H^{\otimes n} \left( \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} |x\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{\sqrt{2^n}} \sum_{x} (-1)^{f(x)} \left( \frac{1}{\sqrt{2^n}} \sum_{z} (-1)^{x \cdot z} |z\rangle \right)
-
 $$
 
 $$
-
 = \frac{1}{2^n} \sum_{z \in \{0,1\}^n} \left( \sum_{x \in \{0,1\}^n} (-1)^{f(x) + x \cdot z} \right) |z\rangle
-
 $$
 
 This is an extraordinarily important equation representing the quantum state immediately before measurement. Quantum mechanical "interference" is occurring within this sum $\sum_x$.
@@ -2024,9 +1736,7 @@ At the end of the algorithm, we measure the $n$ qubits of the input register in 
 What we are interested in is the probability that all qubits are measured as $0$, that is, the state ** $|0\rangle^{\otimes n}$ ** is measured. Let us consider the case where $z = 00\dots0$ in the above equation. In this case, since $x \cdot 0 = 0$ for any $x$, the amplitude (coefficient) of the state ** $|0\rangle^{\otimes n}$ ** is calculated as follows:
 
 $$
-
 \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \sum_{x \in \{0,1\}^n} (-1)^{f(x)}
-
 $$
 
 Here, we examine the two cases according to the promise:
@@ -2038,11 +1748,11 @@ It is always $f(x) = 0$ or always $f(x) = 1$.
 
 Since the measurement probability $P(0)$ is the square of the absolute value of the amplitude:
 
-$$
 
+$$
 P(00\dots0) = | \pm 1 |^2 = 1
-
 $$
+
 
 In other words, ** when the function is a constant function, $|0\rangle^{\otimes n}$ is measured with 100% probability **.
 
@@ -2051,18 +1761,16 @@ There are exactly equal numbers of $x$ for which $f(x) = 0$ and $x$ for which $f
 Therefore, $(-1)^{f(x)}$ becomes $+1$ for half and $-1$ for the remaining half, and when these are all added together, they completely cancel each other out to become zero (completely destructive interference).
 
 $$
-
 \text{Amplitude of } |0\rangle^{\otimes n} = \frac{1}{2^n} \left( 2^{n-1}(+1) + 2^{n-1}(-1) \right) = 0
-
 $$
 
 Since the measurement probability $P(0)$ is the square of the absolute value of the amplitude:
 
-$$
 
+$$
 P(00\dots0) = | 0 |^2 = 0
-
 $$
+
 
 In other words, ** when the function is a balanced function, the probability of measuring $|0\rangle^{\otimes n}$ is 0%, and a state with at least one bit equal to $1$ is always measured **.
 
@@ -2073,37 +1781,34 @@ Rather than just abstract mathematical formulas, let us trace the concrete state
 ### Constant Function Case: $f(x) = 1$ (All 1s)
 The input register part of the state $|\psi_1\rangle$ before applying the oracle is as follows:
 
+
 $$
-
 \frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle )
-
 $$
 
 After applying the oracle, all terms are multiplied by $(-1)^{f(x)} = -1$ due to phase kickback:
 
+
 $$
-
 |\psi_2\rangle_{in} = -\frac{1}{2} ( |00\rangle + |01\rangle + |10\rangle + |11\rangle )
-
 $$
 
 We apply $H^{\otimes 2}$ to this again. Utilizing the fact that $H^{\otimes 2} (|00\rangle + |01\rangle + |10\rangle + |11\rangle) = 2 |00\rangle$:
 
-$$
 
+$$
 |\psi_3\rangle_{in} = - |00\rangle
-
 $$
+
 
 The measurement result is $00$ with a probability of $100\%$.
 
 ### Balanced Function Case: $f(00)=0, f(01)=1, f(10)=1, f(11)=0$
 After applying the oracle, due to phase kickback, a minus sign is attached only to the terms where $f(x)=1$:
 
+
 $$
-
 |\psi_2\rangle_{in} = \frac{1}{2} ( |00\rangle - |01\rangle - |10\rangle + |11\rangle )
-
 $$
 
 We apply $H^{\otimes 2}$ to this state. Calculating and substituting the action of $H^{\otimes 2}$ on each basis, and focusing on the coefficient of $|00\rangle$, it becomes $\frac{1}{4} (1 - 1 - 1 + 1) = 0$, completely cancelling out (destructive interference).
@@ -2132,19 +1837,19 @@ The exponent $e$, which becomes the key for encryption, is chosen such that $1 <
 
 If the plaintext is an integer $M$ (where $0 \le M < N$), encryption is performed by modular exponentiation modulo $N$ as follows:
 
-$$
 
+$$
 C \equiv M^e \pmod{N}
-
 $$
+
 
 When decrypting, the calculation is performed similarly using the private key $d$:
 
-$$
 
+$$
 M' \equiv C^d \pmod{N}
-
 $$
+
 
 From Euler's theorem, $C^d \equiv M^{ed} \equiv M^{1 + k\phi(N)} \equiv M \pmod{N}$ holds, which guarantees that the original plaintext $M$ is perfectly restored.
 
@@ -2160,50 +1865,46 @@ Let's follow the procedure for prime factorizing a given composite number $N$. F
 
 If $\text{gcd}(a, N) = 1$, $a$ and $N$ are coprime. Here, we define a modular exponential function as follows:
 
-$$
 
+$$
 f(x) = a^x \bmod N
-
 $$
+
 
 In the language of group theory, $a$ is an element of the multiplicative group $(\mathbb{Z}/N\mathbb{Z})^\times$, and the function $f(x)$ forms a homomorphism from the additive group of integers $\mathbb{Z}$ to the multiplicative group $(\mathbb{Z}/N\mathbb{Z})^\times$. By the properties of finite groups, this function always has periodicity. That is, there exists a smallest positive integer $r$ that satisfies the following equation:
 
-$$
 
+$$
 a^r \equiv 1 \pmod{N}
-
 $$
+
 
 This smallest positive integer $r$ is called the "Order" of $a$ modulo $N$, or the "Period" of the function $f(x)$.
 
 If we can find this order $r$, and furthermore, if it satisfies the conditions that $r$ is even and $a^{r/2} \not\equiv -1 \pmod{N}$, then we obtain a powerful clue for factorization as follows:
 
-$$
 
+$$
 a^r - 1 \equiv 0 \pmod{N}
-
 $$
 
 $$
-
 (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod{N}
-
 $$
+
 
 This equation means that $N$ divides the product of $(a^{r/2} - 1)$ and $(a^{r/2} + 1)$. However, since $a^{r/2} \not\equiv 1$ (because $r$ is the smallest period) and $a^{r/2} \not\equiv -1$ (from the condition), $N$ cannot single-handedly divide either of these terms. Therefore, the prime factors of $N$ must be distributed between these two terms.
 In conclusion, by calculating:
 
-$$
 
+$$
 p = \text{gcd}(a^{r/2} - 1, N)
-
 $$
 
 $$
-
 q = \text{gcd}(a^{r/2} + 1, N)
-
 $$
+
 
 we can reliably discover the non-trivial prime factors of $N$.
 
@@ -2215,29 +1916,29 @@ The heart of the quantum algorithm for extracting the hidden period $r$ of the f
 
 The action of the Quantum Fourier Transform on a computational basis state $|j\rangle$ ($j = 0, 1, \dots, M-1$) in a Hilbert space $\mathcal{H}$ of dimension $M = 2^n$ is rigorously defined as follows:
 
-$$
 
+$$
 \text{QFT} |j\rangle = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} e^{2\pi i j k / M} |k\rangle
-
 $$
+
 
 For an arbitrary quantum state ** $|\psi\rangle$ **, it acts by linearity as follows:
 
-$$
 
+$$
 \text{QFT} \sum_{j=0}^{M-1} x_j |j\rangle = \sum_{k=0}^{M-1} \left( \frac{1}{\sqrt{M}} \sum_{j=0}^{M-1} x_j e^{2\pi i j k / M} \right) |k\rangle = \sum_{k=0}^{M-1} y_k |k\rangle
-
 $$
+
 
 The new amplitudes $y_k$ obtained here perfectly match the coefficients obtained by the classical Discrete Fourier Transform. However, while the classical Fast Fourier Transform (FFT) requires $O(M \log M) = O(n 2^n)$ time to compute the entire vector, the QFT realizes a dramatic reduction in computational complexity, capable of transforming the "state" of $n$ qubits with only $O(n^2)$ quantum gate operations.
 
 To understand why this can be realized with a small number of gates $O(n^2)$, we need to express the state obtained by the QFT by decomposing it into a tensor product form. When the integer $j$ is represented in binary as $j = j_1 2^{n-1} + j_2 2^{n-2} + \dots + j_n 2^0$ (where $j_1$ is the most significant bit and $j_n$ is the least significant bit), the output state beautifully decomposes into a tensor product of $n$ independent qubit states as follows:
 
-$$
 
+$$
 \text{QFT} |j_1 j_2 \dots j_n\rangle = \frac{1}{\sqrt{2^n}} \left(|0\rangle + e^{2\pi i 0.j_n} |1\rangle\right) \otimes \left(|0\rangle + e^{2\pi i 0.j_{n-1} j_n} |1\rangle\right) \otimes \dots \otimes \left(|0\rangle + e^{2\pi i 0.j_1 j_2 \dots j_n} |1\rangle\right)
-
 $$
+
 
 Here, $0.j_l \dots j_m$ represents a binary fraction, and $0.j_l \dots j_m = j_l/2 + j_{l+1}/4 + \dots + j_m/2^{m-l+1}$.
 
@@ -2281,22 +1982,22 @@ flowchart LR
 The entire system is set to the initial state ** $|\psi_0\rangle$ ** $= |0\rangle^{\otimes t} |0\rangle^{\otimes L}$.
 Next, a Hadamard gate $H^{\otimes t}$ is applied to all qubits in the first register, generating an equal-probability superposition of an exponentially large number of states.
 
-$$
 
+$$
 |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |0\rangle
-
 $$
+
 
 Here, the first register simultaneously holds all integer states from $0$ to $M-1$.
 
 **[Step 2: Function Evaluation by Quantum Oracle]**
 The quantum oracle $U_f$ is applied, computing the function $f(x) = a^x \bmod N$ while remaining in the superposition state, and storing the result in the second register.
 
-$$
 
+$$
 |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{M}} \sum_{x=0}^{M-1} |x\rangle |a^x \bmod N\rangle
-
 $$
+
 
 This state ** $|\psi_2\rangle$ ** is a state where the input $x$ and output $f(x)$ are strongly entangled.
 
@@ -2304,11 +2005,11 @@ This state ** $|\psi_2\rangle$ ** is a state where the input $x$ and output $f(x
 To facilitate theoretical understanding, let us assume here that the second register is observed (in the actual algorithm, the mathematical consequences are exactly the same even if the observation is omitted). By observation, the second register collapses to a specific value $y = a^{x_0} \bmod N$. Here, $x_0$ is a minimum offset value satisfying $0 \le x_0 < r$.
 At this time, the first register instantaneously collapses to a superposition state of "all inputs $x$ such that the output of the function $f(x)$ becomes $y$." Since the function has a period $r$, such $x$ are lined up at equal intervals as $x_0, x_0 + r, x_0 + 2r, \dots$.
 
-$$
 
+$$
 |\psi_3\rangle = \frac{1}{\sqrt{A}} \sum_{m=0}^{A-1} |x_0 + m r\rangle \otimes |y\rangle
-
 $$
+
 
 Here, $A$ is the number of terms included in the superposition, and $A \approx M/r$.
 Focusing on the first register, this is a comb-like probability distribution state with period $r$. However, even if this state is measured directly, a random $x_0 + mr$ is obtained with equal probability, and since the offset $x_0$ is unknown, the period $r$ cannot be determined. This is where the QFT is required.
@@ -2316,19 +2017,19 @@ Focusing on the first register, this is a comb-like probability distribution sta
 **[Step 4: Application of the Inverse Quantum Fourier Transform]**
 The Inverse Quantum Fourier Transform (QFT$^\dagger$) is applied to the first register.
 
-$$
 
+$$
 \text{QFT}^\dagger |\psi_3\rangle = \frac{1}{\sqrt{A M}} \sum_{k=0}^{M-1} \sum_{m=0}^{A-1} e^{-2\pi i k (x_0 + m r) / M} |k\rangle
-
 $$
+
 
 Rearranging this with respect to the state $|k\rangle$, we examine its probability amplitude $c_k$:
 
-$$
 
+$$
 c_k = \frac{1}{\sqrt{A M}} e^{-2\pi i k x_0 / M} \sum_{m=0}^{A-1} e^{-2\pi i k m r / M}
-
 $$
+
 
 The summation part of this formula is the sum of a geometric progression with a common ratio of $e^{-2\pi i k r / M}$. If the phase $k r / M$ deviates significantly from an integer, the vectors are added while rotating on the complex plane, causing Destructive Interference, and the amplitude becomes nearly $0$.
 Conversely, when $k r / M$ is very close to an integer $j$, i.e., when $k \approx j \frac{M}{r}$, the vectors on the complex plane point in the same direction, and the amplitude is amplified by Constructive Interference.
@@ -2336,11 +2037,11 @@ Conversely, when $k r / M$ is very close to an integer $j$, i.e., when $k \appro
 **[Step 5: Measurement and Continued Fraction Expansion]**
 When the first register is measured, an integer $k$ satisfying $k \approx j \frac{M}{r}$ is observed with high probability. Dividing both sides by $M$ yields the following relationship:
 
-$$
 
+$$
 \frac{k}{M} \approx \frac{j}{r}
-
 $$
+
 
 Here, $k$ and $M$ are known values, but $j$ and $r$ are unknown. Since $t$ is chosen such that $M \ge N^2$, $k/M$ gives an extremely highly accurate approximation for the unknown fraction $j/r$, satisfying $\left| \frac{k}{M} - \frac{j}{r} \right| \le \frac{1}{2M} < \frac{1}{2r^2}$.
 According to the theorem of Diophantine approximation (Legendre's theorem), a rational number $j/r$ satisfying this condition is guaranteed to be included among the convergents of the "Continued Fraction Expansion" of the real number $k/M$.
@@ -2378,33 +2079,25 @@ The goal of the problem is defined as: "Using a given black-box function (referr
 The first step of a quantum algorithm always begins with preparing to survey the entire search space simultaneously. To create an equal superposition of all possibilities, we apply the Hadamard gate $H$ in parallel as a tensor product across each qubit of the $n$-qubit initial state $|0\rangle^{\otimes n}$. We define the resulting initial uniform superposition state as $|s\rangle$:
 
 $$
-
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
-
 $$
 
 In the Hilbert space, this state ** $|s\rangle$ ** can be clearly decomposed into a linear combination of the target state $|w\rangle$ and all other non-target (incorrect) states. To make the subsequent geometric interpretation visually accessible, we introduce a new normalized vector $|s^\perp\rangle$, which is an equal superposition of non-target states only:
 
 $$
-
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
-
 $$
 
 By this definition, the state $|s^\perp\rangle$ and the target state $|w\rangle$ are mutually orthogonal ( $\langle s^\perp | w \rangle = 0$ ). Consequently, the initial uniform superposition state ** $|s\rangle$ ** can be expanded very simply on the two-dimensional Hilbert subspace spanned by these two mutually orthogonal vectors $|w\rangle$ and $|s^\perp\rangle$:
 
 $$
-
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
-
 $$
 
 Here, we introduce a small angle $\theta$ such that $\sin \theta = \frac{1}{\sqrt{N}}$ (when $N$ is sufficiently large, $\theta \approx 1/\sqrt{N}$). This state can then be rewritten in a more elegant geometric representation using trigonometric functions:
 
 $$
-
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
-
 $$
 
 What this equation tells us is the stark reality that in the initial state ** $|s\rangle$ **, the probability of observing the target state $|w\rangle$ is merely $|\sin \theta|^2 = \frac{1}{N}$. The ultimate goal of Grover's algorithm is to iteratively apply a combination of an oracle and a diffusion operator (discussed below) to gradually "rotate" this state vector ** $|s\rangle$ ** toward $|w\rangle$ within the two-dimensional plane of the Hilbert space, driving the probability of observing the correct state arbitrarily close to the theoretical limit of $1$ (amplifying its amplitude).
@@ -2416,54 +2109,44 @@ The first crucial component of the iterative unit of the algorithm, the "Grover 
 Typically, this oracle uses a single ancillary qubit (ancilla qubit) to implement the function evaluation reversibly. We define a Boolean function $f(x)$ representing the search condition such that $f(w) = 1$ when $x = w$, and $f(x) = 0$ for all other $x \neq w$. The action of the oracle can then be expressed using bitwise addition modulo 2 (XOR) $\oplus$ as follows:
 
 $$
-
 O_f \left( |x\rangle \otimes |y\rangle \right) = |x\rangle \otimes |y \oplus f(x)\rangle
-
 $$
 
 Here, the ingenuity of Grover's algorithm shines through. Instead of a computational basis state, the ancilla qubit $|y\rangle$ is initialized to the superposition state $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ prior to being input. When this is done, a remarkable quantum phenomenon known as **phase kickback** occurs. Let us calculate this explicitly:
 
 $$
-
 \begin{align*}
 O_f \left( |x\rangle \otimes |-\rangle \right) &= O_f \left( |x\rangle \otimes \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) \\
 &= \frac{1}{\sqrt{2}} \left( O_f |x\rangle |0\rangle - O_f |x\rangle |1\rangle \right) \\
 &= \frac{1}{\sqrt{2}} \left( |x\rangle |0 \oplus f(x)\rangle - |x\rangle |1 \oplus f(x)\rangle \right)
 \end{align*}
-
 $$
 
 We evaluate this expression separately for the cases where the input state is incorrect and where it is correct:
 If $x \neq w$ (that is, $f(x) = 0$), the state remains entirely unchanged:
 
+
 $$
-
 \frac{1}{\sqrt{2}} \left( |x\rangle |0\rangle - |x\rangle |1\rangle \right) = |x\rangle |-\rangle
-
 $$
 
 On the other hand, if $x = w$ (that is, $f(w) = 1$), the state of the ancilla qubit is flipped ($0 \to 1$ and $1 \to 0$), causing an overall negative sign to appear in front of the state:
 
+
 $$
-
 \frac{1}{\sqrt{2}} \left( |x\rangle |1\rangle - |x\rangle |0\rangle \right) = - \left( |x\rangle \frac{|0\rangle - |1\rangle}{\sqrt{2}} \right) = - |x\rangle |-\rangle
-
 $$
 
 This result is of paramount importance. The state of the ancilla qubit $|-\rangle$ remains completely invariant before and after the operation, acting merely as a "catalyst." Instead, the evaluation result $f(x)$ has been "kicked back" as the **sign of the amplitude (phase)** of the main quantum register $|x\rangle$. Exploiting this property allows us to omit the ancilla qubit from our description and redefine the action of the oracle on the main register simply and elegantly as a new unitary operator $U_w$:
 
 $$
-
 U_w |x\rangle = (-1)^{f(x)} |x\rangle = \begin{cases} -|x\rangle & (x = w) \\ |x\rangle & (x \neq w) \end{cases}
-
 $$
 
 This phase oracle $U_w$ can be explicitly written in terms of projection operators using Dirac bra-ket notation as follows:
 
 $$
-
 U_w = I - 2|w\rangle\langle w|
-
 $$
 
 Here, $I$ is the $N \times N$ identity operator. Appealing to geometric intuition, this oracle $U_w$ is none other than an operator that performs a ** reflection of the state vector across the horizontal $|s^\perp\rangle$ axis ** in the two-dimensional real plane spanned by $|s^\perp\rangle$ and $|w\rangle$. This is because only the component corresponding to the target state has its sign flipped, while the components of all non-target states remain preserved.
@@ -2475,9 +2158,7 @@ After the oracle marks the target state with a "negative phase," we apply the se
 The diffusion operator $U_s$ is mathematically defined as follows:
 
 $$
-
 U_s = 2|s\rangle\langle s| - I
-
 $$
 
 To understand why this operator is called "inversion about the mean," let us rigorously prove its mechanism using a general superposition state $|\psi\rangle = \sum_{x=0}^{N-1} \alpha_x |x\rangle$.
@@ -2485,9 +2166,7 @@ To understand why this operator is called "inversion about the mean," let us rig
 First, we compute the inner product between the uniform superposition state $|s\rangle$ and the current state $|\psi\rangle$:
 
 $$
-
 \langle s | \psi \rangle = \left( \frac{1}{\sqrt{N}} \sum_{y=0}^{N-1} \langle y| \right) \left( \sum_{x=0}^{N-1} \alpha_x |x\rangle \right) = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} \alpha_x
-
 $$
 
 Dividing this inner product by $\sqrt{N}$ yields the arithmetic mean of all amplitudes $\alpha_x$ (which we define as $\mu$). That is, it can be expressed as $\mu = \frac{1}{N} \sum_{x=0}^{N-1} \alpha_x = \frac{1}{\sqrt{N}} \langle s | \psi \rangle$. Therefore, we have $\langle s | \psi \rangle = \sqrt{N} \mu$.
@@ -2495,7 +2174,6 @@ Dividing this inner product by $\sqrt{N}$ yields the arithmetic mean of all ampl
 Using this relation, we calculate the result of applying $U_s$ to the state $|\psi\rangle$:
 
 $$
-
 \begin{align*}
 U_s |\psi\rangle &= (2|s\rangle\langle s| - I) \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
 &= 2|s\rangle \langle s | \psi \rangle - \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
@@ -2503,7 +2181,6 @@ U_s |\psi\rangle &= (2|s\rangle\langle s| - I) \sum_{x=0}^{N-1} \alpha_x |x\rang
 &= 2 \mu \sum_{x=0}^{N-1} |x\rangle - \sum_{x=0}^{N-1} \alpha_x |x\rangle \\
 &= \sum_{x=0}^{N-1} (2\mu - \alpha_x) |x\rangle
 \end{align*}
-
 $$
 
 The resulting new amplitude for each basis state $|x\rangle$ is $(2\mu - \alpha_x)$. This expression can be rewritten as $\mu + (\mu - \alpha_x)$. This clearly demonstrates that the original amplitude $\alpha_x$ is reflected to the exactly opposite (symmetric) position with respect to the overall mean $\mu$. This is the precise mathematical rationale behind why the diffusion operator is called "inversion about the mean."
@@ -2519,9 +2196,7 @@ Returning to a geometric perspective, the operator expression $U_s = 2|s\rangle\
 The single iteration unit of Grover's algorithm, the ** Grover operator $G$ **, is defined as the successive application—that is, the product—of the oracle $U_w$ and the diffusion operator $U_s$:
 
 $$
-
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
-
 $$
 
 Here, an exquisitely beautiful theorem woven from Euclidean geometry and linear algebra takes center stage: "The composition of two reflections across two intersecting lines is a pure rotation by twice the angle between the two lines."
@@ -2541,51 +2216,43 @@ Let us mathematically prove this intuitive geometric insight with full rigor usi
 Using mathematical induction, we prove that the state after $t$ iterations is always concisely given by:
 
 $$
-
 |\psi_t\rangle = G^t |s\rangle = \cos((2t+1)\theta) |s^\perp\rangle + \sin((2t+1)\theta) |w\rangle
-
 $$
 
 For $t=0$, this holds trivially. Assuming $|\psi_t\rangle$ is given in the form above, we calculate the state $|\psi_{t+1}\rangle = G |\psi_t\rangle$ after one additional iteration.
 First, applying the oracle $U_w$ flips the sign of the $|w\rangle$ component:
 
 $$
-
 U_w |\psi_t\rangle = \cos((2t+1)\theta) |s^\perp\rangle - \sin((2t+1)\theta) |w\rangle
-
 $$
 
 Next, we apply the diffusion operator $U_s = 2|s\rangle\langle s| - I$. To evaluate this calculation, introducing a $2 \times 2$ matrix representation in the basis $\{|s^\perp\rangle, |w\rangle\}$ provides the clearest insight.
 
 The matrix representation of the oracle $U_w$ is the following diagonal matrix:
 
+
 $$
-
 U_w = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-
 $$
 
 Since the initial state vector $|s\rangle$ is represented by the column vector $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$, the projection operator $|s\rangle\langle s|$ is computed via the outer product. Determining $U_s$ from this yields:
 
 $$
-
 \begin{align*}
 U_s &= 2 \begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix} \begin{pmatrix} \cos\theta & \sin\theta \end{pmatrix} - \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \\
 &= \begin{pmatrix} 2\cos^2\theta - 1 & 2\sin\theta\cos\theta \\ 2\sin\theta\cos\theta & 2\sin^2\theta - 1 \end{pmatrix} \\
 &= \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\theta) \end{pmatrix}
 \end{align*}
-
 $$
+
 
 (Here, we used the double-angle formulas $\cos(2\theta) = 2\cos^2\theta - 1$ and $\sin(2\theta) = 2\sin\theta\cos\theta$)
 
 Therefore, the overall matrix representation of the Grover operator $G = U_s U_w$ is given by the product of these two matrices:
 
 $$
-
 G = \begin{pmatrix} \cos(2\theta) & \sin(2\theta) \\ \sin(2\theta) & -\cos(2\theta) \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 = \begin{pmatrix} \cos(2\theta) & -\sin(2\theta) \\ \sin(2\theta) & \cos(2\theta) \end{pmatrix}
-
 $$
 
 Remarkably, the resulting matrix is precisely the well-known ** rotation matrix for an angle $2\theta$ ** from geometry. Consequently, applying the operator $G$ sequentially $t$ times to the initial vector $\begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$ is geometrically equivalent to rotating the vector counterclockwise by $2\theta$ at each step. Thus, the overall angle becomes the initial angle $\theta$ plus $t \times 2\theta$, yielding $\theta + 2t\theta = (2t+1)\theta$. This elegantly completes the induction proof.
@@ -2613,9 +2280,7 @@ graph LR
 This circuit diagram illustrates a highly practical implementation method for the diffusion operator $U_s = 2|s\rangle\langle s| - I$. Since the state $|s\rangle$ is prepared as $H^{\otimes n} |0\rangle^{\otimes n}$, the operator decomposes as follows:
 
 $$
-
 U_s = 2(H^{\otimes n} |0\rangle^{\otimes n})(\langle 0|^{\otimes n} H^{\otimes n}) - I = H^{\otimes n} (2|0\rangle\langle 0| - I) H^{\otimes n}
-
 $$
 
 In other words, by transforming into the computational basis via the Hadamard transform $H^{\otimes n}$, applying a conditional phase-shift operator that leaves the phase unchanged only when all qubits are in state $|0\rangle$ (or equivalently, applies a negative phase only to $|0\rangle$, which differs only by an unobservable global phase), and transforming back to the original basis with another Hadamard transform, this "sandwich" structure allows "inversion about the mean" to be implemented efficiently on any quantum computer.
@@ -2627,25 +2292,19 @@ With the geometric behavior of the state vector fully elucidated, we are now rea
 After performing $t$ iterations, the probability $P(w)$ of measuring the quantum register in the computational basis and obtaining the target state $|w\rangle$ is given by the squared magnitude of the amplitude of the $|w\rangle$ component of the state vector $|\psi_t\rangle$:
 
 $$
-
 P(w) = |\langle w | \psi_t \rangle|^2 = \sin^2((2t+1)\theta)
-
 $$
 
 Our ultimate goal is to maximize this probability $P(w)$, driving it as close as possible to the theoretical upper bound of $1$. The function $\sin^2(x)$ achieves its maximum value of $1$ when its argument $x$ equals $\frac{\pi}{2}$ (90 degrees). Therefore, the equation to determine the optimal number of iterations $t$ is formulated as follows:
 
 $$
-
 (2t+1)\theta \approx \frac{\pi}{2}
-
 $$
 
 Solving this for $t$:
 
 $$
-
 t \approx \frac{\pi}{4\theta} - \frac{1}{2}
-
 $$
 
 In a database search of practical scale, the number of elements $N$ is astronomically large. Consequently, the angle $\theta$ is an extremely small quantity close to $0$. For small $\theta$, retaining the first-order term of the Taylor expansion (Maclaurin expansion) yields the excellent approximation $\sin \theta \approx \theta$. From the definition of the initial state, we had $\sin \theta = \frac{1}{\sqrt{N}}$, so we can take $\theta \approx \frac{1}{\sqrt{N}}$.
@@ -2653,9 +2312,7 @@ In a database search of practical scale, the number of elements $N$ is astronomi
 Substituting this approximation into the equation for $t$ derived above, the optimal number of iterations $R$ is elegantly derived as:
 
 $$
-
 R \approx \frac{\pi}{4} \sqrt{N}
-
 $$
 
 The implications of this result are staggering enough to shake the foundations of information science. On a classical computer, searching for a target within a randomly shuffled search space unavoidably requires a search time proportional to the number of elements (computational complexity $O(N)$)—taking $N$ queries in the worst case and $N/2$ queries on average. In contrast, Grover's algorithm operating on a quantum computer utilizes interference to amplify probability, reaching the target state almost deterministically (with an extremely high probability of $1 - O(1/N)$) in merely $\frac{\pi}{4} \sqrt{N}$ queries. The query complexity is $O(\sqrt{N})$, successfully compressing the computation time down to the scale of the square root.
@@ -2669,22 +2326,17 @@ Up to this point, our discussion assumed the most stringent scenario: that exact
 When $M$ solutions exist, we redefine $|W\rangle$ as the uniform superposition of all target states, and $|W^\perp\rangle$ as the uniform superposition of all non-target states:
 
 $$
-
 |W\rangle = \frac{1}{\sqrt{M}} \sum_{x \in \text{Solutions}} |x\rangle
-
-$$
 $$
 
+$$
 |W^\perp\rangle = \frac{1}{\sqrt{N-M}} \sum_{x \notin \text{Solutions}} |x\rangle
-
 $$
 
 The initial uniform superposition state $|s\rangle$ can then be expanded using these two orthogonal vectors as follows:
 
 $$
-
 |s\rangle = \sqrt{\frac{N-M}{N}} |W^\perp\rangle + \sqrt{\frac{M}{N}} |W\rangle
-
 $$
 
 Here, we define a new angle $\theta'$ such that $\sin \theta' = \sqrt{\frac{M}{N}}$. Under this definition, applying the exact same Grover operator $G$ as in the single-solution case (with the oracle extended to flip the phase of all $M$ solutions) rotates the state vector by $2\theta'$ per iteration within the plane spanned by $|W^\perp\rangle$ and $|W\rangle$.
@@ -2692,9 +2344,7 @@ Here, we define a new angle $\theta'$ such that $\sin \theta' = \sqrt{\frac{M}{N
 Following identical reasoning, the optimal number of iterations is $\frac{\pi}{4\theta'}$, which for $M \ll N$ is approximated by:
 
 $$
-
 R \approx \frac{\pi}{4} \sqrt{\frac{N}{M}}
-
 $$
 
 This formula illustrates that as the number of solutions $M$ increases, the required number of iterations (search time) is naturally reduced. For example, if there are 4 solutions, the required time is cut in half. Even when the number of solutions $M$ is unknown a priori, an advanced technique known as the **quantum counting algorithm**—which combines Grover's algorithm with Quantum Phase Estimation (QPE)—enables us to rapidly estimate the number of solutions $M$ first, and subsequently perform amplitude amplification for the appropriate number of iterations.
@@ -2725,11 +2375,11 @@ To rigorously describe decoherence in quantum systems, it is necessary to shift 
 
 Any quantum channel $\mathcal{E}$ can be expanded using the Kraus representation as follows:
 
-$$
 
+$$
 \mathcal{E}(\rho) = \sum_{k} E_k \rho E_k^\dagger
-
 $$
+
 
 Here, $E_k$ are called Kraus operators, and they satisfy the trace-preserving condition $\sum_k E_k^\dagger E_k = I$, which signifies the conservation of probability.
 
@@ -2739,27 +2389,23 @@ In classical information, the only error on a bit, the unit of information, is a
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} X
-
 $$
+
 
 2. **Phase Flip Channel:** A $Z$ gate acts with probability $p$. It represents the collapse of relative phase (pure decoherence). It is the direct cause of the phenomenon where the off-diagonal elements of the density matrix of a pure state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ decay exponentially.
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{p} Z
-
 $$
+
 
 3. **Depolarizing Channel:** With probability $p$, the state approaches the maximally mixed state (white noise) $I/2$.
    
 
 $$
-
 E_0 = \sqrt{1-p} I, \quad E_1 = \sqrt{\frac{p}{3}} X, \quad E_2 = \sqrt{\frac{p}{3}} Y, \quad E_3 = \sqrt{\frac{p}{3}} Z
-
 $$
 
 The first obstacle encountered in constructing quantum error correction is the "No-Cloning Theorem." There exists no unitary transformation that clones an unknown quantum state $|\psi\rangle$ to create a state such as $|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$. Therefore, the naive classical error correction approach of "copying the same information onto three bits and taking a majority vote" is impossible in quantum systems. Furthermore, measuring a quantum state induces wave function collapse, destroying the superposition. How to identify errors without destroying unknown information is the core challenge.
@@ -2771,11 +2417,11 @@ The alternative to "copying" in quantum information is to entangle multiple qubi
 As the simplest example, we construct the "3-qubit bit flip code" that protects a single-qubit state $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ from probabilistic bit flips.
 We define the logical basis as follows:
 
-$$
 
+$$
 |0\rangle_L = |000\rangle, \quad |1\rangle_L = |111\rangle
-
 $$
+
 
 The logical state becomes $|\psi\rangle_L = \alpha |000\rangle + \beta |111\rangle$. This is not a cloning, but an encoding into a GHZ-type entangled state.
 
@@ -2785,27 +2431,25 @@ To detect this error, one must not measure the state directly. Instead, we perfo
 Any vector $|\psi\rangle_L$ in the original code space is an eigenvector of $Z_1 Z_2$ and $Z_2 Z_3$ with eigenvalue $+1$ (that is, $Z_1 Z_2 |\psi\rangle_L = |\psi\rangle_L$).
 However, for the errored state $|\psi'\rangle$, due to the property of the Pauli algebra that $X$ and $Z$ anticommute ($\{X, Z\} = 0$), we have:
 
-$$
 
+$$
 Z_1 Z_2 |\psi'\rangle = Z_1 Z_2 X_1 |\psi\rangle_L = -X_1 Z_1 Z_2 |\psi\rangle_L = - |\psi'\rangle
-
 $$
 
 $$
-
 Z_2 Z_3 |\psi'\rangle = Z_2 Z_3 X_1 |\psi\rangle_L = X_1 Z_2 Z_3 |\psi\rangle_L = + |\psi'\rangle
-
 $$
+
 
 The measurement result (syndrome) is $(-1, +1)$, which determines only the fact that "an $X$ error occurred on the first qubit." Because no information regarding the superposition coefficients $\alpha, \beta$ is leaked whatsoever, no collapse of the state occurs due to the measurement. Subsequently, by applying $X_1$ again, the state can be completely restored to the original state $|\psi\rangle_L$.
 
 Similarly, to correct a phase flip error $Z$, we use the "3-qubit phase flip code" using the Hadamard basis $\{|+\rangle, |-\rangle\}$:
 
-$$
 
+$$
 |0\rangle_L = |+++\rangle, \quad |1\rangle_L = |---\rangle
-
 $$
+
 
 In this case, $X_1 X_2$ and $X_2 X_3$ are used for the syndrome measurements.
 
@@ -2817,16 +2461,13 @@ The aforementioned codes can only correct either bit flips or phase flips. In 19
 
 The logical basis is given as follows:
 
-$$
 
+$$
 |0\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle ) \otimes ( |000\rangle + |111\rangle )
-
 $$
 
 $$
-
 |1\rangle_L = \frac{1}{2\sqrt{2}} ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle ) \otimes ( |000\rangle - |111\rangle )
-
 $$
 
 The work that generalized error-correcting codes such as the Shor code and provided a robust mathematical foundation is Daniel Gottesman's "Stabilizer Formalism."
@@ -2835,30 +2476,25 @@ Let $\mathcal{P}_n$ be the $n$-qubit Pauli group. The stabilizer group $\mathcal
 In the case of the Shor code ($n=9$), to encode one logical qubit, it is defined by $k=8$ independent generators.
 $Z$-type stabilizers to detect bit flips (6 operators):
 
-$$
 
+$$
 S_1 = Z_1 Z_2 I_3 I_4 I_5 I_6 I_7 I_8 I_9, \quad S_2 = I_1 Z_2 Z_3 I_4 I_5 I_6 I_7 I_8 I_9
-
 $$
 
 $$
-
 \dots, \quad S_6 = I_1 I_2 I_3 I_4 I_5 I_6 I_7 Z_8 Z_9
-
 $$
+
 
 $X$-type stabilizers to detect phase flips (2 operators):
 
-$$
 
+$$
 S_7 = X_1 X_2 X_3 X_4 X_5 X_6 I_7 I_8 I_9
-
 $$
 
 $$
-
 S_8 = I_1 I_2 I_3 X_4 X_5 X_6 X_7 X_8 X_9
-
 $$
 
 If an error $E \in \mathcal{P}_n$ occurs on any qubit and anticommutes with any generator of $\mathcal{S}$, the measurement outcome of that stabilizer becomes $-1$, thereby identifying the type and location of the error. Rather than tracking the quantum state itself, the concept of stabilizers provides an extraordinarily powerful approach—akin to the Heisenberg picture—that tracks the algebraic structure of operators defining the system's symmetries.
@@ -2901,11 +2537,11 @@ Consequently, what has been adopted as the mainstream for modern quantum compute
 In surface codes, qubits are arranged on the vertices (or edges) of a 2D lattice, and stabilizer measurements are performed using only local interactions between adjacent qubits.
 The Hamiltonian is expressed as follows:
 
-$$
 
+$$
 H = - \sum_{v} A_v - \sum_{p} B_p
-
 $$
+
 
 Here, $A_v$ is the tensor product of $X$ operators acting on the four qubits around vertex $v$ (vertex operator: $A_v = \prod_{i \in \text{star}(v)} X_i$), and $B_p$ is the tensor product of $Z$ operators acting on the four qubits around plaquette $p$ (plaquette operator: $B_p = \prod_{i \in \text{boundary}(p)} Z_i$).
 These commute with each other ($[A_v, B_p] = 0$), and the logical state is encoded into the ground state subspace where all eigenvalues of $A_v$ and $B_p$ are $+1$. Remarkably, for the toric code constructed on a 2D manifold of genus $g$, the ground state degeneracy is $4^g$; on a torus ($g=1$), two logical qubits are naturally encoded.
@@ -2955,9 +2591,7 @@ Currently, superconducting qubits are being most vigorously promoted by many res
 A standard micro-fabricated LC resonant circuit (a system consisting of an inductor $ L $ and a capacitor $ C $), when cooled to cryogenic temperatures and quantized, becomes a quantum mechanical harmonic oscillator. Its Hamiltonian can be written as follows using the creation operator $ \hat{a}^\dagger $ and the annihilation operator $ \hat{a} $.
 
 $$
-
 \hat{H}_{\text{LC}} = \hbar \omega_r \left( \hat{a}^\dagger \hat{a} + \frac{1}{2} \right)
-
 $$
 
 Here, $ \omega_r = 1/\sqrt{LC} $ is the resonant frequency. The energy levels of this system $ E_n = \hbar \omega_r (n + 1/2) $ are equally spaced. If the lowest energy state $ |0\rangle $ and the first excited state $ |1\rangle $ of this system are used as a qubit, and we try to perform a gate operation (for example, the transition $ |0\rangle \leftrightarrow |1\rangle $) by irradiating microwaves of frequency $ \omega_r $, the equally spaced transitions $ |1\rangle \leftrightarrow |2\rangle $ and $ |2\rangle \leftrightarrow |3\rangle $ will also be driven simultaneously. This will not function as a two-level system.
@@ -2972,25 +2606,19 @@ The transmon operates in a regime where the parallel shunt capacitance is intent
 The charge operator $ \hat{n} $ representing the number of Cooper pairs and the phase operator $ \hat{\phi} $ representing the superconducting phase difference are canonical conjugate variables, satisfying the commutation relation $ [\hat{\phi}, \hat{n}] = i $. The Hamiltonian of the transmon is exactly described as follows.
 
 $$
-
 \hat{H}_{\text{transmon}} = 4 E_C (\hat{n} - n_g)^2 - E_J \cos \hat{\phi}
-
 $$
 
 Here, $ n_g $ is the offset charge due to the environment or gate voltage. In the limit of $ E_J \gg E_C $, the quantum fluctuations of the phase are kept small, so the cosine term can be Taylor expanded and treated as an anharmonic oscillator.
 
 $$
-
 - E_J \cos \hat{\phi} \approx - E_J + \frac{E_J}{2} \hat{\phi}^2 - \frac{E_J}{24} \hat{\phi}^4 + \mathcal{O}(\hat{\phi}^6)
-
 $$
 
 This $ \hat{\phi}^4 $ term brings anharmonicity to the system. As a calculation result using perturbation theory, the anharmonicity $ \alpha $ between energy levels is approximated as follows.
 
 $$
-
 \alpha \equiv (E_2 - E_1) - (E_1 - E_0) \approx -E_C
-
 $$
 
 Due to this negative anharmonicity (the transition frequency of $ E_1 \to E_2 $ is smaller than that of $ E_0 \to E_1 $), single-qubit gates can be safely executed within the computational basis space of $ |0\rangle $ and $ |1\rangle $ using microwave pulses.
@@ -3001,17 +2629,13 @@ The theoretical framework for reading out the state of a qubit without destroyin
 The coupled system of a qubit and a readout microwave resonator is described by the Jaynes-Cummings model.
 
 $$
-
 \hat{H}_{\text{JC}} = \frac{\hbar \omega_q}{2} \hat{\sigma}_z + \hbar \omega_r \hat{a}^\dagger \hat{a} + \hbar g (\hat{\sigma}_+ \hat{a} + \hat{\sigma}_- \hat{a}^\dagger)
-
 $$
 
 Here, $ g $ is the coupling strength. In the dispersive regime where the qubit transition frequency $ \omega_q $ and the resonator frequency $ \omega_r $ are far apart ($ |\omega_q - \omega_r| \gg g $), the effective Hamiltonian is diagonalized by the Schrieffer-Wolff transformation as follows.
 
 $$
-
 \hat{H}_{\text{disp}} \approx \frac{\hbar \omega_q}{2} \hat{\sigma}_z + \hbar \left( \omega_r + \frac{g^2}{\Delta} \hat{\sigma}_z \right) \hat{a}^\dagger \hat{a}
-
 $$
 
 Here, $ \Delta = \omega_q - \omega_r $. The physical meaning indicated by the second term of this equation is extremely important. The effective frequency of the resonator shifts by $ \pm g^2/\Delta $ depending on the qubit state (whether $ \hat{\sigma}_z = +1 $ or $ -1 $). Therefore, by transmitting or reflecting a probe microwave through the resonator and measuring its phase shift, the state of the qubit can be projectively measured.
@@ -3030,9 +2654,7 @@ In an ion trap, it is impossible to stably confine charged particles in three-di
 The trapped ions are subjected to laser cooling (Doppler cooling and sideband cooling) inside a vacuum chamber. As a result, the kinetic energy of the ions is stripped away down to the quantum mechanical ground state (phonon number $ n=0 $). The computational basis of the qubit is encoded in the internal electronic state of the ion. The Hamiltonian of the internal state is simple.
 
 $$
-
 \hat{H}_{\text{internal}} = \frac{\hbar \omega_0}{2} \hat{\sigma}_z
-
 $$
 
 ### 11.2.2 Lamb-Dicke Regime and the Mathematics of the Mølmer-Sørensen Gate
@@ -3042,17 +2664,13 @@ The true breakthrough of the trapped ion scheme lies in the entanglement generat
 The most standard implementation of a two-qubit gate is the Mølmer-Sørensen (MS) gate. Two colors of laser light, slightly detuned from the phonon mode frequency $ \omega_m $, are simultaneously irradiated onto two ions. In the Lamb-Dicke regime ($ \eta \sqrt{n} \ll 1 $) where the Lamb-Dicke parameter $ \eta = k z_0 $ is sufficiently small, the interaction Hamiltonian can be expanded as follows.
 
 $$
-
 \hat{H}_{\text{int}} \approx \hbar \Omega \sum_{j=1,2} \hat{\sigma}_\phi^{(j)} \left( \eta \hat{a} e^{i \delta t} + \eta \hat{a}^\dagger e^{-i \delta t} \right)
-
 $$
 
 Here, $ \Omega $ is the Rabi frequency and $ \delta $ is the detuning. When calculating the time evolution operator using the Magnus expansion, after an appropriate gate time, the motional modes return to their original states while a geometric phase is imparted between the internal states, leaving an effective spin-spin interaction.
 
 $$
-
 \hat{U}_{\text{MS}} = \exp\left( -i \frac{\pi}{4} \hat{\sigma}_\phi \otimes \hat{\sigma}_\phi \right)
-
 $$
 
 This operation generates a fully entangled state and has equivalent computational power to a CNOT gate. The fact that all-to-all connectivity is possible is a decisive difference from superconducting schemes, which can only couple with adjacent qubits.
@@ -3069,9 +2687,7 @@ Both superconducting and trapped ion schemes are vulnerable to errors caused by 
 In the three-dimensional space where we live, only two types of elementary particles exist: bosons and fermions. However, in two-dimensional topological matter systems, "anyons" can exist, where the wave function acquires an arbitrary phase through particle exchange operations. Furthermore, in the case of peculiar "non-Abelian anyons," exchanging two particles causes the system to undergo a unitary rotation from a degenerate state of the same energy to another orthogonal state.
 
 $$
-
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
-
 $$
 
 The most promising physical candidate for these non-Abelian anyons are "Majorana Zero Modes (MZM)" as quasiparticles in condensed matter physics. A one-dimensional semiconductor nanowire (such as InSb) is given a strong spin-orbit interaction, brought into proximity contact with an s-wave superconductor, and subjected to an external magnetic field. According to the model proposed by Alexei Kitaev, in a specific parameter regime, the nanowire undergoes a phase transition to a topological superconducting phase, and zero-energy Majorana particles are localized as edge states at both ends of the wire.
@@ -3079,9 +2695,7 @@ The most promising physical candidate for these non-Abelian anyons are "Majorana
 The Majorana operators $ \hat{\gamma}_1, \hat{\gamma}_2 $ are self-adjoint ($ \hat{\gamma}_j = \hat{\gamma}_j^\dagger $) and satisfy the anti-commutation relation $ \{ \hat{\gamma}_i, \hat{\gamma}_j \} = 2\delta_{ij} $. The creation and annihilation operators of standard Dirac fermions can be constructed spatially non-locally using these two Majorana operators.
 
 $$
-
 \hat{c} = \frac{1}{2}(\hat{\gamma}_1 + i\hat{\gamma}_2), \quad \hat{c}^\dagger = \frac{1}{2}(\hat{\gamma}_1 - i\hat{\gamma}_2)
-
 $$
 
 This single electronic state (fermion parity) is encoded by being "split" between two spatially separated points at both ends of the nanowire. Since the probability of local noise simultaneously and precisely perturbing both ends of the system in a correlated manner is extremely low, quantum information is intrinsically protected from decoherence (topological protection).
@@ -3150,17 +2764,13 @@ The problem they solved was the "Random Quantum Circuit Sampling" problem. For a
 Let's describe this mathematically. Let the initial state be $ |\psi_0\rangle = |0\rangle^{\otimes n} $. We apply a randomly selected unitary transformation $ U = U_d U_{d-1} \dots U_1 $ to this state. The final state $ |\psi_f\rangle $ is expressed using tensor products and linear combinations as follows:
 
 $$
-
 |\psi_f\rangle = U |0\rangle^{\otimes n} = \sum_{x \in \{0, 1\}^n} \alpha_x |x\rangle
-
 $$
 
 Here, $ \alpha_x = \langle x | U | 0 \rangle^{\otimes n} $ is the probability amplitude of observing a specific bitstring $x$, which is a complex number. At this time, the ideal probability $ P_{\text{ideal}}(x) $ of obtaining the bitstring $x$ by measurement is given by the Born Rule in quantum mechanics as follows:
 
 $$
-
 P_{\text{ideal}}(x) = |\alpha_x|^2 = \left| \langle x | U | 0 \rangle^{\otimes n} \right|^2
-
 $$
 
 In a sufficiently deep (large $d$) random quantum circuit, each amplitude $ \alpha_x $ exhibits random walk-like behavior on the complex plane, and it is known that its probability distribution $ P_{\text{ideal}}(x) $ follows the Porter-Thomas distribution. In other words, the probability density function for the appearance of probability $p$ is $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $. This means that it forms a "speckle pattern" where specific bitstrings are more likely to be observed than others.
@@ -3170,9 +2780,7 @@ To perform exact sampling from this distribution using a classical computer, it 
 To evaluate the success or failure of the experiment, Linear Cross-Entropy Benchmarking (XEB) was introduced. The fidelity $ \mathcal{F}_{\text{XEB}} $ is defined as follows:
 
 $$
-
 \mathcal{F}_{\text{XEB}} = 2^n \sum_{x \in \{0, 1\}^n} P_{\text{ideal}}(x) P_{\text{exp}}(x) - 1
-
 $$
 
 Here, $ P_{\text{exp}}(x) $ is the empirical probability distribution obtained from the actual quantum processor (including hardware noise). If the device outputs completely random noise (a completely mixed state density matrix $ \rho = \frac{I}{2^n} $ ), then $ P_{\text{exp}}(x) = \frac{1}{2^n} $, which yields $ \mathcal{F}_{\text{XEB}} = 0 $. Conversely, for a quantum computer outputting a perfectly noiseless, ideal pure state, $ \mathcal{F}_{\text{XEB}} \approx 1 $. In Google's experiment, a value of $ \mathcal{F}_{\text{XEB}} \approx 0.002 $ was confirmed, which is clearly greater than zero and has statistical significance. Even with this slight fidelity, it was considered a proof of quantum supremacy because generating equivalent samples on a classical computer is extremely difficult from the perspective of computational complexity theory.
@@ -3196,9 +2804,7 @@ In general media reports and popular science books regarding quantum computers, 
 This misconception stems from the fact (quantum parallelism) that through state superposition via Hadamard gates, $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $, the evaluation of a function for all inputs can be performed "in a single operation." Using an oracle (the unitary operator responsible for the computation) ** $U_f$ **, when the computation of function $ f(x) $ is executed on a superposition state, the entire state evolves according to linearity as follows:
 
 $$
-
 U_f \left( \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |0\rangle \right) = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |f(x)\rangle
-
 $$
 
 Indeed, within this state vector, the answers $f(x)$ for all $x$ are encapsulated as a subsystem of probability amplitudes. However, recall the **axiom of measurement** (collapse of the wave function) in quantum mechanics. If a measurement operation is performed on this output register, what we obtain is merely a single pair $ (x, f(x)) $ selected randomly with a probability of $\frac{1}{2^n}$. The remaining $ 2^n - 1 $ pieces of information are permanently lost through an irreversible projective measurement. In other words, there is an insurmountable, desperate gap between "computing in parallel (evolution of state)" and "extracting the specific information we want from the results computed in parallel (readout of state)."
@@ -3212,9 +2818,7 @@ Grover's algorithm quadratically accelerates the database search of unstructured
 Grover's iteration operator ** $G$ ** is defined as the product of the phase inversion operator of the correct state by the oracle $ U_\omega = I - 2|\omega\rangle\langle\omega| $ and the inversion operator about the mean $ U_s = 2|s\rangle\langle s| - I $.
 
 $$
-
 G = U_s U_\omega = (2|s\rangle\langle s| - I)(I - 2|\omega\rangle\langle\omega|)
-
 $$
 
 By applying this unitary operator ** $G$ ** approximately $ \frac{\pi}{4}\sqrt{N} $ times, the state vector rotates towards the target $ |\omega\rangle $, raising the probability of observing the correct answer to almost 1 (100%). However, an extremely important fact here is that this is merely a "square-root speedup," and not an exponential speedup ($ O(2^n) \to O(\text{poly}(n)) $). To date, no pattern of quantum interference has been found that solves general cases of NP-complete problems in polynomial time. Many quantum information scientists and computer scientists strongly believe that ** $\text{BQP} \not\supset \text{NP-Complete}$ ** (quantum computers cannot efficiently solve NP-complete problems) as a foundational conjecture of computational complexity theory.
@@ -3232,22 +2836,17 @@ However, theoretical physics has found an elegant solution to overcome this desp
 In the surface code, "data qubits" that hold quantum information are placed on the edges of a 2D lattice, and "syndrome measurement qubits (ancilla qubits)" for detecting errors are placed on the plaquettes (faces) and vertices of the lattice. Then, stabilizer operator groups consisting of tensor products of Pauli operators are defined as follows:
 
 $$
-
 B_p = \bigotimes_{i \in \partial p} Z_i \quad \text{(Plaquette operator: detects Z errors)}
-
-$$
 $$
 
+$$
 A_v = \bigotimes_{i \in \delta v} X_i \quad \text{(Vertex operator: detects X errors)}
-
 $$
 
 Here, all $ B_p $ and $ A_v $ commute with each other (do not anti-commute), meaning they satisfy the commutation relation $ [B_p, A_v] = 0 $. The "logical state (code space)" ** $|\psi_L\rangle$ ** into which we write information is strictly defined as the subspace spanned by the simultaneous eigenstates where the eigenvalues of all these stabilizer operators are $+1$.
 
 $$
-
 B_p |\psi_L\rangle = +1 |\psi_L\rangle, \quad A_v |\psi_L\rangle = +1 |\psi_L\rangle \quad (\text{for all } p, v)
-
 $$
 
 Suppose an unexpected bit-flip error (Pauli $X$) or phase-flip error (Pauli $Z$) occurs on any physical qubit due to external thermal noise or operational errors. Then, because that error operator has an anti-commutation relation ($ \{X, Z\} = 0 $) with specific adjacent stabilizer operators, the result of measuring that stabilizer (the syndrome value) will flip from $+1$ to $-1$. We continuously track these pairs of locations (defects) that become $-1$ without ever observing or destroying the protected logical state itself (the values of the weight coefficients $\alpha, \beta$). Using classical algorithms such as "Minimum Weight Perfect Matching," we perform maximum likelihood estimation of what kind of error occurred on which path of physical qubits, and we correct it by applying reverse operations either in software or physically.
