@@ -3,6 +3,8 @@ title: 'The Missing Dollar Riddle: Learning Logical Thinking and Accounting Basi
 slug: 'missing-dollar'
 description: 'Three guests pay $30, later $5 is returned, but the waiter pockets $2 and only returns $3. The guests pay $9 each, totaling $27. Adding the waiter''s $2 makes $29. Where did the remaining $1 go? A complete explanation from the perspectives of mathematics, psychology, and accounting.'
 date: '2026-09-10T00:00:00+09:00'
+math: true
+mermaid: true
 image: 'img/missing_dollar.jpg'
 categories:
   - 'Math Paradoxes'

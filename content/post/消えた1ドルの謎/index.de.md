@@ -3,6 +3,8 @@ title: 'Das Rätsel des verschwundenen Dollars: Was wir aus einem kontraintuitiv
 slug: 'missing-dollar'
 description: 'Drei Gäste zahlen 30 Dollar, bekommen später 5 Dollar zurück, aber der Kellner stiehlt 2 Dollar und gibt nur 3 Dollar zurück. Die Gäste zahlen jeweils 9 Dollar, also insgesamt 27 Dollar. Addiert man die 2 Dollar des Kellners, erhält man 29 Dollar. Wo ist der restliche 1 Dollar hin? Eine vollständige Analyse aus den Perspektiven von Mathematik, Psychologie und Buchhaltung.'
 date: '2026-09-10T00:00:00+09:00'
+math: true
+mermaid: true
 image: 'img/missing_dollar.jpg'
 categories:
   - 'Mathematisches Paradoxon'

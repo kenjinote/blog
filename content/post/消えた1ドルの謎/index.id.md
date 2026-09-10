@@ -3,6 +3,8 @@ title: 'Misteri 1 Dolar yang Hilang: Belajar Berpikir Logis dan Dasar Akuntansi 
 slug: 'missing-dollar'
 description: '3 tamu membayar 30 dolar, kemudian dikembalikan 5 dolar, tetapi pelayan menggelapkan 2 dolar dan hanya mengembalikan 3 dolar. Setiap tamu membayar 9 dolar, totalnya 27 dolar. Jika ditambah 2 dolar milik pelayan, menjadi 29 dolar. Ke mana perginya sisa 1 dolar? Penjelasan lengkap dari sudut pandang matematika, psikologi, dan akuntansi.'
 date: '2026-09-10T00:00:00+09:00'
+math: true
+mermaid: true
 image: 'img/missing_dollar.jpg'
 categories:
   - 'Paradoks Matematika'

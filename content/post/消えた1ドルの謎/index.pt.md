@@ -3,6 +3,8 @@ title: 'O Mistério do 1 Dólar Desaparecido: Aprendendo Pensamento Lógico e B�
 slug: 'missing-dollar'
 description: '3 clientes pagam 30 dólares, depois recebem 5 dólares de volta, mas o garçom embolsa 2 dólares e devolve apenas 3 dólares. Os clientes pagam 9 dólares cada, totalizando 27 dólares. Somando os 2 dólares do garçom, temos 29 dólares. Para onde foi o 1 dólar restante? Uma explicação completa sob a perspectiva da matemática, psicologia e contabilidade.'
 date: '2026-09-10T00:00:00+09:00'
+math: true
+mermaid: true
 image: 'img/missing_dollar.jpg'
 categories:
   - 'Paradoxos Matemáticos'

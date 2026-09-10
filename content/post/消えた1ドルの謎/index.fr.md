@@ -3,6 +3,8 @@ title: 'Le mystère du dollar disparu : apprendre les bases de la pensée logiqu
 slug: 'missing-dollar'
 description: '3 clients paient 30 dollars, on leur rend 5 dollars plus tard mais le serveur en empoche 2 et ne rend que 3 dollars. Les clients ont donc payé 9 dollars chacun, soit un total de 27 dollars. En ajoutant les 2 dollars du serveur, on obtient 29 dollars. Où est passé le dollar restant ? Explication complète du point de vue des mathématiques, de la psychologie et de la comptabilité.'
 date: '2026-09-10T00:00:00+09:00'
+math: true
+mermaid: true
 image: 'img/missing_dollar.jpg'
 categories:
   - 'Paradoxe mathématique'

@@ -3,6 +3,8 @@ title: 'El misterio del dólar perdido: Aprender pensamiento lógico y fundament
 slug: 'missing-dollar'
 description: 'Tres clientes pagan 30 dólares, luego se les devuelven 5 dólares, pero el mesero roba 2 dólares y solo devuelve 3 dólares. Los clientes pagaron 9 dólares cada uno, totalizando 27 dólares. Sumando los 2 dólares del mesero da 29 dólares. ¿Dónde quedó el dólar restante? Una explicación completa desde las perspectivas de las matemáticas, la psicología y la contabilidad.'
 date: '2026-09-10T00:00:00+09:00'
+math: true
+mermaid: true
 image: 'img/missing_dollar.jpg'
 categories:
   - 'Paradojas Matemáticas'
