@@ -65,11 +65,11 @@ Cuando escuchan este problema, el proceso mental en el que caen muchas personas 
 
 ```mermaid
 graph TD
-    A[Estado inicial: Los clientes pagan 30 dólares] --> B[Proceso de reembolso: El gerente devuelve 5 dólares]
-    B --> C[Acto deshonesto: El mesero roba 2 dólares]
-    C --> D[Gasto final de los clientes: 9 dólares × 3 personas = 27 dólares]
-    D --> E[Cálculo misterioso: Gasto de los clientes 27 dólares + 2 dólares del mesero = 29 dólares]
-    E --> F[Duda: ¡No coincide con los 30 dólares iniciales! ¡Ha desaparecido 1 dólar!]
+    A["Estado inicial: Los clientes pagan 30 dólares"] --> B["Proceso de reembolso: El gerente devuelve 5 dólares"]
+    B --> C["Acto deshonesto: El mesero roba 2 dólares"]
+    C --> D["Gasto final de los clientes: 9 dólares × 3 personas = 27 dólares"]
+    D --> E["Cálculo misterioso: Gasto de los clientes 27 dólares + 2 dólares del mesero = 29 dólares"]
+    E --> F["Duda: ¡No coincide con los 30 dólares iniciales! ¡Ha desaparecido 1 dólar!"]
     style E fill:#ff9999,stroke:#333,stroke-width:2px
     style F fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
 ```

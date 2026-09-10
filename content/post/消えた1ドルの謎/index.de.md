@@ -65,11 +65,11 @@ Wenn viele Leute dieses Problem hören, fallen sie in folgendes Denkmuster:
 
 ```mermaid
 graph TD
-    A[Anfangszustand: Gäste zahlen 30 Dollar] --> B[Rückerstattung: Manager gibt 5 Dollar zurück]
-    B --> C[Betrug: Rezeptionist stiehlt 2 Dollar]
-    C --> D[Endgültige Belastung der Gäste: 9 Dollar × 3 Personen = 27 Dollar]
-    D --> E[Rätselhafte Berechnung: Belastung der Gäste 27 Dollar + 2 Dollar des Rezeptionisten = 29 Dollar]
-    E --> F[Zweifel: Stimmt nicht mit den anfänglichen 30 Dollar überein! 1 Dollar verschwunden!]
+    A["Anfangszustand: Gäste zahlen 30 Dollar"] --> B["Rückerstattung: Manager gibt 5 Dollar zurück"]
+    B --> C["Betrug: Rezeptionist stiehlt 2 Dollar"]
+    C --> D["Endgültige Belastung der Gäste: 9 Dollar × 3 Personen = 27 Dollar"]
+    D --> E["Rätselhafte Berechnung: Belastung der Gäste 27 Dollar + 2 Dollar des Rezeptionisten = 29 Dollar"]
+    E --> F["Zweifel: Stimmt nicht mit den anfänglichen 30 Dollar überein! 1 Dollar verschwunden!"]
     style E fill:#ff9999,stroke:#333,stroke-width:2px
     style F fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
 ```

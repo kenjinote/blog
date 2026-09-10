@@ -65,11 +65,11 @@ The thought process that many people fall into when hearing this problem is as f
 
 ```mermaid
 graph TD
-    A[Initial State: Guests pay $30] --> B[Refund Process: Manager returns $5]
-    B --> C[Fraud: Clerk steals $2]
-    C --> D[Guests' Final Cost: $9 × 3 people = $27]
-    D --> E[Mysterious Calculation: Guests' cost $27 + Clerk's $2 = $29]
-    E --> F[Question: Doesn't match initial $30! $1 vanished!]
+    A["Initial State: Guests pay $30"] --> B["Refund Process: Manager returns $5"]
+    B --> C["Fraud: Clerk steals $2"]
+    C --> D["Guests' Final Cost: $9 × 3 people = $27"]
+    D --> E["Mysterious Calculation: Guests' cost $27 + Clerk's $2 = $29"]
+    E --> F["Question: Doesn't match initial $30! $1 vanished!"]
     style E fill:#ff9999,stroke:#333,stroke-width:2px
     style F fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
 ```

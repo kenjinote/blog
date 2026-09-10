@@ -65,11 +65,11 @@ Ketika mendengar masalah ini, alur pemikiran yang dialami kebanyakan orang adala
 
 ```mermaid
 graph TD
-    A[Kondisi awal: Tamu membayar 30 dolar] --> B[Proses pengembalian dana: Manajer mengembalikan 5 dolar]
-    B --> C[Tindakan curang: Pelayan mencuri 2 dolar]
-    C --> D[Beban akhir tamu: 9 dolar × 3 orang = 27 dolar]
-    D --> E[Perhitungan misterius: Beban tamu 27 dolar + 2 dolar pelayan = 29 dolar]
-    E --> F[Pertanyaan: Tidak sesuai dengan 30 dolar awal! 1 dolar lenyap!]
+    A["Kondisi awal: Tamu membayar 30 dolar"] --> B["Proses pengembalian dana: Manajer mengembalikan 5 dolar"]
+    B --> C["Tindakan curang: Pelayan mencuri 2 dolar"]
+    C --> D["Beban akhir tamu: 9 dolar × 3 orang = 27 dolar"]
+    D --> E["Perhitungan misterius: Beban tamu 27 dolar + 2 dolar pelayan = 29 dolar"]
+    E --> F["Pertanyaan: Tidak sesuai dengan 30 dolar awal! 1 dolar lenyap!"]
     style E fill:#ff9999,stroke:#333,stroke-width:2px
     style F fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
 ```

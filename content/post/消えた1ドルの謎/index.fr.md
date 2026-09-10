@@ -65,11 +65,11 @@ Lorsque la plupart des gens entendent ce problème, leur processus de réflexion
 
 ```mermaid
 graph TD
-    A[État initial : les clients paient 30$] --> B[Remboursement : le gérant rend 5$]
-    B --> C[Fraude : le serveur vole 2$]
-    C --> D[Charge finale des clients : 9$ × 3 = 27$]
-    D --> E[Calcul mystère : Charge des clients 27$ + 2$ du serveur = 29$]
-    E --> F[Doute : Ne correspond pas aux 30$ initiaux ! Disparition de 1$ !]
+    A["État initial : les clients paient 30$"] --> B["Remboursement : le gérant rend 5$"]
+    B --> C["Fraude : le serveur vole 2$"]
+    C --> D["Charge finale des clients : 9$ × 3 = 27$"]
+    D --> E["Calcul mystère : Charge des clients 27$ + 2$ du serveur = 29$"]
+    E --> F["Doute : Ne correspond pas aux 30$ initiaux ! Disparition de 1$ !"]
     style E fill:#ff9999,stroke:#333,stroke-width:2px
     style F fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
 ```
