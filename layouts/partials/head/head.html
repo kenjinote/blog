@@ -13,11 +13,11 @@
 {{- range .AllTranslations -}}
     <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
 {{- end -}}
-{{- if eq .Language.Lang site.DefaultContentLanguage -}}
+{{- if eq .Language.Lang "ja" -}}
     <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
 {{- else if .IsTranslated -}}
     {{- range .Translations -}}
-        {{- if eq .Language.Lang site.DefaultContentLanguage -}}
+        {{- if eq .Language.Lang "ja" -}}
             <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
         {{- end -}}
     {{- end -}}
