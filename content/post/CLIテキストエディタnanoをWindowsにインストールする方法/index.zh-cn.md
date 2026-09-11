@@ -1,4 +1,4 @@
-﻿---
+---
 title: '在Windows上安装CLI文本编辑器nano及设置环境变量的方法'
 slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00

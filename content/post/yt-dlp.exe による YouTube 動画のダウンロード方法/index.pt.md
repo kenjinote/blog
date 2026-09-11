@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Como usar o yt-dlp: Como baixar e salvar vídeos e áudios do YouTube'
 slug: "yt-dlp.exe による YouTube 動画のダウンロード方法"
 date: 2024-09-03T14:09:26+09:00

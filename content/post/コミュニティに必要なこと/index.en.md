@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What Makes a Good Community? Management Hints Learned from Scratch''s Guidelines'
 slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[PQC] La menace des ordinateurs quantiques et le panorama complet de la cryptographie post-quantique de nouvelle génération'
 slug: "post-quantum-cryptography"
 tags: ["Technologie de chiffrement", "PQC", "Sécurité", "Technologie de nouvelle génération"]

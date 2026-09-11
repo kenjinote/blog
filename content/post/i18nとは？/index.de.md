@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Was ist i18n (Internationalisierung)? Bedeutung und unterstützte Aspekte in der Softwareentwicklung'
 slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00

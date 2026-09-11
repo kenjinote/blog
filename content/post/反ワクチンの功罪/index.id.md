@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Manfaat dan Kerugian Anti-Vaksin Serta Pelajaran Epidemiologi: Apa itu ''Ilusi Kausal'' yang Terungkap Akibat Pandemi Corona'
 slug: "反ワクチンの功罪"
 date: 2026-01-24T15:41:23+09:00

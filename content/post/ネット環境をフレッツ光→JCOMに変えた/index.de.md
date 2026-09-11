@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Das Ergebnis des Wechsels von Flet''s Hikari zu J:COM! Reale Eindrücke von Preisen und Kommunikationsgeschwindigkeiten'
 slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00

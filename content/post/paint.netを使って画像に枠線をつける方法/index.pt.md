@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Método e passos simples para adicionar bordas a imagens com o paint.net'
 slug: "paint.netを使って画像に枠線をつける方法"
 date: 2023-04-11T14:31:59+09:00

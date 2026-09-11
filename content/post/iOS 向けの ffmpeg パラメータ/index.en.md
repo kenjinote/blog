@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Optimized for iOS! ffmpeg Conversion Parameters for Smooth Video Playback'
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00

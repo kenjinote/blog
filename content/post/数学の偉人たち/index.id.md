@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Matematikawan Hebat yang Mengubah Sejarah: Dari Pythagoras, Archimedes hingga Euclid'
 slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Use wxWidgets: From Installation to Creating a Sample Project'
 slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00

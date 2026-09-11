@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'History of Mathematics and Ancient Difficult Problems: Learning the Three Classical Problems of Antiquity and the Archimedean Spiral'
 slug: "数学の歴史"
 date: 2023-07-22T15:25:10+09:00

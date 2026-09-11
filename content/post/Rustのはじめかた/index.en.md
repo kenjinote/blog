@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Rust Language Introduction: Getting Started from Features to Installation and Hello World'
 slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00

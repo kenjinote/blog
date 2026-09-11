@@ -1,4 +1,4 @@
-﻿---
+---
 title: '6 medidas para não cair em teorias da conspiração | Vamos aumentar a segurança da mente'
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00

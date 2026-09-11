@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'List of Built-in Shortcodes in Hugo: YouTube and Twitter Embedding'
 slug: "HUGOで使えるショートコード"
 date: 2022-09-11T22:59:52+09:00

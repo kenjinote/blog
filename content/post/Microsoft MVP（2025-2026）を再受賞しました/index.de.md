@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Bericht über die erneute Auszeichnung als Microsoft MVP (2025-2026) und meine bisherigen Aktivitäten'
 slug: "Microsoft MVP（2025-2026）を再受賞しました"
 date: 2025-07-13T22:01:15+09:00

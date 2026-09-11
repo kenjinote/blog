@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Apa Artinya ''Memahami''? Tentang Ambiguitas Pemahaman dan Nilainya'
 slug: "わかるってなんだろう？"
 date: 2022-09-24T02:38:18+09:00

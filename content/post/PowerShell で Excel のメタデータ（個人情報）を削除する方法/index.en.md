@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Batch Delete Metadata (Personal Information) in Excel and Word with PowerShell'
 slug: "PowerShell で Excel のメタデータ（個人情報）を削除する方法"
 date: 2025-07-30T02:42:40+09:00

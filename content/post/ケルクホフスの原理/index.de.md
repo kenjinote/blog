@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Was ist das Kerckhoffssche Prinzip? Eine verständliche Erklärung des wichtigen Konzepts, das die Sicherheit kryptografischer Techniken unterstützt'
 slug: "ケルクホフスの原理"
 date: 2025-04-16T23:53:08+09:00

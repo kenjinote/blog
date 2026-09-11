@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Für Anfänger: Empfohlene Pflegeprodukte und Pflegemethoden für Lederwaren'
 slug: "革製品のメンテナンス"
 date: 2024-10-30T00:31:46+09:00

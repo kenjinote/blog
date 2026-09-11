@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'O que é o Desafio ''FizzBuzz''? Uma Introdução à Programação e Como Codificar em Python'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00

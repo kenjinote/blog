@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Boost Work Efficiency] List of Useful Shortcut Keys in Microsoft Word'
 slug: "Microsoft Wordのショートカット一覧"
 date: 2024-04-07T14:18:51+09:00

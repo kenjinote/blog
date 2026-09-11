@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'O segredo para desfrutar de Splatoon 2 por muito tempo! Armas recomendadas e dicas de como se mover'
 slug: "スプラトゥーン2"
 date: 2023-08-01T00:26:30+09:00

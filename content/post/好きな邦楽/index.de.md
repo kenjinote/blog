@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Zusammenfassung empfohlener japanischer Meisterwerke: Herzergreifende, nostalgische J-POP- und Klassik-Songs'
 slug: "好きな邦楽"
 date: 2024-01-06T04:11:01+09:00

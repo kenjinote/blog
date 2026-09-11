@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'LoadIcon फ़ंक्शन के साथ प्राप्त आइकन को DestroyIcon की आवश्यकता क्यों नहीं है'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00

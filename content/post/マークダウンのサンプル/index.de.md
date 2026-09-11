@@ -1,4 +1,4 @@
-﻿---
+---
 author: "Hugo Authors"
 title: 'Beispiele für Markdown-Syntax in Hugo: Grundlegende Syntax für Überschriften, Absätze usw.'
 slug: "マークダウンのサンプル"

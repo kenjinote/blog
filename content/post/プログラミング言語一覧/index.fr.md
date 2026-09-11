@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Des majeurs aux mineurs ! Liste des langages de programmation et résumé de leurs caractéristiques'
 slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Windows自带“截图工具”的使用及录屏、截图方法'
 slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00

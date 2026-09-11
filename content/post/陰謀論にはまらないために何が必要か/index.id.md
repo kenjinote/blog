@@ -1,4 +1,4 @@
-﻿---
+---
 title: '6 Penanggulangan untuk Mencegah Terperangkap dalam Teori Konspirasi | Mari Tingkatkan Keamanan Pikiran'
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00

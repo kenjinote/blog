@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What is the Programming Gateway ''FizzBuzz Problem''? Explaining How to Write it in Python'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00

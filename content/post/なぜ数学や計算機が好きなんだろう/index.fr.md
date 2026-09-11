@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Pourquoi j''aime les mathématiques et les ordinateurs ? Réflexions sur leur attrait et les raisons de mon attirance'
 slug: "なぜ数学や計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00

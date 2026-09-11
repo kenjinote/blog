@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Breaking RSA Encryption? Thorough Mathematical Explanation of GNFS and Shor''s Algorithm'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Einführung in Mathematica: Verwendung grundlegender Befehle für Gleichungen, Differential- und Integralrechnung usw.'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00

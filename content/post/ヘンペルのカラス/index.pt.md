@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Ver uma maçã azul prova que 'corvos são negros'?: Os Corvos de Hempel"
 description: "É possível provar a hipótese 'corvos são negros' sem ver um único corvo? O paradoxo da indução criado pela equivalência lógica."
 date: 2026-09-10T21:00:00+09:00

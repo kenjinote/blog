@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Windows 11] Solusi Bug Pengaturan DPI yang Direset Saat Boot di Multi-Monitor'
 slug: "マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法"
 date: 2024-04-29T19:42:20+09:00

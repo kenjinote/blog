@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Full Text and Commentary of Akiko Yosano''s ''Kimi Shinitamou Koto Nakare'': Feelings for a Brother in an Anti-War Poem'
 slug: "『君死にたまふことなかれ』"
 date: 2024-07-25T13:16:47+09:00

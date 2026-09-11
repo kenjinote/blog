@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Jangan Menyerah pada Kritik! Tips Hidup Kuat Belajar dari Kutipan Einstein'
 slug: "アインシュタインの名言"
 date: 2024-08-24T18:38:47+09:00

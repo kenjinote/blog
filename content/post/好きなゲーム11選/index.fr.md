@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Incontournable pour les joueurs rétro ! 11 chefs-d''œuvre recommandés sur la première Game Boy et la Super Famicom'
 slug: "好きなゲーム11選"
 date: 2022-09-12T19:28:50+09:00

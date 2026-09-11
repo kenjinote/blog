@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Records of Natural Disasters in Japan: The 2024 Noto Peninsula Earthquake and Damage Situation'
 slug: "日本の災害"
 date: 2024-01-07T00:50:09+09:00

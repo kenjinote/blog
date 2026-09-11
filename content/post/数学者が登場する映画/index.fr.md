@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Un génie des mathématiques comme héros ! Films recommandés et histoires de décryptage'
 slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00

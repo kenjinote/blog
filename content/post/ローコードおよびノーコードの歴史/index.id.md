@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Sejarah Pengembangan Low-Code dan No-Code (Tahun 1980-an hingga Sekarang) | Dari HyperCard Hingga Alat Terbaru'
 slug: "ローコードおよびノーコードの歴史"
 date: 2025-04-26T16:46:11+09:00

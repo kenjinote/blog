@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Cakupan Lengkap] Penjelasan Menyeluruh dan Mudah Dipahami tentang ''Eksperimen Celah Ganda'', Misteri Terbesar Mekanika Kuantum'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"

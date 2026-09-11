@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Will Quantum Computers Break RSA Encryption? Explaining Shor''s Algorithm'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Quantum Computer", "Cryptanalysis", "Shor's Algorithm", "RSA"]

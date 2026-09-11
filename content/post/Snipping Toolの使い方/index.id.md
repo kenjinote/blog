@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Menggunakan ''Snipping Tool'' Bawaan Windows Serta Metode Perekaman Layar dan Tangkapan Layar'
 slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00

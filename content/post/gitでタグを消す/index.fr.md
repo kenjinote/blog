@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Comment supprimer les balises locales et distantes dans Git'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00

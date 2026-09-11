@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Por que o desenvolvimento do LED azul foi quase impossível? Aproximando-se desse mistério'
 slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
 date: 2024-09-15T00:43:52+09:00

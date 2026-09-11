@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Imperdível! Minha lista pessoal de tarefas de filmes para assistir e registro de obras recomendadas já assistidas'
 slug: "映画TODOリスト"
 date: 2023-04-17T00:34:13+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '【स्वचालन】C++ से Teams में संदेश पोस्ट करना! Graph API और WinHTTP के लिए कार्यान्वयन प्रक्रिया'
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00

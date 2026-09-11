@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Comment récupérer uniquement le dernier commit d''un dépôt avec Git clone'
 slug: "gitリポジトリの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00

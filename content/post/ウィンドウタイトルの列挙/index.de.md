@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'So listen und rufen Sie die Titel der aktuell geöffneten Fenster mit PowerShell ab'
 slug: "ウィンドウタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00

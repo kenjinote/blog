@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Ao voltar do espaço, o irmão mais novo está mais velho do que você?: O Paradoxo dos Gêmeos"
 description: "A «dilatação do tempo» prevista pela teoria da relatividade de Einstein. Uma explicação do paradoxo em que a idade de um irmão gêmeo que viaja num foguete quase à velocidade da luz e a do outro que fica na Terra se invertem."
 date: 2026-09-10T21:00:00+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Um mistério de 400 anos! O que é a Conjectura de Kepler? Uma explicação fácil de entender do romance matemático aprendido sobre como embalar melancias'
 slug: "ケプラー予想をわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00

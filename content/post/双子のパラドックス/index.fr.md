@@ -1,4 +1,4 @@
-﻿---
+---
 title: "De l'espace à la Terre : votre petit frère devient plus vieux que vous ? Le paradoxe des jumeaux"
 description: "La « dilatation du temps » prédite par la théorie de la relativité d'Einstein. Explication du paradoxe où l'âge du frère aîné, voyageant dans une fusée proche de la vitesse de la lumière, et du frère cadet resté sur Terre, s'inverse."
 date: 2026-09-10T21:00:00+09:00

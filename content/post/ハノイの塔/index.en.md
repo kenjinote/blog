@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Python Beginner''s Guide] Solving ''Tower of Hanoi'' with Recursive Processing Algorithm Explanation'
 slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00

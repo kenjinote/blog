@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Comment installer et gérer facilement des applications avec la commande WinGet sur Windows 11'
 slug: "WinGet を使ってコマンドでアプリをインストールする"
 date: 2022-10-05T12:15:20+09:00

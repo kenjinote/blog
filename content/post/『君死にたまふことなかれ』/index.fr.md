@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Texte intégral et explication de ''Ne donne pas ta vie'' d''Akiko Yosano : Les pensées pour son frère intégrées dans ce poème anti-guerre'
 slug: "『君死にたまふことなかれ』"
 date: 2024-07-25T13:16:47+09:00

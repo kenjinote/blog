@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Implementação do General Number Field Sieve (GNFS) em C++ | Como Funciona o Algoritmo de Quebra do RSA'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00

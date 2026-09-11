@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Implementierung des Allgemeinen Zahlkörpersiebs (GNFS) in C++ | Die Mechanismen des RSA-Entschlüsselungsalgorithmus'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00

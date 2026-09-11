@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Wie hat sich der Umfang der Software verändert? Die Geschichte und Entwicklung von Quellcode-Zeilen'
 slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00

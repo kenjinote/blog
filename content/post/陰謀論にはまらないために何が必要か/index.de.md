@@ -1,4 +1,4 @@
-﻿---
+---
 title: '6 Maßnahmen, um nicht in Verschwörungstheorien zu verfallen | Lassen Sie uns die geistige Sicherheit erhöhen'
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00

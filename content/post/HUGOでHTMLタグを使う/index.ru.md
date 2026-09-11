@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Как включить HTML-теги в Hugo (настройки config.toml)'
 slug: "HUGOでHTMLタグを使う"
 date: 2023-01-17T19:20:32+09:00

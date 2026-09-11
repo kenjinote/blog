@@ -1,4 +1,4 @@
-﻿---
+---
 title: '透過LoadIcon函數取得的圖示不需要DestroyIcon的理由'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00

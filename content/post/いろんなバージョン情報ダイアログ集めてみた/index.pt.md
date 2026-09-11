@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Coletei telas de diálogo de informações de versão de vários softwares'
 slug: "いろんなバージョン情報ダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Pengantar Python] Penjelasan Algoritma ''Menara Hanoi'' yang Diselesaikan dengan Pemrosesan Rekursif'
 slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '【Für Anfänger】Einführung in Vim: Von der Installation über das grundlegende Starten und Beenden bis hin zur Erklärung der Modi'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00

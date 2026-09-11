@@ -1,4 +1,4 @@
-﻿---
+---
 title: '以C++實作普通數域篩法（GNFS）｜RSA密碼破解演算法原理'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00

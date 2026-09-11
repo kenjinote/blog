@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Pengumuman Pencarian Sponsor GitHub | Permintaan Dukungan Pengembangan'
 slug: "GitHubスポンサー募集"
 date: 2023-01-17T18:13:56+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Quando as palavras descrevem a si mesmas: O Paradoxo de Grelling-Nelson"
 description: "Desvendando o profundo labirinto da lógica e semântica criado pela classificação entre palavras 'autológicas' e 'heterológicas'."
 date: 2026-09-10T21:00:00+09:00

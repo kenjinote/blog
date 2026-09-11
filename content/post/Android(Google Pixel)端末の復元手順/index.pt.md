@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Correção de Bootloop] Passo a Passo Oficial para Restauração e Inicialização de Software no Google Pixel'
 slug: "Android(Google Pixel)端末の復元手順"
 date: 2025-02-28T01:20:41+09:00

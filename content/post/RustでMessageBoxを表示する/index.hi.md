@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Rust और winapi का उपयोग करके Windows संदेश बॉक्स (MessageBox) कैसे प्रदर्शित करें'
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Salesforce：使用SOQL获取每日记录创建数量的方法'
 slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'A Collection of Version Information Dialog Screens from Various Software'
 slug: "いろんなバージョン情報ダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00

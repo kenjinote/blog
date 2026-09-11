@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Truly Useful! A Carefully Selected Compilation of Recommended iOS Apps'
 slug: "おすすめiOSアプリ"
 date: 2024-09-18T23:31:20+09:00

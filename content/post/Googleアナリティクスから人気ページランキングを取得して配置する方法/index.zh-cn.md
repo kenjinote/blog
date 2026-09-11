@@ -1,4 +1,4 @@
-﻿---
+---
 title: '使用Ranklet显示Google Analytics热门文章排行榜的方法'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00

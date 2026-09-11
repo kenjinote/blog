@@ -1,4 +1,4 @@
-﻿---
+---
 
 
 title: 'Cómo eliminar etiquetas (tags) locales y remotas en Git'

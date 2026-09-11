@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Ideal zum Entspannen: Eine Playlist mit empfehlenswertem, ruhigem Jazz'
 slug: "落ち着いたジャズ"
 date: 2022-09-08T17:40:26+09:00

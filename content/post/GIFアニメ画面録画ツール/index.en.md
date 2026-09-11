@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Easy! How to Use and Download a GIF Animation Screen Recording Tool'
 slug: "GIFアニメ画面録画ツール"
 date: 2024-02-08T01:23:01+09:00

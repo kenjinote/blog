@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Membangun Jalan Baru Malah Memperparah Kemacetan?: Paradoks Braess"
 description: "Sebuah paradoks aneh dalam teori jaringan di mana membangun jalan pintas baru untuk mengatasi kemacetan lalu lintas justru mengakibatkan waktu komuter semua orang menjadi lebih lama."
 date: 2026-09-10T21:00:00+09:00

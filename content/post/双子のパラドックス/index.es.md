@@ -1,4 +1,4 @@
-﻿---
+---
 title: "¿Volver del espacio y tu hermano menor es mayor que tú?: La paradoja de los gemelos"
 description: "La 'dilatación del tiempo' predicha por la teoría de la relatividad de Einstein. Explicamos la paradoja en la que se invierten las edades del gemelo que viaja en un cohete cercano a la velocidad de la luz y del hermano que se queda en la Tierra."
 date: 2026-09-10T21:00:00+09:00

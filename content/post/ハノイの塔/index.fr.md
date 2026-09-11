@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Introduction à Python] Explication de l''algorithme des ''Tours de Hanoï'' résolu par traitement récursif'
 slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00

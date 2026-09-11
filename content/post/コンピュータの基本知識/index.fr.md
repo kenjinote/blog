@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Quels sont les 5 principaux composants d''un ordinateur ? Connaissances de base sur le matériel et les logiciels pour les débutants en informatique'
 slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00

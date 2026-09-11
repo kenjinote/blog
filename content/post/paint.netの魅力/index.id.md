@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Gratis dan Berfitur Lengkap! Fitur dan Daya Tarik Perangkat Lunak Pengedit Gambar ''paint.net'''
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00

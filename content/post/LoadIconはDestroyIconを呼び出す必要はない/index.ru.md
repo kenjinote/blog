@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Почему для иконок, полученных функцией LoadIcon, не требуется вызов DestroyIcon'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00

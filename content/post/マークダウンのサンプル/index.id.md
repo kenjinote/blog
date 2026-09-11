@@ -1,4 +1,4 @@
-﻿---
+---
 author: "Hugo Authors"
 title: 'Contoh Sintaks Markdown yang Bisa Digunakan di Hugo: Sintaks Dasar untuk Judul, Paragraf, dll.'
 slug: "マークダウンのサンプル"

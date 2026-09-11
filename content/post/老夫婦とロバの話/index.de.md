@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Lernen aus der Geschichte des alten Paares und des Esels: Wie man lebt, ohne sich von den Meinungen anderer beeinflussen zu lassen'
 slug: "老夫婦とロバの話"
 date: 2024-09-18T00:56:59+09:00

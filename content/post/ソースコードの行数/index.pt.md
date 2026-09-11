@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Como a escala do software mudou? A história e a evolução das linhas de código-fonte'
 slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00

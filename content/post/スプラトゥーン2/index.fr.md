@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Le secret pour profiter longtemps de Splatoon 2 ! Armes recommandées et astuces de positionnement'
 slug: "スプラトゥーン2"
 date: 2023-08-01T00:26:30+09:00

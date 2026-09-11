@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'A história da matemática e os difíceis problemas antigos: Aprendendo sobre os três problemas clássicos de construção e a espiral de Arquimedes'
 slug: "数学の歴史"
 date: 2023-07-22T15:25:10+09:00

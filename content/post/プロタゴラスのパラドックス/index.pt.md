@@ -1,4 +1,4 @@
-﻿---
+---
 title: "O Mestre e o Discípulo, um Julgamento Contraditório Independente do Vencedor: O Paradoxo de Protágoras"
 description: "Uma disputa judicial entre mestre e discípulo sobre as condições de pagamento das mensalidades. Um paradoxo jurídico da Grécia Antiga onde a lógica entra em contradição independentemente de quem vença ou perca."
 date: 2026-09-10T21:00:00+09:00

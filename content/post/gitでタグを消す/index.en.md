@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Delete Local and Remote Tags in Git'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00

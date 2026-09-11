@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Mengubah Pintasan Copy-Paste di Mac agar Sama dengan Pengaturan Windows'
 slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00

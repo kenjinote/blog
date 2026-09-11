@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Comandos de Terminal para Desativar e Parar a Geração Automática de .DS_Store no macOS'
 slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00

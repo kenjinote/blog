@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Was ist ein Quantencomputer? Die ultimativen Berechnungsprinzipien wie Superposition und Quantenverschränkung von Grund auf erklärt'
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00

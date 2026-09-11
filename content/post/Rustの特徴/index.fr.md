@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Quelles sont les 5 principales caractéristiques du langage de programmation Rust ?'
 slug: "Rustの特徴"
 date: 2022-10-03T22:47:20+09:00

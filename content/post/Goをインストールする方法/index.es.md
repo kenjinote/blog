@@ -1,4 +1,4 @@
-﻿---
+---
 
 
 title: 'Pasos de instalación de Go (Golang) y cómo ejecutar tu primer programa'

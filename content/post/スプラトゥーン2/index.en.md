@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Secrets to Enjoying Splatoon 2 for a Long Time! Recommended Weapons and Positioning Tips'
 slug: "スプラトゥーン2"
 date: 2023-08-01T00:26:30+09:00

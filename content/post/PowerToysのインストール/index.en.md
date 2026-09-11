@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Install and Uninstall PowerToys Using the winget Command'
 slug: "PowerToysのインストール"
 date: 2023-09-30T21:23:00+09:00

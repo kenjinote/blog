@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Vollständige Version] Vorlage für die Erstellung von Blogartikeln! SEO-freundliche Überschriftenstruktur und Tipps zum Schreiben'
 slug: "000_テンプレート"
 date: 2022-01-01T00:00:00+09:00

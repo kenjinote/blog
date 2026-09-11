@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Nanakusa Musim Semi] Resep Bubur Nanakusa untuk Mengharapkan Kesehatan dan Keselamatan, Serta Cara Menghafal dan Makna Nanakusa'
 slug: "七草粥のレシピ"
 date: 2024-01-06T22:22:00+09:00

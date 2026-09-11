@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Menampilkan Kotak Pesan (MessageBox) Windows Menggunakan Rust dan winapi'
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00

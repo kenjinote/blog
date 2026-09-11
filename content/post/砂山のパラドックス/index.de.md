@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Wann hört ein Sandhaufen auf, ein Sandhaufen zu sein, wenn man ein Sandkorn entfernt? Das Sorites-Paradoxon"
 description: "Wo liegt die Grenze zwischen einem 'Sandhaufen' und 'keinem Sandhaufen'? Ein philosophisches Paradoxon seit dem antiken Griechenland, das sich dem Wesen der Vagheit stellt."
 date: 2026-09-10T21:00:00+09:00

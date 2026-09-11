@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Reasons for Purchasing a Used Mac mini (2018) for iOS App Development and Its Specs'
 slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00

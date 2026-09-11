@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What Does It Mean to ''Understand''? On the Ambiguity of Understanding and Its Value'
 slug: "わかるってなんだろう？"
 date: 2022-09-24T02:38:18+09:00

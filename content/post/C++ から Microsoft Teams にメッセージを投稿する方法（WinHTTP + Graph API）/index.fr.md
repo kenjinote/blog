@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Automatisation] Publication de messages sur Teams depuis C++ ! Étapes d''implémentation de Graph API et WinHTTP'
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00

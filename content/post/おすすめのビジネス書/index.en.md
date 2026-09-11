@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Life-Changing! A Summary of Masterpieces and Recommended Business Books You Absolutely Must Read'
 slug: "おすすめのビジネス書"
 date: 2023-03-19T18:13:14+09:00

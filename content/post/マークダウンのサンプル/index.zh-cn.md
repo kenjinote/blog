@@ -1,4 +1,4 @@
-﻿---
+---
 author: "Hugo Authors"
 title: 'Hugo可用的Markdown语法示例：标题、段落等基本语法'
 slug: "マークダウンのサンプル"

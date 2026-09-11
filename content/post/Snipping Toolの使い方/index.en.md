@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Use the Standard Windows ''Snipping Tool'' and Methods for Screen Recording and Capture'
 slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '【自動化】從C++發送訊息到Teams！Graph API與WinHTTP的實作步驟'
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00

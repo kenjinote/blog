@@ -1,4 +1,4 @@
-﻿---
+---
 title: "¿Cuándo deja de ser un montón de arena al quitar un grano?: La paradoja del montón"
 description: "¿Dónde está el límite entre un 'montón de arena' y lo que no lo es? Una paradoja filosófica que desafía la esencia de la ambigüedad, desde la antigua Grecia."
 date: 2026-09-10T21:00:00+09:00

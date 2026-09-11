@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Optimasi Tanda Wajib di Formulir Input | Praktik Terbaik yang Dipelajari dari Pedoman UI Luar Negeri'
 slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00

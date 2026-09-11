@@ -1,4 +1,4 @@
-﻿---
+---
 title: '使用 PowerShell 批次刪除 .DS_Store 檔案的簡單指令'
 slug: "PowerShellで.DS_Storeを一括削除する"
 date: 2022-09-12T10:11:42+09:00

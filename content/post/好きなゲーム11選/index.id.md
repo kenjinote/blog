@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Wajib Dilihat oleh Retro Gamer! 11 Rekomendasi Game Masterpiece untuk Game Boy Orisinal dan Super Famicom'
 slug: "好きなゲーム11選"
 date: 2022-09-12T19:28:50+09:00

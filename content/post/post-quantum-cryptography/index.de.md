@@ -1,4 +1,4 @@
-﻿---
+---
 title: '【PQC】Die Bedrohung durch Quantencomputer und das Gesamtbild der Post-Quanten-Kryptographie der nächsten Generation'
 slug: "post-quantum-cryptography"
 tags: ["Kryptographie", "PQC", "Sicherheit", "Technologie der nächsten Generation"]

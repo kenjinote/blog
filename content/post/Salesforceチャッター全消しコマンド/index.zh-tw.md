@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Salesforce：完全刪除 Chatter 貼文與附件的指令'
 slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00

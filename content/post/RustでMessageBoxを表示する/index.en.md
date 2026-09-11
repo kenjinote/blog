@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Display a Windows Message Box (MessageBox) Using Rust and winapi'
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00

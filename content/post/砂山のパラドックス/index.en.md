@@ -1,4 +1,4 @@
-﻿---
+---
 title: "When Does a Heap of Sand Stop Being a Heap? The Sorites Paradox"
 description: "Where is the boundary between a 'heap' and 'not a heap'? A philosophical paradox from ancient Greece that challenges the very nature of vagueness."
 date: 2026-09-10T21:00:00+09:00

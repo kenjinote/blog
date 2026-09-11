@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'O que é a ''Navalha de Hanlon'', um método de pensamento que facilita as relações humanas? Explicando seu significado e origem'
 slug: "ハンロンの剃刀"
 date: 2024-09-24T18:14:34+09:00

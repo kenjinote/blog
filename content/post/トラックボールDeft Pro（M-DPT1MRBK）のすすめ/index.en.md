@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Elecom Deft Pro Review! Pros and Cons of an 8-Button Trackball Mouse'
 slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00

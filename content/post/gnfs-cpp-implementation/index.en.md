@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Implementing General Number Field Sieve (GNFS) in C++ | Mechanism of RSA Cryptanalysis Algorithm'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00

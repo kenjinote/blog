@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Exemple de code Python pour télécharger, enregistrer temporairement et afficher une image'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00

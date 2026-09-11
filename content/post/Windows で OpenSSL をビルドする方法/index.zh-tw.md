@@ -1,4 +1,4 @@
-﻿---
+---
 title: '在 Windows 環境下編譯與安裝 OpenSSL 的步驟與環境建置方法'
 slug: "Windows で OpenSSL をビルドする方法"
 date: 2023-04-07T21:06:32+09:00

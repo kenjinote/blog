@@ -1,4 +1,4 @@
-﻿---
+---
 title: '15 Must-Read Books Recommended for Beginner Engineers! From Programming Basics to Design'
 slug: "エンジニア初学者におすすめの書籍"
 date: 2024-05-05T16:03:33+09:00

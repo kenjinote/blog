@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Spring Seven Herbs] Recipe for Nanakusa-gayu for Good Health and Meaning/How to Remember the Seven Herbs'
 slug: "七草粥のレシピ"
 date: 2024-01-06T22:22:00+09:00

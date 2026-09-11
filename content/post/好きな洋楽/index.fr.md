@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Résumé des chefs-d''œuvre recommandés de la musique occidentale : Des tubes classiques aimés à travers les époques'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00

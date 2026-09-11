@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Optimisation de la marque « obligatoire » des formulaires de saisie | Les meilleures pratiques des directives UI internationales'
 slug: "入力フォームの必須マークについて"
 date: 2025-07-14T13:47:51+09:00

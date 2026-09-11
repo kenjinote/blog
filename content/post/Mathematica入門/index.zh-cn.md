@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Mathematica入门：方程、微积分等基本命令的使用方法'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00

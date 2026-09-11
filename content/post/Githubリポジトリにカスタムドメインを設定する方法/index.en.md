@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to Set a Custom Domain for a GitHub Repository | Onamae.com Edition'
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00

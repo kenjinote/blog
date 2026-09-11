@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Verrouillez votre PC Windows en 1 seconde ! Comment créer et utiliser un raccourci pratique'
 slug: "コンピューターをロックするショートカットを作成する方法"
 date: 2024-04-01T01:37:49+09:00

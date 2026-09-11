@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sind Smaragde grün oder „grue“? Goodmans neues Rätsel der Induktion"
 description: "Morgen könnten alle Smaragde auf der Welt blau werden. Das „Grue“-Paradoxon, das die Grundlagen wissenschaftlicher Vorhersagen erschüttert."
 date: 2026-09-10T21:00:00+09:00

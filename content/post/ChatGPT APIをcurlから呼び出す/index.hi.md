@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Windows कमांड प्रॉम्प्ट में curl से ChatGPT API को कॉल करने का तरीका'
 slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00

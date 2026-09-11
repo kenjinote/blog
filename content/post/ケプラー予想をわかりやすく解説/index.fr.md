@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Un mystère de 400 ans ! Qu''est-ce que la conjecture de Kepler ? Une explication claire de la romance mathématique apprise grâce à l''empilement des pastèques'
 slug: "ケプラー予想をわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00

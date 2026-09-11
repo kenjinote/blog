@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Belajar dari Kisah Pasangan Tua dan Seekor Keledai: Cara Hidup Agar Tidak Terombang-ambing oleh Pendapat Orang Lain'
 slug: "老夫婦とロバの話"
 date: 2024-09-18T00:56:59+09:00

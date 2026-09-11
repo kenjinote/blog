@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Como Desfazer um Comando ''git reset'' Executado Acidentalmente | Guia de Restauração de Commits'
 slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00

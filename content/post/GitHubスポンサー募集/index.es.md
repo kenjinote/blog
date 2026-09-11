@@ -1,4 +1,4 @@
-﻿---
+---
 
 
 title: 'Anuncio de búsqueda de patrocinadores en GitHub｜Solicitud de apoyo para el desarrollo'

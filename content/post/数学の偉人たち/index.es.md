@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Los grandes matemáticos que cambiaron la historia: De Pitágoras y Arquímedes a Euclides'
 slug: "数学の偉人たち"
 date: 2022-09-22T23:06:37+09:00

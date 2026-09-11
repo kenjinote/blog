@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Commande simple pour supprimer en masse les fichiers .DS_Store avec PowerShell'
 slug: "PowerShellで.DS_Storeを一括削除する"
 date: 2022-09-12T10:11:42+09:00

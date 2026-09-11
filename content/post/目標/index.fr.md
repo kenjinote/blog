@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Feuille de route pour l''entrepreneuriat et le développement de logiciels : Objectifs et tâches à court et à long terme'
 slug: "目標"
 date: 2024-12-08T03:32:34+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'كيفية إصلاح خطأ الشهادة في GitHub Copilot (UNABLE_TO_VERIFY_LEAF_SIGNATURE)'
 slug: "証明書エラーでGitHub Copilotが使えなくなった場合の対処方法"
 date: 2024-04-21T18:47:26+09:00

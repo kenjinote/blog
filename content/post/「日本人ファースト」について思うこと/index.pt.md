@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'A imagem falsa e verdadeira do ''Primeiro os Japoneses'': Os desafios que o Japão enfrenta em 2026 e o caminho para a coexistência'
 slug: "「日本人ファースト」について思うこと"
 date: 2026-01-23T13:43:41+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Why Do I Like Math and Computers? Contemplating Their Appeal and Why I''m Drawn to Them'
 slug: "なぜ数学や計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00

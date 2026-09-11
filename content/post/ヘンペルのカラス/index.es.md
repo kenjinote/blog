@@ -1,4 +1,4 @@
-﻿---
+---
 title: "¿Ver una manzana azul prueba que 'los cuervos son negros'? : Los cuervos de Hempel"
 description: "¿Se puede probar la hipótesis de que 'los cuervos son negros' sin ver un solo cuervo? La paradoja de la inducción creada por la equivalencia lógica."
 date: 2026-09-10T21:00:00+09:00

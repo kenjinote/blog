@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Yusuke Narita & Hayao Miyazaki] Recommended Videos and Thinking Methods to Boost Your Motivation'
 slug: "モチベーションを上げてくれる動画"
 date: 2022-09-08T02:22:52+09:00

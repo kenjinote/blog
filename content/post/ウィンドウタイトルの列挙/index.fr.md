@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Comment énumérer et récupérer les titres des fenêtres actuellement ouvertes avec PowerShell'
 slug: "ウィンドウタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00

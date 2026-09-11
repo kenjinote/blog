@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Dioptimalkan untuk iOS! Parameter Konversi ffmpeg untuk Memutar Video dengan Lancar'
 slug: "iOS 向けの ffmpeg パラメータ"
 date: 2025-03-02T04:16:07+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "How Long Is the Coast of Britain?: The Coastline Paradox"
 description: "The shorter the ruler you use to measure, the infinitely longer the coastline becomes. This is a famous paradox that opened the door to fractal geometry."
 date: 2026-09-10T21:00:00+09:00

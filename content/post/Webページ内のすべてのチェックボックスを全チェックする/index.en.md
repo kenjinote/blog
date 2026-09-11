@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[JS] How to Check All Checkboxes on a Web Page at Once (with Bookmarklet)'
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
 date: 2022-10-05T20:07:06+09:00

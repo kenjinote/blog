@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Que signifie ''comprendre'' ? Sur l''ambiguïté de la compréhension et sa valeur'
 slug: "わかるってなんだろう？"
 date: 2022-09-24T02:38:18+09:00

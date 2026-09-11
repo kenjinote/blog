@@ -1,4 +1,4 @@
-﻿---
+---
 title: '破解RSA密码？用公式彻底解析GNFS与Shor算法'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00

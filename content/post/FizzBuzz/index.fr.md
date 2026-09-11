@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Qu''est-ce que le « test de FizzBuzz », la porte d''entrée de la programmation ? Explication de la méthode de rédaction en Python'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00

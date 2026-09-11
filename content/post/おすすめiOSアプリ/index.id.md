@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Benar-benar Bermanfaat! Rangkuman Pilihan Aplikasi iOS yang Direkomendasikan'
 slug: "おすすめiOSアプリ"
 date: 2024-09-18T23:31:20+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Como criar e exibir uma janela simples do Windows usando Rust e winapi'
 slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00

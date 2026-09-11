@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Como enumerar e obter os títulos de janelas atualmente abertas com o PowerShell'
 slug: "ウィンドウタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00

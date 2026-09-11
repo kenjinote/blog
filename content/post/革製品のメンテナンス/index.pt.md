@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Para iniciantes: Suprimentos de manutenção recomendados e métodos de cuidado para produtos de couro'
 slug: "革製品のメンテナンス"
 date: 2024-10-30T00:31:46+09:00

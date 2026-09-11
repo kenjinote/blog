@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Как настроить Twitter Card (X Card) в теме Hugo PaperMod'
 slug: "PaperModでTwitter Cardを設定する方法"
 date: 2022-09-10T18:41:22+09:00

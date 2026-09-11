@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Memeriksa Status Aktivasi Lisensi Windows! Cek Mudah dengan Satu Perintah'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00

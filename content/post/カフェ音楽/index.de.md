@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Konzentrieren Sie sich auf Arbeit und Studium! Empfohlene Sammlung von stilvoller Café-Musik und Hintergrundmusik'
 slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00

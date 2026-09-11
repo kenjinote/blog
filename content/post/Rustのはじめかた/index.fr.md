@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Introduction au langage Rust : De ses caractéristiques à l''installation et comment démarrer jusqu''à Hello World'
 slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00

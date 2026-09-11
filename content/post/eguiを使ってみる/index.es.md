@@ -1,4 +1,4 @@
-﻿---
+---
 
 
 title: 'Cómo empezar a usar "egui", la ligera librería GUI de Rust, y pasos para ejecutar el ejemplo'

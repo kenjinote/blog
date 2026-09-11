@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Como Exibir um Ranking de Artigos Populares do Google Analytics com o Ranklet'
 slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Does seeing a blue apple prove 'ravens are black'? : Hempel's Ravens"
 description: "Can we prove the hypothesis that 'all ravens are black' without ever seeing a single raven? The paradox of induction created by logical equivalence."
 date: 2026-09-10T21:00:00+09:00

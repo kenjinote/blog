@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Membuat Tombol (Kontrol GUI) dan Menerapkan Pemrosesan Acara (Event) Menggunakan Windows API'
 slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00

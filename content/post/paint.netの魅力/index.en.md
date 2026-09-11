@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Free and Highly Functional! Features and Appeal of the Image Editing Software ''paint.net'''
 slug: "paint.netの魅力"
 date: 2022-09-14T19:33:31+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 
 
 title: '【C++20】Ejemplo de código sencillo para mostrar la hora actual en formato ISO8601 (UTC)'

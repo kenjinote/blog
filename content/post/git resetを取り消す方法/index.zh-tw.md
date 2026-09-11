@@ -1,4 +1,4 @@
-﻿---
+---
 title: '取消誤執行的git reset方法｜還原Commit步驟'
 slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00

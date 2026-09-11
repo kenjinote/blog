@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Dengan Sampel] Cara Memanggil Windows.AI dari C++ dan Menjalankan Model ONNX'
 slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
 date: 2025-07-19T10:03:51+09:00

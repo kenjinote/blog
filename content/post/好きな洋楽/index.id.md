@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Rangkuman Lagu Barat Terkenal Rekomendasi: Lagu Hit Klasik Sepanjang Masa'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00

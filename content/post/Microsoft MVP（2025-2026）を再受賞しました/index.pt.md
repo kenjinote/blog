@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Relatório de nova premiação do Microsoft MVP (2025-2026) e atividades até agora'
 slug: "Microsoft MVP（2025-2026）を再受賞しました"
 date: 2025-07-13T22:01:15+09:00

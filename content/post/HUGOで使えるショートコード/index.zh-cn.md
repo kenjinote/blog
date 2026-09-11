@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Hugo内置简码（Shortcode）一览：嵌入YouTube和Twitter'
 slug: "HUGOで使えるショートコード"
 date: 2022-09-11T22:59:52+09:00

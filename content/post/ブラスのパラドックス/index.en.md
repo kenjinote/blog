@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Why did building a new road somehow make traffic worse?: Braess's Paradox"
 description: "A bizarre paradox in network theory where building a new bypass to relieve traffic congestion ends up increasing the commute time for everyone."
 date: 2026-09-10T21:00:00+09:00

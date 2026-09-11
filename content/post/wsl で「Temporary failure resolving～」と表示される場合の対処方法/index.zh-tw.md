@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'WSL 在 apt update 出現「Temporary failure resolving」錯誤時的解決方法'
 slug: "wsl で「Temporary failure resolving～」と表示される場合の対処方法"
 date: 2024-03-31T16:57:33+09:00

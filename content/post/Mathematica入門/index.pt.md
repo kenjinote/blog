@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Introdução ao Mathematica: Como usar comandos básicos como equações, cálculo diferencial e integral'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00

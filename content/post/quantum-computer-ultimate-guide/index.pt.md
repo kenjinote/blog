@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Princípios e Mecanismos do Computador Quântico [Guia Completo]: Dos limites da Lei de Moore à Mecânica Quântica'
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Registros de desastres naturais que ocorreram no Japão: O terremoto da Península de Noto em 2024 e a situação dos danos'
 slug: "日本の災害"
 date: 2024-01-07T00:50:09+09:00

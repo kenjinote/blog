@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'كيفية تثبيت CocoaPods على Mac وحل الأخطاء'
 slug: "macにCocoaPodsをインストールする方法"
 date: 2023-04-09T03:25:54+09:00

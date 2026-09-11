@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What is Kerckhoffs''s Principle? An Easy Explanation of an Important Concept Supporting Cryptographic Security'
 slug: "ケルクホフスの原理"
 date: 2025-04-16T23:53:08+09:00

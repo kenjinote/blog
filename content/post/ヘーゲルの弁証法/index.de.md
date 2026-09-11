@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Was ist Hegels Dialektik? Das Konzept der Aufhebung und seine Anwendung im Alltag und bei der Programmierung'
 slug: "ヘーゲルの弁証法"
 date: 2022-09-09T23:13:19+09:00

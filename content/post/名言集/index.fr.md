@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Collection de citations pour enrichir la vie : Des mots touchants de personnalités historiques et célèbres'
 slug: "名言集"
 date: 2022-10-15T17:00:43+09:00

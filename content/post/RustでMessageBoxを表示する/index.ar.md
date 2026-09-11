@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'كيفية عرض مربع رسالة (MessageBox) في Windows باستخدام Rust و winapi'
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00

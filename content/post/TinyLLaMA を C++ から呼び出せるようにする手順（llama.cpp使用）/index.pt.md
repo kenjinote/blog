@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Rodar o TinyLLaMA em C++! Passos de construção do ambiente LLM local usando o llama.cpp'
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
 date: 2025-07-19T09:40:53+09:00

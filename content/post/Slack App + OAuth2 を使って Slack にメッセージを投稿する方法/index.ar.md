@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'كيفية نشر رسائل باستخدام Slack API و OAuth2 (مثال بلغة C++)'
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
 date: 2025-07-16T23:36:27+09:00

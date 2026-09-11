@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Maestro y discípulo, un juicio contradictorio sin importar quién gane: La paradoja de Protágoras"
 description: "Una disputa judicial entre maestro y discípulo sobre las condiciones de pago de las clases. Una paradoja legal de la antigua Grecia en la que la lógica se contradice sin importar quién gane o pierda."
 date: 2026-09-10T21:00:00+09:00

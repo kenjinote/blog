@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Os seus amigos têm mais amigos do que você: O Paradoxo da Amizade"
 description: "Não há necessidade de se preocupar se 'você tem poucos amigos'. Esta é uma propriedade das redes comprovada matematicamente."
 date: 2026-09-10T21:00:00+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Introduction à Mathematica : comment utiliser les commandes de base pour les équations, le calcul différentiel et intégral'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00

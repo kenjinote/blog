@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Uso gratuito! 7 sites recomendados de ícones simples e gratuitos'
 slug: "シンプルなアイコン集サイト"
 date: 2022-09-07T16:46:56+09:00

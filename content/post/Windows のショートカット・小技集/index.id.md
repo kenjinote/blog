@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Windows 11/10] Kumpulan Tombol Pintasan dan Trik Praktis yang Meningkatkan Efisiensi Kerja secara Drastis'
 slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00

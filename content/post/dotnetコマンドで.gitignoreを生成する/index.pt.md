@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Como Gerar Facilmente um Arquivo .gitignore para o seu Projeto com o Comando dotnet'
 slug: "dotnetコマンドで.gitignoreを生成する"
 date: 2022-09-13T00:25:12+09:00

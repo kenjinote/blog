@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'A Barreira do Desenvolvimento com IA Era Alta... O Motivo Pelo Qual a ''Reta Final'' da Criação de Apps é um Pesadelo'
 slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00

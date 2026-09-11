@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Touché par la gentillesse d''une enfant de 2 ans ! Un épisode réconfortant où j''ai ressenti sa considération et son attention'
 slug: "子供のそんたく"
 date: 2022-09-07T04:40:52+09:00

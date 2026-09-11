@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Membuat Kode QR di Command Prompt Menggunakan Perintah curl'
 slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00

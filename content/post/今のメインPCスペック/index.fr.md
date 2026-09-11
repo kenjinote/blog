@@ -1,4 +1,4 @@
-﻿---
+---
 title: '【Core i7-8700K / 32 Go de RAM】Spécifications de mon PC principal actuel et de mon environnement de travail'
 slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00

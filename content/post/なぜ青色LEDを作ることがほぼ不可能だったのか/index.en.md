@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Why Was Developing Blue LEDs Nearly Impossible? Unraveling the Mystery'
 slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
 date: 2024-09-15T00:43:52+09:00

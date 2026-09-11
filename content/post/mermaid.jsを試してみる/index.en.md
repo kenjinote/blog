@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'What is Mermaid.js? How to Introduce it to Hugo and Draw Diagrams and Charts'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'For Beginners: Recommended Maintenance Products and Care Methods for Leather Goods'
 slug: "革製品のメンテナンス"
 date: 2024-10-30T00:31:46+09:00

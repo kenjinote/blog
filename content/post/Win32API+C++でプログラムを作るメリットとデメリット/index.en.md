@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Windows App Development with Win32API + C++! Pros and Cons from an Active Engineer'
 slug: "Win32API+C++でプログラムを作るメリットとデメリット"
 date: 2025-07-12T12:30:35+09:00

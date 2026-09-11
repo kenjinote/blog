@@ -1,4 +1,4 @@
-﻿---
+---
 author: "Hugo Authors"
 title: 'Exemples de syntaxe Markdown utilisables avec Hugo : syntaxe de base comme les titres et paragraphes'
 slug: "マークダウンのサンプル"

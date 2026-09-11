@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Eine Sammlung von Zitaten zur Bereicherung des Lebens: Eine Zusammenfassung herzergreifender Worte historischer Größen und berühmter Persönlichkeiten'
 slug: "名言集"
 date: 2022-10-15T17:00:43+09:00

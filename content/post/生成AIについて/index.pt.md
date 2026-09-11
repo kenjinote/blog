@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Aprendendo sobre IA Generativa! Um resumo de vídeos de palestras recomendadas por professores da Universidade de Tóquio'
 slug: "生成AIについて"
 date: 2024-04-16T02:13:56+09:00

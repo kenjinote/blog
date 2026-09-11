@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'هل يكسر تشفير RSA؟ شرح تفصيلي لخوارزمية GNFS و Shor باستخدام المعادلات الرياضية'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00

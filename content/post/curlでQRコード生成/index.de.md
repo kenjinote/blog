@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Wie man mit dem curl-Befehl einen QR-Code in der Eingabeaufforderung generiert'
 slug: "curlでQRコード生成"
 date: 2024-04-16T00:42:27+09:00

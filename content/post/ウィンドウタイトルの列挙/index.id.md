@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Mengambil dan Mendaftar Judul Jendela yang Sedang Terbuka dengan PowerShell'
 slug: "ウィンドウタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00

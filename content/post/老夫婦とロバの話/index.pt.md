@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Aprendendo com a história do velho casal e do burro: Uma forma de viver sem ser influenciado pelas opiniões dos outros'
 slug: "老夫婦とロバの話"
 date: 2024-09-18T00:56:59+09:00

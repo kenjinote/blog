@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Recommended Fonts for Programming | Free Fonts for Better Visibility and Development Efficiency'
 slug: "プログラミングで使えるフォント集"
 date: 2024-03-30T02:21:31+09:00

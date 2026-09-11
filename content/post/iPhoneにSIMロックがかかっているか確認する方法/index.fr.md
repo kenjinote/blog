@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Comment vérifier facilement l''état de verrouillage SIM (activé ou non) sur votre iPhone'
 slug: "iPhoneにSIMロックがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00

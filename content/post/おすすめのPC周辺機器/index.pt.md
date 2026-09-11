@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Escolhido por um engenheiro ativo! Periféricos de PC recomendados que aumentam exponencialmente a eficiência do trabalho'
 slug: "おすすめのPC周辺機器"
 date: 2023-02-28T00:51:49+09:00

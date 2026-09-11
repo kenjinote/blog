@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Beweist ein blauer Apfel, dass „Raben schwarz sind“? Hempels Rabenparadoxon"
 description: "Kann man die Hypothese „Alle Raben sind schwarz“ beweisen, ohne jemals einen Raben gesehen zu haben? Ein Induktionsparadoxon, das durch logische Äquivalenz entsteht."
 date: 2026-09-10T21:00:00+09:00

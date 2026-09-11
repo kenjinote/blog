@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'O que é o problema P versus NP? Explicação fácil do problema não resolvido da teoria da complexidade e da diferença entre as classes P e NP'
 slug: "P≠NP予想"
 date: 2024-09-11T02:22:39+09:00

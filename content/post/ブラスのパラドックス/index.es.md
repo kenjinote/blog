@@ -1,4 +1,4 @@
-﻿---
+---
 title: "¿Por qué empeoró el tráfico al construir una nueva carretera?: La paradoja de Braess"
 description: "Una extraña paradoja de la teoría de redes en la que construir un nuevo atajo para resolver la congestión del tráfico termina aumentando el tiempo de viaje de todos."
 date: 2026-09-10T21:00:00+09:00

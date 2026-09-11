@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Um 'teste positivo' não significa necessariamente 'doença'? A Falácia da Taxa Base"
 description: "Mesmo que um teste com 99% de precisão dê positivo, a probabilidade real de ter a doença é de apenas 9%? Uma explicação da 'Falácia da Taxa Base', onde a intuição humana é enganada por dados estatísticos."
 date: 2026-09-10T21:00:00+09:00

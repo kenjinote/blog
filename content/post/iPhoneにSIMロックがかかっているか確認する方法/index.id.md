@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Mudah Memeriksa Status SIM Lock iPhone (Terkunci/Tidak)'
 slug: "iPhoneにSIMロックがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00

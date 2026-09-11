@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Wie man Graphen mit Python und matplotlib zeichnet 【Google Colab kompatibel】'
 slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00

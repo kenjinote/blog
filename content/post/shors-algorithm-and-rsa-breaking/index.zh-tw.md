@@ -1,4 +1,4 @@
-﻿---
+---
 title: '量子電腦會破解 RSA 加密嗎？解說秀爾演算法 (Shor''s Algorithm)'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子電腦", "密碼破解", "Shor演算法", "RSA"]

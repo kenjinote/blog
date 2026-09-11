@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Quotes to Enrich Your Life: A Collection of Inspiring Words from Historical Figures and Celebrities'
 slug: "名言集"
 date: 2022-10-15T17:00:43+09:00

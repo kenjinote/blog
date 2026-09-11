@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Illusion et réalité du ''Les Japonais d''abord'' : Les défis auxquels le Japon est confronté en 2026 et la voie vers la coexistence'
 slug: "「日本人ファースト」について思うこと"
 date: 2026-01-23T13:43:41+09:00

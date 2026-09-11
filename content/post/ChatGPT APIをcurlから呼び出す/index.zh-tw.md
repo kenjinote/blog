@@ -1,4 +1,4 @@
-﻿---
+---
 title: '在Windows命令提示字元中使用curl呼叫ChatGPT API的方法'
 slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Travailler en empruntant le bureau des enfants ? Le véritable environnement de télétravail pendant l''éducation des enfants'
 slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00

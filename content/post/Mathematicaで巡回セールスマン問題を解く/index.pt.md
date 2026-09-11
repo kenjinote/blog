@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Como resolver o problema do caixeiro-viajante (TSP) com o Mathematica'
 slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00

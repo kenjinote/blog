@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Взлом шифрования RSA? Подробное математическое объяснение GNFS и алгоритма Шора'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00

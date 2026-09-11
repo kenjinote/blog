@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Was ist „Hanlons Rasiermesser“, eine Denkweise, die zwischenmenschliche Beziehungen erleichtert? Bedeutung und Herkunft erklärt'
 slug: "ハンロンの剃刀"
 date: 2024-09-24T18:14:34+09:00

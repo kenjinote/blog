@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'كيفية تعيين نطاق مخصص (Custom Domain) لمستودع GitHub | إصدار Onamae.com'
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00

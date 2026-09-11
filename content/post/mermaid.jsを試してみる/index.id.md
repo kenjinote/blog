@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Apa itu Mermaid.js? Cara Menginstal di Hugo dan Menggambar Diagram atau Bagan'
 slug: "mermaid.jsを試してみる"
 date: 2024-05-25T02:18:09+09:00

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Ankündigung zur Suche nach GitHub-Sponsoren | Bitte um Entwicklungsunterstützung'
 slug: "GitHubスポンサー募集"
 date: 2023-01-17T18:13:56+09:00

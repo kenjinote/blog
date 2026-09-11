@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Apa Itu i18n (Internasionalisasi)? Makna dan Item yang Perlu Diperhatikan dalam Pengembangan Perangkat Lunak'
 slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00

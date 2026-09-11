@@ -1,4 +1,4 @@
-﻿---
+---
 
 
 title: 'Cómo mostrar el ranking de artículos populares desde Google Analytics usando Ranklet'

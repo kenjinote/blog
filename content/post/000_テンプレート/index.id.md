@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[Edisi Lengkap] Templat Pembuatan Artikel Blog! Struktur Heading Ramah SEO dan Tips Menulis'
 slug: "000_テンプレート"
 date: 2022-01-01T00:00:00+09:00

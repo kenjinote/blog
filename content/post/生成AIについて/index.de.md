@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Lernen über Generative KI! Eine Zusammenfassung empfohlener Vorlesungsvideos von Professoren der Universität Tokio'
 slug: "生成AIについて"
 date: 2024-04-16T02:13:56+09:00

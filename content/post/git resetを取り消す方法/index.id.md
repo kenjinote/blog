@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Cara Membatalkan git reset yang Tidak Sengaja Dijalankan | Langkah Pemulihan Commit'
 slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00

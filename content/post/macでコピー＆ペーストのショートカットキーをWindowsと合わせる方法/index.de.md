@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Wie man die Tastenkombinationen zum Kopieren und Einfügen auf dem Mac auf die gleichen Einstellungen wie bei Windows ändert'
 slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00

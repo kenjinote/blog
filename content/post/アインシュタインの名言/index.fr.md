@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Ne cédez pas aux critiques ! Des astuces pour vivre fort inspirées des citations d''Einstein'
 slug: "アインシュタインの名言"
 date: 2024-08-24T18:38:47+09:00

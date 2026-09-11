@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Code source simple en langage C pour générer et déterminer les nombres premiers dans une plage spécifiée'
 slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00

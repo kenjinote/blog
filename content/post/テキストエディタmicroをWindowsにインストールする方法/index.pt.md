@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Pode ser usado no Windows! Como instalar o leve editor de texto ''micro'''
 slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00

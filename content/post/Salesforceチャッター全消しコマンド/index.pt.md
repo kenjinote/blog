@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Salesforce: Comando para excluir todas as postagens e arquivos anexados do Chatter'
 slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00

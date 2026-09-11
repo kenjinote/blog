@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Geniale Mathematiker in der Hauptrolle! Empfohlene Film-Meisterwerke und Geschichten über Entschlüsselung'
 slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00

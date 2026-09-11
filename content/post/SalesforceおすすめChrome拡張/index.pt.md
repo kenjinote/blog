@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'O desenvolvimento no Salesforce será muito melhor! Resumo das extensões recomendadas do Chrome'
 slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00
