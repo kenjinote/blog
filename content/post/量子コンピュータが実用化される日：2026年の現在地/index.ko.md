@@ -1,7 +1,7 @@
 ---
 title: '양자 컴퓨터가 실용화되는 날: 2026년의 현재 위치'
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -173,3 +173,4 @@ gantt
 
 ---
 *이 글은 2026년 시점의 최신 양자 컴퓨팅 연구 논문 및 업계 동향을 바탕으로 작성되었습니다.*
+

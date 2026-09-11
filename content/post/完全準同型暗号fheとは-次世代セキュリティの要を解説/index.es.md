@@ -1,7 +1,7 @@
 ---
 title: '¿Qué es el cifrado totalmente homomórfico (FHE)? Explicación de la clave de la seguridad de próxima generación'
 slug: "fully-homomorphic-encryption-fhe-explained"
-date: "2026-09-12T11:00:00+09:00"
+date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -274,3 +274,4 @@ Al igual que la invención de la criptografía de clave pública (RSA) en la dé
 Hoy en día, el cifrado totalmente homomórfico (FHE) ha saltado de la teoría de los laboratorios y ha entrado en una fase en la que Microsoft, IBM, Intel, Google y muchas startups compiten ferozmente por su aplicación práctica. Aunque los desafíos del coste computacional y el tamaño de los datos aún persisten, el rendimiento continúa mejorando a un ritmo que supera la Ley de Moore, gracias al refinamiento de los algoritmos y la evolución de los aceleradores de hardware.
 
 En unos pocos años, "calcular datos mientras están cifrados" ya no será algo extraordinario, sino que se convertirá en una de las mejores prácticas estándar de protección de datos en los servicios en la nube. El FHE es verdaderamente la clave de la seguridad de la próxima generación, al materializar **el equilibrio definitivo entre la privacidad y la utilización de los datos** en nuestra sociedad impulsada por los datos.
+

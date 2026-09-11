@@ -1,7 +1,7 @@
 ---
 title: '是否存在超越GNFS（普通数域筛选法）的算法？'
 slug: "beyond-gnfs-integer-factorization-algorithms"
-date: "2026-09-12T09:00:00+09:00"
+date: "2026-09-11T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -175,3 +175,4 @@ graph LR
 3. **真正的威胁是量子算法**: 跨越计算复杂度壁垒的是基于量子力学原理的Shor算法。这也迫使世界开始向抗量子计算机密码学（PQC: Post-Quantum Cryptography）过渡。转向即使是量子计算机也难以破解（无法在多项式时间内求解）的全新数学问题，如格密码（Lattice-based cryptography）和基于哈希的密码（Hash-based cryptography），已成为当前密码学的最前沿。
 
 普通数域筛选法（GNFS）是人类挑战经典数学和算法设计极限所达到的“最高境界”之一。理解GNFS深邃的数学结构，不仅是为了学习密码破译的历史，更是一段触及计算复杂性理论和代数数论之美的知识探索之旅。在量子计算机真正实现实用化之前，GNFS无疑将继续捍卫其作为最强整数分解算法的王座。
+

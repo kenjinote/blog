@@ -1,7 +1,7 @@
 ---
 title: 'Top 5 modelos LLM de código aberto para rodar localmente'
 slug: 'top-5-open-source-local-llms'
-date: '2026-09-12T03:00:00+09:00'
+date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -278,3 +278,4 @@ Neste artigo, apresentamos 5 dos melhores LLMs de código aberto e locais dispon
 
 A velocidade de evolução dos LLMs de código aberto é impressionante e, a cada poucos meses, novos avanços técnicos (breakthroughs) que derrubam o senso comum anterior são anunciados. No futuro, com mais melhorias na tecnologia de quantização e a introdução de novas arquiteturas, o dia em que o ambiente local por si só superará a IA na nuvem pode estar próximo.
 Faça o download do modelo ideal de acordo com o seu ambiente de hardware e experimente a liberdade avassaladora e as possibilidades da IA local.
+

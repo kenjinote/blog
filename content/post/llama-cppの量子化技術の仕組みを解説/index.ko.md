@@ -1,7 +1,7 @@
 ---
 title: 'llama.cpp의 양자화 기술(GGUF)의 원리 해설'
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-12T00:00:00+09:00"
+date: "2026-09-11T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -249,3 +249,4 @@ AI의 민주화를 추진하는 llama.cpp의 기술력은 단순한 도구의 �
 - [K-quants Implementation PR](https://github.com/ggerganov/llama.cpp/pull/1684)
 
 (끝)
+

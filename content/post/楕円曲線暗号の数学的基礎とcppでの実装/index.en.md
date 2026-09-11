@@ -1,7 +1,7 @@
 ---
 title: "Mathematical Foundations of Elliptic Curve Cryptography (ECC) and Implementation in C++"
 slug: "elliptic-curve-cryptography-math-cpp"
-date: "2026-09-12T10:00:00+09:00"
+date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -445,3 +445,4 @@ In this article, we covered the following key points:
 Writing your own cryptographic library to run in a production environment is highly discouraged ("Don't roll your own crypto") because the security risks are extremely high. However, deeply understanding the underlying algorithms and mathematical background should serve as an invaluable and powerful weapon for engineers designing and operating more secure and performant systems.
 
 In the next article, we would like to dig even deeper into the mechanics of the **ECDSA (Elliptic Curve Digital Signature Algorithm)**, which is a digital signature algorithm using these elliptic curves, as well as **Schnorr signatures**, which are adopted in Bitcoin.
+

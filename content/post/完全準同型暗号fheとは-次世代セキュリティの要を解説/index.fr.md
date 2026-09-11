@@ -1,7 +1,7 @@
 ---
 title: "Qu'est-ce que le chiffrement homomorphe complet (FHE) ? Explication de la clé de la sécurité de nouvelle génération"
 slug: "fully-homomorphic-encryption-fhe-explained"
-date: "2026-09-12T11:00:00+09:00"
+date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -274,3 +274,4 @@ Tout comme l'invention de la cryptographie à clé publique (RSA) dans les anné
 Aujourd'hui, le Chiffrement Homomorphe Complet (FHE) est sorti de la théorie des laboratoires, et des entreprises telles que Microsoft, IBM, Intel, Google et de nombreuses startups se font une concurrence féroce pour le rendre pratique. Bien que des défis liés aux coûts de calcul et à la taille des données subsistent, grâce au raffinement des algorithmes et à l'évolution des accélérateurs matériels, les performances continuent de s'améliorer à un rythme dépassant la loi de Moore.
 
 Dans quelques années, « effectuer des calculs sur des données tout en les gardant chiffrées » ne sera plus quelque chose de spécial, mais deviendra une bonne pratique standard en matière de protection des données dans les services cloud. Le FHE est la clé de la sécurité de nouvelle génération qui réalise **l'équilibre ultime entre la vie privée et l'utilisation des données** dans une société axée sur les données.
+

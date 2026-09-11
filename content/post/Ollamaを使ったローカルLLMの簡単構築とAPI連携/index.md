@@ -1,7 +1,7 @@
 ---
 title: "Ollamaを使ったローカルLLMの簡単構築とAPI連携"
 slug: "ollama-local-llm-api-guide"
-date: "2026-09-12T02:00:00+09:00"
+date: "2026-09-11T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -224,7 +224,7 @@ curl -X POST http://localhost:11434/api/generate -d '{
 ```json
 {
   "model": "llama3.1",
-  "created_at": "2026-09-12T10:00:00.000Z",
+  "created_at": "2026-09-11T10:00:00.000Z",
   "response": "Quantum entanglement is like having a pair of magical dice...",
   "done": true,
   "context": [128006, 882, 128007, 271, 10445],
@@ -496,3 +496,4 @@ PythonやシェルスクリプトにOllamaのAPIリクエストを組み込む�
 Ollamaの登場により、ローカルLLMの導入ハードルは劇的に下がりました。Dockerコンテナを操作するようなシンプルなコマンド体系と、外部アプリケーションから容易に利用できるREST APIの組み合わせは、ローカルAI開発における現在のデファクトスタンダードと言っても過言ではありません。
 
 クラウドLLMのコストやセキュリティの制約に悩まされている開発者の方は、ぜひ本記事で紹介した手順を参考に、Ollamaを用いたローカルLLM環境を構築し、自身のアプリケーションに統合してみてください。AIの持つ可能性を、より自由に、より身近に感じることができるはずです。
+

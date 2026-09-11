@@ -1,7 +1,7 @@
 ---
 title: 'El día en que los ordenadores cuánticos se hagan realidad: El estado actual en 2026'
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -173,3 +173,4 @@ El mayor reto en 2026 es la capacidad de enfriamiento del enorme criostato (refr
 
 ---
 *Este artículo se basa en los últimos trabajos de investigación en computación cuántica y tendencias de la industria en 2026.*
+

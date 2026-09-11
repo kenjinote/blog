@@ -1,7 +1,7 @@
 ---
 title: 'Wie man die Spracherkennungs-KI (Whisper) in ein C++-Projekt integriert'
 slug: "whisper-cpp-integration-guide"
-date: "2026-09-12T04:00:00+09:00"
+date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -298,3 +298,4 @@ In diesem Artikel haben wir ausführlich, von der Theorie über die Praxis bis h
 * **Überwältigende Optimierung**: Vorteile der 4-Bit-Quantisierung durch `ggml` und Hardware-Backends wie Metal/cuBLAS.
 
 Bitte machen Sie sich `whisper.cpp` zunutze, um Spracherkennungsanwendungen zu entwickeln, die nativ, schnell und sicher laufen, frei von der Abhängigkeit von riesigen Python-Umgebungen und Cloud-APIs. Eine lokal abgeschlossene KI wird aus Gründen des Datenschutzes und der Latenzzeit eine äußerst wichtige Schlüsseltechnologie in der zukünftigen Softwareentwicklung sein.
+

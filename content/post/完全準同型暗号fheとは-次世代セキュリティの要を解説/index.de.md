@@ -1,7 +1,7 @@
 ---
 title: 'Was ist die vollständig homomorphe Verschlüsselung (FHE)? Der Schlüssel zur Sicherheit der nächsten Generation'
 slug: "fully-homomorphic-encryption-fhe-explained"
-date: "2026-09-12T11:00:00+09:00"
+date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ Genauso wie die Erfindung der Public-Key-Kryptographie (RSA) in den 1970er Jahre
 Heute verlässt die vollständig homomorphe Verschlüsselung (FHE) die Forschungslabors und tritt in ein Stadium ein, in dem Microsoft, IBM, Intel, Google und viele Start-ups um die Kommerzialisierung wetteifern. Herausforderungen hinsichtlich der Rechenkosten und der Datengröße bestehen weiterhin, aber durch die Verfeinerung von Algorithmen und die Entwicklung von Hardware-Beschleunigern wird die Leistung in einem Tempo verbessert, das das Mooresche Gesetz übertrifft.
 
 In wenigen Jahren wird es nichts Besonderes mehr sein, "zu rechnen, während die Daten verschlüsselt bleiben", sondern es wird eine Standard-Best-Practice für den Datenschutz bei Cloud-Diensten werden. FHE ist der Schlüssel zur Sicherheit der nächsten Generation und realisiert die **ultimative Balance zwischen Datenschutz und Datennutzung** in unserer datengesteuerten Gesellschaft.
+

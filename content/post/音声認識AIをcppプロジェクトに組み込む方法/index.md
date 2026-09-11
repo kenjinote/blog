@@ -1,7 +1,7 @@
 ---
 title: "音声認識AI（Whisper）をC++プロジェクトに組み込む方法"
 slug: "whisper-cpp-integration-guide"
-date: "2026-09-12T04:00:00+09:00"
+date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -298,3 +298,4 @@ Hyper-Threadingなどの論理コアを含めると、キャッシュの競合�
 * **圧倒的な最適化**: `ggml` による4-bit量子化と、Metal/cuBLASなどのハードウェアバックエンドの恩恵。
 
 巨大なPython環境やクラウドAPIへの依存を断ち切り、ネイティブ環境で高速かつセキュアに動作する音声処理アプリケーションの開発に、ぜひ `whisper.cpp` を役立ててください。ローカル完結のAIは、プライバシー保護とレイテンシの観点から、今後のソフトウェア開発において極めて重要な要素技術となるでしょう。
+

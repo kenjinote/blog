@@ -1,7 +1,7 @@
 ---
 title: 'Dasar Matematika Kriptografi Kurva Eliptik (ECC) dan Implementasinya dalam C++'
 slug: "elliptic-curve-cryptography-math-cpp"
-date: "2026-09-12T10:00:00+09:00"
+date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -445,3 +445,4 @@ Dalam artikel ini, kami menjelaskan poin-poin penting berikut:
 Membuat perpustakaan kriptografi Anda sendiri yang sebenarnya berjalan di lingkungan produksi sangat tidak disarankan ("Don't roll your own crypto") karena risiko keamanannya sangat tinggi. Namun, pemahaman mendalam tentang algoritma dan latar belakang matematika yang beroperasi di dalamnya harus menjadi senjata yang sangat berharga bagi insinyur yang merancang dan mengoperasikan sistem yang lebih aman dan berkinerja tinggi.
 
 Pada artikel berikutnya, kami ingin menggali lebih dalam tentang mekanisme **ECDSA (Elliptic Curve Digital Signature Algorithm)**, yaitu algoritma tanda tangan digital menggunakan kurva eliptik ini, serta **Tanda Tangan Schnorr** yang diadopsi pada Bitcoin.
+

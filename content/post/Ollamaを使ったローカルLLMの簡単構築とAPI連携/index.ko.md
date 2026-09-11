@@ -1,7 +1,7 @@
 ---
 title: 'Ollama를 이용한 로컬 LLM의 간단한 구축 및 API 연동'
 slug: "ollama-local-llm-api-guide"
-date: "2026-09-12T02:00:00+09:00"
+date: "2026-09-11T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -224,7 +224,7 @@ curl -X POST http://localhost:11434/api/generate -d '{
 ```json
 {
   "model": "llama3.1",
-  "created_at": "2026-09-12T10:00:00.000Z",
+  "created_at": "2026-09-11T10:00:00.000Z",
   "response": "Quantum entanglement is like having a pair of magical dice...",
   "done": true,
   "context": [128006, 882, 128007, 271, 10445],
@@ -496,3 +496,4 @@ Python이나 셸 스크립트에 Ollama의 API 요청을 통합하여, 로그의
 Ollama의 등장으로 로컬 LLM의 도입 장벽은 극적으로 낮아졌습니다. Docker 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 REST API의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
 
 클라우드 LLM의 비용이나 보안 제약으로 고민하고 있는 개발자라면, 꼭 본 기사에서 소개한 절차를 참고하여 Ollama를 이용한 로컬 LLM 환경을 구축하고 자신의 애플리케이션에 통합해 보시기 바랍니다. AI가 가진 가능성을 더욱 자유롭고 가깝게 느낄 수 있을 것입니다.
+

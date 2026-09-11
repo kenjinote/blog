@@ -1,7 +1,7 @@
 ---
 title: "Techniques for Resolving GPU Memory Shortages in AI Development (CPU Offloading, etc.)"
 slug: "ai-gpu-vram-optimization-cpu-offloading"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -288,3 +288,4 @@ GPU memory shortage (Out of Memory) in AI development is an eternal challenge th
 3. **ZeRO & CPU Offloading (DeepSpeed):** Partition optimizer states and gradients across multiple GPUs, or offload them to CPU memory to break through VRAM limits.
 
 By fully leveraging these advanced technologies, let's extract the maximum AI development performance within limited hardware resources. In this rapidly advancing field, we can expect the emergence of new memory-saving algorithms in the future. Regularly checking the latest trends in libraries and incorporating them into your implementations will be key.
+

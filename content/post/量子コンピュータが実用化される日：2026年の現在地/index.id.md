@@ -1,7 +1,7 @@
 ---
 title: 'Hari Ketika Komputer Kuantum Menjadi Praktis: Posisi Saat Ini di Tahun 2026'
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -173,3 +173,4 @@ Tahun 2026 akan tercatat dalam sejarah komputer kuantum sebagai "Tahun Pertama P
 
 ---
 *Artikel ini ditulis berdasarkan makalah penelitian komputasi kuantum terbaru dan tren industri per tahun 2026.*
+

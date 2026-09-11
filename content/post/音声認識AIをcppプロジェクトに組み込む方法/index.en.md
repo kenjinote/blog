@@ -1,7 +1,7 @@
 ---
 title: "How to Integrate Speech Recognition AI (Whisper) into a C++ Project"
 slug: "whisper-cpp-integration-guide"
-date: "2026-09-12T04:00:00+09:00"
+date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -278,3 +278,4 @@ In this article, we thoroughly explained how to leverage `whisper.cpp` to integr
 * **Overwhelming optimization**: The benefits of 4-bit quantization via `ggml` and hardware backends like Metal/cuBLAS.
 
 Break free from dependencies on massive Python environments or cloud APIs, and please make use of `whisper.cpp` to develop audio processing applications that run fast and securely in native environments. Local-only AI will become an extremely crucial core technology in future software development from the perspectives of privacy protection and latency.
+

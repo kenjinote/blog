@@ -1,7 +1,7 @@
 ---
 title: 'Is There an Algorithm Beyond GNFS (General Number Field Sieve)?'
 slug: "beyond-gnfs-integer-factorization-algorithms"
-date: "2026-09-12T09:00:00+09:00"
+date: "2026-09-11T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -176,3 +176,4 @@ The current scientific consensus on the question "Are there classical algorithms
 3. **The true threat is quantum algorithms**: What crossed the barrier of computational complexity was Shor's algorithm, based on the principles of quantum mechanics. As a result, the world is forced to transition to Post-Quantum Cryptography (PQC). The transition to new mathematical problems that are considered difficult to solve even for quantum computers (cannot be solved in polynomial time), such as lattice-based cryptography and hash-based cryptography, is currently at the forefront of cryptography.
 
 The General Number Field Sieve (GNFS) is one of the "highest peaks" humanity has reached by challenging the limits of classical mathematics and algorithm design. Understanding the profound mathematical structure of GNFS is not merely learning the history of cryptanalysis, but also an intellectual journey of exploration that touches upon the beauty of computational complexity theory and algebraic number theory. Until the day quantum computers are put into practical use, GNFS will likely continue to defend its throne as the strongest integer factorization algorithm.
+

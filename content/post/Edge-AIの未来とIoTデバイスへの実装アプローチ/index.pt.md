@@ -1,7 +1,7 @@
 ---
 title: 'O Futuro da Edge AI e Abordagens de Implementação para Dispositivos IoT'
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ Na linha de frente da IoT, onde o mundo físico se funde com o mundo digital, a 
 
 ---
 *Este artigo foi criado para engenheiros e arquitetos de sistemas interessados na implementação de IA em dispositivos IoT.*
+

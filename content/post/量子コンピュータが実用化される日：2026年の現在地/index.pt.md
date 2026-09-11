@@ -1,7 +1,7 @@
 ---
 title: 'O dia em que os computadores quânticos se tornarão práticos: A situação atual em 2026'
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -173,3 +173,4 @@ O ano de 2026 provavelmente será registrado na história dos computadores quân
 
 ---
 *Este artigo foi escrito com base nos mais recentes artigos de pesquisa sobre computação quântica e tendências da indústria a partir de 2026.*
+

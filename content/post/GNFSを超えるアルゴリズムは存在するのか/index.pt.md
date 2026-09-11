@@ -1,7 +1,7 @@
 ---
 title: 'Existe algum algoritmo além do GNFS (Crivo Geral dos Campos de Números)?'
 slug: "beyond-gnfs-integer-factorization-algorithms"
-date: "2026-09-12T09:00:00+09:00"
+date: "2026-09-11T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -177,3 +177,4 @@ O consenso atual na comunidade científica em relação à pergunta "Existe algu
 3. **A verdadeira ameaça é o algoritmo quântico**: O Algoritmo de Shor, baseado nos princípios da mecânica quântica, ultrapassou os limites da complexidade computacional. Como resultado, o mundo é obrigado a realizar a transição para a Criptografia Pós-Quântica (PQC). A fronteira da criptografia de hoje encontra-se em novos problemas matemáticos, como a criptografia baseada em reticulados e a criptografia baseada em hashes, as quais são consideradas difíceis de se decifrar até para computadores quânticos (ou seja, não possuem resolução no tempo polinomial).
 
 O Crivo Geral dos Campos de Números (GNFS) é uma das maiores conquistas matemáticas alcançadas pela humanidade ao desafiar os limites do design de algoritmos e matemática clássica. Compreender a profunda estrutura matemática do GNFS não é apenas aprender sobre a história da criptanálise, é também uma jornada de exploração intelectual que nos permite tocar na beleza da teoria da complexidade computacional e da teoria algébrica dos números. Até ao dia em que os computadores quânticos se tornarem práticos, o GNFS deverá manter a sua coroa como o algoritmo de fatoração de inteiros mais poderoso.
+

@@ -1,7 +1,7 @@
 ---
 title: "Teknik Mengatasi Kekurangan Memori GPU dalam Pengembangan AI (CPU Offloading, dll.)"
 slug: "ai-gpu-vram-optimization-cpu-offloading"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -288,3 +288,4 @@ Kekurangan memori GPU (Out of Memory) dalam pengembangan AI merupakan masalah ab
 3. **ZeRO & CPU Offloading (DeepSpeed):** Menembus batas VRAM dengan membagi status optimizer dan gradien ke berbagai GPU, atau dengan melakukan offload ke dalam memori CPU.
 
 Mari manfaatkan sepenuhnya teknologi mutakhir ini untuk mendapatkan kinerja pengembangan AI semaksimal mungkin dalam keterbatasan sumber daya perangkat keras. Pada bidang yang perubahannya terjadi sangat pesat ini, algoritma penghematan memori baru sangat diharapkan untuk terus bermunculan di masa depan. Secara rutin memantau tren pustaka (library) terbaru serta mengimplementasikannya dalam sistem Anda akan menjadi kunci kesuksesan.
+

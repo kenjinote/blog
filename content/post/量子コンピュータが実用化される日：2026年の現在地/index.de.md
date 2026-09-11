@@ -1,7 +1,7 @@
 ---
 title: 'Der Tag, an dem Quantencomputer praktisch werden: Der aktuelle Stand im Jahr 2026'
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -173,3 +173,4 @@ Das Jahr 2026 wird in die Geschichte der Quantencomputer als „das erste Jahr d
 
 ---
 *Dieser Artikel basiert auf den neuesten Forschungsarbeiten und Branchentrends im Bereich des Quantencomputings mit Stand 2026.*
+

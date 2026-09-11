@@ -1,7 +1,7 @@
 ---
 title: 'Techniques pour résoudre le manque de mémoire GPU dans le développement de l''IA (déchargement CPU, etc.)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -288,3 +288,4 @@ Dans le développement de l'IA, le manque de mémoire GPU (Out of Memory) est un
 3. **ZeRO & Déchargement CPU (DeepSpeed) :** Répartir les états de l'optimiseur et les gradients sur plusieurs GPU, ou les décharger sur la mémoire CPU pour dépasser les limites de la VRAM.
 
 En maîtrisant ces technologies avancées, maximisons les performances de développement de l'IA dans les limites de nos ressources matérielles. Dans ce domaine qui évolue à pas de géant, de nouveaux algorithmes d'économie de mémoire devraient continuer d'apparaître. La clé sera de vérifier régulièrement l'évolution des dernières bibliothèques et de les intégrer dans vos implémentations.
+

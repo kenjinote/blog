@@ -1,7 +1,7 @@
 ---
 title: 'Técnicas de Resolução para Falta de Memória de GPU no Desenvolvimento de IA (CPU Offloading, etc.)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -288,3 +288,4 @@ A falta de memória de GPU (Out of Memory) no desenvolvimento de IA será um des
 3. **ZeRO & CPU Offload (DeepSpeed):** Supera o limite de VRAM fracionando os estados do otimizador e gradientes em múltiplas GPUs ou transferindo-os para a CPU (Offloading).
 
 Aproveitando amplamente essas tecnologias inovadoras, maximize a performance no desenvolvimento de IA usando recursos limitados de hardware. Neste campo em evolução incrivelmente rápida, espera-se que surjam cada vez mais novos algoritmos de economia de memória no futuro. O segredo será verificar regularmente os desenvolvimentos recentes das bibliotecas e ser capaz de introduzi-las perfeitamente nas suas implementações.
+

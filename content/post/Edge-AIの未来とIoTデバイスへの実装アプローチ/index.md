@@ -1,7 +1,7 @@
 ---
 title: "Edge AIの未来とIoTデバイスへの実装アプローチ"
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ Edge AIは、単なる「クラウドの補完技術」という位置づけか�
 
 ---
 *この記事は、IoTデバイスへのAI実装に関心を持つエンジニアおよびシステムアーキテクト向けに作成されました。*
+

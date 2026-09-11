@@ -1,7 +1,7 @@
 ---
 title: 'Cara Mengintegrasikan AI Pengenalan Suara (Whisper) ke dalam Proyek C++'
 slug: "whisper-cpp-integration-guide"
-date: "2026-09-12T04:00:00+09:00"
+date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -298,3 +298,4 @@ Pada artikel ini, kami telah menjelaskan secara rinci tentang cara memanfaatkan 
 * **Optimasi yang Luar Biasa**: Manfaat kuantisasi 4-bit oleh `ggml` dan backend perangkat keras seperti Metal/cuBLAS.
 
 Silakan manfaatkan `whisper.cpp` untuk memutus ketergantungan pada lingkungan Python yang berat atau API cloud, serta mewujudkan pengembangan aplikasi pemrosesan suara yang dapat beroperasi secara cepat dan aman di lingkungan native. AI yang berjalan secara lokal niscaya akan menjadi teknologi kunci dalam pengembangan perangkat lunak masa depan, terutama dari sisi perlindungan privasi dan latensi.
+

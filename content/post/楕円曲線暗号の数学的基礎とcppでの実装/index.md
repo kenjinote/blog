@@ -1,7 +1,7 @@
 ---
 title: "楕円曲線暗号（ECC）の数学的基礎とC++での実装"
 slug: "elliptic-curve-cryptography-math-cpp"
-date: "2026-09-12T10:00:00+09:00"
+date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -445,3 +445,4 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 実際にプロダクション環境で動作する暗号ライブラリを自作することは、セキュリティ上のリスクが極めて高いため非推奨（"Don't roll your own crypto"）とされています。しかし、その内部で動いているアルゴリズムと数学的背景を深く理解することは、よりセキュアでパフォーマンスの高いシステムを設計・運用するエンジニアにとって、かけがえのない強力な武器となるはずです。
 
 次回の記事では、この楕円曲線を用いたデジタル署名アルゴリズムである **ECDSA (Elliptic Curve Digital Signature Algorithm)** のメカニズムや、ビットコインで採用されている **Schnorr署名** についてさらに深く掘り下げていきたいと思います。
+

@@ -1,7 +1,7 @@
 ---
 title: '量子计算机实用的日子：2026年的现状'
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -173,3 +173,4 @@ gantt
 
 ---
 *本文基于截至2026年最新的量子计算研究论文及行业动态撰写。*
+

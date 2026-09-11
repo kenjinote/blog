@@ -1,7 +1,7 @@
 ---
 title: 'Simulé el algoritmo de Shor en Python'
 slug: "shors-algorithm-simulation-python"
-date: "2026-09-12T08:00:00+09:00"
+date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -358,3 +358,4 @@ Te invitamos a ejecutar el código de Python presentado aquí en tu propio entor
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+

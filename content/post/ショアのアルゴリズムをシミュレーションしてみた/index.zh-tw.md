@@ -1,7 +1,7 @@
 ---
 title: '用Python模擬秀爾演算法'
 slug: "shors-algorithm-simulation-python"
-date: "2026-09-12T08:00:00+09:00"
+date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -358,3 +358,4 @@ PQC 建立在被認為即使使用秀爾演算法（或葛羅佛演算法）也�
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+

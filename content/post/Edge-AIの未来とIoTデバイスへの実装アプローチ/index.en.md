@@ -1,7 +1,7 @@
 ---
 title: 'The Future of Edge AI and Implementation Approaches for IoT Devices'
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ At the forefront of IoT, where the physical and digital worlds merge, Edge AI wi
 
 ---
 *This article was created for engineers and system architects interested in AI implementation on IoT devices.*
+

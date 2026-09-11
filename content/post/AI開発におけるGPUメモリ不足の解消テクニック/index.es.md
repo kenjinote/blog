@@ -1,7 +1,7 @@
 ---
 title: 'Técnicas de resolución para la escasez de memoria de GPU en el desarrollo de IA (Descarga de CPU, etc.)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -289,3 +289,4 @@ La escasez de memoria de GPU (Out of Memory) en el desarrollo de IA será un des
 3. **ZeRO y descarga de CPU (DeepSpeed):** Supera los límites de VRAM dividiendo el estado del optimizador y los gradientes en múltiples GPUs, o descargándolos en la memoria de la CPU.
 
 Al aprovechar al máximo estas tecnologías avanzadas, logremos extraer el mayor rendimiento posible en el desarrollo de IA dentro de unos recursos de hardware limitados. En este campo, que avanza a pasos agigantados día con día, es de esperar que en el futuro sigan apareciendo nuevos algoritmos para ahorrar memoria. La clave estará en revisar periódicamente las novedades en las últimas librerías y adoptarlas en nuestras implementaciones.
+

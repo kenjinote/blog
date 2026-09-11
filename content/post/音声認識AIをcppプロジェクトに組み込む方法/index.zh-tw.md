@@ -1,7 +1,7 @@
 ---
 title: '如何將語音辨識AI（Whisper）整合至C++專案'
 slug: "whisper-cpp-integration-guide"
-date: "2026-09-12T04:00:00+09:00"
+date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -298,3 +298,4 @@ $$ N_{\text{threads}} = \min(\text{實體 CPU 核心數}, 4 \sim 8) $$
 * **壓倒性的最佳化**: 透過 `ggml` 進行 4-bit 量化，以及受惠於 Metal/cuBLAS 等硬體後端。
 
 請務必在開發能夠擺脫對龐大 Python 環境或雲端 API 的依賴，並在原生環境中高速且安全運作的語音處理應用程式時，善用 `whisper.cpp`。從隱私保護與低延遲的角度來看，完全在地端運行的 AI 必將成為未來軟體開發中極為重要的關鍵技術。
+

@@ -1,7 +1,7 @@
 ---
 title: 'AI开发中解决GPU内存不足的技巧（CPU卸载等）'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
-date: "2026-09-12T01:00:00+09:00"
+date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -288,3 +288,4 @@ model = AutoModelForCausalLM.from_pretrained(
 3. **ZeRO & CPU卸载 (DeepSpeed):** 将优化器状态和梯度在多个GPU间进行分割，或者卸载到CPU内存中，从而突破VRAM限制。
 
 通过娴熟运用这些高级技术，您可以在有限的硬件资源中挖掘出极致的AI开发效能。在日新月异的领域中，未来一定会涌现出更多新的内存节省算法。定期关注最新库的发展动向，并将其引入实际开发中，将是成功的关键。
+

@@ -1,7 +1,7 @@
 ---
 title: 'Erklärung der Funktionsweise der Quantisierungstechnologie (GGUF) in llama.cpp'
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-12T00:00:00+09:00"
+date: "2026-09-11T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -249,3 +249,4 @@ Die technologischen Fähigkeiten von llama.cpp, das die Demokratisierung der KI 
 - [K-quants Implementation PR](https://github.com/ggerganov/llama.cpp/pull/1684)
 
 (Ende)
+

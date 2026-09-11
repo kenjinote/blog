@@ -1,7 +1,7 @@
 ---
 title: 'Construção Simples de LLM Local e Integração de API usando Ollama'
 slug: "ollama-local-llm-api-guide"
-date: "2026-09-12T02:00:00+09:00"
+date: "2026-09-11T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -224,7 +224,7 @@ Exemplo de resposta (parcialmente omitida):
 ```json
 {
   "model": "llama3.1",
-  "created_at": "2026-09-12T10:00:00.000Z",
+  "created_at": "2026-09-11T10:00:00.000Z",
   "response": "Quantum entanglement is like having a pair of magical dice...",
   "done": true,
   "context": [128006, 882, 128007, 271, 10445],
@@ -496,3 +496,4 @@ Ao integrar as solicitações de API do Ollama em scripts Python e Shell, você 
 Com a chegada do Ollama, a barreira de entrada para introduzir LLMs locais caiu drasticamente. A combinação de uma estrutura de comandos simples, como operar contêineres Docker, com uma API REST facilmente acessível a partir de aplicativos externos, é o atual padrão de mercado no desenvolvimento de IA local, sem exagero.
 
 Desenvolvedores que sofrem com as restrições de custos e segurança dos LLMs em nuvem devem aproveitar as etapas introduzidas neste artigo para tentar construir um ambiente LLM local usando o Ollama e integrá-lo em seus aplicativos. Vocês poderão sentir o potencial da IA de maneira muito mais livre e próxima.
+

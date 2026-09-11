@@ -1,7 +1,7 @@
 ---
 title: 'شرح آلية تقنية التكميم (GGUF) في llama.cpp'
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-12T00:00:00+09:00"
+date: "2026-09-11T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -249,3 +249,4 @@ sequenceDiagram
 - [طلب السحب (PR) الخاص بتنفيذ K-quants](https://github.com/ggerganov/llama.cpp/pull/1684)
 
 (النهاية)
+

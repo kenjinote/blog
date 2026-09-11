@@ -1,7 +1,7 @@
 ---
 title: "The Day Quantum Computers Become Practical: The Current State in 2026"
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -173,3 +173,4 @@ The biggest challenges as of 2026 are the cooling capacity of the massive cryost
 
 ---
 *This article was written based on the latest quantum computing research papers and industry trends as of 2026.*
+

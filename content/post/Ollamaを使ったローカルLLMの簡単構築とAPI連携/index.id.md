@@ -1,7 +1,7 @@
 ---
 title: 'Membangun LLM Lokal dengan Mudah dan Integrasi API Menggunakan Ollama'
 slug: "ollama-local-llm-api-guide"
-date: "2026-09-12T02:00:00+09:00"
+date: "2026-09-11T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -224,7 +224,7 @@ Contoh respons (sebagian dihilangkan):
 ```json
 {
   "model": "llama3.1",
-  "created_at": "2026-09-12T10:00:00.000Z",
+  "created_at": "2026-09-11T10:00:00.000Z",
   "response": "Quantum entanglement is like having a pair of magical dice...",
   "done": true,
   "context": [128006, 882, 128007, 271, 10445],
@@ -497,3 +497,4 @@ Dengan mencangkokkan fungsi request API Ollama terhadap pemrograman shell (shell
 Melalui kehadiran dari instalasi Ollama, rintangan introduksi perangkat LLM bertaraf pribadi telah ditekan habis. Struktur komando dasar semudah memainkan wujud program pada kontainer sekelas Docker digabung API basis peladen mandiri seperti integrasi API eksternal REST yang mudah untuk dijembatani oleh modul luar apa pun, memang bukan perumpamaan main-main bahwa kini hal ini sedang diangkat layaknya wujud arsitektur standar saat ini (de facto standard) dalam perancangan pemrograman berbasis AI pada lingkup privat (lokal).
 
 Apabila sebagian pihak saat sekarang dirundung perkara privasi atau hambatan operasional dari penerapan fasilitas peladen awan (cloud), mohon perkenan mempraktikkan proses perangkaian wujud infrastruktur pangkalan LLM secara personal (lokal) dengan fasilitas instrumen seperti penjabaran tahap demi tahap melalui Ollama dalam lembar rujukan bacaan tulisan ini. Tentu, nantinya Anda bisa langsung mencicipi lebih berlimpah kemungkinan yang diproyeksikan oleh Kecerdasan Buatan dalam posisi kian intim dengan kebebasan yang lebih mutlak.
+

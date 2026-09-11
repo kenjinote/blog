@@ -1,7 +1,7 @@
 ---
 title: "An Explanation of How llama.cpp Quantization Technology (GGUF) Works"
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-12T00:00:00+09:00"
+date: "2026-09-11T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -249,3 +249,4 @@ The technological prowess of llama.cpp, which advances the democratization of AI
 - [K-quants Implementation PR](https://github.com/ggerganov/llama.cpp/pull/1684)
 
 (End)
+

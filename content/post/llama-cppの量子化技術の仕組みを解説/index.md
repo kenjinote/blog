@@ -1,7 +1,7 @@
 ---
 title: "llama.cppの量子化技術（GGUF）の仕組みを解説"
 slug: "llama-cpp-quantization-gguf"
-date: "2026-09-12T00:00:00+09:00"
+date: "2026-09-11T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -249,3 +249,4 @@ AIの民主化を推し進める llama.cpp の技術力は、単なるツール�
 - [K-quants Implementation PR](https://github.com/ggerganov/llama.cpp/pull/1684)
 
 （おわり）
+

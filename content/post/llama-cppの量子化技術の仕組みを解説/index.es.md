@@ -1,7 +1,7 @@
 ---
 title: 'Explicación del mecanismo de la tecnología de cuantización (GGUF) de llama.cpp'
 slug: 'llama-cpp-quantization-gguf'
-date: '2026-09-12T00:00:00+09:00'
+date: '2026-09-11T00:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -249,3 +249,4 @@ Se podría decir, sin exagerar, que el poder tecnológico detrás de llama.cpp, 
 - [PR de la implementación de K-quants](https://github.com/ggerganov/llama.cpp/pull/1684)
 
 (Fin)
+

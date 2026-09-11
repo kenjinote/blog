@@ -1,7 +1,7 @@
 ---
 title: "Edge AI的未來與IoT裝置的實作方法"
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ Edge AI已經從單純的「雲端輔助技術」，進化成為決定IoT系統�
 
 ---
 *本文是為對將AI部署至IoT裝置感興趣的工程師及系統架構師所撰寫。*
+

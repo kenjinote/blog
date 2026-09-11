@@ -1,7 +1,7 @@
 ---
 title: 'Le jour où les ordinateurs quantiques seront mis en pratique : situation en 2026'
 slug: "quantum-computing-2026-current-status"
-date: "2026-09-12T06:00:00+09:00"
+date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -173,3 +173,4 @@ L'année 2026 sera enregistrée dans l'histoire des ordinateurs quantiques comme
 
 ---
 *Cet article a été rédigé sur la base des dernières recherches et tendances de l'industrie de l'informatique quantique en 2026.*
+

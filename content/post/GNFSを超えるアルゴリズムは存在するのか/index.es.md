@@ -1,7 +1,7 @@
 ---
 title: '¿Existe un algoritmo que supere a GNFS (Criba General del Cuerpo de Números)?'
 slug: "beyond-gnfs-integer-factorization-algorithms"
-date: "2026-09-12T09:00:00+09:00"
+date: "2026-09-11T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -175,3 +175,4 @@ El consenso actual en la comunidad científica frente a la pregunta "¿Existe al
 3. **La verdadera amenaza es el algoritmo cuántico**: El que ha cruzado la barrera de la complejidad computacional es el algoritmo de Shor, basado en los principios de la mecánica cuántica. Debido a esto, el mundo se está viendo obligado a migrar hacia la criptografía poscuántica (PQC: Post-Quantum Cryptography). La vanguardia de la criptografía actual consiste en la transición a nuevos problemas matemáticos, como la criptografía basada en retículos y la criptografía basada en hash, que se consideran difíciles de descifrar (imposibles de resolver en tiempo polinómico) incluso para los ordenadores cuánticos.
 
 La Criba General del Cuerpo de Números (GNFS) es uno de los "mayores logros" alcanzados por la humanidad al desafiar los límites de las matemáticas clásicas y el diseño de algoritmos. Comprender la profunda estructura matemática de GNFS no es solo aprender sobre la historia del criptoanálisis, sino que también es un viaje de exploración intelectual para entrar en contacto con la belleza de la teoría de la complejidad computacional y la teoría de los números algebraicos. Hasta el día en que los ordenadores cuánticos se implementen de forma práctica, GNFS seguramente seguirá defendiendo su trono como el algoritmo de factorización de enteros más poderoso.
+

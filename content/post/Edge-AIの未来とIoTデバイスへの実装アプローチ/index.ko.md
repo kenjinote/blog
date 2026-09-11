@@ -1,7 +1,7 @@
 ---
 title: 'Edge AI의 미래와 IoT 디바이스 구현 접근법'
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ Edge AI는 단순한 '클라우드의 보완 기술'이라는 위치에서 벗�
 
 ---
 *이 기사는 IoT 디바이스의 AI 구현에 관심 있는 엔지니어 및 시스템 아키텍트를 위해 작성되었습니다.*
+

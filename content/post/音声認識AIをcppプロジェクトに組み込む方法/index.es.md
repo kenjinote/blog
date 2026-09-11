@@ -1,7 +1,7 @@
 ---
 title: 'Cómo integrar la IA de reconocimiento de voz (Whisper) en un proyecto C++'
 slug: "whisper-cpp-integration-guide"
-date: "2026-09-12T04:00:00+09:00"
+date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -298,3 +298,4 @@ En este artículo, hemos explicado en detalle cómo utilizar `whisper.cpp` para 
 * **Optimización asombrosa**: Los beneficios de la cuantización de 4 bits con `ggml` y los backends de hardware como Metal/cuBLAS.
 
 Corte la dependencia de entornos de Python enormes y de las APIs en la nube, y utilice `whisper.cpp` para el desarrollo de aplicaciones de procesamiento de audio que se ejecuten de manera rápida y segura en entornos nativos. Desde el punto de vista de la protección de la privacidad y la latencia, la IA de ejecución local será una tecnología clave extremadamente importante en el desarrollo de software del futuro.
+

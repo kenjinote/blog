@@ -1,7 +1,7 @@
 ---
 title: '타원곡선 암호(ECC)의 수학적 기초와 C++에서의 구현'
 slug: "elliptic-curve-cryptography-math-cpp"
-date: "2026-09-12T10:00:00+09:00"
+date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -445,3 +445,4 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 실제 프로덕션 환경에서 동작하는 암호 라이브러리를 직접 만드는 것은 보안상 위험이 매우 높기 때문에 권장되지 않습니다("Don't roll your own crypto"). 하지만 그 내부에서 동작하고 있는 알고리즘과 수학적 배경을 깊이 이해하는 것은 더 안전하고 퍼포먼스가 높은 시스템을 설계 및 운영하는 엔지니어에게 둘도 없이 강력한 무기가 될 것입니다.
 
 다음 기사에서는 이 타원곡선을 이용한 디지털 서명 알고리즘인 **ECDSA(Elliptic Curve Digital Signature Algorithm)**의 메커니즘이나, 비트코인에서 채택된 **Schnorr 서명(슈노르 서명)**에 대해 한층 더 깊이 파고들어 보고자 합니다.
+

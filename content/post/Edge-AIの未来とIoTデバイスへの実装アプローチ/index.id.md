@@ -1,7 +1,7 @@
 ---
 title: 'Masa Depan Edge AI dan Pendekatan Implementasi pada Perangkat IoT'
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ Di garis depan IoT tempat dunia fisik dan dunia digital menyatu, Edge AI tidak d
 
 ---
 *Artikel ini dibuat untuk para insinyur dan arsitek sistem yang tertarik dalam implementasi AI pada perangkat IoT.*
+

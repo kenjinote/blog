@@ -1,7 +1,7 @@
 ---
 title: '边缘AI的未来与IoT设备的实现方法'
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ $$ w_{t+1} = \sum_{k=1}^{K} \frac{n_k}{N} w_{t+1}^k $$
 
 ---
 *本文专为对将AI部署到IoT设备感兴趣的工程师和系统架构师编写。*
+

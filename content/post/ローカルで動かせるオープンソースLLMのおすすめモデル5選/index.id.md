@@ -1,7 +1,7 @@
 ---
 title: '5 Rekomendasi Model LLM Open Source Terbaik yang Bisa Dijalankan secara Lokal'
 slug: 'top-5-open-source-local-llms'
-date: '2026-09-12T03:00:00+09:00'
+date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -278,3 +278,4 @@ Pada artikel kali ini, kami telah memperkenalkan 5 model LLM open source terbaik
 
 Kecepatan evolusi LLM open source sangatlah luar biasa, di mana setiap beberapa bulan muncul terobosan baru yang mengubah konsep yang ada sebelumnya. Ke depannya, berkat perkembangan lebih lanjut pada teknologi kuantisasi dan hadirnya arsitektur terbaru, masa di mana AI lokal mampu mengalahkan AI cloud mungkin segera tiba.
 Silakan unduh model yang paling ideal dengan konfigurasi perangkat keras yang Anda miliki saat ini, dan rasakan betapa bebas serta besar potensi AI lokal yang berada di genggaman Anda.
+

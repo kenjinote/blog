@@ -1,7 +1,7 @@
 ---
 title: 'Top 5 Recommended Open Source LLM Models You Can Run Locally'
 slug: 'top-5-open-source-local-llms'
-date: '2026-09-12T03:00:00+09:00'
+date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -281,3 +281,4 @@ In this article, we introduced 5 of the top open source local LLMs as of 2026, a
 
 The speed at which open source LLMs are evolving is staggering, with breakthroughs that overturn conventional wisdom being announced every few months. Going forward, with further improvements in quantization technologies and the introduction of new architectures, the day when local environments surpass cloud AI may be near.
 By all means, download the optimal model for your hardware environment and experience the overwhelming freedom and possibilities of local AI.
+

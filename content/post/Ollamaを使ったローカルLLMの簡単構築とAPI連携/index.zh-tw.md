@@ -1,7 +1,7 @@
 ---
 title: '使用Ollama輕鬆建置本機LLM與API串接'
 slug: "ollama-local-llm-api-guide"
-date: "2026-09-12T02:00:00+09:00"
+date: "2026-09-11T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -224,7 +224,7 @@ curl -X POST http://localhost:11434/api/generate -d '{
 ```json
 {
   "model": "llama3.1",
-  "created_at": "2026-09-12T10:00:00.000Z",
+  "created_at": "2026-09-11T10:00:00.000Z",
   "response": "Quantum entanglement is like having a pair of magical dice...",
   "done": true,
   "context": [128006, 882, 128007, 271, 10445],
@@ -496,3 +496,4 @@ $$
 隨著 Ollama 的出現，導入本機 LLM 的門檻大幅降低了。如同操作 Docker 容器般簡單的指令系統，加上外部應用程式能輕易使用的 REST API 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
 
 如果你正在為了雲端 LLM 的成本或安全性限制而苦惱，請務必參考本文介紹的步驟，使用 Ollama 建置本機 LLM 環境，並將其整合到你自己的應用程式中。你一定能夠更自由、更切身地感受到 AI 所擁有的潛力。
+

@@ -1,7 +1,7 @@
 ---
 title: 'El futuro de la IA perimetral (Edge AI) y los enfoques de implementación para dispositivos IoT'
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ A medida que el mundo físico y el mundo digital convergen a la vanguardia del I
 
 ---
 *Este artículo ha sido creado para ingenieros y arquitectos de sistemas interesados en la implementación de IA en dispositivos IoT.*
+

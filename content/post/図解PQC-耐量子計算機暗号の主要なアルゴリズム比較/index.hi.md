@@ -1,7 +1,7 @@
 ---
 title: '【चित्रित PQC】 क्वांटम-प्रतिरोधी क्रिप्टोग्राफी के प्रमुख एल्गोरिदम की तुलना'
 slug: "post-quantum-cryptography-algorithms-comparison"
-date: "2026-09-12T07:00:00+09:00"
+date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -328,3 +328,4 @@ NIST द्वारा FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), और FIPS 205 (S
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+

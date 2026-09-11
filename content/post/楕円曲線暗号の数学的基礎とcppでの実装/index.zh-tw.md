@@ -1,7 +1,7 @@
 ---
 title: '橢圓曲線密碼學（ECC）的數學基礎與C++實作'
 slug: "elliptic-curve-cryptography-math-cpp"
-date: "2026-09-12T10:00:00+09:00"
+date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -445,3 +445,4 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 一般極不建議自行編寫應用於正式生產環境的密碼學函式庫（"Don't roll your own crypto"），因為這伴隨著極高的安全風險。然而，對於設計和維護高安全性、高效能系統的工程師來說，深入了解其內部運作的演算法及數學背景，無疑是一項極其寶貴且強大的武器。
 
 在下一篇文章中，我們將進一步探討利用這條橢圓曲線所建立的數位簽章演算法——**ECDSA (Elliptic Curve Digital Signature Algorithm)** 的機制，以及比特幣所採用的 **Schnorr 簽章**。
+

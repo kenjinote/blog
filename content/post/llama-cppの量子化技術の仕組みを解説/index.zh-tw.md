@@ -1,7 +1,7 @@
 ---
 title: '解說 llama.cpp 的量化技術（GGUF）機制'
 slug: 'llama-cpp-quantization-gguf'
-date: '2026-09-12T00:00:00+09:00'
+date: '2026-09-11T00:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -249,3 +249,4 @@ sequenceDiagram
 - [K-quants Implementation PR](https://github.com/ggerganov/llama.cpp/pull/1684)
 
 （完）
+

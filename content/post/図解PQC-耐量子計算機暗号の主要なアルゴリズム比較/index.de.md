@@ -1,7 +1,7 @@
 ---
 title: '【Grafik PQC】Vergleich der wichtigsten Algorithmen für die Post-Quanten-Kryptographie'
 slug: "post-quantum-cryptography-algorithms-comparison"
-date: "2026-09-12T07:00:00+09:00"
+date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -328,3 +328,4 @@ Der Kampf zwischen Quantencomputern und Kryptographie ist ein spannendes Feld, i
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+

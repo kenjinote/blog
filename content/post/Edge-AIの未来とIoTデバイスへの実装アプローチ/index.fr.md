@@ -1,7 +1,7 @@
 ---
 title: "L'avenir de l'Edge AI et les approches d'implémentation pour les appareils IoT"
 slug: "edge-ai-future-iot-implementation"
-date: "2026-09-12T05:00:00+09:00"
+date: "2026-09-11T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ De plus, grâce à des approches d'apprentissage distribué comme le Federated L
 
 ---
 *Cet article a été rédigé à l'intention des ingénieurs et des architectes de systèmes intéressés par l'implémentation de l'IA sur les appareils IoT.*
+

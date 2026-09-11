@@ -1,7 +1,7 @@
 ---
 title: 'Apa itu Fully Homomorphic Encryption (FHE)? Menjelaskan Kunci Keamanan Generasi Berikutnya'
 slug: "fully-homomorphic-encryption-fhe-explained"
-date: "2026-09-12T11:00:00+09:00"
+date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -264,3 +264,4 @@ Sama seperti penemuan kriptografi kunci publik (RSA) pada tahun 1970-an yang mem
 Saat ini, Fully Homomorphic Encryption (FHE) telah melompat dari teori di laboratorium, dan memasuki tahap di mana Microsoft, IBM, Intel, Google, dan banyak startup bersaing keras menuju implementasi praktisnya. Walaupun tantangan dalam biaya komputasi dan ukuran data masih ada, perbaikan kinerja terus berlanjut melampaui Hukum Moore berkat penyempurnaan algoritma dan evolusi akselerator hardware.
 
 Beberapa tahun dari sekarang, "komputasi data sambil tetap terenkripsi" tidak akan menjadi sesuatu yang istimewa, melainkan akan menjadi praktik perlindungan data standar dalam layanan cloud. FHE adalah kunci keamanan generasi berikutnya yang merealisasikan **keseimbangan tertinggi antara privasi absolut dan pemanfaatan data** dalam masyarakat yang digerakkan oleh data.
+

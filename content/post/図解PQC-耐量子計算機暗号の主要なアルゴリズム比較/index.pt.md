@@ -1,7 +1,7 @@
 ---
 title: '【Ilustrado PQC】Comparação dos principais algoritmos de criptografia pós-quântica'
 slug: "post-quantum-cryptography-algorithms-comparison"
-date: "2026-09-12T07:00:00+09:00"
+date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -328,3 +328,4 @@ O conflito entre os computadores quânticos e a criptografia é a área emociona
 * *FIPS 203: Padrão para Mecanismo de Encapsulamento de Chaves Baseado em Módulo de Reticulado*
 * *FIPS 204: Padrão para Assinaturas Digitais Baseado em Módulo de Reticulado*
 * *FIPS 205: Padrão para Assinaturas Digitais Stateless Baseadas em Hash*
+

@@ -1,7 +1,7 @@
 ---
 title: 'Le top 5 des modèles LLM open source recommandés à exécuter en local'
 slug: 'top-5-open-source-local-llms'
-date: '2026-09-12T03:00:00+09:00'
+date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -278,3 +278,4 @@ Dans cet article, nous avons présenté cinq des meilleurs LLM locaux open sourc
 
 La vitesse d'évolution des LLM open source est stupéfiante, et des avancées bouleversant les conventions actuelles sont annoncées tous les quelques mois. À l'avenir, avec les améliorations continues de la technologie de quantification et l'émergence de nouvelles architectures, le jour où un environnement local surpassera l'IA cloud n'est peut-être pas loin.
 N'hésitez pas à télécharger le modèle optimal en fonction de votre environnement matériel et à expérimenter la liberté et le potentiel extraordinaires de l'IA locale.
+
