@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Fortschritte bei der Salesforce-Entwicklung! Zusammenfassung empfohlener Chrome-Erweiterungen'
 slug: "SalesforceおすすめChrome拡張"
 date: 2022-05-02T10:39:36+09:00

@@ -1,4 +1,4 @@
----
+﻿---
 title: '[VS2022] Exécuter PowerShell depuis C++ ! Procédure d''intégration via une DLL C++/CLI'
 slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00

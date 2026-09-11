@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Einfacher Befehl zum stapelweisen Löschen von .DS_Store-Dateien mit PowerShell'
-slug: ".DS_Store stapelweise löschen mit PowerShell"
+slug: "PowerShellで.DS_Storeを一括削除する"
 date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false

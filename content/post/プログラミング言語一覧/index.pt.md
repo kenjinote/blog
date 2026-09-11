@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Do popular ao nicho! Lista de linguagens de programação e resumo de suas características'
-slug: "Lista de Linguagens de Programação"
+slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["プログラミング言語"]
 draft: true

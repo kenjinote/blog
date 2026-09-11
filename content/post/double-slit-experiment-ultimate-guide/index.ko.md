@@ -1,4 +1,4 @@
----
+﻿---
 title: '【완전 망라】 양자역학 최대의 수수께끼 ''이중 슬릿 실험'' 알기 쉬운 철저 해설'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"

@@ -1,6 +1,6 @@
----
+﻿---
 title: '[C++20] Contoh Kode Sederhana untuk Mencetak Waktu Saat Ini dalam Format ISO8601 (UTC)'
-slug: "cara-menampilkan-waktu-saat-ini-dalam-format-iso8601-di-c++"
+slug: "C++で現在時刻をISO8601フォーマットで出力する方法"
 date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "Waktu", "ISO8601"]
 draft: false

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Started a Blog with Static Site Generator Hugo! Recording Daily Life and Tech Memos'
 slug: "ブログ、はじめてみました"
 date: 2022-09-02T07:23:00+09:00

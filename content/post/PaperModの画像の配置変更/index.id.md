@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Cara Mengkustomisasi Ukuran dan Penempatan Gambar pada Tema Hugo PaperMod dengan CSS'
 slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00

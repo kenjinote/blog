@@ -1,4 +1,4 @@
----
+﻿---
 title: 'How to Send Email from Gmail using the curl Command'
 slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00

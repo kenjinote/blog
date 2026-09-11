@@ -1,6 +1,6 @@
----
+﻿---
 title: '[Para iniciantes] Como se conectar facilmente a um desktop remoto com o TeamViewer'
-slug: "Conexão Remota Fácil com TeamViewer"
+slug: "TeamViewerで簡単リモート接続"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Comando", "Conexão Remota"]
 draft: false

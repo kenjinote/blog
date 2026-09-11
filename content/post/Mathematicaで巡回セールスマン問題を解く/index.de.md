@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Wie man das Problem des Handlungsreisenden (TSP) mit Mathematica löst'
-slug: "loesung-des-problems-des-handlungsreisenden-mit-mathematica"
+slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problem des Handlungsreisenden", "Algorithmus", "Mathematik"]
 draft: false

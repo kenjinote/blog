@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Como criar um programa que enumera números primos em Rust e exemplos de código'
-slug: "Enumerando Números Primos em Rust"
+slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","Números Primos","Algoritmo"]
 draft: false

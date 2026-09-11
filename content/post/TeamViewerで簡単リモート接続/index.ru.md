@@ -1,6 +1,6 @@
----
+﻿---
 title: '【Для начинающих】Как легко настроить подключение к удаленному рабочему столу с помощью TeamViewer'
-slug: "prostoe-udalennoe-podklyuchenie-s-teamviewer"
+slug: "TeamViewerで簡単リモート接続"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Команда", "Удаленное подключение"]
 draft: false

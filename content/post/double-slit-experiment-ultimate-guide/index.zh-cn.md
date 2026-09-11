@@ -1,4 +1,4 @@
----
+﻿---
 title: '【完全覆盖】深入浅出彻底解析量子力学最大的谜团“双缝实验”'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"

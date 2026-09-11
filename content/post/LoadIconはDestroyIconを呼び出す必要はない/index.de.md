@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Warum für Icons, die mit der Funktion LoadIcon abgerufen wurden, kein DestroyIcon erforderlich ist'
-slug: "LoadIcon-muss-DestroyIcon-nicht-aufrufen"
+slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["Symbol", "LoadIcon", "DestroyIcon", "Windows-Programmierung"]
 draft: false

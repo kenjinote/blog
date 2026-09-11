@@ -1,6 +1,6 @@
----
+﻿---
 title: '在macOS中停用並停止自動生成.DS_Store的終端機指令'
-slug: "在macos上避免自動產生.ds_store的指令"
+slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false

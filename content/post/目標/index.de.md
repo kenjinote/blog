@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Roadmap für Unternehmensgründung und Softwareentwicklung: Kurz- und langfristige Ziele und Aufgaben'
-slug: "ziele"
+slug: "目標"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Ziele"]
 draft: false

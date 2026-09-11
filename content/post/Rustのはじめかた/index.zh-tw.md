@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Rust 語言入門：從特色、安裝到 Hello World 的開始方式'
-slug: "如何開始使用 Rust"
+slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false

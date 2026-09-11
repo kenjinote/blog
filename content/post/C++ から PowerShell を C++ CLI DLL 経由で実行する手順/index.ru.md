@@ -1,6 +1,6 @@
----
+﻿---
 title: '【VS2022】Выполнение PowerShell из C++! Процедура интеграции через C++/CLI DLL'
-slug: "Шаги по запуску PowerShell из C++ через C++ CLI DLL"
+slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false

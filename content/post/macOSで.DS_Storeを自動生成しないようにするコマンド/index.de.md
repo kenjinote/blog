@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Terminal-Befehl zur Deaktivierung/zum Stoppen der automatischen Generierung von .DS_Store unter macOS'
-slug: "befehl-um-die-automatische-generierung-von-ds-store-unter-macos-zu-verhindern"
+slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false

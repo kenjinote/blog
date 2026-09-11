@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Como Mudar os Atalhos de Copiar e Colar do Mac para Serem Iguais aos do Windows'
 slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00

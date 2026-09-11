@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Visual Studio की उपयोगी शॉर्टकट कुंजियों की सूची [कार्य कुशलता बढ़ाएं]'
-slug: "विज़ुअल स्टूडियो शॉर्टकट सूची"
+slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "शॉर्टकट" ]
 draft: false

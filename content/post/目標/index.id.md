@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Peta Jalan untuk Kewirausahaan dan Pengembangan Perangkat Lunak: Tujuan Jangka Pendek / Jangka Panjang Serta Tugas'
-slug: "tujuan"
+slug: "目標"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Tujuan"]
 draft: false

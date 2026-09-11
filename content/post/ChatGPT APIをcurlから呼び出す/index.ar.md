@@ -1,6 +1,6 @@
----
+﻿---
 title: 'كيفية استدعاء واجهة برمجة تطبيقات ChatGPT باستخدام curl في موجه أوامر Windows'
-slug: "استدعاء-واجهة-برمجة-تطبيقات-chatgpt-من-curl"
+slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "أمر"]
 draft: false

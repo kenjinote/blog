@@ -1,4 +1,4 @@
----
+﻿---
 title: "Nach der Rückkehr aus dem Weltraum ist der jüngere Bruder älter? Das Zwillingsparadoxon"
 description: "Die von Einsteins Relativitätstheorie vorhergesagte \"Zeitdilatation\". Eine Erklärung des Paradoxons, bei dem sich das Alter des älteren Zwillingsbruders, der in einer Rakete nahe der Lichtgeschwindigkeit reiste, und des jüngeren Bruders, der auf der Erde blieb, umkehrt."
 date: 2026-09-10T21:00:00+09:00

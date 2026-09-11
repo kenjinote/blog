@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Como Obter Apenas o Último Commit de um Repositório usando Git Clone'
-slug: "obter-apenas-a-versao-mais-recente-do-repositorio-git"
+slug: "gitリポジトリの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repositório", "comando"]
 draft: false

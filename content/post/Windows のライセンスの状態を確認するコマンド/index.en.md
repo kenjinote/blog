@@ -1,4 +1,4 @@
----
+﻿---
 title: 'How to Check Windows License Activation Status! Easy Check with a Single Command'
 slug: "Windows のライセンスの状態を確認するコマンド"
 date: 2025-04-14T00:41:45+09:00

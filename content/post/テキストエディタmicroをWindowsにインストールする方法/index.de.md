@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Verfügbar für Windows! So installieren Sie den schlanken Texteditor „micro“'
-slug: "so-installieren-sie-den-micro-texteditor-unter-windows"
+slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "Texteditor"]
 draft: false

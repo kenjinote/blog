@@ -1,4 +1,4 @@
----
+﻿---
 title: 'A Summary of How to Close and Restart Windows Explorer'
 slug: "エクスプローラーの終了・再起動方法"
 date: 2024-03-30T15:40:24+09:00

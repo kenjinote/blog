@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Python और matplotlib के साथ ग्राफ़ कैसे बनाएं [Google Colab समर्थित]'
-slug: "Python (matplotlib.pyplot) का उपयोग करके ग्राफ़ कैसे बनाएं"
+slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "ग्राफ़", "गणित", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false

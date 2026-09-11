@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Cara Memecahkan Masalah Pedagang Keliling (TSP) di Mathematica'
-slug: "menyelesaikan-masalah-pedagang-keliling-dengan-mathematica"
+slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Masalah Pedagang Keliling", "Algoritma", "Matematika"]
 draft: false

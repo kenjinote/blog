@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Como atualizar o compilador Rust (rustc) para a versão mais recente'
 slug: "rustcをアップデートする方法"
 date: 2023-03-18T10:27:02+09:00

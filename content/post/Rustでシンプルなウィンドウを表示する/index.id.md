@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Cara Membuat dan Menampilkan Jendela Sederhana Windows Menggunakan Rust dan winapi'
-slug: "menampilkan-jendela-sederhana-di-rust"
+slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "jendela"]
 draft: false

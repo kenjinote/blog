@@ -1,6 +1,6 @@
----
+﻿---
 title: '【Windows 11/10】能大幅提升工作效率的實用快捷鍵・小技巧集'
-slug: "Windows 的快速鍵與小技巧集"
+slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "小技巧", "快速鍵"]
 draft: false

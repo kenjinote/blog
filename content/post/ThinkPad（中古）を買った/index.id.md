@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Membeli ThinkPad T470s Bekas! Ulasan Jujur tentang Spesifikasi, Kegunaan, dan Kekurangan'
-slug: "saya-membeli-thinkpad-bekas"
+slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Laptop"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Apa Itu Saringan Eratosthenes? Algoritma dan Implementasi Daftar Bilangan Prima di Bawah 1000'
-slug: "cara-menemukan-bilangan-prima-hingga-1000-menggunakan-saringan-eratosthenes"
+slug: "エラトステネスの篩を使って1000以下の素数を列挙する方法"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Saringan Eratosthenes", "Bilangan Prima", "Matematika", "Rust"]
 draft: false

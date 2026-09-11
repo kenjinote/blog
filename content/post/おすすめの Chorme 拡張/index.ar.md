@@ -1,6 +1,6 @@
----
+﻿---
 title: 'ملخص لأفضل إضافات المتصفح الموصى بها التي تجعل Chrome و Edge أكثر فائدة بشكل كبير'
-slug: "إضافات Chrome الموصى بها"
+slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["إضافات Chrome", "متصفح", "Chrome", "Edge"]
 draft: false

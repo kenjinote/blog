@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Le monde trop beau des mathématiques : Mes formules préférées comme le théorème de Wilson ou la formule d''Euler'
 slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00

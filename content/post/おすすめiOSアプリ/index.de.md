@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Wirklich nützlich! Eine sorgfältig ausgewählte Zusammenfassung empfohlener iOS-Apps'
-slug: "empfohlene-ios-apps"
+slug: "おすすめiOSアプリ"
 date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "App", "Empfohlen"]
 draft: false

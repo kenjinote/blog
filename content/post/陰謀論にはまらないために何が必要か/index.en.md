@@ -1,4 +1,4 @@
----
+﻿---
 title: '6 Measures to Avoid Falling for Conspiracy Theories | Enhance Your Mental Security'
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: '能專注於工作或讀書！推薦的時尚咖啡廳音樂・BGM 集'
-slug: "cafe-music"
+slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00
 tags: ["咖啡館", "音樂"]
 draft: false

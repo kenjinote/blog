@@ -1,6 +1,6 @@
----
+﻿---
 title: 'O que é a Conjectura de Collatz? Verificando um problema matemático não resolvido em Python onde qualquer número sempre termina em 1'
-slug: "conjectura-de-collatz"
+slug: "コラッツ予想"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Conjectura de Collatz", "Matemática", "Programação", "Algoritmos"]
 draft: false

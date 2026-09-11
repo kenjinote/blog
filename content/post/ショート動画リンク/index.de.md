@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Zusammenfassung der angesagten Kurzvideos | Die Rettung des Tottenham-Balljungen und mehr'
-slug: "kurzvideo-links"
+slug: "ショート動画リンク"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Video", "Kurz"]
 draft: false

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Bought a Used ThinkPad T470s! An Honest Review of Specs, Usability, and Dissatisfactions'
 slug: "ThinkPad（中古）を買った"
 date: 2023-01-13T19:07:00+09:00

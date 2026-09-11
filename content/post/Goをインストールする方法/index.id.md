@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Langkah Instalasi Bahasa Go (Golang) dan Cara Menjalankan Program Pertama'
-slug: "Cara Menginstal Go"
+slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","instalasi"]
 draft: false

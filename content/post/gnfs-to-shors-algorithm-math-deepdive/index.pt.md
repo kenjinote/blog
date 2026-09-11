@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Quebrando a Criptografia RSA? GNFS e o Algoritmo de Shor Explicados por Fórmulas Matemáticas'
 slug: "gnfs-to-shors-algorithm-math-deepdive"
 date: 2026-09-06T12:00:00+09:00

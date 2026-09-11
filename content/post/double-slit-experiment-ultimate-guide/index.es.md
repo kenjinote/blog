@@ -1,4 +1,4 @@
----
+﻿---
 title: '【Guía Completa】El mayor misterio de la mecánica cuántica: el "experimento de la doble rendija" explicado detalladamente'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"

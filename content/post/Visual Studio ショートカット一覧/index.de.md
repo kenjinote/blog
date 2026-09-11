@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Liste nützlicher Tastenkombinationen für Visual Studio 【Arbeitseffizienz steigern】'
-slug: "Visual Studio Tastenkombinationen"
+slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Tastenkombinationen" ]
 draft: false

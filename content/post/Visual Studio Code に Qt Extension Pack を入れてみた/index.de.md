@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Aufbau einer Qt-Entwicklungsumgebung in VSCode! Installation und Verwendung des Qt Extension Packs'
 slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
 date: 2024-09-13T00:53:53+09:00

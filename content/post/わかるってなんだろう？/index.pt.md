@@ -1,6 +1,6 @@
----
+﻿---
 title: 'O que significa ''entender''? Sobre a ambiguidade da compreensão e seu valor'
-slug: "o-que-significa-entender"
+slug: "わかるってなんだろう？"
 date: 2022-09-24T02:38:18+09:00
 tags: ["Miscelânea"]
 draft: false

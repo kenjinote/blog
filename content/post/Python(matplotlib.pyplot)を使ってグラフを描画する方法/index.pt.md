@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Como desenhar gráficos usando Python e matplotlib [Compatível com Google Colab]'
-slug: "Como desenhar gráficos usando Python (matplotlib.pyplot)"
+slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Gráficos", "Matemática", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false

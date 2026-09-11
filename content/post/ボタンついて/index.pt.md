@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Criação de botões (controles de GUI) e método de implementação do tratamento de eventos na API do Windows'
 slug: "ボタンついて"
 date: 2023-01-14T20:24:00+09:00

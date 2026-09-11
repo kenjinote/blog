@@ -1,6 +1,6 @@
----
+﻿---
 title: 'كيفية إزالة البيانات الوصفية (المعلومات الشخصية) دفعة واحدة من Excel وWord باستخدام PowerShell'
-slug: "كيفية حذف البيانات الوصفية (المعلومات الشخصية) في Excel باستخدام PowerShell"
+slug: "PowerShell で Excel のメタデータ（個人情報）を削除する方法"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "البيانات الوصفية", "المعلومات الشخصية"]
 draft: false

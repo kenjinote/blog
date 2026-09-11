@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Um resumo de vídeos curtos populares | O drama de resgate do gandula do Tottenham, etc.'
-slug: "links-de-videos-curtos"
+slug: "ショート動画リンク"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Vídeo", "Curto"]
 draft: false

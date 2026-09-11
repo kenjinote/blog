@@ -1,4 +1,4 @@
----
+﻿---
 title: 'What is ''Hanlon''s Razor'', a Way of Thinking to Ease Human Relationships? Explaining Its Meaning and Origins'
 slug: "ハンロンの剃刀"
 date: 2024-09-24T18:14:34+09:00

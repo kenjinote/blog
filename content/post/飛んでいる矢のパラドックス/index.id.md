@@ -1,4 +1,4 @@
----
+﻿---
 title: "Apakah Panah yang Terbang Itu Berhenti?: Paradoks 'Panah Terbang' Zeno"
 description: "Panah yang sedang terbang diam pada setiap momennya. Jika demikian, apakah gerakan itu tidak ada? Teka-teki logika terbesar dari Yunani Kuno."
 date: 2026-09-10T21:00:00+09:00

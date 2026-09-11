@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Como postar tweets automaticamente com a API do Twitter e Google Colaboratory [Python]'
-slug: "como-twittar-usando-a-api-do-twitter-e-o-google-colaboratory"
+slug: "Twitter APIとGoogle Colaboratoryを使ってTweetする方法"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false

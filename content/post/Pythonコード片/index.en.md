@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Sample Code to Download, Temporarily Save, and Display an Image in Python'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00

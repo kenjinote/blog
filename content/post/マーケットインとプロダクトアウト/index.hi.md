@@ -1,6 +1,6 @@
----
+﻿---
 title: 'मार्केट-इन और प्रोडक्ट-आउट में क्या अंतर है? फायदे और नुकसान को आसानी से समझाएं'
-slug: "market-in-and-product-out"
+slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Development", "Business", "Poem"]
 draft: false

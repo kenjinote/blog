@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Windows में राइट-क्लिक मेनू में Hidemaru Editor का grep जोड़ने का तरीका'
-slug: "एक्सप्लोरर-संदर्भ-मेनू-में-hidemaru-editor-grep-जोड़ें"
+slug: "エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "एक्सप्लोरर", "संदर्भ मेनू", "grep", "रजिस्ट्री"]
 draft: false

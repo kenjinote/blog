@@ -1,6 +1,6 @@
----
+﻿---
 title: '使用 PowerShell 列舉並取得目前開啟中視窗標題的方法'
-slug: "列舉視窗標題"
+slug: "ウィンドウタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false

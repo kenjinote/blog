@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Implémentation du Crible du Corps de Nombres Généralisé (GNFS) en C++ | Fonctionnement de l''algorithme de décryptage RSA'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00

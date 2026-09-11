@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Ringkasan Pengetahuan Dasar dan Studi Ujian PMP: Sesuai dengan PMBOK Edisi ke-7'
 slug: "PMP勉強"
 date: 2024-02-04T18:41:31+09:00

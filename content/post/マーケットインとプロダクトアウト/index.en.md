@@ -1,4 +1,4 @@
----
+﻿---
 title: 'What is the Difference Between Market-in and Product-out? Easy Explanation of Pros and Cons'
 slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00

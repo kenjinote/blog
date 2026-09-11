@@ -1,4 +1,4 @@
----
+﻿---
 title: "Melihat Apel Biru Menjadi Bukti Bahwa 'Gagak Itu Hitam'?: Paradoks Gagak Hempel"
 description: "Bisakah kita membuktikan hipotesis 'Gagak itu hitam' tanpa melihat gagak sama sekali? Paradoks induksi yang dihasilkan oleh ekuivalensi logis."
 date: 2026-09-10T21:00:00+09:00

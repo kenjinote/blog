@@ -1,4 +1,4 @@
----
+﻿---
 title: "Returning from Space Younger than Your Brother? The Twin Paradox"
 description: "An explanation of 'time dilation' predicted by Einstein's theory of relativity, where a twin traveling in a near-light-speed rocket returns younger than the twin who stayed on Earth."
 date: 2026-09-10T21:00:00+09:00

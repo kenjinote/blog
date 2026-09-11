@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Alasan dan Spesifikasi Pembelian Mac mini (2018) Bekas untuk Pengembangan Aplikasi iOS'
-slug: "Membeli mac mini(2018)"
+slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Kunci Sukses dalam Memilih Bisnis dan Sistematisasi: Catatan Praktis untuk Para Pemimpin Perusahaan'
 slug: "経営者メモ"
 date: 2022-09-07T02:36:11+09:00

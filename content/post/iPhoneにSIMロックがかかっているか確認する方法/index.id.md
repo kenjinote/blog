@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Cara Mudah Memeriksa Status SIM Lock iPhone (Terkunci/Tidak)'
-slug: "cara-memeriksa-apakah-iphone-anda-terkunci-sim"
+slug: "iPhoneにSIMロックがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "Kunci SIM"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Lista de atalhos convenientes para o Visual Studio [Aumento de Eficiência]'
-slug: "Lista de Atalhos do Visual Studio"
+slug: "Visual Studio ショートカット一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Atalhos" ]
 draft: false

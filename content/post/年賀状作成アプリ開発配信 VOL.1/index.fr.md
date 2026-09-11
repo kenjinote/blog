@@ -1,4 +1,4 @@
----
+﻿---
 title: '【C++】Streaming du développement d''une application de création de cartes de vœux VOL.1 : Configuration de l''environnement et initialisation de Direct2D'
 slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00

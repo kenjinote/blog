@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Mathematica Introduction: How to Use Basic Commands for Equations, Calculus, etc.'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00

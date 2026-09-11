@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Как создать и отобразить простое окно Windows с помощью Rust и winapi'
-slug: "otobrazhenie-prostogo-okna-v-rust"
+slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "окно"]
 draft: false

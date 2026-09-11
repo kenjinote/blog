@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Hugo में KaTeX कैसे पेश करें और सुंदर LaTeX-शैली के सूत्र कैसे प्रदर्शित करें'
-slug: "how-to-enable-katex-in-hugo"
+slug: "hugoでKaTeX(LaTeX風数式表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "सूत्र", "गणित", "hugo"]
 draft: false

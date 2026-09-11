@@ -1,6 +1,6 @@
----
+﻿---
 title: 'إعلان عن طلب رعاية GitHub | طلب دعم التطوير'
-slug: "البحث-عن-رعاة-على-github"
+slug: "GitHubスポンサー募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "راعي"]
 draft: false

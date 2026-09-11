@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment annuler un git reset exécuté par erreur | Procédure de restauration de commit'
-slug: "comment-annuler-un-git-reset"
+slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurer", "annuler"]
 draft: false

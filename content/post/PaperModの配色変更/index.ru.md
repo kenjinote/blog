@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Как изменить цветовую схему и тему в теме Hugo PaperMod с помощью CSS'
-slug: "izmenenie-tsvetovoy-shemy-papermod"
+slug: "PaperModの配色変更"
 date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: '【مجاني وسهل جداً】كيفية توليد صور ورسومات بالذكاء الاصطناعي باستخدام Stable Diffusion! شرح خطوات Google Colab'
-slug: "كيفية-إنشاء-صور-توضيحية-باستخدام-الذكاء-الاصطناعي-StableDiffusion"
+slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "توضيح", "إنشاء صور", "Google Colaboratory"]
 draft: false

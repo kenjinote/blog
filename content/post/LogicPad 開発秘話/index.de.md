@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Die Entwicklungsgeschichte des Low-Code-Tools „LogicPad“: Warum wurde es erstellt?'
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00

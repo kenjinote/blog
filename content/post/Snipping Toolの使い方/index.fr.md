@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment utiliser le ''Snipping Tool'' standard de Windows et les méthodes d''enregistrement d''écran et de capture'
-slug: "Comment utiliser l'outil Capture d'écran (Snipping Tool)"
+slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Image", "Vidéo", "Capture d'écran", "Enregistrement", "Capture"]
 draft: false

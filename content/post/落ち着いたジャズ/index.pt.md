@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Perfeito para a hora de relaxar: Playlist recomendada de jazz calmo'
-slug: "jazz-calmo"
+slug: "落ち着いたジャズ"
 date: 2022-09-08T17:40:26+09:00
 tags: ["Jazz", "Música"]
 draft: false

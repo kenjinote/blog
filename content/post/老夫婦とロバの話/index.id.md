@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Belajar dari Kisah Pasangan Tua dan Seekor Keledai: Cara Hidup Agar Tidak Terombang-ambing oleh Pendapat Orang Lain'
-slug: "Kisah Sepasang Suami Istri Tua dan Seekor Keledai"
+slug: "老夫婦とロバの話"
 date: 2024-09-18T00:56:59+09:00
 tags: ["Kisah Sepasang Suami Istri Tua dan Seekor Keledai", "Satire"]
 draft: false

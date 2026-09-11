@@ -1,4 +1,4 @@
----
+﻿---
 title: '【完全網羅】量子力學最大謎團「雙狹縫實驗」徹底白話解說'
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"

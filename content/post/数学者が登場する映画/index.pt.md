@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Um gênio da matemática é o protagonista! Filmes clássicos recomendados e histórias de decodificação'
 slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00

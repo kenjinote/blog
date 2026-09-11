@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Como Configurar um Domínio Personalizado em um Repositório GitHub | Usando o Onamae.com'
-slug: "Como configurar um domínio personalizado em um repositório Github"
+slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false

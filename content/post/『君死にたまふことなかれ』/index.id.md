@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Teks Lengkap dan Penjelasan Akiko Yosano ''Kimi Shinitamou Koto Nakare'': Perasaan terhadap Sang Adik dalam Puisi Anti-Perang'
-slug: "janganlah-engkau-mati"
+slug: "『君死にたまふことなかれ』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "Janganlah Engkau Mati", "puisi", "puisi anti-perang"]
 draft: false

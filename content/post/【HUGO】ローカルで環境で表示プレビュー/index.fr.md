@@ -1,6 +1,6 @@
----
+﻿---
 title: '[Introduction à Hugo] De l''installation sur Windows à l''affichage de l''aperçu dans un environnement local'
-slug: "【HUGO】Aperçu de l'affichage dans l'environnement local"
+slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false

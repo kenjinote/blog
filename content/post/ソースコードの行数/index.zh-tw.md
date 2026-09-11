@@ -1,6 +1,6 @@
----
+﻿---
 title: '軟體的規模產生了什麼變化？原始碼行數的歷史與進化'
-slug: "source-code-lines"
+slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00
 tags: ["原始碼", "行數"]
 draft: false

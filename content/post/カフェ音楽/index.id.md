@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Fokus Bekerja dan Belajar! Kumpulan Rekomendasi Musik dan BGM Kafe yang Trendi'
-slug: "musik-kafe"
+slug: "カフェ音楽"
 date: 2022-09-08T08:39:03+09:00
 tags: ["kafe", "musik"]
 draft: false

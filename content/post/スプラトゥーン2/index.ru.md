@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Секрет долгой игры в Splatoon 2! Рекомендуемое оружие и советы по тактике'
-slug: "splatoon-2"
+slug: "スプラトゥーン2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Игры", "Nintendo Switch"]
 draft: false

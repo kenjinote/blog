@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Les principes et les mécanismes de l''ordinateur quantique [Couverture complète] Des limites de la loi de Moore à la mécanique quantique'
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'أسباب شراء جهاز Mac mini (2018) مستعمل لتطوير تطبيقات iOS والمواصفات'
-slug: "شراء mac mini(2018)"
+slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false

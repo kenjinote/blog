@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Konfigurationsmethode zum Umschalten von Apps auf dem Mac im Windows-Stil (Alt+Tab)'
 slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
 date: 2023-04-05T02:20:12+09:00

@@ -1,4 +1,4 @@
----
+﻿---
 title: '使用LoadIcon函数获取的图标不需要DestroyIcon的理由'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00

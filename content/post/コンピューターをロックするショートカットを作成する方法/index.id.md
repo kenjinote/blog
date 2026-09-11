@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Kunci PC Windows dalam 1 Detik! Cara Membuat dan Menggunakan Pintasan yang Praktis'
-slug: "cara-membuat-pintasan-untuk-mengunci-komputer"
+slug: "コンピューターをロックするショートカットを作成する方法"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Kunci Komputer", "Pintasan"]
 draft: false

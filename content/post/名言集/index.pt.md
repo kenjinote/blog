@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Coleção de citações que enriquecem a vida: Uma compilação de palavras comoventes de grandes figuras históricas e celebridades'
-slug: "colecao-de-citacoes"
+slug: "名言集"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Citações"]
 draft: false

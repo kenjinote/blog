@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Ich habe einen Blog mit dem statischen Website-Generator Hugo gestartet! Aufzeichnung von Alltag und technischen Notizen'
-slug: "ich-habe-einen-blog-gestartet"
+slug: "ブログ、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Verschiedenes"]
 draft: false

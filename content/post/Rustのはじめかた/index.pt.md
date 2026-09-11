@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Introdução à linguagem Rust: Como começar, desde os recursos até a instalação e o Hello World'
-slug: "Como começar com Rust"
+slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false

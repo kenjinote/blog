@@ -1,4 +1,4 @@
----
+﻿---
 title: "Apakah 'Positif dalam Tes' = 'Sakit'? Memahami Kekeliruan Tingkat Dasar"
 description: "Meskipun tes dengan akurasi 99% menunjukkan hasil positif, mungkinkah peluang Anda benar-benar sakit hanya 9%? Penjelasan tentang 'kekeliruan tingkat dasar' di mana intuisi manusia tertipu oleh data statistik."
 date: 2026-09-10T21:00:00+09:00

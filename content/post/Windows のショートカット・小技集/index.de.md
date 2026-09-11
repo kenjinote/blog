@@ -1,6 +1,6 @@
----
+﻿---
 title: '[Windows 11/10] Eine Sammlung praktischer Tastenkombinationen und Tricks, die die Arbeitseffizienz drastisch steigern'
-slug: "windows-tastenkombinationen-und-kleine-tricks"
+slug: "Windows のショートカット・小技集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Tipps", "Tastenkombinationen"]
 draft: false

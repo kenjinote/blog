@@ -1,4 +1,4 @@
----
+﻿---
 title: "¿Qué tan larga es la costa de Gran Bretaña?: La paradoja de la costa"
 description: "Cuanto más corta es la regla con la que se mide, más larga se vuelve la costa, tendiendo al infinito. Es la famosa paradoja que abrió las puertas a la geometría fractal."
 date: 2026-09-10T21:00:00+09:00

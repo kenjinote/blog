@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Low-Code Tool ''LogicPad'' Development Secret Story: Why Was This Created?'
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00

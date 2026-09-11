@@ -1,4 +1,4 @@
----
+﻿---
 title: "Quand les mots se décrivent eux-mêmes : Le paradoxe de Grelling-Nelson"
 description: "Découvrez le labyrinthe profond de la logique et de la sémantique créé par la classification des mots en 'autologiques' et 'hétérologiques'."
 date: 2026-09-10T21:00:00+09:00

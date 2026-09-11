@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment installer l''interface de ligne de commande (CLI) Gemini sur Windows | Explication détaillée depuis Node.js'
-slug: "Comment installer Gemini CLI sur Windows"
+slug: "Gemini CLI を Windows 環境にインストールする方法"
 date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "installation", "développement"]
 draft: false

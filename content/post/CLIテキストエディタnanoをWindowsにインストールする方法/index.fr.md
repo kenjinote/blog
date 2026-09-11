@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Comment installer l''éditeur de texte CLI nano sur Windows et définir les variables d''environnement'
 slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00

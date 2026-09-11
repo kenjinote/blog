@@ -1,4 +1,4 @@
----
+﻿---
 title: '[Réparation de Bootloop] Procédure officielle de restauration logicielle et de réinitialisation pour les appareils Google Pixel'
 slug: "Android(Google Pixel)端末の復元手順"
 date: 2025-02-28T01:20:41+09:00

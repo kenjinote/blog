@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Daftar Kode Pendek (Shortcode) Bawaan Hugo: Menyematkan YouTube dan Twitter'
 slug: "HUGOで使えるショートコード"
 date: 2022-09-11T22:59:52+09:00

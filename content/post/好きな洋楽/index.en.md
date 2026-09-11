@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Collection of Recommended Western Masterpieces: Timeless Classic Hit Songs'
 slug: "好きな洋楽"
 date: 2024-01-05T00:14:22+09:00

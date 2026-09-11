@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Introduction à l''écriture et l''exécution de tests en Rust (cargo test)'
 slug: "Rustでテストを書く"
 date: 2022-10-01T02:00:59+09:00

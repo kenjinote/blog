@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Wie man mit Rust und winapi ein einfaches Windows-Fenster erstellt und anzeigt'
 slug: "Rustでシンプルなウィンドウを表示する"
 date: 2022-10-01T19:08:58+09:00

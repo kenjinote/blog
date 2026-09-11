@@ -1,4 +1,4 @@
----
+﻿---
 title: '使用curl命令通过Gmail发送邮件的方法'
 slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00

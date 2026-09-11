@@ -1,4 +1,4 @@
----
+﻿---
 title: '[PQC] Ancaman Komputer Kuantum dan Gambaran Utuh Kriptografi Pasca-Kuantum Generasi Berikutnya'
 slug: "post-quantum-cryptography"
 tags: ["Teknologi Kriptografi", "PQC", "Keamanan", "Teknologi Generasi Berikutnya"]

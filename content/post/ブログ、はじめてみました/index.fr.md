@@ -1,6 +1,6 @@
----
+﻿---
 title: 'J''ai lancé un blog avec le générateur de site statique Hugo ! Notes quotidiennes et techniques'
-slug: "jai-commence-un-blog"
+slug: "ブログ、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["Divers"]
 draft: false

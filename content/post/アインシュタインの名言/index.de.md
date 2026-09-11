@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Geben Sie der Kritik nicht nach! Tipps für ein starkes Leben aus Einsteins Zitaten'
-slug: "zitate-von-einstein"
+slug: "アインシュタインの名言"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Zitate", "Philosophie", "Wissenschaft", "Physik"]
 draft: false

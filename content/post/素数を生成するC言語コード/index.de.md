@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Einfacher C-Code zur Generierung und Bestimmung von Primzahlen innerhalb eines bestimmten Bereichs'
-slug: "c-code-zur-generierung-von-primzahlen"
+slug: "素数を生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Primzahlen", "Algorithmus", "Mathematik"]
 draft: false

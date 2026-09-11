@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Windows 也能用！輕量文字編輯器「micro」的安裝方法'
-slug: "如何在-windows-上安裝-micro-文字編輯器"
+slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "文字編輯器"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'So stellen Sie das Rechtsklick-Menü von Windows 11 auf die klassische Version (alte Spezifikation) zurück [Registrierungseinstellungen]'
-slug: "so-stellen-sie-das-klassische-kontextmenue-in-windows-11-wieder-her"
+slug: "Windows 11の右クリックメニューを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Datei-Explorer"]
 draft: false

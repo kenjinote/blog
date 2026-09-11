@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Mulai Membuat Blog dengan Static Site Generator Hugo! Catatan Keseharian dan Memo Teknis'
-slug: "saya-mulai-menulis-blog"
+slug: "ブログ、はじめてみました"
 date: 2022-09-02T07:23:00+09:00
 tags: ["雑記"]
 draft: false

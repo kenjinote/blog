@@ -1,4 +1,4 @@
----
+﻿---
 title: '[Comprehensive] Thorough and Easy-to-Understand Explanation of Quantum Mechanics'' Greatest Mystery ''Double-Slit Experiment'''
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'reveal.js使用教學：透過HTML與Markdown製作簡報資料'
 slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00

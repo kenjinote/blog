@@ -1,4 +1,4 @@
----
+﻿---
 title: '使用winget命令安装与卸载PowerToys的方法'
 slug: "PowerToysのインストール"
 date: 2023-09-30T21:23:00+09:00

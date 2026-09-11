@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Mathematica 入門：方程式、微積分等基本指令的使用方法'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00

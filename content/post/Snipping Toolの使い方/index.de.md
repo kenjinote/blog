@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Verwendung des Windows-Standardprogramms „Snipping Tool“ und Methoden zur Bildschirmaufzeichnung und -erfassung'
-slug: "So verwenden Sie das Snipping Tool"
+slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Bild", "Video", "Screenshot", "Aufnahme", "Erfassen"]
 draft: false

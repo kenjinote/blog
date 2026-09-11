@@ -1,4 +1,4 @@
----
+﻿---
 title: '程式設計的入門磚「FizzBuzz問題」是什麼？Python寫法解說'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00

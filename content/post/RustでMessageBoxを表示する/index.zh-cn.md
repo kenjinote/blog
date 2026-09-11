@@ -1,4 +1,4 @@
----
+﻿---
 title: '使用Rust和winapi显示Windows消息框(MessageBox)的方法'
 slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00

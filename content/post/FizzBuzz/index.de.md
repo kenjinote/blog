@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Was ist das „FizzBuzz-Problem“, das Tor zum Programmieren? Eine Erklärung, wie man es in Python schreibt'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Cara Mengirim Email dari Gmail Menggunakan Perintah curl'
-slug: "mengirim-email-gmail-dengan-curl"
+slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false

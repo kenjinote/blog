@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Apa itu Dugaan P≠NP? Penjelasan yang Mudah Dipahami tentang Masalah Tak Terpecahkan dalam Teori Kompleksitas dan Perbedaan antara Kelas P dan NP'
 slug: "P≠NP予想"
 date: 2024-09-11T02:22:39+09:00

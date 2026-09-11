@@ -1,6 +1,6 @@
----
+﻿---
 title: '使用curl指令透過Gmail發送電子郵件的方法'
-slug: "透過-curl-發送-gmail"
+slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false

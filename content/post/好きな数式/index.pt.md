@@ -1,4 +1,4 @@
----
+﻿---
 title: 'O belo mundo da matemática: Coleção de fórmulas favoritas como o Teorema de Wilson e a Fórmula de Euler'
 slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00

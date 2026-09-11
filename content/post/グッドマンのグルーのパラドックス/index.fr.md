@@ -1,4 +1,4 @@
----
+﻿---
 title: "Les émeraudes sont-elles vertes ou « vleues » (grue) ? : La nouvelle énigme de l'induction de Goodman"
 description: "Demain, toutes les émeraudes du monde pourraient devenir bleues. Le paradoxe de « vleu » (grue) qui ébranle les fondements des prédictions scientifiques."
 date: 2026-09-10T21:00:00+09:00

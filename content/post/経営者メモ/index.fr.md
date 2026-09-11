@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Les secrets du choix d''une entreprise prospère et de sa systématisation : Mémo pratique pour les dirigeants'
-slug: "notes-de-gestion"
+slug: "経営者メモ"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gestionnaire"]
 draft: false

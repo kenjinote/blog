@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Desligue o PC com um clique! Como criar um atalho para desligar o Windows'
-slug: "Como criar um atalho para desligar o Windows"
+slug: "Windows をシャットダウンするショートカットを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Desligar", "Atalho"]
 draft: false

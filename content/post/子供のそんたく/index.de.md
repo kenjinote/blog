@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Berührt von der Freundlichkeit einer 2-Jährigen! Eine herzerwärmende Episode über das Einfühlungsvermögen und die Rücksichtnahme eines Kindes'
-slug: "rucksichtnahme-eines-kindes"
+slug: "子供のそんたく"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Kind"]
 draft: false

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Warum mag ich Mathematik und Computer? Ich habe über ihren Reiz und die Gründe meiner Faszination nachgedacht'
 slug: "なぜ数学や計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00

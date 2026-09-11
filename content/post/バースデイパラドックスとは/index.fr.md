@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Qu''est-ce que le paradoxe des anniversaires ? Pourquoi la probabilité que deux personnes aient le même anniversaire dépasse 50 % avec 23 personnes'
 slug: "バースデイパラドックスとは"
 date: 2024-04-02T01:20:50+09:00

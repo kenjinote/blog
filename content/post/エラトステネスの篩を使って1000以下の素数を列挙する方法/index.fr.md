@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Qu''est-ce que le crible d''Ératosthène ? Algorithme et implémentation pour énumérer les nombres premiers jusqu''à 1000'
-slug: "Comment lister les nombres premiers inférieurs à 1000 en utilisant le Crible d'Ératosthène"
+slug: "エラトステネスの篩を使って1000以下の素数を列挙する方法"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Crible d'Ératosthène", "Nombres premiers", "Mathématiques", "Rust"]
 draft: false

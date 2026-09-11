@@ -1,6 +1,6 @@
----
+﻿---
 title: '400年之謎！什麼是克卜勒猜想？從西瓜的裝箱方式淺顯解說數學的浪漫'
-slug: "kepler-conjecture-explained"
+slug: "ケプラー予想をわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00
 tags: ["數學", "克卜勒猜想", "解說"]
 draft: false

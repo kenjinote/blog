@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Roadmap for Entrepreneurship and Software Development: Short and Long-Term Goals and Tasks'
 slug: "目標"
 date: 2024-12-08T03:32:34+09:00

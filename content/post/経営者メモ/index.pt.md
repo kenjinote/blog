@@ -1,6 +1,6 @@
----
+﻿---
 title: 'O segredo para a escolha de negócios de sucesso e sistematização: Notas práticas para gestores'
-slug: "notas-de-gestao"
+slug: "経営者メモ"
 date: 2022-09-07T02:36:11+09:00
 tags: ["Gestor"]
 draft: false

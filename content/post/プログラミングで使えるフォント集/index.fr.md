@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Collection de polices recommandées pour la programmation | Polices gratuites faciles à lire qui améliorent l''efficacité du développement'
-slug: "collection-de-polices-pour-la-programmation"
+slug: "プログラミングで使えるフォント集"
 date: 2024-03-30T02:21:31+09:00
 tags: ["Programmation", "Polices"]
 draft: false

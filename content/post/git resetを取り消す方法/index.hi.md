@@ -1,6 +1,6 @@
----
+﻿---
 title: 'गलती से निष्पादित git reset को कैसे पूर्ववत करें｜कमिट रिस्टोर प्रक्रिया'
-slug: "git-reset-ko-kaise-undo-kare"
+slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
 tags: ["git", "रिस्टोर", "अनडू"]
 draft: false

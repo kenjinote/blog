@@ -1,6 +1,6 @@
----
+﻿---
 title: '【Hugo入門】Windows 上的安裝與在本機環境中的預覽顯示方法'
-slug: "【HUGO】本機環境顯示預覽"
+slug: "【HUGO】ローカルで環境で表示プレビュー"
 date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false

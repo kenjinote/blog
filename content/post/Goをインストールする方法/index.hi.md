@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Go लैंग्वेज (Golang) इंस्टॉलेशन प्रक्रिया और पहला प्रोग्राम चलाने का तरीका'
-slug: "go-kaise-install-karen"
+slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "इंस्टॉल"]
 draft: false

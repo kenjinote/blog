@@ -1,4 +1,4 @@
----
+﻿---
 title: 'The Nearly 40-Year-Old OS ''MS-DOS 4.0'' Has Been Open Sourced and Released'
 slug: "MS-DOS 4.0 のオープンソース化"
 date: 2024-05-05T16:44:28+09:00

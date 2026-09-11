@@ -1,4 +1,4 @@
----
+﻿---
 title: '[PQC] A Ameaça dos Computadores Quânticos e o Panorama da Criptografia Pós-Quântica de Próxima Geração'
 slug: "post-quantum-cryptography"
 tags: ["Criptografia", "PQC", "Segurança", "Tecnologia de Próxima Geração"]

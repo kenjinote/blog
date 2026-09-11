@@ -1,4 +1,4 @@
----
+﻿---
 author: "Hugo Authors"
 title: 'Markdown Syntax Samples for Hugo: Basic Syntax for Headings, Paragraphs, etc.'
 slug: "マークダウンのサンプル"

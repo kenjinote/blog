@@ -1,4 +1,4 @@
----
+﻿---
 
 
 title: '【Versión Completa】¡Plantilla para la creación de artículos de blog! Estructura de encabezados fuerte para SEO y consejos de escritura'

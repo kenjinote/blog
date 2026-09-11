@@ -1,4 +1,4 @@
----
+﻿---
 
 
 title: 'Cómo generar fácilmente un .gitignore para tu proyecto usando el comando dotnet'

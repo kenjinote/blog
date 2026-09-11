@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Como deletar grandes pastas de forma rápida e em lote no Windows [Prompt de Comando]'
 slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Compilation de vidéos courtes virales | L''histoire du ramasseur de balles de Tottenham qui sauve la mise, etc.'
-slug: "liens-de-videos-courtes"
+slug: "ショート動画リンク"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Vidéo", "Court"]
 draft: false

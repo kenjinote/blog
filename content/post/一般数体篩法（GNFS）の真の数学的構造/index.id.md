@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Apa Struktur Matematis Sebenarnya dari General Number Field Sieve (GNFS)? Mekanisme Faktorisasi Prima Menggunakan Homomorfisme'
 slug: "一般数体篩法（GNFS）の真の数学的構造"
 date: 2026-09-05T02:26:13+09:00

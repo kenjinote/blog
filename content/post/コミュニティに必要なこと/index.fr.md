@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Que faut-il pour avoir une bonne communauté ? Des conseils de gestion tirés des directives de Scratch'
-slug: "ce-dont-une-communaute-a-besoin"
+slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Communauté", "Divers"]
 draft: false

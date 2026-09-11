@@ -1,4 +1,4 @@
----
+﻿---
 title: '„Kamukura“ nach mehreren Jahren! Den empfohlenen Frühlingszwiebel-Kimchi-Ramen genießen'
 slug: "何年かぶりの神座（かむくら）（ラーメン）"
 date: 2022-09-09T21:45:19+09:00

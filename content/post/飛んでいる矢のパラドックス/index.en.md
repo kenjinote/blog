@@ -1,4 +1,4 @@
----
+﻿---
 title: "Is a flying arrow at rest?: Zeno's Arrow Paradox"
 description: "A flying arrow is at rest at every moment. If so, does motion exist? The greatest logical puzzle of ancient Greece."
 date: 2026-09-10T21:00:00+09:00

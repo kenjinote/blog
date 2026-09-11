@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Как загрузить и отобразить японский шрифт в GUI-библиотеке Rust «egui»'
-slug: "how-to-display-japanese-in-egui-ru"
+slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "библиотека-GUI", "японский"]
 draft: false

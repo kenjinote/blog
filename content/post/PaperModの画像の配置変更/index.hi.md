@@ -1,6 +1,6 @@
----
+﻿---
 title: 'CSS का उपयोग करके Hugo PaperMod थीम में छवि आकार और प्लेसमेंट को कैसे कस्टमाइज़ करें'
-slug: "PaperMod में इमेज लेआउट बदलना"
+slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false

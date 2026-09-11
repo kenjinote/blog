@@ -1,6 +1,6 @@
----
+﻿---
 title: '[As 7 ervas da primavera] Receita do mingau de sete ervas desejando boa saúde e como memorizar as sete ervas e seus significados'
-slug: "receita-de-mingau-das-sete-ervas"
+slug: "七草粥のレシピ"
 date: 2024-01-06T22:22:00+09:00
 tags: ["Mingau das Sete Ervas", "Culinária"]
 draft: false

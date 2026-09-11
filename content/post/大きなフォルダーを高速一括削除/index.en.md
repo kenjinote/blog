@@ -1,4 +1,4 @@
----
+﻿---
 title: 'How to Quickly Bulk Delete Large Folders in Windows [Command Prompt]'
 slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00

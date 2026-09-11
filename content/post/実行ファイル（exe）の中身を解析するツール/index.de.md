@@ -1,6 +1,6 @@
----
+﻿---
 title: '4 nützliche Tools zum Analysieren und Entpacken des Inhalts von ausführbaren Windows-Dateien (exe)'
-slug: "tools-zur-analyse-des-inhalts-einer-ausfuehrbaren-datei-exe"
+slug: "実行ファイル（exe）の中身を解析するツール"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "ausführbare datei", "analyse"]
 draft: false

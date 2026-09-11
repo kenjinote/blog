@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Elecom Deft Pro 評測！搭載 8 個按鍵的軌跡球滑鼠優缺點'
-slug: "trackball-deft-pro-m-dpt1mrbk-recommendation"
+slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["軌跡球", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false

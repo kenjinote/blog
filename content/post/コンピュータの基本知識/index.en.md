@@ -1,4 +1,4 @@
----
+﻿---
 title: 'What are the Five Major Components of a Computer? Basic Knowledge of Hardware and Software for IT Beginners'
 slug: "コンピュータの基本知識"
 date: 2024-09-19T01:10:20+09:00

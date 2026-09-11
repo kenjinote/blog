@@ -1,6 +1,6 @@
----
+﻿---
 title: '【附範例】從C++呼叫Windows.AI並執行ONNX模型的方法'
-slug: "如何從C++呼叫Microsoft.Windows.AI"
+slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false

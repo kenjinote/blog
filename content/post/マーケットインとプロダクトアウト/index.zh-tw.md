@@ -1,6 +1,6 @@
----
+﻿---
 title: '「由外而內（Market-in）」與「由內而外（Product-out）」有何不同？優缺點淺顯易懂解說'
-slug: "market-in-and-product-out"
+slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "開發", "商業", "雜記"]
 draft: false

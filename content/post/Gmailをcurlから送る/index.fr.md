@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment envoyer un e-mail avec Gmail à l''aide de la commande curl'
-slug: "envoyer-un-gmail-avec-curl"
+slug: "Gmailをcurlから送る"
 date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false

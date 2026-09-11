@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Простое руководство по применению мозаики к определенным частям изображения в paint.net'
-slug: "how-to-apply-mosaic-to-a-specific-part-of-an-image-in-paint-net"
+slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "рамка", "изображение"]
 draft: false

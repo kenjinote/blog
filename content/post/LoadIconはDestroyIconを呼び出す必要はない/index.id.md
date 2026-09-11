@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Alasan Mengapa Ikon yang Diperoleh dengan Fungsi LoadIcon Tidak Memerlukan DestroyIcon'
 slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00

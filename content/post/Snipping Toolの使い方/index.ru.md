@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Как использовать стандартный «Snipping Tool» Windows для записи экрана и захвата'
-slug: "how-to-use-snipping-tool"
+slug: "Snipping Toolの使い方"
 date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Изображение", "Видео", "Скриншот", "Запись", "Захват"]
 draft: false

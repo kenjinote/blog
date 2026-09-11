@@ -1,6 +1,6 @@
----
+﻿---
 title: '使用 C++ 執行 TinyLLaMA！透過 llama.cpp 建置本機 LLM 環境步驟'
-slug: "從 C++ 呼叫 TinyLLaMA 的步驟（使用 llama.cpp）"
+slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Probleme und Unstimmigkeiten in der japanischen Gesellschaft: Der Geburtenrückgang und die Theorie der Eigenverantwortung aus der Perspektive des Stipendienproblems'
-slug: "was-ich-ueber-japan-denke"
+slug: "日本について思うこと"
 date: 2022-09-06T02:24:11+09:00
 tags: ["Vermischtes"]
 draft: false

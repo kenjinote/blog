@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Причины покупки б/у Mac mini (2018) для разработки iOS-приложений и его характеристики'
-slug: "Покупка mac mini(2018)"
+slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false

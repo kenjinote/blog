@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Texto completo e explicação de ''Kimi Shinitamou Koto Nakare'' de Akiko Yosano: Pensamentos para o irmão mais novo embutidos no poema anti-guerra'
-slug: "nao-des-a-tua-vida"
+slug: "『君死にたまふことなかれ』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "Não dês a tua vida", "poesia", "poesia anti-guerra"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Mengapa Pengembangan LED Biru Hampir Mustahil? Mengungkap Misterinya'
-slug: "Mengapa Hampir Mustahil Membuat LED Biru"
+slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
 date: 2024-09-15T00:43:52+09:00
 tags: ["Sains", "Fisika", "Semikonduktor"]
 draft: false

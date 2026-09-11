@@ -1,6 +1,6 @@
----
+﻿---
 title: 'PowerShell से .DS_Store फ़ाइलों को एक साथ हटाने के लिए आसान कमांड'
-slug: "PowerShell के साथ .DS_Store को एक साथ हटाएं"
+slug: "PowerShellで.DS_Storeを一括削除する"
 date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false

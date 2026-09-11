@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Salesforce: أمر لحذف جميع منشورات Chatter والمرفقات'
 slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00

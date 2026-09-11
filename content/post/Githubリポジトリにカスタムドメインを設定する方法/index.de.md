@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Wie man eine benutzerdefinierte Domain für ein GitHub-Repository konfiguriert | Ausgabe für onamae.com'
-slug: "So richten Sie eine benutzerdefinierte Domain in einem Github-Repository ein"
+slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false

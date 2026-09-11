@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Rust की GUI लाइब्रेरी "egui" में जापानी फ़ॉन्ट लोड करने और प्रदर्शित करने का तरीका'
-slug: "egui-me-japanese-kaise-pradarshit-kare"
+slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI लाइब्रेरी", "जापानी"]
 draft: false

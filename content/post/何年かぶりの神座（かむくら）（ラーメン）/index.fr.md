@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Premier « Kamukura » depuis des années ! Dégustation de leur ramen aux poireaux et kimchi recommandé'
 slug: "何年かぶりの神座（かむくら）（ラーメン）"
 date: 2022-09-09T21:45:19+09:00

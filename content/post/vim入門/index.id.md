@@ -1,6 +1,6 @@
----
+﻿---
 title: '[Untuk Pemula] Pengenalan Vim: Mulai dari Instalasi hingga Memulai/Mengakhiri Dasar, dan Penjelasan Mode'
-slug: "vim-introduction"
+slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "text editor"]
 draft: false

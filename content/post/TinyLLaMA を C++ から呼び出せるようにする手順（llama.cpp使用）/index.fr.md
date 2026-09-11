@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Exécuter TinyLLaMA en C++ ! Procédure pour construire un environnement LLM local à l''aide de llama.cpp'
-slug: "Étapes pour appeler TinyLLaMA depuis C++ (en utilisant llama.cpp)"
+slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
 date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false

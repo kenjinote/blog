@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Código de exemplo em Python para baixar imagens, salvar temporariamente e exibi-las'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00

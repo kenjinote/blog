@@ -1,4 +1,4 @@
----
+﻿---
 title: '[Para iniciantes] Introdução ao Vim: Desde a instalação até o início/saída e explicações dos modos'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00

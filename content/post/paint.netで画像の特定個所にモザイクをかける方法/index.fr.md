@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Explication simple : Comment appliquer une mosaïque sur une zone spécifique d''une image avec paint.net'
 slug: "paint.netで画像の特定個所にモザイクをかける方法"
 date: 2023-04-11T16:33:10+09:00

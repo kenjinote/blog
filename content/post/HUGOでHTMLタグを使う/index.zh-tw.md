@@ -1,6 +1,6 @@
----
+﻿---
 title: '在Hugo中啟用HTML標籤的方法（config.toml設定）'
-slug: "在-hugo-中使用-html-標籤"
+slug: "HUGOでHTMLタグを使う"
 date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false

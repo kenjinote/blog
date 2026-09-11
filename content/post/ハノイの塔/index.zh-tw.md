@@ -1,6 +1,6 @@
----
+﻿---
 title: '【Python入門】用遞迴處理求解「河內塔」演算法解說'
-slug: "hanoi-tower"
+slug: "ハノイの塔"
 date: 2025-04-17T22:23:14+09:00
 tags: ["漢諾塔", "演算法", "Python"]
 draft: false

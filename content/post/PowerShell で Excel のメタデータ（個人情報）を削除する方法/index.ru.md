@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Как массово удалить метаданные (личную информацию) из Excel и Word с помощью PowerShell'
-slug: "kak-udalit-metadannye-excel-s-pomoshchyu-powershell"
+slug: "PowerShell で Excel のメタデータ（個人情報）を削除する方法"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Метаданные", "Личная информация"]
 draft: false

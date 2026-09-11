@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment intégrer et activer GitHub Copilot dans IntelliJ IDEA'
-slug: "utiliser-github-copilot-dans-intellij-idea"
+slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false

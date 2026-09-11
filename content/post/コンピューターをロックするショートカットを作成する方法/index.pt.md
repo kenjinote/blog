@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Bloqueie o seu PC com Windows em 1 segundo! Como criar e usar atalhos úteis'
-slug: "como-criar-um-atalho-para-bloquear-o-computador"
+slug: "コンピューターをロックするショートカットを作成する方法"
 date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Bloquear Computador", "Atalho"]
 draft: false

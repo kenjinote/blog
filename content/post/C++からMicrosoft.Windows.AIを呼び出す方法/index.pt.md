@@ -1,6 +1,6 @@
----
+﻿---
 title: '[Com Exemplos] Como Chamar o Windows.AI via C++ e Executar Modelos ONNX'
-slug: "como-chamar-microsoft-windows-ai-a-partir-de-cpp"
+slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false

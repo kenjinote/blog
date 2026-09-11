@@ -1,6 +1,6 @@
----
+﻿---
 title: '使用Git clone只取得儲存庫最新Commit的方法'
-slug: "只取得-git-儲存庫的最新版本"
+slug: "gitリポジトリの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "儲存庫", "指令"]
 draft: false

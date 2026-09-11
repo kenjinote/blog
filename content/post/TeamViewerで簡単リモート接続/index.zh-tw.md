@@ -1,6 +1,6 @@
----
+﻿---
 title: '【初學者適用】使用 TeamViewer 輕鬆進行遠端桌面連線的方法'
-slug: "使用 TeamViewer 輕鬆進行遠端連線"
+slug: "TeamViewerで簡単リモート接続"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "指令", "遠端連線"]
 draft: false

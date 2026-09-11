@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Apa itu Komputer Kuantum? Penjelasan dari Nol tentang Prinsip Komputasi Tertinggi seperti Superposisi dan Keterikatan Kuantum'
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00

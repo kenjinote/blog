@@ -1,6 +1,6 @@
----
+﻿---
 title: 'macOS में .DS_Store के स्वत: जनरेशन को अक्षम और रोकने के लिए टर्मिनल कमांड'
-slug: "macos-par-ds-store-ko-svachalit-roop-se-utpann-hone-se-rokne-ke-liye-command"
+slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false

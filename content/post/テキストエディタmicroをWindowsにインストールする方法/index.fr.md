@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Utilisable sur Windows ! Comment installer l''éditeur de texte léger ''micro'''
-slug: "comment-installer-l-editeur-de-texte-micro-sur-windows"
+slug: "テキストエディタmicroをWindowsにインストールする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "éditeur de texte"]
 draft: false

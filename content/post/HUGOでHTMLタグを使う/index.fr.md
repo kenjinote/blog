@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment activer les balises HTML dans Hugo (configuration de config.toml)'
-slug: "utiliser-des-balises-html-dans-hugo"
+slug: "HUGOでHTMLタグを使う"
 date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false

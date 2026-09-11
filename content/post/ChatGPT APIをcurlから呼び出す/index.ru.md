@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Как вызвать ChatGPT API через curl в командной строке Windows'
-slug: "вызов-api-chatgpt-из-curl"
+slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "Команда"]
 draft: false

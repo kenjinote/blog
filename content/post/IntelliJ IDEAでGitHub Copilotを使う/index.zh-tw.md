@@ -1,6 +1,6 @@
----
+﻿---
 title: '在IntelliJ IDEA中導入並啟用GitHub Copilot的方法'
-slug: "在-intellij-idea-中使用-github-copilot"
+slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Pourquoi la fonction DestroyIcon n''est pas nécessaire pour les icônes obtenues avec la fonction LoadIcon'
-slug: "LoadIcon-na-pas-besoin-dappeler-DestroyIcon"
+slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["icône", "LoadIcon", "DestroyIcon", "Programmation Windows"]
 draft: false

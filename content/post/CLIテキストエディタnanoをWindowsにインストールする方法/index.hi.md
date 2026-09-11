@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Windows पर CLI टेक्स्ट एडिटर nano को इंस्टॉल करने और पर्यावरण चर (Environment Variables) सेट करने का तरीका'
 slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
 date: 2024-03-31T18:09:32+09:00

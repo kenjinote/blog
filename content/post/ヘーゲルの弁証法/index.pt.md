@@ -1,6 +1,6 @@
----
+﻿---
 title: 'O que é a dialética de Hegel? O conceito de Aufheben (sublimação) e sua aplicação no dia a dia e na programação'
-slug: "a-dialetica-de-hegel"
+slug: "ヘーゲルの弁証法"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filosofia", "Hegel", "Dialética"]
 draft: false

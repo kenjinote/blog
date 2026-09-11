@@ -1,4 +1,4 @@
----
+﻿---
 title: '【启动循环修复】Google Pixel设备软件恢复・初始化的官方步骤'
 slug: "Android(Google Pixel)端末の復元手順"
 date: 2025-02-28T01:20:41+09:00

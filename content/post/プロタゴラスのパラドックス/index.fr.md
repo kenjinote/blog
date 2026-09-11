@@ -1,4 +1,4 @@
----
+﻿---
 title: "Le maître et l'élève, un procès paradoxal quel que soit le gagnant : le paradoxe de Protagoras"
 description: "Un litige juridique entre maître et élève concernant les conditions de paiement des frais de scolarité. Un paradoxe juridique de la Grèce antique où la logique se contredit, quel que soit le vainqueur ou le vaincu."
 date: 2026-09-10T21:00:00+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Salesforce : Comment obtenir le nombre d''enregistrements créés par jour avec SOQL'
-slug: "Comment obtenir le nombre d'enregistrements créés par jour à l'aide de Salesforce SOQL"
+slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "date", "agrégation"]
 draft: false

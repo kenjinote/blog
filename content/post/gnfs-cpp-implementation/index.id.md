@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Implementasi General Number Field Sieve (GNFS) di C++ | Mekanisme Algoritme Pemecahan Sandi RSA'
 slug: "gnfs-cpp-implementation"
 date: 2026-09-05T13:04:59+09:00

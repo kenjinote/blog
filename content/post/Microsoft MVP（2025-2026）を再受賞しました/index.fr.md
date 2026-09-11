@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Annonce du renouvellement du prix Microsoft MVP (2025-2026) et de mes activités passées'
-slug: "j-ai-ete-recompense-en-tant-que-microsoft-mvp-2025-2026-a-nouveau"
+slug: "Microsoft MVP（2025-2026）を再受賞しました"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false

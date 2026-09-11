@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Misteri 400 Tahun! Apa Itu Konjektur Kepler? Penjelasan Mudah Romantisme Matematika dari Cara Menyusun Semangka'
-slug: "penjelasan-sederhana-dugaan-kepler"
+slug: "ケプラー予想をわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Matematika", "Dugaan Kepler", "Penjelasan"]
 draft: false

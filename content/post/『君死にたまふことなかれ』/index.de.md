@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Volltext und Erklärung von Akiko Yosanos „Du sollst nicht sterben“: Die Gedanken an ihren kleinen Bruder in einem Antikriegsgedicht'
-slug: "stirb-nicht"
+slug: "『君死にたまふことなかれ』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "Stirb nicht", "Gedicht", "Antikriegsgedicht"]
 draft: false

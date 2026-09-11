@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Zusammenfassung empfohlener Browser-Erweiterungen, die Chrome und Edge drastisch komfortabler machen'
 slug: "おすすめの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: '【WinHTTP】Как отправлять сообщения в Slack через Webhook из C++ (Win32 API)'
-slug: "как-отправлять-сообщения-в-slack-на-c++-(win32-api-+-winhttp)-[поддержка-webhook]"
+slug: "C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】"
 date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false

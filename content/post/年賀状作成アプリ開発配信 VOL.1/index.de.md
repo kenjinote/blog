@@ -1,4 +1,4 @@
----
+﻿---
 title: '【C++】Entwicklungs-Stream der Neujahrskarten-Erstellungs-App VOL.1: Umgebungseinrichtung und Initialisierung von Direct2D'
 slug: "年賀状作成アプリ開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: '在GitHub儲存庫設定自訂網域的方法｜Onamae.com篇'
-slug: "如何在 Github 儲存庫中設定自訂網域"
+slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false

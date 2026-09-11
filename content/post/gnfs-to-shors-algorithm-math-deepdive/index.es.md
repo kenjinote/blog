@@ -1,4 +1,4 @@
----
+﻿---
 
 
 title: '¿Romper el cifrado RSA? Explicación matemática detallada del GNFS y el algoritmo de Shor'

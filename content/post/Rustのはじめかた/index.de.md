@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Einführung in die Programmiersprache Rust: Von den Eigenschaften über die Installation bis zum ersten Hello World'
-slug: "Wie man mit Rust anfängt"
+slug: "Rustのはじめかた"
 date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false

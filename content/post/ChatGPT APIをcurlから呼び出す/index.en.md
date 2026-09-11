@@ -1,4 +1,4 @@
----
+﻿---
 title: 'How to Call ChatGPT API from curl in Windows Command Prompt'
 slug: "ChatGPT APIをcurlから呼び出す"
 date: 2025-02-01T17:15:34+09:00

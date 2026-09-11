@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment charger et afficher des polices japonaises avec la bibliothèque GUI Rust « egui »'
-slug: "comment-afficher-japonais-egui"
+slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "Bibliothèque GUI", "Japonais"]
 draft: false

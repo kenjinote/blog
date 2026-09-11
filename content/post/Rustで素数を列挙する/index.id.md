@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Cara Membuat Program untuk Menghitung Bilangan Prima di Rust dan Contoh Kodenya'
 slug: "Rustで素数を列挙する"
 date: 2022-09-09T07:08:49+09:00

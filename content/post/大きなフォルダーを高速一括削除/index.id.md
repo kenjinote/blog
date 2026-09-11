@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Cara Menghapus Folder Besar Secara Masal dan Cepat di Windows [Command Prompt]'
-slug: "penghapusan-massal-cepat-untuk-folder-besar"
+slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
 tags: ["Command Prompt"]
 draft: false

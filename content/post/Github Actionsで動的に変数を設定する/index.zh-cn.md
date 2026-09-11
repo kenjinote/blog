@@ -1,4 +1,4 @@
----
+﻿---
 title: '在GitHub Actions中动态设置环境变量的方法【Windows环境】'
 slug: "Github Actionsで動的に変数を設定する"
 date: 2022-10-02T02:33:35+09:00

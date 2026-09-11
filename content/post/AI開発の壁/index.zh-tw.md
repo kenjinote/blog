@@ -1,6 +1,6 @@
----
+﻿---
 title: 'AI開發的門檻很高…應用程式製作「過了八成就是地獄」的理由與現實'
-slug: "ai-development-barrier"
+slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "開發", "壁壘", "隨筆"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Von den wichtigsten bis zu den seltensten! Liste von Programmiersprachen und Zusammenfassung ihrer Eigenschaften'
-slug: "Liste der Programmiersprachen"
+slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
 tags: ["プログラミング言語"]
 draft: true

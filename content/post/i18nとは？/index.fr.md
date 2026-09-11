@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Qu''est-ce que l''i18n (Internationalisation) ? Signification et éléments de compatibilité dans le développement de logiciels'
 slug: "i18nとは？"
 date: 2023-04-07T00:42:02+09:00

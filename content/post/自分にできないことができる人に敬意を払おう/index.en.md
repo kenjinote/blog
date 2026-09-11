@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Pay Respect to Those Who Can Do What You Cannot | A Mindset to Eliminate Superiority and Inferiority in Work'
 slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00

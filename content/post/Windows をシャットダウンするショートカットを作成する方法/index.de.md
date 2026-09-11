@@ -1,6 +1,6 @@
----
+﻿---
 title: 'PC mit einem Klick ausschalten! So erstellen Sie eine Verknüpfung zum Herunterfahren von Windows'
-slug: "So erstellen Sie eine Verknüpfung zum Herunterfahren von Windows"
+slug: "Windows をシャットダウンするショートカットを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Herunterfahren", "Verknüpfung"]
 draft: false

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'The Results of Switching from FLET''S Hikari to J:COM! Real Thoughts on Price and Connection Speed'
 slug: "ネット環境をフレッツ光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00

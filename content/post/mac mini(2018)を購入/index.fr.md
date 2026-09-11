@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Raisons et caractéristiques de l''achat d''un Mac mini (2018) d''occasion pour le développement d''applications iOS'
 slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Don''t Give in to Criticism! Tips for Living Strong Learned from Einstein''s Quotes'
 slug: "アインシュタインの名言"
 date: 2024-08-24T18:38:47+09:00

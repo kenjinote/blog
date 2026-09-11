@@ -1,4 +1,4 @@
----
+﻿---
 title: "Are Emeralds Green or 'Grue'?: Goodman's New Riddle of Induction"
 description: "Tomorrow, all emeralds in the world might turn blue. The 'Grue' paradox that fundamentally shakes the basis of scientific prediction."
 date: 2026-09-10T21:00:00+09:00

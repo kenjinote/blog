@@ -1,4 +1,4 @@
----
+﻿---
 title: '[PQC] The Threat of Quantum Computers and the Full Picture of Next-Generation Post-Quantum Cryptography'
 slug: "post-quantum-cryptography"
 tags: ["Cryptography", "PQC", "Security", "Next-Gen Tech"]

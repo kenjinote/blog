@@ -1,6 +1,6 @@
----
+﻿---
 title: 'O roteiro de empreendedorismo e desenvolvimento de software: Metas e tarefas de curto e longo prazo'
-slug: "objetivos"
+slug: "目標"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Objetivos"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Ringkasan Ekstensi VSCode yang Direkomendasikan! Daftar Plugin yang Secara Dramatis Meningkatkan Efisiensi Pengembangan'
-slug: "Ekstensi Visual Studio Code yang Direkomendasikan"
+slug: "Visual Studio Codeおすすめ拡張機能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Ekstensi", "Add-ons"]
 draft: false

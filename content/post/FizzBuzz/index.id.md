@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Apa Itu ''Masalah FizzBuzz'', Gerbang Masuk Pemrograman? Penjelasan Cara Menulisnya dengan Python'
 slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00

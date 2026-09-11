@@ -1,4 +1,4 @@
----
+﻿---
 title: '[Aumento de eficiência] Lista de teclas de atalho úteis do Microsoft Word'
 slug: "Microsoft Wordのショートカット一覧"
 date: 2024-04-07T14:18:51+09:00

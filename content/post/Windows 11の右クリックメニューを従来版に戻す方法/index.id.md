@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Cara Mengembalikan Menu Klik Kanan Windows 11 ke Versi Klasik (Spesifikasi Lama) [Pengaturan Registri]'
-slug: "cara-mengembalikan-menu-klik-kanan-klasik-di-windows-11"
+slug: "Windows 11の右クリックメニューを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "File Explorer"]
 draft: false

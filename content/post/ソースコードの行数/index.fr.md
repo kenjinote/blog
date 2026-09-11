@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment l''échelle des logiciels a-t-elle évolué ? L''histoire et l''évolution du nombre de lignes de code source'
-slug: "nombre-de-lignes-de-code-source"
+slug: "ソースコードの行数"
 date: 2025-04-17T10:33:02+09:00
 tags: ["code source", "lignes de code"]
 draft: false

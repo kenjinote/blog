@@ -1,6 +1,6 @@
----
+﻿---
 title: 'كيفية تحميل وعرض الخطوط اليابانية في مكتبة واجهة المستخدم الرسومية ''egui'' الخاصة بـ Rust'
-slug: "how-to-display-japanese-in-egui-ar"
+slug: "eguiで日本語を表示する方法"
 date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "مكتبة-واجهة-المستخدم", "ياباني"]
 draft: false

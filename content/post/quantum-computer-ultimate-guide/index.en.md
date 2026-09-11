@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Principles and Mechanisms of Quantum Computers [Complete Guide]: From the Limits of Moore''s Law to Quantum Mechanics'
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"

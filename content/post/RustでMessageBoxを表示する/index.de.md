@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Wie man mit Rust und winapi eine Windows-MessageBox (MessageBox) anzeigt'
-slug: "Anzeigen einer MessageBox in Rust"
+slug: "RustでMessageBoxを表示する"
 date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false

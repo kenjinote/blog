@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Lock Your Windows PC in 1 Second! How to Create and Use a Handy Shortcut'
 slug: "コンピューターをロックするショートカットを作成する方法"
 date: 2024-04-01T01:37:49+09:00

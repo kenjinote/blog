@@ -1,4 +1,4 @@
----
+﻿---
 title: "When Words Describe Themselves: The Grelling-Nelson Paradox"
 description: "Unraveling the deep labyrinth of logic and semantics created by the classification of 'autological' and 'heterological' words."
 date: 2026-09-10T21:00:00+09:00

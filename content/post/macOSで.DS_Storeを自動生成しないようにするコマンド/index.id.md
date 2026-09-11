@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Perintah Terminal untuk Menonaktifkan/Menghentikan Pembuatan Otomatis .DS_Store di macOS'
 slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00

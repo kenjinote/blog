@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Windows 11 के राइट-क्लिक मेनू को पिछले वर्ज़न (पुराने स्पेसिफिकेशन) में वापस लाने का तरीका 【रजिस्ट्री सेटिंग】'
-slug: "how-to-restore-classic-context-menu-windows-11"
+slug: "Windows 11の右クリックメニューを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "फ़ाइल एक्सप्लोरर"]
 draft: false

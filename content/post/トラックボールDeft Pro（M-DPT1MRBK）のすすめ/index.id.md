@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Ulasan Elecom Deft Pro! Kelebihan dan Kekurangan Mouse Trackball 8 Tombol'
-slug: "rekomendasi-trackball-deft-pro-m-dpt1mrbk"
+slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false

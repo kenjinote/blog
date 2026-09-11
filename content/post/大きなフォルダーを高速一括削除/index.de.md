@@ -1,4 +1,4 @@
----
+﻿---
 title: 'So löschen Sie große Ordner in Windows schnell auf einmal [Eingabeaufforderung]'
 slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00

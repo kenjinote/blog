@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Quelle est la différence entre Market-in et Product-out ? Explication simple des avantages et inconvénients'
-slug: "market-in-and-product-out"
+slug: "マーケットインとプロダクトアウト"
 date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Développement", "Business", "Poème"]
 draft: false

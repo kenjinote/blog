@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Como postar mensagens no Slack com API do Slack e OAuth2 (Exemplo de Implementação em C++)'
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
 date: 2025-07-16T23:36:27+09:00

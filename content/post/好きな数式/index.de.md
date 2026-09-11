@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Die allzu schöne Welt der Mathematik: Zusammenfassung beliebter mathematischer Formeln wie der Satz von Wilson und die Eulersche Formel'
 slug: "好きな数式"
 date: 2022-10-05T13:24:50+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Einfach! Anleitung und Download für ein GIF-Animations-Bildschirmaufzeichnungs-Tool'
-slug: "Tool zur GIF-animierten Bildschirmaufnahme"
+slug: "GIFアニメ画面録画ツール"
 date: 2024-02-08T01:23:01+09:00
 tags: ["Tool", "Bildschirmaufnahme", "GIF"]
 draft: false

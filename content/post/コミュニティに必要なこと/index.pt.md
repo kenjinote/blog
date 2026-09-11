@@ -1,6 +1,6 @@
----
+﻿---
 title: 'O que é necessário para uma boa comunidade? Dicas de gerenciamento aprendidas com as diretrizes do Scratch'
-slug: "o-que-uma-comunidade-precisa"
+slug: "コミュニティに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Comunidade", "Diversos"]
 draft: false

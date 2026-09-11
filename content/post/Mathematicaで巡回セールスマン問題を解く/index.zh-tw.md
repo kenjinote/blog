@@ -1,6 +1,6 @@
----
+﻿---
 title: '使用 Mathematica 解決旅行推銷員問題 (TSP) 的方法'
-slug: "使用-Mathematica-解決旅行推銷員問題"
+slug: "Mathematicaで巡回セールスマン問題を解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "旅行推銷員問題", "演算法", "數學"]
 draft: false

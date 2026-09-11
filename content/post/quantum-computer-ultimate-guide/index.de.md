@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Prinzipien und Mechanismen von Quantencomputern 【Vollständige Abdeckung】Von den Grenzen des Mooreschen Gesetzes bis zur Quantenmechanik'
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"

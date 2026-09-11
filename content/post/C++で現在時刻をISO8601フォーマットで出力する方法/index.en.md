@@ -1,4 +1,4 @@
----
+﻿---
 title: '[C++20] Simple Code Example for Outputting Current Time in ISO8601 Format (UTC)'
 slug: "C++で現在時刻をISO8601フォーマットで出力する方法"
 date: 2023-04-15T19:35:27+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: '與謝野晶子是誰？解說《亂髮》與《君莫死》等代表作及其生平'
-slug: "about-yosano-akiko"
+slug: "与謝野晶子について"
 date: 2024-07-25T13:08:36+09:00
 tags: ["與謝野晶子"]
 draft: false

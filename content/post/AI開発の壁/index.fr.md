@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Le mur du développement de l''IA était haut... Raisons et réalités pour lesquelles la création d''applications est « un enfer à partir du 8ème palier »'
-slug: "le-mur-du-developpement-de-l-ia"
+slug: "AI開発の壁"
 date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "développement", "mur", "poème"]
 draft: false

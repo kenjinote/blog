@@ -1,6 +1,6 @@
----
+﻿---
 title: '【أتمتة】نشر الرسائل من C++ إلى Teams! خطوات تنفيذ Graph API و WinHTTP'
-slug: "كيفية نشر رسائل إلى Microsoft Teams من C++ (WinHTTP + Graph API)"
+slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false

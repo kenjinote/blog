@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Por Que Comprei um Mac mini Usado (2018) para Desenvolvimento de Apps iOS e Suas Especificações'
 slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00

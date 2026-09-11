@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Genius Mathematician Protagonists! Recommended Masterpiece Movies and Stories of Codebreaking'
 slug: "数学者が登場する映画"
 date: 2022-09-05T10:41:00+09:00

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Das Geheimnis, um Splatoon 2 lange zu genießen! Empfohlene Waffen und Tipps zum Bewegen'
-slug: "splatoon-2"
+slug: "スプラトゥーン2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Spiele", "Nintendo Switch"]
 draft: false

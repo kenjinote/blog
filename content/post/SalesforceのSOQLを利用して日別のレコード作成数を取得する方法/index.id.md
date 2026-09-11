@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Salesforce: Cara Mendapatkan Jumlah Pembuatan Catatan Harian dengan SOQL'
-slug: "cara-mendapatkan-jumlah-pembuatan-record-per-hari-menggunakan-soql-di-salesforce"
+slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "tanggal", "agregasi"]
 draft: false

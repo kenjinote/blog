@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Lassen Sie uns Respekt vor denen zeigen, die Dinge tun können, die wir selbst nicht können | Eine Einstellung, die die Über- oder Unterlegenheit bei der Arbeit beseitigt'
-slug: "respektieren-wir-diejenigen-die-koennen-was-wir-nicht-koennen"
+slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
 tags: ["Gedicht", "Gedanken"]
 draft: false

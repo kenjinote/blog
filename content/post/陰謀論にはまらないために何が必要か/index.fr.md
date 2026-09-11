@@ -1,4 +1,4 @@
----
+﻿---
 title: '6 mesures pour éviter de tomber dans les théories du complot | Améliorez la sécurité de votre esprit'
 slug: "陰謀論にはまらないために何が必要か"
 date: 2025-05-26T22:23:34+09:00

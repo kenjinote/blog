@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ketika Kata Mendeskripsikan Dirinya Sendiri: Paradoks Grelling-Nelson"
 description: "Mengurai labirin mendalam logika dan semantik yang dihasilkan dari klasifikasi kata menjadi 'autologikal' dan 'heterologikal'."
 date: 2026-09-10T21:00:00+09:00

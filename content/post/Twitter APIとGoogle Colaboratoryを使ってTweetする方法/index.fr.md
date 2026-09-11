@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment tweeter automatiquement avec l''API Twitter et Google Colaboratory [Python]'
-slug: "comment-tweeter-en-utilisant-l-api-twitter-et-google-colaboratory"
+slug: "Twitter APIとGoogle Colaboratoryを使ってTweetする方法"
 date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false

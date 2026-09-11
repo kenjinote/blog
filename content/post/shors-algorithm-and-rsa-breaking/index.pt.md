@@ -1,4 +1,4 @@
----
+﻿---
 title: 'O computador quântico vai quebrar a criptografia RSA? Explicando o Algoritmo de Shor'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Computador Quântico", "Descriptografia", "Algoritmo de Shor", "RSA"]

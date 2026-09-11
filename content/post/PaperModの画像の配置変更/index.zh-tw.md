@@ -1,6 +1,6 @@
----
+﻿---
 title: '使用 CSS 自訂 Hugo PaperMod 主題的圖片大小與配置方法'
-slug: "更改 PaperMod 中的圖片佈局"
+slug: "PaperModの画像の配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false

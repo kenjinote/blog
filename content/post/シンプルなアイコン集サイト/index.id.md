@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Bisa Dipakai Gratis! 7 Situs Bahan Ikon Gratis Sederhana yang Direkomendasikan'
-slug: "situs-koleksi-ikon-sederhana"
+slug: "シンプルなアイコン集サイト"
 date: 2022-09-07T16:46:56+09:00
 tags: ["Ikon","Desain"]
 draft: false

@@ -1,4 +1,4 @@
----
+﻿---
 title: '[For Beginners] Introduction to Vim: From Installation to Basic Startup, Shutdown, and Mode Explanations'
 slug: "vim入門"
 date: 2024-04-19T22:06:34+09:00

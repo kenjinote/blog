@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Wie man die Tastenkombination zum Wechseln zwischen japanischer und englischer Eingabe auf dem Mac ändert (für US-Tastaturen)'
 slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
 date: 2023-04-04T23:02:12+09:00

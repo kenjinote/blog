@@ -1,6 +1,6 @@
----
+﻿---
 title: 'O que é o Crivo de Eratóstenes? Algoritmo e implementação para enumerar números primos até 1000'
-slug: "Como listar números primos menores que 1000 usando o Crivo de Eratóstenes"
+slug: "エラトステネスの篩を使って1000以下の素数を列挙する方法"
 date: 2023-04-09T12:54:24+09:00
 tags: ["Crivo de Eratóstenes", "Números primos", "Matemática", "Rust"]
 draft: false

@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Kumpulan Video Pendek Viral | Aksi Penyelamatan Anak Gawang Tottenham, dll.'
-slug: "Tautan Video Pendek"
+slug: "ショート動画リンク"
 date: 2024-08-25T16:24:35+09:00
 tags: ["Video", "Pendek"]
 draft: false

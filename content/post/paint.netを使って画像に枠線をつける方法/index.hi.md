@@ -1,6 +1,6 @@
----
+﻿---
 title: 'paint.net से छवियों में बॉर्डर जोड़ने का सरल तरीका और प्रक्रिया'
-slug: "how-to-add-border-to-image-using-paint-net"
+slug: "paint.netを使って画像に枠線をつける方法"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "बॉर्डर", "छवि"]
 draft: false

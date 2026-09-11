@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Visiting ''Kamukura'' After Years! Enjoying the Recommended Green Onion Kimchi Ramen'
 slug: "何年かぶりの神座（かむくら）（ラーメン）"
 date: 2022-09-09T21:45:19+09:00

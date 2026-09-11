@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Salesforce：清空Chatter帖子与附件的命令'
 slug: "Salesforceチャッター全消しコマンド"
 date: 2022-09-19T21:59:14+09:00

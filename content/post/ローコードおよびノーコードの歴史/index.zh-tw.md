@@ -1,6 +1,6 @@
----
+﻿---
 title: '低程式碼與無程式碼開發的歷史（1980年代至今）｜從HyperCard到最新工具'
-slug: "low-code-and-no-code-history"
+slug: "ローコードおよびノーコードの歴史"
 date: 2025-04-26T16:46:11+09:00
 tags: ["低代碼", "無代碼", "歷史"]
 draft: false

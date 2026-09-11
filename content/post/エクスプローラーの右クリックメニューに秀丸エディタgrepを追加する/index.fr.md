@@ -1,6 +1,6 @@
----
+﻿---
 title: 'Comment ajouter la fonction grep de Hidemaru Editor au menu du clic droit dans Windows'
-slug: "ajouter-hidemaru-editor-grep-au-menu-contextuel-de-l-explorateur"
+slug: "エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する"
 date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorateur", "Menu contextuel", "grep", "Registre"]
 draft: false

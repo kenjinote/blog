@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Kode Contoh untuk Mengunduh, Menyimpan Sementara, dan Menampilkan Gambar di Python'
 slug: "Pythonコード片"
 date: 2025-02-24T18:21:14+09:00

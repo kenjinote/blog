@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Cara Menggunakan reveal.js: Membuat Materi Presentasi dengan HTML dan Markdown'
 slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00

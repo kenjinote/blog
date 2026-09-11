@@ -1,6 +1,6 @@
----
+﻿---
 title: '[Core i7-8700K / Memória de 32GB] As especificações atuais do PC principal e ambiente de trabalho'
-slug: "especificacoes-do-meu-pc-principal-atual"
+slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false

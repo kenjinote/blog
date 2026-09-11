@@ -1,4 +1,4 @@
----
+﻿---
 title: 'What is a Quantum Computer? Explaining Ultimate Computing Principles Like Superposition and Quantum Entanglement from Scratch'
 slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00

@@ -1,4 +1,4 @@
----
+﻿---
 title: 'A Simple Command to Batch Delete .DS_Store Files Using PowerShell'
 slug: "PowerShellで.DS_Storeを一括削除する"
 date: 2022-09-12T10:11:42+09:00
