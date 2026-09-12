@@ -55,6 +55,7 @@ jobs:
         run: |
           hugo \
             --minify \
+            --buildFuture \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
