@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Entorno de Compilación/Ejecución"]
         D["Almacenamiento de archivos persistente"]
     end
-    A <-->|Comunicación HTTP/WebSocket: Retrasos severos debido a las conexiones lentas en las escuelas| B
+    A -->| "Comunicación HTTP/WebSocket: Retrasos severos debido a las conexiones lentas en las escuelas" | B
     B <--> C
     B <--> D
 ```
@@ -256,5 +256,6 @@ Cómo lucharemos a través de la fase más importante y difícil del "después" 
 ---
 
 *En este artículo describimos en términos generales la teoría de la complejidad computacional y los límites de infraestructura de la Iniciativa GIGA School. En futuras publicaciones de esta serie cubriremos temas aún más especializados en ciencias de la computación (como detalles sobre algoritmos de sistemas distribuidos y métodos de gestión de memoria de bajo nivel).*
+
 
 

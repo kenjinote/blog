@@ -52,7 +52,7 @@ Karena bukti untuk $H_2$ memiliki nilai yang sama dengan bukti untuk $H_1$, seca
 
 ```mermaid
 graph TD
-    A["Proposisi H1: Semua gagak berwarna hitam"] <-->|Ekuivalensi logis (Kontraposisi)| B["Proposisi H2: Semua benda yang tidak hitam bukan gagak"]
+    A["Proposisi H1: Semua gagak berwarna hitam"] -->|Ekuivalensi logis (Kontraposisi)| B["Proposisi H2: Semua benda yang tidak hitam bukan gagak"]
     
     C["Observasi: Gagak hitam"] -->|Menjadi bukti| A
     D["Observasi: Apel biru"] -->|Menjadi bukti| B
@@ -87,3 +87,4 @@ Artinya, secara logis "apel biru adalah sebuah bukti", tetapi secara praktis "da
 Paradoks ini menyoroti betapa rapuhnya premis yang mendasari "induksi (menarik hukum umum dari pengamatan)", yang merupakan inti dari sains. Jika kita hanya mengandalkan ekuivalensi logis, maka "ornitologi dalam ruangan" akan menjadi mungkin, di mana kita dapat memverifikasi semua hukum alam semesta (seperti "semua angsa berwarna putih" atau "semua alien tidak berwarna hijau") hanya dengan mengamati barang-barang di dalam ruangan tanpa harus keluar.
 
 Paradoks Gagak Hempel adalah paradoks yang sangat menarik, yang menunjukkan bahwa kata-kata "bukti" dan "pembuktian" yang kita gunakan secara tidak sadar, tidak dapat ditangkap dengan baik hanya oleh aturan logika simbolik murni.
+

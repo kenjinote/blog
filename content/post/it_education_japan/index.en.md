@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Compile/Execution Environment"]
         D["Persistent File Storage"]
     end
-    A <-->|HTTP/WebSocket Communication: Severe latency due to narrow school network lines| B
+    A -->| "HTTP/WebSocket Communication: Severe latency due to narrow school network lines" | B
     B <--> C
     B <--> D
 ```
@@ -256,5 +256,6 @@ How we fight through the "aftermath" of mandatory programming—the most difficu
 ---
 
 *This article outlined the computational complexity theory and the infrastructural limits of the GIGA School Concept. We plan to cover more specialized computer science topics (such as details of distributed system algorithms and low-level memory management techniques) sequentially in future series.*
+
 
 

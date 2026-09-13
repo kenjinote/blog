@@ -52,7 +52,7 @@ Dado que la evidencia para $H_2$ tiene el mismo valor que la evidencia para $H_1
 
 ```mermaid
 graph TD
-    A["Proposición H1: Todos los cuervos son negros"] <-->|Equivalencia Lógica (Contraposición)| B["Proposición H2: Lo que no es negro no es un cuervo"]
+    A["Proposición H1: Todos los cuervos son negros"] -->|Equivalencia Lógica (Contraposición)| B["Proposición H2: Lo que no es negro no es un cuervo"]
     
     C["Observación: Cuervo negro"] -->|Sirve de evidencia| A
     D["Observación: Manzana azul"] -->|Sirve de evidencia| B
@@ -87,3 +87,4 @@ En resumen, la solución bayesiana es que lógicamente "una manzana azul es evid
 Esta paradoja pone de relieve cuán frágiles son las premisas sobre las que se basa el núcleo de la ciencia, la "inducción (derivar leyes generales a partir de la observación)". Si nos basamos únicamente en la equivalencia lógica, sería posible hacer "ornitología de interior", donde podríamos verificar cualquier ley del universo ("todos los cisnes son blancos", "todos los alienígenas no son verdes", etc.) simplemente observando la basura en nuestra habitación sin salir a la calle.
 
 Los cuervos de Hempel es una paradoja muy interesante que muestra que las palabras "evidencia" y "prueba" que usamos inconscientemente no pueden ser capturadas del todo solo por las reglas de la lógica simbólica pura.
+

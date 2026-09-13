@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Kompilier-/Laufzeitumgebung"]
         D["Persistenter Dateispeicher"]
     end
-    A <-->|HTTP/WebSocket-Kommunikation: Schwere Verzögerungen durch schwache Schulverbindungen| B
+    A -->| "HTTP/WebSocket-Kommunikation: Schwere Verzögerungen durch schwache Schulverbindungen" | B
     B <--> C
     B <--> D
 ```
@@ -256,5 +256,6 @@ Wie wir diese schwierigste und wichtigste Phase, die Zeit „nach“ der obligat
 ---
 
 *In diesem Artikel haben wir die Komplexitätstheorie und die infrastrukturellen Grenzen des GIGA School-Konzepts skizziert. Noch spezifischere Themen der Informatik (wie Algorithmen für verteilte Systeme und Details zu Low-Level-Speicherverwaltungsmethoden) werden in zukünftigen Beiträgen dieser Reihe nach und nach behandelt.*
+
 
 

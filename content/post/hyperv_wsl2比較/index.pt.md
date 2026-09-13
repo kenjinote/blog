@@ -71,7 +71,7 @@ graph TD
     F["Espaço do Usuário Linux (Distribuições WSL2)"]
 
     A --> C
-    C <-->| "Compartilhamento de Arquivos Cross-OS" | D
+    C -->| "Compartilhamento de Arquivos Cross-OS" | D
     D --> E
     D --> F
 ```
@@ -230,3 +230,4 @@ O Hyper-V e o WSL2 não se tratam de um ser superior ao outro; eles são **"duas
 *   O **Hyper-V** é um "hipervisor completo" que traz o robusto isolamento e capacidade de gerenciamento cultivados em data centers corporativos para o desktop. Não tem rival na construção de redes, no teste de SOs Windows e na simulação de ambientes de infraestrutura.
 
 Nos ambientes Windows modernos, essas duas tecnologias não competem uniformemente, mas coexistem lindamente na mesma plataforma de VM. Ao usá-las nos lugares certos, dependendo da finalidade, o Windows será indiscutivelmente a estação de trabalho de engenharia mais poderosa e flexível do mundo.
+

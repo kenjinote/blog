@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Lingkungan Kompilasi/Eksekusi"]
         D["Penyimpanan File Persisten"]
     end
-    A <-->|Komunikasi HTTP/WebSocket: Penundaan serius karena bandwidth sekolah yang sempit| B
+    A -->| "Komunikasi HTTP/WebSocket: Penundaan serius karena bandwidth sekolah yang sempit" | B
     B <--> C
     B <--> D
 ```
@@ -256,5 +256,6 @@ Bagaimana cara kita dalam memperjuangkan fase paling krusial dan sulit, yaitu fa
 ---
 
 *Dalam artikel ini, kami telah menyoroti batasan infrastruktur pada Konsep GIGA School dan teori-teori mengenai kompleksitas komputasional. Pada artikel-artikel selanjutnya, kami berencana membahas topik yang lebih terperinci mengenai ilmu komputer secara spesifik (seperti algoritma untuk sistem terdistribusi, hingga berbagai macam teknik manajemen memori tingkat rendah).*
+
 
 

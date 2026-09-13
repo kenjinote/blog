@@ -179,7 +179,7 @@ flowchart LR
         C["Ambiente de Execução/Compilação Backend"]
         D["Armazenamento de Arquivo Persistente"]
     end
-    A <-->|Comunicação HTTP/WebSocket: Atraso Crítico Devido à Conexão Lenta da Escola| B
+    A -->| "Comunicação HTTP/WebSocket: Atraso Crítico Devido à Conexão Lenta da Escola" | B
     B <--> C
     B <--> D
 ```
@@ -256,5 +256,6 @@ Sob "consequências e futuro" gerada da concepção de pautar a inclusão de for
 ---
 
 *Neste artigo expusemos questões abordando o escopo referente as dimensões de Teorias em Complexidades sob aos limites nos fatores infraestruturais oriundos do formato no formato imposto aos programas "GIGA School". Focados, numa ótica continuada nas vindouras compilações programadas que darão enfoques e explicações profundas nos focos a ciência matemática (englobadas as construções em esquemas em linguagens algoritmos ao cenário das distribuições em arquitetura sob detalhamento nas formas e maneiras sobre controles a níveis inferiores ligados ao memórias do núcleo) em novos tópicos a continuarem e sequenciais neste canal.*
+
 
 

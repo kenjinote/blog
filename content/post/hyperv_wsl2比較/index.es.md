@@ -71,7 +71,7 @@ graph TD
     F["Espacio de Usuario Linux (Distribuciones WSL2)"]
 
     A --> C
-    C <-->| "Intercambio de Archivos Multi-SO" | D
+    C -->| "Intercambio de Archivos Multi-SO" | D
     D --> E
     D --> F
 ```
@@ -230,3 +230,4 @@ Hyper-V y WSL2 no son tecnologías en las que una sea superior a la otra, sino q
 *   **Hyper-V** es un "hipervisor a gran escala" que lleva al escritorio la sólida separación y las capacidades de gestión cultivadas en los centros de datos empresariales. No tiene igual en la construcción de redes, pruebas de sistemas operativos Windows y simulación de entornos de infraestructura.
 
 En los entornos modernos de Windows, estas dos tecnologías no compiten en igualdad de condiciones, sino que coexisten maravillosamente en la misma plataforma de VM. Al usarlas en el lugar adecuado según el propósito, Windows se convertirá en la estación de trabajo de ingeniería más poderosa y flexible del mundo.
+

@@ -52,7 +52,7 @@ Como a evidência para $H_2$ tem o mesmo valor que a evidência para $H_1$, a se
 
 ```mermaid
 graph TD
-    A["Proposição H1: Todos os corvos são negros"] <-->|Equivalência Lógica (Contrapositiva)| B["Proposição H2: O que não é negro não é um corvo"]
+    A["Proposição H1: Todos os corvos são negros"] -->|Equivalência Lógica (Contrapositiva)| B["Proposição H2: O que não é negro não é um corvo"]
     
     C["Observação: Corvo negro"] -->|Serve como evidência para| A
     D["Observação: Maçã azul"] -->|Serve como evidência para| B
@@ -87,3 +87,4 @@ Em outras palavras, a solução bayesiana é que logicamente "uma maçã azul é
 Este paradoxo destaca como o fundamento da ciência, "indução (derivar leis gerais da observação)", repousa sobre uma premissa muito frágil. Se dependêssemos apenas da equivalência lógica, a "ornitologia de interiores" se tornaria possível: poderíamos testar todas as leis do universo ("todos os cisnes são brancos", "nenhum alienígena é verde", etc.) simplesmente observando as tralhas do nosso quarto sem nunca sair.
 
 Os Corvos de Hempel são um paradoxo fascinante que mostra que as palavras "evidência" e "prova", que usamos inconscientemente, não podem ser totalmente capturadas pelas regras puras da lógica simbólica.
+
