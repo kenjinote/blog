@@ -4,7 +4,7 @@
 
 
 title: 'Cómo enumerar y obtener los títulos de las ventanas actualmente abiertas con PowerShell'
-slug: "ウィンドウタイトルの列挙"
+slug: "Ventanaタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false

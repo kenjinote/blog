@@ -1,6 +1,6 @@
 ---
 title: 'Rust में टेस्ट कैसे लिखें और चलाएं: शुरुआती मार्गदर्शिका (cargo test)'
-slug: "Rustでテストを書く"
+slug: "Rustでपरीक्षणを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","टेस्ट"]
 draft: false

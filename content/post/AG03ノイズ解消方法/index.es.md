@@ -2,7 +2,7 @@
 
 
 title: '【Solución Inmediata】Pasos para actualizar el controlador y eliminar el ruido rasposo de la YAMAHA AG03'
-slug: "AG03ノイズ解消方法"
+slug: "AG03Ruido解消方法"
 date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "Ruido"]
 draft: false

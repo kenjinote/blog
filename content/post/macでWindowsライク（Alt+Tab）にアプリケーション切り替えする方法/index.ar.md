@@ -1,6 +1,6 @@
 ---
 title: 'كيفية إعداد التبديل بين التطبيقات في Mac ليكون شبيهاً بـ Windows (Alt+Tab)'
-slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
+slug: "macでWindowsライク（Alt+Tab）にتبديل التطبيقاتする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "مفاتيح الاختصار", "تبديل التطبيقات"]
 draft: 

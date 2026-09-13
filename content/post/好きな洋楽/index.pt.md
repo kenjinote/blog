@@ -1,6 +1,6 @@
 ---
 title: 'Lista das melhores músicas ocidentais recomendadas: Músicas de sucesso clássicas amadas através do tempo'
-slug: "好きな洋楽"
+slug: "好きなMúsica Ocidental"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Música Ocidental", "Música"]
 draft: false

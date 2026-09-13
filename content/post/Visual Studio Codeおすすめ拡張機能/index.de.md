@@ -1,6 +1,6 @@
 ---
 title: 'Zusammenfassung empfohlener VSCode-Erweiterungen! Eine Liste von Plugins, die die Entwicklungseffizienz drastisch steigern'
-slug: "Visual Studio Codeおすすめ拡張機能"
+slug: "Visual Studio CodeEmpfehlungErweiterung"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Erweiterungen", "Erweiterung"]
 draft: false

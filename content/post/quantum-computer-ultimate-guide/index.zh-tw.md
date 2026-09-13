@@ -7,7 +7,7 @@ categories: ["Math, Crypto, Quantum"]
 math: true
 mermaid: true
 image: "cover.webp"
-description: '從古典電腦的物理極限與摩爾定律的終結，到量子穿隧效應等量子力學效應的壁壘，徹底解說量子電腦拉開序幕的背景。這是了解次世代資訊處理技術的完全指南第 1 章。'
+description: '從古典電腦的物理極限與摩爾定律的終結，到量子穿隧效應等量子力學效應的牆壁壘，徹底解說量子電腦拉開序幕的背景。這是了解次世代資訊處理技術的完全指南第 1 章。'
 ---
 
 

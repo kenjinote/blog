@@ -1,6 +1,6 @@
 ---
 title: '从FLET''S光换到J:COM的结果！关于资费与网速的真实感受'
-slug: "ネット環境をフレッツ光→JCOMに変えた"
+slug: "ネット環境をFlet's 光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","FLET'S光","网络线路"]
 draft: false

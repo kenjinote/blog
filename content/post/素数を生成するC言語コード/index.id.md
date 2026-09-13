@@ -1,6 +1,6 @@
 ---
 title: 'Contoh Kode Bahasa C Sederhana untuk Menghasilkan dan Menentukan Bilangan Prima dalam Rentang yang Ditentukan'
-slug: "素数を生成するC言語コード"
+slug: "Bilangan Primaを生成するC言語コード"
 date: 2024-08-24T09:38:10+09:00
 tags: ["Bahasa C", "Bilangan Prima", "Algoritma", "Matematika"]
 draft: false

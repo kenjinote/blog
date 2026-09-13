@@ -4,7 +4,7 @@
 
 
 title: 'paint.net에서 이미지에 테두리를 추가하는 간단한 방법 및 절차'
-slug: "paint.netを使って画像に枠線をつける方法"
+slug: "paint.netを使って이미지に테두리をつける方法"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "테두리", "이미지"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Fácil! Como Usar e Baixar Ferramentas de Gravação de Tela em GIF Animado'
-slug: "GIFアニメ画面録画ツール"
+slug: "GIFアニメ画面録画Ferramenta"
 date: 2024-02-08T01:23:01+09:00
 tags: ["Ferramenta", "Gravação de tela", "GIF"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'iPhone की SIM लॉक स्थिति (हाँ/नहीं) को आसानी से जांचने का तरीका'
-slug: "iPhoneにSIMロックがかかっているか確認する方法"
+slug: "iPhoneにSIM लॉकがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "सिम लॉक"]
 draft: false

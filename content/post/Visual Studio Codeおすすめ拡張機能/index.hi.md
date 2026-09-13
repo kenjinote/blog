@@ -1,6 +1,6 @@
 ---
 title: 'VSCode अनुशंसित एक्सटेंशन की सूची! प्लगइन्स जो विकास दक्षता में नाटकीय रूप से सुधार करते हैं'
-slug: "Visual Studio Codeおすすめ拡張機能"
+slug: "Visual Studio Codeअनुशंसाएक्सटेंशन"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "एक्सटेंशन", "एक्सटेंशन्स"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'How to Create Buttons (GUI Controls) and Implement Event Handling in Windows API'
-slug: "ボタンついて"
+slug: "Buttonついて"
 date: 2023-01-14T20:24:00+09:00
 tags: ["Button", "GUI"]
 draft: false

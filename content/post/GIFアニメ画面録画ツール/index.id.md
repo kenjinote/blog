@@ -1,6 +1,6 @@
 ---
 title: 'Mudah! Cara Menggunakan dan Mengunduh Alat Perekam Layar Animasi GIF'
-slug: "GIFアニメ画面録画ツール"
+slug: "GIFアニメ画面録画Alat"
 date: 2024-02-08T01:23:01+09:00
 tags: ["alat", "perekam layar", "GIF"]
 draft: false

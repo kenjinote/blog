@@ -1,6 +1,6 @@
 ---
 title: '15 livros obrigatórios recomendados para iniciantes em engenharia! Dos fundamentos de programação ao design'
-slug: "エンジニア初学者におすすめの書籍"
+slug: "EngenheiroInicianteにRecomendaçãoのLivro"
 date: 2024-05-05T16:03:33+09:00
 tags: ["Engenheiros", "Iniciantes", "Livros"]
 draft: false

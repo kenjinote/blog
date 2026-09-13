@@ -1,6 +1,6 @@
 ---
 title: 'A Summary of Recommended Browser Extensions to Dramatically Improve Chrome and Edge'
-slug: "おすすめの Chorme 拡張"
+slug: "Recommendationの Chorme 拡張"
 date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome Extensions", "Browser", "Chrome", "Edge"]
 draft: false

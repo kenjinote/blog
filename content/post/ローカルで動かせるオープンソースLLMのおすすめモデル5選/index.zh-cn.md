@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["AI", "开源", "LLM"]
 tags: ["Llama", "Mistral", "本地AI", "Gemma"]
-description: '在保护隐私的同时免费使用的本地LLM。本文将从技术角度对Llama 3、Mistral、Gemma 2、Qwen 2.5、Phi-3等顶级开源LLM进行全面比较与解析。'
+description: '在保护隐私的同时免费使用的本地LLM。本文将从技术角度对Llama 3、Mistral、Gemma 2、Qwen 2.5、Phi-3等顶级开源LLM进行全面比较与分析。'
 ---
 
 # 引言

@@ -1,6 +1,6 @@
 ---
 title: '[Amélioration de l''efficacité] Liste des raccourcis clavier utiles pour Microsoft Word'
-slug: "Microsoft Wordのショートカット一覧"
+slug: "Microsoft WordのRaccourci一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Raccourcis"]
 draft: false

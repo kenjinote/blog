@@ -1,6 +1,6 @@
 ---
 title: 'Tidak Bisa Membatalkan Berlangganan Google One (Gemini)? Penjelasan Cara Berhenti yang Benar'
-slug: "Google One （Gemini）が解約できない時の対処方法"
+slug: "Google One （Gemini）が解約できない時のPenanggulangan"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "Pembatalan", "Solusi"]
 draft: false

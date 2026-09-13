@@ -1,6 +1,6 @@
 ---
 title: '確認 Windows 授權認證狀態的方法！透過一串指令輕鬆檢查'
-slug: "Windows のライセンスの状態を確認するコマンド"
+slug: "Windows の授權の状態を確認する指令"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "授權", "命令提示字元"]
 draft: false

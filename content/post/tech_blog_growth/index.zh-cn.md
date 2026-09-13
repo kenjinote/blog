@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Blogging", "Career", "SEO"]
 tags: ["Python", "Google Search Console", "Automation", "SEO"]
-description: '利用数据和自动化最大化技术博客访问量的策略。全面解析SEO架构、基于Python和GSC API的流量分析，以及使用GitHub Actions自动化发布的实现方式。'
+description: '利用数据和自动化最大化技术博客访问量的策略。全面分析SEO架构、基于Python和GSC API的流量分析，以及使用GitHub Actions自动化发布的实现方式。'
 ---
 
 ## 前言：只有工程师才能做到的技术博客增长黑客

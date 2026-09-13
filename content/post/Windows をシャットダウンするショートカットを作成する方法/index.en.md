@@ -1,6 +1,6 @@
 ---
 title: 'One-Click PC Power Off! How to Create a Windows Shutdown Shortcut'
-slug: "Windows をシャットダウンするショートカットを作成する方法"
+slug: "Windows をShutdownするShortcutを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Shutdown", "Shortcut"]
 draft: false

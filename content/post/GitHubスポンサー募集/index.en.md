@@ -1,6 +1,6 @@
 ---
 title: 'Notice of Recruiting GitHub Sponsors | Request for Development Support'
-slug: "GitHubスポンサー募集"
+slug: "GitHubSponsor募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Learn Generative AI! A Collection of Recommended Lecture Videos by University of Tokyo Professors'
-slug: "生成AIについて"
+slug: "Generative AIについて"
 date: 2024-04-16T02:13:56+09:00
 tags: ["Generative AI", "YouTube", "Lecture"]
 draft: false

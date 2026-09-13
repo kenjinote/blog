@@ -8,7 +8,7 @@
 
 
 title: 'Windows의 라이선스 인증 상태를 확인하는 방법! 명령 한 번으로 간단하게 체크'
-slug: "Windows のライセンスの状態を確認するコマンド"
+slug: "Windows の라이선스の状態を確認する명령어"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "라이선스", "명령 프롬프트"]
 draft: false

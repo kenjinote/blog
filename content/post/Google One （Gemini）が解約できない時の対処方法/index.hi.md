@@ -1,6 +1,6 @@
 ---
 title: 'Google One (Gemini) रद्द नहीं कर सकते? रद्द करने की सही प्रक्रिया की व्याख्या'
-slug: "Google One （Gemini）が解約できない時の対処方法"
+slug: "Google One （Gemini）が解約できない時のसमाधान"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "रद्द करना", "समाधान"]
 draft: false

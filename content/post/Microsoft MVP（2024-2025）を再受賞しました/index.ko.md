@@ -8,7 +8,7 @@
 
 
 title: 'Microsoft MVP(2024-2025)를 재수상했습니다! MVP 제도의 설명도'
-slug: "Microsoft MVP（2024-2025）を再受賞しました"
+slug: "Microsoft MVP（2024-2025）を再수상しました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false

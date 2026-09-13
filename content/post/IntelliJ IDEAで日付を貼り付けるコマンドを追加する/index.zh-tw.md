@@ -1,6 +1,6 @@
 ---
 title: '在IntelliJ IDEA中建立插入現在日期快捷鍵的方法'
-slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
+slug: "IntelliJ IDEAで日期を貼り付ける指令を追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false

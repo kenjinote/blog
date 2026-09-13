@@ -7,7 +7,7 @@
 
 
 title: 'Solución al error ''Temporary failure resolving'' al hacer apt update en WSL'
-slug: "wsl で「Temporary failure resolving～」と表示される場合の対処方法"
+slug: "wsl で「Temporary failure resolving～」と表示される場合のMétodo de resolución"
 date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "solución"]
 draft: false

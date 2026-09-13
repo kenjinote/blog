@@ -8,7 +8,7 @@
 
 
 title: 'Cómo comprobar fácilmente si un iPhone tiene bloqueo de red (SIM Lock) o no'
-slug: "iPhoneにSIMロックがかかっているか確認する方法"
+slug: "iPhoneにBloqueo SIMがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "Bloqueo de SIM"]
 draft: false

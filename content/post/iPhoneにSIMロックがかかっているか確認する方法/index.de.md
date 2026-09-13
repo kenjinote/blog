@@ -1,6 +1,6 @@
 ---
 title: 'Wie man den SIM-Lock-Status (vorhanden/nicht vorhanden) eines iPhones ganz einfach überprüft'
-slug: "iPhoneにSIMロックがかかっているか確認する方法"
+slug: "iPhoneにSIM-Lockがかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIM-Sperre"]
 draft: false

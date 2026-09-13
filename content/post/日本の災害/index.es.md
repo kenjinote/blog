@@ -7,7 +7,7 @@
 
 
 title: 'Registro de desastres naturales ocurridos en Japón: El terremoto de la península de Noto en 2024 y situación de los daños'
-slug: "日本の災害"
+slug: "日本のDesastre"
 date: 2024-01-07T00:50:09+09:00
 tags: ["Desastres", "Datos"]
 draft: false

@@ -1,12 +1,12 @@
 ---
 title: '將Mac的複製貼上快捷鍵修改為與Windows相同設定的方法'
-slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
+slug: "macで複製貼上の快捷鍵をWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "快捷鍵", "複製與貼上"]
 draft: 
 image: "img.webp"
 categories: ["電腦與小工具"]
-description: '介紹在同時使用Mac與Windows時非常方便的小技巧，透過系統偏好設定更改修飾鍵，將複製與貼上的快捷鍵調整成Windows風格（以Ctrl鍵為主）。'
+description: '介紹在同時使用Mac與Windows時非常方便的小技巧巧，透過系統偏好設定更改修飾鍵，將複製與貼上的快捷鍵調整成Windows風格（以Ctrl鍵為主）。'
 ---
 
 # 簡介

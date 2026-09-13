@@ -1,6 +1,6 @@
 ---
 title: '[Peningkatan Efisiensi Kerja] Daftar Pintasan Keyboard Microsoft Word yang Berguna'
-slug: "Microsoft Wordのショートカット一覧"
+slug: "Microsoft WordのPintasan一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Pintasan"]
 draft: false

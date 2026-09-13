@@ -1,6 +1,6 @@
 ---
 title: 'GitHub प्रायोजक भर्ती की सूचना｜विकास समर्थन के लिए अनुरोध'
-slug: "GitHubスポンサー募集"
+slug: "GitHubप्रायोजक募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "प्रायोजक"]
 draft: false

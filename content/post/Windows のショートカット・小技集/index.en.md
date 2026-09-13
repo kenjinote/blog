@@ -1,6 +1,6 @@
 ---
 title: '[Windows 11/10] A Collection of Handy Shortcut Keys and Tips to Dramatically Boost Work Efficiency'
-slug: "Windows のショートカット・小技集"
+slug: "Windows のShortcut・Trick集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Tips", "Shortcuts"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Eine zusammenfassende Liste empfohlener japanischer Blue-Chip-Aktien mit hoher Dividende'
-slug: "高配当株まとめ"
+slug: "高配当Aktieまとめ"
 date: 2024-12-22T00:56:14+09:00
 tags: ["Aktien"]
 draft: false

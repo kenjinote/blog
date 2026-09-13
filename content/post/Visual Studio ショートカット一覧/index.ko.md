@@ -7,7 +7,7 @@
 
 
 title: 'Visual Studio의 편리한 단축키 목록 [작업 효율 향상]'
-slug: "Visual Studio ショートカット一覧"
+slug: "Visual Studio 바로 가기一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "단축키" ]
 draft: false

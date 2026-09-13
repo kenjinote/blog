@@ -1,6 +1,6 @@
 ---
 title: 'Список встроенных шорткодов в Hugo: встраивание YouTube и Twitter'
-slug: "HUGOで使えるショートコード"
+slug: "HUGOで使えるКороткийコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false

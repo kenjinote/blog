@@ -1,6 +1,6 @@
 ---
 title: 'Go語言（Golang）的安裝步驟與首次程式執行方法'
-slug: "Goをインストールする方法"
+slug: "Goを安裝する方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "安裝"]
 draft: false

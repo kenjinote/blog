@@ -1,6 +1,6 @@
 ---
 title: 'Création facile de graphiques dans le navigateur ! Comment utiliser un éditeur de graphiques Web gratuit et pratique'
-slug: "グラフエディタ"
+slug: "Grapheエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "graphes"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'How to Enumerate and Retrieve Currently Open Window Titles Using PowerShell'
-slug: "ウィンドウタイトルの列挙"
+slug: "Windowタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false

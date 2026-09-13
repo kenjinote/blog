@@ -7,7 +7,7 @@
 
 
 title: 'PMP 시험의 기초 지식과 수험 공부 요약: PMBOK 제7판 대응'
-slug: "PMP勉強"
+slug: "PMP공부"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "공부"]
 draft: false

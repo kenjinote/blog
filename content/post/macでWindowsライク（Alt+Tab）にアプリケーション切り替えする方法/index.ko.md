@@ -4,7 +4,7 @@
 
 
 title: 'Mac에서 Windows 스타일(Alt+Tab)로 앱을 전환하는 설정 방법'
-slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
+slug: "macでWindowsライク（Alt+Tab）に애플리케이션 전환する方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "단축키", "애플리케이션 전환"]
 draft: 

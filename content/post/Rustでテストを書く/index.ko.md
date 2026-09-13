@@ -4,7 +4,7 @@
 
 
 title: 'Rust에서 테스트 작성 및 실행 방법 입문 (cargo test)'
-slug: "Rustでテストを書く"
+slug: "Rustで테스트を書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","테스트"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Instalasi Hugo CLI dan Daftar Perintah Dasar yang Sering Digunakan'
-slug: "Hugoコマンド一覧"
+slug: "HugoPerintah一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "perintah"]
 draft: false

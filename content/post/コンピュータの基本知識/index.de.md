@@ -1,6 +1,6 @@
 ---
 title: 'Was sind die fünf Hauptkomponenten eines Computers? Grundwissen über Hardware und Software, das IT-Anfänger kennen sollten'
-slug: "コンピュータの基本知識"
+slug: "ComputerのGrundwissen"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Computer", "Grundwissen"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Mac पर Windows-शैली (Alt+Tab) में ऐप्स स्विच करने की सेटिंग विधि'
-slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
+slug: "macでWindowsライク（Alt+Tab）にएप्लिकेशन स्विचिंगする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "शॉर्टकट कुंजियां", "एप्लिकेशन स्विचिंग"]
 draft: 

@@ -1,6 +1,6 @@
 ---
 title: '4 Alat Praktis untuk Menganalisis dan Mengekstrak Isi File Executable (exe) Windows'
-slug: "実行ファイル（exe）の中身を解析するツール"
+slug: "File Eksekusi（exe）の中身をAnalisisするAlat"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "file executable", "analisis"]
 draft: false

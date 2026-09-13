@@ -1,6 +1,6 @@
 ---
 title: 'Ahli Matematika Jenius Sebagai Protagonis! Film Masterpiece Rekomendasi dan Kisah Pemecahan Kode'
-slug: "数学者が登場する映画"
+slug: "Ahli Matematikaが登場するFilm"
 date: 2022-09-05T10:41:00+09:00
 tags: ["film", "matematikawan"]
 draft: false

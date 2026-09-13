@@ -4,7 +4,7 @@
 
 
 title: '¡Reseña del ELECOM Deft Pro! Ventajas y desventajas del ratón trackball de 8 botones'
-slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
+slug: "TrackballDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false

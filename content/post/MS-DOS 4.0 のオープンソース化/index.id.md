@@ -1,6 +1,6 @@
 ---
 title: 'OS ''MS-DOS 4.0'' dari Sekitar 40 Tahun Lalu Menjadi Open Source dan Dirilis'
-slug: "MS-DOS 4.0 のオープンソース化"
+slug: "MS-DOS 4.0 のSumber Terbuka化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "Open Source"]
 draft: false

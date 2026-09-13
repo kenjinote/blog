@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ['Programming', 'Windows', 'Linux']
 tags: ['WSL2', 'Docker', 'VSCode', 'Zsh', 'Development Environment']
-description: '这是一份能显著提升Windows平台开发体验的WSL2完整配置指南。从架构的详细解析到资源调优、VSCode Remote的协同、Docker的优化、以及SSH Agent的共享，全面涵盖了进行专业开发所需的各类知识。'
+description: '这是一份能显著提升Windows平台开发体验的WSL2完整配置指南。从架构的详细分析到资源调优、VSCode Remote的协同、Docker的优化、以及SSH Agent的共享，全面涵盖了进行专业开发所需的各类知识。'
 ---
 
 在Windows上提供Linux原生开发环境的“WSL2（Windows Subsystem for Linux 2）”，已经成为现代软件开发中不可或缺的工具。然而，是继续在默认状态下使用，还是在理解架构的基础上进行适当的调优，这在性能和开发体验上将会产生天壤之别。

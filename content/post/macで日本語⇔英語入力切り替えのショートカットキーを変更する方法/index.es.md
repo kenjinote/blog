@@ -3,7 +3,7 @@
 
 
 title: 'Cómo cambiar el atajo de teclado para cambiar entre entrada en japonés e inglés en Mac (para teclados US)'
-slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
+slug: "macでJaponés⇔英語入力切り替えのTecla de atajoを変更する方法"
 date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "atajos de teclado", "entrada en japonés"]
 draft: 

@@ -1,6 +1,6 @@
 ---
 title: '约40年前的操作系统“MS-DOS 4.0”已开源发布'
-slug: "MS-DOS 4.0 のオープンソース化"
+slug: "MS-DOS 4.0 の开源化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "开源"]
 draft: false

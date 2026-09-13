@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Blogging", "SEO", "Hugo"]
 tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
-description: '精通Hugo SEO优化的完整指南。从元数据、OGP到JSON-LD结构化数据，全面解析如何通过自定义前置数据和head.html来让访问量实现飞跃式增长。'
+description: '精通Hugo SEO优化的完整指南。从元数据、OGP到JSON-LD结构化数据，全面分析如何通过自定义前置数据和head.html来让访问量实现飞跃式增长。'
 ---
 
 Hugo是一个使用Go语言编写的世界最快级别的静态网站生成器（SSG）。凭借其压倒性的构建速度和灵活的模板系统，它获得了许多工程师和博主的高度支持。然而，仅仅让网站被快速生成和显示，并不能让它在搜索引擎（如Google或Bing）中获得高评价，也无法将文章传递给用户。

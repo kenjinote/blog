@@ -3,7 +3,7 @@
 
 
 title: 'Ejemplo de código y creación de un programa en Rust para enumerar números primos'
-slug: "Rustで素数を列挙する"
+slug: "RustでNúmero primoを列挙する"
 date: 2022-09-09T07:08:49+09:00
 tags: ["Rust","números primos","algoritmos"]
 draft: false

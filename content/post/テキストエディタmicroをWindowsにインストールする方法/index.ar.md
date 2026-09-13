@@ -1,6 +1,6 @@
 ---
 title: 'يمكن استخدامه على Windows! طريقة تثبيت محرر النصوص الخفيف "micro"'
-slug: "テキストエディタmicroをWindowsにインストールする方法"
+slug: "محرر نصوصmicroをWindowsにتثبيتする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "محرر نصوص"]
 draft: false

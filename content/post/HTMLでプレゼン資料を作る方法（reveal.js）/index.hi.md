@@ -1,6 +1,6 @@
 ---
 title: 'reveal.js का उपयोग: HTML और Markdown के साथ प्रेजेंटेशन सामग्री बनाएं'
-slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
+slug: "HTMLでप्रस्तुति資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "प्रेजेंटेशन"]
 draft: false

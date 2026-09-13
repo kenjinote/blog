@@ -1,6 +1,6 @@
 ---
 title: 'Verwendung von reveal.js: Erstellen von Präsentationsmaterialien mit HTML und Markdown'
-slug: "HTMLでプレゼン資料を作る方法（reveal.js）"
+slug: "HTMLでPräsentation資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "Präsentation"]
 draft: false

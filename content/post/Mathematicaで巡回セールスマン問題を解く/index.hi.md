@@ -1,6 +1,6 @@
 ---
 title: 'Mathematica से ट्रैवलिंग सेल्समैन प्रॉब्लम (TSP) कैसे हल करें'
-slug: "Mathematicaで巡回セールスマン問題を解く"
+slug: "Mathematicaでट्रैवलिंग सेल्समैन समस्याを解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "ट्रैवलिंग सेल्समैन समस्या", "एल्गोरिदम", "गणित"]
 draft: false

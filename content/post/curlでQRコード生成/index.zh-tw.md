@@ -1,6 +1,6 @@
 ---
 title: '使用curl指令在命令提示字元中生成QR Code的方法'
-slug: "curlでQRコード生成"
+slug: "curlでQR碼生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["QR Code", "curl", "命令提示字元"]
 draft: false

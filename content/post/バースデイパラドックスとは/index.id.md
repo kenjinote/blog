@@ -1,6 +1,6 @@
 ---
 title: 'Apa itu Paradoks Ulang Tahun? Alasan Mengapa Peluang Dua Orang Berulang Tahun Sama dalam Grup Berisi 23 Orang Lebih dari 50%'
-slug: "バースデイパラドックスとは"
+slug: "バースデイParadoksとは"
 date: 2024-04-02T01:20:50+09:00
 tags: ["Matematika", "Paradoks"]
 draft: false

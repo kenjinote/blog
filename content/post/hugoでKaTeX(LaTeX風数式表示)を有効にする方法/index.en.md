@@ -1,6 +1,6 @@
 ---
 title: 'How to Introduce KaTeX in Hugo and Display Beautiful LaTeX-Style Formulas'
-slug: "hugoでKaTeX(LaTeX風数式表示)を有効にする方法"
+slug: "hugoでKaTeX(LaTeX風Formula表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "math", "mathematics", "hugo"]
 draft: false

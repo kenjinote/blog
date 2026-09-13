@@ -1,6 +1,6 @@
 ---
 title: 'Comment modifier les raccourcis clavier de copier-coller sur Mac pour qu''ils soient identiques à ceux de Windows'
-slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
+slug: "macでCopier-collerのTouche de raccourciをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "Touche de raccourci", "Copier et coller"]
 draft: 

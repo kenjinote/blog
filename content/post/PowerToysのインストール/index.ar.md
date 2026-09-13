@@ -1,6 +1,6 @@
 ---
 title: 'كيفية تثبيت وإلغاء تثبيت PowerToys باستخدام أمر winget'
-slug: "PowerToysのインストール"
+slug: "PowerToysのتثبيت"
 date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "موجه الأوامر", "PowerToys", "winget"]
 draft: false

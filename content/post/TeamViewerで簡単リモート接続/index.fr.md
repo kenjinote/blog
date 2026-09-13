@@ -1,6 +1,6 @@
 ---
 title: '[Pour les débutants] Comment se connecter facilement à un bureau à distance avec TeamViewer'
-slug: "TeamViewerで簡単リモート接続"
+slug: "TeamViewerで簡単Connexion à distance"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Commande", "Connexion à Distance"]
 draft: false

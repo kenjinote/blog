@@ -1,7 +1,7 @@
 ---
 author: "Hugo Authors"
 title: 'Beispiele für Markdown-Syntax in Hugo: Grundlegende Syntax für Überschriften, Absätze usw.'
-slug: "マークダウンのサンプル"
+slug: "マークダウンのBeispiel"
 date: "2019-03-11"
 description: 'Wir stellen Beispiele für die grundlegende Markdown-Syntax vor, die bei der Erstellung von Inhalten mit dem statischen Website-Generator Hugo verwendet werden kann. Sie können sehen, wie Überschriften (H1-H6), Absätze und mehr durch das CSS des Themes formatiert werden.'
 tags: ["markdown", "css", "html", "themes"]

@@ -1,6 +1,6 @@
 ---
 title: '使用Rust和winapi创建并显示Windows简单窗口的方法'
-slug: "Rustでシンプルなウィンドウを表示する"
+slug: "Rustでシンプルな窗口を表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust","窗口"]
 draft: false

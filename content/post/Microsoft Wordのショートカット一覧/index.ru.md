@@ -1,6 +1,6 @@
 ---
 title: '【Повышение эффективности】Список полезных сочетаний клавиш для Microsoft Word'
-slug: "Microsoft Wordのショートカット一覧"
+slug: "Microsoft WordのЯрлык一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Сочетания клавиш"]
 draft: false

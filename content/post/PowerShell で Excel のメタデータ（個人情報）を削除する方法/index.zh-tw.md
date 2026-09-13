@@ -1,6 +1,6 @@
 ---
 title: '使用 PowerShell 批次刪除 Excel 與 Word 中繼資料 (個人資訊) 的方法'
-slug: "PowerShell で Excel のメタデータ（個人情報）を削除する方法"
+slug: "PowerShell で Excel の中繼資料（個人資料）を削除する方法"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "元數據", "個人資訊"]
 draft: false

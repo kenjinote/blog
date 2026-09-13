@@ -1,6 +1,6 @@
 ---
 title: 'Hugo के अंतर्निहित शार्टकोड की सूची: YouTube और Twitter को एम्बेड करना'
-slug: "HUGOで使えるショートコード"
+slug: "HUGOで使えるशॉर्टコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false

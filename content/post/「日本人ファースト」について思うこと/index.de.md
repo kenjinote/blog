@@ -1,6 +1,6 @@
 ---
 title: 'Das virtuelle und das reale Bild von „Japaner zuerst“: Die Herausforderungen vor denen Japan 2026 steht und der Weg zur Koexistenz'
-slug: "「日本人ファースト」について思うこと"
+slug: "「Japaner Zuerst」についてGedanken"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Japaner First", "Politik", "Gesellschaftsprobleme"]
 draft: false

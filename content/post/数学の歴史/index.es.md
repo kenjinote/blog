@@ -4,7 +4,7 @@
 
 
 title: 'La historia de las matemáticas y los antiguos problemas difíciles: Aprende sobre los tres grandes problemas de construcción y la espiral de Arquímedes'
-slug: "数学の歴史"
+slug: "MatemáticasのHistoria"
 date: 2023-07-22T15:25:10+09:00
 tags: ["Matemáticas", "Historia"]
 draft: false

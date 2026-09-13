@@ -1,6 +1,6 @@
 ---
 title: 'مراجعة Elecom Deft Pro! مزايا وعيوب ماوس كرة التتبع المزود بـ 8 أزرار'
-slug: "トラックボールDeft Pro（M-DPT1MRBK）のすすめ"
+slug: "كرة التتبعDeft Pro（M-DPT1MRBK）のすすめ"
 date: 2023-05-02T23:28:33+09:00
 tags: ["كرة التتبع", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false

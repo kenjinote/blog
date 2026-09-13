@@ -1,6 +1,6 @@
 ---
 title: 'Windows 실행 파일(exe)의 내부를 분석·해제할 수 있는 편리한 도구 4선'
-slug: "実行ファイル（exe）の中身を解析するツール"
+slug: "실행 파일（exe）の中身を해석する도구"
 date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "실행 파일", "분석"]
 draft: false

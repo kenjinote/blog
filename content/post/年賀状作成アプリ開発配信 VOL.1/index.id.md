@@ -1,6 +1,6 @@
 ---
 title: '[C++] Siaran Pengembangan Aplikasi Pembuatan Kartu Tahun Baru VOL.1: Pengaturan Lingkungan dan Inisialisasi Direct2D'
-slug: "年賀状作成アプリ開発配信 VOL.1"
+slug: "年賀状作成Aplikasi開発配信 VOL.1"
 date: 2025-08-31T20:24:49+09:00
 tags: ["Distribusi Pembuatan Aplikasi Kartu Tahun Baru", "YouTube"]
 draft: false

@@ -4,12 +4,12 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "We explain Gödel's Incompleteness Theorems, a historic theorem that showed the limits of mathematics, including its meaning and how the proof works, in an easy-to-understand manner with concrete examples and diagrams."
 categories:
-  - 数学
-  - コンピュータサイエンス
+  - Mathematics
+  - Computer Science
 tags:
-  - 論理学
-  - ゲーデル
-  - 不完全性定理
+  - Logic
+  - Gödel
+  - Incompleteness Theorems
 slug: "godels-incompleteness-theorems"
 ---
 

@@ -4,7 +4,7 @@
 
 
 title: '원클릭으로 PC 전원 끄기! Windows를 종료하는 바로가기 생성 방법'
-slug: "Windows をシャットダウンするショートカットを作成する方法"
+slug: "Windows を시스템 종료する바로 가기を作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "종료", "바로 가기"]
 draft: false

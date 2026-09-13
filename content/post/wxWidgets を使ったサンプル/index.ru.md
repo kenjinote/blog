@@ -1,6 +1,6 @@
 ---
 title: 'Использование wxWidgets: от установки до создания простого проекта'
-slug: "wxWidgets を使ったサンプル"
+slug: "wxWidgets を使ったПример"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Примеры"]
 draft: false

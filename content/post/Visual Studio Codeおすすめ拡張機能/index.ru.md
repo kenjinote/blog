@@ -1,6 +1,6 @@
 ---
 title: 'Подборка рекомендуемых расширений для VSCode! Список плагинов для кардинального повышения эффективности разработки'
-slug: "Visual Studio Codeおすすめ拡張機能"
+slug: "Visual Studio CodeРекомендацииРасширение"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "расширения", "плагины"]
 draft: false

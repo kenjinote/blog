@@ -8,7 +8,7 @@
 
 
 title: 'Mito y realidad de ''Los japoneses primero'': los desafíos y el camino hacia la coexistencia que enfrentará Japón en 2026'
-slug: "「日本人ファースト」について思うこと"
+slug: "「Los japoneses primero」についてPensamientos"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Primero los Japoneses", "Política", "Problemas sociales"]
 draft: false

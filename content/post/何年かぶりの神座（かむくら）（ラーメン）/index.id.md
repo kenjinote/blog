@@ -1,6 +1,6 @@
 ---
 title: 'Ke ''Kamukura'' Lagi Setelah Bertahun-tahun! Menikmati Ramen Negi Kimchi yang Direkomendasikan'
-slug: "何年かぶりの神座（かむくら）（ラーメン）"
+slug: "何年かぶりのKamukura（かむくら）（Ramen）"
 date: 2022-09-09T21:45:19+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false

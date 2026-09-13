@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Industry", "Career", "AI"]
 tags: ["2026 Problem", "SIer", "Generative AI", "Developer Career"]
-description: 'IT行业的“2026年问题”的真相。深入解析生成式AI崛起导致的人才需求两极分化，以及工程师的生存战略。'
+description: 'IT行业的“2026年问题”的真相。深入分析生成式AI崛起导致的人才需求两极分化，以及工程师的生存战略。'
 ---
 
 ## 引言：“IT人才短缺”这个词的陷阱

@@ -4,7 +4,7 @@
 
 
 title: '¿Por qué me gustan las matemáticas y las computadoras? Pensando en su encanto y las razones de su atractivo'
-slug: "なぜ数学や計算機が好きなんだろう"
+slug: "なぜMatemáticasや計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00
 tags: ["Miscelánea"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: '【立即解決】消除YAMAHA AG03雜音與干擾的驅動程式更新步驟'
-slug: "AG03ノイズ解消方法"
+slug: "AG03雜訊解消方法"
 date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "雜訊"]
 draft: false

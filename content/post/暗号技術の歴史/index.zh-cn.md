@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["History", "Cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
-description: '从古代的凯撒密码，到恩尼格玛、公钥密码，再到为应对未来量子计算机威胁而准备的抗量子密码（PQC），我们将全面解析密码技术的宏伟历史与技术演进。'
+description: '从古代的凯撒密码，到恩尼格玛、公钥密码，再到为应对未来量子计算机威胁而准备的抗量子密码（PQC），我们将全面分析密码技术的宏伟历史与技术演进。'
 ---
 
 # 1. 引言：什么是密码技术？

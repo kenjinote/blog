@@ -1,6 +1,6 @@
 ---
 title: '用「hide」指令一秒啟動秀丸編輯器！Windows 實用設定方法'
-slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
+slug: "指令「hide」で秀丸編輯器を立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["指令", "Hidemaru 編輯器", "登錄檔"]
 draft: false

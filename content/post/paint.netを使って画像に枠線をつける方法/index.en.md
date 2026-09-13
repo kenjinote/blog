@@ -1,6 +1,6 @@
 ---
 title: 'Simple Methods and Steps to Add a Border to an Image in paint.net'
-slug: "paint.netを使って画像に枠線をつける方法"
+slug: "paint.netを使ってImageにBorderをつける方法"
 date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "border", "image"]
 draft: false

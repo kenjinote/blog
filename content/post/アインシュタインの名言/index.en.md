@@ -1,6 +1,6 @@
 ---
 title: 'Don''t Give in to Criticism! Tips for Living Strong Learned from Einstein''s Quotes'
-slug: "アインシュタインの名言"
+slug: "EinsteinのQuote"
 date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Quote", "Philosophy", "Science", "Physics"]
 draft: false

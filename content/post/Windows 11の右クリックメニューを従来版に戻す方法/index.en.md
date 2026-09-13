@@ -1,6 +1,6 @@
 ---
 title: 'How to Restore the Windows 11 Right-Click Menu to the Classic Version (Old Specification) [Registry Settings]'
-slug: "Windows 11の右クリックメニューを従来版に戻す方法"
+slug: "Windows 11のRight-Click Menuを従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "File Explorer"]
 draft: false

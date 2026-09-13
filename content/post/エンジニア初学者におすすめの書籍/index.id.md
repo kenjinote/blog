@@ -1,6 +1,6 @@
 ---
 title: '15 Buku Wajib yang Direkomendasikan untuk Insinyur Pemula! Dari Dasar Pemrograman hingga Desain'
-slug: "エンジニア初学者におすすめの書籍"
+slug: "InsinyurPemulaにRekomendasiのBuku"
 date: 2024-05-05T16:03:33+09:00
 tags: ["insinyur", "pemula", "buku"]
 draft: false

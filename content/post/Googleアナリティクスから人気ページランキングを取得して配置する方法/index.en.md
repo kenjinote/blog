@@ -1,6 +1,6 @@
 ---
 title: 'How to Display Google Analytics Popular Article Rankings with Ranklet'
-slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
+slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false

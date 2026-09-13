@@ -8,7 +8,7 @@
 
 
 title: 'Cómo eliminar masivamente metadatos (información personal) de Excel y Word con PowerShell'
-slug: "PowerShell で Excel のメタデータ（個人情報）を削除する方法"
+slug: "PowerShell で Excel のMetadatos（Información personal）を削除する方法"
 date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Metadatos", "Información personal"]
 draft: false

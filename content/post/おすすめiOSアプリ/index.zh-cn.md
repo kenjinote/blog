@@ -1,6 +1,6 @@
 ---
 title: '真正实用！精选推荐iOS应用汇总'
-slug: "おすすめiOSアプリ"
+slug: "推荐iOS应用"
 date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "应用", "推荐"]
 draft: false

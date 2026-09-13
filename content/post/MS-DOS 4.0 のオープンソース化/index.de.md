@@ -1,6 +1,6 @@
 ---
 title: 'Das rund 40 Jahre alte Betriebssystem „MS-DOS 4.0“ wurde als Open Source veröffentlicht'
-slug: "MS-DOS 4.0 のオープンソース化"
+slug: "MS-DOS 4.0 のOpen Source化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "Open Source"]
 draft: false

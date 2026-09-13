@@ -1,6 +1,6 @@
 ---
 title: 'Buat Grafik dengan Mudah di Browser! Cara Menggunakan Editor Grafik Web Gratis yang Praktis'
-slug: "グラフエディタ"
+slug: "Grafikエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "grafik"]
 draft: false

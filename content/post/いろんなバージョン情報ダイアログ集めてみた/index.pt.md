@@ -1,6 +1,6 @@
 ---
 title: 'Coletei telas de diálogo de informações de versão de vários softwares'
-slug: "いろんなバージョン情報ダイアログ集めてみた"
+slug: "いろんなInformação de Versãoダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Informações de Versão", "Windows", "MacOS"]
 draft: false

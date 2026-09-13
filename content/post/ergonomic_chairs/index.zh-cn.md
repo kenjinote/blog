@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Gadgets", "Health", "Productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
-description: '基于生物力学，全面解析保护远程工作者免受腰痛困扰的人体工学椅的物理学原理与选购方法。并对比Aeron椅和Contessa等高端型号的结构设计。'
+description: '基于生物力学，全面分析保护远程工作者免受腰痛困扰的人体工学椅的物理学原理与选购方法。并对比Aeron椅和Contessa等高端型号的结构设计。'
 ---
 
 随着远程工作的普及，许多软件工程师和知识工作者每天要在办公桌前度过8个小时以上的时间。这种长时间的久坐姿势，对人体，特别是腰椎（Lumbar spine）施加了极其严苛的负荷。

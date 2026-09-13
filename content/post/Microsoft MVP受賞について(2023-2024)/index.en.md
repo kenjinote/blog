@@ -1,6 +1,6 @@
 ---
 title: 'I Received the Microsoft MVP (2023-2024) Award'
-slug: "Microsoft MVP受賞について(2023-2024)"
+slug: "Microsoft MVPAwardについて(2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Award"]
 draft: false

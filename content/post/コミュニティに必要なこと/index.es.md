@@ -4,7 +4,7 @@
 
 
 title: '¿Qué se necesita para una buena comunidad? Pistas de gestión de las directrices de Scratch'
-slug: "コミュニティに必要なこと"
+slug: "Comunidadに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Comunidad", "Miscelánea"]
 draft: false

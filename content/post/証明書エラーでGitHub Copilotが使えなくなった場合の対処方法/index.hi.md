@@ -1,6 +1,6 @@
 ---
 title: 'GitHub Copilot के लिए प्रमाणपत्र त्रुटि समाधान (UNABLE_TO_VERIFY_LEAF_SIGNATURE)'
-slug: "証明書エラーでGitHub Copilotが使えなくなった場合の対処方法"
+slug: "証明書エラーでGitHub Copilotが使えなくなった場合のसमाधान"
 date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false

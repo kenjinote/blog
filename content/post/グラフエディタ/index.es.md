@@ -4,7 +4,7 @@
 
 
 title: '¡Crea gráficos fácilmente en el navegador! Cómo usar editores de gráficos web gratuitos y convenientes'
-slug: "グラフエディタ"
+slug: "Gráficoエディタ"
 date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "grafos"]
 draft: false

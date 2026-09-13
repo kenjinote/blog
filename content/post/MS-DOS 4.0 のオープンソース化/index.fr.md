@@ -1,6 +1,6 @@
 ---
 title: 'Le code source du système d''exploitation ''MS-DOS 4.0'' d''il y a environ 40 ans devient open source et est publié'
-slug: "MS-DOS 4.0 のオープンソース化"
+slug: "MS-DOS 4.0 のOpen source化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "Open Source"]
 draft: false

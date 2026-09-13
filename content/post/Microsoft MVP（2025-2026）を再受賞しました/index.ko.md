@@ -8,7 +8,7 @@
 
 
 title: 'Microsoft MVP(2025-2026) 재수상 보고와 그동안의 활동'
-slug: "Microsoft MVP（2025-2026）を再受賞しました"
+slug: "Microsoft MVP（2025-2026）を再수상しました"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false

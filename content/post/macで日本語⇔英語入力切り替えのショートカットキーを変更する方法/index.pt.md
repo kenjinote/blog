@@ -1,6 +1,6 @@
 ---
 title: 'Como alterar a tecla de atalho para alternar entre japonês e inglês no Mac (para teclado US)'
-slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
+slug: "macでJaponês⇔英語入力切り替えのTecla de Atalhoを変更する方法"
 date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "Tecla de Atalho", "Entrada em Japonês"]
 draft: 

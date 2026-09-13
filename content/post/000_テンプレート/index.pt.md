@@ -1,6 +1,6 @@
 ---
 title: '[Guia Completo] Template para Criação de Artigos de Blog! Estrutura de Títulos Focada em SEO e Dicas de Escrita'
-slug: "000_テンプレート"
+slug: "000_Modelo"
 date: 2022-01-01T00:00:00+09:00
 tags: ["Tag 1", "Tag 2"]
 draft: true

@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["AI", "Law", "Tech Trends"]
 tags: ["Copyright", "Generative AI", "Law", "2026 Trends"]
-description: "深入解析2026年生成式AI与版权问题的最新动态、欧盟'AI Act'、美国与日本的法律体系完善，以及C2PA和Nightshade等技术性防御措施。"
+description: "深入分析2026年生成式AI与版权问题的最新动态、欧盟'AI Act'、美国与日本的法律体系完善，以及C2PA和Nightshade等技术性防御措施。"
 ---
 
 ## 1. 引言：2026年，生成式AI与版权的全新范式转变

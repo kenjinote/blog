@@ -1,6 +1,6 @@
 ---
 title: 'Apa yang Dibutuhkan untuk Komunitas yang Baik? Tips Manajemen Belajar dari Pedoman Scratch'
-slug: "コミュニティに必要なこと"
+slug: "Komunitasに必要なこと"
 date: 2022-09-23T01:37:43+09:00
 tags: ["Komunitas", "Lain-lain"]
 draft: false

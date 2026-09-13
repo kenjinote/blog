@@ -8,7 +8,7 @@
 
 
 title: 'Hugo CLI 설치 및 자주 사용하는 기본 명령어 목록'
-slug: "Hugoコマンド一覧"
+slug: "Hugo명령어一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "명령어"]
 draft: false

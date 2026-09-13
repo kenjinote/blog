@@ -1,6 +1,6 @@
 ---
 title: 'Qui est Akiko Yosano ? Explication de sa vie et de ses œuvres majeures comme « Midaregami » et « Kimi Shinitamou Koto Nakare »'
-slug: "与謝野晶子について"
+slug: "Akiko Yosanoについて"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Yosano Akiko"]
 draft: false

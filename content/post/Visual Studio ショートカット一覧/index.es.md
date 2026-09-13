@@ -7,7 +7,7 @@
 
 
 title: 'Lista de atajos de teclado útiles de Visual Studio 【Mejora de eficiencia】'
-slug: "Visual Studio ショートカット一覧"
+slug: "Visual Studio Atajo一覧"
 date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Accesos directos" ]
 draft: false

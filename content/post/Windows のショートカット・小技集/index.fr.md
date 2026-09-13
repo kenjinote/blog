@@ -1,6 +1,6 @@
 ---
 title: '[Windows 11/10] Une collection de raccourcis clavier et d''astuces pratiques pour augmenter considérablement l''efficacité du travail'
-slug: "Windows のショートカット・小技集"
+slug: "Windows のRaccourci・Astuce集"
 date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Astuces", "Raccourcis"]
 draft: false

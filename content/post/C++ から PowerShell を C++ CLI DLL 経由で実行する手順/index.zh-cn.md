@@ -6,7 +6,7 @@ tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
 categories: ["编程"]
-description: '您在寻找从原生C++调用并执行PowerShell脚本的方法吗？本文将深入解析在Visual Studio 2022环境中，创建C++/CLI包装器DLL，顺畅实现系统协作的具体实现步骤。'
+description: '您在寻找从原生C++调用并执行PowerShell脚本的方法吗？本文将深入分析在Visual Studio 2022环境中，创建C++/CLI包装器DLL，顺畅实现系统协作的具体实现步骤。'
 ---
 
 # 🎯 通过 C++/CLI DLL 从 C++ 执行 PowerShell 的步骤（Visual Studio 2022 / C++）

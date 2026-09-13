@@ -1,6 +1,6 @@
 ---
 title: 'Отчет о повторном получении награды Microsoft MVP (2025-2026) и моей деятельности'
-slug: "Microsoft MVP（2025-2026）を再受賞しました"
+slug: "Microsoft MVP（2025-2026）を再Наградаしました"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false

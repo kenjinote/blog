@@ -8,7 +8,7 @@
 
 
 title: '¡Imprescindible para desarrolladores de Windows! Cómo instalar MSIX localmente añadiendo un certificado autofirmado'
-slug: "msixに自己証明書をつけてインストールできるようにする"
+slug: "msixにCertificado autofirmadoをつけてInstalaciónできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "certificado autofirmado", "instalación"]
 draft: false

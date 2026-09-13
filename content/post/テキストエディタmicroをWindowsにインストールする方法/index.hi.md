@@ -1,6 +1,6 @@
 ---
 title: 'Windows पर उपलब्ध! हल्के टेक्स्ट एडिटर ''micro'' की इंस्टॉलेशन प्रक्रिया'
-slug: "テキストエディタmicroをWindowsにインストールする方法"
+slug: "टेक्स्ट एडिटरmicroをWindowsにइंस्टॉलする方法"
 date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "टेक्स्ट एडिटर"]
 draft: false

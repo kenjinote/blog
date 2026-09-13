@@ -1,6 +1,6 @@
 ---
 title: '[Bootloop Fix] Official Steps for Software Restoration and Initialization of Google Pixel Devices'
-slug: "Android(Google Pixel)端末の復元手順"
+slug: "Android(Google Pixel)端末のRestore手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Restore", "Troubleshooting"]
 draft: false

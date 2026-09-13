@@ -1,6 +1,6 @@
 ---
 title: 'Hugo CLI的安装与常用基本命令一览'
-slug: "Hugoコマンド一覧"
+slug: "Hugo命令一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "命令"]
 draft: false

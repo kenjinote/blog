@@ -1,6 +1,6 @@
 ---
 title: '可用於部落格的免費照片素材網站「Unsplash」使用方法、授權及商業用途說明'
-slug: "ブログで使える写真素材サイト「Unsplash」について"
+slug: "部落格で使える照片素材サイト「Unsplash」について"
 date: 2023-04-02T14:44:17+09:00
 tags: ["圖片素材", "部落格", "Unsplash"]
 draft: false

@@ -4,7 +4,7 @@
 
 
 title: '[Por idioma] ¡Funciona en el navegador! Resumen de entornos de ejecución de código de programación en línea gratuitos'
-slug: "オンラインのコード実行環境まとめ"
+slug: "En líneaのEntorno de ejecución de códigoまとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["En línea", "Entorno de ejecución de código", "Programación"]
 draft: false

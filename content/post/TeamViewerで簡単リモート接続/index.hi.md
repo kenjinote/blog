@@ -1,6 +1,6 @@
 ---
 title: '[शुरुआती लोगों के लिए] TeamViewer के साथ आसानी से रिमोट डेस्कटॉप कनेक्शन कैसे बनाएं'
-slug: "TeamViewerで簡単リモート接続"
+slug: "TeamViewerで簡単रिमोट कनेक्शन"
 date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "कमांड", "रिमोट कनेक्शन"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Collection of Recommended Western Masterpieces: Timeless Classic Hit Songs'
-slug: "好きな洋楽"
+slug: "好きなWestern Music"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Western Music", "Music"]
 draft: false

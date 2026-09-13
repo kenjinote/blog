@@ -1,6 +1,6 @@
 ---
 title: 'Grundwissen und Studienzusammenfassung für die PMP-Prüfung: Entsprechend PMBOK 7. Ausgabe'
-slug: "PMP勉強"
+slug: "PMPLernen"
 date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Studium"]
 draft: false

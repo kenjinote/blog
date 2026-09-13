@@ -1,6 +1,6 @@
 ---
 title: 'A 400-Year Mystery! What is the Kepler Conjecture? Explaining the Romance of Mathematics Learned from Packing Watermelons'
-slug: "ケプラー予想をわかりやすく解説"
+slug: "Kepler Conjectureをわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Mathematics", "Kepler's Conjecture", "Explanation"]
 draft: false

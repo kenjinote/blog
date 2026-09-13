@@ -1,6 +1,6 @@
 ---
 title: 'Windows वातावरण में OpenSSL को बिल्ड/इंस्टॉल करने की प्रक्रिया और वातावरण निर्माण का तरीका'
-slug: "Windows で OpenSSL をビルドする方法"
+slug: "Windows で OpenSSL をनिर्माणする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false

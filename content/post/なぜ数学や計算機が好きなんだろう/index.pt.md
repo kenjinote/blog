@@ -1,6 +1,6 @@
 ---
 title: 'Por que eu gosto de matemática e computadores? Pensei em seus encantos e razões para me atrair'
-slug: "なぜ数学や計算機が好きなんだろう"
+slug: "なぜMatemáticaや計算機が好きなんだろう"
 date: 2022-09-23T01:56:52+09:00
 tags: ["Notas"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Pengenalan Cara Menulis dan Menjalankan Pengujian di Rust (cargo test)'
-slug: "Rustでテストを書く"
+slug: "RustでTesを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust", "pengujian"]
 draft: false

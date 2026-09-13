@@ -1,6 +1,6 @@
 ---
 title: '[Edisi Lengkap] Templat Pembuatan Artikel Blog! Struktur Heading Ramah SEO dan Tips Menulis'
-slug: "000_テンプレート"
+slug: "000_Templat"
 date: 2022-01-01T00:00:00+09:00
 tags: ["tag1", "tag2"]
 draft: true

@@ -1,6 +1,6 @@
 ---
 title: 'Cara Hanya Mengambil Commit Terbaru dari Repositori dengan Git clone'
-slug: "gitリポジトリの最新だけ取得する"
+slug: "gitRepositoriの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repositori", "perintah"]
 draft: false

@@ -4,7 +4,7 @@
 
 
 title: '¡De uso gratuito! 7 sitios recomendados de materiales de iconos gratuitos simples'
-slug: "シンプルなアイコン集サイト"
+slug: "シンプルなIcono集サイト"
 date: 2022-09-07T16:46:56+09:00
 tags: ["iconos", "diseño"]
 draft: false

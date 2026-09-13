@@ -1,6 +1,6 @@
 ---
 title: 'Installation de la CLI Hugo et liste des commandes de base fréquemment utilisées'
-slug: "Hugoコマンド一覧"
+slug: "HugoCommande一覧"
 date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "commandes"]
 draft: false

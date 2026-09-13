@@ -9,9 +9,9 @@ categories:
   - Science
 tags:
   - 確率論
-  - 遺伝学
-  - 系図
-  - パラドックス
+  - علم الوراثة
+  - شجرة العائلة
+  - مفارقة
 slug: "pedigree-collapse"
 ---
 

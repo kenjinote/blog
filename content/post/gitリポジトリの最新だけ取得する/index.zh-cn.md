@@ -1,6 +1,6 @@
 ---
 title: '使用Git clone仅获取仓库最新提交的方法'
-slug: "gitリポジトリの最新だけ取得する"
+slug: "git仓库の最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
 tags: ["git", "仓库", "命令"]
 draft: false

@@ -4,7 +4,7 @@
 
 
 title: '¡Conmovido por la amabilidad de un niño de 2 años! Un episodio reconfortante donde sentí la empatía y la consideración de un niño'
-slug: "子供のそんたく"
+slug: "Niñoのそんたく"
 date: 2022-09-07T04:40:52+09:00
 tags: ["Niños"]
 draft: false

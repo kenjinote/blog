@@ -1,6 +1,6 @@
 ---
 title: '【Восстановление после Bootloop】Официальная процедура восстановления программного обеспечения и сброса устройств Google Pixel'
-slug: "Android(Google Pixel)端末の復元手順"
+slug: "Android(Google Pixel)端末のВосстановление手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Восстановление", "Устранение неполадок"]
 draft: false

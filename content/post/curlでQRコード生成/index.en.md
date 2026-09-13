@@ -1,6 +1,6 @@
 ---
 title: 'How to Generate QR Codes in Command Prompt using curl Command'
-slug: "curlでQRコード生成"
+slug: "curlでQR Code生成"
 date: 2024-04-16T00:42:27+09:00
 tags: ["QR code", "curl", "Command Prompt"]
 draft: false

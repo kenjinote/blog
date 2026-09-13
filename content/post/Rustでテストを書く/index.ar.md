@@ -1,6 +1,6 @@
 ---
 title: 'مقدمة حول كيفية كتابة وتنفيذ الاختبارات في Rust (cargo test)'
-slug: "Rustでテストを書く"
+slug: "Rustでاختبارを書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust", "اختبار"]
 draft: false

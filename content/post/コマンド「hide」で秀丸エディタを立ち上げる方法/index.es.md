@@ -7,7 +7,7 @@
 
 
 title: '¡Inicia el Hidemaru Editor con solo el comando ''hide''! Práctica configuración en Windows'
-slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
+slug: "Comando「hide」でHidemaru Editorを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["Comandos", "Editor Hidemaru", "Registro"]
 draft: false

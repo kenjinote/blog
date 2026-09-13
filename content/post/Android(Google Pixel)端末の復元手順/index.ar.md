@@ -1,6 +1,6 @@
 ---
 title: '【إصلاح حلقة التمهيد】الخطوات الرسمية لاستعادة وبرمجة نظام أجهزة Google Pixel'
-slug: "Android(Google Pixel)端末の復元手順"
+slug: "Android(Google Pixel)端末のاستعادة手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "استعادة", "استكشاف الأخطاء وإصلاحها"]
 draft: false

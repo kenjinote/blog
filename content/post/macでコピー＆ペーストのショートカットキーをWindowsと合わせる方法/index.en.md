@@ -1,6 +1,6 @@
 ---
 title: 'How to Change Mac''s Copy & Paste Shortcut Keys to the Same Settings as Windows'
-slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
+slug: "macでCopy & PasteのShortcut KeyをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "shortcut keys", "copy and paste"]
 draft: 

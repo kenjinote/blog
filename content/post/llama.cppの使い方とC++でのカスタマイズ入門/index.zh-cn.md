@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["AI", "LLM", "C++", "Programming"]
 tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
-description: '全面涵盖从llama.cpp基础到基于C++的高级定制、Transformer的数学背景以及ggml架构解析的完整指南。'
+description: '全面涵盖从llama.cpp基础到基于C++的高级定制、Transformer的数学背景以及ggml架构分析的完整指南。'
 ---
 
 近年来，大型语言模型（LLM）的进化非常迅猛，其应用范围每天都在扩大。然而，要在本地环境中运行拥有数十亿、数百亿参数的模型，通常需要配备海量显存的高端GPU。打破这种“硬件壁垒”，让在普通PC、Mac甚至像Raspberry Pi这样的设备上进行LLM的实用推理成为可能的，就是 **llama.cpp** 。

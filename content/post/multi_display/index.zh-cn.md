@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Gadgets", "Productivity", "Workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
-description: '为工程师打造终极多显示器环境的完全指南。深入解析视觉工程学、带宽计算以及 PPI 与缩放机制。'
+description: '为工程师打造终极多显示器环境的完全指南。深入分析视觉工程学、带宽计算以及 PPI 与缩放机制。'
 ---
 
 # 最大化开发效率的多显示器配置与最优解

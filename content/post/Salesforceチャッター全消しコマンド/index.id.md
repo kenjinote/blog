@@ -1,6 +1,6 @@
 ---
 title: 'Salesforce: Perintah untuk Menghapus Semua Postingan Chatter dan Lampiran'
-slug: "Salesforceチャッター全消しコマンド"
+slug: "SalesforceCeloteh全消しPerintah"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false

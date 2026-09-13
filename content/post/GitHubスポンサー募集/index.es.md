@@ -2,7 +2,7 @@
 
 
 title: 'Anuncio de búsqueda de patrocinadores en GitHub｜Solicitud de apoyo para el desarrollo'
-slug: "GitHubスポンサー募集"
+slug: "GitHubPatrocinador募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Patrocinador"]
 draft: false

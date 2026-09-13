@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Blogging", "DevOps", "Web Hosting"]
 tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
-description: '这是一份关于如何利用Cloudflare Pages和GitHub Pages免费且高速地托管基于Hugo的静态网站的完整技术指南。深入解析边缘计算、CDN架构和CI/CD流水线的细节。'
+description: '这是一份关于如何利用Cloudflare Pages和GitHub Pages免费且高速地托管基于Hugo的静态网站的完整技术指南。深入分析边缘计算、CDN架构和CI/CD流水线的细节。'
 ---
 
 在运营网站或博客时，页面加载速度（性能）、运营成本以及安全性是至关重要的因素。过去，动态CMS（内容管理系统，如WordPress）与租用服务器的组合是主流，但现在，被称为“Jamstack”的架构受到了极大的关注。其中，将由Go语言编写的超高速静态网站生成器（SSG）“Hugo”与Cloudflare Pages或GitHub Pages等现代托管服务相结合，可以构建 **完全免费且极速** 的博客环境。

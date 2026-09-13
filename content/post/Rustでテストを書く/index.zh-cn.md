@@ -1,6 +1,6 @@
 ---
 title: 'Rust中测试的编写与执行方法入门（cargo test）'
-slug: "Rustでテストを書く"
+slug: "Rustで测试を書く"
 date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","测试"]
 draft: false

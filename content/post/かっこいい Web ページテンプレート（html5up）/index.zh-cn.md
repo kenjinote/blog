@@ -1,6 +1,6 @@
 ---
 title: '精美网页模板（html5up）的用法与魅力'
-slug: "かっこいい Web ページテンプレート（html5up）"
+slug: "かっこいい Web ページ模板（html5up）"
 date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Web页面模板"]
 draft: false

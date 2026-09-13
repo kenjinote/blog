@@ -1,6 +1,6 @@
 ---
 title: 'What is Hegel''s Dialectic? The Concept of Aufheben and its Application in Daily Life and Programming'
-slug: "ヘーゲルの弁証法"
+slug: "HegelのDialectic"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophy","Hegel","Dialectic"]
 draft: false

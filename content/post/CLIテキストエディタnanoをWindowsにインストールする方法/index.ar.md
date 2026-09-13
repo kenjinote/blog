@@ -1,6 +1,6 @@
 ---
 title: 'كيفية تثبيت محرر النصوص الخفيف nano على Windows وإعداد متغيرات البيئة'
-slug: "CLIテキストエディタnanoをWindowsにインストールする方法"
+slug: "CLIمحرر نصوصnanoをWindowsにتثبيتする方法"
 date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "محرر نصوص"]
 draft: false

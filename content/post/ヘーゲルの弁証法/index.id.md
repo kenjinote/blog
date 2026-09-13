@@ -1,6 +1,6 @@
 ---
 title: 'Apa itu Dialektika Hegel? Konsep Aufheben (Sublasi) dan Aplikasinya dalam Kehidupan Sehari-hari Serta Pemrograman'
-slug: "ヘーゲルの弁証法"
+slug: "HegelのDialektika"
 date: 2022-09-09T23:13:19+09:00
 tags: ["Filsafat", "Hegel", "Dialektika"]
 draft: false

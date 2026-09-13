@@ -1,6 +1,6 @@
 ---
 title: 'Ускорение разработки в Salesforce! Подборка рекомендуемых расширений Chrome'
-slug: "SalesforceおすすめChrome拡張"
+slug: "SalesforceРекомендацииРасширение Chrome"
 date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Расширения Chrome"]
 draft: false

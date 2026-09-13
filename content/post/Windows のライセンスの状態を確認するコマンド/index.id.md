@@ -1,6 +1,6 @@
 ---
 title: 'Cara Memeriksa Status Aktivasi Lisensi Windows! Cek Mudah dengan Satu Perintah'
-slug: "Windows のライセンスの状態を確認するコマンド"
+slug: "Windows のLisensiの状態を確認するPerintah"
 date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "lisensi", "command prompt"]
 draft: false

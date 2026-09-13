@@ -7,7 +7,7 @@
 
 
 title: '【Mejora de eficiencia】Lista de atajos de teclado útiles para Microsoft Word'
-slug: "Microsoft Wordのショートカット一覧"
+slug: "Microsoft WordのAtajo一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Atajos de teclado"]
 draft: false

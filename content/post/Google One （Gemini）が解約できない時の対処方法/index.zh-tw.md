@@ -1,6 +1,6 @@
 ---
 title: '無法取消Google One（Gemini）訂閱？正確的退訂方法解說'
-slug: "Google One （Gemini）が解約できない時の対処方法"
+slug: "Google One （Gemini）が解約できない時の解決方法"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "取消", "解決方法"]
 draft: false

@@ -8,7 +8,7 @@
 
 
 title: '¡Un misterio de 400 años! ¿Qué es la conjetura de Kepler? Explicación sencilla del romance de las matemáticas aprendiendo de cómo empacar sandías'
-slug: "ケプラー予想をわかりやすく解説"
+slug: "Conjetura de Keplerをわかりやすく解説"
 date: 2025-07-21T22:53:03+09:00
 tags: ["Matemáticas", "Conjetura de Kepler", "Explicación"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Procedimentos para compilar e instalar OpenSSL no ambiente Windows e configuração do ambiente'
-slug: "Windows で OpenSSL をビルドする方法"
+slug: "Windows で OpenSSL をBuildする方法"
 date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false

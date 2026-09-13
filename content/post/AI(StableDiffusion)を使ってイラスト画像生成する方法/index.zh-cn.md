@@ -1,6 +1,6 @@
 ---
-title: '【免费・超简单】使用Stable Diffusion生成AI插画的方法！Google Colab步骤解析'
-slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
+title: '【免费・超简单】使用Stable Diffusion生成式AI插画的方法！Google Colab步骤分析'
+slug: "AI(StableDiffusion)を使って插画图像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "插画", "图片生成", "Google Colaboratory"]
 draft: false

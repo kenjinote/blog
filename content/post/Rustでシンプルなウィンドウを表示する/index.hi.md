@@ -1,6 +1,6 @@
 ---
 title: 'Rust और winapi के साथ एक सरल Windows विंडो कैसे बनाएं और प्रदर्शित करें'
-slug: "Rustでシンプルなウィンドウを表示する"
+slug: "Rustでシンプルなविंडोを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "विंडो"]
 draft: false

@@ -4,7 +4,7 @@
 
 
 title: 'El mundo ultra hermoso de las matemáticas: Mi colección de fórmulas favoritas como el Teorema de Wilson y la Fórmula de Euler'
-slug: "好きな数式"
+slug: "好きなFórmula matemática"
 date: 2022-10-05T13:24:50+09:00
 tags: ["Matemáticas"]
 draft: false

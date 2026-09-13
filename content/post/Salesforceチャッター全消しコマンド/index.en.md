@@ -1,6 +1,6 @@
 ---
 title: 'Salesforce: A Command to Delete All Chatter Posts and Attachments'
-slug: "Salesforceチャッター全消しコマンド"
+slug: "SalesforceChatter全消しCommand"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false

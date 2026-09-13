@@ -1,6 +1,6 @@
 ---
 title: 'मुझे फिर से Microsoft MVP (2024-2025) से सम्मानित किया गया है! MVP प्रणाली की व्याख्या'
-slug: "Microsoft MVP（2024-2025）を再受賞しました"
+slug: "Microsoft MVP（2024-2025）を再पुरस्कारしました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false

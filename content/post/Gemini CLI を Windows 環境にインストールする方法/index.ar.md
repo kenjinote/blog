@@ -1,6 +1,6 @@
 ---
 title: 'كيفية تثبيت Gemini CLI على Windows | شرح مفصل من إعداد Node.js'
-slug: "Gemini CLI を Windows 環境にインストールする方法"
+slug: "Gemini CLI を Windows 環境にتثبيتする方法"
 date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "تثبيت", "開発"]
 draft: false

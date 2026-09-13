@@ -3,7 +3,7 @@
 
 
 title: 'Lista de shortcodes incorporados en Hugo: Incrustar YouTube, Twitter, etc.'
-slug: "HUGOで使えるショートコード"
+slug: "HUGOで使えるCortoコード"
 date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false

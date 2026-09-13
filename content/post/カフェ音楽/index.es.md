@@ -4,7 +4,7 @@
 
 
 title: '¡Para concentrarte en el trabajo o estudio! Colección de música de café y BGM elegante recomendada'
-slug: "カフェ音楽"
+slug: "CafeteríaMúsica"
 date: 2022-09-08T08:39:03+09:00
 tags: ["cafetería", "música"]
 draft: false

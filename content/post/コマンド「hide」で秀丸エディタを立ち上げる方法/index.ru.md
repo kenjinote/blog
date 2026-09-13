@@ -1,6 +1,6 @@
 ---
 title: 'Запуск редактора Hidemaru одной командой «hide»! Удобный метод настройки в Windows'
-slug: "コマンド「hide」で秀丸エディタを立ち上げる方法"
+slug: "Команда「hide」でHidemaru Editorを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
 tags: ["команды", "редактор Hidemaru", "реестр"]
 draft: false

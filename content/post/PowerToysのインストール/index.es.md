@@ -7,7 +7,7 @@
 
 
 title: 'Cómo instalar y desinstalar PowerToys con el comando winget'
-slug: "PowerToysのインストール"
+slug: "PowerToysのInstalación"
 date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "símbolo del sistema", "PowerToys", "winget"]
 draft: false

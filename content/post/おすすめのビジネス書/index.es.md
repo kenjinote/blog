@@ -4,7 +4,7 @@
 
 
 title: '¡Cambiarán tu vida! Obras maestras y libros de negocios recomendados que definitivamente debes leer'
-slug: "おすすめのビジネス書"
+slug: "RecomendaciónのLibro de negocios"
 date: 2023-03-19T18:13:14+09:00
 tags: ["Libros de negocios", "Libros"]
 draft: false

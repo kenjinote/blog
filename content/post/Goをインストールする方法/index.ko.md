@@ -3,7 +3,7 @@
 
 
 title: 'Go 언어(Golang) 설치 절차 및 첫 프로그램 실행 방법'
-slug: "Goをインストールする方法"
+slug: "Goを설치する方法"
 date: 2022-09-10T00:48:17+09:00
 tags: ["Go","설치"]
 draft: false

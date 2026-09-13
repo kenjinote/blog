@@ -1,6 +1,6 @@
 ---
 title: '【立刻解决】YAMAHA AG03沙沙噪音消除的驱动更新步骤'
-slug: "AG03ノイズ解消方法"
+slug: "AG03噪音解消方法"
 date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "噪音"]
 draft: false

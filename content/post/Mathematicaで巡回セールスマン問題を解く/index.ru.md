@@ -1,6 +1,6 @@
 ---
 title: 'Как решить задачу коммивояжера (TSP) в Mathematica'
-slug: "Mathematicaで巡回セールスマン問題を解く"
+slug: "MathematicaでЗадача коммивояжераを解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Задача коммивояжера", "Алгоритмы", "Математика"]
 draft: false

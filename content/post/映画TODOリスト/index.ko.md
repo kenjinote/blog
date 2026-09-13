@@ -5,7 +5,7 @@
 
 
 title: '필견! 개인적인 영화 시청 TODO 리스트와 감상 완료 추천 작품 기록'
-slug: "映画TODOリスト"
+slug: "영화TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["영화", "TODO"]
 draft: false

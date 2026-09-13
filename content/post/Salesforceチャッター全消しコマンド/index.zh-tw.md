@@ -1,6 +1,6 @@
 ---
 title: 'Salesforce：完全刪除 Chatter 貼文與附件的指令'
-slug: "Salesforceチャッター全消しコマンド"
+slug: "Salesforce閒聊全消し指令"
 date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false

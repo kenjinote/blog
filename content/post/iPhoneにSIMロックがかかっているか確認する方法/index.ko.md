@@ -8,7 +8,7 @@
 
 
 title: 'iPhone의 SIM 잠금 상태(있음/없음)를 쉽게 확인하는 방법'
-slug: "iPhoneにSIMロックがかかっているか確認する方法"
+slug: "iPhoneにSIM 록がかかっているか確認する方法"
 date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIM락"]
 draft: false

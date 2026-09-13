@@ -1,6 +1,6 @@
 ---
 title: '使用 Rust 與 winapi 建立並顯示 Windows 簡易視窗的方法'
-slug: "Rustでシンプルなウィンドウを表示する"
+slug: "Rustでシンプルな視窗を表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "視窗"]
 draft: false

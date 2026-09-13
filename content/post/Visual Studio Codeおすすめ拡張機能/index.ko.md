@@ -7,7 +7,7 @@
 
 
 title: 'VSCode 추천 확장 기능 정리! 개발 효율이 극적으로 향상되는 플러그인 목록'
-slug: "Visual Studio Codeおすすめ拡張機能"
+slug: "Visual Studio Code추천확장 기능"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "확장 기능", "익스텐션"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'Mude de vida! Resumo de obras-primas e livros de negócios recomendados que você deve ler'
-slug: "おすすめのビジネス書"
+slug: "RecomendaçãoのLivro de Negócios"
 date: 2023-03-19T18:13:14+09:00
 tags: ["Livros de Negócios", "Livros"]
 draft: false

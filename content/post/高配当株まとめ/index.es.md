@@ -8,7 +8,7 @@
 
 
 title: 'Lista de las mejores acciones japonesas con alto rendimiento de dividendos recomendadas'
-slug: "高配当株まとめ"
+slug: "高配当Accionesまとめ"
 date: 2024-12-22T00:56:14+09:00
 tags: ["acciones"]
 draft: false

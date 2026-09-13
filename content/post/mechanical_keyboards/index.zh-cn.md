@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Gadgets", "Productivity", "Hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
-description: '深入解析能够极大提升工程师生产力的高端键盘。从基于物理学的轴体解析到固件的工作原理进行深度挖掘，并介绍 5 款终极键盘。'
+description: '深入分析能够极大提升工程师生产力的高端键盘。从基于物理学的轴体分析到固件的工作原理进行深度挖掘，并介绍 5 款终极键盘。'
 ---
 
 # 专为长时间编程打造！推荐给工程师的 5 款机械键盘

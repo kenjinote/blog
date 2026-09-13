@@ -1,6 +1,6 @@
 ---
 title: 'Zusammenfassung empfohlener Meisterwerke der westlichen Musik: Klassische Hits, die über Epochen hinweg geliebt werden'
-slug: "好きな洋楽"
+slug: "好きなWestliche Musik"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Westliche Musik", "Musik"]
 draft: false

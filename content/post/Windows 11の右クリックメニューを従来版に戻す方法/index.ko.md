@@ -7,7 +7,7 @@
 
 
 title: 'Windows 11의 우클릭 메뉴를 기존 버전(구 사양)으로 되돌리는 방법 [레지스트리 설정]'
-slug: "Windows 11の右クリックメニューを従来版に戻す方法"
+slug: "Windows 11の우클릭 메뉴を従来版に戻す方法"
 date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "파일 탐색기"]
 draft: false

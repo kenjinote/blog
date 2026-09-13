@@ -1,6 +1,6 @@
 ---
 title: '使用PowerShell列举和获取当前打开的窗口标题的方法'
-slug: "ウィンドウタイトルの列挙"
+slug: "窗口タイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: '一鍵關閉電腦電源！建立 Windows 關機捷徑的方法'
-slug: "Windows をシャットダウンするショートカットを作成する方法"
+slug: "Windows を關機する捷徑を作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "關機", "捷徑"]
 draft: false

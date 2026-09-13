@@ -7,7 +7,7 @@
 
 
 title: 'Colección de canciones recomendadas de música occidental: Éxitos clásicos amados a través de los tiempos'
-slug: "好きな洋楽"
+slug: "好きなMúsica occidental"
 date: 2024-01-05T00:14:22+09:00
 tags: ["Música occidental", "Música"]
 draft: false

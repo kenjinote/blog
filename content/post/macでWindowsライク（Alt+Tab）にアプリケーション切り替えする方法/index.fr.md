@@ -1,6 +1,6 @@
 ---
 title: 'Comment configurer le changement d''application sur Mac à la manière de Windows (Alt+Tab)'
-slug: "macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法"
+slug: "macでWindowsライク（Alt+Tab）にChangement d'applicationする方法"
 date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "raccourcis clavier", "basculer entre les applications"]
 draft: 

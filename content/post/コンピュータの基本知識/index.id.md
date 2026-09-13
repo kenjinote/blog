@@ -1,6 +1,6 @@
 ---
 title: 'Apa Itu 5 Komponen Utama Komputer? Pengetahuan Dasar Hardware dan Software yang Wajib Diketahui Pemula IT'
-slug: "コンピュータの基本知識"
+slug: "KomputerのPengetahuan Dasar"
 date: 2024-09-19T01:10:20+09:00
 tags: ["Komputer", "Pengetahuan Dasar"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: '【बूट लूप रिपेयर】Google Pixel डिवाइस के सॉफ्टवेयर को रीस्टोर और इनिशियलाइज़ करने की आधिकारिक प्रक्रिया'
-slug: "Android(Google Pixel)端末の復元手順"
+slug: "Android(Google Pixel)端末のपुनर्स्थापना手順"
 date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "रिस्टोर", "समस्या निवारण"]
 draft: false

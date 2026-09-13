@@ -7,7 +7,7 @@
 
 
 title: '¡Aprende sobre la IA generativa! Colección de videos de conferencias recomendados impartidos por profesores de la Universidad de Tokio'
-slug: "生成AIについて"
+slug: "IA generativaについて"
 date: 2024-04-16T02:13:56+09:00
 tags: ["IA generativa", "YouTube", "Conferencia"]
 draft: false

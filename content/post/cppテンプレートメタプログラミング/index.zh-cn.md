@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Programming", "C++"]
 tags: ["C++", "Metaprogramming", "constexpr", "Concepts"]
-description: '全面解析C++模板元编程的历史，涵盖SFINAE、constexpr，以及最新的C++20 Concepts等内容。'
+description: '全面分析C++模板元编程的历史，涵盖SFINAE、constexpr，以及最新的C++20 Concepts等内容。'
 ---
 
 C++这门语言最大的魅力，同时也可以说是最大的魔境，就是“模板元编程（Template Metaprogramming: TMP）”。这项技术将在程序运行时（Run-time）进行的计算，提前到了编译器解析源代码并生成二进制文件的编译时（Compile-time）来执行。

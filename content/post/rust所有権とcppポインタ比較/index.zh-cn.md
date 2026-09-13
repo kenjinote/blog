@@ -1,5 +1,5 @@
 ---
-title: '将Rust的“所有权”与“借用”同C++指针进行比较解析'
+title: '将Rust的“所有权”与“借用”同C++指针进行比较分析'
 slug: "rust-ownership-borrowing-cpp-pointer-comparison"
 date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Programming", "Rust", "C++"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
-description: '彻底比较C++的指针与Rust的所有权及借用模型。从原始指针、智能指针到借用检查器，为您解析内存安全的本质。'
+description: '彻底比较C++的指针与Rust的所有权及借用模型。从原始指针、智能指针到借用检查器，为您分析内存安全的本质。'
 ---
 
 现代系统编程中，兼顾性能与内存安全是永恒的课题。多年来，C++一直作为该领域的王者而存在，但近年来Rust正在逐渐威胁其地位。Rust最大的特点在于不使用垃圾回收（GC）的情况下，在编译时通过“所有权（Ownership）”和“借用（Borrowing）”的概念来保证内存安全。

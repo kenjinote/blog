@@ -1,6 +1,6 @@
 ---
 title: 'Как интегрировать KaTeX в Hugo и отображать красивые математические формулы в стиле LaTeX'
-slug: "hugoでKaTeX(LaTeX風数式表示)を有効にする方法"
+slug: "hugoでKaTeX(LaTeX風Математическая формула表示)を有効にする方法"
 date: 2023-03-31T23:11:26+09:00
 tags: ["KaTeX", "LaTeX", "формулы", "математика", "hugo"]
 draft: false

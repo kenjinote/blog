@@ -1,6 +1,6 @@
 ---
 title: 'Kumpulan Tampilan Layar Dialog Informasi Versi dari Berbagai Perangkat Lunak'
-slug: "いろんなバージョン情報ダイアログ集めてみた"
+slug: "いろんなInformasi Versiダイアログ集めてみた"
 date: 2024-03-02T21:32:11+09:00
 tags: ["Informasi versi", "Windows", "MacOS"]
 draft: false

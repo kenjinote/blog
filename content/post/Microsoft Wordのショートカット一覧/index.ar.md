@@ -1,6 +1,6 @@
 ---
 title: '【زيادة كفاءة العمل】قائمة باختصارات لوحة المفاتيح المفيدة في Microsoft Word'
-slug: "Microsoft Wordのショートカット一覧"
+slug: "Microsoft Wordのاختصار一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "اختصارات"]
 draft: false

@@ -7,7 +7,7 @@ math: true
 mermaid: true
 categories: ["Programming", "Testing"]
 tags: ["TDD", "C++", "GoogleTest", "CMake"]
-description: '在C++项目中引入测试驱动开发（TDD）的完整指南。深入解析使用GoogleTest和GoogleMock的实践方法，以及在CMake中的配置方式。'
+description: '在C++项目中引入测试驱动开发（TDD）的完整指南。深入分析使用GoogleTest和GoogleMock的实践方法，以及在CMake中的配置方式。'
 ---
 
 现代软件开发中，在保持代码质量的同时快速添加新功能是首要任务。特别是在C++这种复杂且对性能要求极高的语言中，内存管理错误或未定义行为（Undefined Behavior）很容易导致致命的Bug，因此测试的重要性比其他语言更高。

@@ -1,6 +1,6 @@
 ---
 title: '將 FLET''S 光纖換成 J:COM 的結果！關於月租費與通訊速度的真實感想'
-slug: "ネット環境をフレッツ光→JCOMに変えた"
+slug: "ネット環境をFLET'S 光→JCOMに変えた"
 date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flet's光","網路線路"]
 draft: false

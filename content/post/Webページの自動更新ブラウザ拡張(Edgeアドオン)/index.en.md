@@ -1,6 +1,6 @@
 ---
 title: 'Auto-Refresh Web Pages in Edge! How to Use the Convenient Browser Extension ''Tab Auto Refresh'''
-slug: "Webページの自動更新ブラウザ拡張(Edgeアドオン)"
+slug: "WebページのAutomatic UpdateBrowser Extension(Edge Add-on)"
 date: 2024-04-06T15:36:54+09:00
 tags: ["Browser Extension", "Edge Add-on", "Auto Refresh"]
 draft: false

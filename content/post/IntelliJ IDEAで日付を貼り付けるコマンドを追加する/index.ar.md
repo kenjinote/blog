@@ -1,6 +1,6 @@
 ---
 title: 'كيفية إنشاء اختصار لإدراج التاريخ الحالي في IntelliJ IDEA'
-slug: "IntelliJ IDEAで日付を貼り付けるコマンドを追加する"
+slug: "IntelliJ IDEAでتاريخを貼り付けるأمرを追加する"
 date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false

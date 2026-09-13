@@ -3,7 +3,7 @@
 
 
 title: 'Cómo resolver el problema del viajante de comercio (TSP) con Mathematica'
-slug: "Mathematicaで巡回セールスマン問題を解く"
+slug: "MathematicaでProblema del viajanteを解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problema del viajante", "Algoritmos", "Matemáticas"]
 draft: false

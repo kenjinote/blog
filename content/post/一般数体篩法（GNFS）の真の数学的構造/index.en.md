@@ -1,6 +1,6 @@
 ---
 title: 'What is the True Mathematical Structure of the General Number Field Sieve (GNFS)? Mechanism of Prime Factorization Using Homomorphisms'
-slug: "一般数体篩法（GNFS）の真の数学的構造"
+slug: "一般数体篩法（GNFS）の真のMathematics的構造"
 date: 2026-09-05T02:26:13+09:00
 tags: ["Mathematics", "Cryptography", "RSA", "GNFS"]
 draft: false

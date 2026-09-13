@@ -1,6 +1,6 @@
 ---
 title: 'Cara Mengatasi Kesalahan ''Temporary failure resolving'' Saat apt update di WSL'
-slug: "wsl で「Temporary failure resolving～」と表示される場合の対処方法"
+slug: "wsl で「Temporary failure resolving～」と表示される場合のPenanggulangan"
 date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "pemecahan masalah"]
 draft: false

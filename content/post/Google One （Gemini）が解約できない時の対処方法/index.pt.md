@@ -1,6 +1,6 @@
 ---
 title: 'Não Consegue Cancelar o Google One (Gemini)? Saiba Como Desativar Corretamente'
-slug: "Google One （Gemini）が解約できない時の対処方法"
+slug: "Google One （Gemini）が解約できない時のSolução"
 date: 2025-09-27T10:02:59+09:00
 tags: ["Google One", "Gemini", "cancelamento", "solução"]
 draft: false

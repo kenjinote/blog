@@ -1,6 +1,6 @@
 ---
 title: '【Arbeitseffizienz steigern】Liste nützlicher Tastenkombinationen für Microsoft Word'
-slug: "Microsoft Wordのショートカット一覧"
+slug: "Microsoft WordのVerknüpfung一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Tastenkombinationen"]
 draft: false

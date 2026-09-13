@@ -1,6 +1,6 @@
 ---
 title: 'GitHub赞助者招募通知｜开发支持请求'
-slug: "GitHubスポンサー募集"
+slug: "GitHub赞助商募集"
 date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "赞助者"]
 draft: false

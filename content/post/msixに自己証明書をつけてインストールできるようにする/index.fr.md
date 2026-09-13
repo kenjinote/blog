@@ -1,6 +1,6 @@
 ---
 title: 'Incontournable pour les développeurs d''applications Windows ! Comment attacher un certificat auto-signé à MSIX et l''installer localement'
-slug: "msixに自己証明書をつけてインストールできるようにする"
+slug: "msixにCertificat auto-signéをつけてInstallationできるようにする"
 date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "Certificat auto-signé", "Installation"]
 draft: false

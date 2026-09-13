@@ -1,6 +1,6 @@
 ---
 title: '[Por idioma] Funciona no navegador! Resumo de ambientes gratuitos de execução de código de programação online'
-slug: "オンラインのコード実行環境まとめ"
+slug: "OnlineのAmbiente de Execução de Códigoまとめ"
 date: 2023-04-09T14:01:00+09:00
 tags: ["Online", "Ambiente de Execução de Código", "Programação"]
 draft: false

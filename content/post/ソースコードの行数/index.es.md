@@ -8,7 +8,7 @@
 
 
 title: '¿Cómo ha cambiado la escala del software? La historia y evolución de las líneas de código fuente'
-slug: "ソースコードの行数"
+slug: "Código fuenteのNúmero de líneas"
 date: 2025-04-17T10:33:02+09:00
 tags: ["código fuente", "líneas de código"]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: 'VSCode 推薦擴充功能總整理！可大幅提升開發效率的外掛清單'
-slug: "Visual Studio Codeおすすめ拡張機能"
+slug: "Visual Studio Code推薦擴充功能"
 date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "擴充功能", "插件"]
 draft: false

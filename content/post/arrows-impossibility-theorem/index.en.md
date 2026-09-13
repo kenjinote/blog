@@ -5,11 +5,11 @@ date: 2026-09-14T00:00:51+09:00
 description: "Can we create an 'election system that is fair to everyone'? Through 'Arrow's Impossibility Theorem' proven by economist Kenneth Arrow, we explain the mathematical limits of democracy and how we should face elections and decision-making."
 categories:
   - "Mathematics"
-  - "経済学"
+  - "Economics"
 tags:
-  - "意思決定論"
-  - "アローの不可能性定理"
-  - "選挙"
+  - "Decision Theory"
+  - "Arrow's Impossibility Theorem"
+  - "Election"
   - "Mathematics"
 slug: "arrows-impossibility-theorem"
 ---

@@ -1,6 +1,6 @@
 ---
 title: '【Yusuke Narita / Hayao Miyazaki】Vidéos recommandées et méthodes de pensée pour booster la motivation'
-slug: "モチベーションを上げてくれる動画"
+slug: "Motivationを上げてくれるVidéo"
 date: 2022-09-08T02:22:52+09:00
 tags: ["Motivation", "Vidéos"]
 draft: false

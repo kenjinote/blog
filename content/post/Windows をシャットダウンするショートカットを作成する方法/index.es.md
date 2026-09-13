@@ -3,7 +3,7 @@
 
 
 title: '¡Apaga tu PC con un clic! Cómo crear un acceso directo para apagar Windows'
-slug: "Windows をシャットダウンするショートカットを作成する方法"
+slug: "Windows をApagarするAtajoを作成する方法"
 date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "apagar", "acceso directo"]
 draft: false

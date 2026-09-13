@@ -3,7 +3,7 @@
 
 
 title: 'Cómo personalizar el tamaño y la disposición de imágenes en el tema Hugo PaperMod con CSS'
-slug: "PaperModの画像の配置変更"
+slug: "PaperModのImagenの配置変更"
 date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false

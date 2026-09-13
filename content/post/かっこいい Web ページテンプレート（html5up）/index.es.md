@@ -4,7 +4,7 @@
 
 
 title: 'Cómo usar el atractivo sitio de plantillas de páginas web (html5up) y su encanto'
-slug: "かっこいい Web ページテンプレート（html5up）"
+slug: "かっこいい Web ページPlantilla（html5up）"
 date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Plantilla de página web"]
 draft: false

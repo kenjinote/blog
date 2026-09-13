@@ -1,6 +1,6 @@
 ---
 title: 'Ranklet के साथ Google Analytics लोकप्रिय लेख रैंकिंग कैसे प्रदर्शित करें'
-slug: "Googleアナリティクスから人気ページランキングを取得して配置する方法"
+slug: "Google एनालिटिक्सから人気ページランキングを取得して配置する方法"
 date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false

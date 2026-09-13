@@ -1,5 +1,5 @@
 ---
-title: '量子计算机会破解RSA加密吗？Shor算法解析'
+title: '量子计算机会破解RSA加密吗？Shor算法分析'
 slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子计算机", "密码破解", "Shor算法", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.webp"

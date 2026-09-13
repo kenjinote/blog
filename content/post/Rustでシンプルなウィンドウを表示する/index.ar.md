@@ -1,6 +1,6 @@
 ---
 title: 'كيفية إنشاء وعرض نافذة بسيطة في Windows باستخدام Rust و winapi'
-slug: "Rustでシンプルなウィンドウを表示する"
+slug: "Rustでシンプルなنافذةを表示する"
 date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "نافذة"]
 draft: false

@@ -5,7 +5,7 @@
 
 
 title: 'wxWidgets 사용법: 설치 방법부터 샘플 프로젝트 생성까지'
-slug: "wxWidgets を使ったサンプル"
+slug: "wxWidgets を使った샘플"
 date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "샘플"]
 draft: false

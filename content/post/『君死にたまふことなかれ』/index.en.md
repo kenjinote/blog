@@ -1,6 +1,6 @@
 ---
 title: 'Full Text and Commentary of Akiko Yosano''s ''Kimi Shinitamou Koto Nakare'': Feelings for a Brother in an Anti-War Poem'
-slug: "『君死にたまふことなかれ』"
+slug: "『Thou Shalt Not Die』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "Thou Shalt Not Die", "Poem", "Anti-war poem"]
 draft: false

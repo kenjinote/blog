@@ -1,6 +1,6 @@
 ---
 title: 'كيفية رسم الرسوم البيانية باستخدام Python و matplotlib 【متوافق مع Google Colab】'
-slug: "Python(matplotlib.pyplot)を使ってグラフを描画する方法"
+slug: "Python(matplotlib.pyplot)を使ってرسم بيانيを描画する方法"
 date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "رسوم بيانية", "رياضيات", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false

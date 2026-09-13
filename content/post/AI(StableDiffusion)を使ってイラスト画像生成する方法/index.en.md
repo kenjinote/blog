@@ -1,6 +1,6 @@
 ---
 title: '[Free & Super Easy] How to Generate AI Illustration Images with Stable Diffusion! Google Colab Step-by-Step Guide'
-slug: "AI(StableDiffusion)を使ってイラスト画像生成する方法"
+slug: "AI(StableDiffusion)を使ってIllustrationImage Generationする方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "Illustration", "Image Generation", "Google Colaboratory"]
 draft: false

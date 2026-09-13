@@ -1,6 +1,6 @@
 ---
 title: 'Who is Akiko Yosano? Biography and Masterpieces Like ''Midaregami'' and ''Thou Shalt Not Die'''
-slug: "与謝野晶子について"
+slug: "Akiko Yosanoについて"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Akiko Yosano"]
 draft: false

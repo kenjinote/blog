@@ -1,6 +1,6 @@
 ---
 title: '必看！个人的电影观影待办清单与已看推荐作品记录'
-slug: "映画TODOリスト"
+slug: "电影TODOリスト"
 date: 2023-04-17T00:34:13+09:00
 tags: ["电影", "TODO"]
 draft: false

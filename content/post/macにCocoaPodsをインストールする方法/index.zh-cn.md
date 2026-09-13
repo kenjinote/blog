@@ -1,6 +1,6 @@
 ---
 title: '在Mac上安装CocoaPods的方法及错误处理'
-slug: "macにCocoaPodsをインストールする方法"
+slug: "macにCocoaPodsを安装する方法"
 date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]
 draft: false
