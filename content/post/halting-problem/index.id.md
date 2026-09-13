@@ -125,22 +125,22 @@ Mari kita ilustrasikan logika pembuktian melalui kontradiksi ini menggunakan dia
 
 ```mermaid
 graph TD
-    subgraph "判定機 H"
-        H{"H(X, X) の結果は？"}
+    subgraph "Mesin Penentu H"
+        H{"Apa hasil dari H(X, X)?"}
     end
 
-    subgraph "意地悪なプログラム D"
-        START["Dを開始"] --> H
-        H -->|"true (停止する)"| LOOP["無限ループ"]
-        H -->|"false (無限ループする)"| HALT["停止する"]
+    subgraph "Program Jahat D"
+        START["Mulai D"] --> H
+        H -->|"true (berhenti)"| LOOP["Infinite loop"]
+        H -->|"false (Infinite loopする)"| HALT["Berhenti"]
     end
 
-    %% D に D 自身を入力する
-    INPUT_D[/"入力: D"/] --> START
+    %% D に D 自身をInputする
+    INPUT_D[/"Input: D"/] --> START
     
-    %% 矛盾のハイライト
-    LOOP -.->|"Hの判定(true)と矛盾!"| FAIL_1(("矛盾"))
-    HALT -.->|"Hの判定(false)と矛盾!"| FAIL_2(("矛盾"))
+    %% Kontradiksiのハイライト
+    LOOP -.->|"Kontradiksi dengan penentuan H (true)!"| FAIL_1(("Kontradiksi"))
+    HALT -.->|"Hの判定(false)とKontradiksi!"| FAIL_2(("Kontradiksi"))
     
     style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
     style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px

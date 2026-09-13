@@ -32,10 +32,10 @@ Un patrón arquitectónico representativo en el reemplazo de sistemas es el **Pa
 
 ```mermaid
 graph LR
-    subgraph "ストラングラーフィグ・パターンによる移行"
-        A["旧システム（モノリス）"] -->|"機能Aを移行"| B["新旧混在システム"]
-        B -->|"機能B・Cを移行"| C["新旧混在システム（新メイン）"]
-        C -->|"完全移行"| D["新システム（マイクロサービス）"]
+    subgraph "Migración mediante el patrón Strangler Fig"
+        A["Sistema antiguo (Monolito)"] -->|"Migrar función A"| B["Sistema mixto antiguo/nuevo"]
+        B -->|"Migrar funciones B y C"| C["Sistema mixto (Nuevo principal)"]
+        C -->|"Migración completa"| D["Nuevo sistema (Microservicios)"]
     end
 ```
 
@@ -77,7 +77,7 @@ classDiagram
         +int weight
         +String position
     }
-    Ship "1" *-- "many" Plank : "構成する"
+    Ship "1" *-- "many" Plank : "compone"
 ```
 
 Incluso si las piezas del barco (objetos de valor) se pudren y son reemplazadas por unas nuevas, el `shipId` del barco (entidad) no cambia. Por lo tanto, en el sistema se trata como **exactamente el mismo barco**.
@@ -95,10 +95,10 @@ Aquí también, la "identidad" es clave. Aunque se reescriba significativamente 
 
 ```mermaid
 graph TD
-    subgraph "リファクタリングのプロセス"
-        A["スパゲッティコード"] -->|"テストを記述"| B["テストで保護されたコード"]
-        B -->|"内部構造を変更"| C["クリーンなコード"]
-        A -.->|"振る舞いは同じ"| C
+    subgraph "Proceso de refactorización"
+        A["Código espagueti"] -->|"Escribir pruebas"| B["Código protegido por pruebas"]
+        B -->|"Cambiar estructura interna"| C["Código limpio"]
+        A -.->|"El comportamiento es el mismo"| C
     end
 ```
 
@@ -138,9 +138,9 @@ Ejemplos famosos son la relación entre MySQL y MariaDB, o Node.js y io.js (fusi
 
 ```mermaid
 graph TD
-    subgraph "ソフトウェアにおけるホッブズの拡張"
-        A["オリジナルプロジェクト v1.0"] -->|"リファクタリング・新機能"| B["オリジナルプロジェクト v2.0 (新部品)"]
-        A -->|"古いコードをフォーク"| C["派生プロジェクト (旧部品)"]
+    subgraph "Extensión de Hobbes en el software"
+        A["Proyecto original v1.0"] -->|"Refactorización / Nuevas funciones"| B["Proyecto original v2.0 (piezas nuevas)"]
+        A -->|"Hacer fork del código antiguo"| C["Proyecto derivado (piezas viejas)"]
     end
 ```
 

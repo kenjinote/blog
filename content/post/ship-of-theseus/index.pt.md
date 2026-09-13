@@ -32,10 +32,10 @@ O **padrão Strangler Fig** é um padrão arquitetónico muito representativo da
 
 ```mermaid
 graph LR
-    subgraph "ストラングラーフィグ・パターンによる移行"
-        A["旧システム（モノリス）"] -->|"機能Aを移行"| B["新旧混在システム"]
-        B -->|"機能B・Cを移行"| C["新旧混在システム（新メイン）"]
-        C -->|"完全移行"| D["新システム（マイクロサービス）"]
+    subgraph "Migração pelo Padrão Strangler Fig"
+        A["Sistema Antigo (Monolito)"] -->|"Migrar Funcionalidade A"| B["Sistema Misto Novo/Velho"]
+        B -->|"Migrar Funcionalidades B e C"| C["Sistema Misto Novo/Velho (Novo Principal)"]
+        C -->|"Migração Completa"| D["Novo Sistema (Microsserviços)"]
     end
 ```
 
@@ -77,7 +77,7 @@ classDiagram
         +int weight
         +String position
     }
-    Ship "1" *-- "many" Plank : "構成する"
+    Ship "1" *-- "many" Plank : "Compõe"
 ```
 
 Mesmo que a peça do navio (objeto de valor) fique podre e seja substituída por uma nova, o `shipId` (Entidade) continuará o mesmo. Portanto, de uma perspetiva de software, este é **absolutamente considerado o mesmo navio**.
@@ -95,10 +95,10 @@ Aqui a "identidade" também é a palavra-chave. Mesmo se a estrutura do código 
 
 ```mermaid
 graph TD
-    subgraph "リファクタリングのプロセス"
-        A["スパゲッティコード"] -->|"テストを記述"| B["テストで保護されたコード"]
-        B -->|"内部構造を変更"| C["クリーンなコード"]
-        A -.->|"振る舞いは同じ"| C
+    subgraph "Processo de Refatoração"
+        A["Código Esparguete"] -->|"Escrever Testes"| B["Código Protegido por Testes"]
+        B -->|"Alterar Estrutura Interna"| C["Código Limpo"]
+        A -.->|"O Comportamento é o Mesmo"| C
     end
 ```
 
@@ -138,9 +138,9 @@ Temos exemplos como o caso clássico de MySQL e MariaDB. Outro evento notório f
 
 ```mermaid
 graph TD
-    subgraph "ソフトウェアにおけるホッブズの拡張"
-        A["オリジナルプロジェクト v1.0"] -->|"リファクタリング・新機能"| B["オリジナルプロジェクト v2.0 (新部品)"]
-        A -->|"古いコードをフォーク"| C["派生プロジェクト (旧部品)"]
+    subgraph "A Extensão de Hobbes no Software"
+        A["Projeto Original v1.0"] -->|"Refatoração / Novas Funcionalidades"| B["Projeto Original v2.0 (Peças Novas)"]
+        A -->|"Bifurcar o Código Antigo"| C["Projeto Derivado (Peças Antigas)"]
     end
 ```
 

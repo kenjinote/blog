@@ -33,9 +33,9 @@ Hilbert creía firmemente, y dejó para la posteridad su famosa frase "Debemos s
 
 ```mermaid
 graph TD
-    subgraph "ヒルベルト・プログラムの構想"
-        A["公理系（自明な前提）"] -->|"厳密な推論規則"| B["すべての真なる数学的命題"]
-        A -->|"体系内部での証明"| C["自らの無矛盾性の保証"]
+    subgraph "Concepto del programa de Hilbert"
+        A["Sistema axiomático (premisas evidentes)"] -->|"Reglas de inferencia estrictas"| B["Todas las proposiciones matemáticas verdaderas"]
+        A -->|"Demostración dentro del sistema"| C["Garantía de su propia consistencia"]
     end
 ```
 
@@ -62,12 +62,12 @@ Este teorema demostró que la "verdad" y la "demostrabilidad" son cosas completa
 
 ```mermaid
 graph LR
-    subgraph "真理と証明可能性のズレ"
-        A["真である命題の集合"]
-        B["証明可能な命題の集合"]
-        B -.->|"完全に含まれる"| A
-        C["真理だが証明不能な命題（不完全性）"]
-        A -->|"必ず存在する"| C
+    subgraph "Brecha entre verdad y demostrabilidad"
+        A["Conjunto de proposiciones verdaderas"]
+        B["Conjunto de proposiciones demostrables"]
+        B -.->|"Totalmente incluido"| A
+        C["Proposiciones verdaderas pero indemostrables (Incompletitud)"]
+        A -->|"Existen necesariamente"| C
     end
 ```
 
@@ -97,11 +97,11 @@ Gödel asignó un número específico (un número primo) a todos los símbolos u
 
 ```mermaid
 graph TD
-    subgraph "ゲーデル数化のメカニズム"
-        S1["記号 '0'"] -->|"割り当て"| N1["素数 2"]
-        S2["記号 '='"] -->|"割り当て"| N2["素数 3"]
-        S3["記号 '0'"] -->|"割り当て"| N3["素数 5"]
-        F["数式 '0=0'"] -->|"べき乗して掛け合わせる"| GN["ゲーデル数: 2^2 * 3^3 * 5^2 = 2700"]
+    subgraph "Mecanismo de la numeración de Gödel"
+        S1["Símbolo '0'"] -->|"Asignar"| N1["Número primo 2"]
+        S2["Símbolo '='"] -->|"Asignar"| N2["Número primo 3"]
+        S3["Símbolo '0'"] -->|"Asignar"| N3["Número primo 5"]
+        F["Fórmula '0=0'"] -->|"Elevar a potencia y multiplicar"| GN["Número de Gödel: 2^2 * 3^3 * 5^2 = 2700"]
     end
 ```
 
@@ -144,9 +144,9 @@ Turing aplicó el teorema de incompletitud de Gödel al mundo de las computadora
 
 ```mermaid
 graph TD
-    subgraph "数学から計算機科学への系譜"
-        Godel["ゲーデル（1931年）<br/>不完全性定理"] -->|"証明不可能な命題の存在"| Turing["チューリング（1936年）<br/>停止性問題"]
-        Turing -->|"計算不可能な問題の存在"| Computer["現代のコンピュータ科学<br/>（計算複雑性理論・AI限界論）"]
+    subgraph "Linaje de las matemáticas a la informática"
+        Godel["Gödel (1931)<br/>Teoremas de la Incompletitud"] -->|"Existencia de proposiciones indemostrables"| Turing["Turing (1936)<br/>Problema de la Parada"]
+        Turing -->|"Existencia de problemas incomputables"| Computer["Ciencia de la computación moderna<br/>(Teoría de la complejidad computacional / Límites de IA)"]
     end
 ```
 

@@ -125,22 +125,22 @@ Let's illustrate the logic of this proof by contradiction using Mermaid.
 
 ```mermaid
 graph TD
-    subgraph "判定機 H"
-        H{"H(X, X) の結果は？"}
+    subgraph "Decision Machine H"
+        H{"Result of H(X, X)?"}
     end
 
-    subgraph "意地悪なプログラム D"
-        START["Dを開始"] --> H
-        H -->|"true (停止する)"| LOOP["無限ループ"]
-        H -->|"false (無限ループする)"| HALT["停止する"]
+    subgraph "Malicious Program D"
+        START["Start D"] --> H
+        H -->|"true (Halts)"| LOOP["Infinite Loop"]
+        H -->|"false (Infinite Loops)"| HALT["Halts"]
     end
 
     %% D に D 自身を入力する
-    INPUT_D[/"入力: D"/] --> START
+    INPUT_D[/"Input: D"/] --> START
     
     %% 矛盾のハイライト
-    LOOP -.->|"Hの判定(true)と矛盾!"| FAIL_1(("矛盾"))
-    HALT -.->|"Hの判定(false)と矛盾!"| FAIL_2(("矛盾"))
+    LOOP -.->|"Contradiction with H's decision (true)!"| FAIL_1(("Contradiction"))
+    HALT -.->|"Contradiction with H's decision (false)!"| FAIL_2(("Contradiction"))
     
     style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
     style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px

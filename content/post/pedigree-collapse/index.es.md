@@ -51,25 +51,25 @@ El siguiente diagrama de Mermaid compara un árbol binario perfecto con el **col
 
 ```mermaid
 graph TD
-    subgraph "完全な二分木（崩壊なしの場合）"
-        A1["あなた"] -->|"父親"| B1["父"]
-        A1 -->|"母親"| B2["母"]
-        B1 -->|"父方祖父"| C1["祖父A"]
-        B1 -->|"父方祖母"| C2["祖母A"]
-        B2 -->|"母方祖父"| C3["祖父B"]
-        B2 -->|"母方祖母"| C4["祖母B"]
+    subgraph "Árbol binario perfecto (sin colapso)"
+        A1["Tú"] -->|"Padre"| B1["Padre"]
+        A1 -->|"Madre"| B2["Madre"]
+        B1 -->|"Abuelo paterno"| C1["Abuelo A"]
+        B1 -->|"Abuela paterna"| C2["Abuela A"]
+        B2 -->|"Abuelo materno"| C3["Abuelo B"]
+        B2 -->|"Abuela materna"| C4["Abuela B"]
     end
 ```
 
 ```mermaid
 graph TD
-    subgraph "いとこ婚による血統の崩壊（重複の発生）"
-        A2["子供"] -->|"父親"| B3["父"]
-        A2 -->|"母親"| B4["母"]
-        B3 -->|"父方祖父"| C5["祖父C"]
-        B3 -->|"父方祖母"| C6["祖母C"]
-        B4 -->|"母方祖父"| C7["祖父D"]
-        B4 -->|"母方祖母"| C6
+    subgraph "Colapso del pedigrí por matrimonio entre primos (ocurrencia de duplicación)"
+        A2["Hijo"] -->|"Padre"| B3["Padre"]
+        A2 -->|"Madre"| B4["Madre"]
+        B3 -->|"Abuelo paterno"| C5["Abuelo C"]
+        B3 -->|"Abuela paterna"| C6["Abuela C"]
+        B4 -->|"Abuelo materno"| C7["Abuelo D"]
+        B4 -->|"Abuela materna"| C6
     end
 ```
 
@@ -111,16 +111,16 @@ Su coeficiente de consanguinidad $F$ alcanzó el $0.254$, un valor anormal que i
 
 ```mermaid
 graph TD
-    subgraph "カルロス2世の系図の収縮（概念図）"
-        C["カルロス2世"] -->|"父"| F1["フェリペ4世"]
-        C -->|"母"| M1["マリアナ"]
-        F1 -->|"父"| F2["フェリペ3世"]
-        F1 -->|"母"| M2["マルガリータ"]
-        M1 -->|"父"| F3["フェルディナント3世"]
-        M1 -->|"母"| M3["マリア・アンナ"]
+    subgraph "Contracción del pedigrí de Carlos II (diagrama conceptual)"
+        C["Carlos II"] -->|"Padre"| F1["Felipe IV"]
+        C -->|"Madre"| M1["Mariana"]
+        F1 -->|"Padre"| F2["Felipe III"]
+        F1 -->|"Madre"| M2["Margarita"]
+        M1 -->|"Padre"| F3["Fernando III"]
+        M1 -->|"Madre"| M3["María Ana"]
         
-        M3 -.->|"同一人物"| F2
-        M2 -.->|"共通の祖先"| F3
+        M3 -.->|"Misma persona"| F2
+        M2 -.->|"Ancestro común"| F3
     end
 ```
 (*El árbol genealógico real es aún más complejo, pero este es un diagrama conceptual para ilustrar la duplicación anormal.)

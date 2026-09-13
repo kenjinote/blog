@@ -51,25 +51,25 @@ O diagrama Mermaid abaixo compara uma árvore binária perfeita com o **Colapso 
 
 ```mermaid
 graph TD
-    subgraph "完全な二分木（崩壊なしの場合）"
-        A1["あなた"] -->|"父親"| B1["父"]
-        A1 -->|"母親"| B2["母"]
-        B1 -->|"父方祖父"| C1["祖父A"]
-        B1 -->|"父方祖母"| C2["祖母A"]
-        B2 -->|"母方祖父"| C3["祖父B"]
-        B2 -->|"母方祖母"| C4["祖母B"]
+    subgraph "Árvore Binária Perfeita (Sem Colapso)"
+        A1["Você"] -->|"Pai"| B1["Pai"]
+        A1 -->|"Mãe"| B2["Mãe"]
+        B1 -->|"Avô Paterno"| C1["Avô A"]
+        B1 -->|"Avó Paterna"| C2["Avó A"]
+        B2 -->|"Avô Materno"| C3["Avô B"]
+        B2 -->|"Avó Materna"| C4["Avó B"]
     end
 ```
 
 ```mermaid
 graph TD
-    subgraph "いとこ婚による血統の崩壊（重複の発生）"
-        A2["子供"] -->|"父親"| B3["父"]
-        A2 -->|"母親"| B4["母"]
-        B3 -->|"父方祖父"| C5["祖父C"]
-        B3 -->|"父方祖母"| C6["祖母C"]
-        B4 -->|"母方祖父"| C7["祖父D"]
-        B4 -->|"母方祖母"| C6
+    subgraph "Colapso do Pedigree por Casamento entre Primos (Ocorrência de Duplicação)"
+        A2["Criança"] -->|"Pai"| B3["Pai"]
+        A2 -->|"Mãe"| B4["Mãe"]
+        B3 -->|"Avô Paterno"| C5["Avô C"]
+        B3 -->|"Avó Paterna"| C6["Avó C"]
+        B4 -->|"Avô Materno"| C7["Avô D"]
+        B4 -->|"Avó Materna"| C6
     end
 ```
 
@@ -111,16 +111,16 @@ O seu coeficiente de endogamia $F$ atingiu $0.254$, um valor anormal que até su
 
 ```mermaid
 graph TD
-    subgraph "カルロス2世の系図の収縮（概念図）"
-        C["カルロス2世"] -->|"父"| F1["フェリペ4世"]
-        C -->|"母"| M1["マリアナ"]
-        F1 -->|"父"| F2["フェリペ3世"]
-        F1 -->|"母"| M2["マルガリータ"]
-        M1 -->|"父"| F3["フェルディナント3世"]
-        M1 -->|"母"| M3["マリア・アンナ"]
+    subgraph "Contração da Árvore Genealógica de Carlos II (Diagrama Conceitual)"
+        C["Carlos II"] -->|"Pai"| F1["Filipe IV"]
+        C -->|"Mãe"| M1["Mariana"]
+        F1 -->|"Pai"| F2["Filipe III"]
+        F1 -->|"Mãe"| M2["Margarida"]
+        M1 -->|"Pai"| F3["Fernando III"]
+        M1 -->|"Mãe"| M3["Maria Ana"]
         
-        M3 -.->|"同一人物"| F2
-        M2 -.->|"共通の祖先"| F3
+        M3 -.->|"Mesma Pessoa"| F2
+        M2 -.->|"Ancestral Comum"| F3
     end
 ```
 (*Embora a árvore genealógica real esteja ainda mais intricadamente entrelaçada, o diagrama acima é conceitual para mostrar essa duplicação anormal*)

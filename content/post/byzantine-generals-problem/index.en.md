@@ -33,11 +33,11 @@ The following diagram is a simple model of a case where the commander is a trait
 
 ```mermaid
 graph TD
-subgraph "司令官が裏切り者のケース"
-    C["司令官 (裏切り者)"] -->|"攻撃"| L1["副官1 (忠実)"]
-    C -->|"退却"| L2["副官2 (忠実)"]
-    L1 -.->|"司令官から攻撃と言われた"| L2
-    L2 -.->|"司令官から退却と言われた"| L1
+subgraph "Case Where Commander is a Traitor"
+    C["Commander (Traitor)"] -->|"Attack"| L1["Lieutenant 1 (Loyal)"]
+    C -->|"Retreat"| L2["Lieutenant 2 (Loyal)"]
+    L1 -.->|"Told by Commander to Attack"| L2
+    L2 -.->|"Told by Commander to Retreat"| L1
 end
 ```
 
@@ -72,10 +72,10 @@ Consider a case where the total number of people is $n = 3$, and there is $m = 1
 
 ```mermaid
 graph TD
-subgraph "ケース1: 副官2が裏切り"
-    C["司令官 (忠実: 攻撃)"] -->|"攻撃"| L1["副官1 (忠実)"]
-    C -->|"攻撃"| L2["副官2 (裏切り)"]
-    L2 -.->|"退却"| L1
+subgraph "Case 1: Lieutenant 2 is Traitor"
+    C["Commander (Loyal: Attack)"] -->|"Attack"| L1["Lieutenant 1 (Loyal)"]
+    C -->|"Attack"| L2["Lieutenant 2 (Traitor)"]
+    L2 -.->|"Retreat"| L1
 end
 ```
 
@@ -85,10 +85,10 @@ At this time, the loyal Lieutenant 1 receives the message "Attack" from the comm
 
 ```mermaid
 graph TD
-subgraph "ケース2: 司令官が裏切り"
-    C["司令官 (裏切り)"] -->|"攻撃"| L1["副官1 (忠実)"]
-    C -->|"退却"| L2["副官2 (忠実)"]
-    L2 -.->|"退却"| L1
+subgraph "Case 2: Commander is Traitor"
+    C["Commander (Traitor)"] -->|"Attack"| L1["Lieutenant 1 (Loyal)"]
+    C -->|"Retreat"| L2["Lieutenant 2 (Loyal)"]
+    L2 -.->|"Retreat"| L1
 end
 ```
 
@@ -130,10 +130,10 @@ In PBFT, the consensus process is mainly divided into the following three phases
 
 ```mermaid
 graph TD
-subgraph "PBFTの主要フェーズ"
-    C["クライアント"] -->|"リクエスト送信"| P["プライマリ"]
-    P -->|"Pre-prepare"| B1["バックアップ1"]
-    P -->|"Pre-prepare"| B2["バックアップ2"]
+subgraph "Main Phases of PBFT"
+    C["Client"] -->|"Send Request"| P["Primary"]
+    P -->|"Pre-prepare"| B1["Backup 1"]
+    P -->|"Pre-prepare"| B2["Backup 2"]
     B1 -->|"Prepare"| B2
     B2 -->|"Prepare"| B1
     B1 -->|"Prepare"| P

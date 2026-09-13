@@ -69,32 +69,32 @@ El siguiente esquema en Mermaid muestra cómo datos infinitos se mapean a un esp
 
 ```mermaid
 graph TD
-    subgraph "無限の入力空間（鳩）"
-        A("データ A")
-        B("データ B")
-        C("データ C")
-        D("データ D")
+    subgraph "Espacio de entrada infinito (palomas)"
+        A("Dato A")
+        B("Dato B")
+        C("Dato C")
+        D("Dato D")
         E("...")
     end
 
-    subgraph "ハッシュ関数"
+    subgraph "Función Hash"
         H{"Hash(x)"}
     end
 
-    subgraph "有限のハッシュ空間（巣）"
+    subgraph "Espacio Hash finito (nidos)"
         V1("Hash(A)")
         V2("Hash(B) = Hash(C)")
         V3("Hash(D)")
     end
 
-    A -->|"ハッシュ化"| H
-    B -->|"ハッシュ化"| H
-    C -->|"ハッシュ化"| H
-    D -->|"ハッシュ化"| H
+    A -->|"Aplicar hash"| H
+    B -->|"Aplicar hash"| H
+    C -->|"Aplicar hash"| H
+    D -->|"Aplicar hash"| H
 
-    H -->|"出力"| V1
-    H -->|"出力（衝突）"| V2
-    H -->|"出力"| V3
+    H -->|"Salida"| V1
+    H -->|"Salida (colisión)"| V2
+    H -->|"Salida"| V3
 
     style V2 fill:#ffcccc,stroke:#ff0000,stroke-width:3px;
 ```
@@ -148,16 +148,16 @@ Así las cosas, se desvelaron al orbe, como gran hito, **una pareja de archivos 
 
 ```mermaid
 graph LR
-    subgraph "SHAttered攻撃（2017年）"
-        F1("正常なPDF契約書")
-        F2("悪意あるPDF契約書")
-        H{"SHA-1 ハッシュ関数"}
-        V("同一のハッシュ値\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+    subgraph "Ataque SHAttered (2017)"
+        F1("Contrato PDF normal")
+        F2("Contrato PDF malicioso")
+        H{"Función Hash SHA-1"}
+        V("Mismo valor hash\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
     end
 
-    F1 -->|"入力"| H
-    F2 -->|"入力"| H
-    H -->|"出力"| V
+    F1 -->|"Entrada"| H
+    F2 -->|"Entrada"| H
+    H -->|"Salida"| V
 ```
 
 De lo cual inferimos el crudo hado por el que los algoritmos criptográficos pierden gradualmente entereza frente al devenir del descubrimiento matemático o por obra de la hipertrofia informática en sí misma.
@@ -202,18 +202,18 @@ A modo preventivo y contrarrestando la tesitura descrita, se adosa para cada con
 
 ```mermaid
 graph LR
-    subgraph "最新のパスワード保護メカニズム"
-        P("ユーザーのパスワード")
-        S("ソルト (Salt)")
-        H1{"ハッシュ関数"}
-        H2{"ハッシュ関数 (数万回ループ)"}
-        R("保存用ハッシュ値")
+    subgraph "Mecanismo moderno de protección de contraseñas"
+        P("Contraseña del usuario")
+        S("Sal (Salt)")
+        H1{"Función Hash"}
+        H2{"Función Hash (bucle de decenas de miles de veces)"}
+        R("Valor Hash para guardar")
     end
 
-    P -->|"入力"| H1
-    S -->|"結合"| H1
-    H1 -->|"ストレッチング開始"| H2
-    H2 -->|"最終出力"| R
+    P -->|"Entrada"| H1
+    S -->|"Combinar"| H1
+    H1 -->|"Iniciar estiramiento"| H2
+    H2 -->|"Salida final"| R
 ```
 
 Esto precipita que a sabiendas se encarezcan exponencialmente los trabajos precisados a costillas del saboteador, relegando al estatus de puro surrealismo toda tentativa por la fuerza bruta.

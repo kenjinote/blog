@@ -69,32 +69,32 @@ Diagram Mermaid di bawah ini menunjukkan bagaimana data tak terbatas dipetakan k
 
 ```mermaid
 graph TD
-    subgraph "無限の入力空間（鳩）"
-        A("データ A")
-        B("データ B")
-        C("データ C")
-        D("データ D")
+    subgraph "Ruang Input Tak Terbatas (Merpati)"
+        A("Data A")
+        B("Data B")
+        C("Data C")
+        D("Data D")
         E("...")
     end
 
-    subgraph "ハッシュ関数"
+    subgraph "Fungsi Hash"
         H{"Hash(x)"}
     end
 
-    subgraph "有限のハッシュ空間（巣）"
+    subgraph "Ruang Hash Terbatas (Sarang)"
         V1("Hash(A)")
         V2("Hash(B) = Hash(C)")
         V3("Hash(D)")
     end
 
-    A -->|"ハッシュ化"| H
-    B -->|"ハッシュ化"| H
-    C -->|"ハッシュ化"| H
-    D -->|"ハッシュ化"| H
+    A -->|"Hashing"| H
+    B -->|"Hashing"| H
+    C -->|"Hashing"| H
+    D -->|"Hashing"| H
 
-    H -->|"出力"| V1
-    H -->|"出力（衝突）"| V2
-    H -->|"出力"| V3
+    H -->|"Output"| V1
+    H -->|"Output（衝突）"| V2
+    H -->|"Output"| V3
 
     style V2 fill:#ffcccc,stroke:#ff0000,stroke-width:3px;
 ```
@@ -148,16 +148,16 @@ Mereka memublikasikan, untuk pertama kalinya di dunia, **dua file PDF yang memil
 
 ```mermaid
 graph LR
-    subgraph "SHAttered攻撃（2017年）"
-        F1("正常なPDF契約書")
-        F2("悪意あるPDF契約書")
-        H{"SHA-1 ハッシュ関数"}
-        V("同一のハッシュ値\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+    subgraph "Serangan SHAttered (2017)"
+        F1("Kontrak PDF Normal")
+        F2("Kontrak PDF Berbahaya")
+        H{"SHA-1 Fungsi Hash"}
+        V("Nilai Hash Sama\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
     end
 
-    F1 -->|"入力"| H
-    F2 -->|"入力"| H
-    H -->|"出力"| V
+    F1 -->|"Input"| H
+    F2 -->|"Input"| H
+    H -->|"Output"| V
 ```
 
 Dengan demikian, seiring dengan terobosan matematika dan evolusi komputer, algoritma kriptografi ditakdirkan untuk semakin melemah.
@@ -202,18 +202,18 @@ Untuk mencegah hal ini, diterapkan string acak berupa **"Salt"** untuk setiap ka
 
 ```mermaid
 graph LR
-    subgraph "最新のパスワード保護メカニズム"
-        P("ユーザーのパスワード")
-        S("ソルト (Salt)")
-        H1{"ハッシュ関数"}
-        H2{"ハッシュ関数 (数万回ループ)"}
-        R("保存用ハッシュ値")
+    subgraph "Mekanisme Perlindungan Kata Sandi Terbaru"
+        P("Kata Sandi Pengguna")
+        S("Salt")
+        H1{"Fungsi Hash"}
+        H2{"Fungsi Hash (数万回ループ)"}
+        R("Nilai Hash Tersimpan")
     end
 
-    P -->|"入力"| H1
-    S -->|"結合"| H1
-    H1 -->|"ストレッチング開始"| H2
-    H2 -->|"最終出力"| R
+    P -->|"Input"| H1
+    S -->|"Gabung"| H1
+    H1 -->|"Mulai Stretching"| H2
+    H2 -->|"最終Output"| R
 ```
 
 Dengan cara ini, biaya yang harus dikeluarkan penyerang untuk melakukan komputasi ditingkatkan secara sengaja, sehingga membuat serangan *brute force* menjadi tidak realistis.

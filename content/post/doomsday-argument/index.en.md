@@ -50,11 +50,11 @@ The observational fact that you possess the relatively small rank of "100 billio
 
 ```mermaid
 graph TD
-    subgraph "レスリーの壺の思考実験"
-        A["ボールを1つ引く"] -->|"番号が『7』だった"| B{"壺の正体は？"}
-        B -->|"事前確率は等しいとする"| C["仮説1: 10個入りの壺"]
-        B -->|"事前確率は等しいとする"| D["仮説2: 1000個入りの壺"]
-        C -.->|"P(E|H1) = 1/10"| E["仮説1の方が尤度が高い"]
+    subgraph "Leslie's Urn Thought Experiment"
+        A["Draw 1 Ball"] -->|"Number was '7'"| B{"What is the Urn?"}
+        B -->|"Assume Prior Probabilities are Equal"| C["Hypothesis 1: Urn with 10 Balls"]
+        B -->|"Assume Prior Probabilities are Equal"| D["Hypothesis 2: Urn with 1000 Balls"]
+        C -.->|"P(E|H1) = 1/10"| E["Hypothesis 1 has Higher Likelihood"]
         D -.->|"P(E|H2) = 1/1000"| E
     end
 ```
@@ -108,15 +108,15 @@ Surprisingly, the probability of **"Early Extinction ($H_{DOOM}$)"**, which was 
 
 ```mermaid
 pie
-    title 事前確率（観測前）
-    "H_DOOM (早期滅亡)" : 50
-    "H_BOOM (長期繁栄)" : 50
+    title Prior Probability (Before Observation)
+    "H_DOOM (Early Extinction)" : 50
+    "H_BOOM (Long Prosperity)" : 50
 ```
 ```mermaid
 pie
-    title 事後確率（証拠 n=1000億 を考慮後）
-    "H_DOOM (早期滅亡)" : 99
-    "H_BOOM (長期繁栄)" : 1
+    title Posterior Probability (After Evidence n=100 Billion)
+    "H_DOOM (Early Extinction)" : 99
+    "H_BOOM (Long Prosperity)" : 1
 ```
 
 ## 5. J. Richard Gott's Delta-t Argument
@@ -147,10 +147,10 @@ In other words, the conclusion is drawn that there is a 95% probability that hum
 
 ```mermaid
 graph LR
-    subgraph "ゴットの95%信頼区間"
-        A["過去 t_past"] ---|"2.5%"| B["観測時点"]
-        B ---|"95%の期間"| C["未来 t_future"]
-        C ---|"2.5%"| D["終了時点"]
+    subgraph "Gott's 95% Confidence Interval"
+        A["Past t_past"] ---|"2.5%"| B["Observation Point"]
+        B ---|"95% Period"| C["Future t_future"]
+        C ---|"2.5%"| D["End Point"]
     end
 ```
 
@@ -187,10 +187,10 @@ If super-advanced AI or posthumans are not included in the reference class (sepa
 
 ```mermaid
 graph TD
-    subgraph "リファレンスクラスの設定による違い"
-        A["我々は何者として自分をカウントするか？"] -->|"ホモ・サピエンスのみ"| B["N = 1000億\n（早期滅亡の確率高）"]
-        A -->|"意識を持つ全存在"| C["宇宙規模のN\n（結論が大きく変わる）"]
-        A -->|"現生人類＋ポストヒューマン"| D["N = 莫大\n（進化の可能性）"]
+    subgraph "Difference Due to Reference Class Setting"
+        A["What do we count ourselves as?"] -->|"Only Homo Sapiens"| B["N = 100 Billion\n(High Probability of Early Extinction)"]
+        A -->|"All Conscious Beings"| C["Universe-scale N\n(Conclusion Changes Greatly)"]
+        A -->|"Modern Humans + Posthumans"| D["N = Enormous\n(Possibility of Evolution)"]
     end
 ```
 

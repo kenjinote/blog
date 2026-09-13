@@ -51,25 +51,25 @@ The Mermaid diagrams below compare a perfect binary tree with **Pedigree Collaps
 
 ```mermaid
 graph TD
-    subgraph "完全な二分木（崩壊なしの場合）"
-        A1["あなた"] -->|"父親"| B1["父"]
-        A1 -->|"母親"| B2["母"]
-        B1 -->|"父方祖父"| C1["祖父A"]
-        B1 -->|"父方祖母"| C2["祖母A"]
-        B2 -->|"母方祖父"| C3["祖父B"]
-        B2 -->|"母方祖母"| C4["祖母B"]
+    subgraph "Perfect Binary Tree (No Collapse)"
+        A1["You"] -->|"Father"| B1["Dad"]
+        A1 -->|"Mother"| B2["Mom"]
+        B1 -->|"Paternal Grandfather"| C1["Grandfather A"]
+        B1 -->|"Paternal Grandmother"| C2["Grandmother A"]
+        B2 -->|"Maternal Grandfather"| C3["Grandfather B"]
+        B2 -->|"Maternal Grandmother"| C4["Grandmother B"]
     end
 ```
 
 ```mermaid
 graph TD
-    subgraph "いとこ婚による血統の崩壊（重複の発生）"
-        A2["子供"] -->|"父親"| B3["父"]
-        A2 -->|"母親"| B4["母"]
-        B3 -->|"父方祖父"| C5["祖父C"]
-        B3 -->|"父方祖母"| C6["祖母C"]
-        B4 -->|"母方祖父"| C7["祖父D"]
-        B4 -->|"母方祖母"| C6
+    subgraph "Pedigree Collapse Due to Cousin Marriage (Occurrence of Duplication)"
+        A2["Child"] -->|"Father"| B3["Dad"]
+        A2 -->|"Mother"| B4["Mom"]
+        B3 -->|"Paternal Grandfather"| C5["Grandfather C"]
+        B3 -->|"Paternal Grandmother"| C6["Grandmother C"]
+        B4 -->|"Maternal Grandfather"| C7["Grandfather D"]
+        B4 -->|"Maternal Grandmother"| C6
     end
 ```
 
@@ -111,16 +111,16 @@ His inbreeding coefficient $F$ reached $0.254$, an abnormally high figure that e
 
 ```mermaid
 graph TD
-    subgraph "カルロス2世の系図の収縮（概念図）"
-        C["カルロス2世"] -->|"父"| F1["フェリペ4世"]
-        C -->|"母"| M1["マリアナ"]
-        F1 -->|"父"| F2["フェリペ3世"]
-        F1 -->|"母"| M2["マルガリータ"]
-        M1 -->|"父"| F3["フェルディナント3世"]
-        M1 -->|"母"| M3["マリア・アンナ"]
+    subgraph "Contraction of Charles II's Pedigree (Conceptual Diagram)"
+        C["Charles II"] -->|"Father"| F1["Philip IV"]
+        C -->|"Mother"| M1["Mariana"]
+        F1 -->|"Father"| F2["Philip III"]
+        F1 -->|"Mother"| M2["Margaret"]
+        M1 -->|"Father"| F3["Ferdinand III"]
+        M1 -->|"Mother"| M3["Maria Anna"]
         
-        M3 -.->|"同一人物"| F2
-        M2 -.->|"共通の祖先"| F3
+        M3 -.->|"Same Person"| F2
+        M2 -.->|"Common Ancestor"| F3
     end
 ```
 (* While the actual family tree is even more complexly intertwined, the above is a conceptual diagram illustrating that abnormal duplication.)

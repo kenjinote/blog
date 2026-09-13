@@ -62,17 +62,17 @@ El Teorema de la imposibilidad de Arrow demostró matemáticamente el impactante
 
 ```mermaid
 graph TD
-    subgraph "公平な選挙の条件"
-        C1["定義域の非制限性"]
-        C2["満場一致性"]
-        C3["無関係な選択肢からの独立性 (IIA)"]
-        C4["非独裁性"]
+    subgraph "Condiciones para unas elecciones justas"
+        C1["Dominio no restringido"]
+        C2["Unanimidad"]
+        C3["Independencia de alternativas irrelevantes (IIA)"]
+        C4["No dictadura"]
     end
     
-    C1 -->|"両立?"| X{{"すべてを\n満たすことは\n不可能"}}
-    C2 -->|"両立?"| X
-    C3 -->|"両立?"| X
-    C4 -->|"両立?"| X
+    C1 -->|"¿Compatibles?"| X{{"Es imposible\ncumplir\ntodas"}}
+    C2 -->|"¿Compatibles?"| X
+    C3 -->|"¿Compatibles?"| X
+    C4 -->|"¿Compatibles?"| X
 ```
 
 ## 3. Ejemplo concreto: ¿Por qué son contradictorias estas condiciones?
@@ -97,9 +97,9 @@ La sociedad en su conjunto cae en un bucle **A > B > C > A ...**, y es imposible
 
 ```mermaid
 graph LR
-    A((A)) -->|"多数決で勝つ"| B((B))
-    B -->|"多数決で勝つ"| C((C))
-    C -->|"多数決で勝つ"| A
+    A((A)) -->|"Gana por mayoría"| B((B))
+    B -->|"Gana por mayoría"| C((C))
+    C -->|"Gana por mayoría"| A
     
     style A fill:#ff9999
     style B fill:#99ccff
@@ -165,16 +165,16 @@ Es decir, no existe una $F$ que satisfaga simultáneamente (U), (P), (I) y (D).
 
 ```mermaid
 graph TD
-    subgraph "論理的な帰結"
-        A_U["条件U (非制限性)"] --> AND1((AND))
-        A_P["条件P (満場一致性)"] --> AND1
-        A_I["条件I (IIA)"] --> AND1
+    subgraph "Consecuencia lógica"
+        A_U["Condición U (Dominio no restringido)"] --> AND1((AND))
+        A_P["Condición P (Unanimidad)"] --> AND1
+        A_I["Condición I (IIA)"] --> AND1
         
-        AND1 -->|"論理的帰結として"| D_TRUE["独裁者の存在 (Dictatorship)"]
-        D_FALSE["条件D (非独裁性)"] --> CONFLICT{{"矛盾・不成立"}}
+        AND1 -->|"Como consecuencia lógica"| D_TRUE["Existencia de dictador (Dictatorship)"]
+        D_FALSE["Condición D (No dictadura)"] --> CONFLICT{{"Contradicción / Invalidez"}}
         
-        D_TRUE -.->|"反する"| D_FALSE
-        D_TRUE -.->|"引き起こす"| CONFLICT
+        D_TRUE -.->|"Contradice"| D_FALSE
+        D_TRUE -.->|"Provoca"| CONFLICT
     end
 ```
 

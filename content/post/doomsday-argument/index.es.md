@@ -50,11 +50,11 @@ El hecho observable de que tienes un orden relativamente bajo, "el número 100,0
 
 ```mermaid
 graph TD
-    subgraph "レスリーの壺の思考実験"
-        A["ボールを1つ引く"] -->|"番号が『7』だった"| B{"壺の正体は？"}
-        B -->|"事前確率は等しいとする"| C["仮説1: 10個入りの壺"]
-        B -->|"事前確率は等しいとする"| D["仮説2: 1000個入りの壺"]
-        C -.->|"P(E|H1) = 1/10"| E["仮説1の方が尤度が高い"]
+    subgraph "Experimento mental de la urna de Leslie"
+        A["Extraer una bola"] -->|"El número era '7'"| B{"¿Qué urna es?"}
+        B -->|"Asumir probabilidades a priori iguales"| C["Hipótesis 1: Urna con 10 bolas"]
+        B -->|"Asumir probabilidades a priori iguales"| D["Hipótesis 2: Urna con 1000 bolas"]
+        C -.->|"P(E|H1) = 1/10"| E["La Hipótesis 1 tiene mayor verosimilitud"]
         D -.->|"P(E|H2) = 1/1000"| E
     end
 ```
@@ -108,15 +108,15 @@ De forma pasmosa, la probabilidad de **"Extinción temprana ($H_{DOOM}$)"**, que
 
 ```mermaid
 pie
-    title 事前確率（観測前）
-    "H_DOOM (早期滅亡)" : 50
-    "H_BOOM (長期繁栄)" : 50
+    title Probabilidad a priori (antes de observar)
+    "H_DOOM (Extinción temprana)" : 50
+    "H_BOOM (Prosperidad a largo plazo)" : 50
 ```
 ```mermaid
 pie
-    title 事後確率（証拠 n=1000億 を考慮後）
-    "H_DOOM (早期滅亡)" : 99
-    "H_BOOM (長期繁栄)" : 1
+    title Probabilidad a posteriori (considerando evidencia n=100 mil millones)
+    "H_DOOM (Extinción temprana)" : 99
+    "H_BOOM (Prosperidad a largo plazo)" : 1
 ```
 
 ## 5. El argumento Delta-t de J. Richard Gott
@@ -147,10 +147,10 @@ Esto nos lleva a la conclusión de que, con un 95% de probabilidad, la humanidad
 
 ```mermaid
 graph LR
-    subgraph "ゴットの95%信頼区間"
-        A["過去 t_past"] ---|"2.5%"| B["観測時点"]
-        B ---|"95%の期間"| C["未来 t_future"]
-        C ---|"2.5%"| D["終了時点"]
+    subgraph "Intervalo de confianza del 95% de Gott"
+        A["Pasado t_past"] ---|"2.5%"| B["Momento de observación"]
+        B ---|"Período del 95%"| C["Futuro t_future"]
+        C ---|"2.5%"| D["Punto final"]
     end
 ```
 
@@ -187,10 +187,10 @@ Si decidimos exceptuar de la clase de referencia a las inteligencias artificiale
 
 ```mermaid
 graph TD
-    subgraph "リファレンスクラスの設定による違い"
-        A["我々は何者として自分をカウントするか？"] -->|"ホモ・サピエンスのみ"| B["N = 1000億\n（早期滅亡の確率高）"]
-        A -->|"意識を持つ全存在"| C["宇宙規模のN\n（結論が大きく変わる）"]
-        A -->|"現生人類＋ポストヒューマン"| D["N = 莫大\n（進化の可能性）"]
+    subgraph "Diferencias según la configuración de la Clase de Referencia"
+        A["¿Como qué nos contamos a nosotros mismos?"] -->|"Solo Homo sapiens"| B["N = 100 mil millones\n(Alta probabilidad de extinción temprana)"]
+        A -->|"Toda entidad con consciencia"| C["N a escala cósmica\n(La conclusión cambia drásticamente)"]
+        A -->|"Humanos actuales + Posthumanos"| D["N = Enorme\n(Posibilidad de evolución)"]
     end
 ```
 

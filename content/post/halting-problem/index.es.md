@@ -125,22 +125,22 @@ Vamos a ilustrar la lógica de esta reducción al absurdo utilizando Mermaid.
 
 ```mermaid
 graph TD
-    subgraph "判定機 H"
-        H{"H(X, X) の結果は？"}
+    subgraph "Evaluador H"
+        H{"¿Resultado de H(X, X)?"}
     end
 
-    subgraph "意地悪なプログラム D"
-        START["Dを開始"] --> H
-        H -->|"true (停止する)"| LOOP["無限ループ"]
-        H -->|"false (無限ループする)"| HALT["停止する"]
+    subgraph "Programa malintencionado D"
+        START["Iniciar D"] --> H
+        H -->|"true (se detiene)"| LOOP["Bucle infinito"]
+        H -->|"false (entra en bucle infinito)"| HALT["Detenerse"]
     end
 
     %% D に D 自身を入力する
-    INPUT_D[/"入力: D"/] --> START
+    INPUT_D[/"Entrada: D"/] --> START
     
     %% 矛盾のハイライト
-    LOOP -.->|"Hの判定(true)と矛盾!"| FAIL_1(("矛盾"))
-    HALT -.->|"Hの判定(false)と矛盾!"| FAIL_2(("矛盾"))
+    LOOP -.->|"¡Contradicción con H(true)!"| FAIL_1(("Contradicción"))
+    HALT -.->|"¡Contradicción con H(false)!"| FAIL_2(("Contradicción"))
     
     style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
     style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px

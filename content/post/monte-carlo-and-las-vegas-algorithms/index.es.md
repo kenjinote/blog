@@ -150,15 +150,15 @@ El siguiente esquema en Mermaid ayuda a visualizar la divergencia en el flujo de
 
 ```mermaid
 graph TD
-    subgraph "モンテカルロ法"
-        M_Start["開始"] --> M_Rand["乱数生成・計算"]
-        M_Rand --> M_End["終了（近似解を出力）"]
+    subgraph "Método de Montecarlo"
+        M_Start["Inicio"] --> M_Rand["Generar números aleatorios y calcular"]
+        M_Rand --> M_End["Fin (solución aproximada)"]
     end
 
-    subgraph "ラスベガス法"
-        L_Start["開始"] --> L_Rand["乱数生成・計算"]
-        L_Rand --> L_Check{"正しい解か？"}
-        L_Check -->|"Yes"| L_End["終了（正確な解を出力）"]
+    subgraph "Método de Las Vegas"
+        L_Start["Inicio"] --> L_Rand["Generar números aleatorios y calcular"]
+        L_Rand --> L_Check{"¿Es correcta la solución?"}
+        L_Check -->|"Yes"| L_End["Fin (solución exacta)"]
         L_Check -->|"No"| L_Rand
     end
 ```

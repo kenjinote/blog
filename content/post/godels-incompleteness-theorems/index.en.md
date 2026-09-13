@@ -33,9 +33,9 @@ Hilbert left behind the famous words, "We must know. We will know. (Wir müssen 
 
 ```mermaid
 graph TD
-    subgraph "ヒルベルト・プログラムの構想"
-        A["公理系（自明な前提）"] -->|"厳密な推論規則"| B["すべての真なる数学的命題"]
-        A -->|"体系内部での証明"| C["自らの無矛盾性の保証"]
+    subgraph "Concept of Hilbert's Program"
+        A["Axiomatic System (Self-evident Premises)"] -->|"Strict Inference Rules"| B["All True Mathematical Propositions"]
+        A -->|"Proof within the System"| C["Guarantee of Its Own Consistency"]
     end
 ```
 
@@ -62,12 +62,12 @@ This theorem showed that "truth" and "provability" are completely different thin
 
 ```mermaid
 graph LR
-    subgraph "真理と証明可能性のズレ"
-        A["真である命題の集合"]
-        B["証明可能な命題の集合"]
-        B -.->|"完全に含まれる"| A
-        C["真理だが証明不能な命題（不完全性）"]
-        A -->|"必ず存在する"| C
+    subgraph "Gap Between Truth and Provability"
+        A["Set of True Propositions"]
+        B["Set of Provable Propositions"]
+        B -.->|"Completely Included"| A
+        C["Propositions True but Unprovable (Incompleteness)"]
+        A -->|"Always Exist"| C
     end
 ```
 
@@ -97,11 +97,11 @@ Gödel assigned a unique number (a prime number) to all symbols used in formulas
 
 ```mermaid
 graph TD
-    subgraph "ゲーデル数化のメカニズム"
-        S1["記号 '0'"] -->|"割り当て"| N1["素数 2"]
-        S2["記号 '='"] -->|"割り当て"| N2["素数 3"]
-        S3["記号 '0'"] -->|"割り当て"| N3["素数 5"]
-        F["数式 '0=0'"] -->|"べき乗して掛け合わせる"| GN["ゲーデル数: 2^2 * 3^3 * 5^2 = 2700"]
+    subgraph "Mechanism of Gödel Numbering"
+        S1["Symbol '0'"] -->|"Assign"| N1["Prime 2"]
+        S2["Symbol '='"] -->|"Assign"| N2["Prime 3"]
+        S3["Symbol '0'"] -->|"Assign"| N3["Prime 5"]
+        F["Formula '0=0'"] -->|"Exponentiate and Multiply"| GN["Gödel Number: 2^2 * 3^3 * 5^2 = 2700"]
     end
 ```
 
@@ -144,9 +144,9 @@ Turing applied Gödel's Incompleteness Theorem to the world of computers and pro
 
 ```mermaid
 graph TD
-    subgraph "数学から計算機科学への系譜"
-        Godel["ゲーデル（1931年）<br/>不完全性定理"] -->|"証明不可能な命題の存在"| Turing["チューリング（1936年）<br/>停止性問題"]
-        Turing -->|"計算不可能な問題の存在"| Computer["現代のコンピュータ科学<br/>（計算複雑性理論・AI限界論）"]
+    subgraph "Lineage from Mathematics to Computer Science"
+        Godel["Gödel (1931)<br/>Incompleteness Theorems"] -->|"Existence of Unprovable Propositions"| Turing["Turing (1936)<br/>Halting Problem"]
+        Turing -->|"Existence of Uncomputable Problems"| Computer["Modern Computer Science<br/>(Computational Complexity Theory, AI Limits)"]
     end
 ```
 

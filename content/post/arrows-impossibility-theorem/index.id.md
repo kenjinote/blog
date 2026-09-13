@@ -62,17 +62,17 @@ Teorema Ketidakmungkinan Arrow membuktikan fakta mengejutkan secara matematis ba
 
 ```mermaid
 graph TD
-    subgraph "公平な選挙の条件"
-        C1["定義域の非制限性"]
-        C2["満場一致性"]
-        C3["無関係な選択肢からの独立性 (IIA)"]
-        C4["非独裁性"]
+    subgraph "Kondisi Pemilu yang Adil"
+        C1["Domain Tidak Terbatas"]
+        C2["Aklamasi"]
+        C3["Independensi dari Pilihan yang Tidak Relevan (IIA)"]
+        C4["Non-Diktator"]
     end
     
-    C1 -->|"両立?"| X{{"すべてを\n満たすことは\n不可能"}}
-    C2 -->|"両立?"| X
-    C3 -->|"両立?"| X
-    C4 -->|"両立?"| X
+    C1 -->|"Kompatibel?"| X{{"Mustahil memenuhi\nsemuanya"}}
+    C2 -->|"Kompatibel?"| X
+    C3 -->|"Kompatibel?"| X
+    C4 -->|"Kompatibel?"| X
 ```
 
 ## 3. Contoh Konkret: Mengapa Kondisi-kondisi Tersebut Kontradiktif?
@@ -97,9 +97,9 @@ Masyarakat secara keseluruhan jatuh ke dalam siklus (loop) **A > B > C > A ...**
 
 ```mermaid
 graph LR
-    A((A)) -->|"多数決で勝つ"| B((B))
-    B -->|"多数決で勝つ"| C((C))
-    C -->|"多数決で勝つ"| A
+    A((A)) -->|"Menang dengan suara terbanyak"| B((B))
+    B -->|"Menang dengan suara terbanyak"| C((C))
+    C -->|"Menang dengan suara terbanyak"| A
     
     style A fill:#ff9999
     style B fill:#99ccff
@@ -165,16 +165,16 @@ Dengan kata lain, $F$ yang memenuhi (U), (P), (I), dan (D) secara bersamaan tida
 
 ```mermaid
 graph TD
-    subgraph "論理的な帰結"
-        A_U["条件U (非制限性)"] --> AND1((AND))
-        A_P["条件P (満場一致性)"] --> AND1
-        A_I["条件I (IIA)"] --> AND1
+    subgraph "Konsekuensi Logis"
+        A_U["Kondisi U (Domain Tidak Terbatas)"] --> AND1((AND))
+        A_P["条件P (Aklamasi)"] --> AND1
+        A_I["Kondisi I (IIA)"] --> AND1
         
-        AND1 -->|"論理的帰結として"| D_TRUE["独裁者の存在 (Dictatorship)"]
-        D_FALSE["条件D (非独裁性)"] --> CONFLICT{{"矛盾・不成立"}}
+        AND1 -->|"Sebagai Konsekuensi Logis"| D_TRUE["Keberadaan Diktator (Dictatorship)"]
+        D_FALSE["条件D (Non-Diktator)"] --> CONFLICT{{"Kontradiksi・不成立"}}
         
-        D_TRUE -.->|"反する"| D_FALSE
-        D_TRUE -.->|"引き起こす"| CONFLICT
+        D_TRUE -.->|"Bertentangan"| D_FALSE
+        D_TRUE -.->|"Menyebabkan"| CONFLICT
     end
 ```
 

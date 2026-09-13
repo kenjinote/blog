@@ -125,11 +125,11 @@ Recorramos perante Mermaid, traduzindo no suporte visual demonstrativo os passos
 
 ```mermaid
 graph TD
-    subgraph "判定機 H"
+    subgraph "Máquina de Decisão H"
         H{"Resultado de H(X, X)?"}
     end
 
-    subgraph "意地悪なプログラム D (Programa Enganoso)"
+    subgraph "Programa Enganoso D"
         START["Iniciar D"] --> H
         H -->|"true (Cessa)"| LOOP["Loop Infinito"]
         H -->|"false (Infinito)"| HALT["Paragem"]

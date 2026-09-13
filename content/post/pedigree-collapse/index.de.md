@@ -51,25 +51,25 @@ Das folgende Mermaid-Diagramm vergleicht einen vollständigen Binärbaum mit dem
 
 ```mermaid
 graph TD
-    subgraph "完全な二分木（崩壊なしの場合）"
-        A1["あなた"] -->|"父親"| B1["父"]
-        A1 -->|"母親"| B2["母"]
-        B1 -->|"父方祖父"| C1["祖父A"]
-        B1 -->|"父方祖母"| C2["祖母A"]
-        B2 -->|"母方祖父"| C3["祖父B"]
-        B2 -->|"母方祖母"| C4["祖母B"]
+    subgraph "Vollständiger Binärbaum (ohne Ahnenschwund)"
+        A1["Du"] -->|"Vater"| B1["Vater"]
+        A1 -->|"Mutter"| B2["Mutter"]
+        B1 -->|"Großvater väterlicherseits"| C1["Großvater A"]
+        B1 -->|"Großmutter väterlicherseits"| C2["Großmutter A"]
+        B2 -->|"Großvater mütterlicherseits"| C3["Großvater B"]
+        B2 -->|"Großmutter mütterlicherseits"| C4["Großmutter B"]
     end
 ```
 
 ```mermaid
 graph TD
-    subgraph "いとこ婚による血統の崩壊（重複の発生）"
-        A2["子供"] -->|"父親"| B3["父"]
-        A2 -->|"母親"| B4["母"]
-        B3 -->|"父方祖父"| C5["祖父C"]
-        B3 -->|"父方祖母"| C6["祖母C"]
-        B4 -->|"母方祖父"| C7["祖父D"]
-        B4 -->|"母方祖母"| C6
+    subgraph "Ahnenschwund durch Cousinenheirat (Auftreten von Duplikaten)"
+        A2["Kind"] -->|"Vater"| B3["Vater"]
+        A2 -->|"Mutter"| B4["Mutter"]
+        B3 -->|"Großvater väterlicherseits"| C5["Großvater C"]
+        B3 -->|"Großmutter väterlicherseits"| C6["Großmutter C"]
+        B4 -->|"Großvater mütterlicherseits"| C7["Großvater D"]
+        B4 -->|"Großmutter mütterlicherseits"| C6
     end
 ```
 
@@ -111,16 +111,16 @@ Sein Inzuchtkoeffizient $F$ erreichte $0,254$, was ein abnormal hoher Wert ist, 
 
 ```mermaid
 graph TD
-    subgraph "カルロス2世の系図の収縮（概念図）"
-        C["カルロス2世"] -->|"父"| F1["フェリペ4世"]
-        C -->|"母"| M1["マリアナ"]
-        F1 -->|"父"| F2["フェリペ3世"]
-        F1 -->|"母"| M2["マルガリータ"]
-        M1 -->|"父"| F3["フェルディナント3世"]
-        M1 -->|"母"| M3["マリア・アンナ"]
+    subgraph "Schrumpfung des Stammbaums von Karl II. (Konzeptdiagramm)"
+        C["Karl II."] -->|"Vater"| F1["Philipp IV."]
+        C -->|"Mutter"| M1["Maria Anna"]
+        F1 -->|"Vater"| F2["Philipp III."]
+        F1 -->|"Mutter"| M2["Margarete"]
+        M1 -->|"Vater"| F3["Ferdinand III."]
+        M1 -->|"Mutter"| M3["Maria Anna"]
         
-        M3 -.->|"同一人物"| F2
-        M2 -.->|"共通の祖先"| F3
+        M3 -.->|"Selbe Person"| F2
+        M2 -.->|"Gemeinsamer Vorfahre"| F3
     end
 ```
 （※実際の系図はさらに複雑に絡み合っていますが、上記はその異常な重複を示す概念図です）

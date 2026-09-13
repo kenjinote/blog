@@ -51,25 +51,25 @@ Diagram Mermaid berikut membandingkan pohon biner sempurna dengan **Keruntuhan S
 
 ```mermaid
 graph TD
-    subgraph "完全な二分木（崩壊なしの場合）"
-        A1["あなた"] -->|"父親"| B1["父"]
-        A1 -->|"母親"| B2["母"]
-        B1 -->|"父方祖父"| C1["祖父A"]
-        B1 -->|"父方祖母"| C2["祖母A"]
-        B2 -->|"母方祖父"| C3["祖父B"]
-        B2 -->|"母方祖母"| C4["祖母B"]
+    subgraph "Pohon Biner Sempurna (Tanpa Keruntuhan)"
+        A1["Anda"] -->|"Ayah"| B1["Ayah"]
+        A1 -->|"Ibu"| B2["Ibu"]
+        B1 -->|"Ayah方祖Ayah"| C1["祖AyahA"]
+        B1 -->|"Ayah方祖Ibu"| C2["祖IbuA"]
+        B2 -->|"Ibu方祖Ayah"| C3["祖AyahB"]
+        B2 -->|"Ibu方祖Ibu"| C4["祖IbuB"]
     end
 ```
 
 ```mermaid
 graph TD
-    subgraph "いとこ婚による血統の崩壊（重複の発生）"
-        A2["子供"] -->|"父親"| B3["父"]
-        A2 -->|"母親"| B4["母"]
-        B3 -->|"父方祖父"| C5["祖父C"]
-        B3 -->|"父方祖母"| C6["祖母C"]
-        B4 -->|"母方祖父"| C7["祖父D"]
-        B4 -->|"母方祖母"| C6
+    subgraph "Keruntuhan Silsilah akibat Pernikahan Sepupu (Terjadinya Duplikasi)"
+        A2["Anak"] -->|"Ayah"| B3["Ayah"]
+        A2 -->|"Ibu"| B4["Ibu"]
+        B3 -->|"Ayah方祖Ayah"| C5["祖AyahC"]
+        B3 -->|"Ayah方祖Ibu"| C6["祖IbuC"]
+        B4 -->|"Ibu方祖Ayah"| C7["祖AyahD"]
+        B4 -->|"Ibu方祖Ibu"| C6
     end
 ```
 
@@ -111,16 +111,16 @@ Koefisien inbreeding $F$-nya mencapai $0.254$, sebuah angka abnormal yang bahkan
 
 ```mermaid
 graph TD
-    subgraph "カルロス2世の系図の収縮（概念図）"
-        C["カルロス2世"] -->|"父"| F1["フェリペ4世"]
-        C -->|"母"| M1["マリアナ"]
-        F1 -->|"父"| F2["フェリペ3世"]
-        F1 -->|"母"| M2["マルガリータ"]
-        M1 -->|"父"| F3["フェルディナント3世"]
-        M1 -->|"母"| M3["マリア・アンナ"]
+    subgraph "Penyusutan Silsilah Charles II (Diagram Konseptual)"
+        C["Charles II"] -->|"Ayah"| F1["Philip IV"]
+        C -->|"Ibu"| M1["Mariana"]
+        F1 -->|"Ayah"| F2["Philip III"]
+        F1 -->|"Ibu"| M2["Margaret"]
+        M1 -->|"Ayah"| F3["Ferdinand III"]
+        M1 -->|"Ibu"| M3["Maria Anna"]
         
-        M3 -.->|"同一人物"| F2
-        M2 -.->|"共通の祖先"| F3
+        M3 -.->|"Orang yang Sama"| F2
+        M2 -.->|"Leluhur Bersama"| F3
     end
 ```
 (*Silsilah yang sebenarnya bahkan lebih rumit dan saling terkait, tetapi diagram di atas adalah representasi konseptual yang menunjukkan duplikasi abnormal tersebut)

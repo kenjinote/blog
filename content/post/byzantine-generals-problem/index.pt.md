@@ -33,11 +33,11 @@ O diagrama abaixo mostra um modelo simples de um caso em que o comandante é um 
 
 ```mermaid
 graph TD
-subgraph "司令官が裏切り者のケース"
-    C["司令官 (裏切り者)"] -->|"攻撃"| L1["副官1 (忠実)"]
-    C -->|"退却"| L2["副官2 (忠実)"]
-    L1 -.->|"司令官から攻撃と言われた"| L2
-    L2 -.->|"司令官から退却と言われた"| L1
+subgraph "Caso em que o Comandante é um traidor"
+    C["Comandante (Traidor)"] -->|"Atacar"| L1["Tenente 1 (Leal)"]
+    C -->|"Retirar"| L2["Tenente 2 (Leal)"]
+    L1 -.->|"Foi dito pelo Comandante para atacar"| L2
+    L2 -.->|"Foi dito pelo Comandante para retirar"| L1
 end
 ```
 
@@ -72,10 +72,10 @@ Vamos considerar um caso onde o número total de pessoas é $n = 3$, e entre ele
 
 ```mermaid
 graph TD
-subgraph "ケース1: 副官2が裏切り"
-    C["司令官 (忠実: 攻撃)"] -->|"攻撃"| L1["副官1 (忠実)"]
-    C -->|"攻撃"| L2["副官2 (裏切り)"]
-    L2 -.->|"退却"| L1
+subgraph "Caso 1: Tenente 2 é o traidor"
+    C["Comandante (Leal: Atacar)"] -->|"Atacar"| L1["Tenente 1 (Leal)"]
+    C -->|"Atacar"| L2["Tenente 2 (Traidor)"]
+    L2 -.->|"Retirar"| L1
 end
 ```
 
@@ -85,10 +85,10 @@ Neste caso, o Tenente 1, que é leal, recebe a mensagem "Atacar" do comandante e
 
 ```mermaid
 graph TD
-subgraph "ケース2: 司令官が裏切り"
-    C["司令官 (裏切り)"] -->|"攻撃"| L1["副官1 (忠実)"]
-    C -->|"退却"| L2["副官2 (忠実)"]
-    L2 -.->|"退却"| L1
+subgraph "Caso 2: Comandante é o traidor"
+    C["Comandante (Traidor)"] -->|"Atacar"| L1["Tenente 1 (Leal)"]
+    C -->|"Retirar"| L2["Tenente 2 (Leal)"]
+    L2 -.->|"Retirar"| L1
 end
 ```
 
@@ -130,10 +130,10 @@ No PBFT, o processo de formação de consenso é dividido essencialmente em trê
 
 ```mermaid
 graph TD
-subgraph "PBFTの主要フェーズ"
-    C["クライアント"] -->|"リクエスト送信"| P["プライマリ"]
-    P -->|"Pre-prepare"| B1["バックアップ1"]
-    P -->|"Pre-prepare"| B2["バックアップ2"]
+subgraph "Fases Principais do PBFT"
+    C["Cliente"] -->|"Enviar Pedido"| P["Primário"]
+    P -->|"Pre-prepare"| B1["Backup 1"]
+    P -->|"Pre-prepare"| B2["Backup 2"]
     B1 -->|"Prepare"| B2
     B2 -->|"Prepare"| B1
     B1 -->|"Prepare"| P

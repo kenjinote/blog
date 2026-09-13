@@ -32,10 +32,10 @@ Salah satu pola arsitektur yang representatif dalam penggantian sistem adalah **
 
 ```mermaid
 graph LR
-    subgraph "ストラングラーフィグ・パターンによる移行"
-        A["旧システム（モノリス）"] -->|"機能Aを移行"| B["新旧混在システム"]
-        B -->|"機能B・Cを移行"| C["新旧混在システム（新メイン）"]
-        C -->|"完全移行"| D["新システム（マイクロサービス）"]
+    subgraph "Migrasi dengan Pola Strangler Fig"
+        A["Sistem Lama (Monolitik)"] -->|"Migrasi Fitur A"| B["Sistem Campuran Lama dan Baru"]
+        B -->|"Migrasi Fitur B dan C"| C["Sistem Campuran Lama dan Baru（新メイン）"]
+        C -->|"Migrasi Penuh"| D["Sistem Baru (Microservices)"]
     end
 ```
 
@@ -77,7 +77,7 @@ classDiagram
         +int weight
         +String position
     }
-    Ship "1" *-- "many" Plank : "構成する"
+    Ship "1" *-- "many" Plank : "Terdiri dari"
 ```
 
 Meskipun bagian kapal (Value Object) lapuk dan diganti dengan yang baru, `shipId` dari kapal (Entity) tidak akan berubah. Oleh karena itu, di dalam sistem, ia diperlakukan **sebagai kapal yang sama persis**.
@@ -95,10 +95,10 @@ Di sini juga, "identitas" menjadi kuncinya. Meskipun struktur internal (bagian-b
 
 ```mermaid
 graph TD
-    subgraph "リファクタリングのプロセス"
-        A["スパゲッティコード"] -->|"テストを記述"| B["テストで保護されたコード"]
-        B -->|"内部構造を変更"| C["クリーンなコード"]
-        A -.->|"振る舞いは同じ"| C
+    subgraph "Proses Refactoring"
+        A["Kode Spageti"] -->|"Tulis Pengujian"| B["Kode yang Dilindungi Pengujian"]
+        B -->|"Ubah Struktur Internal"| C["Kode Bersih"]
+        A -.->|"Perilaku Sama"| C
     end
 ```
 
@@ -138,9 +138,9 @@ Contoh terkenal yang bisa disebutkan adalah hubungan antara MySQL dan MariaDB, a
 
 ```mermaid
 graph TD
-    subgraph "ソフトウェアにおけるホッブズの拡張"
-        A["オリジナルプロジェクト v1.0"] -->|"リファクタリング・新機能"| B["オリジナルプロジェクト v2.0 (新部品)"]
-        A -->|"古いコードをフォーク"| C["派生プロジェクト (旧部品)"]
+    subgraph "Ekstensi Hobbes dalam Perangkat Lunak"
+        A["Proyek Asli v1.0"] -->|"Refactoring / Fitur Baru"| B["Proyek Asli v2.0 (Bagian Baru)"]
+        A -->|"Fork Kode Lama"| C["Proyek Turunan (Bagian Lama)"]
     end
 ```
 

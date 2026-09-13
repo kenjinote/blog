@@ -69,32 +69,32 @@ The following Mermaid diagram shows how infinite data is mapped to a finite hash
 
 ```mermaid
 graph TD
-    subgraph "無限の入力空間（鳩）"
-        A("データ A")
-        B("データ B")
-        C("データ C")
-        D("データ D")
+    subgraph "Infinite Input Space (Pigeons)"
+        A("Data A")
+        B("Data B")
+        C("Data C")
+        D("Data D")
         E("...")
     end
 
-    subgraph "ハッシュ関数"
+    subgraph "Hash Function"
         H{"Hash(x)"}
     end
 
-    subgraph "有限のハッシュ空間（巣）"
+    subgraph "Finite Hash Space (Holes)"
         V1("Hash(A)")
         V2("Hash(B) = Hash(C)")
         V3("Hash(D)")
     end
 
-    A -->|"ハッシュ化"| H
-    B -->|"ハッシュ化"| H
-    C -->|"ハッシュ化"| H
-    D -->|"ハッシュ化"| H
+    A -->|"Hashing"| H
+    B -->|"Hashing"| H
+    C -->|"Hashing"| H
+    D -->|"Hashing"| H
 
-    H -->|"出力"| V1
-    H -->|"出力（衝突）"| V2
-    H -->|"出力"| V3
+    H -->|"Output"| V1
+    H -->|"Output (Collision)"| V2
+    H -->|"Output"| V3
 
     style V2 fill:#ffcccc,stroke:#ff0000,stroke-width:3px;
 ```
@@ -148,16 +148,16 @@ They published **two PDF files whose SHA-1 hash values match perfectly** for the
 
 ```mermaid
 graph LR
-    subgraph "SHAttered攻撃（2017年）"
-        F1("正常なPDF契約書")
-        F2("悪意あるPDF契約書")
-        H{"SHA-1 ハッシュ関数"}
-        V("同一のハッシュ値\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+    subgraph "SHAttered Attack (2017)"
+        F1("Normal PDF Contract")
+        F2("Malicious PDF Contract")
+        H{"SHA-1 Hash Function"}
+        V("Same Hash Value\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
     end
 
-    F1 -->|"入力"| H
-    F2 -->|"入力"| H
-    H -->|"出力"| V
+    F1 -->|"Input"| H
+    F2 -->|"Input"| H
+    H -->|"Output"| V
 ```
 
 In this way, cryptographic algorithms are destined to gradually weaken due to mathematical breakthroughs and the evolution of computers.
@@ -202,18 +202,18 @@ To prevent this, a random string called a **"Salt"** is added for each password 
 
 ```mermaid
 graph LR
-    subgraph "最新のパスワード保護メカニズム"
-        P("ユーザーのパスワード")
-        S("ソルト (Salt)")
-        H1{"ハッシュ関数"}
-        H2{"ハッシュ関数 (数万回ループ)"}
-        R("保存用ハッシュ値")
+    subgraph "Modern Password Protection Mechanism"
+        P("User Password")
+        S("Salt")
+        H1{"Hash Function"}
+        H2{"Hash Function (Tens of Thousands of Loops)"}
+        R("Hash Value for Storage")
     end
 
-    P -->|"入力"| H1
-    S -->|"結合"| H1
-    H1 -->|"ストレッチング開始"| H2
-    H2 -->|"最終出力"| R
+    P -->|"Input"| H1
+    S -->|"Combine"| H1
+    H1 -->|"Start Stretching"| H2
+    H2 -->|"Final Output"| R
 ```
 
 This intentionally drives up the cost that an attacker must calculate, making brute-force attacks unrealistic.

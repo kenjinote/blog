@@ -150,15 +150,15 @@ The following Mermaid diagram visually represents the difference in the flow of 
 
 ```mermaid
 graph TD
-    subgraph "モンテカルロ法"
-        M_Start["開始"] --> M_Rand["乱数生成・計算"]
-        M_Rand --> M_End["終了（近似解を出力）"]
+    subgraph "Monte Carlo Method"
+        M_Start["Start"] --> M_Rand["Random Number Generation & Calculation"]
+        M_Rand --> M_End["End (Output Approximate Solution)"]
     end
 
-    subgraph "ラスベガス法"
-        L_Start["開始"] --> L_Rand["乱数生成・計算"]
-        L_Rand --> L_Check{"正しい解か？"}
-        L_Check -->|"Yes"| L_End["終了（正確な解を出力）"]
+    subgraph "Las Vegas Method"
+        L_Start["Start"] --> L_Rand["Random Number Generation & Calculation"]
+        L_Rand --> L_Check{"Is the Solution Correct?"}
+        L_Check -->|"Yes"| L_End["End (Output Exact Solution)"]
         L_Check -->|"No"| L_Rand
     end
 ```

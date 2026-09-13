@@ -32,10 +32,10 @@ A representative architecture pattern for system replacement is the **Strangler 
 
 ```mermaid
 graph LR
-    subgraph "ストラングラーフィグ・パターンによる移行"
-        A["旧システム（モノリス）"] -->|"機能Aを移行"| B["新旧混在システム"]
-        B -->|"機能B・Cを移行"| C["新旧混在システム（新メイン）"]
-        C -->|"完全移行"| D["新システム（マイクロサービス）"]
+    subgraph "Migration via Strangler Fig Pattern"
+        A["Old System (Monolith)"] -->|"Migrate Feature A"| B["Mixed Old and New System"]
+        B -->|"Migrate Features B & C"| C["Mixed Old and New System (New Main)"]
+        C -->|"Complete Migration"| D["New System (Microservices)"]
     end
 ```
 
@@ -77,7 +77,7 @@ classDiagram
         +int weight
         +String position
     }
-    Ship "1" *-- "many" Plank : "構成する"
+    Ship "1" *-- "many" Plank : "Composes"
 ```
 
 Even if the ship's parts (value objects) decay and are replaced with new ones, the ship's (entity's) `shipId` does not change. Therefore, it is treated as **completely the same ship** within the system.
@@ -95,10 +95,10 @@ Martin Fowler defines refactoring as follows:
 
 ```mermaid
 graph TD
-    subgraph "リファクタリングのプロセス"
-        A["スパゲッティコード"] -->|"テストを記述"| B["テストで保護されたコード"]
-        B -->|"内部構造を変更"| C["クリーンなコード"]
-        A -.->|"振る舞いは同じ"| C
+    subgraph "Refactoring Process"
+        A["Spaghetti Code"] -->|"Write Tests"| B["Code Protected by Tests"]
+        B -->|"Change Internal Structure"| C["Clean Code"]
+        A -.->|"Same Behavior"| C
     end
 ```
 
@@ -138,9 +138,9 @@ Famous examples include the relationship between MySQL and MariaDB, or Node.js a
 
 ```mermaid
 graph TD
-    subgraph "ソフトウェアにおけるホッブズの拡張"
-        A["オリジナルプロジェクト v1.0"] -->|"リファクタリング・新機能"| B["オリジナルプロジェクト v2.0 (新部品)"]
-        A -->|"古いコードをフォーク"| C["派生プロジェクト (旧部品)"]
+    subgraph "Hobbes's Extension in Software"
+        A["Original Project v1.0"] -->|"Refactoring / New Features"| B["Original Project v2.0 (New Parts)"]
+        A -->|"Fork Old Code"| C["Derived Project (Old Parts)"]
     end
 ```
 
