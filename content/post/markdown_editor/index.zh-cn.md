@@ -70,7 +70,7 @@ VS Code 是目前最普及的编辑器之一，在 Markdown 写作方面也拥�
   "Hugo Figure Shortcode": {
     "prefix": "hfig",
     "body": [
-      "{{< figure src=\"${1:image.jpg}\" title=\"${2:图片标题}\" >}}"
+      "{{</* figure src=\"${1:image.jpg}\" title=\"${2:图片标题}\" */>}}"
     ],
     "description": "Hugo 的 Figure 短代码"
   },
@@ -269,5 +269,6 @@ flowchart TD
 5. **整合 LLM**：直接在编辑器中让 AI 输出 Markdown 的结构和图表代码。
 
 将这些设置引入到自己的环境中，就能消除写作的“麻烦感”，极大提高技术输出的数量与质量。不妨从注册一个小小的代码片段开始尝试一下吧。
+
 
 

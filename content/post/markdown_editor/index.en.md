@@ -70,7 +70,7 @@ Select `Preferences: Configure User Snippets` from the Command Palette, and add 
   "Hugo Figure Shortcode": {
     "prefix": "hfig",
     "body": [
-      "{{< figure src=\"${1:image.jpg}\" title=\"${2:Image Title}\" >}}"
+      "{{</* figure src=\"${1:image.jpg}\" title=\"${2:Image Title}\" */>}}"
     ],
     "description": "Figure shortcode for Hugo"
   },
@@ -269,5 +269,6 @@ We have explained the editor settings to double your writing speed when writing 
 5. **LLM Integration**: Have AI directly output Markdown structures and chart code within the editor.
 
 By adopting these settings in your own environment, the "hassle" of writing will disappear, and the quantity and quality of your technical output should dramatically improve. Why not start by registering just a single small snippet?
+
 
 

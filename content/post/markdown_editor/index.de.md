@@ -70,7 +70,7 @@ Wählen Sie in der Befehlspalette `Preferences: Configure User Snippets` und fü
   "Hugo Figure Shortcode": {
     "prefix": "hfig",
     "body": [
-      "{{< figure src=\"${1:image.jpg}\" title=\"${2:Bildtitel}\" >}}"
+      "{{</* figure src=\"${1:image.jpg}\" title=\"${2:Bildtitel}\" */>}}"
     ],
     "description": "Figure-Shortcode für Hugo"
   },
@@ -269,5 +269,6 @@ Wir haben die Editor-Einstellungen erläutert, die die Schreibgeschwindigkeit be
 5. **Integration von LLMs**: Die KI direkt im Editor Markdown-Strukturen und Diagramm-Codes ausgeben lassen.
 
 Indem Sie diese Einstellungen in Ihre eigene Umgebung übernehmen, verschwindet die "Lästigkeit" des Schreibens, und die Quantität und Qualität Ihres technischen Outputs wird sich drastisch verbessern. Warum fangen Sie nicht gleich mit der Registrierung eines einzigen kleinen Snippets an?
+
 
 

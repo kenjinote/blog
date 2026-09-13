@@ -70,7 +70,7 @@ Pilih `Preferences: Configure User Snippets` dari Command Palette dan tambahkan 
   "Hugo Figure Shortcode": {
     "prefix": "hfig",
     "body": [
-      "{{< figure src=\"${1:image.jpg}\" title=\"${2:Judul Gambar}\" >}}"
+      "{{</* figure src=\"${1:image.jpg}\" title=\"${2:Judul Gambar}\" */>}}"
     ],
     "description": "Shortcode Figure Hugo"
   },
@@ -269,5 +269,6 @@ Kami telah menjelaskan pengaturan editor yang dapat menggandakan kecepatan penul
 5. **Integrasi LLM**: Membuat AI secara langsung menghasilkan struktur Markdown dan kode diagram di dalam editor.
 
 Dengan memasukkan pengaturan ini ke dalam lingkungan Anda sendiri, "kerepotan" menulis akan hilang, dan kuantitas serta kualitas output teknis akan meningkat secara dramatis. Bagaimana kalau memulainya bahkan dari satu pendaftaran snippet kecil?
+
 
 

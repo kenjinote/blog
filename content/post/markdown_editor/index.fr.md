@@ -70,7 +70,7 @@ Sélectionnez `Preferences: Configure User Snippets` dans la palette de commande
   "Hugo Figure Shortcode": {
     "prefix": "hfig",
     "body": [
-      "{{< figure src=\"${1:image.jpg}\" title=\"${2:Titre de l'image}\" >}}"
+      "{{</* figure src=\"${1:image.jpg}\" title=\"${2:Titre de l'image}\" */>}}"
     ],
     "description": "Shortcode Figure de Hugo"
   },
@@ -269,5 +269,6 @@ Nous avons expliqué les paramètres d'éditeur qui permettent de doubler la vit
 5. **Intégration des LLM** : Laisser l'IA générer la structure Markdown et le code des diagrammes directement dans l'éditeur.
 
 En intégrant ces paramètres à votre propre environnement, la "corvée" de l'écriture disparaîtra, et le volume ainsi que la qualité de votre production technique s'amélioreront de manière spectaculaire. Pourquoi ne pas commencer par enregistrer un simple petit snippet dès aujourd'hui ?
+
 
 

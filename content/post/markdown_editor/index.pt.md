@@ -70,7 +70,7 @@ Selecione `Preferences: Configure User Snippets` na Command Palette e adicione a
   "Hugo Figure Shortcode": {
     "prefix": "hfig",
     "body": [
-      "{{< figure src=\"${1:image.jpg}\" title=\"${2:Título da imagem}\" >}}"
+      "{{</* figure src=\"${1:image.jpg}\" title=\"${2:Título da imagem}\" */>}}"
     ],
     "description": "Shortcode Figure do Hugo"
   },
@@ -269,5 +269,6 @@ Explicamos sobre as configurações de editor que dobram a velocidade de escrita
 5. **Integração de LLMs**: Fazer a IA gerar a estrutura do Markdown e o código de diagramas diretamente dentro do editor.
 
 Ao incorporar essas configurações no seu próprio ambiente, o "tédio" de escrever deve desaparecer, e a quantidade e qualidade da sua produção técnica melhorarão drasticamente. Que tal começar registrando apenas um pequeno snippet?
+
 
 

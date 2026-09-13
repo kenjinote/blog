@@ -70,7 +70,7 @@ Selecciona `Preferences: Configure User Snippets` desde la paleta de comandos y 
   "Hugo Figure Shortcode": {
     "prefix": "hfig",
     "body": [
-      "{{< figure src=\"${1:image.jpg}\" title=\"${2:Título de la imagen}\" >}}"
+      "{{</* figure src=\"${1:image.jpg}\" title=\"${2:Título de la imagen}\" */>}}"
     ],
     "description": "Shortcode de Figure de Hugo"
   },
@@ -269,5 +269,6 @@ En este artículo explicamos configuraciones del editor que duplicarán tu veloc
 5. **Integración de LLM**: Hacer que la IA genere directamente la estructura del Markdown y el código de diagramas o tablas dentro del editor.
 
 Al incorporar estas configuraciones a tu propio entorno, desaparecerá lo "tedioso" de la escritura y, con seguridad, la cantidad y calidad de tus publicaciones técnicas mejorarán drásticamente. ¿Por qué no empezar hoy mismo registrando al menos un pequeño fragmento (snippet)?
+
 
 
