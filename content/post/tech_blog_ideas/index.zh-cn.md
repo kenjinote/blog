@@ -1,7 +1,7 @@
 ---
 title: '防止技术博客灵感枯竭！高效的输入方法与创意产生'
 slug: "tech-blog-idea-generation-and-input-strategy"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -382,4 +382,5 @@ stateDiagram-v2
 通过构建结合了上述元素的综合管道，不仅博客的灵感不会枯竭，而且会形成越写越能自我繁衍新灵感的状态。
 
 没必要一开始就完美地构建所有内容。不妨先从编写一个调用 Hacker News API 的简单脚本开始，养成用 Markdown 记录感兴趣文章的习惯。希望你的技术博客能够成为下一代卓越创意的信息源泉。
+
 

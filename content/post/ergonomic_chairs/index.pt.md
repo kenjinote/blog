@@ -1,7 +1,7 @@
 ---
 title: 'Prevenindo a dor nas costas! Como escolher uma cadeira ergonômica para trabalho remoto'
 slug: "ergonomic-chair-guide-for-remote-engineers"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -148,4 +148,5 @@ pie title "Top 5 Más Posturas dos Trabalhadores Remotos"
 Uma cadeira ergonômica não é, de forma alguma, uma compra barata. Modelos que custam entre 100.000 e mais de 200.000 ienes não são incomuns. No entanto, considerando que você passa 8 horas por dia e cerca de 2000 horas por ano sentado nela, pode ser dito que é o "investimento mais rentável (dispositivo de alto ROI)" para evitar a perda de produtividade e as despesas médicas causadas pelas dores nas costas.
 
 Revise seu estilo de trabalho sob uma perspectiva biomecânica e selecione cuidadosamente uma "cadeira fisicamente correta" que apoie sua estrutura óssea e músculos adequadamente. Esse é o maior segredo para continuar na engenharia confortavelmente por um longo tempo.
+
 

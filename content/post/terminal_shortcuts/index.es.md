@@ -1,7 +1,7 @@
 ---
 title: 'Atajos de eficiencia de la terminal (PowerShell/Bash) para desarrolladores'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,4 +346,5 @@ En este artículo, hemos explicado con gran detalle la "optimización de las ope
 Al principio, es posible que sientas estrés al presionar conscientemente `Ctrl+A` o `Ctrl+E`. Sin embargo, si los utilizas conscientemente durante algunas semanas, estos atajos se establecerán de manera segura en tu **memoria muscular**. Una vez que se asienten, podrás controlar la terminal libre e inconscientemente, y se convertirá en un activo que mejorará drásticamente tu experiencia como desarrollador (Developer Experience, DX) por el resto de tu vida.
 
 Por favor, empieza a construir tu propio entorno de terminal definitivo hoy mismo, abriendo `$PROFILE` o `~/.bashrc` y adaptándolo perfectamente a tus manos.
+
 

@@ -1,7 +1,7 @@
 ---
 title: 'Keseharian Insinyur yang Mengelola Kondisi Fisik dengan Smart Ring dll. (Health Hack)'
 slug: "engineer-health-hacks-wearables"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -368,4 +368,5 @@ Mari manfaatkan ilmu data dan API secara maksimal untuk merekayasa kondisi keseh
 
 ---
 *Sangkalan (Disclaimer): Artikel ini merangkum eksperimen pribadi dan pendekatan ilmu data dari penulis, dan tidak ditujukan untuk memberikan nasihat medis. Jika Anda mengalami kondisi kesehatan yang buruk atau gangguan tidur yang berkelanjutan, harap konsultasikan dengan institusi medis profesional.*
+
 

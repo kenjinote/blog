@@ -1,7 +1,7 @@
 ---
 title: 'For Long Coding Sessions! 5 Recommended Mechanical Keyboards for Engineers'
 slug: "engineer-mechanical-keyboard-recommendations"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -201,4 +201,5 @@ Choosing a keyboard is a process of "optimizing your own interface" throughout y
 The 5 keyboards introduced this time (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) are all masterpieces aiming for the "best input experience" with different approaches. By all means, please find your best partner according to your typing style and the physical troubles you have.
 
 An investment in a keyboard will surely bring returns to you as "millions of lines of bug-free code".
+
 

@@ -1,7 +1,7 @@
 ---
 title: 'Notion을 활용한 개인 개발 및 블로그 집필 태스크 관리술'
 slug: "notion-task-management-blog-dev"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -273,4 +273,5 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
 Notion을 활용한 태스크 관리는 단순한 To-Do 리스트의 영역을 훨씬 넘어서고 있습니다. PARA 메서드에 의한 정보 정리, Zettelkasten에 의한 지식의 네트워크화, 그리고 Notion API를 통한 엔지니어링을 결합함으로써 개인 개발과 블로그 집필을 강력하게 부스트하는 '제2의 뇌(Second Brain)'를 구축할 수 있습니다.
 
 초기 설정에는 다소 시간이 걸리지만, 한 번 시스템이 돌아가기 시작하면 태스크 관리에 드는 인지 부하는 극적으로 낮아지고 정말로 중요한 '코드를 작성하는 것'과 '글을 쓰는 것'에 온전히 집중할 수 있게 됩니다. 부디 본 기사를 참고하여 여러분만의 최강의 Notion 워크스페이스를 만들어 보시기 바랍니다.
+
 

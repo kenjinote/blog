@@ -1,7 +1,7 @@
 ---
 title: '部落格深色模式支援的 CSS 設計重點'
 slug: "dark-mode-css-design-patterns"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -358,4 +358,5 @@ Logo 圖片或是說明的圖解（背景固定為白色的 JPEG 等），光靠
 4.  **媒體與資源的最佳化**：充分運用 `filter: brightness()`、`currentColor` 以及 `<picture>` 標籤，讓文字以外的元素也能與深色主題協調。
 
 超越單純的「顏色反轉」，這些細膩的考量正是現代部落格能長久受使用者喜愛、提供不易造成眼睛疲勞的優良閱讀體驗（Reading Experience）的必備條件。即將導入深色模式的開發者們，請務必參考本文的設計模式。
+
 

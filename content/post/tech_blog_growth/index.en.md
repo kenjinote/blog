@@ -1,7 +1,7 @@
 ---
 title: 'What Engineers Should Do to Grow Monthly Traffic on a Tech Blog'
 slug: "tech-blog-growth-strategies-for-engineers"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -278,4 +278,5 @@ To dramatically increase monthly traffic on a tech blog, the engineering approac
 5. Complete automation of distribution through CI/CD and Zapier integration
 
 If you can assemble these as a system, your tech blog will become the strongest asset to powerfully boost your own career. Engineers struggling with stagnant traffic should definitely start "blog growth hacking" today. The programming skills and architecture design abilities cultivated in development work will undoubtedly be your greatest weapons in blog management as well.
+
 

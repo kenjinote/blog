@@ -1,7 +1,7 @@
 ---
 title: 'Kann Technologie die gesellschaftliche Spaltung überwinden? (Ein Vorschlag eines Ingenieurs)'
 slug: "technology-and-social-divide"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -194,4 +194,5 @@ Technologie ist keine Magie. Sie ist ein Spiegel der Menschheit. Wenn die Gesell
 Auch ab dem 101. Artikel möchte ich als einzelner Ingenieur weiterhin an der Schnittstelle von Code und Gesellschaft stehen und meine Gedanken vertiefen. Vielen Dank, dass Sie diesen langen Text bis zum Ende gelesen haben. In der Hoffnung, dass das Netzwerk der Zukunft keine Mauer sein wird, die uns spaltet, sondern eine Brücke, um einander zu verstehen.
 
 (Ende)
+
 

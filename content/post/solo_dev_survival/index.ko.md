@@ -1,7 +1,7 @@
 ---
 title: '개인 개발자가 대기업 및 세계와 맞서 싸우기 위한 생존 전략'
 slug: "solo-developer-survival-strategy"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -302,4 +302,5 @@ npx create-next-app@latest my-micro-saas
 ```
 
 싸움은 이미 시작되었습니다.
+
 

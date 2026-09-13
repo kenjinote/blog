@@ -1,7 +1,7 @@
 ---
 title: 'Blog Técnico em Markdown: Configurações de Editor para Dobrar a Velocidade de Escrita'
 slug: "markdown-editor-setup-for-tech-blogs"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -269,4 +269,5 @@ Explicamos sobre as configurações de editor que dobram a velocidade de escrita
 5. **Integração de LLMs**: Fazer a IA gerar a estrutura do Markdown e o código de diagramas diretamente dentro do editor.
 
 Ao incorporar essas configurações no seu próprio ambiente, o "tédio" de escrever deve desaparecer, e a quantidade e qualidade da sua produção técnica melhorarão drasticamente. Que tal começar registrando apenas um pequeno snippet?
+
 

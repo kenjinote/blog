@@ -1,7 +1,7 @@
 ---
 title: "The Daily Life of an Engineer Managing Health with Smart Rings (Health Hacks)"
 slug: "engineer-health-hacks-wearables"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -368,4 +368,5 @@ Let's engineer a health condition that can perform at its best using data scienc
 
 ---
 *Disclaimer: This article summarizes the author's personal experiments and data science approaches, and does not provide medical advice. If you have continuous poor health or sleep disorders, please consult a specialized medical institution.*
+
 

@@ -1,7 +1,7 @@
 ---
 title: 'Configurações de Gadgets e Monitores para Alívio da Fadiga Ocular em Programadores'
 slug: "programmer-eye-strain-relief"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -280,4 +280,5 @@ Nossa carreira como engenheiros de software dura décadas. O que sustenta essa c
 5. **Usar um braço de monitor para criar o ângulo visual ideal, baseado em $\tan \theta = h/d$, e sistematizar a "Regra 20-20-20".**
 
 Essas medidas podem vir com algum gasto e esforço temporários. Contudo, elas maximizam o período de vida de saúde ocular e a produtividade e qualidade de vida (QOL) por toda a vida, podendo ser chamadas de o "investimento tecnológico" mais custo-efetivo. Reveja seu ambiente de desenvolvimento agora mesmo e tente implementar um pouco de consideração para os seus olhos.
+
 

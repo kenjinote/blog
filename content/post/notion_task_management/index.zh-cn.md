@@ -1,7 +1,7 @@
 ---
 title: '使用Notion进行个人开发与博客写作的任务管理技巧'
 slug: "notion-task-management-blog-dev"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -273,4 +273,5 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
 使用Notion进行任务管理，已经远远超越了单纯的To-Do列表的范畴。通过将基于PARA方法的信息整理、基于Zettelkasten的知识网络化、以及基于Notion API的工程自动化结合起来，可以构建一个强力加速个人开发和博客写作的“第二大脑（Second Brain）”。
 
 虽然初始设置需要花费一些时间，但系统一旦开始运转，任务管理的认知负荷就会大幅降低，从而让你能够将全部精力集中在真正重要的“写代码”和“写文章”上。请务必参考本文，打造出属于你自己的最强Notion工作空间。
+
 

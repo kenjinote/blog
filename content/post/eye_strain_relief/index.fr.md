@@ -1,7 +1,7 @@
 ---
 title: 'Gadgets et paramètres de moniteur pour réduire la fatigue oculaire des programmeurs'
 slug: "programmer-eye-strain-relief"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -280,4 +280,5 @@ Notre carrière d'ingénieur logiciel dure plusieurs décennies. Ce qui soutient
 5. **Utiliser un bras de moniteur pour créer l'angle de vue optimal basé sur $\tan \theta = h/d$, et systématiser la « règle des 20-20-20 »**
 
 Bien que ces mesures puissent impliquer des dépenses et des efforts temporaires, on peut dire qu'elles constituent l'« investissement technologique » le plus rentable pour prolonger la durée de vie saine de vos yeux et maximiser votre productivité ainsi que votre qualité de vie (QOL) tout au long de votre vie. Révisez dès maintenant votre environnement de développement et implémentez un peu de soin pour vos yeux.
+
 

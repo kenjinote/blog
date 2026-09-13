@@ -1,7 +1,7 @@
 ---
 title: 'Terminal-Effizienz-Shortcuts für Entwickler (PowerShell/Bash)'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,4 +346,5 @@ In diesem Artikel haben wir die "Effizienz der Terminal-Bedienung", die die Prod
 Anfangs kann es stressig sein, bewusst `Ctrl+A` oder `Ctrl+E` zu drücken. Wenn Sie diese Shortcuts jedoch einige Wochen lang bewusst verwenden, werden sie sich sicher in Ihrem **Muskelgedächtnis** festsetzen. Sobald sie sich gefestigt haben, werden Sie das Terminal unbewusst und frei bedienen können, was zu einem lebenslangen Gut wird, das Ihre Developer Experience (DX) drastisch verbessert.
 
 Öffnen Sie noch heute `$PROFILE` oder `~/.bashrc` und beginnen Sie mit dem Aufbau der ultimativen Terminal-Umgebung, die am besten in Ihre eigenen Hände passt.
+
 

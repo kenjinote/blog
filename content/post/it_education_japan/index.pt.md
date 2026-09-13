@@ -1,7 +1,7 @@
 ---
 title: 'O Estado Atual e os Desafios da Educação em TI no Japão: Consequências da Programação Obrigatória'
 slug: "japan-it-education-aftermath"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -256,4 +256,5 @@ Sob "consequências e futuro" gerada da concepção de pautar a inclusão de for
 ---
 
 *Neste artigo expusemos questões abordando o escopo referente as dimensões de Teorias em Complexidades sob aos limites nos fatores infraestruturais oriundos do formato no formato imposto aos programas "GIGA School". Focados, numa ótica continuada nas vindouras compilações programadas que darão enfoques e explicações profundas nos focos a ciência matemática (englobadas as construções em esquemas em linguagens algoritmos ao cenário das distribuições em arquitetura sob detalhamento nas formas e maneiras sobre controles a níveis inferiores ligados ao memórias do núcleo) em novos tópicos a continuarem e sequenciais neste canal.*
+
 

@@ -1,7 +1,7 @@
 ---
 title: '工程師為了增加技術部落格月流量應該做的事'
 slug: "tech-blog-growth-strategies-for-engineers"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -278,4 +278,5 @@ flowchart TD
 5. 透過 CI/CD 與 Zapier 串接，實現發布的完全自動化
 
 如果能將這些組合成一個系統，技術部落格將會成為強力推動你個人職涯的最強資產（Asset）。如果工程師正為了流量停滯而煩惱，請務必從今天開始嘗試「部落格的成長駭客」。在開發業務中培養出的程式設計技能與架構設計能力，在經營部落格時也一定會成為最強大的武器。
+
 

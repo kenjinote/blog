@@ -1,7 +1,7 @@
 ---
 title: 'El día a día de un ingeniero que gestiona su salud con anillos inteligentes (Hackeos de Salud)'
 slug: "engineer-health-hacks-wearables"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -368,4 +368,5 @@ Aprovechando la ciencia de datos y las API, diseñemos las condiciones de salud 
 
 ---
 *Aviso legal: Este artículo resume los experimentos personales y el enfoque de ciencia de datos del autor, y no tiene como objetivo proporcionar asesoramiento médico. Si experimenta problemas de salud persistentes o trastornos del sueño, consulte a una institución médica especializada.*
+
 

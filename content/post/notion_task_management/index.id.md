@@ -1,7 +1,7 @@
 ---
 title: 'Manajemen Tugas untuk Pengembangan Personal dan Penulisan Blog Menggunakan Notion'
 slug: "notion-task-management-blog-dev"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -273,4 +273,5 @@ Tidak peduli seberapa canggih sistem atau alat yang Anda bangun, jika orang yang
 Manajemen tugas menggunakan Notion jauh melampaui daftar To-Do belaka. Dengan menggabungkan penataan informasi melalui metode PARA, pembuatan jaringan pengetahuan melalui Zettelkasten, dan rekayasa melalui API Notion, Anda dapat membangun "Otak Kedua (Second Brain)" yang sangat mendorong pengembangan personal dan penulisan blog Anda.
 
 Meskipun pengaturan awal membutuhkan beberapa waktu, setelah sistem mulai berjalan, beban kognitif yang diperlukan untuk manajemen tugas akan menurun drastis, dan Anda dapat sepenuhnya fokus pada hal yang benar-benar penting: "menulis kode" dan "menulis teks". Pastikan untuk menjadikan artikel ini sebagai referensi, dan cobalah untuk membangun ruang kerja Notion terkuat versi Anda sendiri.
+
 

@@ -1,7 +1,7 @@
 ---
 title: "Estratégia de Promoção de Aplicativos Indie: Como Aproveitar seu Blog de Tecnologia"
 slug: "indie-app-promotion-blog-strategy"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -320,4 +320,5 @@ Neste artigo, explicamos estratégias técnicas para elevar um blog de tecnologi
 4. **Análises Precisas**: Combinar o GA4 e o PostHog para rastrear "conversões" e "retenção" em vez de apenas visualizações de página (PV), e manter uma relação LTV/CAC saudável.
 
 Construir um ótimo produto é apenas metade do caminho para o sucesso. A outra metade é "o marketing como engenharia" — para entregá-lo nas mãos daqueles que precisam dele. Não deixe que o seu blog de tecnologia acabe sendo apenas um espaço para produzir conteúdo; cultive-o para ser o maior ativo de suporte ao crescimento contínuo do seu aplicativo.
+
 

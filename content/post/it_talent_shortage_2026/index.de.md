@@ -1,7 +1,7 @@
 ---
 title: 'Das 2026-Problem: Gibt es wirklich einen Mangel an IT-Fachkräften? Die Realität vor Ort'
 slug: "it-talent-shortage-2026"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -182,4 +182,5 @@ KI nimmt uns nicht unsere Jobs weg, sie ist lediglich ein Werkzeug, das es uns e
 
 Jetzt ist es an der Zeit, Ihren Karriereweg zu überdenken und den Kurs in Richtung des nächsten Paradigmas zu ändern.
 Sind Sie bereit, sich selbst zu "modernisieren"?
+
 

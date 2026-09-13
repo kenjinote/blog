@@ -1,7 +1,7 @@
 ---
 title: 'Aufgabenverwaltung für persönliche Projekte und Bloggen mit Notion'
 slug: "notion-task-management-blog-dev"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -273,4 +273,5 @@ Egal wie fortschrittlich ein System oder Tool aufgebaut ist, wenn die Personen, 
 Die Aufgabenverwaltung mit Notion geht weit über eine einfache To-Do-Liste hinaus. Durch die Kombination von Informationsorganisation durch die PARA-Methode, Wissensvernetzung durch den Zettelkasten und Engineering mit der Notion API können Sie ein „Zweites Gehirn (Second Brain)“ aufbauen, das die persönliche Entwicklung und das Schreiben von Blogs stark fördert.
 
 Die Ersteinrichtung dauert einige Zeit, aber sobald das System läuft, sinkt die kognitive Belastung der Aufgabenverwaltung drastisch, und Sie können sich voll und ganz auf das konzentrieren, was wirklich wichtig ist: „Code schreiben“ und „Texte verfassen“. Bitte nutzen Sie diesen Artikel als Referenz, um Ihren eigenen ultimativen Notion-Workspace zu erstellen.
+
 

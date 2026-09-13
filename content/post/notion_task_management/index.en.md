@@ -1,7 +1,7 @@
 ---
 title: "Task Management Techniques for Personal Development and Blogging using Notion"
 slug: "notion-task-management-blog-dev"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -273,4 +273,5 @@ No matter how sophisticated a system or tool you build, it defeats the purpose i
 Task management using Notion goes far beyond a mere To-Do list. By combining information organization through the PARA Method, knowledge networking through Zettelkasten, and engineering through the Notion API, you can build a "Second Brain" that powerfully boosts personal development and blogging.
 
 While the initial setup takes some time, once the system starts running, the cognitive load required for task management will drop dramatically, allowing you to fully focus on what is truly important: "writing code" and "writing text." We hope you refer to this article to build your own ultimate Notion workspace.
+
 

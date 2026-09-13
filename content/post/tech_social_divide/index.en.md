@@ -1,7 +1,7 @@
 ---
 title: 'Can Technology Bridge the Social Divide? (A Proposal from an Engineer)'
 slug: "technology-and-social-divide"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -194,4 +194,5 @@ Technology is not magic. It is a mirror of humanity. If society is divided, it i
 From the 101st post onward, as an engineer, I would like to continue standing at the intersection of code and society, deepening my thoughts. Thank you very much for reading this long piece to the end. I hope that the networks of the future will not be walls that divide us, but bridges for us to understand each other.
 
 (End)
+
 

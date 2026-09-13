@@ -1,7 +1,7 @@
 ---
 title: 'Der Einfluss von Social-Media-Algorithmen auf unser Denken und die Technologieauswahl'
 slug: "sns-algorithm-tech-selection"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -176,4 +176,5 @@ Empfehlungsalgorithmen in sozialen Netzwerken sind leistungsstarke Werkzeuge, di
 Wir müssen uns die Kompetenz aneignen, die Informationen, die in unsere Timeline fließen, nicht als "Fakten" oder "absolute Trends" zu akzeptieren, sondern sie lediglich als ein "Signal" zu behandeln.
 
 Treten Sie aus der Echokammer heraus, lesen Sie den Quellcode selbst, verfolgen Sie RFC-Diskussionen, entschlüsseln Sie mathematische Formeln in wissenschaftlichen Arbeiten und befassen Sie sich mit den wahren Herausforderungen Ihrer eigenen Geschäftsdomäne. Nur so lässt sich echtes Software-Engineering praktizieren, ohne von der Welle der Algorithmen verschluckt zu werden.
+
 

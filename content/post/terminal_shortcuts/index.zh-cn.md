@@ -1,7 +1,7 @@
 ---
 title: '面向开发者的终端（PowerShell/Bash）效率提升快捷键'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,4 +346,5 @@ bind l select-pane -R
 刚开始有意识地去按 `Ctrl+A` 或 `Ctrl+E` 时，可能会感到一些压力。然而，只要有意识地持续使用几周，这些快捷键必定会扎根在你的**肌肉记忆**中。一旦形成肌肉记忆，你就能在无意识中自由自在地驾驭终端，这也将成为大幅提升你一生开发者体验（Developer Experience, DX）的宝贵财富。
 
 请从今天开始打开 `$PROFILE` 或 `~/.bashrc`，着手构建最适合你双手的终极终端环境吧。
+
 

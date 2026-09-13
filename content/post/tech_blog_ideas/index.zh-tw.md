@@ -1,7 +1,7 @@
 ---
 title: '防止技術文章靈感枯竭！高效的輸入法與點子發想'
 slug: "tech-blog-idea-generation-and-input-strategy"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -380,4 +380,5 @@ stateDiagram-v2
 藉由建構結合了以上各點的全面性管道，不僅能讓部落格點子不再枯竭，還能創造出越寫就有越多新點子自我繁殖的狀態。
 
 一開始不需要將一切建構得完美無缺。請試著先從撰寫呼叫 Hacker News API 的簡單腳本，並用 Markdown 記下感興趣文章的習慣開始做起吧。希望你的技術部落格能成為次世代優秀點子的發源地。
+
 

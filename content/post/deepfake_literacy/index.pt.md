@@ -1,7 +1,7 @@
 ---
 title: 'Deepfakes e Literacia da Informação: Como Detetar Notícias Falsas Tecnicamente'
 slug: 'deepfake-info-literacy'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -263,4 +263,5 @@ A evolução da tecnologia de IA abriu a caixa de Pandora. Já não é possível
 No entanto, como explicado neste artigo, os tecnólogos estão a combater a ameaça das notícias falsas com diversas abordagens: análise de frequência, deteção de sinais biométricos e prova de proveniência (C2PA) baseada em criptografia. Ao combinar este escudo tecnológico (medida defensiva) com o escudo social da "literacia da informação" de cada indivíduo, deveremos ser capazes de navegar pelas ondas da ficção criadas pela IA e proteger o valor da verdade.
 
 É precisamente porque vivemos numa época em que as fronteiras entre realidade e ficção se dissolvem que a "vontade" humana de discernir a verdade tornou-se mais importante do que nunca.
+
 

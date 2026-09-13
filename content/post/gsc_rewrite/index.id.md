@@ -1,7 +1,7 @@
 ---
 title: 'Strategi Menulis Ulang Artikel Teknis Menggunakan Google Search Console'
 slug: 'google-search-console-rewrite-strategy'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -276,4 +276,5 @@ Berikut ringkasan metode yang dibahas dalam artikel ini:
 4. Menemukan kesenjangan konten dengan kompetitor melalui **analisis NLP menggunakan TF-IDF** dan mengoptimalkan heading (H2/H3).
 
 Tren teknologi terus berubah. Untuk secara akurat merespons error dan masalah yang sedang dihadapi pembaca, pertimbangkanlah untuk menjadikan strategi penulisan ulang berbasis data ini sebagai bagian dari operasional harian Anda.
+
 

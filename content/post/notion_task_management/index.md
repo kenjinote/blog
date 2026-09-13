@@ -1,7 +1,7 @@
 ---
 title: "Notionを使った個人開発・ブログ執筆のタスク管理術"
 slug: "notion-task-management-blog-dev"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -273,4 +273,5 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
 Notionを使ったタスク管理は、単なるTo-Doリストの域をはるかに超えています。PARAメソッドによる情報整理、Zettelkastenによる知識のネットワーク化、そしてNotion APIによるエンジニアリングを組み合わせることで、個人開発とブログ執筆を強力にブーストする「第2の脳（Second Brain）」を構築することができます。
 
 初期設定には多少の時間がかかりますが、一度システムが回り始めれば、タスク管理にかかる認知負荷は劇的に下がり、本当に重要な「コードを書くこと」と「文章を綴ること」に全集中できるようになります。ぜひ本記事を参考に、あなた自身の最強のNotionワークスペースを作り上げてみてください。
+
 

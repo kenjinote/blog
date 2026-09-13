@@ -2,7 +2,7 @@
 title: "The Deepening of the 'New Digital Divide' Brought by the Evolution of Generative AI"
 description: "We deeply consider the new digital divide that has shifted from hardware and internet access to the 'ability of prompting and orchestration' due to the rapid development of AI technology."
 slug: "generative-ai-digital-divide"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -165,4 +165,5 @@ Will we stand on this side of the new digital divide, or remain on the other sid
 
 ---
 *If you have any opinions on this article or specific case studies on introducing AI orchestration, please send them to the comment section or the author's social media.*
+
 

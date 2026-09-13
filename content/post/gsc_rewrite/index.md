@@ -1,7 +1,7 @@
 ---
 title: 'Google Search Consoleを活用して過去の技術記事をリライトする戦略'
 slug: 'google-search-console-rewrite-strategy'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -276,4 +276,5 @@ Google Search Consoleを活用した技術記事のリライトは、単なる�
 4. **TF-IDFを用いたNLP分析**によって、競合とのコンテンツギャップを発見し、見出し（H2/H3）を最適化する。
 
 技術のトレンドは絶えず変化します。読者が今抱えているエラーや課題に正確に応えるためにも、データを味方につけた戦略的なリライトをぜひ日々の運用に取り入れてみてください。
+
 

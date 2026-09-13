@@ -1,7 +1,7 @@
 ---
 title: 'Deepfakes und Informationskompetenz: Wie man Fake News technisch entlarvt'
 slug: 'deepfake-info-literacy'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -262,4 +262,5 @@ Die Evolution der KI-Technologie hat die Büchse der Pandora geöffnet. Es ist n
 Wie jedoch in diesem Artikel erklärt wurde, begegnen Ingenieure der Bedrohung durch Fake News mit verschiedenen Ansätzen wie Frequenzanalyse, der Erkennung biologischer Signale und Herkunftsnachweisen mittels Kryptografie (C2PA). Durch die Kombination dieser technischen Schilde (Schutzmaßnahmen) mit dem gesellschaftlichen Schild der "Informationskompetenz" jedes Einzelnen von uns sollten wir in der Lage sein, die Welle der Fiktion, die durch KI entsteht, zu überwinden und den Wert der Wahrheit zu schützen.
 
 Gerade in einer Zeit, in der die Grenzen zwischen Realität und Fiktion verschwimmen, ist der menschliche "Wille", die Wahrheit zu erkennen, wichtiger denn je.
+
 

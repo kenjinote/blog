@@ -1,7 +1,7 @@
 ---
 title: "The '2026 Problem': Is the IT Talent Shortage Really Happening? The Reality on the Ground"
 slug: "it-talent-shortage-2026"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -182,4 +182,5 @@ AI is not going to steal our jobs; it is merely a tool that allows us to focus o
 
 Now is the time to review your career path and steer toward the next paradigm.
 Are you ready to "modernize" yourself?
+
 

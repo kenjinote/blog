@@ -1,7 +1,7 @@
 ---
 title: 'Apakah Teknologi Mampu Menjembatani Kesenjangan Sosial? (Saran dari Seorang Teknisi)'
 slug: "technology-and-social-divide"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -194,4 +194,5 @@ Teknologi bukanlah sihir. Ia adalah cermin dari manusia. Jika masyarakat terbela
 Mulai artikel ke-101 dan seterusnya, sebagai seorang teknisi, saya ingin terus berdiri di persimpangan antara kode dan masyarakat, untuk terus memperdalam pemikiran saya. Terima kasih banyak telah menemani membaca tulisan panjang ini sampai akhir. Berharap agar jaringan masa depan tidak menjadi dinding yang memisahkan kita, melainkan jembatan untuk memahami satu sama lain.
 
 (Selesai)
+
 

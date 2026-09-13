@@ -1,7 +1,7 @@
 ---
 title: 'Ce que les ingénieurs doivent faire pour augmenter le trafic mensuel de leur blog technique'
 slug: "tech-blog-growth-strategies-for-engineers"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -278,4 +278,5 @@ Pour augmenter drastiquement le trafic mensuel d'un blog technique, au-delà de 
 5. Automatisation complète de la distribution via le CI/CD et l'intégration de Zapier
 
 Si vous parvenez à assembler ces éléments en un système, votre blog technique deviendra l'actif (asset) le plus puissant pour propulser votre propre carrière. Ingénieurs souffrant d'une stagnation de trafic, n'hésitez pas à commencer le « Growth Hacking de votre blog » dès aujourd'hui. Vos compétences en programmation et votre capacité de conception d'architecture, cultivées lors de vos activités de développement, seront assurément vos meilleures armes dans la gestion de votre blog.
+
 

@@ -1,7 +1,7 @@
 ---
 title: "La technologie peut-elle combler la fracture sociale ? (Proposition d'un ingénieur)"
 slug: "technology-and-social-divide"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -194,4 +194,5 @@ La technologie n'est pas magique. Elle est le miroir de l'humanité. Si la soci�
 À partir de la 101e publication, en tant qu'ingénieur, je souhaite continuer à me tenir au carrefour du code et de la société, et à approfondir mes réflexions. Merci infiniment de m'avoir accompagné jusqu'à la fin de ce long texte. En espérant que les réseaux de demain ne soient pas des murs qui nous divisent, mais des ponts pour nous comprendre mutuellement.
 
 (Fin)
+
 

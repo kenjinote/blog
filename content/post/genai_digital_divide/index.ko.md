@@ -2,7 +2,7 @@
 title: '생성형 AI의 진화가 초래하는 "새로운 디지털 격차"의 심화'
 description: 'AI 기술의 급속한 발전으로 인해 하드웨어나 인터넷 접근성에서 "프롬프팅 및 오케스트레이션 능력"으로 이동한 새로운 디지털 격차에 대해 깊이 고찰합니다.'
 slug: "generative-ai-digital-divide"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -166,4 +166,5 @@ flowchart TD
 
 ---
 *본 기사에 대한 의견이나 AI 오케스트레이션의 구체적인 도입 사례에 대해서는 댓글란 또는 저자의 SNS로 보내주시기 바랍니다.*
+
 

@@ -1,7 +1,7 @@
 ---
 title: 'Blog técnico escrito en Markdown: Configuración del editor para duplicar la velocidad de escritura'
 slug: "markdown-editor-setup-for-tech-blogs"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -269,4 +269,5 @@ En este artículo explicamos configuraciones del editor que duplicarán tu veloc
 5. **Integración de LLM**: Hacer que la IA genere directamente la estructura del Markdown y el código de diagramas o tablas dentro del editor.
 
 Al incorporar estas configuraciones a tu propio entorno, desaparecerá lo "tedioso" de la escritura y, con seguridad, la cantidad y calidad de tus publicaciones técnicas mejorarán drásticamente. ¿Por qué no empezar hoy mismo registrando al menos un pequeño fragmento (snippet)?
+
 

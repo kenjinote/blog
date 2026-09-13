@@ -1,7 +1,7 @@
 ---
 title: 'Technik-Blogs in Markdown schreiben: Editor-Einstellungen, die die Schreibgeschwindigkeit verdoppeln'
 slug: "markdown-editor-setup-for-tech-blogs"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -269,4 +269,5 @@ Wir haben die Editor-Einstellungen erläutert, die die Schreibgeschwindigkeit be
 5. **Integration von LLMs**: Die KI direkt im Editor Markdown-Strukturen und Diagramm-Codes ausgeben lassen.
 
 Indem Sie diese Einstellungen in Ihre eigene Umgebung übernehmen, verschwindet die "Lästigkeit" des Schreibens, und die Quantität und Qualität Ihres technischen Outputs wird sich drastisch verbessern. Warum fangen Sie nicht gleich mit der Registrierung eines einzigen kleinen Snippets an?
+
 

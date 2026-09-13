@@ -1,7 +1,7 @@
 ---
 title: '¿Puede la tecnología cerrar la brecha social? (Una propuesta desde la perspectiva de un ingeniero)'
 slug: "technology-and-social-divide"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -194,4 +194,5 @@ La tecnología no es magia. Es un espejo de la humanidad. Si la sociedad está d
 A partir de la publicación 101, como ingeniero, me gustaría seguir de pie en la intersección del código y la sociedad para profundizar en mis reflexiones. Muchas gracias por acompañarme hasta el final de este largo texto. Con la esperanza de que las redes del futuro no sean muros que nos dividan, sino puentes para entendernos mutuamente.
 
 (Fin)
+
 

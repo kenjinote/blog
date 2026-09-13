@@ -1,7 +1,7 @@
 ---
 title: 'Gadget & Pengaturan Monitor untuk Mengurangi Ketegangan Mata Programmer'
 slug: "programmer-eye-strain-relief"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -280,4 +280,5 @@ Karier kita sebagai software engineer bisa berlangsung hingga puluhan tahun. Yan
 5. **Menggunakan lengan monitor untuk menciptakan sudut pandang optimal berdasarkan $\tan \theta = h/d$ dan mensistemasikan "Aturan 20-20-20"**
 
 Langkah-langkah ini mungkin membutuhkan biaya atau upaya yang bersifat sementara, tetapi ini dapat disebut sebagai "investasi teknis" dengan efektivitas biaya (cost-effectiveness) terbaik yang memaksimalkan produktivitas seumur hidup dan QOL (kualitas hidup) Anda, serta memperpanjang umur sehat pada mata. Mari tinjau kembali lingkungan pengembangan Anda saat ini juga dan cobalah untuk mengimplementasikan kepedulian terhadap mata Anda.
+
 

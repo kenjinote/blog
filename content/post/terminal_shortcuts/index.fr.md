@@ -1,7 +1,7 @@
 ---
 title: 'Raccourcis de terminal (PowerShell/Bash) pour la productivité des développeurs'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,4 +346,5 @@ Dans cet article, nous avons expliqué de manière très détaillée « l'optimi
 Au début, vous ressentirez peut-être du stress à devoir penser à taper `Ctrl+A` ou `Ctrl+E`. Cependant, en continuant à les utiliser consciemment pendant quelques semaines, ces raccourcis s'ancreront définitivement dans votre **mémoire musculaire**. Une fois ancrés, vous serez capable de manipuler le terminal librement et de manière inconsciente, ce qui constituera un atout qui améliorera de façon exponentielle votre expérience de développement (Developer Experience, DX) tout au long de votre vie.
 
 Dès aujourd'hui, ouvrez votre `$PROFILE` ou `~/.bashrc` et commencez à construire l'environnement de terminal ultime, celui qui convient le mieux à vos mains.
+
 

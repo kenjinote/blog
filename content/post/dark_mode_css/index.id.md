@@ -1,7 +1,7 @@
 ---
 title: 'Poin-poin Desain CSS untuk Menerapkan Mode Gelap di Blog'
 slug: "dark-mode-css-design-patterns"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -358,4 +358,5 @@ Untuk mengimplementasikan mode gelap berkualitas tinggi pada blog atau aplikasi 
 4.  **Optimalisasi Media dan Aset**: Manfaatkan `filter: brightness()`, `currentColor`, dan tag `<picture>` agar elemen selain teks juga selaras dengan tema gelap.
 
 Bukan sekadar "membalik warna", melainkan penerapan dengan detail mendalam inilah yang menjadi syarat sebuah blog modern. Blog yang dicintai pengguna untuk waktu yang lama dan mampu menyuguhkan pengalaman membaca (reading experience) yang hebat serta tidak membuat mata cepat lelah. Bagi para pengembang yang ingin memperkenalkan mode gelap ke depannya, silakan jadikan pola desain dari artikel ini sebagai referensi yang andal.
+
 

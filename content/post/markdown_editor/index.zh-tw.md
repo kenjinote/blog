@@ -1,7 +1,7 @@
 ---
 title: '使用 Markdown 撰寫技術部落格：讓寫作速度翻倍的編輯器設定'
 slug: "markdown-editor-setup-for-tech-blogs"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -269,4 +269,5 @@ flowchart TD
 5. **整合 LLM**: 直接在編輯器內讓 AI 輸出 Markdown 的架構或圖表的程式碼。
 
 只要將這些設定導入自己的環境中，就能消除寫作時的「麻煩感」，並且大幅提升技術輸出的質與量。不妨就先從註冊一個小小的程式碼片段開始嘗試吧！
+
 

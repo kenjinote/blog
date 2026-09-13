@@ -1,7 +1,7 @@
 ---
 title: 'Otimização de SEO para Blogs Hugo: Configurações de Frontmatter para Aumentar Dramaticamente o Tráfego'
 slug: "hugo-blog-seo-frontmatter-tips"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -333,4 +333,5 @@ Implementar completamente os pontos explicados neste artigo fortalecerá de form
 4. **Gerenciamento avançado de tráfego**: Controle de robôs através de meta tags e redirecionamentos via Aliases
 
 Embora os algoritmos dos motores de busca evoluam todos os dias, o princípio fundamental do SEO de fornecer sinais para que os motores de busca "entendam corretamente o conteúdo da página" permanece o mesmo. Ao dominar o frontmatter e o motor de templates flexível do Hugo, você pode continuar enviando esse sinal com a mais alta qualidade e aumentar drasticamente o tráfego do seu blog.
+
 

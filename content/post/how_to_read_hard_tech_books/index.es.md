@@ -1,7 +1,7 @@
 ---
 title: 'Cómo leer y aplicar eficientemente libros técnicos complejos (matemáticas y algoritmos)'
 slug: "reading-hard-tech-books"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -283,4 +283,5 @@ Al escribir un blog, ocurren los siguientes procesos:
 Leer libros de matemáticas y libros especializados en algoritmos no es de ninguna manera un camino fácil. Sin embargo, al seguir el ciclo de captar la estructura con SQ3R, verbalizar con la Técnica de Feynman, verificar el funcionamiento traduciéndolo a código, prevenir el olvido con Anki y finalmente transmitirlo al mundo en un blog técnico, ese conocimiento complejo seguramente se convertirá en tu "poder".
 
 La forma superficial de usar APIs y el conocimiento de frameworks se volverán obsoletos en unos pocos años, pero el pensamiento matemático y los fundamentos de los algoritmos son activos para toda la vida. La próxima vez que abras un libro técnico complejo, intenta utilizar los métodos de este artículo y sumérgete en el abismo del conocimiento.
+
 

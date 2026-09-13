@@ -1,7 +1,7 @@
 ---
 title: 'Deepfake dan Literasi Informasi: Cara Mendeteksi Berita Palsu secara Teknis'
 slug: 'deepfake-info-literacy'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -263,4 +263,5 @@ Evolusi teknologi AI telah membuka kotak Pandora. Kini mustahil untuk menghapus 
 Meskipun demikian, sebagaimana yang telah dijelaskan dalam artikel ini, para insinyur terus berupaya menangkal ancaman berita palsu melalui berbagai pendekatan teknis seperti analisis frekuensi, deteksi sinyal biologis, dan pembuktian asal-usul (C2PA) yang menggunakan teknik kriptografi. Melalui perpaduan antara perlindungan teknis tersebut dengan perisai sosial berupa "literasi informasi" kita secara individu, seharusnya kita bisa mengatasi badai kepalsuan yang dibawa oleh AI sekaligus membela nilai dari kebenaran.
 
 Tepat karena kita berada pada era di mana batas antara realitas dan fiksi memudar, "kehendak" manusia untuk mengenali kebenaran menjadi jauh lebih penting dari sebelumnya.
+
 

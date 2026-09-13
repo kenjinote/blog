@@ -1,7 +1,7 @@
 ---
 title: '最大化开发效率的多显示器配置与最优解'
 slug: "multi-display-monitor-setup-optimization-for-devs"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -238,4 +238,5 @@ flowchart TD
 ```
 
 显示器一旦购买，将作为你的基础设施，在未来的许多年中持续支撑你的生产力。结合本文讲解的视觉工程学原则、PPI 的数学计算、带宽的极限，以及通过软件进行的窗口管理，打造一个毫不妥协的顶级工作区吧。这终将成为你写出最优秀代码的最短路径。
+
 

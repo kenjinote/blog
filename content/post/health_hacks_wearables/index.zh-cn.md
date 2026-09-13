@@ -1,7 +1,7 @@
 ---
 title: '使用智能戒指等管理身体状况的工程师日常（健康黑客）'
 slug: "engineer-health-hacks-wearables"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -368,4 +368,5 @@ def check_and_ventilate():
 
 ---
 *Disclaimer: 本文是对作者个人实验和数据科学方法的总结，不提供医疗建议。如果持续出现身体不适或睡眠障碍，请咨询专业医疗机构。*
+
 

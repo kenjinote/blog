@@ -1,7 +1,7 @@
 ---
 title: 'Le télétravail face au retour au bureau, quelle est la solution optimale pour les ingénieurs ?'
 slug: 'remote-vs-rto-engineers'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -235,4 +235,5 @@ La direction doit abandonner l'illusion selon laquelle "le simple fait de rassem
 D'un autre côté, les ingénieurs (en particulier les seniors) doivent également revoir leur point de vue égoïste selon lequel "un bureau n'est pas nécessaire parce que je suis plus productif en écrivant du code tout seul". L'ingénierie est un sport d'équipe, impliquant de larges responsabilités au-delà de la seule productivité du code, incluant la conception du système pour l'ensemble de l'organisation, la formation des membres juniors et la coordination en cas d'urgence. Il est également vrai qu'une communication à large bande passante dans un espace physique peut parfois sauver l'ensemble d'un projet.
 
 La solution optimale varie selon l'entreprise, l'équipe et la phase du produit. Cependant, il est certain que seules les organisations qui comprennent la nature sociologique de la communication, qui mesurent la situation actuelle avec des indicateurs multidimensionnels comme le framework SPACE, et qui continuent de surmonter les contraintes avec des technologies telles que l'architecture Zero Trust, pourront acquérir une véritable compétitivité dans cette nouvelle ère du travail.
+
 

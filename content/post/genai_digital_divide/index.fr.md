@@ -2,7 +2,7 @@
 title: "L'aggravation de la 'nouvelle fracture numérique' causée par l'évolution de l'IA générative"
 description: "Une réflexion approfondie sur la nouvelle fracture numérique, qui, avec le développement rapide des technologies d'IA, est passée de l'accès au matériel et à Internet aux 'capacités de prompt et d'orchestration'."
 slug: "generative-ai-digital-divide"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -165,4 +165,5 @@ Se tenir de ce côté-ci de la nouvelle fracture numérique ou rester de l'autre
 
 ---
 *Si vous avez des commentaires sur cet article ou des exemples concrets de déploiement de l'orchestration de l'IA, n'hésitez pas à les partager dans la section des commentaires ou sur les réseaux sociaux de l'auteur.*
+
 

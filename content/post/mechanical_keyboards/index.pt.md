@@ -1,7 +1,7 @@
 ---
 title: 'Para longas horas de código! 5 teclados mecânicos recomendados para engenheiros'
 slug: "engineer-mechanical-keyboard-recommendations"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -201,4 +201,5 @@ A escolha de um teclado é um processo de "otimização da sua própria interfac
 Os 5 teclados apresentados desta vez (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) são verdadeiras obras-primas que procuram a "melhor experiência de digitação" usando as suas próprias abordagens. Esperamos que encontre o parceiro ideal com base no seu estilo de digitação ou qualquer restrição de desconforto físico.
 
 O investimento num teclado reverter-se-á em valor em forma de "milhões de linhas de código sem bugs".
+
 

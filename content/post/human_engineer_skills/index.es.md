@@ -1,7 +1,7 @@
 ---
 title: "Habilidades de ingeniería 'exclusivas de los humanos' requeridas en la era en que la IA escribe código"
 slug: "human-engineer-skills-ai-era"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -207,4 +207,5 @@ Los ingenieros del futuro ya no se preocuparán por cada detalle en las especifi
 
 Un verdadero ingeniero no es alguien que escribe código, sino alguien que resuelve problemas.
 Para aquellos que continúan refinando estas "habilidades de ingeniería exclusivas de los humanos" — modelado de dominios, diseño de arquitecturas escalables, comunicación con las partes interesadas y depuración de sistemas complejos — la IA no será un enemigo que roba trabajos, sino el socio más fuerte que expandirá exponencialmente su propia creatividad y productividad.
+
 

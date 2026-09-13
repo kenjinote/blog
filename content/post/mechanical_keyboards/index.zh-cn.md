@@ -1,7 +1,7 @@
 ---
 title: '专为长时间编程打造！推荐给工程师的 5 款机械键盘'
 slug: "engineer-mechanical-keyboard-recommendations"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -201,4 +201,5 @@ pie title "工程师理想键盘配列偏好 (推测数据)"
 本次介绍的 5 款键盘（Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting），都是通过不同方式追求“最佳输入体验”的杰作。请务必结合您自己的打字风格和身体状况，找到您最好的伙伴。
 
 对键盘的投资，必定会化作“数百万行没有 Bug 的代码”，为您带来回报。
+
 

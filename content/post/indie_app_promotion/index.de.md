@@ -1,7 +1,7 @@
 ---
 title: 'Promotionsstrategie für Indie-Apps: Wie man einen Tech-Blog nutzt'
 slug: "indie-app-promotion-blog-strategy"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -320,4 +320,5 @@ In diesem Artikel haben wir technische Strategien erläutert, um einen Tech-Blog
 4. **Präzise Analyse**: Kombination von GA4 und PostHog, um nicht nur PVs, sondern "Conversion" und "Retention" zu verfolgen und das LTV/CAC-Verhältnis gesund zu halten.
 
 Ein großartiges Produkt zu entwickeln, ist nur die halbe Miete. Die andere Hälfte ist "Marketing als Engineering", um sicherzustellen, dass es die Menschen erreicht, die es brauchen. Lassen Sie Ihren Tech-Blog nicht einfach nur als Plattform für Outputs enden, sondern bauen Sie ihn zum größten Kapital auf, das das nachhaltige Wachstum Ihrer App unterstützt.
+
 

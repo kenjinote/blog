@@ -1,7 +1,7 @@
 ---
 title: 'Estratégia para reescrever artigos técnicos antigos usando o Google Search Console'
 slug: 'google-search-console-rewrite-strategy'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -276,4 +276,5 @@ Resumindo os métodos explicados neste artigo:
 4. Usar a **análise PNL com TF-IDF** para descobrir lacunas de conteúdo face aos concorrentes e otimizar os cabeçalhos (H2/H3).
 
 As tendências tecnológicas estão em constante evolução. Para responder de forma precisa aos erros e desafios que os leitores enfrentam atualmente, certifique-se de incorporar uma estratégia de reescrita baseada em dados nas suas operações diárias.
+
 

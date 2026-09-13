@@ -1,7 +1,7 @@
 ---
 title: 'Aktueller Stand und Herausforderungen der IT-Bildung in Japan: Die Folgen der obligatorischen Programmierung'
 slug: "japan-it-education-aftermath"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -256,4 +256,5 @@ Wie wir diese schwierigste und wichtigste Phase, die Zeit „nach“ der obligat
 ---
 
 *In diesem Artikel haben wir die Komplexitätstheorie und die infrastrukturellen Grenzen des GIGA School-Konzepts skizziert. Noch spezifischere Themen der Informatik (wie Algorithmen für verteilte Systeme und Details zu Low-Level-Speicherverwaltungsmethoden) werden in zukünftigen Beiträgen dieser Reihe nach und nach behandelt.*
+
 

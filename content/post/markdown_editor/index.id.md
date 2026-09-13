@@ -1,7 +1,7 @@
 ---
 title: 'Blog Teknologi dengan Markdown: Pengaturan Editor untuk Menggandakan Kecepatan Menulis'
 slug: "markdown-editor-setup-for-tech-blogs"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -269,4 +269,5 @@ Kami telah menjelaskan pengaturan editor yang dapat menggandakan kecepatan penul
 5. **Integrasi LLM**: Membuat AI secara langsung menghasilkan struktur Markdown dan kode diagram di dalam editor.
 
 Dengan memasukkan pengaturan ini ke dalam lingkungan Anda sendiri, "kerepotan" menulis akan hilang, dan kuantitas serta kualitas output teknis akan meningkat secara dramatis. Bagaimana kalau memulainya bahkan dari satu pendaftaran snippet kecil?
+
 

@@ -1,7 +1,7 @@
 ---
 title: '給開發者的終端機（PowerShell/Bash）效率化快捷鍵'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,4 +346,5 @@ bind l select-pane -R
 剛開始，刻意去按 `Ctrl+A` 或 `Ctrl+E` 可能會感到壓力。然而，只要有意識地持續使用幾週，這些快捷鍵肯定會成為你的**肌肉記憶（Muscle Memory）**。一旦形成習慣，你就能在無意識中自由自在地操控終端機，這將成為你終身受用、飛躍性提升開發體驗（Developer Experience, DX）的重要財富。
 
 請務必從今天開始，打開 `$PROFILE` 或 `~/.bashrc`，著手打造最適合自己雙手的終極終端機環境。
+
 

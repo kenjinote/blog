@@ -1,7 +1,7 @@
 ---
 title: 'How to Publish a Hugo Blog for Free and Extremely Fast with Cloudflare Pages or GitHub Pages'
 slug: 'hugo-hosting-cloudflare-vs-github-pages'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -254,4 +254,5 @@ When running static sites using Hugo, adopting modern hosting platforms like Clo
 5. **Lightweight Analytics**: Adopt privacy-friendly analytics like Cloudflare Web Analytics that won't compromise performance.
 
 By combining these, it is possible to build a scalable, robust blog system for free that can withstand massive traffic of several million PVs per month. If you are considering launching a tech blog, corporate site, or portfolio site, be sure to try out this Jamstack + Hugo + Cloudflare Pages setup.
+
 

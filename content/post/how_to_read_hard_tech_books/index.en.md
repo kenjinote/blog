@@ -1,7 +1,7 @@
 ---
 title: "Efficient Reading and Output Methods for Hard Technical Books (Mathematics and Algorithms)"
 slug: "reading-hard-tech-books"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -283,4 +283,5 @@ When writing a blog, the following processes occur:
 Reading specialized books on mathematics and algorithms is by no means an easy path. However, by running through the cycle of grasping the structure with SQ3R, verbalizing it with the Feynman Technique, translating it into code to verify its behavior, preventing forgetting with Anki, and finally broadcasting it to the world on a tech blog, that hard-to-understand knowledge will surely become your "strength".
 
 While superficial API usage and framework knowledge will become obsolete in a few years, mathematical thinking and algorithm fundamentals are lifelong assets. The next time you open a hard technical book, please use the methods in this article and dive into the abyss of knowledge.
+
 

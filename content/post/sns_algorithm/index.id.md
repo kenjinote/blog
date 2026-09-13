@@ -1,7 +1,7 @@
 ---
 title: 'Pengaruh Algoritma SNS terhadap Pemikiran dan Pemilihan Teknologi Kita'
 slug: "sns-algorithm-tech-selection"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -176,4 +176,5 @@ Algoritma rekomendasi SNS adalah alat yang ampuh yang memperluas wawasan teknis 
 Kita perlu mengembangkan literasi untuk tidak menerima informasi yang mengalir di linimasa kita sebagai "fakta" atau "tren absolut", melainkan memperlakukannya hanya sebagai sebuah "sinyal".
 
 Keluarlah dari ruang gema, baca kode sumber dengan tangan Anda sendiri, ikuti diskusi pada RFC, uraikan formula pada makalah, dan hadapi masalah yang sebenarnya pada domain bisnis perusahaan Anda. Itulah satu-satunya jalan untuk mempraktikkan rekayasa perangkat lunak sejati tanpa tertelan oleh gelombang algoritma.
+
 

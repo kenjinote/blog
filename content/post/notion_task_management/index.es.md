@@ -1,7 +1,7 @@
 ---
 title: 'Gestión de tareas con Notion para el desarrollo personal y la escritura de blogs'
 slug: "notion-task-management-blog-dev"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -273,4 +273,5 @@ No importa cuán avanzado sea el sistema o la herramienta que crees; todo el pro
 La gestión de tareas con Notion va mucho más allá de ser una simple lista de cosas por hacer (To-Do). Al combinar la organización de la información del método PARA, la red de conocimientos a través de Zettelkasten, y la ingeniería mediante la API de Notion, puedes construir un "Segundo Cerebro (Second Brain)" que impulsará poderosamente tu desarrollo personal y la escritura de blogs.
 
 La configuración inicial toma algo de tiempo, pero una vez que el sistema empiece a funcionar, la carga cognitiva requerida para gestionar tareas se reducirá drásticamente, permitiéndote concentrarte completamente en lo que realmente importa: "escribir código" y "escribir texto". Esperamos que este artículo te sirva de referencia para crear tu propio espacio de trabajo definitivo en Notion.
+
 

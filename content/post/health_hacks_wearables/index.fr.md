@@ -1,7 +1,7 @@
 ---
 title: 'Le quotidien d''un ingénieur gérant sa santé avec un anneau intelligent etc. (Health Hack)'
 slug: "engineer-health-hacks-wearables"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -368,4 +368,5 @@ En tirant parti de la science des données et des API, concevons un état de san
 
 ---
 *Avertissement : Cet article compile les expériences personnelles de l'auteur et son approche en science des données, et ne fournit pas de conseils médicaux. En cas de mauvaise santé persistante ou de troubles du sommeil, veuillez consulter une institution médicale spécialisée.*
+
 

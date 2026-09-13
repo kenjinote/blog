@@ -1,7 +1,7 @@
 ---
 title: 'Hugo 部落格的 SEO 策略：大幅增加流量的 Frontmatter 設定'
 slug: "hugo-blog-seo-frontmatter-tips"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -333,4 +333,5 @@ expiryDate: "2026-12-31T23:59:59Z"
 4. **進階流量管理**: 透過 Aliases 進行重新導向，以及使用 Meta 標籤進行機器人控制
 
 儘管搜尋引擎的演算法日新月異，但提供能讓搜尋引擎「正確理解頁面內容」的訊號，這項 SEO 根本原則是不會改變的。透過鑽研 Hugo 靈活的模板引擎與 Frontmatter，持續發送出最高品質的訊號，讓部落格的流量獲得戲劇性的增長吧！
+
 

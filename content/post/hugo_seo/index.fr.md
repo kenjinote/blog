@@ -1,7 +1,7 @@
 ---
 title: "SEO pour les blogs Hugo : Paramètres du frontmatter pour augmenter considérablement le trafic"
 slug: "hugo-blog-seo-frontmatter-tips"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -333,4 +333,5 @@ En mettant parfaitement en œuvre les points expliqués dans cet article, les ba
 4. **Gestion avancée du trafic** : Redirections avec Aliases et contrôle des robots avec des balises meta.
 
 Bien que les algorithmes des moteurs de recherche évoluent de jour en jour, le principe fondamental du SEO, qui est de fournir des signaux pour que les moteurs de recherche "comprennent correctement le contenu de la page", reste inchangé. En maîtrisant le moteur de templates flexible et le frontmatter de Hugo, continuez d'émettre ces signaux avec la plus haute qualité et augmentez considérablement le trafic vers votre blog.
+
 

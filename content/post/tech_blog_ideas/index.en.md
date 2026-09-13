@@ -1,7 +1,7 @@
 ---
 title: "Preventing Tech Blog Writer's Block! Efficient Input Methods and Idea Generation"
 slug: "tech-blog-idea-generation-and-input-strategy"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -382,4 +382,5 @@ As introduced in this article:
 By building a comprehensive pipeline combining these, you can create a state where your blog ideas do not dry up, but rather, the more you write, the more new ideas self-multiply.
 
 You don't need to build everything perfectly from the start. First, try starting with the habit of making a simple script to hit the Hacker News API and taking Markdown notes on articles that interest you. I hope your tech blog becomes a source of excellent next-generation ideas.
+
 

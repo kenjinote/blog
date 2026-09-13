@@ -1,7 +1,7 @@
 ---
 title: '장시간 코딩에! 엔지니어에게 추천하는 기계식 키보드 5선'
 slug: "engineer-mechanical-keyboard-recommendations"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -201,4 +201,5 @@ pie title "엔지니어의 이상적인 키보드 배열 취향 (추측 데이�
 이번에 소개한 5개의 키보드(Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting)는, 각각 다른 어프로치로 '최고의 입력 체험'을 지향한 걸작들뿐입니다. 부디, 자신의 타이핑 스타일이나 안고 있는 신체의 고민에 맞추어, 최고의 파트너를 찾아 주십시오.
 
 키보드로의 투자는, 반드시 '수백만 행의 버그 없는 코드'가 되어, 당신에게 리턴을 가져다줄 것입니다.
+
 

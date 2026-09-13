@@ -1,7 +1,7 @@
 ---
 title: 'Blog technique écrit en Markdown : Paramètres d''éditeur pour doubler votre vitesse de rédaction'
 slug: "markdown-editor-setup-for-tech-blogs"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -269,4 +269,5 @@ Nous avons expliqué les paramètres d'éditeur qui permettent de doubler la vit
 5. **Intégration des LLM** : Laisser l'IA générer la structure Markdown et le code des diagrammes directement dans l'éditeur.
 
 En intégrant ces paramètres à votre propre environnement, la "corvée" de l'écriture disparaîtra, et le volume ainsi que la qualité de votre production technique s'amélioreront de manière spectaculaire. Pourquoi ne pas commencer par enregistrer un simple petit snippet dès aujourd'hui ?
+
 

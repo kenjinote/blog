@@ -1,7 +1,7 @@
 ---
 title: 'Pintasan Efisiensi Terminal (PowerShell/Bash) untuk Pengembang'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,4 +346,5 @@ Dalam artikel ini, kami telah menjelaskan secara mendetail tentang "efisiensi op
 Pada awalnya, Anda mungkin akan merasa stres karena harus secara sadar menekan tombol seperti `Ctrl+A` atau `Ctrl+E`. Namun, dengan menggunakannya secara sadar selama beberapa minggu, pintasan ini pasti akan menetap di **memori otot (muscle memory)** Anda. Sekali ia menetap, Anda akan mampu mengoperasikan terminal dengan bebas dan tanpa sadar, dan ini akan menjadi sebuah aset berharga yang secara dramatis meningkatkan Pengalaman Pengembang (Developer Experience / DX) Anda seumur hidup.
 
 Mulai hari ini, silakan buka `$PROFILE` atau `~/.bashrc` Anda dan mulailah membangun lingkungan terminal terbaik yang paling pas di tangan Anda.
+
 

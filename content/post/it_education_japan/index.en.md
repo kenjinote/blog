@@ -1,7 +1,7 @@
 ---
 title: 'The Current State and Challenges of IT Education in Japan: After the Mandatory Programming Education'
 slug: "japan-it-education-aftermath"
-$12026-09-12T12:00:00+09:00"
+date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -256,4 +256,5 @@ How we fight through the "aftermath" of mandatory programming—the most difficu
 ---
 
 *This article outlined the computational complexity theory and the infrastructural limits of the GIGA School Concept. We plan to cover more specialized computer science topics (such as details of distributed system algorithms and low-level memory management techniques) sequentially in future series.*
+
 

@@ -1,7 +1,7 @@
 ---
 title: 'Deepfake and Information Literacy: How to Technically Detect Fake News'
 slug: 'deepfake-info-literacy'
-$12026-09-12T12:00:00+09:00'
+date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -262,4 +262,5 @@ The evolution of AI technology has opened Pandora's box. It is no longer possibl
 However, as explained in this article, engineers are confronting the threat of fake news with a variety of approaches, such as frequency analysis, biological signal detection, and provenance proof (C2PA) using cryptography. By combining these technical shields (defenses) with the social shield of "information literacy" that each of us possesses, we should be able to navigate the wave of fiction brought by AI and protect the value of truth.
 
 Precisely because we are in an era where the boundary between reality and fiction is melting, the human "will" to try and discern the truth has become more important than ever.
+
 
