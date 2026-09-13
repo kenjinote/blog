@@ -278,7 +278,7 @@ params:
         cover:
             enabled: true
         content:
-            enabled: true
+            enabled: false
 
 ### Custom menu
 ### See https://stack.jimmycai.com/config/menu
@@ -341,3 +341,19 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+services:
+  rss:
+    limit: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+  term:
+    - HTML
