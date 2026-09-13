@@ -160,7 +160,7 @@ In diesem Fall sollten Sie nicht wechseln, wenn Sie glauben, dass Sie gleich am 
 Das Monty-Hall-Problem (mit 3 Türen) ist lediglich dieses "1-Million-Türen-Phänomen" in kleinerem Maßstab.
 
 ```mermaid
-pie title "Der Effekt des Türwechsels (100 Simulationen)"
+pie title Der Effekt des Türwechsels (100 Simulationen)
     "Gewinn durch Wechseln (ca. 66,7%)" : 67
     "Gewinn ohne Wechseln (ca. 33,3%)" : 33
 ```
@@ -173,3 +173,4 @@ Das Monty-Hall-Problem geht über ein bloßes Quiz hinaus und lehrt uns wichtige
 2. **Wahrscheinlichkeiten mit neuen Informationen aktualisieren (Bayes-Aktualisierung)**: Wenn sich die Situation ändert und neue Informationen (z.B. welche Tür der Moderator geöffnet hat) eintreffen, ist der Schlüssel zum Erfolg, nicht an bestehenden Ansichten festzuhalten, sondern Wahrscheinlichkeiten und Strategien flexibel aktualisieren zu können.
 
 Die kleine Entscheidung, "die Tür zu wechseln", könnte die Wahrscheinlichkeit, das "neue Auto" Ihres Lebens zu bekommen, verdoppeln.
+

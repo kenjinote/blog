@@ -27,12 +27,12 @@ Le schéma ci-dessous illustre le flux du pipeline d'anonymisation dans un lac d
 
 ```mermaid
 flowchart TD
-    A["Sources de données (Web, IoT, Mobile)"] -->|"Ingestion"| B["Zone de données brutes (Intactes)"]
-    B -->|"Processus ETL"| C["Pipeline d'anonymisation et de nettoyage"]
-    C -->|"Pseudonymisation / Tokenisation"| D["Zone de confiance (k-anonymisée)"]
-    D -->|"Ingénierie des caractéristiques"| E["Zone raffinée (Prête pour le ML)"]
-    E -->|"Entraînement des modèles"| F["Outils BI & Modèles ML"]
-    C -->|"Journaux d'audit"| G["Centre de sécurité et de conformité"]
+    A["Sources de données (Web, IoT, Mobile)"] -->| Ingestion | B["Zone de données brutes (Intactes)"]
+    B -->| Processus ETL | C["Pipeline d'anonymisation et de nettoyage"]
+    C -->| Pseudonymisation / Tokenisation | D["Zone de confiance (k-anonymisée)"]
+    D -->| Ingénierie des caractéristiques | E["Zone raffinée (Prête pour le ML)"]
+    E -->| Entraînement des modèles | F["Outils BI & Modèles ML"]
+    C -->| Journaux d'audit | G["Centre de sécurité et de conformité"]
 ```
 
 Dans un tel pipeline, des traitements tels que le hachage, le masquage et le chiffrement sont appliqués automatiquement à l'entrée des données. Néanmoins, comme nous le verrons plus loin, un simple masquage ou une pseudonymisation ne suffisent pas à éliminer totalement le risque de « ré-identification » par croisement avec d'autres sources de données.
@@ -104,20 +104,20 @@ flowchart TD
     Device2["Périphérique Edge 2 (Smartphone)"]
     Device3["Périphérique Edge 3 (Smartphone)"]
 
-    Server -->|"1. Diffusion des poids du modèle global"| Device1
-    Server -->|"1. Diffusion des poids du modèle global"| Device2
-    Server -->|"1. Diffusion des poids du modèle global"| Device3
+    Server -->| 1. Diffusion des poids du modèle global | Device1
+    Server -->| 1. Diffusion des poids du modèle global | Device2
+    Server -->| 1. Diffusion des poids du modèle global | Device3
 
-    Device1 -->|"2. Entraînement local sur des données privées"| Device1
-    Device2 -->|"2. Entraînement local sur des données privées"| Device2
-    Device3 -->|"2. Entraînement local sur des données privées"| Device3
+    Device1 -->| 2. Entraînement local sur des données privées | Device1
+    Device2 -->| 2. Entraînement local sur des données privées | Device2
+    Device3 -->| 2. Entraînement local sur des données privées | Device3
 
-    Device1 -->|"3. Transmission des gradients/mises à jour du modèle"| Server
-    Device2 -->|"3. Transmission des gradients/mises à jour du modèle"| Server
-    Device3 -->|"3. Transmission des gradients/mises à jour du modèle"| Server
+    Device1 -->| 3. Transmission des gradients/mises à jour du modèle | Server
+    Device2 -->| 3. Transmission des gradients/mises à jour du modèle | Server
+    Device3 -->| 3. Transmission des gradients/mises à jour du modèle | Server
 
-    Server -->|"4. Agrégation (FedAvg)"| Server
-    Server -->|"5. Mise à jour du modèle global"| Server
+    Server -->| 4. Agrégation (FedAvg) | Server
+    Server -->| 5. Mise à jour du modèle global | Server
 ```
 
 #### Algorithme de moyenne fédérée (FedAvg)
@@ -218,5 +218,6 @@ Néanmoins, les solutions technologiques ne sont pas parfaites. Dans l'apprentis
 ## Conclusion
 
 Le devenir des informations personnelles à l'ère du Big Data dépasse le simple défi technologique ; il soulève la question fondamentale de la société dans laquelle nous souhaitons vivre. Comment profiter de la commodité tout en préservant la dignité de l'individu et sa vie privée ? Ce n'est que par la combinaison indissociable de la mise en place de cadres juridiques, de l'innovation constante des technologies de protection de la vie privée, et d'un haut niveau d'alphabétisation numérique de chacun d'entre nous (les fournisseurs de données) qu'une solution durable pourra être atteinte. La vie privée et la commodité ne seront bientôt plus un compromis, mais évolueront pour devenir des « exigences essentielles » conciliables grâce aux technologies de pointe.
+
 
 

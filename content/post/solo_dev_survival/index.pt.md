@@ -37,7 +37,7 @@ As grandes empresas travam uma batalha sangrenta no oceano vermelho por mercados
 
 ```mermaid
 xychart-beta
-  title "Distribuição do Tamanho do Mercado e Alvo do Desenvolvedor Solo"
+    title Distribuição do Tamanho do Mercado e Alvo do Desenvolvedor Solo
   x-axis ["Massa A", "Massa B", "Nicho C", "Nicho D", "Nicho E", "Nicho F", "Nicho G"]
   y-axis "Valor do Mercado" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
@@ -303,5 +303,6 @@ npx create-next-app@latest my-micro-saas
 ```
 
 A batalha já começou.
+
 
 

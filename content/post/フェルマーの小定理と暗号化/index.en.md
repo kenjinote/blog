@@ -158,13 +158,13 @@ flowchart TD
     Start["Start"] --> Input["Input number to test p and number of tests k"]
     Input --> LoopStart["Loop for i = 0 to k-1"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "Yes" --> RandomA["Select random integer a in range 1 < a < p-1"]
+    Condition -- Yes --> RandomA["Select random integer a in range 1 < a < p-1"]
     RandomA --> Calc["Calculate modular exponentiation a^(p-1) mod p"]
     Calc --> CheckPrime{"Is result 1 ?"}
-    CheckPrime -- "No" --> ReturnComposite["p is a composite number (definite)"]
-    CheckPrime -- "Yes" --> Increment["Increment i"]
+    CheckPrime -- No --> ReturnComposite["p is a composite number (definite)"]
+    CheckPrime -- Yes --> Increment["Increment i"]
     Increment --> Condition
-    Condition -- "No" --> ReturnPrime["p is probably prime (probabilistic)"]
+    Condition -- No --> ReturnPrime["p is probably prime (probabilistic)"]
     ReturnComposite --> End["End"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ However, about 300 years later in the 1970s, at the dawn of computer networks, F
 The LINE messages we casually send every day, the shopping on Amazon, all dance on this simple and beautiful formula $a^{p-1} \equiv 1 \pmod p$. No matter how abstract mathematics may be, Fermat's Little Theorem teaches us that the time will definitely come when it will be useful to humanity.
 
 When studying programming or cryptographic theory, understanding the mathematical structures at their foundation will become a great weapon for deeply understanding the behavior of libraries provided as black boxes and designing more secure systems.
+

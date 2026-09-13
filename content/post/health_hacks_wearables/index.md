@@ -251,7 +251,7 @@ processed_df = engineer_features(merged_df)
 
 ```mermaid
 xychart-beta
-    title "HRV vs Daily Coding Hours (Normalized)"
+    title HRV vs Daily Coding Hours (Normalized)
     x-axis ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
     y-axis "HRV & Coding Output" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
@@ -368,5 +368,6 @@ HRVをモニタリングし、RHRのトレンドをチェックし、睡眠ア�
 
 ---
 *Disclaimer: 本記事は筆者の個人的な実験とデータサイエンスのアプローチをまとめたものであり、医療的なアドバイスを提供するものではありません。継続的な体調不良や睡眠障害がある場合は、専門の医療機関にご相談ください。*
+
 
 

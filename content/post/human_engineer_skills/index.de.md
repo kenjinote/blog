@@ -180,7 +180,7 @@ Die traditionelle „Programmiergeschwindigkeit“ oder „Erinnerung an die Syn
 Dieser Paradigmenwechsel zeigt sich auch deutlich in der täglichen Zeiteinteilung (Time Allocation) von Ingenieuren.
 
 ```mermaid
-pie title "Zeiteinteilung eines Ingenieurs (vor der KI-Einführung)"
+pie title Zeiteinteilung eines Ingenieurs (vor der KI-Einführung)
   "Codierung und Syntaxfehlerbehebung": 50
   "Anforderungsdefinition und Systemdesign": 20
   "Implementierung und Ausführung von Tests": 20
@@ -188,7 +188,7 @@ pie title "Zeiteinteilung eines Ingenieurs (vor der KI-Einführung)"
 ```
 
 ```mermaid
-pie title "Zeiteinteilung eines Ingenieurs (im KI-Zeitalter)"
+pie title Zeiteinteilung eines Ingenieurs (im KI-Zeitalter)
   "Domänenmodellierung und Architekturdesign": 40
   "Prompting der KI und Code-Überprüfung": 20
   "Fortgeschrittenes Debugging und Betrieb in der Produktionsumgebung": 30
@@ -207,5 +207,6 @@ Zukünftige Ingenieure sollten sich nicht über kleinere Spezifikationen einer b
 
 Ein wahrer Ingenieur ist keine Person, die Code schreibt, sondern jemand, der Probleme löst.
 Für diejenigen, die weiterhin ihre „menschlichen Ingenieurfähigkeiten“ – Domänenmodellierung, skalierbares Architekturdesign, Kommunikation mit Stakeholdern und Debugging komplexer Systeme – verfeinern, wird die KI kein Feind sein, der Arbeitsplätze stiehlt, sondern der stärkste Partner, der ihre eigene Kreativität und Produktivität um ein Vielfaches steigert.
+
 
 

@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["Terapkan Teorema Bayes"]
   Bayes --> Class{"P(Spam) > 0.9?"}
-  Class -- "Ya" --> Spam["Pindahkan ke Folder Spam"]
-  Class -- "Tidak" --> Ham["Kirim ke Kotak Masuk"]
+  Class -- Ya --> Spam["Pindahkan ke Folder Spam"]
+  Class -- Tidak --> Ham["Kirim ke Kotak Masuk"]
 ```
 
 ### Contoh Implementasi (Python)
@@ -396,8 +396,8 @@ Metode ini menebak posisi yang lebih akurat $x_{n+1}$ yang harus dicari selanjut
 flowchart LR
   Start["Mulai: Tebakan awal x0"] --> Eval["Evaluasi f(xn) dan f'(xn)"]
   Eval --> Check{"Apakah f(xn) ≈ 0?"}
-  Check -- "Ya" --> Done["Kembalikan xn sebagai Akar"]
-  Check -- "Tidak" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- Ya --> Done["Kembalikan xn sebagai Akar"]
+  Check -- Tidak --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ Bagaimana menurut Anda? Dari Identitas Euler hingga Teorema Pythagoras, 10 rumus
 Memahami latar belakang matematika dari rumus-rumus ini adalah langkah penting untuk meningkatkan diri, dari sekadar *coder* yang memanggil pustaka/library yang sudah ada (seperti `math.sin` atau `numpy.fft`), menjadi seorang *engineer* yang mampu memahami struktur internal dan mengeluarkan potensi maksimal dari sistem tersebut. Saat Anda menulis kode berikutnya, cobalah bayangkan sejenak, rumus matematika indah apa yang mungkin sedang bekerja di baliknya.
 
 **Happy Coding and Math!**
+

@@ -111,7 +111,7 @@ $$ E_{stay} = E_{switch} $$
 En el primer cálculo incorrecto, la ilusión de que "el valor esperado aumenta si cambias" fue creada por **tratar diferentes valores, el $X$ en el patrón 1 (en realidad $S$) y el $X$ en el patrón 2 (en realidad $2S$), como la misma variable $X$**.
 
 ```mermaid
-pie title "La verdad del valor esperado (asumiendo S como la cantidad menor)"
+pie title La verdad del valor esperado (asumiendo S como la cantidad menor)
     "Valor esperado si no cambias (1.5S)" : 50
     "Valor esperado si cambias (1.5S)" : 50
 ```
@@ -163,3 +163,4 @@ El error causado por este "valor esperado infinito" está profundamente arraigad
 3. **La dificultad de tratar con el infinito**: introducir el concepto de "infinito", que no se puede aplicar al mundo real, en fórmulas de cálculo produce resultados que van en contra del sentido común.
 
 La próxima vez en la vida que pienses que "el césped del vecino se ve más verde y es mejor cambiar", recuerda esta paradoja. Es posible que solo se hayan intercambiado las variables en tu fórmula de cálculo.
+

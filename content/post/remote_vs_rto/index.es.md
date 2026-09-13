@@ -181,13 +181,13 @@ El núcleo de Zero Trust es que "los límites de la red (dentro o fuera de la em
 ```mermaid
 graph TD
     subgraph "Modelo de defensa perimetral (VPN tradicional)"
-        U1["Ingeniero remoto"] -- "IPsec / SSL VPN" --> VPN["Gateway VPN (Punto único de fallo/Cuello de botella)"]
-        VPN -- "LAN interna (Confianza implícita)" --> App1["Control de código fuente interno"]
+        U1["Ingeniero remoto"] -- IPsec / SSL VPN --> VPN["Gateway VPN (Punto único de fallo/Cuello de botella)"]
+        VPN -- LAN interna (Confianza implícita) --> App1["Control de código fuente interno"]
     end
     
     subgraph "Modelo Zero Trust (BeyondCorp / ZTNA)"
-        U2["Ingeniero remoto (Dispositivo gestionado por MDM)"] -- "Comunicación directa (mTLS HTTPS)" --> IAP["Identity-Aware Proxy (IAP)"]
-        IAP -- "Autorización dinámica por solicitud" --> App2["Aplicaciones Internas / SaaS"]
+        U2["Ingeniero remoto (Dispositivo gestionado por MDM)"] -- Comunicación directa (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
+        IAP -- Autorización dinámica por solicitud --> App2["Aplicaciones Internas / SaaS"]
         IDP["Proveedor de Identidad (Okta / Entra ID)"] -. "MFA / Contexto del usuario" .-> Policy
         MDM["Gestión de dispositivos (Intune / Jamf)"] -. "Salud del dispositivo (Estado de parches)" .-> Policy
         Policy["Motor de políticas de acceso"] -. "Decisión de autorización basada en riesgo" .-> IAP
@@ -234,5 +234,6 @@ La gerencia debe abandonar la ilusión de que "la innovación ocurrirá mágicam
 Por otro lado, los ingenieros (especialmente en los niveles senior) deben cambiar su visión egocéntrica de que "la oficina es innecesaria porque soy más productivo escribiendo código solo". La ingeniería es un deporte de equipo; los ingenieros no solo son responsables de la productividad del código, sino también de una amplia gama de responsabilidades como el diseño del sistema de toda la organización, la capacitación de los miembros junior y la coordinación durante las emergencias. También es cierto que la comunicación de alto ancho de banda en un espacio físico a veces salva todo el proyecto.
 
 La solución óptima varía dependiendo de la fase de la empresa, el equipo y el producto. Sin embargo, lo que es seguro es que en esta nueva era de trabajo, la verdadera competitividad solo la alcanzarán las organizaciones que entiendan la naturaleza sociológica de la comunicación, midan la situación actual con métricas multifacéticas como el marco SPACE y continúen rompiendo las restricciones utilizando tecnologías como la Arquitectura Zero Trust.
+
 
 

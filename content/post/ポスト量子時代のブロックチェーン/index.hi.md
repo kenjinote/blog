@@ -280,7 +280,7 @@ PQC की शुरूआत में सबसे बड़ी बाधा �
 इसे हल करने के लिए, ब्लॉक के आकार को महत्वपूर्ण रूप से बढ़ाना आवश्यक होगा, लेकिन इससे पूर्ण नोड (full node) की भंडारण आवश्यकताओं और नेटवर्क बैंडविड्थ की आवश्यकताओं में वृद्धि होगी, जिससे व्यक्तियों के लिए नोड संचालित करना मुश्किल हो जाएगा, और परिणामस्वरूप यह **नेटवर्क के केंद्रीकरण** की दुविधा को जन्म देगा।
 
 ```mermaid
-pie title "ब्लॉकचेन में हस्ताक्षर डेटा आकार की तुलना (वैचारिक चित्र)"
+pie title ब्लॉकचेन में हस्ताक्षर डेटा आकार की तुलना (वैचारिक चित्र)
     "ECDSA (लगभग 70 Bytes)" : 2
     "Dilithium ML-DSA (लगभग 2,500 Bytes)" : 58
     "SPHINCS+ (लगभग 17,000 Bytes)" : 40
@@ -352,3 +352,4 @@ pie title "ब्लॉकचेन में हस्ताक्षर डे
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

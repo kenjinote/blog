@@ -61,8 +61,8 @@ En d'autres termes, lorsque finalement $A(t) \to 0$ et $B(t) \to 1$, le système
 
 ```mermaid
 graph TD
-    A["Hamiltonien H_0 (État initial)"] -->|"Changement adiabatique (suffisamment lent)"| B["Maintien constant de l'état fondamental"]
-    A -->|"Changement non-adiabatique (trop rapide / bruit thermique)"| C["Transition vers l'état excité (Erreur)"]
+    A["Hamiltonien H_0 (État initial)"] -->| Changement adiabatique (suffisamment lent) | B["Maintien constant de l'état fondamental"]
+    A -->| Changement non-adiabatique (trop rapide / bruit thermique) | C["Transition vers l'état excité (Erreur)"]
     B --> D["Hamiltonien H_P (Solution optimale globale)"]
     C --> E["Piégé dans une solution optimale locale"]
     D --> F["Lecture de la solution"]
@@ -196,10 +196,10 @@ Pour surmonter la limitation des circuits quantiques peu profonds des dispositif
 ```mermaid
 graph TD
     User["Problème de l'utilisateur"] --> Formulation{"Nature du problème"}
-    Formulation -- "Optimisation combinatoire" --> QA_Path["Recuit quantique / Machine d'Ising"]
+    Formulation -- Optimisation combinatoire --> QA_Path["Recuit quantique / Machine d'Ising"]
     QA_Path --> QUBO["Formulation QUBO"]
     QUBO --> DWave["Exécution sur D-Wave"]
-    Formulation -- "Calcul chimique / Calcul général" --> Gate_Path["Modèle à portes quantiques"]
+    Formulation -- Calcul chimique / Calcul général --> Gate_Path["Modèle à portes quantiques"]
     Gate_Path --> Circuit["Conception de circuit quantique (VQE / QAOA)"]
     Circuit --> IBMGoogle["Exécution matérielle quantique IBM / Google"]
 ```
@@ -219,3 +219,4 @@ Les ordinateurs quantiques sont encore une technologie en développement, mais i
 
 ---
 *Cet article explique de manière exhaustive les concepts fondamentaux de l'informatique quantique jusqu'aux dernières tendances matérielles. Restez à l'écoute des futures tendances de recherche.*
+

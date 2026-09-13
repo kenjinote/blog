@@ -125,19 +125,19 @@ graph TD
     Start["Teststart (Eingabe: N, a)"] --> CalcDS["Berechne ungerades d und s für N-1 = d * 2^s"]
     CalcDS --> CalcX["Berechne x = a^d mod N"]
     CalcX --> CheckX1{"x == 1 oder x == N-1 ?"}
-    CheckX1 -- "Yes" --> ReturnTrue["Möglicherweise prim (Probably Prime)"]
-    CheckX1 -- "No" --> LoopStart["Schleifenstart von r = 1 bis s-1"]
+    CheckX1 -- Yes --> ReturnTrue["Möglicherweise prim (Probably Prime)"]
+    CheckX1 -- No --> LoopStart["Schleifenstart von r = 1 bis s-1"]
     
     LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- "No" --> ReturnFalse["Definitiv zusammengesetzt (Composite)"]
-    LoopCondition -- "Yes" --> SquareX["Berechne x = (x * x) mod N"]
+    LoopCondition -- No --> ReturnFalse["Definitiv zusammengesetzt (Composite)"]
+    LoopCondition -- Yes --> SquareX["Berechne x = (x * x) mod N"]
     
     SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- "Yes" --> ReturnTrue
-    CheckXMinus1 -- "No" --> CheckXOne{"x == 1 ?"}
+    CheckXMinus1 -- Yes --> ReturnTrue
+    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
     
-    CheckXOne -- "Yes" --> ReturnFalse
-    CheckXOne -- "No" --> LoopNext["Erhöhe r um 1 und weiter"]
+    CheckXOne -- Yes --> ReturnFalse
+    CheckXOne -- No --> LoopNext["Erhöhe r um 1 und weiter"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ Die Welt der Algorithmen, in der sich Programmierung und Mathematik kreuzen, ist
 *Reference:*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

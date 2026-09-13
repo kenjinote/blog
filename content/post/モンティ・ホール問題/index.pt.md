@@ -160,7 +160,7 @@ Neste caso, a menos que você acredite que acertou o milagre de "1 em 1 milhão"
 O Problema de Monty Hall (3 portas) é simplesmente o mesmo fenômeno deste "1 milhão de portas" em uma escala menor.
 
 ```mermaid
-pie title "Efeito de Mudar de Porta (100 Simulações)"
+pie title Efeito de Mudar de Porta (100 Simulações)
     "Muda e Ganha Prêmio (aprox. 66.7%)" : 67
     "Não Muda e Ganha Prêmio (aprox. 33.3%)" : 33
 ```
@@ -173,3 +173,4 @@ O Problema de Monty Hall vai além de ser apenas um jogo e nos ensina lições i
 2. **Atualize as probabilidades com novas informações (Atualização Bayesiana)**: Quando a situação muda e novas informações são apresentadas (como qual porta o apresentador abriu), a chave para o sucesso é a capacidade de atualizar de forma flexível as probabilidades e estratégias sem se apegar às ideias existentes.
 
 A pequena decisão de "mudar de porta" pode dobrar suas chances de conseguir o "carro novo" de sua vida.
+

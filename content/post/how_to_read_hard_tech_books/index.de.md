@@ -69,11 +69,11 @@ Diese Eigenschaft wurde in Software durch verteilte Wiederholungssysteme (Spaced
 graph LR
     A["Direkt nach dem Lernen (R=100%)"] --> B["Nach 1 Tag (Vergessen)"]
     B --> C{"Wiederholung mit Anki"}
-    C -- "Richtig" --> D["Wiederholungsintervall verlängert sich auf 3 Tage (S steigt)"]
-    C -- "Falsch" --> E["Wiederholungsintervall zurückgesetzt"]
+    C -- Richtig --> D["Wiederholungsintervall verlängert sich auf 3 Tage (S steigt)"]
+    C -- Falsch --> E["Wiederholungsintervall zurückgesetzt"]
     D --> F["Nach 3 Tagen (Langsames Vergessen)"]
     F --> G{"Wiederholung mit Anki"}
-    G -- "Richtig" --> H["Wiederholungsintervall verlängert sich auf 7 Tage"]
+    G -- Richtig --> H["Wiederholungsintervall verlängert sich auf 7 Tage"]
 ```
 
 ### 3.1 Wie man Anki-Karten für Mathematik und Algorithmen erstellt
@@ -250,15 +250,15 @@ flowchart TD
     
     MathProof --> Feynman["Feynman-Technik"]
     Feynman --> FindGap{"Gibt es Verständnislücken?"}
-    FindGap -- "Ja" --> Reread["Das Lehrbuch erneut lesen"]
+    FindGap -- Ja --> Reread["Das Lehrbuch erneut lesen"]
     Reread --> SQ3R
-    FindGap -- "Nein" --> Coding["Formeln in Code übersetzen (Python/C++)"]
+    FindGap -- Nein --> Coding["Formeln in Code übersetzen (Python/C++)"]
     
     Coding --> Debug{"Funktioniert es wie vorgesehen?"}
-    Debug -- "Nein" --> FixMentalModel["Korrektur des mentalen Modells"]
+    Debug -- Nein --> FixMentalModel["Korrektur des mentalen Modells"]
     FixMentalModel --> Coding
     
-    Debug -- "Ja" --> SRS["Konzepte herunterbrechen und in Anki eintragen"]
+    Debug -- Ja --> SRS["Konzepte herunterbrechen und in Anki eintragen"]
     SRS --> BlogOutput["Systematisierung in einem Technik-Blog (Letzte Verankerung)"]
     BlogOutput --> Master["Wissen verinnerlichen / Vollständige Beherrschung"]
 ```
@@ -284,5 +284,6 @@ Beim Schreiben eines Blogs treten folgende Prozesse auf:
 Das Lesen von Fachbüchern über Mathematik und Algorithmen ist keineswegs ein einfacher Weg. Aber indem Sie den Zyklus durchlaufen, die Struktur mit SQ3R zu erfassen, mit der Feynman-Technik zu verbalisieren, in Code umzusetzen und das Verhalten zu überprüfen, das Vergessen mit Anki zu verhindern und es schließlich in einem Technik-Blog in die Welt zu tragen, wird dieses schwer verständliche Wissen definitiv zu Ihrer „Stärke“.
 
 Oberflächliches Wissen über die Nutzung von APIs oder Frameworks veraltet in wenigen Jahren, aber mathematische Denkfähigkeiten und die Grundlagen von Algorithmen sind lebenslange Vermögenswerte. Wenn Sie das nächste Mal ein anspruchsvolles Fachbuch aufschlagen, nutzen Sie unbedingt die in diesem Artikel beschriebenen Methoden und tauchen Sie ein in die Tiefen des Wissens.
+
 
 

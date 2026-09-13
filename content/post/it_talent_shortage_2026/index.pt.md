@@ -75,7 +75,7 @@ $$
 Na maioria dos casos, é evidente que $C_{legacy}(t) > C_{modern}(t)$ dentro de alguns anos (ponto de equilíbrio). No entanto, devido à ausência no mercado de "arquitetos" e "engenheiros de dados" capazes de executar o investimento inicial $I$, muitas empresas estão afundando no pântano do $C_{legacy}$, o que é a realidade de 2026.
 
 ```mermaid
-pie title "Composição das habilidades de TI com maior escassez em 2026"
+pie title Composição das habilidades de TI com maior escassez em 2026
     "Especialista em AI/ML Ops" : 35
     "Arquiteto de Nuvem" : 25
     "Engenheiro de Dados" : 20
@@ -116,7 +116,7 @@ Como resultado disso, as empresas perceberam que é esmagadoramente menos arrisc
 
 ```mermaid
 xychart-beta
-    title "Polarização da demanda de vagas entre níveis júnior e sênior (2021-2026)"
+    title Polarização da demanda de vagas entre níveis júnior e sênior (2021-2026)
     x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
     y-axis "Taxa de oferta de empregos" 0.0 --> 10.0
     line ["Sênior (Arquiteto/MLOps, etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
@@ -182,5 +182,7 @@ A IA não vai roubar nossos empregos, ela é apenas uma ferramenta para nos dedi
 
 Agora é a hora de repensar seu plano de carreira e mudar o rumo em direção ao próximo paradigma.
 Você está pronto para "modernizar" a si mesmo?
+
+
 
 

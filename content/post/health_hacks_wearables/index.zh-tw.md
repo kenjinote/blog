@@ -251,7 +251,7 @@ processed_df = engineer_features(merged_df)
 
 ```mermaid
 xychart-beta
-    title "HRV 與每日寫程式時數 (正規化)"
+    title HRV 與每日寫程式時數 (正規化)
     x-axis ["週一", "週二", "週三", "週四", "週五", "週六", "週日"]
     y-axis "HRV 與寫程式產出" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
@@ -368,5 +368,6 @@ def check_and_ventilate():
 
 ---
 *Disclaimer: 本文為筆者個人實驗與資料科學方法的總結，並不提供醫療建議。若有持續性的身體不適或睡眠障礙，請諮詢專業的醫療機構。*
+
 
 

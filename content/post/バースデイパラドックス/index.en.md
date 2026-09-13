@@ -98,7 +98,7 @@ If we substitute the number of people $n$ into this formula, we can see the prob
 - When $n = 70$, the probability is about **99.9%**
 
 ```mermaid
-pie title "Probability when 23 people gather"
+pie title Probability when 23 people gather
     "There is a pair with the same birthday (50.7%)" : 50.7
     "Everyone is different (49.3%)" : 49.3
 ```
@@ -154,3 +154,4 @@ We are strong at linear (additive) growth, but we cannot simulate in our brains 
 Behind the intuition that "the number 23 is too small compared to the large number 365," there are **"253 invisible threads (pairs)"** woven by 23 people.
 
 Next time you go to a place where people gather, try to imagine not just the visible "number of people," but the "threads of combinations" that exist innumerably among them. The way you view the world should change just a little bit mathematically.
+

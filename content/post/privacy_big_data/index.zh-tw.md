@@ -27,12 +27,12 @@ tags: ["Privacy", "Big Data", "Differential Privacy", "Federated Learning"]
 
 ```mermaid
 flowchart TD
-    A["資料來源 (網頁, 物聯網, 行動裝置)"] -->|"導入"| B["原始資料區 (未處理)"]
-    B -->|"ETL 處理"| C["匿名化與清洗管線"]
-    C -->|"假名化 / 代幣化"| D["信任區 (k-匿名化)"]
-    D -->|"特徵工程"| E["精煉區 (機器學習就緒)"]
-    E -->|"模型訓練"| F["商業智慧工具與機器學習模型"]
-    C -->|"稽核日誌"| G["安全與合規中心"]
+    A["資料來源 (網頁, 物聯網, 行動裝置)"] -->| 導入 | B["原始資料區 (未處理)"]
+    B -->| ETL 處理 | C["匿名化與清洗管線"]
+    C -->| 假名化 / 代幣化 | D["信任區 (k-匿名化)"]
+    D -->| 特徵工程 | E["精煉區 (機器學習就緒)"]
+    E -->| 模型訓練 | F["商業智慧工具與機器學習模型"]
+    C -->| 稽核日誌 | G["安全與合規中心"]
 ```
 
 在這樣的管線中，資料流入時會自動應用雜湊化、遮蔽、加密等處理。但如後文所述，單純的遮蔽或假名化（Pseudonymization）並不能完全排除與其他資料來源比對而產生「重新識別化（Re-identification）」的風險。
@@ -104,20 +104,20 @@ flowchart TD
     Device2["邊緣裝置 2 (智慧型手機)"]
     Device3["邊緣裝置 3 (智慧型手機)"]
 
-    Server -->|"1. 廣播全域模型權重"| Device1
-    Server -->|"1. 廣播全域模型權重"| Device2
-    Server -->|"1. 廣播全域模型權重"| Device3
+    Server -->| 1. 廣播全域模型權重 | Device1
+    Server -->| 1. 廣播全域模型權重 | Device2
+    Server -->| 1. 廣播全域模型權重 | Device3
 
-    Device1 -->|"2. 利用私有資料進行本地訓練"| Device1
-    Device2 -->|"2. 利用私有資料進行本地訓練"| Device2
-    Device3 -->|"2. 利用私有資料進行本地訓練"| Device3
+    Device1 -->| 2. 利用私有資料進行本地訓練 | Device1
+    Device2 -->| 2. 利用私有資料進行本地訓練 | Device2
+    Device3 -->| 2. 利用私有資料進行本地訓練 | Device3
 
-    Device1 -->|"3. 傳送模型梯度/更新"| Server
-    Device2 -->|"3. 傳送模型梯度/更新"| Server
-    Device3 -->|"3. 傳送模型梯度/更新"| Server
+    Device1 -->| 3. 傳送模型梯度/更新 | Server
+    Device2 -->| 3. 傳送模型梯度/更新 | Server
+    Device3 -->| 3. 傳送模型梯度/更新 | Server
 
-    Server -->|"4. 聚合 (FedAvg)"| Server
-    Server -->|"5. 更新全域模型"| Server
+    Server -->| 4. 聚合 (FedAvg) | Server
+    Server -->| 5. 更新全域模型 | Server
 ```
 
 #### Federated Averaging (FedAvg) 演算法
@@ -218,5 +218,6 @@ def get_dp_average_salary(dataframe, epsilon=1.0):
 ## 結論
 
 在大數據時代，個人資訊的去向已超越了單純的技術問題，而是向我們拋出了一個根本性的疑問：我們究竟渴望一個什麼樣的社會？在享受便利性的同時，該如何堅守個人的尊嚴與隱私。唯有透過完善法規、隱私保護技術的持續創新，以及提升每一位提供資料的使用者素養，這三者的三位一體，我們才能達成永續的解決方案。隱私與便利性將不再是權衡關係，而是透過最新科技演變為可兼顧的「必要條件」。
+
 
 

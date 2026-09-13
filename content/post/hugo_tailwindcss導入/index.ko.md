@@ -275,10 +275,10 @@ flowchart TD
     A["assets/css/main.css"] -->|resources.Get| B["Hugo 메모리 공간"]
     B -->|resources.PostCSS| C["PostCSS + Tailwind JIT 처리"]
     C --> D{"hugo.IsProduction ?"}
-    D -- "Yes (프로덕션 환경)" --> E["minify (공백·줄바꿈 삭제)"]
+    D -- Yes (프로덕션 환경) --> E["minify (공백·줄바꿈 삭제)"]
     E --> F["fingerprint (해시 계산)"]
     F --> G["public/css/main.[hash].css (SRI 포함)"]
-    D -- "No (개발 환경)" --> H["public/css/main.css"]
+    D -- No (개발 환경) --> H["public/css/main.css"]
 ```
 
 1. **`resources.Get`**: `assets` 디렉토리 내의 지정된 파일을 찾아 메모리 상의 리소스 객체로 로드합니다.
@@ -412,3 +412,4 @@ Hugo 같은 블로그나 문서 사이트에서는 Markdown에서 생성된 순�
 또한 출력되는 CSS 크기가 항상 최소화되기 때문에 Core Web Vitals 점수 향상으로도 직결되며 SEO 관점에서도 매우 유리하게 작용합니다.
 
 Hugo와 Tailwind CSS의 조합은 개인 기술 블로그부터 대규모 기업 사이트까지 모든 프로젝트에서 '최고의 선택지' 중 하나로 계속 남을 것입니다. 부디 이 강력한 툴체인을 활용하여 쾌적한 웹 개발 라이프를 즐기시길 바랍니다!
+

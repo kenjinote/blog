@@ -275,10 +275,10 @@ flowchart TD
     A["assets/css/main.css"] -->|resources.Get| B["Hugo内存空间"]
     B -->|resources.PostCSS| C["PostCSS + Tailwind JIT 处理"]
     C --> D{"hugo.IsProduction ?"}
-    D -- "Yes (生产环境)" --> E["minify (删除空格与换行)"]
+    D -- Yes (生产环境) --> E["minify (删除空格与换行)"]
     E --> F["fingerprint (计算哈希)"]
     F --> G["public/css/main.[hash].css (带SRI)"]
-    D -- "No (开发环境)" --> H["public/css/main.css"]
+    D -- No (开发环境) --> H["public/css/main.css"]
 ```
 
 1. **`resources.Get`**：在`assets`目录中查找指定的文件，并将其作为内存中的资源对象加载。
@@ -412,3 +412,4 @@ NODE_ENV=production hugo --minify --environment production
 此外，由于输出的CSS大小总是被最小化的，这直接提升了Core Web Vitals的分数，从SEO的角度来看也非常有利。
 
 Hugo与Tailwind CSS的组合，无论是对于个人的技术博客还是大型的企业网站，在所有项目中都将继续是“最佳选择”之一。请务必活用这条强大的工具链，享受舒适的Web开发生活吧！
+

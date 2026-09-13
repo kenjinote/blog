@@ -125,19 +125,19 @@ graph TD
     Start["Начало теста (Вход: N, a)"] --> CalcDS["Вычисление нечетного d и s, удовлетворяющих N-1 = d * 2^s"]
     CalcDS --> CalcX["Вычисление x = a^d mod N"]
     CalcX --> CheckX1{"x == 1 или x == N-1 ?"}
-    CheckX1 -- "Да" --> ReturnTrue["Возможно простое (Probably Prime)"]
-    CheckX1 -- "Нет" --> LoopStart["Начало цикла от r = 1 до s-1"]
+    CheckX1 -- Да --> ReturnTrue["Возможно простое (Probably Prime)"]
+    CheckX1 -- Нет --> LoopStart["Начало цикла от r = 1 до s-1"]
     
     LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- "Нет" --> ReturnFalse["Точно составное (Composite)"]
-    LoopCondition -- "Да" --> SquareX["Вычисление x = (x * x) mod N"]
+    LoopCondition -- Нет --> ReturnFalse["Точно составное (Composite)"]
+    LoopCondition -- Да --> SquareX["Вычисление x = (x * x) mod N"]
     
     SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- "Да" --> ReturnTrue
-    CheckXMinus1 -- "Нет" --> CheckXOne{"x == 1 ?"}
+    CheckXMinus1 -- Да --> ReturnTrue
+    CheckXMinus1 -- Нет --> CheckXOne{"x == 1 ?"}
     
-    CheckXOne -- "Да" --> ReturnFalse
-    CheckXOne -- "Нет" --> LoopNext["Увеличение r на 1 и переход к следующему"]
+    CheckXOne -- Да --> ReturnFalse
+    CheckXOne -- Нет --> LoopNext["Увеличение r на 1 и переход к следующему"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ graph LR
 *Reference:*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

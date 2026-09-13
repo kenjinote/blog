@@ -57,11 +57,11 @@ El flujo general del algoritmo es el siguiente:
 graph TD
     A["Entrada: Número compuesto a factorizar N"] --> B["Elegir un número aleatorio a tal que a < N"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Sí" --> D["Imprimir factor trivial gcd(a, N) y terminar"]
-    C -- "No" --> E["Encontrar el período r de f(x) = a^x mod N con algoritmo cuántico"]
+    C -- Sí --> D["Imprimir factor trivial gcd(a, N) y terminar"]
+    C -- No --> E["Encontrar el período r de f(x) = a^x mod N con algoritmo cuántico"]
     E --> F{"¿r es par y a^(r/2) ≢ -1 mod N ?"}
-    F -- "No" --> B
-    F -- "Sí" --> G["Calcular factores p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- No --> B
+    F -- Sí --> G["Calcular factores p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["Salida: p, q"]
 ```
 
@@ -358,4 +358,5 @@ Te invitamos a ejecutar el código de Python presentado aquí en tu propio entor
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

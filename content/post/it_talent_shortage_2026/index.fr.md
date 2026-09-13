@@ -75,7 +75,7 @@ $$
 Dans de nombreux cas, il est évident que $C_{legacy}(t) > C_{modern}(t)$ d'ici quelques années (seuil de rentabilité), mais comme le marché manque d''architectes' et d''ingénieurs de données' capables de réaliser l'investissement initial $I$, la réalité en 2026 est que de nombreuses entreprises s'enfoncent dans le bourbier de $C_{legacy}$.
 
 ```mermaid
-pie title "Répartition des compétences informatiques les plus en pénurie en 2026"
+pie title Répartition des compétences informatiques les plus en pénurie en 2026
     "Spécialiste AI/ML Ops" : 35
     "Architecte Cloud" : 25
     "Ingénieur de Données" : 20
@@ -116,7 +116,7 @@ En conséquence, les entreprises ont réalisé qu'il est infiniment moins risqu�
 
 ```mermaid
 xychart-beta
-    title "Polarisation de la demande de recrutement entre les juniors et les seniors (2021-2026)"
+    title Polarisation de la demande de recrutement entre les juniors et les seniors (2021-2026)
     x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
     y-axis "Taux d'offres d'emploi" 0.0 --> 10.0
     line ["Senior (Architecte/MLOps, etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
@@ -182,5 +182,7 @@ L'IA ne va pas nous voler notre travail, ce n'est qu'un outil qui nous permet de
 
 C'est maintenant le moment de revoir votre plan de carrière et de prendre le virage vers le prochain paradigme.
 Êtes-vous prêt pour votre propre 'modernisation' ?
+
+
 
 

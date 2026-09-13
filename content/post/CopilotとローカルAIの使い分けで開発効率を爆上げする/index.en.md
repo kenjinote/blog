@@ -58,10 +58,10 @@ The Mermaid diagram below shows a hybrid architecture illustrating how local age
 
 ```mermaid
 graph TD
-    Dev["Developer (IDE)"] -->|"Real-time Typing"| LocalProxy{"Intelligent Router / Proxy"}
+    Dev["Developer (IDE)"] -->| Real-time Typing | LocalProxy{"Intelligent Router / Proxy"}
     
-    LocalProxy -->|"Fast, Privacy-first Task"| LocalAI["Local AI Engine (Ollama / LM Studio)"]
-    LocalProxy -->|"Complex Logic, Large Context"| CloudAI["Cloud AI Engine (Copilot / OpenAI API)"]
+    LocalProxy -->| Fast, Privacy-first Task | LocalAI["Local AI Engine (Ollama / LM Studio)"]
+    LocalProxy -->| Complex Logic, Large Context | CloudAI["Cloud AI Engine (Copilot / OpenAI API)"]
     
     subgraph "Local Environment"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ It is not a binary choice between "Cloud's GitHub Copilot" or "Local AI"; rather
 Please use the decision trees and architectures introduced in this article as a reference to take your IDE environment to the next level. By stepping up from just "using" AI to "combining and directing it in the right places," your development efficiency will undoubtedly be boosted.
 
 Happy Coding with Hybrid AI!
+

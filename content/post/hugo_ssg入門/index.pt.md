@@ -173,7 +173,7 @@ O fluxo geral do pipeline de migração é mostrado abaixo.
 ```mermaid
 flowchart LR
   WPDB["Banco de Dados WP"] -->|Plugin| Exporter["Ferramenta de Exportação"]
-  Exporter -->|"Extrai Texto, \nMeta, Imagens"| ZipFile["Zip / Pasta"]
+  Exporter -->| Extrai Texto, \nMeta, Imagens | ZipFile["Zip / Pasta"]
   ZipFile -->|Descompactar| MarkdownFiles["Arquivos Markdown \n(content/)"]
   ZipFile -->|Descompactar| ImageFiles["Imagens \n(static/wp-content/)"]
   MarkdownFiles --> Formatting["Revisão e Formatação \n(Ajustar Shortcodes)"]
@@ -323,3 +323,4 @@ Neste artigo, explicamos em detalhes sobre a migração de um CMS dinâmico como
 Embora a migração para um gerador de sites estáticos requeira um custo de aprendizado inicial (operações no Git, sintaxe do Markdown, execução de comandos CLI pelo terminal, compreensão das especificações do motor de templates, etc.), ela traz retornos de "velocidade de exibição avassaladora", "segurança sólida" e ser "livre de manutenção", que mais do que compensam esse custo.
 
 Se o seu site não necessita de mudanças de design frequentes ou processos dinâmicos complexos (funcionalidades exclusivas para membros, recursos avançados de e-commerce, etc.) e seu principal objetivo é a divulgação de informações (blogs, mídias, sites corporativos), a migração para o Hugo será, sem dúvida, um dos investimentos técnicos mais eficientes. Esperamos que você use este artigo como referência para dar o primeiro passo rumo à operação de sites de próxima geração com o Hugo.
+

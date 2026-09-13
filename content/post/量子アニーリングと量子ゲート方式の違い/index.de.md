@@ -61,8 +61,8 @@ Das bedeutet, dass das System, wenn schließlich $A(t) \to 0$ und $B(t) \to 1$ e
 
 ```mermaid
 graph TD
-    A["Hamiltonoperator H_0 (Anfangszustand)"] -->|"Adiabatische Änderung (langsam genug)"| B["Bleibt stets im Grundzustand"]
-    A -->|"Nicht-adiabatische Änderung (zu schnell/thermisches Rauschen)"| C["Übergang in angeregte Zustände (Fehler)"]
+    A["Hamiltonoperator H_0 (Anfangszustand)"] -->| Adiabatische Änderung (langsam genug) | B["Bleibt stets im Grundzustand"]
+    A -->| Nicht-adiabatische Änderung (zu schnell/thermisches Rauschen) | C["Übergang in angeregte Zustände (Fehler)"]
     B --> D["Hamiltonoperator H_P (Globales Optimum)"]
     C --> E["Gefangen in lokalem Optimum"]
     D --> F["Auslesen der Lösung"]
@@ -196,10 +196,10 @@ Um die Einschränkungen der flachen Quantenschaltkreise von NISQ-Geräten zu üb
 ```mermaid
 graph TD
     User["Benutzerproblem"] --> Formulation{"Art des Problems"}
-    Formulation -- "Kombinatorische Optimierung" --> QA_Path["Quanten-Annealing / Ising-Maschine"]
+    Formulation -- Kombinatorische Optimierung --> QA_Path["Quanten-Annealing / Ising-Maschine"]
     QA_Path --> QUBO["QUBO-Formulierung"]
     QUBO --> DWave["Ausführung auf D-Wave"]
-    Formulation -- "Chemieberechnungen / Universelle Berechnungen" --> Gate_Path["Quantengatter-Modell"]
+    Formulation -- Chemieberechnungen / Universelle Berechnungen --> Gate_Path["Quantengatter-Modell"]
     Gate_Path --> Circuit["Schaltkreisentwurf (VQE / QAOA)"]
     Circuit --> IBMGoogle["Ausführung auf IBM / Google Quantenhardware"]
 ```
@@ -219,3 +219,4 @@ Quantencomputer befinden sich noch in der Entwicklungsphase, doch sowohl bei der
 
 ---
 *Dieser Artikel bietet einen umfassenden Überblick von den grundlegenden Konzepten des Quantencomputings bis hin zu den neuesten Hardwaretrends. Bitte verfolgen Sie auch in Zukunft die neuesten Forschungsentwicklungen.*
+

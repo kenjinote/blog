@@ -58,10 +58,10 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 
 ```mermaid
 graph TD
-    Dev["개발자 (IDE)"] -->|"실시간 타이핑"| LocalProxy{"인텔리전트 라우터 / 프록시"}
+    Dev["개발자 (IDE)"] -->| 실시간 타이핑 | LocalProxy{"인텔리전트 라우터 / 프록시"}
     
-    LocalProxy -->|"빠르고 프라이버시를 우선하는 작업"| LocalAI["로컬 AI 엔진 (Ollama / LM Studio)"]
-    LocalProxy -->|"복잡한 로직, 대용량 컨텍스트"| CloudAI["클라우드 AI 엔진 (Copilot / OpenAI API)"]
+    LocalProxy -->| 빠르고 프라이버시를 우선하는 작업 | LocalAI["로컬 AI 엔진 (Ollama / LM Studio)"]
+    LocalProxy -->| 복잡한 로직, 대용량 컨텍스트 | CloudAI["클라우드 AI 엔진 (Copilot / OpenAI API)"]
     
     subgraph "로컬 환경"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ Continue의 설정 파일(`config.json`)에서 로컬의 Ollama 서버를 엔드
 부디 본 문서에서 소개한 의사결정 트리나 아키텍처를 참고하여, 여러분의 IDE 환경을 한 단계 끌어올리시기 바랍니다. AI를 '사용하는' 입장에서 '적재적소에 조합하여 부리는' 입장으로 한 단계 도약함으로써 개발 효율은 틀림없이 폭발적으로 향상될 것입니다.
 
 Happy Coding with Hybrid AI!
+

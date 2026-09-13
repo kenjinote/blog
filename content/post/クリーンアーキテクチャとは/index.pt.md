@@ -109,9 +109,9 @@ Da mesma forma, formatos de dados usados em um círculo externo não devem ser u
 
 ```mermaid
 graph LR
-    A["Frameworks & Drivers"] -->|"Depende"| B["Interface Adapters"]
-    B -->|"Depende"| C["Use Cases"]
-    C -->|"Depende"| D["Entities"]
+    A["Frameworks & Drivers"] -->| Depende | B["Interface Adapters"]
+    B -->| Depende | C["Use Cases"]
+    C -->| Depende | D["Entities"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,3 +422,4 @@ O importante não é imitar cegamente a estrutura de diretórios da Clean Archit
 
 ---
 *Referência: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin*
+

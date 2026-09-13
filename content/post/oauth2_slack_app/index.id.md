@@ -28,11 +28,11 @@ Langkah pertama dalam memahami OAuth 2.0 adalah memahami dengan tepat tokoh-toko
 
 ```mermaid
 graph TD
-    RO["Resource Owner (Pengguna)"] -- "Memberikan otorisasi" --> C["Client (Slack App)"]
-    C -- "Meminta otorisasi" --> AS["Authorization Server (Server Otorisasi Slack)"]
-    AS -- "Menerbitkan akses token" --> C
-    C -- "Mengakses menggunakan token" --> RS["Resource Server (Server Slack API)"]
-    RO -- "Login dengan ID/Kata Sandi" --> AS
+    RO["Resource Owner (Pengguna)"] -- Memberikan otorisasi --> C["Client (Slack App)"]
+    C -- Meminta otorisasi --> AS["Authorization Server (Server Otorisasi Slack)"]
+    AS -- Menerbitkan akses token --> C
+    C -- Mengakses menggunakan token --> RS["Resource Server (Server Slack API)"]
+    RO -- Login dengan ID/Kata Sandi --> AS
 ```
 
 1. **Resource Owner (Pemilik Sumber Daya)**
@@ -371,4 +371,5 @@ Artikel ini menjelaskan Authorization Code Grant Flow pada OAuth 2.0 secara deta
 4. Desain cakupan (scope) berdasarkan **Prinsip Hak Istimewa Minimal (Principle of Least Privilege)** dan enkripsi saat menyimpan di DB adalah elemen yang sangat penting dalam pengoperasiannya.
 
 OAuth 2.0 sangat dalam, dengan sejumlah besar spesifikasi bahkan hanya di dalam RFC, tetapi dengan mempelajari dan mempraktikkannya langsung pada platform aktual (Slack) seperti ini, Anda pasti akan merasakan filosofi desainnya yang elegan dan mekanisme keamanannya yang kokoh. Semoga pengetahuan dalam artikel ini bermanfaat untuk pengembangan aplikasi Anda di masa depan dan implementasi integrasi API.
+
 

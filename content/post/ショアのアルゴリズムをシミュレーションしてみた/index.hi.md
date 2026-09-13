@@ -57,11 +57,11 @@ graph TD
 graph TD
     A["इनपुट: वह समग्र संख्या N जिसका अभाज्य गुणनखंडन करना है"] --> B["यादृच्छिक संख्या a चुनें जहाँ a < N"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Yes" --> D["तुच्छ गुणनखंड gcd(a, N) आउटपुट करें और समाप्त करें"]
-    C -- "No" --> E["क्वांटम एल्गोरिथ्म के साथ f(x) = a^x mod N की अवधि r खोजें"]
+    C -- Yes --> D["तुच्छ गुणनखंड gcd(a, N) आउटपुट करें और समाप्त करें"]
+    C -- No --> E["क्वांटम एल्गोरिथ्म के साथ f(x) = a^x mod N की अवधि r खोजें"]
     E --> F{"क्या r सम है और a^(r/2) ≢ -1 mod N ?"}
-    F -- "No" --> B
-    F -- "Yes" --> G["गुणनखंड p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N) की गणना करें"]
+    F -- No --> B
+    F -- Yes --> G["गुणनखंड p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N) की गणना करें"]
     G --> H["आउटपुट: p, q"]
 ```
 
@@ -358,4 +358,5 @@ IT इन्फ्रास्ट्रक्चर का प्रबंधन
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

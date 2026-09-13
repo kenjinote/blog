@@ -275,7 +275,7 @@ Jika Bitcoin mengadopsi PQC sambil mempertahankan batas ukuran blok saat ini (be
 Untuk mengatasi ini, batas ukuran blok perlu ditingkatkan secara signifikan, namun ini akan meningkatkan persyaratan penyimpanan dan bandwidth jaringan node penuh, membuat operasi node oleh individu menjadi sulit, yang pada akhirnya mengarah pada dilema **sentralisasi jaringan**.
 
 ```mermaid
-pie title "Perbandingan Ukuran Data Tanda Tangan di Blockchain (Diagram Konsep)"
+pie title Perbandingan Ukuran Data Tanda Tangan di Blockchain (Diagram Konsep)
     "ECDSA (Sekitar 70 Bytes)" : 2
     "Dilithium ML-DSA (Sekitar 2,500 Bytes)" : 58
     "SPHINCS+ (Sekitar 17,000 Bytes)" : 40
@@ -346,3 +346,4 @@ Kita dapat berharap pada masa depan di mana komputer kuantum sebagai kearifan ba
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

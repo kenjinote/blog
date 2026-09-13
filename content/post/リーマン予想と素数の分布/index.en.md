@@ -148,7 +148,7 @@ graph LR
     B --> C["Ciphertext"]
     C --> D["Decrypt with private key (d)"]
     D --> E["Original Plaintext"]
-    F["Attacker"] -- "Attempts to factorize N" --> C
+    F["Attacker"] -- Attempts to factorize N --> C
     F -.-> G["d cannot be calculated without knowing p and q"]
 ```
 
@@ -214,3 +214,4 @@ The insatiable exploration of prime numbers that has continued since ancient Gre
 The Riemann Hypothesis symbolizes both the "abstract beauty" of mathematics and its "astonishing applicability to the physical world and real society."
 
 When this massive mountain of mathematics, whose peak no one has yet reached, is conquered someday, we will completely understand the universal truth of prime numbers and gain a new perspective on the foundation of our information society. Studying cryptography is, in itself, a journey tracing the history of human wisdom.
+

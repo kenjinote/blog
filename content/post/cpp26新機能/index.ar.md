@@ -19,13 +19,13 @@ tags: ["C++", "C++26", "Programming", "Tech"]
 
 ```mermaid
 timeline
-    title "تطور توحيد C++"
-    "C++11" : "بداية Modern C++" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "تحسين الميزات" : "generic lambda, return type deduction"
-    "C++17" : "تحسين القابلية للاستخدام" : "std::optional, fold expressions, structured binding"
-    "C++20" : "نقلة نوعية" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "المزيد من التوسعات" : "Deducing this, std::expected, std::print"
-    "C++26" : "ثورة الجيل القادم" : "Reflection, Contracts, Pattern Matching"
+    title تطور توحيد C++
+    C++11 : بداية Modern C++ : auto, lambda, constexpr, move semantics
+    C++14 : تحسين الميزات : generic lambda, return type deduction
+    C++17 : تحسين القابلية للاستخدام : std::optional, fold expressions, structured binding
+    C++20 : نقلة نوعية : Concepts, Modules, Coroutines, Ranges
+    C++23 : المزيد من التوسعات : Deducing this, std::expected, std::print
+    C++26 : ثورة الجيل القادم : Reflection, Contracts, Pattern Matching
 ```
 
 يهدف C++26 إلى زيادة **قدرة الكود على الوصف الذاتي (الانعكاس)** و**المتانة (برمجة العقود)** إلى أقصى حد، بناءً على الميزات واسعة النطاق مثل Concepts و Modules التي تم تقديمها في C++20. دعونا نتعمق في تفاصيل كل ميزة.
@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["النوع: User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["نطاق meta::info"]
-    C -->| "[: member :]" | D["وصول مباشر للعضو (obj.id, obj.name)"]
+    A["النوع: User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["نطاق meta::info"]
+    C -->| [: member :] | D["وصول مباشر للعضو (obj.id, obj.name)"]
     D --> E["الكود المولد (بدون عبء إضافي)"]
 ```
 
@@ -146,12 +146,12 @@ double calculate_average(const std::vector<double>& v)
 ```mermaid
 graph TD
     A["استدعاء الدالة"] --> B{"تقييم الشرط المسبق"}
-    B -- "صحيح" --> C["تنفيذ جسم الدالة"]
-    B -- "خطأ" --> D["استدعاء معالج الانتهاكات"]
+    B -- صحيح --> C["تنفيذ جسم الدالة"]
+    B -- خطأ --> D["استدعاء معالج الانتهاكات"]
     D --> E["تسجيل الخطأ / التوقف / إلقاء استثناء"]
     C --> F{"تقييم الشرط اللاحق"}
-    F -- "صحيح" --> G["إرجاع القيمة"]
-    F -- "خطأ" --> D
+    F -- صحيح --> G["إرجاع القيمة"]
+    F -- خطأ --> D
 ```
 
 باستخدام العقود، لا يتم توثيق مواصفات واجهة برمجة التطبيقات (API) ذاتيًا فحسب، بل يمكن إيقاف البرنامج والتحكم فيه بأمان قبل التسبب في سلوك غير محدد (UB). لذا يُتوقع تقليل أخطاء تلف الذاكرة والأخطاء المنطقية الخاصة بلغة C++ بشكل كبير.
@@ -367,3 +367,5 @@ $$
 
 ---
 *كُتب هذا المقال استنادًا إلى حالة التوحيد القياسي لـ C++26 اعتبارًا من عام 2026. يرجى ملاحظة أن بعض بنى الجمل قد تتغير اعتمادًا على حالة تنفيذ كل مترجم.*
+
+

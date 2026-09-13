@@ -98,7 +98,7 @@ Sustituyendo el número de personas $n$ en esta fórmula, vemos que la probabili
 - Cuando $n = 70$, la probabilidad es aproximadamente **99.9%**
 
 ```mermaid
-pie title "Probabilidades con 23 personas"
+pie title Probabilidades con 23 personas
     "Hay un par con el mismo cumpleaños (50.7%)" : 50.7
     "Todos son diferentes (49.3%)" : 49.3
 ```
@@ -154,3 +154,4 @@ Somos buenos para percibir el crecimiento lineal (aditivo), pero nuestro cerebro
 Detrás de la intuición de que "el número 23 es demasiado pequeño comparado con el gran número 365", se oculta una red de **"253 hilos invisibles (pares)"** creados por esas 23 personas.
 
 La próxima vez que vayas a un lugar concurrido, trata de imaginar no solo el "número de personas" visibles, sino también los "hilos de combinaciones" innumerables que existen entre ellos. Tu forma de ver el mundo cambiará, al menos un poco, desde una perspectiva matemática.
+

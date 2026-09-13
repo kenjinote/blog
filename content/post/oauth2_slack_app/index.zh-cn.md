@@ -28,11 +28,11 @@ OAuth 2.0 作为一种标准协议（RFC 6749）应运而生，它旨在避免�
 
 ```mermaid
 graph TD
-    RO["Resource Owner (用户)"] -- "授予授权" --> C["Client (Slack App)"]
-    C -- "请求授权" --> AS["Authorization Server (Slack 授权服务器)"]
-    AS -- "颁发访问令牌" --> C
-    C -- "使用令牌进行访问" --> RS["Resource Server (Slack API 服务器)"]
-    RO -- "使用 ID/密码登录" --> AS
+    RO["Resource Owner (用户)"] -- 授予授权 --> C["Client (Slack App)"]
+    C -- 请求授权 --> AS["Authorization Server (Slack 授权服务器)"]
+    AS -- 颁发访问令牌 --> C
+    C -- 使用令牌进行访问 --> RS["Resource Server (Slack API 服务器)"]
+    RO -- 使用 ID/密码登录 --> AS
 ```
 
 1. **Resource Owner（资源所有者）**
@@ -371,4 +371,5 @@ sequenceDiagram
 4. 基于 **最小权限原则** 的作用域设计以及存入 DB 时的加密，是运维上绝对不可或缺的要素。
 
 OAuth 2.0 非常深奥，单是 RFC 就有庞大的规范，但像这样以实际的平台（Slack）为目标，边动手边学习，应该就能切实感受到其洗练的设计理念与坚固的安全机制。如果在今后的应用开发和 API 集成实现中，本文的知识能派上用场，那将是我的荣幸。
+
 

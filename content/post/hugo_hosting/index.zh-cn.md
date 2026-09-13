@@ -216,7 +216,7 @@ $$ Cost = \sum_{i=1}^{n} \left( B_i \times (1 - C_i) \times R \right) $$
 让我们将网站的加载时间进行如下分解：
 
 ```mermaid
-pie title "典型网站加载时间分布"
+pie title 典型网站加载时间分布
     "TTFB (首字节时间)" : 15
     "内容下载 (HTML/CSS)" : 20
     "DOM 解析与渲染" : 45
@@ -255,5 +255,6 @@ Cloudflare Web Analytics只需嵌入一个非常轻量的JavaScript片段即可�
 5. **轻量级分析**: 引入兼顾隐私且不损耗性能的Cloudflare Web Analytics等工具。
 
 通过将这些实践结合起来，即可免费构建一个足以应对每月数百万PV级别大规模流量的、可扩展且坚固的博客系统。如果您正在考虑搭建技术博客、企业网站或个人作品集网站，请务必尝试一下这种 Jamstack + Hugo + Cloudflare Pages 的架构。
+
 
 

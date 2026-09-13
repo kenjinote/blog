@@ -158,13 +158,13 @@ flowchart TD
     Start["Start"] --> Input["Zahl p zum Testen und Anzahl der Tests k eingeben"]
     Input --> LoopStart["Schleife von i = 0 bis k-1"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "Ja" --> RandomA["Wähle zufällige ganze Zahl a im Bereich 1 < a < p-1"]
+    Condition -- Ja --> RandomA["Wähle zufällige ganze Zahl a im Bereich 1 < a < p-1"]
     RandomA --> Calc["Berechne modulares Potenzieren a^(p-1) mod p"]
     Calc --> CheckPrime{"Ist das Ergebnis 1?"}
-    CheckPrime -- "Nein" --> ReturnComposite["p ist eine zusammengesetzte Zahl (bestätigt)"]
-    CheckPrime -- "Ja" --> Increment["Erhöhe i"]
+    CheckPrime -- Nein --> ReturnComposite["p ist eine zusammengesetzte Zahl (bestätigt)"]
+    CheckPrime -- Ja --> Increment["Erhöhe i"]
     Increment --> Condition
-    Condition -- "Nein" --> ReturnPrime["p ist wahrscheinlich eine Primzahl (probabilistisch)"]
+    Condition -- Nein --> ReturnPrime["p ist wahrscheinlich eine Primzahl (probabilistisch)"]
     ReturnComposite --> End["Ende"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ Etwa 300 Jahre später, in den 1970er Jahren, an den Anfängen von Computernetzw
 Die LINE-Nachrichten, die wir jeden Tag beiläufig senden, und unsere Einkäufe bei Amazon tanzen alle auf dieser einfachen und schönen Formel $a^{p-1} \equiv 1 \pmod p$. Egal wie abstrakt Mathematik ist, der kleine Satz von Fermat lehrt uns, dass immer die Zeit kommen wird, in der sie für die Menschheit nützlich sein wird.
 
 Beim Erlernen von Programmierung und Kryptographietheorie wird das Verständnis der zugrunde liegenden mathematischen Strukturen eine starke Waffe sein, um das Verhalten von Bibliotheken, die als Blackboxes bereitgestellt werden, tiefgreifend zu verstehen und sicherere Systeme zu entwerfen.
+

@@ -105,7 +105,7 @@ IBM sendiri menghindari penggunaan istilah "keunggulan" dan mengusulkan "Volume 
 
 ```mermaid
 timeline
-    title "Evolusi Tonggak Sejarah Kuantum"
+    title Evolusi Tonggak Sejarah Kuantum
     2019 : "Google Sycamore (53Q)" : "Pengumuman Keunggulan Kuantum"
     2019 : "Sanggahan IBM" : "Simulasi superkomputer Summit dalam 2,5 hari"
     2021 : "IBM Eagle (127Q)" : "Menembus batas 100 qubit"
@@ -179,3 +179,4 @@ Implementasi protokol untuk menjalankan gerbang non-Clifford dengan toleransi ke
 Saat ini kita sedang menyaksikan periode transisi dari perangkat NISQ yang penuh noise ke perangkat qubit logis yang dilengkapi koreksi kesalahan. Dalam beberapa tahun hingga satu dekade ke depan, penemuan baru dalam ilmu material, revolusi dalam proses penemuan obat, dan terobosan dalam masalah optimisasi akan menjadi kenyataan seiring dengan evolusi perangkat keras kuantum ini.
 
 Kita harus terus mengawasi pergerakan dari Google, IBM, dan para peneliti di seluruh dunia yang sedang membentuk ilmu komputasi masa depan.
+

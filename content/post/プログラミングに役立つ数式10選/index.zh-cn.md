@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["应用贝叶斯定理"]
   Bayes --> Class{"P(垃圾邮件) > 0.9?"}
-  Class -- "是" --> Spam["移至垃圾邮件文件夹"]
-  Class -- "否" --> Ham["发送至收件箱"]
+  Class -- 是 --> Spam["移至垃圾邮件文件夹"]
+  Class -- 否 --> Ham["发送至收件箱"]
 ```
 
 ### 实现示例 (Python)
@@ -396,8 +396,8 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 flowchart LR
   Start["开始: 猜测初始值 x0"] --> Eval["计算 f(xn) 和 f'(xn)"]
   Eval --> Check{"f(xn) ≈ 0 吗?"}
-  Check -- "是" --> Done["返回 xn 作为根"]
-  Check -- "否" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- 是 --> Done["返回 xn 作为根"]
+  Check -- 否 --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ int main() {
 理解这些数学背景不仅是必须的，更是从一个仅仅调用现有库（如 `math.sin` 或 `numpy.fft`）的编码者，进阶成为能深入理解内部结构并发挥其极限的工程师的必经之路。下次编写代码时，不妨稍微展开想象，思考一下在这行代码背后，有哪些优美的数学公式正在运作。
 
 **Happy Coding and Math!**
+

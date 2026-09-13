@@ -109,14 +109,14 @@ Okamura의 콘테사 세콘다는 조르제토 주지아로에 의한 아름다�
 ```mermaid
 flowchart TD
     Start["어떠한 데스크 워크가 많은가?"] --> Q1["전경 자세(타이핑·글쓰기 작업)가 많은가?"]
-    Q1 -- "Yes" --> Q2["예산은 15만 엔 이상 가능한가?"]
-    Q1 -- "No" --> Q3["후경·릴랙스 자세(사고·동영상 시청) 중시?"]
-    Q2 -- "Yes" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "No" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "Yes" --> Embody["Herman Miller Embody"]
-    Q3 -- "No" --> Q4["디바이스를 복수 사용·팔의 서포트 중시?"]
-    Q4 -- "Yes" --> Gesture["Steelcase Gesture"]
-    Q4 -- "No" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- Yes --> Q2["예산은 15만 엔 이상 가능한가?"]
+    Q1 -- No --> Q3["후경·릴랙스 자세(사고·동영상 시청) 중시?"]
+    Q2 -- Yes --> Aeron["Herman Miller Aeron"]
+    Q2 -- No --> Sylphy["Okamura Sylphy"]
+    Q3 -- Yes --> Embody["Herman Miller Embody"]
+    Q3 -- No --> Q4["디바이스를 복수 사용·팔의 서포트 중시?"]
+    Q4 -- Yes --> Gesture["Steelcase Gesture"]
+    Q4 -- No --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ flowchart TD
 이하의 파이 차트는 원격 근무자에게 흔히 있는 불량 자세의 비율을 나타내고 있습니다. 이러한 자세를 회피하도록 환경을 조성하는 폭이 중요합니다.
 
 ```mermaid
-pie title "원격 근무자의 불량 자세 톱 5"
+pie title 원격 근무자의 불량 자세 톱 5
     "새우등·두부 전방 돌출(거북목)" : 40
     "골반의 후경(천골 앉기)" : 30
     "다리 꼬기(골반의 비대칭적 왜곡)" : 15
@@ -148,5 +148,7 @@ pie title "원격 근무자의 불량 자세 톱 5"
 인체공학 의자는 결코 싼 물건이 아닙니다. 10만 엔에서 20만 엔을 넘는 모델도 드물지 않습니다. 그러나, 1일 8시간, 연간 약 2000시간을 그 위에서 보내는 것을 생각하면, 요통에 의한 생산성의 저하나 의료비의 리스크를 미연에 방지하기 위한 '가장 비용 대비 효과가 높은 투자(ROI가 높은 디바이스)'라고 할 수 있습니다.
 
 생체 역학적인 관점에서 자신의 작업 스타일을 재검토하고, 자신의 골격과 근육을 정확하게 서포트해주는 '물리학적으로 올바른 한 의자'를 선별해내 주십시오. 그것이, 길고 쾌적하게 엔지니어링을 계속하기 위한 최대의 비결입니다.
+
+
 
 

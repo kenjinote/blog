@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["Aplicar Teorema de Bayes"]
   Bayes --> Class{"¿P(Spam) > 0.9?"}
-  Class -- "Sí" --> Spam["Mover a Carpeta de Spam"]
-  Class -- "No" --> Ham["Entregar a la Bandeja de Entrada"]
+  Class -- Sí --> Spam["Mover a Carpeta de Spam"]
+  Class -- No --> Ham["Entregar a la Bandeja de Entrada"]
 ```
 
 ### Ejemplo de implementación (Python)
@@ -396,8 +396,8 @@ Utilizando el valor de la función $f(x_n)$ y su pendiente (derivada) $f'(x_n)$ 
 flowchart LR
   Start["Inicio: Adivinar x0 inicial"] --> Eval["Evaluar f(xn) y f'(xn)"]
   Eval --> Check{"¿Es f(xn) ≈ 0?"}
-  Check -- "Sí" --> Done["Devolver xn como Raíz"]
-  Check -- "No" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- Sí --> Done["Devolver xn como Raíz"]
+  Check -- No --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ Si se calcula de acuerdo con la fórmula matemática exacta, es necesario tomar 
 Comprender los fundamentos matemáticos no es para quedarse siendo solo un codificador que simplemente llama a bibliotecas existentes (como `math.sin` o `numpy.fft`), sino que es indispensable para dar el salto a convertirse en un ingeniero capaz de comprender la estructura interna y superar sus límites. La próxima vez que escribas código, trata de imaginar por un momento qué hermosa fórmula matemática está funcionando silenciosamente por detrás.
 
 **Happy Coding and Math!**
+

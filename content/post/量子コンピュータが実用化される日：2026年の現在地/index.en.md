@@ -148,7 +148,7 @@ To truly demonstrate **Quantum Advantage**, where quantum computers overwhelm cl
 
 ```mermaid
 gantt
-    title "Quantum Computing Roadmap (Revised 2026)"
+    title Quantum Computing Roadmap (Revised 2026)
     dateFormat  YYYY
     axisFormat  %Y
     
@@ -173,4 +173,5 @@ The biggest challenges as of 2026 are the cooling capacity of the massive cryost
 
 ---
 *This article was written based on the latest quantum computing research papers and industry trends as of 2026.*
+
 

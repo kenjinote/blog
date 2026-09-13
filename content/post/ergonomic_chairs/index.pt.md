@@ -109,14 +109,14 @@ A cadeira ideal varia dependendo do tamanho do seu corpo, estilo de trabalho e o
 ```mermaid
 flowchart TD
     Start["Que tipo de trabalho de mesa você faz mais?"] --> Q1["Muitas posturas inclinadas para a frente (digitar/escrever)?"]
-    Q1 -- "Sim" --> Q2["O orçamento pode ser mais de 150.000 ienes?"]
-    Q1 -- "Não" --> Q3["Foco em postura inclinada para trás/relaxada (pensar/assistir a vídeos)?"]
-    Q2 -- "Sim" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "Não" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "Sim" --> Embody["Herman Miller Embody"]
-    Q3 -- "Não" --> Q4["Usa vários dispositivos / Foco em suporte para os braços?"]
-    Q4 -- "Sim" --> Gesture["Steelcase Gesture"]
-    Q4 -- "Não" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- Sim --> Q2["O orçamento pode ser mais de 150.000 ienes?"]
+    Q1 -- Não --> Q3["Foco em postura inclinada para trás/relaxada (pensar/assistir a vídeos)?"]
+    Q2 -- Sim --> Aeron["Herman Miller Aeron"]
+    Q2 -- Não --> Sylphy["Okamura Sylphy"]
+    Q3 -- Sim --> Embody["Herman Miller Embody"]
+    Q3 -- Não --> Q4["Usa vários dispositivos / Foco em suporte para os braços?"]
+    Q4 -- Sim --> Gesture["Steelcase Gesture"]
+    Q4 -- Não --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ Não importa o quão boa seja uma cadeira ergonômica, não faz sentido se a alt
 O gráfico de pizza abaixo mostra a proporção das más posturas comuns entre os trabalhadores remotos. É importante preparar o ambiente para evitar essas posturas.
 
 ```mermaid
-pie title "Top 5 Más Posturas dos Trabalhadores Remotos"
+pie title Top 5 Más Posturas dos Trabalhadores Remotos
     "Cifose / Projeção da Cabeça para a Frente (Pescoço Reto)" : 40
     "Inclinação Pélvica Posterior (Sentar no Sacro)" : 30
     "Pernas Cruzadas (Distorção Pélvica Assimétrica)" : 15
@@ -148,5 +148,7 @@ pie title "Top 5 Más Posturas dos Trabalhadores Remotos"
 Uma cadeira ergonômica não é, de forma alguma, uma compra barata. Modelos que custam entre 100.000 e mais de 200.000 ienes não são incomuns. No entanto, considerando que você passa 8 horas por dia e cerca de 2000 horas por ano sentado nela, pode ser dito que é o "investimento mais rentável (dispositivo de alto ROI)" para evitar a perda de produtividade e as despesas médicas causadas pelas dores nas costas.
 
 Revise seu estilo de trabalho sob uma perspectiva biomecânica e selecione cuidadosamente uma "cadeira fisicamente correta" que apoie sua estrutura óssea e músculos adequadamente. Esse é o maior segredo para continuar na engenharia confortavelmente por um longo tempo.
+
+
 
 

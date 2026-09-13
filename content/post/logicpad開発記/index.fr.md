@@ -24,7 +24,7 @@ Le développement de LogicPad a été mené comme un projet personnel, profitant
 
 ```mermaid
 gantt
-    title "Chronologie de développement de LogicPad"
+    title Chronologie de développement de LogicPad
     dateFormat  YYYY-MM-DD
     section "Planification & Conception"
     "Analyse des besoins et prototypage" :a1, 2025-10-01, 30d
@@ -303,3 +303,4 @@ C'est précisément parce que l'évolution des technologies web a rendu possible
 WinUI 3 et le Windows App SDK sont toujours activement développés et constituent les meilleurs outils pour créer de belles applications qui tirent pleinement parti du paradigme d'interface utilisateur de Windows 11. J'espère sincèrement que cet article de blog aidera les développeurs qui sont sur le point de relever le défi du développement d'applications Windows natives, et qu'il contribuera à l'arrivée d'encore plus d'applications fantastiques sur le Store.
 
 Le développement n'est pas encore terminé. Dans la prochaine version de LogicPad, nous prévoyons d'intégrer notre propre moteur de rendu de formes d'ondes tirant parti de Direct2D. Dans le prochain article, nous approfondirons l'interopérabilité entre DirectX et WinUI 3 (utilisation de SwapChainPanel). Restez à l'écoute !
+

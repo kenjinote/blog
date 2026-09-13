@@ -28,11 +28,11 @@ El primer paso para entender OAuth 2.0 es comprender con precisión a los person
 
 ```mermaid
 graph TD
-    RO["Resource Owner (Usuario)"] -- "Otorgar autorización" --> C["Client (Slack App)"]
-    C -- "Solicitar autorización" --> AS["Authorization Server (Servidor de autorización de Slack)"]
-    AS -- "Emitir token de acceso" --> C
-    C -- "Acceder usando el token" --> RS["Resource Server (Servidor de API de Slack)"]
-    RO -- "Iniciar sesión con ID/contraseña" --> AS
+    RO["Resource Owner (Usuario)"] -- Otorgar autorización --> C["Client (Slack App)"]
+    C -- Solicitar autorización --> AS["Authorization Server (Servidor de autorización de Slack)"]
+    AS -- Emitir token de acceso --> C
+    C -- Acceder usando el token --> RS["Resource Server (Servidor de API de Slack)"]
+    RO -- Iniciar sesión con ID/contraseña --> AS
 ```
 
 1. **Resource Owner (Propietario del recurso)**
@@ -371,4 +371,5 @@ En este artículo, explicamos detalladamente el flujo de concesión de código d
 4. El diseño de alcances basado en el **Principio de Menor Privilegio** y la encriptación al guardar en la base de datos son elementos absolutamente indispensables a nivel operativo.
 
 OAuth 2.0 es muy profundo, e incluso hay especificaciones enormes solo en las RFC, pero al aprender de manera práctica enfocándose en una plataforma real (Slack) de esta manera, deberías poder sentir su sofisticada filosofía de diseño y mecanismos de seguridad robustos. Espero que el conocimiento de este artículo sea útil para el futuro desarrollo de aplicaciones y la implementación de integraciones de API.
+
 

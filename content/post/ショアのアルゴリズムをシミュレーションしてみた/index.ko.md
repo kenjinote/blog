@@ -57,11 +57,11 @@ graph TD
 graph TD
     A["입력: 소인수분해하고 싶은 합성수 N"] --> B["a < N 인 난수 a 를 선택"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Yes" --> D["자명한 인수 gcd(a, N) 을 출력하고 종료"]
-    C -- "No" --> E["양자 알고리즘으로 f(x) = a^x mod N 의 주기 r 을 찾음"]
+    C -- Yes --> D["자명한 인수 gcd(a, N) 을 출력하고 종료"]
+    C -- No --> E["양자 알고리즘으로 f(x) = a^x mod N 의 주기 r 을 찾음"]
     E --> F{"r 이 짝수이고 a^(r/2) ≢ -1 mod N ?"}
-    F -- "No" --> B
-    F -- "Yes" --> G["인수 p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N) 을 계산"]
+    F -- No --> B
+    F -- Yes --> G["인수 p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N) 을 계산"]
     G --> H["출력: p, q"]
 ```
 
@@ -358,4 +358,5 @@ IT 인프라를 관리하는 엔지니어에게 있어, 기존의 RSA나 타원�
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

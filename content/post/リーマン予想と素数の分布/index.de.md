@@ -148,7 +148,7 @@ graph LR
     B --> C["Geheimtext (Ciphertext)"]
     C --> D["Entschlüsselung mit privatem Schlüssel (d)"]
     D --> E["Ursprünglicher Klartext"]
-    F["Angreifer (Attacker)"] -- "Versucht die Primfaktorzerlegung von N" --> C
+    F["Angreifer (Attacker)"] -- Versucht die Primfaktorzerlegung von N --> C
     F -.-> G["Ohne p und q ist d unberechenbar"]
 ```
 
@@ -214,3 +214,4 @@ Die unersättliche Suche nach Primzahlen, die in der griechischen Antike begann,
 Die Riemannsche Vermutung ist eine Existenz, die gleichzeitig die "abstrakte Schönheit" der Mathematik und ihre "erstaunliche Anwendbarkeit in der physischen Welt und der realen Gesellschaft" symbolisiert.
 
 Wenn dieser riesige mathematische Berg, dessen Gipfel noch niemand erreicht hat, eines Tages bezwungen wird, werden wir die Wahrheit des Universums der Primzahlen vollständig verstehen und eine neue Perspektive auf die Grundlagen der Informationsgesellschaft gewinnen. Das Studium der Kryptographie ist auch eine Reise, die die Geschichte der menschlichen Weisheit nachzeichnet.
+

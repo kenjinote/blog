@@ -180,7 +180,7 @@ Na fórmula acima, "velocidade de codificação" ou "memorização de sintaxes",
 Essa mudança de paradigma se refletirá claramente também no modo como o engenheiro gerencia o seu tempo diário (alocação de tempo).
 
 ```mermaid
-pie title "Alocação de Tempo do Engenheiro (Pré-IA)"
+pie title Alocação de Tempo do Engenheiro (Pré-IA)
   "Codificação e Resolução de Erros de Sintaxe": 50
   "Definição de Requisitos e Design de Sistemas": 20
   "Implementação e Execução de Testes": 20
@@ -188,7 +188,7 @@ pie title "Alocação de Tempo do Engenheiro (Pré-IA)"
 ```
 
 ```mermaid
-pie title "Alocação de Tempo do Engenheiro (Era da IA)"
+pie title Alocação de Tempo do Engenheiro (Era da IA)
   "Modelagem de Domínio e Design de Arquitetura": 40
   "Envio de Prompts à IA e Validação de Código": 20
   "Depuração e Operação Avançada em Produção": 30
@@ -207,5 +207,6 @@ O engenheiro do futuro não se preocupará excessivamente com especificações m
 
 O verdadeiro engenheiro não é a pessoa que escreve o código, mas a pessoa que resolve o problema.
 Modelagem de domínio, desenho de arquiteturas escaláveis, comunicação com as partes envolvidas e depuração de sistemas complexos. Para os que continuarem aperfeiçoando essas "habilidades de engenheiro exclusivas dos humanos", a IA nunca será um inimigo que roubará seus empregos, mas o parceiro supremo capaz de multiplicar sua criatividade e produtividade em dezenas de vezes.
+
 
 

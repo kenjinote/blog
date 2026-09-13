@@ -19,13 +19,13 @@ tags: ["C++", "C++26", "Programming", "Tech"]
 
 ```mermaid
 timeline
-    title "C++ Standardization Evolution"
-    "C++11" : "Modern C++ 的序幕" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "功能的淬鍊" : "generic lambda, return type deduction"
-    "C++17" : "實用性的提升" : "std::optional, fold expressions, structured binding"
-    "C++20" : "典範轉移" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "進一步的擴充" : "Deducing this, std::expected, std::print"
-    "C++26" : "次世代的革命" : "Reflection, Contracts, Pattern Matching"
+    title C++ Standardization Evolution
+    C++11 : Modern C++ 的序幕 : auto, lambda, constexpr, move semantics
+    C++14 : 功能的淬鍊 : generic lambda, return type deduction
+    C++17 : 實用性的提升 : std::optional, fold expressions, structured binding
+    C++20 : 典範轉移 : Concepts, Modules, Coroutines, Ranges
+    C++23 : 進一步的擴充 : Deducing this, std::expected, std::print
+    C++26 : 次世代的革命 : Reflection, Contracts, Pattern Matching
 ```
 
 C++26 的目標是在 C++20 所引入的 Concepts 與 Modules 等大規模功能群之上，將**程式碼的自我描述性（反射）**與**穩健性（契約編程）**提升至極限。接下來，我們將深入探討各項功能的細節。
@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["型別：User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["meta::info 的範圍"]
-    C -->| "[: member :]" | D["直接存取成員 (obj.id, obj.name)"]
+    A["型別：User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["meta::info 的範圍"]
+    C -->| [: member :] | D["直接存取成員 (obj.id, obj.name)"]
     D --> E["生成的程式碼 (零額外開銷)"]
 ```
 
@@ -146,12 +146,12 @@ Contracts 並不僅僅是註解或舊有的 `assert()` 巨集。我們可以根�
 ```mermaid
 graph TD
     A["呼叫函式"] --> B{"評估前置條件"}
-    B -- "True" --> C["執行主體"]
-    B -- "False" --> D["呼叫違反處理常式"]
+    B -- True --> C["執行主體"]
+    B -- False --> D["呼叫違反處理常式"]
     D --> E["記錄錯誤 / 終止 / 拋出例外"]
     C --> F{"評估後置條件"}
-    F -- "True" --> G["回傳值"]
-    F -- "False" --> D
+    F -- True --> G["回傳值"]
+    F -- False --> D
 ```
 
 透過利用 Contracts，不僅能讓 API 的規格自我文件化，還能在引發未定義行為（Undefined Behavior, UB）之前安全地停止並控制程式，因此可望大幅減少 C++ 特有的記憶體破壞漏洞與邏輯錯誤。
@@ -367,3 +367,5 @@ C++26 是一次真正具歷史意義的版本更新，長年來 C++ 程式設計
 
 ---
 *本文是基於 2026 年當時的 C++26 標準化狀況所撰寫。請注意，根據各編譯器的實作狀況，部分語法仍有變更的可能。*
+
+

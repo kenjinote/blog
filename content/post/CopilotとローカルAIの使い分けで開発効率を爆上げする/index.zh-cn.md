@@ -58,10 +58,10 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 
 ```mermaid
 graph TD
-    Dev["开发者 (IDE)"] -->|"实时打字"| LocalProxy{"智能路由器 / 代理"}
+    Dev["开发者 (IDE)"] -->| 实时打字 | LocalProxy{"智能路由器 / 代理"}
     
-    LocalProxy -->|"快速、隐私优先的任务"| LocalAI["本地AI引擎 (Ollama / LM Studio)"]
-    LocalProxy -->|"复杂逻辑、大上下文"| CloudAI["云端AI引擎 (Copilot / OpenAI API)"]
+    LocalProxy -->| 快速、隐私优先的任务 | LocalAI["本地AI引擎 (Ollama / LM Studio)"]
+    LocalProxy -->| 复杂逻辑、大上下文 | CloudAI["云端AI引擎 (Copilot / OpenAI API)"]
     
     subgraph "本地环境"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ ollama run codellama
 请务必参考本文介绍的决策树和架构，将您的IDE环境提升到下一个层次。从“被动使用”AI的一方，迈向“将它们适材适所地结合并驱使”的一方，您的开发效率必定会获得爆发式的提升。
 
 Happy Coding with Hybrid AI!
+

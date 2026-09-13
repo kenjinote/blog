@@ -61,8 +61,8 @@ Artinya, saat pada akhirnya $A(t) \to 0$ dan $B(t) \to 1$, sistem telah mencapai
 
 ```mermaid
 graph TD
-    A["Hamiltonian H_0 (Keadaan Awal)"] -->|"Perubahan Adiabatik (Cukup Lambat)"| B["Selalu Mempertahankan Ground State"]
-    A -->|"Perubahan Non-Adiabatik (Terlalu Cepat/Noise Termal)"| C["Transisi ke Keadaan Tereksitasi (Error)"]
+    A["Hamiltonian H_0 (Keadaan Awal)"] -->| Perubahan Adiabatik (Cukup Lambat) | B["Selalu Mempertahankan Ground State"]
+    A -->| Perubahan Non-Adiabatik (Terlalu Cepat/Noise Termal) | C["Transisi ke Keadaan Tereksitasi (Error)"]
     B --> D["Hamiltonian H_P (Solusi Optimal Global)"]
     C --> E["Terperangkap di Solusi Optimal Lokal"]
     D --> F["Pembacaan Solusi"]
@@ -196,10 +196,10 @@ Untuk mengatasi batasan dari sirkuit kuantum yang dangkal (shallow) pada perangk
 ```mermaid
 graph TD
     User["Masalah Pengguna"] --> Formulation{"Sifat Masalah"}
-    Formulation -- "Optimasi Kombinatorial" --> QA_Path["Quantum Annealing / Mesin Ising"]
+    Formulation -- Optimasi Kombinatorial --> QA_Path["Quantum Annealing / Mesin Ising"]
     QA_Path --> QUBO["Perumusan QUBO"]
     QUBO --> DWave["Eksekusi D-Wave"]
-    Formulation -- "Komputasi Kimia/Serbaguna" --> Gate_Path["Model Quantum Gate"]
+    Formulation -- Komputasi Kimia/Serbaguna --> Gate_Path["Model Quantum Gate"]
     Gate_Path --> Circuit["Desain Sirkuit Kuantum (VQE / QAOA)"]
     Circuit --> IBMGoogle["Eksekusi Perangkat Keras Kuantum IBM / Google"]
 ```
@@ -219,3 +219,4 @@ Komputer kuantum masih dalam tahap perkembangan, namun baik perangkat keras maup
 
 ---
 *Artikel ini secara komprehensif menjelaskan komputasi kuantum, mulai dari konsep dasar hingga tren perangkat keras terbaru. Nantikan terus perkembangan penelitian terbaru di masa yang akan datang.*
+

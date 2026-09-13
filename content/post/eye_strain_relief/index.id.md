@@ -22,7 +22,7 @@ Pada artikel ini, kita akan membedah secara menyeluruh mekanisme ketegangan mata
 Computer Vision Syndrome (CVS) tidak disebabkan oleh satu faktor saja. Seperti yang ditunjukkan pada diagram lingkaran di bawah ini, berbagai elemen saling terkait secara kompleks sehingga berujung pada kelelahan mata, rasa sakit, mata kering, dan kelelahan tubuh secara keseluruhan.
 
 ```mermaid
-pie title "Penyebab Computer Vision Syndrome (CVS)"
+pie title Penyebab Computer Vision Syndrome (CVS)
     "Cahaya Biru & Silau" : 30
     "Layar Berkedip (PWM)" : 25
     "Kontras & Pencahayaan yang Tidak Tepat" : 20
@@ -121,7 +121,7 @@ Grafik di bawah ini membandingkan citra spektrum pancaran cahaya dari monitor LC
 
 ```mermaid
 xychart-beta
-    title "Perbandingan Spektrum Pancaran Cahaya Biru"
+    title Perbandingan Spektrum Pancaran Cahaya Biru
     x-axis "Panjang Gelombang (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "Intensitas Relatif" 0 --> 100
     bar "LCD Standar (W-LED)" [10, 30, 95, 80, 40, 20]
@@ -280,5 +280,7 @@ Karier kita sebagai software engineer bisa berlangsung hingga puluhan tahun. Yan
 5. **Menggunakan lengan monitor untuk menciptakan sudut pandang optimal berdasarkan $\tan \theta = h/d$ dan mensistemasikan "Aturan 20-20-20"**
 
 Langkah-langkah ini mungkin membutuhkan biaya atau upaya yang bersifat sementara, tetapi ini dapat disebut sebagai "investasi teknis" dengan efektivitas biaya (cost-effectiveness) terbaik yang memaksimalkan produktivitas seumur hidup dan QOL (kualitas hidup) Anda, serta memperpanjang umur sehat pada mata. Mari tinjau kembali lingkungan pengembangan Anda saat ini juga dan cobalah untuk mengimplementasikan kepedulian terhadap mata Anda.
+
+
 
 

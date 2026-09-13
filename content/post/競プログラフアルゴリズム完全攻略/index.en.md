@@ -115,11 +115,11 @@ By using a priority queue (`std::priority_queue`), the unfinalized vertex with t
 
 ```mermaid
 graph TD
-    S["Source S(0)"] -- "2" --> A["Vertex A(2)"]
-    S["Source S(0)"] -- "5" --> B["Vertex B(5)"]
-    A["Vertex A(2)"] -- "1" --> B["Vertex B(3)"]
-    A["Vertex A(2)"] -- "4" --> C["Vertex C(6)"]
-    B["Vertex B(3)"] -- "1" --> C["Vertex C(4)"]
+    S["Source S(0)"] -- 2 --> A["Vertex A(2)"]
+    S["Source S(0)"] -- 5 --> B["Vertex B(5)"]
+    A["Vertex A(2)"] -- 1 --> B["Vertex B(3)"]
+    A["Vertex A(2)"] -- 4 --> C["Vertex C(6)"]
+    B["Vertex B(3)"] -- 1 --> C["Vertex C(4)"]
 ```
 As shown in the figure above, the cost to go directly from S to B is 5, but going via A allows reaching it with a cost of 3. Dijkstra's algorithm performs optimizations in this way.
 
@@ -511,3 +511,4 @@ The key to improving in graph problems is **"implementing them repeatedly until 
 We highly recommend modularizing them as code snippets (saving them in a snippet tool or your own GitHub repository) so that you can call them without hesitation during a real contest.
 
 Graph algorithms in competitive programming are a field where you can most feel the beauty and power of algorithms. Please try copying the code in this article by hand and tackling past problems on online judges!
+

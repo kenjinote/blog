@@ -40,7 +40,7 @@ O diagrama Mermaid abaixo ilustra a arquitetura geral do Ollama.
 
 ```mermaid
 graph TD
-    A["Aplicativos Cliente (Python / Node.js)"] -- "HTTP/REST API" --> B["Servidor Ollama (Go)"]
+    A["Aplicativos Cliente (Python / Node.js)"] -- HTTP/REST API --> B["Servidor Ollama (Go)"]
     B --> C["Gerenciador de Modelos (Lidando com GGUF)"]
     B --> D["Mecanismo de Inferência (llama.cpp)"]
     D --> E["Aceleração por GPU (CUDA / Metal / ROCm)"]
@@ -154,9 +154,9 @@ O diagrama abaixo mostra como um modelo personalizado deriva do modelo base.
 
 ```mermaid
 graph LR
-    A["Modelo Base (llama3.1)"] -->|"Adicionar Prompt de Sistema"| B["Configuração Intermediária"]
-    B -->|"Definir Temperature & Top_p"| C["Modelo Personalizado (kansai-coder)"]
-    C -->|"Executar"| D["CLI Interativo / API"]
+    A["Modelo Base (llama3.1)"] -->| Adicionar Prompt de Sistema | B["Configuração Intermediária"]
+    B -->| Definir Temperature & Top_p | C["Modelo Personalizado (kansai-coder)"]
+    C -->| Executar | D["CLI Interativo / API"]
 ```
 
 Como exemplo, vamos criar um modelo assistente de programação que responde em dialeto Kansai (japonês).
@@ -496,4 +496,5 @@ Ao integrar as solicitações de API do Ollama em scripts Python e Shell, você 
 Com a chegada do Ollama, a barreira de entrada para introduzir LLMs locais caiu drasticamente. A combinação de uma estrutura de comandos simples, como operar contêineres Docker, com uma API REST facilmente acessível a partir de aplicativos externos, é o atual padrão de mercado no desenvolvimento de IA local, sem exagero.
 
 Desenvolvedores que sofrem com as restrições de custos e segurança dos LLMs em nuvem devem aproveitar as etapas introduzidas neste artigo para tentar construir um ambiente LLM local usando o Ollama e integrá-lo em seus aplicativos. Vocês poderão sentir o potencial da IA de maneira muito mais livre e próxima.
+
 

@@ -76,11 +76,11 @@ Das folgende Mermaid-Diagramm veranschaulicht das Konzept der Eigentumsübertrag
 ```mermaid
 graph LR
     subgraph "Vor std::move"
-        A["unique_ptr (ptr1)"] -->|"Besitzt"| B["Heap-Speicher (Objekt)"]
+        A["unique_ptr (ptr1)"] -->| Besitzt | B["Heap-Speicher (Objekt)"]
     end
     subgraph "Nach std::move"
         C["unique_ptr (ptr1)"] -.->|"Leer (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->|"Besitzt"| F["Heap-Speicher (Objekt)"]
+        E["unique_ptr (ptr2)"] -->| Besitzt | F["Heap-Speicher (Objekt)"]
     end
 ```
 
@@ -130,13 +130,13 @@ Die Verwendung von Funktionszeigern oder Lambda-Ausdrücken als benutzerdefinier
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->|"Zeiger auf T"| B["Verwaltetes Objekt (T)"]
-    A -->|"Zeiger auf Kontrollblock"| C["Kontrollblock"]
+    A["std::shared_ptr<T> (sp1)"] -->| Zeiger auf T | B["Verwaltetes Objekt (T)"]
+    A -->| Zeiger auf Kontrollblock | C["Kontrollblock"]
     
-    D["std::shared_ptr<T> (sp2)"] -->|"Zeiger auf T"| B
-    D -->|"Zeiger auf Kontrollblock"| C
+    D["std::shared_ptr<T> (sp2)"] -->| Zeiger auf T | B
+    D -->| Zeiger auf Kontrollblock | C
     
-    C -->|"Löscht"| B
+    C -->| Löscht | B
     C -.->|"Strong Count: 2"| E["Strong Count"]
     C -.->|"Weak Count: 0"| F["Weak Count"]
     C -.->|"Benutzerdefinierter Deleter"| G["Deleter"]
@@ -176,8 +176,8 @@ Das gemeinsame Eigentum hat eine fatale Schwachstelle: "Zirkelbezüge" (Circular
 ```mermaid
 graph TD
     subgraph "Zirkelbezug (Speicherleck)"
-        A["Objekt A"] -->|"shared_ptr (Strong=1)"| B["Objekt B"]
-        B -->|"shared_ptr (Strong=1)"| A
+        A["Objekt A"] -->| shared_ptr (Strong=1) | B["Objekt B"]
+        B -->| shared_ptr (Strong=1) | A
     end
 ```
 
@@ -188,7 +188,7 @@ Die Lösung für dieses Problem ist `std::weak_ptr`. Ein `weak_ptr` wird aus ein
 ```mermaid
 graph TD
     subgraph "Durchbrechen des Zirkelbezugs"
-        C["Objekt A"] -->|"shared_ptr (Strong=1)"| D["Objekt B"]
+        C["Objekt A"] -->| shared_ptr (Strong=1) | D["Objekt B"]
         D -.->|"weak_ptr (Weak=1)"| C
     end
 ```
@@ -268,3 +268,4 @@ Bei der Speicherverwaltung in Modern C++ ist das manuelle Verwalten von `new`/`d
 3.  Bei der Implementierung von Datenstrukturen, in denen gemeinsame Kreise (Zirkelbezüge) auftreten können, oder bei Observer-Mustern sollte **`std::weak_ptr`** eingesetzt werden, um Speicherlecks proaktiv zu verhindern.
 
 Ein tiefes Verständnis von Smart Pointern und deren gezielter Einsatz an den richtigen Stellen ermöglicht den Aufbau einer sicheren und robusten Softwarearchitektur, ohne die Leistung von C++ auch nur im Geringsten zu opfern.
+

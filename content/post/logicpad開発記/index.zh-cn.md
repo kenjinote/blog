@@ -24,7 +24,7 @@ LogicPad的开发是利用周末和晚上的时间作为个人项目推进的。
 
 ```mermaid
 gantt
-    title "LogicPad 开发时间线"
+    title LogicPad 开发时间线
     dateFormat  YYYY-MM-DD
     section "规划与设计"
     "需求分析与原型制作" :a1, 2025-10-01, 30d
@@ -303,3 +303,4 @@ $$
 WinUI 3和Windows App SDK目前仍在活跃开发中，它们是充分利用Windows 11 UI范式来创建美丽应用的极佳工具。我由衷地希望这篇博客文章能够为即将挑战Windows原生应用开发的开发者们提供一些帮助，也希望Store中能涌现出更多出色的应用。
 
 开发还未结束。在LogicPad的下一个版本中，计划集成使用Direct2D构建的独创波形渲染引擎。在下一篇文章中，我计划深入探讨DirectX与WinUI 3的互操作性（SwapChainPanel的运用）。敬请期待。
+

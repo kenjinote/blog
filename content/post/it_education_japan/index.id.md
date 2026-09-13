@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Lingkungan Kompilasi/Eksekusi"]
         D["Penyimpanan File Persisten"]
     end
-    A -->| "Komunikasi HTTP/WebSocket: Penundaan serius karena bandwidth sekolah yang sempit" | B
+    A -->| Komunikasi HTTP/WebSocket: Penundaan serius karena bandwidth sekolah yang sempit | B
     B <--> C
     B <--> D
 ```
@@ -210,7 +210,7 @@ Grafik berikut ini menggambarkan secara konseptual betapa jauhnya kesenjangan an
 
 ```mermaid
 xychart-beta
-    title "Keterampilan dari Pendidikan Sekolah Jepang vs Keterampilan yang Dituntut Industri"
+    title Keterampilan dari Pendidikan Sekolah Jepang vs Keterampilan yang Dituntut Industri
     x-axis ["Bahasa Visual", "Sintaks Dasar/Variabel", "Algoritma/Kompleksitas", "OS/Jaringan", "DB/Desain Sistem", "Arsitektur Cloud/Terdistribusi"]
     y-axis "Tingkat Pencapaian / Permintaan (%)" 0 --> 100
     line "Tingkat Pencapaian Pendidikan Sekolah Saat Ini" [95, 60, 15, 5, 2, 0]
@@ -256,6 +256,8 @@ Bagaimana cara kita dalam memperjuangkan fase paling krusial dan sulit, yaitu fa
 ---
 
 *Dalam artikel ini, kami telah menyoroti batasan infrastruktur pada Konsep GIGA School dan teori-teori mengenai kompleksitas komputasional. Pada artikel-artikel selanjutnya, kami berencana membahas topik yang lebih terperinci mengenai ilmu komputer secara spesifik (seperti algoritma untuk sistem terdistribusi, hingga berbagai macam teknik manajemen memori tingkat rendah).*
+
+
 
 
 

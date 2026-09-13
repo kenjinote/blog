@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|"Medição (Observação)"| Result
+    Interference -->| Medição (Observação) | Result
 ```
 
 Dessa forma, o computador quântico não é uma mera medida paliativa temporária para contornar os limites da mecânica clássica (limites de miniaturização e termodinâmicos), mas sim uma verdadeira mudança de paradigma que reconstrói a própria definição de informação e computação com base nos axiomas da mecânica quântica. No próximo capítulo, aprofundaremos nas ferramentas matemáticas concretas para manipular livremente essa interferência quântica: as "portas quânticas" e os "circuitos quânticos".
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Medição da grandeza física $A$ (Operador de projeção $P_k$)"]:::measure
     
-    Obs -->|"Probabilidade $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
-    Obs -->|"Probabilidade $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["Estado colapsado n: $| a_n \rangle$"]:::state
+    Obs -->| Probabilidade $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
+    Obs -->| Probabilidade $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
+    Obs -->| ... | StateN["Estado colapsado n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoerência (perda de interferência de fase) e transição para estado misto"]:::measure
     State2 --> Decoherence
@@ -1964,8 +1964,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"Estado |x⟩"| QFT["QFT† (Transformada de Fourier Quântica Inversa)"]
-    Uf -->|"Estado |a^x mod N⟩"| Discard["Não observado (Emaranhado com o ambiente)"]
+    Uf -->| Estado |x⟩ | QFT["QFT† (Transformada de Fourier Quântica Inversa)"]
+    Uf -->| Estado |a^x mod N⟩ | Discard["Não observado (Emaranhado com o ambiente)"]
 
     QFT --> Measure["Medição (k)"]
     Measure --> Classical["Pós-processamento clássico por expansão em frações contínuas (Derivação de r)"]
@@ -2700,8 +2700,8 @@ As portas lógicas quânticas neste sistema são executadas pelo "Trançado" (Br
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Trançado Topológico"]
-    A["Eixo de tempo t"] -->|"Linha de mundo do Anyon 1"| B["Operação de troca (Braiding)"]
-    C["Linha de mundo do Anyon 2"] -->|"Braiding"| B
+    A["Eixo de tempo t"] -->| Linha de mundo do Anyon 1 | B["Operação de troca (Braiding)"]
+    C["Linha de mundo do Anyon 2"] -->| Braiding | B
     B --> D["Vetor de estado sofre rotação unitária U"]
     end
 ```

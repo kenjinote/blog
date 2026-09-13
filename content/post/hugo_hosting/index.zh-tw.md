@@ -216,7 +216,7 @@ $$ Cost = \sum_{i=1}^{n} \left( B_i \times (1 - C_i) \times R \right) $$
 讓我們將網站的載入時間分解如下：
 
 ```mermaid
-pie title "典型的網站載入時間分佈"
+pie title 典型的網站載入時間分佈
     "TTFB (首位元組時間)" : 15
     "內容下載 (HTML/CSS)" : 20
     "DOM 解析與渲染" : 45
@@ -255,5 +255,6 @@ Cloudflare Web Analytics 只要嵌入非常輕量的 JavaScript 程式碼片段�
 5. **輕量級的分析工具**：導入兼顧隱私且不損害效能的 Cloudflare Web Analytics 等工具。
 
 透過結合這些技術，可以免費建構出能夠承受每月數百萬 PV 等級大規模流量，且具備高可擴充性與堅固性的部落格系統。正在考慮建立技術部落格、企業網站或作品集網站的人，請務必嘗試這個 Jamstack + Hugo + Cloudflare Pages 的組合。
+
 
 

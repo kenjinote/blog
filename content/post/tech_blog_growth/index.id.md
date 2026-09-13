@@ -189,7 +189,7 @@ Siklus hidup operasional yang ideal untuk sebuah konten diilustrasikan dengan Me
 
 ```mermaid
 gantt
-    title "Manajemen Siklus Hidup Konten Berbasis Data"
+    title Manajemen Siklus Hidup Konten Berbasis Data
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%d
     
@@ -278,5 +278,6 @@ Untuk secara dramatis meningkatkan jumlah kunjungan bulanan ke blog teknologi An
 5. Otomatisasi penuh dalam distribusi melalui integrasi CI/CD dan Zapier
 
 Jika Anda dapat mengintegrasikan semua hal ini sebagai sebuah sistem, blog teknologi akan menjadi aset (asset) paling kuat yang akan mendorong karier Anda. Bagi engineer yang khawatir tentang jumlah akses yang mandek, kami harap Anda mencoba memulai "growth hack blog" Anda mulai hari ini. Keahlian pemrograman dan kemampuan desain arsitektur yang Anda asah dalam tugas-tugas pengembangan niscaya akan menjadi senjata terbesar Anda dalam menjalankan blog.
+
 
 

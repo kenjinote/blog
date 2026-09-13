@@ -57,11 +57,11 @@ graph TD
 graph TD
     A["المدخل: العدد المؤلف المراد تحليله N"] --> B["اختيار رقم عشوائي a بحيث a < N"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "نعم" --> D["إخراج العامل البديهي gcd(a, N) والإنهاء"]
-    C -- "لا" --> E["استخدام الخوارزمية الكمومية لإيجاد الدورة r للدالة f(x) = a^x mod N"]
+    C -- نعم --> D["إخراج العامل البديهي gcd(a, N) والإنهاء"]
+    C -- لا --> E["استخدام الخوارزمية الكمومية لإيجاد الدورة r للدالة f(x) = a^x mod N"]
     E --> F{"r زوجي و a^(r/2) ≢ -1 mod N ؟"}
-    F -- "لا" --> B
-    F -- "نعم" --> G["حساب العوامل p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- لا --> B
+    F -- نعم --> G["حساب العوامل p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["الإخراج: p, q"]
 ```
 
@@ -358,4 +358,5 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

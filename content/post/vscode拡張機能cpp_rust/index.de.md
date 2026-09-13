@@ -33,13 +33,13 @@ graph TD
     CompilerR["rustc-Frontend"]
     Debugger["CodeLLDB (Debug Adapter)"]
 
-    VSCode -- "Vervollständigungsanfrage / Gehe zu Definition" --> LSP
+    VSCode -- Vervollständigungsanfrage / Gehe zu Definition --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
     Clangd -. "AST-Analyse (Abstrakter Syntaxbaum)" .-> CompilerC
     RustAnalyzer -. "Makro-Expansion / Typinferenz" .-> CompilerR
     
-    VSCode -- "Debug Adapter Protocol (DAP)" --> Debugger
+    VSCode -- Debug Adapter Protocol (DAP) --> Debugger
     Debugger -. "ptrace / Speicherabbild" .-> Executable["Kompilierte Binärdatei"]
 ```
 
@@ -388,3 +388,4 @@ Durch die Anwendung der in diesem Artikel vorgestellten 10 Erweiterungen und Ein
 Obwohl die anfängliche Anpassung der Konfigurationsdateien etwas Zeit in Anspruch nehmen mag, wird Ihre Programmiererfahrung nach der Einrichtung erstaunlich komfortabel und produktiv sein. Bitte nutzen Sie die Architekturerklärungen und spezifischen Einstellungen (`settings.json`, `tasks.json`, `launch.json`) dieses Artikels als Referenz, um Ihre eigene ultimative Entwicklungsumgebung aufzubauen.
 
 Auf ein komfortables und sicheres Systemprogrammierungs-Leben!
+

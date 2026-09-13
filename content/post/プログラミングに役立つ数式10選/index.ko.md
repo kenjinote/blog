@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["베이즈 정리 적용"]
   Bayes --> Class{"P(스팸) > 0.9?"}
-  Class -- "예" --> Spam["스팸 폴더로 이동"]
-  Class -- "아니오" --> Ham["받은 편지함으로 배달"]
+  Class -- 예 --> Spam["스팸 폴더로 이동"]
+  Class -- 아니오 --> Ham["받은 편지함으로 배달"]
 ```
 
 ### 구현 예제 (Python)
@@ -396,8 +396,8 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 flowchart LR
   Start["시작: 초기값 x0 추정"] --> Eval["f(xn) 및 f'(xn) 평가"]
   Eval --> Check{"f(xn) ≈ 0 입니까?"}
-  Check -- "예" --> Done["xn을 근으로 반환"]
-  Check -- "아니오" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- 예 --> Done["xn을 근으로 반환"]
+  Check -- 아니오 --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ int main() {
 수학적인 배경을 이해하는 것은 단순히 기존 라이브러리(`math.sin`이나 `numpy.fft`)를 호출하기만 하는 코더에서, 그 내부 구조를 이해하고 한계를 끌어낼 수 있는 엔지니어로 스텝 업하기 위해 필수적입니다. 다음에 코드를 작성할 때는 그 이면에서 어떤 아름다운 수식이 움직이고 있는지 조금만 상상의 나래를 펼쳐 보시기 바랍니다.
 
 **Happy Coding and Math!**
+

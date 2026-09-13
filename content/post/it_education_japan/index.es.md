@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Entorno de Compilación/Ejecución"]
         D["Almacenamiento de archivos persistente"]
     end
-    A -->| "Comunicación HTTP/WebSocket: Retrasos severos debido a las conexiones lentas en las escuelas" | B
+    A -->| Comunicación HTTP/WebSocket: Retrasos severos debido a las conexiones lentas en las escuelas | B
     B <--> C
     B <--> D
 ```
@@ -210,7 +210,7 @@ El siguiente gráfico muestra conceptualmente la desconexión desesperada entre 
 
 ```mermaid
 xychart-beta
-    title "Habilidades provistas en escuelas japonesas vs. Habilidades demandadas por la industria"
+    title Habilidades provistas en escuelas japonesas vs. Habilidades demandadas por la industria
     x-axis ["Lenguajes visuales", "Sintaxis básica/Variables", "Algoritmos/Complejidad", "OS/Redes", "BD/Diseño de sistemas", "Nube/Arquitectura distribuida"]
     y-axis "Logro / Demanda (%)" 0 --> 100
     line "Nivel de logro en la educación escolar actual" [95, 60, 15, 5, 2, 0]
@@ -256,6 +256,8 @@ Cómo lucharemos a través de la fase más importante y difícil del "después" 
 ---
 
 *En este artículo describimos en términos generales la teoría de la complejidad computacional y los límites de infraestructura de la Iniciativa GIGA School. En futuras publicaciones de esta serie cubriremos temas aún más especializados en ciencias de la computación (como detalles sobre algoritmos de sistemas distribuidos y métodos de gestión de memoria de bajo nivel).*
+
+
 
 
 

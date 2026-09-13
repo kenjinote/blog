@@ -40,7 +40,7 @@ Le diagramme Mermaid ci-dessous montre l'architecture globale d'Ollama.
 
 ```mermaid
 graph TD
-    A["Applications clientes (Python / Node.js)"] -- "API HTTP/REST" --> B["Serveur Ollama (Go)"]
+    A["Applications clientes (Python / Node.js)"] -- API HTTP/REST --> B["Serveur Ollama (Go)"]
     B --> C["Gestionnaire de modèles (manipulation GGUF)"]
     B --> D["Moteur d'inférence (llama.cpp)"]
     D --> E["Accélération GPU (CUDA / Metal / ROCm)"]
@@ -154,9 +154,9 @@ Le diagramme ci-dessous illustre comment un modèle personnalisé dérive d'un m
 
 ```mermaid
 graph LR
-    A["Modèle de base (llama3.1)"] -->|"Ajout d'une invite système"| B["Configuration intermédiaire"]
-    B -->|"Paramétrage de Temperature & Top_p"| C["Modèle personnalisé (kansai-coder)"]
-    C -->|"Exécution"| D["CLI interactive / API"]
+    A["Modèle de base (llama3.1)"] -->| Ajout d'une invite système | B["Configuration intermédiaire"]
+    B -->| Paramétrage de Temperature & Top_p | C["Modèle personnalisé (kansai-coder)"]
+    C -->| Exécution | D["CLI interactive / API"]
 ```
 
 À titre d'exemple, créons un modèle d'assistant de programmation qui répond en dialecte du Kansai (Kansai-ben).
@@ -496,4 +496,5 @@ En intégrant des requêtes API Ollama dans vos scripts Python ou Shell, vous po
 Avec l'apparition d'Ollama, la barrière à l'entrée pour l'adoption de LLM locaux a considérablement diminué. Il n'est pas exagéré de dire que la combinaison de son système de commandes simple, similaire à la manipulation de conteneurs Docker, et de son API REST facilement utilisable par des applications externes, constitue l'actuel standard de facto dans le développement d'IA locale.
 
 Pour les développeurs confrontés aux coûts et aux contraintes de sécurité des LLM cloud, nous vous invitons à vous référer aux procédures présentées dans cet article pour configurer votre environnement LLM local avec Ollama et l'intégrer à vos propres applications. Vous pourrez ainsi ressentir le potentiel de l'IA de manière plus libre et plus accessible.
+
 

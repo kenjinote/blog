@@ -109,14 +109,14 @@ The best chair for you differs depending on your body size, work style, and budg
 ```mermaid
 flowchart TD
     Start["What kind of desk work do you do most?"] --> Q1["Is there a lot of forward-leaning posture (typing, writing)?"]
-    Q1 -- "Yes" --> Q2["Is your budget over 150,000 yen?"]
-    Q1 -- "No" --> Q3["Emphasis on backward-leaning/relaxed posture (thinking, watching videos)?"]
-    Q2 -- "Yes" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "No" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "Yes" --> Embody["Herman Miller Embody"]
-    Q3 -- "No" --> Q4["Use multiple devices / Emphasis on arm support?"]
-    Q4 -- "Yes" --> Gesture["Steelcase Gesture"]
-    Q4 -- "No" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- Yes --> Q2["Is your budget over 150,000 yen?"]
+    Q1 -- No --> Q3["Emphasis on backward-leaning/relaxed posture (thinking, watching videos)?"]
+    Q2 -- Yes --> Aeron["Herman Miller Aeron"]
+    Q2 -- No --> Sylphy["Okamura Sylphy"]
+    Q3 -- Yes --> Embody["Herman Miller Embody"]
+    Q3 -- No --> Q4["Use multiple devices / Emphasis on arm support?"]
+    Q4 -- Yes --> Gesture["Steelcase Gesture"]
+    Q4 -- No --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ No matter how excellent an ergonomic chair you introduce, it is meaningless if t
 The pie chart below shows the percentage of poor postures common among remote workers. It is important to arrange your environment to avoid these postures.
 
 ```mermaid
-pie title "Top 5 Poor Postures of Remote Workers"
+pie title Top 5 Poor Postures of Remote Workers
     "Slouching / Forward Head Posture (Straight Neck)" : 40
     "Posterior Pelvic Tilt (Sacral Sitting)" : 30
     "Crossing Legs (Asymmetrical Pelvic Distortion)" : 15
@@ -148,5 +148,7 @@ pie title "Top 5 Poor Postures of Remote Workers"
 An ergonomic chair is by no means a cheap purchase. Models exceeding 100,000 to 200,000 yen are not uncommon. However, considering that you will spend about 2,000 hours a year, 8 hours a day, on it, it can be said to be the "most cost-effective investment (device with high ROI)" to prevent the risk of decreased productivity and medical expenses due to back pain.
 
 Please reconsider your work style from a biomechanical perspective and carefully select a "physically correct chair" that accurately supports your skeleton and muscles. That is the greatest secret to continuing engineering comfortably for a long time.
+
+
 
 

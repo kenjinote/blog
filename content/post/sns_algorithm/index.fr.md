@@ -121,7 +121,7 @@ Le graphique suivant illustre la différence de cycle de vie entre une technolog
 
 ```mermaid
 xychart-beta
-    title "Cycle de vie des technologies et évolution des évaluations"
+    title Cycle de vie des technologies et évolution des évaluations
     x-axis ["0 mois", "6 mois", "12 mois", "18 mois", "24 mois", "30 mois", "36 mois"]
     y-axis "Nombre de mentions et niveau d'enthousiasme sur les réseaux sociaux" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
@@ -176,5 +176,6 @@ Les algorithmes de recommandation des réseaux sociaux sont des outils puissants
 Nous devons développer une littératie pour traiter les informations qui défilent sur notre fil non pas comme des "faits" ou des "tendances absolues", mais simplement comme un "signal" parmi d'autres.
 
 Sortir de sa chambre d'écho, lire le code source de ses propres mains, suivre les discussions des RFC, décrypter les formules des articles de recherche, et affronter les véritables défis de son propre domaine métier. C'est le seul moyen de pratiquer la véritable ingénierie logicielle sans se laisser engloutir par la vague des algorithmes.
+
 
 

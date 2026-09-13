@@ -158,13 +158,13 @@ flowchart TD
     Start["開始"] --> Input["判定対象の数 p と、テスト回数 k を入力"]
     Input --> LoopStart["i = 0 から k-1 までループ"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "Yes" --> RandomA["1 < a < p-1 の範囲でランダムな整数 a を選択"]
+    Condition -- Yes --> RandomA["1 < a < p-1 の範囲でランダムな整数 a を選択"]
     RandomA --> Calc["モジュラべき乗 a^(p-1) mod p を計算"]
     Calc --> CheckPrime{"結果は 1 か？"}
-    CheckPrime -- "No" --> ReturnComposite["p は合成数である（確定）"]
-    CheckPrime -- "Yes" --> Increment["i をインクリメント"]
+    CheckPrime -- No --> ReturnComposite["p は合成数である（確定）"]
+    CheckPrime -- Yes --> Increment["i をインクリメント"]
     Increment --> Condition
-    Condition -- "No" --> ReturnPrime["p はおそらく素数である（確率的）"]
+    Condition -- No --> ReturnPrime["p はおそらく素数である（確率的）"]
     ReturnComposite --> End["終了"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ if __name__ == '__main__':
 私たちが日々何気なく送っているLINEのメッセージも、Amazonでの買い物も、すべてはこの $a^{p-1} \equiv 1 \pmod p$ というシンプルで美しい数式の上で踊っているのです。数学がいかに抽象的であっても、いつか必ず人類の役に立つ時が来るということを、フェルマーの小定理は教えてくれています。
 
 プログラミングや暗号理論を学ぶ上で、その基礎にある数学的構造を理解することは、ブラックボックスとして提供されているライブラリの挙動を深く理解し、よりセキュアなシステムを設計するための大きな武器になるでしょう。
+

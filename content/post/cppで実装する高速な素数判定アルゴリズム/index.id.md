@@ -125,19 +125,19 @@ graph TD
     Start["Mulai pengujian (Input: N, a)"] --> CalcDS["Hitung d (ganjil) dan s sedemikian sehingga N-1 = d * 2^s"]
     CalcDS --> CalcX["Hitung x = a^d mod N"]
     CalcX --> CheckX1{"x == 1 atau x == N-1 ?"}
-    CheckX1 -- "Ya" --> ReturnTrue["Kemungkinan Prima (Probably Prime)"]
-    CheckX1 -- "Tidak" --> LoopStart["Mulai loop dari r = 1 hingga s-1"]
+    CheckX1 -- Ya --> ReturnTrue["Kemungkinan Prima (Probably Prime)"]
+    CheckX1 -- Tidak --> LoopStart["Mulai loop dari r = 1 hingga s-1"]
     
     LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- "Tidak" --> ReturnFalse["Pasti Komposit (Composite)"]
-    LoopCondition -- "Ya" --> SquareX["Hitung x = (x * x) mod N"]
+    LoopCondition -- Tidak --> ReturnFalse["Pasti Komposit (Composite)"]
+    LoopCondition -- Ya --> SquareX["Hitung x = (x * x) mod N"]
     
     SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- "Ya" --> ReturnTrue
-    CheckXMinus1 -- "Tidak" --> CheckXOne{"x == 1 ?"}
+    CheckXMinus1 -- Ya --> ReturnTrue
+    CheckXMinus1 -- Tidak --> CheckXOne{"x == 1 ?"}
     
-    CheckXOne -- "Ya" --> ReturnFalse
-    CheckXOne -- "Tidak" --> LoopNext["Tingkatkan r sebanyak 1 lalu lanjut"]
+    CheckXOne -- Ya --> ReturnFalse
+    CheckXOne -- Tidak --> LoopNext["Tingkatkan r sebanyak 1 lalu lanjut"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ Dunia algoritma tempat pemrograman dan matematika saling berpapasan sangat indah
 *Referensi:*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

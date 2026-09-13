@@ -37,7 +37,7 @@ Major companies fight bloody red oceans over huge markets (the head) like $k=1, 
 
 ```mermaid
 xychart-beta
-  title "Market Size Distribution and Solo Dev Target"
+    title Market Size Distribution and Solo Dev Target
   x-axis ["Mass A", "Mass B", "Niche C", "Niche D", "Niche E", "Niche F", "Niche G"]
   y-axis "Market Value" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
@@ -302,5 +302,6 @@ npx create-next-app@latest my-micro-saas
 ```
 
 The battle has already begun.
+
 
 

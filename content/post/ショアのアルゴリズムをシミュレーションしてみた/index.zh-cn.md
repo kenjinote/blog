@@ -57,11 +57,11 @@ graph TD
 graph TD
     A["输入: 想要进行质因数分解的合数 N"] --> B["选择随机数 a 使得 a < N"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Yes" --> D["输出平凡因子 gcd(a, N) 并结束"]
-    C -- "No" --> E["使用量子算法寻找 f(x) = a^x mod N 的周期 r"]
+    C -- Yes --> D["输出平凡因子 gcd(a, N) 并结束"]
+    C -- No --> E["使用量子算法寻找 f(x) = a^x mod N 的周期 r"]
     E --> F{"r 是偶数 且 a^(r/2) ≢ -1 mod N ?"}
-    F -- "No" --> B
-    F -- "Yes" --> G["计算因子 p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- No --> B
+    F -- Yes --> G["计算因子 p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["输出: p, q"]
 ```
 
@@ -358,4 +358,5 @@ PQC基于新的数学问题（如格问题、多变量多项式问题、基于�
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

@@ -24,7 +24,7 @@ Pengembangan LogicPad dilakukan sebagai proyek pribadi yang memanfaatkan waktu d
 
 ```mermaid
 gantt
-    title "Linimasa Pengembangan LogicPad"
+    title Linimasa Pengembangan LogicPad
     dateFormat  YYYY-MM-DD
     section "Perencanaan & Desain"
     "Analisis Kebutuhan & Pembuatan Prototipe" :a1, 2025-10-01, 30d
@@ -303,3 +303,4 @@ Justru di era ketika teknologi web kian canggih di mana "apa pun bisa dibangun d
 WinUI 3 dan Windows App SDK saat ini sedang dikembangkan secara aktif dan masih merupakan alat terhebat guna membangun sebuah aplikasi native desktop Windows yang mempesona, secara maksimal memanfaatkan paradigma antarmuka Windows 11. Besar sekali harapan dan impian saya bahwa artikel blog teknis ini nantinya mampu menjadi panduan bagi para pengembang yang ingin menantang diri dalam pengembangan aplikasi Windows native, supaya ke depannya akan kian lahir melimpah ruah ragam variasi perangkat hebat di Store.
 
 Pengembangan belumlah selesai. Di versi LogicPad selanjutnya, saya merencanakan untuk menggabungkan fungsi mesin perenderan bentuk gelombang kustom yang memanfaatkan fitur Direct2D. Pada artikel sekuel selanjutnya, saya akan membahas sisi interoperabilitas integrasi perpaduan antara DirectX dan utilitas WinUI 3 (penggunaan SwapChainPanel). Harap nantikan.
+

@@ -27,12 +27,12 @@ El siguiente diagrama muestra el flujo de la tubería de anonimización en un la
 
 ```mermaid
 flowchart TD
-    A["Fuentes de datos (Web, IoT, Móvil)"] -->|"Ingesta"| B["Zona de datos sin procesar (Intactos)"]
-    B -->|"Proceso ETL"| C["Tubería de anonimización y limpieza"]
-    C -->|"Seudonimización / Tokenización"| D["Zona de confianza (k-anonimizado)"]
-    D -->|"Ingeniería de características"| E["Zona refinada (Lista para ML)"]
-    E -->|"Entrenamiento de modelos"| F["Herramientas de BI y Modelos de ML"]
-    C -->|"Registros de auditoría"| G["Centro de seguridad y cumplimiento"]
+    A["Fuentes de datos (Web, IoT, Móvil)"] -->| Ingesta | B["Zona de datos sin procesar (Intactos)"]
+    B -->| Proceso ETL | C["Tubería de anonimización y limpieza"]
+    C -->| Seudonimización / Tokenización | D["Zona de confianza (k-anonimizado)"]
+    D -->| Ingeniería de características | E["Zona refinada (Lista para ML)"]
+    E -->| Entrenamiento de modelos | F["Herramientas de BI y Modelos de ML"]
+    C -->| Registros de auditoría | G["Centro de seguridad y cumplimiento"]
 ```
 
 En una tubería de este tipo, procesos como el hash, el enmascaramiento y el cifrado se aplican automáticamente al ingreso de los datos. Sin embargo, como se discutirá más adelante, el simple enmascaramiento o la seudonimización no pueden eliminar por completo el riesgo de "reidentificación (Re-identification)" al cruzarlos con otras fuentes de datos.
@@ -104,20 +104,20 @@ flowchart TD
     Device2["Dispositivo perimetral 2 (Teléfono inteligente)"]
     Device3["Dispositivo perimetral 3 (Teléfono inteligente)"]
 
-    Server -->|"1. Transmitir pesos del modelo global"| Device1
-    Server -->|"1. Transmitir pesos del modelo global"| Device2
-    Server -->|"1. Transmitir pesos del modelo global"| Device3
+    Server -->| 1. Transmitir pesos del modelo global | Device1
+    Server -->| 1. Transmitir pesos del modelo global | Device2
+    Server -->| 1. Transmitir pesos del modelo global | Device3
 
-    Device1 -->|"2. Entrenamiento local con datos privados"| Device1
-    Device2 -->|"2. Entrenamiento local con datos privados"| Device2
-    Device3 -->|"2. Entrenamiento local con datos privados"| Device3
+    Device1 -->| 2. Entrenamiento local con datos privados | Device1
+    Device2 -->| 2. Entrenamiento local con datos privados | Device2
+    Device3 -->| 2. Entrenamiento local con datos privados | Device3
 
-    Device1 -->|"3. Transmitir gradientes/actualizaciones del modelo"| Server
-    Device2 -->|"3. Transmitir gradientes/actualizaciones del modelo"| Server
-    Device3 -->|"3. Transmitir gradientes/actualizaciones del modelo"| Server
+    Device1 -->| 3. Transmitir gradientes/actualizaciones del modelo | Server
+    Device2 -->| 3. Transmitir gradientes/actualizaciones del modelo | Server
+    Device3 -->| 3. Transmitir gradientes/actualizaciones del modelo | Server
 
-    Server -->|"4. Agregación (FedAvg)"| Server
-    Server -->|"5. Actualizar modelo global"| Server
+    Server -->| 4. Agregación (FedAvg) | Server
+    Server -->| 5. Actualizar modelo global | Server
 ```
 
 #### Algoritmo de promediado federado (Federated Averaging: FedAvg)
@@ -218,5 +218,6 @@ Sin embargo, las soluciones técnicas no son perfectas. En el aprendizaje federa
 ## Conclusión
 
 El destino de la información personal en la era del big data va más allá de ser un simple problema técnico; plantea la pregunta fundamental de qué tipo de sociedad deseamos. Cómo proteger la dignidad personal y la privacidad mientras disfrutamos de la conveniencia. Solo se puede alcanzar una solución sostenible mediante la trinidad de regulaciones legales, innovación continua en tecnologías de protección de la privacidad y una alta alfabetización de cada uno de nosotros que proporciona los datos. La privacidad y la conveniencia ya no son una compensación, sino que evolucionarán hacia un "requisito indispensable" que puede coexistir gracias a las últimas tecnologías.
+
 
 

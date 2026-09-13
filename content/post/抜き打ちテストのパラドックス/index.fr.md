@@ -59,15 +59,15 @@ La preuve de l'élève A utilise une technique mathématique appelée **raisonne
 
 ```mermaid
 graph TD
-    Fri["Vendredi matin<br>(pas de test du lun au jeu)"] -->|"Prévisible : 'il ne reste que vendredi'"| NoFri["Test impossible le vendredi"]
+    Fri["Vendredi matin<br>(pas de test du lun au jeu)"] -->| Prévisible : 'il ne reste que vendredi' | NoFri["Test impossible le vendredi"]
     
-    Thu["Jeudi matin<br>(pas de test du lun au mer)"] -->|"Prévisible : 'pas vendredi, donc aujourd'hui'"| NoThu["Test impossible le jeudi"]
+    Thu["Jeudi matin<br>(pas de test du lun au mer)"] -->| Prévisible : 'pas vendredi, donc aujourd'hui' | NoThu["Test impossible le jeudi"]
     
-    Wed["Mercredi matin"] -->|"Prévisible : 'pas jeu/ven, donc aujourd'hui'"| NoWed["Test impossible le mercredi"]
+    Wed["Mercredi matin"] -->| Prévisible : 'pas jeu/ven, donc aujourd'hui' | NoWed["Test impossible le mercredi"]
     
-    Tue["Mardi matin"] -->|"Prévisible de la même manière"| NoTue["Test impossible le mardi"]
+    Tue["Mardi matin"] -->| Prévisible de la même manière | NoTue["Test impossible le mardi"]
     
-    Mon["Lundi matin"] -->|"Prévisible de la même manière"| NoMon["Test impossible le lundi"]
+    Mon["Lundi matin"] -->| Prévisible de la même manière | NoMon["Test impossible le lundi"]
     
     NoFri -.-> Thu
     NoThu -.-> Wed
@@ -142,3 +142,4 @@ Le « paradoxe de l'interrogation surprise » illustre parfaitement **la difficu
 
 Ce que nous considérons comme un « raisonnement parfait » n'est peut-être en réalité qu'un château de sable construit sur la croyance infondée que « l'autre partie respectera absolument les règles ».
 La prochaine fois que le professeur annoncera : « Je vais faire un contrôle surprise », il serait plus raisonnable d'arrêter de manipuler la logique et d'étudier docilement tous les jours.
+

@@ -158,13 +158,13 @@ flowchart TD
     Start["開始"] --> Input["輸入判定目標數 p 與測試次數 k"]
     Input --> LoopStart["迴圈從 i = 0 到 k-1"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "是" --> RandomA["在 1 < a < p-1 範圍內隨機選擇整數 a"]
+    Condition -- 是 --> RandomA["在 1 < a < p-1 範圍內隨機選擇整數 a"]
     RandomA --> Calc["計算模冪 a^(p-1) mod p"]
     Calc --> CheckPrime{"結果為 1 嗎？"}
-    CheckPrime -- "否" --> ReturnComposite["p 是合數（確定）"]
-    CheckPrime -- "是" --> Increment["將 i 加 1"]
+    CheckPrime -- 否 --> ReturnComposite["p 是合數（確定）"]
+    CheckPrime -- 是 --> Increment["將 i 加 1"]
     Increment --> Condition
-    Condition -- "否" --> ReturnPrime["p 大概是質數（機率性）"]
+    Condition -- 否 --> ReturnPrime["p 大概是質數（機率性）"]
     ReturnComposite --> End["結束"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ if __name__ == '__main__':
 我們每天不經意發送的 LINE 訊息、在 Amazon 上的購物，全都是在這個 $a^{p-1} \equiv 1 \pmod p$ 簡單而優美的數學公式之上舞動著的。費馬小定理告訴我們，無論數學多麼抽象，總有一天必定會派上用場。
 
 在學習程式設計或密碼學理論時，理解其基礎的數學結構，將會成為深入理解那些被當作黑盒子般提供的函式庫運作方式，並設計出更安全系統的一大武器。
+

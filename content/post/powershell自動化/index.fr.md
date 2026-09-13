@@ -158,11 +158,11 @@ Surtout lors de la sauvegarde d'un grand nombre de petits fichiers (tels que le 
 ```mermaid
 flowchart TD
     A["Démarrer le script de sauvegarde"] --> B{"Le NAS est-il accessible ?"}
-    B -- "Oui" --> C["Exécuter Robocopy (Multi-thread)"]
-    B -- "Non" --> D["Écrire le journal des erreurs et Quitter"]
+    B -- Oui --> C["Exécuter Robocopy (Multi-thread)"]
+    B -- Non --> D["Écrire le journal des erreurs et Quitter"]
     C --> E{"Robocopy a-t-il réussi ?"}
-    E -- "Oui (ExitCode < 8)" --> F["Rotation des journaux (Garder les 30 derniers jours)"]
-    E -- "Non (ExitCode >= 8)" --> D
+    E -- Oui (ExitCode < 8) --> F["Rotation des journaux (Garder les 30 derniers jours)"]
+    E -- Non (ExitCode >= 8) --> D
     F --> G["Terminer le script de sauvegarde"]
     D --> G
 ```
@@ -490,3 +490,4 @@ Dans cet article, nous avons expliqué, avec des exemples concrets, l'automatisa
 PowerShell est un moteur d'automatisation très profond et puissant qui, bien qu'étant un outil en ligne de commande, a accès à presque toutes les fonctionnalités de .NET. En utilisant les scripts présentés cette fois-ci comme base, vous pouvez personnaliser les chemins et la logique de traitement selon votre environnement de travail, vous libérant ainsi des tâches manuelles fastidieuses pour gagner un temps créatif.
 
 Le succès de l'automatisation repose sur le fait de « commencer par un petit script et d'augmenter progressivement la robustesse, comme la gestion des erreurs et la sortie des journaux ». Pourquoi ne pas commencer votre parcours d'automatisation avec PowerShell en sauvegardant d'abord un seul dossier sur votre PC ?
+

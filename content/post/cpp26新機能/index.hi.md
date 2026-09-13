@@ -19,13 +19,13 @@ tags: ["C++", "C++26", "Programming", "Tech"]
 
 ```mermaid
 timeline
-    title "C++ मानकीकरण विकास"
-    "C++11" : "Modern C++ की शुरुआत" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "सुविधाओं का परिष्करण" : "generic lambda, return type deduction"
-    "C++17" : "व्यावहारिकता में सुधार" : "std::optional, fold expressions, structured binding"
-    "C++20" : "पैराडाइम शिफ्ट" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "और अधिक विस्तार" : "Deducing this, std::expected, std::print"
-    "C++26" : "अगली पीढ़ी की क्रांति" : "Reflection, Contracts, Pattern Matching"
+    title C++ मानकीकरण विकास
+    C++11 : Modern C++ की शुरुआत : auto, lambda, constexpr, move semantics
+    C++14 : सुविधाओं का परिष्करण : generic lambda, return type deduction
+    C++17 : व्यावहारिकता में सुधार : std::optional, fold expressions, structured binding
+    C++20 : पैराडाइम शिफ्ट : Concepts, Modules, Coroutines, Ranges
+    C++23 : और अधिक विस्तार : Deducing this, std::expected, std::print
+    C++26 : अगली पीढ़ी की क्रांति : Reflection, Contracts, Pattern Matching
 ```
 
 C++26 का उद्देश्य C++20 में पेश किए गए Concepts और Modules जैसी बड़े पैमाने की सुविधाओं के शीर्ष पर **कोड की स्व-वर्णनात्मकता (reflection)** और **मज़बूती (contract programming)** को उनकी सीमा तक बढ़ाना है। आइए प्रत्येक सुविधा के विवरण में गोता लगाएँ।
@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["प्रकार (Type): User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["meta::info की रेंज"]
-    C -->| "[: member :]" | D["सीधा सदस्य एक्सेस (obj.id, obj.name)"]
+    A["प्रकार (Type): User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["meta::info की रेंज"]
+    C -->| [: member :] | D["सीधा सदस्य एक्सेस (obj.id, obj.name)"]
     D --> E["उत्पन्न कोड (ज़ीरो ओवरहेड)"]
 ```
 
@@ -146,12 +146,12 @@ Contracts केवल टिप्पणियाँ (comments) या पु�
 ```mermaid
 graph TD
     A["फ़ंक्शन कॉल किया गया"] --> B{"पूर्व-शर्त का मूल्यांकन करें"}
-    B -- "True" --> C["बॉडी निष्पादित करें"]
-    B -- "False" --> D["उल्लंघन हैंडलर को लागू करें"]
+    B -- True --> C["बॉडी निष्पादित करें"]
+    B -- False --> D["उल्लंघन हैंडलर को लागू करें"]
     D --> E["त्रुटि लॉग करें / निरस्त करें / फेंकें (Throw)"]
     C --> F{"पश्च-शर्त का मूल्यांकन करें"}
-    F -- "True" --> G["मान लौटाएं"]
-    F -- "False" --> D
+    F -- True --> G["मान लौटाएं"]
+    F -- False --> D
 ```
 
 Contracts का उपयोग करने से न केवल API के विनिर्देश (specifications) का स्व-दस्तावेजीकरण होता है, बल्कि अपरिभाषित व्यवहार (Undefined Behavior, UB) होने से पहले प्रोग्राम को सुरक्षित रूप से रोका और नियंत्रित किया जा सकता है, जिससे C++ के विशिष्ट मेमोरी भ्रष्टाचार (memory corruption) बग और तार्किक (logical) बग में भारी कमी आने की उम्मीद है।
@@ -367,3 +367,5 @@ C++26 वास्तव में एक ऐतिहासिक संस्�
 
 ---
 *यह लेख 2026 तक C++26 के मानकीकरण की स्थिति पर आधारित है। कृपया ध्यान दें कि प्रत्येक कंपाइलर की कार्यान्वयन स्थिति के आधार पर कुछ सिंटैक्स बदल सकते हैं*
+
+

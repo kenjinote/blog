@@ -221,7 +221,7 @@ Die Implementierung von Google Analytics (insbesondere `gtag.js` oder Google Tag
 Lassen Sie uns die Ladezeit der Website wie folgt aufschlüsseln und betrachten.
 
 ```mermaid
-pie title "Aufschlüsselung der typischen Website-Ladezeiten"
+pie title Aufschlüsselung der typischen Website-Ladezeiten
     "TTFB (Time to First Byte)" : 15
     "Content-Download (HTML/CSS)" : 20
     "DOM-Parsing & Rendering" : 45
@@ -261,5 +261,6 @@ Beim Betrieb von statischen Websites mit Hugo bietet der Einsatz moderner Hostin
 5. **Ressourcenschonende Analysen**: Führen Sie Tools wie Cloudflare Web Analytics ein, die die Privatsphäre respektieren und gleichzeitig die Performance nicht beeinträchtigen.
 
 Durch die Kombination dieser Elemente kann kostenlos ein skalierbares und robustes Blog-System aufgebaut werden, das massivem Traffic im Bereich von mehreren Millionen Seitenaufrufen pro Monat standhält. Wenn Sie die Erstellung eines Technik-Blogs, einer Unternehmenswebsite oder einer Portfolio-Website in Betracht ziehen, sollten Sie diese Architektur aus Jamstack + Hugo + Cloudflare Pages unbedingt ausprobieren.
+
 
 

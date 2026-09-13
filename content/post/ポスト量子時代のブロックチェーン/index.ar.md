@@ -275,7 +275,7 @@ $$
 لحل هذه المشكلة، ستكون هناك حاجة إلى زيادة كبيرة في حجم الكتلة، ولكن هذا سيزيد من متطلبات التخزين وعرض النطاق الترددي للشبكة للعقد الكاملة (Full Nodes)، مما سيجعل تشغيل العقد الفردية أمرًا صعبًا، وسيؤدي في النهاية إلى معضلة **المركزية في الشبكة**.
 
 ```mermaid
-pie title "مقارنة أحجام بيانات التوقيع في البلوكتشين (رسم توضيحي)"
+pie title مقارنة أحجام بيانات التوقيع في البلوكتشين (رسم توضيحي)
     "ECDSA (حوالي 70 بايت)" : 2
     "Dilithium ML-DSA (حوالي 2500 بايت)" : 58
     "SPHINCS+ (حوالي 17000 بايت)" : 40
@@ -346,3 +346,4 @@ pie title "مقارنة أحجام بيانات التوقيع في البلوك
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

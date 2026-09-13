@@ -180,7 +180,7 @@ La "velocidad de codificación" tradicional o "la memorización de sintaxis" est
 Este cambio de paradigma también es claramente evidente en cómo los ingenieros asignan su tiempo diario.
 
 ```mermaid
-pie title "Asignación de tiempo del ingeniero (Antes de la introducción de la IA)"
+pie title Asignación de tiempo del ingeniero (Antes de la introducción de la IA)
   "Codificación y resolución de errores de sintaxis": 50
   "Definición de requisitos y diseño de sistemas": 20
   "Implementación y ejecución de pruebas": 20
@@ -188,7 +188,7 @@ pie title "Asignación de tiempo del ingeniero (Antes de la introducción de la 
 ```
 
 ```mermaid
-pie title "Asignación de tiempo del ingeniero (Era de la IA)"
+pie title Asignación de tiempo del ingeniero (Era de la IA)
   "Modelado de dominios y diseño de arquitectura": 40
   "Creación de prompts para IA y validación de código": 20
   "Depuración avanzada y operación en producción": 30
@@ -207,5 +207,6 @@ Los ingenieros del futuro ya no se preocuparán por cada detalle en las especifi
 
 Un verdadero ingeniero no es alguien que escribe código, sino alguien que resuelve problemas.
 Para aquellos que continúan refinando estas "habilidades de ingeniería exclusivas de los humanos" — modelado de dominios, diseño de arquitecturas escalables, comunicación con las partes interesadas y depuración de sistemas complejos — la IA no será un enemigo que roba trabajos, sino el socio más fuerte que expandirá exponencialmente su propia creatividad y productividad.
+
 
 

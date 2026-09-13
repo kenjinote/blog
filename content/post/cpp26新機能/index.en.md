@@ -19,13 +19,13 @@ First, let's visually confirm the history of C++ standardization and the positio
 
 ```mermaid
 timeline
-    title "C++ Standardization Evolution"
-    "C++11" : "Dawn of Modern C++" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "Refinement of Features" : "generic lambda, return type deduction"
-    "C++17" : "Improved Practicality" : "std::optional, fold expressions, structured binding"
-    "C++20" : "Paradigm Shift" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "Further Expansion" : "Deducing this, std::expected, std::print"
-    "C++26" : "Next-Generation Revolution" : "Reflection, Contracts, Pattern Matching"
+    title C++ Standardization Evolution
+    C++11 : Dawn of Modern C++ : auto, lambda, constexpr, move semantics
+    C++14 : Refinement of Features : generic lambda, return type deduction
+    C++17 : Improved Practicality : std::optional, fold expressions, structured binding
+    C++20 : Paradigm Shift : Concepts, Modules, Coroutines, Ranges
+    C++23 : Further Expansion : Deducing this, std::expected, std::print
+    C++26 : Next-Generation Revolution : Reflection, Contracts, Pattern Matching
 ```
 
 C++26 aims to maximize the **self-descriptiveness of code (reflection)** and **robustness (contract programming)** on top of the large-scale feature groups like Concepts and Modules introduced in C++20. Now, let's delve into the details of each feature.
@@ -97,9 +97,9 @@ This eliminates issues like compiler memory exhaustion due to template nesting a
 
 ```mermaid
 graph TD
-    A["Type: User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["Range of meta::info"]
-    C -->| "[: member :]" | D["Direct Member Access (obj.id, obj.name)"]
+    A["Type: User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["Range of meta::info"]
+    C -->| [: member :] | D["Direct Member Access (obj.id, obj.name)"]
     D --> E["Generated Code (Zero Overhead)"]
 ```
 
@@ -146,12 +146,12 @@ Contracts are not just comments or the old `assert()` macros. Depending on the b
 ```mermaid
 graph TD
     A["Function Called"] --> B{"Evaluate Pre-condition"}
-    B -- "True" --> C["Execute Body"]
-    B -- "False" --> D["Invoke Violation Handler"]
+    B -- True --> C["Execute Body"]
+    B -- False --> D["Invoke Violation Handler"]
     D --> E["Log Error / Abort / Throw"]
     C --> F{"Evaluate Post-condition"}
-    F -- "True" --> G["Return Value"]
-    F -- "False" --> D
+    F -- True --> G["Return Value"]
+    F -- False --> D
 ```
 
 By utilizing Contracts, API specifications not only become self-documenting but also allow programs to be safely stopped or controlled before triggering undefined behavior (UB), which is expected to significantly reduce memory corruption bugs and logic bugs unique to C++.
@@ -367,3 +367,5 @@ Going forward, we recommend actively adopting these new paradigms in new project
 
 ---
 *This article is written based on the C++26 standardization status as of 2026. Please be aware that some syntax may change depending on the implementation status of each compiler.*
+
+

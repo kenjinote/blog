@@ -301,8 +301,8 @@ graph TD
     A["Initialization (Superposition of all states)"] --> B["Oracle (Flip phase of the correct answer)"]
     B --> C["Diffusion Operator (Amplitude amplification by inversion about the mean)"]
     C --> D{"Reached sufficient probability?"}
-    D -- "No" --> B
-    D -- "Yes" --> E["Measurement"]
+    D -- No --> B
+    D -- Yes --> E["Measurement"]
 ```
 
 ---
@@ -321,3 +321,4 @@ By all means, take this opportunity to create various quantum circuits using Qis
 - IBM Quantum Learning
 
 Welcome to the quantum world!
+

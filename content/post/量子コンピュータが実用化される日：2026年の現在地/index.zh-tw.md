@@ -148,7 +148,7 @@ $$
 
 ```mermaid
 gantt
-    title "量子運算路線圖 (2026年修訂版)"
+    title 量子運算路線圖 (2026年修訂版)
     dateFormat  YYYY
     axisFormat  %Y
     
@@ -173,4 +173,5 @@ gantt
 
 ---
 *本文是基於2026年最新的量子運算研究論文與業界動態所撰寫。*
+
 

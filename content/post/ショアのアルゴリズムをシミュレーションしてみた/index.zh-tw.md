@@ -57,11 +57,11 @@ graph TD
 graph TD
     A["輸入: 想要進行質因數分解的合成數 N"] --> B["選擇一個小於 N 的隨機數 a"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Yes" --> D["輸出明顯的因數 gcd(a, N) 並結束"]
-    C -- "No" --> E["用量子演算法尋找 f(x) = a^x mod N 的週期 r"]
+    C -- Yes --> D["輸出明顯的因數 gcd(a, N) 並結束"]
+    C -- No --> E["用量子演算法尋找 f(x) = a^x mod N 的週期 r"]
     E --> F{"r 為偶數 且 a^(r/2) ≢ -1 mod N ?"}
-    F -- "No" --> B
-    F -- "Yes" --> G["計算因數 p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- No --> B
+    F -- Yes --> G["計算因數 p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["輸出: p, q"]
 ```
 
@@ -358,4 +358,5 @@ PQC 建立在被認為即使使用秀爾演算法（或葛羅佛演算法）也�
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

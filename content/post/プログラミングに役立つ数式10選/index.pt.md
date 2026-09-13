@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["Aplicar Teorema de Bayes"]
   Bayes --> Class{"P(Spam) > 0.9?"}
-  Class -- "Sim" --> Spam["Mover para a Pasta de Spam"]
-  Class -- "Não" --> Ham["Entregar na Caixa de Entrada"]
+  Class -- Sim --> Spam["Mover para a Pasta de Spam"]
+  Class -- Não --> Ham["Entregar na Caixa de Entrada"]
 ```
 
 ### Exemplo de implementação (Python)
@@ -396,8 +396,8 @@ Utilizando o valor da função na posição atual $f(x_n)$ e a sua inclinação 
 flowchart LR
   Start["Início: Estimar x0 inicial"] --> Eval["Avaliar f(xn) e f'(xn)"]
   Eval --> Check{"f(xn) ≈ 0?"}
-  Check -- "Sim" --> Done["Retornar xn como Raiz"]
-  Check -- "Não" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- Sim --> Done["Retornar xn como Raiz"]
+  Check -- Não --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ O que você achou de todas estas esplêndidas fórmulas? Como pôde visualizar b
 Adentrar nas ricas teorias de base referencial equacionada fundamentadas nelas se mostra extremamente indispensável e formidável a capacitar codificadores simplórios limitados (Aqueles condicionados tristemente e cegamente ao importar pacotes de matriz com a submissão cega de módulos de terceiros sem raciocínio, ex.: `math.sin` ou bibliotecas `numpy.fft`) para ascendê-los ao seleto nível de supremos e geniais engenheiros experientes providenciando o poder total operando magistralmente limites super potentes em hardware. Na próxima oportunidade, divirta-se criando rotinas no código providenciando à tela maravilhosas formas, expanda suas perspectivas, maravilhe-se visualizando qual brilhante matriz equacionada e fórmula puramente sublime bate poderosa por trás desse texto invisivelmente dando poder à estrutura.
 
 **Happy Coding and Math!**
+

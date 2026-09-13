@@ -33,13 +33,13 @@ graph TD
     CompilerR["Front-end rustc"]
     Debugger["CodeLLDB (Adaptador de Depuração)"]
 
-    VSCode -- "Solicitação de Autocompletar / Pular para Definição" --> LSP
+    VSCode -- Solicitação de Autocompletar / Pular para Definição --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
     Clangd -. "Análise AST (Árvore de Sintaxe Abstrata)" .-> CompilerC
     RustAnalyzer -. "Expansão de Macro / Inferência de Tipo" .-> CompilerR
     
-    VSCode -- "Debug Adapter Protocol (DAP)" --> Debugger
+    VSCode -- Debug Adapter Protocol (DAP) --> Debugger
     Debugger -. "ptrace / Despejo de Memória" .-> Executable["Binário Compilado"]
 ```
 
@@ -388,3 +388,4 @@ Adotando as dez ferramentas e as configurações detalhadas recomendadas neste a
 A configuração inicial e personalização desses arquivos pode tomar um pouco do seu tempo, mas uma vez estabelecido o sistema, o ambiente fluirá maravilhosamente e garantirá um nível de produtividade esmagador. Recomendamos fortemente a todos que usem os conceitos descritos e os modelos de (`settings.json`, `tasks.json` e `launch.json`) aqui presentes como referência e construam o "Ambiente de Desenvolvimento Mais Poderoso Possível".
 
 Desejamos a todos uma programação de sistemas muito segura, rápida e feliz!
+

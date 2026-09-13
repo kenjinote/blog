@@ -158,11 +158,11 @@ Insbesondere bei der Sicherung vieler kleiner Dateien (wie z. B. Quellcode) ist 
 ```mermaid
 flowchart TD
     A["Backup-Skript starten"] --> B{"Ist NAS erreichbar?"}
-    B -- "Ja" --> C["Robocopy ausführen (Multi-threaded)"]
-    B -- "Nein" --> D["Fehlerprotokoll schreiben & Beenden"]
+    B -- Ja --> C["Robocopy ausführen (Multi-threaded)"]
+    B -- Nein --> D["Fehlerprotokoll schreiben & Beenden"]
     C --> E{"War Robocopy erfolgreich?"}
-    E -- "Ja (ExitCode < 8)" --> F["Protokolle rotieren (Letzte 30 Tage behalten)"]
-    E -- "Nein (ExitCode >= 8)" --> D
+    E -- Ja (ExitCode < 8) --> F["Protokolle rotieren (Letzte 30 Tage behalten)"]
+    E -- Nein (ExitCode >= 8) --> D
     F --> G["Backup-Skript beenden"]
     D --> G
 ```
@@ -490,3 +490,4 @@ Beginnend mit grundlegenden Schritten wie der Verwaltung von Ausführungsrichtli
 PowerShell ist äußerst tiefgreifend; es ist eine leistungsstarke Automatisierungs-Engine, die, obwohl sie ein Kommandozeilenwerkzeug ist, auf fast alle Funktionen von .NET zugreifen kann. Basierend auf den hier vorgestellten Skripten können Sie Pfade und Logiken an Ihre eigene Arbeitsumgebung anpassen und so kreative Zeit gewinnen, befreit von mühsamer manueller Arbeit.
 
 Der Erfolg der Automatisierung hängt davon ab, "mit kleinen Skripten anzufangen und nach und nach deren Robustheit wie Fehlerbehandlung und Protokollierung zu verbessern". Wie wäre es, Ihre Reise in die PowerShell-Automatisierung zu starten, indem Sie einfach zunächst einen einzigen Ordner auf Ihrem eigenen PC sichern?
+

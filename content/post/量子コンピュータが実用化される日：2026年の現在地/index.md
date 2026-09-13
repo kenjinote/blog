@@ -148,7 +148,7 @@ $$
 
 ```mermaid
 gantt
-    title "Quantum Computing Roadmap (Revised 2026)"
+    title Quantum Computing Roadmap (Revised 2026)
     dateFormat  YYYY
     axisFormat  %Y
     
@@ -173,4 +173,5 @@ gantt
 
 ---
 *この記事は2026年時点の最新の量子コンピューティング研究論文および業界動向に基づいて執筆されています。*
+
 

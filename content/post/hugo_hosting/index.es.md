@@ -216,7 +216,7 @@ Cuando se introduce Google Analytics (específicamente `gtag.js` o Google Tag Ma
 Desglosemos los tiempos de carga del sitio de la siguiente manera:
 
 ```mermaid
-pie title "Desglose de los tiempos de carga típicos del sitio"
+pie title Desglose de los tiempos de carga típicos del sitio
     "TTFB (Tiempo hasta el Primer Byte)" : 15
     "Descarga de Contenido (HTML/CSS)" : 20
     "Análisis y Renderizado del DOM" : 45
@@ -255,5 +255,6 @@ En la operación de un sitio estático usando Hugo, adoptar plataformas de aloja
 5. **Analíticas ligeras**: Introducir Cloudflare Web Analytics, etc., que no comprometen el rendimiento al tiempo que respetan la privacidad.
 
 Al combinar estos elementos, es posible construir un sistema de blog escalable y robusto que puede soportar grandes volúmenes de tráfico de millones de visitas mensuales de forma gratuita. Si estás considerando lanzar un blog técnico, un sitio corporativo o un portafolio, definitivamente prueba esta configuración de Jamstack + Hugo + Cloudflare Pages.
+
 
 

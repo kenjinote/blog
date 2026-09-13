@@ -67,7 +67,7 @@ Grafik berikut ini menunjukkan perbedaan tersebut secara visual.
 
 ```mermaid
 xychart-beta
-    title "Divergensi Produktivitas Seiring Waktu (Efek Matthew)"
+    title Divergensi Produktivitas Seiring Waktu (Efek Matthew)
     x-axis ["Tahun 1", "Tahun 2", "Tahun 3", "Tahun 4", "Tahun 5", "Tahun 6"]
     y-axis "Volume Output" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
@@ -122,11 +122,11 @@ flowchart TD
     B --> C["Generasi oleh Model AI (Generation)"]
     C --> D{"Verifikasi Kognitif (Cognitive Verification)"}
     
-    D -- "Ada Keraguan / Kegagalan Logika" --> E["Pemeriksaan Fakta menggunakan RAG atau Alat Eksternal"]
+    D -- Ada Keraguan / Kegagalan Logika --> E["Pemeriksaan Fakta menggunakan RAG atau Alat Eksternal"]
     E --> F["Penyesuaian Ulang / Penyempurnaan Prompt"]
     F --> B
     
-    D -- "Fakta & Logika Valid" --> G["Penyesuaian Akhir dengan Pengetahuan Domain Manusia"]
+    D -- Fakta & Logika Valid --> G["Penyesuaian Akhir dengan Pengetahuan Domain Manusia"]
     G --> H["Keluaran Hasil Akhir"]
 ```
 
@@ -165,5 +165,7 @@ Apakah kita akan berdiri di sisi sini dari kesenjangan digital yang baru, atau t
 
 ---
 *Silakan tinggalkan pendapat Anda tentang artikel ini atau studi kasus spesifik tentang penerapan orkestrasi AI di bagian komentar atau media sosial penulis.*
+
+
 
 

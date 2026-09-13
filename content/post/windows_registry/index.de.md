@@ -148,12 +148,12 @@ flowchart TD
     HKLM_Soft["HKLM\SOFTWARE"]
     HKLM_WOW64["HKLM\SOFTWARE\WOW6432Node"]
 
-    App32 -->|"RegOpenKeyEx()"| RegAPI
-    App64 -->|"RegOpenKeyEx()"| RegAPI
+    App32 -->| RegOpenKeyEx() | RegAPI
+    App64 -->| RegOpenKeyEx() | RegAPI
     RegAPI --> CM
 
-    CM -->|"Wenn 64-Bit-Prozess"| HKLM_Soft
-    CM -->|"Wenn 32-Bit-Prozess (Umleitung)"| HKLM_WOW64
+    CM -->| Wenn 64-Bit-Prozess | HKLM_Soft
+    CM -->| Wenn 32-Bit-Prozess (Umleitung) | HKLM_WOW64
 ```
 Beim Bearbeiten der Registrierung über ein PowerShell-Skript oder eine C#-Anwendung müssen Sie sich unbedingt bewusst sein, ob der ausführende Prozess selbst 32-Bit oder 64-Bit ist. Andernfalls wird das lästige Problem verursacht, dass „die geschriebenen Einstellungen im Explorer nicht sichtbar sind (an einer anderen Stelle geschrieben wurden)“.
 
@@ -399,5 +399,6 @@ Abschließend fassen wir wichtige Designprinzipien und Best Practices im Umgang 
 ## Fazit
 
 Die Windows-Registrierung ist ein leistungsstarkes und komplexes Basissystem, das alle Verhaltensweisen des Betriebssystems und der Anwendungseinstellungen integriert verwaltet. Chaotisches manuelles Bearbeiten birgt ein hohes mathematisch nachgewiesenes Risiko für Systembeschädigungen. Daher ist es im modernen Systemmanagement und in der Entwicklung unerlässlich, programmierbare Mittel wie PowerShell oder C# zu verwenden, um das Konfigurationsmanagement nach den Prinzipien von Infrastructure as Code auf sichere, testbare und reproduzierbare Weise durchzuführen. Bitte nutzen Sie das in diesem Artikel erläuterte tiefe Verständnis der Architektur und die Implementierungsmuster, um eine robustere und sicherere Windows-Umgebung aufzubauen.
+
 
 

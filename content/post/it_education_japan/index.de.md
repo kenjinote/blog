@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Kompilier-/Laufzeitumgebung"]
         D["Persistenter Dateispeicher"]
     end
-    A -->| "HTTP/WebSocket-Kommunikation: Schwere Verzögerungen durch schwache Schulverbindungen" | B
+    A -->| HTTP/WebSocket-Kommunikation: Schwere Verzögerungen durch schwache Schulverbindungen | B
     B <--> C
     B <--> D
 ```
@@ -210,7 +210,7 @@ Die folgende Grafik veranschaulicht konzeptionell die verzweifelte Diskrepanz zw
 
 ```mermaid
 xychart-beta
-    title "Vermittelte Skills im japanischen Schulsystem vs. Anforderungen der Industrie"
+    title Vermittelte Skills im japanischen Schulsystem vs. Anforderungen der Industrie
     x-axis ["Visuelle Sprachen", "Grundsyntax/Variablen", "Algorithmen/Komplexität", "OS/Netzwerke", "DB/Systemdesign", "Cloud/Verteilte Architektur"]
     y-axis "Erreichungsgrad / Anforderung (%)" 0 --> 100
     line "Aktuelles Niveau der Schulbildung" [95, 60, 15, 5, 2, 0]
@@ -256,6 +256,8 @@ Wie wir diese schwierigste und wichtigste Phase, die Zeit „nach“ der obligat
 ---
 
 *In diesem Artikel haben wir die Komplexitätstheorie und die infrastrukturellen Grenzen des GIGA School-Konzepts skizziert. Noch spezifischere Themen der Informatik (wie Algorithmen für verteilte Systeme und Details zu Low-Level-Speicherverwaltungsmethoden) werden in zukünftigen Beiträgen dieser Reihe nach und nach behandelt.*
+
+
 
 
 

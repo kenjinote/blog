@@ -125,19 +125,19 @@ graph TD
     Start["测试开始 (输入: N, a)"] --> CalcDS["计算满足 N-1 = d * 2^s 的 d (奇数) 和 s"]
     CalcDS --> CalcX["计算 x = a^d mod N"]
     CalcX --> CheckX1{"x == 1 或 x == N-1 ?"}
-    CheckX1 -- "Yes" --> ReturnTrue["可能是素数 (Probably Prime)"]
-    CheckX1 -- "No" --> LoopStart["从 r = 1 到 s-1 开始循环"]
+    CheckX1 -- Yes --> ReturnTrue["可能是素数 (Probably Prime)"]
+    CheckX1 -- No --> LoopStart["从 r = 1 到 s-1 开始循环"]
     
     LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- "No" --> ReturnFalse["确认为合数 (Composite)"]
-    LoopCondition -- "Yes" --> SquareX["计算 x = (x * x) mod N"]
+    LoopCondition -- No --> ReturnFalse["确认为合数 (Composite)"]
+    LoopCondition -- Yes --> SquareX["计算 x = (x * x) mod N"]
     
     SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- "Yes" --> ReturnTrue
-    CheckXMinus1 -- "No" --> CheckXOne{"x == 1 ?"}
+    CheckXMinus1 -- Yes --> ReturnTrue
+    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
     
-    CheckXOne -- "Yes" --> ReturnFalse
-    CheckXOne -- "No" --> LoopNext["r 增加 1 并继续"]
+    CheckXOne -- Yes --> ReturnFalse
+    CheckXOne -- No --> LoopNext["r 增加 1 并继续"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ graph LR
 *参考资料 (Reference):*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

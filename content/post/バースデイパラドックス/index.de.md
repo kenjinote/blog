@@ -98,7 +98,7 @@ Setzt man in diese Formel die Anzahl der Personen $n$ ein, so sieht man, dass di
 - Bei $n = 70$ beträgt die Wahrscheinlichkeit etwa **99,9%**
 
 ```mermaid
-pie title "Wahrscheinlichkeit bei 23 Personen"
+pie title Wahrscheinlichkeit bei 23 Personen
     "Ein Paar mit demselben Geburtstag (50,7%)" : 50.7
     "Alle sind unterschiedlich (49,3%)" : 49.3
 ```
@@ -154,3 +154,4 @@ Wir sind stark bei linearem (additivem) Wachstum, aber wir können ein Phänomen
 Hinter der Intuition, dass "die Zahl 23 im Vergleich zur großen Zahl 365 zu klein ist", sind die **"253 unsichtbaren Fäden (Paare)"** gespannt, die von den 23 Personen gebildet werden.
 
 Wenn Sie das nächste Mal an einen Ort gehen, an dem sich Menschen versammeln, stellen Sie sich nicht nur die sichtbare "Anzahl an Personen" vor, sondern auch die zahllosen "Kombinationsfäden", die zwischen ihnen existieren. Die Art und Weise, wie Sie die Welt sehen, wird sich sicher ein klein wenig mathematisch verändern.
+

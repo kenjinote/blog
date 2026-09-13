@@ -48,9 +48,9 @@ flowchart TD
     T["Tasks (Tasks DB)"]
     N["Notes (Zettelkasten DB)"]
 
-    P -->|"1:N Relation"| T
-    T -->|"N:N Relation"| N
-    P -->|"1:N Relation"| N
+    P -->| 1:N Relation | T
+    T -->| N:N Relation | N
+    P -->| 1:N Relation | N
 ```
 
 ### Projects Database Properties
@@ -165,9 +165,9 @@ flowchart TD
     NOTION["Notion API"]
     DB["Notion Tasks DB"]
 
-    GH -->|"Send Webhook"| GHA
-    GHA -->|"Execute Python Script"| NOTION
-    NOTION -->|"Update DB & Add Task"| DB
+    GH -->| Send Webhook | GHA
+    GHA -->| Execute Python Script | NOTION
+    NOTION -->| Update DB & Add Task | DB
 ```
 
 ### Automatically Creating Notion Tasks from GitHub Issues
@@ -273,5 +273,6 @@ No matter how sophisticated a system or tool you build, it defeats the purpose i
 Task management using Notion goes far beyond a mere To-Do list. By combining information organization through the PARA Method, knowledge networking through Zettelkasten, and engineering through the Notion API, you can build a "Second Brain" that powerfully boosts personal development and blogging.
 
 While the initial setup takes some time, once the system starts running, the cognitive load required for task management will drop dramatically, allowing you to fully focus on what is truly important: "writing code" and "writing text." We hope you refer to this article to build your own ultimate Notion workspace.
+
 
 

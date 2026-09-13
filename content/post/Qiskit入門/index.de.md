@@ -301,8 +301,8 @@ graph TD
     A["Initialisierung (Superposition aller Zustände)"] --> B["Orakel (Invertiert die Phase der richtigen Lösung)"]
     B --> C["Diffusionsoperator (Amplitudenverstärkung durch Inversion um den Mittelwert)"]
     C --> D{"Ausreichende Wahrscheinlichkeit erreicht?"}
-    D -- "No" --> B
-    D -- "Yes" --> E["Messung"]
+    D -- No --> B
+    D -- Yes --> E["Messung"]
 ```
 
 ---
@@ -321,3 +321,4 @@ Nutzen Sie diese Gelegenheit, um verschiedene Quantenschaltungen mit Qiskit selb
 - IBM Quantum Learning
 
 Willkommen in der Quantenwelt!
+

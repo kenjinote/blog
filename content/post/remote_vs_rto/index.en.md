@@ -181,13 +181,13 @@ The core of Zero Trust is "not using the network perimeter (whether internal or 
 ```mermaid
 graph TD
     subgraph "Perimeter Defense Model (Traditional VPN)"
-        U1["Remote Engineer"] -- "IPsec / SSL VPN" --> VPN["VPN Gateway (Single Point of Failure / Bottleneck)"]
-        VPN -- "Internal LAN (Implicit Trust)" --> App1["Internal Source Code Management"]
+        U1["Remote Engineer"] -- IPsec / SSL VPN --> VPN["VPN Gateway (Single Point of Failure / Bottleneck)"]
+        VPN -- Internal LAN (Implicit Trust) --> App1["Internal Source Code Management"]
     end
     
     subgraph "Zero Trust Model (BeyondCorp / ZTNA)"
-        U2["Remote Engineer (MDM Managed Device)"] -- "Direct Communication (mTLS HTTPS)" --> IAP["Identity-Aware Proxy (IAP)"]
-        IAP -- "Dynamic Authorization per Request" --> App2["Internal / SaaS Applications"]
+        U2["Remote Engineer (MDM Managed Device)"] -- Direct Communication (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
+        IAP -- Dynamic Authorization per Request --> App2["Internal / SaaS Applications"]
         IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / User Context" .-> Policy
         MDM["Device Management (Intune / Jamf)"] -. "Device Health (Patch Status)" .-> Policy
         Policy["Access Policy Engine"] -. "Risk-based Authorization Decision" .-> IAP
@@ -234,5 +234,6 @@ Management must discard the illusion that "merely gathering people in an office 
 On the other hand, engineers (especially senior levels) must also amend the self-righteous perspective that "an office is unnecessary because I am more productive writing code alone." Engineering is a team sport, and engineers bear broad responsibilities beyond just coding productivity, including overall system design, mentoring junior members, and coordinating during emergencies. It is a fact that high-bandwidth communication in physical spaces can sometimes save an entire project.
 
 The optimal solution varies depending on the phase of the company, team, and product. However, what is certain is that only organizations that understand the sociological nature of communication, measure their current state with multifaceted metrics like the SPACE framework, and continually break through constraints with technologies like Zero Trust architecture will gain true competitive advantage in this new era of work.
+
 
 

@@ -28,11 +28,11 @@ OAuth 2.0を理解するための第一歩は、登場人物（Role）を正確�
 
 ```mermaid
 graph TD
-    RO["Resource Owner (ユーザー)"] -- "認可を与える" --> C["Client (Slack App)"]
-    C -- "認可を要求" --> AS["Authorization Server (Slack認可サーバー)"]
-    AS -- "アクセストークン発行" --> C
-    C -- "トークンを使ってアクセス" --> RS["Resource Server (Slack APIサーバー)"]
-    RO -- "ID/パスワードでログイン" --> AS
+    RO["Resource Owner (ユーザー)"] -- 認可を与える --> C["Client (Slack App)"]
+    C -- 認可を要求 --> AS["Authorization Server (Slack認可サーバー)"]
+    AS -- アクセストークン発行 --> C
+    C -- トークンを使ってアクセス --> RS["Resource Server (Slack APIサーバー)"]
+    RO -- ID/パスワードでログイン --> AS
 ```
 
 1. **Resource Owner（リソースオーナー）**
@@ -371,4 +371,5 @@ sequenceDiagram
 4. **最小権限の原則** に基づくスコープ設計と、DB保存時の暗号化は運用上絶対に欠かせない要素です。
 
 OAuth 2.0は非常に奥が深く、RFCだけでも膨大な仕様が存在しますが、このように実際のプラットフォーム（Slack）をターゲットにして手を動かしながら学ぶことで、その洗練された設計思想と堅牢なセキュリティの仕組みを実感できるはずです。今後のアプリケーション開発やAPI連携の実装において、本記事の知識が役立てば幸いです。
+
 

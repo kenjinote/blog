@@ -182,13 +182,13 @@ $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 ```mermaid
 graph TD
     subgraph "邊界防禦模型 (傳統 VPN)"
-        U1["遠距工程師"] -- "IPsec / SSL VPN" --> VPN["VPN Gateway (單點故障與瓶頸)"]
-        VPN -- "內部 LAN (隱含信任)" --> App1["內部原始碼管理"]
+        U1["遠距工程師"] -- IPsec / SSL VPN --> VPN["VPN Gateway (單點故障與瓶頸)"]
+        VPN -- 內部 LAN (隱含信任) --> App1["內部原始碼管理"]
     end
     
     subgraph "零信任模型 (BeyondCorp / ZTNA)"
-        U2["遠距工程師 (MDM 管理設備)"] -- "直接通訊 (mTLS HTTPS)" --> IAP["Identity-Aware Proxy (IAP)"]
-        IAP -- "每次請求的動態授權" --> App2["內部 / SaaS 應用程式"]
+        U2["遠距工程師 (MDM 管理設備)"] -- 直接通訊 (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
+        IAP -- 每次請求的動態授權 --> App2["內部 / SaaS 應用程式"]
         IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / 使用者情境" .-> Policy
         MDM["設備管理 (Intune / Jamf)"] -. "設備健康度 (更新狀態)" .-> Policy
         Policy["存取策略引擎"] -. "基於風險的授權判定" .-> IAP
@@ -235,5 +235,6 @@ $$ T_{productivity} = f(C_{sync\_collab}, E_{deep\_work}, ZTNA_{performance}) $$
 另一方面，工程師（尤其是資深人員）也必須改變「自己一個人在家寫程式比較有生產力，所以不需要辦公室」這種自以為是的觀點。工程是一項團隊運動，除了程式碼的生產力，還背負著組織整體的系統設計、初階成員的培育、緊急時的協作等廣泛的責任。有時，物理空間中的高頻寬溝通拯救了整個專案，這也是不爭的事實。
 
 最佳解會因企業、團隊和產品的階段而異。但可以確定的是，只有那些理解社會學溝通性質、使用 SPACE 框架等多元指標衡量現狀，並持續運用如零信任架構等科技打破限制的組織，才能在這個新工作方式的時代中，獲得真正的競爭力。
+
 
 

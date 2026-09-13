@@ -98,9 +98,9 @@ graph TD
         App["Main Application"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["App bergantung pada implementasi MathLib, tapi tidak menunjukkannya ke luar"]
     note2["NetworkLib mengekspos antarmuka HeaderLib"]
@@ -369,3 +369,4 @@ Mari kita ulas poin-poin utamanya.
 7. **Pendekatan Matematis**: Perhatikan Hukum Amdahl, kurangi dependensi untuk meningkatkan efisiensi kompilasi paralel.
 
 Meski awalnya mungkin terasa sulit, namun setelah Anda menguasai konsep target dan properti, sekompleks dan sebesar apa pun proyek C++ yang ditangani, Anda akan dapat menjaga lingkungan build yang tertata rapi. Silakan jadikan artikel ini sebagai referensi dan cobalah membangun lingkungan pengembangan C++ dengan sintaks Modern CMake terbaru.
+

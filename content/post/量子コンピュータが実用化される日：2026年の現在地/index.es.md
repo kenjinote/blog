@@ -148,7 +148,7 @@ Para que los ordenadores cuánticos demuestren verdaderamente la **supremacía c
 
 ```mermaid
 gantt
-    title "Hoja de ruta de la computación cuántica (Revisada en 2026)"
+    title Hoja de ruta de la computación cuántica (Revisada en 2026)
     dateFormat  YYYY
     axisFormat  %Y
     
@@ -173,4 +173,5 @@ El mayor reto en 2026 es la capacidad de enfriamiento del enorme criostato (refr
 
 ---
 *Este artículo se basa en los últimos trabajos de investigación en computación cuántica y tendencias de la industria en 2026.*
+
 

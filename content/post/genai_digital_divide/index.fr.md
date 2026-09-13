@@ -67,7 +67,7 @@ Le graphique suivant illustre visuellement cette divergence.
 
 ```mermaid
 xychart-beta
-    title "Divergence de productivité au fil du temps (L'effet Matthieu)"
+    title Divergence de productivité au fil du temps (L'effet Matthieu)
     x-axis ["Année 1", "Année 2", "Année 3", "Année 4", "Année 5", "Année 6"]
     y-axis "Volume de production" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
@@ -122,11 +122,11 @@ flowchart TD
     B --> C["Génération par le modèle d'IA (Generation)"]
     C --> D{"Vérification cognitive (Cognitive Verification)"}
     
-    D -- "Doute ou faille logique" --> E["Fact-checking à l'aide de RAG ou d'outils externes"]
+    D -- Doute ou faille logique --> E["Fact-checking à l'aide de RAG ou d'outils externes"]
     E --> F["Ajustement et affinage du prompt"]
     F --> B
     
-    D -- "Fait et logique valides" --> G["Ajustement final basé sur la connaissance du domaine de l'humain"]
+    D -- Fait et logique valides --> G["Ajustement final basé sur la connaissance du domaine de l'humain"]
     G --> H["Production du livrable final (Output)"]
 ```
 
@@ -165,5 +165,7 @@ Se tenir de ce côté-ci de la nouvelle fracture numérique ou rester de l'autre
 
 ---
 *Si vous avez des commentaires sur cet article ou des exemples concrets de déploiement de l'orchestration de l'IA, n'hésitez pas à les partager dans la section des commentaires ou sur les réseaux sociaux de l'auteur.*
+
+
 
 

@@ -125,7 +125,7 @@ The drawback of QMK was that "every time you change settings, you have to compil
 The typical "row-staggered (keys are staggered by row)" layout is a remnant to prevent the physical arms of typewriters from tangling, and is not based on the structure of the human hand.
 
 ```mermaid
-pie title "Engineer's Ideal Keyboard Layout Preferences (Estimated Data)"
+pie title Engineer's Ideal Keyboard Layout Preferences (Estimated Data)
     "Row Staggered (Conventional)" : 45
     "Alice Layout (Ergonomic)" : 15
     "Ortholinear (Grid Layout)" : 10
@@ -201,5 +201,6 @@ Choosing a keyboard is a process of "optimizing your own interface" throughout y
 The 5 keyboards introduced this time (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) are all masterpieces aiming for the "best input experience" with different approaches. By all means, please find your best partner according to your typing style and the physical troubles you have.
 
 An investment in a keyboard will surely bring returns to you as "millions of lines of bug-free code".
+
 
 

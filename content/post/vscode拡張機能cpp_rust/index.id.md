@@ -33,13 +33,13 @@ graph TD
     CompilerR["Frontend rustc"]
     Debugger["CodeLLDB (Debug Adapter)"]
 
-    VSCode -- "Permintaan penyelesaian / Lompat ke definisi" --> LSP
+    VSCode -- Permintaan penyelesaian / Lompat ke definisi --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
     Clangd -. "Analisis AST (Abstract Syntax Tree)" .-> CompilerC
     RustAnalyzer -. "Ekspansi makro / Inferensi tipe" .-> CompilerR
     
-    VSCode -- "Debug Adapter Protocol (DAP)" --> Debugger
+    VSCode -- Debug Adapter Protocol (DAP) --> Debugger
     Debugger -. "ptrace / Dump memori" .-> Executable["Biner yang dikompilasi"]
 ```
 
@@ -388,3 +388,4 @@ Dengan menerapkan 10 ekstensi dan pengaturannya yang disebutkan dalam artikel in
 Menyesuaikan pengaturan awal barangkali akan memakan sedikit waktu, namun begitu selesai dibangun, pengalaman coding Anda selanjutnya akan menjadi luar biasa nyaman dan produktif. Silakan coba bangun lingkungan pengembangan terkuat Anda sendiri dengan mengacu pada penjelasan arsitektur dan pengaturan spesifik (`settings.json`, `tasks.json`, dan `launch.json`) dalam artikel ini.
 
 Selamat menjalani kehidupan pemrograman sistem yang nyaman dan aman!
+

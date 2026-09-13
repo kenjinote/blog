@@ -182,13 +182,13 @@ Le cœur du Zero Trust est que "la frontière du réseau (interne ou externe) n'
 ```mermaid
 graph TD
     subgraph "Modèle de défense périmétrique (VPN traditionnel)"
-        U1["Ingénieur distant"] -- "IPsec / SSL VPN" --> VPN["Passerelle VPN (Point de défaillance unique / Goulot d'étranglement)"]
-        VPN -- "LAN interne (Confiance implicite)" --> App1["Gestion du code source interne"]
+        U1["Ingénieur distant"] -- IPsec / SSL VPN --> VPN["Passerelle VPN (Point de défaillance unique / Goulot d'étranglement)"]
+        VPN -- LAN interne (Confiance implicite) --> App1["Gestion du code source interne"]
     end
     
     subgraph "Modèle Zero Trust (BeyondCorp / ZTNA)"
-        U2["Ingénieur distant (Appareil géré par MDM)"] -- "Communication directe (mTLS HTTPS)" --> IAP["Identity-Aware Proxy (IAP)"]
-        IAP -- "Autorisation dynamique par requête" --> App2["Applications internes / SaaS"]
+        U2["Ingénieur distant (Appareil géré par MDM)"] -- Communication directe (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
+        IAP -- Autorisation dynamique par requête --> App2["Applications internes / SaaS"]
         IDP["Fournisseur d'identité (Okta / Entra ID)"] -. "MFA / Contexte utilisateur" .-> Policy
         MDM["Gestion des appareils (Intune / Jamf)"] -. "État de santé de l'appareil (Statut des correctifs)" .-> Policy
         Policy["Moteur de politique d'accès"] -. "Décision d'autorisation basée sur les risques" .-> IAP
@@ -235,5 +235,6 @@ La direction doit abandonner l'illusion selon laquelle "le simple fait de rassem
 D'un autre côté, les ingénieurs (en particulier les seniors) doivent également revoir leur point de vue égoïste selon lequel "un bureau n'est pas nécessaire parce que je suis plus productif en écrivant du code tout seul". L'ingénierie est un sport d'équipe, impliquant de larges responsabilités au-delà de la seule productivité du code, incluant la conception du système pour l'ensemble de l'organisation, la formation des membres juniors et la coordination en cas d'urgence. Il est également vrai qu'une communication à large bande passante dans un espace physique peut parfois sauver l'ensemble d'un projet.
 
 La solution optimale varie selon l'entreprise, l'équipe et la phase du produit. Cependant, il est certain que seules les organisations qui comprennent la nature sociologique de la communication, qui mesurent la situation actuelle avec des indicateurs multidimensionnels comme le framework SPACE, et qui continuent de surmonter les contraintes avec des technologies telles que l'architecture Zero Trust, pourront acquérir une véritable compétitivité dans cette nouvelle ère du travail.
+
 
 

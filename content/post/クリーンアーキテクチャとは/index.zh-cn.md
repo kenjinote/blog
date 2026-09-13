@@ -109,9 +109,9 @@ graph TD
 
 ```mermaid
 graph LR
-    A["框架与驱动"] -->|"依赖"| B["接口适配器"]
-    B -->|"依赖"| C["用例"]
-    C -->|"依赖"| D["实体"]
+    A["框架与驱动"] -->| 依赖 | B["接口适配器"]
+    B -->| 依赖 | C["用例"]
+    C -->| 依赖 | D["实体"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,3 +422,4 @@ test('尝试使用已存在的邮箱地址注册时会报错', async () => {
 
 ---
 *Reference: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin*
+

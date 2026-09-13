@@ -98,9 +98,9 @@ graph TD
         App["التطبيق الرئيسي"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["يعتمد App على تنفيذ MathLib، لكنه لا يعرضه للخارج"]
     note2["تكشف NetworkLib عن واجهة HeaderLib"]
@@ -369,3 +369,4 @@ target_link_libraries(ComplexApp
 7. **النهج الرياضي**: الوعي بقانون أمدال لتقليل التبعيات وزيادة كفاءة الترجمة المتوازية.
 
 قد يبدو CMake معقدًا في البداية، ولكن بمجرد أن تفهم مفهوم الأهداف والخصائص، يمكنك الحفاظ على بيئة بناء منظمة مهما كان مشروع C++ معقدًا أو ضخمًا. نأمل أن تستخدم هذا المقال كمرجع لإعداد بيئة تطوير C++ باستخدام أحدث صياغات Modern CMake.
+

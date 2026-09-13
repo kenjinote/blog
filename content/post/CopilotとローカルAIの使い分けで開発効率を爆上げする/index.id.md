@@ -58,10 +58,10 @@ Diagram Mermaid di bawah ini menunjukkan arsitektur hibrida tentang bagaimana ag
 
 ```mermaid
 graph TD
-    Dev["Developer (IDE)"] -->|"Pengetikan Real-time"| LocalProxy{"Intelligent Router / Proxy"}
+    Dev["Developer (IDE)"] -->| Pengetikan Real-time | LocalProxy{"Intelligent Router / Proxy"}
     
-    LocalProxy -->|"Cepat, Mengutamakan Privasi"| LocalAI["Mesin AI Lokal (Ollama / LM Studio)"]
-    LocalProxy -->|"Logika Kompleks, Konteks Besar"| CloudAI["Mesin AI Cloud (Copilot / OpenAI API)"]
+    LocalProxy -->| Cepat, Mengutamakan Privasi | LocalAI["Mesin AI Lokal (Ollama / LM Studio)"]
+    LocalProxy -->| Logika Kompleks, Konteks Besar | CloudAI["Mesin AI Cloud (Copilot / OpenAI API)"]
     
     subgraph "Lingkungan Lokal"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ Daripada melihat ini sebagai dikotomi antara "GitHub Copilot (Cloud)" dan "AI Lo
 Silakan jadikan pohon keputusan (decision tree) dan arsitektur yang diperkenalkan dalam artikel ini sebagai referensi, dan tingkatkan lingkungan IDE Anda ke level berikutnya. Dengan melangkah dari pihak yang sekadar "menggunakan" AI menjadi pihak yang "memadukan dan mempekerjakan" AI di tempat yang tepat, efisiensi pengembangan Anda pasti akan meningkat drastis.
 
 Happy Coding with Hybrid AI!
+

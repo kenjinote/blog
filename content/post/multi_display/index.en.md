@@ -82,7 +82,7 @@ Below is a Gantt chart showing a model of time saved by introducing an ultrawide
 
 ```mermaid
 gantt
-    title "Context Switch Time Comparison: Ultrawide vs Dual Monitor"
+    title Context Switch Time Comparison: Ultrawide vs Dual Monitor
     dateFormat  s
     axisFormat  %S
     
@@ -238,5 +238,6 @@ flowchart TD
 ```
 
 A display is an infrastructure that will support your productivity for many years once purchased. Please integrate the principles of visual ergonomics, the math of PPI, the limits of bandwidth, and software-based window management explained in this article to build the ultimate uncompromising workspace. That should, as a result, become the shortest route to producing your best code.
+
 
 

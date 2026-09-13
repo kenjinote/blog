@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["Appliquer le théorème de Bayes"]
   Bayes --> Class{"P(Spam) > 0.9 ?"}
-  Class -- "Oui" --> Spam["Déplacer vers le dossier Spam"]
-  Class -- "Non" --> Ham["Livrer à la boîte de réception"]
+  Class -- Oui --> Spam["Déplacer vers le dossier Spam"]
+  Class -- Non --> Ham["Livrer à la boîte de réception"]
 ```
 
 ### Exemple d'implémentation (Python)
@@ -396,8 +396,8 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 flowchart LR
   Start["Début : Deviner le x0 initial"] --> Eval["Évaluer f(xn) et f'(xn)"]
   Eval --> Check{"f(xn) ≈ 0 ?"}
-  Check -- "Oui" --> Done["Renvoyer xn comme racine"]
-  Check -- "Non" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- Oui --> Done["Renvoyer xn comme racine"]
+  Check -- Non --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ Qu'en pensez-vous ? De l'identité d'Euler au théorème de Pythagore, ces 10 fo
 Comprendre le contexte mathématique est essentiel pour passer du statut de codeur qui se contente d'appeler des bibliothèques existantes (`math.sin` ou `numpy.fft`) à celui d'ingénieur capable d'en comprendre la structure interne et d'en repousser les limites. La prochaine fois que vous écrirez du code, essayez d'imaginer un instant quelles magnifiques formules mathématiques opèrent en arrière-plan.
 
 **Happy Coding and Math!**
+

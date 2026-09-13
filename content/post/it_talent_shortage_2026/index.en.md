@@ -75,7 +75,7 @@ $$
 In many cases, it is obvious that $C_{legacy}(t) > C_{modern}(t)$ will occur within a few years (the break-even point). However, the reality of 2026 is that many companies are sinking into the quagmire of $C_{legacy}$ because the "architects" and "data engineers" capable of executing the initial investment $I$ simply do not exist in the market.
 
 ```mermaid
-pie title "Breakdown of the Most Lacking IT Skills as of 2026"
+pie title Breakdown of the Most Lacking IT Skills as of 2026
     "AI/ML Ops Specialists" : 35
     "Cloud Architects" : 25
     "Data Engineers" : 20
@@ -116,7 +116,7 @@ Consequently, companies have realized that "hiring one senior (AI user) with a m
 
 ```mermaid
 xychart-beta
-    title "Polarization of Job Demand Between Junior and Senior Levels (2021-2026)"
+    title Polarization of Job Demand Between Junior and Senior Levels (2021-2026)
     x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
     y-axis "Jobs-to-Applicants Ratio" 0.0 --> 10.0
     line ["Senior (Architect/MLOps, etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
@@ -182,5 +182,7 @@ AI is not going to steal our jobs; it is merely a tool that allows us to focus o
 
 Now is the time to review your career path and steer toward the next paradigm.
 Are you ready to "modernize" yourself?
+
+
 
 

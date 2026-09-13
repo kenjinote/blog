@@ -251,7 +251,7 @@ Com base nos dados pré-processados, vamos analisar a relação entre os indicad
 
 ```mermaid
 xychart-beta
-    title "VFC vs Horas Diárias de Codificação (Normalizado)"
+    title VFC vs Horas Diárias de Codificação (Normalizado)
     x-axis ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"]
     y-axis "VFC e Saída de Código" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
@@ -368,5 +368,6 @@ Use e aplique com exatidão a precisão vinculadas atreladas providas pelas base
 
 ---
 *Aviso (Disclaimer): O artigo referido acima constitui um relatório estritamente baseado com fundamentos compilados originários perante uso exclusivo de atuações experimentais práticas num escopo metodológico da Ciência de Dados realizados pelo autor no âmbito pessoal. Este não se presta em figurar como, de maneira nenhuma, atuação médica ligada em aconselhamentos de saúde. Perante episódios onde você testemunhe anomalias contínuas acompanhadas com distúrbios prolongados atrelados com mal-estar em bases das perdas na saúde, ou atestem que sofrem decorrentes base nas atuações relativas nas rupturas base em distúrbios persistentes associados ao sono: Recomendamos que agende e busque auxílio em consultas ligadas com amparo via orientações de Profissionais da Saúde competentes de Especialidade através de Clínicas e Instituições Médicas Especializadas.*
+
 
 

@@ -22,7 +22,7 @@ In this article, we will thoroughly dissect the mechanics of a programmer's eye 
 Computer Vision Syndrome (CVS) is not caused by a single factor. As shown in the pie chart below, various elements are complexly intertwined, leading to eye fatigue, pain, dry eyes, and overall bodily fatigue.
 
 ```mermaid
-pie title "Causes of Computer Vision Syndrome (CVS)"
+pie title Causes of Computer Vision Syndrome (CVS)
     "Blue Light & Glare" : 30
     "Screen Flickering (PWM)" : 25
     "Improper Contrast & Lighting" : 20
@@ -121,7 +121,7 @@ The chart below compares the conceptual emission spectrum of a standard LCD moni
 
 ```mermaid
 xychart-beta
-    title "Blue Light Emission Spectrum Comparison"
+    title Blue Light Emission Spectrum Comparison
     x-axis "Wavelength (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "Relative Intensity" 0 --> 100
     bar "Standard LCD (W-LED)" [10, 30, 95, 80, 40, 20]
@@ -280,5 +280,7 @@ Our careers as software engineers will last for decades. What supports that care
 5. **Create an optimal line of sight angle based on $\tan \theta = h/d$ using a monitor arm, and systemize the "20-20-20 Rule."**
 
 While these measures may involve temporary expenses and effort, they are arguably the most cost-effective "technical investments" to extend the healthy lifespan of your eyes and maximize your lifelong productivity and QOL (Quality of Life). Reevaluate your development environment right now and implement some compassion for your eyes.
+
+
 
 

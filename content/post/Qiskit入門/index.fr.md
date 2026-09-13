@@ -301,8 +301,8 @@ graph TD
     A["Initialisation (superposition de tous les états)"] --> B["Oracle (inversion de la phase de la bonne réponse)"]
     B --> C["Opérateur de diffusion (amplification de l'amplitude par inversion autour de la moyenne)"]
     C --> D{"Probabilité suffisante atteinte ?"}
-    D -- "No" --> B
-    D -- "Yes" --> E["Mesure"]
+    D -- No --> B
+    D -- Yes --> E["Mesure"]
 ```
 
 ---
@@ -321,3 +321,4 @@ Profitez de cette occasion pour créer vous-même divers circuits quantiques à 
 - IBM Quantum Learning
 
 Bienvenue dans le monde quantique !
+

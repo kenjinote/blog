@@ -215,7 +215,7 @@ Introducing Google Analytics (specifically `gtag.js` or Google Tag Manager) lead
 Let's break down site loading times as follows:
 
 ```mermaid
-pie title "Typical Site Loading Times Breakdown"
+pie title Typical Site Loading Times Breakdown
     "TTFB (Time to First Byte)" : 15
     "Content Download (HTML/CSS)" : 20
     "DOM Parsing & Rendering" : 45
@@ -254,5 +254,6 @@ When running static sites using Hugo, adopting modern hosting platforms like Clo
 5. **Lightweight Analytics**: Adopt privacy-friendly analytics like Cloudflare Web Analytics that won't compromise performance.
 
 By combining these, it is possible to build a scalable, robust blog system for free that can withstand massive traffic of several million PVs per month. If you are considering launching a tech blog, corporate site, or portfolio site, be sure to try out this Jamstack + Hugo + Cloudflare Pages setup.
+
 
 

@@ -220,9 +220,9 @@ Le schéma ci-dessous illustre schématiquement la disposition générale de ce 
 ```mermaid
 graph LR
     subgraph Chamber ["Chambre à ultravide (High Vacuum Chamber)"]
-    A["Canon à électrons<br>Electron Gun"] -->|"Faisceau d'électrons ou<br>électron unique"| B("Plaque à double fente<br>Double Slit Barrier")
-    B -->|"Fente A"| C["Espace"]
-    B -->|"Fente B"| C
+    A["Canon à électrons<br>Electron Gun"] -->| Faisceau d'électrons ou<br>électron unique | B("Plaque à double fente<br>Double Slit Barrier")
+    B -->| Fente A | C["Espace"]
+    B -->| Fente B | C
     C --> D["Écran haute sensibilité / Détecteur<br>Detector Screen"]
     end
 
@@ -447,3 +447,4 @@ Ce fait a également donné naissance à une vision encore plus étonnante : l'i
 Nous nous tenons aujourd'hui à l'aube du deuxième acte de la révolution quantique. Peu importe les progrès de la science et de la technologie, le profond mystère de l'« onde de probabilité » et de la « détermination par l'observation » qui s'étend au-delà de ces deux fentes n'a pas encore été totalement percé. Comment l'univers a-t-il commencé ? Quelle signification physique ont la conscience et l'observation ? Comment la mécanique quantique microscopique et la relativité générale macroscopique peuvent-elles être unifiées (recherche sur la théorie de la gravité quantique) ? La clé pour résoudre ces énigmes ultimes se cache peut-être elle aussi dans ce phénomène simple et profond qu'est l'expérience des fentes de Young.
 
 Dans l'agitation du quotidien, lorsque vous apercevrez un rayon de lumière filtrant par la fenêtre ou que vous lèverez les yeux vers le scintillement des étoiles dans le ciel nocturne, n'hésitez pas à vous en souvenir. Ces innombrables photons qui composent cette lumière étaient, après un long voyage et jusqu'au moment exact d'atteindre ce « détecteur » que sont vos yeux, des ondes recelant la possibilité infinie d'emprunter simultanément tous les chemins de l'univers. Cette réalité dont nous sommes témoins n'est qu'une infime partie d'une danse grandiose et éternelle où l'univers s'observe et se détermine lui-même en permanence. Ce que l'expérience des fentes de Young nous impose n'est ni la peur, ni le nihilisme face à l'incertitude du monde. C'est un émerveillement écrasant et un sentiment de révérence devant la façon dont cet univers est mystérieux, d'une richesse inimaginable, et profondément lié à notre existence elle-même. On peut dire que c'est là le plus beau cadeau que l'expérience des fentes de Young ait offert à l'humanité.
+

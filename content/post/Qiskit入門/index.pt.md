@@ -301,8 +301,8 @@ graph TD
     A["Inicialização (Sobreposição de todos os estados)"] --> B["Oráculo (Inversão da fase da resposta correta)"]
     B --> C["Operador de difusão (Amplificação da amplitude por inversão em torno da média)"]
     C --> D{"Alcançou uma probabilidade suficiente?"}
-    D -- "Não" --> B
-    D -- "Sim" --> E["Medição"]
+    D -- Não --> B
+    D -- Sim --> E["Medição"]
 ```
 
 ---
@@ -321,3 +321,4 @@ Por favor, aproveite esta oportunidade para criar por conta própria vários cir
 - IBM Quantum Learning
 
 Bem-vindo ao mundo quântico!
+

@@ -217,7 +217,7 @@ Le graphique ci-dessous indique une estimation de la VRAM requise lors de l'inf�
 
 ```mermaid
 xychart-beta
-    title "Nombre de paramètres et VRAM requise (Estimation pour quantification 4-bit)"
+    title Nombre de paramètres et VRAM requise (Estimation pour quantification 4-bit)
     x-axis "Nom du modèle" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "VRAM requise (Go)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
@@ -278,4 +278,5 @@ Dans cet article, nous avons présenté cinq des meilleurs LLM locaux open sourc
 
 La vitesse d'évolution des LLM open source est stupéfiante, et des avancées bouleversant les conventions actuelles sont annoncées tous les quelques mois. À l'avenir, avec les améliorations continues de la technologie de quantification et l'émergence de nouvelles architectures, le jour où un environnement local surpassera l'IA cloud n'est peut-être pas loin.
 N'hésitez pas à télécharger le modèle optimal en fonction de votre environnement matériel et à expérimenter la liberté et le potentiel extraordinaires de l'IA locale.
+
 

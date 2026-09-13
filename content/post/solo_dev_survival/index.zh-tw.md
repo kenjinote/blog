@@ -37,7 +37,7 @@ $$ P(k) \propto \frac{1}{k^\alpha} $$
 
 ```mermaid
 xychart-beta
-  title "市場規模分佈與個人開發者目標"
+    title 市場規模分佈與個人開發者目標
   x-axis ["大眾市場 A", "大眾市場 B", "利基市場 C", "利基市場 D", "利基市場 E", "利基市場 F", "利基市場 G"]
   y-axis "Market Value" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
@@ -302,5 +302,6 @@ npx create-next-app@latest my-micro-saas
 ```
 
 戰鬥，已經開始了。
+
 
 

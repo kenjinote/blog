@@ -219,8 +219,8 @@ No entanto, há uma desvantagem significativa. Como a amostragem gaussiana discr
 ```mermaid
 graph LR
     A["Requisitos de assinatura digital"] --> B{"Qual é a restrição prioritária?"}
-    B -->|"Simplicidade de implementação, uso geral, facilidade de tempo constante"| C["Dilithium (ML-DSA)"]
-    B -->|"Minimizar largura de banda, compactação do tamanho de dados"| D["FALCON (FN-DSA)"]
+    B -->| Simplicidade de implementação, uso geral, facilidade de tempo constante | C["Dilithium (ML-DSA)"]
+    B -->| Minimizar largura de banda, compactação do tamanho de dados | D["FALCON (FN-DSA)"]
     C --> E["Certificados TLS de uso geral, assinatura digital de software"]
     D --> F["Protocolos com limitações rigorosas de tamanho de pacote, ambientes especiais"]
 ```
@@ -305,7 +305,7 @@ graph TD
     A --> C{"Derivação do Segredo Mestre (KDF)"}
     B --> C
     C -->|Entrada: (chave comum X25519) || (chave comum Kyber)| D["Chave de comunicação segura (AES-256 / ChaCha20)"]
-    D -->|"Resistente às ameaças quânticas e às vulnerabilidades clássicas"| E["Comunicação segura por criptografia híbrida (TLS 1.3)"]
+    D -->| Resistente às ameaças quânticas e às vulnerabilidades clássicas | E["Comunicação segura por criptografia híbrida (TLS 1.3)"]
 ```
 
 Isso realiza uma postura de segurança robusta de dois níveis: "Mesmo que um computador quântico seja construído e a ECC seja quebrada, o Kyber protegerá a comunicação", e inversamente, "Mesmo que uma falha matemática desconhecida seja descoberta no Kyber, a ECC protegerá a comunicação". Como exemplo representativo, existe o rascunho **X25519MLKEM768 (antigo X25519Kyber768)** sendo padronizado na IETF, e a comunicação entre os navegadores Web atuais e servidores de ponta já é realizada usando exatamente esse método híbrido.
@@ -328,4 +328,5 @@ O conflito entre os computadores quânticos e a criptografia é a área emociona
 * *FIPS 203: Padrão para Mecanismo de Encapsulamento de Chaves Baseado em Módulo de Reticulado*
 * *FIPS 204: Padrão para Assinaturas Digitais Baseado em Módulo de Reticulado*
 * *FIPS 205: Padrão para Assinaturas Digitais Stateless Baseadas em Hash*
+
 

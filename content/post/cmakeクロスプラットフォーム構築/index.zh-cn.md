@@ -98,9 +98,9 @@ graph TD
         App["主应用程序"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["App 依赖于 MathLib 的实现，但不向外暴露"]
     note2["NetworkLib 公开 HeaderLib 的接口"]
@@ -369,3 +369,4 @@ target_link_libraries(ComplexApp
 7. **数学理论支撑**: 意识到阿姆达尔定律的存在，通过减少依赖关系来提高并行编译的效率。
 
 尽管 CMake 一开始可能会让人觉得晦涩难懂，但只要掌握了目标（Target）和属性（Property）的概念，无论多么复杂庞大的 C++ 项目，都能维持一个井然有序的构建环境。希望您能以本文为参考，使用最新现代 CMake 的写法，尝试搭建属于您的 C++ 开发环境。
+

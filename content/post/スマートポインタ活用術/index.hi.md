@@ -76,11 +76,11 @@ int main() {
 ```mermaid
 graph LR
     subgraph "std::move से पहले"
-        A["unique_ptr (ptr1)"] -->|"स्वामित्व"| B["हीप मेमोरी (ऑब्जेक्ट)"]
+        A["unique_ptr (ptr1)"] -->| स्वामित्व | B["हीप मेमोरी (ऑब्जेक्ट)"]
     end
     subgraph "std::move के बाद"
         C["unique_ptr (ptr1)"] -.->|"खाली (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->|"स्वामित्व"| F["हीप मेमोरी (ऑब्जेक्ट)"]
+        E["unique_ptr (ptr2)"] -->| स्वामित्व | F["हीप मेमोरी (ऑब्जेक्ट)"]
     end
 ```
 
@@ -130,13 +130,13 @@ int main() {
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->|"T की ओर पॉइंटर"| B["प्रबंधित ऑब्जेक्ट (T)"]
-    A -->|"कंट्रोल ब्लॉक की ओर पॉइंटर"| C["कंट्रोल ब्लॉक"]
+    A["std::shared_ptr<T> (sp1)"] -->| T की ओर पॉइंटर | B["प्रबंधित ऑब्जेक्ट (T)"]
+    A -->| कंट्रोल ब्लॉक की ओर पॉइंटर | C["कंट्रोल ब्लॉक"]
     
-    D["std::shared_ptr<T> (sp2)"] -->|"T की ओर पॉइंटर"| B
-    D -->|"कंट्रोल ब्लॉक की ओर पॉइंटर"| C
+    D["std::shared_ptr<T> (sp2)"] -->| T की ओर पॉइंटर | B
+    D -->| कंट्रोल ब्लॉक की ओर पॉइंटर | C
     
-    C -->|"हटाता है (Deletes)"| B
+    C -->| हटाता है (Deletes) | B
     C -.->|"Strong Count: 2"| E["Strong Count"]
     C -.->|"Weak Count: 0"| F["Weak Count"]
     C -.->|"कस्टम डिलीटर"| G["डिलीटर"]
@@ -176,8 +176,8 @@ std::shared_ptr<MyClass> ptr2 = std::make_shared<MyClass>();
 ```mermaid
 graph TD
     subgraph "सर्कुलर रेफरेंस (Memory Leak)"
-        A["ऑब्जेक्ट A"] -->|"shared_ptr (Strong=1)"| B["ऑब्जेक्ट B"]
-        B -->|"shared_ptr (Strong=1)"| A
+        A["ऑब्जेक्ट A"] -->| shared_ptr (Strong=1) | B["ऑब्जेक्ट B"]
+        B -->| shared_ptr (Strong=1) | A
     end
 ```
 
@@ -188,7 +188,7 @@ graph TD
 ```mermaid
 graph TD
     subgraph "सर्कुलर रेफरेंस को तोड़ना"
-        C["ऑब्जेक्ट A"] -->|"shared_ptr (Strong=1)"| D["ऑब्जेक्ट B"]
+        C["ऑब्जेक्ट A"] -->| shared_ptr (Strong=1) | D["ऑब्जेक्ट B"]
         D -.->|"weak_ptr (Weak=1)"| C
     end
 ```
@@ -268,3 +268,4 @@ $$ S(t) + W(t) = 0 $$
 3. डेटा संरचनाओं या ऑब्जर्वर पैटर्न को लागू करने में जहां साझा करने का चक्र (सर्कुलर रेफरेंस) उत्पन्न हो सकता है, वहां मेमोरी लीक को रोकने के लिए **`std::weak_ptr`** का लाभ उठाएं।
 
 स्मार्ट पॉइंटर्स को गहराई से समझने और उनका उचित स्थान पर उपयोग करने से, C++ के प्रदर्शन से समझौता किए बिना, सुरक्षित और मजबूत सॉफ्टवेयर आर्किटेक्चर का निर्माण संभव हो जाता है。
+

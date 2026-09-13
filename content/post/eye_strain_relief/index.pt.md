@@ -22,7 +22,7 @@ Neste artigo, a partir da perspectiva da física (óptica), bioquímica, ergonom
 A Síndrome da Visão de Computador (CVS) não é causada por um único fator. Como mostrado no gráfico de pizza abaixo, vários elementos se entrelaçam de forma complexa, levando ao cansaço visual, dor, olhos secos e a uma sensação de fadiga em todo o corpo.
 
 ```mermaid
-pie title "Causas da Síndrome da Visão de Computador (CVS)"
+pie title Causas da Síndrome da Visão de Computador (CVS)
     "Luz Azul e Reflexos" : 30
     "Cintilação da Tela (PWM)" : 25
     "Contraste e Iluminação Inadequados" : 20
@@ -121,7 +121,7 @@ O gráfico a seguir compara a imagem do espectro de emissão entre monitores LCD
 
 ```mermaid
 xychart-beta
-    title "Comparação do Espectro de Emissão de Luz Azul"
+    title Comparação do Espectro de Emissão de Luz Azul
     x-axis "Comprimento de Onda (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "Intensidade Relativa" 0 --> 100
     bar "LCD Padrão (W-LED)" [10, 30, 95, 80, 40, 20]
@@ -280,5 +280,7 @@ Nossa carreira como engenheiros de software dura décadas. O que sustenta essa c
 5. **Usar um braço de monitor para criar o ângulo visual ideal, baseado em $\tan \theta = h/d$, e sistematizar a "Regra 20-20-20".**
 
 Essas medidas podem vir com algum gasto e esforço temporários. Contudo, elas maximizam o período de vida de saúde ocular e a produtividade e qualidade de vida (QOL) por toda a vida, podendo ser chamadas de o "investimento tecnológico" mais custo-efetivo. Reveja seu ambiente de desenvolvimento agora mesmo e tente implementar um pouco de consideração para os seus olhos.
+
+
 
 

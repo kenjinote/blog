@@ -246,15 +246,14 @@ An encryption scheme based on the theory of error-correcting codes. The McEliece
 
 ```mermaid
 timeline
-    title "History of the Evolution of Cryptography and Computers"
-    "Ancient to Middle Ages" : "Caesar Cipher" : "Vigenère Cipher" : "Birth of Frequency Analysis"
-    "1930s-1940s" : "Enigma Operation and Decryption" : "Development of Turing Machine/Bombe"
-    "1970s" : "DES Standardization (1977)" : "Diffie-Hellman Key Exchange (1976)" : "Birth of RSA Cryptography (1977)"
-    "1980s-1990s" : "Proposal of Elliptic Curve Cryptography (ECC)" : "Publication of Shor's Algorithm (1994)"
-    "2000s" : "AES Standardization (2001)"
-    "2010s to Present" : "Acceleration of Quantum Computer Research" : "Start of PQC Standardization Project by NIST"
-    "Near Future (Q-Day)" : "Realization of Large-Scale Quantum Computers?" : "Full Transition to PQC (ML-KEM/ML-DSA)"
-```
+    title History of the Evolution of Cryptography and Computers
+    Ancient to Middle Ages : Caesar Cipher : Vigenère Cipher : Birth of Frequency Analysis
+    1930s-1940s : Enigma Operation and Decryption : Development of Turing Machine/Bombe
+    1970s : DES Standardization (1977) : Diffie-Hellman Key Exchange (1976) : Birth of RSA Cryptography (1977)
+    1980s-1990s : Proposal of Elliptic Curve Cryptography (ECC) : Publication of Shor's Algorithm (1994)
+    2000s : AES Standardization (2001)
+    2010s to Present : Acceleration of Quantum Computer Research : Start of PQC Standardization Project by NIST
+    Near Future (Q-Day) : Realization of Large-Scale Quantum Computers? : Full Transition to PQC (ML-KEM/ML-DSA)```
 
 ---
 
@@ -267,3 +266,5 @@ The Caesar cipher was defeated by frequency analysis, and the invincible Enigma 
 However, humanity is already looking towards the future beyond that and is preparing a new "shield" called Post-Quantum Cryptography (PQC). Currently, preparing for the transition from existing public-key cryptography to PQC (ensuring Crypto Agility) is an urgent task for IT infrastructures worldwide.
 
 Cryptography is not just an arcane mathematical puzzle; it is the strongest defensive wall for protecting our privacy, property, and the social infrastructure itself.
+
+

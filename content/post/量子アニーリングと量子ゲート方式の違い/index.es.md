@@ -61,8 +61,8 @@ Es decir, cuando finalmente $A(t) \to 0$ y $B(t) \to 1$, el sistema ha alcanzado
 
 ```mermaid
 graph TD
-    A["Hamiltoniano H_0 (estado inicial)"] -->|"Cambio adiabático (suficientemente lento)"| B["Mantiene siempre el estado fundamental"]
-    A -->|"Cambio no adiabático (muy rápido/ruido térmico)"| C["Transición a un estado excitado (error)"]
+    A["Hamiltoniano H_0 (estado inicial)"] -->| Cambio adiabático (suficientemente lento) | B["Mantiene siempre el estado fundamental"]
+    A -->| Cambio no adiabático (muy rápido/ruido térmico) | C["Transición a un estado excitado (error)"]
     B --> D["Hamiltoniano H_P (solución óptima global)"]
     C --> E["Atrapado en una solución óptima local"]
     D --> F["Lectura de la solución"]
@@ -196,10 +196,10 @@ Para superar la limitación de los circuitos cuánticos poco profundos de los di
 ```mermaid
 graph TD
     User["Problema del usuario"] --> Formulation{"Naturaleza del problema"}
-    Formulation -- "Optimización combinatoria" --> QA_Path["Recocido cuántico / Máquina de Ising"]
+    Formulation -- Optimización combinatoria --> QA_Path["Recocido cuántico / Máquina de Ising"]
     QA_Path --> QUBO["Formulación QUBO"]
     QUBO --> DWave["Ejecución en D-Wave"]
-    Formulation -- "Cálculo químico / Cálculo de propósito general" --> Gate_Path["Modelo de puertas cuánticas"]
+    Formulation -- Cálculo químico / Cálculo de propósito general --> Gate_Path["Modelo de puertas cuánticas"]
     Gate_Path --> Circuit["Diseño de circuito cuántico (VQE / QAOA)"]
     Circuit --> IBMGoogle["Ejecución en hardware cuántico de IBM / Google"]
 ```
@@ -219,3 +219,4 @@ Las computadoras cuánticas aún son una tecnología en desarrollo, pero están 
 
 ---
 *Este artículo es una explicación exhaustiva desde los conceptos básicos de la computación cuántica hasta las últimas tendencias de hardware. Continúe prestando atención a las futuras tendencias de investigación.*
+

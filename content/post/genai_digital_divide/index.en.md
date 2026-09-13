@@ -67,7 +67,7 @@ The graph below visually shows this divergence.
 
 ```mermaid
 xychart-beta
-    title "Productivity Divergence Over Time (The Matthew Effect)"
+    title Productivity Divergence Over Time (The Matthew Effect)
     x-axis ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6"]
     y-axis "Output Volume" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
@@ -122,11 +122,11 @@ flowchart TD
     B --> C["Generation by AI Model (Generation)"]
     C --> D{"Cognitive Verification"}
     
-    D -- "Doubts / Logical Failures Exist" --> E["Fact-checking using RAG or external tools"]
+    D -- Doubts / Logical Failures Exist --> E["Fact-checking using RAG or external tools"]
     E --> F["Readjusting / Refining Prompts"]
     F --> B
     
-    D -- "Facts and Logic are Valid" --> G["Final adjustments based on human domain knowledge"]
+    D -- Facts and Logic are Valid --> G["Final adjustments based on human domain knowledge"]
     G --> H["Output of Final Deliverable"]
 ```
 
@@ -165,5 +165,7 @@ Will we stand on this side of the new digital divide, or remain on the other sid
 
 ---
 *If you have any opinions on this article or specific case studies on introducing AI orchestration, please send them to the comment section or the author's social media.*
+
+
 
 

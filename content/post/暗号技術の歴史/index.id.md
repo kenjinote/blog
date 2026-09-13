@@ -246,15 +246,14 @@ Ini adalah skema kriptografi berdasarkan teori kode koreksi kesalahan (error-cor
 
 ```mermaid
 timeline
-    title "Sejarah Evolusi Teknologi Kriptografi dan Komputer"
-    "Kuno hingga Pertengahan" : "Sandi Caesar" : "Sandi Vigenère" : "Kelahiran Analisis Frekuensi"
-    "Tahun 1930 - 1940-an" : "Pengoperasian dan Pemecahan Enigma" : "Pengembangan Mesin Turing / Bombe"
-    "Tahun 1970-an" : "Standardisasi DES (1977)" : "Pertukaran Kunci Diffie-Hellman (1976)" : "Kelahiran Kriptografi RSA (1977)"
-    "Tahun 1980 - 1990-an" : "Usulan Kriptografi Kurva Eliptik (ECC)" : "Publikasi Algoritma Shor (1994)"
-    "Tahun 2000-an" : "Standardisasi AES (2001)"
-    "Tahun 2010-an hingga kini" : "Akselerasi Penelitian Komputer Kuantum" : "Dimulainya Proyek Standardisasi PQC oleh NIST"
-    "Masa Depan Dekat (Q-Day)" : "Realisasi Komputer Kuantum Skala Besar?" : "Transisi Penuh ke PQC (ML-KEM/ML-DSA)"
-```
+    title Sejarah Evolusi Teknologi Kriptografi dan Komputer
+    Kuno hingga Pertengahan : Sandi Caesar : Sandi Vigenère : Kelahiran Analisis Frekuensi
+    Tahun 1930 - 1940-an : Pengoperasian dan Pemecahan Enigma : Pengembangan Mesin Turing / Bombe
+    Tahun 1970-an : Standardisasi DES (1977) : Pertukaran Kunci Diffie-Hellman (1976) : Kelahiran Kriptografi RSA (1977)
+    Tahun 1980 - 1990-an : Usulan Kriptografi Kurva Eliptik (ECC) : Publikasi Algoritma Shor (1994)
+    Tahun 2000-an : Standardisasi AES (2001)
+    Tahun 2010-an hingga kini : Akselerasi Penelitian Komputer Kuantum : Dimulainya Proyek Standardisasi PQC oleh NIST
+    Masa Depan Dekat (Q-Day) : Realisasi Komputer Kuantum Skala Besar? : Transisi Penuh ke PQC (ML-KEM/ML-DSA)```
 
 ---
 
@@ -267,3 +266,5 @@ Sandi Caesar dikalahkan oleh analisis frekuensi, dan Enigma yang konon tak terka
 Namun, umat manusia telah melihat masa depan dan sedang bersiap dengan "perisai" baru yang disebut Kriptografi Pasca-Kuantum (PQC). Saat ini, mempersiapkan transisi dari kriptografi kunci publik yang ada menuju PQC (memastikan Crypto Agility) adalah tugas mendesak di infrastruktur TI di seluruh dunia.
 
 Kriptografi bukan sekadar teka-teki matematika yang sulit, melainkan benteng pertahanan terkuat untuk melindungi privasi, properti, dan infrastruktur sosial kita.
+
+

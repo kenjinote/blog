@@ -105,7 +105,7 @@ IBM elle-même évite le terme « suprématie » et propose des métriques de pe
 
 ```mermaid
 timeline
-    title "L'évolution des jalons quantiques"
+    title L'évolution des jalons quantiques
     2019 : "Google Sycamore (53Q)" : "Annonce de la suprématie quantique"
     2019 : "Réfutation d'IBM" : "Simulation sur superordinateur Summit en 2,5 jours"
     2021 : "IBM Eagle (127Q)" : "Franchissement de la barre des 100 qubits"
@@ -179,3 +179,4 @@ La « Suprématie quantique » a constitué une étape importante dans l'histoir
 Aujourd'hui, nous assistons à une période de transition entre les dispositifs NISQ remplis de bruit et les dispositifs à qubits logiques dotés d'une correction d'erreurs. Au cours des cinq à dix prochaines années, de nouvelles découvertes en science des matériaux, des révolutions dans le processus de découverte de médicaments, et des avancées majeures dans les problèmes d'optimisation deviendront réalité en tandem avec l'évolution de ce matériel quantique.
 
 Il faudra continuer de suivre de près les développements de Google, d'IBM, et des chercheurs du monde entier qui façonnent l'informatique de demain.
+

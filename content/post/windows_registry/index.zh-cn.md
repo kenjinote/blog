@@ -148,12 +148,12 @@ flowchart TD
     HKLM_Soft["HKLM\\SOFTWARE"]
     HKLM_WOW64["HKLM\\SOFTWARE\\WOW6432Node"]
 
-    App32 -->|"RegOpenKeyEx()"| RegAPI
-    App64 -->|"RegOpenKeyEx()"| RegAPI
+    App32 -->| RegOpenKeyEx() | RegAPI
+    App64 -->| RegOpenKeyEx() | RegAPI
     RegAPI --> CM
 
-    CM -->|"如果是 64 位进程"| HKLM_Soft
-    CM -->|"如果是 32 位进程 (重定向)"| HKLM_WOW64
+    CM -->| 如果是 64 位进程 | HKLM_Soft
+    CM -->| 如果是 32 位进程 (重定向) | HKLM_WOW64
 ```
 在通过PowerShell脚本或C#应用程序编辑注册表时，必须强烈意识到执行进程本身是32位还是64位的。否则就会引起“明明写入了设置，却在资源管理器里看不到（被写入了别的地方）”这种麻烦的问题。
 
@@ -399,5 +399,6 @@ $backup = Import-Clixml -Path "C:\backup\reg_backup.xml"
 ## 总结
 
 Windows注册表是一个强大且复杂的基础系统，它统一管理操作系统的各种行为以及应用程序的设置。缺乏秩序的手动修改伴随着极高的系统损坏风险，这一点在数学上也已得到证明。因此，利用 PowerShell 或 C# 等可编程手段，遵循 Infrastructure as Code 原则，以一种安全、可测试并具有重现性的方式进行配置管理，在现代的系统管理和开发中是不可或缺的。希望你能运用在本文中所讲解的深度架构理解和实现模式，去构建一个更加坚固且安全的 Windows 环境。
+
 
 

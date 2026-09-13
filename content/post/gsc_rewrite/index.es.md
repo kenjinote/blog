@@ -38,7 +38,7 @@ El siguiente gráfico es una imagen que muestra la discrepancia entre el CTR esp
 
 ```mermaid
 xychart-beta
-    title "CTR Esperado vs CTR Real por Posición"
+    title CTR Esperado vs CTR Real por Posición
     x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     y-axis "CTR (%)" 0 --> 35
     line [30.5, 15.2, 10.1, 7.5, 5.2, 4.1, 3.2, 2.5, 2.0, 1.5]
@@ -276,5 +276,6 @@ Se resumen a continuación los métodos explicados en este artículo:
 4. Mediante el **análisis PNL usando TF-IDF**, descubrir brechas de contenido con respecto a los competidores y optimizar los encabezados (H2/H3).
 
 Las tendencias tecnológicas cambian constantemente. Para responder con precisión a los errores y problemas que tienen los lectores en este momento, considere incorporar estrategias de reescritura basadas en datos en sus operaciones diarias.
+
 
 

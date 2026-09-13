@@ -76,11 +76,11 @@ int main() {
 ```mermaid
 graph LR
     subgraph "std::move 이전"
-        A["unique_ptr (ptr1)"] -->|"소유함"| B["힙 메모리 (객체)"]
+        A["unique_ptr (ptr1)"] -->| 소유함 | B["힙 메모리 (객체)"]
     end
     subgraph "std::move 이후"
         C["unique_ptr (ptr1)"] -.->|"비어 있음 (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->|"소유함"| F["힙 메모리 (객체)"]
+        E["unique_ptr (ptr2)"] -->| 소유함 | F["힙 메모리 (객체)"]
     end
 ```
 
@@ -130,13 +130,13 @@ int main() {
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->|"T에 대한 포인터"| B["관리되는 객체 (T)"]
-    A -->|"컨트롤 블록에 대한 포인터"| C["컨트롤 블록"]
+    A["std::shared_ptr<T> (sp1)"] -->| T에 대한 포인터 | B["관리되는 객체 (T)"]
+    A -->| 컨트롤 블록에 대한 포인터 | C["컨트롤 블록"]
     
-    D["std::shared_ptr<T> (sp2)"] -->|"T에 대한 포인터"| B
-    D -->|"컨트롤 블록에 대한 포인터"| C
+    D["std::shared_ptr<T> (sp2)"] -->| T에 대한 포인터 | B
+    D -->| 컨트롤 블록에 대한 포인터 | C
     
-    C -->|"삭제함"| B
+    C -->| 삭제함 | B
     C -.->|"Strong Count: 2"| E["Strong Count"]
     C -.->|"Weak Count: 0"| F["Weak Count"]
     C -.->|"커스텀 딜리터"| G["딜리터"]
@@ -176,8 +176,8 @@ std::shared_ptr<MyClass> ptr2 = std::make_shared<MyClass>();
 ```mermaid
 graph TD
     subgraph "순환 참조 (메모리 누수)"
-        A["객체 A"] -->|"shared_ptr (Strong=1)"| B["객체 B"]
-        B -->|"shared_ptr (Strong=1)"| A
+        A["객체 A"] -->| shared_ptr (Strong=1) | B["객체 B"]
+        B -->| shared_ptr (Strong=1) | A
     end
 ```
 
@@ -188,7 +188,7 @@ graph TD
 ```mermaid
 graph TD
     subgraph "순환 참조 깨기"
-        C["객체 A"] -->|"shared_ptr (Strong=1)"| D["객체 B"]
+        C["객체 A"] -->| shared_ptr (Strong=1) | D["객체 B"]
         D -.->|"weak_ptr (Weak=1)"| C
     end
 ```
@@ -268,3 +268,4 @@ Modern C++에서의 메모리 관리는 더 이상 수동으로 `new`/`delete`�
 3.  공유의 고리(순환 참조)가 발생할 수 있는 데이터 구조나 옵저버 패턴(Observer Pattern)의 구현에는 **`std::weak_ptr`**를 활용하여 메모리 누수를 미연에 방지합니다.
 
 스마트 포인터를 깊이 이해하고 적재적소에 활용함으로써, C++의 성능을 전혀 희생하지 않고 안전하고 견고한 소프트웨어 아키텍처를 구축할 수 있게 됩니다.
+

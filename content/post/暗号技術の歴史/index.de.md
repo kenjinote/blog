@@ -246,15 +246,14 @@ Ein kryptographisches Verfahren, das auf der Theorie fehlerkorrigierender Codes 
 
 ```mermaid
 timeline
-    title "Die Geschichte der Kryptographie und der Computerentwicklung"
-    "Antike bis Mittelalter" : "Caesar-Chiffre" : "Vigenère-Chiffre" : "Geburt der Häufigkeitsanalyse"
-    "1930er bis 1940er" : "Einsatz und Entschlüsselung der Enigma" : "Entwicklung der Turing-Maschine / Bombe"
-    "1970er" : "DES-Standardisierung (1977)" : "Diffie-Hellman-Schlüsselaustausch (1976)" : "Geburt der RSA-Kryptographie (1977)"
-    "1980er bis 1990er" : "Vorschlag der Elliptischen Kurvenkryptographie (ECC)" : "Veröffentlichung von Shors Algorithmus (1994)"
-    "2000er" : "AES-Standardisierung (2001)"
-    "2010er bis Gegenwart" : "Beschleunigung der Quantencomputerforschung" : "Start des PQC-Standardisierungsprojekts durch NIST"
-    "Nahe Zukunft (Q-Day)" : "Realisierung eines großangelegten Quantencomputers?" : "Vollständiger Übergang zu PQC (ML-KEM/ML-DSA)"
-```
+    title Die Geschichte der Kryptographie und der Computerentwicklung
+    Antike bis Mittelalter : Caesar-Chiffre : Vigenère-Chiffre : Geburt der Häufigkeitsanalyse
+    1930er bis 1940er : Einsatz und Entschlüsselung der Enigma : Entwicklung der Turing-Maschine / Bombe
+    1970er : DES-Standardisierung (1977) : Diffie-Hellman-Schlüsselaustausch (1976) : Geburt der RSA-Kryptographie (1977)
+    1980er bis 1990er : Vorschlag der Elliptischen Kurvenkryptographie (ECC) : Veröffentlichung von Shors Algorithmus (1994)
+    2000er : AES-Standardisierung (2001)
+    2010er bis Gegenwart : Beschleunigung der Quantencomputerforschung : Start des PQC-Standardisierungsprojekts durch NIST
+    Nahe Zukunft (Q-Day) : Realisierung eines großangelegten Quantencomputers? : Vollständiger Übergang zu PQC (ML-KEM/ML-DSA)```
 
 ---
 
@@ -267,3 +266,5 @@ Die Caesar-Chiffre wurde durch die Häufigkeitsanalyse besiegt, und die unbesieg
 Doch die Menschheit blickt bereits auf diese zukünftige Zeit und bereitet einen neuen "Schild" namens Post-Quanten-Kryptographie (PQC) vor. Gegenwärtig ist die Vorbereitung des Übergangs von bestehender Public-Key-Kryptographie zu PQC (Sicherstellung von Krypto-Agilität) eine dringende Aufgabe für IT-Infrastrukturen weltweit.
 
 Die Kryptographie ist nicht nur ein obskures mathematisches Rätsel, sondern die stärkste Verteidigungsmauer, um unsere Privatsphäre, unser Eigentum und die Gesellschaftsinfrastruktur selbst zu schützen.
+
+

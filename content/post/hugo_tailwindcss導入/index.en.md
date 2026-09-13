@@ -275,10 +275,10 @@ flowchart TD
     A["assets/css/main.css"] -->|resources.Get| B["Hugo Memory Space"]
     B -->|resources.PostCSS| C["PostCSS + Tailwind JIT Process"]
     C --> D{"hugo.IsProduction ?"}
-    D -- "Yes (Production environment)" --> E["minify (remove spaces/newlines)"]
+    D -- Yes (Production environment) --> E["minify (remove spaces/newlines)"]
     E --> F["fingerprint (calculate hash)"]
     F --> G["public/css/main.[hash].css (with SRI)"]
-    D -- "No (Development environment)" --> H["public/css/main.css"]
+    D -- No (Development environment) --> H["public/css/main.css"]
 ```
 
 1. **`resources.Get`**: Looks for the specified file within the `assets` directory and loads it as a resource object in memory.
@@ -412,3 +412,4 @@ The brilliance of this architecture is that **"you only have to configure it onc
 Moreover, because the output CSS size is always minimized, it directly contributes to improving Core Web Vitals scores and works very advantageously from an SEO perspective.
 
 The combination of Hugo and Tailwind CSS will remain one of the "best choices" for every project, from personal tech blogs to large corporate websites. Please take advantage of this powerful toolchain and enjoy a comfortable web development life!
+

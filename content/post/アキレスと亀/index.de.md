@@ -114,7 +114,7 @@ Das heißt, selbst wenn es unendlich viele Schritte gibt, wird die für sie ben�
 Achilles wird die Schildkröte nach etwa 1,11 Sekunden ab dem Start erfolgreich einholen und dann überholen.
 
 ```mermaid
-pie title "Zeit bis Achilles sie einholt (Gesamt ca. 1.11 Sekunden)"
+pie title Zeit bis Achilles sie einholt (Gesamt ca. 1.11 Sekunden)
     "Schritt 1 (1 Sekunde)" : 90
     "Schritt 2 (0.1 Sekunden)" : 9
     "Unendliche Summe nach Schritt 3 (0.011... Sekunden)" : 1
@@ -167,3 +167,4 @@ Für die antiken griechischen Philosophen jedoch, die noch keine Konzepte wie "U
 Die tiefen Fragen, die dieses Paradoxon aufwarf, wie "Was bedeutet kontinuierlich?" oder "Was bedeutet es, unendlich teilbar zu sein?", wurden zu einer wichtigen treibenden Kraft, die zur Geburt der **"Analysis"** durch Newton und Leibniz und schließlich zu den Grundlagen der modernen Mathematik führte.
 
 Große Paradoxa verwirren nicht nur die Menschen, sondern sind auch Schlüssel, die neue Türen in der Mathematik öffnen.
+

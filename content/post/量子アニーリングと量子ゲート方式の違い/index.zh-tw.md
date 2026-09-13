@@ -61,8 +61,8 @@ $$ H(t) = A(t) H_0 + B(t) H_P $$
 
 ```mermaid
 graph TD
-    A["哈密頓算符 H_0 (初始狀態)"] -->|"絕熱變化 (足夠緩慢)"| B["始終維持基態"]
-    A -->|"非絕熱變化 (太快/熱雜訊)"| C["躍遷至激發態 (錯誤)"]
+    A["哈密頓算符 H_0 (初始狀態)"] -->| 絕熱變化 (足夠緩慢) | B["始終維持基態"]
+    A -->| 非絕熱變化 (太快/熱雜訊) | C["躍遷至激發態 (錯誤)"]
     B --> D["哈密頓算符 H_P (全域最佳解)"]
     C --> E["受困於局部最佳解"]
     D --> F["讀取解答"]
@@ -196,10 +196,10 @@ graph LR
 ```mermaid
 graph TD
     User["使用者問題"] --> Formulation{"問題的性質"}
-    Formulation -- "組合最佳化" --> QA_Path["量子退火 / Ising 機器"]
+    Formulation -- 組合最佳化 --> QA_Path["量子退火 / Ising 機器"]
     QA_Path --> QUBO["QUBO 公式化"]
     QUBO --> DWave["D-Wave 執行"]
-    Formulation -- "化學計算・通用計算" --> Gate_Path["量子閘模型"]
+    Formulation -- 化學計算・通用計算 --> Gate_Path["量子閘模型"]
     Gate_Path --> Circuit["量子線路設計 (VQE / QAOA)"]
     Circuit --> IBMGoogle["IBM / Google 量子硬體執行"]
 ```
@@ -219,3 +219,4 @@ graph TD
 
 ---
 *本文全面解說了從量子運算的基礎概念到最新硬體動向的各個面向。請持續關注未來的最新研究動向。*
+

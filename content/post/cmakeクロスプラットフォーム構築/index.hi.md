@@ -98,9 +98,9 @@ graph TD
         App["मुख्य एप्लिकेशन"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["App MathLib के कार्यान्वयन पर निर्भर है, लेकिन इसे बाहर प्रदर्शित नहीं करता है"]
     note2["NetworkLib HeaderLib के इंटरफ़ेस को सार्वजनिक करता है"]
@@ -370,3 +370,4 @@ target_link_libraries(ComplexApp
 7. **गणितीय दृष्टिकोण**: एमडाहल के नियम के बारे में जागरूक रहें, और समानांतर संकलन की दक्षता बढ़ाने के लिए निर्भरता को कम करें।
 
 हालाँकि CMake शुरू में समझना मुश्किल लग सकता है, लेकिन एक बार जब आप लक्ष्य (Target) और संपत्ति (Property) की अवधारणा को समझ लेते हैं, तो आप एक सुव्यवस्थित बिल्ड वातावरण बनाए रख सकते हैं, चाहे C++ प्रोजेक्ट कितना भी जटिल या विशाल क्यों न हो। कृपया इस लेख को एक संदर्भ के रूप में उपयोग करें और नवीनतम आधुनिक CMake सिंटैक्स के साथ C++ विकास वातावरण स्थापित करने का प्रयास करें।
+

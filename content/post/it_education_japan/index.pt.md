@@ -179,7 +179,7 @@ flowchart LR
         C["Ambiente de Execução/Compilação Backend"]
         D["Armazenamento de Arquivo Persistente"]
     end
-    A -->| "Comunicação HTTP/WebSocket: Atraso Crítico Devido à Conexão Lenta da Escola" | B
+    A -->| Comunicação HTTP/WebSocket: Atraso Crítico Devido à Conexão Lenta da Escola | B
     B <--> C
     B <--> D
 ```
@@ -210,7 +210,7 @@ O gráfico a seguir descreve conceitualmente as enormes discrepâncias entre o n
 
 ```mermaid
 xychart-beta
-    title "Habilidades Entregues nas Escolas Japonesas vs Habilidades Exigidas na Indústria"
+    title Habilidades Entregues nas Escolas Japonesas vs Habilidades Exigidas na Indústria
     x-axis ["Linguagem Visual", "Sintaxe Básica/Variáveis", "Algoritmo/Complexidade", "SO/Rede", "DB/Design de Sistema", "Nuvem/Arquitetura Distribuída"]
     y-axis "Nível de Realização / Nível Requerido (%)" 0 --> 100
     line "Nível Alcançado no Atual Ensino Escolar" [95, 60, 15, 5, 2, 0]
@@ -256,6 +256,8 @@ Sob "consequências e futuro" gerada da concepção de pautar a inclusão de for
 ---
 
 *Neste artigo expusemos questões abordando o escopo referente as dimensões de Teorias em Complexidades sob aos limites nos fatores infraestruturais oriundos do formato no formato imposto aos programas "GIGA School". Focados, numa ótica continuada nas vindouras compilações programadas que darão enfoques e explicações profundas nos focos a ciência matemática (englobadas as construções em esquemas em linguagens algoritmos ao cenário das distribuições em arquitetura sob detalhamento nas formas e maneiras sobre controles a níveis inferiores ligados ao memórias do núcleo) em novos tópicos a continuarem e sequenciais neste canal.*
+
+
 
 
 

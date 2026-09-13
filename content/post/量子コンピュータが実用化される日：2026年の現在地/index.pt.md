@@ -148,7 +148,7 @@ Para que os computadores quânticos realmente demonstrem a **vantagem quântica 
 
 ```mermaid
 gantt
-    title "Roteiro da Computação Quântica (Revisado em 2026)"
+    title Roteiro da Computação Quântica (Revisado em 2026)
     dateFormat  YYYY
     axisFormat  %Y
     
@@ -173,4 +173,5 @@ O ano de 2026 provavelmente será registrado na história dos computadores quân
 
 ---
 *Este artigo foi escrito com base nos mais recentes artigos de pesquisa sobre computação quântica e tendências da indústria a partir de 2026.*
+
 

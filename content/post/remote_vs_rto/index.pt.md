@@ -182,13 +182,13 @@ O cerne do Zero Trust é "não tornar os limites da rede (dentro ou fora da empr
 ```mermaid
 graph TD
     subgraph "Modelo de Defesa de Perímetro (VPN Tradicional)"
-        U1["Engenheiro Remoto"] -- "IPsec / SSL VPN" --> VPN["Gateway VPN (Ponto único de falha e Gargalo)"]
-        VPN -- "LAN Interna (Confiança implícita)" --> App1["Gestão do Código-fonte Interno"]
+        U1["Engenheiro Remoto"] -- IPsec / SSL VPN --> VPN["Gateway VPN (Ponto único de falha e Gargalo)"]
+        VPN -- LAN Interna (Confiança implícita) --> App1["Gestão do Código-fonte Interno"]
     end
     
     subgraph "Modelo Zero Trust (BeyondCorp / ZTNA)"
-        U2["Engenheiro Remoto (Dispositivo gerenciado por MDM)"] -- "Comunicação direta (mTLS HTTPS)" --> IAP["Identity-Aware Proxy (IAP)"]
-        IAP -- "Autorização dinâmica por requisição" --> App2["Aplicações Internas / SaaS"]
+        U2["Engenheiro Remoto (Dispositivo gerenciado por MDM)"] -- Comunicação direta (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
+        IAP -- Autorização dinâmica por requisição --> App2["Aplicações Internas / SaaS"]
         IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / Contexto do usuário" .-> Policy
         MDM["Gestão de Dispositivos (Intune / Jamf)"] -. "Saúde do dispositivo (Status de patch)" .-> Policy
         Policy["Motor de Políticas de Acesso"] -. "Avaliação de autorização baseada em risco" .-> IAP
@@ -235,5 +235,6 @@ A liderança necessita de descartar a ilusão de que "se as pessoas se reunirem 
 Por outro lado, os engenheiros (especialmente os do escalão sênior) também precisam rever o ponto de vista complacente de que "como a minha produtividade é mais alta a escrever código sozinho, não há necessidade de um escritório". A engenharia é um desporto de equipe e eles assumem uma vasta gama de responsabilidades, não apenas a produtividade do código, mas também o design do sistema da organização como um todo, o desenvolvimento dos membros juniores e a colaboração em caso de emergência. A verdade é que às vezes a comunicação de alta largura de banda no espaço físico pode salvar todo o projeto.
 
 A solução ideal varia dependendo da fase da empresa, equipe e do produto. No entanto, o que é certo, é que as organizações capazes de entender a natureza sociológica da comunicação, medir a situação atual através de indicadores multifacetados como o framework SPACE e quebrar continuamente as restrições com tecnologia como a Arquitetura Zero Trust, são aquelas que conseguirão uma verdadeira vantagem competitiva nesta nova era do trabalho.
+
 
 

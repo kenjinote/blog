@@ -148,7 +148,7 @@ graph LR
     B --> C["Texto cifrado (Ciphertext)"]
     C --> D["Descifrado con clave privada (d)"]
     D --> E["Texto plano original"]
-    F["Atacante (Attacker)"] -- "Intenta la factorización prima de N" --> C
+    F["Atacante (Attacker)"] -- Intenta la factorización prima de N --> C
     F -.-> G["Si p y q son desconocidos, d es incalculable"]
 ```
 
@@ -214,3 +214,4 @@ La incansable búsqueda sobre los números primos que continúa desde la antigua
 La Hipótesis de Riemann es una entidad que simboliza simultáneamente la "belleza abstracta" que poseen las matemáticas y su "asombrosa aplicabilidad al mundo físico y a la sociedad real".
 
 Cuando esta gigantesca montaña matemática, a cuya cima aún nadie ha llegado, sea conquistada algún día, comprenderemos por completo la verdad cósmica de los números primos, y al mismo tiempo obtendremos una nueva perspectiva sobre los cimientos de la sociedad de la información. Aprender sobre criptografía es, de hecho, un viaje que recorre la historia de la sabiduría de la humanidad.
+

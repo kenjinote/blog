@@ -69,11 +69,11 @@ Sifat ini dioptimalkan oleh perangkat lunak dalam Sistem Pengulangan Berjarak (S
 graph LR
     A["Segera setelah belajar (R=100%)"] --> B["1 hari kemudian (Lupa)"]
     B --> C{"Ulas dengan Anki"}
-    C -- "Benar" --> D["Interval ulasan diperpanjang jadi 3 hari (S meningkat)"]
-    C -- "Salah" --> E["Interval ulasan direset"]
+    C -- Benar --> D["Interval ulasan diperpanjang jadi 3 hari (S meningkat)"]
+    C -- Salah --> E["Interval ulasan direset"]
     D --> F["3 hari kemudian (Lupa secara perlahan)"]
     F --> G{"Ulas dengan Anki"}
-    G -- "Benar" --> H["Interval ulasan diperpanjang jadi 7 hari"]
+    G -- Benar --> H["Interval ulasan diperpanjang jadi 7 hari"]
 ```
 
 ### 3.1 Cara Membuat Kartu Anki dalam Matematika dan Algoritma
@@ -249,15 +249,15 @@ flowchart TD
     
     MathProof --> Feynman["Teknik Feynman"]
     Feynman --> FindGap{"Apakah ada celah pemahaman?"}
-    FindGap -- "Ya" --> Reread["Membaca ulang buku teks"]
+    FindGap -- Ya --> Reread["Membaca ulang buku teks"]
     Reread --> SQ3R
-    FindGap -- "Tidak" --> Coding["Menerjemahkan rumus ke kode (Python/C++)"]
+    FindGap -- Tidak --> Coding["Menerjemahkan rumus ke kode (Python/C++)"]
     
     Coding --> Debug{"Apakah berjalan sesuai harapan?"}
-    Debug -- "Tidak" --> FixMentalModel["Memperbaiki model mental"]
+    Debug -- Tidak --> FixMentalModel["Memperbaiki model mental"]
     FixMentalModel --> Coding
     
-    Debug -- "Ya" --> SRS["Mendaftarkan konsep yang dipecah ke Anki"]
+    Debug -- Ya --> SRS["Mendaftarkan konsep yang dipecah ke Anki"]
     SRS --> BlogOutput["Sistematisasi di blog teknis (Fiksasi akhir)"]
     BlogOutput --> Master["Pengetahuan mendarah daging & Penguasaan penuh"]
 ```
@@ -283,5 +283,6 @@ Saat menulis blog, proses berikut akan terjadi:
 Membaca buku spesialis matematika atau algoritma bukanlah jalan yang mudah. Namun, dengan menjalankan siklus yang meliputi memahami struktur dengan SQ3R, mengekspresikannya melalui Teknik Feynman, menerjemahkannya ke dalam kode untuk memverifikasi operasinya, mencegah kelupaan dengan Anki, dan akhirnya menyajikannya ke dunia melalui blog teknis, pengetahuan yang sulit tersebut pasti akan menjadi "kekuatan" Anda.
 
 Pengetahuan tentang cara menggunakan API atau framework yang dangkal akan menjadi usang dalam beberapa tahun, tetapi kemampuan berpikir matematis dan dasar algoritma adalah aset seumur hidup. Saat Anda membuka buku teknis yang sulit berikutnya, silakan manfaatkan metode dalam artikel ini dan selamilah kedalaman pengetahuan tersebut.
+
 
 

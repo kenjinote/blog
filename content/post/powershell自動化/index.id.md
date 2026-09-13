@@ -158,11 +158,11 @@ Terutama ketika mencadangkan sejumlah besar file kecil (seperti kode sumber), su
 ```mermaid
 flowchart TD
     A["Mulai Skrip Pencadangan"] --> B{"Apakah NAS Dapat Diakses?"}
-    B -- "Ya" --> C["Eksekusi Robocopy (Multi-threaded)"]
-    B -- "Tidak" --> D["Tulis Log Kesalahan & Keluar"]
+    B -- Ya --> C["Eksekusi Robocopy (Multi-threaded)"]
+    B -- Tidak --> D["Tulis Log Kesalahan & Keluar"]
     C --> E{"Apakah Robocopy Berhasil?"}
-    E -- "Ya (ExitCode < 8)" --> F["Rotasi Log (Simpan 30 hari terakhir)"]
-    E -- "Tidak (ExitCode >= 8)" --> D
+    E -- Ya (ExitCode < 8) --> F["Rotasi Log (Simpan 30 hari terakhir)"]
+    E -- Tidak (ExitCode >= 8) --> D
     F --> G["Akhiri Skrip Pencadangan"]
     D --> G
 ```
@@ -490,3 +490,4 @@ Dimulai dengan pembuatan infrastruktur dasar melalui kebijakan eksekusi dan modu
 PowerShell merupakan engine otomasi yang sangat mendalam dan kuat, yang meskipun merupakan alat baris perintah (command line tool), ia dapat mengakses hampir seluruh fitur .NET. Berdasarkan skrip yang telah diperkenalkan, kami harap Anda dapat menyesuaikan alur dan logika pemrosesan yang sesuai dengan lingkungan bisnis Anda, serta mendapatkan kembali waktu produktif dan terbebas dari tugas manual yang rumit.
 
 Keberhasilan dalam hal otomasi tergantung pada "memulai dengan skrip kecil dan secara bertahap meningkatkan kekokohannya, seperti penanganan kesalahan dan pengeluaran log". Pertama, mengapa Anda tidak memulai perjalanan otomasi dengan PowerShell dari mencadangkan satu folder di PC Anda sendiri?
+

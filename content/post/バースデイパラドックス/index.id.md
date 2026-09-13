@@ -98,7 +98,7 @@ Dengan mensubstitusikan jumlah orang $n$ ke dalam rumus ini, kita dapat melihat 
 - Ketika $n = 70$, probabilitasnya sekitar **99,9%**
 
 ```mermaid
-pie title "Probabilitas Saat 23 Orang Berkumpul"
+pie title Probabilitas Saat 23 Orang Berkumpul
     "Ada pasangan dengan ulang tahun yang sama (50.7%)" : 50.7
     "Semua orang berbeda (49.3%)" : 49.3
 ```
@@ -154,3 +154,4 @@ Kita kuat dalam mengenali peningkatan linear (berbasis penjumlahan), tetapi kita
 Di balik intuisi yang mengatakan bahwa "angka 23 terlalu kecil dibandingkan dengan angka 365 yang besar", terdapat **"253 benang (pasangan) tak terlihat"** yang dihubungkan oleh 23 orang tersebut.
 
 Lain kali Anda pergi ke tempat di mana orang-orang berkumpul, cobalah untuk membayangkan tidak hanya "jumlah orang" yang terlihat, tetapi juga "benang kombinasi" yang tak terhitung jumlahnya yang ada di antara mereka. Cara Anda melihat dunia pasti akan sedikit berubah secara matematis.
+

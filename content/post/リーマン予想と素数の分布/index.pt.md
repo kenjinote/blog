@@ -148,7 +148,7 @@ graph LR
     B --> C["Texto cifrado (Ciphertext)"]
     C --> D["Descriptografado com a chave privada (d)"]
     D --> E["Texto plano original"]
-    F["Atacante (Attacker)"] -- "Tenta fatorar N" --> C
+    F["Atacante (Attacker)"] -- Tenta fatorar N --> C
     F -.-> G["Sem saber p e q, d é incalculável"]
 ```
 
@@ -215,3 +215,4 @@ A exploração insaciável dos números primos, que remonta à Grécia Antiga, f
 A Hipótese de Riemann é uma entidade que simboliza, simultaneamente, a "beleza abstrata" e a "incrível aplicabilidade ao mundo físico e à sociedade real" que a matemática possui.
 
 Quando esta montanha colossal da matemática, cujo cume ninguém ainda alcançou, for um dia conquistada, compreenderemos completamente a verdade cósmica dos números primos, e também ganharemos uma nova perspectiva sobre os alicerces da sociedade da informação. Estudar criptografia é, por si só, uma jornada pela história da sabedoria humana.
+

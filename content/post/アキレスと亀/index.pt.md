@@ -114,7 +114,7 @@ Em outras palavras, mesmo que haja um número infinito de passos, o tempo total 
 Aquiles alcançará brilhantemente e ultrapassará a tartaruga após cerca de 1.11 segundos do início.
 
 ```mermaid
-pie title "Tempo até Aquiles a alcançar (Total: cerca de 1.11 segundos)"
+pie title Tempo até Aquiles a alcançar (Total: cerca de 1.11 segundos)
     "Passo 1 (1 segundo)" : 90
     "Passo 2 (0.1 segundo)" : 9
     "Soma infinita a partir do Passo 3 (0.011... segundos)" : 1
@@ -167,3 +167,4 @@ No entanto, para os antigos filósofos gregos que não tinham conceitos como "in
 A profunda questão levantada por este paradoxo: "O que é contínuo?" e "O que significa poder dividir infinitamente?", tornou-se uma força motriz importante que levou ao nascimento do **"cálculo"** por Newton e Leibniz, e também serviu de base para os fundamentos da matemática moderna.
 
 Grandes paradoxos não são apenas ilusórios, mas são também chaves para abrir novas portas na matemática.
+

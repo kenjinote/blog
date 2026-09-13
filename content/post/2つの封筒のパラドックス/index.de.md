@@ -111,7 +111,7 @@ Die Erwartungswerte stimmen perfekt überein!
 In der ersten falschen Berechnung haben wir **unterschiedliche Werte als dieselbe Variable $X$ behandelt** – nämlich $X$ in Szenario 1 (was eigentlich $S$ ist) und $X$ in Szenario 2 (was eigentlich $2S$ ist) –, was die Illusion erzeugte, dass "ein Tausch den Erwartungswert erhöht".
 
 ```mermaid
-pie title "Die Wahrheit über den Erwartungswert (wenn S der kleinere Betrag ist)"
+pie title Die Wahrheit über den Erwartungswert (wenn S der kleinere Betrag ist)
     "Erwartungswert ohne Tausch (1.5S)" : 50
     "Erwartungswert mit Tausch (1.5S)" : 50
 ```
@@ -163,3 +163,4 @@ Obwohl das "Zwei-Umschläge-Paradoxon" nur aus einfachen Multiplikationen und Ad
 3. **Die Schwierigkeit, mit der Unendlichkeit umzugehen**: Wenn das Konzept der "Unendlichkeit", das nicht auf die reale Welt angewendet werden kann, in Berechnungen eingeführt wird, führt dies zu Ergebnissen, die dem gesunden Menschenverstand widersprechen.
 
 Wenn Sie das nächste Mal im Leben denken: "Das Gras des Nachbarn ist grüner, ein Tausch wäre vorteilhaft", erinnern Sie sich an dieses Paradoxon. Vielleicht sind in Ihrer Berechnung nur die Variablen ausgetauscht worden.
+

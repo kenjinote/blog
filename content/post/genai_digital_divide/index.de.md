@@ -67,7 +67,7 @@ Das folgende Diagramm zeigt diese Divergenz visuell.
 
 ```mermaid
 xychart-beta
-    title "Produktivitätsdivergenz im Laufe der Zeit (Der Matthäus-Effekt)"
+    title Produktivitätsdivergenz im Laufe der Zeit (Der Matthäus-Effekt)
     x-axis ["Jahr 1", "Jahr 2", "Jahr 3", "Jahr 4", "Jahr 5", "Jahr 6"]
     y-axis "Ausgabevolumen" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
@@ -122,11 +122,11 @@ flowchart TD
     B --> C["Generierung durch das KI-Modell (Generation)"]
     C --> D{"Kognitive Überprüfung (Cognitive Verification)"}
     
-    D -- "Zweifel / Logische Fehler vorhanden" --> E["Faktenprüfung mit RAG oder externen Tools"]
+    D -- Zweifel / Logische Fehler vorhanden --> E["Faktenprüfung mit RAG oder externen Tools"]
     E --> F["Feinabstimmung und Verfeinerung des Prompts"]
     F --> B
     
-    D -- "Fakten und Logik sind valide" --> G["Letzte Anpassung durch menschliches Domänenwissen"]
+    D -- Fakten und Logik sind valide --> G["Letzte Anpassung durch menschliches Domänenwissen"]
     G --> H["Ausgabe des finalen Produkts"]
 ```
 
@@ -165,5 +165,7 @@ Ob wir auf dieser Seite der neuen digitalen Kluft stehen oder auf der anderen zu
 
 ---
 *Bitte hinterlassen Sie Ihr Feedback zu diesem Artikel oder spezifische Fallstudien zur Einführung der KI-Orchestrierung in den Kommentaren oder auf den Social-Media-Kanälen des Autors.*
+
+
 
 

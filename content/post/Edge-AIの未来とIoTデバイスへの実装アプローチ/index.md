@@ -191,19 +191,19 @@ graph TD
     E2["Hospital Server (Edge 2)"]
     E3["Smart Car (Edge 3)"]
     
-    C -->|"1. Send Global Model"| E1
-    C -->|"1. Send Global Model"| E2
-    C -->|"1. Send Global Model"| E3
+    C -->| 1. Send Global Model | E1
+    C -->| 1. Send Global Model | E2
+    C -->| 1. Send Global Model | E3
     
-    E1 -->|"2. Local Training on Private Data"| E1
-    E2 -->|"2. Local Training on Private Data"| E2
-    E3 -->|"2. Local Training on Private Data"| E3
+    E1 -->| 2. Local Training on Private Data | E1
+    E2 -->| 2. Local Training on Private Data | E2
+    E3 -->| 2. Local Training on Private Data | E3
     
-    E1 -->|"3. Send Weight Updates Only"| C
-    E2 -->|"3. Send Weight Updates Only"| C
-    E3 -->|"3. Send Weight Updates Only"| C
+    E1 -->| 3. Send Weight Updates Only | C
+    E2 -->| 3. Send Weight Updates Only | C
+    E3 -->| 3. Send Weight Updates Only | C
     
-    C -->|"4. Aggregate Weights (FedAvg)"| C
+    C -->| 4. Aggregate Weights (FedAvg) | C
 ```
 
 **Federated Learningのプロセス**:
@@ -264,4 +264,5 @@ Edge AIは、単なる「クラウドの補完技術」という位置づけか�
 
 ---
 *この記事は、IoTデバイスへのAI実装に関心を持つエンジニアおよびシステムアーキテクト向けに作成されました。*
+
 

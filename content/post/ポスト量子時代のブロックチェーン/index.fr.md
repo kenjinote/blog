@@ -275,7 +275,7 @@ Si le Bitcoin introduisait la PQC en conservant la limite de taille de bloc actu
 Pour résoudre ce problème, il faudrait augmenter considérablement la taille des blocs, mais cela accroîtrait les besoins en stockage et en bande passante des nœuds complets, rendant difficile l'exploitation de nœuds par des particuliers et entraînant en conséquence **une centralisation du réseau**, créant ainsi un dilemme.
 
 ```mermaid
-pie title "Comparaison de la taille des données de signature dans la blockchain (Schéma conceptuel)"
+pie title Comparaison de la taille des données de signature dans la blockchain (Schéma conceptuel)
     "ECDSA (env. 70 Octets)" : 2
     "Dilithium ML-DSA (env. 2 500 Octets)" : 58
     "SPHINCS+ (env. 17 000 Octets)" : 40
@@ -346,3 +346,4 @@ Plutôt que d'être détruites par leur confrontation, on peut s'attendre à ce 
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

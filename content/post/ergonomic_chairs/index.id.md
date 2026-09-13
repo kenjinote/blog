@@ -109,14 +109,14 @@ Kursi yang optimal akan berbeda-beda tergantung pada ukuran tubuh, gaya kerja, d
 ```mermaid
 flowchart TD
     Start["Jenis pekerjaan meja apa yang sering Anda lakukan?"] --> Q1["Apakah sering mengambil postur condong ke depan (mengetik/menulis)?"]
-    Q1 -- "Ya" --> Q2["Apakah anggaran Anda bisa di atas 150.000 Yen?"]
-    Q1 -- "Tidak" --> Q3["Mengutamakan postur condong ke belakang / santai (berpikir / menonton video)?"]
-    Q2 -- "Ya" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "Tidak" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "Ya" --> Embody["Herman Miller Embody"]
-    Q3 -- "Tidak" --> Q4["Apakah menggunakan banyak perangkat dan mengutamakan dukungan lengan?"]
-    Q4 -- "Ya" --> Gesture["Steelcase Gesture"]
-    Q4 -- "Tidak" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- Ya --> Q2["Apakah anggaran Anda bisa di atas 150.000 Yen?"]
+    Q1 -- Tidak --> Q3["Mengutamakan postur condong ke belakang / santai (berpikir / menonton video)?"]
+    Q2 -- Ya --> Aeron["Herman Miller Aeron"]
+    Q2 -- Tidak --> Sylphy["Okamura Sylphy"]
+    Q3 -- Ya --> Embody["Herman Miller Embody"]
+    Q3 -- Tidak --> Q4["Apakah menggunakan banyak perangkat dan mengutamakan dukungan lengan?"]
+    Q4 -- Ya --> Gesture["Steelcase Gesture"]
+    Q4 -- Tidak --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ Sebagus apa pun kursi ergonomis yang Anda gunakan, itu tidak akan ada artinya ji
 Diagram lingkaran di bawah ini menunjukkan persentase postur buruk yang umum terjadi di antara pekerja jarak jauh. Penting untuk mengatur lingkungan sedemikian rupa demi menghindari postur-postur tersebut.
 
 ```mermaid
-pie title "5 Postur Buruk Teratas Pekerja Jarak Jauh"
+pie title 5 Postur Buruk Teratas Pekerja Jarak Jauh
     "Membungkuk / Kepala Condong ke Depan (Straight Neck)" : 40
     "Panggul Miring ke Belakang (Duduk di Tulang Sakrum)" : 30
     "Kaki Menyilang (Distorsi Asimetris Panggul)" : 15
@@ -148,5 +148,7 @@ pie title "5 Postur Buruk Teratas Pekerja Jarak Jauh"
 Kursi ergonomis sama sekali bukanlah barang yang murah. Model dengan harga lebih dari 100.000 hingga 200.000 yen pun sudah menjadi hal yang lumrah. Namun, mengingat bahwa Anda menghabiskan 8 jam sehari dan sekitar 2000 jam setahun di atasnya, bisa dikatakan bahwa ini adalah "investasi yang paling hemat biaya (perangkat dengan ROI tinggi)" untuk mencegah penurunan produktivitas dan risiko biaya pengobatan akibat nyeri punggung bawah.
 
 Tinjaulah gaya kerja Anda dari sudut pandang biomekanika, dan pilihlah "satu kursi yang secara fisik tepat" yang secara akurat menopang kerangka dan otot Anda. Itulah rahasia terbesar agar Anda dapat terus melakukan pekerjaan rekayasa (engineering) dengan nyaman untuk jangka waktu yang lama.
+
+
 
 

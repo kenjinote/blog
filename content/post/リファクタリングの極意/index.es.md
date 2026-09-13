@@ -57,12 +57,12 @@ flowchart TD
     B --> C["Confirmar que todas las pruebas pasen"]
     C --> D["Realizar una pequeña refactorización"]
     D --> E["Volver a ejecutar las pruebas"]
-    E -- "Fallo (Rojo)" --> F["Revertir los cambios (Revert)"]
+    E -- Fallo (Rojo) --> F["Revertir los cambios (Revert)"]
     F --> D
-    E -- "Éxito (Verde)" --> G["Confirmar (commit) el código"]
+    E -- Éxito (Verde) --> G["Confirmar (commit) el código"]
     G --> H{"¿Hay otra parte a mejorar?"}
-    H -- "Sí" --> D
-    H -- "No" --> I["Refactorización completada"]
+    H -- Sí --> D
+    H -- No --> I["Refactorización completada"]
 ```
 
 Al iterar este ciclo, los desarrolladores siempre pueden modificar el código sobre una red de seguridad. Si una prueba falla, es importante hacer un `Revert` (deshacer los cambios) inmediatamente sin investigar a fondo la causa.
@@ -334,3 +334,4 @@ Tenga en mente los siguientes pasos explicados en este artículo.
 5. **Aprovechar las funcionalidades de Modern C++ y hacer que el compilador haga el trabajo**
 
 Mantener el espíritu de la "regla del boy scout" (dejar el campamento más limpio de como lo encontraste) y seguir mejorando constante y progresivamente el código en tus tareas diarias de desarrollo, ese es el verdadero arte de la refactorización.
+

@@ -216,7 +216,7 @@ Menerapkan Google Analytics (khususnya `gtag.js` atau Google Tag Manager) menyeb
 Mari kita uraikan waktu pemuatan situs sebagai berikut:
 
 ```mermaid
-pie title "Rincian Waktu Pemuatan Situs Tipikal"
+pie title Rincian Waktu Pemuatan Situs Tipikal
     "TTFB (Time to First Byte)" : 15
     "Unduhan Konten (HTML/CSS)" : 20
     "Parsing & Rendering DOM" : 45
@@ -255,5 +255,6 @@ Dalam mengoperasikan situs statis dengan Hugo, menggunakan platform hosting mode
 5. **Analitik yang Ringan**: Terapkan layanan seperti Cloudflare Web Analytics yang peduli terhadap privasi tanpa mengorbankan kinerja.
 
 Dengan menggabungkan berbagai teknologi ini, Anda dapat membangun sistem blog yang kuat dan skalabel untuk menangani jutaan pengunjung (PV) setiap bulannya secara gratis. Bagi Anda yang sedang mempertimbangkan untuk meluncurkan blog teknis, situs perusahaan, atau situs portofolio, silakan coba kombinasi arsitektur Jamstack + Hugo + Cloudflare Pages ini.
+
 
 

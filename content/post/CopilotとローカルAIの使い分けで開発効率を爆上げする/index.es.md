@@ -58,10 +58,10 @@ El siguiente diagrama de Mermaid muestra una arquitectura híbrida que ilustra c
 
 ```mermaid
 graph TD
-    Dev["Desarrollador (IDE)"] -->|"Escritura en tiempo real"| LocalProxy{"Enrutador / Proxy Inteligente"}
+    Dev["Desarrollador (IDE)"] -->| Escritura en tiempo real | LocalProxy{"Enrutador / Proxy Inteligente"}
     
-    LocalProxy -->|"Rápida, Tarea centrada en la privacidad"| LocalAI["Motor de IA Local (Ollama / LM Studio)"]
-    LocalProxy -->|"Lógica compleja, Contexto amplio"| CloudAI["Motor de IA en la Nube (Copilot / OpenAI API)"]
+    LocalProxy -->| Rápida, Tarea centrada en la privacidad | LocalAI["Motor de IA Local (Ollama / LM Studio)"]
+    LocalProxy -->| Lógica compleja, Contexto amplio | CloudAI["Motor de IA en la Nube (Copilot / OpenAI API)"]
     
     subgraph "Entorno Local"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ En lugar de una falsa dicotomía entre "GitHub Copilot en la nube" o "IA local",
 Por favor, lleve su entorno de IDE al siguiente nivel usando el árbol de decisiones y la arquitectura presentados en este artículo como referencia. Al pasar de ser alguien que "usa" la IA a alguien que "las combina y las emplea donde corresponde", su eficiencia de desarrollo seguramente aumentará de manera explosiva.
 
 Happy Coding with Hybrid AI!
+

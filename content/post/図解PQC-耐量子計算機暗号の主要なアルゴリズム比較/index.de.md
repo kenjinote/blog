@@ -219,8 +219,8 @@ Allerdings gibt es einen gravierenden Nachteil. Da die Signaturerzeugung zwangsl
 ```mermaid
 graph LR
     A["Anforderungen an digitale Signaturen"] --> B{"Was ist die oberste Priorität?"}
-    B -->|"Einfachheit der Implementierung, Vielseitigkeit, leichte Constant-Time-Implementierung"| C["Dilithium (ML-DSA)"]
-    B -->|"Minimierung der Bandbreite, kompakte Datengröße"| D["FALCON (FN-DSA)"]
+    B -->| Einfachheit der Implementierung, Vielseitigkeit, leichte Constant-Time-Implementierung | C["Dilithium (ML-DSA)"]
+    B -->| Minimierung der Bandbreite, kompakte Datengröße | D["FALCON (FN-DSA)"]
     C --> E["Allgemeine TLS-Zertifikate, elektronische Signaturen für Software"]
     D --> F["Protokolle mit strengen Paketgrößenlimits, spezielle Umgebungen"]
 ```
@@ -305,7 +305,7 @@ graph TD
     A --> C{"Ableitung des Master-Secrets (KDF)"}
     B --> C
     C -->|Eingabe: (X25519 gemeinsamer Schlüssel) || (Kyber gemeinsamer Schlüssel)| D["Sicherer Kommunikationsschlüssel (AES-256 / ChaCha20)"]
-    D -->|"Widerstandsfähig gegen Quantenbedrohungen UND klassische Schwachstellen"| E["Sichere hybride verschlüsselte Kommunikation (TLS 1.3)"]
+    D -->| Widerstandsfähig gegen Quantenbedrohungen UND klassische Schwachstellen | E["Sichere hybride verschlüsselte Kommunikation (TLS 1.3)"]
 ```
 
 Dadurch entsteht eine robuste zweischichtige Sicherheit: "Selbst wenn Quantencomputer realisiert und ECC geknackt werden, schützt Kyber die Kommunikation", und umgekehrt "Sollte ein unbekannter mathematischer Fehler in Kyber gefunden werden, schützt ECC die Kommunikation". Ein prominentes Beispiel ist der IETF-Standardisierungsentwurf **X25519MLKEM768 (früher X25519Kyber768)**. Die heutige Kommunikation zwischen Webbrowsern und modernsten Servern nutzt genau diese hybride Methode.
@@ -328,4 +328,5 @@ Der Kampf zwischen Quantencomputern und Kryptographie ist ein spannendes Feld, i
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 

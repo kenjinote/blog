@@ -114,7 +114,7 @@ En d'autres termes, même s'il existe un nombre infini d'étapes, la somme du te
 Achille rattrapera magnifiquement et dépassera la tortue environ $1.11$ seconde après le départ.
 
 ```mermaid
-pie title "Temps jusqu'à ce qu'Achille la rattrape (Total environ 1.11 secondes)"
+pie title Temps jusqu'à ce qu'Achille la rattrape (Total environ 1.11 secondes)
     "Étape 1 (1 seconde)" : 90
     "Étape 2 (0.1 seconde)" : 9
     "Somme infinie à partir de l'étape 3 (0.011... seconde)" : 1
@@ -167,3 +167,4 @@ Cependant, pour les philosophes grecs anciens qui ne possédaient pas les concep
 Les questions profondes posées par ce paradoxe, telles que « Qu'est-ce que le continu ? » et « Que signifie être divisé à l'infini ? », sont devenues un moteur important qui a conduit à la naissance du **« calcul infinitésimal »** par Newton et Leibniz plus tard, et même aux fondements des mathématiques modernes.
 
 Les grands paradoxes ne font pas que tromper les gens, ce sont aussi les clés qui ouvrent les portes de nouvelles mathématiques.
+

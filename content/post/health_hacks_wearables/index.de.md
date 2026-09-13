@@ -251,7 +251,7 @@ Basierend auf den vorverarbeiteten Daten werden wir die Beziehung zwischen Gesun
 
 ```mermaid
 xychart-beta
-    title "HRV vs Tägliche Programmierstunden (Normalisiert)"
+    title HRV vs Tägliche Programmierstunden (Normalisiert)
     x-axis ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
     y-axis "HRV & Programmierleistung" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
@@ -368,5 +368,6 @@ Nutzen Sie Data Science und APIs, um einen Gesundheitszustand zu entwickeln (Eng
 
 ---
 *Disclaimer: Dieser Artikel fasst die persönlichen Experimente und den datenwissenschaftlichen Ansatz des Autors zusammen und stellt keinen medizinischen Rat dar. Wenn Sie anhaltende körperliche Beschwerden oder Schlafstörungen haben, konsultieren Sie bitte einen Arzt.*
+
 
 

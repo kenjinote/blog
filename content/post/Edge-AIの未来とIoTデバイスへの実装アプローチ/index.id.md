@@ -191,19 +191,19 @@ graph TD
     E2["Server Rumah Sakit (Edge 2)"]
     E3["Mobil Pintar (Edge 3)"]
     
-    C -->|"1. Kirim Model Global"| E1
-    C -->|"1. Kirim Model Global"| E2
-    C -->|"1. Kirim Model Global"| E3
+    C -->| 1. Kirim Model Global | E1
+    C -->| 1. Kirim Model Global | E2
+    C -->| 1. Kirim Model Global | E3
     
-    E1 -->|"2. Pelatihan Lokal pada Data Pribadi"| E1
-    E2 -->|"2. Pelatihan Lokal pada Data Pribadi"| E2
-    E3 -->|"2. Pelatihan Lokal pada Data Pribadi"| E3
+    E1 -->| 2. Pelatihan Lokal pada Data Pribadi | E1
+    E2 -->| 2. Pelatihan Lokal pada Data Pribadi | E2
+    E3 -->| 2. Pelatihan Lokal pada Data Pribadi | E3
     
-    E1 -->|"3. Hanya Kirim Pembaruan Bobot"| C
-    E2 -->|"3. Hanya Kirim Pembaruan Bobot"| C
-    E3 -->|"3. Hanya Kirim Pembaruan Bobot"| C
+    E1 -->| 3. Hanya Kirim Pembaruan Bobot | C
+    E2 -->| 3. Hanya Kirim Pembaruan Bobot | C
+    E3 -->| 3. Hanya Kirim Pembaruan Bobot | C
     
-    C -->|"4. Agregasi Bobot (FedAvg)"| C
+    C -->| 4. Agregasi Bobot (FedAvg) | C
 ```
 
 **Proses Federated Learning**:
@@ -264,4 +264,5 @@ Di garis depan IoT tempat dunia fisik dan dunia digital menyatu, Edge AI tidak d
 
 ---
 *Artikel ini dibuat untuk para insinyur dan arsitek sistem yang tertarik dalam implementasi AI pada perangkat IoT.*
+
 

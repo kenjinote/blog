@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["Apply Bayes Theorem"]
   Bayes --> Class{"P(Spam) > 0.9?"}
-  Class -- "Yes" --> Spam["Move to Spam Folder"]
-  Class -- "No" --> Ham["Deliver to Inbox"]
+  Class -- Yes --> Spam["Move to Spam Folder"]
+  Class -- No --> Ham["Deliver to Inbox"]
 ```
 
 ### Implementation Example (Python)
@@ -396,8 +396,8 @@ It uses the value of the function $f(x_n)$ at the current position $x_n$ and its
 flowchart LR
   Start["Start: Guess initial x0"] --> Eval["Evaluate f(xn) and f'(xn)"]
   Eval --> Check{"Is f(xn) ≈ 0?"}
-  Check -- "Yes" --> Done["Return xn as Root"]
-  Check -- "No" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- Yes --> Done["Return xn as Root"]
+  Check -- No --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ How was it? From Euler's identity to the Pythagorean theorem, these 10 formulas 
 Understanding the mathematical background is indispensable for stepping up from being just a coder who calls existing libraries (`math.sin` or `numpy.fft`) to an engineer who understands their internal structures and can push their limits. The next time you write code, try expanding your imagination a little about what beautiful mathematical formulas are running behind it.
 
 **Happy Coding and Math!**
+

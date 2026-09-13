@@ -109,14 +109,14 @@ La silla óptima varía según el tamaño de tu cuerpo, estilo de trabajo y pres
 ```mermaid
 flowchart TD
     Start["¿Qué tipo de trabajo de escritorio realizas más?"] --> Q1["¿Trabajas mucho inclinado hacia adelante (escribir o teclear)?"]
-    Q1 -- "Sí" --> Q2["¿Es posible un presupuesto de 150,000 yenes o más?"]
-    Q1 -- "No" --> Q3["¿Priorizas una postura reclinada y relajada (pensar o ver vídeos)?"]
-    Q2 -- "Sí" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "No" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "Sí" --> Embody["Herman Miller Embody"]
-    Q3 -- "No" --> Q4["¿Usas múltiples dispositivos o priorizas el soporte para brazos?"]
-    Q4 -- "Sí" --> Gesture["Steelcase Gesture"]
-    Q4 -- "No" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- Sí --> Q2["¿Es posible un presupuesto de 150,000 yenes o más?"]
+    Q1 -- No --> Q3["¿Priorizas una postura reclinada y relajada (pensar o ver vídeos)?"]
+    Q2 -- Sí --> Aeron["Herman Miller Aeron"]
+    Q2 -- No --> Sylphy["Okamura Sylphy"]
+    Q3 -- Sí --> Embody["Herman Miller Embody"]
+    Q3 -- No --> Q4["¿Usas múltiples dispositivos o priorizas el soporte para brazos?"]
+    Q4 -- Sí --> Gesture["Steelcase Gesture"]
+    Q4 -- No --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ Por muy buena que sea la silla ergonómica que adquieras, no tendrá sentido si 
 El siguiente gráfico circular muestra el porcentaje de malas posturas comunes entre los trabajadores remotos. Es importante acondicionar el entorno para evitar estas posturas.
 
 ```mermaid
-pie title "Top 5 de malas posturas en trabajadores remotos"
+pie title Top 5 de malas posturas en trabajadores remotos
     "Encorvamiento y cabeza hacia adelante (Cuello recto)" : 40
     "Pelvis inclinada hacia atrás (Sentarse sobre el sacro)" : 30
     "Cruzar las piernas (Distorsión asimétrica de la pelvis)" : 15
@@ -148,5 +148,7 @@ pie title "Top 5 de malas posturas en trabajadores remotos"
 Una silla ergonómica no es en absoluto una compra barata. No es raro encontrar modelos que superen los 100,000 a 200,000 yenes. Sin embargo, si consideras que pasarás en ella 8 horas al día y unas 2000 horas al año, se puede decir que es la "inversión más rentable (dispositivo con alto ROI)" para prevenir disminuciones en la productividad debido al dolor de espalda y riesgos de gastos médicos.
 
 Reevalúa tu estilo de trabajo desde una perspectiva biomecánica y elige "una silla físicamente correcta" que soporte de manera precisa tu esqueleto y músculos. Ese es el mayor secreto para seguir en la ingeniería de manera cómoda y durante mucho tiempo.
+
+
 
 

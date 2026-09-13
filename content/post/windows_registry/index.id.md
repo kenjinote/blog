@@ -148,12 +148,12 @@ flowchart TD
     HKLM_Soft["HKLM\\SOFTWARE"]
     HKLM_WOW64["HKLM\\SOFTWARE\\WOW6432Node"]
 
-    App32 -->|"RegOpenKeyEx()"| RegAPI
-    App64 -->|"RegOpenKeyEx()"| RegAPI
+    App32 -->| RegOpenKeyEx() | RegAPI
+    App64 -->| RegOpenKeyEx() | RegAPI
     RegAPI --> CM
 
-    CM -->|"Jika Proses 64-bit"| HKLM_Soft
-    CM -->|"Jika Proses 32-bit (Pengalihan)"| HKLM_WOW64
+    CM -->| Jika Proses 64-bit | HKLM_Soft
+    CM -->| Jika Proses 32-bit (Pengalihan) | HKLM_WOW64
 ```
 Saat mengedit Registry dari skrip PowerShell atau aplikasi C#, Anda harus sangat menyadari apakah proses yang dijalankan itu sendiri 32-bit atau 64-bit. Jika tidak, akan timbul masalah pelik seperti "pengaturan yang seharusnya ditulis tidak terlihat dari Explorer (karena ditulis ke lokasi yang berbeda)".
 
@@ -399,5 +399,6 @@ Terakhir, berikut adalah rangkuman prinsip desain yang penting dan praktik terba
 ## Kesimpulan
 
 Registry Windows adalah sistem berbasis yang tangguh namun kompleks untuk mengelola seluruh perilaku OS serta pengaturan aplikasi secara terpadu. Pengeditan manual yang tidak beraturan menyimpan risiko kerusakan sistem yang sangat tinggi yang dapat dibuktikan secara matematis. Karenanya, dalam pengembangan dan administrasi sistem modern, Anda harus melakukan pengelolaan konfigurasi dalam bentuk yang dapat direproduksi, dapat diuji, dan aman, yang berpegang pada prinsip Infrastructure as Code. Hal tersebut bisa dicapai dengan menggunakan metode yang dapat diprogram seperti PowerShell atau C#. Dengan memahami arsitektur mendalam dan memanfaatkan pola-pola implementasi yang telah dibahas dalam artikel ini, bangunlah lingkungan Windows yang lebih tangguh dan aman.
+
 
 

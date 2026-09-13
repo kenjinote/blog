@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|"测量（观测）"| Result
+    Interference -->| 测量（观测） | Result
 ```
 
 由此可见，量子计算机并非为了规避经典力学极限（微细化极限与热力学极限）而采取的权宜延寿之策，而是基于量子力学公理对信息与计算定义本身的重构，是一场真正的范式转变。在下一章中，我们将进一步深入探讨用于自如操控这种量子干涉的具体数学工具——“量子门”与“量子线路”的详细内容。
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["物理量 $A$ 的观测 (投影算子 $P_k$)"]:::measure
     
-    Obs -->|"概率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["塌缩状态 1: $| a_1 \rangle$"]:::state
-    Obs -->|"概率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["塌缩状态 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["塌缩状态 n: $| a_n \rangle$"]:::state
+    Obs -->| 概率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["塌缩状态 1: $| a_1 \rangle$"]:::state
+    Obs -->| 概率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["塌缩状态 2: $| a_2 \rangle$"]:::state
+    Obs -->| ... | StateN["塌缩状态 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["退相干（相位干涉丧失）与转为混合态"]:::measure
     State2 --> Decoherence
@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"状态 |x⟩"| QFT["QFT† (逆量子傅里叶变换)"]
-    Uf -->|"状态 |a^x mod N⟩"| Discard["不进行观测 (与环境纠缠)"]
+    Uf -->| 状态 |x⟩ | QFT["QFT† (逆量子傅里叶变换)"]
+    Uf -->| 状态 |a^x mod N⟩ | Discard["不进行观测 (与环境纠缠)"]
 
     QFT --> Measure["测量 (k)"]
     Measure --> Classical["利用连分数展开进行经典后处理 (推导 r)"]
@@ -2701,8 +2701,8 @@ $$
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["拓扑编织"]
-    A["时间轴 t"] -->|"任意子1的世界线"| B["交换操作（编织）"]
-    C["任意子2的世界线"] -->|"编织"| B
+    A["时间轴 t"] -->| 任意子1的世界线 | B["交换操作（编织）"]
+    C["任意子2的世界线"] -->| 编织 | B
     B --> D["态矢量发生幺正旋转 U"]
     end
 ```

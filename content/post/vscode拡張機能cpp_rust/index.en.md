@@ -33,13 +33,13 @@ graph TD
     CompilerR["rustc Frontend"]
     Debugger["CodeLLDB (Debug Adapter)"]
 
-    VSCode -- "Completion requests / Go to definition" --> LSP
+    VSCode -- Completion requests / Go to definition --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
     Clangd -. "AST (Abstract Syntax Tree) Analysis" .-> CompilerC
     RustAnalyzer -. "Macro Expansion / Type Inference" .-> CompilerR
     
-    VSCode -- "Debug Adapter Protocol (DAP)" --> Debugger
+    VSCode -- Debug Adapter Protocol (DAP) --> Debugger
     Debugger -. "ptrace / Memory Dump" .-> Executable["Compiled Binary"]
 ```
 
@@ -388,3 +388,4 @@ By applying the 10 extensions and configurations introduced in this article, VSC
 It might take some time to customize the initial configuration files, but once built, your coding experience will become surprisingly comfortable and productive. By all means, use the architecture explanations and specific configurations (`settings.json`, `tasks.json`, `launch.json`) in this article as a reference to build your own ultimate development environment.
 
 Wishing you a comfortable and safe systems programming life!
+

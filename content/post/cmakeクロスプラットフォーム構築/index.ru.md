@@ -98,9 +98,9 @@ graph TD
         App["Главное приложение"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["App зависит от реализации MathLib, но не показывает её наружу"]
     note2["NetworkLib открывает интерфейс HeaderLib"]
@@ -369,3 +369,4 @@ target_link_libraries(ComplexApp
 7. **Математический подход**: Учитывайте закон Амдала, уменьшайте зависимости для повышения эффективности параллельной компиляции.
 
 Поначалу CMake может показаться сложным, но как только вы поймете концепцию целей и свойств, вы сможете поддерживать упорядоченную среду сборки, независимо от того, насколько сложным и огромным является проект на C++. Обязательно используйте эту статью в качестве справочника и попробуйте настроить среду разработки на C++, используя синтаксис современного CMake.
+

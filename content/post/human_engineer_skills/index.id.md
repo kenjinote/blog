@@ -180,7 +180,7 @@ $$ V = \left( \sum_{i=1}^{n} \text{DomainKnowledge}_i + \text{ArchitectureSkill}
 Pergeseran paradigma ini juga dengan jelas tercermin dalam bagaimana insinyur menggunakan waktu sehari-hari mereka (alokasi waktu).
 
 ```mermaid
-pie title "Alokasi Waktu Insinyur (Sebelum Adopsi AI)"
+pie title Alokasi Waktu Insinyur (Sebelum Adopsi AI)
   "Pemecahan Error Sintaksis dan Pengkodean": 50
   "Definisi Persyaratan dan Desain Sistem": 20
   "Implementasi dan Eksekusi Pengujian": 20
@@ -188,7 +188,7 @@ pie title "Alokasi Waktu Insinyur (Sebelum Adopsi AI)"
 ```
 
 ```mermaid
-pie title "Alokasi Waktu Insinyur (Di Era AI)"
+pie title Alokasi Waktu Insinyur (Di Era AI)
   "Pemodelan Domain dan Desain Arsitektur": 40
   "Prompting ke AI dan Verifikasi Kode": 20
   "Debugging Tingkat Lanjut dan Operasi di Produksi": 30
@@ -207,5 +207,6 @@ Insinyur masa depan tidak perlu khawatir tentang detail spesifikasi bahasa pemro
 
 Insinyur sejati bukanlah seseorang yang menulis kode, melainkan seseorang yang memecahkan masalah.
 Pemodelan domain, desain arsitektur yang dapat diskalakan, komunikasi dengan pemangku kepentingan, dan debugging sistem yang kompleks. Bagi mereka yang terus mengasah "keterampilan insinyur khas manusia" ini, AI bukan musuh yang mencuri pekerjaan, melainkan mitra terkuat yang akan melipatgandakan kreativitas dan produktivitas mereka puluhan kali lipat.
+
 
 

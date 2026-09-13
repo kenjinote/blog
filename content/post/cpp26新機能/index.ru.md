@@ -19,13 +19,13 @@ tags: ['C++', 'C++26', 'Programming', 'Tech']
 
 ```mermaid
 timeline
-    title "Эволюция стандартизации C++"
-    "C++11" : "Рассвет Modern C++" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "Улучшение возможностей" : "generic lambda, return type deduction"
-    "C++17" : "Повышение практичности" : "std::optional, fold expressions, structured binding"
-    "C++20" : "Сдвиг парадигмы" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "Дальнейшее расширение" : "Deducing this, std::expected, std::print"
-    "C++26" : "Революция следующего поколения" : "Reflection, Contracts, Pattern Matching"
+    title Эволюция стандартизации C++
+    C++11 : Рассвет Modern C++ : auto, lambda, constexpr, move semantics
+    C++14 : Улучшение возможностей : generic lambda, return type deduction
+    C++17 : Повышение практичности : std::optional, fold expressions, structured binding
+    C++20 : Сдвиг парадигмы : Concepts, Modules, Coroutines, Ranges
+    C++23 : Дальнейшее расширение : Deducing this, std::expected, std::print
+    C++26 : Революция следующего поколения : Reflection, Contracts, Pattern Matching
 ```
 
 Опираясь на такие масштабные нововведения C++20, как Concepts и Modules, C++26 стремится довести до максимума **самодокументируемость кода (рефлексия)** и **надежность (контрактное программирование)**. Давайте рассмотрим каждую возможность подробно.
@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["Тип: User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["Диапазон meta::info"]
-    C -->| "[: member :]" | D["Прямой доступ к членам (obj.id, obj.name)"]
+    A["Тип: User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["Диапазон meta::info"]
+    C -->| [: member :] | D["Прямой доступ к членам (obj.id, obj.name)"]
     D --> E["Сгенерированный код (Нулевые накладные расходы)"]
 ```
 
@@ -146,12 +146,12 @@ double calculate_average(const std::vector<double>& v)
 ```mermaid
 graph TD
     A["Вызов функции"] --> B{"Оценка предусловия"}
-    B -- "True" --> C["Выполнение тела"]
-    B -- "False" --> D["Вызов обработчика нарушения"]
+    B -- True --> C["Выполнение тела"]
+    B -- False --> D["Вызов обработчика нарушения"]
     D --> E["Логирование ошибки / Abort / Throw"]
     C --> F{"Оценка постусловия"}
-    F -- "True" --> G["Возврат значения"]
-    F -- "False" --> D
+    F -- True --> G["Возврат значения"]
+    F -- False --> D
 ```
 
 Использование контрактов не только самодокументирует спецификации API, но и позволяет безопасно остановить или контролировать программу до того, как возникнет неопределенное поведение (Undefined Behavior, UB). Ожидается, что это приведет к значительному сокращению ошибок повреждения памяти и логических ошибок, характерных для C++.
@@ -367,3 +367,5 @@ C++26 — это поистине историческая версия, в ко
 
 ---
 *Эта статья была написана на основе статуса стандартизации C++26 по состоянию на 2026 год. Обратите внимание, что некоторый синтаксис может быть изменен в зависимости от статуса реализации конкретными компиляторами.*
+
+

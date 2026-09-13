@@ -182,13 +182,13 @@ Der Kern von Zero Trust besteht darin, "nicht mehr die Netzwerkgrenze (intern od
 ```mermaid
 graph TD
     subgraph "Perimeter-Verteidigungsmodell (Traditionelles VPN)"
-        U1["Remote-Ingenieur"] -- "IPsec / SSL VPN" --> VPN["VPN-Gateway (Single Point of Failure / Flaschenhals)"]
-        VPN -- "Internes LAN (Implizites Vertrauen)" --> App1["Interne Quellcodeverwaltung"]
+        U1["Remote-Ingenieur"] -- IPsec / SSL VPN --> VPN["VPN-Gateway (Single Point of Failure / Flaschenhals)"]
+        VPN -- Internes LAN (Implizites Vertrauen) --> App1["Interne Quellcodeverwaltung"]
     end
     
     subgraph "Zero-Trust-Modell (BeyondCorp / ZTNA)"
-        U2["Remote-Ingenieur (MDM-verwaltetes Gerät)"] -- "Direkte Kommunikation (mTLS HTTPS)" --> IAP["Identity-Aware Proxy (IAP)"]
-        IAP -- "Dynamische Autorisierung pro Anfrage" --> App2["Interne / SaaS-Anwendungen"]
+        U2["Remote-Ingenieur (MDM-verwaltetes Gerät)"] -- Direkte Kommunikation (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
+        IAP -- Dynamische Autorisierung pro Anfrage --> App2["Interne / SaaS-Anwendungen"]
         IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / Benutzerkontext" .-> Policy
         MDM["Geräteverwaltung (Intune / Jamf)"] -. "Gerätezustand (Patch-Status)" .-> Policy
         Policy["Zugriffs-Richtlinien-Engine"] -. "Risikobasierte Autorisierungsentscheidung" .-> IAP
@@ -235,5 +235,6 @@ Die Führungsebene muss die Illusion aufgeben, dass "Innovationen wie von Zauber
 Auf der anderen Seite müssen auch Ingenieure (insbesondere Senioren) die selbstgerechte Sichtweise korrigieren: "Ich bin produktiver, wenn ich alleine Code schreibe, also brauche ich kein Büro". Software-Engineering ist ein Teamsport und beinhaltet weitreichende Verantwortlichkeiten, nicht nur die Produktivität beim Codieren, sondern auch das Systemdesign der gesamten Organisation, die Ausbildung von Junior-Mitgliedern und die Zusammenarbeit in Notfällen. Es ist eine Tatsache, dass Kommunikation mit hoher Bandbreite im physischen Raum manchmal das gesamte Projekt retten kann.
 
 Die optimale Lösung variiert je nach Phase des Unternehmens, des Teams und des Produkts. Sicher ist jedoch, dass nur Organisationen in dieser neuen Ära des Arbeitens echte Wettbewerbsfähigkeit erlangen können, die die soziologischen Eigenschaften der Kommunikation verstehen, den Status quo mit vielfältigen Indikatoren wie dem SPACE-Framework messen und weiterhin Einschränkungen durch Technologien wie die Zero-Trust-Architektur überwinden.
+
 
 

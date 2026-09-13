@@ -173,7 +173,7 @@ Berikut adalah alur pipeline migrasi secara umum.
 ```mermaid
 flowchart LR
   WPDB["Database WP"] -->|Plugin| Exporter["Alat Ekspor"]
-  Exporter -->|"Mengekstrak Teks, \nMeta, Gambar"| ZipFile["File Zip / Folder"]
+  Exporter -->| Mengekstrak Teks, \nMeta, Gambar | ZipFile["File Zip / Folder"]
   ZipFile -->|Unpack| MarkdownFiles["File Markdown \n(content/)"]
   ZipFile -->|Unpack| ImageFiles["Gambar \n(static/wp-content/)"]
   MarkdownFiles --> Formatting["Tinjau & Format \n(Perbaiki Shortcode)"]
@@ -320,3 +320,4 @@ Dalam artikel ini, kami telah menjelaskan secara terperinci tentang migrasi dari
 Migrasi ke generator situs statis memang memerlukan biaya pembelajaran awal (seperti operasi Git, sintaks Markdown, menjalankan perintah CLI dari terminal, memahami spesifikasi mesin template, dll.), tetapi akan memberikan imbal hasil (return) yang lebih dari sekadar menggantikannya, seperti "kecepatan tampilan yang luar biasa", "keamanan yang tangguh", dan "bebas dari pemeliharaan".
 
 Jika situs web Anda tidak memerlukan perubahan desain yang sering atau proses dinamis yang kompleks (seperti fungsi khusus anggota atau fitur e-commerce lanjutan) dan utamanya bertujuan untuk mendistribusikan informasi (seperti blog, media, atau situs web perusahaan), maka migrasi ke Hugo akan menjadi salah satu investasi teknis yang paling efektif. Silakan gunakan artikel ini sebagai referensi dan ambil langkah pertama menuju operasi situs web generasi berikutnya menggunakan Hugo.
+

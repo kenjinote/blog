@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->|"Messung (Beobachtung)"| Result
+    Interference -->| Messung (Beobachtung) | Result
 ```
 
 Auf diese Weise ist der Quantencomputer keine vorübergehende lebensverlängernde Maßnahme zur Umgehung der Grenzen der klassischen Mechanik (Miniaturisierungsgrenze und thermodynamische Grenze), sondern ein echter Paradigmenwechsel, der die Definition von Information und Berechnung selbst auf der Grundlage der Axiome der Quantenmechanik neu konstruiert. Im nächsten Kapitel werden wir tiefer in die Details von „Quantengattern“ und „Quantenschaltkreisen“ eintauchen, die konkrete mathematische Werkzeuge darstellen, um diese Quanteninterferenz nach Belieben zu steuern.
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Messung der physikalischen Größe $A$ (Projektionsoperator $P_k$)"]:::measure
     
-    Obs -->|"Wahrscheinlichkeit $p(a_1) = \langle \psi | P_1 | \psi \rangle$"| State1["Kollabierter Zustand 1: $| a_1 \rangle$"]:::state
-    Obs -->|"Wahrscheinlichkeit $p(a_2) = \langle \psi | P_2 | \psi \rangle$"| State2["Kollabierter Zustand 2: $| a_2 \rangle$"]:::state
-    Obs -->|"..."| StateN["Kollabierter Zustand n: $| a_n \rangle$"]:::state
+    Obs -->| Wahrscheinlichkeit $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["Kollabierter Zustand 1: $| a_1 \rangle$"]:::state
+    Obs -->| Wahrscheinlichkeit $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["Kollabierter Zustand 2: $| a_2 \rangle$"]:::state
+    Obs -->| ... | StateN["Kollabierter Zustand n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Dekohärenz (Verlust der Phasenkohärenz) und Übergang zum gemischten Zustand"]:::measure
     State2 --> Decoherence
@@ -1964,8 +1964,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->|"Zustand |x⟩"| QFT["QFT† (Inverse Quanten-Fouriertransformation)"]
-    Uf -->|"Zustand |a^x mod N⟩"| Discard["Nicht gemessen (Mit Umgebung verschränkt)"]
+    Uf -->| Zustand |x⟩ | QFT["QFT† (Inverse Quanten-Fouriertransformation)"]
+    Uf -->| Zustand |a^x mod N⟩ | Discard["Nicht gemessen (Mit Umgebung verschränkt)"]
 
     QFT --> Measure["Messung (k)"]
     Measure --> Classical["Klassische Nachbearbeitung durch Kettenbruchentwicklung (Ableitung von r)"]
@@ -2700,8 +2700,8 @@ Quantenlogikgatter werden in diesem System durch das sogenannte „Braiding“ (
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Topologisches Braiding"]
-    A["Zeitachse t"] -->|"Weltlinie von Anyon 1"| B["Austauschoperation (Braid)"]
-    C["Weltlinie von Anyon 2"] -->|"Braid"| B
+    A["Zeitachse t"] -->| Weltlinie von Anyon 1 | B["Austauschoperation (Braid)"]
+    C["Weltlinie von Anyon 2"] -->| Braid | B
     B --> D["Zustandsvektor erfährt unitäre Rotation U"]
     end
 ```

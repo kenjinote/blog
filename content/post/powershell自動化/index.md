@@ -158,11 +158,11 @@ $$ T_{backup} = \frac{S_{total}}{B \times (1 - \alpha)} + C \times L $$
 ```mermaid
 flowchart TD
     A["Start Backup Script"] --> B{"Is NAS Accessible?"}
-    B -- "Yes" --> C["Execute Robocopy (Multi-threaded)"]
-    B -- "No" --> D["Write Error Log & Exit"]
+    B -- Yes --> C["Execute Robocopy (Multi-threaded)"]
+    B -- No --> D["Write Error Log & Exit"]
     C --> E{"Did Robocopy Succeed?"}
-    E -- "Yes (ExitCode < 8)" --> F["Rotate Logs (Keep last 30 days)"]
-    E -- "No (ExitCode >= 8)" --> D
+    E -- Yes (ExitCode < 8) --> F["Rotate Logs (Keep last 30 days)"]
+    E -- No (ExitCode >= 8) --> D
     F --> G["End Backup Script"]
     D --> G
 ```
@@ -490,3 +490,4 @@ $$ \sigma = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \mu)^2 } $$
 PowerShellは非常に奥深く、コマンドラインツールでありながら.NETのほぼすべての機能にアクセスできる強力な自動化エンジンです。今回紹介したスクリプトをベースに、皆様の業務環境に合わせてパスや処理ロジックをカスタマイズし、煩雑な手作業から解放された創造的な時間を手に入れてください。
 
 自動化の成功は「小さなスクリプトから始め、徐々にエラーハンドリングやログ出力などの堅牢性を高めていくこと」にかかっています。まずはご自身のPCの1つのフォルダをバックアップするところから、PowerShellによる自動化の旅をスタートしてみてはいかがでしょうか。
+

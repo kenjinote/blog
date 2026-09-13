@@ -98,7 +98,7 @@ En substituant le nombre de personnes $n$ dans cette équation, on peut voir que
 - Pour $n = 70$, la probabilité est d'environ **99,9 %**
 
 ```mermaid
-pie title "Probabilités lorsqu'il y a 23 personnes"
+pie title Probabilités lorsqu'il y a 23 personnes
     "Il y a une paire avec le même anniversaire (50,7 %)" : 50.7
     "Tous différents (49,3 %)" : 49.3
 ```
@@ -154,3 +154,4 @@ Nous sommes doués pour appréhender une augmentation linéaire (par addition), 
 Derrière notre intuition selon laquelle « le nombre 23 est trop petit par rapport au grand nombre 365 », il y a en fait **« 253 fils invisibles (paires) »** créés par ces 23 personnes.
 
 La prochaine fois que vous irez dans un endroit où des gens sont rassemblés, essayez d'imaginer non seulement le « nombre de personnes » visibles, mais aussi les « innombrables fils de combinaisons » qui existent entre elles. Votre vision du monde devrait changer de manière légèrement mathématique.
+

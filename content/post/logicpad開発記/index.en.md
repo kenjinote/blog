@@ -24,7 +24,7 @@ The development of LogicPad progressed as a personal project utilizing weekends 
 
 ```mermaid
 gantt
-    title "LogicPad Development Timeline"
+    title LogicPad Development Timeline
     dateFormat  YYYY-MM-DD
     section "Planning & Design"
     "Requirement Analysis & Prototyping" :a1, 2025-10-01, 30d
@@ -303,3 +303,4 @@ Precisely because the evolution of web technologies has ushered in an era where 
 WinUI 3 and the Windows App SDK are still being actively developed, and they are the best tools for building beautiful applications that fully utilize the UI paradigms of Windows 11. I sincerely hope that this blog post will be of some help to developers who are about to challenge themselves with Windows native app development, and that even one more wonderful app will line the Store.
 
 Development is not over yet. In the next version of LogicPad, I plan to integrate a custom waveform rendering engine utilizing Direct2D. In the next article, I plan to dive deep into interoperability between DirectX and WinUI 3 (utilizing SwapChainPanel). Please look forward to it.
+

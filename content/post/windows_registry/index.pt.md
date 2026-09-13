@@ -148,12 +148,12 @@ flowchart TD
     HKLM_Soft["HKLM\\SOFTWARE"]
     HKLM_WOW64["HKLM\\SOFTWARE\\WOW6432Node"]
 
-    App32 -->|"RegOpenKeyEx()"| RegAPI
-    App64 -->|"RegOpenKeyEx()"| RegAPI
+    App32 -->| RegOpenKeyEx() | RegAPI
+    App64 -->| RegOpenKeyEx() | RegAPI
     RegAPI --> CM
 
-    CM -->|"Se Processo de 64 bits"| HKLM_Soft
-    CM -->|"Se Processo de 32 bits (Redirecionamento)"| HKLM_WOW64
+    CM -->| Se Processo de 64 bits | HKLM_Soft
+    CM -->| Se Processo de 32 bits (Redirecionamento) | HKLM_WOW64
 ```
 Ao editar o registro através de scripts PowerShell ou aplicativos C#, é indispensável que se saiba que tipo de arquitetura do processo em execução (se 32 ou 64 bits). Senão, problemas irritantes do tipo "A configuração que salvei não aparece no Editor do Registro (foi salva em outro lugar)" poderão ocorrer.
 
@@ -400,5 +400,6 @@ Para concluir, vamos resumir as principais regras e melhores práticas de design
 ## Conclusões Finais
 
 Nesse tutorial verificou-se o quão vasto as áreas nos registros do seu Windows possuem de um banco que compõe regras à integridade central do Software ao Ambiente Nativo que baseiam a área visual dos sistemas de rotina nos computadores base da plataforma e aplicações e processos de usuários em todo um sistema. Operar modificações via meios visuais locais pelo Editor das configurações ao ambiente é uma medida insegura às possibilidades severas do OS com a alta chance real constatada base em equações na corrupção de subpastas a certas chaves que prejudicam todo os processos naturais integrativos Windows e sua própria viabilização do ambiente sem travamentos (O famoso BSoD). Para evitar prejuízos graves que custem a quebra da máquina é muito mais que essencial os processos através dos recursos pautáveis nativamente pela automação no uso como do C# via scripts ou uso integral do moderno e viável interpretador local de base no próprio "PowerShell", obedecendo aos parâmetros puros essenciais (O Princípio local - Infrastructure as Code / IaC) das organizações. De modos reprodutíveis nos códigos locais limpos ou testáveis via comandos isolados e ambientes propícios a manipulação robusta, viável para a execução assertiva. Se as noções das profundezas apresentadas pautadas aos conhecimentos das raízes em Arquitetura da base que apresentados nesta matéria ficarem fixadas as formas das seguras de execuções de registro ficará na marca integral ao gerenciamento da Base Dos Registros aos mais seguros cenários nas configurações base nativa das Máquinas.
+
 
 

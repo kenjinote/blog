@@ -38,7 +38,7 @@ O gráfico a seguir ilustra a divergência entre a CTR esperada e a CTR real em 
 
 ```mermaid
 xychart-beta
-    title "CTR Esperada vs CTR Real por Posição"
+    title CTR Esperada vs CTR Real por Posição
     x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     y-axis "CTR (%)" 0 --> 35
     line [30.5, 15.2, 10.1, 7.5, 5.2, 4.1, 3.2, 2.5, 2.0, 1.5]
@@ -276,5 +276,6 @@ Resumindo os métodos explicados neste artigo:
 4. Usar a **análise PNL com TF-IDF** para descobrir lacunas de conteúdo face aos concorrentes e otimizar os cabeçalhos (H2/H3).
 
 As tendências tecnológicas estão em constante evolução. Para responder de forma precisa aos erros e desafios que os leitores enfrentam atualmente, certifique-se de incorporar uma estratégia de reescrita baseada em dados nas suas operações diárias.
+
 
 

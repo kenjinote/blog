@@ -98,9 +98,9 @@ graph TD
         App["Hauptanwendung"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["App hängt von der Implementierung von MathLib ab, zeigt diese aber nicht nach außen"]
     note2["NetworkLib macht die Schnittstelle von HeaderLib öffentlich zugänglich"]
@@ -369,3 +369,4 @@ Fassen wir die wichtigsten Punkte noch einmal zusammen:
 7. **Mathematischer Ansatz**: Berücksichtigen Sie das Amdahlsche Gesetz, um Abhängigkeiten zu reduzieren und die Effizienz des parallelen Kompilierens zu steigern.
 
 Anfangs mag CMake schwer verständlich erscheinen, aber sobald Sie die Konzepte von Targets und Properties verstanden haben, können Sie eine geordnete Build-Umgebung aufrechterhalten, egal wie komplex oder riesig ein C++-Projekt ist. Bitte nutzen Sie diesen Artikel als Referenz und versuchen Sie, eine C++-Entwicklungsumgebung mit der neuesten Modern CMake-Schreibweise aufzubauen.
+

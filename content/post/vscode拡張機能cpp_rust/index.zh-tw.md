@@ -33,13 +33,13 @@ graph TD
     CompilerR["rustc 前端"]
     Debugger["CodeLLDB (除錯轉接器)"]
 
-    VSCode -- "補齊請求・跳轉至定義" --> LSP
+    VSCode -- 補齊請求・跳轉至定義 --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
     Clangd -. "AST（抽象語法樹）解析" .-> CompilerC
     RustAnalyzer -. "巨集展開・型別推導" .-> CompilerR
     
-    VSCode -- "Debug Adapter Protocol (DAP)" --> Debugger
+    VSCode -- Debug Adapter Protocol (DAP) --> Debugger
     Debugger -. "ptrace / 記憶體傾印" .-> Executable["已編譯二進位檔"]
 ```
 
@@ -388,3 +388,4 @@ C++ 與 Rust 都是以「發揮硬體極限效能」為目的的嚴謹語言，�
 初期的設定檔客製化可能會花上一些時間，但只要建置完成，之後的寫程式體驗將會變得令人驚豔地舒適且具高生產力。請務必參考本文的架構解說與具體設定（`settings.json`, `tasks.json`, `launch.json`），試著建構出屬於你自己的最強開發環境吧。
 
 祝你有個舒適、安全的系統程式設計生活！
+

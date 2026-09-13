@@ -19,13 +19,13 @@ Pertama, mari kita lihat sejarah standardisasi C++ dan posisi C++26 secara visua
 
 ```mermaid
 timeline
-    title "Evolusi Standardisasi C++"
-    "C++11" : "Awal Mula Modern C++" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "Penyempurnaan Fitur" : "generic lambda, return type deduction"
-    "C++17" : "Peningkatan Kepraktisan" : "std::optional, fold expressions, structured binding"
-    "C++20" : "Pergeseran Paradigma" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "Ekspansi Lebih Lanjut" : "Deducing this, std::expected, std::print"
-    "C++26" : "Revolusi Generasi Berikutnya" : "Reflection, Contracts, Pattern Matching"
+    title Evolusi Standardisasi C++
+    C++11 : Awal Mula Modern C++ : auto, lambda, constexpr, move semantics
+    C++14 : Penyempurnaan Fitur : generic lambda, return type deduction
+    C++17 : Peningkatan Kepraktisan : std::optional, fold expressions, structured binding
+    C++20 : Pergeseran Paradigma : Concepts, Modules, Coroutines, Ranges
+    C++23 : Ekspansi Lebih Lanjut : Deducing this, std::expected, std::print
+    C++26 : Revolusi Generasi Berikutnya : Reflection, Contracts, Pattern Matching
 ```
 
 C++26 dibangun di atas kelompok fitur berskala besar seperti Concepts dan Modules yang diperkenalkan pada C++20, dan bertujuan untuk memaksimalkan **kemampuan kode mendeskripsikan dirinya sendiri (Reflection)** dan **kekokohan (Contract Programming)** hingga batas akhir. Sekarang, mari kita selami detail dari masing-masing fitur.
@@ -97,9 +97,9 @@ Kita dapat terbebas dari kehabisan memori kompiler akibat template yang bersaran
 
 ```mermaid
 graph TD
-    A["Tipe: User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["Rentang meta::info"]
-    C -->| "[: member :]" | D["Akses Anggota Langsung (obj.id, obj.name)"]
+    A["Tipe: User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["Rentang meta::info"]
+    C -->| [: member :] | D["Akses Anggota Langsung (obj.id, obj.name)"]
     D --> E["Kode yang Dihasilkan (Nol Overhead)"]
 ```
 
@@ -146,12 +146,12 @@ Contracts bukan sekadar komentar atau makro `assert()` kuno. Bergantung pada mod
 ```mermaid
 graph TD
     A["Fungsi Dipanggil"] --> B{"Evaluasi Pra-kondisi"}
-    B -- "Benar" --> C["Eksekusi Isi"]
-    B -- "Salah" --> D["Panggil Penangan Pelanggaran"]
+    B -- Benar --> C["Eksekusi Isi"]
+    B -- Salah --> D["Panggil Penangan Pelanggaran"]
     D --> E["Catat Error / Batal / Lempar"]
     C --> F{"Evaluasi Pasca-kondisi"}
-    F -- "Benar" --> G["Kembalikan Nilai"]
-    F -- "Salah" --> D
+    F -- Benar --> G["Kembalikan Nilai"]
+    F -- Salah --> D
 ```
 
 Dengan menggunakan Contracts, spesifikasi API tidak hanya terdokumentasi sendiri (self-documenting), tetapi Anda juga dapat menghentikan dan mengontrol program dengan aman sebelum menyebabkan Undefined Behavior (UB), sehingga diharapkan dapat mengurangi secara drastis kerusakan memori dan bug logika yang khas pada C++.
@@ -367,3 +367,5 @@ Kedepannya, kami sangat menyarankan untuk secara aktif mengadopsi berbagai parad
 
 ---
 *Artikel ini ditulis berdasarkan status pada standar C++26 di tahun 2026. Harap diperhatikan bahwa beberapa jenis sintaks mungkin dapat diubah bergantung dari progres dan situasi penerapan di tiap kompiler.*
+
+

@@ -219,8 +219,8 @@ However, there is a significant drawback. Because discrete Gaussian sampling, wh
 ```mermaid
 graph LR
     A["Requirements for Digital Signatures"] --> B{"What is the top priority constraint?"}
-    B -->|"Simplicity of implementation, versatility, ease of constant-time implementation"| C["Dilithium (ML-DSA)"]
-    B -->|"Minimization of communication bandwidth, compactness of data size"| D["FALCON (FN-DSA)"]
+    B -->| Simplicity of implementation, versatility, ease of constant-time implementation | C["Dilithium (ML-DSA)"]
+    B -->| Minimization of communication bandwidth, compactness of data size | D["FALCON (FN-DSA)"]
     C --> E["General-purpose TLS certificates, digital signatures for software"]
     D --> F["Protocols with strict packet size limits, special environments"]
 ```
@@ -305,7 +305,7 @@ graph TD
     A --> C{"Derive Master Secret (KDF)"}
     B --> C
     C -->|Input: (X25519 Shared Key) || (Kyber Shared Key)| D["Secure Communication Key (AES-256 / ChaCha20)"]
-    D -->|"Resistant to both quantum threats & classical vulnerabilities"| E["Secure Hybrid Encrypted Communication (TLS 1.3)"]
+    D -->| Resistant to both quantum threats & classical vulnerabilities | E["Secure Hybrid Encrypted Communication (TLS 1.3)"]
 ```
 
 This achieves a robust two-tiered security: "even if a quantum computer becomes a reality and ECC is broken, Kyber protects the communication," and conversely, "even if an unknown mathematical flaw is found in Kyber, ECC protects the communication." A representative example is the **X25519MLKEM768 (formerly X25519Kyber768)** draft being standardized by the IETF, and communications between current web browsers and cutting-edge servers are already being carried out precisely using this hybrid method.
@@ -328,4 +328,5 @@ The battle between quantum computers and cryptography is an exciting area where 
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 

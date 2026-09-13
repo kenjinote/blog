@@ -182,13 +182,13 @@ $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 ```mermaid
 graph TD
     subgraph "경계 방어 모델 (전통적인 VPN)"
-        U1["원격 엔지니어"] -- "IPsec / SSL VPN" --> VPN["VPN Gateway (단일 장애점·병목)"]
-        VPN -- "내부 LAN (암묵적 신뢰)" --> App1["사내 소스 코드 관리"]
+        U1["원격 엔지니어"] -- IPsec / SSL VPN --> VPN["VPN Gateway (단일 장애점·병목)"]
+        VPN -- 내부 LAN (암묵적 신뢰) --> App1["사내 소스 코드 관리"]
     end
     
     subgraph "제로 트러스트 모델 (BeyondCorp / ZTNA)"
-        U2["원격 엔지니어 (MDM 관리 디바이스)"] -- "직접 통신 (mTLS HTTPS)" --> IAP["Identity-Aware Proxy (IAP)"]
-        IAP -- "요청별 동적 인가" --> App2["내부 / SaaS 애플리케이션"]
+        U2["원격 엔지니어 (MDM 관리 디바이스)"] -- 직접 통신 (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
+        IAP -- 요청별 동적 인가 --> App2["내부 / SaaS 애플리케이션"]
         IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / 사용자 컨텍스트" .-> Policy
         MDM["디바이스 관리 (Intune / Jamf)"] -. "디바이스 건전성 (패치 상태)" .-> Policy
         Policy["액세스 정책 엔진"] -. "위험 기반 인가 판정" .-> IAP
@@ -235,5 +235,6 @@ $$ T_{productivity} = f(C_{sync\_collab}, E_{deep\_work}, ZTNA_{performance}) $$
 한편, 엔지니어(특히 시니어 계층)도 "나는 혼자서 코드를 작성하는 편이 생산성이 높으니 사무실은 필요 없다"는 독선적인 시각을 고쳐야 합니다. 엔지니어링은 팀 스포츠이며, 코드의 생산성뿐만 아니라 조직 전체의 시스템 설계, 주니어 멤버 육성, 긴급 상황 시의 협력 등 폭넓은 책임을 짊어지고 있습니다. 때로는 물리적 공간에서의 고대역폭 커뮤니케이션이 프로젝트 전체를 구하는 것도 사실입니다.
 
 최적의 해답은 기업, 팀, 프로덕트의 단계에 따라 다릅니다. 그러나 확실한 것은, 사회학적인 커뮤니케이션의 성질을 이해하고, SPACE 프레임워크와 같은 다각적인 지표로 현상을 측정하며, 제로 트러스트 아키텍처와 같은 기술로 제약을 계속해서 돌파하는 조직만이 이 새로운 업무 방식의 시대에서 진정한 경쟁력을 확보할 수 있다는 것입니다.
+
 
 

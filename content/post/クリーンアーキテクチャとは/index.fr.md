@@ -109,9 +109,9 @@ De même, les formats de données utilisés dans un cercle extérieur ne doivent
 
 ```mermaid
 graph LR
-    A["Frameworks et Pilotes"] -->|"Dépend de"| B["Adaptateurs d'interface"]
-    B -->|"Dépend de"| C["Cas d'utilisation"]
-    C -->|"Dépend de"| D["Entités"]
+    A["Frameworks et Pilotes"] -->| Dépend de | B["Adaptateurs d'interface"]
+    B -->| Dépend de | C["Cas d'utilisation"]
+    C -->| Dépend de | D["Entités"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -423,3 +423,4 @@ L'important n'est pas de reproduire aveuglément la structure de répertoires de
 
 ---
 *Reference: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin*
+

@@ -57,12 +57,12 @@ flowchart TD
     B --> C["Sicherstellen, dass alle Tests bestehen"]
     C --> D["Kleine Refactorings durchführen"]
     D --> E["Tests erneut ausführen"]
-    E -- "Fehlgeschlagen (Red)" --> F["Änderungen rückgängig machen (Revert)"]
+    E -- Fehlgeschlagen (Red) --> F["Änderungen rückgängig machen (Revert)"]
     F --> D
-    E -- "Erfolgreich (Green)" --> G["Code committen"]
+    E -- Erfolgreich (Green) --> G["Code committen"]
     G --> H{"Gibt es nächste Verbesserungsbereiche?"}
-    H -- "Yes" --> D
-    H -- "No" --> I["Refactoring abgeschlossen"]
+    H -- Yes --> D
+    H -- No --> I["Refactoring abgeschlossen"]
 ```
 
 Durch das Durchlaufen dieses Zyklus können Entwickler den Code immer in einem Sicherheitsnetz ändern. Wenn ein Test fehlschlägt, ist es wichtig, ihn sofort rückgängig zu machen (`Revert`), ohne die Ursache zu tief zu untersuchen.
@@ -334,3 +334,4 @@ Bitte behalten Sie die in diesem Artikel erläuterten folgenden Schritte im Hint
 5. **Nutzen Sie die Funktionen von Modern C++ und lassen Sie den Compiler die Arbeit erledigen**
 
 Die wahre Kunst des Refactorings besteht darin, den Geist der "Pfadfinderregel" (Hinterlasse den Campingplatz sauberer, als du ihn vorgefunden hast) beizubehalten und den Code durch tägliche Entwicklungsaufgaben allmählich, aber stetig weiter zu verbessern.
+

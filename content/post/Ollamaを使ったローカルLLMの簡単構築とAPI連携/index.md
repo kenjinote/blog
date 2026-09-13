@@ -40,7 +40,7 @@ Ollamaはllama.cppを内包しており、Go言語で書かれたサーバープ
 
 ```mermaid
 graph TD
-    A["Client Apps (Python / Node.js)"] -- "HTTP/REST API" --> B["Ollama Server (Go)"]
+    A["Client Apps (Python / Node.js)"] -- HTTP/REST API --> B["Ollama Server (Go)"]
     B --> C["Model Manager (GGUF handling)"]
     B --> D["Inference Engine (llama.cpp)"]
     D --> E["GPU Acceleration (CUDA / Metal / ROCm)"]
@@ -154,9 +154,9 @@ Ollamaでは「**Modelfile**」という仕組みを使って、既存のモデ�
 
 ```mermaid
 graph LR
-    A["Base Model (llama3.1)"] -->|"Add System Prompt"| B["Intermediate Config"]
-    B -->|"Set Temperature & Top_p"| C["Custom Model (kansai-coder)"]
-    C -->|"Run"| D["Interactive CLI / API"]
+    A["Base Model (llama3.1)"] -->| Add System Prompt | B["Intermediate Config"]
+    B -->| Set Temperature & Top_p | C["Custom Model (kansai-coder)"]
+    C -->| Run | D["Interactive CLI / API"]
 ```
 
 例として、関西弁で回答するプログラミングアシスタントモデルを作成してみましょう。
@@ -496,4 +496,5 @@ PythonやシェルスクリプトにOllamaのAPIリクエストを組み込む�
 Ollamaの登場により、ローカルLLMの導入ハードルは劇的に下がりました。Dockerコンテナを操作するようなシンプルなコマンド体系と、外部アプリケーションから容易に利用できるREST APIの組み合わせは、ローカルAI開発における現在のデファクトスタンダードと言っても過言ではありません。
 
 クラウドLLMのコストやセキュリティの制約に悩まされている開発者の方は、ぜひ本記事で紹介した手順を参考に、Ollamaを用いたローカルLLM環境を構築し、自身のアプリケーションに統合してみてください。AIの持つ可能性を、より自由に、より身近に感じることができるはずです。
+
 

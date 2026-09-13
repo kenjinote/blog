@@ -148,7 +148,7 @@ graph LR
     B --> C["Teks Sandi (Ciphertext)"]
     C --> D["Dekripsi dengan Kunci Privat (d)"]
     D --> E["Teks Terang Asli"]
-    F["Penyerang (Attacker)"] -- "Mencoba faktorisasi prima dari N" --> C
+    F["Penyerang (Attacker)"] -- Mencoba faktorisasi prima dari N --> C
     F -.-> G["Tanpa mengetahui p dan q, d tidak dapat dihitung"]
 ```
 
@@ -214,3 +214,4 @@ Pencarian tiada henti akan bilangan prima yang telah berlangsung sejak zaman Yun
 Hipotesis Riemann adalah sebuah eksistensi yang secara bersamaan menyimbolkan "keindahan yang abstrak" yang dimiliki matematika dan "daya aplikatifnya yang menakjubkan terhadap dunia fisik serta masyarakat nyata".
 
 Kelak suatu hari, ketika puncak gunung raksasa matematika yang belum pernah ditaklukkan oleh siapa pun ini berhasil didaki, kita tidak hanya akan memahami secara utuh kebenaran semesta dari bilangan prima, tetapi juga akan mendapatkan sudut pandang yang sama sekali baru mengenai landasan dari masyarakat informasi ini. Pada akhirnya, mempelajari teknologi kriptografi juga berarti menelusuri sejarah kebijaksanaan umat manusia itu sendiri.
+

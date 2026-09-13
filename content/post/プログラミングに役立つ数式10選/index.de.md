@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["Wende Satz von Bayes an"]
   Bayes --> Class{"P(Spam) > 0.9?"}
-  Class -- "Ja" --> Spam["In Spam-Ordner verschieben"]
-  Class -- "Nein" --> Ham["In Posteingang zustellen"]
+  Class -- Ja --> Spam["In Spam-Ordner verschieben"]
+  Class -- Nein --> Ham["In Posteingang zustellen"]
 ```
 
 ### Implementierungsbeispiel (Python)
@@ -396,8 +396,8 @@ Anhand des Funktionswertes $f(x_n)$ und seiner Steigung (Ableitung) $f'(x_n)$ an
 flowchart LR
   Start["Start: Schätze initiales x0"] --> Eval["Evaluiere f(xn) und f'(xn)"]
   Eval --> Check{"Ist f(xn) ≈ 0?"}
-  Check -- "Ja" --> Done["Gib xn als Wurzel zurück"]
-  Check -- "Nein" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- Ja --> Done["Gib xn als Wurzel zurück"]
+  Check -- Nein --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ Wie war das? Von der Eulerschen Identität bis zum Satz des Pythagoras sind dies
 Das Verständnis des mathematischen Hintergrunds ist essenziell für den Aufstieg von einem Programmierer, der nur existierende Bibliotheken (wie `math.sin` oder `numpy.fft`) aufruft, zu einem Ingenieur, der deren interne Strukturen begreift und ihre Grenzen ausreizen kann. Wenn Sie das nächste Mal Code schreiben, versuchen Sie sich vorzustellen, welch schöne mathematische Formel im Hintergrund am Werk ist.
 
 **Happy Coding and Math!**
+

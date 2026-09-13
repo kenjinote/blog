@@ -158,13 +158,13 @@ flowchart TD
     Start["Mulai"] --> Input["Masukkan angka yang akan diuji p dan jumlah uji coba k"]
     Input --> LoopStart["Looping dari i = 0 hingga k-1"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "Ya" --> RandomA["Pilih bilangan acak a dalam rentang 1 < a < p-1"]
+    Condition -- Ya --> RandomA["Pilih bilangan acak a dalam rentang 1 < a < p-1"]
     RandomA --> Calc["Hitung eksponensiasi modular a^(p-1) mod p"]
     Calc --> CheckPrime{"Apakah hasilnya 1?"}
-    CheckPrime -- "Tidak" --> ReturnComposite["p adalah bilangan komposit (pasti)"]
-    CheckPrime -- "Ya" --> Increment["Tingkatkan nilai i"]
+    CheckPrime -- Tidak --> ReturnComposite["p adalah bilangan komposit (pasti)"]
+    CheckPrime -- Ya --> Increment["Tingkatkan nilai i"]
     Increment --> Condition
-    Condition -- "Tidak" --> ReturnPrime["p kemungkinan besar bilangan prima (probabilistik)"]
+    Condition -- Tidak --> ReturnPrime["p kemungkinan besar bilangan prima (probabilistik)"]
     ReturnComposite --> End["Selesai"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ Namun, sekitar 300 tahun kemudian, pada era awal jaringan komputer di tahun 1970
 Pesan LINE yang kita kirimkan tanpa berpikir setiap harinya, atau belanja yang kita lakukan di Amazon, semuanya menari di atas persamaan matematika yang indah dan sederhana: $a^{p-1} \equiv 1 \pmod p$. Teorema Kecil Fermat mengajarkan kita bahwa betapa pun abstraknya sebuah konsep matematika, suatu saat nanti ia pasti akan berguna bagi umat manusia.
 
 Dalam mempelajari pemrograman dan teori kriptografi, memahami struktur matematika yang menjadi dasarnya akan menjadi senjata yang ampuh untuk memahami secara mendalam cara kerja perpustakaan (library) perangkat lunak yang disajikan sebagai kotak hitam, dan untuk merancang sistem yang lebih aman.
+

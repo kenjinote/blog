@@ -121,7 +121,7 @@ Bagan di bawah ini menggambarkan perbedaan siklus hidup antara teknologi yang te
 
 ```mermaid
 xychart-beta
-    title "Siklus Hidup Teknologi dan Transisi Evaluasinya"
+    title Siklus Hidup Teknologi dan Transisi Evaluasinya
     x-axis ["0 bulan", "6 bulan", "12 bulan", "18 bulan", "24 bulan", "30 bulan", "36 bulan"]
     y-axis "Jumlah Penyebutan/Tingkat Antusiasme di SNS" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
@@ -176,5 +176,6 @@ Algoritma rekomendasi SNS adalah alat yang ampuh yang memperluas wawasan teknis 
 Kita perlu mengembangkan literasi untuk tidak menerima informasi yang mengalir di linimasa kita sebagai "fakta" atau "tren absolut", melainkan memperlakukannya hanya sebagai sebuah "sinyal".
 
 Keluarlah dari ruang gema, baca kode sumber dengan tangan Anda sendiri, ikuti diskusi pada RFC, uraikan formula pada makalah, dan hadapi masalah yang sebenarnya pada domain bisnis perusahaan Anda. Itulah satu-satunya jalan untuk mempraktikkan rekayasa perangkat lunak sejati tanpa tertelan oleh gelombang algoritma.
+
 
 

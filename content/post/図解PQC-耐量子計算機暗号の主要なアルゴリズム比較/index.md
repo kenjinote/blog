@@ -219,8 +219,8 @@ FALCONの圧倒的なメリットは、その**署名サイズと公開鍵サイ
 ```mermaid
 graph LR
     A["デジタル署名の要件"] --> B{"最優先する制約は？"}
-    B -->|"実装のシンプルさ・汎用性・定数時間実装の容易さ"| C["Dilithium (ML-DSA)"]
-    B -->|"通信帯域の最小化・データサイズのコンパクトさ"| D["FALCON (FN-DSA)"]
+    B -->| 実装のシンプルさ・汎用性・定数時間実装の容易さ | C["Dilithium (ML-DSA)"]
+    B -->| 通信帯域の最小化・データサイズのコンパクトさ | D["FALCON (FN-DSA)"]
     C --> E["汎用的なTLS証明書、ソフトウェアの電子署名"]
     D --> F["パケットサイズ制限が厳しいプロトコル、特殊環境"]
 ```
@@ -305,7 +305,7 @@ graph TD
     A --> C{"マスターシークレットの導出 (KDF)"}
     B --> C
     C -->|入力: (X25519の共通鍵) || (Kyberの共通鍵)| D["セキュアな通信鍵 (AES-256 / ChaCha20)"]
-    D -->|"量子の脅威 ＆ 古典的な脆弱性 の両方に耐性"| E["安全なハイブリッド暗号通信 (TLS 1.3)"]
+    D -->| 量子の脅威 ＆ 古典的な脆弱性 の両方に耐性 | E["安全なハイブリッド暗号通信 (TLS 1.3)"]
 ```
 
 これにより、「万が一量子コンピュータが実現してECCが破られてもKyberが通信を守り」、逆に「万が一Kyberに未知の数学的欠陥が見つかってもECCが通信を守る」という、堅牢な二段構えの安全性を実現できます。代表的な例として、IETFで標準化が進められている **X25519MLKEM768 (旧 X25519Kyber768)** ドラフトがあり、現在のWebブラウザと最先端のサーバー間の通信は、まさにこのハイブリッド方式を用いて行われています。
@@ -328,4 +328,5 @@ NISTによるFIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) の標�
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 

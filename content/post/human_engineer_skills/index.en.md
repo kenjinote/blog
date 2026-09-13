@@ -179,7 +179,7 @@ Traditional "coding speed" and "syntax memory" have been eliminated from this fo
 This paradigm shift will also be clearly evident in how engineers use their time on a daily basis (time allocation).
 
 ```mermaid
-pie title "Engineer Time Allocation (Pre-AI)"
+pie title Engineer Time Allocation (Pre-AI)
   "Coding / Fixing Syntax Errors": 50
   "Requirements Definition / System Design": 20
   "Implementing and Running Tests": 20
@@ -187,7 +187,7 @@ pie title "Engineer Time Allocation (Pre-AI)"
 ```
 
 ```mermaid
-pie title "Engineer Time Allocation (AI Era)"
+pie title Engineer Time Allocation (AI Era)
   "Domain Modeling and Architecture Design": 40
   "Prompting AI and Code Validation": 20
   "Advanced Production Debugging and Ops": 30
@@ -206,5 +206,6 @@ Engineers of the future will not be swayed by the trivial specifications of a pa
 
 A true engineer is not someone who writes code, but someone who solves problems.
 Domain modeling, scalable architecture design, communication with stakeholders, and debugging complex systems. For those who continue to polish these "human-specific engineering skills," AI will not be an enemy that takes away jobs, but the ultimate partner that expands their own creativity and productivity tens of times over.
+
 
 

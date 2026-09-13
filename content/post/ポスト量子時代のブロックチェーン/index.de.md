@@ -275,7 +275,7 @@ Wenn Bitcoin PQC bei gleicher Blockgrößenbeschränkung (etwa 4 MB Gewicht eins
 Um dies zu beheben, wäre eine deutliche Erhöhung der Blockgröße erforderlich, was jedoch die Speicheranforderungen und Netzwerkbandbreitenanforderungen für Full Nodes erhöhen würde, was es für Einzelpersonen schwierig macht, Nodes zu betreiben, und letztendlich zum Dilemma einer **Zentralisierung des Netzwerks** führt.
 
 ```mermaid
-pie title "Vergleich der Signaturdatengrößen in der Blockchain (Konzeptdiagramm)"
+pie title Vergleich der Signaturdatengrößen in der Blockchain (Konzeptdiagramm)
     "ECDSA (ca. 70 Bytes)" : 2
     "Dilithium ML-DSA (ca. 2.500 Bytes)" : 58
     "SPHINCS+ (ca. 17.000 Bytes)" : 40
@@ -346,3 +346,4 @@ Wir können auf eine Zukunft hoffen, in der die neue Weisheit der Menschheit in 
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

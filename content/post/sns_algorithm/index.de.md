@@ -121,7 +121,7 @@ Das folgende Diagramm zeigt den Unterschied im Lebenszyklus zwischen stark gehyp
 
 ```mermaid
 xychart-beta
-    title "Lebenszyklus von Technologien und Entwicklung der Bewertung"
+    title Lebenszyklus von Technologien und Entwicklung der Bewertung
     x-axis ["0 Monate", "6 Monate", "12 Monate", "18 Monate", "24 Monate", "30 Monate", "36 Monate"]
     y-axis "Erwähnungen & Hype in sozialen Medien" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
@@ -176,5 +176,6 @@ Empfehlungsalgorithmen in sozialen Netzwerken sind leistungsstarke Werkzeuge, di
 Wir müssen uns die Kompetenz aneignen, die Informationen, die in unsere Timeline fließen, nicht als "Fakten" oder "absolute Trends" zu akzeptieren, sondern sie lediglich als ein "Signal" zu behandeln.
 
 Treten Sie aus der Echokammer heraus, lesen Sie den Quellcode selbst, verfolgen Sie RFC-Diskussionen, entschlüsseln Sie mathematische Formeln in wissenschaftlichen Arbeiten und befassen Sie sich mit den wahren Herausforderungen Ihrer eigenen Geschäftsdomäne. Nur so lässt sich echtes Software-Engineering praktizieren, ohne von der Welle der Algorithmen verschluckt zu werden.
+
 
 

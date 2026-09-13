@@ -37,7 +37,7 @@ Perusahaan besar bertarung dalam "Samudra Berdarah" (Red Ocean) memperebutkan pa
 
 ```mermaid
 xychart-beta
-  title "Distribusi Ukuran Pasar dan Target Dev Solo"
+    title Distribusi Ukuran Pasar dan Target Dev Solo
   x-axis ["Massa A", "Massa B", "Niche C", "Niche D", "Niche E", "Niche F", "Niche G"]
   y-axis "Nilai Pasar" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
@@ -302,5 +302,6 @@ npx create-next-app@latest my-micro-saas
 ```
 
 Pertarungan sudah dimulai.
+
 
 

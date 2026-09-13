@@ -220,7 +220,7 @@ Das folgende Diagramm zeigt den geschätzten VRAM-Bedarf (einschließlich KV-Cac
 
 ```mermaid
 xychart-beta
-    title "Anzahl der Parameter und benötigter VRAM (Annahme: 4-Bit Quantisierung)"
+    title Anzahl der Parameter und benötigter VRAM (Annahme: 4-Bit Quantisierung)
     x-axis "Modellname" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "Benötigter VRAM (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
@@ -281,4 +281,5 @@ In diesem Artikel haben wir 5 der besten Open-Source- und lokalen LLMs aus dem J
 
 Die Entwicklungsgeschwindigkeit von Open-Source-LLMs ist atemberaubend, und alle paar Monate werden Durchbrüche verkündet, die den bisherigen gesunden Menschenverstand auf den Kopf stellen. Durch weitere Verbesserungen der Quantisierungstechnologie und das Aufkommen neuer Architekturen rückt vielleicht bald der Tag näher, an dem allein die lokale Umgebung die Cloud-KI übertrifft.
 Laden Sie das optimale Modell für Ihre Hardwareumgebung herunter und erleben Sie die überwältigende Freiheit und die Möglichkeiten der lokalen KI.
+
 

@@ -301,8 +301,8 @@ graph TD
     A["Inisialisasi (Superposisi semua keadaan)"] --> B["Oracle (Membalikkan fase jawaban yang benar)"]
     B --> C["Operator difusi (Amplifikasi amplitudo dengan membalikkan di sekitar nilai rata-rata)"]
     C --> D{"Apakah probabilitas yang cukup telah tercapai?"}
-    D -- "Tidak" --> B
-    D -- "Ya" --> E["Pengukuran"]
+    D -- Tidak --> B
+    D -- Ya --> E["Pengukuran"]
 ```
 
 ---
@@ -321,3 +321,4 @@ Dengan segala cara, silakan gunakan Qiskit untuk membuat berbagai sirkuit kuantu
 - IBM Quantum Learning
 
 Selamat datang di dunia kuantum!
+

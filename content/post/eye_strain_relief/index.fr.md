@@ -22,7 +22,7 @@ Dans cet article, nous allons disséquer en profondeur les mécanismes de la fat
 Le syndrome de vision informatique (CVS) n'est pas causé par un seul facteur. Comme le montre le diagramme circulaire ci-dessous, divers éléments s'entremêlent de manière complexe pour provoquer fatigue oculaire, douleurs, sécheresse des yeux et fatigue générale.
 
 ```mermaid
-pie title "Causes du syndrome de vision informatique (CVS)"
+pie title Causes du syndrome de vision informatique (CVS)
     "Lumière bleue et éblouissement" : 30
     "Scintillement de l'écran (PWM)" : 25
     "Contraste et éclairage inappropriés" : 20
@@ -121,7 +121,7 @@ Le graphique suivant compare le spectre d'émission d'un écran LCD standard ave
 
 ```mermaid
 xychart-beta
-    title "Comparaison du spectre d'émission de la lumière bleue"
+    title Comparaison du spectre d'émission de la lumière bleue
     x-axis "Longueur d'onde (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "Intensité relative" 0 --> 100
     bar "LCD Standard (W-LED)" [10, 30, 95, 80, 40, 20]
@@ -280,5 +280,7 @@ Notre carrière d'ingénieur logiciel dure plusieurs décennies. Ce qui soutient
 5. **Utiliser un bras de moniteur pour créer l'angle de vue optimal basé sur $\tan \theta = h/d$, et systématiser la « règle des 20-20-20 »**
 
 Bien que ces mesures puissent impliquer des dépenses et des efforts temporaires, on peut dire qu'elles constituent l'« investissement technologique » le plus rentable pour prolonger la durée de vie saine de vos yeux et maximiser votre productivité ainsi que votre qualité de vie (QOL) tout au long de votre vie. Révisez dès maintenant votre environnement de développement et implémentez un peu de soin pour vos yeux.
+
+
 
 

@@ -75,7 +75,7 @@ $$
 In vielen Fällen ist offensichtlich, dass innerhalb weniger Jahre (Break-even-Punkt) $C_{legacy}(t) > C_{modern}(t)$ eintreten wird. Da jedoch nicht genug "Architekten" und "Data Engineers" auf dem Markt sind, um die Anfangsinvestition $I$ umzusetzen, versinken viele Unternehmen 2026 zunehmend im Sumpf von $C_{legacy}$.
 
 ```mermaid
-pie title "Aufschlüsselung der am meisten fehlenden IT-Fähigkeiten (Stand 2026)"
+pie title Aufschlüsselung der am meisten fehlenden IT-Fähigkeiten (Stand 2026)
     "AI/ML Ops Spezialist" : 35
     "Cloud-Architekt" : 25
     "Data Engineer" : 20
@@ -116,7 +116,7 @@ Das Resultat: Unternehmen haben erkannt, dass es weitaus risikoärmer und leistu
 
 ```mermaid
 xychart-beta
-    title "Polarisierung der Nachfrage nach Junior- und Senior-Positionen (2021-2026)"
+    title Polarisierung der Nachfrage nach Junior- und Senior-Positionen (2021-2026)
     x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
     y-axis "Verhältnis von Stellenangeboten zu Bewerbern" 0.0 --> 10.0
     line ["Senior (Architekt/MLOps etc.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
@@ -182,5 +182,7 @@ KI nimmt uns nicht unsere Jobs weg, sie ist lediglich ein Werkzeug, das es uns e
 
 Jetzt ist es an der Zeit, Ihren Karriereweg zu überdenken und den Kurs in Richtung des nächsten Paradigmas zu ändern.
 Sind Sie bereit, sich selbst zu "modernisieren"?
+
+
 
 

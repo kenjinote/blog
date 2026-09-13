@@ -158,13 +158,13 @@ flowchart TD
     Start["시작"] --> Input["판별 대상의 수 p 와, 테스트 횟수 k 를 입력"]
     Input --> LoopStart["i = 0 부터 k-1 까지 루프"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "예" --> RandomA["1 < a < p-1 의 범위에서 무작위 정수 a 를 선택"]
+    Condition -- 예 --> RandomA["1 < a < p-1 의 범위에서 무작위 정수 a 를 선택"]
     RandomA --> Calc["모듈러 거듭제곱 a^(p-1) mod p 를 계산"]
     Calc --> CheckPrime{"결과는 1 인가?"}
-    CheckPrime -- "아니요" --> ReturnComposite["p 는 합성수이다 (확정)"]
-    CheckPrime -- "예" --> Increment["i 를 증가시킴"]
+    CheckPrime -- 아니요 --> ReturnComposite["p 는 합성수이다 (확정)"]
+    CheckPrime -- 예 --> Increment["i 를 증가시킴"]
     Increment --> Condition
-    Condition -- "아니요" --> ReturnPrime["p 는 아마도 소수일 것이다 (확률적)"]
+    Condition -- 아니요 --> ReturnPrime["p 는 아마도 소수일 것이다 (확률적)"]
     ReturnComposite --> End["종료"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ if __name__ == '__main__':
 우리가 매일 무심코 보내는 메신저의 메시지도, 쇼핑몰에서의 물건 구매도, 모든 것은 이 $a^{p-1} \equiv 1 \pmod p$ 라는 심플하고 아름다운 수식 위에서 춤추고 있는 것입니다. 수학이 아무리 추상적이라 할지라도 언젠가는 반드시 인류에게 도움이 될 때가 온다는 것을 페르마의 소정리는 가르쳐 주고 있습니다.
 
 프로그래밍이나 암호 이론을 배울 때 그 기초에 있는 수학적 구조를 이해하는 것은 블랙박스로 제공되는 라이브러리의 동작을 깊이 이해하고, 더 안전한 시스템을 설계하기 위한 큰 무기가 될 것입니다.
+

@@ -251,7 +251,7 @@ Based on the preprocessed data, we will analyze the relationship between health 
 
 ```mermaid
 xychart-beta
-    title "HRV vs Daily Coding Hours (Normalized)"
+    title HRV vs Daily Coding Hours (Normalized)
     x-axis ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
     y-axis "HRV & Coding Output" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
@@ -368,5 +368,6 @@ Let's engineer a health condition that can perform at its best using data scienc
 
 ---
 *Disclaimer: This article summarizes the author's personal experiments and data science approaches, and does not provide medical advice. If you have continuous poor health or sleep disorders, please consult a specialized medical institution.*
+
 
 

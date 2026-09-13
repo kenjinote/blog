@@ -58,10 +58,10 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 
 ```mermaid
 graph TD
-    Dev["المطور (بيئة التطوير المتكاملة)"] -->|"كتابة في الوقت الفعلي"| LocalProxy{"موجه ذكي / وكيل"}
+    Dev["المطور (بيئة التطوير المتكاملة)"] -->| كتابة في الوقت الفعلي | LocalProxy{"موجه ذكي / وكيل"}
     
-    LocalProxy -->|"سريع، يركز على الخصوصية أولاً"| LocalAI["محرك الذكاء الاصطناعي المحلي (Ollama / LM Studio)"]
-    LocalProxy -->|"منطق معقد، سياق كبير"| CloudAI["محرك الذكاء الاصطناعي السحابي (Copilot / OpenAI API)"]
+    LocalProxy -->| سريع، يركز على الخصوصية أولاً | LocalAI["محرك الذكاء الاصطناعي المحلي (Ollama / LM Studio)"]
+    LocalProxy -->| منطق معقد، سياق كبير | CloudAI["محرك الذكاء الاصطناعي السحابي (Copilot / OpenAI API)"]
     
     subgraph "البيئة المحلية"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ ollama run codellama
 يُرجى الاستفادة من شجرة اتخاذ القرار والبنية المعروضة في هذه المقالة لرفع مستوى بيئة التطوير (IDE) الخاصة بك إلى المستوى التالي. من خلال الانتقال من مجرد "مستخدم" للذكاء الاصطناعي إلى دور يجعلك "تدمجها وتستخدمها في المكان المناسب"، سترتفع كفاءة تطويرك بلا شك إلى أقصى حد.
 
 Happy Coding with Hybrid AI!
+

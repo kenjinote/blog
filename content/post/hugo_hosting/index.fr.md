@@ -216,7 +216,7 @@ L'intégration de Google Analytics (plus particulièrement `gtag.js` ou Google T
 Prenons le temps de décomposer le temps de chargement d'un site de la façon suivante :
 
 ```mermaid
-pie title "Répartition typique des temps de chargement d'un site"
+pie title Répartition typique des temps de chargement d'un site
     "TTFB (Time to First Byte)" : 15
     "Téléchargement du contenu (HTML/CSS)" : 20
     "Analyse du DOM et Rendu" : 45
@@ -255,5 +255,6 @@ Dans le cadre de l'exploitation d'un site statique utilisant Hugo, l'adoption de
 5. **Analytique légère** : Intégrer des outils comme Cloudflare Web Analytics pour ne pas dégrader les performances tout en respectant la vie privée.
 
 En combinant ces éléments, vous pouvez créer gratuitement un système de blog évolutif et robuste, capable de supporter des trafics massifs atteignant des millions de pages vues (PV) par mois. Si vous envisagez de lancer un blog technique, un site d'entreprise ou un site portfolio, je vous invite vivement à essayer cette configuration Jamstack + Hugo + Cloudflare Pages.
+
 
 

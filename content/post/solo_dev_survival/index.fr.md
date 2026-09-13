@@ -37,7 +37,7 @@ Les grandes entreprises se livrent à une lutte sanglante dans des océans rouge
 
 ```mermaid
 xychart-beta
-  title "Distribution de la taille du marché et cible des développeurs solos"
+    title Distribution de la taille du marché et cible des développeurs solos
   x-axis ["Masse A", "Masse B", "Niche C", "Niche D", "Niche E", "Niche F", "Niche G"]
   y-axis "Valeur du marché" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
@@ -302,5 +302,6 @@ npx create-next-app@latest my-micro-saas
 ```
 
 La bataille a déjà commencé.
+
 
 

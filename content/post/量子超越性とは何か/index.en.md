@@ -105,7 +105,7 @@ IBM itself avoided the word "Supremacy" and advocated "Quantum Volume" and "CLOP
 
 ```mermaid
 timeline
-    title "The Evolution of Quantum Milestones"
+    title The Evolution of Quantum Milestones
     2019 : "Google Sycamore (53Q)" : "Quantum Supremacy announcement"
     2019 : "IBM Rebuttal" : "Summit supercomputer simulation in 2.5 days"
     2021 : "IBM Eagle (127Q)" : "Breaking the 100-qubit barrier"
@@ -179,3 +179,4 @@ Implementing protocols to fault-tolerantly execute non-Clifford gates, such as M
 Currently, we are witnessing a transitional phase from noisy NISQ devices to logical qubit devices equipped with error correction. In the next five to ten years, new discoveries in materials science, revolutions in the drug discovery process, and breakthroughs in optimization problems will likely become a reality alongside the evolution of this quantum hardware.
 
 We must keep a close eye on the movements of Google, IBM, and researchers worldwide who are shaping the future of computer science.
+

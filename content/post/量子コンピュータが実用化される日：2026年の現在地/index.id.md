@@ -148,7 +148,7 @@ Untuk benar-benar mewujudkan **Keunggulan Kuantum (Quantum Advantage)**, di mana
 
 ```mermaid
 gantt
-    title "Peta Jalan Komputasi Kuantum (Revisi 2026)"
+    title Peta Jalan Komputasi Kuantum (Revisi 2026)
     dateFormat  YYYY
     axisFormat  %Y
     
@@ -173,4 +173,5 @@ Tahun 2026 akan tercatat dalam sejarah komputer kuantum sebagai "Tahun Pertama P
 
 ---
 *Artikel ini ditulis berdasarkan makalah penelitian komputasi kuantum terbaru dan tren industri per tahun 2026.*
+
 

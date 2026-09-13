@@ -189,7 +189,7 @@ Nous illustrons le cycle de vie idéal pour la gestion du contenu avec un diagra
 
 ```mermaid
 gantt
-    title "Gestion du cycle de vie du contenu axée sur les données"
+    title Gestion du cycle de vie du contenu axée sur les données
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%d
     
@@ -278,5 +278,6 @@ Pour augmenter drastiquement le trafic mensuel d'un blog technique, au-delà de 
 5. Automatisation complète de la distribution via le CI/CD et l'intégration de Zapier
 
 Si vous parvenez à assembler ces éléments en un système, votre blog technique deviendra l'actif (asset) le plus puissant pour propulser votre propre carrière. Ingénieurs souffrant d'une stagnation de trafic, n'hésitez pas à commencer le « Growth Hacking de votre blog » dès aujourd'hui. Vos compétences en programmation et votre capacité de conception d'architecture, cultivées lors de vos activités de développement, seront assurément vos meilleures armes dans la gestion de votre blog.
+
 
 

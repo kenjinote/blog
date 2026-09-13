@@ -125,19 +125,19 @@ graph TD
     Start["테스트 시작 (입력: N, a)"] --> CalcDS["N-1 = d * 2^s 를 만족하는 d (홀수) 와 s 를 계산"]
     CalcDS --> CalcX["x = a^d mod N 을 계산"]
     CalcX --> CheckX1{"x == 1 또는 x == N-1 ?"}
-    CheckX1 -- "Yes" --> ReturnTrue["소수일 가능성이 있음 (Probably Prime)"]
-    CheckX1 -- "No" --> LoopStart["r = 1 부터 s-1 까지 루프 시작"]
+    CheckX1 -- Yes --> ReturnTrue["소수일 가능성이 있음 (Probably Prime)"]
+    CheckX1 -- No --> LoopStart["r = 1 부터 s-1 까지 루프 시작"]
     
     LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- "No" --> ReturnFalse["확실히 합성수 (Composite)"]
-    LoopCondition -- "Yes" --> SquareX["x = (x * x) mod N 을 계산"]
+    LoopCondition -- No --> ReturnFalse["확실히 합성수 (Composite)"]
+    LoopCondition -- Yes --> SquareX["x = (x * x) mod N 을 계산"]
     
     SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- "Yes" --> ReturnTrue
-    CheckXMinus1 -- "No" --> CheckXOne{"x == 1 ?"}
+    CheckXMinus1 -- Yes --> ReturnTrue
+    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
     
-    CheckXOne -- "Yes" --> ReturnFalse
-    CheckXOne -- "No" --> LoopNext["r 을 1 증가시키고 다음으로"]
+    CheckXOne -- Yes --> ReturnFalse
+    CheckXOne -- No --> LoopNext["r 을 1 증가시키고 다음으로"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ graph LR
 *Reference:*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

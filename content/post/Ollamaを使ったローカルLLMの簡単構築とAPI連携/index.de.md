@@ -40,7 +40,7 @@ Das folgende Mermaid-Diagramm zeigt die Gesamtarchitektur von Ollama:
 
 ```mermaid
 graph TD
-    A["Client-Apps (Python / Node.js)"] -- "HTTP/REST API" --> B["Ollama-Server (Go)"]
+    A["Client-Apps (Python / Node.js)"] -- HTTP/REST API --> B["Ollama-Server (Go)"]
     B --> C["Modell-Manager (GGUF-Verarbeitung)"]
     B --> D["Inferenz-Engine (llama.cpp)"]
     D --> E["GPU-Beschleunigung (CUDA / Metal / ROCm)"]
@@ -154,9 +154,9 @@ Das folgende Diagramm zeigt, wie ein benutzerdefiniertes Modell von einem Basism
 
 ```mermaid
 graph LR
-    A["Basis-Modell (llama3.1)"] -->|"System-Prompt hinzufügen"| B["Zwischenkonfiguration"]
-    B -->|"Temperature & Top_p festlegen"| C["Benutzerdefiniertes Modell (kansai-coder)"]
-    C -->|"Ausführen (Run)"| D["Interaktive CLI / API"]
+    A["Basis-Modell (llama3.1)"] -->| System-Prompt hinzufügen | B["Zwischenkonfiguration"]
+    B -->| Temperature & Top_p festlegen | C["Benutzerdefiniertes Modell (kansai-coder)"]
+    C -->| Ausführen (Run) | D["Interaktive CLI / API"]
 ```
 
 Lassen Sie uns als Beispiel ein Modell für einen Programmierassistenten erstellen, der im Kansai-Dialekt (japanischer Dialekt) antwortet.
@@ -496,4 +496,5 @@ Durch die Einbindung von Ollama-API-Anfragen in Python- oder Shell-Skripte läss
 Mit dem Erscheinen von Ollama ist die Einstiegshürde für lokale LLMs dramatisch gesunken. Die Kombination aus einem einfachen Befehlssystem, das an die Bedienung von Docker-Containern erinnert, und einer REST-API, die sich leicht aus externen Anwendungen heraus nutzen lässt, ist heute de facto der Standard für die Entwicklung lokaler KI-Lösungen.
 
 Entwickler, die mit den Kosten und Sicherheitsbeschränkungen von Cloud-LLMs kämpfen, sollten unbedingt die in diesem Artikel vorgestellten Schritte nutzen, um eine lokale LLM-Umgebung mit Ollama aufzubauen und in ihre Anwendungen zu integrieren. Auf diese Weise können Sie die Potenziale der KI noch freier und greifbarer erleben.
+
 

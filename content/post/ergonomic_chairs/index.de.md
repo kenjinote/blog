@@ -109,14 +109,14 @@ Der optimale Stuhl hängt von Körpergröße, Arbeitsstil und Budget ab. Nutzen 
 ```mermaid
 flowchart TD
     Start["Welche Art von Schreibtischarbeit überwiegt?"] --> Q1["Viel vorgebeugte Haltung (Tippen / Schreiben)?"]
-    Q1 -- "Ja" --> Q2["Budget über 150.000 Yen möglich?"]
-    Q1 -- "Nein" --> Q3["Fokus auf zurückgelehnter / entspannter Haltung (Nachdenken / Videos)?"]
-    Q2 -- "Ja" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "Nein" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "Ja" --> Embody["Herman Miller Embody"]
-    Q3 -- "Nein" --> Q4["Nutzung mehrerer Geräte / Fokus auf Armlehnen?"]
-    Q4 -- "Ja" --> Gesture["Steelcase Gesture"]
-    Q4 -- "Nein" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- Ja --> Q2["Budget über 150.000 Yen möglich?"]
+    Q1 -- Nein --> Q3["Fokus auf zurückgelehnter / entspannter Haltung (Nachdenken / Videos)?"]
+    Q2 -- Ja --> Aeron["Herman Miller Aeron"]
+    Q2 -- Nein --> Sylphy["Okamura Sylphy"]
+    Q3 -- Ja --> Embody["Herman Miller Embody"]
+    Q3 -- Nein --> Q4["Nutzung mehrerer Geräte / Fokus auf Armlehnen?"]
+    Q4 -- Ja --> Gesture["Steelcase Gesture"]
+    Q4 -- Nein --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ Egal wie hervorragend ein ergonomischer Stuhl ist, es nützt nichts, wenn die H�
 Das folgende Kreisdiagramm zeigt den Anteil der bei Remote-Arbeitern häufig auftretenden Fehlhaltungen. Es ist wichtig, die Umgebung so zu gestalten, dass diese Haltungen vermieden werden.
 
 ```mermaid
-pie title "Top 5 der schlechten Körperhaltungen bei Remote-Arbeitern"
+pie title Top 5 der schlechten Körperhaltungen bei Remote-Arbeitern
     "Rundrücken / Vorgeschobener Kopf (Geierhals)" : 40
     "Beckenkippung nach hinten (Slouching)" : 30
     "Beine übereinandergeschlagen (Asymmetrische Beckenschiefstellung)" : 15
@@ -148,5 +148,7 @@ pie title "Top 5 der schlechten Körperhaltungen bei Remote-Arbeitern"
 Ein ergonomischer Stuhl ist keinesfalls eine günstige Anschaffung. Modelle, die 100.000 bis über 200.000 Yen kosten, sind keine Seltenheit. Wenn man jedoch bedenkt, dass man 8 Stunden am Tag und etwa 2000 Stunden im Jahr darauf verbringt, kann man sagen, dass es das „Gerät mit dem höchsten Return on Investment (hoher ROI)“ ist, um Produktivitätsverluste durch Rückenschmerzen und das Risiko von Arztkosten im Vorfeld zu vermeiden.
 
 Überprüfen Sie Ihren Arbeitsstil aus biomechanischer Sicht und wählen Sie sorgfältig „den physikalisch richtigen Stuhl“ aus, der Ihr Skelett und Ihre Muskeln präzise unterstützt. Das ist das größte Geheimnis, um das Engineering lange und komfortabel fortsetzen zu können.
+
+
 
 

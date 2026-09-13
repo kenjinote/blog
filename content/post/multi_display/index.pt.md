@@ -82,7 +82,7 @@ Abaixo está um gráfico de Gantt que modela a economia de tempo ao adotar um mo
 
 ```mermaid
 gantt
-    title "Comparação do tempo de troca de contexto: Ultrawide vs Duplo"
+    title Comparação do tempo de troca de contexto: Ultrawide vs Duplo
     dateFormat  s
     axisFormat  %S
     
@@ -238,5 +238,6 @@ flowchart TD
 ```
 
 Os monitores são uma infraestrutura que, uma vez comprados, continuarão a apoiar sua produtividade por muitos anos. Integre os princípios da engenharia visual, a matemática de PPI, os limites da largura de banda e o gerenciamento de janelas por software discutidos neste artigo para construir o melhor espaço de trabalho sem compromissos. Isso deve, no final, tornar-se o caminho mais curto para produzir o melhor código.
+
 
 

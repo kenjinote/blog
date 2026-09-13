@@ -125,7 +125,7 @@ Der Nachteil von QMK war, dass "bei jeder Einstellungsänderung der Quellcode ko
 Das übliche "Row Staggered" (zeilenversetzte Layout) ist ein Überbleibsel, das verhindern sollte, dass sich die physischen Typenhebel von Schreibmaschinen verheddern, und basiert nicht auf der Anatomie der menschlichen Hand.
 
 ```mermaid
-pie title "Bevorzugte Tastaturlayouts von Ingenieuren (Geschätzte Daten)"
+pie title Bevorzugte Tastaturlayouts von Ingenieuren (Geschätzte Daten)
     "Row Staggered (Konventionell)" : 45
     "Alice-Layout (Ergonomisch)" : 15
     "Ortholinear (Gitterlayout)" : 10
@@ -201,5 +201,6 @@ Die Wahl einer Tastatur ist ein Prozess der "Optimierung der eigenen Schnittstel
 Die 5 hier vorgestellten Tastaturen (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) sind allesamt Meisterwerke, die auf unterschiedlichen Wegen auf das "beste Eingabeerlebnis" abzielen. Bitte finden Sie den besten Begleiter passend zu Ihrem eigenen Tippstil und Ihren körperlichen Beschwerden.
 
 Ihre Investition in eine Tastatur wird sich definitiv auszahlen, in Form von "Millionen Zeilen fehlerfreien Codes".
+
 
 

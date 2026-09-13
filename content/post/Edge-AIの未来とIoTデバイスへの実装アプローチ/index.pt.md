@@ -191,19 +191,19 @@ graph TD
     E2["Servidor de Hospital (Borda 2)"]
     E3["Carro Inteligente (Borda 3)"]
     
-    C -->|"1. Enviar Modelo Global"| E1
-    C -->|"1. Enviar Modelo Global"| E2
-    C -->|"1. Enviar Modelo Global"| E3
+    C -->| 1. Enviar Modelo Global | E1
+    C -->| 1. Enviar Modelo Global | E2
+    C -->| 1. Enviar Modelo Global | E3
     
-    E1 -->|"2. Treinamento Local em Dados Privados"| E1
-    E2 -->|"2. Treinamento Local em Dados Privados"| E2
-    E3 -->|"2. Treinamento Local em Dados Privados"| E3
+    E1 -->| 2. Treinamento Local em Dados Privados | E1
+    E2 -->| 2. Treinamento Local em Dados Privados | E2
+    E3 -->| 2. Treinamento Local em Dados Privados | E3
     
-    E1 -->|"3. Enviar Apenas as Atualizações de Pesos"| C
-    E2 -->|"3. Enviar Apenas as Atualizações de Pesos"| C
-    E3 -->|"3. Enviar Apenas as Atualizações de Pesos"| C
+    E1 -->| 3. Enviar Apenas as Atualizações de Pesos | C
+    E2 -->| 3. Enviar Apenas as Atualizações de Pesos | C
+    E3 -->| 3. Enviar Apenas as Atualizações de Pesos | C
     
-    C -->|"4. Agregar Pesos (FedAvg)"| C
+    C -->| 4. Agregar Pesos (FedAvg) | C
 ```
 
 **Processo do Federated Learning**:
@@ -264,4 +264,5 @@ Na linha de frente da IoT, onde o mundo físico se funde com o mundo digital, a 
 
 ---
 *Este artigo foi criado para engenheiros e arquitetos de sistemas interessados na implementação de IA em dispositivos IoT.*
+
 

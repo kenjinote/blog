@@ -57,12 +57,12 @@ flowchart TD
     B --> C["Pastikan semua pengujian lulus"]
     C --> D["Lakukan refactoring kecil"]
     D --> E["Jalankan ulang pengujian"]
-    E -- "Gagal (Red)" --> F["Kembalikan perubahan (Revert)"]
+    E -- Gagal (Red) --> F["Kembalikan perubahan (Revert)"]
     F --> D
-    E -- "Sukses (Green)" --> G["Commit kode"]
+    E -- Sukses (Green) --> G["Commit kode"]
     G --> H{"Apakah ada area perbaikan selanjutnya?"}
-    H -- "Yes" --> D
-    H -- "No" --> I["Refactoring selesai"]
+    H -- Yes --> D
+    H -- No --> I["Refactoring selesai"]
 ```
 
 Dengan menjalankan siklus ini, pengembang selalu dapat mengubah kode di atas jaring pengaman. Jika pengujian gagal, sangat penting untuk segera me-`Revert` (mengembalikan) tanpa menelusuri penyebabnya terlalu dalam.
@@ -334,3 +334,4 @@ Harap ingat langkah-langkah yang dijelaskan dalam artikel ini:
 5. **Manfaatkan fitur Modern C++ dan biarkan kompiler melakukan pekerjaan itu**
 
 Dengan semangat "Aturan Pramuka (Tinggalkan tempat perkemahan lebih bersih daripada saat Anda menemukannya)" dan terus meningkatkan kode sedikit demi sedikit namun pasti dalam tugas pengembangan sehari-hari adalah rahasia sesungguhnya dari refactoring.
+

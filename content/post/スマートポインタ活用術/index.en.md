@@ -76,11 +76,11 @@ The Mermaid diagram below illustrates the concept of transferring ownership usin
 ```mermaid
 graph LR
     subgraph "Before std::move"
-        A["unique_ptr (ptr1)"] -->|"Owns"| B["Heap Memory (Object)"]
+        A["unique_ptr (ptr1)"] -->| Owns | B["Heap Memory (Object)"]
     end
     subgraph "After std::move"
         C["unique_ptr (ptr1)"] -.->|"Empty (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->|"Owns"| F["Heap Memory (Object)"]
+        E["unique_ptr (ptr2)"] -->| Owns | F["Heap Memory (Object)"]
     end
 ```
 
@@ -130,13 +130,13 @@ Apart from the pointer to the managed object, `std::shared_ptr` allocates and sh
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->|"Pointer to T"| B["Managed Object (T)"]
-    A -->|"Pointer to Control Block"| C["Control Block"]
+    A["std::shared_ptr<T> (sp1)"] -->| Pointer to T | B["Managed Object (T)"]
+    A -->| Pointer to Control Block | C["Control Block"]
     
-    D["std::shared_ptr<T> (sp2)"] -->|"Pointer to T"| B
-    D -->|"Pointer to Control Block"| C
+    D["std::shared_ptr<T> (sp2)"] -->| Pointer to T | B
+    D -->| Pointer to Control Block | C
     
-    C -->|"Deletes"| B
+    C -->| Deletes | B
     C -.->|"Strong Count: 2"| E["Strong Count"]
     C -.->|"Weak Count: 0"| F["Weak Count"]
     C -.->|"Custom Deleter"| G["Deleter"]
@@ -176,8 +176,8 @@ Shared ownership has a fatal weakness called "Circular References". If Object A 
 ```mermaid
 graph TD
     subgraph "Circular Reference (Memory Leak)"
-        A["Object A"] -->|"shared_ptr (Strong=1)"| B["Object B"]
-        B -->|"shared_ptr (Strong=1)"| A
+        A["Object A"] -->| shared_ptr (Strong=1) | B["Object B"]
+        B -->| shared_ptr (Strong=1) | A
     end
 ```
 
@@ -188,7 +188,7 @@ graph TD
 ```mermaid
 graph TD
     subgraph "Breaking Circular Reference"
-        C["Object A"] -->|"shared_ptr (Strong=1)"| D["Object B"]
+        C["Object A"] -->| shared_ptr (Strong=1) | D["Object B"]
         D -.->|"weak_ptr (Weak=1)"| C
     end
 ```
@@ -268,3 +268,4 @@ Memory management in Modern C++ is no longer about managing `new`/`delete` manua
 3.  For implementing data structures or observer patterns where rings of sharing (circular references) may occur, utilize **`std::weak_ptr`** to proactively prevent memory leaks.
 
 By deeply understanding smart pointers and using them in the right places, it is possible to build safe and robust software architectures without sacrificing C++'s performance in any way.
+

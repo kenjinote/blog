@@ -160,7 +160,7 @@ Dalam kasus ini, jika Anda percaya bahwa Anda berhasil menarik keajaiban "1 band
 Masalah Monty Hall (3 pintu) hanyalah fenomena yang sama namun disajikan dalam skala yang lebih kecil daripada "1 juta pintu" ini.
 
 ```mermaid
-pie title "Efek Mengganti Pintu (100 Simulasi)"
+pie title Efek Mengganti Pintu (100 Simulasi)
     "Diganti dan Menang (sekitar 66.7%)" : 67
     "Tidak Diganti dan Menang (sekitar 33.3%)" : 33
 ```
@@ -173,3 +173,4 @@ Masalah Monty Hall melampaui sekadar kuis dan memberi kita pelajaran berharga.
 2. **Memperbarui probabilitas dengan informasi baru (Pembaruan Bayesian)**: Ketika situasi berubah dan informasi baru diberikan (seperti pintu mana yang dibuka pembawa acara), kunci kesuksesan adalah kemampuan untuk memperbarui probabilitas dan strategi secara fleksibel tanpa terpaku pada pemikiran yang sudah ada.
 
 Keputusan kecil untuk "mengganti pintu" mungkin saja melipatgandakan peluang Anda untuk mendapatkan "mobil baru" dalam hidup Anda.
+

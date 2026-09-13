@@ -38,7 +38,7 @@ Le graphique ci-dessous est une image montrant l'écart entre le CTR attendu et 
 
 ```mermaid
 xychart-beta
-    title "CTR attendu vs CTR réel par position"
+    title CTR attendu vs CTR réel par position
     x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     y-axis "CTR (%)" 0 --> 35
     line [30.5, 15.2, 10.1, 7.5, 5.2, 4.1, 3.2, 2.5, 2.0, 1.5]
@@ -276,5 +276,6 @@ Pour résumer les méthodes expliquées dans cet article :
 4. Découvrir les lacunes de contenu avec les concurrents par **l'analyse NLP utilisant le TF-IDF**, et optimiser les titres (H2/H3).
 
 Les tendances technologiques changent constamment. Afin de répondre avec précision aux erreurs et aux défis auxquels vos lecteurs sont actuellement confrontés, nous vous encourageons à intégrer une réécriture stratégique, avec les données de votre côté, dans vos opérations quotidiennes.
+
 
 

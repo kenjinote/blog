@@ -115,11 +115,11 @@ Dengan menggunakan antrean prioritas (`std::priority_queue`), kita dapat mengamb
 
 ```mermaid
 graph TD
-    S["Titik Awal S(0)"] -- "2" --> A["Simpul A(2)"]
-    S["Titik Awal S(0)"] -- "5" --> B["Simpul B(5)"]
-    A["Simpul A(2)"] -- "1" --> B["Simpul B(3)"]
-    A["Simpul A(2)"] -- "4" --> C["Simpul C(6)"]
-    B["Simpul B(3)"] -- "1" --> C["Simpul C(4)"]
+    S["Titik Awal S(0)"] -- 2 --> A["Simpul A(2)"]
+    S["Titik Awal S(0)"] -- 5 --> B["Simpul B(5)"]
+    A["Simpul A(2)"] -- 1 --> B["Simpul B(3)"]
+    A["Simpul A(2)"] -- 4 --> C["Simpul C(6)"]
+    B["Simpul B(3)"] -- 1 --> C["Simpul C(4)"]
 ```
 Seperti terlihat pada gambar di atas, biaya untuk langsung dari S ke B adalah 5, tetapi dapat dicapai dengan biaya 3 jika melalui A. Algoritma Dijkstra melakukan optimisasi seperti ini.
 
@@ -511,3 +511,4 @@ Kunci untuk mahir dalam masalah graf adalah **"mengimplementasikan berulang kali
 Kami sangat menyarankan untuk menyimpannya sebagai library berupa cuplikan kode (snippet tool atau repository GitHub pribadi) sehingga Anda dapat memanggilnya tanpa ragu pada saat kontes berlangsung.
 
 Algoritma graf dalam pemrograman kompetitif adalah bidang di mana Anda bisa paling merasakan keindahan dan kekuatan suatu algoritma. Silakan ketik ulang kode di artikel ini dan cobalah menaklukkan soal-soal di platform online judge!
+

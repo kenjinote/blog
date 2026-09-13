@@ -57,12 +57,12 @@ flowchart TD
     B --> C["Confirmar que todos os testes passam"]
     C --> D["Realizar pequenas refatorações"]
     D --> E["Executar os testes novamente"]
-    E -- "Falha (Red)" --> F["Reverter as alterações (Revert)"]
+    E -- Falha (Red) --> F["Reverter as alterações (Revert)"]
     F --> D
-    E -- "Sucesso (Green)" --> G["Fazer o commit do código"]
+    E -- Sucesso (Green) --> G["Fazer o commit do código"]
     G --> H{"Há mais pontos para melhorar?"}
-    H -- "Sim" --> D
-    H -- "Não" --> I["Refatoração concluída"]
+    H -- Sim --> D
+    H -- Não --> I["Refatoração concluída"]
 ```
 
 Ao executar este ciclo, os desenvolvedores podem sempre modificar o código com uma rede de segurança. Se os testes falharem, é importante usar o `Revert` (reverter) imediatamente sem tentar encontrar a causa raiz.
@@ -334,3 +334,4 @@ Lembre-se dos seguintes passos discutidos neste artigo:
 5. **Fazer uso das funcionalidades do C++ Moderno e deixar o compilador trabalhar para você**
 
 A verdadeira essência da refatoração é manter o espírito da "Regra do Escoteiro (deixe o acampamento mais limpo do que o encontrou)" e continuar melhorando o código, pouco a pouco, mas de maneira constante, durante suas tarefas de desenvolvimento diárias.
+

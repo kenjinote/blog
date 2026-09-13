@@ -57,11 +57,11 @@ graph TD
 graph TD
     A["Вход: Составное число N для факторизации"] --> B["Выбор случайного числа a, где a < N"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Да" --> D["Вывод тривиального делителя gcd(a, N) и завершение"]
-    C -- "Нет" --> E["Нахождение периода r функции f(x) = a^x mod N квантовым алгоритмом"]
+    C -- Да --> D["Вывод тривиального делителя gcd(a, N) и завершение"]
+    C -- Нет --> E["Нахождение периода r функции f(x) = a^x mod N квантовым алгоритмом"]
     E --> F{"r четное и a^(r/2) ≢ -1 mod N ?"}
-    F -- "Нет" --> B
-    F -- "Да" --> G["Вычисление делителей p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- Нет --> B
+    F -- Да --> G["Вычисление делителей p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["Выход: p, q"]
 ```
 
@@ -358,4 +358,5 @@ PQC основывается на новых математических про
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

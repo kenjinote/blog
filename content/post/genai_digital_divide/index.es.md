@@ -67,7 +67,7 @@ El siguiente gráfico ilustra visualmente esta divergencia:
 
 ```mermaid
 xychart-beta
-    title "Divergencia de productividad a lo largo del tiempo (El efecto Mateo)"
+    title Divergencia de productividad a lo largo del tiempo (El efecto Mateo)
     x-axis ["Año 1", "Año 2", "Año 3", "Año 4", "Año 5", "Año 6"]
     y-axis "Volumen de producción" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
@@ -122,11 +122,11 @@ flowchart TD
     B --> C["Generación por el modelo de IA (Generation)"]
     C --> D{"Verificación cognitiva (Cognitive Verification)"}
     
-    D -- "Dudas / Fallos lógicos" --> E["Fact-checking con RAG o herramientas externas"]
+    D -- Dudas / Fallos lógicos --> E["Fact-checking con RAG o herramientas externas"]
     E --> F["Ajuste y refinamiento del prompt"]
     F --> B
     
-    D -- "Hechos / Lógica válidos" --> G["Ajuste final mediante conocimiento del dominio humano"]
+    D -- Hechos / Lógica válidos --> G["Ajuste final mediante conocimiento del dominio humano"]
     G --> H["Salida del producto final"]
 ```
 
@@ -165,5 +165,7 @@ Quedarnos de este lado de la nueva brecha digital o pasar al otro lado. Esa elec
 
 ---
 *Para dejar sus opiniones sobre este artículo o para comentar casos de uso específicos de orquestación de IA, por favor hágalo en la sección de comentarios o a través de las redes sociales del autor.*
+
+
 
 

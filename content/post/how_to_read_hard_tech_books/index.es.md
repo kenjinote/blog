@@ -69,11 +69,11 @@ El software que optimiza esta propiedad son los Sistemas de Repetición Espaciad
 graph LR
     A["Inmediatamente después del aprendizaje (R=100%)"] --> B["1 día después (Olvido)"]
     B --> C{"Repaso con Anki"}
-    C -- "Correcto" --> D["El intervalo de repaso se extiende a 3 días (S aumenta)"]
-    C -- "Incorrecto" --> E["Intervalo de repaso reiniciado"]
+    C -- Correcto --> D["El intervalo de repaso se extiende a 3 días (S aumenta)"]
+    C -- Incorrecto --> E["Intervalo de repaso reiniciado"]
     D --> F["3 días después (Olvido lento)"]
     F --> G{"Repaso con Anki"}
-    G -- "Correcto" --> H["El intervalo de repaso se extiende a 7 días"]
+    G -- Correcto --> H["El intervalo de repaso se extiende a 7 días"]
 ```
 
 ### 3.1 Cómo crear tarjetas de Anki para matemáticas y algoritmos
@@ -249,15 +249,15 @@ flowchart TD
     
     MathProof --> Feynman["Técnica de Feynman"]
     Feynman --> FindGap{"¿Hay lagunas en la comprensión?"}
-    FindGap -- "Sí" --> Reread["Volver a leer el libro de texto"]
+    FindGap -- Sí --> Reread["Volver a leer el libro de texto"]
     Reread --> SQ3R
-    FindGap -- "No" --> Coding["Traducir fórmulas matemáticas a código (Python/C++)"]
+    FindGap -- No --> Coding["Traducir fórmulas matemáticas a código (Python/C++)"]
     
     Coding --> Debug{"¿Funciona como se esperaba?"}
-    Debug -- "No" --> FixMentalModel["Corrección del modelo mental"]
+    Debug -- No --> FixMentalModel["Corrección del modelo mental"]
     FixMentalModel --> Coding
     
-    Debug -- "Sí" --> SRS["Registrar conceptos subdivididos en Anki"]
+    Debug -- Sí --> SRS["Registrar conceptos subdivididos en Anki"]
     SRS --> BlogOutput["Sistematización en un blog técnico (Fijación final)"]
     BlogOutput --> Master["Interiorización del conocimiento / Dominio completo"]
 ```
@@ -283,5 +283,6 @@ Al escribir un blog, ocurren los siguientes procesos:
 Leer libros de matemáticas y libros especializados en algoritmos no es de ninguna manera un camino fácil. Sin embargo, al seguir el ciclo de captar la estructura con SQ3R, verbalizar con la Técnica de Feynman, verificar el funcionamiento traduciéndolo a código, prevenir el olvido con Anki y finalmente transmitirlo al mundo en un blog técnico, ese conocimiento complejo seguramente se convertirá en tu "poder".
 
 La forma superficial de usar APIs y el conocimiento de frameworks se volverán obsoletos en unos pocos años, pero el pensamiento matemático y los fundamentos de los algoritmos son activos para toda la vida. La próxima vez que abras un libro técnico complejo, intenta utilizar los métodos de este artículo y sumérgete en el abismo del conocimiento.
+
 
 

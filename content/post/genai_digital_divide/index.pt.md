@@ -67,7 +67,7 @@ O gráfico abaixo ilustra visualmente essa divergência.
 
 ```mermaid
 xychart-beta
-    title "Productivity Divergence Over Time (The Matthew Effect)"
+    title Productivity Divergence Over Time (The Matthew Effect)
     x-axis ["Ano 1", "Ano 2", "Ano 3", "Ano 4", "Ano 5", "Ano 6"]
     y-axis "Volume de Saída" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
@@ -122,11 +122,11 @@ flowchart TD
     B --> C["Geração pelo modelo de IA (Generation)"]
     C --> D{"Verificação Cognitiva (Cognitive Verification)"}
     
-    D -- "Dúvida / Falha lógica encontrada" --> E["Fact-checking com RAG e ferramentas externas"]
+    D -- Dúvida / Falha lógica encontrada --> E["Fact-checking com RAG e ferramentas externas"]
     E --> F["Reajuste / Refinamento do Prompt"]
     F --> B
     
-    D -- "Fatos / Lógica aceitáveis" --> G["Ajuste final com base no conhecimento de domínio humano"]
+    D -- Fatos / Lógica aceitáveis --> G["Ajuste final com base no conhecimento de domínio humano"]
     G --> H["Produto Final (Output)"]
 ```
 
@@ -165,5 +165,7 @@ Ficar do lado de cá ou permanecer do outro lado desta nova exclusão digital. E
 
 ---
 *Para opiniões sobre este artigo ou exemplos específicos da introdução da orquestração de IA, sinta-se à vontade para utilizar a seção de comentários ou as redes sociais do autor.*
+
+
 
 

@@ -158,11 +158,11 @@ Particularly when backing up a large number of small files (like source code), t
 ```mermaid
 flowchart TD
     A["Start Backup Script"] --> B{"Is NAS Accessible?"}
-    B -- "Yes" --> C["Execute Robocopy (Multi-threaded)"]
-    B -- "No" --> D["Write Error Log & Exit"]
+    B -- Yes --> C["Execute Robocopy (Multi-threaded)"]
+    B -- No --> D["Write Error Log & Exit"]
     C --> E{"Did Robocopy Succeed?"}
-    E -- "Yes (ExitCode < 8)" --> F["Rotate Logs (Keep last 30 days)"]
-    E -- "No (ExitCode >= 8)" --> D
+    E -- Yes (ExitCode < 8) --> F["Rotate Logs (Keep last 30 days)"]
+    E -- No (ExitCode >= 8) --> D
     F --> G["End Backup Script"]
     D --> G
 ```
@@ -490,3 +490,4 @@ Starting with foundational building blocks like managing execution policies and 
 PowerShell is incredibly deep; despite being a command-line tool, it is a powerful automation engine capable of accessing nearly all features of .NET. Based on the scripts introduced this time, customize the paths and processing logic to suit your own business environment, and gain creative time freed from tedious manual labor.
 
 The success of automation relies on "starting with small scripts and gradually increasing robustness through error handling and log output." Why not begin your PowerShell automation journey by backing up just one folder on your own PC?
+

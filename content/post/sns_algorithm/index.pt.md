@@ -121,7 +121,7 @@ O gráfico a seguir ilustra a diferença nos ciclos de vida de tecnologias exces
 
 ```mermaid
 xychart-beta
-    title "Ciclo de vida e evolução da avaliação de tecnologias"
+    title Ciclo de vida e evolução da avaliação de tecnologias
     x-axis ["0 meses", "6 meses", "12 meses", "18 meses", "24 meses", "30 meses", "36 meses"]
     y-axis "Nº de menções e nível de entusiasmo no SNS" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
@@ -176,5 +176,6 @@ Os algoritmos de recomendação das redes sociais são ferramentas poderosas que
 Precisamos desenvolver a alfabetização para tratar as informações que fluem em nossas *timelines* não como "fatos" ou "tendências absolutas", mas simplesmente como "sinais".
 
 Sair da câmara de eco, ler o código-fonte com suas próprias mãos, acompanhar as discussões nos RFCs, decifrar as fórmulas matemáticas em artigos acadêmicos e enfrentar os verdadeiros desafios do domínio de negócios de sua empresa. Esse é o único caminho para praticar a verdadeira engenharia de software sem ser engolido pela onda dos algoritmos.
+
 
 

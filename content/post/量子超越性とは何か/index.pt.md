@@ -105,7 +105,7 @@ A própria IBM evita o termo "supremacia" e propôs o "Volume Quântico" (Quantu
 
 ```mermaid
 timeline
-    title "A Evolução dos Marcos Quânticos"
+    title A Evolução dos Marcos Quânticos
     2019 : "Google Sycamore (53Q)" : "Anúncio de Supremacia Quântica"
     2019 : "Refutação da IBM" : "Simulação no supercomputador Summit em 2,5 dias"
     2021 : "IBM Eagle (127Q)" : "Quebrando a barreira dos 100 qubits"
@@ -179,3 +179,4 @@ A "Supremacia Quântica" foi um marco importante na história dos computadores q
 Estamos atualmente testemunhando o período de transição de dispositivos NISQ ruidosos para dispositivos de qubits lógicos equipados com correção de erros. Nos próximos anos a décadas, a descoberta de novos materiais científicos, a revolução nos processos de descoberta de medicamentos e os avanços nos problemas de otimização se tornarão realidade junto com esta evolução do hardware quântico.
 
 Devemos continuar de olho nas tendências do Google e da IBM, bem como dos pesquisadores em todo o mundo, à medida que moldam a ciência da computação do futuro.
+

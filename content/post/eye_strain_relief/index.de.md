@@ -22,7 +22,7 @@ In diesem Artikel werden wir den Mechanismus der Augenbelastung bei Programmiere
 Das Computer Vision Syndrom (CVS) wird nicht durch einen einzigen Faktor verursacht. Wie das folgende Kreisdiagramm zeigt, verflechten sich verschiedene Elemente komplex miteinander und führen zu müden Augen, Schmerzen, trockenen Augen und allgemeiner körperlicher Erschöpfung.
 
 ```mermaid
-pie title "Ursachen des Computer Vision Syndroms (CVS)"
+pie title Ursachen des Computer Vision Syndroms (CVS)
     "Blaulicht & Blendung" : 30
     "Bildschirmflimmern (PWM)" : 25
     "Falscher Kontrast & Beleuchtung" : 20
@@ -121,7 +121,7 @@ Das folgende Diagramm vergleicht das Emissionsspektrum eines Standard-LCD-Monito
 
 ```mermaid
 xychart-beta
-    title "Vergleich des Blaulicht-Emissionsspektrums"
+    title Vergleich des Blaulicht-Emissionsspektrums
     x-axis "Wellenlänge (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "Relative Intensität" 0 --> 100
     bar "Standard LCD (W-LED)" [10, 30, 95, 80, 40, 20]
@@ -280,5 +280,7 @@ Unsere Karriere als Softwareentwickler erstreckt sich über Jahrzehnte. Was dies
 5. **Mit einem Monitorarm den optimalen Blickwinkel basierend auf $\tan \theta = h/d$ schaffen und die "20-20-20-Regel" systematisieren**
 
 Diese Maßnahmen können vorübergehende Kosten und Aufwand mit sich bringen. Sie sind jedoch die kosteneffektivste "technologische Investition", um die gesundheitliche Lebensdauer der Augen zu verlängern und die lebenslange Produktivität und Lebensqualität (QOL) zu maximieren. Überprüfen Sie jetzt Ihre Entwicklungsumgebung und implementieren Sie etwas Fürsorge für Ihre Augen.
+
+
 
 

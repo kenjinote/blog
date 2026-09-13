@@ -121,7 +121,7 @@ The chart below illustrates the difference in lifecycle between technologies ove
 
 ```mermaid
 xychart-beta
-    title "Technology Lifecycle and Evaluation Trends"
+    title Technology Lifecycle and Evaluation Trends
     x-axis ["Month 0", "Month 6", "Month 12", "Month 18", "Month 24", "Month 30", "Month 36"]
     y-axis "Number of Mentions / Hype Level on SNS" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
@@ -176,5 +176,6 @@ SNS recommendation algorithms are powerful tools that broaden our technical hori
 We need to acquire the literacy to treat the information flowing into our timelines not as "facts" or "absolute trends," but merely as a single "signal."
 
 Stepping out of the echo chamber, reading source code with our own hands, following RFC discussions, deciphering the math in papers, and facing the true challenges of our business domains. That alone is the only path to practicing true software engineering without being swallowed by the waves of algorithms.
+
 
 

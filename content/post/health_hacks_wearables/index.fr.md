@@ -251,7 +251,7 @@ processed_df = engineer_features(merged_df)
 
 ```mermaid
 xychart-beta
-    title "VFC vs Heures de codage quotidiennes (Normalisées)"
+    title VFC vs Heures de codage quotidiennes (Normalisées)
     x-axis ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"]
     y-axis "VFC & Sortie de codage" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
@@ -368,5 +368,6 @@ En tirant parti de la science des données et des API, concevons un état de san
 
 ---
 *Avertissement : Cet article compile les expériences personnelles de l'auteur et son approche en science des données, et ne fournit pas de conseils médicaux. En cas de mauvaise santé persistante ou de troubles du sommeil, veuillez consulter une institution médicale spécialisée.*
+
 
 

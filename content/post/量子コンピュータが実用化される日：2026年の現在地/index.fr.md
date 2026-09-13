@@ -148,7 +148,7 @@ Pour que l'ordinateur quantique démontre véritablement l'**avantage quantique 
 
 ```mermaid
 gantt
-    title "Feuille de route de l'informatique quantique (Révisée en 2026)"
+    title Feuille de route de l'informatique quantique (Révisée en 2026)
     dateFormat  YYYY
     axisFormat  %Y
     
@@ -173,4 +173,5 @@ L'année 2026 sera enregistrée dans l'histoire des ordinateurs quantiques comme
 
 ---
 *Cet article a été rédigé sur la base des dernières recherches et tendances de l'industrie de l'informatique quantique en 2026.*
+
 

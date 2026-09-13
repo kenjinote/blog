@@ -67,7 +67,7 @@ $$
 
 ```mermaid
 xychart-beta
-    title "Productivity Divergence Over Time (The Matthew Effect)"
+    title Productivity Divergence Over Time (The Matthew Effect)
     x-axis ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6"]
     y-axis "Output Volume" 0 --> 200
     line [10, 15, 30, 60, 110, 180]
@@ -122,11 +122,11 @@ flowchart TD
     B --> C["AIモデルによる生成 (Generation)"]
     C --> D{"認知的検証 (Cognitive Verification)"}
     
-    D -- "疑義・論理的破綻あり" --> E["RAGや外部ツールを用いたファクトチェック"]
+    D -- 疑義・論理的破綻あり --> E["RAGや外部ツールを用いたファクトチェック"]
     E --> F["プロンプトの再調整・リファイン"]
     F --> B
     
-    D -- "ファクト・論理が妥当" --> G["人間のドメイン知識による最終調整"]
+    D -- ファクト・論理が妥当 --> G["人間のドメイン知識による最終調整"]
     G --> H["最終成果物のアウトプット"]
 ```
 
@@ -165,5 +165,7 @@ flowchart TD
 
 ---
 *本記事に関するご意見や、AIオーケストレーションの具体的な導入事例については、コメント欄または著者のSNSまでお寄せください。*
+
+
 
 

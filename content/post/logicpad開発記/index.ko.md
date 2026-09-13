@@ -24,7 +24,7 @@ LogicPad 개발은 주말과 야간 시간을 활용한 개인 프로젝트로 �
 
 ```mermaid
 gantt
-    title "LogicPad 개발 타임라인"
+    title LogicPad 개발 타임라인
     dateFormat  YYYY-MM-DD
     section "기획 및 설계"
     "요구사항 분석 및 프로토타이핑" :a1, 2025-10-01, 30d
@@ -303,3 +303,4 @@ LogicPad의 개발부터 Microsoft Store 출시까지의 궤적을 돌아보면,
 WinUI 3와 Windows App SDK는 현재도 활발하게 개발이 진행되고 있으며, Windows 11의 UI 패러다임을 최대한 살린 아름다운 애플리케이션을 만들기 위한 최고의 도구입니다. 이 블로그 기사가 앞으로 Windows 네이티브 앱 개발에 도전하려는 개발자들에게 도움이 되어 Store에 훌륭한 앱이 하나라도 더 늘어나기를 진심으로 바랍니다.
 
 개발은 아직 끝나지 않았습니다. LogicPad의 다음 버전에서는 Direct2D를 활용한 자체 파형 렌더링 엔진의 통합을 예정하고 있습니다. 다음 기사에서는 DirectX와 WinUI 3의 상호 운용(SwapChainPanel 활용)에 대해 깊이 파헤쳐 볼 예정입니다. 기대해 주세요.
+

@@ -33,13 +33,13 @@ graph TD
     CompilerR["Front-end rustc"]
     Debugger["CodeLLDB (Debug Adapter)"]
 
-    VSCode -- "Demande d'autocomplétion / Aller à la définition" --> LSP
+    VSCode -- Demande d'autocomplétion / Aller à la définition --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
     Clangd -. "Analyse AST (Arbre Syntaxique Abstrait)" .-> CompilerC
     RustAnalyzer -. "Expansion de macros / Inférence de type" .-> CompilerR
     
-    VSCode -- "Debug Adapter Protocol (DAP)" --> Debugger
+    VSCode -- Debug Adapter Protocol (DAP) --> Debugger
     Debugger -. "ptrace / Dump mémoire" .-> Executable["Binaire compilé"]
 ```
 
@@ -388,3 +388,4 @@ En appliquant les 10 extensions et configurations présentées dans cet article,
 La personnalisation initiale du fichier de configuration peut prendre un peu de temps, mais une fois établie, votre expérience de codage ultérieure sera incroyablement confortable et productive. N'hésitez pas à utiliser l'explication de l'architecture et les paramètres spécifiques (`settings.json`, `tasks.json`, `launch.json`) de cet article comme référence pour construire votre meilleur environnement de développement.
 
 Bonne vie de programmation système, confortable et sécurisée !
+

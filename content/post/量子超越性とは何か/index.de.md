@@ -105,7 +105,7 @@ IBM selbst vermeidet den Begriff "Überlegenheit" und schlägt Indikatoren wie d
 
 ```mermaid
 timeline
-    title "Die Evolution der Quantenmeilensteine"
+    title Die Evolution der Quantenmeilensteine
     2019 : "Google Sycamore (53Q)" : "Ankündigung der Quantenüberlegenheit"
     2019 : "IBM Gegenargument" : "Simulation mit Summit Supercomputer in 2,5 Tagen"
     2021 : "IBM Eagle (127Q)" : "Durchbruch der 100-Qubit-Barriere"
@@ -179,3 +179,4 @@ Die "Quantenüberlegenheit" war ein wichtiger Meilenstein in der Geschichte des 
 Wir erleben derzeit die Übergangsphase von stark verrauschten NISQ-Geräten hin zu logischen Qubit-Geräten, die mit Fehlerkorrektur ausgestattet sind. In den nächsten Jahren bis hin zu einem Jahrzehnt werden mit dieser Evolution der Quantenhardware neue Entdeckungen in den Materialwissenschaften, Revolutionen in der Medikamentenentwicklung und Durchbrüche bei Optimierungsproblemen Realität werden.
 
 Die künftigen Entwicklungen von Google, IBM und Forschern auf der ganzen Welt, welche die Informatik der Zukunft prägen werden, bleiben weiterhin höchst spannend.
+

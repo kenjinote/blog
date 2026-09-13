@@ -58,10 +58,10 @@ Das folgende Mermaid-Diagramm zeigt die hybride Architektur, wie lokale Agenten 
 
 ```mermaid
 graph TD
-    Dev["Entwickler (IDE)"] -->|"Echtzeit-Tippen"| LocalProxy{"Intelligenter Router / Proxy"}
+    Dev["Entwickler (IDE)"] -->| Echtzeit-Tippen | LocalProxy{"Intelligenter Router / Proxy"}
     
-    LocalProxy -->|"Schnelle, datenschutzorientierte Aufgabe"| LocalAI["Lokale KI-Engine (Ollama / LM Studio)"]
-    LocalProxy -->|"Komplexe Logik, großer Kontext"| CloudAI["Cloud KI-Engine (Copilot / OpenAI API)"]
+    LocalProxy -->| Schnelle, datenschutzorientierte Aufgabe | LocalAI["Lokale KI-Engine (Ollama / LM Studio)"]
+    LocalProxy -->| Komplexe Logik, großer Kontext | CloudAI["Cloud KI-Engine (Copilot / OpenAI API)"]
     
     subgraph "Lokale Umgebung"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ Anstatt eines binären Gegensatzes von "Cloud GitHub Copilot" oder "Lokale KI" i
 Bitte nutzen Sie die in diesem Artikel vorgestellten Entscheidungsbäume und Architekturen als Referenz, um Ihre IDE-Umgebung auf die nächste Stufe zu heben. Indem Sie vom "Nutzer" von KI zu jemandem aufsteigen, der KI "kombiniert und sie am richtigen Ort einsetzt", wird Ihre Entwicklungseffizienz zweifellos maximiert.
 
 Happy Coding with Hybrid AI!
+

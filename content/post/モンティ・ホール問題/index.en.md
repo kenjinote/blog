@@ -160,7 +160,7 @@ In this case, unless you believe you pulled off a "one in a million" miracle rig
 The Monty Hall problem (with 3 doors) is simply a scaled-down phenomenon of this "1,000,000 doors" scenario.
 
 ```mermaid
-pie title "Effect of Switching Doors (100 Simulations)"
+pie title Effect of Switching Doors (100 Simulations)
     "Win by switching (approx. 66.7%)" : 67
     "Win by staying (approx. 33.3%)" : 33
 ```
@@ -173,3 +173,4 @@ The Monty Hall problem goes beyond a mere quiz and teaches us important lessons.
 2. **Update probabilities with new information (Bayesian updating)**: When situations change and new information (such as which door the host opened) is provided, the key to success is whether you can flexibly update your probabilities and strategies without clinging to existing beliefs.
 
 The small decision to "change your door" just might double the probability of getting a "new car" in your life.
+

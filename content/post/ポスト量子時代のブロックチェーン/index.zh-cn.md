@@ -275,7 +275,7 @@ $$
 为了解决这个问题，需要大幅提高区块大小，但这会增加全节点的存储和网络带宽要求，让个人运行节点变得更加困难，从而陷入导致**网络中心化**的困境。
 
 ```mermaid
-pie title "区块链中签名数据大小比较 (概念图)"
+pie title 区块链中签名数据大小比较 (概念图)
     "ECDSA (约70 Bytes)" : 2
     "Dilithium ML-DSA (约2,500 Bytes)" : 58
     "SPHINCS+ (约17,000 Bytes)" : 40
@@ -346,3 +346,4 @@ Shor算法和Grover算法这两把量子计算机的利剑，分别威胁着当�
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

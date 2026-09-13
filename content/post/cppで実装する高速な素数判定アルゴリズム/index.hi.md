@@ -125,19 +125,19 @@ graph TD
     Start["परीक्षण प्रारंभ (इनपुट: N, a)"] --> CalcDS["d (विषम) और s की गणना करें ताकि N-1 = d * 2^s हो"]
     CalcDS --> CalcX["x = a^d mod N की गणना करें"]
     CalcX --> CheckX1{"क्या x == 1 या x == N-1 ?"}
-    CheckX1 -- "हाँ" --> ReturnTrue["संभवतः अभाज्य (Probably Prime)"]
-    CheckX1 -- "नहीं" --> LoopStart["r = 1 से s-1 तक लूप प्रारंभ करें"]
+    CheckX1 -- हाँ --> ReturnTrue["संभवतः अभाज्य (Probably Prime)"]
+    CheckX1 -- नहीं --> LoopStart["r = 1 से s-1 तक लूप प्रारंभ करें"]
     
     LoopStart --> LoopCondition{"क्या r < s ?"}
-    LoopCondition -- "नहीं" --> ReturnFalse["निश्चित रूप से भाज्य (Composite)"]
-    LoopCondition -- "हाँ" --> SquareX["x = (x * x) mod N की गणना करें"]
+    LoopCondition -- नहीं --> ReturnFalse["निश्चित रूप से भाज्य (Composite)"]
+    LoopCondition -- हाँ --> SquareX["x = (x * x) mod N की गणना करें"]
     
     SquareX --> CheckXMinus1{"क्या x == N - 1 ?"}
-    CheckXMinus1 -- "हाँ" --> ReturnTrue
-    CheckXMinus1 -- "नहीं" --> CheckXOne{"क्या x == 1 ?"}
+    CheckXMinus1 -- हाँ --> ReturnTrue
+    CheckXMinus1 -- नहीं --> CheckXOne{"क्या x == 1 ?"}
     
-    CheckXOne -- "हाँ" --> ReturnFalse
-    CheckXOne -- "नहीं" --> LoopNext["r को 1 बढ़ाएं और आगे बढ़ें"]
+    CheckXOne -- हाँ --> ReturnFalse
+    CheckXOne -- नहीं --> LoopNext["r को 1 बढ़ाएं और आगे बढ़ें"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ graph LR
 *Reference:*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

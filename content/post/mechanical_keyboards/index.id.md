@@ -125,7 +125,7 @@ Kelemahan QMK adalah "Anda harus mengkompilasi kode sumber dan melakukan flash (
 Tata letak "Row Staggered" (baris yang miring) yang umum digunakan sebenarnya adalah peninggalan dari mesin tik agar lengan fisiknya tidak saling tersangkut, dan tidak didasarkan pada struktur tangan manusia.
 
 ```mermaid
-pie title "Preferensi Tata Letak Keyboard Ideal Engineer (Data Estimasi)"
+pie title Preferensi Tata Letak Keyboard Ideal Engineer (Data Estimasi)
     "Row Staggered (Tradisional)" : 45
     "Alice Layout (Ergonomis)" : 15
     "Ortholinear (Kisi)" : 10
@@ -201,5 +201,6 @@ Memilih keyboard adalah proses "mengoptimalkan antarmuka diri sendiri" sepanjang
 Kelima keyboard yang diperkenalkan kali ini (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) semuanya adalah mahakarya yang bertujuan untuk memberikan "pengalaman input terbaik" dengan pendekatan yang berbeda-beda. Kami harap Anda dapat menemukan partner terbaik yang sesuai dengan gaya mengetik dan masalah fisik yang Anda hadapi.
 
 Investasi pada keyboard ini pasti akan memberikan pengembalian berupa "jutaan baris kode tanpa bug" kepada Anda.
+
 
 

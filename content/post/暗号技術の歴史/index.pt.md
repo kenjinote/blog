@@ -246,15 +246,14 @@ b = (np.dot(A, s) + e) % q
 
 ```mermaid
 timeline
-    title "História da Evolução da Criptografia e dos Computadores"
-    "Antiguidade - Idade Média" : "Cifra de César" : "Cifra de Vigenère" : "Nascimento da Análise de Frequência"
-    "Anos 1930 - 1940" : "Operação e Decodificação da Enigma" : "Máquina de Turing - Desenvolvimento da Bombe"
-    "Anos 1970" : "Padronização do DES (1977)" : "Troca de Chaves de Diffie-Hellman (1976)" : "Nascimento da Criptografia RSA (1977)"
-    "Anos 1980 - 1990" : "Proposta da Criptografia de Curva Elíptica (ECC)" : "Publicação do Algoritmo de Shor (1994)"
-    "Anos 2000" : "Padronização do AES (2001)"
-    "Anos 2010 - Atualidade" : "Aceleração da Pesquisa em Computadores Quânticos" : "Início do Projeto de Padronização PQC pelo NIST"
-    "Futuro Próximo (Q-Day)" : "Realização do Computador Quântico em Larga Escala?" : "Transição Completa para PQC (ML-KEM/ML-DSA)"
-```
+    title História da Evolução da Criptografia e dos Computadores
+    Antiguidade - Idade Média : Cifra de César : Cifra de Vigenère : Nascimento da Análise de Frequência
+    Anos 1930 - 1940 : Operação e Decodificação da Enigma : Máquina de Turing - Desenvolvimento da Bombe
+    Anos 1970 : Padronização do DES (1977) : Troca de Chaves de Diffie-Hellman (1976) : Nascimento da Criptografia RSA (1977)
+    Anos 1980 - 1990 : Proposta da Criptografia de Curva Elíptica (ECC) : Publicação do Algoritmo de Shor (1994)
+    Anos 2000 : Padronização do AES (2001)
+    Anos 2010 - Atualidade : Aceleração da Pesquisa em Computadores Quânticos : Início do Projeto de Padronização PQC pelo NIST
+    Futuro Próximo (Q-Day) : Realização do Computador Quântico em Larga Escala? : Transição Completa para PQC (ML-KEM/ML-DSA)```
 
 ---
 
@@ -267,3 +266,5 @@ A Cifra de César foi derrotada pela análise de frequência, e a outrora invenc
 No entanto, a humanidade já vislumbra o futuro e está se preparando para o novo "escudo", a Criptografia Pós-Quântica (PQC). Atualmente, as preparações para a transição (Garantia de Agilidade Criptográfica - Crypto Agility) das criptografias de chave pública existentes para a PQC em infraestruturas de TI ao redor do mundo são uma questão de urgência.
 
 A tecnologia criptográfica não é apenas um quebra-cabeça matemático obscuro, mas sim a barreira mais forte para proteger nossa privacidade, nossas propriedades e as próprias infraestruturas da sociedade.
+
+

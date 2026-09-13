@@ -71,7 +71,7 @@ graph TD
     F["User Space Linux (Distribusi WSL2)"]
 
     A --> C
-    C -->| "Berbagi Berkas Lintas OS" | D
+    C -->| Berbagi Berkas Lintas OS | D
     D --> E
     D --> F
 ```
@@ -230,4 +230,5 @@ Hyper-V dan WSL2 bukanlah masalah tentang salah satunya lebih unggul dibanding y
 *   **Hyper-V** adalah "hypervisor sejati" yang membawa kemampuan manajemen dan isolasi yang kuat ke dalam desktop, sebagaimana yang telah dikembangkan di pusat data enterprise (enterprise data center). Tidak ada yang menandinginya dalam hal membangun jaringan, pengujian OS Windows, maupun simulasi lingkungan infrastruktur.
 
 Dalam lingkungan Windows modern, kedua teknologi ini tidak bersaing secara langsung, melainkan hidup berdampingan secara indah di atas platform VM yang sama. Dengan menggunakan masing-masing teknologi pada tempat yang tepat sesuai kebutuhan, Windows akan menjadi engineering workstation yang paling tangguh dan fleksibel di dunia.
+
 

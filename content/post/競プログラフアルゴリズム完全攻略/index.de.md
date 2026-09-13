@@ -115,11 +115,11 @@ Durch die Verwendung einer Prioritätswarteschlange (`std::priority_queue`) kann
 
 ```mermaid
 graph TD
-    S["Startknoten S(0)"] -- "2" --> A["Knoten A(2)"]
-    S["Startknoten S(0)"] -- "5" --> B["Knoten B(5)"]
-    A["Knoten A(2)"] -- "1" --> B["Knoten B(3)"]
-    A["Knoten A(2)"] -- "4" --> C["Knoten C(6)"]
-    B["Knoten B(3)"] -- "1" --> C["Knoten C(4)"]
+    S["Startknoten S(0)"] -- 2 --> A["Knoten A(2)"]
+    S["Startknoten S(0)"] -- 5 --> B["Knoten B(5)"]
+    A["Knoten A(2)"] -- 1 --> B["Knoten B(3)"]
+    A["Knoten A(2)"] -- 4 --> C["Knoten C(6)"]
+    B["Knoten B(3)"] -- 1 --> C["Knoten C(4)"]
 ```
 Wie in der Abbildung oben gezeigt, betragen die direkten Kosten von S nach B 5, aber durch A können wir B mit den Kosten 3 erreichen. Der Dijkstra-Algorithmus führt Optimierungen auf diese Weise durch.
 
@@ -511,3 +511,4 @@ Das Geheimnis zur Verbesserung bei Graphenproblemen besteht darin, **"sie immer 
 Es wird dringend empfohlen, diese als Code-Snippets in einer Bibliothek zu organisieren (in einem Snippet-Tool oder Ihrem eigenen GitHub-Repository zu speichern), damit Sie sie bei echten Wettbewerben ohne Zögern abrufen können.
 
 Graphenalgorithmen in der kompetitiven Programmierung sind der Bereich, in dem Sie die Schönheit und Macht von Algorithmen am besten erleben können. Bitte tippen Sie den Code aus diesem Artikel ab und versuchen Sie sich an vergangenen Problemen in Online-Judges!
+

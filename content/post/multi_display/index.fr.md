@@ -82,7 +82,7 @@ Voici un diagramme de Gantt montrant le modèle de gain de temps dû à l'introd
 
 ```mermaid
 gantt
-    title "Comparaison du temps de changement de contexte : Ultrawide vs Dual Monitor"
+    title Comparaison du temps de changement de contexte : Ultrawide vs Dual Monitor
     dateFormat  s
     axisFormat  %S
     
@@ -238,5 +238,6 @@ flowchart TD
 ```
 
 Un écran est une infrastructure qui soutiendra votre productivité pendant de nombreuses années après son achat. Intégrez les principes de l'ergonomie visuelle, les mathématiques du PPI, les limites de la bande passante et la gestion logicielle des fenêtres abordés dans cet article pour créer le meilleur espace de travail possible, sans compromis. Ce sera la voie la plus rapide vers la production du meilleur code.
+
 
 

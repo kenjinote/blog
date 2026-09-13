@@ -76,11 +76,11 @@ El siguiente diagrama de Mermaid ilustra el concepto de transferencia de propied
 ```mermaid
 graph LR
     subgraph "Antes de std::move"
-        A["unique_ptr (ptr1)"] -->|"Posee"| B["Memoria Heap (Objeto)"]
+        A["unique_ptr (ptr1)"] -->| Posee | B["Memoria Heap (Objeto)"]
     end
     subgraph "Después de std::move"
         C["unique_ptr (ptr1)"] -.->|"Vacío (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->|"Posee"| F["Memoria Heap (Objeto)"]
+        E["unique_ptr (ptr2)"] -->| Posee | F["Memoria Heap (Objeto)"]
     end
 ```
 
@@ -130,13 +130,13 @@ Si se utilizan punteros a funciones o expresiones lambda como eliminadores perso
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->|"Puntero a T"| B["Objeto Administrado (T)"]
-    A -->|"Puntero al Bloque de Control"| C["Bloque de Control"]
+    A["std::shared_ptr<T> (sp1)"] -->| Puntero a T | B["Objeto Administrado (T)"]
+    A -->| Puntero al Bloque de Control | C["Bloque de Control"]
     
-    D["std::shared_ptr<T> (sp2)"] -->|"Puntero a T"| B
-    D -->|"Puntero al Bloque de Control"| C
+    D["std::shared_ptr<T> (sp2)"] -->| Puntero a T | B
+    D -->| Puntero al Bloque de Control | C
     
-    C -->|"Elimina"| B
+    C -->| Elimina | B
     C -.->|"Strong Count: 2"| E["Strong Count"]
     C -.->|"Weak Count: 0"| F["Weak Count"]
     C -.->|"Eliminador Personalizado"| G["Eliminador (Deleter)"]
@@ -176,8 +176,8 @@ La propiedad compartida tiene una debilidad fatal conocida como "referencias cir
 ```mermaid
 graph TD
     subgraph "Referencia Circular (Fuga de Memoria)"
-        A["Objeto A"] -->|"shared_ptr (Strong=1)"| B["Objeto B"]
-        B -->|"shared_ptr (Strong=1)"| A
+        A["Objeto A"] -->| shared_ptr (Strong=1) | B["Objeto B"]
+        B -->| shared_ptr (Strong=1) | A
     end
 ```
 
@@ -188,7 +188,7 @@ graph TD
 ```mermaid
 graph TD
     subgraph "Rompiendo la Referencia Circular"
-        C["Objeto A"] -->|"shared_ptr (Strong=1)"| D["Objeto B"]
+        C["Objeto A"] -->| shared_ptr (Strong=1) | D["Objeto B"]
         D -.->|"weak_ptr (Weak=1)"| C
     end
 ```
@@ -268,3 +268,4 @@ La gestión de memoria en Modern C++ ya no se encuentra en la era de administrar
 3.  Aprovecha **`std::weak_ptr`** para prevenir fugas de memoria en la implementación de patrones de observador o en estructuras de datos donde puedan ocurrir ciclos compartidos (referencias circulares).
 
 Al comprender profundamente los punteros inteligentes y aplicarlos en el contexto adecuado, es posible construir una arquitectura de software segura y robusta sin sacrificar en absoluto el rendimiento de C++.
+

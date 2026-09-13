@@ -180,7 +180,7 @@ La "vitesse de codage" ou la "capacité de mémorisation de la syntaxe" traditio
 Ce changement de paradigme se reflète également clairement dans l'utilisation quotidienne du temps (allocation de temps) des ingénieurs.
 
 ```mermaid
-pie title "Répartition du temps de l'ingénieur (Avant l'introduction de l'IA)"
+pie title Répartition du temps de l'ingénieur (Avant l'introduction de l'IA)
   "Codage et résolution des erreurs de syntaxe": 50
   "Définition des exigences et conception du système": 20
   "Implémentation et exécution des tests": 20
@@ -188,7 +188,7 @@ pie title "Répartition du temps de l'ingénieur (Avant l'introduction de l'IA)"
 ```
 
 ```mermaid
-pie title "Répartition du temps de l'ingénieur (À l'ère de l'IA)"
+pie title Répartition du temps de l'ingénieur (À l'ère de l'IA)
   "Modélisation de domaine et conception d'architecture": 40
   "Prompting à l'IA et vérification du code": 20
   "Débogage avancé et exploitation en production": 30
@@ -207,5 +207,6 @@ Les ingénieurs de demain ne s'inquiéteront plus des spécifications détaillé
 
 Un véritable ingénieur n'est pas quelqu'un qui écrit du code, mais quelqu'un qui résout des problèmes.
 La modélisation de domaine, la conception d'architectures évolutives, la communication avec les parties prenantes et le débogage de systèmes complexes. Pour ceux qui continuent à affiner ces "compétences d'ingénieur spécifiques aux humains", l'IA ne sera pas un ennemi qui vole leur travail, mais plutôt le partenaire le plus fort qui amplifiera leur créativité et leur productivité des dizaines de fois.
+
 
 

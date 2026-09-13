@@ -125,19 +125,19 @@ graph TD
     Start["بدء الاختبار (الإدخال: N, a)"] --> CalcDS["حساب d (فردي) و s التي تحقق N-1 = d * 2^s"]
     CalcDS --> CalcX["حساب x = a^d mod N"]
     CalcX --> CheckX1{"هل x == 1 أو x == N-1 ؟"}
-    CheckX1 -- "نعم" --> ReturnTrue["يحتمل أن يكون أولياً (Probably Prime)"]
-    CheckX1 -- "لا" --> LoopStart["بدء حلقة r من 1 إلى s-1"]
+    CheckX1 -- نعم --> ReturnTrue["يحتمل أن يكون أولياً (Probably Prime)"]
+    CheckX1 -- لا --> LoopStart["بدء حلقة r من 1 إلى s-1"]
     
     LoopStart --> LoopCondition{"هل r < s ؟"}
-    LoopCondition -- "لا" --> ReturnFalse["مؤلف بالتأكيد (Composite)"]
-    LoopCondition -- "نعم" --> SquareX["حساب x = (x * x) mod N"]
+    LoopCondition -- لا --> ReturnFalse["مؤلف بالتأكيد (Composite)"]
+    LoopCondition -- نعم --> SquareX["حساب x = (x * x) mod N"]
     
     SquareX --> CheckXMinus1{"هل x == N - 1 ؟"}
-    CheckXMinus1 -- "نعم" --> ReturnTrue
-    CheckXMinus1 -- "لا" --> CheckXOne{"هل x == 1 ؟"}
+    CheckXMinus1 -- نعم --> ReturnTrue
+    CheckXMinus1 -- لا --> CheckXOne{"هل x == 1 ؟"}
     
-    CheckXOne -- "نعم" --> ReturnFalse
-    CheckXOne -- "لا" --> LoopNext["زيادة r بمقدار 1 والانتقال للتالي"]
+    CheckXOne -- نعم --> ReturnFalse
+    CheckXOne -- لا --> LoopNext["زيادة r بمقدار 1 والانتقال للتالي"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ graph LR
 *Reference:*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

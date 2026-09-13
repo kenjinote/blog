@@ -182,13 +182,13 @@ Inti dari Zero Trust adalah "tidak menjadikan batas jaringan (apakah di dalam at
 ```mermaid
 graph TD
     subgraph "Model Pertahanan Batas (VPN Tradisional)"
-        U1["Insinyur Jarak Jauh"] -- "IPsec / SSL VPN" --> VPN["VPN Gateway (SPOF & Leher Botol)"]
-        VPN -- "LAN Internal (Kepercayaan Implisit)" --> App1["Manajemen Kode Sumber Internal"]
+        U1["Insinyur Jarak Jauh"] -- IPsec / SSL VPN --> VPN["VPN Gateway (SPOF & Leher Botol)"]
+        VPN -- LAN Internal (Kepercayaan Implisit) --> App1["Manajemen Kode Sumber Internal"]
     end
     
     subgraph "Model Zero Trust (BeyondCorp / ZTNA)"
-        U2["Insinyur Jarak Jauh (Perangkat yang Dikelola MDM)"] -- "Komunikasi Langsung (mTLS HTTPS)" --> IAP["Identity-Aware Proxy (IAP)"]
-        IAP -- "Otorisasi dinamis per permintaan" --> App2["Aplikasi Internal / SaaS"]
+        U2["Insinyur Jarak Jauh (Perangkat yang Dikelola MDM)"] -- Komunikasi Langsung (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
+        IAP -- Otorisasi dinamis per permintaan --> App2["Aplikasi Internal / SaaS"]
         IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / Konteks Pengguna" .-> Policy
         MDM["Manajemen Perangkat (Intune / Jamf)"] -. "Kesehatan Perangkat (Status Patch)" .-> Policy
         Policy["Mesin Kebijakan Akses"] -. "Penilaian otorisasi berbasis risiko" .-> IAP
@@ -235,5 +235,6 @@ Pihak manajemen harus membuang pandangan yang tidak rasional bahwa "sekadar meng
 Sebaliknya, pihak insinyur (terutama kalangan senior) juga tidak boleh berpandangan arogan dan berpikir "Saya bisa jadi lebih produktif jika mengoding dari rumah, dan kantor pun sama sekali tidak ada gunanya". Rekayasa perangkat lunak adalah semacam olahraga beregu yang menanggung serangkaian beban mulai dari rancangan infrastruktur komprehensif, pendidikan terhadap kalangan junior, dan koordinasi ketika masalah mendesak terjadi, yang tentunya lebih dari sekadar efisiensi pemrograman kode. Adakalanya komunikasi yang erat dalam ruang yang nyata memang diperlukan dalam mencegah kegagalan proyek yang sedang dijalankan.
 
 Pemecahan yang sesungguhnya adalah menyesuaikan kondisi ini berdasarkan profil tiap perusahaan, tim, ataupun tahapan dari masing-masing proyek yang ada. Meskipun demikian, sebuah kepastian adalah bahwa cuma organisasi yang menangkap prinsip sosiologis dari kegiatan pertukaran informasi, mengevaluasi fakta di lapangan berdasarkan tolok ukur menyeluruh seperti model SPACE, dan juga memecahkan batasan teknologi lewat implementasi Zero Trust yang akan berhasil meraih pencapaian inovatif dalam tatanan lingkungan kerja di era modern ini.
+
 
 

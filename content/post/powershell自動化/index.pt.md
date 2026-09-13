@@ -158,11 +158,11 @@ Especialmente ao fazer backup de um grande número de arquivos pequenos (como c�
 ```mermaid
 flowchart TD
     A["Iniciar Script de Backup"] --> B{"O NAS está acessível?"}
-    B -- "Sim" --> C["Executar Robocopy (Multi-threaded)"]
-    B -- "Não" --> D["Gravar log de erro e sair"]
+    B -- Sim --> C["Executar Robocopy (Multi-threaded)"]
+    B -- Não --> D["Gravar log de erro e sair"]
     C --> E{"O Robocopy foi bem-sucedido?"}
-    E -- "Sim (ExitCode < 8)" --> F["Rotacionar logs (Manter últimos 30 dias)"]
-    E -- "Não (ExitCode >= 8)" --> D
+    E -- Sim (ExitCode < 8) --> F["Rotacionar logs (Manter últimos 30 dias)"]
+    E -- Não (ExitCode >= 8) --> D
     F --> G["Finalizar Script de Backup"]
     D --> G
 ```
@@ -490,3 +490,4 @@ Começando desde as bases, como gerenciar políticas de execução e modulariza�
 O PowerShell é um mecanismo de automação extremamente profundo e poderoso que, apesar de ser executado por linha de comando, dá acesso a quase todos os recursos do .NET. Aproveite os scripts apresentados como um ponto de partida, personalize os caminhos e as lógicas de acordo com as necessidades do seu próprio ambiente de trabalho, e desfrute de um tempo criativo onde você está livre de tarefas manuais árduas.
 
 O sucesso na automação provém de "começar com pequenos scripts e gradualmente aumentar a robustez, abordando também o tratamento de erros e a saída de logs". Que tal começar a sua jornada de automação usando PowerShell criando inicialmente um backup de apenas uma pasta de sua preferência no seu próprio PC?
+

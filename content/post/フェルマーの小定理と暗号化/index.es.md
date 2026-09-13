@@ -158,13 +158,13 @@ flowchart TD
     Start["Inicio"] --> Input["Ingresar el número p a probar y la cantidad de pruebas k"]
     Input --> LoopStart["Bucle desde i = 0 hasta k-1"]
     LoopStart --> Condition{"¿i < k?"}
-    Condition -- "Sí" --> RandomA["Elegir un entero aleatorio a en el rango 1 < a < p-1"]
+    Condition -- Sí --> RandomA["Elegir un entero aleatorio a en el rango 1 < a < p-1"]
     RandomA --> Calc["Calcular la exponenciación modular a^(p-1) mod p"]
     Calc --> CheckPrime{"¿El resultado es 1?"}
-    CheckPrime -- "No" --> ReturnComposite["p es un número compuesto (confirmado)"]
-    CheckPrime -- "Sí" --> Increment["Incrementar i"]
+    CheckPrime -- No --> ReturnComposite["p es un número compuesto (confirmado)"]
+    CheckPrime -- Sí --> Increment["Incrementar i"]
     Increment --> Condition
-    Condition -- "No" --> ReturnPrime["p es probablemente un número primo (probabilístico)"]
+    Condition -- No --> ReturnPrime["p es probablemente un número primo (probabilístico)"]
     ReturnComposite --> End["Fin"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ Sin embargo, unos 300 años más tarde, en la década de 1970, en los albores de
 Los mensajes de WhatsApp que enviamos de forma casual todos los días, y nuestras compras en Amazon, todo está bailando sobre esta fórmula simple y hermosa: $a^{p-1} \equiv 1 \pmod p$. El pequeño teorema de Fermat nos enseña que por muy abstractas que sean las matemáticas, siempre llegará un momento en el que sean útiles para la humanidad.
 
 Al estudiar programación o teoría criptográfica, comprender la estructura matemática que sirve como base será una gran herramienta para comprender profundamente el comportamiento de las bibliotecas que se proporcionan como cajas negras y para diseñar sistemas más seguros.
+

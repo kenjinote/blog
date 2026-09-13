@@ -111,7 +111,7 @@ Luar biasa, nilai harapannya sama!
 Pada perhitungan awal yang salah, nilai $X$ pada Pola 1 (sebenarnya $S$) dan nilai $X$ pada Pola 2 (sebenarnya $2S$), yang merupakan **nilai yang berbeda, diperlakukan sebagai variabel $X$ yang sama**, sehingga menciptakan ilusi bahwa "jika ditukar, nilai harapannya akan naik".
 
 ```mermaid
-pie title "Fakta Nilai Harapan (Jika jumlah yang lebih kecil adalah S)"
+pie title Fakta Nilai Harapan (Jika jumlah yang lebih kecil adalah S)
     "Nilai Harapan Tidak Menukar (1.5S)" : 50
     "Nilai Harapan Menukar (1.5S)" : 50
 ```
@@ -163,3 +163,4 @@ Meskipun "Paradoks Dua Amplop" hanya terdiri dari perkalian dan penjumlahan sede
 3. **Kesulitan dalam Menangani Tak Terhingga**: Memasukkan konsep "tak terhingga" yang tidak dapat diterapkan di dunia nyata ke dalam rumus perhitungan akan menghasilkan hasil yang bertentangan dengan akal sehat.
 
 Lain kali dalam hidup saat Anda berpikir "rumput tetangga lebih hijau, dan lebih menguntungkan untuk menukar", ingatlah paradoks ini. Mungkin saja, variabel dalam rumus perhitungan Anda hanya tertukar.
+

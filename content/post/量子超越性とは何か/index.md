@@ -105,7 +105,7 @@ IBM自身は「超越性」という言葉を避け、量子プロセッサの�
 
 ```mermaid
 timeline
-    title "The Evolution of Quantum Milestones"
+    title The Evolution of Quantum Milestones
     2019 : "Google Sycamore (53Q)" : "Quantum Supremacy announcement"
     2019 : "IBM Rebuttal" : "Summit supercomputer simulation in 2.5 days"
     2021 : "IBM Eagle (127Q)" : "Breaking the 100-qubit barrier"
@@ -179,3 +179,4 @@ Googleの戦略は、物理量子ビットの数を急激に増やすよりも�
 現在私たちは、ノイズまみれのNISQデバイスから、エラー訂正を備えた論理量子ビットデバイスへの過渡期に立ち会っています。今後数年から十年の間に、新しい材料科学の発見、創薬プロセスの革命、そして最適化問題のブレイクスルーが、この量子ハードウェアの進化と共に現実のものとなるでしょう。
 
 未来の計算機科学を形作るGoogleとIBM、そして世界中の研究者たちの動向から、今後も目が離せません。
+

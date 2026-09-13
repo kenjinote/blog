@@ -148,7 +148,7 @@ Damit Quantencomputer ihre **Quantenüberlegenheit (Quantum Advantage)**, mit de
 
 ```mermaid
 gantt
-    title "Quantencomputing-Roadmap (Überarbeitet 2026)"
+    title Quantencomputing-Roadmap (Überarbeitet 2026)
     dateFormat  YYYY
     axisFormat  %Y
     
@@ -173,4 +173,5 @@ Das Jahr 2026 wird in die Geschichte der Quantencomputer als „das erste Jahr d
 
 ---
 *Dieser Artikel basiert auf den neuesten Forschungsarbeiten und Branchentrends im Bereich des Quantencomputings mit Stand 2026.*
+
 

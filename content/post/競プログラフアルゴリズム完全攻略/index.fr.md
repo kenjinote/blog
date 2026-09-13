@@ -115,11 +115,11 @@ En utilisant une file de priorité (`std::priority_queue`), le sommet non visit�
 
 ```mermaid
 graph TD
-    S["Source S(0)"] -- "2" --> A["Sommet A(2)"]
-    S["Source S(0)"] -- "5" --> B["Sommet B(5)"]
-    A["Sommet A(2)"] -- "1" --> B["Sommet B(3)"]
-    A["Sommet A(2)"] -- "4" --> C["Sommet C(6)"]
-    B["Sommet B(3)"] -- "1" --> C["Sommet C(4)"]
+    S["Source S(0)"] -- 2 --> A["Sommet A(2)"]
+    S["Source S(0)"] -- 5 --> B["Sommet B(5)"]
+    A["Sommet A(2)"] -- 1 --> B["Sommet B(3)"]
+    A["Sommet A(2)"] -- 4 --> C["Sommet C(6)"]
+    B["Sommet B(3)"] -- 1 --> C["Sommet C(4)"]
 ```
 Comme illustré ci-dessus, le coût pour aller directement de S à B est de 5, mais en passant par A, on peut l'atteindre avec un coût de 3. L'algorithme de Dijkstra effectue cette optimisation.
 
@@ -511,3 +511,4 @@ Les clés pour s'améliorer sur les problèmes de graphes sont : **« implément
 Nous vous recommandons fortement de les ajouter sous forme de snippets dans votre propre bibliothèque (en utilisant des outils de snippets ou en les sauvegardant sur votre dépôt GitHub) afin d'être prêt à les utiliser sans hésitation lors des compétitions réelles.
 
 Les algorithmes de graphes en programmation compétitive constituent le domaine où l'on ressent le plus la beauté et la puissance de l'algorithmique. N'hésitez pas à recopier le code de cet article et à vous mesurer à d'anciens problèmes sur les juges en ligne (Online Judges) !
+

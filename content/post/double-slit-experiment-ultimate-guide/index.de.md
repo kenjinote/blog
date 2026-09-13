@@ -212,9 +212,9 @@ Das folgende Diagramm zeigt schematisch die Gesamtanordnung dieses Experimentier
 ```mermaid
 graph LR
     subgraph Chamber ["Im Hochvakuum (High Vacuum Chamber)"]
-    A["Elektronenkanone<br>Electron Gun"] -->|"Elektronenstrahl oder<br>einzelnes Elektron"| B("Doppelspalt-Abschirmplatte<br>Double Slit Barrier")
-    B -->|"Spalt A"| C["Raum"]
-    B -->|"Spalt B"| C
+    A["Elektronenkanone<br>Electron Gun"] -->| Elektronenstrahl oder<br>einzelnes Elektron | B("Doppelspalt-Abschirmplatte<br>Double Slit Barrier")
+    B -->| Spalt A | C["Raum"]
+    B -->| Spalt B | C
     C --> D["Hochempfindlicher Schirm / Detektor<br>Detector Screen"]
     end
 
@@ -439,3 +439,4 @@ In diesem Artikel haben wir uns im Detail angesehen, wie das äußerst einfache 
 Wir stehen heute am Eingang zum zweiten Akt der Quantenrevolution. Egal, wie weit die Wissenschaft und Technologie fortschreitet, das tiefe Geheimnis der „Wahrscheinlichkeitswelle“ und der „Festlegung durch Beobachtung“, das sich hinter diesen beiden Spalten erstreckt, ist immer noch nicht vollständig gelöst. Wie hat das Universum begonnen? Welche physikalische Bedeutung haben Bewusstsein und Beobachtung? Wie können die mikroskopische Quantenmechanik und die makroskopische allgemeine Relativitätstheorie vereinheitlicht werden (Forschung zur Theorie der Quantengravitation)? Der Schlüssel zur Lösung dieser ultimativen Rätsel könnte ebenfalls in dem einfachen, aber tiefgründigen Phänomen des Doppelspaltexperiments verborgen sein.
 
 Wenn Sie in der Hektik des Alltags zufällig das durchs Fenster hereinfallende Licht oder das Funkeln der Sterne am Nachthimmel betrachten, denken Sie bitte daran: Die unzähligen Photonen, aus denen dieses Licht besteht, waren bis zu dem Moment, in dem sie nach einer langen Reise Ihren „Detektor“ – Ihr Auge – erreichten, Wellen mit dem unendlichen Potenzial, alle Pfade des Universums gleichzeitig zu durchlaufen. Diese Realität, deren Zeugen wir sind, ist nur ein kleiner Teil eines grandiosen, ewigen Tanzes, in dem das Universum sich selbst beobachtet und unentwegt festlegt. Das Doppelspaltexperiment konfrontiert uns weder mit der Angst vor der Unsicherheit der Welt noch mit dem Nichts. Es erfüllt uns vielmehr mit überwältigendem Staunen und Ehrfurcht darüber, wie mysteriös, unvorstellbar reich und eng dieses Universum mit unserer eigenen Existenz verbunden ist. Dies kann wohl als das größte Geschenk angesehen werden, das das Doppelspaltexperiment der Menschheit gemacht hat.
+

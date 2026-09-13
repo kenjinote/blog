@@ -19,13 +19,13 @@ tags: ["C++", "C++26", "Programming", "Tech"]
 
 ```mermaid
 timeline
-    title "C++ 표준화 진화"
-    "C++11" : "Modern C++의 서막" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "기능의 세련화" : "generic lambda, return type deduction"
-    "C++17" : "실용성의 향상" : "std::optional, fold expressions, structured binding"
-    "C++20" : "패러다임 시프트" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "추가적인 확장" : "Deducing this, std::expected, std::print"
-    "C++26" : "차세대 혁명" : "Reflection, Contracts, Pattern Matching"
+    title C++ 표준화 진화
+    C++11 : Modern C++의 서막 : auto, lambda, constexpr, move semantics
+    C++14 : 기능의 세련화 : generic lambda, return type deduction
+    C++17 : 실용성의 향상 : std::optional, fold expressions, structured binding
+    C++20 : 패러다임 시프트 : Concepts, Modules, Coroutines, Ranges
+    C++23 : 추가적인 확장 : Deducing this, std::expected, std::print
+    C++26 : 차세대 혁명 : Reflection, Contracts, Pattern Matching
 ```
 
 C++26은 C++20에서 도입된 Concepts나 Modules 같은 대규모 기능군 위에서, **코드의 자기 기술성(리플렉션)**이나 **견고성(계약 프로그래밍)**을 극한까지 높이는 것을 목적으로 하고 있습니다. 그러면 각 기능의 세부 사항을 파헤쳐 보겠습니다.
@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["타입: User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["meta::info의 범위"]
-    C -->| "[: member :]" | D["직접적인 멤버 접근 (obj.id, obj.name)"]
+    A["타입: User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["meta::info의 범위"]
+    C -->| [: member :] | D["직접적인 멤버 접근 (obj.id, obj.name)"]
     D --> E["생성된 코드 (제로 오버헤드)"]
 ```
 
@@ -146,12 +146,12 @@ Contracts는 단순한 주석이나 오래된 `assert()` 매크로와는 다릅�
 ```mermaid
 graph TD
     A["함수 호출됨"] --> B{"사전 조건 평가"}
-    B -- "참" --> C["본문 실행"]
-    B -- "거짓" --> D["위반 핸들러 호출"]
+    B -- 참 --> C["본문 실행"]
+    B -- 거짓 --> D["위반 핸들러 호출"]
     D --> E["에러 로그 / 중단 / 예외 발생"]
     C --> F{"사후 조건 평가"}
-    F -- "참" --> G["값 반환"]
-    F -- "거짓" --> D
+    F -- 참 --> G["값 반환"]
+    F -- 거짓 --> D
 ```
 
 Contracts를 이용함으로써 API의 명세가 스스로 문서화될 뿐만 아니라, 미정의 동작(Undefined Behavior, UB)을 일으키기 전에 안전하게 프로그램을 정지 및 제어할 수 있으므로 C++ 특유의 메모리 파괴 버그나 논리 버그를 대폭 줄일 수 있을 것으로 기대됩니다.
@@ -367,3 +367,5 @@ C++26은 오랫동안 C++ 프로그래머가 기다려온 '꿈의 기능'이 한
 
 ---
 *이 글은 2026년 시점의 C++26 표준화 상황을 바탕으로 작성되었습니다. 각 컴파일러의 구현 상황에 따라 일부 구문이 변경될 가능성이 있음에 유의해 주십시오.*
+
+

@@ -155,8 +155,8 @@ graph TD
   Wn --> Prob
   Prob --> Bayes["套用貝氏定理"]
   Bayes --> Class{"P(垃圾郵件) > 0.9?"}
-  Class -- "是" --> Spam["移至垃圾郵件匣"]
-  Class -- "否" --> Ham["送達收件匣"]
+  Class -- 是 --> Spam["移至垃圾郵件匣"]
+  Class -- 否 --> Ham["送達收件匣"]
 ```
 
 ### 實作範例 (Python)
@@ -396,8 +396,8 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 flowchart LR
   Start["開始：猜測初始值 x0"] --> Eval["評估 f(xn) 與 f'(xn)"]
   Eval --> Check{"f(xn) 是否近似於 0？"}
-  Check -- "是" --> Done["回傳 xn 作為根"]
-  Check -- "否" --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- 是 --> Done["回傳 xn 作為根"]
+  Check -- 否 --> Update["xn+1 = xn - f(xn) / f'(xn)"]
   Update --> Eval
 ```
 
@@ -624,3 +624,4 @@ int main() {
 理解數學背景，是從單純呼叫現成函式庫（如 `math.sin` 或 `numpy.fft`）的編碼員，升級為能理解其內部結構並發揮出極限的工程師所不可或缺的一步。下次寫程式的時候，不妨發揮一點想像力，想想其背後有哪些優美的數學公式在運作吧。
 
 **Happy Coding and Math!**
+

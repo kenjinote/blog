@@ -125,7 +125,7 @@ La desventaja de QMK era que "se necesitaba compilar el código fuente y flashea
 El diseño general de las teclas "Row-staggered" (con filas escalonadas) es un remanente para evitar que los brazos mecánicos de las máquinas de escribir se enredaran, y no se basa en la estructura de la mano humana.
 
 ```mermaid
-pie title "Preferencias de distribución de teclado ideales para ingenieros (Datos estimados)"
+pie title Preferencias de distribución de teclado ideales para ingenieros (Datos estimados)
     "Row-staggered (Tradicional)" : 45
     "Alice Layout (Ergonómico)" : 15
     "Ortholinear (Cuadrícula)" : 10
@@ -201,5 +201,6 @@ Elegir un teclado es un proceso de "optimización de tu propia interfaz" a lo la
 Los cinco teclados presentados en esta ocasión (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) son todos obras maestras que apuntan a "la mejor experiencia de entrada" desde diferentes enfoques. Por favor, encuentra a tu mejor compañero de acuerdo con tu propio estilo de escritura y los problemas físicos que enfrentes.
 
 La inversión en un teclado sin duda te traerá recompensas en forma de "millones de líneas de código sin errores".
+
 
 

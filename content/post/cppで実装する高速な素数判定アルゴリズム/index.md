@@ -125,19 +125,19 @@ graph TD
     Start["テスト開始 (入力: N, a)"] --> CalcDS["N-1 = d * 2^s を満たす d (奇数) と s を計算"]
     CalcDS --> CalcX["x = a^d mod N を計算"]
     CalcX --> CheckX1{"x == 1 または x == N-1 ?"}
-    CheckX1 -- "Yes" --> ReturnTrue["素数の可能性がある (Probably Prime)"]
-    CheckX1 -- "No" --> LoopStart["r = 1 から s-1 までループ開始"]
+    CheckX1 -- Yes --> ReturnTrue["素数の可能性がある (Probably Prime)"]
+    CheckX1 -- No --> LoopStart["r = 1 から s-1 までループ開始"]
     
     LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- "No" --> ReturnFalse["確実に合成数 (Composite)"]
-    LoopCondition -- "Yes" --> SquareX["x = (x * x) mod N を計算"]
+    LoopCondition -- No --> ReturnFalse["確実に合成数 (Composite)"]
+    LoopCondition -- Yes --> SquareX["x = (x * x) mod N を計算"]
     
     SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- "Yes" --> ReturnTrue
-    CheckXMinus1 -- "No" --> CheckXOne{"x == 1 ?"}
+    CheckXMinus1 -- Yes --> ReturnTrue
+    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
     
-    CheckXOne -- "Yes" --> ReturnFalse
-    CheckXOne -- "No" --> LoopNext["r を 1 増加させて次へ"]
+    CheckXOne -- Yes --> ReturnFalse
+    CheckXOne -- No --> LoopNext["r を 1 増加させて次へ"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ graph LR
 *Reference:*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

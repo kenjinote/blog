@@ -69,11 +69,11 @@ $$ R = e^{-\frac{t}{S}} $$
 graph LR
     A["學習剛結束 (R=100%)"] --> B["1天後 (遺忘)"]
     B --> C{"使用 Anki 複習"}
-    C -- "答對" --> D["複習間隔延長為3天 (S增加)"]
-    C -- "答錯" --> E["重置複習間隔"]
+    C -- 答對 --> D["複習間隔延長為3天 (S增加)"]
+    C -- 答錯 --> E["重置複習間隔"]
     D --> F["3天後 (緩慢遺忘)"]
     F --> G{"使用 Anki 複習"}
-    G -- "答對" --> H["複習間隔延長為7天"]
+    G -- 答對 --> H["複習間隔延長為7天"]
 ```
 
 ### 3.1 數學與演算法中 Anki 卡片的製作方法
@@ -249,15 +249,15 @@ flowchart TD
     
     MathProof --> Feynman["費曼技巧"]
     Feynman --> FindGap{"是否有理解上的漏洞？"}
-    FindGap -- "Yes" --> Reread["重新閱讀教科書"]
+    FindGap -- Yes --> Reread["重新閱讀教科書"]
     Reread --> SQ3R
-    FindGap -- "No" --> Coding["將公式翻譯為程式碼 (Python/C++)"]
+    FindGap -- No --> Coding["將公式翻譯為程式碼 (Python/C++)"]
     
     Coding --> Debug{"是否如預期運作？"}
-    Debug -- "No" --> FixMentalModel["修正心智模型"]
+    Debug -- No --> FixMentalModel["修正心智模型"]
     FixMentalModel --> Coding
     
-    Debug -- "Yes" --> SRS["將概念細分並登錄至 Anki"]
+    Debug -- Yes --> SRS["將概念細分並登錄至 Anki"]
     SRS --> BlogOutput["在技術部落格中體系化 (最終定型)"]
     BlogOutput --> Master["知識化為血肉、完全精通"]
 ```
@@ -283,5 +283,6 @@ flowchart TD
 閱讀數學書或演算法的專業書籍，絕非一條輕鬆的路。但是，透過 SQ3R 掌握結構、用費曼技巧語言化、寫成程式碼驗證動作、用 Anki 防止遺忘，最後透過技術部落格向世界發聲，藉由運轉這一連串的循環，那些難解的知識必定會成為你的「力量」。
 
 表面上的 API 用法或框架知識幾年後就會過時，但數學的思考能力與演算法基礎卻是一輩子的資產。下次翻開難解的技術書時，請務必活用本文的方法，勇敢躍入知識的深淵吧。
+
 
 

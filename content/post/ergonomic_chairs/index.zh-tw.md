@@ -109,14 +109,14 @@ Okamura 的 Contessa Seconda 擁有由 Giorgetto Giugiaro 操刀的優美設計�
 ```mermaid
 flowchart TD
     Start["大多從事哪種桌面工作？"] --> Q1["前傾姿勢（打字、書寫工作）居多？"]
-    Q1 -- "是" --> Q2["預算能達到 15 萬日圓以上嗎？"]
-    Q1 -- "否" --> Q3["重視後仰、放鬆姿勢（思考、看影片）？"]
-    Q2 -- "是" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "否" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "是" --> Embody["Herman Miller Embody"]
-    Q3 -- "否" --> Q4["使用多種裝置、重視手臂支撐？"]
-    Q4 -- "是" --> Gesture["Steelcase Gesture"]
-    Q4 -- "否" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- 是 --> Q2["預算能達到 15 萬日圓以上嗎？"]
+    Q1 -- 否 --> Q3["重視後仰、放鬆姿勢（思考、看影片）？"]
+    Q2 -- 是 --> Aeron["Herman Miller Aeron"]
+    Q2 -- 否 --> Sylphy["Okamura Sylphy"]
+    Q3 -- 是 --> Embody["Herman Miller Embody"]
+    Q3 -- 否 --> Q4["使用多種裝置、重視手臂支撐？"]
+    Q4 -- 是 --> Gesture["Steelcase Gesture"]
+    Q4 -- 否 --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ flowchart TD
 以下的圓餅圖顯示了遠距工作者常見的不良姿勢比例。調整環境以避免這些姿勢是非常重要的。
 
 ```mermaid
-pie title "遠距工作者不良姿勢 Top 5"
+pie title 遠距工作者不良姿勢 Top 5
     "駝背、頭部前傾（烏龜頸）" : 40
     "骨盆後傾（薦骨坐姿）" : 30
     "翹腳（骨盆不對稱歪斜）" : 15
@@ -148,5 +148,7 @@ pie title "遠距工作者不良姿勢 Top 5"
 人體工學椅絕對不是便宜的購物。超過 10 萬到 20 萬日圓的款式也屢見不鮮。然而，考慮到每天要在上面度過 8 小時，一年約 2000 小時的時間，為防範腰痛導致的生產力下降與醫療費用風險，可以說它是「投資報酬率最高（高 ROI）的設備」。
 
 請從生物力學的角度重新審視自己的工作習慣，並挑選一把能精準支撐您骨骼與肌肉、「在物理學上正確的椅子」。這正是讓您能長久、舒適地持續工程開發的最大秘訣。
+
+
 
 

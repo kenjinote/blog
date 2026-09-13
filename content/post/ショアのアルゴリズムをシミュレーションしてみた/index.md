@@ -57,11 +57,11 @@ graph TD
 graph TD
     A["入力: 素因数分解したい合成数 N"] --> B["a < N なる乱数 a を選ぶ"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Yes" --> D["自明な因数 gcd(a, N) を出力して終了"]
-    C -- "No" --> E["量子アルゴリズムで f(x) = a^x mod N の周期 r を見つける"]
+    C -- Yes --> D["自明な因数 gcd(a, N) を出力して終了"]
+    C -- No --> E["量子アルゴリズムで f(x) = a^x mod N の周期 r を見つける"]
     E --> F{"r が偶数 かつ a^(r/2) ≢ -1 mod N ?"}
-    F -- "No" --> B
-    F -- "Yes" --> G["因数 p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N) を計算"]
+    F -- No --> B
+    F -- Yes --> G["因数 p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N) を計算"]
     G --> H["出力: p, q"]
 ```
 
@@ -358,4 +358,5 @@ ITインフラを管理するエンジニアにとって、既存のRSAや楕円
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

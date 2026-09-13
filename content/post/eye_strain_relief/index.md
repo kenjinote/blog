@@ -22,7 +22,7 @@ tags: ["Monitors", "Ergonomics", "E-ink", "Eye Strain"]
 コンピュータビジョン症候群（CVS）は単一の要因で引き起こされるわけではありません。以下の円グラフに示すように、様々な要素が複雑に絡み合って目の疲れ、痛み、ドライアイ、そして全身の疲労感へと繋がります。
 
 ```mermaid
-pie title "Causes of Computer Vision Syndrome (CVS)"
+pie title Causes of Computer Vision Syndrome (CVS)
     "Blue Light & Glare" : 30
     "Screen Flickering (PWM)" : 25
     "Improper Contrast & Lighting" : 20
@@ -121,7 +121,7 @@ $$ p = k \ln \left( \frac{S}{S_0} \right) $$
 
 ```mermaid
 xychart-beta
-    title "Blue Light Emission Spectrum Comparison"
+    title Blue Light Emission Spectrum Comparison
     x-axis "Wavelength (nm)" [400, 420, 440, 460, 480, 500]
     y-axis "Relative Intensity" 0 --> 100
     bar "Standard LCD (W-LED)" [10, 30, 95, 80, 40, 20]
@@ -280,5 +280,7 @@ if __name__ == '__main__':
 5. **モニターアームで $\tan \theta = h/d$ に基づく最適な視線角度を作り、「20-20-20ルール」をシステム化する**
 
 これらの対策は、一時的な出費や手間を伴うかもしれませんが、目の健康寿命を延ばし、生涯にわたる生産性とQOL（生活の質）を最大化するための、最も費用対効果の高い「技術投資」と言えるでしょう。今すぐ自分の開発環境を見直し、目への思いやりを実装してみてください。
+
+
 
 

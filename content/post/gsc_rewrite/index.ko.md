@@ -38,7 +38,7 @@ $$
 
 ```mermaid
 xychart-beta
-    title "Expected CTR vs Actual CTR by Position"
+    title Expected CTR vs Actual CTR by Position
     x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     y-axis "CTR (%)" 0 --> 35
     line [30.5, 15.2, 10.1, 7.5, 5.2, 4.1, 3.2, 2.5, 2.0, 1.5]
@@ -276,5 +276,6 @@ Google Search Console을 활용한 기술 게시글의 리라이팅은 단순한
 4. **TF-IDF를 이용한 NLP 분석**을 통해, 경쟁사와의 콘텐츠 격차를 발견하고 제목(H2/H3)을 최적화합니다.
 
 기술의 트렌드는 끊임없이 변화합니다. 독자가 지금 겪고 있는 오류나 문제에 정확하게 대응하기 위해서라도, 데이터를 아군으로 삼은 전략적인 리라이팅을 꼭 일상적인 운영에 도입해 보시기 바랍니다.
+
 
 

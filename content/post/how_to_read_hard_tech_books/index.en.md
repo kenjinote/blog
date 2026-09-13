@@ -69,11 +69,11 @@ Here, $t$ is the elapsed time, and $S$ is the strength of memory. As you repeat 
 graph LR
     A["Immediately after learning (R=100%)"] --> B["1 day later (Forgetting)"]
     B --> C{"Review with Anki"}
-    C -- "Correct" --> D["Review interval extends to 3 days (S increases)"]
-    C -- "Incorrect" --> E["Review interval resets"]
+    C -- Correct --> D["Review interval extends to 3 days (S increases)"]
+    C -- Incorrect --> E["Review interval resets"]
     D --> F["3 days later (Slow forgetting)"]
     F --> G{"Review with Anki"}
-    G -- "Correct" --> H["Review interval extends to 7 days"]
+    G -- Correct --> H["Review interval extends to 7 days"]
 ```
 
 ### 3.1 How to Create Anki Cards for Math and Algorithms
@@ -249,15 +249,15 @@ flowchart TD
     
     MathProof --> Feynman["Feynman Technique"]
     Feynman --> FindGap{"Are there gaps in understanding?"}
-    FindGap -- "Yes" --> Reread["Reread the textbook"]
+    FindGap -- Yes --> Reread["Reread the textbook"]
     Reread --> SQ3R
-    FindGap -- "No" --> Coding["Translate formulas into code (Python/C++)"]
+    FindGap -- No --> Coding["Translate formulas into code (Python/C++)"]
     
     Coding --> Debug{"Does it work as intended?"}
-    Debug -- "No" --> FixMentalModel["Fix mental model"]
+    Debug -- No --> FixMentalModel["Fix mental model"]
     FixMentalModel --> Coding
     
-    Debug -- "Yes" --> SRS["Register in Anki by subdividing concepts"]
+    Debug -- Yes --> SRS["Register in Anki by subdividing concepts"]
     SRS --> BlogOutput["Systematization on a tech blog (Final retention)"]
     BlogOutput --> Master["Mastery and assimilation of knowledge"]
 ```
@@ -283,5 +283,6 @@ When writing a blog, the following processes occur:
 Reading specialized books on mathematics and algorithms is by no means an easy path. However, by running through the cycle of grasping the structure with SQ3R, verbalizing it with the Feynman Technique, translating it into code to verify its behavior, preventing forgetting with Anki, and finally broadcasting it to the world on a tech blog, that hard-to-understand knowledge will surely become your "strength".
 
 While superficial API usage and framework knowledge will become obsolete in a few years, mathematical thinking and algorithm fundamentals are lifelong assets. The next time you open a hard technical book, please use the methods in this article and dive into the abyss of knowledge.
+
 
 

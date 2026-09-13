@@ -246,15 +246,14 @@ Es un esquema criptográfico basado en la teoría de códigos de corrección de 
 
 ```mermaid
 timeline
-    title "Historia de la evolución de la criptografía y las computadoras"
-    "Antigüedad a Edad Media" : "Cifrado César" : "Cifrado Vigenère" : "Nacimiento del análisis de frecuencias"
-    "Años 1930 a 1940" : "Operación y descifrado de Enigma" : "Desarrollo de la máquina de Turing y la Bombe"
-    "Años 1970" : "Estandarización de DES (1977)" : "Intercambio de claves Diffie-Hellman (1976)" : "Nacimiento de la criptografía RSA (1977)"
-    "Años 1980 a 1990" : "Propuesta de la criptografía de curva elíptica (ECC)" : "Publicación del algoritmo de Shor (1994)"
-    "Años 2000" : "Estandarización de AES (2001)"
-    "Años 2010 al presente" : "Aceleración de la investigación en computadoras cuánticas" : "Inicio del proyecto de estandarización de PQC por el NIST"
-    "Futuro cercano (Q-Day)" : "¿Realización de computadoras cuánticas a gran escala?" : "Transición completa a PQC (ML-KEM/ML-DSA)"
-```
+    title Historia de la evolución de la criptografía y las computadoras
+    Antigüedad a Edad Media : Cifrado César : Cifrado Vigenère : Nacimiento del análisis de frecuencias
+    Años 1930 a 1940 : Operación y descifrado de Enigma : Desarrollo de la máquina de Turing y la Bombe
+    Años 1970 : Estandarización de DES (1977) : Intercambio de claves Diffie-Hellman (1976) : Nacimiento de la criptografía RSA (1977)
+    Años 1980 a 1990 : Propuesta de la criptografía de curva elíptica (ECC) : Publicación del algoritmo de Shor (1994)
+    Años 2000 : Estandarización de AES (2001)
+    Años 2010 al presente : Aceleración de la investigación en computadoras cuánticas : Inicio del proyecto de estandarización de PQC por el NIST
+    Futuro cercano (Q-Day) : ¿Realización de computadoras cuánticas a gran escala? : Transición completa a PQC (ML-KEM/ML-DSA)```
 
 ---
 
@@ -267,3 +266,5 @@ El cifrado César fue derrotado por el análisis de frecuencias, y la invencible
 Sin embargo, la humanidad ya está mirando hacia el futuro y preparando un nuevo "escudo", la criptografía poscuántica (PQC). Actualmente, prepararse para la transición de la criptografía de clave pública existente a PQC (garantizar la agilidad criptográfica: Crypto Agility) es una tarea urgente para la infraestructura de TI en todo el mundo.
 
 La tecnología criptográfica no es solo un complejo rompecabezas matemático, sino el baluarte más fuerte para proteger nuestra privacidad, propiedad y la infraestructura social misma.
+
+

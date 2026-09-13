@@ -57,11 +57,11 @@ Alur keseluruhan algoritma adalah sebagai berikut:
 graph TD
     A["Input: Bilangan komposit N yang ingin difaktorkan"] --> B["Pilih bilangan acak a sehingga a < N"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Yes" --> D["Outputkan faktor trivial gcd(a, N) dan selesai"]
-    C -- "No" --> E["Temukan periode r dari f(x) = a^x mod N dengan algoritma kuantum"]
+    C -- Yes --> D["Outputkan faktor trivial gcd(a, N) dan selesai"]
+    C -- No --> E["Temukan periode r dari f(x) = a^x mod N dengan algoritma kuantum"]
     E --> F{"r genap DAN a^(r/2) ≢ -1 mod N ?"}
-    F -- "No" --> B
-    F -- "Yes" --> G["Hitung faktor p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- No --> B
+    F -- Yes --> G["Hitung faktor p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["Output: p, q"]
 ```
 
@@ -358,4 +358,5 @@ Silakan jalankan kode Python yang telah diperkenalkan pada lingkungan Anda masin
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Dokumentasi Qiskit: https://qiskit.org/documentation/
+
 

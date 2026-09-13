@@ -109,14 +109,14 @@ Okamura（奥卡姆拉）的Contessa Seconda凭借由乔治亚罗（Giorgetto Gi
 ```mermaid
 flowchart TD
     Start["经常进行哪种桌面工作？"] --> Q1["前倾姿势（打字、书写）较多？"]
-    Q1 -- "Yes" --> Q2["预算可以达到15万日元以上吗？"]
-    Q1 -- "No" --> Q3["看重后仰・放松姿势（思考・观看视频）？"]
-    Q2 -- "Yes" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "No" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "Yes" --> Embody["Herman Miller Embody"]
-    Q3 -- "No" --> Q4["使用多台设备・看重手臂支撑？"]
-    Q4 -- "Yes" --> Gesture["Steelcase Gesture"]
-    Q4 -- "No" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- Yes --> Q2["预算可以达到15万日元以上吗？"]
+    Q1 -- No --> Q3["看重后仰・放松姿势（思考・观看视频）？"]
+    Q2 -- Yes --> Aeron["Herman Miller Aeron"]
+    Q2 -- No --> Sylphy["Okamura Sylphy"]
+    Q3 -- Yes --> Embody["Herman Miller Embody"]
+    Q3 -- No --> Q4["使用多台设备・看重手臂支撑？"]
+    Q4 -- Yes --> Gesture["Steelcase Gesture"]
+    Q4 -- No --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ flowchart TD
 以下饼图显示了远程工作者常见的几种不良姿势的比例。调整环境以避免这些姿势非常重要。
 
 ```mermaid
-pie title "远程工作者不良姿势Top5"
+pie title 远程工作者不良姿势Top5
     "驼背・头部前倾（直颈病）" : 40
     "骨盆后倾（骶骨坐）" : 30
     "跷二郎腿（骨盆不对称扭曲）" : 15
@@ -148,5 +148,7 @@ pie title "远程工作者不良姿势Top5"
 人体工学椅绝对不是便宜的商品。超过10万到20万日元的型号也不在少数。但是，考虑到每天要在上面度过8小时，每年大约2000小时，为了防患因腰痛导致的生产力下降和医疗费用风险，可以说它是“性价比最高的投资（高ROI设备）”。
 
 请从生物力学角度重新审视自己的工作方式，挑选出一把“符合物理学”且能精准支撑自己骨骼和肌肉的椅子。这才是能够长期、舒适地持续工程师生涯的最大秘诀。
+
+
 
 

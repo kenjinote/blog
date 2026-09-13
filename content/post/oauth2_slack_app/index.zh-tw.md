@@ -28,11 +28,11 @@ OAuth 2.0 的誕生正是為了避免這種「密碼共享」的情況，同時�
 
 ```mermaid
 graph TD
-    RO["Resource Owner (資源擁有者 / 使用者)"] -- "給予授權" --> C["Client (Slack App)"]
-    C -- "請求授權" --> AS["Authorization Server (Slack 授權伺服器)"]
-    AS -- "發行存取權杖 (Access Token)" --> C
-    C -- "使用權杖進行存取" --> RS["Resource Server (Slack API 伺服器)"]
-    RO -- "使用 ID / 密碼登入" --> AS
+    RO["Resource Owner (資源擁有者 / 使用者)"] -- 給予授權 --> C["Client (Slack App)"]
+    C -- 請求授權 --> AS["Authorization Server (Slack 授權伺服器)"]
+    AS -- 發行存取權杖 (Access Token) --> C
+    C -- 使用權杖進行存取 --> RS["Resource Server (Slack API 伺服器)"]
+    RO -- 使用 ID / 密碼登入 --> AS
 ```
 
 1. **Resource Owner（資源擁有者）**
@@ -371,4 +371,5 @@ sequenceDiagram
 4. 基於 **最小權限原則** 的範圍設計，以及在存入資料庫時進行加密，是營運上絕對不可或缺的要素。
 
 OAuth 2.0 是一門非常深奧的學問，光是 RFC 就有龐大的規格，但像這樣以實際的平台（Slack）為目標，一邊動手實作一邊學習，應該就能體會到其精練的設計理念與堅固的安全機制。希望本文的知識能在未來的應用程式開發或 API 整合實作中對您有所幫助。
+
 

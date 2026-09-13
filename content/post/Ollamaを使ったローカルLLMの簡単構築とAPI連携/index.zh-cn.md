@@ -40,7 +40,7 @@ Ollama内置了llama.cpp，采用了由Go语言编写的服务器进程提供RES
 
 ```mermaid
 graph TD
-    A["客户端应用 (Python / Node.js)"] -- "HTTP/REST API" --> B["Ollama 服务器 (Go)"]
+    A["客户端应用 (Python / Node.js)"] -- HTTP/REST API --> B["Ollama 服务器 (Go)"]
     B --> C["模型管理器 (GGUF处理)"]
     B --> D["推理引擎 (llama.cpp)"]
     D --> E["GPU 加速 (CUDA / Metal / ROCm)"]
@@ -154,9 +154,9 @@ ollama rm phi3:instruct
 
 ```mermaid
 graph LR
-    A["基础模型 (llama3.1)"] -->|"添加系统提示词"| B["中间配置"]
-    B -->|"设置 Temperature & Top_p"| C["自定义模型 (kansai-coder)"]
-    C -->|"运行"| D["交互式 CLI / API"]
+    A["基础模型 (llama3.1)"] -->| 添加系统提示词 | B["中间配置"]
+    B -->| 设置 Temperature & Top_p | C["自定义模型 (kansai-coder)"]
+    C -->| 运行 | D["交互式 CLI / API"]
 ```
 
 作为示例，让我们创建一个使用关西腔回答问题的编程助手模型。
@@ -500,4 +500,5 @@ $$
 Ollama 的出现，极大地降低了引入本地 LLM 的门槛。类似操作 Docker 容器的简单命令体系，加上能从外部应用程序轻松调用的 REST API，这种组合可以说是当今本地 AI 开发事实上的标准。
 
 如果您是一位正苦恼于云端 LLM 的成本或安全限制的开发者，请务必参考本文介绍的步骤，使用 Ollama 搭建本地 LLM 环境，并将其集成到您的应用程序中。您一定会感受到 AI 带来的无限可能，而且这种体验会变得更加自由和触手可及。
+
 

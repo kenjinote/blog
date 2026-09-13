@@ -115,11 +115,11 @@ Usando una cola de prioridad (`std::priority_queue`), el vértice no fijado con 
 
 ```mermaid
 graph TD
-    S["Origen S(0)"] -- "2" --> A["Vértice A(2)"]
-    S["Origen S(0)"] -- "5" --> B["Vértice B(5)"]
-    A["Vértice A(2)"] -- "1" --> B["Vértice B(3)"]
-    A["Vértice A(2)"] -- "4" --> C["Vértice C(6)"]
-    B["Vértice B(3)"] -- "1" --> C["Vértice C(4)"]
+    S["Origen S(0)"] -- 2 --> A["Vértice A(2)"]
+    S["Origen S(0)"] -- 5 --> B["Vértice B(5)"]
+    A["Vértice A(2)"] -- 1 --> B["Vértice B(3)"]
+    A["Vértice A(2)"] -- 4 --> C["Vértice C(6)"]
+    B["Vértice B(3)"] -- 1 --> C["Vértice C(4)"]
 ```
 Como se muestra en la figura anterior, el costo de ir directamente de S a B es 5, pero pasando por A, se puede llegar con un costo de 3. El algoritmo de Dijkstra realiza optimizaciones de esta manera.
 
@@ -511,3 +511,4 @@ La clave para mejorar en los problemas de grafos es **"implementarlos una y otra
 Es altamente recomendable guardar tu código como una biblioteca de fragmentos (en una herramienta de fragmentos o en tu repositorio de GitHub) para poder utilizarlo sin dudar durante las competiciones.
 
 Los algoritmos de grafos en la programación competitiva son el área donde más se puede experimentar la belleza y el poder de los algoritmos. ¡Te animamos a copiar el código de este artículo y a desafiar preguntas pasadas en jueces en línea!
+

@@ -82,7 +82,7 @@ Unten sehen Sie ein Gantt-Diagramm, das ein Modell zur Zeitersparnis durch die E
 
 ```mermaid
 gantt
-    title "Vergleich der Kontextwechselzeit: Ultrawide vs. Dual Monitor"
+    title Vergleich der Kontextwechselzeit: Ultrawide vs. Dual Monitor
     dateFormat  s
     axisFormat  %S
     
@@ -238,5 +238,6 @@ flowchart TD
 ```
 
 Displays sind eine Infrastruktur, die Ihre Produktivität nach dem Kauf viele Jahre lang unterstützen wird. Bitte integrieren Sie die Prinzipien der visuellen Ergonomie, die Mathematik der PPI, Bandbreitengrenzen und softwarebasiertes Fenstermanagement, die in diesem Artikel erläutert wurden, um kompromisslos den bestmöglichen Arbeitsbereich zu schaffen. Letztendlich sollte dies der kürzeste Weg zur Erstellung des besten Codes sein.
+
 
 

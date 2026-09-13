@@ -114,7 +114,7 @@ Es decir, incluso si hay infinitos pasos, el tiempo total requerido no se vuelve
 Aquiles, de manera brillante, alcanza a la tortuga y luego la supera aproximadamente 1.11 segundos después del inicio.
 
 ```mermaid
-pie title "Tiempo hasta que Aquiles la alcanza (Total de aprox. 1.11 segundos)"
+pie title Tiempo hasta que Aquiles la alcanza (Total de aprox. 1.11 segundos)
     "Paso 1 (1 segundo)" : 90
     "Paso 2 (0.1 segundos)" : 9
     "Suma infinita del Paso 3 en adelante (0.011... segundos)" : 1
@@ -167,3 +167,4 @@ Sin embargo, para los antiguos filósofos griegos de la época que no tenían lo
 La profunda pregunta que planteó esta paradoja, "¿Qué significa ser continuo?" o "¿Qué significa poder dividirse infinitamente?", se convirtió en una fuerza impulsora importante que condujo al nacimiento del **"Cálculo"** por Newton y Leibniz en épocas posteriores, e incluso a la teoría moderna de los fundamentos matemáticos.
 
 Una gran paradoja no solo confunde a las personas, sino que también es una llave que abre la puerta a nuevas matemáticas.
+

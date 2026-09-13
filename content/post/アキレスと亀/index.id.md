@@ -114,7 +114,7 @@ Dengan kata lain, meskipun ada langkah yang tak terhingga jumlahnya, total waktu
 Achilles dengan luar biasa akan menyusul dan melewati kura-kura setelah sekitar 1.11 detik sejak awal dimulai.
 
 ```mermaid
-pie title "Waktu hingga Achilles menyusul (Total sekitar 1.11 detik)"
+pie title Waktu hingga Achilles menyusul (Total sekitar 1.11 detik)
     "Langkah 1 (1 detik)" : 90
     "Langkah 2 (0.1 detik)" : 9
     "Jumlah tak terhingga dari Langkah 3 dan seterusnya (0.011... detik)" : 1
@@ -167,3 +167,4 @@ Namun, bagi para filsuf Yunani kuno yang tidak memiliki konsep "tak terhingga" a
 Pertanyaan mendalam yang diajukan oleh paradoks ini, seperti "apa itu sesuatu yang kontinu" dan "apa artinya dapat dibagi hingga tak terbatas", menjadi pendorong penting yang mengarah pada lahirnya **"kalkulus"** oleh Newton dan Leibniz di kemudian hari, serta bermuara pada dasar-dasar matematika modern.
 
 Paradoks yang hebat tidak hanya membingungkan orang, tetapi juga merupakan kunci untuk membuka pintu matematika yang baru.
+

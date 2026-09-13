@@ -158,11 +158,11 @@ Especialmente al respaldar una gran cantidad de archivos pequeños (como código
 ```mermaid
 flowchart TD
     A["Iniciar script de respaldo"] --> B{"¿Es accesible el NAS?"}
-    B -- "Sí" --> C["Ejecutar Robocopy (Multihilo)"]
-    B -- "No" --> D["Escribir registro de error y salir"]
+    B -- Sí --> C["Ejecutar Robocopy (Multihilo)"]
+    B -- No --> D["Escribir registro de error y salir"]
     C --> E{"¿Tuvo éxito Robocopy?"}
-    E -- "Sí (ExitCode < 8)" --> F["Rotar registros (Mantener últimos 30 días)"]
-    E -- "No (ExitCode >= 8)" --> D
+    E -- Sí (ExitCode < 8) --> F["Rotar registros (Mantener últimos 30 días)"]
+    E -- No (ExitCode >= 8) --> D
     F --> G["Finalizar script de respaldo"]
     D --> G
 ```
@@ -490,3 +490,4 @@ Comenzando con la creación de una base a través de la gestión de políticas d
 PowerShell es muy profundo y, a pesar de ser una herramienta de línea de comandos, es un motor de automatización poderoso capaz de acceder a casi todas las funciones de .NET. Tomando como base los scripts presentados aquí, le invitamos a personalizar las rutas y las lógicas de procesamiento para que se adapten a su entorno, obteniendo un tiempo creativo liberado de las tediosas tareas manuales.
 
 El éxito en la automatización radica en "comenzar con un pequeño script e ir aumentando gradualmente su solidez mediante el manejo de errores y la salida de registros". ¿Por qué no empezar su viaje de automatización con PowerShell haciendo una copia de seguridad de una sola carpeta de su PC?
+

@@ -148,12 +148,12 @@ flowchart TD
     HKLM_Soft["HKLM\SOFTWARE"]
     HKLM_WOW64["HKLM\SOFTWARE\WOW6432Node"]
 
-    App32 -->|"RegOpenKeyEx()"| RegAPI
-    App64 -->|"RegOpenKeyEx()"| RegAPI
+    App32 -->| RegOpenKeyEx() | RegAPI
+    App64 -->| RegOpenKeyEx() | RegAPI
     RegAPI --> CM
 
-    CM -->|"如果是 64 位元處理程序"| HKLM_Soft
-    CM -->|"如果是 32 位元處理程序 (重新導向)"| HKLM_WOW64
+    CM -->| 如果是 64 位元處理程序 | HKLM_Soft
+    CM -->| 如果是 32 位元處理程序 (重新導向) | HKLM_WOW64
 ```
 從 PowerShell 指令碼或 C# 應用程式編輯登錄檔時，必須強烈意識到正在執行的處理程序本身是 32 位元還是 64 位元。否則，將會引發「明明已經寫入的設定卻在檔案總管中看不到（寫到其他地方去了）」這種棘手的問題。
 
@@ -399,5 +399,6 @@ $backup = Import-Clixml -Path "C:\backup\reg_backup.xml"
 ## 總結
 
 Windows 登錄檔是個強大且複雜的基礎系統，統整管理了作業系統的所有行為與應用程式設定。手動且無序的編輯將伴隨極高的系統損毀風險，這在數學上也是可以被證實的。因此，使用 PowerShell 和 C# 等可程式化的手段，遵循「基礎架構即程式碼 (Infrastructure as Code)」的原則，以安全、可測試且可重現的方式進行組態管理，在現代的系統管理與開發中是不可或缺的。請活用本文所解說的深層架構理解與實作模式，目標是建構出更堅固且安全的 Windows 環境。
+
 
 

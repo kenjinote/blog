@@ -189,7 +189,7 @@ A continuación se muestra el ciclo de vida de operación de contenido ideal uti
 
 ```mermaid
 gantt
-    title "Gestión del ciclo de vida del contenido basada en datos"
+    title Gestión del ciclo de vida del contenido basada en datos
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%d
     
@@ -278,5 +278,6 @@ Para aumentar drásticamente el tráfico mensual de un blog técnico, además de
 5. Automatización total de la distribución mediante integración con CI/CD y Zapier
 
 Si logra integrar todo esto como un sistema, su blog técnico se convertirá en el activo (asset) más poderoso para impulsar fuertemente su propia carrera. A los ingenieros que sufren por el estancamiento del tráfico, les instamos a que comiencen hoy el "growth hacking para su blog". Las habilidades de programación y diseño de arquitectura que han cultivado en sus tareas de desarrollo serán, sin duda, su mejor arma en la gestión de su blog.
+
 
 

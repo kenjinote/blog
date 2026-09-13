@@ -58,10 +58,10 @@ tags: ["गिटहब को-पायलट", "लोकल एआई", "व�
 
 ```mermaid
 graph TD
-    Dev["डेवलपर (IDE)"] -->|"रियल-टाइम टाइपिंग"| LocalProxy{"बुद्धिमान राउटर / प्रॉक्सी (Intelligent Router / Proxy)"}
+    Dev["डेवलपर (IDE)"] -->| रियल-टाइम टाइपिंग | LocalProxy{"बुद्धिमान राउटर / प्रॉक्सी (Intelligent Router / Proxy)"}
     
-    LocalProxy -->|"तेज़, गोपनीयता-प्रथम कार्य (Fast, Privacy-first Task)"| LocalAI["लोकल एआई इंजन (Ollama / LM Studio)"]
-    LocalProxy -->|"जटिल तर्क, बड़ा कॉन्टेक्स्ट (Complex Logic, Large Context)"| CloudAI["क्लाउड एआई इंजन (Copilot / OpenAI API)"]
+    LocalProxy -->| तेज़, गोपनीयता-प्रथम कार्य (Fast, Privacy-first Task) | LocalAI["लोकल एआई इंजन (Ollama / LM Studio)"]
+    LocalProxy -->| जटिल तर्क, बड़ा कॉन्टेक्स्ट (Complex Logic, Large Context) | CloudAI["क्लाउड एआई इंजन (Copilot / OpenAI API)"]
     
     subgraph "स्थानीय वातावरण (Local Environment)"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ Continue कॉन्फ़िगरेशन फ़ाइल (`config.json`) �
 कृपया अपने आईडीई (IDE) वातावरण को अगले स्तर पर ले जाने के लिए इस लेख में प्रस्तुत किए गए निर्णय वृक्ष और आर्किटेक्चर का संदर्भ लें। एआई का केवल "उपयोग" करने के बजाय, "सही स्थानों पर सही उपकरणों के संयोजन" के स्तर तक आगे बढ़कर, आपकी विकास दक्षता निस्संदेह काफी बढ़ जाएगी।
 
 Happy Coding with Hybrid AI!
+

@@ -251,7 +251,7 @@ Berdasarkan data yang telah diproses sebelumnya, kita akan menganalisis hubungan
 
 ```mermaid
 xychart-beta
-    title "HRV vs Jam Coding Harian (Dinormalisasi)"
+    title HRV vs Jam Coding Harian (Dinormalisasi)
     x-axis ["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"]
     y-axis "Output HRV & Coding" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
@@ -368,5 +368,6 @@ Mari manfaatkan ilmu data dan API secara maksimal untuk merekayasa kondisi keseh
 
 ---
 *Sangkalan (Disclaimer): Artikel ini merangkum eksperimen pribadi dan pendekatan ilmu data dari penulis, dan tidak ditujukan untuk memberikan nasihat medis. Jika Anda mengalami kondisi kesehatan yang buruk atau gangguan tidur yang berkelanjutan, harap konsultasikan dengan institusi medis profesional.*
+
 
 

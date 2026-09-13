@@ -179,7 +179,7 @@ flowchart LR
         C["Environnement de compilation/exécution backend"]
         D["Stockage de fichiers persistant"]
     end
-    A -->| "HTTP/WebSocket通信: 学校の細い回線による深刻な遅延" | B
+    A -->| HTTP/WebSocket通信: 学校の細い回線による深刻な遅延 | B
     B <--> C
     B <--> D
 ```
@@ -210,7 +210,7 @@ Le graphique ci-dessous illustre conceptuellement le gouffre désespérant entre
 
 ```mermaid
 xychart-beta
-    title "Compétences enseignées à l'école au Japon vs Niveau requis par l'industrie"
+    title Compétences enseignées à l'école au Japon vs Niveau requis par l'industrie
     x-axis ["Langages visuels", "Syntaxe de base/variables", "Algorithmes/Complexité", "OS/Réseaux", "DB/Conception de systèmes", "Cloud/Architecture distribuée"]
     y-axis "Niveau d'atteinte / Exigence (%)" 0 --> 100
     line "Niveau atteint dans l'enseignement scolaire actuel" [95, 60, 15, 5, 2, 0]
@@ -256,6 +256,8 @@ Comment traverser la phase de « l'après » programmation obligatoire, qui est 
 ---
 
 *Dans cet article, nous avons esquissé la théorie de la complexité et les limites d'infrastructure du concept GIGA School. Nous aborderons des sujets informatiques plus spécialisés (comme les algorithmes de systèmes distribués et les détails de la gestion de la mémoire de bas niveau) dans les prochains articles de cette série.*
+
+
 
 
 

@@ -219,8 +219,8 @@ FALCON压倒性的优势在于其**签名尺寸和公钥尺寸极小（非常紧
 ```mermaid
 graph LR
     A["数字签名的要求"] --> B{"最优先的约束是什么？"}
-    B -->|"实现简单、通用性、易于恒定时间实现"| C["Dilithium (ML-DSA)"]
-    B -->|"通信带宽最小化、数据尺寸的紧凑性"| D["FALCON (FN-DSA)"]
+    B -->| 实现简单、通用性、易于恒定时间实现 | C["Dilithium (ML-DSA)"]
+    B -->| 通信带宽最小化、数据尺寸的紧凑性 | D["FALCON (FN-DSA)"]
     C --> E["通用TLS证书、软件数字签名"]
     D --> F["限制封包大小的协议、特殊环境"]
 ```
@@ -305,7 +305,7 @@ graph TD
     A --> C{"主密钥的派生 (KDF)"}
     B --> C
     C -->|输入: (X25519对称密钥) || (Kyber对称密钥)| D["安全的通信密钥 (AES-256 / ChaCha20)"]
-    D -->|"同时抵抗 量子威胁 ＆ 传统经典漏洞"| E["安全的混合加密通信 (TLS 1.3)"]
+    D -->| 同时抵抗 量子威胁 ＆ 传统经典漏洞 | E["安全的混合加密通信 (TLS 1.3)"]
 ```
 
 如此一来，就实现了坚固的双重安全保障：“万一量子计算机实现并破解了ECC，Kyber能保护通信”；反之，“万一Kyber被发现了未知的数学缺陷，ECC依然能保护通信”。作为典型代表，IETF正在推进标准化的 **X25519MLKEM768 (原 X25519Kyber768)** 草案，正是目前Web浏览器与最先进的服务器间通信所采用的混合方式。
@@ -328,4 +328,5 @@ NIST完成了 FIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) 的标�
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 

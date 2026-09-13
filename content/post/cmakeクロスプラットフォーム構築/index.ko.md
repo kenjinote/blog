@@ -98,9 +98,9 @@ graph TD
         App["메인 애플리케이션"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["App은 MathLib의 구현에 의존하지만, 외부에는 보이지 않는다"]
     note2["NetworkLib는 HeaderLib의 인터페이스를 공개한다"]
@@ -369,3 +369,4 @@ CMake를 사용한 크로스 플랫폼 C++ 빌드 환경의 구축 절차에 대
 7. **수리적 접근**: 암달의 법칙을 의식하여, 의존 관계를 줄이고 병렬 컴파일의 효율을 높인다.
 
 처음에는 난해하게 느껴지는 CMake이지만, 타겟과 프로퍼티의 개념만 잡고 나면 아무리 복잡하고 거대한 C++ 프로젝트라 하더라도 정돈된 빌드 환경을 유지할 수 있습니다. 꼭 본 문서를 참고하여, 최신 모던 CMake 표기법으로 C++ 개발 환경을 구축해 보시기 바랍니다.
+

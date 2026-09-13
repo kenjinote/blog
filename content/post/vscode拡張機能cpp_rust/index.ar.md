@@ -33,13 +33,13 @@ graph TD
     CompilerR["واجهة rustc الأمامية"]
     Debugger["CodeLLDB (محول التصحيح)"]
 
-    VSCode -- "طلبات الإكمال والانتقال للتعريف" --> LSP
+    VSCode -- طلبات الإكمال والانتقال للتعريف --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
     Clangd -. "تحليل شجرة البناء المجردة (AST)" .-> CompilerC
     RustAnalyzer -. "توسيع الماكرو واستنتاج النوع" .-> CompilerR
     
-    VSCode -- "Debug Adapter Protocol (DAP)" --> Debugger
+    VSCode -- Debug Adapter Protocol (DAP) --> Debugger
     Debugger -. "ptrace / تفريغ الذاكرة" .-> Executable["ملف ثنائي مجمع"]
 ```
 
@@ -388,3 +388,4 @@ $$ T_{total} = T_{design} + T_{write} + \sum_{k=1}^{N} \left( T_{compile}^{(k)} 
 قد يستغرق تخصيص ملف الإعدادات الأولي بعض الوقت، ولكن بمجرد بنائه، ستكون تجربة البرمجة اللاحقة مريحة ومنتجة بشكل مذهل. يرجى الرجوع إلى شرح البنية والإعدادات المحددة (`settings.json` و `tasks.json` و `launch.json`) في هذه المقالة لبناء بيئة التطوير الأقوى الخاصة بك.
 
 أتمنى لكم حياة برمجة أنظمة مريحة وآمنة!
+

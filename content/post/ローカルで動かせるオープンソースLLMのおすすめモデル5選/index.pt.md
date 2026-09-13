@@ -217,7 +217,7 @@ O gráfico a seguir mostra uma estimativa da VRAM necessária (incluindo o overh
 
 ```mermaid
 xychart-beta
-    title "Número de Parâmetros vs VRAM Necessária (Assumindo quantização de 4-bit)"
+    title Número de Parâmetros vs VRAM Necessária (Assumindo quantização de 4-bit)
     x-axis "Nome do Modelo" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "VRAM Necessária (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
@@ -278,4 +278,5 @@ Neste artigo, apresentamos 5 dos melhores LLMs de código aberto e locais dispon
 
 A velocidade de evolução dos LLMs de código aberto é impressionante e, a cada poucos meses, novos avanços técnicos (breakthroughs) que derrubam o senso comum anterior são anunciados. No futuro, com mais melhorias na tecnologia de quantização e a introdução de novas arquiteturas, o dia em que o ambiente local por si só superará a IA na nuvem pode estar próximo.
 Faça o download do modelo ideal de acordo com o seu ambiente de hardware e experimente a liberdade avassaladora e as possibilidades da IA local.
+
 

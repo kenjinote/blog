@@ -61,8 +61,8 @@ In other words, when $A(t) \to 0$ and $B(t) \to 1$ ultimately, the system will h
 
 ```mermaid
 graph TD
-    A["Hamiltonian H_0 (Initial State)"] -->|"Adiabatic change (Sufficiently slow)"| B["Always maintain ground state"]
-    A -->|"Non-adiabatic change (Too fast / Thermal noise)"| C["Transition to excited state (Error)"]
+    A["Hamiltonian H_0 (Initial State)"] -->| Adiabatic change (Sufficiently slow) | B["Always maintain ground state"]
+    A -->| Non-adiabatic change (Too fast / Thermal noise) | C["Transition to excited state (Error)"]
     B --> D["Hamiltonian H_P (Global optimal solution)"]
     C --> E["Trapped in local optimal solution"]
     D --> F["Readout of the solution"]
@@ -196,10 +196,10 @@ To overcome the limitations of shallow quantum circuits in NISQ devices, "Variat
 ```mermaid
 graph TD
     User["User Problem"] --> Formulation{"Nature of Problem"}
-    Formulation -- "Combinatorial Optimization" --> QA_Path["Quantum Annealing / Ising Machine"]
+    Formulation -- Combinatorial Optimization --> QA_Path["Quantum Annealing / Ising Machine"]
     QA_Path --> QUBO["QUBO Formulation"]
     QUBO --> DWave["Execute on D-Wave"]
-    Formulation -- "Chemical / General Computation" --> Gate_Path["Quantum Gate Model"]
+    Formulation -- Chemical / General Computation --> Gate_Path["Quantum Gate Model"]
     Gate_Path --> Circuit["Quantum Circuit Design (VQE / QAOA)"]
     Circuit --> IBMGoogle["Execute on IBM / Google Quantum Hardware"]
 ```
@@ -219,3 +219,4 @@ Although quantum computing is a technology still in development, it is making ra
 
 ---
 *This article is a comprehensive guide covering everything from the foundational concepts of quantum computing to the latest hardware trends. Please continue to watch for future research developments.*
+

@@ -125,7 +125,7 @@ L'inconvénient de QMK était qu'il fallait "compiler le code source et flasher 
 La disposition classique en "quinconce par rangée" (Row Staggered) est un vestige conçu pour éviter que les bras physiques des machines à écrire ne s'emmêlent, et n'est pas basée sur la structure de la main humaine.
 
 ```mermaid
-pie title "Préférences de disposition de clavier idéales des ingénieurs (Données estimées)"
+pie title Préférences de disposition de clavier idéales des ingénieurs (Données estimées)
     "Row Staggered (Classique)" : 45
     "Disposition Alice (Ergonomique)" : 15
     "Ortholinéaire (Disposition en grille)" : 10
@@ -201,5 +201,6 @@ Le choix d'un clavier est un processus "d'optimisation de sa propre interface" t
 Les 5 claviers présentés cette fois (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) sont tous des chefs-d'œuvre visant la "meilleure expérience de saisie" avec des approches différentes. Trouvez votre meilleur partenaire en fonction de votre propre style de frappe et des problèmes physiques auxquels vous êtes confronté.
 
 L'investissement dans un clavier se transformera sûrement en "des millions de lignes de code sans bug" et vous apportera des bénéfices.
+
 
 

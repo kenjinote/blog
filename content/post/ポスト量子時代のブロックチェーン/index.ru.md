@@ -275,7 +275,7 @@ $$
 Для решения этой проблемы потребуется значительное увеличение размера блока, но это, в свою очередь, увеличит требования к хранилищу полных узлов (full nodes) и пропускной способности сети, что усложнит запуск узлов для обычных пользователей и, как следствие, приведет к дилемме — **централизации сети**.
 
 ```mermaid
-pie title "Сравнение размеров данных подписи в блокчейне (Концептуальная диаграмма)"
+pie title Сравнение размеров данных подписи в блокчейне (Концептуальная диаграмма)
     "ECDSA (Около 70 байт)" : 2
     "Dilithium ML-DSA (Около 2500 байт)" : 58
     "SPHINCS+ (Около 17000 байт)" : 40
@@ -346,3 +346,4 @@ pie title "Сравнение размеров данных подписи в б
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

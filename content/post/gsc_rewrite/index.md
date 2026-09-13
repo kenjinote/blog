@@ -38,7 +38,7 @@ $$
 
 ```mermaid
 xychart-beta
-    title "Expected CTR vs Actual CTR by Position"
+    title Expected CTR vs Actual CTR by Position
     x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     y-axis "CTR (%)" 0 --> 35
     line [30.5, 15.2, 10.1, 7.5, 5.2, 4.1, 3.2, 2.5, 2.0, 1.5]
@@ -276,5 +276,6 @@ Google Search Consoleを活用した技術記事のリライトは、単なる�
 4. **TF-IDFを用いたNLP分析**によって、競合とのコンテンツギャップを発見し、見出し（H2/H3）を最適化する。
 
 技術のトレンドは絶えず変化します。読者が今抱えているエラーや課題に正確に応えるためにも、データを味方につけた戦略的なリライトをぜひ日々の運用に取り入れてみてください。
+
 
 

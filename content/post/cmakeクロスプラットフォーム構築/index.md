@@ -98,9 +98,9 @@ graph TD
         App["Main Application"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["AppはMathLibの実装に依存するが、外部には見せない"]
     note2["NetworkLibはHeaderLibのインターフェースを公開する"]
@@ -369,3 +369,4 @@ CMakeを用いたクロスプラットフォームなC++ビルド環境の構築
 7. **数理的アプローチ**: アムダールの法則を意識し、依存関係を減らして並列コンパイルの効率を高める。
 
 最初は難解に感じるCMakeですが、ターゲットとプロパティの概念さえ掴んでしまえば、どんなに複雑で巨大なC++プロジェクトであっても、整然としたビルド環境を維持することができます。ぜひ本記事を参考に、最新のモダンCMakeの記法でC++開発環境を構築してみてください。
+

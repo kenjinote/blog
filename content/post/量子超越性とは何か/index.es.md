@@ -105,7 +105,7 @@ La propia IBM evita el término "supremacía" y aboga por el "volumen cuántico"
 
 ```mermaid
 timeline
-    title "La evolución de los hitos cuánticos"
+    title La evolución de los hitos cuánticos
     2019 : "Google Sycamore (53Q)" : "Anuncio de la Supremacía Cuántica"
     2019 : "Refutación de IBM" : "Simulación del superordenador Summit en 2,5 días"
     2021 : "IBM Eagle (127Q)" : "Rompiendo la barrera de los 100 cúbits"
@@ -179,3 +179,4 @@ La "supremacía cuántica" fue un hito importante en la historia de los ordenado
 Actualmente somos testigos del período de transición desde los dispositivos NISQ plagados de ruido hasta los dispositivos de cúbits lógicos equipados con corrección de errores. En los próximos años o décadas, los nuevos descubrimientos en la ciencia de los materiales, las revoluciones en el proceso de descubrimiento de fármacos y los avances en los problemas de optimización se harán realidad junto con la evolución de este hardware cuántico.
 
 No podemos perder de vista las tendencias de Google, IBM y los investigadores de todo el mundo que están dando forma al futuro de la informática.
+

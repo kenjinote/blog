@@ -275,7 +275,7 @@ PQC 도입에 있어서 가장 큰 장벽은 데이터 크기의 대폭적인 �
 이를 해결하기 위해서는 블록 크기를 대폭 늘려야 하지만, 이는 풀 노드의 스토리지 요구 사항이나 네트워크 대역폭 요구 사항을 증대시켜 개인의 노드 운영을 어렵게 만들고, 결과적으로 **네트워크의 중앙집권화**를 초래한다는 딜레마에 빠지게 됩니다.
 
 ```mermaid
-pie title "블록체인에서의 서명 데이터 크기 비교 (개념도)"
+pie title 블록체인에서의 서명 데이터 크기 비교 (개념도)
     "ECDSA (약 70 Bytes)" : 2
     "Dilithium ML-DSA (약 2,500 Bytes)" : 58
     "SPHINCS+ (약 17,000 Bytes)" : 40
@@ -346,3 +346,4 @@ NIST에 의한 PQC 표준화가 완전히 정착되고 업계 표준 라이브�
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

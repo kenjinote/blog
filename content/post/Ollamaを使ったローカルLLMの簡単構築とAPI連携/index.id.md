@@ -40,7 +40,7 @@ Diagram Mermaid di bawah ini menunjukkan arsitektur keseluruhan Ollama.
 
 ```mermaid
 graph TD
-    A["Aplikasi Klien (Python / Node.js)"] -- "HTTP/REST API" --> B["Server Ollama (Go)"]
+    A["Aplikasi Klien (Python / Node.js)"] -- HTTP/REST API --> B["Server Ollama (Go)"]
     B --> C["Manajer Model (Penanganan GGUF)"]
     B --> D["Mesin Inferensi (llama.cpp)"]
     D --> E["Akselerasi GPU (CUDA / Metal / ROCm)"]
@@ -154,9 +154,9 @@ Diagram di bawah menunjukkan bagaimana model kustom diturunkan dari model dasar.
 
 ```mermaid
 graph LR
-    A["Model Dasar (llama3.1)"] -->|"Tambahkan System Prompt"| B["Konfigurasi Menengah"]
-    B -->|"Atur Temperature & Top_p"| C["Model Kustom (kansai-coder)"]
-    C -->|"Jalankan"| D["CLI Interaktif / API"]
+    A["Model Dasar (llama3.1)"] -->| Tambahkan System Prompt | B["Konfigurasi Menengah"]
+    B -->| Atur Temperature & Top_p | C["Model Kustom (kansai-coder)"]
+    C -->| Jalankan | D["CLI Interaktif / API"]
 ```
 
 Sebagai contoh, mari kita buat model asisten pemrograman yang merespons dalam dialek Kansai (Kansai-ben).
@@ -497,4 +497,5 @@ Dengan mencangkokkan fungsi request API Ollama terhadap pemrograman shell (shell
 Melalui kehadiran dari instalasi Ollama, rintangan introduksi perangkat LLM bertaraf pribadi telah ditekan habis. Struktur komando dasar semudah memainkan wujud program pada kontainer sekelas Docker digabung API basis peladen mandiri seperti integrasi API eksternal REST yang mudah untuk dijembatani oleh modul luar apa pun, memang bukan perumpamaan main-main bahwa kini hal ini sedang diangkat layaknya wujud arsitektur standar saat ini (de facto standard) dalam perancangan pemrograman berbasis AI pada lingkup privat (lokal).
 
 Apabila sebagian pihak saat sekarang dirundung perkara privasi atau hambatan operasional dari penerapan fasilitas peladen awan (cloud), mohon perkenan mempraktikkan proses perangkaian wujud infrastruktur pangkalan LLM secara personal (lokal) dengan fasilitas instrumen seperti penjabaran tahap demi tahap melalui Ollama dalam lembar rujukan bacaan tulisan ini. Tentu, nantinya Anda bisa langsung mencicipi lebih berlimpah kemungkinan yang diproyeksikan oleh Kecerdasan Buatan dalam posisi kian intim dengan kebebasan yang lebih mutlak.
+
 

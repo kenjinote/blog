@@ -219,8 +219,8 @@ Sin embargo, hay una gran desventaja. Dado que el muestreo gaussiano discreto qu
 ```mermaid
 graph LR
     A["Requisitos de la firma digital"] --> B{"¿Cuál es la restricción principal?"}
-    B -->|"Simplicidad de implementación, generalidad, facilidad de tiempo constante"| C["Dilithium (ML-DSA)"]
-    B -->|"Minimización del ancho de banda y tamaño compacto de los datos"| D["FALCON (FN-DSA)"]
+    B -->| Simplicidad de implementación, generalidad, facilidad de tiempo constante | C["Dilithium (ML-DSA)"]
+    B -->| Minimización del ancho de banda y tamaño compacto de los datos | D["FALCON (FN-DSA)"]
     C --> E["Certificados TLS de uso general, firmas digitales de software"]
     D --> F["Protocolos con estrictos límites de tamaño de paquetes, entornos especiales"]
 ```
@@ -305,7 +305,7 @@ graph TD
     A --> C{"Derivación del secreto maestro (KDF)"}
     B --> C
     C -->|Entrada: (Clave simétrica de X25519) || (Clave simétrica de Kyber)| D["Clave de comunicación segura (AES-256 / ChaCha20)"]
-    D -->|"Resistente tanto a amenazas cuánticas como a vulnerabilidades clásicas"| E["Comunicación segura cifrada híbrida (TLS 1.3)"]
+    D -->| Resistente tanto a amenazas cuánticas como a vulnerabilidades clásicas | E["Comunicación segura cifrada híbrida (TLS 1.3)"]
 ```
 
 Con esto, se logra una robusta seguridad en dos niveles: "Incluso si las computadoras cuánticas se vuelven realidad y ECC es descifrado, Kyber protege la comunicación" y, por el contrario, "Incluso si se encuentra un defecto matemático desconocido en Kyber, ECC protege la comunicación". Un ejemplo típico es el borrador **X25519MLKEM768 (anteriormente X25519Kyber768)** que está siendo estandarizado por el IETF, y la comunicación entre los navegadores web actuales y los servidores de última generación se realiza utilizando precisamente este método híbrido.
@@ -328,4 +328,5 @@ La batalla entre las computadoras cuánticas y la criptografía es el campo emoc
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 

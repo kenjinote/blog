@@ -48,9 +48,9 @@ flowchart TD
     T["Tasks (タスクDB)"]
     N["Notes (Zettelkasten DB)"]
 
-    P -->|"1:N リレーション"| T
-    T -->|"N:N リレーション"| N
-    P -->|"1:N リレーション"| N
+    P -->| 1:N リレーション | T
+    T -->| N:N リレーション | N
+    P -->| 1:N リレーション | N
 ```
 
 ### Projectsデータベースのプロパティ
@@ -165,9 +165,9 @@ flowchart TD
     NOTION["Notion API"]
     DB["Notion Tasks DB"]
 
-    GH -->|"Webhook送信"| GHA
-    GHA -->|"Pythonスクリプト実行"| NOTION
-    NOTION -->|"DB更新・タスク追加"| DB
+    GH -->| Webhook送信 | GHA
+    GHA -->| Pythonスクリプト実行 | NOTION
+    NOTION -->| DB更新・タスク追加 | DB
 ```
 
 ### GitHub IssuesからNotionタスクを自動作成する
@@ -273,5 +273,6 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
 Notionを使ったタスク管理は、単なるTo-Doリストの域をはるかに超えています。PARAメソッドによる情報整理、Zettelkastenによる知識のネットワーク化、そしてNotion APIによるエンジニアリングを組み合わせることで、個人開発とブログ執筆を強力にブーストする「第2の脳（Second Brain）」を構築することができます。
 
 初期設定には多少の時間がかかりますが、一度システムが回り始めれば、タスク管理にかかる認知負荷は劇的に下がり、本当に重要な「コードを書くこと」と「文章を綴ること」に全集中できるようになります。ぜひ本記事を参考に、あなた自身の最強のNotionワークスペースを作り上げてみてください。
+
 
 

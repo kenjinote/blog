@@ -219,8 +219,8 @@ FALCON의 압도적인 장점은 그 **서명 크기와 공개키 크기가 극�
 ```mermaid
 graph LR
     A["디지털 서명의 요구사항"] --> B{"가장 우선시하는 제약은?"}
-    B -->|"구현의 단순함·범용성·상수 시간 구현의 용이성"| C["Dilithium (ML-DSA)"]
-    B -->|"통신 대역폭의 최소화·데이터 크기의 콤팩트함"| D["FALCON (FN-DSA)"]
+    B -->| 구현의 단순함·범용성·상수 시간 구현의 용이성 | C["Dilithium (ML-DSA)"]
+    B -->| 통신 대역폭의 최소화·데이터 크기의 콤팩트함 | D["FALCON (FN-DSA)"]
     C --> E["범용적인 TLS 인증서, 소프트웨어의 전자 서명"]
     D --> F["패킷 크기 제한이 엄격한 프로토콜, 특수 환경"]
 ```
@@ -305,7 +305,7 @@ graph TD
     A --> C{"마스터 시크릿 도출 (KDF)"}
     B --> C
     C -->|입력: (X25519의 대칭키) || (Kyber의 대칭키)| D["안전한 통신키 (AES-256 / ChaCha20)"]
-    D -->|"양자의 위협 & 고전적인 취약성 양쪽에 내성"| E["안전한 하이브리드 암호 통신 (TLS 1.3)"]
+    D -->| 양자의 위협 & 고전적인 취약성 양쪽에 내성 | E["안전한 하이브리드 암호 통신 (TLS 1.3)"]
 ```
 
 이를 통해 "만일 양자 컴퓨터가 실현되어 ECC가 깨지더라도 Kyber가 통신을 지키고", 반대로 "만일 Kyber에 미지의 수학적 결함이 발견되더라도 ECC가 통신을 지킨다"는 견고한 이중 안전성을 실현할 수 있습니다. 대표적인 예로 IETF에서 표준화가 진행 중인 **X25519MLKEM768 (구 X25519Kyber768)** 초안이 있으며, 현재 웹 브라우저와 최첨단 서버 간의 통신은 바로 이 하이브리드 방식을 이용하여 이루어지고 있습니다.
@@ -328,4 +328,5 @@ NIST의 FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA) 표준화 완�
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 

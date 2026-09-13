@@ -75,7 +75,7 @@ $$
 Dalam banyak kasus, sudah jelas bahwa dalam beberapa tahun (titik impas), $C_{legacy}(t) > C_{modern}(t)$. Namun, karena "arsitek" dan "data engineer" yang mampu mengeksekusi investasi awal $I$ tidak tersedia di pasar, banyak perusahaan saat ini tenggelam dalam lumpur $C_{legacy}$ pada tahun 2026.
 
 ```mermaid
-pie title "Rincian Keterampilan IT yang Paling Langka pada Tahun 2026"
+pie title Rincian Keterampilan IT yang Paling Langka pada Tahun 2026
     "Spesialis AI/ML Ops" : 35
     "Cloud Architect" : 25
     "Data Engineer" : 20
@@ -116,7 +116,7 @@ Sebagai dampaknya, perusahaan menyadari bahwa "mempekerjakan 1 senior (pengguna 
 
 ```mermaid
 xychart-beta
-    title "Polarisasi Permintaan Lowongan antara Tingkat Junior dan Senior (2021-2026)"
+    title Polarisasi Permintaan Lowongan antara Tingkat Junior dan Senior (2021-2026)
     x-axis ["2021", "2022", "2023", "2024", "2025", "2026"]
     y-axis "Rasio Lowongan" 0.0 --> 10.0
     line ["Senior (Arsitek/MLOps, dll.)"] [3.0, 3.5, 4.2, 5.8, 7.5, 9.2]
@@ -182,5 +182,7 @@ AI tidak akan merebut pekerjaan kita, ia hanyalah alat agar kita bisa fokus pada
 
 Inilah saatnya untuk mengevaluasi kembali jalur karier Anda dan banting setir menuju paradigma berikutnya.
 Apakah Anda sudah siap untuk me-"modernisasi" diri Anda sendiri?
+
+
 
 

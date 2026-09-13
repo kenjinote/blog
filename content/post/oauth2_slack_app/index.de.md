@@ -28,11 +28,11 @@ Der erste Schritt zum Verständnis von OAuth 2.0 besteht darin, die beteiligten 
 
 ```mermaid
 graph TD
-    RO["Resource Owner (Benutzer)"] -- "Gewährt Autorisierung" --> C["Client (Slack App)"]
-    C -- "Fordert Autorisierung an" --> AS["Authorization Server (Slack Autorisierungsserver)"]
-    AS -- "Stellt Access Token aus" --> C
-    C -- "Greift mit Token zu" --> RS["Resource Server (Slack API-Server)"]
-    RO -- "Meldet sich mit ID/Passwort an" --> AS
+    RO["Resource Owner (Benutzer)"] -- Gewährt Autorisierung --> C["Client (Slack App)"]
+    C -- Fordert Autorisierung an --> AS["Authorization Server (Slack Autorisierungsserver)"]
+    AS -- Stellt Access Token aus --> C
+    C -- Greift mit Token zu --> RS["Resource Server (Slack API-Server)"]
+    RO -- Meldet sich mit ID/Passwort an --> AS
 ```
 
 1. **Resource Owner**
@@ -371,4 +371,5 @@ In diesem Artikel haben wir den Authorization Code Grant Flow von OAuth 2.0 im D
 4. Scope-Design basierend auf dem **Prinzip der geringsten Rechte** und Verschlüsselung beim Speichern in der DB sind operativ absolut unerlässlich.
 
 OAuth 2.0 ist sehr tiefgründig und allein die RFC-Spezifikationen sind riesig, aber durch praktisches Lernen mit Fokus auf eine echte Plattform (Slack) werden Sie in der Lage sein, dessen raffinierte Designphilosophie und robusten Sicherheitsmechanismen wirklich zu verstehen. Wir hoffen, dass Ihnen das Wissen aus diesem Artikel bei der zukünftigen Anwendungsentwicklung und API-Integration von Nutzen sein wird.
+
 

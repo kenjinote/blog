@@ -76,11 +76,11 @@ Diagram Mermaid di bawah ini menunjukkan konsep perpindahan kepemilikan oleh `st
 ```mermaid
 graph LR
     subgraph "Sebelum std::move"
-        A["unique_ptr (ptr1)"] -->|"Memiliki"| B["Memori Heap (Objek)"]
+        A["unique_ptr (ptr1)"] -->| Memiliki | B["Memori Heap (Objek)"]
     end
     subgraph "Setelah std::move"
         C["unique_ptr (ptr1)"] -.->|"Kosong (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->|"Memiliki"| F["Memori Heap (Objek)"]
+        E["unique_ptr (ptr2)"] -->| Memiliki | F["Memori Heap (Objek)"]
     end
 ```
 
@@ -130,13 +130,13 @@ Secara terpisah dari pointer ke objek yang dikelola, `std::shared_ptr` mengaloka
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->|"Pointer ke T"| B["Objek yang Dikelola (T)"]
-    A -->|"Pointer ke Control Block"| C["Control Block"]
+    A["std::shared_ptr<T> (sp1)"] -->| Pointer ke T | B["Objek yang Dikelola (T)"]
+    A -->| Pointer ke Control Block | C["Control Block"]
     
-    D["std::shared_ptr<T> (sp2)"] -->|"Pointer ke T"| B
-    D -->|"Pointer ke Control Block"| C
+    D["std::shared_ptr<T> (sp2)"] -->| Pointer ke T | B
+    D -->| Pointer ke Control Block | C
     
-    C -->|"Menghapus"| B
+    C -->| Menghapus | B
     C -.->|"Strong Count: 2"| E["Strong Count"]
     C -.->|"Weak Count: 0"| F["Weak Count"]
     C -.->|"Kustom Deleter"| G["Deleter"]
@@ -176,8 +176,8 @@ Kepemilikan bersama memiliki kelemahan fatal yang disebut "Siklus Referensi (Cir
 ```mermaid
 graph TD
     subgraph "Siklus Referensi (Kebocoran Memori)"
-        A["Objek A"] -->|"shared_ptr (Strong=1)"| B["Objek B"]
-        B -->|"shared_ptr (Strong=1)"| A
+        A["Objek A"] -->| shared_ptr (Strong=1) | B["Objek B"]
+        B -->| shared_ptr (Strong=1) | A
     end
 ```
 
@@ -188,7 +188,7 @@ Alat yang dapat memecahkan masalah ini adalah `std::weak_ptr`. `weak_ptr` dibuat
 ```mermaid
 graph TD
     subgraph "Memutus Siklus Referensi"
-        C["Objek A"] -->|"shared_ptr (Strong=1)"| D["Objek B"]
+        C["Objek A"] -->| shared_ptr (Strong=1) | D["Objek B"]
         D -.->|"weak_ptr (Weak=1)"| C
     end
 ```
@@ -268,3 +268,4 @@ Manajemen memori dalam Modern C++ tidak lagi berada di era di mana kita harus me
 3.  Dalam struktur data yang mungkin memunculkan lingkaran pembagian (siklus referensi) atau saat mengimplementasikan Observer Pattern, manfaatkan **`std::weak_ptr`** untuk mencegah kebocoran memori sejak dini.
 
 Dengan memahami smart pointer secara mendalam dan memanfaatkannya di tempat yang tepat, Anda dapat membangun arsitektur perangkat lunak yang aman dan tangguh tanpa sedikit pun mengorbankan performa dari C++.
+

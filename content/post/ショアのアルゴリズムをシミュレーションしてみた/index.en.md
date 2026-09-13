@@ -57,11 +57,11 @@ The overall flow of the algorithm is as follows:
 graph TD
     A["Input: Composite number N to be factored"] --> B["Choose a random number a such that a < N"]
     B --> C{"gcd(a, N) > 1 ?"}
-    C -- "Yes" --> D["Output trivial factor gcd(a, N) and terminate"]
-    C -- "No" --> E["Find the period r of f(x) = a^x mod N using quantum algorithm"]
+    C -- Yes --> D["Output trivial factor gcd(a, N) and terminate"]
+    C -- No --> E["Find the period r of f(x) = a^x mod N using quantum algorithm"]
     E --> F{"Is r even AND a^(r/2) ≢ -1 mod N ?"}
-    F -- "No" --> B
-    F -- "Yes" --> G["Calculate factors p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- No --> B
+    F -- Yes --> G["Calculate factors p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
     G --> H["Output: p, q"]
 ```
 
@@ -358,4 +358,5 @@ By all means, please try executing the Python code introduced this time in your 
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 

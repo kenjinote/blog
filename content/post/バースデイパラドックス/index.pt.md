@@ -98,7 +98,7 @@ Ao substituir o número de pessoas $n$ nesta fórmula, podemos ver que a probabi
 - Quando $n = 70$, a probabilidade é de cerca de **99,9%**
 
 ```mermaid
-pie title "Probabilidade quando 23 pessoas estão reunidas"
+pie title Probabilidade quando 23 pessoas estão reunidas
     "Há um par com o mesmo aniversário (50,7%)" : 50.7
     "Todos diferentes (49,3%)" : 49.3
 ```
@@ -154,3 +154,4 @@ Somos bons com aumentos lineares (aditivos), mas não conseguimos simular em nos
 Por trás da intuição de que "23 é um número muito pequeno em comparação com o grande número 365", existe uma complexa teia de **"253 fios invisíveis (pares)"** criados por 23 pessoas.
 
 Da próxima vez que você for a um lugar onde as pessoas estão reunidas, tente imaginar não apenas o "número de pessoas" visíveis, mas os inumeráveis "fios de combinações" que existem entre elas. A sua forma de ver o mundo deve mudar um pouco matematicamente.
+

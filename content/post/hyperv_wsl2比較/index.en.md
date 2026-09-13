@@ -71,7 +71,7 @@ graph TD
     F["Linux User Space (WSL2 Distributions)"]
 
     A --> C
-    C -->| "Cross-OS File Sharing" | D
+    C -->| Cross-OS File Sharing | D
     D --> E
     D --> F
 ```
@@ -230,4 +230,5 @@ Hyper-V and WSL2 are not a matter of one being superior to the other; they are *
 *   **Hyper-V** is a "full-fledged hypervisor" that brings the robust isolation and management capabilities cultivated in enterprise data centers to the desktop. It is second to none in network construction, Windows OS testing, and infrastructure environment simulation.
 
 In modern Windows environments, these two technologies do not compete on equal terms; they beautifully coexist on the same VM platform. By using the right tool for the right job depending on the purpose, Windows can truly become the most powerful and flexible engineering workstation in the world.
+
 

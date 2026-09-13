@@ -82,7 +82,7 @@ Berikut adalah diagram Gantt yang menunjukkan model penghematan waktu berkat pen
 
 ```mermaid
 gantt
-    title "Perbandingan Waktu Konteks Switch antara Ultrawide vs Monitor Ganda"
+    title Perbandingan Waktu Konteks Switch antara Ultrawide vs Monitor Ganda
     dateFormat  s
     axisFormat  %S
     
@@ -238,5 +238,6 @@ flowchart TD
 ```
 
 Layar adalah infrastruktur yang akan terus menopang produktivitas Anda selama bertahun-tahun setelah dibeli. Silakan padukan prinsip-prinsip rekayasa bidang pandang, matematika PPI, batasan bandwidth, dan manajemen jendela perangkat lunak yang dijelaskan dalam artikel ini untuk membangun ruang kerja terbaik tanpa kompromi. Pada akhirnya, hal itu akan menjadi rute terpendek untuk menghasilkan kode terbaik.
+
 
 

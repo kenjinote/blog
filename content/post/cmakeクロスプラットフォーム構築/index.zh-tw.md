@@ -98,9 +98,9 @@ graph TD
         App["Main Application"]
     end
 
-    App -- "target_link_libraries(App PRIVATE MathLib)" --> MathLib
-    App -- "target_link_libraries(App PUBLIC NetworkLib)" --> NetworkLib
-    NetworkLib -- "target_link_libraries(NetworkLib INTERFACE HeaderLib)" --> HeaderLib
+    App -- target_link_libraries(App PRIVATE MathLib) --> MathLib
+    App -- target_link_libraries(App PUBLIC NetworkLib) --> NetworkLib
+    NetworkLib -- target_link_libraries(NetworkLib INTERFACE HeaderLib) --> HeaderLib
     
     note1["App 依賴於 MathLib 的實作，但不向外公開"]
     note2["NetworkLib 公開了 HeaderLib 的介面"]
@@ -369,3 +369,4 @@ target_link_libraries(ComplexApp
 7. **數學方法**: 意識到阿姆達爾定律，減少依賴關係以提升平行編譯的效率。
 
 雖然一開始會覺得 CMake 很難懂，但只要掌握了目標與屬性的概念，無論是多麼複雜巨大的 C++ 專案，都能維持井然有序的編譯環境。請務必參考本文，用最新的 Modern CMake 寫法來建構您的 C++ 開發環境吧。
+

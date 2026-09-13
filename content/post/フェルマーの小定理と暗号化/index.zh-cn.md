@@ -158,13 +158,13 @@ flowchart TD
     Start["开始"] --> Input["输入待判断的数 p 和测试次数 k"]
     Input --> LoopStart["循环 i = 0 到 k-1"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "Yes" --> RandomA["在 1 < a < p-1 范围内随机选取整数 a"]
+    Condition -- Yes --> RandomA["在 1 < a < p-1 范围内随机选取整数 a"]
     RandomA --> Calc["计算模幂 a^(p-1) mod p"]
     Calc --> CheckPrime{"结果是 1 吗？"}
-    CheckPrime -- "No" --> ReturnComposite["p 是合数（确定）"]
-    CheckPrime -- "Yes" --> Increment["i 递增"]
+    CheckPrime -- No --> ReturnComposite["p 是合数（确定）"]
+    CheckPrime -- Yes --> Increment["i 递增"]
     Increment --> Condition
-    Condition -- "No" --> ReturnPrime["p 可能是素数（概率性）"]
+    Condition -- No --> ReturnPrime["p 可能是素数（概率性）"]
     ReturnComposite --> End["结束"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ if __name__ == '__main__':
 我们每天不经意间发送的微信消息、在淘宝上的购物，这一切都在 $a^{p-1} \equiv 1 \pmod p$ 这个简单而优美的数学公式之上舞动。费马小定理告诉我们，无论数学多么抽象，总有一天它必然会为人类所用。
 
 在学习编程和密码学理论时，理解其基础的数学结构，将成为深入理解那些作为黑盒提供的库的行为、并设计出更加安全的系统的强大武器。
+

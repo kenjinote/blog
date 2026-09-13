@@ -27,12 +27,12 @@ tags: ["Privacy", "Big Data", "Differential Privacy", "Federated Learning"]
 
 ```mermaid
 flowchart TD
-    A["Data Sources (Web, IoT, Mobile)"] -->|"Ingestion"| B["Raw Data Zone (Untouched)"]
-    B -->|"ETL Process"| C["Anonymization & Cleansing Pipeline"]
-    C -->|"Pseudonymization / Tokenization"| D["Trusted Zone (k-anonymized)"]
-    D -->|"Feature Engineering"| E["Refined Zone (Ready for ML)"]
-    E -->|"Model Training"| F["BI Tools & ML Models"]
-    C -->|"Audit Logs"| G["Security & Compliance Hub"]
+    A["Data Sources (Web, IoT, Mobile)"] -->| Ingestion | B["Raw Data Zone (Untouched)"]
+    B -->| ETL Process | C["Anonymization & Cleansing Pipeline"]
+    C -->| Pseudonymization / Tokenization | D["Trusted Zone (k-anonymized)"]
+    D -->| Feature Engineering | E["Refined Zone (Ready for ML)"]
+    E -->| Model Training | F["BI Tools & ML Models"]
+    C -->| Audit Logs | G["Security & Compliance Hub"]
 ```
 
 このようなパイプラインでは、データの流入時にハッシュ化、マスキング、暗号化などの処理が自動的に適用されます。しかし、後述するように、単純なマスキングや仮名化（Pseudonymization）だけでは、他のデータソースとの突き合わせによる「再識別化（Re-identification）」のリスクを完全に排除することはできません。
@@ -104,20 +104,20 @@ flowchart TD
     Device2["Edge Device 2 (Smartphone)"]
     Device3["Edge Device 3 (Smartphone)"]
 
-    Server -->|"1. Broadcast Global Model Weights"| Device1
-    Server -->|"1. Broadcast Global Model Weights"| Device2
-    Server -->|"1. Broadcast Global Model Weights"| Device3
+    Server -->| 1. Broadcast Global Model Weights | Device1
+    Server -->| 1. Broadcast Global Model Weights | Device2
+    Server -->| 1. Broadcast Global Model Weights | Device3
 
-    Device1 -->|"2. Local Training on Private Data"| Device1
-    Device2 -->|"2. Local Training on Private Data"| Device2
-    Device3 -->|"2. Local Training on Private Data"| Device3
+    Device1 -->| 2. Local Training on Private Data | Device1
+    Device2 -->| 2. Local Training on Private Data | Device2
+    Device3 -->| 2. Local Training on Private Data | Device3
 
-    Device1 -->|"3. Transmit Model Gradients/Updates"| Server
-    Device2 -->|"3. Transmit Model Gradients/Updates"| Server
-    Device3 -->|"3. Transmit Model Gradients/Updates"| Server
+    Device1 -->| 3. Transmit Model Gradients/Updates | Server
+    Device2 -->| 3. Transmit Model Gradients/Updates | Server
+    Device3 -->| 3. Transmit Model Gradients/Updates | Server
 
-    Server -->|"4. Aggregation (FedAvg)"| Server
-    Server -->|"5. Update Global Model"| Server
+    Server -->| 4. Aggregation (FedAvg) | Server
+    Server -->| 5. Update Global Model | Server
 ```
 
 #### Federated Averaging (FedAvg) アルゴリズム
@@ -218,5 +218,6 @@ def get_dp_average_salary(dataframe, epsilon=1.0):
 ## 結論
 
 ビッグデータ時代における個人情報の行方は、単なる技術的な課題を超え、私たちがどのような社会を望むかという根本的な問いを投げかけています。利便性を享受しつつ、個人の尊厳とプライバシーをどのように守り抜くか。それは、法規制の整備、プライバシー保護技術の絶え間ない革新、そしてデータを提供する私たち一人ひとりの高いリテラシーの三位一体によってのみ、持続可能な解に到達することができるのです。プライバシーと利便性はもはやトレードオフではなく、最新のテクノロジーによって両立可能な「必須の要件」へと進化していくことでしょう。
+
 
 

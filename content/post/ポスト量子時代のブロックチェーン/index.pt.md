@@ -275,7 +275,7 @@ Se a rede Bitcoin implementar a PQC mas continuar a ter o mesmo limite do tamanh
 Para resolver esse problema, é imprescindível um tremendo crescimento no tamanho do bloco, mas tal solução requer mais armazenamento e requisitos de banda de internet dos full nodes, tornando muito mais complicado executar um nó de forma independente. Como resultado, cairá no dilema de induzir uma forte **centralização da rede**.
 
 ```mermaid
-pie title "Comparação dos tamanhos dos dados de assinatura em blockchain (Conceitual)"
+pie title Comparação dos tamanhos dos dados de assinatura em blockchain (Conceitual)
     "ECDSA (aprox. 70 Bytes)" : 2
     "Dilithium ML-DSA (aprox. 2.500 Bytes)" : 58
     "SPHINCS+ (aprox. 17.000 Bytes)" : 40
@@ -345,3 +345,4 @@ E no decorrer dessa odisseia, quem dirá se o choque dessas duas esferas intelec
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.
+

@@ -19,13 +19,13 @@ Commençons par examiner visuellement l'historique de la standardisation de C++ 
 
 ```mermaid
 timeline
-    title "Évolution de la standardisation de C++"
-    "C++11" : "L'aube du C++ Moderne" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "Raffinement des fonctionnalités" : "generic lambda, return type deduction"
-    "C++17" : "Amélioration de l'utilisabilité" : "std::optional, fold expressions, structured binding"
-    "C++20" : "Changement de paradigme" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "Extensions supplémentaires" : "Deducing this, std::expected, std::print"
-    "C++26" : "La révolution de la prochaine génération" : "Reflection, Contracts, Pattern Matching"
+    title Évolution de la standardisation de C++
+    C++11 : L'aube du C++ Moderne : auto, lambda, constexpr, move semantics
+    C++14 : Raffinement des fonctionnalités : generic lambda, return type deduction
+    C++17 : Amélioration de l'utilisabilité : std::optional, fold expressions, structured binding
+    C++20 : Changement de paradigme : Concepts, Modules, Coroutines, Ranges
+    C++23 : Extensions supplémentaires : Deducing this, std::expected, std::print
+    C++26 : La révolution de la prochaine génération : Reflection, Contracts, Pattern Matching
 ```
 
 C++26 s'appuie sur des groupes de fonctionnalités majeurs tels que les Concepts et les Modules, introduits dans C++20, et vise à maximiser **l'auto-description du code (réflexion)** et **la robustesse (programmation par contrat)**. Plongeons maintenant dans les détails de chaque fonctionnalité.
@@ -91,9 +91,9 @@ Vous n'aurez plus affaire à l'épuisement de la mémoire du compilateur dû à 
 
 ```mermaid
 graph TD
-    A["Type: User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["Plage de meta::info"]
-    C -->| "[: member :]" | D["Accès direct aux membres (obj.id, obj.name)"]
+    A["Type: User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["Plage de meta::info"]
+    C -->| [: member :] | D["Accès direct aux membres (obj.id, obj.name)"]
     D --> E["Code généré (Zéro surcoût)"]
 ```
 
@@ -140,12 +140,12 @@ Les contrats diffèrent de simples commentaires ou de l'ancienne macro `assert()
 ```mermaid
 graph TD
     A["Fonction appelée"] --> B{"Évaluation de la précondition"}
-    B -- "Vrai" --> C["Exécuter le corps de la fonction"]
-    B -- "Faux" --> D["Invoquer le gestionnaire de violation"]
+    B -- Vrai --> C["Exécuter le corps de la fonction"]
+    B -- Faux --> D["Invoquer le gestionnaire de violation"]
     D --> E["Enregistrer l'erreur / Interrompre / Lancer l'exception"]
     C --> F{"Évaluation de la postcondition"}
-    F -- "Vrai" --> G["Valeur de retour"]
-    F -- "Faux" --> D
+    F -- Vrai --> G["Valeur de retour"]
+    F -- Faux --> D
 ```
 
 L'utilisation des contrats non seulement auto-documente les spécifications de l'API, mais permet également d'arrêter et de contrôler le programme en toute sécurité avant de provoquer un comportement non défini (UB), ce qui laisse présager une réduction drastique des bugs de destruction de mémoire et de logique propres à C++.
@@ -361,3 +361,5 @@ En utilisant ces fonctionnalités de manière appropriée, il devient possible d
 
 ---
 *Cet article a été rédigé en fonction de l'état de la standardisation de C++26 en 2026. Veuillez noter que certaines syntaxes peuvent changer en fonction de l'état d'implémentation des différents compilateurs.*
+
+

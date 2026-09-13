@@ -111,7 +111,7 @@ L'espérance concorde parfaitement !
 Dans le premier calcul erroné, nous avons traité $X$ du scénario 1 (qui est en réalité $S$) et $X$ du scénario 2 (qui est en réalité $2S$) **comme s'il s'agissait de la même variable $X$, alors qu'ils ont des valeurs différentes**, ce qui a créé l'illusion que « l'espérance augmente si l'on échange ».
 
 ```mermaid
-pie title "La vérité sur l'espérance (si le montant le plus faible est S)"
+pie title La vérité sur l'espérance (si le montant le plus faible est S)
     "Espérance sans échanger (1.5S)" : 50
     "Espérance avec échange (1.5S)" : 50
 ```
@@ -163,3 +163,4 @@ Bien que le « paradoxe des deux enveloppes » ne repose que sur de simples mult
 3. **La difficulté de manipuler l'infini** : Introduire dans une formule mathématique le concept d'« infini » qui ne peut être appliqué au monde réel produit des résultats contraires au bon sens.
 
 La prochaine fois que vous penserez dans votre vie que « l'herbe est plus verte ailleurs, et qu'il est plus avantageux d'échanger », souvenez-vous de ce paradoxe. Il se peut que, dans votre équation, les variables aient simplement été substituées.
+

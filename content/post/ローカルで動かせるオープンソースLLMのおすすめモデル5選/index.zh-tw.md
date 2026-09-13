@@ -220,7 +220,7 @@ graph TD
 
 ```mermaid
 xychart-beta
-    title "參數數量與所需 VRAM（假設 4-bit 量化）"
+    title 參數數量與所需 VRAM（假設 4-bit 量化）
     x-axis "模型名稱" ["Phi-3 Mini (3.8B)", "Llama 3 (8B)", "Gemma 2 (9B)", "Mixtral (8x7B)", "Qwen 2.5 (32B)", "Llama 3 (70B)"]
     y-axis "所需 VRAM (GB)" 0 --> 45
     bar [3.5, 6.0, 6.5, 26.0, 22.0, 40.0]
@@ -281,4 +281,5 @@ ollama run llama3
 
 開源 LLM 的進化速度非常驚人，幾乎每隔幾個月就會發表顛覆以往常識的突破。未來，隨著量化技術的進一步提升與新架構的出現，或許光靠本地環境就能超越雲端 AI 的日子也不遠了。
 請務必配合您自身的硬體環境下載最合適的模型，親身體驗本地 AI 所帶來的壓倒性自由與可能性。
+
 

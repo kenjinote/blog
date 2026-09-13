@@ -158,13 +158,13 @@ flowchart TD
     Start["Início"] --> Input["Inserir o número a testar p e o número de testes k"]
     Input --> LoopStart["Loop de i = 0 até k-1"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "Sim" --> RandomA["Escolher um inteiro aleatório a no intervalo 1 < a < p-1"]
+    Condition -- Sim --> RandomA["Escolher um inteiro aleatório a no intervalo 1 < a < p-1"]
     RandomA --> Calc["Calcular a exponenciação modular a^(p-1) mod p"]
     Calc --> CheckPrime{"O resultado é 1 ?"}
-    CheckPrime -- "Não" --> ReturnComposite["p é um número composto (Definitivo)"]
-    CheckPrime -- "Sim" --> Increment["Incrementar i"]
+    CheckPrime -- Não --> ReturnComposite["p é um número composto (Definitivo)"]
+    CheckPrime -- Sim --> Increment["Incrementar i"]
     Increment --> Condition
-    Condition -- "Não" --> ReturnPrime["p é provavelmente primo (Probabilístico)"]
+    Condition -- Não --> ReturnPrime["p é provavelmente primo (Probabilístico)"]
     ReturnComposite --> End["Fim"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ No entanto, nos anos 1970, cerca de 300 anos depois, nos primórdios das redes d
 Até mesmo a mensagem no LINE que enviamos casualmente todos os dias e nossas compras na Amazon, estão todas dançando no topo desta simples e bela fórmula: $a^{p-1} \equiv 1 \pmod p$. O Pequeno Teorema de Fermat nos ensina que, não importa o quão abstrata seja a matemática, o momento em que ela for útil para a humanidade sem dúvida chegará algum dia.
 
 Ao aprender programação e teoria criptográfica, compreender a estrutura matemática em seus fundamentos será uma grande arma para o profundo entendimento do comportamento das bibliotecas fornecidas como caixas-pretas e para o design de sistemas mais seguros.
+

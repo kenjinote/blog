@@ -82,7 +82,7 @@ A continuación se muestra un diagrama de Gantt que modela el ahorro de tiempo a
 
 ```mermaid
 gantt
-    title "Comparación de tiempo de cambio de contexto: Ultrawide vs Monitor Dual"
+    title Comparación de tiempo de cambio de contexto: Ultrawide vs Monitor Dual
     dateFormat  s
     axisFormat  %S
     
@@ -238,5 +238,6 @@ flowchart TD
 ```
 
 Un monitor es una infraestructura que, una vez comprada, continuará apoyando tu productividad durante muchos años. Integra los principios de ergonomía visual, las matemáticas de los PPI, los límites del ancho de banda y la gestión de ventanas por software explicados en este artículo para construir el mejor espacio de trabajo sin compromisos. Ese debería ser el camino más corto para, en última instancia, producir el mejor código.
+
 
 

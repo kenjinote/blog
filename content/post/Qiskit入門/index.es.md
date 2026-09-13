@@ -301,8 +301,8 @@ graph TD
     A["Inicialización (Superposición de todos los estados)"] --> B["Oráculo (Invierte la fase de la respuesta correcta)"]
     B --> C["Operador de difusión (Amplificación de amplitud por inversión en torno a la media)"]
     C --> D{"¿Se alcanzó una probabilidad suficiente?"}
-    D -- "No" --> B
-    D -- "Yes" --> E["Medición"]
+    D -- No --> B
+    D -- Yes --> E["Medición"]
 ```
 
 ---
@@ -321,3 +321,4 @@ Aprovecha esta oportunidad para construir varios circuitos cuánticos por ti mis
 - IBM Quantum Learning
 
 ¡Bienvenido al mundo cuántico!
+

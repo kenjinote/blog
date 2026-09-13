@@ -37,7 +37,7 @@ Große Unternehmen kämpfen in riesigen Märkten (Kopf) wie $k=1, 2, 3$ in einem
 
 ```mermaid
 xychart-beta
-  title "Marktgrößenverteilung und Ziel des Einzelentwicklers"
+    title Marktgrößenverteilung und Ziel des Einzelentwicklers
   x-axis ["Masse A", "Masse B", "Nische C", "Nische D", "Nische E", "Nische F", "Nische G"]
   y-axis "Marktwert" 0 --> 100
   bar [95, 60, 20, 10, 5, 3, 2]
@@ -302,5 +302,6 @@ npx create-next-app@latest my-micro-saas
 ```
 
 Der Kampf hat bereits begonnen.
+
 
 

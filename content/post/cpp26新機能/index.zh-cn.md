@@ -19,13 +19,13 @@ tags: ["C++", "C++26", "Programming", "Tech"]
 
 ```mermaid
 timeline
-    title "C++标准化演进"
-    "C++11" : "Modern C++的开端" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "特性的完善" : "generic lambda, return type deduction"
-    "C++17" : "实用性的提升" : "std::optional, fold expressions, structured binding"
-    "C++20" : "范式转变" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "进一步扩展" : "Deducing this, std::expected, std::print"
-    "C++26" : "下一代的革命" : "Reflection, Contracts, Pattern Matching"
+    title C++标准化演进
+    C++11 : Modern C++的开端 : auto, lambda, constexpr, move semantics
+    C++14 : 特性的完善 : generic lambda, return type deduction
+    C++17 : 实用性的提升 : std::optional, fold expressions, structured binding
+    C++20 : 范式转变 : Concepts, Modules, Coroutines, Ranges
+    C++23 : 进一步扩展 : Deducing this, std::expected, std::print
+    C++26 : 下一代的革命 : Reflection, Contracts, Pattern Matching
 ```
 
 C++26旨在基于C++20引入的Concepts和Modules等大规模功能群之上，将**代码的自描述性（反射）**和**健壮性（契约编程）**提升至极限。接下来，让我们深入了解各项特性的细节。
@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["类型: User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["meta::info的范围"]
-    C -->| "[: member :]" | D["直接成员访问 (obj.id, obj.name)"]
+    A["类型: User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["meta::info的范围"]
+    C -->| [: member :] | D["直接成员访问 (obj.id, obj.name)"]
     D --> E["生成的代码 (零开销)"]
 ```
 
@@ -146,12 +146,12 @@ Contracts不同于简单的注释或旧的 `assert()` 宏。根据构建模式�
 ```mermaid
 graph TD
     A["函数被调用"] --> B{"评估事前条件"}
-    B -- "True" --> C["执行函数体"]
-    B -- "False" --> D["调用违规处理程序"]
+    B -- True --> C["执行函数体"]
+    B -- False --> D["调用违规处理程序"]
     D --> E["记录错误 / 中止 / 抛出异常"]
     C --> F{"评估事后条件"}
-    F -- "True" --> G["返回值"]
-    F -- "False" --> D
+    F -- True --> G["返回值"]
+    F -- False --> D
 ```
 
 通过使用Contracts，不仅能使API规范自文档化，还能在引发未定义行为（Undefined Behavior, UB）之前安全地停止或控制程序，因此有望大幅减少C++特有的内存破坏漏洞和逻辑缺陷。
@@ -367,3 +367,5 @@ C++26是一个历史性的版本，长期以来C++程序员梦寐以求的“梦
 
 ---
 *本文基于2026年C++26标准化的当前情况编写。请注意，根据各编译器的实现进度，部分语法可能会发生变化。*
+
+

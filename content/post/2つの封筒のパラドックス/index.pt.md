@@ -111,7 +111,7 @@ Lindamente, os valores esperados coincidem!
 No primeiro cálculo incorreto, nós pegamos o valor $X$ do Cenário 1 (que na verdade é $S$) e o valor $X$ do Cenário 2 (que na verdade é $2S$) e **tratamos dois valores diferentes como se fossem a mesma variável $X$**, criando assim a ilusão de que "trocar aumenta o valor esperado".
 
 ```mermaid
-pie title "A Verdade sobre o Valor Esperado (Assumindo que a menor quantia é S)"
+pie title A Verdade sobre o Valor Esperado (Assumindo que a menor quantia é S)
     "Valor esperado ao não trocar (1.5S)" : 50
     "Valor esperado ao trocar (1.5S)" : 50
 ```
@@ -163,3 +163,4 @@ Apesar de ser composto apenas de multiplicações e adições simples, o "Parado
 3. **A dificuldade de lidar com o infinito**: Se você introduzir o conceito do "infinito" que não pode ser aplicado ao mundo real em suas equações matemáticas, resultados que desafiam o senso comum surgirão.
 
 Da próxima vez na vida que você pensar "A grama do vizinho é mais verde e é vantajoso trocar", lembre-se deste paradoxo. Talvez você apenas tenha trocado as variáveis em sua própria equação.
+

@@ -189,7 +189,7 @@ Mostramos o ciclo de vida operacional ideal de um conteúdo através de um gráf
 
 ```mermaid
 gantt
-    title "Gerenciamento do Ciclo de Vida do Conteúdo Orientado a Dados"
+    title Gerenciamento do Ciclo de Vida do Conteúdo Orientado a Dados
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%d
     
@@ -278,5 +278,6 @@ Para aumentar drasticamente os acessos mensais do blog de tecnologia, além do a
 5. Automação completa da distribuição por meio de CI/CD e integração com Zapier
 
 Se conseguir montar isso como um sistema, o blog de tecnologia se tornará o ativo mais forte para impulsionar poderosamente sua própria carreira. Engenheiros que sofrem com a estagnação do número de acessos, por favor, comecem o "growth hacking de blog" a partir de hoje. Suas habilidades de programação e capacidade de design de arquitetura cultivadas nas tarefas de desenvolvimento com certeza serão suas maiores armas na gestão de um blog.
+
 
 

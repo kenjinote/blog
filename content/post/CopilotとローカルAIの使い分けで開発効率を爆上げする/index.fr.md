@@ -58,10 +58,10 @@ Le diagramme Mermaid suivant montre l'architecture hybride illustrant comment l'
 
 ```mermaid
 graph TD
-    Dev["Développeur (IDE)"] -->|"Saisie en temps réel"| LocalProxy{"Routeur Intelligent / Proxy"}
+    Dev["Développeur (IDE)"] -->| Saisie en temps réel | LocalProxy{"Routeur Intelligent / Proxy"}
     
-    LocalProxy -->|"Tâche rapide, priorité à la confidentialité"| LocalAI["Moteur IA Local (Ollama / LM Studio)"]
-    LocalProxy -->|"Logique complexe, grand contexte"| CloudAI["Moteur IA Cloud (Copilot / OpenAI API)"]
+    LocalProxy -->| Tâche rapide, priorité à la confidentialité | LocalAI["Moteur IA Local (Ollama / LM Studio)"]
+    LocalProxy -->| Logique complexe, grand contexte | CloudAI["Moteur IA Cloud (Copilot / OpenAI API)"]
     
     subgraph "Environnement Local"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -244,3 +244,4 @@ Plutôt qu'une opposition binaire entre « GitHub Copilot dans le cloud » et «
 N'hésitez pas à faire passer votre environnement IDE au niveau supérieur en vous référant aux arbres de décision et aux architectures présentés dans cet article. En passant du statut d'« utilisateur » d'IA à celui de personne qui « combine et utilise l'IA au bon endroit », votre efficacité de développement sera assurément propulsée (boostée).
 
 Happy Coding with Hybrid AI!
+

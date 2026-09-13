@@ -76,11 +76,11 @@ int main() {
 ```mermaid
 graph LR
     subgraph "قبل std::move"
-        A["unique_ptr (ptr1)"] -->|"يمتلك"| B["ذاكرة الكومة (كائن)"]
+        A["unique_ptr (ptr1)"] -->| يمتلك | B["ذاكرة الكومة (كائن)"]
     end
     subgraph "بعد std::move"
         C["unique_ptr (ptr1)"] -.->|"فارغ (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->|"يمتلك"| F["ذاكرة الكومة (كائن)"]
+        E["unique_ptr (ptr2)"] -->| يمتلك | F["ذاكرة الكومة (كائن)"]
     end
 ```
 
@@ -130,13 +130,13 @@ int main() {
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->|"مؤشر إلى T"| B["الكائن المُدار (T)"]
-    A -->|"مؤشر إلى كتلة التحكم"| C["كتلة التحكم"]
+    A["std::shared_ptr<T> (sp1)"] -->| مؤشر إلى T | B["الكائن المُدار (T)"]
+    A -->| مؤشر إلى كتلة التحكم | C["كتلة التحكم"]
     
-    D["std::shared_ptr<T> (sp2)"] -->|"مؤشر إلى T"| B
-    D -->|"مؤشر إلى كتلة التحكم"| C
+    D["std::shared_ptr<T> (sp2)"] -->| مؤشر إلى T | B
+    D -->| مؤشر إلى كتلة التحكم | C
     
-    C -->|"يحذف"| B
+    C -->| يحذف | B
     C -.->|"العد القوي: 2"| E["العد القوي"]
     C -.->|"العد الضعيف: 0"| F["العد الضعيف"]
     C -.->|"حاذف مخصص"| G["الحاذف"]
@@ -176,8 +176,8 @@ std::shared_ptr<MyClass> ptr2 = std::make_shared<MyClass>();
 ```mermaid
 graph TD
     subgraph "مرجع دائري (تسرب الذاكرة)"
-        A["الكائن A"] -->|"shared_ptr (Strong=1)"| B["الكائن B"]
-        B -->|"shared_ptr (Strong=1)"| A
+        A["الكائن A"] -->| shared_ptr (Strong=1) | B["الكائن B"]
+        B -->| shared_ptr (Strong=1) | A
     end
 ```
 
@@ -188,7 +188,7 @@ graph TD
 ```mermaid
 graph TD
     subgraph "كسر المرجع الدائري"
-        C["الكائن A"] -->|"shared_ptr (Strong=1)"| D["الكائن B"]
+        C["الكائن A"] -->| shared_ptr (Strong=1) | D["الكائن B"]
         D -.->|"weak_ptr (Weak=1)"| C
     end
 ```
@@ -268,3 +268,4 @@ $$ S(t) + W(t) = 0 $$
 3.  استخدم **`std::weak_ptr`** في هياكل البيانات التي قد تسبب حلقات (مراجع دائرية) أو في تنفيذ نمط المراقب (Observer Pattern) لمنع تسرب الذاكرة بشكل استباقي.
 
 من خلال الفهم العميق للمؤشرات الذكية واستخدامها في المكان المناسب، يصبح من الممكن بناء بنية برمجية آمنة وقوية دون التضحية بأي شيء من أداء C++.
+

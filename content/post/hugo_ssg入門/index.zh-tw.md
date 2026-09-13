@@ -173,7 +173,7 @@ Hugo 預設支援 `categories` 與 `tags` 兩種分類，但透過編輯 `hugo.t
 ```mermaid
 flowchart LR
   WPDB["WP 資料庫"] -->|Plugin| Exporter["匯出工具"]
-  Exporter -->|"擷取文字、\n中介資料、圖片"| ZipFile["Zip / 資料夾"]
+  Exporter -->| 擷取文字、\n中介資料、圖片 | ZipFile["Zip / 資料夾"]
   ZipFile -->|Unpack| MarkdownFiles["Markdown 檔案 \n(content/)"]
   ZipFile -->|Unpack| ImageFiles["圖片 \n(static/wp-content/)"]
   MarkdownFiles --> Formatting["審查與格式化 \n(修復短代碼)"]
@@ -320,3 +320,4 @@ jobs:
 移轉至靜態網站產生器雖然需要初期的學習成本（Git 的操作、Markdown 的語法、從終端機執行 CLI 指令、理解模板引擎的規範等），但它所帶來的是「壓倒性的顯示速度」、「堅固的安全性」以及「免維護」等足以彌補這些成本的豐厚回報。
 
 如果您的網站不需要頻繁更改設計或複雜的動態處理（如會員專屬功能或進階的電商功能），且主要目的是發布資訊（部落格、媒體、企業網站），那麼移轉到 Hugo 將會是最有效的技術投資之一。請務必參考本篇文章，邁出使用 Hugo 營運次世代網站的第一步。
+

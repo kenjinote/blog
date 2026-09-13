@@ -275,10 +275,10 @@ flowchart TD
     A["assets/css/main.css"] -->|resources.Get| B["Ruang Memori Hugo"]
     B -->|resources.PostCSS| C["Proses PostCSS + Tailwind JIT"]
     C --> D{"hugo.IsProduction ?"}
-    D -- "Yes (Lingkungan Produksi)" --> E["minify (Hapus spasi/baris baru)"]
+    D -- Yes (Lingkungan Produksi) --> E["minify (Hapus spasi/baris baru)"]
     E --> F["fingerprint (Hitung hash)"]
     F --> G["public/css/main.[hash].css (Dengan SRI)"]
-    D -- "No (Lingkungan Pengembangan)" --> H["public/css/main.css"]
+    D -- No (Lingkungan Pengembangan) --> H["public/css/main.css"]
 ```
 
 1. **`resources.Get`**: Mencari file yang ditentukan dalam direktori `assets` dan memuatnya sebagai objek sumber daya di memori.
@@ -412,3 +412,4 @@ Kelebihan utama dari arsitektur ini adalah bahwa **"pengaturan cukup dilakukan s
 Selain itu, karena ukuran CSS akhir yang dihasilkan selalu minimal, hal ini secara langsung berdampak pada peningkatan skor Core Web Vitals dan sangat menguntungkan dari perspektif SEO.
 
 Kombinasi Hugo dan Tailwind CSS akan selalu menjadi salah satu "pilihan terbaik" untuk proyek mana pun, dari blog teknologi perorangan hingga situs berskala korporat (enterprise). Gunakan kumpulan (toolchain) alat ini yang luar biasa untuk menikmati kehidupan pengembangan web (web development) yang nyaman!
+

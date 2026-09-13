@@ -148,7 +148,7 @@ graph LR
     B --> C["Texte chiffré (Ciphertext)"]
     C --> D["Déchiffrer avec la clé privée (d)"]
     D --> E["Texte en clair original"]
-    F["Attaquant (Attacker)"] -- "Tente de factoriser N" --> C
+    F["Attaquant (Attacker)"] -- Tente de factoriser N --> C
     F -.-> G["Impossible de calculer d sans connaître p et q"]
 ```
 
@@ -214,3 +214,4 @@ La quête insatiable des nombres premiers, qui se poursuit depuis la Grèce anti
 L'hypothèse de Riemann est une entité qui symbolise à la fois la « beauté abstraite » des mathématiques et sa « stupéfiante applicabilité au monde physique et à la société réelle ».
 
 Lorsqu'un jour cette immense montagne mathématique, dont personne n'a encore atteint le sommet, sera conquise, nous comprendrons parfaitement la vérité cosmique des nombres premiers et acquerrons une nouvelle perspective sur les fondements de la société de l'information. L'étude de la cryptographie est aussi un voyage à travers l'histoire de la sagesse humaine.
+

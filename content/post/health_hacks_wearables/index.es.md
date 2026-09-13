@@ -251,7 +251,7 @@ A partir de los datos preprocesados, analizamos la relación entre los indicador
 
 ```mermaid
 xychart-beta
-    title "VFC vs Horas Diarias de Codificación (Normalizado)"
+    title VFC vs Horas Diarias de Codificación (Normalizado)
     x-axis ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"]
     y-axis "VFC y Rendimiento de Codificación" 10 --> 100
     line [45, 52, 65, 75, 70, 58, 48]
@@ -368,5 +368,6 @@ Aprovechando la ciencia de datos y las API, diseñemos las condiciones de salud 
 
 ---
 *Aviso legal: Este artículo resume los experimentos personales y el enfoque de ciencia de datos del autor, y no tiene como objetivo proporcionar asesoramiento médico. Si experimenta problemas de salud persistentes o trastornos del sueño, consulte a una institución médica especializada.*
+
 
 

@@ -19,13 +19,13 @@ tags: ["C++", "C++26", "Programming", "Tech"]
 
 ```mermaid
 timeline
-    title "C++ Standardization Evolution"
-    "C++11" : "Modern C++の幕開け" : "auto, lambda, constexpr, move semantics"
-    "C++14" : "機能の洗練" : "generic lambda, return type deduction"
-    "C++17" : "実用性の向上" : "std::optional, fold expressions, structured binding"
-    "C++20" : "パラダイムシフト" : "Concepts, Modules, Coroutines, Ranges"
-    "C++23" : "さらなる拡張" : "Deducing this, std::expected, std::print"
-    "C++26" : "次世代の革命" : "Reflection, Contracts, Pattern Matching"
+    title C++ Standardization Evolution
+    C++11 : Modern C++の幕開け : auto, lambda, constexpr, move semantics
+    C++14 : 機能の洗練 : generic lambda, return type deduction
+    C++17 : 実用性の向上 : std::optional, fold expressions, structured binding
+    C++20 : パラダイムシフト : Concepts, Modules, Coroutines, Ranges
+    C++23 : さらなる拡張 : Deducing this, std::expected, std::print
+    C++26 : 次世代の革命 : Reflection, Contracts, Pattern Matching
 ```
 
 C++26は、C++20で導入されたConceptsやModulesといった大規模機能群の上で、**コードの自己記述性（リフレクション）**や**堅牢性（契約プログラミング）**を極限まで高めることを目的としています。それでは、各機能の詳細に迫りましょう。
@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["Type: User"] -->| "^User" | B["std::meta::info"]
-    B -->| "nonstatic_data_members_of" | C["Range of meta::info"]
-    C -->| "[: member :]" | D["Direct Member Access (obj.id, obj.name)"]
+    A["Type: User"] -->| ^User | B["std::meta::info"]
+    B -->| nonstatic_data_members_of | C["Range of meta::info"]
+    C -->| [: member :] | D["Direct Member Access (obj.id, obj.name)"]
     D --> E["Generated Code (Zero Overhead)"]
 ```
 
@@ -146,12 +146,12 @@ Contractsは単なるコメントや古い `assert()` マクロとは異なり�
 ```mermaid
 graph TD
     A["Function Called"] --> B{"Evaluate Pre-condition"}
-    B -- "True" --> C["Execute Body"]
-    B -- "False" --> D["Invoke Violation Handler"]
+    B -- True --> C["Execute Body"]
+    B -- False --> D["Invoke Violation Handler"]
     D --> E["Log Error / Abort / Throw"]
     C --> F{"Evaluate Post-condition"}
-    F -- "True" --> G["Return Value"]
-    F -- "False" --> D
+    F -- True --> G["Return Value"]
+    F -- False --> D
 ```
 
 Contractsを利用することで、APIの仕様が自己文書化されるだけでなく、未定義動作（Undefined Behavior, UB）を引き起こす前に安全にプログラムを停止・制御できるため、C++特有のメモリ破壊バグや論理バグの大幅な削減が期待できます。
@@ -367,3 +367,5 @@ C++26は、長年C++プログラマが待ち望んできた「夢の機能」が
 
 ---
 *この記事は2026年時点のC++26標準化状況に基づいて執筆されています。各コンパイラの実装状況によっては、一部の構文が変更される可能性があることにご留意ください。*
+
+

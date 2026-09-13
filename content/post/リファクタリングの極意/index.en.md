@@ -57,12 +57,12 @@ flowchart TD
     B --> C["Verify that all tests pass"]
     C --> D["Perform a small refactoring"]
     D --> E["Re-run the tests"]
-    E -- "Failure (Red)" --> F["Revert the changes (Revert)"]
+    E -- Failure (Red) --> F["Revert the changes (Revert)"]
     F --> D
-    E -- "Success (Green)" --> G["Commit the code"]
+    E -- Success (Green) --> G["Commit the code"]
     G --> H{"Are there next areas to improve?"}
-    H -- "Yes" --> D
-    H -- "No" --> I["Refactoring complete"]
+    H -- Yes --> D
+    H -- No --> I["Refactoring complete"]
 ```
 
 By looping this cycle, developers can always change code on a safety net. If a test fails, it is important to immediately `Revert` (undo) without deeply pursuing the cause.
@@ -334,3 +334,4 @@ Keep the following steps explained in this article in mind.
 5. **Utilize Modern C++ features and let the compiler do the work**
 
 Having the spirit of "the Boy Scout Rule (leave the campground cleaner than you found it)" and continuously, steadily improving the code little by little during daily development tasks is the true secret of refactoring.
+

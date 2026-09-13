@@ -246,15 +246,14 @@ Il s'agit d'un système de chiffrement basé sur la théorie des codes correcteu
 
 ```mermaid
 timeline
-    title "Histoire de l'évolution de la cryptographie et de l'informatique"
-    "Antiquité - Moyen Âge" : "Chiffre de César" : "Chiffre de Vigenère" : "Naissance de l'analyse fréquentielle"
-    "Années 1930 - 40" : "Opération et déchiffrement d'Enigma" : "Développement de la machine de Turing / Bombe"
-    "Années 1970" : "Standardisation de DES (1977)" : "Échange de clés Diffie-Hellman (1976)" : "Naissance du chiffrement RSA (1977)"
-    "Années 1980 - 90" : "Proposition de la cryptographie sur les courbes elliptiques (ECC)" : "Publication de l'algorithme de Shor (1994)"
-    "Années 2000" : "Standardisation de AES (2001)"
-    "Années 2010 - Présent" : "Accélération de la recherche sur les ordinateurs quantiques" : "Début du projet de standardisation PQC par le NIST"
-    "Futur proche (Q-Day)" : "Réalisation d'ordinateurs quantiques à grande échelle ?" : "Transition complète vers PQC (ML-KEM/ML-DSA)"
-```
+    title Histoire de l'évolution de la cryptographie et de l'informatique
+    Antiquité - Moyen Âge : Chiffre de César : Chiffre de Vigenère : Naissance de l'analyse fréquentielle
+    Années 1930 - 40 : Opération et déchiffrement d'Enigma : Développement de la machine de Turing / Bombe
+    Années 1970 : Standardisation de DES (1977) : Échange de clés Diffie-Hellman (1976) : Naissance du chiffrement RSA (1977)
+    Années 1980 - 90 : Proposition de la cryptographie sur les courbes elliptiques (ECC) : Publication de l'algorithme de Shor (1994)
+    Années 2000 : Standardisation de AES (2001)
+    Années 2010 - Présent : Accélération de la recherche sur les ordinateurs quantiques : Début du projet de standardisation PQC par le NIST
+    Futur proche (Q-Day) : Réalisation d'ordinateurs quantiques à grande échelle ? : Transition complète vers PQC (ML-KEM/ML-DSA)```
 
 ---
 
@@ -267,3 +266,5 @@ Le chiffre de César a été vaincu par l'analyse fréquentielle, et l'Enigma pr
 Cependant, l'humanité regarde déjà vers l'avenir, et se prépare à un nouveau « bouclier » appelé cryptographie post-quantique (PQC). Actuellement, dans les infrastructures informatiques du monde entier, la préparation à la transition de la cryptographie à clé publique existante vers la PQC (garantir la crypto-agilité) est une question urgente.
 
 La cryptographie n'est pas seulement un puzzle mathématique difficile, mais la barrière la plus solide pour protéger notre vie privée, nos biens, et l'infrastructure sociale elle-même.
+
+

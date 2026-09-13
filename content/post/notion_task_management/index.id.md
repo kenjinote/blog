@@ -48,9 +48,9 @@ flowchart TD
     T["Tasks (DB Tugas)"]
     N["Notes (DB Zettelkasten)"]
 
-    P -->|"Relasi 1:N"| T
-    T -->|"Relasi N:N"| N
-    P -->|"Relasi 1:N"| N
+    P -->| Relasi 1:N | T
+    T -->| Relasi N:N | N
+    P -->| Relasi 1:N | N
 ```
 
 ### Properti Basis Data Projects
@@ -165,9 +165,9 @@ flowchart TD
     NOTION["API Notion"]
     DB["DB Tugas Notion"]
 
-    GH -->|"Kirim Webhook"| GHA
-    GHA -->|"Eksekusi skrip Python"| NOTION
-    NOTION -->|"Perbarui DB / Tambah tugas"| DB
+    GH -->| Kirim Webhook | GHA
+    GHA -->| Eksekusi skrip Python | NOTION
+    NOTION -->| Perbarui DB / Tambah tugas | DB
 ```
 
 ### Membuat Tugas Notion Secara Otomatis dari GitHub Issues
@@ -273,5 +273,6 @@ Tidak peduli seberapa canggih sistem atau alat yang Anda bangun, jika orang yang
 Manajemen tugas menggunakan Notion jauh melampaui daftar To-Do belaka. Dengan menggabungkan penataan informasi melalui metode PARA, pembuatan jaringan pengetahuan melalui Zettelkasten, dan rekayasa melalui API Notion, Anda dapat membangun "Otak Kedua (Second Brain)" yang sangat mendorong pengembangan personal dan penulisan blog Anda.
 
 Meskipun pengaturan awal membutuhkan beberapa waktu, setelah sistem mulai berjalan, beban kognitif yang diperlukan untuk manajemen tugas akan menurun drastis, dan Anda dapat sepenuhnya fokus pada hal yang benar-benar penting: "menulis kode" dan "menulis teks". Pastikan untuk menjadikan artikel ini sebagai referensi, dan cobalah untuk membangun ruang kerja Notion terkuat versi Anda sendiri.
+
 
 

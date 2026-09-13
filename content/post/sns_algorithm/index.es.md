@@ -121,7 +121,7 @@ El siguiente gráfico muestra la diferencia en el ciclo de vida entre una tecnol
 
 ```mermaid
 xychart-beta
-    title "Ciclo de vida de la tecnología y evolución de su evaluación"
+    title Ciclo de vida de la tecnología y evolución de su evaluación
     x-axis ["0 meses", "6 meses", "12 meses", "18 meses", "24 meses", "30 meses", "36 meses"]
     y-axis "Menciones / Nivel de entusiasmo en RRSS" 0 --> 100
     line [10, 85, 95, 45, 20, 10, 5]
@@ -176,5 +176,6 @@ Los algoritmos de recomendación de las redes sociales son herramientas poderosa
 Necesitamos desarrollar una alfabetización (literacy) que nos permita tratar la información que fluye en nuestras líneas de tiempo no como "hechos" o "tendencias absolutas", sino como una "señal" más.
 
 Salir de la cámara de eco, leer el código fuente con nuestras propias manos, seguir los debates de RFC, decodificar las fórmulas en artículos académicos y enfrentar los verdaderos desafíos de nuestro propio dominio empresarial. Ese es el único camino para practicar una verdadera ingeniería de software sin ser devorado por la ola de los algoritmos.
+
 
 

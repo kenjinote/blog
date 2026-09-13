@@ -125,19 +125,19 @@ graph TD
     Start["Start Test (Input: N, a)"] --> CalcDS["Calculate d (odd) and s such that N-1 = d * 2^s"]
     CalcDS --> CalcX["Calculate x = a^d mod N"]
     CalcX --> CheckX1{"x == 1 or x == N-1 ?"}
-    CheckX1 -- "Yes" --> ReturnTrue["Probably Prime"]
-    CheckX1 -- "No" --> LoopStart["Start loop for r = 1 to s-1"]
+    CheckX1 -- Yes --> ReturnTrue["Probably Prime"]
+    CheckX1 -- No --> LoopStart["Start loop for r = 1 to s-1"]
     
     LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- "No" --> ReturnFalse["Definitely Composite"]
-    LoopCondition -- "Yes" --> SquareX["Calculate x = (x * x) mod N"]
+    LoopCondition -- No --> ReturnFalse["Definitely Composite"]
+    LoopCondition -- Yes --> SquareX["Calculate x = (x * x) mod N"]
     
     SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- "Yes" --> ReturnTrue
-    CheckXMinus1 -- "No" --> CheckXOne{"x == 1 ?"}
+    CheckXMinus1 -- Yes --> ReturnTrue
+    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
     
-    CheckXOne -- "Yes" --> ReturnFalse
-    CheckXOne -- "No" --> LoopNext["Increment r by 1 and continue"]
+    CheckXOne -- Yes --> ReturnFalse
+    CheckXOne -- No --> LoopNext["Increment r by 1 and continue"]
     LoopNext --> LoopCondition
 ```
 
@@ -326,3 +326,4 @@ The world of algorithms, where programming and mathematics intersect, is incredi
 *Reference:*
 - *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
 - *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+

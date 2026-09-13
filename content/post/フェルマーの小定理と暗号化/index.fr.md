@@ -158,13 +158,13 @@ flowchart TD
     Start["Début"] --> Input["Entrer le nombre à tester p et le nombre de tests k"]
     Input --> LoopStart["Boucle de i = 0 à k-1"]
     LoopStart --> Condition{"i < k ?"}
-    Condition -- "Oui" --> RandomA["Choisir un entier aléatoire a dans la plage 1 < a < p-1"]
+    Condition -- Oui --> RandomA["Choisir un entier aléatoire a dans la plage 1 < a < p-1"]
     RandomA --> Calc["Calculer l'exponentiation modulaire a^(p-1) mod p"]
     Calc --> CheckPrime{"Le résultat est-il 1 ?"}
-    CheckPrime -- "Non" --> ReturnComposite["p est un nombre composé (certain)"]
-    CheckPrime -- "Oui" --> Increment["Incrémenter i"]
+    CheckPrime -- Non --> ReturnComposite["p est un nombre composé (certain)"]
+    CheckPrime -- Oui --> Increment["Incrémenter i"]
     Increment --> Condition
-    Condition -- "Non" --> ReturnPrime["p est probablement premier (probabiliste)"]
+    Condition -- Non --> ReturnPrime["p est probablement premier (probabiliste)"]
     ReturnComposite --> End["Fin"]
     ReturnPrime --> End
 ```
@@ -473,3 +473,4 @@ Cependant, environ 300 ans plus tard, dans les années 1970, à l'aube des rése
 Les messages LINE que nous envoyons nonchalamment tous les jours, les achats sur Amazon, tout cela danse sur cette belle et simple formule $a^{p-1} \equiv 1 \pmod p$. Le petit théorème de Fermat nous enseigne que peu importe à quel point les mathématiques peuvent être abstraites, le moment viendra toujours où elles seront utiles à l'humanité.
 
 Dans l'apprentissage de la programmation et de la théorie cryptographique, comprendre les structures mathématiques à la base de celles-ci sera une arme puissante pour comprendre en profondeur le comportement des bibliothèques fournies sous forme de boîtes noires et pour concevoir des systèmes plus sécurisés.
+

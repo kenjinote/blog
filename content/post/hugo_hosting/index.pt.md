@@ -216,7 +216,7 @@ A adoção do Google Analytics (especificamente o `gtag.js` e o Google Tag Manag
 Vamos tentar dividir e considerar o tempo de carregamento de um site da seguinte maneira:
 
 ```mermaid
-pie title "Repartição Típica do Tempo de Carregamento do Site"
+pie title Repartição Típica do Tempo de Carregamento do Site
     "TTFB (Time to First Byte)" : 15
     "Download de Conteúdo (HTML/CSS)" : 20
     "DOM Parsing & Renderização" : 45
@@ -255,5 +255,6 @@ Na operação de sites estáticos usando o Hugo, a adoção de plataformas de ho
 5. **Analytics Mais Leves**: Implementar opções como o Cloudflare Web Analytics, que respeitam a privacidade enquanto não comprometem o desempenho.
 
 Combinando tudo isso, é possível construir de forma gratuita um sistema de blog escalável e robusto, capaz de suportar tráfegos de larga escala (de milhões de pageviews mensais). Se você está considerando iniciar um blog de tecnologia, um site corporativo ou um portfólio, por favor não hesite em testar essa configuração composta por Jamstack, Hugo e Cloudflare Pages.
+
 
 

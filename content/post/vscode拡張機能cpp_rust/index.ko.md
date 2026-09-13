@@ -33,13 +33,13 @@ graph TD
     CompilerR["rustc 프론트엔드"]
     Debugger["CodeLLDB (Debug Adapter)"]
 
-    VSCode -- "자동 완성 요청・정의로 이동" --> LSP
+    VSCode -- 자동 완성 요청・정의로 이동 --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
     Clangd -. "AST(추상 구문 트리) 분석" .-> CompilerC
     RustAnalyzer -. "매크로 전개・타입 추론" .-> CompilerR
     
-    VSCode -- "Debug Adapter Protocol (DAP)" --> Debugger
+    VSCode -- Debug Adapter Protocol (DAP) --> Debugger
     Debugger -. "ptrace / 메모리 덤프" .-> Executable["컴파일된 바이너리"]
 ```
 
@@ -388,3 +388,4 @@ C++와 Rust는 모두 '하드웨어의 한계 성능을 이끌어내는' 것을 
 초기 설정 파일 커스터마이징에는 다소 시간이 걸릴지 모르지만, 한번 구축하고 나면 그 이후의 코딩 경험은 놀라울 정도로 쾌적하고 생산적이게 됩니다. 모쪼록 본 문서의 아키텍처 해설이나 구체적인 설정(`settings.json`, `tasks.json`, `launch.json`)을 참고하여 자신만의 최강의 개발 환경을 구축해 보시기 바랍니다.
 
 쾌적하고 안전한 시스템 프로그래밍 라이프를 즐기시길!
+

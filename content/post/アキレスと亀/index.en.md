@@ -114,7 +114,7 @@ In other words, even if there are an infinite number of steps, the sum of the ti
 Achilles will splendidly catch up to and overtake the tortoise approximately 1.11 seconds after the start.
 
 ```mermaid
-pie title "Time until Achilles catches up (Total approx. 1.11 seconds)"
+pie title Time until Achilles catches up (Total approx. 1.11 seconds)
     "Step 1 (1 second)" : 90
     "Step 2 (0.1 seconds)" : 9
     "Infinite sum from Step 3 onwards (0.011... seconds)" : 1
@@ -167,3 +167,4 @@ However, for the philosophers of ancient Greece, who lacked concepts like "infin
 The deep questions posed by this paradox—"What is continuity?" and "What does it mean to be infinitely divisible?"—became an important driving force leading to the birth of **"calculus"** by Newton and Leibniz later on, and further to modern mathematical foundations.
 
 Great paradoxes do not merely deceive people; they also act as keys that open doors to new mathematics.
+

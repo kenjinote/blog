@@ -109,9 +109,9 @@ graph TD
 
 ```mermaid
 graph LR
-    A["框架與驅動程式"] -->|"依賴"| B["介面轉接器"]
-    B -->|"依賴"| C["使用案例"]
-    C -->|"依賴"| D["實體"]
+    A["框架與驅動程式"] -->| 依賴 | B["介面轉接器"]
+    B -->| 依賴 | C["使用案例"]
+    C -->| 依賴 | D["實體"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,3 +422,4 @@ Repository 的實作類別會實際連接到資料庫來測試 SQL 是否正確�
 
 ---
 *Reference: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin*
+

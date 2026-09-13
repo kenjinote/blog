@@ -275,10 +275,10 @@ flowchart TD
     A["assets/css/main.css"] -->|resources.Get| B["Hugo-Speicherbereich"]
     B -->|resources.PostCSS| C["PostCSS + Tailwind JIT-Prozess"]
     C --> D{"hugo.IsProduction ?"}
-    D -- "Ja (Produktionsumgebung)" --> E["minify (Leerzeichen/Zeilenumbrüche entfernen)"]
+    D -- Ja (Produktionsumgebung) --> E["minify (Leerzeichen/Zeilenumbrüche entfernen)"]
     E --> F["fingerprint (Hash berechnen)"]
     F --> G["public/css/main.[hash].css (mit SRI)"]
-    D -- "Nein (Entwicklungsumgebung)" --> H["public/css/main.css"]
+    D -- Nein (Entwicklungsumgebung) --> H["public/css/main.css"]
 ```
 
 1. **`resources.Get`**: Sucht die angegebene Datei im Verzeichnis `assets` und lädt sie als Ressourcenobjekt in den Speicher.
@@ -412,3 +412,4 @@ Das Tolle an dieser Architektur ist, **"dass Sie sie nur einmal einrichten müss
 Da zudem die ausgegebene CSS-Größe stets minimiert wird, führt dies direkt zu besseren Core Web Vitals-Scores und ist aus SEO-Sicht sehr vorteilhaft.
 
 Die Kombination aus Hugo und Tailwind CSS wird für jedes Projekt, vom persönlichen Tech-Blog bis zur großen Unternehmens-Website, weiterhin eine der "besten Entscheidungen" sein. Nutzen Sie diese mächtige Toolchain auf jeden Fall und genießen Sie ein komfortables Web-Entwicklungsleben!
+

@@ -111,7 +111,7 @@ The expected values match perfectly!
 In the first incorrect calculation, we treated the $X$ in Pattern 1 (which is actually $S$) and the $X$ in Pattern 2 (which is actually $2S$) as **different values using the same variable $X$**, which created the illusion that "switching increases the expected value."
 
 ```mermaid
-pie title "The Truth of Expected Values (assuming the smaller amount is S)"
+pie title The Truth of Expected Values (assuming the smaller amount is S)
     "Expected value of not switching (1.5S)" : 50
     "Expected value of switching (1.5S)" : 50
 ```
@@ -163,3 +163,4 @@ Even though the "Two Envelopes Paradox" consists only of simple multiplication a
 3. **The difficulty of handling infinity**: Introducing the concept of "infinity," which cannot be applied to the real world, into calculation formulas produces results that defy common sense.
 
 The next time in life you think, "The grass is greener on the other side, so it's better to switch," remember this paradox. In your calculation formula, the variables might just be getting swapped.
+

@@ -109,14 +109,14 @@ La chaise optimale varie en fonction de votre taille, de votre style de travail 
 ```mermaid
 flowchart TD
     Start["Quel type de travail de bureau faites-vous le plus ?"] --> Q1["Souvent penché en avant (frappe, écriture) ?"]
-    Q1 -- "Oui" --> Q2["Budget supérieur à 150 000 yens possible ?"]
-    Q1 -- "Non" --> Q3["Priorité à la posture inclinée vers l'arrière / relaxante (réflexion, vidéos) ?"]
-    Q2 -- "Oui" --> Aeron["Herman Miller Aeron"]
-    Q2 -- "Non" --> Sylphy["Okamura Sylphy"]
-    Q3 -- "Oui" --> Embody["Herman Miller Embody"]
-    Q3 -- "Non" --> Q4["Utilisation de plusieurs appareils / soutien des bras important ?"]
-    Q4 -- "Oui" --> Gesture["Steelcase Gesture"]
-    Q4 -- "Non" --> Contessa["Okamura Contessa Seconda"]
+    Q1 -- Oui --> Q2["Budget supérieur à 150 000 yens possible ?"]
+    Q1 -- Non --> Q3["Priorité à la posture inclinée vers l'arrière / relaxante (réflexion, vidéos) ?"]
+    Q2 -- Oui --> Aeron["Herman Miller Aeron"]
+    Q2 -- Non --> Sylphy["Okamura Sylphy"]
+    Q3 -- Oui --> Embody["Herman Miller Embody"]
+    Q3 -- Non --> Q4["Utilisation de plusieurs appareils / soutien des bras important ?"]
+    Q4 -- Oui --> Gesture["Steelcase Gesture"]
+    Q4 -- Non --> Contessa["Okamura Contessa Seconda"]
 ```
 
 ---
@@ -133,7 +133,7 @@ Peu importe l'excellence de la chaise ergonomique que vous achetez, elle ne serv
 Le diagramme circulaire ci-dessous montre la proportion de mauvaises postures courantes chez les télétravailleurs. Il est important d'aménager votre environnement pour éviter ces postures.
 
 ```mermaid
-pie title "Top 5 des mauvaises postures chez les télétravailleurs"
+pie title Top 5 des mauvaises postures chez les télétravailleurs
     "Dos voûté / Tête projetée en avant (Cou droit)" : 40
     "Inclinaison du bassin vers l'arrière (Assise sur le sacrum)" : 30
     "Croisement des jambes (Distorsion asymétrique du bassin)" : 15
@@ -148,5 +148,7 @@ pie title "Top 5 des mauvaises postures chez les télétravailleurs"
 Les chaises ergonomiques ne sont en aucun cas un achat bon marché. Les modèles coûtant entre 100 000 et 200 000 yens ne sont pas rares. Cependant, si l'on considère que l'on y passe 8 heures par jour, soit environ 2000 heures par an, on peut dire que c'est "l'investissement le plus rentable (l'appareil avec le meilleur retour sur investissement)" pour prévenir de manière proactive la baisse de productivité et les risques de frais médicaux dus au mal de dos.
 
 Veuillez revoir votre style de travail du point de vue de la biomécanique et sélectionner la "chaise physiquement correcte" qui soutiendra avec précision votre squelette et vos muscles. C'est le plus grand secret pour continuer l'ingénierie confortablement pendant longtemps.
+
+
 
 
