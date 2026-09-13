@@ -15,7 +15,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 能從根本解決這些課題的，就是以 **Docker** 為首的容器技術，以及 **Infrastructure as Code (IaC)** 的典範。透過將本地開發環境容器化，可實現在作業系統層級的隔離，並使環境本身能與程式碼庫一起進行版本控制。
 
-本文將運用 Docker、Docker Compose 以及 VSCode DevContainers，為您徹底解說建構**「無論是誰、在何時、用哪台機器啟動，都能獲得分毫不差的相同狀態之可重現本地開發環境」**的步驟，以及其背後深層的技術機制，並會適時穿插數理角度的探討。
+本文將運用 Docker、Docker Compose 以及 VSCode DevContainers，為您徹底解說建構 **「無論是誰、在何時、用哪台機器啟動，都能獲得分毫不差的相同狀態之可重現本地開發環境」** 的步驟，以及其背後深層的技術機制，並會適時穿插數理角度的探討。
 
 ---
 
@@ -25,9 +25,9 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 Infrastructure as Code (IaC) 是一種透過機器可讀的定義檔，而非手動流程來管理基礎設施設定與配置（Provisioning）的方法。IaC 的核心原則包含以下要素：
 
-1. **宣告式方法 (Declarative Approach)**：定義「最終應該是什麼狀態」，而非「如何改變狀態」。
-2. **冪等性 (Idempotency)**：無論執行多少次腳本，都能保證始終得到相同的結果（狀態）。
-3. **版本控制 (Version Control)**：基礎設施的狀態會作為程式碼儲存於 Git 等版本控制系統 (VCS) 中，從而得以追蹤變更歷史與進行同儕審查（Peer Review）。
+1. **宣告式方法 (Declarative Approach)** ：定義「最終應該是什麼狀態」，而非「如何改變狀態」。
+2. **冪等性 (Idempotency)** ：無論執行多少次腳本，都能保證始終得到相同的結果（狀態）。
+3. **版本控制 (Version Control)** ：基礎設施的狀態會作為程式碼儲存於 Git 等版本控制系統 (VCS) 中，從而得以追蹤變更歷史與進行同儕審查（Peer Review）。
 
 在本地開發環境中實踐 IaC，意味著使用 `Dockerfile`、`docker-compose.yml` 及 `devcontainer.json` 來將開發環境「應有的樣貌」程式碼化。如此一來，即便是新加入團隊的成員，只需複製（Clone）儲存庫並敲擊一個指令，就能實現立即開始開發的入職（Onboarding）體驗。
 
@@ -35,9 +35,9 @@ Infrastructure as Code (IaC) 是一種透過機器可讀的定義檔，而非手
 
 容器技術與虛擬機器（VM）等 Hypervisor 類型的虛擬化不同，它是一種共享主機作業系統核心（Kernel）同時將行程隔離（Isolation）的輕量級虛擬化技術。為了實現這一點，主要利用了 Linux 核心的以下功能：
 
-- **Namespaces（命名空間）**：為每個行程提供系統資源（PID、網路、掛載點、使用者等）的獨立視圖。
-- **Cgroups (Control Groups, 控制群組)**：對行程可使用的實體資源（CPU、記憶體、磁碟 I/O 等）進行限制與分配。
-- **UnionFS (Union File System, 聯合檔案系統)**：將多個目錄樹（層）透明地疊加起來，呈現為單一檔案系統的技術。Docker 的映像檔分層便是依賴此技術。
+- **Namespaces（命名空間）** ：為每個行程提供系統資源（PID、網路、掛載點、使用者等）的獨立視圖。
+- **Cgroups (Control Groups, 控制群組)** ：對行程可使用的實體資源（CPU、記憶體、磁碟 I/O 等）進行限制與分配。
+- **UnionFS (Union File System, 聯合檔案系統)** ：將多個目錄樹（層）透明地疊加起來，呈現為單一檔案系統的技術。Docker 的映像檔分層便是依賴此技術。
 
 讓我們來思考資源限制的數學模型。假設主機的總記憶體容量為 $M_{\text{total}}$，並假設在主機上執行的 $n$ 個容器的記憶體限制為 $m_i$。考量主機作業系統及其他行程所消耗的基礎記憶體 $M_{\text{os}}$，系統穩定運作的必要條件可以用以下不等式表示：
 
@@ -49,7 +49,7 @@ $$ \sum_{i=1}^{n} m_i \le M_{\text{total}} - M_{\text{os}} $$
 
 ## 3. 高效的 Dockerfile 設計：將多階段建置發揮到極致
 
-打造可重現環境的第一步，是設計用來定義應用程式執行環境的 `Dockerfile`。在此將以 Python（FastAPI）為例，解說活用**多階段建置（Multi-stage Build）**的安全且輕量的 Dockerfile 最佳實踐。
+打造可重現環境的第一步，是設計用來定義應用程式執行環境的 `Dockerfile`。在此將以 Python（FastAPI）為例，解說活用 **多階段建置（Multi-stage Build）** 的安全且輕量的 Dockerfile 最佳實踐。
 
 多階段建置是在單一 `Dockerfile` 中使用多個 `FROM` 指令，將建置環境（包含編譯器與開發工具的龐大環境）與執行環境（僅包含必要產物的輕量環境）分離的手法。
 
@@ -226,8 +226,8 @@ networks:
 
 容器原則上是「無狀態（Stateless）」且「短暫（Ephemeral）」的存在。一旦銷毀容器，內部的資料也會隨之消失。為了保留資料庫的資料或快取，必須將主機機器的檔案系統區域掛載到容器中。
 
-- **綁定掛載 (Bind Mount)**：上述 `web` 服務中的 `./src:/app/src:ro` 即屬此類。將主機的特定目錄直接對映到容器內。用於讓本地程式碼的編輯能立即反映在容器中（熱重載）。從安全的觀點來看，附加 `:ro` (Read-Only, 唯讀) 選項，以防止容器端修改主機的原始碼是最佳實踐。
-- **具名 Volume (Named Volume)**：如 `postgres_data` 與 `redis_data` 屬此類。這是 Docker 內部（例如 `/var/lib/docker/volumes/`）管理的區域，擁有比綁定掛載更優秀的 I/O 效能，並能吸收作業系統之間檔案系統的差異。對於資料庫的持久化，務必使用此方式。
+- **綁定掛載 (Bind Mount)** ：上述 `web` 服務中的 `./src:/app/src:ro` 即屬此類。將主機的特定目錄直接對映到容器內。用於讓本地程式碼的編輯能立即反映在容器中（熱重載）。從安全的觀點來看，附加 `:ro` (Read-Only, 唯讀) 選項，以防止容器端修改主機的原始碼是最佳實踐。
+- **具名 Volume (Named Volume)** ：如 `postgres_data` 與 `redis_data` 屬此類。這是 Docker 內部（例如 `/var/lib/docker/volumes/`）管理的區域，擁有比綁定掛載更優秀的 I/O 效能，並能吸收作業系統之間檔案系統的差異。對於資料庫的持久化，務必使用此方式。
 
 ### 網路 (Networking) 與服務探索 (Service Discovery)
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-在本地開發環境（Docker 內），$T_{\text{net}}$ 幾乎接近 0，但值得注意的是**綁定掛載時的 I/O 效能**。尤其是在 Windows/macOS 上使用 Docker Desktop 的情況下，因為主機作業系統與 VM（容器）之間的檔案共享額外開銷 (Overhead)，$T_{\text{app}}$（程式碼讀取時間等）往往會有變得龐大的趨勢。為了解決這個效能瓶頸，強烈建議利用前述的 DevContainers 將整個原始碼配置到具名 Volume 中，或是採用在 WSL2（Windows Subsystem for Linux 2）環境中原生執行 Docker 引擎的架構。
+在本地開發環境（Docker 內），$T_{\text{net}}$ 幾乎接近 0，但值得注意的是 **綁定掛載時的 I/O 效能** 。尤其是在 Windows/macOS 上使用 Docker Desktop 的情況下，因為主機作業系統與 VM（容器）之間的檔案共享額外開銷 (Overhead)，$T_{\text{app}}$（程式碼讀取時間等）往往會有變得龐大的趨勢。為了解決這個效能瓶頸，強烈建議利用前述的 DevContainers 將整個原始碼配置到具名 Volume 中，或是採用在 WSL2（Windows Subsystem for Linux 2）環境中原生執行 Docker 引擎的架構。
 
 ---
 
@@ -365,7 +365,7 @@ $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\t
 在撰寫 Dockerfile 時，是否理解「分層快取 (Layer Cache)」的機制，會讓建置時間有著戲劇性的變化。
 Docker 會針對 Dockerfile 的每一個指令（如 `FROM`、`RUN`、`COPY` 等）建立檔案系統的差異（層次），並作為快取保留。在重新建置時，若該層未發生變更，便會重複利用快取。
 
-重要的原則是：**「從變更頻率較低的項目開始依序撰寫」**。
+重要的原則是： **「從變更頻率較低的項目開始依序撰寫」** 。
 
 我們來思考原始碼變更對建置時間帶來影響的模型化。假設總建置時間為 $T_{\text{build}}$，每個步驟的執行時間為 $T_{\text{layer}_i}$，快取命中有無的布林值為 $c_i \in \{0, 1\}$（命中時為 1）。
 
@@ -416,4 +416,5 @@ COPY ./src /app/src
 將 IaC 的典範引進本地環境，不僅僅是縮短了最初的環境設置時間而已。它消除了對更改基礎設施設定的擔憂，讓測試新技術堆疊變得更加容易，並能順利過渡到 CI/CD 管道等，讓整個開發週期的速度與品質都獲得飛躍性的提升。
 
 敬請活用本文所解說的最佳實踐，如透過多階段建置將映像檔大小最佳化、使用健康檢查控制相依性，以及意識到分層快取來撰寫 Dockerfile 等，為您自己的專案也引進最棒的開發者體驗（DX: Developer Experience）吧。
+
 

@@ -11,7 +11,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 # 前言：静态网站生成器Hugo与Tailwind CSS的强大协同效应
 
-在现代Web前端开发中，兼顾性能与开发体验（DX：Developer Experience）是所有项目中最重要的课题之一。在静态网站生成器（SSG）中拥有世界最快级别构建速度的**Hugo**，与引入了效用优先（Utility-First）这一创新范式的**Tailwind CSS**相结合，可以说是对这个课题的终极解答之一。
+在现代Web前端开发中，兼顾性能与开发体验（DX：Developer Experience）是所有项目中最重要的课题之一。在静态网站生成器（SSG）中拥有世界最快级别构建速度的 **Hugo** ，与引入了效用优先（Utility-First）这一创新范式的 **Tailwind CSS** 相结合，可以说是对这个课题的终极解答之一。
 
 Hugo使用Go语言编写，即使是数千页的网站，也能在短短几秒或毫秒级的时间内完成构建，拥有惊人的性能。另一方面，Tailwind CSS通过将预先定义好的无数效用类（如`flex`, `text-center`, `mt-4`等）直接写在HTML中，消除了在CSS文件和HTML文件之间来回切换的上下文切换，加速了设计的迭代。
 
@@ -53,9 +53,9 @@ Hugo使用Go语言编写，即使是数千页的网站，也能在短短几秒�
 
 这种基于BEM（Block Element Modifier）的设计在项目规模较小的时候还能起作用，但往往会引发以下问题：
 
-1. **命名枯竭与疲劳**：每次制作类似的组件时，都必须想出新的类名（例如：`card-news`, `card-featured`等）。
-2. **CSS体积膨胀**：每次添加新功能，CSS的代码行数就会不断增加，而且一旦写好的CSS往往因为害怕“不知道在哪里被使用了”而不敢删除，导致死代码（Dead Code）不断积累。
-3. **上下文切换**：因为HTML的结构和CSS的样式是在不同的文件中管理的，所以在编辑器中切换标签的次数会呈指数级增长。
+1. **命名枯竭与疲劳** ：每次制作类似的组件时，都必须想出新的类名（例如：`card-news`, `card-featured`等）。
+2. **CSS体积膨胀** ：每次添加新功能，CSS的代码行数就会不断增加，而且一旦写好的CSS往往因为害怕“不知道在哪里被使用了”而不敢删除，导致死代码（Dead Code）不断积累。
+3. **上下文切换** ：因为HTML的结构和CSS的样式是在不同的文件中管理的，所以在编辑器中切换标签的次数会呈指数级增长。
 
 ### Tailwind CSS带来的范式转变
 Tailwind CSS通过“效用类的组合”这种方法来解决这些问题。上述的卡片组件如果使用Tailwind CSS，会变成如下形式：
@@ -76,7 +76,7 @@ Tailwind CSS通过“效用类的组合”这种方法来解决这些问题。�
 
 ## 2. Hugo Pipes与PostCSS的架构
 
-为了将Tailwind CSS集成到Hugo中，必须了解名为**Hugo Pipes**的资产处理管道。Hugo Pipes是一项强大的功能，它能够在Hugo内部完成诸如Sass/SCSS编译、JavaScript打包和压缩，以及这次我们要使用的**PostCSS**的执行等所有关于资产的处理。
+为了将Tailwind CSS集成到Hugo中，必须了解名为 **Hugo Pipes** 的资产处理管道。Hugo Pipes是一项强大的功能，它能够在Hugo内部完成诸如Sass/SCSS编译、JavaScript打包和压缩，以及这次我们要使用的 **PostCSS** 的执行等所有关于资产的处理。
 
 PostCSS是一个使用JavaScript插件来转换CSS的工具。Tailwind CSS本身实际上也是作为PostCSS的一个插件来运行的。
 
@@ -93,11 +93,11 @@ flowchart TD
     E -->|"Stringifier"| F["编译并优化后的CSS"]
 ```
 
-1. **Parser（解析器）**：解析输入的原始CSS字符串，将其转换为程序可以操作的数据结构，即AST（抽象语法树）。
-2. **Plugins（插件群）**：
-   - **Tailwind CSS**：扫描模板文件（HTML或Markdown），将在其中使用的效用类作为节点添加到AST上。同时，它还会展开`@tailwind`指令。
-   - **Autoprefixer**：参考`Can I Use`的数据库，根据需要将浏览器引擎前缀（如`-webkit-`, `-moz-`等）添加到AST的属性中。
-3. **Stringifier（字符串化器）**：将转换完成的AST再次转换为浏览器可以解析的CSS字符串并输出。
+1. **Parser（解析器）** ：解析输入的原始CSS字符串，将其转换为程序可以操作的数据结构，即AST（抽象语法树）。
+2. **Plugins（插件群）** ：
+   - **Tailwind CSS** ：扫描模板文件（HTML或Markdown），将在其中使用的效用类作为节点添加到AST上。同时，它还会展开`@tailwind`指令。
+   - **Autoprefixer** ：参考`Can I Use`的数据库，根据需要将浏览器引擎前缀（如`-webkit-`, `-moz-`等）添加到AST的属性中。
+3. **Stringifier（字符串化器）** ：将转换完成的AST再次转换为浏览器可以解析的CSS字符串并输出。
 
 ---
 
@@ -107,8 +107,8 @@ flowchart TD
 
 ### 必备要求
 
-1. **Hugo Extended Version**：
-   不是普通的Hugo，而是必须包含Sass/SCSS处理功能以及原生支持PostCSS集成功能的**Extended版**。在终端中执行以下命令，确认版本信息中包含`extended`字符串。
+1. **Hugo Extended Version** ：
+   不是普通的Hugo，而是必须包含Sass/SCSS处理功能以及原生支持PostCSS集成功能的 **Extended版** 。在终端中执行以下命令，确认版本信息中包含`extended`字符串。
 
    ```bash
    hugo version
@@ -116,7 +116,7 @@ flowchart TD
    # hugo v0.121.2-4146... windows/amd64 BuildDate=... VendorInfo=gohugoio +extended
    ```
 
-2. **Node.js与npm**：
+2. **Node.js与npm** ：
    Tailwind CSS和PostCSS等依赖包需要在Node.js上运行。请确认已安装Node.js（推荐LTS版）。
 
    ```bash
@@ -373,7 +373,7 @@ NODE_ENV=production hugo --minify --environment production
 
 ### 使用Typography插件为Markdown添加样式
 
-在像Hugo这样的博客或文档网站中，我们无法直接向由Markdown生成的纯HTML元素（如 `<h1>`, `<p>`, `<ul>` 等）添加类名。在这种情况下，非常有用的是Tailwind官方的 **Typography插件**。
+在像Hugo这样的博客或文档网站中，我们无法直接向由Markdown生成的纯HTML元素（如 `<h1>`, `<p>`, `<ul>` 等）添加类名。在这种情况下，非常有用的是Tailwind官方的 **Typography插件** 。
 
 1. 安装插件
    ```bash
@@ -407,10 +407,11 @@ NODE_ENV=production hugo --minify --environment production
 
 辛苦了。至此，一个兼备Hugo超高速静态站点生成引擎、Tailwind CSS现代样式功能以及PostCSS可扩展性的完美的Web开发资产管道就完成了。
 
-这种架构的优点在于**“配置只需进行一次即可”**。一旦搭建好管道，开发者就无需打开CSS文件，只需直观地将效用类写在HTML或Markdown模板中，便能以惊人的速度搭建出复杂的UI。
+这种架构的优点在于 **“配置只需进行一次即可”** 。一旦搭建好管道，开发者就无需打开CSS文件，只需直观地将效用类写在HTML或Markdown模板中，便能以惊人的速度搭建出复杂的UI。
 
 此外，由于输出的CSS大小总是被最小化的，这直接提升了Core Web Vitals的分数，从SEO的角度来看也非常有利。
 
 Hugo与Tailwind CSS的组合，无论是对于个人的技术博客还是大型的企业网站，在所有项目中都将继续是“最佳选择”之一。请务必活用这条强大的工具链，享受舒适的Web开发生活吧！
+
 
 

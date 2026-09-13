@@ -13,7 +13,7 @@ description: '讲解如何使用C++开发中便利的包管理工具“vcpkg”�
 
 在C++中处理HTTP通信时，经常会用到 `libcurl`。但是，构建和调整依赖关系往往出乎意料地麻烦。
 
-这时候派上用场的就是微软出品的C++库管理工具“**vcpkg**”。
+这时候派上用场的就是微软出品的C++库管理工具“ **vcpkg** ”。
 这次，我们将介绍使用 `vcpkg` 安装 `libcurl`（支持OpenSSL），并在Visual Studio中顺畅使用的步骤。
 
 ---
@@ -66,3 +66,4 @@ vcpkg integrate install
 
 接下来，只需在项目中包含头文件，并使用libcurl的API开始开发吧。
 充分利用方便的vcpkg，一口气提高开发效率吧。
+

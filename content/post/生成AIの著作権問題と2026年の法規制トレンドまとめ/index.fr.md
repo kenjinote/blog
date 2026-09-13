@@ -81,7 +81,7 @@ graph LR
 ```
 
 ### 3.1. Union Européenne (UE) : Application complète de l'EU AI Act et morsure des exigences de transparence
-La « loi européenne sur l'IA (EU AI Act) », adoptée en 2024 et entrée dans sa phase de pleine application en 2026 après une période de transition progressive, est le cadre réglementaire de l'IA le plus strict au monde. Ce qui a le plus grand impact dans le contexte des droits d'auteur, ce sont les **« obligations de transparence »** et les **« obligations de se conformer à la législation européenne sur le droit d'auteur »** imposées aux développeurs de modèles d'IA à usage général (GPAI : General Purpose AI).
+La « loi européenne sur l'IA (EU AI Act) », adoptée en 2024 et entrée dans sa phase de pleine application en 2026 après une période de transition progressive, est le cadre réglementaire de l'IA le plus strict au monde. Ce qui a le plus grand impact dans le contexte des droits d'auteur, ce sont les **« obligations de transparence » ** et les ** « obligations de se conformer à la législation européenne sur le droit d'auteur »** imposées aux développeurs de modèles d'IA à usage général (GPAI : General Purpose AI).
 
 En vertu de l'EU AI Act, les fournisseurs de GPAI sont tenus de publier un « résumé suffisamment détaillé (Sufficiently detailed summary) » du contenu utilisé pour l'entraînement de l'IA. En 2026, la granularité juridique de ce « résumé suffisamment détaillé » a été clarifiée par les directives de la Cour de justice de l'Union européenne et du Bureau européen de l'IA (AI Office), et les descriptions abstraites telles que « nous avons utilisé le jeu de données public Common Crawl » sont désormais considérées comme illégales. Une divulgation stricte de la liste des URL spécifiques des ensembles de données, de la liste des domaines principaux où les titulaires de droits sont concentrés, et du processus d'exclusion des données (état du traitement des opt-out) est exigée.
 
@@ -218,4 +218,5 @@ L'année 2026 restera gravée dans l'histoire comme l'année monumentale où la 
 Il est impossible de faire reculer l'horloge de l'évolution de la technologie de l'IA. Cependant, apprivoiser cette technologie puissante et la contrôler afin qu'elle ne détruise pas l'écosystème des créateurs qui ont nourri la culture et l'art humains pendant des millénaires repose sur la sagesse du droit, de l'informatique et de la société dans son ensemble.
 
 À l'horizon 2030, il est vivement demandé de ne pas laisser l'IA et les créateurs s'affronter et se disputer le gâteau, mais d'établir une « nouvelle zone économique numérique » où ils peuvent co-créer avec une rémunération équitable et un respect mutuel, permettant ainsi d'étendre la créativité de l'humanité.
+
 

@@ -16,10 +16,10 @@ AI圖像生成技術以Stable Diffusion的開源為開端，實現了爆發性�
 
 在本機環境（自己的PC）建置AI圖像生成工具，具有以下壓倒性的優勢。
 
-1. **完全的自由與無限制的生成**：沒有生成數量的限制或額外成本，只要本機資源允許，就能無限量地生成圖像。
-2. **高度的可客製化性**：利用LoRA（Low-Rank Adaptation）或ControlNet可進行詳細的構圖控制，並重現特定的角色或畫風。
-3. **隱私與安全性**：因為不會將資料傳送到雲端，最適合機密性高的設計業務或個人專案。
-4. **即時導入最新技術**：可以搶先體驗開源社群每天發表的最新模型與擴充功能。
+1. **完全的自由與無限制的生成** ：沒有生成數量的限制或額外成本，只要本機資源允許，就能無限量地生成圖像。
+2. **高度的可客製化性** ：利用LoRA（Low-Rank Adaptation）或ControlNet可進行詳細的構圖控制，並重現特定的角色或畫風。
+3. **隱私與安全性** ：因為不會將資料傳送到雲端，最適合機密性高的設計業務或個人專案。
+4. **即時導入最新技術** ：可以搶先體驗開源社群每天發表的最新模型與擴充功能。
 
 本手冊以Windows環境為前提，從目前主流的3個AI圖像生成環境（AUTOMATIC1111 Stable Diffusion WebUI、ComfyUI、Fooocus）的建置方法，到作為基礎的數學背景，乃至於VRAM的最佳化手法，以超過10,000字的篇幅為您進行徹底解說。
 
@@ -27,7 +27,7 @@ AI圖像生成技術以Stable Diffusion的開源為開端，實現了爆發性�
 
 ## 2. 擴散模型（Diffusion Model）的數學背景與架構
 
-為了建置本機環境並適當地設定參數，理解如Stable Diffusion等**潛在擴散模型（Latent Diffusion Model: LDM）**是如何運作的，將會非常有幫助。
+為了建置本機環境並適當地設定參數，理解如Stable Diffusion等 **潛在擴散模型（Latent Diffusion Model: LDM）** 是如何運作的，將會非常有幫助。
 
 ### 2.1 雜訊添加過程（Forward Process）與去除過程（Reverse Process）
 
@@ -49,7 +49,7 @@ $$ L_{simple} = \mathbb{E}_{x_0, \epsilon \sim \mathcal{N}(0, I), t} \left[ || \
 
 ### 2.2 透過 Latent Space（潛在空間）減少運算量
 
-如果在像素空間（Pixel Space）中直接進行雜訊去除，運算量會隨著圖像解析度的平方而增加，因此會變成非常繁重的處理。Stable Diffusion 則是使用**VAE（變分自編碼器：Variational Autoencoder）**，將圖像轉換成被壓縮的「潛在空間（Latent Space）」後再進行處理。
+如果在像素空間（Pixel Space）中直接進行雜訊去除，運算量會隨著圖像解析度的平方而增加，因此會變成非常繁重的處理。Stable Diffusion 則是使用 **VAE（變分自編碼器：Variational Autoencoder）** ，將圖像轉換成被壓縮的「潛在空間（Latent Space）」後再進行處理。
 
 編碼器 $E$ 會將解析度為 $H \times W \times 3$ 的圖像壓縮為 $z \in \mathbb{R}^{H/8 \times W/8 \times 4}$。由於空間維度變成了八分之一，自注意力機制（Self-Attention）的運算量變成了 $\mathcal{O}((\frac{H \times W}{64})^2)$，帶來了戲劇性的效能提升。生成後則會藉由解碼器 $D$ 以 $\tilde{x} = D(z)$ 的方式復原回像素空間。
 
@@ -79,13 +79,13 @@ graph TD
 ### 3.1 GPU（顯示卡）
 這是AI處理的心臟部位。如果在Windows環境下運行Stable Diffusion，NVIDIA製的GPU是事實上的標準（De facto standard）。雖然使用AMD的Radeon也可以透過ROCm來運行，但考量到在Windows上建置環境的難易度，以及許多擴充功能都依賴於CUDA（NVIDIA的平行運算架構），可以毫不誇張地說NVIDIA是唯一選擇。
 
-*   **最低需求**：VRAM 6GB（如 GTX 1060 6GB / RTX 2060 等）。※但在解析度與功能上會有很大限制。
-*   **推薦需求**：VRAM 12GB（如 RTX 3060 12GB / RTX 4070 等）。這是能流暢運行 SDXL 模型的底線。
-*   **理想需求**：VRAM 16GB〜24GB（RTX 4080 / RTX 3090 / RTX 4090）。在進行高解析度生成、同時使用複雜的 ControlNet，或是在本機進行模型訓練（如 LoRA 等）時會需要。
+*   **最低需求** ：VRAM 6GB（如 GTX 1060 6GB / RTX 2060 等）。※但在解析度與功能上會有很大限制。
+*   **推薦需求** ：VRAM 12GB（如 RTX 3060 12GB / RTX 4070 等）。這是能流暢運行 SDXL 模型的底線。
+*   **理想需求** ：VRAM 16GB〜24GB（RTX 4080 / RTX 3090 / RTX 4090）。在進行高解析度生成、同時使用複雜的 ControlNet，或是在本機進行模型訓練（如 LoRA 等）時會需要。
 
 ### 3.2 記憶體（RAM）與儲存空間
-*   **RAM**：強烈建議32GB以上。將模型（數GB至數十GB）從儲存空間傳輸到VRAM時，會暫時使用系統RAM。如果RAM不足，系統會使用分頁檔，導致致命的速度下降。
-*   **儲存空間**：必備NVMe M.2 SSD。現今的AI模型（Checkpoints）每一個容量都在2GB到7GB左右。如果使用HDD，光是讀取模型就會花上數分鐘，因此並不實用。
+*   **RAM** ：強烈建議32GB以上。將模型（數GB至數十GB）從儲存空間傳輸到VRAM時，會暫時使用系統RAM。如果RAM不足，系統會使用分頁檔，導致致命的速度下降。
+*   **儲存空間** ：必備NVMe M.2 SSD。現今的AI模型（Checkpoints）每一個容量都在2GB到7GB左右。如果使用HDD，光是讀取模型就會花上數分鐘，因此並不實用。
 
 ---
 
@@ -94,18 +94,18 @@ graph TD
 在安裝工具本體之前，先準備好所需的基礎軟體。
 
 ### 4.1 Python 的安裝
-大部分的AI工具都是用Python撰寫的。請安裝與Stable Diffusion WebUI等相容性最高的 **Python 3.10.6**（如果版本太新，可能會導致PyTorch等依賴關係損壞）。
+大部分的AI工具都是用Python撰寫的。請安裝與Stable Diffusion WebUI等相容性最高的 **Python 3.10.6** （如果版本太新，可能會導致PyTorch等依賴關係損壞）。
 
 1.  從 Python 官方檔案庫下載 `python-3.10.6-amd64.exe`。
-2.  啟動安裝程式時，務必勾選最下方的 **"Add Python 3.10 to PATH"**。
-3.  在安裝完成畫面中點擊 **"Disable path length limit"**（停用路徑長度限制）。（重要：如果不解除 Windows 的 260 個字元路徑限制，在較深層的依賴函式庫中會發生錯誤）。
+2.  啟動安裝程式時，務必勾選最下方的 **"Add Python 3.10 to PATH"** 。
+3.  在安裝完成畫面中點擊 **"Disable path length limit"** （停用路徑長度限制）。（重要：如果不解除 Windows 的 260 個字元路徑限制，在較深層的依賴函式庫中會發生錯誤）。
 
 ### 4.2 Git for Windows 的安裝
 為了從 GitHub 取得原始碼或模型，會需要 Git。
 1.  從 Git for Windows 官方網站下載安裝程式，並以全部預設的設定進行安裝。
 
 ### 4.3 CUDA Toolkit 與 cuDNN 的設定
-由於最新的 PyTorch 在安裝時會內含下載所需的 CUDA 二進位檔案，因此不再必須於整個系統中安裝 CUDA Toolkit。然而，如果要利用自訂擴充功能（如 TensorRT 或 xFormers 的建置），建議從 NVIDIA 官方安裝 **CUDA Toolkit 11.8** 或 **12.1**（配合所使用的 PyTorch 版本）。
+由於最新的 PyTorch 在安裝時會內含下載所需的 CUDA 二進位檔案，因此不再必須於整個系統中安裝 CUDA Toolkit。然而，如果要利用自訂擴充功能（如 TensorRT 或 xFormers 的建置），建議從 NVIDIA 官方安裝 **CUDA Toolkit 11.8** 或 **12.1** （配合所使用的 PyTorch 版本）。
 
 ---
 
@@ -151,7 +151,7 @@ graph TD
 **安裝步驟：**
 1.  從 ComfyUI 的官方 GitHub 發布頁面，下載 Windows Standalone 版的 7z 檔案。
 2.  解壓縮後，只要執行裡面的 `run_nvidia_gpu.bat` 即可啟動（因為是內含 Python 的可攜式版本，所以不需設定）。
-3.  **導入 ComfyUI Manager**：這是管理擴充功能的必備工具。在 `ComfyUI/custom_nodes/` 目錄下開啟命令提示字元，並執行以下命令：
+3.  **導入 ComfyUI Manager** ：這是管理擴充功能的必備工具。在 `ComfyUI/custom_nodes/` 目錄下開啟命令提示字元，並執行以下命令：
     ```cmd
     git clone https://github.com/ltdrdata/ComfyUI-Manager.git
     ```
@@ -217,8 +217,8 @@ Stable Diffusion 的運算大部分都花在 U-Net 內的 Cross-Attention。由�
 *   `--medvram-sdxl`：只有在使用 SDXL 模型時才會套用 MedVRAM，是一個非常方便的旗標。
 
 ### 7.3 透過 TensorRT 達成超高速化
-將 NVIDIA GPU 的 Tensor 核心發揮到極限的框架就是 **TensorRT**。
-它能將 Stable Diffusion 的 U-Net 編譯成專屬目前使用 GPU 的引擎（`.trt` 檔案）。雖然編譯需要花上數十分鐘，且具有解析度與批次大小會被固定住的缺點（雖然也支援 Dynamic Shape 但效率會下降），但生成速度會暴增至 **1.5倍〜2倍以上**。在需要大量生成相同解析度圖像的業務用途中，這是最強的最佳化手法。
+將 NVIDIA GPU 的 Tensor 核心發揮到極限的框架就是 **TensorRT** 。
+它能將 Stable Diffusion 的 U-Net 編譯成專屬目前使用 GPU 的引擎（`.trt` 檔案）。雖然編譯需要花上數十分鐘，且具有解析度與批次大小會被固定住的缺點（雖然也支援 Dynamic Shape 但效率會下降），但生成速度會暴增至 **1.5倍〜2倍以上** 。在需要大量生成相同解析度圖像的業務用途中，這是最強的最佳化手法。
 
 ### 7.4 Tiled VAE / Tiled Diffusion
 在生成或放大至高解析度（如 4K）圖像時，VAE 的解碼處理會瞬間耗盡 VRAM。為了防止這個情況，必須使用能將圖像分割成拼貼狀（例如每塊 $512 \times 512$）進行處理，最後再合併起來的擴充功能（Multidiffusion / Tiled VAE）。
@@ -227,15 +227,15 @@ Stable Diffusion 的運算大部分都花在 U-Net 內的 Cross-Attention。由�
 
 ## 8. 進階控制技術：ControlNet
 
-光靠文字提示詞，是無法指定角色的姿勢、複雜的透視角度，或指尖細微的動作。用來解決這個問題的就是 **ControlNet**。
+光靠文字提示詞，是無法指定角色的姿勢、複雜的透視角度，或指尖細微的動作。用來解決這個問題的就是 **ControlNet** 。
 
 ControlNet 的架構是保持已經訓練好的 Stable Diffusion 模型的權重固定不變，複製編碼器的結構，並在其中插入「Zero-convolutions（權重初始化為零的卷積層）」。這樣一來，就能在不破壞原本生成能力的情況下，進行額外的條件控制。
 
 **具代表性的預處理器與模型：**
-*   **OpenPose**：提取人物骨架（關節位置），生成姿勢完全相同的圖像。
-*   **Canny**：進行邊緣偵測，以線稿為基礎進行上色或寫實化。
-*   **Depth**：生成深度圖（Depth Map），產生維持空間前後關係的圖像。
-*   **Lineart**：在提取動漫風格的線稿方面，表現比 Canny 更好。
+*   **OpenPose** ：提取人物骨架（關節位置），生成姿勢完全相同的圖像。
+*   **Canny** ：進行邊緣偵測，以線稿為基礎進行上色或寫實化。
+*   **Depth** ：生成深度圖（Depth Map），產生維持空間前後關係的圖像。
+*   **Lineart** ：在提取動漫風格的線稿方面，表現比 Canny 更好。
 
 透過同時套用多個上述的 ControlNet（Multi-ControlNet），就能確實輸出「符合指定姿勢，且帶有指定背景透視的圖像」。
 
@@ -269,3 +269,4 @@ ControlNet 的架構是保持已經訓練好的 Stable Diffusion 模型的權重
 然而，TensorRT、量化技術（Quantization）、GGUF等本機最佳化技術也同樣在加快進化速度，一個能讓一般消費者級別的硬體也能進行充分推論的生態系統正在形成中。
 
 本手冊所解說的 CUDA 環境建置、VRAM 的最佳化，以及對 ComfyUI 等管線的理解，將成為無論 AI 技術趨勢如何變化都能適用的普遍基礎知識。希望大家的創造力，都能在毫無限制的本機環境中發揮到極致。
+

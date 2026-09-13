@@ -13,7 +13,7 @@ description: '報告累計第 9 次榮獲 Microsoft MVP (2025-2026)。除了介�
 
 大家好，我是 kenji。
 
-向大家報告一個好消息。今年我再次榮獲了 **Microsoft MVP (Most Valuable Professional)** 獎項。這是我 **第 9 次** 獲獎。
+向大家報告一個好消息。今年我再次榮獲了 **Microsoft MVP (Most Valuable Professional)** 獎項。這是我 ** 第 9 次** 獲獎。
 
 非常感謝大家一直以來的支持。
 
@@ -81,3 +81,4 @@ MVP 這個頭銜終究只是個里程碑。
 * GitHub: https://github.com/kenjinote
 * 技術部落格: https://hack.jp
 * X: https://twitter.com/kenjinote
+

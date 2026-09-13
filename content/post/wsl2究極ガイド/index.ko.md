@@ -106,7 +106,7 @@ wsl --set-default-version 2
 
 WSL2의 가장 큰 함정 중 하나가 '메모리의 무제한 소비(Vmmem 프로세스의 비대화)'입니다. WSL2는 Linux 커널의 페이지 캐시를 이용하기 때문에, I/O를 수행할 때마다 호스트(Windows)의 메모리를 끝없이 잠식해 들어갑니다. 이를 방지하기 위해 설정 파일을 통한 리소스 제한이 필수적입니다.
 
-WSL2의 설정 파일은 **Windows 전체에 영향을 미치는 `.wslconfig`** 와 **각 배포판의 내부에 영향을 미치는 `wsl.conf`** 의 두 가지로 나뉩니다.
+WSL2의 설정 파일은 **Windows 전체에 영향을 미치는 `.wslconfig`** 와 ** 각 배포판의 내부에 영향을 미치는 `wsl.conf`** 의 두 가지로 나뉩니다.
 
 ### 4.1. .wslconfig (Windows 측)
 
@@ -321,7 +321,7 @@ sudo usermod -aG docker $USER
 
 Git의 SSH 클론이나 원격 서버에 SSH 접속을 수행할 때, Windows 측과 WSL 측에서 별도의 SSH 키를 관리하는 것은 매우 번거롭습니다. 보안과 편의성을 양립시키기 위해 Windows 측에서 가동 중인 SSH 에이전트(또는 1Password와 같은 암호 관리자)를 WSL 측에 브릿지하는 설정을 수행합니다.
 
-여기에서는 가장 안전하고 모던한 접근 방식으로, **1Password의 SSH 에이전트 기능** 또는 **Windows의 OpenSSH Authentication Agent** 를 이용하고, `npiperelay` 나 `socat` 을 사용하여 WSL2의 UNIX 도메인 소켓으로 포워딩하는 방법을 설명합니다.
+여기에서는 가장 안전하고 모던한 접근 방식으로, **1Password의 SSH 에이전트 기능 ** 또는 **Windows의 OpenSSH Authentication Agent** 를 이용하고, `npiperelay` 나 `socat` 을 사용하여 WSL2의 UNIX 도메인 소켓으로 포워딩하는 방법을 설명합니다.
 
 ### ssh-agent의 소켓 포워딩
 
@@ -386,5 +386,6 @@ WSL2는 단순한 'Windows 상에서 구동되는 덤으로 주는 Linux'라는 
 이번에 해설한 설정(`.wslconfig` 를 통한 리소스 최적화, Zsh + Powerlevel10k를 통한 터미널 강화, VS Code Remote를 통한 투명한 접근, 그리고 SSH 연동 및 VHDX 유지 보수)을 모두 적용함으로써, 스트레스 없고 빠르며 안전한 '궁극의 개발 환경'이 완성됩니다.
 
 환경 구축에는 약간 수고가 들어가지만, 한 번 설정을 확립해두면 향후 엔지니어링의 생산성이 극적으로 향상될 것임에 틀림없습니다. 부디 자신의 프로젝트나 취향에 맞춰 이 가이드를 바탕으로 더 나은 커스터마이징을 탐구해 보시기 바랍니다.
+
 
 

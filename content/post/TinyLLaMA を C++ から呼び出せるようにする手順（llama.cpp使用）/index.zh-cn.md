@@ -69,7 +69,7 @@ python3 convert.py ./hf_model --outfile tinyllama.gguf
 ./quantize ./tinyllama.gguf ./tinyllama-q4.gguf q4_0
 ```
 
-> `q4_0` 是 4bit 量化。模型大小将缩小至约 **350MB左右**。
+> `q4_0` 是 4bit 量化。模型大小将缩小至约 **350MB左右** 。
 
 ---
 
@@ -163,3 +163,4 @@ my_app/
 | C++集成 | 可以使用 `llama.cpp`，几乎没有外部依赖 |
 | 处理能力 | 足以满足简单的意图理解和输出文本生成（自然语言→结构） |
 | 可扩展性 | 结合槽位填充和模板调用，可构建节点生成AI |
+

@@ -10,7 +10,7 @@ tags: ["Sysinternals", "ProcMon", "Process Explorer", "Windows"]
 description: 'Windowsトラブルシューティングの決定版。Sysinternalsツールを使ったカーネルレベルの解析手法を徹底解説します。'
 ---
 
-Windows環境において、システムクラッシュ、パフォーマンスの低下、マルウェアの感染、あるいはアプリケーションの不可解な挙動といった問題に直面したとき、標準搭載のタスクマネージャーやイベントビューアーだけでは根本原因（Root Cause）を特定できないことが多々あります。このような高度なトラブルシューティングにおいて、世界中のITプロフェッショナル、インシデントレスポンダー、システム管理者がこぞって利用するのが「**Windows Sysinternals**」ツール群です。
+Windows環境において、システムクラッシュ、パフォーマンスの低下、マルウェアの感染、あるいはアプリケーションの不可解な挙動といった問題に直面したとき、標準搭載のタスクマネージャーやイベントビューアーだけでは根本原因（Root Cause）を特定できないことが多々あります。このような高度なトラブルシューティングにおいて、世界中のITプロフェッショナル、インシデントレスポンダー、システム管理者がこぞって利用するのが「 **Windows Sysinternals** 」ツール群です。
 
 本記事では、Sysinternalsの主要ツールである **Process Explorer**, **Process Monitor (ProcMon)**, **Autoruns**, **TCPView** を駆使し、Windows OSの深淵（カーネルモードとユーザーモードの境界、割り込み処理、ETW、レジストリ/ファイルシステムドライバ）にまで踏み込んだ高度なトラブルシューティング手法を徹底的に解説します。
 
@@ -110,7 +110,7 @@ flowchart TD
 *   `CreateFile` | `C:\Windows\CoreCrypto.dll` | `NAME NOT FOUND`
 *   `CreateFile` | `C:\Users\Kenji\AppData\Local\Microsoft\WindowsApps\CoreCrypto.dll` | `NAME NOT FOUND`
 
-これは典型的な **DLLの依存関係欠如** および **DLL検索オーダー（DLL Search Order）** の挙動です。アプリケーションは `CoreCrypto.dll` を必要としていますが、システム上のどこにも存在しないため初期化に失敗し、例外ハンドラを持たないまま終了しています。不足しているDLLを適切なディレクトリに配置することで、この問題は即座に解決します。
+これは典型的な **DLLの依存関係欠如 ** および **DLL検索オーダー（DLL Search Order）** の挙動です。アプリケーションは `CoreCrypto.dll` を必要としていますが、システム上のどこにも存在しないため初期化に失敗し、例外ハンドラを持たないまま終了しています。不足しているDLLを適切なディレクトリに配置することで、この問題は即座に解決します。
 
 ### 3.3 Boot Logging による起動障害のトラブルシューティング
 Windowsの起動が遅い、あるいはログイン直後にブラックスクリーンになる場合、ProcMonの **Enable Boot Logging** 機能が役立ちます。これを有効にして再起動すると、ProcMonの専用ブートドライバがWindowsの最初期（`smss.exe` がロードされるタイミング）から全システムコールを記録しファイルに保存します。次回ログイン時にProcMonを開くとログが変換され、起動プロセス中のどのドライバやサービスがI/Oボトルネックを引き起こしているかを詳細に分析できます。
@@ -125,7 +125,7 @@ ProcMonの `Tools` -> `File Summary` を使えば、この集計をGUI上で一�
 
 Windowsの自動起動箇所は、単にスタートアップフォルダ（Startup Folder）や `Run` レジストリキーだけではありません。マルウェア（特にAPT攻撃のペイロードや高度なルートキット）は、システム管理者の目につきにくい場所に自身を潜ませて再起動後も実行（Persistence）されるように設定します。
 
-Autorunsは、システム上の**あらゆる自動起動エントリ（ASE: Auto-Start Extensibility Points）**を網羅的にスキャンします。
+Autorunsは、システム上の **あらゆる自動起動エントリ（ASE: Auto-Start Extensibility Points）** を網羅的にスキャンします。
 
 ```mermaid
 flowchart LR
@@ -178,3 +178,4 @@ Sysinternalsツール群は、Windows OSが裏側で行っているすべての�
     Sysinternalsツールは頻繁にアップデートされます。ブラウザから直接 `https://live.sysinternals.com/` にアクセスし、常に最新のバイナリ（またはコマンドライン版の `procdump`, `psexec` など）を使用してください。
 
 高度なWindowsトラブルシューティングにおいて、直感や当てずっぽう（Guesswork）は無意味です。Sysinternalsツールを使ってファクト（プロセス、スレッド、ハンドル、システムコール、レジストリイベント）に基づく論理的な原因究明を行うことで、どんなに複雑な障害や難解なマルウェア感染であっても、必ず根本原因にたどり着くことができるでしょう。
+

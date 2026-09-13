@@ -428,7 +428,7 @@ $$
 
 Le produit scalaire de deux états arbitraires **$| \phi \rangle$** et **$| \psi \rangle$** sur l'espace de Hilbert est calculé comme le produit du bra et du ket **$\langle \phi | \psi \rangle$** , et donne une valeur complexe. Ce produit scalaire satisfait les propriétés suivantes :
 
-1. **Définie-positivité** : Pour tout **$| \psi \rangle \neq 0$** , $\langle \psi | \psi \rangle > 0$
+1. **Définie-positivité ** : Pour tout **$| \psi \rangle \neq 0$** , $\langle \psi | \psi \rangle > 0$
 2. **Linéarité** : $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
 3. **Symétrie conjuguée** : $\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*$ ( $*$ est le conjugué complexe)
 
@@ -700,7 +700,7 @@ Cela correspond à une rotation de **$\pi$** autour de l'axe Z. Puisque les base
 
 Le groupe des matrices de Pauli **$\{I, X, Y, Z\}$** forme une structure algébrique d'une extrême beauté en tant qu'opérateurs linéaires sur un espace de Hilbert.
 
-1. **Compatibilité de l'auto-adjonction (hermiticité) et de l'unitarité** : **$X = X^\dagger$** , **$Y = Y^\dagger$** , **$Z = Z^\dagger$** et en même temps satisfont **$X^\dagger X = I$** (c'est-à-dire **$X = X^{-1}$** ). C'est une propriété rare où elles sont à la fois des quantités physiques (observables) et des générateurs d'évolution temporelle unitaire (portes). Si appliquées deux fois consécutives, elles reviennent à la transformation identité (involution : **$X^2 = Y^2 = Z^2 = I$** ).
+1. **Compatibilité de l'auto-adjonction (hermiticité) et de l'unitarité ** : **$X = X^\dagger$** , **$Y = Y^\dagger$** , **$Z = Z^\dagger$** et en même temps satisfont **$X^\dagger X = I$** (c'est-à-dire **$X = X^{-1}$** ). C'est une propriété rare où elles sont à la fois des quantités physiques (observables) et des générateurs d'évolution temporelle unitaire (portes). Si appliquées deux fois consécutives, elles reviennent à la transformation identité (involution : **$X^2 = Y^2 = Z^2 = I$** ).
 2. **Relation d'anti-commutation parfaite** : L'échange de l'ordre de multiplication de différentes matrices de Pauli inverse le signe.
    
 
@@ -1005,7 +1005,7 @@ $$
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
 $$
 
-l'état est dit séparable. À l'inverse, un état qui **ne peut pas** être exprimé sous la forme d'un produit tensoriel d'états de sous-systèmes est défini comme un **état intriqué (Entangled State)** .
+l'état est dit séparable. À l'inverse, un état qui **ne peut pas** être exprimé sous la forme d'un produit tensoriel d'états de sous-systèmes est défini comme un ** état intriqué (Entangled State)** .
 
 Dans un système à 2 qubits, les états présentant l'intrication quantique la plus forte sont appelés **états de Bell** (Bell States), ou paires EPR. Les états de Bell sont formés des quatre états purs orthogonaux suivants, constituant une base orthonormée complète (la base de Bell) de l'espace de Hilbert à 4 dimensions :
 
@@ -2861,5 +2861,6 @@ Si cette série a pu contribuer à vous faire comprendre en profondeur la vérit
 
 ---
  **Série « Les principes de l'ordinateur quantique » (12 chapitres au total) — Fin** 
+
 
 

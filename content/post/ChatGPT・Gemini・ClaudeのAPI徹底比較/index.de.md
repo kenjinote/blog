@@ -282,7 +282,7 @@ Eine der größten Debatten in der Enterprise-KI-Architektur ist derzeit die Fra
 - **Vorteile**: Kein Informationsverlust durch die Suche. Selbst im „Needle In A Haystack (NIAH)“-Test (Die Nadel im Heuhaufen suchen) können Modelle wie Gemini 1.5 Pro oder Claude 3.5 Sonnet Informationen mit einer Genauigkeit von über 99 % extrahieren.
 - **Herausforderungen**: Der Token-Verbrauch ist enorm, was die Kosten in die Höhe treibt, und die Latenz ($T_{TTFT}$) nimmt zu.
 
-**Fazit**: Die Best Practice für das Jahr 2026 ist ein **„Hybrid-Ansatz“**. Für alltägliche Q&As wird RAG mit einer Vektordatenbank eingesetzt. Für spezialisierte Aufgaben, die komplexe Analysen oder Code-Reviews des gesamten Systems erfordern, wird hingegen Long Context in Kombination mit Prompt-Caching verwendet. Dieses Design ist heute der Mainstream.
+**Fazit**: Die Best Practice für das Jahr 2026 ist ein ** „Hybrid-Ansatz“**. Für alltägliche Q&As wird RAG mit einer Vektordatenbank eingesetzt. Für spezialisierte Aufgaben, die komplexe Analysen oder Code-Reviews des gesamten Systems erfordern, wird hingegen Long Context in Kombination mit Prompt-Caching verwendet. Dieses Design ist heute der Mainstream.
 
 ---
 
@@ -344,4 +344,5 @@ Anstatt sich auf eine einzige API zu verlassen (Vendor-Lock-in), ist die zukünf
 Beispielsweise kann man auf einfache Fragen von Benutzern mit dem kostengünstigen und schnellen `GPT-4o-mini` oder `Gemini 1.5 Flash` antworten. Nur wenn festgestellt wird, dass eine komplexe Verarbeitung erforderlich ist, greift man als Fallback für die Aufgabe auf `Claude 3.5 Sonnet` zurück. So lässt sich das optimale Gleichgewicht zwischen Kosten und Leistung erreichen.
 
 Die Entwicklung der KI ist unaufhaltsam. Verstehen Sie die Stärken und Schwächen der einzelnen APIs sowie die Besonderheiten ihrer Architektur genau, um flexible und flexibel skalierbare KI-Anwendungen zu entwickeln.
+
 

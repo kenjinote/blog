@@ -172,9 +172,9 @@ Windows Terminal 支持一种名为“JSON Fragments”的扩展机制。它允�
 
 ## 3.2 引入 Nerd Fonts 并优化字体设置（CaskaydiaCove Nerd Font）
 
-当使用后文提到的 Oh My Posh 或 Starship 等高级提示符工具时，Git 分支图标、编程语言 Logo、操作系统符号等包含特殊字形（图标）的字体是必不可少的。将这些图标修补（追加）到现有编程字体中而成的便是“**Nerd Fonts**”。
+当使用后文提到的 Oh My Posh 或 Starship 等高级提示符工具时，Git 分支图标、编程语言 Logo、操作系统符号等包含特殊字形（图标）的字体是必不可少的。将这些图标修补（追加）到现有编程字体中而成的便是“ **Nerd Fonts** ”。
 
-微软开发的编程字体“Cascadia Code”非常易读且优秀，但默认并不包含 Nerd Font 图标。因此，强烈推荐安装应用了 Nerd Font 补丁的 Cascadia Code，即“**CaskaydiaCove Nerd Font**”。
+微软开发的编程字体“Cascadia Code”非常易读且优秀，但默认并不包含 Nerd Font 图标。因此，强烈推荐安装应用了 Nerd Font 补丁的 Cascadia Code，即“ **CaskaydiaCove Nerd Font** ”。
 
 ### 安装步骤：
 1. 从 [Nerd Fonts 官方 GitHub 发布页](https://github.com/ryanoasis/nerd-fonts/releases) 下载 `CascadiaCode.zip`。
@@ -250,7 +250,7 @@ wt -p "PowerShell 7" -d "C:\Projects\MyApp" ; split-pane -p "Ubuntu-22.04" -d "/
 
 # 6. 提示符进化论 1：PowerShell 与 Oh My Posh
 
-能让 Windows 环境下的标准 Shell PowerShell（特别是支持跨平台的最新版 PowerShell 7 / PowerShell Core）产生剧变的，便是“**Oh My Posh**”。Oh My Posh 是一款适用于各种 Shell 的自定义提示符引擎，它能以美观且直观的方式呈现当前目录、Git 分支及修改状态、Node.js 或 Python 版本、Kubernetes 上下文等开发所需的所有状态。
+能让 Windows 环境下的标准 Shell PowerShell（特别是支持跨平台的最新版 PowerShell 7 / PowerShell Core）产生剧变的，便是“ **Oh My Posh** ”。Oh My Posh 是一款适用于各种 Shell 的自定义提示符引擎，它能以美观且直观的方式呈现当前目录、Git 分支及修改状态、Node.js 或 Python 版本、Kubernetes 上下文等开发所需的所有状态。
 
 下图展示了在启动 PowerShell 时，Oh My Posh 是如何被加载并渲染提示符的序列图。
 
@@ -315,7 +315,7 @@ Import-Module -Name Terminal-Icons
 
 # 7. 提示符进化论 2：WSL2 架构与 Starship 的融合
 
-能在 Windows 上运行真正 Linux 内核的 WSL2（Windows Subsystem for Linux 2），对于现代 Web 开发和云原生开发是不可或缺的。要定制 WSL 内的 Shell（Bash 或 Zsh）提示符，“**Starship**”无疑是最佳选择。
+能在 Windows 上运行真正 Linux 内核的 WSL2（Windows Subsystem for Linux 2），对于现代 Web 开发和云原生开发是不可或缺的。要定制 WSL 内的 Shell（Bash 或 Zsh）提示符，“ **Starship** ”无疑是最佳选择。
 
 Starship 是用 Rust 语言编写的，极快且定制性极强的跨 Shell 提示符。它最大的优势在于只需编写一个配置文件（TOML），就能在 Bash、Zsh、Fish 等任何 Shell 中重现完全相同的提示符。
 
@@ -398,7 +398,7 @@ error_symbol = "[❯](bold red)"
 
 # 8. 终端渲染延迟与性能的数学模型
 
-评估终端使用体验的最重要指标之一就是“**输入延迟（Input Latency）**”。它指的是从按下键盘按键开始，到屏幕上对应的像素颜色发生改变、获得视觉反馈为止的时间延迟。
+评估终端使用体验的最重要指标之一就是“ **输入延迟（Input Latency）** ”。它指的是从按下键盘按键开始，到屏幕上对应的像素颜色发生改变、获得视觉反馈为止的时间延迟。
 
 这个总体延迟 $ T_{total} $，在数学上可以严格建模为以下组件的总和。
 
@@ -461,3 +461,4 @@ Windows Terminal 的真正价值，远远超越了“旧版命令提示符替代
 本文介绍的诸多设置方法——调校配色方案、通过 Nerd Font 扩展视觉信息、利用 Oh My Posh 和 Starship 打造具备上下文感知能力的智能提示符，以及利用窗格分割构建多任务环境——这些不仅能提升日常编码体验，更能提高面对终端时的动力。
 
 开发环境的优化永无止境。每当有新的命令行工具出现、每当操作系统的架构发生演进，我们的终端也必定会随之改变。愿本文能成为各位读者在探寻属于自己的“终极开发环境”这一无尽旅途中的一个坚实路标。
+

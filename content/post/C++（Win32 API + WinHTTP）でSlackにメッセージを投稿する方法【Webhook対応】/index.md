@@ -14,7 +14,7 @@ description: 'Node.jsやPythonではなく、あえて「C++ × Win32 API × Win
 SlackにC++からメッセージを投稿したい。
 Node.js や Python ではよくあるけど、「C++ × Win32 API × WinHTTP」でやるケースは少ないですよね。
 
-この記事では、**Webhook URLを使ってSlackにC++からメッセージを送信する方法** を、ステップ・バイ・ステップでわかりやすく解説します。
+この記事では、 **Webhook URLを使ってSlackにC++からメッセージを送信する方法** を、ステップ・バイ・ステップでわかりやすく解説します。
 
 ---
 
@@ -199,3 +199,4 @@ C++でSlack連携なんて…と思っていたあなたも、今日から通知
 * **Slack App + OAuth2による柔軟なAPI操作**
 
 など、もう一歩踏み込んだSlack連携もご紹介できます！
+

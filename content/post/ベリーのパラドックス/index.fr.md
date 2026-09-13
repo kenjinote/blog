@@ -107,7 +107,7 @@ Il est devenu mondialement célèbre lorsque **Bertrand Russell**, mathématicie
 
 ## 4. Pourquoi cette contradiction se produit-elle ?
 
-La cause fondamentale de ce paradoxe réside dans **l'ambiguïté** et **l'auto-référence** du « langage naturel (japonais, anglais, français, etc.) » que nous utilisons quotidiennement.
+La cause fondamentale de ce paradoxe réside dans **l'ambiguïté ** et **l'auto-référence** du « langage naturel (japonais, anglais, français, etc.) » que nous utilisons quotidiennement.
 
 ### Le langage naturel ne peut pas supporter la rigueur des mathématiques
 Dans le monde des mathématiques, « définir un nombre » est une tâche extrêmement rigoureuse (on utilise des équations et des symboles).
@@ -135,4 +135,5 @@ Cependant, ce problème a été pour les mathématiciens du 20e siècle l'occasi
 Ce paradoxe a servi de jalon important, ouvrant la voie à des disciplines de pointe qui allaient changer l'histoire des mathématiques, comme le « Théorème d'incomplétude de Gödel (il existe en mathématiques des vérités qui ne peuvent absolument pas être prouvées) » et la « Complexité de Kolmogorov en informatique (une théorie sur la façon dont l'information peut être compressée) ».
 
 Le fait que seulement 16 caractères japonais aient pu exposer les limites des mathématiques : telle est la beauté du paradoxe de Berry.
+
 

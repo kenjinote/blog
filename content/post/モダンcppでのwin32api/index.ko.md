@@ -11,16 +11,16 @@ tags: ["C++", "Win32", "Windows API", "RAII"]
 
 ## 1. 시작하며: C언어 기반의 Win32 API와 현대 C++의 괴리
 
-Windows OS의 기반이 되는 **Windows API (통칭 Win32 API)**는 1990년대 Windows NT나 Windows 95 시절부터 면면히 이어져 온 거대한 C언어 인터페이스입니다. 현재도 Windows용 네이티브 애플리케이션을 개발할 때 OS의 핵심 기능(프로세스 관리, 파일 I/O, 스레드 동기화, 창 제어 등)에 접근하려면 최종적으로 이 Win32 API를 호출해야 합니다.
+Windows OS의 기반이 되는 **Windows API (통칭 Win32 API)** 는 1990년대 Windows NT나 Windows 95 시절부터 면면히 이어져 온 거대한 C언어 인터페이스입니다. 현재도 Windows용 네이티브 애플리케이션을 개발할 때 OS의 핵심 기능(프로세스 관리, 파일 I/O, 스레드 동기화, 창 제어 등)에 접근하려면 최종적으로 이 Win32 API를 호출해야 합니다.
 
-하지만 Win32 API는 순수 C언어용으로 설계되어 있어, **현대 C++ (Modern C++)**이 가진 고도의 언어 기능(예외 처리, RAII를 통한 자동 리소스 관리, 이동 의미론(Move Semantics), 타입 안전한 열거형, 스마트 포인터 등)을 전제로 하지 않습니다. 그 결과, 네이티브 Win32 API를 그대로 C++ 코드에 섞어 쓰면 다음과 같은 문제가 발생합니다.
+하지만 Win32 API는 순수 C언어용으로 설계되어 있어, **현대 C++ (Modern C++)** 이 가진 고도의 언어 기능(예외 처리, RAII를 통한 자동 리소스 관리, 이동 의미론(Move Semantics), 타입 안전한 열거형, 스마트 포인터 등)을 전제로 하지 않습니다. 그 결과, 네이티브 Win32 API를 그대로 C++ 코드에 섞어 쓰면 다음과 같은 문제가 발생합니다.
 
 *   **수동 리소스 관리:** `CreateFile`이나 `CreateEvent`로 얻은 `HANDLE`은 반드시 `CloseHandle`로 해제해야 한다.
 *   **예외 안전성의 부재:** C++ 예외가 발생(Throw)했을 때, 적절하게 `CloseHandle`을 호출하는 처리를 작성해두지 않으면 쉽게 리소스 누수(Leak)가 발생한다.
 *   **일관성 없는 에러 표현:** 어떤 API는 `BOOL`을 반환하고 실패 시 `GetLastError()`를 호출해야 한다. 다른 API는 `HRESULT`를 반환하고, 또 다른 API(GDI 등)는 `NULL`을 반환한다.
 *   **타입 안전성 결여:** `HANDLE`이나 `HWND`, `HDC` 등은 매크로를 확장하면 단순한 `void*`에 불과한 경우가 많아, 컴파일러에 의한 엄격한 타입 검사가 제대로 작동하지 않는다.
 
-본 문서에서는 이러한 '레거시 C 인터페이스'의 함정을 피하고, 현대 C++ (C++11/14/17/20/23)의 기능을 사용하여 **안전(Safe)하고 모던(Modern)하게 Win32 API를 다루는 방법**에 대해 매우 상세히 해설합니다.
+본 문서에서는 이러한 '레거시 C 인터페이스'의 함정을 피하고, 현대 C++ (C++11/14/17/20/23)의 기능을 사용하여 **안전(Safe)하고 모던(Modern)하게 Win32 API를 다루는 방법** 에 대해 매우 상세히 해설합니다.
 
 ---
 
@@ -78,7 +78,7 @@ void ProcessFileLegacy(const std::wstring& filename) {
 ### 이 코드의 무엇이 문제일까?
 
 1.  **코드의 중복과 번잡함:** 조기 리턴(`return`)을 할 때마다 `::CloseHandle(hFile);`을 작성해야 하므로, DRY(Don't Repeat Yourself) 원칙에 위배됩니다.
-2.  **예외 안전성의 완전한 결여 (Exception Unsafe):** C++에서는 `std::vector`의 메모리 할당 실패 시(`std::bad_alloc`)나 다른 함수가 예외를 발생시켰을 때 함수에서 강제로 빠져나갑니다. 이때 마지막의 `CloseHandle`은 실행되지 않으므로, **파일 핸들이 영원히 누수**됩니다(프로세스가 종료될 때까지 파일이 계속 잠겨 있는 등 심각한 버그를 유발합니다).
+2.  **예외 안전성의 완전한 결여 (Exception Unsafe):** C++에서는 `std::vector`의 메모리 할당 실패 시(`std::bad_alloc`)나 다른 함수가 예외를 발생시켰을 때 함수에서 강제로 빠져나갑니다. 이때 마지막의 `CloseHandle`은 실행되지 않으므로, **파일 핸들이 영원히 누수** 됩니다(프로세스가 종료될 때까지 파일이 계속 잠겨 있는 등 심각한 버그를 유발합니다).
 
 ---
 
@@ -98,7 +98,7 @@ $$ P(\text{Leak}) = 1 - (1 - 0.05)^{20} \approx 1 - 0.358 = 0.642 $$
 
 놀랍게도, **약 64.2%의 확률로 어딘가에 리소스 누수 버그가 숨어있게** 됩니다. 소프트웨어의 규모가 커져서 $N \to \infty$가 되면, $P(\text{Leak}) \to 1$이 되어 시스템은 필연적으로 파탄납니다.
 
-이러한 수학적 현실에 대항하기 위한 유일한 합리적인 수단이 C++의 **RAII (Resource Acquisition Is Initialization)**입니다.
+이러한 수학적 현실에 대항하기 위한 유일한 합리적인 수단이 C++의 **RAII (Resource Acquisition Is Initialization)** 입니다.
 
 ---
 
@@ -106,12 +106,12 @@ $$ P(\text{Leak}) = 1 - (1 - 0.05)^{20} \approx 1 - 0.358 = 0.642 $$
 
 RAII는 C++의 창시자인 비야네 스트롭스트룹(Bjarne Stroustrup)이 제창한 개념입니다. 그 원칙은 매우 단순하고 강력합니다.
 
-1.  리소스 확보(Acquisition)를 객체의 **생성자(Initialization)**에서 수행한다.
-2.  리소스 해제를 객체의 **소멸자**에서 수행한다.
+1.  리소스 확보(Acquisition)를 객체의 **생성자(Initialization)** 에서 수행한다.
+2.  리소스 해제를 객체의 **소멸자** 에서 수행한다.
 
 C++의 언어 사양에 따라, 스코프를 벗어날 때(정상적인 `return`이든 예외에 의한 스택 언와인딩 중이든) 스택에 확보된 객체의 소멸자는 **확실하고 자동적으로** 호출됩니다.
 
-이를 통해 앞서 언급한 수식에서 인간의 실수 확률 $p$를 수학적으로 **$0$**으로 만들 수 있습니다.
+이를 통해 앞서 언급한 수식에서 인간의 실수 확률 $p$를 수학적으로 **$0$** 으로 만들 수 있습니다.
 
 ### 객체 라이프사이클의 시각화
 
@@ -145,7 +145,7 @@ sequenceDiagram
 
 ## 5. `std::unique_ptr`을 이용한 `HANDLE`의 안전한 래핑 방법
 
-C++11 이후 표준 라이브러리에는 범용적인 RAII 래퍼인 `std::unique_ptr`이 준비되어 있습니다. 이는 단순한 메모리(`new/delete`) 관리뿐만 아니라 **커스텀 삭제자(Custom Deleter)**를 지정하여 모든 리소스 관리에 응용할 수 있습니다.
+C++11 이후 표준 라이브러리에는 범용적인 RAII 래퍼인 `std::unique_ptr`이 준비되어 있습니다. 이는 단순한 메모리(`new/delete`) 관리뿐만 아니라 **커스텀 삭제자(Custom Deleter)** 를 지정하여 모든 리소스 관리에 응용할 수 있습니다.
 
 Win32의 `HANDLE`을 `std::unique_ptr`로 관리하기 위한 기본적인 삭제자는 다음과 같이 작성할 수 있습니다.
 
@@ -205,7 +205,7 @@ void ProcessFileModern(const std::wstring& filename) {
 
 ## 6. 심화: `INVALID_HANDLE_VALUE`와 `nullptr` 문제의 해결
 
-Win32 API를 다룰 때 C++ 프로그래머를 가장 괴롭히는 사양 중 하나가 **유효하지 않은 핸들의 표현이 일관되지 않다는 것**입니다.
+Win32 API를 다룰 때 C++ 프로그래머를 가장 괴롭히는 사양 중 하나가 **유효하지 않은 핸들의 표현이 일관되지 않다는 것** 입니다.
 
 *   `CreateEvent`나 `CreateThread` 등: 실패하면 `NULL` (`nullptr`)을 반환한다.
 *   `CreateFile` 등: 실패하면 `INVALID_HANDLE_VALUE` (값으로는 `(HANDLE)-1`)를 반환한다.
@@ -214,7 +214,7 @@ Win32 API를 다룰 때 C++ 프로그래머를 가장 괴롭히는 사양 중 �
 
 하지만 `CreateFile`이 실패하여 `INVALID_HANDLE_VALUE`를 반환한 경우, `std::unique_ptr`은 이를 '유효한 비-NULL 포인터'로 오인하고 맙니다.
 
-이 문제를 우아하게 해결하려면 C++의 `std::unique_ptr`의 고도화된 사양을 이용하여 **커스텀 포인터 타입**을 정의합니다.
+이 문제를 우아하게 해결하려면 C++의 `std::unique_ptr`의 고도화된 사양을 이용하여 **커스텀 포인터 타입** 을 정의합니다.
 
 ```cpp
 #include <windows.h>
@@ -267,7 +267,7 @@ if (!hFile) {
 ## 7. GDI 객체(`HDC`, `HBITMAP`)의 고도화된 RAII 관리
 
 Win32의 또 다른 난관은 GDI (Graphics Device Interface)의 리소스 관리입니다.
-GDI 객체(펜, 브러시, 폰트, 비트맵 등)는 생성 후 `SelectObject`로 장치 컨텍스트(`HDC`)에 선택하여 사용하고, 사용이 끝나면 **원래의 객체를 다시 SelectObject하여 복원한 뒤, DeleteObject로 파기해야 한다**는 매우 번거로운 방식이 요구됩니다.
+GDI 객체(펜, 브러시, 폰트, 비트맵 등)는 생성 후 `SelectObject`로 장치 컨텍스트(`HDC`)에 선택하여 사용하고, 사용이 끝나면 **원래의 객체를 다시 SelectObject하여 복원한 뒤, DeleteObject로 파기해야 한다** 는 매우 번거로운 방식이 요구됩니다.
 
 이를 RAII로 해결하기 위한 래퍼는 다음과 같습니다.
 
@@ -440,7 +440,7 @@ void Usage() {
 
 ## 11. Microsoft의 해답 (1): WIL (Windows Implementation Libraries)의 활용
 
-지금까지 자작 래퍼를 소개했습니다만, 사실 Microsoft 자신도 이 문제를 심각하게 생각하여 모던 C++용 공식 헤더 온리 라이브러리인 **WIL (Windows Implementation Libraries)**를 오픈소스로 공개하고 있습니다(GitHub에서 얻을 수 있음).
+지금까지 자작 래퍼를 소개했습니다만, 사실 Microsoft 자신도 이 문제를 심각하게 생각하여 모던 C++용 공식 헤더 온리 라이브러리인 **WIL (Windows Implementation Libraries)** 를 오픈소스로 공개하고 있습니다(GitHub에서 얻을 수 있음).
 
 WIL을 이용하면 위에서 고생해서 만든 래퍼들이 모두 표준으로 제공됩니다.
 
@@ -469,7 +469,7 @@ WIL의 진수는 `wil::unique_any`라는 강력한 템플릿에 있으며, 파�
 ## 12. Microsoft의 해답 (2): C++/WinRT를 통한 COM의 추상화
 
 Win32 API의 상당수(특히 셸 확장이나 DirectX 등)는 C언어 기반의 COM (Component Object Model) 인터페이스를 통해 제공됩니다.
-기존의 `CComPtr` (ATL)이나 `ComPtr` (WRL)을 더욱 발전시켜 현재 Microsoft가 공식적으로 권장하고 있는 것이 **C++/WinRT**입니다.
+기존의 `CComPtr` (ATL)이나 `ComPtr` (WRL)을 더욱 발전시켜 현재 Microsoft가 공식적으로 권장하고 있는 것이 **C++/WinRT** 입니다.
 
 C++/WinRT는 Windows 런타임 (WinRT)뿐만 아니라 기존의 COM 객체도 매우 스마트하게 다룰 수 있습니다.
 
@@ -530,7 +530,7 @@ $$ T_{\text{total}} = T_{\text{syscall}} + T_{\text{wrapper}} + T_{\text{cleanup
 
 C++ 컴파일러(MSVC, Clang, GCC)는 인라인화 (Inlining) 최적화에 매우 뛰어납니다. `std::unique_ptr`의 생성자와 소멸자, 오버로딩된 `operator*`나 `operator bool`은 모두 `inline` 전개되어 메모리상의 네이티브 포인터에 대한 직접 조작과 완전히 똑같은 기계어로 컴파일됩니다.
 
-즉, **$T_{\text{wrapper}} \approx 0$**이 됩니다. 이것이 C++의 최대 철학인 **Zero-cost Abstraction (제로 코스트 추상화)**의 증명입니다. 안전성을 얻더라도 실행 시의 오버헤드는 문자 그대로 제로인 것입니다.
+즉, **$T_{\text{wrapper}} \approx 0$** 이 됩니다. 이것이 C++의 최대 철학인 **Zero-cost Abstraction (제로 코스트 추상화)** 의 증명입니다. 안전성을 얻더라도 실행 시의 오버헤드는 문자 그대로 제로인 것입니다.
 
 ---
 
@@ -546,3 +546,4 @@ Win32 API는 역사적인 이유로 C언어의 패러다임에서 설계된 훌�
 4.  **거인의 어깨 위에 올라탄다.** Microsoft 공식 WIL이나 C++/WinRT를 적극적으로 채택하여 바퀴의 재발명을 피한다.
 
 현대의 C++ 개발에서 네이티브 포인터나 핸들을 날것 그대로 들고 다니는 것은, 안전벨트를 매지 않고 고속도로를 달리는 것과 같습니다. C++이 제공하는 강력한 타입 시스템과 RAII를 구사하여, 안전하고 견고한 Windows 애플리케이션 개발을 즐기시기 바랍니다.
+

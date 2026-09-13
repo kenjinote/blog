@@ -15,7 +15,7 @@ description: 'VSCode（Visual Studio Code）でQtアプリを開発するため�
 今回は「Visual Studio Code（以下VSCode）でQtの開発環境を整える方法」について紹介します。
 
 最近では、公式のQt Creatorに加えて、軽量で拡張性の高いVSCodeを使ってQtアプリを開発したい、という声も増えてきました。
-そんな方におすすめなのが **「Qt Extension Pack」**。
+そんな方におすすめなのが **「Qt Extension Pack」** 。
 この拡張パックをインストールするだけで、Qt関連の主要な拡張機能が一括でそろいます。
 
 ---
@@ -132,6 +132,6 @@ Qt Creatorの代替としても十分な機能があり、軽快に作業した�
 ## さいごに
 
 今後はこの環境で、QtのUIツールやQMLを活用した開発も進めていこうと思っています。
-次回は、**QtでHello WorldアプリをVSCodeからビルド＆実行する方法** について解説予定です。
+次回は、 **QtでHello WorldアプリをVSCodeからビルド＆実行する方法** について解説予定です。
 
 ではまた！

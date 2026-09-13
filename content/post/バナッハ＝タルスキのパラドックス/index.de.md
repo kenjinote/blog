@@ -42,7 +42,7 @@ Noch erstaunlicher ist, dass man bei Anwendung dieses Satzes auch Folgendes beha
 - Man kann eine einzige Erbse in eine endliche Anzahl von Teilen zerlegen und durch Neuzusammensetzen eine **Kugel von exakt der Größe der Sonne** erschaffen. (Auch bekannt als das Erbsen-und-Sonnen-Paradoxon)
 
 Warum ist solch eine magische Sache mathematisch zulässig?
-Das Geheimnis verbirgt sich in zwei Schlüsselbegriffen: **„Unendlichkeit“** und **„Auswahlaxiom“**.
+Das Geheimnis verbirgt sich in zwei Schlüsselbegriffen: **„Unendlichkeit“ ** und ** „Auswahlaxiom“**.
 
 ---
 
@@ -136,4 +136,5 @@ Da die physikalische Welt, in der wir leben, aus Atomen, also „Körnern mit ei
 Auf der Leinwand der „Mathematik“, die vom menschlichen Gehirn erschaffen wurde, ist die Größe eines Punktes jedoch null, und unendliche Operationen sind erlaubt.
 
 Das Banach-Tarski-Paradoxon kann als eines der größten Meisterwerke der modernen Mathematik angesehen werden. Es lehrt uns, **wie leichtfertig das Konzept der „Unendlichkeit“ über die einfache Intuition des Menschen hinausgeht**.
+
 

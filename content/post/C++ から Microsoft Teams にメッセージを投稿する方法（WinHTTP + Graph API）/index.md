@@ -13,7 +13,7 @@ description: 'C++からMicrosoft Teamsへ自動メッセージ投稿を実装し
 
 Microsoft Teams のチャットに自動投稿したい――  
 そんなときに使えるのが **Microsoft Graph API** です。  
-この記事では、**WinHTTP を使った C++ コード例 ** と、** 必要な API 認証の手順** をステップバイステップで紹介します。
+この記事では、 **WinHTTP を使った C++ コード例 ** と、 ** 必要な API 認証の手順** をステップバイステップで紹介します。
 
 ---
 
@@ -23,13 +23,13 @@ Microsoft Teams のチャットに自動投稿したい――
 まず、Microsoft Graph API を使うには、Azure にアプリを登録する必要があります。
 
 1. [Azure Portal](https://portal.azure.com) にアクセス
-2. **「Microsoft Entra ID」** > **「＋追加」** > **「アプリの登録」** > **「新規登録」**
+2. **「Microsoft Entra ID」 ** > ** 「＋追加」 ** > ** 「アプリの登録」 ** > ** 「新規登録」**
 3. 任意のアプリ名を入力して「登録」
 
 ### 2. API のアクセス許可を追加
 
 1. 左メニュー「API のアクセス許可」へ
-2. **「Microsoft Graph」** > **「アクセス許可を選択する」** で下記のスコープを検索して **「アクセス許可の更新」**
+2. **「Microsoft Graph」 ** > ** 「アクセス許可を選択する」 ** で下記のスコープを検索して ** 「アクセス許可の更新」**
 
 - Chat.ReadWrite
 - User.Read

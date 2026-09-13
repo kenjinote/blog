@@ -9,7 +9,7 @@ categories: ["Programming", "C++"]
 tags: ["C++", "JSON", "Parser", "Performance"]
 ---
 
-在Web开发和系统间通信中，目前最广泛使用的数据描述语言毫无疑问是 **JSON (JavaScript Object Notation)**。世上已经存在如 `RapidJSON` 和 `simdjson` 等非常优秀且高速的JSON解析器。在实际工作中，将自制的解析器投入生产代码的机会可能很少，但**“自制JSON解析器”**是学习语法解析、内存管理、字符串处理以及性能调优的绝佳题材。
+在Web开发和系统间通信中，目前最广泛使用的数据描述语言毫无疑问是 **JSON (JavaScript Object Notation)** 。世上已经存在如 `RapidJSON` 和 `simdjson` 等非常优秀且高速的JSON解析器。在实际工作中，将自制的解析器投入生产代码的机会可能很少，但 **“自制JSON解析器”** 是学习语法解析、内存管理、字符串处理以及性能调优的绝佳题材。
 
 本文将详细讲解如何充分利用C++17/C++20的现代特性（如 `std::string_view`、`std::variant`、`std::from_chars` 等），从零开始构建一个高速且内存高效的JSON解析器的过程。
 
@@ -34,7 +34,7 @@ JSON的数据类型仅限于以下6种：
 
 ## 2. 解析器的架构
 
-语法解析（Parsing）的过程通常分为**词法解析（Lexical Analysis）**和**语法解析（Syntactic Analysis）**两个阶段。
+语法解析（Parsing）的过程通常分为 **词法解析（Lexical Analysis）** 和 **语法解析（Syntactic Analysis）** 两个阶段。
 
 ```mermaid
 graph TD
@@ -256,13 +256,13 @@ private:
 };
 ```
 
-这里的重点在于，将字符串（String）和数值（Number）的值作为 `std::string_view` 提取出来。这样一来，在词法分析阶段**完全不会发生动态内存分配（堆分配）或复制**。这是直接关系到性能的重要设计。
+这里的重点在于，将字符串（String）和数值（Number）的值作为 `std::string_view` 提取出来。这样一来，在词法分析阶段 **完全不会发生动态内存分配（堆分配）或复制** 。这是直接关系到性能的重要设计。
 
 ---
 
 ## 5. 语法解析器（Parser）的实现：递归下降解析
 
-词法分析器完成后，接下来就是解析器了。由于JSON的语法是LL(1)语法，只需“查看当前的一个Token”就可以决定接下来应该调用哪个函数，这与**递归下降解析（Recursive Descent Parsing）**非常契合。
+词法分析器完成后，接下来就是解析器了。由于JSON的语法是LL(1)语法，只需“查看当前的一个Token”就可以决定接下来应该调用哪个函数，这与 **递归下降解析（Recursive Descent Parsing）** 非常契合。
 
 ```cpp
 class Parser {
@@ -450,8 +450,9 @@ $$
 ## 8. 总结
 
 本文讲解了使用C++从零开始自制JSON解析器的步骤：
-- 通过**词法分析器（Lexer）**将字符串分割为Token，使用 `std::string_view` 抑制无谓的复制。
-- 在**解析器（Parser）**中使用递归下降解析，将Token转换为AST（`std::variant`）。
-- 注重**性能**，应用 `std::from_chars` 及内存管理策略。
+- 通过 **词法分析器（Lexer）** 将字符串分割为Token，使用 `std::string_view` 抑制无谓的复制。
+- 在 **解析器（Parser）** 中使用递归下降解析，将Token转换为AST（`std::variant`）。
+- 注重 **性能** ，应用 `std::from_chars` 及内存管理策略。
 
 解读语言规范并将其转化为代码的经验，能使程序员的技能提升一个层次。以本文为契机，请务必亲自动手扩展你自己的解析器或序列化器（生成JSON字符串），并挑战进一步的优化（如引入自定义分配器或SIMD化等）。
+

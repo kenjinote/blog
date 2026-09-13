@@ -55,7 +55,7 @@ graph TD
 
 ## 3. 모델 포맷과 메모리 매핑 (mmap)
 
-거대한 신경망의 가중치를 다루는 데 있어 가장 큰 장벽은 디스크 I/O와 메모리 소비입니다. C++ 구현에서는 이를 **메모리 매핑(mmap)**으로 해결합니다.
+거대한 신경망의 가중치를 다루는 데 있어 가장 큰 장벽은 디스크 I/O와 메모리 소비입니다. C++ 구현에서는 이를 **메모리 매핑(mmap)** 으로 해결합니다.
 
 ### 3.1 메모리 매핑의 원리와 Windows에서의 구현
 
@@ -81,7 +81,7 @@ sequenceDiagram
 
 ### 3.2 GGUF 포맷의 바이너리 구조
 
-Hugging Face 등의 `.safetensors` 포맷에서 변환된 **GGUF (GPT-Generated Unified Format)**는 추론을 위한 궁극적인 포맷입니다. 다음과 같은 엄격한 바이너리 레이아웃을 갖습니다.
+Hugging Face 등의 `.safetensors` 포맷에서 변환된 **GGUF (GPT-Generated Unified Format)** 는 추론을 위한 궁극적인 포맷입니다. 다음과 같은 엄격한 바이너리 레이아웃을 갖습니다.
 
 1. **Magic Bytes**: `0x46554747` (GGUF).
 2. **Version**: 포맷의 버전 번호.
@@ -116,7 +116,7 @@ $$ \text{RoPE}(x, m) = \begin{pmatrix} x_{1} \cos(m\theta) - x_{2} \sin(m\theta)
 
 ### 4.3 Grouped-Query Attention (GQA)
 
-일반적인 Multi-Head Attention(MHA)에서는 Query, Key, Value 각각에 대해 동일한 수의 헤드를 갖습니다. 그러나 TinyLLaMA는 메모리 대역폭과 KV 캐시 소비량을 극적으로 줄이기 위해 **Grouped-Query Attention(GQA)**을 채택했습니다.
+일반적인 Multi-Head Attention(MHA)에서는 Query, Key, Value 각각에 대해 동일한 수의 헤드를 갖습니다. 그러나 TinyLLaMA는 메모리 대역폭과 KV 캐시 소비량을 극적으로 줄이기 위해 **Grouped-Query Attention(GQA)** 을 채택했습니다.
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
@@ -199,7 +199,7 @@ C++로 구현할 때의 핵심은 다음과 같습니다.
 
 ## 8. BPE 토크나이저와 디코딩
 
-입력 문자열을 UTF-8 바이트 열로 취급하여 사전에 정의된 어휘 사전(Vocabulary)과 대조합니다. C++에서는 어휘 사전 검색을 가속화하기 위해 **트라이 트리(Trie tree)**나 우선순위 큐를 사용한 알고리즘을 구현합니다.
+입력 문자열을 UTF-8 바이트 열로 취급하여 사전에 정의된 어휘 사전(Vocabulary)과 대조합니다. C++에서는 어휘 사전 검색을 가속화하기 위해 **트라이 트리(Trie tree)** 나 우선순위 큐를 사용한 알고리즘을 구현합니다.
 
 LM Head에서 출력되는 로짓(logit)에서는 Temperature 파라미터를 사용하여 확률을 스케일링하고 Top-K 추출이나 Top-P(Nucleus Sampling) 기법으로 후보를 좁힌 뒤, 난수를 사용하여 최종적인 다음 토큰을 결정합니다.
 
@@ -241,5 +241,6 @@ cmake --build . --config Release
 ## 10. 요약
 
 C++와 ggml을 사용하여 TinyLLaMA와 같은 소규모 AI 모델의 추론 엔진을 제로부터 구현하는 것은 딥러닝의 블랙박스를 파헤치고 저수준 하드웨어 제어의 아름다움을 배울 수 있는 절호의 기회입니다. 메모리 매핑을 이용한 제로 카피 로드, SIMD 최적화, KV 캐시 구축 등 시스템 프로그래밍의 정수를 마음껏 맛보며 엣지 AI의 미래를 개척해 봅시다.
+
 
 

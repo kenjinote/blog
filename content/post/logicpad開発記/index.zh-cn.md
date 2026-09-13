@@ -44,7 +44,7 @@ gantt
 
 ## 3. 技术选型：C++ / WinUI 3 / Windows App SDK 的深渊
 
-在开发LogicPad时，技术栈的选型是最重要的决定之一。在Windows平台的原生UI框架中，历史上有Win32 API（User32/GDI）、MFC、Windows Forms、WPF、UWP等各种选择。目前，Microsoft推荐的用于现代Windows桌面应用开发的是包含在**Windows App SDK**中的**WinUI 3**。
+在开发LogicPad时，技术栈的选型是最重要的决定之一。在Windows平台的原生UI框架中，历史上有Win32 API（User32/GDI）、MFC、Windows Forms、WPF、UWP等各种选择。目前，Microsoft推荐的用于现代Windows桌面应用开发的是包含在 **Windows App SDK** 中的 **WinUI 3** 。
 
 ### 3.1. Windows App SDK 与 WinUI 3 的架构
 Windows App SDK是一组提供最新Windows API且不依赖OS版本的库。传统的UWP（通用Windows平台）与OS的更新紧密绑定，而Windows App SDK则是随应用程序一起分发，因此能保证从Windows 10（版本1809及以上）到Windows 11的一致运行。
@@ -52,7 +52,7 @@ Windows App SDK是一组提供最新Windows API且不依赖OS版本的库。传�
 WinUI 3是在这个Windows App SDK上运行的原生UI框架，完全支持Fluent Design System。WinUI 3的内部由C++和DirectX构建，运行速度非常快。
 
 ### 3.2. 为什么不选C#，而偏偏选择C++（C++/WinRT）
-WinUI 3支持C#和C++作为开发语言。如果使用C#和.NET，开发效率会有飞跃性的提升，但LogicPad出于以下原因采用了**C++/WinRT**。
+WinUI 3支持C#和C++作为开发语言。如果使用C#和.NET，开发效率会有飞跃性的提升，但LogicPad出于以下原因采用了 **C++/WinRT** 。
 
 1. **确定性的内存管理**: 因为不存在垃圾回收器（GC），所以可以完全控制内存的分配和释放时机。这防止了在模拟循环中发生GC停顿。
 2. **SIMD 与缓存优化**: 在C++中，可以严格定义内存的物理布局（如Struct of Arrays等），从而最大化CPU缓存的命中率。
@@ -303,5 +303,6 @@ $$
 WinUI 3和Windows App SDK目前仍在活跃开发中，它们是充分利用Windows 11 UI范式来创建美丽应用的极佳工具。我由衷地希望这篇博客文章能够为即将挑战Windows原生应用开发的开发者们提供一些帮助，也希望Store中能涌现出更多出色的应用。
 
 开发还未结束。在LogicPad的下一个版本中，计划集成使用Direct2D构建的独创波形渲染引擎。在下一篇文章中，我计划深入探讨DirectX与WinUI 3的互操作性（SwapChainPanel的运用）。敬请期待。
+
 
 

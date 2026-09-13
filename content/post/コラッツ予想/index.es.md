@@ -147,7 +147,7 @@ Esto nos hace entender el delicado equilibrio sobre el cual se sustenta la propi
 
 Actualmente, matemáticos y entusiastas de la informática de todo el mundo continúan calculando incesantemente la conjetura de Collatz utilizando computación distribuida (proyectos que agrupan el poder de cálculo de los PC del mundo) y GPUs.
 
-Hasta el año 2020, se ha verificado por computadora que la conjetura de Collatz es cierta (finalmente llega a 1) para todos los valores iniciales inferiores a ¡**$2^{68}$ (aproximadamente 295 trillones)**!
+Hasta el año 2020, se ha verificado por computadora que la conjetura de Collatz es cierta (finalmente llega a 1) para todos los valores iniciales inferiores a ¡ **$2^{68}$ (aproximadamente 295 trillones)**!
 
 Sin embargo, en el mundo de las matemáticas no se puede decir "como lo hemos comprobado hasta 295 trillones, todo debe ser correcto". En un océano infinito de números, incluso $2^{68}$ no es más que "la primera gota".
 
@@ -243,3 +243,4 @@ no duden en pedir "Enséñame más" sin ningún compromiso.
 📮 ¡Fin!
 
 ---
+

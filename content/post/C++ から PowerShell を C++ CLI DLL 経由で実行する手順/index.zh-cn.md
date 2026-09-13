@@ -116,7 +116,7 @@ int main()
 
 ## 💡 补充说明（IDL / TLB / COM 注册）
 
-- 由于此架构直接引用 .NET DLL 而不是 COM，因此 **无需 IDL、TLB 或 COM 注册**。
+- 由于此架构直接引用 .NET DLL 而不是 COM，因此 **无需 IDL、TLB 或 COM 注册** 。
 
 ---
 
@@ -130,3 +130,4 @@ Solution
     └── main.cpp → DLL 调用
 ```
 ---
+

@@ -21,10 +21,10 @@ tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 
 塑造當前本地 LLM 生態系統的主要趨勢如下：
 
-1. **GGUF 格式的全面普及**：將元數據（Metadata）與張量（Tensor）整合到單一檔案的 GGUF（GPT-Generated Unified Format）已經完全成為業界標準（De facto standard）。這使得使用者只需從 Hugging Face 下載一個檔案，就能在任何環境下執行。
-2. **MoE（Mixture of Experts）架構的民主化**：市面上發布了許多小規模卻高效能的 MoE 模型，透過在推論時僅啟動部分專家網路（Expert），在降低消費級 PC 運算負載的同時，展現出足以媲美巨大模型的效能。
-3. **推論引擎的高度抽象化與最佳化**：Ollama、LM Studio、AnythingLLM 等工具變得更加完善，使用者不再需要擔心安裝 CUDA 驅動程式等複雜的依賴關係。此外，隨著 FlashAttention 3 對 Windows 提供原生支援，推論速度也獲得了戲劇性的提升。
-4. **NPU 的應用與 Windows Copilot+ PC 的崛起**：即使是沒有配備 GPU 的筆記型電腦，利用內建的 NPU（神經網絡處理單元）以低功耗運行小型 LLM（SLM: Small Language Models）的技術也已進入實用階段。
+1. **GGUF 格式的全面普及** ：將元數據（Metadata）與張量（Tensor）整合到單一檔案的 GGUF（GPT-Generated Unified Format）已經完全成為業界標準（De facto standard）。這使得使用者只需從 Hugging Face 下載一個檔案，就能在任何環境下執行。
+2. **MoE（Mixture of Experts）架構的民主化** ：市面上發布了許多小規模卻高效能的 MoE 模型，透過在推論時僅啟動部分專家網路（Expert），在降低消費級 PC 運算負載的同時，展現出足以媲美巨大模型的效能。
+3. **推論引擎的高度抽象化與最佳化** ：Ollama、LM Studio、AnythingLLM 等工具變得更加完善，使用者不再需要擔心安裝 CUDA 驅動程式等複雜的依賴關係。此外，隨著 FlashAttention 3 對 Windows 提供原生支援，推論速度也獲得了戲劇性的提升。
+4. **NPU 的應用與 Windows Copilot+ PC 的崛起** ：即使是沒有配備 GPU 的筆記型電腦，利用內建的 NPU（神經網絡處理單元）以低功耗運行小型 LLM（SLM: Small Language Models）的技術也已進入實用階段。
 
 ---
 
@@ -36,14 +36,14 @@ tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 
 隨著 AI PC 的進化，硬體規格的要求也隨之改變。
 
-- **作業系統 (OS)**：Windows 11 Pro (24H2 或更高版本)。為了使用 WSL2 的完整功能、進階記憶體管理，以及 DirectML 的最新 API，這是必備的。
-- **處理器 (CPU)**：Intel Core Ultra 200 系列或更高版本，或 AMD Ryzen 9000 系列或更高版本。若要同時使用 CPU 進行推論，高頻寬記憶體通訊是不可或缺的。
-- **記憶體 (RAM)**：最低 32GB，建議 64GB 以上。主記憶體的頻寬（MB/s）在 CPU 推論或卸載（Offload）時會成為決定性的瓶頸。DDR5-6000 以上的高速記憶體是最理想的。
-- **顯示卡 (GPU)**：NVIDIA RTX 4000 / 5000 系列。對於本地 LLM 來說，最重要的不是運算效能，而是「VRAM（顯示記憶體）容量」。
-  - **入門級**：RTX 4060 Ti (16GB 版) - CP值最高。非常適合 8B 到 14B 等級的模型。
-  - **中階**：RTX 4070 Ti SUPER (16GB) / RTX 4080 SUPER (16GB)
-  - **高階**：RTX 4090 (24GB) / RTX 5090 (32GB) - 要運行 30B 到 70B 等級的量化模型會需要用到。
-- **儲存空間**：PCIe Gen4 或 Gen5 的 NVMe SSD。能大幅縮短載入數十 GB 模型所需的時間。
+- **作業系統 (OS)** ：Windows 11 Pro (24H2 或更高版本)。為了使用 WSL2 的完整功能、進階記憶體管理，以及 DirectML 的最新 API，這是必備的。
+- **處理器 (CPU)** ：Intel Core Ultra 200 系列或更高版本，或 AMD Ryzen 9000 系列或更高版本。若要同時使用 CPU 進行推論，高頻寬記憶體通訊是不可或缺的。
+- **記憶體 (RAM)** ：最低 32GB，建議 64GB 以上。主記憶體的頻寬（MB/s）在 CPU 推論或卸載（Offload）時會成為決定性的瓶頸。DDR5-6000 以上的高速記憶體是最理想的。
+- **顯示卡 (GPU)** ：NVIDIA RTX 4000 / 5000 系列。對於本地 LLM 來說，最重要的不是運算效能，而是「VRAM（顯示記憶體）容量」。
+  - **入門級** ：RTX 4060 Ti (16GB 版) - CP值最高。非常適合 8B 到 14B 等級的模型。
+  - **中階** ：RTX 4070 Ti SUPER (16GB) / RTX 4080 SUPER (16GB)
+  - **高階** ：RTX 4090 (24GB) / RTX 5090 (32GB) - 要運行 30B 到 70B 等級的量化模型會需要用到。
+- **儲存空間** ：PCIe Gen4 或 Gen5 的 NVMe SSD。能大幅縮短載入數十 GB 模型所需的時間。
 
 ## 2.2 WSL2 (Windows Subsystem for Linux 2) 設定
 
@@ -93,8 +93,8 @@ graph TD
 
 LLM 的文字生成分為兩個具有不同計算特性的階段。
 
-1. **Prefill（提示詞處理）階段**：將輸入的完整提示詞一次性處理並進行理解的階段。由於可以平行計算，GPU 的運算能力（FLOPS）將直接影響速度。如果提示詞很長，這個階段可能會需要花費數秒鐘的時間。
-2. **Decode（Token 生成）階段**：逐一預測 Token 並將其作為下一次輸入（自迴歸）的階段。因為在這個階段平行計算會受到限制，所以 GPU 的 VRAM 頻寬（Memory Bandwidth）會成為決定性的瓶頸。
+1. **Prefill（提示詞處理）階段** ：將輸入的完整提示詞一次性處理並進行理解的階段。由於可以平行計算，GPU 的運算能力（FLOPS）將直接影響速度。如果提示詞很長，這個階段可能會需要花費數秒鐘的時間。
+2. **Decode（Token 生成）階段** ：逐一預測 Token 並將其作為下一次輸入（自迴歸）的階段。因為在這個階段平行計算會受到限制，所以 GPU 的 VRAM 頻寬（Memory Bandwidth）會成為決定性的瓶頸。
 
 ---
 
@@ -299,16 +299,16 @@ Unsloth 將 CUDA 核心優化到了極致，與標準的 Hugging Face 函式庫�
 以下是常遇到的問題及其解決方案：
 
 ### 1. 推論速度極端緩慢（1～2 tokens/s）
-**原因**：模型無法完全載入到 VRAM 中，導致被卸載（Offload）到系統記憶體（RAM）。
-**解決方案**：請在工作管理員中確認「專用 GPU 記憶體」。如果已經達到極限，請縮小上下文大小（`-c`），或是使用位元數更低的量化模型（如 Q4_K_M 等）。
+**原因** ：模型無法完全載入到 VRAM 中，導致被卸載（Offload）到系統記憶體（RAM）。
+**解決方案** ：請在工作管理員中確認「專用 GPU 記憶體」。如果已經達到極限，請縮小上下文大小（`-c`），或是使用位元數更低的量化模型（如 Q4_K_M 等）。
 
 ### 2. 「CUDA out of memory」錯誤
-**原因**：VRAM 已經完全耗盡。特別是在對話時間過長，導致 KV 快取過度膨脹時會發生。
-**解決方案**：刻意限制並調小參數值，如果是 Ollama，請調小 `num_ctx`；如果是 llama.cpp，請調小 `-c` 的數值。
+**原因** ：VRAM 已經完全耗盡。特別是在對話時間過長，導致 KV 快取過度膨脹時會發生。
+**解決方案** ：刻意限制並調小參數值，如果是 Ollama，請調小 `num_ctx`；如果是 llama.cpp，請調小 `-c` 的數值。
 
 ### 3. 日文（或其他非英語）的生成很奇怪
-**原因**：提示詞模板（Prompt Template）不一致，或是使用了不支援該語言的模型。
-**解決方案**：請使用模型名稱中包含 `Instruct` 的版本，並確認工具端是否選擇了模型作者指定的正確模板格式（如 ChatML 或 Llama 3 格式）。
+**原因** ：提示詞模板（Prompt Template）不一致，或是使用了不支援該語言的模型。
+**解決方案** ：請使用模型名稱中包含 `Instruct` 的版本，並確認工具端是否選擇了模型作者指定的正確模板格式（如 ChatML 或 Llama 3 格式）。
 
 ---
 
@@ -318,12 +318,13 @@ Unsloth 將 CUDA 核心優化到了極致，與標準的 Hugging Face 函式庫�
 
 請務必活用本文所解說的以下重點：
 
-1. 使用 **VRAM 的數學計算**，合乎邏輯地選擇最適合自己 PC 規格的模型大小與量化等級。
+1. 使用 **VRAM 的數學計算** ，合乎邏輯地選擇最適合自己 PC 規格的模型大小與量化等級。
 2. 使用 **Ollama** 以最快的速度建置環境，並與 AI 編輯器整合，大幅提升生產力。
 3. 透過 **llama.cpp** 的進階參數控制，發揮硬體的極限效能。
 4. 使用 **AnythingLLM** 建置能處理機密資料、安全可靠的本地 RAG 系統。
-5. 活用 **Unsloth (WSL2)**，培育出擁有您專屬專業知識的客製化 AI。
+5. 活用 **Unsloth (WSL2)** ，培育出擁有您專屬專業知識的客製化 AI。
 
 AI 的「民主化」不再只是一個流行語（Buzzword），而是真實在您的 Windows 桌面系統上運作的系統。擺脫雲端 API 的使用成本與資料外洩風險，現在就踏入自由且強大的私有 AI 世界吧。
+
 
 

@@ -10,7 +10,7 @@ tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: '这是一份关于如何利用Cloudflare Pages和GitHub Pages免费且高速地托管基于Hugo的静态网站的完整技术指南。深入解析边缘计算、CDN架构和CI/CD流水线的细节。'
 ---
 
-在运营网站或博客时，页面加载速度（性能）、运营成本以及安全性是至关重要的因素。过去，动态CMS（内容管理系统，如WordPress）与租用服务器的组合是主流，但现在，被称为“Jamstack”的架构受到了极大的关注。其中，将由Go语言编写的超高速静态网站生成器（SSG）“Hugo”与Cloudflare Pages或GitHub Pages等现代托管服务相结合，可以构建**完全免费且极速**的博客环境。
+在运营网站或博客时，页面加载速度（性能）、运营成本以及安全性是至关重要的因素。过去，动态CMS（内容管理系统，如WordPress）与租用服务器的组合是主流，但现在，被称为“Jamstack”的架构受到了极大的关注。其中，将由Go语言编写的超高速静态网站生成器（SSG）“Hugo”与Cloudflare Pages或GitHub Pages等现代托管服务相结合，可以构建 **完全免费且极速** 的博客环境。
 
 本文将从技术角度深入探讨，为您详细讲解将Hugo生成的静态网站发布到Cloudflare Pages和GitHub Pages的具体步骤、各平台在架构上的差异、如何使用GitHub Actions构建CI/CD（持续集成/持续部署）、DNS优化、缓存策略，以及如何引入注重隐私的访问分析工具。
 
@@ -24,7 +24,7 @@ description: '这是一份关于如何利用Cloudflare Pages和GitHub Pages免�
 相比之下，采用Jamstack（JavaScript, APIs, and Markup）架构的静态网站生成器（SSG）会在事前（构建时）生成所有的HTML文件、CSS和JavaScript。当用户发起请求时，Web服务器（或CDN）只需将已生成的静态文件直接返回，从而实现压倒性的高速和坚固的安全性。
 
 ### 1.2 Hugo的优势
-在SSG中，有Next.js、Gatsby、Jekyll、Astro等多种选择，而Hugo最大的特点在于其**构建速度**。得益于Go语言的并发处理能力，即使是拥有几千到几万页面的网站，构建也能在短短几秒内完成。这大幅减少了CI/CD流水线中的等待时间，直接提升了开发者体验（DX: Developer Experience）。
+在SSG中，有Next.js、Gatsby、Jekyll、Astro等多种选择，而Hugo最大的特点在于其 **构建速度** 。得益于Go语言的并发处理能力，即使是拥有几千到几万页面的网站，构建也能在短短几秒内完成。这大幅减少了CI/CD流水线中的等待时间，直接提升了开发者体验（DX: Developer Experience）。
 
 ---
 
@@ -255,6 +255,7 @@ Cloudflare Web Analytics只需嵌入一个非常轻量的JavaScript片段即可�
 5. **轻量级分析**: 引入兼顾隐私且不损耗性能的Cloudflare Web Analytics等工具。
 
 通过将这些实践结合起来，即可免费构建一个足以应对每月数百万PV级别大规模流量的、可扩展且坚固的博客系统。如果您正在考虑搭建技术博客、企业网站或个人作品集网站，请务必尝试一下这种 Jamstack + Hugo + Cloudflare Pages 的架构。
+
 
 
 

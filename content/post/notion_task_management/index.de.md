@@ -131,7 +131,7 @@ Für „Projects“ und größere „Tasks“ ist die Timeline-Ansicht effektiv.
 
 ## 5. Wissensvernetzung mit Zettelkasten und Notes-Datenbank
 
-Beim Bloggen ist das „Beginnen eines Artikels auf einem leeren Blatt Papier“ oft der schmerzhafteste Teil und der Grund für Schreibblockaden. Daher führen wir das Konzept des „**Zettelkasten**“ in Notion ein, das von dem deutschen Soziologen Niklas Luhmann entwickelt wurde.
+Beim Bloggen ist das „Beginnen eines Artikels auf einem leeren Blatt Papier“ oft der schmerzhafteste Teil und der Grund für Schreibblockaden. Daher führen wir das Konzept des „ **Zettelkasten** “ in Notion ein, das von dem deutschen Soziologen Niklas Luhmann entwickelt wurde.
 
 Die Grundregeln des Zettelkastens sind „Schreibe nur eine Idee pro Notiz (atomare Natur)“ und „Verknüpfe Notizen miteinander, um ein Netzwerk zu bilden“.
 
@@ -273,6 +273,7 @@ Egal wie fortschrittlich ein System oder Tool aufgebaut ist, wenn die Personen, 
 Die Aufgabenverwaltung mit Notion geht weit über eine einfache To-Do-Liste hinaus. Durch die Kombination von Informationsorganisation durch die PARA-Methode, Wissensvernetzung durch den Zettelkasten und Engineering mit der Notion API können Sie ein „Zweites Gehirn (Second Brain)“ aufbauen, das die persönliche Entwicklung und das Schreiben von Blogs stark fördert.
 
 Die Ersteinrichtung dauert einige Zeit, aber sobald das System läuft, sinkt die kognitive Belastung der Aufgabenverwaltung drastisch, und Sie können sich voll und ganz auf das konzentrieren, was wirklich wichtig ist: „Code schreiben“ und „Texte verfassen“. Bitte nutzen Sie diesen Artikel als Referenz, um Ihren eigenen ultimativen Notion-Workspace zu erstellen.
+
 
 
 

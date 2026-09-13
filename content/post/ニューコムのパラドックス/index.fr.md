@@ -22,8 +22,8 @@ Devant vous apparaît un extraterrestre doté d'une super-intelligence qui se fa
 Oméga est un expert en analyse du comportement humain et possède une capacité effrayante : **« Il peut prédire le prochain choix d'un sujet avec une précision de près de 100 % »**. Lors de toutes les expériences passées, la prédiction d'Oméga ne s'est jamais trompée.
 
 Oméga place deux boîtes devant vous.
-- **Boîte A** : Une boîte transparente. Elle contient à coup sûr **« 100 000 yens »**.
-- **Boîte B** : Une boîte opaque. Elle contient soit **« 100 millions de yens »**, soit elle est **« vide (0 yen) »**.
+- **Boîte A** : Une boîte transparente. Elle contient à coup sûr ** « 100 000 yens »**.
+- **Boîte B** : Une boîte opaque. Elle contient soit ** « 100 millions de yens » **, soit elle est ** « vide (0 yen) »**.
 
 Oméga vous demande de choisir l'une des deux actions suivantes :
 
@@ -134,4 +134,5 @@ Et ce qui est intéressant, c'est que chaque camp croit sincèrement que « l'au
 
 « Qu'est-ce qu'un jugement rationnel ? »
 Peu importe le développement de l'économie ou des mathématiques, on finit toujours par aboutir à la philosophie sur « comment les humains perçoivent ce monde ». Le paradoxe de Newcomb est la plus méchante et la plus belle des expériences de pensée, exposant les limites de la logique.
+
 

@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 在數學上證明了此效能足以跨越 Windows 11 的 Copilot+ PC 要求（40 TOPS）。
 
-此外，AI 模型，尤其是 LLM 的推論（解碼階段）往往受限於**記憶體頻寬（Memory-Bound）**。系統記憶體的理論頻寬 $BW$ 計算方式如下：
+此外，AI 模型，尤其是 LLM 的推論（解碼階段）往往受限於 **記憶體頻寬（Memory-Bound）** 。系統記憶體的理論頻寬 $BW$ 計算方式如下：
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -297,14 +297,14 @@ int main() {
 ### 6.1 C++ 中記憶體管理與零拷貝推論的重要性
 在 C++ 中使用 DirectML 的最大優勢，在於能與 DirectX 12 (DX12) 進行緊密整合。上述程式碼出於教學目的，包含了從標準 CPU 記憶體複製資料的過程，但在實際的遊戲引擎或影像處理應用程式中，經常會使用 DX12 將影像（紋理）保留在 GPU 或 NPU 的記憶體空間中。
 
-在這種情況下，可以利用 `OrtDmlApi` 的進階繫結功能，直接將 DX12 資源對應為 ONNX Runtime 的張量，實現「**零拷貝推論 (Zero-Copy Inference)**」。如此一來，PCIe 匯流排之間的資料傳輸開銷（即前述頻寬 $BW$ 的消耗）將完全消失，進而大幅提升即時影片處理的畫面更新率。
+在這種情況下，可以利用 `OrtDmlApi` 的進階繫結功能，直接將 DX12 資源對應為 ONNX Runtime 的張量，實現「 **零拷貝推論 (Zero-Copy Inference)** 」。如此一來，PCIe 匯流排之間的資料傳輸開銷（即前述頻寬 $BW$ 的消耗）將完全消失，進而大幅提升即時影片處理的畫面更新率。
 
 ## 7. 效能最佳化與最佳實務
 
 在使用 Windows AI API 或 DirectML 開發頂級 AI 應用程式時，不可或缺的最佳化策略彙整如下：
 
 ### 7.1 模型量化 (Quantization) 與 Olive 工具組
-要發揮 NPU 的真正實力，將 AI 模型的權重與激勵值從 FP32（單精度浮點數）**量化（Quantization）**至 INT8 或 INT4 絕對是必要條件。NPU 的架構專為整數運算而設計，相較於 FP32，INT8 在理論上能達到 4 倍的吞吐量，並大幅節省耗電。
+要發揮 NPU 的真正實力，將 AI 模型的權重與激勵值從 FP32（單精度浮點數） **量化（Quantization）** 至 INT8 或 INT4 絕對是必要條件。NPU 的架構專為整數運算而設計，相較於 FP32，INT8 在理論上能達到 4 倍的吞吐量，並大幅節省耗電。
 
 透過使用 Microsoft 提供的 `Olive (ONNX Live)` 工具鏈，可以將 PyTorch 等模型自動針對 Windows 環境進行最佳化。Olive 能強力支援對 Transformer 模型的特殊注意力最佳化，以及針對各種硬體的運算圖編譯。
 
@@ -355,3 +355,4 @@ Windows 11 的 Copilot Runtime 與 `Microsoft.Windows.AI` API，為所有 Window
 
 ---
 *※注意事項：本文是根據 2026 年 9 月時的預覽版 API 及最新規格所撰寫。由於 Windows 更新可能會改變 API 規格或硬體需求，因此在實作時請務必參閱 Microsoft Learn 的官方文件。*
+

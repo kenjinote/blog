@@ -85,7 +85,7 @@ extern "C" {
 
 ### 内存管理与字符串转换（`BSTR`, `LPWSTR`）
 
-在C++与PowerShell（.NET）之间交换数据时，最需要注意的是**字符串的编码**和**内存管理**。
+在C++与PowerShell（.NET）之间交换数据时，最需要注意的是 **字符串的编码** 和 **内存管理** 。
 
 - **`LPCWSTR` / `LPWSTR`**：C/C++的宽字符串指针（UTF-16LE）。在Windows API的 `W` 系列函数中被标准使用。在P/Invoke中，通过指定 `CharSet = CharSet.Unicode`，它可以与.NET的 `String` 或 `StringBuilder` 自动进行编组（Marshalling）。
 - **`BSTR`**：在COM（Component Object Model）中使用的带有长度前缀的宽字符串。需要使用 `SysAllocString` 和 `SysFreeString` 来管理内存。在P/Invoke中需指定 `[MarshalAs(UnmanagedType.BStr)]`。
@@ -168,9 +168,9 @@ sequenceDiagram
 
 实现方法主要有两种：
 1. **启动进程（`CreateProcess` / `_popen`）**：作为独立进程启动 `powershell.exe`，并通过管道连接标准输入输出的方法。
-2. **PowerShell Hosting API（通过C++/CLI）**：在同一进程内托管PowerShell运行时的做法。
+2. **PowerShell Hosting API（通过C++/CLI）** ：在同一进程内托管PowerShell运行时的做法。
 
-在本文中，我们将讲解在系统编程中最稳健且通用的**使用管道的 CreateProcess** 方式。
+在本文中，我们将讲解在系统编程中最稳健且通用的 **使用管道的 CreateProcess** 方式。
 
 ### 使用 CreateProcess 和匿名管道执行
 
@@ -254,7 +254,7 @@ int main() {
 
 ### Windows注册表与PowerShell的协作
 
-从C++执行脚本时，应避免硬编码动态配置值或执行路径。在大多数情况下，C++应用程序会从**Windows注册表**中读取设置。
+从C++执行脚本时，应避免硬编码动态配置值或执行路径。在大多数情况下，C++应用程序会从 **Windows注册表** 中读取设置。
 
 在企业系统中，通常倾向于使用这种架构：在C++端使用 `RegOpenKeyEx` 和 `RegQueryValueEx` 从 `HKLM\SOFTWARE\MyApp` 获取PowerShell脚本的路径，然后将其作为参数传递给上述的 `CreateProcess`。
 
@@ -288,22 +288,22 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 ### 场景1：高速的文件系统扫描与权限更改
 
 在大型文件服务器上，提取具有特定扩展名且设置了特定ACL（访问控制列表）的文件，并批量修改其权限的任务。
-- **C++的作用**：使用 `FindFirstFile` / `FindNextFile` 结合多线程进行极速的目录树遍历，生成符合条件的文件路径列表。
-- **PowerShell的作用**：接收来自C++的列表，使用 `Set-Acl` 批量应用权限（或与Active Directory联动进行处理）。
+- **C++的作用** ：使用 `FindFirstFile` / `FindNextFile` 结合多线程进行极速的目录树遍历，生成符合条件的文件路径列表。
+- **PowerShell的作用** ：接收来自C++的列表，使用 `Set-Acl` 批量应用权限（或与Active Directory联动进行处理）。
 
 ### 场景2：采集独有硬件信息
 
 监控通过WMI（Windows Management Instrumentation）或CIM（Common Information Model）无法获取的独特硬件设备（例如：特殊的PCIe扩展卡或传感器）的信息。
-- **C++的作用**：向设备驱动程序发起 `DeviceIoControl` 调用，以获取并解析二进制数据的DLL。
-- **PowerShell的作用**：定期调用该DLL，将解析结果格式化为JSON，并发送给监控服务器的REST API。
+- **C++的作用** ：向设备驱动程序发起 `DeviceIoControl` 调用，以获取并解析二进制数据的DLL。
+- **PowerShell的作用** ：定期调用该DLL，将解析结果格式化为JSON，并发送给监控服务器的REST API。
 
 ## 内存管理与故障排查的最佳实践
 
-在两者协作中最常出现的Bug是**内存泄漏**和**访问冲突（Access Violation: 0xC0000005）**。
+在两者协作中最常出现的Bug是 **内存泄漏** 和 **访问冲突（Access Violation: 0xC0000005）** 。
 
-1. **指针的有效期**：在PowerShell端传递 `[ref]` 或 `StringBuilder` 时，P/Invoke仅在调用期间固定（Pin）该内存。切勿在C++端将该指针保存到全局变量并在之后访问它。如果需要进行异步回调，必须使用 `GCHandle` 显式地固定内存。
-2. **64位环境的指针大小**：现代Windows基本都是64位（x64）的。在C++端指针大小为8字节，在PowerShell（.NET）端需要使用 `IntPtr`。由于C++中的 `long` 在Windows中是4字节，因此将指针强制转换为 `long` 并传递的旧代码会导致崩溃。
-3. **字符串编码不匹配**：PowerShell在内部使用的是UTF-16。如果在C++端尝试以ANSI字符串（`std::string`, `char*`）来接收它，就会发生乱码。务必要使用宽字符串（`std::wstring`, `wchar_t*`），并在P/Invoke端指定 `CharSet = CharSet.Unicode`。
+1. **指针的有效期** ：在PowerShell端传递 `[ref]` 或 `StringBuilder` 时，P/Invoke仅在调用期间固定（Pin）该内存。切勿在C++端将该指针保存到全局变量并在之后访问它。如果需要进行异步回调，必须使用 `GCHandle` 显式地固定内存。
+2. **64位环境的指针大小** ：现代Windows基本都是64位（x64）的。在C++端指针大小为8字节，在PowerShell（.NET）端需要使用 `IntPtr`。由于C++中的 `long` 在Windows中是4字节，因此将指针强制转换为 `long` 并传递的旧代码会导致崩溃。
+3. **字符串编码不匹配** ：PowerShell在内部使用的是UTF-16。如果在C++端尝试以ANSI字符串（`std::string`, `char*`）来接收它，就会发生乱码。务必要使用宽字符串（`std::wstring`, `wchar_t*`），并在P/Invoke端指定 `CharSet = CharSet.Unicode`。
 
 ## 总结
 
@@ -316,4 +316,5 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 ---
 
 *本技术博客今后也将继续探讨有关Windows内部结构和高级自动化的深度话题。如果您有任何问题或反馈，请务必在评论区留言。*
+
 

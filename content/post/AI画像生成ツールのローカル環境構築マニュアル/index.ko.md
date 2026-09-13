@@ -27,7 +27,7 @@ AI 이미지 생성 기술은 Stable Diffusion의 오픈소스화를 시작으�
 
 ## 2. 확산 모델(Diffusion Model)의 수학적 배경과 아키텍처
 
-로컬 환경을 구축하고 파라미터를 적절히 설정하기 위해서는, Stable Diffusion 등의 **잠재 확산 모델(Latent Diffusion Model: LDM)**이 어떻게 작동하고 있는지를 이해하는 것이 매우 유익합니다.
+로컬 환경을 구축하고 파라미터를 적절히 설정하기 위해서는, Stable Diffusion 등의 **잠재 확산 모델(Latent Diffusion Model: LDM)** 이 어떻게 작동하고 있는지를 이해하는 것이 매우 유익합니다.
 
 ### 2.1 노이즈 추가 프로세스(Forward Process)와 제거 프로세스(Reverse Process)
 
@@ -49,7 +49,7 @@ $$ L_{simple} = \mathbb{E}_{x_0, \epsilon \sim \mathcal{N}(0, I), t} \left[ || \
 
 ### 2.2 Latent Space(잠재 공간)를 통한 계산량 감소
 
-픽셀 공간(Pixel Space)에서 직접 노이즈 제거를 수행하면, 계산량이 이미지의 해상도에 대해 제곱으로 증가하므로 매우 무거운 처리가 됩니다. Stable Diffusion은 **VAE(Variational Autoencoder)**를 사용하여 이미지를 압축된 '잠재 공간(Latent Space)'으로 변환한 후 처리를 진행합니다.
+픽셀 공간(Pixel Space)에서 직접 노이즈 제거를 수행하면, 계산량이 이미지의 해상도에 대해 제곱으로 증가하므로 매우 무거운 처리가 됩니다. Stable Diffusion은 **VAE(Variational Autoencoder)** 를 사용하여 이미지를 압축된 '잠재 공간(Latent Space)'으로 변환한 후 처리를 진행합니다.
 
 인코더 $E$는 해상도 $H \times W \times 3$의 이미지를 $z \in \mathbb{R}^{H/8 \times W/8 \times 4}$ 로 압축합니다. 공간 차원이 8분의 1로 줄어들기 때문에, 자기 주의 메커니즘(Self-Attention)의 계산량은 $\mathcal{O}((\frac{H \times W}{64})^2)$ 가 되어 극적인 성능 향상을 가져옵니다. 생성 후에는 디코더 $D$에 의해 $\tilde{x} = D(z)$ 로 픽셀 공간으로 복원됩니다.
 
@@ -94,10 +94,10 @@ AI 처리의 심장부입니다. Windows 환경에서 Stable Diffusion을 구동
 툴 본체를 설치하기 전에 필요한 기반 소프트웨어를 준비합니다.
 
 ### 4.1 Python 설치
-AI 툴의 대부분은 Python으로 작성되어 있습니다. Stable Diffusion WebUI 등과 호환성이 가장 높은 **Python 3.10.6**을 설치합니다(너무 최신 버전을 사용할 경우 PyTorch 등의 의존성이 깨질 수 있습니다).
+AI 툴의 대부분은 Python으로 작성되어 있습니다. Stable Diffusion WebUI 등과 호환성이 가장 높은 **Python 3.10.6** 을 설치합니다(너무 최신 버전을 사용할 경우 PyTorch 등의 의존성이 깨질 수 있습니다).
 
 1.  Python 공식 아카이브에서 `python-3.10.6-amd64.exe`를 다운로드합니다.
-2.  인스톨러 실행 시, 맨 아래에 있는 **"Add Python 3.10 to PATH"**에 반드시 체크합니다.
+2.  인스톨러 실행 시, 맨 아래에 있는 **"Add Python 3.10 to PATH"** 에 반드시 체크합니다.
 3.  설치 완료 화면에서 **"Disable path length limit"**(경로 길이 제한 비활성화)를 클릭합니다(중요: Windows의 260자 경로 제한을 해제하지 않으면 깊은 계층의 의존 라이브러리에서 오류가 발생합니다).
 
 ### 4.2 Git for Windows 설치
@@ -217,8 +217,8 @@ Stable Diffusion 계산의 대부분은 U-Net 내의 Cross-Attention에 소비�
 *   `--medvram-sdxl`: SDXL 모델 사용 시에만 MedVRAM을 적용하는 매우 편리한 플래그입니다.
 
 ### 7.3 TensorRT를 통한 초고속화
-NVIDIA GPU의 텐서 코어를 극한까지 활용하기 위한 프레임워크가 **TensorRT**입니다.
-Stable Diffusion의 U-Net을 사용 중인 GPU 전용 엔진(`.trt` 파일)으로 컴파일합니다. 컴파일에는 수십 분의 시간이 걸리며, 해상도나 배치 크기가 고정된다는(Dynamic Shape도 가능하지만 효율이 떨어짐) 단점이 있지만, 생성 속도가 **1.5배~2배 이상**으로 치솟습니다. 같은 해상도의 이미지를 대량으로 생성하는 업무 용도에 있어서 최강의 최적화 기법입니다.
+NVIDIA GPU의 텐서 코어를 극한까지 활용하기 위한 프레임워크가 **TensorRT** 입니다.
+Stable Diffusion의 U-Net을 사용 중인 GPU 전용 엔진(`.trt` 파일)으로 컴파일합니다. 컴파일에는 수십 분의 시간이 걸리며, 해상도나 배치 크기가 고정된다는(Dynamic Shape도 가능하지만 효율이 떨어짐) 단점이 있지만, 생성 속도가 **1.5배~2배 이상** 으로 치솟습니다. 같은 해상도의 이미지를 대량으로 생성하는 업무 용도에 있어서 최강의 최적화 기법입니다.
 
 ### 7.4 Tiled VAE / Tiled Diffusion
 고해상도(4K 등)의 이미지를 생성·업스케일링할 때, VAE의 디코드 처리에서 단숨에 VRAM이 고갈됩니다. 이를 방지하기 위해, 이미지를 타일 모양(예: $512 \times 512$ 씩)으로 분할하여 처리하고 마지막에 결합하는 확장 기능(Multidiffusion / Tiled VAE)이 필수적입니다.
@@ -227,7 +227,7 @@ Stable Diffusion의 U-Net을 사용 중인 GPU 전용 엔진(`.trt` 파일)으�
 
 ## 8. 고급 제어 기술: ControlNet
 
-텍스트 프롬프트만으로는 캐릭터의 포즈나 복잡한 퍼스펙티브, 손가락 끝의 미세한 움직임을 지정하는 것이 불가능합니다. 이를 해결하는 것이 **ControlNet**입니다.
+텍스트 프롬프트만으로는 캐릭터의 포즈나 복잡한 퍼스펙티브, 손가락 끝의 미세한 움직임을 지정하는 것이 불가능합니다. 이를 해결하는 것이 **ControlNet** 입니다.
 
 ControlNet은 학습된 Stable Diffusion 모델의 가중치를 고정한 채로 인코더 구조를 복사하여 'Zero-convolutions(가중치가 0으로 초기화된 합성곱 계층)'을 끼워 넣는 아키텍처를 가집니다. 이를 통해 원래의 생성 능력을 파괴하지 않고 추가적인 조건화를 수행할 수 있습니다.
 
@@ -269,3 +269,4 @@ Stable Diffusion에서 시작된 오픈소스 AI 이미지 생성의 움직임�
 하지만 TensorRT나 양자화 기술(Quantization), GGUF 등의 로컬 최적화 기술 역시 빠르게 발전하고 있어, 일반 소비자용 하드웨어에서도 충분한 추론이 가능해지는 생태계가 형성되고 있습니다.
 
 본 매뉴얼에서 해설한 CUDA 환경 구축, VRAM 최적화, 그리고 ComfyUI 등의 파이프라인에 대한 이해는, AI 기술 트렌드가 어떻게 변화하더라도 통용되는 보편적인 기반 지식이 될 것입니다. 여러분의 창의력이 제한 없는 로컬 환경에서 최대한으로 발휘되기를 바랍니다.
+

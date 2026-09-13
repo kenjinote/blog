@@ -44,7 +44,7 @@ Lorsque vous essayez de corriger une partie d'une commande à l'aide des touches
 
 Supposons que vous saisissiez et modifiiez des commandes 500 fois par jour et que l'utilisation de raccourcis vous permette de gagner 2 secondes à chaque fois.
 $$ 500 \text{ fois/jour} \times 2 \text{ secondes} = 1000 \text{ secondes/jour} \approx 16.6 \text{ minutes/jour} $$
-Converti sur une année (240 jours ouvrables), cela représente une économie de temps d'**environ 66 heures (soit environ 8 jours de travail)**. Plus important encore, la réduction de la préparation mentale ($M$) offre l'avantage inestimable de **« ne pas interrompre la pensée (maintenir l'état de flow) »**.
+Converti sur une année (240 jours ouvrables), cela représente une économie de temps d'**environ 66 heures (soit environ 8 jours de travail)**. Plus important encore, la réduction de la préparation mentale ($M$) offre l'avantage inestimable de ** « ne pas interrompre la pensée (maintenir l'état de flow) »**.
 
 ---
 
@@ -346,5 +346,6 @@ Dans cet article, nous avons expliqué de manière très détaillée « l'optimi
 Au début, vous ressentirez peut-être du stress à devoir penser à taper `Ctrl+A` ou `Ctrl+E`. Cependant, en continuant à les utiliser consciemment pendant quelques semaines, ces raccourcis s'ancreront définitivement dans votre **mémoire musculaire**. Une fois ancrés, vous serez capable de manipuler le terminal librement et de manière inconsciente, ce qui constituera un atout qui améliorera de façon exponentielle votre expérience de développement (Developer Experience, DX) tout au long de votre vie.
 
 Dès aujourd'hui, ouvrez votre `$PROFILE` ou `~/.bashrc` et commencez à construire l'environnement de terminal ultime, celui qui convient le mieux à vos mains.
+
 
 

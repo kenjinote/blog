@@ -172,9 +172,9 @@ Windows Terminal 支援稱為「JSON Fragments」的擴充機制。這是一種�
 
 ## 3.2 導入 Nerd Fonts 與字型設定最佳化（CaskaydiaCove Nerd Font）
 
-當您要使用後述的 Oh My Posh 或 Starship 等進階提示字元工具時，包含 Git 分支圖示、程式語言標誌、OS 符號等特殊字形（圖示）的字型是必須的。將這些圖示修補（加入）到現有的程式設計用字型中所產生的就是「**Nerd Fonts**」。
+當您要使用後述的 Oh My Posh 或 Starship 等進階提示字元工具時，包含 Git 分支圖示、程式語言標誌、OS 符號等特殊字形（圖示）的字型是必須的。將這些圖示修補（加入）到現有的程式設計用字型中所產生的就是「 **Nerd Fonts** 」。
 
-微軟開發的程式設計用字型「Cascadia Code」非常易讀且優秀，但預設並不包含 Nerd Font 的圖示。因此，強烈建議導入將 Nerd Font 修補套用至 Cascadia Code 的「**CaskaydiaCove Nerd Font**」。
+微軟開發的程式設計用字型「Cascadia Code」非常易讀且優秀，但預設並不包含 Nerd Font 的圖示。因此，強烈建議導入將 Nerd Font 修補套用至 Cascadia Code 的「 **CaskaydiaCove Nerd Font** 」。
 
 ### 安裝步驟：
 1. 從 [Nerd Fonts 官方 GitHub 發布頁面](https://github.com/ryanoasis/nerd-fonts/releases)下載 `CascadiaCode.zip`。
@@ -250,7 +250,7 @@ wt -p "PowerShell 7" -d "C:\Projects\MyApp" ; split-pane -p "Ubuntu-22.04" -d "/
 
 # 6. 提示字元的演化論 1：PowerShell 與 Oh My Posh
 
-能讓 Windows 環境中的標準殼層 PowerShell（特別是支援跨平台的最新版 PowerShell 7 / PowerShell Core）發生戲劇性進化的，就是「**Oh My Posh**」。Oh My Posh 是一款支援所有殼層的自訂提示字元引擎，它能優美且視覺化地呈現開發所需的所有狀態，如目前的目錄、Git 分支與變更狀態、Node.js 或 Python 的版本、Kubernetes 的上下文（Context）等。
+能讓 Windows 環境中的標準殼層 PowerShell（特別是支援跨平台的最新版 PowerShell 7 / PowerShell Core）發生戲劇性進化的，就是「 **Oh My Posh** 」。Oh My Posh 是一款支援所有殼層的自訂提示字元引擎，它能優美且視覺化地呈現開發所需的所有狀態，如目前的目錄、Git 分支與變更狀態、Node.js 或 Python 的版本、Kubernetes 的上下文（Context）等。
 
 下圖展示了在啟動 PowerShell 時，Oh My Posh 是如何被載入，以及提示字元是如何渲染的序列圖。
 
@@ -315,7 +315,7 @@ Import-Module -Name Terminal-Icons
 
 # 7. 提示字元的演化論 2：WSL2 架構與 Starship 的融合
 
-能在 Windows 上執行真正 Linux 核心的 WSL2（Windows Subsystem for Linux 2），對於現代 Web 開發與雲端原生（Cloud Native）開發是不可或缺的。要客製化 WSL 內的殼層（Bash 或 Zsh）的提示字元，「**Starship**」是最佳解答。
+能在 Windows 上執行真正 Linux 核心的 WSL2（Windows Subsystem for Linux 2），對於現代 Web 開發與雲端原生（Cloud Native）開發是不可或缺的。要客製化 WSL 內的殼層（Bash 或 Zsh）的提示字元，「 **Starship** 」是最佳解答。
 
 Starship 是以 Rust 語言撰寫的，一款極為快速且客製化程度極高的跨殼層提示字元。只要撰寫一個設定檔（TOML），就能在 Bash、Zsh、Fish 等任何殼層中重現完全相同的提示字元，這是它的優勢。
 
@@ -398,7 +398,7 @@ error_symbol = "[❯](bold red)"
 
 # 8. 終端機繪製延遲與效能的數學模型
 
-在評估終端機使用體驗時，最重要的指標之一就是「**輸入延遲（Input Latency）**」。這指的是從按下鍵盤的按鍵開始，到畫面上對應的像素顏色發生變化，並獲得視覺回饋為止的時間延遲。
+在評估終端機使用體驗時，最重要的指標之一就是「 **輸入延遲（Input Latency）** 」。這指的是從按下鍵盤的按鍵開始，到畫面上對應的像素顏色發生變化，並獲得視覺回饋為止的時間延遲。
 
 這個整體延遲 $ T_{total} $ 在數學上可以嚴格地建模為以下各元件的總和：
 
@@ -461,3 +461,4 @@ Windows Terminal 的真正價值，遠遠超乎其單純作為「舊命令提示
 本文所解說的眾多設定手法——色彩配置的調校、透過 Nerd Font 擴充視覺資訊、由 Oh My Posh 或 Starship 提供具備上下文感知（Context-aware）的智慧提示字元，以及活用窗格分割建構多工處理環境。這些不僅能提升日常的程式設計體驗，更能提高您面對終端機時的工作動力。
 
 開發環境的最佳化是沒有終點的。每當新的命令列工具出現、作業系統架構演進時，我們的終端機也會隨之改變樣貌。我們衷心希望這篇文章，能成為各位讀者在探索「終極開發環境」這趟無止盡旅程中的可靠路標。
+

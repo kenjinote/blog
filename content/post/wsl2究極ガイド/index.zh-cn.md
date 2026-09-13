@@ -24,7 +24,7 @@ description: '这是一份能显著提升Windows平台开发体验的WSL2完整�
 WSL1采用了一种将Linux系统调用实时转换（Translation）为Windows NT API的机制。由于它不使用虚拟机（VM），因此具有资源开销非常小的优点。然而，完全模拟文件系统的I/O操作等复杂的系统调用是非常困难的，特别是在处理Node.js的 `npm install` 和Git的仓库操作等涉及大量小文件的任务时，会导致令人绝望的性能下降。
 
 ### WSL2：轻量级实用程序VM和完整的Linux内核
-WSL2的架构进行了革新，由微软构建的真正Linux内核直接运行在**利用Hyper-V架构子集的“轻量级实用程序VM”**之上。这保证了系统调用100%的兼容性，并且通过使用基于Linux原生的ext4文件系统的虚拟磁盘（VHDX），文件I/O的性能与WSL1相比得到了显著的提升。
+WSL2的架构进行了革新，由微软构建的真正Linux内核直接运行在 **利用Hyper-V架构子集的“轻量级实用程序VM”** 之上。这保证了系统调用100%的兼容性，并且通过使用基于Linux原生的ext4文件系统的虚拟磁盘（VHDX），文件I/O的性能与WSL1相比得到了显著的提升。
 
 下面的Mermaid图表展示了WSL1和WSL2在结构上的差异。
 
@@ -106,7 +106,7 @@ wsl --set-default-version 2
 
 WSL2最大的陷阱之一就是“内存的无限制消耗（Vmmem进程的膨胀）”。由于WSL2利用了Linux内核的页面缓存，每次进行I/O操作时都会无休止地吞噬主机（Windows）的内存。为了防止这种情况，必须通过配置文件来限制资源。
 
-WSL2的配置文件分为两个：**影响整个Windows的 `.wslconfig`**，以及**影响各发行版内部的 `wsl.conf`**。
+WSL2的配置文件分为两个：**影响整个Windows的 `.wslconfig`**，以及** 影响各发行版内部的 `wsl.conf`**。
 
 ### 4.1. .wslconfig (Windows端)
 
@@ -253,7 +253,7 @@ sequenceDiagram
 Windows端的VS Code仅仅作为一个“瘦客户端（UI）”发挥作用，而Language Server、调试器、终端执行等繁重的处理全部由WSL端的“VS Code服务器”来完成。这样一来，无需在Windows端安装Node.js或Python，只需在WSL端即可保持环境的整洁。
 
 ### 必备的VS Code设置
-从VS Code的“扩展”中安装 **"WSL" (ms-vscode-remote.remote-wsl)**。之后，在WSL终端中进入项目目录，只需执行 `code .`，就能在Windows端以打开该目录的状态启动VS Code。
+从VS Code的“扩展”中安装 **"WSL" (ms-vscode-remote.remote-wsl)** 。之后，在WSL终端中进入项目目录，只需执行 `code .`，就能在Windows端以打开该目录的状态启动VS Code。
 
 **重要注意事项（换行符问题）：**
 Windows和Linux的换行符不同（Windows是 `CRLF`，Linux是 `LF`）。在WSL上进行开发时，请务必将Git的 `core.autocrlf` 设置以及VS Code中文件的默认设置统一为 `LF`。如果忽略这一点，您在执行Shell脚本或Docker容器时可能会被莫名其妙的错误所困扰。
@@ -278,7 +278,7 @@ git config --global core.autocrlf input
 
 在WSL2环境中使用Docker，主要有两种方式。
 
-1. 安装 **Docker Desktop for Windows**，并启用WSL2集成功能
+1. 安装 **Docker Desktop for Windows** ，并启用WSL2集成功能
 2. 在WSL2内部（如Ubuntu等）直接安装 **原生的Docker Engine**
 
 ### 方式1：Docker Desktop（推荐）
@@ -321,7 +321,7 @@ sudo usermod -aG docker $USER
 
 在进行Git的SSH克隆或通过SSH连接远程服务器时，如果在Windows端和WSL端分别管理不同的SSH密钥会非常麻烦。为了兼顾安全性与便利性，我们将进行设置，把运行在Windows端的SSH Agent（或1Password等密码管理器）桥接到WSL端。
 
-在此，我们将讲解一种最安全且现代的方式：利用**1Password的SSH Agent功能**或**Windows的OpenSSH Authentication Agent**，并通过 `npiperelay` 和 `socat` 将其转发到WSL2的UNIX域套接字的方法。
+在此，我们将讲解一种最安全且现代的方式：利用 **1Password的SSH Agent功能** 或 **Windows的OpenSSH Authentication Agent** ，并通过 `npiperelay` 和 `socat` 将其转发到WSL2的UNIX域套接字的方法。
 
 ### ssh-agent的套接字转发
 
@@ -386,5 +386,6 @@ WSL2已经完全超越了单纯“作为Windows上附赠的Linux”这一范畴�
 只要全面应用本文所讲解的这些设置（通过 `.wslconfig` 进行资源优化、使用Zsh + Powerlevel10k增强终端、通过VS Code Remote实现透明访问，以及SSH集成和VHDX的维护），就能构建出一个零压力、高速且安全的“终极开发环境”。
 
 虽然环境配置需要花费一点心思，但一旦设置妥当，毫无疑问将极大地提升您今后的工程生产力。请务必以本指南为基础，结合您自己的项目和喜好，探索出更多的定制可能。
+
 
 

@@ -15,7 +15,7 @@ description: '介绍在VSCode（Visual Studio Code）中开发Qt应用程序的�
 这次将介绍“如何在 Visual Studio Code（以下简称 VSCode）中配置 Qt 开发环境”的方法。
 
 最近，除了官方的 Qt Creator 之外，越来越多的人希望使用轻量级且高扩展性的 VSCode 来开发 Qt 应用程序。
-对于这样的人，我推荐“**Qt Extension Pack**”。
+对于这样的人，我推荐“ **Qt Extension Pack** ”。
 只需安装此扩展包，即可一次性备齐主要的 Qt 相关扩展功能。
 
 ---
@@ -132,6 +132,7 @@ target_link_libraries(MyApp PRIVATE Qt6::Widgets)
 ## 最后
 
 今后，我打算在这个环境中推进使用 Qt UI 工具和 QML 的开发。
-下次，我计划讲解 **如何从 VSCode 构建和运行 Qt 的 Hello World 应用程序**。
+下次，我计划讲解 **如何从 VSCode 构建和运行 Qt 的 Hello World 应用程序** 。
 
 再见！
+

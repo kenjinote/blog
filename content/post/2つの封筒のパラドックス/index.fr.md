@@ -88,7 +88,7 @@ Pourquoi un calcul d'espérance en apparence parfait a-t-il produit un paradoxe 
 Le piège de ce paradoxe réside dans **« l'utilisation de la variable aléatoire $X$ »**.
 
 Dans la formule précédente, nous avons traité le montant $X$ de l'enveloppe A comme une **constante fixe**, et avons supposé que l'enveloppe B était « $\frac{X}{2}$ ou $2X$ ».
-Cependant, ce qui est véritablement fixe est la **« somme des montants dans les deux enveloppes »**, ou encore le **« montant le plus faible »**.
+Cependant, ce qui est véritablement fixe est la **« somme des montants dans les deux enveloppes » **, ou encore le ** « montant le plus faible »**.
 
 Soit $S$ le montant dans l'enveloppe contenant le moins d'argent. Alors, l'enveloppe contenant le plus d'argent contient un montant de $2S$.
 Il n'y a que les 2 scénarios suivants pour l'ensemble du jeu (avec une probabilité de $\frac{1}{2}$ chacun).
@@ -96,7 +96,7 @@ Il n'y a que les 2 scénarios suivants pour l'ensemble du jeu (avec une probabil
 - **Scénario 1 :** L'enveloppe A que vous avez choisie contient le plus faible montant ($S$), et l'enveloppe B contient le montant le plus élevé ($2S$)
 - **Scénario 2 :** L'enveloppe A que vous avez choisie contient le montant le plus élevé ($2S$), et l'enveloppe B contient le plus faible montant ($S$)
 
-Maintenant, calculons correctement l'espérance pour les cas **« si vous n'échangez pas »** et **« si vous échangez »**.
+Maintenant, calculons correctement l'espérance pour les cas **« si vous n'échangez pas » ** et ** « si vous échangez »**.
 
 **Espérance si vous n'échangez pas $E_{stay}$ :**
 $$ E_{stay} = \frac{1}{2} \times S + \frac{1}{2} \times 2S = \frac{3}{2}S = 1.5S $$
@@ -163,4 +163,5 @@ Bien que le « paradoxe des deux enveloppes » ne repose que sur de simples mult
 3. **La difficulté de manipuler l'infini** : Introduire dans une formule mathématique le concept d'« infini » qui ne peut être appliqué au monde réel produit des résultats contraires au bon sens.
 
 La prochaine fois que vous penserez dans votre vie que « l'herbe est plus verte ailleurs, et qu'il est plus avantageux d'échanger », souvenez-vous de ce paradoxe. Il se peut que, dans votre équation, les variables aient simplement été substituées.
+
 

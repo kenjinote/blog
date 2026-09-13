@@ -13,7 +13,7 @@ description: 'Сообщаю о получении награды Microsoft MVP 
 
 Здравствуйте, я kenji.
 
-У меня объявление. В этом году я снова получил звание **Microsoft MVP (Most Valuable Professional)** . Это уже **девятый** раз, когда я получаю эту награду.
+У меня объявление. В этом году я снова получил звание **Microsoft MVP (Most Valuable Professional)** . Это уже ** девятый** раз, когда я получаю эту награду.
 
 Огромное спасибо всем, кто меня всегда поддерживает.
 
@@ -81,3 +81,4 @@ description: 'Сообщаю о получении награды Microsoft MVP 
 * GitHub: https://github.com/kenjinote
 * Технический блог: https://hack.jp
 * X: https://twitter.com/kenjinote
+

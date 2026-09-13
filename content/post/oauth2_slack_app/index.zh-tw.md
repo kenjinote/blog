@@ -50,9 +50,9 @@ graph TD
 
 # 2. 授權碼授權流程（Authorization Code Grant）完全解剖
 
-OAuth 2.0 存在多種流程（授權類型），但在像是 Web 應用程式這種能在伺服器端安全保存金鑰（Client Secret）的環境中，最受推薦且最被廣泛使用的就是 **授權碼授權流程（Authorization Code Grant）**。
+OAuth 2.0 存在多種流程（授權類型），但在像是 Web 應用程式這種能在伺服器端安全保存金鑰（Client Secret）的環境中，最受推薦且最被廣泛使用的就是 **授權碼授權流程（Authorization Code Grant）** 。
 
-授權碼授權流程最大的特色，在於明確分離了 **前台通道（Front-channel，透過瀏覽器的通訊）** 與 **後台通道（Back-channel，伺服器間的直接通訊）**。在前台通道中僅傳遞暫時的「授權碼（Authorization Code）」，最終的「存取權杖」則是在後台通道取得，藉此大幅降低了權杖洩漏到瀏覽器歷史紀錄或推薦連結（Referer）的風險。
+授權碼授權流程最大的特色，在於明確分離了 **前台通道（Front-channel，透過瀏覽器的通訊） ** 與 ** 後台通道（Back-channel，伺服器間的直接通訊）**。在前台通道中僅傳遞暫時的「授權碼（Authorization Code）」，最終的「存取權杖」則是在後台通道取得，藉此大幅降低了權杖洩漏到瀏覽器歷史紀錄或推薦連結（Referer）的風險。
 
 以下的循序圖展示了 Slack App 在授權碼授權流程中的完整過程。
 
@@ -98,7 +98,7 @@ sequenceDiagram
 2. 選擇「From scratch」，指定應用程式名稱（例如：`My First OAuth App`）以及要安裝的工作區。
 3. 建立後，在「Basic Information」畫面中，取得以下兩個重要的憑證（Credentials）：
    - **Client ID**: 公開且唯一識別你的應用程式的 ID。將其包含在透過瀏覽器發送的請求（前台通道）中也沒有問題。
-   - **Client Secret**: 只有你的應用程式才知道的機密字串。**絕對不可以暴露在瀏覽器端，也不可以提交（Commit）到 GitHub 等地方。**
+   - **Client Secret**: 只有你的應用程式才知道的機密字串。 ** 絕對不可以暴露在瀏覽器端，也不可以提交（Commit）到 GitHub 等地方。**
 4. 移動到「OAuth & Permissions」畫面，在「Redirect URLs」中註冊回呼（Callback）網址。這次假設是本地開發，請設定如下：
    - `http://localhost:3000/slack/oauth_redirect`
 
@@ -285,7 +285,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 }
 ```
 
-這個以 `xoxb-` 開頭的字串，就是在 Slack 中的 **Bot 存取權杖**。往後，當應用程式向 Slack API（Resource Server）發送請求時，只要在 HTTP 標頭中加上 `Authorization: Bearer xoxb-...`，就能進行身分驗證與權限證明。
+這個以 `xoxb-` 開頭的字串，就是在 Slack 中的 **Bot 存取權杖** 。往後，當應用程式向 Slack API（Resource Server）發送請求時，只要在 HTTP 標頭中加上 `Authorization: Bearer xoxb-...`，就能進行身分驗證與權限證明。
 
 ---
 
@@ -293,19 +293,19 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 在 OAuth 2.0 中最重要的概念之一就是「範圍（Scope）」。範圍是指與存取權杖綁定的權限界限。
 
-在 Slack 中，權限分類得非常精細，主要分為 **Bot Token Scopes** 和 **User Token Scopes**。
+在 Slack 中，權限分類得非常精細，主要分為 **Bot Token Scopes** 和 **User Token Scopes** 。
 - `chat:write` (Bot): 作為應用程式（機器人）本身在頻道中發送訊息的權限。
 - `chat:write` (User): 作為安裝應用程式的使用者代理（以使用者的名稱和頭像）發送訊息的權限。
 - `channels:read`: 取得頻道清單的權限。
 - `channels:history`: 讀取頻道過去訊息歷史紀錄的權限。
 
-遵循安全性的大原則「最小權限原則（Principle of Least Privilege）」，**僅要求對應用程式提供功能而言真正不可或缺的範圍** 是不變的鐵則。例如，如果只是個「單純發送通知」的應用程式，就應該只要求 `chat:write`，而不可以要求 `channels:history`（能讀取所有過去對話的權限）。這是為了防範萬一應用程式被駭、權杖外洩時，能將損害降到最低。
+遵循安全性的大原則「最小權限原則（Principle of Least Privilege）」， **僅要求對應用程式提供功能而言真正不可或缺的範圍** 是不變的鐵則。例如，如果只是個「單純發送通知」的應用程式，就應該只要求 `chat:write`，而不可以要求 `channels:history`（能讀取所有過去對話的權限）。這是為了防範萬一應用程式被駭、權杖外洩時，能將損害降到最低。
 
 ---
 
 # 7. 更進階的安全性：PKCE (Proof Key for Code Exchange)
 
-近年來，作為進一步強化 OAuth 2.0 安全性的機制，**PKCE（Proof Key for Code Exchange，RFC 7636，發音為 "pixy"）** 已被標準化並廣泛使用。
+近年來，作為進一步強化 OAuth 2.0 安全性的機制， **PKCE（Proof Key for Code Exchange，RFC 7636，發音為 "pixy"）** 已被標準化並廣泛使用。
 
 最初，PKCE 是為了無法安全保存 `client_secret` 的「公開客戶端（Public Client）」，如原生應用程式（iOS/Android）或 SPA（Single Page Application）而設計的。然而，在目前的安全性最佳實踐（OAuth 2.1 草案）中，即使是伺服器端的「機密客戶端（Confidential Client）」，也強烈建議使用 PKCE。
 
@@ -365,11 +365,12 @@ sequenceDiagram
 
 本文透過 Slack App 整合的具體 Node.js 實作程式碼，詳細解說了 OAuth 2.0 的授權碼授權流程。
 
-1. 透過意識到 **4 個角色（RO, Client, AS, RS）**，可以使整體系統的架構更加明確。
+1. 透過意識到 **4 個角色（RO, Client, AS, RS）** ，可以使整體系統的架構更加明確。
 2. **授權碼授權流程** 巧妙地活用了瀏覽器與伺服器之間的通訊路徑（前台 / 後台通道）來確保安全性。
-3. 了解其背後的密碼學機制，如利用 **`state` 參數** 防禦 CSRF，以及利用 **PKCE** 防止授權碼攔截攻擊等，是邁向安全實作的捷徑。
+3. 了解其背後的密碼學機制，如利用 **`state` 參數 ** 防禦 CSRF，以及利用 **PKCE** 防止授權碼攔截攻擊等，是邁向安全實作的捷徑。
 4. 基於 **最小權限原則** 的範圍設計，以及在存入資料庫時進行加密，是營運上絕對不可或缺的要素。
 
 OAuth 2.0 是一門非常深奧的學問，光是 RFC 就有龐大的規格，但像這樣以實際的平台（Slack）為目標，一邊動手實作一邊學習，應該就能體會到其精練的設計理念與堅固的安全機制。希望本文的知識能在未來的應用程式開發或 API 整合實作中對您有所幫助。
+
 
 

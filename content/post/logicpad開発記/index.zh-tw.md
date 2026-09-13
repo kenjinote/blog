@@ -44,7 +44,7 @@ gantt
 
 ## 3. 技術選型：C++ / WinUI 3 / Windows App SDK 的深淵
 
-在開發 LogicPad 時，技術堆疊的選擇是最重要的決定之一。歷史上，Windows 平台的原生 UI 框架有 Win32 API (User32/GDI)、MFC、Windows Forms、WPF、UWP 等各種選項。目前，Microsoft 推薦用於現代 Windows 桌面應用程式開發的，是包含在 **Windows App SDK** 中的 **WinUI 3**。
+在開發 LogicPad 時，技術堆疊的選擇是最重要的決定之一。歷史上，Windows 平台的原生 UI 框架有 Win32 API (User32/GDI)、MFC、Windows Forms、WPF、UWP 等各種選項。目前，Microsoft 推薦用於現代 Windows 桌面應用程式開發的，是包含在 **Windows App SDK** 中的 **WinUI 3** 。
 
 ### 3.1. Windows App SDK 與 WinUI 3 的架構
 Windows App SDK 是一組函式庫，旨在提供不依賴於作業系統版本的最新 Windows API。傳統的 UWP (Universal Windows Platform) 與作業系統更新緊密結合，而 Windows App SDK 則是與應用程式一起發布，因此可以保證從 Windows 10 (版本 1809 起) 到 Windows 11 的運作一致性。
@@ -52,11 +52,11 @@ Windows App SDK 是一組函式庫，旨在提供不依賴於作業系統版本�
 WinUI 3 是在此 Windows App SDK 上執行的原生 UI 框架，完全支援 Fluent Design System。WinUI 3 的內部是由 C++ 和 DirectX 建構的，運作速度非常快。
 
 ### 3.2. 為什麼不選 C#，而特地選擇 C++ (C++/WinRT)？
-WinUI 3 的開發語言支援 C# 和 C++。如果使用 C# 和 .NET，開發效率會呈飛躍性提升，但在 LogicPad 中，由於以下原因，我採用了 **C++/WinRT**。
+WinUI 3 的開發語言支援 C# 和 C++。如果使用 C# 和 .NET，開發效率會呈飛躍性提升，但在 LogicPad 中，由於以下原因，我採用了 **C++/WinRT** 。
 
-1. **確定性記憶體管理**：因為沒有垃圾回收器 (GC)，所以能完全控制記憶體配置和釋放的時機。這可以防止在模擬迴圈中發生 GC 暫停。
-2. **SIMD 與快取最佳化**：在 C++ 中可以嚴格定義記憶體的實體佈局 (如 Struct of Arrays 等)，從而將 CPU 快取的命中率最大化。
-3. **原生 ABI 邊界**：C++/WinRT 是 COM (Component Object Model) 的現代 C++ 投影 (Projection)。可以直接呼叫作業系統的原生 API，而沒有像 C# P/Invoke 那樣的開銷。
+1. **確定性記憶體管理** ：因為沒有垃圾回收器 (GC)，所以能完全控制記憶體配置和釋放的時機。這可以防止在模擬迴圈中發生 GC 暫停。
+2. **SIMD 與快取最佳化** ：在 C++ 中可以嚴格定義記憶體的實體佈局 (如 Struct of Arrays 等)，從而將 CPU 快取的命中率最大化。
+3. **原生 ABI 邊界** ：C++/WinRT 是 COM (Component Object Model) 的現代 C++ 投影 (Projection)。可以直接呼叫作業系統的原生 API，而沒有像 C# P/Invoke 那樣的開銷。
 
 C++/WinRT 的底層存在著 COM。所有的 WinRT 物件本質上都是實作了 `IUnknown` 介面的 COM 物件，C++/WinRT 的 `winrt::com_ptr` 等智慧指標會自動管理參考計數 (`AddRef` / `Release`)。
 
@@ -303,5 +303,6 @@ $$
 WinUI 3 和 Windows App SDK 目前仍在活躍開發中，是打造能最大限度發揮 Windows 11 UI 典範之美麗應用程式的最佳工具。衷心希望這篇部落格文章能對即將挑戰 Windows 原生應用程式開發的開發者有所幫助，並期望能在 Store 看到更多出色的應用程式上架。
 
 開發還沒有結束。在 LogicPad 的下一個版本中，預定將整合利用 Direct2D 的自訂波形渲染引擎。在下一篇文章中，我計畫深入探討 DirectX 與 WinUI 3 的互操作性 (Interop) (活用 SwapChainPanel)。敬請期待。
+
 
 

@@ -11,7 +11,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 # 前言：靜態網站生成器Hugo與Tailwind CSS的強大協同效應
 
-在現代的Web前端開發中，兼顧效能與開發體驗（DX：Developer Experience）是所有專案中最重要的課題之一。將在靜態網站生成器（SSG）中擁有世界最快建置速度的**Hugo**，與引入了實用優先（Utility-First）這一革新典範的**Tailwind CSS**相結合，可以說是由此課題得出的一個終極解答。
+在現代的Web前端開發中，兼顧效能與開發體驗（DX：Developer Experience）是所有專案中最重要的課題之一。將在靜態網站生成器（SSG）中擁有世界最快建置速度的 **Hugo** ，與引入了實用優先（Utility-First）這一革新典範的 **Tailwind CSS** 相結合，可以說是由此課題得出的一個終極解答。
 
 Hugo是使用Go語言編寫的，即使是擁有數千個頁面的網站，也具備在短短幾秒，甚至毫秒級別內完成建置的驚人效能。另一方面，Tailwind CSS透過在HTML中直接寫入預先定義的無數個實用類別（例如：`flex`、`text-center`、`mt-4`等），消除了在CSS檔案與HTML檔案之間來回切換的上下文切換（Context Switch），從而加速了設計的迭代。
 
@@ -53,9 +53,9 @@ Hugo是使用Go語言編寫的，即使是擁有數千個頁面的網站，也�
 
 像這樣基於BEM（Block Element Modifier）的設計，在專案規模較小時還能運作良好，但往往會引發以下問題：
 
-1. **命名枯竭與疲勞**：每當製作類似的元件時，就必須思考新的類別名稱（例：`card-news`、`card-featured`等）。
-2. **CSS的肥大化**：每當新增新功能時，CSS的行數就會持續增加，而一旦寫好的CSS因為害怕「不知道在哪裡被使用」，所以很少會被刪除，導致無效程式碼（Dead Code）不斷累積。
-3. **上下文切換**：因為將HTML的結構與CSS的樣式分開在不同的檔案中管理，在編輯器上來回切換分頁的次數會呈指數級增加。
+1. **命名枯竭與疲勞** ：每當製作類似的元件時，就必須思考新的類別名稱（例：`card-news`、`card-featured`等）。
+2. **CSS的肥大化** ：每當新增新功能時，CSS的行數就會持續增加，而一旦寫好的CSS因為害怕「不知道在哪裡被使用」，所以很少會被刪除，導致無效程式碼（Dead Code）不斷累積。
+3. **上下文切換** ：因為將HTML的結構與CSS的樣式分開在不同的檔案中管理，在編輯器上來回切換分頁的次數會呈指數級增加。
 
 ### Tailwind CSS帶來的典範轉移
 Tailwind CSS透過「實用類別的組合」這種方法來解決這些問題。如果使用Tailwind CSS，上述的卡片元件將會變成如下所示：
@@ -76,7 +76,7 @@ Tailwind CSS透過「實用類別的組合」這種方法來解決這些問題�
 
 ## 2. Hugo Pipes與PostCSS的架構
 
-為了將Tailwind CSS整合到Hugo中，必須理解被稱為**Hugo Pipes**的資源處理管道。Hugo Pipes是一個強大的功能，它能讓與資源相關的任何處理（如Sass/SCSS的編譯、JavaScript的打包與壓縮（Minify），以及本次將使用的**PostCSS**的執行等）都在Hugo內部完成。
+為了將Tailwind CSS整合到Hugo中，必須理解被稱為 **Hugo Pipes** 的資源處理管道。Hugo Pipes是一個強大的功能，它能讓與資源相關的任何處理（如Sass/SCSS的編譯、JavaScript的打包與壓縮（Minify），以及本次將使用的 **PostCSS** 的執行等）都在Hugo內部完成。
 
 PostCSS是一個使用JavaScript外掛來轉換CSS的工具。事實上，Tailwind CSS本身也是作為PostCSS的外掛在運作。
 
@@ -93,11 +93,11 @@ flowchart TD
     E -->|"字串化器 (Stringifier)"| F["編譯與最佳化後的 CSS"]
 ```
 
-1. **Parser（解析器）**：解析輸入的原始CSS字串，並將其轉換為可供程式操作的資料結構——AST（抽象語法樹）。
-2. **Plugins（外掛群）**：
-   - **Tailwind CSS**：掃描樣板檔案（HTML或Markdown），並將使用到的實用類別作為節點新增到AST上。此外，它也會展開 `@tailwind` 指令。
-   - **Autoprefixer**：參考 `Can I Use` 的資料庫，並在必要時將供應商前綴（Vendor Prefix，如 `-webkit-`、`-moz-` 等）新增到AST的屬性中。
-3. **Stringifier（字串化器）**：將轉換完成的AST重新轉換為瀏覽器可解析的CSS字串並輸出。
+1. **Parser（解析器）** ：解析輸入的原始CSS字串，並將其轉換為可供程式操作的資料結構——AST（抽象語法樹）。
+2. **Plugins（外掛群）** ：
+   - **Tailwind CSS** ：掃描樣板檔案（HTML或Markdown），並將使用到的實用類別作為節點新增到AST上。此外，它也會展開 `@tailwind` 指令。
+   - **Autoprefixer** ：參考 `Can I Use` 的資料庫，並在必要時將供應商前綴（Vendor Prefix，如 `-webkit-`、`-moz-` 等）新增到AST的屬性中。
+3. **Stringifier（字串化器）** ：將轉換完成的AST重新轉換為瀏覽器可解析的CSS字串並輸出。
 
 ---
 
@@ -107,8 +107,8 @@ flowchart TD
 
 ### 必備條件
 
-1. **Hugo Extended Version**：
-   必須是包含Sass/SCSS處理功能與原生PostCSS整合功能的**Extended版**，而不是普通的Hugo版本。請在終端機中執行以下指令，並確認版本資訊中是否包含 `extended` 字串。
+1. **Hugo Extended Version** ：
+   必須是包含Sass/SCSS處理功能與原生PostCSS整合功能的 **Extended版** ，而不是普通的Hugo版本。請在終端機中執行以下指令，並確認版本資訊中是否包含 `extended` 字串。
 
    ```bash
    hugo version
@@ -116,7 +116,7 @@ flowchart TD
    # hugo v0.121.2-4146... windows/amd64 BuildDate=... VendorInfo=gohugoio +extended
    ```
 
-2. **Node.js與npm**：
+2. **Node.js與npm** ：
    Tailwind CSS與PostCSS等依賴套件是在Node.js上運作的。請確認是否已安裝Node.js（建議使用LTS版）。
 
    ```bash
@@ -373,7 +373,7 @@ NODE_ENV=production hugo --minify --environment production
 
 ### 使用Typography外掛進行Markdown的樣式設定
 
-在像Hugo這類的部落格或文件網站中，無法直接對由Markdown生成的純HTML元素（如 `<h1>`、`<p>`、`<ul>` 等）加上類別。在這種情況下，非常有用的就是Tailwind官方的 **Typography 外掛**。
+在像Hugo這類的部落格或文件網站中，無法直接對由Markdown生成的純HTML元素（如 `<h1>`、`<p>`、`<ul>` 等）加上類別。在這種情況下，非常有用的就是Tailwind官方的 **Typography 外掛** 。
 
 1. 安裝外掛
    ```bash
@@ -407,10 +407,11 @@ NODE_ENV=production hugo --minify --environment production
 
 辛苦了。到這裡，具備Hugo超高速靜態網站生成引擎、Tailwind CSS現代化樣式設定功能，以及PostCSS擴充性的完美Web開發資源管道就完成了。
 
-這個架構的優點在於，**「設定只需在最初進行一次即可」**。只要建立好管道，開發者就不需要打開CSS檔案，只需在HTML或Markdown樣板中寫入直觀的實用類別，就能以驚人的速度構建出複雜的UI。
+這個架構的優點在於， **「設定只需在最初進行一次即可」** 。只要建立好管道，開發者就不需要打開CSS檔案，只需在HTML或Markdown樣板中寫入直觀的實用類別，就能以驚人的速度構建出複雜的UI。
 
 此外，由於輸出的CSS大小始終會被最小化，這將直接提升Core Web Vitals的分數，從SEO的角度來看也非常有利。
 
 Hugo與Tailwind CSS的組合，從個人技術部落格到大型企業網站，在所有專案中都將會是「最佳選擇」之一。請務必活用這個強大的工具鏈，享受舒適的Web開發生活！
+
 
 

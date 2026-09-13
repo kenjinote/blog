@@ -18,7 +18,7 @@ description: '基于海外UI指南，解说Web表单中“必填项”标记的�
 1. **使用星号 (\*)**
 
     * 一般最为普及，在必填字段上添加“\*”。
-    * 但是，**必须在表单开头添加“* 为必填项”等说明** ([Nielsen Norman Group][1], [加州州立大学北岭分校][2])。
+    * 但是， **必须在表单开头添加“* 为必填项”等说明** ([Nielsen Norman Group][1], [加州州立大学北岭分校][2])。
     * 也有使用颜色进行强调的例子（如红色文字）。
 
 2. **在标签上明确标示 “Required” 或 “(required)”**
@@ -55,18 +55,18 @@ description: '基于海外UI指南，解说Web表单中“必填项”标记的�
   > Fields marked with \* are required.
   > （或者统一写 "All fields are required"，有选填项时写 "unless marked optional"）
 
-* **添加标签**：
+* **添加标签** ：
 
     * 写成 `First Name *` 或 `Email (required)`。
 
-* **ARIA属性・HTML5属性**：
+* **ARIA属性・HTML5属性** ：
 
   ```html
   <label for="email">Email <abbr title="required">*</abbr></label>
   <input id="email" required aria-required="true">
   ```
 
-* **不要仅依赖颜色**：需要同时满足视觉和程序上的要求。
+* **不要仅依赖颜色** ：需要同时满足视觉和程序上的要求。
 
 ---
 
@@ -88,3 +88,4 @@ description: '基于海外UI指南，解说Web表单中“必填项”标记的�
 [4]: https://www.tpgi.com/doing-whats-required-indicating-mandatory-fields-in-an-accessible-way/?utm_source=chatgpt.com "Doing what's required: Indicating mandatory fields in an accessible ..."
 [5]: https://www.w3.org/TR/WCAG20-TECHS/H90.html?utm_source=chatgpt.com "H90: Indicating required form controls using label or legend - W3C"
 [6]: https://www.contensis.com/community/blog/ux-forms-guidelines?utm_source=chatgpt.com "Build better web forms: 15 UX guidelines that work - Contensis"
+

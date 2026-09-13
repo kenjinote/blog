@@ -15,7 +15,7 @@ Wie beweisen Wissenschaftler Theorien? Normalerweise nutzen sie die „Induktion
 Wenn man zum Beispiel die Hypothese „Alle Raben sind schwarz“ beweisen möchte, würde man Raben auf der ganzen Welt beobachten und einzeln bestätigen, dass sie schwarz sind.
 
 Doch in den 1940er Jahren wies der Logiker Carl Hempel auf ein seltsames logisches Schlupfloch hin, das sich in dieser scheinbar selbstverständlichen wissenschaftlichen Methode verbirgt.
-Dies ist das Paradoxon von **Hempels Raben**, das besagt: **„Das bloße Betrachten eines blauen Apfels oder eines roten Schuhs ist ein Beweis dafür, dass 'Raben schwarz sind'.“**
+Dies ist das Paradoxon von **Hempels Raben**, das besagt: ** „Das bloße Betrachten eines blauen Apfels oder eines roten Schuhs ist ein Beweis dafür, dass 'Raben schwarz sind'.“**
 
 ## Logischer Taschenspielertrick: Die Magie der Kontraposition
 
@@ -87,5 +87,6 @@ Kurz gesagt, die bayesianische Lösung lautet: Logisch gesehen „ist ein blauer
 Dieses Paradoxon verdeutlicht, auf welch fragilen Annahmen das Fundament der Wissenschaft, die „Induktion (Ableitung allgemeiner Gesetze aus Beobachtungen)“, beruht. Verlässt man sich nur auf logische Äquivalenz, würde eine „Indoor-Ornithologie“ möglich werden, bei der man alle Gesetze des Universums überprüfen könnte (wie z. B. „alle Schwäne sind weiß“, „alle Aliens sind nicht grün“), indem man nur den Krimskrams in seinem Zimmer beobachtet, ohne jemals nach draußen zu gehen.
 
 Hempels Raben sind ein faszinierendes Paradoxon, das zeigt, dass die Wörter „Beweis“ und „Beleg“, die wir unbewusst verwenden, nicht allein durch die Regeln der reinen symbolischen Logik vollständig erfasst werden können.
+
 
 

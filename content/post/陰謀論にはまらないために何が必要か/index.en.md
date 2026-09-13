@@ -17,7 +17,7 @@ When browsing the internet, you may sometimes come across "conspiracy theory"-li
 "Could the real truth be hidden?"
 Many of you have probably seen such narratives spread in a plausible manner.
 
-To avoid being drawn too deeply into such information, it is very important to develop not only "knowledge" and "thinking skills" but also your **state of mind**—in other words, your "mental security."
+To avoid being drawn too deeply into such information, it is very important to develop not only "knowledge" and "thinking skills" but also your **state of mind** —in other words, your "mental security."
 
 Here are six effective ways of thinking for this purpose.
 
@@ -129,3 +129,4 @@ Instead, taking a **dialogue-based approach** can create the possibility of natu
 It is said that whether one is attracted to conspiracy theories is influenced more by psychological states and environmental factors than by the amount of knowledge.
 
 Therefore, without assuming "I am fine," making a gradual effort in your daily life to **enhance your mental security** will surely become a great support for living flexibly in the future information society.
+

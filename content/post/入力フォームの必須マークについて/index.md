@@ -55,18 +55,18 @@ description: 'Webフォームにおける「必須項目」マークのベスト
   > Fields marked with \* are required.
   > （または一括で "All fields are required"、任意がある場合は "unless marked optional"）
 
-* **ラベル付与**：
+* **ラベル付与** ：
 
     * `First Name *` または `Email (required)`のように記述。
 
-* **ARIA属性・HTML5属性**：
+* **ARIA属性・HTML5属性** ：
 
   ```html
   <label for="email">Email <abbr title="required">*</abbr></label>
   <input id="email" required aria-required="true">
   ```
 
-* **色だけには頼らない**：視覚的とプログラム的に両対応を。
+* **色だけには頼らない** ：視覚的とプログラム的に両対応を。
 
 ---
 
@@ -88,3 +88,4 @@ description: 'Webフォームにおける「必須項目」マークのベスト
 [4]: https://www.tpgi.com/doing-whats-required-indicating-mandatory-fields-in-an-accessible-way/?utm_source=chatgpt.com "Doing what's required: Indicating mandatory fields in an accessible ..."
 [5]: https://www.w3.org/TR/WCAG20-TECHS/H90.html?utm_source=chatgpt.com "H90: Indicating required form controls using label or legend - W3C"
 [6]: https://www.contensis.com/community/blog/ux-forms-guidelines?utm_source=chatgpt.com "Build better web forms: 15 UX guidelines that work - Contensis"
+

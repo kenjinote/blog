@@ -133,7 +133,7 @@ Ainsi, le nombre maximal d'étapes de calcul est proportionnel à :
 
 $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 
-Cela signifie que pour une longueur de bit $n$, la complexité est **$\mathcal{O}(2^{n/2})$**. Autrement dit, la méthode des divisions successives est un algorithme à **« temps exponentiel pur (Exponential time) »** par rapport à $n$.
+Cela signifie que pour une longueur de bit $n$, la complexité est **$\mathcal{O}(2^{n/2})$**. Autrement dit, la méthode des divisions successives est un algorithme à ** « temps exponentiel pur (Exponential time) »** par rapport à $n$.
 Chaque fois que le nombre de bits augmente de 1 (le nombre double), le temps de calcul est multiplié par environ $\sqrt{2} \approx 1,414$. Si $N$ est un nombre dépassant 1024 bits (environ 300 chiffres en décimal), même en y consacrant un temps égal à l'âge de l'univers, le calcul ne s'achèverait pas.
 
 ## 2. Méthode de factorisation de Fermat (Fermat's Factorization Method)
@@ -245,7 +245,7 @@ De nombreux chercheurs supposent que la factorisation appartient à une classe i
 ## L'ordinateur quantique, un « changeur de donne (Game Changer) » : l'algorithme de Shor
 
 Alors que le chiffrement RSA est robuste face aux ordinateurs classiques, la situation changera radicalement avec la mise en pratique des « ordinateurs quantiques », qui fonctionnent sur des principes totalement différents.
-Publié en 1994 par Peter Shor, l'**« algorithme de Shor (Shor's algorithm) »** est un algorithme capable de résoudre la factorisation en nombres premiers en **temps polynomial $\mathcal{O}(n^3)$** (ou plus précisément, environ $\mathcal{O}(n^2 \log n \log \log n)$ en termes de portes quantiques), de manière stupéfiante, grâce à la transformée de Fourier quantique.
+Publié en 1994 par Peter Shor, l'**« algorithme de Shor (Shor's algorithm) » ** est un algorithme capable de résoudre la factorisation en nombres premiers en **temps polynomial $\mathcal{O}(n^3)$** (ou plus précisément, environ $\mathcal{O}(n^2 \log n \log \log n)$ en termes de portes quantiques), de manière stupéfiante, grâce à la transformée de Fourier quantique.
 
 Voyons la différence de complexité entre les algorithmes classiques et quantiques dans le diagramme Mermaid suivant.
 
@@ -285,4 +285,5 @@ Dans cet article, en partant des bases de la complexité algorithmique (notation
 * Cependant, avec l'avènement de **l'ordinateur quantique et de l'algorithme de Shor**, la factorisation en temps polynomial devient théoriquement possible, et la technologie cryptographique s'apprête à entrer dans une nouvelle ère (la cryptographie post-quantique).
 
 Le fait qu'un concept aussi abstrait que la complexité d'un algorithme soit directement lié à la sécurité de notre quotidien est l'un des aspects les plus fascinants et palpitants de l'informatique et des mathématiques. Nous vous invitons à rester attentifs aux futurs développements technologiques, en particulier à l'évolution des ordinateurs quantiques et aux transitions de la technologie cryptographique.
+
 

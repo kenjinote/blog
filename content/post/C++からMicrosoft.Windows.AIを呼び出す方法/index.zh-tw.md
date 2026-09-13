@@ -11,7 +11,7 @@ description: '活用Windows內建的Windows ML來存取AI功能！本文將附�
 
 # 🎯 如何從 C++ 呼叫 `Microsoft.Windows.AI`【附範例程式碼】
 
-自 Windows 10 起，Windows 預設內建了 **能夠執行 ONNX 格式 AI 模型的執行階段** 。這就是 **Windows ML (Windows.AI.MachineLearning)** 。
+自 Windows 10 起，Windows 預設內建了 **能夠執行 ONNX 格式 AI 模型的執行階段 ** 。這就是 **Windows ML (Windows.AI.MachineLearning)** 。
 
 這篇文章將具體解說如何從 **C++（基於 Win32 應用程式）** 呼叫 `Microsoft.Windows.AI.MachineLearning` ，並 **附上範例程式碼具體解說** 。
 
@@ -146,3 +146,4 @@ binding.Bind(L"input_0", tensor);
 Windows ML (Microsoft.Windows.AI) 是一個非常強大的人工智慧推論引擎，即使從 C++ 也能輕鬆使用。如果需要在 Windows 上進行原生推論，請務必嘗試看看。
 
 如果您需要建立 ONNX 模型或 Tensor 繫結的具體範例，我們將在後續文章中進行解說！
+

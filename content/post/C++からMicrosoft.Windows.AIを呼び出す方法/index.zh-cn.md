@@ -11,7 +11,7 @@ description: '利用Windows自带的Windows ML访问AI功能！本文将附带�
 
 # 🎯 如何从 C++ 调用 `Microsoft.Windows.AI`【附示例代码】
 
-自 Windows 10 起，Windows 标准配备了 **可以运行 ONNX 格式 AI 模型的运行时 **。这就是 ** Windows ML (Windows.AI.MachineLearning)**。
+自 Windows 10 起，Windows 标准配备了 **可以运行 ONNX 格式 AI 模型的运行时 ** 。这就是 ** Windows ML (Windows.AI.MachineLearning)** 。
 
 本文将 **通过示例代码详细讲解 ** 如何从 ** C++（基于 Win32 应用程序）** 调用 `Microsoft.Windows.AI.MachineLearning`。
 
@@ -95,7 +95,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
 
 ## ✅ 补充：输入与输出 Tensor 的指定方法
 
-根据模型的不同，在推理前可能需要 **创建并绑定 Tensor**。
+根据模型的不同，在推理前可能需要 **创建并绑定 Tensor** 。
 
 示例：
 
@@ -136,7 +136,7 @@ binding.Bind(L"input_0", tensor);
 
 ## ✅ 替代方案：写给不想使用 WinRT 的人
 
-* 如果使用 Microsoft 提供的 `ONNX Runtime`，就可以 **在完全不使用 WinRT 的情况下从 C++ 处理 ONNX 模型**。
+* 如果使用 Microsoft 提供的 `ONNX Runtime`，就可以 **在完全不使用 WinRT 的情况下从 C++ 处理 ONNX 模型** 。
 * 它支持跨平台，在 Windows/Linux 上也可以使用通用代码。
 
 ---
@@ -146,3 +146,4 @@ binding.Bind(L"input_0", tensor);
 Windows ML (Microsoft.Windows.AI) 是一款强大的 AI 推理引擎，即使在 C++ 中也能很好地使用。如果您需要在 Windows 原生环境中进行推理，请务必尝试一下。
 
 如果您需要创建 ONNX 模型或 Tensor 绑定的具体示例，我们将会在后续文章中进行讲解！
+

@@ -44,7 +44,7 @@ gantt
 
 ## 3. 技術選定：C++ / WinUI 3 / Windows App SDK の深淵
 
-LogicPadの開発にあたり、技術スタックの選定は最も重要な決定の一つでした。WindowsプラットフォームにおけるネイティブUIフレームワークには、歴史的にWin32 API（User32/GDI）、MFC、Windows Forms、WPF、UWPなど様々な選択肢が存在します。現在、MicrosoftがモダンなWindowsデスクトップアプリケーション開発の推奨としているのが、**Windows App SDK**に同梱されている**WinUI 3**です。
+LogicPadの開発にあたり、技術スタックの選定は最も重要な決定の一つでした。WindowsプラットフォームにおけるネイティブUIフレームワークには、歴史的にWin32 API（User32/GDI）、MFC、Windows Forms、WPF、UWPなど様々な選択肢が存在します。現在、MicrosoftがモダンなWindowsデスクトップアプリケーション開発の推奨としているのが、 **Windows App SDK** に同梱されている **WinUI 3** です。
 
 ### 3.1. Windows App SDKとWinUI 3のアーキテクチャ
 Windows App SDKは、OSのバージョンに依存せずに最新のWindows APIを提供するためのライブラリ群です。従来のUWP（Universal Windows Platform）がOSのアップデートと強く結びついていたのに対し、Windows App SDKはアプリケーションと共に配布されるため、Windows 10（バージョン1809以降）からWindows 11まで、一貫した動作を保証します。
@@ -52,7 +52,7 @@ Windows App SDKは、OSのバージョンに依存せずに最新のWindows API�
 WinUI 3は、このWindows App SDK上で動作するネイティブUIフレームワークであり、Fluent Design Systemを完全にサポートしています。WinUI 3の内部はC++とDirectXで構築されており、非常に高速に動作します。
 
 ### 3.2. C#ではなく、あえてC++（C++/WinRT）を選ぶ理由
-WinUI 3の開発言語としてはC#とC++がサポートされています。C#と.NETを使用すれば開発効率は飛躍的に向上しますが、LogicPadでは以下の理由から**C++/WinRT**を採用しました。
+WinUI 3の開発言語としてはC#とC++がサポートされています。C#と.NETを使用すれば開発効率は飛躍的に向上しますが、LogicPadでは以下の理由から **C++/WinRT** を採用しました。
 
 1. **決定論的メモリ管理**: ガベージコレクタ（GC）が存在しないため、メモリの確保と解放のタイミングを完全にコントロールできます。シミュレーションループ中にGCの一時停止が発生することを防ぎます。
 2. **SIMDとキャッシュの最適化**: C++ではメモリの物理的なレイアウト（Struct of Arrays等）を厳密に定義でき、CPUキャッシュのヒット率を最大化できます。
@@ -303,5 +303,6 @@ LogicPadの開発からMicrosoft Storeへのリリースまでの軌跡を振り
 WinUI 3とWindows App SDKは、現在も活発に開発が進められており、Windows 11のUIパラダイムを最大限に活かした美しいアプリケーションを作るための最高のツールです。このブログ記事が、これからWindowsネイティブアプリ開発に挑戦しようとしている開発者の一助となり、Storeに素晴らしいアプリが一つでも多く並ぶことを心から願っています。
 
 開発はまだ終わっていません。LogicPadの次のバージョンでは、Direct2Dを活用した独自の波形レンダリングエンジンの統合を予定しています。次回の記事では、DirectXとWinUI 3の相互運用（SwapChainPanelの活用）について深く掘り下げる予定です。ご期待ください。
+
 
 

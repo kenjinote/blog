@@ -11,7 +11,7 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 1. 简介
 
-在现代Web开发中，JavaScript（和TypeScript）长期确立了作为在浏览器上运行的唯一编程语言的地位。然而，近年来，直接在浏览器上执行更高级的计算需求不断增加，例如图像处理、视频编码、3D游戏和物理模拟等。因此，**WebAssembly (简称 Wasm)** 应运而生。
+在现代Web开发中，JavaScript（和TypeScript）长期确立了作为在浏览器上运行的唯一编程语言的地位。然而，近年来，直接在浏览器上执行更高级的计算需求不断增加，例如图像处理、视频编码、3D游戏和物理模拟等。因此， **WebAssembly (简称 Wasm)** 应运而生。
 
 本文将从WebAssembly的基础讲起，详细解说如何通过C++（使用Emscripten）和Rust（使用`wasm-pack`）这两种强大的系统编程语言导出Wasm，并与JavaScript环境进行集成的具体步骤和内部结构。此外，我们还将深入探讨内存边界管理、字符串和数组等复杂数据的传递方式、性能开销以及Wasm的二进制格式（`.wasm`）。
 
@@ -240,21 +240,21 @@ sequenceDiagram
 
 整数和浮点数（`i32`、`i64`、`f32`、`f64`）可以作为值直接传递给Wasm函数。然而，字符串、数组和结构体等复杂类型不能直接通过Wasm的函数签名传递。
 
-**在Emscripten中**：
+**在Emscripten中** ：
 1. 在JS端调用`Module._malloc`，分配Wasm端的线性内存区域。
 2. JS通过`Module.HEAPU8.set()`等方法将数据写入分配好的内存地址（指针）。
 3. 将指针传递给C++函数。
 4. 计算完成后，在JS端从指针读取结果，最后调用`Module._free`。
 
-**在wasm-bindgen (Rust) 中**：
+**在wasm-bindgen (Rust) 中** ：
 上述繁琐的内存管理流程被完全隐藏在自动生成的胶水代码（JS封装器）中。只要从JS端简单地将`String`或`Array`传递给Rust函数，背后就会自动执行缓冲区分配（相当于`malloc`）、复制、指针传递和内存释放等一系列处理。
 
 ## 7. 性能开销与优化
 
 尽管WebAssembly能够以接近原生的速度运行，但“跨越JavaScript与WebAssembly边界的通信（互操作Interop）”仍存在开销。
 
-* **调用开销**：这是JavaScript引擎调用Wasm函数的切换成本。虽然目前已经进行了大幅优化，但仍应避免在每帧中数万次调用极小的函数这种设计。
-* **内存复制成本**：在将字符串或数组传递给Wasm时，会发生数据从JS的垃圾回收机制管理的内存复制到Wasm的线性内存（ArrayBuffer）的过程。当传递大量数据时，需要采用“零拷贝（Zero-copy）”设计，即从一开始就在Wasm内存中构建数据，然后JS端通过TypedArray的视图（如`Uint8Array`）进行访问。
+* **调用开销** ：这是JavaScript引擎调用Wasm函数的切换成本。虽然目前已经进行了大幅优化，但仍应避免在每帧中数万次调用极小的函数这种设计。
+* **内存复制成本** ：在将字符串或数组传递给Wasm时，会发生数据从JS的垃圾回收机制管理的内存复制到Wasm的线性内存（ArrayBuffer）的过程。当传递大量数据时，需要采用“零拷贝（Zero-copy）”设计，即从一开始就在Wasm内存中构建数据，然后JS端通过TypedArray的视图（如`Uint8Array`）进行访问。
 
 例如，在游戏引擎或物理引擎中，通常的架构是将所有状态保存在Wasm的线性内存中，JavaScript仅负责每帧发送“更新”触发器以及画面渲染（调用WebGL/WebGPU API）。
 
@@ -280,10 +280,10 @@ graph TD
 
 文件的魔数（Magic Number）始终以 `0x00 0x61 0x73 0x6D` (`\0asm`) 开头。随后的每个段都有各自的ID。
 
-* **Type Section (类型段)**：定义所有使用到的函数签名（参数与返回值的类型）。
-* **Import Section (导入段)**：JavaScript环境提供给Wasm的函数和内存的列表。例如，如果从C++调用 `console.log`，就会在这里声明。
-* **Code Section (代码段)**：存储实际的字节码指令（如 `i32.add`、`call`、`loop` 等）。因为是基于栈的虚拟机，所以采用将操作数压入栈然后调用运算指令的形式。
-* **Data Section (数据段)**：将在C++或Rust代码中定义的静态字符串字面量或初始化数据，从该段加载到线性内存中。
+* **Type Section (类型段)** ：定义所有使用到的函数签名（参数与返回值的类型）。
+* **Import Section (导入段)** ：JavaScript环境提供给Wasm的函数和内存的列表。例如，如果从C++调用 `console.log`，就会在这里声明。
+* **Code Section (代码段)** ：存储实际的字节码指令（如 `i32.add`、`call`、`loop` 等）。因为是基于栈的虚拟机，所以采用将操作数压入栈然后调用运算指令的形式。
+* **Data Section (数据段)** ：将在C++或Rust代码中定义的静态字符串字面量或初始化数据，从该段加载到线性内存中。
 
 浏览器的Wasm引擎通过对这些段进行流式编译（在下载的同时并行编译为机器码），实现了启动速度的极大提升。
 
@@ -291,12 +291,12 @@ graph TD
 
 在生成WebAssembly时，选择C++还是Rust很大程度上取决于项目的要求和现有的资产。
 
-**应该选择 C++ / Emscripten 的情况**：
+**应该选择 C++ / Emscripten 的情况** ：
 * 想要将现有的C/C++库（如FFmpeg、OpenCV、SQLite等）移植到浏览器中时。
 * 想要直接利用将OpenGL等图形API转换为WebGL的功能（Emscripten的GL仿真层）的游戏移植项目。
 * 需要文件系统仿真（MEMFS）等虚拟化的OS功能时。
 
-**应该选择 Rust / wasm-pack 的情况**：
+**应该选择 Rust / wasm-pack 的情况** ：
 * 作为Web应用程序的一部分，从零开始全新开发高性能模块时。
 * 想要与JavaScript生态系统（NPM模块和TypeScript）进行强类型、安全的整合时。
 * 追求相对较小的二进制大小和安全的内存管理（Rust的所有权模型）时。
@@ -309,3 +309,4 @@ WebAssembly是一项创新技术，用于在浏览器中执行计算量大的任
 在诸如曼德博集合等计算中，与单独使用JavaScript相比，Wasm有望实现数倍至数十倍的速度提升。然而，如果不正确理解Wasm与JS之间内存边界的机制并设计出避免不必要内存复制的方案，就无法发挥出其真正的性能。
 
 希望通过本文，您能深入理解从C++和Rust导出Wasm并在浏览器中运行的一系列流程及其背后的架构。在下一代Web应用的开发中，WebAssembly无疑将成为一件强大的武器。
+

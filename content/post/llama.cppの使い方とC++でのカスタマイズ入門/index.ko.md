@@ -10,7 +10,7 @@ tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: 'llama.cpp의 기본부터 C++를 활용한 고급 커스터마이징, Transformer의 수학적 배경, ggml 아키텍처 해설까지 총망라한 완전 가이드.'
 ---
 
-최근 대규모 언어 모델(LLM)의 진화는 매우 빠르며, 그 응용 범위는 나날이 확대되고 있습니다. 하지만 수십억, 수백억 개의 매개변수를 가진 모델을 로컬 환경에서 구동하려면 보통 방대한 VRAM을 갖춘 하이엔드 GPU가 필요합니다. 이러한 '하드웨어의 벽'을 허물고, 일반적인 PC나 Mac, 심지어 Raspberry Pi와 같은 기기 위에서 LLM의 실용적인 추론을 가능하게 한 것이 바로 **llama.cpp**입니다.
+최근 대규모 언어 모델(LLM)의 진화는 매우 빠르며, 그 응용 범위는 나날이 확대되고 있습니다. 하지만 수십억, 수백억 개의 매개변수를 가진 모델을 로컬 환경에서 구동하려면 보통 방대한 VRAM을 갖춘 하이엔드 GPU가 필요합니다. 이러한 '하드웨어의 벽'을 허물고, 일반적인 PC나 Mac, 심지어 Raspberry Pi와 같은 기기 위에서 LLM의 실용적인 추론을 가능하게 한 것이 바로 **llama.cpp** 입니다.
 
 본 기사에서는 단순한 명령줄 도구의 사용법에 그치지 않고, 그 기반 기술인 `ggml`의 아키텍처, Transformer 및 양자화(Quantization)의 수학적 배경, 그리고 C++ API를 이용하여 독자적인 애플리케이션에 LLM을 통합하고 커스터마이징하는 방법까지 엔지니어를 위해 매우 상세하게 해설합니다.
 
@@ -20,9 +20,9 @@ description: 'llama.cpp의 기본부터 C++를 활용한 고급 커스터마이�
 
 `llama.cpp`는 Georgi Gerganov 씨가 개발한, C/C++로 작성된 경량 LLM 추론 엔진입니다. 원래는 Meta의 LLaMA 모델을 Apple Silicon(M1/M2 Mac) 위에서 고속으로 동작시키는 것을 목적으로 탄생했지만, 현재는 다양한 아키텍처와 모델을 지원하고 있습니다.
 
-가장 큰 특징은 **외부 의존성을 가지지 않는 순수한 C/C++ 구현**이라는 점입니다. Python이나 PyTorch 등의 거대한 에코시스템을 필요로 하지 않고, 단일 실행 파일로 컴파일할 수 있기 때문에 배포가 매우 쉽습니다.
+가장 큰 특징은 **외부 의존성을 가지지 않는 순수한 C/C++ 구현** 이라는 점입니다. Python이나 PyTorch 등의 거대한 에코시스템을 필요로 하지 않고, 단일 실행 파일로 컴파일할 수 있기 때문에 배포가 매우 쉽습니다.
 
-이 `llama.cpp`의 심장부 역할을 하는 것이 텐서 연산 라이브러리 **ggml**입니다. ggml은 머신러닝에서의 행렬 연산을 CPU(및 일부 GPU) 상에서 극한까지 최적화하기 위해 처음부터 설계되었습니다.
+이 `llama.cpp`의 심장부 역할을 하는 것이 텐서 연산 라이브러리 **ggml** 입니다. ggml은 머신러닝에서의 행렬 연산을 CPU(및 일부 GPU) 상에서 극한까지 최적화하기 위해 처음부터 설계되었습니다.
 
 ### 1.1 llama.cpp는 왜 빠른가?
 
@@ -52,7 +52,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-llama.cpp의 추론 루프에서 병목 현상이 발생하는 부분은 이 거대한 행렬 $W_Q, W_K, W_V$나 피드 포워드 네트워크(FFN)의 가중치 행렬과 벡터 $X$(생성 단계에서는 1토큰씩 처리하므로 $N=1$)의 곱, 즉 **GEMV (General Matrix-Vector Multiplication)**입니다.
+llama.cpp의 추론 루프에서 병목 현상이 발생하는 부분은 이 거대한 행렬 $W_Q, W_K, W_V$나 피드 포워드 네트워크(FFN)의 가중치 행렬과 벡터 $X$(생성 단계에서는 1토큰씩 처리하므로 $N=1$)의 곱, 즉 **GEMV (General Matrix-Vector Multiplication)** 입니다.
 
 ### 2.2 양자화(Quantization)의 수학적 기초
 
@@ -76,7 +76,7 @@ $$
 y = \sum_{i=1}^{B} w_i x_i \approx \Delta \Delta_x \sum_{i=1}^{B} q_i q_{x, i}
 $$
 
-이 $\sum q_i q_{x, i}$ 부분은 **순수한 정수 연산**이 되며, SIMD 명령을 사용하여 매우 빠르게 병렬 계산할 수 있습니다. 이것이 llama.cpp가 CPU 상에서 경이로운 속도를 내는 수학적인 트릭입니다.
+이 $\sum q_i q_{x, i}$ 부분은 **순수한 정수 연산** 이 되며, SIMD 명령을 사용하여 매우 빠르게 병렬 계산할 수 있습니다. 이것이 llama.cpp가 CPU 상에서 경이로운 속도를 내는 수학적인 트릭입니다.
 
 ---
 
@@ -337,7 +337,7 @@ LLM은 텍스트를 직접 이해하는 것이 아니라, 정수 ID(토큰)의 �
 
 ## 6. 고급 커스터마이징 사례: C++에 의한 로짓 조작 및 페널티 제어
 
-단순한 텍스트 생성에 그치지 않고, 특정 포맷(예: JSON만)의 출력을 강제하거나, 특정한 금지 단어를 출력하지 않도록 제어하는 경우 샘플링 전의 **로짓(Logits)**을 C++ 쪽에서 직접 조작합니다.
+단순한 텍스트 생성에 그치지 않고, 특정 포맷(예: JSON만)의 출력을 강제하거나, 특정한 금지 단어를 출력하지 않도록 제어하는 경우 샘플링 전의 **로짓(Logits)** 을 C++ 쪽에서 직접 조작합니다.
 
 모델이 각 토큰을 출력하기 직전의 원시 점수(확률로 변환되기 전의 값) 배열을 가져올 수 있습니다.
 
@@ -355,7 +355,7 @@ for (llama_token bad_tok : forbidden_tokens) {
 }
 ```
 
-이처럼 C++ API를 직접 다룸으로써 LangChain이나 Python 경유로는 실현하기 어렵거나 오버헤드가 커지는 **'추론 사이클마다 마이크로 밀리초 단위의 개입'**이 가능해집니다.
+이처럼 C++ API를 직접 다룸으로써 LangChain이나 Python 경유로는 실현하기 어렵거나 오버헤드가 커지는 **'추론 사이클마다 마이크로 밀리초 단위의 개입'** 이 가능해집니다.
 
 ---
 
@@ -383,4 +383,5 @@ Python 생태계는 프로토타이핑에는 매우 편리하지만, 엣지 디�
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+
 

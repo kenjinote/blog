@@ -161,7 +161,7 @@ Auf die Frage „Warum kann es niemand beweisen?“ bewies der geniale britische
 Dies ist eine erschreckende Tatsache, die das Fundament der Informatik betrifft: Je nach Regel „existiert im Prinzip kein Algorithmus, um zu entscheiden, ob es 1 erreicht oder nicht“. Es ist sogar möglich, dass das Collatz-Problem selbst eine im Rahmen der modernen Mathematik unbeweisbare Aussage ist.
 
 Doch 2019 gab es endlich einen großen Durchbruch.
-**Terence Tao**, einer der größten Mathematikgenies der modernen Zeit, bewies mit Methoden der partiellen Differentialgleichungen und der Wahrscheinlichkeitstheorie, dass „(obwohl man nicht streng sagen kann, dass es für alle gilt) **die Collatz-Folge bei fast allen Startwerten letztendlich einen viel kleineren Wert als die ursprüngliche Zahl erreicht**“.
+**Terence Tao**, einer der größten Mathematikgenies der modernen Zeit, bewies mit Methoden der partiellen Differentialgleichungen und der Wahrscheinlichkeitstheorie, dass „(obwohl man nicht streng sagen kann, dass es für alle gilt) **die Collatz-Folge bei fast allen Startwerten letztendlich einen viel kleineren Wert als die ursprüngliche Zahl erreicht** “.
 
 Dies ist zwar kein vollständiger Beweis dafür, dass „alles zu 1 wird“, aber es sorgte in der mathematischen Welt für Aufsehen als der **historische Meilenstein, an dem die Menschheit der Wahrheit des Collatz-Problems am nächsten kam**.
 
@@ -245,3 +245,4 @@ Irgendwann werde ich auch über die Riemannsche Vermutung, Primzahlen und vieles
 📮 Ende!
 
 ---
+

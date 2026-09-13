@@ -502,7 +502,7 @@ Le tableau `comp` stocke l'ID de la SCC à laquelle appartient chaque sommet. Ce
 ## 7. Conclusion et conseils d'apprentissage
 
 Dans cet article, nous avons passé en revue les algorithmes de graphes fréquemment rencontrés en programmation compétitive.
-Les clés pour s'améliorer sur les problèmes de graphes sont : **« implémenter l'algorithme à plusieurs reprises jusqu'à ce que cela devienne un réflexe »** et **« s'entraîner à réfléchir à quel type de graphe un problème peut être réduit (que représentent les sommets, que représentent les arêtes) »**.
+Les clés pour s'améliorer sur les problèmes de graphes sont : **« implémenter l'algorithme à plusieurs reprises jusqu'à ce que cela devienne un réflexe » ** et ** « s'entraîner à réfléchir à quel type de graphe un problème peut être réduit (que représentent les sommets, que représentent les arêtes) »**.
 
 1. Tout d'abord, soyez capable d'écrire rapidement et sans erreur les algorithmes DFS / BFS.
 2. Ensuite, apprenez à coder de mémoire l'algorithme de Dijkstra et l'algorithme de Kruskal (indispensable pour les rangs marron-vert sur AtCoder).
@@ -511,4 +511,5 @@ Les clés pour s'améliorer sur les problèmes de graphes sont : **« implément
 Nous vous recommandons fortement de les ajouter sous forme de snippets dans votre propre bibliothèque (en utilisant des outils de snippets ou en les sauvegardant sur votre dépôt GitHub) afin d'être prêt à les utiliser sans hésitation lors des compétitions réelles.
 
 Les algorithmes de graphes en programmation compétitive constituent le domaine où l'on ressent le plus la beauté et la puissance de l'algorithmique. N'hésitez pas à recopier le code de cet article et à vous mesurer à d'anciens problèmes sur les juges en ligne (Online Judges) !
+
 

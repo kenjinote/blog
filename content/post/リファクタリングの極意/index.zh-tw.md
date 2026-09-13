@@ -211,7 +211,7 @@ public:
 
 ## 6. 記憶體管理的現代化與 RAII 的精髓
 
-C++98/03 時代的程式碼，`new` 和 `delete` 散佈在程式碼的各個角落，成為記憶體洩漏 (Memory Leak) 和懸空指標 (Dangling Pointers) 的溫床。在 Modern C++ (C++11 之後) 中，**所有權 (Ownership)** 的概念在語言層面受到支援，使用智慧型指標 (Smart Pointers) 進行安全的資源管理成為了標準。
+C++98/03 時代的程式碼，`new` 和 `delete` 散佈在程式碼的各個角落，成為記憶體洩漏 (Memory Leak) 和懸空指標 (Dangling Pointers) 的溫床。在 Modern C++ (C++11 之後) 中， **所有權 (Ownership)** 的概念在語言層面受到支援，使用智慧型指標 (Smart Pointers) 進行安全的資源管理成為了標準。
 
 ### RAII (Resource Acquisition Is Initialization)
 RAII 是 C++ 中最重要的慣用語 (Idiom)。它將資源的獲取與物件的初始化（建構函式）結合，並將資源的釋放與物件的銷毀（解構函式）結合，確保在離開作用域時能確實地釋放資源。
@@ -334,4 +334,5 @@ constexpr double area = calculateCircleArea(10.0);
 5. **活用 Modern C++ 的功能，讓編譯器為您工作**
 
 抱持著「童子軍規則（離開營地時要比來的時候更乾淨）」的精神，在日常的開發任務中一點一滴地，但確實地持續改善程式碼，這才是重構真正的秘訣。
+
 

@@ -61,7 +61,7 @@ $$ M_{FP16} = \frac{8 \times 16}{8} = 16 \text{ GB} $$
 
 為此，「量化（Quantization）」技術應運而生。透過將參數的精度從 FP16 降低至 8-bit、4-bit，甚至在極端情況下降至 2-bit，可以在將模型效能下降降至最低的同時，大幅減少所需的記憶體量。
 
-目前最普及的格式是由 Georgi Gerganov（llama.cpp 的開發者）所構思的 **GGUF (GPT-Generated Unified Format)**。GGUF 是一種為了在 CPU 與 GPU 上進行高效推論的二進制格式，特別值得一提的是，它與 Mac (Apple Silicon) 的統一記憶體（Unified Memory）架構相容性極佳。
+目前最普及的格式是由 Georgi Gerganov（llama.cpp 的開發者）所構思的 **GGUF (GPT-Generated Unified Format)** 。GGUF 是一種為了在 CPU 與 GPU 上進行高效推論的二進制格式，特別值得一提的是，它與 Mac (Apple Silicon) 的統一記憶體（Unified Memory）架構相容性極佳。
 
 如果將 8B 模型進行 4-bit（例如：Q4_K_M）量化，記憶體的計算如下：
 
@@ -85,8 +85,8 @@ $$ M_{4bit} = \frac{8 \times 4.5}{8} = 4.5 \text{ GB} $$
 
 Llama 3 雖然採用了標準的 Transformer 架構，但比起上一代（Llama 2）加入了許多技術上的改良。特別值得注意的亮點如下：
 
-- **全面採用 GQA (Grouped Query Attention)**：在 Llama 2 中，GQA 僅被應用於大型模型中，但在 Llama 3 中，即使是像 8B 這樣的小型模型也採用了 GQA。這使得 KV Cache 的記憶體使用量大幅減少，即使在長上下文中也能進行高速推論。
-- **詞彙表大小擴充**：分詞器（基於 Tiktoken）的詞彙表大小擴充至 128,000 個 Token，多語言與程式碼的壓縮效率獲得了顯著的提升。日語處理效率相較於 Llama 2 也有數倍的改善。
+- **全面採用 GQA (Grouped Query Attention)** ：在 Llama 2 中，GQA 僅被應用於大型模型中，但在 Llama 3 中，即使是像 8B 這樣的小型模型也採用了 GQA。這使得 KV Cache 的記憶體使用量大幅減少，即使在長上下文中也能進行高速推論。
+- **詞彙表大小擴充** ：分詞器（基於 Tiktoken）的詞彙表大小擴充至 128,000 個 Token，多語言與程式碼的壓縮效率獲得了顯著的提升。日語處理效率相較於 Llama 2 也有數倍的改善。
 
 ```mermaid
 graph TD
@@ -171,7 +171,7 @@ $$ \text{Complexity}_{SWA} = O(N \times W) $$
 
 ### 多語言支援與程式編寫能力
 
-Qwen 2.5 在龐大的多語言語料庫上進行了預訓練，除了英文與中文外，在**日語自然輸出方面獲得了極高的評價**。對於日本用戶來說，「不會產生不自然的翻譯腔日文」是其最大的優勢。
+Qwen 2.5 在龐大的多語言語料庫上進行了預訓練，除了英文與中文外，在 **日語自然輸出方面獲得了極高的評價** 。對於日本用戶來說，「不會產生不自然的翻譯腔日文」是其最大的優勢。
 此外，還有專注於程式編寫能力的「Qwen 2.5 Coder」模型，將其與 VSCode 擴充套件（如 Continue 等）結合，作為本地版 GitHub Copilot 替代方案的使用案例正在急遽增加。
 
 ### 架構與使用案例
@@ -190,7 +190,7 @@ Qwen 2.5 在龐大的多語言語料庫上進行了預訓練，除了英文與�
 ### SLM（小型語言模型）的革命
 
 近年來的 LLM 開發主流是「無論如何都要增加參數數量與數據量」的暴力美學，但 Microsoft 證明了「只要將輸入模型的數據品質（高品質的教科書數據或合成數據）提升到極致，即便參數數量很少，也能擁有媲美 GPT-3.5 等級的智慧」。
-Phi-3 並非 LLM（Large Language Model），而是被稱為 **SLM（Small Language Model）**。
+Phi-3 並非 LLM（Large Language Model），而是被稱為 **SLM（Small Language Model）** 。
 
 ```mermaid
 graph TD
@@ -281,5 +281,6 @@ ollama run llama3
 
 開源 LLM 的進化速度非常驚人，幾乎每隔幾個月就會發表顛覆以往常識的突破。未來，隨著量化技術的進一步提升與新架構的出現，或許光靠本地環境就能超越雲端 AI 的日子也不遠了。
 請務必配合您自身的硬體環境下載最合適的模型，親身體驗本地 AI 所帶來的壓倒性自由與可能性。
+
 
 

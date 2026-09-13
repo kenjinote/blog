@@ -21,11 +21,11 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 在为C++项目引入CI/CD时，面临的主要挑战如下：
 
-1. **平台的多样性**：不同操作系统（如Windows、Linux、macOS）的API（Windows API、POSIX等）各不相同。即使在开发者的本地环境（例如macOS）中能正常运行，在Linux或Windows上出现编译错误也是家常便饭。
-2. **编译器的差异**：Microsoft Visual C++ (MSVC)、GNU Compiler Collection (GCC)、Clang等主流编译器，在对C++标准（C++17、C++20、C++23）的实现程度、解释以及警告的严格程度上都存在差异。
-3. **构建时间**：在大型C++项目中，构建花费数十分钟甚至数小时的情况并不罕见。在CI环境中，需要在有限的计算资源下，寻求缓存策略和并行化处理以高效地进行构建。
-4. **依赖管理**：C++不存在像npm或pip那样绝对标准的包管理器。需要使用vcpkg、Conan或CMake的 `FetchContent` 等工具，在CI环境上每次都能正确解析依赖库。
-5. **内存管理与未定义行为**：由于伴随着指针操作和手动内存管理，除了单纯的逻辑测试外，还需要自动化检测内存泄漏和未定义行为（Undefined Behavior）。
+1. **平台的多样性** ：不同操作系统（如Windows、Linux、macOS）的API（Windows API、POSIX等）各不相同。即使在开发者的本地环境（例如macOS）中能正常运行，在Linux或Windows上出现编译错误也是家常便饭。
+2. **编译器的差异** ：Microsoft Visual C++ (MSVC)、GNU Compiler Collection (GCC)、Clang等主流编译器，在对C++标准（C++17、C++20、C++23）的实现程度、解释以及警告的严格程度上都存在差异。
+3. **构建时间** ：在大型C++项目中，构建花费数十分钟甚至数小时的情况并不罕见。在CI环境中，需要在有限的计算资源下，寻求缓存策略和并行化处理以高效地进行构建。
+4. **依赖管理** ：C++不存在像npm或pip那样绝对标准的包管理器。需要使用vcpkg、Conan或CMake的 `FetchContent` 等工具，在CI环境上每次都能正确解析依赖库。
+5. **内存管理与未定义行为** ：由于伴随着指针操作和手动内存管理，除了单纯的逻辑测试外，还需要自动化检测内存泄漏和未定义行为（Undefined Behavior）。
 
 为了解决这些问题，能够按需配置各种操作系统虚拟机，并通过代码定义复杂工作流（Configuration as Code）的GitHub Actions就成为了最佳解决方案。
 
@@ -140,7 +140,7 @@ include(CPack)
 **要点：**
 - `CMAKE_CXX_EXTENSIONS OFF`：防止依赖如GNU扩展等非标准功能，保证跨平台性。
 - **严格警告 (`-Werror` / `/WX`)**：在CI环境中将编译器警告视为错误，强制保持高质量的代码。
-- **GNUInstallDirs**：自动解析各个操作系统的标准安装路径（如 `/usr/local/bin` 或 `C:\Program Files`）。
+- **GNUInstallDirs** ：自动解析各个操作系统的标准安装路径（如 `/usr/local/bin` 或 `C:\Program Files`）。
 
 ## 4. GitHub Actions基础与矩阵策略
 
@@ -444,9 +444,9 @@ jobs:
 
 这里省略详细讲解，但在实际运维中，建议将更多的质量保证工具集成到流水线中：
 
-1. **强制执行 Clang-Format**：为减轻代码审查的负担，将 `clang-format` 的代码风格检查集成到CI中，如果违反了格式化规则，则使流水线失败。
-2. **静态分析 (Clang-Tidy)**：为了检测单靠编译器警告无法防备的潜在错误，或低效代码（如不必要的复制等），将 `clang-tidy` 集成到CMake中，并在CI上运行。
-3. **利用 vcpkg / Conan 缓存**：如果使用了大量第三方库，构建依赖关系会花费大量时间。利用GitHub Actions的 `actions/cache`，通过保留vcpkg已安装目录或Conan缓存，可以大幅度缩短构建时间。
+1. **强制执行 Clang-Format** ：为减轻代码审查的负担，将 `clang-format` 的代码风格检查集成到CI中，如果违反了格式化规则，则使流水线失败。
+2. **静态分析 (Clang-Tidy)** ：为了检测单靠编译器警告无法防备的潜在错误，或低效代码（如不必要的复制等），将 `clang-tidy` 集成到CMake中，并在CI上运行。
+3. **利用 vcpkg / Conan 缓存** ：如果使用了大量第三方库，构建依赖关系会花费大量时间。利用GitHub Actions的 `actions/cache`，通过保留vcpkg已安装目录或Conan缓存，可以大幅度缩短构建时间。
 
 ## 结论
 
@@ -455,3 +455,4 @@ jobs:
 本文所讲解的基于矩阵策略的跨平台验证、基于Sanitizer的运行时Bug检测、覆盖率测量，以及自动部署到GitHub Releases，都是在商业级开源项目中被广泛采用的最佳实践。
 
 自动化的CI/CD流水线是最小化开发者在“寻找Bug”和“手动构建/发布”上所耗费的时间，使其能够专注于本质的创造性编码活动的最强武器。请务必也引入到您的C++项目中，实现敏捷且充满安心感的开发生活。
+

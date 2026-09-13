@@ -17,7 +17,7 @@ tags: ["C++", "CMake", "Build System", "Cross-Platform"]
 
 ## 1. CMake 是什麼？（中介編譯系統的概念）
 
-CMake 本身並不是直接編譯原始碼的工具。CMake 是一個「產生編譯系統的系統」，也就是 **中介編譯系統 (Meta-Build System)**。
+CMake 本身並不是直接編譯原始碼的工具。CMake 是一個「產生編譯系統的系統」，也就是 **中介編譯系統 (Meta-Build System)** 。
 
 CMake 的主要角色是讀取不依賴於平台或編譯器的抽象設定檔（`CMakeLists.txt`），並自動產生最適合各環境的原生編譯腳本（例如：Linux 的 `Makefile`、Windows 的 Visual Studio `.sln` 專案檔，或是高速的 `build.ninja`）。
 
@@ -45,7 +45,7 @@ graph TD
 
 CMake 3.0 以後的寫法被稱為「Modern CMake」，其設計理念與之前的版本（Legacy CMake）有著根本上的差異。在 Legacy CMake 中，主流作法是以目錄為單位改寫全域變數（例如使用 `include_directories()` 或 `link_libraries()`），但這很容易引發設定意外波及其他模組的嚴重副作用。
 
-在 Modern CMake 中，所有的東西都會被當作 **目標 (Target)** 與 **屬性 (Property)** 來處理。這類似於物件導向程式設計中類別與成員變數的關係。
+在 Modern CMake 中，所有的東西都會被當作 **目標 (Target)** 與 ** 屬性 (Property)** 來處理。這類似於物件導向程式設計中類別與成員變數的關係。
 
 - **目標 (Target)**: 執行檔（Executable）或函式庫（Library）。
 - **屬性 (Property)**: 編譯該目標所需的原始碼檔案、包含目錄 (include directory)、編譯選項、連結的其他函式庫等。
@@ -80,9 +80,9 @@ add_executable(MyAwesomeApp main.cpp)
 
 這些修飾詞是用來控制目標的屬性（包含路徑或依賴函式庫）是否「僅為自身的編譯所需？」或是「是否要傳遞給依賴於自己的其他目標？」。
 
-1. **`PRIVATE`**: 僅為該目標自身的編譯所需。**不會**傳遞給依賴它的目標。
-2. **`INTERFACE`**: 該目標自身的編譯不需要，但**會**傳遞給依賴它的目標（用於 Header-only 函式庫等）。
-3. **`PUBLIC`**: 該目標自身的編譯需要，且**會**傳遞給依賴它的目標（`PRIVATE` + `INTERFACE`）。
+1. **`PRIVATE`**: 僅為該目標自身的編譯所需。 ** 不會**傳遞給依賴它的目標。
+2. **`INTERFACE`**: 該目標自身的編譯不需要，但 ** 會**傳遞給依賴它的目標（用於 Header-only 函式庫等）。
+3. **`PUBLIC`**: 該目標自身的編譯需要，且 ** 會**傳遞給依賴它的目標（`PRIVATE` + `INTERFACE`）。
 
 讓我們透過下圖來視覺化依賴關係的傳遞（Usage Requirements 的傳遞）。
 
@@ -133,7 +133,7 @@ target_link_libraries(MyLib PRIVATE nlohmann_json::nlohmann_json)
 
 ## 4. 原始碼外編譯 (Out-of-source Build)
 
-在使用 CMake 時，務必遵守的最佳實踐就是 **原始碼外編譯 (Out-of-source Build)**。
+在使用 CMake 時，務必遵守的最佳實踐就是 **原始碼外編譯 (Out-of-source Build)** 。
 這是一種將編譯產物（目的檔或執行檔）與放置原始碼的目錄（原始碼樹）完全分離，輸出到另一個專用目錄（通常為 `build/`）中進行編譯的手法。
 
 ```mermaid
@@ -208,7 +208,7 @@ target_link_libraries(MyTests PRIVATE gtest_main)
 
 ### 5.3. 與 vcpkg 整合
 
-只要使用微軟主導的 C++ 專用套件管理員 **vcpkg**，就能輕鬆導入數以千計的函式庫。vcpkg 的設計可與 CMake 無縫整合。
+只要使用微軟主導的 C++ 專用套件管理員 **vcpkg** ，就能輕鬆導入數以千計的函式庫。vcpkg 的設計可與 CMake 無縫整合。
 
 在執行 CMake 時，只需指定 vcpkg 的 Toolchain 檔案，`find_package` 就會自動去尋找 vcpkg 內的函式庫。
 
@@ -222,7 +222,7 @@ cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=/path/to/vcpkg/scripts/buildsystems/v
 
 為了在 Windows (MSVC)、Linux (GCC/Clang)、macOS (Apple Clang) 任何環境下都能順利編譯，必須適當地設定各編譯器專屬的旗標。
 
-透過使用 CMake 的 **產生器表達式 (Generator Expressions)**，就能以宣告式來描述「如果編譯器是 MSVC 就用這個旗標，否則就用那個旗標」這類的條件分支。產生器表達式使用 `$<...>` 語法，並在產生編譯系統時（Generate 階段）進行求值。
+透過使用 CMake 的 **產生器表達式 (Generator Expressions)** ，就能以宣告式來描述「如果編譯器是 MSVC 就用這個旗標，否則就用那個旗標」這類的條件分支。產生器表達式使用 `$<...>` 語法，並在產生編譯系統時（Generate 階段）進行求值。
 
 ```cmake
 # 在所有平台開啟最高等級警告的範例
@@ -361,7 +361,7 @@ target_link_libraries(ComplexApp
 讓我們來回顧一下重點。
 
 1. **理解中介編譯系統**: CMake 是產生編譯腳本的工具。
-2. **貫徹 Modern CMake**: 不使用變數，而是以 `add_executable`、`target_link_libraries`、`target_include_directories` 等**目標導向**的方式來封裝設定。
+2. **貫徹 Modern CMake**: 不使用變數，而是以 `add_executable`、`target_link_libraries`、`target_include_directories` 等 **目標導向** 的方式來封裝設定。
 3. **適當的作用域設定**: 正確使用 `PUBLIC`、`PRIVATE`、`INTERFACE`，控制依賴關係的波及範圍。
 4. **貫徹原始碼外編譯**: 在 `build/` 目錄內進行編譯，不弄髒原始碼樹。
 5. **第三方工具整合**: 善用 `FetchContent` 或 `vcpkg`，自動化解決依賴函式庫的問題。
@@ -369,5 +369,6 @@ target_link_libraries(ComplexApp
 7. **數學方法**: 意識到阿姆達爾定律，減少依賴關係以提升平行編譯的效率。
 
 雖然一開始會覺得 CMake 很難懂，但只要掌握了目標與屬性的概念，無論是多麼複雜巨大的 C++ 專案，都能維持井然有序的編譯環境。請務必參考本文，用最新的 Modern CMake 寫法來建構您的 C++ 開發環境吧。
+
 
 

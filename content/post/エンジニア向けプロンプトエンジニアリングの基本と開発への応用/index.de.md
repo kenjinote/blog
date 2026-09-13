@@ -139,7 +139,7 @@ Der Durchbruch bezüglich der Denkfähigkeit von LLMs war **Chain-of-Thought (Co
 
 CoT ist eine Methode, bei der der mittlere Denkprozess verbalisiert wird, bevor die endgültige Antwort ausgegeben wird. Wenn das Modell die Situation Schritt für Schritt analysiert, wird der Kontext mit jedem generierten Token reicher, was die Genauigkeit der endgültigen Schlussfolgerung drastisch verbessert.
 
-Die einfachste und wirkungsvollste Technik ist **Zero-Shot CoT**, bei der einfach das Zauberwort „**Lass uns Schritt für Schritt denken (Let's think step by step)**“ am Ende des Prompts hinzugefügt wird.
+Die einfachste und wirkungsvollste Technik ist **Zero-Shot CoT**, bei der einfach das Zauberwort „ **Lass uns Schritt für Schritt denken (Let's think step by step)** “ am Ende des Prompts hinzugefügt wird.
 
 In der Entwicklung wird dieses Konzept angewendet und der Prompt folgendermaßen strukturiert:
 
@@ -387,4 +387,5 @@ Indem Sie diese Prinzipien meistern, werden Prompts nicht mehr nur Zeichenfolgen
 
 ---
 *Generated using Prompt Engineering Techniques.*
+
 

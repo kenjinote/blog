@@ -11,7 +11,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 # 들어가며: 정적 사이트 생성기 Hugo와 Tailwind CSS의 강력한 시너지
 
-현대 웹 프론트엔드 개발에서 성능과 개발자 경험(DX: Developer Experience)의 양립은 모든 프로젝트에서 가장 중요한 과제 중 하나입니다. 정적 사이트 생성기(SSG) 중에서도 세계 최고 수준의 빌드 속도를 자랑하는 **Hugo**와, 유틸리티 퍼스트라는 혁신적인 패러다임을 도입한 **Tailwind CSS**를 결합하는 것은 이 과제에 대한 하나의 궁극적인 해답이라고 할 수 있습니다.
+현대 웹 프론트엔드 개발에서 성능과 개발자 경험(DX: Developer Experience)의 양립은 모든 프로젝트에서 가장 중요한 과제 중 하나입니다. 정적 사이트 생성기(SSG) 중에서도 세계 최고 수준의 빌드 속도를 자랑하는 **Hugo** 와, 유틸리티 퍼스트라는 혁신적인 패러다임을 도입한 **Tailwind CSS** 를 결합하는 것은 이 과제에 대한 하나의 궁극적인 해답이라고 할 수 있습니다.
 
 Hugo는 Go 언어로 작성되어 있어, 수천 페이지의 사이트라도 단 몇 초 혹은 밀리초 단위로 빌드를 완료하는 경이로운 성능을 가지고 있습니다. 한편, Tailwind CSS는 사전에 정의된 무수히 많은 유틸리티 클래스(`flex`, `text-center`, `mt-4` 등)를 HTML에 직접 작성함으로써, CSS 파일과 HTML 파일 사이를 오가는 컨텍스트 스위칭을 없애고 디자인 이터레이션을 가속화합니다.
 
@@ -76,7 +76,7 @@ Tailwind CSS는 이러한 문제들을 '유틸리티 클래스의 조합'이라�
 
 ## 2. Hugo Pipes와 PostCSS의 아키텍처
 
-Hugo에 Tailwind CSS를 통합하기 위해서는 **Hugo Pipes**라고 불리는 에셋 처리 파이프라인을 이해할 필요가 있습니다. Hugo Pipes는 Sass/SCSS 컴파일, JavaScript 번들링 및 Minify, 그리고 이번에 사용하는 **PostCSS** 실행 등 에셋과 관련된 모든 처리를 Hugo 내부에서 완결시키는 강력한 기능입니다.
+Hugo에 Tailwind CSS를 통합하기 위해서는 **Hugo Pipes** 라고 불리는 에셋 처리 파이프라인을 이해할 필요가 있습니다. Hugo Pipes는 Sass/SCSS 컴파일, JavaScript 번들링 및 Minify, 그리고 이번에 사용하는 **PostCSS** 실행 등 에셋과 관련된 모든 처리를 Hugo 내부에서 완결시키는 강력한 기능입니다.
 
 PostCSS는 JavaScript 플러그인을 사용하여 CSS를 변환하기 위한 도구입니다. Tailwind CSS 자체도 실은 PostCSS의 플러그인으로서 동작하고 있습니다.
 
@@ -108,7 +108,7 @@ flowchart TD
 ### 필수 요건
 
 1. **Hugo Extended Version**:
-   일반적인 Hugo가 아닌, Sass/SCSS 처리 기능이나 네이티브 PostCSS 연동 기능이 포함된 **Extended 버전**이 필수입니다. 터미널에서 다음 명령어를 실행하여 버전 정보에 `extended`라는 문자열이 포함되어 있는지 확인해 주세요.
+   일반적인 Hugo가 아닌, Sass/SCSS 처리 기능이나 네이티브 PostCSS 연동 기능이 포함된 **Extended 버전** 이 필수입니다. 터미널에서 다음 명령어를 실행하여 버전 정보에 `extended`라는 문자열이 포함되어 있는지 확인해 주세요.
 
    ```bash
    hugo version
@@ -373,7 +373,7 @@ NODE_ENV=production hugo --minify --environment production
 
 ### Typography 플러그인을 활용한 Markdown 스타일링
 
-Hugo 같은 블로그나 문서 사이트에서는 Markdown에서 생성된 순수 HTML 요소(`<h1>`, `<p>`, `<ul>` 등)에 직접 클래스를 추가할 수 없습니다. 이러한 경우에 매우 유용한 것이 Tailwind 공식 **Typography 플러그인**입니다.
+Hugo 같은 블로그나 문서 사이트에서는 Markdown에서 생성된 순수 HTML 요소(`<h1>`, `<p>`, `<ul>` 등)에 직접 클래스를 추가할 수 없습니다. 이러한 경우에 매우 유용한 것이 Tailwind 공식 **Typography 플러그인** 입니다.
 
 1. 플러그인 설치
    ```bash
@@ -407,10 +407,11 @@ Hugo 같은 블로그나 문서 사이트에서는 Markdown에서 생성된 순�
 
 수고하셨습니다. 이것으로 Hugo의 초고속 정적 사이트 생성 엔진과 Tailwind CSS의 모던한 스타일링 기능, 그리고 PostCSS의 확장성을 갖춘 완벽한 웹 개발 에셋 파이프라인이 완성되었습니다.
 
-이 아키텍처의 뛰어난 점은 **"설정은 처음 한 번으로 끝난다"**는 것입니다. 한 번 파이프라인을 구축해 두면, 개발자는 CSS 파일을 열 필요 없이 직관적인 유틸리티 클래스를 HTML이나 Markdown 템플릿에 작성하는 것만으로 복잡한 UI를 놀라운 속도로 조립해 나갈 수 있습니다.
+이 아키텍처의 뛰어난 점은 **"설정은 처음 한 번으로 끝난다"** 는 것입니다. 한 번 파이프라인을 구축해 두면, 개발자는 CSS 파일을 열 필요 없이 직관적인 유틸리티 클래스를 HTML이나 Markdown 템플릿에 작성하는 것만으로 복잡한 UI를 놀라운 속도로 조립해 나갈 수 있습니다.
 
 또한 출력되는 CSS 크기가 항상 최소화되기 때문에 Core Web Vitals 점수 향상으로도 직결되며 SEO 관점에서도 매우 유리하게 작용합니다.
 
 Hugo와 Tailwind CSS의 조합은 개인 기술 블로그부터 대규모 기업 사이트까지 모든 프로젝트에서 '최고의 선택지' 중 하나로 계속 남을 것입니다. 부디 이 강력한 툴체인을 활용하여 쾌적한 웹 개발 라이프를 즐기시길 바랍니다!
+
 
 

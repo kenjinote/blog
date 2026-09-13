@@ -71,7 +71,7 @@ description: '「怎樣才是最密集的西瓜裝箱方式？」淺顯易懂地
 那麼，它真正被證明是什麼時候呢……
 
 竟然是 **1998年〜2005年左右** 。
-也就是說，**將近 400 年都沒有人能證明出來** 。太不可思議了。
+也就是說， **將近 400 年都沒有人能證明出來** 。太不可思議了。
 
 而且，證明它的是一位名叫 **托馬斯·黑爾斯（Thomas Hales）** 的美國數學家。
 
@@ -82,7 +82,7 @@ description: '「怎樣才是最密集的西瓜裝箱方式？」淺顯易懂地
 
 結果，「包含電腦在內，我已經嚴格驗證過了！」的證明（正式稱為「形式化證明」）是在 **2014 年** 完成的。
 
-也就是說，**直到證明克卜勒的直覺是正確的，花了超過 400 年** 。真是太浪漫了。
+也就是說， **直到證明克卜勒的直覺是正確的，花了超過 400 年** 。真是太浪漫了。
 
 ---
 
@@ -111,8 +111,8 @@ description: '「怎樣才是最密集的西瓜裝箱方式？」淺顯易懂地
 而最有趣的一點是，
 **「蔬果店憑直覺堆疊的方法，在數學上也是最強的」** 。
 
-也就是說，**人類的直覺很了不起** 。
-而且，**證明這一點可能需要花上 400 年** ，這真的是一個充滿浪漫色彩的故事呢。
+也就是說， **人類的直覺很了不起** 。
+而且， **證明這一點可能需要花上 400 年** ，這真的是一個充滿浪漫色彩的故事呢。
 
 ---
 
@@ -125,3 +125,4 @@ description: '「怎樣才是最密集的西瓜裝箱方式？」淺顯易懂地
 [PR]
 
 <div style="background:#fff;width:120px;height:215px;box-sizing:border-box;border:1px solid #ccc;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;"><div style="line-height:0;"><img src="https://static.jp.mercari.com/assets/img/common/jp/logo_horizontal.webp" width="105"></div><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:100px;background:#eee;" target="_blank"><img src="https://ambassador-system.mercari.com/v1/i?id=m71496725612&svc=m" style="line-height:0;width:100px;height:100px;object-fit:contain;"/></a><div style="padding:12px 0;width:100%;text-align:center;"><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:32px;background-color:#E32B36;border-radius:4px;line-height:14px;text-align:center;color:#fff;font-weight:bold;border:0;font-size:12px;display:inline-flex;justify-content:center;align-items:center;" target="_blank">今すぐ購入</a></div></div>
+

@@ -59,7 +59,7 @@ $$ M_{FP16} = \frac{8 \times 16}{8} = 16 \text{ GB} $$
 
 这时，“量化（Quantization）”技术就派上用场了。通过将参数的精度从FP16降低到8-bit、4-bit，甚至极端情况下的2-bit，可以将模型性能下降降至最低，同时大幅减少所需的内存。
 
-目前最普及的格式是由Georgi Gerganov（llama.cpp的开发者）设计的 **GGUF (GPT-Generated Unified Format)**。GGUF是一种能够同时在CPU和GPU上进行高效推理的二进制格式，特别值得一提的是，它与Mac (Apple Silicon)的统一内存（Unified Memory）架构非常契合。
+目前最普及的格式是由Georgi Gerganov（llama.cpp的开发者）设计的 **GGUF (GPT-Generated Unified Format)** 。GGUF是一种能够同时在CPU和GPU上进行高效推理的二进制格式，特别值得一提的是，它与Mac (Apple Silicon)的统一内存（Unified Memory）架构非常契合。
 
 如果将8B模型进行4-bit（例如：Q4_K_M）量化，内存计算如下：
 
@@ -168,7 +168,7 @@ $$ \text{Complexity}_{SWA} = O(N \times W) $$
 
 ### 多语言支持与编码能力
 
-Qwen 2.5使用了海量的多语言语料库进行预训练，除了英语和中文外，**在输出自然流畅的日语方面获得了极高的评价**。对于日本用户而言，“不会出现不自然的翻译腔日语”是最大的优势。
+Qwen 2.5使用了海量的多语言语料库进行预训练，除了英语和中文外， **在输出自然流畅的日语方面获得了极高的评价** 。对于日本用户而言，“不会出现不自然的翻译腔日语”是最大的优势。
 此外，还存在专注于编程能力的“Qwen 2.5 Coder”模型，越来越多的人将其与VSCode扩展插件（如Continue等）结合使用，作为本地GitHub Copilot的替代品。
 
 ### 架构与应用场景
@@ -187,7 +187,7 @@ Qwen 2.5使用了海量的多语言语料库进行预训练，除了英语和中
 ### SLM（小规模语言模型）的革命
 
 近年来的LLM开发主要是“一味增加参数量和数据量”的堆算力做法，但微软证明了：“如果将喂给模型的数据质量（高质量的教科书数据或合成数据）提升到极致，即使是很小的参数量也能拥有媲美GPT-3.5级别的智能。”
-Phi-3不被称为LLM（Large Language Model），而是被称为 **SLM（Small Language Model）**。
+Phi-3不被称为LLM（Large Language Model），而是被称为 **SLM（Small Language Model）** 。
 
 ```mermaid
 graph TD
@@ -278,5 +278,6 @@ ollama run llama3
 
 开源LLM的进化速度非常惊人，每隔几个月就会发布颠覆以往常识的突破性成果。在未来，随着量化技术的进一步提升和新架构的出现，仅凭本地环境就能超越云端AI的日子或许已近在咫尺。
 请务必根据您自身的硬件环境下载最合适的模型，去亲身体验本地AI所带来的压倒性的自由与无限可能。
+
 
 

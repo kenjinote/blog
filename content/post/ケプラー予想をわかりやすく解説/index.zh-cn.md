@@ -27,7 +27,7 @@ description: '“怎样把西瓜装得最紧凑？”通俗易懂地讲解由身
 
 首先，“开普勒猜想”中的“开普勒”是谁呢？
 
-他是德国天文学家、数学家 **约翰内斯·开普勒（Johannes Kepler）**。
+他是德国天文学家、数学家 **约翰内斯·开普勒（Johannes Kepler）** 。
 
 这个人非常了不起。
 例如，发现行星轨道是椭圆形的就是他。这在今天已经是常识，但在当时（1600年左右），连日心说都还没有被完全相信。
@@ -60,9 +60,9 @@ description: '“怎样把西瓜装得最紧凑？”通俗易懂地讲解由身
 
 就是这样。
 
-用数学的话来说，这被称为“**最密堆积问题（Sphere Packing Problem）**”，即寻找将球体最密集地填满空间的方法。
+用数学的话来说，这被称为“ **最密堆积问题（Sphere Packing Problem）** ”，即寻找将球体最密集地填满空间的方法。
 
-开普勒猜测，一种被称为“**面心立方结构（FCC）**”的排列方式（就像把西瓜堆成三角形那样）是效率最高的。
+开普勒猜测，一种被称为“ **面心立方结构（FCC）** ”的排列方式（就像把西瓜堆成三角形那样）是效率最高的。
 
 对于这个猜测，大家都觉得“确实看起来是这样～”，但在数学上要证明“绝对是这个最好！”却极其困难。
 
@@ -72,19 +72,19 @@ description: '“怎样把西瓜装得最紧凑？”通俗易懂地讲解由身
 
 那么，它实际上是什么时候被证明的呢……
 
-竟然是在 **1998年到2005年左右**。
-也就是说，**近400年里没有一个人能证明**。太不可思议了。
+竟然是在 **1998年到2005年左右** 。
+也就是说， **近400年里没有一个人能证明** 。太不可思议了。
 
-而且，证明它的是美国数学家 **托马斯·黑尔斯（Thomas Hales）**。
+而且，证明它的是美国数学家 **托马斯·黑尔斯（Thomas Hales）** 。
 
-他认为仅靠手工计算是不可能的，于是 **使用计算机进行了证明**。
+他认为仅靠手工计算是不可能的，于是 **使用计算机进行了证明** 。
 但是，由于那个证明过于复杂，导致了人类无法完全检查！这样的问题发生了。
 
 因此，在数学界也引发了“那么，用计算机证明的真的可以相信吗？”的巨大争议。
 
 最终，包含计算机在内的“经过了严格验证哦！”的证明（正式名称为“形式化证明”）在 **2014年** 才宣告完成。
 
-也就是说，从开普勒的直觉到被 **证明是正确的，花了400多年的时间**。太浪漫了。
+也就是说，从开普勒的直觉到被 **证明是正确的，花了400多年的时间** 。太浪漫了。
 
 ---
 
@@ -111,10 +111,10 @@ description: '“怎样把西瓜装得最紧凑？”通俗易懂地讲解由身
 * **在现实生活中也有非常多的应用！**
 
 最有趣的一点是，
-**“蔬果店老板凭感觉堆叠的方式，在数学上也是最强的”**。
+**“蔬果店老板凭感觉堆叠的方式，在数学上也是最强的”** 。
 
-也就是说，**人类的直觉真厉害**。
-而且，**证明这一点有时需要花上400年**，这真是一个非常浪漫的故事对吧。
+也就是说， **人类的直觉真厉害** 。
+而且， **证明这一点有时需要花上400年** ，这真是一个非常浪漫的故事对吧。
 
 ---
 
@@ -127,3 +127,4 @@ description: '“怎样把西瓜装得最紧凑？”通俗易懂地讲解由身
 [PR]
 
 <div style="background:#fff;width:120px;height:215px;box-sizing:border-box;border:1px solid #ccc;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;"><div style="line-height:0;"><img src="https://static.jp.mercari.com/assets/img/common/jp/logo_horizontal.webp" width="105"></div><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:100px;background:#eee;" target="_blank"><img src="https://ambassador-system.mercari.com/v1/i?id=m71496725612&svc=m" style="line-height:0;width:100px;height:100px;object-fit:contain;"/></a><div style="padding:12px 0;width:100%;text-align:center;"><a href="https://jp.mercari.com/item/m71496725612?afid=1916658352" style="width:100px;height:32px;background-color:#E32B36;border-radius:4px;line-height:14px;text-align:center;color:#fff;font-weight:bold;border:0;font-size:12px;display:inline-flex;justify-content:center;align-items:center;" target="_blank">立即购买</a></div></div>
+

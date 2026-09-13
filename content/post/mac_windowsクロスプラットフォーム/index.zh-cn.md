@@ -21,8 +21,8 @@ Mac（macOS）与Windows，乃至包含Linux（包括WSL）在内的跨多个操
 
 最常发生且最容易导致团队开发陷入混乱的原因之一就是“换行符（Line Endings）”问题。这是一个可以追溯到打字机时代的历史问题。
 
-*   **Windows**：使用回车（CR, `\r`, `0x0D`）和换行（LF, `\n`, `0x0A`）的组合 **CRLF** 作为标准的换行符。
-*   **macOS / Linux**：使用单独的换行 **LF** 作为标准的换行符。（※直到早期的Mac OS 9，使用的都是单独的CR，但Mac OS X之后变成了基于UNIX的系统，因此改为了LF）
+*   **Windows** ：使用回车（CR, `\r`, `0x0D`）和换行（LF, `\n`, `0x0A`）的组合 **CRLF** 作为标准的换行符。
+*   **macOS / Linux** ：使用单独的换行 **LF** 作为标准的换行符。（※直到早期的Mac OS 9，使用的都是单独的CR，但Mac OS X之后变成了基于UNIX的系统，因此改为了LF）
 
 由于这种差异，在Git仓库中共享源代码时，差异（diff）可能会波及整个文件。或者，原本要在Linux环境下运行的Shell脚本（`.sh`），因为在Windows中被编辑而变成了CRLF，在执行时 `\r` 会被解析为非法字符，从而引发 `\r: command not found` 等错误。
 
@@ -61,9 +61,9 @@ Git中有一个名为 `core.autocrlf` 的设置，但依赖它是危险的。因
 
 文件系统中对大小写的区分（Case Sensitivity）也是跨平台开发中最大的鬼门关之一。
 
-*   **macOS (APFS / HFS+)**：默认情况下 **不区分大小写（Case-Insensitive）**，但**会保留状态（Case-Preserving）**。也就是说，如果保存为 `File.txt`，显示时就是 `File.txt`，但即使程序中以 `file.txt` 访问也能读取到。
-*   **Windows (NTFS)**：与macOS一样，默认规范是 **不区分大小写（Case-Insensitive）** 且 **保留状态（Case-Preserving）**。
-*   **Linux / WSL (ext4等)**：**完全区分大小写（Case-Sensitive）**。`File.txt` 和 `file.txt` 可以作为完全不同的文件共存于同一个目录中。
+*   **macOS (APFS / HFS+)** ：默认情况下 **不区分大小写（Case-Insensitive） ** ，但**会保留状态（Case-Preserving）** 。也就是说，如果保存为 `File.txt`，显示时就是 `File.txt`，但即使程序中以 `file.txt` 访问也能读取到。
+*   **Windows (NTFS)** ：与macOS一样，默认规范是 **不区分大小写（Case-Insensitive） ** 且 ** 保留状态（Case-Preserving）**。
+*   **Linux / WSL (ext4等)** ： **完全区分大小写（Case-Sensitive）** 。`File.txt` 和 `file.txt` 可以作为完全不同的文件共存于同一个目录中。
 
 ### 经常发生的典型Bug
 
@@ -85,7 +85,7 @@ $$ T_{search}(N) = O(L \log N) $$
 
 $$ T_{insensitive\_search}(N) = O( (L \times C_{fold}) \log N ) $$
 
-最近的操作系统对此进行了高度的缓存优化，但底层行为的差异只能通过开发层面的规范来约束。**“所有的文件名和目录名统一使用小写字母加连字符（kebab-case）或下划线（snake_case）”** 是最安全的项目规范。
+最近的操作系统对此进行了高度的缓存优化，但底层行为的差异只能通过开发层面的规范来约束。 **“所有的文件名和目录名统一使用小写字母加连字符（kebab-case）或下划线（snake_case）”** 是最安全的项目规范。
 
 ---
 
@@ -93,14 +93,14 @@ $$ T_{insensitive\_search}(N) = O( (L \times C_{fold}) \log N ) $$
 
 表示目录层级的路径分隔符的处理方式，反映了操作系统之间根本性的差异。
 
-*   **Windows**：使用反斜杠 `\`（在日语环境的某些字体下会显示为日元符号 `¥`），并且存在盘符（如：`C:\`）和UNC路径（如：`\\Server\Share`）的概念。
-*   **macOS / Linux**：使用正斜杠 `/`，所有的文件系统都拥有一个从单一根目录 `/` 开始的层级结构（Single Root Hierarchy）。
+*   **Windows** ：使用反斜杠 `\`（在日语环境的某些字体下会显示为日元符号 `¥`），并且存在盘符（如：`C:\`）和UNC路径（如：`\\Server\Share`）的概念。
+*   **macOS / Linux** ：使用正斜杠 `/`，所有的文件系统都拥有一个从单一根目录 `/` 开始的层级结构（Single Root Hierarchy）。
 
 许多编程语言在Windows上也能将 `/` 很好地解析为文件分隔符（因为 Win32 API 本身在某些部分支持 `/`）。但是，在作为命令行参数传递路径、直接调用系统调用、或者作为字符串比较和解析路径时，仍会导致致命错误。
 
 ### 各语言的最佳实践（操作系统的抽象化）
 
-请**绝对避免**通过字符串拼接（如：`path + "\\" + filename`）来构建文件路径。应当使用各语言提供的路径操作标准库（OS Abstraction Layer）。
+请 **绝对避免** 通过字符串拼接（如：`path + "\\" + filename`）来构建文件路径。应当使用各语言提供的路径操作标准库（OS Abstraction Layer）。
 
 #### C++ 的例子 (`std::filesystem`)
 C++17 之后引入了 `<filesystem>`，从而能够抽象化跨平台的路径差异。
@@ -154,7 +154,7 @@ console.log(configPath);
 ## 4. 字符编码 (UTF-8 vs CP932/Shift-JIS) 与 Unicode 的壁垒
 
 在 Windows 日语环境下，最大的烦恼就是字符编码。
-在现代开发中，macOS 和 Linux 从整个系统、终端到文件编码都完全统一为 **UTF-8**。然而，日语版 Windows 的标准编码（基于系统区域设置的“ANSI代码页”）在很多场景下依然默认作为 **CP932（微软扩展的 Shift-JIS）** 运行。
+在现代开发中，macOS 和 Linux 从整个系统、终端到文件编码都完全统一为 **UTF-8** 。然而，日语版 Windows 的标准编码（基于系统区域设置的“ANSI代码页”）在很多场景下依然默认作为 **CP932（微软扩展的 Shift-JIS）** 运行。
 ※内部 Win32 API 的字符串表示是 UTF-16LE（`wchar_t`）。
 
 在 Python 等语言中进行文件读写时，如果不显式指定编码，在 Windows 上就会试图按照 `locale.getpreferredencoding()` 的结果（CP932）来解析。这就导致在尝试读取以 UTF-8 保存的文件时，会出现 `UnicodeDecodeError` 或者发生乱码（Mojibake）。
@@ -171,7 +171,7 @@ $$ T_{conv} = \sum_{i=1}^{N} \Big( C_{decode} \cdot f_{decode}(x_i) + C_{encode}
 
 ### 字符编码相关的对策
 
-最可靠的对策是**“无论何时都显式指定 UTF-8”**。
+最可靠的对策是 **“无论何时都显式指定 UTF-8”** 。
 
 ```python
 # Python 中的好习惯：总是指定 encoding="utf-8"
@@ -187,8 +187,8 @@ with open("data.txt", "w", encoding="utf-8") as f:
 
 在执行构建脚本或开发工具时，Shell（命令行解释器）的差异也是跨平台开发中的一大障碍。
 
-*   **macOS / Linux**：主流是 `bash` 或 `zsh`。它们执行基于文本的管道处理。
-*   **Windows**：命令提示符 (`cmd.exe`) 或 `PowerShell`。PowerShell 基于 .NET，拥有强大的面向对象管道，但语法与 POSIX Shell 完全不同。
+*   **macOS / Linux** ：主流是 `bash` 或 `zsh`。它们执行基于文本的管道处理。
+*   **Windows** ：命令提示符 (`cmd.exe`) 或 `PowerShell`。PowerShell 基于 .NET，拥有强大的面向对象管道，但语法与 POSIX Shell 完全不同。
 
 由于引用和设置环境变量的方法不同，如果在 Node.js 的 `package.json` 的 `scripts` 区域中编写了依赖操作系统的代码，在其他环境中就无法运行。
 
@@ -219,18 +219,18 @@ with open("data.txt", "w", encoding="utf-8") as f:
 
 当处理 C++ 或 Rust 等原生代码（直接编译为机器码的语言）时，不仅需要克服操作系统专属 API 的差异，还需要克服构建系统和编译器的不同。
 
-*   **编译器**：
+*   **编译器** ：
     *   Windows：MSVC (Microsoft Visual C++), MinGW (GCC for Windows)
     *   macOS：Apple Clang
     *   Linux：GCC, Clang
-*   **二进制格式**：
+*   **二进制格式** ：
     *   Windows：PE (Portable Executable) `.exe` / `.dll`
     *   macOS：Mach-O
     *   Linux：ELF (Executable and Linkable Format) `.so`
 
 ### 活用 CMake 作为元构建系统
 
-在 C/C++ 项目中，实现跨平台的世界级事实标准是 **CMake**。CMake 本身不直接编译源代码，而是作为一个“生成器（Generator）”，生成适应各环境的原生构建配置文件（例如，Windows 下的 Visual Studio 解决方案文件，Linux/Mac 下的 Makefile 或 Ninja 构建脚本）。
+在 C/C++ 项目中，实现跨平台的世界级事实标准是 **CMake** 。CMake 本身不直接编译源代码，而是作为一个“生成器（Generator）”，生成适应各环境的原生构建配置文件（例如，Windows 下的 Visual Studio 解决方案文件，Linux/Mac 下的 Makefile 或 Ninja 构建脚本）。
 
 ```mermaid
 flowchart TD
@@ -304,7 +304,7 @@ classDiagram
 
 ## 8. 在 CI/CD 中进行跨平台验证 (矩阵构建)
 
-无论开发者在本地环境中编码多么谨慎，跨平台兼容性的最终防线都是 **CI/CD (Continuous Integration / Continuous Deployment) 流水线**。在本地环境（例如 Mac）中能够运行，但在其他操作系统（Windows）下出现编译错误的情况层出不穷。
+无论开发者在本地环境中编码多么谨慎，跨平台兼容性的最终防线都是 **CI/CD (Continuous Integration / Continuous Deployment) 流水线** 。在本地环境（例如 Mac）中能够运行，但在其他操作系统（Windows）下出现编译错误的情况层出不穷。
 
 我们应该活用 GitHub Actions 或 GitLab CI 等现代 CI 工具，并在每次创建 Pull Request 时，设置能够 **在 Windows、macOS、Linux 等所有环境中并行执行构建和测试** 的矩阵构建（Matrix Build）。
 
@@ -366,7 +366,7 @@ sequenceDiagram
     GitHub-->>Dev: "状态：失败 (Windows 检查未通过)"
 ```
 
-通过配置分支保护规则，使各操作系统下的测试结果自动汇总，**并且仅在所有环境都变为绿色（成功）时才允许合并到 main 分支**，以此防患于未然，避免与平台相关的 Bug 混入生产环境或发布构建中。
+通过配置分支保护规则，使各操作系统下的测试结果自动汇总， **并且仅在所有环境都变为绿色（成功）时才允许合并到 main 分支** ，以此防患于未然，避免与平台相关的 Bug 混入生产环境或发布构建中。
 
 ---
 
@@ -374,14 +374,15 @@ sequenceDiagram
 
 在 Mac 和 Windows 的跨平台开发中，存在着许多根源于历史背景的挑战。
 
-1.  **换行符**：通过 `.gitattributes` 在仓库级别强制进行规范化（如统一使用 LF）。
-2.  **大小写区分**：不要依赖 macOS/Windows “不区分大小写” 的行为，应当严格规定文件命名规则，时刻注意严格的大小写匹配。
-3.  **路径分隔符**：利用语言标准中的路径操作 API（如 `std::filesystem`、`pathlib`、`path` 模块）来消除操作系统的差异。
-4.  **字符编码**：永远指定 UTF-8，彻底消除 Windows 默认行为 CP932 所带来的影响。
-5.  **环境变量与 Shell**：使用 `cross-env` 等抽象工具，或者将执行环境统一为 WSL/Docker 等。
-6.  **构建系统**：对于 C/C++，活用 CMake 等元构建系统，为各个操作系统生成最佳的原生工具链。
-7.  **平台相关代码**：设计操作系统抽象层 (OSAL)，将依赖于平台的逻辑分离并隔离起来。
-8.  **CI/CD**：引入矩阵构建，对所有目标操作系统的洁净构建和测试进行自动化，从而消除人为的不可靠性。
+1.  **换行符** ：通过 `.gitattributes` 在仓库级别强制进行规范化（如统一使用 LF）。
+2.  **大小写区分** ：不要依赖 macOS/Windows “不区分大小写” 的行为，应当严格规定文件命名规则，时刻注意严格的大小写匹配。
+3.  **路径分隔符** ：利用语言标准中的路径操作 API（如 `std::filesystem`、`pathlib`、`path` 模块）来消除操作系统的差异。
+4.  **字符编码** ：永远指定 UTF-8，彻底消除 Windows 默认行为 CP932 所带来的影响。
+5.  **环境变量与 Shell** ：使用 `cross-env` 等抽象工具，或者将执行环境统一为 WSL/Docker 等。
+6.  **构建系统** ：对于 C/C++，活用 CMake 等元构建系统，为各个操作系统生成最佳的原生工具链。
+7.  **平台相关代码** ：设计操作系统抽象层 (OSAL)，将依赖于平台的逻辑分离并隔离起来。
+8.  **CI/CD** ：引入矩阵构建，对所有目标操作系统的洁净构建和测试进行自动化，从而消除人为的不可靠性。
 
 如今，Electron、Tauri、.NET 等强大的框架已经为我们屏蔽了其中的许多差异，但对于底层操作系统原生行为（如文件系统和编码）的了解，在解决严重的性能问题和棘手的 Bug 时依然不可或缺。通过在项目的初始阶段将这些最佳实践在整个团队中共享并贯彻执行，就能大幅减少由于操作系统差异导致的毫无意义的调试时间，从而集中精力进行实质性的软件价值创造。
+
 

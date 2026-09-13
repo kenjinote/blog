@@ -13,7 +13,7 @@ description: 'Windows標準のWindows MLを活用してAI機能にアクセス�
 
 Windows 10以降、Windowsには標準で **ONNX形式のAIモデルを実行できるランタイム ** が搭載されています。それが ** Windows ML (Windows.AI.MachineLearning)** です。
 
-この記事では、**C++（Win32アプリベース）** から `Microsoft.Windows.AI.MachineLearning` を呼び出す方法を、** サンプルコード付きで具体的に解説** します。
+この記事では、 **C++（Win32アプリベース）** から `Microsoft.Windows.AI.MachineLearning` を呼び出す方法を、 ** サンプルコード付きで具体的に解説** します。
 
 ---
 
@@ -136,7 +136,7 @@ binding.Bind(L"input_0", tensor);
 
 ## ✅ 代替案：WinRTを使いたくない人へ
 
-* Microsoft製の `ONNX Runtime` を使えば、**完全にWinRTなしでC++からONNXモデルを扱えます**。
+* Microsoft製の `ONNX Runtime` を使えば、 **完全にWinRTなしでC++からONNXモデルを扱えます** 。
 * クロスプラットフォーム対応で、Windows/Linuxでも共通コードが可能です。
 
 ---

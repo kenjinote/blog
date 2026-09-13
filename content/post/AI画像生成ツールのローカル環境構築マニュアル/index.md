@@ -27,7 +27,7 @@ AI画像生成技術は、Stable Diffusionのオープンソース化を皮切�
 
 ## 2. 拡散モデル（Diffusion Model）の数学的背景とアーキテクチャ
 
-ローカル環境を構築し、パラメータを適切に設定するためには、Stable Diffusionなどの**潜在拡散モデル（Latent Diffusion Model: LDM）**がどのように機能しているかを理解することが非常に有益です。
+ローカル環境を構築し、パラメータを適切に設定するためには、Stable Diffusionなどの **潜在拡散モデル（Latent Diffusion Model: LDM）** がどのように機能しているかを理解することが非常に有益です。
 
 ### 2.1 ノイズ付加プロセス（Forward Process）と除去プロセス（Reverse Process）
 
@@ -49,7 +49,7 @@ $$ L_{simple} = \mathbb{E}_{x_0, \epsilon \sim \mathcal{N}(0, I), t} \left[ || \
 
 ### 2.2 Latent Space（潜在空間）による計算量削減
 
-ピクセル空間（Pixel Space）で直接ノイズ除去を行うと、計算量が画像の解像度に対して二乗で増加するため、非常に重い処理となります。Stable Diffusionは、**VAE（Variational Autoencoder）**を用いて画像を圧縮された「潜在空間（Latent Space）」に変換してから処理を行います。
+ピクセル空間（Pixel Space）で直接ノイズ除去を行うと、計算量が画像の解像度に対して二乗で増加するため、非常に重い処理となります。Stable Diffusionは、 **VAE（Variational Autoencoder）** を用いて画像を圧縮された「潜在空間（Latent Space）」に変換してから処理を行います。
 
 エンコーダー $E$ は、解像度 $H \times W \times 3$ の画像を $z \in \mathbb{R}^{H/8 \times W/8 \times 4}$ に圧縮します。空間次元が8分の1になるため、自己注意機構（Self-Attention）の計算量は $\mathcal{O}((\frac{H \times W}{64})^2)$ となり、劇的なパフォーマンス向上をもたらします。生成後はデコーダー $D$ によって $\tilde{x} = D(z)$ としてピクセル空間に復元されます。
 
@@ -98,14 +98,14 @@ AIツールの大部分はPythonで記述されています。Stable Diffusion W
 
 1.  Python公式アーカイブから `python-3.10.6-amd64.exe` をダウンロードします。
 2.  インストーラー起動時、一番下にある **"Add Python 3.10 to PATH"** に必ずチェックを入れます。
-3.  インストール完了画面で **"Disable path length limit"**（パス長の制限を無効化）をクリックします（重要：Windowsの260文字パス制限を解除しないと、深い階層の依存ライブラリでエラーが起きます）。
+3.  インストール完了画面で **"Disable path length limit"** （パス長の制限を無効化）をクリックします（重要：Windowsの260文字パス制限を解除しないと、深い階層の依存ライブラリでエラーが起きます）。
 
 ### 4.2 Git for Windows のインストール
 GitHubからソースコードやモデルを取得するためにGitが必要です。
 1.  Git for Windows公式サイトからインストーラーをダウンロードし、すべてデフォルトの設定でインストールします。
 
 ### 4.3 CUDA Toolkit と cuDNN の設定
-最新のPyTorchはインストール時に必要なCUDAバイナリを内包してダウンロードするため、システム全体にCUDA Toolkitを入れることは必須ではなくなりました。しかし、カスタム拡張機能（TensorRTやxFormersのビルド）を利用する場合は、NVIDIA公式から **CUDA Toolkit 11.8** または **12.1**（使用するPyTorchに合わせる）をインストールしておくことを推奨します。
+最新のPyTorchはインストール時に必要なCUDAバイナリを内包してダウンロードするため、システム全体にCUDA Toolkitを入れることは必須ではなくなりました。しかし、カスタム拡張機能（TensorRTやxFormersのビルド）を利用する場合は、NVIDIA公式から **CUDA Toolkit 11.8** または **12.1** （使用するPyTorchに合わせる）をインストールしておくことを推奨します。
 
 ---
 
@@ -269,3 +269,4 @@ Stable Diffusionから始まったオープンソースAI画像生成のムー�
 しかし、TensorRTや量子化技術（Quantization）、GGUFなどのローカル最適化技術も同様に進化のスピードを速めており、一般コンシューマー向けのハードウェアでも十分な推論が可能になるエコシステムが形成されつつあります。
 
 本マニュアルで解説したCUDA環境の構築、VRAMの最適化、そしてComfyUIなどのパイプライン理解は、AIの技術トレンドがどのように変化しても通用する普遍的な基盤知識となります。皆様のクリエイティビティが、制限のないローカル環境で最大限に発揮されることを願っています。
+

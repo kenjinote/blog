@@ -14,7 +14,7 @@ description: '汇报本人荣获了Microsoft MVP（2023-2024）的Developer Tech
 这次我荣获了Microsoft MVP (2023-2024)。
 这是我自2017年以来连续第7年获奖。
 
-获奖类别是 **Developer Technologies**。
+获奖类别是 **Developer Technologies** 。
 
 回顾我过去的活动，我进行了以下活动：
 
@@ -26,3 +26,4 @@ description: '汇报本人荣获了Microsoft MVP（2023-2024）的Developer Tech
 今后，我希望继续写出更好的文章并分享信息。
 
 请多多关照。
+

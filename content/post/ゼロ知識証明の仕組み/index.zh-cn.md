@@ -12,11 +12,11 @@ description: '从零知识证明（ZKP）的数学基础，到zk-SNARKs、zk-STA
 
 ## 引言
 
-在现代数字社会中，数据隐私和可扩展性已成为最重要的两个课题。随着个人信息泄露和被滥用的风险不断增加，“在不向对方透露关于自己信息的情况下，证明自己拥有该信息”的技术需求变得日益强烈。实现这一点的正是**零知识证明（Zero-Knowledge Proof: ZKP）**。
+在现代数字社会中，数据隐私和可扩展性已成为最重要的两个课题。随着个人信息泄露和被滥用的风险不断增加，“在不向对方透露关于自己信息的情况下，证明自己拥有该信息”的技术需求变得日益强烈。实现这一点的正是 **零知识证明（Zero-Knowledge Proof: ZKP）** 。
 
 零知识证明是20世纪80年代由Shafi Goldwasser、Silvio Micali和Charles Rackoff首次提出的密码学理论概念，但在很长一段时间内仅停留在理论研究阶段。然而，随着区块链技术和Web3的崛起，情况发生了巨大变化。以太坊等公有链面临着可扩展性问题（处理能力的极限）和隐私问题（所有交易都是公开的），而ZKP作为能同时解决这两大问题的“魔法棒”，一跃成为了众人瞩目的焦点。
 
-本文将极尽详细地、从技术深处探讨零知识证明的基本概念、目前成为主流的**zk-SNARKs**及**zk-STARKs**深奥的数学和密码学机制，以及ZK-Rollups、去中心化身份（DID）等在Web3与安全领域的最新应用实例。
+本文将极尽详细地、从技术深处探讨零知识证明的基本概念、目前成为主流的 **zk-SNARKs** 及 **zk-STARKs** 深奥的数学和密码学机制，以及ZK-Rollups、去中心化身份（DID）等在Web3与安全领域的最新应用实例。
 
 ---
 
@@ -37,7 +37,7 @@ description: '从零知识证明（ZKP）的数学基础，到zk-SNARKs、zk-STA
 
 ### 交互式证明与非交互式证明
 
-ZKP有两种形式：证明者和验证者需要进行多次通信的**交互式证明**，以及证明者只需发送一次证明数据即告完成的**非交互式证明**。
+ZKP有两种形式：证明者和验证者需要进行多次通信的 **交互式证明** ，以及证明者只需发送一次证明数据即告完成的 **非交互式证明** 。
 
 #### 交互式证明（Interactive ZKP）
 
@@ -64,7 +64,7 @@ sequenceDiagram
 
 #### 菲亚特-沙米尔变换（Fiat-Shamir Heuristic）与非交互化
 
-将交互式证明转化为非交互式证明（Non-Interactive Zero-Knowledge Proof: NIZK）的革命性方法就是**菲亚特-沙米尔变换**。
+将交互式证明转化为非交互式证明（Non-Interactive Zero-Knowledge Proof: NIZK）的革命性方法就是 **菲亚特-沙米尔变换** 。
 
 它不再由验证者发送“随机挑战”，而是由证明者使用自身的承诺和公开信息的哈希值，自我生成一个“伪随机挑战”。前提是密码学哈希函数（例如SHA-256或Keccak等）作为随机预言机（Random Oracle）发挥作用，证明者无法提前预测或操纵挑战，从而在保持与交互式证明同等安全性的情况下，仅通过发送一次消息就能完成证明。
 
@@ -72,15 +72,15 @@ sequenceDiagram
 
 ## zk-SNARKs的技术细节
 
-目前在ZKP中被最广泛使用的是**zk-SNARKs**（Zero-Knowledge Succinct Non-Interactive Argument of Knowledge，零知识简洁非交互式知识论证）。顾名思义，它具备零知识性（zk），证明体积非常小且验证高速（Succinct），是一种非交互式（Non-Interactive）的知识论证（Argument of Knowledge）。
+目前在ZKP中被最广泛使用的是 **zk-SNARKs** （Zero-Knowledge Succinct Non-Interactive Argument of Knowledge，零知识简洁非交互式知识论证）。顾名思义，它具备零知识性（zk），证明体积非常小且验证高速（Succinct），是一种非交互式（Non-Interactive）的知识论证（Argument of Knowledge）。
 
 zk-SNARKs的基础是高级代数几何和密码学理论。它将程序的执行和计算转化为对特定多项式方程的验证。
 
 ### 1. 转化为算术电路与R1CS（Rank-1 Constraint System）
 
-首先，将想要证明的任意计算（算法或智能合约的逻辑）转化为由加法门和乘法门组成的**算术电路（Arithmetic Circuit）**。
+首先，将想要证明的任意计算（算法或智能合约的逻辑）转化为由加法门和乘法门组成的 **算术电路（Arithmetic Circuit）** 。
 
-接着，将该算术电路转化为名为**R1CS（Rank-1 Constraint System，一阶约束系统）**的矩阵方程集合。R1CS的问题是：对于变量向量 $x$，找到满足以下约束的矩阵 $A, B, C$。
+接着，将该算术电路转化为名为 **R1CS（Rank-1 Constraint System，一阶约束系统）** 的矩阵方程集合。R1CS的问题是：对于变量向量 $x$，找到满足以下约束的矩阵 $A, B, C$。
 
 $$ (A \cdot x) \circ (B \cdot x) = C \cdot x $$
 
@@ -88,7 +88,7 @@ $$ (A \cdot x) \circ (B \cdot x) = C \cdot x $$
 
 ### 2. 转化为QAP（Quadratic Arithmetic Program）
 
-由于R1CS的矩阵约束数量庞大，逐一验证它们是非常低效的。因此，利用拉格朗日插值法，将这些约束压缩成一个单一的多项式方程。这就是**QAP（Quadratic Arithmetic Program，二次算术程序）**。
+由于R1CS的矩阵约束数量庞大，逐一验证它们是非常低效的。因此，利用拉格朗日插值法，将这些约束压缩成一个单一的多项式方程。这就是 **QAP（Quadratic Arithmetic Program，二次算术程序）** 。
 
 通过向QAP的转化，需要证明的问题归结为：“特定的多项式 $P(x)$ 是否能被另一个已知多项式 $Z(x)$ 整除？”这一问题。
 
@@ -104,7 +104,7 @@ $$ P(x) = H(x) \cdot Z(x) $$
 
 但是，如果验证者知道秘密点 $s$，证明者就可以伪造虚假的多项式来满足方程（导致可靠性崩溃）。因此，必须在谁也不知道 $s$ 的情况下对其进行加密（利用同态加密），并在加密状态下进行计算。
 
-实现这一目标的是**椭圆曲线配对（Bilinear Pairings）**。
+实现这一目标的是 **椭圆曲线配对（Bilinear Pairings）** 。
 配对 $e$ 是一种特殊的函数，能够从两个加密后的值中计算出相当于它们乘积的加密值。
 
 $$ e(g_1^a, g_2^b) = e(g_1, g_2)^{ab} $$
@@ -113,7 +113,7 @@ $$ e(g_1^a, g_2^b) = e(g_1, g_2)^{ab} $$
 
 ### 4. 可信设置（Trusted Setup）
 
-zk-SNARKs（特别是早期的Groth16等）最大的弱点在于生成秘密点 $s$ 的过程，即需要所谓的**可信设置（Trusted Setup）**。如果 $s$ 的生成者保留了该值而没有将其销毁，他们就可以生成任意的虚假证明（Toxic Waste，有毒废料问题）。
+zk-SNARKs（特别是早期的Groth16等）最大的弱点在于生成秘密点 $s$ 的过程，即需要所谓的 **可信设置（Trusted Setup）** 。如果 $s$ 的生成者保留了该值而没有将其销毁，他们就可以生成任意的虚假证明（Toxic Waste，有毒废料问题）。
 
 为了防止这种情况，会执行被称为“仪式（Ceremony）”的过程，利用多方计算（MPC）。许多参与者合作提供随机性，只要至少有一位参与者诚实地销毁了自己的随机值，整个系统的安全性就能得到保障。然而，为了消除这种依赖关系，研究人员长年以来一直在不断努力。
 
@@ -121,15 +121,15 @@ zk-SNARKs（特别是早期的Groth16等）最大的弱点在于生成秘密点 
 
 ## zk-STARKs的技术细节
 
-为了解决对可信设置的依赖以及量子计算机破解椭圆曲线密码学的风险，**zk-STARKs**（Zero-Knowledge Scalable Transparent Argument of Knowledge，零知识可扩展透明知识论证）应运而生。
+为了解决对可信设置的依赖以及量子计算机破解椭圆曲线密码学的风险， **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge，零知识可扩展透明知识论证）应运而生。
 
 由Eli Ben-Sasson等人开发的STARKs，正如其“透明性（Transparent）”之名，完全不需要可信设置；而正如其“可扩展性（Scalable）”之名，它具有在计算量增加时，证明体积和验证时间仍能保持高效的特点。
 
 ### 1. 多项式承诺与FRI协议
 
-zk-STARKs不使用椭圆曲线密码学，而是将安全性基础完全建立在**哈希函数**上。因此，它具有抗量子计算密码学（Post-Quantum Cryptography）的特性。
+zk-STARKs不使用椭圆曲线密码学，而是将安全性基础完全建立在 **哈希函数** 上。因此，它具有抗量子计算密码学（Post-Quantum Cryptography）的特性。
 
-计算的验证在被转化为名为AIR（Algebraic Intermediate Representation，代数中间表示）的格式后，利用一维或多维多项式的性质进行。STARKs的核心在于**FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity，快速里德-所罗门交互式预言机近似证明）**协议。
+计算的验证在被转化为名为AIR（Algebraic Intermediate Representation，代数中间表示）的格式后，利用一维或多维多项式的性质进行。STARKs的核心在于 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity，快速里德-所罗门交互式预言机近似证明）** 协议。
 
 FRI协议是一种验证“某函数是否足够接近特定次数的多项式（Proximity）”的技术。证明者将多项式的值作为默克尔树（Merkle Tree）的叶子节点进行承诺（多项式承诺）。
 
@@ -166,7 +166,7 @@ graph TD
 
 ### 1. 采用ZK-Rollups实现以太坊的终极扩容
 
-像以太坊这样的L1（第一层）区块链，因为过于重视去中心化和安全性，在可扩展性上受到了很大的限制（区块链不可能三角）。解决这一问题的L2（第二层）决定性方案就是**ZK-Rollups**。
+像以太坊这样的L1（第一层）区块链，因为过于重视去中心化和安全性，在可扩展性上受到了很大的限制（区块链不可能三角）。解决这一问题的L2（第二层）决定性方案就是 **ZK-Rollups** 。
 
 在ZK-Rollup中，数千笔交易在链下（L2）被执行和处理，并生成“一个ZKP（有效性证明）”来证明它们都已被正确执行。L1链上的智能合约只需验证这个证明即可。
 
@@ -179,14 +179,14 @@ flowchart LR
     L1Contract --> Verify["验证 & 更新状态"]
 ```
 
-ZK-Rollups最大的优势在于，与Optimistic Rollups（如Arbitrum或Optimism等）不同，它不需要为了欺诈证明（Fraud Proof）而设置挑战期（通常为7天）。由于其正确性在密码学上得到了保证，在证明被验证的瞬间，向L1提取资金（确定性，Finality）即告完成。目前，zkSync、Starknet、Scroll、Polygon zkEVM等项目正展开激烈的开发竞争，与EVM（以太坊虚拟机）兼容的**zkEVM**的实现正在促使生态系统快速增长。
+ZK-Rollups最大的优势在于，与Optimistic Rollups（如Arbitrum或Optimism等）不同，它不需要为了欺诈证明（Fraud Proof）而设置挑战期（通常为7天）。由于其正确性在密码学上得到了保证，在证明被验证的瞬间，向L1提取资金（确定性，Finality）即告完成。目前，zkSync、Starknet、Scroll、Polygon zkEVM等项目正展开激烈的开发竞争，与EVM（以太坊虚拟机）兼容的 **zkEVM** 的实现正在促使生态系统快速增长。
 
 ### 2. 隐私保护身份（ZKP for Identity）
 
 数字世界中的个人认证方式也将被ZKP从根本上改变。
 例如，面对“你满18岁了吗？”这个问题，在传统系统中需要出示驾驶证或护照，从而将姓名、地址等不必要的个人信息也交给了对方。
 
-如果使用ZKP，就可以基于公共机构颁发的数字证书（Verifiable Credential），在数学上仅仅证明“根据我的出生日期计算，在当前日期我已年满18岁”这一**事实**。验证者只需验证证书的签名和ZKP，无法得知用户的出生日期和具体身份。
+如果使用ZKP，就可以基于公共机构颁发的数字证书（Verifiable Credential），在数学上仅仅证明“根据我的出生日期计算，在当前日期我已年满18岁”这一 **事实** 。验证者只需验证证书的签名和ZKP，无法得知用户的出生日期和具体身份。
 
 在Worldcoin这样的人格证明（Proof of Personhood）项目中，也没有直接保存和共享虹膜数据，而是引入了ZKP机制，仅仅证明“是一个独一无二的人类”。
 
@@ -203,7 +203,7 @@ ZK-Rollups最大的优势在于，与Optimistic Rollups（如Arbitrum或Optimism
 ZKP毫无疑问是下一代的基础技术，但仍存在一些挑战。
 
 1. **证明生成的计算成本与硬件加速**
-   ZKP的生成需要进行庞大的多项式运算、FFT（快速傅里叶变换）以及MSM（多标量乘法）。目前，为加速这一证明生成过程，开发专用硬件（FPGA或ASIC），即所谓的**ZKP挖矿**（Prover Network）的研究正在迅速推进。
+   ZKP的生成需要进行庞大的多项式运算、FFT（快速傅里叶变换）以及MSM（多标量乘法）。目前，为加速这一证明生成过程，开发专用硬件（FPGA或ASIC），即所谓的 **ZKP挖矿** （Prover Network）的研究正在迅速推进。
 2. **标准化与开发者体验（DX）的提升**
    目前，用于编写ZKP电路的专用语言（如Circom、Cairo、Noir、Leo等）五花八门。统一这些语言的标准规范，以及能从现有的Rust或C++代码自动生成ZKP电路的编译器的成熟，将是普通软件工程师能够广泛应用ZKP的关键。
 
@@ -218,3 +218,4 @@ ZKP毫无疑问是下一代的基础技术，但仍存在一些挑战。
 - Groth, J. (2016). "On the Size of Pairing-based Non-interactive Arguments"
 - Ben-Sasson, E., et al. (2018). "Scalable, transparent, and post-quantum secure computational integrity"
 - Vitalik Buterin's blog on zk-SNARKs and zk-STARKs
+

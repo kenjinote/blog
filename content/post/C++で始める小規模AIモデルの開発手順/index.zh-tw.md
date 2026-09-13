@@ -55,7 +55,7 @@ graph TD
 
 ## 3. 模型格式與記憶體映射 (mmap)
 
-處理巨大神經網路權重時，最大的障礙在於磁碟 I/O 與記憶體消耗。在 C++ 實作中，我們透過**記憶體映射（mmap）**來解決這個問題。
+處理巨大神經網路權重時，最大的障礙在於磁碟 I/O 與記憶體消耗。在 C++ 實作中，我們透過 **記憶體映射（mmap）** 來解決這個問題。
 
 ### 3.1 記憶體映射的機制與 Windows 上的實作
 
@@ -81,7 +81,7 @@ sequenceDiagram
 
 ### 3.2 GGUF 格式的二進位結構
 
-從 Hugging Face 等平台的 `.safetensors` 格式轉換而來的 **GGUF (GPT-Generated Unified Format)**，是專為推論打造的終極格式。它具有以下嚴謹的二進位佈局（Binary Layout）：
+從 Hugging Face 等平台的 `.safetensors` 格式轉換而來的 **GGUF (GPT-Generated Unified Format)** ，是專為推論打造的終極格式。它具有以下嚴謹的二進位佈局（Binary Layout）：
 
 1. **Magic Bytes**: `0x46554747` (GGUF)。
 2. **Version**: 格式的版本號碼。
@@ -116,7 +116,7 @@ $$ \text{RoPE}(x, m) = \begin{pmatrix} x_{1} \cos(m\theta) - x_{2} \sin(m\theta)
 
 ### 4.3 Grouped-Query Attention (GQA)
 
-在一般的多頭注意力機制（Multi-Head Attention, MHA）中，Query、Key 和 Value 各自擁有相同數量的注意力頭（Head）。然而，TinyLLaMA 為了大幅減少記憶體頻寬與 KV Cache 的消耗，採用了 **Grouped-Query Attention (GQA)**。
+在一般的多頭注意力機制（Multi-Head Attention, MHA）中，Query、Key 和 Value 各自擁有相同數量的注意力頭（Head）。然而，TinyLLaMA 為了大幅減少記憶體頻寬與 KV Cache 的消耗，採用了 **Grouped-Query Attention (GQA)** 。
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
@@ -241,5 +241,6 @@ cmake --build . --config Release
 ## 10. 總結
 
 使用 C++ 與 ggml 從零開始實作如 TinyLLaMA 這類小規模 AI 模型的推論引擎，是揭開深度學習黑盒子、並學習低階硬體控制之美的絕佳機會。讓我們一邊充分體會利用記憶體映射進行的零拷貝載入、SIMD 最佳化、建構 KV Cache 等系統程式設計的精髓，一邊開拓邊緣 AI（Edge AI）的未來吧。
+
 
 

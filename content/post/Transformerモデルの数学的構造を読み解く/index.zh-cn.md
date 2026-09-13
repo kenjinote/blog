@@ -13,7 +13,7 @@ tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 
 毫不夸张地说，“Transformer”架构改写了现代自然语言处理（NLP）乃至整个AI的历史。该模型在2017年由Google的研究人员们在论文《Attention Is All You Need》中首次提出，目前作为OpenAI的GPT系列（ChatGPT的基础技术）、Google的BERT以及Anthropic的Claude等席卷全球的大型语言模型（LLM）的核心组件而发挥着作用。
 
-然而，目前的情况是，关于Transformer的工作原理，虽然经常能看到诸如“使用Attention（注意力机制）来理解上下文”这样的定性解释，但针对初学者的关于其背后的**数学结构**的深入解说是出乎意料地少的。为了真正理解AI是如何将“语言”作为“数学公式”来处理，并生成令人惊叹的自然文章的，解读其数学机制是不可或缺的。
+然而，目前的情况是，关于Transformer的工作原理，虽然经常能看到诸如“使用Attention（注意力机制）来理解上下文”这样的定性解释，但针对初学者的关于其背后的 **数学结构** 的深入解说是出乎意料地少的。为了真正理解AI是如何将“语言”作为“数学公式”来处理，并生成令人惊叹的自然文章的，解读其数学机制是不可或缺的。
 
 在本文中，将以具备数学和编程基础知识的人（了解高中水平的矩阵和微分概念的人）为对象，彻底且通俗易懂地解开Transformer核心部分的“Self-Attention机制”、“查询·键·值（Q/K/V）模型”、“通过Softmax函数的归一化”以及“Positional Encoding”等数学结构。
 
@@ -26,8 +26,8 @@ tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 在Transformer出现之前，自然语言处理的主流是循环神经网络（RNN）及其派生的LSTM（Long Short-Term Memory）。RNN是为了处理时间序列数据而设计的，它会逐个单词地从开头按顺序读取文章。
 
 但是，RNN存在两个致命的弱点。
-1. **难以学习长期依赖关系**：当文章变长时，最开始输入的单词信息在到达最后时会变得淡薄（梯度消失问题）。
-2. **无法进行并行计算**：因为必须按顺序处理单词，所以很难利用GPU进行大规模的并行计算，训练需要花费大量的时间。
+1. **难以学习长期依赖关系** ：当文章变长时，最开始输入的单词信息在到达最后时会变得淡薄（梯度消失问题）。
+2. **无法进行并行计算** ：因为必须按顺序处理单词，所以很难利用GPU进行大规模的并行计算，训练需要花费大量的时间。
 
 Transformer彻底抛弃了RNN的结构，引发了一场只使用“Attention”来捕捉上下文的范式转换。由此，无论序列长度有多长，都不会发生信息丢失，并且能够并行化计算，从而最大限度地发挥GPU的性能。
 
@@ -59,7 +59,7 @@ graph TD
 
 # 3. 单词的向量化与位置编码（Positional Encoding）
 
-计算机无法直接理解文本。输入的文本首先会被分割成被称为“Token（词元）”的单位，然后每一个Token都会被转换为固定长度的向量。这就是**Input Embedding**。
+计算机无法直接理解文本。输入的文本首先会被分割成被称为“Token（词元）”的单位，然后每一个Token都会被转换为固定长度的向量。这就是 **Input Embedding** 。
 
 ## 3.1 Input Embedding的数学
 假设词汇表（Vocabulary）的大小为 $V$，嵌入向量的维度数为 $d_{model}$（在原论文中 $d_{model} = 512$）。每个单词 $w_i$ 使用嵌入矩阵 $W_E \in \mathbb{R}^{V \times d_{model}}$ 转换为向量 $x_i \in \mathbb{R}^{d_{model}}$。
@@ -69,9 +69,9 @@ $$ x_i = W_E \cdot \text{one\_hot}(w_i) $$
 由此，整篇文章被表示为矩阵 $X \in \mathbb{R}^{N \times d_{model}}$（$N$ 是文章的长度）。
 
 ## 3.2 Positional Encoding（位置编码）的必要性与数学公式
-Transformer并不像RNN那样按顺序处理单词，而是同时并行处理所有单词。从计算速度的角度来看这是一个很大的优势，但同时也会引起**丢失“单词顺序（语序）”这一重要信息**的问题。例如，“狗咬人”和“人咬狗”，虽然输入的单词集合相同，但含义却完全不同。
+Transformer并不像RNN那样按顺序处理单词，而是同时并行处理所有单词。从计算速度的角度来看这是一个很大的优势，但同时也会引起 **丢失“单词顺序（语序）”这一重要信息** 的问题。例如，“狗咬人”和“人咬狗”，虽然输入的单词集合相同，但含义却完全不同。
 
-为了将这种语序信息提供给模型，人们设计出了**Positional Encoding**。
+为了将这种语序信息提供给模型，人们设计出了 **Positional Encoding** 。
 位置 $pos$ 处的单词的第 $i$ 个维度的Positional Encoding $PE$ 是使用以下三角函数来计算的。
 
 $$ PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right) $$
@@ -80,7 +80,7 @@ $$ PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right) $$
 这里，$pos$ 是单词的位置（$0, 1, 2, \dots, N-1$），$i$ 是向量维度的索引（$0, 1, \dots, d_{model}/2 - 1$）。
 
 ### 为什么要使用正弦和余弦？
-乍一看这似乎是非常复杂和奇怪的数学公式，但其中有着深刻的数学原因。通过使用三角函数，模型不仅能够容易地学习到**“绝对位置”**，还能容易地学习到**“相对位置”的差异**。
+乍一看这似乎是非常复杂和奇怪的数学公式，但其中有着深刻的数学原因。通过使用三角函数，模型不仅能够容易地学习到 **“绝对位置”** ，还能容易地学习到 **“相对位置”的差异** 。
 
 请回想一下高中数学中学到的三角函数加法定理。
 $$ \sin(\alpha + \beta) = \sin\alpha \cos\beta + \cos\alpha \sin\beta $$
@@ -100,7 +100,7 @@ $$ X_{input} = X + PE $$
 
 # 4. Self-Attention（自注意力机制）的深渊数学
 
-终于我们要踏入Transformer最重要的组件——**Self-Attention（自注意力机制）**了。Self-Attention的目的是“计算文章中所有单词彼此之间的相关度，并将每个单词的向量更新为考虑到上下文的更丰富的表示”。
+终于我们要踏入Transformer最重要的组件—— **Self-Attention（自注意力机制）** 了。Self-Attention的目的是“计算文章中所有单词彼此之间的相关度，并将每个单词的向量更新为考虑到上下文的更丰富的表示”。
 
 在这里，使用了“搜索系统”的类比。
 - **Query (Q)**: 查询（搜索词）。“我现在正在寻找的信息是什么？”
@@ -117,7 +117,7 @@ $$ V = X W^V $$
 这里，$Q, K, V$ 全都是 $\mathbb{R}^{N \times d_k}$ 的矩阵。
 
 ## 4.2 Attention Score的计算（内积）
-为了衡量每个单词的Query与其他所有单词的Key之间有多大程度的关联，需要计算向量的**内积**。用矩阵运算来写的话如下所示：
+为了衡量每个单词的Query与其他所有单词的Key之间有多大程度的关联，需要计算向量的 **内积** 。用矩阵运算来写的话如下所示：
 
 $$ \text{Scores} = Q K^T $$
 
@@ -141,7 +141,7 @@ $$ \text{Var}(q \cdot k) = d_k $$
 $$ \text{Scaled Scores} = \frac{Q K^T}{\sqrt{d_k}} $$
 
 ## 4.4 通过Softmax函数实现概率化
-为了将得到的得分转换为总和为 $1$ 的概率分布（权重），对每一行应用 **Softmax函数**。
+为了将得到的得分转换为总和为 $1$ 的概率分布（权重），对每一行应用 **Softmax函数** 。
 
 $$ a_{ij} = \text{softmax}(s_i)_j = \frac{\exp(s_{ij} / \sqrt{d_k})}{\sum_{m=1}^N \exp(s_{im} / \sqrt{d_k})} $$
 
@@ -159,7 +159,7 @@ $$ \text{Output} = A V = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $
 
 # 5. Multi-Head Attention（多头注意力机制）
 
-如果只进行一次Attention计算（单头），可能只能捕捉到一个视角（例如“语法关系”）的上下文。因此，为了同时捕捉语言所具有的多种语义和句法关系（如“主语和谓语”、“代词及其指代对象”等），引入了 **Multi-Head Attention**。
+如果只进行一次Attention计算（单头），可能只能捕捉到一个视角（例如“语法关系”）的上下文。因此，为了同时捕捉语言所具有的多种语义和句法关系（如“主语和谓语”、“代词及其指代对象”等），引入了 **Multi-Head Attention** 。
 
 将前面的 $Q, K, V$ 的生成与Attention计算并行进行 $h$ 次（头的数量。在原论文中 $h=8$）。
 
@@ -217,7 +217,7 @@ $$ \text{FFN}(x) = \max(0, x W_1 + b_1) W_2 + b_2 $$
 
 # 7. 残差连接（Residual Connection）与层归一化（Layer Normalization）
 
-在深度学习中，如果加深网络的层数，在训练时就会出现梯度消失或爆炸的问题，导致无法很好地学习。为了防止这种情况发生，在Transformer的每个子层（Attention和FFN）周围，都配置了 **残差连接（Residual Connection）** 和 **层归一化（Layer Normalization）**。
+在深度学习中，如果加深网络的层数，在训练时就会出现梯度消失或爆炸的问题，导致无法很好地学习。为了防止这种情况发生，在Transformer的每个子层（Attention和FFN）周围，都配置了 **残差连接（Residual Connection） ** 和 ** 层归一化（Layer Normalization）**。
 
 用数学公式来写，子层的输出将被如下处理：
 
@@ -246,7 +246,7 @@ $$ \text{LN}(x) = \frac{x - \mu}{\sqrt{\sigma^2 + \epsilon}} \odot \gamma + \bet
 到目前为止讲解的结构都是编码器的。在生成文章的解码器模块中，结构稍有不同。
 
 ## 8.1 Masked Multi-Head Attention
-解码器的作用是“根据过去的单词预测下一个单词”。因此，如果在训练时看到了“未来的单词”，那就等于作弊了。为了防止这种情况发生的数学操作就是 **Masking（掩码）**。
+解码器的作用是“根据过去的单词预测下一个单词”。因此，如果在训练时看到了“未来的单词”，那就等于作弊了。为了防止这种情况发生的数学操作就是 **Masking（掩码）** 。
 
 对于得分矩阵 $Q K^T$，将其加上一个在上三角部分（相当于未来信息）设置为接近 $-\infty$ 的极小值的掩码矩阵 $M$。
 
@@ -257,7 +257,7 @@ $$ \text{Masked Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T + M}{\sqrt
 在计算Softmax函数时，因为 $\exp(-\infty) = 0$，所以对未来单词的Attention Weight将完全变为 $0$。由此，就可以实现保留了因果关系（Causality）的自回归生成。
 
 ## 8.2 Encoder-Decoder Cross-Attention
-解码器的第二个子层是参考编码器输出的 **Cross-Attention**。
+解码器的第二个子层是参考编码器输出的 **Cross-Attention** 。
 在这里，$Q$ 是从前一个解码器层生成的，而 $K$ 和 $V$ 则是从编码器的最后一层的输出中生成的。
 
 $$ Q_{decoder} = X_{dec} W^Q $$
@@ -271,13 +271,13 @@ $$ V_{encoder} = X_{enc} W^V $$
 # 9. 计算复杂度与现代优化的数学
 
 Transformer是一个出色的模型，但也存在源于其数学结构的“弱点”。
-请关注Self-Attention的计算复杂度。在计算得分矩阵 $Q K^T$ 时，因为要将 $(N \times d_k)$ 的矩阵与 $(d_k \times N)$ 的矩阵相乘，所以其计算复杂度为 **$O(N^2 \cdot d_{model})$**。
+请关注Self-Attention的计算复杂度。在计算得分矩阵 $Q K^T$ 时，因为要将 $(N \times d_k)$ 的矩阵与 $(d_k \times N)$ 的矩阵相乘，所以其计算复杂度为 **$O(N^2 \cdot d_{model})$** 。
 
-也就是说，**相对于序列长度 $N$，计算复杂度和内存使用量呈平方级增长**。
+也就是说， **相对于序列长度 $N$，计算复杂度和内存使用量呈平方级增长** 。
 如果文章很短则不成问题，但如果想将像一整本书这样超长的上下文输入到LLM中，$N$ 就会达到数万至数十万，在传统的Attention计算下GPU的内存会瞬间耗尽。
 
 为了打破这种 $O(N^2)$ 的诅咒，近年来从数学和硬件方法的角度提出了各种各样的优化方案。
-其中具有代表性的例子就是 **FlashAttention**。FlashAttention是一种为了将GPU的内存层级（SRAM和HBM）之间的数据传输（内存访问）降至最低，将Attention计算分割成瓦片状（Tiling）来执行的算法。尽管在数学公式上它输出的是与标准Attention完全相同的结果（Exact Attention），但通过硬件级别的优化实现了惊人的速度提升和内存削减，使得GPT-4等长上下文模型的实现成为了可能。
+其中具有代表性的例子就是 **FlashAttention** 。FlashAttention是一种为了将GPU的内存层级（SRAM和HBM）之间的数据传输（内存访问）降至最低，将Attention计算分割成瓦片状（Tiling）来执行的算法。尽管在数学公式上它输出的是与标准Attention完全相同的结果（Exact Attention），但通过硬件级别的优化实现了惊人的速度提升和内存削减，使得GPT-4等长上下文模型的实现成为了可能。
 
 除此之外，将计算复杂度近似为 $O(N \log N)$ 或 $O(N)$ 的 Sparse Attention 和 Linear Attention 等研究也正在积极进行中。
 
@@ -340,5 +340,6 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 ---
 *这篇文章是为学习自然语言处理和AI的数学基础的人们撰写的指南。如果有任何疑问或讨论，请务必在评论区告诉我！*
+
 
 

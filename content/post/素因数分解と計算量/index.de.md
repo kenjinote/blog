@@ -133,7 +133,7 @@ Folglich ist die Anzahl der Rechenschritte maximal proportional zu:
 
 $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 
-Dies bedeutet, dass die Komplexität für die Bitlänge $n$ **$\mathcal{O}(2^{n/2})$** beträgt. Mit anderen Worten: Die Probedivision ist ein **„rein exponentieller Zeit-Algorithmus (Exponential time algorithm)“** in Bezug auf $n$.
+Dies bedeutet, dass die Komplexität für die Bitlänge $n$ **$\mathcal{O}(2^{n/2})$** beträgt. Mit anderen Worten: Die Probedivision ist ein ** „rein exponentieller Zeit-Algorithmus (Exponential time algorithm)“** in Bezug auf $n$.
 Für jedes zusätzliche Bit (was einer Verdoppelung des Zahlenwertes entspricht) steigt die Rechenzeit um etwa das $\sqrt{2} \approx 1.414$-fache. Wenn $N$ eine Zahl ist, die 1024 Bit (etwa 300 Ziffern im Dezimalsystem) überschreitet, würde die Berechnung nicht einmal nach der Dauer des Alters des Universums abgeschlossen sein.
 
 ## 2. Fermats Faktorisierungsmethode (Fermat's Factorization Method)
@@ -245,7 +245,7 @@ Viele Forscher vermuten, dass die Primfaktorzerlegung zu einer Zwischenklasse ge
 ## Der „Gamechanger“ Quantencomputer: Shors Algorithmus
 
 Während die RSA-Verschlüsselung auf klassischen Computern robust ist, wird sich die Situation komplett ändern, wenn „Quantencomputer“, die nach völlig anderen Prinzipien funktionieren, praktisch nutzbar werden.
-**„Shors Algorithmus (Shor's algorithm)“**, der 1994 von Peter Shor vorgestellt wurde, ist ein Algorithmus, der durch die Verwendung der Quanten-Fourier-Transformation die Primfaktorzerlegung in unglaublich kurzer **polynomieller Zeit $\mathcal{O}(n^3)$** (genauer gesagt in der Größenordnung von $\mathcal{O}(n^2 \log n \log \log n)$ Quantengattern) lösen kann.
+**„Shors Algorithmus (Shor's algorithm)“ **, der 1994 von Peter Shor vorgestellt wurde, ist ein Algorithmus, der durch die Verwendung der Quanten-Fourier-Transformation die Primfaktorzerlegung in unglaublich kurzer **polynomieller Zeit $\mathcal{O}(n^3)$** (genauer gesagt in der Größenordnung von $\mathcal{O}(n^2 \log n \log \log n)$ Quantengattern) lösen kann.
 
 Lassen Sie uns im folgenden Mermaid-Diagramm den Unterschied in der Komplexität zwischen klassischen und Quantenalgorithmen überprüfen.
 
@@ -285,4 +285,5 @@ In diesem Artikel haben wir von den Grundlagen der Zeitkomplexität (Big-O-Notat
 * Mit dem Aufkommen von **Quantencomputern und Shors Algorithmus** wird die Primfaktorzerlegung in polynomieller Zeit jedoch theoretisch möglich, und die Kryptographie ist dabei, in das nächste Zeitalter (Post-Quanten-Kryptographie) überzugehen.
 
 Die Tatsache, dass ein abstraktes Konzept wie die Komplexität von Algorithmen direkt mit der Sicherheit unseres Lebens verbunden ist, gehört zu den faszinierendsten und spannendsten Aspekten der Informatik und Mathematik. Bitte behalten Sie die zukünftigen technologischen Fortschritte, insbesondere die Entwicklungen bei Quantencomputern und den Wandel in der Kryptographie, genau im Auge.
+
 

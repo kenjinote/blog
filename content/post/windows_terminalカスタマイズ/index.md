@@ -172,9 +172,9 @@ Windows Terminalは「JSON Fragments」と呼ばれる拡張メカニズムを�
 
 ## 3.2 Nerd Fontsの導入とフォント設定の最適化（CaskaydiaCove Nerd Font）
 
-後述するOh My PoshやStarshipのような高度なプロンプトツールを使用する場合、Gitのブランチアイコン、プログラミング言語のロゴ、OSのシンボルなど、特殊なグリフ（アイコン）を含むフォントが必須となります。これらのアイコンを既存のプログラミング用フォントにパッチ（追加）したものが「**Nerd Fonts**」です。
+後述するOh My PoshやStarshipのような高度なプロンプトツールを使用する場合、Gitのブランチアイコン、プログラミング言語のロゴ、OSのシンボルなど、特殊なグリフ（アイコン）を含むフォントが必須となります。これらのアイコンを既存のプログラミング用フォントにパッチ（追加）したものが「 **Nerd Fonts** 」です。
 
-Microsoftが開発したプログラミング用フォント「Cascadia Code」は、非常に読みやすく優れていますが、デフォルトではNerd Fontのアイコンを含んでいません。そこで、Cascadia CodeにNerd Fontパッチを適用した「**CaskaydiaCove Nerd Font**」を導入することを強く推奨します。
+Microsoftが開発したプログラミング用フォント「Cascadia Code」は、非常に読みやすく優れていますが、デフォルトではNerd Fontのアイコンを含んでいません。そこで、Cascadia CodeにNerd Fontパッチを適用した「 **CaskaydiaCove Nerd Font** 」を導入することを強く推奨します。
 
 ### インストール手順：
 1. [Nerd Fontsの公式GitHubリリースページ](https://github.com/ryanoasis/nerd-fonts/releases)から `CascadiaCode.zip` をダウンロードします。
@@ -250,7 +250,7 @@ wt -p "PowerShell 7" -d "C:\Projects\MyApp" ; split-pane -p "Ubuntu-22.04" -d "/
 
 # 6. プロンプトの進化論1：PowerShellとOh My Posh
 
-Windows環境における標準シェルであるPowerShell（特にクロスプラットフォーム対応の最新版 PowerShell 7 / PowerShell Core）を劇的に進化させるのが、「**Oh My Posh**」です。Oh My Poshは、あらゆるシェルに対応したカスタムプロンプトエンジンであり、現在のディレクトリ、Gitのブランチと変更ステータス、Node.jsやPythonのバージョン、Kubernetesのコンテキストなど、開発に必要なあらゆる状態を美しく視覚的に提示してくれます。
+Windows環境における標準シェルであるPowerShell（特にクロスプラットフォーム対応の最新版 PowerShell 7 / PowerShell Core）を劇的に進化させるのが、「 **Oh My Posh** 」です。Oh My Poshは、あらゆるシェルに対応したカスタムプロンプトエンジンであり、現在のディレクトリ、Gitのブランチと変更ステータス、Node.jsやPythonのバージョン、Kubernetesのコンテキストなど、開発に必要なあらゆる状態を美しく視覚的に提示してくれます。
 
 以下の図は、PowerShell起動時にOh My Poshがどのようにロードされ、プロンプトがレンダリングされるかのシーケンスを示しています。
 
@@ -315,7 +315,7 @@ Import-Module -Name Terminal-Icons
 
 # 7. プロンプトの進化論2：WSL2アーキテクチャとStarshipの融合
 
-Windows上で本物のLinuxカーネルを実行できるWSL2（Windows Subsystem for Linux 2）は、モダンなWeb開発やクラウドネイティブ開発に不可欠です。WSL内のシェル（BashやZsh）のプロンプトをカスタマイズするには、「**Starship**」が最適解となります。
+Windows上で本物のLinuxカーネルを実行できるWSL2（Windows Subsystem for Linux 2）は、モダンなWeb開発やクラウドネイティブ開発に不可欠です。WSL内のシェル（BashやZsh）のプロンプトをカスタマイズするには、「 **Starship** 」が最適解となります。
 
 StarshipはRust言語で記述された、極めて高速でカスタマイズ性に優れたクロスシェルプロンプトです。設定ファイル（TOML）を一つ書くだけで、Bash、Zsh、Fishなどどのシェルでも全く同じプロンプトを再現できるのが強みです。
 
@@ -398,7 +398,7 @@ error_symbol = "[❯](bold red)"
 
 # 8. ターミナル描画の遅延とパフォーマンスの数理モデル
 
-ターミナルの使い心地を評価する上で最も重要な指標の一つが「**入力レイテンシ（Input Latency）**」です。キーボードのキーを押し込んでから、画面上の対応するピクセルの色が変化し、視覚的なフィードバックが得られるまでの時間遅延を指します。
+ターミナルの使い心地を評価する上で最も重要な指標の一つが「 **入力レイテンシ（Input Latency）** 」です。キーボードのキーを押し込んでから、画面上の対応するピクセルの色が変化し、視覚的なフィードバックが得られるまでの時間遅延を指します。
 
 この全体遅延 $ T_{total} $ は、数学的に以下のようなコンポーネントの総和として厳密にモデル化できます。
 
@@ -461,3 +461,4 @@ Windows Terminalの真価は、単なる「古いコマンドプロンプトの�
 本記事で解説した数々の設定手法——カラースキームの調律、Nerd Fontによる視覚情報の拡張、Oh My PoshやStarshipによるコンテキスト対応の賢いプロンプト、そしてペイン分割を活用したマルチタスク環境の構築。これらは、日々のコーディング体験を向上させるだけでなく、ターミナルに向かうモチベーションそのものを高めてくれることでしょう。
 
 開発環境の最適化に終わりはありません。新しいコマンドラインツールが登場し、OSのアーキテクチャが進化するたびに、私たちのターミナルもまた形を変えていくはずです。この記事が、読者の皆様にとっての「究極の開発環境」を探求する終わりのない旅の、確かな道標となることを願ってやみません。
+

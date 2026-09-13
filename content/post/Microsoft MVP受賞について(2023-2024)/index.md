@@ -14,7 +14,7 @@ description: 'Microsoft MVP（2023-2024）のDeveloper Technologiesカテゴリ�
 この度、Microsoft MVP(2023-2024)を受賞しました。
 2017年から7年連続での受賞となります。
 
-受賞したカテゴリーは、**Developer Technologies** となります。
+受賞したカテゴリーは、 **Developer Technologies** となります。
 
 これまでの活動を振り返ると、以下のような活動を行ってきました。
 
@@ -26,3 +26,4 @@ description: 'Microsoft MVP（2023-2024）のDeveloper Technologiesカテゴリ�
 これからも、より良い記事を書たりして情報発信をしていきたいと思っています。
 
 どうぞよろしくお願いいたします。
+

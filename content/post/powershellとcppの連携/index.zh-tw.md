@@ -85,7 +85,7 @@ extern "C" {
 
 ### 記憶體管理與字串轉換 (`BSTR`, `LPWSTR`)
 
-在C++與PowerShell（.NET）之間傳遞資料時，最需要注意的是**字串編碼**與**記憶體管理**。
+在C++與PowerShell（.NET）之間傳遞資料時，最需要注意的是 **字串編碼** 與 **記憶體管理** 。
 
 - **`LPCWSTR` / `LPWSTR`**：C/C++的寬字串指標（UTF-16LE）。在Windows API的 `W` 系列函數中為標準用法。在P/Invoke中指定 `CharSet = CharSet.Unicode`，就會自動與.NET的 `String` 或 `StringBuilder` 進行封送處理。
 - **`BSTR`**：在COM（Component Object Model）中使用的帶有長度前綴的寬字串。必須使用 `SysAllocString` 與 `SysFreeString` 來管理記憶體。在P/Invoke中須指定 `[MarshalAs(UnmanagedType.BStr)]`。
@@ -168,9 +168,9 @@ sequenceDiagram
 
 主要有兩種作法：
 1. **程序啟動（`CreateProcess` / `_popen`）**：作為獨立程序啟動 `powershell.exe`，並透過管線（Pipe）連接標準輸入/輸出。
-2. **PowerShell Hosting API（透過C++/CLI）**：在同一個程序內代管PowerShell執行階段的方法。
+2. **PowerShell Hosting API（透過C++/CLI）** ：在同一個程序內代管PowerShell執行階段的方法。
 
-本文將針對在系統程式設計中最為穩健且通用的**使用管線搭配CreateProcess**之手法進行解說。
+本文將針對在系統程式設計中最為穩健且通用的 **使用管線搭配CreateProcess** 之手法進行解說。
 
 ### 透過CreateProcess與匿名管線執行
 
@@ -254,7 +254,7 @@ int main() {
 
 ### Windows登錄檔與PowerShell的整合
 
-在從C++執行腳本時，應避免將動態設定值或執行路徑寫死（hardcode）。在多數情況下，C++應用程式會從**Windows登錄檔**讀取設定。
+在從C++執行腳本時，應避免將動態設定值或執行路徑寫死（hardcode）。在多數情況下，C++應用程式會從 **Windows登錄檔** 讀取設定。
 
 在企業系統中，較偏好的架構是在C++端使用 `RegOpenKeyEx` 與 `RegQueryValueEx` 從 `HKLM\SOFTWARE\MyApp` 取得PowerShell腳本的路徑，並將其作為參數傳遞給上述的 `CreateProcess`。
 
@@ -288,22 +288,22 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 ### 情境1：高速檔案系統掃描與權限變更
 
 在大規模檔案伺服器中，萃取出具備特定副檔名且設定了特定ACL（存取控制清單）的檔案，並批次變更其權限的任務。
-- **C++的角色**：使用 `FindFirstFile` / `FindNextFile` 與多執行緒極速走訪目錄樹，產生符合條件的檔案路徑清單。
-- **PowerShell的角色**：針對從C++接收到的清單，使用 `Set-Acl` 批次套用權限（或是與Active Directory整合的處理）。
+- **C++的角色** ：使用 `FindFirstFile` / `FindNextFile` 與多執行緒極速走訪目錄樹，產生符合條件的檔案路徑清單。
+- **PowerShell的角色** ：針對從C++接收到的清單，使用 `Set-Acl` 批次套用權限（或是與Active Directory整合的處理）。
 
 ### 情境2：收集自訂的硬體資訊
 
 監控無法透過WMI（Windows Management Instrumentation）或CIM（Common Information Model）取得資訊的自訂硬體裝置（例如：特殊的PCIe卡或感測器）。
-- **C++的角色**：向裝置驅動程式發出 `DeviceIoControl` 呼叫，負責取得並解析二進位資料的DLL。
-- **PowerShell的角色**：定期呼叫DLL，將解析結果格式化為JSON並傳送至監控伺服器的REST API。
+- **C++的角色** ：向裝置驅動程式發出 `DeviceIoControl` 呼叫，負責取得並解析二進位資料的DLL。
+- **PowerShell的角色** ：定期呼叫DLL，將解析結果格式化為JSON並傳送至監控伺服器的REST API。
 
 ## 記憶體管理與疑難排解的最佳實踐
 
-在整合時最常發生的Bug為**記憶體洩漏**與**存取違規（Access Violation: 0xC0000005）**。
+在整合時最常發生的Bug為 **記憶體洩漏** 與 **存取違規（Access Violation: 0xC0000005）** 。
 
-1. **指標的有效期間**：當從PowerShell端傳遞 `[ref]` 或 `StringBuilder` 時，P/Invoke僅會在呼叫期間固定（Pin）該記憶體。切勿在C++端將該指標儲存至全域變數，並在日後存取。若需進行非同步回呼，必須使用 `GCHandle` 明確固定記憶體。
-2. **64位元環境的指標大小**：現代的Windows基本上皆為64位元（x64）。C++端的指標大小為8位元組，而PowerShell（.NET）端必須使用 `IntPtr`。由於Windows中C++的 `long` 為4位元組，將指標強制轉型為 `long` 來傳遞等老舊程式碼寫法將成為崩潰的主因。
-3. **字串編碼不一致**：PowerShell內部使用UTF-16。若C++端試圖以ANSI字串（`std::string`, `char*`）接收，將會發生亂碼。請務必使用寬字串（`std::wstring`, `wchar_t*`），並在P/Invoke端指定 `CharSet = CharSet.Unicode`。
+1. **指標的有效期間** ：當從PowerShell端傳遞 `[ref]` 或 `StringBuilder` 時，P/Invoke僅會在呼叫期間固定（Pin）該記憶體。切勿在C++端將該指標儲存至全域變數，並在日後存取。若需進行非同步回呼，必須使用 `GCHandle` 明確固定記憶體。
+2. **64位元環境的指標大小** ：現代的Windows基本上皆為64位元（x64）。C++端的指標大小為8位元組，而PowerShell（.NET）端必須使用 `IntPtr`。由於Windows中C++的 `long` 為4位元組，將指標強制轉型為 `long` 來傳遞等老舊程式碼寫法將成為崩潰的主因。
+3. **字串編碼不一致** ：PowerShell內部使用UTF-16。若C++端試圖以ANSI字串（`std::string`, `char*`）接收，將會發生亂碼。請務必使用寬字串（`std::wstring`, `wchar_t*`），並在P/Invoke端指定 `CharSet = CharSet.Unicode`。
 
 ## 總結
 
@@ -316,4 +316,5 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 ---
 
 *在本技術部落格中，未來也將持續探討有關Windows內部結構與進階自動化的深入主題。如有任何問題或回饋，歡迎在留言區與我們分享。*
+
 

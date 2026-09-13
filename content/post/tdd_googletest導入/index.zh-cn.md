@@ -12,11 +12,11 @@ description: '在C++项目中引入测试驱动开发（TDD）的完整指南。
 
 现代软件开发中，在保持代码质量的同时快速添加新功能是首要任务。特别是在C++这种复杂且对性能要求极高的语言中，内存管理错误或未定义行为（Undefined Behavior）很容易导致致命的Bug，因此测试的重要性比其他语言更高。
 
-本文将极其详细且实用性强地讲解如何在C++项目中引入**测试驱动开发（Test-Driven Development: TDD）**的方法。我们将全面涵盖单元测试框架**GoogleTest**和Mock框架**GoogleMock**的使用方法，以及如何使用构建系统**CMake**进行现代化的配置，甚至包括代码覆盖率的测量方法。
+本文将极其详细且实用性强地讲解如何在C++项目中引入 **测试驱动开发（Test-Driven Development: TDD）** 的方法。我们将全面涵盖单元测试框架 **GoogleTest** 和Mock框架 **GoogleMock** 的使用方法，以及如何使用构建系统 **CMake** 进行现代化的配置，甚至包括代码覆盖率的测量方法。
 
 ## 1. 测试驱动开发（TDD）的哲学与优势
 
-测试驱动开发（TDD）是一种“在编写实现之前先编写测试”的软件开发方法。这不仅仅是一种测试方法，更起到**设计方法**的作用。通过先编写测试，开发者会自然而然地关注“易用的接口”和“松耦合的设计”。
+测试驱动开发（TDD）是一种“在编写实现之前先编写测试”的软件开发方法。这不仅仅是一种测试方法，更起到 **设计方法** 的作用。通过先编写测试，开发者会自然而然地关注“易用的接口”和“松耦合的设计”。
 
 ### 1.1 Red-Green-Refactor 循环
 
@@ -45,7 +45,7 @@ $$ Cost(t) = C_0 \times e^{k \cdot t} $$
 
 ## 2. C++中的测试工具选择与现代CMake配置
 
-C++中有许多测试框架，如Catch2、Boost.Test、doctest等，但作为行业标准被最广泛使用的是**GoogleTest（gtest）**。GoogleTest的魅力在于其丰富的断言、强大的Mock框架（GoogleMock）以及高度的可扩展性。
+C++中有许多测试框架，如Catch2、Boost.Test、doctest等，但作为行业标准被最广泛使用的是 **GoogleTest（gtest）** 。GoogleTest的魅力在于其丰富的断言、强大的Mock框架（GoogleMock）以及高度的可扩展性。
 
 ### 2.1 利用 CMake 的 `FetchContent` 引入 GoogleTest
 
@@ -152,14 +152,14 @@ int Calculator::Add(int a, int b) {
 
 使用GoogleTest时，存在两种断言宏：`EXPECT_*` 和 `ASSERT_*`。理解它们之间的区别对于编写健壮的测试非常重要。
 
-- **`EXPECT_EQ(expected, actual)`**: 即使测试失败，也会**继续**执行当前的测试函数。适合在一个测试内验证多个状态的情况。
-- **`ASSERT_EQ(expected, actual)`**: 如果测试失败，会立即**中断**当前测试函数的执行（致命失败）。适用于后续的验证已经失去意义的情况（例如：在确认指针不为 `nullptr` 之后立即对其进行解引用的情况）。
+- **`EXPECT_EQ(expected, actual)`**: 即使测试失败，也会 ** 继续**执行当前的测试函数。适合在一个测试内验证多个状态的情况。
+- **`ASSERT_EQ(expected, actual)`**: 如果测试失败，会立即 ** 中断**当前测试函数的执行（致命失败）。适用于后续的验证已经失去意义的情况（例如：在确认指针不为 `nullptr` 之后立即对其进行解引用的情况）。
 
 ## 5. 依赖注入（DI）与使用 GoogleMock 进行 Mock 化
 
 在实际的C++项目中，必然会产生对外部系统（如数据库访问、网络通信、硬件控制等）的依赖。如果将这些依赖关系原封不动地保留，单元测试将变得非常困难。
 
-这时就需要用到**依赖注入（Dependency Injection: DI）**，以及使用**GoogleMock**对接口进行Mock化。
+这时就需要用到 **依赖注入（Dependency Injection: DI）** ，以及使用 **GoogleMock** 对接口进行Mock化。
 
 ```mermaid
 flowchart LR
@@ -260,7 +260,7 @@ TEST(UserServiceTest, RejectsEmptyNameWithoutCallingRepository) {
 
 ## 6. 代码覆盖率的测量与可视化
 
-编写完测试后，为了客观评估项目中有多少部分在测试中被执行了（被覆盖了），我们需要测量**代码覆盖率**。代码覆盖率（$Coverage$）可以用以下公式表示：
+编写完测试后，为了客观评估项目中有多少部分在测试中被执行了（被覆盖了），我们需要测量 **代码覆盖率** 。代码覆盖率（$Coverage$）可以用以下公式表示：
 
 $$ Coverage = \left( \frac{L_{executed}}{L_{total}} \right) \times 100 \ (\%) $$
 
@@ -343,4 +343,5 @@ $$ M = E - N + 2P $$
 4. 使用 **gcov/lcov** 可视化测试覆盖率
 
 虽然TDD是一项需要时间去掌握的方法，但在像C++这样同时需要性能和安全性的系统编程中，它的投资回报是不可估量的。请务必在你的下一个项目中逐步实践TDD，以获得稳健且易于维护的C++代码。
+
 

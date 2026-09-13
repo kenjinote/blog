@@ -12,7 +12,7 @@ description: 'Le problème de la factorisation qui sous-tend la sécurité du ch
 
 Dans la société Internet moderne, la sécurité des informations est protégée par des systèmes de cryptographie à clé publique tels que le chiffrement RSA. Le fondement de la sécurité du chiffrement RSA repose sur le fait suivant : **« la factorisation de nombres composés géants est extrêmement difficile sur le plan de la complexité des calculs »**.
 
-Cet article décortique le mécanisme mathématique du **« crible algébrique »** (General Number Field Sieve, GNFS), l'algorithme de factorisation en nombres premiers le plus puissant sur les ordinateurs classiques, et explore en profondeur, à l'aide de formules et de schémas conceptuels, ce changement de paradigme et pourquoi il est complètement vaincu par **« l'algorithme de Shor »** découvert par Peter Shor.
+Cet article décortique le mécanisme mathématique du **« crible algébrique » ** (General Number Field Sieve, GNFS), l'algorithme de factorisation en nombres premiers le plus puissant sur les ordinateurs classiques, et explore en profondeur, à l'aide de formules et de schémas conceptuels, ce changement de paradigme et pourquoi il est complètement vaincu par ** « l'algorithme de Shor »** découvert par Peter Shor.
 
 ---
 
@@ -90,7 +90,7 @@ Enfin, on extrait la racine carrée à la fois dans le corps de nombres et dans 
 
 ## 3. La percée grâce au calcul quantique : « L'algorithme de Shor »
 
-Alors que le GNFS nécessite un temps sous-exponentiel, **« l'algorithme de Shor »**, publié en 1994 par Peter Shor, peut résoudre ce problème en un **« temps polynomial »** en utilisant un ordinateur quantique.
+Alors que le GNFS nécessite un temps sous-exponentiel, **« l'algorithme de Shor » **, publié en 1994 par Peter Shor, peut résoudre ce problème en un ** « temps polynomial »** en utilisant un ordinateur quantique.
 
 ### La complexité de l'algorithme de Shor
 
@@ -98,7 +98,7 @@ Si l'on suppose le nombre de qubits comme étant de $O(\log N)$, la complexité 
 
 $$ O((\log N)^3) $$
 
-Cela signifie qu'elle ne provoque pas d'explosion exponentielle par rapport au nombre de bits. C'est un résultat stupéfiant : même pour un nombre composé géant où le **« calcul classique »** nécessiterait une durée de vie supérieure à celle de l'univers, le **« calcul quantique »** pourrait le décrypter en quelques heures ou quelques jours.
+Cela signifie qu'elle ne provoque pas d'explosion exponentielle par rapport au nombre de bits. C'est un résultat stupéfiant : même pour un nombre composé géant où le **« calcul classique » ** nécessiterait une durée de vie supérieure à celle de l'univers, le ** « calcul quantique »** pourrait le décrypter en quelques heures ou quelques jours.
 
 ### Vue d'ensemble de l'algorithme de Shor : Réduction au problème de recherche de période
 
@@ -109,7 +109,7 @@ L'algorithme de Shor ramène astucieusement le problème de la factorisation en 
 3. Trouver la période $r$ de $f(x)$, c'est-à-dire le plus petit entier positif $r$ tel que $a^r \equiv 1 \pmod N$.
 4. Si $r$ est pair, vérifier si $a^{r/2} \not\equiv -1 \pmod N$, puis calculer $\gcd(a^{r/2} \pm 1, N)$ pour obtenir les facteurs premiers.
 
-C'est cette étape 3, la **« découverte de la période $r$ »**, qui est le goulet d'étranglement nécessitant un temps exponentiel sur un ordinateur classique, mais que l'ordinateur quantique résout instantanément grâce à la **« superposition quantique »** et à la **« transformée de Fourier quantique »** (QFT).
+C'est cette étape 3, la **« découverte de la période $r$ » **, qui est le goulet d'étranglement nécessitant un temps exponentiel sur un ordinateur classique, mais que l'ordinateur quantique résout instantanément grâce à la ** « superposition quantique » ** et à la ** « transformée de Fourier quantique »** (QFT).
 
 ---
 
@@ -188,13 +188,14 @@ graph TD
 
 Le GNFS adopte l'approche d'**« explorer des relations dans un espace mathématique (corps de nombres) »**. Cependant, comme l'espace de recherche s'étend exponentiellement par rapport au nombre de chiffres, avec la puissance de calcul des ordinateurs classiques (même en incluant la parallélisation), le décryptage devient virtuellement impossible lorsque la longueur de la clé dépasse 2048 bits par exemple.
 
-D'un autre côté, l'algorithme de Shor utilise la **« nature ondulatoire due à l'interférence quantique »**. Il évalue simultanément tous les chemins de calcul dans un état superposé, annule les mauvaises réponses par la QFT (interférence destructive), et amplifie uniquement l'amplitude de probabilité de la période correspondant à la bonne réponse (interférence constructive). De cette façon, il ne s'agit pas d'explorer l'espace, mais de **« faire émerger la réponse exacte d'elle-même »**, réalisant ainsi une approche d'une dimension totalement différente.
+D'un autre côté, l'algorithme de Shor utilise la **« nature ondulatoire due à l'interférence quantique » **. Il évalue simultanément tous les chemins de calcul dans un état superposé, annule les mauvaises réponses par la QFT (interférence destructive), et amplifie uniquement l'amplitude de probabilité de la période correspondant à la bonne réponse (interférence constructive). De cette façon, il ne s'agit pas d'explorer l'espace, mais de ** « faire émerger la réponse exacte d'elle-même »**, réalisant ainsi une approche d'une dimension totalement différente.
 
 ## 6. Résumé
 
-Cet article a profondément comparé les structures algorithmiques et le contexte mathématique du **« GNFS »**, qui représente l'ultime limite classique, et de **« l'algorithme de Shor »**, qui démontre la puissance du calcul quantique.
+Cet article a profondément comparé les structures algorithmiques et le contexte mathématique du **« GNFS » **, qui représente l'ultime limite classique, et de ** « l'algorithme de Shor »**, qui démontre la puissance du calcul quantique.
 
 Alors que le GNFS, grâce à des astuces mathématiques telles que le choix des polynômes et le calcul de matrices géantes, est parvenu à abaisser sa complexité à un temps sous-exponentiel, l'algorithme de Shor fusionne les principes fondamentaux de la mécanique quantique (superposition et interférence) avec un outil mathématique (la QFT) pour accomplir une percée immédiate vers le temps polynomial.
 
 Actuellement, il n'existe pas d'ordinateur quantique tolérant aux pannes (FTQC) capable d'exécuter l'algorithme de Shor à une échelle pratique (plusieurs milliers de qubits). Cependant, l'existence même de ce changement de paradigme mathématique et théorique est la principale raison pour laquelle la transition vers la cryptographie post-quantique (PQC : Post-Quantum Cryptography) est si urgente partout dans le monde aujourd'hui.
+
 

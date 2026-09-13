@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 가 됩니다. Windows 11의 Copilot+ PC 요건인 40 TOPS를 만족하는 성능임이 수학적으로 증명됩니다.
 
-또한, AI 모델, 특히 LLM의 추론(디코드 페이즈)은 **메모리 바운드(Memory-Bound)**가 되기 쉽습니다. 시스템 메모리의 이론적 대역폭 $BW$ 는 다음과 같이 계산됩니다.
+또한, AI 모델, 특히 LLM의 추론(디코드 페이즈)은 **메모리 바운드(Memory-Bound)** 가 되기 쉽습니다. 시스템 메모리의 이론적 대역폭 $BW$ 는 다음과 같이 계산됩니다.
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -304,7 +304,7 @@ C++에서 DirectML을 사용하는 최대의 장점은 DirectX 12(DX12)와의 �
 Windows AI API나 DirectML을 활용하여 최상급의 AI 애플리케이션을 개발할 때의 필수적인 최적화 전략을 아래에 정리합니다.
 
 ### 7.1 모델 양자화(Quantization)와 Olive Toolkit
-NPU의 진정한 힘을 발휘시키려면, AI 모델의 가중치와 활성화 값을 FP32(단정밀도 부동소수점)에서 INT8 또는 INT4로 **양자화(Quantization)**하는 것이 절대적인 조건입니다. NPU의 아키텍처는 정수 연산에 특화되어 있어, FP32와 비교해 INT8에서는 이론상 4배의 처리량과 대폭적인 전력 절감을 실현합니다.
+NPU의 진정한 힘을 발휘시키려면, AI 모델의 가중치와 활성화 값을 FP32(단정밀도 부동소수점)에서 INT8 또는 INT4로 **양자화(Quantization)** 하는 것이 절대적인 조건입니다. NPU의 아키텍처는 정수 연산에 특화되어 있어, FP32와 비교해 INT8에서는 이론상 4배의 처리량과 대폭적인 전력 절감을 실현합니다.
 
 Microsoft가 제공하는 `Olive (ONNX Live)` 툴체인을 사용하면 PyTorch 등의 모델을 Windows 환경에 맞게 자동 최적화할 수 있습니다. Olive는 Transformer 모델에 대한 특수한 어텐션 최적화나 하드웨어별 그래프 컴파일을 강력하게 지원합니다.
 
@@ -355,3 +355,4 @@ Windows 11의 Copilot Runtime과 `Microsoft.Windows.AI` API는 모든 Windows �
 
 ---
 *※ 주의사항: 이 기사는 2026년 9월 현재의 프리뷰 버전 API 및 최신 사양을 바탕으로 작성되었습니다. Windows 업데이트에 따라 API 사양이나 하드웨어 요구 사항이 변경될 수 있으므로, 구현 시에는 반드시 Microsoft Learn의 공식 문서를 함께 참조해 주시기 바랍니다.*
+

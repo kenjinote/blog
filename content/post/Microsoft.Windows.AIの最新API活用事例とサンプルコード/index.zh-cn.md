@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 这就从数学上证明了其性能足以满足Windows 11对于Copilot+ PC的40 TOPS的要求。
 
-此外，AI模型尤其是LLM的推理（解码阶段）往往会受限于**内存带宽（Memory-Bound）**。系统内存的理论带宽 $BW$ 计算如下。
+此外，AI模型尤其是LLM的推理（解码阶段）往往会受限于 **内存带宽（Memory-Bound）** 。系统内存的理论带宽 $BW$ 计算如下。
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -297,14 +297,14 @@ int main() {
 ### 6.1 C++中的内存管理与零拷贝（Zero-Copy）推理的重要性
 在C++中使用DirectML的最大优势在于能够与DirectX 12 (DX12) 进行紧密集成。上述代码出于教学目的，包含了标准CPU内存的数据拷贝，但在实际的游戏引擎或视频处理应用中，很多时候我们已经通过DX12将图像（纹理）保留在GPU或NPU的内存空间上了。
 
-在这种情况下，可以利用 `OrtDmlApi` 的高级绑定功能，将DX12资源直接映射为ONNX Runtime的张量，从而实现“**零拷贝推理 (Zero-Copy Inference)**”。这彻底消除了PCIe总线间的数据传输开销（即消耗前文提到的带宽 $BW$），能够极大提升实时视频处理的帧率。
+在这种情况下，可以利用 `OrtDmlApi` 的高级绑定功能，将DX12资源直接映射为ONNX Runtime的张量，从而实现“ **零拷贝推理 (Zero-Copy Inference)** ”。这彻底消除了PCIe总线间的数据传输开销（即消耗前文提到的带宽 $BW$），能够极大提升实时视频处理的帧率。
 
 ## 7. 性能优化与最佳实践
 
 在使用Windows AI API和DirectML开发顶级AI应用时，以下是必不可少的优化策略总结。
 
 ### 7.1 模型量化 (Quantization) 与 Olive Toolkit
-要发挥NPU的真正实力，将AI模型的权重和激活从FP32（单精度浮点数）**量化（Quantize）**为INT8或INT4是绝对前提。NPU的架构专为整数运算优化，与FP32相比，INT8理论上能实现4倍的吞吐量，并大幅节省功耗。
+要发挥NPU的真正实力，将AI模型的权重和激活从FP32（单精度浮点数） **量化（Quantize）** 为INT8或INT4是绝对前提。NPU的架构专为整数运算优化，与FP32相比，INT8理论上能实现4倍的吞吐量，并大幅节省功耗。
 
 使用Microsoft提供的 `Olive (ONNX Live)` 工具链，可以将PyTorch等模型针对Windows环境进行自动优化。Olive强力支持对Transformer模型的特殊注意力优化以及针对不同硬件的图编译。
 
@@ -343,9 +343,9 @@ sequenceDiagram
 
 `Microsoft.Windows.AI` API与Copilot Runtime目前正处于快速演进之中。在面向开发者的未来更新中，预计将出现以下范式转变：
 
-- **多模态API的系统原生集成**：不仅是文本，还将在操作系统级别原生提供对语音、图像乃至实时视频流的无缝同步处理及跨模态AI推理。
-- **系统级RAG（检索增强生成）支持**：在操作系统安全沙盒内，将本地PC中的个人文档和Windows Search索引与AI模型协同，构建在完全保护用户隐私下的超高级个人AI助手。
-- **NPU资源动态伸缩**：当多个AI应用（例如后台运行的降噪和前台运行的代码生成）同时运行时，Windows内核调度程序将动态切换NPU的执行上下文，以保证服务质量（QoS）。
+- **多模态API的系统原生集成** ：不仅是文本，还将在操作系统级别原生提供对语音、图像乃至实时视频流的无缝同步处理及跨模态AI推理。
+- **系统级RAG（检索增强生成）支持** ：在操作系统安全沙盒内，将本地PC中的个人文档和Windows Search索引与AI模型协同，构建在完全保护用户隐私下的超高级个人AI助手。
+- **NPU资源动态伸缩** ：当多个AI应用（例如后台运行的降噪和前台运行的代码生成）同时运行时，Windows内核调度程序将动态切换NPU的执行上下文，以保证服务质量（QoS）。
 
 ## 9. 结论：本地AI正在改变应用的未来
 
@@ -355,3 +355,4 @@ Windows 11的Copilot Runtime和 `Microsoft.Windows.AI` API为所有Windows开发
 
 ---
 *※注意事项：本文是基于2026年9月当前的预览版API及最新规范撰写。由于Windows更新可能会更改API规范或硬件要求，在实际应用时，请务必参考Microsoft Learn的官方文档。*
+

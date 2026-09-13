@@ -141,7 +141,7 @@ graph LR
     Act_Betray -->|"If opponent repents<br>and returns to cooperation"| Act_Coop
 ```
 
-In human relationships and international society as well, if a long-term relationship is assumed, by sharing a rule like the "Tit for Tat" strategy—**"basically cooperate, but penalize betrayal"**—we can overcome the prisoner's dilemma and build cooperative relationships.
+In human relationships and international society as well, if a long-term relationship is assumed, by sharing a rule like the "Tit for Tat" strategy— **"basically cooperate, but penalize betrayal"** —we can overcome the prisoner's dilemma and build cooperative relationships.
 
 ## 6. Conclusion: The Value of "Trust" Taught by Mathematics
 
@@ -151,4 +151,5 @@ The individual rationality of "wanting to be the only one who profits" or "not w
 At the same time, however, game theory also teaches us that as long as the condition of "the relationship continuing long-term" is met, **"trusting and cooperating with each other" is the most rational strategy that ultimately maximizes one's own profit as well**.
 
 The next time you wonder, "Should I cheat just a little bit for myself?", try to remember this payoff matrix of the Prisoner's Dilemma. Pursuing immediate profit through "rational betrayal" might be the most irrational choice in the long run.
+
 

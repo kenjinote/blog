@@ -14,7 +14,7 @@ description: '致那些偏偏不选Node.js或Python，非要用“C++ × Win32 A
 想从 C++ 向 Slack 发布消息。
 在 Node.js 或 Python 中很常见，但是使用「C++ × Win32 API × WinHTTP」的情况却很少见，对吧？
 
-在本文中，我将 **通过分步图文并茂的方式，简单易懂地讲解如何使用 Webhook URL 从 C++ 向 Slack 发送消息**。
+在本文中，我将 **通过分步图文并茂的方式，简单易懂地讲解如何使用 Webhook URL 从 C++ 向 Slack 发送消息** 。
 
 ---
 
@@ -38,8 +38,8 @@ description: '致那些偏偏不选Node.js或Python，非要用“C++ × Win32 A
 1. 访问 [https://api.slack.com/apps](https://api.slack.com/apps)
 2. 点击 `Create New App`
 3. 选择 `From scratch`，输入应用名称并选择发布目标工作区
-4. 从左侧菜单中选择“**Incoming Webhooks**”并启用它
-5. 点击“**Add New Webhook to Workspace**”并选择一个频道
+4. 从左侧菜单中选择“ **Incoming Webhooks** ”并启用它
+5. 点击“ **Add New Webhook to Workspace** ”并选择一个频道
 6. 复制生成的 URL（例如：`https://hooks.slack.com/services/xxx/yyy/zzz`）
 
 该 URL 的作用类似于 API 密钥。
@@ -199,3 +199,4 @@ Hello from C++ :rocket:
 * **Slack App + OAuth2 带来的灵活 API 操作**
 
 等，我们可以介绍更深入的 Slack 集成！
+

@@ -26,7 +26,7 @@ Auf dem Heimweg an einem Freitag machte der Mathematiklehrer seinen Schülern ei
 Als die Schüler diese Ankündigung hörten, zitterten sie. Denn sie müssten jeden Tag in Angst verbringen, ohne zu wissen, wann der Test stattfindet.
 Doch Schüler A, das größte Genie der Klasse, stand plötzlich mit einem Grinsen auf.
 
-„Leute, ihr könnt beruhigt sein. **Es ist absolut unmöglich, dass nächste Woche ein Überraschungstest stattfindet. Es ist logisch unmöglich!**“
+„Leute, ihr könnt beruhigt sein. **Es ist absolut unmöglich, dass nächste Woche ein Überraschungstest stattfindet. Es ist logisch unmöglich!** “
 
 Schüler A begann voller Selbstvertrauen, die folgende „perfekte Logik“ an die Tafel zu schreiben.
 
@@ -93,7 +93,7 @@ Ratter! Die Klassenzimmertür öffnete sich, der Lehrer kam herein und sagte:
 **„So, räumt eure Tische auf. Wir beginnen jetzt mit einem Überraschungstest!“**
 
 Die Schüler gerieten in Panik.
-„W-warum!? Dass es am Mittwoch einen Test gibt, **hatten wir absolut nicht vorhergesehen!**“
+„W-warum!? Dass es am Mittwoch einen Test gibt, **hatten wir absolut nicht vorhergesehen!** “
 
 Der Lehrer grinste.
 **„Seht ihr, ihr konntet es nicht vorhersagen, oder? Meine ‚Ankündigung‘ war völlig richtig, und der Überraschungstest hat den Regeln entsprechend funktioniert.“**
@@ -142,4 +142,5 @@ Dieses Paradoxon lässt sich nicht nur auf die Mathematik, sondern auch auf unse
 
 Was wir für eine „perfekte Schlussfolgerung“ halten, ist vielleicht nur ein Luftschloss, das auf dem unbegründeten Glauben beruht: „Der andere wird sich absolut an die Regeln halten“.
 Wenn der Lehrer das nächste Mal sagt: „Ich werde einen Überraschungstest machen“, ist es wohl am vernünftigsten, aufzuhören, die Logik zu verdrehen, und stattdessen brav jeden Tag zu lernen.
+
 

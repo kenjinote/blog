@@ -13,7 +13,7 @@ description: 'Explication approfondie du fonctionnement de « l''algorithme du C
 
 La cryptographie RSA, qui soutient l'Internet moderne, repose sur une croyance mathématique : « il est virtuellement impossible pour les ordinateurs actuels de factoriser d'énormes nombres composés ».
 
-Cependant, l'humanité n'a jamais abandonné. Actuellement, pour les ordinateurs classiques (non quantiques), il existe **l'algorithme le plus puissant et le plus avancé de l'humanité** pour effectuer des factorisations géantes. C'est le **« Crible Général du Corps de Nombres (GNFS : General Number Field Sieve) »**.
+Cependant, l'humanité n'a jamais abandonné. Actuellement, pour les ordinateurs classiques (non quantiques), il existe **l'algorithme le plus puissant et le plus avancé de l'humanité ** pour effectuer des factorisations géantes. C'est le ** « Crible Général du Corps de Nombres (GNFS : General Number Field Sieve) »**.
 
 Dans cet article, nous publions entièrement le code d'implémentation modélisant strictement la logique de pointe de ce GNFS en C++ (utilisant les entiers à précision multiple `boost::multiprecision` de la bibliothèque Boost), et nous expliquerons en profondeur la « théorie algébrique des nombres » qui se cache derrière.
 
@@ -303,7 +303,7 @@ $$f(x) = c_d x^d + c_{d-1} x^{d-1} + \dots + c_1 x + c_0$$
 Ce polynôme $f(x)$ a une propriété extrêmement importante : **« si l'on substitue $m$ à la variable $x$, cela devient exactement $N$ ($f(m) = N$) »**. En d'autres termes, $f(m) \equiv 0 \pmod N$.
 Le polynôme côté rationnel est défini comme $g(x) = x - m$.
 
-Ainsi, le **« monde du corps algébrique $\mathbb{Z}[\alpha]$ »** régi par la racine $\alpha$ de $f(x)=0$ et le **« monde des nombres rationnels (entiers) habituels $\mathbb{Z}$ »** sont solidement liés par un « homomorphisme d'anneaux » $x \to m$.
+Ainsi, le **« monde du corps algébrique $\mathbb{Z}[\alpha]$ » ** régi par la racine $\alpha$ de $f(x)=0$ et le ** « monde des nombres rationnels (entiers) habituels $\mathbb{Z}$ »** sont solidement liés par un « homomorphisme d'anneaux » $x \to m$.
 
 Dans CADO-NFS et d'autres systèmes de pointe, des algorithmes comme celui de Kleinjung ou la réduction de base de réseau LLL sont utilisés pour rechercher pendant des mois le « polynôme $f(x)$ le plus pratique ». Cela garantit que les coefficients du polynôme ne deviennent pas extrêmement grands et que des nombres premiers apparaissent facilement (deviennent friables) dans les étapes suivantes.
 
@@ -443,3 +443,4 @@ C'est le sommet de l'intelligence humaine, où les « abîmes des mathématiques
 Les chats et les informations de carte de crédit que nous envoyons sans y penser sont protégés au-dessus de ces luttes mathématiques astronomiques.
 
 Nous espérons qu'à travers ce framework C++, vous ressentirez le « romantisme des mathématiques et des ordinateurs » qui se cache derrière les algorithmes de décryptage les plus avancés.
+

@@ -44,7 +44,7 @@ Para los pacientes "graves", el Hospital A también tiene una tasa de éxito may
 Sin embargo, al calcular la tasa de éxito "general" combinando a todos los pacientes... ¿qué sucede?
 
 - Hospital A general: $(99 + 801) / 1000 =$ **90%**
-- Hospital B general: $(870 + 70) / 1000 =$ **94%**... no, según el cálculo anterior, ¿**80%**? 
+- Hospital B general: $(870 + 70) / 1000 =$ **94%**... no, según el cálculo anterior, ¿ **80%**? 
 
 Espera un momento, revisemos los datos iniciales de nuevo.
 Los primeros datos eran así:
@@ -149,4 +149,5 @@ En el mundo abundan empresas, políticos y medios de comunicación que aíslan l
 Incluso si te dicen: "¡Nuestro producto A tiene una satisfacción general mayor que el producto B de la competencia!", quizás si lo divides en "público joven" y "público mayor", el producto B de la competencia esté ganando en ambos grupos.
 
 Al mirar los datos, tener una mirada crítica que no se deje engañar por los números "generales" superficiales y preguntarse: "¿No hay un sesgo extremo en las proporciones de los grupos debido a variables ocultas subyacentes (edad, género, gravedad, etc.)?" se convierte en la mejor arma para sobrevivir en la sociedad de la información actual.
+
 

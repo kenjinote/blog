@@ -172,9 +172,9 @@ Jede Farbe wird als Hexadezimal-Farbcode (HEX) angegeben und entspricht einer de
 
 ## 3.2 Einführung von Nerd Fonts und Optimierung der Schriftarteinstellungen (CaskaydiaCove Nerd Font)
 
-Bei der Verwendung fortgeschrittener Prompt-Tools wie Oh My Posh oder Starship, die später beschrieben werden, ist eine Schriftart mit speziellen Glyphen (Symbolen) wie Git-Branch-Symbolen, Programmiersprachenlogos und Betriebssystemsymbolen unerlässlich. „**Nerd Fonts**“ sind bestehende Programmierschriftarten, die mit diesen Symbolen gepatched (ergänzt) wurden.
+Bei der Verwendung fortgeschrittener Prompt-Tools wie Oh My Posh oder Starship, die später beschrieben werden, ist eine Schriftart mit speziellen Glyphen (Symbolen) wie Git-Branch-Symbolen, Programmiersprachenlogos und Betriebssystemsymbolen unerlässlich. „ **Nerd Fonts** “ sind bestehende Programmierschriftarten, die mit diesen Symbolen gepatched (ergänzt) wurden.
 
-Die von Microsoft entwickelte Programmierschriftart „Cascadia Code“ ist sehr gut lesbar und exzellent, enthält aber standardmäßig keine Nerd-Font-Symbole. Daher wird dringend empfohlen, die „**CaskaydiaCove Nerd Font**“ einzuführen, bei der der Nerd-Font-Patch auf Cascadia Code angewendet wurde.
+Die von Microsoft entwickelte Programmierschriftart „Cascadia Code“ ist sehr gut lesbar und exzellent, enthält aber standardmäßig keine Nerd-Font-Symbole. Daher wird dringend empfohlen, die „ **CaskaydiaCove Nerd Font** “ einzuführen, bei der der Nerd-Font-Patch auf Cascadia Code angewendet wurde.
 
 ### Installationsschritte:
 1. Laden Sie `CascadiaCode.zip` von der [offiziellen Nerd Fonts GitHub Releases-Seite](https://github.com/ryanoasis/nerd-fonts/releases) herunter.
@@ -250,7 +250,7 @@ Wenn Sie diesen Befehl als Windows-Verknüpfung oder Batch-Datei speichern, kann
 
 # 6. Evolution des Prompts 1: PowerShell und Oh My Posh
 
-Was PowerShell, die Standard-Shell in Windows-Umgebungen (insbesondere die neueste plattformübergreifende PowerShell 7 / PowerShell Core), drastisch weiterentwickelt, ist „**Oh My Posh**“. Oh My Posh ist eine benutzerdefinierte Prompt-Engine für jede Shell, die alle für die Entwicklung notwendigen Zustände wunderschön und visuell darstellt, wie z.B. das aktuelle Verzeichnis, Git-Branches und Änderungsstatus, Node.js- oder Python-Versionen und Kubernetes-Kontexte.
+Was PowerShell, die Standard-Shell in Windows-Umgebungen (insbesondere die neueste plattformübergreifende PowerShell 7 / PowerShell Core), drastisch weiterentwickelt, ist „ **Oh My Posh** “. Oh My Posh ist eine benutzerdefinierte Prompt-Engine für jede Shell, die alle für die Entwicklung notwendigen Zustände wunderschön und visuell darstellt, wie z.B. das aktuelle Verzeichnis, Git-Branches und Änderungsstatus, Node.js- oder Python-Versionen und Kubernetes-Kontexte.
 
 Das folgende Diagramm zeigt den Ablauf, wie Oh My Posh beim Start von PowerShell geladen wird und der Prompt gerendert wird.
 
@@ -315,7 +315,7 @@ Hunderte von Themes (configs) sind verfügbar, und es ist auch möglich, Ihr eig
 
 # 7. Evolution des Prompts 2: WSL2-Architektur und die Fusion mit Starship
 
-WSL2 (Windows Subsystem for Linux 2), das einen echten Linux-Kernel auf Windows ausführen kann, ist für die moderne Webentwicklung und Cloud-native Entwicklung unerlässlich. Um den Prompt von Shells in WSL (Bash oder Zsh) anzupassen, ist „**Starship**“ die optimale Lösung.
+WSL2 (Windows Subsystem for Linux 2), das einen echten Linux-Kernel auf Windows ausführen kann, ist für die moderne Webentwicklung und Cloud-native Entwicklung unerlässlich. Um den Prompt von Shells in WSL (Bash oder Zsh) anzupassen, ist „ **Starship** “ die optimale Lösung.
 
 Starship ist ein in Rust geschriebener, extrem schneller und in hohem Maße anpassbarer plattformübergreifender Prompt. Seine Stärke liegt darin, dass Sie in jeder Shell wie Bash, Zsh, Fish usw. denselben Prompt reproduzieren können, indem Sie einfach eine einzige Konfigurationsdatei (TOML) schreiben.
 
@@ -398,7 +398,7 @@ In dieser Konfiguration besteht der Prompt aus zwei Zeilen: Die erste Zeile zeig
 
 # 8. Terminal-Rendering-Latenz und mathematische Modelle der Leistung
 
-Einer der wichtigsten Indikatoren bei der Bewertung der Benutzererfahrung eines Terminals ist die „**Eingabelatenz (Input Latency)**“. Sie bezieht sich auf die Zeitverzögerung von dem Moment, in dem eine Taste auf der Tastatur gedrückt wird, bis zu dem Zeitpunkt, an dem sich die Farbe des entsprechenden Pixels auf dem Bildschirm ändert und visuelles Feedback gegeben wird.
+Einer der wichtigsten Indikatoren bei der Bewertung der Benutzererfahrung eines Terminals ist die „ **Eingabelatenz (Input Latency)** “. Sie bezieht sich auf die Zeitverzögerung von dem Moment, in dem eine Taste auf der Tastatur gedrückt wird, bis zu dem Zeitpunkt, an dem sich die Farbe des entsprechenden Pixels auf dem Bildschirm ändert und visuelles Feedback gegeben wird.
 
 Diese Gesamtlatenz $ T_{total} $ lässt sich mathematisch streng als Summe der folgenden Komponenten modellieren:
 
@@ -461,3 +461,4 @@ Der wahre Wert des Windows Terminals geht weit über die Positionierung als blo�
 Die zahlreichen in diesem Artikel beschriebenen Anpassungsmethoden – die Feinabstimmung von Farbschemata, die Erweiterung visueller Informationen durch Nerd Fonts, intelligente kontextsensitive Prompts mit Oh My Posh oder Starship und der Aufbau einer Multitasking-Umgebung mit Fensterteilung – werden nicht nur Ihr tägliches Programmiererlebnis verbessern, sondern auch Ihre Motivation bei der Arbeit mit dem Terminal selbst steigern.
 
 Die Optimierung von Entwicklungsumgebungen ist ein endloser Prozess. Jedes Mal, wenn ein neues Kommandozeilenwerkzeug erscheint oder sich die Architektur des Betriebssystems weiterentwickelt, wird sich wahrscheinlich auch die Form unseres Terminals ändern. Wir hoffen aufrichtig, dass dieser Artikel ein verlässlicher Wegweiser auf Ihrer endlosen Reise zur Suche nach der „ultimativen Entwicklungsumgebung“ sein wird.
+

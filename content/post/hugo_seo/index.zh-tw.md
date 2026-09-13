@@ -12,7 +12,7 @@ description: '精通 Hugo SEO 策略的完整指南。從中繼資料、OGP 到 
 
 Hugo 是一款以 Go 語言編寫、世界最快等級的靜態網站產生器 (SSG)。憑藉其壓倒性的建置速度與靈活的模板系統，獲得了許多工程師與部落客的高度支持。然而，僅僅是網站能高速生成與顯示，並無法獲得搜尋引擎 (如 Google 或 Bing) 的高評價，也就無法將文章傳遞給使用者。
 
-為了提升搜尋排名、增強在社群媒體上的擴散力，進而大幅增加部落格的流量，縝密的 SEO (搜尋引擎最佳化) 策略是不可或缺的。Hugo 中 SEO 策略的核心，在於每篇 Markdown 文章開頭所撰寫的 **Frontmatter**，與解析它並將中繼資料展開至 HTML `<head>` 標籤內的**模板 (Layouts)** 之間的協作。
+為了提升搜尋排名、增強在社群媒體上的擴散力，進而大幅增加部落格的流量，縝密的 SEO (搜尋引擎最佳化) 策略是不可或缺的。Hugo 中 SEO 策略的核心，在於每篇 Markdown 文章開頭所撰寫的 **Frontmatter** ，與解析它並將中繼資料展開至 HTML `<head>` 標籤內的 **模板 (Layouts)** 之間的協作。
 
 本文將徹底解說如何將 Hugo 的功能發揮到極致，以實作進階 SEO 策略的 Frontmatter 設定，涵蓋各種 Meta 標籤、OGP (Open Graph Protocol)、Twitter Cards，以及使用 JSON-LD 輸出結構化資料。內容將以壓倒性的豐富度詳細說明。
 
@@ -39,7 +39,7 @@ $$ PR(u) = \frac{1-d}{N} + d \sum_{v \in B(u)} \frac{PR(v)}{L(v)} $$
 - $B(u)$ : 連結到頁面 $u$ 的頁面集合
 - $L(v)$ : 頁面 $v$ 的對外連結數
 
-這裡最重要的是，**除了努力提升搜尋排名 $R_i$ 之外，還要注意如何將點擊率 $CTR(R_i)$ 最大化**。透過最佳化顯示在搜尋結果 (SERPs) 中的標題與摘要 (description)，以及在社群媒體上分享時的吸睛圖片 (OGP)，可以有意識地提高 $CTR(R_i)$。Frontmatter 的 SEO 設定，正是直接關乎這項 $CTR$ 的最大化。
+這裡最重要的是， **除了努力提升搜尋排名 $R_i$ 之外，還要注意如何將點擊率 $CTR(R_i)$ 最大化** 。透過最佳化顯示在搜尋結果 (SERPs) 中的標題與摘要 (description)，以及在社群媒體上分享時的吸睛圖片 (OGP)，可以有意識地提高 $CTR(R_i)$。Frontmatter 的 SEO 設定，正是直接關乎這項 $CTR$ 的最大化。
 
 ---
 
@@ -180,7 +180,7 @@ images:
 
 ## 5. 實作結構化資料 (JSON-LD)
 
-在現今的 SEO 中，**JSON-LD (JavaScript Object Notation for Linked Data)** 已成為向搜尋引擎精確傳達頁面語意結構的主流技術。透過這項設定，能更容易在搜尋結果中顯示複合式摘要 (如星級評分、作者名稱、發布日期等)。
+在現今的 SEO 中， **JSON-LD (JavaScript Object Notation for Linked Data)** 已成為向搜尋引擎精確傳達頁面語意結構的主流技術。透過這項設定，能更容易在搜尋結果中顯示複合式摘要 (如星級評分、作者名稱、發布日期等)。
 
 ### 5.1. JSON-LD 的結構
 
@@ -313,7 +313,7 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ## 7. 網站效能與 Core Web Vitals
 
-在 SEO 領域，與標籤最佳化同等重要的，就是**頁面的載入速度**。Google 已將 Core Web Vitals (LCP, FID/INP, CLS) 納入排名因素之中。
+在 SEO 領域，與標籤最佳化同等重要的，就是 **頁面的載入速度** 。Google 已將 Core Web Vitals (LCP, FID/INP, CLS) 納入排名因素之中。
 
 作為靜態網站的 Hugo 本身在 TTFB (Time to First Byte) 上就表現優異，但在大量使用圖片的部落格中，圖片最佳化是不可或缺的。透過將 Hugo 強大的圖片處理功能 (Image Processing) 結合 Frontmatter 一同使用，可以在建置時自動進行調整大小或轉換為次世代格式 (如 WebP 等)。
 
@@ -333,5 +333,6 @@ expiryDate: "2026-12-31T23:59:59Z"
 4. **進階流量管理**: 透過 Aliases 進行重新導向，以及使用 Meta 標籤進行機器人控制
 
 儘管搜尋引擎的演算法日新月異，但提供能讓搜尋引擎「正確理解頁面內容」的訊號，這項 SEO 根本原則是不會改變的。透過鑽研 Hugo 靈活的模板引擎與 Frontmatter，持續發送出最高品質的訊號，讓部落格的流量獲得戲劇性的增長吧！
+
 
 

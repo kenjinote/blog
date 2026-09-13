@@ -17,7 +17,7 @@ tags: ["C++", "CMake", "Build System", "Cross-Platform"]
 
 ## 1. CMake 是什么？（元构建系统的概念）
 
-CMake 本身并不是直接编译源代码的工具。CMake 是一个“生成构建系统的系统”，即 **元构建系统 (Meta-Build System)**。
+CMake 本身并不是直接编译源代码的工具。CMake 是一个“生成构建系统的系统”，即 **元构建系统 (Meta-Build System)** 。
 
 CMake 的主要作用是读取与平台和编译器无关的抽象配置文件（`CMakeLists.txt`），并自动生成最适合各自环境的原生构建脚本（例如：Linux 下的 `Makefile`、Windows 下的 Visual Studio `.sln` 项目文件，或者是高速的 `build.ninja`）。
 
@@ -45,7 +45,7 @@ graph TD
 
 CMake 3.0 之后的写法被称为“现代 CMake（Modern CMake）”，其设计理念与之前（传统 CMake）有着根本的不同。在传统的 CMake 中，主流做法是逐个目录地修改全局变量（例如使用 `include_directories()` 或 `link_libraries()`），但这往往会导致设置在无意中波及到其他模块，从而引发严重的副作用。
 
-在现代 CMake 中，一切都作为 **目标 (Target)** 和 **属性 (Property)** 来处理。这类似于面向对象编程中类与成员变量的关系。
+在现代 CMake 中，一切都作为 **目标 (Target)** 和 ** 属性 (Property)** 来处理。这类似于面向对象编程中类与成员变量的关系。
 
 - **目标**: 可执行文件（Executable）或库（Library）。
 - **属性**: 编译该目标所需的源文件、包含目录、编译选项、要链接的其他库等。
@@ -80,9 +80,9 @@ add_executable(MyAwesomeApp main.cpp)
 
 它们用于控制目标的属性（包含路径或依赖库）：“是否是自己构建所必需的？”以及“是否需要传递给依赖自己的其他目标？”。
 
-1. **`PRIVATE`**: 仅在构建该目标自身时需要。**不会**传递给依赖它的目标。
-2. **`INTERFACE`**: 构建该目标自身时不需要，但**会**传递给依赖它的目标的构建过程中（常用于 Header-only 库等）。
-3. **`PUBLIC`**: 构建该目标自身时需要，并且**会**传递给依赖它的目标（`PRIVATE` + `INTERFACE`）。
+1. **`PRIVATE`**: 仅在构建该目标自身时需要。 ** 不会**传递给依赖它的目标。
+2. **`INTERFACE`**: 构建该目标自身时不需要，但 ** 会**传递给依赖它的目标的构建过程中（常用于 Header-only 库等）。
+3. **`PUBLIC`**: 构建该目标自身时需要，并且 ** 会**传递给依赖它的目标（`PRIVATE` + `INTERFACE`）。
 
 通过下图，我们可以将依赖关系的传递（Usage Requirements 的传递）可视化。
 
@@ -133,7 +133,7 @@ target_link_libraries(MyLib PRIVATE nlohmann_json::nlohmann_json)
 
 ## 4. 源码外构建 (Out-of-source Build)
 
-在使用 CMake 时，务必遵守的最佳实践就是 **源码外构建 (Out-of-source Build)**。
+在使用 CMake 时，务必遵守的最佳实践就是 **源码外构建 (Out-of-source Build)** 。
 这种方法是指完全不在存放源代码的目录（源码树）中输出任何构建产物（目标文件或可执行文件），而是将其分离到另一个专用目录（通常是 `build/`）中进行构建。
 
 ```mermaid
@@ -208,7 +208,7 @@ target_link_libraries(MyTests PRIVATE gtest_main)
 
 ### 5.3. 结合 vcpkg 使用
 
-使用由微软主导的 C++ 包管理器 **vcpkg**，可以轻松引入成千上万的库。vcpkg 的设计初衷就是为了与 CMake 实现无缝集成。
+使用由微软主导的 C++ 包管理器 **vcpkg** ，可以轻松引入成千上万的库。vcpkg 的设计初衷就是为了与 CMake 实现无缝集成。
 
 在运行 CMake 时，只需指定 vcpkg 的工具链文件，`find_package` 就会自动在 vcpkg 内搜索库。
 
@@ -222,7 +222,7 @@ cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=/path/to/vcpkg/scripts/buildsystems/v
 
 为了在 Windows (MSVC)、Linux (GCC/Clang) 或是 macOS (Apple Clang) 任何环境中都能顺利编译，必须恰当地设置编译器特定的标志。
 
-通过使用 CMake 的 **生成器表达式 (Generator Expressions)**，可以声明式地编写条件分支，例如“如果编译器是 MSVC 则用这个标志，否则用那个标志”。生成器表达式使用 `$<...>` 语法，在构建系统的生成阶段（Generate 阶段）进行计算评估。
+通过使用 CMake 的 **生成器表达式 (Generator Expressions)** ，可以声明式地编写条件分支，例如“如果编译器是 MSVC 则用这个标志，否则用那个标志”。生成器表达式使用 `$<...>` 语法，在构建系统的生成阶段（Generate 阶段）进行计算评估。
 
 ```cmake
 # 在所有平台上开启最高级别警告的示例
@@ -361,7 +361,7 @@ target_link_libraries(ComplexApp
 最后回顾一下重点：
 
 1. **理解元构建系统**: CMake 是一个生成构建脚本的工具。
-2. **彻底贯彻现代 CMake**: 不使用全局变量，而是以 `add_executable`、`target_link_libraries`、`target_include_directories` 等**面向目标 (Target-oriented)** 的方式封装设置。
+2. **彻底贯彻现代 CMake**: 不使用全局变量，而是以 `add_executable`、`target_link_libraries`、`target_include_directories` 等 **面向目标 (Target-oriented)** 的方式封装设置。
 3. **恰当设置作用域**: 正确区分使用 `PUBLIC`、`PRIVATE` 和 `INTERFACE`，从而控制依赖关系的影响范围。
 4. **坚决执行源码外构建**: 在 `build/` 目录内进行构建，保持源码树的整洁。
 5. **第三方库整合**: 熟练使用 `FetchContent` 或 `vcpkg`，实现依赖库的自动解析。
@@ -369,5 +369,6 @@ target_link_libraries(ComplexApp
 7. **数学理论支撑**: 意识到阿姆达尔定律的存在，通过减少依赖关系来提高并行编译的效率。
 
 尽管 CMake 一开始可能会让人觉得晦涩难懂，但只要掌握了目标（Target）和属性（Property）的概念，无论多么复杂庞大的 C++ 项目，都能维持一个井然有序的构建环境。希望您能以本文为参考，使用最新现代 CMake 的写法，尝试搭建属于您的 C++ 开发环境。
+
 
 

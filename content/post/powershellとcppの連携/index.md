@@ -85,7 +85,7 @@ extern "C" {
 
 ### メモリ管理と文字列変換 (`BSTR`, `LPWSTR`)
 
-C++とPowerShell（.NET）間でデータをやり取りする際、最も注意すべきは**文字列のエンコーディング**と**メモリ管理**です。
+C++とPowerShell（.NET）間でデータをやり取りする際、最も注意すべきは **文字列のエンコーディング** と **メモリ管理** です。
 
 - **`LPCWSTR` / `LPWSTR`**: C/C++のワイド文字列ポインタ（UTF-16LE）。Windows APIの `W` 系関数で標準的に使用されます。P/Invokeでは `CharSet = CharSet.Unicode` を指定することで、.NETの `String` や `StringBuilder` と自動的にマーシャリングされます。
 - **`BSTR`**: COM (Component Object Model) で使用される長さプレフィックス付きのワイド文字列。`SysAllocString` や `SysFreeString` でメモリを管理する必要があります。P/Invokeで `[MarshalAs(UnmanagedType.BStr)]` を指定します。
@@ -168,9 +168,9 @@ sequenceDiagram
 
 アプローチは主に2つあります。
 1. **プロセス起動（`CreateProcess` / `_popen`）**：独立したプロセスとして `powershell.exe` を起動し、標準入出力をパイプでつなぐ方法。
-2. **PowerShell Hosting API（C++/CLI経由）**：同一プロセス内でPowerShellのランタイムをホストする方法。
+2. **PowerShell Hosting API（C++/CLI経由）** ：同一プロセス内でPowerShellのランタイムをホストする方法。
 
-本記事では、システムプログラミングにおいて最も堅牢で汎用的な**パイプラインを用いたCreateProcess**の手法を解説します。
+本記事では、システムプログラミングにおいて最も堅牢で汎用的な **パイプラインを用いたCreateProcess** の手法を解説します。
 
 ### CreateProcessと無名パイプによる実行
 
@@ -254,7 +254,7 @@ int main() {
 
 ### WindowsレジストリとPowerShellの連携
 
-C++からスクリプトを実行する際、動的な設定値や実行パスをハードコードするのは避けるべきです。多くの場合、C++アプリケーションは設定を**Windowsレジストリ**から読み取ります。
+C++からスクリプトを実行する際、動的な設定値や実行パスをハードコードするのは避けるべきです。多くの場合、C++アプリケーションは設定を **Windowsレジストリ** から読み取ります。
 
 C++側で `RegOpenKeyEx` と `RegQueryValueEx` を使用して `HKLM\SOFTWARE\MyApp` からPowerShellスクリプトのパスを取得し、それを引数として上記の `CreateProcess` に渡すアーキテクチャがエンタープライズシステムでは好まれます。
 
@@ -299,7 +299,7 @@ WMI（Windows Management Instrumentation）やCIM（Common Information Model）�
 
 ## メモリ管理とトラブルシューティングのベストプラクティス
 
-連携において最も多く発生するバグは、**メモリリーク**と**アクセス違反（Access Violation: 0xC0000005）**です。
+連携において最も多く発生するバグは、 **メモリリーク** と **アクセス違反（Access Violation: 0xC0000005）** です。
 
 1. **ポインタの有効期間**: PowerShell側で `[ref]` や `StringBuilder` を渡す場合、P/Invokeは呼び出し中のみそのメモリを固定（Pin）します。C++側でそのポインタをグローバル変数に保存し、後からアクセスしてはいけません。非同期コールバックを行う場合は、`GCHandle` を用いて明示的にメモリを固定する必要があります。
 2. **64bit環境のポインタサイズ**: 現代のWindowsは64bit（x64）が基本です。C++側でのポインタサイズは8バイト、PowerShell（.NET）側では `IntPtr` を使用する必要があります。C++の `long` はWindowsでは4バイトであるため、ポインタを `long` にキャストして渡すような古いコードはクラッシュの原因となります。
@@ -316,4 +316,5 @@ P/Invokeを用いたC++ DLLの呼び出しにより、計算負荷の高いタ�
 ---
 
 *この技術ブログでは、今後もWindows内部構造や高度な自動化に関するディープなトピックを取り上げていきます。ご質問やフィードバックがあれば、ぜひコメント欄にお寄せください。*
+
 

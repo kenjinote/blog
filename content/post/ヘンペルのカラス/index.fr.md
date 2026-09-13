@@ -15,7 +15,7 @@ Comment les scientifiques prouvent-ils une théorie ? En général, ils utilisen
 Par exemple, si vous voulez prouver l'hypothèse selon laquelle « tous les corbeaux sont noirs », vous observerez les corbeaux du monde entier et confirmerez un par un qu'ils sont noirs.
 
 Cependant, dans les années 1940, le logicien Carl Hempel a souligné une étrange faille logique cachée dans cette méthode scientifique évidente.
-Il s'agit du paradoxe des **corbeaux de Hempel (Hempel's Ravens)**, selon lequel **« le simple fait de voir une pomme bleue ou des chaussures rouges devient une preuve que 'les corbeaux sont noirs' »**.
+Il s'agit du paradoxe des **corbeaux de Hempel (Hempel's Ravens)**, selon lequel ** « le simple fait de voir une pomme bleue ou des chaussures rouges devient une preuve que 'les corbeaux sont noirs' »**.
 
 ## Substitution logique : la magie de la contraposée
 
@@ -87,5 +87,6 @@ En d'autres termes, la solution bayésienne est que logiquement « une pomme ble
 Ce paradoxe met en évidence à quel point le fondement même de la science, « l'induction (déduire des lois générales à partir d'observations) », repose sur des prémisses fragiles. Si l'on ne se fie qu'à l'équivalence logique, une « ornithologie de salon » devient possible, où l'on pourrait vérifier n'importe quelle loi de l'univers (« tous les cygnes sont blancs », « tous les extraterrestres ne sont pas verts », etc.) simplement en observant les objets hétéroclites dans sa chambre sans jamais sortir.
 
 Les corbeaux de Hempel est un paradoxe fascinant qui montre que les mots « preuve » et « prouver » que nous utilisons inconsciemment ne peuvent pas être pleinement appréhendés uniquement par les règles de la logique symbolique pure.
+
 
 

@@ -50,9 +50,9 @@ graph TD
 
 # 2. 完全解剖授权码授权（Authorization Code Grant）
 
-OAuth 2.0 存在多种流程（授权类型），但在 Web 应用程序这种可以在服务器端安全保存私钥（Client Secret）的环境中，最被推荐且使用最广泛的是 **授权码授权（Authorization Code Grant）**。
+OAuth 2.0 存在多种流程（授权类型），但在 Web 应用程序这种可以在服务器端安全保存私钥（Client Secret）的环境中，最被推荐且使用最广泛的是 **授权码授权（Authorization Code Grant）** 。
 
-授权码授权的最大特点在于明确分离了 **前台通道（通过浏览器的通信）** 和 **后台通道（服务器之间的直接通信）**。在前台通道中，只传递临时的“授权码（Authorization Code）”，而最终获取“访问令牌”的过程在后台通道进行，从而大幅降低了令牌泄露到浏览器历史记录或 Referer 中的风险。
+授权码授权的最大特点在于明确分离了 **前台通道（通过浏览器的通信） ** 和 ** 后台通道（服务器之间的直接通信）**。在前台通道中，只传递临时的“授权码（Authorization Code）”，而最终获取“访问令牌”的过程在后台通道进行，从而大幅降低了令牌泄露到浏览器历史记录或 Referer 中的风险。
 
 以下序列图展示了 Slack App 中授权码授权的全过程。
 
@@ -98,7 +98,7 @@ sequenceDiagram
 2. 选择“From scratch”，指定应用名称（例：`My First OAuth App`）以及要安装的工作区。
 3. 在创建后的“Basic Information”界面，获取以下 2 个重要的凭证（资格信息）：
    - **Client ID**: 公开、唯一标识你的应用的 ID。将其包含在经过浏览器的请求（前台通道）中也没有问题。
-   - **Client Secret**: 只有你的应用知道的机密字符串。**绝对不能暴露在浏览器端，也不能提交到 GitHub 等地方。**
+   - **Client Secret**: 只有你的应用知道的机密字符串。 ** 绝对不能暴露在浏览器端，也不能提交到 GitHub 等地方。**
 4. 移动到“OAuth & Permissions”界面，在“Redirect URLs”中注册回调目标的 URL。本次假设是本地开发，设置如下：
    - `http://localhost:3000/slack/oauth_redirect`
 
@@ -285,7 +285,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 }
 ```
 
-这串以 `xoxb-` 开头的字符串，就是 Slack 中的 **Bot 访问令牌**。此后，应用程序向 Slack API（Resource Server）发送请求时，只需在 HTTP 头信息中加上 `Authorization: Bearer xoxb-...`，即可完成身份验证和权限证明。
+这串以 `xoxb-` 开头的字符串，就是 Slack 中的 **Bot 访问令牌** 。此后，应用程序向 Slack API（Resource Server）发送请求时，只需在 HTTP 头信息中加上 `Authorization: Bearer xoxb-...`，即可完成身份验证和权限证明。
 
 ---
 
@@ -293,19 +293,19 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 OAuth 2.0 中最重要的概念之一是“作用域（Scope）”。作用域是指与访问令牌绑定的权限范围。
 
-在 Slack 中，权限被划分得非常细致，主要分为 **Bot Token Scopes** 和 **User Token Scopes**。
+在 Slack 中，权限被划分得非常细致，主要分为 **Bot Token Scopes** 和 **User Token Scopes** 。
 - `chat:write` (Bot): 作为应用（Bot）自身在频道中发布消息的权限。
 - `chat:write` (User): 作为安装了应用的用户的代理（使用该用户的名字和头像）发布消息的权限。
 - `channels:read`: 获取频道列表的权限。
 - `channels:history`: 读取频道历史消息记录的权限。
 
-根据作为安全大原则的“最小权限原则（Principle of Least Privilege）”，**只请求对应用提供的功能而言真正不可或缺的作用域** 是一项铁律。例如，如果是一个“仅发送通知”的应用，那么只应请求 `chat:write`，绝不能请求 `channels:history`（读取所有过去对话的权限）。这是为了在万一应用被黑客攻击、令牌泄露时，能将损失控制在最小范围。
+根据作为安全大原则的“最小权限原则（Principle of Least Privilege）”， **只请求对应用提供的功能而言真正不可或缺的作用域** 是一项铁律。例如，如果是一个“仅发送通知”的应用，那么只应请求 `chat:write`，绝不能请求 `channels:history`（读取所有过去对话的权限）。这是为了在万一应用被黑客攻击、令牌泄露时，能将损失控制在最小范围。
 
 ---
 
 # 7. 更高级的安全性：PKCE (Proof Key for Code Exchange)
 
-近年来，作为进一步强化 OAuth 2.0 安全性的机制，**PKCE (Proof Key for Code Exchange, RFC 7636，发音为 "pixy")** 已成为标准并被广泛使用。
+近年来，作为进一步强化 OAuth 2.0 安全性的机制， **PKCE (Proof Key for Code Exchange, RFC 7636，发音为 "pixy")** 已成为标准并被广泛使用。
 
 原本 PKCE 是为原生应用（iOS/Android）或 SPA（Single Page Application）等无法安全保存 `client_secret` 的“公共客户端（Public Client）”设计的。然而现在，在安全的最佳实践（OAuth 2.1 草案）中，即使是服务器端的“机密客户端（Confidential Client）”，也强烈推荐使用 PKCE。
 
@@ -365,11 +365,12 @@ sequenceDiagram
 
 本文结合 Slack App 集成的具体 Node.js 实现代码，详细解说了 OAuth 2.0 的授权码授权流程。
 
-1. 通过意识到 **4 个角色（RO, Client, AS, RS）**，能使整个系统的架构变得清晰。
+1. 通过意识到 **4 个角色（RO, Client, AS, RS）** ，能使整个系统的架构变得清晰。
 2. **授权码授权** 通过巧妙地区分使用浏览器与服务器之间的通信路径（前台/后台通道）来确保安全性。
-3. 深入了解利用 **`state` 参数** 防御 CSRF 攻击、利用 **PKCE** 防止授权码拦截攻击等背后的密码学机制，是实现安全代码的捷径。
+3. 深入了解利用 **`state` 参数 ** 防御 CSRF 攻击、利用 **PKCE** 防止授权码拦截攻击等背后的密码学机制，是实现安全代码的捷径。
 4. 基于 **最小权限原则** 的作用域设计以及存入 DB 时的加密，是运维上绝对不可或缺的要素。
 
 OAuth 2.0 非常深奥，单是 RFC 就有庞大的规范，但像这样以实际的平台（Slack）为目标，边动手边学习，应该就能切实感受到其洗练的设计理念与坚固的安全机制。如果在今后的应用开发和 API 集成实现中，本文的知识能派上用场，那将是我的荣幸。
+
 
 

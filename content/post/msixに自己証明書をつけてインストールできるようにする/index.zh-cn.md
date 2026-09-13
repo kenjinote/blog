@@ -14,7 +14,7 @@ description: '针对便于测试分发Windows应用程序的MSIX包，使用Powe
 在 Windows 上分发应用时，使用 **MSIX 包** 可以统一安装和更新的机制，非常方便。但是，MSIX 有一个限制，即“必须使用经过签名的证书”。
 当我们想要测试分发企业或个人开发的应用时，可能会觉得“购买商用代码签名证书太过夸张”吧。
 
-这时，**自签名证书（Self-Signed Certificate）** 就能派上用场了。本文将总结为 MSIX 添加自签名证书，使其能够在本地环境中进行安装的步骤。
+这时， **自签名证书（Self-Signed Certificate）** 就能派上用场了。本文将总结为 MSIX 添加自签名证书，使其能够在本地环境中进行安装的步骤。
 
 ---
 
@@ -95,3 +95,4 @@ signtool sign /fd SHA256 /f "D:\pfx\cert.pfx" /p "password" "C:\installer\instal
 👉 本次以 installer.msix 为例，但同样的步骤也适用于自研应用。
 
 ---
+

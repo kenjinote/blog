@@ -13,7 +13,7 @@ tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 
 현대 자연어 처리(NLP), 그리고 AI 전체의 역사를 새로 썼다고 해도 과언이 아닌 아키텍처가 바로 'Transformer'입니다. 2017년 Google 연구진이 발표한 논문 『Attention Is All You Need』에서 처음 제안된 이 모델은, OpenAI의 GPT 시리즈(ChatGPT의 기반 기술)나 Google의 BERT, Anthropic의 Claude 등 현재 세계를 휩쓸고 있는 대규모 언어 모델(LLM)의 심장부로 기능하고 있습니다.
 
-하지만 Transformer의 원리에 대해 'Attention(주의 메커니즘)을 사용하여 문맥을 이해한다'와 같은 정성적인 설명은 자주 볼 수 있지만, 그 이면에 있는 **수학적인 구조**에 대해 초보자를 위해 깊이 파고든 해설은 의외로 적은 것이 현실입니다. AI가 어떻게 '언어'를 '수식'으로 처리하고 놀라울 정도로 자연스러운 문장을 생성해 내는지 진정으로 이해하기 위해서는, 그 수학적 메커니즘을 파헤치는 것이 필수적입니다.
+하지만 Transformer의 원리에 대해 'Attention(주의 메커니즘)을 사용하여 문맥을 이해한다'와 같은 정성적인 설명은 자주 볼 수 있지만, 그 이면에 있는 **수학적인 구조** 에 대해 초보자를 위해 깊이 파고든 해설은 의외로 적은 것이 현실입니다. AI가 어떻게 '언어'를 '수식'으로 처리하고 놀라울 정도로 자연스러운 문장을 생성해 내는지 진정으로 이해하기 위해서는, 그 수학적 메커니즘을 파헤치는 것이 필수적입니다.
 
 본 문서에서는 수학이나 프로그래밍에 대한 기초 지식(고등학교 수준의 행렬이나 미분 개념을 아는 분)을 가진 분들을 대상으로, Transformer의 심장부인 'Self-Attention 메커니즘', '쿼리·키·밸류(Q/K/V) 모델', 'Softmax 함수를 통한 정규화', 그리고 'Positional Encoding' 등의 수학적 구조를 철저하고 알기 쉽게 풀어내고자 합니다.
 
@@ -59,7 +59,7 @@ graph TD
 
 # 3. 단어의 벡터화와 위치 인코딩(Positional Encoding)
 
-컴퓨터는 텍스트를 있는 그대로 이해할 수 없습니다. 입력된 텍스트는 먼저 '토큰(Token)'이라는 단위로 분할되고, 각각이 고정 길이의 벡터로 변환됩니다. 이것이 **Input Embedding**입니다.
+컴퓨터는 텍스트를 있는 그대로 이해할 수 없습니다. 입력된 텍스트는 먼저 '토큰(Token)'이라는 단위로 분할되고, 각각이 고정 길이의 벡터로 변환됩니다. 이것이 **Input Embedding** 입니다.
 
 ## 3.1 Input Embedding의 수학
 어휘(Vocabulary)의 크기를 $V$, 임베딩 벡터의 차원 수를 $d_{model}$(원본 논문에서는 $d_{model} = 512$)이라고 합시다. 각 단어 $w_i$ 는 임베딩 행렬 $W_E \in \mathbb{R}^{V \times d_{model}}$ 을 사용하여 벡터 $x_i \in \mathbb{R}^{d_{model}}$ 로 변환됩니다.
@@ -69,9 +69,9 @@ $$ x_i = W_E \cdot \text{one\_hot}(w_i) $$
 이에 따라 문장 전체는 행렬 $X \in \mathbb{R}^{N \times d_{model}}$ 로 표현됩니다($N$ 은 문장의 길이).
 
 ## 3.2 Positional Encoding(위치 인코딩)의 필요성과 수식
-Transformer는 RNN처럼 단어를 순서대로 처리하는 것이 아니라, 모든 단어를 동시에 병렬 처리합니다. 이는 계산 속도 측면에서는 큰 장점이지만, 동시에 **'단어의 순서(어순)'라는 중요한 정보가 손실되어 버린다**는 문제를 야기합니다. 예를 들어 "개가 사람을 문다"와 "사람이 개를 문다"는 입력되는 단어 집합은 같지만 의미는 전혀 다릅니다.
+Transformer는 RNN처럼 단어를 순서대로 처리하는 것이 아니라, 모든 단어를 동시에 병렬 처리합니다. 이는 계산 속도 측면에서는 큰 장점이지만, 동시에 **'단어의 순서(어순)'라는 중요한 정보가 손실되어 버린다** 는 문제를 야기합니다. 예를 들어 "개가 사람을 문다"와 "사람이 개를 문다"는 입력되는 단어 집합은 같지만 의미는 전혀 다릅니다.
 
-이 어순 정보를 모델에 제공하기 위해 고안된 것이 **Positional Encoding**입니다.
+이 어순 정보를 모델에 제공하기 위해 고안된 것이 **Positional Encoding** 입니다.
 위치 $pos$ 에 있는 단어의 $i$ 번째 차원에 대한 Positional Encoding $PE$ 는 다음 삼각 함수를 사용하여 계산됩니다.
 
 $$ PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right) $$
@@ -80,7 +80,7 @@ $$ PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right) $$
 여기서 $pos$ 는 단어의 위치($0, 1, 2, \dots, N-1$), $i$ 는 벡터 차원의 인덱스($0, 1, \dots, d_{model}/2 - 1$)입니다.
 
 ### 왜 사인과 코사인을 사용할까?
-언뜻 보면 매우 복잡하고 기묘한 수식처럼 보이지만, 여기에는 깊은 수학적인 이유가 있습니다. 삼각 함수를 사용함으로써 모델은 **'절대적인 위치'뿐만 아니라 '상대적인 위치'의 차이**를 쉽게 학습할 수 있게 되는 것입니다.
+언뜻 보면 매우 복잡하고 기묘한 수식처럼 보이지만, 여기에는 깊은 수학적인 이유가 있습니다. 삼각 함수를 사용함으로써 모델은 **'절대적인 위치'뿐만 아니라 '상대적인 위치'의 차이** 를 쉽게 학습할 수 있게 되는 것입니다.
 
 고등학교 수학에서 배우는 삼각 함수의 덧셈 정리를 떠올려 보세요.
 $$ \sin(\alpha + \beta) = \sin\alpha \cos\beta + \cos\alpha \sin\beta $$
@@ -100,7 +100,7 @@ $$ X_{input} = X + PE $$
 
 # 4. Self-Attention(셀프 어텐션 메커니즘)의 심오한 수학
 
-드디어 Transformer의 가장 중요한 컴포넌트인 **Self-Attention(셀프 어텐션 메커니즘)**으로 들어갑니다. Self-Attention의 목적은 '문장 내의 모든 단어들 사이의 연관도를 계산하여, 각 단어의 벡터를 문맥을 고려한 더 풍부한 표현으로 갱신하는 것'입니다.
+드디어 Transformer의 가장 중요한 컴포넌트인 **Self-Attention(셀프 어텐션 메커니즘)** 으로 들어갑니다. Self-Attention의 목적은 '문장 내의 모든 단어들 사이의 연관도를 계산하여, 각 단어의 벡터를 문맥을 고려한 더 풍부한 표현으로 갱신하는 것'입니다.
 
 여기서는 '검색 시스템'의 비유가 사용됩니다.
 - **Query (Q)**: 쿼리(검색어). "내가 지금 찾고 있는 정보는 무엇인가?"
@@ -117,7 +117,7 @@ $$ V = X W^V $$
 여기서 $Q, K, V$ 는 모두 $\mathbb{R}^{N \times d_k}$ 의 행렬이 됩니다.
 
 ## 4.2 Attention Score의 계산(내적)
-각 단어의 Query가 다른 모든 단어의 Key와 얼마나 연관되어 있는지를 측정하기 위해 벡터의 **내적**을 계산합니다. 행렬 연산으로 쓰면 다음과 같습니다.
+각 단어의 Query가 다른 모든 단어의 Key와 얼마나 연관되어 있는지를 측정하기 위해 벡터의 **내적** 을 계산합니다. 행렬 연산으로 쓰면 다음과 같습니다.
 
 $$ \text{Scores} = Q K^T $$
 
@@ -141,7 +141,7 @@ $$ \text{Var}(q \cdot k) = d_k $$
 $$ \text{Scaled Scores} = \frac{Q K^T}{\sqrt{d_k}} $$
 
 ## 4.4 Softmax 함수를 통한 확률화
-얻은 점수를 합계가 $1$ 이 되는 확률 분포(가중치)로 변환하기 위해 **Softmax 함수**를 행 단위로 적용합니다.
+얻은 점수를 합계가 $1$ 이 되는 확률 분포(가중치)로 변환하기 위해 **Softmax 함수** 를 행 단위로 적용합니다.
 
 $$ a_{ij} = \text{softmax}(s_i)_j = \frac{\exp(s_{ij} / \sqrt{d_k})}{\sum_{m=1}^N \exp(s_{im} / \sqrt{d_k})} $$
 
@@ -153,13 +153,13 @@ $$ a_{ij} = \text{softmax}(s_i)_j = \frac{\exp(s_{ij} / \sqrt{d_k})}{\sum_{m=1}^
 $$ \text{Output} = A V = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
 이 연산을 통해 출력되는 행렬 $Z \in \mathbb{R}^{N \times d_v}$ 는 '문맥을 고려하여 갱신된 단어의 벡터 표현'들의 집합이 됩니다.
-이것이 논문에서 정의하고 있는 **Scaled Dot-Product Attention**의 전모입니다.
+이것이 논문에서 정의하고 있는 **Scaled Dot-Product Attention** 의 전모입니다.
 
 ---
 
 # 5. Multi-Head Attention(멀티 헤드 어텐션)
 
-한 번의 Attention 계산(싱글 헤드)만으로는 하나의 관점(예를 들어 '문법적인 관계')에서밖에 문맥을 포착하지 못할 가능성이 있습니다. 그래서 언어가 가진 다양한 의미적·구문적 관계('주어와 서술어', '대명사와 그 지시 대상' 등)를 동시에 파악하기 위해 **Multi-Head Attention**이 도입되었습니다.
+한 번의 Attention 계산(싱글 헤드)만으로는 하나의 관점(예를 들어 '문법적인 관계')에서밖에 문맥을 포착하지 못할 가능성이 있습니다. 그래서 언어가 가진 다양한 의미적·구문적 관계('주어와 서술어', '대명사와 그 지시 대상' 등)를 동시에 파악하기 위해 **Multi-Head Attention** 이 도입되었습니다.
 
 앞서 말한 $Q, K, V$ 의 생성과 Attention 계산을 병렬로 $h$ 번(헤드의 수. 원본 논문에서는 $h=8$) 수행합니다.
 
@@ -201,7 +201,7 @@ graph TD
 
 # 6. Feed-Forward Neural Network (FFN)
 
-Multi-Head Attention의 출력은 다음으로 **Position-wise Feed-Forward Network (FFN)**에 입력됩니다.
+Multi-Head Attention의 출력은 다음으로 **Position-wise Feed-Forward Network (FFN)** 에 입력됩니다.
 이는 시퀀스의 '각 위치(단어)마다 독립적으로' 적용되는 2층의 완전 연결 신경망(Fully Connected Neural Network)입니다.
 
 수식으로 나타내면 다음과 같습니다.
@@ -217,7 +217,7 @@ $$ \text{FFN}(x) = \max(0, x W_1 + b_1) W_2 + b_2 $$
 
 # 7. 잔차 연결(Residual Connection)과 Layer Normalization
 
-딥러닝에서 네트워크의 층을 깊게 쌓아가면 학습 시 기울기가 소실되거나 폭발해 버려 제대로 학습할 수 없게 되는 문제가 발생합니다. 이를 방지하기 위해 Transformer의 각 서브 레이어(Attention과 FFN) 주변에는 **잔차 연결(Residual Connection)**과 **Layer Normalization(층 정규화)**가 배치되어 있습니다.
+딥러닝에서 네트워크의 층을 깊게 쌓아가면 학습 시 기울기가 소실되거나 폭발해 버려 제대로 학습할 수 없게 되는 문제가 발생합니다. 이를 방지하기 위해 Transformer의 각 서브 레이어(Attention과 FFN) 주변에는 **잔차 연결(Residual Connection)** 과 **Layer Normalization(층 정규화)** 가 배치되어 있습니다.
 
 수식으로 쓰면 서브 레이어의 출력은 다음과 같이 처리됩니다.
 
@@ -246,7 +246,7 @@ $$ \text{LN}(x) = \frac{x - \mu}{\sqrt{\sigma^2 + \epsilon}} \odot \gamma + \bet
 지금까지 해설한 구조는 인코더의 것입니다. 문장을 생성하는 디코더 블록에서는 구조가 조금 다릅니다.
 
 ## 8.1 Masked Multi-Head Attention
-디코더의 역할은 '과거의 단어로부터 다음 단어를 예측하는 것'입니다. 따라서 훈련 시에 '미래의 단어'를 보게 되면 부정행위(커닝)가 되어 버립니다. 이를 방지하기 위한 수학적 조작이 **Masking(마스킹)**입니다.
+디코더의 역할은 '과거의 단어로부터 다음 단어를 예측하는 것'입니다. 따라서 훈련 시에 '미래의 단어'를 보게 되면 부정행위(커닝)가 되어 버립니다. 이를 방지하기 위한 수학적 조작이 **Masking(마스킹)** 입니다.
 
 점수 행렬 $Q K^T$ 에 대해 상삼각 부분(미래의 정보에 해당)에 $-\infty$ 에 가까운 매우 작은 값을 설정하는 마스크 행렬 $M$ 을 더합니다.
 
@@ -257,7 +257,7 @@ $$ \text{Masked Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T + M}{\sqrt
 Softmax 함수를 계산할 때 $\exp(-\infty) = 0$ 이 되므로 미래 단어에 대한 Attention Weight는 완전히 $0$ 이 됩니다. 이를 통해 인과 관계(Causality)를 유지한 자기 회귀적(Autoregressive)인 생성이 가능해집니다.
 
 ## 8.2 Encoder-Decoder Cross-Attention
-디코더의 두 번째 서브 레이어는 인코더의 출력을 참조하는 **Cross-Attention**입니다.
+디코더의 두 번째 서브 레이어는 인코더의 출력을 참조하는 **Cross-Attention** 입니다.
 여기서 $Q$ 는 직전 디코더 층에서 생성되지만, $K$ 와 $V$ 는 인코더의 최종 층 출력에서 생성됩니다.
 
 $$ Q_{decoder} = X_{dec} W^Q $$
@@ -271,13 +271,13 @@ $$ V_{encoder} = X_{enc} W^V $$
 # 9. 계산량과 현대의 최적화 수학
 
 Transformer는 훌륭한 모델이지만 그 수학적 구조로 인한 '약점'도 존재합니다.
-Self-Attention의 계산량에 주목해 봅시다. 점수 행렬 $Q K^T$ 의 계산에서는 $(N \times d_k)$ 의 행렬과 $(d_k \times N)$ 의 행렬을 곱해야 하므로, 그 계산량은 **$O(N^2 \cdot d_{model})$**이 됩니다.
+Self-Attention의 계산량에 주목해 봅시다. 점수 행렬 $Q K^T$ 의 계산에서는 $(N \times d_k)$ 의 행렬과 $(d_k \times N)$ 의 행렬을 곱해야 하므로, 그 계산량은 **$O(N^2 \cdot d_{model})$** 이 됩니다.
 
-즉, **시퀀스 길이 $N$ 에 대해 계산량과 메모리 사용량이 제곱으로 증가**하는 것입니다.
+즉, **시퀀스 길이 $N$ 에 대해 계산량과 메모리 사용량이 제곱으로 증가** 하는 것입니다.
 문장이 짧은 경우에는 문제가 되지 않지만, 책 한 권 전체와 같은 방대한 컨텍스트를 LLM에 입력하려고 하면 $N$ 이 수만~수십만에 달해 기존의 Attention 계산에서는 GPU 메모리가 즉시 고갈되고 맙니다.
 
 이 $O(N^2)$ 의 저주를 끊어내기 위해 최근에는 수학적·하드웨어적 접근을 통한 다양한 최적화 기법이 제안되고 있습니다.
-그 대표적인 예가 **FlashAttention**입니다. FlashAttention은 GPU의 메모리 계층(SRAM과 HBM) 간의 데이터 전송(메모리 액세스)을 최소화하도록 Attention 계산을 타일 모양으로 분할(Tiling)하여 수행하는 알고리즘입니다. 수식상으로는 표준적인 Attention과 완전히 같은 결과를 출력(Exact Attention)함에도 불구하고, 하드웨어 수준의 최적화를 통해 극적인 속도 향상과 메모리 절감을 실현하였고 GPT-4와 같은 긴 문맥 모델의 구현을 가능하게 했습니다.
+그 대표적인 예가 **FlashAttention** 입니다. FlashAttention은 GPU의 메모리 계층(SRAM과 HBM) 간의 데이터 전송(메모리 액세스)을 최소화하도록 Attention 계산을 타일 모양으로 분할(Tiling)하여 수행하는 알고리즘입니다. 수식상으로는 표준적인 Attention과 완전히 같은 결과를 출력(Exact Attention)함에도 불구하고, 하드웨어 수준의 최적화를 통해 극적인 속도 향상과 메모리 절감을 실현하였고 GPT-4와 같은 긴 문맥 모델의 구현을 가능하게 했습니다.
 
 그 밖에도 계산량을 $O(N \log N)$ 이나 $O(N)$ 으로 근사하는 Sparse Attention이나 Linear Attention 등의 연구도 활발히 진행되고 있습니다.
 
@@ -340,5 +340,6 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 ---
 *이 글은 자연어 처리와 AI의 수학적 기초를 배우려는 분들을 위한 가이드로 작성되었습니다. 질문이나 토론할 내용이 있다면 꼭 댓글로 알려주세요!*
+
 
 

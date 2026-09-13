@@ -152,7 +152,7 @@ The manager gave the following instructions:
 
 Thanks to a powerful mathematical theorem known as "the uniqueness of prime factorization (any number can be expressed as a combination of prime factor multiplications in only one way)," the room numbers $2^n, 3^n, 5^n, 7^n \dots$ will absolutely never overlap with anyone else.
 
-In this way, the manager brilliantly managed to accommodate a staggering number of guests—**"Infinity $\times$ Infinity"**—into a single infinite hotel!
+In this way, the manager brilliantly managed to accommodate a staggering number of guests— **"Infinity $\times$ Infinity"** —into a single infinite hotel!
 
 ---
 
@@ -180,4 +180,5 @@ All these obvious intuitions are brilliantly betrayed.
 The world of infinity is a treasure trove of paradoxes (truths that contradict intuition). Mathematicians did not fear these paradoxes; instead, they subdued them with the power of logic, classified them, and built the beautiful system of modern set theory.
 
 The next time you are turned away because "the hotel is fully booked," try to imagine, "What if this hotel were Hilbert's Grand Hotel?"
+
 

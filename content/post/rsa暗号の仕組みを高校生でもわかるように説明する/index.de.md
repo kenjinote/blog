@@ -263,7 +263,7 @@ Der Geheimtext $C$ ist also $48$.
 **[Bobs Entschlüsselungsphase]**
 Bob empfängt den Geheimtext $C = 48$ und entschlüsselt ihn mit dem privaten Schlüssel $d = 103$.
 Formel: $M \equiv 48^{103} \pmod{143}$
-Wenn man `(48 ** 103) % 143` in einen Computer eingibt, ist das großartige Ergebnis tatsächlich „**9**“! Er hat die ursprüngliche Nachricht sicher erhalten.
+Wenn man `(48 ** 103) % 143` in einen Computer eingibt, ist das großartige Ergebnis tatsächlich „ **9** “! Er hat die ursprüngliche Nachricht sicher erhalten.
 
 ---
 
@@ -351,3 +351,4 @@ Basierend auf dem Wissen der Schulmathematik haben wir die Funktionsweise der RS
 Das $N$ der heute verwendeten RSA-Verschlüsselung hat mehr als 600 Ziffern. Selbst wenn alle Supercomputer der Welt zusammenarbeiten würden, würde die Primfaktorzerlegung länger dauern als das Alter des Universums. Wenn jedoch in Zukunft die derzeit in Entwicklung befindlichen „Quantencomputer“ in die Praxis umgesetzt werden, besteht die Möglichkeit, dass diese Primfaktorzerlegung durch den „Shor-Algorithmus“ augenblicklich geknackt wird. Aus diesem Grund wird derzeit weltweit mit Hochdruck an der Entwicklung der „Post-Quanten-Kryptographie“ gearbeitet, die selbst von Quantencomputern nicht entschlüsselt werden kann.
 
 Fortgeschrittene Mathematik, die oft als „nutzlos“ abgetan wird, schützt in Wirklichkeit unseren Alltag grundlegend. Die RSA-Verschlüsselung ist das beste Lehrmaterial, um uns diese Tiefe und Schönheit der Mathematik zu zeigen. Ich hoffe, dass Sie durch diesen Artikel ein wenig von der Faszination für Kryptographie und Mathematik spüren konnten.
+

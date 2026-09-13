@@ -85,7 +85,7 @@ extern "C" {
 
 ### 메모리 관리와 문자열 변환 (`BSTR`, `LPWSTR`)
 
-C++와 PowerShell(.NET) 간에 데이터를 주고받을 때 가장 주의해야 할 점은 **문자열 인코딩**과 **메모리 관리**입니다.
+C++와 PowerShell(.NET) 간에 데이터를 주고받을 때 가장 주의해야 할 점은 **문자열 인코딩 ** 과 **메모리 관리** 입니다.
 
 - **`LPCWSTR` / `LPWSTR`**: C/C++의 와이드 문자열 포인터(UTF-16LE). Windows API의 `W` 계열 함수에서 표준으로 사용됩니다. P/Invoke에서는 `CharSet = CharSet.Unicode`를 지정함으로써 .NET의 `String`이나 `StringBuilder`와 자동으로 마샬링됩니다.
 - **`BSTR`**: COM(Component Object Model)에서 사용되는 길이 접두사가 있는 와이드 문자열. `SysAllocString`이나 `SysFreeString`으로 메모리를 관리해야 합니다. P/Invoke에서 `[MarshalAs(UnmanagedType.BStr)]`를 지정합니다.
@@ -254,7 +254,7 @@ int main() {
 
 ### Windows 레지스트리와 PowerShell의 연동
 
-C++에서 스크립트를 실행할 때, 동적인 설정 값이나 실행 경로를 하드코딩하는 것은 피해야 합니다. 많은 경우, C++ 애플리케이션은 설정을 **Windows 레지스트리**에서 읽어옵니다.
+C++에서 스크립트를 실행할 때, 동적인 설정 값이나 실행 경로를 하드코딩하는 것은 피해야 합니다. 많은 경우, C++ 애플리케이션은 설정을 **Windows 레지스트리** 에서 읽어옵니다.
 
 C++ 측에서 `RegOpenKeyEx`와 `RegQueryValueEx`를 사용하여 `HKLM\SOFTWARE\MyApp`으로부터 PowerShell 스크립트의 경로를 가져오고, 이를 인수로 앞서 설명한 `CreateProcess`에 전달하는 아키텍처가 엔터프라이즈 시스템에서 선호됩니다.
 
@@ -299,7 +299,7 @@ WMI(Windows Management Instrumentation)나 CIM(Common Information Model)으로�
 
 ## 메모리 관리와 트러블슈팅의 베스트 프랙티스
 
-연동에 있어 가장 많이 발생하는 버그는 **메모리 누수**와 **접근 위반(Access Violation: 0xC0000005)**입니다.
+연동에 있어 가장 많이 발생하는 버그는 **메모리 누수 ** 와 **접근 위반(Access Violation: 0xC0000005)** 입니다.
 
 1. **포인터의 유효 기간**: PowerShell 측에서 `[ref]`나 `StringBuilder`를 전달할 경우, P/Invoke는 호출 중에만 그 메모리를 고정(Pin)합니다. C++ 측에서 그 포인터를 전역 변수에 저장하고 나중에 접근해서는 안 됩니다. 비동기 콜백을 수행할 경우에는 `GCHandle`을 사용하여 명시적으로 메모리를 고정할 필요가 있습니다.
 2. **64bit 환경의 포인터 크기**: 현대의 Windows는 64bit(x64)가 기본입니다. C++ 측에서의 포인터 크기는 8바이트이며, PowerShell(.NET) 측에서는 `IntPtr`을 사용해야 합니다. C++의 `long`은 Windows에서 4바이트이므로, 포인터를 `long`으로 캐스팅하여 전달하는 낡은 코드는 크래시의 원인이 됩니다.
@@ -316,4 +316,5 @@ P/Invoke를 이용한 C++ DLL 호출을 통해 계산 부하가 높은 작업을
 ---
 
 *이 기술 블로그에서는 앞으로도 Windows 내부 구조나 고도화된 자동화와 관련된 깊이 있는 주제를 다룰 예정입니다. 질문이나 피드백이 있으시다면 꼭 댓글란에 남겨주세요.*
+
 

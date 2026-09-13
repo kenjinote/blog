@@ -12,8 +12,8 @@ description: '想知道如何实现从C++向Microsoft Teams自动发送消息吗
 # 如何使用 C++ 向 Microsoft Teams 发送消息（WinHTTP + Graph API）
 
 想自动向 Microsoft Teams 聊天发送消息吗？  
-这时候就可以使用 **Microsoft Graph API**。  
-本文将逐步介绍 **使用 WinHTTP 的 C++ 代码示例 ** 以及 ** 所需的 API 认证步骤**。
+这时候就可以使用 **Microsoft Graph API** 。  
+本文将逐步介绍 **使用 WinHTTP 的 C++ 代码示例 ** 以及 ** 所需的 API 认证步骤** 。
 
 ---
 
@@ -23,13 +23,13 @@ description: '想知道如何实现从C++向Microsoft Teams自动发送消息吗
 首先，要使用 Microsoft Graph API，需要在 Azure 中注册一个应用。
 
 1. 访问 [Azure Portal](https://portal.azure.com)
-2. 选择 **「Microsoft Entra ID」** > **「＋添加」** > **「应用注册」** > **「新注册」**
+2. 选择 **「Microsoft Entra ID」 ** > ** 「＋添加」 ** > ** 「应用注册」 ** > ** 「新注册」**
 3. 输入任意应用名称并点击「注册」
 
 ### 2. 添加 API 权限
 
 1. 进入左侧菜单「API 权限」
-2. 在 **「Microsoft Graph」** > **「选择权限」** 中搜索以下作用域并点击 **「更新权限」**
+2. 在 **「Microsoft Graph」 ** > ** 「选择权限」 ** 中搜索以下作用域并点击 ** 「更新权限」**
 
 - Chat.ReadWrite
 - User.Read
@@ -193,3 +193,4 @@ curl -X GET ^
 * 包含获取令牌的完整 C++ 实现
 
 如果您有需要，欢迎随时留言！
+

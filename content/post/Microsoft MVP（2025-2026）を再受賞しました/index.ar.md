@@ -13,7 +13,7 @@ description: 'هذا تقرير عن حصولي على جائزة Microsoft MVP 
 
 مرحبًا، أنا kenji.
 
-لدي إعلان. هذا العام تمكنت من الحصول على **Microsoft MVP (Most Valuable Professional)** مرة أخرى. هذه هي المرة **التاسعة** التي أحصل فيها على الجائزة.
+لدي إعلان. هذا العام تمكنت من الحصول على **Microsoft MVP (Most Valuable Professional)** مرة أخرى. هذه هي المرة ** التاسعة** التي أحصل فيها على الجائزة.
 
 شكرًا جزيلاً لكل من يدعمني دائمًا.
 
@@ -81,3 +81,4 @@ description: 'هذا تقرير عن حصولي على جائزة Microsoft MVP 
 * GitHub: https://github.com/kenjinote
 * مدونة التكنولوجيا: https://hack.jp
 * X: https://twitter.com/kenjinote
+

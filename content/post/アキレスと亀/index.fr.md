@@ -61,7 +61,7 @@ Dans le monde réel, il est tout à fait normal qu'une personne rapide dépasse 
 
 ## 2. Où est l'erreur ? L'illusion du « temps » et de « l'infini »
 
-L'ingéniosité de la logique de Zénon réside dans le fait qu'il substitue **« un nombre infini d'étapes (division de l'espace) »** à un **« temps infini »**.
+L'ingéniosité de la logique de Zénon réside dans le fait qu'il substitue **« un nombre infini d'étapes (division de l'espace) » ** à un ** « temps infini »**.
 
 Il est vrai que le « nombre d'étapes » nécessaires pour qu'Achille atteigne l'endroit où se trouvait la tortue est infini.
 Cependant, le fait qu'il y ait « un nombre infini d'étapes » ne signifie pas nécessairement que **« la somme du temps requis sera infinie (l'éternité) »**.
@@ -167,5 +167,6 @@ Cependant, pour les philosophes grecs anciens qui ne possédaient pas les concep
 Les questions profondes posées par ce paradoxe, telles que « Qu'est-ce que le continu ? » et « Que signifie être divisé à l'infini ? », sont devenues un moteur important qui a conduit à la naissance du **« calcul infinitésimal »** par Newton et Leibniz plus tard, et même aux fondements des mathématiques modernes.
 
 Les grands paradoxes ne font pas que tromper les gens, ce sont aussi les clés qui ouvrent les portes de nouvelles mathématiques.
+
 
 

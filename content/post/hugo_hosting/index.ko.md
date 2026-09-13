@@ -10,7 +10,7 @@ tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: 'Hugo를 사용한 정적 사이트를 Cloudflare Pages나 GitHub Pages를 활용하여 무료이면서도 빠르게 호스팅하기 위한 완전한 기술 가이드입니다. 엣지 컴퓨팅, CDN 아키텍처, CI/CD 파이프라인에 대해 자세히 설명합니다.'
 ---
 
-웹사이트나 블로그를 운영하는 데 있어서 표시 속도(퍼포먼스), 운영 비용, 그리고 보안은 매우 중요한 요소입니다. 예전에는 WordPress와 같은 동적 CMS(Content Management System)와 렌탈 서버의 조합이 주류를 이루었지만, 현재는 'Jamstack'이라고 불리는 아키텍처가 큰 주목을 받고 있습니다. 그 중에서도 Go 언어로 만들어진 초고속 정적 사이트 생성기(SSG)인 'Hugo'와, Cloudflare Pages나 GitHub Pages 같은 모던 호스팅 서비스를 조합하면 **완전 무료이면서 초고속**인 블로그 환경을 구축할 수 있습니다.
+웹사이트나 블로그를 운영하는 데 있어서 표시 속도(퍼포먼스), 운영 비용, 그리고 보안은 매우 중요한 요소입니다. 예전에는 WordPress와 같은 동적 CMS(Content Management System)와 렌탈 서버의 조합이 주류를 이루었지만, 현재는 'Jamstack'이라고 불리는 아키텍처가 큰 주목을 받고 있습니다. 그 중에서도 Go 언어로 만들어진 초고속 정적 사이트 생성기(SSG)인 'Hugo'와, Cloudflare Pages나 GitHub Pages 같은 모던 호스팅 서비스를 조합하면 **완전 무료이면서 초고속** 인 블로그 환경을 구축할 수 있습니다.
 
 이 글에서는 Hugo를 사용한 정적 사이트를 Cloudflare Pages나 GitHub Pages에 공개하기 위한 구체적인 절차, 각 플랫폼의 아키텍처 차이, GitHub Actions를 이용한 CI/CD(지속적 통합/지속적 배포) 구축, DNS 최적화, 캐시 전략, 그리고 프라이버시를 고려한 접속 분석 도입에 이르기까지 기술적인 관점에서 매우 깊이 있게 설명합니다.
 
@@ -24,7 +24,7 @@ description: 'Hugo를 사용한 정적 사이트를 Cloudflare Pages나 GitHub P
 반면, Jamstack(JavaScript, APIs, and Markup) 아키텍처를 채택한 정적 사이트 생성기(SSG)에서는 사전에(빌드 시에) 모든 HTML 파일, CSS, JavaScript를 생성해 둡니다. 사용자의 요청에 대해서는 이미 생성된 정적 파일을 웹 서버(또는 CDN)가 그대로 반환하기만 하므로, 압도적인 고속성과 견고한 보안을 실현할 수 있습니다.
 
 ### 1.2 Hugo의 우위성
-SSG에는 Next.js, Gatsby, Jekyll, Astro 등 다양한 선택지가 있지만, Hugo의 가장 큰 특징은 바로 **빌드 속도**입니다. Go 언어의 병행 처리 혜택 덕분에, 수천에서 수만 페이지의 사이트라도 불과 몇 초 만에 빌드가 완료됩니다. 이는 CI/CD 파이프라인에서의 대기 시간을 대폭 줄여주며, 개발자 경험(DX: Developer Experience) 향상과 직결됩니다.
+SSG에는 Next.js, Gatsby, Jekyll, Astro 등 다양한 선택지가 있지만, Hugo의 가장 큰 특징은 바로 **빌드 속도** 입니다. Go 언어의 병행 처리 혜택 덕분에, 수천에서 수만 페이지의 사이트라도 불과 몇 초 만에 빌드가 완료됩니다. 이는 CI/CD 파이프라인에서의 대기 시간을 대폭 줄여주며, 개발자 경험(DX: Developer Experience) 향상과 직결됩니다.
 
 ---
 
@@ -255,6 +255,7 @@ Hugo를 이용한 정적 사이트 운영에 있어, Cloudflare Pages나 GitHub 
 5. **가벼운 애널리틱스**: 프라이버시를 배려하면서 퍼포먼스를 손상시키지 않는 Cloudflare Web Analytics 등을 도입한다.
 
 이것들을 조합함으로써 월간 수백만 PV 클래스의 대규모 트래픽도 견뎌낼 수 있는, 확장 가능하고 견고한 블로그 시스템을 무료로 구축할 수 있습니다. 기술 블로그나 기업 사이트, 포트폴리오 사이트 개설을 검토하고 계신 분들은 꼭 이 Jamstack + Hugo + Cloudflare Pages 구성을 시도해 보시기 바랍니다.
+
 
 
 

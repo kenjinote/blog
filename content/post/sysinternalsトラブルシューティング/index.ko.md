@@ -12,7 +12,7 @@ description: 'Windows 트러블슈팅의 결정판. Sysinternals 도구를 활�
 
 Windows 환경에서 시스템 크래시, 성능 저하, 악성코드 감염 또는 애플리케이션의 알 수 없는 동작과 같은 문제에 직면했을 때, 기본으로 탑재된 작업 관리자나 이벤트 뷰어만으로는 근본 원인(Root Cause)을 특정할 수 없는 경우가 많습니다. 이러한 고급 트러블슈팅에 있어 전 세계의 IT 전문가, 사고 대응 담당자(Incident Responder), 시스템 관리자들이 앞다투어 사용하는 것이 바로 "**Windows Sysinternals**" 도구 모음입니다.
 
-본 문서에서는 Sysinternals의 주요 도구인 **Process Explorer**, **Process Monitor (ProcMon)**, **Autoruns**, **TCPView**를 활용하여 Windows OS의 심연(커널 모드와 유저 모드의 경계, 인터럽트 처리, ETW, 레지스트리/파일 시스템 드라이버)까지 파고드는 고급 트러블슈팅 기법을 철저하게 해설합니다.
+본 문서에서는 Sysinternals의 주요 도구인 **Process Explorer**, **Process Monitor (ProcMon)**, **Autoruns**, **TCPView** 를 활용하여 Windows OS의 심연(커널 모드와 유저 모드의 경계, 인터럽트 처리, ETW, 레지스트리/파일 시스템 드라이버)까지 파고드는 고급 트러블슈팅 기법을 철저하게 해설합니다.
 
 ---
 
@@ -110,7 +110,7 @@ flowchart TD
 *   `CreateFile` | `C:\Windows\CoreCrypto.dll` | `NAME NOT FOUND`
 *   `CreateFile` | `C:\Users\Kenji\AppData\Local\Microsoft\WindowsApps\CoreCrypto.dll` | `NAME NOT FOUND`
 
-이는 전형적인 **DLL 종속성 누락** 및 **DLL 검색 순서(DLL Search Order)** 동작입니다. 애플리케이션은 `CoreCrypto.dll`을 필요로 하지만 시스템 상의 어디에도 존재하지 않기 때문에 초기화에 실패하고 예외 핸들러 없이 종료된 것입니다. 누락된 DLL을 적절한 디렉터리에 배치함으로써 이 문제는 즉시 해결됩니다.
+이는 전형적인 **DLL 종속성 누락 ** 및 **DLL 검색 순서(DLL Search Order)** 동작입니다. 애플리케이션은 `CoreCrypto.dll`을 필요로 하지만 시스템 상의 어디에도 존재하지 않기 때문에 초기화에 실패하고 예외 핸들러 없이 종료된 것입니다. 누락된 DLL을 적절한 디렉터리에 배치함으로써 이 문제는 즉시 해결됩니다.
 
 ### 3.3 Boot Logging을 통한 부팅 장애 트러블슈팅
 Windows 부팅이 느리거나 로그인 직후 검은 화면(Black Screen)이 되는 경우, ProcMon의 **Enable Boot Logging** 기능이 유용합니다. 이를 활성화하고 재부팅하면 ProcMon의 전용 부트 드라이버가 Windows의 초기 단계(`smss.exe`가 로드되는 시점)부터 모든 시스템 호출을 기록하여 파일로 저장합니다. 다음 로그인 시 ProcMon을 열면 로그가 변환되어 부팅 프로세스 중 어떤 드라이버나 서비스가 I/O 병목을 일으키고 있는지 상세히 분석할 수 있습니다.
@@ -125,7 +125,7 @@ ProcMon의 `Tools` -> `File Summary`를 사용하면 이러한 집계를 GUI에�
 
 Windows의 자동 실행 위치는 단순한 시작 프로그램(Startup Folder)이나 `Run` 레지스트리 키에 국한되지 않습니다. 악성코드(특히 APT 공격의 페이로드나 고급 루트킷)는 시스템 관리자의 눈에 띄기 어려운 곳에 자신을 숨겨 재부팅 후에도 실행(Persistence)되도록 설정합니다.
 
-Autoruns는 시스템 상의 **모든 자동 실행 항목(ASE: Auto-Start Extensibility Points)**을 망라하여 스캔합니다.
+Autoruns는 시스템 상의 **모든 자동 실행 항목(ASE: Auto-Start Extensibility Points)** 을 망라하여 스캔합니다.
 
 ```mermaid
 flowchart LR
@@ -178,3 +178,4 @@ Sysinternals 도구 모음은 Windows OS가 이면에서 수행하는 모든 동
     Sysinternals 도구는 자주 업데이트됩니다. 브라우저에서 직접 `https://live.sysinternals.com/`에 접속하여 항상 최신 바이너리(또는 명령줄 버전인 `procdump`, `psexec` 등)를 사용하십시오.
 
 고급 Windows 트러블슈팅에 있어 직감이나 추측(Guesswork)은 무의미합니다. Sysinternals 도구를 사용하여 팩트(프로세스, 스레드, 핸들, 시스템 호출, 레지스트리 이벤트)에 기반한 논리적인 원인 규명을 수행함으로써 아무리 복잡한 장애나 난해한 악성코드 감염이라도 반드시 근본 원인에 도달할 수 있을 것입니다.
+

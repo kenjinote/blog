@@ -29,7 +29,7 @@ description: '통산 9회째가 되는 Microsoft MVP(2025-2026)를 수상했다�
 
 안녕하세요, kenji입니다.
 
-보고드립니다. 올해도 **Microsoft MVP（Most Valuable Professional）** 를 수상하게 되었습니다. 이번으로 ** 9번째** 수상이 됩니다.
+보고드립니다. 올해도 **Microsoft MVP（Most Valuable Professional） ** 를 수상하게 되었습니다. 이번으로 ** 9번째** 수상이 됩니다.
 
 항상 응원해주시는 여러분, 진심으로 감사합니다.
 
@@ -97,3 +97,4 @@ MVP라는 타이틀은 어디까지나 통과점 중 하나입니다.
 * GitHub: https://github.com/kenjinote
 * 기술 블로그: https://hack.jp
 * X: https://twitter.com/kenjinote
+

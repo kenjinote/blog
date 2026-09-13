@@ -11,16 +11,16 @@ tags: ["C++", "Win32", "Windows API", "RAII"]
 
 ## 1. 引言：基于C语言的Win32 API与现代C++之间的鸿沟
 
-作为Windows OS基础的 **Windows API（通称Win32 API）**，是自1990年代的Windows NT和Windows 95时代以来一脉相承的庞大C语言接口。即使在今天，在开发Windows原生应用程序时，为了访问操作系统的核心功能（如进程管理、文件I/O、线程同步、窗口控制等），最终仍需要调用这个Win32 API。
+作为Windows OS基础的 **Windows API（通称Win32 API）** ，是自1990年代的Windows NT和Windows 95时代以来一脉相承的庞大C语言接口。即使在今天，在开发Windows原生应用程序时，为了访问操作系统的核心功能（如进程管理、文件I/O、线程同步、窗口控制等），最终仍需要调用这个Win32 API。
 
-然而，Win32 API是纯粹为C语言设计的，并未考虑到**现代C++（Modern C++）**所具备的高级语言特性（如异常处理、基于RAII的自动资源管理、移动语义、类型安全的枚举类型、智能指针等）。因此，如果将原生的Win32 API直接混入C++代码中，就会产生以下问题：
+然而，Win32 API是纯粹为C语言设计的，并未考虑到 **现代C++（Modern C++）** 所具备的高级语言特性（如异常处理、基于RAII的自动资源管理、移动语义、类型安全的枚举类型、智能指针等）。因此，如果将原生的Win32 API直接混入C++代码中，就会产生以下问题：
 
 *   **手动资源管理：** 必须使用 `CloseHandle` 来释放由 `CreateFile` 或 `CreateEvent` 获取的 `HANDLE`。
 *   **缺乏异常安全性：** 当C++抛出异常时，如果没有编写正确调用 `CloseHandle` 的处理代码，很容易发生资源泄漏。
 *   **不一致的错误表达：** 某些API返回 `BOOL`，失败时需要调用 `GetLastError()`。其他API可能返回 `HRESULT`，还有一些API（如GDI）则返回 `NULL`。
 *   **类型安全缺失：** `HANDLE`、`HWND`、`HDC` 等类型在宏展开后往往只不过是 `void*`，很难发挥编译器严格的类型检查功能。
 
-本文将极其详细地探讨如何避开这些“传统C接口”的陷阱，并利用现代C++（C++11/14/17/20/23）的特性，**安全且现代化地处理Win32 API**。
+本文将极其详细地探讨如何避开这些“传统C接口”的陷阱，并利用现代C++（C++11/14/17/20/23）的特性， **安全且现代化地处理Win32 API** 。
 
 ---
 
@@ -78,7 +78,7 @@ void ProcessFileLegacy(const std::wstring& filename) {
 ### 这段代码有什么问题？
 
 1.  **代码重复且繁琐：** 每次提前返回（`return`）时都必须写 `::CloseHandle(hFile);`，违反了 DRY (Don't Repeat Yourself) 原则。
-2.  **完全缺乏异常安全性 (Exception Unsafe)：** 在C++中，如果 `std::vector` 内存分配失败（`std::bad_alloc`）或其他函数抛出异常，程序将强制退出该函数。此时，末尾的 `CloseHandle` 不会被执行，从而导致**文件句柄永久泄漏**（引发严重错误，例如文件会被一直锁定直到进程结束）。
+2.  **完全缺乏异常安全性 (Exception Unsafe)：** 在C++中，如果 `std::vector` 内存分配失败（`std::bad_alloc`）或其他函数抛出异常，程序将强制退出该函数。此时，末尾的 `CloseHandle` 不会被执行，从而导致 **文件句柄永久泄漏** （引发严重错误，例如文件会被一直锁定直到进程结束）。
 
 ---
 
@@ -96,9 +96,9 @@ $$ P(\text{Leak}) = 1 - (1 - p)^N $$
 
 $$ P(\text{Leak}) = 1 - (1 - 0.05)^{20} \approx 1 - 0.358 = 0.642 $$
 
-令人惊讶的是，**有大约 64.2% 的概率会在某处潜伏着资源泄漏的Bug**。随着软件规模变大，$N \to \infty$，$P(\text{Leak}) \to 1$，系统必然走向崩溃。
+令人惊讶的是， **有大约 64.2% 的概率会在某处潜伏着资源泄漏的Bug** 。随着软件规模变大，$N \to \infty$，$P(\text{Leak}) \to 1$，系统必然走向崩溃。
 
-要对抗这种数学现实，唯一合理的手段就是C++的 **RAII (Resource Acquisition Is Initialization，资源获取即初始化)**。
+要对抗这种数学现实，唯一合理的手段就是C++的 **RAII (Resource Acquisition Is Initialization，资源获取即初始化)** 。
 
 ---
 
@@ -106,12 +106,12 @@ $$ P(\text{Leak}) = 1 - (1 - 0.05)^{20} \approx 1 - 0.358 = 0.642 $$
 
 RAII 是由C++之父 Bjarne Stroustrup 提出的概念。其原则极其简单且强大。
 
-1.  将资源获取（Acquisition）放在对象的**构造函数（Initialization）**中进行。
-2.  将资源释放放在对象的**析构函数**中进行。
+1.  将资源获取（Acquisition）放在对象的 **构造函数（Initialization）** 中进行。
+2.  将资源释放放在对象的 **析构函数** 中进行。
 
-根据C++的语言规范，当离开作用域时（无论是通过正常的 `return` 还是由于异常导致的栈展开），分配在栈上的对象的析构函数都会被**确切且自动地**调用。
+根据C++的语言规范，当离开作用域时（无论是通过正常的 `return` 还是由于异常导致的栈展开），分配在栈上的对象的析构函数都会被 **确切且自动地** 调用。
 
-通过这种方式，可以在数学上将前述公式中的人为失误概率 $p$ 降为 **$0$**。
+通过这种方式，可以在数学上将前述公式中的人为失误概率 $p$ 降为 **$0$** 。
 
 ### 对象生命周期的可视化
 
@@ -145,7 +145,7 @@ sequenceDiagram
 
 ## 5. 使用 `std::unique_ptr` 安全封装 `HANDLE` 的方法
 
-从 C++11 开始，标准库提供了通用的 RAII 包装器 `std::unique_ptr`。它不仅可以用于简单的内存（`new/delete`）管理，还可以通过指定**自定义删除器 (Custom Deleter)** 应用于任何资源的管理。
+从 C++11 开始，标准库提供了通用的 RAII 包装器 `std::unique_ptr`。它不仅可以用于简单的内存（`new/delete`）管理，还可以通过指定 **自定义删除器 (Custom Deleter)** 应用于任何资源的管理。
 
 要使用 `std::unique_ptr` 管理 Win32 的 `HANDLE`，其基本的删除器可以这样编写：
 
@@ -205,7 +205,7 @@ void ProcessFileModern(const std::wstring& filename) {
 
 ## 6. 深入探究：解决 `INVALID_HANDLE_VALUE` 与 `nullptr` 的问题
 
-在处理Win32 API时，最令C++程序员头疼的规范之一就是**无效句柄的表示不一致**。
+在处理Win32 API时，最令C++程序员头疼的规范之一就是 **无效句柄的表示不一致** 。
 
 *   `CreateEvent`、`CreateThread` 等：失败时返回 `NULL` (`nullptr`)。
 *   `CreateFile` 等：失败时返回 `INVALID_HANDLE_VALUE`（其值为 `(HANDLE)-1`）。
@@ -214,7 +214,7 @@ void ProcessFileModern(const std::wstring& filename) {
 
 然而，当 `CreateFile` 失败并返回 `INVALID_HANDLE_VALUE` 时，`std::unique_ptr` 会将其误认为是一个“有效的非NULL指针”。
 
-为了优雅地解决这个问题，可以利用 C++ 中 `std::unique_ptr` 的高级特性，定义一个**自定义指针类型**。
+为了优雅地解决这个问题，可以利用 C++ 中 `std::unique_ptr` 的高级特性，定义一个 **自定义指针类型** 。
 
 ```cpp
 #include <windows.h>
@@ -267,7 +267,7 @@ if (!hFile) {
 ## 7. GDI 对象（`HDC`、`HBITMAP`）的高级 RAII 管理
 
 Win32 另一个棘手之处是 GDI (Graphics Device Interface) 的资源管理。
-GDI对象（画笔、画刷、字体、位图等）在创建后需要使用 `SelectObject` 选入到设备上下文（`HDC`）中使用，使用完毕后**必须再次使用 SelectObject 恢复原来的对象，然后才能用 DeleteObject 进行销毁**。这一套做法非常繁琐。
+GDI对象（画笔、画刷、字体、位图等）在创建后需要使用 `SelectObject` 选入到设备上下文（`HDC`）中使用，使用完毕后 **必须再次使用 SelectObject 恢复原来的对象，然后才能用 DeleteObject 进行销毁** 。这一套做法非常繁琐。
 
 为了使用 RAII 解决这个问题，我们可以编写如下的包装器：
 
@@ -530,7 +530,7 @@ $$ T_{\text{total}} = T_{\text{syscall}} + T_{\text{wrapper}} + T_{\text{cleanup
 
 C++ 的编译器（MSVC、Clang、GCC）在内联 (Inlining) 优化方面极其优秀。`std::unique_ptr` 的构造函数和析构函数，以及重载的 `operator*` 和 `operator bool`，都会被 `inline` 展开，并被编译成与直接操作内存中原生指针完全相同的机器码。
 
-也就是说，**$T_{\text{wrapper}} \approx 0$**。这正是 C++ 最大哲学 **Zero-cost Abstraction (零成本抽象)** 的最好证明。即使换取了安全性，运行时的开销也确确实实是零。
+也就是说， **$T_{\text{wrapper}} \approx 0$** 。这正是 C++ 最大哲学 **Zero-cost Abstraction (零成本抽象)** 的最好证明。即使换取了安全性，运行时的开销也确确实实是零。
 
 ---
 
@@ -546,3 +546,4 @@ C++ 的编译器（MSVC、Clang、GCC）在内联 (Inlining) 优化方面极其�
 4.  **站在巨人的肩膀上。** 积极采用微软官方的 WIL 和 C++/WinRT，避免重复造轮子。
 
 在现代 C++ 开发中，拿着裸露的原生指针或句柄到处跑，就如同不系安全带在高速公路上飞驰。请充分利用 C++ 提供的强大类型系统和 RAII，享受安全、坚固的 Windows 应用程序开发吧。
+

@@ -103,7 +103,7 @@ graph TD
 
 ## 3. Warum kommt es zu dieser seltsamen Umkehrung?
 
-Die wahre Natur dieses Paradoxons liegt in der **„Verzerrung der Grundgesamtheit (Nenner)“** und **„verborgenen Variablen (Störfaktoren)“**.
+Die wahre Natur dieses Paradoxons liegt in der **„Verzerrung der Grundgesamtheit (Nenner)“ ** und ** „verborgenen Variablen (Störfaktoren)“**.
 
 Schauen Sie sich die Daten genau an.
 - Krankenhaus A nimmt **eine große Anzahl (900 Personen) an „leicht zu heilenden, leichten Fällen“** auf.
@@ -149,4 +149,5 @@ Die Welt ist voll von Unternehmen, Politikern und Medien, die nur die „Gesamtz
 Selbst wenn man Ihnen sagt: „Unser Produkt A hat eine höhere Gesamtzufriedenheit als Produkt B der Konkurrenz!“, könnte es sein, dass, wenn man es in „junge Leute“ und „ältere Leute“ aufteilt, das Konkurrenzprodukt B in beiden Gruppen gewinnt.
 
 Wenn Sie sich Daten ansehen, sollten Sie sich nicht von den oberflächlichen „Gesamt“-Zahlen täuschen lassen. Einen kritischen Blick dafür zu haben und zu hinterfragen: „Gibt es eine extreme Verzerrung in den Proportionen der Gruppen aufgrund von verborgenen Variablen (Alter, Geschlecht, Schweregrad usw.) im Hintergrund?“, ist die stärkste Waffe, um in der heutigen Informationsgesellschaft zu überleben.
+
 

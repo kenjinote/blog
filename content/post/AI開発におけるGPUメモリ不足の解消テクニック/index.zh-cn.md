@@ -12,7 +12,7 @@ description: '在LLM的训练和推理中，最大的障碍就是VRAM（GPU内�
 
 # 引言：AI开发与“VRAM之墙”
 
-近年来，大型语言模型（LLM）和扩散模型（Diffusion Models）等生成式AI技术取得了飞速的发展。然而，当许多开发者和研究人员在本地环境中对这些最先进的AI模型进行训练（微调）或执行推理（Inference）时，他们面临着一个非常物理的障碍——**“GPU内存（VRAM）不足”**。
+近年来，大型语言模型（LLM）和扩散模型（Diffusion Models）等生成式AI技术取得了飞速的发展。然而，当许多开发者和研究人员在本地环境中对这些最先进的AI模型进行训练（微调）或执行推理（Inference）时，他们面临着一个非常物理的障碍—— **“GPU内存（VRAM）不足”** 。
 
 即便是面向消费者的旗舰级GPU，例如NVIDIA GeForce RTX 4090，其最大VRAM也只有24GB，根本不可能直接加载像Llama 3 70B这样庞大的模型。而数据中心级别的H100（80GB）或B200（192GB）则非常昂贵，个人或小规模团队难以轻易触及。如果无法突破这堵“VRAM之墙（The Wall of VRAM）”，甚至连接触最先进模型的机会都没有。
 
@@ -46,7 +46,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 
 ## 1.2 推理时的内存消耗：KV缓存的激增
 
-在LLM的推理（尤其是自回归式的文本生成）过程中，**KV缓存（Key-Value Cache）**对VRAM的压力与权重相当，甚至更为剧烈。
+在LLM的推理（尤其是自回归式的文本生成）过程中， **KV缓存（Key-Value Cache）** 对VRAM的压力与权重相当，甚至更为剧烈。
 在Transformer架构中，为了防止重复计算过去已生成或处理过的Token信息，各注意力层的Key和Value张量会持续缓存在VRAM中。这虽然提高了计算速度（Compute），但随着上下文长度（输入提示长度＋生成长度）的增加，内存消耗量会呈爆炸性的线性增长。
 
 处理1个Token时消耗的KV缓存内存量 $M_{kv\_token}$，可根据模型架构通过以下公式进行精确计算：
@@ -84,7 +84,7 @@ $$ M_{kv\_total} = 2 \times 32 \times 32 \times 128 \times 2 \times 8192 \times 
 3. **优化器状态 (Optimizer States):** 像AdamW这样的高级优化器，会为每个参数保留一阶矩（Momentum）和二阶矩（Variance）。为了保持训练稳定性，这些通常以FP32（4字节）保存。也就是说，两个矩会消耗 $4 + 4 = 8$ 字节/参数。
 4. **激活值 (Activations):** 为了计算反向传播的梯度，必须将前向传播时各层的输出（中间状态）保存在内存中。这极度依赖于批大小和序列长度，体积非常庞大。
 
-总而言之，在使用标准Adam优化器的混合精度训练（Mixed Precision Training）中，每个参数大约需要**16至20字节**（主权重4 + FP16权重2 + 梯度2 + 优化器8 + α）的内存。
+总而言之，在使用标准Adam优化器的混合精度训练（Mixed Precision Training）中，每个参数大约需要 **16至20字节** （主权重4 + FP16权重2 + 梯度2 + 优化器8 + α）的内存。
 
 $$ M_{train\_param} \approx P \times 16 \text{ bytes} $$
 
@@ -98,7 +98,7 @@ $$ M_{train\_param} \approx P \times 16 \text{ bytes} $$
 
 ## 2.1 CPU卸载（CPU Offloading）与层分割
 
-当单一或多个GPU无法完全容纳巨型模型时，可以将模型的一部分放置在系统内存（CPU RAM）中，仅在需要时传输到GPU进行计算，这种方法称为**CPU卸载**。`llama.cpp`和Hugging Face的`Accelerate`等工具支持该功能。
+当单一或多个GPU无法完全容纳巨型模型时，可以将模型的一部分放置在系统内存（CPU RAM）中，仅在需要时传输到GPU进行计算，这种方法称为 **CPU卸载** 。`llama.cpp`和Hugging Face的`Accelerate`等工具支持该功能。
 
 ```mermaid
 graph TD
@@ -114,7 +114,7 @@ graph TD
 **机制与挑战:**
 Transformer模型具有各层（Layers）串联堆叠的结构，因此在某一层计算结束前，下一层的计算不会开始。利用这一特点，仅将能够放入GPU的层（例：1层至15层）常驻（固定）在VRAM中，而将其余层（16层至32层）放在容量大但速度慢的CPU RAM中。在推理过程中，15层的计算结束后，通过PCIe总线将第16层的权重从CPU传输（复制）到GPU，并在GPU上执行计算。
 
-然而，**PCIe的带宽（Bandwidth）会成为极其严重的瓶颈**。PCIe 4.0 x16的理论最大带宽为32GB/s（单向），与最新GPU内部的VRAM带宽（例如RTX 4090的GDDR6X为1008GB/s，H100的HBM3更是超过3TB/s）相比慢了两个数量级。因此，频繁使用CPU卸载会导致推理速度（Tokens per Second）急剧下降。
+然而， **PCIe的带宽（Bandwidth）会成为极其严重的瓶颈** 。PCIe 4.0 x16的理论最大带宽为32GB/s（单向），与最新GPU内部的VRAM带宽（例如RTX 4090的GDDR6X为1008GB/s，H100的HBM3更是超过3TB/s）相比慢了两个数量级。因此，频繁使用CPU卸载会导致推理速度（Tokens per Second）急剧下降。
 为了将速度下降降至最低，实际应用中的关键是尽可能多地将层加载到GPU中（最大化GPU Layers），并使卸载的层数最少。
 
 ## 2.2 KV缓存量化与PagedAttention
@@ -125,7 +125,7 @@ Transformer模型具有各层（Layers）串联堆叠的结构，因此在某一
 不仅量化模型权重，在运行时动态生成的KV缓存也会被量化为INT8、INT4或FP8后保存在VRAM中。这样可以将KV缓存的体积缩减为原本的二分之一到四分之一。最新的推理引擎（如vLLM和llama.cpp）已经内置了这一功能，在尽量减小精度损失的同时大幅节省了VRAM。
 
 **2. PagedAttention:**
-vLLM这款推理引擎引入了**PagedAttention**，它将操作系统虚拟内存中“分页（Paging）”的概念应用到了KV缓存中。传统的推理引擎通常会根据设定的最大序列长度，预先分配（Pre-allocation）连续的VRAM空间。因此，当实际输入较短时，会产生碎片化（Fragmentation）和闲置内存的浪费，有时甚至会浪费60%以上的VRAM。
+vLLM这款推理引擎引入了 **PagedAttention** ，它将操作系统虚拟内存中“分页（Paging）”的概念应用到了KV缓存中。传统的推理引擎通常会根据设定的最大序列长度，预先分配（Pre-allocation）连续的VRAM空间。因此，当实际输入较短时，会产生碎片化（Fragmentation）和闲置内存的浪费，有时甚至会浪费60%以上的VRAM。
 
 PagedAttention将KV缓存分割成固定大小的区块（Pages），并允许它们分散存储在不连续的物理内存空间中。由此，几乎可以彻底消除内存浪费（仅限于内部碎片），能够在相同的VRAM容量下显著提升批大小。
 
@@ -141,14 +141,14 @@ graph LR
 
 VRAM不足不仅仅是因为存储数据所需的内存量，计算过程中“临时工作空间（Workspace）”的匮乏也会引发OOM。标准的Transformer Self-Attention机制需要针对序列长度 $N$，在VRAM上实例化（Materialize）一个 $N \times N$ 的巨大注意力矩阵。这使得内存复杂度达到 $O(N^2)$，成为长上下文中导致OOM的主要原因。
 
-解决这一问题的是**FlashAttention**（及其后续版本FlashAttention-2, 3）。
+解决这一问题的是 **FlashAttention** （及其后续版本FlashAttention-2, 3）。
 FlashAttention是一种充分利用GPU硬件架构（即容量巨大但速度较慢的HBM，以及容量极小但速度极快的SRAM的层级结构）的算法。它使用一种被称为分块（Tiling）的技术，将数据分块加载到SRAM中并完成注意力计算，从而完全避免了将 $N \times N$ 矩阵写入HBM（VRAM）的操作。
 
 通过这种方式，注意力层的内存复杂度从 $O(N^2)$ 骤降至 $O(N)$（与序列长度成正比），大大放宽了对上下文长度的限制。
 
 ## 2.4 统一内存（Unified Memory）的崛起与Apple Silicon
 
-从PC架构的根本上解决这一问题的是Apple Silicon（M1/M2/M3/M4系列的Max或Ultra），以及部分最新的APU（如AMD Strix Point）所采用的**统一内存架构（Unified Memory Architecture: UMA）**。
+从PC架构的根本上解决这一问题的是Apple Silicon（M1/M2/M3/M4系列的Max或Ultra），以及部分最新的APU（如AMD Strix Point）所采用的 **统一内存架构（Unified Memory Architecture: UMA）** 。
 
 在这些架构中，主板上的CPU和GPU共享完全相同的物理内存（例如最大192GB的LPDDR5）。因此，根本不存在“通过PCIe从CPU向GPU进行缓慢数据传输”的物理概念。
 
@@ -173,14 +173,14 @@ graph TD
 
 在深度学习的反向传播（Backward Propagation）中，为了计算梯度，必须将前向传播（Forward Pass）中所有层的中间输出（Activations）保存在内存中。当序列长度或批大小变大时，这些激活内存将开始主导VRAM的消耗。
 
-**梯度检查点（Gradient Checkpointing / Activation Recomputation）**是一项巧妙利用内存容量与计算时间（Compute）进行权衡的技术。
-它并不是将所有的中间输出都保存在内存中，而是仅保存特定层（检查点）的输出。在反向传播期间如果需要未保存的中间值时，就**从最近的已保存检查点开始重新计算前向传播**，以恢复所需的值。
+**梯度检查点（Gradient Checkpointing / Activation Recomputation）** 是一项巧妙利用内存容量与计算时间（Compute）进行权衡的技术。
+它并不是将所有的中间输出都保存在内存中，而是仅保存特定层（检查点）的输出。在反向传播期间如果需要未保存的中间值时，就 **从最近的已保存检查点开始重新计算前向传播** ，以恢复所需的值。
 
 这种方式会使计算量增加约20%至30%，导致整体训练时间变长，但它可以将由激活值造成的VRAM消耗量从 $O(N)$（$N$ 为层数）大幅降低至 $O(\sqrt{N})$。在当今的大型模型训练中，这已经成为了不可或缺的必备设置。
 
 ## 3.2 LoRA 与 QLoRA (Low-Rank Adaptation)
 
-从根本上解决VRAM不足的大功臣，是PEFT（Parameter-Efficient Fine-Tuning）的代表技术：**LoRA**。
+从根本上解决VRAM不足的大功臣，是PEFT（Parameter-Efficient Fine-Tuning）的代表技术： **LoRA** 。
 
 它将模型原本巨大的权重矩阵 $W_0 \in \mathbb{R}^{d \times k}$ 冻结（Frozen），不进行训练。取而代之的是，并行引入两个非常小的低秩矩阵 $A \in \mathbb{R}^{r \times k}$ 和 $B \in \mathbb{R}^{d \times r}$，并且仅训练这两个 $A$ 和 $B$。（这里的秩 $r$ 是满足 $r \ll d, k$ 的较小值）。
 
@@ -188,15 +188,15 @@ $$ W_{adapted} = W_0 + \Delta W = W_0 + B A $$
 
 通过这种方法，需要训练的参数量降到了原本的1%以下（有时甚至不到0.1%），同时大量消耗内存的“梯度”和“优化器状态”也骤降至不到1%。
 
-进一步将其发挥到极致的便是**QLoRA (Quantized LoRA)**。
+进一步将其发挥到极致的便是 **QLoRA (Quantized LoRA)** 。
 在QLoRA中，基础模型的权重 $W_0$ 被极限推入4位量化（NF4: NormalFloat4格式）后加载到VRAM。随后，LoRA的微小矩阵 $A, B$ 为了维持计算精度，以BF16（16位）进行训练。
-4位量化将基础模型占据的VRAM缩小到原来的四分之一，同时利用**Paged Optimizers**（分页优化器）技术，在VRAM即将耗尽时，自动将优化器状态临时退避（卸载）到CPU RAM中。凭借这些技术，即使在单张24GB VRAM（如RTX 4090）的GPU上，也能够完成像Llama 3 70B这种超大型模型的微调。
+4位量化将基础模型占据的VRAM缩小到原来的四分之一，同时利用 **Paged Optimizers** （分页优化器）技术，在VRAM即将耗尽时，自动将优化器状态临时退避（卸载）到CPU RAM中。凭借这些技术，即使在单张24GB VRAM（如RTX 4090）的GPU上，也能够完成像Llama 3 70B这种超大型模型的微调。
 
 ## 3.3 DeepSpeed ZeRO 与 卸载 (Offloading)
 
 在多显卡（Multi-GPU）环境中，单纯的数据并行（Data Parallelism）无法解决VRAM问题。因为每个GPU都必须保留整个模型的副本，所以依然无法突破单一GPU VRAM容量的上限。
 
-微软开发的**DeepSpeed**库中的**ZeRO (Zero Redundancy Optimizer)**，是一项能将模型参数、梯度、优化器状态在多个GPU间进行彻底分割（Sharding）的技术。借此，多个GPU的VRAM“总和”就可以被视作一个巨大的内存池来使用。
+微软开发的 **DeepSpeed** 库中的 **ZeRO (Zero Redundancy Optimizer)** ，是一项能将模型参数、梯度、优化器状态在多个GPU间进行彻底分割（Sharding）的技术。借此，多个GPU的VRAM“总和”就可以被视作一个巨大的内存池来使用。
 
 ```mermaid
 graph TD
@@ -213,7 +213,7 @@ graph TD
 - **ZeRO Stage 2:** 将梯度也分割到各个GPU
 - **ZeRO Stage 3:** 将模型的参数（权重）本身也分割到各个GPU
 
-此外，通过使用**ZeRO-Offload**功能，可以将ZeRO分割后的优化器状态或梯度更新计算，**卸载到CPU内存**中并由主机CPU执行，而不再由GPU执行。这样能把GPU VRAM的负担降到最低，即使在有限的GPU环境下，也能够进行巨型模型的训练。虽然由CPU执行计算并通过PCIe传回GPU会导致训练速度减慢，但能够避免“因内存不足导致训练崩溃”这种最糟糕的情况。
+此外，通过使用 **ZeRO-Offload** 功能，可以将ZeRO分割后的优化器状态或梯度更新计算， **卸载到CPU内存** 中并由主机CPU执行，而不再由GPU执行。这样能把GPU VRAM的负担降到最低，即使在有限的GPU环境下，也能够进行巨型模型的训练。虽然由CPU执行计算并通过PCIe传回GPU会导致训练速度减慢，但能够避免“因内存不足导致训练崩溃”这种最糟糕的情况。
 
 ---
 
@@ -288,4 +288,5 @@ model = AutoModelForCausalLM.from_pretrained(
 3. **ZeRO & CPU卸载 (DeepSpeed):** 将优化器状态和梯度在多个GPU间进行分割，或者卸载到CPU内存中，从而突破VRAM限制。
 
 通过娴熟运用这些高级技术，您可以在有限的硬件资源中挖掘出极致的AI开发效能。在日新月异的领域中，未来一定会涌现出更多新的内存节省算法。定期关注最新库的发展动向，并将其引入实际开发中，将是成功的关键。
+
 

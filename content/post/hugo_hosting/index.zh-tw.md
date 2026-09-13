@@ -10,7 +10,7 @@ tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: '使用 Cloudflare Pages 或 GitHub Pages 免費且高速地代管 Hugo 靜態網站的完整技術指南。詳細解說邊緣運算、CDN 架構及 CI/CD 流程。'
 ---
 
-在營運網站或部落格時，載入速度（效能）、營運成本以及安全性是極為重要的因素。過去，像 WordPress 這樣的動態 CMS（內容管理系統）與虛擬主機的組合是主流，但現在被稱為「Jamstack」的架構正受到極大關注。其中，將以 Go 語言編寫的超高速靜態網站產生器（SSG）「Hugo」與 Cloudflare Pages 或 GitHub Pages 等現代代管服務結合，即可建構出**完全免費且極速**的部落格環境。
+在營運網站或部落格時，載入速度（效能）、營運成本以及安全性是極為重要的因素。過去，像 WordPress 這樣的動態 CMS（內容管理系統）與虛擬主機的組合是主流，但現在被稱為「Jamstack」的架構正受到極大關注。其中，將以 Go 語言編寫的超高速靜態網站產生器（SSG）「Hugo」與 Cloudflare Pages 或 GitHub Pages 等現代代管服務結合，即可建構出 **完全免費且極速** 的部落格環境。
 
 本文將從技術觀點進行非常深入的探討，說明如何將使用 Hugo 產生的靜態網站在 Cloudflare Pages 或 GitHub Pages 上發布的具體步驟、各平台架構的差異、使用 GitHub Actions 建構 CI/CD（持續整合／持續部署）、DNS 的最佳化、快取策略，以及如何導入兼顧隱私的流量分析工具。
 
@@ -24,7 +24,7 @@ description: '使用 Cloudflare Pages 或 GitHub Pages 免費且高速地代管 
 另一方面，採用 Jamstack（JavaScript, APIs, and Markup）架構的靜態網站產生器（SSG），會事先（在建置時）產生所有的 HTML 檔案、CSS 和 JavaScript。對於使用者的請求，網頁伺服器（或 CDN）只需直接回傳已產生的靜態檔案，因此能實現壓倒性的高速與堅固的安全性。
 
 ### 1.2 Hugo 的優勢
-SSG 有 Next.js、Gatsby、Jekyll、Astro 等多種選擇，但 Hugo 最大的特色在於其**建置速度**。受惠於 Go 語言的並行處理，即使是擁有數千至數萬個頁面的網站，也只需短短幾秒鐘即可完成建置。這大幅減少了 CI/CD 流程中的等待時間，直接提升了開發者體驗（DX: Developer Experience）。
+SSG 有 Next.js、Gatsby、Jekyll、Astro 等多種選擇，但 Hugo 最大的特色在於其 **建置速度** 。受惠於 Go 語言的並行處理，即使是擁有數千至數萬個頁面的網站，也只需短短幾秒鐘即可完成建置。這大幅減少了 CI/CD 流程中的等待時間，直接提升了開發者體驗（DX: Developer Experience）。
 
 ---
 
@@ -167,8 +167,8 @@ jobs:
 ### 5.2 解決方案：ALIAS / ANAME / CNAME Flattening
 為了解決這個問題，現代的 DNS 服務商提供了獨家的擴充功能。
 
-- **ALIAS / ANAME 紀錄**：在 DNS 伺服器端動態進行名稱解析，並將最終的 A 紀錄（IP 位址）回傳給客戶端。Amazon Route 53 等支援此功能。
-- **CNAME Flattening**：這是 Cloudflare 提供的功能。它讓您可以像在 Zone Apex 上設定 CNAME 一樣，而 Cloudflare 的權威 DNS 伺服器會自動解析並將 IP 位址群（A 紀錄及 AAAA 紀錄）透明地回傳給客戶端。
+- **ALIAS / ANAME 紀錄** ：在 DNS 伺服器端動態進行名稱解析，並將最終的 A 紀錄（IP 位址）回傳給客戶端。Amazon Route 53 等支援此功能。
+- **CNAME Flattening** ：這是 Cloudflare 提供的功能。它讓您可以像在 Zone Apex 上設定 CNAME 一樣，而 Cloudflare 的權威 DNS 伺服器會自動解析並將 IP 位址群（A 紀錄及 AAAA 紀錄）透明地回傳給客戶端。
 
 在使用 Cloudflare Pages 時，將網域的名稱伺服器委派給 Cloudflare，並活用這個「CNAME Flattening」是最無縫且高效能的架構。
 
@@ -248,13 +248,14 @@ Cloudflare Web Analytics 只要嵌入非常輕量的 JavaScript 程式碼片段�
 
 在使用 Hugo 營運靜態網站時，採用 Cloudflare Pages 或 GitHub Pages 等現代代管平台，在成本效益、載入速度以及安全性等各方面都具有壓倒性的優勢。
 
-1. **極速的建置**：善用 Hugo 的高速特性，將 CI/CD 流程（GitHub Actions）的執行時間最小化。
-2. **在邊緣節點傳遞**：利用 Cloudflare 的邊緣網路，以毫秒級的延遲將內容傳遞給全球使用者。
-3. **適當的 DNS 架構**：活用 CNAME Flattening 安全且高速地營運 Zone Apex（自訂網域）。
-4. **快取策略最佳化**：使用 `_headers`，針對不同資源類型適當地分離瀏覽器快取與邊緣快取。
-5. **輕量級的分析工具**：導入兼顧隱私且不損害效能的 Cloudflare Web Analytics 等工具。
+1. **極速的建置** ：善用 Hugo 的高速特性，將 CI/CD 流程（GitHub Actions）的執行時間最小化。
+2. **在邊緣節點傳遞** ：利用 Cloudflare 的邊緣網路，以毫秒級的延遲將內容傳遞給全球使用者。
+3. **適當的 DNS 架構** ：活用 CNAME Flattening 安全且高速地營運 Zone Apex（自訂網域）。
+4. **快取策略最佳化** ：使用 `_headers`，針對不同資源類型適當地分離瀏覽器快取與邊緣快取。
+5. **輕量級的分析工具** ：導入兼顧隱私且不損害效能的 Cloudflare Web Analytics 等工具。
 
 透過結合這些技術，可以免費建構出能夠承受每月數百萬 PV 等級大規模流量，且具備高可擴充性與堅固性的部落格系統。正在考慮建立技術部落格、企業網站或作品集網站的人，請務必嘗試這個 Jamstack + Hugo + Cloudflare Pages 的組合。
+
 
 
 

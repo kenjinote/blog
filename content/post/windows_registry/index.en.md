@@ -393,7 +393,7 @@ $backup = Import-Clixml -Path "C:\backup\reg_backup.xml"
 
 ## 11. Troubleshooting Using Sysinternals Process Monitor (Procmon)
 
-If it's unclear where a program is writing in the registry, or if you want to find the cause of an "Access Denied" error, the **Process Monitor (Procmon)**—a free Sysinternals tool provided by Microsoft—is extremely powerful.
+If it's unclear where a program is writing in the registry, or if you want to find the cause of an "Access Denied" error, the **Process Monitor (Procmon)** —a free Sysinternals tool provided by Microsoft—is extremely powerful.
 By using Procmon, you can capture all registry API calls (`RegOpenKey`, `RegQueryValue`, `RegSetValue`, etc.) occurring on the OS in real-time and troubleshoot with advanced filtering such as the following:
 
 - `Process Name` is `powershell.exe`
@@ -414,6 +414,7 @@ Finally, we summarize the important design principles and best practices for han
 ## Conclusion
 
 The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of Infrastructure as Code, is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment.
+
 
 
 

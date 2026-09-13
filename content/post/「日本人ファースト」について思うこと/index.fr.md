@@ -39,7 +39,7 @@ Le retard de la reprise économique post-pandémie et l'inflation accompagnant l
 
 Lors des élections nationales de 2025, les forces ayant officiellement adopté le « Japonais d'abord » comme slogan ont obtenu un certain nombre de sièges. Les algorithmes des réseaux sociaux ont réagi à l'anxiété des gens en affichant de manière prioritaire des publications extrêmes, accélérant ainsi le phénomène de « chambre d'écho » où seules des valeurs spécifiques sont renforcées.
 
-Les derniers sondages d'opinion menés par les journaux (fin 2025) ont mis en évidence que l'opinion publique est divisée en deux face à ce slogan, avec **42 % de « Pour / plutôt pour »** et **38 % de « Contre / plutôt contre »**.
+Les derniers sondages d'opinion menés par les journaux (fin 2025) ont mis en évidence que l'opinion publique est divisée en deux face à ce slogan, avec **42 % de « Pour / plutôt pour » ** et **38 % de « Contre / plutôt contre »**.
 
 ---
 
@@ -63,7 +63,7 @@ Actuellement, ce ne sont pas des emplois que les Japonais aimeraient occuper mai
 
 L'affirmation la plus largement diffusée sur les réseaux sociaux est que « les étrangers reçoivent l'aide sociale en priorité ». Cependant, si l'on vérifie les statistiques du ministère de la Santé, du Travail et des Affaires sociales, la proportion de foyers dont le chef de famille est étranger parmi tous les foyers bénéficiaires est d'environ **2,8 à 2,9 %**. Ce chiffre est resté presque stable depuis plus de 10 ans.
 
-À l'inverse, si l'on regarde la structure par âge des résidents étrangers, la plupart appartiennent à **la population active dans la vingtaine, trentaine et quarantaine**. Ils paient l'assurance retraite et l'assurance maladie, jouant le rôle de **« contributeurs » qui soutiennent les retraites et les frais médicaux des « Japonais âgés »**. Ce sont eux qui comblent le vide laissé par la population active japonaise et prolongent la vie du système de sécurité sociale japonais.
+À l'inverse, si l'on regarde la structure par âge des résidents étrangers, la plupart appartiennent à **la population active dans la vingtaine, trentaine et quarantaine**. Ils paient l'assurance retraite et l'assurance maladie, jouant le rôle de ** « contributeurs » qui soutiennent les retraites et les frais médicaux des « Japonais âgés »**. Ce sont eux qui comblent le vide laissé par la population active japonaise et prolongent la vie du système de sécurité sociale japonais.
 
 ---
 
@@ -89,7 +89,7 @@ C'est un fait statistique que **le taux de criminalité des étrangers résidant
 Pourquoi l'image selon laquelle « les étrangers font peur » prédomine-t-elle ? Le facteur principal réside dans la différence de **« la structure par âge »** en criminologie.
 
 * **Japonais :** Environ 30 % sont des personnes âgées dont le taux de criminalité est extrêmement faible. Comme ce groupe fait baisser le « dénominateur », le chiffre global du Japon semble faible.
-* **Étrangers :** Étant venus au Japon en tant que main-d'œuvre, plus de 80 % appartiennent à **« une population jeune à d'âge moyen », une tranche d'âge statistiquement plus propice à la criminalité**.
+* **Étrangers :** Étant venus au Japon en tant que main-d'œuvre, plus de 80 % appartiennent à ** « une population jeune à d'âge moyen », une tranche d'âge statistiquement plus propice à la criminalité**.
 
 Si l'on compare les taux de criminalité des Japonais et des étrangers sous la même condition de la « vingtaine », on ne constate aucune différence significative entre les deux. En d'autres termes, ce n'est pas que « la sécurité publique s'est détériorée à cause de l'augmentation du nombre d'étrangers », mais simplement que **« la tranche d'âge la plus susceptible de commettre des crimes (les jeunes) est présente au Japon sous la forme d'étrangers »**.
 
@@ -152,3 +152,4 @@ Cependant, le moyen de réaliser ce souhait ne doit pas être « l'exclusion de 
 En 2026, nous nous trouvons à un carrefour important. Allons-nous continuer à crier des mots de division et à nous étrangler nous-mêmes ? Ou allons-nous regarder la réalité en face et faire un pas vers un « Japon durable » où des personnes diverses se soutiennent mutuellement ?
 
 La réponse réside dans « l'intelligence » et le « courage » du cœur de chacun d'entre nous.
+

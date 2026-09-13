@@ -26,7 +26,7 @@ En 1990, en la columna "Ask Marilyn" (Pregúntale a Marilyn) de la revista de no
 > 2. Entonces, Monty Hall, el presentador que sabe detrás de qué puerta está el coche, abre la **Puerta B**, que revela una cabra.
 > 3. Monty te dice: **"Ahora puedes cambiar a la Puerta C. ¿Qué haces?"**
 > 
-> Y bien, ¿**deberías cambiar de puerta**?
+> Y bien, ¿ **deberías cambiar de puerta**?
 
 Intuitivamente, podrías pensar: "Quedan dos puertas, A y C. Dado que el coche está en una de ellas de forma completamente aleatoria, la probabilidad de ganar en ambas es de $\frac{1}{2}$ (50%). Así que da lo mismo si cambio o no".
 
@@ -173,4 +173,5 @@ El problema de Monty Hall va más allá de ser un simple concurso y nos enseña 
 2. **Actualizar probabilidades con nueva información (Actualización bayesiana)**: Cuando la situación cambia y se dispone de nueva información (como qué puerta abrió el presentador), la clave del éxito está en la capacidad de actualizar tus probabilidades y estrategias de forma flexible, sin aferrarte a tus ideas preconcebidas.
 
 La pequeña decisión de "cambiar de puerta" puede duplicar tus posibilidades de conseguir el "coche nuevo" en tu vida.
+
 

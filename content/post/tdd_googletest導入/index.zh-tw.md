@@ -12,11 +12,11 @@ description: '為 C++ 專案導入測試驅動開發（TDD）的完整指南。�
 
 在現代的軟體開發中，在維持程式碼品質的同時迅速添加新功能，是至關重要的任務。特別是在 C++ 這種要求效能且複雜的語言中，記憶體管理的失誤或未定義行為（Undefined Behavior）很容易導致致命的錯誤（Bug），因此測試的重要性比其他語言來得更高。
 
-本文將針對在 C++ 專案中導入**測試驅動開發（Test-Driven Development: TDD）**的方法，進行非常詳細且具實踐性的解說。內容將全面涵蓋單元測試框架 **GoogleTest** 及 Mock 框架 **GoogleMock** 的使用方法，還有如何使用建置系統 **CMake** 進行現代化的配置，以及程式碼覆蓋率（Code Coverage）的測量方法。
+本文將針對在 C++ 專案中導入 **測試驅動開發（Test-Driven Development: TDD）** 的方法，進行非常詳細且具實踐性的解說。內容將全面涵蓋單元測試框架 **GoogleTest** 及 Mock 框架 **GoogleMock** 的使用方法，還有如何使用建置系統 **CMake** 進行現代化的配置，以及程式碼覆蓋率（Code Coverage）的測量方法。
 
 ## 1. 測試驅動開發（TDD）的哲學與優勢
 
-測試驅動開發（TDD）是一種「在撰寫實作前先寫測試」的軟體開發方法。這不僅僅是一種測試方法，它也發揮了**設計方法**的作用。透過先寫測試，開發者會自然而然地意識到「易於使用的介面」與「低耦合的設計」。
+測試驅動開發（TDD）是一種「在撰寫實作前先寫測試」的軟體開發方法。這不僅僅是一種測試方法，它也發揮了 **設計方法** 的作用。透過先寫測試，開發者會自然而然地意識到「易於使用的介面」與「低耦合的設計」。
 
 ### 1.1 Red-Green-Refactor 循環
 
@@ -45,7 +45,7 @@ $$ Cost(t) = C_0 \times e^{k \cdot t} $$
 
 ## 2. C++ 測試工具的選擇與現代化 CMake 配置
 
-C++ 中存在著許多的測試框架，例如 Catch2、Boost.Test、doctest 等，但作為業界標準最廣泛被使用的是 **GoogleTest（gtest）**。GoogleTest 的魅力在於其豐富的斷言（Assertion）、強大的 Mock 框架（GoogleMock）以及高度的擴充性。
+C++ 中存在著許多的測試框架，例如 Catch2、Boost.Test、doctest 等，但作為業界標準最廣泛被使用的是 **GoogleTest（gtest）** 。GoogleTest 的魅力在於其豐富的斷言（Assertion）、強大的 Mock 框架（GoogleMock）以及高度的擴充性。
 
 ### 2.1 利用 CMake 的 `FetchContent` 導入 GoogleTest
 
@@ -152,14 +152,14 @@ int Calculator::Add(int a, int b) {
 
 在使用 GoogleTest 時，有 `EXPECT_*` 與 `ASSERT_*` 兩種斷言巨集（Macro）。理解它們的差異對於撰寫穩健的測試來說非常重要。
 
-- **`EXPECT_EQ(expected, actual)`**: 即使測試失敗，也會**繼續**執行當前的測試函式。適合在單個測試中想要驗證多個狀態的情況。
-- **`ASSERT_EQ(expected, actual)`**: 當測試失敗時，會當場**中斷（致命失敗）**當前測試函式的執行。使用在後續的驗證已經沒有意義的情況（例：確認指標不是 `nullptr` 之後立刻進行反參照（Dereference））。
+- **`EXPECT_EQ(expected, actual)`**: 即使測試失敗，也會 ** 繼續**執行當前的測試函式。適合在單個測試中想要驗證多個狀態的情況。
+- **`ASSERT_EQ(expected, actual)`**: 當測試失敗時，會當場 ** 中斷（致命失敗）**當前測試函式的執行。使用在後續的驗證已經沒有意義的情況（例：確認指標不是 `nullptr` 之後立刻進行反參照（Dereference））。
 
 ## 5. 依賴注入（DI）與 GoogleMock 的 Mock 化
 
 在實際的 C++ 專案中，必定會發生對外部系統的依賴，如資料庫存取、網路通訊、硬體控制等。如果將這些依賴關係放著不管，單元測試會變得非常困難。
 
-這時就要用到**依賴注入（Dependency Injection: DI）**，以及使用 **GoogleMock** 進行介面的 Mock 化。
+這時就要用到 **依賴注入（Dependency Injection: DI）** ，以及使用 **GoogleMock** 進行介面的 Mock 化。
 
 ```mermaid
 flowchart LR
@@ -260,7 +260,7 @@ TEST(UserServiceTest, RejectsEmptyNameWithoutCallingRepository) {
 
 ## 6. 程式碼覆蓋率的測量與視覺化
 
-在寫完測試後，為了客觀評估專案中哪部分被測試執行過（被覆蓋），我們需要測量**程式碼覆蓋率（Code Coverage）**。程式碼覆蓋率（$Coverage$）以下列公式表示：
+在寫完測試後，為了客觀評估專案中哪部分被測試執行過（被覆蓋），我們需要測量 **程式碼覆蓋率（Code Coverage）** 。程式碼覆蓋率（$Coverage$）以下列公式表示：
 
 $$ Coverage = \left( \frac{L_{executed}}{L_{total}} \right) \times 100 \ (\%) $$
 
@@ -343,4 +343,5 @@ $$ M = E - N + 2P $$
 4. 透過 **gcov/lcov** 將測試覆蓋率視覺化
 
 雖然 TDD 是需要時間學習的方法，但在像是 C++ 這種要求兼顧效能與安全性的系統程式設計中，其投資報酬率是無可估量的。請務必在下一個專案中慢慢實踐 TDD，獲得堅固且易於維護的 C++ 程式碼。
+
 

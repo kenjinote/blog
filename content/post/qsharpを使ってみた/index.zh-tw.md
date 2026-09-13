@@ -55,15 +55,15 @@ $$ |\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle) $$
 改變量子狀態的操作（相當於古典邏輯電路中的 AND、OR、NOT 閘）被稱為量子閘。在數學上，量子閘以複數矩陣表示，並作為對量子狀態向量的矩陣乘法來作用。根據量子力學的公理，這些矩陣必須是酉矩陣（Unitary Matrix，即滿足 $U^\dagger U = I$ 的矩陣，其中 $U^\dagger$ 是伴隨矩陣，$I$ 是單位矩陣）。這使得除了測量之外的所有量子操作都是可逆的（Reversible）。
 
 代表性的單一量子位元閘：
-- **Pauli-X 閘（NOT閘）**：將 $|0\rangle$ 反轉為 $|1\rangle$，$|1\rangle$ 反轉為 $|0\rangle$。
+- **Pauli-X 閘（NOT閘）** ：將 $|0\rangle$ 反轉為 $|1\rangle$，$|1\rangle$ 反轉為 $|0\rangle$。
 $$ X = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} $$
-- **Pauli-Z 閘（相位偏移閘）**：保持 $|0\rangle$ 不變，將 $|1\rangle$ 的正負號反轉（在相對相位加上 $\pi$）。
+- **Pauli-Z 閘（相位偏移閘）** ：保持 $|0\rangle$ 不變，將 $|1\rangle$ 的正負號反轉（在相對相位加上 $\pi$）。
 $$ Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} $$
-- **Hadamard 閘（H閘）**：將確定狀態轉換為疊加狀態。
+- **Hadamard 閘（H閘）** ：將確定狀態轉換為疊加狀態。
 $$ H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} $$
 
 代表性的雙量子位元閘：
-- **CNOT 閘（受控NOT閘）**：只有當控制位元（Control Qubit）為 $|1\rangle$ 時，才對目標位元（Target Qubit）套用 X 閘（NOT運算）。
+- **CNOT 閘（受控NOT閘）** ：只有當控制位元（Control Qubit）為 $|1\rangle$ 時，才對目標位元（Target Qubit）套用 X 閘（NOT運算）。
 $$ CNOT = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{pmatrix} $$
 
 量子演算法可以說是組合這些基本的酉矩陣，以實現目標運算的流程設計。
@@ -74,10 +74,10 @@ $$ CNOT = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 &
 
 QDK包含以下主要元素：
 
-1. **Q# 編譯器與執行環境**：對以 Q# 語言撰寫的程式碼進行高度分析與最佳化，並將其轉換為可在模擬器或實際量子硬體（透過 Azure Quantum）上執行的格式（如 QIR）。Q# 編譯器會進行量子計算特有的靜態分析，例如檢查函數純度與管理量子位元的生命週期。
-2. **量子模擬器**：內含可在開發者本機機器上模擬量子狀態演變的全狀態模擬器（Full State Simulator）。這讓開發者能在手邊快速測試與除錯數十個量子位元規模的小型演算法。此外，還提供了用來估算大型線路（數千至數百萬量子位元）資源需求的資源估算器（Resource Estimator）。
-3. **豐富的函式庫**：Q# 標準函式庫（Standard Library）中準備了各種進階的建構區塊，從基本的量子閘（H、X、Y、Z、CNOT等），到複雜的算術運算（如量子加法器）、振幅放大（Amplitude Amplification）、量子相位估計演算法（Quantum Phase Estimation）等。這讓開發者能夠避免重新發明輪子。
-4. **整合開發環境 (IDE) 協作**：提供了適用於 Visual Studio 或 Visual Studio Code 的擴充功能，讓開發者能利用語法醒目提示、程式碼完成（IntelliSense）、強大的除錯功能、與測試框架的整合等現代軟體開發不可或缺的功能。
+1. **Q# 編譯器與執行環境** ：對以 Q# 語言撰寫的程式碼進行高度分析與最佳化，並將其轉換為可在模擬器或實際量子硬體（透過 Azure Quantum）上執行的格式（如 QIR）。Q# 編譯器會進行量子計算特有的靜態分析，例如檢查函數純度與管理量子位元的生命週期。
+2. **量子模擬器** ：內含可在開發者本機機器上模擬量子狀態演變的全狀態模擬器（Full State Simulator）。這讓開發者能在手邊快速測試與除錯數十個量子位元規模的小型演算法。此外，還提供了用來估算大型線路（數千至數百萬量子位元）資源需求的資源估算器（Resource Estimator）。
+3. **豐富的函式庫** ：Q# 標準函式庫（Standard Library）中準備了各種進階的建構區塊，從基本的量子閘（H、X、Y、Z、CNOT等），到複雜的算術運算（如量子加法器）、振幅放大（Amplitude Amplification）、量子相位估計演算法（Quantum Phase Estimation）等。這讓開發者能夠避免重新發明輪子。
+4. **整合開發環境 (IDE) 協作** ：提供了適用於 Visual Studio 或 Visual Studio Code 的擴充功能，讓開發者能利用語法醒目提示、程式碼完成（IntelliSense）、強大的除錯功能、與測試框架的整合等現代軟體開發不可或缺的功能。
 
 以下是顯示 Q# 程式從撰寫到在硬體上執行之工作流程的 Mermaid 圖表。
 
@@ -373,3 +373,4 @@ QDK 在執行環境的目標平台之一內建了「資源估算器（Resource E
 - [Q# GitHub 儲存庫](https://github.com/microsoft/qsharp-compiler)：Q# 語言編譯器與標準函式庫本身也作為開源專案活耀地開發中。對編譯器內部結構有興趣的人絕不能錯過。
 
 量子運算的未來才剛剛開始，充滿著無限的可能性。請抱持著享受新程式設計典範的心情，務必挑戰看看用 Q# 寫程式吧！
+

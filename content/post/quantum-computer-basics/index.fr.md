@@ -75,13 +75,13 @@ Même si vous effectuez des calculs dans un état superposé, vous devez finalem
 
 C'est ici qu'intervient **« l'interférence quantique »** (Interference). Lorsque des ondes entrent en collision, le phénomène où elles se renforcent là où les longueurs d'onde correspondent et s'annulent là où elles sont décalées est utilisé (le principe est fondamentalement le même que celui des écouteurs à réduction de bruit).
 
-Un excellent « algorithme quantique » manipule habilement l'état quantique pendant le processus de calcul afin que **« les amplitudes de probabilité des états (ondes) menant à la bonne réponse se renforcent (amplification) »** et **« les amplitudes de probabilité des états menant à une mauvaise réponse s'annulent (annulation) »**. Puis, lors de l'observation finale, il fait en sorte que la « bonne réponse » apparaisse avec une probabilité de presque 100 %. Concevoir habilement ce processus d'interférence est l'essence même de la programmation quantique.
+Un excellent « algorithme quantique » manipule habilement l'état quantique pendant le processus de calcul afin que **« les amplitudes de probabilité des états (ondes) menant à la bonne réponse se renforcent (amplification) » ** et ** « les amplitudes de probabilité des états menant à une mauvaise réponse s'annulent (annulation) »**. Puis, lors de l'observation finale, il fait en sorte que la « bonne réponse » apparaisse avec une probabilité de presque 100 %. Concevoir habilement ce processus d'interférence est l'essence même de la programmation quantique.
 
 ---
 
 ## Chapitre 3 : Comment calcule-t-on ? Les « portes quantiques » et les « circuits quantiques »
 
-Tout comme les ordinateurs classiques utilisent des portes logiques (AND, OR, NOT, etc.) pour effectuer des calculs, les ordinateurs quantiques appliquent des opérations appelées **« portes quantiques »** (Quantum Gates) aux qubits pour effectuer des calculs. Une combinaison de plusieurs portes quantiques est appelée un **circuit quantique** (Quantum Circuit).
+Tout comme les ordinateurs classiques utilisent des portes logiques (AND, OR, NOT, etc.) pour effectuer des calculs, les ordinateurs quantiques appliquent des opérations appelées **« portes quantiques » ** (Quantum Gates) aux qubits pour effectuer des calculs. Une combinaison de plusieurs portes quantiques est appelée un **circuit quantique** (Quantum Circuit).
 
 L'état d'un qubit est exprimé mathématiquement comme un point sur la surface d'une sphère tridimensionnelle appelée « sphère de Bloch » (Bloch sphere). Le pôle Nord est « 0 », le pôle Sud est « 1 » et l'équateur est un « état où 0 et 1 se superposent à moitié ». Une porte quantique n'est rien d'autre qu'une opération de rotation de l'état (vecteur) à la surface de cette sphère.
 
@@ -157,7 +157,7 @@ Enfin, jetons un œil à la façon dont les ordinateurs quantiques sont nés et 
 - **Les années 1980** : Les physiciens Paul Benioff et Richard Feynman ont proposé le concept d'un ordinateur qui utilise les principes de la mécanique quantique. La phrase « Si vous voulez simuler la nature, utilisez la mécanique quantique » en a été le point de départ.
 - **1994** : Peter Shor annonce un algorithme quantique de factorisation en nombres premiers (l'algorithme de Shor). Cela a choqué le monde et a déclenché un afflux massif de fonds de recherche.
 - **1996** : Lov Grover publie l'algorithme de Grover pour accélérer la recherche de données.
-- **2019** : Une étape historique. Google a annoncé qu'il avait utilisé un processeur supraconducteur de 53 qubits appelé « Sycamore » pour effectuer un calcul de vérification de génération de nombres aléatoires, qui prendrait (soi-disant) 10 000 ans sur un superordinateur classique, en environ 200 secondes. Cela a fait grand bruit en tant que première déclaration de démonstration de la **« Suprématie quantique »** (Quantum Supremacy) au monde (plus tard, IBM et d'autres ont amélioré l'algorithme du côté du superordinateur classique et ont rétorqué qu'il pouvait être calculé en quelques jours, conduisant à des débats animés).
+- **2019** : Une étape historique. Google a annoncé qu'il avait utilisé un processeur supraconducteur de 53 qubits appelé « Sycamore » pour effectuer un calcul de vérification de génération de nombres aléatoires, qui prendrait (soi-disant) 10 000 ans sur un superordinateur classique, en environ 200 secondes. Cela a fait grand bruit en tant que première déclaration de démonstration de la ** « Suprématie quantique »** (Quantum Supremacy) au monde (plus tard, IBM et d'autres ont amélioré l'algorithme du côté du superordinateur classique et ont rétorqué qu'il pouvait être calculé en quelques jours, conduisant à des débats animés).
 - **Après 2023** : IBM annonce le processeur « Condor » avec plus de 1 000 qubits. De plus, l'Université de Harvard et d'autres ont réussi à générer et à manipuler des « qubits logiques », et les premières démonstrations de technologie de correction d'erreurs commencent à être signalées les unes après les autres.
 
 ### Vers la technologie de la prochaine génération
@@ -172,3 +172,4 @@ La porte du monde quantique vient de s'ouvrir. Nous devons garder un œil sur le
 
 ---
 *Cet article vise à expliquer les concepts fondamentaux de l'informatique quantique d'une manière facile à comprendre pour les hommes d'affaires et le grand public intéressé par la technologie. Veuillez noter que des simplifications ont été apportées à partir des définitions mathématiques et physiques strictes (telles que la notation bra-ket et les détails de l'amplitude de probabilité complexe).*
+

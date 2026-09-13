@@ -21,8 +21,8 @@ Mac(macOS)과 Windows, 나아가 Linux(WSL 포함)와 같은 여러 운영체제
 
 가장 빈번하게 발생하며 팀 개발을 혼란에 빠뜨리는 원인 중 하나가 '개행 문자(Line Endings)' 문제입니다. 이는 타자기 시대까지 거슬러 올라가는 역사적인 문제입니다.
 
-*   **Windows**: 캐리지 리턴(CR, `\r`, `0x0D`)과 라인 피드(LF, `\n`, `0x0A`)의 조합인 **CRLF**를 표준 개행 문자로 사용합니다.
-*   **macOS / Linux**: 라인 피드 단독인 **LF**를 표준 개행 문자로 사용합니다. (※초기 Mac OS 9까지는 CR 단독이었으나, Mac OS X 이후로는 UNIX 기반이 되어 LF로 변경되었습니다.)
+*   **Windows**: 캐리지 리턴(CR, `\r`, `0x0D`)과 라인 피드(LF, `\n`, `0x0A`)의 조합인 **CRLF** 를 표준 개행 문자로 사용합니다.
+*   **macOS / Linux**: 라인 피드 단독인 **LF** 를 표준 개행 문자로 사용합니다. (※초기 Mac OS 9까지는 CR 단독이었으나, Mac OS X 이후로는 UNIX 기반이 되어 LF로 변경되었습니다.)
 
 이러한 차이로 인해, Git 리포지토리 내에서 소스 코드를 공유할 때 차이(diff)가 파일 전체에 걸쳐 발생해버리거나, Linux 환경에서 실행할 것을 전제로 한 쉘 스크립트(`.sh`)가 Windows에서 편집되어 CRLF로 바뀌면서 실행 시 `\r`을 잘못된 문자로 해석하여 `\r: command not found`와 같은 에러를 일으키기도 합니다.
 
@@ -61,9 +61,9 @@ Git에는 `core.autocrlf`라는 설정이 있지만, 여기에 의존하는 것�
 
 파일 시스템에서의 대소문자 구분(Case Sensitivity) 또한 크로스 플랫폼 개발에서 가장 큰 난관 중 하나입니다.
 
-*   **macOS (APFS / HFS+)**: 기본적으로 **대소문자를 구분하지 않지만(Case-Insensitive)**, **상태는 보존(Case-Preserving)**됩니다. 즉, `File.txt`로 저장하면 `File.txt`로 표시되지만, 프로그램에서 `file.txt`로 접근해도 읽을 수 있습니다.
-*   **Windows (NTFS)**: macOS와 마찬가지로 기본적으로 **대소문자를 구분하지 않으며(Case-Insensitive)**, **상태는 보존(Case-Preserving)**되는 사양입니다.
-*   **Linux / WSL (ext4 등)**: **대소문자를 완벽하게 구분합니다(Case-Sensitive)**. `File.txt`와 `file.txt`는 완전히 다른 파일로서 동일한 디렉토리 내에 공존할 수 있습니다.
+*   **macOS (APFS / HFS+)**: 기본적으로 ** 대소문자를 구분하지 않지만(Case-Insensitive)**, ** 상태는 보존(Case-Preserving)**됩니다. 즉, `File.txt`로 저장하면 `File.txt`로 표시되지만, 프로그램에서 `file.txt`로 접근해도 읽을 수 있습니다.
+*   **Windows (NTFS)**: macOS와 마찬가지로 기본적으로 ** 대소문자를 구분하지 않으며(Case-Insensitive)**, ** 상태는 보존(Case-Preserving)**되는 사양입니다.
+*   **Linux / WSL (ext4 등)**: ** 대소문자를 완벽하게 구분합니다(Case-Sensitive)**. `File.txt`와 `file.txt`는 완전히 다른 파일로서 동일한 디렉토리 내에 공존할 수 있습니다.
 
 ### 발생하는 전형적인 버그
 
@@ -85,7 +85,7 @@ $$ T_{search}(N) = O(L \log N) $$
 
 $$ T_{insensitive\_search}(N) = O( (L \times C_{fold}) \log N ) $$
 
-최근의 OS는 이를 고도로 캐싱하고 있지만, 근본적인 동작 방식의 차이는 개발 수준에서의 규칙으로 제한할 수밖에 없습니다. **"파일 이름과 디렉토리 이름은 모두 소문자와 하이픈(케밥 케이스) 또는 언더스코어(스네이크 케이스)로 통일한다"**는 프로젝트 규칙을 설정하는 것이 가장 안전한 접근법입니다.
+최근의 OS는 이를 고도로 캐싱하고 있지만, 근본적인 동작 방식의 차이는 개발 수준에서의 규칙으로 제한할 수밖에 없습니다. **"파일 이름과 디렉토리 이름은 모두 소문자와 하이픈(케밥 케이스) 또는 언더스코어(스네이크 케이스)로 통일한다"** 는 프로젝트 규칙을 설정하는 것이 가장 안전한 접근법입니다.
 
 ---
 
@@ -154,7 +154,7 @@ console.log(configPath);
 ## 4. 문자 인코딩 (UTF-8 vs CP932/Shift-JIS)과 Unicode의 장벽
 
 Windows의 일본어/한국어 환경 등에서의 가장 큰 골칫거리가 문자 인코딩입니다.
-현대 개발에 있어 macOS나 Linux는 시스템 전체, 터미널, 파일 인코딩에 이르기까지 **UTF-8**로 완전히 통일되어 있습니다. 그러나 일본어판 Windows의 표준 인코딩(시스템 로캘에 기반한 'ANSI 코드 페이지')은 여전히 **CP932 (Shift-JIS의 마이크로소프트 확장)**가 기본값으로 동작하는 경우가 많습니다.
+현대 개발에 있어 macOS나 Linux는 시스템 전체, 터미널, 파일 인코딩에 이르기까지 **UTF-8** 로 완전히 통일되어 있습니다. 그러나 일본어판 Windows의 표준 인코딩(시스템 로캘에 기반한 'ANSI 코드 페이지')은 여전히 **CP932 (Shift-JIS의 마이크로소프트 확장)** 가 기본값으로 동작하는 경우가 많습니다.
 ※ 내부적인 Win32 API의 문자열 표현은 UTF-16LE(`wchar_t`)입니다.
 
 Python 등에서 파일 읽기/쓰기를 수행할 때 인코딩을 명시하지 않으면, Windows 상에서는 `locale.getpreferredencoding()`의 결과(예: CP932)에 따라 해석하려고 시도합니다. 이로 인해 UTF-8로 저장된 파일을 읽으려다 `UnicodeDecodeError`가 발생하거나, 글자 깨짐(Mojibake)이 발생하게 됩니다.
@@ -171,7 +171,7 @@ $$ T_{conv} = \sum_{i=1}^{N} \Big( C_{decode} \cdot f_{decode}(x_i) + C_{encode}
 
 ### 인코딩 관련 대책
 
-가장 확실한 대책은 **"언제나 명시적으로 UTF-8을 지정하는 것"**입니다.
+가장 확실한 대책은 **"언제나 명시적으로 UTF-8을 지정하는 것"** 입니다.
 
 ```python
 # Python에서의 좋은 예: 항상 encoding="utf-8"을 지정한다
@@ -230,7 +230,7 @@ C++나 Rust 등의 네이티브 코드(머신 코드로 직접 컴파일되는 �
 
 ### CMake를 통한 메타 빌드 시스템의 활용
 
-C/C++ 프로젝트에서 크로스 플랫폼을 실현하기 위한 세계적인 사실상 표준(De facto standard)이 **CMake**입니다. CMake는 직접 소스 코드를 컴파일하는 것이 아니라, 각 환경에 맞춘 네이티브 빌드 설정 파일(Windows라면 Visual Studio의 솔루션 파일, Linux/Mac이라면 Makefile이나 Ninja의 빌드 스크립트)을 생성하는 '제너레이터(Generator)' 역할을 합니다.
+C/C++ 프로젝트에서 크로스 플랫폼을 실현하기 위한 세계적인 사실상 표준(De facto standard)이 **CMake** 입니다. CMake는 직접 소스 코드를 컴파일하는 것이 아니라, 각 환경에 맞춘 네이티브 빌드 설정 파일(Windows라면 Visual Studio의 솔루션 파일, Linux/Mac이라면 Makefile이나 Ninja의 빌드 스크립트)을 생성하는 '제너레이터(Generator)' 역할을 합니다.
 
 ```mermaid
 flowchart TD
@@ -271,7 +271,7 @@ endif()
 
 시스템에 의존하는 처리(파일 조작, 프로세스/스레드 생성, 메모리 관리, 소켓 통신 등)를 애플리케이션의 핵심이 되는 비즈니스 로직으로부터 완전히 분리하는 것이 크로스 플랫폼 개발의 핵심입니다.
 
-이를 실현하기 위해 **OS 추상화 계층 (OS Abstraction Layer, OSAL)**이라는 패턴을 사용합니다.
+이를 실현하기 위해 **OS 추상화 계층 (OS Abstraction Layer, OSAL)** 이라는 패턴을 사용합니다.
 
 아래는 OS별 고유 API를 래핑(wrapping)하여 공통 인터페이스를 제공하는 클래스 설계의 예입니다. 다형성(Polymorphism)을 이용하거나, 컴파일 시의 매크로 스위치를 이용하여 구현을 전환합니다.
 
@@ -304,7 +304,7 @@ classDiagram
 
 ## 8. CI/CD에서의 크로스 플랫폼 검증 (매트릭스 빌드)
 
-개발자가 로컬 환경에서 아무리 주의 깊게 코딩하더라도, 크로스 플랫폼 대응의 최종 관문이 되는 것은 **CI/CD (Continuous Integration / Continuous Deployment) 파이프라인**입니다. 로컬 환경(예: Mac)에서는 동작하더라도, 다른 OS(Windows)에서는 컴파일 에러가 되는 경우가 끊임없이 발생합니다.
+개발자가 로컬 환경에서 아무리 주의 깊게 코딩하더라도, 크로스 플랫폼 대응의 최종 관문이 되는 것은 **CI/CD (Continuous Integration / Continuous Deployment) 파이프라인** 입니다. 로컬 환경(예: Mac)에서는 동작하더라도, 다른 OS(Windows)에서는 컴파일 에러가 되는 경우가 끊임없이 발생합니다.
 
 GitHub Actions나 GitLab CI 등 최신 CI 도구를 활용하여, Pull Request가 생성될 때마다 **Windows, macOS, Linux의 모든 환경에서 병렬로 빌드와 테스트를 실행하는** 매트릭스 빌드(Matrix Build)를 설정합시다.
 
@@ -384,4 +384,5 @@ Mac과 Windows의 크로스 플랫폼 개발에는 역사적 배경에 뿌리를
 8.  **CI/CD**: 매트릭스 빌드를 도입하여 모든 대상 OS에서의 깨끗한 빌드와 테스트를 자동화하고, 사람에 의존하는 작업을 배제합니다.
 
 현재는 Electron, Tauri, .NET 등의 강력한 프레임워크가 이러한 차이의 대부분을 흡수해주지만, 기반이 되는 OS의 네이티브 동작(파일 시스템이나 인코딩)에 대한 지식은 심각한 성능 문제나 난해한 버그를 해결할 때 여전히 필수적입니다. 이러한 모범 사례를 프로젝트의 초기 단계부터 팀 전체가 공유하고 철저히 준수함으로써, OS 차이로 인한 불필요한 디버깅 시간을 대폭 줄이고 본질적인 소프트웨어 가치 창출에 집중할 수 있을 것입니다.
+
 

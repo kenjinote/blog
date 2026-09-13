@@ -10,7 +10,7 @@ tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: '從 llama.cpp 基礎到使用 C++ 進行進階客製化、Transformer 的數學背景以及 ggml 架構解說的完整指南。'
 ---
 
-近年來，大型語言模型 (LLM) 的進化非常驚人，其應用範圍每天都在擴大。然而，要在本機環境中運行具有數十億、數百億參數的模型，通常需要配備龐大 VRAM 的高階 GPU。打破這種「硬體壁壘」，並在一般 PC、Mac 甚至 Raspberry Pi 等設備上實現 LLM 實用推理的，正是 **llama.cpp**。
+近年來，大型語言模型 (LLM) 的進化非常驚人，其應用範圍每天都在擴大。然而，要在本機環境中運行具有數十億、數百億參數的模型，通常需要配備龐大 VRAM 的高階 GPU。打破這種「硬體壁壘」，並在一般 PC、Mac 甚至 Raspberry Pi 等設備上實現 LLM 實用推理的，正是 **llama.cpp** 。
 
 本文不僅介紹單純的命令列工具用法，還將針對工程師進行極為詳細的解說，內容涵蓋其基礎技術 `ggml` 的架構、Transformer 和量化的數學背景，以及如何利用 C++ API 將 LLM 嵌入到獨立應用程式中並進行客製化。
 
@@ -20,15 +20,15 @@ description: '從 llama.cpp 基礎到使用 C++ 進行進階客製化、Transfor
 
 `llama.cpp` 是由 Georgi Gerganov 開發，使用 C/C++ 編寫的輕量級 LLM 推理引擎。它最初是為了在 Apple Silicon (M1/M2 Mac) 上高速運行 Meta 的 LLaMA 模型而誕生的，但現在已經支援各種架構和模型。
 
-它最大的特點是**無外部依賴的純 C/C++ 實作**。它不需要 Python 或 PyTorch 等龐大的生態系統，可以編譯為單一執行檔，因此部署非常容易。
+它最大的特點是 **無外部依賴的純 C/C++ 實作** 。它不需要 Python 或 PyTorch 等龐大的生態系統，可以編譯為單一執行檔，因此部署非常容易。
 
-這個 `llama.cpp` 的核心是張量運算函式庫 **ggml**。ggml 是從零開始設計的，旨在將 CPU（以及部分 GPU）上的機器學習矩陣運算優化到極致。
+這個 `llama.cpp` 的核心是張量運算函式庫 **ggml** 。ggml 是從零開始設計的，旨在將 CPU（以及部分 GPU）上的機器學習矩陣運算優化到極致。
 
 ### 1.1 為什麼 llama.cpp 這麼快？
 
-1. **活用記憶體映射 (mmap)**：在將模型權重載入記憶體時，透過利用作業系統的 `mmap`，可以避免全部載入 RAM，從而實現快速啟動和節省記憶體。
-2. **徹底優化 SIMD 指令**：它利用了 AVX2、AVX-512、ARM NEON、Apple AMX 等 CPU 特有的指令集，實現了矩陣乘法的超高速化。
-3. **量化 (Quantization)**：將 16-bit 浮點數 (FP16) 的權重壓縮為 4-bit、5-bit、8-bit 的整數，從而消除記憶體頻寬的瓶頸（詳情後述）。
+1. **活用記憶體映射 (mmap)** ：在將模型權重載入記憶體時，透過利用作業系統的 `mmap`，可以避免全部載入 RAM，從而實現快速啟動和節省記憶體。
+2. **徹底優化 SIMD 指令** ：它利用了 AVX2、AVX-512、ARM NEON、Apple AMX 等 CPU 特有的指令集，實現了矩陣乘法的超高速化。
+3. **量化 (Quantization)** ：將 16-bit 浮點數 (FP16) 的權重壓縮為 4-bit、5-bit、8-bit 的整數，從而消除記憶體頻寬的瓶頸（詳情後述）。
 
 ---
 
@@ -52,7 +52,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-在 llama.cpp 的推理迴圈中，瓶頸在於這些巨大的矩陣 $W_Q, W_K, W_V$ 或前饋神經網路 (FFN) 的權重矩陣與向量 $X$（在生成階段由於每次處理一個 Token，因此 $N=1$）的乘積，也就是 **GEMV (General Matrix-Vector Multiplication)**。
+在 llama.cpp 的推理迴圈中，瓶頸在於這些巨大的矩陣 $W_Q, W_K, W_V$ 或前饋神經網路 (FFN) 的權重矩陣與向量 $X$（在生成階段由於每次處理一個 Token，因此 $N=1$）的乘積，也就是 **GEMV (General Matrix-Vector Multiplication)** 。
 
 ### 2.2 量化 (Quantization) 的數學基礎
 
@@ -76,7 +76,7 @@ $$
 y = \sum_{i=1}^{B} w_i x_i \approx \Delta \Delta_x \sum_{i=1}^{B} q_i q_{x, i}
 $$
 
-這個 $\sum q_i q_{x, i}$ 的部分變成了**純整數運算**，可以使用 SIMD 指令進行極為高速的平行計算。這就是 llama.cpp 能在 CPU 上達到驚人速度的數學機關。
+這個 $\sum q_i q_{x, i}$ 的部分變成了 **純整數運算** ，可以使用 SIMD 指令進行極為高速的平行計算。這就是 llama.cpp 能在 CPU 上達到驚人速度的數學機關。
 
 ---
 
@@ -337,7 +337,7 @@ LLM 並不是直接理解文字，而是將其作為整數 ID（Token）的序�
 
 ## 6. 進階客製化案例：透過 C++ 進行 Logit 操作與懲罰控制
 
-如果不只是單純的文字生成，而是強制輸出特定格式（例如僅限 JSON），或是控制不輸出特定的禁止詞彙時，我們可以在 C++ 端直接操作採樣前的 **Logit (Logits)**。
+如果不只是單純的文字生成，而是強制輸出特定格式（例如僅限 JSON），或是控制不輸出特定的禁止詞彙時，我們可以在 C++ 端直接操作採樣前的 **Logit (Logits)** 。
 
 可以獲取模型在輸出每個 Token 之前，原始分數（轉換為機率前的值）的陣列。
 
@@ -355,7 +355,7 @@ for (llama_token bad_tok : forbidden_tokens) {
 }
 ```
 
-如此一來，透過直接處理 C++ API，我們就能實現透過 LangChain 或 Python 難以做到或開銷過大的**「在每個推理週期進行微秒級的介入」**。
+如此一來，透過直接處理 C++ API，我們就能實現透過 LangChain 或 Python 難以做到或開銷過大的 **「在每個推理週期進行微秒級的介入」** 。
 
 ---
 
@@ -383,4 +383,5 @@ for (llama_token bad_tok : forbidden_tokens) {
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+
 

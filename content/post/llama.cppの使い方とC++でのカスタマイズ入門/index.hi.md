@@ -52,7 +52,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-llama.cpp के अनुमान लूप (inference loop) में, अड़चन (bottleneck) यह विशाल मैट्रिक्स $W_Q, W_K, W_V$ और फीड-फॉरवर्ड नेटवर्क (FFN) के वज़न मैट्रिक्स और वेक्टर $X$ का गुणन है (क्योंकि जनरेशन चरण में प्रति टोकन संसाधित किया जाता है, $N=1$), यानी **GEMV (General Matrix-Vector Multiplication)**।
+llama.cpp के अनुमान लूप (inference loop) में, अड़चन (bottleneck) यह विशाल मैट्रिक्स $W_Q, W_K, W_V$ और फीड-फॉरवर्ड नेटवर्क (FFN) के वज़न मैट्रिक्स और वेक्टर $X$ का गुणन है (क्योंकि जनरेशन चरण में प्रति टोकन संसाधित किया जाता है, $N=1$), यानी **GEMV (General Matrix-Vector Multiplication)** ।
 
 ### 2.2 क्वांटाइज़ेशन (Quantization) का गणितीय आधार
 
@@ -378,4 +378,5 @@ C++ में कार्यान्वयन समाप्त करने 
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+
 

@@ -14,7 +14,7 @@ description: '关于如何在本地环境中最快且高效地微调 TinyLLaMA �
 
 大型语言模型（LLM）的演进正以惊人的速度推进，随之而来的是模型参数量也持续膨胀至数千亿规模。虽然像 GPT-4 和 Claude 3 这样的超大型模型拥有无与伦比的性能，但推理和训练所需的计算成本，以及使用外部 API 时存在的安全和数据隐私隐患，成为了企业面临的巨大障碍。特别是在处理高机密性的内部数据或个人信息的业务中，从合规性（如 GDPR、APPI 等）的角度来看，将数据发送到云端公开的 LLM API 往往是不可接受的。
 
-因此，备受瞩目的是**小型语言模型（SLM: Small Language Models）**以及**本地环境部署（On-Premises）**。其中，“**TinyLLaMA**”以仅 1.1B（11亿）参数的紧凑尺寸，却拥有在约 3 万亿 Token 的庞大数据集上预训练的底蕴，与同级别的模型相比，展现出惊人的性能。
+因此，备受瞩目的是 **小型语言模型（SLM: Small Language Models）** 以及 **本地环境部署（On-Premises）** 。其中，“ **TinyLLaMA** ”以仅 1.1B（11亿）参数的紧凑尺寸，却拥有在约 3 万亿 Token 的庞大数据集上预训练的底蕴，与同级别的模型相比，展现出惊人的性能。
 
 本文将提供一份完整指南，教你如何在本地环境（本地服务器或工作站）中，针对公司专属任务，以“最快且最高效”的方式对 TinyLLaMA 进行微调（Fine-Tuning）。从数学背景到最新的优化技术，再到具体的 PyTorch 实现代码，我们将进行全面的讲解。
 
@@ -65,7 +65,7 @@ graph TD
 
 ## 3. 微调的突破口：LoRA 与 QLoRA
 
-在本地环境中进行全参数微调，即使是 1.1B 的模型，为了保存优化器状态和梯度，也会消耗数十 GB 的 VRAM（显存）。为了在有限资源下高效地进行训练，必须使用 **PEFT (Parameter-Efficient Fine-Tuning, 参数高效微调)** 技术中的“**LoRA**”及其量化扩展版本“**QLoRA**”。
+在本地环境中进行全参数微调，即使是 1.1B 的模型，为了保存优化器状态和梯度，也会消耗数十 GB 的 VRAM（显存）。为了在有限资源下高效地进行训练，必须使用 **PEFT (Parameter-Efficient Fine-Tuning, 参数高效微调)** 技术中的“ **LoRA** ”及其量化扩展版本“ **QLoRA** ”。
 
 ### 3.1 LoRA (Low-Rank Adaptation) 的数学背景
 
@@ -292,7 +292,7 @@ print("Training complete and model saved.")
 
 ## 8. 微调后的模型部署 (Deployment)
 
-微调完成后，保存的并不是“整个基础模型”，而是仅有几 MB 到几十 MB 的“**LoRA 适配器（权重差值）**”。为了能够高速地进行推理，需要将这个 LoRA 权重与原始的基础模型合并，并导出为一个单一的模型。
+微调完成后，保存的并不是“整个基础模型”，而是仅有几 MB 到几十 MB 的“ **LoRA 适配器（权重差值）** ”。为了能够高速地进行推理，需要将这个 LoRA 权重与原始的基础模型合并，并导出为一个单一的模型。
 
 ### 模型合并脚本
 
@@ -320,7 +320,7 @@ print("Model merged and saved successfully!")
 
 ### 使用 vLLM 启动极速推理服务器
 
-在本地环境中进行部署时，为了最大化推理速度（Tokens per second），强烈建议不使用 Hugging Face 标准的 `pipeline`，而是使用 **vLLM** 或 **TGI (Text Generation Inference)**。vLLM 采用了 PagedAttention 技术，可防止 GPU 内存碎片化，从而大幅提升并发请求的处理能力。
+在本地环境中进行部署时，为了最大化推理速度（Tokens per second），强烈建议不使用 Hugging Face 标准的 `pipeline`，而是使用 **vLLM** 或 **TGI (Text Generation Inference)** 。vLLM 采用了 PagedAttention 技术，可防止 GPU 内存碎片化，从而大幅提升并发请求的处理能力。
 
 下面的 Mermaid 图展示了从训练到部署推理服务器的流程。
 
@@ -353,8 +353,9 @@ python -m vllm.entrypoints.openai.api_server \
 
 本文以参数量仅 1.1B 但性能强悍的“TinyLLaMA”为对象，详细解说了在本地环境中最快且内存高效地进行微调的方法。
 
-- 借助 **LoRA / QLoRA**，即使在消费级 GPU 上也能进行正式的 LLM 微调。
-- 充分利用 **Flash Attention 2** 和 **Gradient Checkpointing**，将训练时间和 VRAM 消耗优化到极致。
+- 借助 **LoRA / QLoRA** ，即使在消费级 GPU 上也能进行正式的 LLM 微调。
+- 充分利用 **Flash Attention 2** 和 **Gradient Checkpointing** ，将训练时间和 VRAM 消耗优化到极致。
 - 通过使用 **vLLM** 进行部署，在生产环境中也能实现高吞吐量。
 
 在本地运行本地 LLM，不仅能保护数据的机密性，更是低成本构建特定领域（如法务、医疗、公司章程等）专用 AI 的最强武器。希望你能以此指南为参考，培养出专属于你公司的 TinyLLaMA。
+

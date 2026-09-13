@@ -12,7 +12,7 @@ description: 'Das Faktorisierungsproblem, das die Sicherheit der RSA-Verschlüss
 
 In der heutigen Internetgesellschaft wird die Informationssicherheit durch Public-Key-Kryptographie wie das RSA-Kryptosystem geschützt. Die Grundlage der Sicherheit des RSA-Kryptosystems beruht auf der Tatsache, dass **„die Primfaktorzerlegung riesiger zusammengesetzter Zahlen rechnerisch extrem schwierig ist“** .
 
-In diesem Artikel entschlüsseln wir den mathematischen Mechanismus des **„Zahlkörpersiebs“** (General Number Field Sieve, GNFS), dem stärksten Algorithmus zur Primfaktorzerlegung für klassische Computer. Zugleich werden wir durch Formeln und Konzeptdiagramme detailliert ergründen, warum er durch den von Peter Shor entdeckten **„Shor-Algorithmus“** vollständig besiegt wird und welchen Paradigmenwechsel dies darstellt.
+In diesem Artikel entschlüsseln wir den mathematischen Mechanismus des **„Zahlkörpersiebs“ ** (General Number Field Sieve, GNFS), dem stärksten Algorithmus zur Primfaktorzerlegung für klassische Computer. Zugleich werden wir durch Formeln und Konzeptdiagramme detailliert ergründen, warum er durch den von Peter Shor entdeckten ** „Shor-Algorithmus“** vollständig besiegt wird und welchen Paradigmenwechsel dies darstellt.
 
 ---
 
@@ -90,7 +90,7 @@ Schließlich wird sowohl im algebraischen Zahlkörper als auch im Ring der ganze
 
 ## 3. Der Durchbruch durch Quantencomputing: Der „Shor-Algorithmus“
 
-Während GNFS subexponentielle Zeit benötigt, kann der 1994 von Peter Shor veröffentlichte **„Shor-Algorithmus“** dieses Problem mithilfe eines Quantencomputers in **„polynomieller Zeit“** lösen.
+Während GNFS subexponentielle Zeit benötigt, kann der 1994 von Peter Shor veröffentlichte **„Shor-Algorithmus“ ** dieses Problem mithilfe eines Quantencomputers in ** „polynomieller Zeit“** lösen.
 
 ### Die Zeitkomplexität des Shor-Algorithmus
 
@@ -98,7 +98,7 @@ Wenn die Anzahl der Qubits $O(\log N)$ ist, ergibt sich die Zeitkomplexität wie
 
 $$ O((\log N)^3) $$
 
-Das bedeutet, dass es keine exponentielle Explosion relativ zur Anzahl der Bits gibt. Selbst bei gigantischen zusammengesetzten Zahlen, deren Berechnungszeit in der **„klassischen Berechnung“** das Alter des Universums übersteigen würde, liefert die **„Quantenberechnung“** das erstaunliche Ergebnis, dass sie in wenigen Stunden bis Tagen entschlüsselt werden können.
+Das bedeutet, dass es keine exponentielle Explosion relativ zur Anzahl der Bits gibt. Selbst bei gigantischen zusammengesetzten Zahlen, deren Berechnungszeit in der **„klassischen Berechnung“ ** das Alter des Universums übersteigen würde, liefert die ** „Quantenberechnung“** das erstaunliche Ergebnis, dass sie in wenigen Stunden bis Tagen entschlüsselt werden können.
 
 ### Das Gesamtbild des Shor-Algorithmus: Reduktion auf das Problem der Periodenfindung
 
@@ -109,7 +109,7 @@ Der Shor-Algorithmus reduziert das Problem der Primfaktorzerlegung geschickt auf
 3. Finde die Periode $r$ von $f(x)$, d. h. die kleinste positive ganze Zahl $r$, sodass $a^r \equiv 1 \pmod N$ gilt.
 4. Wenn $r$ gerade ist, überprüfe, ob $a^{r/2} \not\equiv -1 \pmod N$ gilt, und berechne $\gcd(a^{r/2} \pm 1, N)$, um einen Primfaktor zu erhalten.
 
-Das Finden der Periode $r$ in Schritt 3 ist genau der Flaschenhals, der in klassischen Computern exponentielle Zeit erfordert. Ein Quantencomputer löst dies jedoch durch die Anwendung von **„Quantensuperposition“** und der **„Quanten-Fourier-Transformation“** (QFT) in einem Augenblick.
+Das Finden der Periode $r$ in Schritt 3 ist genau der Flaschenhals, der in klassischen Computern exponentielle Zeit erfordert. Ein Quantencomputer löst dies jedoch durch die Anwendung von **„Quantensuperposition“ ** und der ** „Quanten-Fourier-Transformation“** (QFT) in einem Augenblick.
 
 ---
 
@@ -189,13 +189,14 @@ graph TD
 
 GNFS verfolgt den Ansatz, **„in einem mathematischen Raum (algebraischen Zahlkörper) nach Relationen zu suchen“** . Da dieser Suchraum jedoch exponentiell mit der Anzahl der Ziffern wächst, wird die Entschlüsselung mit der Rechenleistung klassischer Computer (selbst bei Parallelisierung) faktisch unmöglich, wenn die Schlüssellänge 2048 Bit überschreitet.
 
-Auf der anderen Seite nutzt der Shor-Algorithmus die **„Welleneigenschaften durch Quanteninterferenz“** . Alle Berechnungswege in der Superposition werden gleichzeitig ausgewertet. Durch die QFT werden unnötige Antworten aufgehoben (destruktive Interferenz), und nur die Wahrscheinlichkeitsamplitude der korrekten Periode wird verstärkt (konstruktive Interferenz). Anstatt den Raum zu durchsuchen, wird so der völlig andere Ansatz realisiert, **„die richtige Antwort selbst hervortreten zu lassen“** .
+Auf der anderen Seite nutzt der Shor-Algorithmus die **„Welleneigenschaften durch Quanteninterferenz“ ** . Alle Berechnungswege in der Superposition werden gleichzeitig ausgewertet. Durch die QFT werden unnötige Antworten aufgehoben (destruktive Interferenz), und nur die Wahrscheinlichkeitsamplitude der korrekten Periode wird verstärkt (konstruktive Interferenz). Anstatt den Raum zu durchsuchen, wird so der völlig andere Ansatz realisiert, ** „die richtige Antwort selbst hervortreten zu lassen“** .
 
 ## 6. Zusammenfassung
 
-In diesem Artikel haben wir das **„GNFS“** , den Höhepunkt der klassischen Grenzen, und den **„Shor-Algorithmus“** , der die Kraft des Quantencomputings demonstriert, hinsichtlich ihrer mathematischen Hintergründe und algorithmischen Strukturen tiefgehend verglichen.
+In diesem Artikel haben wir das **„GNFS“ ** , den Höhepunkt der klassischen Grenzen, und den ** „Shor-Algorithmus“** , der die Kraft des Quantencomputings demonstriert, hinsichtlich ihrer mathematischen Hintergründe und algorithmischen Strukturen tiefgehend verglichen.
 
 Während GNFS durch mathematische Tricks wie die Polynomauswahl und riesige Matrixberechnungen die Zeitkomplexität auf subexponentielle Zeit reduzierte, gelang dem Shor-Algorithmus ein sofortiger Durchbruch in die polynomielle Zeit. Er verschmolz die Grundprinzipien der Quantenmechanik – Superposition und Interferenz – mit mathematischen Werkzeugen (QFT).
 
 Derzeit gibt es keine fehlertoleranten Quantencomputer (FTQC), die den Shor-Algorithmus in einem praktischen Maßstab (Tausende von Qubits) ausführen können. Das bloße Vorhandensein dieses mathematischen und theoretischen Paradigmenwechsels ist jedoch der Hauptgrund, warum der Übergang zur Post-Quanten-Kryptographie (PQC: Post-Quantum Cryptography) derzeit weltweit dringend vorangetrieben wird.
+
 

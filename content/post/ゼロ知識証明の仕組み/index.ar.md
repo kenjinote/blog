@@ -37,7 +37,7 @@ description: 'شرح مفصل للأسس الرياضية لإثبات المع�
 
 ### الإثبات التفاعلي والإثبات غير التفاعلي
 
-هناك نوعان من ZKP: **الإثبات التفاعلي (Interactive ZKP)**، حيث يتبادل المُثبِت والمُتَحَقِّق الاتصالات عدة مرات، و**الإثبات غير التفاعلي (Non-Interactive ZKP)**، حيث يرسل المُثبِت بيانات الإثبات مرة واحدة فقط.
+هناك نوعان من ZKP: **الإثبات التفاعلي (Interactive ZKP)** ، حيث يتبادل المُثبِت والمُتَحَقِّق الاتصالات عدة مرات، و **الإثبات غير التفاعلي (Non-Interactive ZKP)** ، حيث يرسل المُثبِت بيانات الإثبات مرة واحدة فقط.
 
 #### الإثبات التفاعلي (Interactive ZKP)
 
@@ -218,3 +218,4 @@ flowchart LR
 - Groth, J. (2016). "On the Size of Pairing-based Non-interactive Arguments"
 - Ben-Sasson, E., et al. (2018). "Scalable, transparent, and post-quantum secure computational integrity"
 - Vitalik Buterin's blog on zk-SNARKs and zk-STARKs
+

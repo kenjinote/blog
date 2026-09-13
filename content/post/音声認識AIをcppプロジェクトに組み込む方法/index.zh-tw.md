@@ -12,9 +12,9 @@ description: '使用C++與whisper.cpp，將高精度語音辨識AI整合至邊�
 
 ## 1. 簡介：為什麼選擇在C++中進行語音辨識
 
-OpenAI開發的高精度語音辨識模型「Whisper」自開源以來，已被廣泛應用於各種應用程式中。雖然在Python環境（基於PyTorch）中使用非常普遍，但若要將其整合至**邊緣裝置（智慧型手機、IoT設備、嵌入式系統）**，或是**要求高度即時性的原生C++應用程式**（遊戲引擎、DAW軟體、機器人技術等）時，對Python直譯器的依賴會成為效能上的重大瓶頸。
+OpenAI開發的高精度語音辨識模型「Whisper」自開源以來，已被廣泛應用於各種應用程式中。雖然在Python環境（基於PyTorch）中使用非常普遍，但若要將其整合至 **邊緣裝置（智慧型手機、IoT設備、嵌入式系統）** ，或是 **要求高度即時性的原生C++應用程式** （遊戲引擎、DAW軟體、機器人技術等）時，對Python直譯器的依賴會成為效能上的重大瓶頸。
 
-這時候的救星，就是由Georgi Gerganov所開發的 **[whisper.cpp](https://github.com/ggerganov/whisper.cpp)**。該函式庫以機器學習專用的張量運算函式庫 `ggml` 為基礎，將依賴關係降至最低，僅使用C/C++便實現了Whisper的推論。
+這時候的救星，就是由Georgi Gerganov所開發的 **[whisper.cpp](https://github.com/ggerganov/whisper.cpp)** 。該函式庫以機器學習專用的張量運算函式庫 `ggml` 為基礎，將依賴關係降至最低，僅使用C/C++便實現了Whisper的推論。
 
 本文將徹底解說如何使用這個 `whisper.cpp`，將最高水準的語音辨識功能整合至您專屬的C++專案中，內容涵蓋語音訊號處理基礎、API詳細使用方法、記憶體管理、多執行緒最佳化，以及即時處理的實作模式。
 
@@ -47,7 +47,7 @@ $$ 16000 \times 1 \times \frac{32}{8} = 64,000 \text{ bytes/sec (64 KB/s)} $$
 
 ### 2.2 梅爾頻譜圖轉換的數學原理
 
-在Whisper內部，並非直接處理一維的語音波形資料（Raw Waveform）。而是會先轉換為接近人類聽覺特性的頻率表示方式——**梅爾頻譜圖 (Mel-Spectrogram)**，再輸入至Transformer模型。`whisper.cpp` 在其C++實作中已內含了此轉換處理，但了解其機制有助於對策雜訊與最佳化前處理。
+在Whisper內部，並非直接處理一維的語音波形資料（Raw Waveform）。而是會先轉換為接近人類聽覺特性的頻率表示方式—— **梅爾頻譜圖 (Mel-Spectrogram)** ，再輸入至Transformer模型。`whisper.cpp` 在其C++實作中已內含了此轉換處理，但了解其機制有助於對策雜訊與最佳化前處理。
 
 將一般頻率 $f$ (Hz) 轉換為梅爾尺度 $m$ 的公式近似如下：
 
@@ -57,7 +57,7 @@ $$ m = 2595 \log_{10} \left( 1 + \frac{f}{700} \right) $$
 
 $$ f = 700 \left( 10^{\frac{m}{2595}} - 1 \right) $$
 
-此外，語音波形會透過**短時距傅立葉變換 (STFT: Short-Time Fourier Transform)** 轉換至時間-頻率域。使用窗函數 $w(n)$ 的STFT離散形式可表示為：
+此外，語音波形會透過 **短時距傅立葉變換 (STFT: Short-Time Fourier Transform)** 轉換至時間-頻率域。使用窗函數 $w(n)$ 的STFT離散形式可表示為：
 
 $$ X(m, k) = \sum_{n=0}^{N-1} x(n + mH) w(n) e^{-j \frac{2\pi}{N} k n} $$
 *(在此，$N$ 為FFT的視窗大小，$H$ 為平移大小 (Hop Size)，$w(n)$ 為漢明窗 (Hann Window) 等窗函數)*
@@ -81,7 +81,7 @@ graph TD
     G --> H["文字輸出 (UTF-8 字串)"]
 ```
 
-應用程式端應負責的是上圖中 **A 到 C 的區段（音訊解碼與重新取樣）**。由於 `whisper.cpp` 本身不包含語音檔案的解碼器，因此搭配 FFmpeg 或 `miniaudio` 等函式庫使用是最佳實務。
+應用程式端應負責的是上圖中 **A 到 C 的區段（音訊解碼與重新取樣）** 。由於 `whisper.cpp` 本身不包含語音檔案的解碼器，因此搭配 FFmpeg 或 `miniaudio` 等函式庫使用是最佳實務。
 
 ---
 
@@ -243,7 +243,7 @@ graph LR
 
 當語音持續較長時，會採用每隔幾秒裁切區塊進行推論的「滑動視窗」手法。然而，若單純將語音直接切斷，可能會在單字中途被切斷，導致辨識精準度顯著下降。
 
-作為對策，會使用**「推論時始終包含過去N秒的上下文」**（使其重疊）的手法。`whisper.cpp` 中也有一項名為 `wparams.prompt_tokens` 的功能，可以將過去的文字 Token 作為提示 (Prompt) 繼承下來，從而實現維持上下文的高精準度串流辨識。
+作為對策，會使用 **「推論時始終包含過去N秒的上下文」** （使其重疊）的手法。`whisper.cpp` 中也有一項名為 `wparams.prompt_tokens` 的功能，可以將過去的文字 Token 作為提示 (Prompt) 繼承下來，從而實現維持上下文的高精準度串流辨識。
 
 ---
 
@@ -253,7 +253,7 @@ graph LR
 
 ### 7.1 ggml 張量函式庫的威力
 
-`whisper.cpp` 的後端 `ggml` 是一個不具依賴關係的C語言張量函式庫。它最大的特色，在於支援**權重資料的動態量化 (Quantization)**。
+`whisper.cpp` 的後端 `ggml` 是一個不具依賴關係的C語言張量函式庫。它最大的特色，在於支援 **權重資料的動態量化 (Quantization)** 。
 
 舉例來說，我們來計算 Whisper `Small` 模型（約2億4000萬個參數）的記憶體大小。
 在一般情況下（16-bit Float = 2 bytes）：
@@ -284,7 +284,7 @@ $$ \text{Memory (Q4\_0)} \approx 244,000,000 \times 0.56 \text{ bytes} \approx 1
 
 $$ N_{\text{threads}} = \min(\text{實體 CPU 核心數}, 4 \sim 8) $$
 
-若包含 Hyper-Threading 等邏輯核心，通常會發生快取爭用而導致推論速度反而下降，因此設定為**實體核心數**是鐵則。由於使用 C++11 的 `std::thread::hardware_concurrency()` 會回傳邏輯核心數，建議根據環境寫死數值 (Hardcode)，或是透過作業系統層級的 API 來取得實體核心數。
+若包含 Hyper-Threading 等邏輯核心，通常會發生快取爭用而導致推論速度反而下降，因此設定為 **實體核心數** 是鐵則。由於使用 C++11 的 `std::thread::hardware_concurrency()` 會回傳邏輯核心數，建議根據環境寫死數值 (Hardcode)，或是透過作業系統層級的 API 來取得實體核心數。
 
 ---
 
@@ -298,5 +298,6 @@ $$ N_{\text{threads}} = \min(\text{實體 CPU 核心數}, 4 \sim 8) $$
 * **壓倒性的最佳化**: 透過 `ggml` 進行 4-bit 量化，以及受惠於 Metal/cuBLAS 等硬體後端。
 
 請務必在開發能夠擺脫對龐大 Python 環境或雲端 API 的依賴，並在原生環境中高速且安全運作的語音處理應用程式時，善用 `whisper.cpp`。從隱私保護與低延遲的角度來看，完全在地端運行的 AI 必將成為未來軟體開發中極為重要的關鍵技術。
+
 
 

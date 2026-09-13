@@ -24,7 +24,7 @@ description: '這是一份能大幅提升 Windows 上開發體驗的 WSL2 完整
 WSL1 採用了將 Linux 的系統呼叫即時轉換（Translation）為 Windows NT API 的機制。由於不使用虛擬機器（VM），這項作法具有資源負擔極小的優點。然而，要完全模擬檔案系統的 I/O 操作等複雜系統呼叫相當困難，特別是在執行 Node.js 的 `npm install` 或是 Git 的版本庫操作等處理大量小檔案的作業時，會導致效能出現絕望性的下降。
 
 ### WSL2：輕量級公用程式 VM 與完整的 Linux 核心
-WSL2 重新設計了架構，在**利用 Hyper-V 架構子集的「輕量級公用程式 VM」** 上，直接執行由 Microsoft 建置的真正 Linux 核心。這確保了系統呼叫 100% 的相容性，並透過使用採用 Linux 原生 ext4 檔案系統的虛擬磁碟（VHDX），檔案 I/O 效能與 WSL1 相比有了戲劇性的提升。
+WSL2 重新設計了架構，在 **利用 Hyper-V 架構子集的「輕量級公用程式 VM」** 上，直接執行由 Microsoft 建置的真正 Linux 核心。這確保了系統呼叫 100% 的相容性，並透過使用採用 Linux 原生 ext4 檔案系統的虛擬磁碟（VHDX），檔案 I/O 效能與 WSL1 相比有了戲劇性的提升。
 
 以下的 Mermaid 圖表展示了 WSL1 與 WSL2 的結構差異。
 
@@ -106,7 +106,7 @@ wsl --set-default-version 2
 
 WSL2 最大的陷阱之一就是「無限制地消耗記憶體（Vmmem 處理程序過度膨脹）」。由於 WSL2 會使用 Linux 核心的分頁快取（Page Cache），每次進行 I/O 操作都會無止盡地耗盡主機（Windows）的記憶體。為了防止這種情況，必須透過設定檔來限制資源。
 
-WSL2 的設定檔分為兩個：**會影響整個 Windows 的 `.wslconfig`**，以及**會影響各個發行版內部的 `wsl.conf`**。
+WSL2 的設定檔分為兩個：**會影響整個 Windows 的 `.wslconfig`**，以及** 會影響各個發行版內部的 `wsl.conf`**。
 
 ### 4.1. .wslconfig (Windows 側)
 
@@ -253,7 +253,7 @@ sequenceDiagram
 Windows 側的 VS Code 僅作為一個單純的「精簡型用戶端（UI）」運作，而 Language Server、除錯器（Debugger）、終端機執行等繁重的處理，全都在 WSL 側的「VS Code 伺服器」上進行。這樣一來，不需在 Windows 側安裝 Node.js 或 Python，就能只在 WSL 側保持環境的乾淨。
 
 ### 必備的 VS Code 設定
-從 VS Code 的「擴充功能」中安裝 **"WSL" (ms-vscode-remote.remote-wsl)**。之後，只要在 WSL 的終端機切換至專案目錄，並執行 `code .`，就能在開啟該目錄的狀態下啟動 Windows 側的 VS Code。
+從 VS Code 的「擴充功能」中安裝 **"WSL" (ms-vscode-remote.remote-wsl)** 。之後，只要在 WSL 的終端機切換至專案目錄，並執行 `code .`，就能在開啟該目錄的狀態下啟動 Windows 側的 VS Code。
 
 **重要的注意事項（換行字元問題）：**
 Windows 與 Linux 的換行字元不同（Windows 是 `CRLF`，Linux 是 `LF`）。在 WSL 上進行開發時，請務必將 Git 的 `core.autocrlf` 設定，以及 VS Code 的檔案預設設定統一為 `LF`。如果忽略這一點，在執行 Shell Script 或 Docker 容器時將會遇到莫名其妙的錯誤。
@@ -278,8 +278,8 @@ git config --global core.autocrlf input
 
 在 WSL2 環境中使用 Docker，主要有兩種方法。
 
-1. 安裝 **Docker Desktop for Windows**，並啟用 WSL2 整合功能
-2. 在 WSL2 內部（如 Ubuntu 等）直接安裝**原生的 Docker Engine**
+1. 安裝 **Docker Desktop for Windows** ，並啟用 WSL2 整合功能
+2. 在 WSL2 內部（如 Ubuntu 等）直接安裝 **原生的 Docker Engine**
 
 ### 方法 1：Docker Desktop（推薦）
 由於可以透過 GUI 進行管理，且在 Windows/WSL 之間可以輕鬆透明地存取容器，因此大多情況下推薦使用此方法。從 Docker Desktop 的設定（Settings）中確認以下事項。
@@ -321,7 +321,7 @@ sudo usermod -aG docker $USER
 
 在進行 Git 的 SSH 複製或 SSH 連線至遠端伺服器時，在 Windows 側和 WSL 側分別管理不同的 SSH 金鑰是一件非常麻煩的事。為了兼顧安全性與便利性，可以設定將 Windows 側執行的 SSH 代理（或是 1Password 等密碼管理工具）橋接至 WSL 側。
 
-這裡將解說作為最安全且現代的方法：利用 **1Password 的 SSH 代理功能**或 **Windows 的 OpenSSH Authentication Agent**，並使用 `npiperelay` 或 `socat` 將其轉發至 WSL2 的 UNIX 網域通訊端（Domain Socket）的方法。
+這裡將解說作為最安全且現代的方法：利用 **1Password 的 SSH 代理功能 ** 或 **Windows 的 OpenSSH Authentication Agent** ，並使用 `npiperelay` 或 `socat` 將其轉發至 WSL2 的 UNIX 網域通訊端（Domain Socket）的方法。
 
 ### ssh-agent 的通訊端轉發
 
@@ -386,5 +386,6 @@ WSL2 已經完全超越了單純只是「在 Windows 上運作的附屬 Linux」
 藉由套用本次解說的所有設定（透過 `.wslconfig` 的資源最佳化、透過 Zsh + Powerlevel10k 的終端機強化、透過 VS Code Remote 的透明存取，以及 SSH 整合與 VHDX 的維護），就能完成一個無壓力、高速且安全的「終極開發環境」。
 
 雖然建構環境需要花費一點功夫，但只要設定過一次，未來的工程開發的生產力絕對會有飛躍性的提升。請務必配合自身的專案與喜好，以此指南為基礎，探索更進階的自訂設定。
+
 
 

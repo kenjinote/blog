@@ -12,7 +12,7 @@ tags: ["Paradoxon", "Geometrie", "Unendlichkeit", "Torricellis Trompete"]
 ---
 
 Was wäre, wenn es einen Behälter gäbe, dessen „Volumen endlich, aber die Oberfläche unendlich ist“?
-Intuitiv scheint das unmöglich zu sein, aber in der Welt der Mathematik existiert ein solcher Körper tatsächlich. Es ist die Figur, die als **„Gabriels Horn (Gabriel's Horn)“**, auch bekannt als **„Torricellis Trompete“**, bezeichnet wird.
+Intuitiv scheint das unmöglich zu sein, aber in der Welt der Mathematik existiert ein solcher Körper tatsächlich. Es ist die Figur, die als **„Gabriels Horn (Gabriel's Horn)“ **, auch bekannt als ** „Torricellis Trompete“**, bezeichnet wird.
 
 Diese Figur, die 1641 von dem italienischen Mathematiker Evangelista Torricelli entdeckt wurde, schockierte die Mathematiker und Philosophen jener Zeit und löste eine heftige Debatte über die wahre Natur der „Unendlichkeit“ aus.
 
@@ -91,3 +91,4 @@ In der physikalischen Realität besteht Farbe jedoch aus Atomen und Molekülen (
 Selbst wenn man echte Farbe hineingießt, kann sie nicht mehr weiter vordringen, sobald das Rohr des Horns enger wird als der „Durchmesser eines Farbmodemoleküls“. Das bedeutet, physikalisch ist es unmöglich, das Horn bis zur Spitze zu füllen oder seine unendliche Oberfläche zu streichen.
 
 Gabriels Horn ist ein wunderschönes Beispiel, das uns lehrt, dass die menschliche Intuition an die „Regeln der endlichen Welt“ gebunden ist und nicht immer mit der Welt der Infinitesimalrechnung übereinstimmt, die mit der „Unendlichkeit“ umgeht.
+

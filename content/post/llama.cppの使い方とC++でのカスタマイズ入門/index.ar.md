@@ -76,7 +76,7 @@ $$
 y = \sum_{i=1}^{B} w_i x_i \approx \Delta \Delta_x \sum_{i=1}^{B} q_i q_{x, i}
 $$
 
-الجزء الخاص بـ $\sum q_i q_{x, i}$ هو عبارة عن **عملية أعداد صحيحة نقية**، ويمكن حسابه بالتوازي بسرعة عالية جدًا باستخدام تعليمات SIMD. هذا هو السر الرياضي وراء السرعات المذهلة التي يحققها llama.cpp على وحدة المعالجة المركزية (CPU).
+الجزء الخاص بـ $\sum q_i q_{x, i}$ هو عبارة عن **عملية أعداد صحيحة نقية** ، ويمكن حسابه بالتوازي بسرعة عالية جدًا باستخدام تعليمات SIMD. هذا هو السر الرياضي وراء السرعات المذهلة التي يحققها llama.cpp على وحدة المعالجة المركزية (CPU).
 
 ---
 
@@ -383,4 +383,5 @@ for (llama_token bad_tok : forbidden_tokens) {
 > - [المستودع الرسمي llama.cpp](https://github.com/ggerganov/llama.cpp)
 > - [ggml - مكتبة Tensor](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+
 

@@ -44,7 +44,7 @@ gantt
 
 ## 3. 기술 스택 선정: C++ / WinUI 3 / Windows App SDK의 심연
 
-LogicPad를 개발함에 있어 기술 스택의 선정은 가장 중요한 결정 중 하나였습니다. Windows 플랫폼의 네이티브 UI 프레임워크에는 역사적으로 Win32 API(User32/GDI), MFC, Windows Forms, WPF, UWP 등 다양한 선택지가 존재합니다. 현재 Microsoft가 모던 Windows 데스크톱 애플리케이션 개발에 권장하는 것이 **Windows App SDK**에 동봉된 **WinUI 3**입니다.
+LogicPad를 개발함에 있어 기술 스택의 선정은 가장 중요한 결정 중 하나였습니다. Windows 플랫폼의 네이티브 UI 프레임워크에는 역사적으로 Win32 API(User32/GDI), MFC, Windows Forms, WPF, UWP 등 다양한 선택지가 존재합니다. 현재 Microsoft가 모던 Windows 데스크톱 애플리케이션 개발에 권장하는 것이 **Windows App SDK** 에 동봉된 **WinUI 3** 입니다.
 
 ### 3.1. Windows App SDK와 WinUI 3 아키텍처
 Windows App SDK는 OS 버전에 의존하지 않고 최신 Windows API를 제공하기 위한 라이브러리 제품군입니다. 기존의 UWP(Universal Windows Platform)가 OS 업데이트와 강하게 결합되어 있던 반면, Windows App SDK는 애플리케이션과 함께 배포되므로 Windows 10(버전 1809 이후)부터 Windows 11까지 일관된 동작을 보장합니다.
@@ -52,7 +52,7 @@ Windows App SDK는 OS 버전에 의존하지 않고 최신 Windows API를 제공
 WinUI 3는 이 Windows App SDK 위에서 동작하는 네이티브 UI 프레임워크이며, Fluent Design System을 완벽하게 지원합니다. WinUI 3의 내부는 C++와 DirectX로 구축되어 있어 매우 빠르게 동작합니다.
 
 ### 3.2. C#이 아닌, 굳이 C++(C++/WinRT)를 선택한 이유
-WinUI 3의 개발 언어로는 C#과 C++가 지원됩니다. C#과 .NET을 사용하면 개발 효율이 비약적으로 향상되지만, LogicPad에서는 다음과 같은 이유로 **C++/WinRT**를 채택했습니다.
+WinUI 3의 개발 언어로는 C#과 C++가 지원됩니다. C#과 .NET을 사용하면 개발 효율이 비약적으로 향상되지만, LogicPad에서는 다음과 같은 이유로 **C++/WinRT** 를 채택했습니다.
 
 1. **결정론적 메모리 관리**: 가비지 컬렉터(GC)가 존재하지 않기 때문에 메모리 할당과 해제 타이밍을 완전히 제어할 수 있습니다. 시뮬레이션 루프 중 GC로 인한 일시 정지가 발생하는 것을 방지합니다.
 2. **SIMD 및 캐시 최적화**: C++에서는 메모리의 물리적 레이아웃(Struct of Arrays 등)을 엄격하게 정의할 수 있어 CPU 캐시 적중률을 극대화할 수 있습니다.
@@ -234,7 +234,7 @@ flowchart TD
 ```
 
 ### 6.1. WACK(Windows App Certification Kit)의 장벽
-Partner Center에 업로드하기 전에 반드시 로컬에서 **WACK (Windows App Certification Kit)**을 실행하여 사전 테스트를 통과해야 합니다. WACK는 앱이 크래시되지 않는지, 잘못된 API를 호출하지 않는지, 성능 요구사항을 충족하는지를 자동으로 테스트하는 도구입니다.
+Partner Center에 업로드하기 전에 반드시 로컬에서 **WACK (Windows App Certification Kit)** 을 실행하여 사전 테스트를 통과해야 합니다. WACK는 앱이 크래시되지 않는지, 잘못된 API를 호출하지 않는지, 성능 요구사항을 충족하는지를 자동으로 테스트하는 도구입니다.
 
 C++ 네이티브 앱의 경우, 특히 주의해야 할 것은 "지원되지 않는 API 사용" 오류입니다. 서드파티의 오래된 C++ 라이브러리를 정적으로 링크하면 해당 라이브러리 내부에서 비권장 Win32 API가 사용되어 WACK 심사에서 거부될 수 있습니다. 저는 이 문제를 피하기 위해 의존하는 라이브러리를 최신 버전으로 업데이트하고, 일부 함수는 Windows App SDK가 제공하는 대체 API로 다시 작성했습니다.
 
@@ -303,5 +303,6 @@ LogicPad의 개발부터 Microsoft Store 출시까지의 궤적을 돌아보면,
 WinUI 3와 Windows App SDK는 현재도 활발하게 개발이 진행되고 있으며, Windows 11의 UI 패러다임을 최대한 살린 아름다운 애플리케이션을 만들기 위한 최고의 도구입니다. 이 블로그 기사가 앞으로 Windows 네이티브 앱 개발에 도전하려는 개발자들에게 도움이 되어 Store에 훌륭한 앱이 하나라도 더 늘어나기를 진심으로 바랍니다.
 
 개발은 아직 끝나지 않았습니다. LogicPad의 다음 버전에서는 Direct2D를 활용한 자체 파형 렌더링 엔진의 통합을 예정하고 있습니다. 다음 기사에서는 DirectX와 WinUI 3의 상호 운용(SwapChainPanel 활용)에 대해 깊이 파헤쳐 볼 예정입니다. 기대해 주세요.
+
 
 

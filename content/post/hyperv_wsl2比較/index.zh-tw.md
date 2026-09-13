@@ -30,7 +30,7 @@ Hypervisor 是一個抽象化硬體存取，並允許多個作業系統（客體
 *   **Type 1（裸機型）**: 直接在硬體上執行。不存在主機作業系統的概念（嚴格來說可能存在具有特權的管理作業系統），擁有極低的額外負擔 (overhead)，提供高效能與安全性。例如：Hyper-V、VMware ESXi、Xen。
 *   **Type 2（主機型）**: 作為主機作業系統（例如 Windows 或 macOS）上的應用程式執行。所有的硬體存取都必須經過主機作業系統，因此額外負擔較大。例如：VMware Workstation、Oracle VirtualBox。
 
-Windows 的 Hyper-V 是純粹的 **Type 1 Hypervisor**。啟用 Hyper-V 後，實際上使用者平常操作的 Windows 作業系統本身，也會改在一個被稱為「根分割區 (Root Partition)」的特殊虛擬機器中運作。
+Windows 的 Hyper-V 是純粹的 **Type 1 Hypervisor** 。啟用 Hyper-V 後，實際上使用者平常操作的 Windows 作業系統本身，也會改在一個被稱為「根分割區 (Root Partition)」的特殊虛擬機器中運作。
 
 ### 2.2. Hyper-V 的架構細節
 
@@ -76,7 +76,7 @@ graph TD
     D --> F
 ```
 
-WSL2 最大的特色在於**啟動速度快**以及**與主機作業系統的無縫整合**。不到幾秒鐘內即可啟動 Linux 核心，並且透過 Plan 9 的 `9P` 網路檔案系統協定來存取 Windows 端的檔案系統 (NTFS)。
+WSL2 最大的特色在於 **啟動速度快** 以及 **與主機作業系統的無縫整合** 。不到幾秒鐘內即可啟動 Linux 核心，並且透過 Plan 9 的 `9P` 網路檔案系統協定來存取 Windows 端的檔案系統 (NTFS)。
 
 ---
 
@@ -115,10 +115,10 @@ I/O 的延遲 $L_{total}$ 的計算方式如下：
 
 $$ L_{total} = L_{guest\_fs} + L_{vmbus} + L_{host\_fs} + L_{physical\_disk} $$
 
-**在 Hyper-V 的情況**：
+**在 Hyper-V 的情況** ：
 一般的 Hyper-V 客體使用 `VHDX` 格式的虛擬磁碟。從客體作業系統內的檔案系統（ext4 或 NTFS）發出的 I/O 請求，會通過 VMBus 的區塊裝置儲存驅動程式 (storvsc)，並在 Windows 端的 NTFS 上作為對 VHDX 檔案的存取來處理。
 
-**在 WSL2 的情況**：
+**在 WSL2 的情況** ：
 WSL2 的 Linux 發行版運作於建立在專用的 `ext4.vhdx` 檔案內的原生 ext4 檔案系統之上。在 Linux 內部的檔案操作（例如 `~` 目錄內），可發揮與上述 Hyper-V 同等的原生效能。
 然而，**當從 WSL2 的 Linux 存取 Windows 端的檔案（如 `/mnt/c/` 等）時**，或者反向操作時，處理方式則有很大的差異。這種跨 OS 存取會使用 `9P (Plan 9 File System Protocol)`。
 
@@ -224,12 +224,13 @@ $$ S(B) = \frac{B}{L_{setup} + \frac{B}{R_{max}}} $$
 
 ## 7. 總結：共存的兩種虛擬化技術
 
-Hyper-V 與 WSL2 並不是哪一方比較優秀的問題，而是**「目的不同的兩種解決方案」**。
+Hyper-V 與 WSL2 並不是哪一方比較優秀的問題，而是 **「目的不同的兩種解決方案」** 。
 
 *   **WSL2** 打破了 Windows 這個作業系統的框架，是為了將 Linux 的生態系統無縫且高速地傳遞到 Windows 使用者手中而生的「最佳整合工具」。稱其為開發者專用的終極 CLI 環境一點也不為過。
 *   **Hyper-V** 則是將企業資料中心培育出的強大隔離性與管理能力帶入桌面的「正統 Hypervisor」。在網路建構、Windows 作業系統測試、基礎設施環境模擬等方面無可匹敵。
 
 在現代的 Windows 環境中，這兩項技術並不是勢均力敵的競爭者，而是在同一個 VM 平台上完美共存。透過根據用途適材適所地運用，Windows 將會成為世界上最強大且具彈性的工程工作站吧。
+
 
 
 

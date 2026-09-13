@@ -10,9 +10,9 @@ tags: ["Sysinternals", "ProcMon", "Process Explorer", "Windows"]
 description: 'Windows故障排除的终极指南。深入讲解使用Sysinternals工具进行内核级分析的方法。'
 ---
 
-在Windows环境中，当我们面临系统崩溃、性能下降、恶意软件感染或应用程序出现不可思议的行为等问题时，往往无法仅靠系统自带的任务管理器和事件查看器来确定根本原因（Root Cause）。在这种高级别的故障排除中，全球的IT专家、事件响应人员和系统管理员都一致使用“**Windows Sysinternals**”工具集。
+在Windows环境中，当我们面临系统崩溃、性能下降、恶意软件感染或应用程序出现不可思议的行为等问题时，往往无法仅靠系统自带的任务管理器和事件查看器来确定根本原因（Root Cause）。在这种高级别的故障排除中，全球的IT专家、事件响应人员和系统管理员都一致使用“ **Windows Sysinternals** ”工具集。
 
-本文将充分利用Sysinternals的主要工具：**Process Explorer**、**Process Monitor (ProcMon)**、**Autoruns**、**TCPView**，深入挖掘Windows操作系统的深处（内核模式与用户模式的边界、中断处理、ETW、注册表/文件系统驱动程序），全面解析高级故障排除方法。
+本文将充分利用Sysinternals的主要工具： **Process Explorer** 、 **Process Monitor (ProcMon)** 、 **Autoruns** 、 **TCPView** ，深入挖掘Windows操作系统的深处（内核模式与用户模式的边界、中断处理、ETW、注册表/文件系统驱动程序），全面解析高级故障排除方法。
 
 ---
 
@@ -110,7 +110,7 @@ flowchart TD
 *   `CreateFile` | `C:\Windows\CoreCrypto.dll` | `NAME NOT FOUND`
 *   `CreateFile` | `C:\Users\Kenji\AppData\Local\Microsoft\WindowsApps\CoreCrypto.dll` | `NAME NOT FOUND`
 
-这是典型的**缺乏DLL依赖**及**DLL搜索顺序（DLL Search Order）**行为。应用程序需要 `CoreCrypto.dll`，但由于系统中任何地方都找不到它，导致初始化失败并在没有异常处理程序的情况下退出。只需将缺失的DLL放置在适当的目录下，该问题即可立即解决。
+这是典型的 **缺乏DLL依赖** 及 **DLL搜索顺序（DLL Search Order）** 行为。应用程序需要 `CoreCrypto.dll`，但由于系统中任何地方都找不到它，导致初始化失败并在没有异常处理程序的情况下退出。只需将缺失的DLL放置在适当的目录下，该问题即可立即解决。
 
 ### 3.3 通过 Boot Logging 排除启动故障
 如果Windows启动缓慢，或者登录后立刻出现黑屏，ProcMon的 **Enable Boot Logging** 功能将大显身手。启用此功能并重新启动后，ProcMon的专用引导驱动程序会从Windows的最早阶段（加载 `smss.exe` 时）开始记录所有系统调用，并将其保存到文件中。下次登录时打开ProcMon，日志将被转换，您可以详细分析在启动过程中究竟是哪个驱动或服务引起了I/O瓶颈。
@@ -125,7 +125,7 @@ $$ \text{Throughput (MB/s)} = \frac{\sum_{i=1}^{N} \text{Size}(I/O_i)}{\Delta T_
 
 Windows的自动启动位置绝不仅仅只有启动文件夹（Startup Folder）或 `Run` 注册表键。恶意软件（尤其是APT攻击的有效载荷或高级Rootkit）会将自己隐藏在系统管理员难以察觉的位置，并设置为在重启后仍能执行（Persistence）。
 
-Autoruns能够全面扫描系统上**所有自动启动扩展点（ASE: Auto-Start Extensibility Points）**。
+Autoruns能够全面扫描系统上 **所有自动启动扩展点（ASE: Auto-Start Extensibility Points）** 。
 
 ```mermaid
 flowchart LR
@@ -178,3 +178,4 @@ Sysinternals工具集是一台强大的“X光机”，能将Windows操作系统
     Sysinternals工具经常更新。请直接通过浏览器访问 `https://live.sysinternals.com/`，确保始终使用最新的二进制文件（或命令行版的 `procdump`, `psexec` 等）。
 
 在高级Windows故障排除中，直觉或瞎猜（Guesswork）是毫无意义的。通过使用Sysinternals工具进行基于事实（进程、线程、句柄、系统调用、注册表事件）的逻辑性原因追查，无论遇到多么复杂的故障或棘手的恶意软件感染，您最终一定能找到根本原因。
+
