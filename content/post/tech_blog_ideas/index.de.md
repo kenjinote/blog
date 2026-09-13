@@ -1,7 +1,7 @@
 ---
 title: 'Verhindern Sie, dass Ihnen die Ideen für technische Artikel ausgehen! Effiziente Input-Methoden und Ideengenerierung'
 slug: "tech-blog-idea-generation-and-input-strategy"
-date: "2026-09-14T16:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -380,3 +380,4 @@ Wie in diesem Artikel vorgestellt:
 Durch den Aufbau einer umfassenden Pipeline, die all diese Elemente kombiniert, versiegen die Blog-Ideen nicht mehr. Stattdessen entsteht ein Zustand, in dem sich neue Ideen quasi von selbst vervielfältigen, je mehr man schreibt.
 
 Es ist nicht nötig, von Anfang an alles perfekt aufzubauen. Beginnen Sie doch einfach damit, ein einfaches Skript für die Hacker News-API zu erstellen, und machen Sie es sich zur Gewohnheit, interessante Artikel als Markdown-Notizen festzuhalten. Ich hoffe sehr, dass Ihr Technik-Blog zu einer Quelle großartiger Ideen für die nächste Generation heranwachsen wird.
+

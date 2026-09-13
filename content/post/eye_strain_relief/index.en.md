@@ -1,7 +1,7 @@
 ---
 title: "Gadgets and Monitor Settings to Reduce Programmer's Eye Strain"
 slug: "programmer-eye-strain-relief"
-date: "2026-09-14T22:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -280,3 +280,4 @@ Our careers as software engineers will last for decades. What supports that care
 5. **Create an optimal line of sight angle based on $\tan \theta = h/d$ using a monitor arm, and systemize the "20-20-20 Rule."**
 
 While these measures may involve temporary expenses and effort, they are arguably the most cost-effective "technical investments" to extend the healthy lifespan of your eyes and maximize your lifelong productivity and QOL (Quality of Life). Reevaluate your development environment right now and implement some compassion for your eyes.
+

@@ -1,7 +1,7 @@
 ---
 title: 'Hal-hal yang Harus Dilakukan Engineer untuk Meningkatkan Akses Bulanan di Blog Teknologi'
 slug: "tech-blog-growth-strategies-for-engineers"
-date: "2026-09-14T10:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -278,3 +278,4 @@ Untuk secara dramatis meningkatkan jumlah kunjungan bulanan ke blog teknologi An
 5. Otomatisasi penuh dalam distribusi melalui integrasi CI/CD dan Zapier
 
 Jika Anda dapat mengintegrasikan semua hal ini sebagai sebuah sistem, blog teknologi akan menjadi aset (asset) paling kuat yang akan mendorong karier Anda. Bagi engineer yang khawatir tentang jumlah akses yang mandek, kami harap Anda mencoba memulai "growth hack blog" Anda mulai hari ini. Keahlian pemrograman dan kemampuan desain arsitektur yang Anda asah dalam tugas-tugas pengembangan niscaya akan menjadi senjata terbesar Anda dalam menjalankan blog.
+

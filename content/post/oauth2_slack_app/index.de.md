@@ -371,3 +371,4 @@ In diesem Artikel haben wir den Authorization Code Grant Flow von OAuth 2.0 im D
 4. Scope-Design basierend auf dem **Prinzip der geringsten Rechte** und Verschlüsselung beim Speichern in der DB sind operativ absolut unerlässlich.
 
 OAuth 2.0 ist sehr tiefgründig und allein die RFC-Spezifikationen sind riesig, aber durch praktisches Lernen mit Fokus auf eine echte Plattform (Slack) werden Sie in der Lage sein, dessen raffinierte Designphilosophie und robusten Sicherheitsmechanismen wirklich zu verstehen. Wir hoffen, dass Ihnen das Wissen aus diesem Artikel bei der zukünftigen Anwendungsentwicklung und API-Integration von Nutzen sein wird.
+

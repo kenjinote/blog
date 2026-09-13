@@ -1,7 +1,7 @@
 ---
 title: '【Masalah Tahun 2026】Apakah Kekurangan Bakat IT Benar-benar Terjadi? Realitas di Lapangan'
 slug: "it-talent-shortage-2026"
-date: "2026-09-15T09:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -182,3 +182,4 @@ AI tidak akan merebut pekerjaan kita, ia hanyalah alat agar kita bisa fokus pada
 
 Inilah saatnya untuk mengevaluasi kembali jalur karier Anda dan banting setir menuju paradigma berikutnya.
 Apakah Anda sudah siap untuk me-"modernisasi" diri Anda sendiri?
+

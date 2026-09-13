@@ -1,7 +1,7 @@
 ---
 title: "Como evitar a 'falta de ideias' em artigos técnicos! Métodos eficientes de input e geração de ideias"
 slug: "tech-blog-idea-generation-and-input-strategy"
-date: "2026-09-14T16:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -382,3 +382,4 @@ Conforme apresentado neste artigo:
 Ao construir um pipeline abrangente que combina esses elementos, em vez de esgotar as ideias para o blog, você pode criar um estado onde, quanto mais você escreve, mais as novas ideias se multiplicam por si sementes.
 
 Você não precisa construir tudo perfeitamente desde o início. Comece criando um script simples que consulta a API do Hacker News e adquirindo o hábito de fazer anotações em Markdown dos artigos que lhe interessam. Esperamos que seu blog técnico se torne uma excelente fonte de ideias inovadoras para a próxima geração.
+

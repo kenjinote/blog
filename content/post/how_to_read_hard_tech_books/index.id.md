@@ -1,7 +1,7 @@
 ---
 title: 'Cara Efisien Membaca dan Menghasilkan Output dari Buku Teknis yang Sulit (Matematika & Algoritma)'
 slug: "reading-hard-tech-books"
-date: "2026-09-14T21:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -283,3 +283,4 @@ Saat menulis blog, proses berikut akan terjadi:
 Membaca buku spesialis matematika atau algoritma bukanlah jalan yang mudah. Namun, dengan menjalankan siklus yang meliputi memahami struktur dengan SQ3R, mengekspresikannya melalui Teknik Feynman, menerjemahkannya ke dalam kode untuk memverifikasi operasinya, mencegah kelupaan dengan Anki, dan akhirnya menyajikannya ke dunia melalui blog teknis, pengetahuan yang sulit tersebut pasti akan menjadi "kekuatan" Anda.
 
 Pengetahuan tentang cara menggunakan API atau framework yang dangkal akan menjadi usang dalam beberapa tahun, tetapi kemampuan berpikir matematis dan dasar algoritma adalah aset seumur hidup. Saat Anda membuka buku teknis yang sulit berikutnya, silakan manfaatkan metode dalam artikel ini dan selamilah kedalaman pengetahuan tersebut.
+

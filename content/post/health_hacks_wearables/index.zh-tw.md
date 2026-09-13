@@ -1,7 +1,7 @@
 ---
 title: "使用'智慧戒指'等進行體能管理的工程師日常（健康駭客）"
 slug: "engineer-health-hacks-wearables"
-date: "2026-09-14T20:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -368,3 +368,4 @@ def check_and_ventilate():
 
 ---
 *Disclaimer: 本文為筆者個人實驗與資料科學方法的總結，並不提供醫療建議。若有持續性的身體不適或睡眠障礙，請諮詢專業的醫療機構。*
+

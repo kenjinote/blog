@@ -1,7 +1,7 @@
 ---
 title: '適合長時間寫程式！推薦給工程師的 5 款機械式鍵盤'
 slug: "engineer-mechanical-keyboard-recommendations"
-date: "2026-09-14T11:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -201,3 +201,4 @@ pie title "工程師理想的鍵盤配置偏好 (推測數據)"
 這次介紹的 5 款鍵盤（Keychron、HHKB Studio、Moonlander、REALFORCE、Wooting），每一款都是透過不同方法追求「最佳輸入體驗」的傑作。請務必配合您自身的打字風格和身體的困擾，找到最棒的夥伴。
 
 對鍵盤的投資，必定會化為「數百萬行沒有 Bug 的程式碼」，為您帶來回報。
+

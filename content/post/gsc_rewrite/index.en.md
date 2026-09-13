@@ -1,7 +1,7 @@
 ---
 title: 'A Strategy for Rewriting Past Tech Articles Using Google Search Console'
 slug: 'google-search-console-rewrite-strategy'
-date: '2026-09-14T15:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -276,3 +276,4 @@ To summarize the methods explained in this article:
 4. Discover content gaps with competitors through **NLP analysis using TF-IDF** and optimize headings (H2/H3).
 
 Technology trends are constantly changing. To accurately respond to the errors and challenges readers are currently facing, we highly recommend incorporating strategic rewriting backed by data into your daily operations.
+

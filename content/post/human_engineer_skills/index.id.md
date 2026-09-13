@@ -1,7 +1,7 @@
 ---
 title: 'Keterampilan Insinyur Khas Manusia yang Dibutuhkan di Era AI Menulis Kode'
 slug: "human-engineer-skills-ai-era"
-date: "2026-09-15T12:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -207,3 +207,4 @@ Insinyur masa depan tidak perlu khawatir tentang detail spesifikasi bahasa pemro
 
 Insinyur sejati bukanlah seseorang yang menulis kode, melainkan seseorang yang memecahkan masalah.
 Pemodelan domain, desain arsitektur yang dapat diskalakan, komunikasi dengan pemangku kepentingan, dan debugging sistem yang kompleks. Bagi mereka yang terus mengasah "keterampilan insinyur khas manusia" ini, AI bukan musuh yang mencuri pekerjaan, melainkan mitra terkuat yang akan melipatgandakan kreativitas dan produktivitas mereka puluhan kali lipat.
+

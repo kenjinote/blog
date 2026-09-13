@@ -1,7 +1,7 @@
 ---
 title: "Les 'compétences d'ingénieur spécifiques aux humains' requises à l'ère de la programmation par l'IA"
 slug: "human-engineer-skills-ai-era"
-date: "2026-09-15T12:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -207,3 +207,4 @@ Les ingénieurs de demain ne s'inquiéteront plus des spécifications détaillé
 
 Un véritable ingénieur n'est pas quelqu'un qui écrit du code, mais quelqu'un qui résout des problèmes.
 La modélisation de domaine, la conception d'architectures évolutives, la communication avec les parties prenantes et le débogage de systèmes complexes. Pour ceux qui continuent à affiner ces "compétences d'ingénieur spécifiques aux humains", l'IA ne sera pas un ennemi qui vole leur travail, mais plutôt le partenaire le plus fort qui amplifiera leur créativité et leur productivité des dizaines de fois.
+

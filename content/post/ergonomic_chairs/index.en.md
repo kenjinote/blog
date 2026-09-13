@@ -1,7 +1,7 @@
 ---
 title: 'Prevent Back Pain! How to Choose an Ergonomic Chair for Remote Work'
 slug: "ergonomic-chair-guide-for-remote-engineers"
-date: "2026-09-14T12:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -148,3 +148,4 @@ pie title "Top 5 Poor Postures of Remote Workers"
 An ergonomic chair is by no means a cheap purchase. Models exceeding 100,000 to 200,000 yen are not uncommon. However, considering that you will spend about 2,000 hours a year, 8 hours a day, on it, it can be said to be the "most cost-effective investment (device with high ROI)" to prevent the risk of decreased productivity and medical expenses due to back pain.
 
 Please reconsider your work style from a biomechanical perspective and carefully select a "physically correct chair" that accurately supports your skeleton and muscles. That is the greatest secret to continuing engineering comfortably for a long time.
+

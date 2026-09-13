@@ -1,7 +1,7 @@
 ---
 title: 'Estrategia de promoción de aplicaciones independientes: Cómo aprovechar un blog técnico'
 slug: "indie-app-promotion-blog-strategy"
-date: "2026-09-14T23:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -320,3 +320,4 @@ En este artículo, explicamos las estrategias técnicas para sublimar un blog t�
 4. **Análisis preciso**: Combinar GA4 y PostHog para rastrear "conversión" y "retención" en lugar de PV (Page Views), y mantener saludable la relación LTV/CAC.
 
 Construir un producto asombroso es solo la mitad del éxito. La otra mitad es el "marketing como ingeniería" para entregarlo a las personas que lo necesitan. No dejes que tu blog técnico termine como un simple lugar de salida de información (output), sino conviértelo en el mayor activo que respalde el crecimiento sostenible de tu aplicación.
+

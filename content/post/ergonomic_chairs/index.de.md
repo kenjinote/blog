@@ -1,7 +1,7 @@
 ---
 title: 'Rückenschmerzen vorbeugen! Wie man den richtigen ergonomischen Stuhl für die Remote-Arbeit auswählt'
 slug: "ergonomic-chair-guide-for-remote-engineers"
-date: "2026-09-14T12:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -148,3 +148,4 @@ pie title "Top 5 der schlechten Körperhaltungen bei Remote-Arbeitern"
 Ein ergonomischer Stuhl ist keinesfalls eine günstige Anschaffung. Modelle, die 100.000 bis über 200.000 Yen kosten, sind keine Seltenheit. Wenn man jedoch bedenkt, dass man 8 Stunden am Tag und etwa 2000 Stunden im Jahr darauf verbringt, kann man sagen, dass es das „Gerät mit dem höchsten Return on Investment (hoher ROI)“ ist, um Produktivitätsverluste durch Rückenschmerzen und das Risiko von Arztkosten im Vorfeld zu vermeiden.
 
 Überprüfen Sie Ihren Arbeitsstil aus biomechanischer Sicht und wählen Sie sorgfältig „den physikalisch richtigen Stuhl“ aus, der Ihr Skelett und Ihre Muskeln präzise unterstützt. Das ist das größte Geheimnis, um das Engineering lange und komfortabel fortsetzen zu können.
+

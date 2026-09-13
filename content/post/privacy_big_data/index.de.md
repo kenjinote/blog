@@ -1,7 +1,7 @@
 ---
 title: 'Kompromiss zwischen Datenschutz und Komfort: Der Verbleib persönlicher Daten im Zeitalter von Big Data'
 slug: 'privacy-vs-convenience-big-data'
-date: '2026-09-15T16:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -218,3 +218,4 @@ Technologische Lösungen sind jedoch nicht perfekt. Beim föderierten Lernen bes
 ## Fazit
 
 Die Frage nach dem Verbleib persönlicher Daten im Zeitalter von Big Data geht über eine bloße technische Herausforderung hinaus und stellt die grundlegende Frage, welche Art von Gesellschaft wir uns wünschen. Wie können wir den Komfort genießen und gleichzeitig die persönliche Würde und Privatsphäre schützen? Nur durch eine Dreifaltigkeit aus der Entwicklung rechtlicher Rahmenbedingungen, der kontinuierlichen Innovation von Datenschutztechnologien und einer hohen Kompetenz von jedem Einzelnen von uns, der Daten bereitstellt, können wir eine nachhaltige Lösung erreichen. Datenschutz und Komfort sind nicht länger ein Kompromiss, sondern werden sich mit modernster Technologie zu einer miteinander vereinbaren „unumgänglichen Anforderung“ entwickeln.
+

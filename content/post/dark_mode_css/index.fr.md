@@ -1,7 +1,7 @@
 ---
 title: 'Points clés de la conception CSS pour la prise en charge du mode sombre sur les blogs'
 slug: "dark-mode-css-design-patterns"
-date: "2026-09-14T18:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -358,3 +358,4 @@ Pour implémenter un mode sombre de haute qualité sur un blog ou une applicatio
 4.  **Optimiser les médias et les ressources** : Harmoniser les éléments autres que le texte avec le thème sombre en exploitant `filter: brightness()`, `currentColor` et la balise `<picture>`.
 
 Ces attentions minutieuses, qui vont bien au-delà d'une simple « inversion de couleurs », constituent les conditions d'un blog moderne offrant une expérience de lecture (reading experience) supérieure, agréable pour les yeux et appréciée durablement par les utilisateurs. Développeurs sur le point d'introduire le mode sombre, n'hésitez pas à vous référer aux modèles de conception présentés dans cet article.
+

@@ -1,7 +1,7 @@
 ---
 title: 'Pour les longues sessions de codage ! 5 claviers mécaniques recommandés pour les ingénieurs'
 slug: "engineer-mechanical-keyboard-recommendations"
-date: "2026-09-14T11:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -201,3 +201,4 @@ Le choix d'un clavier est un processus "d'optimisation de sa propre interface" t
 Les 5 claviers présentés cette fois (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) sont tous des chefs-d'œuvre visant la "meilleure expérience de saisie" avec des approches différentes. Trouvez votre meilleur partenaire en fonction de votre propre style de frappe et des problèmes physiques auxquels vous êtes confronté.
 
 L'investissement dans un clavier se transformera sûrement en "des millions de lignes de code sans bug" et vous apportera des bénéfices.
+

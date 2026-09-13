@@ -1,7 +1,7 @@
 ---
 title: 'Comment héberger un blog Hugo gratuitement et à une vitesse fulgurante sur Cloudflare Pages ou GitHub Pages'
 slug: 'hugo-hosting-cloudflare-vs-github-pages'
-date: '2026-09-14T17:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -255,3 +255,4 @@ Dans le cadre de l'exploitation d'un site statique utilisant Hugo, l'adoption de
 5. **Analytique légère** : Intégrer des outils comme Cloudflare Web Analytics pour ne pas dégrader les performances tout en respectant la vie privée.
 
 En combinant ces éléments, vous pouvez créer gratuitement un système de blog évolutif et robuste, capable de supporter des trafics massifs atteignant des millions de pages vues (PV) par mois. Si vous envisagez de lancer un blog technique, un site d'entreprise ou un site portfolio, je vous invite vivement à essayer cette configuration Jamstack + Hugo + Cloudflare Pages.
+

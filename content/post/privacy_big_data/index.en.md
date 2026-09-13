@@ -1,7 +1,7 @@
 ---
 title: 'The Trade-off Between Privacy and Convenience: The Fate of Personal Information in the Era of Big Data'
 slug: 'privacy-vs-convenience-big-data'
-date: '2026-09-15T16:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -218,3 +218,4 @@ However, technological solutions are not perfect. In federated learning, there i
 ## Conclusion
 
 The fate of personal information in the era of big data poses a fundamental question that goes beyond a mere technical issue: what kind of society do we desire? How can we protect individual dignity and privacy while enjoying convenience? We can only arrive at a sustainable solution through a trinity: the establishment of legal regulations, the continuous innovation of privacy-enhancing technologies, and the high literacy of each of us who provide the data. Privacy and convenience are no longer a trade-off, but will evolve into "essential requirements" that can be achieved simultaneously through the latest technologies.
+

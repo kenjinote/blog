@@ -1,7 +1,7 @@
 ---
 title: 'Trade-off Privasi dan Kenyamanan: Nasib Informasi Pribadi di Era Big Data'
 slug: 'privacy-vs-convenience-big-data'
-date: '2026-09-15T16:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -218,3 +218,4 @@ Namun, solusi teknologi belum sepenuhnya sempurna. Dalam Pembelajaran Federasi, 
 ## Kesimpulan
 
 Nasib informasi pribadi di era big data melampaui sekadar masalah teknis dan menimbulkan pertanyaan mendasar mengenai masyarakat seperti apa yang kita inginkan. Bagaimana kita melindungi martabat serta privasi individu sambil terus menikmati kenyamanan yang ada. Solusi yang berkelanjutan hanya dapat dicapai melalui trinitas antara pembentukan regulasi hukum, inovasi tanpa henti pada teknologi perlindungan privasi, dan literasi yang tinggi dari kita masing-masing sebagai penyedia data. Privasi dan kenyamanan tidak lagi menjadi trade-off, melainkan akan berevolusi menjadi "persyaratan mutlak" yang dapat berjalan seiringan berkat bantuan teknologi terbaru.
+

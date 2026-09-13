@@ -1,7 +1,7 @@
 ---
 title: '運用 Google Search Console 重新撰寫過往技術文章的策略'
 slug: 'google-search-console-rewrite-strategy'
-date: '2026-09-14T15:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -276,3 +276,4 @@ flowchart TD
 4. 透過**使用 TF-IDF 的 NLP 分析**，發現與競爭對手之間的內容差距，並最佳化標題 (H2/H3)。
 
 技術趨勢會不斷改變。為了能精準回應讀者目前面臨的錯誤或課題，請務必將這種數據為輔的戰略性重新撰寫，融入到日常的營運當中。
+

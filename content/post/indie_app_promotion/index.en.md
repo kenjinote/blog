@@ -1,7 +1,7 @@
 ---
 title: "Indie App Promotion Strategy: How to Leverage a Tech Blog"
 slug: "indie-app-promotion-blog-strategy"
-date: "2026-09-14T23:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -320,3 +320,4 @@ In this article, we explained the technical strategies to elevate a tech blog fr
 4. **Precise Analytics**: Combine GA4 and PostHog to track "conversion" and "retention" rather than PVs, keeping the LTV/CAC ratio healthy.
 
 Creating a wonderful product is only half of the success. The other half is "marketing as engineering" to deliver it into the hands of those who need it. Do not let your tech blog end as just a place for output, but cultivate it into the greatest asset that supports the sustainable growth of your app.
+

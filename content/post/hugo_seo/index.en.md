@@ -1,7 +1,7 @@
 ---
 title: "Hugo Blog SEO: Frontmatter Settings to Dramatically Increase Traffic"
 slug: "hugo-blog-seo-frontmatter-tips"
-date: "2026-09-14T09:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -333,3 +333,4 @@ By completely implementing the following points explained in this article, the S
 4. **Advanced Traffic Management**: Robot control with meta tags and redirects using Aliases.
 
 Search engine algorithms are evolving daily, but the fundamental principle of SEO, which is to provide signals for search engines to "correctly understand the content of the page", remains unchanged. By mastering Hugo's flexible template engine and frontmatter, continue to broadcast those signals with the highest quality, and dramatically increase your blog's traffic.
+

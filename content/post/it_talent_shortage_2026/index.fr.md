@@ -1,7 +1,7 @@
 ---
 title: "【Problème de 2026】 La pénurie de talents informatiques est-elle vraiment une réalité ? La réalité du terrain"
 slug: "it-talent-shortage-2026"
-date: "2026-09-15T09:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -182,3 +182,4 @@ L'IA ne va pas nous voler notre travail, ce n'est qu'un outil qui nous permet de
 
 C'est maintenant le moment de revoir votre plan de carrière et de prendre le virage vers le prochain paradigme.
 Êtes-vous prêt pour votre propre 'modernisation' ?
+

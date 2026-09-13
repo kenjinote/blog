@@ -1,7 +1,7 @@
 ---
 title: 'Métodos Eficientes de Leitura e Produção (Output) para Livros Técnicos Complexos (Matemática e Algoritmos)'
 slug: "reading-hard-tech-books"
-date: "2026-09-14T21:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -284,3 +284,4 @@ Ao escrever um blog, os seguintes processos ocorrem:
 Ler livros de matemática e livros especializados em algoritmos não é um caminho fácil. No entanto, ao percorrer uma série de ciclos — compreendendo a estrutura com SQ3R, verbalizando com a Técnica de Feynman, traduzindo para código para verificar o comportamento, evitando o esquecimento com o Anki e, finalmente, compartilhando com o mundo através de um blog técnico — esse conhecimento complexo certamente se tornará a sua "força".
 
 Embora o conhecimento sobre como usar APIs e frameworks superficiais se torne obsoleto em alguns anos, o pensamento matemático e a base de algoritmos são um ativo para a vida toda. Da próxima vez que você abrir um livro técnico complexo, por favor, utilize os métodos descritos neste artigo e mergulhe no abismo do conhecimento.
+

@@ -1,7 +1,7 @@
 ---
 title: 'Cloudflare PagesやGitHub PagesでHugoブログを無料・爆速で公開する方法'
 slug: 'hugo-hosting-cloudflare-vs-github-pages'
-date: '2026-09-14T17:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -255,3 +255,4 @@ Hugoを用いた静的サイトの運用において、Cloudflare PagesやGitHub
 5. **軽量なアナリティクス**: プライバシーに配慮しつつパフォーマンスを損なわないCloudflare Web Analyticsなどを導入する。
 
 これらを組み合わせることで、月間数百万PVクラスの大規模トラフィックにも耐えうる、スケーラブルかつ堅牢なブログシステムを無料で構築することができます。技術ブログや企業サイト、ポートフォリオサイトの立ち上げを検討している方は、ぜひこの Jamstack + Hugo + Cloudflare Pages の構成を試してみてください。
+

@@ -1,7 +1,7 @@
 ---
 title: 'Google Search Console을 활용하여 과거 기술 블로그 게시글을 리라이팅하는 전략'
 slug: 'google-search-console-rewrite-strategy'
-date: '2026-09-14T15:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -276,3 +276,4 @@ Google Search Console을 활용한 기술 게시글의 리라이팅은 단순한
 4. **TF-IDF를 이용한 NLP 분석**을 통해, 경쟁사와의 콘텐츠 격차를 발견하고 제목(H2/H3)을 최적화합니다.
 
 기술의 트렌드는 끊임없이 변화합니다. 독자가 지금 겪고 있는 오류나 문제에 정확하게 대응하기 위해서라도, 데이터를 아군으로 삼은 전략적인 리라이팅을 꼭 일상적인 운영에 도입해 보시기 바랍니다.
+

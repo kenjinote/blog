@@ -1,7 +1,7 @@
 ---
 title: 'A tecnologia pode superar a divisão social? (Uma proposta de um engenheiro)'
 slug: "technology-and-social-divide"
-date: "2026-09-15T18:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -194,3 +194,4 @@ A tecnologia não é mágica. Ela é um espelho humano. Se a sociedade está div
 A partir do 101º post, continuarei a me posicionar na interseção entre o código e a sociedade, como um simples engenheiro, aprofundando minhas reflexões. Muito obrigado por me acompanhar neste longo texto até o fim. Espero que a rede do futuro não seja um muro que nos divide, mas uma ponte para nos entendermos.
 
 (Fim)
+

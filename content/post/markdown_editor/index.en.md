@@ -1,7 +1,7 @@
 ---
 title: "Technical Blogging in Markdown: Editor Settings to Double Your Writing Speed"
 slug: "markdown-editor-setup-for-tech-blogs"
-date: "2026-09-14T14:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -269,3 +269,4 @@ We have explained the editor settings to double your writing speed when writing 
 5. **LLM Integration**: Have AI directly output Markdown structures and chart code within the editor.
 
 By adopting these settings in your own environment, the "hassle" of writing will disappear, and the quantity and quality of your technical output should dramatically improve. Why not start by registering just a single small snippet?
+

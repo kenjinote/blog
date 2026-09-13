@@ -1,7 +1,7 @@
 ---
 title: 'Prévenir le mal de dos ! Comment choisir une chaise ergonomique pour le télétravail'
 slug: "ergonomic-chair-guide-for-remote-engineers"
-date: "2026-09-14T12:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -148,3 +148,4 @@ pie title "Top 5 des mauvaises postures chez les télétravailleurs"
 Les chaises ergonomiques ne sont en aucun cas un achat bon marché. Les modèles coûtant entre 100 000 et 200 000 yens ne sont pas rares. Cependant, si l'on considère que l'on y passe 8 heures par jour, soit environ 2000 heures par an, on peut dire que c'est "l'investissement le plus rentable (l'appareil avec le meilleur retour sur investissement)" pour prévenir de manière proactive la baisse de productivité et les risques de frais médicaux dus au mal de dos.
 
 Veuillez revoir votre style de travail du point de vue de la biomécanique et sélectionner la "chaise physiquement correcte" qui soutiendra avec précision votre squelette et vos muscles. C'est le plus grand secret pour continuer l'ingénierie confortablement pendant longtemps.
+

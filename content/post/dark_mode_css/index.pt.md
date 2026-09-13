@@ -1,7 +1,7 @@
 ---
 title: 'Pontos-chave do Design CSS para Suporte ao Modo Escuro em Blogs'
 slug: "dark-mode-css-design-patterns"
-date: "2026-09-14T18:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -358,3 +358,4 @@ Para implementar um modo escuro de alta qualidade em blogs e aplicações web, u
 4.  **Otimização de Mídias e Ativos**: Usar recursos como `filter: brightness()`, `currentColor` e tags `<picture>` para harmonizar elementos não textuais com o tema escuro.
 
 Ir além da simples "inversão de cores" com estas atenções detalhadas é a marca de um blog moderno que será amado pelos usuários e fornecerá uma excelente experiência de leitura com menos cansaço visual. Aconselhamos os desenvolvedores que estiverem implementando o modo escuro a consultarem os padrões de design discutidos neste artigo.
+

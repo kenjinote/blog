@@ -1,7 +1,7 @@
 ---
 title: 'Trabajo remoto vs. Regreso a la oficina: Cuál es la solución óptima para los ingenieros'
 slug: 'remote-vs-rto-engineers'
-date: '2026-09-15T10:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -234,3 +234,4 @@ La gerencia debe abandonar la ilusión de que "la innovación ocurrirá mágicam
 Por otro lado, los ingenieros (especialmente en los niveles senior) deben cambiar su visión egocéntrica de que "la oficina es innecesaria porque soy más productivo escribiendo código solo". La ingeniería es un deporte de equipo; los ingenieros no solo son responsables de la productividad del código, sino también de una amplia gama de responsabilidades como el diseño del sistema de toda la organización, la capacitación de los miembros junior y la coordinación durante las emergencias. También es cierto que la comunicación de alto ancho de banda en un espacio físico a veces salva todo el proyecto.
 
 La solución óptima varía dependiendo de la fase de la empresa, el equipo y el producto. Sin embargo, lo que es seguro es que en esta nueva era de trabajo, la verdadera competitividad solo la alcanzarán las organizaciones que entiendan la naturaleza sociológica de la comunicación, midan la situación actual con métricas multifacéticas como el marco SPACE y continúen rompiendo las restricciones utilizando tecnologías como la Arquitectura Zero Trust.
+

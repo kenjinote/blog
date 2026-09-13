@@ -2,7 +2,7 @@
 title: "El agravamiento de la 'nueva brecha digital' provocada por la evolución de la IA generativa"
 description: "Analizamos profundamente la nueva brecha digital que, debido al rápido desarrollo de la tecnología de IA, ha pasado del acceso al hardware e internet a la 'capacidad de prompting y orquestación'."
 slug: "generative-ai-digital-divide"
-date: "2026-09-15T11:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -165,3 +165,4 @@ Quedarnos de este lado de la nueva brecha digital o pasar al otro lado. Esa elec
 
 ---
 *Para dejar sus opiniones sobre este artículo o para comentar casos de uso específicos de orquestación de IA, por favor hágalo en la sección de comentarios o a través de las redes sociales del autor.*
+

@@ -1,7 +1,7 @@
 ---
 title: 'SEO untuk Blog Hugo: Pengaturan Frontmatter yang Secara Dramatis Meningkatkan Jumlah Pengunjung'
 slug: "hugo-blog-seo-frontmatter-tips"
-date: "2026-09-14T09:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -333,3 +333,4 @@ Dengan menerapkan poin-poin yang dijelaskan dalam artikel ini secara menyeluruh,
 4. **Manajemen lalu lintas tingkat lanjut**: Pengalihan menggunakan Aliases dan kontrol robot menggunakan meta tag
 
 Meskipun algoritma mesin pencari terus berkembang dari hari ke hari, prinsip dasar SEO—menyediakan sinyal agar mesin pencari dapat "memahami konten halaman dengan benar"—tetap tidak berubah. Dengan menguasai mesin template yang fleksibel dan frontmatter Hugo, Anda dapat terus mengirimkan sinyal berkualitas tinggi tersebut dan meningkatkan jumlah pengunjung blog Anda secara dramatis.
+

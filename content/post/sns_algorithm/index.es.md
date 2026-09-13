@@ -1,7 +1,7 @@
 ---
 title: 'El impacto de los algoritmos de las redes sociales en nuestro pensamiento y selección de tecnología'
 slug: "sns-algorithm-tech-selection"
-date: "2026-09-15T13:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -176,3 +176,4 @@ Los algoritmos de recomendación de las redes sociales son herramientas poderosa
 Necesitamos desarrollar una alfabetización (literacy) que nos permita tratar la información que fluye en nuestras líneas de tiempo no como "hechos" o "tendencias absolutas", sino como una "señal" más.
 
 Salir de la cámara de eco, leer el código fuente con nuestras propias manos, seguir los debates de RFC, decodificar las fórmulas en artículos académicos y enfrentar los verdaderos desafíos de nuestro propio dominio empresarial. Ese es el único camino para practicar una verdadera ingeniería de software sin ser devorado por la ola de los algoritmos.
+

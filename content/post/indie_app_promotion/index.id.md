@@ -1,7 +1,7 @@
 ---
 title: "Strategi Promosi Aplikasi Indie: Bagaimana Memanfaatkan 'Blog Teknologi'"
 slug: "indie-app-promotion-blog-strategy"
-date: "2026-09-14T23:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -320,3 +320,4 @@ Artikel ini telah menjelaskan strategi teknis untuk meningkatkan blog teknologi 
 4. **Analitik Presisi**: Kombinasikan GA4 dan PostHog untuk melacak "konversi" dan "retensi", bukan hanya PV, demi menjaga rasio LTV/CAC tetap sehat.
 
 Membuat produk hebat hanyalah separuh dari kesuksesan. Separuh lainnya adalah "pemasaran sebagai rekayasa perangkat lunak" untuk menghadirkannya kepada orang-orang yang membutuhkannya. Jangan biarkan blog teknologi Anda hanya menjadi tempat berbagi output, tetapi jadikanlah aset terbesar yang mendukung pertumbuhan berkelanjutan aplikasi Anda.
+

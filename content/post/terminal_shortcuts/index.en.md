@@ -1,7 +1,7 @@
 ---
 title: 'Terminal (PowerShell/Bash) Efficiency Shortcuts for Developers'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-date: '2026-09-13T10:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,3 +346,4 @@ In this article, we explained the "efficiency of terminal operations" that deter
 At first, you might feel stressed consciously trying to type `Ctrl+A` or `Ctrl+E`. However, by consciously continuing to use them for a few weeks, these shortcuts will surely settle into your **muscle memory**. Once they settle, you will be able to freely control the terminal unconsciously, making it an asset that will dramatically improve your Developer Experience (DX) for a lifetime.
 
 Starting today, open `$PROFILE` or `~/.bashrc` and begin building the ultimate terminal environment that fits your hands best.
+

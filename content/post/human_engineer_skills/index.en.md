@@ -1,7 +1,7 @@
 ---
 title: "The 'Human-Specific Engineering Skills' Required in the Era of AI Writing Code"
 slug: "human-engineer-skills-ai-era"
-date: "2026-09-15T12:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -206,3 +206,4 @@ Engineers of the future will not be swayed by the trivial specifications of a pa
 
 A true engineer is not someone who writes code, but someone who solves problems.
 Domain modeling, scalable architecture design, communication with stakeholders, and debugging complex systems. For those who continue to polish these "human-specific engineering skills," AI will not be an enemy that takes away jobs, but the ultimate partner that expands their own creativity and productivity tens of times over.
+

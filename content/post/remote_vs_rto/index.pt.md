@@ -1,7 +1,7 @@
 ---
 title: 'Trabalho Remoto vs. Retorno ao Escritório: A Solução Ideal para Engenheiros'
 slug: 'remote-vs-rto-engineers'
-date: '2026-09-15T10:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -235,3 +235,4 @@ A liderança necessita de descartar a ilusão de que "se as pessoas se reunirem 
 Por outro lado, os engenheiros (especialmente os do escalão sênior) também precisam rever o ponto de vista complacente de que "como a minha produtividade é mais alta a escrever código sozinho, não há necessidade de um escritório". A engenharia é um desporto de equipe e eles assumem uma vasta gama de responsabilidades, não apenas a produtividade do código, mas também o design do sistema da organização como um todo, o desenvolvimento dos membros juniores e a colaboração em caso de emergência. A verdade é que às vezes a comunicação de alta largura de banda no espaço físico pode salvar todo o projeto.
 
 A solução ideal varia dependendo da fase da empresa, equipe e do produto. No entanto, o que é certo, é que as organizações capazes de entender a natureza sociológica da comunicação, medir a situação atual através de indicadores multifacetados como o framework SPACE e quebrar continuamente as restrições com tecnologia como a Arquitetura Zero Trust, são aquelas que conseguirão uma verdadeira vantagem competitiva nesta nova era do trabalho.
+

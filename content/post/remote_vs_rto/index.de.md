@@ -1,7 +1,7 @@
 ---
 title: 'Remote-Work und die Rückkehr ins Büro: Was ist die optimale Lösung für Ingenieure?'
 slug: 'remote-vs-rto-engineers'
-date: '2026-09-15T10:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -235,3 +235,4 @@ Die Führungsebene muss die Illusion aufgeben, dass "Innovationen wie von Zauber
 Auf der anderen Seite müssen auch Ingenieure (insbesondere Senioren) die selbstgerechte Sichtweise korrigieren: "Ich bin produktiver, wenn ich alleine Code schreibe, also brauche ich kein Büro". Software-Engineering ist ein Teamsport und beinhaltet weitreichende Verantwortlichkeiten, nicht nur die Produktivität beim Codieren, sondern auch das Systemdesign der gesamten Organisation, die Ausbildung von Junior-Mitgliedern und die Zusammenarbeit in Notfällen. Es ist eine Tatsache, dass Kommunikation mit hoher Bandbreite im physischen Raum manchmal das gesamte Projekt retten kann.
 
 Die optimale Lösung variiert je nach Phase des Unternehmens, des Teams und des Produkts. Sicher ist jedoch, dass nur Organisationen in dieser neuen Ära des Arbeitens echte Wettbewerbsfähigkeit erlangen können, die die soziologischen Eigenschaften der Kommunikation verstehen, den Status quo mit vielfältigen Indikatoren wie dem SPACE-Framework messen und weiterhin Einschränkungen durch Technologien wie die Zero-Trust-Architektur überwinden.
+

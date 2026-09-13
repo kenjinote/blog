@@ -1,7 +1,7 @@
 ---
 title: '개발자를 위한 터미널(PowerShell/Bash) 효율화 단축키'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-date: '2026-09-13T10:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,3 +346,4 @@ Windows 환경에서는 최신 **Windows Terminal**이 기본으로 페인 분�
 처음에는 `Ctrl+A`나 `Ctrl+E`를 의식해서 누르는 것에 스트레스를 느낄지도 모릅니다. 하지만 몇 주 동안 의식적으로 계속 사용하다 보면, 이 단축키들은 확실하게 **머슬 메모리(근육의 기억)**로 정착될 것입니다. 한 번 정착되고 나면 무의식중에 터미널을 자유자재로 다룰 수 있게 되어, 평생에 걸쳐 당신의 개발 경험(Developer Experience, DX)을 비약적으로 향상시켜 줄 자산이 될 것입니다.
 
 오늘부터 바로 `$PROFILE`이나 `~/.bashrc`를 열어, 자신의 손에 가장 잘 맞는 궁극의 터미널 환경을 구축해 보시기 바랍니다.
+

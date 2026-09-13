@@ -1,7 +1,7 @@
 ---
 title: 'Stratégie de promotion des applications indépendantes : Comment tirer parti de votre blog technique'
 slug: "indie-app-promotion-blog-strategy"
-date: "2026-09-14T23:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -320,3 +320,4 @@ Dans cet article, nous avons expliqué la stratégie technique pour transformer 
 4. **Analytique de précision** : Combinez GA4 et PostHog pour suivre les "conversions" et la "rétention" plutôt que les pages vues, tout en gardant un ratio LTV/CAC sain.
 
 Créer un excellent produit n'est que la moitié de la réussite. L'autre moitié est "le marketing en tant qu'ingénierie", afin de l'amener entre les mains des personnes qui en ont besoin. Ne laissez pas votre blog technique être un simple exutoire ; cultivez-le pour qu'il devienne votre plus grand atout soutenant la croissance durable de votre application.
+

@@ -1,7 +1,7 @@
 ---
 title: "La gestion des tâches avec Notion pour le développement personnel et l'écriture de blog"
 slug: "notion-task-management-blog-dev"
-date: "2026-09-14T19:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -273,3 +273,4 @@ Peu importe à quel point vous créez des systèmes et des outils avancés, cela
 La gestion des tâches avec Notion va bien au-delà de la simple liste To-Do. En combinant l'organisation des informations par la méthode PARA, la mise en réseau des connaissances par Zettelkasten et l'ingénierie par l'API Notion, vous pouvez construire un "deuxième cerveau (Second Brain)" qui stimule considérablement votre développement personnel et l'écriture de blog.
 
 La configuration initiale prend un peu de temps, mais une fois que le système commence à fonctionner, la charge cognitive liée à la gestion des tâches diminue de manière spectaculaire, vous permettant de vous concentrer pleinement sur les choses vraiment importantes : "écrire du code" et "écrire des textes". N'hésitez pas à utiliser cet article comme référence pour créer votre propre espace de travail Notion ultime.
+

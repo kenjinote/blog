@@ -1,7 +1,7 @@
 ---
 title: 'Untuk Coding Jangka Panjang! 5 Rekomendasi Keyboard Mekanikal untuk Engineer'
 slug: "engineer-mechanical-keyboard-recommendations"
-date: "2026-09-14T11:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -201,3 +201,4 @@ Memilih keyboard adalah proses "mengoptimalkan antarmuka diri sendiri" sepanjang
 Kelima keyboard yang diperkenalkan kali ini (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) semuanya adalah mahakarya yang bertujuan untuk memberikan "pengalaman input terbaik" dengan pendekatan yang berbeda-beda. Kami harap Anda dapat menemukan partner terbaik yang sesuai dengan gaya mengetik dan masalah fisik yang Anda hadapi.
 
 Investasi pada keyboard ini pasti akan memberikan pengembalian berupa "jutaan baris kode tanpa bug" kepada Anda.
+

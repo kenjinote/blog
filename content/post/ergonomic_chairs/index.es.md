@@ -1,7 +1,7 @@
 ---
 title: '¡Prevención del dolor de espalda! Cómo elegir una silla ergonómica para el trabajo remoto'
 slug: "ergonomic-chair-guide-for-remote-engineers"
-date: "2026-09-14T12:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -148,3 +148,4 @@ pie title "Top 5 de malas posturas en trabajadores remotos"
 Una silla ergonómica no es en absoluto una compra barata. No es raro encontrar modelos que superen los 100,000 a 200,000 yenes. Sin embargo, si consideras que pasarás en ella 8 horas al día y unas 2000 horas al año, se puede decir que es la "inversión más rentable (dispositivo con alto ROI)" para prevenir disminuciones en la productividad debido al dolor de espalda y riesgos de gastos médicos.
 
 Reevalúa tu estilo de trabajo desde una perspectiva biomecánica y elige "una silla físicamente correcta" que soporte de manera precisa tu esqueleto y músculos. Ese es el mayor secreto para seguir en la ingeniería de manera cómoda y durante mucho tiempo.
+

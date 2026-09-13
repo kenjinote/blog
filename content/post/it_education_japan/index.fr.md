@@ -1,7 +1,7 @@
 ---
 title: 'État actuel et défis de l''enseignement de l''informatique au Japon : Les conséquences de la programmation obligatoire'
 slug: "japan-it-education-aftermath"
-date: "2026-09-15T15:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -256,3 +256,4 @@ Comment traverser la phase de « l'après » programmation obligatoire, qui est 
 ---
 
 *Dans cet article, nous avons esquissé la théorie de la complexité et les limites d'infrastructure du concept GIGA School. Nous aborderons des sujets informatiques plus spécialisés (comme les algorithmes de systèmes distribués et les détails de la gestion de la mémoire de bas niveau) dans les prochains articles de cette série.*
+

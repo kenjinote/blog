@@ -2,7 +2,7 @@
 title: "Memburuknya 'Kesenjangan Digital Baru' Akibat Evolusi AI Generatif"
 description: "Kami mengkaji secara mendalam kesenjangan digital baru yang bergeser dari akses perangkat keras dan internet menuju 'kemampuan prompting dan orkestrasi' akibat perkembangan pesat teknologi AI."
 slug: "generative-ai-digital-divide"
-date: "2026-09-15T11:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -165,3 +165,4 @@ Apakah kita akan berdiri di sisi sini dari kesenjangan digital yang baru, atau t
 
 ---
 *Silakan tinggalkan pendapat Anda tentang artikel ini atau studi kasus spesifik tentang penerapan orkestrasi AI di bagian komentar atau media sosial penulis.*
+

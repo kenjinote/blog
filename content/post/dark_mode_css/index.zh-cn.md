@@ -1,7 +1,7 @@
 ---
 title: '博客深色模式支持中的CSS设计要点'
 slug: "dark-mode-css-design-patterns"
-date: "2026-09-14T18:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -358,3 +358,4 @@ classDiagram
 4.  **媒体与静态资源的优化**: 充分运用 `filter: brightness()`、`currentColor` 以及 `<picture>` 标签，使文本以外的元素也能与深色主题相得益彰。
 
 超越了单纯的“颜色反转”，正是这些细致入微的考量，才能被称为是一个能够长期受用户喜爱、提供不伤眼且卓越阅读体验（Reading Experience）的现代博客的条件。准备引入深色模式的开发者们，请务必参考本文的设计模式。
+

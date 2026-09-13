@@ -1,7 +1,7 @@
 ---
 title: 'Key Points in CSS Design for Blog Dark Mode Support'
 slug: "dark-mode-css-design-patterns"
-date: "2026-09-14T18:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -358,3 +358,4 @@ To implement high-quality dark mode in blogs and web applications, a CSS design 
 4.  **Optimize media and assets**: Master `filter: brightness()`, `currentColor`, and `<picture>` tags to harmonize non-text elements with the dark theme.
 
 It is precisely these meticulous considerations—going beyond mere "color inversion"—that can be called the prerequisites of a modern blog that provides an excellent, eye-friendly reading experience cherished by users for a long time. For developers looking to introduce dark mode, please be sure to refer to the design patterns in this article.
+

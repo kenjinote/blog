@@ -1,7 +1,7 @@
 ---
 title: 'Gadgets & Monitoreinstellungen zur Linderung der Augenbelastung bei Programmierern'
 slug: "programmer-eye-strain-relief"
-date: "2026-09-14T22:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -280,3 +280,4 @@ Unsere Karriere als Softwareentwickler erstreckt sich über Jahrzehnte. Was dies
 5. **Mit einem Monitorarm den optimalen Blickwinkel basierend auf $\tan \theta = h/d$ schaffen und die "20-20-20-Regel" systematisieren**
 
 Diese Maßnahmen können vorübergehende Kosten und Aufwand mit sich bringen. Sie sind jedoch die kosteneffektivste "technologische Investition", um die gesundheitliche Lebensdauer der Augen zu verlängern und die lebenslange Produktivität und Lebensqualität (QOL) zu maximieren. Überprüfen Sie jetzt Ihre Entwicklungsumgebung und implementieren Sie etwas Fürsorge für Ihre Augen.
+

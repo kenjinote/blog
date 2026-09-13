@@ -1,7 +1,7 @@
 ---
 title: '開発者のためのターミナル（PowerShell/Bash）効率化ショートカット'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-date: '2026-09-13T10:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,3 +346,4 @@ Windows 環境では、最新の **Windows Terminal** が標準でペイン分�
 最初は `Ctrl+A` や `Ctrl+E` を意識して打つことにストレスを感じるかもしれません。しかし、数週間意識的に使い続けることで、これらのショートカットは確実に**マッスルメモリ（筋肉の記憶）**へと定着します。一度定着してしまえば、無意識のうちにターミナルを自由自在に操ることができるようになり、生涯にわたってあなたの開発体験（Developer Experience, DX）を飛躍的に向上させる財産となるでしょう。
 
 今日からぜひ、`$PROFILE` や `~/.bashrc` を開き、自身の手に最も馴染む究極のターミナル環境を構築し始めてみてください。
+

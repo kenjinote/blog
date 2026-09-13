@@ -1,7 +1,7 @@
 ---
 title: 'Status dan Tantangan Pendidikan TI di Jepang: Dampak dari Wajib Belajar Pemrograman'
 slug: "japan-it-education-aftermath"
-date: "2026-09-15T15:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -256,3 +256,4 @@ Bagaimana cara kita dalam memperjuangkan fase paling krusial dan sulit, yaitu fa
 ---
 
 *Dalam artikel ini, kami telah menyoroti batasan infrastruktur pada Konsep GIGA School dan teori-teori mengenai kompleksitas komputasional. Pada artikel-artikel selanjutnya, kami berencana membahas topik yang lebih terperinci mengenai ilmu komputer secara spesifik (seperti algoritma untuk sistem terdistribusi, hingga berbagai macam teknik manajemen memori tingkat rendah).*
+

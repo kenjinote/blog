@@ -1,7 +1,7 @@
 ---
 title: 'Prévenir le manque d''idées pour les articles techniques ! Méthodes efficaces d''assimilation et de génération d''idées'
 slug: "tech-blog-idea-generation-and-input-strategy"
-date: "2026-09-14T16:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -382,3 +382,4 @@ Comme présenté dans cet article :
 En construisant un pipeline complet combinant ces éléments, vos idées de blog ne s'épuiseront pas ; au contraire, plus vous écrirez, plus de nouvelles idées s'auto-multiplieront.
 
 Il n'est pas nécessaire de tout construire parfaitement dès le début. Commencez par créer un script simple qui interroge l'API de Hacker News, et prenez l'habitude de noter les articles qui vous intéressent en Markdown. J'espère que votre blog technique deviendra une source d'excellence pour la prochaine génération d'idées.
+

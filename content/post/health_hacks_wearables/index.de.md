@@ -1,7 +1,7 @@
 ---
 title: "Der Alltag eines Ingenieurs, der seine Gesundheit mit Smart Rings und Co. managt ('Health Hacks')"
 slug: "engineer-health-hacks-wearables"
-date: "2026-09-14T20:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -368,3 +368,4 @@ Nutzen Sie Data Science und APIs, um einen Gesundheitszustand zu entwickeln (Eng
 
 ---
 *Disclaimer: Dieser Artikel fasst die persönlichen Experimente und den datenwissenschaftlichen Ansatz des Autors zusammen und stellt keinen medizinischen Rat dar. Wenn Sie anhaltende körperliche Beschwerden oder Schlafstörungen haben, konsultieren Sie bitte einen Arzt.*
+

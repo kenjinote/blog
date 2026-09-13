@@ -1,7 +1,7 @@
 ---
 title: '如何在 Cloudflare Pages 或 GitHub Pages 上免費且極速地部署 Hugo 部落格'
 slug: 'hugo-hosting-cloudflare-vs-github-pages'
-date: '2026-09-14T17:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -255,3 +255,4 @@ Cloudflare Web Analytics 只要嵌入非常輕量的 JavaScript 程式碼片段�
 5. **輕量級的分析工具**：導入兼顧隱私且不損害效能的 Cloudflare Web Analytics 等工具。
 
 透過結合這些技術，可以免費建構出能夠承受每月數百萬 PV 等級大規模流量，且具備高可擴充性與堅固性的部落格系統。正在考慮建立技術部落格、企業網站或作品集網站的人，請務必嘗試這個 Jamstack + Hugo + Cloudflare Pages 的組合。
+

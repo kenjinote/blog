@@ -1,7 +1,7 @@
 ---
 title: "How SNS Algorithms Influence Our Thinking and Tech Selection"
 slug: "sns-algorithm-tech-selection"
-date: "2026-09-15T13:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -176,3 +176,4 @@ SNS recommendation algorithms are powerful tools that broaden our technical hori
 We need to acquire the literacy to treat the information flowing into our timelines not as "facts" or "absolute trends," but merely as a single "signal."
 
 Stepping out of the echo chamber, reading source code with our own hands, following RFC discussions, deciphering the math in papers, and facing the true challenges of our business domains. That alone is the only path to practicing true software engineering without being swallowed by the waves of algorithms.
+

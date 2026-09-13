@@ -1,7 +1,7 @@
 ---
 title: '【Problema de 2026】¿Realmente hay escasez de talento de TI? La realidad del campo'
 slug: "it-talent-shortage-2026"
-date: "2026-09-15T09:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -182,3 +182,4 @@ La IA no está quitándonos nuestros trabajos; es meramente una herramienta que 
 
 Ahora es el momento de revisar tu trayectoria profesional y dirigir el rumbo hacia el próximo paradigma. 
 ¿Estás listo para "modernizarte" a ti mismo?
+

@@ -1,7 +1,7 @@
 ---
 title: 'Atalhos de Terminal (PowerShell/Bash) para Eficiência de Desenvolvedores'
 slug: 'terminal-efficiency-powershell-bash-shortcuts'
-date: '2026-09-13T10:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -346,3 +346,4 @@ Neste artigo mergulhamos nas "eficiências de terminal" – aquelas que podem in
 Não se surpreenda ao se sentir atrasado quando pensar onde bater para um `Ctrl+A` ou o final da linha em `Ctrl+E`. Mesmo assim, ao se deparar depois de certas semanas tentando reproduzir os usos e aplicá-los com consciência aos seus fluxos de ação rotineiros, eles entrarão com toda a certeza na absorção cognitiva de sua **memória muscular**. Ao gravá-los instintivamente, o ganho de controle será invisível mas perene – elevando o ápice da sua experiência vivenciada de engenharia criativa baseada no seu percurso profissional (Developer Experience - DX).
 
 Por isso, faça com que seu percurso abra a rotina iniciando nas linhas descritas em `$PROFILE` ou em `~/.bashrc`. Modele essas experiências baseadas na fluência operacional natural voltadas perfeitamente em concordância do toque com os movimentos precisos em suas mãos para otimização suprema nas sessões contínuas ao seu modelo mais focado no dia de trabalho.
+

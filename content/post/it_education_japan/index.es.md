@@ -1,7 +1,7 @@
 ---
 title: 'Estado Actual y Desafíos de la Educación de TI en Japón: Las Consecuencias de la Programación Obligatoria'
 slug: "japan-it-education-aftermath"
-date: "2026-09-15T15:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -256,3 +256,4 @@ Cómo lucharemos a través de la fase más importante y difícil del "después" 
 ---
 
 *En este artículo describimos en términos generales la teoría de la complejidad computacional y los límites de infraestructura de la Iniciativa GIGA School. En futuras publicaciones de esta serie cubriremos temas aún más especializados en ciencias de la computación (como detalles sobre algoritmos de sistemas distribuidos y métodos de gestión de memoria de bajo nivel).*
+

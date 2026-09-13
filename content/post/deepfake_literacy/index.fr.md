@@ -1,7 +1,7 @@
 ---
 title: 'Deepfakes et littératie de l''information : Comment détecter techniquement les fake news'
 slug: 'deepfake-info-literacy'
-date: '2026-09-15T14:00:00+09:00'
+$12026-09-12T12:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -262,3 +262,4 @@ L'évolution de la technologie de l'IA a ouvert la boîte de Pandore. Il est dé
 Cependant, comme expliqué dans cet article, les ingénieurs affrontent la menace des fake news avec diverses approches telles que l'analyse fréquentielle, la détection des signaux biométriques et la preuve de provenance utilisant la cryptographie (C2PA). En combinant ces boucliers techniques (mesures défensives) avec le bouclier social qu'est la "littératie de l'information" de chacun d'entre nous, nous devrions être capables de naviguer sur la vague de fiction apportée par l'IA et de préserver la valeur de la vérité.
 
 C'est précisément parce que nous vivons à une époque où la frontière entre réalité et fiction s'estompe que la "volonté" humaine de discerner la vérité est plus importante que jamais.
+

@@ -1,7 +1,7 @@
 ---
 title: 'Mencegah Kehabisan Ide Artikel Teknologi! Metode Input dan Penciptaan Ide yang Efisien'
 slug: "tech-blog-idea-generation-and-input-strategy"
-date: "2026-09-14T16:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -382,3 +382,4 @@ Seperti yang diperkenalkan pada artikel ini,
 Dengan membangun pipeline komprehensif yang memadukan semuanya, alih-alih mengering, ide blog Anda akan terus bereproduksi dan bertambah banyak seiring dengan makin seringnya Anda menulis.
 
 Anda tidak perlu membangun segalanya dengan sempurna sejak awal. Sebagai permulaan, cobalah membuat skrip sederhana yang mengakses API Hacker News, dan biasakan untuk mencatat artikel yang menarik perhatian Anda dalam format markdown. Saya berharap blog teknologi Anda akan menjadi sumber ide-ide cemerlang bagi generasi mendatang.
+

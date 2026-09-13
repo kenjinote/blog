@@ -1,7 +1,7 @@
 ---
 title: 'Estrategias de SEO para blogs de Hugo: Configuración del Frontmatter para aumentar drásticamente el tráfico'
 slug: "hugo-blog-seo-frontmatter-tips"
-date: "2026-09-14T09:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -333,3 +333,4 @@ Al implementar completamente los siguientes puntos explicados en este artículo,
 4. **Gestión avanzada de tráfico**: Control de robots con metaetiquetas y redirecciones usando Aliases.
 
 Aunque los algoritmos de los motores de búsqueda evolucionan diariamente, el principio fundamental del SEO de proporcionar señales para que los motores de búsqueda "comprendan correctamente el contenido de la página" permanece inalterable. Al dominar el flexible motor de plantillas y el frontmatter de Hugo, continúa enviando esas señales con la más alta calidad y aumenta drásticamente el tráfico de tu blog.
+

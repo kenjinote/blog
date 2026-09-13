@@ -2,7 +2,7 @@
 title: "生成式AI的进化带来的'新数字鸿沟'日益严重"
 description: "深入探讨AI技术的快速发展如何使得新的数字鸿沟从硬件和互联网访问权限转移到了'提示词与编排能力'。"
 slug: "generative-ai-digital-divide"
-date: "2026-09-15T11:00:00+09:00"
+$12026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -163,3 +163,4 @@ flowchart TD
 
 ---
 *关于本文的意见，或AI编排的具体导入案例，欢迎在评论区或作者的SNS留言分享。*
+

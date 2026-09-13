@@ -371,3 +371,4 @@ Dans cet article, nous avons expliqué en détail le flux d'octroi de code d'aut
 4. La conception des portées (scopes) basée sur le **principe du moindre privilège** et le cryptage lors de la sauvegarde dans la base de données sont des éléments absolument indispensables pour l'exploitation.
 
 OAuth 2.0 est très profond et la RFC à elle seule a des spécifications massives, mais en apprenant de manière pratique en ciblant une plateforme réelle (Slack) de cette façon, vous devriez être en mesure de ressentir sa philosophie de conception raffinée et ses mécanismes de sécurité robustes. Nous espérons que les connaissances de cet article vous seront utiles dans le développement de vos futures applications et l'implémentation de vos intégrations d'API.
+
