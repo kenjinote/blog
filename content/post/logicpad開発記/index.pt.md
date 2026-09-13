@@ -219,16 +219,16 @@ O processo de envio para a Microsoft Store se dá através do Partner Center (Ce
 
 ```mermaid
 flowchart TD
-    A["Desenvolvedor (Visual Studio)"] -->|Construir e Assinar| B["Geração do Pacote MSIX"]
+    A["Desenvolvedor (Visual Studio)"] -->|"Construir e Assinar"| B["Geração do Pacote MSIX"]
     B --> C["Kit de Certificação de Aplicativos do Windows (WACK)"]
-    C -->|Aprovado| D["Painel do Partner Center"]
-    C -->|Falha| E["Corrigir Problemas de Código / Manifesto"]
+    C -->|"Aprovado"| D["Painel do Partner Center"]
+    C -->|"Falha"| E["Corrigir Problemas de Código / Manifesto"]
     E --> A
-    D -->|Enviar Pacote| F["Processo de Certificação da Loja"]
+    D -->|"Enviar Pacote"| F["Processo de Certificação da Loja"]
     F --> G["Verificação Automática de Malware"]
     G --> H["Revisão Manual de Conteúdo"]
-    H -->|Aprovado| I["Publicação na Microsoft Store"]
-    H -->|Rejeitado| J["Resolver Feedback e Reenviar"]
+    H -->|"Aprovado"| I["Publicação na Microsoft Store"]
+    H -->|"Rejeitado"| J["Resolver Feedback e Reenviar"]
     J --> D
     I --> K["Aplicativo Está no Ar!"]
 ```
@@ -303,4 +303,5 @@ Ao olhar para trás na jornada desde o desenvolvimento do LogicPad até seu lan�
 O WinUI 3 e o Windows App SDK continuam sendo desenvolvidos ativamente e são as melhores ferramentas para a construção de aplicativos lindos que aproveitam ao máximo o paradigma da interface do usuário do Windows 11. Eu sinceramente espero que este artigo de blog sirva como um guia para desenvolvedores que estejam prestes a embarcar na criação de aplicativos nativos do Windows e que veremos cada vez mais aplicativos excepcionais ocupando as prateleiras da loja digital.
 
 O desenvolvimento ainda não acabou. Para a próxima versão do LogicPad, planejo integrar um mecanismo de renderização de forma de onda proprietário usando Direct2D. No próximo artigo, exploraremos profundamente a interoperabilidade do DirectX e WinUI 3 (utilizando o SwapChainPanel). Fique ligado!
+
 

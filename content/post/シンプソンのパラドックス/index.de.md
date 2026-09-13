@@ -93,8 +93,8 @@ graph TD
         Total["Gesamtsumme: Erdrutschsieg für A (90% > 41%)"]
     end
     
-    Light -->|Aus irgendeinem Grund bei der Zusammenrechnung umgekehrt| Total
-    Heavy -->|Aus irgendeinem Grund bei der Zusammenrechnung umgekehrt| Total
+    Light -->|"Aus irgendeinem Grund bei der Zusammenrechnung umgekehrt"| Total
+    Heavy -->|"Aus irgendeinem Grund bei der Zusammenrechnung umgekehrt"| Total
     
     style Total fill:#ff9999,stroke:#333,stroke-width:2px
 ```
@@ -149,3 +149,4 @@ Die Welt ist voll von Unternehmen, Politikern und Medien, die nur die „Gesamtz
 Selbst wenn man Ihnen sagt: „Unser Produkt A hat eine höhere Gesamtzufriedenheit als Produkt B der Konkurrenz!“, könnte es sein, dass, wenn man es in „junge Leute“ und „ältere Leute“ aufteilt, das Konkurrenzprodukt B in beiden Gruppen gewinnt.
 
 Wenn Sie sich Daten ansehen, sollten Sie sich nicht von den oberflächlichen „Gesamt“-Zahlen täuschen lassen. Einen kritischen Blick dafür zu haben und zu hinterfragen: „Gibt es eine extreme Verzerrung in den Proportionen der Gruppen aufgrund von verborgenen Variablen (Alter, Geschlecht, Schweregrad usw.) im Hintergrund?“, ist die stärkste Waffe, um in der heutigen Informationsgesellschaft zu überleben.
+

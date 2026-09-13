@@ -260,13 +260,13 @@ Uma arquitetura na qual o lado C++ usa `RegOpenKeyEx` e `RegQueryValueEx` para o
 
 ```mermaid
 flowchart TD
-    A["Serviço Agente C++"] -->|RegQueryValueEx| B["Registro do Windows"]
-    B -->|Retornar Caminho do Script| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|Executar| D["Script de Admin (ex., Restart-Service)"]
-    D -->|stdout via Pipe| C
-    C -->|ReadFile| A
-    A -->|Registrar Log| E["Visualizador de Eventos / Arquivo de Log"]
+    A["Serviço Agente C++"] -->|"RegQueryValueEx"| B["Registro do Windows"]
+    B -->|"Retornar Caminho do Script"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"Executar"| D["Script de Admin (ex., Restart-Service)"]
+    D -->|"stdout via Pipe"| C
+    C -->|"ReadFile"| A
+    A -->|"Registrar Log"| E["Visualizador de Eventos / Arquivo de Log"]
 ```
 
 ## Análise de Desempenho e as Vantagens do Offloading
@@ -316,3 +316,4 @@ Apesar da importância e cautela que o gerenciamento de memória e conversão de
 ---
 
 *Neste blog de tecnologia, vamos continuar cobrindo tópicos profundos em relação às estruturas internas do Windows e automações avançadas. Se houver alguma pergunta ou feedback, fique à vontade para escrever na sessão de comentários.*
+

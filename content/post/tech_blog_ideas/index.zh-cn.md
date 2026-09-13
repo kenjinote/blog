@@ -326,18 +326,18 @@ $$ R = e^{-\frac{t}{S}} $$
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Python提取脚本| B["未加工的趋势数据"]
-    C["GitHub Actions (Cron)"] -->|定时执行调度| A
-    B -->|Markdown格式转换| D["Daily Inputs (Fleeting Notes / 闪念笔记)"]
-    D -->|手动阅读与总结| E["Obsidian Zettelkasten / 卡片盒笔记法"]
-    E -->|永久笔记化| F["Permanent Notes / 永久笔记"]
-    F -->|自动同步处理| G["OpenAI Embeddings API"]
-    G -->|向量转换| H["Pinecone Vector Database / 向量数据库"]
-    H -->|语义搜索| I["相关知识的发现与提取"]
-    F -->|抽认卡制作| J["Anki (Spaced Repetition / 间隔重复)"]
-    J -->|来自长期记忆的灵感| K["Combinatorial Creativity / 组合创造力"]
+    A["Hacker News / Lobsters API"] -->|"Python提取脚本"| B["未加工的趋势数据"]
+    C["GitHub Actions (Cron)"] -->|"定时执行调度"| A
+    B -->|"Markdown格式转换"| D["Daily Inputs (Fleeting Notes / 闪念笔记)"]
+    D -->|"手动阅读与总结"| E["Obsidian Zettelkasten / 卡片盒笔记法"]
+    E -->|"永久笔记化"| F["Permanent Notes / 永久笔记"]
+    F -->|"自动同步处理"| G["OpenAI Embeddings API"]
+    G -->|"向量转换"| H["Pinecone Vector Database / 向量数据库"]
+    H -->|"语义搜索"| I["相关知识的发现与提取"]
+    F -->|"抽认卡制作"| J["Anki (Spaced Repetition / 间隔重复)"]
+    J -->|"来自长期记忆的灵感"| K["Combinatorial Creativity / 组合创造力"]
     I --> K
-    K -->|大纲与结构设计| L["Blog Post Draft (文章初稿)"]
+    K -->|"大纲与结构设计"| L["Blog Post Draft (文章初稿)"]
 ```
 
 该系统的特点在于，**“必须手动进行的脑力劳动（总结、思考、写作）”与“应该交由机器处理的工作（收集、搜索、间隔重复的调度）”被完全分离开了**。得益于此，写作者可以专注于附加值最高的“思考”与“组合”。
@@ -382,5 +382,6 @@ stateDiagram-v2
 通过构建结合了上述元素的综合管道，不仅博客的灵感不会枯竭，而且会形成越写越能自我繁衍新灵感的状态。
 
 没必要一开始就完美地构建所有内容。不妨先从编写一个调用 Hacker News API 的简单脚本开始，养成用 Markdown 记录感兴趣文章的习惯。希望你的技术博客能够成为下一代卓越创意的信息源泉。
+
 
 

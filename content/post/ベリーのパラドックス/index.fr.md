@@ -83,7 +83,7 @@ Nous venons tout juste d'exprimer le nombre $X$ en utilisant la phrase **« 十�
 graph TD
     Define["Définition :<br>X = Le plus petit entier ne pouvant être exprimé en 19 caractères ou moins"] --> CheckLength{"Combien de caractères comporte la phrase<br>『十九文字以内で表せない最小の整数』 ?"}
     
-    CheckLength -->|Elle fait 16 caractères| Contradiction["Contradiction !<br>X a pu être exprimé en 『16 caractères』 !"]
+    CheckLength -->|"Elle fait 16 caractères"| Contradiction["Contradiction !<br>X a pu être exprimé en 『16 caractères』 !"]
     
     Contradiction --> Paradox["X 『ne peut pas être exprimé en 19 caractères ou moins』, mais pourtant<br>『il peut être exprimé en 19 caractères ou moins (16 caractères)』"]
     
@@ -135,3 +135,4 @@ Cependant, ce problème a été pour les mathématiciens du 20e siècle l'occasi
 Ce paradoxe a servi de jalon important, ouvrant la voie à des disciplines de pointe qui allaient changer l'histoire des mathématiques, comme le « Théorème d'incomplétude de Gödel (il existe en mathématiques des vérités qui ne peuvent absolument pas être prouvées) » et la « Complexité de Kolmogorov en informatique (une théorie sur la façon dont l'information peut être compressée) ».
 
 Le fait que seulement 16 caractères japonais aient pu exposer les limites des mathématiques : telle est la beauté du paradoxe de Berry.
+

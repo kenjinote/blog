@@ -191,19 +191,19 @@ graph TD
     E2["Servidor del hospital (Perímetro 2)"]
     E3["Coche inteligente (Perímetro 3)"]
     
-    C -->| 1. Enviar modelo global | E1
-    C -->| 1. Enviar modelo global | E2
-    C -->| 1. Enviar modelo global | E3
+    C -->|"1. Enviar modelo global"| E1
+    C -->|"1. Enviar modelo global"| E2
+    C -->|"1. Enviar modelo global"| E3
     
-    E1 -->| 2. Entrenamiento local con datos privados | E1
-    E2 -->| 2. Entrenamiento local con datos privados | E2
-    E3 -->| 2. Entrenamiento local con datos privados | E3
+    E1 -->|"2. Entrenamiento local con datos privados"| E1
+    E2 -->|"2. Entrenamiento local con datos privados"| E2
+    E3 -->|"2. Entrenamiento local con datos privados"| E3
     
-    E1 -->| 3. Enviar sólo las actualizaciones de los pesos | C
-    E2 -->| 3. Enviar sólo las actualizaciones de los pesos | C
-    E3 -->| 3. Enviar sólo las actualizaciones de los pesos | C
+    E1 -->|"3. Enviar sólo las actualizaciones de los pesos"| C
+    E2 -->|"3. Enviar sólo las actualizaciones de los pesos"| C
+    E3 -->|"3. Enviar sólo las actualizaciones de los pesos"| C
     
-    C -->| 4. Agregar pesos (FedAvg) | C
+    C -->|"4. Agregar pesos (FedAvg)"| C
 ```
 
 **Proceso de Aprendizaje Federado**:
@@ -264,5 +264,6 @@ A medida que el mundo físico y el mundo digital convergen a la vanguardia del I
 
 ---
 *Este artículo ha sido creado para ingenieros y arquitectos de sistemas interesados en la implementación de IA en dispositivos IoT.*
+
 
 

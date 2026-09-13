@@ -164,12 +164,12 @@ L'organigramme Mermaid suivant montre la structure idéale de routage des signau
 
 ```mermaid
 flowchart TD
-    A["Système PC / Mac"] -->|Câble Thunderbolt 4 40Gbps| B["Dock Thunderbolt 4"]
-    B -->|DisplayPort 1.4| C["Moniteur Principal (4K 60Hz)"]
-    B -->|Thunderbolt Downstream| D["Moniteur Secondaire (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["Stockage Haute Vitesse / Périphériques"]
+    A["Système PC / Mac"] -->|"Câble Thunderbolt 4 40Gbps"| B["Dock Thunderbolt 4"]
+    B -->|"DisplayPort 1.4"| C["Moniteur Principal (4K 60Hz)"]
+    B -->|"Thunderbolt Downstream"| D["Moniteur Secondaire (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["Stockage Haute Vitesse / Périphériques"]
     
-    C -.->|MST (Windows Uniquement)| F["Moniteur Tertiaire (1080p)"]
+    C -.->|"MST (Windows Uniquement)"| F["Moniteur Tertiaire (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ Lorsqu'il s'agit de mettre en place un environnement multi-écrans, il n'existe 
 flowchart TD
     Start["Début de la configuration de l'environnement de développement"] --> Q1{"Quel est le système d'exploitation principal ?"}
     
-    Q1 -->|macOS| Mac["Environnement macOS"]
-    Q1 -->|Windows / Linux| Win["Environnement Windows / Linux"]
+    Q1 -->|"macOS"| Mac["Environnement macOS"]
+    Q1 -->|"Windows / Linux"| Win["Environnement Windows / Linux"]
     
     Mac --> Q2{"Avez-vous suffisamment de budget et de performances GPU ?"}
-    Q2 -->|Oui| M_5K["Moniteur 5K 27 pouces × 2 (Qualité maximale)"]
-    Q2 -->|Non| M_4K["Moniteur 4K 24 pouces × 2 ou Ultra-large (Ultrawide)"]
+    Q2 -->|"Oui"| M_5K["Moniteur 5K 27 pouces × 2 (Qualité maximale)"]
+    Q2 -->|"Non"| M_4K["Moniteur 4K 24 pouces × 2 ou Ultra-large (Ultrawide)"]
     
     Win --> Q3{"Êtes-vous gêné par la séparation d'écran (cadre/bezel) ?"}
-    Q3 -->|Oui| W_UW["Moniteur Ultra-large 49 pouces + FancyZones"]
-    Q3 -->|Non| W_Dual["4K 27 pouces × 2 (Meilleur rapport qualité/prix)"]
+    Q3 -->|"Oui"| W_UW["Moniteur Ultra-large 49 pouces + FancyZones"]
+    Q3 -->|"Non"| W_Dual["4K 27 pouces × 2 (Meilleur rapport qualité/prix)"]
     
     M_5K --> End["Installez des bras ergonomiques et c'est terminé"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 Un écran est une infrastructure qui soutiendra votre productivité pendant de nombreuses années après son achat. Intégrez les principes de l'ergonomie visuelle, les mathématiques du PPI, les limites de la bande passante et la gestion logicielle des fenêtres abordés dans cet article pour créer le meilleur espace de travail possible, sans compromis. Ce sera la voie la plus rapide vers la production du meilleur code.
+
 
 
 

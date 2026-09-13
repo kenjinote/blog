@@ -30,7 +30,7 @@ Los procesos de desarrollo modernos parten de la premisa de ser **nativos de la 
 
 ```mermaid
 graph TD
-    A["Modelo de desarrollo SIer heredado"] -->|Cambio de paradigma| B["Período de transición (Adopción ágil / Lift & Shift)"]
+    A["Modelo de desarrollo SIer heredado"] -->|"Cambio de paradigma"| B["Período de transición (Adopción ágil / Lift & Shift)"]
     B --> C["Nativo de la nube (Microservicios / Contenedores)"]
     C --> D["Arquitectura basada en datos e IA (MLOps)"]
     D --> E["Plataforma de integración de IA generativa (Agentes de IA autónomos)"]
@@ -157,10 +157,10 @@ En el desarrollo de sistemas a gran escala, al fin y al cabo, la "construcción 
 
 ```mermaid
 graph LR
-    A["Mero codificador"] -->|Sustitución por IA| B["Disminución de la demanda"]
-    A -->|Cambio estratégico| C["Arquitecto de sistemas"]
-    A -->|Cambio estratégico| D["Experto de dominio"]
-    A -->|Cambio estratégico| E["Integrador de IA"]
+    A["Mero codificador"] -->|"Sustitución por IA"| B["Disminución de la demanda"]
+    A -->|"Cambio estratégico"| C["Arquitecto de sistemas"]
+    A -->|"Cambio estratégico"| D["Experto de dominio"]
+    A -->|"Cambio estratégico"| E["Integrador de IA"]
     
     C --> F["Alta demanda / Alto valor (Ganadores de 2026 en adelante)"]
     D --> F
@@ -182,6 +182,7 @@ La IA no está quitándonos nuestros trabajos; es meramente una herramienta que 
 
 Ahora es el momento de revisar tu trayectoria profesional y dirigir el rumbo hacia el próximo paradigma. 
 ¿Estás listo para "modernizarte" a ti mismo?
+
 
 
 

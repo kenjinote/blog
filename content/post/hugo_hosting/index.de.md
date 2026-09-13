@@ -37,9 +37,9 @@ Alle diese Plattformen nutzen ein global verteiltes CDN (Content Delivery Networ
 
 ```mermaid
 graph TD
-    A["Benutzer (Tokio)"] -->|Niedrige Latenz| B["Edge-Knoten (NRT)"]
-    C["Benutzer (New York)"] -->|Niedrige Latenz| D["Edge-Knoten (EWR)"]
-    E["Benutzer (London)"] -->|Niedrige Latenz| F["Edge-Knoten (LHR)"]
+    A["Benutzer (Tokio)"] -->|"Niedrige Latenz"| B["Edge-Knoten (NRT)"]
+    C["Benutzer (New York)"] -->|"Niedrige Latenz"| D["Edge-Knoten (EWR)"]
+    E["Benutzer (London)"] -->|"Niedrige Latenz"| F["Edge-Knoten (LHR)"]
     B --> G["Ursprungsspeicher / Objektspeicher"]
     D --> G
     F --> G
@@ -261,6 +261,7 @@ Beim Betrieb von statischen Websites mit Hugo bietet der Einsatz moderner Hostin
 5. **Ressourcenschonende Analysen**: Führen Sie Tools wie Cloudflare Web Analytics ein, die die Privatsphäre respektieren und gleichzeitig die Performance nicht beeinträchtigen.
 
 Durch die Kombination dieser Elemente kann kostenlos ein skalierbares und robustes Blog-System aufgebaut werden, das massivem Traffic im Bereich von mehreren Millionen Seitenaufrufen pro Monat standhält. Wenn Sie die Erstellung eines Technik-Blogs, einer Unternehmenswebsite oder einer Portfolio-Website in Betracht ziehen, sollten Sie diese Architektur aus Jamstack + Hugo + Cloudflare Pages unbedingt ausprobieren.
+
 
 
 

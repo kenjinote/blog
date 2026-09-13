@@ -242,15 +242,15 @@ We will build an architecture that fully automates everything from building, dep
 ```mermaid
 flowchart TD
     A["Developer (Git Push)"] --> B["GitHub Repository"]
-    B -->|Webhook| C["GitHub Actions (CI/CD)"]
-    C -->|Build| D["Static Site Generator (Hugo/Gatsby)"]
-    D -->|Deploy| E["Hosting (Vercel / Cloudflare Pages)"]
-    D -->|Generate| F["RSS Feed (index.xml)"]
-    F -->|Polled by| G["Zapier / IFTTT / Make"]
-    G -->|API Call| H["X (Twitter) Auto Post"]
-    G -->|API Call| I["LinkedIn Article Post"]
-    G -->|API Call| J["Discord / Slack Community Webhook"]
-    C -->|Actions Script| K["Qiita / Zenn Cross-Post API"]
+    B -->|"Webhook"| C["GitHub Actions (CI/CD)"]
+    C -->|"Build"| D["Static Site Generator (Hugo/Gatsby)"]
+    D -->|"Deploy"| E["Hosting (Vercel / Cloudflare Pages)"]
+    D -->|"Generate"| F["RSS Feed (index.xml)"]
+    F -->|"Polled by"| G["Zapier / IFTTT / Make"]
+    G -->|"API Call"| H["X (Twitter) Auto Post"]
+    G -->|"API Call"| I["LinkedIn Article Post"]
+    G -->|"API Call"| J["Discord / Slack Community Webhook"]
+    C -->|"Actions Script"| K["Qiita / Zenn Cross-Post API"]
 ```
 
 ### 5.2 Key Points for Building an Automation Pipeline
@@ -278,6 +278,7 @@ To dramatically increase monthly traffic on a tech blog, the engineering approac
 5. Complete automation of distribution through CI/CD and Zapier integration
 
 If you can assemble these as a system, your tech blog will become the strongest asset to powerfully boost your own career. Engineers struggling with stagnant traffic should definitely start "blog growth hacking" today. The programming skills and architecture design abilities cultivated in development work will undoubtedly be your greatest weapons in blog management as well.
+
 
 
 

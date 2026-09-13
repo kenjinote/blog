@@ -172,10 +172,10 @@ Im Folgenden ist der Ablauf einer typischen Migrations-Pipeline dargestellt.
 
 ```mermaid
 flowchart LR
-  WPDB["WP-Datenbank"] -->|Plugin| Exporter["Export-Tool"]
-  Exporter -->| Extrahiert Text, \nMetadaten, Bilder | ZipFile["Zip / Ordner"]
-  ZipFile -->|Entpacken| MarkdownFiles["Markdown-Dateien \n(content/)"]
-  ZipFile -->|Entpacken| ImageFiles["Bilder \n(static/wp-content/)"]
+  WPDB["WP-Datenbank"] -->|"Plugin"| Exporter["Export-Tool"]
+  Exporter -->|"Extrahiert Text, \nMetadaten, Bilder"| ZipFile["Zip / Ordner"]
+  ZipFile -->|"Entpacken"| MarkdownFiles["Markdown-Dateien \n(content/)"]
+  ZipFile -->|"Entpacken"| ImageFiles["Bilder \n(static/wp-content/)"]
   MarkdownFiles --> Formatting["Überprüfen & Formatieren \n(Shortcodes reparieren)"]
   Formatting --> Git["An Git übergeben"]
 ```
@@ -320,4 +320,5 @@ In diesem Artikel haben wir die Migration von einem dynamischen CMS wie WordPres
 Der Umstieg auf einen Static Site Generator erfordert zunächst eine gewisse Lernkurve (Git-Operationen, Markdown-Syntax, Ausführen von CLI-Befehlen über das Terminal, Verständnis der Spezifikationen der Template-Engine usw.), bringt aber im Gegenzug "überwältigende Anzeigegeschwindigkeit", "robuste Sicherheit" und "wartungsfreien" Betrieb, was diese Mühe mehr als aufwiegt.
 
 Wenn Ihre Website keine häufigen Designänderungen oder komplexe dynamische Verarbeitung (wie Funktionen nur für Mitglieder oder erweiterte E-Commerce-Funktionen) erfordert und der Hauptzweck die Informationsverbreitung ist (Blogs, Medien, Unternehmenswebsites), dann ist die Migration zu Hugo eine der effektivsten technischen Investitionen. Wir hoffen, dass Sie diesen Artikel als Referenz nutzen, um den ersten Schritt in Richtung der nächsten Generation des Website-Managements mit Hugo zu machen.
+
 

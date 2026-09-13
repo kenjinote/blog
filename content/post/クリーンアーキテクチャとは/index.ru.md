@@ -109,9 +109,9 @@ graph TD
 
 ```mermaid
 graph LR
-    A["Фреймворки и Драйверы"] -->| Зависит | B["Адаптеры интерфейсов"]
-    B -->| Зависит | C["Варианты использования"]
-    C -->| Зависит | D["Сущности"]
+    A["Фреймворки и Драйверы"] -->|"Зависит"| B["Адаптеры интерфейсов"]
+    B -->|"Зависит"| C["Варианты использования"]
+    C -->|"Зависит"| D["Сущности"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,4 +422,5 @@ test('Возвращает ошибку при попытке регистрац
 
 ---
 *Источник: "Clean Architecture: A Craftsman's Guide to Software Structure and Design", Robert C. Martin*
+
 

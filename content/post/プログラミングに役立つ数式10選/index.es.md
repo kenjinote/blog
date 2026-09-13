@@ -520,8 +520,8 @@ Históricamente, desempeñó un papel muy importante como "función de activaci�
 
 ```mermaid
 graph LR
-  X1["Entrada x1"] -->|Peso w1| Sum["Suma: Σ(wi*xi) + b"]
-  X2["Entrada x2"] -->|Peso w2| Sum
+  X1["Entrada x1"] -->|"Peso w1"| Sum["Suma: Σ(wi*xi) + b"]
+  X2["Entrada x2"] -->|"Peso w2"| Sum
   Sum --> Act["Función Sigmoide: σ(x)"]
   Act --> Out["Probabilidad de Salida (0 a 1)"]
 ```
@@ -624,4 +624,5 @@ Si se calcula de acuerdo con la fórmula matemática exacta, es necesario tomar 
 Comprender los fundamentos matemáticos no es para quedarse siendo solo un codificador que simplemente llama a bibliotecas existentes (como `math.sin` o `numpy.fft`), sino que es indispensable para dar el salto a convertirse en un ingeniero capaz de comprender la estructura interna y superar sus límites. La próxima vez que escribas código, trata de imaginar por un momento qué hermosa fórmula matemática está funcionando silenciosamente por detrás.
 
 **Happy Coding and Math!**
+
 

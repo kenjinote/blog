@@ -233,14 +233,14 @@ rules:
 
 ```mermaid
 flowchart TD
-    A["作者"] -->|推送更改| B["GitHub 仓库"]
+    A["作者"] -->|"推送更改"| B["GitHub 仓库"]
     B --> C{"触发 GitHub Actions"}
     C --> D["检出仓库"]
     D --> E["设置 Node.js"]
     E --> F["npm install"]
     F --> G["运行 textlint"]
-    G -->|通过| H["构建 Hugo 网站"]
-    G -->|失败| I["向 PR/Commit 报告错误"]
+    G -->|"通过"| H["构建 Hugo 网站"]
+    G -->|"失败"| I["向 PR/Commit 报告错误"]
     H --> J["部署到托管平台 (Vercel/Netlify)"]
 ```
 
@@ -269,6 +269,7 @@ flowchart TD
 5. **整合 LLM**：直接在编辑器中让 AI 输出 Markdown 的结构和图表代码。
 
 将这些设置引入到自己的环境中，就能消除写作的“麻烦感”，极大提高技术输出的数量与质量。不妨从注册一个小小的代码片段开始尝试一下吧。
+
 
 
 

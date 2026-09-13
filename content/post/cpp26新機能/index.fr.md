@@ -91,9 +91,9 @@ Vous n'aurez plus affaire à l'épuisement de la mémoire du compilateur dû à 
 
 ```mermaid
 graph TD
-    A["Type: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["Plage de meta::info"]
-    C -->| [: member :] | D["Accès direct aux membres (obj.id, obj.name)"]
+    A["Type: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["Plage de meta::info"]
+    C -->|"[: member :]"| D["Accès direct aux membres (obj.id, obj.name)"]
     D --> E["Code généré (Zéro surcoût)"]
 ```
 
@@ -290,9 +290,9 @@ La proposition de standardisation (P2300) visant à reconstruire de fond en comb
 
 ```mermaid
 graph LR
-    S["Sender (Description de la tâche)"] -->|connect| O["État de l'opération"]
-    O -->|start| E["Exécution (ThreadPool, GPU, etc.)"]
-    E -->|set_value / set_error / set_stopped| R["Receiver (Rappel)"]
+    S["Sender (Description de la tâche)"] -->|"connect"| O["État de l'opération"]
+    O -->|"start"| E["Exécution (ThreadPool, GPU, etc.)"]
+    E -->|"set_value / set_error / set_stopped"| R["Receiver (Rappel)"]
 ```
 
 Les Senders sont des plans de conception légers qui décrivent "ce qui doit être fait", et ils sont séparés du contexte d'exécution (Scheduler). Cela permet de décrire efficacement la décharge de tâches (offload) vers un pool de threads CPU ou vers un GPU à l'aide d'une interface unifiée.
@@ -361,5 +361,6 @@ En utilisant ces fonctionnalités de manière appropriée, il devient possible d
 
 ---
 *Cet article a été rédigé en fonction de l'état de la standardisation de C++26 en 2026. Veuillez noter que certaines syntaxes peuvent changer en fonction de l'état d'implémentation des différents compilateurs.*
+
 
 

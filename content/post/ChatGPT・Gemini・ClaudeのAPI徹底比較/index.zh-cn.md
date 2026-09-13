@@ -57,7 +57,7 @@ Anthropic是由前OpenAI成员创立的企业，采用了独特的“Constitutio
 
 ```mermaid
 graph TD
-    A["客户端应用程序"] -->|HTTP/REST 或 gRPC| B["API网关"]
+    A["客户端应用程序"] -->|"HTTP/REST 或 gRPC"| B["API网关"]
     B --> C["负载均衡器"]
     C --> D["推理集群"]
     D --> E["分词器 (BPE / SentencePiece)"]
@@ -66,7 +66,7 @@ graph TD
     G --> H["输出层 (Logits)"]
     H --> I["采样器 (Temperature, Top-p, Top-k)"]
     I --> J["反分词器"]
-    J -->|流式响应 (Chunk)| A
+    J -->|"流式响应 (Chunk)"| A
 ```
 
 ### 3.1 Tokenization（分词）的算法
@@ -344,3 +344,4 @@ sequenceDiagram
 例如，面对用户的简单提问，可以用便宜且高速的 `GPT-4o-mini` 或 `Gemini 1.5 Flash` 来回答；只有当系统判断需要进行复杂处理时，才将任务回退给 `Claude 3.5 Sonnet`。如此一来，便能在成本与性能之间取得最佳平衡。
 
 AI的进化永不停息。请深入了解各API的优劣势和架构特性，从而构建出灵活且可扩展的AI应用程序。
+

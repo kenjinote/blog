@@ -233,14 +233,14 @@ Darüber hinaus verwenden wir GitHub Actions, um eine CI-Pipeline aufzubauen, be
 
 ```mermaid
 flowchart TD
-    A["Autor"] -->|Änderungen pushen| B["GitHub-Repository"]
+    A["Autor"] -->|"Änderungen pushen"| B["GitHub-Repository"]
     B --> C{"GitHub Actions ausgelöst"}
     C --> D["Repository auschecken"]
     D --> E["Node.js einrichten"]
     E --> F["npm install"]
     F --> G["textlint ausführen"]
-    G -->|Bestanden| H["Hugo-Website erstellen"]
-    G -->|Fehlgeschlagen| I["Fehler an PR/Commit melden"]
+    G -->|"Bestanden"| H["Hugo-Website erstellen"]
+    G -->|"Fehlgeschlagen"| I["Fehler an PR/Commit melden"]
     H --> J["Auf Hosting bereitstellen (Vercel/Netlify)"]
 ```
 
@@ -269,6 +269,7 @@ Wir haben die Editor-Einstellungen erläutert, die die Schreibgeschwindigkeit be
 5. **Integration von LLMs**: Die KI direkt im Editor Markdown-Strukturen und Diagramm-Codes ausgeben lassen.
 
 Indem Sie diese Einstellungen in Ihre eigene Umgebung übernehmen, verschwindet die "Lästigkeit" des Schreibens, und die Quantität und Qualität Ihres technischen Outputs wird sich drastisch verbessern. Warum fangen Sie nicht gleich mit der Registrierung eines einzigen kleinen Snippets an?
+
 
 
 

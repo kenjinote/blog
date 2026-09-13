@@ -56,11 +56,11 @@ graph TD
     A["Gesamtbevölkerung (1.000.000 Personen)"] --> B["Kranke Personen (100 Personen)"]
     A --> C["Gesunde Personen (999.900 Personen)"]
     
-    B -->|99% richtig| B1["Richtig positiv (99 Personen)"]
-    B -->|1% falsch| B2["Falsch negativ (1 Person)"]
+    B -->|"99% richtig"| B1["Richtig positiv (99 Personen)"]
+    B -->|"1% falsch"| B2["Falsch negativ (1 Person)"]
     
-    C -->|99% richtig| C1["Richtig negativ (989.901 Personen)"]
-    C -->|1% falsch| C2["Falsch positiv (9.999 Personen)"]
+    C -->|"99% richtig"| C1["Richtig negativ (989.901 Personen)"]
+    C -->|"1% falsch"| C2["Falsch positiv (9.999 Personen)"]
     
     B1 -.-> D{"Gesamtzahl der 'positiv' getesteten Personen: 10.098"}
     C2 -.-> D
@@ -103,3 +103,4 @@ Diese Illusion führt nicht nur in der Medizin, sondern auch in vielen anderen S
   Auch wenn man in den Nachrichten hört: „〇〇% der Autos, die einen Unfall verursacht haben, wurden von älteren Menschen gefahren“, und man dies als gefährlich empfindet, kann man nicht wissen, ob eine bestimmte Altersgruppe wirklich anfälliger für Unfälle ist, ohne „den Anteil der älteren Menschen an allen Fahrern auf der Straße überhaupt (Basisrate)“ zu berücksichtigen.
 
 Der „Basisratenfehler“ lehrt uns die Wichtigkeit des statistischen Denkens: Gerade wenn wir schockierende Zahlen oder Einzelfälle sehen, müssen wir uns fragen, **„wie wahrscheinlich es überhaupt ist, dass dies im Gesamtzusammenhang passiert (Basisrate)“**.
+

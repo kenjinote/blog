@@ -39,8 +39,8 @@ $$ O((\log N)^3) $$
 ```mermaid
 graph TD
     A["입력 크기(비트 수) N의 증가"] --> B{"알고리즘의 선택"}
-    B -->|고전: 일반 수체 체| C["준지수 함수적 증가 O(exp(...))"]
-    B -->|양자: 쇼어의 알고리즘| D["다항식 시간 O((log N)^3)"]
+    B -->|"고전: 일반 수체 체"| C["준지수 함수적 증가 O(exp(...))"]
+    B -->|"양자: 쇼어의 알고리즘"| D["다항식 시간 O((log N)^3)"]
     C --> E["수천 년~수십억 년 (해독 불가능)"]
     D --> F["수 분~수 시간 (현실적인 시간 내 해독)"]
 ```
@@ -358,5 +358,6 @@ IT 인프라를 관리하는 엔지니어에게 있어, 기존의 RSA나 타원�
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

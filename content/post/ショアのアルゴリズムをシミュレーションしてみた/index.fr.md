@@ -39,8 +39,8 @@ Cela signifie que si l'on double le nombre de bits, le temps de calcul augmente 
 ```mermaid
 graph TD
     A["Augmentation de la taille de l'entrée N (nombre de bits)"] --> B{"Choix de l'algorithme"}
-    B -->|Classique : Crible général du corps de nombres| C["Augmentation sous-exponentielle O(exp(...))"]
-    B -->|Quantique : Algorithme de Shor| D["Temps polynomial O((log N)^3)"]
+    B -->|"Classique : Crible général du corps de nombres"| C["Augmentation sous-exponentielle O(exp(...))"]
+    B -->|"Quantique : Algorithme de Shor"| D["Temps polynomial O((log N)^3)"]
     C --> E["Milliers à milliards d'années (Indéchiffrable)"]
     D --> F["Quelques minutes à quelques heures (Déchiffrable en un temps réaliste)"]
 ```
@@ -358,5 +358,6 @@ N'hésitez pas à exécuter le code Python présenté dans cet article sur votre
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Documentation Qiskit : https://qiskit.org/documentation/
+
 
 

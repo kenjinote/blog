@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["सैंपलर (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["आउटपुट टोकन"]
     
-    OutputToken --> |"ऑटोरिग्रेसिव जनरेशन"| Tokenizer
+    OutputToken -->|"ऑटोरिग्रेसिव जनरेशन"| Tokenizer
     OutputToken --> Decoder["डिटोकेनाइज़र (Detokenizer)"]
     Decoder --> FinalOutput["अंतिम आउटपुट टेक्स्ट"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["यूज़र की क्वेरी (User Query)"] --> EmbedQuery["क्वेरी एम्बेडिंग (Query Embedding)"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"समानता खोज (Similarity Search)"| RetrievedDocs["संबंधित डॉक्यूमेंट्स निकालना"]
+    VectorDB -->|"समानता खोज (Similarity Search)"| RetrievedDocs["संबंधित डॉक्यूमेंट्स निकालना"]
     
     UserQuery --> PromptBuilder["प्रॉम्प्ट निर्माण (Prompt Builder)"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ Unsloth ने CUDA कर्नेल को चरम सीमा तक अ�
 5. अपना खुद का कस्टम AI बनाने के लिए **Unsloth (WSL2)** का उपयोग करें जिसमें विशेष ज्ञान हो।
 
 AI का "लोकतंत्रीकरण" अब सिर्फ एक चर्चा का शब्द (buzzword) नहीं है, बल्कि एक वास्तविक प्रणाली है जो आपके विंडोज़ डेस्कटॉप पर चलती है। क्लाउड API उपयोग की लागतों और सूचना रिसाव (information leakage) के जोखिमों से मुक्त होकर, अभी स्वतंत्र और शक्तिशाली प्राइवेट AI की दुनिया में कदम रखें।
+
+

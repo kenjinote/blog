@@ -242,15 +242,15 @@ $$ ROI = \frac{\sum_{t=1}^{T} \left( Rev_{ad}(t) + Val_{brand}(t) + Val_{skill}(
 ```mermaid
 flowchart TD
     A["المطور (Git Push)"] --> B["مستودع GitHub"]
-    B -->|Webhook| C["GitHub Actions (CI/CD)"]
-    C -->|Build| D["مولد المواقع الثابتة (Hugo/Gatsby)"]
-    D -->|Deploy| E["الاستضافة (Vercel / Cloudflare Pages)"]
-    D -->|Generate| F["موجز RSS (index.xml)"]
-    F -->|Polled by| G["Zapier / IFTTT / Make"]
-    G -->|API Call| H["نشر تلقائي على X (Twitter)"]
-    G -->|API Call| I["نشر مقال على LinkedIn"]
-    G -->|API Call| J["Webhook لمجتمع Discord / Slack"]
-    C -->|Actions Script| K["API النشر المتبادل عبر Qiita / Zenn"]
+    B -->|"Webhook"| C["GitHub Actions (CI/CD)"]
+    C -->|"Build"| D["مولد المواقع الثابتة (Hugo/Gatsby)"]
+    D -->|"Deploy"| E["الاستضافة (Vercel / Cloudflare Pages)"]
+    D -->|"Generate"| F["موجز RSS (index.xml)"]
+    F -->|"Polled by"| G["Zapier / IFTTT / Make"]
+    G -->|"API Call"| H["نشر تلقائي على X (Twitter)"]
+    G -->|"API Call"| I["نشر مقال على LinkedIn"]
+    G -->|"API Call"| J["Webhook لمجتمع Discord / Slack"]
+    C -->|"Actions Script"| K["API النشر المتبادل عبر Qiita / Zenn"]
 ```
 
 ### 5.2 النقاط الأساسية في بناء مسار الأتمتة
@@ -278,6 +278,7 @@ flowchart TD
 5. الأتمتة الكاملة للتوزيع باستخدام تكامل CI/CD و Zapier
 
 إذا تمكنت من تجميع هذه العناصر في نظام متكامل، فستصبح مدونتك التقنية أقوى أصل (Asset) يدعم مسيرتك المهنية بقوة. بالنسبة للمهندسين الذين يعانون من ركود في أعداد الزيارات، نرجو منكم البدء بـ "نمو المدونة (Growth Hack)" من اليوم. إن مهارات البرمجة وقدرات تصميم البنية التي اكتسبتها من أعمال التطوير ستكون بلا شك أقوى سلاح لك في إدارة المدونة.
+
 
 
 

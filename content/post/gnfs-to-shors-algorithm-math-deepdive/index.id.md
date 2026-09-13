@@ -173,9 +173,9 @@ Untuk memahami secara intuitif perbedaan antara GNFS dan Algoritma Shor, diagram
 graph TD
     A[Keadaan Awal: 0...0] --> B[Superposisi semua keadaan dengan Transformasi Hadamard]
     B --> C[Operasi Pangkat Modular a^x mod N]
-    C -->|Keterikatan Kuantum| D[Runtuh ke keadaan dengan periodisitas]
+    C -->|"Keterikatan Kuantum"| D[Runtuh ke keadaan dengan periodisitas]
     D --> E[Transformasi Fourier Kuantum QFT]
-    E -->|Amplifikasi probabilitas via interferensi| F[Pengukuran: Mendapatkan y]
+    E -->|"Amplifikasi probabilitas via interferensi"| F[Pengukuran: Mendapatkan y]
     F --> G[Pemrosesan Klasik: Ekspansi Pecahan Berlanjut]
     G --> H[Penemuan Periode r]
     H --> I[Menghitung Faktor Prima dari N]
@@ -198,3 +198,4 @@ Dalam artikel ini, kami telah membandingkan secara mendalam latar belakang matem
 Sementara GNFS menggunakan keahlian matematis seperti pemilihan polinomial dan komputasi matriks besar untuk menekan kompleksitas ke waktu sub-eksponensial, Algoritma Shor berhasil mencapai terobosan langsung ke waktu polinomial dengan menggabungkan prinsip dasar mekanika kuantum, yakni superposisi dan interferensi, dengan alat matematis (QFT).
 
 Saat ini, belum ada Komputer Kuantum Toleran Kesalahan (FTQC) berskala praktis (ribuan qubit) yang mampu menjalankan Algoritma Shor. Namun, keberadaan pergeseran paradigma teoritis dan matematis inilah yang menjadi alasan utama mengapa transisi ke Kriptografi Pasca-Kuantum (PQC: Post-Quantum Cryptography) dipercepat secara global di seluruh dunia saat ini.
+

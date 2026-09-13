@@ -36,11 +36,11 @@ graph TD
     VSCode -- Completion requests / Go to definition --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. "AST (Abstract Syntax Tree) Analysis" .-> CompilerC
-    RustAnalyzer -. "Macro Expansion / Type Inference" .-> CompilerR
+    Clangd -. AST (Abstract Syntax Tree) Analysis .-> CompilerC
+    RustAnalyzer -. Macro Expansion / Type Inference .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
-    Debugger -. "ptrace / Memory Dump" .-> Executable["Compiled Binary"]
+    Debugger -. ptrace / Memory Dump .-> Executable["Compiled Binary"]
 ```
 
 The core of VSCode does not understand C++ template metaprogramming or complex Rust lifetime specifiers. The editor's role is strictly limited to displaying source code and accepting user input. Computationally expensive processes such as semantic analysis, type inference, and error checking are delegated to "language servers" running in the background via JSON-RPC.
@@ -388,4 +388,5 @@ By applying the 10 extensions and configurations introduced in this article, VSC
 It might take some time to customize the initial configuration files, but once built, your coding experience will become surprisingly comfortable and productive. By all means, use the architecture explanations and specific configurations (`settings.json`, `tasks.json`, `launch.json`) in this article as a reference to build your own ultimate development environment.
 
 Wishing you a comfortable and safe systems programming life!
+
 

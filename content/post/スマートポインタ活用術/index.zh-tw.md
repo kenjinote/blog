@@ -76,11 +76,11 @@ int main() {
 ```mermaid
 graph LR
     subgraph "std::move 之前"
-        A["unique_ptr (ptr1)"] -->| 擁有 | B["堆積記憶體 (物件)"]
+        A["unique_ptr (ptr1)"] -->|"擁有"| B["堆積記憶體 (物件)"]
     end
     subgraph "std::move 之後"
         C["unique_ptr (ptr1)"] -.->|"空 (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->| 擁有 | F["堆積記憶體 (物件)"]
+        E["unique_ptr (ptr2)"] -->|"擁有"| F["堆積記憶體 (物件)"]
     end
 ```
 
@@ -130,13 +130,13 @@ int main() {
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->| 指向 T 的指標 | B["被管理的物件 (T)"]
-    A -->| 指向控制區塊的指標 | C["控制區塊"]
+    A["std::shared_ptr<T> (sp1)"] -->|"指向 T 的指標"| B["被管理的物件 (T)"]
+    A -->|"指向控制區塊的指標"| C["控制區塊"]
     
-    D["std::shared_ptr<T> (sp2)"] -->| 指向 T 的指標 | B
-    D -->| 指向控制區塊的指標 | C
+    D["std::shared_ptr<T> (sp2)"] -->|"指向 T 的指標"| B
+    D -->|"指向控制區塊的指標"| C
     
-    C -->| 刪除 | B
+    C -->|"刪除"| B
     C -.->|"強參照計數：2"| E["強參照計數"]
     C -.->|"弱參照計數：0"| F["弱參照計數"]
     C -.->|"自訂刪除器"| G["刪除器"]
@@ -176,8 +176,8 @@ std::shared_ptr<MyClass> ptr2 = std::make_shared<MyClass>();
 ```mermaid
 graph TD
     subgraph "循環參照 (記憶體外洩)"
-        A["物件 A"] -->| shared_ptr (強參照=1) | B["物件 B"]
-        B -->| shared_ptr (強參照=1) | A
+        A["物件 A"] -->|"shared_ptr (強參照=1)"| B["物件 B"]
+        B -->|"shared_ptr (強參照=1)"| A
     end
 ```
 
@@ -188,7 +188,7 @@ graph TD
 ```mermaid
 graph TD
     subgraph "打破循環參照"
-        C["物件 A"] -->| shared_ptr (強參照=1) | D["物件 B"]
+        C["物件 A"] -->|"shared_ptr (強參照=1)"| D["物件 B"]
         D -.->|"weak_ptr (弱參照=1)"| C
     end
 ```
@@ -268,4 +268,6 @@ $$ S(t) + W(t) = 0 $$
 3.  在可能會發生共享循環 (循環參照) 的資料結構，或是在實作觀察者模式 (Observer Pattern) 時，活用 **`std::weak_ptr`** 來防範記憶體外洩於未然。
 
 深入理解智慧指標並在適當的地方活用它們，將能在完全不犧牲 C++ 效能的情況下，建構出安全且堅固的軟體架構。
+
+
 

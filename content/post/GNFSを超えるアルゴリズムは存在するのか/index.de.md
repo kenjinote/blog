@@ -148,8 +148,8 @@ Unter Berücksichtigung kürzlich optimierter Schaltungsimplementierungen kann d
 
 ```mermaid
 graph LR
-  A["Klassischer Algorithmus (GNFS)"] -->|Grenze| B["Subexponentielle Zeit L_n[1/3]"]
-  C["Quantenalgorithmus (Shor)"] -->|Durchbruch| D["Polynomzeit O((log n)^3)"]
+  A["Klassischer Algorithmus (GNFS)"] -->|"Grenze"| B["Subexponentielle Zeit L_n[1/3]"]
+  C["Quantenalgorithmus (Shor)"] -->|"Durchbruch"| D["Polynomzeit O((log n)^3)"]
   B --> E["Fortgesetzte Nutzung von RSA (Längere Schlüssel)"]
   D --> F["Vollständiger Zusammenbruch von RSA"]
 ```
@@ -175,4 +175,5 @@ Der aktuelle Konsens der wissenschaftlichen Gemeinschaft zur Frage "Gibt es eine
 3. **Die wahre Bedrohung ist der Quantenalgorithmus**: Die Wand der Berechnungskomplexität wurde durch Shors Algorithmus überwunden, der auf den Prinzipien der Quantenmechanik beruht. Infolgedessen ist die Welt gezwungen, auf Post-Quanten-Kryptographie (PQC: Post-Quantum Cryptography) umzusteigen. Der Übergang zu neuen mathematischen Problemen wie gitterbasierter Kryptographie und Hash-basierter Kryptographie, die auch für Quantencomputer als schwer zu knacken (nicht in Polynomzeit lösbar) gelten, ist die aktuelle Spitze der Kryptographie.
 
 Das Allgemeine Zahlkörpersieb (GNFS) ist einer der "höchsten Punkte", den die Menschheit erreicht hat, indem sie die Grenzen der klassischen Mathematik und des Algorithmus-Designs herausgefordert hat. Das Verständnis der tiefgreifenden mathematischen Struktur des GNFS ist nicht nur das Erlernen der Geschichte der Kryptoanalyse, sondern auch eine intellektuelle Reise, um die Schönheit der Berechnungskomplexitätstheorie und der algebraischen Zahlentheorie zu erfahren. Bis zu dem Tag, an dem Quantencomputer in die Praxis umgesetzt werden, wird das GNFS seinen Thron als stärkster Algorithmus zur Primfaktorzerlegung behalten.
+
 

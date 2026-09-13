@@ -520,8 +520,8 @@ Fungsi ini telah secara historis memainkan peran yang sangat krusial sebagai "Fu
 
 ```mermaid
 graph LR
-  X1["Input x1"] -->|Bobot w1| Sum["Penjumlahan: Σ(wi*xi) + b"]
-  X2["Input x2"] -->|Bobot w2| Sum
+  X1["Input x1"] -->|"Bobot w1"| Sum["Penjumlahan: Σ(wi*xi) + b"]
+  X2["Input x2"] -->|"Bobot w2"| Sum
   Sum --> Act["Fungsi Sigmoid: σ(x)"]
   Act --> Out["Probabilitas Output (0 hingga 1)"]
 ```
@@ -624,4 +624,5 @@ Bagaimana menurut Anda? Dari Identitas Euler hingga Teorema Pythagoras, 10 rumus
 Memahami latar belakang matematika dari rumus-rumus ini adalah langkah penting untuk meningkatkan diri, dari sekadar *coder* yang memanggil pustaka/library yang sudah ada (seperti `math.sin` atau `numpy.fft`), menjadi seorang *engineer* yang mampu memahami struktur internal dan mengeluarkan potensi maksimal dari sistem tersebut. Saat Anda menulis kode berikutnya, cobalah bayangkan sejenak, rumus matematika indah apa yang mungkin sedang bekerja di baliknya.
 
 **Happy Coding and Math!**
+
 

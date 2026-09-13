@@ -43,9 +43,9 @@ graph LR
     D30["Distance: 30m (Different floor)"] --> P30["Face-to-face communication probability: Low (few %)"]
     DRemote["Full remote (Different city)"] --> PRemote["Serendipitous synchronous communication probability: Almost zero"]
     
-    D0 -. "Rapid decay of the Allen Curve" .-> D10
-    D10 -. "Loss of physical proximity" .-> D30
-    D30 -. "Shift to completely asynchronous/intentional communication" .-> DRemote
+    D0 -. Rapid decay of the Allen Curve .-> D10
+    D10 -. Loss of physical proximity .-> D30
+    D30 -. Shift to completely asynchronous/intentional communication .-> DRemote
 ```
 
 In a full remote work environment, this physical distance $d$ becomes effectively infinite. In other words, even with the existence of Slack or Zoom, serendipitous communication (like "water cooler talk") structurally ceases to occur. One of the strongest rationales for management to push for RTO is to reclaim this "sharing of tacit knowledge and creation of innovation brought about by physical proximity," backed by the Allen Curve.
@@ -188,9 +188,9 @@ graph TD
     subgraph "Zero Trust Model (BeyondCorp / ZTNA)"
         U2["Remote Engineer (MDM Managed Device)"] -- Direct Communication (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
         IAP -- Dynamic Authorization per Request --> App2["Internal / SaaS Applications"]
-        IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / User Context" .-> Policy
-        MDM["Device Management (Intune / Jamf)"] -. "Device Health (Patch Status)" .-> Policy
-        Policy["Access Policy Engine"] -. "Risk-based Authorization Decision" .-> IAP
+        IDP["Identity Provider (Okta / Entra ID)"] -. MFA / User Context .-> Policy
+        MDM["Device Management (Intune / Jamf)"] -. Device Health (Patch Status) .-> Policy
+        Policy["Access Policy Engine"] -. Risk-based Authorization Decision .-> IAP
     end
 ```
 
@@ -234,6 +234,7 @@ Management must discard the illusion that "merely gathering people in an office 
 On the other hand, engineers (especially senior levels) must also amend the self-righteous perspective that "an office is unnecessary because I am more productive writing code alone." Engineering is a team sport, and engineers bear broad responsibilities beyond just coding productivity, including overall system design, mentoring junior members, and coordinating during emergencies. It is a fact that high-bandwidth communication in physical spaces can sometimes save an entire project.
 
 The optimal solution varies depending on the phase of the company, team, and product. However, what is certain is that only organizations that understand the sociological nature of communication, measure their current state with multifaceted metrics like the SPACE framework, and continually break through constraints with technologies like Zero Trust architecture will gain true competitive advantage in this new era of work.
+
 
 
 

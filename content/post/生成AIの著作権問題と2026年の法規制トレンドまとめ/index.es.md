@@ -142,8 +142,8 @@ graph TD
     C --> D["Publicación y distribución en Internet"]
     D --> E["Acceso por rastreadores o scrapers de IA"]
     E --> F{"Detección de la bandera 'Do Not Train' (Opt-out)"}
-    F -->|Cumplimiento| G["Exclusión del conjunto de datos de entrenamiento"]
-    F -->|Malicia| H["Eliminación forzada de metadatos y ejecución del entrenamiento"]
+    F -->|"Cumplimiento"| G["Exclusión del conjunto de datos de entrenamiento"]
+    F -->|"Malicia"| H["Eliminación forzada de metadatos y ejecución del entrenamiento"]
     H --> I["Aumento masivo de penalizaciones legales basadas en la Ley de IA de la UE, etc."]
 ```
 
@@ -218,3 +218,4 @@ El año 2026 será recordado en la historia como un año monumental en el que el
 Es imposible retroceder las manecillas del reloj en la evolución de la tecnología de la IA. Sin embargo, domar esa poderosa tecnología y controlarla para no destruir el ecosistema de los creadores, quienes han fomentado la cultura y el arte de la humanidad durante miles de años, depende de la jurisprudencia, las ciencias de la computación y la sabiduría de toda la sociedad.
 
 De cara a 2030, existe actualmente una fuerte demanda por el establecimiento de una "nueva esfera económica digital" donde la IA y los creadores no sean adversarios que compitan por el mismo pastel, sino que cocreen con remuneración justa y respeto, logrando así ampliar la creatividad de la humanidad.
+

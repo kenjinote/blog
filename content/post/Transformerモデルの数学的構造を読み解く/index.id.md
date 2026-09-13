@@ -340,3 +340,5 @@ Jika Anda memiliki kesempatan untuk menggunakan LLM seperti ChatGPT atau Claude 
 
 ---
 *Artikel ini ditulis sebagai panduan bagi mereka yang mempelajari pemrosesan bahasa alami dan dasar matematis dari AI. Jika Anda memiliki pertanyaan atau ingin berdiskusi, silakan beri tahu di kolom komentar!*
+
+

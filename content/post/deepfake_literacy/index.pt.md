@@ -46,8 +46,8 @@ flowchart LR
     R["Imagem Real (Real Image)"] --> D["Discriminador (Discriminator)"]
     F --> D
     D --> O["Classificação (Real/Fake)"]
-    O -.->|Loss Feedback| G
-    O -.->|Loss Feedback| D
+    O -.->|"Loss Feedback"| G
+    O -.->|"Loss Feedback"| D
 ```
 
 ## 1.2 Modelos de Difusão (Diffusion Models)
@@ -263,5 +263,6 @@ A evolução da tecnologia de IA abriu a caixa de Pandora. Já não é possível
 No entanto, como explicado neste artigo, os tecnólogos estão a combater a ameaça das notícias falsas com diversas abordagens: análise de frequência, deteção de sinais biométricos e prova de proveniência (C2PA) baseada em criptografia. Ao combinar este escudo tecnológico (medida defensiva) com o escudo social da "literacia da informação" de cada indivíduo, deveremos ser capazes de navegar pelas ondas da ficção criadas pela IA e proteger o valor da verdade.
 
 É precisamente porque vivemos numa época em que as fronteiras entre realidade e ficção se dissolvem que a "vontade" humana de discernir a verdade tornou-se mais importante do que nunca.
+
 
 

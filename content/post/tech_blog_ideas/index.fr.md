@@ -326,18 +326,18 @@ L'architecture globale expliquée jusqu'à présent, de la "collecte d'informati
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Script d'extraction Python| B["Données de tendance brutes"]
-    C["GitHub Actions (Cron)"] -->|Calendrier d'exécution régulière| A
-    B -->|Conversion au format Markdown| D["Daily Inputs (Fleeting Notes)"]
-    D -->|Travail manuel de lecture et de résumé| E["Obsidian Zettelkasten"]
-    E -->|Conversion en notes permanentes| F["Permanent Notes"]
-    F -->|Processus de synchronisation automatique| G["OpenAI Embeddings API"]
-    G -->|Conversion vectorielle| H["Pinecone Vector Database"]
-    H -->|Recherche sémantique| I["Découverte et extraction de connaissances liées"]
-    F -->|Création de cartes-mémoire (flashcards)| J["Anki (Spaced Repetition)"]
-    J -->|Inspiration depuis la mémoire à long terme| K["Combinatorial Creativity"]
+    A["Hacker News / Lobsters API"] -->|"Script d'extraction Python"| B["Données de tendance brutes"]
+    C["GitHub Actions (Cron)"] -->|"Calendrier d'exécution régulière"| A
+    B -->|"Conversion au format Markdown"| D["Daily Inputs (Fleeting Notes)"]
+    D -->|"Travail manuel de lecture et de résumé"| E["Obsidian Zettelkasten"]
+    E -->|"Conversion en notes permanentes"| F["Permanent Notes"]
+    F -->|"Processus de synchronisation automatique"| G["OpenAI Embeddings API"]
+    G -->|"Conversion vectorielle"| H["Pinecone Vector Database"]
+    H -->|"Recherche sémantique"| I["Découverte et extraction de connaissances liées"]
+    F -->|"Création de cartes-mémoire (flashcards)"| J["Anki (Spaced Repetition)"]
+    J -->|"Inspiration depuis la mémoire à long terme"| K["Combinatorial Creativity"]
     I --> K
-    K -->|Création de l'intrigue / Planification| L["Blog Post Draft (Rédaction de l'article)"]
+    K -->|"Création de l'intrigue / Planification"| L["Blog Post Draft (Rédaction de l'article)"]
 ```
 
 La caractéristique de ce système est que **"le travail intellectuel à effectuer manuellement (résumé, réflexion, écriture)" et "le travail à déléguer à la machine (collecte, recherche, planification de la répétition espacée)" sont complètement séparés**. Cela permet à l'auteur de se concentrer sur "penser" et "combiner", qui ont la plus grande valeur ajoutée.
@@ -382,5 +382,6 @@ Comme présenté dans cet article :
 En construisant un pipeline complet combinant ces éléments, vos idées de blog ne s'épuiseront pas ; au contraire, plus vous écrirez, plus de nouvelles idées s'auto-multiplieront.
 
 Il n'est pas nécessaire de tout construire parfaitement dès le début. Commencez par créer un script simple qui interroge l'API de Hacker News, et prenez l'habitude de noter les articles qui vous intéressent en Markdown. J'espère que votre blog technique deviendra une source d'excellence pour la prochaine génération d'idées.
+
 
 

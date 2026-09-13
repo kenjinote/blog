@@ -34,8 +34,8 @@ graph TD
     A["Twin brothers (20 years old)"] --> B["Younger brother remaining on Earth"]
     A --> C["Older brother traveling space at 80% light speed"]
     
-    B -->|30 Earth years pass| D["Younger brother at reunion: 50 years old"]
-    C -->|Time dilates due to relativity, only 18 years pass| E["Older brother at reunion: 38 years old"]
+    B -->|"30 Earth years pass"| D["Younger brother at reunion: 50 years old"]
+    C -->|"Time dilates due to relativity, only 18 years pass"| E["Older brother at reunion: 38 years old"]
     
     D --> F{"Age difference: 12 years!"}
     E --> F
@@ -87,3 +87,4 @@ At the moment the older brother makes a U-turn and re-accelerates toward Earth, 
 As a result, when they reunite, exactly as calculated, only the reality remains that **"the older brother is 38 and the younger brother is 50,"** cleanly resolving the contradiction.
 
 The Twin Paradox is one of the most beautiful thought experiments in the history of physics, teaching us that our commonsense perception that "time flows equally for everyone" is completely inapplicable in the face of the vast universe and the speed of light.
+

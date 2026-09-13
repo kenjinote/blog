@@ -71,7 +71,7 @@ graph TD
     F["Espace utilisateur Linux (Distributions WSL2)"]
 
     A --> C
-    C -->| Partage de fichiers inter-OS | D
+    C -->|"Partage de fichiers inter-OS"| D
     D --> E
     D --> F
 ```
@@ -230,5 +230,6 @@ Ce n'est pas que l'un entre Hyper-V et WSL2 soit meilleur que l'autre, ce sont *
 *   **Hyper-V** est un "hyperviseur authentique" qui apporte au bureau la forte isolation et les capacités de gestion cultivées dans les centres de données d'entreprise. Il n'y a pas mieux pour la construction de réseaux, les tests du système d'exploitation Windows et la simulation d'environnements d'infrastructure.
 
 Dans les environnements Windows modernes, ces deux technologies ne sont pas en concurrence directe, mais coexistent magnifiquement sur la même plateforme de VM. En les utilisant de manière appropriée en fonction de l'usage, Windows deviendra la station de travail d'ingénierie la plus puissante et la plus flexible au monde.
+
 
 

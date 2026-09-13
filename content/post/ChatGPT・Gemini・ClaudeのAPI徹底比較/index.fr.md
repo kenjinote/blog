@@ -57,7 +57,7 @@ Le diagramme Mermaid ci-dessous montre la vue d'ensemble, depuis l'envoi de la r
 
 ```mermaid
 graph TD
-    A["Application Client"] -->|HTTP/REST or gRPC| B["Passerelle API"]
+    A["Application Client"] -->|"HTTP/REST or gRPC"| B["Passerelle API"]
     B --> C["Équilibreur de charge"]
     C --> D["Cluster d'inférence"]
     D --> E["Tokeniseur (BPE / SentencePiece)"]
@@ -66,7 +66,7 @@ graph TD
     G --> H["Couche de sortie (Logits)"]
     H --> I["Échantillonneur (Temperature, Top-p, Top-k)"]
     I --> J["Détokeniseur"]
-    J -->|Réponse en streaming (Morceau)| A
+    J -->|"Réponse en streaming (Morceau)"| A
 ```
 
 ### 3.1 Algorithmes de Tokenisation
@@ -344,3 +344,4 @@ Plutôt que de s'appuyer sur une seule API (vendor lock-in), la tendance future 
 Par exemple, vous pouvez répondre aux questions simples des utilisateurs avec des modèles peu coûteux et rapides comme `GPT-4o-mini` ou `Gemini 1.5 Flash`, et ne basculer la tâche sur `Claude 3.5 Sonnet` que si un traitement complexe est jugé nécessaire, permettant d'atteindre un équilibre optimal entre coût et performances.
 
 L'évolution de l'IA ne s'arrête jamais. Comprenez profondément les forces et faiblesses de chaque API ainsi que les caractéristiques de leur architecture, et construisez des applications d'IA flexibles et évolutives.
+

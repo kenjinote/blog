@@ -139,17 +139,17 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ```mermaid
 graph TD
-    User["Host Machine (Browser/curl)"] -->|Localhost:8000| Web["FastAPI Web Container"]
+    User["Host Machine (Browser/curl)"] -->|"Localhost:8000"| Web["FastAPI Web Container"]
     
     subgraph "Docker Bridge Network (app-network)"
-        Web -->|Port 5432| DB["PostgreSQL Container"]
-        Web -->|Port 6379| Redis["Redis Container"]
+        Web -->|"Port 5432"| DB["PostgreSQL Container"]
+        Web -->|"Port 6379"| Redis["Redis Container"]
     end
     
     DB --> Volume1["Named Volume (postgres_data)"]
     Redis --> Volume2["Named Volume (redis_data)"]
     
-    HostDir["Host Source Code (./src)"] -.->|Bind Mount| Web
+    HostDir["Host Source Code (./src)"] -.->|"Bind Mount"| Web
 ```
 
 ### docker-compose.yml の実装と詳細解説
@@ -416,3 +416,4 @@ Docker、Docker Compose、そしてVSCode DevContainersを組み合わせるこ�
 IaCのパラダイムをローカル環境に持ち込むことは、単に最初のセットアップ時間を短縮するだけではありません。インフラストラクチャの設定変更に対する不安を取り除き、新しい技術スタックの実験を容易にし、CI/CDパイプラインへのスムーズな移行を可能にするなど、開発サイクル全体の速度と品質を飛躍的に向上させます。
 
 本記事で解説したマルチステージビルドによるイメージサイズの最適化や、ヘルスチェックを用いた依存関係の制御、レイヤーキャッシュを意識したDockerfileの記述などのベストプラクティスを活用し、ぜひご自身のプロジェクトにも最高の開発体験（DX: Developer Experience）を導入してみてください。
+

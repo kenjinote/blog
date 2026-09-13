@@ -83,7 +83,7 @@ Kita baru saja mengekspresikan angka $X$ menggunakan **"bahasa Jepang sepanjang 
 graph TD
     Define["Definisi:<br>X = bilangan bulat terkecil yang tidak dapat dinyatakan dalam maksimal 19 karakter"] --> CheckLength{"Berapa jumlah karakter dari<br>『十九文字以内で表せない最小の整数』?"}
     
-    CheckLength -->|Berjumlah 16 karakter| Contradiction["Kontradiksi!<br>X ternyata dapat dinyatakan dalam 『16 karakter』!"]
+    CheckLength -->|"Berjumlah 16 karakter"| Contradiction["Kontradiksi!<br>X ternyata dapat dinyatakan dalam 『16 karakter』!"]
     
     Contradiction --> Paradox["X seharusnya 『tidak dapat dinyatakan dalam maksimal 19 karakter』<br>tetapi malah 『dapat dinyatakan dalam maksimal 19 karakter (16 karakter)』"]
     
@@ -135,3 +135,4 @@ Namun, masalah ini menjadi pemicu yang membuat para matematikawan abad ke-20 men
 Paradoks ini menjadi tonggak penting yang mengarah pada studi-studi mutakhir yang mengubah sejarah matematika selanjutnya, seperti "Teorema Ketidaklengkapan Gödel" (bahwa ada kebenaran dalam matematika yang tidak akan pernah bisa dibuktikan) dan "Kompleksitas Kolmogorov" dalam ilmu komputer (teori tentang seberapa pendek informasi dapat dikompresi).
 
 Hanya dengan 16 karakter bahasa Jepang telah mengungkap batasan-batasan matematika. Itulah keindahan dari Paradoks Berry.
+

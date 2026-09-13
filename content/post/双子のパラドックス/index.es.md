@@ -34,8 +34,8 @@ graph TD
     A["Hermanos gemelos (20 años)"] --> B["Hermano menor que se queda en la Tierra"]
     A --> C["Hermano mayor que viaja al 80% de la velocidad de la luz"]
     
-    B -->|Pasan 30 años en el tiempo de la Tierra| D["Hermano menor en el reencuentro: 50 años"]
-    C -->|Debido al efecto de dilatación temporal solo pasan 18 años| E["Hermano mayor en el reencuentro: 38 años"]
+    B -->|"Pasan 30 años en el tiempo de la Tierra"| D["Hermano menor en el reencuentro: 50 años"]
+    C -->|"Debido al efecto de dilatación temporal solo pasan 18 años"| E["Hermano mayor en el reencuentro: 38 años"]
     
     D --> F{"¡Diferencia de edad: 12 años!"}
     E --> F
@@ -87,3 +87,4 @@ En el instante en que el hermano mayor da la vuelta y vuelve a acelerar hacia la
 Como resultado, cuando se reencuentran, solo queda la realidad calculada de que **"el hermano mayor tiene 38 años y el hermano menor tiene 50 años"**, y la contradicción se resuelve completamente.
 
 La paradoja de los gemelos es uno de los experimentos mentales más bellos de la historia de la física, que nos enseña que nuestra sensación de sentido común de que "el tiempo fluye de manera igual para todos" no funciona en absoluto frente al vasto universo y la velocidad de la luz.
+

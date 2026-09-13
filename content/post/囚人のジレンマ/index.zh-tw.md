@@ -75,13 +75,13 @@ graph TD
     Start["選擇的開始"] --> Logic_You["你的理性思考"]
     Start --> Logic_Friend["朋友的理性思考"]
     
-    Logic_You -->|對方沉默則認罪有利<br>對方認罪也認罪有利| Betray_You["你選擇認罪(背叛)"]
-    Logic_Friend -->|對方沉默則認罪有利<br>對方認罪也認罪有利| Betray_Friend["朋友選擇認罪(背叛)"]
+    Logic_You -->|"對方沉默則認罪有利<br>對方認罪也認罪有利"| Betray_You["你選擇認罪(背叛)"]
+    Logic_Friend -->|"對方沉默則認罪有利<br>對方認罪也認罪有利"| Betray_Friend["朋友選擇認罪(背叛)"]
     
     Betray_You --> Result["結果：雙方認罪 (-5, -5)"]
     Betray_Friend --> Result
     
-    Ideal["理想：雙方沉默 (-1, -1)"] -.->|因個人理性的阻礙而<br>無法達成| Result
+    Ideal["理想：雙方沉默 (-1, -1)"] -.->|"因個人理性的阻礙而<br>無法達成"| Result
     
     style Result fill:#ff9999,stroke:#333,stroke-width:2px
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
@@ -134,11 +134,11 @@ graph TD
 graph LR
     Start["第1次：無條件合作"] --> Round2
     
-    Round2["觀察對方行動"] -->|對方合作| Act_Coop["自己也合作"]
-    Round2 -->|對方背叛| Act_Betray["自己也背叛 (報復)"]
+    Round2["觀察對方行動"] -->|"對方合作"| Act_Coop["自己也合作"]
+    Round2 -->|"對方背叛"| Act_Betray["自己也背叛 (報復)"]
     
     Act_Coop --> Round2
-    Act_Betray -->|如果對方反省<br>回到合作| Act_Coop
+    Act_Betray -->|"如果對方反省<br>回到合作"| Act_Coop
 ```
 
 在人際關係或國際社會中也是如此，只要以長期的關係為前提，透過共享如「以牙還牙策略」般**「基本合作，但對背叛給予懲罰」**的規則，就能克服囚徒困境，建立合作關係。
@@ -151,3 +151,4 @@ graph LR
 但同時，賽局理論也教導我們，只要具備「關係會長期持續」這個條件，**「互相信任並合作」才是最終能將自身利益最大化的最理性策略**。
 
 下次當你在猶豫「要不要為了自己稍微作點弊」的時候，請回想一下這個囚徒困境的收益表。因為追求眼前利益的「理性背叛」，從長期來看或許正是最不理性的選擇。
+

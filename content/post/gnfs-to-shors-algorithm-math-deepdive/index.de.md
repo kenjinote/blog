@@ -173,9 +173,9 @@ Um den Unterschied zwischen GNFS und dem Shor-Algorithmus intuitiv zu verstehen,
 graph TD
     A[Anfangszustand: 0...0] --> B[Superposition aller Zustände durch Hadamard-Transformation]
     B --> C[Modulare Exponentiation a^x mod N]
-    C -->|Quantenverschränkung| D[Kollaps in einen Zustand mit Periodizität]
+    C -->|"Quantenverschränkung"| D[Kollaps in einen Zustand mit Periodizität]
     D --> E[Quanten-Fourier-Transformation QFT]
-    E -->|Wahrscheinlichkeitsverstärkung durch Interferenz| F[Messung: y erhalten]
+    E -->|"Wahrscheinlichkeitsverstärkung durch Interferenz"| F[Messung: y erhalten]
     F --> G[Klassische Verarbeitung: Kettenbruchentwicklung]
     G --> H[Entdeckung der Periode r]
     H --> I[Berechnung der Primfaktoren von N]
@@ -198,3 +198,4 @@ In diesem Artikel haben wir das **„GNFS“** , den Höhepunkt der klassischen 
 Während GNFS durch mathematische Tricks wie die Polynomauswahl und riesige Matrixberechnungen die Zeitkomplexität auf subexponentielle Zeit reduzierte, gelang dem Shor-Algorithmus ein sofortiger Durchbruch in die polynomielle Zeit. Er verschmolz die Grundprinzipien der Quantenmechanik – Superposition und Interferenz – mit mathematischen Werkzeugen (QFT).
 
 Derzeit gibt es keine fehlertoleranten Quantencomputer (FTQC), die den Shor-Algorithmus in einem praktischen Maßstab (Tausende von Qubits) ausführen können. Das bloße Vorhandensein dieses mathematischen und theoretischen Paradigmenwechsels ist jedoch der Hauptgrund, warum der Übergang zur Post-Quanten-Kryptographie (PQC: Post-Quantum Cryptography) derzeit weltweit dringend vorangetrieben wird.
+

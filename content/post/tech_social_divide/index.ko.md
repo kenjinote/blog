@@ -146,17 +146,17 @@ graph TD
         Labeler["모더레이션 라벨러 (팩트 체커)"]
     end
 
-    Client -->|읽기/쓰기| PDS1
-    Client -->|조회| AppView
+    Client -->|"읽기/쓰기"| PDS1
+    Client -->|"조회"| AppView
     
-    PDS1 -->|WebSocket을 통한 동기화| Relay
-    PDS2 -->|WebSocket을 통한 동기화| Relay
+    PDS1 -->|"WebSocket을 통한 동기화"| Relay
+    PDS2 -->|"WebSocket을 통한 동기화"| Relay
     
-    Relay -->|인덱싱| AppView
+    Relay -->|"인덱싱"| AppView
     
-    AppView -.->|피드 요청| FeedGen1
-    AppView -.->|피드 요청| FeedGen2
-    AppView -.->|라벨 획득| Labeler
+    AppView -.->|"피드 요청"| FeedGen1
+    AppView -.->|"피드 요청"| FeedGen2
+    AppView -.->|"라벨 획득"| Labeler
 ```
 
 AT Protocol의 최대 공적은 '피드 생성(알고리즘)'과 '모더레이션(라벨링)'을 플랫폼 본체에서 떼어내어 사용자 스스로가 자유롭게 선택·조합 가능(Composable)하게 만들었다는 것입니다(Custom Feeds / Stackable Moderation).
@@ -194,5 +194,6 @@ AT Protocol의 최대 공적은 '피드 생성(알고리즘)'과 '모더레이�
 101회째부터도 한 사람의 기술자로서 코드와 사회의 교차점에 계속 서서, 사색을 깊이 해나가고자 합니다. 긴 글을 끝까지 함께해 주셔서 진심으로 감사드립니다. 미래의 네트워크가 우리를 분단하는 벽이 아니라 서로를 이해하기 위한 다리가 되기를 바라며.
 
 (끝)
+
 
 

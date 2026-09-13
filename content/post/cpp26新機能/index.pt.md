@@ -97,9 +97,9 @@ Você não terá mais que lidar com o esgotamento da memória do compilador devi
 
 ```mermaid
 graph TD
-    A["Tipo: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["Intervalo de meta::info"]
-    C -->| [: member :] | D["Acesso Direto ao Membro (obj.id, obj.name)"]
+    A["Tipo: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["Intervalo de meta::info"]
+    C -->|"[: member :]"| D["Acesso Direto ao Membro (obj.id, obj.name)"]
     D --> E["Código Gerado (Zero Sobrecarga)"]
 ```
 
@@ -296,9 +296,9 @@ A proposta de padronização para reconstruir fundamentalmente o modelo de proce
 
 ```mermaid
 graph LR
-    S["Sender (Descrição da Tarefa)"] -->|connect| O["Estado da Operação"]
-    O -->|start| E["Execução (ThreadPool, GPU, etc.)"]
-    E -->|set_value / set_error / set_stopped| R["Receiver (Callback)"]
+    S["Sender (Descrição da Tarefa)"] -->|"connect"| O["Estado da Operação"]
+    O -->|"start"| E["Execução (ThreadPool, GPU, etc.)"]
+    E -->|"set_value / set_error / set_stopped"| R["Receiver (Callback)"]
 ```
 
 Os Senders são projetos leves que descrevem "o que deve ser feito" e são separados do contexto de execução (Scheduler). Isso permite que você escreva de maneira eficiente, com uma interface unificada, o descarregamento (offloading) de tarefas para o ThreadPool da CPU ou GPU.
@@ -367,5 +367,6 @@ Daqui em diante, recomendamos incorporar ativamente esses novos paradigmas no de
 
 ---
 *Este artigo foi escrito com base na situação de padronização do C++26 a partir do ano de 2026. Lembre-se de que algumas sintaxes podem estar sujeitas a mudanças, dependendo do status de implementação de cada compilador.*
+
 
 

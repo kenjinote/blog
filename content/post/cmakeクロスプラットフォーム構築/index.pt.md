@@ -143,7 +143,7 @@ graph TD
     Root --> Inc["include/"]
     Root --> CMake["CMakeLists.txt"]
     
-    Root -. "Criar diretório de build" .-> Build["build/ (Fora da fonte)"]
+    Root -. Criar diretório de build .-> Build["build/ (Fora da fonte)"]
     Build --> Obj["CMakeFiles/ (Arquivos objeto, caches)"]
     Build --> Bin["Binários (MyApp.exe)"]
     Build --> Gen["Makefile gerado / build.ninja"]
@@ -369,4 +369,5 @@ Recapitulando os pontos principais:
 7. **Abordagem matemática**: Tenha consciência da Lei de Amdahl, reduzindo as dependências para aumentar a eficiência da compilação paralela.
 
 O CMake pode parecer intimidador e complexo no começo, mas ao dominar os conceitos de alvos e propriedades, é possível manter um ambiente de build organizado em qualquer projeto C++, por maior e mais complexo que seja. Esperamos que este artigo sirva de base para que você consiga configurar o seu ambiente de desenvolvimento C++ utilizando a sintaxe do CMake Moderno!
+
 

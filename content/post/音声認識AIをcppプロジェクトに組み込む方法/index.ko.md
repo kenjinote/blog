@@ -72,9 +72,9 @@ C++ 애플리케이션에서의 오디오 처리 파이프라인을 설계해 �
 
 ```mermaid
 graph TD
-    A["오디오 소스 (마이크/파일)"] -->|Raw Bytes, e.g. 48kHz Stereo| B["오디오 디코더 & 리샘플러 (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-bit Float| C["링 버퍼 / 메모리 배열"]
-    C -->|Feed PCM Data| D["whisper.cpp 코어 (ggml)"]
+    A["오디오 소스 (마이크/파일)"] -->|"Raw Bytes, e.g. 48kHz Stereo"| B["오디오 디코더 & 리샘플러 (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-bit Float"| C["링 버퍼 / 메모리 배열"]
+    C -->|"Feed PCM Data"| D["whisper.cpp 코어 (ggml)"]
     D --> E["Mel 스펙트로그램 추출"]
     E --> F["Transformer 인코더-디코더"]
     F --> G["텍스트 토큰 생성"]
@@ -223,14 +223,14 @@ int main() {
 ```mermaid
 graph LR
     subgraph "Audio Thread (High Priority)"
-        A["오디오 캡처 API (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["리샘플러 (16kHz로)"]
+        A["오디오 캡처 API (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["리샘플러 (16kHz로)"]
         B --> C["링 버퍼"]
     end
     
     subgraph "Main / Worker Thread"
-        C -->|Pop 30ms-1000ms chunk| D["음성 구간 검출 (VAD)"]
-        D -->|If speech detected| E["PCM 버퍼 축적"]
-        E -->|Trigger Inference| F["whisper_full()"]
+        C -->|"Pop 30ms-1000ms chunk"| D["음성 구간 검출 (VAD)"]
+        D -->|"If speech detected"| E["PCM 버퍼 축적"]
+        E -->|"Trigger Inference"| F["whisper_full()"]
         F --> G["UI/텍스트 업데이트"]
     end
 ```
@@ -298,4 +298,5 @@ Hyper-Threading 등의 논리 코어를 포함하면 캐시 경합이 발생하�
 * **압도적인 최적화**: `ggml`을 통한 4-bit 양자화 및 Metal/cuBLAS 등 하드웨어 백엔드의 혜택.
 
 거대한 Python 환경이나 클라우드 API에 대한 의존성을 끊어내고 네이티브 환경에서 빠르고 안전하게 동작하는 오디오 처리 애플리케이션 개발에 꼭 `whisper.cpp`를 활용해 보시기 바랍니다. 로컬 완결형 AI는 프라이버시 보호와 지연 시간 관점에서 향후 소프트웨어 개발에 있어 매우 중요한 핵심 기술이 될 것입니다.
+
 

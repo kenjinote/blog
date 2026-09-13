@@ -260,13 +260,13 @@ C++側で `RegOpenKeyEx` と `RegQueryValueEx` を使用して `HKLM\SOFTWARE\My
 
 ```mermaid
 flowchart TD
-    A["C++ Agent Service"] -->|RegQueryValueEx| B["Windows Registry"]
-    B -->|Return Script Path| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|Execute| D["Admin Script (e.g., Restart-Service)"]
-    D -->|stdout via Pipe| C
-    C -->|ReadFile| A
-    A -->|Log| E["Event Viewer / Log File"]
+    A["C++ Agent Service"] -->|"RegQueryValueEx"| B["Windows Registry"]
+    B -->|"Return Script Path"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"Execute"| D["Admin Script (e.g., Restart-Service)"]
+    D -->|"stdout via Pipe"| C
+    C -->|"ReadFile"| A
+    A -->|"Log"| E["Event Viewer / Log File"]
 ```
 
 ## パフォーマンス分析とオフロードの利点
@@ -316,3 +316,4 @@ P/Invokeを用いたC++ DLLの呼び出しにより、計算負荷の高いタ�
 ---
 
 *この技術ブログでは、今後もWindows内部構造や高度な自動化に関するディープなトピックを取り上げていきます。ご質問やフィードバックがあれば、ぜひコメント欄にお寄せください。*
+

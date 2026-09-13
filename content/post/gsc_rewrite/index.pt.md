@@ -258,7 +258,7 @@ flowchart TD
     F --> G["Otimizar Tags H2/H3 e Reescrever Conteúdo"]
     G --> H["Publicar Artigo Atualizado"]
     H --> I["Monitorar Alterações de CTR (Esperado vs Real)"]
-    I --> |"Loop de Feedback"| A
+    I -->|"Loop de Feedback"| A
 ```
 
 Ao sistematizar essa série de passos — desde a coleta de dados do GSC e GA4, passando pela seleção de alvos baseada em análise e otimização de conteúdo via PNL, até ao monitoramento dos resultados — o blog torna-se um ativo que continua crescendo de forma automática.
@@ -276,6 +276,8 @@ Resumindo os métodos explicados neste artigo:
 4. Usar a **análise PNL com TF-IDF** para descobrir lacunas de conteúdo face aos concorrentes e otimizar os cabeçalhos (H2/H3).
 
 As tendências tecnológicas estão em constante evolução. Para responder de forma precisa aos erros e desafios que os leitores enfrentam atualmente, certifique-se de incorporar uma estratégia de reescrita baseada em dados nas suas operações diárias.
+
+
 
 
 

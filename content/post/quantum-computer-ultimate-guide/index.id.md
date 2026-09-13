@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->| Pengukuran (Observasi) | Result
+    Interference -->|"Pengukuran (Observasi)"| Result
 ```
 
 Dengan cara ini, komputer kuantum bukanlah sekadar solusi sementara untuk menghindari batasan mekanika klasik (batasan miniaturisasi dan batasan termodinamika), melainkan sebuah perubahan paradigma yang sejati yang merekonstruksi definisi informasi dan komputasi itu sendiri berdasarkan aksioma mekanika kuantum. Pada bab berikutnya, kita akan membahas lebih dalam mengenai rincian "gerbang kuantum" dan "sirkuit kuantum", yang merupakan alat matematika spesifik untuk memanipulasi interferensi kuantum ini secara bebas.
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Pengukuran Observabel $A$ (Operator Proyeksi $P_k$)"]:::measure
     
-    Obs -->| Probabilitas $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["Keadaan Runtuh 1: $| a_1 \rangle$"]:::state
-    Obs -->| Probabilitas $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["Keadaan Runtuh 2: $| a_2 \rangle$"]:::state
-    Obs -->| ... | StateN["Keadaan Runtuh n: $| a_n \rangle$"]:::state
+    Obs -->|"Probabilitas $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["Keadaan Runtuh 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Probabilitas $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["Keadaan Runtuh 2: $| a_2 \rangle$"]:::state
+    Obs -->|"..."| StateN["Keadaan Runtuh n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Dekoherensi (Hilangnya Interferensi Fase) dan Transisi ke Keadaan Campuran"]:::measure
     State2 --> Decoherence
@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->| Keadaan |x⟩ | QFT["QFT† (Invers Transformasi Fourier Kuantum)"]
-    Uf -->| Keadaan |a^x mod N⟩ | Discard["Tidak diukur (Terbelit dengan lingkungan)"]
+    Uf -->|"Keadaan"|x⟩ | QFT["QFT† (Invers Transformasi Fourier Kuantum)"]
+    Uf -->|"Keadaan"|a^x mod N⟩ | Discard["Tidak diukur (Terbelit dengan lingkungan)"]
 
     QFT --> Measure["Pengukuran (k)"]
     Measure --> Classical["Pemrosesan klasik melalui ekspansi pecahan berlanjut (Derivasi r)"]
@@ -2699,8 +2699,8 @@ Gerbang logika kuantum dalam sistem ini dieksekusi melalui "penjalinan (Braiding
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Penjalinan Topologis"]
-    A["Sumbu waktu t"] -->| Garis dunia anyon 1 | B["Operasi pertukaran (jalinan/braid)"]
-    C["Garis dunia anyon 2"] -->| Jalinan | B
+    A["Sumbu waktu t"] -->|"Garis dunia anyon 1"| B["Operasi pertukaran (jalinan/braid)"]
+    C["Garis dunia anyon 2"] -->|"Jalinan"| B
     B --> D["Vektor keadaan berotasi secara uniter U"]
     end
 ```
@@ -2863,3 +2863,5 @@ Penulis merasa sangat bahagia jika seri ini dapat membantu para pembaca memahami
 
 ---
  **Seri "Prinsip-prinsip Komputer Kuantum" (Total 12 Bab) Selesai** 
+
+

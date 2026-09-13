@@ -97,11 +97,11 @@ $$ G(t) = G_{base} + \Delta G \cdot e^{-\alpha t} \sin(\beta t) $$
 
 ```mermaid
 flowchart TD
-    A["Oura Ring API (生理數據)"] -->|透過 OAuth2 的 JSON| C["Python 資料攝取管線"]
-    B["WakaTime API (寫程式時間)"] -->|透過 API Key 的 JSON| C
-    E["SwitchBot API (室溫 / CO2)"] -->|透過 API Key 的 JSON| C
-    C -->|擷取與轉換| D["Pandas DataFrame (記憶體內)"]
-    D -->|載入| F["TimescaleDB / PostgreSQL"]
+    A["Oura Ring API (生理數據)"] -->|"透過 OAuth2 的 JSON"| C["Python 資料攝取管線"]
+    B["WakaTime API (寫程式時間)"] -->|"透過 API Key 的 JSON"| C
+    E["SwitchBot API (室溫 / CO2)"] -->|"透過 API Key 的 JSON"| C
+    C -->|"擷取與轉換"| D["Pandas DataFrame (記憶體內)"]
+    D -->|"載入"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (即席分析)"]
     F --> H["Streamlit Web App (每日監控)"]
 ```
@@ -368,6 +368,7 @@ def check_and_ventilate():
 
 ---
 *Disclaimer: 本文為筆者個人實驗與資料科學方法的總結，並不提供醫療建議。若有持續性的身體不適或睡眠障礙，請諮詢專業的醫療機構。*
+
 
 
 

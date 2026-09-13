@@ -141,8 +141,8 @@ AI也许能写出“优先考虑C的代码”或“优先考虑A的代码”，�
 flowchart LR
     Client["客户端"] --> API["API Gateway"]
     API --> Order["订单服务（上下文）"]
-    Order -. "异步事件（Kafka）" .-> Inventory["库存服务"]
-    Order -. "异步事件（Kafka）" .-> Payment["支付服务"]
+    Order -. 异步事件（Kafka） .-> Inventory["库存服务"]
+    Order -. 异步事件（Kafka） .-> Payment["支付服务"]
     
     Inventory --> DB1["库存DB"]
     Payment --> DB2["支付DB"]
@@ -207,6 +207,7 @@ pie title 工程师的时间分配（AI时代）
 
 真正的工程师，不是写代码的人，而是解决问题的人。
 领域建模、可扩展架构设计、与利益相关者的沟通，以及对复杂系统的调试。对于不断磨练这些“人类特有的工程师技能”的人来说，AI绝不是夺走工作的敌人，而是能将自己的创造力和生产力扩展数十倍的最强伙伴。
+
 
 
 

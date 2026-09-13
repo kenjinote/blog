@@ -36,8 +36,8 @@ Nachdem Sie eingeschlafen sind, wirft der Versuchsleiter **eine faire Münze** (
 graph TD
     Sunday["Sonntag: Dornröschen schläft"] --> Toss{"Münzwurf"}
     
-    Toss -->|Kopf (1/2)| Mon_Heads["Montag: Aufwachen + Frage<br>(Danach Ende des Experiments)"]
-    Toss -->|Zahl (1/2)| Mon_Tails["Montag: Aufwachen + Frage<br>(Danach Erinnerungslöschung)"]
+    Toss -->|"Kopf (1/2)"| Mon_Heads["Montag: Aufwachen + Frage<br>(Danach Ende des Experiments)"]
+    Toss -->|"Zahl (1/2)"| Mon_Tails["Montag: Aufwachen + Frage<br>(Danach Erinnerungslöschung)"]
     
     Mon_Tails --> Tue_Tails["Dienstag: Aufwachen + Frage<br>(Danach Ende des Experiments)"]
     
@@ -125,3 +125,4 @@ Wenn Sie eine Versuchsperson in diesem Experiment würden, würden Sie beim Aufw
 
 Egal, was Sie antworten, Mathematiker von Weltrang werden hinter Ihnen stehen und Sie verteidigen.
 Wie scheinbar einfache mathematische Definitionen zusammenbrechen, sobald sie mit so kniffligen Konzepten wie der menschlichen "Subjektivität" oder "Existenz" verknüpft werden. Das Paradoxon erschüttert auch heute noch unseren gesunden Menschenverstand.
+

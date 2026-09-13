@@ -86,11 +86,11 @@ Zu verstehen, wie PostCSS CSS verarbeitet, ist bei der Fehlersuche enorm hilfrei
 
 ```mermaid
 flowchart TD
-    A["Rohes CSS (styles.css)"] -->|Parser| B["AST (Abstrakter Syntaxbaum)"]
+    A["Rohes CSS (styles.css)"] -->|"Parser"| B["AST (Abstrakter Syntaxbaum)"]
     B --> C["Plugin 1: Tailwind CSS"]
     C --> D["Plugin 2: Autoprefixer"]
     D --> E["Plugin N: cssnano"]
-    E -->|Stringifier| F["Kompiliertes & optimiertes CSS"]
+    E -->|"Stringifier"| F["Kompiliertes & optimiertes CSS"]
 ```
 
 1. **Parser**: Analysiert die eingegebene rohe CSS-Zeichenfolge und wandelt sie in einen AST (Abstrakter Syntaxbaum) um, eine Datenstruktur, die programmgesteuert manipuliert werden kann.
@@ -272,8 +272,8 @@ Im Folgenden wird erläutert, wie der obige Go-Template-Code die CSS-Datei verar
 
 ```mermaid
 flowchart TD
-    A["assets/css/main.css"] -->|resources.Get| B["Hugo-Speicherbereich"]
-    B -->|resources.PostCSS| C["PostCSS + Tailwind JIT-Prozess"]
+    A["assets/css/main.css"] -->|"resources.Get"| B["Hugo-Speicherbereich"]
+    B -->|"resources.PostCSS"| C["PostCSS + Tailwind JIT-Prozess"]
     C --> D{"hugo.IsProduction ?"}
     D -- Ja (Produktionsumgebung) --> E["minify (Leerzeichen/Zeilenumbrüche entfernen)"]
     E --> F["fingerprint (Hash berechnen)"]
@@ -412,4 +412,5 @@ Das Tolle an dieser Architektur ist, **"dass Sie sie nur einmal einrichten müss
 Da zudem die ausgegebene CSS-Größe stets minimiert wird, führt dies direkt zu besseren Core Web Vitals-Scores und ist aus SEO-Sicht sehr vorteilhaft.
 
 Die Kombination aus Hugo und Tailwind CSS wird für jedes Projekt, vom persönlichen Tech-Blog bis zur großen Unternehmens-Website, weiterhin eine der "besten Entscheidungen" sein. Nutzen Sie diese mächtige Toolchain auf jeden Fall und genießen Sie ein komfortables Web-Entwicklungsleben!
+
 

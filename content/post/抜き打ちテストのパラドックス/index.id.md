@@ -59,15 +59,15 @@ Bukti Siswa A menggunakan teknik matematika yaitu **berpikir mundur mulai dari "
 
 ```mermaid
 graph TD
-    Fri["Pagi Hari Jumat<br>(Sen-Kam tanpa tes)"] -->|Dapat diprediksi 'Hanya ada Jumat'| NoFri["Tes ditiadakan hari Jumat"]
+    Fri["Pagi Hari Jumat<br>(Sen-Kam tanpa tes)"] -->|"Dapat diprediksi 'Hanya ada Jumat'"| NoFri["Tes ditiadakan hari Jumat"]
     
-    Thu["Pagi Hari Kamis<br>(Sen-Rab tanpa tes)"] -->|Dapat diprediksi 'Tidak ada Jumat, jadi sisa hari ini'| NoThu["Tes ditiadakan hari Kamis"]
+    Thu["Pagi Hari Kamis<br>(Sen-Rab tanpa tes)"] -->|"Dapat diprediksi 'Tidak ada Jumat, jadi sisa hari ini'"| NoThu["Tes ditiadakan hari Kamis"]
     
-    Wed["Pagi Hari Rabu"] -->|Dapat diprediksi 'Tidak ada Kam & Jum, jadi sisa hari ini'| NoWed["Tes ditiadakan hari Rabu"]
+    Wed["Pagi Hari Rabu"] -->|"Dapat diprediksi 'Tidak ada Kam & Jum, jadi sisa hari ini'"| NoWed["Tes ditiadakan hari Rabu"]
     
-    Tue["Pagi Hari Selasa"] -->|Dapat diprediksi serupa| NoTue["Tes ditiadakan hari Selasa"]
+    Tue["Pagi Hari Selasa"] -->|"Dapat diprediksi serupa"| NoTue["Tes ditiadakan hari Selasa"]
     
-    Mon["Pagi Hari Senin"] -->|Dapat diprediksi serupa| NoMon["Tes ditiadakan hari Senin"]
+    Mon["Pagi Hari Senin"] -->|"Dapat diprediksi serupa"| NoMon["Tes ditiadakan hari Senin"]
     
     NoFri -.-> Thu
     NoThu -.-> Wed
@@ -142,3 +142,4 @@ Paradoks ini tidak hanya berlaku dalam matematika, tetapi juga dapat diterapkan 
 
 Apa yang kita anggap sebagai "penalaran sempurna" mungkin sebenarnya hanyalah istana pasir yang dibangun di atas keyakinan tak berdasar bahwa "pihak lain pasti mematuhi aturan".
 Jika guru Anda selanjutnya berkata "Saya akan mengadakan tes dadakan", hal yang paling rasional untuk dilakukan tampaknya adalah berhenti memutar balik logika dan diam-diam belajar setiap hari.
+

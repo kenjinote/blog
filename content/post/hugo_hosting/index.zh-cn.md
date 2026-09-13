@@ -37,9 +37,9 @@ description: '这是一份关于如何利用Cloudflare Pages和GitHub Pages免�
 
 ```mermaid
 graph TD
-    A["用户 (东京)"] -->|低延迟| B["边缘节点 (NRT)"]
-    C["用户 (纽约)"] -->|低延迟| D["边缘节点 (EWR)"]
-    E["用户 (伦敦)"] -->|低延迟| F["边缘节点 (LHR)"]
+    A["用户 (东京)"] -->|"低延迟"| B["边缘节点 (NRT)"]
+    C["用户 (纽约)"] -->|"低延迟"| D["边缘节点 (EWR)"]
+    E["用户 (伦敦)"] -->|"低延迟"| F["边缘节点 (LHR)"]
     B --> G["源站存储 / 对象存储"]
     D --> G
     F --> G
@@ -255,6 +255,7 @@ Cloudflare Web Analytics只需嵌入一个非常轻量的JavaScript片段即可�
 5. **轻量级分析**: 引入兼顾隐私且不损耗性能的Cloudflare Web Analytics等工具。
 
 通过将这些实践结合起来，即可免费构建一个足以应对每月数百万PV级别大规模流量的、可扩展且坚固的博客系统。如果您正在考虑搭建技术博客、企业网站或个人作品集网站，请务必尝试一下这种 Jamstack + Hugo + Cloudflare Pages 的架构。
+
 
 
 

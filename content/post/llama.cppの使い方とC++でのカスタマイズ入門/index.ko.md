@@ -103,7 +103,7 @@ graph TD
     J --> K["선택된 토큰 ID"]
     K --> L["llama.cpp Detokenizer"]
     L --> M["출력 문자열"]
-    K -. "자기회귀 루프" .-> D
+    K -. 자기회귀 루프 .-> D
 ```
 
 텍스트 생성은 하나의 토큰이 출력될 때마다 그것이 다음 입력으로 KV Cache에 추가되고, 다시 계산 그래프를 통과하는 자기회귀적인 루프로 되어 있습니다.
@@ -383,3 +383,4 @@ Python 생태계는 프로토타이핑에는 매우 편리하지만, 엣지 디�
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

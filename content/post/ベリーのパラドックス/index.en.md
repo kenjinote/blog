@@ -83,7 +83,7 @@ We have just expressed the number $X$ using the **"16 Japanese characters"** in 
 graph TD
     Define["Definition:<br>X = The smallest integer not expressible in 19 characters or less"] --> CheckLength{"What is the character count of<br>『十九文字以内で表せない最小の整数』?"}
     
-    CheckLength -->|It is 16 characters| Contradiction["Contradiction!<br>X was expressed in 『16 characters』!"]
+    CheckLength -->|"It is 16 characters"| Contradiction["Contradiction!<br>X was expressed in 『16 characters』!"]
     
     Contradiction --> Paradox["X is supposed to be 『not expressible in 19 characters or less』<br>but it is 『expressible in 19 characters or less (16 characters)』"]
     
@@ -135,3 +135,4 @@ However, this problem served as a catalyst that made 20th-century mathematicians
 This paradox became an important milestone leading to cutting-edge studies that changed the history of mathematics, such as "Gödel's incompleteness theorems" (there are truths in mathematics that can never be proven) and "Kolmogorov complexity" (the theory of how short information can be compressed) in computer science.
 
 Just 16 characters of Japanese exposed the limits of mathematics. That is the beauty of the Berry Paradox.
+

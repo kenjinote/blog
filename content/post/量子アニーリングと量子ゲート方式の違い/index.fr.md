@@ -61,8 +61,8 @@ En d'autres termes, lorsque finalement $A(t) \to 0$ et $B(t) \to 1$, le système
 
 ```mermaid
 graph TD
-    A["Hamiltonien H_0 (État initial)"] -->| Changement adiabatique (suffisamment lent) | B["Maintien constant de l'état fondamental"]
-    A -->| Changement non-adiabatique (trop rapide / bruit thermique) | C["Transition vers l'état excité (Erreur)"]
+    A["Hamiltonien H_0 (État initial)"] -->|"Changement adiabatique (suffisamment lent)"| B["Maintien constant de l'état fondamental"]
+    A -->|"Changement non-adiabatique (trop rapide / bruit thermique)"| C["Transition vers l'état excité (Erreur)"]
     B --> D["Hamiltonien H_P (Solution optimale globale)"]
     C --> E["Piégé dans une solution optimale locale"]
     D --> F["Lecture de la solution"]
@@ -219,4 +219,5 @@ Les ordinateurs quantiques sont encore une technologie en développement, mais i
 
 ---
 *Cet article explique de manière exhaustive les concepts fondamentaux de l'informatique quantique jusqu'aux dernières tendances matérielles. Restez à l'écoute des futures tendances de recherche.*
+
 

@@ -35,10 +35,10 @@ Arsitektur pemrosesan cloud menggunakan FHE sama sekali berbeda dari arsitektur 
 
 ```mermaid
 graph TD
-    A["Klien (Menyimpan kunci privat)"] -->|1. Enkripsi plaintext x: E(x)| B["Server Cloud (Hanya data terenkripsi)"]
-    B -->|2. Terapkan fungsi f pada ciphertext: E(f(x))| B
-    B -->|3. Ciphertext dari hasil perhitungan E(y)| A
-    A -->|4. Dekripsi dengan kunci privat: y = f(x)| A
+    A["Klien (Menyimpan kunci privat)"] -->|"1. Enkripsi plaintext x: E(x)"| B["Server Cloud (Hanya data terenkripsi)"]
+    B -->|"2. Terapkan fungsi f pada ciphertext: E(f(x))"| B
+    B -->|"3. Ciphertext dari hasil perhitungan E(y)"| A
+    A -->|"4. Dekripsi dengan kunci privat: y = f(x)"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -264,4 +264,5 @@ Sama seperti penemuan kriptografi kunci publik (RSA) pada tahun 1970-an yang mem
 Saat ini, Fully Homomorphic Encryption (FHE) telah melompat dari teori di laboratorium, dan memasuki tahap di mana Microsoft, IBM, Intel, Google, dan banyak startup bersaing keras menuju implementasi praktisnya. Walaupun tantangan dalam biaya komputasi dan ukuran data masih ada, perbaikan kinerja terus berlanjut melampaui Hukum Moore berkat penyempurnaan algoritma dan evolusi akselerator hardware.
 
 Beberapa tahun dari sekarang, "komputasi data sambil tetap terenkripsi" tidak akan menjadi sesuatu yang istimewa, melainkan akan menjadi praktik perlindungan data standar dalam layanan cloud. FHE adalah kunci keamanan generasi berikutnya yang merealisasikan **keseimbangan tertinggi antara privasi absolut dan pemanfaatan data** dalam masyarakat yang digerakkan oleh data.
+
 

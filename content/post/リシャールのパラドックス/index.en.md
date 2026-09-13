@@ -71,10 +71,10 @@ graph TD
         X["X = 0.4128..."]
     end
     
-    R1 -->|Add 1 to the 1st digit| X
-    R2 -->|Add 1 to the 2nd digit| X
-    R3 -->|Add 1 to the 3rd digit| X
-    R4 -->|Add 1 to the 4th digit| X
+    R1 -->|"Add 1 to the 1st digit"| X
+    R2 -->|"Add 1 to the 2nd digit"| X
+    R3 -->|"Add 1 to the 3rd digit"| X
+    R4 -->|"Add 1 to the 4th digit"| X
     
     style X fill:#aaffaa,stroke:#333,stroke-width:2px
 ```
@@ -130,3 +130,4 @@ The result derived from this was the famous **"Gödel's Incompleteness Theorems"
 It was a monumental discovery proving the limits of human knowledge: "No matter how rigorously mathematical rules are established, 'truths that can neither be proved nor disproved' will inevitably arise within those rules (mathematics is incomplete)."
 
 Richard's Paradox began as a mere contradictory play on words, and eventually evolved into the ultimate weapon to shatter the "absoluteness" of mathematics itself.
+

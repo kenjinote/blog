@@ -164,12 +164,12 @@ Windows環境では、DisplayPortのMST（Multi-Stream Transport）機能を利�
 
 ```mermaid
 flowchart TD
-    A["PC / Mac System"] -->|Thunderbolt 4 Cable 40Gbps| B["Thunderbolt 4 Dock"]
-    B -->|DisplayPort 1.4| C["Primary Monitor (4K 60Hz)"]
-    B -->|Thunderbolt Downstream| D["Secondary Monitor (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["High-Speed Storage / Peripherals"]
+    A["PC / Mac System"] -->|"Thunderbolt 4 Cable 40Gbps"| B["Thunderbolt 4 Dock"]
+    B -->|"DisplayPort 1.4"| C["Primary Monitor (4K 60Hz)"]
+    B -->|"Thunderbolt Downstream"| D["Secondary Monitor (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["High-Speed Storage / Peripherals"]
     
-    C -.->|Windows Only MST| F["Tertiary Monitor (1080p)"]
+    C -.->|"Windows Only MST"| F["Tertiary Monitor (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ flowchart LR
 flowchart TD
     Start["開発環境の構築開始"] --> Q1{"メインのOSは何か？"}
     
-    Q1 -->|macOS| Mac["macOS環境"]
-    Q1 -->|Windows/Linux| Win["Windows / Linux環境"]
+    Q1 -->|"macOS"| Mac["macOS環境"]
+    Q1 -->|"Windows/Linux"| Win["Windows / Linux環境"]
     
     Mac --> Q2{"予算とGPU性能に余裕はあるか？"}
-    Q2 -->|Yes| M_5K["5K 27インチモニター × 2 (最高品質)"]
-    Q2 -->|No| M_4K["4K 24インチモニター × 2 または ウルトラワイド"]
+    Q2 -->|"Yes"| M_5K["5K 27インチモニター × 2 (最高品質)"]
+    Q2 -->|"No"| M_4K["4K 24インチモニター × 2 または ウルトラワイド"]
     
     Win --> Q3{"画面の区切り(ベゼル)が気になるか？"}
-    Q3 -->|Yes| W_UW["49インチ ウルトラワイドモニター + FancyZones"]
-    Q3 -->|No| W_Dual["4K 27インチ × 2 (コスパ最強)"]
+    Q3 -->|"Yes"| W_UW["49インチ ウルトラワイドモニター + FancyZones"]
+    Q3 -->|"No"| W_Dual["4K 27インチ × 2 (コスパ最強)"]
     
     M_5K --> End["エルゴノミクスアームを導入して完成"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 ディスプレイは一度購入すれば長年にわたってあなたの生産性を支え続けるインフラストラクチャです。本記事で解説した視界工学の原則、PPIの数学、帯域幅の限界、そしてソフトウェアによるウィンドウ管理を統合し、妥協のない最高のワークスペースを構築してください。それが、結果として最高のコードを生み出す最短ルートとなるはずです。
+
 
 
 

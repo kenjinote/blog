@@ -36,8 +36,8 @@ Após você adormecer, o experimentador joga **uma moeda justa** (uma moeda em q
 graph TD
     Sunday["Domingo: A Bela adormece"] --> Toss{"Cara ou Coroa"}
     
-    Toss -->|Cara (1/2)| Mon_Heads["Segunda-feira: Acorda + Pergunta<br>(Depois, fim do experimento)"]
-    Toss -->|Coroa (1/2)| Mon_Tails["Segunda-feira: Acorda + Pergunta<br>(Depois, memória apagada)"]
+    Toss -->|"Cara (1/2)"| Mon_Heads["Segunda-feira: Acorda + Pergunta<br>(Depois, fim do experimento)"]
+    Toss -->|"Coroa (1/2)"| Mon_Tails["Segunda-feira: Acorda + Pergunta<br>(Depois, memória apagada)"]
     
     Mon_Tails --> Tue_Tails["Terça-feira: Acorda + Pergunta<br>(Depois, fim do experimento)"]
     
@@ -125,3 +125,4 @@ Se você fosse a cobaia desse experimento, responderia "1/2" ou "1/3" ao acordar
 
 Qualquer que seja a sua resposta, haverá matemáticos de primeira linha no mundo para defendê-la.
 Como uma definição matemática aparentemente simples pode desmoronar assim que se vincula aos conceitos incômodos da "subjetividade" e "existência" humanas. Os paradoxos continuam a abalar o nosso senso comum todos os dias.
+

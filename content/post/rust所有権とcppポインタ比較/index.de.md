@@ -223,7 +223,7 @@ Da Rust auf Compiler-Ebene verbietet, "einen Wert zu ändern (veränderlich ausz
 graph LR
     A["Variable v (Eigentümer)"] --> B["Heap Array [1, 2, 3]"]
     C["Referenz 'first' (&v[0])"] -.->|"Unveränderliches Ausleihen"| B
-    A -->|X "Veränderliches Ausleihen verweigert!"| D["v.push(4)"]
+    A -->|"X "Veränderliches Ausleihen verweigert!""| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px
@@ -285,3 +285,5 @@ Wenn man Rust lernt, nachdem man die Freiheit und die Gefahren von C++ Zeigern v
 
 ---
 *Dieser Artikel ist eine vergleichende Betrachtung der Speicherverwaltungsmethoden in C++ und Rust. Wir hoffen, dass er als Referenz für die Auswahl der geeigneten Sprache entsprechend den Anforderungen des jeweiligen Projekts dient.*
+
+

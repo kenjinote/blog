@@ -37,9 +37,9 @@ All of these platforms use globally distributed CDNs (Content Delivery Networks)
 
 ```mermaid
 graph TD
-    A["User (Tokyo)"] -->|Low Latency| B["Edge Node (NRT)"]
-    C["User (New York)"] -->|Low Latency| D["Edge Node (EWR)"]
-    E["User (London)"] -->|Low Latency| F["Edge Node (LHR)"]
+    A["User (Tokyo)"] -->|"Low Latency"| B["Edge Node (NRT)"]
+    C["User (New York)"] -->|"Low Latency"| D["Edge Node (EWR)"]
+    E["User (London)"] -->|"Low Latency"| F["Edge Node (LHR)"]
     B --> G["Origin Storage / Object Store"]
     D --> G
     F --> G
@@ -254,6 +254,7 @@ When running static sites using Hugo, adopting modern hosting platforms like Clo
 5. **Lightweight Analytics**: Adopt privacy-friendly analytics like Cloudflare Web Analytics that won't compromise performance.
 
 By combining these, it is possible to build a scalable, robust blog system for free that can withstand massive traffic of several million PVs per month. If you are considering launching a tech blog, corporate site, or portfolio site, be sure to try out this Jamstack + Hugo + Cloudflare Pages setup.
+
 
 
 

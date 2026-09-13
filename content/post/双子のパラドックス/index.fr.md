@@ -34,8 +34,8 @@ graph TD
     A["Frères jumeaux (20 ans)"] --> B["Le cadet resté sur Terre"]
     A --> C["L'aîné voyageant dans l'espace à 80 % de la vitesse de la lumière"]
     
-    B -->|Le temps sur Terre s'écoule de 30 ans| D["Le cadet lors des retrouvailles : 50 ans"]
-    C -->|Le temps ralentit en raison de la dilatation du temps, seulement 18 ans s'écoulent| E["L'aîné lors des retrouvailles : 38 ans"]
+    B -->|"Le temps sur Terre s'écoule de 30 ans"| D["Le cadet lors des retrouvailles : 50 ans"]
+    C -->|"Le temps ralentit en raison de la dilatation du temps, seulement 18 ans s'écoulent"| E["L'aîné lors des retrouvailles : 38 ans"]
     
     D --> F{"Différence d'âge : 12 ans !"}
     E --> F
@@ -87,3 +87,4 @@ Au moment où l'aîné fait demi-tour et réaccélère vers la Terre, « l'horlo
 En conséquence, lors des retrouvailles, seule la réalité mathématiquement calculée que **« l'aîné a 38 ans et le cadet 50 ans »** demeure, et la contradiction est parfaitement résolue.
 
 Le paradoxe des jumeaux est l'une des expériences de pensée les plus belles de l'histoire de la physique, nous enseignant que notre bon sens selon lequel « le temps s'écoule de manière égale pour tous » n'est absolument pas valable face à l'immensité de l'univers et à la vitesse de la lumière.
+

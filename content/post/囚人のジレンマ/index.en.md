@@ -75,13 +75,13 @@ graph TD
     Start["Start of Choice"] --> Logic_You["Your Rational Thinking"]
     Start --> Logic_Friend["Friend's Rational Thinking"]
     
-    Logic_You -->|If the other is silent, confessing is better<br>If the other confesses, confessing is better| Betray_You["You choose to confess (betray)"]
-    Logic_Friend -->|If the other is silent, confessing is better<br>If the other confesses, confessing is better| Betray_Friend["Friend chooses to confess (betray)"]
+    Logic_You -->|"If the other is silent, confessing is better<br>If the other confesses, confessing is better"| Betray_You["You choose to confess (betray)"]
+    Logic_Friend -->|"If the other is silent, confessing is better<br>If the other confesses, confessing is better"| Betray_Friend["Friend chooses to confess (betray)"]
     
     Betray_You --> Result["Result: Both confess (-5, -5)"]
     Betray_Friend --> Result
     
-    Ideal["Ideal: Both remain silent (-1, -1)"] -.->|Individual rationality blocks<br>reaching this| Result
+    Ideal["Ideal: Both remain silent (-1, -1)"] -.->|"Individual rationality blocks<br>reaching this"| Result
     
     style Result fill:#ff9999,stroke:#333,stroke-width:2px
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
@@ -134,11 +134,11 @@ This strategy is strong because it has four characteristics: "Never betray first
 graph LR
     Start["1st Time: Cooperate unconditionally"] --> Round2
     
-    Round2["Observe opponent's action"] -->|Opponent cooperated| Act_Coop["Cooperate as well"]
-    Round2 -->|Opponent betrayed| Act_Betray["Betray as well (Retaliate)"]
+    Round2["Observe opponent's action"] -->|"Opponent cooperated"| Act_Coop["Cooperate as well"]
+    Round2 -->|"Opponent betrayed"| Act_Betray["Betray as well (Retaliate)"]
     
     Act_Coop --> Round2
-    Act_Betray -->|If opponent repents<br>and returns to cooperation| Act_Coop
+    Act_Betray -->|"If opponent repents<br>and returns to cooperation"| Act_Coop
 ```
 
 In human relationships and international society as well, if a long-term relationship is assumed, by sharing a rule like the "Tit for Tat" strategy—**"basically cooperate, but penalize betrayal"**—we can overcome the prisoner's dilemma and build cooperative relationships.
@@ -151,3 +151,4 @@ The individual rationality of "wanting to be the only one who profits" or "not w
 At the same time, however, game theory also teaches us that as long as the condition of "the relationship continuing long-term" is met, **"trusting and cooperating with each other" is the most rational strategy that ultimately maximizes one's own profit as well**.
 
 The next time you wonder, "Should I cheat just a little bit for myself?", try to remember this payoff matrix of the Prisoner's Dilemma. Pursuing immediate profit through "rational betrayal" might be the most irrational choice in the long run.
+

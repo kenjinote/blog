@@ -143,7 +143,7 @@ graph TD
     Root --> Inc["include/"]
     Root --> CMake["CMakeLists.txt"]
     
-    Root -. "Crear dir build" .-> Build["build/ (Fuera de la fuente)"]
+    Root -. Crear dir build .-> Build["build/ (Fuera de la fuente)"]
     Build --> Obj["CMakeFiles/ (Archivos objeto, cachés)"]
     Build --> Bin["Binarios (MyApp.exe)"]
     Build --> Gen["Makefile generado / build.ninja"]
@@ -369,4 +369,5 @@ Repasemos los puntos clave.
 7. **Enfoque matemático**: Ser consciente de la Ley de Amdahl, reducir las dependencias y aumentar la eficiencia de la compilación en paralelo.
 
 CMake puede parecer difícil al principio, pero una vez que comprenda los conceptos de objetivos y propiedades, podrá mantener un entorno de compilación ordenado, sin importar cuán complejo y grande sea su proyecto C++. Esperamos que utilice este artículo como referencia y construya su entorno de desarrollo en C++ con la sintaxis más reciente de CMake moderno.
+
 

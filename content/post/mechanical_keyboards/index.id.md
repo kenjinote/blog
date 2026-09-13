@@ -42,9 +42,9 @@ Pada tactile switch (brown switch) atau clicky switch (blue switch), terdapat ha
 ```mermaid
 flowchart TD
     A["Mulai penekanan oleh jari"] --> B{"Jenis Switch"}
-    B -->|Linear| C["Resistansi meningkat secara linear"]
-    B -->|Tactile| D["Hambatan fisik di tengah (Bump)"]
-    B -->|Clicky| E["Mekanisme suara aktif bersamaan dengan bump"]
+    B -->|"Linear"| C["Resistansi meningkat secara linear"]
+    B -->|"Tactile"| D["Hambatan fisik di tengah (Bump)"]
+    B -->|"Clicky"| E["Mekanisme suara aktif bersamaan dengan bump"]
     C --> F["Mencapai titik aktuasi (Actuation Point)"]
     D --> F
     E --> F
@@ -78,13 +78,13 @@ Di dalam keyboard, terdapat puluhan hingga lebih dari 100 switch, tetapi karena 
 
 ```mermaid
 flowchart LR
-    M["Mikrokontroler (MCU)"] -->|Beralih output Row ke High/Low| R1["Row 1"]
+    M["Mikrokontroler (MCU)"] -->|"Beralih output Row ke High/Low"| R1["Row 1"]
     M --> R2["Row 2"]
     R1 --> S11["Switch 1,1"] & S12["Switch 1,2"]
     R2 --> S21["Switch 2,1"] & S22["Switch 2,2"]
     S11 & S21 --> C1["Column 1"]
     S12 & S22 --> C2["Column 2"]
-    C1 & C2 -->|Mendeteksi dan membaca tegangan| M
+    C1 & C2 -->|"Mendeteksi dan membaca tegangan"| M
 ```
 
 **Polling Rate (Tingkat Polling)** adalah frekuensi di mana keyboard melaporkan "status tombol saat ini" ke PC. Keyboard standar biasanya memiliki 125Hz (1 kali per 8ms), tetapi model high-end dapat memiliki 1000Hz (1 kali per 1ms), dan akhir-akhir ini bahkan ada yang berkecepatan sangat tinggi seperti 8000Hz (1 kali per 0.125ms).
@@ -201,6 +201,7 @@ Memilih keyboard adalah proses "mengoptimalkan antarmuka diri sendiri" sepanjang
 Kelima keyboard yang diperkenalkan kali ini (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) semuanya adalah mahakarya yang bertujuan untuk memberikan "pengalaman input terbaik" dengan pendekatan yang berbeda-beda. Kami harap Anda dapat menemukan partner terbaik yang sesuai dengan gaya mengetik dan masalah fisik yang Anda hadapi.
 
 Investasi pada keyboard ini pasti akan memberikan pengembalian berupa "jutaan baris kode tanpa bug" kepada Anda.
+
 
 
 

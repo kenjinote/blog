@@ -37,18 +37,18 @@ Mais pourquoi donc ? La logique de Zénon est la suivante :
 ```mermaid
 graph LR
     subgraph "Étape 1"
-        A1["Achille (Départ)"] -->|Rattrape| T1["Position initiale de la tortue"]
-        T1_Start["Tortue"] -->|Se déplace| T2_Pos["Un peu plus loin"]
+        A1["Achille (Départ)"] -->|"Rattrape"| T1["Position initiale de la tortue"]
+        T1_Start["Tortue"] -->|"Se déplace"| T2_Pos["Un peu plus loin"]
     end
     
     subgraph "Étape 2"
-        A2["Achille"] -->|Rattrape| T2["Position suivante de la tortue"]
-        T2_Start["Tortue"] -->|Se déplace| T3_Pos["Encore plus loin"]
+        A2["Achille"] -->|"Rattrape"| T2["Position suivante de la tortue"]
+        T2_Start["Tortue"] -->|"Se déplace"| T3_Pos["Encore plus loin"]
     end
     
     subgraph "Étape 3"
-        A3["Achille"] -->|Rattrape| T3["Position encore suivante de la tortue"]
-        T3_Start["Tortue"] -->|Continue à l'infini...| Infinity["Ne la rattrapera jamais !?"]
+        A3["Achille"] -->|"Rattrape"| T3["Position encore suivante de la tortue"]
+        T3_Start["Tortue"] -->|"Continue à l'infini..."| Infinity["Ne la rattrapera jamais !?"]
     end
 ```
 
@@ -167,4 +167,5 @@ Cependant, pour les philosophes grecs anciens qui ne possédaient pas les concep
 Les questions profondes posées par ce paradoxe, telles que « Qu'est-ce que le continu ? » et « Que signifie être divisé à l'infini ? », sont devenues un moteur important qui a conduit à la naissance du **« calcul infinitésimal »** par Newton et Leibniz plus tard, et même aux fondements des mathématiques modernes.
 
 Les grands paradoxes ne font pas que tromper les gens, ce sont aussi les clés qui ouvrent les portes de nouvelles mathématiques.
+
 

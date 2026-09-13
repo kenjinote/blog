@@ -219,16 +219,16 @@ The submission process to the Microsoft Store is done through the Partner Center
 
 ```mermaid
 flowchart TD
-    A["Developer (Visual Studio)"] -->|Build & Sign| B["MSIX Bundle Generation"]
+    A["Developer (Visual Studio)"] -->|"Build & Sign"| B["MSIX Bundle Generation"]
     B --> C["Windows App Certification Kit (WACK)"]
-    C -->|Pass| D["Partner Center Dashboard"]
-    C -->|Fail| E["Fix Code / Manifest Issues"]
+    C -->|"Pass"| D["Partner Center Dashboard"]
+    C -->|"Fail"| E["Fix Code / Manifest Issues"]
     E --> A
-    D -->|Upload Package| F["Store Certification Process"]
+    D -->|"Upload Package"| F["Store Certification Process"]
     F --> G["Automated Malware Scan"]
     G --> H["Manual Content Review"]
-    H -->|Approved| I["Publishing to Microsoft Store"]
-    H -->|Rejected| J["Address Feedback & Re-submit"]
+    H -->|"Approved"| I["Publishing to Microsoft Store"]
+    H -->|"Rejected"| J["Address Feedback & Re-submit"]
     J --> D
     I --> K["App is Live!"]
 ```
@@ -303,4 +303,5 @@ Precisely because the evolution of web technologies has ushered in an era where 
 WinUI 3 and the Windows App SDK are still being actively developed, and they are the best tools for building beautiful applications that fully utilize the UI paradigms of Windows 11. I sincerely hope that this blog post will be of some help to developers who are about to challenge themselves with Windows native app development, and that even one more wonderful app will line the Store.
 
 Development is not over yet. In the next version of LogicPad, I plan to integrate a custom waveform rendering engine utilizing Direct2D. In the next article, I plan to dive deep into interoperability between DirectX and WinUI 3 (utilizing SwapChainPanel). Please look forward to it.
+
 

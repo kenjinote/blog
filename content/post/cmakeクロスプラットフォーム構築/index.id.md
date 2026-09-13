@@ -143,7 +143,7 @@ graph TD
     Root --> Inc["include/"]
     Root --> CMake["CMakeLists.txt"]
     
-    Root -. "Buat dir build" .-> Build["build/ (Out-of-source)"]
+    Root -. Buat dir build .-> Build["build/ (Out-of-source)"]
     Build --> Obj["CMakeFiles/ (Object files, caches)"]
     Build --> Bin["Binaries (MyApp.exe)"]
     Build --> Gen["Generated Makefile / build.ninja"]
@@ -369,4 +369,5 @@ Mari kita ulas poin-poin utamanya.
 7. **Pendekatan Matematis**: Perhatikan Hukum Amdahl, kurangi dependensi untuk meningkatkan efisiensi kompilasi paralel.
 
 Meski awalnya mungkin terasa sulit, namun setelah Anda menguasai konsep target dan properti, sekompleks dan sebesar apa pun proyek C++ yang ditangani, Anda akan dapat menjaga lingkungan build yang tertata rapi. Silakan jadikan artikel ini sebagai referensi dan cobalah membangun lingkungan pengembangan C++ dengan sintaks Modern CMake terbaru.
+
 

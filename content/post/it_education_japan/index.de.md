@@ -33,13 +33,13 @@ Das folgende Mermaid-Diagramm visualisiert die Lernhürden und Drop-off-Punkte (
 ```mermaid
 flowchart TD
     A["Grundschule: Scratch (Visuell/Blockbasiert)"] --> B{"Mittelschule: Hürde beim Übergang zu Textsprachen"}
-    B -->|Scheitern durch strikte Syntaxfehler| C["Abbruch (Syntax-Allergie)"]
-    B -->|Mangelndes Verständnis von Variablen/statischer Typisierung| D["Abbruch (Hürde der Typen)"]
-    B -->|Erfolgreicher Übergang| E["Oberschule: Information I (Grundlagen in Python/JavaScript etc.)"]
+    B -->|"Scheitern durch strikte Syntaxfehler"| C["Abbruch (Syntax-Allergie)"]
+    B -->|"Mangelndes Verständnis von Variablen/statischer Typisierung"| D["Abbruch (Hürde der Typen)"]
+    B -->|"Erfolgreicher Übergang"| E["Oberschule: Information I (Grundlagen in Python/JavaScript etc.)"]
     E --> F{"Hürde bei Algorithmus-Design und Datenstrukturen"}
-    F -->|Unverständnis von Zeit- und Speicherkomplexität| G["Ineffizienter Code (Leistungsabfall durch Massenproduktion von O(N^2))"]
-    F -->|Blackboxing von Speicherverwaltung und Referenzen| H["Coder, der sich auf oberflächliche API-Aufrufe beschränkt"]
-    F -->|Konzeptioneller Durchbruch| I["Echtes CS-Lernen (C/C++, Java, Low-Level-Architektur)"]
+    F -->|"Unverständnis von Zeit- und Speicherkomplexität"| G["Ineffizienter Code (Leistungsabfall durch Massenproduktion von O(N^2))"]
+    F -->|"Blackboxing von Speicherverwaltung und Referenzen"| H["Coder, der sich auf oberflächliche API-Aufrufe beschränkt"]
+    F -->|"Konzeptioneller Durchbruch"| I["Echtes CS-Lernen (C/C++, Java, Low-Level-Architektur)"]
     I --> J["Hochqualifizierte IT-Profis, die die Industrie dringend benötigt"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Kompilier-/Laufzeitumgebung"]
         D["Persistenter Dateispeicher"]
     end
-    A -->| HTTP/WebSocket-Kommunikation: Schwere Verzögerungen durch schwache Schulverbindungen | B
+    A -->|"HTTP/WebSocket-Kommunikation: Schwere Verzögerungen durch schwache Schulverbindungen"| B
     B <--> C
     B <--> D
 ```
@@ -256,6 +256,7 @@ Wie wir diese schwierigste und wichtigste Phase, die Zeit „nach“ der obligat
 ---
 
 *In diesem Artikel haben wir die Komplexitätstheorie und die infrastrukturellen Grenzen des GIGA School-Konzepts skizziert. Noch spezifischere Themen der Informatik (wie Algorithmen für verteilte Systeme und Details zu Low-Level-Speicherverwaltungsmethoden) werden in zukünftigen Beiträgen dieser Reihe nach und nach behandelt.*
+
 
 
 

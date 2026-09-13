@@ -326,18 +326,18 @@ $$ R = e^{-\frac{t}{S}} $$
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Python 추출 스크립트| B["가공되지 않은 트렌드 데이터"]
-    C["GitHub Actions (Cron)"] -->|정기 실행 스케줄| A
-    B -->|Markdown 포맷 변환| D["Daily Inputs (Fleeting Notes)"]
-    D -->|독해 및 요약의 수작업| E["Obsidian Zettelkasten"]
-    E -->|영구 노트화| F["Permanent Notes"]
-    F -->|자동 동기화 처리| G["OpenAI Embeddings API"]
-    G -->|벡터 변환| H["Pinecone Vector Database"]
-    H -->|시맨틱 검색| I["관련 지식 발견 및 추출"]
-    F -->|플래시카드 생성| J["Anki (Spaced Repetition)"]
-    J -->|장기 기억으로부터의 영감| K["Combinatorial Creativity"]
+    A["Hacker News / Lobsters API"] -->|"Python 추출 스크립트"| B["가공되지 않은 트렌드 데이터"]
+    C["GitHub Actions (Cron)"] -->|"정기 실행 스케줄"| A
+    B -->|"Markdown 포맷 변환"| D["Daily Inputs (Fleeting Notes)"]
+    D -->|"독해 및 요약의 수작업"| E["Obsidian Zettelkasten"]
+    E -->|"영구 노트화"| F["Permanent Notes"]
+    F -->|"자동 동기화 처리"| G["OpenAI Embeddings API"]
+    G -->|"벡터 변환"| H["Pinecone Vector Database"]
+    H -->|"시맨틱 검색"| I["관련 지식 발견 및 추출"]
+    F -->|"플래시카드 생성"| J["Anki (Spaced Repetition)"]
+    J -->|"장기 기억으로부터의 영감"| K["Combinatorial Creativity"]
     I --> K
-    K -->|플롯 및 구성안 작성| L["Blog Post Draft (기사 집필)"]
+    K -->|"플롯 및 구성안 작성"| L["Blog Post Draft (기사 집필)"]
 ```
 
 이 시스템의 특징은 **'수동으로 수행해야 할 지적 작업(요약, 고찰, 집필)'과 '기계에 맡겨야 할 작업(수집, 검색, 간격 반복 스케줄링)'이 완벽하게 분리되어 있다**는 점입니다. 이를 통해 집필자는 가장 부가가치가 높은 '생각하는 것'과 '조합하는 것'에 전념할 수 있습니다.
@@ -382,5 +382,6 @@ stateDiagram-v2
 이러한 요소들을 조합한 포괄적인 파이프라인을 구축함으로써 블로그 아이디어는 고갈되기는커녕 쓰면 쓸수록 새로운 아이디어가 자기 증식해 나가는 상태를 만들 수 있습니다.
 
 처음부터 이 모든 것을 완벽하게 구축할 필요는 없습니다. 먼저 Hacker News API를 호출하는 간단한 스크립트를 만들고, 관심 있는 기사를 마크다운으로 메모하는 습관부터 시작해 보세요. 당신의 기술 블로그가 차세대의 뛰어난 아이디어 발신지가 되기를 바랍니다.
+
 
 

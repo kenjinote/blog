@@ -143,7 +143,7 @@ graph TD
     Root --> Inc["include/"]
     Root --> CMake["CMakeLists.txt"]
     
-    Root -. "Create build dir" .-> Build["build/ (Out-of-source)"]
+    Root -. Create build dir .-> Build["build/ (Out-of-source)"]
     Build --> Obj["CMakeFiles/ (Object files, caches)"]
     Build --> Bin["Binaries (MyApp.exe)"]
     Build --> Gen["Generated Makefile / build.ninja"]
@@ -369,4 +369,5 @@ Let's review the key points.
 7. **Mathematical Approach**: Be mindful of Amdahl's Law, reduce dependencies, and increase the efficiency of parallel compilation.
 
 CMake might seem difficult to understand at first, but once you grasp the concepts of targets and properties, you will be able to maintain a well-organized build environment, no matter how complex or large your C++ project may be. We hope you will use this article as a reference to construct your C++ development environment using the latest Modern CMake notation.
+
 

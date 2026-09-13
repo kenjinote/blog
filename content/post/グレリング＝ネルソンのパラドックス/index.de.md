@@ -64,15 +64,15 @@ Egal in welche Richtung wir gehen, die Logik bricht zusammen.
 graph TD
     A["Wort „heterologisch“ (Heterological)"] --> B{"Wie wird es klassifiziert?"}
     
-    B -->|ist autologisch| C["Definition: Besitzt die eigene Bedeutung als Eigenschaft"]
+    B -->|"ist autologisch"| C["Definition: Besitzt die eigene Bedeutung als Eigenschaft"]
     C --> D["Die eigene Bedeutung ist „heterologisch“"]
     D --> E["Ergebnis: Es ist heterologisch!"]
-    E -->|Widerspruch| B
+    E -->|"Widerspruch"| B
     
-    B -->|ist heterologisch| F["Definition: Besitzt die eigene Bedeutung nicht als Eigenschaft"]
+    B -->|"ist heterologisch"| F["Definition: Besitzt die eigene Bedeutung nicht als Eigenschaft"]
     F --> G["Die eigene Bedeutung ist „heterologisch“"]
     G --> H["Ergebnis: Es ist autologisch!"]
-    H -->|Widerspruch| B
+    H -->|"Widerspruch"| B
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
@@ -102,3 +102,4 @@ Wenn Wörter sich auf sich selbst beziehen (Selbstreferenz), besteht immer die G
 Dies ist nicht nur ein Problem der Philosophie oder Linguistik. Auch in der Informatik und der Künstlichen Intelligenz stößt man auf ähnliche logische Barrieren, wenn Programme versuchen, ihren eigenen Code auszuwerten und zu modifizieren, oder wenn Modelle zur Verarbeitung natürlicher Sprache semantische Widersprüche interpretieren.
 
 Das Grelling-Nelson-Paradoxon ist ein Gedankenexperiment, das den Bug (die Grenze), der dem System „Sprache“ innewohnt, hervorragend visualisiert.
+

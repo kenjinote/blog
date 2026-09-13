@@ -146,17 +146,17 @@ graph TD
         Labeler["內容審核標記器 (事實查核者)"]
     end
 
-    Client -->|讀取/寫入| PDS1
-    Client -->|檢視| AppView
+    Client -->|"讀取/寫入"| PDS1
+    Client -->|"檢視"| AppView
     
-    PDS1 -->|透過 WebSocket 同步| Relay
-    PDS2 -->|透過 WebSocket 同步| Relay
+    PDS1 -->|"透過 WebSocket 同步"| Relay
+    PDS2 -->|"透過 WebSocket 同步"| Relay
     
-    Relay -->|建立索引| AppView
+    Relay -->|"建立索引"| AppView
     
-    AppView -.->|請求動態| FeedGen1
-    AppView -.->|請求動態| FeedGen2
-    AppView -.->|取得標記| Labeler
+    AppView -.->|"請求動態"| FeedGen1
+    AppView -.->|"請求動態"| FeedGen2
+    AppView -.->|"取得標記"| Labeler
 ```
 
 AT Protocol 最大的貢獻在於，它將「動態生成（演算法）」和「內容審核（標記）」從平台主體中分離出來，讓使用者可以自由選擇並組合（Composable）（即自訂動態 / 可疊加的內容審核）。
@@ -194,5 +194,6 @@ AT Protocol 最大的貢獻在於，它將「動態生成（演算法）」和�
 從第 101 篇文章開始，作為一名技術人員，我仍將繼續站在程式碼與社會的交會點上，加深我的思索。非常感謝您耐心閱讀這篇長文到最後。期盼未來的網路不再是阻隔我們的牆，而是我們相互理解的橋樑。
 
 （完）
+
 
 

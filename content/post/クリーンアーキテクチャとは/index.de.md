@@ -109,9 +109,9 @@ Ebenso dürfen Datenformate, die in einem äußeren Kreis verwendet werden, nich
 
 ```mermaid
 graph LR
-    A["Frameworks & Treiber"] -->| Abhängigkeit | B["Schnittstellenadapter"]
-    B -->| Abhängigkeit | C["Anwendungsfälle"]
-    C -->| Abhängigkeit | D["Entitäten"]
+    A["Frameworks & Treiber"] -->|"Abhängigkeit"| B["Schnittstellenadapter"]
+    B -->|"Abhängigkeit"| C["Anwendungsfälle"]
+    C -->|"Abhängigkeit"| D["Entitäten"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,4 +422,5 @@ Wichtig ist nicht, die Verzeichnisstruktur der Clean Architecture blind zu imiti
 
 ---
 *Referenz: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" von Robert C. Martin*
+
 

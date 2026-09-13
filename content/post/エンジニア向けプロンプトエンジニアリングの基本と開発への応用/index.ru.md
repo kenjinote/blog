@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["Внешняя среда (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (Результаты / логи ошибок от инструмента)"]
     Observation --> Thought
-    Thought -->|Собрано достаточно информации| Finish["Finish (Окончательный ответ / вывод кода)"]
+    Thought -->|"Собрано достаточно информации"| Finish["Finish (Окончательный ответ / вывод кода)"]
 ```
 
 ### 4.2 Реализация с помощью Function Calling (использование инструментов)
@@ -387,3 +387,4 @@ def is_valid_ipv4(ip_str):
 
 ---
 *Создано с использованием методов промпт-инжиниринга.*
+

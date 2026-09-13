@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["External Environment (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (Execution Results / Error Logs from Tools)"]
     Observation --> Thought
-    Thought -->|Sufficient Information Gathered| Finish["Finish (Final Answer / Code Output)"]
+    Thought -->|"Sufficient Information Gathered"| Finish["Finish (Final Answer / Code Output)"]
 ```
 
 ### 4.2 Implementation via Function Calling (Tool Use)
@@ -387,3 +387,4 @@ By mastering these principles, prompts become not just text strings, but robust,
 
 ---
 *Generated using Prompt Engineering Techniques.*
+

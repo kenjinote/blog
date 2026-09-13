@@ -75,13 +75,13 @@ graph TD
     Start["Beginn der Entscheidung"] --> Logic_You["Ihr rationales Denken"]
     Start --> Logic_Friend["Rationales Denken des Freundes"]
     
-    Logic_You -->|Wenn der andere schweigt, ist Gestehen besser<br>Wenn der andere gesteht, ist Gestehen besser| Betray_You["Sie wählen Gestehen (Verrat)"]
-    Logic_Friend -->|Wenn der andere schweigt, ist Gestehen besser<br>Wenn der andere gesteht, ist Gestehen besser| Betray_Friend["Freund wählt Gestehen (Verrat)"]
+    Logic_You -->|"Wenn der andere schweigt, ist Gestehen besser<br>Wenn der andere gesteht, ist Gestehen besser"| Betray_You["Sie wählen Gestehen (Verrat)"]
+    Logic_Friend -->|"Wenn der andere schweigt, ist Gestehen besser<br>Wenn der andere gesteht, ist Gestehen besser"| Betray_Friend["Freund wählt Gestehen (Verrat)"]
     
     Betray_You --> Result["Ergebnis: Beide gestehen (-5, -5)"]
     Betray_Friend --> Result
     
-    Ideal["Ideal: Beide schweigen (-1, -1)"] -.->|Individuelle Rationalität stört<br>Ziel nicht erreichbar| Result
+    Ideal["Ideal: Beide schweigen (-1, -1)"] -.->|"Individuelle Rationalität stört<br>Ziel nicht erreichbar"| Result
     
     style Result fill:#ff9999,stroke:#333,stroke-width:2px
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
@@ -134,11 +134,11 @@ Der Grund, warum diese Strategie so stark ist, liegt an vier Eigenschaften: "Ich
 graph LR
     Start["1. Mal: Bedingungslose Kooperation"] --> Round2
     
-    Round2["Beobachte die Aktion des Gegners"] -->|Gegner kooperiert| Act_Coop["Selbst auch kooperieren"]
-    Round2 -->|Gegner hat verraten| Act_Betray["Selbst verraten (Vergeltung)"]
+    Round2["Beobachte die Aktion des Gegners"] -->|"Gegner kooperiert"| Act_Coop["Selbst auch kooperieren"]
+    Round2 -->|"Gegner hat verraten"| Act_Betray["Selbst verraten (Vergeltung)"]
     
     Act_Coop --> Round2
-    Act_Betray -->|Wenn der Gegner bereut und<br>zur Kooperation zurückkehrt| Act_Coop
+    Act_Betray -->|"Wenn der Gegner bereut und<br>zur Kooperation zurückkehrt"| Act_Coop
 ```
 
 Selbst in menschlichen Beziehungen und in der internationalen Gemeinschaft, vorausgesetzt, es besteht eine langfristige Beziehung, kann das Gefangenendilemma überwunden und eine kooperative Beziehung aufgebaut werden, indem man eine Regel wie bei der "Tit-for-Tat-Strategie" teilt: **"Grundsätzlich kooperieren, aber Verrat wird bestraft."**
@@ -151,3 +151,4 @@ Die individuelle Rationalität, "nur selbst profitieren zu wollen" oder "nicht �
 Gleichzeitig lehrt uns die Spieltheorie jedoch, dass solange die Bedingung "die Beziehung dauert langfristig an" erfüllt ist, **"gegenseitiges Vertrauen und Kooperation" die rationalste Strategie ist, die letztendlich auch den eigenen Nutzen maximiert**.
 
 Wenn Sie das nächste Mal zögern und denken "soll ich ein bisschen schummeln?", erinnern Sie sich an die Auszahlungsmatrix dieses Gefangenendilemmas. Ein "rationaler Verrat", der nur auf kurzfristigen Gewinn abzielt, könnte auf lange Sicht die irrationalste Wahl sein.
+

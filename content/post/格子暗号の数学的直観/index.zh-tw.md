@@ -134,8 +134,8 @@ Oded Regev 最大的貢獻，就是將這個 LWE 問題的困難度，在數學�
 
 ```mermaid
 graph TD
-    A["最壞情況的格子問題 (Gap-SVP, SIVP)"] -->|量子/古典歸約| B["平均情況的 LWE 問題"]
-    B -->|密碼學構造| C["基於 LWE 的密碼系統 (PKE, KEM, FHE)"]
+    A["最壞情況的格子問題 (Gap-SVP, SIVP)"] -->|"量子/古典歸約"| B["平均情況的 LWE 問題"]
+    B -->|"密碼學構造"| C["基於 LWE 的密碼系統 (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ Ring-LWE 雖然效率很高，但卻也令人擔心理想格子特殊的代數�
 4. 在現實的協定中，為了提升通訊效率和計算速度，採用了使用多項式環的 **Ring-LWE** 與 **Module-LWE**，並成為了 NIST 標準 **ML-KEM** 的基礎。
 
 在量子電腦帶來前所未有的計算典範轉移之際，誕生於古典線性代數與數論深淵之中的「格子密碼學」，將肩負起未來網際網路安全基礎的重任，這是一件非常浪漫的事情。格子密碼學基礎的數學絕非過於艱澀難懂，只要具備線性代數與機率的基礎知識，就能充分理解其優美的結構。希望本文能幫助您理解作為 PQC 核心的格子密碼學。
+

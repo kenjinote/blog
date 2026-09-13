@@ -57,7 +57,7 @@ O diagrama Mermaid abaixo mostra a visão geral desde o momento em que a requisi
 
 ```mermaid
 graph TD
-    A["Aplicação Cliente"] -->|HTTP/REST ou gRPC| B["Gateway de API"]
+    A["Aplicação Cliente"] -->|"HTTP/REST ou gRPC"| B["Gateway de API"]
     B --> C["Balanceador de Carga"]
     C --> D["Cluster de Inferência"]
     D --> E["Tokenizador (BPE / SentencePiece)"]
@@ -66,7 +66,7 @@ graph TD
     G --> H["Camada de Saída (Logits)"]
     H --> I["Amostrador (Temperature, Top-p, Top-k)"]
     I --> J["Destokenizador"]
-    J -->|Resposta em Streaming (Chunk)| A
+    J -->|"Resposta em Streaming (Chunk)"| A
 ```
 
 ### 3.1 Algoritmo de Tokenização (Tokenization)
@@ -344,3 +344,4 @@ A tendência futura de arquitetura é não depender (e sofrer vendor lock-in) de
 Por exemplo, responder perguntas simples dos usuários usando as opções mais baratas e rápidas, como o `GPT-4o-mini` ou o `Gemini 1.5 Flash`, e recorrer ao `Claude 3.5 Sonnet` apenas quando for determinado que um processamento complexo é necessário, para se obter o equilíbrio perfeito entre custo e desempenho.
 
 A evolução da IA é incessante. Entenda profundamente as forças e fraquezas de cada API e as características de sua arquitetura, e construa aplicações de IA flexíveis e escaláveis.
+

@@ -164,12 +164,12 @@ Bagan alir (flowchart) Mermaid di bawah ini menunjukkan struktur routing sinyal 
 
 ```mermaid
 flowchart TD
-    A["Sistem PC / Mac"] -->|Thunderbolt 4 Cable 40Gbps| B["Dock Thunderbolt 4"]
-    B -->|DisplayPort 1.4| C["Monitor Utama (4K 60Hz)"]
-    B -->|Thunderbolt Downstream| D["Monitor Kedua (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["Penyimpanan / Periferal Berkecepatan Tinggi"]
+    A["Sistem PC / Mac"] -->|"Thunderbolt 4 Cable 40Gbps"| B["Dock Thunderbolt 4"]
+    B -->|"DisplayPort 1.4"| C["Monitor Utama (4K 60Hz)"]
+    B -->|"Thunderbolt Downstream"| D["Monitor Kedua (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["Penyimpanan / Periferal Berkecepatan Tinggi"]
     
-    C -.->|Windows Only MST| F["Monitor Ketiga (1080p)"]
+    C -.->|"Windows Only MST"| F["Monitor Ketiga (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ Dalam membangun lingkungan multi-layar, tidak ada satu jawaban tunggal yang coco
 flowchart TD
     Start["Mulai Membangun Lingkungan Pengembangan"] --> Q1{"Apa OS Utamanya?"}
     
-    Q1 -->|macOS| Mac["Lingkungan macOS"]
-    Q1 -->|Windows/Linux| Win["Lingkungan Windows / Linux"]
+    Q1 -->|"macOS"| Mac["Lingkungan macOS"]
+    Q1 -->|"Windows/Linux"| Win["Lingkungan Windows / Linux"]
     
     Mac --> Q2{"Apakah ada kelonggaran pada Anggaran dan Performa GPU?"}
-    Q2 -->|Yes| M_5K["Monitor 5K 27 inci × 2 (Kualitas Tertinggi)"]
-    Q2 -->|No| M_4K["Monitor 4K 24 inci × 2 atau Ultrawide"]
+    Q2 -->|"Yes"| M_5K["Monitor 5K 27 inci × 2 (Kualitas Tertinggi)"]
+    Q2 -->|"No"| M_4K["Monitor 4K 24 inci × 2 atau Ultrawide"]
     
     Win --> Q3{"Apakah sekat layar (Bezel) mengganggu Anda?"}
-    Q3 -->|Yes| W_UW["Monitor Ultrawide 49 inci + FancyZones"]
-    Q3 -->|No| W_Dual["Monitor 4K 27 inci × 2 (Performa Terbaik)"]
+    Q3 -->|"Yes"| W_UW["Monitor Ultrawide 49 inci + FancyZones"]
+    Q3 -->|"No"| W_Dual["Monitor 4K 27 inci × 2 (Performa Terbaik)"]
     
     M_5K --> End["Pasang Lengan Ergonomis untuk Penyelesaian"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 Layar adalah infrastruktur yang akan terus menopang produktivitas Anda selama bertahun-tahun setelah dibeli. Silakan padukan prinsip-prinsip rekayasa bidang pandang, matematika PPI, batasan bandwidth, dan manajemen jendela perangkat lunak yang dijelaskan dalam artikel ini untuk membangun ruang kerja terbaik tanpa kompromi. Pada akhirnya, hal itu akan menjadi rute terpendek untuk menghasilkan kode terbaik.
+
 
 
 

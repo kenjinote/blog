@@ -34,8 +34,8 @@ graph TD
     A["Zwillingsbrüder (20 Jahre alt)"] --> B["Jüngerer Bruder, der auf der Erde bleibt"]
     A --> C["Älterer Bruder, der mit 80% der Lichtgeschwindigkeit durchs All reist"]
     
-    B -->|Erdzeit: 30 Jahre vergehen| D["Jüngerer Bruder beim Wiedersehen: 50 Jahre alt"]
-    C -->|Zeitdilatation (Urashima-Effekt): nur 18 Jahre vergehen| E["Älterer Bruder beim Wiedersehen: 38 Jahre alt"]
+    B -->|"Erdzeit: 30 Jahre vergehen"| D["Jüngerer Bruder beim Wiedersehen: 50 Jahre alt"]
+    C -->|"Zeitdilatation (Urashima-Effekt): nur 18 Jahre vergehen"| E["Älterer Bruder beim Wiedersehen: 38 Jahre alt"]
     
     D --> F{"Altersunterschied: 12 Jahre!"}
     E --> F
@@ -87,3 +87,4 @@ In dem Moment, in dem der ältere Bruder umdreht und wieder in Richtung Erde bes
 Als Ergebnis bleibt beim Wiedersehen nur die Realität, dass **„der ältere Bruder 38 Jahre und der jüngere Bruder 50 Jahre alt ist“**, genau wie berechnet, und der Widerspruch wird sauber aufgelöst.
 
 Das Zwillingsparadoxon ist eines der schönsten Gedankenexperimente in der Geschichte der Physik, das uns lehrt, dass unser gesunder Menschenverstand, dass „die Zeit für alle gleich vergeht“, angesichts des weiten Universums und der Lichtgeschwindigkeit überhaupt nicht gilt.
+

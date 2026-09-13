@@ -36,10 +36,10 @@ Cependant, à mesure que d'innombrables points d'électrons s'accumulaient sur l
 
 ```mermaid
 graph TD
-    A[Canon à électrons / Source lumineuse] -->|Tire des particules une par une| B(Mur avec double fente)
-    B -->|Fente 1| C{Interférence comme onde ?}
-    B -->|Fente 2| C
-    C -->|Atteint l'écran| D[Les franges d'interférence apparaissent en s'accumulant]
+    A[Canon à électrons / Source lumineuse] -->|"Tire des particules une par une"| B(Mur avec double fente)
+    B -->|"Fente 1"| C{Interférence comme onde ?}
+    B -->|"Fente 2"| C
+    C -->|"Atteint l'écran"| D[Les franges d'interférence apparaissent en s'accumulant]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -74,8 +74,8 @@ graph TD
     A[Quête de la nature de la lumière] --> B[XVIIe siècle : Période de révolution scientifique]
     B --> C("Théorie corpusculaire de Newton (1704)")
     B --> D("Théorie ondulatoire de Huygens (1690)")
-    C -->|Autorité immense de Newton| E[XVIIIe siècle : Longue domination de la théorie corpusculaire]
-    D -.->|N'obtient pas de soutien et stagne| E
+    C -->|"Autorité immense de Newton"| E[XVIIIe siècle : Longue domination de la théorie corpusculaire]
+    D -.->|"N'obtient pas de soutien et stagne"| E
     E --> F[Début du XIXe siècle : Changement de paradigme]
 ```
 ## 2.2 L'expérience des fentes de Young sur la lumière (1801) et le triomphe de la théorie ondulatoire
@@ -220,9 +220,9 @@ Le schéma ci-dessous illustre schématiquement la disposition générale de ce 
 ```mermaid
 graph LR
     subgraph Chamber ["Chambre à ultravide (High Vacuum Chamber)"]
-    A["Canon à électrons<br>Electron Gun"] -->| Faisceau d'électrons ou<br>électron unique | B("Plaque à double fente<br>Double Slit Barrier")
-    B -->| Fente A | C["Espace"]
-    B -->| Fente B | C
+    A["Canon à électrons<br>Electron Gun"] -->|"Faisceau d'électrons ou<br>électron unique"| B("Plaque à double fente<br>Double Slit Barrier")
+    B -->|"Fente A"| C["Espace"]
+    B -->|"Fente B"| C
     C --> D["Écran haute sensibilité / Détecteur<br>Detector Screen"]
     end
 
@@ -447,4 +447,5 @@ Ce fait a également donné naissance à une vision encore plus étonnante : l'i
 Nous nous tenons aujourd'hui à l'aube du deuxième acte de la révolution quantique. Peu importe les progrès de la science et de la technologie, le profond mystère de l'« onde de probabilité » et de la « détermination par l'observation » qui s'étend au-delà de ces deux fentes n'a pas encore été totalement percé. Comment l'univers a-t-il commencé ? Quelle signification physique ont la conscience et l'observation ? Comment la mécanique quantique microscopique et la relativité générale macroscopique peuvent-elles être unifiées (recherche sur la théorie de la gravité quantique) ? La clé pour résoudre ces énigmes ultimes se cache peut-être elle aussi dans ce phénomène simple et profond qu'est l'expérience des fentes de Young.
 
 Dans l'agitation du quotidien, lorsque vous apercevrez un rayon de lumière filtrant par la fenêtre ou que vous lèverez les yeux vers le scintillement des étoiles dans le ciel nocturne, n'hésitez pas à vous en souvenir. Ces innombrables photons qui composent cette lumière étaient, après un long voyage et jusqu'au moment exact d'atteindre ce « détecteur » que sont vos yeux, des ondes recelant la possibilité infinie d'emprunter simultanément tous les chemins de l'univers. Cette réalité dont nous sommes témoins n'est qu'une infime partie d'une danse grandiose et éternelle où l'univers s'observe et se détermine lui-même en permanence. Ce que l'expérience des fentes de Young nous impose n'est ni la peur, ni le nihilisme face à l'incertitude du monde. C'est un émerveillement écrasant et un sentiment de révérence devant la façon dont cet univers est mystérieux, d'une richesse inimaginable, et profondément lié à notre existence elle-même. On peut dire que c'est là le plus beau cadeau que l'expérience des fentes de Young ait offert à l'humanité.
+
 

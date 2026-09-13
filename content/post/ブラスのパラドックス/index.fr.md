@@ -34,11 +34,11 @@ Les « grandes autoroutes » ne sont jamais embouteillées, peu importe le nombr
 
 ```mermaid
 graph LR
-    START["Départ (4000 personnes)"] -->|Route étroite A: T=N/100| MID1["Point intermédiaire 1"]
-    START -->|Autoroute C: T=45 min| MID2["Point intermédiaire 2"]
+    START["Départ (4000 personnes)"] -->|"Route étroite A: T=N/100"| MID1["Point intermédiaire 1"]
+    START -->|"Autoroute C: T=45 min"| MID2["Point intermédiaire 2"]
     
-    MID1 -->|Autoroute B: T=45 min| GOAL["Arrivée"]
-    MID2 -->|Route étroite D: T=N/100| GOAL
+    MID1 -->|"Autoroute B: T=45 min"| GOAL["Arrivée"]
+    MID2 -->|"Route étroite D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -59,13 +59,13 @@ Supposons maintenant que le maire construise **« une rocade ultra-rapide de rê
 
 ```mermaid
 graph LR
-    START["Départ (4000 personnes)"] -->|Route étroite A: T=N/100| MID1["Point intermédiaire 1"]
-    START -->|Autoroute C: T=45 min| MID2["Point intermédiaire 2"]
+    START["Départ (4000 personnes)"] -->|"Route étroite A: T=N/100"| MID1["Point intermédiaire 1"]
+    START -->|"Autoroute C: T=45 min"| MID2["Point intermédiaire 2"]
     
-    MID1 -.->|Nouvelle rocade: T=0 min| MID2
+    MID1 -.->|"Nouvelle rocade: T=0 min"| MID2
     
-    MID1 -->|Autoroute B: T=45 min| GOAL["Arrivée"]
-    MID2 -->|Route étroite D: T=N/100| GOAL
+    MID1 -->|"Autoroute B: T=45 min"| GOAL["Arrivée"]
+    MID2 -->|"Route étroite D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -110,3 +110,4 @@ Le paradoxe de Braess n'est pas qu'une simple théorie abstraite ; il a été ob
   Le même phénomène peut se produire dans le routage Internet ou les réseaux électriques. Dès l'ajout d'un nouveau câble ou d'une nouvelle ligne, les paquets de données peuvent se concentrer sur ce qui semble être le « chemin le plus court et optimal », ce qui peut entraîner la panne de l'ensemble du réseau.
 
 Le paradoxe de Braess illustre parfaitement le dilemme des sociétés complexes où **« l'ensemble des choix rationnels individuels (l'égoïsme) » ne conduit pas nécessairement à « un résultat optimal pour tous »**. Parfois, « retirer une option (une liberté) » peut s'avérer bénéfique pour le bien de tous.
+

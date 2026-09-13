@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["サンプラー (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["出力トークン"]
     
-    OutputToken --> |"オートレグレッシブ生成"| Tokenizer
+    OutputToken -->|"オートレグレッシブ生成"| Tokenizer
     OutputToken --> Decoder["デトークナイザー (Detokenizer)"]
     Decoder --> FinalOutput["最終出力テキスト"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["ユーザー質問"] --> EmbedQuery["質問の埋め込み"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"類似度検索"| RetrievedDocs["関連ドキュメント抽出"]
+    VectorDB -->|"類似度検索"| RetrievedDocs["関連ドキュメント抽出"]
     
     UserQuery --> PromptBuilder["プロンプト生成"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ UnslothはCUDAカーネルを極限まで最適化しており、標準のHuggin
 5. **Unsloth (WSL2)**を活用し、自分だけの専門知識を持ったカスタムAIを育成する。
 
 AIの「民主化」は、もはやバズワードではなく、あなたのWindowsデスクトップ上で稼働する現実のシステムです。クラウドAPIの利用コストや情報漏洩リスクから解放され、自由で強力なプライベートAIの世界へ、今すぐ足を踏み入れてみてください。
+
+

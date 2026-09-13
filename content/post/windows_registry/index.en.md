@@ -156,12 +156,12 @@ flowchart TD
     HKLM_Soft["HKLM\SOFTWARE"]
     HKLM_WOW64["HKLM\SOFTWARE\WOW6432Node"]
 
-    App32 -->| RegOpenKeyEx() | RegAPI
-    App64 -->| RegOpenKeyEx() | RegAPI
+    App32 -->|"RegOpenKeyEx()"| RegAPI
+    App64 -->|"RegOpenKeyEx()"| RegAPI
     RegAPI --> CM
 
-    CM -->| If 64-bit Process | HKLM_Soft
-    CM -->| If 32-bit Process (Redirection) | HKLM_WOW64
+    CM -->|"If 64-bit Process"| HKLM_Soft
+    CM -->|"If 32-bit Process (Redirection)"| HKLM_WOW64
 ```
 
 When editing the registry from PowerShell scripts or C# applications, you must be keenly aware of whether the executing process itself is 32-bit or 64-bit. Otherwise, it will cause the troublesome issue of "settings that should have been written are not visible from Explorer (written to a different location)."
@@ -414,6 +414,7 @@ Finally, we summarize the important design principles and best practices for han
 ## Conclusion
 
 The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of Infrastructure as Code, is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment.
+
 
 
 

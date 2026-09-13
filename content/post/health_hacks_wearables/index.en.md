@@ -97,11 +97,11 @@ The following Mermaid diagram (flowchart) shows the flow from acquiring data fro
 
 ```mermaid
 flowchart TD
-    A["Oura Ring API (Biometrics)"] -->|JSON via OAuth2| C["Python Data Ingestion Pipeline"]
-    B["WakaTime API (Code Time)"] -->|JSON via API Key| C
-    E["SwitchBot API (Room Temp / CO2)"] -->|JSON via API Key| C
-    C -->|Extract & Transform| D["Pandas DataFrame (Memory)"]
-    D -->|Load| F["TimescaleDB / PostgreSQL"]
+    A["Oura Ring API (Biometrics)"] -->|"JSON via OAuth2"| C["Python Data Ingestion Pipeline"]
+    B["WakaTime API (Code Time)"] -->|"JSON via API Key"| C
+    E["SwitchBot API (Room Temp / CO2)"] -->|"JSON via API Key"| C
+    C -->|"Extract & Transform"| D["Pandas DataFrame (Memory)"]
+    D -->|"Load"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (Ad-hoc Analysis)"]
     F --> H["Streamlit Web App (Daily Monitoring)"]
 ```
@@ -368,6 +368,7 @@ Let's engineer a health condition that can perform at its best using data scienc
 
 ---
 *Disclaimer: This article summarizes the author's personal experiments and data science approaches, and does not provide medical advice. If you have continuous poor health or sleep disorders, please consult a specialized medical institution.*
+
 
 
 

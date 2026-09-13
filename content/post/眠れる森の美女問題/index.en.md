@@ -36,8 +36,8 @@ After you fall asleep, the experimenter tosses a **single fair coin** (a coin wi
 graph TD
     Sunday["Sunday: Beauty goes to sleep"] --> Toss{"Coin Toss"}
     
-    Toss -->|Heads (1/2)| Mon_Heads["Monday: Awaken + Question<br>(Then experiment ends)"]
-    Toss -->|Tails (1/2)| Mon_Tails["Monday: Awaken + Question<br>(Then amnesia)"]
+    Toss -->|"Heads (1/2)"| Mon_Heads["Monday: Awaken + Question<br>(Then experiment ends)"]
+    Toss -->|"Tails (1/2)"| Mon_Tails["Monday: Awaken + Question<br>(Then amnesia)"]
     
     Mon_Tails --> Tue_Tails["Tuesday: Awaken + Question<br>(Then experiment ends)"]
     
@@ -125,3 +125,4 @@ If you were a subject in this experiment, would you answer "1/2" or "1/3" when y
 
 Whichever you answer, world-class mathematicians will stand behind you to defend you.
 How a seemingly simple mathematical definition collapses the moment it is tied to troublesome concepts like human "subjectivity" and "existence." The paradox continues to shake our common sense today.
+

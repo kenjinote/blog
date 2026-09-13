@@ -42,9 +42,9 @@ Pour les commutateurs tactiles (switchs marrons) ou les commutateurs à clic (sw
 ```mermaid
 flowchart TD
     A["Début de la pression par le doigt"] --> B{"Type de commutateur"}
-    B -->|Linéaire| C["La résistance augmente linéairement"]
-    B -->|Tactile| D["Résistance physique au milieu (Bosse)"]
-    B -->|Clic| E["Le mécanisme sonore s'active en même temps que la bosse"]
+    B -->|"Linéaire"| C["La résistance augmente linéairement"]
+    B -->|"Tactile"| D["Résistance physique au milieu (Bosse)"]
+    B -->|"Clic"| E["Le mécanisme sonore s'active en même temps que la bosse"]
     C --> F["Atteinte du point d'actionnement (Actuation Point)"]
     D --> F
     E --> F
@@ -78,13 +78,13 @@ Même si les commutateurs sont excellents, si les performances des circuits éle
 
 ```mermaid
 flowchart LR
-    M["Microcontrôleur (MCU)"] -->|Commute la sortie Row sur High/Low| R1["Row 1"]
+    M["Microcontrôleur (MCU)"] -->|"Commute la sortie Row sur High/Low"| R1["Row 1"]
     M --> R2["Row 2"]
     R1 --> S11["Switch 1,1"] & S12["Switch 1,2"]
     R2 --> S21["Switch 2,1"] & S22["Switch 2,2"]
     S11 & S21 --> C1["Column 1"]
     S12 & S22 --> C2["Column 2"]
-    C1 & C2 -->|Détecte et lit la tension| M
+    C1 & C2 -->|"Détecte et lit la tension"| M
 ```
 
 Le **taux de rafraîchissement (Polling Rate)** est la fréquence à laquelle le clavier signale à l'ordinateur "l'état actuel des touches". Un clavier standard est à 125Hz (1 fois toutes les 8ms), mais les modèles haut de gamme offrent des communications ultra-rapides à 1000Hz (1 fois par 1ms) ou, plus récemment, à 8000Hz (1 fois toutes les 0,125ms).
@@ -201,6 +201,7 @@ Le choix d'un clavier est un processus "d'optimisation de sa propre interface" t
 Les 5 claviers présentés cette fois (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) sont tous des chefs-d'œuvre visant la "meilleure expérience de saisie" avec des approches différentes. Trouvez votre meilleur partenaire en fonction de votre propre style de frappe et des problèmes physiques auxquels vous êtes confronté.
 
 L'investissement dans un clavier se transformera sûrement en "des millions de lignes de code sans bug" et vous apportera des bénéfices.
+
 
 
 

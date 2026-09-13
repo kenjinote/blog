@@ -76,11 +76,11 @@ int main() {
 ```mermaid
 graph LR
     subgraph "std::move 之前"
-        A["unique_ptr (ptr1)"] -->| 拥有 | B["堆内存（对象）"]
+        A["unique_ptr (ptr1)"] -->|"拥有"| B["堆内存（对象）"]
     end
     subgraph "std::move 之后"
         C["unique_ptr (ptr1)"] -.->|"空（nullptr）"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->| 拥有 | F["堆内存（对象）"]
+        E["unique_ptr (ptr2)"] -->|"拥有"| F["堆内存（对象）"]
     end
 ```
 
@@ -130,13 +130,13 @@ int main() {
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->| 指向 T 的指针 | B["受管理的对象（T）"]
-    A -->| 指向控制块的指针 | C["控制块"]
+    A["std::shared_ptr<T> (sp1)"] -->|"指向 T 的指针"| B["受管理的对象（T）"]
+    A -->|"指向控制块的指针"| C["控制块"]
     
-    D["std::shared_ptr<T> (sp2)"] -->| 指向 T 的指针 | B
-    D -->| 指向控制块的指针 | C
+    D["std::shared_ptr<T> (sp2)"] -->|"指向 T 的指针"| B
+    D -->|"指向控制块的指针"| C
     
-    C -->| 删除 | B
+    C -->|"删除"| B
     C -.->|"强引用计数: 2"| E["强引用计数"]
     C -.->|"弱引用计数: 0"| F["弱引用计数"]
     C -.->|"自定义删除器"| G["删除器"]
@@ -176,8 +176,8 @@ std::shared_ptr<MyClass> ptr2 = std::make_shared<MyClass>();
 ```mermaid
 graph TD
     subgraph "循环引用（内存泄漏）"
-        A["对象 A"] -->| shared_ptr (强引用=1) | B["对象 B"]
-        B -->| shared_ptr (强引用=1) | A
+        A["对象 A"] -->|"shared_ptr (强引用=1)"| B["对象 B"]
+        B -->|"shared_ptr (强引用=1)"| A
     end
 ```
 
@@ -188,7 +188,7 @@ graph TD
 ```mermaid
 graph TD
     subgraph "打破循环引用"
-        C["对象 A"] -->| shared_ptr (强引用=1) | D["对象 B"]
+        C["对象 A"] -->|"shared_ptr (强引用=1)"| D["对象 B"]
         D -.->|"weak_ptr (弱引用=1)"| C
     end
 ```
@@ -268,4 +268,6 @@ Modern C++ 中的内存管理早已不是那个手动管理 `new`/`delete` 的�
 3.  在可能发生共享环（循环引用）的数据结构或观察者模式的实现中，请充分利用 **`std::weak_ptr`** 来防患于未然，避免内存泄漏。
 
 通过深刻理解智能指针，并在合适的场景下灵活运用，就能在不牺牲任何 C++ 性能的前提下，构建出安全且健壮的软件架构。
+
+
 

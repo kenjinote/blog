@@ -154,9 +154,9 @@ El siguiente diagrama muestra cómo un modelo personalizado se deriva de un mode
 
 ```mermaid
 graph LR
-    A["Modelo Base (llama3.1)"] -->| Agregar Prompt del Sistema | B["Configuración Intermedia"]
-    B -->| Establecer Temperature & Top_p | C["Modelo Personalizado (kansai-coder)"]
-    C -->| Ejecutar | D["CLI Interactivo / API"]
+    A["Modelo Base (llama3.1)"] -->|"Agregar Prompt del Sistema"| B["Configuración Intermedia"]
+    B -->|"Establecer Temperature & Top_p"| C["Modelo Personalizado (kansai-coder)"]
+    C -->|"Ejecutar"| D["CLI Interactivo / API"]
 ```
 
 Como ejemplo, intentemos crear un modelo de asistente de programación que responda en el dialecto de Kansai.
@@ -496,5 +496,6 @@ Al incorporar solicitudes API de Ollama en scripts de Python o Shell, puede inye
 Con la llegada de Ollama, el obstáculo para introducir LLMs locales ha disminuido drásticamente. No es una exageración decir que la combinación de su sistema de comandos simple (similar al manejo de contenedores Docker) y una API REST que puede usarse fácilmente desde aplicaciones externas, es el estándar de facto actual en el desarrollo de IA local.
 
 A los desarrolladores que luchan con las restricciones de costos y seguridad de los LLMs en la nube, los invito a configurar un entorno de LLM local usando Ollama y a integrarlo en sus propias aplicaciones, utilizando los pasos presentados en este artículo. Sin duda, podrá sentir el potencial de la IA de una manera más libre y accesible.
+
 
 

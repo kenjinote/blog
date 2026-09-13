@@ -60,11 +60,11 @@ graph LR
         NewR4["Chambre 4<br>(Client C)"]
     end
     
-    R1 -->|Déplacement| NewR2
-    R2 -->|Déplacement| NewR3
-    R3 -->|Déplacement| NewR4
+    R1 -->|"Déplacement"| NewR2
+    R2 -->|"Déplacement"| NewR3
+    R3 -->|"Déplacement"| NewR4
     
-    NewGuest["Nouveau client"] -->|Enregistrement| NewR1
+    NewGuest["Nouveau client"] -->|"Enregistrement"| NewR1
     
     style NewR1 fill:#aaffaa,stroke:#333,stroke-width:2px
     style NewGuest fill:#ffaaaa,stroke:#333,stroke-width:2px
@@ -101,15 +101,15 @@ Et miraculeusement, **« toutes les chambres à numéro impair (chambre 1, chamb
 ```mermaid
 graph LR
     subgraph "Clients actuels"
-        G1["Client 1"] -->|Double| R2["Chambre 2"]
-        G2["Client 2"] -->|Double| R4["Chambre 4"]
-        G3["Client 3"] -->|Double| R6["Chambre 6"]
+        G1["Client 1"] -->|"Double"| R2["Chambre 2"]
+        G2["Client 2"] -->|"Double"| R4["Chambre 4"]
+        G3["Client 3"] -->|"Double"| R6["Chambre 6"]
     end
     
     subgraph "Nouveaux clients du bus (Infinité)"
-        N1["Nouveau 1"] -->|Vers impair| R1["Chambre 1 (Vide)"]
-        N2["Nouveau 2"] -->|Vers impair| R3["Chambre 3 (Vide)"]
-        N3["Nouveau 3"] -->|Vers impair| R5["Chambre 5 (Vide)"]
+        N1["Nouveau 1"] -->|"Vers impair"| R1["Chambre 1 (Vide)"]
+        N2["Nouveau 2"] -->|"Vers impair"| R3["Chambre 3 (Vide)"]
+        N3["Nouveau 3"] -->|"Vers impair"| R5["Chambre 5 (Vide)"]
     end
     
     style R1 fill:#aaffaa,stroke:#333
@@ -180,3 +180,4 @@ Toutes ces intuitions évidentes sont brillamment contredites.
 Le monde de l'infini est un trésor de paradoxes (des vérités contraires à l'intuition). Les mathématiciens n'ont pas craint ces paradoxes ; ils les ont maîtrisés par la force de la logique, les ont classés et ont créé le magnifique système de la théorie des ensembles moderne.
 
 La prochaine fois que l'on vous refusera une chambre en disant « L'hôtel est complet », essayez d'imaginer : « Si seulement cet hôtel était l'Hôtel Infini de Hilbert... »
+

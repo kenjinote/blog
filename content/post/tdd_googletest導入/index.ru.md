@@ -163,10 +163,10 @@ int Calculator::Add(int a, int b) {
 
 ```mermaid
 flowchart LR
-    Test["Unit Test (Модульный тест)"] -->|injects mock| Target["Target Service (Целевой сервис)"]
-    Target -->|depends on| Interface["Interface (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|implements| Interface
-    Test -->|configures| Mock
+    Test["Unit Test (Модульный тест)"] -->|"injects mock"| Target["Target Service (Целевой сервис)"]
+    Target -->|"depends on"| Interface["Interface (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"implements"| Interface
+    Test -->|"configures"| Mock
 ```
 
 ### 5.1 Определение интерфейса и реализация целевого класса
@@ -343,3 +343,4 @@ $$ M = E - N + 2P $$
 4. Визуализация покрытия тестами с помощью **gcov/lcov**
 
 Хотя TDD требует времени на освоение, в системном программировании, где, как в C++, необходимо соблюдать баланс между производительностью и безопасностью, отдача от этих инвестиций огромна. Обязательно начните постепенно применять TDD в своем следующем проекте, чтобы получить надежный и легко поддерживаемый C++ код.
+

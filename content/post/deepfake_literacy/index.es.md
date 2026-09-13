@@ -46,8 +46,8 @@ flowchart LR
     R["Imagen Real"] --> D["Discriminador"]
     F --> D
     D --> O["Evaluación de Veracidad (Real/Falso)"]
-    O -.->|Retroalimentación de Pérdida| G
-    O -.->|Retroalimentación de Pérdida| D
+    O -.->|"Retroalimentación de Pérdida"| G
+    O -.->|"Retroalimentación de Pérdida"| D
 ```
 
 ## 1.2 Modelos de Difusión (Diffusion Models)
@@ -262,5 +262,6 @@ La evolución de la tecnología de IA ha abierto la caja de Pandora. Ya es impos
 Sin embargo, como se explicó en este artículo, los ingenieros están enfrentando la amenaza de las noticias falsas a través de diversos enfoques, como el análisis de frecuencia, la detección de señales biológicas y la certificación de procedencia basada en criptografía (C2PA). Al combinar este "escudo técnico (medidas defensivas)" con el "escudo social" que es la "alfabetización informacional" de cada uno de nosotros, deberíamos ser capaces de surfear la ola de ficciones que trae la IA y proteger el valor de la verdad.
 
 Precisamente porque vivimos en una era en la que la línea entre la realidad y la ficción se desvanece, la "voluntad" humana de intentar discernir la verdad se vuelve más importante que nunca.
+
 
 

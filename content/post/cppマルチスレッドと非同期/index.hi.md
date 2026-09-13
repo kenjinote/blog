@@ -296,10 +296,10 @@ sequenceDiagram
 
 ```mermaid
 graph TD
-    Client["क्लाइंट / मुख्य थ्रेड (Client / Main Thread)"] -->|कार्य कतार में डालें (Push Task)| Queue["कार्य कतार (Task Queue)"]
-    Queue -->|कार्य निकालें (Pop Task)| W1["वर्कर थ्रेड 1 (Worker Thread 1)"]
-    Queue -->|कार्य निकालें (Pop Task)| W2["वर्कर थ्रेड 2 (Worker Thread 2)"]
-    Queue -->|कार्य निकालें (Pop Task)| W3["वर्कर थ्रेड N (Worker Thread N)"]
+    Client["क्लाइंट / मुख्य थ्रेड (Client / Main Thread)"] -->|"कार्य कतार में डालें (Push Task)"| Queue["कार्य कतार (Task Queue)"]
+    Queue -->|"कार्य निकालें (Pop Task)"| W1["वर्कर थ्रेड 1 (Worker Thread 1)"]
+    Queue -->|"कार्य निकालें (Pop Task)"| W2["वर्कर थ्रेड 2 (Worker Thread 2)"]
+    Queue -->|"कार्य निकालें (Pop Task)"| W3["वर्कर थ्रेड N (Worker Thread N)"]
     
     W1 --> Exec["निष्पादन और फ्यूचर रिटर्न (Execution & Return Future)"]
     W2 --> Exec
@@ -331,3 +331,4 @@ graph TD
 4. **ओवरहेड के प्रति सचेत रहें:** थ्रेड्स के अत्यधिक निर्माण से बचें, और यदि आवश्यक हो तो थ्रेड पूल आर्किटेक्चर पेश करें।
 
 कंकरेंट प्रोसेसिंग बग (जैसे डेडलॉक, डेटा रेस) की पुनरावृत्ति (reproducibility) कम होती है और इन्हें डीबग करना सबसे कठिन होता है। थ्रेड सुरक्षा (thread safety) के प्रति हमेशा सचेत रहें और आधुनिक C++ के साथ मजबूत और तेज़ सिस्टम विकास प्राप्त करने के लिए उचित मानक लाइब्रेरी टूल का चयन करें।
+

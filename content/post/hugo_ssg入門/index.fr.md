@@ -172,10 +172,10 @@ Voici le flux de travail d'un pipeline de migration typique.
 
 ```mermaid
 flowchart LR
-  WPDB["Base de données WP"] -->|Plugin| Exporter["Outil d'exportation"]
-  Exporter -->| Extrait Texte, \nMéta, Images | ZipFile["Fichier Zip / Dossier"]
-  ZipFile -->|Décompression| MarkdownFiles["Fichiers Markdown \n(content/)"]
-  ZipFile -->|Décompression| ImageFiles["Images \n(static/wp-content/)"]
+  WPDB["Base de données WP"] -->|"Plugin"| Exporter["Outil d'exportation"]
+  Exporter -->|"Extrait Texte, \nMéta, Images"| ZipFile["Fichier Zip / Dossier"]
+  ZipFile -->|"Décompression"| MarkdownFiles["Fichiers Markdown \n(content/)"]
+  ZipFile -->|"Décompression"| ImageFiles["Images \n(static/wp-content/)"]
   MarkdownFiles --> Formatting["Vérification et Formatage \n(Correction des Shortcodes)"]
   Formatting --> Git["Commit vers Git"]
 ```
@@ -320,4 +320,5 @@ Dans cet article, nous avons détaillé la migration d'un CMS dynamique tel que 
 Bien que la migration vers un générateur de site statique nécessite un coût d'apprentissage initial (utilisation de Git, syntaxe Markdown, exécution de commandes CLI depuis un terminal, compréhension des spécifications du moteur de templates, etc.), elle offre en retour une "vitesse d'affichage écrasante", une "sécurité robuste" et un état "sans maintenance" qui compensent largement cet effort.
 
 Si votre site web ne nécessite pas de changements fréquents de design ou de traitements dynamiques complexes (tels que des fonctionnalités réservées aux membres ou des fonctions e-commerce avancées) et que son objectif principal est la diffusion d'informations (blog, média, site d'entreprise), la migration vers Hugo constituera l'un des investissements techniques les plus efficaces. N'hésitez pas à faire de cet article votre point de départ vers la gestion de site web de nouvelle génération utilisant Hugo.
+
 

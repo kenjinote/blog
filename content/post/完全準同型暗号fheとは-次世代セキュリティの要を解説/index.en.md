@@ -35,10 +35,10 @@ The architecture of cloud processing using FHE is completely different from trad
 
 ```mermaid
 graph TD
-    A["Client (Holds secret key)"] -->|1. Encrypt plaintext x: E(x)| B["Cloud Server (Encrypted data only)"]
-    B -->|2. Apply function f to ciphertext: E(f(x))| B
-    B -->|3. Ciphertext of calculation result E(y)| A
-    A -->|4. Decrypt with secret key: y = f(x)| A
+    A["Client (Holds secret key)"] -->|"1. Encrypt plaintext x: E(x)"| B["Cloud Server (Encrypted data only)"]
+    B -->|"2. Apply function f to ciphertext: E(f(x))"| B
+    B -->|"3. Ciphertext of calculation result E(y)"| A
+    A -->|"4. Decrypt with secret key: y = f(x)"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -264,4 +264,5 @@ Just as the invention of public key cryptography (RSA) in the 1970s enabled secu
 Today, Fully Homomorphic Encryption (FHE) has leapt from the theories of laboratories into the stage where Microsoft, IBM, Intel, Google, and many startups are fiercely competing toward practical application. While challenges regarding computational cost and data size still exist, thanks to the refinement of algorithms and the evolution of hardware accelerators, performance improvements continue at a pace exceeding Moore's Law.
 
 In a few years, "computing data while keeping it encrypted" will not be something special, but will likely become the standard data protection best practice in cloud services. FHE is the keystone of next-generation security, realizing the **ultimate combination of privacy and data utilization** in a data-driven society.
+
 

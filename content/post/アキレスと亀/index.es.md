@@ -37,18 +37,18 @@ Sin embargo, Zenón argumentó lo siguiente:
 ```mermaid
 graph LR
     subgraph "Paso 1"
-        A1["Aquiles (Inicio)"] -->|Alcanzar| T1["Posición inicial de la tortuga"]
-        T1_Start["Tortuga"] -->|Moverse| T2_Pos["Un poco hacia adelante"]
+        A1["Aquiles (Inicio)"] -->|"Alcanzar"| T1["Posición inicial de la tortuga"]
+        T1_Start["Tortuga"] -->|"Moverse"| T2_Pos["Un poco hacia adelante"]
     end
     
     subgraph "Paso 2"
-        A2["Aquiles"] -->|Alcanzar| T2["Siguiente posición de la tortuga"]
-        T2_Start["Tortuga"] -->|Moverse| T3_Pos["Más hacia adelante"]
+        A2["Aquiles"] -->|"Alcanzar"| T2["Siguiente posición de la tortuga"]
+        T2_Start["Tortuga"] -->|"Moverse"| T3_Pos["Más hacia adelante"]
     end
     
     subgraph "Paso 3"
-        A3["Aquiles"] -->|Alcanzar| T3["Posición aún más adelantada de la tortuga"]
-        T3_Start["Tortuga"] -->|Continúa infinitamente...| Infinity["¡¿Nunca la alcanzará?!"]
+        A3["Aquiles"] -->|"Alcanzar"| T3["Posición aún más adelantada de la tortuga"]
+        T3_Start["Tortuga"] -->|"Continúa infinitamente..."| Infinity["¡¿Nunca la alcanzará?!"]
     end
 ```
 
@@ -167,4 +167,5 @@ Sin embargo, para los antiguos filósofos griegos de la época que no tenían lo
 La profunda pregunta que planteó esta paradoja, "¿Qué significa ser continuo?" o "¿Qué significa poder dividirse infinitamente?", se convirtió en una fuerza impulsora importante que condujo al nacimiento del **"Cálculo"** por Newton y Leibniz en épocas posteriores, e incluso a la teoría moderna de los fundamentos matemáticos.
 
 Una gran paradoja no solo confunde a las personas, sino que también es una llave que abre la puerta a nuevas matemáticas.
+
 

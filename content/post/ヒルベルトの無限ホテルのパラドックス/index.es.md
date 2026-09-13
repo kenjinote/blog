@@ -60,11 +60,11 @@ graph LR
         NewR4["Habitación 4<br>(Huésped C)"]
     end
     
-    R1 -->|Traslado| NewR2
-    R2 -->|Traslado| NewR3
-    R3 -->|Traslado| NewR4
+    R1 -->|"Traslado"| NewR2
+    R2 -->|"Traslado"| NewR3
+    R3 -->|"Traslado"| NewR4
     
-    NewGuest["Nuevo huésped"] -->|Check-in| NewR1
+    NewGuest["Nuevo huésped"] -->|"Check-in"| NewR1
     
     style NewR1 fill:#aaffaa,stroke:#333,stroke-width:2px
     style NewGuest fill:#ffaaaa,stroke:#333,stroke-width:2px
@@ -101,15 +101,15 @@ Con este traslado, los infinitos huéspedes que ya estaban alojados encajaron pe
 ```mermaid
 graph LR
     subgraph "Huéspedes actuales"
-        G1["Huésped 1"] -->|Por 2| R2["Habitación 2"]
-        G2["Huésped 2"] -->|Por 2| R4["Habitación 4"]
-        G3["Huésped 3"] -->|Por 2| R6["Habitación 6"]
+        G1["Huésped 1"] -->|"Por 2"| R2["Habitación 2"]
+        G2["Huésped 2"] -->|"Por 2"| R4["Habitación 4"]
+        G3["Huésped 3"] -->|"Por 2"| R6["Habitación 6"]
     end
     
     subgraph "Nuevos huéspedes del autobús (infinitos)"
-        N1["Nuevo huésped 1"] -->|A impar| R1["Habitación 1 (Libre)"]
-        N2["Nuevo huésped 2"] -->|A impar| R3["Habitación 3 (Libre)"]
-        N3["Nuevo huésped 3"] -->|A impar| R5["Habitación 5 (Libre)"]
+        N1["Nuevo huésped 1"] -->|"A impar"| R1["Habitación 1 (Libre)"]
+        N2["Nuevo huésped 2"] -->|"A impar"| R3["Habitación 3 (Libre)"]
+        N3["Nuevo huésped 3"] -->|"A impar"| R5["Habitación 5 (Libre)"]
     end
     
     style R1 fill:#aaffaa,stroke:#333
@@ -180,3 +180,4 @@ Todas estas intuiciones obvias son espectacularmente traicionadas.
 El mundo del infinito es un tesoro de paradojas (verdades contraintuitivas). Los matemáticos, en lugar de temer a estas paradojas, las dominaron con el poder de la lógica, las clasificaron y construyeron el hermoso sistema que hoy conocemos como teoría de conjuntos moderna.
 
 La próxima vez que le digan "el hotel está completo" y le rechacen una habitación, intente imaginar: "Ojalá este hotel fuera el Gran Hotel de Hilbert".
+

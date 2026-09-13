@@ -36,8 +36,8 @@ Setelah Anda tertidur, peneliti akan melempar **sebuah koin yang adil** (koin de
 graph TD
     Sunday["Minggu: Putri tertidur"] --> Toss{"Lemparan Koin"}
     
-    Toss -->|Angka (1/2)| Mon_Heads["Senin: Bangun + Pertanyaan<br>(Setelah itu eksperimen berakhir)"]
-    Toss -->|Gambar (1/2)| Mon_Tails["Senin: Bangun + Pertanyaan<br>(Setelah itu ingatan dihapus)"]
+    Toss -->|"Angka (1/2)"| Mon_Heads["Senin: Bangun + Pertanyaan<br>(Setelah itu eksperimen berakhir)"]
+    Toss -->|"Gambar (1/2)"| Mon_Tails["Senin: Bangun + Pertanyaan<br>(Setelah itu ingatan dihapus)"]
     
     Mon_Tails --> Tue_Tails["Selasa: Bangun + Pertanyaan<br>(Setelah itu eksperimen berakhir)"]
     
@@ -125,3 +125,4 @@ Jika Anda menjadi subjek eksperimen ini, ketika Anda terbangun, apakah Anda akan
 
 Apa pun jawaban Anda, matematikawan kelas dunia akan mendukung Anda dari belakang.
 Definisi matematika yang tampaknya sederhana dapat runtuh begitu saja ketika dikaitkan dengan konsep merepotkan dari "subjektivitas" dan "eksistensi" manusia. Hingga hari ini, paradoks ini terus mengguncang akal sehat kita.
+

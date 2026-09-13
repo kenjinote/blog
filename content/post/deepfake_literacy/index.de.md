@@ -46,8 +46,8 @@ flowchart LR
     R["Echtes Bild (Real)"] --> D["Diskriminator"]
     F --> D
     D --> O["Wahr/Falsch-Bewertung (Real/Fake)"]
-    O -.->|Loss Feedback| G
-    O -.->|Loss Feedback| D
+    O -.->|"Loss Feedback"| G
+    O -.->|"Loss Feedback"| D
 ```
 
 ## 1.2 Diffusionsmodelle (Diffusion Models)
@@ -262,5 +262,6 @@ Die Evolution der KI-Technologie hat die Büchse der Pandora geöffnet. Es ist n
 Wie jedoch in diesem Artikel erklärt wurde, begegnen Ingenieure der Bedrohung durch Fake News mit verschiedenen Ansätzen wie Frequenzanalyse, der Erkennung biologischer Signale und Herkunftsnachweisen mittels Kryptografie (C2PA). Durch die Kombination dieser technischen Schilde (Schutzmaßnahmen) mit dem gesellschaftlichen Schild der "Informationskompetenz" jedes Einzelnen von uns sollten wir in der Lage sein, die Welle der Fiktion, die durch KI entsteht, zu überwinden und den Wert der Wahrheit zu schützen.
 
 Gerade in einer Zeit, in der die Grenzen zwischen Realität und Fiktion verschwimmen, ist der menschliche "Wille", die Wahrheit zu erkennen, wichtiger denn je.
+
 
 

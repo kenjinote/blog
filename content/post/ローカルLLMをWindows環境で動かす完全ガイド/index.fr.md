@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["Échantillonneur (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["Token de sortie"]
     
-    OutputToken --> |"Génération autorégressive"| Tokenizer
+    OutputToken -->|"Génération autorégressive"| Tokenizer
     OutputToken --> Decoder["Détokeniseur (Detokenizer)"]
     Decoder --> FinalOutput["Texte de sortie final"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["Question de l'utilisateur"] --> EmbedQuery["Plongement de la question"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"Recherche de similarité"| RetrievedDocs["Extraction de documents pertinents"]
+    VectorDB -->|"Recherche de similarité"| RetrievedDocs["Extraction de documents pertinents"]
     
     UserQuery --> PromptBuilder["Génération du prompt"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ N'hésitez pas à tirer parti des points expliqués dans cet article :
 5. Tirer parti d'**Unsloth (WSL2)** pour développer une IA personnalisée avec votre propre expertise.
 
 La "démocratisation" de l'IA n'est plus un buzzword, mais un système réel fonctionnant sur votre bureau Windows. Libérez-vous des coûts d'utilisation des API cloud et des risques de fuite d'informations, et entrez dès maintenant dans le monde libre et puissant de l'IA privée.
+
+

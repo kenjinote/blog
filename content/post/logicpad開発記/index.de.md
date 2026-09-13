@@ -219,16 +219,16 @@ Der Einreichungsprozess im Microsoft Store erfolgt über das Partner Center. Das
 
 ```mermaid
 flowchart TD
-    A["Entwickler (Visual Studio)"] -->|Build & Signieren| B["MSIX-Bundle-Generierung"]
+    A["Entwickler (Visual Studio)"] -->|"Build & Signieren"| B["MSIX-Bundle-Generierung"]
     B --> C["Windows App Certification Kit (WACK)"]
-    C -->|Bestanden| D["Partner Center Dashboard"]
-    C -->|Nicht bestanden| E["Code- / Manifest-Probleme beheben"]
+    C -->|"Bestanden"| D["Partner Center Dashboard"]
+    C -->|"Nicht bestanden"| E["Code- / Manifest-Probleme beheben"]
     E --> A
-    D -->|Paket hochladen| F["Store-Zertifizierungsprozess"]
+    D -->|"Paket hochladen"| F["Store-Zertifizierungsprozess"]
     F --> G["Automatisierter Malware-Scan"]
     G --> H["Manuelle Inhaltsprüfung"]
-    H -->|Genehmigt| I["Veröffentlichung im Microsoft Store"]
-    H -->|Abgelehnt| J["Feedback bearbeiten & neu einreichen"]
+    H -->|"Genehmigt"| I["Veröffentlichung im Microsoft Store"]
+    H -->|"Abgelehnt"| J["Feedback bearbeiten & neu einreichen"]
     J --> D
     I --> K["App ist live!"]
 ```
@@ -303,4 +303,5 @@ Aber gerade weil wir uns durch die Entwicklung der Webtechnologien in einem Zeit
 WinUI 3 und das Windows App SDK werden derzeit aktiv weiterentwickelt und sind die besten Werkzeuge, um schöne Anwendungen zu erstellen, die das UI-Paradigma von Windows 11 voll ausschöpfen. Ich hoffe aufrichtig, dass dieser Blogbeitrag Entwicklern, die die Entwicklung von nativen Windows-Apps in Angriff nehmen wollen, eine Hilfe sein wird und dass dadurch noch mehr großartige Apps im Store erscheinen.
 
 Die Entwicklung ist noch nicht abgeschlossen. Für die nächste Version von LogicPad ist die Integration einer eigenen Wellenform-Rendering-Engine unter Verwendung von Direct2D geplant. Im nächsten Artikel werde ich tief in die Interoperabilität zwischen DirectX und WinUI 3 (Nutzung des SwapChainPanels) eintauchen. Bleiben Sie gespannt.
+
 

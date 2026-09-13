@@ -164,12 +164,12 @@ El siguiente diagrama de flujo de Mermaid muestra la estructura ideal de enrutam
 
 ```mermaid
 flowchart TD
-    A["Sistema PC / Mac"] -->|Cable Thunderbolt 4 40Gbps| B["Dock Thunderbolt 4"]
-    B -->|DisplayPort 1.4| C["Monitor Principal (4K 60Hz)"]
-    B -->|Downstream Thunderbolt| D["Monitor Secundario (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["Almacenamiento de Alta Velocidad / Periféricos"]
+    A["Sistema PC / Mac"] -->|"Cable Thunderbolt 4 40Gbps"| B["Dock Thunderbolt 4"]
+    B -->|"DisplayPort 1.4"| C["Monitor Principal (4K 60Hz)"]
+    B -->|"Downstream Thunderbolt"| D["Monitor Secundario (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["Almacenamiento de Alta Velocidad / Periféricos"]
     
-    C -.->|Solo Windows MST| F["Monitor Terciario (1080p)"]
+    C -.->|"Solo Windows MST"| F["Monitor Terciario (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ No existe una única respuesta correcta aplicable a todos al construir un entorn
 flowchart TD
     Start["Inicio de la construcción del entorno de desarrollo"] --> Q1{"¿Cuál es tu OS principal?"}
     
-    Q1 -->|macOS| Mac["Entorno macOS"]
-    Q1 -->|Windows/Linux| Win["Entorno Windows / Linux"]
+    Q1 -->|"macOS"| Mac["Entorno macOS"]
+    Q1 -->|"Windows/Linux"| Win["Entorno Windows / Linux"]
     
     Mac --> Q2{"¿Tienes margen en presupuesto y rendimiento de GPU?"}
-    Q2 -->|Sí| M_5K["Monitor 5K 27 pulgadas × 2 (Máxima calidad)"]
-    Q2 -->|No| M_4K["Monitor 4K 24 pulgadas × 2 o Ultrawide"]
+    Q2 -->|"Sí"| M_5K["Monitor 5K 27 pulgadas × 2 (Máxima calidad)"]
+    Q2 -->|"No"| M_4K["Monitor 4K 24 pulgadas × 2 o Ultrawide"]
     
     Win --> Q3{"¿Te molestan las separaciones de pantalla (biseles)?"}
-    Q3 -->|Sí| W_UW["Monitor Ultrawide 49 pulgadas + FancyZones"]
-    Q3 -->|No| W_Dual["Monitor 4K 27 pulgadas × 2 (Mejor costo-beneficio)"]
+    Q3 -->|"Sí"| W_UW["Monitor Ultrawide 49 pulgadas + FancyZones"]
+    Q3 -->|"No"| W_Dual["Monitor 4K 27 pulgadas × 2 (Mejor costo-beneficio)"]
     
     M_5K --> End["Instalar brazo ergonómico y finalizar"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 Un monitor es una infraestructura que, una vez comprada, continuará apoyando tu productividad durante muchos años. Integra los principios de ergonomía visual, las matemáticas de los PPI, los límites del ancho de banda y la gestión de ventanas por software explicados en este artículo para construir el mejor espacio de trabajo sin compromisos. Ese debería ser el camino más corto para, en última instancia, producir el mejor código.
+
 
 
 

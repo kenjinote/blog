@@ -34,11 +34,11 @@ Die "breite Autobahn" hat keinen Stau, egal wie viele Autos kommen, und dauert i
 
 ```mermaid
 graph LR
-    START["Start (4000 Personen)"] -->|Schmale Straße A: T=N/100| MID1["Wegpunkt 1"]
-    START -->|Autobahn C: T=45 Min.| MID2["Wegpunkt 2"]
+    START["Start (4000 Personen)"] -->|"Schmale Straße A: T=N/100"| MID1["Wegpunkt 1"]
+    START -->|"Autobahn C: T=45 Min."| MID2["Wegpunkt 2"]
     
-    MID1 -->|Autobahn B: T=45 Min.| GOAL["Ziel"]
-    MID2 -->|Schmale Straße D: T=N/100| GOAL
+    MID1 -->|"Autobahn B: T=45 Min."| GOAL["Ziel"]
+    MID2 -->|"Schmale Straße D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -59,13 +59,13 @@ Nehmen wir nun an, der Bürgermeister baut einen **Traum von einer superschnelle
 
 ```mermaid
 graph LR
-    START["Start (4000 Personen)"] -->|Schmale Straße A: T=N/100| MID1["Wegpunkt 1"]
-    START -->|Autobahn C: T=45 Min.| MID2["Wegpunkt 2"]
+    START["Start (4000 Personen)"] -->|"Schmale Straße A: T=N/100"| MID1["Wegpunkt 1"]
+    START -->|"Autobahn C: T=45 Min."| MID2["Wegpunkt 2"]
     
-    MID1 -.->|Neue Umgehung: T=0 Min.| MID2
+    MID1 -.->|"Neue Umgehung: T=0 Min."| MID2
     
-    MID1 -->|Autobahn B: T=45 Min.| GOAL["Ziel"]
-    MID2 -->|Schmale Straße D: T=N/100| GOAL
+    MID1 -->|"Autobahn B: T=45 Min."| GOAL["Ziel"]
+    MID2 -->|"Schmale Straße D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -110,3 +110,4 @@ Das Braess-Paradoxon ist nicht nur eine theoretische Spekulation am Schreibtisch
   Dasselbe Phänomen kann beim Routing im Internet oder in Stromnetzen auftreten. Sobald neue Kabel oder Leitungen hinzugefügt werden, können sich Datenpakete auf dem "scheinbar optimalen kürzesten Weg" konzentrieren und das gesamte Netzwerk zum Absturz bringen.
 
 Das Braess-Paradoxon ist ein perfekter Ausdruck für das Dilemma komplexer sozialer Systeme, in denen **"die Ansammlung rationaler individueller Entscheidungen (Egoismus)" nicht immer "das beste Ergebnis für alle"** bringt. Manchmal kann "das Wegnehmen von Optionen (Freiheit)" im besten Interesse aller sein.
+

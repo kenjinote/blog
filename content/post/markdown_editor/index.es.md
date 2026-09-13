@@ -233,14 +233,14 @@ Además, usando GitHub Actions, puedes construir una canalización CI que ejecut
 
 ```mermaid
 flowchart TD
-    A["Autor"] -->|Empujar cambios| B["Repositorio de GitHub"]
+    A["Autor"] -->|"Empujar cambios"| B["Repositorio de GitHub"]
     B --> C{"GitHub Actions Activado"}
     C --> D["Checkout del repositorio"]
     D --> E["Configurar Node.js"]
     E --> F["npm install"]
     F --> G["Ejecutar textlint"]
-    G -->|Éxito| H["Construir sitio Hugo"]
-    G -->|Fallo| I["Informar error al PR/Commit"]
+    G -->|"Éxito"| H["Construir sitio Hugo"]
+    G -->|"Fallo"| I["Informar error al PR/Commit"]
     H --> J["Desplegar en Hosting (Vercel/Netlify)"]
 ```
 
@@ -269,6 +269,7 @@ En este artículo explicamos configuraciones del editor que duplicarán tu veloc
 5. **Integración de LLM**: Hacer que la IA genere directamente la estructura del Markdown y el código de diagramas o tablas dentro del editor.
 
 Al incorporar estas configuraciones a tu propio entorno, desaparecerá lo "tedioso" de la escritura y, con seguridad, la cantidad y calidad de tus publicaciones técnicas mejorarán drásticamente. ¿Por qué no empezar hoy mismo registrando al menos un pequeño fragmento (snippet)?
+
 
 
 

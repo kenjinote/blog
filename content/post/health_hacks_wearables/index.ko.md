@@ -97,11 +97,11 @@ $$ G(t) = G_{base} + \Delta G \cdot e^{-\alpha t} \sin(\beta t) $$
 
 ```mermaid
 flowchart TD
-    A["Oura Ring API (생체 데이터)"] -->|JSON via OAuth2| C["Python 데이터 인제스천 파이프라인"]
-    B["WakaTime API (코딩 시간)"] -->|JSON via API Key| C
-    E["SwitchBot API (실내 온도 / CO2)"] -->|JSON via API Key| C
-    C -->|추출 및 변환| D["Pandas DataFrame (메모리)"]
-    D -->|적재| F["TimescaleDB / PostgreSQL"]
+    A["Oura Ring API (생체 데이터)"] -->|"JSON via OAuth2"| C["Python 데이터 인제스천 파이프라인"]
+    B["WakaTime API (코딩 시간)"] -->|"JSON via API Key"| C
+    E["SwitchBot API (실내 온도 / CO2)"] -->|"JSON via API Key"| C
+    C -->|"추출 및 변환"| D["Pandas DataFrame (메모리)"]
+    D -->|"적재"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (애드혹 분석)"]
     F --> H["Streamlit 웹 앱 (일일 모니터링)"]
 ```
@@ -368,6 +368,7 @@ HRV를 모니터링하고, RHR 트렌드를 체크하며, 수면 아키텍처를
 
 ---
 *Disclaimer: 본 기사는 필자의 개인적인 실험과 데이터 과학적 접근을 정리한 것으로, 의학적인 조언을 제공하는 것이 아닙니다. 지속적인 컨디션 불량이나 수면 장애가 있을 경우 전문 의료 기관과 상담하시기 바랍니다.*
+
 
 
 

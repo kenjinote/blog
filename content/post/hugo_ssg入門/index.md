@@ -172,10 +172,10 @@ WordPressからHugoへの移行は、データベース内の動的コンテン�
 
 ```mermaid
 flowchart LR
-  WPDB["WP Database"] -->|Plugin| Exporter["Export Tool"]
-  Exporter -->| Extracts Text, \nMeta, Images | ZipFile["Zip / Folder"]
-  ZipFile -->|Unpack| MarkdownFiles["Markdown Files \n(content/)"]
-  ZipFile -->|Unpack| ImageFiles["Images \n(static/wp-content/)"]
+  WPDB["WP Database"] -->|"Plugin"| Exporter["Export Tool"]
+  Exporter -->|"Extracts Text, \nMeta, Images"| ZipFile["Zip / Folder"]
+  ZipFile -->|"Unpack"| MarkdownFiles["Markdown Files \n(content/)"]
+  ZipFile -->|"Unpack"| ImageFiles["Images \n(static/wp-content/)"]
   MarkdownFiles --> Formatting["Review & Format \n(Fix Shortcodes)"]
   Formatting --> Git["Commit to Git"]
 ```
@@ -320,4 +320,5 @@ Hugoの場合、ツール自体のアップデートは必要に応じて行う�
 静的サイトジェネレーターへの移行は、初期の学習コスト（Gitの操作、Markdownの記法、ターミナルからのCLIコマンドの実行、テンプレートエンジンの仕様理解など）こそ必要ですが、それを補って余りあるほどの「圧倒的な表示速度」「強固なセキュリティ」、そして「メンテナンスフリー」というリターンをもたらします。
 
 もしあなたのウェブサイトが、頻繁なデザイン変更や複雑な動的処理（会員専用機能や高度なEC機能など）を必要とせず、主に情報発信（ブログ、メディア、コーポレートサイト）を目的としているのであれば、Hugoへの移行は最も効果的な技術的投資の一つとなるでしょう。ぜひ本記事を参考に、Hugoを用いた次世代のウェブサイト運営への第一歩を踏み出してみてください。
+
 

@@ -260,13 +260,13 @@ int main() {
 
 ```mermaid
 flowchart TD
-    A["C++代理服務"] -->|RegQueryValueEx| B["Windows登錄檔"]
-    B -->|Return Script Path| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|Execute| D["管理員腳本 (例如：Restart-Service)"]
-    D -->|stdout via Pipe| C
-    C -->|ReadFile| A
-    A -->|Log| E["事件檢視器 / 記錄檔"]
+    A["C++代理服務"] -->|"RegQueryValueEx"| B["Windows登錄檔"]
+    B -->|"Return Script Path"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"Execute"| D["管理員腳本 (例如：Restart-Service)"]
+    D -->|"stdout via Pipe"| C
+    C -->|"ReadFile"| A
+    A -->|"Log"| E["事件檢視器 / 記錄檔"]
 ```
 
 ## 效能分析與卸載的優勢
@@ -316,3 +316,4 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 ---
 
 *在本技術部落格中，未來也將持續探討有關Windows內部結構與進階自動化的深入主題。如有任何問題或回饋，歡迎在留言區與我們分享。*
+

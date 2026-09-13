@@ -81,18 +81,18 @@ Cara pembagian ini sangat rumit dan tersebar, sehingga berada dalam kondisi "tid
 
 ```mermaid
 graph TD
-    S["Bola asli S (Volume V)"] -->|Pembagian khusus| P1["Potongan 1 (Volume tak terukur)"]
+    S["Bola asli S (Volume V)"] -->|"Pembagian khusus"| P1["Potongan 1 (Volume tak terukur)"]
     S --> P2["Potongan 2 (Volume tak terukur)"]
     S --> P3["Potongan 3 (Volume tak terukur)"]
     S --> P4["Potongan 4 (Volume tak terukur)"]
     S --> P5["Potongan 5 (Volume tak terukur)"]
     
-    P1 -->|Rotasi dan Translasi| S1["Bola baru 1 (Volume V)"]
-    P2 -->|Rotasi dan Translasi| S1
-    P3 -->|Rotasi dan Translasi| S1
+    P1 -->|"Rotasi dan Translasi"| S1["Bola baru 1 (Volume V)"]
+    P2 -->|"Rotasi dan Translasi"| S1
+    P3 -->|"Rotasi dan Translasi"| S1
     
-    P4 -->|Rotasi dan Translasi| S2["Bola baru 2 (Volume V)"]
-    P5 -->|Rotasi dan Translasi| S2
+    P4 -->|"Rotasi dan Translasi"| S2["Bola baru 2 (Volume V)"]
+    P5 -->|"Rotasi dan Translasi"| S2
     
     style S fill:#ffddaa,stroke:#333,stroke-width:2px
     style S1 fill:#aaddff,stroke:#333,stroke-width:2px
@@ -136,3 +136,4 @@ Dunia fisik tempat kita tinggal terbuat dari "partikel-partikel yang memiliki uk
 Namun, di atas kanvas "matematika" yang diciptakan oleh otak manusia, ukuran suatu titik adalah nol, dan operasi tak terhingga diizinkan.
 
 Paradoks Banach-Tarski bisa dikatakan sebagai salah satu karya agung matematika modern yang mengajarkan kita **seberapa mudahnya konsep "tak terhingga" melampaui intuisi sederhana manusia**.
+

@@ -255,8 +255,8 @@ graph TD
     Start["初期化: R0 = O, R1 = P"] --> LoopStart["各ビット i について (最上位から)"]
     LoopStart --> Cond{"k_i の値は？"}
     
-    Cond -->|0| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
-    Cond -->|1| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
+    Cond -->|"0"| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
+    Cond -->|"1"| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
     
     Branch0 --> LoopEnd["次のビットへ"]
     Branch1 --> LoopEnd
@@ -445,4 +445,6 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 実際にプロダクション環境で動作する暗号ライブラリを自作することは、セキュリティ上のリスクが極めて高いため非推奨（"Don't roll your own crypto"）とされています。しかし、その内部で動いているアルゴリズムと数学的背景を深く理解することは、よりセキュアでパフォーマンスの高いシステムを設計・運用するエンジニアにとって、かけがえのない強力な武器となるはずです。
 
 次回の記事では、この楕円曲線を用いたデジタル署名アルゴリズムである **ECDSA (Elliptic Curve Digital Signature Algorithm)** のメカニズムや、ビットコインで採用されている **Schnorr署名** についてさらに深く掘り下げていきたいと思います。
+
+
 

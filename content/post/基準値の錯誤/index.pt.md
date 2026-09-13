@@ -56,11 +56,11 @@ graph TD
     A["População Total (1.000.000 pessoas)"] --> B["Pessoas Doentes (100 pessoas)"]
     A --> C["Pessoas Saudáveis (999.900 pessoas)"]
     
-    B -->|99% Acertos| B1["Verdadeiros Positivos (99 pessoas)"]
-    B -->|1% Falhas| B2["Falsos Negativos (1 pessoa)"]
+    B -->|"99% Acertos"| B1["Verdadeiros Positivos (99 pessoas)"]
+    B -->|"1% Falhas"| B2["Falsos Negativos (1 pessoa)"]
     
-    C -->|99% Acertos| C1["Verdadeiros Negativos (989.901 pessoas)"]
-    C -->|1% Falhas| C2["Falsos Positivos (9.999 pessoas)"]
+    C -->|"99% Acertos"| C1["Verdadeiros Negativos (989.901 pessoas)"]
+    C -->|"1% Falhas"| C2["Falsos Positivos (9.999 pessoas)"]
     
     B1 -.-> D{"Total de pessoas que testaram 'Positivo': 10.098 pessoas"}
     C2 -.-> D
@@ -103,3 +103,4 @@ Essa ilusão causa pânico e julgamentos equivocados não apenas na medicina, ma
   Mesmo que você sinta que há perigo ao ver as notícias de que "〇〇% dos carros que causaram acidentes eram de idosos", a menos que considere a "proporção de motoristas idosos entre todos os motoristas que trafegam nas estradas (taxa base)", você não saberá se essa faixa etária específica tem mais probabilidade real de causar acidentes.
 
 A "Falácia da Taxa Base" nos ensina a importância do pensamento estatístico, ou seja, voltar a refletir sobre **"quão provável é que isso aconteça na totalidade em primeiro lugar (taxa base)"** precisamente quando vemos números chocantes e casos individuais.
+

@@ -134,8 +134,8 @@ Dies ist eine traumhafte Eigenschaft in der Kryptographietheorie. Es räumt die 
 
 ```mermaid
 graph TD
-    A["Gitterprobleme im schlimmsten Fall (Gap-SVP, SIVP)"] -->|Quanten/Klassische Reduktion| B["LWE-Problem im durchschnittlichen Fall"]
-    B -->|Kryptographische Konstruktion| C["LWE-basierte Kryptosysteme (PKE, KEM, FHE)"]
+    A["Gitterprobleme im schlimmsten Fall (Gap-SVP, SIVP)"] -->|"Quanten/Klassische Reduktion"| B["LWE-Problem im durchschnittlichen Fall"]
+    B -->|"Kryptographische Konstruktion"| C["LWE-basierte Kryptosysteme (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ In diesem Artikel haben wir die mathematische Intuition der gitterbasierten Kryp
 4. In realen Protokollen werden **Ring-LWE** und **Module-LWE** unter Verwendung von Polynomringen eingesetzt, um die Kommunikationseffizienz und Rechengeschwindigkeit zu verbessern, und bilden die Grundlage des NIST-Standards **ML-KEM**.
 
 Inmitten des bevorstehenden beispiellosen Rechenparadigmenwechsels durch Quantencomputer ist es eine äußerst faszinierende Geschichte, dass die "gitterbasierte Kryptographie", die aus den Tiefen der klassischen linearen Algebra und der Zahlentheorie hervorgegangen ist, das Fundament der zukünftigen Internetsicherheit bilden wird. Die der gitterbasierten Kryptographie zugrunde liegende Mathematik ist nicht übermäßig komplex, und mit Grundkenntnissen in linearer Algebra und Wahrscheinlichkeitsrechnung kann man ihre schöne Struktur gut verstehen. Wir hoffen, dass dieser Artikel Ihnen hilft, die gitterbasierte Kryptographie, den Kern von PQC, besser zu verstehen.
+

@@ -258,7 +258,7 @@ flowchart TD
     F --> G["Optimize H2/H3 Tags & Rewrite Content"]
     G --> H["Publish Updated Article"]
     H --> I["Monitor CTR Changes (Expected vs Actual)"]
-    I --> |"Feedback Loop"| A
+    I -->|"Feedback Loop"| A
 ```
 
 このように、GSCとGA4からのデータ収集、分析によるターゲット選定、NLPによるコンテンツ最適化、そして結果のモニタリングまでの一連の流れをシステム化することで、ブログメディアは自動的に成長し続ける資産となります。
@@ -276,6 +276,8 @@ Google Search Consoleを活用した技術記事のリライトは、単なる�
 4. **TF-IDFを用いたNLP分析**によって、競合とのコンテンツギャップを発見し、見出し（H2/H3）を最適化する。
 
 技術のトレンドは絶えず変化します。読者が今抱えているエラーや課題に正確に応えるためにも、データを味方につけた戦略的なリライトをぜひ日々の運用に取り入れてみてください。
+
+
 
 
 

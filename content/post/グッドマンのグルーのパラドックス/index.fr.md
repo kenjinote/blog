@@ -49,7 +49,7 @@ Si nous suivons les règles de l'induction, toutes les observations passées sou
 
 ```mermaid
 graph TD
-    A["Observations passées : Toutes les émeraudes étaient vertes"] -->|En même temps| B["Observations passées : Toutes les émeraudes étaient de couleur « vleue »"]
+    A["Observations passées : Toutes les émeraudes étaient vertes"] -->|"En même temps"| B["Observations passées : Toutes les émeraudes étaient de couleur « vleue »"]
     
     A --> C["Prédiction inductive A : Les émeraudes futures seront également « vertes »"]
     B --> D["Prédiction inductive B : Les émeraudes futures seront également de couleur « vleue »"]
@@ -81,3 +81,4 @@ En d'autres termes, le choix des mots que nous considérons comme étant de « b
 Le paradoxe de « vleu » de Goodman (la nouvelle énigme de l'induction) a prouvé que les théories scientifiques ne sont pas déterminées uniquement par des données objectives, mais dépendent fortement du « cadre conceptuel (langage) que nous utilisons pour découper le monde ».
 
 Même dans le contexte de l'IA et de l'apprentissage automatique, ce paradoxe conserve une signification importante aujourd'hui en tant que problème de « surapprentissage » (overfitting) ou de « biais ». Il montre que, même avec les mêmes données d'apprentissage, la prédiction pour l'avenir change complètement en fonction de la « structure du modèle (quelles caractéristiques sont privilégiées) ».
+

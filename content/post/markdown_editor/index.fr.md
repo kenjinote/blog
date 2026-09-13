@@ -233,14 +233,14 @@ De plus, en utilisant GitHub Actions, nous pouvons construire un pipeline CI qui
 
 ```mermaid
 flowchart TD
-    A["Auteur"] -->|Pousser les modifications| B["Dépôt GitHub"]
+    A["Auteur"] -->|"Pousser les modifications"| B["Dépôt GitHub"]
     B --> C{"Déclenchement des actions GitHub"}
     C --> D["Cloner le dépôt"]
     D --> E["Configurer Node.js"]
     E --> F["npm install"]
     F --> G["Exécuter textlint"]
-    G -->|Succès| H["Construire le site Hugo"]
-    G -->|Échec| I["Signaler l'erreur sur la PR/Commit"]
+    G -->|"Succès"| H["Construire le site Hugo"]
+    G -->|"Échec"| I["Signaler l'erreur sur la PR/Commit"]
     H --> J["Déployer sur l'hébergement (Vercel/Netlify)"]
 ```
 
@@ -269,6 +269,7 @@ Nous avons expliqué les paramètres d'éditeur qui permettent de doubler la vit
 5. **Intégration des LLM** : Laisser l'IA générer la structure Markdown et le code des diagrammes directement dans l'éditeur.
 
 En intégrant ces paramètres à votre propre environnement, la "corvée" de l'écriture disparaîtra, et le volume ainsi que la qualité de votre production technique s'amélioreront de manière spectaculaire. Pourquoi ne pas commencer par enregistrer un simple petit snippet dès aujourd'hui ?
+
 
 
 

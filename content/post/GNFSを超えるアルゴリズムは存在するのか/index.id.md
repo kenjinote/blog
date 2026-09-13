@@ -148,8 +148,8 @@ Dengan mempertimbangkan implementasi sirkuit yang dioptimalkan dalam beberapa ta
 
 ```mermaid
 graph LR
-  A["Algoritma Klasik (GNFS)"] -->|Batas| B["Waktu Sub-eksponensial L_n[1/3]"]
-  C["Algoritma Kuantum (Shor)"] -->|Terobosan| D["Waktu Polinomial O((log n)^3)"]
+  A["Algoritma Klasik (GNFS)"] -->|"Batas"| B["Waktu Sub-eksponensial L_n[1/3]"]
+  C["Algoritma Kuantum (Shor)"] -->|"Terobosan"| D["Waktu Polinomial O((log n)^3)"]
   B --> E["Penggunaan Lanjutan RSA (Peningkatan Panjang Kunci)"]
   D --> F["Keruntuhan Total Kriptografi RSA"]
 ```
@@ -175,4 +175,5 @@ Konsensus komunitas ilmiah saat ini atas pertanyaan "Apakah ada algoritma klasik
 3. **Ancaman sebenarnya adalah algoritma kuantum**: Algoritma Shor-lah, yang didasarkan pada prinsip-prinsip mekanika kuantum, yang mendobrak tembok kompleksitas komputasi. Oleh karena itu, dunia dipaksa untuk beralih ke Post-Quantum Cryptography (PQC). Garis terdepan kriptografi saat ini adalah transisi ke masalah matematis baru yang dianggap sulit untuk dipecahkan (tidak dapat dipecahkan dalam waktu polinomial) bahkan oleh komputer kuantum, seperti kriptografi kisi (lattice-based cryptography) dan kriptografi berbasis hash (hash-based cryptography).
 
 General Number Field Sieve (GNFS) adalah salah satu "puncak pencapaian tertinggi" umat manusia dalam menantang batas maksimal matematika klasik dan desain algoritma. Memahami struktur matematis yang mendalam dari GNFS bukan hanya mempelajari sejarah kriptanalisis, namun juga merupakan perjalanan pencarian intelektual untuk bersentuhan langsung dengan keindahan teori kompleksitas komputasi dan teori bilangan aljabar. Sampai hari di mana komputer kuantum direalisasikan, GNFS nampaknya akan terus mempertahankan takhtanya sebagai algoritma faktorisasi prima terkuat.
+
 

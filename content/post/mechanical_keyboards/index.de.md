@@ -42,9 +42,9 @@ Bei taktilen Schaltern (Brown-Switches) und Clicky-Schaltern (Blue-Switches) gib
 ```mermaid
 flowchart TD
     A["Beginn des Drückens mit dem Finger"] --> B{"Art des Schalters"}
-    B -->|Linear| C["Widerstand steigt linear an"]
-    B -->|Taktil| D["Physikalischer Widerstand (Bump) in der Mitte"]
-    B -->|Clicky| E["Geräuschmechanismus wird gleichzeitig mit dem Bump aktiviert"]
+    B -->|"Linear"| C["Widerstand steigt linear an"]
+    B -->|"Taktil"| D["Physikalischer Widerstand (Bump) in der Mitte"]
+    B -->|"Clicky"| E["Geräuschmechanismus wird gleichzeitig mit dem Bump aktiviert"]
     C --> F["Erreichen des Auslösepunkts (Actuation Point)"]
     D --> F
     E --> F
@@ -78,13 +78,13 @@ Im Inneren einer Tastatur befinden sich Dutzende bis über hundert Schalter, abe
 
 ```mermaid
 flowchart LR
-    M["Mikrocontroller (MCU)"] -->|Row-Ausgabe auf High/Low umschalten| R1["Row 1"]
+    M["Mikrocontroller (MCU)"] -->|"Row-Ausgabe auf High/Low umschalten"| R1["Row 1"]
     M --> R2["Row 2"]
     R1 --> S11["Switch 1,1"] & S12["Switch 1,2"]
     R2 --> S21["Switch 2,1"] & S22["Switch 2,2"]
     S11 & S21 --> C1["Column 1"]
     S12 & S22 --> C2["Column 2"]
-    C1 & C2 -->|Spannung erkennen und auslesen| M
+    C1 & C2 -->|"Spannung erkennen und auslesen"| M
 ```
 
 Die **Polling-Rate (Polling Rate)** gibt an, wie oft die Tastatur dem PC "den aktuellen Zustand der Tasten" meldet. Standardtastaturen haben eine Rate von 125 Hz (einmal alle 8 ms), aber bei High-End-Modellen gibt es auch solche mit 1000 Hz (einmal alle 1 ms) oder in jüngerer Zeit sogar mit ultraschnellen 8000 Hz (einmal alle 0,125 ms).
@@ -201,6 +201,7 @@ Die Wahl einer Tastatur ist ein Prozess der "Optimierung der eigenen Schnittstel
 Die 5 hier vorgestellten Tastaturen (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) sind allesamt Meisterwerke, die auf unterschiedlichen Wegen auf das "beste Eingabeerlebnis" abzielen. Bitte finden Sie den besten Begleiter passend zu Ihrem eigenen Tippstil und Ihren körperlichen Beschwerden.
 
 Ihre Investition in eine Tastatur wird sich definitiv auszahlen, in Form von "Millionen Zeilen fehlerfreien Codes".
+
 
 
 

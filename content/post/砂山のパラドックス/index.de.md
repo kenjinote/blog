@@ -36,11 +36,11 @@ Prämisse 1 und Prämisse 2 klingen jeweils für sich genommen sehr plausibel. D
 
 ```mermaid
 graph LR
-    A["10.000 Körner = Sandhaufen"] -->|1 Korn entfernt| B["9.999 Körner = Sandhaufen"]
-    B -->|1 Korn entfernt| C["9.998 Körner = Sandhaufen"]
-    C -->|...Wiederholung...| D["100 Körner = Sandhaufen?"]
-    D -->|1 Korn entfernt| E["10 Körner = Sandhaufen?"]
-    E -->|1 Korn entfernt| F["1 Korn = Sandhaufen?"]
+    A["10.000 Körner = Sandhaufen"] -->|"1 Korn entfernt"| B["9.999 Körner = Sandhaufen"]
+    B -->|"1 Korn entfernt"| C["9.998 Körner = Sandhaufen"]
+    C -->|"...Wiederholung..."| D["100 Körner = Sandhaufen?"]
+    D -->|"1 Korn entfernt"| E["10 Körner = Sandhaufen?"]
+    E -->|"1 Korn entfernt"| F["1 Korn = Sandhaufen?"]
     
     style A fill:#4CAF50,color:#fff
     style D fill:#FF9800,color:#fff
@@ -95,3 +95,4 @@ Das Sorites-Paradoxon ist nicht nur ein Wortspiel, sondern verursacht auch in de
 - **Umweltvorschriften**: Überschreitet der Schadstoffausstoß den Grenzwert um 0,001 mg, ist es illegal. Genau auf dem Grenzwert ist es legal.
 
 Die menschliche Sprache und das Denken enthalten von Natur aus Vagheit, und der Versuch, die Welt in klare binäre Gegensätze zu unterteilen, stößt möglicherweise an seine Grenzen. Das Sorites-Paradoxon ist ein Paradoxon, das seit über 2.400 Jahren Philosophen beschäftigt und die grundlegenden Grenzen des menschlichen Intellekts aufzeigt.
+

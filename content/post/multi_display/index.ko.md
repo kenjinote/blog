@@ -164,12 +164,12 @@ Windows 환경에서는 DisplayPort의 MST(Multi-Stream Transport) 기능을 이
 
 ```mermaid
 flowchart TD
-    A["PC / Mac 시스템"] -->|Thunderbolt 4 케이블 40Gbps| B["Thunderbolt 4 독"]
-    B -->|DisplayPort 1.4| C["기본 모니터 (4K 60Hz)"]
-    B -->|Thunderbolt 다운스트림| D["보조 모니터 (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["고속 스토리지 / 주변기기"]
+    A["PC / Mac 시스템"] -->|"Thunderbolt 4 케이블 40Gbps"| B["Thunderbolt 4 독"]
+    B -->|"DisplayPort 1.4"| C["기본 모니터 (4K 60Hz)"]
+    B -->|"Thunderbolt 다운스트림"| D["보조 모니터 (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["고속 스토리지 / 주변기기"]
     
-    C -.->|Windows 전용 MST| F["세 번째 모니터 (1080p)"]
+    C -.->|"Windows 전용 MST"| F["세 번째 모니터 (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ flowchart LR
 flowchart TD
     Start["개발 환경 구축 시작"] --> Q1{"메인 OS는 무엇인가?"}
     
-    Q1 -->|macOS| Mac["macOS 환경"]
-    Q1 -->|Windows / Linux| Win["Windows / Linux 환경"]
+    Q1 -->|"macOS"| Mac["macOS 환경"]
+    Q1 -->|"Windows / Linux"| Win["Windows / Linux 환경"]
     
     Mac --> Q2{"예산과 GPU 성능에 여유가 있는가?"}
-    Q2 -->|Yes| M_5K["5K 27인치 모니터 × 2 (최고 품질)"]
-    Q2 -->|No| M_4K["4K 24인치 모니터 × 2 또는 울트라와이드"]
+    Q2 -->|"Yes"| M_5K["5K 27인치 모니터 × 2 (최고 품질)"]
+    Q2 -->|"No"| M_4K["4K 24인치 모니터 × 2 또는 울트라와이드"]
     
     Win --> Q3{"화면 구분(베젤)이 거슬리는가?"}
-    Q3 -->|Yes| W_UW["49인치 울트라와이드 모니터 + FancyZones"]
-    Q3 -->|No| W_Dual["4K 27인치 × 2 (가성비 최강)"]
+    Q3 -->|"Yes"| W_UW["49인치 울트라와이드 모니터 + FancyZones"]
+    Q3 -->|"No"| W_Dual["4K 27인치 × 2 (가성비 최강)"]
     
     M_5K --> End["인체공학 모니터 암을 도입하여 완성"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 디스플레이는 한 번 구입하면 오랜 기간 동안 당신의 생산성을 뒷받침할 인프라입니다. 본 기사에서 해설한 시야 공학의 원칙, PPI의 수학, 대역폭의 한계, 그리고 소프트웨어를 통한 창 관리를 통합하여 타협 없는 최고의 워크스페이스를 구축하십시오. 그것이 결과적으로 최고의 코드를 만들어내는 가장 빠른 지름길이 될 것입니다.
+
 
 
 

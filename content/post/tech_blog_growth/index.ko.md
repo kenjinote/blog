@@ -240,15 +240,15 @@ Markdown 파일을 GitHub 리포지토리의 main 브랜치에 병합(merge)하�
 ```mermaid
 flowchart TD
     A["개발자 (Git Push)"] --> B["GitHub 리포지토리"]
-    B -->|Webhook| C["GitHub Actions (CI/CD)"]
-    C -->|Build| D["정적 사이트 생성기 (Hugo/Gatsby)"]
-    D -->|Deploy| E["호스팅 (Vercel / Cloudflare Pages)"]
-    D -->|Generate| F["RSS 피드 (index.xml)"]
-    F -->|Polled by| G["Zapier / IFTTT / Make"]
-    G -->|API Call| H["X (Twitter) 자동 포스팅"]
-    G -->|API Call| I["LinkedIn 게시물 포스팅"]
-    G -->|API Call| J["Discord / Slack 커뮤니티 Webhook"]
-    C -->|Actions Script| K["Qiita / Zenn 크로스 포스팅 API"]
+    B -->|"Webhook"| C["GitHub Actions (CI/CD)"]
+    C -->|"Build"| D["정적 사이트 생성기 (Hugo/Gatsby)"]
+    D -->|"Deploy"| E["호스팅 (Vercel / Cloudflare Pages)"]
+    D -->|"Generate"| F["RSS 피드 (index.xml)"]
+    F -->|"Polled by"| G["Zapier / IFTTT / Make"]
+    G -->|"API Call"| H["X (Twitter) 자동 포스팅"]
+    G -->|"API Call"| I["LinkedIn 게시물 포스팅"]
+    G -->|"API Call"| J["Discord / Slack 커뮤니티 Webhook"]
+    C -->|"Actions Script"| K["Qiita / Zenn 크로스 포스팅 API"]
 ```
 
 ### 5.2 자동화 파이프라인 구축 포인트
@@ -276,6 +276,7 @@ flowchart TD
 5. CI/CD 및 Zapier 연동을 통한 배포 완전 자동화
 
 이러한 요소들을 하나의 시스템으로 구성할 수 있다면, 기술 블로그는 여러분의 커리어를 강력하게 뒷받침하는 최고의 자산(Asset)이 될 것입니다. 조회수 정체로 고민하고 있는 엔지니어라면 오늘부터라도 꼭 "블로그 그로스 해킹"을 시작해 보시기 바랍니다. 개발 업무에서 쌓은 프로그래밍 역량과 아키텍처 설계 능력은 블로그 운영에 있어서도 최고의 무기가 될 것입니다.
+
 
 
 

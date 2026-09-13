@@ -163,10 +163,10 @@ C'est là qu'interviennent l'**injection de dépendances (Dependency Injection :
 
 ```mermaid
 flowchart LR
-    Test["Test unitaire"] -->|injecte le mock| Target["Service cible"]
-    Target -->|dépend de| Interface["Interface (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|implémente| Interface
-    Test -->|configure| Mock
+    Test["Test unitaire"] -->|"injecte le mock"| Target["Service cible"]
+    Target -->|"dépend de"| Interface["Interface (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"implémente"| Interface
+    Test -->|"configure"| Mock
 ```
 
 ### 5.1 Définition de l'interface et implémentation de la classe cible
@@ -343,3 +343,4 @@ Dans cet article, nous avons expliqué en détail comment introduire le dévelop
 4. Visualisation de la couverture de code par **gcov/lcov**
 
 Bien que le TDD soit une approche qui demande du temps pour être maîtrisée, le retour sur investissement est inestimable dans la programmation système où l'équilibre entre performances et sécurité est requis, comme en C++. Nous vous invitons à pratiquer progressivement le TDD dès votre prochain projet pour obtenir un code C++ robuste et facile à maintenir.
+

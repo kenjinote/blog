@@ -97,9 +97,9 @@ This eliminates issues like compiler memory exhaustion due to template nesting a
 
 ```mermaid
 graph TD
-    A["Type: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["Range of meta::info"]
-    C -->| [: member :] | D["Direct Member Access (obj.id, obj.name)"]
+    A["Type: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["Range of meta::info"]
+    C -->|"[: member :]"| D["Direct Member Access (obj.id, obj.name)"]
     D --> E["Generated Code (Zero Overhead)"]
 ```
 
@@ -296,9 +296,9 @@ The standardization proposal (P2300), which completely rebuilds the C++ asynchro
 
 ```mermaid
 graph LR
-    S["Sender (Task Description)"] -->|connect| O["Operation State"]
-    O -->|start| E["Execution (ThreadPool, GPU, etc.)"]
-    E -->|set_value / set_error / set_stopped| R["Receiver (Callback)"]
+    S["Sender (Task Description)"] -->|"connect"| O["Operation State"]
+    O -->|"start"| E["Execution (ThreadPool, GPU, etc.)"]
+    E -->|"set_value / set_error / set_stopped"| R["Receiver (Callback)"]
 ```
 
 Senders are lightweight blueprints that describe "what to do" and are separated from the execution context (Scheduler). This allows you to efficiently describe the offloading of tasks to a CPU ThreadPool or GPU through a unified interface.
@@ -367,5 +367,6 @@ Going forward, we recommend actively adopting these new paradigms in new project
 
 ---
 *This article is written based on the C++26 standardization status as of 2026. Please be aware that some syntax may change depending on the implementation status of each compiler.*
+
 
 

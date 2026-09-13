@@ -520,8 +520,8 @@ It has historically played a hugely important role as an "Activation Function" i
 
 ```mermaid
 graph LR
-  X1["Input x1"] -->|Weight w1| Sum["Summation: Σ(wi*xi) + b"]
-  X2["Input x2"] -->|Weight w2| Sum
+  X1["Input x1"] -->|"Weight w1"| Sum["Summation: Σ(wi*xi) + b"]
+  X2["Input x2"] -->|"Weight w2"| Sum
   Sum --> Act["Sigmoid Function: σ(x)"]
   Act --> Out["Output Probability (0 to 1)"]
 ```
@@ -624,4 +624,5 @@ How was it? From Euler's identity to the Pythagorean theorem, these 10 formulas 
 Understanding the mathematical background is indispensable for stepping up from being just a coder who calls existing libraries (`math.sin` or `numpy.fft`) to an engineer who understands their internal structures and can push their limits. The next time you write code, try expanding your imagination a little about what beautiful mathematical formulas are running behind it.
 
 **Happy Coding and Math!**
+
 

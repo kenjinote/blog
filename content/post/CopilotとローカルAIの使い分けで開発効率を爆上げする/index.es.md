@@ -58,10 +58,10 @@ El siguiente diagrama de Mermaid muestra una arquitectura híbrida que ilustra c
 
 ```mermaid
 graph TD
-    Dev["Desarrollador (IDE)"] -->| Escritura en tiempo real | LocalProxy{"Enrutador / Proxy Inteligente"}
+    Dev["Desarrollador (IDE)"] -->|"Escritura en tiempo real"| LocalProxy{"Enrutador / Proxy Inteligente"}
     
-    LocalProxy -->| Rápida, Tarea centrada en la privacidad | LocalAI["Motor de IA Local (Ollama / LM Studio)"]
-    LocalProxy -->| Lógica compleja, Contexto amplio | CloudAI["Motor de IA en la Nube (Copilot / OpenAI API)"]
+    LocalProxy -->|"Rápida, Tarea centrada en la privacidad"| LocalAI["Motor de IA Local (Ollama / LM Studio)"]
+    LocalProxy -->|"Lógica compleja, Contexto amplio"| CloudAI["Motor de IA en la Nube (Copilot / OpenAI API)"]
     
     subgraph "Entorno Local"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -94,17 +94,17 @@ Entonces, en una situación real de codificación, ¿cómo debería el desarroll
 ```mermaid
 graph TD
     Start["Nueva Tarea de Codificación"] --> Q1{"¿Es el código altamente confidencial?"}
-    Q1 -->|Sí| Action1["Usar IA Local (Llama 3 / CodeLlama)"]
-    Q1 -->|No| Q2{"¿Es un autocompletado en línea simple?"}
+    Q1 -->|"Sí"| Action1["Usar IA Local (Llama 3 / CodeLlama)"]
+    Q1 -->|"No"| Q2{"¿Es un autocompletado en línea simple?"}
     
-    Q2 -->|Sí| Q3{"¿Es estable la conexión de red?"}
-    Q3 -->|Sí| Action2["Usar GitHub Copilot"]
-    Q3 -->|No| Action1
+    Q2 -->|"Sí"| Q3{"¿Es estable la conexión de red?"}
+    Q3 -->|"Sí"| Action2["Usar GitHub Copilot"]
+    Q3 -->|"No"| Action1
     
-    Q2 -->|No| Q4{"¿Necesita lógica de arquitectura compleja o refactorización de múltiples archivos?"}
+    Q2 -->|"No"| Q4{"¿Necesita lógica de arquitectura compleja o refactorización de múltiples archivos?"}
     
-    Q4 -->|Sí| Action3["Usar IA en la Nube (GPT-4 / Claude 3.5 Sonnet)"]
-    Q4 -->|No| Action4["Usar IA Local para tareas medianas para ahorrar costos de API"]
+    Q4 -->|"Sí"| Action3["Usar IA en la Nube (GPT-4 / Claude 3.5 Sonnet)"]
+    Q4 -->|"No"| Action4["Usar IA Local para tareas medianas para ahorrar costos de API"]
 ```
 
 ### 3.1 Criterio de evaluación 1: Confidencialidad (Privacy and Security)
@@ -244,4 +244,6 @@ En lugar de una falsa dicotomía entre "GitHub Copilot en la nube" o "IA local",
 Por favor, lleve su entorno de IDE al siguiente nivel usando el árbol de decisiones y la arquitectura presentados en este artículo como referencia. Al pasar de ser alguien que "usa" la IA a alguien que "las combina y las emplea donde corresponde", su eficiencia de desarrollo seguramente aumentará de manera explosiva.
 
 Happy Coding with Hybrid AI!
+
+
 

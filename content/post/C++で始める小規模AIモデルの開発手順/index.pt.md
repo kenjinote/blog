@@ -46,7 +46,7 @@ graph TD
     I --> J["Próximo ID de Token"]
     J --> K["Detokenizador"]
     K --> L["Pedaço de Texto de Saída"]
-    J -.-> |"Adicionar ao Contexto"| C
+    J -.->|"Adicionar ao Contexto"| C
 ```
 
 Por ser um modelo autorregressivo, o token de saída é adicionado novamente ao contexto e circula como entrada para a previsão do próximo token (parte tracejada do diagrama).
@@ -241,3 +241,5 @@ cmake --build . --config Release
 ## 10. Resumo
 
 Implementar o motor de inferência de um modelo de IA em pequena escala como o TinyLLaMA do zero usando C++ e ggml é uma excelente oportunidade para descobrir a caixa preta do deep learning e aprender a beleza do controle de hardware de baixo nível. Vamos abrir o futuro da IA de borda (Edge AI) aproveitando a essência da programação de sistemas, como o carregamento de zero cópia usando mapeamento de memória, otimização SIMD e construção de cache KV.
+
+

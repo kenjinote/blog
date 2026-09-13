@@ -296,10 +296,10 @@ Ein Thread-Pool ist eine Architektur, bei der beim Starten der Anwendung eine be
 
 ```mermaid
 graph TD
-    Client["Client / Hauptthread"] -->|Push Task| Queue["Aufgabenwarteschlange"]
-    Queue -->|Pop Task| W1["Worker-Thread 1"]
-    Queue -->|Pop Task| W2["Worker-Thread 2"]
-    Queue -->|Pop Task| W3["Worker-Thread N"]
+    Client["Client / Hauptthread"] -->|"Push Task"| Queue["Aufgabenwarteschlange"]
+    Queue -->|"Pop Task"| W1["Worker-Thread 1"]
+    Queue -->|"Pop Task"| W2["Worker-Thread 2"]
+    Queue -->|"Pop Task"| W3["Worker-Thread N"]
     
     W1 --> Exec["Ausführung & Rückgabe Future"]
     W2 --> Exec
@@ -331,3 +331,4 @@ Dieser Artikel behandelte Multithreading und asynchrone Programmierung in C++ vo
 4. **Beachten Sie den Overhead:** Vermeiden Sie die übermäßige Erstellung von Threads und führen Sie bei Bedarf eine Thread-Pool-Architektur ein.
 
 Fehler bei der parallelen Verarbeitung (Deadlocks, Datenwettläufe) sind schwer zu reproduzieren und gehören zu den am schwersten zu debuggenden Problemen. Behalten Sie immer die Thread-Sicherheit im Auge und wählen Sie geeignete Tools aus der Standardbibliothek aus, um ein robustes und schnelles System mit modernem C++ zu entwickeln.
+

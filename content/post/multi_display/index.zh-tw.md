@@ -164,12 +164,12 @@ Thunderbolt 4 的最大頻寬為 40 Gbps，但因為 PCIe 資料傳輸等也會�
 
 ```mermaid
 flowchart TD
-    A["PC / Mac 系統"] -->|Thunderbolt 4 連接線 40Gbps| B["Thunderbolt 4 擴充座"]
-    B -->|DisplayPort 1.4| C["主螢幕 (4K 60Hz)"]
-    B -->|Thunderbolt 下行| D["副螢幕 (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["高速儲存裝置 / 周邊設備"]
+    A["PC / Mac 系統"] -->|"Thunderbolt 4 連接線 40Gbps"| B["Thunderbolt 4 擴充座"]
+    B -->|"DisplayPort 1.4"| C["主螢幕 (4K 60Hz)"]
+    B -->|"Thunderbolt 下行"| D["副螢幕 (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["高速儲存裝置 / 周邊設備"]
     
-    C -.->|僅限 Windows MST| F["第三螢幕 (1080p)"]
+    C -.->|"僅限 Windows MST"| F["第三螢幕 (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ flowchart LR
 flowchart TD
     Start["開始建構開發環境"] --> Q1{"主要使用的 OS 是什麼？"}
     
-    Q1 -->|macOS| Mac["macOS 環境"]
-    Q1 -->|Windows/Linux| Win["Windows / Linux 環境"]
+    Q1 -->|"macOS"| Mac["macOS 環境"]
+    Q1 -->|"Windows/Linux"| Win["Windows / Linux 環境"]
     
     Mac --> Q2{"預算與 GPU 效能是否充裕？"}
-    Q2 -->|Yes| M_5K["5K 27 吋螢幕 × 2 (最高品質)"]
-    Q2 -->|No| M_4K["4K 24 吋螢幕 × 2 或 超寬螢幕"]
+    Q2 -->|"Yes"| M_5K["5K 27 吋螢幕 × 2 (最高品質)"]
+    Q2 -->|"No"| M_4K["4K 24 吋螢幕 × 2 或 超寬螢幕"]
     
     Win --> Q3{"會在意畫面的分隔（邊框）嗎？"}
-    Q3 -->|Yes| W_UW["49 吋 超寬螢幕 + FancyZones"]
-    Q3 -->|No| W_Dual["4K 27 吋螢幕 × 2 (CP 值最高)"]
+    Q3 -->|"Yes"| W_UW["49 吋 超寬螢幕 + FancyZones"]
+    Q3 -->|"No"| W_Dual["4K 27 吋螢幕 × 2 (CP 值最高)"]
     
     M_5K --> End["裝上人體工學螢幕支架即完成"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 螢幕是長年支撐你生產力的基礎設施，一旦購買便會陪伴你許久。請將本文所解說的視界工學原則、PPI 數學、頻寬極限，以及軟體層面的視窗管理加以整合，為自己打造一個毫不妥協的最佳工作區。最終，這將成為你寫出頂尖程式碼的最短捷徑。
+
 
 
 

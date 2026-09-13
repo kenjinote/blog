@@ -45,13 +45,13 @@ Agora, você deve fazer a sua escolha.
 graph TD
     Omega["Previsão de Ômega<br>(já concluída ontem)"]
     
-    Omega -->|Prevê que vai 'Pegar ambas'| BoxB_Empty["Caixa B está vazia (0 ienes)"]
-    Omega -->|Prevê que vai 'Pegar apenas a Caixa B'| BoxB_100M["Coloca 100 milhões na Caixa B"]
+    Omega -->|"Prevê que vai 'Pegar ambas'"| BoxB_Empty["Caixa B está vazia (0 ienes)"]
+    Omega -->|"Prevê que vai 'Pegar apenas a Caixa B'"| BoxB_100M["Coloca 100 milhões na Caixa B"]
     
     You["Sua escolha<br>(hoje)"]
     
-    You -->|Escolha 1: Pegar ambas| Result1["Caixa A (100 mil) + conteúdo da Caixa B"]
-    You -->|Escolha 2: Pegar apenas a Caixa B| Result2["Caixa A (0 ienes) + conteúdo da Caixa B"]
+    You -->|"Escolha 1: Pegar ambas"| Result1["Caixa A (100 mil) + conteúdo da Caixa B"]
+    You -->|"Escolha 2: Pegar apenas a Caixa B"| Result2["Caixa A (0 ienes) + conteúdo da Caixa B"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2
@@ -134,3 +134,4 @@ E o mais interessante é que ambos os lados acreditam genuinamente que "a lógic
 
 "O que é um julgamento racional?"
 Não importa o quanto a economia ou a matemática evoluam, no fim tudo se resume à filosofia de "como os humanos compreendem este mundo". O Paradoxo de Newcomb é um experimento mental supremamente malicioso e belo que nos confronta com os limites da lógica.
+

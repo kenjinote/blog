@@ -219,16 +219,16 @@ Microsoft Storeへの提出プロセスは、Partner Center（パートナーセ
 
 ```mermaid
 flowchart TD
-    A["Developer (Visual Studio)"] -->|Build & Sign| B["MSIX Bundle Generation"]
+    A["Developer (Visual Studio)"] -->|"Build & Sign"| B["MSIX Bundle Generation"]
     B --> C["Windows App Certification Kit (WACK)"]
-    C -->|Pass| D["Partner Center Dashboard"]
-    C -->|Fail| E["Fix Code / Manifest Issues"]
+    C -->|"Pass"| D["Partner Center Dashboard"]
+    C -->|"Fail"| E["Fix Code / Manifest Issues"]
     E --> A
-    D -->|Upload Package| F["Store Certification Process"]
+    D -->|"Upload Package"| F["Store Certification Process"]
     F --> G["Automated Malware Scan"]
     G --> H["Manual Content Review"]
-    H -->|Approved| I["Publishing to Microsoft Store"]
-    H -->|Rejected| J["Address Feedback & Re-submit"]
+    H -->|"Approved"| I["Publishing to Microsoft Store"]
+    H -->|"Rejected"| J["Address Feedback & Re-submit"]
     J --> D
     I --> K["App is Live!"]
 ```
@@ -303,4 +303,5 @@ LogicPadの開発からMicrosoft Storeへのリリースまでの軌跡を振り
 WinUI 3とWindows App SDKは、現在も活発に開発が進められており、Windows 11のUIパラダイムを最大限に活かした美しいアプリケーションを作るための最高のツールです。このブログ記事が、これからWindowsネイティブアプリ開発に挑戦しようとしている開発者の一助となり、Storeに素晴らしいアプリが一つでも多く並ぶことを心から願っています。
 
 開発はまだ終わっていません。LogicPadの次のバージョンでは、Direct2Dを活用した独自の波形レンダリングエンジンの統合を予定しています。次回の記事では、DirectXとWinUI 3の相互運用（SwapChainPanelの活用）について深く掘り下げる予定です。ご期待ください。
+
 

@@ -34,11 +34,11 @@ A "rodovia larga" nunca fica congestionada, não importa quantos carros passem, 
 
 ```mermaid
 graph LR
-    START["Início (4000 pessoas)"] -->|Estrada estreita A: T=N/100| MID1["Ponto intermediário 1"]
-    START -->|Rodovia C: T=45 min| MID2["Ponto intermediário 2"]
+    START["Início (4000 pessoas)"] -->|"Estrada estreita A: T=N/100"| MID1["Ponto intermediário 1"]
+    START -->|"Rodovia C: T=45 min"| MID2["Ponto intermediário 2"]
     
-    MID1 -->|Rodovia B: T=45 min| GOAL["Destino"]
-    MID2 -->|Estrada estreita D: T=N/100| GOAL
+    MID1 -->|"Rodovia B: T=45 min"| GOAL["Destino"]
+    MID2 -->|"Estrada estreita D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -59,13 +59,13 @@ Agora, suponha que o prefeito construiu um **desvio ultrarrápido dos sonhos que
 
 ```mermaid
 graph LR
-    START["Início (4000 pessoas)"] -->|Estrada estreita A: T=N/100| MID1["Ponto intermediário 1"]
-    START -->|Rodovia C: T=45 min| MID2["Ponto intermediário 2"]
+    START["Início (4000 pessoas)"] -->|"Estrada estreita A: T=N/100"| MID1["Ponto intermediário 1"]
+    START -->|"Rodovia C: T=45 min"| MID2["Ponto intermediário 2"]
     
-    MID1 -.->|Novo desvio: T=0 min| MID2
+    MID1 -.->|"Novo desvio: T=0 min"| MID2
     
-    MID1 -->|Rodovia B: T=45 min| GOAL["Destino"]
-    MID2 -->|Estrada estreita D: T=N/100| GOAL
+    MID1 -->|"Rodovia B: T=45 min"| GOAL["Destino"]
+    MID2 -->|"Estrada estreita D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -111,3 +111,4 @@ O Paradoxo de Braess não é apenas uma teoria de gaveta; foi observado muitas v
   O mesmo fenômeno pode ocorrer no roteamento da Internet e em redes elétricas. Assim que novos cabos ou linhas são adicionados, os pacotes de dados podem se concentrar na "rota mais curta percebida como ideal", causando a queda de toda a rede.
 
 O Paradoxo de Braess expressa perfeitamente o dilema de uma sociedade complexa, onde **"a coleção de escolhas racionais individuais (egoísmo)" não leva necessariamente ao "resultado ideal para todos"**. Às vezes, "tirar as opções (liberdade)" pode ser do interesse de todos.
+

@@ -71,10 +71,10 @@ graph TD
         X["X = 0.4128..."]
     end
     
-    R1 -->|Ajouter 1 à la 1ère décimale| X
-    R2 -->|Ajouter 1 à la 2e décimale| X
-    R3 -->|Ajouter 1 à la 3e décimale| X
-    R4 -->|Ajouter 1 à la 4e décimale| X
+    R1 -->|"Ajouter 1 à la 1ère décimale"| X
+    R2 -->|"Ajouter 1 à la 2e décimale"| X
+    R3 -->|"Ajouter 1 à la 3e décimale"| X
+    R4 -->|"Ajouter 1 à la 4e décimale"| X
     
     style X fill:#aaffaa,stroke:#333,stroke-width:2px
 ```
@@ -130,3 +130,4 @@ Le résultat qui en a découlé est le célèbre **"théorème d'incomplétude d
 C'était une découverte majeure démontrant les limites du savoir humain : "Aussi rigoureusement que vous définissiez les règles mathématiques, il y aura toujours dans ces règles des 'vérités qui ne peuvent être ni prouvées ni réfutées' (les mathématiques sont incomplètes)."
 
 Le paradoxe de Richard a commencé comme un simple jeu de mots contradictoire, pour évoluer ensuite en l'arme ultime permettant de briser "l'absoluité" de la discipline mathématique elle-même.
+

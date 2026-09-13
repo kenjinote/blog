@@ -296,10 +296,10 @@ Thread Pool adalah sebuah arsitektur di mana sejumlah thread pekerja (worker thr
 
 ```mermaid
 graph TD
-    Client["Klien / Main Thread"] -->|Push Task| Queue["Antrean Tugas"]
-    Queue -->|Pop Task| W1["Thread Pekerja 1"]
-    Queue -->|Pop Task| W2["Thread Pekerja 2"]
-    Queue -->|Pop Task| W3["Thread Pekerja N"]
+    Client["Klien / Main Thread"] -->|"Push Task"| Queue["Antrean Tugas"]
+    Queue -->|"Pop Task"| W1["Thread Pekerja 1"]
+    Queue -->|"Pop Task"| W2["Thread Pekerja 2"]
+    Queue -->|"Pop Task"| W3["Thread Pekerja N"]
     
     W1 --> Exec["Eksekusi & Mengembalikan Future"]
     W2 --> Exec
@@ -331,3 +331,4 @@ Artikel ini telah menjelaskan dasar-dasar pemrograman multithreading dan asinkro
 4. **Sadari adanya overhead:** Hindari pembuatan thread yang berlebihan, dan terapkan arsitektur thread pool jika diperlukan.
 
 Bug dalam pemrosesan paralel (deadlock, data race) sering kali memiliki tingkat reproduksi yang rendah dan termasuk dalam kategori bug yang paling sulit untuk di-debug. Dengan selalu memperhatikan keamanan thread (thread safety) dan memilih alat pustaka standar yang tepat, mari wujudkan pengembangan sistem yang tangguh dan cepat menggunakan C++ modern.
+

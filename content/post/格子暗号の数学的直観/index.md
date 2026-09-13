@@ -134,8 +134,8 @@ Oded Regevの最大の功績は、このLWE問題の難しさを、前述の格�
 
 ```mermaid
 graph TD
-    A["Worst-case Lattice Problems (Gap-SVP, SIVP)"] -->|Quantum/Classical Reduction| B["Average-case LWE Problem"]
-    B -->|Cryptographic Construction| C["LWE-based Cryptosystems (PKE, KEM, FHE)"]
+    A["Worst-case Lattice Problems (Gap-SVP, SIVP)"] -->|"Quantum/Classical Reduction"| B["Average-case LWE Problem"]
+    B -->|"Cryptographic Construction"| C["LWE-based Cryptosystems (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ Module-LWEでは、多項式を要素とする小さな行列とベクトルを�
 4. 現実のプロトコルでは、通信効率と計算速度を高めるために多項式環を用いた **Ring-LWE** や **Module-LWE** が採用されており、NIST標準の **ML-KEM** の基盤となっています。
 
 量子コンピュータという未曾有の計算パラダイムシフトが迫る中、古典的な線形代数と整数論の深淵から生まれた「格子暗号」が、未来のインターネットセキュリティの基盤を担うというのは非常にロマンのある話です。格子暗号の基礎となる数学は決して難解すぎるものではなく、線形代数と確率の基礎知識があれば十分にその美しい構造を理解することができます。本記事が、PQCの核となる格子暗号の理解への一助となれば幸いです。
+

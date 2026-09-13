@@ -146,17 +146,17 @@ graph TD
         Labeler["Moderation Labeler (Fact Checkers)"]
     end
 
-    Client -->|Reads/Writes| PDS1
-    Client -->|Views| AppView
+    Client -->|"Reads/Writes"| PDS1
+    Client -->|"Views"| AppView
     
-    PDS1 -->|Syncs via WebSocket| Relay
-    PDS2 -->|Syncs via WebSocket| Relay
+    PDS1 -->|"Syncs via WebSocket"| Relay
+    PDS2 -->|"Syncs via WebSocket"| Relay
     
-    Relay -->|Indexes| AppView
+    Relay -->|"Indexes"| AppView
     
-    AppView -.->|Requests Feed| FeedGen1
-    AppView -.->|Requests Feed| FeedGen2
-    AppView -.->|Gets Labels| Labeler
+    AppView -.->|"Requests Feed"| FeedGen1
+    AppView -.->|"Requests Feed"| FeedGen2
+    AppView -.->|"Gets Labels"| Labeler
 ```
 
 AT Protocolの最大の功績は、「フィード生成（アルゴリズム）」と「モデレーション（ラベリング）」を、プラットフォーム本体から切り離し、ユーザー自身が自由に選択・組み合わせ可能（Composable）にしたことです（Custom Feeds / Stackable Moderation）。
@@ -194,5 +194,6 @@ AT Protocolの最大の功績は、「フィード生成（アルゴリズム）
 101回目からも、一人の技術者として、コードと社会の交差点に立ち続け、思索を深めていきたいと思います。長文に最後までお付き合いいただき、本当にありがとうございました。未来のネットワークが、私たちを分断する壁ではなく、互いを理解するための橋となることを願って。
 
 （了）
+
 
 

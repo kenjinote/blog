@@ -39,8 +39,8 @@ $$ O((\log N)^3) $$
 ```mermaid
 graph TD
     A["输入大小(位数) N增加"] --> B{"算法选择"}
-    B -->|经典: 普通数域筛选法| C["次指数级增长 O(exp(...))"]
-    B -->|量子: 秀尔算法| D["多项式时间 O((log N)^3)"]
+    B -->|"经典: 普通数域筛选法"| C["次指数级增长 O(exp(...))"]
+    B -->|"量子: 秀尔算法"| D["多项式时间 O((log N)^3)"]
     C --> E["数千年〜数十亿年 (无法破解)"]
     D --> F["几分钟〜几小时 (现实时间内破解)"]
 ```
@@ -358,5 +358,6 @@ PQC基于新的数学问题（如格问题、多变量多项式问题、基于�
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

@@ -142,8 +142,8 @@ graph TD
     C --> D["Publication et distribution sur Internet"]
     D --> E["Accès par un scraper/crawler d'IA"]
     E --> F{"Détection de l'indicateur Do Not Train (opt-out)"}
-    F -->|Respect| G["Exclusion de l'ensemble de données d'apprentissage"]
-    F -->|Malveillance| H["Suppression forcée des métadonnées et exécution de l'apprentissage"]
+    F -->|"Respect"| G["Exclusion de l'ensemble de données d'apprentissage"]
+    F -->|"Malveillance"| H["Suppression forcée des métadonnées et exécution de l'apprentissage"]
     H --> I["Augmentation massive des pénalités légales en vertu de l'EU AI Act, etc."]
 ```
 
@@ -218,3 +218,4 @@ L'année 2026 restera gravée dans l'histoire comme l'année monumentale où la 
 Il est impossible de faire reculer l'horloge de l'évolution de la technologie de l'IA. Cependant, apprivoiser cette technologie puissante et la contrôler afin qu'elle ne détruise pas l'écosystème des créateurs qui ont nourri la culture et l'art humains pendant des millénaires repose sur la sagesse du droit, de l'informatique et de la société dans son ensemble.
 
 À l'horizon 2030, il est vivement demandé de ne pas laisser l'IA et les créateurs s'affronter et se disputer le gâteau, mais d'établir une « nouvelle zone économique numérique » où ils peuvent co-créer avec une rémunération équitable et un respect mutuel, permettant ainsi d'étendre la créativité de l'humanité.
+

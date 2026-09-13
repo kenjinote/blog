@@ -35,10 +35,10 @@ La arquitectura del procesamiento en la nube usando FHE es completamente diferen
 
 ```mermaid
 graph TD
-    A["Cliente (Posee la clave privada)"] -->|1. Cifrar texto plano x: E(x)| B["Servidor en la nube (Solo datos cifrados)"]
-    B -->|2. Aplicar función f manteniendo el cifrado: E(f(x))| B
-    B -->|3. Texto cifrado del resultado E(y)| A
-    A -->|4. Descifrar con clave privada: y = f(x)| A
+    A["Cliente (Posee la clave privada)"] -->|"1. Cifrar texto plano x: E(x)"| B["Servidor en la nube (Solo datos cifrados)"]
+    B -->|"2. Aplicar función f manteniendo el cifrado: E(f(x))"| B
+    B -->|"3. Texto cifrado del resultado E(y)"| A
+    A -->|"4. Descifrar con clave privada: y = f(x)"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -274,4 +274,5 @@ Al igual que la invención de la criptografía de clave pública (RSA) en la dé
 Hoy en día, el cifrado totalmente homomórfico (FHE) ha saltado de la teoría de los laboratorios y ha entrado en una fase en la que Microsoft, IBM, Intel, Google y muchas startups compiten ferozmente por su aplicación práctica. Aunque los desafíos del coste computacional y el tamaño de los datos aún persisten, el rendimiento continúa mejorando a un ritmo que supera la Ley de Moore, gracias al refinamiento de los algoritmos y la evolución de los aceleradores de hardware.
 
 En unos pocos años, "calcular datos mientras están cifrados" ya no será algo extraordinario, sino que se convertirá en una de las mejores prácticas estándar de protección de datos en los servicios en la nube. El FHE es verdaderamente la clave de la seguridad de la próxima generación, al materializar **el equilibrio definitivo entre la privacidad y la utilización de los datos** en nuestra sociedad impulsada por los datos.
+
 

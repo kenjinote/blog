@@ -81,18 +81,18 @@ O método de divisão é tão complexo e disperso que acaba num estado onde "o v
 
 ```mermaid
 graph TD
-    S["Esfera original S (Volume V)"] -->|Divisão especial| P1["Pedaço 1 (Volume imensurável)"]
+    S["Esfera original S (Volume V)"] -->|"Divisão especial"| P1["Pedaço 1 (Volume imensurável)"]
     S --> P2["Pedaço 2 (Volume imensurável)"]
     S --> P3["Pedaço 3 (Volume imensurável)"]
     S --> P4["Pedaço 4 (Volume imensurável)"]
     S --> P5["Pedaço 5 (Volume imensurável)"]
     
-    P1 -->|Rotação e Translação| S1["Nova esfera 1 (Volume V)"]
-    P2 -->|Rotação e Translação| S1
-    P3 -->|Rotação e Translação| S1
+    P1 -->|"Rotação e Translação"| S1["Nova esfera 1 (Volume V)"]
+    P2 -->|"Rotação e Translação"| S1
+    P3 -->|"Rotação e Translação"| S1
     
-    P4 -->|Rotação e Translação| S2["Nova esfera 2 (Volume V)"]
-    P5 -->|Rotação e Translação| S2
+    P4 -->|"Rotação e Translação"| S2["Nova esfera 2 (Volume V)"]
+    P5 -->|"Rotação e Translação"| S2
     
     style S fill:#ffddaa,stroke:#333,stroke-width:2px
     style S1 fill:#aaddff,stroke:#333,stroke-width:2px
@@ -136,3 +136,4 @@ O mundo físico em que vivemos é feito de "partículas com tamanho (finito)", c
 No entanto, na tela da "matemática" criada pelo cérebro humano, o tamanho de um ponto é zero, e operações infinitas são permitidas.
 
 O Paradoxo de Banach-Tarski nos ensina o quão facilmente o conceito do "infinito" salta sobre a intuição humana simples, e pode ser considerado uma das obras-primas supremas da matemática moderna.
+

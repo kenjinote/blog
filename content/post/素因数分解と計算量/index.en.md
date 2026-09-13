@@ -264,7 +264,7 @@ graph LR
     end
 
     C1 --> C2
-    C2 -. "Limit of Classical Physics" .-> Q1
+    C2 -. Limit of Classical Physics .-> Q1
 ```
 
 In Shor's algorithm, the process of "period finding," which was a bottleneck in classical algorithms, is computed in parallel and instantaneously by the "Quantum Fourier Transform (QFT)" using quantum entanglement and quantum superposition.
@@ -285,3 +285,4 @@ In this article, starting from the basics of computational complexity (Big-O not
 * However, with the advent of **quantum computers and Shor's algorithm**, prime factorization in polynomial time has theoretically become possible, and cryptographic technology is about to shift to the next era (post-quantum cryptography).
 
 The fact that the abstract concept of an algorithm's computational complexity is directly linked to the security of our daily lives is one of the most fascinating and thrilling aspects of information science and mathematics. Please pay close attention to future technological progress, especially the development trends of quantum computers and the transitions in cryptography.
+

@@ -44,8 +44,8 @@ The barber completely panicked and became unable to take either action. This is 
 graph TD
     Barber["Barber: Should he shave himself?"]
     
-    Barber -->|YES: Shaves himself| Cond1["Rule violation!<br>(He must not shave the beard of someone who shaves himself)"]
-    Barber -->|NO: Does not shave himself| Cond2["Rule violation!<br>(He must shave the beard of someone who does not shave himself)"]
+    Barber -->|"YES: Shaves himself"| Cond1["Rule violation!<br>(He must not shave the beard of someone who shaves himself)"]
+    Barber -->|"NO: Does not shave himself"| Cond2["Rule violation!<br>(He must shave the beard of someone who does not shave himself)"]
     
     Cond1 --> Paradox["Contradiction (Paradox)"]
     Cond2 --> Paradox
@@ -140,7 +140,7 @@ graph LR
         Strict["Only those that follow strict<br>rules (axioms) are 'Sets'"] --> Safe["Contradiction R is not recognized<br>as a 'Set', so it's safe!"]
     end
     
-    Monster -.->|Crisis in the Mathematical World| Strict
+    Monster -.->|"Crisis in the Mathematical World"| Strict
 ```
 
 ---
@@ -153,3 +153,4 @@ At first glance, paradoxes may seem like mere sophistry or wordplay, but they de
 
 If the genius Russell had not noticed this "barber's bug", modern mathematics, and computer science which lies on the extension of that logic, might have developed while harboring a fatal contradiction somewhere.
 A paradox is the most stimulating drastic medicine that teaches us the limits of human logic.
+

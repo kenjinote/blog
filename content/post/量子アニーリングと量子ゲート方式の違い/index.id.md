@@ -61,8 +61,8 @@ Artinya, saat pada akhirnya $A(t) \to 0$ dan $B(t) \to 1$, sistem telah mencapai
 
 ```mermaid
 graph TD
-    A["Hamiltonian H_0 (Keadaan Awal)"] -->| Perubahan Adiabatik (Cukup Lambat) | B["Selalu Mempertahankan Ground State"]
-    A -->| Perubahan Non-Adiabatik (Terlalu Cepat/Noise Termal) | C["Transisi ke Keadaan Tereksitasi (Error)"]
+    A["Hamiltonian H_0 (Keadaan Awal)"] -->|"Perubahan Adiabatik (Cukup Lambat)"| B["Selalu Mempertahankan Ground State"]
+    A -->|"Perubahan Non-Adiabatik (Terlalu Cepat/Noise Termal)"| C["Transisi ke Keadaan Tereksitasi (Error)"]
     B --> D["Hamiltonian H_P (Solusi Optimal Global)"]
     C --> E["Terperangkap di Solusi Optimal Lokal"]
     D --> F["Pembacaan Solusi"]
@@ -219,4 +219,5 @@ Komputer kuantum masih dalam tahap perkembangan, namun baik perangkat keras maup
 
 ---
 *Artikel ini secara komprehensif menjelaskan komputasi kuantum, mulai dari konsep dasar hingga tren perangkat keras terbaru. Nantikan terus perkembangan penelitian terbaru di masa yang akan datang.*
+
 

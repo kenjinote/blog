@@ -60,11 +60,11 @@ graph LR
         NewR4["Zimmer 4<br>(Gast C)"]
     end
     
-    R1 -->|Umzug| NewR2
-    R2 -->|Umzug| NewR3
-    R3 -->|Umzug| NewR4
+    R1 -->|"Umzug"| NewR2
+    R2 -->|"Umzug"| NewR3
+    R3 -->|"Umzug"| NewR4
     
-    NewGuest["Neuer Gast"] -->|Check-in| NewR1
+    NewGuest["Neuer Gast"] -->|"Check-in"| NewR1
     
     style NewR1 fill:#aaffaa,stroke:#333,stroke-width:2px
     style NewGuest fill:#ffaaaa,stroke:#333,stroke-width:2px
@@ -101,15 +101,15 @@ Und wie durch ein Wunder wurden **"alle Zimmer mit ungeraden Nummern (Zimmer 1, 
 ```mermaid
 graph LR
     subgraph "Aktuelle Hotelgäste"
-        G1["Gast 1"] -->|verdoppeln| R2["Zimmer 2"]
-        G2["Gast 2"] -->|verdoppeln| R4["Zimmer 4"]
-        G3["Gast 3"] -->|verdoppeln| R6["Zimmer 6"]
+        G1["Gast 1"] -->|"verdoppeln"| R2["Zimmer 2"]
+        G2["Gast 2"] -->|"verdoppeln"| R4["Zimmer 4"]
+        G3["Gast 3"] -->|"verdoppeln"| R6["Zimmer 6"]
     end
     
     subgraph "Neue Gäste aus dem Bus (Unendlich viele)"
-        N1["Neuer Gast 1"] -->|zu ungeraden| R1["Zimmer 1 (Frei)"]
-        N2["Neuer Gast 2"] -->|zu ungeraden| R3["Zimmer 3 (Frei)"]
-        N3["Neuer Gast 3"] -->|zu ungeraden| R5["Zimmer 5 (Frei)"]
+        N1["Neuer Gast 1"] -->|"zu ungeraden"| R1["Zimmer 1 (Frei)"]
+        N2["Neuer Gast 2"] -->|"zu ungeraden"| R3["Zimmer 3 (Frei)"]
+        N3["Neuer Gast 3"] -->|"zu ungeraden"| R5["Zimmer 5 (Frei)"]
     end
     
     style R1 fill:#aaffaa,stroke:#333
@@ -180,3 +180,4 @@ Alle diese selbstverständlichen Intuitionen werden auf wunderbare Weise widerle
 Die unendliche Welt ist eine Schatztruhe voller Paradoxien (Wahrheiten, die der Intuition widersprechen). Mathematiker haben diese Paradoxien nicht gefürchtet, sondern sie mit der Kraft der Logik bezwungen, klassifiziert und das wunderschöne System der modernen Mengenlehre geschaffen.
 
 Wenn man Ihnen das nächste Mal absagt mit den Worten "Das Hotel ist ausgebucht", stellen Sie sich doch einfach vor: "Was wäre, wenn dieses Hotel Hilberts unendliches Hotel wäre?"
+

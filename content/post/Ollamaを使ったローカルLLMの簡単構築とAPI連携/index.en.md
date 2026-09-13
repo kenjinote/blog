@@ -154,9 +154,9 @@ The diagram below shows how a custom model is derived from a base model.
 
 ```mermaid
 graph LR
-    A["Base Model (llama3.1)"] -->| Add System Prompt | B["Intermediate Config"]
-    B -->| Set Temperature & Top_p | C["Custom Model (kansai-coder)"]
-    C -->| Run | D["Interactive CLI / API"]
+    A["Base Model (llama3.1)"] -->|"Add System Prompt"| B["Intermediate Config"]
+    B -->|"Set Temperature & Top_p"| C["Custom Model (kansai-coder)"]
+    C -->|"Run"| D["Interactive CLI / API"]
 ```
 
 As an example, let's create a programming assistant model that responds in the Kansai dialect.
@@ -496,5 +496,6 @@ By embedding Ollama API requests into Python or shell scripts, you can inject th
 With the advent of Ollama, the hurdle for introducing local LLMs has dropped dramatically. The combination of a simple command structure resembling Docker container operations and a REST API that can be easily utilized from external applications is no exaggeration to say is the current de facto standard in local AI development.
 
 For developers troubled by the costs and security constraints of cloud LLMs, please build a local LLM environment using Ollama by referring to the steps introduced in this article, and try integrating it into your own applications. You should be able to feel the potential of AI more freely and closer to home.
+
 
 

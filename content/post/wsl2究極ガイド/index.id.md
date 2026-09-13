@@ -386,3 +386,5 @@ WSL2 telah sepenuhnya melampaui batasan sebagai "sekadar bonus Linux yang berjal
 Dengan menerapkan semua pengaturan yang dijelaskan dalam artikel ini (optimasi sumber daya dengan `.wslconfig`, peningkatan terminal dengan Zsh + Powerlevel10k, akses transparan dengan VS Code Remote, serta integrasi SSH dan pemeliharaan VHDX), Anda akan dapat melengkapi "Lingkungan Pengembangan Ultimate" yang bebas stres, cepat, dan aman.
 
 Meskipun membutuhkan sedikit upaya untuk menyiapkan lingkungan tersebut, begitu Anda menetapkan pengaturannya, produktivitas rekayasa perangkat lunak Anda akan meningkat secara dramatis di masa mendatang. Kami harap Anda mengeksplorasi penyesuaian lebih lanjut berdasarkan panduan ini sesuai dengan proyek dan preferensi Anda.
+
+

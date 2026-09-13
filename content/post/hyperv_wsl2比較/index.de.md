@@ -71,7 +71,7 @@ graph TD
     F["Linux User Space (WSL2-Distributionen)"]
 
     A --> C
-    C -->| Betriebssystemübergreifende Dateifreigabe | D
+    C -->|"Betriebssystemübergreifende Dateifreigabe"| D
     D --> E
     D --> F
 ```
@@ -230,5 +230,6 @@ Hyper-V und WSL2 sind nicht so, dass das eine besser ist als das andere, sondern
 *   **Hyper-V** ist ein "vollwertiger Hypervisor", der die robuste Isolation und Verwaltungsfunktionen, die in Enterprise-Rechenzentren entwickelt wurden, auf den Desktop bringt. Beim Aufbau von Netzwerken, Testen von Windows-Betriebssystemen und Simulieren von Infrastrukturumgebungen ist er unübertroffen.
 
 In der modernen Windows-Umgebung konkurrieren diese beiden Technologien nicht, sondern koexistieren harmonisch auf derselben VM-Plattform. Durch den richtigen Einsatz beider Technologien je nach Verwendungszweck wird Windows zur leistungsstärksten und flexibelsten Engineering-Workstation der Welt.
+
 
 

@@ -142,8 +142,8 @@ graph TD
     C --> D["Publicação e distribuição na internet"]
     D --> E["Acesso por raspadores/rastreadores de IA"]
     E --> F{"Detecção de flag Do Not Train (Opt-out)"}
-    F -->|Cumprimento| G["Exclusão do dataset de treinamento"]
-    F -->|Malícia| H["Remoção forçada de metadados e execução do treinamento"]
+    F -->|"Cumprimento"| G["Exclusão do dataset de treinamento"]
+    F -->|"Malícia"| H["Remoção forçada de metadados e execução do treinamento"]
     H --> I["Aumento de enormes penalidades legais sob o EU AI Act e afins"]
 ```
 
@@ -218,3 +218,4 @@ O ano de 2026 ficará gravado na história não só como o ano em que os dias de
 Tentar voltar as mãos e os relógios do avanço da inovação na IA é praticamente impensável e indubitavelmente um movimento para trás. Embora devamos subjugar esses saltos assustadoramente poderosos e contê-los para que nossa humanidade global (que cultivou ecossistemas artísticos ao longo de milênios) não desmorone, seu manejo apoia-se e repousa no avanço cooperativo unificado não apenas da lei, mas da ciência da computação combinada com as faculdades combinadas de sabedoria em nossa sociedade global hoje.
 
 A caminho de 2030, somos desafiados e ansiosamente solicitados a substituir nossa apropriação agressiva da terra por uma estrutura mutuamente unificada não competitiva (uma que não sugue lucros em hostilidades), pavimentando um modo pacífico em colaboração recíproca compensada. Uma vez estabelecido esse pilar em uma Nova Zona Econômica Digital com um respeito harmonioso pelo design cognitivo humano inerente, nós e os criadores impulsionaremos sem limites os potenciais do progresso para todos.
+

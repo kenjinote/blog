@@ -42,9 +42,9 @@ No caso de switches táteis (switch Brown) ou clicky (switch Blue), devido à pr
 ```mermaid
 flowchart TD
     A["Início do pressionamento pelo dedo"] --> B{"Tipo de Switch"}
-    B -->|Linear| C["Resistência aumenta linearmente"]
-    B -->|Tátil| D["Resistência física no meio (Bump)"]
-    B -->|Clicky| E["Mecanismo de som ativado junto com o Bump"]
+    B -->|"Linear"| C["Resistência aumenta linearmente"]
+    B -->|"Tátil"| D["Resistência física no meio (Bump)"]
+    B -->|"Clicky"| E["Mecanismo de som ativado junto com o Bump"]
     C --> F["Alcance do Ponto de Atuação (Actuation Point)"]
     D --> F
     E --> F
@@ -78,13 +78,13 @@ Dentro de um teclado existem dezenas a mais de 100 switches, mas como o número 
 
 ```mermaid
 flowchart LR
-    M["Microcontrolador (MCU)"] -->|Alterna Saída Row High/Low| R1["Row 1"]
+    M["Microcontrolador (MCU)"] -->|"Alterna Saída Row High/Low"| R1["Row 1"]
     M --> R2["Row 2"]
     R1 --> S11["Switch 1,1"] & S12["Switch 1,2"]
     R2 --> S21["Switch 2,1"] & S22["Switch 2,2"]
     S11 & S21 --> C1["Column 1"]
     S12 & S22 --> C2["Column 2"]
-    C1 & C2 -->|Detecta a voltagem e lê| M
+    C1 & C2 -->|"Detecta a voltagem e lê"| M
 ```
 
 **Polling Rate (Taxa de Atualização)** é a frequência com que o teclado informa ao PC o "estado atual das teclas". Um teclado padrão opera em 125Hz (1 vez a cada 8ms), mas modelos high-end podem realizar comunicação ultra-rápida de 1000Hz (1 vez a cada 1ms) ou, mais recentemente, 8000Hz (1 vez a cada 0.125ms).
@@ -201,6 +201,7 @@ A escolha de um teclado é um processo de "otimização da sua própria interfac
 Os 5 teclados apresentados desta vez (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) são verdadeiras obras-primas que procuram a "melhor experiência de digitação" usando as suas próprias abordagens. Esperamos que encontre o parceiro ideal com base no seu estilo de digitação ou qualquer restrição de desconforto físico.
 
 O investimento num teclado reverter-se-á em valor em forma de "milhões de linhas de código sem bugs".
+
 
 
 

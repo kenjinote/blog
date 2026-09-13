@@ -37,18 +37,18 @@ Mengapa demikian? Logika Zeno adalah seperti ini:
 ```mermaid
 graph LR
     subgraph "Langkah 1"
-        A1["Achilles (Mulai)"] -->|Menyusul| T1["Posisi awal kura-kura"]
-        T1_Start["Kura-kura"] -->|Bergerak| T2_Pos["Sedikit ke depan"]
+        A1["Achilles (Mulai)"] -->|"Menyusul"| T1["Posisi awal kura-kura"]
+        T1_Start["Kura-kura"] -->|"Bergerak"| T2_Pos["Sedikit ke depan"]
     end
     
     subgraph "Langkah 2"
-        A2["Achilles"] -->|Menyusul| T2["Posisi kura-kura selanjutnya"]
-        T2_Start["Kura-kura"] -->|Bergerak| T3_Pos["Lebih jauh ke depan"]
+        A2["Achilles"] -->|"Menyusul"| T2["Posisi kura-kura selanjutnya"]
+        T2_Start["Kura-kura"] -->|"Bergerak"| T3_Pos["Lebih jauh ke depan"]
     end
     
     subgraph "Langkah 3"
-        A3["Achilles"] -->|Menyusul| T3["Posisi kura-kura yang lebih jauh"]
-        T3_Start["Kura-kura"] -->|Berlanjut tanpa akhir...| Infinity["Tidak akan pernah menyusul!?"]
+        A3["Achilles"] -->|"Menyusul"| T3["Posisi kura-kura yang lebih jauh"]
+        T3_Start["Kura-kura"] -->|"Berlanjut tanpa akhir..."| Infinity["Tidak akan pernah menyusul!?"]
     end
 ```
 
@@ -167,4 +167,5 @@ Namun, bagi para filsuf Yunani kuno yang tidak memiliki konsep "tak terhingga" a
 Pertanyaan mendalam yang diajukan oleh paradoks ini, seperti "apa itu sesuatu yang kontinu" dan "apa artinya dapat dibagi hingga tak terbatas", menjadi pendorong penting yang mengarah pada lahirnya **"kalkulus"** oleh Newton dan Leibniz di kemudian hari, serta bermuara pada dasar-dasar matematika modern.
 
 Paradoks yang hebat tidak hanya membingungkan orang, tetapi juga merupakan kunci untuk membuka pintu matematika yang baru.
+
 

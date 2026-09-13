@@ -57,7 +57,7 @@ Anthropic是由前OpenAI成員所創立的企業，採用獨特的「合憲AI（
 
 ```mermaid
 graph TD
-    A["用戶端應用程式"] -->|HTTP/REST or gRPC| B["API閘道器"]
+    A["用戶端應用程式"] -->|"HTTP/REST or gRPC"| B["API閘道器"]
     B --> C["負載平衡器"]
     C --> D["推論叢集"]
     D --> E["分詞器 (BPE / SentencePiece)"]
@@ -66,7 +66,7 @@ graph TD
     G --> H["輸出層 (Logits)"]
     H --> I["採樣器 (Temperature, Top-p, Top-k)"]
     I --> J["反分詞器"]
-    J -->|串流回應 (區塊)| A
+    J -->|"串流回應 (區塊)"| A
 ```
 
 ### 3.1 Tokenization（分詞）演算法
@@ -344,3 +344,4 @@ sequenceDiagram
 例如，對於使用者簡單的提問，使用廉價且快速的 `GPT-4o-mini` 或 `Gemini 1.5 Flash` 來回應；僅當判斷需要複雜處理時，才將任務回退（Fallback）給 `Claude 3.5 Sonnet`。如此一來便能實現成本與效能的最佳平衡。
 
 AI的進化未曾停歇。請深刻理解各家API的優勢與劣勢，以及其架構特性，並建構出具備靈活性與可擴展性的AI應用程式吧。
+

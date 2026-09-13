@@ -33,13 +33,13 @@ Le diagramme Mermaid ci-dessous visualise les obstacles d'apprentissage et les p
 ```mermaid
 flowchart TD
     A["École primaire : Scratch (Visuel / par blocs)"] --> B{"Collège : Le mur du passage aux langages textuels"}
-    B -->|Abandon dû à des erreurs de syntaxe strictes| C["Décrochage (Allergie à la syntaxe)"]
-    B -->|Manque de compréhension des variables et du typage statique| D["Décrochage (Le mur des types)"]
-    B -->|Transition réussie| E["Lycée : Information I (Bases de Python/JavaScript, etc.)"]
+    B -->|"Abandon dû à des erreurs de syntaxe strictes"| C["Décrochage (Allergie à la syntaxe)"]
+    B -->|"Manque de compréhension des variables et du typage statique"| D["Décrochage (Le mur des types)"]
+    B -->|"Transition réussie"| E["Lycée : Information I (Bases de Python/JavaScript, etc.)"]
     E --> F{"Le mur de la conception d'algorithmes et des structures de données"}
-    F -->|Ignorance de la complexité temporelle et spatiale| G["Code inefficace (Dégradation des performances par création massive de O(N^2))"]
-    F -->|Boîte noire de la gestion de la mémoire et des références| H["Devenir un simple codeur se limitant aux appels d'API superficiels"]
-    F -->|Percée conceptuelle| I["Apprentissage approfondi de la CS (C/C++, Java, architecture bas niveau)"]
+    F -->|"Ignorance de la complexité temporelle et spatiale"| G["Code inefficace (Dégradation des performances par création massive de O(N^2))"]
+    F -->|"Boîte noire de la gestion de la mémoire et des références"| H["Devenir un simple codeur se limitant aux appels d'API superficiels"]
+    F -->|"Percée conceptuelle"| I["Apprentissage approfondi de la CS (C/C++, Java, architecture bas niveau)"]
     I --> J["Professionnel de l'informatique de haut niveau ardemment désiré par l'industrie"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
@@ -179,7 +179,7 @@ flowchart LR
         C["Environnement de compilation/exécution backend"]
         D["Stockage de fichiers persistant"]
     end
-    A -->| HTTP/WebSocket通信: 学校の細い回線による深刻な遅延 | B
+    A -->|"HTTP/WebSocket通信: 学校の細い回線による深刻な遅延"| B
     B <--> C
     B <--> D
 ```
@@ -256,6 +256,7 @@ Comment traverser la phase de « l'après » programmation obligatoire, qui est 
 ---
 
 *Dans cet article, nous avons esquissé la théorie de la complexité et les limites d'infrastructure du concept GIGA School. Nous aborderons des sujets informatiques plus spécialisés (comme les algorithmes de systèmes distribués et les détails de la gestion de la mémoire de bas niveau) dans les prochains articles de cette série.*
+
 
 
 

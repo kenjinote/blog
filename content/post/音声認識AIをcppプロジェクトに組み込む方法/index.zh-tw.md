@@ -72,9 +72,9 @@ Whisper模型通常使用視窗大小 $N = 400$ (25ms)、平移大小 $H = 160$ 
 
 ```mermaid
 graph TD
-    A["音訊來源 (麥克風/檔案)"] -->|Raw Bytes, e.g. 48kHz Stereo| B["音訊解碼器與重新取樣器 (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-bit Float| C["環形緩衝區 / 記憶體陣列"]
-    C -->|Feed PCM Data| D["whisper.cpp 核心 (ggml)"]
+    A["音訊來源 (麥克風/檔案)"] -->|"Raw Bytes, e.g. 48kHz Stereo"| B["音訊解碼器與重新取樣器 (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-bit Float"| C["環形緩衝區 / 記憶體陣列"]
+    C -->|"Feed PCM Data"| D["whisper.cpp 核心 (ggml)"]
     D --> E["梅爾頻譜圖擷取"]
     E --> F["Transformer 編碼器-解碼器"]
     F --> G["文字 Token 生成"]
@@ -223,14 +223,14 @@ int main() {
 ```mermaid
 graph LR
     subgraph "音訊執行緒 (高優先級)"
-        A["音訊擷取 API (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["重新取樣器 (至16kHz)"]
+        A["音訊擷取 API (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["重新取樣器 (至16kHz)"]
         B --> C["環形緩衝區"]
     end
     
     subgraph "主執行緒 / 工作執行緒"
-        C -->|Pop 30ms-1000ms chunk| D["語音活動偵測 (VAD)"]
-        D -->|If speech detected| E["累積 PCM 緩衝區"]
-        E -->|Trigger Inference| F["whisper_full()"]
+        C -->|"Pop 30ms-1000ms chunk"| D["語音活動偵測 (VAD)"]
+        D -->|"If speech detected"| E["累積 PCM 緩衝區"]
+        E -->|"Trigger Inference"| F["whisper_full()"]
         F --> G["更新 UI/文字"]
     end
 ```
@@ -298,4 +298,5 @@ $$ N_{\text{threads}} = \min(\text{實體 CPU 核心數}, 4 \sim 8) $$
 * **壓倒性的最佳化**: 透過 `ggml` 進行 4-bit 量化，以及受惠於 Metal/cuBLAS 等硬體後端。
 
 請務必在開發能夠擺脫對龐大 Python 環境或雲端 API 的依賴，並在原生環境中高速且安全運作的語音處理應用程式時，善用 `whisper.cpp`。從隱私保護與低延遲的角度來看，完全在地端運行的 AI 必將成為未來軟體開發中極為重要的關鍵技術。
+
 

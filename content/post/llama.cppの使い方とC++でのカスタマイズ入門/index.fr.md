@@ -103,7 +103,7 @@ graph TD
     J --> K["ID de jeton sélectionné"]
     K --> L["Detokenizer llama.cpp"]
     L --> M["Chaîne de caractères de sortie"]
-    K -. "Boucle auto-régressive" .-> D
+    K -. Boucle auto-régressive .-> D
 ```
 
 La génération de texte est une boucle auto-régressive où chaque jeton généré est ajouté au cache KV comme entrée suivante, puis passe à nouveau par le graphe de calcul.
@@ -383,3 +383,4 @@ N'hésitez pas à écrire vous-même du code C++ et à faire l'expérience du pl
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

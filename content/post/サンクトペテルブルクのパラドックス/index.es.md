@@ -35,16 +35,16 @@ El premio inicial comienza en 2 dólares.
 graph TD
     Start["Inicio del juego"] --> Toss1{"1er lanzamiento de moneda"}
     
-    Toss1 -->|Cruz (1/2)| End1["Fin: Ganas 2 dólares"]
-    Toss1 -->|Cara (1/2)| Toss2{"2do lanzamiento de moneda"}
+    Toss1 -->|"Cruz (1/2)"| End1["Fin: Ganas 2 dólares"]
+    Toss1 -->|"Cara (1/2)"| Toss2{"2do lanzamiento de moneda"}
     
-    Toss2 -->|Cruz (1/2)| End2["Fin: Ganas 4 dólares"]
-    Toss2 -->|Cara (1/2)| Toss3{"3er lanzamiento de moneda"}
+    Toss2 -->|"Cruz (1/2)"| End2["Fin: Ganas 4 dólares"]
+    Toss2 -->|"Cara (1/2)"| Toss3{"3er lanzamiento de moneda"}
     
-    Toss3 -->|Cruz (1/2)| End3["Fin: Ganas 8 dólares"]
-    Toss3 -->|Cara (1/2)| Toss4{"..."}
+    Toss3 -->|"Cruz (1/2)"| End3["Fin: Ganas 8 dólares"]
+    Toss3 -->|"Cara (1/2)"| Toss4{"..."}
     
-    Toss4 -.->|Mientras más consecutivas sean| Infinite["¡El premio se duplica infinitamente!"]
+    Toss4 -.->|"Mientras más consecutivas sean"| Infinite["¡El premio se duplica infinitamente!"]
 ```
 
 Ahora, te hago una pregunta.
@@ -147,3 +147,4 @@ El concepto de "utilidad (Utility)" propuesto por Daniel Bernoulli se convirtió
 Nuestro comportamiento de adquirir seguros o diversificar inversiones también se puede explicar completamente mediante este mecanismo psicológico humano de la "utilidad marginal decreciente (el dolor de una gran pérdida es mucho mayor que la alegría de una gran ganancia)".
 
 Un simple problema matemático sobre un juego de azar sirvió como catalizador para desentrañar la mente humana y dar origen a la vasta disciplina de la economía.
+

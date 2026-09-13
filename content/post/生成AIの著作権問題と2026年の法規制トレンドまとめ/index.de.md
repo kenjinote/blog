@@ -142,8 +142,8 @@ graph TD
     C --> D["Veröffentlichung und Verbreitung im Internet"]
     D --> E["Zugriff durch KI-Scraper und Crawler"]
     E --> F{"Erkennung des 'Do Not Train' (Opt-out) Flags"}
-    F -->|Befolgung| G["Ausschluss aus dem Trainingsdatensatz"]
-    F -->|Böswilligkeit| H["Erzwungenes Löschen von Metadaten und Durchführung des Trainings"]
+    F -->|"Befolgung"| G["Ausschluss aus dem Trainingsdatensatz"]
+    F -->|"Böswilligkeit"| H["Erzwungenes Löschen von Metadaten und Durchführung des Trainings"]
     H --> I["Zunahme massiver rechtlicher Strafen basierend auf dem EU AI Act usw."]
 ```
 
@@ -218,3 +218,4 @@ Das Jahr 2026 wird in die Geschichte als ein monumentales Jahr eingehen, in dem 
 Es ist unmöglich, die Uhr der technologischen Entwicklung von KI zurückzudrehen. Es liegt jedoch an der Weisheit der Rechtswissenschaften, der Informatik und der gesamten Gesellschaft, diese mächtige Technologie zu zähmen und zu kontrollieren, ohne das Ökosystem der Schöpfer zu zerstören, das die menschliche Kultur und Kunst über Jahrtausende genährt hat.
 
 Auf dem Weg zum Jahr 2030 wird dringend der Aufbau einer "neuen digitalen Wirtschaftszone" gefordert, in der KI und Schöpfer nicht feindlich gegeneinander antreten und um den Kuchen kämpfen, sondern mit angemessener Vergütung und Respekt gemeinsam Neues schaffen (Co-Creation) und die menschliche Kreativität erweitern können.
+

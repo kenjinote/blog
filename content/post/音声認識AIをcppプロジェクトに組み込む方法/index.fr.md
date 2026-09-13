@@ -72,9 +72,9 @@ Concevons le pipeline de traitement audio dans une application C++. Le flux comm
 
 ```mermaid
 graph TD
-    A["Source audio (Microphone/Fichier)"] -->|Octets bruts, par ex. 48kHz Stéréo| B["Décodeur audio & Rééchantillonneur (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32 bits Flottant| C["Tampon circulaire / Tableau de mémoire"]
-    C -->|Fournir les données PCM| D["Noyau whisper.cpp (ggml)"]
+    A["Source audio (Microphone/Fichier)"] -->|"Octets bruts, par ex. 48kHz Stéréo"| B["Décodeur audio & Rééchantillonneur (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32 bits Flottant"| C["Tampon circulaire / Tableau de mémoire"]
+    C -->|"Fournir les données PCM"| D["Noyau whisper.cpp (ggml)"]
     D --> E["Extraction du spectrogramme Mel"]
     E --> F["Encodeur-Décodeur Transformer"]
     F --> G["Génération de jetons de texte"]
@@ -223,14 +223,14 @@ Pour implémenter cela, une architecture multithread et la gestion du flux audio
 ```mermaid
 graph LR
     subgraph "Fil d'exécution audio (Haute priorité)"
-        A["API de capture audio (CoreAudio/WASAPI/ALSA)"] -->|Rappel| B["Rééchantillonneur (vers 16kHz)"]
+        A["API de capture audio (CoreAudio/WASAPI/ALSA)"] -->|"Rappel"| B["Rééchantillonneur (vers 16kHz)"]
         B --> C["Tampon circulaire"]
     end
     
     subgraph "Fil principal / Travailleur"
-        C -->|Extraire un morceau de 30ms-1000ms| D["Détection d'activité vocale (VAD)"]
-        D -->|Si parole détectée| E["Accumuler le tampon PCM"]
-        E -->|Déclencher l'inférence| F["whisper_full()"]
+        C -->|"Extraire un morceau de 30ms-1000ms"| D["Détection d'activité vocale (VAD)"]
+        D -->|"Si parole détectée"| E["Accumuler le tampon PCM"]
+        E -->|"Déclencher l'inférence"| F["whisper_full()"]
         F --> G["Mettre à jour l'interface utilisateur/Texte"]
     end
 ```
@@ -298,4 +298,5 @@ Dans cet article, nous avons expliqué en détail comment utiliser `whisper.cpp`
 * **Optimisation impressionnante** : Les avantages de la quantification 4 bits via `ggml` et des backends matériels tels que Metal/cuBLAS.
 
 Veuillez utiliser `whisper.cpp` pour développer des applications de traitement audio hautement sécurisées et rapides dans un environnement natif, en vous libérant des dépendances aux énormes environnements Python et aux API cloud. L'IA entièrement locale est appelée à devenir une technologie fondamentale extrêmement importante dans le développement logiciel futur du point de vue de la protection de la vie privée et de la latence.
+
 

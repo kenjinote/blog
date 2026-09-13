@@ -97,11 +97,11 @@ Das folgende Mermaid-Diagramm (Flussdiagramm) zeigt den Ablauf vom Abrufen der D
 
 ```mermaid
 flowchart TD
-    A["Oura Ring API (Biometrie)"] -->|JSON via OAuth2| C["Python Daten-Ingestion-Pipeline"]
-    B["WakaTime API (Code-Zeit)"] -->|JSON via API Key| C
-    E["SwitchBot API (Raumtemperatur / CO2)"] -->|JSON via API Key| C
-    C -->|Extrahieren & Transformieren| D["Pandas DataFrame (Arbeitsspeicher)"]
-    D -->|Laden| F["TimescaleDB / PostgreSQL"]
+    A["Oura Ring API (Biometrie)"] -->|"JSON via OAuth2"| C["Python Daten-Ingestion-Pipeline"]
+    B["WakaTime API (Code-Zeit)"] -->|"JSON via API Key"| C
+    E["SwitchBot API (Raumtemperatur / CO2)"] -->|"JSON via API Key"| C
+    C -->|"Extrahieren & Transformieren"| D["Pandas DataFrame (Arbeitsspeicher)"]
+    D -->|"Laden"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (Ad-hoc Analyse)"]
     F --> H["Streamlit Web-App (Tägliches Monitoring)"]
 ```
@@ -368,6 +368,7 @@ Nutzen Sie Data Science und APIs, um einen Gesundheitszustand zu entwickeln (Eng
 
 ---
 *Disclaimer: Dieser Artikel fasst die persönlichen Experimente und den datenwissenschaftlichen Ansatz des Autors zusammen und stellt keinen medizinischen Rat dar. Wenn Sie anhaltende körperliche Beschwerden oder Schlafstörungen haben, konsultieren Sie bitte einen Arzt.*
+
 
 
 

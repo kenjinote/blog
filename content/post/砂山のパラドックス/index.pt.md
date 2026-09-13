@@ -36,11 +36,11 @@ Tanto a Premissa 1 quanto a Premissa 2, individualmente, soam muito razoáveis. 
 
 ```mermaid
 graph LR
-    A["10.000 grãos = monte de areia"] -->|Remoção de 1 grão| B["9.999 grãos = monte de areia"]
-    B -->|Remoção de 1 grão| C["9.998 grãos = monte de areia"]
-    C -->|...repetição...| D["100 grãos = monte de areia?"]
-    D -->|Remoção de 1 grão| E["10 grãos = monte de areia?"]
-    E -->|Remoção de 1 grão| F["1 grão = monte de areia?"]
+    A["10.000 grãos = monte de areia"] -->|"Remoção de 1 grão"| B["9.999 grãos = monte de areia"]
+    B -->|"Remoção de 1 grão"| C["9.998 grãos = monte de areia"]
+    C -->|"...repetição..."| D["100 grãos = monte de areia?"]
+    D -->|"Remoção de 1 grão"| E["10 grãos = monte de areia?"]
+    E -->|"Remoção de 1 grão"| F["1 grão = monte de areia?"]
     
     style A fill:#4CAF50,color:#fff
     style D fill:#FF9800,color:#fff
@@ -95,3 +95,4 @@ O Paradoxo do Monte de Areia não é um mero jogo de palavras — ele causa prob
 - **Regulamentação ambiental**: Se a emissão de poluentes ultrapassar o valor de referência em 0,001 mg, é ilegal. Se for exatamente o valor de referência, é legal.
 
 A linguagem e o pensamento humanos contêm ambiguidade em sua essência, e talvez seja impossível dividir o mundo em dicotomias claras. O Paradoxo do Monte de Areia é um paradoxo que há mais de 2.400 anos continua a desafiar os filósofos, revelando os limites fundamentais da inteligência humana.
+

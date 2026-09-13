@@ -72,9 +72,9 @@ Mari kita merancang pipeline pemrosesan audio dalam aplikasi C++. Prosesnya dimu
 
 ```mermaid
 graph TD
-    A["Sumber Audio (Mikrofon/File)"] -->|Byte Mentah, mis. 48kHz Stereo| B["Dekoder Audio & Resampler (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-bit Float| C["Ring Buffer / Array Memori"]
-    C -->|Masukkan Data PCM| D["Inti whisper.cpp (ggml)"]
+    A["Sumber Audio (Mikrofon/File)"] -->|"Byte Mentah, mis. 48kHz Stereo"| B["Dekoder Audio & Resampler (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-bit Float"| C["Ring Buffer / Array Memori"]
+    C -->|"Masukkan Data PCM"| D["Inti whisper.cpp (ggml)"]
     D --> E["Ekstraksi Mel Spectrogram"]
     E --> F["Transformer Encoder-Decoder"]
     F --> G["Generasi Token Teks"]
@@ -223,14 +223,14 @@ Untuk mengimplementasikannya, arsitektur multi-threading dan manajemen aliran au
 ```mermaid
 graph LR
     subgraph "Thread Audio (Prioritas Tinggi)"
-        A["API Pengambilan Audio (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["Resampler (ke 16kHz)"]
+        A["API Pengambilan Audio (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["Resampler (ke 16kHz)"]
         B --> C["Ring Buffer"]
     end
     
     subgraph "Thread Utama / Worker"
-        C -->|Ambil chunk 30ms-1000ms| D["Deteksi Aktivitas Suara (VAD)"]
-        D -->|Jika ucapan terdeteksi| E["Akumulasi Buffer PCM"]
-        E -->|Picu Inferensi| F["whisper_full()"]
+        C -->|"Ambil chunk 30ms-1000ms"| D["Deteksi Aktivitas Suara (VAD)"]
+        D -->|"Jika ucapan terdeteksi"| E["Akumulasi Buffer PCM"]
+        E -->|"Picu Inferensi"| F["whisper_full()"]
         F --> G["Perbarui UI/Teks"]
     end
 ```
@@ -298,4 +298,5 @@ Pada artikel ini, kami telah menjelaskan secara rinci tentang cara memanfaatkan 
 * **Optimasi yang Luar Biasa**: Manfaat kuantisasi 4-bit oleh `ggml` dan backend perangkat keras seperti Metal/cuBLAS.
 
 Silakan manfaatkan `whisper.cpp` untuk memutus ketergantungan pada lingkungan Python yang berat atau API cloud, serta mewujudkan pengembangan aplikasi pemrosesan suara yang dapat beroperasi secara cepat dan aman di lingkungan native. AI yang berjalan secara lokal niscaya akan menjadi teknologi kunci dalam pengembangan perangkat lunak masa depan, terutama dari sisi perlindungan privasi dan latensi.
+
 

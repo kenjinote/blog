@@ -44,8 +44,8 @@ Tukang cukur itu menjadi panik sepenuhnya dan tidak bisa mengambil tindakan apa 
 graph TD
     Barber["Tukang Cukur: Apakah harus mencukur janggut sendiri?"]
     
-    Barber -->|YA: Mencukur sendiri| Cond1["Pelanggaran aturan!<br>(Tidak boleh mencukur janggut orang yang mencukur janggutnya sendiri)"]
-    Barber -->|TIDAK: Tidak mencukur sendiri| Cond2["Pelanggaran aturan!<br>(Harus mencukur janggut orang yang tidak mencukur janggutnya sendiri)"]
+    Barber -->|"YA: Mencukur sendiri"| Cond1["Pelanggaran aturan!<br>(Tidak boleh mencukur janggut orang yang mencukur janggutnya sendiri)"]
+    Barber -->|"TIDAK: Tidak mencukur sendiri"| Cond2["Pelanggaran aturan!<br>(Harus mencukur janggut orang yang tidak mencukur janggutnya sendiri)"]
     
     Cond1 --> Paradox["Kontradiksi (Paradoks)"]
     Cond2 --> Paradox
@@ -140,7 +140,7 @@ graph LR
         Strict["Hanya yang mengikuti aturan ketat (aksioma)<br>yang disebut 'Himpunan'"] --> Safe["Kontradiksi R tidak diakui sebagai 'Himpunan'<br>sehingga aman!"]
     end
     
-    Monster -.->|Krisis Dunia Matematika| Strict
+    Monster -.->|"Krisis Dunia Matematika"| Strict
 ```
 
 ---
@@ -153,3 +153,4 @@ Paradoks, yang pada pandangan pertama mungkin tampak seperti sekadar permainan k
 
 Seandainya seorang jenius bernama Russell tidak menyadari "bug tukang cukur" ini, matematika modern dan ilmu komputer yang merupakan perpanjangan dari logika matematika mungkin akan berkembang dengan membawa kontradiksi yang fatal di suatu tempat.
 Paradoks adalah obat kuat yang paling merangsang, yang mengajarkan kita batas dari logika manusia.
+

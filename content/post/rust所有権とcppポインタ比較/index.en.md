@@ -221,7 +221,7 @@ In this way, Rust prohibits at the compiler level "modifying a value (mutable bo
 graph LR
     A["Variable v (Owner)"] --> B["Heap Array [1, 2, 3]"]
     C["Reference 'first' (&v[0])"] -.->|"Immutable Borrow"| B
-    A -->|X "Mutable Borrow Denied!"| D["v.push(4)"]
+    A -->|"X "Mutable Borrow Denied!""| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px
@@ -283,3 +283,5 @@ If you learn Rust while understanding the freedom and dangers of C++ pointers, y
 
 ---
 *This article is a comparative analysis of memory management techniques in C++ and Rust. We hope it serves as a helpful reference for choosing the appropriate language depending on the requirements of your project.*
+
+

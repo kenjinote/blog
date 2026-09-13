@@ -39,8 +39,8 @@ $$ O((\log N)^3) $$
 ```mermaid
 graph TD
     A["इनपुट आकार (बिट्स की संख्या) N में वृद्धि"] --> B{"एल्गोरिथ्म का चयन"}
-    B -->|शास्त्रीय: सामान्य संख्या क्षेत्र चलनी| C["उप-घातांकीय वृद्धि O(exp(...))"]
-    B -->|क्वांटम: शोर का एल्गोरिथ्म| D["बहुपद समय O((log N)^3)"]
+    B -->|"शास्त्रीय: सामान्य संख्या क्षेत्र चलनी"| C["उप-घातांकीय वृद्धि O(exp(...))"]
+    B -->|"क्वांटम: शोर का एल्गोरिथ्म"| D["बहुपद समय O((log N)^3)"]
     C --> E["हजारों से अरबों साल (डिक्रिप्ट करने में असमर्थ)"]
     D --> F["कुछ मिनट से कुछ घंटे (व्यावहारिक समय में डिक्रिप्ट)"]
 ```
@@ -358,5 +358,6 @@ IT इन्फ्रास्ट्रक्चर का प्रबंधन
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

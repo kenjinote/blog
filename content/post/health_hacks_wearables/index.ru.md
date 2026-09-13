@@ -97,11 +97,11 @@ $$ G(t) = G_{base} + \Delta G \cdot e^{-\alpha t} \sin(\beta t) $$
 
 ```mermaid
 flowchart TD
-    A["Oura Ring API (Биометрия)"] -->|JSON через OAuth2| C["Конвейер приема данных на Python"]
-    B["WakaTime API (Время кодирования)"] -->|JSON через API Ключ| C
-    E["SwitchBot API (Температура комнаты / CO2)"] -->|JSON через API Ключ| C
-    C -->|Извлечение и Трансформация| D["Pandas DataFrame (Память)"]
-    D -->|Загрузка| F["TimescaleDB / PostgreSQL"]
+    A["Oura Ring API (Биометрия)"] -->|"JSON через OAuth2"| C["Конвейер приема данных на Python"]
+    B["WakaTime API (Время кодирования)"] -->|"JSON через API Ключ"| C
+    E["SwitchBot API (Температура комнаты / CO2)"] -->|"JSON через API Ключ"| C
+    C -->|"Извлечение и Трансформация"| D["Pandas DataFrame (Память)"]
+    D -->|"Загрузка"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (Ad-hoc Анализ)"]
     F --> H["Веб-приложение Streamlit (Ежедневный мониторинг)"]
 ```
@@ -368,6 +368,7 @@ def check_and_ventilate():
 
 ---
 *Отказ от ответственности (Disclaimer): Эта статья суммирует личные эксперименты автора и подходы науки о данных, и не содержит медицинских советов. Если у вас наблюдается постоянное плохое самочувствие или нарушения сна, пожалуйста, проконсультируйтесь со специализированным медицинским учреждением.*
+
 
 
 

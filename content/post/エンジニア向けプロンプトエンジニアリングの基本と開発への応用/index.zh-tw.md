@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["外部環境 (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (來自工具的執行結果或錯誤日誌)"]
     Observation --> Thought
-    Thought -->|收集到充足的資訊| Finish["Finish (最終回答與程式碼的輸出)"]
+    Thought -->|"收集到充足的資訊"| Finish["Finish (最終回答與程式碼的輸出)"]
 ```
 
 ### 4.2 透過函式呼叫 (Function Calling) 的實作
@@ -387,3 +387,4 @@ def is_valid_ipv4(ip_str):
 
 ---
 *Generated using Prompt Engineering Techniques.*
+

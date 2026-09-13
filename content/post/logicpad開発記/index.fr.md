@@ -219,16 +219,16 @@ Le processus de soumission au Microsoft Store se fait via le Partner Center. L'o
 
 ```mermaid
 flowchart TD
-    A["Développeur (Visual Studio)"] -->|Construction et signature| B["Génération du bundle MSIX"]
+    A["Développeur (Visual Studio)"] -->|"Construction et signature"| B["Génération du bundle MSIX"]
     B --> C["Windows App Certification Kit (WACK)"]
-    C -->|Succès| D["Tableau de bord du Partner Center"]
-    C -->|Échec| E["Correction du code / Problèmes de manifeste"]
+    C -->|"Succès"| D["Tableau de bord du Partner Center"]
+    C -->|"Échec"| E["Correction du code / Problèmes de manifeste"]
     E --> A
-    D -->|Téléversement du package| F["Processus de certification du Store"]
+    D -->|"Téléversement du package"| F["Processus de certification du Store"]
     F --> G["Analyse automatique des logiciels malveillants"]
     G --> H["Examen manuel du contenu"]
-    H -->|Approuvé| I["Publication sur le Microsoft Store"]
-    H -->|Rejeté| J["Traiter les retours et soumettre à nouveau"]
+    H -->|"Approuvé"| I["Publication sur le Microsoft Store"]
+    H -->|"Rejeté"| J["Traiter les retours et soumettre à nouveau"]
     J --> D
     I --> K["L'application est en ligne !"]
 ```
@@ -303,4 +303,5 @@ C'est précisément parce que l'évolution des technologies web a rendu possible
 WinUI 3 et le Windows App SDK sont toujours activement développés et constituent les meilleurs outils pour créer de belles applications qui tirent pleinement parti du paradigme d'interface utilisateur de Windows 11. J'espère sincèrement que cet article de blog aidera les développeurs qui sont sur le point de relever le défi du développement d'applications Windows natives, et qu'il contribuera à l'arrivée d'encore plus d'applications fantastiques sur le Store.
 
 Le développement n'est pas encore terminé. Dans la prochaine version de LogicPad, nous prévoyons d'intégrer notre propre moteur de rendu de formes d'ondes tirant parti de Direct2D. Dans le prochain article, nous approfondirons l'interopérabilité entre DirectX et WinUI 3 (utilisation de SwapChainPanel). Restez à l'écoute !
+
 

@@ -36,11 +36,11 @@ Tanto la premisa 1 como la premisa 2 suenan muy razonables por separado. Sin emb
 
 ```mermaid
 graph LR
-    A["10.000 granos = montón"] -->|Quitar 1 grano| B["9.999 granos = montón"]
-    B -->|Quitar 1 grano| C["9.998 granos = montón"]
-    C -->|...repetir...| D["100 granos = ¿montón?"]
-    D -->|Quitar 1 grano| E["10 granos = ¿montón?"]
-    E -->|Quitar 1 grano| F["1 grano = ¿montón?"]
+    A["10.000 granos = montón"] -->|"Quitar 1 grano"| B["9.999 granos = montón"]
+    B -->|"Quitar 1 grano"| C["9.998 granos = montón"]
+    C -->|"...repetir..."| D["100 granos = ¿montón?"]
+    D -->|"Quitar 1 grano"| E["10 granos = ¿montón?"]
+    E -->|"Quitar 1 grano"| F["1 grano = ¿montón?"]
     
     style A fill:#4CAF50,color:#fff
     style D fill:#FF9800,color:#fff
@@ -95,3 +95,4 @@ La paradoja del montón de arena no es un simple juego de palabras; también cau
 - **Regulaciones ambientales**: Si las emisiones de contaminantes superan el límite en 0,001 mg es ilegal. Si están exactamente en el límite, es legal.
 
 El lenguaje y el pensamiento humano contienen ambigüedad por naturaleza, y quizás sea imposible dividir el mundo en dicotomías claras. La paradoja del montón de arena es una paradoja que muestra los límites fundamentales de la inteligencia humana y que ha desconcertado a los filósofos durante más de 2.400 años.
+

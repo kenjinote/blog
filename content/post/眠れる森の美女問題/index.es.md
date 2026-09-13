@@ -36,8 +36,8 @@ Después de que te duermas, el experimentador lanza **una moneda justa** (una mo
 graph TD
     Sunday["Domingo: La bella durmiente duerme"] --> Toss{"Lanzamiento de moneda"}
     
-    Toss -->|Cara (1/2)| Mon_Heads["Lunes: Despertar + Pregunta<br>(Luego el experimento termina)"]
-    Toss -->|Cruz (1/2)| Mon_Tails["Lunes: Despertar + Pregunta<br>(Luego se borra la memoria)"]
+    Toss -->|"Cara (1/2)"| Mon_Heads["Lunes: Despertar + Pregunta<br>(Luego el experimento termina)"]
+    Toss -->|"Cruz (1/2)"| Mon_Tails["Lunes: Despertar + Pregunta<br>(Luego se borra la memoria)"]
     
     Mon_Tails --> Tue_Tails["Martes: Despertar + Pregunta<br>(Luego el experimento termina)"]
     
@@ -125,3 +125,4 @@ Si fueras el sujeto de este experimento, ¿responderías "1/2" o "1/3" al desper
 
 Cualquiera que respondas, matemáticos de clase mundial estarán a tus espaldas para defenderte.
 Cómo definiciones matemáticas aparentemente simples colapsan tan pronto como se vinculan con conceptos problemáticos como la "subjetividad" y la "existencia" humanas. Las paradojas continúan sacudiendo nuestro sentido común hoy en día.
+

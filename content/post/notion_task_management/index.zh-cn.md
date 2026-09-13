@@ -48,9 +48,9 @@ flowchart TD
     T["Tasks (任务数据库)"]
     N["Notes (卡片盒数据库)"]
 
-    P -->| 1:N 关联 | T
-    T -->| N:N 关联 | N
-    P -->| 1:N 关联 | N
+    P -->|"1:N 关联"| T
+    T -->|"N:N 关联"| N
+    P -->|"1:N 关联"| N
 ```
 
 ### Projects数据库的属性
@@ -165,9 +165,9 @@ flowchart TD
     NOTION["Notion API"]
     DB["Notion Tasks 数据库"]
 
-    GH -->| 发送Webhook | GHA
-    GHA -->| 执行Python脚本 | NOTION
-    NOTION -->| 更新数据库・添加任务 | DB
+    GH -->|"发送Webhook"| GHA
+    GHA -->|"执行Python脚本"| NOTION
+    NOTION -->|"更新数据库・添加任务"| DB
 ```
 
 ### 从GitHub Issues自动创建Notion任务
@@ -273,6 +273,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
 使用Notion进行任务管理，已经远远超越了单纯的To-Do列表的范畴。通过将基于PARA方法的信息整理、基于Zettelkasten的知识网络化、以及基于Notion API的工程自动化结合起来，可以构建一个强力加速个人开发和博客写作的“第二大脑（Second Brain）”。
 
 虽然初始设置需要花费一些时间，但系统一旦开始运转，任务管理的认知负荷就会大幅降低，从而让你能够将全部精力集中在真正重要的“写代码”和“写文章”上。请务必参考本文，打造出属于你自己的最强Notion工作空间。
+
 
 
 

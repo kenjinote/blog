@@ -35,10 +35,10 @@ Die Architektur der Cloud-Verarbeitung mit FHE unterscheidet sich völlig von he
 
 ```mermaid
 graph TD
-    A["Client (hält privaten Schlüssel)"] -->|1. Klartext x verschlüsseln: E(x)| B["Cloud-Server (nur verschlüsselte Daten)"]
-    B -->|2. Funktion f auf Geheimtext anwenden: E(f(x))| B
-    B -->|3. Berechnetes Geheimtextergebnis E(y)| A
-    A -->|4. Mit privatem Schlüssel entschlüsseln: y = f(x)| A
+    A["Client (hält privaten Schlüssel)"] -->|"1. Klartext x verschlüsseln: E(x)"| B["Cloud-Server (nur verschlüsselte Daten)"]
+    B -->|"2. Funktion f auf Geheimtext anwenden: E(f(x))"| B
+    B -->|"3. Berechnetes Geheimtextergebnis E(y)"| A
+    A -->|"4. Mit privatem Schlüssel entschlüsseln: y = f(x)"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -264,4 +264,5 @@ Genauso wie die Erfindung der Public-Key-Kryptographie (RSA) in den 1970er Jahre
 Heute verlässt die vollständig homomorphe Verschlüsselung (FHE) die Forschungslabors und tritt in ein Stadium ein, in dem Microsoft, IBM, Intel, Google und viele Start-ups um die Kommerzialisierung wetteifern. Herausforderungen hinsichtlich der Rechenkosten und der Datengröße bestehen weiterhin, aber durch die Verfeinerung von Algorithmen und die Entwicklung von Hardware-Beschleunigern wird die Leistung in einem Tempo verbessert, das das Mooresche Gesetz übertrifft.
 
 In wenigen Jahren wird es nichts Besonderes mehr sein, "zu rechnen, während die Daten verschlüsselt bleiben", sondern es wird eine Standard-Best-Practice für den Datenschutz bei Cloud-Diensten werden. FHE ist der Schlüssel zur Sicherheit der nächsten Generation und realisiert die **ultimative Balance zwischen Datenschutz und Datennutzung** in unserer datengesteuerten Gesellschaft.
+
 

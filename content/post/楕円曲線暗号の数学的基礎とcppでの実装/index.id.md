@@ -255,8 +255,8 @@ graph TD
     Start["Inisialisasi: R0 = O, R1 = P"] --> LoopStart["Untuk setiap bit i (dari bit paling signifikan)"]
     LoopStart --> Cond{"Berapa nilai k_i?"}
     
-    Cond -->|0| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
-    Cond -->|1| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
+    Cond -->|"0"| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
+    Cond -->|"1"| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
     
     Branch0 --> LoopEnd["Pindah ke bit selanjutnya"]
     Branch1 --> LoopEnd
@@ -445,4 +445,6 @@ Dalam artikel ini, kami menjelaskan poin-poin penting berikut:
 Membuat perpustakaan kriptografi Anda sendiri yang sebenarnya berjalan di lingkungan produksi sangat tidak disarankan ("Don't roll your own crypto") karena risiko keamanannya sangat tinggi. Namun, pemahaman mendalam tentang algoritma dan latar belakang matematika yang beroperasi di dalamnya harus menjadi senjata yang sangat berharga bagi insinyur yang merancang dan mengoperasikan sistem yang lebih aman dan berkinerja tinggi.
 
 Pada artikel berikutnya, kami ingin menggali lebih dalam tentang mekanisme **ECDSA (Elliptic Curve Digital Signature Algorithm)**, yaitu algoritma tanda tangan digital menggunakan kurva eliptik ini, serta **Tanda Tangan Schnorr** yang diadopsi pada Bitcoin.
+
+
 

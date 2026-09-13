@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (独立于平台)"] --> B("CMake 引擎")
     B --> C{"目标操作系统"}
     
-    C -->|Windows| D["Visual Studio 解决方案 / MSBuild"]
-    C -->|macOS| E["Xcode 项目 / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Visual Studio 解决方案 / MSBuild"]
+    C -->|"macOS"| E["Xcode 项目 / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Windows 可执行文件 (.exe)"]
     E --> H["macOS 可执行文件 (Mach-O)"]
@@ -384,3 +384,4 @@ sequenceDiagram
 8.  **CI/CD**：引入矩阵构建，对所有目标操作系统的洁净构建和测试进行自动化，从而消除人为的不可靠性。
 
 如今，Electron、Tauri、.NET 等强大的框架已经为我们屏蔽了其中的许多差异，但对于底层操作系统原生行为（如文件系统和编码）的了解，在解决严重的性能问题和棘手的 Bug 时依然不可或缺。通过在项目的初始阶段将这些最佳实践在整个团队中共享并贯彻执行，就能大幅减少由于操作系统差异导致的毫无意义的调试时间，从而集中精力进行实质性的软件价值创造。
+

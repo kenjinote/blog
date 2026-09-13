@@ -172,9 +172,9 @@ Pour comprendre intuitivement la différence entre le GNFS et l'algorithme de Sh
 graph TD
     A[État initial: 0...0] --> B[Superposition de tous les états par transformée de Hadamard]
     B --> C[Exponentiation modulaire a^x mod N]
-    C -->|Intrication quantique| D[Effondrement vers un état présentant une périodicité]
+    C -->|"Intrication quantique"| D[Effondrement vers un état présentant une périodicité]
     D --> E[Transformée de Fourier quantique QFT]
-    E -->|Amplification des probabilités par interférence| F[Mesure: obtenir y]
+    E -->|"Amplification des probabilités par interférence"| F[Mesure: obtenir y]
     F --> G[Traitement classique: Développement en fractions continues]
     G --> H[Découverte de la période r]
     H --> I[Calcul des facteurs premiers de N]
@@ -197,3 +197,4 @@ Cet article a profondément comparé les structures algorithmiques et le context
 Alors que le GNFS, grâce à des astuces mathématiques telles que le choix des polynômes et le calcul de matrices géantes, est parvenu à abaisser sa complexité à un temps sous-exponentiel, l'algorithme de Shor fusionne les principes fondamentaux de la mécanique quantique (superposition et interférence) avec un outil mathématique (la QFT) pour accomplir une percée immédiate vers le temps polynomial.
 
 Actuellement, il n'existe pas d'ordinateur quantique tolérant aux pannes (FTQC) capable d'exécuter l'algorithme de Shor à une échelle pratique (plusieurs milliers de qubits). Cependant, l'existence même de ce changement de paradigme mathématique et théorique est la principale raison pour laquelle la transition vers la cryptographie post-quantique (PQC : Post-Quantum Cryptography) est si urgente partout dans le monde aujourd'hui.
+

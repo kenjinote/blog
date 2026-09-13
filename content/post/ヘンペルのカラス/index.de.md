@@ -52,12 +52,12 @@ Da Beweise für $H_2$ den gleichen Wert haben wie Beweise für $H_1$, ergibt sic
 
 ```mermaid
 graph TD
-    A["Aussage H1: Alle Raben sind schwarz"] -->|Logische Äquivalenz (Kontraposition)| B["Aussage H2: Was nicht schwarz ist, ist kein Rabe"]
+    A["Aussage H1: Alle Raben sind schwarz"] -->|"Logische Äquivalenz (Kontraposition)"| B["Aussage H2: Was nicht schwarz ist, ist kein Rabe"]
     
-    C["Beobachtung: Ein schwarzer Rabe"] -->|Gilt als Beweis für| A
-    D["Beobachtung: Ein blauer Apfel"] -->|Gilt als Beweis für| B
+    C["Beobachtung: Ein schwarzer Rabe"] -->|"Gilt als Beweis für"| A
+    D["Beobachtung: Ein blauer Apfel"] -->|"Gilt als Beweis für"| B
     
-    D -.->|Daher sollte dies auch ein Beweis sein für?| A
+    D -.->|"Daher sollte dies auch ein Beweis sein für?"| A
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
@@ -87,4 +87,5 @@ Kurz gesagt, die bayesianische Lösung lautet: Logisch gesehen „ist ein blauer
 Dieses Paradoxon verdeutlicht, auf welch fragilen Annahmen das Fundament der Wissenschaft, die „Induktion (Ableitung allgemeiner Gesetze aus Beobachtungen)“, beruht. Verlässt man sich nur auf logische Äquivalenz, würde eine „Indoor-Ornithologie“ möglich werden, bei der man alle Gesetze des Universums überprüfen könnte (wie z. B. „alle Schwäne sind weiß“, „alle Aliens sind nicht grün“), indem man nur den Krimskrams in seinem Zimmer beobachtet, ohne jemals nach draußen zu gehen.
 
 Hempels Raben sind ein faszinierendes Paradoxon, das zeigt, dass die Wörter „Beweis“ und „Beleg“, die wir unbewusst verwenden, nicht allein durch die Regeln der reinen symbolischen Logik vollständig erfasst werden können.
+
 

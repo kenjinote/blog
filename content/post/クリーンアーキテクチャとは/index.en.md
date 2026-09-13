@@ -109,9 +109,9 @@ By the same token, data formats used in an outer circle should not be used by an
 
 ```mermaid
 graph LR
-    A["Frameworks & Drivers"] -->| Depends on | B["Interface Adapters"]
-    B -->| Depends on | C["Use Cases"]
-    C -->| Depends on | D["Entities"]
+    A["Frameworks & Drivers"] -->|"Depends on"| B["Interface Adapters"]
+    B -->|"Depends on"| C["Use Cases"]
+    C -->|"Depends on"| D["Entities"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,4 +422,5 @@ What's important is not blindly imitating the directory structure of Clean Archi
 
 ---
 *Reference: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin*
+
 

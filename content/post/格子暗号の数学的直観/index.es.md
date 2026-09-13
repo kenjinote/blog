@@ -134,8 +134,8 @@ Esta es una propiedad soñada en la teoría criptográfica. Esto se debe a que d
 
 ```mermaid
 graph TD
-    A["Problemas de retículos en el peor caso (Gap-SVP, SIVP)"] -->|Reducción Cuántica/Clásica| B["Problema LWE en el caso promedio"]
-    B -->|Construcción Criptográfica| C["Criptosistemas basados en LWE (PKE, KEM, FHE)"]
+    A["Problemas de retículos en el peor caso (Gap-SVP, SIVP)"] -->|"Reducción Cuántica/Clásica"| B["Problema LWE en el caso promedio"]
+    B -->|"Construcción Criptográfica"| C["Criptosistemas basados en LWE (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ En este artículo, explicamos detalladamente la intuición matemática de la cri
 4. En los protocolos reales, se emplean **Ring-LWE** o **Module-LWE** usando anillos de polinomios para aumentar la eficiencia de comunicación y la velocidad de cálculo, sirviendo como la base del estándar **ML-KEM** del NIST.
 
 Con el cambio de paradigma computacional sin precedentes que representan las computadoras cuánticas acercándose, es muy fascinante que la "criptografía de retículos", nacida del abismo del álgebra lineal clásica y la teoría de números, se convierta en la base de la seguridad del internet del futuro. Las matemáticas subyacentes a la criptografía de retículos no son excesivamente complejas, y con conocimientos básicos de álgebra lineal y probabilidades, es perfectamente posible comprender su hermosa estructura. Esperamos que este artículo sirva de ayuda para comprender la criptografía de retículos, el núcleo de la PQC.
+

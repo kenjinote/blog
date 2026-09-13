@@ -520,8 +520,8 @@ $$ \sigma(x) = \frac{1}{1 + e^{-x}} $$
 
 ```mermaid
 graph LR
-  X1["Input x1"] -->|Weight w1| Sum["Summation: Σ(wi*xi) + b"]
-  X2["Input x2"] -->|Weight w2| Sum
+  X1["Input x1"] -->|"Weight w1"| Sum["Summation: Σ(wi*xi) + b"]
+  X2["Input x2"] -->|"Weight w2"| Sum
   Sum --> Act["Sigmoid Function: σ(x)"]
   Act --> Out["Output Probability (0 to 1)"]
 ```
@@ -624,4 +624,5 @@ int main() {
 数学的な背景を理解することは、単に既存のライブラリ（`math.sin` や `numpy.fft`）を呼び出すだけのコーダーから、その内部構造を理解して限界を引き出せるエンジニアへのステップアップに不可欠です。次にコードを書く際には、その背後でどんな美しい数式が動いているのか、少し想像を膨らませてみてください。
 
 **Happy Coding and Math!**
+
 

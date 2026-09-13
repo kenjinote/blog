@@ -72,9 +72,9 @@ Vamos projetar o pipeline de processamento de áudio em uma aplicação C++. O f
 
 ```mermaid
 graph TD
-    A["Fonte de Áudio (Microfone/Arquivo)"] -->|Bytes Brutos, ex: 48kHz Estéreo| B["Decodificador de Áudio e Reamostrador (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-bit Float| C["Buffer Circular / Matriz de Memória"]
-    C -->|Alimentar Dados PCM| D["Núcleo whisper.cpp (ggml)"]
+    A["Fonte de Áudio (Microfone/Arquivo)"] -->|"Bytes Brutos, ex: 48kHz Estéreo"| B["Decodificador de Áudio e Reamostrador (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-bit Float"| C["Buffer Circular / Matriz de Memória"]
+    C -->|"Alimentar Dados PCM"| D["Núcleo whisper.cpp (ggml)"]
     D --> E["Extração do Espectrograma Mel"]
     E --> F["Codificador-Decodificador Transformer"]
     F --> G["Geração de Tokens de Texto"]
@@ -223,14 +223,14 @@ Para implementar isso, o gerenciamento de fluxos de áudio usando uma arquitetur
 ```mermaid
 graph LR
     subgraph "Thread de Áudio (Alta Prioridade)"
-        A["API de Captura de Áudio (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["Reamostrador (para 16kHz)"]
+        A["API de Captura de Áudio (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["Reamostrador (para 16kHz)"]
         B --> C["Buffer Circular"]
     end
     
     subgraph "Thread Principal / Trabalhadora"
-        C -->|Extrair bloco de 30ms-1000ms| D["Detecção de Atividade de Voz (VAD)"]
-        D -->|Se voz detectada| E["Acumular Buffer PCM"]
-        E -->|Acionar Inferência| F["whisper_full()"]
+        C -->|"Extrair bloco de 30ms-1000ms"| D["Detecção de Atividade de Voz (VAD)"]
+        D -->|"Se voz detectada"| E["Acumular Buffer PCM"]
+        E -->|"Acionar Inferência"| F["whisper_full()"]
         F --> G["Atualizar UI/Texto"]
     end
 ```
@@ -298,4 +298,5 @@ Neste artigo, explicamos em detalhes como usar o `whisper.cpp` para integrar a I
 * **Otimização Esmagadora**: Quantização de 4 bits pelo `ggml` e benefícios de backends de hardware como Metal e cuBLAS.
 
 Use o `whisper.cpp` para se libertar das dependências de ambientes Python enormes ou APIs de nuvem e desenvolver aplicativos de processamento de voz que funcionam de forma rápida e segura de maneira nativa. A IA local será uma tecnologia fundamental essencial para o desenvolvimento futuro de software, sob o ponto de vista da proteção da privacidade e latência.
+
 

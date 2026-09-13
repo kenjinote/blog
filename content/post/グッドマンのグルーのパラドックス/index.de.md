@@ -49,7 +49,7 @@ Wenn wir den Regeln der Induktion folgen, stützen alle vergangenen Beobachtunge
 
 ```mermaid
 graph TD
-    A["Vergangene Beobachtungen: Alle Smaragde waren grün"] -->|Gleichzeitig| B["Vergangene Beobachtungen: Alle Smaragde waren ‚grue‘"]
+    A["Vergangene Beobachtungen: Alle Smaragde waren grün"] -->|"Gleichzeitig"| B["Vergangene Beobachtungen: Alle Smaragde waren ‚grue‘"]
     
     A --> C["Induktive Vorhersage A: Zukünftige Smaragde werden auch ‚grün‘ sein"]
     B --> D["Induktive Vorhersage B: Zukünftige Smaragde werden auch ‚grue‘ sein"]
@@ -81,3 +81,4 @@ Mit anderen Worten, welches Wort wir als „grundlegend“ betrachten, ist nur e
 Goodmans „Grue“-Paradoxon (das neue Rätsel der Induktion) hat bewiesen, dass wissenschaftliche Theorien nicht nur durch rein objektive Daten bestimmt werden, sondern stark davon abhängen, „welchen begrifflichen Rahmen (Sprache) wir verwenden, um die Welt zu strukturieren“.
 
 Auch im Kontext von KI und maschinellem Lernen ist dieses Paradoxon heute noch von großer Bedeutung – als das Problem der „Überanpassung“ (Overfitting) und des „Bias“, bei denen selbst bei identischen Trainingsdaten die Vorhersagen für die Zukunft aufgrund der „Struktur des Modells (auf welche Merkmale es achtet)“ völlig unterschiedlich ausfallen können.
+

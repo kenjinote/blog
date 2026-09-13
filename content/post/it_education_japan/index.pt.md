@@ -33,13 +33,13 @@ O diagrama Mermaid a seguir ilustra visualmente os obstáculos e pontos de desis
 ```mermaid
 flowchart TD
     A["Escola Fundamental: Scratch (Visual/Baseado em Blocos)"] --> B{"Escola Secundária: Barreira de Transição para Linguagens de Texto"}
-    B -->|Frustração com Erros Rigorosos de Sintaxe| C["Desistência (Alergia à Sintaxe)"]
-    B -->|Falta de Compreensão dos Conceitos de Variáveis e Tipagem Estática| D["Desistência (A Barreira dos Tipos)"]
-    B -->|Transição Bem-sucedida| E["Ensino Médio: Informação I (Fundamentos de Python/JavaScript etc.)"]
+    B -->|"Frustração com Erros Rigorosos de Sintaxe"| C["Desistência (Alergia à Sintaxe)"]
+    B -->|"Falta de Compreensão dos Conceitos de Variáveis e Tipagem Estática"| D["Desistência (A Barreira dos Tipos)"]
+    B -->|"Transição Bem-sucedida"| E["Ensino Médio: Informação I (Fundamentos de Python/JavaScript etc.)"]
     E --> F{"Barreira do Desenho de Algoritmos e Estruturas de Dados"}
-    F -->|Falta de Entendimento de Complexidade de Tempo/Espaço| G["Código Ineficiente (Degradação de Desempenho Devido à Criação Excessiva de O(N^2))"]
-    F -->|Caixa Preta do Gerenciamento de Memória e Referências| H["Tornar-se um Codificador Limitado a Chamadas Superficiais de API"]
-    F -->|Inovação Conceitual| I["Aprendizado Avançado em CS (C/C++, Java, Arquiteturas de Baixo Nível)"]
+    F -->|"Falta de Entendimento de Complexidade de Tempo/Espaço"| G["Código Ineficiente (Degradação de Desempenho Devido à Criação Excessiva de O(N^2))"]
+    F -->|"Caixa Preta do Gerenciamento de Memória e Referências"| H["Tornar-se um Codificador Limitado a Chamadas Superficiais de API"]
+    F -->|"Inovação Conceitual"| I["Aprendizado Avançado em CS (C/C++, Java, Arquiteturas de Baixo Nível)"]
     I --> J["Profissional de TI Altamente Qualificado, Tão Desejado Pela Indústria"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
@@ -179,7 +179,7 @@ flowchart LR
         C["Ambiente de Execução/Compilação Backend"]
         D["Armazenamento de Arquivo Persistente"]
     end
-    A -->| Comunicação HTTP/WebSocket: Atraso Crítico Devido à Conexão Lenta da Escola | B
+    A -->|"Comunicação HTTP/WebSocket: Atraso Crítico Devido à Conexão Lenta da Escola"| B
     B <--> C
     B <--> D
 ```
@@ -256,6 +256,7 @@ Sob "consequências e futuro" gerada da concepção de pautar a inclusão de for
 ---
 
 *Neste artigo expusemos questões abordando o escopo referente as dimensões de Teorias em Complexidades sob aos limites nos fatores infraestruturais oriundos do formato no formato imposto aos programas "GIGA School". Focados, numa ótica continuada nas vindouras compilações programadas que darão enfoques e explicações profundas nos focos a ciência matemática (englobadas as construções em esquemas em linguagens algoritmos ao cenário das distribuições em arquitetura sob detalhamento nas formas e maneiras sobre controles a níveis inferiores ligados ao memórias do núcleo) em novos tópicos a continuarem e sequenciais neste canal.*
+
 
 
 

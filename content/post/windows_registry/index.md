@@ -148,12 +148,12 @@ flowchart TD
     HKLM_Soft["HKLM\\SOFTWARE"]
     HKLM_WOW64["HKLM\\SOFTWARE\\WOW6432Node"]
 
-    App32 -->| RegOpenKeyEx() | RegAPI
-    App64 -->| RegOpenKeyEx() | RegAPI
+    App32 -->|"RegOpenKeyEx()"| RegAPI
+    App64 -->|"RegOpenKeyEx()"| RegAPI
     RegAPI --> CM
 
-    CM -->| If 64-bit Process | HKLM_Soft
-    CM -->| If 32-bit Process (Redirection) | HKLM_WOW64
+    CM -->|"If 64-bit Process"| HKLM_Soft
+    CM -->|"If 32-bit Process (Redirection)"| HKLM_WOW64
 ```
 PowerShellスクリプトやC#アプリケーションからレジストリを編集する際は、実行しているプロセス自体が32ビットか64ビットかを強く意識する必要があります。さもないと、「書き込んだはずの設定がエクスプローラーから見えない（別の場所に書き込まれている）」という厄介な問題を引き起こします。
 
@@ -399,6 +399,7 @@ Procmonを使用すると、OS上で発生するすべてのレジストリAPI�
 ## まとめ
 
 Windowsレジストリは、OSのあらゆる挙動とアプリケーションの設定を統合的に管理する強力で複雑な基盤システムです。手動による無秩序な編集には、数理的にも実証される高いシステム破損リスクが伴います。そのため、PowerShellやC#などのプログラマブルな手段を用いて、Infrastructure as Codeの原則に則り、安全かつテスト可能・再現性のある形で構成管理を行うことが現代のシステム管理と開発において不可欠です。本記事で解説した深いアーキテクチャの理解と実装パターンを活用し、より堅牢でセキュアなWindows環境の構築を目指してください。
+
 
 
 

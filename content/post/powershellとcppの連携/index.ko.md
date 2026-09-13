@@ -260,13 +260,13 @@ C++ 측에서 `RegOpenKeyEx`와 `RegQueryValueEx`를 사용하여 `HKLM\SOFTWARE
 
 ```mermaid
 flowchart TD
-    A["C++ 에이전트 서비스"] -->|RegQueryValueEx| B["Windows 레지스트리"]
-    B -->|스크립트 경로 반환| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|실행| D["관리자 스크립트 (예: Restart-Service)"]
-    D -->|파이프를 통한 stdout| C
-    C -->|ReadFile| A
-    A -->|로그 기록| E["이벤트 뷰어 / 로그 파일"]
+    A["C++ 에이전트 서비스"] -->|"RegQueryValueEx"| B["Windows 레지스트리"]
+    B -->|"스크립트 경로 반환"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"실행"| D["관리자 스크립트 (예: Restart-Service)"]
+    D -->|"파이프를 통한 stdout"| C
+    C -->|"ReadFile"| A
+    A -->|"로그 기록"| E["이벤트 뷰어 / 로그 파일"]
 ```
 
 ## 성능 분석과 오프로드의 이점
@@ -316,3 +316,4 @@ P/Invoke를 이용한 C++ DLL 호출을 통해 계산 부하가 높은 작업을
 ---
 
 *이 기술 블로그에서는 앞으로도 Windows 내부 구조나 고도화된 자동화와 관련된 깊이 있는 주제를 다룰 예정입니다. 질문이나 피드백이 있으시다면 꼭 댓글란에 남겨주세요.*
+

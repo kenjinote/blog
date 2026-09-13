@@ -30,7 +30,7 @@ Le processus de développement moderne suppose d'être **Cloud Native** et **ax�
 
 ```mermaid
 graph TD
-    A["Modèle de développement SIer legacy"] -->|Changement de paradigme| B["Période de transition (Adoption de l'Agile, Lift & Shift)"]
+    A["Modèle de développement SIer legacy"] -->|"Changement de paradigme"| B["Période de transition (Adoption de l'Agile, Lift & Shift)"]
     B --> C["Cloud Native (Microservices/Conteneurs)"]
     C --> D["Architecture orientée IA et Données (MLOps)"]
     D --> E["Plateforme intégrée d'IA générative (Agents IA autonomes)"]
@@ -157,10 +157,10 @@ Dans le développement de systèmes à grande échelle, c'est finalement la 'con
 
 ```mermaid
 graph LR
-    A["Simple codeur"] -->|Remplacement par l'IA| B["Baisse de la demande"]
-    A -->|Changement stratégique| C["Architecte système"]
-    A -->|Changement stratégique| D["Expert du domaine"]
-    A -->|Changement stratégique| E["Intégrateur IA"]
+    A["Simple codeur"] -->|"Remplacement par l'IA"| B["Baisse de la demande"]
+    A -->|"Changement stratégique"| C["Architecte système"]
+    A -->|"Changement stratégique"| D["Expert du domaine"]
+    A -->|"Changement stratégique"| E["Intégrateur IA"]
     
     C --> F["Forte demande / Taux journalier élevé (Les gagnants de l'après 2026)"]
     D --> F
@@ -182,6 +182,7 @@ L'IA ne va pas nous voler notre travail, ce n'est qu'un outil qui nous permet de
 
 C'est maintenant le moment de revoir votre plan de carrière et de prendre le virage vers le prochain paradigme.
 Êtes-vous prêt pour votre propre 'modernisation' ?
+
 
 
 

@@ -164,12 +164,12 @@ Thunderbolt 4 的最大带宽为 40 Gbps，但由于还要承载 PCIe 数据通�
 
 ```mermaid
 flowchart TD
-    A["PC / Mac 系统"] -->|Thunderbolt 4 线缆 40Gbps| B["Thunderbolt 4 扩展坞"]
-    B -->|DisplayPort 1.4| C["主显示器 (4K 60Hz)"]
-    B -->|Thunderbolt 下行| D["副显示器 (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["高速存储 / 外设"]
+    A["PC / Mac 系统"] -->|"Thunderbolt 4 线缆 40Gbps"| B["Thunderbolt 4 扩展坞"]
+    B -->|"DisplayPort 1.4"| C["主显示器 (4K 60Hz)"]
+    B -->|"Thunderbolt 下行"| D["副显示器 (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["高速存储 / 外设"]
     
-    C -.->|仅限 Windows MST| F["第三显示器 (1080p)"]
+    C -.->|"仅限 Windows MST"| F["第三显示器 (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ flowchart LR
 flowchart TD
     Start["开始构建开发环境"] --> Q1{"主操作系统是什么？"}
     
-    Q1 -->|macOS| Mac["macOS 环境"]
-    Q1 -->|Windows / Linux| Win["Windows / Linux 环境"]
+    Q1 -->|"macOS"| Mac["macOS 环境"]
+    Q1 -->|"Windows / Linux"| Win["Windows / Linux 环境"]
     
     Mac --> Q2{"预算和 GPU 性能是否充裕？"}
-    Q2 -->|是| M_5K["5K 27 英寸显示器 × 2 (最高画质)"]
-    Q2 -->|否| M_4K["4K 24 英寸显示器 × 2 或 超宽带鱼屏"]
+    Q2 -->|"是"| M_5K["5K 27 英寸显示器 × 2 (最高画质)"]
+    Q2 -->|"否"| M_4K["4K 24 英寸显示器 × 2 或 超宽带鱼屏"]
     
     Win --> Q3{"是否在意屏幕拼接处的边框？"}
-    Q3 -->|是| W_UW["49 英寸超宽带鱼屏 + FancyZones"]
-    Q3 -->|否| W_Dual["4K 27 英寸 × 2 (极致性价比)"]
+    Q3 -->|"是"| W_UW["49 英寸超宽带鱼屏 + FancyZones"]
+    Q3 -->|"否"| W_Dual["4K 27 英寸 × 2 (极致性价比)"]
     
     M_5K --> End["安装人体工程学显示器支架完成构建"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 显示器一旦购买，将作为你的基础设施，在未来的许多年中持续支撑你的生产力。结合本文讲解的视觉工程学原则、PPI 的数学计算、带宽的极限，以及通过软件进行的窗口管理，打造一个毫不妥协的顶级工作区吧。这终将成为你写出最优秀代码的最短路径。
+
 
 
 

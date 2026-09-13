@@ -39,8 +39,8 @@ $$ O((\log N)^3) $$
 ```mermaid
 graph TD
     A["入力サイズ(ビット数) Nの増加"] --> B{"アルゴリズムの選択"}
-    B -->|古典: 一般数体ふるい法| C["準指数関数的増加 O(exp(...))"]
-    B -->|量子: ショアのアルゴリズム| D["多項式時間 O((log N)^3)"]
+    B -->|"古典: 一般数体ふるい法"| C["準指数関数的増加 O(exp(...))"]
+    B -->|"量子: ショアのアルゴリズム"| D["多項式時間 O((log N)^3)"]
     C --> E["数千年〜数十億年 (解読不能)"]
     D --> F["数分〜数時間 (現実的な時間で解読)"]
 ```
@@ -358,5 +358,6 @@ ITインフラを管理するエンジニアにとって、既存のRSAや楕円
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

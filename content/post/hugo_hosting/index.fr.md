@@ -37,9 +37,9 @@ Toutes ces plateformes distribuent le contenu en utilisant des CDN (Content Deli
 
 ```mermaid
 graph TD
-    A["Utilisateur (Tokyo)"] -->|Faible latence| B["Nœud Edge (NRT)"]
-    C["Utilisateur (New York)"] -->|Faible latence| D["Nœud Edge (EWR)"]
-    E["Utilisateur (Londres)"] -->|Faible latence| F["Nœud Edge (LHR)"]
+    A["Utilisateur (Tokyo)"] -->|"Faible latence"| B["Nœud Edge (NRT)"]
+    C["Utilisateur (New York)"] -->|"Faible latence"| D["Nœud Edge (EWR)"]
+    E["Utilisateur (Londres)"] -->|"Faible latence"| F["Nœud Edge (LHR)"]
     B --> G["Stockage d'origine / Object Store"]
     D --> G
     F --> G
@@ -255,6 +255,7 @@ Dans le cadre de l'exploitation d'un site statique utilisant Hugo, l'adoption de
 5. **Analytique légère** : Intégrer des outils comme Cloudflare Web Analytics pour ne pas dégrader les performances tout en respectant la vie privée.
 
 En combinant ces éléments, vous pouvez créer gratuitement un système de blog évolutif et robuste, capable de supporter des trafics massifs atteignant des millions de pages vues (PV) par mois. Si vous envisagez de lancer un blog technique, un site d'entreprise ou un site portfolio, je vous invite vivement à essayer cette configuration Jamstack + Hugo + Cloudflare Pages.
+
 
 
 

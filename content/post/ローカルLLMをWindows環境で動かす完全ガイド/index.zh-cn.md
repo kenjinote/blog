@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["采样器 (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["输出 Token"]
     
-    OutputToken --> |"自回归生成"| Tokenizer
+    OutputToken -->|"自回归生成"| Tokenizer
     OutputToken --> Decoder["反分词器 (Detokenizer)"]
     Decoder --> FinalOutput["最终输出文本"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["用户查询"] --> EmbedQuery["查询嵌入"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"相似度检索"| RetrievedDocs["提取相关文档"]
+    VectorDB -->|"相似度检索"| RetrievedDocs["提取相关文档"]
     
     UserQuery --> PromptBuilder["生成提示词"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ Unsloth将CUDA内核优化到了极致，与标准的Hugging Face库相比，训
 5. 活用**Unsloth (WSL2)**，培育出拥有专属于您专业知识的自定义AI。
 
 AI的“民主化”已经不再是一个流行语，而是一个运行在您的Windows桌面上的真实系统。摆脱云端API的使用成本和信息泄露风险，现在就请迈入这个自由且强大的私有AI世界吧。
+
+

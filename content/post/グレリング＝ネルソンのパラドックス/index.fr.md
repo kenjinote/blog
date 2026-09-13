@@ -64,15 +64,15 @@ La logique s'effondre dans les deux cas.
 graph TD
     A["Mot 'Hétérologique' (Heterological)"] --> B{"Dans quelle catégorie le classer ?"}
     
-    B -->|Il est autologique| C["Définition : Il possède sa propre signification"]
+    B -->|"Il est autologique"| C["Définition : Il possède sa propre signification"]
     C --> D["Sa propre signification est 'hétérologique'"]
     D --> E["Résultat : Il est hétérologique !"]
-    E -->|Contradiction| B
+    E -->|"Contradiction"| B
     
-    B -->|Il est hétérologique| F["Définition : Il ne possède pas sa propre signification"]
+    B -->|"Il est hétérologique"| F["Définition : Il ne possède pas sa propre signification"]
     F --> G["Sa propre signification est 'hétérologique'"]
     G --> H["Résultat : Il est autologique !"]
-    H -->|Contradiction| B
+    H -->|"Contradiction"| B
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
@@ -102,3 +102,4 @@ Lorsqu'un mot fait référence à lui-même (auto-référence), il y a toujours 
 Ce n'est pas seulement un problème de philosophie ou de linguistique. En informatique et en intelligence artificielle, lorsque des programmes tentent d'évaluer ou de modifier leur propre code, ou lorsque les modèles de traitement du langage naturel interprètent des contradictions sémantiques, ils se heurtent à des barrières logiques similaires.
 
 Le paradoxe de Grelling-Nelson est une expérience de pensée qui visualise brillamment les bugs (limites) inhérents au système qu'est le "langage".
+

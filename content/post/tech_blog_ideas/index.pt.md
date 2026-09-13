@@ -326,18 +326,18 @@ O processo que exploramos até agora visando evitar a "falta de ideias" na cria�
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Script de extração em Python| B["Dados de tendências brutos"]
-    C["GitHub Actions (Cron)"] -->|Agendamento de execução regular| A
-    B -->|Conversão para o formato Markdown| D["Daily Inputs (Fleeting Notes)"]
-    D -->|Trabalho manual de leitura e resumo| E["Obsidian Zettelkasten"]
-    E -->|Criação de Notas Permanentes| F["Permanent Notes"]
-    F -->|Processo de sincronização automática| G["OpenAI Embeddings API"]
-    G -->|Conversão em vetores| H["Pinecone Vector Database"]
-    H -->|Busca Semântica| I["Descoberta e extração de conhecimento relevante"]
-    F -->|Criação de Flashcards| J["Anki (Spaced Repetition)"]
-    J -->|Inspiração da memória de longo prazo| K["Combinatorial Creativity"]
+    A["Hacker News / Lobsters API"] -->|"Script de extração em Python"| B["Dados de tendências brutos"]
+    C["GitHub Actions (Cron)"] -->|"Agendamento de execução regular"| A
+    B -->|"Conversão para o formato Markdown"| D["Daily Inputs (Fleeting Notes)"]
+    D -->|"Trabalho manual de leitura e resumo"| E["Obsidian Zettelkasten"]
+    E -->|"Criação de Notas Permanentes"| F["Permanent Notes"]
+    F -->|"Processo de sincronização automática"| G["OpenAI Embeddings API"]
+    G -->|"Conversão em vetores"| H["Pinecone Vector Database"]
+    H -->|"Busca Semântica"| I["Descoberta e extração de conhecimento relevante"]
+    F -->|"Criação de Flashcards"| J["Anki (Spaced Repetition)"]
+    J -->|"Inspiração da memória de longo prazo"| K["Combinatorial Creativity"]
     I --> K
-    K -->|Criação de Estruturas e Roteiros| L["Blog Post Draft (Escrita do Artigo)"]
+    K -->|"Criação de Estruturas e Roteiros"| L["Blog Post Draft (Escrita do Artigo)"]
 ```
 
 A principal característica deste sistema é que **"As funções intelectuais que exigem esforço manual (resumir, interpretar e escrever)" e as "tarefas que devem ser deixadas para a máquina (buscas, coletas e agendamento de repetições espaçadas)" estão completamente separadas**. Esse fator possibilita ao escritor focar naquilo que agrega mais valor: "pensar" e "combinar".
@@ -382,5 +382,6 @@ Conforme apresentado neste artigo:
 Ao construir um pipeline abrangente que combina esses elementos, em vez de esgotar as ideias para o blog, você pode criar um estado onde, quanto mais você escreve, mais as novas ideias se multiplicam por si sementes.
 
 Você não precisa construir tudo perfeitamente desde o início. Comece criando um script simples que consulta a API do Hacker News e adquirindo o hábito de fazer anotações em Markdown dos artigos que lhe interessam. Esperamos que seu blog técnico se torne uma excelente fonte de ideias inovadoras para a próxima geração.
+
 
 

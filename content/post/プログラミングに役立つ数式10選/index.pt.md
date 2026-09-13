@@ -520,8 +520,8 @@ Historicamente, ela desempenhou um papel vital como "Função de Ativação" (Ac
 
 ```mermaid
 graph LR
-  X1["Entrada x1"] -->|Weight w1| Sum["Somatório: Σ(wi*xi) + b"]
-  X2["Entrada x2"] -->|Weight w2| Sum
+  X1["Entrada x1"] -->|"Weight w1"| Sum["Somatório: Σ(wi*xi) + b"]
+  X2["Entrada x2"] -->|"Weight w2"| Sum
   Sum --> Act["Função Sigmoide: σ(x)"]
   Act --> Out["Probabilidade de Saída (0 a 1)"]
 ```
@@ -624,4 +624,5 @@ O que você achou de todas estas esplêndidas fórmulas? Como pôde visualizar b
 Adentrar nas ricas teorias de base referencial equacionada fundamentadas nelas se mostra extremamente indispensável e formidável a capacitar codificadores simplórios limitados (Aqueles condicionados tristemente e cegamente ao importar pacotes de matriz com a submissão cega de módulos de terceiros sem raciocínio, ex.: `math.sin` ou bibliotecas `numpy.fft`) para ascendê-los ao seleto nível de supremos e geniais engenheiros experientes providenciando o poder total operando magistralmente limites super potentes em hardware. Na próxima oportunidade, divirta-se criando rotinas no código providenciando à tela maravilhosas formas, expanda suas perspectivas, maravilhe-se visualizando qual brilhante matriz equacionada e fórmula puramente sublime bate poderosa por trás desse texto invisivelmente dando poder à estrutura.
 
 **Happy Coding and Math!**
+
 

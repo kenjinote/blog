@@ -233,14 +233,14 @@ rules:
 
 ```mermaid
 flowchart TD
-    A["Author"] -->|Push changes| B["GitHub Repository"]
+    A["Author"] -->|"Push changes"| B["GitHub Repository"]
     B --> C{"GitHub Actions Triggered"}
     C --> D["Checkout Repository"]
     D --> E["Setup Node.js"]
     E --> F["npm install"]
     F --> G["Run textlint"]
-    G -->|Pass| H["Build Hugo Site"]
-    G -->|Fail| I["Report Error to PR/Commit"]
+    G -->|"Pass"| H["Build Hugo Site"]
+    G -->|"Fail"| I["Report Error to PR/Commit"]
     H --> J["Deploy to Hosting (Vercel/Netlify)"]
 ```
 
@@ -269,6 +269,7 @@ Markdownで技術ブログを書く際の執筆スピードを倍増させるエ
 5. **LLMの統合**: エディタ内で直接 AI にマークダウンの構成や図表のコードを出力させる。
 
 これらの設定を自身の環境に取り入れることで、執筆の「面倒くささ」がなくなり、技術的なアウトプットの量と質が劇的に向上するはずです。まずは小さなスニペット登録一つからでも始めてみてはいかがでしょうか。
+
 
 
 

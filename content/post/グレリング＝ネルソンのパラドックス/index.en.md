@@ -64,15 +64,15 @@ Whichever way it goes, logic collapses.
 graph TD
     A["The word 'heterological'"] --> B{"How is it classified?"}
     
-    B -->|Autological| C["Definition: Possesses the property it expresses"]
+    B -->|"Autological"| C["Definition: Possesses the property it expresses"]
     C --> D["Its meaning is 'heterological'"]
     D --> E["Result: It is heterological!"]
-    E -->|Contradiction| B
+    E -->|"Contradiction"| B
     
-    B -->|Heterological| F["Definition: Does not possess the property it expresses"]
+    B -->|"Heterological"| F["Definition: Does not possess the property it expresses"]
     F --> G["Its meaning is 'heterological'"]
     G --> H["Result: It is autological!"]
-    H -->|Contradiction| B
+    H -->|"Contradiction"| B
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
@@ -103,3 +103,4 @@ When words refer to themselves (self-reference), there is always a latent danger
 This is not just a problem in philosophy or linguistics. In the fields of computer science and artificial intelligence, similar logical walls are encountered when programs attempt to evaluate or modify their own code, or when natural language processing models interpret semantic contradictions.
 
 The Grelling-Nelson Paradox is a thought experiment that beautifully visualizes the bugs (limitations) inherently contained within the system of "language."
+

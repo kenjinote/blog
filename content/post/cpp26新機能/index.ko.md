@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["타입: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["meta::info의 범위"]
-    C -->| [: member :] | D["직접적인 멤버 접근 (obj.id, obj.name)"]
+    A["타입: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["meta::info의 범위"]
+    C -->|"[: member :]"| D["직접적인 멤버 접근 (obj.id, obj.name)"]
     D --> E["생성된 코드 (제로 오버헤드)"]
 ```
 
@@ -296,9 +296,9 @@ C++의 비동기 처리 모델을 근본부터 다시 만드는 표준화 제안
 
 ```mermaid
 graph LR
-    S["Sender (작업 명세서)"] -->|connect| O["작업 상태"]
-    O -->|start| E["실행 (ThreadPool, GPU 등)"]
-    E -->|set_value / set_error / set_stopped| R["Receiver (콜백)"]
+    S["Sender (작업 명세서)"] -->|"connect"| O["작업 상태"]
+    O -->|"start"| E["실행 (ThreadPool, GPU 등)"]
+    E -->|"set_value / set_error / set_stopped"| R["Receiver (콜백)"]
 ```
 
 Senders는 '무엇을 할 것인가'를 기술하는 가벼운 설계도이며, 실행 컨텍스트(Scheduler)와 분리되어 있습니다. 이로써 CPU의 ThreadPool이나 GPU로의 작업 오프로딩을 통일된 인터페이스로 효율적으로 기술할 수 있게 됩니다.
@@ -367,5 +367,6 @@ C++26은 오랫동안 C++ 프로그래머가 기다려온 '꿈의 기능'이 한
 
 ---
 *이 글은 2026년 시점의 C++26 표준화 상황을 바탕으로 작성되었습니다. 각 컴파일러의 구현 상황에 따라 일부 구문이 변경될 가능성이 있음에 유의해 주십시오.*
+
 
 

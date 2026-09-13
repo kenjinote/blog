@@ -33,13 +33,13 @@ El siguiente diagrama Mermaid visualiza los obstáculos de aprendizaje y los pun
 ```mermaid
 flowchart TD
     A["Escuela primaria: Scratch (Visual/Basado en bloques)"] --> B{"Muro de transición a lenguajes de texto en secundaria"}
-    B -->|Frustración por errores de sintaxis estrictos| C["Abandono (Alergia a la sintaxis)"]
-    B -->|Falta de comprensión sobre variables y tipado estático| D["Abandono (Muro de los tipos)"]
-    B -->|Transición exitosa| E["Escuela secundaria superior: Información I (Fundamentos de Python/JavaScript, etc.)"]
+    B -->|"Frustración por errores de sintaxis estrictos"| C["Abandono (Alergia a la sintaxis)"]
+    B -->|"Falta de comprensión sobre variables y tipado estático"| D["Abandono (Muro de los tipos)"]
+    B -->|"Transición exitosa"| E["Escuela secundaria superior: Información I (Fundamentos de Python/JavaScript, etc.)"]
     E --> F{"Muro de diseño de algoritmos y estructuras de datos"}
-    F -->|Falta de comprensión de la complejidad temporal y espacial| G["Código ineficiente (Degradación del rendimiento por O(N^2))"]
-    F -->|Caja negra de gestión de memoria y referencias| H["Codificador que termina en llamadas superficiales a API"]
-    F -->|Avance conceptual| I["Aprendizaje avanzado de CS (C/C++, Java, arquitectura de bajo nivel)"]
+    F -->|"Falta de comprensión de la complejidad temporal y espacial"| G["Código ineficiente (Degradación del rendimiento por O(N^2))"]
+    F -->|"Caja negra de gestión de memoria y referencias"| H["Codificador que termina en llamadas superficiales a API"]
+    F -->|"Avance conceptual"| I["Aprendizaje avanzado de CS (C/C++, Java, arquitectura de bajo nivel)"]
     I --> J["Profesional avanzado de TI que la industria anhela"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Entorno de Compilación/Ejecución"]
         D["Almacenamiento de archivos persistente"]
     end
-    A -->| Comunicación HTTP/WebSocket: Retrasos severos debido a las conexiones lentas en las escuelas | B
+    A -->|"Comunicación HTTP/WebSocket: Retrasos severos debido a las conexiones lentas en las escuelas"| B
     B <--> C
     B <--> D
 ```
@@ -256,6 +256,7 @@ Cómo lucharemos a través de la fase más importante y difícil del "después" 
 ---
 
 *En este artículo describimos en términos generales la teoría de la complejidad computacional y los límites de infraestructura de la Iniciativa GIGA School. En futuras publicaciones de esta serie cubriremos temas aún más especializados en ciencias de la computación (como detalles sobre algoritmos de sistemas distribuidos y métodos de gestión de memoria de bajo nivel).*
+
 
 
 

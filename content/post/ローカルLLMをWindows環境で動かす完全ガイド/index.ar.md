@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["أداة أخذ العينات (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["الرمز المميز المخرج (Output Token)"]
     
-    OutputToken --> |"التوليد التلقائي الانحداري"| Tokenizer
+    OutputToken -->|"التوليد التلقائي الانحداري"| Tokenizer
     OutputToken --> Decoder["أداة فك الترميز (Detokenizer)"]
     Decoder --> FinalOutput["النص النهائي المخرج"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["سؤال المستخدم"] --> EmbedQuery["تضمين السؤال"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"بحث عن التشابه"| RetrievedDocs["استخراج المستندات ذات الصلة"]
+    VectorDB -->|"بحث عن التشابه"| RetrievedDocs["استخراج المستندات ذات الصلة"]
     
     UserQuery --> PromptBuilder["توليد الموجه (Prompt)"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ pip install --no-deps trl peft accelerate bitsandbytes
 5. استفد من **Unsloth (WSL2)** لتطوير وتدريب ذكاء اصطناعي مخصص يمتلك معرفتك المتخصصة الخاصة.
 
 لم يعد مصطلح "إضفاء الطابع الديمقراطي" على الذكاء الاصطناعي مجرد كلمة طنانة (Buzzword)، بل أصبح نظامًا واقعيًا يعمل على سطح مكتب ويندوز الخاص بك. تحرر من تكاليف استخدام واجهات برمجة التطبيقات السحابية وخطر تسرب المعلومات، وادخل الآن إلى عالم الذكاء الاصطناعي الخاص القوي والحر.
+
+

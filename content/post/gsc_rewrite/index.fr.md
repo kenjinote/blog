@@ -258,7 +258,7 @@ flowchart TD
     F --> G["Optimiser les balises H2/H3 et réécrire le contenu"]
     G --> H["Publier l'article mis à jour"]
     H --> I["Surveiller les changements de CTR (Attendu vs Réel)"]
-    I --> |"Boucle de rétroaction"| A
+    I -->|"Boucle de rétroaction"| A
 ```
 
 En systématisant cette série d'étapes : de la collecte de données à partir de GSC et GA4, la sélection des cibles par l'analyse, l'optimisation du contenu par la NLP, jusqu'au suivi des résultats, votre média de blog deviendra un atout qui continuera à se développer automatiquement.
@@ -276,6 +276,8 @@ Pour résumer les méthodes expliquées dans cet article :
 4. Découvrir les lacunes de contenu avec les concurrents par **l'analyse NLP utilisant le TF-IDF**, et optimiser les titres (H2/H3).
 
 Les tendances technologiques changent constamment. Afin de répondre avec précision aux erreurs et aux défis auxquels vos lecteurs sont actuellement confrontés, nous vous encourageons à intégrer une réécriture stratégique, avec les données de votre côté, dans vos opérations quotidiennes.
+
+
 
 
 

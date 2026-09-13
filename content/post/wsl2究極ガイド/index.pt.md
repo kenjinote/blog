@@ -386,3 +386,5 @@ O WSL2 transcendeu completamente o quadro de ser apenas um "Linux de bônus roda
 Ao aplicar todas as configurações explicadas desta vez (otimização de recursos com `.wslconfig`, aprimoramento de terminal com Zsh + Powerlevel10k, acesso transparente com VS Code Remote e integração SSH e manutenção de VHDX), o "ambiente de desenvolvimento definitivo" livre de estresse, rápido e seguro estará completo.
 
 Demora um pouco para configurar o ambiente, mas uma vez que você consolide suas configurações, não há dúvida de que sua produtividade em engenharia melhorará drasticamente de agora em diante. Sinta-se à vontade para explorar mais personalizações com base neste guia para atender aos seus próprios projetos e preferências.
+
+

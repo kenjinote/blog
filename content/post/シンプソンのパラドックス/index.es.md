@@ -93,8 +93,8 @@ graph TD
         Total["Suma total: Victoria aplastante del Hospital A (90% > 41%)"]
     end
     
-    Light -->|Al sumar, misteriosamente se invierte| Total
-    Heavy -->|Al sumar, misteriosamente se invierte| Total
+    Light -->|"Al sumar, misteriosamente se invierte"| Total
+    Heavy -->|"Al sumar, misteriosamente se invierte"| Total
     
     style Total fill:#ff9999,stroke:#333,stroke-width:2px
 ```
@@ -149,3 +149,4 @@ En el mundo abundan empresas, políticos y medios de comunicación que aíslan l
 Incluso si te dicen: "¡Nuestro producto A tiene una satisfacción general mayor que el producto B de la competencia!", quizás si lo divides en "público joven" y "público mayor", el producto B de la competencia esté ganando en ambos grupos.
 
 Al mirar los datos, tener una mirada crítica que no se deje engañar por los números "generales" superficiales y preguntarse: "¿No hay un sesgo extremo en las proporciones de los grupos debido a variables ocultas subyacentes (edad, género, gravedad, etc.)?" se convierte en la mejor arma para sobrevivir en la sociedad de la información actual.
+

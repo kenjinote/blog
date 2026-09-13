@@ -326,18 +326,18 @@ A continuación, se resume en el siguiente diagrama de flujo de Mermaid la arqui
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Script de extracción en Python| B["Datos de tendencias sin procesar"]
-    C["GitHub Actions (Cron)"] -->|Programa de ejecución periódica| A
-    B -->|Conversión de formato a Markdown| D["Entradas Diarias (Fleeting Notes)"]
-    D -->|Trabajo manual de lectura y resumen| E["Obsidian Zettelkasten"]
-    E -->|Conversión a notas permanentes| F["Notas Permanentes (Permanent Notes)"]
-    F -->|Procesamiento de sincronización automática| G["OpenAI Embeddings API"]
-    G -->|Conversión a vectores| H["Base de Datos Vectorial Pinecone"]
-    H -->|Búsqueda semántica| I["Descubrimiento y extracción de conocimientos relacionados"]
-    F -->|Creación de tarjetas de memoria (flashcards)| J["Anki (Repetición Espaciada)"]
-    J -->|Inspiración desde la memoria a largo plazo| K["Creatividad Combinatoria"]
+    A["Hacker News / Lobsters API"] -->|"Script de extracción en Python"| B["Datos de tendencias sin procesar"]
+    C["GitHub Actions (Cron)"] -->|"Programa de ejecución periódica"| A
+    B -->|"Conversión de formato a Markdown"| D["Entradas Diarias (Fleeting Notes)"]
+    D -->|"Trabajo manual de lectura y resumen"| E["Obsidian Zettelkasten"]
+    E -->|"Conversión a notas permanentes"| F["Notas Permanentes (Permanent Notes)"]
+    F -->|"Procesamiento de sincronización automática"| G["OpenAI Embeddings API"]
+    G -->|"Conversión a vectores"| H["Base de Datos Vectorial Pinecone"]
+    H -->|"Búsqueda semántica"| I["Descubrimiento y extracción de conocimientos relacionados"]
+    F -->|"Creación de tarjetas de memoria (flashcards)"| J["Anki (Repetición Espaciada)"]
+    J -->|"Inspiración desde la memoria a largo plazo"| K["Creatividad Combinatoria"]
     I --> K
-    K -->|Creación de trama y borrador de estructura| L["Borrador del Artículo del Blog (Escritura del artículo)"]
+    K -->|"Creación de trama y borrador de estructura"| L["Borrador del Artículo del Blog (Escritura del artículo)"]
 ```
 
 La característica de este sistema es que **el "trabajo intelectual que se debe hacer manualmente (resumen, consideración, redacción)" y el "trabajo que se debe delegar a la máquina (recopilación, búsqueda, programación de la repetición espaciada)" están completamente separados**. Gracias a esto, el escritor puede concentrarse en "pensar" y "combinar", que es lo que proporciona el mayor valor añadido.
@@ -382,5 +382,6 @@ Como hemos presentado en este artículo:
 Al construir un pipeline integral que combina todo esto, lejos de que se agoten las ideas para el blog, se puede crear un estado en el que las nuevas ideas se auto-multiplican cuanto más escribes.
 
 No es necesario construir todo a la perfección desde el principio. Comienza por crear un script sencillo que llame a la API de Hacker News y adquiere el hábito de tomar notas en formato Markdown sobre los artículos que te interesen. Espero que tu blog técnico se convierta en una fuente de excelentes ideas para la próxima generación.
+
 
 

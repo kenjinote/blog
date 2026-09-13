@@ -97,11 +97,11 @@ O fluxograma (diagrama Mermaid) abaixo ilustra o fluxo de obtenção de dados de
 
 ```mermaid
 flowchart TD
-    A["API do Oura Ring (Biometria)"] -->|JSON via OAuth2| C["Pipeline de Ingestão de Dados em Python"]
-    B["API do WakaTime (Tempo de Código)"] -->|JSON via Chave de API| C
-    E["API SwitchBot (Temp / CO2 do Quarto)"] -->|JSON via Chave de API| C
-    C -->|Extração e Transformação| D["DataFrame Pandas (Memória)"]
-    D -->|Carga| F["TimescaleDB / PostgreSQL"]
+    A["API do Oura Ring (Biometria)"] -->|"JSON via OAuth2"| C["Pipeline de Ingestão de Dados em Python"]
+    B["API do WakaTime (Tempo de Código)"] -->|"JSON via Chave de API"| C
+    E["API SwitchBot (Temp / CO2 do Quarto)"] -->|"JSON via Chave de API"| C
+    C -->|"Extração e Transformação"| D["DataFrame Pandas (Memória)"]
+    D -->|"Carga"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (Análise Ad-hoc)"]
     F --> H["Web App Streamlit (Monitoramento Diário)"]
 ```
@@ -368,6 +368,7 @@ Use e aplique com exatidão a precisão vinculadas atreladas providas pelas base
 
 ---
 *Aviso (Disclaimer): O artigo referido acima constitui um relatório estritamente baseado com fundamentos compilados originários perante uso exclusivo de atuações experimentais práticas num escopo metodológico da Ciência de Dados realizados pelo autor no âmbito pessoal. Este não se presta em figurar como, de maneira nenhuma, atuação médica ligada em aconselhamentos de saúde. Perante episódios onde você testemunhe anomalias contínuas acompanhadas com distúrbios prolongados atrelados com mal-estar em bases das perdas na saúde, ou atestem que sofrem decorrentes base nas atuações relativas nas rupturas base em distúrbios persistentes associados ao sono: Recomendamos que agende e busque auxílio em consultas ligadas com amparo via orientações de Profissionais da Saúde competentes de Especialidade através de Clínicas e Instituições Médicas Especializadas.*
+
 
 
 

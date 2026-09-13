@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["Environnement externe (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (Résultats d'exécution et journaux d'erreurs de l'outil)"]
     Observation --> Thought
-    Thought -->|Informations suffisantes recueillies| Finish["Finish (Sortie de la réponse/du code final)"]
+    Thought -->|"Informations suffisantes recueillies"| Finish["Finish (Sortie de la réponse/du code final)"]
 ```
 
 ### 4.2 Implémentation via Function Calling (Tool Use)
@@ -387,3 +387,4 @@ En maîtrisant ces principes, les prompts ne sont plus de simples chaînes de ca
 
 ---
 *Généré en utilisant des techniques d'ingénierie des prompts.*
+

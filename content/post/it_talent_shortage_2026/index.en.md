@@ -30,7 +30,7 @@ Modern development processes are built on the premise of being **cloud-native** 
 
 ```mermaid
 graph TD
-    A["Legacy SIer Development Model"] -->|Paradigm Shift| B["Transition Period (Agile Adoption, Lift & Shift)"]
+    A["Legacy SIer Development Model"] -->|"Paradigm Shift"| B["Transition Period (Agile Adoption, Lift & Shift)"]
     B --> C["Cloud-Native (Microservices/Containers)"]
     C --> D["AI/Data-Driven Architecture (MLOps)"]
     D --> E["Generative AI Integration Platform (Autonomous AI Agents)"]
@@ -157,10 +157,10 @@ In large-scale system development, ultimately, "building human relationships" an
 
 ```mermaid
 graph LR
-    A["Mere Coder"] -->|AI Substitution| B["Decreased Demand"]
-    A -->|Strategic Shift| C["System Architect"]
-    A -->|Strategic Shift| D["Domain Expert"]
-    A -->|Strategic Shift| E["AI Integrator"]
+    A["Mere Coder"] -->|"AI Substitution"| B["Decreased Demand"]
+    A -->|"Strategic Shift"| C["System Architect"]
+    A -->|"Strategic Shift"| D["Domain Expert"]
+    A -->|"Strategic Shift"| E["AI Integrator"]
     
     C --> F["High Demand / High Rate (Winners in 2026 and Beyond)"]
     D --> F
@@ -182,6 +182,7 @@ AI is not going to steal our jobs; it is merely a tool that allows us to focus o
 
 Now is the time to review your career path and steer toward the next paradigm.
 Are you ready to "modernize" yourself?
+
 
 
 

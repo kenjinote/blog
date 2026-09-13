@@ -72,9 +72,9 @@ C++アプリケーションにおける音声処理のパイプラインを設�
 
 ```mermaid
 graph TD
-    A["Audio Source (Microphone/File)"] -->|Raw Bytes, e.g. 48kHz Stereo| B["Audio Decoder & Resampler (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-bit Float| C["Ring Buffer / Memory Array"]
-    C -->|Feed PCM Data| D["whisper.cpp Core (ggml)"]
+    A["Audio Source (Microphone/File)"] -->|"Raw Bytes, e.g. 48kHz Stereo"| B["Audio Decoder & Resampler (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-bit Float"| C["Ring Buffer / Memory Array"]
+    C -->|"Feed PCM Data"| D["whisper.cpp Core (ggml)"]
     D --> E["Mel Spectrogram Extraction"]
     E --> F["Transformer Encoder-Decoder"]
     F --> G["Text Tokens Generation"]
@@ -223,14 +223,14 @@ int main() {
 ```mermaid
 graph LR
     subgraph "Audio Thread (High Priority)"
-        A["Audio Capture API (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["Resampler (to 16kHz)"]
+        A["Audio Capture API (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["Resampler (to 16kHz)"]
         B --> C["Ring Buffer"]
     end
     
     subgraph "Main / Worker Thread"
-        C -->|Pop 30ms-1000ms chunk| D["Voice Activity Detection (VAD)"]
-        D -->|If speech detected| E["Accumulate PCM Buffer"]
-        E -->|Trigger Inference| F["whisper_full()"]
+        C -->|"Pop 30ms-1000ms chunk"| D["Voice Activity Detection (VAD)"]
+        D -->|"If speech detected"| E["Accumulate PCM Buffer"]
+        E -->|"Trigger Inference"| F["whisper_full()"]
         F --> G["Update UI/Text"]
     end
 ```
@@ -298,4 +298,5 @@ Hyper-Threadingなどの論理コアを含めると、キャッシュの競合�
 * **圧倒的な最適化**: `ggml` による4-bit量子化と、Metal/cuBLASなどのハードウェアバックエンドの恩恵。
 
 巨大なPython環境やクラウドAPIへの依存を断ち切り、ネイティブ環境で高速かつセキュアに動作する音声処理アプリケーションの開発に、ぜひ `whisper.cpp` を役立ててください。ローカル完結のAIは、プライバシー保護とレイテンシの観点から、今後のソフトウェア開発において極めて重要な要素技術となるでしょう。
+
 

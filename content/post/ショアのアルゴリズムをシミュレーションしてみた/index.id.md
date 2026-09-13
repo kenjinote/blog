@@ -39,8 +39,8 @@ Ini berarti bahwa jika jumlah bit digandakan, waktu komputasi pada komputer klas
 ```mermaid
 graph TD
     A["Peningkatan ukuran input (jumlah bit) N"] --> B{"Pemilihan Algoritma"}
-    B -->|Klasik: General Number Field Sieve| C["Peningkatan sub-eksponensial O(exp(...))"]
-    B -->|Kuantum: Algoritma Shor| D["Waktu polinomial O((log N)^3)"]
+    B -->|"Klasik: General Number Field Sieve"| C["Peningkatan sub-eksponensial O(exp(...))"]
+    B -->|"Kuantum: Algoritma Shor"| D["Waktu polinomial O((log N)^3)"]
     C --> E["Ribuan hingga miliaran tahun (Tidak dapat didekripsi)"]
     D --> F["Beberapa menit hingga jam (Didekripsi dalam waktu realistis)"]
 ```
@@ -358,5 +358,6 @@ Silakan jalankan kode Python yang telah diperkenalkan pada lingkungan Anda masin
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Dokumentasi Qiskit: https://qiskit.org/documentation/
+
 
 

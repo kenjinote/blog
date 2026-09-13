@@ -37,18 +37,18 @@ Why on earth is this? Zeno's logic goes like this:
 ```mermaid
 graph LR
     subgraph "Step 1"
-        A1["Achilles (Start)"] -->|Catches up| T1["Tortoise's initial position"]
-        T1_Start["Tortoise"] -->|Moves| T2_Pos["A little forward"]
+        A1["Achilles (Start)"] -->|"Catches up"| T1["Tortoise's initial position"]
+        T1_Start["Tortoise"] -->|"Moves"| T2_Pos["A little forward"]
     end
     
     subgraph "Step 2"
-        A2["Achilles"] -->|Catches up| T2["Tortoise's next position"]
-        T2_Start["Tortoise"] -->|Moves| T3_Pos["Further forward"]
+        A2["Achilles"] -->|"Catches up"| T2["Tortoise's next position"]
+        T2_Start["Tortoise"] -->|"Moves"| T3_Pos["Further forward"]
     end
     
     subgraph "Step 3"
-        A3["Achilles"] -->|Catches up| T3["Tortoise's further next position"]
-        T3_Start["Tortoise"] -->|Continues infinitely...| Infinity["Never catches up!?"]
+        A3["Achilles"] -->|"Catches up"| T3["Tortoise's further next position"]
+        T3_Start["Tortoise"] -->|"Continues infinitely..."| Infinity["Never catches up!?"]
     end
 ```
 
@@ -167,4 +167,5 @@ However, for the philosophers of ancient Greece, who lacked concepts like "infin
 The deep questions posed by this paradox—"What is continuity?" and "What does it mean to be infinitely divisible?"—became an important driving force leading to the birth of **"calculus"** by Newton and Leibniz later on, and further to modern mathematical foundations.
 
 Great paradoxes do not merely deceive people; they also act as keys that open doors to new mathematics.
+
 

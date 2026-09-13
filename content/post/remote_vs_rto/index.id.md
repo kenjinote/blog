@@ -43,9 +43,9 @@ graph LR
     D30["Jarak: 30m (Lantai Berbeda)"] --> P30["Probabilitas Komunikasi Tatap Muka: Rendah (Beberapa %)"]
     DRemote["Sepenuhnya Jarak Jauh (Kota Berbeda)"] --> PRemote["Probabilitas Komunikasi Sinkron Tidak Disengaja: Hampir Nol"]
     
-    D0 -. "Penurunan tajam dari Kurva Allen" .-> D10
-    D10 -. "Hilangnya kedekatan fisik" .-> D30
-    D30 -. "Transisi ke komunikasi asinkron/disengaja sepenuhnya" .-> DRemote
+    D0 -. Penurunan tajam dari Kurva Allen .-> D10
+    D10 -. Hilangnya kedekatan fisik .-> D30
+    D30 -. Transisi ke komunikasi asinkron/disengaja sepenuhnya .-> DRemote
 ```
 
 Dalam lingkungan kerja sepenuhnya jarak jauh, jarak fisik $d$ secara praktis menjadi tak terhingga. Artinya, meskipun terdapat Slack atau Zoom, pertukaran informasi yang kebetulan (Serendipitous Communication) seperti "mengobrol di sekitar dispenser air (water cooler)" tidak akan lagi terjadi secara struktural. Salah satu argumen terbesar bagi manajemen yang mempromosikan RTO adalah untuk mendapatkan kembali "berbagi pengetahuan diam-diam dan penciptaan inovasi yang dibawa oleh kedekatan fisik" yang didukung oleh Kurva Allen ini.
@@ -189,9 +189,9 @@ graph TD
     subgraph "Model Zero Trust (BeyondCorp / ZTNA)"
         U2["Insinyur Jarak Jauh (Perangkat yang Dikelola MDM)"] -- Komunikasi Langsung (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
         IAP -- Otorisasi dinamis per permintaan --> App2["Aplikasi Internal / SaaS"]
-        IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / Konteks Pengguna" .-> Policy
-        MDM["Manajemen Perangkat (Intune / Jamf)"] -. "Kesehatan Perangkat (Status Patch)" .-> Policy
-        Policy["Mesin Kebijakan Akses"] -. "Penilaian otorisasi berbasis risiko" .-> IAP
+        IDP["Identity Provider (Okta / Entra ID)"] -. MFA / Konteks Pengguna .-> Policy
+        MDM["Manajemen Perangkat (Intune / Jamf)"] -. Kesehatan Perangkat (Status Patch) .-> Policy
+        Policy["Mesin Kebijakan Akses"] -. Penilaian otorisasi berbasis risiko .-> IAP
     end
 ```
 
@@ -235,6 +235,7 @@ Pihak manajemen harus membuang pandangan yang tidak rasional bahwa "sekadar meng
 Sebaliknya, pihak insinyur (terutama kalangan senior) juga tidak boleh berpandangan arogan dan berpikir "Saya bisa jadi lebih produktif jika mengoding dari rumah, dan kantor pun sama sekali tidak ada gunanya". Rekayasa perangkat lunak adalah semacam olahraga beregu yang menanggung serangkaian beban mulai dari rancangan infrastruktur komprehensif, pendidikan terhadap kalangan junior, dan koordinasi ketika masalah mendesak terjadi, yang tentunya lebih dari sekadar efisiensi pemrograman kode. Adakalanya komunikasi yang erat dalam ruang yang nyata memang diperlukan dalam mencegah kegagalan proyek yang sedang dijalankan.
 
 Pemecahan yang sesungguhnya adalah menyesuaikan kondisi ini berdasarkan profil tiap perusahaan, tim, ataupun tahapan dari masing-masing proyek yang ada. Meskipun demikian, sebuah kepastian adalah bahwa cuma organisasi yang menangkap prinsip sosiologis dari kegiatan pertukaran informasi, mengevaluasi fakta di lapangan berdasarkan tolok ukur menyeluruh seperti model SPACE, dan juga memecahkan batasan teknologi lewat implementasi Zero Trust yang akan berhasil meraih pencapaian inovatif dalam tatanan lingkungan kerja di era modern ini.
+
 
 
 

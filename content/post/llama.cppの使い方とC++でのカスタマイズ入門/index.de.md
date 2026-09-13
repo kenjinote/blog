@@ -103,7 +103,7 @@ graph TD
     J --> K["Ausgewählte Token-ID"]
     K --> L["llama.cpp Detokenizer"]
     L --> M["Ausgabe-String"]
-    K -. "Autoregressive Schleife" .-> D
+    K -. Autoregressive Schleife .-> D
 ```
 
 Die Textgenerierung ist eine autoregressive Schleife, bei der jedes ausgegebene Token als nächste Eingabe in den KV-Cache aufgenommen wird und den Berechnungsgraphen erneut durchläuft.
@@ -383,3 +383,4 @@ Wir laden Sie ein, eigenen C++-Code zu schreiben und den Spaß zu erleben, LLMs 
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

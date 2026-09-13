@@ -93,8 +93,8 @@ graph TD
         Total["Soma geral: Vitória esmagadora do Hospital A (90% > 41%)"]
     end
     
-    Light -->|Por algum motivo inverte ao somar| Total
-    Heavy -->|Por algum motivo inverte ao somar| Total
+    Light -->|"Por algum motivo inverte ao somar"| Total
+    Heavy -->|"Por algum motivo inverte ao somar"| Total
     
     style Total fill:#ff9999,stroke:#333,stroke-width:2px
 ```
@@ -149,3 +149,4 @@ O mundo está cheio de empresas, políticos e meios de comunicação que pegam a
 Mesmo que lhe digam "Nosso produto A tem uma taxa de satisfação geral maior do que o produto B de outra empresa!", se você os dividir em "jovens" e "idosos", o produto B da outra empresa pode vencer em ambos os grupos.
 
 Ao analisar dados, não se deixe enganar pelos números "gerais" superficiais. Ter um olhar crítico e questionar "não há um viés extremo nas proporções dos grupos devido a variáveis ocultas por trás (como idade, sexo, gravidade, etc.)?" se torna a arma mais forte para sobreviver na sociedade da informação moderna.
+

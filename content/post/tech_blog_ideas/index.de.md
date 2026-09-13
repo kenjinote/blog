@@ -324,18 +324,18 @@ Die bisher erläuterte Gesamtarchitektur zur "Verhinderung des Ausgehens von Ide
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Python-Extraktionsskript| B["Unverarbeitete Trenddaten"]
-    C["GitHub Actions (Cron)"] -->|Regelmäßiger Ausführungsplan| A
-    B -->|Markdown-Formatkonvertierung| D["Daily Inputs (Fleeting Notes)"]
-    D -->|Manuelles Lesen und Zusammenfassen| E["Obsidian Zettelkasten"]
-    E -->|Umwandlung in Dauerhafte Notizen| F["Permanent Notes"]
-    F -->|Automatischer Synchronisationsprozess| G["OpenAI Embeddings API"]
-    G -->|Vektorkonvertierung| H["Pinecone Vector Database"]
-    H -->|Semantische Suche| I["Entdeckung und Extraktion von verwandtem Wissen"]
-    F -->|Karteikartenerstellung| J["Anki (Spaced Repetition)"]
-    J -->|Inspiration aus dem Langzeitgedächtnis| K["Combinatorial Creativity"]
+    A["Hacker News / Lobsters API"] -->|"Python-Extraktionsskript"| B["Unverarbeitete Trenddaten"]
+    C["GitHub Actions (Cron)"] -->|"Regelmäßiger Ausführungsplan"| A
+    B -->|"Markdown-Formatkonvertierung"| D["Daily Inputs (Fleeting Notes)"]
+    D -->|"Manuelles Lesen und Zusammenfassen"| E["Obsidian Zettelkasten"]
+    E -->|"Umwandlung in Dauerhafte Notizen"| F["Permanent Notes"]
+    F -->|"Automatischer Synchronisationsprozess"| G["OpenAI Embeddings API"]
+    G -->|"Vektorkonvertierung"| H["Pinecone Vector Database"]
+    H -->|"Semantische Suche"| I["Entdeckung und Extraktion von verwandtem Wissen"]
+    F -->|"Karteikartenerstellung"| J["Anki (Spaced Repetition)"]
+    J -->|"Inspiration aus dem Langzeitgedächtnis"| K["Combinatorial Creativity"]
     I --> K
-    K -->|Erstellung von Plot und Entwürfen| L["Blog Post Draft (Artikel-Entwurf)"]
+    K -->|"Erstellung von Plot und Entwürfen"| L["Blog Post Draft (Artikel-Entwurf)"]
 ```
 
 Das Besondere an diesem System ist, **dass intellektuelle Aufgaben, die manuell durchgeführt werden sollten (Zusammenfassen, Nachdenken, Schreiben), und Aufgaben, die der Maschine überlassen werden sollten (Sammeln, Suchen, Terminierung von Spaced Repetitions), vollständig voneinander getrennt sind**. Dadurch können sich Autoren ganz auf die wertschöpfendsten Tätigkeiten konzentrieren: das "Denken" und das "Kombinieren".
@@ -380,5 +380,6 @@ Wie in diesem Artikel vorgestellt:
 Durch den Aufbau einer umfassenden Pipeline, die all diese Elemente kombiniert, versiegen die Blog-Ideen nicht mehr. Stattdessen entsteht ein Zustand, in dem sich neue Ideen quasi von selbst vervielfältigen, je mehr man schreibt.
 
 Es ist nicht nötig, von Anfang an alles perfekt aufzubauen. Beginnen Sie doch einfach damit, ein einfaches Skript für die Hacker News-API zu erstellen, und machen Sie es sich zur Gewohnheit, interessante Artikel als Markdown-Notizen festzuhalten. Ich hoffe sehr, dass Ihr Technik-Blog zu einer Quelle großartiger Ideen für die nächste Generation heranwachsen wird.
+
 
 

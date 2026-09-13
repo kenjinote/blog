@@ -48,9 +48,9 @@ flowchart TD
     T["Tasks (任務資料庫)"]
     N["Notes (Zettelkasten 資料庫)"]
 
-    P -->| 1:N 關聯 | T
-    T -->| N:N 關聯 | N
-    P -->| 1:N 關聯 | N
+    P -->|"1:N 關聯"| T
+    T -->|"N:N 關聯"| N
+    P -->|"1:N 關聯"| N
 ```
 
 ### Projects 資料庫的屬性
@@ -165,9 +165,9 @@ flowchart TD
     NOTION["Notion API"]
     DB["Notion Tasks 資料庫"]
 
-    GH -->| 發送 Webhook | GHA
-    GHA -->| 執行 Python 腳本 | NOTION
-    NOTION -->| 更新資料庫・新增任務 | DB
+    GH -->|"發送 Webhook"| GHA
+    GHA -->|"執行 Python 腳本"| NOTION
+    NOTION -->|"更新資料庫・新增任務"| DB
 ```
 
 ### 從 GitHub Issues 自動建立 Notion 任務
@@ -273,6 +273,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
 使用 Notion 進行的任務管理，已經遠遠超越了單純的待辦清單範疇。結合以 PARA 方法進行資訊整理、Zettelkasten 將知識網路化，以及透過 Notion API 進行工程自動化，就能建構出一個強力推動個人開發與部落格寫作的「第二大腦（Second Brain）」。
 
 雖然初始設定會花一些時間，但只要系統開始運作，管理任務的認知負擔將會急劇下降，讓您能全神貫注在真正重要的「寫程式」與「寫文章」上。請務必參考本文，試著打造出屬於您自己最強的 Notion 工作區吧。
+
 
 
 

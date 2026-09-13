@@ -139,17 +139,17 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ```mermaid
 graph TD
-    User["主機機器 (瀏覽器/curl)"] -->|Localhost:8000| Web["FastAPI Web 容器"]
+    User["主機機器 (瀏覽器/curl)"] -->|"Localhost:8000"| Web["FastAPI Web 容器"]
     
     subgraph "Docker Bridge Network (app-network)"
-        Web -->|Port 5432| DB["PostgreSQL 容器"]
-        Web -->|Port 6379| Redis["Redis 容器"]
+        Web -->|"Port 5432"| DB["PostgreSQL 容器"]
+        Web -->|"Port 6379"| Redis["Redis 容器"]
     end
     
     DB --> Volume1["具名 Volume (postgres_data)"]
     Redis --> Volume2["具名 Volume (redis_data)"]
     
-    HostDir["主機原始碼 (./src)"] -.->|Bind Mount| Web
+    HostDir["主機原始碼 (./src)"] -.->|"Bind Mount"| Web
 ```
 
 ### docker-compose.yml 的實作與詳細解說
@@ -416,3 +416,4 @@ COPY ./src /app/src
 將 IaC 的典範引進本地環境，不僅僅是縮短了最初的環境設置時間而已。它消除了對更改基礎設施設定的擔憂，讓測試新技術堆疊變得更加容易，並能順利過渡到 CI/CD 管道等，讓整個開發週期的速度與品質都獲得飛躍性的提升。
 
 敬請活用本文所解說的最佳實踐，如透過多階段建置將映像檔大小最佳化、使用健康檢查控制相依性，以及意識到分層快取來撰寫 Dockerfile 等，為您自己的專案也引進最棒的開發者體驗（DX: Developer Experience）吧。
+

@@ -296,10 +296,10 @@ A thread pool is an architecture where a certain number of worker threads are cr
 
 ```mermaid
 graph TD
-    Client["Client / Main Thread"] -->|Push Task| Queue["Task Queue"]
-    Queue -->|Pop Task| W1["Worker Thread 1"]
-    Queue -->|Pop Task| W2["Worker Thread 2"]
-    Queue -->|Pop Task| W3["Worker Thread N"]
+    Client["Client / Main Thread"] -->|"Push Task"| Queue["Task Queue"]
+    Queue -->|"Pop Task"| W1["Worker Thread 1"]
+    Queue -->|"Pop Task"| W2["Worker Thread 2"]
+    Queue -->|"Pop Task"| W3["Worker Thread N"]
     
     W1 --> Exec["Execution & Return Future"]
     W2 --> Exec
@@ -331,3 +331,4 @@ We have explained multithreading and asynchronous programming in C++, from the b
 4. **Be aware of overhead:** Avoid creating an excessive number of threads, and introduce a thread pool architecture as needed.
 
 Concurrency bugs (deadlocks, data races) have low reproducibility and fall into the most difficult category to debug. By always being aware of thread safety and choosing appropriate standard library tools, let's achieve robust and fast system development with modern C++.
+

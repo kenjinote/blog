@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->| 측정(관측) | Result
+    Interference -->|"측정(관측)"| Result
 ```
 
 이와 같이 양자 컴퓨터는 고전역학의 한계(미세화 한계나 열역학적 한계)를 우회하기 위한 일시적인 연명책이 아니라, 정보와 계산의 정의 그 자체를 양자역학의 공리에 기반하여 재구축하는 진정한 패러다임 전환이다. 다음 장에서는 이 양자 간섭을 자유자재로 다루기 위한 구체적인 수학적 도구인 '양자 게이트'와 '양자 회로'의 상세한 내용에 대해 더욱 깊이 파고들 것이다.
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["물리량 $A$ 의 관측 (사영 연산자 $P_k$)"]:::measure
     
-    Obs -->| 확률 $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["수축 상태 1: $| a_1 \rangle$"]:::state
-    Obs -->| 확률 $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["수축 상태 2: $| a_2 \rangle$"]:::state
-    Obs -->| ... | StateN["수축 상태 n: $| a_n \rangle$"]:::state
+    Obs -->|"확률 $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["수축 상태 1: $| a_1 \rangle$"]:::state
+    Obs -->|"확률 $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["수축 상태 2: $| a_2 \rangle$"]:::state
+    Obs -->|"..."| StateN["수축 상태 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["결어긋남(위상 간섭의 상실)과 혼합 상태화"]:::measure
     State2 --> Decoherence
@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->| 상태 |x⟩ | QFT["QFT† (역양자 푸리에 변환)"]
-    Uf -->| 상태 |a^x mod N⟩ | Discard["관측하지 않음 (환경과 얽힘)"]
+    Uf -->|"상태"|x⟩ | QFT["QFT† (역양자 푸리에 변환)"]
+    Uf -->|"상태"|a^x mod N⟩ | Discard["관측하지 않음 (환경과 얽힘)"]
 
     QFT --> Measure["측정 (k)"]
     Measure --> Classical["연분수 전개를 통한 고전적 후처리 (r의 도출)"]
@@ -2699,8 +2699,8 @@ $$
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["위상 브레이딩"]
-    A["시간축 t"] -->| 애니온 1의 세계선 | B["교환 조작(브레이드)"]
-    C["애니온 2의 세계선"] -->| 브레이드 | B
+    A["시간축 t"] -->|"애니온 1의 세계선"| B["교환 조작(브레이드)"]
+    C["애니온 2의 세계선"] -->|"브레이드"| B
     B --> D["상태 벡터가 유니터리 회전 U"]
     end
 ```
@@ -2863,3 +2863,5 @@ $$
 
 ---
  **연재 『양자 컴퓨터의 원리』 (총 12장) 끝** 
+
+

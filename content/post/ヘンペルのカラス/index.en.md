@@ -52,12 +52,12 @@ Since evidence for $H_2$ holds the same value as evidence for $H_1$, the followi
 
 ```mermaid
 graph TD
-    A["Proposition H1: All ravens are black"] -->|Logical equivalence (Contrapositive)| B["Proposition H2: What is not black is not a raven"]
+    A["Proposition H1: All ravens are black"] -->|"Logical equivalence (Contrapositive)"| B["Proposition H2: What is not black is not a raven"]
     
-    C["Observation: Black raven"] -->|Serves as evidence for| A
-    D["Observation: Blue apple"] -->|Serves as evidence for| B
+    C["Observation: Black raven"] -->|"Serves as evidence for"| A
+    D["Observation: Blue apple"] -->|"Serves as evidence for"| B
     
-    D -.->|Therefore, this should also be evidence for?| A
+    D -.->|"Therefore, this should also be evidence for?"| A
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
@@ -87,4 +87,5 @@ In other words, the Bayesian solution is that logically "a blue apple is evidenc
 This paradox highlights how the foundation of science known as "induction (deriving general laws from observation)" rests on a fragile premise. Relying solely on logical equivalence would enable "indoor ornithology," where one could verify any universal law ("all swans are white," "no aliens are green," etc.) simply by observing the junk in a room without ever going outside.
 
 Hempel's Ravens is a fascinating paradox that shows that the words "evidence" and "proof" we unconsciously use cannot be fully captured by the rules of pure symbolic logic alone.
+
 

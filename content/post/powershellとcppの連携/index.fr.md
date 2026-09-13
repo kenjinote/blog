@@ -260,13 +260,13 @@ Dans les systèmes d'entreprise, on préfère une architecture où le côté C++
 
 ```mermaid
 flowchart TD
-    A["Service Agent C++"] -->|RegQueryValueEx| B["Registre Windows"]
-    B -->|Retourner le chemin du script| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|Exécuter| D["Script d'administration (ex : Restart-Service)"]
-    D -->|stdout via Tube| C
-    C -->|ReadFile| A
-    A -->|Journaliser| E["Observateur d'événements / Fichier journal"]
+    A["Service Agent C++"] -->|"RegQueryValueEx"| B["Registre Windows"]
+    B -->|"Retourner le chemin du script"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"Exécuter"| D["Script d'administration (ex : Restart-Service)"]
+    D -->|"stdout via Tube"| C
+    C -->|"ReadFile"| A
+    A -->|"Journaliser"| E["Observateur d'événements / Fichier journal"]
 ```
 
 ## Analyse des performances et avantages du déchargement (offloading)
@@ -316,3 +316,4 @@ Bien qu'il faille prêter attention à la gestion de la mémoire et à la conver
 ---
 
 *Sur ce blog technique, nous continuerons à aborder des sujets approfondis concernant l'architecture interne de Windows et l'automatisation avancée. Si vous avez des questions ou des commentaires, n'hésitez pas à les laisser dans la section des commentaires.*
+

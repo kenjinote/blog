@@ -72,9 +72,9 @@ $$ X(m, k) = \sum_{n=0}^{N-1} x(n + mH) w(n) e^{-j \frac{2\pi}{N} k n} $$
 
 ```mermaid
 graph TD
-    A["音频源（麦克风/文件）"] -->|原始字节，例如 48kHz 立体声| B["音频解码器与重采样器（FFmpeg/miniaudio）"]
-    B -->|16kHz 单声道 32位浮点数| C["环形缓冲区 / 内存数组"]
-    C -->|馈送 PCM 数据| D["whisper.cpp 核心 (ggml)"]
+    A["音频源（麦克风/文件）"] -->|"原始字节，例如 48kHz 立体声"| B["音频解码器与重采样器（FFmpeg/miniaudio）"]
+    B -->|"16kHz 单声道 32位浮点数"| C["环形缓冲区 / 内存数组"]
+    C -->|"馈送 PCM 数据"| D["whisper.cpp 核心 (ggml)"]
     D --> E["梅尔频谱图提取"]
     E --> F["Transformer 编码器-解码器"]
     F --> G["文本令牌生成"]
@@ -223,14 +223,14 @@ int main() {
 ```mermaid
 graph LR
     subgraph "音频线程 (高优先级)"
-        A["音频捕获 API (CoreAudio/WASAPI/ALSA)"] -->|回调| B["重采样器 (转为16kHz)"]
+        A["音频捕获 API (CoreAudio/WASAPI/ALSA)"] -->|"回调"| B["重采样器 (转为16kHz)"]
         B --> C["环形缓冲区"]
     end
     
     subgraph "主线程 / 工作线程"
-        C -->|弹出 30ms-1000ms 的块| D["语音活动检测 (VAD)"]
-        D -->|如果检测到语音| E["累积 PCM 缓冲区"]
-        E -->|触发推理| F["whisper_full()"]
+        C -->|"弹出 30ms-1000ms 的块"| D["语音活动检测 (VAD)"]
+        D -->|"如果检测到语音"| E["累积 PCM 缓冲区"]
+        E -->|"触发推理"| F["whisper_full()"]
         F --> G["更新 UI/文本"]
     end
 ```
@@ -298,4 +298,5 @@ $$ N_{\text{threads}} = \min(\text{Physical CPU Cores}, 4 \sim 8) $$
 * **压倒性的优化**: 得益于 `ggml` 的 4-bit 量化，以及 Metal/cuBLAS 等硬件后端的支持。
 
 请务必使用 `whisper.cpp` 来开发在原生环境中高速且安全运行的语音处理应用程序，摆脱对庞大的 Python 环境和云端 API 的依赖。从隐私保护和延迟的角度来看，本地完全闭环的 AI 必将成为未来软件开发中极其重要的核心技术。
+
 

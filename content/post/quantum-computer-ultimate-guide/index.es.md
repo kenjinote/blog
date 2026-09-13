@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->| Medición (observación) | Result
+    Interference -->|"Medición (observación)"| Result
 ```
 
 De este modo, la computación cuántica no representa una mera medida temporal para prolongar la vida útil de los sistemas eludiendo los límites de la física clásica (como los límites de miniaturización o los límites termodinámicos), sino un verdadero cambio de paradigma que reconstruye la definición misma de información y cómputo sobre la base de los postulados de la mecánica cuántica. En el siguiente capítulo, profundizaremos en los detalles de las «compuertas cuánticas» y los «circuitos cuánticos», herramientas matemáticas concretas para manipular libremente esta interferencia cuántica.
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Observación de la magnitud física $A$ (Operador de proyección $P_k$)"]:::measure
     
-    Obs -->| Probabilidad $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
-    Obs -->| Probabilidad $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
-    Obs -->| ... | StateN["Estado colapsado n: $| a_n \rangle$"]:::state
+    Obs -->|"Probabilidad $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["Estado colapsado 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Probabilidad $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["Estado colapsado 2: $| a_2 \rangle$"]:::state
+    Obs -->|"..."| StateN["Estado colapsado n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoherencia (pérdida de interferencia de fase) y estado mixto"]:::measure
     State2 --> Decoherence
@@ -1964,8 +1964,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->| Estado |x⟩ | QFT["QFT† (Transformada cuántica de Fourier inversa)"]
-    Uf -->| Estado |a^x mod N⟩ | Discard["Sin medición (entrelazado con el entorno)"]
+    Uf -->|"Estado"|x⟩ | QFT["QFT† (Transformada cuántica de Fourier inversa)"]
+    Uf -->|"Estado"|a^x mod N⟩ | Discard["Sin medición (entrelazado con el entorno)"]
 
     QFT --> Measure["Medición (k)"]
     Measure --> Classical["Poscálculo clásico por fracciones continuas (deducción de r)"]
@@ -2700,8 +2700,8 @@ Las puertas lógicas cuánticas en este sistema se ejecutan mediante el «trenza
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Trenzado topológico"]
-    A["Eje temporal t"] -->| Línea de universo del anión 1 | B["Operación de intercambio (trenzado)"]
-    C["Línea de universo del anión 2"] -->| Trenzado | B
+    A["Eje temporal t"] -->|"Línea de universo del anión 1"| B["Operación de intercambio (trenzado)"]
+    C["Línea de universo del anión 2"] -->|"Trenzado"| B
     B --> D["Rotación unitaria U del vector de estado"]
     end
 ```
@@ -2867,3 +2867,5 @@ Si esta serie ha servido para transmitir a los lectores la verdadera esencia de 
 
 ---
  **Serie «Principios de las computadoras cuánticas» (12 capítulos) - Fin** 
+
+

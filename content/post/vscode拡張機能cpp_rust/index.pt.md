@@ -36,11 +36,11 @@ graph TD
     VSCode -- Solicitação de Autocompletar / Pular para Definição --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. "Análise AST (Árvore de Sintaxe Abstrata)" .-> CompilerC
-    RustAnalyzer -. "Expansão de Macro / Inferência de Tipo" .-> CompilerR
+    Clangd -. Análise AST (Árvore de Sintaxe Abstrata) .-> CompilerC
+    RustAnalyzer -. Expansão de Macro / Inferência de Tipo .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
-    Debugger -. "ptrace / Despejo de Memória" .-> Executable["Binário Compilado"]
+    Debugger -. ptrace / Despejo de Memória .-> Executable["Binário Compilado"]
 ```
 
 O VSCode em si não entende a metaprogramação de templates do C++ ou os complexos especificadores de tempo de vida (lifetimes) do Rust. O editor foca em exibir o código-fonte e receber as entradas do usuário, delegando o processamento computacionalmente caro, como a análise semântica (Semantic Analysis), inferência de tipos (Type Inference) e verificação de erros, para os "servidores de linguagem" em segundo plano via JSON-RPC.
@@ -388,4 +388,5 @@ Adotando as dez ferramentas e as configurações detalhadas recomendadas neste a
 A configuração inicial e personalização desses arquivos pode tomar um pouco do seu tempo, mas uma vez estabelecido o sistema, o ambiente fluirá maravilhosamente e garantirá um nível de produtividade esmagador. Recomendamos fortemente a todos que usem os conceitos descritos e os modelos de (`settings.json`, `tasks.json` e `launch.json`) aqui presentes como referência e construam o "Ambiente de Desenvolvimento Mais Poderoso Possível".
 
 Desejamos a todos uma programação de sistemas muito segura, rápida e feliz!
+
 

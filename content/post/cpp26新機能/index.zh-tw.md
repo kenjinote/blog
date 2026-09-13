@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["型別：User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["meta::info 的範圍"]
-    C -->| [: member :] | D["直接存取成員 (obj.id, obj.name)"]
+    A["型別：User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["meta::info 的範圍"]
+    C -->|"[: member :]"| D["直接存取成員 (obj.id, obj.name)"]
     D --> E["生成的程式碼 (零額外開銷)"]
 ```
 
@@ -296,9 +296,9 @@ int main() {
 
 ```mermaid
 graph LR
-    S["Sender (任務描述)"] -->|connect| O["操作狀態"]
-    O -->|start| E["執行 (ThreadPool, GPU 等)"]
-    E -->|set_value / set_error / set_stopped| R["Receiver (回呼)"]
+    S["Sender (任務描述)"] -->|"connect"| O["操作狀態"]
+    O -->|"start"| E["執行 (ThreadPool, GPU 等)"]
+    E -->|"set_value / set_error / set_stopped"| R["Receiver (回呼)"]
 ```
 
 Senders 是一種描述「該做什麼」的輕量級藍圖，並且與執行環境（Scheduler）分離。這使得我們可以透過統一的介面，高效率地描述 CPU ThreadPool 或卸載至 GPU 的任務。
@@ -367,5 +367,6 @@ C++26 是一次真正具歷史意義的版本更新，長年來 C++ 程式設計
 
 ---
 *本文是基於 2026 年當時的 C++26 標準化狀況所撰寫。請注意，根據各編譯器的實作狀況，部分語法仍有變更的可能。*
+
 
 

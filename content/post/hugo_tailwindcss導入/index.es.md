@@ -86,11 +86,11 @@ Comprender cómo PostCSS procesa el CSS es de gran ayuda para la resolución de 
 
 ```mermaid
 flowchart TD
-    A["CSS sin procesar (styles.css)"] -->|Parser| B["AST (Árbol de Sintaxis Abstracta)"]
+    A["CSS sin procesar (styles.css)"] -->|"Parser"| B["AST (Árbol de Sintaxis Abstracta)"]
     B --> C["Complemento 1: Tailwind CSS"]
     C --> D["Complemento 2: Autoprefixer"]
     D --> E["Complemento N: cssnano"]
-    E -->|Stringifier| F["CSS Compilado y Optimizado"]
+    E -->|"Stringifier"| F["CSS Compilado y Optimizado"]
 ```
 
 1. **Analizador (Parser)**: Analiza la cadena CSS en bruto (cruda) de entrada y la convierte en una estructura de datos manejable mediante programación, el AST (Árbol de Sintaxis Abstracta).
@@ -272,8 +272,8 @@ Ilustraremos mediante un diagrama de Mermaid cómo el código de la plantilla Go
 
 ```mermaid
 flowchart TD
-    A["assets/css/main.css"] -->|resources.Get| B["Espacio de Memoria de Hugo"]
-    B -->|resources.PostCSS| C["Proceso JIT de PostCSS + Tailwind"]
+    A["assets/css/main.css"] -->|"resources.Get"| B["Espacio de Memoria de Hugo"]
+    B -->|"resources.PostCSS"| C["Proceso JIT de PostCSS + Tailwind"]
     C --> D{"hugo.IsProduction ?"}
     D -- Sí (Entorno de Producción) --> E["minify (Eliminación de espacios en blanco y saltos de línea)"]
     E --> F["fingerprint (Cálculo de hash)"]
@@ -412,4 +412,5 @@ La ventaja sobresaliente de esta arquitectura es que **"la configuración requie
 Además, dado que el tamaño del CSS de salida siempre se minimiza, esto conduce directamente a una mejora en la puntuación de los Core Web Vitals, y también funciona de manera muy favorable desde la perspectiva del SEO.
 
 La combinación de Hugo y Tailwind CSS seguirá siendo una de las "mejores opciones" en cada proyecto, desde blogs tecnológicos personales hasta sitios corporativos a gran escala. ¡Por favor, asegúrate de utilizar esta poderosa cadena de herramientas para disfrutar de una cómoda vida de desarrollo web!
+
 

@@ -81,18 +81,18 @@ La méthode de division est tellement complexe et dispersée que l'état résult
 
 ```mermaid
 graph TD
-    S["Sphère d'origine S (Volume V)"] -->|Division spéciale| P1["Fragment 1 (Volume non mesurable)"]
+    S["Sphère d'origine S (Volume V)"] -->|"Division spéciale"| P1["Fragment 1 (Volume non mesurable)"]
     S --> P2["Fragment 2 (Volume non mesurable)"]
     S --> P3["Fragment 3 (Volume non mesurable)"]
     S --> P4["Fragment 4 (Volume non mesurable)"]
     S --> P5["Fragment 5 (Volume non mesurable)"]
     
-    P1 -->|Rotation / Translation| S1["Nouvelle sphère 1 (Volume V)"]
-    P2 -->|Rotation / Translation| S1
-    P3 -->|Rotation / Translation| S1
+    P1 -->|"Rotation / Translation"| S1["Nouvelle sphère 1 (Volume V)"]
+    P2 -->|"Rotation / Translation"| S1
+    P3 -->|"Rotation / Translation"| S1
     
-    P4 -->|Rotation / Translation| S2["Nouvelle sphère 2 (Volume V)"]
-    P5 -->|Rotation / Translation| S2
+    P4 -->|"Rotation / Translation"| S2["Nouvelle sphère 2 (Volume V)"]
+    P5 -->|"Rotation / Translation"| S2
     
     style S fill:#ffddaa,stroke:#333,stroke-width:2px
     style S1 fill:#aaddff,stroke:#333,stroke-width:2px
@@ -136,3 +136,4 @@ Puisque le monde physique dans lequel nous vivons est constitué de "particules 
 Cependant, sur la toile des "mathématiques" créée par le cerveau humain, la taille d'un point est nulle, et des opérations infinies sont permises.
 
 Le paradoxe de Banach-Tarski nous enseigne **à quel point le concept de "l'infini" surpasse allègrement notre simple intuition humaine**, et on peut dire que c'est l'un des plus grands chefs-d'œuvre des mathématiques modernes.
+

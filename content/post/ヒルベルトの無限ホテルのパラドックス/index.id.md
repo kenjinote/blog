@@ -60,11 +60,11 @@ graph LR
         NewR4["Kamar 4<br>(Tamu C)"]
     end
     
-    R1 -->|Pindah| NewR2
-    R2 -->|Pindah| NewR3
-    R3 -->|Pindah| NewR4
+    R1 -->|"Pindah"| NewR2
+    R2 -->|"Pindah"| NewR3
+    R3 -->|"Pindah"| NewR4
     
-    NewGuest["Tamu Baru"] -->|Check-in| NewR1
+    NewGuest["Tamu Baru"] -->|"Check-in"| NewR1
     
     style NewR1 fill:#aaffaa,stroke:#333,stroke-width:2px
     style NewGuest fill:#ffaaaa,stroke:#333,stroke-width:2px
@@ -101,15 +101,15 @@ Dan secara ajaib, **"semua kamar bernomor ganjil (kamar 1, kamar 3, kamar 5...)"
 ```mermaid
 graph LR
     subgraph "Tamu Saat Ini"
-        G1["Tamu 1"] -->|Kali 2| R2["Kamar 2"]
-        G2["Tamu 2"] -->|Kali 2| R4["Kamar 4"]
-        G3["Tamu 3"] -->|Kali 2| R6["Kamar 6"]
+        G1["Tamu 1"] -->|"Kali 2"| R2["Kamar 2"]
+        G2["Tamu 2"] -->|"Kali 2"| R4["Kamar 4"]
+        G3["Tamu 3"] -->|"Kali 2"| R6["Kamar 6"]
     end
     
     subgraph "Tamu Baru dari Bus (Tak Terhingga)"
-        N1["Tamu Baru 1"] -->|Ke Ganjil| R1["Kamar 1 (Kosong)"]
-        N2["Tamu Baru 2"] -->|Ke Ganjil| R3["Kamar 3 (Kosong)"]
-        N3["Tamu Baru 3"] -->|Ke Ganjil| R5["Kamar 5 (Kosong)"]
+        N1["Tamu Baru 1"] -->|"Ke Ganjil"| R1["Kamar 1 (Kosong)"]
+        N2["Tamu Baru 2"] -->|"Ke Ganjil"| R3["Kamar 3 (Kosong)"]
+        N3["Tamu Baru 3"] -->|"Ke Ganjil"| R5["Kamar 5 (Kosong)"]
     end
     
     style R1 fill:#aaffaa,stroke:#333
@@ -180,3 +180,4 @@ Semua intuisi yang dianggap wajar ini dikhianati dengan indahnya.
 Dunia tak terhingga adalah harta karun dari paradoks (kebenaran yang bertentangan dengan intuisi). Bukannya takut pada paradoks ini, para matematikawan justru menaklukkannya dengan kekuatan logika, mengklasifikasikannya, dan menciptakan sistem yang indah dari teori himpunan modern.
 
 Lain kali jika Anda ditolak dan diberitahu bahwa "Hotel sudah penuh," cobalah bayangkan, "Seandainya saja hotel ini adalah Hotel Tak Terhingga Hilbert."
+

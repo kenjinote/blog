@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["类型: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["meta::info的范围"]
-    C -->| [: member :] | D["直接成员访问 (obj.id, obj.name)"]
+    A["类型: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["meta::info的范围"]
+    C -->|"[: member :]"| D["直接成员访问 (obj.id, obj.name)"]
     D --> E["生成的代码 (零开销)"]
 ```
 
@@ -296,9 +296,9 @@ int main() {
 
 ```mermaid
 graph LR
-    S["发送者 (任务描述)"] -->|connect| O["操作状态"]
-    O -->|start| E["执行 (线程池, GPU等)"]
-    E -->|set_value / set_error / set_stopped| R["接收者 (回调)"]
+    S["发送者 (任务描述)"] -->|"connect"| O["操作状态"]
+    O -->|"start"| E["执行 (线程池, GPU等)"]
+    E -->|"set_value / set_error / set_stopped"| R["接收者 (回调)"]
 ```
 
 Senders是描述“要做什么”的轻量级蓝图，并与执行上下文（Scheduler）相分离。这使得能够以统一的接口高效编写向CPU线程池或GPU卸载（Offload）任务的代码。
@@ -367,5 +367,6 @@ C++26是一个历史性的版本，长期以来C++程序员梦寐以求的“梦
 
 ---
 *本文基于2026年C++26标准化的当前情况编写。请注意，根据各编译器的实现进度，部分语法可能会发生变化。*
+
 
 

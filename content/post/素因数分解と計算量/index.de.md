@@ -264,7 +264,7 @@ graph LR
     end
 
     C1 --> C2
-    C2 -. "Grenze der klassischen Physik" .-> Q1
+    C2 -. Grenze der klassischen Physik .-> Q1
 ```
 
 In Shors Algorithmus wird der Prozess der „Periodenfindung“, der bei klassischen Algorithmen einen Engpass darstellt, durch die „Quanten-Fourier-Transformation (QFT)“ unter Verwendung von Quantenverschränkung und Quantenüberlagerung massiv parallel und im Bruchteil einer Sekunde berechnet.
@@ -285,3 +285,4 @@ In diesem Artikel haben wir von den Grundlagen der Zeitkomplexität (Big-O-Notat
 * Mit dem Aufkommen von **Quantencomputern und Shors Algorithmus** wird die Primfaktorzerlegung in polynomieller Zeit jedoch theoretisch möglich, und die Kryptographie ist dabei, in das nächste Zeitalter (Post-Quanten-Kryptographie) überzugehen.
 
 Die Tatsache, dass ein abstraktes Konzept wie die Komplexität von Algorithmen direkt mit der Sicherheit unseres Lebens verbunden ist, gehört zu den faszinierendsten und spannendsten Aspekten der Informatik und Mathematik. Bitte behalten Sie die zukünftigen technologischen Fortschritte, insbesondere die Entwicklungen bei Quantencomputern und den Wandel in der Kryptographie, genau im Auge.
+

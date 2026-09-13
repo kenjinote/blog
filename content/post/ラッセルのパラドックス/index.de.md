@@ -44,8 +44,8 @@ Der Barbier geriet völlig in Panik und konnte keine von beiden Handlungen ausf�
 graph TD
     Barber["Barbier: Sollte er sich selbst rasieren?"]
     
-    Barber -->|JA: Er rasiert sich selbst| Cond1["Regelverstoß!<br>(Er darf niemanden rasieren, der sich selbst rasiert)"]
-    Barber -->|NEIN: Er rasiert sich nicht selbst| Cond2["Regelverstoß!<br>(Er muss jeden rasieren, der sich nicht selbst rasiert)"]
+    Barber -->|"JA: Er rasiert sich selbst"| Cond1["Regelverstoß!<br>(Er darf niemanden rasieren, der sich selbst rasiert)"]
+    Barber -->|"NEIN: Er rasiert sich nicht selbst"| Cond2["Regelverstoß!<br>(Er muss jeden rasieren, der sich nicht selbst rasiert)"]
     
     Cond1 --> Paradox["Widerspruch (Paradoxon)"]
     Cond2 --> Paradox
@@ -140,7 +140,7 @@ graph LR
         Strict["Nur das, was strengen Regeln (Axiomen) folgt,<br>ist eine 'Menge'"] --> Safe["Der Widerspruch R wird nicht als 'Menge'<br>anerkannt und ist daher sicher!"]
     end
     
-    Monster -.->|Krise der Mathematikwelt| Strict
+    Monster -.->|"Krise der Mathematikwelt"| Strict
 ```
 
 ---
@@ -153,3 +153,4 @@ Paradoxien, die auf den ersten Blick wie bloße Haarspalterei oder Wortspiele wi
 
 Wenn das Genie Russell diesen "Barbier-Bug" nicht bemerkt hätte, hätten sich die moderne Mathematik und die Informatik, die eine Erweiterung ihrer Logik ist, vielleicht mit einem fatalen Widerspruch irgendwo weiterentwickelt.
 Ein Paradoxon ist die anregendste Medizin, die uns die Grenzen der menschlichen Logik lehrt.
+

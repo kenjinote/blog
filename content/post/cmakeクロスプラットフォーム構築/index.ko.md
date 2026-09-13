@@ -143,7 +143,7 @@ graph TD
     Root --> Inc["include/"]
     Root --> CMake["CMakeLists.txt"]
     
-    Root -. "빌드 디렉토리 생성" .-> Build["build/ (아웃 오브 소스)"]
+    Root -. 빌드 디렉토리 생성 .-> Build["build/ (아웃 오브 소스)"]
     Build --> Obj["CMakeFiles/ (오브젝트 파일, 캐시)"]
     Build --> Bin["바이너리 (MyApp.exe)"]
     Build --> Gen["생성된 Makefile / build.ninja"]
@@ -369,4 +369,5 @@ CMake를 사용한 크로스 플랫폼 C++ 빌드 환경의 구축 절차에 대
 7. **수리적 접근**: 암달의 법칙을 의식하여, 의존 관계를 줄이고 병렬 컴파일의 효율을 높인다.
 
 처음에는 난해하게 느껴지는 CMake이지만, 타겟과 프로퍼티의 개념만 잡고 나면 아무리 복잡하고 거대한 C++ 프로젝트라 하더라도 정돈된 빌드 환경을 유지할 수 있습니다. 꼭 본 문서를 참고하여, 최신 모던 CMake 표기법으로 C++ 개발 환경을 구축해 보시기 바랍니다.
+
 

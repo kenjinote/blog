@@ -30,7 +30,7 @@ Der moderne Entwicklungsprozess setzt **Cloud-Native** und **KI-gesteuerte** Ans
 
 ```mermaid
 graph TD
-    A["Legacy SIer-Entwicklungsmodell"] -->|Paradigmenwechsel| B["Übergangsphase (Agile Einführung, Lift & Shift)"]
+    A["Legacy SIer-Entwicklungsmodell"] -->|"Paradigmenwechsel"| B["Übergangsphase (Agile Einführung, Lift & Shift)"]
     B --> C["Cloud-Native (Microservices/Container)"]
     C --> D["KI & Datengetriebene Architektur (MLOps)"]
     D --> E["Integrierte Plattform für generative KI (Autonome KI-Agenten)"]
@@ -157,10 +157,10 @@ Letztendlich sind es bei der Entwicklung großer Systeme "zwischenmenschliche Be
 
 ```mermaid
 graph LR
-    A["Einfacher Coder"] -->|Ersatz durch KI| B["Rückgang der Nachfrage"]
-    A -->|Strategischer Wechsel| C["Systemarchitekt"]
-    A -->|Strategischer Wechsel| D["Domänenexperte"]
-    A -->|Strategischer Wechsel| E["KI-Integrator"]
+    A["Einfacher Coder"] -->|"Ersatz durch KI"| B["Rückgang der Nachfrage"]
+    A -->|"Strategischer Wechsel"| C["Systemarchitekt"]
+    A -->|"Strategischer Wechsel"| D["Domänenexperte"]
+    A -->|"Strategischer Wechsel"| E["KI-Integrator"]
     
     C --> F["Hohe Nachfrage & Hohe Vergütung (Gewinner ab 2026)"]
     D --> F
@@ -182,6 +182,7 @@ KI nimmt uns nicht unsere Jobs weg, sie ist lediglich ein Werkzeug, das es uns e
 
 Jetzt ist es an der Zeit, Ihren Karriereweg zu überdenken und den Kurs in Richtung des nächsten Paradigmas zu ändern.
 Sind Sie bereit, sich selbst zu "modernisieren"?
+
 
 
 

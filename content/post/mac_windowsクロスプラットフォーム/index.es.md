@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (Independiente de la Plataforma)"] --> B("Motor CMake")
     B --> C{"Sistema Operativo Objetivo"}
     
-    C -->|Windows| D["Solución de Visual Studio / MSBuild"]
-    C -->|macOS| E["Proyecto Xcode / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Solución de Visual Studio / MSBuild"]
+    C -->|"macOS"| E["Proyecto Xcode / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Ejecutable de Windows (.exe)"]
     E --> H["Ejecutable de macOS (Mach-O)"]
@@ -384,3 +384,4 @@ Existen una amplia gama de desafíos arraigados en los antecedentes históricos 
 8.  **CI/CD**: Introducir construcciones matriciales (Matrix build) para automatizar una construcción limpia y la realización de pruebas en todos los SO objetivo, y así eliminar dependencias en personas específicas.
 
 En la actualidad, potentes frameworks como Electron, Tauri, .NET, etc. absorben muchas de estas diferencias, pero el conocimiento del comportamiento nativo del sistema operativo subyacente (como el sistema de archivos y codificación) sigue siendo indispensable a la hora de solucionar problemas graves de rendimiento y errores complejos. Compartiendo y reforzando rigurosamente estas mejores prácticas en todo el equipo desde las fases iniciales de un proyecto, se puede reducir de manera significativa la pérdida de tiempo depurando a causa de diferencias en los SO, y enfocarse en la creación de valor intrínseco del software.
+

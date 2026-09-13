@@ -163,10 +163,10 @@ This is where **Dependency Injection (DI)** and interface mocking using **Google
 
 ```mermaid
 flowchart LR
-    Test["Unit Test"] -->|injects mock| Target["Target Service"]
-    Target -->|depends on| Interface["Interface (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|implements| Interface
-    Test -->|configures| Mock
+    Test["Unit Test"] -->|"injects mock"| Target["Target Service"]
+    Target -->|"depends on"| Interface["Interface (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"implements"| Interface
+    Test -->|"configures"| Mock
 ```
 
 ### 5.1 Defining the Interface and Implementing the Target Class
@@ -343,3 +343,4 @@ In this article, we explained in detail how to introduce Test-Driven Development
 4. Visualizing test coverage with **gcov/lcov**
 
 Although TDD is an approach that takes time to master, its return on investment is immeasurable in system programming like C++, where both performance and safety are required. By all means, start practicing TDD little by little in your next project to obtain robust and maintainable C++ code.
+

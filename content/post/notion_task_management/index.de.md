@@ -48,9 +48,9 @@ flowchart TD
     T["Tasks (Aufgaben-DB)"]
     N["Notes (Zettelkasten-DB)"]
 
-    P -->| 1:N-Beziehung | T
-    T -->| N:N-Beziehung | N
-    P -->| 1:N-Beziehung | N
+    P -->|"1:N-Beziehung"| T
+    T -->|"N:N-Beziehung"| N
+    P -->|"1:N-Beziehung"| N
 ```
 
 ### Eigenschaften der Projects-Datenbank
@@ -165,9 +165,9 @@ flowchart TD
     NOTION["Notion API"]
     DB["Notion Tasks DB"]
 
-    GH -->| Webhook senden | GHA
-    GHA -->| Python-Skript ausführen | NOTION
-    NOTION -->| DB aktualisieren・Aufgabe hinzufügen | DB
+    GH -->|"Webhook senden"| GHA
+    GHA -->|"Python-Skript ausführen"| NOTION
+    NOTION -->|"DB aktualisieren・Aufgabe hinzufügen"| DB
 ```
 
 ### Automatische Erstellung von Notion-Aufgaben aus GitHub-Issues
@@ -273,6 +273,7 @@ Egal wie fortschrittlich ein System oder Tool aufgebaut ist, wenn die Personen, 
 Die Aufgabenverwaltung mit Notion geht weit über eine einfache To-Do-Liste hinaus. Durch die Kombination von Informationsorganisation durch die PARA-Methode, Wissensvernetzung durch den Zettelkasten und Engineering mit der Notion API können Sie ein „Zweites Gehirn (Second Brain)“ aufbauen, das die persönliche Entwicklung und das Schreiben von Blogs stark fördert.
 
 Die Ersteinrichtung dauert einige Zeit, aber sobald das System läuft, sinkt die kognitive Belastung der Aufgabenverwaltung drastisch, und Sie können sich voll und ganz auf das konzentrieren, was wirklich wichtig ist: „Code schreiben“ und „Texte verfassen“. Bitte nutzen Sie diesen Artikel als Referenz, um Ihren eigenen ultimativen Notion-Workspace zu erstellen.
+
 
 
 

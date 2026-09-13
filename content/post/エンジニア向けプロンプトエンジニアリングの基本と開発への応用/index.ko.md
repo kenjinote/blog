@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["외부 환경 (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (툴로부터의 실행 결과 및 에러 로그)"]
     Observation --> Thought
-    Thought -->|충분한 정보가 모임| Finish["Finish (최종 답변 및 코드 출력)"]
+    Thought -->|"충분한 정보가 모임"| Finish["Finish (최종 답변 및 코드 출력)"]
 ```
 
 ### 4.2 Function Calling (Tool Use)에 의한 구현
@@ -387,3 +387,4 @@ AI가 코드를 작성하는 시대에 '프로그래밍의 종말'이 부르짖�
 
 ---
 *Generated using Prompt Engineering Techniques.*
+

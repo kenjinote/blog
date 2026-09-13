@@ -75,13 +75,13 @@ graph TD
     Start["Início da escolha"] --> Logic_You["Seu pensamento racional"]
     Start --> Logic_Friend["Pensamento racional do amigo"]
     
-    Logic_You -->|Confessar é melhor se o outro calar<br>Confessar é melhor se o outro confessar| Betray_You["Você escolhe confessar (trair)"]
-    Logic_Friend -->|Confessar é melhor se o outro calar<br>Confessar é melhor se o outro confessar| Betray_Friend["O amigo escolhe confessar (trair)"]
+    Logic_You -->|"Confessar é melhor se o outro calar<br>Confessar é melhor se o outro confessar"| Betray_You["Você escolhe confessar (trair)"]
+    Logic_Friend -->|"Confessar é melhor se o outro calar<br>Confessar é melhor se o outro confessar"| Betray_Friend["O amigo escolhe confessar (trair)"]
     
     Betray_You --> Result["Resultado: Ambos confessam (-5, -5)"]
     Betray_Friend --> Result
     
-    Ideal["Ideal: Ambos calados (-1, -1)"] -.->|Racionalidade individual atrapalha<br>e impede de alcançar| Result
+    Ideal["Ideal: Ambos calados (-1, -1)"] -.->|"Racionalidade individual atrapalha<br>e impede de alcançar"| Result
     
     style Result fill:#ff9999,stroke:#333,stroke-width:2px
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
@@ -134,11 +134,11 @@ A razão pela qual essa estratégia é forte se deve a quatro características: 
 graph LR
     Start["1ª vez: Cooperar incondicionalmente"] --> Round2
     
-    Round2["Observar a ação do oponente"] -->|O oponente cooperou| Act_Coop["Eu também coopero"]
-    Round2 -->|O oponente traiu| Act_Betray["Eu também traio (Retaliação)"]
+    Round2["Observar a ação do oponente"] -->|"O oponente cooperou"| Act_Coop["Eu também coopero"]
+    Round2 -->|"O oponente traiu"| Act_Betray["Eu também traio (Retaliação)"]
     
     Act_Coop --> Round2
-    Act_Betray -->|Se o oponente refletir<br>e voltar a cooperar| Act_Coop
+    Act_Betray -->|"Se o oponente refletir<br>e voltar a cooperar"| Act_Coop
 ```
 
 Mesmo nas relações humanas e na comunidade internacional, se uma relação de longo prazo for a premissa, é possível superar o Dilema do Prisioneiro e construir relações de cooperação ao compartilhar regras como as da estratégia "Olho por Olho", de **"basicamente cooperar, mas penalizar a traição"**.
@@ -151,3 +151,4 @@ A racionalidade individual de "querer ser o único a levar vantagem" ou "não qu
 Mas, ao mesmo tempo, a Teoria dos Jogos nos ensina que, desde que exista a condição de que "a relação perdure a longo prazo", **"confiar e cooperar um com o outro" é, no fim das contas, a estratégia mais racional para maximizar os próprios benefícios**.
 
 Na próxima vez que você hesitar pensando "será que eu dou um jeitinho só para me dar bem?", lembre-se da matriz de recompensas do Dilema do Prisioneiro. Buscar o lucro imediato através de uma "traição racional" pode ser a escolha mais irracional a longo prazo.
+

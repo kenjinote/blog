@@ -139,17 +139,17 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ```mermaid
 graph TD
-    User["호스트 머신 (브라우저/curl)"] -->|Localhost:8000| Web["FastAPI 웹 컨테이너"]
+    User["호스트 머신 (브라우저/curl)"] -->|"Localhost:8000"| Web["FastAPI 웹 컨테이너"]
     
     subgraph "Docker 브리지 네트워크 (app-network)"
-        Web -->|포트 5432| DB["PostgreSQL 컨테이너"]
-        Web -->|포트 6379| Redis["Redis 컨테이너"]
+        Web -->|"포트 5432"| DB["PostgreSQL 컨테이너"]
+        Web -->|"포트 6379"| Redis["Redis 컨테이너"]
     end
     
     DB --> Volume1["명명된 볼륨 (postgres_data)"]
     Redis --> Volume2["명명된 볼륨 (redis_data)"]
     
-    HostDir["호스트 소스 코드 (./src)"] -.->|바인드 마운트| Web
+    HostDir["호스트 소스 코드 (./src)"] -.->|"바인드 마운트"| Web
 ```
 
 ### docker-compose.yml 의 구현 및 상세 해설
@@ -416,3 +416,4 @@ Docker, Docker Compose, 그리고 VSCode DevContainers를 결합함으로써 "�
 IaC의 패러다임을 로컬 환경에 도입하는 것은 단순히 초기 설정 시간을 단축하는 것에 그치지 않습니다. 인프라 설정 변경에 대한 불안을 해소하고 새로운 기술 스택의 실험을 용이하게 하며 CI/CD 파이프라인으로의 원활한 전환을 가능하게 하는 등, 개발 사이클 전체의 속도와 품질을 비약적으로 향상시킵니다.
 
 본 문서에서 해설한 멀티 스테이지 빌드에 의한 이미지 크기 최적화나, 상태 확인을 사용한 의존성 제어, 레이어 캐시를 의식한 Dockerfile 작성 등의 모범 사례를 활용하여, 꼭 여러분의 프로젝트에도 최고의 개발 경험(DX: Developer Experience)을 도입해 보시기 바랍니다.
+

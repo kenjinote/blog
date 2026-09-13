@@ -64,15 +64,15 @@ Independentemente do caminho escolhido, a lógica entra em colapso.
 graph TD
     A["Palavra 'Heterológica' (Heterological)"] --> B{"Em qual é classificada?"}
     
-    B -->|É autológica| C["Definição: Possui a propriedade do seu próprio significado"]
+    B -->|"É autológica"| C["Definição: Possui a propriedade do seu próprio significado"]
     C --> D["Seu significado é 'heterológica'"]
     D --> E["Resultado: É heterológica!"]
-    E -->|Contradição| B
+    E -->|"Contradição"| B
     
-    B -->|É heterológica| F["Definição: Não possui a propriedade do seu próprio significado"]
+    B -->|"É heterológica"| F["Definição: Não possui a propriedade do seu próprio significado"]
     F --> G["Seu significado é 'heterológica'"]
     G --> H["Resultado: É autológica!"]
-    H -->|Contradição| B
+    H -->|"Contradição"| B
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
@@ -102,3 +102,4 @@ Quando a linguagem se refere a si própria (autorreferência), existe sempre o p
 Este não é um problema exclusivo da filosofia ou da linguística. No campo da ciência da computação e da inteligência artificial, enfrentamos barreiras lógicas semelhantes quando um programa tenta avaliar ou modificar o seu próprio código, ou quando modelos de processamento de linguagem natural tentam interpretar contradições de significado.
 
 O paradoxo de Grelling-Nelson é um experimento mental que visualiza de forma brilhante os "bugs" (limites) inerentes ao próprio sistema da "linguagem".
+

@@ -141,8 +141,8 @@ Wann sollten fortschrittliche Architekturmuster wie das Saga-Muster oder CQRS (C
 flowchart LR
     Client["Client"] --> API["API Gateway"]
     API --> Order["Bestellservice (Kontext)"]
-    Order -. "Asynchrones Ereignis (Kafka)" .-> Inventory["Bestandsservice"]
-    Order -. "Asynchrones Ereignis (Kafka)" .-> Payment["Zahlungsservice"]
+    Order -. Asynchrones Ereignis (Kafka) .-> Inventory["Bestandsservice"]
+    Order -. Asynchrones Ereignis (Kafka) .-> Payment["Zahlungsservice"]
     
     Inventory --> DB1["Bestands-DB"]
     Payment --> DB2["Zahlungs-DB"]
@@ -207,6 +207,7 @@ Zukünftige Ingenieure sollten sich nicht über kleinere Spezifikationen einer b
 
 Ein wahrer Ingenieur ist keine Person, die Code schreibt, sondern jemand, der Probleme löst.
 Für diejenigen, die weiterhin ihre „menschlichen Ingenieurfähigkeiten“ – Domänenmodellierung, skalierbares Architekturdesign, Kommunikation mit Stakeholdern und Debugging komplexer Systeme – verfeinern, wird die KI kein Feind sein, der Arbeitsplätze stiehlt, sondern der stärkste Partner, der ihre eigene Kreativität und Produktivität um ein Vielfaches steigert.
+
 
 
 

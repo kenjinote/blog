@@ -56,11 +56,11 @@ graph TD
     A["Total Populasi (1.000.000 orang)"] --> B["Orang Sakit (100 orang)"]
     A --> C["Orang Sehat (999.900 orang)"]
     
-    B -->|99% Benar| B1["Positif Benar (99 orang)"]
-    B -->|1% Salah| B2["Negatif Palsu (1 orang)"]
+    B -->|"99% Benar"| B1["Positif Benar (99 orang)"]
+    B -->|"1% Salah"| B2["Negatif Palsu (1 orang)"]
     
-    C -->|99% Benar| C1["Negatif Benar (989.901 orang)"]
-    C -->|1% Salah| C2["Positif Palsu (9.999 orang)"]
+    C -->|"99% Benar"| C1["Negatif Benar (989.901 orang)"]
+    C -->|"1% Salah"| C2["Positif Palsu (9.999 orang)"]
     
     B1 -.-> D{"Total orang yang dinyatakan 'Positif': 10.098 orang"}
     C2 -.-> D
@@ -103,3 +103,4 @@ Ilusi ini menyebabkan kepanikan dan penilaian yang salah tidak hanya dalam medis
   Meskipun Anda merasa bahaya saat melihat berita bahwa "XX% dari mobil yang menyebabkan kecelakaan dikemudikan oleh lansia", jika Anda tidak mempertimbangkan "proporsi lansia dari total pengemudi di jalan (tingkat dasar)", Anda tidak dapat mengetahui apakah kelompok usia tertentu benar-benar lebih rentan menyebabkan kecelakaan.
 
 "Kekeliruan Tingkat Dasar" mengajarkan kita pentingnya pemikiran statistik: justru ketika kita melihat angka yang mengejutkan atau kasus individual, kita harus kembali pada pertanyaan **"Seberapa besar kemungkinan hal itu terjadi dalam populasi secara keseluruhan pada awalnya? (tingkat dasar)"**.
+

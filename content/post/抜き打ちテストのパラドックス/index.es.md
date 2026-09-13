@@ -59,15 +59,15 @@ La prueba del estudiante A utiliza una técnica matemática que consiste en **ra
 
 ```mermaid
 graph TD
-    Fri["Mañana del viernes<br>（sin examen de lun a jue）"] -->|Predecible que 'solo queda el viernes'| NoFri["Examen imposible el viernes"]
+    Fri["Mañana del viernes<br>（sin examen de lun a jue）"] -->|"Predecible que 'solo queda el viernes'"| NoFri["Examen imposible el viernes"]
     
-    Thu["Mañana del jueves<br>（sin examen de lun a mié）"] -->|Predecible que 'como no es viernes, solo queda hoy'| NoThu["Examen imposible el jueves"]
+    Thu["Mañana del jueves<br>（sin examen de lun a mié）"] -->|"Predecible que 'como no es viernes, solo queda hoy'"| NoThu["Examen imposible el jueves"]
     
-    Wed["Mañana del miércoles"] -->|Predecible que 'como no es jueves ni viernes, solo queda hoy'| NoWed["Examen imposible el miércoles"]
+    Wed["Mañana del miércoles"] -->|"Predecible que 'como no es jueves ni viernes, solo queda hoy'"| NoWed["Examen imposible el miércoles"]
     
-    Tue["Mañana del martes"] -->|Predecible de la misma manera| NoTue["Examen imposible el martes"]
+    Tue["Mañana del martes"] -->|"Predecible de la misma manera"| NoTue["Examen imposible el martes"]
     
-    Mon["Mañana del lunes"] -->|Predecible de la misma manera| NoMon["Examen imposible el lunes"]
+    Mon["Mañana del lunes"] -->|"Predecible de la misma manera"| NoMon["Examen imposible el lunes"]
     
     NoFri -.-> Thu
     NoThu -.-> Wed
@@ -142,3 +142,4 @@ La "paradoja del examen sorpresa" expresa de manera brillante la **dificultad de
 
 Lo que consideramos un "razonamiento perfecto" podría ser en realidad solo un castillo de arena construido sobre la creencia infundada de que "la otra parte seguirá las reglas absolutamente".
 La próxima vez que el profesor diga "Haré un examen sorpresa", parece que lo más racional será dejar de darle vueltas a la lógica y simplemente estudiar tranquilamente todos los días.
+

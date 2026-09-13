@@ -242,15 +242,15 @@ $$ ROI = \frac{\sum_{t=1}^{T} \left( Rev_{ad}(t) + Val_{brand}(t) + Val_{skill}(
 ```mermaid
 flowchart TD
     A["开发者 (Git Push)"] --> B["GitHub 仓库"]
-    B -->|Webhook| C["GitHub Actions (CI/CD)"]
-    C -->|构建| D["静态网站生成器 (Hugo/Gatsby)"]
-    D -->|部署| E["托管服务 (Vercel / Cloudflare Pages)"]
-    D -->|生成| F["RSS 订阅 (index.xml)"]
-    F -->|轮询获取| G["Zapier / IFTTT / Make"]
-    G -->|API 调用| H["X (Twitter) 自动发布"]
-    G -->|API 调用| I["LinkedIn 文章发布"]
-    G -->|API 调用| J["Discord / Slack 社区 Webhook"]
-    C -->|Actions 脚本| K["Qiita / Zenn 跨平台发布 API"]
+    B -->|"Webhook"| C["GitHub Actions (CI/CD)"]
+    C -->|"构建"| D["静态网站生成器 (Hugo/Gatsby)"]
+    D -->|"部署"| E["托管服务 (Vercel / Cloudflare Pages)"]
+    D -->|"生成"| F["RSS 订阅 (index.xml)"]
+    F -->|"轮询获取"| G["Zapier / IFTTT / Make"]
+    G -->|"API 调用"| H["X (Twitter) 自动发布"]
+    G -->|"API 调用"| I["LinkedIn 文章发布"]
+    G -->|"API 调用"| J["Discord / Slack 社区 Webhook"]
+    C -->|"Actions 脚本"| K["Qiita / Zenn 跨平台发布 API"]
 ```
 
 ### 5.2 自动化流水线的构建要点
@@ -278,6 +278,7 @@ flowchart TD
 5. 通过 CI/CD 和 Zapier 联动实现分发的完全自动化
 
 如果能将这些构建为一个系统，那么技术博客将成为强有力推动你个人职业发展的最强资产。对于正为访问量停滞而苦恼的工程师们，请务必从今天开始尝试“博客的增长黑客”。在开发业务中积累的编程技能和架构设计能力，必将成为你运营博客的最大武器。
+
 
 
 

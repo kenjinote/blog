@@ -255,8 +255,8 @@ graph TD
     Start["Inicialização: R0 = O, R1 = P"] --> LoopStart["Para cada bit i (a partir do mais significativo)"]
     LoopStart --> Cond{"Qual é o valor de k_i?"}
     
-    Cond -->|0| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
-    Cond -->|1| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
+    Cond -->|"0"| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
+    Cond -->|"1"| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
     
     Branch0 --> LoopEnd["Ir para o próximo bit"]
     Branch1 --> LoopEnd
@@ -445,4 +445,6 @@ Este artigo abordou os seguintes pontos cruciais.
 Não é recomendado ("Don't roll your own crypto") criar suas próprias bibliotecas criptográficas que operem efetivamente no ambiente de produção, uma vez que o risco de segurança é extremamente alto. No entanto, compreender a fundo o seu algoritmo interno e o contexto matemático que operem lá dentro deveria ser uma arma indubitavelmente forte para qualquer engenheiro que queira criar e operar um sistema ainda mais seguro e com maior desempenho.
 
 No próximo artigo, aprofundaremos um pouco mais sobre o mecanismo do **ECDSA (Elliptic Curve Digital Signature Algorithm)**, um algoritmo de assinatura digital que usa essas curvas elípticas, bem como a **Assinatura de Schnorr** usada no Bitcoin.
+
+
 

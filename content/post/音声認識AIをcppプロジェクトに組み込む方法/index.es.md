@@ -72,9 +72,9 @@ Diseñemos un pipeline de procesamiento de audio en una aplicación C++. Es el f
 
 ```mermaid
 graph TD
-    A["Fuente de Audio (Micrófono/Archivo)"] -->|Bytes Crudos, ej. 48kHz Estéreo| B["Decodificador de Audio & Resampler (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-bit Float| C["Búfer Circular / Arreglo de Memoria"]
-    C -->|Alimentar Datos PCM| D["Núcleo de whisper.cpp (ggml)"]
+    A["Fuente de Audio (Micrófono/Archivo)"] -->|"Bytes Crudos, ej. 48kHz Estéreo"| B["Decodificador de Audio & Resampler (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-bit Float"| C["Búfer Circular / Arreglo de Memoria"]
+    C -->|"Alimentar Datos PCM"| D["Núcleo de whisper.cpp (ggml)"]
     D --> E["Extracción del Espectrograma de Mel"]
     E --> F["Codificador-Decodificador Transformer"]
     F --> G["Generación de Tokens de Texto"]
@@ -223,14 +223,14 @@ Para implementar esto, es indispensable gestionar el flujo de audio mediante una
 ```mermaid
 graph LR
     subgraph "Hilo de Audio (Alta Prioridad)"
-        A["API de Captura de Audio (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["Resampler (a 16kHz)"]
+        A["API de Captura de Audio (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["Resampler (a 16kHz)"]
         B --> C["Búfer Circular"]
     end
     
     subgraph "Hilo Principal / Hilo de Trabajo"
-        C -->|Extraer fragmento de 30ms-1000ms| D["Detección de Actividad de Voz (VAD)"]
-        D -->|Si se detecta voz| E["Acumular Búfer PCM"]
-        E -->|Activar Inferencia| F["whisper_full()"]
+        C -->|"Extraer fragmento de 30ms-1000ms"| D["Detección de Actividad de Voz (VAD)"]
+        D -->|"Si se detecta voz"| E["Acumular Búfer PCM"]
+        E -->|"Activar Inferencia"| F["whisper_full()"]
         F --> G["Actualizar UI/Texto"]
     end
 ```
@@ -298,4 +298,5 @@ En este artículo, hemos explicado en detalle cómo utilizar `whisper.cpp` para 
 * **Optimización asombrosa**: Los beneficios de la cuantización de 4 bits con `ggml` y los backends de hardware como Metal/cuBLAS.
 
 Corte la dependencia de entornos de Python enormes y de las APIs en la nube, y utilice `whisper.cpp` para el desarrollo de aplicaciones de procesamiento de audio que se ejecuten de manera rápida y segura en entornos nativos. Desde el punto de vista de la protección de la privacidad y la latencia, la IA de ejecución local será una tecnología clave extremadamente importante en el desarrollo de software del futuro.
+
 

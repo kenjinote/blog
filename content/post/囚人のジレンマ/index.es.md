@@ -75,13 +75,13 @@ graph TD
     Start["Inicio de la elección"] --> Logic_You["Su pensamiento racional"]
     Start --> Logic_Friend["Pensamiento racional del amigo"]
     
-    Logic_You -->|Si el otro calla, confesar es mejor<br>Si el otro confiesa, confesar es mejor| Betray_You["Usted elige confesar (traicionar)"]
-    Logic_Friend -->|Si el otro calla, confesar es mejor<br>Si el otro confiesa, confesar es mejor| Betray_Friend["Su amigo elige confesar (traicionar)"]
+    Logic_You -->|"Si el otro calla, confesar es mejor<br>Si el otro confiesa, confesar es mejor"| Betray_You["Usted elige confesar (traicionar)"]
+    Logic_Friend -->|"Si el otro calla, confesar es mejor<br>Si el otro confiesa, confesar es mejor"| Betray_Friend["Su amigo elige confesar (traicionar)"]
     
     Betray_You --> Result["Resultado: Ambos confiesan (-5, -5)"]
     Betray_Friend --> Result
     
-    Ideal["Ideal: Ambos guardan silencio (-1, -1)"] -.->|La racionalidad individual interfiere<br>y no se puede alcanzar| Result
+    Ideal["Ideal: Ambos guardan silencio (-1, -1)"] -.->|"La racionalidad individual interfiere<br>y no se puede alcanzar"| Result
     
     style Result fill:#ff9999,stroke:#333,stroke-width:2px
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
@@ -134,11 +134,11 @@ La razón por la que esta estrategia es fuerte es que tiene cuatro característi
 graph LR
     Start["1ra vez: Cooperar incondicionalmente"] --> Round2
     
-    Round2["Observar la acción del oponente"] -->|El oponente cooperó| Act_Coop["Yo también coopero"]
-    Round2 -->|El oponente traicionó| Act_Betray["Yo también traiciono (represalia)"]
+    Round2["Observar la acción del oponente"] -->|"El oponente cooperó"| Act_Coop["Yo también coopero"]
+    Round2 -->|"El oponente traicionó"| Act_Betray["Yo también traiciono (represalia)"]
     
     Act_Coop --> Round2
-    Act_Betray -->|Si el oponente reflexiona<br>y vuelve a cooperar| Act_Coop
+    Act_Betray -->|"Si el oponente reflexiona<br>y vuelve a cooperar"| Act_Coop
 ```
 
 En las relaciones humanas o en la sociedad internacional, si existe la premisa de una relación a largo plazo, compartir la regla de **"básicamente cooperar, pero penalizar la traición"**, como la estrategia "Toma y daca", nos permite superar el dilema del prisionero y construir relaciones de cooperación.
@@ -151,3 +151,4 @@ La racionalidad individual de "querer beneficiarse solo uno mismo" o "no querer 
 Pero al mismo tiempo, la teoría de juegos también nos enseña que mientras exista la condición de que "la relación continúe a largo plazo", **"confiar y cooperar mutuamente" es en última instancia la estrategia más racional que también maximiza nuestro propio beneficio**.
 
 La próxima vez que dude si "hacer un poco de trampa solo usted", intente recordar la matriz de pagos de este dilema del prisionero. Después de todo, una "traición racional" en busca de ganancias a corto plazo puede ser la opción más irracional a largo plazo.
+

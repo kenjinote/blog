@@ -37,9 +37,9 @@ Todas essas plataformas utilizam uma CDN (Content Delivery Network) distribuída
 
 ```mermaid
 graph TD
-    A["Usuário (Tóquio)"] -->|Baixa Latência| B["Nó de Borda (NRT)"]
-    C["Usuário (Nova York)"] -->|Baixa Latência| D["Nó de Borda (EWR)"]
-    E["Usuário (Londres)"] -->|Baixa Latência| F["Nó de Borda (LHR)"]
+    A["Usuário (Tóquio)"] -->|"Baixa Latência"| B["Nó de Borda (NRT)"]
+    C["Usuário (Nova York)"] -->|"Baixa Latência"| D["Nó de Borda (EWR)"]
+    E["Usuário (Londres)"] -->|"Baixa Latência"| F["Nó de Borda (LHR)"]
     B --> G["Armazenamento de Origem / Object Store"]
     D --> G
     F --> G
@@ -255,6 +255,7 @@ Na operação de sites estáticos usando o Hugo, a adoção de plataformas de ho
 5. **Analytics Mais Leves**: Implementar opções como o Cloudflare Web Analytics, que respeitam a privacidade enquanto não comprometem o desempenho.
 
 Combinando tudo isso, é possível construir de forma gratuita um sistema de blog escalável e robusto, capaz de suportar tráfegos de larga escala (de milhões de pageviews mensais). Se você está considerando iniciar um blog de tecnologia, um site corporativo ou um portfólio, por favor não hesite em testar essa configuração composta por Jamstack, Hugo e Cloudflare Pages.
+
 
 
 

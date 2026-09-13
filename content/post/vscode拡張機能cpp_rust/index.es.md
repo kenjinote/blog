@@ -36,11 +36,11 @@ graph TD
     VSCode -- Peticiones de autocompletado / Salto a definición --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. "Análisis de AST (Árbol de Sintaxis Abstracta)" .-> CompilerC
-    RustAnalyzer -. "Expansión de macros / Inferencia de tipos" .-> CompilerR
+    Clangd -. Análisis de AST (Árbol de Sintaxis Abstracta) .-> CompilerC
+    RustAnalyzer -. Expansión de macros / Inferencia de tipos .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
-    Debugger -. "ptrace / Volcado de memoria" .-> Executable["Binario compilado"]
+    Debugger -. ptrace / Volcado de memoria .-> Executable["Binario compilado"]
 ```
 
 El núcleo de VSCode no entiende la metaprogramación de plantillas de C++ ni los complejos especificadores de tiempo de vida (lifetimes) de Rust. El rol del editor se limita a mostrar el código fuente y recibir las entradas del usuario, mientras que las operaciones costosas computacionalmente como el análisis semántico, la inferencia de tipos y la verificación de errores se delegan a un "servidor de lenguaje" que se ejecuta en segundo plano a través de JSON-RPC.
@@ -388,4 +388,5 @@ Al aplicar las 10 extensiones y configuraciones presentadas en este artículo, V
 Personalizar los archivos de configuración iniciales puede tomar algo de tiempo, pero una vez configurado, la experiencia de codificación posterior será sorprendentemente cómoda y productiva. Esperamos que uses las explicaciones arquitectónicas y las configuraciones específicas (`settings.json`, `tasks.json`, `launch.json`) de este artículo como referencia para construir tu propio entorno de desarrollo definitivo.
 
 ¡Te deseamos una vida de programación de sistemas cómoda y segura!
+
 

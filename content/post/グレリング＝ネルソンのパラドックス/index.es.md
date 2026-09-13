@@ -64,15 +64,15 @@ Caigamos del lado que caigamos, la lógica se desmorona.
 graph TD
     A["Palabra 'heterológica' (Heterological)"] --> B{"¿En cuál se clasifica?"}
     
-    B -->|Es autológica| C["Definición: Posee la propiedad que significa"]
+    B -->|"Es autológica"| C["Definición: Posee la propiedad que significa"]
     C --> D["Su significado es 'heterológica'"]
     D --> E["Resultado: ¡Es heterológica!"]
-    E -->|Contradicción| B
+    E -->|"Contradicción"| B
     
-    B -->|Es heterológica| F["Definición: No posee la propiedad que significa"]
+    B -->|"Es heterológica"| F["Definición: No posee la propiedad que significa"]
     F --> G["Su significado es 'heterológica'"]
     G --> H["Resultado: ¡Es autológica!"]
-    H -->|Contradicción| B
+    H -->|"Contradicción"| B
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
@@ -102,3 +102,4 @@ Cuando las palabras se refieren a las propias palabras (autorreferencia), siempr
 Este no es solo un problema de la filosofía o la lingüística. En el campo de la informática y la inteligencia artificial, cuando un programa intenta evaluar o modificar su propio código, o cuando un modelo de procesamiento de lenguaje natural interpreta contradicciones semánticas, nos enfrentamos a barreras lógicas similares.
 
 La paradoja de Grelling-Nelson es un experimento mental que visualiza de manera brillante un error (límite) que el sistema del "lenguaje" contiene intrínsecamente.
+

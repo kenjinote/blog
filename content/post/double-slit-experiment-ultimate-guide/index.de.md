@@ -36,10 +36,10 @@ Doch während sich unzählige Elektronenpunkte auf dem Schirm ansammelten, tauch
 
 ```mermaid
 graph TD
-    A[Elektronenkanone / Lichtquelle] -->|Feuert Teilchen einzeln ab| B(Wand mit Doppelspalt)
-    B -->|Schlitz 1| C{Interferiert als Welle?}
-    B -->|Schlitz 2| C
-    C -->|Erreicht den Schirm| D[Nach Akkumulation erscheint Interferenzmuster]
+    A[Elektronenkanone / Lichtquelle] -->|"Feuert Teilchen einzeln ab"| B(Wand mit Doppelspalt)
+    B -->|"Schlitz 1"| C{Interferiert als Welle?}
+    B -->|"Schlitz 2"| C
+    C -->|"Erreicht den Schirm"| D[Nach Akkumulation erscheint Interferenzmuster]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -76,8 +76,8 @@ graph TD
     A[Die Erforschung der Natur des Lichts] --> B[17. Jahrhundert: Ära der wissenschaftlichen Revolution]
     B --> C("Newtons Korpuskulartheorie (1704)")
     B --> D("Huygens' Wellentheorie (1690)")
-    C -->|Newtons immense Autorität| E[18. Jahrhundert: Langzeitdominanz der Korpuskulartheorie]
-    D -.->|Fehlende Unterstützung führt zu Stagnation| E
+    C -->|"Newtons immense Autorität"| E[18. Jahrhundert: Langzeitdominanz der Korpuskulartheorie]
+    D -.->|"Fehlende Unterstützung führt zu Stagnation"| E
     E --> F[Frühes 19. Jahrhundert: Paradigmenwechsel]
 ```
 ## 2.2 Thomas Youngs Doppelspaltexperiment mit Licht (1801) und der Triumph der Wellentheorie
@@ -212,9 +212,9 @@ Das folgende Diagramm zeigt schematisch die Gesamtanordnung dieses Experimentier
 ```mermaid
 graph LR
     subgraph Chamber ["Im Hochvakuum (High Vacuum Chamber)"]
-    A["Elektronenkanone<br>Electron Gun"] -->| Elektronenstrahl oder<br>einzelnes Elektron | B("Doppelspalt-Abschirmplatte<br>Double Slit Barrier")
-    B -->| Spalt A | C["Raum"]
-    B -->| Spalt B | C
+    A["Elektronenkanone<br>Electron Gun"] -->|"Elektronenstrahl oder<br>einzelnes Elektron"| B("Doppelspalt-Abschirmplatte<br>Double Slit Barrier")
+    B -->|"Spalt A"| C["Raum"]
+    B -->|"Spalt B"| C
     C --> D["Hochempfindlicher Schirm / Detektor<br>Detector Screen"]
     end
 
@@ -439,4 +439,5 @@ In diesem Artikel haben wir uns im Detail angesehen, wie das äußerst einfache 
 Wir stehen heute am Eingang zum zweiten Akt der Quantenrevolution. Egal, wie weit die Wissenschaft und Technologie fortschreitet, das tiefe Geheimnis der „Wahrscheinlichkeitswelle“ und der „Festlegung durch Beobachtung“, das sich hinter diesen beiden Spalten erstreckt, ist immer noch nicht vollständig gelöst. Wie hat das Universum begonnen? Welche physikalische Bedeutung haben Bewusstsein und Beobachtung? Wie können die mikroskopische Quantenmechanik und die makroskopische allgemeine Relativitätstheorie vereinheitlicht werden (Forschung zur Theorie der Quantengravitation)? Der Schlüssel zur Lösung dieser ultimativen Rätsel könnte ebenfalls in dem einfachen, aber tiefgründigen Phänomen des Doppelspaltexperiments verborgen sein.
 
 Wenn Sie in der Hektik des Alltags zufällig das durchs Fenster hereinfallende Licht oder das Funkeln der Sterne am Nachthimmel betrachten, denken Sie bitte daran: Die unzähligen Photonen, aus denen dieses Licht besteht, waren bis zu dem Moment, in dem sie nach einer langen Reise Ihren „Detektor“ – Ihr Auge – erreichten, Wellen mit dem unendlichen Potenzial, alle Pfade des Universums gleichzeitig zu durchlaufen. Diese Realität, deren Zeugen wir sind, ist nur ein kleiner Teil eines grandiosen, ewigen Tanzes, in dem das Universum sich selbst beobachtet und unentwegt festlegt. Das Doppelspaltexperiment konfrontiert uns weder mit der Angst vor der Unsicherheit der Welt noch mit dem Nichts. Es erfüllt uns vielmehr mit überwältigendem Staunen und Ehrfurcht darüber, wie mysteriös, unvorstellbar reich und eng dieses Universum mit unserer eigenen Existenz verbunden ist. Dies kann wohl als das größte Geschenk angesehen werden, das das Doppelspaltexperiment der Menschheit gemacht hat.
+
 

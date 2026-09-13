@@ -36,10 +36,10 @@ No entanto, à medida que inúmeros pontos de elétrons se acumulavam no ecrã, 
 
 ```mermaid
 graph TD
-    A[Arma de Elétrons / Fonte de Luz] -->|Dispara partículas uma a uma| B(Parede com Dupla Fenda)
-    B -->|Fenda 1| C{Interfere como onda?}
-    B -->|Fenda 2| C
-    C -->|Chega ao ecrã| D[Ao se acumular, surge o padrão de interferência]
+    A[Arma de Elétrons / Fonte de Luz] -->|"Dispara partículas uma a uma"| B(Parede com Dupla Fenda)
+    B -->|"Fenda 1"| C{Interfere como onda?}
+    B -->|"Fenda 2"| C
+    C -->|"Chega ao ecrã"| D[Ao se acumular, surge o padrão de interferência]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -76,8 +76,8 @@ graph TD
     A[A Busca Pela Natureza da Luz] --> B[Século XVII: Período da Revolução Científica]
     B --> C("Teoria Corpuscular de Newton (1704)")
     B --> D("Teoria Ondulatória de Huygens (1690)")
-    C -->|A Autoridade Absoluta de Newton| E[Século XVIII: Longo Domínio da Teoria Corpuscular]
-    D -.->|Sem apoio, estagnou| E
+    C -->|"A Autoridade Absoluta de Newton"| E[Século XVIII: Longo Domínio da Teoria Corpuscular]
+    D -.->|"Sem apoio, estagnou"| E
     E --> F[Início do Século XIX: Mudança de Paradigma]
 ```
 ## 2.2 O experimento da dupla fenda de Thomas Young (1801) e a vitória da teoria ondulatória da luz
@@ -220,9 +220,9 @@ A figura abaixo ilustra esquematicamente a disposição geral deste equipamento 
 ```mermaid
 graph LR
     subgraph Chamber ["Dentro da câmara de alto vácuo (High Vacuum Chamber)"]
-    A["Canhão de Elétrons<br>Electron Gun"] -->| Feixe de elétrons ou<br>elétron único | B("Placa de fenda dupla<br>Double Slit Barrier")
-    B -->| Fenda A | C["Espaço"]
-    B -->| Fenda B | C
+    A["Canhão de Elétrons<br>Electron Gun"] -->|"Feixe de elétrons ou<br>elétron único"| B("Placa de fenda dupla<br>Double Slit Barrier")
+    B -->|"Fenda A"| C["Espaço"]
+    B -->|"Fenda B"| C
     C --> D["Tela de alta sensibilidade / Detector<br>Detector Screen"]
     end
 
@@ -447,4 +447,5 @@ Ao longo deste artigo, vimos detalhadamente como o experimento extremamente simp
 Hoje nos encontramos na porta de entrada do segundo ato da revolução quântica. Por mais que a ciência e a tecnologia avancem, o profundo mistério das "ondas de probabilidade" e da "definição pela observação", que se espalha para além daquelas duas fendas, ainda não foi completamente desvendado. Como o universo começou? O que consciência e observação significam fisicamente? Como a mecânica quântica microscópica e a teoria da relatividade geral macroscópica se unificam (estudos da teoria da gravitação quântica)? As chaves para desvendar esses enigmas supremos também podem estar escondidas no fenômeno tão simples e profundo do experimento da dupla fenda.
 
 Em meio à correria do dia a dia, quando de repente você vir a luz entrando por uma janela, ou olhar para as estrelas piscando no céu noturno, por favor se lembre disto. Inúmeros fótons, que constituem aquela luz, foram ondas ocultando infinitas possibilidades, atravessando simultaneamente cada rota imaginável no universo, até o momento em que chegaram aos seus olhos — os "detectores" —, ao fim de uma longa viagem. Essa realidade que testemunhamos não é mais que uma ínfima parte da dança grandiosa e eterna onde o universo continua observando a si mesmo e definindo a si mesmo. O que o experimento da dupla fenda nos apresenta não é nem o medo nem o niilismo face à incerteza do mundo. É o espanto e a reverência avassaladores perante o quão místico, inimaginavelmente rico e profundamente ligado à nossa própria existência este universo é. Este pode ser considerado o maior presente que o experimento da dupla fenda deu à humanidade.
+
 

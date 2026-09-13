@@ -43,9 +43,9 @@ graph LR
     D30["Distancia: 30m (Otro piso)"] --> P30["Probabilidad de comunicación cara a cara: Baja (un poco %)"]
     DRemote["Totalmente remoto (Otra ciudad)"] --> PRemote["Probabilidad de comunicación sincrónica casual: Casi cero"]
     
-    D0 -. "Decaimiento abrupto de la Curva de Allen" .-> D10
-    D10 -. "Pérdida de proximidad física" .-> D30
-    D30 -. "Transición a una comunicación intencional y totalmente asíncrona" .-> DRemote
+    D0 -. Decaimiento abrupto de la Curva de Allen .-> D10
+    D10 -. Pérdida de proximidad física .-> D30
+    D30 -. Transición a una comunicación intencional y totalmente asíncrona .-> DRemote
 ```
 
 En un entorno de trabajo completamente remoto, esta distancia física $d$ se vuelve efectivamente infinita. En otras palabras, incluso si existen Slack y Zoom, el intercambio incidental de información (Comunicación Serendipita) como las "charlas en el dispensador de agua" deja de ocurrir estructuralmente. Uno de los mayores argumentos de los ejecutivos para promover el RTO es recuperar el "intercambio de conocimiento tácito y la creación de innovación a través de la proximidad física", respaldado por esta Curva de Allen.
@@ -188,9 +188,9 @@ graph TD
     subgraph "Modelo Zero Trust (BeyondCorp / ZTNA)"
         U2["Ingeniero remoto (Dispositivo gestionado por MDM)"] -- Comunicación directa (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
         IAP -- Autorización dinámica por solicitud --> App2["Aplicaciones Internas / SaaS"]
-        IDP["Proveedor de Identidad (Okta / Entra ID)"] -. "MFA / Contexto del usuario" .-> Policy
-        MDM["Gestión de dispositivos (Intune / Jamf)"] -. "Salud del dispositivo (Estado de parches)" .-> Policy
-        Policy["Motor de políticas de acceso"] -. "Decisión de autorización basada en riesgo" .-> IAP
+        IDP["Proveedor de Identidad (Okta / Entra ID)"] -. MFA / Contexto del usuario .-> Policy
+        MDM["Gestión de dispositivos (Intune / Jamf)"] -. Salud del dispositivo (Estado de parches) .-> Policy
+        Policy["Motor de políticas de acceso"] -. Decisión de autorización basada en riesgo .-> IAP
     end
 ```
 
@@ -234,6 +234,7 @@ La gerencia debe abandonar la ilusión de que "la innovación ocurrirá mágicam
 Por otro lado, los ingenieros (especialmente en los niveles senior) deben cambiar su visión egocéntrica de que "la oficina es innecesaria porque soy más productivo escribiendo código solo". La ingeniería es un deporte de equipo; los ingenieros no solo son responsables de la productividad del código, sino también de una amplia gama de responsabilidades como el diseño del sistema de toda la organización, la capacitación de los miembros junior y la coordinación durante las emergencias. También es cierto que la comunicación de alto ancho de banda en un espacio físico a veces salva todo el proyecto.
 
 La solución óptima varía dependiendo de la fase de la empresa, el equipo y el producto. Sin embargo, lo que es seguro es que en esta nueva era de trabajo, la verdadera competitividad solo la alcanzarán las organizaciones que entiendan la naturaleza sociológica de la comunicación, midan la situación actual con métricas multifacéticas como el marco SPACE y continúen rompiendo las restricciones utilizando tecnologías como la Arquitectura Zero Trust.
+
 
 
 

@@ -134,8 +134,8 @@ Oded Regev最大的贡献，就是通过数学证明将LWE问题的难度与前�
 
 ```mermaid
 graph TD
-    A["最坏情况格问题 (Gap-SVP, SIVP)"] -->|量子/经典归约| B["平均情况LWE问题"]
-    B -->|密码学构造| C["基于LWE的密码系统 (PKE, KEM, FHE)"]
+    A["最坏情况格问题 (Gap-SVP, SIVP)"] -->|"量子/经典归约"| B["平均情况LWE问题"]
+    B -->|"密码学构造"| C["基于LWE的密码系统 (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ Ring-LWE虽然高效，但也存在着一些担忧，即理想格特殊的代数
 4. 在现实的协议中，为了提高通信效率和计算速度，采用了使用多项式环的 **Ring-LWE** 和 **Module-LWE**，这成为了NIST标准 **ML-KEM** 的基础。
 
 在量子计算机这一前所未有的计算范式转变日益逼近的背景下，脱胎于经典线性代数和数论深渊的“格密码”，将承担起未来互联网安全基石的重任，这着实是一个充满浪漫色彩的故事。作为格密码基础的数学绝非高不可攀，只要具备线性代数和概率的基础知识，就足以理解其美妙的结构。希望本文能为您理解作为PQC核心的格密码提供一些帮助。
+

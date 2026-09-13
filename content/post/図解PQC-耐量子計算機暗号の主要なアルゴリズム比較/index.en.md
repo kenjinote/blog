@@ -18,9 +18,9 @@ However, this solid premise is about to be completely overturned by the theory a
 
 ```mermaid
 graph TD
-    A["Large-scale Quantum Computer (CRQC)"] -->|Execution| B["Shor's Algorithm"]
-    B -->|Decryption in polynomial time| C["Integer Factorization Problem (RSA)"]
-    B -->|Decryption in polynomial time| D["Discrete Logarithm Problem (ECC / ECDSA)"]
+    A["Large-scale Quantum Computer (CRQC)"] -->|"Execution"| B["Shor's Algorithm"]
+    B -->|"Decryption in polynomial time"| C["Integer Factorization Problem (RSA)"]
+    B -->|"Decryption in polynomial time"| D["Discrete Logarithm Problem (ECC / ECDSA)"]
     C --> E["Eavesdropping, data tampering, and spoofing of encrypted communications"]
     D --> E
     F["Store Now, Decrypt Later (SNDL)"] --> E
@@ -219,8 +219,8 @@ However, there is a significant drawback. Because discrete Gaussian sampling, wh
 ```mermaid
 graph LR
     A["Requirements for Digital Signatures"] --> B{"What is the top priority constraint?"}
-    B -->| Simplicity of implementation, versatility, ease of constant-time implementation | C["Dilithium (ML-DSA)"]
-    B -->| Minimization of communication bandwidth, compactness of data size | D["FALCON (FN-DSA)"]
+    B -->|"Simplicity of implementation, versatility, ease of constant-time implementation"| C["Dilithium (ML-DSA)"]
+    B -->|"Minimization of communication bandwidth, compactness of data size"| D["FALCON (FN-DSA)"]
     C --> E["General-purpose TLS certificates, digital signatures for software"]
     D --> F["Protocols with strict packet size limits, special environments"]
 ```
@@ -300,12 +300,12 @@ In hybrid cryptography, key exchange is performed using both a classical cryptog
 
 ```mermaid
 graph TD
-    A["Client"] -->|1. Send X25519 Public Key + Kyber Public Key| B["Server"]
-    B -->|2. Return X25519 Shared Key + Kyber Encapsulated Ciphertext| A
+    A["Client"] -->|"1. Send X25519 Public Key + Kyber Public Key"| B["Server"]
+    B -->|"2. Return X25519 Shared Key + Kyber Encapsulated Ciphertext"| A
     A --> C{"Derive Master Secret (KDF)"}
     B --> C
-    C -->|Input: (X25519 Shared Key) || (Kyber Shared Key)| D["Secure Communication Key (AES-256 / ChaCha20)"]
-    D -->| Resistant to both quantum threats & classical vulnerabilities | E["Secure Hybrid Encrypted Communication (TLS 1.3)"]
+    C -->|"Input: (X25519 Shared Key)"|| (Kyber Shared Key)| D["Secure Communication Key (AES-256 / ChaCha20)"]
+    D -->|"Resistant to both quantum threats & classical vulnerabilities"| E["Secure Hybrid Encrypted Communication (TLS 1.3)"]
 ```
 
 This achieves a robust two-tiered security: "even if a quantum computer becomes a reality and ECC is broken, Kyber protects the communication," and conversely, "even if an unknown mathematical flaw is found in Kyber, ECC protects the communication." A representative example is the **X25519MLKEM768 (formerly X25519Kyber768)** draft being standardized by the IETF, and communications between current web browsers and cutting-edge servers are already being carried out precisely using this hybrid method.
@@ -328,5 +328,6 @@ The battle between quantum computers and cryptography is an exciting area where 
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 
 

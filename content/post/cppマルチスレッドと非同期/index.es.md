@@ -296,10 +296,10 @@ Un grupo de hilos es una arquitectura en la que se crea un cierto número de hil
 
 ```mermaid
 graph TD
-    Client["Cliente / Hilo principal"] -->|Empujar tarea| Queue["Cola de tareas"]
-    Queue -->|Sacar tarea| W1["Hilo trabajador 1"]
-    Queue -->|Sacar tarea| W2["Hilo trabajador 2"]
-    Queue -->|Sacar tarea| W3["Hilo trabajador N"]
+    Client["Cliente / Hilo principal"] -->|"Empujar tarea"| Queue["Cola de tareas"]
+    Queue -->|"Sacar tarea"| W1["Hilo trabajador 1"]
+    Queue -->|"Sacar tarea"| W2["Hilo trabajador 2"]
+    Queue -->|"Sacar tarea"| W3["Hilo trabajador N"]
     
     W1 --> Exec["Ejecución y retorno de Future"]
     W2 --> Exec
@@ -331,3 +331,4 @@ Hemos explicado el procesamiento multihilo y asíncrono en C++, desde los concep
 4. **Sea consciente de la sobrecarga:** Evite la creación excesiva de hilos y adopte una arquitectura de grupo de hilos cuando sea necesario.
 
 Los errores en el procesamiento concurrente (interbloqueos, carreras de datos) tienen baja reproducibilidad y se encuentran entre los más difíciles de depurar. Tengamos siempre en cuenta la seguridad de los hilos y elijamos las herramientas adecuadas de la biblioteca estándar para lograr el desarrollo de sistemas robustos y rápidos en C++ moderno.
+

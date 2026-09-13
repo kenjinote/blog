@@ -39,8 +39,8 @@ $$ O((\log N)^3) $$
 ```mermaid
 graph TD
     A["輸入大小(位元數) N的增加"] --> B{"演算法的選擇"}
-    B -->|古典: 普通數域篩法| C["次指數級增加 O(exp(...))"]
-    B -->|量子: 秀爾演算法| D["多項式時間 O((log N)^3)"]
+    B -->|"古典: 普通數域篩法"| C["次指數級增加 O(exp(...))"]
+    B -->|"量子: 秀爾演算法"| D["多項式時間 O((log N)^3)"]
     C --> E["數千年〜數十億年 (無法破解)"]
     D --> F["數分鐘〜數小時 (現實時間內可破解)"]
 ```
@@ -358,5 +358,6 @@ PQC 建立在被認為即使使用秀爾演算法（或葛羅佛演算法）也�
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

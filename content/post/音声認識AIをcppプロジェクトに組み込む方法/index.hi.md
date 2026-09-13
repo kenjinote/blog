@@ -72,9 +72,9 @@ Whisper मॉडल में आमतौर पर $N = 400$ (25ms) का �
 
 ```mermaid
 graph TD
-    A["ऑडियो स्रोत (माइक्रोफ़ोन/फ़ाइल)"] -->|Raw Bytes, e.g. 48kHz Stereo| B["ऑडियो डिकोडर और रीसैंपलर (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-bit Float| C["रिंग बफर / मेमोरी एरे"]
-    C -->|Feed PCM Data| D["whisper.cpp कोर (ggml)"]
+    A["ऑडियो स्रोत (माइक्रोफ़ोन/फ़ाइल)"] -->|"Raw Bytes, e.g. 48kHz Stereo"| B["ऑडियो डिकोडर और रीसैंपलर (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-bit Float"| C["रिंग बफर / मेमोरी एरे"]
+    C -->|"Feed PCM Data"| D["whisper.cpp कोर (ggml)"]
     D --> E["Mel स्पेक्ट्रोग्राम निष्कर्षण"]
     E --> F["ट्रांसफॉर्मर एनकोडर-डिकोडर"]
     F --> G["टेक्स्ट टोकन जनरेशन"]
@@ -223,14 +223,14 @@ int main() {
 ```mermaid
 graph LR
     subgraph "ऑडियो थ्रेड (हाई प्रायोरिटी)"
-        A["ऑडियो कैप्चर API (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["रीसैंपलर (16kHz तक)"]
+        A["ऑडियो कैप्चर API (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["रीसैंपलर (16kHz तक)"]
         B --> C["रिंग बफर"]
     end
     
     subgraph "मेन / वर्कर थ्रेड"
-        C -->|Pop 30ms-1000ms chunk| D["वॉयस एक्टिविटी डिटेक्शन (VAD)"]
-        D -->|If speech detected| E["PCM बफर जमा करें"]
-        E -->|Trigger Inference| F["whisper_full()"]
+        C -->|"Pop 30ms-1000ms chunk"| D["वॉयस एक्टिविटी डिटेक्शन (VAD)"]
+        D -->|"If speech detected"| E["PCM बफर जमा करें"]
+        E -->|"Trigger Inference"| F["whisper_full()"]
         F --> G["UI/टेक्स्ट अपडेट करें"]
     end
 ```
@@ -298,4 +298,5 @@ $$ N_{\text{threads}} = \min(\text{Physical CPU Cores}, 4 \sim 8) $$
 * **अत्यधिक ऑप्टिमाइज़ेशन**: `ggml` के माध्यम से 4-bit क्वांटाइज़ेशन और Metal/cuBLAS जैसे हार्डवेयर बैकएंड के लाभ।
 
 कृपया विशाल Python वातावरण या क्लाउड APIs पर निर्भरता को तोड़ने और ऐसे ऑडियो प्रोसेसिंग एप्लिकेशन विकसित करने के लिए `whisper.cpp` का उपयोग करें जो नेटिव वातावरण में तेज़ी से और सुरक्षित रूप से काम करते हैं। गोपनीयता सुरक्षा और लेटेंसी के दृष्टिकोण से भविष्य के सॉफ्टवेयर विकास में स्थानीय-केवल (Local-only) AI एक अत्यंत महत्वपूर्ण मुख्य तकनीक बन जाएगा।
+
 

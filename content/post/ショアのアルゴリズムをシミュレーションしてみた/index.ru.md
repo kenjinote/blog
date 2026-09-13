@@ -39,8 +39,8 @@ $$ O((\log N)^3) $$
 ```mermaid
 graph TD
     A["Увеличение размера входа (количества бит) N"] --> B{"Выбор алгоритма"}
-    B -->|Классический: Общий метод решета числового поля| C["Субэкспоненциальный рост O(exp(...))"]
-    B -->|Квантовый: Алгоритм Шора| D["Полиномиальное время O((log N)^3)"]
+    B -->|"Классический: Общий метод решета числового поля"| C["Субэкспоненциальный рост O(exp(...))"]
+    B -->|"Квантовый: Алгоритм Шора"| D["Полиномиальное время O((log N)^3)"]
     C --> E["От тысяч до миллиардов лет (Невозможно взломать)"]
     D --> F["От нескольких минут до часов (Взлом за реалистичное время)"]
 ```
@@ -358,5 +358,6 @@ PQC основывается на новых математических про
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

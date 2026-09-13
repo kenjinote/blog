@@ -81,18 +81,18 @@ Diese Aufteilung ist so komplex und verstreut, dass man das „Volumen nicht meh
 
 ```mermaid
 graph TD
-    S["Ursprüngliche Kugel S (Volumen V)"] -->|Spezielle Zerlegung| P1["Fragment 1 (Volumen unmessbar)"]
+    S["Ursprüngliche Kugel S (Volumen V)"] -->|"Spezielle Zerlegung"| P1["Fragment 1 (Volumen unmessbar)"]
     S --> P2["Fragment 2 (Volumen unmessbar)"]
     S --> P3["Fragment 3 (Volumen unmessbar)"]
     S --> P4["Fragment 4 (Volumen unmessbar)"]
     S --> P5["Fragment 5 (Volumen unmessbar)"]
     
-    P1 -->|Rotation und Verschiebung| S1["Neue Kugel 1 (Volumen V)"]
-    P2 -->|Rotation und Verschiebung| S1
-    P3 -->|Rotation und Verschiebung| S1
+    P1 -->|"Rotation und Verschiebung"| S1["Neue Kugel 1 (Volumen V)"]
+    P2 -->|"Rotation und Verschiebung"| S1
+    P3 -->|"Rotation und Verschiebung"| S1
     
-    P4 -->|Rotation und Verschiebung| S2["Neue Kugel 2 (Volumen V)"]
-    P5 -->|Rotation und Verschiebung| S2
+    P4 -->|"Rotation und Verschiebung"| S2["Neue Kugel 2 (Volumen V)"]
+    P5 -->|"Rotation und Verschiebung"| S2
     
     style S fill:#ffddaa,stroke:#333,stroke-width:2px
     style S1 fill:#aaddff,stroke:#333,stroke-width:2px
@@ -136,3 +136,4 @@ Da die physikalische Welt, in der wir leben, aus Atomen, also „Körnern mit ei
 Auf der Leinwand der „Mathematik“, die vom menschlichen Gehirn erschaffen wurde, ist die Größe eines Punktes jedoch null, und unendliche Operationen sind erlaubt.
 
 Das Banach-Tarski-Paradoxon kann als eines der größten Meisterwerke der modernen Mathematik angesehen werden. Es lehrt uns, **wie leichtfertig das Konzept der „Unendlichkeit“ über die einfache Intuition des Menschen hinausgeht**.
+

@@ -163,10 +163,10 @@ int Calculator::Add(int a, int b) {
 
 ```mermaid
 flowchart LR
-    Test["单元测试"] -->|注入Mock| Target["目标服务"]
-    Target -->|依赖于| Interface["接口 (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|实现| Interface
-    Test -->|配置| Mock
+    Test["单元测试"] -->|"注入Mock"| Target["目标服务"]
+    Target -->|"依赖于"| Interface["接口 (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"实现"| Interface
+    Test -->|"配置"| Mock
 ```
 
 ### 5.1 接口的定义与目标类的实现
@@ -343,3 +343,4 @@ $$ M = E - N + 2P $$
 4. 使用 **gcov/lcov** 可视化测试覆盖率
 
 虽然TDD是一项需要时间去掌握的方法，但在像C++这样同时需要性能和安全性的系统编程中，它的投资回报是不可估量的。请务必在你的下一个项目中逐步实践TDD，以获得稳健且易于维护的C++代码。
+

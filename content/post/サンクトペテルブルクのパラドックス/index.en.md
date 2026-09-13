@@ -35,16 +35,16 @@ The initial prize starts at $2.
 graph TD
     Start["Game Start"] --> Toss1{"1st Coin Toss"}
     
-    Toss1 -->|Tails (1/2)| End1["End: Win $2"]
-    Toss1 -->|Heads (1/2)| Toss2{"2nd Coin Toss"}
+    Toss1 -->|"Tails (1/2)"| End1["End: Win $2"]
+    Toss1 -->|"Heads (1/2)"| Toss2{"2nd Coin Toss"}
     
-    Toss2 -->|Tails (1/2)| End2["End: Win $4"]
-    Toss2 -->|Heads (1/2)| Toss3{"3rd Coin Toss"}
+    Toss2 -->|"Tails (1/2)"| End2["End: Win $4"]
+    Toss2 -->|"Heads (1/2)"| Toss3{"3rd Coin Toss"}
     
-    Toss3 -->|Tails (1/2)| End3["End: Win $8"]
-    Toss3 -->|Heads (1/2)| Toss4{"..."}
+    Toss3 -->|"Tails (1/2)"| End3["End: Win $8"]
+    Toss3 -->|"Heads (1/2)"| Toss4{"..."}
     
-    Toss4 -.->|The longer the streak| Infinite["Prize doubles infinitely!"]
+    Toss4 -.->|"The longer the streak"| Infinite["Prize doubles infinitely!"]
 ```
 
 Now, here is a question for you.
@@ -147,3 +147,4 @@ The concept of "Utility" proposed by Daniel Bernoulli, 200 years later, became t
 The behavior of us buying insurance or diversifying investments can all be explained by this human psychological mechanism of "diminishing marginal utility (the pain of a huge loss is far greater than the joy of a huge gain)".
 
 A simple calculation problem of gambling ended up deciphering the human mind and triggering the birth of the massive academic discipline of economics.
+

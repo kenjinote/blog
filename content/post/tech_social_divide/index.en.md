@@ -146,17 +146,17 @@ graph TD
         Labeler["Moderation Labeler (Fact Checkers)"]
     end
 
-    Client -->|Reads/Writes| PDS1
-    Client -->|Views| AppView
+    Client -->|"Reads/Writes"| PDS1
+    Client -->|"Views"| AppView
     
-    PDS1 -->|Syncs via WebSocket| Relay
-    PDS2 -->|Syncs via WebSocket| Relay
+    PDS1 -->|"Syncs via WebSocket"| Relay
+    PDS2 -->|"Syncs via WebSocket"| Relay
     
-    Relay -->|Indexes| AppView
+    Relay -->|"Indexes"| AppView
     
-    AppView -.->|Requests Feed| FeedGen1
-    AppView -.->|Requests Feed| FeedGen2
-    AppView -.->|Gets Labels| Labeler
+    AppView -.->|"Requests Feed"| FeedGen1
+    AppView -.->|"Requests Feed"| FeedGen2
+    AppView -.->|"Gets Labels"| Labeler
 ```
 
 The greatest achievement of the AT Protocol is that it has decoupled "feed generation (algorithms)" and "moderation (labeling)" from the main platform, making them freely selectable and composable by the users themselves (Custom Feeds / Stackable Moderation).
@@ -194,5 +194,6 @@ Technology is not magic. It is a mirror of humanity. If society is divided, it i
 From the 101st post onward, as an engineer, I would like to continue standing at the intersection of code and society, deepening my thoughts. Thank you very much for reading this long piece to the end. I hope that the networks of the future will not be walls that divide us, but bridges for us to understand each other.
 
 (End)
+
 
 

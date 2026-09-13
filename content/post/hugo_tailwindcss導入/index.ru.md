@@ -86,11 +86,11 @@ PostCSS — это инструмент для преобразования CSS 
 
 ```mermaid
 flowchart TD
-    A["Сырой CSS (styles.css)"] -->|Parser| B["AST (Абстрактное синтаксическое дерево)"]
+    A["Сырой CSS (styles.css)"] -->|"Parser"| B["AST (Абстрактное синтаксическое дерево)"]
     B --> C["Плагин 1: Tailwind CSS"]
     C --> D["Плагин 2: Autoprefixer"]
     D --> E["Плагин N: cssnano"]
-    E -->|Stringifier| F["Скомпилированный и оптимизированный CSS"]
+    E -->|"Stringifier"| F["Скомпилированный и оптимизированный CSS"]
 ```
 
 1. **Parser (Парсер)**: Анализирует входящую необработанную строку CSS и преобразует ее в AST (абстрактное синтаксическое дерево), структуру данных, которой можно управлять программно.
@@ -272,8 +272,8 @@ module.exports = {
 
 ```mermaid
 flowchart TD
-    A["assets/css/main.css"] -->|resources.Get| B["Пространство памяти Hugo"]
-    B -->|resources.PostCSS| C["Процесс PostCSS + Tailwind JIT"]
+    A["assets/css/main.css"] -->|"resources.Get"| B["Пространство памяти Hugo"]
+    B -->|"resources.PostCSS"| C["Процесс PostCSS + Tailwind JIT"]
     C --> D{"hugo.IsProduction ?"}
     D -- Да (Продакшн) --> E["minify (удаление пробелов и переносов строк)"]
     E --> F["fingerprint (вычисление хеша)"]
@@ -412,4 +412,5 @@ NODE_ENV=production hugo --minify --environment production
 Кроме того, поскольку размер выходного CSS всегда минимизирован, это напрямую улучшает оценки Core Web Vitals и очень выгодно с точки зрения SEO.
 
 Комбинация Hugo и Tailwind CSS, несомненно, останется одним из «лучших выборов» для любого проекта, от личного технического блога до крупного корпоративного сайта. Обязательно воспользуйтесь этим мощным набором инструментов и наслаждайтесь комфортной веб-разработкой!
+
 

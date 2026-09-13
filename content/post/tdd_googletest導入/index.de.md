@@ -163,10 +163,10 @@ Hier kommen **Dependency Injection (DI)** und das Mocking von Schnittstellen mit
 
 ```mermaid
 flowchart LR
-    Test["Unit Test"] -->|injects mock| Target["Ziel-Service"]
-    Target -->|depends on| Interface["Schnittstelle (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|implements| Interface
-    Test -->|configures| Mock
+    Test["Unit Test"] -->|"injects mock"| Target["Ziel-Service"]
+    Target -->|"depends on"| Interface["Schnittstelle (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"implements"| Interface
+    Test -->|"configures"| Mock
 ```
 
 ### 5.1 Definition der Schnittstelle und Implementierung der Zielklasse
@@ -343,3 +343,4 @@ In diesem Artikel haben wir detailliert erklärt, wie man Test-Driven Developmen
 4. Visualisierung der Testabdeckung mit **gcov/lcov**
 
 Obwohl TDD ein Ansatz ist, dessen Beherrschung Zeit erfordert, ist der Return on Investment in der Systemprogrammierung, wie z.B. in C++, wo sowohl Leistung als auch Sicherheit gefordert sind, unermesslich. Bitte versuchen Sie, TDD ab Ihrem nächsten Projekt schrittweise in die Praxis umzusetzen, um robusten und leicht wartbaren C++-Code zu erhalten.
+

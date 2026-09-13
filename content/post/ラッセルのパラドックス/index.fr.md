@@ -44,8 +44,8 @@ Le barbier a complètement paniqué, incapable de choisir l'une ou l'autre actio
 graph TD
     Barber["Barbier : Doit-il se raser ?"]
     
-    Barber -->|OUI : Il se rase| Cond1["Violation de la règle !<br>(Il ne doit pas raser quelqu'un qui se rase lui-même)"]
-    Barber -->|NON : Il ne se rase pas| Cond2["Violation de la règle !<br>(Il doit raser ceux qui ne se rasent pas eux-mêmes)"]
+    Barber -->|"OUI : Il se rase"| Cond1["Violation de la règle !<br>(Il ne doit pas raser quelqu'un qui se rase lui-même)"]
+    Barber -->|"NON : Il ne se rase pas"| Cond2["Violation de la règle !<br>(Il doit raser ceux qui ne se rasent pas eux-mêmes)"]
     
     Cond1 --> Paradox["Contradiction (Paradoxe)"]
     Cond2 --> Paradox
@@ -140,7 +140,7 @@ graph LR
         Strict["Seuls ceux qui suivent des règles<br>strictes (axiomes) sont des 'ensembles'"] --> Safe["La contradiction R n'est pas reconnue<br>comme un 'ensemble', donc on est en sécurité !"]
     end
     
-    Monster -.->|Crise dans le monde des mathématiques| Strict
+    Monster -.->|"Crise dans le monde des mathématiques"| Strict
 ```
 
 ---
@@ -153,3 +153,4 @@ Des paradoxes, qui à première vue peuvent sembler n'être que de la sophistiqu
 
 Si le génie qu'était Russell n'avait pas remarqué ce "bug du barbier", les mathématiques modernes et l'informatique qui s'inscrit dans le prolongement de cette logique se seraient peut-être développées avec une contradiction fatale quelque part.
 Les paradoxes sont les remèdes les plus stimulants qui nous enseignent les limites de la logique humaine.
+

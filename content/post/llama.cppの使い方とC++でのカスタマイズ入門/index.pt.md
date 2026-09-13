@@ -103,7 +103,7 @@ graph TD
     J --> K["ID do Token Selecionado"]
     K --> L["Detokenizer llama.cpp"]
     L --> M["String de Saída"]
-    K -. "Loop auto-regressivo" .-> D
+    K -. Loop auto-regressivo .-> D
 ```
 
 A geração de texto é um loop auto-regressivo onde cada vez que um token é emitido, ele é adicionado ao KV Cache como a próxima entrada e passa novamente pelo grafo de computação.
@@ -383,3 +383,4 @@ Nós encorajamos fortemente que você tente escrever seu próprio código em C++
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

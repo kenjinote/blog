@@ -386,3 +386,5 @@ WSL2 hat den Rahmen eines bloßen „Zusatz-Linux, das unter Windows läuft“ k
 Durch die Anwendung aller hier erläuterten Einstellungen (Ressourcenoptimierung durch `.wslconfig`, Terminalerweiterung durch Zsh + Powerlevel10k, transparenter Zugriff durch VS Code Remote sowie SSH-Integration und VHDX-Wartung) wird eine stressfreie, schnelle und sichere „ultimative Entwicklungsumgebung“ vervollständigt.
 
 Der Aufbau der Umgebung erfordert zwar etwas Aufwand, aber wenn Sie die Einstellungen einmal festgelegt haben, wird sich Ihre zukünftige Engineering-Produktivität zweifellos dramatisch verbessern. Erkunden Sie gerne weitere Anpassungen basierend auf diesem Leitfaden, um sie an Ihre eigenen Projekte und Vorlieben anzupassen.
+
+

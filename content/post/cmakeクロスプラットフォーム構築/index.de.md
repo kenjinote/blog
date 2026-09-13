@@ -143,7 +143,7 @@ graph TD
     Root --> Inc["include/"]
     Root --> CMake["CMakeLists.txt"]
     
-    Root -. "Build-Verzeichnis erstellen" .-> Build["build/ (Out-of-source)"]
+    Root -. Build-Verzeichnis erstellen .-> Build["build/ (Out-of-source)"]
     Build --> Obj["CMakeFiles/ (Objektdateien, Caches)"]
     Build --> Bin["Binärdateien (MyApp.exe)"]
     Build --> Gen["Generiertes Makefile / build.ninja"]
@@ -369,4 +369,5 @@ Fassen wir die wichtigsten Punkte noch einmal zusammen:
 7. **Mathematischer Ansatz**: Berücksichtigen Sie das Amdahlsche Gesetz, um Abhängigkeiten zu reduzieren und die Effizienz des parallelen Kompilierens zu steigern.
 
 Anfangs mag CMake schwer verständlich erscheinen, aber sobald Sie die Konzepte von Targets und Properties verstanden haben, können Sie eine geordnete Build-Umgebung aufrechterhalten, egal wie komplex oder riesig ein C++-Projekt ist. Bitte nutzen Sie diesen Artikel als Referenz und versuchen Sie, eine C++-Entwicklungsumgebung mit der neuesten Modern CMake-Schreibweise aufzubauen.
+
 

@@ -340,3 +340,5 @@ Si vous avez l'occasion d'utiliser des LLM comme ChatGPT ou Claude à l'avenir, 
 
 ---
 *Cet article a été rédigé comme un guide pour ceux qui apprennent les bases mathématiques du traitement du langage naturel et de l'IA. Si vous avez des questions ou des discussions, n'hésitez pas à nous le faire savoir dans la section des commentaires !*
+
+

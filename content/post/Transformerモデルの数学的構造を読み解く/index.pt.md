@@ -340,3 +340,5 @@ Se você tiver a oportunidade de usar LLMs como ChatGPT e Claude no futuro, tent
 
 ---
 *Este artigo foi escrito como um guia para aqueles que desejam aprender os fundamentos matemáticos do processamento de linguagem natural e da IA. Sinta-se à vontade para deixar suas dúvidas ou comentários na seção de discussão abaixo!*
+
+

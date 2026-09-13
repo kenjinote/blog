@@ -35,16 +35,16 @@ Das anfängliche Preisgeld beginnt bei 2 Dollar.
 graph TD
     Start["Spielbeginn"] --> Toss1{"1. Münzwurf"}
     
-    Toss1 -->|Zahl 1/2| End1["Ende: 2 Dollar gewonnen"]
-    Toss1 -->|Kopf 1/2| Toss2{"2. Münzwurf"}
+    Toss1 -->|"Zahl 1/2"| End1["Ende: 2 Dollar gewonnen"]
+    Toss1 -->|"Kopf 1/2"| Toss2{"2. Münzwurf"}
     
-    Toss2 -->|Zahl 1/2| End2["Ende: 4 Dollar gewonnen"]
-    Toss2 -->|Kopf 1/2| Toss3{"3. Münzwurf"}
+    Toss2 -->|"Zahl 1/2"| End2["Ende: 4 Dollar gewonnen"]
+    Toss2 -->|"Kopf 1/2"| Toss3{"3. Münzwurf"}
     
-    Toss3 -->|Zahl 1/2| End3["Ende: 8 Dollar gewonnen"]
-    Toss3 -->|Kopf 1/2| Toss4{"..."}
+    Toss3 -->|"Zahl 1/2"| End3["Ende: 8 Dollar gewonnen"]
+    Toss3 -->|"Kopf 1/2"| Toss4{"..."}
     
-    Toss4 -.->|Je öfter in Folge| Infinite["Preisgeld verdoppelt sich unendlich!"]
+    Toss4 -.->|"Je öfter in Folge"| Infinite["Preisgeld verdoppelt sich unendlich!"]
 ```
 
 Nun eine Frage an Sie:
@@ -147,3 +147,4 @@ Das von Daniel Bernoulli vorgeschlagene Konzept des „Nutzens (Utility)“ wurd
 Unser Verhalten, Versicherungen abzuschließen oder unser Portfolio zu diversifizieren, lässt sich alles durch diesen menschlichen psychologischen Mechanismus des „abnehmenden Grenznutzens“ erklären (der Schmerz über einen großen Verlust ist viel größer als die Freude über einen großen Gewinn).
 
 Ein einfaches Rechenproblem eines Glücksspiels wurde zum Auslöser dafür, den menschlichen Geist zu entschlüsseln und die riesige Disziplin der Wirtschaftswissenschaften hervorzubringen.
+

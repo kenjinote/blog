@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (Platform Independent)"] --> B("CMake Engine")
     B --> C{"Target Operating System"}
     
-    C -->|Windows| D["Visual Studio Solution / MSBuild"]
-    C -->|macOS| E["Xcode Project / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Visual Studio Solution / MSBuild"]
+    C -->|"macOS"| E["Xcode Project / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Windows Executable (.exe)"]
     E --> H["macOS Executable (Mach-O)"]
@@ -384,3 +384,4 @@ MacとWindowsのクロスプラットフォーム開発には、歴史的背景�
 8.  **CI/CD**: マトリックスビルドを導入し、全対象OSでのクリーンなビルドとテストを自動化し、属人性を排除する。
 
 現在では Electron, Tauri, .NET などの強力なフレームワークがこれらの差異の多くを吸収してくれますが、基盤となるOSのネイティブな挙動（ファイルシステムやエンコーディング）の知識は、深刻なパフォーマンス問題や難解なバグを解決する際に依然として不可欠です。これらのベストプラクティスをプロジェクトの初期段階からチーム全体で共有・徹底することで、OSの違いによる不毛なデバッグ時間を大幅に削減し、本質的なソフトウェアの価値創造に集中することができるでしょう。
+

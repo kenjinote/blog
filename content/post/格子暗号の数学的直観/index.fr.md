@@ -134,8 +134,8 @@ C'est une propriété de rêve en théorie cryptographique. En effet, elle dissi
 
 ```mermaid
 graph TD
-    A["Problèmes de réseau dans le pire des cas (Gap-SVP, SIVP)"] -->|Réduction quantique/classique| B["Problème LWE en moyenne"]
-    B -->|Construction cryptographique| C["Systèmes cryptographiques basés sur LWE (PKE, KEM, FHE)"]
+    A["Problèmes de réseau dans le pire des cas (Gap-SVP, SIVP)"] -->|"Réduction quantique/classique"| B["Problème LWE en moyenne"]
+    B -->|"Construction cryptographique"| C["Systèmes cryptographiques basés sur LWE (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ Dans cet article, nous avons expliqué en détail l'intuition mathématique de l
 4. Dans les protocoles réels, **Ring-LWE** et **Module-LWE** utilisant des anneaux de polynômes sont adoptés pour améliorer l'efficacité de la communication et la vitesse de calcul, et servent de base au **ML-KEM** standard du NIST.
 
 À l'approche du changement de paradigme informatique sans précédent que représentent les ordinateurs quantiques, il est très romantique de penser que la "cryptographie sur les réseaux", née des profondeurs de l'algèbre linéaire classique et de la théorie des nombres, soutiendra la fondation de la sécurité Internet de demain. Les mathématiques qui sous-tendent la cryptographie sur les réseaux ne sont en aucun cas trop complexes, et avec des connaissances de base en algèbre linéaire et en probabilités, vous pouvez parfaitement comprendre sa belle structure. Nous espérons que cet article vous aidera à comprendre la cryptographie basée sur les réseaux, qui est au cœur de la PQC.
+

@@ -154,9 +154,9 @@ ollama rm phi3:instruct
 
 ```mermaid
 graph LR
-    A["基礎模型 (llama3.1)"] -->| 加入系統提示詞 | B["中介設定"]
-    B -->| 設定 Temperature & Top_p | C["客製化模型 (kansai-coder)"]
-    C -->| 執行 | D["互動式 CLI / API"]
+    A["基礎模型 (llama3.1)"] -->|"加入系統提示詞"| B["中介設定"]
+    B -->|"設定 Temperature & Top_p"| C["客製化模型 (kansai-coder)"]
+    C -->|"執行"| D["互動式 CLI / API"]
 ```
 
 作為範例，我們來建立一個會用關西腔（親切語氣）回答問題的程式設計助理模型。
@@ -496,5 +496,6 @@ $$
 隨著 Ollama 的出現，導入本機 LLM 的門檻大幅降低了。如同操作 Docker 容器般簡單的指令系統，加上外部應用程式能輕易使用的 REST API 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
 
 如果你正在為了雲端 LLM 的成本或安全性限制而苦惱，請務必參考本文介紹的步驟，使用 Ollama 建置本機 LLM 環境，並將其整合到你自己的應用程式中。你一定能夠更自由、更切身地感受到 AI 所擁有的潛力。
+
 
 

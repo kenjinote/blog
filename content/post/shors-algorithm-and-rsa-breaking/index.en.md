@@ -53,13 +53,13 @@ Enter "Shor's Algorithm," announced by Peter Shor in 1994. This algorithm was gr
 graph TD
     A[Input number N to be factored] --> B[Select a random integer a]
     B --> C{Greatest Common Divisor<br>of a and N}
-    C -->|Greater than 1| D[Luckily discovered a prime factor!]
-    C -->|1 Mutually prime| E[Quantum computer takes the stage]
+    C -->|"Greater than 1"| D[Luckily discovered a prime factor!]
+    C -->|"1 Mutually prime"| E[Quantum computer takes the stage]
     E --> F[Find the period r of the function<br>f_x = a^x mod N<br>using Quantum Fourier Transform]
     F --> G{Is period r even and<br>a^r/2 ≢ -1 mod N?}
-    G -->|Yes| H[Calculate greatest common divisor gcd_a^r/2 ± 1, N]
+    G -->|"Yes"| H[Calculate greatest common divisor gcd_a^r/2 ± 1, N]
     H --> I((Prime factorization successful!))
-    G -->|No| B
+    G -->|"No"| B
 ```
 
 Shor's algorithm does not solve the prime factorization problem directly, but rather uses theorems from number theory to transform it into another problem called the "Period Finding Problem," and solves that rapidly by leveraging the characteristics of a quantum computer.
@@ -183,3 +183,4 @@ Major software and platforms such as Google Chrome and Apple's iMessage have alr
 Quantum computers are transitioning from a pipe dream in the world of science fiction to a real engineering challenge. Shor's algorithm is a great intellectual achievement of humanity that merges mathematics and quantum mechanics, but at the same time, it harbors a "destructive power" that shakes the foundations of our digital society.
 
 RSA encryption will not suddenly become unusable tomorrow. However, considering the evolution of quantum technology and the risk of "Store Now, Decrypt Later," a large-scale migration that will remain in cryptographic history—the transition to PQC—has already begun. We are now witnessing the front lines of a paradigm shift in information security.
+

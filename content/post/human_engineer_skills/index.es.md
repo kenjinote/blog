@@ -141,8 +141,8 @@ A medida que los sistemas crecen, la coordinación entre servicios pasa de la co
 flowchart LR
     Client["Cliente"] --> API["API Gateway"]
     API --> Order["Servicio de pedidos (Contexto)"]
-    Order -. "Evento asíncrono (Kafka)" .-> Inventory["Servicio de inventario"]
-    Order -. "Evento asíncrono (Kafka)" .-> Payment["Servicio de pago"]
+    Order -. Evento asíncrono (Kafka) .-> Inventory["Servicio de inventario"]
+    Order -. Evento asíncrono (Kafka) .-> Payment["Servicio de pago"]
     
     Inventory --> DB1["DB de inventario"]
     Payment --> DB2["DB de pago"]
@@ -207,6 +207,7 @@ Los ingenieros del futuro ya no se preocuparán por cada detalle en las especifi
 
 Un verdadero ingeniero no es alguien que escribe código, sino alguien que resuelve problemas.
 Para aquellos que continúan refinando estas "habilidades de ingeniería exclusivas de los humanos" — modelado de dominios, diseño de arquitecturas escalables, comunicación con las partes interesadas y depuración de sistemas complejos — la IA no será un enemigo que roba trabajos, sino el socio más fuerte que expandirá exponencialmente su propia creatividad y productividad.
+
 
 
 

@@ -52,12 +52,12 @@ Puisque la preuve de $H_2$ a la même valeur que la preuve de $H_1$, la conclusi
 
 ```mermaid
 graph TD
-    A["Proposition H1 : Tous les corbeaux sont noirs"] -->|Équivalence logique (Contraposée)| B["Proposition H2 : Ce qui n'est pas noir n'est pas un corbeau"]
+    A["Proposition H1 : Tous les corbeaux sont noirs"] -->|"Équivalence logique (Contraposée)"| B["Proposition H2 : Ce qui n'est pas noir n'est pas un corbeau"]
     
-    C["Observation : Corbeau noir"] -->|Sert de preuve| A
-    D["Observation : Pomme bleue"] -->|Sert de preuve| B
+    C["Observation : Corbeau noir"] -->|"Sert de preuve"| A
+    D["Observation : Pomme bleue"] -->|"Sert de preuve"| B
     
-    D -.->|Par conséquent, cela devrait aussi être une preuve ?| A
+    D -.->|"Par conséquent, cela devrait aussi être une preuve ?"| A
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
@@ -87,4 +87,5 @@ En d'autres termes, la solution bayésienne est que logiquement « une pomme ble
 Ce paradoxe met en évidence à quel point le fondement même de la science, « l'induction (déduire des lois générales à partir d'observations) », repose sur des prémisses fragiles. Si l'on ne se fie qu'à l'équivalence logique, une « ornithologie de salon » devient possible, où l'on pourrait vérifier n'importe quelle loi de l'univers (« tous les cygnes sont blancs », « tous les extraterrestres ne sont pas verts », etc.) simplement en observant les objets hétéroclites dans sa chambre sans jamais sortir.
 
 Les corbeaux de Hempel est un paradoxe fascinant qui montre que les mots « preuve » et « prouver » que nous utilisons inconsciemment ne peuvent pas être pleinement appréhendés uniquement par les règles de la logique symbolique pure.
+
 

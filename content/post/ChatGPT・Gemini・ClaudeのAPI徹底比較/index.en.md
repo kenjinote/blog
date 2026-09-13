@@ -57,7 +57,7 @@ The following Mermaid diagram shows the overall picture from when an API request
 
 ```mermaid
 graph TD
-    A["Client Application"] -->|HTTP/REST or gRPC| B["API Gateway"]
+    A["Client Application"] -->|"HTTP/REST or gRPC"| B["API Gateway"]
     B --> C["Load Balancer"]
     C --> D["Inference Cluster"]
     D --> E["Tokenizer (BPE / SentencePiece)"]
@@ -66,7 +66,7 @@ graph TD
     G --> H["Output Layer (Logits)"]
     H --> I["Sampler (Temperature, Top-p, Top-k)"]
     I --> J["Detokenizer"]
-    J -->|Streaming Response (Chunk)| A
+    J -->|"Streaming Response (Chunk)"| A
 ```
 
 ### 3.1 Tokenization Algorithms
@@ -344,3 +344,4 @@ The future trend is an **"LLM Routing"** architecture that dynamically switches 
 For example, you can respond to simple questions from users with the cheap and fast `GPT-4o-mini` or `Gemini 1.5 Flash`, and fallback the task to `Claude 3.5 Sonnet` only when complex processing is deemed necessary, thereby achieving the optimal balance of cost and performance.
 
 The evolution of AI will not stop. Please deeply understand the strengths, weaknesses, and architectural characteristics of each API to build flexible and scalable AI applications.
+

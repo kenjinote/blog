@@ -58,10 +58,10 @@ Le diagramme Mermaid suivant montre l'architecture hybride illustrant comment l'
 
 ```mermaid
 graph TD
-    Dev["Développeur (IDE)"] -->| Saisie en temps réel | LocalProxy{"Routeur Intelligent / Proxy"}
+    Dev["Développeur (IDE)"] -->|"Saisie en temps réel"| LocalProxy{"Routeur Intelligent / Proxy"}
     
-    LocalProxy -->| Tâche rapide, priorité à la confidentialité | LocalAI["Moteur IA Local (Ollama / LM Studio)"]
-    LocalProxy -->| Logique complexe, grand contexte | CloudAI["Moteur IA Cloud (Copilot / OpenAI API)"]
+    LocalProxy -->|"Tâche rapide, priorité à la confidentialité"| LocalAI["Moteur IA Local (Ollama / LM Studio)"]
+    LocalProxy -->|"Logique complexe, grand contexte"| CloudAI["Moteur IA Cloud (Copilot / OpenAI API)"]
     
     subgraph "Environnement Local"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -94,17 +94,17 @@ Dans la pratique du codage, comment les développeurs doivent-ils déterminer «
 ```mermaid
 graph TD
     Start["Nouvelle tâche de codage"] --> Q1{"Le code est-il hautement confidentiel ?"}
-    Q1 -->|Oui| Action1["Utiliser l'IA locale (Llama 3 / CodeLlama)"]
-    Q1 -->|Non| Q2{"S'agit-il d'une simple autocomplétion en ligne ?"}
+    Q1 -->|"Oui"| Action1["Utiliser l'IA locale (Llama 3 / CodeLlama)"]
+    Q1 -->|"Non"| Q2{"S'agit-il d'une simple autocomplétion en ligne ?"}
     
-    Q2 -->|Oui| Q3{"La connexion réseau est-elle stable ?"}
-    Q3 -->|Oui| Action2["Utiliser GitHub Copilot"]
-    Q3 -->|Non| Action1
+    Q2 -->|"Oui"| Q3{"La connexion réseau est-elle stable ?"}
+    Q3 -->|"Oui"| Action2["Utiliser GitHub Copilot"]
+    Q3 -->|"Non"| Action1
     
-    Q2 -->|Non| Q4{"Besoin de logique architecturale complexe ou de refactorisation inter-fichiers ?"}
+    Q2 -->|"Non"| Q4{"Besoin de logique architecturale complexe ou de refactorisation inter-fichiers ?"}
     
-    Q4 -->|Oui| Action3["Utiliser l'IA Cloud (GPT-4 / Claude 3.5 Sonnet)"]
-    Q4 -->|Non| Action4["Utiliser l'IA locale pour les tâches moyennes pour économiser le coût de l'API"]
+    Q4 -->|"Oui"| Action3["Utiliser l'IA Cloud (GPT-4 / Claude 3.5 Sonnet)"]
+    Q4 -->|"Non"| Action4["Utiliser l'IA locale pour les tâches moyennes pour économiser le coût de l'API"]
 ```
 
 ### 3.1 Critère d'évaluation 1 : Confidentialité (Privacy and Security)
@@ -244,4 +244,6 @@ Plutôt qu'une opposition binaire entre « GitHub Copilot dans le cloud » et «
 N'hésitez pas à faire passer votre environnement IDE au niveau supérieur en vous référant aux arbres de décision et aux architectures présentés dans cet article. En passant du statut d'« utilisateur » d'IA à celui de personne qui « combine et utilise l'IA au bon endroit », votre efficacité de développement sera assurément propulsée (boostée).
 
 Happy Coding with Hybrid AI!
+
+
 

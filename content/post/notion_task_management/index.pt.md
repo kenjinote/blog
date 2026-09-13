@@ -48,9 +48,9 @@ flowchart TD
     T["Tasks (Banco de Dados de Tarefas)"]
     N["Notes (Banco de Dados Zettelkasten)"]
 
-    P -->| Relação 1:N | T
-    T -->| Relação N:N | N
-    P -->| Relação 1:N | N
+    P -->|"Relação 1:N"| T
+    T -->|"Relação N:N"| N
+    P -->|"Relação 1:N"| N
 ```
 
 ### Propriedades do banco de dados Projects
@@ -165,9 +165,9 @@ flowchart TD
     NOTION["Notion API"]
     DB["Notion Tasks DB (Banco de Dados de Tarefas)"]
 
-    GH -->| Envio de Webhook | GHA
-    GHA -->| Execução de script Python | NOTION
-    NOTION -->| Atualização do DB/Adição de Tarefa | DB
+    GH -->|"Envio de Webhook"| GHA
+    GHA -->|"Execução de script Python"| NOTION
+    NOTION -->|"Atualização do DB/Adição de Tarefa"| DB
 ```
 
 ### Criando automaticamente tarefas no Notion a partir das Issues do GitHub
@@ -273,6 +273,7 @@ Não importa quão avançado seja o sistema ou a ferramenta que você crie, seri
 O gerenciamento de tarefas com o Notion vai muito além de uma simples lista de afazeres. Ao combinar a organização de informações através do método PARA, a criação de redes de conhecimento com o Zettelkasten e a engenharia com a Notion API, você pode construir um "Segundo Cérebro (Second Brain)" que impulsionará fortemente o seu desenvolvimento pessoal e a escrita de blogs.
 
 Embora a configuração inicial leve algum tempo, uma vez que o sistema começa a funcionar, a carga cognitiva envolvida no gerenciamento de tarefas cai drasticamente, permitindo que você concentre toda a sua atenção no que realmente importa: "escrever código" e "escrever textos". Não deixe de usar este artigo como referência para construir o seu próprio e definitivo espaço de trabalho no Notion.
+
 
 
 

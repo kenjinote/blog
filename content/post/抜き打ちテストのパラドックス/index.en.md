@@ -59,15 +59,15 @@ Student A's proof uses a mathematical technique of **thinking backwards from "Fr
 
 ```mermaid
 graph TD
-    Fri["Friday morning<br>(No test Mon-Thu)"] -->| Predictable as 'Only Friday left' | NoFri["Test impossible on Friday"]
+    Fri["Friday morning<br>(No test Mon-Thu)"] -->|"Predictable as 'Only Friday left'"| NoFri["Test impossible on Friday"]
     
-    Thu["Thursday morning<br>(No test Mon-Wed)"] -->| Predictable as 'Not Friday so it must be today' | NoThu["Test impossible on Thursday"]
+    Thu["Thursday morning<br>(No test Mon-Wed)"] -->|"Predictable as 'Not Friday so it must be today'"| NoThu["Test impossible on Thursday"]
     
-    Wed["Wednesday morning"] -->| Predictable as 'Not Thu/Fri so it must be today' | NoWed["Test impossible on Wednesday"]
+    Wed["Wednesday morning"] -->|"Predictable as 'Not Thu/Fri so it must be today'"| NoWed["Test impossible on Wednesday"]
     
-    Tue["Tuesday morning"] -->| Predictable similarly | NoTue["Test impossible on Tuesday"]
+    Tue["Tuesday morning"] -->|"Predictable similarly"| NoTue["Test impossible on Tuesday"]
     
-    Mon["Monday morning"] -->| Predictable similarly | NoMon["Test impossible on Monday"]
+    Mon["Monday morning"] -->|"Predictable similarly"| NoMon["Test impossible on Monday"]
     
     NoFri -.-> Thu
     NoThu -.-> Wed
@@ -142,4 +142,5 @@ This paradox is applied not only to mathematics but also to our everyday lives.
 
 What we think of as "perfect reasoning" might actually be nothing more than a castle built on sand, resting on the baseless belief that "the other party will absolutely follow the rules."
 Next time a teacher says, "I'm giving a surprise test," it seems the most rational thing to do is to stop twisting logic and just quietly study every day.
+
 

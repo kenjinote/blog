@@ -340,3 +340,5 @@ Wenn Sie künftig die Gelegenheit haben, LLMs wie ChatGPT oder Claude zu nutzen,
 
 ---
 *Dieser Artikel wurde als Leitfaden für all jene verfasst, die die mathematischen Grundlagen der natürlichen Sprachverarbeitung und der KI erlernen möchten. Wenn Sie Fragen oder Diskussionsbedarf haben, lassen Sie es mich bitte in den Kommentaren wissen!*
+
+

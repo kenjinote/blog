@@ -163,10 +163,10 @@ Em projetos C++ do mundo real, sempre ocorrem dependências de sistemas externos
 
 ```mermaid
 flowchart LR
-    Test["Teste Unitário"] -->|injeta mock| Target["Serviço Alvo"]
-    Target -->|depende de| Interface["Interface (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|implementa| Interface
-    Test -->|configura| Mock
+    Test["Teste Unitário"] -->|"injeta mock"| Target["Serviço Alvo"]
+    Target -->|"depende de"| Interface["Interface (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"implementa"| Interface
+    Test -->|"configura"| Mock
 ```
 
 ### 5.1 Definição da Interface e Implementação da Classe Alvo
@@ -343,3 +343,4 @@ Neste artigo, explicamos detalhadamente como introduzir o Desenvolvimento Orient
 4. Visualização da cobertura de testes com **gcov/lcov**
 
 Embora o TDD seja uma abordagem que leva tempo para ser dominada, na programação de sistemas como C++, onde é exigido um equilíbrio entre desempenho e segurança, o retorno sobre o investimento é imensurável. Por favor, comece a praticar o TDD gradualmente no seu próximo projeto para obter um código C++ robusto e fácil de manter.
+

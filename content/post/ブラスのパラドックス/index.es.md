@@ -34,11 +34,11 @@ Las "autopistas anchas" nunca se congestionan sin importar cuántos coches circu
 
 ```mermaid
 graph LR
-    START["Inicio (4000 personas)"] -->|Carretera estrecha A: T=N/100| MID1["Punto intermedio 1"]
-    START -->|Autopista C: T=45 min| MID2["Punto intermedio 2"]
+    START["Inicio (4000 personas)"] -->|"Carretera estrecha A: T=N/100"| MID1["Punto intermedio 1"]
+    START -->|"Autopista C: T=45 min"| MID2["Punto intermedio 2"]
     
-    MID1 -->|Autopista B: T=45 min| GOAL["Meta"]
-    MID2 -->|Carretera estrecha D: T=N/100| GOAL
+    MID1 -->|"Autopista B: T=45 min"| GOAL["Meta"]
+    MID2 -->|"Carretera estrecha D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -59,13 +59,13 @@ Ahora supongamos que el alcalde construye un **"bypass ultrarrápido de ensueño
 
 ```mermaid
 graph LR
-    START["Inicio (4000 personas)"] -->|Carretera estrecha A: T=N/100| MID1["Punto intermedio 1"]
-    START -->|Autopista C: T=45 min| MID2["Punto intermedio 2"]
+    START["Inicio (4000 personas)"] -->|"Carretera estrecha A: T=N/100"| MID1["Punto intermedio 1"]
+    START -->|"Autopista C: T=45 min"| MID2["Punto intermedio 2"]
     
-    MID1 -.->|Nuevo bypass: T=0 min| MID2
+    MID1 -.->|"Nuevo bypass: T=0 min"| MID2
     
-    MID1 -->|Autopista B: T=45 min| GOAL["Meta"]
-    MID2 -->|Carretera estrecha D: T=N/100| GOAL
+    MID1 -->|"Autopista B: T=45 min"| GOAL["Meta"]
+    MID2 -->|"Carretera estrecha D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -110,3 +110,4 @@ La paradoja de Braess no es una mera teoría abstracta; ha sido observada repeti
   El mismo fenómeno puede ocurrir en el enrutamiento de Internet y en las redes eléctricas. Al añadir nuevos cables o líneas, los paquetes de datos se concentran en "la ruta más corta que parece óptima", lo que puede provocar la caída de toda la red.
 
 La paradoja de Braess ilustra magistralmente el dilema de las sociedades complejas: **"la suma de las decisiones racionales individuales (egoísmo) no siempre conduce al resultado óptimo para el conjunto"**. A veces, "eliminar opciones (libertad)" puede beneficiar a todos.
+

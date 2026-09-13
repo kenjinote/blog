@@ -60,11 +60,11 @@ graph LR
         NewR4["Quarto 4<br>(Hóspede C)"]
     end
     
-    R1 -->|Mudar| NewR2
-    R2 -->|Mudar| NewR3
-    R3 -->|Mudar| NewR4
+    R1 -->|"Mudar"| NewR2
+    R2 -->|"Mudar"| NewR3
+    R3 -->|"Mudar"| NewR4
     
-    NewGuest["Novo Hóspede"] -->|Check-in| NewR1
+    NewGuest["Novo Hóspede"] -->|"Check-in"| NewR1
     
     style NewR1 fill:#aaffaa,stroke:#333,stroke-width:2px
     style NewGuest fill:#ffaaaa,stroke:#333,stroke-width:2px
@@ -101,15 +101,15 @@ E, milagrosamente, **"todos os quartos de número ímpar (quarto 1, quarto 3, qu
 ```mermaid
 graph LR
     subgraph "Hóspedes atuais"
-        G1["Hóspede 1"] -->|Dobro| R2["Quarto 2"]
-        G2["Hóspede 2"] -->|Dobro| R4["Quarto 4"]
-        G3["Hóspede 3"] -->|Dobro| R6["Quarto 6"]
+        G1["Hóspede 1"] -->|"Dobro"| R2["Quarto 2"]
+        G2["Hóspede 2"] -->|"Dobro"| R4["Quarto 4"]
+        G3["Hóspede 3"] -->|"Dobro"| R6["Quarto 6"]
     end
     
     subgraph "Novos hóspedes do ônibus (infinitos)"
-        N1["Novo Hóspede 1"] -->|Para ímpar| R1["Quarto 1 (Vazio)"]
-        N2["Novo Hóspede 2"] -->|Para ímpar| R3["Quarto 3 (Vazio)"]
-        N3["Novo Hóspede 3"] -->|Para ímpar| R5["Quarto 5 (Vazio)"]
+        N1["Novo Hóspede 1"] -->|"Para ímpar"| R1["Quarto 1 (Vazio)"]
+        N2["Novo Hóspede 2"] -->|"Para ímpar"| R3["Quarto 3 (Vazio)"]
+        N3["Novo Hóspede 3"] -->|"Para ímpar"| R5["Quarto 5 (Vazio)"]
     end
     
     style R1 fill:#aaffaa,stroke:#333
@@ -180,3 +180,4 @@ Todas essas intuições óbvias são espetacularmente traídas.
 O mundo do infinito é um tesouro de paradoxos (verdades contrárias à intuição). Os matemáticos, em vez de temerem esses paradoxos, os dominaram pelo poder da lógica, classificaram-nos e criaram o belo sistema moderno da teoria dos conjuntos.
 
 Da próxima vez que você ouvir "o hotel está lotado", por favor, imagine: "E se este hotel fosse o Grande Hotel de Hilbert?".
+

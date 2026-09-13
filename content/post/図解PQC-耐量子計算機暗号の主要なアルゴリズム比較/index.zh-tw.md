@@ -18,9 +18,9 @@ description: '針對量子電腦崛起帶來的密碼學危機威脅，以及作
 
 ```mermaid
 graph TD
-    A["大規模的量子電腦 (CRQC)"] -->|執行| B["Shor演算法"]
-    B -->|以多項式時間破解| C["整數分解問題 (RSA)"]
-    B -->|以多項式時間破解| D["離散對數問題 (ECC / ECDSA)"]
+    A["大規模的量子電腦 (CRQC)"] -->|"執行"| B["Shor演算法"]
+    B -->|"以多項式時間破解"| C["整數分解問題 (RSA)"]
+    B -->|"以多項式時間破解"| D["離散對數問題 (ECC / ECDSA)"]
     C --> E["密碼通訊的竊聽、資料竄改、身分冒用"]
     D --> E
     F["Store Now, Decrypt Later (SNDL)"] --> E
@@ -219,8 +219,8 @@ FALCON壓倒性的優勢在於其**簽章尺寸與公開金鑰尺寸極為精巧
 ```mermaid
 graph LR
     A["數位簽章的需求"] --> B{"最優先的限制條件是？"}
-    B -->| 實作的簡單性、通用性、常數時間實作的容易度 | C["Dilithium (ML-DSA)"]
-    B -->| 通訊頻寬的最小化、資料尺寸的精巧度 | D["FALCON (FN-DSA)"]
+    B -->|"實作的簡單性、通用性、常數時間實作的容易度"| C["Dilithium (ML-DSA)"]
+    B -->|"通訊頻寬的最小化、資料尺寸的精巧度"| D["FALCON (FN-DSA)"]
     C --> E["通用的TLS憑證、軟體的電子簽章"]
     D --> F["封包尺寸限制嚴格的協定、特殊環境"]
 ```
@@ -300,12 +300,12 @@ Classic McEliece令人驚訝之處在於，**從提出至今已經超過40年，
 
 ```mermaid
 graph TD
-    A["客戶端"] -->|① 傳送 X25519 的公開金鑰 + Kyber 的公開金鑰| B["伺服器"]
-    B -->|② 回傳 X25519 的共享金鑰 + Kyber 的封裝密文| A
+    A["客戶端"] -->|"① 傳送 X25519 的公開金鑰 + Kyber 的公開金鑰"| B["伺服器"]
+    B -->|"② 回傳 X25519 的共享金鑰 + Kyber 的封裝密文"| A
     A --> C{"衍生主秘密金鑰 (KDF)"}
     B --> C
-    C -->|輸入: (X25519 的共同金鑰) || (Kyber 的共同金鑰)| D["安全的通訊金鑰 (AES-256 / ChaCha20)"]
-    D -->| 同時抵抗 量子威脅 ＆ 古典漏洞 | E["安全的混合密碼通訊 (TLS 1.3)"]
+    C -->|"輸入: (X25519 的共同金鑰)"|| (Kyber 的共同金鑰)| D["安全的通訊金鑰 (AES-256 / ChaCha20)"]
+    D -->|"同時抵抗 量子威脅 ＆ 古典漏洞"| E["安全的混合密碼通訊 (TLS 1.3)"]
 ```
 
 透過這種方式，就能實現「萬一量子電腦實現且ECC被破解，還有Kyber能保護通訊」，反之「萬一Kyber被發現有未知數學缺陷，還有ECC能保護通訊」這種堅固的雙重防護安全性。代表性的例子就是IETF正在進行標準化的 **X25519MLKEM768 (舊稱 X25519Kyber768)** 草案，目前網頁瀏覽器與最先進的伺服器之間的通訊，正是採用這種混合方式。
@@ -328,5 +328,6 @@ NIST完成 FIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) 的標準�
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 
 

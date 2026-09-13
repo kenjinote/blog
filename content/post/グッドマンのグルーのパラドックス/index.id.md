@@ -49,7 +49,7 @@ Jika kita mengikuti aturan induksi, semua observasi masa lalu mendukung Hipotesi
 
 ```mermaid
 graph TD
-    A["Observasi masa lalu: Semua zamrud berwarna hijau"] -->|Pada saat yang sama| B["Observasi masa lalu: Semua zamrud berwarna 'grue'"]
+    A["Observasi masa lalu: Semua zamrud berwarna hijau"] -->|"Pada saat yang sama"| B["Observasi masa lalu: Semua zamrud berwarna 'grue'"]
     
     A --> C["Prediksi induktif A: Zamrud di masa depan juga akan berwarna 'hijau'"]
     B --> D["Prediksi induktif B: Zamrud di masa depan juga akan berwarna 'grue'"]
@@ -81,3 +81,4 @@ Dengan kata lain, kata mana yang kita anggap "dasar" hanyalah kebiasaan bahasa k
 Paradoks "grue" (teka-teki baru tentang induksi) dari Goodman membuktikan bahwa teori ilmiah tidak hanya ditentukan oleh sekadar data objektif, tetapi sangat bergantung pada "kerangka konseptual (bahasa) seperti apa yang kita gunakan untuk memahami dunia".
 
 Bahkan dalam konteks AI dan pembelajaran mesin (machine learning), paradoks ini tetap memiliki makna penting di era modern sebagai masalah "overfitting" dan "bias", di mana meskipun data pelatihannya sama, prediksi terhadap masa depan dapat berubah sepenuhnya tergantung pada "struktur model (fitur mana yang menjadi fokus)".
+

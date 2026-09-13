@@ -86,11 +86,11 @@ PostCSS是一个使用JavaScript插件来转换CSS的工具。Tailwind CSS本身
 
 ```mermaid
 flowchart TD
-    A["原生CSS (styles.css)"] -->|Parser| B["AST (抽象语法树)"]
+    A["原生CSS (styles.css)"] -->|"Parser"| B["AST (抽象语法树)"]
     B --> C["插件 1: Tailwind CSS"]
     C --> D["插件 2: Autoprefixer"]
     D --> E["插件 N: cssnano"]
-    E -->|Stringifier| F["编译并优化后的CSS"]
+    E -->|"Stringifier"| F["编译并优化后的CSS"]
 ```
 
 1. **Parser（解析器）**：解析输入的原始CSS字符串，将其转换为程序可以操作的数据结构，即AST（抽象语法树）。
@@ -272,8 +272,8 @@ module.exports = {
 
 ```mermaid
 flowchart TD
-    A["assets/css/main.css"] -->|resources.Get| B["Hugo内存空间"]
-    B -->|resources.PostCSS| C["PostCSS + Tailwind JIT 处理"]
+    A["assets/css/main.css"] -->|"resources.Get"| B["Hugo内存空间"]
+    B -->|"resources.PostCSS"| C["PostCSS + Tailwind JIT 处理"]
     C --> D{"hugo.IsProduction ?"}
     D -- Yes (生产环境) --> E["minify (删除空格与换行)"]
     E --> F["fingerprint (计算哈希)"]
@@ -412,4 +412,5 @@ NODE_ENV=production hugo --minify --environment production
 此外，由于输出的CSS大小总是被最小化的，这直接提升了Core Web Vitals的分数，从SEO的角度来看也非常有利。
 
 Hugo与Tailwind CSS的组合，无论是对于个人的技术博客还是大型的企业网站，在所有项目中都将继续是“最佳选择”之一。请务必活用这条强大的工具链，享受舒适的Web开发生活吧！
+
 

@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (Independen Platform)"] --> B("Mesin CMake")
     B --> C{"Sistem Operasi Target"}
     
-    C -->|Windows| D["Solusi Visual Studio / MSBuild"]
-    C -->|macOS| E["Proyek Xcode / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Solusi Visual Studio / MSBuild"]
+    C -->|"macOS"| E["Proyek Xcode / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Windows Executable (.exe)"]
     E --> H["macOS Executable (Mach-O)"]
@@ -384,3 +384,4 @@ Pengembangan lintas platform untuk Mac dan Windows menghadirkan berbagai macam t
 8.  **CI/CD**: Terapkan Matrix Build, otomatiskan build yang bersih dan pengujian pada semua OS target, serta hilangkan ketergantungan pada individu.
 
 Saat ini, framework (kerangka kerja) canggih seperti Electron, Tauri, dan .NET dapat mengatasi banyak perbedaan ini. Namun, pemahaman yang kuat tentang perilaku bawaan OS yang mendasarinya (seperti sistem file dan pengkodean) masih sangat diperlukan ketika menyelesaikan masalah kinerja yang serius atau bug yang rumit. Dengan membagikan dan menerapkan praktik-praktik terbaik ini secara menyeluruh ke seluruh tim sejak tahap awal proyek, Anda dapat secara drastis mengurangi waktu debugging (pencarian bug) yang sia-sia akibat perbedaan OS, dan fokus pada penciptaan nilai perangkat lunak yang sesungguhnya.
+

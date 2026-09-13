@@ -340,3 +340,5 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 ---
 *本文旨在為學習自然語言處理與 AI 數學基礎的讀者提供指南。如果有任何問題或想討論的地方，歡迎在留言區告訴我們！*
+
+

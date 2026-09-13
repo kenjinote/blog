@@ -141,8 +141,8 @@ Kapan pola arsitektur tingkat lanjut seperti Saga Pattern atau CQRS (Command Que
 flowchart LR
     Client["Klien"] --> API["API Gateway"]
     API --> Order["Layanan Pesanan (Konteks)"]
-    Order -. "Peristiwa Asinkron (Kafka)" .-> Inventory["Layanan Inventaris"]
-    Order -. "Peristiwa Asinkron (Kafka)" .-> Payment["Layanan Pembayaran"]
+    Order -. Peristiwa Asinkron (Kafka) .-> Inventory["Layanan Inventaris"]
+    Order -. Peristiwa Asinkron (Kafka) .-> Payment["Layanan Pembayaran"]
     
     Inventory --> DB1["DB Inventaris"]
     Payment --> DB2["DB Pembayaran"]
@@ -207,6 +207,7 @@ Insinyur masa depan tidak perlu khawatir tentang detail spesifikasi bahasa pemro
 
 Insinyur sejati bukanlah seseorang yang menulis kode, melainkan seseorang yang memecahkan masalah.
 Pemodelan domain, desain arsitektur yang dapat diskalakan, komunikasi dengan pemangku kepentingan, dan debugging sistem yang kompleks. Bagi mereka yang terus mengasah "keterampilan insinyur khas manusia" ini, AI bukan musuh yang mencuri pekerjaan, melainkan mitra terkuat yang akan melipatgandakan kreativitas dan produktivitas mereka puluhan kali lipat.
+
 
 
 

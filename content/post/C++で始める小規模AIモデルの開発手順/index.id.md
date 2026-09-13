@@ -46,7 +46,7 @@ graph TD
     I --> J["ID Token Berikutnya"]
     J --> K["Detokenizer"]
     K --> L["Potongan Teks Keluaran"]
-    J -.-> |"Tambahkan ke Konteks"| C
+    J -.->|"Tambahkan ke Konteks"| C
 ```
 
 Karena ini adalah model auto-regresif, token yang dihasilkan ditambahkan kembali ke konteks dan disirkulasikan sebagai masukan untuk memprediksi token berikutnya (bagian garis putus-putus pada diagram).
@@ -241,3 +241,5 @@ cmake --build . --config Release
 ## 10. Kesimpulan
 
 Membangun mesin inferensi dari awal untuk model AI berskala kecil seperti TinyLLaMA menggunakan C++ dan ggml adalah kesempatan bagus untuk mengungkap kotak hitam (*black box*) pembelajaran mendalam dan mempelajari keindahan kontrol perangkat keras tingkat rendah. Mari kita membuka masa depan Edge AI sambil menikmati sepenuhnya esensi pemrograman sistem, seperti pemuatan *zero-copy* menggunakan pemetaan memori, optimisasi SIMD, dan pembangunan tembolok KV.
+
+

@@ -27,12 +27,12 @@ Gambar di bawah ini menunjukkan alur pipeline anonimisasi dalam Data Lake terpus
 
 ```mermaid
 flowchart TD
-    A["Sumber Data (Web, IoT, Seluler)"] -->| Ingesti | B["Zona Data Mentah (Belum Disentuh)"]
-    B -->| Proses ETL | C["Pipeline Anonimisasi & Pembersihan"]
-    C -->| Pseudonimisasi / Tokenisasi | D["Zona Tepercaya (k-anonim)"]
-    D -->| Rekayasa Fitur | E["Zona Disempurnakan (Siap untuk ML)"]
-    E -->| Pelatihan Model | F["Alat BI & Model ML"]
-    C -->| Log Audit | G["Pusat Keamanan & Kepatuhan"]
+    A["Sumber Data (Web, IoT, Seluler)"] -->|"Ingesti"| B["Zona Data Mentah (Belum Disentuh)"]
+    B -->|"Proses ETL"| C["Pipeline Anonimisasi & Pembersihan"]
+    C -->|"Pseudonimisasi / Tokenisasi"| D["Zona Tepercaya (k-anonim)"]
+    D -->|"Rekayasa Fitur"| E["Zona Disempurnakan (Siap untuk ML)"]
+    E -->|"Pelatihan Model"| F["Alat BI & Model ML"]
+    C -->|"Log Audit"| G["Pusat Keamanan & Kepatuhan"]
 ```
 
 Dalam pipeline semacam ini, proses seperti hashing, masking, dan enkripsi diterapkan secara otomatis saat data masuk. Namun, seperti yang akan dibahas nanti, masking sederhana atau pseudonimisasi (Pseudonymization) saja tidak dapat sepenuhnya menghilangkan risiko "Re-identifikasi" (Re-identification) dengan mencocokkannya menggunakan sumber data lain.
@@ -104,20 +104,20 @@ flowchart TD
     Device2["Perangkat Edge 2 (Ponsel Pintar)"]
     Device3["Perangkat Edge 3 (Ponsel Pintar)"]
 
-    Server -->| 1. Siarkan Bobot Model Global | Device1
-    Server -->| 1. Siarkan Bobot Model Global | Device2
-    Server -->| 1. Siarkan Bobot Model Global | Device3
+    Server -->|"1. Siarkan Bobot Model Global"| Device1
+    Server -->|"1. Siarkan Bobot Model Global"| Device2
+    Server -->|"1. Siarkan Bobot Model Global"| Device3
 
-    Device1 -->| 2. Pelatihan Lokal pada Data Pribadi | Device1
-    Device2 -->| 2. Pelatihan Lokal pada Data Pribadi | Device2
-    Device3 -->| 2. Pelatihan Lokal pada Data Pribadi | Device3
+    Device1 -->|"2. Pelatihan Lokal pada Data Pribadi"| Device1
+    Device2 -->|"2. Pelatihan Lokal pada Data Pribadi"| Device2
+    Device3 -->|"2. Pelatihan Lokal pada Data Pribadi"| Device3
 
-    Device1 -->| 3. Transmisikan Gradien/Pembaruan Model | Server
-    Device2 -->| 3. Transmisikan Gradien/Pembaruan Model | Server
-    Device3 -->| 3. Transmisikan Gradien/Pembaruan Model | Server
+    Device1 -->|"3. Transmisikan Gradien/Pembaruan Model"| Server
+    Device2 -->|"3. Transmisikan Gradien/Pembaruan Model"| Server
+    Device3 -->|"3. Transmisikan Gradien/Pembaruan Model"| Server
 
-    Server -->| 4. Agregasi (FedAvg) | Server
-    Server -->| 5. Perbarui Model Global | Server
+    Server -->|"4. Agregasi (FedAvg)"| Server
+    Server -->|"5. Perbarui Model Global"| Server
 ```
 
 #### Algoritma Federated Averaging (FedAvg)
@@ -218,6 +218,7 @@ Namun, solusi teknologi belum sepenuhnya sempurna. Dalam Pembelajaran Federasi, 
 ## Kesimpulan
 
 Nasib informasi pribadi di era big data melampaui sekadar masalah teknis dan menimbulkan pertanyaan mendasar mengenai masyarakat seperti apa yang kita inginkan. Bagaimana kita melindungi martabat serta privasi individu sambil terus menikmati kenyamanan yang ada. Solusi yang berkelanjutan hanya dapat dicapai melalui trinitas antara pembentukan regulasi hukum, inovasi tanpa henti pada teknologi perlindungan privasi, dan literasi yang tinggi dari kita masing-masing sebagai penyedia data. Privasi dan kenyamanan tidak lagi menjadi trade-off, melainkan akan berevolusi menjadi "persyaratan mutlak" yang dapat berjalan seiringan berkat bantuan teknologi terbaru.
+
 
 
 

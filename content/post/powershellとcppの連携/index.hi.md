@@ -260,13 +260,13 @@ C++ से स्क्रिप्ट चलाते समय, डायन�
 
 ```mermaid
 flowchart TD
-    A["C++ एजेंट सेवा"] -->|RegQueryValueEx| B["Windows रजिस्ट्री"]
-    B -->|Return Script Path| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|Execute| D["व्यवस्थापक स्क्रिप्ट (उदा., Restart-Service)"]
-    D -->|stdout via Pipe| C
-    C -->|ReadFile| A
-    A -->|Log| E["इवेंट व्यूअर / लॉग फ़ाइल"]
+    A["C++ एजेंट सेवा"] -->|"RegQueryValueEx"| B["Windows रजिस्ट्री"]
+    B -->|"Return Script Path"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"Execute"| D["व्यवस्थापक स्क्रिप्ट (उदा., Restart-Service)"]
+    D -->|"stdout via Pipe"| C
+    C -->|"ReadFile"| A
+    A -->|"Log"| E["इवेंट व्यूअर / लॉग फ़ाइल"]
 ```
 
 ## प्रदर्शन विश्लेषण (Performance Analysis) और ऑफलोडिंग (Offloading) के लाभ
@@ -316,3 +316,4 @@ P/Invoke का उपयोग करके C++ DLL को कॉल करक�
 ---
 
 *इस तकनीकी ब्लॉग में, हम भविष्य में Windows आंतरिक संरचना और उन्नत स्वचालन से संबंधित गहन विषयों को कवर करना जारी रखेंगे। यदि आपके कोई प्रश्न या प्रतिक्रिया है, तो कृपया उन्हें टिप्पणी अनुभाग (comment section) में छोड़ दें।*
+

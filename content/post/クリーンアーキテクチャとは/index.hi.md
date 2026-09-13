@@ -109,9 +109,9 @@ graph TD
 
 ```mermaid
 graph LR
-    A["फ्रेमवर्क्स और ड्राइवर्स"] -->| निर्भरता | B["इंटरफ़ेस एडेप्टर्स"]
-    B -->| निर्भरता | C["यूज़ केस"]
-    C -->| निर्भरता | D["एंटिटीज"]
+    A["फ्रेमवर्क्स और ड्राइवर्स"] -->|"निर्भरता"| B["इंटरफ़ेस एडेप्टर्स"]
+    B -->|"निर्भरता"| C["यूज़ केस"]
+    C -->|"निर्भरता"| D["एंटिटीज"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,4 +422,5 @@ test('मौजूदा ईमेल पते के साथ पंजीक
 
 ---
 *Reference: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin*
+
 

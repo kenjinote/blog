@@ -71,10 +71,10 @@ graph TD
         X["X = 0.4128..."]
     end
     
-    R1 -->|Soma +1 à 1ª casa| X
-    R2 -->|Soma +1 à 2ª casa| X
-    R3 -->|Soma +1 à 3ª casa| X
-    R4 -->|Soma +1 à 4ª casa| X
+    R1 -->|"Soma +1 à 1ª casa"| X
+    R2 -->|"Soma +1 à 2ª casa"| X
+    R3 -->|"Soma +1 à 3ª casa"| X
+    R4 -->|"Soma +1 à 4ª casa"| X
     
     style X fill:#aaffaa,stroke:#333,stroke-width:2px
 ```
@@ -130,3 +130,4 @@ O resultado deduzido a partir disso é o famoso **"Teorema da Incompletude de G�
 Foi uma grande descoberta que provou os limites do conhecimento humano: "Por mais rigorosas que sejam as regras matemáticas criadas, dentro dessas regras invariavelmente surgirão 'verdades que não podem ser provadas nem refutadas' (a matemática é incompleta)".
 
 O Paradoxo de Richard começou como um mero jogo de palavras contraditório, e com o tempo evoluiu para a arma mais poderosa para destruir a "absolutividade" da disciplina chamada matemática.
+

@@ -37,18 +37,18 @@ Por que isso aconteceria? A lógica de Zenão é a seguinte:
 ```mermaid
 graph LR
     subgraph "Passo 1"
-        A1["Aquiles (Início)"] -->|Alcançar| T1["Posição inicial da tartaruga"]
-        T1_Start["Tartaruga"] -->|Movimento| T2_Pos["Um pouco à frente"]
+        A1["Aquiles (Início)"] -->|"Alcançar"| T1["Posição inicial da tartaruga"]
+        T1_Start["Tartaruga"] -->|"Movimento"| T2_Pos["Um pouco à frente"]
     end
     
     subgraph "Passo 2"
-        A2["Aquiles"] -->|Alcançar| T2["Próxima posição da tartaruga"]
-        T2_Start["Tartaruga"] -->|Movimento| T3_Pos["Ainda mais à frente"]
+        A2["Aquiles"] -->|"Alcançar"| T2["Próxima posição da tartaruga"]
+        T2_Start["Tartaruga"] -->|"Movimento"| T3_Pos["Ainda mais à frente"]
     end
     
     subgraph "Passo 3"
-        A3["Aquiles"] -->|Alcançar| T3["Próxima posição da tartaruga novamente"]
-        T3_Start["Tartaruga"] -->|Continua infinitamente...| Infinity["Nunca alcançará!?"]
+        A3["Aquiles"] -->|"Alcançar"| T3["Próxima posição da tartaruga novamente"]
+        T3_Start["Tartaruga"] -->|"Continua infinitamente..."| Infinity["Nunca alcançará!?"]
     end
 ```
 
@@ -167,4 +167,5 @@ No entanto, para os antigos filósofos gregos que não tinham conceitos como "in
 A profunda questão levantada por este paradoxo: "O que é contínuo?" e "O que significa poder dividir infinitamente?", tornou-se uma força motriz importante que levou ao nascimento do **"cálculo"** por Newton e Leibniz, e também serviu de base para os fundamentos da matemática moderna.
 
 Grandes paradoxos não são apenas ilusórios, mas são também chaves para abrir novas portas na matemática.
+
 

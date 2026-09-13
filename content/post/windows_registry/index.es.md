@@ -148,12 +148,12 @@ flowchart TD
     HKLM_Soft["HKLM\\SOFTWARE"]
     HKLM_WOW64["HKLM\\SOFTWARE\\WOW6432Node"]
 
-    App32 -->| RegOpenKeyEx() | RegAPI
-    App64 -->| RegOpenKeyEx() | RegAPI
+    App32 -->|"RegOpenKeyEx()"| RegAPI
+    App64 -->|"RegOpenKeyEx()"| RegAPI
     RegAPI --> CM
 
-    CM -->| Si es un proceso de 64 bits | HKLM_Soft
-    CM -->| Si es un proceso de 32 bits (Redirección) | HKLM_WOW64
+    CM -->|"Si es un proceso de 64 bits"| HKLM_Soft
+    CM -->|"Si es un proceso de 32 bits (Redirección)"| HKLM_WOW64
 ```
 Cuando se edita el registro desde un script de PowerShell o una aplicación C#, hay que estar muy consciente de si el proceso en ejecución en sí es de 32 o 64 bits. De lo contrario, causará el molesto problema de "la configuración que supuestamente escribí no se puede ver desde el Explorador (está escrita en un lugar diferente)".
 
@@ -399,6 +399,7 @@ Para terminar, aquí tienes un resumen de principios de diseño y mejores práct
 ## Conclusión
 
 El Registro de Windows es un sistema base poderoso y complejo que gestiona de manera integrada todos los comportamientos del sistema operativo y las configuraciones de las aplicaciones. La edición manual desordenada conlleva un alto riesgo de corrupción del sistema que ha sido comprobado matemáticamente. Por lo tanto, en el desarrollo y la administración de sistemas modernos es esencial realizar una gestión de la configuración de forma segura, verificable y reproducible siguiendo el principio de Infrastructure as Code, empleando medios programables como PowerShell o C#. Utiliza la profunda comprensión de la arquitectura y los patrones de implementación explicados en este artículo para intentar construir entornos de Windows más sólidos y seguros.
+
 
 
 

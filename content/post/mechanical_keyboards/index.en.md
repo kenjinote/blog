@@ -42,9 +42,9 @@ In the case of tactile switches (brown switches) or clicky switches (blue switch
 ```mermaid
 flowchart TD
     A["Start of finger press"] --> B{"Switch type"}
-    B -->|Linear| C["Resistance increases linearly"]
-    B -->|Tactile| D["Physical resistance (bump) in the middle"]
-    B -->|Clicky| E["Sound generation mechanism operates simultaneously with the bump"]
+    B -->|"Linear"| C["Resistance increases linearly"]
+    B -->|"Tactile"| D["Physical resistance (bump) in the middle"]
+    B -->|"Clicky"| E["Sound generation mechanism operates simultaneously with the bump"]
     C --> F["Reach Actuation Point"]
     D --> F
     E --> F
@@ -78,13 +78,13 @@ Inside a keyboard, there are anywhere from dozens to over 100 switches, but sinc
 
 ```mermaid
 flowchart LR
-    M["Microcontroller (MCU)"] -->|Switch Row output to High/Low| R1["Row 1"]
+    M["Microcontroller (MCU)"] -->|"Switch Row output to High/Low"| R1["Row 1"]
     M --> R2["Row 2"]
     R1 --> S11["Switch 1,1"] & S12["Switch 1,2"]
     R2 --> S21["Switch 2,1"] & S22["Switch 2,2"]
     S11 & S21 --> C1["Column 1"]
     S12 & S22 --> C2["Column 2"]
-    C1 & C2 -->|Detect and read voltage| M
+    C1 & C2 -->|"Detect and read voltage"| M
 ```
 
 **Polling Rate** is the frequency at which the keyboard reports its "current key status" to the PC. Standard keyboards are 125Hz (once every 8ms), but high-end models have ultra-high-speed communication such as 1000Hz (once every 1ms) or recently 8000Hz (once every 0.125ms).
@@ -201,6 +201,7 @@ Choosing a keyboard is a process of "optimizing your own interface" throughout y
 The 5 keyboards introduced this time (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) are all masterpieces aiming for the "best input experience" with different approaches. By all means, please find your best partner according to your typing style and the physical troubles you have.
 
 An investment in a keyboard will surely bring returns to you as "millions of lines of bug-free code".
+
 
 
 

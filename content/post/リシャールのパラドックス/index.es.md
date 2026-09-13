@@ -71,10 +71,10 @@ graph TD
         X["X = 0.4128..."]
     end
     
-    R1 -->|+1 al 1er dígito| X
-    R2 -->|+1 al 2do dígito| X
-    R3 -->|+1 al 3er dígito| X
-    R4 -->|+1 al 4to dígito| X
+    R1 -->|"+1 al 1er dígito"| X
+    R2 -->|"+1 al 2do dígito"| X
+    R3 -->|"+1 al 3er dígito"| X
+    R4 -->|"+1 al 4to dígito"| X
     
     style X fill:#aaffaa,stroke:#333,stroke-width:2px
 ```
@@ -130,3 +130,4 @@ El resultado que derivó de esto es el famoso **"Teorema de Incompletitud de Gö
 Fue un gran descubrimiento que demostró los límites del conocimiento humano: "Sin importar cuán rigurosamente construyas las reglas matemáticas, dentro de esas reglas siempre surgirán 'verdades que no se pueden probar ni refutar' (las matemáticas son incompletas)".
 
 La paradoja de Richard comenzó como un simple juego de palabras contradictorio, y eventualmente evolucionó hasta convertirse en el arma más poderosa para destruir la "absolutidad" de las matemáticas como disciplina académica.
+

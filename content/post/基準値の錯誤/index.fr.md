@@ -56,11 +56,11 @@ graph TD
     A["Population totale (1 000 000 personnes)"] --> B["Personnes malades (100 personnes)"]
     A --> C["Personnes en bonne santé (999 900 personnes)"]
     
-    B -->|99% de réussite| B1["Vrais positifs (99 personnes)"]
-    B -->|1% d'échec| B2["Faux négatifs (1 personne)"]
+    B -->|"99% de réussite"| B1["Vrais positifs (99 personnes)"]
+    B -->|"1% d'échec"| B2["Faux négatifs (1 personne)"]
     
-    C -->|99% de réussite| C1["Vrais négatifs (989 901 personnes)"]
-    C -->|1% d'échec| C2["Faux positifs (9 999 personnes)"]
+    C -->|"99% de réussite"| C1["Vrais négatifs (989 901 personnes)"]
+    C -->|"1% d'échec"| C2["Faux positifs (9 999 personnes)"]
     
     B1 -.-> D{"Nombre total de personnes déclarées « positives » : 10 098 personnes"}
     C2 -.-> D
@@ -103,3 +103,4 @@ Cette illusion provoque des paniques et de mauvais jugements non seulement en m�
   Même si vous vous sentez en danger après avoir vu aux informations que « XX % des voitures impliquées dans des accidents étaient conduites par des personnes âgées », à moins de prendre en compte la « proportion de personnes âgées parmi tous les conducteurs sur la route à l'origine (taux de base) », il est impossible de savoir si un groupe d'âge spécifique est réellement plus enclin à causer des accidents.
 
 L'« erreur du taux de base » nous enseigne l'importance de la pensée statistique : face à des chiffres choquants ou à des cas individuels, il faut toujours revenir à la question **« dans quelle mesure cela est-il susceptible de se produire dans l'ensemble à l'origine (taux de base) ? »**.
+

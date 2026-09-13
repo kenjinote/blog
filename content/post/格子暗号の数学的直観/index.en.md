@@ -134,8 +134,8 @@ This is a dream-like property in cryptographic theory. This is because it dispel
 
 ```mermaid
 graph TD
-    A["Worst-case Lattice Problems (Gap-SVP, SIVP)"] -->|Quantum/Classical Reduction| B["Average-case LWE Problem"]
-    B -->|Cryptographic Construction| C["LWE-based Cryptosystems (PKE, KEM, FHE)"]
+    A["Worst-case Lattice Problems (Gap-SVP, SIVP)"] -->|"Quantum/Classical Reduction"| B["Average-case LWE Problem"]
+    B -->|"Cryptographic Construction"| C["LWE-based Cryptosystems (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ In this article, we explained the mathematical intuition of lattice-based crypto
 4. In real-world protocols, **Ring-LWE** and **Module-LWE** using polynomial rings are adopted to improve communication efficiency and computation speed, serving as the foundation for the NIST-standard **ML-KEM**.
 
 As the unprecedented computational paradigm shift of quantum computers approaches, it is quite romantic that "lattice-based cryptography," born from the depths of classical linear algebra and number theory, will bear the foundation of future internet security. The math that forms the foundation of lattice-based cryptography is by no means too esoteric, and anyone with a basic knowledge of linear algebra and probability can fully understand its beautiful structure. We hope this article has helped you understand lattice-based cryptography, the core of PQC.
+

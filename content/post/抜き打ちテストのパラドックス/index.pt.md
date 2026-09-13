@@ -59,15 +59,15 @@ A prova do aluno A usa uma técnica matemática de **raciocinar de trás para fr
 
 ```mermaid
 graph TD
-    Fri["Manhã de sexta-feira<br>(Sem teste de seg a qui)"] -->|Previsível que 'só resta sexta'| NoFri["Teste impossível na sexta-feira"]
+    Fri["Manhã de sexta-feira<br>(Sem teste de seg a qui)"] -->|"Previsível que 'só resta sexta'"| NoFri["Teste impossível na sexta-feira"]
     
-    Thu["Manhã de quinta-feira<br>(Sem teste de seg a qua)"] -->|Previsível que 'não é sexta, então só pode ser hoje'| NoThu["Teste impossível na quinta-feira"]
+    Thu["Manhã de quinta-feira<br>(Sem teste de seg a qua)"] -->|"Previsível que 'não é sexta, então só pode ser hoje'"| NoThu["Teste impossível na quinta-feira"]
     
-    Wed["Manhã de quarta-feira"] -->|Previsível que 'não é qui nem sex, então só pode ser hoje'| NoWed["Teste impossível na quarta-feira"]
+    Wed["Manhã de quarta-feira"] -->|"Previsível que 'não é qui nem sex, então só pode ser hoje'"| NoWed["Teste impossível na quarta-feira"]
     
-    Tue["Manhã de terça-feira"] -->|Igualmente previsível| NoTue["Teste impossível na terça-feira"]
+    Tue["Manhã de terça-feira"] -->|"Igualmente previsível"| NoTue["Teste impossível na terça-feira"]
     
-    Mon["Manhã de segunda-feira"] -->|Igualmente previsível| NoMon["Teste impossível na segunda-feira"]
+    Mon["Manhã de segunda-feira"] -->|"Igualmente previsível"| NoMon["Teste impossível na segunda-feira"]
     
     NoFri -.-> Thu
     NoThu -.-> Wed
@@ -142,3 +142,4 @@ O "Paradoxo do Teste Surpresa" expressa brilhantemente a **dificuldade de inclui
 
 O que consideramos um "raciocínio perfeito" pode não passar de um castelo de areia construído sobre a crença infundada de que "a outra pessoa seguirá as regras rigorosamente".
 Da próxima vez que um professor disser "Vou fazer um teste surpresa", parece que o mais racional a se fazer é parar de complicar a lógica e simplesmente estudar obedientemente todos os dias.
+

@@ -33,13 +33,13 @@ Diagram Mermaid di bawah ini memvisualisasikan rintangan pembelajaran dan titik 
 ```mermaid
 flowchart TD
     A["Sekolah Dasar: Scratch (Berbasis Visual/Blok)"] --> B{"SMP: Dinding Transisi ke Bahasa Teks"}
-    B -->|Frustrasi akibat Kesalahan Sintaks yang Ketat| C["Dropout (Alergi Sintaks)"]
-    B -->|Kurangnya Pemahaman tentang Variabel & Pengetikan Statis| D["Dropout (Dinding Tipe)"]
-    B -->|Transisi Sukses| E["SMA: Informasi I (Dasar-dasar Python/JavaScript, dll.)"]
+    B -->|"Frustrasi akibat Kesalahan Sintaks yang Ketat"| C["Dropout (Alergi Sintaks)"]
+    B -->|"Kurangnya Pemahaman tentang Variabel & Pengetikan Statis"| D["Dropout (Dinding Tipe)"]
+    B -->|"Transisi Sukses"| E["SMA: Informasi I (Dasar-dasar Python/JavaScript, dll.)"]
     E --> F{"Dinding Desain Algoritma dan Struktur Data"}
-    F -->|Tidak Memahami Kompleksitas Waktu & Ruang| G["Kode Tidak Efisien (Penurunan Performa akibat Produksi O(N^2) Berlebihan)"]
-    F -->|Kotak Hitam Manajemen Memori dan Referensi| H["Menjadi Coder yang Terbatas pada Pemanggilan API Permukaan"]
-    F -->|Terobosan Konseptual| I["Pembelajaran CS Serius (C/C++, Java, Arsitektur Tingkat Rendah)"]
+    F -->|"Tidak Memahami Kompleksitas Waktu & Ruang"| G["Kode Tidak Efisien (Penurunan Performa akibat Produksi O(N^2) Berlebihan)"]
+    F -->|"Kotak Hitam Manajemen Memori dan Referensi"| H["Menjadi Coder yang Terbatas pada Pemanggilan API Permukaan"]
+    F -->|"Terobosan Konseptual"| I["Pembelajaran CS Serius (C/C++, Java, Arsitektur Tingkat Rendah)"]
     I --> J["Profesional TI Tingkat Lanjut yang Diinginkan Industri"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Lingkungan Kompilasi/Eksekusi"]
         D["Penyimpanan File Persisten"]
     end
-    A -->| Komunikasi HTTP/WebSocket: Penundaan serius karena bandwidth sekolah yang sempit | B
+    A -->|"Komunikasi HTTP/WebSocket: Penundaan serius karena bandwidth sekolah yang sempit"| B
     B <--> C
     B <--> D
 ```
@@ -256,6 +256,7 @@ Bagaimana cara kita dalam memperjuangkan fase paling krusial dan sulit, yaitu fa
 ---
 
 *Dalam artikel ini, kami telah menyoroti batasan infrastruktur pada Konsep GIGA School dan teori-teori mengenai kompleksitas komputasional. Pada artikel-artikel selanjutnya, kami berencana membahas topik yang lebih terperinci mengenai ilmu komputer secara spesifik (seperti algoritma untuk sistem terdistribusi, hingga berbagai macam teknik manajemen memori tingkat rendah).*
+
 
 
 

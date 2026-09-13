@@ -103,7 +103,7 @@ graph TD
     J --> K["ID del token seleccionado"]
     K --> L["Detokenizer de llama.cpp"]
     L --> M["Cadena de salida"]
-    K -. "Bucle autorregresivo" .-> D
+    K -. Bucle autorregresivo .-> D
 ```
 
 La generación de texto es un bucle autorregresivo donde, cada vez que se emite un token, este se añade a la KV Cache como la siguiente entrada y pasa nuevamente por el grafo de computación.
@@ -383,3 +383,4 @@ Te animamos a que escribas código C++ por ti mismo y experimentes la diversión
 > - [Repositorio Oficial de llama.cpp](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

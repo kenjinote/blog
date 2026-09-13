@@ -83,7 +83,7 @@ Wir haben soeben die Zahl $X$ mit **einem japanischen Ausdruck von "16 Zeichen" 
 graph TD
     Define["Definition:<br>X = Die kleinste ganze Zahl, die nicht mit höchstens 19 Zeichen ausgedrückt werden kann"] --> CheckLength{"Wie viele Zeichen hat<br>『十九文字以内で表せない最小の整数』?"}
     
-    CheckLength -->|Es sind 16 Zeichen| Contradiction["Widerspruch!<br>X konnte mit 『16 Zeichen』 ausgedrückt werden!"]
+    CheckLength -->|"Es sind 16 Zeichen"| Contradiction["Widerspruch!<br>X konnte mit 『16 Zeichen』 ausgedrückt werden!"]
     
     Contradiction --> Paradox["X 'kann nicht mit höchstens 19 Zeichen ausgedrückt werden',<br>aber 'kann mit höchstens 19 Zeichen (16 Zeichen) ausgedrückt werden'"]
     
@@ -135,3 +135,4 @@ Dieses Problem veranlasste jedoch die Mathematiker des 20. Jahrhunderts dazu, **
 Dieses Paradoxon wurde zu einem wichtigen Meilenstein, der zur fortgeschrittenen akademischen Forschung führte, wie beispielsweise zum "Gödelschen Unvollständigkeitssatz (es gibt in der Mathematik Wahrheiten, die niemals bewiesen werden können)", der die Geschichte der Mathematik veränderte, und zur "Kolmogorow-Komplexität (eine Theorie darüber, wie kurz Informationen komprimiert werden können)" in der Informatik.
 
 Nur 16 japanische Zeichen enthüllten die Grenzen der Mathematik. Darin liegt die Schönheit des Berry-Paradoxons.
+

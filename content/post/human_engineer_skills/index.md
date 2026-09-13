@@ -141,8 +141,8 @@ SagaパターンやCQRS（Command Query Responsibility Segregation）といっ�
 flowchart LR
     Client["クライアント"] --> API["API Gateway"]
     API --> Order["注文サービス（コンテキスト）"]
-    Order -. "非同期イベント（Kafka）" .-> Inventory["在庫サービス"]
-    Order -. "非同期イベント（Kafka）" .-> Payment["決済サービス"]
+    Order -. 非同期イベント（Kafka） .-> Inventory["在庫サービス"]
+    Order -. 非同期イベント（Kafka） .-> Payment["決済サービス"]
     
     Inventory --> DB1["在庫DB"]
     Payment --> DB2["決済DB"]
@@ -207,6 +207,7 @@ AI時代において、エンジニアは「コードのタイピスト」から
 
 真のエンジニアとは、コードを書く人ではなく、課題を解決する人です。
 ドメインモデリング、スケーラブルなアーキテクチャ設計、ステークホルダーとのコミュニケーション、そして複雑なシステムのデバッグ。これら「人間ならではのエンジニアスキル」を磨き続ける者にとって、AIは仕事を奪う敵ではなく、自らの創造性と生産性を何十倍にも拡張してくれる最強のパートナーとなるはずです。
+
 
 
 

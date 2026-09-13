@@ -191,19 +191,19 @@ graph TD
     E2["Serveur d'Hôpital (Edge 2)"]
     E3["Voiture Intelligente (Edge 3)"]
     
-    C -->| 1. Envoyer le Modèle Global | E1
-    C -->| 1. Envoyer le Modèle Global | E2
-    C -->| 1. Envoyer le Modèle Global | E3
+    C -->|"1. Envoyer le Modèle Global"| E1
+    C -->|"1. Envoyer le Modèle Global"| E2
+    C -->|"1. Envoyer le Modèle Global"| E3
     
-    E1 -->| 2. Entraînement Local sur Données Privées | E1
-    E2 -->| 2. Entraînement Local sur Données Privées | E2
-    E3 -->| 2. Entraînement Local sur Données Privées | E3
+    E1 -->|"2. Entraînement Local sur Données Privées"| E1
+    E2 -->|"2. Entraînement Local sur Données Privées"| E2
+    E3 -->|"2. Entraînement Local sur Données Privées"| E3
     
-    E1 -->| 3. Envoyer Uniquement les Mises à Jour des Poids | C
-    E2 -->| 3. Envoyer Uniquement les Mises à Jour des Poids | C
-    E3 -->| 3. Envoyer Uniquement les Mises à Jour des Poids | C
+    E1 -->|"3. Envoyer Uniquement les Mises à Jour des Poids"| C
+    E2 -->|"3. Envoyer Uniquement les Mises à Jour des Poids"| C
+    E3 -->|"3. Envoyer Uniquement les Mises à Jour des Poids"| C
     
-    C -->| 4. Agréger les Poids (FedAvg) | C
+    C -->|"4. Agréger les Poids (FedAvg)"| C
 ```
 
 **Le processus du Federated Learning** :
@@ -264,5 +264,6 @@ De plus, grâce à des approches d'apprentissage distribué comme le Federated L
 
 ---
 *Cet article a été rédigé à l'intention des ingénieurs et des architectes de systèmes intéressés par l'implémentation de l'IA sur les appareils IoT.*
+
 
 

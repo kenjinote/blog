@@ -49,7 +49,7 @@ Si seguimos las reglas de la inducción, las observaciones pasadas apoyan la Hip
 
 ```mermaid
 graph TD
-    A["Observaciones pasadas: Todas las esmeraldas eran verdes"] -->|Al mismo tiempo| B["Observaciones pasadas: Todas las esmeraldas eran de color 'grue'"]
+    A["Observaciones pasadas: Todas las esmeraldas eran verdes"] -->|"Al mismo tiempo"| B["Observaciones pasadas: Todas las esmeraldas eran de color 'grue'"]
     
     A --> C["Predicción inductiva A: Las esmeraldas del futuro también serán 'verdes'"]
     B --> D["Predicción inductiva B: Las esmeraldas del futuro también serán de color 'grue'"]
@@ -81,3 +81,4 @@ En otras palabras, decidir qué palabras son "básicas" es simplemente una conve
 La paradoja del «grue» (el nuevo enigma de la inducción) de Goodman demostró que las teorías científicas no se determinan únicamente por datos empíricos objetivos, sino que dependen en gran medida de "qué marco conceptual (lenguaje) utilizamos para fragmentar el mundo".
 
 Incluso en el contexto de la inteligencia artificial y el aprendizaje automático, donde los datos de entrenamiento pueden ser los mismos, las predicciones para el futuro pueden cambiar por completo dependiendo de la "estructura del modelo" (a qué características se presta atención). Como un problema de "sobreajuste" (overfitting) o "sesgo", esta paradoja sigue teniendo un significado importante en la actualidad.
+

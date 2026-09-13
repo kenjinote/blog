@@ -520,8 +520,8 @@ Elle a joué un rôle historiquement très important dans la régression logisti
 
 ```mermaid
 graph LR
-  X1["Entrée x1"] -->|Poids w1| Sum["Somme : Σ(wi*xi) + b"]
-  X2["Entrée x2"] -->|Poids w2| Sum
+  X1["Entrée x1"] -->|"Poids w1"| Sum["Somme : Σ(wi*xi) + b"]
+  X2["Entrée x2"] -->|"Poids w2"| Sum
   Sum --> Act["Fonction sigmoïde : σ(x)"]
   Act --> Out["Probabilité de sortie (0 à 1)"]
 ```
@@ -624,4 +624,5 @@ Qu'en pensez-vous ? De l'identité d'Euler au théorème de Pythagore, ces 10 fo
 Comprendre le contexte mathématique est essentiel pour passer du statut de codeur qui se contente d'appeler des bibliothèques existantes (`math.sin` ou `numpy.fft`) à celui d'ingénieur capable d'en comprendre la structure interne et d'en repousser les limites. La prochaine fois que vous écrirez du code, essayez d'imaginer un instant quelles magnifiques formules mathématiques opèrent en arrière-plan.
 
 **Happy Coding and Math!**
+
 

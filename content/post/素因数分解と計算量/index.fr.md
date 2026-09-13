@@ -264,7 +264,7 @@ graph LR
     end
 
     C1 --> C2
-    C2 -. "Limite de la Physique Classique" .-> Q1
+    C2 -. Limite de la Physique Classique .-> Q1
 ```
 
 Dans l'algorithme de Shor, le processus de « recherche de période », qui constituait un goulot d'étranglement dans les algorithmes classiques, est calculé en parallèle et en un instant grâce à l'intrication et à la superposition quantiques utilisant la « transformée de Fourier quantique (QFT) ».
@@ -285,3 +285,4 @@ Dans cet article, en partant des bases de la complexité algorithmique (notation
 * Cependant, avec l'avènement de **l'ordinateur quantique et de l'algorithme de Shor**, la factorisation en temps polynomial devient théoriquement possible, et la technologie cryptographique s'apprête à entrer dans une nouvelle ère (la cryptographie post-quantique).
 
 Le fait qu'un concept aussi abstrait que la complexité d'un algorithme soit directement lié à la sécurité de notre quotidien est l'un des aspects les plus fascinants et palpitants de l'informatique et des mathématiques. Nous vous invitons à rester attentifs aux futurs développements technologiques, en particulier à l'évolution des ordinateurs quantiques et aux transitions de la technologie cryptographique.
+

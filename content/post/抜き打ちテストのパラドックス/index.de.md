@@ -59,15 +59,15 @@ Der Beweis von Schüler A verwendet eine mathematische Technik namens **Rückwä
 
 ```mermaid
 graph TD
-    Fri["Freitagmorgen<br>(Mo-Do kein Test)"] -->|Vorhersagbar: 'Nur Freitag bleibt'| NoFri["Test am Freitag unmöglich"]
+    Fri["Freitagmorgen<br>(Mo-Do kein Test)"] -->|"Vorhersagbar: 'Nur Freitag bleibt'"| NoFri["Test am Freitag unmöglich"]
     
-    Thu["Donnerstagmorgen<br>(Mo-Mi kein Test)"] -->|Vorhersagbar: 'Freitag fällt aus, also nur heute'| NoThu["Test am Donnerstag unmöglich"]
+    Thu["Donnerstagmorgen<br>(Mo-Mi kein Test)"] -->|"Vorhersagbar: 'Freitag fällt aus, also nur heute'"| NoThu["Test am Donnerstag unmöglich"]
     
-    Wed["Mittwochmorgen"] -->|Vorhersagbar: 'Do und Fr fallen aus, also nur heute'| NoWed["Test am Mittwoch unmöglich"]
+    Wed["Mittwochmorgen"] -->|"Vorhersagbar: 'Do und Fr fallen aus, also nur heute'"| NoWed["Test am Mittwoch unmöglich"]
     
-    Tue["Dienstagmorgen"] -->|Ebenfalls vorhersagbar| NoTue["Test am Dienstag unmöglich"]
+    Tue["Dienstagmorgen"] -->|"Ebenfalls vorhersagbar"| NoTue["Test am Dienstag unmöglich"]
     
-    Mon["Montagmorgen"] -->|Ebenfalls vorhersagbar| NoMon["Test am Montag unmöglich"]
+    Mon["Montagmorgen"] -->|"Ebenfalls vorhersagbar"| NoMon["Test am Montag unmöglich"]
     
     NoFri -.-> Thu
     NoThu -.-> Wed
@@ -142,3 +142,4 @@ Dieses Paradoxon lässt sich nicht nur auf die Mathematik, sondern auch auf unse
 
 Was wir für eine „perfekte Schlussfolgerung“ halten, ist vielleicht nur ein Luftschloss, das auf dem unbegründeten Glauben beruht: „Der andere wird sich absolut an die Regeln halten“.
 Wenn der Lehrer das nächste Mal sagt: „Ich werde einen Überraschungstest machen“, ist es wohl am vernünftigsten, aufzuhören, die Logik zu verdrehen, und stattdessen brav jeden Tag zu lernen.
+

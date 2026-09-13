@@ -139,17 +139,17 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ```mermaid
 graph TD
-    User["宿主机 (浏览器/curl)"] -->|Localhost:8000| Web["FastAPI Web 容器"]
+    User["宿主机 (浏览器/curl)"] -->|"Localhost:8000"| Web["FastAPI Web 容器"]
     
     subgraph "Docker 桥接网络 (app-network)"
-        Web -->|Port 5432| DB["PostgreSQL 容器"]
-        Web -->|Port 6379| Redis["Redis 容器"]
+        Web -->|"Port 5432"| DB["PostgreSQL 容器"]
+        Web -->|"Port 6379"| Redis["Redis 容器"]
     end
     
     DB --> Volume1["命名卷 (postgres_data)"]
     Redis --> Volume2["命名卷 (redis_data)"]
     
-    HostDir["宿主机源代码 (./src)"] -.->|Bind Mount| Web
+    HostDir["宿主机源代码 (./src)"] -.->|"Bind Mount"| Web
 ```
 
 ### docker-compose.yml 的实现与详细讲解
@@ -416,3 +416,4 @@ COPY ./src /app/src
 将 IaC 的范式引入本地环境，不仅仅是缩短了初始设置时间。它消除了在更改基础架构配置时的不安，简化了新技术栈的实验，并顺利过渡到 CI/CD 管道，这极大地提升了整个开发周期的速度和质量。
 
 请务必运用本文讲解的最佳实践——如通过多阶段构建优化镜像大小、使用运行状况检查控制依赖关系、以及编写意识到层缓存的 Dockerfile，为您的项目带来极致的开发体验（DX: Developer Experience）。
+

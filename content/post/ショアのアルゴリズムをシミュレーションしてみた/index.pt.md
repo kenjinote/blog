@@ -39,8 +39,8 @@ Isso significa que, se o número de bits for dobrado, enquanto o tempo de comput
 ```mermaid
 graph TD
     A["Aumento do tamanho da entrada (número de bits) N"] --> B{"Escolha do algoritmo"}
-    B -->|Clássico: Peneira Geral dos Corpos de Números| C["Aumento subexponencial O(exp(...))"]
-    B -->|Quântico: Algoritmo de Shor| D["Tempo polinomial O((log N)^3)"]
+    B -->|"Clássico: Peneira Geral dos Corpos de Números"| C["Aumento subexponencial O(exp(...))"]
+    B -->|"Quântico: Algoritmo de Shor"| D["Tempo polinomial O((log N)^3)"]
     C --> E["Milhares a bilhões de anos (Indecifrável)"]
     D --> F["Minutos a horas (Decifrável em tempo real)"]
 ```
@@ -358,5 +358,6 @@ Recomendo muito que você execute o código Python introduzido aqui em seu próp
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->| Mesure (observation) | Result
+    Interference -->|"Mesure (observation)"| Result
 ```
 
 Ainsi, l'ordinateur quantique n'est pas un simple expédient provisoire visant à contourner les limites de la mécanique classique (limites de miniaturisation ou limites thermodynamiques), mais un véritable changement de paradigme qui refonde la définition même de l'information et du calcul sur les axiomes de la mécanique quantique. Dans le prochain chapitre, nous approfondirons les détails des « portes quantiques » et des « circuits quantiques », les outils mathématiques concrets permettant de manipuler cette interférence quantique à volonté.
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Observation de la grandeur physique $A$ (Opérateur de projection $P_k$)"]:::measure
     
-    Obs -->| Probabilité $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["État effondré 1 : $| a_1 \rangle$"]:::state
-    Obs -->| Probabilité $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["État effondré 2 : $| a_2 \rangle$"]:::state
-    Obs -->| ... | StateN["État effondré n : $| a_n \rangle$"]:::state
+    Obs -->|"Probabilité $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["État effondré 1 : $| a_1 \rangle$"]:::state
+    Obs -->|"Probabilité $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["État effondré 2 : $| a_2 \rangle$"]:::state
+    Obs -->|"..."| StateN["État effondré n : $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Décohérence (perte d'interférence de phase) et passage à l'état mixte"]:::measure
     State2 --> Decoherence
@@ -1961,8 +1961,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->| État |x⟩ | QFT["QFT† (Transformée de Fourier quantique inverse)"]
-    Uf -->| État |a^x mod N⟩ | Discard["Non observé (Intriqué avec l'environnement)"]
+    Uf -->|"État"|x⟩ | QFT["QFT† (Transformée de Fourier quantique inverse)"]
+    Uf -->|"État"|a^x mod N⟩ | Discard["Non observé (Intriqué avec l'environnement)"]
 
     QFT --> Measure["Mesure (k)"]
     Measure --> Classical["Post-traitement classique par développement en fractions continues (dérivation de r)"]
@@ -2697,8 +2697,8 @@ Les opérations logiques s'effectuent en guidant ces modes de Majorana les uns a
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Tressage topologique"]
-    A["Axe du temps t"] -->| Ligne d'univers de l'anyon 1 | B["Opération d'échange (tresse)"]
-    C["Ligne d'univers de l'anyon 2"] -->| Tresse | B
+    A["Axe du temps t"] -->|"Ligne d'univers de l'anyon 1"| B["Opération d'échange (tresse)"]
+    C["Ligne d'univers de l'anyon 2"] -->|"Tresse"| B
     B --> D["Rotation unitaire U du vecteur d'état"]
     end
 ```
@@ -2861,3 +2861,5 @@ Si cette série a pu contribuer à vous faire comprendre en profondeur la vérit
 
 ---
  **Série « Les principes de l'ordinateur quantique » (12 chapitres au total) — Fin** 
+
+

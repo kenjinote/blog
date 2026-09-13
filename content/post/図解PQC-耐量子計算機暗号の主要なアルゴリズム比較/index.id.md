@@ -18,9 +18,9 @@ Namun, premis yang kokoh ini akan dirobohkan oleh teori dan kemajuan praktis dar
 
 ```mermaid
 graph TD
-    A["Komputer Kuantum Skala Besar (CRQC)"] -->|Menjalankan| B["Algoritma Shor"]
-    B -->|Pemecahan dalam Waktu Polinomial| C["Masalah Pemfaktoran Prima (RSA)"]
-    B -->|Pemecahan dalam Waktu Polinomial| D["Masalah Logaritma Diskrit (ECC / ECDSA)"]
+    A["Komputer Kuantum Skala Besar (CRQC)"] -->|"Menjalankan"| B["Algoritma Shor"]
+    B -->|"Pemecahan dalam Waktu Polinomial"| C["Masalah Pemfaktoran Prima (RSA)"]
+    B -->|"Pemecahan dalam Waktu Polinomial"| D["Masalah Logaritma Diskrit (ECC / ECDSA)"]
     C --> E["Penyadapan Komunikasi Kriptografi / Perubahan Data / Pemalsuan Identitas"]
     D --> E
     F["Store Now, Decrypt Later (SNDL)"] --> E
@@ -219,8 +219,8 @@ Namun, FALCON memiliki kelemahan yang serius. Pembuatan tanda tangannya mutlak m
 ```mermaid
 graph LR
     A["Persyaratan Tanda Tangan Digital"] --> B{"Apa batasan prioritas utama?"}
-    B -->| Kesederhanaan implementasi, keserbagunaan, kemudahan implementasi waktu konstan | C["Dilithium (ML-DSA)"]
-    B -->| Minimasi bandwidth komunikasi, keringkasan ukuran data | D["FALCON (FN-DSA)"]
+    B -->|"Kesederhanaan implementasi, keserbagunaan, kemudahan implementasi waktu konstan"| C["Dilithium (ML-DSA)"]
+    B -->|"Minimasi bandwidth komunikasi, keringkasan ukuran data"| D["FALCON (FN-DSA)"]
     C --> E["Sertifikat TLS serbaguna, tanda tangan elektronik perangkat lunak"]
     D --> F["Protokol dengan batasan ukuran paket yang ketat, lingkungan khusus"]
 ```
@@ -300,12 +300,12 @@ Dalam Kriptografi Hibrida, kriptografi klasik saat ini yang memiliki rekam jejak
 
 ```mermaid
 graph TD
-    A["Klien"] -->|① Mengirim Kunci Publik X25519 + Kunci Publik Kyber| B["Server"]
-    B -->|② Membalas Kunci Bersama X25519 + Cipherteks Enkapsulasi Kyber| A
+    A["Klien"] -->|"① Mengirim Kunci Publik X25519 + Kunci Publik Kyber"| B["Server"]
+    B -->|"② Membalas Kunci Bersama X25519 + Cipherteks Enkapsulasi Kyber"| A
     A --> C{"Derivasi Rahasia Utama (KDF)"}
     B --> C
-    C -->|Input: (Kunci Simetris X25519) || (Kunci Simetris Kyber)| D["Kunci Komunikasi Aman (AES-256 / ChaCha20)"]
-    D -->| Tahan Terhadap Ancaman Kuantum & Kerentanan Klasik Sekaligus | E["Komunikasi Kriptografi Hibrida yang Aman (TLS 1.3)"]
+    C -->|"Input: (Kunci Simetris X25519)"|| (Kunci Simetris Kyber)| D["Kunci Komunikasi Aman (AES-256 / ChaCha20)"]
+    D -->|"Tahan Terhadap Ancaman Kuantum & Kerentanan Klasik Sekaligus"| E["Komunikasi Kriptografi Hibrida yang Aman (TLS 1.3)"]
 ```
 
 Dengan metode ini, dicapai keamanan dua lapis yang kokoh: "bahkan jika komputer kuantum terwujud dan mematahkan ECC, Kyber akan melindungi komunikasi", dan sebaliknya, "bahkan jika cacat matematis yang tidak diketahui ditemukan pada Kyber, ECC akan melindungi komunikasi". Contoh representatifnya adalah draf **X25519MLKEM768 (sebelumnya X25519Kyber768)**, yang saat ini sedang distandarisasi di IETF. Komunikasi antara peramban web saat ini dan server-server mutakhir benar-benar menggunakan metode hibrida ini.
@@ -328,5 +328,6 @@ Pertarungan antara komputer kuantum dan kriptografi merupakan area yang paling m
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 
 

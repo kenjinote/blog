@@ -134,8 +134,8 @@ Esta é uma propriedade dos sonhos na teoria criptográfica. Porque dissipa a pr
 
 ```mermaid
 graph TD
-    A["Problemas de Reticulado de Pior Caso (Gap-SVP, SIVP)"] -->|Redução Quântica/Clássica| B["Problema LWE de Caso Médio"]
-    B -->|Construção Criptográfica| C["Sistemas Criptográficos baseados em LWE (PKE, KEM, FHE)"]
+    A["Problemas de Reticulado de Pior Caso (Gap-SVP, SIVP)"] -->|"Redução Quântica/Clássica"| B["Problema LWE de Caso Médio"]
+    B -->|"Construção Criptográfica"| C["Sistemas Criptográficos baseados em LWE (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ Neste artigo, explicamos em detalhes a intuição matemática da criptografia ba
 4. Em protocolos do mundo real, o **Ring-LWE** e o **Module-LWE** usando anéis de polinômios são adotados para aumentar a eficiência de comunicação e velocidade computacional, formando a base do padrão NIST **ML-KEM**.
 
 À medida que nos aproximamos de uma mudança de paradigma computacional sem precedentes chamada computador quântico, é uma história muito romântica que a "Criptografia baseada em reticulados", nascida das profundezas da álgebra linear clássica e da teoria dos números, apoiará a fundação da segurança da internet no futuro. A matemática que fundamenta a criptografia de reticulados não é excessivamente complexa, e com conhecimentos básicos de álgebra linear e probabilidade, pode-se entender completamente sua bela estrutura. Esperamos que este artigo ajude na compreensão da criptografia baseada em reticulados, que é o cerne da PQC.
+

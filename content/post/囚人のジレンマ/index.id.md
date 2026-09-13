@@ -75,13 +75,13 @@ graph TD
     Start["Awal Pilihan"] --> Logic_You["Pemikiran Rasional Anda"]
     Start --> Logic_Friend["Pemikiran Rasional Teman"]
     
-    Logic_You -->|Lebih baik mengaku jika pihak lain bungkam<br>Lebih baik mengaku jika pihak lain mengaku| Betray_You["Anda Memilih Mengaku (Mengkhianati)"]
-    Logic_Friend -->|Lebih baik mengaku jika pihak lain bungkam<br>Lebih baik mengaku jika pihak lain mengaku| Betray_Friend["Teman Memilih Mengaku (Mengkhianati)"]
+    Logic_You -->|"Lebih baik mengaku jika pihak lain bungkam<br>Lebih baik mengaku jika pihak lain mengaku"| Betray_You["Anda Memilih Mengaku (Mengkhianati)"]
+    Logic_Friend -->|"Lebih baik mengaku jika pihak lain bungkam<br>Lebih baik mengaku jika pihak lain mengaku"| Betray_Friend["Teman Memilih Mengaku (Mengkhianati)"]
     
     Betray_You --> Result["Hasil: Keduanya Mengaku (-5, -5)"]
     Betray_Friend --> Result
     
-    Ideal["Ideal: Keduanya Bungkam (-1, -1)"] -.->|Terhalang oleh rasionalitas individu<br>sehingga tidak dapat dicapai| Result
+    Ideal["Ideal: Keduanya Bungkam (-1, -1)"] -.->|"Terhalang oleh rasionalitas individu<br>sehingga tidak dapat dicapai"| Result
     
     style Result fill:#ff9999,stroke:#333,stroke-width:2px
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
@@ -134,11 +134,11 @@ Strategi ini kuat karena memiliki empat karakteristik: "jangan pernah berkhianat
 graph LR
     Start["Pertama: Bekerja sama tanpa syarat"] --> Round2
     
-    Round2["Melihat tindakan pihak lain"] -->|Pihak lain bekerja sama| Act_Coop["Anda juga bekerja sama"]
-    Round2 -->|Pihak lain mengkhianati| Act_Betray["Anda juga mengkhianati (Pembalasan)"]
+    Round2["Melihat tindakan pihak lain"] -->|"Pihak lain bekerja sama"| Act_Coop["Anda juga bekerja sama"]
+    Round2 -->|"Pihak lain mengkhianati"| Act_Betray["Anda juga mengkhianati (Pembalasan)"]
     
     Act_Coop --> Round2
-    Act_Betray -->|Jika pihak lain menyesal dan<br>kembali bekerja sama| Act_Coop
+    Act_Betray -->|"Jika pihak lain menyesal dan<br>kembali bekerja sama"| Act_Coop
 ```
 
 Dalam hubungan manusia atau komunitas internasional sekalipun, jika hubungan jangka panjang merupakan premis dasar, dengan membagikan aturan seperti "Strategi Tit for Tat" yaitu **"pada dasarnya bekerja sama, tetapi memberikan penalti terhadap pengkhianatan"**, kita dapat mengatasi Dilema Tahanan dan membangun hubungan kerja sama.
@@ -151,3 +151,4 @@ Rasionalitas individu seperti "hanya saya yang ingin mendapat untung" atau "tida
 Namun pada saat yang sama, teori permainan juga mengajarkan bahwa selama ada kondisi bahwa "hubungan berlanjut untuk jangka panjang", **"saling percaya dan bekerja sama satu sama lain" adalah strategi paling rasional yang pada akhirnya memaksimalkan keuntungan diri sendiri**.
 
 Saat Anda selanjutnya ragu apakah Anda harus "sedikit curang", cobalah mengingat tabel ganjaran dari Dilema Tahanan ini. Karena "pengkhianatan rasional" yang mengejar keuntungan di depan mata mungkin merupakan pilihan paling irasional dalam jangka panjang.
+

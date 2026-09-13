@@ -326,18 +326,18 @@ Seluruh arsitektur dari "pengumpulan informasi hingga penciptaan ide" untuk menc
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Skrip Ekstraksi Python| B["Data Tren Mentah"]
-    C["GitHub Actions (Cron)"] -->|Jadwal Eksekusi Rutin| A
-    B -->|Konversi Format Markdown| D["Input Harian (Fleeting Notes)"]
-    D -->|Membaca dan Meringkas Manual| E["Obsidian Zettelkasten"]
-    E -->|Pembuatan Catatan Permanen| F["Permanent Notes"]
-    F -->|Proses Sinkronisasi Otomatis| G["OpenAI Embeddings API"]
-    G -->|Konversi Vektor| H["Pinecone Vector Database"]
-    H -->|Pencarian Semantik| I["Penemuan & Ekstraksi Pengetahuan Terkait"]
-    F -->|Pembuatan Kartu Flash| J["Anki (Spaced Repetition)"]
-    J -->|Inspirasi dari Memori Jangka Panjang| K["Combinatorial Creativity"]
+    A["Hacker News / Lobsters API"] -->|"Skrip Ekstraksi Python"| B["Data Tren Mentah"]
+    C["GitHub Actions (Cron)"] -->|"Jadwal Eksekusi Rutin"| A
+    B -->|"Konversi Format Markdown"| D["Input Harian (Fleeting Notes)"]
+    D -->|"Membaca dan Meringkas Manual"| E["Obsidian Zettelkasten"]
+    E -->|"Pembuatan Catatan Permanen"| F["Permanent Notes"]
+    F -->|"Proses Sinkronisasi Otomatis"| G["OpenAI Embeddings API"]
+    G -->|"Konversi Vektor"| H["Pinecone Vector Database"]
+    H -->|"Pencarian Semantik"| I["Penemuan & Ekstraksi Pengetahuan Terkait"]
+    F -->|"Pembuatan Kartu Flash"| J["Anki (Spaced Repetition)"]
+    J -->|"Inspirasi dari Memori Jangka Panjang"| K["Combinatorial Creativity"]
     I --> K
-    K -->|Pembuatan Plot / Draf Susunan| L["Draf Artikel Blog (Penulisan Artikel)"]
+    K -->|"Pembuatan Plot / Draf Susunan"| L["Draf Artikel Blog (Penulisan Artikel)"]
 ```
 
 Karakteristik sistem ini adalah **pemisahan yang sempurna antara "pekerjaan intelektual yang harus dilakukan manual (meringkas, mengobservasi, menulis)" dengan "pekerjaan yang sebaiknya diserahkan pada mesin (pengumpulan, pencarian, penjadwalan pengulangan berjarak)"**. Dengan hal ini, penulis dapat memfokuskan diri sepenuhnya pada "berpikir" dan "mengkombinasikan" yang merupakan hal-hal bernilai tambah paling tinggi.
@@ -382,5 +382,6 @@ Seperti yang diperkenalkan pada artikel ini,
 Dengan membangun pipeline komprehensif yang memadukan semuanya, alih-alih mengering, ide blog Anda akan terus bereproduksi dan bertambah banyak seiring dengan makin seringnya Anda menulis.
 
 Anda tidak perlu membangun segalanya dengan sempurna sejak awal. Sebagai permulaan, cobalah membuat skrip sederhana yang mengakses API Hacker News, dan biasakan untuk mencatat artikel yang menarik perhatian Anda dalam format markdown. Saya berharap blog teknologi Anda akan menjadi sumber ide-ide cemerlang bagi generasi mendatang.
+
 
 

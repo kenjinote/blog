@@ -86,11 +86,11 @@ PostCSS किस तरह CSS को प्रोसेस करता है
 
 ```mermaid
 flowchart TD
-    A["कच्चा CSS (styles.css)"] -->|Parser| B["AST (Abstract Syntax Tree)"]
+    A["कच्चा CSS (styles.css)"] -->|"Parser"| B["AST (Abstract Syntax Tree)"]
     B --> C["प्लगइन 1: Tailwind CSS"]
     C --> D["प्लगइन 2: Autoprefixer"]
     D --> E["प्लगइन N: cssnano"]
-    E -->|Stringifier| F["कंपाइल और ऑप्टिमाइज़्ड CSS"]
+    E -->|"Stringifier"| F["कंपाइल और ऑप्टिमाइज़्ड CSS"]
 ```
 
 1. **Parser (पार्सर)**: इनपुट किए गए कच्चे CSS स्ट्रिंग का विश्लेषण करता है और इसे AST (Abstract Syntax Tree) में बदलता है, जो एक डेटा स्ट्रक्चर है जिसे प्रोग्राम द्वारा प्रोसेस किया जा सकता है।
@@ -272,8 +272,8 @@ module.exports = {
 
 ```mermaid
 flowchart TD
-    A["assets/css/main.css"] -->|resources.Get| B["Hugo मेमोरी स्पेस"]
-    B -->|resources.PostCSS| C["PostCSS + Tailwind JIT प्रोसेस"]
+    A["assets/css/main.css"] -->|"resources.Get"| B["Hugo मेमोरी स्पेस"]
+    B -->|"resources.PostCSS"| C["PostCSS + Tailwind JIT प्रोसेस"]
     C --> D{"hugo.IsProduction ?"}
     D -- हाँ (प्रोडक्शन वातावरण) --> E["minify (रिक्त स्थान और नई लाइनें हटाएँ)"]
     E --> F["fingerprint (हैश कैलकुलेशन)"]
@@ -412,4 +412,5 @@ Hugo जैसी ब्लॉग या डॉक्यूमेंट सा�
 इसके अलावा, आउटपुट की गई CSS का आकार हमेशा न्यूनतम रखा जाता है, जो सीधे Core Web Vitals स्कोर को बेहतर बनाने में मदद करता है, और SEO के दृष्टिकोण से भी यह बहुत फायदेमंद है।
 
 Hugo और Tailwind CSS का संयोजन, व्यक्तिगत टेक ब्लॉग्स से लेकर बड़े कॉर्पोरेट वेबसाइट्स तक, सभी प्रोजेक्ट्स के लिए हमेशा "सर्वोत्तम विकल्पों" में से एक रहेगा। अपने आरामदायक वेब डेवलपमेंट अनुभव का आनंद लेने के लिए इस शक्तिशाली टूलचेन का लाभ ज़रूर उठाएँ!
+
 

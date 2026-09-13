@@ -242,15 +242,15 @@ Kita akan membangun arsitektur otomatis yang menangani mulai dari saat file Mark
 ```mermaid
 flowchart TD
     A["Developer (Git Push)"] --> B["Repositori GitHub"]
-    B -->|Webhook| C["GitHub Actions (CI/CD)"]
-    C -->|Build| D["Static Site Generator (Hugo/Gatsby)"]
-    D -->|Deploy| E["Hosting (Vercel / Cloudflare Pages)"]
-    D -->|Generate| F["RSS Feed (index.xml)"]
-    F -->|Ditarik oleh| G["Zapier / IFTTT / Make"]
-    G -->|Panggilan API| H["Posting Otomatis X (Twitter)"]
-    G -->|Panggilan API| I["Postingan Artikel LinkedIn"]
-    G -->|Panggilan API| J["Webhook Komunitas Discord / Slack"]
-    C -->|Skrip Actions| K["API Cross-Post Qiita / Zenn"]
+    B -->|"Webhook"| C["GitHub Actions (CI/CD)"]
+    C -->|"Build"| D["Static Site Generator (Hugo/Gatsby)"]
+    D -->|"Deploy"| E["Hosting (Vercel / Cloudflare Pages)"]
+    D -->|"Generate"| F["RSS Feed (index.xml)"]
+    F -->|"Ditarik oleh"| G["Zapier / IFTTT / Make"]
+    G -->|"Panggilan API"| H["Posting Otomatis X (Twitter)"]
+    G -->|"Panggilan API"| I["Postingan Artikel LinkedIn"]
+    G -->|"Panggilan API"| J["Webhook Komunitas Discord / Slack"]
+    C -->|"Skrip Actions"| K["API Cross-Post Qiita / Zenn"]
 ```
 
 ### 5.2 Poin-poin dalam Membangun Pipeline Otomatisasi
@@ -278,6 +278,7 @@ Untuk secara dramatis meningkatkan jumlah kunjungan bulanan ke blog teknologi An
 5. Otomatisasi penuh dalam distribusi melalui integrasi CI/CD dan Zapier
 
 Jika Anda dapat mengintegrasikan semua hal ini sebagai sebuah sistem, blog teknologi akan menjadi aset (asset) paling kuat yang akan mendorong karier Anda. Bagi engineer yang khawatir tentang jumlah akses yang mandek, kami harap Anda mencoba memulai "growth hack blog" Anda mulai hari ini. Keahlian pemrograman dan kemampuan desain arsitektur yang Anda asah dalam tugas-tugas pengembangan niscaya akan menjadi senjata terbesar Anda dalam menjalankan blog.
+
 
 
 

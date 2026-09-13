@@ -39,8 +39,8 @@ $$ O((\log N)^3) $$
 ```mermaid
 graph TD
     A["زيادة حجم الإدخال (عدد البتات) N"] --> B{"اختيار الخوارزمية"}
-    B -->|كلاسيكية: غربال حقل الأعداد العام| C["زيادة شبه أسية O(exp(...))"]
-    B -->|كمومية: خوارزمية شور| D["وقت متعدد الحدود O((log N)^3)"]
+    B -->|"كلاسيكية: غربال حقل الأعداد العام"| C["زيادة شبه أسية O(exp(...))"]
+    B -->|"كمومية: خوارزمية شور"| D["وقت متعدد الحدود O((log N)^3)"]
     C --> E["آلاف إلى مليارات السنين (غير قابل للفك)"]
     D --> F["بضع دقائق إلى ساعات (وقت واقعي للفك)"]
 ```
@@ -358,5 +358,6 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

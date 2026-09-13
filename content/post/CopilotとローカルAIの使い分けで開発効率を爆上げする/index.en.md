@@ -58,10 +58,10 @@ The Mermaid diagram below shows a hybrid architecture illustrating how local age
 
 ```mermaid
 graph TD
-    Dev["Developer (IDE)"] -->| Real-time Typing | LocalProxy{"Intelligent Router / Proxy"}
+    Dev["Developer (IDE)"] -->|"Real-time Typing"| LocalProxy{"Intelligent Router / Proxy"}
     
-    LocalProxy -->| Fast, Privacy-first Task | LocalAI["Local AI Engine (Ollama / LM Studio)"]
-    LocalProxy -->| Complex Logic, Large Context | CloudAI["Cloud AI Engine (Copilot / OpenAI API)"]
+    LocalProxy -->|"Fast, Privacy-first Task"| LocalAI["Local AI Engine (Ollama / LM Studio)"]
+    LocalProxy -->|"Complex Logic, Large Context"| CloudAI["Cloud AI Engine (Copilot / OpenAI API)"]
     
     subgraph "Local Environment"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -94,17 +94,17 @@ So, in the actual coding field, how should developers judge "which AI to use rig
 ```mermaid
 graph TD
     Start["New Coding Task"] --> Q1{"Is the code highly confidential?"}
-    Q1 -->|Yes| Action1["Use Local AI (Llama 3 / CodeLlama)"]
-    Q1 -->|No| Q2{"Is it a simple inline autocomplete?"}
+    Q1 -->|"Yes"| Action1["Use Local AI (Llama 3 / CodeLlama)"]
+    Q1 -->|"No"| Q2{"Is it a simple inline autocomplete?"}
     
-    Q2 -->|Yes| Q3{"Is network connection stable?"}
-    Q3 -->|Yes| Action2["Use GitHub Copilot"]
-    Q3 -->|No| Action1
+    Q2 -->|"Yes"| Q3{"Is network connection stable?"}
+    Q3 -->|"Yes"| Action2["Use GitHub Copilot"]
+    Q3 -->|"No"| Action1
     
-    Q2 -->|No| Q4{"Need complex architecture logic or cross-file refactoring?"}
+    Q2 -->|"No"| Q4{"Need complex architecture logic or cross-file refactoring?"}
     
-    Q4 -->|Yes| Action3["Use Cloud AI (GPT-4 / Claude 3.5 Sonnet)"]
-    Q4 -->|No| Action4["Use Local AI for medium tasks to save API cost"]
+    Q4 -->|"Yes"| Action3["Use Cloud AI (GPT-4 / Claude 3.5 Sonnet)"]
+    Q4 -->|"No"| Action4["Use Local AI for medium tasks to save API cost"]
 ```
 
 ### 3.1 Evaluation Axis 1: Privacy and Security
@@ -244,4 +244,6 @@ It is not a binary choice between "Cloud's GitHub Copilot" or "Local AI"; rather
 Please use the decision trees and architectures introduced in this article as a reference to take your IDE environment to the next level. By stepping up from just "using" AI to "combining and directing it in the right places," your development efficiency will undoubtedly be boosted.
 
 Happy Coding with Hybrid AI!
+
+
 

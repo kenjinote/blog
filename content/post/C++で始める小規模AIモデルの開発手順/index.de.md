@@ -46,7 +46,7 @@ graph TD
     I --> J["Nächste Token-ID"]
     J --> K["Detokenizer"]
     K --> L["Ausgabetext-Chunk"]
-    J -.-> |"Zum Kontext hinzufügen"| C
+    J -.->|"Zum Kontext hinzufügen"| C
 ```
 
 Da es sich um ein autoregressives Modell handelt, wird das ausgegebene Token wieder dem Kontext hinzugefügt und als Eingabe für die Vorhersage des nächsten Tokens zyklisch verwendet (gestrichelte Linie im Diagramm).
@@ -241,3 +241,5 @@ cmake --build . --config Release
 ## 10. Zusammenfassung
 
 Die Implementierung einer Inferenz-Engine für kleine KI-Modelle wie TinyLLaMA von Grund auf mit C++ und ggml ist eine hervorragende Gelegenheit, die Blackbox des Deep Learning zu entschlüsseln und die Schönheit der Low-Level-Hardwaresteuerung kennenzulernen. Durch den Einsatz von Zero-Copy-Laden mithilfe von Memory Mapping, SIMD-Optimierung und dem Aufbau von KV-Caches können Sie das Wesentliche der Systemprogrammierung in vollen Zügen genießen und gleichzeitig die Zukunft der Edge-KI mitgestalten.
+
+

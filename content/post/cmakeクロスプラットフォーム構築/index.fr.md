@@ -143,7 +143,7 @@ graph TD
     Root --> Inc["include/"]
     Root --> CMake["CMakeLists.txt"]
     
-    Root -. "Créer le répertoire build" .-> Build["build/ (Hors source)"]
+    Root -. Créer le répertoire build .-> Build["build/ (Hors source)"]
     Build --> Obj["CMakeFiles/ (Fichiers objets, caches)"]
     Build --> Bin["Binaires (MyApp.exe)"]
     Build --> Gen["Makefile généré / build.ninja"]
@@ -369,4 +369,5 @@ Récapitulons les points clés.
 7. **Approche mathématique** : Gardez à l'esprit la loi d'Amdahl et réduisez les dépendances pour améliorer l'efficacité de la compilation parallèle.
 
 CMake peut sembler difficile à comprendre au début, mais une fois que vous avez saisi les concepts de cibles et de propriétés, vous pouvez maintenir un environnement de compilation bien organisé, quelle que soit la taille ou la complexité du projet C++. N'hésitez pas à utiliser cet article comme référence pour configurer votre environnement de développement C++ avec la syntaxe la plus récente du Modern CMake.
+
 

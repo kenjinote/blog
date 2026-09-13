@@ -221,7 +221,7 @@ Seperti ini, di Rust, "mengubah suatu nilai (meminjam mutabel) saat nilai terseb
 graph LR
     A["Variabel v (Pemilik)"] --> B["Array Heap [1, 2, 3]"]
     C["Referensi 'first' (&v[0])"] -.->|"Peminjaman Imutabel"| B
-    A -->|X "Peminjaman Mutabel Ditolak!"| D["v.push(4)"]
+    A -->|"X "Peminjaman Mutabel Ditolak!""| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px
@@ -283,3 +283,5 @@ Mempelajari Rust setelah memahami kebebasan dan bahaya pointer C++ akan membantu
 
 ---
 *Artikel ini adalah studi perbandingan metode manajemen memori di C++ dan Rust. Kami harap ini berfungsi sebagai referensi untuk memilih bahasa yang tepat berdasarkan persyaratan masing-masing proyek.*
+
+

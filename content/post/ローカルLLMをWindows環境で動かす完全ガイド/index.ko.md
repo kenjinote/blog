@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["샘플러 (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["출력 토큰"]
     
-    OutputToken --> |"자기 회귀 생성 (Autoregressive)"| Tokenizer
+    OutputToken -->|"자기 회귀 생성 (Autoregressive)"| Tokenizer
     OutputToken --> Decoder["디토크나이저 (Detokenizer)"]
     Decoder --> FinalOutput["최종 출력 텍스트"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["사용자 질문"] --> EmbedQuery["질문 임베딩"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"유사도 검색"| RetrievedDocs["관련 문서 추출"]
+    VectorDB -->|"유사도 검색"| RetrievedDocs["관련 문서 추출"]
     
     UserQuery --> PromptBuilder["프롬프트 생성"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ Unsloth는 CUDA 커널을 극한까지 최적화하여, 표준 Hugging Face 라�
 5. **Unsloth (WSL2)**를 활용하여 나만의 전문 지식을 가진 커스텀 AI를 육성한다.
 
 AI의 '대중화'는 더 이상 버즈워드가 아니라 여러분의 Windows 데스크톱에서 작동하는 현실의 시스템입니다. 클라우드 API 사용 비용이나 정보 유출 위험에서 벗어나, 자유롭고 강력한 프라이빗 AI의 세계로 지금 당장 발을 들여놓아 보시기 바랍니다.
+
+

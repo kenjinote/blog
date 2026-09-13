@@ -97,11 +97,11 @@ El siguiente diagrama de Mermaid (diagrama de flujo) muestra el flujo desde la o
 
 ```mermaid
 flowchart TD
-    A["API de Oura Ring (Biometría)"] -->|JSON via OAuth2| C["Pipeline de Ingestión de Datos de Python"]
-    B["API de WakaTime (Tiempo de Código)"] -->|JSON via API Key| C
-    E["API de SwitchBot (Temp. de Habitación / CO2)"] -->|JSON via API Key| C
-    C -->|Extract & Transform| D["DataFrame de Pandas (Memoria)"]
-    D -->|Load| F["TimescaleDB / PostgreSQL"]
+    A["API de Oura Ring (Biometría)"] -->|"JSON via OAuth2"| C["Pipeline de Ingestión de Datos de Python"]
+    B["API de WakaTime (Tiempo de Código)"] -->|"JSON via API Key"| C
+    E["API de SwitchBot (Temp. de Habitación / CO2)"] -->|"JSON via API Key"| C
+    C -->|"Extract & Transform"| D["DataFrame de Pandas (Memoria)"]
+    D -->|"Load"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (Análisis Ad-hoc)"]
     F --> H["Aplicación Web de Streamlit (Monitoreo Diario)"]
 ```
@@ -368,6 +368,7 @@ Aprovechando la ciencia de datos y las API, diseñemos las condiciones de salud 
 
 ---
 *Aviso legal: Este artículo resume los experimentos personales y el enfoque de ciencia de datos del autor, y no tiene como objetivo proporcionar asesoramiento médico. Si experimenta problemas de salud persistentes o trastornos del sueño, consulte a una institución médica especializada.*
+
 
 
 

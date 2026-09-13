@@ -221,7 +221,7 @@ Ainsi, en Rust, « modifier une valeur (emprunt mutable) pendant qu'elle est en 
 graph LR
     A["Variable v (Propriétaire)"] --> B["Tableau sur le tas [1, 2, 3]"]
     C["Référence 'first' (&v[0])"] -.->|"Emprunt immuable"| B
-    A -->|X "Emprunt mutable refusé !"| D["v.push(4)"]
+    A -->|"X "Emprunt mutable refusé !""| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px
@@ -283,3 +283,5 @@ Si vous apprenez Rust après avoir compris la liberté et les dangers des pointe
 
 ---
 *Cet article est une comparaison et une réflexion sur les méthodes de gestion de la mémoire en C++ et Rust. Nous espérons qu'il vous sera utile pour choisir le langage approprié en fonction des exigences de votre projet.*
+
+

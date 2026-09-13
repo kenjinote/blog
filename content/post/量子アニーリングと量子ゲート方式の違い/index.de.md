@@ -61,8 +61,8 @@ Das bedeutet, dass das System, wenn schließlich $A(t) \to 0$ und $B(t) \to 1$ e
 
 ```mermaid
 graph TD
-    A["Hamiltonoperator H_0 (Anfangszustand)"] -->| Adiabatische Änderung (langsam genug) | B["Bleibt stets im Grundzustand"]
-    A -->| Nicht-adiabatische Änderung (zu schnell/thermisches Rauschen) | C["Übergang in angeregte Zustände (Fehler)"]
+    A["Hamiltonoperator H_0 (Anfangszustand)"] -->|"Adiabatische Änderung (langsam genug)"| B["Bleibt stets im Grundzustand"]
+    A -->|"Nicht-adiabatische Änderung (zu schnell/thermisches Rauschen)"| C["Übergang in angeregte Zustände (Fehler)"]
     B --> D["Hamiltonoperator H_P (Globales Optimum)"]
     C --> E["Gefangen in lokalem Optimum"]
     D --> F["Auslesen der Lösung"]
@@ -219,4 +219,5 @@ Quantencomputer befinden sich noch in der Entwicklungsphase, doch sowohl bei der
 
 ---
 *Dieser Artikel bietet einen umfassenden Überblick von den grundlegenden Konzepten des Quantencomputings bis hin zu den neuesten Hardwaretrends. Bitte verfolgen Sie auch in Zukunft die neuesten Forschungsentwicklungen.*
+
 

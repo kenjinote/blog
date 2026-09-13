@@ -148,8 +148,8 @@ Compte tenu des implémentations de circuits optimisées récentes, on considèr
 
 ```mermaid
 graph LR
-  A["Algorithme classique (GNFS)"] -->|Limite| B["Temps sous-exponentiel L_n[1/3]"]
-  C["Algorithme quantique (Shor)"] -->|Percée| D["Temps polynomial O((log n)^3)"]
+  A["Algorithme classique (GNFS)"] -->|"Limite"| B["Temps sous-exponentiel L_n[1/3]"]
+  C["Algorithme quantique (Shor)"] -->|"Percée"| D["Temps polynomial O((log n)^3)"]
   B --> E["Utilisation continue de RSA (augmentation de la longueur des clés)"]
   D --> F["Effondrement total de la cryptographie RSA"]
 ```
@@ -175,4 +175,5 @@ Le consensus actuel de la communauté scientifique concernant la question « Exi
 3. **La véritable menace vient des algorithmes quantiques** : C'est l'algorithme de Shor, basé sur les principes de la mécanique quantique, qui a franchi le mur de la complexité computationnelle. De ce fait, le monde est contraint de faire la transition vers la cryptographie post-quantique (PQC : Post-Quantum Cryptography). La transition vers de nouveaux problèmes mathématiques considérés comme difficiles à résoudre (impossibles à résoudre en temps polynomial) même pour les ordinateurs quantiques, tels que la cryptographie sur les réseaux euclidiens ou la cryptographie basée sur les hachages, constitue la frontière actuelle de la cryptographie.
 
 Le crible général du corps de nombres (GNFS) est l'un des « points culminants » atteints par l'humanité après avoir défié les limites des mathématiques classiques et de la conception d'algorithmes. Comprendre la structure mathématique profonde de GNFS n'est pas seulement apprendre l'histoire de la cryptanalyse, mais c'est aussi un voyage d'exploration intellectuelle touchant à la beauté de la théorie de la complexité algorithmique et de la théorie algébrique des nombres. Jusqu'au jour où les ordinateurs quantiques seront mis en pratique, GNFS continuera très probablement de défendre son trône de plus puissant algorithme de factorisation d'entiers.
+
 

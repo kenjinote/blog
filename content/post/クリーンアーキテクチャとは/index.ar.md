@@ -109,9 +109,9 @@ graph TD
 
 ```mermaid
 graph LR
-    A["أطر العمل والمحركات"] -->| اعتماد | B["محولات الواجهات"]
-    B -->| اعتماد | C["حالات الاستخدام"]
-    C -->| اعتماد | D["الكيانات"]
+    A["أطر العمل والمحركات"] -->|"اعتماد"| B["محولات الواجهات"]
+    B -->|"اعتماد"| C["حالات الاستخدام"]
+    C -->|"اعتماد"| D["الكيانات"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,4 +422,5 @@ test('محاولة التسجيل ببريد إلكتروني موجود مسب�
 
 ---
 *مرجع: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" بقلم Robert C. Martin*
+
 

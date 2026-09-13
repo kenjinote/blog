@@ -44,8 +44,8 @@ O barbeiro entrou em pânico total e tornou-se incapaz de tomar qualquer das ati
 graph TD
     Barber["Barbeiro: Devo rapar a minha própria barba?"]
     
-    Barber -->|SIM: Rapo eu mesmo| Cond1["Violação da regra!<br>（Não deve rapar a barba de quem rapa a própria barba）"]
-    Barber -->|NÃO: Não rapo eu mesmo| Cond2["Violação da regra!<br>（Deve rapar a barba de quem não rapa a própria barba）"]
+    Barber -->|"SIM: Rapo eu mesmo"| Cond1["Violação da regra!<br>（Não deve rapar a barba de quem rapa a própria barba）"]
+    Barber -->|"NÃO: Não rapo eu mesmo"| Cond2["Violação da regra!<br>（Deve rapar a barba de quem não rapa a própria barba）"]
     
     Cond1 --> Paradox["Contradição (Paradoxo)"]
     Cond2 --> Paradox
@@ -140,7 +140,7 @@ graph LR
         Strict["Apenas aqueles que seguem regras<br>rígidas (axiomas) são 'conjuntos'"] --> Safe["A contradição R não é reconhecida como um<br>'conjunto', então é seguro!"]
     end
     
-    Monster -.->|Crise no mundo da matemática| Strict
+    Monster -.->|"Crise no mundo da matemática"| Strict
 ```
 
 ---
@@ -153,3 +153,4 @@ O Paradoxo de Russell é o extremo de um bug lógico causado por auto-referênci
 
 Se um gênio chamado Russell não tivesse notado este "bug do barbeiro", a matemática moderna e a ciência da computação, que é uma extensão de sua lógica, poderiam ter se desenvolvido carregando uma contradição fatal em algum lugar.
 Paradoxos são o remédio forte mais estimulante que nos ensina os limites da lógica humana.
+

@@ -36,11 +36,11 @@ Premis 1 maupun Premis 2, masing-masing terdengar sangat masuk akal jika berdiri
 
 ```mermaid
 graph LR
-    A["10.000 butir = Gundukan Pasir"] -->|Hilangkan 1 butir| B["9.999 butir = Gundukan Pasir"]
-    B -->|Hilangkan 1 butir| C["9.998 butir = Gundukan Pasir"]
-    C -->|...diulang...| D["100 butir = Gundukan Pasir?"]
-    D -->|Hilangkan 1 butir| E["10 butir = Gundukan Pasir?"]
-    E -->|Hilangkan 1 butir| F["1 butir = Gundukan Pasir?"]
+    A["10.000 butir = Gundukan Pasir"] -->|"Hilangkan 1 butir"| B["9.999 butir = Gundukan Pasir"]
+    B -->|"Hilangkan 1 butir"| C["9.998 butir = Gundukan Pasir"]
+    C -->|"...diulang..."| D["100 butir = Gundukan Pasir?"]
+    D -->|"Hilangkan 1 butir"| E["10 butir = Gundukan Pasir?"]
+    E -->|"Hilangkan 1 butir"| F["1 butir = Gundukan Pasir?"]
     
     style A fill:#4CAF50,color:#fff
     style D fill:#FF9800,color:#fff
@@ -95,3 +95,4 @@ Paradoks gundukan pasir bukan sekadar permainan kata, tetapi juga menimbulkan ma
 - **Regulasi lingkungan**: Jika emisi polutan melebihi nilai standar sebesar 0,001 mg, itu ilegal. Jika tepat pada nilai standar, itu legal.
 
 Bahasa dan pemikiran manusia pada dasarnya mengandung keambiguan, dan upaya untuk membagi dunia ke dalam dua kutub yang jelas mungkin pada dasarnya tidak mungkin dilakukan. Paradoks gundukan pasir adalah sebuah paradoks yang telah membuat para filsuf berpikir keras selama lebih dari 2.400 tahun, yang menunjukkan keterbatasan mendasar dari kecerdasan manusia.
+

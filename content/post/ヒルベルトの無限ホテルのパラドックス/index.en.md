@@ -60,11 +60,11 @@ graph LR
         NewR4["Room 4<br>(Guest C)"]
     end
     
-    R1 -->|Move| NewR2
-    R2 -->|Move| NewR3
-    R3 -->|Move| NewR4
+    R1 -->|"Move"| NewR2
+    R2 -->|"Move"| NewR3
+    R3 -->|"Move"| NewR4
     
-    NewGuest["New Guest"] -->|Check-in| NewR1
+    NewGuest["New Guest"] -->|"Check-in"| NewR1
     
     style NewR1 fill:#aaffaa,stroke:#333,stroke-width:2px
     style NewGuest fill:#ffaaaa,stroke:#333,stroke-width:2px
@@ -101,15 +101,15 @@ And miraculously, **"all the odd-numbered rooms (Room 1, 3, 5...)" became comple
 ```mermaid
 graph LR
     subgraph "Current Guests"
-        G1["Guest 1"] -->|Multiply by 2| R2["Room 2"]
-        G2["Guest 2"] -->|Multiply by 2| R4["Room 4"]
-        G3["Guest 3"] -->|Multiply by 2| R6["Room 6"]
+        G1["Guest 1"] -->|"Multiply by 2"| R2["Room 2"]
+        G2["Guest 2"] -->|"Multiply by 2"| R4["Room 4"]
+        G3["Guest 3"] -->|"Multiply by 2"| R6["Room 6"]
     end
     
     subgraph "New Guests from Bus (Infinite)"
-        N1["New Guest 1"] -->|To Odd Room| R1["Room 1 (Empty)"]
-        N2["New Guest 2"] -->|To Odd Room| R3["Room 3 (Empty)"]
-        N3["New Guest 3"] -->|To Odd Room| R5["Room 5 (Empty)"]
+        N1["New Guest 1"] -->|"To Odd Room"| R1["Room 1 (Empty)"]
+        N2["New Guest 2"] -->|"To Odd Room"| R3["Room 3 (Empty)"]
+        N3["New Guest 3"] -->|"To Odd Room"| R5["Room 5 (Empty)"]
     end
     
     style R1 fill:#aaffaa,stroke:#333
@@ -180,3 +180,4 @@ All these obvious intuitions are brilliantly betrayed.
 The world of infinity is a treasure trove of paradoxes (truths that contradict intuition). Mathematicians did not fear these paradoxes; instead, they subdued them with the power of logic, classified them, and built the beautiful system of modern set theory.
 
 The next time you are turned away because "the hotel is fully booked," try to imagine, "What if this hotel were Hilbert's Grand Hotel?"
+

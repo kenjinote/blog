@@ -296,10 +296,10 @@ sequenceDiagram
 
 ```mermaid
 graph TD
-    Client["Client / Main Thread"] -->|Push Task| Queue["Task Queue"]
-    Queue -->|Pop Task| W1["Worker Thread 1"]
-    Queue -->|Pop Task| W2["Worker Thread 2"]
-    Queue -->|Pop Task| W3["Worker Thread N"]
+    Client["Client / Main Thread"] -->|"Push Task"| Queue["Task Queue"]
+    Queue -->|"Pop Task"| W1["Worker Thread 1"]
+    Queue -->|"Pop Task"| W2["Worker Thread 2"]
+    Queue -->|"Pop Task"| W3["Worker Thread N"]
     
     W1 --> Exec["Execution & Return Future"]
     W2 --> Exec
@@ -331,3 +331,4 @@ C++におけるマルチスレッドと非同期プログラミングについ�
 4. **オーバーヘッドを意識する:** スレッドの過剰な生成は避け、必要に応じてスレッドプールアーキテクチャを導入する。
 
 並行処理のバグ（デッドロック、データ競合）は再現性が低く、デバッグが最も困難な部類に入ります。スレッドセーフティを常に意識し、適切な標準ライブラリのツールを選択することで、モダンC++による堅牢で高速なシステム開発を実現しましょう。
+

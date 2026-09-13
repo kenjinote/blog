@@ -163,10 +163,10 @@ int Calculator::Add(int a, int b) {
 
 ```mermaid
 flowchart LR
-    Test["اختبار الوحدة"] -->|يحقن Mock| Target["الخدمة المستهدفة"]
-    Target -->|تعتمد على| Interface["الواجهة (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|ينفذ| Interface
-    Test -->|يهيئ| Mock
+    Test["اختبار الوحدة"] -->|"يحقن Mock"| Target["الخدمة المستهدفة"]
+    Target -->|"تعتمد على"| Interface["الواجهة (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"ينفذ"| Interface
+    Test -->|"يهيئ"| Mock
 ```
 
 ### 5.1 تعريف الواجهة وتنفيذ الفئة المستهدفة
@@ -343,3 +343,4 @@ $$ M = E - N + 2P $$
 4. تصور تغطية الاختبار باستخدام **gcov/lcov**
 
 على الرغم من أن TDD هو نهج يستغرق وقتاً لإتقانه، إلا أن عائد الاستثمار الخاص به لا يُحصى في برمجة الأنظمة التي تتطلب توازناً بين الأداء والأمان مثل لغة C++. نرجو منك البدء في ممارسة TDD تدريجياً من مشروعك القادم، والحصول على كود C++ متين وسهل الصيانة.
+

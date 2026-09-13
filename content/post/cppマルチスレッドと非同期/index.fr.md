@@ -296,10 +296,10 @@ Un pool de threads est une architecture dans laquelle un certain nombre de threa
 
 ```mermaid
 graph TD
-    Client["Client / Fil principal"] -->|Pousser la tâche| Queue["File d'attente des tâches"]
-    Queue -->|Extraire la tâche| W1["Thread travailleur 1"]
-    Queue -->|Extraire la tâche| W2["Thread travailleur 2"]
-    Queue -->|Extraire la tâche| W3["Thread travailleur N"]
+    Client["Client / Fil principal"] -->|"Pousser la tâche"| Queue["File d'attente des tâches"]
+    Queue -->|"Extraire la tâche"| W1["Thread travailleur 1"]
+    Queue -->|"Extraire la tâche"| W2["Thread travailleur 2"]
+    Queue -->|"Extraire la tâche"| W3["Thread travailleur N"]
     
     W1 --> Exec["Exécution et retour du Future"]
     W2 --> Exec
@@ -331,3 +331,4 @@ Nous avons expliqué la programmation multithread et asynchrone en C++, depuis l
 4. **Être conscient des surcoûts :** Éviter la création excessive de threads et, si nécessaire, introduire une architecture de pool de threads.
 
 Les bugs liés à la concurrence (interblocages, concurrences de données) ont une faible reproductibilité et font partie des plus difficiles à déboguer. En gardant toujours à l'esprit la sécurité des threads (thread safety) et en choisissant les bons outils de la bibliothèque standard, réalisez des développements de systèmes robustes et rapides grâce au C++ moderne.
+

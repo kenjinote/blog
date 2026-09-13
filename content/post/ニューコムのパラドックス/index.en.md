@@ -45,13 +45,13 @@ Now, you must make a choice.
 graph TD
     Omega["Omega's Prediction<br>(already completed yesterday)"]
     
-    Omega -->|Predicts 'Take both'| BoxB_Empty["Box B is empty (0 yen)"]
-    Omega -->|Predicts 'Take only Box B'| BoxB_100M["Puts 100 million yen in Box B"]
+    Omega -->|"Predicts 'Take both'"| BoxB_Empty["Box B is empty (0 yen)"]
+    Omega -->|"Predicts 'Take only Box B'"| BoxB_100M["Puts 100 million yen in Box B"]
     
     You["Your Choice<br>(today)"]
     
-    You -->|Choice 1: Take both| Result1["Box A (100k) + Box B contents"]
-    You -->|Choice 2: Take only Box B| Result2["Box A (0 yen) + Box B contents"]
+    You -->|"Choice 1: Take both"| Result1["Box A (100k) + Box B contents"]
+    You -->|"Choice 2: Take only Box B"| Result2["Box A (0 yen) + Box B contents"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2
@@ -134,3 +134,4 @@ And interestingly, both camps genuinely believe that "the opponent's logic is co
 
 "What is a rational judgment?"
 No matter how much economics and mathematics develop, in the end, it comes down to the philosophy of "how humans perceive this world." Newcomb's paradox is a magnificently mean and beautiful thought experiment that confronts us with the limits of logic.
+

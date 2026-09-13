@@ -49,7 +49,7 @@ Se seguirmos as regras da indução, com a mesma "exata força" que todas as obs
 
 ```mermaid
 graph TD
-    A["Observações passadas: Todas as esmeraldas eram verdes"] -->|Simultaneamente| B["Observações passadas: Todas as esmeraldas eram 'grue'"]
+    A["Observações passadas: Todas as esmeraldas eram verdes"] -->|"Simultaneamente"| B["Observações passadas: Todas as esmeraldas eram 'grue'"]
     
     A --> C["Previsão indutiva A: As esmeraldas no futuro também serão 'verdes'"]
     B --> D["Previsão indutiva B: As esmeraldas no futuro também serão 'grue'"]
@@ -82,3 +82,4 @@ Ou seja, quais palavras assumimos como "básicas" é apenas uma questão de noss
 O paradoxo grue de Goodman (o novo enigma da indução) provou que as teorias científicas não são determinadas apenas por dados puramente objetivos, mas dependem fortemente de "qual estrutura conceitual (linguagem) usamos para interpretar o mundo."
 
 Mesmo no contexto da Inteligência Artificial e do aprendizado de máquina, com os mesmos dados de treinamento, previsões para o futuro podem mudar completamente dependendo da "estrutura do modelo (em quais características focar)". Assim, este paradoxo continua sendo muito relevante hoje como problemas de "sobreajuste (overfitting)" e "viés (bias)".
+

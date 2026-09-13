@@ -97,9 +97,9 @@ $$
 
 ```mermaid
 graph TD
-    A["Type: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["Range of meta::info"]
-    C -->| [: member :] | D["Direct Member Access (obj.id, obj.name)"]
+    A["Type: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["Range of meta::info"]
+    C -->|"[: member :]"| D["Direct Member Access (obj.id, obj.name)"]
     D --> E["Generated Code (Zero Overhead)"]
 ```
 
@@ -296,9 +296,9 @@ C++の非同期処理モデルを根底から作り直す標準化提案（P2300
 
 ```mermaid
 graph LR
-    S["Sender (Task Description)"] -->|connect| O["Operation State"]
-    O -->|start| E["Execution (ThreadPool, GPU, etc.)"]
-    E -->|set_value / set_error / set_stopped| R["Receiver (Callback)"]
+    S["Sender (Task Description)"] -->|"connect"| O["Operation State"]
+    O -->|"start"| E["Execution (ThreadPool, GPU, etc.)"]
+    E -->|"set_value / set_error / set_stopped"| R["Receiver (Callback)"]
 ```
 
 Sendersは「何をすべきか」を記述する軽量な設計図であり、実行コンテキスト（Scheduler）と分離されています。これにより、CPUのThreadPoolやGPUへのタスクのオフロードを統一されたインターフェースで効率的に記述できるようになります。
@@ -367,5 +367,6 @@ C++26は、長年C++プログラマが待ち望んできた「夢の機能」が
 
 ---
 *この記事は2026年時点のC++26標準化状況に基づいて執筆されています。各コンパイラの実装状況によっては、一部の構文が変更される可能性があることにご留意ください。*
+
 
 

@@ -260,13 +260,13 @@ Arsitektur di mana sisi C++ mendapatkan jalur skrip PowerShell dari `HKLM\SOFTWA
 
 ```mermaid
 flowchart TD
-    A["Layanan Agen C++"] -->|RegQueryValueEx| B["Registri Windows"]
-    B -->|Kembalikan Jalur Skrip| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|Eksekusi| D["Skrip Admin (misal, Restart-Service)"]
-    D -->|stdout via Pipa| C
-    C -->|ReadFile| A
-    A -->|Catat| E["Event Viewer / File Log"]
+    A["Layanan Agen C++"] -->|"RegQueryValueEx"| B["Registri Windows"]
+    B -->|"Kembalikan Jalur Skrip"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"Eksekusi"| D["Skrip Admin (misal, Restart-Service)"]
+    D -->|"stdout via Pipa"| C
+    C -->|"ReadFile"| A
+    A -->|"Catat"| E["Event Viewer / File Log"]
 ```
 
 ## Analisis Kinerja dan Keuntungan Pembongkaran (Offloading)
@@ -316,3 +316,4 @@ Meskipun Anda harus berhati-hati dengan manajemen memori dan konversi string pad
 ---
 
 *Blog teknologi ini akan terus meliput topik mendalam mengenai struktur internal Windows dan otomatisasi tingkat lanjut di masa mendatang. Jika Anda memiliki pertanyaan atau umpan balik, silakan sampaikan di kolom komentar.*
+

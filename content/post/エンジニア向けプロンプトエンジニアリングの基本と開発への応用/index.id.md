@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["Lingkungan Eksternal (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (Hasil eksekusi/log error dari alat)"]
     Observation --> Thought
-    Thought -->|Informasi yang dikumpulkan cukup| Finish["Finish (Output jawaban/kode akhir)"]
+    Thought -->|"Informasi yang dikumpulkan cukup"| Finish["Finish (Output jawaban/kode akhir)"]
 ```
 
 ### 4.2 Implementasi menggunakan Function Calling (Tool Use)
@@ -387,3 +387,4 @@ Dengan menguasai prinsip-prinsip ini, prompt tidak lagi sekadar deretan string, 
 
 ---
 *Generated using Prompt Engineering Techniques.*
+

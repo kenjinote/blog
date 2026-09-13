@@ -36,11 +36,11 @@ graph TD
     VSCode -- 補完要求・定義ジャンプ --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. "AST（抽象構文木）解析" .-> CompilerC
-    RustAnalyzer -. "マクロ展開・型推論" .-> CompilerR
+    Clangd -. AST（抽象構文木）解析 .-> CompilerC
+    RustAnalyzer -. マクロ展開・型推論 .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
-    Debugger -. "ptrace / メモリダンプ" .-> Executable["コンパイル済みバイナリ"]
+    Debugger -. ptrace / メモリダンプ .-> Executable["コンパイル済みバイナリ"]
 ```
 
 VSCodeの本体は、C++のテンプレートメタプログラミングやRustの複雑なライフタイム指定子を理解しているわけではありません。エディタの役割はソースコードの表示とユーザーからの入力の受付に専念し、コードの意味解析（Semantic Analysis）、型推論（Type Inference）、エラーチェックといった計算コストの高い処理は、背後で動く「言語サーバー」にJSON-RPCを通じて委譲されます。
@@ -388,4 +388,5 @@ C++とRustは、どちらも「ハードウェアの限界性能を引き出す�
 初期の設定ファイルのカスタマイズには多少の時間がかかるかもしれませんが、一度構築してしまえば、その後のコーディング体験は驚くほど快適で生産的なものになります。ぜひ本記事のアーキテクチャ解説や具体的な設定（`settings.json`, `tasks.json`, `launch.json`）を参考に、ご自身の最強の開発環境を構築してみてください。
 
 快適で安全なシステムプログラミング・ライフを！
+
 

@@ -56,11 +56,11 @@ graph TD
     A["Total Population (1,000,000 people)"] --> B["Sick People (100 people)"]
     A --> C["Healthy People (999,900 people)"]
     
-    B -->|99% Correct| B1["True Positives (99 people)"]
-    B -->|1% Failure| B2["False Negatives (1 person)"]
+    B -->|"99% Correct"| B1["True Positives (99 people)"]
+    B -->|"1% Failure"| B2["False Negatives (1 person)"]
     
-    C -->|99% Correct| C1["True Negatives (989,901 people)"]
-    C -->|1% Failure| C2["False Positives (9,999 people)"]
+    C -->|"99% Correct"| C1["True Negatives (989,901 people)"]
+    C -->|"1% Failure"| C2["False Positives (9,999 people)"]
     
     B1 -.-> D{"Total Number of People Told 'Positive': 10,098 people"}
     C2 -.-> D
@@ -103,3 +103,4 @@ This illusion causes panic and incorrect judgments not only in medical care but 
   Even if you feel it's dangerous seeing news that "XX% of cars that caused accidents were driven by elderly people," unless you consider the "proportion of elderly people among all drivers on the road in the first place (base rate)," you cannot know if a specific age group is truly more prone to causing accidents.
 
 The "Base Rate Fallacy" teaches us the importance of statistical thinking: especially when we see shocking numbers or individual cases, we should step back and consider **"how likely is that to happen within the whole in the first place (base rate)."**
+

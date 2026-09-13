@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["Sampler (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["Ausgabe-Token"]
     
-    OutputToken --> |"Autoregressive Generierung"| Tokenizer
+    OutputToken -->|"Autoregressive Generierung"| Tokenizer
     OutputToken --> Decoder["Detokenizer (Detokenizer)"]
     Decoder --> FinalOutput["Finaler Ausgabetext"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["Benutzeranfrage"] --> EmbedQuery["Anfrage-Embedding"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"Ähnlichkeitssuche"| RetrievedDocs["Extrahierte relevante Dokumente"]
+    VectorDB -->|"Ähnlichkeitssuche"| RetrievedDocs["Extrahierte relevante Dokumente"]
     
     UserQuery --> PromptBuilder["Prompt-Generierung"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ Bitte nutzen Sie die in diesem Artikel erläuterten Punkte:
 5. Nutzen Sie **Unsloth (WSL2)**, um Ihre eigene benutzerdefinierte KI mit Fachwissen zu trainieren.
 
 Die "Demokratisierung" der KI ist nicht länger nur ein Schlagwort, sondern ein reales System, das auf Ihrem Windows-Desktop läuft. Befreien Sie sich von Cloud-API-Kosten sowie Risiken von Informationslecks und treten Sie noch heute in die freie und mächtige Welt der privaten KI ein.
+
+

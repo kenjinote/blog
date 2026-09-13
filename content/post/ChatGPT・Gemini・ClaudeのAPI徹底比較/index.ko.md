@@ -57,7 +57,7 @@ LLM API를 호출했을 때, 백엔드에서는 어떤 처리가 이루어지고
 
 ```mermaid
 graph TD
-    A["클라이언트 애플리케이션"] -->|HTTP/REST or gRPC| B["API 게이트웨이"]
+    A["클라이언트 애플리케이션"] -->|"HTTP/REST or gRPC"| B["API 게이트웨이"]
     B --> C["로드 밸런서"]
     C --> D["추론 클러스터"]
     D --> E["토크나이저 (BPE / SentencePiece)"]
@@ -66,7 +66,7 @@ graph TD
     G --> H["출력 레이어 (Logits)"]
     H --> I["샘플러 (Temperature, Top-p, Top-k)"]
     I --> J["디토크나이저"]
-    J -->|스트리밍 응답 (Chunk)| A
+    J -->|"스트리밍 응답 (Chunk)"| A
 ```
 
 ### 3.1 Tokenization(토큰화) 알고리즘
@@ -344,3 +344,4 @@ sequenceDiagram
 예를 들어, 사용자의 단순한 질문에는 저렴하고 빠른 `GPT-4o-mini`나 `Gemini 1.5 Flash`로 응답하고, 복잡한 처리가 필요하다고 판단되는 경우에만 `Claude 3.5 Sonnet`으로 작업을 폴백(fallback)시킴으로써 비용과 성능의 최적 균형을 실현할 수 있습니다.
 
 AI의 진화는 멈추지 않습니다. 각 API의 장단점과 아키텍처의 특성을 깊이 이해하여 유연하고 확장 가능한 AI 애플리케이션을 구축하시기 바랍니다.
+

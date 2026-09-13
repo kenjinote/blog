@@ -64,15 +64,15 @@ Ke arah mana pun kita memilih, logikanya akan runtuh.
 graph TD
     A["Kata 'Heterologikal'"] --> B{"Diklasifikasikan ke mana?"}
     
-    B -->|Adalah Autologikal| C["Definisi: Memiliki sifat yang dideskripsikan artinya"]
+    B -->|"Adalah Autologikal"| C["Definisi: Memiliki sifat yang dideskripsikan artinya"]
     C --> D["Artinya adalah 'Heterologikal'"]
     D --> E["Hasil: Adalah Heterologikal!"]
-    E -->|Kontradiksi| B
+    E -->|"Kontradiksi"| B
     
-    B -->|Adalah Heterologikal| F["Definisi: Tidak memiliki sifat yang dideskripsikan artinya"]
+    B -->|"Adalah Heterologikal"| F["Definisi: Tidak memiliki sifat yang dideskripsikan artinya"]
     F --> G["Artinya adalah 'Heterologikal'"]
     G --> H["Hasil: Adalah Autologikal!"]
-    H -->|Kontradiksi| B
+    H -->|"Kontradiksi"| B
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
@@ -102,3 +102,4 @@ Ketika kata merujuk pada dirinya sendiri (referensi-diri), selalu ada bahaya ter
 Ini bukan hanya masalah filosofi atau linguistik. Dalam bidang ilmu komputer dan kecerdasan buatan, kita juga menghadapi hambatan logis serupa ketika sebuah program mencoba mengevaluasi atau memodifikasi kodenya sendiri, atau ketika model pemrosesan bahasa alami menafsirkan kontradiksi makna.
 
 Paradoks Grelling-Nelson adalah sebuah eksperimen pemikiran yang dengan brilian memvisualisasikan "bug" (batasan) yang secara inheren terkandung di dalam sistem "bahasa".
+

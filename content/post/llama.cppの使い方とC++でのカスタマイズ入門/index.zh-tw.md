@@ -103,7 +103,7 @@ graph TD
     J --> K["選定的 Token ID"]
     K --> L["llama.cpp Detokenizer"]
     L --> M["輸出字串"]
-    K -. "自迴歸迴圈" .-> D
+    K -. 自迴歸迴圈 .-> D
 ```
 
 文字生成是一個自迴歸迴圈，每輸出一個 Token，它就會作為下一個輸入被加入到 KV Cache 中，然後再次通過計算圖。
@@ -383,3 +383,4 @@ for (llama_token bad_tok : forbidden_tokens) {
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

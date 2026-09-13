@@ -140,8 +140,8 @@ At what point should advanced architectural patterns like the Saga pattern or CQ
 flowchart LR
     Client["Client"] --> API["API Gateway"]
     API --> Order["Order Service (Context)"]
-    Order -. "Asynchronous Event (Kafka)" .-> Inventory["Inventory Service"]
-    Order -. "Asynchronous Event (Kafka)" .-> Payment["Payment Service"]
+    Order -. Asynchronous Event (Kafka) .-> Inventory["Inventory Service"]
+    Order -. Asynchronous Event (Kafka) .-> Payment["Payment Service"]
     
     Inventory --> DB1["Inventory DB"]
     Payment --> DB2["Payment DB"]
@@ -206,6 +206,7 @@ Engineers of the future will not be swayed by the trivial specifications of a pa
 
 A true engineer is not someone who writes code, but someone who solves problems.
 Domain modeling, scalable architecture design, communication with stakeholders, and debugging complex systems. For those who continue to polish these "human-specific engineering skills," AI will not be an enemy that takes away jobs, but the ultimate partner that expands their own creativity and productivity tens of times over.
+
 
 
 

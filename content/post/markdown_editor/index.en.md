@@ -233,14 +233,14 @@ Furthermore, using GitHub Actions, you can build a CI pipeline that automaticall
 
 ```mermaid
 flowchart TD
-    A["Author"] -->|Push changes| B["GitHub Repository"]
+    A["Author"] -->|"Push changes"| B["GitHub Repository"]
     B --> C{"GitHub Actions Triggered"}
     C --> D["Checkout Repository"]
     D --> E["Setup Node.js"]
     E --> F["npm install"]
     F --> G["Run textlint"]
-    G -->|Pass| H["Build Hugo Site"]
-    G -->|Fail| I["Report Error to PR/Commit"]
+    G -->|"Pass"| H["Build Hugo Site"]
+    G -->|"Fail"| I["Report Error to PR/Commit"]
     H --> J["Deploy to Hosting (Vercel/Netlify)"]
 ```
 
@@ -269,6 +269,7 @@ We have explained the editor settings to double your writing speed when writing 
 5. **LLM Integration**: Have AI directly output Markdown structures and chart code within the editor.
 
 By adopting these settings in your own environment, the "hassle" of writing will disappear, and the quantity and quality of your technical output should dramatically improve. Why not start by registering just a single small snippet?
+
 
 
 

@@ -36,11 +36,11 @@ Premise 1 and Premise 2 each sound perfectly reasonable on their own. However, r
 
 ```mermaid
 graph LR
-    A["10,000 grains = Heap"] -->|Remove 1| B["9,999 grains = Heap"]
-    B -->|Remove 1| C["9,998 grains = Heap"]
-    C -->|...repeat...| D["100 grains = Heap?"]
-    D -->|Remove 1| E["10 grains = Heap?"]
-    E -->|Remove 1| F["1 grain = Heap?"]
+    A["10,000 grains = Heap"] -->|"Remove 1"| B["9,999 grains = Heap"]
+    B -->|"Remove 1"| C["9,998 grains = Heap"]
+    C -->|"...repeat..."| D["100 grains = Heap?"]
+    D -->|"Remove 1"| E["10 grains = Heap?"]
+    E -->|"Remove 1"| F["1 grain = Heap?"]
     
     style A fill:#4CAF50,color:#fff
     style D fill:#FF9800,color:#fff
@@ -95,3 +95,4 @@ The Sorites Paradox is not merely a word game — it raises serious problems in 
 - **Environmental regulations**: If pollutant emissions exceed the standard by 0.001 mg, it's illegal. Right at the standard, it's legal.
 
 Human language and thought are inherently imbued with vagueness, and attempting to carve the world into clear-cut binary categories may be fundamentally flawed. The Sorites Paradox is a paradox that has perplexed philosophers for over 2,400 years, revealing the fundamental limits of human intellect.
+

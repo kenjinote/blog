@@ -163,10 +163,10 @@ GoogleTest를 사용할 때, 어서션 매크로로 `EXPECT_*`와 `ASSERT_*` 2�
 
 ```mermaid
 flowchart LR
-    Test["단위 테스트"] -->|injects mock| Target["대상 서비스"]
-    Target -->|depends on| Interface["인터페이스 (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|implements| Interface
-    Test -->|configures| Mock
+    Test["단위 테스트"] -->|"injects mock"| Target["대상 서비스"]
+    Target -->|"depends on"| Interface["인터페이스 (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"implements"| Interface
+    Test -->|"configures"| Mock
 ```
 
 ### 5.1 인터페이스 정의와 대상 클래스의 구현
@@ -343,3 +343,4 @@ $$ M = E - N + 2P $$
 4. **gcov/lcov**에 의한 테스트 커버리지 시각화
 
 TDD는 습득에 시간이 걸리는 접근법이지만, C++처럼 퍼포먼스와 안전성의 양립이 요구되는 시스템 프로그래밍에서 그 투자 대비 효과는 헤아릴 수 없습니다. 꼭 다음 프로젝트부터 조금씩 TDD를 실천하여 견고하고 유지보수하기 쉬운 C++ 코드를 얻으시기 바랍니다.
+

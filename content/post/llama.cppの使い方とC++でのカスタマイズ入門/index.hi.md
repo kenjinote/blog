@@ -103,7 +103,7 @@ graph TD
     J --> K["चयनित टोकन ID"]
     K --> L["llama.cpp डिटोकनाइज़र"]
     L --> M["आउटपुट स्ट्रिंग"]
-    K -. "ऑटो-रिग्रेसिव लूप" .-> D
+    K -. ऑटो-रिग्रेसिव लूप .-> D
 ```
 
 टेक्स्ट जनरेशन एक ऑटो-रिग्रेसिव लूप है जहाँ प्रत्येक नया टोकन आउटपुट होने पर इसे KV Cache में अगले इनपुट के रूप में जोड़ा जाता है और फिर से गणना ग्राफ से गुज़रता है।
@@ -378,3 +378,4 @@ C++ में कार्यान्वयन समाप्त करने 
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

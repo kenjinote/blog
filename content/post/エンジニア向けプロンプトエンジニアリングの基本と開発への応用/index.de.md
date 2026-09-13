@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["Externe Umgebung (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (Ausführungsergebnisse und Fehlerprotokolle der Werkzeuge)"]
     Observation --> Thought
-    Thought -->|Genug Informationen gesammelt| Finish["Finish (Ausgabe der endgültigen Antwort/des Codes)"]
+    Thought -->|"Genug Informationen gesammelt"| Finish["Finish (Ausgabe der endgültigen Antwort/des Codes)"]
 ```
 
 ### 4.2 Implementierung durch Function Calling (Tool Use)
@@ -387,3 +387,4 @@ Indem Sie diese Prinzipien meistern, werden Prompts nicht mehr nur Zeichenfolgen
 
 ---
 *Generated using Prompt Engineering Techniques.*
+

@@ -146,17 +146,17 @@ graph TD
         Labeler["Rotulador de Moderação (Verificadores de Fatos)"]
     end
 
-    Client -->|Lê/Escreve| PDS1
-    Client -->|Visualiza| AppView
+    Client -->|"Lê/Escreve"| PDS1
+    Client -->|"Visualiza"| AppView
     
-    PDS1 -->|Sincroniza via WebSocket| Relay
-    PDS2 -->|Sincroniza via WebSocket| Relay
+    PDS1 -->|"Sincroniza via WebSocket"| Relay
+    PDS2 -->|"Sincroniza via WebSocket"| Relay
     
-    Relay -->|Indexa| AppView
+    Relay -->|"Indexa"| AppView
     
-    AppView -.->|Solicita Feed| FeedGen1
-    AppView -.->|Solicita Feed| FeedGen2
-    AppView -.->|Obtém Rótulos| Labeler
+    AppView -.->|"Solicita Feed"| FeedGen1
+    AppView -.->|"Solicita Feed"| FeedGen2
+    AppView -.->|"Obtém Rótulos"| Labeler
 ```
 
 A maior conquista do AT Protocol é ter separado a "geração de feeds (algoritmo)" e a "moderação (rotulagem)" da própria plataforma, tornando-as passíveis de serem escolhidas e combinadas livremente (Composable) pelos próprios usuários (Custom Feeds / Stackable Moderation).
@@ -194,5 +194,6 @@ A tecnologia não é mágica. Ela é um espelho humano. Se a sociedade está div
 A partir do 101º post, continuarei a me posicionar na interseção entre o código e a sociedade, como um simples engenheiro, aprofundando minhas reflexões. Muito obrigado por me acompanhar neste longo texto até o fim. Espero que a rede do futuro não seja um muro que nos divide, mas uma ponte para nos entendermos.
 
 (Fim)
+
 
 

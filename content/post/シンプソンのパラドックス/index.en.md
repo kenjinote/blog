@@ -93,8 +93,8 @@ graph TD
         Total["Overall sum: Hospital A overwhelmingly wins (90% > 41%)"]
     end
     
-    Light -->|Summing them up somehow reverses the result| Total
-    Heavy -->|Summing them up somehow reverses the result| Total
+    Light -->|"Summing them up somehow reverses the result"| Total
+    Heavy -->|"Summing them up somehow reverses the result"| Total
     
     style Total fill:#ff9999,stroke:#333,stroke-width:2px
 ```
@@ -149,3 +149,4 @@ The world is overflowing with companies, politicians, and media that cherry-pick
 Even if told "Our Product A has higher overall satisfaction than Competitor's Product B!", if you break it down into "young demographics" and "elderly demographics", Competitor's Product B might be winning in both groups.
 
 When looking at data, having a skeptical eye that doesn't get fooled by superficial "overall" numbers and asks, "Is there an extreme bias in the proportion of groups due to variables hidden behind (age, gender, severity, etc.)?" becomes the strongest weapon for surviving the modern information society.
+

@@ -164,12 +164,12 @@ O fluxograma Mermaid abaixo ilustra a estrutura de roteamento de sinal ideal de 
 
 ```mermaid
 flowchart TD
-    A["Sistema PC / Mac"] -->|Cabo Thunderbolt 4 40Gbps| B["Dock Thunderbolt 4"]
-    B -->|DisplayPort 1.4| C["Monitor Principal (4K 60Hz)"]
-    B -->|Thunderbolt Downstream| D["Monitor Secundário (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["Armazenamento de Alta Velocidade / Periféricos"]
+    A["Sistema PC / Mac"] -->|"Cabo Thunderbolt 4 40Gbps"| B["Dock Thunderbolt 4"]
+    B -->|"DisplayPort 1.4"| C["Monitor Principal (4K 60Hz)"]
+    B -->|"Thunderbolt Downstream"| D["Monitor Secundário (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["Armazenamento de Alta Velocidade / Periféricos"]
     
-    C -.->|MST Apenas Windows| F["Monitor Terciário (1080p)"]
+    C -.->|"MST Apenas Windows"| F["Monitor Terciário (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ Na construção de um ambiente de múltiplos monitores, não há uma resposta ú
 flowchart TD
     Start["Início da construção do ambiente de desenvolvimento"] --> Q1{"Qual é o SO principal?"}
     
-    Q1 -->|macOS| Mac["Ambiente macOS"]
-    Q1 -->|Windows/Linux| Win["Ambiente Windows / Linux"]
+    Q1 -->|"macOS"| Mac["Ambiente macOS"]
+    Q1 -->|"Windows/Linux"| Win["Ambiente Windows / Linux"]
     
     Mac --> Q2{"Há orçamento e desempenho de GPU suficientes?"}
-    Q2 -->|Sim| M_5K["Monitor 5K de 27 polegadas × 2 (Maior qualidade)"]
-    Q2 -->|Não| M_4K["Monitor 4K de 24 polegadas × 2 ou Ultrawide"]
+    Q2 -->|"Sim"| M_5K["Monitor 5K de 27 polegadas × 2 (Maior qualidade)"]
+    Q2 -->|"Não"| M_4K["Monitor 4K de 24 polegadas × 2 ou Ultrawide"]
     
     Win --> Q3{"As divisões da tela (molduras) o incomodam?"}
-    Q3 -->|Sim| W_UW["Monitor Ultrawide de 49 polegadas + FancyZones"]
-    Q3 -->|Não| W_Dual["4K de 27 polegadas × 2 (Melhor custo-benefício)"]
+    Q3 -->|"Sim"| W_UW["Monitor Ultrawide de 49 polegadas + FancyZones"]
+    Q3 -->|"Não"| W_Dual["4K de 27 polegadas × 2 (Melhor custo-benefício)"]
     
     M_5K --> End["Instale o braço ergonômico para concluir"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 Os monitores são uma infraestrutura que, uma vez comprados, continuarão a apoiar sua produtividade por muitos anos. Integre os princípios da engenharia visual, a matemática de PPI, os limites da largura de banda e o gerenciamento de janelas por software discutidos neste artigo para construir o melhor espaço de trabalho sem compromissos. Isso deve, no final, tornar-se o caminho mais curto para produzir o melhor código.
+
 
 
 

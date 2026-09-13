@@ -44,8 +44,8 @@ El barbero entró en pánico total y ya no pudo tomar ninguna decisión. Esta es
 graph TD
     Barber["Barbero: ¿Debería afeitarme la barba?"]
     
-    Barber -->|SÍ: Me afeito| Cond1["¡Violación de la regla!<br>(No debe afeitar a quienes se afeitan a sí mismos)"]
-    Barber -->|NO: No me afeito| Cond2["¡Violación de la regla!<br>(Debe afeitar a quienes no se afeitan a sí mismos)"]
+    Barber -->|"SÍ: Me afeito"| Cond1["¡Violación de la regla!<br>(No debe afeitar a quienes se afeitan a sí mismos)"]
+    Barber -->|"NO: No me afeito"| Cond2["¡Violación de la regla!<br>(Debe afeitar a quienes no se afeitan a sí mismos)"]
     
     Cond1 --> Paradox["Contradicción (Paradoja)"]
     Cond2 --> Paradox
@@ -140,7 +140,7 @@ graph LR
         Strict["Solo lo que sigue reglas estrictas<br>(axiomas) es un 'conjunto'"] --> Safe["¡La contradicción R no se reconoce como<br>un 'conjunto', por lo que es seguro!"]
     end
     
-    Monster -.->|Crisis de la comunidad matemática| Strict
+    Monster -.->|"Crisis de la comunidad matemática"| Strict
 ```
 
 ---
@@ -153,3 +153,4 @@ Las paradojas, que a primera vista parecen ser solo sofismas o juegos de palabra
 
 Si un genio como Russell no hubiera notado este "error del barbero", es posible que las matemáticas modernas y la informática, que es una extensión de su lógica, se hubieran desarrollado con contradicciones fatales en algún lugar.
 Una paradoja es la medicina más estimulante que nos enseña los límites de la lógica humana.
+

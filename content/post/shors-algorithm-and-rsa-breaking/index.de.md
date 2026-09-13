@@ -55,13 +55,13 @@ Hier kommt der 1994 von Peter Shor vorgestellte "Shor-Algorithmus" ins Spiel. Di
 graph TD
     A[Eingabe der zu faktorisierenden Zahl N] --> B[Zufällige ganze Zahl a wählen]
     B --> C{Größter gemeinsamer Teiler<br>von a und N}
-    C -->|Größer als 1| D[Glücklicherweise Primfaktor gefunden!]
-    C -->|1 teilerfremd| E[Einsatz des Quantencomputers]
+    C -->|"Größer als 1"| D[Glücklicherweise Primfaktor gefunden!]
+    C -->|"1 teilerfremd"| E[Einsatz des Quantencomputers]
     E --> F[Finde die Periode r der Funktion f_x = a^x mod N<br>mit der Quanten-Fouriertransformation]
     F --> G{Ist die Periode r gerade und<br>a^r/2 ≢ -1 mod N}
-    G -->|Ja| H[Berechne gcd_a^r/2 ± 1, N]
+    G -->|"Ja"| H[Berechne gcd_a^r/2 ± 1, N]
     H --> I((Primfaktorzerlegung erfolgreich!))
-    G -->|Nein| B
+    G -->|"Nein"| B
 ```
 
 Shors Algorithmus löst das Problem der Primfaktorzerlegung nicht direkt, sondern verwendet zahlentheoretische Theoreme, um es in ein anderes Problem namens "Period Finding Problem" umzuwandeln, und löst es durch Ausnutzung der Eigenschaften von Quantencomputern mit hoher Geschwindigkeit.
@@ -185,3 +185,4 @@ Bereits in großen Softwares und Plattformen wie Google Chrome und Apples iMessa
 Quantencomputer wandeln sich von Träumereien der Science-Fiction zu echten ingenieurtechnischen Herausforderungen. Shors Algorithmus ist eine großartige intellektuelle Errungenschaft der Menschheit, die Mathematik und Quantenmechanik vereint, aber er birgt auch die "zerstörerische Kraft", die Grundlagen unserer digitalen Gesellschaft zu erschüttern.
 
 Die RSA-Verschlüsselung wird nicht schon morgen unbrauchbar sein. Angesichts der Entwicklung der Quantentechnologie und des Risikos von "Store Now, Decrypt Later" hat die gigantische Migration in der Geschichte der Kryptographie, der Übergang zu PQC, jedoch bereits begonnen. Wir sind heute Zeugen der vordersten Front eines Paradigmenwechsels in der Informationssicherheit.
+

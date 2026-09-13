@@ -46,8 +46,8 @@ flowchart LR
     R["Gambar Asli (Real Image)"] --> D["Diskriminator (Discriminator)"]
     F --> D
     D --> O["Penilaian Kebenaran (Real/Fake)"]
-    O -.->|Loss Feedback| G
-    O -.->|Loss Feedback| D
+    O -.->|"Loss Feedback"| G
+    O -.->|"Loss Feedback"| D
 ```
 
 ## 1.2 Model Difusi (Diffusion Models)
@@ -263,5 +263,6 @@ Evolusi teknologi AI telah membuka kotak Pandora. Kini mustahil untuk menghapus 
 Meskipun demikian, sebagaimana yang telah dijelaskan dalam artikel ini, para insinyur terus berupaya menangkal ancaman berita palsu melalui berbagai pendekatan teknis seperti analisis frekuensi, deteksi sinyal biologis, dan pembuktian asal-usul (C2PA) yang menggunakan teknik kriptografi. Melalui perpaduan antara perlindungan teknis tersebut dengan perisai sosial berupa "literasi informasi" kita secara individu, seharusnya kita bisa mengatasi badai kepalsuan yang dibawa oleh AI sekaligus membela nilai dari kebenaran.
 
 Tepat karena kita berada pada era di mana batas antara realitas dan fiksi memudar, "kehendak" manusia untuk mengenali kebenaran menjadi jauh lebih penting dari sebelumnya.
+
 
 

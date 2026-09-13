@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["Entorno externo (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (Resultados de ejecución o logs de error de la herramienta)"]
     Observation --> Thought
-    Thought -->|Suficiente información recopilada| Finish["Finish (Respuesta final / salida de código)"]
+    Thought -->|"Suficiente información recopilada"| Finish["Finish (Respuesta final / salida de código)"]
 ```
 
 ### 4.2 Implementación mediante Function Calling (Uso de herramientas)
@@ -387,3 +387,4 @@ Al dominar estos principios, los prompts dejarán de ser simples cadenas de text
 
 ---
 *Generated using Prompt Engineering Techniques.*
+

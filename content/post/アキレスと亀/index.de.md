@@ -37,18 +37,18 @@ Warum um alles in der Welt? Zenons Logik ist wie folgt:
 ```mermaid
 graph LR
     subgraph "Schritt 1"
-        A1["Achilles (Start)"] -->|holt ein| T1["Startposition der Schildkröte"]
-        T1_Start["Schildkröte"] -->|bewegt sich| T2_Pos["ein wenig vorwärts"]
+        A1["Achilles (Start)"] -->|"holt ein"| T1["Startposition der Schildkröte"]
+        T1_Start["Schildkröte"] -->|"bewegt sich"| T2_Pos["ein wenig vorwärts"]
     end
     
     subgraph "Schritt 2"
-        A2["Achilles"] -->|holt ein| T2["Nächste Position der Schildkröte"]
-        T2_Start["Schildkröte"] -->|bewegt sich| T3_Pos["noch weiter vorwärts"]
+        A2["Achilles"] -->|"holt ein"| T2["Nächste Position der Schildkröte"]
+        T2_Start["Schildkröte"] -->|"bewegt sich"| T3_Pos["noch weiter vorwärts"]
     end
     
     subgraph "Schritt 3"
-        A3["Achilles"] -->|holt ein| T3["Über-nächste Position der Schildkröte"]
-        T3_Start["Schildkröte"] -->|geht unendlich weiter...| Infinity["Kann niemals einholen!?"]
+        A3["Achilles"] -->|"holt ein"| T3["Über-nächste Position der Schildkröte"]
+        T3_Start["Schildkröte"] -->|"geht unendlich weiter..."| Infinity["Kann niemals einholen!?"]
     end
 ```
 
@@ -167,4 +167,5 @@ Für die antiken griechischen Philosophen jedoch, die noch keine Konzepte wie "U
 Die tiefen Fragen, die dieses Paradoxon aufwarf, wie "Was bedeutet kontinuierlich?" oder "Was bedeutet es, unendlich teilbar zu sein?", wurden zu einer wichtigen treibenden Kraft, die zur Geburt der **"Analysis"** durch Newton und Leibniz und schließlich zu den Grundlagen der modernen Mathematik führte.
 
 Große Paradoxa verwirren nicht nur die Menschen, sondern sind auch Schlüssel, die neue Türen in der Mathematik öffnen.
+
 

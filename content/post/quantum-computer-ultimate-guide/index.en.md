@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->| Measurement (Observation) | Result
+    Interference -->|"Measurement (Observation)"| Result
 ```
 
 In this manner, quantum computing is not merely an incremental extension or workaround to postpone the classical limits of scaling and thermodynamics. Rather, it represents a genuine paradigm shift that reconstructs the very concepts of information and computation upon the foundational axioms of quantum mechanics. In the next chapter, we explore in depth the concrete mathematical machinery used to harness and steer quantum interference: quantum gates and quantum circuits.
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["Observation of observable $A$ (Projection operator $P_k$)"]:::measure
     
-    Obs -->| Probability $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["Collapsed state 1: $| a_1 \rangle$"]:::state
-    Obs -->| Probability $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["Collapsed state 2: $| a_2 \rangle$"]:::state
-    Obs -->| ... | StateN["Collapsed state n: $| a_n \rangle$"]:::state
+    Obs -->|"Probability $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["Collapsed state 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Probability $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["Collapsed state 2: $| a_2 \rangle$"]:::state
+    Obs -->|"..."| StateN["Collapsed state n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoherence (loss of phase coherence) and mixing of states"]:::measure
     State2 --> Decoherence
@@ -1964,8 +1964,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->| State |x⟩ | QFT["QFT† (Inverse Quantum Fourier Transform)"]
-    Uf -->| State |a^x mod N⟩ | Discard["Do not observe (Entangle with environment)"]
+    Uf -->|"State"|x⟩ | QFT["QFT† (Inverse Quantum Fourier Transform)"]
+    Uf -->|"State"|a^x mod N⟩ | Discard["Do not observe (Entangle with environment)"]
 
     QFT --> Measure["Measure (k)"]
     Measure --> Classical["Classical post-processing by continued fraction expansion (Derivation of r)"]
@@ -2700,8 +2700,8 @@ Quantum logic gates in this system are executed by "braiding," which swaps the s
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["Topological Braiding"]
-    A["Time axis t"] -->| Worldline of Anyon 1 | B["Exchange operation (Braid)"]
-    C["Worldline of Anyon 2"] -->| Braid | B
+    A["Time axis t"] -->|"Worldline of Anyon 1"| B["Exchange operation (Braid)"]
+    C["Worldline of Anyon 2"] -->|"Braid"| B
     B --> D["State vector undergoes unitary rotation U"]
     end
 ```
@@ -2864,3 +2864,5 @@ If this series has served to deeply convey to readers the true nature of quantum
 
 ---
  **The Series "Principles of Quantum Computing" (12 Chapters in Total) - End** 
+
+

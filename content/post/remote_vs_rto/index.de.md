@@ -43,9 +43,9 @@ graph LR
     D30["Distanz: 30m (Anderes Stockwerk)"] --> P30["Wahrscheinlichkeit der Face-to-Face-Kommunikation: Niedrig (wenige %)"]
     DRemote["Vollständig Remote (Andere Stadt)"] --> PRemote["Wahrscheinlichkeit der zufälligen synchronen Kommunikation: Fast null"]
     
-    D0 -. "Rapider Abfall der Allen-Kurve" .-> D10
-    D10 -. "Verlust der physischen Nähe" .-> D30
-    D30 -. "Übergang zu vollständig asynchroner, absichtlicher Kommunikation" .-> DRemote
+    D0 -. Rapider Abfall der Allen-Kurve .-> D10
+    D10 -. Verlust der physischen Nähe .-> D30
+    D30 -. Übergang zu vollständig asynchroner, absichtlicher Kommunikation .-> DRemote
 ```
 
 In einer Umgebung mit vollständiger Remote-Arbeit wird diese physische Distanz $d$ praktisch unendlich. Das bedeutet, dass selbst bei Vorhandensein von Slack oder Zoom ein zufälliger Informationsaustausch (Serendipitous Communication) wie "Plaudereien am Wasserspender" strukturell nicht mehr stattfindet. Eines der stärksten Argumente der Führungsebene für die Förderung der RTO besteht darin, die durch diese Allen-Kurve belegte "durch physische Nähe bedingte Weitergabe von implizitem Wissen und Schaffung von Innovationen" zurückzugewinnen.
@@ -189,9 +189,9 @@ graph TD
     subgraph "Zero-Trust-Modell (BeyondCorp / ZTNA)"
         U2["Remote-Ingenieur (MDM-verwaltetes Gerät)"] -- Direkte Kommunikation (mTLS HTTPS) --> IAP["Identity-Aware Proxy (IAP)"]
         IAP -- Dynamische Autorisierung pro Anfrage --> App2["Interne / SaaS-Anwendungen"]
-        IDP["Identity Provider (Okta / Entra ID)"] -. "MFA / Benutzerkontext" .-> Policy
-        MDM["Geräteverwaltung (Intune / Jamf)"] -. "Gerätezustand (Patch-Status)" .-> Policy
-        Policy["Zugriffs-Richtlinien-Engine"] -. "Risikobasierte Autorisierungsentscheidung" .-> IAP
+        IDP["Identity Provider (Okta / Entra ID)"] -. MFA / Benutzerkontext .-> Policy
+        MDM["Geräteverwaltung (Intune / Jamf)"] -. Gerätezustand (Patch-Status) .-> Policy
+        Policy["Zugriffs-Richtlinien-Engine"] -. Risikobasierte Autorisierungsentscheidung .-> IAP
     end
 ```
 
@@ -235,6 +235,7 @@ Die Führungsebene muss die Illusion aufgeben, dass "Innovationen wie von Zauber
 Auf der anderen Seite müssen auch Ingenieure (insbesondere Senioren) die selbstgerechte Sichtweise korrigieren: "Ich bin produktiver, wenn ich alleine Code schreibe, also brauche ich kein Büro". Software-Engineering ist ein Teamsport und beinhaltet weitreichende Verantwortlichkeiten, nicht nur die Produktivität beim Codieren, sondern auch das Systemdesign der gesamten Organisation, die Ausbildung von Junior-Mitgliedern und die Zusammenarbeit in Notfällen. Es ist eine Tatsache, dass Kommunikation mit hoher Bandbreite im physischen Raum manchmal das gesamte Projekt retten kann.
 
 Die optimale Lösung variiert je nach Phase des Unternehmens, des Teams und des Produkts. Sicher ist jedoch, dass nur Organisationen in dieser neuen Ära des Arbeitens echte Wettbewerbsfähigkeit erlangen können, die die soziologischen Eigenschaften der Kommunikation verstehen, den Status quo mit vielfältigen Indikatoren wie dem SPACE-Framework messen und weiterhin Einschränkungen durch Technologien wie die Zero-Trust-Architektur überwinden.
+
 
 
 

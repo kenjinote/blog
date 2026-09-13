@@ -264,7 +264,7 @@ graph LR
     end
 
     C1 --> C2
-    C2 -. "Batas Fisika Klasik" .-> Q1
+    C2 -. Batas Fisika Klasik .-> Q1
 ```
 
 Dalam Algoritma Shor, proses "penemuan periode (period finding)" yang menjadi hambatan (bottleneck) pada algoritma klasik, dapat dihitung secara instan dan paralel oleh "Transformasi Fourier Kuantum (QFT)" yang menggunakan keterikatan kuantum dan superposisi kuantum.
@@ -285,3 +285,4 @@ Dalam artikel ini, kita telah membahas secara mendalam dan terperinci, mulai dar
 * Namun, berkat kehadiran **komputer kuantum dan Algoritma Shor**, secara teoritis faktorisasi prima kini dimungkinkan dalam waktu polinomial, dan teknologi kriptografi sedang bergeser ke era baru (Kriptografi Pasca-Kuantum).
 
 Fakta bahwa konsep abstrak dari sebuah kompleksitas waktu sebuah algoritma terhubung langsung dengan keamanan hidup kita adalah salah satu sisi ilmu komputer dan matematika yang paling mendebarkan dan mempesona. Silakan terus pantau kemajuan teknologi di masa mendatang, terutama tren pengembangan komputer kuantum dan pergeseran dalam teknologi kriptografi.
+

@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["Sampler (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["Token Output"]
     
-    OutputToken --> |"Pembuatan Autoregresif"| Tokenizer
+    OutputToken -->|"Pembuatan Autoregresif"| Tokenizer
     OutputToken --> Decoder["Detokenizer (Detokenizer)"]
     Decoder --> FinalOutput["Teks Output Akhir"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["Pertanyaan Pengguna"] --> EmbedQuery["Penyematan Pertanyaan"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"Pencarian Kemiripan"| RetrievedDocs["Ekstraksi Dokumen Terkait"]
+    VectorDB -->|"Pencarian Kemiripan"| RetrievedDocs["Ekstraksi Dokumen Terkait"]
     
     UserQuery --> PromptBuilder["Pembuatan Prompt"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ Silakan manfaatkan poin-poin yang dijelaskan dalam artikel ini:
 5. Manfaatkan **Unsloth (WSL2)** untuk melatih AI kustom yang memiliki pengetahuan khusus Anda sendiri.
 
 "Demokratisasi" AI tidak lagi sekadar buzzword, tetapi sistem nyata yang berjalan di desktop Windows Anda. Bebaskan diri Anda dari biaya penggunaan API cloud dan risiko kebocoran informasi, serta melangkahlah sekarang ke dunia AI privat yang bebas dan kuat.
+
+

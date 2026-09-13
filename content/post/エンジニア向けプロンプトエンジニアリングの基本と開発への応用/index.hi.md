@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["बाहरी वातावरण (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["अवलोकन (Observation: उपकरण निष्पादन परिणाम/त्रुटि लॉग)"]
     Observation --> Thought
-    Thought -->|पर्याप्त जानकारी एकत्र की गई| Finish["समाप्त (Finish: अंतिम उत्तर/कोड का आउटपुट)"]
+    Thought -->|"पर्याप्त जानकारी एकत्र की गई"| Finish["समाप्त (Finish: अंतिम उत्तर/कोड का आउटपुट)"]
 ```
 
 ### 4.2 फंक्शन कॉलिंग (टूल का उपयोग) के माध्यम से कार्यान्वयन
@@ -387,3 +387,4 @@ def is_valid_ipv4(ip_str):
 
 ---
 *Generated using Prompt Engineering Techniques.*
+

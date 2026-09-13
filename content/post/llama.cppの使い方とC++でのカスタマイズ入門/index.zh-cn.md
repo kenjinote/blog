@@ -103,7 +103,7 @@ graph TD
     J --> K["选中的 Token ID"]
     K --> L["llama.cpp Detokenizer"]
     L --> M["输出字符串"]
-    K -. "自回归循环 (Auto-regressive loop)" .-> D
+    K -. 自回归循环 (Auto-regressive loop) .-> D
 ```
 
 文本生成是一个自回归的循环，每输出一个 Token，它就会作为下一个输入被添加到 KV Cache 中，并再次穿过计算图。
@@ -383,3 +383,4 @@ for (llama_token bad_tok : forbidden_tokens) {
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

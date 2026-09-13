@@ -37,9 +37,9 @@ Hugoで生成した静的ファイルをどこにホスティングするかが�
 
 ```mermaid
 graph TD
-    A["User (Tokyo)"] -->|Low Latency| B["Edge Node (NRT)"]
-    C["User (New York)"] -->|Low Latency| D["Edge Node (EWR)"]
-    E["User (London)"] -->|Low Latency| F["Edge Node (LHR)"]
+    A["User (Tokyo)"] -->|"Low Latency"| B["Edge Node (NRT)"]
+    C["User (New York)"] -->|"Low Latency"| D["Edge Node (EWR)"]
+    E["User (London)"] -->|"Low Latency"| F["Edge Node (LHR)"]
     B --> G["Origin Storage / Object Store"]
     D --> G
     F --> G
@@ -255,6 +255,7 @@ Hugoを用いた静的サイトの運用において、Cloudflare PagesやGitHub
 5. **軽量なアナリティクス**: プライバシーに配慮しつつパフォーマンスを損なわないCloudflare Web Analyticsなどを導入する。
 
 これらを組み合わせることで、月間数百万PVクラスの大規模トラフィックにも耐えうる、スケーラブルかつ堅牢なブログシステムを無料で構築することができます。技術ブログや企業サイト、ポートフォリオサイトの立ち上げを検討している方は、ぜひこの Jamstack + Hugo + Cloudflare Pages の構成を試してみてください。
+
 
 
 

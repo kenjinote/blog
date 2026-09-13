@@ -39,8 +39,8 @@ This means that if we double the number of bits, the computation time on a class
 ```mermaid
 graph TD
     A["Increase in input size (bits) N"] --> B{"Algorithm selection"}
-    B -->|Classical: General Number Field Sieve| C["Sub-exponential increase O(exp(...))"]
-    B -->|Quantum: Shor's algorithm| D["Polynomial time O((log N)^3)"]
+    B -->|"Classical: General Number Field Sieve"| C["Sub-exponential increase O(exp(...))"]
+    B -->|"Quantum: Shor's algorithm"| D["Polynomial time O((log N)^3)"]
     C --> E["Thousands to billions of years (Undecipherable)"]
     D --> F["Minutes to hours (Decipherable in realistic time)"]
 ```
@@ -358,5 +358,6 @@ By all means, please try executing the Python code introduced this time in your 
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

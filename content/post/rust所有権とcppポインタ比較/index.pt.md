@@ -221,7 +221,7 @@ Dessa forma, como o Rust proíbe a nível de compilação "modificar um valor (e
 graph LR
     A["Variável v (Proprietário)"] --> B["Array Heap [1, 2, 3]"]
     C["Referência 'first' (&v[0])"] -.->|"Empréstimo Imutável"| B
-    A -->|X "Empréstimo Mutável Negado!"| D["v.push(4)"]
+    A -->|"X "Empréstimo Mutável Negado!""| D["v.push(4)"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px
@@ -283,3 +283,5 @@ Ao aprender Rust tendo uma compreensão da liberdade e do perigo dos ponteiros d
 
 ---
 *Este artigo é uma análise comparativa de abordagens de gestão de memória entre o C++ e o Rust. Esperamos que seja útil como uma referência ao escolher a linguagem apropriada para os requisitos do seu projeto.*
+
+

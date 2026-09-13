@@ -146,17 +146,17 @@ graph TD
         Labeler["Pelabel Moderasi (Pemeriksa Fakta)"]
     end
 
-    Client -->|Membaca/Menulis| PDS1
-    Client -->|Melihat| AppView
+    Client -->|"Membaca/Menulis"| PDS1
+    Client -->|"Melihat"| AppView
     
-    PDS1 -->|Sinkronisasi via WebSocket| Relay
-    PDS2 -->|Sinkronisasi via WebSocket| Relay
+    PDS1 -->|"Sinkronisasi via WebSocket"| Relay
+    PDS2 -->|"Sinkronisasi via WebSocket"| Relay
     
-    Relay -->|Mengindeks| AppView
+    Relay -->|"Mengindeks"| AppView
     
-    AppView -.->|Meminta Umpan| FeedGen1
-    AppView -.->|Meminta Umpan| FeedGen2
-    AppView -.->|Mendapatkan Label| Labeler
+    AppView -.->|"Meminta Umpan"| FeedGen1
+    AppView -.->|"Meminta Umpan"| FeedGen2
+    AppView -.->|"Mendapatkan Label"| Labeler
 ```
 
 Pencapaian terbesar AT Protocol adalah memisahkan "pembuatan umpan (algoritma)" dan "moderasi (pelabelan)" dari entitas platform utama, dan membuatnya agar pengguna dapat secara bebas memilih dan menggabungkannya (Composable) sesuai keinginan (Custom Feeds / Stackable Moderation).
@@ -194,5 +194,6 @@ Teknologi bukanlah sihir. Ia adalah cermin dari manusia. Jika masyarakat terbela
 Mulai artikel ke-101 dan seterusnya, sebagai seorang teknisi, saya ingin terus berdiri di persimpangan antara kode dan masyarakat, untuk terus memperdalam pemikiran saya. Terima kasih banyak telah menemani membaca tulisan panjang ini sampai akhir. Berharap agar jaringan masa depan tidak menjadi dinding yang memisahkan kita, melainkan jembatan untuk memahami satu sama lain.
 
 (Selesai)
+
 
 

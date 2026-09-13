@@ -33,13 +33,13 @@ The following Mermaid diagram visualizes the learning hurdles and dropout points
 ```mermaid
 flowchart TD
     A["Elementary School: Scratch (Visual/Block-based)"] --> B{"Junior High: The Wall of Transition to Text Languages"}
-    B -->|Frustration from strict syntax errors| C["Dropout (Syntax Allergy)"]
-    B -->|Lack of conceptual understanding of variables and static typing| D["Dropout (The Wall of Types)"]
-    B -->|Successful Transition| E["High School: Information I (Basics of Python/JavaScript, etc.)"]
+    B -->|"Frustration from strict syntax errors"| C["Dropout (Syntax Allergy)"]
+    B -->|"Lack of conceptual understanding of variables and static typing"| D["Dropout (The Wall of Types)"]
+    B -->|"Successful Transition"| E["High School: Information I (Basics of Python/JavaScript, etc.)"]
     E --> F{"The Wall of Algorithm Design and Data Structures"}
-    F -->|Lack of understanding of time and space complexity| G["Inefficient Code (Performance degradation from mass-producing O(N^2))"]
-    F -->|Black-boxing of memory management and references| H["Becoming a coder who only does superficial API calls"]
-    F -->|Conceptual Breakthrough| I["Full-scale CS Learning (C/C++, Java, Low-level Architecture)"]
+    F -->|"Lack of understanding of time and space complexity"| G["Inefficient Code (Performance degradation from mass-producing O(N^2))"]
+    F -->|"Black-boxing of memory management and references"| H["Becoming a coder who only does superficial API calls"]
+    F -->|"Conceptual Breakthrough"| I["Full-scale CS Learning (C/C++, Java, Low-level Architecture)"]
     I --> J["Highly skilled IT professionals coveted by the industry"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
@@ -179,7 +179,7 @@ flowchart LR
         C["Backend Compile/Execution Environment"]
         D["Persistent File Storage"]
     end
-    A -->| HTTP/WebSocket Communication: Severe latency due to narrow school network lines | B
+    A -->|"HTTP/WebSocket Communication: Severe latency due to narrow school network lines"| B
     B <--> C
     B <--> D
 ```
@@ -256,6 +256,7 @@ How we fight through the "aftermath" of mandatory programming—the most difficu
 ---
 
 *This article outlined the computational complexity theory and the infrastructural limits of the GIGA School Concept. We plan to cover more specialized computer science topics (such as details of distributed system algorithms and low-level memory management techniques) sequentially in future series.*
+
 
 
 

@@ -520,8 +520,8 @@ Sie hat historisch gesehen eine sehr wichtige Rolle bei der logistischen Regress
 
 ```mermaid
 graph LR
-  X1["Eingabe x1"] -->|Gewicht w1| Sum["Summe: Σ(wi*xi) + b"]
-  X2["Eingabe x2"] -->|Gewicht w2| Sum
+  X1["Eingabe x1"] -->|"Gewicht w1"| Sum["Summe: Σ(wi*xi) + b"]
+  X2["Eingabe x2"] -->|"Gewicht w2"| Sum
   Sum --> Act["Sigmoidfunktion: σ(x)"]
   Act --> Out["Ausgabewahrscheinlichkeit (0 bis 1)"]
 ```
@@ -624,4 +624,5 @@ Wie war das? Von der Eulerschen Identität bis zum Satz des Pythagoras sind dies
 Das Verständnis des mathematischen Hintergrunds ist essenziell für den Aufstieg von einem Programmierer, der nur existierende Bibliotheken (wie `math.sin` oder `numpy.fft`) aufruft, zu einem Ingenieur, der deren interne Strukturen begreift und ihre Grenzen ausreizen kann. Wenn Sie das nächste Mal Code schreiben, versuchen Sie sich vorzustellen, welch schöne mathematische Formel im Hintergrund am Werk ist.
 
 **Happy Coding and Math!**
+
 

@@ -103,7 +103,7 @@ graph TD
     J --> K["ID Token Terpilih"]
     K --> L["Detokenizer llama.cpp"]
     L --> M["String Output"]
-    K -. "Loop Auto-regressive" .-> D
+    K -. Loop Auto-regressive .-> D
 ```
 
 Generasi teks adalah *loop auto-regressive* di mana setiap kali satu token dihasilkan, token tersebut ditambahkan ke *KV Cache* sebagai *input* berikutnya, lalu melewati grafik komputasi lagi.
@@ -383,3 +383,4 @@ Kami sangat menyarankan Anda untuk mencoba menulis kode C++ dengan tangan Anda s
 > - [Repositori Resmi llama.cpp](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

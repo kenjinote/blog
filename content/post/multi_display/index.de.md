@@ -164,12 +164,12 @@ Das folgende Mermaid-Flussdiagramm zeigt die ideale Signalrouting-Struktur von e
 
 ```mermaid
 flowchart TD
-    A["PC / Mac System"] -->|Thunderbolt 4 Kabel 40Gbps| B["Thunderbolt 4 Dock"]
-    B -->|DisplayPort 1.4| C["Primärer Monitor (4K 60Hz)"]
-    B -->|Thunderbolt Downstream| D["Sekundärer Monitor (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["High-Speed-Speicher / Peripheriegeräte"]
+    A["PC / Mac System"] -->|"Thunderbolt 4 Kabel 40Gbps"| B["Thunderbolt 4 Dock"]
+    B -->|"DisplayPort 1.4"| C["Primärer Monitor (4K 60Hz)"]
+    B -->|"Thunderbolt Downstream"| D["Sekundärer Monitor (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["High-Speed-Speicher / Peripheriegeräte"]
     
-    C -.->|Nur Windows MST| F["Tertiärer Monitor (1080p)"]
+    C -.->|"Nur Windows MST"| F["Tertiärer Monitor (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ Es gibt keine einzelne richtige Antwort, die für jeden beim Aufbau einer Multi-
 flowchart TD
     Start["Start Setup der Entwicklungsumgebung"] --> Q1{"Was ist das primäre OS?"}
     
-    Q1 -->|macOS| Mac["macOS Umgebung"]
-    Q1 -->|Windows/Linux| Win["Windows / Linux Umgebung"]
+    Q1 -->|"macOS"| Mac["macOS Umgebung"]
+    Q1 -->|"Windows/Linux"| Win["Windows / Linux Umgebung"]
     
     Mac --> Q2{"Ist genug Budget und GPU-Leistung vorhanden?"}
-    Q2 -->|Ja| M_5K["5K 27-Zoll-Monitor × 2 (Höchste Qualität)"]
-    Q2 -->|Nein| M_4K["4K 24-Zoll-Monitor × 2 oder Ultrawide"]
+    Q2 -->|"Ja"| M_5K["5K 27-Zoll-Monitor × 2 (Höchste Qualität)"]
+    Q2 -->|"Nein"| M_4K["4K 24-Zoll-Monitor × 2 oder Ultrawide"]
     
     Win --> Q3{"Stört Sie die Trennung (Rahmen) zwischen Bildschirmen?"}
-    Q3 -->|Ja| W_UW["49-Zoll Ultrawide-Monitor + FancyZones"]
-    Q3 -->|Nein| W_Dual["4K 27-Zoll × 2 (Bestes Preis-Leistungs-Verhältnis)"]
+    Q3 -->|"Ja"| W_UW["49-Zoll Ultrawide-Monitor + FancyZones"]
+    Q3 -->|"Nein"| W_Dual["4K 27-Zoll × 2 (Bestes Preis-Leistungs-Verhältnis)"]
     
     M_5K --> End["Fertigstellung durch Hinzufügen eines ergonomischen Arms"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 Displays sind eine Infrastruktur, die Ihre Produktivität nach dem Kauf viele Jahre lang unterstützen wird. Bitte integrieren Sie die Prinzipien der visuellen Ergonomie, die Mathematik der PPI, Bandbreitengrenzen und softwarebasiertes Fenstermanagement, die in diesem Artikel erläutert wurden, um kompromisslos den bestmöglichen Arbeitsbereich zu schaffen. Letztendlich sollte dies der kürzeste Weg zur Erstellung des besten Codes sein.
+
 
 
 

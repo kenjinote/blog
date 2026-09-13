@@ -233,14 +233,14 @@ Selain itu, menggunakan GitHub Actions, kami membangun pipeline CI di mana textl
 
 ```mermaid
 flowchart TD
-    A["Penulis"] -->|Dorong perubahan| B["Repositori GitHub"]
+    A["Penulis"] -->|"Dorong perubahan"| B["Repositori GitHub"]
     B --> C{"GitHub Actions Dipicu"}
     C --> D["Checkout Repositori"]
     D --> E["Setup Node.js"]
     E --> F["npm install"]
     F --> G["Jalankan textlint"]
-    G -->|Lulus| H["Bangun Situs Hugo"]
-    G -->|Gagal| I["Laporkan Kesalahan ke PR/Commit"]
+    G -->|"Lulus"| H["Bangun Situs Hugo"]
+    G -->|"Gagal"| I["Laporkan Kesalahan ke PR/Commit"]
     H --> J["Terapkan ke Hosting (Vercel/Netlify)"]
 ```
 
@@ -269,6 +269,7 @@ Kami telah menjelaskan pengaturan editor yang dapat menggandakan kecepatan penul
 5. **Integrasi LLM**: Membuat AI secara langsung menghasilkan struktur Markdown dan kode diagram di dalam editor.
 
 Dengan memasukkan pengaturan ini ke dalam lingkungan Anda sendiri, "kerepotan" menulis akan hilang, dan kuantitas serta kualitas output teknis akan meningkat secara dramatis. Bagaimana kalau memulainya bahkan dari satu pendaftaran snippet kecil?
+
 
 
 

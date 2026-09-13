@@ -76,11 +76,11 @@ Le diagramme Mermaid suivant illustre le concept du transfert de propriété par
 ```mermaid
 graph LR
     subgraph "Avant std::move"
-        A["unique_ptr (ptr1)"] -->| Possède | B["Mémoire Tas (Objet)"]
+        A["unique_ptr (ptr1)"] -->|"Possède"| B["Mémoire Tas (Objet)"]
     end
     subgraph "Après std::move"
         C["unique_ptr (ptr1)"] -.->|"Vide (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->| Possède | F["Mémoire Tas (Objet)"]
+        E["unique_ptr (ptr2)"] -->|"Possède"| F["Mémoire Tas (Objet)"]
     end
 ```
 
@@ -130,13 +130,13 @@ Outre le pointeur vers l'objet géré, `std::shared_ptr` alloue et partage sur l
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->| Pointeur vers T | B["Objet géré (T)"]
-    A -->| Pointeur vers le bloc de contrôle | C["Bloc de contrôle"]
+    A["std::shared_ptr<T> (sp1)"] -->|"Pointeur vers T"| B["Objet géré (T)"]
+    A -->|"Pointeur vers le bloc de contrôle"| C["Bloc de contrôle"]
     
-    D["std::shared_ptr<T> (sp2)"] -->| Pointeur vers T | B
-    D -->| Pointeur vers le bloc de contrôle | C
+    D["std::shared_ptr<T> (sp2)"] -->|"Pointeur vers T"| B
+    D -->|"Pointeur vers le bloc de contrôle"| C
     
-    C -->| Détruit | B
+    C -->|"Détruit"| B
     C -.->|"Strong Count : 2"| E["Compteur fort (Strong Count)"]
     C -.->|"Weak Count : 0"| F["Compteur faible (Weak Count)"]
     C -.->|"Destructeur personnalisé"| G["Destructeur (Deleter)"]
@@ -176,8 +176,8 @@ La propriété partagée présente une faille critique appelée "références ci
 ```mermaid
 graph TD
     subgraph "Référence circulaire (Fuite de mémoire)"
-        A["Objet A"] -->| shared_ptr (Strong=1) | B["Objet B"]
-        B -->| shared_ptr (Strong=1) | A
+        A["Objet A"] -->|"shared_ptr (Strong=1)"| B["Objet B"]
+        B -->|"shared_ptr (Strong=1)"| A
     end
 ```
 
@@ -188,7 +188,7 @@ La solution à ce problème est `std::weak_ptr`. Un `weak_ptr` est créé à par
 ```mermaid
 graph TD
     subgraph "Briser la référence circulaire"
-        C["Objet A"] -->| shared_ptr (Strong=1) | D["Objet B"]
+        C["Objet A"] -->|"shared_ptr (Strong=1)"| D["Objet B"]
         D -.->|"weak_ptr (Weak=1)"| C
     end
 ```
@@ -268,4 +268,6 @@ La gestion de la mémoire en C++ moderne n'est plus à l'ère de l'utilisation m
 3.  Pour l'implémentation de structures de données ou du modèle observateur où des cycles de partage (références circulaires) peuvent se produire, utilisez **`std::weak_ptr`** pour éviter les fuites de mémoire.
 
 En comprenant profondément les pointeurs intelligents et en les utilisant à bon escient, il est possible de construire des architectures logicielles sûres et robustes sans sacrifier la performance du C++.
+
+
 

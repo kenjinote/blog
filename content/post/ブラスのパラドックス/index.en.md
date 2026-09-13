@@ -34,11 +34,11 @@ The "wide highway" never gets congested no matter how many cars come, and always
 
 ```mermaid
 graph LR
-    START["Start (4000 people)"] -->|Narrow Road A: T=N/100| MID1["Waypoint 1"]
-    START -->|Highway C: T=45 min| MID2["Waypoint 2"]
+    START["Start (4000 people)"] -->|"Narrow Road A: T=N/100"| MID1["Waypoint 1"]
+    START -->|"Highway C: T=45 min"| MID2["Waypoint 2"]
     
-    MID1 -->|Highway B: T=45 min| GOAL["Goal"]
-    MID2 -->|Narrow Road D: T=N/100| GOAL
+    MID1 -->|"Highway B: T=45 min"| GOAL["Goal"]
+    MID2 -->|"Narrow Road D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -59,13 +59,13 @@ Now, suppose the mayor has built a "**dream ultra-high-speed bypass that allows 
 
 ```mermaid
 graph LR
-    START["Start (4000 people)"] -->|Narrow Road A: T=N/100| MID1["Waypoint 1"]
-    START -->|Highway C: T=45 min| MID2["Waypoint 2"]
+    START["Start (4000 people)"] -->|"Narrow Road A: T=N/100"| MID1["Waypoint 1"]
+    START -->|"Highway C: T=45 min"| MID2["Waypoint 2"]
     
-    MID1 -.->|New Bypass: T=0 min| MID2
+    MID1 -.->|"New Bypass: T=0 min"| MID2
     
-    MID1 -->|Highway B: T=45 min| GOAL["Goal"]
-    MID2 -->|Narrow Road D: T=N/100| GOAL
+    MID1 -->|"Highway B: T=45 min"| GOAL["Goal"]
+    MID2 -->|"Narrow Road D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -110,3 +110,4 @@ Braess's Paradox is not just an armchair theory; it has been observed multiple t
   The same phenomenon can occur in internet routing and power grids. The moment a new cable or line is added, data packets can concentrate on the "perceived optimal shortest path", sometimes causing the entire network to go down.
 
 Braess's Paradox beautifully illustrates the dilemma of complex societies: **"a collection of rational individual choices (egoism)" does not necessarily lead to "an optimal outcome for the whole"**. Sometimes, "taking away choices (freedom)" can be to the benefit of everyone.
+

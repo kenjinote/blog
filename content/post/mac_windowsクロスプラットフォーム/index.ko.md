@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (플랫폼 독립적)"] --> B("CMake 엔진")
     B --> C{"대상 운영체제"}
     
-    C -->|Windows| D["Visual Studio 솔루션 / MSBuild"]
-    C -->|macOS| E["Xcode 프로젝트 / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Visual Studio 솔루션 / MSBuild"]
+    C -->|"macOS"| E["Xcode 프로젝트 / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Windows 실행 파일 (.exe)"]
     E --> H["macOS 실행 파일 (Mach-O)"]
@@ -384,3 +384,4 @@ Mac과 Windows의 크로스 플랫폼 개발에는 역사적 배경에 뿌리를
 8.  **CI/CD**: 매트릭스 빌드를 도입하여 모든 대상 OS에서의 깨끗한 빌드와 테스트를 자동화하고, 사람에 의존하는 작업을 배제합니다.
 
 현재는 Electron, Tauri, .NET 등의 강력한 프레임워크가 이러한 차이의 대부분을 흡수해주지만, 기반이 되는 OS의 네이티브 동작(파일 시스템이나 인코딩)에 대한 지식은 심각한 성능 문제나 난해한 버그를 해결할 때 여전히 필수적입니다. 이러한 모범 사례를 프로젝트의 초기 단계부터 팀 전체가 공유하고 철저히 준수함으로써, OS 차이로 인한 불필요한 디버깅 시간을 대폭 줄이고 본질적인 소프트웨어 가치 창출에 집중할 수 있을 것입니다.
+

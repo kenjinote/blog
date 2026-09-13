@@ -264,7 +264,7 @@ graph LR
     end
 
     C1 --> C2
-    C2 -. "Limite da Física Clássica" .-> Q1
+    C2 -. Limite da Física Clássica .-> Q1
 ```
 
 Com o algoritmo de Shor, o processo de "identificação de períodos", um gargalo severo em algoritmos clássicos, é resolvido quase de modo imediato e contíguo via o emprego do emaranhamento quântico (quantum entanglement) e da sobreposição quântica integrados à "Transformada Quântica de Fourier (QFT)".
@@ -285,3 +285,4 @@ Neste compêndio, investigamos mais profundamente abordando desde o limiar da co
 * Em contraponto a isso, atrelado com o vislumbramento propiciado por **computadores quânticos conjuntamente ao algoritmo de Shor**, a viabilidade técnica no tangente à fatoração em ritmo de ordem polinomial passa agora a ser imaginável na área teórica, fazendo com que as ferramentas cifradas estejam em vias de uma contundente migração a favor de um ciclo futurista (a criptografia pós-quântica).
 
 As circunstâncias ditando que um termo teórico peculiar qual a complexidade algorítmica detém implicações retas à segurança da vida ordinária e quotidiana é singularmente uma entre as facetas atrativas e formidáveis que englobam a Ciência da Informação e Matemática. Pedimos gentilmente sua plena atenção a respeito da jornada percorrida pelo seguimento inovador desses aparatos, em vista aos andamentos de construção pertinentes às computações quânticas com atrelações que delineiam os moldes evolutivos referentes a essa seara criptográfica.
+

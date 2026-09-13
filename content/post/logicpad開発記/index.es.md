@@ -219,16 +219,16 @@ El proceso de envío a Microsoft Store se realiza a través del Partner Center (
 
 ```mermaid
 flowchart TD
-    A["Desarrollador (Visual Studio)"] -->|Compilación y firma| B["Generación de paquete MSIX"]
+    A["Desarrollador (Visual Studio)"] -->|"Compilación y firma"| B["Generación de paquete MSIX"]
     B --> C["Kit de certificación de aplicaciones de Windows (WACK)"]
-    C -->|Aprobado| D["Panel del Centro de socios"]
-    C -->|Rechazado| E["Corregir problemas de código / manifiesto"]
+    C -->|"Aprobado"| D["Panel del Centro de socios"]
+    C -->|"Rechazado"| E["Corregir problemas de código / manifiesto"]
     E --> A
-    D -->|Cargar paquete| F["Proceso de certificación de la tienda"]
+    D -->|"Cargar paquete"| F["Proceso de certificación de la tienda"]
     F --> G["Análisis automatizado de malware"]
     G --> H["Revisión manual de contenido"]
-    H -->|Aprobado| I["Publicación en Microsoft Store"]
-    H -->|Rechazado| J["Abordar comentarios y volver a enviar"]
+    H -->|"Aprobado"| I["Publicación en Microsoft Store"]
+    H -->|"Rechazado"| J["Abordar comentarios y volver a enviar"]
     J --> D
     I --> K["¡La aplicación está en vivo!"]
 ```
@@ -303,4 +303,5 @@ Precisamente porque estamos en una era en la que "puedes construir cualquier cos
 WinUI 3 y Windows App SDK aún se están desarrollando activamente, y son las mejores herramientas para crear aplicaciones hermosas que aprovechen al máximo el paradigma de UI de Windows 11. Espero sinceramente que este artículo de blog ayude a los desarrolladores que están a punto de asumir el reto de desarrollar aplicaciones nativas de Windows, y que se alineen aplicaciones maravillosas en la tienda.
 
 El desarrollo aún no ha terminado. Para la próxima versión de LogicPad, planeamos integrar nuestro propio motor de renderizado de formas de onda utilizando Direct2D. En el próximo artículo, planeamos profundizar en la interoperabilidad entre DirectX y WinUI 3 (utilizando SwapChainPanel). Por favor, espérenlo.
+
 

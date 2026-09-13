@@ -53,13 +53,13 @@ Di sinilah "Algoritma Shor", yang diumumkan oleh Peter Shor pada tahun 1994, mun
 graph TD
     A[Masukkan angka N yang ingin difaktorkan] --> B[Pilih bilangan bulat acak a]
     B --> C{Faktor persekutuan<br>terbesar a dan N}
-    C -->|Lebih dari 1| D[Beruntung menemukan faktor prima!]
-    C -->|1 Saling prima| E[Giliran komputer kuantum]
+    C -->|"Lebih dari 1"| D[Beruntung menemukan faktor prima!]
+    C -->|"1 Saling prima"| E[Giliran komputer kuantum]
     E --> F[Temukan periode r dari fungsi f_x = a^x mod N<br>dengan Transformasi Fourier Kuantum]
     F --> G{Periode r adalah genap dan<br>a^r/2 ≢ -1 mod N}
-    G -->|Ya| H[Hitung faktor persekutuan terbesar gcd_a^r/2 ± 1, N]
+    G -->|"Ya"| H[Hitung faktor persekutuan terbesar gcd_a^r/2 ± 1, N]
     H --> I((Faktorisasi Prima Berhasil!))
-    G -->|Tidak| B
+    G -->|"Tidak"| B
 ```
 
 Algoritma Shor tidak menyelesaikan masalah faktorisasi prima secara langsung, tetapi mengambil pendekatan menggunakan teorema teori bilangan untuk mengubahnya menjadi masalah lain yang disebut "Period Finding Problem", dan menyelesaikannya dengan kecepatan tinggi menggunakan karakteristik komputer kuantum.
@@ -183,3 +183,4 @@ Platform perangkat lunak utama seperti Google Chrome dan Apple iMessage sudah mu
 Komputer kuantum sedang bergeser dari impian fiksi ilmiah menjadi tantangan teknik dunia nyata. Algoritma Shor adalah pencapaian intelektual umat manusia yang hebat yang menggabungkan matematika dan mekanika kuantum, tetapi pada saat yang sama memegang "kekuatan destruktif" untuk mengguncang fondasi masyarakat digital kita.
 
 Enkripsi RSA tidak akan berhenti menjadi tidak berguna besok. Namun, mengingat evolusi teknologi kuantum dan risiko "Store Now, Decrypt Later", migrasi skala besar dalam sejarah kriptografi ke PQC sudah dimulai. Kita sekarang menyaksikan garis depan pergeseran paradigma dalam keamanan informasi.
+

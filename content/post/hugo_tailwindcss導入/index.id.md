@@ -86,11 +86,11 @@ Memahami bagaimana PostCSS memproses CSS sangat membantu saat melakukan pemecaha
 
 ```mermaid
 flowchart TD
-    A["CSS Mentah (styles.css)"] -->|Parser| B["AST (Abstract Syntax Tree)"]
+    A["CSS Mentah (styles.css)"] -->|"Parser"| B["AST (Abstract Syntax Tree)"]
     B --> C["Plugin 1: Tailwind CSS"]
     C --> D["Plugin 2: Autoprefixer"]
     D --> E["Plugin N: cssnano"]
-    E -->|Stringifier| F["CSS Terkompilasi & Teroptimasi"]
+    E -->|"Stringifier"| F["CSS Terkompilasi & Teroptimasi"]
 ```
 
 1. **Parser**: Mengurai (parsing) string CSS mentah yang dimasukkan dan mengubahnya menjadi AST (Abstract Syntax Tree), struktur data yang dapat dimanipulasi oleh program.
@@ -272,8 +272,8 @@ Kami akan menggambarkan bagaimana kode template Go di atas memproses file CSS se
 
 ```mermaid
 flowchart TD
-    A["assets/css/main.css"] -->|resources.Get| B["Ruang Memori Hugo"]
-    B -->|resources.PostCSS| C["Proses PostCSS + Tailwind JIT"]
+    A["assets/css/main.css"] -->|"resources.Get"| B["Ruang Memori Hugo"]
+    B -->|"resources.PostCSS"| C["Proses PostCSS + Tailwind JIT"]
     C --> D{"hugo.IsProduction ?"}
     D -- Yes (Lingkungan Produksi) --> E["minify (Hapus spasi/baris baru)"]
     E --> F["fingerprint (Hitung hash)"]
@@ -412,4 +412,5 @@ Kelebihan utama dari arsitektur ini adalah bahwa **"pengaturan cukup dilakukan s
 Selain itu, karena ukuran CSS akhir yang dihasilkan selalu minimal, hal ini secara langsung berdampak pada peningkatan skor Core Web Vitals dan sangat menguntungkan dari perspektif SEO.
 
 Kombinasi Hugo dan Tailwind CSS akan selalu menjadi salah satu "pilihan terbaik" untuk proyek mana pun, dari blog teknologi perorangan hingga situs berskala korporat (enterprise). Gunakan kumpulan (toolchain) alat ini yang luar biasa untuk menikmati kehidupan pengembangan web (web development) yang nyaman!
+
 

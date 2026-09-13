@@ -242,15 +242,15 @@ $$ ROI = \frac{\sum_{t=1}^{T} \left( Rev_{ad}(t) + Val_{brand}(t) + Val_{skill}(
 ```mermaid
 flowchart TD
     A["開發者 (Git Push)"] --> B["GitHub 儲存庫"]
-    B -->|Webhook| C["GitHub Actions (CI/CD)"]
-    C -->|Build| D["靜態網站生成器 (Hugo/Gatsby)"]
-    D -->|Deploy| E["主機代管 (Vercel / Cloudflare Pages)"]
-    D -->|Generate| F["RSS Feed (index.xml)"]
-    F -->|Polled by| G["Zapier / IFTTT / Make"]
-    G -->|API Call| H["X (Twitter) 自動發文"]
-    G -->|API Call| I["LinkedIn 文章發文"]
-    G -->|API Call| J["Discord / Slack 社群 Webhook"]
-    C -->|Actions Script| K["Qiita / Zenn 跨平台發布 API"]
+    B -->|"Webhook"| C["GitHub Actions (CI/CD)"]
+    C -->|"Build"| D["靜態網站生成器 (Hugo/Gatsby)"]
+    D -->|"Deploy"| E["主機代管 (Vercel / Cloudflare Pages)"]
+    D -->|"Generate"| F["RSS Feed (index.xml)"]
+    F -->|"Polled by"| G["Zapier / IFTTT / Make"]
+    G -->|"API Call"| H["X (Twitter) 自動發文"]
+    G -->|"API Call"| I["LinkedIn 文章發文"]
+    G -->|"API Call"| J["Discord / Slack 社群 Webhook"]
+    C -->|"Actions Script"| K["Qiita / Zenn 跨平台發布 API"]
 ```
 
 ### 5.2 自動化管道的建置重點
@@ -278,6 +278,7 @@ flowchart TD
 5. 透過 CI/CD 與 Zapier 串接，實現發布的完全自動化
 
 如果能將這些組合成一個系統，技術部落格將會成為強力推動你個人職涯的最強資產（Asset）。如果工程師正為了流量停滯而煩惱，請務必從今天開始嘗試「部落格的成長駭客」。在開發業務中培養出的程式設計技能與架構設計能力，在經營部落格時也一定會成為最強大的武器。
+
 
 
 

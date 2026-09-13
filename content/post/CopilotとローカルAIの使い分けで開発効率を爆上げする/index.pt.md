@@ -58,10 +58,10 @@ O diagrama Mermaid a seguir ilustra uma arquitetura híbrida mostrando como agen
 
 ```mermaid
 graph TD
-    Dev["Desenvolvedor (IDE)"] -->| Digitação em tempo real | LocalProxy{"Roteador Inteligente / Proxy"}
+    Dev["Desenvolvedor (IDE)"] -->|"Digitação em tempo real"| LocalProxy{"Roteador Inteligente / Proxy"}
     
-    LocalProxy -->| Tarefa Rápida, Focada em Privacidade | LocalAI["Motor de IA Local (Ollama / LM Studio)"]
-    LocalProxy -->| Lógica Complexa, Grande Contexto | CloudAI["Motor de IA na Nuvem (Copilot / OpenAI API)"]
+    LocalProxy -->|"Tarefa Rápida, Focada em Privacidade"| LocalAI["Motor de IA Local (Ollama / LM Studio)"]
+    LocalProxy -->|"Lógica Complexa, Grande Contexto"| CloudAI["Motor de IA na Nuvem (Copilot / OpenAI API)"]
     
     subgraph "Ambiente Local"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -94,17 +94,17 @@ Então, em um cenário de codificação real, como os desenvolvedores devem deci
 ```mermaid
 graph TD
     Start["Nova Tarefa de Codificação"] --> Q1{"O código é altamente confidencial?"}
-    Q1 -->|Sim| Action1["Usar IA Local (Llama 3 / CodeLlama)"]
-    Q1 -->|Não| Q2{"É um simples autocompletar em linha?"}
+    Q1 -->|"Sim"| Action1["Usar IA Local (Llama 3 / CodeLlama)"]
+    Q1 -->|"Não"| Q2{"É um simples autocompletar em linha?"}
     
-    Q2 -->|Sim| Q3{"A conexão de rede é estável?"}
-    Q3 -->|Sim| Action2["Usar GitHub Copilot"]
-    Q3 -->|Não| Action1
+    Q2 -->|"Sim"| Q3{"A conexão de rede é estável?"}
+    Q3 -->|"Sim"| Action2["Usar GitHub Copilot"]
+    Q3 -->|"Não"| Action1
     
-    Q2 -->|Não| Q4{"Necessita de lógica de arquitetura complexa ou refatoração entre arquivos?"}
+    Q2 -->|"Não"| Q4{"Necessita de lógica de arquitetura complexa ou refatoração entre arquivos?"}
     
-    Q4 -->|Sim| Action3["Usar IA na Nuvem (GPT-4 / Claude 3.5 Sonnet)"]
-    Q4 -->|Não| Action4["Usar IA Local para tarefas médias para economizar custos de API"]
+    Q4 -->|"Sim"| Action3["Usar IA na Nuvem (GPT-4 / Claude 3.5 Sonnet)"]
+    Q4 -->|"Não"| Action4["Usar IA Local para tarefas médias para economizar custos de API"]
 ```
 
 ### 3.1 Critério 1: Confidencialidade (Privacidade e Segurança)
@@ -244,4 +244,6 @@ Em vez de uma falsa dicotomia de "GitHub Copilot na nuvem" contra "IA local", um
 Por favor, use as árvores de decisão e arquiteturas introduzidas neste artigo como referência para elevar o seu ambiente IDE ao próximo nível. Ao mudar do lado que "apenas usa" a IA para o lado que a "combina e controla com base na pessoa certa no lugar certo", a eficiência do seu desenvolvimento certamente aumentará de forma drástica.
 
 Happy Coding com IA Híbrida!
+
+
 

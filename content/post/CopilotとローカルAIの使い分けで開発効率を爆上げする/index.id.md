@@ -58,10 +58,10 @@ Diagram Mermaid di bawah ini menunjukkan arsitektur hibrida tentang bagaimana ag
 
 ```mermaid
 graph TD
-    Dev["Developer (IDE)"] -->| Pengetikan Real-time | LocalProxy{"Intelligent Router / Proxy"}
+    Dev["Developer (IDE)"] -->|"Pengetikan Real-time"| LocalProxy{"Intelligent Router / Proxy"}
     
-    LocalProxy -->| Cepat, Mengutamakan Privasi | LocalAI["Mesin AI Lokal (Ollama / LM Studio)"]
-    LocalProxy -->| Logika Kompleks, Konteks Besar | CloudAI["Mesin AI Cloud (Copilot / OpenAI API)"]
+    LocalProxy -->|"Cepat, Mengutamakan Privasi"| LocalAI["Mesin AI Lokal (Ollama / LM Studio)"]
+    LocalProxy -->|"Logika Kompleks, Konteks Besar"| CloudAI["Mesin AI Cloud (Copilot / OpenAI API)"]
     
     subgraph "Lingkungan Lokal"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -94,17 +94,17 @@ Lalu, dalam skenario pengkodean di dunia nyata, bagaimana pengembang seharusnya 
 ```mermaid
 graph TD
     Start["Tugas Pengkodean Baru"] --> Q1{"Apakah kodenya sangat rahasia?"}
-    Q1 -->|Ya| Action1["Gunakan AI Lokal (Llama 3 / CodeLlama)"]
-    Q1 -->|Tidak| Q2{"Apakah ini penyelesaian otomatis sebaris sederhana?"}
+    Q1 -->|"Ya"| Action1["Gunakan AI Lokal (Llama 3 / CodeLlama)"]
+    Q1 -->|"Tidak"| Q2{"Apakah ini penyelesaian otomatis sebaris sederhana?"}
     
-    Q2 -->|Ya| Q3{"Apakah koneksi jaringan stabil?"}
-    Q3 -->|Ya| Action2["Gunakan GitHub Copilot"]
-    Q3 -->|Tidak| Action1
+    Q2 -->|"Ya"| Q3{"Apakah koneksi jaringan stabil?"}
+    Q3 -->|"Ya"| Action2["Gunakan GitHub Copilot"]
+    Q3 -->|"Tidak"| Action1
     
-    Q2 -->|Tidak| Q4{"Perlu logika arsitektur kompleks atau refactoring lintas file?"}
+    Q2 -->|"Tidak"| Q4{"Perlu logika arsitektur kompleks atau refactoring lintas file?"}
     
-    Q4 -->|Ya| Action3["Gunakan AI Cloud (GPT-4 / Claude 3.5 Sonnet)"]
-    Q4 -->|Tidak| Action4["Gunakan AI Lokal untuk tugas menengah demi menghemat biaya API"]
+    Q4 -->|"Ya"| Action3["Gunakan AI Cloud (GPT-4 / Claude 3.5 Sonnet)"]
+    Q4 -->|"Tidak"| Action4["Gunakan AI Lokal untuk tugas menengah demi menghemat biaya API"]
 ```
 
 ### 3.1 Kriteria Evaluasi 1: Kerahasiaan (Privacy and Security)
@@ -244,4 +244,6 @@ Daripada melihat ini sebagai dikotomi antara "GitHub Copilot (Cloud)" dan "AI Lo
 Silakan jadikan pohon keputusan (decision tree) dan arsitektur yang diperkenalkan dalam artikel ini sebagai referensi, dan tingkatkan lingkungan IDE Anda ke level berikutnya. Dengan melangkah dari pihak yang sekadar "menggunakan" AI menjadi pihak yang "memadukan dan mempekerjakan" AI di tempat yang tepat, efisiensi pengembangan Anda pasti akan meningkat drastis.
 
 Happy Coding with Hybrid AI!
+
+
 

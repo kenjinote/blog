@@ -142,8 +142,8 @@ graph TD
     C --> D["Publication and distribution on the Internet"]
     D --> E["Access by AI scrapers and crawlers"]
     E --> F{"Detection of Do Not Train (opt-out) flag"}
-    F -->|Compliance| G["Exclusion from training dataset"]
-    F -->|Malicious| H["Forcible removal of metadata and execution of training"]
+    F -->|"Compliance"| G["Exclusion from training dataset"]
+    F -->|"Malicious"| H["Forcible removal of metadata and execution of training"]
     H --> I["Massive increase in legal penalties based on EU AI Act, etc."]
 ```
 
@@ -218,3 +218,4 @@ The year 2026 will be remembered in history as a monumental year marking the com
 It is impossible to turn back the clock on the evolution of AI technology. However, taming this mighty technology and controlling it so as not to destroy the ecosystem of creators who have nurtured human culture and art for thousands of years depends on the wisdom of law, computer science, and society as a whole.
 
 Towards 2030, instead of AI and creators being hostile and fighting over the pie, the establishment of a "new digital economy" where they can co-create with fair compensation and respect, expanding human creativity, is now strongly demanded.
+

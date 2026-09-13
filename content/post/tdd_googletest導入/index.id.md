@@ -163,10 +163,10 @@ Di sinilah **Dependency Injection (DI)** dan pembuatan mock antarmuka menggunaka
 
 ```mermaid
 flowchart LR
-    Test["Unit Test"] -->|menyuntikkan mock| Target["Target Service"]
-    Target -->|bergantung pada| Interface["Interface (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|mengimplementasikan| Interface
-    Test -->|mengonfigurasi| Mock
+    Test["Unit Test"] -->|"menyuntikkan mock"| Target["Target Service"]
+    Target -->|"bergantung pada"| Interface["Interface (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"mengimplementasikan"| Interface
+    Test -->|"mengonfigurasi"| Mock
 ```
 
 ### 5.1 Definisi Interface dan Implementasi Kelas Target
@@ -343,3 +343,4 @@ Pada artikel ini, kami telah menjelaskan secara terperinci cara menerapkan Test-
 4. Visualisasi test coverage dengan **gcov/lcov**
 
 Meskipun TDD adalah sebuah pendekatan yang membutuhkan waktu untuk dipelajari dan dikuasai, pengembalian investasinya (Return on Investment) tidak ternilai harganya dalam sistem pemrograman (system programming) di mana keseimbangan antara performa dan keamanan adalah hal yang wajib, seperti dalam bahasa C++. Cobalah untuk mempraktikkan TDD sedikit demi sedikit pada proyek Anda berikutnya, dan dapatkan kode C++ yang kuat (robust) dan mudah dipelihara.
+

@@ -97,11 +97,11 @@ $$ G(t) = G_{base} + \Delta G \cdot e^{-\alpha t} \sin(\beta t) $$
 
 ```mermaid
 flowchart TD
-    A["Oura Ring API (Biometrics)"] -->|JSON via OAuth2| C["Python Data Ingestion Pipeline"]
-    B["WakaTime API (Code Time)"] -->|JSON via API Key| C
-    E["SwitchBot API (Room Temp / CO2)"] -->|JSON via API Key| C
-    C -->|Extract & Transform| D["Pandas DataFrame (Memory)"]
-    D -->|Load| F["TimescaleDB / PostgreSQL"]
+    A["Oura Ring API (Biometrics)"] -->|"JSON via OAuth2"| C["Python Data Ingestion Pipeline"]
+    B["WakaTime API (Code Time)"] -->|"JSON via API Key"| C
+    E["SwitchBot API (Room Temp / CO2)"] -->|"JSON via API Key"| C
+    C -->|"Extract & Transform"| D["Pandas DataFrame (Memory)"]
+    D -->|"Load"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (Ad-hoc Analysis)"]
     F --> H["Streamlit Web App (Daily Monitoring)"]
 ```
@@ -368,6 +368,7 @@ HRVをモニタリングし、RHRのトレンドをチェックし、睡眠ア�
 
 ---
 *Disclaimer: 本記事は筆者の個人的な実験とデータサイエンスのアプローチをまとめたものであり、医療的なアドバイスを提供するものではありません。継続的な体調不良や睡眠障害がある場合は、専門の医療機関にご相談ください。*
+
 
 
 

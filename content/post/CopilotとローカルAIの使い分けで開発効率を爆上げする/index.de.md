@@ -58,10 +58,10 @@ Das folgende Mermaid-Diagramm zeigt die hybride Architektur, wie lokale Agenten 
 
 ```mermaid
 graph TD
-    Dev["Entwickler (IDE)"] -->| Echtzeit-Tippen | LocalProxy{"Intelligenter Router / Proxy"}
+    Dev["Entwickler (IDE)"] -->|"Echtzeit-Tippen"| LocalProxy{"Intelligenter Router / Proxy"}
     
-    LocalProxy -->| Schnelle, datenschutzorientierte Aufgabe | LocalAI["Lokale KI-Engine (Ollama / LM Studio)"]
-    LocalProxy -->| Komplexe Logik, großer Kontext | CloudAI["Cloud KI-Engine (Copilot / OpenAI API)"]
+    LocalProxy -->|"Schnelle, datenschutzorientierte Aufgabe"| LocalAI["Lokale KI-Engine (Ollama / LM Studio)"]
+    LocalProxy -->|"Komplexe Logik, großer Kontext"| CloudAI["Cloud KI-Engine (Copilot / OpenAI API)"]
     
     subgraph "Lokale Umgebung"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -94,17 +94,17 @@ Wie sollten Entwickler in der realen Programmierpraxis entscheiden, "welche KI s
 ```mermaid
 graph TD
     Start["Neue Programmieraufgabe"] --> Q1{"Ist der Code streng vertraulich?"}
-    Q1 -->|Ja| Action1["Nutze Lokale KI (Llama 3 / CodeLlama)"]
-    Q1 -->|Nein| Q2{"Ist es eine einfache Inline-Vervollständigung?"}
+    Q1 -->|"Ja"| Action1["Nutze Lokale KI (Llama 3 / CodeLlama)"]
+    Q1 -->|"Nein"| Q2{"Ist es eine einfache Inline-Vervollständigung?"}
     
-    Q2 -->|Ja| Q3{"Ist die Netzwerkverbindung stabil?"}
-    Q3 -->|Ja| Action2["Nutze GitHub Copilot"]
-    Q3 -->|Nein| Action1
+    Q2 -->|"Ja"| Q3{"Ist die Netzwerkverbindung stabil?"}
+    Q3 -->|"Ja"| Action2["Nutze GitHub Copilot"]
+    Q3 -->|"Nein"| Action1
     
-    Q2 -->|Nein| Q4{"Wird komplexe Architekturlogik oder dateiübergreifendes Refactoring benötigt?"}
+    Q2 -->|"Nein"| Q4{"Wird komplexe Architekturlogik oder dateiübergreifendes Refactoring benötigt?"}
     
-    Q4 -->|Ja| Action3["Nutze Cloud-KI (GPT-4 / Claude 3.5 Sonnet)"]
-    Q4 -->|Nein| Action4["Nutze Lokale KI für mittlere Aufgaben, um API-Kosten zu sparen"]
+    Q4 -->|"Ja"| Action3["Nutze Cloud-KI (GPT-4 / Claude 3.5 Sonnet)"]
+    Q4 -->|"Nein"| Action4["Nutze Lokale KI für mittlere Aufgaben, um API-Kosten zu sparen"]
 ```
 
 ### 3.1 Bewertungsachse 1: Vertraulichkeit (Privacy and Security)
@@ -244,4 +244,6 @@ Anstatt eines binären Gegensatzes von "Cloud GitHub Copilot" oder "Lokale KI" i
 Bitte nutzen Sie die in diesem Artikel vorgestellten Entscheidungsbäume und Architekturen als Referenz, um Ihre IDE-Umgebung auf die nächste Stufe zu heben. Indem Sie vom "Nutzer" von KI zu jemandem aufsteigen, der KI "kombiniert und sie am richtigen Ort einsetzt", wird Ihre Entwicklungseffizienz zweifellos maximiert.
 
 Happy Coding with Hybrid AI!
+
+
 

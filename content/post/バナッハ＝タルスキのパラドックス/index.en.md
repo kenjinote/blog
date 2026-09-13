@@ -81,18 +81,18 @@ The way they are divided is so complex and scattered that they become a state wh
 
 ```mermaid
 graph TD
-    S["Original sphere S (Volume V)"] -->|Special decomposition| P1["Piece 1 (Volume unmeasurable)"]
+    S["Original sphere S (Volume V)"] -->|"Special decomposition"| P1["Piece 1 (Volume unmeasurable)"]
     S --> P2["Piece 2 (Volume unmeasurable)"]
     S --> P3["Piece 3 (Volume unmeasurable)"]
     S --> P4["Piece 4 (Volume unmeasurable)"]
     S --> P5["Piece 5 (Volume unmeasurable)"]
     
-    P1 -->|Rotation and Translation| S1["New sphere 1 (Volume V)"]
-    P2 -->|Rotation and Translation| S1
-    P3 -->|Rotation and Translation| S1
+    P1 -->|"Rotation and Translation"| S1["New sphere 1 (Volume V)"]
+    P2 -->|"Rotation and Translation"| S1
+    P3 -->|"Rotation and Translation"| S1
     
-    P4 -->|Rotation and Translation| S2["New sphere 2 (Volume V)"]
-    P5 -->|Rotation and Translation| S2
+    P4 -->|"Rotation and Translation"| S2["New sphere 2 (Volume V)"]
+    P5 -->|"Rotation and Translation"| S2
     
     style S fill:#ffddaa,stroke:#333,stroke-width:2px
     style S1 fill:#aaddff,stroke:#333,stroke-width:2px
@@ -136,3 +136,4 @@ Since the physical world we live in is made of "finite-sized particles" called a
 However, on the canvas of "mathematics" created by the human brain, the size of a point is zero, and infinite operations are allowed.
 
 The Banach-Tarski paradox can be said to be one of the masterpieces of modern mathematics, teaching us **how effortlessly the concept of "infinity" leaps over naive human intuition**.
+

@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["取樣器 (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["輸出 Token"]
     
-    OutputToken --> |"自迴歸生成"| Tokenizer
+    OutputToken -->|"自迴歸生成"| Tokenizer
     OutputToken --> Decoder["反分詞器 (Detokenizer)"]
     Decoder --> FinalOutput["最終輸出文字"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["使用者提問"] --> EmbedQuery["提問的嵌入向量化"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"相似度搜尋"| RetrievedDocs["擷取相關文件"]
+    VectorDB -->|"相似度搜尋"| RetrievedDocs["擷取相關文件"]
     
     UserQuery --> PromptBuilder["生成提示詞 (Prompt)"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ Unsloth 將 CUDA 核心優化到了極致，與標準的 Hugging Face 函式庫�
 5. 活用 **Unsloth (WSL2)**，培育出擁有您專屬專業知識的客製化 AI。
 
 AI 的「民主化」不再只是一個流行語（Buzzword），而是真實在您的 Windows 桌面系統上運作的系統。擺脫雲端 API 的使用成本與資料外洩風險，現在就踏入自由且強大的私有 AI 世界吧。
+
+

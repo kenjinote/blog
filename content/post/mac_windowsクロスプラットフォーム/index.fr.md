@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (Indépendant de la plateforme)"] --> B("Moteur CMake")
     B --> C{"Système d'exploitation cible"}
     
-    C -->|Windows| D["Solution Visual Studio / MSBuild"]
-    C -->|macOS| E["Projet Xcode / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Solution Visual Studio / MSBuild"]
+    C -->|"macOS"| E["Projet Xcode / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Exécutable Windows (.exe)"]
     E --> H["Exécutable macOS (Mach-O)"]
@@ -384,3 +384,4 @@ Le développement multiplateforme pour Mac et Windows présente de nombreux déf
 8.  **CI/CD** : Introduire des builds matriciels, automatiser les builds propres et les tests sur tous les OS cibles, et éliminer la dépendance aux environnements individuels.
 
 Bien qu'aujourd'hui de puissants frameworks tels que Electron, Tauri et .NET absorbent bon nombre de ces différences, la connaissance du comportement natif de l'OS sous-jacent (systèmes de fichiers, encodage) reste indispensable pour résoudre les problèmes graves de performances et les bugs complexes. En partageant et en appliquant ces meilleures pratiques avec toute l'équipe dès les premières étapes d'un projet, vous pourrez réduire considérablement le temps de débogage inutile lié aux différences d'OS, et vous concentrer sur la création essentielle de valeur logicielle.
+

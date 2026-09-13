@@ -84,7 +84,7 @@ Ha ocurrido algo extraño.
 graph TD
     Define["Definición:<br>X = El menor entero no expresable en 19 caracteres o menos"] --> CheckLength{"¿Cuál es la cantidad de caracteres de<br>『十九文字以内で表せない最小の整数』?"}
     
-    CheckLength -->|Son 16 caracteres| Contradiction["¡Contradicción!<br>¡X pudo ser expresado en 『16 caracteres』!"]
+    CheckLength -->|"Son 16 caracteres"| Contradiction["¡Contradicción!<br>¡X pudo ser expresado en 『16 caracteres』!"]
     
     Contradiction --> Paradox["Aunque X 『no se puede expresar en 19 caracteres o menos』,<br>『se puede expresar en 19 caracteres o menos (16 caracteres)』"]
     
@@ -136,3 +136,4 @@ Sin embargo, este problema sirvió como detonante para que los matemáticos del 
 Esta paradoja se convirtió en un importante hito que condujo a disciplinas de vanguardia que cambiarían la historia de las matemáticas, como el "Teorema de incompletitud de Gödel (existen verdades en matemáticas que no se pueden demostrar)" y, en la ciencia de la computación, la "Complejidad de Kolmogórov (la teoría sobre qué tan corta puede comprimirse la información)".
 
 Solo 16 caracteres de japonés expusieron los límites de las matemáticas. Esa es la belleza de la Paradoja de Berry.
+

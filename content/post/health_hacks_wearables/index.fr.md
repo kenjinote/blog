@@ -97,11 +97,11 @@ Le diagramme Mermaid suivant (organigramme) montre le flux depuis la récupérat
 
 ```mermaid
 flowchart TD
-    A["API Oura Ring (Biométrie)"] -->|JSON via OAuth2| C["Pipeline d'ingestion de données Python"]
-    B["API WakaTime (Temps de code)"] -->|JSON via clé API| C
-    E["API SwitchBot (Temp. de la pièce / CO2)"] -->|JSON via clé API| C
-    C -->|Extraire & Transformer| D["Pandas DataFrame (Mémoire)"]
-    D -->|Charger| F["TimescaleDB / PostgreSQL"]
+    A["API Oura Ring (Biométrie)"] -->|"JSON via OAuth2"| C["Pipeline d'ingestion de données Python"]
+    B["API WakaTime (Temps de code)"] -->|"JSON via clé API"| C
+    E["API SwitchBot (Temp. de la pièce / CO2)"] -->|"JSON via clé API"| C
+    C -->|"Extraire & Transformer"| D["Pandas DataFrame (Mémoire)"]
+    D -->|"Charger"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (Analyse Ad-hoc)"]
     F --> H["Application Web Streamlit (Surveillance Quotidienne)"]
 ```
@@ -368,6 +368,7 @@ En tirant parti de la science des données et des API, concevons un état de san
 
 ---
 *Avertissement : Cet article compile les expériences personnelles de l'auteur et son approche en science des données, et ne fournit pas de conseils médicaux. En cas de mauvaise santé persistante ou de troubles du sommeil, veuillez consulter une institution médicale spécialisée.*
+
 
 
 

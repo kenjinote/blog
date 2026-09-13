@@ -34,8 +34,8 @@ graph TD
     A["Irmãos gêmeos (20 anos)"] --> B["Irmão mais novo que fica na Terra"]
     A --> C["Irmão mais velho que viaja pelo espaço a 80% da velocidade da luz"]
     
-    B -->|30 anos de tempo terrestre se passam| D["Irmão mais novo no reencontro: 50 anos"]
-    C -->|O tempo passa mais devagar devido ao efeito Urashima, apenas 18 anos se passam| E["Irmão mais velho no reencontro: 38 anos"]
+    B -->|"30 anos de tempo terrestre se passam"| D["Irmão mais novo no reencontro: 50 anos"]
+    C -->|"O tempo passa mais devagar devido ao efeito Urashima, apenas 18 anos se passam"| E["Irmão mais velho no reencontro: 38 anos"]
     
     D --> F{"Diferença de idade: 12 anos!"}
     E --> F
@@ -87,3 +87,4 @@ Nesse exato momento em que o irmão mais velho inverte a marcha e acelera novame
 Como resultado, quando se reencontram, apenas resta a realidade de que **"o irmão mais velho tem 38 anos e o irmão mais novo tem 50 anos"**, exatamente como calculado, resolvendo assim a contradição perfeitamente.
 
 O Paradoxo dos Gêmeos é um dos experimentos mentais mais belos da história da física, que nos ensina que a nossa intuição baseada no senso comum de que "o tempo passa igualmente para todos" não se aplica de todo perante o vasto universo e a velocidade da luz.
+

@@ -174,10 +174,10 @@ Hugo默认支持 `categories` 和 `tags` 分类法，通过编辑 `hugo.toml`，
 
 ```mermaid
 flowchart LR
-  WPDB["WP数据库"] -->|插件| Exporter["导出工具"]
-  Exporter -->| 提取文本, \n元数据, 图片 | ZipFile["Zip / 文件夹"]
-  ZipFile -->|解压| MarkdownFiles["Markdown文件 \n(content/)"]
-  ZipFile -->|解压| ImageFiles["图片 \n(static/wp-content/)"]
+  WPDB["WP数据库"] -->|"插件"| Exporter["导出工具"]
+  Exporter -->|"提取文本, \n元数据, 图片"| ZipFile["Zip / 文件夹"]
+  ZipFile -->|"解压"| MarkdownFiles["Markdown文件 \n(content/)"]
+  ZipFile -->|"解压"| ImageFiles["图片 \n(static/wp-content/)"]
   MarkdownFiles --> Formatting["审查 & 格式化 \n(修复简码)"]
   Formatting --> Git["提交到Git"]
 ```
@@ -325,4 +325,5 @@ jobs:
 向静态网站生成器迁移虽然需要前期的学习成本（如Git的操作、Markdown语法、从终端执行CLI命令、理解模板引擎的规范等），但它能带来“压倒性的加载速度”、“坚固的安全性”以及“免维护”的回报，这些足以弥补其学习成本且绰绰有余。
 
 如果您的网站不需要频繁的设计变更或复杂的动态处理（如会员专属功能或高级电商功能等），而是主要用于信息发布（博客、媒体、企业网站），那么迁移到Hugo将是您最有效的技术投资之一。请务必参考本文，迈出使用Hugo运营新一代网站的第一步吧。
+
 

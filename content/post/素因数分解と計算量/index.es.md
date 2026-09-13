@@ -264,7 +264,7 @@ graph LR
     end
 
     C1 --> C2
-    C2 -. "Límite de la Física Clásica" .-> Q1
+    C2 -. Límite de la Física Clásica .-> Q1
 ```
 
 En el algoritmo de Shor, el proceso de "búsqueda de período", que era un cuello de botella en los algoritmos clásicos, se calcula de manera instantánea y paralela mediante la "Transformada Cuántica de Fourier (QFT)" utilizando entrelazamiento y superposición cuántica.
@@ -285,3 +285,4 @@ En este artículo, comenzando desde los conceptos básicos de la complejidad tem
 * Sin embargo, con el advenimiento de las **computadoras cuánticas y el algoritmo de Shor**, la factorización de números primos en tiempo polinómico se ha vuelto teóricamente posible, y la tecnología de cifrado está a punto de dar el salto a la próxima era (criptografía post-cuántica).
 
 El hecho de que un concepto abstracto como la complejidad temporal de un algoritmo esté directamente vinculado a la seguridad de nuestras vidas es uno de los aspectos más fascinantes y emocionantes de la informática y las matemáticas. No deje de seguir de cerca la futura evolución de la tecnología, especialmente las tendencias en el desarrollo de las computadoras cuánticas y los cambios en la tecnología criptográfica.
+

@@ -134,8 +134,8 @@ Ini adalah sifat yang diimpikan dalam teori kriptografi. Karena ini menghilangka
 
 ```mermaid
 graph TD
-    A["Masalah Kisi Kasus Terburuk (Gap-SVP, SIVP)"] -->|Reduksi Kuantum/Klasik| B["Masalah LWE Kasus Rata-rata"]
-    B -->|Konstruksi Kriptografi| C["Kriptosistem berbasis LWE (PKE, KEM, FHE)"]
+    A["Masalah Kisi Kasus Terburuk (Gap-SVP, SIVP)"] -->|"Reduksi Kuantum/Klasik"| B["Masalah LWE Kasus Rata-rata"]
+    B -->|"Konstruksi Kriptografi"| C["Kriptosistem berbasis LWE (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ Dalam artikel ini, kami telah menjelaskan secara rinci tentang intuisi matematis
 4. Dalam protokol dunia nyata, untuk meningkatkan efisiensi komunikasi dan kecepatan komputasi, **Ring-LWE** dan **Module-LWE** yang menggunakan cincin polinomial diadopsi, dan ini menjadi fondasi **ML-KEM** yang merupakan standar NIST.
 
 Di tengah pergeseran paradigma komputasi yang belum pernah terjadi sebelumnya yang disebut komputer kuantum, sangatlah romantis bahwa "Kriptografi berbasis kisi", yang lahir dari kedalaman aljabar linear klasik dan teori bilangan, akan memikul fondasi keamanan internet masa depan. Matematika yang menjadi dasar kriptografi berbasis kisi sama sekali tidak terlalu sulit untuk dipahami, dan dengan pengetahuan dasar tentang aljabar linear dan probabilitas, struktur indahnya dapat dipahami dengan baik. Kami berharap artikel ini dapat membantu Anda dalam memahami kriptografi berbasis kisi, yang merupakan inti dari PQC.
+

@@ -163,10 +163,10 @@ int Calculator::Add(int a, int b) {
 
 ```mermaid
 flowchart LR
-    Test["單元測試"] -->|注入 Mock| Target["目標服務"]
-    Target -->|依賴於| Interface["介面 (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|實作| Interface
-    Test -->|配置| Mock
+    Test["單元測試"] -->|"注入 Mock"| Target["目標服務"]
+    Target -->|"依賴於"| Interface["介面 (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"實作"| Interface
+    Test -->|"配置"| Mock
 ```
 
 ### 5.1 介面的定義與目標類別的實作
@@ -343,3 +343,4 @@ $$ M = E - N + 2P $$
 4. 透過 **gcov/lcov** 將測試覆蓋率視覺化
 
 雖然 TDD 是需要時間學習的方法，但在像是 C++ 這種要求兼顧效能與安全性的系統程式設計中，其投資報酬率是無可估量的。請務必在下一個專案中慢慢實踐 TDD，獲得堅固且易於維護的 C++ 程式碼。
+

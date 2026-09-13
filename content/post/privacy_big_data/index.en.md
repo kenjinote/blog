@@ -27,12 +27,12 @@ The figure below shows the flow of an anonymization pipeline in a typical centra
 
 ```mermaid
 flowchart TD
-    A["Data Sources (Web, IoT, Mobile)"] -->| Ingestion | B["Raw Data Zone (Untouched)"]
-    B -->| ETL Process | C["Anonymization & Cleansing Pipeline"]
-    C -->| Pseudonymization / Tokenization | D["Trusted Zone (k-anonymized)"]
-    D -->| Feature Engineering | E["Refined Zone (Ready for ML)"]
-    E -->| Model Training | F["BI Tools & ML Models"]
-    C -->| Audit Logs | G["Security & Compliance Hub"]
+    A["Data Sources (Web, IoT, Mobile)"] -->|"Ingestion"| B["Raw Data Zone (Untouched)"]
+    B -->|"ETL Process"| C["Anonymization & Cleansing Pipeline"]
+    C -->|"Pseudonymization / Tokenization"| D["Trusted Zone (k-anonymized)"]
+    D -->|"Feature Engineering"| E["Refined Zone (Ready for ML)"]
+    E -->|"Model Training"| F["BI Tools & ML Models"]
+    C -->|"Audit Logs"| G["Security & Compliance Hub"]
 ```
 
 In such pipelines, processes like hashing, masking, and encryption are automatically applied when data flows in. However, as discussed later, simple masking or pseudonymization cannot completely eliminate the risk of "Re-identification" through matching with other data sources.
@@ -104,20 +104,20 @@ flowchart TD
     Device2["Edge Device 2 (Smartphone)"]
     Device3["Edge Device 3 (Smartphone)"]
 
-    Server -->| 1. Broadcast Global Model Weights | Device1
-    Server -->| 1. Broadcast Global Model Weights | Device2
-    Server -->| 1. Broadcast Global Model Weights | Device3
+    Server -->|"1. Broadcast Global Model Weights"| Device1
+    Server -->|"1. Broadcast Global Model Weights"| Device2
+    Server -->|"1. Broadcast Global Model Weights"| Device3
 
-    Device1 -->| 2. Local Training on Private Data | Device1
-    Device2 -->| 2. Local Training on Private Data | Device2
-    Device3 -->| 2. Local Training on Private Data | Device3
+    Device1 -->|"2. Local Training on Private Data"| Device1
+    Device2 -->|"2. Local Training on Private Data"| Device2
+    Device3 -->|"2. Local Training on Private Data"| Device3
 
-    Device1 -->| 3. Transmit Model Gradients/Updates | Server
-    Device2 -->| 3. Transmit Model Gradients/Updates | Server
-    Device3 -->| 3. Transmit Model Gradients/Updates | Server
+    Device1 -->|"3. Transmit Model Gradients/Updates"| Server
+    Device2 -->|"3. Transmit Model Gradients/Updates"| Server
+    Device3 -->|"3. Transmit Model Gradients/Updates"| Server
 
-    Server -->| 4. Aggregation (FedAvg) | Server
-    Server -->| 5. Update Global Model | Server
+    Server -->|"4. Aggregation (FedAvg)"| Server
+    Server -->|"5. Update Global Model"| Server
 ```
 
 #### Federated Averaging (FedAvg) Algorithm
@@ -218,6 +218,7 @@ However, technological solutions are not perfect. In federated learning, there i
 ## Conclusion
 
 The fate of personal information in the era of big data poses a fundamental question that goes beyond a mere technical issue: what kind of society do we desire? How can we protect individual dignity and privacy while enjoying convenience? We can only arrive at a sustainable solution through a trinity: the establishment of legal regulations, the continuous innovation of privacy-enhancing technologies, and the high literacy of each of us who provide the data. Privacy and convenience are no longer a trade-off, but will evolve into "essential requirements" that can be achieved simultaneously through the latest technologies.
+
 
 
 

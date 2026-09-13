@@ -97,9 +97,9 @@ Man hat nichts mehr mit Speichererschöpfung des Compilers durch verschachtelte 
 
 ```mermaid
 graph TD
-    A["Typ: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["Bereich von meta::info"]
-    C -->| [: member :] | D["Direkter Member-Zugriff (obj.id, obj.name)"]
+    A["Typ: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["Bereich von meta::info"]
+    C -->|"[: member :]"| D["Direkter Member-Zugriff (obj.id, obj.name)"]
     D --> E["Generierter Code (Zero Overhead)"]
 ```
 
@@ -296,9 +296,9 @@ Der Standardisierungsvorschlag (P2300), der das asynchrone Verarbeitungsmodell v
 
 ```mermaid
 graph LR
-    S["Sender (Aufgabenbeschreibung)"] -->|connect| O["Operationsstatus"]
-    O -->|start| E["Ausführung (ThreadPool, GPU, usw.)"]
-    E -->|set_value / set_error / set_stopped| R["Empfänger (Callback)"]
+    S["Sender (Aufgabenbeschreibung)"] -->|"connect"| O["Operationsstatus"]
+    O -->|"start"| E["Ausführung (ThreadPool, GPU, usw.)"]
+    E -->|"set_value / set_error / set_stopped"| R["Empfänger (Callback)"]
 ```
 
 Senders sind ein schlanker Bauplan, der beschreibt, "was zu tun ist", und der vom Ausführungskontext (Scheduler) getrennt ist. Dadurch können Aufgaben für ThreadPools der CPU oder die Auslagerung (Offloading) auf die GPU effizient mit einer einheitlichen Schnittstelle beschrieben werden.
@@ -367,5 +367,6 @@ Es wird empfohlen, die Implementierungsstatus der C++26-Funktionen (z. B. Featur
 
 ---
 *Dieser Artikel basiert auf dem Status der Standardisierung von C++26 im Jahr 2026. Bitte beachten Sie, dass sich einige Syntaxelemente je nach Implementierungsstatus der einzelnen Compiler ändern können.*
+
 
 

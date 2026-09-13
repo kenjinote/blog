@@ -35,16 +35,16 @@ Uang hadiah awal dimulai dari 2 dolar.
 graph TD
     Start["Mulai permainan"] --> Toss1{"Lemparan koin ke-1"}
     
-    Toss1 -->|Belakang (1/2)| End1["Selesai: Dapat 2 dolar"]
-    Toss1 -->|Depan (1/2)| Toss2{"Lemparan koin ke-2"}
+    Toss1 -->|"Belakang (1/2)"| End1["Selesai: Dapat 2 dolar"]
+    Toss1 -->|"Depan (1/2)"| Toss2{"Lemparan koin ke-2"}
     
-    Toss2 -->|Belakang (1/2)| End2["Selesai: Dapat 4 dolar"]
-    Toss2 -->|Depan (1/2)| Toss3{"Lemparan koin ke-3"}
+    Toss2 -->|"Belakang (1/2)"| End2["Selesai: Dapat 4 dolar"]
+    Toss2 -->|"Depan (1/2)"| Toss3{"Lemparan koin ke-3"}
     
-    Toss3 -->|Belakang (1/2)| End3["Selesai: Dapat 8 dolar"]
-    Toss3 -->|Depan (1/2)| Toss4{"..."}
+    Toss3 -->|"Belakang (1/2)"| End3["Selesai: Dapat 8 dolar"]
+    Toss3 -->|"Depan (1/2)"| Toss4{"..."}
     
-    Toss4 -.->|Semakin berturut-turut| Infinite["Uang hadiah berlipat ganda tak terhingga!"]
+    Toss4 -.->|"Semakin berturut-turut"| Infinite["Uang hadiah berlipat ganda tak terhingga!"]
 ```
 
 Sekarang, ada satu pertanyaan untuk Anda.
@@ -147,3 +147,4 @@ Konsep "Utilitas (Utility)" yang diajukan oleh Daniel Bernoulli, setelah 200 tah
 Tindakan kita dalam membeli asuransi atau melakukan diversifikasi investasi, semuanya dapat dijelaskan melalui mekanisme psikologis manusia yang disebut "Utilitas Marjinal yang Semakin Menurun (penderitaan karena kerugian besar jauh lebih besar daripada kegembiraan karena keuntungan besar)".
 
 Sebuah masalah perhitungan perjudian sederhana, ternyata menjadi pemicu untuk memahami pikiran manusia dan melahirkan disiplin ilmu yang besar yaitu ilmu ekonomi.
+

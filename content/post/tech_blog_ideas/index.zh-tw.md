@@ -326,18 +326,18 @@ $$ R = e^{-\frac{t}{S}} $$
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Python 擷取腳本| B["未加工的趨勢資料"]
-    C["GitHub Actions (Cron)"] -->|定期執行排程| A
-    B -->|Markdown 格式轉換| D["Daily Inputs (閃念筆記)"]
-    D -->|閱讀與總結的人工操作| E["Obsidian Zettelkasten"]
-    E -->|轉為永久筆記| F["Permanent Notes (永久筆記)"]
-    F -->|自動同步處理| G["OpenAI Embeddings API"]
-    G -->|向量轉換| H["Pinecone Vector Database"]
-    H -->|語意搜尋| I["相關知識的發現與擷取"]
-    F -->|製作單字卡| J["Anki (間隔重複)"]
-    J -->|來自長期記憶的靈感| K["Combinatorial Creativity (組合創造力)"]
+    A["Hacker News / Lobsters API"] -->|"Python 擷取腳本"| B["未加工的趨勢資料"]
+    C["GitHub Actions (Cron)"] -->|"定期執行排程"| A
+    B -->|"Markdown 格式轉換"| D["Daily Inputs (閃念筆記)"]
+    D -->|"閱讀與總結的人工操作"| E["Obsidian Zettelkasten"]
+    E -->|"轉為永久筆記"| F["Permanent Notes (永久筆記)"]
+    F -->|"自動同步處理"| G["OpenAI Embeddings API"]
+    G -->|"向量轉換"| H["Pinecone Vector Database"]
+    H -->|"語意搜尋"| I["相關知識的發現與擷取"]
+    F -->|"製作單字卡"| J["Anki (間隔重複)"]
+    J -->|"來自長期記憶的靈感"| K["Combinatorial Creativity (組合創造力)"]
     I --> K
-    K -->|大綱與架構草案建立| L["Blog Post Draft (文章撰寫)"]
+    K -->|"大綱與架構草案建立"| L["Blog Post Draft (文章撰寫)"]
 ```
 
 ## 9. 從點子到公開的狀態轉換模型
@@ -380,5 +380,6 @@ stateDiagram-v2
 藉由建構結合了以上各點的全面性管道，不僅能讓部落格點子不再枯竭，還能創造出越寫就有越多新點子自我繁殖的狀態。
 
 一開始不需要將一切建構得完美無缺。請試著先從撰寫呼叫 Hacker News API 的簡單腳本，並用 Markdown 記下感興趣文章的習慣開始做起吧。希望你的技術部落格能成為次世代優秀點子的發源地。
+
 
 

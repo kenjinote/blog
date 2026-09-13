@@ -97,11 +97,11 @@ Diagram Mermaid (diagram alir) di bawah ini menunjukkan alur mulai dari pengambi
 
 ```mermaid
 flowchart TD
-    A["Oura Ring API (Biometrik)"] -->|JSON via OAuth2| C["Pipeline Ingesti Data Python"]
-    B["WakaTime API (Waktu Coding)"] -->|JSON via API Key| C
-    E["SwitchBot API (Suhu Ruang / CO2)"] -->|JSON via API Key| C
-    C -->|Ekstrak & Transformasi| D["Pandas DataFrame (Memori)"]
-    D -->|Muat| F["TimescaleDB / PostgreSQL"]
+    A["Oura Ring API (Biometrik)"] -->|"JSON via OAuth2"| C["Pipeline Ingesti Data Python"]
+    B["WakaTime API (Waktu Coding)"] -->|"JSON via API Key"| C
+    E["SwitchBot API (Suhu Ruang / CO2)"] -->|"JSON via API Key"| C
+    C -->|"Ekstrak & Transformasi"| D["Pandas DataFrame (Memori)"]
+    D -->|"Muat"| F["TimescaleDB / PostgreSQL"]
     F --> G["Jupyter Notebook (Analisis Ad-hoc)"]
     F --> H["Aplikasi Web Streamlit (Pemantauan Harian)"]
 ```
@@ -368,6 +368,7 @@ Mari manfaatkan ilmu data dan API secara maksimal untuk merekayasa kondisi keseh
 
 ---
 *Sangkalan (Disclaimer): Artikel ini merangkum eksperimen pribadi dan pendekatan ilmu data dari penulis, dan tidak ditujukan untuk memberikan nasihat medis. Jika Anda mengalami kondisi kesehatan yang buruk atau gangguan tidur yang berkelanjutan, harap konsultasikan dengan institusi medis profesional.*
+
 
 
 

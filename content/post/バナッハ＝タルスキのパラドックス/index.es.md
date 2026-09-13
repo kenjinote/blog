@@ -81,18 +81,18 @@ La forma en que se dividen es tan compleja y dispersa que alcanzan un estado don
 
 ```mermaid
 graph TD
-    S["Esfera original S (Volumen V)"] -->|División especial| P1["Pieza 1 (Volumen no medible)"]
+    S["Esfera original S (Volumen V)"] -->|"División especial"| P1["Pieza 1 (Volumen no medible)"]
     S --> P2["Pieza 2 (Volumen no medible)"]
     S --> P3["Pieza 3 (Volumen no medible)"]
     S --> P4["Pieza 4 (Volumen no medible)"]
     S --> P5["Pieza 5 (Volumen no medible)"]
     
-    P1 -->|Rotación y traslación| S1["Nueva esfera 1 (Volumen V)"]
-    P2 -->|Rotación y traslación| S1
-    P3 -->|Rotación y traslación| S1
+    P1 -->|"Rotación y traslación"| S1["Nueva esfera 1 (Volumen V)"]
+    P2 -->|"Rotación y traslación"| S1
+    P3 -->|"Rotación y traslación"| S1
     
-    P4 -->|Rotación y traslación| S2["Nueva esfera 2 (Volumen V)"]
-    P5 -->|Rotación y traslación| S2
+    P4 -->|"Rotación y traslación"| S2["Nueva esfera 2 (Volumen V)"]
+    P5 -->|"Rotación y traslación"| S2
     
     style S fill:#ffddaa,stroke:#333,stroke-width:2px
     style S1 fill:#aaddff,stroke:#333,stroke-width:2px
@@ -136,3 +136,4 @@ Como el mundo físico en el que vivimos está compuesto por átomos, que son "pa
 Sin embargo, en el lienzo de las "matemáticas" creado por la mente humana, el tamaño de un punto es cero y se permiten las operaciones infinitas.
 
 Se podría decir que la Paradoja de Banach-Tarski es una de las obras maestras de las matemáticas modernas que nos enseña **qué tan fácilmente el concepto de "infinito" puede superar la simple intuición humana**.
+

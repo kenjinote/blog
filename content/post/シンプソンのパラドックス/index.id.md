@@ -93,8 +93,8 @@ graph TD
         Total["Gabungan Keseluruhan: Kemenangan Telak A (90% > 41%)"]
     end
     
-    Light -->|Entah mengapa berbalik saat digabungkan| Total
-    Heavy -->|Entah mengapa berbalik saat digabungkan| Total
+    Light -->|"Entah mengapa berbalik saat digabungkan"| Total
+    Heavy -->|"Entah mengapa berbalik saat digabungkan"| Total
     
     style Total fill:#ff9999,stroke:#333,stroke-width:2px
 ```
@@ -149,3 +149,4 @@ Di dunia ini, bertebaran perusahaan, politisi, atau media yang hanya mengambil "
 Bahkan jika dikatakan, "Produk A dari perusahaan kami memiliki tingkat kepuasan keseluruhan yang lebih tinggi daripada produk B dari perusahaan lain!", mungkin saja jika dibagi menjadi "kelompok muda" dan "kelompok lansia", produk B dari perusahaan lain yang menang di kedua kelompok tersebut.
 
 Saat melihat data, agar tidak tertipu oleh angka "keseluruhan" yang tampak di permukaan, memiliki pandangan skeptis dengan bertanya, "Apakah ada bias ekstrem dalam proporsi kelompok akibat variabel tersembunyi di baliknya (seperti usia, jenis kelamin, tingkat keparahan, dll)?" akan menjadi senjata terkuat untuk bertahan di era informasi modern.
+

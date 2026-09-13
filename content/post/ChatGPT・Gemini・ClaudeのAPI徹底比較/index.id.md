@@ -57,7 +57,7 @@ Diagram Mermaid berikut menunjukkan gambaran keseluruhan mulai dari permintaan A
 
 ```mermaid
 graph TD
-    A["Aplikasi Klien"] -->|HTTP/REST atau gRPC| B["API Gateway"]
+    A["Aplikasi Klien"] -->|"HTTP/REST atau gRPC"| B["API Gateway"]
     B --> C["Load Balancer"]
     C --> D["Klaster Inferensi"]
     D --> E["Tokenizer (BPE / SentencePiece)"]
@@ -66,7 +66,7 @@ graph TD
     G --> H["Lapisan Output (Logits)"]
     H --> I["Sampler (Temperature, Top-p, Top-k)"]
     I --> J["Detokenizer"]
-    J -->|Respons Streaming (Chunk)| A
+    J -->|"Respons Streaming (Chunk)"| A
 ```
 
 ### 3.1 Algoritma Tokenization (Tokenisasi)
@@ -344,3 +344,4 @@ Tren masa depan bukanlah bergantung pada API tunggal (vendor lock-in), melainkan
 Misalnya, untuk merespons pertanyaan sederhana dari pengguna, Anda dapat menggunakan `GPT-4o-mini` atau `Gemini 1.5 Flash` yang murah dan cepat. Namun, jika dinilai memerlukan pemrosesan yang lebih kompleks, barulah tugas tersebut diserahkan ke `Claude 3.5 Sonnet`. Dengan cara ini, keseimbangan optimal antara biaya dan performa dapat tercapai.
 
 Evolusi AI tidak akan berhenti. Pahami secara mendalam kelebihan dan kekurangan dari masing-masing API, serta karakteristik arsitekturnya, agar Anda dapat membangun aplikasi AI yang fleksibel dan skalabel.
+

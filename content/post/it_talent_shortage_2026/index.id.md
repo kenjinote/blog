@@ -30,7 +30,7 @@ Proses pengembangan modern berasumsi bahwa sistem harus bersifat **cloud-native*
 
 ```mermaid
 graph TD
-    A["Model Pengembangan SIer Warisan"] -->|Pergeseran Paradigma| B["Masa Transisi (Adopsi Agile・Lift & Shift)"]
+    A["Model Pengembangan SIer Warisan"] -->|"Pergeseran Paradigma"| B["Masa Transisi (Adopsi Agile・Lift & Shift)"]
     B --> C["Cloud Native (Microservices/Kontainer)"]
     C --> D["Arsitektur Berbasis Data & AI (MLOps)"]
     D --> E["Platform Integrasi AI Generatif (Agen AI Otonom)"]
@@ -157,10 +157,10 @@ Dalam pengembangan sistem skala besar, pada akhirnya "membangun hubungan antar m
 
 ```mermaid
 graph LR
-    A["Sekadar Coder"] -->|Digantikan oleh AI| B["Permintaan Menurun"]
-    A -->|Pergeseran Strategis| C["System Architect"]
-    A -->|Pergeseran Strategis| D["Domain Expert"]
-    A -->|Pergeseran Strategis| E["AI Integrator"]
+    A["Sekadar Coder"] -->|"Digantikan oleh AI"| B["Permintaan Menurun"]
+    A -->|"Pergeseran Strategis"| C["System Architect"]
+    A -->|"Pergeseran Strategis"| D["Domain Expert"]
+    A -->|"Pergeseran Strategis"| E["AI Integrator"]
     
     C --> F["Permintaan Tinggi & Harga Tinggi (Pemenang Pasca 2026)"]
     D --> F
@@ -182,6 +182,7 @@ AI tidak akan merebut pekerjaan kita, ia hanyalah alat agar kita bisa fokus pada
 
 Inilah saatnya untuk mengevaluasi kembali jalur karier Anda dan banting setir menuju paradigma berikutnya.
 Apakah Anda sudah siap untuk me-"modernisasi" diri Anda sendiri?
+
 
 
 

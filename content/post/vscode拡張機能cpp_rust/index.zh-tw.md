@@ -36,11 +36,11 @@ graph TD
     VSCode -- 補齊請求・跳轉至定義 --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. "AST（抽象語法樹）解析" .-> CompilerC
-    RustAnalyzer -. "巨集展開・型別推導" .-> CompilerR
+    Clangd -. AST（抽象語法樹）解析 .-> CompilerC
+    RustAnalyzer -. 巨集展開・型別推導 .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
-    Debugger -. "ptrace / 記憶體傾印" .-> Executable["已編譯二進位檔"]
+    Debugger -. ptrace / 記憶體傾印 .-> Executable["已編譯二進位檔"]
 ```
 
 VSCode 本體並不理解 C++ 的模板元程式設計或是 Rust 複雜的生命週期提示字。編輯器的角色專注於原始碼的顯示與接收使用者的輸入，而程式碼的語意解析（Semantic Analysis）、型別推導（Type Inference）及錯誤檢查等計算成本高昂的處理，則透過 JSON-RPC 委派給在背景運作的「語言伺服器」。
@@ -388,4 +388,5 @@ C++ 與 Rust 都是以「發揮硬體極限效能」為目的的嚴謹語言，�
 初期的設定檔客製化可能會花上一些時間，但只要建置完成，之後的寫程式體驗將會變得令人驚豔地舒適且具高生產力。請務必參考本文的架構解說與具體設定（`settings.json`, `tasks.json`, `launch.json`），試著建構出屬於你自己的最強開發環境吧。
 
 祝你有個舒適、安全的系統程式設計生活！
+
 

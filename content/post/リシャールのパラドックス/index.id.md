@@ -71,10 +71,10 @@ graph TD
         X["X = 0.4128..."]
     end
     
-    R1 -->|digit ke-1 +1| X
-    R2 -->|digit ke-2 +1| X
-    R3 -->|digit ke-3 +1| X
-    R4 -->|digit ke-4 +1| X
+    R1 -->|"digit ke-1 +1"| X
+    R2 -->|"digit ke-2 +1"| X
+    R3 -->|"digit ke-3 +1"| X
+    R4 -->|"digit ke-4 +1"| X
     
     style X fill:#aaffaa,stroke:#333,stroke-width:2px
 ```
@@ -128,3 +128,4 @@ Gödel menerjemahkan dan mereproduksi secara sempurna struktur paradoks yang dis
 
 Hasil yang diturunkan darinya adalah **"Teorema Ketidaklengkapan Gödel"** yang terkenal.
 Itu adalah penemuan besar yang membuktikan batas pengetahuan umat manusia: "Tidak peduli seberapa ketat Anda membuat aturan matematika, 'kebenaran yang tidak dapat dibuktikan maupun disangkal' pasti akan muncul di dalam aturan tersebut (matematika itu tidak lengkap)".
+

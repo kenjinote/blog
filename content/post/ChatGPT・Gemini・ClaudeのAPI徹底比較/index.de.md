@@ -57,7 +57,7 @@ Das folgende Mermaid-Diagramm zeigt das Gesamtbild vom Senden einer API-Anfrage 
 
 ```mermaid
 graph TD
-    A["Client-Anwendung"] -->|HTTP/REST oder gRPC| B["API-Gateway"]
+    A["Client-Anwendung"] -->|"HTTP/REST oder gRPC"| B["API-Gateway"]
     B --> C["Load Balancer"]
     C --> D["Inferenz-Cluster"]
     D --> E["Tokenizer (BPE / SentencePiece)"]
@@ -66,7 +66,7 @@ graph TD
     G --> H["Output-Layer (Logits)"]
     H --> I["Sampler (Temperature, Top-p, Top-k)"]
     I --> J["Detokenizer"]
-    J -->|Streaming-Antwort (Chunk)| A
+    J -->|"Streaming-Antwort (Chunk)"| A
 ```
 
 ### 3.1 Tokenisierungs-Algorithmen (Tokenization)
@@ -344,3 +344,4 @@ Anstatt sich auf eine einzige API zu verlassen (Vendor-Lock-in), ist die zukünf
 Beispielsweise kann man auf einfache Fragen von Benutzern mit dem kostengünstigen und schnellen `GPT-4o-mini` oder `Gemini 1.5 Flash` antworten. Nur wenn festgestellt wird, dass eine komplexe Verarbeitung erforderlich ist, greift man als Fallback für die Aufgabe auf `Claude 3.5 Sonnet` zurück. So lässt sich das optimale Gleichgewicht zwischen Kosten und Leistung erreichen.
 
 Die Entwicklung der KI ist unaufhaltsam. Verstehen Sie die Stärken und Schwächen der einzelnen APIs sowie die Besonderheiten ihrer Architektur genau, um flexible und flexibel skalierbare KI-Anwendungen zu entwickeln.
+

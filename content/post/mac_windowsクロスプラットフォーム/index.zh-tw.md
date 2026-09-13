@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (獨立於平台)"] --> B("CMake 引擎")
     B --> C{"目標作業系統"}
     
-    C -->|Windows| D["Visual Studio 解決方案 / MSBuild"]
-    C -->|macOS| E["Xcode 專案 / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Visual Studio 解決方案 / MSBuild"]
+    C -->|"macOS"| E["Xcode 專案 / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Windows 執行檔 (.exe)"]
     E --> H["macOS 執行檔 (Mach-O)"]
@@ -384,3 +384,4 @@ Mac 與 Windows 的跨平台開發，存在許多根植於歷史背景的廣泛�
 8.  **CI/CD**：導入矩陣建置，自動化所有目標 OS 上的乾淨建置與測試，排除依賴個人的狀況。
 
 現今雖然有 Electron, Tauri, .NET 等強大的框架能吸收許多差異，但基底 OS 原生行為（檔案系統與編碼）的知識，在解決嚴重的效能問題或艱深的 Bug 時，仍然是不可或缺的。從專案初期階段就讓整個團隊共享並徹底落實這些最佳實踐，將能大幅減少因 OS 差異所導致且毫無意義的除錯時間，讓我們能集中精力創造軟體的本質價值。
+

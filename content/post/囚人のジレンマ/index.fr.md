@@ -75,13 +75,13 @@ graph TD
     Start["Début du choix"] --> Logic_You["Votre réflexion rationnelle"]
     Start --> Logic_Friend["La réflexion rationnelle de l'ami"]
     
-    Logic_You -->|Si l'autre se tait, avouer est profitable<br>Si l'autre avoue, avouer reste profitable| Betray_You["Vous choisissez d'avouer (trahir)"]
-    Logic_Friend -->|Si l'autre se tait, avouer est profitable<br>Si l'autre avoue, avouer reste profitable| Betray_Friend["L'ami choisit d'avouer (trahir)"]
+    Logic_You -->|"Si l'autre se tait, avouer est profitable<br>Si l'autre avoue, avouer reste profitable"| Betray_You["Vous choisissez d'avouer (trahir)"]
+    Logic_Friend -->|"Si l'autre se tait, avouer est profitable<br>Si l'autre avoue, avouer reste profitable"| Betray_Friend["L'ami choisit d'avouer (trahir)"]
     
     Betray_You --> Result["Résultat : les deux avouent (-5, -5)"]
     Betray_Friend --> Result
     
-    Ideal["Idéal : les deux se taisent (-1, -1)"] -.->|La rationalité individuelle s'y oppose<br>et empêche de l'atteindre| Result
+    Ideal["Idéal : les deux se taisent (-1, -1)"] -.->|"La rationalité individuelle s'y oppose<br>et empêche de l'atteindre"| Result
     
     style Result fill:#ff9999,stroke:#333,stroke-width:2px
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
@@ -134,11 +134,11 @@ Cette stratégie est forte car elle combine quatre caractéristiques : "ne jamai
 graph LR
     Start["1ère fois : coopération inconditionnelle"] --> Round2
     
-    Round2["Observer l'action de l'adversaire"] -->|L'adversaire a coopéré| Act_Coop["Je coopère aussi"]
-    Round2 -->|L'adversaire a trahi| Act_Betray["Je trahis aussi (représailles)"]
+    Round2["Observer l'action de l'adversaire"] -->|"L'adversaire a coopéré"| Act_Coop["Je coopère aussi"]
+    Round2 -->|"L'adversaire a trahi"| Act_Betray["Je trahis aussi (représailles)"]
     
     Act_Coop --> Round2
-    Act_Betray -->|Si l'adversaire regrette<br>et revient à la coopération| Act_Coop
+    Act_Betray -->|"Si l'adversaire regrette<br>et revient à la coopération"| Act_Coop
 ```
 
 Dans les relations humaines ou la société internationale, tant qu'une relation à long terme est supposée, partager la règle de **"coopérer à la base, mais pénaliser la trahison"**, comme dans la stratégie donnant-donnant, permet de surmonter le dilemme du prisonnier et de construire des relations de coopération.
@@ -151,3 +151,4 @@ La rationalité individuelle de vouloir "être le seul à en tirer profit" ou "n
 Mais dans le même temps, la théorie des jeux nous enseigne aussi que, à condition que "la relation se poursuive sur le long terme", **"se faire mutuellement confiance et coopérer" est en fait la stratégie la plus rationnelle qui maximise aussi son propre profit**.
 
 La prochaine fois que vous hésiterez à "tricher un peu pour vous seul", rappelez-vous de la matrice des gains de ce dilemme du prisonnier. Poursuivre le profit immédiat par une "trahison rationnelle" pourrait bien être le choix le plus irrationnel à long terme.
+

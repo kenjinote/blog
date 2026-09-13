@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (Platform Independent)"] --> B("CMake Engine")
     B --> C{"Target Operating System"}
     
-    C -->|Windows| D["Visual Studio Solution / MSBuild"]
-    C -->|macOS| E["Xcode Project / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Visual Studio Solution / MSBuild"]
+    C -->|"macOS"| E["Xcode Project / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Windows Executable (.exe)"]
     E --> H["macOS Executable (Mach-O)"]
@@ -384,3 +384,4 @@ Cross-platform development for Mac and Windows has a wide variety of challenges 
 8.  **CI/CD**: Introduce matrix builds to automate clean builds and testing across all target OSs, eliminating person-dependency.
 
 Today, powerful frameworks such as Electron, Tauri, and .NET absorb many of these differences, but knowledge of the native behavior of the underlying OS (file systems and encoding) remains indispensable when resolving severe performance issues or obscure bugs. By sharing and strictly enforcing these best practices across the team from the early stages of a project, you can significantly reduce unproductive debugging time caused by OS differences and focus on essential software value creation.
+

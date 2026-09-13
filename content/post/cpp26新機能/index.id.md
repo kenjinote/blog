@@ -97,9 +97,9 @@ Kita dapat terbebas dari kehabisan memori kompiler akibat template yang bersaran
 
 ```mermaid
 graph TD
-    A["Tipe: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["Rentang meta::info"]
-    C -->| [: member :] | D["Akses Anggota Langsung (obj.id, obj.name)"]
+    A["Tipe: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["Rentang meta::info"]
+    C -->|"[: member :]"| D["Akses Anggota Langsung (obj.id, obj.name)"]
     D --> E["Kode yang Dihasilkan (Nol Overhead)"]
 ```
 
@@ -296,9 +296,9 @@ Proposal standardisasi (P2300) yang merombak model pemrosesan asinkron C++ dari 
 
 ```mermaid
 graph LR
-    S["Sender (Deskripsi Tugas)"] -->|connect| O["Status Operasi"]
-    O -->|start| E["Eksekusi (ThreadPool, GPU, dll.)"]
-    E -->|set_value / set_error / set_stopped| R["Receiver (Callback)"]
+    S["Sender (Deskripsi Tugas)"] -->|"connect"| O["Status Operasi"]
+    O -->|"start"| E["Eksekusi (ThreadPool, GPU, dll.)"]
+    E -->|"set_value / set_error / set_stopped"| R["Receiver (Callback)"]
 ```
 
 Senders adalah cetak biru ringan yang mendeskripsikan "apa yang harus dilakukan", dipisahkan dari konteks eksekusi (Scheduler). Hal ini memungkinkan kita mendeskripsikan pemindahan tugas ke ThreadPool CPU atau GPU dengan efisien melalui antarmuka yang seragam.
@@ -367,5 +367,6 @@ Kedepannya, kami sangat menyarankan untuk secara aktif mengadopsi berbagai parad
 
 ---
 *Artikel ini ditulis berdasarkan status pada standar C++26 di tahun 2026. Harap diperhatikan bahwa beberapa jenis sintaks mungkin dapat diubah bergantung dari progres dan situasi penerapan di tiap kompiler.*
+
 
 

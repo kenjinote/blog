@@ -46,7 +46,7 @@ graph TD
     I --> J["Next Token ID"]
     J --> K["Detokenizer"]
     K --> L["Output Text Chunk"]
-    J -.-> |"Append to Context"| C
+    J -.->|"Append to Context"| C
 ```
 
 Since it is an autoregressive model, the output token is added back to the context and circulates as input for predicting the next token (the dotted line in the diagram).
@@ -241,3 +241,5 @@ cmake --build . --config Release
 ## 10. Conclusion
 
 Implementing an inference engine from scratch for small AI models like TinyLLaMA using C++ and ggml is a perfect opportunity to demystify the black box of deep learning and learn the beauty of low-level hardware control. Let's pave the way for the future of edge AI while fully savoring the essence of systems programming, such as zero-copy loading using memory mapping, SIMD optimization, and KV cache construction.
+
+

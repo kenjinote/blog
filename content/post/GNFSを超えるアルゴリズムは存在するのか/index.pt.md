@@ -150,8 +150,8 @@ Tendo em vista as implementações de circuitos otimizadas nos últimos anos, af
 
 ```mermaid
 graph LR
-  A["Algoritmo clássico (GNFS)"] -->|Limite| B["Tempo subexponencial L_n[1/3]"]
-  C["Algoritmo quântico (Shor)"] -->|Avanço| D["Tempo polinomial O((log n)^3)"]
+  A["Algoritmo clássico (GNFS)"] -->|"Limite"| B["Tempo subexponencial L_n[1/3]"]
+  C["Algoritmo quântico (Shor)"] -->|"Avanço"| D["Tempo polinomial O((log n)^3)"]
   B --> E["Uso contínuo de criptografia RSA (aumento do tamanho da chave)"]
   D --> F["Colapso completo da criptografia RSA"]
 ```
@@ -177,4 +177,5 @@ O consenso atual na comunidade científica em relação à pergunta "Existe algu
 3. **A verdadeira ameaça é o algoritmo quântico**: O Algoritmo de Shor, baseado nos princípios da mecânica quântica, ultrapassou os limites da complexidade computacional. Como resultado, o mundo é obrigado a realizar a transição para a Criptografia Pós-Quântica (PQC). A fronteira da criptografia de hoje encontra-se em novos problemas matemáticos, como a criptografia baseada em reticulados e a criptografia baseada em hashes, as quais são consideradas difíceis de se decifrar até para computadores quânticos (ou seja, não possuem resolução no tempo polinomial).
 
 O Crivo Geral dos Campos de Números (GNFS) é uma das maiores conquistas matemáticas alcançadas pela humanidade ao desafiar os limites do design de algoritmos e matemática clássica. Compreender a profunda estrutura matemática do GNFS não é apenas aprender sobre a história da criptanálise, é também uma jornada de exploração intelectual que nos permite tocar na beleza da teoria da complexidade computacional e da teoria algébrica dos números. Até ao dia em que os computadores quânticos se tornarem práticos, o GNFS deverá manter a sua coroa como o algoritmo de fatoração de inteiros mais poderoso.
+
 

@@ -141,8 +141,8 @@ L'IA peut écrire "du code qui privilégie C" ou "du code qui privilégie A", ma
 flowchart LR
     Client["Client"] --> API["Passerelle API"]
     API --> Order["Service de commande (Contexte)"]
-    Order -. "Événement asynchrone (Kafka)" .-> Inventory["Service d'inventaire"]
-    Order -. "Événement asynchrone (Kafka)" .-> Payment["Service de paiement"]
+    Order -. Événement asynchrone (Kafka) .-> Inventory["Service d'inventaire"]
+    Order -. Événement asynchrone (Kafka) .-> Payment["Service de paiement"]
     
     Inventory --> DB1["BD d'inventaire"]
     Payment --> DB2["BD de paiement"]
@@ -207,6 +207,7 @@ Les ingénieurs de demain ne s'inquiéteront plus des spécifications détaillé
 
 Un véritable ingénieur n'est pas quelqu'un qui écrit du code, mais quelqu'un qui résout des problèmes.
 La modélisation de domaine, la conception d'architectures évolutives, la communication avec les parties prenantes et le débogage de systèmes complexes. Pour ceux qui continuent à affiner ces "compétences d'ingénieur spécifiques aux humains", l'IA ne sera pas un ennemi qui vole leur travail, mais plutôt le partenaire le plus fort qui amplifiera leur créativité et leur productivité des dizaines de fois.
+
 
 
 

@@ -103,7 +103,7 @@ graph TD
     J --> K["معرف الرمز المحدد"]
     K --> L["مُجمّع النصوص llama.cpp (Detokenizer)"]
     L --> M["النص الناتج"]
-    K -. "حلقة ذاتية الانحدار" .-> D
+    K -. حلقة ذاتية الانحدار .-> D
 ```
 
 توليد النص هو حلقة ذاتية الانحدار حيث أنه في كل مرة يتم فيها إخراج رمز مميز (Token) واحد، تتم إضافته إلى ذاكرة التخزين المؤقت KV كإدخال تالٍ ويمر عبر الرسم البياني الحسابي مرة أخرى.
@@ -383,3 +383,4 @@ for (llama_token bad_tok : forbidden_tokens) {
 > - [المستودع الرسمي llama.cpp](https://github.com/ggerganov/llama.cpp)
 > - [ggml - مكتبة Tensor](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

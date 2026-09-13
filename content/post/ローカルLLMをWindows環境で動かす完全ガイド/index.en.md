@@ -84,7 +84,7 @@ graph TD
     Logits --> Sampler["Sampler (Temperature, Top-K, Top-P)"]
     Sampler --> OutputToken["Output Token"]
     
-    OutputToken --> |"Autoregressive Generation"| Tokenizer
+    OutputToken -->|"Autoregressive Generation"| Tokenizer
     OutputToken --> Decoder["Detokenizer"]
     Decoder --> FinalOutput["Final Output Text"]
 ```
@@ -264,7 +264,7 @@ graph LR
     
     UserQuery["User Query"] --> EmbedQuery["Query Embedding"]
     EmbedQuery --> VectorDB
-    VectorDB --> |"Similarity Search"| RetrievedDocs["Extract Relevant Docs"]
+    VectorDB -->|"Similarity Search"| RetrievedDocs["Extract Relevant Docs"]
     
     UserQuery --> PromptBuilder["Prompt Generation"]
     RetrievedDocs --> PromptBuilder
@@ -325,3 +325,5 @@ Please make use of the following points explained in this article:
 5. Nurture a custom AI with your own specialized knowledge by utilizing **Unsloth (WSL2)**.
 
 The "democratization" of AI is no longer a buzzword, but a real system running on your Windows desktop. Free yourself from the usage costs of cloud APIs and information leak risks, and step into the world of free and powerful private AI right now.
+
+

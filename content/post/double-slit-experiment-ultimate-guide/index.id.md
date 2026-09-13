@@ -36,10 +36,10 @@ Namun, seiring dengan akumulasi titik-titik elektron yang tak terhitung jumlahny
 
 ```mermaid
 graph TD
-    A[Pistol Elektron / Sumber Cahaya] -->|Menembakkan partikel satu per satu| B(Dinding dengan Celah Ganda)
-    B -->|Celah 1| C{Berinterferensi sebagai gelombang?}
-    B -->|Celah 2| C
-    C -->|Mencapai layar| D[Pola interferensi muncul saat terakumulasi]
+    A[Pistol Elektron / Sumber Cahaya] -->|"Menembakkan partikel satu per satu"| B(Dinding dengan Celah Ganda)
+    B -->|"Celah 1"| C{Berinterferensi sebagai gelombang?}
+    B -->|"Celah 2"| C
+    C -->|"Mencapai layar"| D[Pola interferensi muncul saat terakumulasi]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -73,8 +73,8 @@ graph TD
     A[Pencarian Hakikat Cahaya] --> B[Abad ke-17: Era Revolusi Sains]
     B --> C("Teori Partikel Newton (1704)")
     B --> D("Teori Gelombang Huygens (1690)")
-    C -->|Otoritas Newton yang sangat besar| E[Abad ke-18: Dominasi Jangka Panjang Teori Partikel]
-    D -.->|Stagnan tanpa mendapatkan dukungan| E
+    C -->|"Otoritas Newton yang sangat besar"| E[Abad ke-18: Dominasi Jangka Panjang Teori Partikel]
+    D -.->|"Stagnan tanpa mendapatkan dukungan"| E
     E --> F[Awal Abad ke-19: Pergeseran Paradigma]
 ```
 ## 2.2 Eksperimen Celah Ganda Cahaya Thomas Young (1801) dan Kemenangan Teori Gelombang
@@ -208,9 +208,9 @@ Gambar di bawah ini adalah representasi skematik dari keseluruhan tata letak per
 ```mermaid
 graph LR
     subgraph Chamber ["Di Dalam Ruang Hampa Udara Tinggi (High Vacuum Chamber)"]
-    A["Pistol Elektron<br>Electron Gun"] -->| Sinar Elektron atau<br>Elektron Tunggal | B("Papan Pelindung Celah Ganda<br>Double Slit Barrier")
-    B -->| Celah A | C["Ruang"]
-    B -->| Celah B | C
+    A["Pistol Elektron<br>Electron Gun"] -->|"Sinar Elektron atau<br>Elektron Tunggal"| B("Papan Pelindung Celah Ganda<br>Double Slit Barrier")
+    B -->|"Celah A"| C["Ruang"]
+    B -->|"Celah B"| C
     C --> D["Layar / Detektor Sensitivitas Tinggi<br>Detector Screen"]
     end
 
@@ -435,4 +435,5 @@ Melalui artikel ini, kita telah melihat secara rinci bagaimana sebuah eksperimen
 Kita kini berdiri di depan gerbang babak kedua dari revolusi kuantum. Sejauh apa pun ilmu pengetahuan dan teknologi berkembang, misteri mendalam mengenai "gelombang probabilitas" dan "penetapan akibat pengamatan" yang membentang di balik dua celah tersebut, masih belum terpecahkan sepenuhnya. Bagaimana alam semesta bermula? Apa makna dari kesadaran dan pengamatan dalam ilmu fisika? Bagaimana mekanika kuantum mikroskopis dan teori relativitas umum makroskopis disatukan? (Penelitian tentang teori gravitasi kuantum). Kunci untuk mengungkap misteri-misteri pamungkas ini, mungkin juga tersembunyi di dalam fenomena yang sederhana namun mendalam yang disebut sebagai eksperimen celah ganda.
 
 Di tengah kesibukan sehari-hari, saat Anda kebetulan melihat cahaya yang masuk melalui jendela, atau menatap kelap-kelip bintang di langit malam, cobalah untuk mengingatnya. Ingatlah bahwa foton-foton tak terhitung jumlahnya yang membentuk cahaya tersebut, adalah gelombang yang menyimpan kemungkinan tak terbatas untuk secara bersamaan melewati setiap jalur di alam semesta, tepat hingga saat di akhir perjalanan panjangnya ia mencapai "detektor" bernama pupil mata Anda. Realitas yang sedang kita saksikan ini, hanyalah sebagian kecil dari tarian abadi nan agung di mana alam semesta terus mengamati dan menetapkan dirinya sendiri. Apa yang disodorkan oleh eksperimen celah ganda kepada kita bukanlah teror atau kekosongan atas ketidakpastian dunia. Sebaliknya, ia adalah rasa takjub dan kekaguman yang luar biasa akan betapa misteriusnya alam semesta ini, betapa kaya ia hingga tak terbayangkan, dan betapa erat ia terhubung dengan eksistensi kita sendiri. Ini bisa dikatakan sebagai hadiah terbesar yang diberikan oleh eksperimen celah ganda kepada umat manusia.
+
 

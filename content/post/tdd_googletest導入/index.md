@@ -163,10 +163,10 @@ GoogleTestを使用する際、アサーションマクロとして `EXPECT_*` �
 
 ```mermaid
 flowchart LR
-    Test["Unit Test"] -->|injects mock| Target["Target Service"]
-    Target -->|depends on| Interface["Interface (IUserRepository)"]
-    Mock["MockUserRepository"] -.->|implements| Interface
-    Test -->|configures| Mock
+    Test["Unit Test"] -->|"injects mock"| Target["Target Service"]
+    Target -->|"depends on"| Interface["Interface (IUserRepository)"]
+    Mock["MockUserRepository"] -.->|"implements"| Interface
+    Test -->|"configures"| Mock
 ```
 
 ### 5.1 インターフェースの定義とターゲットクラスの実装
@@ -343,3 +343,4 @@ $$ M = E - N + 2P $$
 4. **gcov/lcov** によるテストカバレッジの可視化
 
 TDDは習得に時間がかかるアプローチではありますが、C++のようにパフォーマンスと安全性の両立が求められるシステムプログラミングにおいて、その投資対効果は計り知れません。ぜひ、次のプロジェクトから少しずつTDDを実践し、堅牢でメンテナンスしやすいC++コードを手に入れてください。
+

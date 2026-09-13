@@ -240,15 +240,15 @@ Wir bauen eine Architektur auf, die vom Moment des Mergens einer Markdown-Datei 
 ```mermaid
 flowchart TD
     A["Entwickler (Git Push)"] --> B["GitHub Repository"]
-    B -->|Webhook| C["GitHub Actions (CI/CD)"]
-    C -->|Build| D["Static Site Generator (Hugo/Gatsby)"]
-    D -->|Deploy| E["Hosting (Vercel / Cloudflare Pages)"]
-    D -->|Generate| F["RSS Feed (index.xml)"]
-    F -->|Polled by| G["Zapier / IFTTT / Make"]
-    G -->|API Call| H["X (Twitter) Automatischer Post"]
-    G -->|API Call| I["LinkedIn Artikel Post"]
-    G -->|API Call| J["Discord / Slack Community Webhook"]
-    C -->|Actions Script| K["Qiita / Zenn Cross-Post API"]
+    B -->|"Webhook"| C["GitHub Actions (CI/CD)"]
+    C -->|"Build"| D["Static Site Generator (Hugo/Gatsby)"]
+    D -->|"Deploy"| E["Hosting (Vercel / Cloudflare Pages)"]
+    D -->|"Generate"| F["RSS Feed (index.xml)"]
+    F -->|"Polled by"| G["Zapier / IFTTT / Make"]
+    G -->|"API Call"| H["X (Twitter) Automatischer Post"]
+    G -->|"API Call"| I["LinkedIn Artikel Post"]
+    G -->|"API Call"| J["Discord / Slack Community Webhook"]
+    C -->|"Actions Script"| K["Qiita / Zenn Cross-Post API"]
 ```
 
 ### 5.2 Wichtige Punkte beim Aufbau der Automatisierungspipeline
@@ -276,6 +276,7 @@ Um die monatlichen Zugriffe auf einem Tech-Blog drastisch zu steigern, ist zusä
 5. Vollständige Automatisierung der Distribution durch CI/CD und Zapier-Integration
 
 Wenn Sie dies als System aufbauen können, wird Ihr Tech-Blog zu Ihrem stärksten Kapital (Asset), das Ihre eigene Karriere massiv vorantreibt. Ingenieure, die unter stagnierenden Zugriffszahlen leiden, sollten noch heute mit dem "Growth Hacking für Blogs" beginnen. Die Programmierfähigkeiten und architektonischen Designfähigkeiten, die Sie in Ihrer Entwicklungsarbeit erworben haben, werden auch beim Betreiben eines Blogs Ihre stärkste Waffe sein.
+
 
 
 

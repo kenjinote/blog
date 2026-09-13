@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["外部環境 (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (ツールからの実行結果・エラーログ)"]
     Observation --> Thought
-    Thought -->|十分な情報が集まった| Finish["Finish (最終回答・コードの出力)"]
+    Thought -->|"十分な情報が集まった"| Finish["Finish (最終回答・コードの出力)"]
 ```
 
 ### 4.2 Function Calling (Tool Use) による実装
@@ -387,3 +387,4 @@ AIがコードを書く時代において、「プログラミングの終焉」
 
 ---
 *Generated using Prompt Engineering Techniques.*
+

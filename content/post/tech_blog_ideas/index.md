@@ -326,18 +326,18 @@ $$ R = e^{-\frac{t}{S}} $$
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Python抽出スクリプト| B["未加工のトレンドデータ"]
-    C["GitHub Actions (Cron)"] -->|定期実行スケジュール| A
-    B -->|Markdownフォーマット変換| D["Daily Inputs (Fleeting Notes)"]
-    D -->|読解と要約の手作業| E["Obsidian Zettelkasten"]
-    E -->|永久ノート化| F["Permanent Notes"]
-    F -->|自動同期処理| G["OpenAI Embeddings API"]
-    G -->|ベクトル変換| H["Pinecone Vector Database"]
-    H -->|セマンティック検索| I["関連知識の発見・抽出"]
-    F -->|フラッシュカード作成| J["Anki (Spaced Repetition)"]
-    J -->|長期記憶からのインスピレーション| K["Combinatorial Creativity"]
+    A["Hacker News / Lobsters API"] -->|"Python抽出スクリプト"| B["未加工のトレンドデータ"]
+    C["GitHub Actions (Cron)"] -->|"定期実行スケジュール"| A
+    B -->|"Markdownフォーマット変換"| D["Daily Inputs (Fleeting Notes)"]
+    D -->|"読解と要約の手作業"| E["Obsidian Zettelkasten"]
+    E -->|"永久ノート化"| F["Permanent Notes"]
+    F -->|"自動同期処理"| G["OpenAI Embeddings API"]
+    G -->|"ベクトル変換"| H["Pinecone Vector Database"]
+    H -->|"セマンティック検索"| I["関連知識の発見・抽出"]
+    F -->|"フラッシュカード作成"| J["Anki (Spaced Repetition)"]
+    J -->|"長期記憶からのインスピレーション"| K["Combinatorial Creativity"]
     I --> K
-    K -->|プロット・構成案の作成| L["Blog Post Draft (記事の執筆)"]
+    K -->|"プロット・構成案の作成"| L["Blog Post Draft (記事の執筆)"]
 ```
 
 このシステムの特徴は、**「手動で行うべき知的作業（要約、考察、執筆）」と「機械に任せるべき作業（収集、検索、間隔反復のスケジューリング）」が完全に分離されている**ことです。これにより、執筆者は最も付加価値の高い「考えること」と「組み合わせること」に専念できます。
@@ -382,5 +382,6 @@ stateDiagram-v2
 これらを組み合わせた包括的なパイプラインを構築することで、ブログのアイデアは枯渇するどころか、書けば書くほど新しいアイデアが自己増殖していく状態を作ることができます。
 
 最初からすべてを完璧に構築する必要はありません。まずはHacker NewsのAPIを叩く簡単なスクリプトを作り、気になる記事をマークダウンでメモする習慣から始めてみてください。あなたの技術ブログが、次世代の優れたアイデアの発信源となることを願っています。
+
 
 

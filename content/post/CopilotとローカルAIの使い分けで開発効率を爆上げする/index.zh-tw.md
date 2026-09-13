@@ -58,10 +58,10 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 
 ```mermaid
 graph TD
-    Dev["開發者 (IDE)"] -->| 即時輸入 | LocalProxy{"智慧路由器 / 代理"}
+    Dev["開發者 (IDE)"] -->|"即時輸入"| LocalProxy{"智慧路由器 / 代理"}
     
-    LocalProxy -->| 快速、隱私優先的任務 | LocalAI["本機 AI 引擎 (Ollama / LM Studio)"]
-    LocalProxy -->| 複雜邏輯、大型上下文 | CloudAI["雲端 AI 引擎 (Copilot / OpenAI API)"]
+    LocalProxy -->|"快速、隱私優先的任務"| LocalAI["本機 AI 引擎 (Ollama / LM Studio)"]
+    LocalProxy -->|"複雜邏輯、大型上下文"| CloudAI["雲端 AI 引擎 (Copilot / OpenAI API)"]
     
     subgraph "本機環境"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -94,17 +94,17 @@ graph TD
 ```mermaid
 graph TD
     Start["新的寫程式任務"] --> Q1{"程式碼是否高度機密？"}
-    Q1 -->|是| Action1["使用本機 AI (Llama 3 / CodeLlama)"]
-    Q1 -->|否| Q2{"是否為簡單的行內自動補齊？"}
+    Q1 -->|"是"| Action1["使用本機 AI (Llama 3 / CodeLlama)"]
+    Q1 -->|"否"| Q2{"是否為簡單的行內自動補齊？"}
     
-    Q2 -->|是| Q3{"網路連線是否穩定？"}
-    Q3 -->|是| Action2["使用 GitHub Copilot"]
-    Q3 -->|否| Action1
+    Q2 -->|"是"| Q3{"網路連線是否穩定？"}
+    Q3 -->|"是"| Action2["使用 GitHub Copilot"]
+    Q3 -->|"否"| Action1
     
-    Q2 -->|否| Q4{"是否需要複雜的架構邏輯或跨檔案重構？"}
+    Q2 -->|"否"| Q4{"是否需要複雜的架構邏輯或跨檔案重構？"}
     
-    Q4 -->|是| Action3["使用雲端 AI (GPT-4 / Claude 3.5 Sonnet)"]
-    Q4 -->|否| Action4["將中等任務交給本機 AI 以節省 API 成本"]
+    Q4 -->|"是"| Action3["使用雲端 AI (GPT-4 / Claude 3.5 Sonnet)"]
+    Q4 -->|"否"| Action4["將中等任務交給本機 AI 以節省 API 成本"]
 ```
 
 ### 3.1 評估指標 1：機密性（Privacy and Security）
@@ -244,4 +244,6 @@ ollama run codellama
 請務必參考本文介紹的決策樹與架構，將您的 IDE 環境提升到下一個境界。從「使用」AI 的一方，晉升為「適才適所地組合並驅使」AI 的一方，您的開發效率肯定會獲得大幅的提升。
 
 Happy Coding with Hybrid AI!
+
+
 

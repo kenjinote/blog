@@ -210,7 +210,7 @@ graph LR
     Action --> Environment["البيئة الخارجية (API / DB / Shell / Code Interpreter)"]
     Environment --> Observation["Observation (نتيجة التنفيذ من الأداة / سجل الأخطاء)"]
     Observation --> Thought
-    Thought -->|تم جمع معلومات كافية| Finish["Finish (المخرجات النهائية للإجابة أو الكود)"]
+    Thought -->|"تم جمع معلومات كافية"| Finish["Finish (المخرجات النهائية للإجابة أو الكود)"]
 ```
 
 ### 4.2 التنفيذ من خلال استدعاء الدوال (Function Calling)
@@ -387,3 +387,4 @@ def is_valid_ipv4(ip_str):
 
 ---
 *تم الإنشاء باستخدام تقنيات هندسة التلقين.*
+

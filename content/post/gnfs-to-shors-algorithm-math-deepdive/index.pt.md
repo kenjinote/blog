@@ -172,9 +172,9 @@ Para entender intuitivamente a diferença entre o GNFS e o Algoritmo de Shor, mo
 graph TD
     A[Estado inicial: 0...0] --> B[Sobreposição de todos os estados por Transformada de Hadamard]
     B --> C[Exponenciação modular a^x mod N]
-    C -->|Emaranhamento quântico| D[Colapso para um estado com periodicidade]
+    C -->|"Emaranhamento quântico"| D[Colapso para um estado com periodicidade]
     D --> E[Transformada de Fourier Quântica QFT]
-    E -->|Amplificação de probabilidade por interferência| F[Medição: obter y]
+    E -->|"Amplificação de probabilidade por interferência"| F[Medição: obter y]
     F --> G[Processamento clássico: expansão em frações contínuas]
     G --> H[Descoberta do período r]
     H --> I[Cálculo dos fatores primos de N]
@@ -197,3 +197,4 @@ Neste artigo, aprofundamo-nos nos contextos matemáticos e nas estruturas de alg
 Enquanto o GNFS usa técnicas matemáticas sofisticadas, como a escolha de polinômios e cálculos matemáticos com grandes matrizes, para reduzir o tempo computacional a um tempo subexponencial, o Algoritmo de Shor combina os princípios fundamentais da mecânica quântica, sobreposição e interferência, com ferramentas matemáticas (QFT) para produzir um avanço instantâneo ao tempo polinomial.
 
 No momento, não existe nenhum computador quântico tolerante a falhas (FTQC) capaz de executar o Algoritmo de Shor em escala prática (milhares de qubits). No entanto, a própria existência dessa mudança de paradigma matemático e teórico é a principal razão pela qual há atualmente uma rápida e urgente transição para a Criptografia Pós-Quântica (PQC: Post-Quantum Cryptography) no mundo todo.
+

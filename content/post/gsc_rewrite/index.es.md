@@ -258,7 +258,7 @@ flowchart TD
     F --> G["Optimizar Etiquetas H2/H3 y Reescribir Contenido"]
     G --> H["Publicar Artículo Actualizado"]
     H --> I["Monitorear Cambios en CTR (Esperado vs Real)"]
-    I --> |"Bucle de Retroalimentación"| A
+    I -->|"Bucle de Retroalimentación"| A
 ```
 
 De esta manera, mediante la sistematización de la serie de pasos desde la recopilación de datos de GSC y GA4, la selección de objetivos a través del análisis, la optimización de contenido mediante PNL y la supervisión de resultados, los medios de un blog se convierten en un activo que sigue creciendo automáticamente.
@@ -276,6 +276,8 @@ Se resumen a continuación los métodos explicados en este artículo:
 4. Mediante el **análisis PNL usando TF-IDF**, descubrir brechas de contenido con respecto a los competidores y optimizar los encabezados (H2/H3).
 
 Las tendencias tecnológicas cambian constantemente. Para responder con precisión a los errores y problemas que tienen los lectores en este momento, considere incorporar estrategias de reescritura basadas en datos en sus operaciones diarias.
+
+
 
 
 

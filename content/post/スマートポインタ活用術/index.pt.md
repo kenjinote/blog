@@ -76,11 +76,11 @@ O diagrama Mermaid a seguir mostra o conceito de transferência de propriedade u
 ```mermaid
 graph LR
     subgraph "Antes de std::move"
-        A["unique_ptr (ptr1)"] -->| Possui | B["Memória Heap (Objeto)"]
+        A["unique_ptr (ptr1)"] -->|"Possui"| B["Memória Heap (Objeto)"]
     end
     subgraph "Depois de std::move"
         C["unique_ptr (ptr1)"] -.->|"Vazio (nullptr)"| D["nullptr"]
-        E["unique_ptr (ptr2)"] -->| Possui | F["Memória Heap (Objeto)"]
+        E["unique_ptr (ptr2)"] -->|"Possui"| F["Memória Heap (Objeto)"]
     end
 ```
 
@@ -130,13 +130,13 @@ Diferente do ponteiro para o objeto sendo gerenciado, o `std::shared_ptr` aloca 
 
 ```mermaid
 graph TD
-    A["std::shared_ptr<T> (sp1)"] -->| Ponteiro para T | B["Objeto Gerenciado (T)"]
-    A -->| Ponteiro para Bloco de Controle | C["Bloco de Controle"]
+    A["std::shared_ptr<T> (sp1)"] -->|"Ponteiro para T"| B["Objeto Gerenciado (T)"]
+    A -->|"Ponteiro para Bloco de Controle"| C["Bloco de Controle"]
     
-    D["std::shared_ptr<T> (sp2)"] -->| Ponteiro para T | B
-    D -->| Ponteiro para Bloco de Controle | C
+    D["std::shared_ptr<T> (sp2)"] -->|"Ponteiro para T"| B
+    D -->|"Ponteiro para Bloco de Controle"| C
     
-    C -->| Deleta | B
+    C -->|"Deleta"| B
     C -.->|"Contagem Forte: 2"| E["Contagem Forte"]
     C -.->|"Contagem Fraca: 0"| F["Contagem Fraca"]
     C -.->|"Custom Deleter"| G["Deletador"]
@@ -176,8 +176,8 @@ A propriedade compartilhada possui uma fraqueza fatal chamada "Referências Circ
 ```mermaid
 graph TD
     subgraph "Referência Circular (Vazamento de Memória)"
-        A["Objeto A"] -->| shared_ptr (Forte=1) | B["Objeto B"]
-        B -->| shared_ptr (Forte=1) | A
+        A["Objeto A"] -->|"shared_ptr (Forte=1)"| B["Objeto B"]
+        B -->|"shared_ptr (Forte=1)"| A
     end
 ```
 
@@ -188,7 +188,7 @@ O `std::weak_ptr` resolve este problema. O `weak_ptr` é gerado a partir de um `
 ```mermaid
 graph TD
     subgraph "Quebrando a Referência Circular"
-        C["Objeto A"] -->| shared_ptr (Forte=1) | D["Objeto B"]
+        C["Objeto A"] -->|"shared_ptr (Forte=1)"| D["Objeto B"]
         D -.->|"weak_ptr (Fraca=1)"| C
     end
 ```
@@ -268,4 +268,6 @@ O gerenciamento de memória em Modern C++ não está mais na época de fazer a g
 3.  Faça bom uso do **`std::weak_ptr`** para a implementação do padrão de observador (Observer Pattern) e estruturas de dados que tendem a causar ciclos na propriedade (referências circulares), para, assim, prevenir vazamentos de memória antes que eles aconteçam.
 
 Através do profundo entendimento dos smart pointers e de suas corretas aplicações nos lugares adequados, torna-se possível erguer uma arquitetura de software segura e sólida sem abrir mão de nenhuma das partes da alta performance da linguagem C++.
+
+
 

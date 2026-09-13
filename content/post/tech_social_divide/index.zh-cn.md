@@ -146,17 +146,17 @@ graph TD
         Labeler["内容审核标签器 (事实核查员)"]
     end
 
-    Client -->|读取/写入| PDS1
-    Client -->|浏览| AppView
+    Client -->|"读取/写入"| PDS1
+    Client -->|"浏览"| AppView
     
-    PDS1 -->|通过 WebSocket 同步| Relay
-    PDS2 -->|通过 WebSocket 同步| Relay
+    PDS1 -->|"通过 WebSocket 同步"| Relay
+    PDS2 -->|"通过 WebSocket 同步"| Relay
     
-    Relay -->|索引| AppView
+    Relay -->|"索引"| AppView
     
-    AppView -.->|请求动态流| FeedGen1
-    AppView -.->|请求动态流| FeedGen2
-    AppView -.->|获取标签| Labeler
+    AppView -.->|"请求动态流"| FeedGen1
+    AppView -.->|"请求动态流"| FeedGen2
+    AppView -.->|"获取标签"| Labeler
 ```
 
 AT Protocol 最大的功绩在于，将“动态流生成（算法）”和“内容审核（打标签）”从平台主体中分离出来，让用户可以自由选择和组合（Composable）（即 Custom Feeds / Stackable Moderation）。
@@ -194,5 +194,6 @@ AT Protocol 最大的功绩在于，将“动态流生成（算法）”和“�
 从第101篇开始，作为一名技术人员，我将继续站在代码与社会的十字路口，不断深化我的思考。非常感谢大家能读到最后这篇长文。希望未来的网络不会成为将我们隔离的高墙，而是成为让我们相互理解的桥梁。
 
 （完）
+
 
 

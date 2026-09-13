@@ -45,13 +45,13 @@ Ahora, debes hacer tu elección.
 graph TD
     Omega["Predicción de Omega<br>(Completada ayer)"]
     
-    Omega -->|Predice que 'Tomarás ambas'| BoxB_Empty["La caja B está vacía (0 yenes)"]
-    Omega -->|Predice que 'Tomarás solo la B'| BoxB_100M["Pone 100 millones de yenes en la caja B"]
+    Omega -->|"Predice que 'Tomarás ambas'"| BoxB_Empty["La caja B está vacía (0 yenes)"]
+    Omega -->|"Predice que 'Tomarás solo la B'"| BoxB_100M["Pone 100 millones de yenes en la caja B"]
     
     You["Tu elección<br>(Hoy)"]
     
-    You -->|Elección 1: Tomar ambas| Result1["Caja A(100 mil) + Contenido de la Caja B"]
-    You -->|Elección 2: Tomar solo la caja B| Result2["Caja A(0) + Contenido de la Caja B"]
+    You -->|"Elección 1: Tomar ambas"| Result1["Caja A(100 mil) + Contenido de la Caja B"]
+    You -->|"Elección 2: Tomar solo la caja B"| Result2["Caja A(0) + Contenido de la Caja B"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2
@@ -134,3 +134,4 @@ Y lo fascinante es que ambos bandos creen genuinamente que "el otro bando es un 
 
 "¿Qué es una decisión racional?"
 No importa cuánto avancen la economía o las matemáticas, al final siempre llegamos a la filosofía de "cómo el ser humano percibe este mundo". La Paradoja de Newcomb es el experimento mental más malicioso y hermoso, que nos confronta con los límites de la lógica.
+

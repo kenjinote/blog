@@ -109,9 +109,9 @@ graph TD
 
 ```mermaid
 graph LR
-    A["프레임워크 및 드라이버"] -->| 의존 | B["인터페이스 어댑터"]
-    B -->| 의존 | C["유즈케이스"]
-    C -->| 의존 | D["엔티티"]
+    A["프레임워크 및 드라이버"] -->|"의존"| B["인터페이스 어댑터"]
+    B -->|"의존"| C["유즈케이스"]
+    C -->|"의존"| D["엔티티"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,4 +422,5 @@ test('기존 이메일 주소로 가입하려고 하면 에러가 발생한다',
 
 ---
 *Reference: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin*
+
 

@@ -71,13 +71,13 @@ Aquí es donde entra en juego el "Algoritmo de Shor", publicado por Peter Shor e
 graph TD
     A[Ingresar el número N a factorizar] --> B[Seleccionar un número entero aleatorio a]
     B --> C{Máximo común divisor<br>de a y N}
-    C -->|Mayor que 1| D[¡Afortunadamente encontramos un factor primo!]
-    C -->|1 Coprimos| E[Turno de la computadora cuántica]
+    C -->|"Mayor que 1"| D[¡Afortunadamente encontramos un factor primo!]
+    C -->|"1 Coprimos"| E[Turno de la computadora cuántica]
     E --> F[Encontrar el período r de la función<br>f_x = a^x mod N mediante<br>la transformada cuántica de Fourier]
     F --> G{¿Es el período r par y<br>a^r/2 ≢ -1 mod N?}
-    G -->|Sí| H[Calcular el máximo común divisor gcd_a^r/2 ± 1, N]
+    G -->|"Sí"| H[Calcular el máximo común divisor gcd_a^r/2 ± 1, N]
     H --> I((¡Factorización exitosa!))
-    G -->|No| B
+    G -->|"No"| B
 ```
 
 El algoritmo de Shor no resuelve directamente el problema de la factorización, sino que utiliza teoremas de la teoría de números para convertirlo en otro problema llamado "Problema de hallazgo de períodos" (Period Finding Problem), y aborda resolverlo rápidamente aprovechando las características de las computadoras cuánticas.
@@ -201,3 +201,4 @@ Ya se han iniciado las pruebas de implementación y las implementaciones híbrid
 Las computadoras cuánticas están pasando de ser el sueño del mundo de la ciencia ficción a un desafío de ingeniería en la realidad. El algoritmo de Shor es un gran logro intelectual de la humanidad que fusiona las matemáticas y la mecánica cuántica, pero al mismo tiempo tiene un "poder destructivo" oculto que puede sacudir los cimientos de nuestra sociedad digital.
 
 El cifrado RSA no quedará inutilizable inmediatamente mañana. Sin embargo, considerando la evolución de la tecnología cuántica y el riesgo de "Store Now, Decrypt Later", la migración masiva en la historia de la criptografía, que es la transición a PQC, ya ha comenzado. Ahora mismo somos testigos de la primera línea de un cambio de paradigma en la seguridad de la información.
+

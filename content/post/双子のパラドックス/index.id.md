@@ -34,8 +34,8 @@ graph TD
     A["Saudara kembar (20 tahun)"] --> B["Adik yang tinggal di Bumi"]
     A --> C["Kakak yang bepergian di luar angkasa dengan 80% kecepatan cahaya"]
     
-    B -->|Waktu di Bumi berlalu 30 tahun| D["Adik saat bertemu kembali: 50 tahun"]
-    C -->|Waktu melambat karena efek Urashima, hanya berlalu 18 tahun| E["Kakak saat bertemu kembali: 38 tahun"]
+    B -->|"Waktu di Bumi berlalu 30 tahun"| D["Adik saat bertemu kembali: 50 tahun"]
+    C -->|"Waktu melambat karena efek Urashima, hanya berlalu 18 tahun"| E["Kakak saat bertemu kembali: 38 tahun"]
     
     D --> F{"Selisih usia: 12 tahun!"}
     E --> F
@@ -87,3 +87,4 @@ Tepat pada momen saat sang kakak berputar balik dan mempercepat kembali menuju B
 Sebagai hasilnya, saat mereka bertemu kembali, yang tersisa hanyalah kenyataan sesuai perhitungan: **"kakak 38 tahun, adik 50 tahun,"** dan kontradiksinya terselesaikan dengan rapi.
 
 Paradoks Kembar adalah salah satu eksperimen pikiran terindah dalam sejarah fisika, yang mengajarkan kita bahwa pemahaman umum kita tentang "waktu mengalir sama bagi semua orang" sama sekali tidak berlaku di hadapan luasnya alam semesta dan kecepatan cahaya.
+

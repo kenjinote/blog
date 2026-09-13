@@ -36,11 +36,11 @@ graph TD
     VSCode -- Permintaan penyelesaian / Lompat ke definisi --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. "Analisis AST (Abstract Syntax Tree)" .-> CompilerC
-    RustAnalyzer -. "Ekspansi makro / Inferensi tipe" .-> CompilerR
+    Clangd -. Analisis AST (Abstract Syntax Tree) .-> CompilerC
+    RustAnalyzer -. Ekspansi makro / Inferensi tipe .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
-    Debugger -. "ptrace / Dump memori" .-> Executable["Biner yang dikompilasi"]
+    Debugger -. ptrace / Dump memori .-> Executable["Biner yang dikompilasi"]
 ```
 
 Inti dari VSCode itu sendiri tidak memahami metaprogramming template dari C++ atau specifier lifetime (waktu hidup) yang kompleks dari Rust. Peran editor hanya terfokus pada menampilkan kode sumber dan menerima input dari pengguna, sementara proses dengan biaya komputasi yang tinggi seperti analisis semantik (Semantic Analysis), inferensi tipe (Type Inference), dan pemeriksaan error, didelegasikan kepada "server bahasa" yang berjalan di latar belakang melalui JSON-RPC.
@@ -388,4 +388,5 @@ Dengan menerapkan 10 ekstensi dan pengaturannya yang disebutkan dalam artikel in
 Menyesuaikan pengaturan awal barangkali akan memakan sedikit waktu, namun begitu selesai dibangun, pengalaman coding Anda selanjutnya akan menjadi luar biasa nyaman dan produktif. Silakan coba bangun lingkungan pengembangan terkuat Anda sendiri dengan mengacu pada penjelasan arsitektur dan pengaturan spesifik (`settings.json`, `tasks.json`, dan `launch.json`) dalam artikel ini.
 
 Selamat menjalani kehidupan pemrograman sistem yang nyaman dan aman!
+
 

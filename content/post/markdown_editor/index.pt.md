@@ -233,14 +233,14 @@ Além disso, criaremos um pipeline de CI usando o GitHub Actions, para que o tex
 
 ```mermaid
 flowchart TD
-    A["Autor"] -->|Push de alterações| B["Repositório do GitHub"]
+    A["Autor"] -->|"Push de alterações"| B["Repositório do GitHub"]
     B --> C{"GitHub Actions Acionado"}
     C --> D["Checkout do Repositório"]
     D --> E["Configuração do Node.js"]
     E --> F["npm install"]
     F --> G["Executar textlint"]
-    G -->|Passou| H["Construir Site Hugo"]
-    G -->|Falhou| I["Relatar Erro no PR/Commit"]
+    G -->|"Passou"| H["Construir Site Hugo"]
+    G -->|"Falhou"| I["Relatar Erro no PR/Commit"]
     H --> J["Implantar em Hospedagem (Vercel/Netlify)"]
 ```
 
@@ -269,6 +269,7 @@ Explicamos sobre as configurações de editor que dobram a velocidade de escrita
 5. **Integração de LLMs**: Fazer a IA gerar a estrutura do Markdown e o código de diagramas diretamente dentro do editor.
 
 Ao incorporar essas configurações no seu próprio ambiente, o "tédio" de escrever deve desaparecer, e a quantidade e qualidade da sua produção técnica melhorarão drasticamente. Que tal começar registrando apenas um pequeno snippet?
+
 
 
 

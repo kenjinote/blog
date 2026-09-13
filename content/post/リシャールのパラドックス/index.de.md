@@ -71,10 +71,10 @@ graph TD
         X["X = 0.4128..."]
     end
     
-    R1 -->|1. Ziffer +1| X
-    R2 -->|2. Ziffer +1| X
-    R3 -->|3. Ziffer +1| X
-    R4 -->|4. Ziffer +1| X
+    R1 -->|"1. Ziffer +1"| X
+    R2 -->|"2. Ziffer +1"| X
+    R3 -->|"3. Ziffer +1"| X
+    R4 -->|"4. Ziffer +1"| X
     
     style X fill:#aaffaa,stroke:#333,stroke-width:2px
 ```
@@ -130,3 +130,4 @@ Das Ergebnis war der berühmte **"Gödelsche Unvollständigkeitssatz"**.
 Es war eine großartige Entdeckung, die die Grenzen des menschlichen Wissens bewies: "Egal wie streng man mathematische Regeln aufstellt, es wird innerhalb dieser Regeln immer eine 'Wahrheit geben, die weder bewiesen noch widerlegt werden kann' (die Mathematik ist unvollständig)".
 
 Das Richard-Paradoxon begann als bloßes widersprüchliches Wortspiel und entwickelte sich schließlich zur stärksten Waffe, um die "Absolutheit" der Mathematik als Wissenschaft zu erschüttern.
+

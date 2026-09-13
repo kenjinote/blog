@@ -75,13 +75,13 @@ graph TD
     Start["选择开始"] --> Logic_You["你的理性思考"]
     Start --> Logic_Friend["朋友的理性思考"]
     
-    Logic_You -->|如果对方沉默，招供有利<br>如果对方招供，也是招供有利| Betray_You["你选择招供(背叛)"]
-    Logic_Friend -->|如果对方沉默，招供有利<br>如果对方招供，也是招供有利| Betray_Friend["朋友选择招供(背叛)"]
+    Logic_You -->|"如果对方沉默，招供有利<br>如果对方招供，也是招供有利"| Betray_You["你选择招供(背叛)"]
+    Logic_Friend -->|"如果对方沉默，招供有利<br>如果对方招供，也是招供有利"| Betray_Friend["朋友选择招供(背叛)"]
     
     Betray_You --> Result["结果：双方招供 (-5, -5)"]
     Betray_Friend --> Result
     
-    Ideal["理想：双方沉默 (-1, -1)"] -.->|个人理性作祟<br>无法达到| Result
+    Ideal["理想：双方沉默 (-1, -1)"] -.->|"个人理性作祟<br>无法达到"| Result
     
     style Result fill:#ff9999,stroke:#333,stroke-width:2px
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
@@ -134,11 +134,11 @@ graph TD
 graph LR
     Start["第1次：无条件合作"] --> Round2
     
-    Round2["观察对方行动"] -->|对方合作了| Act_Coop["自己也合作"]
-    Round2 -->|对方背叛了| Act_Betray["自己也背叛 (报复)"]
+    Round2["观察对方行动"] -->|"对方合作了"| Act_Coop["自己也合作"]
+    Round2 -->|"对方背叛了"| Act_Betray["自己也背叛 (报复)"]
     
     Act_Coop --> Round2
-    Act_Betray -->|对方反省并<br>恢复合作的话| Act_Coop
+    Act_Betray -->|"对方反省并<br>恢复合作的话"| Act_Coop
 ```
 
 在人际关系和国际社会中也是如此，只要以长期关系为前提，通过共享像“一报还一报策略”那样**“基本以合作为主，但对背叛给予惩罚”**的规则，就能克服囚徒困境，建立起合作关系。
@@ -151,3 +151,4 @@ graph LR
 但同时，博弈论也告诉我们，只要具备“关系长期持续”这一条件，**“互相信任与合作”才是最终能使自身利益最大化的最合理的策略**。
 
 当你下次犹豫“要不要就自己稍微耍点小聪明”时，不妨回想一下这个囚徒困境的收益矩阵。因为追求眼前利益的“理性背叛”，从长远来看也许是最不理性的选择。
+

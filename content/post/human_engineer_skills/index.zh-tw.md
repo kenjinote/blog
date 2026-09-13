@@ -141,8 +141,8 @@ AI 雖然能寫出「優先考慮 C 的程式碼」或「優先考慮 A 的程�
 flowchart LR
     Client["客戶端"] --> API["API Gateway"]
     API --> Order["訂單服務（上下文）"]
-    Order -. "非同步事件（Kafka）" .-> Inventory["庫存服務"]
-    Order -. "非同步事件（Kafka）" .-> Payment["支付服務"]
+    Order -. 非同步事件（Kafka） .-> Inventory["庫存服務"]
+    Order -. 非同步事件（Kafka） .-> Payment["支付服務"]
     
     Inventory --> DB1["庫存 DB"]
     Payment --> DB2["支付 DB"]
@@ -207,6 +207,7 @@ pie title 工程師的時間分配（AI 時代）
 
 真正的工程師，不是寫程式碼的人，而是解決問題的人。
 領域建模、具可擴展性的架構設計、與利害關係人的溝通，以及複雜系統的除錯。對於持續磨練這些「人類專屬工程師技能」的人來說，AI 絕對不會是奪走工作的敵人，而是能將自身創造力與生產力擴展數十倍的最強夥伴。
+
 
 
 

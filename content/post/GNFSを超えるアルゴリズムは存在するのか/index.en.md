@@ -149,8 +149,8 @@ Considering recent optimized circuit implementations, it is said that it can be 
 
 ```mermaid
 graph LR
-  A["Classical Algorithm (GNFS)"] -->|Limit| B["Sub-exponential Time L_n[1/3]"]
-  C["Quantum Algorithm (Shor)"] -->|Breakthrough| D["Polynomial Time O((log n)^3)"]
+  A["Classical Algorithm (GNFS)"] -->|"Limit"| B["Sub-exponential Time L_n[1/3]"]
+  C["Quantum Algorithm (Shor)"] -->|"Breakthrough"| D["Polynomial Time O((log n)^3)"]
   B --> E["Continued use of RSA (Increase key length)"]
   D --> F["Complete collapse of RSA cryptography"]
 ```
@@ -176,4 +176,5 @@ The current scientific consensus on the question "Are there classical algorithms
 3. **The true threat is quantum algorithms**: What crossed the barrier of computational complexity was Shor's algorithm, based on the principles of quantum mechanics. As a result, the world is forced to transition to Post-Quantum Cryptography (PQC). The transition to new mathematical problems that are considered difficult to solve even for quantum computers (cannot be solved in polynomial time), such as lattice-based cryptography and hash-based cryptography, is currently at the forefront of cryptography.
 
 The General Number Field Sieve (GNFS) is one of the "highest peaks" humanity has reached by challenging the limits of classical mathematics and algorithm design. Understanding the profound mathematical structure of GNFS is not merely learning the history of cryptanalysis, but also an intellectual journey of exploration that touches upon the beauty of computational complexity theory and algebraic number theory. Until the day quantum computers are put into practical use, GNFS will likely continue to defend its throne as the strongest integer factorization algorithm.
+
 

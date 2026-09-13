@@ -35,16 +35,16 @@ La cagnotte de départ est de 2 dollars.
 graph TD
     Start["Début du jeu"] --> Toss1{"1er lancer de pièce"}
     
-    Toss1 -->|Pile (1/2)| End1["Fin : Gain de 2 dollars"]
-    Toss1 -->|Face (1/2)| Toss2{"2e lancer de pièce"}
+    Toss1 -->|"Pile (1/2)"| End1["Fin : Gain de 2 dollars"]
+    Toss1 -->|"Face (1/2)"| Toss2{"2e lancer de pièce"}
     
-    Toss2 -->|Pile (1/2)| End2["Fin : Gain de 4 dollars"]
-    Toss2 -->|Face (1/2)| Toss3{"3e lancer de pièce"}
+    Toss2 -->|"Pile (1/2)"| End2["Fin : Gain de 4 dollars"]
+    Toss2 -->|"Face (1/2)"| Toss3{"3e lancer de pièce"}
     
-    Toss3 -->|Pile (1/2)| End3["Fin : Gain de 8 dollars"]
-    Toss3 -->|Face (1/2)| Toss4{"..."}
+    Toss3 -->|"Pile (1/2)"| End3["Fin : Gain de 8 dollars"]
+    Toss3 -->|"Face (1/2)"| Toss4{"..."}
     
-    Toss4 -.->|Tant que c'est Face| Infinite["Les gains doublent à l'infini !"]
+    Toss4 -.->|"Tant que c'est Face"| Infinite["Les gains doublent à l'infini !"]
 ```
 
 Maintenant, voici une question pour vous.
@@ -148,3 +148,4 @@ Le concept d'"Utilité" proposé par Daniel Bernoulli est devenu, 200 ans plus t
 Nos comportements, tels que souscrire une assurance ou diversifier nos investissements, peuvent tous être expliqués par ce mécanisme psychologique d'"utilité marginale décroissante" (la souffrance d'une grosse perte est bien plus grande que la joie d'un gros gain).
 
 Un simple problème de calcul sur un jeu de hasard a ainsi permis de déchiffrer l'esprit humain et de donner naissance à cette vaste discipline qu'est l'économie.
+

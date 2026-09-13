@@ -146,17 +146,17 @@ graph TD
         Labeler["Étiqueteur de modération (Vérificateurs de faits)"]
     end
 
-    Client -->|Lit/Écrit| PDS1
-    Client -->|Visionne| AppView
+    Client -->|"Lit/Écrit"| PDS1
+    Client -->|"Visionne"| AppView
     
-    PDS1 -->|Synchronise via WebSocket| Relay
-    PDS2 -->|Synchronise via WebSocket| Relay
+    PDS1 -->|"Synchronise via WebSocket"| Relay
+    PDS2 -->|"Synchronise via WebSocket"| Relay
     
-    Relay -->|Indexe| AppView
+    Relay -->|"Indexe"| AppView
     
-    AppView -.->|Demande de flux| FeedGen1
-    AppView -.->|Demande de flux| FeedGen2
-    AppView -.->|Obtient des étiquettes| Labeler
+    AppView -.->|"Demande de flux"| FeedGen1
+    AppView -.->|"Demande de flux"| FeedGen2
+    AppView -.->|"Obtient des étiquettes"| Labeler
 ```
 
 La plus grande réussite de l'AT Protocol est d'avoir séparé "la génération de flux (algorithme)" et "la modération (étiquetage)" de la plateforme elle-même, rendant possible pour les utilisateurs de choisir et de combiner (Composable) librement ce qu'ils souhaitent (Custom Feeds / Stackable Moderation).
@@ -194,5 +194,6 @@ La technologie n'est pas magique. Elle est le miroir de l'humanité. Si la soci�
 À partir de la 101e publication, en tant qu'ingénieur, je souhaite continuer à me tenir au carrefour du code et de la société, et à approfondir mes réflexions. Merci infiniment de m'avoir accompagné jusqu'à la fin de ce long texte. En espérant que les réseaux de demain ne soient pas des murs qui nous divisent, mais des ponts pour nous comprendre mutuellement.
 
 (Fin)
+
 
 

@@ -326,18 +326,18 @@ The overall architecture "from information gathering to idea creation" explained
 
 ```mermaid
 flowchart TD
-    A["Hacker News / Lobsters API"] -->|Python Extraction Script| B["Raw Trend Data"]
-    C["GitHub Actions (Cron)"] -->|Periodic Execution Schedule| A
-    B -->|Markdown Format Conversion| D["Daily Inputs (Fleeting Notes)"]
-    D -->|Manual Reading and Summarization| E["Obsidian Zettelkasten"]
-    E -->|Make into Permanent Notes| F["Permanent Notes"]
-    F -->|Automated Sync Process| G["OpenAI Embeddings API"]
-    G -->|Vector Conversion| H["Pinecone Vector Database"]
-    H -->|Semantic Search| I["Discovery and Extraction of Related Knowledge"]
-    F -->|Flashcard Creation| J["Anki (Spaced Repetition)"]
-    J -->|Inspiration from Long-term Memory| K["Combinatorial Creativity"]
+    A["Hacker News / Lobsters API"] -->|"Python Extraction Script"| B["Raw Trend Data"]
+    C["GitHub Actions (Cron)"] -->|"Periodic Execution Schedule"| A
+    B -->|"Markdown Format Conversion"| D["Daily Inputs (Fleeting Notes)"]
+    D -->|"Manual Reading and Summarization"| E["Obsidian Zettelkasten"]
+    E -->|"Make into Permanent Notes"| F["Permanent Notes"]
+    F -->|"Automated Sync Process"| G["OpenAI Embeddings API"]
+    G -->|"Vector Conversion"| H["Pinecone Vector Database"]
+    H -->|"Semantic Search"| I["Discovery and Extraction of Related Knowledge"]
+    F -->|"Flashcard Creation"| J["Anki (Spaced Repetition)"]
+    J -->|"Inspiration from Long-term Memory"| K["Combinatorial Creativity"]
     I --> K
-    K -->|Create Plot and Outline Proposals| L["Blog Post Draft (Writing the Article)"]
+    K -->|"Create Plot and Outline Proposals"| L["Blog Post Draft (Writing the Article)"]
 ```
 
 The feature of this system is that **"intellectual tasks to be done manually (summarization, consideration, writing)" and "tasks to be delegated to machines (collection, search, spaced repetition scheduling)" are completely separated**. This allows the writer to focus on the highest value-added activities of "thinking" and "combining".
@@ -382,5 +382,6 @@ As introduced in this article:
 By building a comprehensive pipeline combining these, you can create a state where your blog ideas do not dry up, but rather, the more you write, the more new ideas self-multiply.
 
 You don't need to build everything perfectly from the start. First, try starting with the habit of making a simple script to hit the Hacker News API and taking Markdown notes on articles that interest you. I hope your tech blog becomes a source of excellent next-generation ideas.
+
 
 

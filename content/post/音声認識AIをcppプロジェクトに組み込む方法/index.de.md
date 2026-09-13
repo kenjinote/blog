@@ -72,9 +72,9 @@ Lassen Sie uns eine Audioverarbeitungs-Pipeline in einer C++-Anwendung entwerfen
 
 ```mermaid
 graph TD
-    A["Audioquelle (Mikrofon/Datei)"] -->|Rohbytes, z.B. 48kHz Stereo| B["Audio-Decoder & Resampler (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-Bit-Float| C["Ringpuffer / Speicherarray"]
-    C -->|PCM-Daten einspeisen| D["whisper.cpp Kern (ggml)"]
+    A["Audioquelle (Mikrofon/Datei)"] -->|"Rohbytes, z.B. 48kHz Stereo"| B["Audio-Decoder & Resampler (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-Bit-Float"| C["Ringpuffer / Speicherarray"]
+    C -->|"PCM-Daten einspeisen"| D["whisper.cpp Kern (ggml)"]
     D --> E["Mel-Spektrogramm-Extraktion"]
     E --> F["Transformer Encoder-Decoder"]
     F --> G["Text-Token-Generierung"]
@@ -223,14 +223,14 @@ Um dies zu implementieren, sind eine Multithreading-Architektur und die Verwaltu
 ```mermaid
 graph LR
     subgraph "Audio-Thread (Hohe Priorität)"
-        A["Audio-Capture-API (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["Resampler (auf 16kHz)"]
+        A["Audio-Capture-API (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["Resampler (auf 16kHz)"]
         B --> C["Ringpuffer"]
     end
     
     subgraph "Haupt- / Worker-Thread"
-        C -->|30ms-1000ms Chunk entnehmen| D["Sprachaktivitätserkennung (VAD)"]
-        D -->|Wenn Sprache erkannt| E["PCM-Puffer ansammeln"]
-        E -->|Inferenz auslösen| F["whisper_full()"]
+        C -->|"30ms-1000ms Chunk entnehmen"| D["Sprachaktivitätserkennung (VAD)"]
+        D -->|"Wenn Sprache erkannt"| E["PCM-Puffer ansammeln"]
+        E -->|"Inferenz auslösen"| F["whisper_full()"]
         F --> G["UI/Text aktualisieren"]
     end
 ```
@@ -298,4 +298,5 @@ In diesem Artikel haben wir ausführlich, von der Theorie über die Praxis bis h
 * **Überwältigende Optimierung**: Vorteile der 4-Bit-Quantisierung durch `ggml` und Hardware-Backends wie Metal/cuBLAS.
 
 Bitte machen Sie sich `whisper.cpp` zunutze, um Spracherkennungsanwendungen zu entwickeln, die nativ, schnell und sicher laufen, frei von der Abhängigkeit von riesigen Python-Umgebungen und Cloud-APIs. Eine lokal abgeschlossene KI wird aus Gründen des Datenschutzes und der Latenzzeit eine äußerst wichtige Schlüsseltechnologie in der zukünftigen Softwareentwicklung sein.
+
 

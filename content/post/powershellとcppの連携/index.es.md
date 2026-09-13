@@ -260,13 +260,13 @@ Una arquitectura preferida en sistemas empresariales es aquella donde la parte C
 
 ```mermaid
 flowchart TD
-    A["Servicio Agente C++"] -->|RegQueryValueEx| B["Registro de Windows"]
-    B -->|Devolver ruta del script| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|Ejecutar| D["Script de administración (ej. Restart-Service)"]
-    D -->|stdout vía Pipe| C
-    C -->|ReadFile| A
-    A -->|Registrar| E["Visor de eventos / Archivo de registro"]
+    A["Servicio Agente C++"] -->|"RegQueryValueEx"| B["Registro de Windows"]
+    B -->|"Devolver ruta del script"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"Ejecutar"| D["Script de administración (ej. Restart-Service)"]
+    D -->|"stdout vía Pipe"| C
+    C -->|"ReadFile"| A
+    A -->|"Registrar"| E["Visor de eventos / Archivo de registro"]
 ```
 
 ## Ventajas del análisis de rendimiento y descarga de procesamiento
@@ -316,3 +316,4 @@ Aunque es necesario prestar atención a la gestión de memoria y la conversión 
 ---
 
 *En este blog técnico, continuaremos cubriendo temas profundos sobre la estructura interna de Windows y la automatización avanzada en el futuro. Si tiene alguna pregunta o comentario, déjenos un mensaje en la sección de comentarios.*
+

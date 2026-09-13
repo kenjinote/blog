@@ -255,8 +255,8 @@ graph TD
     Start["初始化: R0 = O, R1 = P"] --> LoopStart["對於每個位元 i (從最高位起)"]
     LoopStart --> Cond{"k_i 的值是？"}
     
-    Cond -->|0| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
-    Cond -->|1| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
+    Cond -->|"0"| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
+    Cond -->|"1"| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
     
     Branch0 --> LoopEnd["前往下一個位元"]
     Branch1 --> LoopEnd
@@ -445,4 +445,6 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 一般極不建議自行編寫應用於正式生產環境的密碼學函式庫（"Don't roll your own crypto"），因為這伴隨著極高的安全風險。然而，對於設計和維護高安全性、高效能系統的工程師來說，深入了解其內部運作的演算法及數學背景，無疑是一項極其寶貴且強大的武器。
 
 在下一篇文章中，我們將進一步探討利用這條橢圓曲線所建立的數位簽章演算法——**ECDSA (Elliptic Curve Digital Signature Algorithm)** 的機制，以及比特幣所採用的 **Schnorr 簽章**。
+
+
 

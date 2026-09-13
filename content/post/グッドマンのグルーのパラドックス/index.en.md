@@ -49,7 +49,7 @@ If we follow the rules of induction, past observations support Hypothesis B with
 
 ```mermaid
 graph TD
-    A["Past observation: All emeralds were green"] -->|Simultaneously| B["Past observation: All emeralds were 'grue'"]
+    A["Past observation: All emeralds were green"] -->|"Simultaneously"| B["Past observation: All emeralds were 'grue'"]
     
     A --> C["Inductive prediction A: Future emeralds will also be 'green'"]
     B --> D["Inductive prediction B: Future emeralds will also be 'grue'"]
@@ -81,3 +81,4 @@ In other words, which words we take as "fundamental" is merely a habit of our la
 Goodman's "Grue" paradox (the new riddle of induction) proved that scientific theories are not determined merely by objective data alone, but depend heavily on "what conceptual framework (language) we use to carve up the world".
 
 Even in the context of AI and machine learning, this paradox continues to hold significant meaning today as the problem of "overfitting" and "bias", where even with the same training data, predictions for the future can completely change depending on the "structure of the model (which features it focuses on)".
+

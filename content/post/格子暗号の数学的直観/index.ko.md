@@ -134,8 +134,8 @@ $$ \mathbf{b} = A \mathbf{s} + \mathbf{e} \pmod q $$
 
 ```mermaid
 graph TD
-    A["최악의 경우 격자 문제 (Gap-SVP, SIVP)"] -->|양자/고전적 환원| B["평균적인 경우 LWE 문제"]
-    B -->|암호학적 구성| C["LWE 기반 암호 시스템 (PKE, KEM, FHE)"]
+    A["최악의 경우 격자 문제 (Gap-SVP, SIVP)"] -->|"양자/고전적 환원"| B["평균적인 경우 LWE 문제"]
+    B -->|"암호학적 구성"| C["LWE 기반 암호 시스템 (PKE, KEM, FHE)"]
     
     style A fill:#ffcccc,stroke:#ff0000,stroke-width:2px,color:#000
     style B fill:#ccffcc,stroke:#00aa00,stroke-width:2px,color:#000
@@ -326,3 +326,4 @@ Module-LWE에서는 다항식을 요소로 하는 작은 행렬과 벡터를 생
 4. 실제 프로토콜에서는 통신 효율과 계산 속도를 높이기 위해 다항식 환을 사용한 **Ring-LWE**나 **Module-LWE**가 채택되고 있으며, NIST 표준인 **ML-KEM**의 기반이 되고 있습니다.
 
 양자 컴퓨터라는 전대미문의 계산 패러다임 시프트가 다가오는 가운데, 고전적인 선형대수와 정수론의 심연에서 탄생한 '격자 암호'가 미래 인터넷 보안의 기반을 담당한다는 것은 매우 낭만적인 이야기입니다. 격자 암호의 기초가 되는 수학은 결코 너무 난해한 것이 아니며, 선형대수와 확률에 대한 기초 지식이 있다면 충분히 그 아름다운 구조를 이해할 수 있습니다. 본 기사가 PQC의 핵심이 되는 격자 암호에 대한 이해에 도움이 되기를 바랍니다.
+

@@ -36,11 +36,11 @@ graph TD
     VSCode -- 자동 완성 요청・정의로 이동 --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. "AST(추상 구문 트리) 분석" .-> CompilerC
-    RustAnalyzer -. "매크로 전개・타입 추론" .-> CompilerR
+    Clangd -. AST(추상 구문 트리) 분석 .-> CompilerC
+    RustAnalyzer -. 매크로 전개・타입 추론 .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
-    Debugger -. "ptrace / 메모리 덤프" .-> Executable["컴파일된 바이너리"]
+    Debugger -. ptrace / 메모리 덤프 .-> Executable["컴파일된 바이너리"]
 ```
 
 VSCode 본체가 C++의 템플릿 메타 프로그래밍이나 Rust의 복잡한 라이프타임 지정자를 이해하고 있는 것은 아닙니다. 에디터의 역할은 소스 코드 표시와 사용자 입력 접수에 전념하며, 코드의 의미 분석(Semantic Analysis), 타입 추론(Type Inference), 에러 체크와 같이 계산 비용이 높은 처리는 백그라운드에서 동작하는 '언어 서버'에 JSON-RPC를 통해 위임됩니다.
@@ -388,4 +388,5 @@ C++와 Rust는 모두 '하드웨어의 한계 성능을 이끌어내는' 것을 
 초기 설정 파일 커스터마이징에는 다소 시간이 걸릴지 모르지만, 한번 구축하고 나면 그 이후의 코딩 경험은 놀라울 정도로 쾌적하고 생산적이게 됩니다. 모쪼록 본 문서의 아키텍처 해설이나 구체적인 설정(`settings.json`, `tasks.json`, `launch.json`)을 참고하여 자신만의 최강의 개발 환경을 구축해 보시기 바랍니다.
 
 쾌적하고 안전한 시스템 프로그래밍 라이프를 즐기시길!
+
 

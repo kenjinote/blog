@@ -46,7 +46,7 @@ graph TD
     I --> J["ID du jeton suivant"]
     J --> K["Détokeniseur"]
     K --> L["Morceau de texte de sortie"]
-    J -.-> |"Ajouter au contexte"| C
+    J -.->|"Ajouter au contexte"| C
 ```
 
 Puisqu'il s'agit d'un modèle autorégressif, le jeton produit est à nouveau ajouté au contexte et circule en tant qu'entrée pour la prédiction du jeton suivant (la partie en pointillé du diagramme).
@@ -241,3 +241,5 @@ cmake --build . --config Release
 ## 10. Conclusion
 
 Implémenter à partir de zéro un moteur d'inférence pour un petit modèle d'IA comme TinyLLaMA en utilisant C++ et ggml est une excellente occasion de révéler la boîte noire de l'apprentissage profond et d'apprendre la beauté du contrôle matériel de bas niveau. Tout en profitant pleinement de l'essence de la programmation système, telle que le chargement zéro copie à l'aide du mappage mémoire, l'optimisation SIMD et la construction du cache KV, ouvrons la voie à l'avenir de l'IA périphérique (Edge AI).
+
+

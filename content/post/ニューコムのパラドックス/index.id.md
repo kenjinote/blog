@@ -45,13 +45,13 @@ Nah, sekarang Anda harus membuat pilihan.
 graph TD
     Omega["Prediksi Omega<br>(Sudah selesai kemarin)"]
     
-    Omega -->|Memprediksi "Ambil keduanya"| BoxB_Empty["Kotak B kosong (0 Yen)"]
-    Omega -->|Memprediksi "Hanya ambil Kotak B"| BoxB_100M["Memasukkan 100 juta Yen ke Kotak B"]
+    Omega -->|"Memprediksi "Ambil keduanya""| BoxB_Empty["Kotak B kosong (0 Yen)"]
+    Omega -->|"Memprediksi "Hanya ambil Kotak B""| BoxB_100M["Memasukkan 100 juta Yen ke Kotak B"]
     
     You["Pilihan Anda<br>(Hari ini)"]
     
-    You -->|Pilihan 1: Ambil keduanya| Result1["Kotak A(100 ribu) + Isi Kotak B"]
-    You -->|Pilihan 2: Hanya ambil Kotak B| Result2["Kotak A(0 Yen) + Isi Kotak B"]
+    You -->|"Pilihan 1: Ambil keduanya"| Result1["Kotak A(100 ribu) + Isi Kotak B"]
+    You -->|"Pilihan 2: Hanya ambil Kotak B"| Result2["Kotak A(0 Yen) + Isi Kotak B"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2
@@ -134,3 +134,4 @@ Dan yang menariknya, kedua kubu benar-benar percaya bahwa "Logika pihak lain sep
 
 "Apa itu penilaian rasional?"
 Tidak peduli seberapa jauh ekonomi dan matematika berkembang, pada akhirnya akan bermuara pada filsafat tentang "Bagaimana manusia memandang dunia ini". Paradoks Newcomb adalah eksperimen pemikiran yang paling kejam sekaligus indah, yang menghadapkan kita pada batas-batas logika.
+

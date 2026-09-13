@@ -72,9 +72,9 @@ Let's design the audio processing pipeline in a C++ application. The flow starts
 
 ```mermaid
 graph TD
-    A["Audio Source (Microphone/File)"] -->|Raw Bytes, e.g. 48kHz Stereo| B["Audio Decoder & Resampler (FFmpeg/miniaudio)"]
-    B -->|16kHz Mono 32-bit Float| C["Ring Buffer / Memory Array"]
-    C -->|Feed PCM Data| D["whisper.cpp Core (ggml)"]
+    A["Audio Source (Microphone/File)"] -->|"Raw Bytes, e.g. 48kHz Stereo"| B["Audio Decoder & Resampler (FFmpeg/miniaudio)"]
+    B -->|"16kHz Mono 32-bit Float"| C["Ring Buffer / Memory Array"]
+    C -->|"Feed PCM Data"| D["whisper.cpp Core (ggml)"]
     D --> E["Mel Spectrogram Extraction"]
     E --> F["Transformer Encoder-Decoder"]
     F --> G["Text Tokens Generation"]
@@ -203,14 +203,14 @@ To implement this, a multi-threaded architecture and managing the audio stream u
 ```mermaid
 graph LR
     subgraph "Audio Thread (High Priority)"
-        A["Audio Capture API (CoreAudio/WASAPI/ALSA)"] -->|Callback| B["Resampler (to 16kHz)"]
+        A["Audio Capture API (CoreAudio/WASAPI/ALSA)"] -->|"Callback"| B["Resampler (to 16kHz)"]
         B --> C["Ring Buffer"]
     end
     
     subgraph "Main / Worker Thread"
-        C -->|Pop 30ms-1000ms chunk| D["Voice Activity Detection (VAD)"]
-        D -->|If speech detected| E["Accumulate PCM Buffer"]
-        E -->|Trigger Inference| F["whisper_full()"]
+        C -->|"Pop 30ms-1000ms chunk"| D["Voice Activity Detection (VAD)"]
+        D -->|"If speech detected"| E["Accumulate PCM Buffer"]
+        E -->|"Trigger Inference"| F["whisper_full()"]
         F --> G["Update UI/Text"]
     end
 ```
@@ -278,4 +278,5 @@ In this article, we thoroughly explained how to leverage `whisper.cpp` to integr
 * **Overwhelming optimization**: The benefits of 4-bit quantization via `ggml` and hardware backends like Metal/cuBLAS.
 
 Break free from dependencies on massive Python environments or cloud APIs, and please make use of `whisper.cpp` to develop audio processing applications that run fast and securely in native environments. Local-only AI will become an extremely crucial core technology in future software development from the perspectives of privacy protection and latency.
+
 

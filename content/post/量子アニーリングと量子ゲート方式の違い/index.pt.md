@@ -61,8 +61,8 @@ Em outras palavras, quando no final tivermos $A(t) \to 0$ e $B(t) \to 1$, o sist
 
 ```mermaid
 graph TD
-    A["Hamiltoniano H_0 (Estado Inicial)"] -->| Mudança Adiabática (Suficientemente lenta) | B["Mantém o estado fundamental o tempo todo"]
-    A -->| Mudança não adiabática (Muito rápida/Ruído térmico) | C["Transição para estados excitados (Erro)"]
+    A["Hamiltoniano H_0 (Estado Inicial)"] -->|"Mudança Adiabática (Suficientemente lenta)"| B["Mantém o estado fundamental o tempo todo"]
+    A -->|"Mudança não adiabática (Muito rápida/Ruído térmico)"| C["Transição para estados excitados (Erro)"]
     B --> D["Hamiltoniano H_P (Solução ótima global)"]
     C --> E["Preso em um ótimo local"]
     D --> F["Leitura da solução"]
@@ -219,4 +219,5 @@ Os computadores quânticos ainda são uma tecnologia em desenvolvimento, mas est
 
 ---
 *Este artigo é uma explicação abrangente dos conceitos básicos da computação quântica até as tendências mais recentes de hardware. Fique atento às futuras tendências de pesquisa.*
+
 

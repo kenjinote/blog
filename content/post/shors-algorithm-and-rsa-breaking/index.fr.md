@@ -55,13 +55,13 @@ C'est ici qu'intervient l'"Algorithme de Shor", présenté par Peter Shor en 199
 graph TD
     A[Entrez le nombre N à factoriser] --> B[Sélectionnez un entier aléatoire a]
     B --> C{Le PGCD<br>de a et N}
-    C -->|Supérieur à 1| D[Par chance, un facteur premier est trouvé !]
-    C -->|1 Premiers entre eux| E[C'est au tour de l'ordinateur quantique]
+    C -->|"Supérieur à 1"| D[Par chance, un facteur premier est trouvé !]
+    C -->|"1 Premiers entre eux"| E[C'est au tour de l'ordinateur quantique]
     E --> F[Trouver la période r de la fonction f_x = a^x mod N<br>par transformée de Fourier quantique]
     F --> G{La période r est paire ET<br>a^r/2 ≢ -1 mod N}
-    G -->|Oui| H[Calculer le PGCD gcd_a^r/2 ± 1, N]
+    G -->|"Oui"| H[Calculer le PGCD gcd_a^r/2 ± 1, N]
     H --> I((Factorisation réussie !))
-    G -->|Non| B
+    G -->|"Non"| B
 ```
 
 L'algorithme de Shor ne résout pas directement le problème de la factorisation, mais utilise des théorèmes de la théorie des nombres pour le convertir en un autre problème appelé "problème de recherche de période" (Period Finding Problem), puis utilise les caractéristiques des ordinateurs quantiques pour le résoudre rapidement.
@@ -184,3 +184,4 @@ Les principaux logiciels et plateformes tels que Google Chrome et Apple iMessage
 L'ordinateur quantique est passé d'un conte de fées de science-fiction à un véritable défi d'ingénierie. L'algorithme de Shor est une grande réalisation intellectuelle de l'humanité combinant les mathématiques et la mécanique quantique, mais en même temps, il cache un "pouvoir destructeur" qui ébranle les fondements de notre société numérique.
 
 Le cryptage RSA ne deviendra pas inutilisable dès demain. Cependant, compte tenu de l'évolution de la technologie quantique et du risque du "Store Now, Decrypt Later", une migration massive vers la PQC, qui restera dans l'histoire de la cryptographie, a déjà commencé. Nous sommes actuellement témoins d'un changement de paradigme en matière de sécurité de l'information.
+

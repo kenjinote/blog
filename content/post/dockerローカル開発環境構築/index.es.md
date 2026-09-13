@@ -139,17 +139,17 @@ El siguiente diagrama de bloques ilustra la relación entre cada contenedor, red
 
 ```mermaid
 graph TD
-    User["Máquina Anfitriona (Navegador/curl)"] -->|Localhost:8000| Web["Contenedor Web FastAPI"]
+    User["Máquina Anfitriona (Navegador/curl)"] -->|"Localhost:8000"| Web["Contenedor Web FastAPI"]
     
     subgraph "Red Bridge de Docker (app-network)"
-        Web -->|Puerto 5432| DB["Contenedor PostgreSQL"]
-        Web -->|Puerto 6379| Redis["Contenedor Redis"]
+        Web -->|"Puerto 5432"| DB["Contenedor PostgreSQL"]
+        Web -->|"Puerto 6379"| Redis["Contenedor Redis"]
     end
     
     DB --> Volume1["Volumen Nombrado (postgres_data)"]
     Redis --> Volume2["Volumen Nombrado (redis_data)"]
     
-    HostDir["Código Fuente del Anfitrión (./src)"] -.->|Montaje de Enlace| Web
+    HostDir["Código Fuente del Anfitrión (./src)"] -.->|"Montaje de Enlace"| Web
 ```
 
 ### Implementación y explicación detallada de docker-compose.yml
@@ -416,3 +416,4 @@ Al combinar Docker, Docker Compose y VSCode DevContainers, se logra un entorno d
 Llevar el paradigma de IaC a entornos locales no solo reduce el tiempo de configuración inicial. También elimina la ansiedad en torno a los cambios de configuración de infraestructura, facilita la experimentación con nuevas pilas tecnológicas y permite una transición fluida a las canalizaciones CI/CD, mejorando drásticamente la velocidad y la calidad de todo el ciclo de desarrollo.
 
 Aprovechando las mejores prácticas explicadas en este artículo —como la optimización del tamaño de imagen con construcciones en múltiples etapas, el control de dependencias usando health checks y la redacción de un Dockerfile consciente de la caché de capas— lo animamos encarecidamente a introducir la mejor experiencia de desarrollo (DX: Developer Experience) en sus propios proyectos.
+

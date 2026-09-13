@@ -93,8 +93,8 @@ graph TD
         Total["Total cumulé : Victoire écrasante de l'hôpital A (90% > 41%)"]
     end
     
-    Light -->|Étonnamment, en combinant, cela s'inverse| Total
-    Heavy -->|Étonnamment, en combinant, cela s'inverse| Total
+    Light -->|"Étonnamment, en combinant, cela s'inverse"| Total
+    Heavy -->|"Étonnamment, en combinant, cela s'inverse"| Total
     
     style Total fill:#ff9999,stroke:#333,stroke-width:2px
 ```
@@ -150,3 +150,4 @@ Le monde regorge d'entreprises, de politiciens et de médias qui ne retiennent q
 Même si l'on vous dit : "Notre produit A a une satisfaction globale supérieure au produit concurrent B !", si l'on sépare les données entre les "jeunes" et les "personnes âgées", il est fort possible que le produit B soit gagnant dans les deux catégories.
 
 Lorsque vous regardez des données, la meilleure arme pour survivre dans la société de l'information d'aujourd'hui est de ne pas se laisser tromper par les chiffres "globaux" en surface, et de toujours garder un esprit critique : "N'y a-t-il pas un déséquilibre extrême dans la proportion des groupes à cause de variables cachées en arrière-plan (âge, sexe, gravité, etc.) ?".
+

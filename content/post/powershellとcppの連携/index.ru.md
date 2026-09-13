@@ -260,13 +260,13 @@ int main() {
 
 ```mermaid
 flowchart TD
-    A["Служба агента на C++"] -->|RegQueryValueEx| B["Реестр Windows"]
-    B -->|Return Script Path| A
-    A -->|CreateProcess| C["powershell.exe"]
-    C -->|Execute| D["Скрипт администратора (например, Restart-Service)"]
-    D -->|stdout via Pipe| C
-    C -->|ReadFile| A
-    A -->|Log| E["Просмотр событий / Файл журнала"]
+    A["Служба агента на C++"] -->|"RegQueryValueEx"| B["Реестр Windows"]
+    B -->|"Return Script Path"| A
+    A -->|"CreateProcess"| C["powershell.exe"]
+    C -->|"Execute"| D["Скрипт администратора (например, Restart-Service)"]
+    D -->|"stdout via Pipe"| C
+    C -->|"ReadFile"| A
+    A -->|"Log"| E["Просмотр событий / Файл журнала"]
 ```
 
 ## Анализ производительности и преимущества оффлоадинга
@@ -316,3 +316,4 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 ---
 
 *В этом техническом блоге мы продолжим освещать глубокие темы, касающиеся внутренних структур Windows и расширенной автоматизации. Если у вас есть вопросы или отзывы, пожалуйста, оставляйте их в комментариях.*
+

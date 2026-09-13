@@ -191,19 +191,19 @@ graph TD
     E2["Krankenhaus-Server (Edge 2)"]
     E3["Smart Car (Edge 3)"]
     
-    C -->| 1. Globales Modell senden | E1
-    C -->| 1. Globales Modell senden | E2
-    C -->| 1. Globales Modell senden | E3
+    C -->|"1. Globales Modell senden"| E1
+    C -->|"1. Globales Modell senden"| E2
+    C -->|"1. Globales Modell senden"| E3
     
-    E1 -->| 2. Lokales Training mit privaten Daten | E1
-    E2 -->| 2. Lokales Training mit privaten Daten | E2
-    E3 -->| 2. Lokales Training mit privaten Daten | E3
+    E1 -->|"2. Lokales Training mit privaten Daten"| E1
+    E2 -->|"2. Lokales Training mit privaten Daten"| E2
+    E3 -->|"2. Lokales Training mit privaten Daten"| E3
     
-    E1 -->| 3. Nur Gewichtsaktualisierungen senden | C
-    E2 -->| 3. Nur Gewichtsaktualisierungen senden | C
-    E3 -->| 3. Nur Gewichtsaktualisierungen senden | C
+    E1 -->|"3. Nur Gewichtsaktualisierungen senden"| C
+    E2 -->|"3. Nur Gewichtsaktualisierungen senden"| C
+    E3 -->|"3. Nur Gewichtsaktualisierungen senden"| C
     
-    C -->| 4. Gewichte aggregieren (FedAvg) | C
+    C -->|"4. Gewichte aggregieren (FedAvg)"| C
 ```
 
 **Prozess des Federated Learning**:
@@ -264,5 +264,6 @@ An vorderster Front des IoT, wo physische und digitale Welten verschmelzen, wird
 
 ---
 *Dieser Artikel wurde für Ingenieure und Systemarchitekten geschrieben, die sich für die KI-Implementierung in IoT-Geräten interessieren.*
+
 
 

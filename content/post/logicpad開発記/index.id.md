@@ -219,16 +219,16 @@ Proses penyerahan ke Microsoft Store diselenggarakan lewat rute portal "Partner 
 
 ```mermaid
 flowchart TD
-    A["Pengembang (Visual Studio)"] -->|Build & Sign| B["Pembuatan Bundle MSIX"]
+    A["Pengembang (Visual Studio)"] -->|"Build & Sign"| B["Pembuatan Bundle MSIX"]
     B --> C["Windows App Certification Kit (WACK)"]
-    C -->|Lulus| D["Dasbor Partner Center"]
-    C -->|Gagal| E["Perbaiki Masalah Kode / Manifest"]
+    C -->|"Lulus"| D["Dasbor Partner Center"]
+    C -->|"Gagal"| E["Perbaiki Masalah Kode / Manifest"]
     E --> A
-    D -->|Unggah Paket| F["Proses Sertifikasi Store"]
+    D -->|"Unggah Paket"| F["Proses Sertifikasi Store"]
     F --> G["Pemindaian Malware Otomatis"]
     G --> H["Peninjauan Konten Manual"]
-    H -->|Disetujui| I["Penerbitan ke Microsoft Store"]
-    H -->|Ditolak| J["Atasi Umpan Balik & Kirim Ulang"]
+    H -->|"Disetujui"| I["Penerbitan ke Microsoft Store"]
+    H -->|"Ditolak"| J["Atasi Umpan Balik & Kirim Ulang"]
     J --> D
     I --> K["Aplikasi Dirilis!"]
 ```
@@ -303,4 +303,5 @@ Justru di era ketika teknologi web kian canggih di mana "apa pun bisa dibangun d
 WinUI 3 dan Windows App SDK saat ini sedang dikembangkan secara aktif dan masih merupakan alat terhebat guna membangun sebuah aplikasi native desktop Windows yang mempesona, secara maksimal memanfaatkan paradigma antarmuka Windows 11. Besar sekali harapan dan impian saya bahwa artikel blog teknis ini nantinya mampu menjadi panduan bagi para pengembang yang ingin menantang diri dalam pengembangan aplikasi Windows native, supaya ke depannya akan kian lahir melimpah ruah ragam variasi perangkat hebat di Store.
 
 Pengembangan belumlah selesai. Di versi LogicPad selanjutnya, saya merencanakan untuk menggabungkan fungsi mesin perenderan bentuk gelombang kustom yang memanfaatkan fitur Direct2D. Pada artikel sekuel selanjutnya, saya akan membahas sisi interoperabilitas integrasi perpaduan antara DirectX dan utilitas WinUI 3 (penggunaan SwapChainPanel). Harap nantikan.
+
 

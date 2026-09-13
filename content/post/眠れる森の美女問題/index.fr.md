@@ -36,8 +36,8 @@ Après votre endormissement, l'expérimentateur lance **une pièce de monnaie é
 graph TD
     Sunday["Dimanche : La Belle s'endort"] --> Toss{"Tirage au sort"}
     
-    Toss -->|Pile (1/2)| Mon_Heads["Lundi : Réveil + Question<br>（Puis fin de l'expérience）"]
-    Toss -->|Face (1/2)| Mon_Tails["Lundi : Réveil + Question<br>（Puis effacement de la mémoire）"]
+    Toss -->|"Pile (1/2)"| Mon_Heads["Lundi : Réveil + Question<br>（Puis fin de l'expérience）"]
+    Toss -->|"Face (1/2)"| Mon_Tails["Lundi : Réveil + Question<br>（Puis effacement de la mémoire）"]
     
     Mon_Tails --> Tue_Tails["Mardi : Réveil + Question<br>（Puis fin de l'expérience）"]
     
@@ -125,3 +125,4 @@ Si vous deveniez le sujet de cette expérience, répondriez-vous "1/2" ou "1/3" 
 
 Quelle que soit votre réponse, des mathématiciens de renommée mondiale se tiendront derrière vous pour vous défendre.
 Comment une définition mathématique apparemment simple peut-elle s'effondrer dès qu'elle est liée aux concepts épineux de "subjectivité" et d'"existence" humaine. Aujourd'hui encore, le paradoxe continue d'ébranler notre bon sens.
+

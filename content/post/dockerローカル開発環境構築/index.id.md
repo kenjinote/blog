@@ -139,17 +139,17 @@ Diagram blok di bawah ini mengilustrasikan hubungan antara masing-masing kontain
 
 ```mermaid
 graph TD
-    User["Mesin Host (Browser/curl)"] -->|Localhost:8000| Web["Kontainer Web FastAPI"]
+    User["Mesin Host (Browser/curl)"] -->|"Localhost:8000"| Web["Kontainer Web FastAPI"]
     
     subgraph "Jaringan Docker Bridge (app-network)"
-        Web -->|Port 5432| DB["Kontainer PostgreSQL"]
-        Web -->|Port 6379| Redis["Kontainer Redis"]
+        Web -->|"Port 5432"| DB["Kontainer PostgreSQL"]
+        Web -->|"Port 6379"| Redis["Kontainer Redis"]
     end
     
     DB --> Volume1["Volume Bernama (postgres_data)"]
     Redis --> Volume2["Volume Bernama (redis_data)"]
     
-    HostDir["Kode Sumber Host (./src)"] -.->|Bind Mount| Web
+    HostDir["Kode Sumber Host (./src)"] -.->|"Bind Mount"| Web
 ```
 
 ### Implementasi dan Penjelasan Mendalam tentang docker-compose.yml
@@ -416,3 +416,4 @@ Pemaduan Docker, Docker Compose, serta VSCode DevContainers berhasil menciptakan
 Hadirnya pendekatan IaC (Infrastructure as Code) di ekosistem pengembangan tidak melulu demi mempersingkat langkah-langkah pengaturan pada tahap pertama. Konsep ini justru berfungsi sebagai tameng yang menghapus kecemasan terhadap resiko yang menyertai tiap perubahan setup, membuat eksplorasi teknologi baru bertambah gampang, memfasilitasi peralihan secara mulus ke proses CI/CD, dan secara menakjubkan mendongkrak laju sekaligus standar siklus proyek.
 
 Praktikkan segala panduan mengenai penyederhanaan kapasitas citra dengan build multi-tahap, pengelolaan status via healthcheck, ataupun pemanfaatan cache di Dockerfile yang semuanya sudah terjabarkan di dalam esai ini. Cobalah secepatnya untuk menciptakan pengalaman pengembangan (DX: Developer Experience) bermutu tinggi bagi karya-karyamu.
+

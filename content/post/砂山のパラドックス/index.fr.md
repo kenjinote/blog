@@ -36,11 +36,11 @@ Prises individuellement, les prémisses 1 et 2 semblent parfaitement raisonnable
 
 ```mermaid
 graph LR
-    A["10 000 grains = tas"] -->|Retrait d'1 grain| B["9 999 grains = tas"]
-    B -->|Retrait d'1 grain| C["9 998 grains = tas"]
-    C -->|...répétition...| D["100 grains = tas ?"]
-    D -->|Retrait d'1 grain| E["10 grains = tas ?"]
-    E -->|Retrait d'1 grain| F["1 grain = tas ?"]
+    A["10 000 grains = tas"] -->|"Retrait d'1 grain"| B["9 999 grains = tas"]
+    B -->|"Retrait d'1 grain"| C["9 998 grains = tas"]
+    C -->|"...répétition..."| D["100 grains = tas ?"]
+    D -->|"Retrait d'1 grain"| E["10 grains = tas ?"]
+    E -->|"Retrait d'1 grain"| F["1 grain = tas ?"]
     
     style A fill:#4CAF50,color:#fff
     style D fill:#FF9800,color:#fff
@@ -95,3 +95,4 @@ Le paradoxe du tas de sable n'est pas un simple jeu de mots : il soulève des pr
 - **Les réglementations environnementales** : si les émissions de polluants dépassent la valeur limite de 0,001 mg, c'est illégal. Si elles sont exactement à la limite, c'est légal.
 
 Le langage et la pensée humaine comportent une part intrinsèque d'ambiguïté, et tenter de découper le monde en dichotomies nettes est peut-être en soi une entreprise vouée à l'échec. Le paradoxe du tas de sable est un paradoxe qui, depuis plus de 2 400 ans, continue de tourmenter les philosophes et met en lumière les limites fondamentales de l'intelligence humaine.
+

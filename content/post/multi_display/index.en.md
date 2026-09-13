@@ -164,12 +164,12 @@ The Mermaid flowchart below shows the ideal signal routing structure from a PC/M
 
 ```mermaid
 flowchart TD
-    A["PC / Mac System"] -->|Thunderbolt 4 Cable 40Gbps| B["Thunderbolt 4 Dock"]
-    B -->|DisplayPort 1.4| C["Primary Monitor (4K 60Hz)"]
-    B -->|Thunderbolt Downstream| D["Secondary Monitor (4K 60Hz)"]
-    B -->|USB 3.2 10Gbps| E["High-Speed Storage / Peripherals"]
+    A["PC / Mac System"] -->|"Thunderbolt 4 Cable 40Gbps"| B["Thunderbolt 4 Dock"]
+    B -->|"DisplayPort 1.4"| C["Primary Monitor (4K 60Hz)"]
+    B -->|"Thunderbolt Downstream"| D["Secondary Monitor (4K 60Hz)"]
+    B -->|"USB 3.2 10Gbps"| E["High-Speed Storage / Peripherals"]
     
-    C -.->|Windows Only MST| F["Tertiary Monitor (1080p)"]
+    C -.->|"Windows Only MST"| F["Tertiary Monitor (1080p)"]
     
     classDef highlight stroke:#f90,stroke-width:2px;
     class B highlight;
@@ -220,16 +220,16 @@ There is no single correct answer for everyone when building a multi-display env
 flowchart TD
     Start["Start Building Development Environment"] --> Q1{"What is the main OS?"}
     
-    Q1 -->|macOS| Mac["macOS Environment"]
-    Q1 -->|Windows/Linux| Win["Windows / Linux Environment"]
+    Q1 -->|"macOS"| Mac["macOS Environment"]
+    Q1 -->|"Windows/Linux"| Win["Windows / Linux Environment"]
     
     Mac --> Q2{"Is there enough budget and GPU performance?"}
-    Q2 -->|Yes| M_5K["5K 27-inch Monitor × 2 (Best Quality)"]
-    Q2 -->|No| M_4K["4K 24-inch Monitor × 2 or Ultrawide"]
+    Q2 -->|"Yes"| M_5K["5K 27-inch Monitor × 2 (Best Quality)"]
+    Q2 -->|"No"| M_4K["4K 24-inch Monitor × 2 or Ultrawide"]
     
     Win --> Q3{"Do screen divisions (bezels) bother you?"}
-    Q3 -->|Yes| W_UW["49-inch Ultrawide Monitor + FancyZones"]
-    Q3 -->|No| W_Dual["4K 27-inch × 2 (Best Value)"]
+    Q3 -->|"Yes"| W_UW["49-inch Ultrawide Monitor + FancyZones"]
+    Q3 -->|"No"| W_Dual["4K 27-inch × 2 (Best Value)"]
     
     M_5K --> End["Install Ergonomic Arms to Complete"]
     M_4K --> End
@@ -238,6 +238,7 @@ flowchart TD
 ```
 
 A display is an infrastructure that will support your productivity for many years once purchased. Please integrate the principles of visual ergonomics, the math of PPI, the limits of bandwidth, and software-based window management explained in this article to build the ultimate uncompromising workspace. That should, as a result, become the shortest route to producing your best code.
+
 
 
 

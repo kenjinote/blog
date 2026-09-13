@@ -42,9 +42,9 @@ En el caso de los interruptores táctiles (Brown) o clicleantes (Blue), debido a
 ```mermaid
 flowchart TD
     A["Inicio de presión con el dedo"] --> B{"Tipo de interruptor"}
-    B -->|Lineal| C["La resistencia aumenta linealmente"]
-    B -->|Táctil| D["Resistencia física en el medio (bump)"]
-    B -->|Clicky| E["Mecanismo de sonido se activa junto con el bump"]
+    B -->|"Lineal"| C["La resistencia aumenta linealmente"]
+    B -->|"Táctil"| D["Resistencia física en el medio (bump)"]
+    B -->|"Clicky"| E["Mecanismo de sonido se activa junto con el bump"]
     C --> F["Alcanza el punto de actuación (Actuation Point)"]
     D --> F
     E --> F
@@ -78,13 +78,13 @@ Dentro de un teclado, existen desde decenas hasta más de 100 interruptores, per
 
 ```mermaid
 flowchart LR
-    M["Microcontrolador (MCU)"] -->|Cambia la salida Row a High/Low| R1["Row 1"]
+    M["Microcontrolador (MCU)"] -->|"Cambia la salida Row a High/Low"| R1["Row 1"]
     M --> R2["Row 2"]
     R1 --> S11["Interruptor 1,1"] & S12["Interruptor 1,2"]
     R2 --> S21["Interruptor 2,1"] & S22["Interruptor 2,2"]
     S11 & S21 --> C1["Column 1"]
     S12 & S22 --> C2["Column 2"]
-    C1 & C2 -->|Detecta el voltaje y lo lee| M
+    C1 & C2 -->|"Detecta el voltaje y lo lee"| M
 ```
 
 **Polling Rate (Tasa de sondeo)** es la frecuencia con la que el teclado informa a la PC "el estado actual de las teclas". Un teclado estándar es de 125Hz (una vez cada 8ms), pero los modelos de alta gama realizan comunicaciones ultrarrápidas de 1000Hz (una vez cada 1ms), y recientemente hay modelos que llegan a 8000Hz (una vez cada 0.125ms).
@@ -201,6 +201,7 @@ Elegir un teclado es un proceso de "optimización de tu propia interfaz" a lo la
 Los cinco teclados presentados en esta ocasión (Keychron, HHKB Studio, Moonlander, REALFORCE, Wooting) son todos obras maestras que apuntan a "la mejor experiencia de entrada" desde diferentes enfoques. Por favor, encuentra a tu mejor compañero de acuerdo con tu propio estilo de escritura y los problemas físicos que enfrentes.
 
 La inversión en un teclado sin duda te traerá recompensas en forma de "millones de líneas de código sin errores".
+
 
 
 

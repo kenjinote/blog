@@ -45,13 +45,13 @@ Nun musst du von jetzt an deine Wahl treffen.
 graph TD
     Omega["Omegas Vorhersage<br>(Gestern bereits abgeschlossen)"]
     
-    Omega -->|Sagt voraus: "Nimmt beide"| BoxB_Empty["Box B ist leer (0 Yen)"]
-    Omega -->|Sagt voraus: "Nimmt nur Box B"| BoxB_100M["Box B enthält 100 Millionen Yen"]
+    Omega -->|"Sagt voraus: "Nimmt beide""| BoxB_Empty["Box B ist leer (0 Yen)"]
+    Omega -->|"Sagt voraus: "Nimmt nur Box B""| BoxB_100M["Box B enthält 100 Millionen Yen"]
     
     You["Deine Wahl<br>(Heute)"]
     
-    You -->|Wahl 1: Beide nehmen| Result1["Box A (100.000) + Inhalt von Box B"]
-    You -->|Wahl 2: Nur Box B nehmen| Result2["Box A (0) + Inhalt von Box B"]
+    You -->|"Wahl 1: Beide nehmen"| Result1["Box A (100.000) + Inhalt von Box B"]
+    You -->|"Wahl 2: Nur Box B nehmen"| Result2["Box A (0) + Inhalt von Box B"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2
@@ -134,3 +134,4 @@ Und das Interessante daran ist, dass beide Lager ernsthaft glauben: "Die Logik d
 
 "Was ist eine rationale Entscheidung?"
 Egal wie weit sich Wirtschaftswissenschaften und Mathematik entwickeln, am Ende landet man immer bei der Philosophie: "Wie der Mensch diese Welt wahrnimmt". Newcombs Paradoxon ist ein höchst bösartiges und wunderschönes Gedankenexperiment, das uns die Grenzen der Logik aufzeigt.
+

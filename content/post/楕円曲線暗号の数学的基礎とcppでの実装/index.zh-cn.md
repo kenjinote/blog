@@ -255,8 +255,8 @@ graph TD
     Start["初始化: R0 = O, R1 = P"] --> LoopStart["对于每个位 i (从最高位开始)"]
     LoopStart --> Cond{"k_i 的值是？"}
     
-    Cond -->|0| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
-    Cond -->|1| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
+    Cond -->|"0"| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
+    Cond -->|"1"| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
     
     Branch0 --> LoopEnd["进入下一位"]
     Branch1 --> LoopEnd
@@ -445,4 +445,6 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 实际上，因为极高的安全风险，业界不建议（"Don't roll your own crypto"）自行编写用于生产环境的密码学库。然而，深入理解其内部运行的算法和数学背景，对于设计和运维更安全、高性能系统的工程师来说，必定是一件不可或缺的强大武器。
 
 在下一篇文章中，我们将进一步深入探讨使用这种椭圆曲线的数字签名算法——**ECDSA（Elliptic Curve Digital Signature Algorithm）** 的机制，以及比特币中所采用的 **Schnorr 签名**。
+
+
 

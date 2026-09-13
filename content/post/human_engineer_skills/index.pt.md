@@ -141,8 +141,8 @@ Em que momento introduzir padrões de arquitetura avançados como o padrão Saga
 flowchart LR
     Client["Cliente"] --> API["API Gateway"]
     API --> Order["Serviço de Pedidos (Contexto)"]
-    Order -. "Evento Assíncrono (Kafka)" .-> Inventory["Serviço de Estoque"]
-    Order -. "Evento Assíncrono (Kafka)" .-> Payment["Serviço de Pagamento"]
+    Order -. Evento Assíncrono (Kafka) .-> Inventory["Serviço de Estoque"]
+    Order -. Evento Assíncrono (Kafka) .-> Payment["Serviço de Pagamento"]
     
     Inventory --> DB1["DB de Estoque"]
     Payment --> DB2["DB de Pagamento"]
@@ -207,6 +207,7 @@ O engenheiro do futuro não se preocupará excessivamente com especificações m
 
 O verdadeiro engenheiro não é a pessoa que escreve o código, mas a pessoa que resolve o problema.
 Modelagem de domínio, desenho de arquiteturas escaláveis, comunicação com as partes envolvidas e depuração de sistemas complexos. Para os que continuarem aperfeiçoando essas "habilidades de engenheiro exclusivas dos humanos", a IA nunca será um inimigo que roubará seus empregos, mas o parceiro supremo capaz de multiplicar sua criatividade e produtividade em dezenas de vezes.
+
 
 
 

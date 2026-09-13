@@ -139,17 +139,17 @@ Le diagramme suivant illustre la relation entre les conteneurs, le réseau, et l
 
 ```mermaid
 graph TD
-    User["Machine Hôte (Navigateur/curl)"] -->|Localhost:8000| Web["Conteneur Web FastAPI"]
+    User["Machine Hôte (Navigateur/curl)"] -->|"Localhost:8000"| Web["Conteneur Web FastAPI"]
     
     subgraph "Réseau Bridge Docker (app-network)"
-        Web -->|Port 5432| DB["Conteneur PostgreSQL"]
-        Web -->|Port 6379| Redis["Conteneur Redis"]
+        Web -->|"Port 5432"| DB["Conteneur PostgreSQL"]
+        Web -->|"Port 6379"| Redis["Conteneur Redis"]
     end
     
     DB --> Volume1["Volume Nommé (postgres_data)"]
     Redis --> Volume2["Volume Nommé (redis_data)"]
     
-    HostDir["Code Source Hôte (./src)"] -.->|Bind Mount| Web
+    HostDir["Code Source Hôte (./src)"] -.->|"Bind Mount"| Web
 ```
 
 ### Implémentation de docker-compose.yml et explications détaillées
@@ -416,3 +416,4 @@ La combinaison de Docker, Docker Compose et VSCode DevContainers permet de crée
 Apporter le paradigme de l'IaC à l'environnement local ne se limite pas à raccourcir le temps de configuration initial. Il élimine les craintes liées aux modifications de la configuration de l'infrastructure, facilite l'expérimentation de nouvelles piles technologiques et permet une transition en douceur vers les pipelines CI/CD, améliorant considérablement la vitesse et la qualité globales du cycle de développement.
 
 N'hésitez pas à introduire les meilleures pratiques abordées dans cet article, telles que l'optimisation de la taille de l'image via le build multi-étapes, le contrôle des dépendances avec les bilans de santé, et l'écriture de Dockerfile tenant compte du cache des couches, afin d'offrir la meilleure expérience de développement (DX: Developer Experience) à vos propres projets.
+

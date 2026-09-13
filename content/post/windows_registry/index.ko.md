@@ -148,12 +148,12 @@ flowchart TD
     HKLM_Soft["HKLM\SOFTWARE"]
     HKLM_WOW64["HKLM\SOFTWARE\WOW6432Node"]
 
-    App32 -->| RegOpenKeyEx() | RegAPI
-    App64 -->| RegOpenKeyEx() | RegAPI
+    App32 -->|"RegOpenKeyEx()"| RegAPI
+    App64 -->|"RegOpenKeyEx()"| RegAPI
     RegAPI --> CM
 
-    CM -->| 64비트 프로세스인 경우 | HKLM_Soft
-    CM -->| 32비트 프로세스인 경우 (리디렉션) | HKLM_WOW64
+    CM -->|"64비트 프로세스인 경우"| HKLM_Soft
+    CM -->|"32비트 프로세스인 경우 (리디렉션)"| HKLM_WOW64
 ```
 PowerShell 스크립트나 C# 애플리케이션에서 레지스트리를 편집할 때는 실행 중인 프로세스 자체가 32비트인지 64비트인지를 강하게 의식해야 합니다. 그렇지 않으면 "분명히 쓴 설정이 탐색기에서 보이지 않는다(다른 곳에 쓰여 있다)"는 성가신 문제를 일으키게 됩니다.
 
@@ -399,6 +399,7 @@ Procmon을 사용하면 OS 상에서 발생하는 모든 레지스트리 API 호
 ## 요약
 
 Windows 레지스트리는 OS의 모든 동작과 애플리케이션 설정을 통합적으로 관리하는 강력하고 복잡한 기반 시스템입니다. 수동에 의한 무질서한 편집에는 수학적으로도 입증되는 높은 시스템 손상 위험이 따릅니다. 따라서 PowerShell이나 C# 등의 프로그래밍 가능한 수단을 사용하여 Infrastructure as Code의 원칙에 따라 안전하고 테스트 가능하며 재현성 있는 형태로 구성 관리를 수행하는 것이 현대의 시스템 관리와 개발에 있어 필수적입니다. 본 기사에서 해설한 깊은 아키텍처 이해와 구현 패턴을 활용하여 더욱 견고하고 안전한 Windows 환경 구축을 목표로 해 보세요.
+
 
 
 

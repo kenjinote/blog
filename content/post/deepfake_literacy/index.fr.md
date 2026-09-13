@@ -46,8 +46,8 @@ flowchart LR
     R["Image réelle (Real Image)"] --> D["Discriminateur (Discriminator)"]
     F --> D
     D --> O["Jugement vrai/faux (Real/Fake)"]
-    O -.->|Loss Feedback| G
-    O -.->|Loss Feedback| D
+    O -.->|"Loss Feedback"| G
+    O -.->|"Loss Feedback"| D
 ```
 
 ## 1.2 Modèles de diffusion (Diffusion Models)
@@ -262,5 +262,6 @@ L'évolution de la technologie de l'IA a ouvert la boîte de Pandore. Il est dé
 Cependant, comme expliqué dans cet article, les ingénieurs affrontent la menace des fake news avec diverses approches telles que l'analyse fréquentielle, la détection des signaux biométriques et la preuve de provenance utilisant la cryptographie (C2PA). En combinant ces boucliers techniques (mesures défensives) avec le bouclier social qu'est la "littératie de l'information" de chacun d'entre nous, nous devrions être capables de naviguer sur la vague de fiction apportée par l'IA et de préserver la valeur de la vérité.
 
 C'est précisément parce que nous vivons à une époque où la frontière entre réalité et fiction s'estompe que la "volonté" humaine de discerner la vérité est plus importante que jamais.
+
 
 

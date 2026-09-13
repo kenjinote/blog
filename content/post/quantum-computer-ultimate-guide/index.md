@@ -148,7 +148,7 @@ graph TD
     U_op --> PhaseState
     PhaseState --> H2
     H2 --> Interference
-    Interference -->| 測定（観測） | Result
+    Interference -->|"測定（観測）"| Result
 ```
 
 このように、量子コンピュータは古典力学の限界（微細化限界や熱力学的限界）を迂回するための一時的な延命策ではなく、情報と計算の定義そのものを量子力学の公理に基づき再構築する、真のパラダイムシフトなのである。次章では、この量子干渉を自在に操るための具体的な数学的ツールである「量子ゲート」と「量子回路」の詳細について、より深く踏み込んでいく。
@@ -587,9 +587,9 @@ graph TD
     
     Evolved --> Obs["物理量 $A$ の観測 (射影演算子 $P_k$)"]:::measure
     
-    Obs -->| 確率 $p(a_1) = \langle \psi | P_1 | \psi \rangle$ | State1["収縮状態 1: $| a_1 \rangle$"]:::state
-    Obs -->| 確率 $p(a_2) = \langle \psi | P_2 | \psi \rangle$ | State2["収縮状態 2: $| a_2 \rangle$"]:::state
-    Obs -->| ... | StateN["収縮状態 n: $| a_n \rangle$"]:::state
+    Obs -->|"確率 $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["収縮状態 1: $| a_1 \rangle$"]:::state
+    Obs -->|"確率 $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["収縮状態 2: $| a_2 \rangle$"]:::state
+    Obs -->|"..."| StateN["収縮状態 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["デコヒーレンス（位相干渉の喪失）と混合状態化"]:::measure
     State2 --> Decoherence
@@ -1963,8 +1963,8 @@ flowchart LR
     Ht --> Uf
     Uf_in --> Uf
 
-    Uf -->| 状態 |x⟩ | QFT["QFT† (逆量子フーリエ変換)"]
-    Uf -->| 状態 |a^x mod N⟩ | Discard["観測せず (環境とエンタングル)"]
+    Uf -->|"状態"|x⟩ | QFT["QFT† (逆量子フーリエ変換)"]
+    Uf -->|"状態"|a^x mod N⟩ | Discard["観測せず (環境とエンタングル)"]
 
     QFT --> Measure["測定 (k)"]
     Measure --> Classical["連分数展開による古典的後処理 (r の導出)"]
@@ -2699,8 +2699,8 @@ $$
 ```mermaid
 graph TD
     subgraph sg_unq_11 ["トポロジカル・ブレイディング"]
-    A["時間軸 t"] -->| エニオン1の世界線 | B["交換操作（ブレイド）"]
-    C["エニオン2の世界線"] -->| ブレイド | B
+    A["時間軸 t"] -->|"エニオン1の世界線"| B["交換操作（ブレイド）"]
+    C["エニオン2の世界線"] -->|"ブレイド"| B
     B --> D["状態ベクトルがユニタリ回転 U"]
     end
 ```
@@ -2863,3 +2863,5 @@ $$
 
 ---
  **連載『量子コンピュータの原理』（全12章）　完** 
+
+

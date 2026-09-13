@@ -109,9 +109,9 @@ Demikian pula, format data yang digunakan di lingkaran luar tidak boleh digunaka
 
 ```mermaid
 graph LR
-    A["Kerangka Kerja & Penggerak"] -->| Bergantung pada | B["Adaptor Antarmuka"]
-    B -->| Bergantung pada | C["Kasus Penggunaan"]
-    C -->| Bergantung pada | D["Entitas"]
+    A["Kerangka Kerja & Penggerak"] -->|"Bergantung pada"| B["Adaptor Antarmuka"]
+    B -->|"Bergantung pada"| C["Kasus Penggunaan"]
+    C -->|"Bergantung pada"| D["Entitas"]
     
     style A fill:#f9f9f9,stroke:#333,stroke-width:2px
     style B fill:#e6f7ff,stroke:#333,stroke-width:2px
@@ -422,4 +422,5 @@ Yang terpenting bukanlah meniru struktur direktori Clean Architecture secara mem
 
 ---
 *Referensi: "Clean Architecture: A Craftsman's Guide to Software Structure and Design" oleh Robert C. Martin*
+
 

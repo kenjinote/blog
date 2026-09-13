@@ -239,9 +239,9 @@ flowchart TD
     A["CMakeLists.txt (Independente de Plataforma)"] --> B("Motor do CMake")
     B --> C{"Sistema Operacional Alvo"}
     
-    C -->|Windows| D["Solução Visual Studio / MSBuild"]
-    C -->|macOS| E["Projeto Xcode / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Solução Visual Studio / MSBuild"]
+    C -->|"macOS"| E["Projeto Xcode / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Executável Windows (.exe)"]
     E --> H["Executável macOS (Mach-O)"]
@@ -386,3 +386,4 @@ O desenvolvimento multiplataforma entre Mac e Windows possui muitos desafios enr
 8.  **CI/CD**: Inserir o Matrix Build, automatizando testes e compilações limpas de todos os SOs em uso e remover dependências centradas no indivíduo (pessoais).
 
 Atualmente, frameworks de peso como o Electron, Tauri, .NET absorvem a maior parte destas disparidades, mas o domínio do comportamento nativo do SO da base (como sistemas de arquivos e codificações) ainda é essencial para desvendar bugs obscuros e solucionar falhas de performance complexas. Compartilhando e aplicando firmemente as melhores práticas por toda a equipe, desde a fase embrionária do projeto, é possível abater os períodos ociosos decorrentes do debug entre SOs e concentrar os esforços na essencial geração de valor do software.
+

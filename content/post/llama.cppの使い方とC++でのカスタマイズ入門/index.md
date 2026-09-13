@@ -103,7 +103,7 @@ graph TD
     J --> K["Selected Token ID"]
     K --> L["llama.cpp Detokenizer"]
     L --> M["Output String"]
-    K -. "Auto-regressive loop" .-> D
+    K -. Auto-regressive loop .-> D
 ```
 
 テキスト生成は、1つのトークンが出力されるたびに、それが次の入力として KV Cache に追加され、再び計算グラフを通過する自己回帰的なループになっています。
@@ -383,3 +383,4 @@ Python のエコシステムはプロトタイピングには非常に便利で�
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

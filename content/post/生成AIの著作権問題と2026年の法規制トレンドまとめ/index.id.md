@@ -142,8 +142,8 @@ graph TD
     C --> D["Publikasi/distribusi ke internet"]
     D --> E["Akses oleh AI scraper/crawler"]
     E --> F{"Deteksi bendera (flag) Do Not Train (opt-out)"}
-    F -->|Patuh| G["Mengecualikan dari dataset pelatihan"]
-    F -->|Niat Buruk| H["Penghapusan paksa metadata dan eksekusi pelatihan"]
+    F -->|"Patuh"| G["Mengecualikan dari dataset pelatihan"]
+    F -->|"Niat Buruk"| H["Penghapusan paksa metadata dan eksekusi pelatihan"]
     H --> I["Peningkatan denda hukum yang besar berdasarkan EU AI Act dsb."]
 ```
 
@@ -218,3 +218,4 @@ Tahun 2026 ini akan dikenang dalam sejarah sebagai tonggak peringatan ketika "pe
 Sangat tidak mungkin memundurkan kembali jam evolusi atas teknologi AI. Namun, diperlukan sebuah kombinasi kebijaksanaan dari yurisprudensi, ilmu komputer, dan masyarakat secara keseluruhan dalam melatih teknologi besar ini agar menjadi lebih baik, sekaligus menjaganya agar tidak merusak ekosistem kreator yang telah merawat berbagai nilai budaya dan seni untuk umat manusia sepanjang ribuan tahun ini.
 
 Melihat ke arah tahun 2030, terdapat sebuah permintaan kuat tentang penciptaan "zona ekonomi digital baru" yang mana dapat mengembangkan kreativitas umat manusia secara luas dengan hidup secara ko-kreatif dalam sebuah kompensasi dan penghargaan satu sama lainnya, dibandingkan melihat para AI dan kreator tersebut menjadi bermusuhan saat mereka saling berjuang memperebutkan bagian mereka.
+

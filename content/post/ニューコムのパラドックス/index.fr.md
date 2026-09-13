@@ -45,13 +45,13 @@ Maintenant, vous devez faire votre choix.
 graph TD
     Omega["Prédiction d'Oméga<br>（Déjà effectuée hier）"]
     
-    Omega -->|Prédit de « prendre les deux »| BoxB_Empty["La boîte B est vide (0 yen)"]
-    Omega -->|Prédit de « prendre seulement B »| BoxB_100M["Mettre 100 millions de yens dans la boîte B"]
+    Omega -->|"Prédit de « prendre les deux »"| BoxB_Empty["La boîte B est vide (0 yen)"]
+    Omega -->|"Prédit de « prendre seulement B »"| BoxB_100M["Mettre 100 millions de yens dans la boîte B"]
     
     You["Votre choix<br>（Aujourd'hui）"]
     
-    You -->|Choix 1: Prendre les deux| Result1["Boîte A(100 000) + Contenu de la boîte B"]
-    You -->|Choix 2: Prendre seulement B| Result2["Boîte A(0) + Contenu de la boîte B"]
+    You -->|"Choix 1: Prendre les deux"| Result1["Boîte A(100 000) + Contenu de la boîte B"]
+    You -->|"Choix 2: Prendre seulement B"| Result2["Boîte A(0) + Contenu de la boîte B"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2
@@ -134,3 +134,4 @@ Et ce qui est intéressant, c'est que chaque camp croit sincèrement que « l'au
 
 « Qu'est-ce qu'un jugement rationnel ? »
 Peu importe le développement de l'économie ou des mathématiques, on finit toujours par aboutir à la philosophie sur « comment les humains perçoivent ce monde ». Le paradoxe de Newcomb est la plus méchante et la plus belle des expériences de pensée, exposant les limites de la logique.
+

@@ -97,9 +97,9 @@ Te librarás del agotamiento de memoria del compilador causado por el anidamient
 
 ```mermaid
 graph TD
-    A["Tipo: User"] -->| ^User | B["std::meta::info"]
-    B -->| nonstatic_data_members_of | C["Rango de meta::info"]
-    C -->| [: member :] | D["Acceso directo a miembros (obj.id, obj.name)"]
+    A["Tipo: User"] -->|"^User"| B["std::meta::info"]
+    B -->|"nonstatic_data_members_of"| C["Rango de meta::info"]
+    C -->|"[: member :]"| D["Acceso directo a miembros (obj.id, obj.name)"]
     D --> E["Código generado (Cero sobrecarga)"]
 ```
 
@@ -296,9 +296,9 @@ La propuesta de estandarización (P2300) que reconstruye fundamentalmente el mod
 
 ```mermaid
 graph LR
-    S["Remitente (Descripción de la tarea)"] -->|connect| O["Estado de la operación"]
-    O -->|start| E["Ejecución (ThreadPool, GPU, etc.)"]
-    E -->|set_value / set_error / set_stopped| R["Receptor (Devolución de llamada)"]
+    S["Remitente (Descripción de la tarea)"] -->|"connect"| O["Estado de la operación"]
+    O -->|"start"| E["Ejecución (ThreadPool, GPU, etc.)"]
+    E -->|"set_value / set_error / set_stopped"| R["Receptor (Devolución de llamada)"]
 ```
 
 Los Senders son planos ligeros que describen "qué se debe hacer" y están separados del contexto de ejecución (Scheduler). Esto permite describir de manera eficiente la descarga de tareas al ThreadPool de la CPU o la GPU utilizando una interfaz unificada.
@@ -367,5 +367,6 @@ En el futuro, recomendamos encarecidamente adoptar de manera proactiva estos nue
 
 ---
 *Este artículo se escribió en función del estado de estandarización de C++26 a partir del año 2026. Tenga en cuenta que parte de la sintaxis puede cambiar según el estado de implementación de cada compilador.*
+
 
 

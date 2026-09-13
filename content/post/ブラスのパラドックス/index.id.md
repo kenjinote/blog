@@ -34,11 +34,11 @@ Karena "jalan sempit" akan menjadi macet jika jumlah mobil bertambah, waktu yang
 
 ```mermaid
 graph LR
-    START["Titik Awal (4000 orang)"] -->|Jalan sempit A: T=N/100| MID1["Titik Tengah 1"]
-    START -->|Jalan tol C: T=45 menit| MID2["Titik Tengah 2"]
+    START["Titik Awal (4000 orang)"] -->|"Jalan sempit A: T=N/100"| MID1["Titik Tengah 1"]
+    START -->|"Jalan tol C: T=45 menit"| MID2["Titik Tengah 2"]
     
-    MID1 -->|Jalan tol B: T=45 menit| GOAL["Tujuan"]
-    MID2 -->|Jalan sempit D: T=N/100| GOAL
+    MID1 -->|"Jalan tol B: T=45 menit"| GOAL["Tujuan"]
+    MID2 -->|"Jalan sempit D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -59,13 +59,13 @@ Sekarang, misalkan wali kota membangun "**jalan pintas super cepat impian yang m
 
 ```mermaid
 graph LR
-    START["Titik Awal (4000 orang)"] -->|Jalan sempit A: T=N/100| MID1["Titik Tengah 1"]
-    START -->|Jalan tol C: T=45 menit| MID2["Titik Tengah 2"]
+    START["Titik Awal (4000 orang)"] -->|"Jalan sempit A: T=N/100"| MID1["Titik Tengah 1"]
+    START -->|"Jalan tol C: T=45 menit"| MID2["Titik Tengah 2"]
     
-    MID1 -.->|Jalan pintas baru: T=0 menit| MID2
+    MID1 -.->|"Jalan pintas baru: T=0 menit"| MID2
     
-    MID1 -->|Jalan tol B: T=45 menit| GOAL["Tujuan"]
-    MID2 -->|Jalan sempit D: T=N/100| GOAL
+    MID1 -->|"Jalan tol B: T=45 menit"| GOAL["Tujuan"]
+    MID2 -->|"Jalan sempit D: T=N/100"| GOAL
     
     style START fill:#4CAF50,color:#fff
     style GOAL fill:#F44336,color:#fff
@@ -110,3 +110,4 @@ Paradoks Braess bukan sekadar teori di atas kertas semata, melainkan telah diama
   Fenomena yang sama juga dapat terjadi pada perutean internet dan jaringan listrik. Segera setelah kabel atau jalur baru ditambahkan, paket data dapat menumpuk di "jalur terpendek yang dianggap optimal", yang terkadang menyebabkan gangguan pada seluruh jaringan.
 
 Paradoks Braess dengan sangat baik menggambarkan dilema dalam masyarakat sistem yang kompleks, di mana **"kumpulan pilihan rasional (egoisme) individu" tidak selalu menghasilkan "hasil optimal secara keseluruhan"**. Terkadang, "mencabut pilihan (kebebasan)" justru dapat menguntungkan semua pihak.
+

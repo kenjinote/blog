@@ -58,10 +58,10 @@ tags: ["गिटहब को-पायलट", "लोकल एआई", "व�
 
 ```mermaid
 graph TD
-    Dev["डेवलपर (IDE)"] -->| रियल-टाइम टाइपिंग | LocalProxy{"बुद्धिमान राउटर / प्रॉक्सी (Intelligent Router / Proxy)"}
+    Dev["डेवलपर (IDE)"] -->|"रियल-टाइम टाइपिंग"| LocalProxy{"बुद्धिमान राउटर / प्रॉक्सी (Intelligent Router / Proxy)"}
     
-    LocalProxy -->| तेज़, गोपनीयता-प्रथम कार्य (Fast, Privacy-first Task) | LocalAI["लोकल एआई इंजन (Ollama / LM Studio)"]
-    LocalProxy -->| जटिल तर्क, बड़ा कॉन्टेक्स्ट (Complex Logic, Large Context) | CloudAI["क्लाउड एआई इंजन (Copilot / OpenAI API)"]
+    LocalProxy -->|"तेज़, गोपनीयता-प्रथम कार्य (Fast, Privacy-first Task)"| LocalAI["लोकल एआई इंजन (Ollama / LM Studio)"]
+    LocalProxy -->|"जटिल तर्क, बड़ा कॉन्टेक्स्ट (Complex Logic, Large Context)"| CloudAI["क्लाउड एआई इंजन (Copilot / OpenAI API)"]
     
     subgraph "स्थानीय वातावरण (Local Environment)"
         LocalAI --> ModelA["Llama-3-8B-Instruct (GGUF)"]
@@ -94,17 +94,17 @@ graph TD
 ```mermaid
 graph TD
     Start["नया कोडिंग कार्य (New Coding Task)"] --> Q1{"क्या कोड अत्यधिक गोपनीय है? (Is the code highly confidential?)"}
-    Q1 -->|Yes| Action1["लोकल एआई का उपयोग करें (Use Local AI: Llama 3 / CodeLlama)"]
-    Q1 -->|No| Q2{"क्या यह एक साधारण इनलाइन स्वतः-पूर्ण (inline autocomplete) है?"}
+    Q1 -->|"Yes"| Action1["लोकल एआई का उपयोग करें (Use Local AI: Llama 3 / CodeLlama)"]
+    Q1 -->|"No"| Q2{"क्या यह एक साधारण इनलाइन स्वतः-पूर्ण (inline autocomplete) है?"}
     
-    Q2 -->|Yes| Q3{"क्या नेटवर्क कनेक्शन स्थिर है? (Is network connection stable?)"}
-    Q3 -->|Yes| Action2["गिटहब को-पायलट का उपयोग करें (Use GitHub Copilot)"]
-    Q3 -->|No| Action1
+    Q2 -->|"Yes"| Q3{"क्या नेटवर्क कनेक्शन स्थिर है? (Is network connection stable?)"}
+    Q3 -->|"Yes"| Action2["गिटहब को-पायलट का उपयोग करें (Use GitHub Copilot)"]
+    Q3 -->|"No"| Action1
     
-    Q2 -->|No| Q4{"क्या जटिल आर्किटेक्चर लॉजिक या क्रॉस-फ़ाइल रिफ़ैक्टरिंग की आवश्यकता है?"}
+    Q2 -->|"No"| Q4{"क्या जटिल आर्किटेक्चर लॉजिक या क्रॉस-फ़ाइल रिफ़ैक्टरिंग की आवश्यकता है?"}
     
-    Q4 -->|Yes| Action3["क्लाउड एआई का उपयोग करें (Use Cloud AI: GPT-4 / Claude 3.5 Sonnet)"]
-    Q4 -->|No| Action4["एपीआई लागत बचाने के लिए मध्यम कार्यों के लिए लोकल एआई का उपयोग करें"]
+    Q4 -->|"Yes"| Action3["क्लाउड एआई का उपयोग करें (Use Cloud AI: GPT-4 / Claude 3.5 Sonnet)"]
+    Q4 -->|"No"| Action4["एपीआई लागत बचाने के लिए मध्यम कार्यों के लिए लोकल एआई का उपयोग करें"]
 ```
 
 ### 3.1 मूल्यांकन अक्ष 1: गोपनीयता और सुरक्षा (Privacy and Security)
@@ -244,4 +244,6 @@ Continue कॉन्फ़िगरेशन फ़ाइल (`config.json`) �
 कृपया अपने आईडीई (IDE) वातावरण को अगले स्तर पर ले जाने के लिए इस लेख में प्रस्तुत किए गए निर्णय वृक्ष और आर्किटेक्चर का संदर्भ लें। एआई का केवल "उपयोग" करने के बजाय, "सही स्थानों पर सही उपकरणों के संयोजन" के स्तर तक आगे बढ़कर, आपकी विकास दक्षता निस्संदेह काफी बढ़ जाएगी।
 
 Happy Coding with Hybrid AI!
+
+
 

@@ -36,11 +36,11 @@ graph TD
     VSCode -- 补全请求・跳转到定义 --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. "AST（抽象语法树）分析" .-> CompilerC
-    RustAnalyzer -. "宏展开・类型推导" .-> CompilerR
+    Clangd -. AST（抽象语法树）分析 .-> CompilerC
+    RustAnalyzer -. 宏展开・类型推导 .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
-    Debugger -. "ptrace / 内存转储" .-> Executable["编译后的二进制文件"]
+    Debugger -. ptrace / 内存转储 .-> Executable["编译后的二进制文件"]
 ```
 
 VSCode 本身并不理解 C++ 的模板元编程或 Rust 复杂的生命周期说明符。编辑器的作用仅限于显示源代码和接收用户的输入，而代码的语义分析（Semantic Analysis）、类型推导（Type Inference）、错误检查等计算成本高昂的处理，则通过 JSON-RPC 委托给在后台运行的“语言服务器”。
@@ -388,4 +388,5 @@ C++ 和 Rust 都是以“压榨硬件极限性能”为目标的严苛语言，�
 初期配置文件的自定义可能会花费一些时间，但一旦搭建完成，之后的编码体验将变得令人惊讶地舒适且高效。请务必参考本文的架构解析和具体配置（`settings.json`、`tasks.json`、`launch.json`），尝试构建您自己的最强开发环境吧。
 
 祝您拥有舒适且安全的系统编程生活！
+
 

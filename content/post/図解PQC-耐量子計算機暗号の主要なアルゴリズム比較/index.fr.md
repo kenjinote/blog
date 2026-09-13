@@ -18,9 +18,9 @@ Cependant, cette prémisse solide est sur le point d'être fondamentalement boul
 
 ```mermaid
 graph TD
-    A["Ordinateur quantique à grande échelle (CRQC)"] -->|Exécution| B["Algorithme de Shor"]
-    B -->|Déchiffrement en temps polynomial| C["Problème de factorisation en nombres premiers (RSA)"]
-    B -->|Déchiffrement en temps polynomial| D["Problème du logarithme discret (ECC / ECDSA)"]
+    A["Ordinateur quantique à grande échelle (CRQC)"] -->|"Exécution"| B["Algorithme de Shor"]
+    B -->|"Déchiffrement en temps polynomial"| C["Problème de factorisation en nombres premiers (RSA)"]
+    B -->|"Déchiffrement en temps polynomial"| D["Problème du logarithme discret (ECC / ECDSA)"]
     C --> E["Écoute de communications chiffrées, altération de données, usurpation d'identité"]
     D --> E
     F["Store Now, Decrypt Later (SNDL)"] --> E
@@ -219,8 +219,8 @@ Cependant, il existe un inconvénient majeur. Puisque l'échantillonnage gaussie
 ```mermaid
 graph LR
     A["Exigences en matière de signatures numériques"] --> B{"Quelle est la contrainte prioritaire ?"}
-    B -->| Simplicité d'implémentation, polyvalence, facilité d'implémentation en temps constant | C["Dilithium (ML-DSA)"]
-    B -->| Minimisation de la bande passante de communication, compacité de la taille des données | D["FALCON (FN-DSA)"]
+    B -->|"Simplicité d'implémentation, polyvalence, facilité d'implémentation en temps constant"| C["Dilithium (ML-DSA)"]
+    B -->|"Minimisation de la bande passante de communication, compacité de la taille des données"| D["FALCON (FN-DSA)"]
     C --> E["Certificats TLS génériques, signature électronique de logiciels"]
     D --> F["Protocoles avec des limites strictes de taille de paquet, environnements spéciaux"]
 ```
@@ -300,12 +300,12 @@ Dans la cryptographie hybride, l'échange de clés est effectué en utilisant si
 
 ```mermaid
 graph TD
-    A["Client"] -->|① Envoi de la clé publique X25519 + clé publique Kyber| B["Serveur"]
-    B -->|② Réponse avec clé partagée X25519 + chiffré encapsulé Kyber| A
+    A["Client"] -->|"① Envoi de la clé publique X25519 + clé publique Kyber"| B["Serveur"]
+    B -->|"② Réponse avec clé partagée X25519 + chiffré encapsulé Kyber"| A
     A --> C{"Dérivation du secret maître (KDF)"}
     B --> C
-    C -->| Entrée : (Clé partagée X25519) || (Clé partagée Kyber) | D["Clé de communication sécurisée (AES-256 / ChaCha20)"]
-    D -->| Résistance aux menaces quantiques ET aux vulnérabilités classiques | E["Communication chiffrée hybride sécurisée (TLS 1.3)"]
+    C -->|"Entrée : (Clé partagée X25519)"|| (Clé partagée Kyber) | D["Clé de communication sécurisée (AES-256 / ChaCha20)"]
+    D -->|"Résistance aux menaces quantiques ET aux vulnérabilités classiques"| E["Communication chiffrée hybride sécurisée (TLS 1.3)"]
 ```
 
 Grâce à cela, il est possible d'atteindre une sécurité robuste à deux niveaux : « même si un ordinateur quantique est réalisé et que l'ECC est brisé, Kyber protège la communication », et inversement, « même si un défaut mathématique inconnu est trouvé dans Kyber, l'ECC protège la communication ». Un exemple typique est le brouillon **X25519MLKEM768 (anciennement X25519Kyber768)** en cours de standardisation à l'IETF, et la communication entre les navigateurs Web actuels et les serveurs de pointe est précisément réalisée à l'aide de cette méthode hybride.
@@ -328,5 +328,6 @@ La bataille entre l'ordinateur quantique et la cryptographie est un domaine pass
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
+
 
 

@@ -39,8 +39,8 @@ Dies bedeutet, dass sich bei einer Verdoppelung der Bitzahl die Rechenzeit für 
 ```mermaid
 graph TD
     A["Erhöhung der Eingabegröße (Anzahl der Bits) N"] --> B{"Wahl des Algorithmus"}
-    B -->|Klassisch: Zahlkörpersieb| C["Subexponentielle Erhöhung O(exp(...))"]
-    B -->|Quanten: Shors Algorithmus| D["Polynomielle Zeit O((log N)^3)"]
+    B -->|"Klassisch: Zahlkörpersieb"| C["Subexponentielle Erhöhung O(exp(...))"]
+    B -->|"Quanten: Shors Algorithmus"| D["Polynomielle Zeit O((log N)^3)"]
     C --> E["Jahrtausende bis Milliarden von Jahren (unentschlüsselbar)"]
     D --> F["Wenige Minuten bis Stunden (Entschlüsselung in realistischer Zeit)"]
 ```
@@ -358,5 +358,6 @@ Wir ermutigen Sie, den hier vorgestellten Python-Code in Ihrer eigenen Umgebung 
 - Shor, P. W. (1994). "Algorithms for quantum computation: discrete logarithms and factoring". Proceedings 35th Annual Symposium on Foundations of Computer Science.
 - Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information". Cambridge University Press.
 - Qiskit Documentation: https://qiskit.org/documentation/
+
 
 

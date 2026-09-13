@@ -103,7 +103,7 @@ graph TD
     J --> K["Выбранный ID токена"]
     K --> L["Детокенизатор llama.cpp"]
     L --> M["Выходная строка"]
-    K -. "Авторегрессионный цикл" .-> D
+    K -. Авторегрессионный цикл .-> D
 ```
 
 Генерация текста — это авторегрессионный цикл: каждый раз, когда выводится один токен, он добавляется в KV Cache как следующий вход и снова проходит через вычислительный граф.
@@ -383,3 +383,4 @@ for (llama_token bad_tok : forbidden_tokens) {
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)
 > - [ggml - Tensor Library](https://github.com/ggerganov/ggml)
 > - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

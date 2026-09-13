@@ -55,13 +55,13 @@ Aqui é onde entra o "Algoritmo de Shor", publicado por Peter Shor em 1994. Esse
 graph TD
     A[Inserir o número N que se deseja fatorar] --> B[Selecionar um número inteiro aleatório a]
     B --> C{Máximo divisor comum<br>entre a e N}
-    C -->|Maior que 1| D[Por sorte, um fator primo foi encontrado!]
-    C -->|1 Primos entre si| E[Vez do computador quântico]
+    C -->|"Maior que 1"| D[Por sorte, um fator primo foi encontrado!]
+    C -->|"1 Primos entre si"| E[Vez do computador quântico]
     E --> F[Encontrar o período r da<br>função f_x = a^x mod N por Transformação Quântica de Fourier]
     F --> G{O período r é par e<br>a^r/2 ≢ -1 mod N}
-    G -->|Sim| H[Calcular o máximo divisor comum gcd_a^r/2 ± 1, N]
+    G -->|"Sim"| H[Calcular o máximo divisor comum gcd_a^r/2 ± 1, N]
     H --> I((Fatoração bem sucedida!))
-    G -->|Não| B
+    G -->|"Não"| B
 ```
 
 O algoritmo de Shor não resolve o problema da fatoração em números primos diretamente, mas usa teoremas da teoria dos números para convertê-lo em outro problema chamado "Problema de Descoberta de Período" (Period Finding Problem) e, em seguida, resolve isso rapidamente aproveitando as características do computador quântico.
@@ -182,3 +182,4 @@ Testes de implementação e implementações híbridas da PQC já foram iniciado
 Os computadores quânticos estão passando de histórias de ficção científica para desafios reais de engenharia. O algoritmo de Shor é uma grande conquista intelectual da humanidade que mescla a matemática e a mecânica quântica, mas, ao mesmo tempo, guarda um "poder destrutivo" para sacudir as bases da nossa sociedade digital.
 
 Isso não significa que a criptografia RSA se tornará inutilizável a partir de amanhã. No entanto, considerando a evolução da tecnologia quântica e o risco do "Store Now, Decrypt Later", a grande migração que ficará na história da criptografia - a transição para a PQC - já começou. Agora estamos testemunhando a linha de frente de uma mudança de paradigma na segurança da informação.
+

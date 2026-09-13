@@ -237,9 +237,9 @@ flowchart TD
     A["CMakeLists.txt (Plattformunabhängig)"] --> B("CMake Engine")
     B --> C{"Ziel-Betriebssystem"}
     
-    C -->|Windows| D["Visual Studio Solution / MSBuild"]
-    C -->|macOS| E["Xcode Project / Apple Clang"]
-    C -->|Linux| F["Makefile / Ninja / GCC"]
+    C -->|"Windows"| D["Visual Studio Solution / MSBuild"]
+    C -->|"macOS"| E["Xcode Project / Apple Clang"]
+    C -->|"Linux"| F["Makefile / Ninja / GCC"]
     
     D --> G["Windows Ausführbare Datei (.exe)"]
     E --> H["macOS Ausführbare Datei (Mach-O)"]
@@ -382,3 +382,4 @@ Die plattformübergreifende Entwicklung für Mac und Windows bringt eine Vielzah
 8.  **CI/CD**: Einen Matrix-Build einführen, um saubere Builds und Tests auf allen Zielbetriebssystemen zu automatisieren und die Abhängigkeit von Einzelpersonen zu beseitigen.
 
 Heutzutage fangen leistungsstarke Frameworks wie Electron, Tauri und .NET viele dieser Unterschiede ab. Das Wissen über das native Verhalten des zugrunde liegenden Betriebssystems (Dateisysteme und Codierungen) ist jedoch nach wie vor unerlässlich, wenn schwerwiegende Leistungsprobleme und komplexe Fehler behoben werden müssen. Durch das Teilen und konsequente Umsetzen dieser Best Practices im gesamten Team von den frühen Phasen des Projekts an können unproduktive Debugging-Zeiten, die durch OS-Unterschiede entstehen, drastisch reduziert und sich auf die wesentliche Wertschöpfung der Software konzentriert werden.
+
