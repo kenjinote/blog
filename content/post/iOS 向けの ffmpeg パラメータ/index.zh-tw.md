@@ -5,7 +5,7 @@ date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["電腦與小工具"]
 description: '介紹為了在iPhone或iPad等iOS裝置上讓影片流暢播放，最合適的ffmpeg指令與參數設定。我們也詳細解說了各選項的意義與設定重點。'
 ---
 

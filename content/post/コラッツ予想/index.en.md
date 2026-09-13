@@ -1,6 +1,6 @@
 ---
 title: 'What is the Collatz Conjecture? Verifying a Mathematical Unsolved Problem Where Any Number Eventually Reaches 1 in Python'
-slug: "コラッツ予想"
+slug: "Collatz Conjecture"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Collatz Conjecture", "Math", "Programming", "Algorithm"]
 draft: false

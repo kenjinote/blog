@@ -2,10 +2,10 @@
 title: 'Wie man eine benutzerdefinierte Domain für ein GitHub-Repository konfiguriert | Ausgabe für onamae.com'
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
 date: 2022-09-13T01:16:40+09:00
-tags: ["Github","ドメイン"]
+tags: ["Github","Domäne"]
 draft: false
 image: "images/octocat.webp"
-categories: ["ツール・開発環境"]
+categories: ["Tools und Entwicklungsumgebung"]
 description: 'Wir erklären die Schritte zum Einrichten einer benutzerdefinierten Domain für ein GitHub-Repository (GitHub Pages). Diesmal zeigen wir die konkreten Schritte vom Hinzufügen und Ändern des DNS-A-Eintrags im Verwaltungsbildschirm von „onamae.com“ bis zur Verknüpfung mit GitHub.'
 ---
 Um eine benutzerdefinierte Domain in einem Github-Repository einzurichten, müssen Sie die DNS-Einstellungen Ihrer Domain ändern.

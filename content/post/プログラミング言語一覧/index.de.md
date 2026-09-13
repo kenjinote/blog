@@ -2,10 +2,10 @@
 title: 'Von den wichtigsten bis zu den seltensten! Liste von Programmiersprachen und Zusammenfassung ihrer Eigenschaften'
 slug: "プログラミング言語一覧"
 date: 2023-04-01T03:45:53+09:00
-tags: ["プログラミング言語"]
+tags: ["Programmiersprache"]
 draft: true
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["Programmierung"]
 description: 'Wir haben eine Liste verschiedener Programmiersprachen zusammengestellt, von C, Python, Java und JavaScript bis hin zu Rust, Go, OCaml und Clojure. Überprüfen Sie die Übersicht und die Eigenschaften jeder Sprache als Referenz für Entwicklung und Lernen.'
 ---
 

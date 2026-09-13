@@ -5,7 +5,7 @@ date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["Outils et Environnement de développement"]
 description: 'Annonce de l''obtention du prix Microsoft MVP (2025-2026) pour la 9ème fois au total. Avec des explications sur le programme MVP qui contribue à la communauté technique, je partage une rétrospective des publications d''informations techniques et des activités communautaires sur lesquelles j''ai particulièrement mis l''accent cette dernière année.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
-categories: ["IT・テクノロジー"]
+categories: ["تكنولوجيا المعلومات"]
 description: 'نقدم شرحًا مفصلاً خطوة بخطوة لكيفية إعداد ''Live Template'' لإدراج التاريخ والوقت الحاليين تلقائيًا، وهو أمر مفيد عند كتابة المدونات وغيرها في بيئة IntelliJ IDEA. دعنا نوفر عناء الكتابة اليدوية في كل مرة.'
 ---
 # مقدمة

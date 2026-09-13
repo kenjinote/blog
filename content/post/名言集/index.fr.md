@@ -1,6 +1,6 @@
 ---
 title: 'Collection de citations pour enrichir la vie : Des mots touchants de personnalités historiques et célèbres'
-slug: "名言集"
+slug: "Collection de citations"
 date: 2022-10-15T17:00:43+09:00
 tags: ["citations"]
 draft: false

@@ -5,7 +5,7 @@ date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
-categories: ["PC・ガジェット"]
+categories: ["電腦與小工具"]
 description: '整理了我目前正在使用的常用電腦規格（Core i7-8700K、記憶體32GB、Windows 11）以及作業環境。以備忘錄的形式，介紹目前使用Mouse Computer製造的桌上型電腦所配置的環境。'
 ---
 我會寫下我目前主要個人電腦的規格。

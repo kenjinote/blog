@@ -1,6 +1,6 @@
 ---
 title: 'Learning from the Story of the Old Couple and the Donkey: How to Live Without Being Swayed by Others'' Opinions'
-slug: "老夫婦とロバの話"
+slug: "The Old Couple and the Donkey"
 date: 2024-09-18T00:56:59+09:00
 tags: ["The Old Couple and the Donkey", "Satire"]
 draft: false

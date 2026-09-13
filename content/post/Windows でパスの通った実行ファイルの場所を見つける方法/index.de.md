@@ -5,7 +5,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Pfad", "Ausführbare Datei", "Eingabeaufforderung"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["PC-Gadgets"]
 description: 'Wir erklären, wie Sie den Speicherort (vollständigen Pfad) von ausführbaren Dateien in der Windows-Eingabeaufforderung oder PowerShell einfach überprüfen können. Wir stellen einen nützlichen Trick vor, um mit dem Befehl „where“ schnell den genauen Speicherort von Apps im Pfad zu ermitteln.'
 ---
 

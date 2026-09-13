@@ -5,7 +5,7 @@ date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["ब्लॉग संचालन"]
 description: 'हम Slack App के OAuth टोकन का उपयोग करके Slack Web API के माध्यम से संदेश पोस्ट करने का तरीका बताते हैं। हम स्कोप सेट करने और एक्सेस टोकन प्राप्त करने की प्रक्रिया से लेकर WinHTTP का उपयोग करके C++ में विशिष्ट कार्यान्वयन कोड उदाहरण प्रस्तुत करते हैं।'
 ---
 

@@ -5,7 +5,7 @@ date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["PC-Gadgets"]
 description: 'Wir stellen die optimalen ffmpeg-Befehle und Parametereinstellungen vor, um Videos auf iOS-Geräten wie dem iPhone oder iPad flüssig abzuspielen. Die Bedeutung der einzelnen Optionen und wichtige Konfigurationspunkte werden ebenfalls ausführlich erklärt.'
 ---
 

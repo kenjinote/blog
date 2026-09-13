@@ -1,6 +1,6 @@
 ---
 title: 'Rahasia Menikmati Splatoon 2 dalam Waktu Lama! Rekomendasi Senjata dan Tips Strategi'
-slug: "スプラトゥーン2"
+slug: "Splatoon 2"
 date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Game", "Nintendo Switch"]
 draft: false

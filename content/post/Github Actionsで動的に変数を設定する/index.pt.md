@@ -5,7 +5,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
-categories: ["ツール・開発環境"]
+categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 description: 'Explicamos como definir variáveis de ambiente de forma dinâmica em fluxos de trabalho do GitHub Actions. Usando o ambiente Windows como exemplo, mostramos como gravar no ''$env:GITHUB_ENV'' e consultar variáveis em etapas subsequentes para criar releases.'
 ---
 

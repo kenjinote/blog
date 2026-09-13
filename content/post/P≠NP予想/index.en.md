@@ -1,6 +1,6 @@
 ---
 title: 'What is the P≠NP Conjecture? An Easy-to-Understand Explanation of the Unsolved Problem in Computational Complexity Theory and the Difference Between Class P and NP'
-slug: "P≠NP予想"
+slug: "P!=NP Conjecture"
 date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP conjecture", "Math", "Unsolved problems"]
 draft: false

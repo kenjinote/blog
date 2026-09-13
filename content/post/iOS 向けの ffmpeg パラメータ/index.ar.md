@@ -5,7 +5,7 @@ date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["كمبيوتر وأدوات"]
 description: 'نقدم أوامر ومعلمات ffmpeg المثالية لتشغيل مقاطع الفيديو بسلاسة على أجهزة iOS مثل iPhone و iPad. كما نشرح بالتفصيل معنى كل خيار ونقاط الإعداد.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
-categories: ["IT・テクノロジー"]
+categories: ["IT與科技"]
 description: '一步一步詳細介紹在IntelliJ IDEA中，設定可自動插入現在日期與時間的「Live Template」方法。在撰寫部落格等時候非常方便，省去每次手動輸入的麻煩。'
 ---
 # 前言

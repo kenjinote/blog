@@ -5,7 +5,7 @@ date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
-categories: ["IT・テクノロジー"]
+categories: ["आईटी और प्रौद्योगिकी"]
 description: 'हम IntelliJ IDEA में ब्लॉग लिखने आदि के दौरान सुविधाजनक "Live Template" स्थापित करने के तरीके का चरण-दर-चरण विवरण देंगे, जो स्वचालित रूप से वर्तमान दिनांक और समय सम्मिलित करता है। हर बार टाइप करने की परेशानी से बचें。'
 ---
 # परिचय

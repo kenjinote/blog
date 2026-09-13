@@ -5,7 +5,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
-categories: ["ツール・開発環境"]
+categories: ["उपकरण और विकास का वातावरण"]
 description: 'हम बताएंगे कि GitHub Actions वर्कफ़्लो के भीतर डायनामिक रूप से पर्यावरण चर (Environment Variables) कैसे सेट करें। Windows वातावरण का उपयोग करते हुए, हम "$env:GITHUB_ENV" पर लिखने की प्रक्रिया और बाद के चरणों में चर का संदर्भ देकर रिलीज़ निर्माण के लिए इसका उपयोग करने के विशिष्ट उदाहरण पेश करेंगे。'
 ---
 

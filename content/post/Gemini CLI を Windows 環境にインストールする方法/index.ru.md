@@ -2,10 +2,10 @@
 title: 'Как установить Gemini CLI в Windows | Подробное руководство начиная с Node.js'
 slug: "Gemini CLI を Windows 環境にインストールする方法"
 date: 2025-07-13T23:49:56+09:00
-tags: ["Gemini", "CLI", "Windows", "インストール", "開発"]
+tags: ["Gemini", "CLI", "Windows", "Установка", "開発"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["ПК и гаджеты"]
 description: 'Руководство для начинающих по установке «Gemini CLI» в среде Windows, позволяющего использовать генеративный ИИ «Gemini» от Google из командной строки. Подробно описаны шаги от подготовки Node.js и npm до выполнения в PowerShell.'
 ---
 

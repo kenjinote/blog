@@ -5,7 +5,7 @@ date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
-categories: ["ブログ運営"]
+categories: ["Blog-Betrieb"]
 description: 'Erklärt, wie man Bildgröße und -platzierung in Artikeln des Hugo PaperMod-Themes anpasst. Stellt konkrete Bearbeitungsschritte für CSS (blank.css und post-entry.css) vor, um von der standardmäßigen 100%-Breite und Zentrierung zu Textumfluss und Bildverkleinerung zu wechseln.'
 ---
 Das Standardlayout zentriert das Bild mit einer Breite von 100 %,

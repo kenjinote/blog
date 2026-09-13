@@ -1,8 +1,8 @@
 ---
 title: 'Colección de citas que enriquecen la vida: Palabras inspiradoras de figuras históricas y celebridades'
-slug: "名言集"
+slug: "Colección de citas"
 date: 2022-10-15T17:00:43+09:00
-tags: ["名言集"]
+tags: ["Colección de citas"]
 draft: false
 image: "img.webp"
 categories: ["IT・Tecnología"]

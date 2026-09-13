@@ -5,7 +5,7 @@ date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"
-categories: ["AI・テクノロジー"]
+categories: ["IA et Technologie"]
 description: 'Présente les avantages du logiciel de retouche d''image gratuit et riche en fonctionnalités paint.net. Rempli de fonctionnalités pratiques introuvables dans Paint standard de Windows, comme les calques, le réglage de la transparence et divers effets. Explique clairement ses caractéristiques d''être léger et intuitif, ainsi que les étapes d''installation de la version gratuite.'
 ---
 Je vais vous présenter le logiciel de retouche d'images paint.net, que j'utilise souvent dans mon travail de développement.

@@ -2,7 +2,7 @@
 title: '迷人的數學未解之謎：什麼是完全數、哥德巴赫猜想、黎曼猜想？'
 slug: "数学の未解決問題"
 date: 2024-03-02T22:57:36+09:00
-tags: ["數學","未解決問題"]
+tags: ["數學","未解問題"]
 draft: false
 math: true
 image: "img.webp"

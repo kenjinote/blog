@@ -5,7 +5,7 @@ date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["Инструменты и среда разработки"]
 description: 'Объясняем, как решить проблему, когда GitHub Copilot перестает работать из-за ошибок сертификата, таких как «unable to verify the first certificate». Приводим конкретные шаги по изменению настроек в ESET.'
 ---
 

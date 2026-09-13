@@ -5,7 +5,7 @@ date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
-categories: ["ブログ運営"]
+categories: ["Administração de Blog"]
 description: 'Explicamos como personalizar o tamanho e o posicionamento das imagens nos artigos do tema Hugo PaperMod. A partir da largura padrão de 100% e centralização, apresentamos os procedimentos de edição específicos no CSS (blank.css e post-entry.css) para realizar o encapsulamento ou a redução da imagem.'
 ---
 O layout padrão posiciona a imagem no centro com 100% de largura,

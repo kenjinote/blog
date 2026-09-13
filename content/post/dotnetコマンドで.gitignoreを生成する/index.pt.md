@@ -5,7 +5,7 @@ date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
-categories: ["ツール・開発環境"]
+categories: ["Ferramentas e Ambiente de Desenvolvimento"]
 description: 'Aprenda de maneira simples como utilizar o comando dotnet (dotnet new gitignore) incluído no .NET SDK para gerar automaticamente um arquivo .gitignore adequado para ambientes de desenvolvimento como o Visual Studio.'
 ---
 O comando dotnet.exe é útil para se ter à mão, pois permite até mesmo construir programas simples.

@@ -5,7 +5,7 @@ date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["Alat & Lingkungan Pengembangan"]
 description: 'Kami akan menjelaskan mengenai cara mengatasi masalah saat GitHub Copilot tidak bisa digunakan dikarenakan muncul kesalahan (error) pada sertifikat seperti ''unable to verify the first certificate''. Kami memperkenalkan prosedur khusus dengan mengubah konfigurasi ESET.'
 ---
 

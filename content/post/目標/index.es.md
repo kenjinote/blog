@@ -8,7 +8,7 @@
 
 
 title: 'Hoja de ruta para el emprendimiento y el desarrollo de software: Objetivos y tareas a corto y largo plazo'
-slug: "目標"
+slug: "Objetivo"
 date: 2024-12-08T03:32:34+09:00
 tags: ["Objetivos"]
 draft: false

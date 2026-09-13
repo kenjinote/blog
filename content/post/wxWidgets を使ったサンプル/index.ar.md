@@ -2,10 +2,10 @@
 title: 'كيفية استخدام وتثبيت wxWidgets حتى إنشاء مشروع تجريبي'
 slug: "wxWidgets を使ったサンプル"
 date: 2023-04-18T00:18:22+09:00
-tags: ["wxWidgets", "サンプル"]
+tags: ["wxWidgets", "عينة"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["برمجة"]
 description: 'نشرح بشكل مبسط للمبتدئين خطوات تثبيت مكتبة واجهة المستخدم الرسومية عبر الأنظمة الأساسية "wxWidgets" للغة C++، وصولاً إلى طريقة إنشاء مشروع تجريبي باستخدام Visual Studio.'
 ---
 

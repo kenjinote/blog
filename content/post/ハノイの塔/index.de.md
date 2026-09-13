@@ -1,6 +1,6 @@
 ---
 title: '[Python Einführung] Erklärung des Algorithmus der „Türme von Hanoi“, der mit rekursiver Verarbeitung gelöst wird'
-slug: "ハノイの塔"
+slug: "Türme von Hanoi"
 date: 2025-04-17T22:23:14+09:00
 tags: ["Türme von Hanoi", "Algorithmus", "Python"]
 draft: false

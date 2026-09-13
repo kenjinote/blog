@@ -1,6 +1,6 @@
 ---
 title: 'Kumpulan Kutipan yang Memperkaya Hidup: Rangkuman Kata-kata Berkesan dari Tokoh Sejarah dan Tokoh Terkenal'
-slug: "名言集"
+slug: "Kumpulan Kutipan"
 date: 2022-10-15T17:00:43+09:00
 tags: ["Kumpulan Kutipan"]
 draft: false

@@ -2,10 +2,10 @@
 title: 'Como Mudar os Atalhos de Copiar e Colar do Mac para Serem Iguais aos do Windows'
 slug: "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
-tags: ["macos", "mac", "ショートカットキー", "コピー＆ペースト"]
+tags: ["macos", "mac", "Tecla de Atalho", "Copiar e Colar"]
 draft: 
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["PC e Gadgets"]
 description: 'Ideal para usuários que dividem o tempo entre o Mac e o Windows. Mostramos como alterar as teclas modificadoras nas Configurações do Sistema para igualar os atalhos de teclado de copiar e colar aos do estilo Windows (baseados na tecla Ctrl).'
 ---
 

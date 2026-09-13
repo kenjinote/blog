@@ -1,6 +1,6 @@
 ---
 title: 'Was ist die Collatz-Vermutung? Wir untersuchen ein ungelöstes mathematisches Problem in Python, bei dem jede Zahl am Ende bei 1 landet'
-slug: "コラッツ予想"
+slug: "Collatz-Vermutung"
 date: 2025-07-15T18:03:03+09:00
 tags: ["Collatz-Problem", "Mathematik", "Programmieren", "Algorithmus"]
 draft: false
