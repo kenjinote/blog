@@ -135,10 +135,10 @@ graph TD
         H -->|"false (entra en bucle infinito)"| HALT["Detenerse"]
     end
 
-    %% D に D 自身を入力する
+    %% Ingresar D en sí mismo
     INPUT_D[/"Entrada: D"/] --> START
     
-    %% 矛盾のハイライト
+    %% Destacar contradicción
     LOOP -.->|"¡Contradicción con H(true)!"| FAIL_1(("Contradicción"))
     HALT -.->|"¡Contradicción con H(false)!"| FAIL_2(("Contradicción"))
     

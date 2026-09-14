@@ -123,7 +123,7 @@ graph TD
         M2 -.->|"Gemeinsamer Vorfahre"| F3
     end
 ```
-（※実際の系図はさらに複雑に絡み合っていますが、上記はその異常な重複を示す概念図です）
+(* Der tatsächliche Stammbaum ist noch komplexer miteinander verflochten, aber das Obige ist ein konzeptionelles Diagramm, das diese ungewöhnliche Überschneidung zeigt *)
 
 Dieser extreme **Ahnenschwund** bescherte ihm schwere Erbkrankheiten, und letztendlich starb die Linie der spanischen Habsburger mit ihm aus. Dies ist auch eine historische Lehre darüber, wie fatal der Verlust der biologischen Vielfalt sein kann.
 

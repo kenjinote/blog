@@ -34,7 +34,7 @@ Salah satu pola arsitektur yang representatif dalam penggantian sistem adalah **
 graph LR
     subgraph "Migrasi dengan Pola Strangler Fig"
         A["Sistem Lama (Monolitik)"] -->|"Migrasi Fitur A"| B["Sistem Campuran Lama dan Baru"]
-        B -->|"Migrasi Fitur B dan C"| C["Sistem Campuran Lama dan Baru（新メイン）"]
+        B -->|"Migrasi Fitur B dan C"| C["Sistem Campuran Lama dan Baru (Utama Baru)"]
         C -->|"Migrasi Penuh"| D["Sistem Baru (Microservices)"]
     end
 ```

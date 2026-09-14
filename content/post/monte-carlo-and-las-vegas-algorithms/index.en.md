@@ -60,7 +60,7 @@ def estimate_pi(num_samples: int) -> float:
 
 # 1,000,000 trials
 pi_approx = estimate_pi(1_000_000)
-print(f"円周率の近似値: {pi_approx}")
+print(f"Approximate value of pi: {pi_approx}")
 ```
 
 The more you increase the number of trials `num_samples`, the more accurate the value of $\pi$ you will obtain, but there is no guarantee that it will be an absolutely exact value.
@@ -121,7 +121,7 @@ def randomized_quicksort(arr: list) -> list:
 
 data = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 sorted_data = randomized_quicksort(data)
-print(f"ソート結果: {sorted_data}")
+print(f"Sorted result: {sorted_data}")
 ```
 
 In this implementation, the sorted result is absolutely never wrong. However, if the random number draws are extremely poor, and the maximum or minimum value is consistently chosen as the pivot, the computation time will increase significantly.

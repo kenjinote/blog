@@ -206,7 +206,7 @@ graph LR
         P("Kata Sandi Pengguna")
         S("Salt")
         H1{"Fungsi Hash"}
-        H2{"Fungsi Hash (数万回ループ)"}
+        H2{"Fungsi Hash (Puluhan ribu loop)"}
         R("Nilai Hash Tersimpan")
     end
 

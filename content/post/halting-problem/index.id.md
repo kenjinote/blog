@@ -74,8 +74,8 @@ Untuk memulai pembuktian, pertama-tama kita asumsikan bahwa algoritma penentu un
 $$
 H(P, I) =
 \begin{cases}
-\text{true} & (\text{プログラム } P \text{ が入力 } I \text{ で停止する場合}) \\
-\text{false} & (\text{プログラム } P \text{ が入力 } I \text{ で無限ループする場合})
+\text{true} & (\text{Jika program } P \text{ berhenti pada masukan } I) \\
+\text{false} & (\text{Jika program } P \text{ berulang tanpa batas pada masukan } I)
 \end{cases}
 $$
 
@@ -132,15 +132,15 @@ graph TD
     subgraph "Program Jahat D"
         START["Mulai D"] --> H
         H -->|"true (berhenti)"| LOOP["Infinite loop"]
-        H -->|"false (Infinite loopする)"| HALT["Berhenti"]
+        H -->|"false (Loop tanpa batas)"| HALT["Berhenti"]
     end
 
-    %% D に D 自身をInputする
+    %% Memasukkan D ke dalam D itu sendiri
     INPUT_D[/"Input: D"/] --> START
     
-    %% Kontradiksiのハイライト
+    %% Sorotan Kontradiksi
     LOOP -.->|"Kontradiksi dengan penentuan H (true)!"| FAIL_1(("Kontradiksi"))
-    HALT -.->|"Hの判定(false)とKontradiksi!"| FAIL_2(("Kontradiksi"))
+    HALT -.->|"Keputusan H (false) dan Kontradiksi!"| FAIL_2(("Kontradiksi"))
     
     style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
     style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px

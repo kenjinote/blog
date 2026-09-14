@@ -122,7 +122,7 @@ This is an implementation of a singly linked list node structure, a function to 
 ```cpp
 #include <iostream>
 
-// リストのノード定義
+// List node definition
 struct ListNode {
     int val;
     ListNode *next;
@@ -131,7 +131,7 @@ struct ListNode {
 
 class Solution {
 public:
-    // 循環が存在するかどうかを判定する
+    // Determine if a cycle exists
     bool hasCycle(ListNode *head) {
         if (!head || !head->next) return false;
         
@@ -139,18 +139,18 @@ public:
         ListNode *fast = head;
         
         while (fast != nullptr && fast->next != nullptr) {
-            slow = slow->next;          // カメは1歩進む
-            fast = fast->next->next;    // ウサギは2歩進む
+            slow = slow->next;          // Tortoise moves 1 step
+            fast = fast->next->next;    // Hare moves 2 steps
             
             if (slow == fast) {
-                return true; // 衝突したら循環あり
+                return true; // Cycle exists if they collide
             }
         }
         
-        return false; // ウサギがゴールに到達したら循環なし
+        return false; // No cycle if hare reaches the end
     }
 
-    // サイクルの開始地点のノードを返す
+    // Return the node where the cycle begins
     ListNode *detectCycle(ListNode *head) {
         if (!head || !head->next) return nullptr;
         
@@ -170,10 +170,10 @@ public:
         
         if (!cycleExists) return nullptr;
         
-        // どちらか一方（ここではslow）を先頭に戻す
+        // Move one of them (slow in this case) back to the start
         slow = head;
         
-        // 両者を1歩ずつ進め、出会った場所がサイクルの開始地点
+        // Move both 1 step at a time; where they meet is the start of the cycle
         while (slow != fast) {
             slow = slow->next;
             fast = fast->next;
@@ -184,7 +184,7 @@ public:
 };
 
 int main() {
-    // 1 -> 2 -> 3 -> 4 -> 5 -> 3(サイクル) の構築
+    // Construct 1 -> 2 -> 3 -> 4 -> 5 -> 3 (cycle)
     ListNode* head = new ListNode(1);
     head->next = new ListNode(2);
     head->next = new ListNode(3);
@@ -203,8 +203,8 @@ int main() {
         std::cout << "No cycle." << std::endl;
     }
     
-    // メモリ解放はサイクルがあるため単純なdeleteでは不可（無限ループ防止が必要）
-    // 本来はサイクルを解消してからdeleteするなどの処理が必要です。
+    // Memory deallocation cannot be done with simple delete due to cycle (infinite loop prevention needed)
+    // Normally, you would need to resolve the cycle before deleting.
     return 0;
 }
 ```
@@ -215,8 +215,8 @@ In Rust, the rules of ownership and borrowing tend to make the implementation of
 Here, we show an example of implementation using an array that holds the "next index" instead of a "pointer to the next".
 
 ```rust
-// 次に移動する先のインデックスを持つ配列を仮想的な連結リストとみなす
-// 例: arr[i] が次のノード。
+// Treat an array holding indices of the next destination as a virtual linked list
+// Example: arr[i] is the next node.
 fn has_cycle(arr: &Vec<usize>, start_idx: usize) -> bool {
     if arr.is_empty() {
         return false;
@@ -226,11 +226,11 @@ fn has_cycle(arr: &Vec<usize>, start_idx: usize) -> bool {
     let mut fast = start_idx;
     
     loop {
-        // カメを1歩進める
+        // Move tortoise 1 step
         if slow >= arr.len() { break; }
         slow = arr[slow];
         
-        // ウサギを2歩進める
+        // Move hare 2 steps
         if fast >= arr.len() { break; }
         fast = arr[fast];
         if fast >= arr.len() { break; }
@@ -271,10 +271,10 @@ fn detect_cycle_start(arr: &Vec<usize>, start_idx: usize) -> Option<usize> {
         return None;
     }
     
-    // カメをスタート地点に戻す
+    // Move tortoise back to the start
     slow = start_idx;
     
-    // 1歩ずつ進める
+    // Move 1 step at a time
     while slow != fast {
         slow = arr[slow];
         fast = arr[fast];
@@ -284,9 +284,9 @@ fn detect_cycle_start(arr: &Vec<usize>, start_idx: usize) -> Option<usize> {
 }
 
 fn main() {
-    // インデックスによる遷移グラフ:
-    // 0 -> 1 -> 2 -> 3 -> 4 -> 2 (2から始まるサイクル)
-    // 値が範囲外(例: usize::MAX)なら終端とするが、今回はサイクルありを構築。
+    // Transition graph by index:
+    // 0 -> 1 -> 2 -> 3 -> 4 -> 2 (cycle starting from 2)
+    // If value is out of bounds (e.g. usize::MAX) treat as end, but this time construct with a cycle.
     let graph = vec![1, 2, 3, 4, 2];
     
     if has_cycle(&graph, 0) {

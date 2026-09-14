@@ -135,10 +135,10 @@ graph TD
         H -->|"false (Infinite Loops)"| HALT["Halts"]
     end
 
-    %% D に D 自身を入力する
+    %% Input D into D itself
     INPUT_D[/"Input: D"/] --> START
     
-    %% 矛盾のハイライト
+    %% Highlight contradiction
     LOOP -.->|"Contradiction with H's decision (true)!"| FAIL_1(("Contradiction"))
     HALT -.->|"Contradiction with H's decision (false)!"| FAIL_2(("Contradiction"))
     
