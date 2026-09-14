@@ -1,0 +1,162 @@
+{
+  "content/post/pedigree-collapse/index.de.md": [
+    {
+      "line_num": 126,
+      "text": "（※実際の系図はさらに複雑に絡み合っていますが、上記はその異常な重複を示す概念図です）"
+    }
+  ],
+  "content/post/floyds-cycle-finding/index.en.md": [
+    {
+      "line_num": 125,
+      "text": "// リストのノード定義"
+    },
+    {
+      "line_num": 134,
+      "text": "// 循環が存在するかどうかを判定する"
+    },
+    {
+      "line_num": 142,
+      "text": "slow = slow->next;          // カメは1歩進む"
+    },
+    {
+      "line_num": 143,
+      "text": "fast = fast->next->next;    // ウサギは2歩進む"
+    },
+    {
+      "line_num": 146,
+      "text": "return true; // 衝突したら循環あり"
+    },
+    {
+      "line_num": 150,
+      "text": "return false; // ウサギがゴールに到達したら循環なし"
+    },
+    {
+      "line_num": 153,
+      "text": "// サイクルの開始地点のノードを返す"
+    },
+    {
+      "line_num": 173,
+      "text": "// どちらか一方（ここではslow）を先頭に戻す"
+    },
+    {
+      "line_num": 176,
+      "text": "// 両者を1歩ずつ進め、出会った場所がサイクルの開始地点"
+    },
+    {
+      "line_num": 187,
+      "text": "// 1 -> 2 -> 3 -> 4 -> 5 -> 3(サイクル) の構築"
+    },
+    {
+      "line_num": 206,
+      "text": "// メモリ解放はサイクルがあるため単純なdeleteでは不可（無限ループ防止が必要）"
+    },
+    {
+      "line_num": 207,
+      "text": "// 本来はサイクルを解消してからdeleteするなどの処理が必要です。"
+    },
+    {
+      "line_num": 218,
+      "text": "// 次に移動する先のインデックスを持つ配列を仮想的な連結リストとみなす"
+    },
+    {
+      "line_num": 219,
+      "text": "// 例: arr[i] が次のノード。"
+    },
+    {
+      "line_num": 229,
+      "text": "// カメを1歩進める"
+    },
+    {
+      "line_num": 233,
+      "text": "// ウサギを2歩進める"
+    },
+    {
+      "line_num": 274,
+      "text": "// カメをスタート地点に戻す"
+    },
+    {
+      "line_num": 277,
+      "text": "// 1歩ずつ進める"
+    },
+    {
+      "line_num": 287,
+      "text": "// インデックスによる遷移グラフ:"
+    },
+    {
+      "line_num": 288,
+      "text": "// 0 -> 1 -> 2 -> 3 -> 4 -> 2 (2から始まるサイクル)"
+    },
+    {
+      "line_num": 289,
+      "text": "// 値が範囲外(例: usize::MAX)なら終端とするが、今回はサイクルありを構築。"
+    }
+  ],
+  "content/post/halting-problem/index.en.md": [
+    {
+      "line_num": 138,
+      "text": "%% D に D 自身を入力する"
+    },
+    {
+      "line_num": 141,
+      "text": "%% 矛盾のハイライト"
+    }
+  ],
+  "content/post/monte-carlo-and-las-vegas-algorithms/index.en.md": [
+    {
+      "line_num": 63,
+      "text": "print(f\"円周率の近似値: {pi_approx}\")"
+    },
+    {
+      "line_num": 124,
+      "text": "print(f\"ソート結果: {sorted_data}\")"
+    }
+  ],
+  "content/post/halting-problem/index.es.md": [
+    {
+      "line_num": 138,
+      "text": "%% D に D 自身を入力する"
+    },
+    {
+      "line_num": 141,
+      "text": "%% 矛盾のハイライト"
+    }
+  ],
+  "content/post/ship-of-theseus/index.id.md": [
+    {
+      "line_num": 37,
+      "text": "B -->|\"Migrasi Fitur B dan C\"| C[\"Sistem Campuran Lama dan Baru（新メイン）\"]"
+    }
+  ],
+  "content/post/halting-problem/index.id.md": [
+    {
+      "line_num": 77,
+      "text": "\\text{true} & (\\text{プログラム } P \\text{ が入力 } I \\text{ で停止する場合}) \\\\"
+    },
+    {
+      "line_num": 78,
+      "text": "\\text{false} & (\\text{プログラム } P \\text{ が入力 } I \\text{ で無限ループする場合})"
+    },
+    {
+      "line_num": 135,
+      "text": "H -->|\"false (Infinite loopする)\"| HALT[\"Berhenti\"]"
+    },
+    {
+      "line_num": 138,
+      "text": "%% D に D 自身をInputする"
+    },
+    {
+      "line_num": 141,
+      "text": "%% Kontradiksiのハイライト"
+    },
+    {
+      "line_num": 143,
+      "text": "HALT -.->|\"Hの判定(false)とKontradiksi!\"| FAIL_2((\"Kontradiksi\"))"
+    }
+  ],
+  "content/post/pigeonhole-principle-hash-collision/index.id.md": [
+    {
+      "line_num": 209,
+      "text": "H2{\"Fungsi Hash (数万回ループ)\"}"
+    }
+  ]
+}

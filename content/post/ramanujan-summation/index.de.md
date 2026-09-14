@@ -1,6 +1,6 @@
 ---
-title: "Ramanujans Summation – Die kontraintuitive mathematische Interpretation von „1+2+3+... = -1/12""
-description: "Was passiert, wenn man „1+2+3+4+..." unendlich addiert? Normalerweise divergiert die Summe gegen Unendlich, doch in bestimmten mathematischen Bereichen ergibt sich der erstaunliche Wert „-1/12". Dieser Artikel erklärt die „Ramanujan-Summation", ihren mathematischen Hintergrund und ihre Anwendungen in der Physik."
+title: "Ramanujans Summation – Die kontraintuitive mathematische Interpretation von 1+2+3+... = -1/12"
+description: "Was passiert, wenn man 1+2+3+4+... unendlich addiert? Normalerweise divergiert die Summe gegen Unendlich, doch in bestimmten mathematischen Bereichen ergibt sich der erstaunliche Wert -1/12. Dieser Artikel erklärt die Ramanujan-Summation, ihren mathematischen Hintergrund und ihre Anwendungen in der Physik."
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
