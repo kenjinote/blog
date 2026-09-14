@@ -71,16 +71,12 @@ $$
 Considere a operação de somar isso duas vezes. O truque é deslocá-lo um pouco antes de somar.
 
 $$
-S_2 = 1 - 2 + 3 - 4 + 5 - \dots
-$$
-$$
-+ S_2 = \quad 1 - 2 + 3 - 4 + \dots
-$$
-$$
--------------------------
-$$
-$$
-2S_2 = 1 - 1 + 1 - 1 + 1 - \dots
+\begin{array}{rcrrrrrl}
+S_2 & = & 1 & -2 & +3 & -4 & +5 & -\dots \\
+{}+S_2 & = & & +1 & -2 & +3 & -4 & +\dots \\
+\hline
+2S_2 & = & 1 & -1 & +1 & -1 & +1 & -\dots
+\end{array}
 $$
 
 Como você deve ter notado, o lado direito se tornou a série de Grandi $S_1$ mencionada anteriormente. Portanto,

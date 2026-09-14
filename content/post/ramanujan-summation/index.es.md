@@ -71,16 +71,12 @@ $$
 Pensemos en la operación de sumar esto consigo mismo ($S_2 + S_2$). El truco es sumarlo desplazándolo un poco.
 
 $$
-S_2 = 1 - 2 + 3 - 4 + 5 - \dots
-$$
-$$
-+ S_2 = \quad 1 - 2 + 3 - 4 + \dots
-$$
-$$
--------------------------
-$$
-$$
-2S_2 = 1 - 1 + 1 - 1 + 1 - \dots
+\begin{array}{rcrrrrrl}
+S_2 & = & 1 & -2 & +3 & -4 & +5 & -\dots \\
+{}+S_2 & = & & +1 & -2 & +3 & -4 & +\dots \\
+\hline
+2S_2 & = & 1 & -1 & +1 & -1 & +1 & -\dots
+\end{array}
 $$
 
 Como te habrás dado cuenta, el lado derecho se convirtió en la serie de Grandi $S_1$ de antes. Por lo tanto,

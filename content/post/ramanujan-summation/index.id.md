@@ -71,16 +71,12 @@ $$
 Pertimbangkan operasi menjumlahkan $2$ deret ini. Kuncinya adalah menjumlahkannya dengan sedikit pergeseran.
 
 $$
-S_2 = 1 - 2 + 3 - 4 + 5 - \dots
-$$
-$$
-+ S_2 = \quad 1 - 2 + 3 - 4 + \dots
-$$
-$$
--------------------------
-$$
-$$
-2S_2 = 1 - 1 + 1 - 1 + 1 - \dots
+\begin{array}{rcrrrrrl}
+S_2 & = & 1 & -2 & +3 & -4 & +5 & -\dots \\
+{}+S_2 & = & & +1 & -2 & +3 & -4 & +\dots \\
+\hline
+2S_2 & = & 1 & -1 & +1 & -1 & +1 & -\dots
+\end{array}
 $$
 
 Seperti yang Anda perhatikan, ruas kanan telah menjadi deret Grandi $S_1$ dari sebelumnya. Oleh karena itu,

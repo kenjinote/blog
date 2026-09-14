@@ -71,16 +71,12 @@ $$
 Imaginons l'opération consistant à l'additionner à elle-même. Le point clé est de décaler un peu l'addition.
 
 $$
-S_2 = 1 - 2 + 3 - 4 + 5 - \dots
-$$
-$$
-+ S_2 = \quad 1 - 2 + 3 - 4 + \dots
-$$
-$$
--------------------------
-$$
-$$
-2S_2 = 1 - 1 + 1 - 1 + 1 - \dots
+\begin{array}{rcrrrrrl}
+S_2 & = & 1 & -2 & +3 & -4 & +5 & -\dots \\
+{}+S_2 & = & & +1 & -2 & +3 & -4 & +\dots \\
+\hline
+2S_2 & = & 1 & -1 & +1 & -1 & +1 & -\dots
+\end{array}
 $$
 
 Comme vous l'avez peut-être remarqué, le côté droit correspond à la série de Grandi $S_1$ vue précédemment. Par conséquent,
