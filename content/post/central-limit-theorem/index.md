@@ -29,7 +29,9 @@ slug: "central-limit-theorem"
 標本平均を $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$ とすると、中心極限定理によれば、$n$ が十分に大きいとき、次のように標準化された変数 $Z$ は標準正規分布 $\mathcal{N}(0, 1)$ に収束します。
 
 
+$$
 Z = \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ as } n \to \infty
+$$
 
 
 ここで、$\xrightarrow{d}$ は分布収束を意味します。$\text{ as } n \to \infty$ はサンプルサイズが無限大に近づくことを示しています。
@@ -38,7 +40,7 @@ Z = \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0,
 
 中心極限定理がどのように働くかを視覚的に理解するために、Mermaidを用いたプロセス図を示します。
 
-`mermaid
+```mermaid
 graph TD
     A["元の分布（非正規分布）"] -->|"サンプリング"| B["標本1"]
     A -->|"サンプリング"| C["標本2"]
@@ -49,13 +51,13 @@ graph TD
     E -->|"分布を描画"| H["正規分布に近似"]
     F -->|"分布を描画"| H
     G -->|"分布を描画"| H
-`
+```
 
 ## 4. Pythonによるシミュレーション
 
 理論だけでなく、実際にプログラムを動かして確かめてみましょう。一様分布からデータを抽出し、その平均がどのように分布するかをシミュレーションします。
 
-`python
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -90,7 +92,7 @@ for i, n in enumerate(sample_sizes):
 
 plt.tight_layout()
 plt.show()
-`
+```
 
 このコードを実行すると、$n=1$ の時は一様分布ですが、$n$ が大きくなるにつれてヒストグラムが赤線の正規分布に近づいていくことが確認できます。
 
