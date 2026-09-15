@@ -4,15 +4,23 @@ links:
   - title: "GitHub"
     description: O GitHub é a maior plataforma de desenvolvimento de software do mundo.
     website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.webp
+    image: github.svg
   - title: "X"
     description: Uma plataforma de SNS de textos curtos.
     website: https://x.com
-    image: https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.webp
+    image: x.svg
   - title: "Stack"
     description: Tema em estilo de cartão criado para blogueiros.
     website: https://stack.jimmycai.com/
     image: stack.webp
+  - title: hack.jp
+    description: Outro site do autor sobre programação para Windows com C/C++.
+    website: https://hack.jp/
+    image: hack.svg
+  - title: Microsoft Store — Kenji
+    description: Baixe aplicativos criados pelo autor, Kenji.
+    website: https://apps.microsoft.com/search/publisher?name=Kenji
+    image: microsoft-store.svg
 menu:
     main: 
         weight: -50

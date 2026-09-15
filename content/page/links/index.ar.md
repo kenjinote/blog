@@ -4,15 +4,23 @@ links:
   - title: "GitHub"
     description: "GitHub هو أكبر منصة لتطوير البرمجيات في العالم."
     website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.webp
+    image: github.svg
   - title: "X"
     description: "منصة تواصل اجتماعي للنصوص القصيرة."
     website: https://x.com
-    image: https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.webp
+    image: x.svg
   - title: "Stack"
     description: "سمة بنمط البطاقات مصممة للمدونين."
     website: https://stack.jimmycai.com/
     image: stack.webp
+  - title: hack.jp
+    description: موقع آخر للكاتب يتناول برمجة Windows باستخدام C/C++.
+    website: https://hack.jp/
+    image: hack.svg
+  - title: Microsoft Store — Kenji
+    description: حمّل التطبيقات التي طوّرها الكاتب Kenji.
+    website: https://apps.microsoft.com/search/publisher?name=Kenji
+    image: microsoft-store.svg
 menu:
     main: 
         weight: -50

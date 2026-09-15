@@ -4,15 +4,23 @@ links:
   - title: GitHub
     description: GitHub 是世界上最大的软件开发平台。
     website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.webp
+    image: github.svg
   - title: X
     description: 短文社交网络平台。
     website: https://x.com
-    image: https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.webp
+    image: x.svg
   - title: Stack
     description: 专为博主设计的卡片式主题。
     website: https://stack.jimmycai.com/
     image: stack.webp
+  - title: hack.jp
+    description: 作者的另一个网站，介绍使用C/C++进行Windows编程。
+    website: https://hack.jp/
+    image: hack.svg
+  - title: Microsoft Store — Kenji
+    description: 下载作者Kenji开发的应用。
+    website: https://apps.microsoft.com/search/publisher?name=Kenji
+    image: microsoft-store.svg
 menu:
     main: 
         weight: -50
