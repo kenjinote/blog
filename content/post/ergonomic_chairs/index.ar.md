@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'شرح مفصل يعتمد على الميكانيكا الحيوية والفيزياء لكيفية اختيار الكراسي المريحة التي تحمي العاملين عن بُعد من آلام الظهر. مقارنة شاملة للنهج الهيكلي للطرازات الفاخرة مثل كرسي إيرون وكونتيسا.'
 ---

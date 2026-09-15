@@ -4,7 +4,7 @@ description: "Une plongée approfondie dans l'histoire et le contexte mathémati
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Théorie des ensembles"]
+categories: ["mathematics", "set-theory"]
 tags: ["Hypothèse du continu", "Cantor", "Infini", "Mathématiques"]
 ---
 

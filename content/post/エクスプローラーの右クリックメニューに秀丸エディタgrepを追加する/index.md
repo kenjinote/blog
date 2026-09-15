@@ -5,7 +5,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["秀丸エディタ", "エクスプローラー", "右クリックメニュー", "grep", "レジストリ"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'Windows 10/11のエクスプローラーの右クリックメニューに、秀丸エディタのgrep機能を追加する便利な設定手順を紹介。レジストリ登録ファイルを使った簡単な方法をわかりやすく解説します。'
 ---
 

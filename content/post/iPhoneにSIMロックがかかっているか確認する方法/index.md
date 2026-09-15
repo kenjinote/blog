@@ -5,7 +5,7 @@ date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIMロック"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'お手持ちのiPhoneにSIMロックがかかっているか、解除されているかを設定画面から簡単に確認する手順を分かりやすく解説します。格安SIMへの乗り換えや中古端末購入時の参考にしてください。'
 ---
 

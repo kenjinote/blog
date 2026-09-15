@@ -5,7 +5,7 @@ date: 2024-08-24T18:38:47+09:00
 tags: ["爱因斯坦", "名言", "哲学", "科学", "物理学"]
 draft: false
 image: "Solvay_conference_1927.webp"
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '介绍爱因斯坦发人深省的名言。讲解不因他人评价和批评而喜忧参半、相信自己并持续坚强站立的教诲。充满可应用于职场和社交网络等现代日常生活的启示。'
 ---
 

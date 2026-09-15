@@ -5,7 +5,7 @@ date: 2022-09-23T01:37:43+09:00
 tags: ["Community", "Miscellaneous"]
 draft: false
 image: "img.webp"
-categories: ["IT / Technology"]
+categories: ["it-technology"]
 description: 'Considers the elements necessary for running a healthy and comfortable community based on the refined community guidelines of the programming learning site ''Scratch''. Introduces vital perspectives applicable to any gathering, such as respect for others and ensuring safety.'
 ---
 # What a Community Needs

@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["Programmation", "Polices"]
 draft: false
 image: "img.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Nous présentons des polices optimales pour le codage telles que JetBrains Mono, HackGen, Ricty Diminished, Cica et Migu. Améliorez la visibilité de votre éditeur et augmentez l''efficacité de votre développement.'
 ---
 

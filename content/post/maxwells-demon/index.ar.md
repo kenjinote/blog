@@ -3,7 +3,7 @@ title: "شيطان ماكسويل: طاقة \"المعلومات\" التي تح
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "نشرح بالتفصيل وبدعم من الصيغ والرسوم التوضيحية التجربة الفكرية \"شيطان ماكسويل\" التي تبدو وكأنها تكسر القانون الثاني للديناميكا الحرارية، وكيف حُلّت هذه المفارقة بواسطة \"فيزياء المعلومات\"."
-categories: ["Physics", "Information Theory"]
+categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]
 slug: "maxwells-demon"
 ---

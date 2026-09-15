@@ -4,7 +4,7 @@ description: "클레이 수학연구소의 밀레니엄 현상 문제 중 하나
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "과학"]
+categories: ["mathematics", "science"]
 tags: ["밀레니엄 현상 문제", "위상수학", "대수기하학", "호지 추측"]
 ---
 

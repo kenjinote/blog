@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["المجتمع", "الفلسفة", "ويب 3"]
+categories: ["society", "philosophy", "web3"]
 tags: ["غرفة الصدى", "الخوارزميات", "بروتوكول AT", "الهندسة الاجتماعية"]
 ---
 

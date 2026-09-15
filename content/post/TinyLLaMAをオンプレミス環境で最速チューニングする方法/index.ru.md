@@ -5,7 +5,7 @@ date: "2026-09-11T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "Fine-Tuning"]
+categories: ["ai", "llm", "fine-tuning"]
 tags: ["TinyLLaMA", "LoRA", "QLoRA", "On-Premises", "Local AI"]
 description: 'Полное руководство по эффективному и самому быстрому файнтюнингу TinyLLaMA в локальной среде. Подробно объясняются математические основы LoRA и QLoRA, практический код на PyTorch и методы оптимизации с использованием Flash Attention 2.'
 ---

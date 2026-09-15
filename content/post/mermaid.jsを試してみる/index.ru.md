@@ -6,7 +6,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["ИИ и Технологии"]
+categories: ["ai-technology"]
 description: 'Обзор библиотеки JavaScript «Mermaid.js», которая позволяет создавать диаграммы, такие как блок-схемы и диаграммы Ганта, на основе текста, а также пошаговое объяснение конкретных действий по ее внедрению и настройке в генераторе статических сайтов Hugo.'
 ---
 

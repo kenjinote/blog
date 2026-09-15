@@ -9,7 +9,7 @@ date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "순회 외판원 문제", "알고리즘", "수학"]
 draft: false
 image: "img.webp"
-categories: ["수학・암호・양자"]
+categories: ["math-cryptography-quantum"]
 description: '수식 처리 시스템 Mathematica를 사용하여 외판원 문제(TSP)를 푸는 방법을 설명합니다. SparseArray 함수를 사용하여 도시 간의 거리 행렬을 만들고, FindShortestTour로 최단 경로를 구하는 절차를 소개합니다.'
 ---
 

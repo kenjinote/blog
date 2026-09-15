@@ -5,7 +5,7 @@ date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "رياضيات", "خوارزميات"]
 draft: false
 image: "img.webp"
-categories: ["الرياضيات والتشفير والكم"]
+categories: ["math-cryptography-quantum"]
 description: 'نشرح للمبتدئين كيفية الاستخدام الأساسي وأوامر الحساب في Mathematica. قمنا بتجميع أمثلة محددة للدوال المستخدمة بشكل متكرر مثل حل المعادلات وأنظمة المعادلات (Solve)، والمتباينات (Reduce)، والتفاضل (D)، والتكامل (Integrate)، وحساب المصفوفات.'
 ---
 # مقدمة في Mathematica

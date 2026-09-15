@@ -5,7 +5,7 @@ date: 2023-07-22T15:25:10+09:00
 tags: ["数学", "历史"]
 draft: false
 image: "img.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '结合古代大事件及年表，回顾数学的历史。详细解说支撑了数学发展的重大发现与历史轨迹，包括古希腊的三大作图问题（化圆为方、三等分角、倍立方体）、阿基米德螺线以及帕普斯定理等。'
 ---
 

@@ -5,7 +5,7 @@ date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
-categories: ["Tools und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Ein Bericht über meine neunte Auszeichnung als Microsoft MVP (2025-2026) insgesamt. Neben einer Erklärung des MVP-Programms, das zur technischen Community beiträgt, liefere ich einen Rückblick auf die technische Informationsverbreitung und Community-Aktivitäten, auf die ich mich im vergangenen Jahr besonders konzentriert habe.'
 ---
 

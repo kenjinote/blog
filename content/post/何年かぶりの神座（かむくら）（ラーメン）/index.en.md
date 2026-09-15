@@ -5,7 +5,7 @@ date: 2022-09-09T21:45:19+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'I visited the popular ramen shop ''Dotonbori Kamukura'' for the first time in a while. This time, I ordered the recommended ''Green Onion Kimchi Ramen''! The unique, delicious soup that I crave occasionally went perfectly with plenty of vegetables and green onion kimchi.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "Tombol Pintasan", "Input Bahasa Jepang"]
 draft:
 image: "img.webp"
-categories: ["PC & Gadget"]
+categories: ["pc-gadgets"]
 description: 'Menjelaskan cara mengubah peralihan input antara bahasa Jepang dan Inggris di Mac (Keyboard US) ke pintasan keyboard pilihan Anda, seperti ''Alt + `''. Kami juga memperkenalkan prosedur pengaturan di macOS Ventura dan pengaturan untuk mencegah penyertaan katakana saat beralih.'
 ---
 

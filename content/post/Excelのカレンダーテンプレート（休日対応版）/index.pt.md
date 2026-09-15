@@ -5,7 +5,7 @@ date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "Calendário", "Template", "Feriados"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Distribuímos gratuitamente um útil modelo de calendário em Excel onde você só precisa inserir o ano e o mês, e os feriados do Japão são atualizados automaticamente. Baixe e utilize para o gerenciamento de cronogramas e aumento de produtividade.'
 ---
 

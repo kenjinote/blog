@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'Ein umfassender Leitfaden zu High-End-Tastaturen, die die Produktivität von Ingenieuren drastisch verbessern. Wir stellen 5 ultimative Modelle vor und gehen dabei tief auf die Physik der Schalter und die Funktionsweise der Firmware ein.'
 ---

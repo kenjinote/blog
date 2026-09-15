@@ -5,7 +5,7 @@ date: '2026-09-11T00:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["IA", "Machine Learning", "C++"]
+categories: ["ai", "machine-learning", "cpp"]
 tags: ["llama.cpp", "GGUF", "Cuantización", "LLM"]
 description: 'Explicaremos con gran detalle, incluyendo fórmulas matemáticas y diagramas de arquitectura, la estructura interna del formato GGUF y la tecnología de cuantización k-quants empleada en llama.cpp.'
 ---

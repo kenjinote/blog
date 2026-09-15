@@ -4,10 +4,7 @@ description: "秘書問題（Secretary Problem）とは何か？最適停止問�
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Algorithm"
-  - "Decision Making"
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "Optimal Stopping"
   - "Secretary Problem"

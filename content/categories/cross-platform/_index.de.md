@@ -1,0 +1,5 @@
+---
+{
+  "title": "Plattformübergreifende Entwicklung"
+}
+---

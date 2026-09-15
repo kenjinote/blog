@@ -5,7 +5,7 @@ date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Ekstensi", "Add-ons"]
 draft: false
 image: "img.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Memperkenalkan daftar ekstensi yang direkomendasikan yang membuat Visual Studio Code (VSCode) menjadi lebih nyaman. Kami telah menyeleksi plugin penting yang meningkatkan efisiensi pengembangan, seperti manajemen kontainer, manajemen kode Git, dan pelengkapan kode AI dengan Copilot.'
 ---
 

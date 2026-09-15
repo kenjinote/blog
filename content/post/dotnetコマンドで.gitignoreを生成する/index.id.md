@@ -5,7 +5,7 @@ date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Menjelaskan dengan mudah cara membuat file .gitignore secara otomatis yang cocok untuk lingkungan pengembangan seperti Visual Studio, dengan menggunakan perintah dotnet (dotnet new gitignore) yang disertakan dalam .NET SDK.'
 ---
 Perintah dotnet.exe berguna karena memungkinkan Anda untuk membangun program sederhana, jadi sangat praktis untuk disiapkan.

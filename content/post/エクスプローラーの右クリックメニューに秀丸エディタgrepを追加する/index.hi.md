@@ -5,7 +5,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "एक्सप्लोरर", "संदर्भ मेनू", "grep", "रजिस्ट्री"]
 draft: false
 image: "img.webp"
-categories: ["उपकरण और विकास पर्यावरण"]
+categories: ["tools-development-environment"]
 description: 'Windows 10/11 के फाइल एक्सप्लोरर के राइट-क्लिक मेनू में Hidemaru Editor की grep सुविधा को जोड़ने के लिए सुविधाजनक सेटिंग प्रक्रिया का परिचय दिया गया है। रजिस्ट्री पंजीकरण फ़ाइल का उपयोग करके आसान तरीका समझाया गया है।'
 ---
 

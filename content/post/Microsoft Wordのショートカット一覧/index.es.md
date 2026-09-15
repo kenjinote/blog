@@ -12,7 +12,7 @@ date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Atajos de teclado"]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y Entorno de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Una lista de atajos de teclado útiles para mejorar drásticamente la eficiencia en Microsoft Word. Presentamos de manera clara en una tabla los atajos esenciales utilizados frecuentemente en la redacción y edición diaria, como formato de texto, copiar y pegar, buscar y reemplazar, y guardar.'
 ---
 

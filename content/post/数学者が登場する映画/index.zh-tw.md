@@ -5,7 +5,7 @@ date: 2022-09-05T10:41:00+09:00
 tags: ["電影", "數學家"]
 draft: false
 image: "images/img.webp"
-categories: ["數學・密碼・量子"]
+categories: ["math-cryptography-quantum"]
 description: '介紹以天才數學家為主角的推薦經典電影。包括《美麗境界》、描寫破解恩尼格瑪密碼機的《模仿遊戲》、拉馬努金的真實故事《天才無限家》等，數學之美與人性劇集交織而成的傑作選。'
 ---
 這是我推薦的 3 部以數學家為主角的電影。

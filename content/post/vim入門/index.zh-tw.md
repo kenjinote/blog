@@ -5,7 +5,7 @@ date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "文字編輯器"]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '為初學者解說 Vim 的基本使用方法。全面涵蓋最初的步驟，包含在 Windows 環境的安裝方法、啟動與結束指令 (如儲存、強制結束等)，以及指令模式與輸入模式的差異。'
 ---
 

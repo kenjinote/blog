@@ -5,7 +5,7 @@ date: 2022-09-13T01:16:40+09:00
 tags: ["Github","डोमेन"]
 draft: false
 image: "images/octocat.webp"
-categories: ["उपकरण और विकास का वातावरण"]
+categories: ["tools-development-environment"]
 description: 'हम GitHub रिपॉजिटरी (GitHub Pages) में कस्टम डोमेन सेट करने की प्रक्रिया की व्याख्या करेंगे। इस बार, हम "Onamae.com" की प्रबंधन स्क्रीन से DNS A रिकॉर्ड जोड़ने और बदलने और उन्हें GitHub के साथ जोड़ने के विशिष्ट चरणों को पेश करेंगे。'
 ---
 Github रिपॉजिटरी में कस्टम डोमेन सेट करने के लिए, आपको अपने डोमेन की DNS सेटिंग्स को बदलना होगा।

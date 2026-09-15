@@ -5,7 +5,7 @@ date: 2026-09-05T02:26:13+09:00
 tags: ["Mathematik", "Kryptographie", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"
-categories: ["Mathematik, Kryptographie und Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir erklären die wahre mathematische Struktur des Zahlkörpersiebs (GNFS), eines Algorithmus zur Primfaktorzerlegung. Wir enträtseln den fortschrittlichen Mechanismus zur effizienten Faktorisierung riesiger zusammengesetzter Zahlen mithilfe von „Homomorphismen“, die die Welt der realen ganzen Zahlen und die Welt der algebraischen Zahlkörper verbinden.'
 ---
 

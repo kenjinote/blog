@@ -6,9 +6,7 @@ date: '2026-09-10T06:00:00+09:00'
 image: 'img/hilberts_hotel.jpg'
 math: true
 mermaid: true
-categories:
-  - '數學悖論'
-  - '集合論'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - '悖論'
   - '無限'

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Workspace"]
+categories: ["gadgets", "productivity", "workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
 description: 'इंजीनियरों के लिए अंतिम मल्टी-डिस्प्ले निर्माण गाइड। विज़न एर्गोनॉमिक्स, बैंडविड्थ गणना, पीपीआई और स्केलिंग तंत्र को विस्तार से समझाया गया है।'
 ---

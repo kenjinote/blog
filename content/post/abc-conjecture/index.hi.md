@@ -4,7 +4,7 @@ description: "एबीसी अनुमान का अवलोकन औ�
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "विज्ञान"]
+categories: ["mathematics", "science"]
 tags: ["एबीसी अनुमान", "संख्या सिद्धांत", "IUT सिद्धांत", "शिनिची मोचिज़ुकी"]
 ---
 

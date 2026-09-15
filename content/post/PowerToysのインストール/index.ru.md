@@ -5,7 +5,7 @@ date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "командная строка", "PowerToys", "winget"]
 draft: false
 image: "img.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Представлена процедура легкой установки и удаления Microsoft PowerToys в среде Windows с помощью команды winget, пакетного менеджера. Ее можно выполнить сразу из командной строки.'
 ---
 

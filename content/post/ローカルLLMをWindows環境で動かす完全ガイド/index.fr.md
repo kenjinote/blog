@@ -5,7 +5,7 @@ date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["IA", "LLM", "Windows"]
+categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "IA Locale", "Ollama", "llama.cpp"]
 ---
 

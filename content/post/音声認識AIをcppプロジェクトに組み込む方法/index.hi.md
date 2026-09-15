@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "Audio Processing"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "Speech Recognition", "C++"]
 description: 'C++ और whisper.cpp का उपयोग करके एज डिवाइसेज और नेटिव एप्लिकेशन्स में हाई-प्रिसिजन स्पीच रिकग्निशन एआई को इंटीग्रेट करने के लिए एक पूरी गाइड। इसमें ऑडियो सिग्नल प्रोसेसिंग के बेसिक्स से लेकर रियल-टाइम इन्फेरेंस ऑप्टिमाइज़ेशन तक सब कुछ शामिल है।'
 ---

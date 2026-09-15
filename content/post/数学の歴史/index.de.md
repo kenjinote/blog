@@ -5,7 +5,7 @@ date: 2023-07-22T15:25:10+09:00
 tags: ["Mathematik", "Geschichte"]
 draft: false
 image: "img.webp"
-categories: ["Mathematik, Kryptographie und Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir blicken auf die Geschichte der Mathematik zusammen mit antiken Ereignissen und einer Zeitleiste zurück. Wir erklären detailliert wichtige Entdeckungen und historische Meilensteine, die die Entwicklung der Mathematik unterstützt haben, wie die drei klassischen Probleme der Konstruktion im antiken Griechenland (Quadratur des Kreises, Dreiteilung des Winkels, Verdoppelung des Würfels), die archimedische Spirale und den Satz von Pappos.'
 ---
 

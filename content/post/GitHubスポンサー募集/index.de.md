@@ -5,7 +5,7 @@ date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false
 image: "img.webp"
-categories: ["Werkzeuge und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Unser Projekt sucht nach GitHub-Sponsoren. Die durch Ihre Unterstützung bereitgestellten Mittel werden sorgfältig als Betriebskosten für die Bereitstellung besserer Software verwendet, wie z. B. für die Entwicklung nützlicher Tools oder den Erwerb von Code-Signing-Zertifikaten.'
 ---
 

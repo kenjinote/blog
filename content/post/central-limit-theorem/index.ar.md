@@ -3,7 +3,7 @@ title: "نظرية النهاية المركزية (Central Limit Theorem) - م�
 description: "شرح مفصل لنظرية النهاية المركزية، إحدى أهم النظريات في الإحصاء، من الفهم البديهي إلى البرهان الرياضي والمحاكاة باستخدام Python."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "الإحصاء"]
+categories: ["mathematics", "statistics"]
 tags: ["نظرية النهاية المركزية", "الاحتمالات", "علم البيانات", "Python"]
 slug: "central-limit-theorem"
 ---

@@ -5,7 +5,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "檔案總管", "右鍵選單", "grep", "登錄檔"]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '介紹在 Windows 10/11 檔案總管的右鍵選單中，新增秀丸編輯器 grep 功能的實用設定步驟。淺顯易懂地解說使用登錄檔登錄檔的簡單方法。'
 ---
 

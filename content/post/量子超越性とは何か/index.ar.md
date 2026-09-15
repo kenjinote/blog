@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: 'شرح مفصل بداية من تعريف التفوق الكمومي، وتجربة معالج Sycamore من جوجل في 2019، وردود فعل ومقاربات IBM، وصولاً إلى أحدث التطورات نحو تصحيح الأخطاء والحوسبة الكمومية المتسامحة مع الأخطاء (FTQC).'
 ---

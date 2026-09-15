@@ -5,7 +5,7 @@ date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نشرح خطوات تضمين مكتبة libcurl المتوافقة مع OpenSSL في بيئة Visual Studio باستخدام أداة إدارة الحزم المفيدة "vcpkg" في تطوير C++. يمكنك حل البناء والاعتمادات (Dependencies) بسلاسة.'
 ---
 

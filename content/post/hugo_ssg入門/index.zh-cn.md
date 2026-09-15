@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: '详细讲解如何从类似WordPress的动态CMS迁移到基于Go语言的超高速静态网站生成器Hugo。涵盖架构差异、模板结构、数理性能分析以及实际的迁移命令。'
 ---

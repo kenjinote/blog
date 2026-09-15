@@ -5,7 +5,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "路徑", "執行檔", "命令提示字元"]
 draft: false
 image: "img.webp"
-categories: ["電腦與小工具"]
+categories: ["pc-gadgets"]
 description: '解說如何在 Windows 的命令提示字元或 PowerShell 中，輕鬆查詢執行檔的儲存位置（完整路徑）。介紹使用「where」指令，快速鎖定已設定路徑應用程式確切位置的實用小技巧巧。'
 ---
 

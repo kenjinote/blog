@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["수학 패러독스", "통계학", "심리학"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["패러독스", "베이즈 정리", "확률", "인지 편향", "기준 비율의 오류"]
 ---
 

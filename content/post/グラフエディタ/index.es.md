@@ -9,7 +9,7 @@ date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "grafos"]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y entorno de desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Presentamos editores de gráficos útiles basados en web que te permiten crear diagramas y gráficos fácilmente con solo ingresar números en el navegador. Explicamos en detalle funciones como mover elementos con el ratón, crear gráficos dirigidos y descargar el gráfico creado en formato de imagen PNG.'
 ---
 

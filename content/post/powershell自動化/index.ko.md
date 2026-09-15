@@ -5,7 +5,7 @@ date: "2026-09-13T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "Automation"]
+categories: ["programming", "windows", "automation"]
 tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: 'PowerShell을 활용하여 일상적인 Windows 업무를 완전히 자동화하기 위한 실용적인 가이드. 백업, 로그 모니터링 및 Slack 알림, 여러 리포지토리의 Git 업데이트 및 빌드 등 구체적인 사례를 해설.'
 ---

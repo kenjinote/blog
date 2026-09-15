@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "text editor"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environment"]
+categories: ["tools-development-environment"]
 description: 'Clearly explains the steps to install ''micro'', a terminal-based text editor that works comfortably in the Command Prompt, on Windows and set environment variables so it''s ready to use.'
 ---
 

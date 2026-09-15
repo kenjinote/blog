@@ -5,7 +5,7 @@ date: 2025-07-21T22:53:03+09:00
 tags: ["数学", "开普勒猜想", "解说"]
 draft: false
 image: "img.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '“怎样把西瓜装得最紧凑？”通俗易懂地讲解由身边疑问引出的数学难题“开普勒猜想”。带您一同领略由天才天文学家开普勒提出、400多年未能证明的球体填充问题的浪漫与兴趣。'
 ---
 

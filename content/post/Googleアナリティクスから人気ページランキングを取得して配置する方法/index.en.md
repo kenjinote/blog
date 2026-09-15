@@ -5,7 +5,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Blog Management"]
+categories: ["blogging"]
 description: 'We explain how to use ''Ranklet'', a service that can easily and automatically display popular page rankings of a site by linking with Google Analytics. Taking a HUGO blog as an example, we introduce setting procedures and HTML/CSS template customization methods.'
 ---
 

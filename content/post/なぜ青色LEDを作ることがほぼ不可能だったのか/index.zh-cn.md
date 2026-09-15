@@ -5,7 +5,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["科学", "物理学", "半导体"]
 draft: false
 image: "img.webp"
-categories: ["IT与科技"]
+categories: ["it-technology"]
 description: '介绍一部讲解实现蓝色LED有多么困难的英语纪录片节目。提及日本人解决被认为是不可能的难题的伟业，以及国内外评价的落差。'
 ---
 

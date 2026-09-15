@@ -8,7 +8,7 @@ tags: ["Computación cuántica", "GNFS", "Algoritmo de Shor", "Criptoanálisis",
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["Matemáticas・Criptografía・Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'El problema de la factorización de enteros que respalda la seguridad del cifrado RSA. Desde los mecanismos matemáticos del "algoritmo de criba general de cuerpos de números (GNFS)", el algoritmo clásico más potente, hasta una explicación profunda con fórmulas y diagramas de por qué el "algoritmo de Shor" por ordenadores cuánticos lo derrotaría.'
 ---
 

@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true
-categories:
-  - '수학 패러독스'
-  - '확률론'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - '패러독스'
   - '베이즈 정리'

@@ -5,7 +5,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "鎖定電腦", "捷徑"]
 draft: false
 image: "img.webp"
-categories: ["電腦與小工具"]
+categories: ["pc-gadgets"]
 description: '附圖淺顯易懂地解說能一鍵鎖定 Windows 電腦的捷徑建立方法。同時介紹使用 Win+L 鍵一瞬間鎖定，作為離開座位時的安全對策的實用方法。'
 ---
 

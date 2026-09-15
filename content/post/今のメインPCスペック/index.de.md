@@ -5,7 +5,7 @@ date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
-categories: ["PC-Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Ich habe die Spezifikationen meines derzeit verwendeten Haupt-PCs (Core i7-8700K, 32 GB Speicher, Windows 11) und meine Arbeitsumgebung zusammengefasst. Die aktuelle Konfiguration, bei der ein Desktop-PC von Mouse Computer verwendet wird, wird als Referenz vorgestellt.'
 ---
 Hier sind die Spezifikationen meines aktuellen Haupt-PCs.

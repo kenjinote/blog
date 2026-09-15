@@ -5,7 +5,7 @@ date: 2023-04-09T14:01:00+09:00
 tags: ["online", "lingkungan eksekusi kode", "pemrograman"]
 draft: false
 image: "img.webp"
-categories: ["pemrograman"]
+categories: ["programming"]
 description: 'Kami merangkum lingkungan eksekusi kode online praktis berdasarkan bahasa pemrograman (Python, JavaScript, C++, dll.) agar Anda bisa dengan mudah mulai memprogram tanpa repot mengatur environment. Menguraikan secara spesifik fitur-fitur layanan seperti Google Colab dan AWS Cloud9.'
 ---
 

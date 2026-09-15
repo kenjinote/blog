@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["प्रोग्रामिंग", "फ़ॉन्ट्स"]
 draft: false
 image: "img.webp"
-categories: ["प्रोग्रामिंग"]
+categories: ["programming"]
 description: 'हम कोडिंग के लिए सर्वोत्तम प्रोग्रामिंग फ़ॉन्ट पेश करते हैं, जैसे कि JetBrains Mono, HackGen, Ricty Diminished, Cica, और Migu। आइए संपादक की दृश्यता बढ़ाएं और विकास दक्षता में सुधार करें।'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","Tests"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Explique pour les débutants comment écrire du code de test en Rust et la procédure d''exécution des tests à l''aide de la commande cargo test. Présente en détail l''utilisation de l''attribut #[test] et les résultats de sortie lors du succès ou de l''échec avec des exemples de code concrets.'
 ---
 

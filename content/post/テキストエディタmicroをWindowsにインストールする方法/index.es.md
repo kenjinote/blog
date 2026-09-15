@@ -12,7 +12,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "editor de texto"]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y Entorno de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Explicamos de forma sencilla los pasos para instalar ''micro'', un editor de texto orientado a terminal que funciona fluidamente en el símbolo del sistema, en Windows y cómo configurar las variables de entorno para usarlo.'
 ---
 

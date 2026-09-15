@@ -5,7 +5,7 @@ date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: 'Menjelaskan langkah-langkah pengembangan terperinci dan arsitektur internal untuk menginferensi model AI skala kecil seperti TinyLLaMA di lingkungan lokal menggunakan C++ dan ggml. Mencakup pemetaan memori, operasi tensor, dan optimisasi SIMD.'
 ---

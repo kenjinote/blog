@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: '2020年度小學程式設計教育必修化至今已過數年，本文將從電腦科學的角度，深入探討日本IT教育目前所面臨的本質性課題。'
 ---

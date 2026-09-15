@@ -13,7 +13,7 @@ date: 2026-01-23T13:43:41+09:00
 tags: ["Primero los Japoneses", "Política", "Problemas sociales"]
 draft: false
 image: "img.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Analizamos la realidad del aumento de precios y el envejecimiento de la población detrás del término ''Los japoneses primero'', que gana apoyo en el Japón de 2026. Dejando a un lado los argumentos emocionales, consideramos la verdadera naturaleza de los problemas sociales basada en datos objetivos y cómo debería ser la coexistencia en el futuro.'
 ---
 

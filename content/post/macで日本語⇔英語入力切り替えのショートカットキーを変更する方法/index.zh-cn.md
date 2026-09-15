@@ -5,7 +5,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "快捷键", "日语输入"]
 draft:
 image: "img.webp"
-categories: ["PC・数码产品"]
+categories: ["pc-gadgets"]
 description: '详细讲解如何在Mac（US键盘）上将中英文输入法切换更改为自己喜欢的快捷键，例如“Alt + `”。同时介绍在macOS Ventura中的设置步骤，以及如何防止切换时混入片假名的设置。'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-05-05T16:03:33+09:00
 tags: ["工程師", "初學者", "書籍"]
 draft: false
 image: "img.webp"
-categories: ["生活方式與雜記"]
+categories: ["lifestyle-miscellaneous"]
 description: '想從程式設計初學者邁向中階的工程師必看！嚴選介紹《無瑕的程式碼》與《程式設計師的自我修養》等 15 本推薦初學者的必讀書籍，讓您學習軟體開發的基礎知識與設計手法。'
 ---
 

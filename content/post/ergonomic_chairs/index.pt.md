@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'Uma explicação completa da física e seleção de cadeiras ergonômicas baseadas na biomecânica para proteger trabalhadores remotos de dores nas costas. Também compara abordagens estruturais de modelos premium como a cadeira Aeron e a Contessa.'
 ---

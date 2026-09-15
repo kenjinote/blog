@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: "VRAM (GPU memory) shortage is the biggest barrier in LLM training and inference. This article thoroughly explains resolution techniques such as CPU offloading, KV cache quantization, and gradient checkpointing, using mathematical formulas and architecture diagrams."
 ---

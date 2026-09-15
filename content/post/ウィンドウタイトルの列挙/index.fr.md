@@ -5,7 +5,7 @@ date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Nous expliquons comment énumérer et récupérer facilement les titres de toutes les fenêtres actuellement ouvertes sur votre PC à l''aide de PowerShell. Nous présentons cela de manière claire pour les débutants, en incluant des commandes réelles et des exemples de sortie.'
 ---
 # Énumération des titres de fenêtres

@@ -5,7 +5,7 @@ date: 2024-01-05T00:14:22+09:00
 tags: ["Musique Occidentale", "Musique"]
 draft: false
 image: "img.webp"
-categories: ["Style de vie et Divers"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Nous vous présentons des chefs-d''œuvre recommandés de la musique occidentale qui traversent le temps, comme The Beatles, Coldplay et Ed Sheeran. Des ballades touchantes aux morceaux pop entraînants, nous avons compilé les chansons à succès incontournables.'
 ---
 

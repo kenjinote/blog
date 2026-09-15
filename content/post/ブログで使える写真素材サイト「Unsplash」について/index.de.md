@@ -5,7 +5,7 @@ date: 2023-04-02T14:44:17+09:00
 tags: ["Fotomaterial", "Blog", "Unsplash"]
 draft: false
 image: "img_1.webp"
-categories: ["Blog-Management"]
+categories: ["blogging"]
 description: 'Wir stellen Ihnen „Unsplash“ vor, eine Seite mit kostenlosen Fotomaterialien, ideal für Blogartikel. Es handelt sich um einen sehr benutzerfreundlichen und hochwertigen Bilddienst: kostenlos, kommerzielle Nutzung erlaubt, bearbeitbar und ohne Notwendigkeit zur Quellenangabe oder Genehmigung.'
 ---
 ## Über "Unsplash"

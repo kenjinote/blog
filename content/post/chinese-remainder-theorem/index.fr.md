@@ -4,9 +4,7 @@ description: "Nous expliquons en détail le théorème des restes chinois (TRC),
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Théorie de la cryptographie"
+categories: ["mathematics", "cryptography"]
 tags:
   - "Théorème des restes chinois"
   - "TRC"

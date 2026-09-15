@@ -5,7 +5,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["Phrase", "Expression"]
 draft: false
 image: "img.webp"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'Introduces ''Hanlon''s Razor'', a psychological approach that suggests ''never attributing to malice that which is adequately explained by stupidity or carelessness''. Explains hints for resolving daily frustrations, such as slow LINE replies, and reducing relationship stress.'
 ---
 

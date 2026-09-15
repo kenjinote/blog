@@ -5,7 +5,7 @@ date: 2025-08-31T20:24:49+09:00
 tags: ["新年贺卡制作应用开发直播", "YouTube"]
 draft: false
 image: "img.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '使用C++开发贺年卡制作应用的YouTube直播第1期。从创建GIT仓库到主窗口显示，再到Direct2D的初始化和HelloWorld的实现，结合源代码为您解说构成应用开发基础的环境搭建步骤。'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "Open Source"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Stellt die Neuigkeit vor, dass der Quellcode des vor etwa 40 Jahren veröffentlichten Betriebssystems „MS-DOS 4.0“ als Open Source auf GitHub veröffentlicht wurde. Erklärt dieses historische Material, dessen Code größtenteils in 8086-Assembly geschrieben ist.'
 ---
 

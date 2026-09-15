@@ -5,7 +5,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["Bahasa C", "Bilangan Prima", "Algoritma", "Matematika"]
 draft: false
 image: "img.webp"
-categories: ["Matematika, Kriptografi, Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Kami memperkenalkan contoh kode bahasa C sederhana yang akan menilai, menghasilkan serta menghitung bilangan prima dalam rentang yang telah ditentukan (dari 1 hingga n). Dengan menggunakan algoritma efisien yang memanfaatkan fungsi isPrime, kami mempublikasikan panduan beserta contoh implementasi pemrograman yang mudah dimengerti bahkan untuk para pemula.'
 ---
 

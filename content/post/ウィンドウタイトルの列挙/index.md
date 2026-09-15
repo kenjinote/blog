@@ -5,7 +5,7 @@ date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'PowerShellを使用して、PC上で現在開いているすべてのウィンドウのタイトルを簡単に列挙・取得する方法を解説。実際のコマンドと出力サンプルを交えて、初心者にもわかりやすく紹介します。'
 ---
 # ウィンドウタイトルの列挙

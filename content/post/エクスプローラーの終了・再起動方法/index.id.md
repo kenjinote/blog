@@ -5,7 +5,7 @@ date: 2024-03-30T15:40:24+09:00
 tags: ["File Explorer"]
 draft: false
 image: "img_2.webp"
-categories: ["IT dan Teknologi"]
+categories: ["it-technology"]
 description: 'Menjelaskan berbagai cara untuk menutup dan merestart Explorer (explorer.exe) di Windows. Memperkenalkan prosedur dengan jelas menggunakan taskbar, Task Manager, dan Command Prompt.'
 ---
 

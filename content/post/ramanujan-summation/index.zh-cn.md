@@ -4,9 +4,7 @@ description: "无限相加“1+2+3+4+...”会得到什么结果？按常理思�
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "数学"
-  - "物理学"
+categories: ["mathematics", "physics"]
 tags:
   - "无穷级数"
   - "解析延拓"

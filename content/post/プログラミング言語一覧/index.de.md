@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["Programmiersprache"]
 draft: true
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Wir haben eine Liste verschiedener Programmiersprachen zusammengestellt, von C, Python, Java und JavaScript bis hin zu Rust, Go, OCaml und Clojure. Überprüfen Sie die Übersicht und die Eigenschaften jeder Sprache als Referenz für Entwicklung und Lernen.'
 ---
 

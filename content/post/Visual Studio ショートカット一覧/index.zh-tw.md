@@ -5,7 +5,7 @@ date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "快捷鍵" ]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '整理了可大幅提升開發效率的 Visual Studio (VS2022) 實用快速鍵清單。精選介紹偵錯、編譯、書籤操作等程式設計時常用的必備快速鍵。'
 ---
 

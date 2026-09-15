@@ -5,7 +5,7 @@ date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
-categories: ["PC・数码产品"]
+categories: ["pc-gadgets"]
 description: '总结了我当前使用的主力PC配置（Core i7-8700K、内存32GB、Windows 11）及工作环境。作为备忘录，介绍了目前使用Mouse Computer品牌台式机的硬件构成。'
 ---
 记录一下当前主力电脑的配置。

@@ -5,7 +5,7 @@ date: 2022-10-15T17:00:43+09:00
 tags: ["名言集"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '严选介绍史蒂夫·乔布斯、老子等历史伟人和名流深入人心的名言。通过能成为人生教训的话语及有助于提升动力的至理名言，向先人的智慧学习，找到让自身人生和日常生活更加丰盛的启示吧。'
 ---
 

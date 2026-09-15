@@ -8,7 +8,7 @@ date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Portátil"]
 draft: false
 image: "img.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Artículo de reseña sobre la compra de un ThinkPad T470s de segunda mano para trabajo remoto. Presento la experiencia de uso real, incluyendo detalles como las especificaciones (Core i7, 24GB de RAM, pantalla WQHD), su estado, y puntos de insatisfacción como la disposición del teclado.'
 ---
 

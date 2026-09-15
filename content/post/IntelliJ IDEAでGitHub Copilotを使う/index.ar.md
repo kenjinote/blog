@@ -5,7 +5,7 @@ date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
-categories: ["الأدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نشرح بوضوح مع الصور طريقة التثبيت المحددة وخطوات التفعيل لاستخدام GitHub Copilot في بيئة IntelliJ IDEA. دعنا نحسن كفاءة التطوير بشكل كبير بالاستفادة من الذكاء الاصطناعي.'
 ---
 # مقدمة

@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: "Kekurangan VRAM (memori GPU) yang menjadi hambatan terbesar dalam pembelajaran dan inferensi LLM. Dalam artikel ini, kami akan menjelaskan secara mendalam teknik-teknik penyelesaian seperti CPU offloading, kuantisasi cache KV, dan gradient checkpointing menggunakan rumus matematika dan diagram arsitektur."
 ---

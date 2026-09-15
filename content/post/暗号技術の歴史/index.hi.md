@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: 'प्राचीन सीज़र साइफर से लेकर एनिग्मा, पब्लिक की क्रिप्टोग्राफी और भविष्य के खतरे क्वांटम कंप्यूटर से बचाव के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी (PQC) तक, क्रिप्टोग्राफी के शानदार इतिहास और तकनीकी विकास की विस्तृत व्याख्या।'
 ---

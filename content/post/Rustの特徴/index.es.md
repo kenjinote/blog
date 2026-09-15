@@ -8,7 +8,7 @@ date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
-categories: ["Programación"]
+categories: ["programming"]
 description: 'Explicamos de manera comprensible las principales características del lenguaje de programación ''Rust'' desarrollado por Mozilla. Presentamos las razones por las que es elegido, como su rápida ejecución, ausencia de recolección de basura, seguridad de memoria mediante propiedad y préstamo, y su soporte multiplataforma.'
 ---
 

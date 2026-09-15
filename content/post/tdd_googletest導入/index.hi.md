@@ -5,7 +5,7 @@ date: "2026-09-12T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Testing"]
+categories: ["programming", "testing"]
 tags: ["TDD", "C++", "GoogleTest", "CMake"]
 description: 'C++ प्रोजेक्ट्स में टेस्ट-ड्रिवन डेवलपमेंट (TDD) लागू करने के लिए एक संपूर्ण मार्गदर्शिका। GoogleTest और GoogleMock का उपयोग करके व्यावहारिक दृष्टिकोण और CMake में कॉन्फ़िगरेशन विधियों की विस्तृत व्याख्या।'
 ---

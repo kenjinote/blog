@@ -5,7 +5,7 @@ date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Pemulihan", "Pemecahan Masalah"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Apakah Anda kesulitan dengan error fatal seperti Google Pixel yang terus restart atau terhenti di logo? Kami menjelaskan secara menyeluruh dan mudah dipahami langkah-langkah pemulihan dan inisialisasi perangkat lunak yang aman dan pasti menggunakan alat perbaikan resmi, serta poin-poin penting sebelum melakukannya.'
 ---
 

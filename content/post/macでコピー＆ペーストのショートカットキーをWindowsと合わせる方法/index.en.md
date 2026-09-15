@@ -5,7 +5,7 @@ date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "shortcut keys", "copy and paste"]
 draft: 
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'We introduce the procedure to change modifier keys from System Preferences to match copy & paste shortcut keys to Windows style (Ctrl key based), which is convenient when using Mac and Windows together.'
 ---
 

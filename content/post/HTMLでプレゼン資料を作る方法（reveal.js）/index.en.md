@@ -5,7 +5,7 @@ date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "Presentation"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'We explain the installation and basic usage of ''reveal.js'', a tool that allows you to intuitively create presentations using HTML and Markdown. We introduce ways to utilize it that support animations and PDF output, and have excellent compatibility with version control like Git.'
 ---
 

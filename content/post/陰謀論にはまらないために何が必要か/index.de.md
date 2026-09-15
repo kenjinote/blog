@@ -5,7 +5,7 @@ date: 2025-05-26T22:23:34+09:00
 tags: ["Verschwörungstheorie", "Gedicht"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir erklären, wie Sie die notwendige „geistige Sicherheit“ aufbauen, um nicht in Verschwörungstheorien im Internet hineingezogen zu werden. Dies sind Tipps, um die moderne Internetgesellschaft intelligent zu überleben, wie etwa die Fähigkeit, Urteile zurückzuhalten, um Angst und Antworten nicht direkt zu verbinden, und Tricks beim Sammeln von Informationen, um Bestätigungsfehler zu vermeiden.'
 ---
 

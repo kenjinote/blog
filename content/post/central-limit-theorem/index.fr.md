@@ -3,9 +3,7 @@ title: Théorème central limite - Le miracle où toutes les données se rapproc
 description: Une explication détaillée du théorème central limite, l'un des théorèmes les plus importants en statistique, couvrant la compréhension intuitive, la preuve mathématique et la simulation à l'aide de Python.
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Mathématiques
-- Statistiques
+categories: ["mathematics", "statistics"]
 tags:
 - Théorème central limite
 - Probabilité

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Analytics"]
+categories: ["blogging", "seo", "analytics"]
 tags: ["Google Search Console", "Python", "SEO", "BigQuery"]
 description: 'Google Search Console और GA4 डेटा को एकीकृत करके, Python और BigQuery का उपयोग करके तकनीकी लेखों को रणनीतिक रूप से फिर से लिखने की विधि की व्याख्या की गई है। TF-IDF और CTR विश्लेषण जैसे डेटा-संचालित SEO उपायों को शामिल किया गया है।'
 ---

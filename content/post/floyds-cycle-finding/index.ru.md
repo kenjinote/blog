@@ -3,9 +3,7 @@ title: "Алгоритм поиска цикла Флойда (Алгоритм 
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Мы подробно объясним известный алгоритм обнаружения циклов в списках и графах «Алгоритм поиска цикла Флойда (Алгоритм черепахи и зайца)» с помощью диаграмм, формул, а также реализаций на C++ и Rust."
-categories:
-  - "Algorithms"
-  - "Computer Science"
+categories: ["algorithms", "computer-science"]
 tags:
   - "Algorithm"
   - "C++"

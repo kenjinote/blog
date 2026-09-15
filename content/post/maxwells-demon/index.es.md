@@ -3,7 +3,7 @@ title: "El demonio de Maxwell: La energía de la 'información' que rompe el sen
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "El 'Demonio de Maxwell' es un experimento mental que parece violar la segunda ley de la termodinámica. Explicaremos en detalle, utilizando fórmulas y diagramas, cómo se resolvió esta paradoja a través de la 'física de la información'."
-categories: ["Physics", "Information Theory"]
+categories: ["physics", "information-theory"]
 tags: ["Termodinámica", "Demonio de Maxwell", "Entropía", "Principio de Landauer"]
 slug: "maxwells-demon"
 ---

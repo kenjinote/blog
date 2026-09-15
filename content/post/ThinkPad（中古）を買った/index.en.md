@@ -5,7 +5,7 @@ date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Laptop"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'A review article about purchasing a used ThinkPad T470s for remote work. Introduces the actual usability, including the specs and condition of the Core i7, 24GB RAM, and WQHD display, as well as dissatisfactions such as the keyboard layout.'
 ---
 

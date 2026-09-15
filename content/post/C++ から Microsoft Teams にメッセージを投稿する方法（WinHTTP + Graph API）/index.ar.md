@@ -5,7 +5,7 @@ date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'يجب على من يرغب في تنفيذ النشر التلقائي للرسائل من C++ إلى Microsoft Teams قراءة هذا! نشرح خطوة بخطوة وبطريقة سهلة الفهم أمثلة عملية لأكواد C++ باستخدام WinHTTP و Graph API، بالإضافة إلى خطوات تسجيل تطبيقات Azure ومصادقة واجهة برمجة التطبيقات (API) الضرورية.'
 ---
 

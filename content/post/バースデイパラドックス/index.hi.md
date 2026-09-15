@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 image: 'img/birthday_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय पैराडॉक्स'
-  - 'संभाव्यता सिद्धांत'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'पैराडॉक्स'
   - 'कॉम्बिनेशन'

@@ -5,7 +5,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: '静的サイトジェネレータHugoのMarkdown記事内でHTMLタグを直接記述して使用できるようにする方法を解説します。config.tomlにmarkup.goldmark.rendererのunsafe設定を追加するだけで完了します。'
 ---
 

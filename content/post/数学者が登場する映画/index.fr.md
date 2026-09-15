@@ -5,7 +5,7 @@ date: 2022-09-05T10:41:00+09:00
 tags: ["Films", "Mathématiciens"]
 draft: false
 image: "images/img.webp"
-categories: ["Mathématiques, Cryptographie, Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Nous présentons des chefs-d''œuvre cinématographiques recommandés avec un génie des mathématiques pour héros. Des films excellents où la beauté des mathématiques croise les drames humains, comme « Un homme d''exception », « Imitation Game » qui décrit le décryptage d''Enigma, ou l''histoire vraie de Ramanujan « L''Homme qui défiait l''infini ».'
 ---
 Voici mes 3 recommandations de films avec des mathématiciens comme protagonistes.

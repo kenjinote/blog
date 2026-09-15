@@ -4,7 +4,7 @@ description: "Mendalami aksioma pilihan dan lemma Zorn, dari makna intuitifnya h
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "Teori Himpunan"]
+categories: ["mathematics", "set-theory"]
 tags: ["Aksioma Pilihan", "Lemma Zorn", "Sistem Aksioma ZFC", "Fondasi Matematika", "Mermaid", "KaTeX"]
 ---
 

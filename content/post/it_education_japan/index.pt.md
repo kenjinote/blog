@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: 'Uma análise profunda sobre os desafios essenciais que a educação em TI do Japão enfrenta atualmente, a partir da perspectiva da ciência da computação, vários anos após a obrigatoriedade da educação de programação no ensino fundamental.'
 ---

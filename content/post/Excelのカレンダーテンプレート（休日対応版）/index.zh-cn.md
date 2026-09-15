@@ -5,7 +5,7 @@ date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "日历", "模板", "节假日"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '我们免费提供一款实用的Excel日历模板，只需输入年份和月份，即可自动显示当月日本的节假日。请务必下载使用，以提高日程管理和工作效率。'
 ---
 

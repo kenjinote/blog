@@ -5,7 +5,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["Filmes", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["Estilo de Vida e Variedades"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Esta é uma lista TODO de clássicos do cinema e anime que quero assistir no futuro. Apresentarei com registros as obras que já foram assistidas; dos filmes relacionados à matemática como ''A Fórmula Preferida do Professor'' e ''Gênio Indomável'', até animes populares como ''Summer Wars'' e ''O Tempo Com Você''.'
 ---
 

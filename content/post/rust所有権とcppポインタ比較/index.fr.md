@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "Une comparaison approfondie entre les pointeurs C++ et le modèle de possession et d'emprunt de Rust. Des pointeurs bruts et pointeurs intelligents jusqu'au vérificateur d'emprunts, nous expliquons l'essence de la sécurité de la mémoire."
 ---

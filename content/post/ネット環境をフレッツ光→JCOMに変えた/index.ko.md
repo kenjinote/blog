@@ -10,7 +10,7 @@ date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","플렛츠 광","인터넷 회선"]
 draft: false
 image: "jcom.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '자택의 인터넷 회선을 FLET''S 히카리(광랜)에서 J:COM으로 갈아탄 체험담입니다. 월액 요금의 절약 효과나 다운로드 속도의 향상, 반대로 업로드 속도가 저하된 점, 통신의 안정성 등 실제 사용감을 숨김없이 리뷰합니다.'
 ---
 

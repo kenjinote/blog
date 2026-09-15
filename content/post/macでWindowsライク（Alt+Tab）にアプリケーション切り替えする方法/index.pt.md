@@ -5,7 +5,7 @@ date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "teclas de atalho", "alternar aplicativos"]
 draft: 
 image: "img.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Aprenda como instalar e configurar um útil aplicativo de terceiros que oferece uma troca de aplicativos parecida com o ''Alt+Tab'' do Windows, que é algo difícil de se fazer usando apenas as funcionalidades padrão do Mac.'
 ---
 

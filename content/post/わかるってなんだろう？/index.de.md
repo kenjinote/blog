@@ -5,7 +5,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["Verschiedenes"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Wir betrachten die wahre Natur des Gefühls des „Verstehens“, das wir im Alltag erleben. Während wir auch ohne vollständiges Verständnis leben können, wir erklären den Wert eines tiefen Verständnisses und die Faszination der Dinge, die in der Welt „unverstanden“ bleiben.'
 ---
 # Was bedeutet es zu verstehen?

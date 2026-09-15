@@ -5,7 +5,7 @@ date: 2026-09-05T02:09:08+09:00
 tags: ["Mathématiques", "Cryptographie", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
-categories: ["Mathématiques・Cryptographie・Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Explication du fonctionnement de la mathématique la plus puissante de l''humanité, le ''Crible général du corps de nombres (GNFS)'', qui brise le chiffrement RSA protégeant les communications Internet. En omettant le jargon technique, nous explorons les rouages de cet algorithme magique compréhensible avec seulement des connaissances en mathématiques du collège.'
 ---
 

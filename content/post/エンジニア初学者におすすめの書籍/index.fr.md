@@ -5,7 +5,7 @@ date: 2024-05-05T16:03:33+09:00
 tags: ["Ingénieurs", "Débutants", "Livres"]
 draft: false
 image: "img.webp"
-categories: ["Style de vie et Divers"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Un incontournable pour les ingénieurs souhaitant passer de débutant à intermédiaire en programmation ! Nous présentons une sélection de 15 livres de lecture obligatoire recommandés pour les débutants, tels que ''The Art of Readable Code'' et ''The Pragmatic Programmer'', permettant d''apprendre les bases du développement logiciel et les méthodes de conception.'
 ---
 

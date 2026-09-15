@@ -7,7 +7,7 @@ slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "ज्यामिति"]
+categories: ["mathematical-paradoxes", "geometry"]
 tags: ["विरोधाभास", "फ्रैक्टल", "मैंडलब्रॉट", "अनंत"]
 ---
 

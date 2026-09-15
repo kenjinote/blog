@@ -13,7 +13,7 @@ date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
-categories: ["Programación"]
+categories: ["programming"]
 description: '¿Buscas cómo llamar y ejecutar scripts de PowerShell desde C++ nativo? En el entorno de Visual Studio 2022, explicaremos a fondo los pasos específicos de implementación para crear una DLL envolvente mediante C++/CLI y lograr una integración de sistemas fluida.'
 ---
 

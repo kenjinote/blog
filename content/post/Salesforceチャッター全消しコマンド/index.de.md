@@ -5,7 +5,7 @@ date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false
 image: "img_1.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Stellt einen Befehl vor, der nützlich ist, wenn die Speicherkapazität der Organisation in Salesforce knapp wird, um alle Chatter-Beiträge, Anhänge und Papierkorbdaten stapelweise zu löschen. Dies ist eine Methode zur schnellen Bereinigung unter Verwendung des Fensters für anonyme Ausführung in der Developer Console.'
 ---
 # Salesforce Chatter Alles Löschen Befehl

@@ -7,7 +7,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
-categories: ["Herramientas y Entorno de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Explicamos cómo configurar variables de entorno de forma dinámica dentro de un flujo de trabajo de GitHub Actions. Tomando un entorno Windows como ejemplo, mostramos los pasos para escribir en "$env:GITHUB_ENV" y ejemplos específicos sobre cómo referenciar la variable en pasos posteriores para crear una release.'
 ---
 

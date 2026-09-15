@@ -3,10 +3,7 @@ title: "مفارقة الأجداد: رياضيات وعلم وراثة انهي
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "مفارقة الأجداد، حيث يتجاوز عدد الأجداد عند العودة بالزمن عدد سكان العالم آنذاك. نشرح بالتفصيل مفهوم \"انهيار النسب\" الذي يحل هذا اللغز، من خلال نهج رياضي ومنظور علم الوراثة."
-categories:
-  - Mathematical Paradoxes
-  - Genetics
-  - Science
+categories: ["mathematical-paradoxes", "genetics", "science"]
 tags:
   - 確率論
   - علم الوراثة

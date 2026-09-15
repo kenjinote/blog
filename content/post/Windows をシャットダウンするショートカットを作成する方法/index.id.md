@@ -5,7 +5,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Mematikan", "Pintasan"]
 draft: false
 image: "img.webp"
-categories: ["PC dan Gadget"]
+categories: ["pc-gadgets"]
 description: 'Menjelaskan cara membuat pintasan praktis untuk mematikan Windows dengan satu klik dari desktop. Memperkenalkan langkah pengaturan menggunakan perintah ''shutdown.exe'', hingga cara mengubah ikon agar mudah dikenali, lengkap dengan gambar.'
 ---
 

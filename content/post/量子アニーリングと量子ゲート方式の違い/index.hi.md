@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: 'क्वांटम एनीलिंग और क्वांटम गेट मॉडल, दो क्वांटम कंप्यूटर आर्किटेक्चर के बीच अंतर, भौतिक पृष्ठभूमि और गणितीय मॉडल जैसे आइसिंग मॉडल, QUBO फॉर्मूलेशन, यूनिटरी ट्रांसफॉर्मेशन, और एरर करेक्शन के साथ-साथ विशिष्ट उपयोग के मामलों की व्यापक तुलना और व्याख्या।'
 ---

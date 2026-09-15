@@ -4,9 +4,7 @@ description: "ما هي نظرية جالوا؟ ولماذا لا توجد صي�
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "الجبر"
+categories: ["mathematics", "algebra"]
 tags:
   - "نظرية جالوا"
   - "نظرية الزمر"

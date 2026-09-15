@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: 'Quelques années après que l''enseignement de la programmation soit devenu obligatoire dans les écoles primaires en 2020, nous examinons de manière approfondie les défis fondamentaux auxquels l''enseignement de l''informatique au Japon est confronté du point de vue de l''informatique fondamentale (Computer Science).'
 ---

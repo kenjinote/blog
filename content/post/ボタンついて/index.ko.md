@@ -10,7 +10,7 @@ date: 2023-01-14T20:24:00+09:00
 tags: ["버튼", "GUI"]
 draft: false
 image: "img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: 'GUI 애플리케이션의 기본인 ''버튼''에 대해 Windows 표준 API(Win32 API)를 사용한 생성 방법과 클릭 시의 이벤트 처리(WM_COMMAND 메시지) 구현 방법을 샘플 코드와 함께 해설합니다.'
 ---
 

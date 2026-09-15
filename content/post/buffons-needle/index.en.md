@@ -4,9 +4,7 @@ description: "Can you find the value of pi just by dropping a needle on the floo
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Probability Theory"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "Pi"
   - "Simulation"

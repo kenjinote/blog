@@ -3,7 +3,7 @@ title: "Методы Монте-Карло и Лас-Вегас: «Самые м
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Мы объясним два типичных вероятностных алгоритма, использующих случайные числа: методы Монте-Карло и Лас-Вегас. Мы легко и понятно обобщили конкретные реализации алгоритмов и различия между ними."
-categories: ["Алгоритмы", "Программирование"]
+categories: ["algorithms", "programming"]
 tags: ["Случайные числа", "Monte Carlo", "Las Vegas", "Python", "Mermaid", "Math"]
 slug: "monte-carlo-and-las-vegas-algorithms"
 ---

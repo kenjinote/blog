@@ -5,7 +5,7 @@ date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "विंडो"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["प्रोग्रामिंग"]
+categories: ["programming"]
 description: 'हम Rust में `winapi` का उपयोग करके एक साधारण Windows विंडो बनाने और प्रदर्शित करने का तरीका बताते हैं। Cargo.toml सेटिंग्स से लेकर विंडो प्रक्रिया के कार्यान्वयन तक, हम GUI प्रोग्रामिंग के आधार बनने वाले स्रोत कोड के बारे में विस्तार से बताते हैं।'
 ---
 

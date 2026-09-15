@@ -5,7 +5,7 @@ date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repositório", "comando"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Aprenda a fazer o download apenas do commit mais recente (shallow clone) em vez de baixar todo o histórico de um repositório Git. Uma técnica útil que economiza espaço em disco e acelera o clone do repositório utilizando a opção ''--depth 1''.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "文本编辑器"]
 draft: false
 image: "img.webp"
-categories: ["工具・开发环境"]
+categories: ["tools-development-environment"]
 description: '通俗易懂地讲解如何在Windows上安装可在命令提示符中流畅运行的终端文本编辑器“micro”，以及配置环境变量并使其可用的步骤。'
 ---
 

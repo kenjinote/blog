@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: 'نقص ذاكرة الوصول العشوائي للفيديو (ذاكرة GPU) هو أكبر عائق في تدريب واستنتاج النماذج اللغوية الكبيرة (LLMs). تشرح هذه المقالة بدقة تقنيات الحلول مثل تفريغ وحدة المعالجة المركزية، وتكميم ذاكرة التخزين المؤقت KV، ونقاط فحص التدرج باستخدام الصيغ الرياضية والمخططات الهيكلية.'
 ---

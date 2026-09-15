@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: 'VRAM（GPU記憶體）不足是LLM訓練和推論的最大障礙。本文將使用數學公式和架構圖，深入探討CPU卸載、KV Cache量化、梯度檢查點等解決技巧。'
 ---

@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Web3", "Security"]
+categories: ["cryptography", "web3", "security"]
 tags: ["ZKP", "zk-SNARKs", "zk-STARKs", "Web3", "Blockchain"]
 description: 'Menjelaskan secara detail mulai dari dasar matematis Zero-Knowledge Proof (ZKP), mekanisme zk-SNARKs, zk-STARKs, hingga aplikasinya pada Web3 dan keamanan terkini seperti ZK-Rollups dan identitas pelindung privasi.'
 ---

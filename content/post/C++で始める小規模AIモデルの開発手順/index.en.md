@@ -5,7 +5,7 @@ date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: 'A detailed development guide and internal architecture explanation for running inference on small AI models like TinyLLaMA in a local environment using C++ and ggml. Covers memory mapping, tensor operations, and SIMD optimization.'
 ---

@@ -5,7 +5,7 @@ date: 2024-01-06T04:11:01+09:00
 tags: ["邦樂", "音樂"]
 draft: false
 image: "img.webp"
-categories: ["生活風格與雜記"]
+categories: ["lifestyle-miscellaneous"]
 description: '介紹鬱金香（TULIP）、RADWIMPS、宇多田光等動人心弦的推薦日本名曲。從令人懷念的昭和名曲到平成的J-POP熱門歌曲、經典抒情歌等，請好好享受這些跨越世代、持續受到喜愛的優質日本音樂。'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "استعادة", "تراجع"]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نشرح كيفية إلغاء إعادة الضبط واستعادة حالة الالتزام الأصلية في حال قمت بتنفيذ ''git reset'' بالخطأ في Git. نعرض بشكل مبسط خطوات التحقق من معرّف الالتزام (Commit ID) باستخدام ''git reflog'' واسترجاع الحالة بشكل صحيح.'
 ---
 # كيفية التراجع عن git reset

@@ -5,7 +5,7 @@ date: 2023-04-02T14:44:17+09:00
 tags: ["Stock Photos", "Blog", "Unsplash"]
 draft: false
 image: "img_1.webp"
-categories: ["Blog Management"]
+categories: ["blogging"]
 description: 'Introducing ''Unsplash'', the perfect free photo stock site for blog articles. It''s a highly convenient and high-quality image service that is free, allows commercial use and modifications, and requires no credit attribution or usage permission.'
 ---
 ## About "Unsplash"

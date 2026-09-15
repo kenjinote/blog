@@ -4,10 +4,7 @@ description: "Ein tiefer Einblick in Zipfs Gesetz, das bemerkenswerte mathematis
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Data Science"
-  - "Linguistik"
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Zipfs Gesetz"
   - "Potenzgesetz"

@@ -5,7 +5,7 @@ date: 2024-09-18T00:56:59+09:00
 tags: ["Kisah Sepasang Suami Istri Tua dan Seekor Keledai", "Satire"]
 draft: false
 image: "img.webp"
-categories: ["IT dan Teknologi"]
+categories: ["it-technology"]
 description: 'Melalui fabel terkenal ''Kisah Pasangan Tua dan Seekor Keledai'', kami akan meninjau dampak buruk dari terlalu peduli dengan pandangan orang lain dan permasalahan dalam interaksi manusia di era modern tentang ''suara siapa yang pantas dipercaya''. Kami menyuguhkan petunjuk cara menjalani hidup tanpa harus terombang-ambing pada pandangan atau perkataan orang lain.'
 ---
 

@@ -7,7 +7,7 @@ slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "तर्कशास्त्र"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["विरोधाभास", "आगमन", "तार्किक समतुल्यता", "प्रतिधनात्मक"]
 ---
 

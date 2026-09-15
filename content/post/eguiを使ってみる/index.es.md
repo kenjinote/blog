@@ -7,7 +7,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "librería GUI"]
 draft: false
 image: "demo.gif"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Te presentamos el uso básico de "egui", una librería GUI de fácil manejo en Rust. Explicamos los sencillos pasos desde clonar la plantilla de GitHub hasta iniciar y ejecutar la aplicación de ejemplo con el comando cargo run.'
 ---
 

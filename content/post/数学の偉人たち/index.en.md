@@ -5,7 +5,7 @@ date: 2022-09-22T23:06:37+09:00
 tags: ["Mathematicians"]
 draft: false
 image: "img.webp"
-categories: ["Mathematics, Cryptography, and Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'We introduce great mathematicians of ancient Greece and Egypt who left their mark on history in order of birth. We provide an easy-to-understand explanation of their amazing discoveries and little-known intriguing anecdotes, such as the Pythagorean theorem, Archimedes'' principle, and Euclid''s Elements.'
 ---
 Here is an introduction to the great mathematicians who left their names in history, in order of birth.

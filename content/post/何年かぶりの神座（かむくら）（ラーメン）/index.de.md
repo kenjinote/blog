@@ -5,7 +5,7 @@ date: 2022-09-09T21:45:19+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Ich bin zum ersten Mal seit langer Zeit in das beliebte Ramen-Restaurant „Dotonbori Kamukura“ gegangen. Dieses Mal habe ich den empfohlenen „Frühlingszwiebel-Kimchi-Ramen“ bestellt! Die Kombination aus der einzigartigen, köstlichen Brühe, auf die man ab und zu große Lust hat, mit viel Gemüse und Frühlingszwiebel-Kimchi war fantastisch.'
 ---
 

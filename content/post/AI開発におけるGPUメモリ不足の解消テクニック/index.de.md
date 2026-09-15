@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: 'Der Mangel an VRAM (GPU-Speicher) ist das größte Hindernis beim Training und bei der Inferenz von LLMs. In diesem Artikel erklären wir Techniken zur Behebung, wie CPU-Offloading, KV-Cache-Quantisierung und Gradient Checkpointing, detailliert mit mathematischen Formeln und Architekturdiagrammen.'
 ---

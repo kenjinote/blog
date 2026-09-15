@@ -5,7 +5,7 @@ date: 2022-09-12T19:28:50+09:00
 tags: ["Game"]
 draft: false
 image: "img_12.webp"
-categories: ["IT・Teknologi"]
+categories: ["it-technology"]
 description: 'Kami akan memperkenalkan 11 rekomendasi game masterpiece retro nostalgia, seperti Game Boy generasi pertama dan Super Famicom (SNES). Penuh dengan game luar biasa setingkat Hall of Fame yang tak lekang oleh waktu jika dimainkan saat ini, seperti ''SaGa 2: Hihou Densetsu'', ''Kirby''s Dream Land'', dan ''Pokemon Red/Green''. Mari bernostalgia dengan pesona dari mahakarya ini.'
 ---
 Ketika saya mengingat game favorit saya, ternyata sebagian besar adalah game klasik yang legendaris.

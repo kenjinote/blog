@@ -5,7 +5,7 @@ date: 2022-09-13T01:16:40+09:00
 tags: ["Github","Domain"]
 draft: false
 image: "images/octocat.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Menjelaskan langkah-langkah mengatur domain kustom untuk repositori GitHub (GitHub Pages). Kali ini, kami memperkenalkan langkah spesifik dari menambahkan/mengubah A record DNS dari layar manajemen ''Onamae.com'' hingga mengintegrasikannya dengan GitHub.'
 ---
 Untuk mengatur domain kustom pada repositori Github, Anda perlu mengubah pengaturan DNS domain tersebut.

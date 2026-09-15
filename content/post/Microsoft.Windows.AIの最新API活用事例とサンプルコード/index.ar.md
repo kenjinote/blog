@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "AI"]
+categories: ["programming", "windows", "ai"]
 tags: ["Windows AI", "Copilot Runtime", "NPU", "C#", "C++"]
 description: 'دليل تفصيلي شامل يغطي كيفية تنفيذ ميزات الذكاء الاصطناعي المحلي في Windows 11، مع أمثلة عملية بأكواد C# وC++ تستفيد من Windows Copilot Runtime، NPU، وDirectML.'
 ---

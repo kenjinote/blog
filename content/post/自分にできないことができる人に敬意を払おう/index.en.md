@@ -5,7 +5,7 @@ date: 2023-08-01T23:42:31+09:00
 tags: ["Opinion", "Thoughts"]
 draft: false
 image: "img.webp"
-categories: ["IT / Technology"]
+categories: ["it-technology"]
 description: 'An essay preaching the importance of not ranking jobs or positions in society and paying respect to everyone who accomplishes work you cannot do. We introduce key mindset points that smooth human relationships and allow mutual respect.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-08-25T16:24:35+09:00
 tags: ["Video", "Kurz"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen eine Zusammenfassung empfohlener Kurzvideo-Links vor, die in den sozialen Medien ein heißes Thema geworden sind, wie z. B. die bewegende Episode des Balljungen, der die Mannschaft in einem Tottenham-Spiel rettete und von Mourinho gelobt wurde.'
 ---
 1. Fußball Balljunge

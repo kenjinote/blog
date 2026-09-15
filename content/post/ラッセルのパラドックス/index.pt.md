@@ -6,9 +6,7 @@ date: '2026-09-10T04:00:00+09:00'
 image: 'img/russells_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Paradoxos Matemáticos'
-  - 'Lógica'
+categories: ["mathematical-paradoxes", "logic"]
 tags:
   - 'Paradoxo'
   - 'Russell'

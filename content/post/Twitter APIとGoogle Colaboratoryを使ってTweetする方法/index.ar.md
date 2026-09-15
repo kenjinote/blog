@@ -5,7 +5,7 @@ date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح خطوات تنفيذ التغريد التلقائي عبر Python (tweepy) باستخدام Twitter API و Google Colaboratory. بدءاً من إعدادات مفاتيح API إلى الكود الفعلي، يمكنك تجربة ذلك فوراً عن طريق النسخ واللصق.'
 ---
 

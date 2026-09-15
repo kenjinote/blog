@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'A comprehensive guide on the physics and selection of ergonomic chairs to protect remote workers from back pain, based on biomechanics. Comparing the structural approaches of high-end models like the Aeron Chair and Contessa.'
 ---

@@ -5,7 +5,7 @@ date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "コマンド"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'Windowsのコマンドプロンプト（cmd）を使って、curlコマンドからOpenAIのChatGPT APIを呼び出す方法を解説します。必要なコマンドやパラメーターの設定方法をわかりやすく紹介します。'
 ---
 # ChatGPT APIをcurlから呼び出す

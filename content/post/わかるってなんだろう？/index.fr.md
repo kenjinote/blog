@@ -5,7 +5,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["Divers"]
 draft: false
 image: "img.webp"
-categories: ["IT et Technologie"]
+categories: ["it-technology"]
 description: 'Réflexion sur la véritable nature du sentiment de ''comprendre'' ressenti dans la vie quotidienne. Tout en pouvant vivre sans une compréhension parfaite, nous expliquons la valeur d''une compréhension profonde et l''intérêt des choses qui résolution restent ''incomprises'' dans le monde.'
 ---
 # Que signifie comprendre ?

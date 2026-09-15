@@ -5,7 +5,7 @@ date: 2024-04-27T02:54:12+09:00
 tags: ["git", "儲存庫", "指令"]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '為您解說不需下載Git儲存庫所有歷史紀錄，只取得最新Commit的方法（淺層複製, Shallow Clone）。這是一項能使用「--depth 1」選項來節省硬碟空間，並快速複製儲存庫的實用技巧。'
 ---
 

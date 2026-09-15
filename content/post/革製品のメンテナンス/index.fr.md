@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["produits en cuir", "loisir"]
 draft: fales
 image: "img.webp"
-categories: ["style de vie et notes diverses"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Pour les débutants en entretien du cuir, nous présentons des produits de soin recommandés que nous sommes ravis d''avoir achetés, comme la Crème Délicate de M. MOWBRAY ou la Crème Suprême de Collonil. Voici des techniques d''entretien pour prolonger la durée de vie de vos précieux articles en cuir.'
 ---
 

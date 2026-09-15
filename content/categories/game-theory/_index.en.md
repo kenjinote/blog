@@ -1,0 +1,5 @@
+---
+{
+  "title": "Game Theory"
+}
+---

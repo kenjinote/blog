@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "Audio Processing"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "Speech Recognition", "C++"]
 description: 'C++とwhisper.cppを用いて、高精度な音声認識AIをエッジデバイスやネイティブアプリケーションに組み込むための完全ガイドです。音声信号処理の基礎からリアルタイム推論の最適化までを網羅します。'
 ---

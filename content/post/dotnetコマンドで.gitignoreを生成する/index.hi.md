@@ -5,7 +5,7 @@ date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
-categories: ["उपकरण और विकास का वातावरण"]
+categories: ["tools-development-environment"]
 description: 'हम .NET SDK में शामिल dotnet कमांड (dotnet new gitignore) का उपयोग करके Visual Studio जैसे विकास परिवेश के लिए उपयुक्त .gitignore फ़ाइल को स्वचालित रूप से उत्पन्न करने के तरीके को स्पष्ट रूप से समझाएंगे。'
 ---
 dotnet.exe कमांड का उपयोग करना उपयोगी है क्योंकि यह आपको सरल प्रोग्राम बनाने की अनुमति भी देता है।

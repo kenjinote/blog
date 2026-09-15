@@ -7,7 +7,7 @@ slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "هندسة"]
+categories: ["mathematical-paradoxes", "geometry"]
 tags: ["مفارقة", "كسيرية (فركتل)", "ماندلبروت", "لانهاية"]
 ---
 

@@ -5,7 +5,7 @@ date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "befehle"]
 draft: false
 image: "img.webp"
-categories: ["Blog-Betrieb"]
+categories: ["blogging"]
 description: 'Wir stellen die CLI-Installationsmethode für den schnellen Static Site Generator Hugo und eine Liste grundlegender Befehle vor, die beim Betreiben eines Blogs häufig verwendet werden. Wir erklären Operationen, die Hugo-Anfänger kennen sollten, wie das Erstellen einer neuen Website, das Schreiben von Artikeln, das Starten eines lokalen Servers und das Erstellen von Builds.'
 ---
 

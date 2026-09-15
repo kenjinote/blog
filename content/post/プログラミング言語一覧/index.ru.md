@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["Языки программирования"]
 draft: true
 image: "img.webp"
-categories: ["Программирование"]
+categories: ["programming"]
 description: 'Мы составили список различных языков программирования от C, Python, Java и JavaScript до Rust, Go, OCaml и Clojure. Ознакомьтесь с обзором и особенностями каждого языка для справки при разработке и обучении.'
 ---
 

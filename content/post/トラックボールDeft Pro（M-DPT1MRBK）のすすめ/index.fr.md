@@ -5,7 +5,7 @@ date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Avis après une semaine d''utilisation de la souris trackball de taille moyenne d''Elecom ''Deft Pro (M-DPT1MRBK)''. Nous expliquons les avantages tels que la réduction de la charge sur le poignet et les nombreuses affectations de boutons, ainsi que les inconvénients comme l''effort de nettoyage et le temps d''adaptation à la manipulation.'
 ---
 

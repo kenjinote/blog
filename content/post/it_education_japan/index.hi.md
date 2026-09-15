@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: '2020 में प्राथमिक विद्यालयों में प्रोग्रामिंग शिक्षा अनिवार्य होने के कुछ वर्षों बाद, हम कंप्यूटर विज्ञान के दृष्टिकोण से जापान में आईटी शिक्षा द्वारा सामना की जाने वाली मूलभूत चुनौतियों पर गहराई से विचार करेंगे।'
 ---

@@ -6,7 +6,7 @@ tags: ["Mathematik", "Paradoxon"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathematik, Kryptographie, Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wenn 23 Personen zusammenkommen, liegt die Wahrscheinlichkeit, dass zwei am selben Tag Geburtstag haben, bei über 50 %!? Wir erklären das intuitive und rätselhafte Phänomen des „Geburtstagsparadoxons“ leicht verständlich mit mathematischen Gründen und Formeln. Erleben Sie die Wunder der Wahrscheinlichkeit.'
 ---
 

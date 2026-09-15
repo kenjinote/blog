@@ -6,7 +6,7 @@ tags: ["Matemática", "Paradoxo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matemática, Criptografia, Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Se 23 pessoas se reunirem, a probabilidade de duas fazerem aniversário no mesmo dia é superior a 50%!? Explicaremos o ''Paradoxo do Aniversário'', um fenômeno estranho e contra-intuitivo, usando razões e fórmulas matemáticas fáceis de entender. Vamos experimentar a maravilha das probabilidades.'
 ---
 

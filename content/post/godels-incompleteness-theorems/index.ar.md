@@ -3,9 +3,7 @@ title: "مبرهنات عدم الاكتمال لغودل: إثبات رياضي
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "نشرح المبرهنة التاريخية التي أوضحت حدود الرياضيات، وهي مبرهنات عدم الاكتمال لغودل، مع توضيح معناها وآلية إثباتها باستخدام الأمثلة العملية والرسوم التوضيحية بطريقة سهلة الفهم."
-categories:
-  - "Mathematics"
-  - "Computer Science"
+categories: ["mathematics", "computer-science"]
 tags:
   - "Logic"
   - "Gödel"

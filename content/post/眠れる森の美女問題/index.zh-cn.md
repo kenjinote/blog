@@ -6,9 +6,7 @@ date: '2026-09-10T09:00:00+09:00'
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true
-categories:
-  - '数学悖论'
-  - '概率论'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - '悖论'
   - '条件概率'

@@ -5,7 +5,7 @@ date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["AI", "Open Source", "LLM"]
+categories: ["ai", "open-source", "llm"]
 tags: ["Llama", "Mistral", "Local AI", "Gemma"]
 description: 'Des LLM locaux gratuits à utiliser tout en protégeant votre vie privée. Cet article compare et explique en détail avec une perspective technique les meilleurs LLM open source tels que Llama 3, Mistral, Gemma 2, Qwen 2.5 et Phi-3.'
 ---

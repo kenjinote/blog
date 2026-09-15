@@ -5,7 +5,7 @@ date: 2026-09-05T02:09:08+09:00
 tags: ["Math", "Cryptography", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
-categories: ["Math, Cryptography & Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Explains the mechanism of ''General Number Field Sieve (GNFS)'', humanity''s strongest mathematics for breaking the RSA encryption that protects internet communications. Omits jargon to reveal the tricks of this magical algorithm, understandable with just junior high school math.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-09-18T00:56:59+09:00
 tags: ["老夫婦與驢子的故事", "諷刺"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '透過著名的寓言故事「老夫婦與驢子」，探討過度在意他人眼光的壞處，以及「應該相信誰的聲音」這種現代人際關係的煩惱。為您帶來不被他人意見左右而活的啟發。'
 ---
 

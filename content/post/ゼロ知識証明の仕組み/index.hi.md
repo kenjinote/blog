@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Web3", "Security"]
+categories: ["cryptography", "web3", "security"]
 tags: ["ZKP", "zk-SNARKs", "zk-STARKs", "Web3", "Blockchain"]
 description: 'शून्य-ज्ञान प्रमाण (ZKP) के गणितीय आधार से लेकर zk-SNARKs, zk-STARKs के तंत्र और ZK-Rollups एवं गोपनीयता सुरक्षा पहचान जैसे नवीनतम Web3 और सुरक्षा अनुप्रयोगों तक की विस्तृत व्याख्या।'
 ---

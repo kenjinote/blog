@@ -5,7 +5,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "path", "file executable", "command prompt"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadget"]
+categories: ["pc-gadgets"]
 description: 'Menjelaskan cara mudah menemukan lokasi penyimpanan (path lengkap) file eksekusi melalui Command Prompt atau PowerShell di Windows. Memperkenalkan trik praktis menggunakan perintah ''where'' untuk dengan cepat mengidentifikasi lokasi aplikasi yang terdaftar di path.'
 ---
 

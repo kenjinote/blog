@@ -5,7 +5,7 @@ date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Essencial para quem deseja implementar o envio automático de mensagens para o Microsoft Teams via C++! Explicamos o passo a passo com exemplos de código usando WinHTTP e Graph API, além do processo necessário de registro e autenticação de API no Azure.'
 ---
 

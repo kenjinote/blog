@@ -4,7 +4,7 @@ slug: "post-quantum-cryptography"
 tags: ["密码技术", "PQC", "安全", "下一代技术"]
 image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '随着量子计算机的实用化，公钥密码学在未来将面临被破解的风险。本文将详细讲解为应对这一威胁（Y2Q问题）而正在研发的下一代安全技术“抗量子计算密码学（PQC）”的原理及重要性。'
 ---
 

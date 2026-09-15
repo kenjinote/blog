@@ -13,7 +13,7 @@ date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
-categories: ["프로그래밍"]
+categories: ["programming"]
 description: '네이티브 C++에서 PowerShell 스크립트를 호출하여 실행하는 방법을 찾고 계십니까? Visual Studio 2022 환경에서 C++/CLI를 통한 래퍼 DLL을 작성하고 원활하게 시스템 연동을 실현하는 구체적인 구현 단계를 철저히 해설합니다.'
 ---
 

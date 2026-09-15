@@ -5,7 +5,7 @@ date: "2026-09-13T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "Automation"]
+categories: ["programming", "windows", "automation"]
 tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: 'PowerShell का उपयोग करके दैनिक Windows कार्यों को पूरी तरह से स्वचालित करने के लिए एक व्यावहारिक मार्गदर्शिका। इसमें बैकअप, लॉग मॉनिटरिंग और Slack नोटिफिकेशन, और कई रिपॉजिटरी के Git अपडेट और बिल्ड जैसे विशिष्ट उदाहरणों को समझाया गया है।'
 ---

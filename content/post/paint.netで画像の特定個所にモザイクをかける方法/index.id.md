@@ -5,7 +5,7 @@ date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "bingkai", "gambar"]
 draft: false
 image: "img.webp"
-categories: ["AI dan Teknologi"]
+categories: ["ai-technology"]
 description: 'Menjelaskan cara menerapkan proses mosaik ke sebagian gambar menggunakan perangkat lunak pengedit gambar gratis ''paint.net''. Kami memperkenalkan cara menentukan area dengan alat seleksi dan prosedur pengaturan fitur efek untuk pemula. Ini adalah teknik perlindungan privasi yang berguna saat mengunggah gambar ke media sosial atau blog.'
 ---
 

@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true
-categories:
-  - 'مفارقات رياضية'
-  - 'نظرية الاحتمالات'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'مفارقة'
   - 'القيمة المتوقعة'

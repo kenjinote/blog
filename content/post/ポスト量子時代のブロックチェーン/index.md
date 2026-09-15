@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: '量子コンピュータの驚異的な計算能力がブロックチェーンの根幹を揺るがす「Q-Day」の到来。ショアのアルゴリズムによるECDSAの崩壊から、耐量子暗号（PQC）への移行戦略まで、暗号資産の未来を徹底的に技術解説します。'
 ---

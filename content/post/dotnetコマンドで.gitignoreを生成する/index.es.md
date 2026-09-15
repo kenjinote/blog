@@ -7,7 +7,7 @@ date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
-categories: ["Herramientas y entorno de desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Explicamos de forma sencilla cómo generar automáticamente un archivo .gitignore adecuado para entornos de desarrollo como Visual Studio utilizando el comando dotnet (dotnet new gitignore) incluido en el SDK de .NET.'
 ---
 

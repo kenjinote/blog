@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: '양자 어닐링과 양자 게이트 방식이라는 두 가지 양자 컴퓨터 아키텍처에 대해 Ising 모델, QUBO 정식화, 유니터리 변환, 오류 정정 등의 수리 모델이나 물리적 배경부터 구체적인 유스케이스까지 철저하게 비교, 해설합니다.'
 ---

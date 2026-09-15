@@ -6,7 +6,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["AI・技术"]
+categories: ["ai-technology"]
 description: '通俗易懂地介绍能够使用纯文本绘制流程图和甘特图等图表的JavaScript库“Mermaid.js”，并详细讲解如何将其引入静态网站生成器Hugo、进行配置并投入使用的具体步骤。'
 ---
 

@@ -5,7 +5,7 @@ date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "数学", "密码学"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '附带C++实现代码，彻底分析用于解密RSA密码的因数分解算法“一般数域筛法（GNFS）”的机制。深入探讨利用Boost库的计算逻辑和代数数论的深渊，编程爱好者必看。'
 ---
 

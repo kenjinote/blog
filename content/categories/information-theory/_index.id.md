@@ -1,0 +1,5 @@
+---
+{
+  "title": "Teori informasi"
+}
+---

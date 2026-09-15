@@ -5,7 +5,7 @@ date: 2024-02-08T01:23:01+09:00
 tags: ["alat", "perekam layar", "GIF"]
 draft: false
 image: "img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Pengenalan dan cara mengunduh alat gratis yang dapat merekam operasi layar PC dan mengubahnya menjadi animasi GIF. Berguna untuk dibagikan di alat komunikasi seperti Microsoft Teams. Menjelaskan dengan mudah dari penentuan area operasi hingga langkah perekaman.'
 ---
 

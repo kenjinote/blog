@@ -5,7 +5,7 @@ date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "テキストエディタ"]
 draft: false
 image: "img_1.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: '軽量なCLIテキストエディタ「nano」をWindowsにインストールし、コマンドプロンプトから使えるように環境変数を設定する手順を解説します。ダウンロードからPATHの設定、基本的な使い方まで網羅しています。'
 ---
 

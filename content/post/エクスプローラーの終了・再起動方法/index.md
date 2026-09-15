@@ -5,7 +5,7 @@ date: 2024-03-30T15:40:24+09:00
 tags: ["エクスプローラー"]
 draft: false
 image: "img_2.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'Windowsでエクスプローラー（explorer.exe）を終了・再起動する様々な方法を解説。タスクバー、タスクマネージャー、コマンドプロンプトを使った手順をわかりやすく紹介します。'
 ---
 

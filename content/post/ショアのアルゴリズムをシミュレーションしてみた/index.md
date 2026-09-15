@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Python", "Mathematics"]
+categories: ["quantum-computing", "python", "mathematics"]
 tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: '量子コンピュータが現在の暗号技術をいかにして破壊する可能性があるのか、ショアのアルゴリズムの数学的背景からPythonでの実装までを詳細に解説します。'
 ---

@@ -5,7 +5,7 @@ date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
-categories: ["電腦與小工具"]
+categories: ["pc-gadgets"]
 description: '為了在家建立舒適的iOS應用程式開發環境，我在Mercari上購買了舊款的Mac mini (2018)。在此為您介紹決定購買的理由、詳細規格，以及環境建置的第一步。'
 ---
 

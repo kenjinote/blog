@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: 'Desde el antiguo cifrado César hasta Enigma, la criptografía de clave pública y la criptografía poscuántica (PQC) que nos prepara para la amenaza futura de las computadoras cuánticas, explicamos en detalle la épica historia y evolución técnica de la criptografía.'
 ---

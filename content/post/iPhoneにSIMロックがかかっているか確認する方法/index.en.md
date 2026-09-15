@@ -5,7 +5,7 @@ date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIM Lock"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'We clearly explain the procedure to easily check from the settings screen whether your iPhone is SIM-locked or unlocked. Please refer to this when switching to a cheap SIM or purchasing a used device.'
 ---
 

@@ -7,7 +7,7 @@ slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"
 math: true
 mermaid: true
-categories: ["數學悖論", "哲學", "邏輯學"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["悖論", "自我指涉", "法律", "普羅泰戈拉", "邏輯"]
 ---
 

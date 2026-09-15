@@ -5,7 +5,7 @@ date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Graph", "Math", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["Math/Cryptography/Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Explains the steps for beginners to easily draw and display sine and cosine wave graphs using Python''s matplotlib.pyplot library with Google Colaboratory. You can try it immediately without any environment setup.'
 ---
 

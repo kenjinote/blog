@@ -5,7 +5,7 @@ date: 2024-01-07T00:50:09+09:00
 tags: ["Disasters", "Data"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'A page summarizing records and memos regarding natural disasters that occurred in Japan in the past. We organize records on earthquakes and disasters, including the overview and damage situation of the Noto Peninsula Earthquake that occurred on January 1, 2024. It serves as a memorandum to learn about disaster prevention and past disasters.'
 ---
 

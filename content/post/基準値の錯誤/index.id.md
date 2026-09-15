@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Statistika", "Psikologi"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["Paradoks", "Teorema Bayes", "Peluang", "Bias Kognitif", "Kekeliruan Tingkat Dasar"]
 ---
 

@@ -6,7 +6,7 @@ tags: ["KaTeX", "LaTeX", "数式", "数学", "hugo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '高速な数式レンダリングライブラリ「KaTeX」を静的サイトジェネレータHugoへ導入する手順を解説します。math.htmlの作成からヘッダーへの読み込み設定まで、LaTeX風の美しい数式表示をブログで有効化する方法が簡単に分かります。'
 ---
 # KaTeXとは

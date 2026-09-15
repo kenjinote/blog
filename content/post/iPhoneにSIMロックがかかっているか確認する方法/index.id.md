@@ -5,7 +5,7 @@ date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "Kunci SIM"]
 draft: false
 image: "img.webp"
-categories: ["PC dan Gadget"]
+categories: ["pc-gadgets"]
 description: 'Menjelaskan dengan mudah langkah-langkah untuk memeriksa dari layar pengaturan apakah iPhone Anda dalam keadaan SIM-lock atau sudah terbuka. Silakan jadikan referensi saat ingin beralih ke SIM murah atau saat membeli perangkat bekas.'
 ---
 

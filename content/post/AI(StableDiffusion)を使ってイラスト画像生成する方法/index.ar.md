@@ -5,7 +5,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "توضيح", "إنشاء صور", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'ما رأيك في إنشاء رسوماتك المفضلة باستخدام الذكاء الاصطناعي ''Stable Diffusion'' الذي يمكنه توليد صور عالية الجودة من النصوص المدخلة؟ نشرح بخطوات واضحة ومبسطة كيف يمكن لأي شخص البدء في توليد صور الذكاء الاصطناعي بسهولة باستخدام Google Colab وحساب مجاني فقط.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-09-19T01:10:20+09:00
 tags: ["Komputer", "Pengetahuan Dasar"]
 draft: false
 image: "img.webp"
-categories: ["IT & Teknologi"]
+categories: ["it-technology"]
 description: 'Menjelaskan cara kerja komputer secara sederhana untuk pemula IT. Merangkum pengetahuan dasar yang perlu diketahui sebagai fondasi IT, mulai dari peran ''5 Komponen Utama'' (Input, Output, Penyimpanan, Kontrol, dan Pemrosesan) hingga hubungan antara perangkat keras dan perangkat lunak (program).'
 ---
 

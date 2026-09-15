@@ -7,7 +7,7 @@ slug: "grue-paradox"
 image: "img/grue_paradox.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "दर्शन", "तर्कशास्त्र"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["विरोधाभास", "आगमन", "ग्रू", "विज्ञान का दर्शन"]
 ---
 

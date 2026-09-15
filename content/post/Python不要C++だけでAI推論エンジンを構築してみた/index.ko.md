@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: '최근의 AI 개발은 Python이 주류이지만, 엣지 디바이스나 고성능이 요구되는 환경에서는 C++의 힘이 필수적입니다. 본 기사에서는 GGML의 사상을 참고하면서, CUDA나 Metal 백엔드에 대응하는 독자적인 AI 추론 엔진을 C++만으로 처음부터 구축하는 방법을 1만 자 규모로 철저히 해설합니다.'
 ---

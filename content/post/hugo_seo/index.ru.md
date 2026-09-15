@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Hugo"]
+categories: ["blogging", "seo", "hugo"]
 tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: 'Полное руководство по SEO-оптимизации в Hugo. Мы подробно разберем метаданные, OGP, структурированные данные JSON-LD, а также методы кастомизации Frontmatter и head.html, которые значительно увеличат ваш трафик.'
 ---

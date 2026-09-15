@@ -5,7 +5,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["杂记"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '探讨日常生活中感受到的“懂了”这一感觉的本质。讲解虽然没有完全理解也能生活，但深入理解的价值，以及世上留存的“未知事物”的兴趣性。'
 ---
 # 什么是“懂”？

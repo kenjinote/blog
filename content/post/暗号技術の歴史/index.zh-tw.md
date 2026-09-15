@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: '從古代的凱撒密碼，到恩尼格瑪密碼機、公開金鑰加密，乃至為了防範未來量子電腦威脅而發展的後量子密碼學（PQC），深入解析密碼學波瀾壯闊的歷史與技術演進。'
 ---

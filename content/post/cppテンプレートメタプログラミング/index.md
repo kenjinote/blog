@@ -5,7 +5,7 @@ date: "2026-09-12T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "C++"]
+categories: ["programming", "cpp"]
 tags: ["C++", "Metaprogramming", "constexpr", "Concepts"]
 description: 'C++におけるテンプレートメタプログラミングの歴史から、SFINAE、constexpr、そして最新のC++20 Conceptsまでを網羅的に解説します。'
 ---

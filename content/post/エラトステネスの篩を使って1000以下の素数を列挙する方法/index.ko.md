@@ -11,7 +11,7 @@ tags: ["에라토스테네스의 체", "소수", "수학", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["수학·암호·양자"]
+categories: ["math-cryptography-quantum"]
 description: '소수를 효율적으로 찾는 알고리즘 ''에라토스테네스의 체''의 원리와 구체적인 절차를 알기 쉽게 해설합니다. Rust 언어를 사용하여 1000 이하의 소수를 나열하는 구현 예제도 함께 소개합니다.'
 ---
 

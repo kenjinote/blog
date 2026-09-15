@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "テキストエディタ"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'コマンドプロンプトで快適に動作するターミナル向けテキストエディタ「micro」をWindowsにインストールし、環境変数を設定して使えるようにするまでの手順を分かりやすく解説します。'
 ---
 

@@ -7,7 +7,7 @@ slug: "twin-paradox"
 image: "img/twin_paradox.jpg"
 math: true
 mermaid: true
-categories: ["數學悖論", "物理學"]
+categories: ["mathematical-paradoxes", "physics"]
 tags: ["悖論", "相對論", "時間", "愛因斯坦", "宇宙"]
 ---
 

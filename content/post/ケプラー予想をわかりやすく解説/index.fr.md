@@ -5,7 +5,7 @@ date: 2025-07-21T22:53:03+09:00
 tags: ["Mathématiques", "Conjecture de Kepler", "Explication"]
 draft: false
 image: "img.webp"
-categories: ["Mathématiques・Cryptographie・Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Nous expliquons clairement la ''Conjecture de Kepler'', un problème mathématique difficile né d''une question familière : ''Quelle est la manière d''emballer les pastèques le plus serré possible ?''. Apprenons ensemble la romance et la fascination de ce problème d''empilement de sphères proposé par le brillant astronome Kepler et qui est resté non prouvé pendant plus de 400 ans.'
 ---
 

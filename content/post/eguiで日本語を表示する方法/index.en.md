@@ -5,7 +5,7 @@ date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI library", "Japanese"]
 draft: false
 image: "img.webp"
-categories: ["IT / Technology"]
+categories: ["it-technology"]
 description: 'We explain the implementation method for correctly displaying Japanese in ''egui'', a lightweight GUI library for Rust. We introduce specific code samples for loading the Windows Meiryo font and applying it to an application.'
 ---
 

@@ -3,7 +3,7 @@ title: '量子コンピュータの原理と仕組み【完全網羅】ムーア
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-08T22:12:19+09:00"
 tags: ["量子コンピュータ", "量子力学", "アルゴリズム", "物理学"]
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
 image: "cover.webp"

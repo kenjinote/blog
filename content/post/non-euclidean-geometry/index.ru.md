@@ -4,7 +4,7 @@ description: "От сомнений в постулате о параллель�
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Математика", "Физика"]
+categories: ["mathematics", "physics"]
 tags: ["Геометрия", "Относительность", "История науки", "Математика"]
 ---
 

@@ -5,7 +5,7 @@ date: 2024-03-29T23:45:37+09:00
 tags: ["команды", "редактор Hidemaru", "реестр"]
 draft: false
 image: "img_2.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Объясняем, как быстро запустить редактор Hidemaru в Windows 10/11, просто введя «hide» в окне «Выполнить» или в командной строке. Представлены шаги удобной настройки с использованием App Paths в редакторе реестра.'
 ---
 

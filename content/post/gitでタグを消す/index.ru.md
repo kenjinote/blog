@@ -5,7 +5,7 @@ date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
-categories: ["Инструменты и Среда Разработки"]
+categories: ["tools-development-environment"]
 description: 'Простое объяснение того, как удалить ненужные теги (tag) в Git. Охватывает удаление тегов в локальной среде с помощью «git tag -d» и удаление тегов в удаленном репозитории с использованием «git push origin --delete».'
 ---
 # Удаление локального тега

@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: 'WordPress와 같은 동적 CMS에서 Go 언어 기반의 초고속 정적 사이트 생성기인 Hugo로 마이그레이션하는 절차를 상세히 해설합니다. 아키텍처의 차이, 템플릿 구조, 수학적 성능 분석부터 실제 마이그레이션 명령어까지.'
 ---

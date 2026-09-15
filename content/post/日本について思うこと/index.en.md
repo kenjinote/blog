@@ -5,7 +5,7 @@ date: 2022-09-06T02:24:11+09:00
 tags: ["Miscellaneous"]
 draft: false
 image: "images/img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'An article organizing and examining personal discomforts and challenges regarding Japanese society. We question the current situation where the burden of youth debt from interest-bearing student loans leads to a declining birthrate and a society permeated by cold self-responsibility arguments, and we discuss the importance of helping the vulnerable and the spirit of mutual aid.'
 ---
 I'd like to organize my thoughts on what I find strange or think about Japanese society.

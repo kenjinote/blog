@@ -7,7 +7,7 @@ slug: "grue-paradox"
 image: "img/grue_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Философия", "Логика"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["Парадокс", "Индукция", "Гру", "Философия науки"]
 ---
 

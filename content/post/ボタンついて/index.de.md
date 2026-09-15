@@ -5,7 +5,7 @@ date: 2023-01-14T20:24:00+09:00
 tags: ["Schaltfläche", "GUI"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Wir erklären anhand von Beispielcode, wie man „Buttons“, die Grundlage von GUI-Anwendungen, mit der standardmäßigen Windows-API (Win32 API) erstellt und wie man die Ereignisverarbeitung (WM_COMMAND-Nachrichten) beim Klick implementiert.'
 ---
 

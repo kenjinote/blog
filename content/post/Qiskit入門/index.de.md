@@ -5,7 +5,7 @@ date: "2026-09-11T20:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing", "Python"]
+categories: ["programming", "quantum-computing", "python"]
 tags: ["Qiskit", "Python", "Quantum Computing", "IBM"]
 description: 'Mit IBMs Quantencomputing-Framework Qiskit erklären wir die Grundlagen der Quantenprogrammierung, von der Erzeugung eines Bell-Zustands bis hin zu grundlegenden Algorithmen, im Detail.'
 ---

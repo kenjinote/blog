@@ -5,7 +5,7 @@ date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Получите доступ к функциям AI, используя стандартный Windows ML! Мы понятно объясним конкретные шаги с примерами кода по вызову «Microsoft.Windows.AI» из среды C++ в приложениях Win32 и выполнению AI-моделей в формате ONNX.'
 ---
 

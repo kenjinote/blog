@@ -5,7 +5,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["प्रोग्रामिंग"]
+categories: ["programming"]
 description: 'हम बताते हैं कि PowerShell का उपयोग करके Windows वातावरण में परेशान करने वाली Mac की .DS_Store फ़ाइलों को उप-फ़ोल्डरों सहित एक साथ कैसे हटाएं। आप केवल एक छोटे कमांड से अनावश्यक फ़ाइलों को आसानी से साफ़ कर सकते हैं।'
 ---
 

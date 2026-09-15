@@ -5,7 +5,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Gestion de blog"]
+categories: ["blogging"]
 description: 'Nous expliquons comment utiliser « Ranklet », un service qui se synchronise avec Google Analytics et permet d''afficher automatiquement et facilement le classement des pages populaires de votre site. En prenant un blog HUGO comme exemple, nous présentons la procédure de configuration et les méthodes de personnalisation des modèles HTML/CSS.'
 ---
 

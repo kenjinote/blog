@@ -5,7 +5,7 @@ date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","テスト"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'Rustでテストコードを書く方法と、cargo testコマンドを使ったテストの実行手順を初心者向けに解説します。#[test]属性の使い方や、成功・失敗時の出力結果についても具体的なコード例を交えて詳しく紹介します。'
 ---
 

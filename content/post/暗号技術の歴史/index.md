@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: "古代のシーザー暗号から、エニグマ、公開鍵暗号、そして未来の脅威である量子コンピュータに備える耐量子暗号（PQC）に至るまで、暗号技術の壮大な歴史と技術的進化を徹底解説します。"
 ---

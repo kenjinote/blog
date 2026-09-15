@@ -6,7 +6,7 @@ tags: ["數學", "悖論"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '只要聚集23人，有人生日相同的機率就高達50%以上！？我們將使用淺顯易懂的數學理由與計算公式，解說這個違反直覺的奇妙現象「生日悖論」。一起來體驗機率的奧妙吧。'
 ---
 

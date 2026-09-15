@@ -5,7 +5,7 @@ date: 2022-09-02T07:23:00+09:00
 tags: ["雑記"]
 draft: false
 image: "images/komeda.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: '静的サイトジェネレーター「Hugo」を使って、新しく個人ブログを開設しました。技術的な備忘録やプログラミングのコード、ちょっとした日常の出来事など、メモ帳代わりにゆるく発信していく予定です。'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "System Administration"]
+categories: ["programming", "system-administration"]
 tags: ["PowerShell", "C++", "Windows", "Automation"]
 description: 'PowerShell और C++ को एकीकृत करके, Windows सिस्टम प्रबंधन को नाटकीय रूप से सुव्यवस्थित करने के लिए व्यावहारिक स्वचालन विधियों, P/Invoke और मेमोरी प्रबंधन के बारे में बताया गया है।'
 ---

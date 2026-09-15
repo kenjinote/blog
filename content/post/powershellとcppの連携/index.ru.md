@@ -5,7 +5,7 @@ date: "2026-09-12T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "System Administration"]
+categories: ["programming", "system-administration"]
 tags: ["PowerShell", "C++", "Windows", "Automation"]
 description: 'Практические методы автоматизации, интеграции PowerShell и C++ для значительного повышения эффективности управления системами Windows, включая P/Invoke и управление памятью.'
 ---

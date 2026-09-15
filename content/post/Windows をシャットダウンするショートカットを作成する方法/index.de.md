@@ -5,7 +5,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Herunterfahren", "Verknüpfung"]
 draft: false
 image: "img.webp"
-categories: ["PC und Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Wir erklären, wie Sie eine praktische Verknüpfung erstellen, mit der Sie Windows mit einem Klick vom Desktop aus herunterfahren können. Wir erläutern das Einrichtungsverfahren mit dem Befehl „shutdown.exe“ und wie Sie das Symbol mit Bildern ausführlich in ein leicht verständliches Symbol ändern können.'
 ---
 

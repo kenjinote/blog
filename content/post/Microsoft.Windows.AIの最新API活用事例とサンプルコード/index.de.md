@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "AI"]
+categories: ["programming", "windows", "ai"]
 tags: ["Windows AI", "Copilot Runtime", "NPU", "C#", "C++"]
 description: 'Ein detaillierter Leitfaden, der die Implementierung lokaler KI-Funktionen in Windows 11, die Windows Copilot Runtime, NPU und DirectML anhand praktischer C#- und C++-Codebeispiele umfassend abdeckt.'
 ---

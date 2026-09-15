@@ -8,7 +8,7 @@ date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Trucos", "Atajos"]
 draft: false
 image: "img.webp"
-categories: ["PC・Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Una cuidadosa selección de teclas de acceso rápido y trucos útiles que aumentan la eficiencia del trabajo en Windows 11 y Windows 10. Una colección de técnicas esenciales útiles para el uso diario, desde principiantes hasta usuarios avanzados, incluyendo el manejo de ventanas, visualización del escritorio, entrada de voz y captura de pantalla.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome扩展", "浏览器", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '介绍鼠标手势、广告拦截、DeepL翻译、使用ChatGPT侧边栏等，能够大幅提升Google Chrome和Microsoft Edge浏览效率的推荐扩展程序。'
 ---
 

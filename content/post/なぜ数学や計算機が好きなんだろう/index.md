@@ -5,7 +5,7 @@ date: 2022-09-23T01:56:52+09:00
 tags: ["雑記"]
 draft: false
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '数学や計算機に惹かれる理由を考察。すべての人に平等でルールが明確、導き出した答えが永遠に正しいこと、そして常に未解決の課題があり程よい難しさがあるなど、その奥深い魅力を語ります。'
 ---
 

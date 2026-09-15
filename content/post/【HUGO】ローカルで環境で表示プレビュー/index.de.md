@@ -5,7 +5,7 @@ date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Blog-Betrieb"]
+categories: ["blogging"]
 description: 'Wir erklären auf leicht verständliche Weise die Schritte zur Installation des statischen Website-Generators „Hugo“ in einer Windows-Umgebung, wie man den Pfad der Umgebungsvariablen setzt und wie man Befehle verwendet, um einen lokalen Server zu starten und Blog-Artikel in der Vorschau anzuzeigen.'
 ---
 # HUGO Installation

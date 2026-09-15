@@ -11,7 +11,7 @@ tags: ["수학"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["수학・암호・양자"]
+categories: ["math-cryptography-quantum"]
 description: '윌슨의 정리, 오일러의 공식, 페르마의 마지막 정리, 바젤 문제 등 수학의 심오함과 아름다움을 느낄 수 있는 매력적인 수식을 소개합니다. 심플하면서도 세계의 진리를 나타내는 듯한, 감동을 불러일으키는 아름다운 수식들을 꼭 감상해 보세요.'
 ---
 

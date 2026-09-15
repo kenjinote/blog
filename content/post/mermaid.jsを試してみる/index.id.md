@@ -6,7 +6,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["AI dan Teknologi"]
+categories: ["ai-technology"]
 description: 'Penjelasan yang mudah dipahami tentang ikhtisar ''Mermaid.js'', pustaka JavaScript yang dapat menggambar diagram seperti diagram alur dan bagan Gantt berbasis teks, serta prosedur spesifik untuk menginstal, mengonfigurasi, dan menggunakannya pada generator situs statis Hugo.'
 ---
 

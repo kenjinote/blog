@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: "양자 컴퓨터의 경이적인 계산 능력이 블록체인의 근간을 뒤흔드는 'Q-Day'의 도래. 쇼어의 알고리즘에 의한 ECDSA의 붕괴부터 내양자 암호(PQC)로의 전환 전략까지, 암호자산의 미래를 철저하게 기술적으로 해설합니다."
 ---

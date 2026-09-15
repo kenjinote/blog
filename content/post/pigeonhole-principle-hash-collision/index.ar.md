@@ -3,7 +3,7 @@ title: "مبدأ جحر الحمام وتصادم التجزئة: كشف حدو�
 image: "eyecatch.jpg"
 date: "2026-09-14T00:00:00+09:00"
 description: "كيف يصبح \"مبدأ جحر الحمام\" البديهي المفهوم الأهم في تقنيات التشفير الحديثة وأمان دوال التجزئة. نشرح ذلك بتعمق باستخدام الأمثلة العملية، والصيغ الرياضية، والرسوم التوضيحية."
-categories: ["Tech", "Cryptography", "Mathematics"]
+categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]
 slug: "pigeonhole-principle-hash-collision"
 ---

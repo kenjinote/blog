@@ -6,7 +6,7 @@ tags: ["Google One", "Gemini", "Kündigung", "Fehlerbehebung"]
 draft: false
 image: "img.webp"
 description: 'Wir erklären die korrekten Kündigungsschritte, um zu verhindern, dass die Google One-Mitgliedschaft für 2.900 Yen pro Monat nach dem 1-monatigen kostenlosen Testzeitraum von Gemini automatisch verlängert wird. Wenn Sie Probleme bei der Kündigung haben, beziehen Sie sich bitte auf die Abmeldemethode in diesem Artikel.'
-categories: ["Programmieren"]
+categories: ["programming"]
 ---
 
 # [Achtung] Wird man nach der kostenlosen Testphase von Gemini zur Kasse gebeten? Eine Zusammenfassung zur Kündigung

@@ -5,7 +5,7 @@ date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
-categories: ["PC et Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Pour mettre en place un environnement de développement d''applications iOS confortable à domicile, j''ai acheté un Mac mini (2018) d''ancienne génération sur Mercari. Je vous présente les raisons de cet achat, ses caractéristiques détaillées et la première étape de la configuration de l''environnement.'
 ---
 

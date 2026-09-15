@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true
-categories:
-  - '수학 역설'
-  - '확률론'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - '역설'
   - '기댓값'

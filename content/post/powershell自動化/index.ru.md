@@ -5,7 +5,7 @@ date: "2026-09-13T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "Automation"]
+categories: ["programming", "windows", "automation"]
 tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: 'Практическое руководство по использованию PowerShell для полной автоматизации повседневных задач Windows. Примеры включают резервное копирование, мониторинг журналов и уведомления в Slack, а также пакетное обновление и сборку нескольких репозиториев Git.'
 ---

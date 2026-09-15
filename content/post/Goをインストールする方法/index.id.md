@@ -5,7 +5,7 @@ date: 2022-09-10T00:48:17+09:00
 tags: ["Go","instalasi"]
 draft: false
 image: "images/cover.webp"
-categories: ["pemrograman"]
+categories: ["programming"]
 description: 'Menjelaskan untuk pemula cara menginstal bahasa pemrograman ''Go (Golang)'' yang dikembangkan oleh Google. Sangat cocok sebagai pengantar bahasa Go pertama Anda, mulai dari mendapatkan installer, hingga langkah pembuatan program Hello World, kompilasi, dan penjalanan.'
 ---
 # Pengantar

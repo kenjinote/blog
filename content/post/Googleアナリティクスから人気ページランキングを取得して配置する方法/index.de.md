@@ -5,7 +5,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Blog-Betrieb"]
+categories: ["blogging"]
 description: 'Wir erklären die Verwendung von „Ranklet“, einem Dienst, mit dem Sie in Verbindung mit Google Analytics ganz einfach ein automatisches Ranking der beliebtesten Seiten Ihrer Website anzeigen können. Am Beispiel eines HUGO-Blogs stellen wir die Einrichtungsschritte und die Anpassung von HTML/CSS-Vorlagen vor.'
 ---
 

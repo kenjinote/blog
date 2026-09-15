@@ -12,7 +12,7 @@ date: 2024-04-27T02:54:12+09:00
 tags: ["git", "저장소", "명령어"]
 draft: false
 image: "img.webp"
-categories: ["도구·개발환경"]
+categories: ["tools-development-environment"]
 description: 'Git 리포지토리의 전체 기록을 다운로드하지 않고 최신 커밋만 가져오는(얕은 클론) 방법을 해설합니다. ''--depth 1'' 옵션을 사용하여 디스크 용량을 절약하고 빠르게 리포지토리를 클론하는 편리한 기술입니다.'
 ---
 

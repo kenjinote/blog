@@ -5,7 +5,7 @@ date: 2025-07-14T13:47:51+09:00
 tags: ["Formulir Input", "Pengembangan Web", "UX"]
 draft: false
 image: "img.webp"
-categories: ["Manajemen Blog"]
+categories: ["blogging"]
 description: 'Kami akan menjelaskan praktik terbaik untuk penanda ''item wajib'' di formulir Web berdasarkan pedoman UI luar negeri. Kami merangkum cara penggunaan tanda bintang (*) yang benar, penyebutan jelas ''Required'', dan cara memanfaatkan atribut ARIA untuk meningkatkan aksesibilitas.'
 ---
 

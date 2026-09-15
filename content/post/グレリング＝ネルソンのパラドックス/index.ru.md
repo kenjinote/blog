@@ -7,7 +7,7 @@ slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Логика"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["Парадокс", "Семантика", "Самореференция", "Теория множеств"]
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'شرح شامل للوحات المفاتيح المتطورة التي تعمل على تحسين إنتاجية المهندسين بشكل جذري. نتعمق من فيزياء المفاتيح إلى آليات البرامج الثابتة، ونقدم 5 أجهزة مثالية.'
 ---

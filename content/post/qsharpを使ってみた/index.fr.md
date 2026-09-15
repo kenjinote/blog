@@ -5,7 +5,7 @@ slug: "qsharp-quantum-programming-language-intro"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing"]
+categories: ["programming", "quantum-computing"]
 tags: ["Q#", "Quantum", "Microsoft", "QDK", "Programming"]
 description: "Une explication détaillée depuis les bases jusqu'aux spécificités du langage de programmation quantique 'Q#', y compris la syntaxe de base, la construction de l'intrication quantique et l'exécution à partir d'un langage hôte."
 ---

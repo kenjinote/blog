@@ -5,7 +5,7 @@ date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: '通算9回目となるMicrosoft MVP（2025-2026）を受賞したご報告です。技術コミュニティに貢献するMVP制度の解説とともに、この1年間で特に力を入れてきた技術情報の発信やコミュニティ活動の振り返りをお届けします。'
 ---
 

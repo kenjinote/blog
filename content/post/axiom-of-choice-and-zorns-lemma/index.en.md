@@ -4,7 +4,7 @@ description: "A deep dive into the Axiom of Choice and Zorn's Lemma, from their 
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Set Theory"]
+categories: ["mathematics", "set-theory"]
 tags: ["Axiom of Choice", "Zorn's Lemma", "ZFC Axiom System", "Foundations of Mathematics", "Mermaid", "KaTeX"]
 ---
 

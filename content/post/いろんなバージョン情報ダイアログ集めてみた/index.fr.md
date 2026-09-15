@@ -5,7 +5,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["Informations de Version", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
-categories: ["PC et Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Nous présentons une liste de la conception de l''interface utilisateur (UI) des écrans de ''boîte de dialogue d''informations sur la version'' de divers logiciels et outils PC couramment utilisés, tels que Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge et LINE.'
 ---
 

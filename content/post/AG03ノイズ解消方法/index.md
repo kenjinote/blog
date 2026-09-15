@@ -5,7 +5,7 @@ date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "ノイズ"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'YAMAHA AG03を使用中に発生する「ガビガビ」という定期的なノイズにお悩みですか？この記事では、公式のUSBドライバーをインストール・更新して一発でノイズを解消する具体的な手順を分かりやすく解説します。快適な音声環境を取り戻しましょう！'
 ---
 

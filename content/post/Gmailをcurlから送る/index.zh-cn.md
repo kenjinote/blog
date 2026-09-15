@@ -5,7 +5,7 @@ date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
-categories: ["AI・技术"]
+categories: ["ai-technology"]
 description: '本文讲解如何使用命令行工具“curl”通过Gmail账号发送邮件。详细介绍从获取Google应用密码的步骤，到指定curl选项和创建/发送邮件正文文件的命令。'
 ---
 

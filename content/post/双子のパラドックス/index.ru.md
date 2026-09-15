@@ -7,7 +7,7 @@ slug: "twin-paradox"
 image: "img/twin_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Физика"]
+categories: ["mathematical-paradoxes", "physics"]
 tags: ["парадокс", "теория относительности", "время", "Эйнштейн", "космос"]
 ---
 

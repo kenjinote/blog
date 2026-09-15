@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Workspace"]
+categories: ["gadgets", "productivity", "workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
 description: '為工程師打造的終極多螢幕建構指南。深入解析視界工學、頻寬計算、PPI以及縮放機制的運作原理。'
 ---

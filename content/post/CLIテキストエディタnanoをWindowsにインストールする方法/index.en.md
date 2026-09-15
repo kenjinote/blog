@@ -5,7 +5,7 @@ date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "text editor"]
 draft: false
 image: "img_1.webp"
-categories: ["Tools and Development Environment"]
+categories: ["tools-development-environment"]
 description: 'We explain the steps to install the lightweight CLI text editor ''nano'' on Windows and set environment variables so it can be used from the command prompt. It covers everything from downloading to PATH configuration and basic usage.'
 ---
 

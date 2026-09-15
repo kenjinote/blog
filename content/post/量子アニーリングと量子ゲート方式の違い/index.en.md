@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: 'A thorough comparison and explanation of the two quantum computing architectures, Quantum Annealing and the Gate Model, from mathematical models and physical backgrounds such as the Ising model, QUBO formulation, unitary transformation, and error correction, to specific use cases.'
 ---

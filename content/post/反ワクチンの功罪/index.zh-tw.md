@@ -5,7 +5,7 @@ date: 2026-01-24T15:41:23+09:00
 tags: ["社會問題", "健康", "資訊素養"]
 draft: false
 image: "img.webp"
-categories: ["生活風格・雜記"]
+categories: ["lifestyle-miscellaneous"]
 description: '解說圍繞著接種新冠疫苗的「反疫苗」功過與流行病學的教訓。理解接種後案例中的「巧合」與「因果錯覺」等認知偏誤，並探討不被媒體資訊迷惑的科學思考重要性。'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "边框", "图片"]
 draft: false
 image: "img.webp"
-categories: ["AI·技术"]
+categories: ["ai-technology"]
 description: '讲解如何使用免费图片编辑软件“paint.net”对图片局部进行马赛克处理。面向初学者介绍使用选择工具指定范围以及效果功能的设置步骤。这是在上传图片到社交网络或博客时非常实用的隐私保护技巧。'
 ---
 

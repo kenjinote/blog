@@ -5,7 +5,7 @@ date: 2025-07-14T13:47:51+09:00
 tags: ["Formulaire", "Développement Web", "UX"]
 draft: false
 image: "img.webp"
-categories: ["Gestion du Blog"]
+categories: ["blogging"]
 description: 'Nous expliquons les meilleures pratiques pour la marque « champ obligatoire » dans les formulaires web, sur la base des directives UI internationales. Nous résumons comment utiliser correctement l''astérisque (*), la mention explicite de « Required », et l''utilisation des attributs ARIA pour améliorer l''accessibilité.'
 ---
 

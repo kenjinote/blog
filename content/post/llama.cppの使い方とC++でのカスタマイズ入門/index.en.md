@@ -5,7 +5,7 @@ date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: 'A complete guide covering everything from the basics of llama.cpp to advanced C++ customization, the mathematical background of Transformers, and the ggml architecture.'
 ---

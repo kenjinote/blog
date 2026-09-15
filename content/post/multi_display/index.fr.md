@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Workspace"]
+categories: ["gadgets", "productivity", "workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
 description: 'Le guide ultime de configuration multi-écrans pour les ingénieurs. Nous expliquons en détail l''ergonomie visuelle, les calculs de bande passante, le PPI et les mécanismes de mise à l''échelle.'
 ---

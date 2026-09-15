@@ -5,7 +5,7 @@ date: 2025-04-16T23:53:08+09:00
 tags: ["柯克霍夫原則", "密碼學"]
 draft: false
 image: "img_2.webp"
-categories: ["數學、密碼學與量子"]
+categories: ["math-cryptography-quantum"]
 description: '針對初學者淺顯易懂地解說學習資訊安全或密碼技術時不可或缺的「柯克霍夫原則」。詳細說明「即使密碼機制曝光也必須保持安全」這個作為現代資安基礎的重要概念與理由。'
 ---
 

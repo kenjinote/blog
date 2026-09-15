@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Security", "AI", "Society"]
+categories: ["security", "ai", "society"]
 tags: ["Deepfake", "GAN", "C2PA", "Information Literacy"]
 description: '随着AI技术的演进，深度伪造（Deepfake）也日益复杂。本文将从技术侧进行极具深度的分析，涵盖其生成机制、使用频率分析和生物信号（rPPG）的技术检测手段，以及以C2PA为代表的内容溯源证明。'
 ---

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Analytics"]
+categories: ["blogging", "seo", "analytics"]
 tags: ["Google Search Console", "Python", "SEO", "BigQuery"]
 description: 'Объясняется метод стратегического переписывания технических статей путем интеграции данных Google Search Console и GA4 с использованием Python и BigQuery. Охватывает такие основанные на данных SEO-меры, как TF-IDF и анализ CTR.'
 ---

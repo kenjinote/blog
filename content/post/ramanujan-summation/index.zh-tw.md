@@ -4,9 +4,7 @@ description: "如果將「1+2+3+4+...」無限相加會變成怎樣？以常理�
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "物理學"
+categories: ["mathematics", "physics"]
 tags:
   - "無限級數"
   - "解析延拓"

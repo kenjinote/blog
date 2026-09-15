@@ -5,7 +5,7 @@ date: 2022-09-05T10:41:00+09:00
 tags: ["电影", "数学家"]
 draft: false
 image: "images/img.webp"
-categories: ["数学·密码·量子"]
+categories: ["math-cryptography-quantum"]
 description: '为您介绍以天才数学家为主角的推荐名作电影。包括《美丽心灵》、描绘破译恩尼格玛密码的《模仿游戏》、关于拉马努金真实故事的《知无涯者》等，这些都是数学之美与人际冲突相互交织的杰作集锦。'
 ---
 这是我推荐的3部以数学家为主角的电影。

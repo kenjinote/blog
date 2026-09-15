@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: '详细探讨在博客和Web应用程序中实现深色模式的高级CSS设计、防止FOUC的策略，以及考虑到无障碍访问（WCAG 2.1 AAA）的色彩空间（OKLCH）的利用方法。'
 ---

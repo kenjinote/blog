@@ -5,7 +5,7 @@ date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophie", "Hegel", "Dialektik"]
 draft: false
 image: "images/img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Wir erklären „Hegels Dialektik“, bei der Konflikte und Widersprüche überwunden werden, um sich auf eine höhere Ebene zu entwickeln. Wir betrachten dies leicht verständlich anhand von Beispielen aus dem Alltag, nicht nur als philosophisches Konzept, sondern auch durch Naturgesetze und die Evolution durch Fehlerbehebung in Computerprogrammen.'
 ---
 ## Was ist Hegels Dialektik?

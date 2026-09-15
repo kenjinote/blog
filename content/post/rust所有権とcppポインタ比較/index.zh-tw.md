@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: '徹底比較C++的指標與Rust的所有權、借用模型。從原生指標、智慧指標到借用檢查器，為您解說記憶體安全性的本質。'
 ---

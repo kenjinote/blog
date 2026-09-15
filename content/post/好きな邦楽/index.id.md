@@ -5,7 +5,7 @@ date: 2024-01-06T04:11:01+09:00
 tags: ["Musik Jepang", "Musik"]
 draft: false
 image: "img.webp"
-categories: ["Gaya Hidup & Lain-lain"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Kami akan memperkenalkan rekomendasi lagu klasik Jepang (J-POP) yang menyentuh hati, seperti karya Tulip, RADWIMPS, dan Hikaru Utada. Nikmati berbagai karya musik Jepang luar biasa yang terus dicintai lintas generasi, mulai dari lagu mahakarya nostalgia era Showa, lagu hit J-POP era Heisei, hingga balada klasik.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "Audio Processing"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "Speech Recognition", "C++"]
 description: 'Ein vollständiger Leitfaden zur Integration hochpräziser Spracherkennungs-KI in Edge-Geräte und native Anwendungen mit C++ und whisper.cpp. Es deckt alles ab, von den Grundlagen der Audiosignalverarbeitung bis hin zur Optimierung von Echtzeit-Inferenz.'
 ---

@@ -5,7 +5,7 @@ date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome擴充功能"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '介紹能大幅提升 Salesforce 開發與維運效率的推薦 Chrome 擴充功能。精選工程師必備工具，如便於搜尋自訂欄位與建構 SOQL 的 DevTools、有助於搜尋程式碼的擴充功能等。'
 ---
 

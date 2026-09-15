@@ -5,7 +5,7 @@ date: 2022-09-12T19:28:50+09:00
 tags: ["Jogos"]
 draft: false
 image: "img_12.webp"
-categories: ["TI / Tecnologia"]
+categories: ["it-technology"]
 description: 'Apresentamos 11 escolhas de obras-primas recomendadas de jogos retrô nostálgicos, como o Game Boy original e o Super Famicom. Repleto de jogos lendários do nível de Hall da Fama que não perdem o brilho mesmo jogados hoje, como ''Sa・Ga 2: Hihou Densetsu'', ''Kirby''s Dream Land'' e ''Pokémon Red/Green''. Vamos relembrar o encanto destas obras-primas.'
 ---
 Quando me lembrei dos meus jogos favoritos, a lista acabou sendo só de clássicos consagrados.

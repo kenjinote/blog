@@ -5,7 +5,7 @@ date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "視窗"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '介紹在 Rust 中使用 `winapi` 建立並顯示 Windows 簡易視窗的方法。從 Cargo.toml 的設定到視窗程序的實作，詳細解說構成 GUI 程式設計基礎的原始碼。'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["科学", "物理学", "半導体"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '青色LEDの実現がいかに困難であったかを解説する英語ドキュメンタリー番組の紹介。不可能と思われた難題を解決した日本人の偉業と、国内での評価のギャップについても触れています。'
 ---
 

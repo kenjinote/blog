@@ -4,7 +4,7 @@ description: "Menjelaskan secara rinci sejarah Masalah Empat Warna yang merupaka
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Ilmu Komputer"]
+categories: ["mathematics", "computer-science"]
 tags: ["Teorema Empat Warna", "Teori Graf", "Pembuktian Berbantuan Komputer", "Topologi"]
 ---
 

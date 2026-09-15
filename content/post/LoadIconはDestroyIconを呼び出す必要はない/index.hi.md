@@ -4,7 +4,7 @@ slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["आइकन", "LoadIcon", "DestroyIcon", "विंडोज़ प्रोग्रामिंग"]
 draft: false
-categories: ["प्रोग्रामिंग"]
+categories: ["programming"]
 description: 'हम उन शर्तों की व्याख्या करेंगे कि Windows API के LoadIcon या LoadImage के साथ प्राप्त आइकन संसाधन के लिए DestroyIcon को कॉल किया जाना चाहिए या नहीं। हमने संसाधन रिसाव (Resource Leak) को रोकने के लिए सही विशिष्टताओं को व्यवस्थित किया है。'
 ---
 

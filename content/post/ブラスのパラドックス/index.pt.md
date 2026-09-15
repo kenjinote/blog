@@ -7,7 +7,7 @@ slug: "braess-paradox"
 image: "img/braess_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Paradoxos Matemáticos", "Teoria dos Jogos"]
+categories: ["mathematical-paradoxes", "game-theory"]
 tags: ["Paradoxo", "Redes", "Tráfego", "Equilíbrio de Nash", "Paradoxo de Braess"]
 ---
 

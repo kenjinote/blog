@@ -7,7 +7,7 @@ slug: "twin-paradox"
 image: "img/twin_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Paradoxes mathématiques", "Physique"]
+categories: ["mathematical-paradoxes", "physics"]
 tags: ["Paradoxe", "Théorie de la relativité", "Temps", "Einstein", "Espace"]
 ---
 

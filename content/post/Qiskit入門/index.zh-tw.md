@@ -5,7 +5,7 @@ date: "2026-09-11T20:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing", "Python"]
+categories: ["programming", "quantum-computing", "python"]
 tags: ["Qiskit", "Python", "Quantum Computing", "IBM"]
 description: '使用 IBM 的量子運算框架 Qiskit，從量子程式設計的基礎到貝爾態的建立，以及基本演算法，進行徹底的解說。'
 ---

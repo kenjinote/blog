@@ -5,7 +5,7 @@ date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]
 draft: false
 image: "img_1.webp"
-categories: ["पीसी और गैजेट्स"]
+categories: ["pc-gadgets"]
 description: 'हम Mac वातावरण में टर्मिनल का उपयोग करके CocoaPods को इंस्टॉल करने की प्रक्रिया को विस्तार से समझाते हैं। ''sudo gem install cocoapods'' निष्पादित करते समय त्रुटि समाधान विधियाँ और Homebrew का उपयोग करके इंस्टॉल कमांड भी प्रस्तुत किए गए हैं।'
 ---
 

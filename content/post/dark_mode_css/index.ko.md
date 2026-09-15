@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: '블로그나 웹 애플리케이션에서 다크 모드를 구현하기 위한 고급 CSS 설계, FOUC 대책, 접근성(WCAG 2.1 AAA)을 고려한 색 공간(OKLCH) 활용 방법에 대해 자세히 해설합니다.'
 ---

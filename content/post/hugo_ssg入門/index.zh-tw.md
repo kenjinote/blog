@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: '詳細解說從 WordPress 等動態 CMS 移轉到基於 Go 語言的超高速靜態網站產生器 Hugo 的步驟。包含架構差異、模板結構、數理效能分析，到實際的移轉指令。'
 ---

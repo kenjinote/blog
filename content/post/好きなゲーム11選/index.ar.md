@@ -5,7 +5,7 @@ date: 2022-09-12T19:28:50+09:00
 tags: ["ألعاب"]
 draft: false
 image: "img_12.webp"
-categories: ["تكنولوجيا المعلومات"]
+categories: ["it-technology"]
 description: 'نقدم 11 خيارًا من الألعاب الكلاسيكية الأسطورية التي نوصي بها، مثل Game Boy و Super Famicom وغيرها. مليئة بألعاب لا تُنسى مثل "Sa・Ga2: Hihou Densetsu" و "Kirby''s Dream Land" و "Pokémon Red/Green" التي لا تفقد بريقها حتى لو لعبتها اليوم. نستعرض سحر هذه الألعاب الرائعة.'
 ---
 عندما أتذكر ألعابي المفضلة، أجد أن معظمها من الألعاب الكلاسيكية الخالدة.

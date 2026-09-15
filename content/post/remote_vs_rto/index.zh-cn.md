@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: '从社会学沟通模型（艾伦曲线、康威定律）、生产力指标（SPACE、DORA）以及网络架构（零信任）的角度，深入探讨工程组织中的远程办公与重返办公室（RTO）的争论，探寻真正的最优解。'
 ---

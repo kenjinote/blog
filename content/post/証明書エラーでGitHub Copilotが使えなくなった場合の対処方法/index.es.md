@@ -12,7 +12,7 @@ date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y Entornos de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Te explicamos cómo resolver los problemas cuando GitHub Copilot se vuelve inutilizable debido a errores de certificado como "unable to verify the first certificate". Presentamos los pasos específicos para modificar la configuración en ESET.'
 ---
 

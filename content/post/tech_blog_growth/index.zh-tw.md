@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "Career", "SEO"]
+categories: ["blogging", "career", "seo"]
 tags: ["Python", "Google Search Console", "Automation", "SEO"]
 description: '利用數據與自動化將技術部落格流量最大化的策略。徹底解說SEO架構、使用Python與GSC API的流量分析，以及透過GitHub Actions的自動化發布。'
 ---

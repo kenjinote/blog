@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "音频处理"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "语音识别", "C++"]
 description: '这是一份使用C++和whisper.cpp将高精度语音识别AI集成到边缘设备或原生应用程序中的完整指南。内容涵盖了从音频信号处理基础到实时推理优化的所有内容。'
 ---

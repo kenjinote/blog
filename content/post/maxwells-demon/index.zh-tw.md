@@ -3,7 +3,7 @@ title: "馬克士威妖：打破物理學常識的「資訊」能量"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "看似打破熱力學第二定律的思想實驗「馬克士威妖」。這個悖論是如何透過「資訊物理學」被解開的呢？我們將結合數學公式與圖解進行詳細解說。"
-categories: ["Physics", "Information Theory"]
+categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]
 slug: "maxwells-demon"
 ---

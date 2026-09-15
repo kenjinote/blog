@@ -5,7 +5,7 @@ date: 2024-04-16T00:42:27+09:00
 tags: ["QR Code", "curl", "命令提示字元"]
 draft: false
 image: "img.webp"
-categories: ["IT 與科技"]
+categories: ["it-technology"]
 description: '介紹如何使用Windows的命令提示字元與curl指令，生成並顯示基於文字的QR Code。由於需要利用外部API（qrenco.de），本文也會說明處理個人資訊時應注意的事項。'
 ---
 

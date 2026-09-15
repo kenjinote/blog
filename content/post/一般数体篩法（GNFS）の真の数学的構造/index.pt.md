@@ -5,7 +5,7 @@ date: 2026-09-05T02:26:13+09:00
 tags: ["Matemática", "Criptografia", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicaremos a verdadeira estrutura matemática do General Number Field Sieve (GNFS), um algoritmo de fatoração de primos. Desvendaremos os mecanismos avançados para fatorar com eficiência números compostos gigantescos usando ''homomorfismos'' que conectam o mundo dos números inteiros reais ao mundo dos corpos algébricos.'
 ---
 

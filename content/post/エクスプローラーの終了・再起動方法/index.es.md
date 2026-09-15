@@ -12,7 +12,7 @@ date: 2024-03-30T15:40:24+09:00
 tags: ["Explorador de archivos"]
 draft: false
 image: "img_2.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Explicamos varios métodos para cerrar y reiniciar el Explorador de Windows (explorer.exe). Presentamos procedimientos claros utilizando la barra de tareas, el Administrador de tareas y el Símbolo del sistema.'
 ---
 

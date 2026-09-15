@@ -5,7 +5,7 @@ date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "日期", "汇总"]
 draft: false
 image: "img.webp"
-categories: ["IT·科技"]
+categories: ["it-technology"]
 description: '讲解从Salesforce开发者控制台使用SOQL，汇总并获取账户等每日记录创建数量的具体方法及查询语法。带您了解利用GROUP BY子句进行数据分析的便捷步骤。'
 ---
 

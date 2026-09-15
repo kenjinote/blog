@@ -5,7 +5,7 @@ date: 2024-04-16T02:13:56+09:00
 tags: ["IA Generativa", "YouTube", "Palestra"]
 draft: false
 image: "img.webp"
-categories: ["IA e Tecnologia"]
+categories: ["ai-technology"]
 description: 'Um resumo de vídeos de palestras por professores da Universidade de Tóquio, onde você pode aprender profundamente sobre a tão falada IA generativa. Apresentaremos vídeos de explicações fáceis de entender e úteis, ministrados entre 2023 e 2024 por importantes pesquisadores de IA, como o Professor Masayuki Nakao, o Professor Kuniyoshi Sakai e o Professor Yutaka Matsuo.'
 ---
 

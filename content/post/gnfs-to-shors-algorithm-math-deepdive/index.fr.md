@@ -6,7 +6,7 @@ tags: ["Ordinateur quantique", "GNFS", "Algorithme de Shor", "Décryptage", "Mat
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["Mathématiques, Cryptographie et Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Le problème de la factorisation qui sous-tend la sécurité du chiffrement RSA. Depuis le mécanisme mathématique de « l''algorithme du Crible du Corps de Nombres Généralisé (GNFS) », le plus puissant des algorithmes classiques, jusqu''aux raisons pour lesquelles « l''algorithme de Shor » des ordinateurs quantiques le surpasse, nous l''expliquerons en profondeur à l''aide de formules et de schémas conceptuels.'
 ---
 

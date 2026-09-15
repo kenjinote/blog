@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 math: true
 mermaid: true
 image: 'img/missing_dollar.jpg'
-categories:
-  - '數學悖論'
-  - '邏輯思維'
+categories: ["mathematical-paradoxes", "logical-thinking"]
 tags:
   - '悖論'
   - '算術'

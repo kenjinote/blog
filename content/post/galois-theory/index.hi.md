@@ -4,9 +4,7 @@ description: "गैलोज़ सिद्धांत क्या है? 5
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "गणित"
-  - "बीजगणित"
+categories: ["mathematics", "algebra"]
 tags:
   - "गैलोज़ सिद्धांत"
   - "समूह सिद्धांत"

@@ -5,7 +5,7 @@ date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
-categories: ["पीसी और गैजेट्स"]
+categories: ["pc-gadgets"]
 description: 'घर पर एक आरामदायक iOS ऐप विकास वातावरण बनाने के लिए, मैंने Mercari पर एक पुराना Mac mini (2018) खरीदा। हम खरीद के निर्णायक कारक, विस्तृत विनिर्देशों और पर्यावरण निर्माण के पहले चरण का परिचय देंगे。'
 ---
 

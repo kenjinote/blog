@@ -5,7 +5,7 @@ date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "प्रेजेंटेशन"]
 draft: false
 image: "img.webp"
-categories: ["प्रोग्रामिंग"]
+categories: ["programming"]
 description: 'हम "reveal.js" के इंस्टॉलेशन और बुनियादी उपयोग की व्याख्या करेंगे, एक टूल जो आपको HTML और Markdown के साथ सहज रूप से प्रेजेंटेशन बनाने की अनुमति देता है। हम ऐसे उपयोग पेश करेंगे जो एनीमेशन और PDF आउटपुट का समर्थन करते हैं और Git जैसे संस्करण नियंत्रण (Version Control) के साथ संगत हैं。'
 ---
 

@@ -5,7 +5,7 @@ date: '2026-09-13T08:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ['Programming', 'Cross-Platform', 'Best Practices']
+categories: ["programming", "cross-platform", "best-practices"]
 tags: ['Windows', 'macOS', 'Git', 'CMake', 'Development']
 ---
 

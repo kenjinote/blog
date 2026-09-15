@@ -3,7 +3,7 @@ title: "ビザンチン将軍問題：裏切り者がいるネットワークで
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "分散システムにおける代表的な課題「ビザンチン将軍問題」について、その概念から数学的証明、ブロックチェーンでの応用までを具体例や図解を交えてわかりやすく解説します。"
-categories: ["技術解説", "分散システム"]
+categories: ["technical-explanation", "distributed-systems"]
 tags: ["ビザンチン将軍問題", "ブロックチェーン", "合意形成", "アルゴリズム"]
 slug: "byzantine-generals-problem"
 ---

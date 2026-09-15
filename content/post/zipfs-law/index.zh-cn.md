@@ -4,10 +4,7 @@ description: 使用公式和插图深入探讨齐普夫定律，这是统治世�
 slug: zipfs-law
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- 数学
-- 数据科学
-- 语言学
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
 - 齐普夫定律
 - 幂律

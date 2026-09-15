@@ -5,7 +5,7 @@ date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "Open Source"]
 draft: false
 image: "img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Memperkenalkan berita bahwa kode sumber OS ''MS-DOS 4.0'' yang dirilis sekitar 40 tahun lalu telah menjadi open source dan dirilis di GitHub. Kami menjelaskan tentang materi historis di mana sebagian besar kodenya ditulis dalam perakitan 8086.'
 ---
 

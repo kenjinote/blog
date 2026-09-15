@@ -7,7 +7,7 @@ slug: "twin-paradox"
 image: "img/twin_paradox.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "भौतिक विज्ञान"]
+categories: ["mathematical-paradoxes", "physics"]
 tags: ["विरोधाभास", "सापेक्षता का सिद्धांत", "समय", "आइंस्टीन", "अंतरिक्ष"]
 ---
 

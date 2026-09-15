@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Математический анализ"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["парадокс", "геометрия", "бесконечность", "Рог Торричелли"]
 ---
 

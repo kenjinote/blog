@@ -6,7 +6,7 @@ tags: ["量子计算机", "GNFS", "Shor算法", "密码破解", "数学"]
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '支撑RSA密码安全性的因数分解问题。从经典最强算法“一般数域筛法（GNFS）”的数学机制，到量子计算机的“Shor算法”为何能将其击破，本文将结合公式和概念图进行彻底分析。'
 ---
 

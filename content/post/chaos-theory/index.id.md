@@ -4,9 +4,7 @@ description: Penjelasan menyeluruh tentang teori chaos dan efek kupu-kupu — si
 slug: chaos-theory
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Sains
-- Matematika
+categories: ["science", "mathematics"]
 tags:
 - Teori Kekacauan
 - Fisika

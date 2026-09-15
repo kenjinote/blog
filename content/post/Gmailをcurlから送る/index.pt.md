@@ -5,7 +5,7 @@ date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
-categories: ["IA e Tecnologia"]
+categories: ["ai-technology"]
 description: 'Explicamos como enviar e-mails via conta do Gmail através da ferramenta de linha de comando ''curl''. Detalhamos desde o processo para obter uma Senha de App do Google, até as opções do comando curl e a criação e envio do arquivo do corpo do e-mail.'
 ---
 

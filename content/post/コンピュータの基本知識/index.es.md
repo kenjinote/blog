@@ -13,7 +13,7 @@ date: 2024-09-19T01:10:20+09:00
 tags: ["Computadora", "Conocimientos básicos"]
 draft: false
 image: "img.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Explicamos de manera fácil de entender para principiantes en TI cómo funciona una computadora. Resumimos los conocimientos básicos que debes tener como base de TI, desde el papel de las ''5 grandes unidades'' (entrada, salida, memoria, control y procesamiento aritmético) hasta la relación entre el hardware y el software (programas).'
 ---
 

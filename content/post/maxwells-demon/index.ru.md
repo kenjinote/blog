@@ -3,7 +3,7 @@ title: "Демон Максвелла: Энергия «информации», 
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Мысленный эксперимент «Демон Максвелла», который, кажется, нарушает второй закон термодинамики. Как этот парадокс был разрешен «физикой информации»? Мы подробно объясним это с помощью математических формул и диаграмм."
-categories: ["Physics", "Information Theory"]
+categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]
 slug: "maxwells-demon"
 ---

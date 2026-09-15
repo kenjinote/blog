@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Hugo"]
+categories: ["blogging", "seo", "hugo"]
 tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: 'الدليل الشامل لإتقان تحسين محركات البحث في Hugo. سنشرح بالتفصيل طرق تخصيص frontmatter و head.html التي ستزيد من عدد الزيارات بشكل كبير، بدءًا من البيانات الوصفية (Metadata) و OGP وحتى البيانات المنظمة (Structured Data) باستخدام JSON-LD.'
 ---

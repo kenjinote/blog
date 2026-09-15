@@ -5,7 +5,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["短語", "表達"]
 draft: false
 image: "img.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '介紹「不要將對方的行為視為惡意，而是當作單純的不小心」的心理學方法「漢隆的剃刀」。解說消除 LINE 回覆慢等日常煩惱，減少人際關係壓力的提示。'
 ---
 

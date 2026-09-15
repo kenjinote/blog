@@ -5,7 +5,7 @@ date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'Rustで`winapi`と`user32-sys`クレートを利用し、Windows APIを呼び出してシンプルなメッセージボックス（MessageBox）を表示する方法を、プロジェクトの作成からコード実装まで手順を追って解説します。'
 ---
 

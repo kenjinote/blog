@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Analytics"]
+categories: ["blogging", "seo", "analytics"]
 tags: ["Google Search Console", "Python", "SEO", "BigQuery"]
 description: 'Google Search Console과 GA4의 데이터를 통합하여, Python과 BigQuery를 활용해 기술 게시글을 전략적으로 리라이팅하는 방법을 설명합니다. TF-IDF 및 CTR 분석 등 데이터 기반의 SEO 전략을 망라합니다.'
 ---

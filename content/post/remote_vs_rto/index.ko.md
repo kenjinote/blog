@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: '엔지니어링 조직에서의 원격 근무와 사무실 복귀(RTO) 논의를 사회학적 커뮤니케이션 모델(알렌 곡선, 콘웨이의 법칙), 생산성 지표(SPACE, DORA), 그리고 네트워크 아키텍처(제로 트러스트)의 관점에서 깊이 있게 분석하고 진정한 최적의 해답을 탐구합니다.'
 ---

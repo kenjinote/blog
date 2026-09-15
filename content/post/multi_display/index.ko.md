@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Workspace"]
+categories: ["gadgets", "productivity", "workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
 description: '엔지니어를 위한 궁극의 멀티 디스플레이 구축 가이드. 시야 공학, 대역폭 계산, PPI와 스케일링의 원리까지 철저하게 해설합니다.'
 ---

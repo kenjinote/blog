@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Health", "Productivity", "Data Science"]
+categories: ["health", "productivity", "data-science"]
 tags: ["Oura Ring", "Wearables", "Python", "Biohacking"]
 description: 'استخدام لغة بايثون ومكتبة بانداس لإجراء تحليل ارتباط بين بيانات تقلب معدل ضربات القلب (HRV) والنوم المستخرجة من أجهزة مثل Oura Ring وApple Watch، وإنتاجية البرمجة المسجلة عبر WakaTime. هذا النهج المبني على البيانات يهدف إلى زيادة الأداء وإدارة الصحة بطريقة فعالة.'
 ---

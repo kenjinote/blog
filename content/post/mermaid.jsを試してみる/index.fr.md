@@ -6,7 +6,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["IA et Technologie"]
+categories: ["ai-technology"]
 description: 'Explique clairement la présentation de ''Mermaid.js'', une bibliothèque JavaScript permettant de dessiner des diagrammes tels que des organigrammes et des diagrammes de Gantt basés sur du texte, ainsi que les étapes spécifiques pour l''intégrer, le configurer et l''utiliser avec le générateur de sites statiques Hugo.'
 ---
 

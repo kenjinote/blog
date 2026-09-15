@@ -5,7 +5,7 @@ date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Award"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environment"]
+categories: ["tools-development-environment"]
 description: 'A report on receiving the Microsoft MVP (2023-2024) award in the Developer Technologies category. This marks the 7th consecutive year receiving the award since 2017. I reflect on my information dissemination through technical blogs and community activities so far.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "جائزة"]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'هذا تقرير عن حصولي على جائزة Microsoft MVP (2023-2024) في فئة تقنيات المطورين. هذه هي السنة السابعة على التوالي منذ عام 2017. سنسترجع ما قمت بنشره من معلومات على المدونة التقنية وأنشطة المجتمع حتى الآن.'
 ---
 

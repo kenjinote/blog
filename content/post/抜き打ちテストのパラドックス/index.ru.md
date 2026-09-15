@@ -6,9 +6,7 @@ date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Математические парадоксы'
-  - 'Логика'
+categories: ["mathematical-paradoxes", "logic"]
 tags:
   - 'Парадокс'
   - 'Самореференция'

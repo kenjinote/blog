@@ -5,7 +5,7 @@ date: 2022-09-02T07:23:00+09:00
 tags: ["杂记"]
 draft: false
 image: "images/komeda.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '我使用静态网站生成器“Hugo”新开设了个人博客。今后计划把这里当做备忘录，轻松地发布技术备忘、编程代码以及生活中的日常琐事。'
 ---
 

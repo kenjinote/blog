@@ -5,7 +5,7 @@ date: 2025-07-20T21:52:42+09:00
 tags: ["KI", "Entwicklung", "Barriere", "Gedicht"]
 draft: false
 image: "img_1.webp"
-categories: ["KI & Technologie"]
+categories: ["ai-technology"]
 description: 'Ist die Ära von „Mit KI lassen sich Apps einfach erstellen“ wirklich wahr? Auch wenn man mit No-Code und KI-generiertem Code problemlos bis zur 8. Station kommt, wartet danach bei den finalen Anpassungen und der Fehlerbehebung eine Hölle, die Menschen zum Weinen bringt. Wir sprechen offen über die realen Fallstricke der KI-Entwicklung und die wahre Natur der „Hürden“, auf die man stößt.'
 ---
 

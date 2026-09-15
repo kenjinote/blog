@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["produtos de couro", "hobby"]
 draft: fales
 image: "img.webp"
-categories: ["estilo de vida e notas diversas"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Para iniciantes na manutenção de produtos de couro, apresentaremos produtos de cuidado recomendados que realmente foram bons de comprar, como o Delicate Cream da M.MOWBRAY e o Supreme Cream da Collonil. Estas são técnicas de cuidado para que os seus preciosos itens de couro durem muito tempo.'
 ---
 

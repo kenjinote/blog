@@ -5,7 +5,7 @@ slug: "qsharp-quantum-programming-language-intro"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing"]
+categories: ["programming", "quantum-computing"]
 tags: ["Q#", "Quantum", "Microsoft", "QDK", "Programming"]
 description: '量子プログラミング言語「Q#」の特徴や基本的な文法、量子もつれの構築とホスト言語からの実行などを基礎から詳細に解説します。'
 ---

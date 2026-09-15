@@ -5,7 +5,7 @@ date: 2022-09-20T16:04:02+09:00
 tags: ["命令提示字元"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '解說在Windows環境中，如何高速且批次刪除容量龐大資料夾的方法。在檔案總管中需要耗費大量時間的刪除作業，只要活用命令提示字元的DEL指令與RMDIR指令，就能大幅加快作業速度。'
 ---
 ## 快速批次刪除大型資料夾

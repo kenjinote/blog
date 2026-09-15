@@ -3,9 +3,7 @@ title: "ロバート・フロイドの循環検出法（ウサギとカメのア
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "リストやグラフ内の循環（サイクル）を検出するための有名なアルゴリズム、「ロバート・フロイドの循環検出法（ウサギとカメのアルゴリズム）」について、図解と数式、そしてC++とRustの実装を交えて詳細に解説します。"
-categories:
-  - "Algorithms"
-  - "Computer Science"
+categories: ["algorithms", "computer-science"]
 tags:
   - "Algorithm"
   - "C++"

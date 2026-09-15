@@ -5,7 +5,7 @@ date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Développement", "Histoire secrète"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et technologie"]
+categories: ["it-technology"]
 description: 'L''histoire de la naissance de « LogicPad », un outil low-code destiné aux « personnes qui ne savent pas coder mais qui ont de la logique ». L''auteur parle passionnément de ses sentiments personnels derrière le développement et de la façon dont il aborde sa propre carrière.'
 ---
 

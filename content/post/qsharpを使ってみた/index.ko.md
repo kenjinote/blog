@@ -5,7 +5,7 @@ slug: "qsharp-quantum-programming-language-intro"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing"]
+categories: ["programming", "quantum-computing"]
 tags: ["Q#", "Quantum", "Microsoft", "QDK", "Programming"]
 description: '양자 프로그래밍 언어 "Q#"의 특징과 기본 문법, 양자 얽힘의 구축 및 호스트 언어에서의 실행 등을 기초부터 상세히 해설합니다.'
 ---

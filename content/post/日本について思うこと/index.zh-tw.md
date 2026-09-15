@@ -5,7 +5,7 @@ date: 2022-09-06T02:24:11+09:00
 tags: ["雜記"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '整理並考察對日本社會產生個人違和感與課題的文章。針對需付息學貸造成年輕人債務負擔進而導致少子化的現狀，以及冷漠的自我責任論蔓延的社會型態提出質疑，並闡述救濟弱勢與互助精神的重要性。'
 ---
 我想整理一下我對日本社會感到奇怪和思考的事情。

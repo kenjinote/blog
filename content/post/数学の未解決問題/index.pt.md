@@ -6,7 +6,7 @@ tags: ["Matemática","Problemas não resolvidos"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matemática・Criptografia・Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicaremos de forma fácil de entender problemas matemáticos fascinantes e não resolvidos que, embora simples em si mesmos, ainda não foram provados. Existem infinitos números perfeitos? Abordaremos vários problemas misteriosos que continuam a atormentar os matemáticos, como a Conjectura de Goldbach e a difícil Hipótese de Riemann.'
 ---
 

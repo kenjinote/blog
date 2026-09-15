@@ -6,7 +6,7 @@ tags: ["エラトステネスの篩", "素数", "数学", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '素数を効率的に見つけるアルゴリズム「エラトステネスの篩」の仕組みと具体的な手順をわかりやすく解説。Rust言語を使った1000以下の素数を列挙する実装例もあわせて紹介します。'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["电影", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["生活方式与杂记"]
+categories: ["lifestyle-miscellaneous"]
 description: '包含了今后想看的名作电影和动画的待办清单。从《博士的爱情算式》、《心灵捕手》等数学相关的电影，到《夏日大作战》、《天气之子》等热门动画，我们将结合已观影的打卡记录一并向您介绍。'
 ---
 

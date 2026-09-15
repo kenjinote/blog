@@ -13,7 +13,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Números primos", "Algoritmos", "Matemáticas"]
 draft: false
 image: "img.webp"
-categories: ["Matemáticas, Criptografía y Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Se introduce un código de muestra simple en C que genera, enlista y evalúa números primos en un rango específico (de 1 a n). Presenta ejemplos de implementación y explicaciones del algoritmo usando la función isPrime que es eficiente y fácil de entender, incluso para los principiantes en la programación.'
 ---
 

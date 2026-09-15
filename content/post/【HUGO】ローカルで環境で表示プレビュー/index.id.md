@@ -5,7 +5,7 @@ date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Manajemen Blog"]
+categories: ["blogging"]
 description: 'Menjelaskan dengan mudah prosedur instalasi pembuat situs statis ''Hugo'' di lingkungan Windows, cara mengatur variabel lingkungan Path, dan cara menggunakan perintah untuk menjalankan server lokal agar bisa melihat pratinjau artikel blog.'
 ---
 # Instalasi HUGO

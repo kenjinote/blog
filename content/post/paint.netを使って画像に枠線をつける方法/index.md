@@ -5,7 +5,7 @@ date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "枠線", "画像"]
 draft: false
 image: "img_3.webp"
-categories: ["AI・テクノロジー"]
+categories: ["ai-technology"]
 description: '画像編集ソフトpaint.netを用いて画像に枠線を付ける方法を解説します。セカンダリカラーでの色指定や、キャンバスサイズ変更を活用した枠線の作成手順を初心者向けに紹介。ブログや資料作成で画像を装飾したい時にすぐ役立つ便利なテクニックです。'
 ---
 

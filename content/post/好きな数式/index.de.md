@@ -6,7 +6,7 @@ tags: ["Mathematik"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathematik, Kryptographie, Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir stellen faszinierende Formeln vor, die die Tiefe und Schönheit der Mathematik spüren lassen, wie den Satz von Wilson, die Eulersche Formel, den Großen Fermatschen Satz und das Basler Problem. Bitte sehen Sie sich die zahlreichen schönen Formeln an, die, obwohl sie einfach sind, die Wahrheiten der Welt auszudrücken scheinen und Bewunderung hervorrufen.'
 ---
 ## Satz von Wilson

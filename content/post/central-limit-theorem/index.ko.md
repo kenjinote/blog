@@ -3,7 +3,7 @@ title: "중심극한정리(Central Limit Theorem) - 어떤 데이터도 합산�
 description: "통계학에서 가장 중요한 정리 중 하나인 중심극한정리에 대해 직관적 이해부터 수학적 증명, 그리고 Python을 이용한 시뮬레이션까지 상세히 해설합니다."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "통계학"]
+categories: ["mathematics", "statistics"]
 tags: ["중심극한정리", "확률", "데이터 과학", "Python"]
 slug: "central-limit-theorem"
 ---

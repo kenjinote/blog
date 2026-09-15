@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Hardware", "Salud", "Productividad"]
+categories: ["hardware", "health", "productivity"]
 tags: ["Monitores", "Ergonomía", "E-ink", "Fatiga visual"]
 ---
 

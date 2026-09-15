@@ -5,7 +5,7 @@ date: 2025-08-31T20:24:49+09:00
 tags: ["Diffusion de développement d'application de cartes de vœux", "YouTube"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Première partie de la diffusion YouTube sur le développement d''une application de cartes de vœux en C++. De la création du dépôt GIT à l''affichage de la fenêtre principale, en passant par l''initialisation de Direct2D et l''implémentation de HelloWorld, nous expliquons le code source et les étapes de mise en place de l''environnement de base de l''application.'
 ---
 

@@ -13,7 +13,7 @@ date: 2024-09-18T00:56:59+09:00
 tags: ["La historia de la pareja de ancianos y el burro", "Sátira"]
 draft: false
 image: "img.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'A través de la famosa fábula "La pareja de ancianos y el burro", examinamos los efectos nocivos de preocuparse demasiado por los ojos de los demás, y los problemas de relaciones humanas actuales de "a qué voz debes creer". Compartimos pistas sobre cómo vivir tu vida sin ser manipulado por las opiniones de los demás.'
 ---
 

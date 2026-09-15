@@ -5,7 +5,7 @@ date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "editor de texto"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Explicamos o uso básico do Vim para iniciantes. Abordamos os primeiros passos com uma lista de comandos completos, tais como: método de instalação no ambiente Windows, comandos de iniciar e sair (salvar ou forçar saída), modo de comando em oposição ao de inserção, entre outros.'
 ---
 

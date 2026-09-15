@@ -5,7 +5,7 @@ date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "устранение неполадок"]
 draft: false
 image: "img.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Объясняем, как решить проблему, когда при выполнении «sudo apt update» в среде WSL появляется ошибка «Temporary failure resolving». Описаны шаги по изменению настроек DNS-сервера и правильному восстановлению связи менеджера пакетов.'
 ---
 

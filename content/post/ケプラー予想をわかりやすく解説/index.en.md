@@ -5,7 +5,7 @@ date: 2025-07-21T22:53:03+09:00
 tags: ["Mathematics", "Kepler's Conjecture", "Explanation"]
 draft: false
 image: "img.webp"
-categories: ["Math/Cryptography/Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'An easy-to-understand explanation of the ''Kepler Conjecture'', a difficult mathematical problem born from the familiar question: ''What is the tightest way to pack watermelons?'' Let''s learn together about the romance and fascination of this sphere-packing problem proposed by genius astronomer Kepler, which went unproven for over 400 years.'
 ---
 

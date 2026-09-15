@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Nous expliquons en détail le fonctionnement du flux d''octroi de code d''autorisation (Authorization Code Grant) d''OAuth 2.0 à travers la mise en œuvre d''une intégration d''application Slack. Il s''agit d''un guide complet couvrant des exemples concrets de code en Node.js et les meilleures pratiques de sécurité.'
 ---

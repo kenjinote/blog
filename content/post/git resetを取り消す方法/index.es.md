@@ -12,7 +12,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurar", "deshacer"]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y Entornos de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Explicamos cómo cancelar y restaurar el estado original de un commit cuando has ejecutado "git reset" por error en Git. Mostramos de forma clara cómo usar "git reflog" para verificar el ID del commit y restaurar correctamente el estado.'
 ---
 

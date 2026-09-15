@@ -5,7 +5,7 @@ date: 2023-04-09T14:01:00+09:00
 tags: ["オンライン", "コード実行環境", "プログラミング"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: '環境構築不要で手軽にプログラミングを始められる、便利なオンラインコード実行環境を言語別（Python、JavaScript、C++など）にまとめました。Google ColabやAWS Cloud9などの特徴を詳しく解説します。'
 ---
 

@@ -4,7 +4,7 @@ description: "Бесконечности различаются по «разм�
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "Основания математики", "Теория множеств"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Диагональный аргумент", "Бесконечность", "Математика", "Доказательство"]
 ---
 

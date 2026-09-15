@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: '量子アニーリングと量子ゲート方式という2つの量子コンピュータのアーキテクチャについて、Isingモデル、QUBO定式化、ユニタリ変換、誤り訂正などの数理モデルや物理的背景から、具体的なユースケースまで徹底的に比較・解説します。'
 ---

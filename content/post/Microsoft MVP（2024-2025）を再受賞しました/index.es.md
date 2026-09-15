@@ -13,7 +13,7 @@ date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y Entornos de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Un informe sobre haber sido galardonado nuevamente como Microsoft MVP (2024-2025) por octava vez. Presento un resumen del programa Microsoft MVP, las actividades que se evalúan, las razones de este premio y un repaso del último año.'
 ---
 

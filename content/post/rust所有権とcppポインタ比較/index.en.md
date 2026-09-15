@@ -5,7 +5,7 @@ date: '2026-09-12T04:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'A thorough comparison between C++ pointers and Rust ownership/borrowing models. Explains the essence of memory safety from raw pointers and smart pointers to the borrow checker.'
 ---

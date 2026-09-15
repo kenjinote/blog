@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: '彻底比较C++的指针与Rust的所有权及借用模型。从原始指针、智能指针到借用检查器，为您分析内存安全的本质。'
 ---

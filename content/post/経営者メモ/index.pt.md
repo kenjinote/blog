@@ -5,7 +5,7 @@ date: 2022-09-07T02:36:11+09:00
 tags: ["Gestor"]
 draft: false
 image: "images/img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Disponibilizamos anotações práticas que os proprietários de negócios devem saber, como encontrar negócios que estão se tornando populares, imitação e melhoria completas, e pontos de sistematização que qualquer pessoa pode fazer. Abordamos também a essência da filosofia de gestão de ''maximizar os lucros da empresa''.'
 ---
 # Encontrar negócios que estão se tornando populares

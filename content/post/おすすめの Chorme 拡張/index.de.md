@@ -5,7 +5,7 @@ date: 2023-03-19T02:54:30+09:00
 tags: ["Chrome-Erweiterungen", "Browser", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
-categories: ["IT / Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen empfohlene Erweiterungen vor, die das Surfen in Google Chrome und Microsoft Edge drastisch effizienter machen, wie z. B. Mausgesten, Werbeblocker, DeepL-Übersetzung und die Nutzung der ChatGPT-Seitenleiste.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
-categories: ["الكمبيوتر والأدوات"]
+categories: ["pc-gadgets"]
 description: 'من أجل بناء بيئة مريحة لتطوير تطبيقات iOS في المنزل، قمت بشراء طراز قديم من Mac mini (2018) من Mercari. نقدم الأسباب الحاسمة للشراء، والمواصفات التفصيلية، والخطوة الأولى في إعداد بيئة العمل.'
 ---
 

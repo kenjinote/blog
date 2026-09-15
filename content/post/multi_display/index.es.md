@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Workspace"]
+categories: ["gadgets", "productivity", "workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
 description: 'La guía definitiva para construir un entorno de múltiples pantallas para ingenieros. Explicación exhaustiva sobre ergonomía visual, cálculo de ancho de banda y el funcionamiento de PPI y escalado.'
 ---

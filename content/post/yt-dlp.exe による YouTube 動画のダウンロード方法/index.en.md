@@ -5,7 +5,7 @@ date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "Download"]
 draft: false
 image: "img_1.webp"
-categories: ["IT and Technology"]
+categories: ["it-technology"]
 description: 'An easy-to-understand guide on how to download and save high-quality YouTube videos, or extract and save them as mp3 audio files using the command-line tool ''yt-dlp''. Covers everything from installation to usage.'
 ---
 # What is yt-dlp?

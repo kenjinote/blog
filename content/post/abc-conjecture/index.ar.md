@@ -4,7 +4,7 @@ description: "نظرة عامة متعمقة على حدسية ABC والنهج 
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "العلوم"]
+categories: ["mathematics", "science"]
 tags: ["حدسية ABC", "نظرية الأعداد", "نظرية IUT", "شينيتشي موتشيزوكي"]
 ---
 

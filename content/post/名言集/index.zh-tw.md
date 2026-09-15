@@ -5,7 +5,7 @@ date: 2022-10-15T17:00:43+09:00
 tags: ["名言集"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '嚴選並介紹賈伯斯、老子等歷史偉人與名人觸動人心的名言。透過成為人生教訓的語錄，以及有助於提升動力的至理名言，從先人的智慧中學習，尋找讓自己的人生與日常生活更豐富的啟發。'
 ---
 

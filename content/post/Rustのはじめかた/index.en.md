@@ -5,7 +5,7 @@ date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Explains how to get started with Rust, a fast and memory-safe programming language, for beginners. Comprehensively introduces everything from the language''s features and installation methods to the execution steps of the first program, Hello World, and recommended Japanese documentation.'
 ---
 # Introduction

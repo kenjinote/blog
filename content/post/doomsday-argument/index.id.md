@@ -3,7 +3,7 @@ title: "Argumen Hari Kiamat (Doomsday Argument): 'Batas Waktu Kepunahan Manusia'
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Di titik manakah kita berada dalam sejarah umat manusia? Kami menjelaskan 'Argumen Hari Kiamat', yang memprediksi waktu kepunahan manusia secara probabilistik menggunakan Prinsip Copernicus dan Inferensi Bayesian, lengkap dengan rumus matematika dan ilustrasi."
-categories: ["Teori Probabilitas", "Eksperimen Pikiran", "Filsafat"]
+categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags: ["Inferensi Bayesian", "Argumen Hari Kiamat", "Doomsday Argument", "Matematika"]
 slug: "doomsday-argument"
 ---

@@ -5,7 +5,7 @@ date: 2022-09-09T23:13:19+09:00
 tags: ["哲學", "黑格爾", "辯證法"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '解說克服對立與矛盾，進而發展至更高層次的「黑格爾辯證法」。不僅探討哲學概念，還會結合自然界法則以及透過修正電腦程式錯誤所帶來的進化等生活實例，進行淺顯易懂的探討。'
 ---
 ## 什麼是黑格爾的辯證法

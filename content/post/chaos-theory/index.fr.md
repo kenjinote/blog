@@ -4,9 +4,7 @@ description: Une explication approfondie de la théorie du chaos et de l'effet p
 slug: chaos-theory
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Science
-- Mathématiques
+categories: ["science", "mathematics"]
 tags:
 - Théorie du chaos
 - Physique

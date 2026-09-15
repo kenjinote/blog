@@ -5,7 +5,7 @@ date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "File Explorer"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadget"]
+categories: ["pc-gadgets"]
 description: 'Menjelaskan cara mengembalikan menu klik kanan (menu konteks) baru di Windows 11 ke versi klasik seperti di Windows 10. Memperkenalkan langkah mudah menggunakan Editor Registri agar menu spesifikasi lama selalu ditampilkan.'
 ---
 

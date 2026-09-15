@@ -5,7 +5,7 @@ date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: '從 llama.cpp 基礎到使用 C++ 進行進階客製化、Transformer 的數學背景以及 ggml 架構解說的完整指南。'
 ---

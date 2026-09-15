@@ -5,7 +5,7 @@ date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "日付", "集計"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'Salesforceの開発者コンソールからSOQLを使用して、アカウントなどの日別レコード作成数を集計して取得する具体的な方法とクエリ構文を解説します。GROUP BY句を利用した便利なデータ分析の手順が分かります。'
 ---
 

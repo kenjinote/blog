@@ -4,7 +4,7 @@ description: "Подробное объяснение гипотезы Ходж�
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["Математика", "Наука"]
+categories: ["mathematics", "science"]
 tags: ["Проблемы тысячелетия", "Топология", "Алгебраическая геометрия", "Гипотеза Ходжа"]
 ---
 

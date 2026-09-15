@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: 'Wir untersuchen die Debatte über Remote-Work und Return to Office (RTO) in Entwicklungsteams aus der Perspektive soziologischer Kommunikationsmodelle (Allen-Kurve, Conways Gesetz), Produktivitätskennzahlen (SPACE, DORA) und Netzwerkarchitekturen (Zero Trust), um die wirklich optimale Lösung zu finden.'
 ---

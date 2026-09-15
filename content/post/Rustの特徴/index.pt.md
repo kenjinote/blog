@@ -5,7 +5,7 @@ date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Explicamos de forma clara as principais características do ''Rust'', uma linguagem de programação desenvolvida pela Mozilla. Apresentamos os motivos pelos quais ela é escolhida, como velocidade de execução, ausência de coleta de lixo, segurança de memória através de posse e empréstimo e suporte multiplataforma.'
 ---
 # Características do Rust

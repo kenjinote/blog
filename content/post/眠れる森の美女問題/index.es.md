@@ -6,9 +6,7 @@ date: '2026-09-10T09:00:00+09:00'
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Paradojas matemáticas'
-  - 'Teoría de la probabilidad'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'Paradoja'
   - 'Probabilidad condicional'

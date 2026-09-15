@@ -5,7 +5,7 @@ date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["AI", "Open Source", "LLM"]
+categories: ["ai", "open-source", "llm"]
 tags: ["Llama", "Mistral", "Local AI", "Gemma"]
 description: 'प्राइवेसी की सुरक्षा करते हुए मुफ्त में इस्तेमाल किए जाने वाले लोकल LLM। इस लेख में, हम तकनीकी दृष्टिकोण से Llama 3, Mistral, Gemma 2, Qwen 2.5 और Phi-3 जैसे शीर्ष ओपन सोर्स LLM की विस्तार से तुलना और व्याख्या करेंगे।'
 ---

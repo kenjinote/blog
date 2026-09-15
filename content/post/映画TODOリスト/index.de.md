@@ -5,7 +5,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["Filme", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["Lifestyle und Diverses"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Dies ist eine TODO-Liste von Film-Meisterwerken und Animes, die ich in Zukunft sehen möchte. Wir stellen sie zusammen mit Überprüfungsaufzeichnungen bereits gesehener Werke vor, von mathematikbezogenen Filmen wie „Der Professor und seine geliebte Gleichung“ und „Good Will Hunting“ bis hin zu beliebten Animes wie „Summer Wars“ und „Weathering With You“.'
 ---
 

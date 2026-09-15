@@ -5,7 +5,7 @@ date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["部落格營運"]
+categories: ["blogging"]
 description: '說明如何利用 Slack App 的 OAuth 權杖，透過 Slack Web API 發布訊息。從設定權限範圍及取得存取權杖的步驟，到使用 WinHTTP 的 C++ 具體實作程式碼範例，皆有介紹。'
 ---
 

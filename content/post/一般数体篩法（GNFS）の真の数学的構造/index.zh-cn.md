@@ -5,7 +5,7 @@ date: 2026-09-05T02:26:13+09:00
 tags: ["数学", "密码学", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '解说因式分解算法——普通数域筛选法（GNFS）真实的数学结构。为您揭开如何使用连接现实整数世界与代数数域世界的“同态映射”，来高效地对巨大的合数进行因式分解的复杂机制。'
 ---
 

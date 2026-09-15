@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "सांख्यिकी", "मनोविज्ञान"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["विरोधाभास", "बेज़ का प्रमेय", "संभावना", "संज्ञानात्मक पूर्वाग्रह", "बेस रेट फैलेसी"]
 ---
 

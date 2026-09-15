@@ -5,7 +5,7 @@ date: 2024-04-06T15:36:54+09:00
 tags: ["浏览器扩展", "Edge附加组件", "自动刷新"]
 draft: false
 image: "img.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '讲解在Microsoft Edge中可以定期自动刷新网页的浏览器扩展“标签页自动刷新”的使用方法。从安装方法、刷新间隔的设置到停止步骤，图文并茂地为您进行通俗易懂的介绍。'
 ---
 介绍一款用于自动刷新网页的 Edge 浏览器扩展程序“标签页自动刷新”。

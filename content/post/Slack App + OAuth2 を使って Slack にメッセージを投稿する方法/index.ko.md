@@ -13,7 +13,7 @@ date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["블로그 운영"]
+categories: ["blogging"]
 description: 'Slack 앱의 OAuth 토큰을 이용하여 Slack Web API를 통해 메시지를 게시하는 방법을 설명합니다. 권한 범위 설정과 액세스 토큰 획득 절차부터 WinHTTP를 사용한 C++에서의 구체적인 구현 코드 예제까지 소개합니다.'
 ---
 

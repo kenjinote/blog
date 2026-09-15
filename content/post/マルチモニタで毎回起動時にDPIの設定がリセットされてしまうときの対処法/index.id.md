@@ -5,7 +5,7 @@ date: 2024-04-29T19:42:20+09:00
 tags: ["Multi-Monitor", "DPI", "Control Panel"]
 draft: false
 image: "img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Kami akan menjelaskan cara mengatasi fenomena di mana pengaturan DPI (skala) layar direset dengan sendirinya saat PC dihidupkan pada lingkungan multi-layar di Windows 11. Kami merangkum langkah-langkah untuk menonaktifkan Fast Startup dari Control Panel.'
 ---
 

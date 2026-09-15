@@ -6,7 +6,7 @@ tags: ["Mathématiques"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathématiques, Cryptographie, Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Nous présentons des formules fascinantes qui vous font ressentir la profondeur et la beauté des mathématiques, telles que le théorème de Wilson, la formule d''Euler, le dernier théorème de Fermat et le problème de Bâle. Découvrez ces nombreuses et belles formules, à la fois simples et émouvantes, qui semblent exprimer les vérités du monde.'
 ---
 ## Théorème de Wilson

@@ -5,7 +5,7 @@ date: 2023-01-14T20:24:00+09:00
 tags: ["Button", "GUI"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'We explain how to create ''buttons'', the basics of GUI applications, using the standard Windows API (Win32 API) and how to implement event handling for clicks (WM_COMMAND messages) with sample code.'
 ---
 

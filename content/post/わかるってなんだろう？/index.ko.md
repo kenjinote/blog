@@ -10,7 +10,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["잡기"]
 draft: false
 image: "img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '일상생활에서 느끼는 ''안다''는 감각의 정체에 대해 고찰합니다. 완전한 이해가 없어도 생활할 수 있는 반면, 깊이 이해하는 것의 가치나 세상에 남아있는 ''모르는 것''의 재미에 대해 해설합니다.'
 ---
 

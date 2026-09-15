@@ -5,7 +5,7 @@ date: 2025-04-26T16:46:11+09:00
 tags: ["Low-code", "No-code", "История"]
 draft: false
 image: "img.webp"
-categories: ["ИТ и технологии"]
+categories: ["it-technology"]
 description: 'Объясняем историю low-code и no-code разработки с 1980-х годов до наших дней. Мы расскажем, как развивались системы создания приложений без программирования, вместе с типичными инструментами разных эпох, такими как HyperCard и FileMaker.'
 ---
 

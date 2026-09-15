@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "AI"]
+categories: ["programming", "windows", "ai"]
 tags: ["Windows AI", "Copilot Runtime", "NPU", "C#", "C++"]
 description: 'Um guia detalhado e abrangente sobre como implementar recursos de IA local no Windows 11, aproveitando o Windows Copilot Runtime, NPU e DirectML com exemplos de código prático em C# e C++.'
 ---

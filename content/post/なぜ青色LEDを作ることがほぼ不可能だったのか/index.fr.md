@@ -5,7 +5,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["Science", "Physique", "Semi-conducteurs"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et technologie"]
+categories: ["it-technology"]
 description: 'Présentation d''un documentaire en anglais expliquant à quel point la réalisation de la LED bleue a été difficile. Nous abordons également l''exploit des Japonais qui ont résolu un problème considéré comme impossible, et l''écart dans leur évaluation au niveau national.'
 ---
 

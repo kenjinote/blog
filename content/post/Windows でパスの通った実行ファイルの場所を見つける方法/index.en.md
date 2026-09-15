@@ -5,7 +5,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Path", "Executable", "Command Prompt"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explains how to easily find the save location (full path) of an executable file using the Windows Command Prompt or PowerShell. Introduces a handy trick to quickly identify the exact location of an app in your path using the ''where'' command.'
 ---
 

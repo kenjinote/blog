@@ -4,7 +4,7 @@ description: "ABC予想の概要と、望月新一教授による宇宙際タイ
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Science"]
+categories: ["mathematics", "science"]
 tags: ["ABC Conjecture", "Number Theory", "IUT Theory", "Shinichi Mochizuki"]
 ---
 

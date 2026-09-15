@@ -5,7 +5,7 @@ date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "Texteditor"]
 draft: false
 image: "img.webp"
-categories: ["Tools und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Erklärt für Anfänger die grundlegende Verwendung von Vim. Deckt die ersten Schritte vollständig ab, einschließlich Installationsmethoden in Windows-Umgebungen, Befehle zum Starten und Beenden (Speichern, erzwungenes Beenden usw.) und den Unterschied zwischen Befehlsmodus und Eingabemodus.'
 ---
 

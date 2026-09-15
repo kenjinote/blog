@@ -6,7 +6,7 @@ tags: ["数学", "パラドックス"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '23人集まれば同じ誕生日の人がいる確率は50%以上！？直感に反する不思議な現象「バースデイパラドックス」について、わかりやすく数学的な理由と計算式を用いて解説します。確率の不思議を体験してみましょう。'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح كيفية عرض مربع رسالة بسيط (MessageBox) في Windows باستدعاء واجهة برمجة تطبيقات Windows (Windows API) باستخدام صناديق (crates) `winapi` و `user32-sys` في Rust، من إنشاء المشروع حتى تنفيذ الكود خطوة بخطوة.'
 ---
 

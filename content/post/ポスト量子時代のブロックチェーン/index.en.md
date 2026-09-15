@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: "The arrival of 'Q-Day', where the astonishing computational power of quantum computers shakes the very foundations of blockchain. From the collapse of ECDSA due to Shor's algorithm to the transition strategy to Post-Quantum Cryptography (PQC), we thoroughly explain the technological future of crypto assets."
 ---

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: 'ब्लॉग और वेब एप्लिकेशन में डार्क मोड लागू करने के लिए उन्नत CSS डिज़ाइन, FOUC रोकथाम, और एक्सेसिबिलिटी (WCAG 2.1 AAA) को ध्यान में रखते हुए कलर स्पेस (OKLCH) के उपयोग के बारे में विस्तार से बताया गया है।'
 ---

@@ -5,7 +5,7 @@ date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "ausführbare datei", "analyse"]
 draft: false
 image: "img_1.webp"
-categories: ["PC und Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Wir stellen empfohlene Tools vor, mit denen sich der Inhalt ausführbarer Windows-Dateien (exe) analysieren und entpacken lässt. Wir erklären leicht verständlich, wie Sie mit Programmen wie 7-Zip und Resource Hacker die PE-Formatstruktur überprüfen, Ressourcen extrahieren und Binärdaten bearbeiten können.'
 ---
 

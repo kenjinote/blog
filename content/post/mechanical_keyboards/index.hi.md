@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'इंजीनियरों की उत्पादकता को नाटकीय रूप से बढ़ाने वाले हाई-एंड कीबोर्ड का गहन विश्लेषण। भौतिकी पर आधारित स्विच के स्पष्टीकरण से लेकर फर्मवेयर के काम करने के तरीके तक गहराई से, हम 5 बेहतरीन कीबोर्ड पेश करते हैं।'
 ---

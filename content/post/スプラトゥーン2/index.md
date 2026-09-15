@@ -5,7 +5,7 @@ date: 2023-08-01T00:26:30+09:00
 tags: ["スプラトゥーン2", "ゲーム", "Nintendo Switch"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '長く遊べる名作ゲーム「スプラトゥーン2」の魅力と、初心者にもおすすめのブキ（わかばシューター、各種ローラーなど）を紹介。ガチマッチでA+～S+帯を維持しながら、試合を楽しむためのプレイ日記です。'
 ---
 

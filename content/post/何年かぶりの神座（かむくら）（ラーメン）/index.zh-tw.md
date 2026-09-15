@@ -5,7 +5,7 @@ date: 2022-09-09T21:45:19+09:00
 tags: ["拉麵", "神座"]
 draft: false
 image: "images/img2.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '睽違許久，我去了人氣拉麵店「道頓堀神座（Kamukura）」。這次點了推薦的「蔥泡菜拉麵」！偶爾會非常想吃那種獨特的美味湯頭，與滿滿的蔬菜和蔥泡菜搭配起來簡直是絕配。'
 ---
 

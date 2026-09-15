@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Hugo"]
+categories: ["blogging", "seo", "hugo"]
 tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: '精通 Hugo SEO 策略的完整指南。從中繼資料、OGP 到 JSON-LD 結構化資料，徹底解說能讓流量飛躍性提升的 Frontmatter 與 head.html 客製化手法。'
 ---

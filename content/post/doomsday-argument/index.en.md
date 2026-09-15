@@ -3,7 +3,7 @@ title: "The Doomsday Argument: The 'Time Limit of Human Extinction' Derived by P
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Where are we in the history of humanity? We explain the 'Doomsday Argument,' which probabilistically predicts the timing of human extinction using the Copernican principle and Bayesian inference, with formulas and diagrams."
-categories: ["確率論", "Thought Experiment", "Philosophy"]
+categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags: ["Bayesian Inference", "Doomsday Argument", "Doomsday Argument", "Mathematics"]
 slug: "doomsday-argument"
 ---

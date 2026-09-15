@@ -5,7 +5,7 @@ date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Beispiel"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Wir erklären die Installationsschritte der plattformübergreifenden C++-GUI-Bibliothek „wxWidgets“ und wie Sie mit Visual Studio ein Beispielprojekt erstellen, in einer für Anfänger leicht verständlichen Weise.'
 ---
 

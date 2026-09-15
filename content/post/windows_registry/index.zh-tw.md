@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Windows", "Administration", "Programming"]
+categories: ["windows", "administration", "programming"]
 tags: ["Registry", "PowerShell", "C#", "Windows 11"]
 ---
 

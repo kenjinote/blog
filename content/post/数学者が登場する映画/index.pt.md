@@ -5,7 +5,7 @@ date: 2022-09-05T10:41:00+09:00
 tags: ["Filmes", "Matemáticos"]
 draft: false
 image: "images/img.webp"
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Apresentaremos filmes clássicos recomendados em que um matemático genial é o protagonista. É uma seleção de obras-primas onde o drama humano se cruza com a beleza da matemática, como ''Uma Mente Brilhante'', ''O Jogo da Imitação'', que descreve a decifração do código Enigma, e ''O Homem Que Viu o Infinito'', a verdadeira história de Ramanujan.'
 ---
 Aqui estão as minhas 3 principais recomendações de filmes com matemáticos como protagonistas.

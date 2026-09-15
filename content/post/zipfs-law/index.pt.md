@@ -4,10 +4,7 @@ description: Um mergulho profundo na Lei de Zipf, a notável lei matemática que
 slug: zipfs-law
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Matemática
-- Ciência de Dados
-- Linguística
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
 - Lei de Zipf
 - Lei de Potência

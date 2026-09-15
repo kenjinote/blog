@@ -5,7 +5,7 @@ date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Webページテンプレート"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: 'デザイン性の高いWebページテンプレートサイト「html5up」の紹介。洗練されたかっこいいテンプレートが豊富で、すぐに使ってみたくなる魅力についてまとめています。Web制作の参考に。'
 ---
 

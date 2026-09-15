@@ -4,7 +4,7 @@ description: "深入探討選擇公理與佐恩引理，從直觀含義到數學
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "集合論"]
+categories: ["mathematics", "set-theory"]
 tags: ["選擇公理", "佐恩引理", "ZFC 公理系統", "數學基礎", "Mermaid", "KaTeX"]
 ---
 

@@ -5,7 +5,7 @@ date: 2025-05-26T22:23:34+09:00
 tags: ["Conspiracy Theories", "Poem"]
 draft: false
 image: "img.webp"
-categories: ["IT / Technology"]
+categories: ["it-technology"]
 description: 'We explain how to prepare ''mental security'' necessary to avoid being drawn into online conspiracy theories. It provides hints for wisely surviving modern internet society, such as the ability to hold off connecting anxiety with answers directly, and tips for gathering information to prevent confirmation bias.'
 ---
 

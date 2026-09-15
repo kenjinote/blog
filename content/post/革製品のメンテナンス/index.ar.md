@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["المنتجات الجلدية", "هواية"]
 draft: fales
 image: "img.webp"
-categories: ["أسلوب الحياة - منوعات"]
+categories: ["lifestyle-miscellaneous"]
 description: 'للمبتدئين في العناية بالمنتجات الجلدية، نقدم منتجات موصى بها أثبتت جودتها بعد الاستخدام الفعلي، مثل كريم M.MOWBRAY Delicate Cream وكريم Collonil Supreme Cream. تعرف على أساليب العناية للحفاظ على أغراضك الجلدية الثمينة لفترة أطول.'
 ---
 

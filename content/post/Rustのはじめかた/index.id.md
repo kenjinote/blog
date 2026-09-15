@@ -5,7 +5,7 @@ date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Menjelaskan cara memulai bahasa pemrograman Rust yang cepat dan aman memori untuk pemula. Kami memperkenalkannya secara komprehensif, dari fitur bahasa dan metode instalasi, hingga prosedur menjalankan program pertama yaitu Hello World, dan rekomendasi dokumentasi berbahasa Jepang.'
 ---
 # Pengantar

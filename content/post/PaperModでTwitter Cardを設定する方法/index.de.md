@@ -5,7 +5,7 @@ date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
-categories: ["Blog-Betrieb"]
+categories: ["blogging"]
 description: 'Erklärt die Konfiguration von Twitter Cards im PaperMod-Theme von Hugo. Stellt vor, wie man sie in der config.toml für die gesamte Website anwendet und wie man Bilder einzeln in den Markdown-Headern der jeweiligen Artikel angibt. Nützliche Einrichtungsschritte für die Anzeige von Eye-Catcher-Bildern beim Teilen in sozialen Netzwerken.'
 ---
 # Einführung

@@ -4,9 +4,7 @@ description: "關於拓撲學（Topology）中著名的「毛球定理（Hairy B
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Topology"
+categories: ["mathematics", "topology"]
 tags:
   - "Math"
   - "Topology"

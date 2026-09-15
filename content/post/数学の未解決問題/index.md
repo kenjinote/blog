@@ -6,7 +6,7 @@ tags: ["数学","未解決問題"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '問題自体はシンプルなのに未だ証明されていない、魅惑の数学の未解決問題をわかりやすく解説します。完全数は無数にあるのか？ゴールドバッハの予想や難問リーマン予想など、数学者たちを悩ませ続ける神秘的な問題の数々に迫ります。'
 ---
 

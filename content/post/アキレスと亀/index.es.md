@@ -6,9 +6,7 @@ date: '2026-09-10T01:00:00+09:00'
 image: 'img/achilles.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Paradojas matemáticas'
-  - 'Infinito y límites'
+categories: ["mathematical-paradoxes", "infinity-and-limits"]
 tags:
   - 'Paradoja'
   - 'Zenón'

@@ -12,7 +12,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Bloquear la computadora", "Acceso directo"]
 draft: false
 image: "img.webp"
-categories: ["PC y gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos con imágenes cómo crear un acceso directo que te permite bloquear tu PC con Windows con un solo clic. También presentamos el método conveniente usando las teclas Win+L para bloquear la pantalla al instante, como medida de seguridad cuando te alejas de tu asiento.'
 ---
 

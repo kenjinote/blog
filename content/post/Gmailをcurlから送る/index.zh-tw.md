@@ -5,7 +5,7 @@ date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
-categories: ["AI 與科技"]
+categories: ["ai-technology"]
 description: '為您解說如何使用命令列工具「curl」，透過Gmail帳戶發送電子郵件。詳細介紹從取得Google應用程式密碼的步驟、指定curl的選項，到建立郵件內容檔案與發送指令等。'
 ---
 

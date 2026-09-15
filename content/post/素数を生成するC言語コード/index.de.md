@@ -5,7 +5,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Primzahlen", "Algorithmus", "Mathematik"]
 draft: false
 image: "img.webp"
-categories: ["Mathematik, Kryptographie und Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir stellen einen einfachen C-Beispielcode vor, der Primzahlen in einem bestimmten Bereich (von 1 bis n) bestimmt, generiert und auflistet. Es enthält ein leicht verständliches Programmierbeispiel und eine Erklärung für Anfänger mit einem effizienten Algorithmus, der die isPrime-Funktion verwendet.'
 ---
 

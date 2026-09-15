@@ -5,7 +5,7 @@ date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
-categories: ["البرمجة"]
+categories: ["programming"]
 description: 'نشرح بوضوح الميزات الرئيسية للغة "Rust" التي تطورها Mozilla. نستعرض الأسباب التي تجعلها خياراً مفضلاً، مثل السرعة العالية، وعدم وجود جامع قمامة (Garbage Collection)، وأمان الذاكرة من خلال الملكية والاستعارة، ودعم منصات متعددة.'
 ---
 # ميزات Rust

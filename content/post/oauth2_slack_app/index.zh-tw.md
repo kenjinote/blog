@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: '透過 Slack App 整合實作，詳細圖解與解說 OAuth 2.0 的授權碼授權流程運作機制。這是一份包含 Node.js 具體程式碼範例與安全最佳實踐的完整指南。'
 ---

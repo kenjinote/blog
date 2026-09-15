@@ -5,7 +5,7 @@ date: 2022-09-07T02:36:11+09:00
 tags: ["經營者"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '公開經營者應該了解的實踐筆記，包含如何尋找正要流行的事業、徹底的模仿與改良、任何人都做得到的建立制度重點等。同時也深入探討了「將企業利益最大化」這個經營理念的本質。'
 ---
 # 尋找正在流行起來的事業

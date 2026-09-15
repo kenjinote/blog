@@ -5,7 +5,7 @@ date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "筆記型電腦"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '這是為了遠端工作購買二手 ThinkPad T470s 的評測文章。介紹包含 Core i7、RAM 24GB、WQHD 螢幕的規格與狀態，以及鍵盤配置等不滿意之處在內的實際使用心得。'
 ---
 

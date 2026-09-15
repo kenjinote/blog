@@ -5,7 +5,7 @@ date: 2025-08-31T20:24:49+09:00
 tags: ["賀年卡製作應用程式開發實況", "YouTube"]
 draft: false
 image: "img.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '使用C++開發賀年卡製作應用程式的YouTube直播第1集。從建立GIT儲存庫到顯示主視窗、Direct2D的初始化以及HelloWorld的實作，附上程式碼解說成為應用程式開發基礎的環境建置步驟。'
 ---
 

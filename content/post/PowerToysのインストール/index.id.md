@@ -5,7 +5,7 @@ date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "Command Prompt", "PowerToys", "winget"]
 draft: false
 image: "img.webp"
-categories: ["Alat dan Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Memperkenalkan prosedur untuk dengan mudah menginstal dan menghapus Microsoft PowerToys menggunakan perintah winget, pengelola paket di lingkungan Windows. Dapat langsung dieksekusi dari command prompt.'
 ---
 

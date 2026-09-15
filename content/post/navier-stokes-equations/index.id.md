@@ -4,7 +4,7 @@ description: "Penyelidikan mendalam tentang eksistensi dan kelancaran solusi per
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "Fisika"]
+categories: ["mathematics", "physics"]
 tags: ["Navier-Stokes", "Dinamika Fluida", "Millennium Prize Problems"]
 ---
 

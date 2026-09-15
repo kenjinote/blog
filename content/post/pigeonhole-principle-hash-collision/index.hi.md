@@ -3,7 +3,7 @@ title: "कबूतर का घोंसला सिद्धांत (Pige
 image: "eyecatch.jpg"
 date: "2026-09-14T00:00:00+09:00"
 description: "सहज रूप से समझा जाने वाला 'कबूतर का घोंसला सिद्धांत' आधुनिक एन्क्रिप्शन तकनीक और हैश फ़ंक्शंस की सुरक्षा में सबसे महत्वपूर्ण अवधारणा क्यों है? हम विशिष्ट उदाहरणों, गणितीय सूत्रों और आरेखों का उपयोग करके इसे गहराई से समझाएंगे।"
-categories: ["Tech", "Cryptography", "Mathematics"]
+categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]
 slug: "pigeonhole-principle-hash-collision"
 ---

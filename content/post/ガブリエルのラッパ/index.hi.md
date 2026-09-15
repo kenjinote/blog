@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "कैलकुलस"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["विरोधाभास", "ज्यामिति", "अनंत", "टॉरिसिली का ट्रम्पेट"]
 ---
 

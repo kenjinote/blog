@@ -5,7 +5,7 @@ date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '為初學者說明如何開始使用快速且記憶體安全的程式語言 Rust。全面介紹語言特色、安裝方法，到第一個程式 Hello World 的執行步驟，以及推薦的日文說明文件。'
 ---
 # 簡介

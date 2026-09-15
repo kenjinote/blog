@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["Mathematisches Paradoxon", "Statistik", "Psychologie"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["Paradoxon", "Satz von Bayes", "Wahrscheinlichkeit", "Kognitive Verzerrung", "Basisratenfehler"]
 ---
 

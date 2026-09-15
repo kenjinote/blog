@@ -5,7 +5,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "关机", "快捷方式"]
 draft: false
 image: "img.webp"
-categories: ["PC・数码"]
+categories: ["pc-gadgets"]
 description: '讲解如何创建能从桌面一键关闭Windows的便捷快捷方式。图文并茂地详细介绍使用“shutdown.exe”命令的设置步骤以及更改为醒目图标的方法。'
 ---
 

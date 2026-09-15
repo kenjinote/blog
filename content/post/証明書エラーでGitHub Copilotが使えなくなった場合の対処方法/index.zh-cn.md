@@ -5,7 +5,7 @@ date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
-categories: ["工具・开发环境"]
+categories: ["tools-development-environment"]
 description: '解说在GitHub Copilot中因发生“unable to verify the first certificate”等证书错误而无法使用时的解决方法。介绍了通过修改ESET设置来解决该问题的具体步骤。'
 ---
 

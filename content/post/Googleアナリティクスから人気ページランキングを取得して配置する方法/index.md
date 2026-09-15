@@ -5,7 +5,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["Googleアナリティクス", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: 'Googleアナリティクスと連携して、サイトの人気ページランキングを簡単に自動表示できるサービス「Ranklet」の使い方を解説します。HUGOブログを例に、設定手順やHTML/CSSテンプレートのカスタマイズ方法を紹介します。'
 ---
 

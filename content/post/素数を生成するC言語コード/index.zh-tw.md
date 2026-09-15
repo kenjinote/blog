@@ -5,7 +5,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C語言", "質數", "演算法", "數學"]
 draft: false
 image: "img.webp"
-categories: ["數學・密碼・量子"]
+categories: ["math-cryptography-quantum"]
 description: '介紹一個能判斷、產生並列舉指定範圍（從1到n）內質數的簡單C語言範例程式碼。使用isPrime函式的高效演算法，刊載了連初學者也能輕鬆理解的程式設計實作範例與解說。'
 ---
 

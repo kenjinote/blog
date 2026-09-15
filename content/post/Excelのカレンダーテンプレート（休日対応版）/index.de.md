@@ -5,7 +5,7 @@ date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "Kalender", "Vorlage", "Feiertage"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen kostenlos eine praktische Excel-Kalendervorlage zur Verfügung, die durch Eingabe von Jahr und Monat automatisch die japanischen Feiertage des entsprechenden Monats anzeigt. Bitte laden Sie sie herunter und nutzen Sie sie für Ihr Terminmanagement und zur Effizienzsteigerung.'
 ---
 

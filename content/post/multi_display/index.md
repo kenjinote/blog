@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Workspace"]
+categories: ["gadgets", "productivity", "workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
 description: 'エンジニアのための究極のマルチディスプレイ構築ガイド。視界工学、帯域幅の計算、PPIとスケーリングの仕組みまで徹底解説します。'
 ---

@@ -3,7 +3,7 @@ title: "Prinsip Sarang Merpati dan Kolisi Hash: Mengungkap Batasan dan Keamanan 
 image: "eyecatch.jpg"
 date: "2026-09-14T00:00:00+09:00"
 description: "Bagaimana 'Prinsip Sarang Merpati' yang intuitif menjadi konsep paling penting dalam keamanan fungsi hash dan kriptografi modern. Kami menjelaskannya secara mendalam menggunakan contoh konkret, rumus matematika, dan diagram."
-categories: ["Tech", "Cryptography", "Mathematics"]
+categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]
 slug: "pigeonhole-principle-hash-collision"
 ---

@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'OAuth 2.0의 인가 코드 그랜트 플로우의 원리를 Slack App 연동 구현을 통해 상세히 도해하고 해설합니다. Node.js를 이용한 구체적인 코드 예제와 보안 모범 사례까지 총망라한 완전판 가이드입니다.'
 ---

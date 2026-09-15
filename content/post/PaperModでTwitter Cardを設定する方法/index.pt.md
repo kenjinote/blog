@@ -5,7 +5,7 @@ date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
-categories: ["Administração de Blog"]
+categories: ["blogging"]
 description: 'Explicamos como configurar o Twitter Card no tema PaperMod do Hugo. Apresentamos como descrever isso no config.toml para aplicar a todo o site e como especificar imagens individualmente no cabeçalho Markdown de cada artigo. Este é um procedimento de configuração útil para exibir a imagem de destaque ao compartilhar nas redes sociais.'
 ---
 # Introdução

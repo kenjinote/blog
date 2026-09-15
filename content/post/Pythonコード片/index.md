@@ -5,7 +5,7 @@ date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "サンプルコード"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'Pythonの標準ライブラリのみを使用し、Web上の画像URLからデータをダウンロードして一時ファイルに保存、ブラウザで表示した後に自動削除する一連の実用的なサンプルコードを紹介します。'
 ---
 

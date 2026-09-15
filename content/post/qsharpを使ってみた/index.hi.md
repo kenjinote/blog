@@ -5,7 +5,7 @@ slug: "qsharp-quantum-programming-language-intro"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing"]
+categories: ["programming", "quantum-computing"]
 tags: ["Q#", "Quantum", "Microsoft", "QDK", "Programming"]
 description: "क्वांटम प्रोग्रामिंग भाषा 'Q#' की विशेषताओं, बुनियादी सिंटैक्स, क्वांटम उलझाव के निर्माण और होस्ट भाषाओं से निष्पादन आदि के बारे में शुरुआत से लेकर विस्तार तक चर्चा की गई है।"
 ---

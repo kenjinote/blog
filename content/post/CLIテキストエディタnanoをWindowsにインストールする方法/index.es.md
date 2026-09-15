@@ -12,7 +12,7 @@ date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "editor de texto"]
 draft: false
 image: "img_1.webp"
-categories: ["Herramientas/Entorno de desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Te explicamos los pasos para instalar el ligero editor de texto de línea de comandos "nano" en Windows y configurar variables de entorno para usarlo desde el símbolo del sistema. Cubre desde la descarga hasta la configuración del PATH y su uso básico.'
 ---
 

@@ -7,7 +7,7 @@ date: 2022-09-13T01:16:40+09:00
 tags: ["Github", "Dominio"]
 draft: false
 image: "images/octocat.webp"
-categories: ["Herramientas y Entornos de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Explicamos los pasos para configurar un dominio personalizado en tu repositorio de GitHub (GitHub Pages). Esta vez mostramos los pasos específicos para añadir y cambiar registros A del DNS desde el panel de control de "Onamae.com" y vincularlo con GitHub.'
 ---
 

@@ -8,7 +8,7 @@ date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Gráfico", "Matemáticas", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["Matemáticas, Criptografía, Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicamos para principiantes los pasos para dibujar y mostrar fácilmente gráficos de ondas sinusoidales y cosenoidales usando la biblioteca matplotlib.pyplot de Python en Google Colaboratory. Puedes probarlo de inmediato sin necesidad de configurar un entorno.'
 ---
 

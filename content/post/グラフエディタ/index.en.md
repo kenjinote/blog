@@ -5,7 +5,7 @@ date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "graph"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environment"]
+categories: ["tools-development-environment"]
 description: 'Introduces handy web-based graph editors that let you easily create charts and graphs just by entering numbers in your browser. Details features like moving elements via mouse, creating directed graphs, and downloading created graphs as PNG images.'
 ---
 # Graph Editor

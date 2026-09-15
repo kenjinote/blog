@@ -4,9 +4,7 @@ description: "고대 중국의 산술서에 기원을 둔 중국인 나머지 �
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "암호 이론"
+categories: ["mathematics", "cryptography"]
 tags:
   - "중국인 나머지 정리"
   - "CRT"

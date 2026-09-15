@@ -4,10 +4,7 @@ description: "Was ist das Sekretärinnenproblem (Secretary Problem)? Anhand dies
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Algorithmus"
-  - "Entscheidungsfindung"
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "Optimales Stoppen"
   - "Sekretärinnenproblem"

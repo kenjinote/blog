@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "editor de texto"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Explicaremos os procedimentos para instalar o ''micro'', um editor de texto para terminais que funciona confortavelmente no prompt de comando no Windows, até definir as variáveis de ambiente e torná-lo pronto para uso.'
 ---
 

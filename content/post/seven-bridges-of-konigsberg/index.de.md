@@ -4,7 +4,7 @@ description: "Das Problem der 'Sieben Brücken von Königsberg', das im 18. Jahr
 slug: "seven-bridges-of-konigsberg"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Geschichte"]
+categories: ["mathematics", "history"]
 tags: ["Graphentheorie", "Topologie", "Euler", "Mathematik"]
 ---
 

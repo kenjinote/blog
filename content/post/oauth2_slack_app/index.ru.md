@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Подробно иллюстрируем и объясняем механизм Authorization Code Grant в OAuth 2.0 на примере интеграции Slack App. Это полное руководство включает конкретные примеры кода на Node.js и лучшие практики безопасности.'
 ---

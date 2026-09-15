@@ -5,7 +5,7 @@ date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: '详细讲解如何使用C++和ggml在本地环境对TinyLLaMA等小规模AI模型进行推理的开发步骤和内部架构。内容涵盖内存映射、张量运算到SIMD优化。'
 ---

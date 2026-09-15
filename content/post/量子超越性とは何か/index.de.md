@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: 'Von der Definition der Quantenüberlegenheit über das Demonstrationsexperiment mit Googles Sycamore-Prozessor im Jahr 2019, die Gegenargumente und Ansätze von IBM bis hin zu den neuesten Trends in Richtung Quantenfehlerkorrektur und fehlertolerantem Quantencomputing (FTQC) wird alles detailliert erklärt.'
 ---

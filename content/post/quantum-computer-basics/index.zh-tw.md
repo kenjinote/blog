@@ -4,7 +4,7 @@ slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["量子電腦", "物理學", "科技"]
 image: "quantum_basics_eyecatch_1788613712487.webp"
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '解說蘊藏超越傳統超級電腦極限潛力的「量子電腦」基礎知識。既專業又淺顯易懂地剖析如何將疊加態、量子糾纏、量子邏輯閘等量子力學的奇妙現象應用於計算的機制。'
 ---
 

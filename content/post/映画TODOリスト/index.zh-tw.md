@@ -5,7 +5,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["電影", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["生活風格・雜記"]
+categories: ["lifestyle-miscellaneous"]
 description: '未來想看的經典電影與動畫待辦清單。從《博士熱愛的算式》、《心靈捕手》等與數學相關的電影，到《夏日大作戰》、《天氣之子》等熱門動畫，並附上已觀看的標記紀錄來進行介紹。'
 ---
 

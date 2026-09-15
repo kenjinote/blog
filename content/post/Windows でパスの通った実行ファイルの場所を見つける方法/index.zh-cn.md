@@ -5,7 +5,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "路径", "可执行文件", "命令提示符"]
 draft: false
 image: "img.webp"
-categories: ["PC与数码"]
+categories: ["pc-gadgets"]
 description: '讲解如何在Windows命令提示符或PowerShell中，轻松查找可执行文件的保存位置（完整路径）。介绍使用“where”命令快速定位已配置环境变量的应用程序准确位置的实用小技巧巧。'
 ---
 

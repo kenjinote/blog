@@ -7,7 +7,7 @@ slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Logika"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["Paradoks", "Semantik", "Referensi-diri", "Teori Himpunan"]
 ---
 

@@ -5,7 +5,7 @@ date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "Selbstsigniertes Zertifikat", "Installation"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Erklärt leicht verständlich mit PowerShell-Befehlen die konkreten Schritte zur Erstellung und Zuweisung eines selbstsignierten Zertifikats ohne kommerzielles Zertifikat für MSIX-Pakete, die sich für die Testverteilung von Windows-Apps eignen, um die Installation in einer lokalen Umgebung zu ermöglichen.'
 ---
 

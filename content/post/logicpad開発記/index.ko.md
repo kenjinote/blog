@@ -5,7 +5,7 @@ date: "2026-09-13T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "App Development"]
+categories: ["programming", "windows", "app-development"]
 tags: ["WinUI 3", "C++", "Windows App SDK", "Microsoft Store", "Personal Project"]
 description: 'LogicPad라는 네이티브 Windows 앱의 개발부터 Microsoft Store 출시까지의 전체 과정을 돌아보는 기술 블로그 기사. WinUI 3, C++를 사용한 구체적인 구현부터 MSIX 패키징까지.'
 ---

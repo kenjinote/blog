@@ -5,7 +5,7 @@ date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "Ruído"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Está com problemas de ruído constante ao usar o YAMAHA AG03? Neste artigo, explicamos de forma clara os passos específicos para instalar e atualizar o driver USB oficial, resolvendo o ruído de uma vez por todas. Recupere um ambiente de áudio confortável!'
 ---
 

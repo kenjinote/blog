@@ -6,7 +6,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["AI & Technology"]
+categories: ["ai-technology"]
 description: 'An easy-to-understand explanation of the overview of the JavaScript library ''Mermaid.js'', which allows drawing diagrams like flowcharts and Gantt charts using text, and the specific steps to introduce, configure, and make it usable in the static site generator Hugo.'
 ---
 

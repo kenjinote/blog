@@ -3,9 +3,7 @@ title: "Algoritmo de detección de ciclos de Floyd (El algoritmo de la liebre y 
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Explicamos en detalle el famoso 'Algoritmo de detección de ciclos de Floyd' (Algoritmo de la liebre y la tortuga) para detectar ciclos en listas o grafos, con diagramas, fórmulas matemáticas e implementaciones en C++ y Rust."
-categories:
-  - "Algorithms"
-  - "Computer Science"
+categories: ["algorithms", "computer-science"]
 tags:
   - "Algorithm"
   - "C++"

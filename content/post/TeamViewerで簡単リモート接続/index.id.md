@@ -5,7 +5,7 @@ date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Perintah", "Koneksi Jarak Jauh"]
 draft: false
 image: "img.webp"
-categories: ["IT / Teknologi"]
+categories: ["it-technology"]
 description: 'Menjelaskan cara terhubung ke desktop jarak jauh dengan mudah menggunakan TeamViewer. Kami juga memperkenalkan trik praktis untuk mengotomatiskan dan mempersingkat koneksi dengan pintasan dengan menentukan ID dan kata sandi dari baris perintah.'
 ---
 

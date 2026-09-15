@@ -5,7 +5,7 @@ date: "2026-09-11T23:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Law", "Tech Trends"]
+categories: ["ai", "law", "tech-trends"]
 tags: ["Copyright", "Generative AI", "Law", "2026 Trends"]
 description: 'Uma análise abrangente das últimas tendências em IA generativa e direitos autorais em 2026, abordando o EU AI Act, o desenvolvimento de leis nos EUA e no Japão, bem como defesas tecnológicas como C2PA e Nightshade.'
 ---

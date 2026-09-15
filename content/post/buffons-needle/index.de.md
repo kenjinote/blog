@@ -4,9 +4,7 @@ description: "Kann man die Kreiszahl π ermitteln, indem man einfach eine Nadel 
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematik"
-  - "Wahrscheinlichkeitstheorie"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "Kreiszahl"
   - "Simulation"

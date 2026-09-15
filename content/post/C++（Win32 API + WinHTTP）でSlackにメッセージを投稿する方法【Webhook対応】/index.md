@@ -5,7 +5,7 @@ date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: 'Node.jsやPythonではなく、あえて「C++ × Win32 API × WinHTTP」でSlackへ自動投稿したい方へ！Incoming Webhooksを活用し、C++からPOSTリクエストでメッセージを送信する具体的な手順を分かりやすく解説します。'
 ---
 

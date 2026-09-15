@@ -5,7 +5,7 @@ date: 2024-01-07T00:50:09+09:00
 tags: ["灾害", "数据"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '这是一个总结了日本国内过去发生的自然灾害相关记录和笔记的页面。整理了包括2024年1月1日发生的能登半岛地震的受灾情况与概要在内的地震与灾害记录。是为了解防灾及过去灾害情况而编写的备忘录。'
 ---
 

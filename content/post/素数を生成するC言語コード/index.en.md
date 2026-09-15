@@ -5,7 +5,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C Language", "Prime Numbers", "Algorithm", "Mathematics"]
 draft: false
 image: "img.webp"
-categories: ["Mathematics, Cryptography, and Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'We introduce a simple C language sample code that determines, generates, and lists prime numbers within a specified range (from 1 to n). We provide a programming implementation example and explanation easy for beginners to understand, using an efficient algorithm with an isPrime function.'
 ---
 

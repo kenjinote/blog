@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'Una explicación exhaustiva de la física y cómo elegir sillas ergonómicas que protegen a los trabajadores remotos del dolor de espalda basándose en la biomecánica. También compara los enfoques estructurales de modelos de alta gama como las sillas Aeron y Contessa.'
 ---

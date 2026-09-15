@@ -5,7 +5,7 @@ date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "Bibliothèque GUI", "Japonais"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Nous expliquons la méthode d''implémentation pour afficher correctement le japonais avec la bibliothèque GUI légère « egui » pour Rust. Nous présentons des exemples de code spécifiques pour charger la police Windows Meiryo et l''appliquer à l''application.'
 ---
 

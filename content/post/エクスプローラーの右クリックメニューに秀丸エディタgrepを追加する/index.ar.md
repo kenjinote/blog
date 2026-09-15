@@ -5,7 +5,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "File Explorer", "Right-click menu", "grep", "Registry"]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نقدم خطوات إعداد مفيدة لإضافة ميزة grep الخاصة بمحرر Hidemaru إلى قائمة النقر بزر الماوس الأيمن في مستكشف Windows 10/11. نشرح بوضوح الطريقة السهلة باستخدام ملف تسجيل السجل.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Operação do Blog"]
+categories: ["blogging"]
 description: 'Aprenda a utilizar o ''Ranklet'', um serviço que se conecta ao Google Analytics para exibir de forma simples e automática o ranking das páginas mais visitadas do seu site. Mostramos o processo de configuração e como personalizar os modelos HTML/CSS, usando um blog HUGO como exemplo.'
 ---
 

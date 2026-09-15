@@ -5,7 +5,7 @@ date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.webp"
-categories: ["电脑・数码设备"]
+categories: ["pc-gadgets"]
 description: '介绍在macOS环境中防止在网络驱动器等处自动生成不需要的“.DS_Store”文件的终端命令。还总结了恢复原始设置的方法以及重启Finder的步骤。'
 ---
 在macOS中防止自动生成.DS_Store的命令如下。

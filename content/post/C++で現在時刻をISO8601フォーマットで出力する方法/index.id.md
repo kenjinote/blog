@@ -5,7 +5,7 @@ date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "Waktu", "ISO8601"]
 draft: false
 image: "img.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Wajib dibaca bagi engineer yang ingin mencetak waktu saat ini dalam format ISO8601 standar global menggunakan C++! Artikel ini memperkenalkan dengan mudah contoh kode untuk mengonversi format waktu saat ini secara cerdas dan ringkas dengan memanfaatkan library std::format dan chrono pada C++20.'
 ---
 

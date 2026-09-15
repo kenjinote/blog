@@ -5,7 +5,7 @@ date: 2023-03-19T18:13:14+09:00
 tags: ["商業書籍", "書籍"]
 draft: false
 image: "img.webp"
-categories: ["生活方式與雜記"]
+categories: ["lifestyle-miscellaneous"]
 description: '嚴選介紹商務人士一生必讀，有助於自我啟發與提升技能的名著與推薦商業書籍，如《人性的弱點》、《被討厭的勇氣》、《100歲的人生戰略》、《與成功有約》等。'
 ---
 

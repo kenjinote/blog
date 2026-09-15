@@ -12,7 +12,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "컴퓨터 잠금", "바로 가기"]
 draft: false
 image: "img.webp"
-categories: ["PC・가젯"]
+categories: ["pc-gadgets"]
 description: 'Windows PC를 원클릭으로 잠글 수 있는 바로가기 생성 방법을 사진과 함께 알기 쉽게 해설합니다. 자리 비울 때의 보안 대책으로 편리한 Win+L 키를 사용하여 순식간에 잠그는 방법도 소개합니다.'
 ---
 

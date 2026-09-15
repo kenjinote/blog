@@ -5,7 +5,7 @@ date: "2026-09-11T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Matemáticas", "Criptografía"]
+categories: ["mathematics", "cryptography"]
 tags: ["GNFS", "Factorización de enteros", "RSA", "Algoritmos"]
 ---
 

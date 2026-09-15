@@ -3,9 +3,7 @@ title: "괴델의 불완전성 정리: '절대로 증명할 수 없는 진리'�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "수학의 한계를 보여준 역사적 정리, 괴델의 불완전성 정리에 대해 그 의미와 증명 원리를 구체적인 예시와 도해를 섞어 알기 쉽게 해설합니다."
-categories:
-  - 수학
-  - 컴퓨터 사이언스
+categories: ["mathematics", "computer-science"]
 tags:
   - 논리학
   - 괴델

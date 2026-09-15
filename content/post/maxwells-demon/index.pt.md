@@ -3,7 +3,7 @@ title: "O Demónio de Maxwell: A energia da 'Informação' que quebra o senso co
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "O Demónio de Maxwell, uma experiência mental que parece quebrar a Segunda Lei da Termodinâmica. Explicaremos detalhadamente, com fórmulas e diagramas, como este paradoxo foi resolvido pela 'Física da Informação'."
-categories: ["Physics", "Information Theory"]
+categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]
 slug: "maxwells-demon"
 ---

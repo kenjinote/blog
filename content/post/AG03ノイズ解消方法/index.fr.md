@@ -5,7 +5,7 @@ date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "Bruit"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Êtes-vous gêné par un bruit de craquement régulier lors de l''utilisation de votre YAMAHA AG03 ? Cet article explique de manière claire les étapes spécifiques pour installer ou mettre à jour le pilote USB officiel et éliminer le bruit en une seule fois. Retrouvez un environnement audio confortable !'
 ---
 

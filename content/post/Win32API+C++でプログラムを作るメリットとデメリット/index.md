@@ -5,7 +5,7 @@ date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "プログラミング", "開発", "技術"]
 draft: false
 image: "img_1.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: '「Win32API＋C++」でのWindowsアプリ開発のメリットとデメリットを現役エンジニアが解説します。超高速な実行速度、自由度の高い制御、ランタイム不要で配布しやすいなど、ネイティブ開発ならではの魅力や習得の課題を紹介します。'
 ---
 # Win32API + C++で開発する魅力と課題

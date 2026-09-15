@@ -5,7 +5,7 @@ date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "Graphen"]
 draft: false
 image: "img.webp"
-categories: ["Tools / Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Wir stellen einen praktischen webbasierten Diagrammeditor vor, mit dem Sie durch einfache Eingabe von Zahlen in Ihrem Browser Diagramme und Grafiken erstellen können. Wir erläutern auch detailliert, wie Elemente mit der Maus bewegt werden, wie man gerichtete Graphen erstellt und wie man die erstellten Graphen als PNG-Bilder herunterlädt.'
 ---
 # Graphen-Editor

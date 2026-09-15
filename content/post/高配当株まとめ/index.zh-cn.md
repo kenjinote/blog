@@ -5,7 +5,7 @@ date: 2024-12-22T00:56:14+09:00
 tags: ["股票"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '将三菱UFJ、三菱商事、NTT、KDDI等日本具有代表性的优质高股息股票推荐标的总结在一览表中予以介绍。这是以赚取股息为目标的长期投资及想参考构建投资组合的人士必看的潜力股清单。'
 ---
 

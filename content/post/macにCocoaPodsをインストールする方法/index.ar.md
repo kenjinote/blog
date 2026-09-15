@@ -5,7 +5,7 @@ date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]
 draft: false
 image: "img_1.webp"
-categories: ["كمبيوتر وأدوات"]
+categories: ["pc-gadgets"]
 description: 'نشرح بالتفصيل خطوات تثبيت CocoaPods باستخدام الوحدة الطرفية (Terminal) في بيئة Mac. كما نقدم طرق حل الأخطاء عند تنفيذ "sudo gem install cocoapods" وأمر التثبيت باستخدام Homebrew.'
 ---
 

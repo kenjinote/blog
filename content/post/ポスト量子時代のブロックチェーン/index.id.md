@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: 'Kedatangan "Q-Day" ketika daya komputasi luar biasa dari komputer kuantum akan mengguncang fondasi blockchain. Dari runtuhnya ECDSA oleh algoritma Shor hingga strategi transisi ke kriptografi tahan kuantum (PQC), kami memberikan penjelasan teknis menyeluruh tentang masa depan aset kripto.'
 ---

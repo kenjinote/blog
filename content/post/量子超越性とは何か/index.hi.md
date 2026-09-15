@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: 'क्वांटम सुप्रीमेसी की परिभाषा से लेकर, गूगल के Sycamore प्रोसेसर द्वारा 2019 के प्रायोगिक प्रदर्शन, आईबीएम के खंडन और दृष्टिकोण, और त्रुटि सुधार (Error Correction) और FTQC (फॉल्ट-टोलरेंट क्वांटम कंप्यूटिंग) की दिशा में नवीनतम रुझानों तक विस्तृत विवरण।'
 ---

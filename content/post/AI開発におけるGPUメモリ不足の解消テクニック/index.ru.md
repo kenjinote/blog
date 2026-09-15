@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: 'Нехватка VRAM (памяти GPU) является главным препятствием при обучении и инференсе LLM. В этой статье мы подробно рассмотрим такие методы решения, как разгрузка на CPU, квантование KV-кэша и чекпоинтинг градиентов, используя математические формулы и схемы архитектуры.'
 ---

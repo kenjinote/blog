@@ -5,7 +5,7 @@ date: "2026-09-13T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "App Development"]
+categories: ["programming", "windows", "app-development"]
 tags: ["WinUI 3", "C++", "Windows App SDK", "Microsoft Store", "Personal Project"]
 description: 'مقال تقني يستعرض العملية الكاملة من تطوير تطبيق Windows أصلي يسمى LogicPad إلى إصداره على Microsoft Store. بدءاً من التنفيذ العملي باستخدام WinUI 3 و C++ وصولاً إلى حزم MSIX.'
 ---

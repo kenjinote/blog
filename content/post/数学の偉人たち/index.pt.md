@@ -5,7 +5,7 @@ date: 2022-09-22T23:06:37+09:00
 tags: ["Matemáticos"]
 draft: false
 image: "img.webp"
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Apresentamos em detalhes, em ordem de nascimento, os grandes matemáticos da Grécia Antiga e do Egito que deixaram seus nomes na história. Explicaremos claramente o Teorema de Pitágoras, o Princípio de Arquimedes e os Elementos de Euclides, suas descobertas surpreendentes e algumas anedotas ocultas.'
 ---
 Apresentamos os grandes matemáticos que deixaram seus nomes na história, em ordem de nascimento.

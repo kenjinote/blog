@@ -8,7 +8,7 @@ date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
-categories: ["Administración del blog"]
+categories: ["blogging"]
 description: 'Explicamos cómo personalizar la combinación de colores general en el tema Hugo PaperMod. Mostramos ejemplos de configuración de variables para aplicar tu esquema de colores preferido editando el CSS (blank.css), que incluye definiciones de estilos como color de fondo, color de texto y bloques de código.'
 ---
 

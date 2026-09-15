@@ -4,7 +4,7 @@ description: "क्ले मैथमेटिक्स इंस्टीट�
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "भौतिकी"]
+categories: ["mathematics", "physics"]
 tags: ["नेवियर-स्टोक्स", "द्रव गतिकी", "मिलेनियम पुरस्कार समस्याएं"]
 ---
 

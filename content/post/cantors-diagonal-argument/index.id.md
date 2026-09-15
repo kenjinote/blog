@@ -4,7 +4,7 @@ description: "Terdapat perbedaan 'ukuran' dalam ketakterhinggaan. Kami akan menj
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Dasar Matematika", "Teori Himpunan"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Argumen Diagonal", "Ketakterhinggaan", "Matematika", "Bukti"]
 ---
 

@@ -5,7 +5,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'GitHub Actionsのワークフロー内で動的に環境変数を設定する方法を解説します。Windows環境を例に「$env:GITHUB_ENV」へ書き込む手順や、後続のステップで変数を参照してリリース作成に活用する具体例を紹介。'
 ---
 

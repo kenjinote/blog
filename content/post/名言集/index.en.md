@@ -5,7 +5,7 @@ date: 2022-10-15T17:00:43+09:00
 tags: ["Quotes"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'We present a carefully selected collection of inspiring quotes from historical figures and celebrities such as Steve Jobs and Laozi. Find hints to enrich your life and daily routine by learning from the wisdom of predecessors through words that serve as life lessons and maxims to boost motivation.'
 ---
 

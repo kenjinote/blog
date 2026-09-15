@@ -5,7 +5,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["Miscelânea"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Uma reflexão sobre a verdadeira natureza da sensação de ''entender'' sentida no dia a dia. Explicamos o valor da compreensão profunda e a diversão das ''coisas que não entendemos'' que permanecem no mundo, enquanto se pode viver sem uma compreensão completa.'
 ---
 # O que significa entender?

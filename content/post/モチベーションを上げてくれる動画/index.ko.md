@@ -10,7 +10,7 @@ date: 2022-09-08T02:22:52+09:00
 tags: ["동기 부여", "동영상"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '노력을 인정받지 못할 때나 고민될 때 보고 싶은, 동기 부여를 해주는 영상을 소개합니다. 나리타 유스케 씨의 다양한 가치관에 대한 생각이나 미야자키 하야오 감독의 사고법 등, 행동이나 인생에 좋은 영향을 주는 명언이 가득합니다.'
 ---
 

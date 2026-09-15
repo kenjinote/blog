@@ -4,9 +4,7 @@ description: "Una explicación exhaustiva de la teoría del caos y el efecto mar
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Ciencia"
-  - "Matemáticas"
+categories: ["science", "mathematics"]
 tags:
   - "Teoría del Caos"
   - "Física"

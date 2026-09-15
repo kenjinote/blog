@@ -5,7 +5,7 @@ date: '2026-09-12T23:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ['Programming', 'Windows', 'Linux']
+categories: ["programming", "windows", "linux"]
 tags: ['WSL2', 'Docker', 'VSCode', 'Zsh', 'Development Environment']
 description: 'Windows 상에서의 개발 경험을 극적으로 향상시키는 WSL2의 완전한 셋업 가이드입니다. 아키텍처에 대한 상세한 해설부터 리소스 튜닝, VSCode Remote 연동, Docker 최적화, SSH 에이전트 공유까지, 본격적인 개발에 필요한 모든 지식을 망라합니다.'
 ---

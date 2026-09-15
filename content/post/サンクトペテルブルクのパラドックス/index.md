@@ -6,9 +6,7 @@ date: '2026-09-10T05:00:00+09:00'
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true
-categories:
-  - '数学パラドックス'
-  - '確率論'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'パラドックス'
   - '期待値'

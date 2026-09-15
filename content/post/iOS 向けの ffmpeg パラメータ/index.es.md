@@ -13,7 +13,7 @@ date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
-categories: ["PC y Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Presentamos los comandos de ffmpeg y ajustes de parámetros óptimos para reproducir vídeos de forma fluida en dispositivos iOS como el iPhone o el iPad. También explicamos detalladamente el significado de cada opción y los puntos clave de la configuración.'
 ---
 

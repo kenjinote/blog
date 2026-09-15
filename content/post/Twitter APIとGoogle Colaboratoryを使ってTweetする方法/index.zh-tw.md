@@ -5,7 +5,7 @@ date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '解說利用 Twitter API 與 Google Colaboratory，透過 Python (tweepy) 執行自動發推文的步驟。從 API 金鑰設定到實際程式碼，複製貼上即可立刻測試。'
 ---
 

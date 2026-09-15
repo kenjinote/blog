@@ -5,7 +5,7 @@ date: 2023-07-22T15:25:10+09:00
 tags: ["Mathematics", "History"]
 draft: false
 image: "img.webp"
-categories: ["Mathematics / Cryptography / Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'We look back on the history of mathematics along with ancient events and chronology. We detail important discoveries and historical trajectories that supported the development of mathematics, such as the three classical problems of ancient Greece (squaring the circle, angle trisection, doubling the cube), the Archimedean spiral, and Pappus''s hexagon theorem.'
 ---
 

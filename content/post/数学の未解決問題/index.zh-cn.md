@@ -6,7 +6,7 @@ tags: ["数学","未解决问题"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '通俗易懂地解说题目本身看似简单却至今仍未被证明的、充满魅力的数学未解之谜。完全数有无数个吗？我们将带您走近哥德巴赫猜想、世纪难题黎曼猜想等一直困扰着数学家们的各种神秘问题。'
 ---
 

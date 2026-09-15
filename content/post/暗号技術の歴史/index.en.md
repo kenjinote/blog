@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: "From the ancient Caesar cipher, through Enigma and public-key cryptography, to Post-Quantum Cryptography (PQC) preparing for the future threat of quantum computers, this article thoroughly explains the epic history and technological evolution of cryptography."
 ---

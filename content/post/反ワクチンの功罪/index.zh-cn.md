@@ -5,7 +5,7 @@ date: 2026-01-24T15:41:23+09:00
 tags: ["社会问题", "健康", "信息素养"]
 draft: false
 image: "img.webp"
-categories: ["生活方式・杂记"]
+categories: ["lifestyle-miscellaneous"]
 description: '解说围绕新冠疫苗接种的“反疫苗”功与过及流行病学的教训。了解接种后案例中的“混入现象”和“因果错觉”等认知偏差，探讨不受媒体信息迷惑、保持科学思考的重要性。'
 ---
 

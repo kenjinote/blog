@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "C++의 포인터와 Rust의 '소유권'·'차용' 모델을 철저하게 비교. 원시 포인터, 스마트 포인터부터 보로우 체커까지, 메모리 안전성의 본질을 해설합니다."
 ---

@@ -6,9 +6,7 @@ date: '2026-09-10T07:00:00+09:00'
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - '수학 역설'
-  - '통계학'
+categories: ["mathematical-paradoxes", "statistics"]
 tags:
   - '역설'
   - '통계'

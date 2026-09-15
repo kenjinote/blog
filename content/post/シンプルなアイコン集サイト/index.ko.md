@@ -10,7 +10,7 @@ date: 2022-09-07T16:46:56+09:00
 tags: ["아이콘","디자인"]
 draft: false
 image: "img_2.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '웹 디자인이나 자료 작성에 유용한 심플하고 사용하기 쉬운 무료 아이콘 소재 사이트를 엄선하여 소개합니다. Google Material Icons나 GitHub Octicons 등 상업적 이용도 가능한 편리한 사이트가 가득합니다.'
 ---
 

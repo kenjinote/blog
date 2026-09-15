@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'C++のポインタとRustの所有権・借用モデルを徹底比較。生ポインタ、スマートポインタからボローチェッカーまで、メモリ安全性の本質を解説します。'
 ---

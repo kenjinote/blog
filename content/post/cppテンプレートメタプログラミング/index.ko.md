@@ -5,7 +5,7 @@ date: "2026-09-12T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "C++"]
+categories: ["programming", "cpp"]
 tags: ["C++", "Metaprogramming", "constexpr", "Concepts"]
 description: 'C++의 템플릿 메타프로그래밍의 역사부터 SFINAE, constexpr, 그리고 최신 C++20 Concepts까지 포괄적으로 해설합니다.'
 ---

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industry", "Career", "AI"]
+categories: ["industry", "career", "ai"]
 tags: ["2026 Problem", "SIer", "Generative AI", "Developer Career"]
 description: 'IT 업계의 「2026년 문제」의 진실. 생성 AI의 대두로 인해 변화하는 인재 수요의 양극화와 엔지니어가 살아남기 위한 전략을 철저히 해설합니다.'
 ---

@@ -5,7 +5,7 @@ date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "comandos"]
 draft: false
 image: "img.webp"
-categories: ["Operação do Blog"]
+categories: ["blogging"]
 description: 'Aprenda como instalar a CLI do Hugo, um rápido gerador de sites estáticos, e veja a lista de comandos fundamentais frequentemente usados na operação de um blog. Cobrimos as operações que todo iniciante no Hugo deve conhecer: iniciar um novo site, escrever artigos, iniciar um servidor local e realizar builds.'
 ---
 

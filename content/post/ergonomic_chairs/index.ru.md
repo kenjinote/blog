@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'Основываясь на биомеханике, подробно объясняем физику и правила выбора эргономичного кресла, которое защитит удаленных работников от болей в пояснице. Также сравниваем структурные подходы премиум-моделей, таких как Aeron и Contessa.'
 ---

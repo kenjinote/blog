@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["Produk Kulit", "Hobi"]
 draft: fales
 image: "img.webp"
-categories: ["Gaya Hidup dan Serba-serbi"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Kami akan memperkenalkan perlengkapan perawatan produk kulit (leather) yang direkomendasikan untuk dibeli seperti Krim Supreme Collonil maupun Krim Delikat M.Mowbray bagi para pemula yang baru pertama kali merawat produk dari bahan kulit. Ini merupakan tips pemeliharaan agar barang-barang berbahan kulit yang berharga milik Anda dapat bertahan lama.'
 ---
 

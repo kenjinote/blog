@@ -13,7 +13,7 @@ tags: ["Matemáticas", "Paradojas"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matemáticas, Criptografía, Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: '¡¿Si se reúnen 23 personas, la probabilidad de que dos tengan el mismo cumpleaños es de más del 50%?! Explicaremos la "paradoja del cumpleaños", un fenómeno curioso y contraintuitivo, de forma sencilla utilizando razones matemáticas y fórmulas. Experimentemos la magia de las probabilidades.'
 ---
 

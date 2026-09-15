@@ -5,7 +5,7 @@ date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false
 image: "img_1.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Memperkenalkan perintah untuk menghapus massal semua postingan Chatter, lampiran, dan data tempat sampah, yang berguna saat kapasitas penyimpanan organisasi di Salesforce menipis. Ini adalah cara untuk membersihkan dengan cepat menggunakan Jendela Eksekusi Anonim dari Konsol Pengembang.'
 ---
 # Perintah untuk Menghapus Semua Chatter Salesforce

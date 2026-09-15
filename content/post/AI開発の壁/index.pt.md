@@ -5,7 +5,7 @@ date: 2025-07-20T21:52:42+09:00
 tags: ["IA", "desenvolvimento", "barreira", "poema"]
 draft: false
 image: "img_1.webp"
-categories: ["IA e Tecnologia"]
+categories: ["ai-technology"]
 description: 'A era de ''criar apps facilmente usando IA'' é real? Embora seja fácil chegar aos 80% do projeto com no-code ou código gerado por IA, o ajuste final e a correção de bugs podem ser um verdadeiro pesadelo. Falamos abertamente sobre as armadilhas reais do desenvolvimento com IA e a verdadeira natureza das ''barreiras'' enfrentadas.'
 ---
 

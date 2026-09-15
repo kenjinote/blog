@@ -5,7 +5,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["ब्लॉग प्रबंधन"]
+categories: ["blogging"]
 description: 'हम बताएंगे कि स्टेटिक साइट जनरेटर Hugo के मार्कडाउन लेखों के भीतर HTML टैग को सीधे कैसे लिखा और उपयोग किया जा सकता है। बस config.toml में markup.goldmark.renderer की असुरक्षित (unsafe) सेटिंग जोड़ें और यह हो गया。'
 ---
 

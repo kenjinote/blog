@@ -5,7 +5,7 @@ date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Sampel"]
 draft: false
 image: "img.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Menjelaskan secara sederhana bagi pemula, mulai dari langkah-langkah menginstal pustaka GUI lintas platform C++, ''wxWidgets'', hingga cara membuat proyek sampel menggunakan Visual Studio.'
 ---
 

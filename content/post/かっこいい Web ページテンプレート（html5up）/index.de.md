@@ -5,7 +5,7 @@ date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Webseiten-Template"]
 draft: false
 image: "img.webp"
-categories: ["Blog-Management"]
+categories: ["blogging"]
 description: 'Wir stellen die Webseiten-Vorlagenseite „html5up“ vor, die für ihr gutes Design bekannt ist. Sie ist voll von raffinierten und coolen Vorlagen, und wir fassen den Reiz zusammen, der Sie dazu bringt, sie sofort ausprobieren zu wollen. Als Referenz für die Webproduktion.'
 ---
 

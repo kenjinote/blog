@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "构建", "C++"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '讲解如何在Windows环境下编译C语言加密通信库“OpenSSL”。详细介绍从准备Perl、NASM、Visual Studio 2022等必要工具，到实际源码编译步骤的全过程。'
 ---
 

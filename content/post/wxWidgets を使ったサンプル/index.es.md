@@ -9,7 +9,7 @@ date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Ejemplo"]
 draft: false
 image: "img.webp"
-categories: ["Programación"]
+categories: ["programming"]
 description: 'Una explicación fácil de entender para principiantes, desde el proceso de instalación de ''wxWidgets'', la biblioteca GUI multiplataforma en C++, hasta la creación de un proyecto de muestra utilizando Visual Studio.'
 ---
 

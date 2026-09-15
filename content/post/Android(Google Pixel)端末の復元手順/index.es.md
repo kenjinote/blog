@@ -13,7 +13,7 @@ date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Restauración", "Solución de problemas"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
-categories: ["Programación"]
+categories: ["programming"]
 description: '¿Tienes problemas graves como que tu Google Pixel se reinicia continuamente o no pasa del logotipo? Te explicaremos detalladamente los pasos oficiales, seguros y fiables para restaurar e inicializar el software de tu dispositivo utilizando la herramienta oficial de reparación, junto con las precauciones importantes antes de ejecutarla.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Gestion de Blog"]
+categories: ["blogging"]
 description: 'Nous présentons les shortcodes intégrés pratiques (YouTube, Twitter, Instagram, Vimeo, etc.) qui peuvent être utilisés sur un blog Hugo. Nous expliquons également des astuces utiles, comme la manière d''échapper (désactiver) les shortcodes dans vos articles.'
 ---
 # Shortcodes utiles dans HUGO

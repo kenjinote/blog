@@ -5,7 +5,7 @@ date: 2022-10-15T17:00:43+09:00
 tags: ["Kumpulan Kutipan"]
 draft: false
 image: "img.webp"
-categories: ["IT・Teknologi"]
+categories: ["it-technology"]
 description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sejarah dan tokoh terkenal, seperti Steve Jobs dan Laozi. Temukan petunjuk untuk memperkaya kehidupan sehari-hari melalui kata-kata yang menjadi pelajaran hidup atau sebagai pendorong motivasi, dengan belajar dari kebijaksanaan para pendahulu.'
 ---
 

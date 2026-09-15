@@ -7,7 +7,7 @@ slug: "twin-paradox"
 image: "img/twin_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Fisika"]
+categories: ["mathematical-paradoxes", "physics"]
 tags: ["Paradoks", "Teori Relativitas", "Waktu", "Einstein", "Luar Angkasa"]
 ---
 

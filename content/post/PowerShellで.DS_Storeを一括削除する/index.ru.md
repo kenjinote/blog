@@ -5,7 +5,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["Программирование"]
+categories: ["programming"]
 description: 'Объясняется, как массово удалить файлы .DS_Store (от Mac), которые часто мешаются в среде Windows, включая вложенные папки, с помощью PowerShell. С помощью одной короткой команды вы можете легко очистить ненужные файлы.'
 ---
 

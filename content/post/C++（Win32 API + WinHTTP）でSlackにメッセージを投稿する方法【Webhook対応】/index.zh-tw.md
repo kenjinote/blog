@@ -5,7 +5,7 @@ date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["部落格營運"]
+categories: ["blogging"]
 description: '獻給不使用Node.js或Python，偏要用「C++ × Win32 API × WinHTTP」自動發文到Slack的您！本文將淺顯易懂地解說如何活用Incoming Webhooks，從C++透過POST請求發送訊息的具體步驟。'
 ---
 

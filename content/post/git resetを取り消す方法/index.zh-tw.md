@@ -5,7 +5,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "復原", "取消"]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '為您解說當在Git中不小心執行了「git reset」時，如何取消重置並還原到原本的Commit狀態。文章將清楚介紹使用「git reflog」確認Commit ID，並正確恢復狀態的步驟。'
 ---
 # 如何取消 git reset

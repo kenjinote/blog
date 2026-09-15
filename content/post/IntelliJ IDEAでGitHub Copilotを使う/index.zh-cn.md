@@ -5,7 +5,7 @@ date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
-categories: ["工具与开发环境"]
+categories: ["tools-development-environment"]
 description: '附图解详细讲解在IntelliJ IDEA中使用GitHub Copilot的具体安装方法和启用步骤。利用AI大幅提升开发效率吧。'
 ---
 # 简介

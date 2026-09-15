@@ -5,7 +5,7 @@ date: 2026-09-05T02:09:08+09:00
 tags: ["數學", "密碼學", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '解說破解保護網際網路通訊的 RSA 加密之人類最強數學「一般數體篩法（GNFS）」的機制。省略專業術語，逼近僅用國中數學知識就能理解的如魔法般的演算法手法。'
 ---
 

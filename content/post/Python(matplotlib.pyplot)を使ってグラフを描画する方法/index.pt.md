@@ -5,7 +5,7 @@ date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Gráficos", "Matemática", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["Matemática・Criptografia・Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicamos para iniciantes os passos para desenhar e exibir facilmente gráficos de ondas senoidais e cosseno usando a biblioteca matplotlib.pyplot do Python, através do Google Colaboratory. Você pode testar imediatamente sem a necessidade de configurar o ambiente.'
 ---
 

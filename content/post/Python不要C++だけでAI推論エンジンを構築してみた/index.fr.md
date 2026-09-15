@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: 'Bien que Python soit le standard dans le développement actuel de l''IA, la puissance du C++ est indispensable pour les environnements nécessitant des appareils périphériques et de hautes performances. Cet article explique en détail, avec près de 10 000 mots, comment construire à partir de zéro un moteur d''inférence d''IA personnalisé uniquement en C++, compatible avec les backends CUDA et Metal, en s''inspirant de la philosophie de GGML.'
 ---

@@ -3,10 +3,7 @@ title: "Das Vorfahren-Paradoxon: Die Mathematik und Genetik des Ahnenschwunds (P
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Das „Vorfahren-Paradoxon“, bei dem die Anzahl der Vorfahren die damalige Weltbevölkerung übersteigt, wenn man die Generationen zurückverfolgt. Wir erklären das Geheimnis des „Ahnenschwunds (Pedigree Collapse)“ detailliert aus mathematischer und genetischer Sicht."
-categories:
-  - Mathematical Paradoxes
-  - Genetics
-  - Science
+categories: ["mathematical-paradoxes", "genetics", "science"]
 tags:
   - Wahrscheinlichkeitstheorie
   - Genetik

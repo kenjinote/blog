@@ -5,7 +5,7 @@ date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: '高速でメモリ安全なプログラミング言語Rustの始め方を初心者向けに解説します。言語の特徴やインストール方法から、最初のプログラムであるHello Worldの実行手順、おすすめの日本語ドキュメントまで網羅的に紹介します。'
 ---
 # はじめに

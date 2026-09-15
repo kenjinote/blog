@@ -4,7 +4,7 @@ description: "Задача о «Семи мостах Кёнигсберга», 
 slug: "seven-bridges-of-konigsberg"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "History"]
+categories: ["mathematics", "history"]
 tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]
 ---
 

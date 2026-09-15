@@ -5,7 +5,7 @@ date: 2025-07-14T13:47:51+09:00
 tags: ["Input Form", "Web Development", "UX"]
 draft: false
 image: "img.webp"
-categories: ["Blog Management"]
+categories: ["blogging"]
 description: 'We explain best practices for ''required field'' marks in web forms based on global UI guidelines. We summarized the correct use of asterisks (*), clearly stating ''Required'', and how to utilize ARIA attributes to improve accessibility.'
 ---
 

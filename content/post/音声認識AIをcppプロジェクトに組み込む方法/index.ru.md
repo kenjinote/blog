@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "Audio Processing"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "Speech Recognition", "C++"]
 description: 'Полное руководство по интеграции высокоточного ИИ для распознавания речи в граничные устройства и нативные приложения с использованием C++ и whisper.cpp. Охватывает все: от основ обработки звуковых сигналов до оптимизации вывода в реальном времени.'
 ---

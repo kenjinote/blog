@@ -4,10 +4,7 @@ description: "ما هي مشكلة السكرتيرة (Secretary Problem)؟ من
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "الخوارزميات"
-  - "صنع القرار"
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "التوقف الأمثل"
   - "مشكلة السكرتيرة"

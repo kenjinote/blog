@@ -5,7 +5,7 @@ date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["إدارة المدونة"]
+categories: ["blogging"]
 description: 'إلى من يرغبون في النشر التلقائي إلى Slack باستخدام ''C++ × Win32 API × WinHTTP'' بدلاً من Node.js أو Python! نشرح بطريقة سهلة الفهم الخطوات المحددة لإرسال الرسائل عبر طلبات POST من C++ بالاستفادة من Incoming Webhooks.'
 ---
 

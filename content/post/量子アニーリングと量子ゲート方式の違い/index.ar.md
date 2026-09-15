@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: 'مقارنة وشرح شامل لمهندسي الكمبيوتر الكمومي وهما التلدين الكمي ونموذج البوابة الكمومية، انطلاقاً من النماذج الرياضية والخلفية الفيزيائية مثل نموذج إيزينج وصياغة QUBO والتحويل الوحدوي وتصحيح الأخطاء، وصولاً إلى حالات الاستخدام المحددة.'
 ---

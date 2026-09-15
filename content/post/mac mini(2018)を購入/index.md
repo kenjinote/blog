@@ -5,7 +5,7 @@ date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: '自宅での快適なiOSアプリ開発環境を構築するため、メルカリで型落ちのMac mini(2018)を購入しました。購入の決め手となった理由や詳細なスペック、環境構築の第一歩についてご紹介します。'
 ---
 

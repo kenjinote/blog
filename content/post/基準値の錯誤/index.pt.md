@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["Paradoxos Matemáticos", "Estatística", "Psicologia"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["Paradoxo", "Teorema de Bayes", "Probabilidade", "Viés Cognitivo", "Falácia da Taxa Base"]
 ---
 

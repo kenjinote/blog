@@ -5,7 +5,7 @@ date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flet's Hikari","Linha de internet"]
 draft: false
 image: "jcom.webp"
-categories: ["IT・Tecnologia"]
+categories: ["it-technology"]
 description: 'História da experiência de mudar a conexão da Internet de casa do Flet''s Hikari para a J:COM. Analisaremos de forma transparente o sentimento real de usar as opções do serviço, abrangendo a economia de tarifas mensais, aumento de velocidade de download, ou, de modo reverso, a queda de velocidade de upload, e a estabilidade da conexão.'
 ---
 

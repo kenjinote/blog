@@ -5,7 +5,7 @@ date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "Beispielcode"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Stellt einen praktischen Beispielcode vor, der nur die Standardbibliothek von Python verwendet, um Daten von einer Bild-URL aus dem Web herunterzuladen, in einer temporären Datei zu speichern, im Browser anzuzeigen und danach automatisch zu löschen.'
 ---
 

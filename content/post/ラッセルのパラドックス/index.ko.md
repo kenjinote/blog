@@ -6,9 +6,7 @@ date: '2026-09-10T04:00:00+09:00'
 image: 'img/russells_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - '수학 역설'
-  - '논리학'
+categories: ["mathematical-paradoxes", "logic"]
 tags:
   - '역설'
   - '러셀'

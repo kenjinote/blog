@@ -5,7 +5,7 @@ date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Pengembangan", "Kisah"]
 draft: false
 image: "img.webp"
-categories: ["IT dan Teknologi"]
+categories: ["it-technology"]
 description: 'Kisah awal mula ''LogicPad'', sebuah alat low-code untuk ''orang yang tidak bisa menulis kode tetapi memiliki logika''. Kami menceritakan dengan antusias tentang perasaan pribadi penulis di balik pengembangannya, serta cara pandangnya terhadap kariernya sendiri.'
 ---
 

@@ -5,7 +5,7 @@ date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "Programmation", "Développement", "Technologie"]
 draft: false
 image: "img_1.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Un ingénieur actif explique les avantages et les inconvénients du développement d''applications Windows avec ''Win32API + C++''. Nous présentons les attraits du développement natif, tels qu''une vitesse d''exécution ultra-rapide, un haut degré de contrôle, et la facilité de distribution sans besoin de runtime, ainsi que les défis d''apprentissage.'
 ---
 # L'Attrait et les Défis du Développement avec Win32API + C++

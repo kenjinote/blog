@@ -7,7 +7,7 @@ slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"
 math: true
 mermaid: true
-categories: ["مفارقة رياضية", "منطق"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["مفارقة", "استقراء", "تكافؤ منطقي", "معاكس إيجابي"]
 ---
 

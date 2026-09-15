@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Web3", "Security"]
+categories: ["cryptography", "web3", "security"]
 tags: ["ZKP", "zk-SNARKs", "zk-STARKs", "Web3", "Blockchain"]
 description: 'Подробно объясняются математические основы доказательства с нулевым разглашением (ZKP), механизмы работы zk-SNARKs и zk-STARKs, а также их новейшие применения в Web3 и безопасности, такие как ZK-Rollups и идентификация с сохранением конфиденциальности.'
 ---

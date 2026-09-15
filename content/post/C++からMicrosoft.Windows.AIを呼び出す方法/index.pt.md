@@ -5,7 +5,7 @@ date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Acesse recursos de IA usando o Windows ML nativo do Windows! Explicamos com exemplos de código práticos como chamar ''Microsoft.Windows.AI'' a partir do ambiente C++ de um aplicativo Win32 para executar modelos de IA no formato ONNX.'
 ---
 

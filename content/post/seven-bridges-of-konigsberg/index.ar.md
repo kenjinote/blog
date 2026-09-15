@@ -4,7 +4,7 @@ description: "مسألة «جسور كونيغسبرغ السبعة» التي �
 slug: "seven-bridges-of-konigsberg"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["الرياضيات", "التاريخ"]
+categories: ["mathematics", "history"]
 tags: ["نظرية المخططات", "الطوبولوجيا", "أويلر", "الرياضيات"]
 ---
 

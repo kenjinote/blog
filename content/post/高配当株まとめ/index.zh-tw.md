@@ -5,7 +5,7 @@ date: 2024-12-22T00:56:14+09:00
 tags: ["股票"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '將三菱UFJ、三菱商事、NTT、KDDI等日本具代表性的優質高股息推薦個股彙整成一覽表來介紹。這是想以賺取股息為目標進行長期投資，或作為建立投資組合參考的人必看的焦點個股清單。'
 ---
 

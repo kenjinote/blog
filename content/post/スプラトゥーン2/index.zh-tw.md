@@ -5,7 +5,7 @@ date: 2023-08-01T00:26:30+09:00
 tags: ["斯普拉遁 2", "遊戲", "Nintendo Switch"]
 draft: false
 image: "img.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '介紹能夠長久遊玩的名作遊戲「斯普拉遁 2」的魅力，以及推薦給初學者的武器（新葉射擊槍、各種滾筒等）。這是一篇紀錄在真劍對戰中維持 A+～S+ 區間，同時享受比賽樂趣的遊玩日記。'
 ---
 

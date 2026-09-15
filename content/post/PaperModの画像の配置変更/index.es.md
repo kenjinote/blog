@@ -8,7 +8,7 @@ date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
-categories: ["Administración del blog"]
+categories: ["blogging"]
 description: 'Explicamos cómo personalizar el tamaño y la alineación de las imágenes en los artículos usando el tema Hugo PaperMod. Mostramos pasos específicos de edición en CSS (blank.css y post-entry.css) para envolver texto o reducir la imagen desde el 100% de ancho y centrado predeterminados.'
 ---
 

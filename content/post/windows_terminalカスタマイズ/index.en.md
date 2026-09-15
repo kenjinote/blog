@@ -5,7 +5,7 @@ date: "2026-09-13T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Tools", "Windows"]
+categories: ["programming", "tools", "windows"]
 tags: ["Windows Terminal", "PowerShell", "Oh My Posh", "Customization"]
 description: 'We dive deep into customization methods for Windows Terminal to the absolute limit. We provide a thorough explanation of DirectX rendering mechanisms, Oh My Posh, Starship, and advanced profile configuration methods.'
 ---

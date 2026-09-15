@@ -5,7 +5,7 @@ date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
-categories: ["Blog Management"]
+categories: ["blogging"]
 description: 'Explains how to customize the overall color scheme in Hugo''s PaperMod theme. Introduces specific variable setting examples to apply your preferred color scheme by editing the CSS (blank.css) that contains style definitions such as background colors, text colors, and code blocks.'
 ---
 I changed the color scheme of the PaperMod theme. I referred to the following for the method.

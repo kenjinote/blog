@@ -6,9 +6,7 @@ date: '2026-09-10T12:00:00+09:00'
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Paradoxes mathématiques'
-  - 'Théorie des ensembles'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - 'Paradoxe'
   - 'Argument de la diagonale'

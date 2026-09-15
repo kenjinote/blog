@@ -5,7 +5,7 @@ date: 2023-02-28T00:51:49+09:00
 tags: ["键盘", "轨迹球", "显示器"]
 draft: false
 image: "img.webp"
-categories: ["电脑数码"]
+categories: ["pc-gadgets"]
 description: '介绍现役工程师爱用的、能显著提高工作效率的推荐电脑外设，包括经久耐用的静电容无接触式键盘、减轻手腕疲劳的轨迹球鼠标、以及高分辨率4K宽屏显示器等。'
 ---
 

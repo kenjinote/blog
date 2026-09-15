@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["數學悖論", "微積分學"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["悖論", "幾何學", "無限", "托里切利小號"]
 ---
 

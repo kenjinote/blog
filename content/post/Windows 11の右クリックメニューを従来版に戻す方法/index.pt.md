@@ -5,7 +5,7 @@ date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Explorador de Arquivos"]
 draft: false
 image: "img.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos como restaurar o novo menu de contexto do Windows 11 para a versão clássica do Windows 10. Apresentamos um procedimento simples para sempre mostrar o menu da especificação antiga alterando as configurações usando o Editor do Registro.'
 ---
 

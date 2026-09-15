@@ -5,7 +5,7 @@ date: 2023-04-09T14:01:00+09:00
 tags: ["En ligne", "Environnement d'exécution de code", "Programmation"]
 draft: false
 image: "img.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Nous avons résumé les environnements d''exécution de code en ligne pratiques par langage (Python, JavaScript, C++, etc.), vous permettant de commencer facilement à programmer sans avoir besoin de configurer un environnement. Nous expliquons en détail les fonctionnalités de Google Colab, AWS Cloud9, etc.'
 ---
 

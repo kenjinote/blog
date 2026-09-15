@@ -5,7 +5,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["Gestão de Blog"]
+categories: ["blogging"]
 description: 'Aprenda como habilitar o uso de tags HTML diretas em artigos em Markdown no gerador de sites estáticos Hugo. É tão simples quanto adicionar a configuração ''unsafe'' em ''markup.goldmark.renderer'' no arquivo config.toml.'
 ---
 

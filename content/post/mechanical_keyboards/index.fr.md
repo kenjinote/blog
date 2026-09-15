@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'Une explication approfondie des claviers haut de gamme qui améliorent considérablement la productivité des ingénieurs. Nous plongeons dans l''explication des commutateurs basée sur la physique jusqu''aux mécanismes du micrologiciel, et présentons 5 modèles ultimes.'
 ---

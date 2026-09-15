@@ -5,7 +5,7 @@ date: 2022-09-07T02:36:11+09:00
 tags: ["経営者"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '流行りつつある事業の見つけ方、徹底的な模倣と改良、誰でもできる仕組み化のポイントなど、経営者が知っておくべき実践的なメモを公開。「企業の利益を最大化する」という経営理念の本質にも迫ります。'
 ---
 # 流行りつつある事業を見つける

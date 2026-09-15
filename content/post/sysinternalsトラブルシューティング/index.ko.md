@@ -5,7 +5,7 @@ date: "2026-09-13T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Windows", "Troubleshooting", "System Admin"]
+categories: ["windows", "troubleshooting", "system-administration"]
 tags: ["Sysinternals", "ProcMon", "Process Explorer", "Windows"]
 description: 'Windows 트러블슈팅의 결정판. Sysinternals 도구를 활용한 커널 레벨의 분석 기법을 철저히 해설합니다.'
 ---

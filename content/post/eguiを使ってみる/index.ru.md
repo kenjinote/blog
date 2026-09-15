@@ -5,7 +5,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["rust", "egui", "GUI библиотека"]
 draft: false
 image: "demo.gif"
-categories: ["IT и Технологии"]
+categories: ["it-technology"]
 description: 'Представлены основы использования GUI-библиотеки «egui», с которой легко работать в Rust. Описаны простые шаги: от клонирования шаблона с GitHub до запуска и выполнения примера приложения с помощью команды cargo run.'
 ---
 

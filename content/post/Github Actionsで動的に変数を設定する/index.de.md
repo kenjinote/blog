@@ -5,7 +5,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
-categories: ["Tools und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Wir erklären, wie man innerhalb eines GitHub Actions-Workflows dynamisch Umgebungsvariablen setzt. Am Beispiel einer Windows-Umgebung stellen wir die Schritte zum Schreiben in „$env:GITHUB_ENV“ sowie konkrete Beispiele vor, wie man in nachfolgenden Schritten auf Variablen zugreift und sie für die Erstellung von Releases nutzt.'
 ---
 

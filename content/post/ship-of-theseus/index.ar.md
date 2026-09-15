@@ -3,7 +3,7 @@ title: "سفينة ثيسيوس: هل السفينة التي تم استبدا�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "باستخدام المفارقة الفلسفية اليونانية \"سفينة ثيسيوس\" كموضوع، نتعمق في استكشاف الهوية في تطوير البرمجيات، من خلال إعادة الهيكلة (Refactoring)، واستبدال الأنظمة، والبرمجة الكائنية التوجه (OOP)."
-categories: ["Software Engineering", "Architecture"]
+categories: ["software-engineering", "architecture"]
 tags: ["سفينة ثيسيوس", "إعادة الهيكلة (Refactoring)", "الخدمات المصغرة (Microservices)", "البرمجة الكائنية التوجه (OOP)", "DDD"]
 slug: "ship-of-theseus"
 ---

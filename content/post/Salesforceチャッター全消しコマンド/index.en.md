@@ -5,7 +5,7 @@ date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false
 image: "img_1.webp"
-categories: ["IT / Technology"]
+categories: ["it-technology"]
 description: 'Introduces a command useful when an organization''s storage capacity is tight in Salesforce, to batch delete all Chatter posts, attachments, and recycle bin data. It''s a method to quickly clean up using the Execute Anonymous window from the Developer Console.'
 ---
 # Salesforce Chatter Bulk Delete Command

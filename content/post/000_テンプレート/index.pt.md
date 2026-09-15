@@ -4,7 +4,7 @@ slug: "000_Modelo"
 date: 2022-01-01T00:00:00+09:00
 tags: ["Tag 1", "Tag 2"]
 draft: true
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Apresentamos um template útil para a criação de artigos de blog. Abrange os formatos básicos de Markdown, como estrutura de títulos, listas, blocos de código e citações, essenciais para a criação de artigos otimizados para SEO. Aproveite-o para escrever seus artigos com mais eficiência.'
 ---
 

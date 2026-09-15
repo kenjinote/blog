@@ -9,7 +9,7 @@ date: 2022-09-07T16:46:56+09:00
 tags: ["iconos", "diseño"]
 draft: false
 image: "img_2.webp"
-categories: ["IT y tecnología"]
+categories: ["it-technology"]
 description: 'Una cuidada selección de sitios de materiales de iconos gratuitos, simples y fáciles de usar, ideales para el diseño web y la creación de presentaciones. Lleno de sitios útiles, como Google Material Icons y GitHub Octicons, que incluso se pueden usar comercialmente.'
 ---
 

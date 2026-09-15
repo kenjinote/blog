@@ -5,7 +5,7 @@ date: 2024-08-25T16:24:35+09:00
 tags: ["Video", "Pendek"]
 draft: false
 image: "img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Memperkenalkan kumpulan tautan video pendek yang direkomendasikan dan sempat viral di media sosial, termasuk kisah menyentuh dari seorang anak gawang yang menyelamatkan tim pada laga Tottenham dan mendapat pujian dari Mourinho.'
 ---
 1. Sepak bola - Anak Gawang

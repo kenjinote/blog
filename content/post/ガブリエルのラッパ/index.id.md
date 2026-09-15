@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Kalkulus"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["Paradoks", "Geometri", "Tak Terhingga", "Terompet Torricelli"]
 ---
 

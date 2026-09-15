@@ -6,9 +6,7 @@ date: '2026-09-10T12:00:00+09:00'
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - '수학 역설'
-  - '집합론'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - '역설'
   - '대각선 논법'

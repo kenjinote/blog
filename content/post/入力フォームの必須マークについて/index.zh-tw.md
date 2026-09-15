@@ -5,7 +5,7 @@ date: 2025-07-14T13:47:51+09:00
 tags: ["輸入表單", "網頁開發", "UX"]
 draft: false
 image: "img.webp"
-categories: ["部落格營運"]
+categories: ["blogging"]
 description: '根據海外UI指南，解說網頁表單中「必填項目」標記的最佳實踐。整理了星號（*）的正確用法、「Required」的明確標示，以及為了提升無障礙存取而活用ARIA屬性的方法。'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
-categories: ["उपकरण और विकास पर्यावरण"]
+categories: ["tools-development-environment"]
 description: 'Git में अनावश्यक टैग (tag) को हटाने का तरीका आसानी से समझाया गया है। यह "git tag -d" का उपयोग करके स्थानीय वातावरण में टैग को हटाने से लेकर "git push origin --delete" का उपयोग करके दूरस्थ रिपॉजिटरी पर टैग को हटाने तक को कवर करता है。'
 ---
 # स्थानीय टैग हटाएं

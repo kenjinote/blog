@@ -5,7 +5,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Объясняется, как динамически настраивать переменные среды в рабочем процессе GitHub Actions. На примере среды Windows показаны шаги по записи в «$env:GITHUB_ENV» и конкретные примеры использования переменных в последующих шагах для создания релизов.'
 ---
 

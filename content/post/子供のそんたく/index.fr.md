@@ -5,7 +5,7 @@ date: 2022-09-07T04:40:52+09:00
 tags: ["Enfant"]
 draft: false
 image: "images/img.webp"
-categories: ["Informatique et technologie"]
+categories: ["it-technology"]
 description: 'Nous vous présentons un épisode chaleureux où j''ai ressenti la considération et l''attention d''un enfant à travers les actions de ma fille de 2 ans, soucieuse de sa mère alitée et malade. Nous partageons la croissance de son cœur tendre caché derrière les mots « Non, elle fait dodo ! » et ce moment apaisant de la parentalité.'
 ---
 Quand la mère est tombée malade et a dû rester au lit,

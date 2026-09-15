@@ -9,7 +9,7 @@ date: 2022-09-09T23:13:19+09:00
 tags: ["Filosofía", "Hegel", "Dialéctica"]
 draft: false
 image: "images/img.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Explicaremos la "dialéctica de Hegel", que se desarrolla hacia una dimensión superior superando conflictos y contradicciones. Lo analizaremos de manera sencilla con ejemplos cotidianos, no solo como concepto filosófico, sino también a través de las leyes de la naturaleza y la evolución en la corrección de errores de los programas informáticos.'
 ---
 

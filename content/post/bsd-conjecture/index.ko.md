@@ -4,7 +4,7 @@ description: "밀레니엄 현상 문제 중 하나인 버치-스위너턴다이
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["정수론", "타원 곡선", "BSD 추측", "밀레니엄 현상 문제"]
 ---
 

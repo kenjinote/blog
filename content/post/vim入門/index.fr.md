@@ -5,7 +5,7 @@ date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "éditeur de texte"]
 draft: false
 image: "img.webp"
-categories: ["Outils et Environnement de Développement"]
+categories: ["tools-development-environment"]
 description: 'Explique l''utilisation de base de Vim pour les débutants. Couvre entièrement les premières étapes, telles que la méthode d''installation sous Windows, les commandes de démarrage et de fermeture (sauvegarde, fermeture forcée, etc.), ainsi que les différences entre le mode commande et le mode insertion.'
 ---
 

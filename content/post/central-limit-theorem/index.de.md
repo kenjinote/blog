@@ -3,7 +3,7 @@ title: "Zentraler Grenzwertsatz (Central Limit Theorem) – Das Wunder, dass all
 description: "Eine detaillierte Erklärung des Zentralen Grenzwertsatzes, eines der wichtigsten Sätze der Statistik, von intuitiven Verständnis über mathematische Beweise bis hin zu Simulationen mit Python."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Statistik"]
+categories: ["mathematics", "statistics"]
 tags: ["Zentraler Grenzwertsatz", "Wahrscheinlichkeit", "Data Science", "Python"]
 slug: "central-limit-theorem"
 ---

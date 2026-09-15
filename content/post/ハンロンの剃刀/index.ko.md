@@ -13,7 +13,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["구문", "표현"]
 draft: false
 image: "img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '''상대의 행동을 악의로 받아들이는 것이 아니라, 단순한 부주의라고 생각한다''는 심리적 접근인 ''한론의 면도날''을 소개합니다. LINE 답장이 늦는 등의 일상적인 답답함을 해소하고 인간관계의 스트레스를 줄이는 힌트를 해설합니다.'
 ---
 

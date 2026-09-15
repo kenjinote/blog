@@ -5,7 +5,7 @@ date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "sertifikat yang ditandatangani sendiri", "instalasi"]
 draft: false
 image: "img.webp"
-categories: ["IT dan Teknologi"]
+categories: ["it-technology"]
 description: 'Menjelaskan dengan mudah prosedur spesifik, lengkap dengan perintah PowerShell, untuk membuat dan memberikan sertifikat mandiri tanpa menggunakan sertifikat komersial guna memungkinkan instalasi ke lingkungan lokal untuk paket MSIX yang berguna untuk distribusi pengujian aplikasi Windows.'
 ---
 

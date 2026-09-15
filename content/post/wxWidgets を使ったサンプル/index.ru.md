@@ -5,7 +5,7 @@ date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Примеры"]
 draft: false
 image: "img.webp"
-categories: ["Программирование"]
+categories: ["programming"]
 description: 'Понятное для новичков объяснение: от шагов установки кроссплатформенной GUI-библиотеки «wxWidgets» для C++ до создания простого проекта с использованием Visual Studio.'
 ---
 

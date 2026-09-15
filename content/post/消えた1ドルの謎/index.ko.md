@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 math: true
 mermaid: true
 image: 'img/missing_dollar.jpg'
-categories:
-  - '수학 역설'
-  - '논리적 사고'
+categories: ["mathematical-paradoxes", "logical-thinking"]
 tags:
   - '역설'
   - '산수'

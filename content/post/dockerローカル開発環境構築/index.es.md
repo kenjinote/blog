@@ -5,7 +5,7 @@ date: "2026-09-13T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Infrastructure", "Docker"]
+categories: ["programming", "infrastructure", "docker"]
 tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 ---
 

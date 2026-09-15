@@ -6,7 +6,7 @@ tags: ["KaTeX", "LaTeX", "rumus", "matematika", "hugo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matematika, Kriptografi, Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Menjelaskan langkah-langkah mengimplementasikan library rendering rumus cepat ''KaTeX'' ke pembuat situs statis Hugo. Anda dapat dengan mudah mengetahui cara mengaktifkan tampilan rumus ala LaTeX yang indah di blog Anda, mulai dari membuat math.html hingga pengaturan pemuatan ke header.'
 ---
 # Apa itu KaTeX?

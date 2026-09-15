@@ -4,10 +4,7 @@ description: "Что такое задача о разборчивой неве�
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Математика"
-  - "Алгоритмы"
-  - "Принятие решений"
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "Оптимальная остановка"
   - "Проблема секретаря"

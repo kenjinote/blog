@@ -5,7 +5,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["KI", "Stable Diffusion", "Illustration", "Bildgenerierung", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Möchten Sie mit der KI „Stable Diffusion“, die aus eingegebenem Text hochwertige Bilder generieren kann, Ihre eigenen Illustrationen erstellen? Wir erklären verständlich die Schritte, mit denen jeder mithilfe von Google Colab und einem kostenlosen Konto ganz einfach mit der KI-Bilderstellung beginnen kann.'
 ---
 

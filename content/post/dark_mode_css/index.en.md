@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: 'A detailed explanation of advanced CSS design, anti-FOUC measures, and the use of the OKLCH color space with accessibility (WCAG 2.1 AAA) in mind for implementing dark mode in blogs and web applications.'
 ---

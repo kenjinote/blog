@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Quantum Computing", "Mathematics"]
+categories: ["cryptography", "quantum-computing", "mathematics"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: '양자 컴퓨터의 대두로 인한 암호 무력화 위협과 이에 대항하는 NIST 표준 양자 내성 암호(PQC)인 Kyber, Dilithium, FALCON, SPHINCS+ 등의 알고리즘에 대해 격자 기반 암호의 수학적 기반(LWE 문제)부터 상세한 원리, 성능 비교까지 철저하게 해설합니다.'
 ---

@@ -10,7 +10,7 @@ date: 2022-09-07T04:40:52+09:00
 tags: ["아이"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・기술"]
+categories: ["it-technology"]
 description: '컨디션 불량으로 앓아누운 엄마를 걱정하는 2살 딸의 행동에서 아이의 눈치와 배려를 느낀 훈훈한 에피소드를 소개합니다. ''안 돼, 코 자고 있으니까!''라는 말에 숨겨진, 상대를 배려하는 다정한 마음의 성장 기록과 육아의 힐링을 공유합니다.'
 ---
 

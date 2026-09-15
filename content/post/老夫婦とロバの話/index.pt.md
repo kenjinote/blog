@@ -5,7 +5,7 @@ date: 2024-09-18T00:56:59+09:00
 tags: ["A História do Casal de Idosos e do Burro", "Sátira"]
 draft: false
 image: "img.webp"
-categories: ["IT・Tecnologia"]
+categories: ["it-technology"]
 description: 'Através da famosa fábula ''A história do velho casal e do burro'', consideraremos os efeitos nocivos de nos importarmos demais com os olhos dos outros e a preocupação dos relacionamentos modernos sobre ''de quem devemos acreditar nas vozes''. Forneceremos dicas para viver sem ser influenciado pelas opiniões dos outros.'
 ---
 

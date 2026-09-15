@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: 'In der heutigen KI-Entwicklung ist Python der Mainstream, aber in Umgebungen, die Edge-Geräte oder hohe Leistung erfordern, ist die Kraft von C++ unverzichtbar. In diesem Artikel erklären wir in etwa 10.000 Wörtern, wie man von Grund auf eine eigene KI-Inferenz-Engine nur mit C++ erstellt, die CUDA- und Metal-Backends unterstützt und sich dabei von der Philosophie von GGML inspirieren lässt.'
 ---

@@ -5,7 +5,7 @@ date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "開發", "商業", "雜記"]
 draft: false
 image: "img.webp"
-categories: ["生活方式・雜記"]
+categories: ["lifestyle-miscellaneous"]
 description: '結合拉麵店等例子，淺顯易懂地解說商業與企劃中常用的「由外而內（市場導向）」與「由內而外（產品導向）」的含義與差異。了解各自的優缺點，思考適合當下情況的策略吧。'
 ---
 

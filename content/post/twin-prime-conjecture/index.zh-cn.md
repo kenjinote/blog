@@ -4,7 +4,7 @@ description = "详细解说数学上的未解之谜——孪生素数猜想的�
 slug = "twin-prime-conjecture"
 date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
-categories = ["数学"]
+categories = ["mathematics"]
 tags = ["素数", "数论", "未解之谜"]
 +++
 

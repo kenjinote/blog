@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["社會", "哲學", "Web3"]
+categories: ["society", "philosophy", "web3"]
 tags: ["同溫層", "演算法", "AT 協定", "社交工程"]
 ---
 

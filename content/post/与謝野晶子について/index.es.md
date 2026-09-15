@@ -12,7 +12,7 @@ slug: "Akiko Yosanoについて"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Akiko Yosano"]
 draft: false
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Explicamos la vida y las obras representativas de Akiko Yosano, una poeta que estuvo activa desde la era Meiji hasta la era Showa. Presentamos de manera sencilla sus logros, como su primera antología ''Midaregami'' que expresa apasionadamente el romance femenino, y su poema pacifista ''Kimi Shinitamou Koto Nakare'' criticando la guerra ruso-japonesa.'
 ---
 

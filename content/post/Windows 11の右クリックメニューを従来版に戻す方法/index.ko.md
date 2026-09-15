@@ -12,7 +12,7 @@ date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "파일 탐색기"]
 draft: false
 image: "img.webp"
-categories: ["PC・가젯"]
+categories: ["pc-gadgets"]
 description: 'Windows 11의 새로운 우클릭 메뉴(컨텍스트 메뉴)를 Windows 10의 기존 버전으로 되돌리는 방법을 해설합니다. 레지스트리 편집기를 사용한 설정 변경으로, 구 사양의 메뉴를 항상 표시할 수 있게 하는 간단한 절차를 소개합니다.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T20:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing", "Python"]
+categories: ["programming", "quantum-computing", "python"]
 tags: ["Qiskit", "Python", "Quantum Computing", "IBM"]
 description: '使用IBM的量子计算框架Qiskit，从量子编程基础到贝尔状态的创建、基本算法，进行彻底解说。'
 ---

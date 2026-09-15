@@ -5,7 +5,7 @@ date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Mencari cara untuk memanggil dan menjalankan skrip PowerShell dari C++ native? Kami menjelaskan secara menyeluruh langkah implementasi konkret untuk membuat wrapper DLL dengan C++/CLI di lingkungan Visual Studio 2022 dan mewujudkan integrasi sistem yang lancar.'
 ---
 

@@ -12,7 +12,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["히데마루 에디터", "파일 탐색기", "우클릭 메뉴", "grep", "레지스트리"]
 draft: false
 image: "img.webp"
-categories: ["도구・개발 환경"]
+categories: ["tools-development-environment"]
 description: 'Windows 10/11의 파일 탐색기 우클릭 메뉴에 히데마루 에디터(Hidemaru Editor)의 grep 기능을 추가하는 편리한 설정 절차를 소개합니다. 레지스트리 등록 파일을 사용한 간단한 방법을 알기 쉽게 해설합니다.'
 ---
 

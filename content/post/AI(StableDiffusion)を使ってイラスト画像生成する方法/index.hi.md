@@ -5,7 +5,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "इलस्ट्रेशन", "इमेज जनरेशन", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["प्रोग्रामिंग"]
+categories: ["programming"]
 description: 'क्या आप दर्ज किए गए टेक्स्ट से उच्च गुणवत्ता वाली छवियां उत्पन्न करने वाले AI "Stable Diffusion" का उपयोग करके अपने पसंद के चित्र बनाना चाहेंगे? हम Google Colab और एक मुफ्त खाते के साथ किसी के लिए भी आसानी से AI छवि जनरेशन शुरू करने की प्रक्रिया की स्पष्ट रूप से व्याख्या करते हैं。'
 ---
 

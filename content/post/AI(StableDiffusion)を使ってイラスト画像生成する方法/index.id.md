@@ -5,7 +5,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "ilustrasi", "generasi gambar", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Mengapa tidak mencoba membuat ilustrasi sesuai selera Anda menggunakan ''Stable Diffusion'', AI yang dapat menghasilkan gambar berkualitas tinggi dari teks yang dimasukkan? Kami menjelaskan dengan mudah langkah-langkah agar siapa pun dapat dengan gampang memulai pembuatan gambar AI hanya dengan Google Colab dan akun gratis.'
 ---
 

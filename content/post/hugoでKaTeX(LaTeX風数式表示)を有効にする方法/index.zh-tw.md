@@ -6,7 +6,7 @@ tags: ["KaTeX", "LaTeX", "公式", "數學", "hugo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '解說將高速數學公式渲染函式庫「KaTeX」導入靜態網站產生器Hugo的步驟。從建立math.html到於header進行載入設定，輕鬆了解如何在部落格啟用LaTeX風格的優美數學公式顯示功能。'
 ---
 # 什麼是 KaTeX

@@ -5,7 +5,7 @@ date: "2026-09-12T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "System Administration"]
+categories: ["programming", "system-administration"]
 tags: ["PowerShell", "C++", "Windows", "Automation"]
 description: 'PowerShell과 C++를 통합하여 Windows 시스템 관리를 극적으로 효율화하는 실천적인 자동화 기법, P/Invoke, 메모리 관리에 대해 해설합니다.'
 ---

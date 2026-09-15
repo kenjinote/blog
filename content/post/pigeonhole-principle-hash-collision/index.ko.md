@@ -3,7 +3,7 @@ title: "비둘기집 원리와 해시 충돌: 암호 기술의 한계와 안전�
 image: "eyecatch.jpg"
 date: "2026-09-14T00:00:00+09:00"
 description: "직관적으로 이해할 수 있는 '비둘기집 원리'가 어째서 현대의 암호 기술이나 해시 함수의 안전성에서 가장 중요한 개념이 되는가. 구체적인 예시와 수식, 도해를 사용하여 깊이 해설합니다."
-categories: ["Tech", "Cryptography", "Mathematics"]
+categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]
 slug: "pigeonhole-principle-hash-collision"
 ---

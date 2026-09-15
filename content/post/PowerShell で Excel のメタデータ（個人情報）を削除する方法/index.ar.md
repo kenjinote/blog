@@ -5,7 +5,7 @@ date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "البيانات الوصفية", "المعلومات الشخصية"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح كيفية حذف البيانات الوصفية المضمنة في ملفات Office مثل بيانات المنشئ باستخدام PowerShell. من معالجة ملف واحد إلى برنامج نصي لحذف البيانات من ملفات Excel وWord داخل مجلد دفعة واحدة، نقدم تقنية أتمتة مفيدة لمنع تسرب المعلومات عند مشاركة الملفات خارج الشركة.'
 ---
 

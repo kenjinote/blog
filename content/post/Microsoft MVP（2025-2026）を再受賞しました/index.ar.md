@@ -5,7 +5,7 @@ date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
-categories: ["الأدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'هذا تقرير عن حصولي على جائزة Microsoft MVP (2025-2026) للمرة التاسعة إجمالاً. إلى جانب شرح برنامج MVP الذي يساهم في المجتمع التقني، نقدم مراجعة للأنشطة المجتمعية ونشر المعلومات التقنية التي ركزت عليها بشكل خاص خلال هذا العام.'
 ---
 

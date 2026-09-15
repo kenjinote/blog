@@ -5,7 +5,7 @@ date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Игры", "Nintendo Switch"]
 draft: false
 image: "img.webp"
-categories: ["ИТ и технологии"]
+categories: ["it-technology"]
 description: 'Представляем привлекательность шедевральной игры «Splatoon 2», в которую можно играть долго, и рекомендуемое для новичков оружие (Splattershot Jr., различные ролики и т.д.). Это дневник игры о том, как получать удовольствие от матчей, поддерживая ранг от A+ до S+ в Ranked Battle.'
 ---
 

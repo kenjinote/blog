@@ -13,7 +13,7 @@ date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Matemáticas", "Criptografía"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
-categories: ["Matemáticas/Criptografía/Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Una explicación exhaustiva con código en C++ sobre cómo funciona la "criba general de cuerpos de números (GNFS)", un algoritmo de factorización de enteros utilizado para descifrar RSA. Un contenido indispensable para amantes de la programación que profundiza en la lógica de cálculo usando la librería Boost y las profundidades de la teoría algebraica de números.'
 ---
 

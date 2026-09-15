@@ -5,7 +5,7 @@ date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "演示文稿"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '本文讲解能用HTML和Markdown直观创建演示文稿的工具“reveal.js”的安装和基本使用方法。支持动画和PDF输出，并介绍与Git等版本控制系统兼容性极佳的运用方法。'
 ---
 

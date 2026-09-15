@@ -13,7 +13,7 @@ date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "명령어"]
 draft: false
 image: "img.webp"
-categories: ["프로그래밍"]
+categories: ["programming"]
 description: 'Windows 명령 프롬프트(cmd)를 사용하여 curl 명령으로 OpenAI의 ChatGPT API를 호출하는 방법을 해설합니다. 필요한 명령어나 매개변수 설정 방법을 알기 쉽게 소개합니다.'
 ---
 

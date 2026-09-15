@@ -9,7 +9,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["Películas", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["Estilo de vida y miscelánea"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Esta es una lista de películas clásicas y anime que quiero ver en el futuro. Presentaré mis registros marcados de películas relacionadas con las matemáticas como ''La fórmula preferida del profesor'' y ''El indomable Will Hunting'', hasta animes populares como ''Summer Wars'' y ''El tiempo contigo''.'
 ---
 

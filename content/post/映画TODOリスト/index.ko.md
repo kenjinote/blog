@@ -10,7 +10,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["영화", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["라이프스타일・잡기"]
+categories: ["lifestyle-miscellaneous"]
 description: '앞으로 보고 싶은 명작 영화나 애니메이션의 TODO 리스트입니다. ''박사가 사랑한 수식'', ''굿 윌 헌팅''과 같은 수학 관련 영화부터 ''썸머 워즈'', ''날씨의 아이'' 등의 인기 애니메이션까지, 감상 완료 체크 기록과 함께 소개합니다.'
 ---
 

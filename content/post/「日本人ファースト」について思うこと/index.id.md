@@ -5,7 +5,7 @@ date: 2026-01-23T13:43:41+09:00
 tags: ["Jepang Pertama", "Politik", "Masalah Sosial"]
 draft: false
 image: "img.webp"
-categories: ["IT dan Teknologi"]
+categories: ["it-technology"]
 description: 'Menganalisis realitas kenaikan harga dan populasi yang menua di balik istilah ''Japan First'' yang mendapat dukungan di Jepang pada tahun 2026. Mengesampingkan argumen emosional, menelaah sifat sebenarnya dari isu-isu sosial berdasarkan data objektif, serta masa depan hidup berdampingan.'
 ---
 

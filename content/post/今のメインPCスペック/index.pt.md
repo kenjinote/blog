@@ -5,7 +5,7 @@ date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Resumi as especificações do PC principal (Core i7-8700K, memória de 32GB, Windows 11) e o ambiente de trabalho que utilizo atualmente. Apresento como um memorando a configuração atual utilizando um PC desktop da Mouse Computer.'
 ---
 Vou escrever as especificações do meu PC principal.

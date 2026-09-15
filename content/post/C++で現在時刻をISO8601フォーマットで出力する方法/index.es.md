@@ -7,7 +7,7 @@ date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "Fecha y hora", "ISO8601"]
 draft: false
 image: "img.webp"
-categories: ["Programación"]
+categories: ["programming"]
 description: '¡Imprescindible para ingenieros que quieran mostrar la hora actual en el estándar mundial ISO8601 con C++! En este artículo te mostraremos de forma sencilla ejemplos de código que utilizan std::format y la librería chrono de C++20 para realizar la conversión de formato de forma inteligente y concisa.'
 ---
 

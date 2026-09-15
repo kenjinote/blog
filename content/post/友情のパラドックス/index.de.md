@@ -7,7 +7,7 @@ slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Mathematische Paradoxien", "Netzwerktheorie"]
+categories: ["mathematical-paradoxes", "network-theory"]
 tags: ["Paradoxon", "Graphentheorie", "Social Media", "Statistik"]
 ---
 

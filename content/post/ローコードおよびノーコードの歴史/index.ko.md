@@ -13,7 +13,7 @@ date: 2025-04-26T16:46:11+09:00
 tags: ["로우코드", "노코드", "역사"]
 draft: false
 image: "img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '1980년대부터 현재에 이르기까지 로우코드·노코드 개발의 역사를 해설합니다. 프로그래밍 없이 앱을 만들 수 있는 시스템이 어떻게 발전해 왔는지, HyperCard나 FileMaker 등 연대별 대표적인 툴과 함께 소개합니다.'
 ---
 

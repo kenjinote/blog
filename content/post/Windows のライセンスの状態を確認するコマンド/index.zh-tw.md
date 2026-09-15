@@ -5,7 +5,7 @@ date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "授權", "命令提示字元"]
 draft: false
 image: "img_1.webp"
-categories: ["PC・小工具"]
+categories: ["pc-gadgets"]
 description: '解說如何確認 Windows 授權是否已正確認證。介紹只需在命令提示字元中執行「slmgr」指令，就能輕鬆檢查產品金鑰、授權類型、有效期限等詳細狀態的步驟。'
 ---
 

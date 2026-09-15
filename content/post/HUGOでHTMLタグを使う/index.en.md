@@ -5,7 +5,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["Blog Management"]
+categories: ["blogging"]
 description: 'We explain how to enable directly writing and using HTML tags within the Markdown articles of the static site generator Hugo. It is completed simply by adding the unsafe setting of markup.goldmark.renderer to config.toml.'
 ---
 

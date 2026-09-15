@@ -5,7 +5,7 @@ date: 2022-09-08T02:22:52+09:00
 tags: ["動力", "影片"]
 draft: false
 image: "images/img.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '介紹在努力得不到認可或煩惱時值得一看、能提升動力的影片。充滿了對行動與人生有正面影響的名言，例如成田悠輔先生對於多元價值觀的看法，以及宮崎駿導演的思考方式等。'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-02-28T00:51:49+09:00
 tags: ["Clavier", "Trackball", "Écran"]
 draft: false
 image: "img.webp"
-categories: ["PC et Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Nous présentons les périphériques PC recommandés qui augmentent considérablement l''efficacité du travail, utilisés par un ingénieur actif. Il s''agit notamment de claviers à touches capacitives sans contact durables, de souris trackball pour réduire la fatigue du poignet, et d''écrans larges 4K haute résolution.'
 ---
 

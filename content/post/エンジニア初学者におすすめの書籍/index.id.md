@@ -5,7 +5,7 @@ date: 2024-05-05T16:03:33+09:00
 tags: ["insinyur", "pemula", "buku"]
 draft: false
 image: "img.webp"
-categories: ["Gaya Hidup & Lain-lain"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Wajib dibaca bagi insinyur yang ingin naik kelas dari pemula ke tingkat menengah dalam pemrograman! Kami merekomendasikan 15 buku pilihan yang wajib dibaca pemula, seperti ''The Art of Readable Code'' dan ''The Pragmatic Programmer'', di mana Anda bisa mempelajari pengetahuan dasar pengembangan perangkat lunak dan teknik desain.'
 ---
 

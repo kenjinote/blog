@@ -7,7 +7,7 @@ date: 2023-04-02T14:44:17+09:00
 tags: ["fotos de archivo", "blog", "Unsplash"]
 draft: false
 image: "img_1.webp"
-categories: ["gestión de blogs"]
+categories: ["blogging"]
 description: 'Te presentamos "Unsplash", el sitio ideal de fotos gratuitas de archivo para artículos de blog. Es un servicio de imágenes de alta calidad muy conveniente: gratuito, apto para uso comercial, se puede modificar y no requiere créditos ni permisos.'
 ---
 

@@ -12,7 +12,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["Editor Hidemaru", "Explorador", "Menú contextual", "grep", "Registro"]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y Entorno de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Presentamos un procedimiento de configuración útil para agregar la función grep de Hidemaru Editor al menú contextual (clic derecho) del Explorador en Windows 10/11. Explicamos un método sencillo utilizando un archivo de registro.'
 ---
 

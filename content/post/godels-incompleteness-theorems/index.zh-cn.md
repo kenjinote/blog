@@ -3,9 +3,7 @@ title: "哥德尔不完备定理：在数学上证明“绝对无法证明的真
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "揭示数学局限性的历史性定理——哥德尔不完备定理，本文将结合具体例子和图解，通俗易懂地解说其含义和证明机制。"
-categories:
-  - "数学"
-  - "计算机科学"
+categories: ["mathematics", "computer-science"]
 tags:
   - "逻辑学"
   - "哥德尔"

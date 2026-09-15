@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Security", "AI", "Society"]
+categories: ["security", "ai", "society"]
 tags: ["Deepfake", "GAN", "C2PA", "Information Literacy"]
 description: 'एआई तकनीक के विकास के साथ डीपफेक अधिक उन्नत होते जा रहे हैं। हम इसकी निर्माण प्रक्रिया, आवृत्ति विश्लेषण (frequency analysis) और जैविक संकेतों (rPPG) का उपयोग करने वाले तकनीकी पहचान विधियों, और C2PA सहित कंटेंट प्रोवेंस (content provenance) प्रमाणीकरण को तकनीकी दृष्टिकोण से अत्यधिक गहराई से समझाएंगे।'
 ---

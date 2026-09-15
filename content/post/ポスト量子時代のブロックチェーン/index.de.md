@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: 'Die Ankunft des Q-Day, an dem die erstaunliche Rechenleistung von Quantencomputern die Grundlagen der Blockchain erschüttert. Vom Zusammenbruch von ECDSA durch Shors Algorithmus bis hin zu Migrationsstrategien auf quantenresistente Kryptografie (PQC) – wir erklären die Zukunft von Krypto-Assets aus technischer Sicht im Detail.'
 ---

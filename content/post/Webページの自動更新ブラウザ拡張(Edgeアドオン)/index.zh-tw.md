@@ -5,7 +5,7 @@ date: 2024-04-06T15:36:54+09:00
 tags: ["瀏覽器擴充功能", "Edge附加元件", "自動重整"]
 draft: false
 image: "img.webp"
-categories: ["部落格經營"]
+categories: ["blogging"]
 description: '解說能在 Microsoft Edge 定期自動更新網頁的瀏覽器擴充功能「索引標籤自動更新 (Auto Refresh)」的使用方法。從安裝方法到更新間隔設定、停止步驟等，皆附圖淺顯易懂地介紹。'
 ---
 在此介紹會自動重整網頁的 Edge 瀏覽器擴充功能「索引標籤自動重整」。

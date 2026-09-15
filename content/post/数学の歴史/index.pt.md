@@ -5,7 +5,7 @@ date: 2023-07-22T15:25:10+09:00
 tags: ["Matemática", "História"]
 draft: false
 image: "img.webp"
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Relembraremos a história da matemática juntamente com eventos antigos e a cronologia. Explicaremos em detalhes os três grandes problemas de construção geométrica da Grécia Antiga (a quadratura do círculo, a trissecção do ângulo e a duplicação do cubo), a espiral de Arquimedes, o teorema de Pappus; grandes descobertas e trajetórias históricas que deram suporte ao desenvolvimento da matemática.'
 ---
 

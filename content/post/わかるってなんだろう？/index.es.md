@@ -9,7 +9,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["Miscelánea"]
 draft: false
 image: "img.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Reflexiones sobre la verdadera naturaleza de la sensación de ''entender'' que experimentamos en la vida diaria. Explicamos el valor de comprender profundamente, aunque se pueda vivir sin una comprensión total, y lo interesante de las cosas que siguen siendo ''desconocidas'' en el mundo.'
 ---
 

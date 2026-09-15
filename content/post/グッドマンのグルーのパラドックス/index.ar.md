@@ -7,7 +7,7 @@ slug: "grue-paradox"
 image: "img/grue_paradox.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "فلسفة", "منطق"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["مفارقة", "استقراء", "غرو", "فلسفة العلوم"]
 ---
 

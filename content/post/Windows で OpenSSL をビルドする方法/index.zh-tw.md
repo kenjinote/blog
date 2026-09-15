@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "編譯", "C++"]
 draft: false
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '解說如何在 Windows 環境下編譯 C 語言用加密通訊函式庫「OpenSSL」。從 Perl、NASM、Visual Studio 2022 等必備工具的準備，到實際原始碼的編譯步驟，為您詳細介紹。'
 ---
 

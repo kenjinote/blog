@@ -5,7 +5,7 @@ date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Blog Operation"]
+categories: ["blogging"]
 description: 'Clearly explains the steps to install the static site generator ''Hugo'' in a Windows environment, how to set the Path environment variable, and how to use commands to start a local server and preview blog posts.'
 ---
 # Installing HUGO

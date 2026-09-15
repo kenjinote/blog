@@ -5,7 +5,7 @@ date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "下载"]
 draft: false
 image: "img_1.webp"
-categories: ["IT·科技"]
+categories: ["it-technology"]
 description: '通俗易懂地讲解如何使用命令行工具“yt-dlp”下载并保存高清YouTube视频，以及提取保存为mp3音频文件的步骤。内容全面，涵盖从安装到使用的全过程。'
 ---
 # 什么是yt-dlp

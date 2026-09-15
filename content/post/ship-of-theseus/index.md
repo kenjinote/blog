@@ -3,7 +3,7 @@ title: "テセウスの船：すべて置き換えられた船は「元の船」
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "ギリシャ哲学のパラドックス「テセウスの船」を題材に、ソフトウェア開発におけるリファクタリング、システムリプレイス、そしてオブジェクト指向における「同一性」について深く考察します。"
-categories: ["Software Engineering", "Architecture"]
+categories: ["software-engineering", "architecture"]
 tags: ["テセウスの船", "リファクタリング", "マイクロサービス", "オブジェクト指向", "DDD"]
 slug: "ship-of-theseus"
 ---

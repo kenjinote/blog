@@ -5,7 +5,7 @@ date: 2025-08-31T20:24:49+09:00
 tags: ["Distribusi Pembuatan Aplikasi Kartu Tahun Baru", "YouTube"]
 draft: false
 image: "img.webp"
-categories: ["IT & Teknologi"]
+categories: ["it-technology"]
 description: 'Siaran YouTube pertama tentang pengembangan aplikasi pembuatan kartu tahun baru menggunakan C++. Kami akan menjelaskan langkah-langkah pengaturan lingkungan yang menjadi dasar pengembangan aplikasi beserta dengan kode sumbernya, mulai dari pembuatan repositori GIT hingga menampilkan jendela utama, inisialisasi Direct2D, dan implementasi HelloWorld.'
 ---
 

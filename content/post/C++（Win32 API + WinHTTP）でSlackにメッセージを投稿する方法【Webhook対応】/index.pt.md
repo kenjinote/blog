@@ -5,7 +5,7 @@ date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["Administração de Blog"]
+categories: ["blogging"]
 description: 'Para aqueles que preferem usar ''C++ × Win32 API × WinHTTP'' em vez de Node.js ou Python para postar automaticamente no Slack! Explicamos detalhadamente como usar Incoming Webhooks para enviar mensagens via requisições POST do C++.'
 ---
 

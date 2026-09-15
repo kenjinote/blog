@@ -6,7 +6,7 @@ tags: ["Quantum Computer", "GNFS", "Shor's Algorithm", "Cryptography", "Mathemat
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["Math, Cryptography, Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'The prime factorization problem that underpins the security of RSA encryption. We thoroughly explain with formulas and conceptual diagrams everything from the mathematical mechanism of the strongest classical algorithm ''General Number Field Sieve (GNFS)'' to why ''Shor''s Algorithm'' by quantum computers can break it.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["Programming", "Font"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Introducing ideal programming fonts for coding such as JetBrains Mono, HackGen, Ricty Diminished, Cica, and Migu. Improve editor visibility and boost your development efficiency.'
 ---
 

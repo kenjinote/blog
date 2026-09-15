@@ -4,7 +4,7 @@ description: "Mulai dari keraguan terhadap postulat sejajar Euclid, hingga pembe
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "Fisika"]
+categories: ["mathematics", "physics"]
 tags: ["Geometri", "Relativitas", "Sejarah Sains", "Matematika"]
 ---
 

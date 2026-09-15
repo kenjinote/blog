@@ -12,7 +12,7 @@ date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "calendario", "plantilla", "días festivos"]
 draft: false
 image: "img.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Distribuimos de forma gratuita una útil plantilla de calendario en Excel que refleja automáticamente los días festivos de Japón de ese mes con tan solo introducir el año y el mes. Descárgala y utilízala para gestionar tus horarios o mejorar la eficiencia de tu trabajo.'
 ---
 

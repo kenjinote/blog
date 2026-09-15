@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["Leather Products", "Hobbies"]
 draft: false
 image: "img.webp"
-categories: ["Lifestyle & Miscellaneous"]
+categories: ["lifestyle-miscellaneous"]
 description: 'For leather goods maintenance beginners, we introduce recommended care products that were actually great purchases, such as M.MOWBRAY Delicate Cream and Collonil Supreme Cream. These are care techniques to make your precious leather items last longer.'
 ---
 

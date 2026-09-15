@@ -5,7 +5,7 @@ date: 2022-10-01T02:00:59+09:00
 tags: ["Rust", "اختبار"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح للمبتدئين كيفية كتابة أكواد الاختبار في Rust وخطوات تنفيذ الاختبارات باستخدام أمر cargo test. نقدم شرحاً تفصيلياً مع أمثلة كود محددة لكيفية استخدام سمة (Attribute) #[test]، ونتائج المخرجات عند النجاح أو الفشل.'
 ---
 

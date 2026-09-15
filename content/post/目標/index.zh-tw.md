@@ -5,7 +5,7 @@ date: 2024-12-08T03:32:34+09:00
 tags: ["目標"]
 draft: false
 image: "img.webp"
-categories: ["IT 與科技"]
+categories: ["it-technology"]
 description: '這是一份整理了為了透過軟體開發創業，所設定的長期、短期目標與近期任務的事業計畫筆記。從資金籌措、免費與付費軟體的發布、達成年營業額100億日圓的願景，到市場調查與需求分析的具體步驟皆予以公開。'
 ---
 

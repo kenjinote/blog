@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industri", "Karier", "AI"]
+categories: ["industry", "career", "ai"]
 tags: ["Masalah 2026", "SIer", "AI Generatif", "Karier Developer"]
 description: 'Kebenaran tentang "Masalah Tahun 2026" di industri IT. Penjelasan mendalam mengenai polarisasi permintaan tenaga kerja yang berubah akibat kebangkitan AI generatif, serta strategi bagi engineer untuk bertahan hidup.'
 ---

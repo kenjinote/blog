@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["Programação", "Fontes"]
 draft: false
 image: "img.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Apresentamos fontes perfeitas para programação e codificação, como JetBrains Mono, HackGen, Ricty Diminished, Cica, Migu, etc. Vamos melhorar a visibilidade do editor e aumentar a eficiência do desenvolvimento.'
 ---
 

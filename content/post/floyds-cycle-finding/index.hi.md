@@ -3,9 +3,7 @@ title: "रॉबर्ट फ्लॉयड का साइकिल-फा�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "सूचियों (Lists) या ग्राफ में चक्र (Cycle) का पता लगाने के लिए एक प्रसिद्ध एल्गोरिदम, 'रॉबर्ट फ्लॉयड का साइकिल-फाइंडिंग एल्गोरिदम (कछुआ और खरगोश एल्गोरिदम)', आरेख, गणितीय सूत्रों और C++ तथा Rust कार्यान्वयन के साथ विस्तार से समझाया गया है।"
-categories:
-  - "Algorithms"
-  - "Computer Science"
+categories: ["algorithms", "computer-science"]
 tags:
   - "Algorithm"
   - "C++"

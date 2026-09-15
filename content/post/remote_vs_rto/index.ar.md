@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: 'نستكشف نقاش العمل عن بُعد والعودة إلى المكتب (RTO) في المؤسسات الهندسية من خلال عدسة نماذج الاتصال السوسيولوجية (منحنى ألين، قانون كونواي)، ومقاييس الإنتاجية (SPACE، DORA)، وبنية الشبكات (انعدام الثقة)، للبحث عن الحل الأمثل الحقيقي.'
 ---

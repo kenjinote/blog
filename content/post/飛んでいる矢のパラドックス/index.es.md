@@ -7,7 +7,7 @@ slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"
 math: true
 mermaid: true
-categories: ["Paradojas matemáticas", "Filosofía", "Física"]
+categories: ["mathematical-paradoxes", "philosophy", "physics"]
 tags: ["Paradoja", "Zenón", "Movimiento", "Infinito", "Cálculo"]
 ---
 

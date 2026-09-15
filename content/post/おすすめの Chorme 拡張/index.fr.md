@@ -5,7 +5,7 @@ date: 2023-03-19T02:54:30+09:00
 tags: ["Extensions Chrome", "Navigateur", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
-categories: ["IT / Technologie"]
+categories: ["it-technology"]
 description: 'Nous présentons des extensions recommandées qui améliorent considérablement l''efficacité de la navigation sur Google Chrome et Microsoft Edge, telles que les gestes de souris, le blocage des publicités, la traduction DeepL, et l''utilisation de la barre latérale ChatGPT.'
 ---
 

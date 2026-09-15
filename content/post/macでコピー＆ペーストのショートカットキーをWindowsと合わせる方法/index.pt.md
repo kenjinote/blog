@@ -5,7 +5,7 @@ date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "Tecla de Atalho", "Copiar e Colar"]
 draft: 
 image: "img.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Ideal para usuários que dividem o tempo entre o Mac e o Windows. Mostramos como alterar as teclas modificadoras nas Configurações do Sistema para igualar os atalhos de teclado de copiar e colar aos do estilo Windows (baseados na tecla Ctrl).'
 ---
 

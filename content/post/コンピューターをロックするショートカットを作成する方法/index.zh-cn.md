@@ -5,7 +5,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "锁定计算机", "快捷方式"]
 draft: false
 image: "img.webp"
-categories: ["PC/数码"]
+categories: ["pc-gadgets"]
 description: '图文并茂地通俗讲解如何创建能一键锁定Windows电脑的快捷方式。同时介绍作为离开座位时的安全措施，使用Win+L键瞬间锁定电脑的实用方法。'
 ---
 

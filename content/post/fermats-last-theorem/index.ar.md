@@ -4,9 +4,7 @@ description: "أشهر مسألة غير محلولة في تاريخ الريا
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
-  - "تاريخ"
+categories: ["mathematics", "history"]
 tags:
   - "مبرهنة فيرما الأخيرة"
   - "أندرو وايلز"

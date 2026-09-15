@@ -4,10 +4,7 @@ description: Menyelami lebih dalam Hukum Zipf, hukum matematika luar biasa yang 
 slug: zipfs-law
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Matematika
-- Ilmu Data
-- Linguistik
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
 - Hukum Zipf
 - Hukum Pangkat

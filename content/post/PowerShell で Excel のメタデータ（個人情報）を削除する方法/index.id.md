@@ -5,7 +5,7 @@ date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Metadata", "Informasi Pribadi"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Menjelaskan cara menghapus metadata seperti pembuat yang terdapat dalam file Office menggunakan PowerShell. Kami memperkenalkan teknik otomatisasi yang berguna untuk mencegah kebocoran informasi saat berbagi ke luar perusahaan, dari memproses file tunggal hingga skrip penghapusan massal untuk file Excel dan Word di dalam folder.'
 ---
 

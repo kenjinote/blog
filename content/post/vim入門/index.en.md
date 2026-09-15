@@ -5,7 +5,7 @@ date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "text editor"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environment"]
+categories: ["tools-development-environment"]
 description: 'Explains the basic usage of Vim for beginners. Comprehensively covers the first steps, including the installation method in a Windows environment, startup and shutdown commands (such as save and force quit), and the difference between command mode and insert mode.'
 ---
 

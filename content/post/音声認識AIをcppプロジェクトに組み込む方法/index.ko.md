@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "Audio Processing"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "Speech Recognition", "C++"]
 description: 'C++와 whisper.cpp를 사용하여 고정밀 음성 인식 AI를 에지 디바이스나 네이티브 애플리케이션에 통합하기 위한 완전한 가이드입니다. 음성 신호 처리의 기초부터 실시간 추론의 최적화까지 망라합니다.'
 ---

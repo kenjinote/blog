@@ -6,9 +6,7 @@ date: '2026-09-10T05:00:00+09:00'
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय पैराडॉक्स'
-  - 'प्रायिकता सिद्धांत'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'पैराडॉक्स'
   - 'अपेक्षित मूल्य'

@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Mekanisme Authorization Code Grant Flow pada OAuth 2.0 divisualisasikan dan dijelaskan secara rinci melalui implementasi integrasi Slack App. Ini adalah panduan lengkap yang juga mencakup contoh kode konkret dalam Node.js dan praktik terbaik keamanan.'
 ---

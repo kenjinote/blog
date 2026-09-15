@@ -12,7 +12,7 @@ slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ['양자 컴퓨터', '물리학', '테크놀로지']
 image: 'quantum_basics_eyecatch_1788613712487.webp'
-categories: ['수학・암호・양자']
+categories: ["math-cryptography-quantum"]
 description: '기존 슈퍼컴퓨터의 한계를 뛰어넘을 가능성을 지닌 ''양자 컴퓨터''의 기초에 대해 설명합니다. 중첩, 양자 얽힘, 양자 게이트와 같은 양자 역학의 신비한 현상을 계산에 활용하는 메커니즘을 전문적이면서도 알기 쉽게 풀어냅니다.'
 ---
 

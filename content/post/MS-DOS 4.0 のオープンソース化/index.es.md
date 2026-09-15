@@ -12,7 +12,7 @@ date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "código abierto"]
 draft: false
 image: "img.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Noticia sobre la liberación como código abierto del código fuente del sistema operativo ''MS-DOS 4.0'', lanzado hace aproximadamente 40 años, ahora disponible en GitHub. Explicamos este documento histórico, cuya mayor parte está escrita en ensamblador 8086.'
 ---
 

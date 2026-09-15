@@ -5,7 +5,7 @@ date: 2023-01-14T20:24:00+09:00
 tags: ["ボタン", "GUI"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'GUIアプリケーションの基本である「ボタン」について、Windows標準のAPI（Win32 API）を用いた作成方法とクリック時のイベント処理（WM_COMMANDメッセージ）の実装方法をサンプルコード付きで解説します。'
 ---
 

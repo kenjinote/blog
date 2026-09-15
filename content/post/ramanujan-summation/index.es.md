@@ -4,9 +4,7 @@ description: "¿Qué pasa si sumamos infinitamente «1+2+3+4+...»? Normalmente 
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Física"
+categories: ["mathematics", "physics"]
 tags:
   - "Series infinitas"
   - "Continuación analítica"

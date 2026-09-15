@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Security", "AI", "Society"]
+categories: ["security", "ai", "society"]
 tags: ["Deepfake", "GAN", "C2PA", "Information Literacy"]
 description: 'Deepfakes cada vez mais sofisticados devido à evolução da IA. Explicamos detalhadamente os seus mecanismos de geração e métodos técnicos de deteção, incluindo análise de frequência, extração de sinais biométricos (rPPG) e certificações de proveniência de conteúdo como a C2PA, com uma profundidade técnica avassaladora.'
 ---

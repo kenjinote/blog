@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "Audio Processing"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "Speech Recognition", "C++"]
 description: 'Un guide complet pour intégrer une IA de reconnaissance vocale de haute précision dans les appareils périphériques et les applications natives en utilisant C++ et whisper.cpp. Il couvre tout, des bases du traitement des signaux audio à l''optimisation de l''inférence en temps réel.'
 ---

@@ -13,7 +13,7 @@ date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Desarrollo", "Historia Secreta"]
 draft: false
 image: "img.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'La historia detrás del nacimiento de la herramienta Low-Code "LogicPad", diseñada para "personas que no pueden escribir código pero tienen la lógica". Hablamos apasionadamente sobre los sentimientos personales del creador detrás del desarrollo y cómo afronta su propia carrera.'
 ---
 

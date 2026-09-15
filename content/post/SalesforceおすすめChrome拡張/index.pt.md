@@ -5,7 +5,7 @@ date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Extensão do Chrome"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Apresentamos as extensões recomendadas do Chrome que simplificam drasticamente o desenvolvimento e as operações do Salesforce. Selecionamos ferramentas essenciais para engenheiros, como DevTools que são úteis na busca por campos personalizados e na construção de SOQL, bem como extensões úteis na pesquisa de código.'
 ---
 

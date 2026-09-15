@@ -4,9 +4,7 @@ description: "밀레니엄 현상금 문제 중 하나인 '양-밀스 방정식�
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "물리학"
-  - "수학"
+categories: ["physics", "mathematics"]
 tags:
   - "양-밀스"
   - "질량 간극"

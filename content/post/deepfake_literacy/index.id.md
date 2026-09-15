@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Security", "AI", "Society"]
+categories: ["security", "ai", "society"]
 tags: ["Deepfake", "GAN", "C2PA", "Information Literacy"]
 description: 'Deepfake semakin canggih seiring dengan evolusi teknologi AI. Kami menjelaskan secara mendalam dari sisi teknis mengenai mekanisme pembuatannya, metode deteksi teknis menggunakan analisis frekuensi dan sinyal biologis (rPPG), serta pembuktian asal-usul konten termasuk C2PA.'
 ---

@@ -7,7 +7,7 @@ slug: "twin-paradox"
 image: "img/twin_paradox.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "物理学"]
+categories: ["mathematical-paradoxes", "physics"]
 tags: ["パラドックス", "相対性理論", "時間", "アインシュタイン", "宇宙"]
 ---
 

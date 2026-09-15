@@ -5,7 +5,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["Movie", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["Lifestyle & Misc"]
+categories: ["lifestyle-miscellaneous"]
 description: 'This is a TODO list of masterpiece movies and anime I want to watch in the future. I introduce them along with my watch-history log, from math-related movies like ''The Professor''s Beloved Equation'' and ''Good Will Hunting'' to popular anime like ''Summer Wars'' and ''Weathering with You''.'
 ---
 

@@ -5,7 +5,7 @@ date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "Código de exemplo"]
 draft: false
 image: "img.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Apresentamos uma série de códigos de exemplo práticos que usam apenas a biblioteca padrão do Python para baixar dados da URL de uma imagem da web, salvá-la em um arquivo temporário, exibi-la no navegador e, em seguida, excluí-la automaticamente.'
 ---
 

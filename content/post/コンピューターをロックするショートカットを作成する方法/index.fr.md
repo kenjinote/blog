@@ -5,7 +5,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Verrouiller l'ordinateur", "Raccourci"]
 draft: false
 image: "img.webp"
-categories: ["PC et Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Nous expliquons clairement avec des images comment créer un raccourci permettant de verrouiller votre PC Windows en un seul clic. Nous présentons également la méthode de verrouillage instantané à l''aide des touches Win+L, pratique pour la sécurité lorsque vous quittez votre bureau.'
 ---
 

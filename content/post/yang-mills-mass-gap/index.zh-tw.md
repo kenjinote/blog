@@ -4,9 +4,7 @@ description: "針對千禧年大獎難題之一的「楊-米爾斯方程式與�
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Physics"
-  - "Mathematics"
+categories: ["physics", "mathematics"]
 tags:
   - "Yang-Mills"
   - "Mass Gap"

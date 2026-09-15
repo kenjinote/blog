@@ -5,7 +5,7 @@ date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "موجه الأوامر", "PowerToys", "winget"]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نعرض في بيئة Windows خطوات سهلة لتثبيت وإلغاء تثبيت Microsoft PowerToys باستخدام أداة إدارة الحزم winget. يمكن تنفيذ ذلك فوراً عبر موجه الأوامر (Command Prompt).'
 ---
 

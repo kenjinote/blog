@@ -10,7 +10,7 @@ date: 2022-09-02T07:23:00+09:00
 tags: ["잡기"]
 draft: false
 image: "images/komeda.webp"
-categories: ["블로그 운영"]
+categories: ["blogging"]
 description: '정적 사이트 생성기 ''Hugo''를 사용하여 새롭게 개인 블로그를 개설했습니다. 기술적인 비망록이나 프로그래밍 코드, 소소한 일상 등 메모장 대신 가볍게 발신해 나갈 예정입니다.'
 ---
 

@@ -6,7 +6,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["AI・テクノロジー"]
+categories: ["ai-technology"]
 description: 'テキストベースでフローチャートやガントチャートなどの図表を描画できるJavaScriptライブラリ「Mermaid.js」の概要と、静的サイトジェネレーターHugoに導入・設定して利用可能にする具体的な手順についてわかりやすく解説します。'
 ---
 

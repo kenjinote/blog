@@ -5,7 +5,7 @@ date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
-categories: ["IT & Teknologi"]
+categories: ["it-technology"]
 description: 'Ulasan penggunaan selama satu minggu terhadap mouse trackball berukuran sedang buatan Elecom, ''Deft Pro (M-DPT1MRBK)''. Menjelaskan keunggulannya, seperti pengurangan beban pada pergelangan tangan dan kemampuan menentukan tugas ke beragam tombol, serta hambatannya seperti butuh dibersihkan dan penyesuaian rasa operasi di awal pemakaian.'
 ---
 

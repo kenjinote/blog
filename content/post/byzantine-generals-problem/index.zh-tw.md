@@ -3,7 +3,7 @@ title: "拜占庭將軍問題：如何在有叛徒的網路中達成共識？"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "關於分散式系統中的代表性課題「拜占庭將軍問題」，本文將透過具體範例與圖解，淺顯易懂地解說從其概念、數學證明到在區塊鏈上的應用。"
-categories: ["技術解說", "分散式系統"]
+categories: ["technical-explanation", "distributed-systems"]
 tags: ["拜占庭將軍問題", "區塊鏈", "共識機制", "演算法"]
 slug: "byzantine-generals-problem"
 ---

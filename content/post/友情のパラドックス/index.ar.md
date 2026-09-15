@@ -7,7 +7,7 @@ slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "نظرية الشبكات"]
+categories: ["mathematical-paradoxes", "network-theory"]
 tags: ["مفارقة", "نظرية المخططات", "وسائل التواصل الاجتماعي", "إحصاء"]
 ---
 

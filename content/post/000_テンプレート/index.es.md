@@ -6,7 +6,7 @@ slug: "000_Plantilla"
 date: 2022-01-01T00:00:00+09:00
 tags: ["etiqueta1", "etiqueta2"]
 draft: true
-categories: ["TI y tecnología"]
+categories: ["it-technology"]
 description: 'Presentamos una plantilla útil para la creación de artículos de blog. Cubre el formato básico de Markdown útil para crear artículos teniendo en cuenta el SEO, incluyendo la estructura de encabezados, listas, bloques de código, citas, etc. Úsala para escribir artículos de manera eficiente.'
 ---
 

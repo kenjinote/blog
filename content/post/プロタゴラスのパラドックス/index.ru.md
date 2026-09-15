@@ -7,7 +7,7 @@ slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Философия", "Логика"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["Парадокс", "Самореференция", "Право", "Протагор", "Логика"]
 ---
 

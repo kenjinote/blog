@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "Uma comparação aprofundada dos ponteiros do C++ e do modelo de propriedade e empréstimo do Rust. Dos ponteiros brutos e ponteiros inteligentes ao borrow checker, explicamos a essência da segurança de memória."
 ---

@@ -5,7 +5,7 @@ date: 2022-09-20T16:04:02+09:00
 tags: ["Invite de Commandes"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'Nous expliquons comment supprimer rapidement et en masse des dossiers de grande taille sous Windows. Vous pouvez accélérer considérablement les tâches de suppression, qui prennent du temps dans l''Explorateur, en utilisant les commandes DEL et RMDIR dans l''invite de commandes.'
 ---
 ## Suppression Rapide par Lots de Gros Dossiers

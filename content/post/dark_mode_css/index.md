@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: 'ブログやWebアプリケーションにおいてダークモードを実装するための高度なCSS設計、FOUC対策、アクセシビリティ（WCAG 2.1 AAA）に配慮した色空間（OKLCH）の活用方法について詳細に解説します。'
 ---

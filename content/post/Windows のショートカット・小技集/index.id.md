@@ -5,7 +5,7 @@ date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Trik", "Pintasan"]
 draft: false
 image: "img.webp"
-categories: ["PC・Gadget"]
+categories: ["pc-gadgets"]
 description: 'Memperkenalkan pintasan keyboard dan trik pilihan yang berguna untuk meningkatkan efisiensi kerja di Windows 11 dan Windows 10. Kumpulan teknik penting untuk pemula hingga mahir, yang bermanfaat sehari-hari seperti manajemen jendela, tampilan desktop, input suara, dan tangkapan layar.'
 ---
 Berikut adalah kumpulan trik kecil yang biasa digunakan di Windows. Saya akan sangat senang jika pengguna baru Windows membacanya.

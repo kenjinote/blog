@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["برمجة", "خطوط"]
 draft: false
 image: "img.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نقدم لكم أفضل الخطوط المجانية للبرمجة وكتابة الأكواد مثل JetBrains Mono و HackGen و Ricty Diminished و Cica و Migu. قم بزيادة كفاءة التطوير من خلال تحسين وضوح محرر النصوص.'
 ---
 

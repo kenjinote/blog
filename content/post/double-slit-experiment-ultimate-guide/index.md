@@ -3,7 +3,7 @@ title: '【完全網羅】量子力学の最大の謎「二重スリット実験
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["物理学", "量子力学", "二重スリット実験", "シュレーディンガーの方程式"]
-categories: ["物理・科学"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

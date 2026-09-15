@@ -5,7 +5,7 @@ date: 2023-04-02T14:44:17+09:00
 tags: ["照片素材", "博客", "Unsplash"]
 draft: false
 image: "img_1.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '为您介绍最适合博客文章的免费图片素材网站“Unsplash”。该服务免费、可商用、可加工，且无需标明出处或取得使用许可，是一个非常方便、高质量的图片平台。'
 ---
 ## 关于“Unsplash”

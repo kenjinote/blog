@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Analytics"]
+categories: ["blogging", "seo", "analytics"]
 tags: ["Google Search Console", "Python", "SEO", "BigQuery"]
 description: '解說整合 Google Search Console 與 GA4 的數據，並運用 Python 和 BigQuery 戰略性地重新撰寫技術文章的方法。網羅 TF-IDF 及 CTR 分析等數據驅動的 SEO 策略。'
 ---

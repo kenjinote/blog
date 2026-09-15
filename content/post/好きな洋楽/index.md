@@ -5,7 +5,7 @@ date: 2024-01-05T00:14:22+09:00
 tags: ["洋楽", "音楽"]
 draft: false
 image: "img.webp"
-categories: ["ライフスタイル・雑記"]
+categories: ["lifestyle-miscellaneous"]
 description: 'The BeatlesやColdplay、Ed Sheeranなど、時代を超えて愛されるおすすめの洋楽名曲をご紹介します。心に響くバラードからテンションの上がるポップスまで、絶対に聴いておきたい定番ヒットソングをまとめました。'
 ---
 

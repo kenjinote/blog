@@ -4,7 +4,7 @@ description: "There are differences in 'size' among infinities. We explain in de
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Foundations of Mathematics", "Set Theory"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Diagonal Argument", "Infinity", "Mathematics", "Proof"]
 ---
 

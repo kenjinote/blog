@@ -5,7 +5,7 @@ date: "2026-09-12T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "C++"]
+categories: ["programming", "cpp"]
 tags: ["C++", "Metaprogramming", "constexpr", "Concepts"]
 description: 'Una explicación exhaustiva de la historia de la metaprogramación de plantillas en C++, desde SFINAE y constexpr hasta los recientes Concepts de C++20.'
 ---

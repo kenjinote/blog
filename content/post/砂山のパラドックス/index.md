@@ -7,7 +7,7 @@ slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "哲学", "論理学"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["パラドックス", "曖昧性", "ソリテス", "ファジィ論理"]
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "簡報"]
 draft: false
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '解說能透過HTML與Markdown直覺地製作簡報的工具「reveal.js」的安裝與基本用法。除了支援動畫與輸出PDF外，我們也將介紹其與Git等版本控制系統極度契合的活用方法。'
 ---
 

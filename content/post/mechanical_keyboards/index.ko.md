@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: '엔지니어의 생산성을 극적으로 향상시키는 하이엔드 키보드를 철저히 해설. 물리학에 기반한 스위치의 해설부터 펌웨어의 구조까지 깊이 파고들어, 궁극의 5대를 소개합니다.'
 ---

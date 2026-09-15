@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: 'A falta de VRAM (memória da GPU) é a maior barreira no treinamento e inferência de LLM. Neste artigo, explicamos detalhadamente técnicas de resolução como CPU offloading, quantização de cache KV e gradient checkpointing usando fórmulas matemáticas e diagramas de arquitetura.'
 ---

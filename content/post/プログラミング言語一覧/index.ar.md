@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["لغات البرمجة"]
 draft: true
 image: "img.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'قمنا بإعداد قائمة بلغات البرمجة المختلفة بدءًا من C و Python و Java و JavaScript إلى Rust و Go و OCaml و Clojure. تحقق من النظرة العامة والميزات لكل لغة لتكون مرجعًا في التطوير والتعلم.'
 ---
 

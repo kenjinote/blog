@@ -5,7 +5,7 @@ date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["إدارة المدونة"]
+categories: ["blogging"]
 description: 'نشرح كيفية نشر الرسائل عبر Slack Web API باستخدام رموز OAuth المميزة (Tokens) لتطبيقات Slack. نقدم خطوات إعداد النطاقات (Scopes) والحصول على رموز الوصول (Access Tokens)، وحتى أمثلة على الكود الملموس بلغة C++ باستخدام WinHTTP.'
 ---
 

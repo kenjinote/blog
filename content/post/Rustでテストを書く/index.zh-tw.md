@@ -5,7 +5,7 @@ date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","測試"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '為初學者說明在 Rust 中撰寫測試程式碼的方法，以及使用 cargo test 指令執行測試的步驟。搭配具體程式碼範例，詳細介紹 #[test] 屬性的用法，以及成功或失敗時的輸出結果。'
 ---
 

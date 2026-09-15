@@ -5,7 +5,7 @@ date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI-Bibliothek", "Japanisch"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Wir erklären die Implementierungsmethode zur korrekten Darstellung von Japanisch in der leichtgewichtigen GUI-Bibliothek „egui“ für Rust. Wir stellen konkrete Codebeispiele vor, um die Windows-Schriftart Meiryo zu laden und auf Anwendungen anzuwenden.'
 ---
 

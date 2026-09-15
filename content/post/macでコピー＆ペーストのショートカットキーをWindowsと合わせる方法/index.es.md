@@ -8,7 +8,7 @@ date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "atajos de teclado", "copiar y pegar"]
 draft: 
 image: "img.webp"
-categories: ["PC y Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Mostramos los pasos para cambiar las teclas modificadoras desde las preferencias del sistema, lo cual es muy conveniente si usas Mac y Windows al mismo tiempo. Así puedes hacer que los atajos para copiar y pegar funcionen de forma similar a Windows (basados en la tecla Ctrl).'
 ---
 

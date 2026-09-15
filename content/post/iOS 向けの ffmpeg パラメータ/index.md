@@ -5,7 +5,7 @@ date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'iPhoneやiPadなどのiOSデバイスで動画をスムーズに再生させるための最適なffmpegコマンドとパラメータ設定を紹介します。各オプションの意味や設定のポイントも詳しく解説しています。'
 ---
 

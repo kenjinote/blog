@@ -5,7 +5,7 @@ date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "Terminologia"]
 draft: false
 image: "img.webp"
-categories: ["TI / Tecnologia"]
+categories: ["it-technology"]
 description: 'Explicamos de forma simples o significado e a origem de ''i18n (Internacionalização)'', muito comum no desenvolvimento de softwares. Listamos as principais áreas a considerar ao expandir um app ou sistema globalmente, como codificação de caracteres, formato de datas/horas e de moedas.'
 ---
 

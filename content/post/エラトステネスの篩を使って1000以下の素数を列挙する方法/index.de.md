@@ -6,7 +6,7 @@ tags: ["Sieb des Eratosthenes", "Primzahlen", "Mathematik", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathematik, Kryptografie, Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir erklären den Mechanismus und die spezifischen Schritte des „Siebs des Eratosthenes“, eines Algorithmus zum effizienten Finden von Primzahlen, auf leicht verständliche Weise. Wir stellen auch ein Implementierungsbeispiel vor, das Primzahlen bis zu 1000 mit der Sprache Rust auflistet.'
 ---
 

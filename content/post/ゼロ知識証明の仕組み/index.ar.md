@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Web3", "Security"]
+categories: ["cryptography", "web3", "security"]
 tags: ["ZKP", "zk-SNARKs", "zk-STARKs", "Web3", "Blockchain"]
 description: 'شرح مفصل للأسس الرياضية لإثبات المعرفة الصفرية (ZKP)، وآليات zk-SNARKs و zk-STARKs، بالإضافة إلى تطبيقاتها الحديثة في Web3 والأمن مثل ZK-Rollups والهويات المحافظة على الخصوصية.'
 ---

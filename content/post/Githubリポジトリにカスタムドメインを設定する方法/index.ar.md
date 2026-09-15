@@ -5,7 +5,7 @@ date: 2022-09-13T01:16:40+09:00
 tags: ["Github","نطاق"]
 draft: false
 image: "images/octocat.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نشرح خطوات إعداد نطاق مخصص لمستودع GitHub Pages. نقدم هذه المرة خطوات محددة من إضافة وتعديل سجل DNS A من لوحة تحكم ''Onamae.com'' وحتى ربطه بـ GitHub.'
 ---
 لإعداد نطاق مخصص لمستودع Github، تحتاج إلى تغيير إعدادات DNS للنطاق.

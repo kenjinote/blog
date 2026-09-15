@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: "While Python is the mainstream for recent AI development, the power of C++ is indispensable in edge devices and environments requiring high performance. In this article, drawing heavy inspiration from the philosophy of GGML, we provide a thorough, 10,000-word scale explanation of how to build a proprietary AI inference engine from scratch exclusively in C++, with support for CUDA and Metal backends."
 ---

@@ -5,7 +5,7 @@ date: '2026-09-12T23:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ['Programming', 'Windows', 'Linux']
+categories: ["programming", "windows", "linux"]
 tags: ['WSL2', 'Docker', 'VSCode', 'Zsh', 'Development Environment']
 description: 'A complete setup guide for WSL2 that dramatically improves the development experience on Windows. From detailed explanations of the architecture to resource tuning, VSCode Remote integration, Docker optimization, and SSH agent sharing, we cover all the knowledge you need for professional development.'
 ---

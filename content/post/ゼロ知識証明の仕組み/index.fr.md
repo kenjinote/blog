@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Web3", "Security"]
+categories: ["cryptography", "web3", "security"]
 tags: ["ZKP", "zk-SNARKs", "zk-STARKs", "Web3", "Blockchain"]
 description: 'Une explication détaillée allant des fondements mathématiques des preuves à divulgation nulle de connaissance (ZKP), aux mécanismes des zk-SNARKs et zk-STARKs, jusqu''aux applications récentes dans le Web3 et la sécurité telles que les ZK-Rollups et l''identité préservant la confidentialité.'
 ---

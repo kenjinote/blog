@@ -7,7 +7,7 @@ slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "哲学", "物理学"]
+categories: ["mathematical-paradoxes", "philosophy", "physics"]
 tags: ["パラドックス", "ゼノン", "運動", "無限", "微積分"]
 ---
 

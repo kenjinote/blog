@@ -5,7 +5,7 @@ date: "2026-09-12T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "System Administration"]
+categories: ["programming", "system-administration"]
 tags: ["PowerShell", "C++", "Windows", "Automation"]
 description: 'Dieser Artikel erläutert praktische Automatisierungsmethoden, P/Invoke und Speicherverwaltung, um PowerShell und C++ zu integrieren und die Windows-Systemverwaltung drastisch zu rationalisieren.'
 ---

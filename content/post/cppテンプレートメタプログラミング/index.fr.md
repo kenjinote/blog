@@ -5,7 +5,7 @@ date: "2026-09-12T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "C++"]
+categories: ["programming", "cpp"]
 tags: ["C++", "Metaprogramming", "constexpr", "Concepts"]
 description: "Nous expliquons de manière exhaustive l'histoire de la métaprogrammation par modèles en C++, de SFINAE à constexpr, jusqu'aux derniers Concepts de C++20."
 ---

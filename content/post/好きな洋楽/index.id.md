@@ -5,7 +5,7 @@ date: 2024-01-05T00:14:22+09:00
 tags: ["Musik Barat", "Musik"]
 draft: false
 image: "img.webp"
-categories: ["Gaya Hidup & Catatan Lainnya"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Kami akan memperkenalkan rekomendasi lagu Barat populer yang dicintai melampaui berbagai zaman, seperti lagu dari The Beatles, Coldplay, dan Ed Sheeran. Kami merangkum lagu-hit klasik yang wajib Anda dengarkan, mulai dari balada yang menyentuh hati hingga lagu pop yang membangkitkan semangat.'
 ---
 

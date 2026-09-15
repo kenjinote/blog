@@ -13,7 +13,7 @@ date: 2026-09-05T02:09:08+09:00
 tags: ["Matemáticas", "Criptografía", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
-categories: ["Matemáticas, Criptografía y Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicamos cómo funciona la ''Criba general del cuerpo de números (GNFS)'', la matemática más poderosa de la humanidad que rompe el cifrado RSA que protege las comunicaciones de Internet. Omitiendo la jerga técnica, nos acercamos al mecanismo de este algoritmo mágico que se puede entender solo con conocimientos de matemáticas de secundaria.'
 ---
 

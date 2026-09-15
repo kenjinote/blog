@@ -4,9 +4,7 @@ description: "仅通过将针投到地板上就能求出圆周率π？本文详�
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "数学"
-  - "概率论"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "圆周率"
   - "模拟"

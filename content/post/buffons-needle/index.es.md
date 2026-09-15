@@ -4,9 +4,7 @@ description: "¿Se puede encontrar el valor de pi simplemente dejando caer una a
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Teoría de probabilidades"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "Pi"
   - "Simulación"

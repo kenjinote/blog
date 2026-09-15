@@ -5,7 +5,7 @@ date: 2025-04-17T10:33:02+09:00
 tags: ["原始碼", "行數"]
 draft: false
 image: "img_1.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '解說從太空梭的 42 萬行到 Google 的 20 億行，隨著時代急遽增加的原始碼行數。介紹程式碼增加的優點與錯誤發生風險的關係，以及 Linux 核心的案例。'
 ---
 

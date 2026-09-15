@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: 'वर्डप्रेस जैसे डायनामिक CMS से गो (Go) भाषा-आधारित अति-तीव्र स्टेटिक साइट जेनरेटर, ह्यूगो (Hugo) में माइग्रेशन प्रक्रिया की विस्तृत व्याख्या। आर्किटेक्चर के अंतर, टेम्पलेट संरचना, गणितीय प्रदर्शन विश्लेषण से लेकर वास्तविक माइग्रेशन कमांड तक।'
 ---

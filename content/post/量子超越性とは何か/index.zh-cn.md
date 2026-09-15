@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: '从量子超越性的定义，到Google的Sycamore处理器在2019年的实证实验、IBM的反驳与应对方法，再到迈向量子纠错与FTQC（容错量子计算）的最新动态，本文将为您进行详细解说。'
 ---

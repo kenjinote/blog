@@ -6,9 +6,7 @@ date: '2026-09-10T07:00:00+09:00'
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'مفارقة رياضية'
-  - 'إحصاء'
+categories: ["mathematical-paradoxes", "statistics"]
 tags:
   - 'مفارقة'
   - 'إحصائيات'

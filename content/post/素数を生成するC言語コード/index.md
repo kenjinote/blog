@@ -5,7 +5,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C言語", "素数", "アルゴリズム", "数学"]
 draft: false
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '指定された範囲（1からnまで）の素数を判定し、生成して列挙するシンプルなC言語のサンプルコードを紹介します。isPrime関数を用いた効率的なアルゴリズムで、初心者でもわかりやすいプログラミング実装例と解説を掲載しています。'
 ---
 

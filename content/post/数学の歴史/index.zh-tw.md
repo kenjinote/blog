@@ -5,7 +5,7 @@ date: 2023-07-22T15:25:10+09:00
 tags: ["數學", "歷史"]
 draft: false
 image: "img.webp"
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '結合古代事件與年表來回顧數學的歷史。詳細解說古希臘的三大尺規作圖問題（化圓為方、三等分角、倍立方）、阿基米德螺線、帕普斯定理等，支撐數學發展的重要發現與歷史軌跡。'
 ---
 

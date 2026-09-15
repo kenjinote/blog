@@ -6,7 +6,7 @@ tags: ["Google One", "Gemini", "cancelamento", "solução"]
 draft: false
 image: "img.webp"
 description: 'Explicamos o passo a passo adequado para cancelar a associação ao Google One de 2.900 ienes/mês e evitar renovações automáticas após o fim do teste gratuito de 1 mês do Gemini. Se estiver com problemas para cancelar, consulte as instruções deste artigo.'
-categories: ["Programação"]
+categories: ["programming"]
 ---
 
 # [Aviso] Serei cobrado quando o teste gratuito do Gemini terminar? Resumo de como cancelar

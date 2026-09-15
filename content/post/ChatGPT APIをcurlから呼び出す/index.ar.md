@@ -5,7 +5,7 @@ date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "أمر"]
 draft: false
 image: "img.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح كيفية استدعاء ChatGPT API الخاص بـ OpenAI من خلال أمر curl باستخدام موجه أوامر Windows (cmd). سنعرض بشكل مبسط الأوامر المطلوبة وكيفية إعداد المعلمات.'
 ---
 # استدعاء واجهة برمجة تطبيقات ChatGPT من curl

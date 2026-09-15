@@ -6,9 +6,7 @@ date: '2026-09-10T03:00:00+09:00'
 image: 'img/prisoners_dilemma.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय विरोधाभास (Mathematical Paradox)'
-  - 'गेम थ्योरी (Game Theory)'
+categories: ["mathematical-paradoxes", "game-theory"]
 tags:
   - 'विरोधाभास (Paradox)'
   - 'कैदी की दुविधा (Prisoner''s Dilemma)'

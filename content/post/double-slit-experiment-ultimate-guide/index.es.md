@@ -3,7 +3,7 @@ title: '【Guía Completa】El mayor misterio de la mecánica cuántica: el "exp
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Física", "Mecánica cuántica", "Experimento de la doble rendija", "Ecuación de Schrödinger"]
-categories: ["Física y Ciencia"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

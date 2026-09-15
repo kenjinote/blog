@@ -4,7 +4,7 @@ description: "Une explication approfondie du « Theorema Egregium » découvert 
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Sciences"]
+categories: ["mathematics", "science"]
 tags: ["Géométrie", "Gauss", "Théorème de la pizza", "Theorema Egregium", "Géométrie différentielle"]
 ---
 

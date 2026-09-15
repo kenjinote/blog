@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: 'Le manque de VRAM (mémoire GPU) est le plus grand obstacle à l''apprentissage et à l''inférence des LLM. Cet article explique en détail les techniques pour le résoudre, telles que le déchargement CPU, la quantification du cache KV et les points de contrôle de gradient, à l''aide de formules mathématiques et de diagrammes d''architecture.'
 ---

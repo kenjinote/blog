@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["Mathematical Paradox", "Calculus"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["Paradox", "Geometry", "Infinity", "Torricelli's Trumpet"]
 ---
 

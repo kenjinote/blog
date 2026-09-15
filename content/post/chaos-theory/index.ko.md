@@ -4,9 +4,7 @@ description: 혼돈 이론과 나비 효과(초기 조건에 민감한 비선형
 slug: chaos-theory
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- 과학
-- 수학
+categories: ["science", "mathematics"]
 tags:
 - 카오스 이론
 - 물리학

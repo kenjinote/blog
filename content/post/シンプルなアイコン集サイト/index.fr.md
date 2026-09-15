@@ -5,7 +5,7 @@ date: 2022-09-07T16:46:56+09:00
 tags: ["Icônes", "Design"]
 draft: false
 image: "img_2.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Nous avons sélectionné et présentons des sites de ressources d''icônes gratuites, simples et faciles à utiliser, utiles pour la conception de sites Web ou la création de documents. Rempli de sites pratiques, y compris pour un usage commercial, tels que Google Material Icons et GitHub Octicons.'
 ---
 

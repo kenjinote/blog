@@ -5,7 +5,7 @@ date: 2025-04-18T00:58:11+09:00
 tags: ["FizzBuzz", "Python", "Algorithmus"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Wir erklären leicht verständlich den Überblick über das „FizzBuzz-Problem“, das oft in Vorstellungsgesprächen für Programmierer vorkommt, und zeigen konkrete Codebeispiele (bedingte Verzweigungen) mit Python. Ein Muss für Anfänger und alle, die die Grundlagen wiederholen möchten.'
 ---
 

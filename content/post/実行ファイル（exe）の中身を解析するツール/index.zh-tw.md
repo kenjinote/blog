@@ -5,7 +5,7 @@ date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "執行檔", "解析"]
 draft: false
 image: "img_1.webp"
-categories: ["PC・小工具"]
+categories: ["pc-gadgets"]
 description: '介紹可解析與解壓縮Windows執行檔（exe）內容的推薦工具。淺顯易懂地解說如何使用7-Zip、Resource Hacker等工具，來確認PE格式的結構、提取資源以及進行二進位編輯的方法。'
 ---
 

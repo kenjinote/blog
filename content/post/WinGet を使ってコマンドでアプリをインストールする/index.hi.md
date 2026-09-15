@@ -5,7 +5,7 @@ date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
-categories: ["उपकरण और विकास पर्यावरण"]
+categories: ["tools-development-environment"]
 description: 'Windows 11 के पैकेज मैनेजर ''WinGet'' का उपयोग करके कमांड लाइन से ऐप्स इंस्टॉल करने का तरीका समझाया गया है। Chrome, VSCode, Slack जैसे प्रमुख सॉफ़्टवेयर को कमांड लाइन से जल्दी से इंस्टॉल और प्रबंधित करने की प्रक्रिया प्रस्तुत की गई है।'
 ---
 ## पूर्वापेक्षाएँ

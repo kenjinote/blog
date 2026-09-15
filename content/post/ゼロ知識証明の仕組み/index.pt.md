@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Web3", "Security"]
+categories: ["cryptography", "web3", "security"]
 tags: ["ZKP", "zk-SNARKs", "zk-STARKs", "Web3", "Blockchain"]
 description: 'Uma explicação detalhada desde os fundamentos matemáticos das Provas de Conhecimento Zero (ZKP), o funcionamento de zk-SNARKs e zk-STARKs, até as aplicações mais recentes em Web3 e segurança, como ZK-Rollups e identidades de preservação de privacidade.'
 ---

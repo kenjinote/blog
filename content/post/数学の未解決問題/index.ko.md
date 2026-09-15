@@ -13,7 +13,7 @@ tags: ["수학","미해결 문제"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["수학・암호・양자"]
+categories: ["math-cryptography-quantum"]
 description: '문제 자체는 심플한데 아직 증명되지 않은, 매혹적인 수학의 미해결 문제를 알기 쉽게 해설합니다. 완전수는 무수히 많은가? 골드바흐의 추측이나 난제 리만 가설 등 수학자들을 계속해서 괴롭히는 신비로운 문제들에 다가갑니다.'
 ---
 

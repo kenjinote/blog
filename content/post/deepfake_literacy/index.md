@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Security", "AI", "Society"]
+categories: ["security", "ai", "society"]
 tags: ["Deepfake", "GAN", "C2PA", "Information Literacy"]
 description: 'AI技術の進化に伴い高度化するディープフェイク。その生成の仕組みと、周波数解析や生体信号（rPPG）を用いた技術的な検知手法、そしてC2PAをはじめとするコンテンツ来歴証明について、技術的側面から圧倒的な深さで解説します。'
 ---

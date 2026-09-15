@@ -5,7 +5,7 @@ date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
-categories: ["الأدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نشرح ببساطة كيفية إنشاء ملف .gitignore تلقائيًا يتناسب مع بيئات التطوير مثل Visual Studio بالاستفادة من أمر dotnet (dotnet new gitignore) المضمن في .NET SDK.'
 ---
 يعد أمر dotnet.exe مفيدًا لأنه يسمح لك حتى بإنشاء برامج بسيطة، لذلك من الملائم أن يكون جاهزًا للاستخدام.

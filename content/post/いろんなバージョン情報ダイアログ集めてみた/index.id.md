@@ -5,7 +5,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["Informasi versi", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadget"]
+categories: ["pc-gadgets"]
 description: 'Memperkenalkan desain UI dari layar ''dialog informasi versi'' untuk berbagai perangkat lunak dan alat PC yang digunakan sehari-hari dalam sebuah daftar, seperti Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge, dan LINE.'
 ---
 

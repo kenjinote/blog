@@ -6,7 +6,7 @@ tags: ["Quantencomputer", "GNFS", "Shor-Algorithmus", "Kryptanalyse", "Mathemati
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["Mathematik, Kryptographie, Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Das Faktorisierungsproblem, das die Sicherheit der RSA-Verschlüsselung untermauert. Wir erklären detailliert mit mathematischen Formeln und Konzeptdiagrammen, vom mathematischen Mechanismus des stärksten klassischen Algorithmus, dem „Allgemeinen Zahlkörpersieb (GNFS)“, bis hin dazu, warum „Shors Algorithmus“ durch Quantencomputer dieses Problem lösen kann.'
 ---
 

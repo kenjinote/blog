@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: 'Perbandingan dan penjelasan mendalam tentang dua arsitektur komputer kuantum, yaitu Quantum Annealing dan Model Quantum Gate, mulai dari model matematis dan latar belakang fisik seperti Model Ising, perumusan QUBO, transformasi uniter, dan koreksi kesalahan, hingga contoh penggunaan spesifik.'
 ---

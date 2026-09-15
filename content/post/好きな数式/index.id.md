@@ -6,7 +6,7 @@ tags: ["Matematika"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matematika・Kriptografi・Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Kami akan memperkenalkan rumus-rumus menarik di mana Anda dapat merasakan kedalaman dan keindahan matematika, seperti Teorema Wilson, Rumus Euler, Teorema Terakhir Fermat, dan Masalah Basel. Silakan lihat berbagai rumus indah dan mengharukan yang tampak sederhana namun mampu mengekspresikan kebenaran dunia.'
 ---
 ## Teorema Wilson

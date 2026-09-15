@@ -5,7 +5,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restore", "undo"]
 draft: false
 image: "img.webp"
-categories: ["Tools/Development Environment"]
+categories: ["tools-development-environment"]
 description: 'We explain how to undo a reset and restore the original commit state when you accidentally execute ''git reset'' in Git. We clearly introduce the procedure to check the commit ID using ''git reflog'' and correctly revert the state.'
 ---
 # How to undo git reset

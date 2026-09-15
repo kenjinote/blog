@@ -5,7 +5,7 @@ date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'IntelliJ IDEAでブログ執筆などの際に便利な、現在の日付・時刻を自動挿入する「Live Template」の設定方法をステップバイステップで詳しく紹介します。毎回の入力手間を省きましょう。'
 ---
 # はじめに

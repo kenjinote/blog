@@ -3,7 +3,7 @@ title: '【완전 망라】 양자역학 최대의 수수께끼 ''이중 슬릿 
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["물리학", "양자역학", "이중 슬릿 실험", "슈뢰딩거 방정식"]
-categories: ["물리·과학"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

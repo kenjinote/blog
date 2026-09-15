@@ -6,9 +6,7 @@ date: '2026-09-10T03:00:00+09:00'
 image: 'img/prisoners_dilemma.jpg'
 math: true
 mermaid: true
-categories:
-  - '수학 역설'
-  - '게임 이론'
+categories: ["mathematical-paradoxes", "game-theory"]
 tags:
   - '역설'
   - '죄수의 딜레마'

@@ -5,7 +5,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Desligar", "Atalho"]
 draft: false
 image: "img.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos como criar um atalho conveniente que permite desligar o Windows com um clique a partir da área de trabalho. Apresentamos detalhadamente com imagens o procedimento de configuração usando o comando ''shutdown.exe'' e como mudar para um ícone fácil de entender.'
 ---
 

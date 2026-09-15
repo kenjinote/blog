@@ -4,7 +4,7 @@ slug: "Akiko Yosanoについて"
 date: 2024-07-25T13:08:36+09:00
 tags: ["Akiko Yosano"]
 draft: false
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'We explain the life and masterpieces of Akiko Yosano, a poet active from the Meiji to Showa eras. We provide an easy-to-understand introduction to her achievements, including her debut poetry collection ''Midaregami'', which passionately sang of women''s romantic feelings, and the pacifist poem ''Thou Shalt Not Die'', which criticized the Russo-Japanese War.'
 ---
 

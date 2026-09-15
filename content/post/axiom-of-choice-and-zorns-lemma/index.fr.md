@@ -4,7 +4,7 @@ description: "Un approfondissement de l'axiome du choix et du lemme de Zorn, de 
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Théorie des ensembles"]
+categories: ["mathematics", "set-theory"]
 tags: ["Axiome du choix", "Lemme de Zorn", "Système axiomatique ZFC", "Fondements des mathématiques", "Mermaid", "KaTeX"]
 ---
 

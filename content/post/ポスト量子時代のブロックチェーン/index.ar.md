@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: 'وصول "يوم Q" (Q-Day)، حيث تهدد القوة الحسابية الهائلة لأجهزة الكمبيوتر الكمية أساس البلوكتشين. من انهيار ECDSA بسبب خوارزمية شور، إلى استراتيجية الانتقال إلى التشفير المقاوم للكم (PQC)، نشرح مستقبل العملات المشفرة تقنيًا بتفصيل شامل.'
 ---

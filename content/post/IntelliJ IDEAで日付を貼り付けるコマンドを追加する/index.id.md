@@ -5,7 +5,7 @@ date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
-categories: ["IT & Teknologi"]
+categories: ["it-technology"]
 description: 'Memperkenalkan secara rinci langkah demi langkah pengaturan ''Live Template'' yang berguna untuk secara otomatis menyisipkan tanggal dan waktu saat ini ketika menulis blog di IntelliJ IDEA. Mari hilangkan repotnya mengetik setiap saat.'
 ---
 # Pendahuluan

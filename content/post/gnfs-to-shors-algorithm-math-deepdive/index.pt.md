@@ -6,7 +6,7 @@ tags: ["Computador Quântico", "GNFS", "Algoritmo de Shor", "Criptoanálise", "M
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'O problema da fatoração de inteiros, que garante a segurança da criptografia RSA. Explicamos detalhadamente, usando equações e diagramas conceituais, desde o mecanismo matemático do mais forte algoritmo clássico, o ''General Number Field Sieve (GNFS)'', até o motivo pelo qual o ''Algoritmo de Shor'' num computador quântico consegue derrotá-lo.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Traveling Salesperson Problem", "Algorithm", "Mathematics"]
 draft: false
 image: "img.webp"
-categories: ["Mathematics/Cryptography/Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Explains how to solve the traveling salesperson problem (TSP) using the computer algebra system Mathematica. Introduces the procedure to create a distance matrix between cities using the SparseArray function and find the shortest route with FindShortestTour.'
 ---
 # Solving the Traveling Salesperson Problem with Mathematica

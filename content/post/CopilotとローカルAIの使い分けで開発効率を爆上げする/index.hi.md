@@ -5,7 +5,7 @@ date: "2026-09-11T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["प्रोग्रामिंग", "एआई", "उत्पादकता"]
+categories: ["programming", "ai", "productivity"]
 tags: ["गिटहब को-पायलट", "लोकल एआई", "वर्कफ़्लो", "डेवलपर उत्पादकता"]
 ---
 

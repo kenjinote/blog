@@ -5,7 +5,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["معلومات الإصدار", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
-categories: ["الكمبيوتر والأدوات الذكية"]
+categories: ["pc-gadgets"]
 description: 'نعرض قائمة بتصميمات واجهة المستخدم لشاشات "حوار معلومات الإصدار" لمجموعة متنوعة من برامج وأدوات الكمبيوتر المستخدمة يومياً، مثل Windows 11 و IntelliJ IDEA و VS Code و Chrome و Edge و LINE.'
 ---
 

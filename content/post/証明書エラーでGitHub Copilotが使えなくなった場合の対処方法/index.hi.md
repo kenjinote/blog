@@ -5,7 +5,7 @@ date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
-categories: ["उपकरण और विकास परिवेश"]
+categories: ["tools-development-environment"]
 description: 'हम समझाएंगे कि जब ''unable to verify the first certificate'' जैसी प्रमाणपत्र त्रुटि के कारण GitHub Copilot अनुपयोगी हो जाता है तो इसे कैसे हल करें। ESET सेटिंग्स को बदलकर विशिष्ट प्रक्रियाएं प्रस्तुत की जाती हैं।'
 ---
 

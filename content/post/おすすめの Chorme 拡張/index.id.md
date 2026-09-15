@@ -5,7 +5,7 @@ date: 2023-03-19T02:54:30+09:00
 tags: ["Ekstensi Chrome", "Browser", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
-categories: ["IT & Teknologi"]
+categories: ["it-technology"]
 description: 'Memperkenalkan ekstensi yang direkomendasikan untuk secara drastis mengefisienkan browsing di Google Chrome dan Microsoft Edge, seperti gestur mouse, pemblokir iklan, terjemahan DeepL, dan penggunaan sidebar ChatGPT.'
 ---
 

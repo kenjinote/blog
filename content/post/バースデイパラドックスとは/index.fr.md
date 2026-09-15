@@ -6,7 +6,7 @@ tags: ["Mathématiques", "Paradoxe"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathématiques, Cryptographie, Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Saviez-vous qu''avec 23 personnes, la probabilité que deux d''entre elles partagent le même anniversaire est supérieure à 50 % !? Nous expliquons ce phénomène contre-intuitif et fascinant, le « paradoxe des anniversaires », en utilisant des raisons mathématiques et des formules simples. Découvrez la magie des probabilités.'
 ---
 

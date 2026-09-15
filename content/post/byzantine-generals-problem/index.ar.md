@@ -3,7 +3,7 @@ title: "مشكلة الجنرالات البيزنطيين: كيف يتم الت
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "نشرح بشكل مبسط مشكلة الجنرالات البيزنطيين، وهي تحدٍ رئيسي في الأنظمة الموزعة، بدءًا من المفهوم وصولاً إلى الإثبات الرياضي وتطبيقها في البلوكشين (Blockchain)، مع الاستعانة بأمثلة ملموسة ورسوم توضيحية."
-categories: ["Technical Explanation", "Distributed Systems"]
+categories: ["technical-explanation", "distributed-systems"]
 tags: ["Byzantine Generals Problem", "Blockchain", "Consensus", "Algorithm"]
 slug: "byzantine-generals-problem"
 ---

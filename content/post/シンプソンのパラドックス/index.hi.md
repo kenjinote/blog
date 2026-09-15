@@ -6,9 +6,7 @@ date: '2026-09-10T07:00:00+09:00'
 image: 'img/simpsons_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय विरोधाभास'
-  - 'सांख्यिकी'
+categories: ["mathematical-paradoxes", "statistics"]
 tags:
   - 'विरोधाभास'
   - 'सांख्यिकी'

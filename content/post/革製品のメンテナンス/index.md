@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["革製品", "趣味"]
 draft: fales
 image: "img.webp"
-categories: ["ライフスタイル・雑記"]
+categories: ["lifestyle-miscellaneous"]
 description: '革製品のメンテナンス初心者に向けて、M.MOWBRAYのデリケートクリームやコロニルのシュプリームクリームなど、実際に購入してよかったおすすめのケア用品を紹介します。大切な革アイテムを長持ちさせるためのお手入れ術です。'
 ---
 

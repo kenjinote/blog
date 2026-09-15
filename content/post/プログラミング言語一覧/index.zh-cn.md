@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["编程语言"]
 draft: true
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '整理了从C语言、Python、Java、JavaScript到Rust、Go、OCaml、Clojure等多种编程语言的列表。查看各语言的概要和特征，作为开发和学习的参考吧。'
 ---
 

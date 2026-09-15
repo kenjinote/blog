@@ -4,7 +4,7 @@ slug: "『Kimi Shinitamou Koto Nakare』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "Ne meurs pas", "poésie", "poésie anti-guerre"]
 draft: false
-categories: ["Informatique et technologie"]
+categories: ["it-technology"]
 description: 'Nous publions le texte intégral du poème anti-guerre représentatif d''Akiko Yosano, ''Ne donne pas ta vie'', composé en pensant à son jeune frère participant au siège de Port-Arthur lors de la guerre russo-japonaise. Nous déchiffrons le contexte de ce chef-d''œuvre qui fait appel à l''amour familial et à la valeur de la vie, ainsi que le message profond qu''il renferme.'
 ---
 

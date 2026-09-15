@@ -5,7 +5,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["フレーズ", "表現"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '「相手の行動を悪意と捉えるのではなく、単なる不注意だと考える」という心理的アプローチ「ハンロンの剃刀」を紹介。LINEの返信が遅いなどの日常のモヤモヤを解消し、人間関係のストレスを減らすヒントを解説します。'
 ---
 

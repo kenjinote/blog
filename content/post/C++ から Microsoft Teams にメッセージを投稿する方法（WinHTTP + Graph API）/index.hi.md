@@ -5,7 +5,7 @@ date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
-categories: ["टूल・विकास पर्यावरण"]
+categories: ["tools-development-environment"]
 description: 'जो कोई C++ से Microsoft Teams में स्वचालित संदेश पोस्टिंग लागू करना चाहता है, उसके लिए यह देखना आवश्यक है! हम WinHTTP और Graph API का उपयोग करके C++ कोड के विशिष्ट उदाहरणों और आवश्यक Azure ऐप पंजीकरण और API प्रमाणीकरण प्रक्रियाओं को चरण-दर-चरण स्पष्ट रूप से समझाएंगे।'
 ---
 

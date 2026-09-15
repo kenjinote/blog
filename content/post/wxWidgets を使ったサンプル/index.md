@@ -5,7 +5,7 @@ date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "サンプル"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'C++のクロスプラットフォームGUIライブラリ「wxWidgets」のインストール手順から、Visual Studioを使ったサンプルプロジェクトの作成方法までを初心者向けに分かりやすく解説します。'
 ---
 

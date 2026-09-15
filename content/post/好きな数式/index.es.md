@@ -10,7 +10,7 @@ tags: ["Matemáticas"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matemáticas, Criptografía, Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Presentamos fórmulas atractivas que te hacen sentir la profundidad y belleza de las matemáticas, como el teorema de Wilson, la fórmula de Euler, el último teorema de Fermat y el problema de Basilea. Echa un vistazo a la multitud de hermosas fórmulas, tan simples pero que representan la verdad del mundo, y que inspiran asombro.'
 ---
 

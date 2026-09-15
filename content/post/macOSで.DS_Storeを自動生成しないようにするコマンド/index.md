@@ -5,7 +5,7 @@ date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'macOS環境でネットワークドライブ等に不要な「.DS_Store」ファイルが自動生成されるのを防ぐターミナルコマンドを紹介します。元の設定に戻す方法やFinderの再起動手順もまとめています。'
 ---
 macOSで.DS_Storeを自動生成しないようにするコマンドは以下の通りです。

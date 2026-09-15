@@ -5,7 +5,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "コンピューターをロック", "ショートカット"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'Windowsパソコンをワンクリックでロックできるショートカットの作成方法を画像付きで分かりやすく解説します。離席時のセキュリティ対策として便利な、Win+Lキーを使った一瞬でロックする方法も紹介。'
 ---
 

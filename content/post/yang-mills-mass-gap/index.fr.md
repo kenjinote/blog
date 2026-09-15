@@ -4,9 +4,7 @@ description: "Nous expliquons de manière compréhensible le contexte physique e
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Physique"
-  - "Mathématiques"
+categories: ["physics", "mathematics"]
 tags:
   - "Yang-Mills"
   - "Saut de masse"

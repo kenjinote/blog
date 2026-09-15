@@ -3,7 +3,7 @@ title: '양자 컴퓨터의 원리와 구조 [완전 총망라] 무어의 법칙
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"
 tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
-categories: ["Math, Crypto, Quantum"]
+categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
 image: "cover.webp"

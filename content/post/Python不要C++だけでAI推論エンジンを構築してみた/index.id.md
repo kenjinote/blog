@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: 'Dalam pengembangan AI saat ini, Python adalah arus utama, tetapi untuk perangkat edge dan lingkungan yang menuntut performa tinggi, kekuatan C++ sangatlah penting. Pada artikel ini, dengan mengambil inspirasi dari filosofi GGML, kami akan menjelaskan secara menyeluruh dalam 10.000 kata mengenai metode untuk membangun mesin inferensi AI sendiri dari nol, yang hanya menggunakan C++ dan mendukung backend CUDA maupun Metal.'
 ---

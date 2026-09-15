@@ -5,7 +5,7 @@ date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "學習"]
 draft: false
 image: "img.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '整理了專案管理認證「PMP」備考的重點。除了考試概要與及格標準外，也解說對應 PMBOK 第 7 版的重要項目，如僕人式領導的 10 項原則、敏捷軟體開發宣言的 4 大價值觀等。'
 ---
 

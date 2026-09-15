@@ -5,7 +5,7 @@ date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "元數據", "個人資訊"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '說明如何使用 PowerShell 刪除 Office 檔案中包含的作者等中繼資料。從單一檔案處理，到資料夾內 Excel、Word 等檔案的批次刪除指令碼，介紹在與外部共享時防止資訊外洩的實用自動化技巧。'
 ---
 

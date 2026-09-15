@@ -4,7 +4,7 @@ description: "क्ले मैथमेटिक्स इंस्टीट�
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "विज्ञान"]
+categories: ["mathematics", "science"]
 tags: ["मिलेनियम प्राइज़ समस्याएँ", "टोपोलॉजी", "बीजगणितीय ज्यामिति", "हॉज कंजंक्चर"]
 ---
 

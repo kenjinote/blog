@@ -3,7 +3,7 @@ title: "蒙特卡罗方法与拉斯维加斯方法：利用随机数的“最强
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "解说利用随机数的两种代表性概率算法：蒙特卡罗方法和拉斯维加斯方法。通俗易懂地总结了具体的算法实现以及它们之间的区别。"
-categories: ["算法", "编程"]
+categories: ["algorithms", "programming"]
 tags: ["随机数", "Monte Carlo", "Las Vegas", "Python", "Mermaid", "Math"]
 slug: "monte-carlo-and-las-vegas-algorithms"
 ---

@@ -5,7 +5,7 @@ date: 2024-03-31T18:09:32+09:00
 tags: ["nano", "éditeur de texte"]
 draft: false
 image: "img_1.webp"
-categories: ["Outils et environnement de développement"]
+categories: ["tools-development-environment"]
 description: 'Nous expliquons la procédure pour installer l''éditeur de texte CLI léger « nano » sur Windows et configurer les variables d''environnement afin de pouvoir l''utiliser depuis l''invite de commande. De la réalisation du téléchargement à la configuration du PATH et à l''utilisation de base.'
 ---
 

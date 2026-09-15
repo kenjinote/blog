@@ -4,9 +4,7 @@ description: "详细讲解拓扑学（Topology）中著名的定理“毛球定�
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Topology"
+categories: ["mathematics", "topology"]
 tags:
   - "Math"
   - "Topology"

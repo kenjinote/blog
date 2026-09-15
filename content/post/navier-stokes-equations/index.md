@@ -4,7 +4,7 @@ description: "クレイ数学研究所のミレニアム懸賞問題の1つで�
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Physics"]
+categories: ["mathematics", "physics"]
 tags: ["Navier-Stokes", "Fluid Dynamics", "Millennium Prize Problems"]
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Windows वातावरण में C भाषा के लिए एन्क्रिप्शन संचार लाइब्रेरी ''OpenSSL'' को बिल्ड करने का तरीका समझाया गया है। Perl, NASM, Visual Studio 2022 जैसे आवश्यक उपकरणों की तैयारी से लेकर वास्तविक स्रोत कोड को बिल्ड करने की प्रक्रिया तक विस्तार से जानकारी दी गई है।'
 ---
 

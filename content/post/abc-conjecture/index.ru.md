@@ -4,7 +4,7 @@ description: "Обзор ABC-гипотезы и глубокое погруже
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Математика", "Наука"]
+categories: ["mathematics", "science"]
 tags: ["ABC-гипотеза", "Теория чисел", "Теория IUT", "Синъити Мотидзуки"]
 ---
 

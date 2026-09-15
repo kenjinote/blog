@@ -5,7 +5,7 @@ date: 2022-09-13T01:16:40+09:00
 tags: ["Github","Domain"]
 draft: false
 image: "images/octocat.webp"
-categories: ["Tools / Development Environment"]
+categories: ["tools-development-environment"]
 description: 'We explain the steps to set a custom domain for a GitHub repository (GitHub Pages). This time, we introduce the specific steps from adding/changing DNS A records from the ''Onamae.com'' management screen to linking with GitHub.'
 ---
 To set up a custom domain for a Github repository, you need to change the domain's DNS settings.

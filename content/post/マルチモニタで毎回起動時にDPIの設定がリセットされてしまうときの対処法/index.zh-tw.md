@@ -5,7 +5,7 @@ date: 2024-04-29T19:42:20+09:00
 tags: ["多螢幕", "DPI", "控制台"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '解說在Windows 11的多螢幕環境中，電腦開機時螢幕的DPI（縮放）設定會自動被重置的問題解決方法。整理了從控制台停用快速啟動的步驟。'
 ---
 

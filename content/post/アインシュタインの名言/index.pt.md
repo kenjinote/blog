@@ -5,7 +5,7 @@ date: 2024-08-24T18:38:47+09:00
 tags: ["Einstein", "Citações", "Filosofia", "Ciência", "Física"]
 draft: false
 image: "Solvay_conference_1927.webp"
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Apresentamos citações profundas de Einstein. Explicamos seus ensinamentos sobre como acreditar em si mesmo e continuar a se levantar forte, sem se deixar abalar por avaliações e críticas dos outros. Repleto de dicas que podem ser aplicadas à vida diária moderna, como no trabalho ou nas redes sociais.'
 ---
 

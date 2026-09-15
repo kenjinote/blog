@@ -4,7 +4,7 @@ description: "Membahas secara mendalam tentang 'Teorema Mengagumkan' yang ditemu
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Sains"]
+categories: ["mathematics", "science"]
 tags: ["Geometri", "Gauss", "Teorema Pizza", "Theorema Egregium", "Geometri Diferensial"]
 ---
 

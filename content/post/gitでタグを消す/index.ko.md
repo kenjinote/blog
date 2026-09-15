@@ -8,7 +8,7 @@ date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
-categories: ["도구 및 개발 환경"]
+categories: ["tools-development-environment"]
 description: 'Git에서 불필요해진 태그(tag)를 삭제하는 방법을 간단하게 해설합니다. ''git tag -d''를 통한 로컬 환경에서의 태그 삭제부터, ''git push origin --delete''를 사용한 원격 리포지토리 상의 태그 삭제까지 망라합니다.'
 ---
 

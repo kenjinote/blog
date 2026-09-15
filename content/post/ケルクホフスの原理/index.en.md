@@ -5,7 +5,7 @@ date: 2025-04-16T23:53:08+09:00
 tags: ["Kerckhoffs's Principle", "Cryptography"]
 draft: false
 image: "img_2.webp"
-categories: ["Math, Cryptography & Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'An easy-to-understand explanation for beginners about ''Kerckhoffs''s Principle'', an indispensable concept when learning information security and cryptography. Details the reasons and this vital idea forming the basis of modern security, which states that ''a cryptosystem should be secure even if everything about the system is public knowledge''.'
 ---
 

@@ -9,7 +9,7 @@ tags: ["양자 컴퓨터", "GNFS", "쇼어 알고리즘", "암호 해독", "수�
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["수학・암호・양자"]
+categories: ["math-cryptography-quantum"]
 description: 'RSA 암호의 안전성을 뒷받침하는 소인수분해 문제. 고전 최강의 알고리즘 ''일반 수체 체(GNFS)''의 수학적 메커니즘부터, 양자 컴퓨터에 의한 ''쇼어의 알고리즘''이 왜 그것을 깨뜨리는지 수식과 개념도로 철저히 해설합니다.'
 ---
 

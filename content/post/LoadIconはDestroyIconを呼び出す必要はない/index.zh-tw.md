@@ -4,7 +4,7 @@ slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["圖示", "LoadIcon", "DestroyIcon", "Windows程式設計"]
 draft: false
-categories: ["程式設計"]
+categories: ["programming"]
 description: '為您解說對於透過Windows API的LoadIcon或LoadImage取得的圖示資源，是否應該呼叫DestroyIcon的條件。我們整理了防止資源外洩(Resource Leak)的正確規範。'
 ---
 

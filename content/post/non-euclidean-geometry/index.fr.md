@@ -4,7 +4,7 @@ description: "De la remise en question du postulat des parallèles d'Euclide à 
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Physique"]
+categories: ["mathematics", "physics"]
 tags: ["Géométrie", "Relativité", "Histoire des Sciences", "Mathématiques"]
 ---
 

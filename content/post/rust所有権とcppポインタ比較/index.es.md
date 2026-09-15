@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Una comparación exhaustiva de los punteros de C++ y el modelo de propiedad/préstamo de Rust. Explicamos la esencia de la seguridad de la memoria, desde punteros en crudo y punteros inteligentes hasta el comprobador de préstamos.'
 ---

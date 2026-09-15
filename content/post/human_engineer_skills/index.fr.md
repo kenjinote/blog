@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Carrière", "IA", "Ingénierie Logicielle"]
+categories: ["career", "ai", "software-engineering"]
 tags: ["IA Générative", "DDD", "Architecture", "Avenir du travail"]
 ---
 

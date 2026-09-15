@@ -5,7 +5,7 @@ date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "ショートカット" ]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: '開発効率を劇的に向上させる、Visual Studio（VS2022）の便利なショートカットキー一覧をまとめました。デバッグやビルド、ブックマーク操作など、プログラミング中によく使う必須ショートカットを厳選紹介。'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-23T01:37:43+09:00
 tags: ["社区", "杂记"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '从编程学习网站“Scratch”完善的社区指南中，探讨运营一个健康舒适的社区所需的要素。介绍对他人尊重、确保安全等适用于任何群体的关键视角。'
 ---
 # 社区需要的东西

@@ -5,7 +5,7 @@ date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
-categories: ["Программирование"]
+categories: ["programming"]
 description: 'Ищете способ вызова и выполнения скриптов PowerShell из нативного C++? Мы подробно объясним конкретные шаги реализации для создания wrapper DLL с помощью C++/CLI в среде Visual Studio 2022 и обеспечения бесперебойной системной интеграции.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-04T14:29:09+09:00
 tags: ["杂记", "孩子"]
 draft: false
 image: "images/today_workplase.webp"
-categories: ["IT·科技"]
+categories: ["it-technology"]
 description: '为您介绍如何在育儿期间利用有限的时间，以及今天的工作环境。孩子午睡期间是能集中注意力的宝贵时间。通过利用孩子的书桌、活用iPad和转换适配器等巧妙心思，记录下了真实的远程办公日常。'
 ---
 

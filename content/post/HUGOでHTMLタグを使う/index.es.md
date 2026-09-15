@@ -8,7 +8,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["Administración del blog"]
+categories: ["blogging"]
 description: 'Explicamos cómo usar y escribir directamente etiquetas HTML dentro de los artículos Markdown en Hugo, un generador de sitios estáticos. Se puede completar simplemente añadiendo la configuración unsafe a markup.goldmark.renderer en el archivo config.toml.'
 ---
 

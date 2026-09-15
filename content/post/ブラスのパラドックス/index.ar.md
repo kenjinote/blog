@@ -7,7 +7,7 @@ slug: "braess-paradox"
 image: "img/braess_paradox.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "نظرية الألعاب"]
+categories: ["mathematical-paradoxes", "game-theory"]
 tags: ["مفارقة", "شبكات", "مرور", "توازن ناش", "مفارقة براس"]
 ---
 

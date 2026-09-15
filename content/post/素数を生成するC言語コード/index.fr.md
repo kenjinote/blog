@@ -5,7 +5,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Nombres premiers", "Algorithme", "Mathématiques"]
 draft: false
 image: "img.webp"
-categories: ["Mathématiques, Cryptographie et Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Nous présentons un code source simple en langage C qui détermine, génère et énumère les nombres premiers dans une plage spécifiée (de 1 à n). Il comprend un algorithme efficace utilisant la fonction isPrime, avec un exemple d''implémentation de programmation facile à comprendre même pour les débutants, et des explications.'
 ---
 

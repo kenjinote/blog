@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: '深入分析能够极大提升工程师生产力的高端键盘。从基于物理学的轴体分析到固件的工作原理进行深度挖掘，并介绍 5 款终极键盘。'
 ---

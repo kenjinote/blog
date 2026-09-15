@@ -5,7 +5,7 @@ date: "2026-09-13T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Windows", "Troubleshooting", "System Admin"]
+categories: ["windows", "troubleshooting", "system-administration"]
 tags: ["Sysinternals", "ProcMon", "Process Explorer", "Windows"]
 description: 'विंडोज़ ट्रबलशूटिंग का अंतिम गाइड। Sysinternals टूल्स का उपयोग करके कर्नेल-लेवल विश्लेषण तकनीकों की गहन व्याख्या।'
 ---

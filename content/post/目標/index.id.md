@@ -5,7 +5,7 @@ date: 2024-12-08T03:32:34+09:00
 tags: ["Tujuan"]
 draft: false
 image: "img.webp"
-categories: ["TI dan Teknologi"]
+categories: ["it-technology"]
 description: 'Memo rencana bisnis yang mengatur penetapan tujuan jangka pendek serta jangka panjang ke arah bisnis melalui pengembangan piranti lunak (software) berikut tugas-tugas terbarunya. Kami mempublikasikannya secara luas mulai dari visi pencapaian penjualan tahunan sebesar 10 miliar yen, pengadaan dana maupun rilis perangkat lunak berbayar maupun perangkat lunak tak berbayar hingga ke tahapan spesifik dari survei pasar serta analisis kebutuhan.'
 ---
 

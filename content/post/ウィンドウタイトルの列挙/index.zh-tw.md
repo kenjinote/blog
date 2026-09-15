@@ -5,7 +5,7 @@ date: 2022-09-20T17:03:15+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '解說如何使用 PowerShell 輕鬆列舉與取得電腦上目前開啟的所有視窗標題。搭配實際指令與輸出範例，為初學者淺顯易懂地介紹。'
 ---
 # 列舉視窗標題

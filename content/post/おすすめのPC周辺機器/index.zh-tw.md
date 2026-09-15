@@ -5,7 +5,7 @@ date: 2023-02-28T00:51:49+09:00
 tags: ["鍵盤", "軌跡球", "顯示器"]
 draft: false
 image: "img.webp"
-categories: ["電腦・小工具"]
+categories: ["pc-gadgets"]
 description: '介紹現役工程師愛用、能大幅提升工作效率的推薦電腦周邊設備，例如耐用的靜電容無接點鍵盤、減輕手腕負擔的軌跡球滑鼠、高解析度 4K 寬螢幕顯示器等。'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-07T04:40:52+09:00
 tags: ["孩子"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '为您介绍从2岁女儿关心卧病在床母亲的行动中，感受到孩子揣摩心思与体贴的温馨轶事。与您分享隐藏在“不行，妈妈在睡觉！”这句话中，关怀他人的温柔心灵的成长记录，以及育儿过程中的治愈瞬间。'
 ---
 妈妈身体不舒服卧床休息的时候，

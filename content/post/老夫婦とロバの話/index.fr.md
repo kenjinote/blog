@@ -5,7 +5,7 @@ date: 2024-09-18T00:56:59+09:00
 tags: ["L'histoire du vieux couple et de l'âne", "Satire"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'À travers la célèbre fable « Le vieux couple et l''âne », nous examinons les inconvénients de trop se soucier du regard des autres et le dilemme des relations humaines modernes de savoir « qui croire ». Nous vous donnons des conseils pour vivre sans être balloté par l''opinion d''autrui.'
 ---
 

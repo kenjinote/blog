@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Analytics"]
+categories: ["blogging", "seo", "analytics"]
 tags: ["Google Search Console", "Python", "SEO", "BigQuery"]
 description: 'Explaining a method for strategically rewriting technical articles using Python and BigQuery by integrating Google Search Console and GA4 data. Covers data-driven SEO measures like TF-IDF and CTR analysis.'
 ---

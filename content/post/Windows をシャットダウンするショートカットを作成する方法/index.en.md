@@ -5,7 +5,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Shutdown", "Shortcut"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explains how to create a handy shortcut that lets you shut down Windows with a single click from the desktop. Details the setup process using the ''shutdown.exe'' command and how to change it to an easy-to-understand icon, complete with images.'
 ---
 

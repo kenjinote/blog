@@ -5,7 +5,7 @@ date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "archivo ejecutable", "análisis"]
 draft: false
 image: "img_1.webp"
-categories: ["PC y Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Te presentamos herramientas recomendadas que pueden analizar y extraer el contenido de los archivos ejecutables (exe) de Windows. Explicamos de forma sencilla cómo comprobar la estructura del formato PE, extraer recursos y editar archivos binarios utilizando programas como 7-Zip y Resource Hacker.'
 ---
 

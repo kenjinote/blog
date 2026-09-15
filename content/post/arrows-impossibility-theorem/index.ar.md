@@ -3,9 +3,7 @@ title: "مبرهنة استحالة أرو: \"الديمقراطية (الانت
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "هل يمكننا تصميم \"نظام انتخابي عادل للجميع\"؟ من خلال \"مبرهنة استحالة أرو\" التي أثبتها الخبير الاقتصادي كينيث أرو، نشرح القيود الرياضية للديمقراطية، وكيف ينبغي لنا أن نتعامل مع الانتخابات واتخاذ القرارات."
-categories:
-  - "Mathematics"
-  - "Economics"
+categories: ["mathematics", "economics"]
 tags:
   - "Decision Theory"
   - "Arrow's Impossibility Theorem"

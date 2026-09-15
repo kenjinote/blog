@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Image Generation", "Stable Diffusion"]
+categories: ["ai", "image-generation", "stable-diffusion"]
 tags: ["Stable Diffusion", "ComfyUI", "Local AI", "Windows", "CUDA"]
 description: 'विंडोज लोकल एनवायरनमेंट पर एआई इमेज जनरेशन टूल (Stable Diffusion WebUI, ComfyUI, Fooocus) स्थापित करने के लिए एक संपूर्ण मैनुअल।'
 ---

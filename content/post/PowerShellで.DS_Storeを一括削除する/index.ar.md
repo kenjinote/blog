@@ -5,7 +5,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح كيفية استخدام PowerShell لحذف ملفات .DS_Store الخاصة بـ Mac (والتي غالباً ما تكون مزعجة في بيئات Windows) دفعة واحدة، بما في ذلك المجلدات الفرعية. يمكنك بسهولة تنظيف الملفات غير الضرورية بأمر واحد قصير.'
 ---
 

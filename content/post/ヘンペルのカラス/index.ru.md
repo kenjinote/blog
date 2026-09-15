@@ -7,7 +7,7 @@ slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Логика"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["Парадокс", "Индукция", "Логическая эквивалентность", "Контрапозиция"]
 ---
 

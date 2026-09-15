@@ -5,7 +5,7 @@ date: 2025-07-15T20:18:22+09:00
 tags: ["市场导向", "产品导向", "开发", "商业", "随笔"]
 draft: false
 image: "img.webp"
-categories: ["生活方式・杂记"]
+categories: ["lifestyle-miscellaneous"]
 description: '结合拉面店等例子，通俗易懂地解说商业和企划中常用的“Market-in”与“Product-out”的含义和区别。了解各自的优缺点，思考适合当前状况的战略吧。'
 ---
 

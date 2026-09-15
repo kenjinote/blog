@@ -3,9 +3,7 @@ title: "哥德爾不完備定理：「絕對無法證明的真理」的數學證
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "關於展示數學極限的歷史性定理——哥德爾不完備定理，本文將透過具體例子與圖解，淺顯易懂地解說其意義與證明機制。"
-categories:
-  - 數學
-  - 電腦科學
+categories: ["mathematics", "computer-science"]
 tags:
   - 邏輯學
   - 哥德爾

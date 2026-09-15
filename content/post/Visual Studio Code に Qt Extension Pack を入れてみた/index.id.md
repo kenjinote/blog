@@ -5,7 +5,7 @@ date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Memperkenalkan prosedur pengenalan ''Paket Ekstensi Qt'', ekstensi untuk mengembangkan aplikasi Qt di VSCode (Visual Studio Code). Disarankan bagi mereka yang ingin membangun lingkungan pengembangan yang ringan sebagai alternatif dari Qt Creator.'
 ---
 

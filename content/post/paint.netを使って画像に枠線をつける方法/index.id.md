@@ -5,7 +5,7 @@ date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "batas", "gambar"]
 draft: false
 image: "img_3.webp"
-categories: ["AI dan Teknologi"]
+categories: ["ai-technology"]
 description: 'Menjelaskan cara menambahkan batas ke gambar menggunakan perangkat lunak pengedit gambar paint.net. Kami memperkenalkan prosedur pembuatan batas dengan menggunakan spesifikasi warna pada warna sekunder dan perubahan ukuran kanvas untuk pemula. Ini adalah teknik berguna yang dapat langsung membantu saat Anda ingin menghias gambar untuk blog atau pembuatan materi.'
 ---
 

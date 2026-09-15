@@ -8,7 +8,7 @@ date: 2023-04-02T14:44:17+09:00
 tags: ["사진 소재", "블로그", "Unsplash"]
 draft: false
 image: "img_1.webp"
-categories: ["블로그 운영"]
+categories: ["blogging"]
 description: '블로그 기사에 최적인 무료 사진 소재 사이트 ''Unsplash''를 소개합니다. 무료·상업적 이용 가능·가공 가능·출처 표기나 사용 허가도 필요 없는, 매우 사용하기 편리하고 고품질인 이미지 서비스입니다.'
 ---
 

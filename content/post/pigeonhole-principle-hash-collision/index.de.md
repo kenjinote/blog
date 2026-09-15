@@ -3,10 +3,7 @@ title: "Das Schubfachprinzip und Hash-Kollisionen: Warum völlig verschiedene Da
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Eine einfache und mathematisch fundierte Erklärung der Prinzipien hinter den in der IT unentbehrlichen Hash-Funktionen, des unausweichlichen Problems der „Hash-Kollisionen“ und der Verbindung zum „Schubfachprinzip“ aus der Mathematik."
-categories:
-  - "Computer Science"
-  - "Cryptography"
-  - "Mathematics"
+categories: ["computer-science", "cryptography", "mathematics"]
 tags:
   - "Hash Function"
   - "Pigeonhole Principle"

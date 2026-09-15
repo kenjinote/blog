@@ -5,7 +5,7 @@ date: 2024-02-08T01:23:01+09:00
 tags: ["Tool", "Screen Recording", "GIF"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'Introduction and download method for a free tool that can record computer screen operations and convert them into GIF animations. It''s convenient for sharing in communication tools like Microsoft Teams. We clearly explain from specifying the operation range to recording steps.'
 ---
 

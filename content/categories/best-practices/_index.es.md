@@ -1,0 +1,5 @@
+---
+{
+  "title": "Buenas prácticas"
+}
+---

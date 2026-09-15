@@ -6,7 +6,7 @@ tags: ["Crible d'Ératosthène", "Nombres premiers", "Mathématiques", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathématiques, Cryptographie, Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Nous expliquons clairement le fonctionnement et les étapes spécifiques de l''algorithme ''Crible d''Ératosthène'' pour trouver efficacement les nombres premiers. Nous présentons également un exemple d''implémentation utilisant le langage Rust pour énumérer les nombres premiers inférieurs ou égaux à 1000.'
 ---
 

@@ -4,9 +4,7 @@ description: Uma explicação completa da teoria do caos e do efeito borboleta �
 slug: chaos-theory
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Ciência
-- Matemática
+categories: ["science", "mathematics"]
 tags:
 - Teoria do Caos
 - Física

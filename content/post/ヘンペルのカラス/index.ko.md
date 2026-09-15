@@ -7,7 +7,7 @@ slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "논리학"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["역설", "귀납법", "논리적 동치", "대우"]
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-02T07:23:00+09:00
 tags: ["雜記"]
 draft: false
 image: "images/komeda.webp"
-categories: ["部落格營運"]
+categories: ["blogging"]
 description: '我使用靜態網站產生器「Hugo」新開設了個人部落格。預計會像記事本一樣，輕鬆地發布技術備忘錄、程式碼以及一些日常生活中的小事。'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T23:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Law", "Tech Trends"]
+categories: ["ai", "law", "tech-trends"]
 tags: ["Copyright", "Generative AI", "Law", "2026 Trends"]
 description: 'شرح شامل لآخر التطورات في الذكاء الاصطناعي التوليدي وقضايا حقوق الطبع والنشر في عام 2026، قانون الذكاء الاصطناعي للاتحاد الأوروبي، التطورات القانونية في الولايات المتحدة واليابان، والتدابير الدفاعية الفنية مثل C2PA و Nightshade.'
 ---

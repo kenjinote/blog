@@ -6,7 +6,7 @@ tags: ["Matematika", "Paradoks"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matematika・Kriptografi・Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Apakah mungkin peluang ada dua orang dengan hari ulang tahun yang sama dalam sebuah grup berisi 23 orang mencapai lebih dari 50%!? Kami akan menjelaskan fenomena aneh yang berlawanan dengan intuisi ini, yaitu ''Paradoks Ulang Tahun'', dengan alasan matematis dan rumus perhitungan yang mudah dipahami. Mari rasakan keajaiban probabilitas.'
 ---
 

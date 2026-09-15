@@ -8,7 +8,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "apagar", "acceso directo"]
 draft: false
 image: "img.webp"
-categories: ["PC y Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos cómo crear un práctico acceso directo que te permite apagar Windows con un solo clic desde el escritorio. Detallamos con imágenes el procedimiento de configuración usando el comando ''shutdown.exe'' y cómo cambiar a un icono fácil de reconocer.'
 ---
 

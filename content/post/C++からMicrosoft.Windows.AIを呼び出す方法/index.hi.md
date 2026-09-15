@@ -5,7 +5,7 @@ date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
-categories: ["उपकरण और विकास परिवेश"]
+categories: ["tools-development-environment"]
 description: 'AI सुविधाओं तक पहुँचने के लिए Windows के मानक Windows ML का उपयोग करें! हम नमूना कोड के साथ स्पष्ट रूप से समझाएंगे कि Win32 ऐप के C++ वातावरण से "Microsoft.Windows.AI" को कैसे कॉल किया जाए और ONNX प्रारूप में AI मॉडल को कैसे निष्पादित किया जाए।'
 ---
 

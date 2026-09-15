@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "미적분학"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["역설", "기하학", "무한", "토리첼리의 나팔"]
 ---
 

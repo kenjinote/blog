@@ -4,9 +4,7 @@ description: "Простое объяснение физических осно�
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Физика"
-  - "Математика"
+categories: ["physics", "mathematics"]
 tags:
   - "Янг-Миллс"
   - "Массовая щель"

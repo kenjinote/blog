@@ -5,7 +5,7 @@ date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Outils et environnement de développement"]
+categories: ["tools-development-environment"]
 description: 'Explique la procédure pour introduire libcurl avec la prise en charge d''OpenSSL dans l''environnement Visual Studio en utilisant ''vcpkg'', un outil de gestion de paquets pratique pour le développement en C++. Résout en douceur la compilation et les dépendances.'
 ---
 

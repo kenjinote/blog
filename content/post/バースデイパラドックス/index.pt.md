@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 image: 'img/birthday_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Paradoxos Matemáticos'
-  - 'Teoria das Probabilidades'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'Paradoxo'
   - 'Combinação'

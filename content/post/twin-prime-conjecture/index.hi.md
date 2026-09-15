@@ -4,7 +4,7 @@ description = "गणित की अनसुलझी समस्या, ट
 slug = "twin-prime-conjecture"
 date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
-categories = ["गणित"]
+categories = ["mathematics"]
 tags = ["अभाज्य संख्याएँ", "संख्या सिद्धांत", "अनसुलझी समस्याएँ"]
 +++
 

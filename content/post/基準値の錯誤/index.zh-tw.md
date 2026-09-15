@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["數學悖論", "統計學", "心理學"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["悖論", "貝氏定理", "機率", "認知偏誤", "基準率謬誤"]
 ---
 

@@ -3,9 +3,7 @@ title: "Zwei randomisierte Algorithmen: Die Unterschiede zwischen Monte-Carlo- u
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Wir erklären die beiden Paradigmen der randomisierten Algorithmen: Monte-Carlo und Las-Vegas, einschließlich Vor- und Nachteilen, Anwendungsbeispielen und Code-Ausschnitten."
-categories:
-  - "Algorithms"
-  - "Computer Science"
+categories: ["algorithms", "computer-science"]
 tags:
   - "Randomized Algorithm"
   - "Monte Carlo"

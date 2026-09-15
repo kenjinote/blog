@@ -5,7 +5,7 @@ date: 2024-12-22T00:56:14+09:00
 tags: ["株"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '三菱UFJ、三菱商事、NTT、KDDIなど、日本の代表的な優良高配当株のおすすめ銘柄をまとめて一覧で紹介します。配当金狙いの長期投資やポートフォリオ構築の参考にしたい方必見の注目銘柄リストです。'
 ---
 

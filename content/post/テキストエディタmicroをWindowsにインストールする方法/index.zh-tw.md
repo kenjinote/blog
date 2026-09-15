@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "文字編輯器"]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '淺顯易懂地解說將能在命令提示字元中流暢運作的終端機文字編輯器「micro」安裝至 Windows 中，並設定環境變數直到可以使用的步驟。'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "Career", "SEO"]
+categories: ["blogging", "career", "seo"]
 tags: ["Python", "Google Search Console", "Automation", "SEO"]
 description: 'डेटा और ऑटोमेशन के साथ टेक ब्लॉग के ट्रैफ़िक को अधिकतम करने की रणनीति। एसईओ आर्किटेक्चर, पायथन और जीएससी एपीआई का उपयोग करके ट्रैफ़िक विश्लेषण, और गिटहब एक्शन्स (GitHub Actions) के माध्यम से वितरण के ऑटोमेशन को विस्तार से समझाया गया है।'
 ---

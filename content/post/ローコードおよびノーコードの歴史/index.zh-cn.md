@@ -5,7 +5,7 @@ date: 2025-04-26T16:46:11+09:00
 tags: ["低代码", "无代码", "历史"]
 draft: false
 image: "img.webp"
-categories: ["IT·技术"]
+categories: ["it-technology"]
 description: '解说从1980年代至今的低代码、无代码开发历史。将结合HyperCard、FileMaker等不同年代的代表性工具，为您介绍无需编程即可制作应用的机制是如何发展而来的。'
 ---
 

@@ -5,7 +5,7 @@ date: 2026-01-24T15:41:23+09:00
 tags: ["Problemas Sociais", "Saúde", "Alfabetização Informacional"]
 draft: false
 image: "img.webp"
-categories: ["Estilo de Vida / Diversos"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Explicaremos os prós e contras do movimento ''antivacina'' envolvendo as vacinações contra a COVID-19 e as lições epidemiológicas. Vamos entender os vieses cognitivos, como ''confusão'' e ''ilusão de causalidade'' nos casos pós-vacinação, e investigar a importância de um raciocínio científico não influenciado por informações da mídia.'
 ---
 

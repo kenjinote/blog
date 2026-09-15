@@ -5,7 +5,7 @@ date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Explicamos como utilizar o vcpkg, uma útil ferramenta de gerenciamento de pacotes de desenvolvimento em C++, e aplicar nela o libcurl compatível com o OpenSSL no ambiente Visual Studio. A compilação e as dependências podem ser facilmente resolvidas.'
 ---
 

@@ -7,7 +7,7 @@ slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Geometri"]
+categories: ["mathematical-paradoxes", "geometry"]
 tags: ["Paradoks", "Fraktal", "Mandelbrot", "Tak Terhingga"]
 ---
 

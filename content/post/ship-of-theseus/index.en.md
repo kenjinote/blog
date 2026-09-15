@@ -3,7 +3,7 @@ title: "The Ship of Theseus: Is a Completely Replaced Ship the Same as the 'Orig
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Using the Greek philosophical paradox 'The Ship of Theseus' as a theme, we delve deeply into refactoring, system replacement in software development, and 'identity' in object-oriented programming."
-categories: ["Software Engineering", "Architecture"]
+categories: ["software-engineering", "architecture"]
 tags: ["Ship of Theseus", "Refactoring", "Microservices", "Object-Oriented", "DDD"]
 slug: "ship-of-theseus"
 ---

@@ -5,7 +5,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["Miscellaneous"]
 draft: false
 image: "img.webp"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'Considers the true nature of the feeling of ''understanding'' we experience in daily life. Explains the value of deep comprehension, despite being able to live without perfect understanding, and the intrigue of the ''unknowns'' remaining in the world.'
 ---
 # What Does It Mean to Understand?

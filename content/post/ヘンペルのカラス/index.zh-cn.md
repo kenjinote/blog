@@ -7,7 +7,7 @@ slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"
 math: true
 mermaid: true
-categories: ["数学悖论", "逻辑学"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["悖论", "归纳法", "逻辑等价", "逆否命题"]
 ---
 

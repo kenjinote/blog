@@ -5,7 +5,7 @@ date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Suchen Sie nach einer Möglichkeit, PowerShell-Skripte aus nativem C++ aufzurufen und auszuführen? Wir erklären detailliert die konkreten Implementierungsschritte zum Erstellen einer Wrapper-DLL mit C++/CLI in der Visual Studio 2022-Umgebung und zur nahtlosen Systemintegration.'
 ---
 

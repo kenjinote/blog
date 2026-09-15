@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: 'Eine detaillierte Anleitung zur Migration von einem dynamischen CMS wie WordPress zu Hugo, einem extrem schnellen, auf Go basierenden Static Site Generator. Von architektonischen Unterschieden, Vorlagenstrukturen, mathematischer Leistungsanalyse bis hin zu tatsächlichen Migrationsbefehlen.'
 ---

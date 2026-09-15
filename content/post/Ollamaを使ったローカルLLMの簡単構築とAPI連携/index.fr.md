@@ -5,7 +5,7 @@ date: "2026-09-11T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["IA", "Programmation", "API"]
+categories: ["ai", "programming", "api"]
 tags: ["Ollama", "LLM Local", "Python", "Node.js"]
 ---
 

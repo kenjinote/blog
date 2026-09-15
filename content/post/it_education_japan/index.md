@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: '2020年度の小学校におけるプログラミング教育必修化から数年が経過した現在、日本のIT教育が直面している本質的な課題について、コンピュータサイエンスの観点から徹底的に深掘りします。'
 ---

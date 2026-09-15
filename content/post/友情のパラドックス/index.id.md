@@ -7,7 +7,7 @@ slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Teori Jaringan"]
+categories: ["mathematical-paradoxes", "network-theory"]
 tags: ["Paradoks", "Teori Graf", "Media Sosial", "Statistika"]
 ---
 

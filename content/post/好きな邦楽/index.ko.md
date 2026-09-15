@@ -12,7 +12,7 @@ date: 2024-01-06T04:11:01+09:00
 tags: ["일본 음악", "음악"]
 draft: false
 image: "img.webp"
-categories: ["라이프스타일・잡기"]
+categories: ["lifestyle-miscellaneous"]
 description: '튤립(TULIP), RADWIMPS, 우타다 히카루 등 마음에 와닿는 추천 J-POP 명곡을 소개합니다. 그리운 쇼와 시대의 명곡부터 헤이세이 시대의 J-POP 히트곡, 스테디셀러 발라드까지, 세대를 초월해 끊임없이 사랑받는 일본의 훌륭한 음악들을 꼭 즐겨보세요.'
 ---
 

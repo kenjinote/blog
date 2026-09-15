@@ -3,9 +3,7 @@ title: "Teorema Ketidakmungkinan Arrow: \"Demokrasi (Pemilu)\" yang Sempurna Sec
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Apakah mungkin membuat \"sistem pemilu yang adil bagi semua orang\"? Melalui \"Teorema Ketidakmungkinan Arrow\" yang dibuktikan oleh ekonom Kenneth Arrow, kami akan menjelaskan batasan matematis dari demokrasi dan bagaimana kita harus menyikapi pemilu serta pengambilan keputusan."
-categories:
-  - "Matematika"
-  - "Ekonomi"
+categories: ["mathematics", "economics"]
 tags:
   - "Teori Pengambilan Keputusan"
   - "Teorema Ketidakmungkinan Arrow"

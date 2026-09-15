@@ -5,7 +5,7 @@ date: "2026-09-13T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "Automation"]
+categories: ["programming", "windows", "automation"]
 tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: 'دليل عملي لأتمتة مهام Windows اليومية بالكامل باستخدام PowerShell. يشرح أمثلة محددة مثل النسخ الاحتياطي، ومراقبة السجلات مع إشعارات Slack، وتحديث وبناء مستودعات Git المتعددة.'
 ---

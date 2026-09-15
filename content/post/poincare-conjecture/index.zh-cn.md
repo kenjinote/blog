@@ -4,7 +4,7 @@ description: "详细解说折磨了数学家100多年的「庞加莱猜想」的
 date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Science"]
+categories: ["mathematics", "science"]
 tags: ["Topology", "Poincare Conjecture", "Grigori Perelman", "Math"]
 ---
 

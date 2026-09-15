@@ -5,7 +5,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "自動化"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: 'Webページ内のチェックボックスをすべて一括でチェックする方法を解説します。ChromeのDevToolsコンソールで実行するJavaScriptコードや、ワンクリックで全選択・全解除できる便利なブックマークレットの作成手順を紹介します。'
 ---
 

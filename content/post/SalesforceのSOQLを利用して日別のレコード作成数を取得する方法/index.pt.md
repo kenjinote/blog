@@ -5,7 +5,7 @@ date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "data", "agregação"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Explicamos o método específico e a sintaxe de consulta para agregar e obter a contagem de registros diários criados para contas e outros usando SOQL através do Console do Desenvolvedor do Salesforce. Você poderá entender os passos de uma análise de dados útil utilizando a cláusula GROUP BY.'
 ---
 

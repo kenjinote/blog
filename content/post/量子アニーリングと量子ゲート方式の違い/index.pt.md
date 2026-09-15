@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: 'Vamos comparar e explicar detalhadamente duas arquiteturas de computação quântica: Annealing Quântico e Modelo de Porta Quântica, abrangendo desde modelos matemáticos e bases físicas como o modelo de Ising, formulação QUBO, transformações unitárias e correção de erros, até casos de uso específicos.'
 ---

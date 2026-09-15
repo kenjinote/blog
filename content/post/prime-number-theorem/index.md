@@ -4,9 +4,7 @@ description: "素数の出現規則性に関する数学の金字塔、素数定
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "数学"
-  - "アルゴリズム"
+categories: ["mathematics", "algorithms"]
 tags:
   - "素数定理"
   - "リーマン予想"

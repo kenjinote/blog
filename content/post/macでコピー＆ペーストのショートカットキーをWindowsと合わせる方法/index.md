@@ -5,7 +5,7 @@ date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "ショートカットキー", "コピー＆ペースト"]
 draft:
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'MacとWindowsを併用する際に便利な、コピー＆ペーストのショートカットキーをWindows風（Ctrlキーベース）に合わせるための、システム環境設定からの修飾キー変更手順を紹介します。'
 ---
 

@@ -4,7 +4,7 @@ description: "Uma análise aprofundada do Axioma da Escolha e do Lema de Zorn, d
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["Matemática", "Teoria dos Conjuntos"]
+categories: ["mathematics", "set-theory"]
 tags: ["Axioma da Escolha", "Lema de Zorn", "Sistema axiomático ZFC", "Fundamentos da Matemática", "Mermaid", "KaTeX"]
 ---
 

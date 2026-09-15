@@ -5,7 +5,7 @@ date: 2024-02-08T01:23:01+09:00
 tags: ["Ferramenta", "Gravação de tela", "GIF"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Apresentamos ferramentas gratuitas que gravam a tela do computador e convertem em animações GIF, incluindo como baixá-las. São úteis para compartilhamento em ferramentas de comunicação como o Microsoft Teams. Explicamos tudo, desde a seleção da área até o processo de gravação.'
 ---
 

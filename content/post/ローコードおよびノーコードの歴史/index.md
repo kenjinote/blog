@@ -5,7 +5,7 @@ date: 2025-04-26T16:46:11+09:00
 tags: ["ローコード", "ノーコード", "歴史"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '1980年代から現在に至るまでのローコード・ノーコード開発の歴史を解説します。プログラミング不要でアプリが作れる仕組みがどのように発展してきたのか、HyperCardやFileMakerなど年代別の代表的ツールとともに紹介します。'
 ---
 

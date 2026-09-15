@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "AI"]
+categories: ["programming", "windows", "ai"]
 tags: ["Windows AI", "Copilot Runtime", "NPU", "C#", "C++"]
 description: 'Windows 11에서의 로컬 AI 기능 구현 방법, Windows Copilot Runtime, NPU, DirectML을 활용하는 C# 및 C++의 실천적 코드 예제를 망라한 상세한 가이드입니다.'
 ---

@@ -5,7 +5,7 @@ date: 2022-09-23T01:56:52+09:00
 tags: ["Misc"]
 draft: false
 image: "img.webp"
-categories: ["Mathematics, Cryptography, Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Explores the reasons for being drawn to math and computers. Discusses their profound appeal, such as being equal to everyone with clear rules, answers derived remaining forever correct, and the moderate difficulty presented by ever-present unsolved problems.'
 ---
 

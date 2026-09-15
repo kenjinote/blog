@@ -3,7 +3,7 @@ title: "The Byzantine Generals Problem: How to Reach Consensus in a Network with
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "We explain the 'Byzantine Generals Problem', a representative challenge in distributed systems, from its concept to mathematical proof, and its application in blockchain, featuring concrete examples and diagrams."
-categories: ["Technical Explanation", "Distributed Systems"]
+categories: ["technical-explanation", "distributed-systems"]
 tags: ["Byzantine Generals Problem", "Blockchain", "Consensus Building", "Algorithm"]
 slug: "byzantine-generals-problem"
 ---

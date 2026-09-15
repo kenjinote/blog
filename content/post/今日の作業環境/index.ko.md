@@ -10,7 +10,7 @@ date: 2022-09-04T14:29:09+09:00
 tags: ["잡기","아이"]
 draft: false
 image: "images/today_workplase.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '육아 중의 제한된 시간을 활용한 오늘의 작업 환경에 대해 소개합니다. 아이가 낮잠을 자는 동안이 집중할 수 있는 귀중한 시간입니다. 아이의 책상을 활용하거나 iPad와 변환 어댑터로 궁리하는 등 생생한 원격근무의 모습을 담고 있습니다.'
 ---
 

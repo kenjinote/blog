@@ -5,7 +5,7 @@ date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Erklärt die Schritte zum Ausführen automatischer Tweets in Python (tweepy) unter Verwendung der Twitter-API und Google Colaboratory. Von der Einstellung der API-Schlüssel bis zum tatsächlichen Code kann alles per Copy-and-Paste sofort ausprobiert werden.'
 ---
 

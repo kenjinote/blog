@@ -5,7 +5,7 @@ date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "إضافات Chrome"]
 draft: false
 image: "img.webp"
-categories: ["تكنولوجيا المعلومات والتقنية"]
+categories: ["it-technology"]
 description: 'نعرض إضافات متصفح Chrome الموصى بها والتي ترفع كفاءة تطوير وتشغيل Salesforce بشكل كبير. قمنا باختيار أدوات لا غنى عنها للمهندسين، مثل DevTools المفيدة للبحث في الحقول المخصصة وبناء جمل SOQL، وإضافات مفيدة للبحث في الأكواد.'
 ---
 

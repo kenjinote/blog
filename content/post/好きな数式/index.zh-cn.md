@@ -6,7 +6,7 @@ tags: ["数学"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '为您介绍威尔逊定理、欧拉公式、费马大定理、巴塞尔问题等能让人感受到数学的奥妙与美丽的迷人公式。请务必欣赏这些看似简单却能揭示世界真理、令人感动的美妙数学公式。'
 ---
 ## 威尔逊定理

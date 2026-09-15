@@ -5,7 +5,7 @@ date: 2023-08-01T00:26:30+09:00
 tags: ["斯普拉遁2", "游戏", "Nintendo Switch"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '介绍百玩不厌的经典游戏《斯普拉遁2》的魅力，以及向初学者推荐的武器（如新叶射击枪、各类滚筒等）。分享在真格模式维持A+～S+段位并享受比赛乐趣的游玩日记。'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '說明如何在 Windows 環境中，使用 PowerShell 批次刪除包含子資料夾內礙眼的 Mac .DS_Store 檔案。只需一個簡短指令，即可輕鬆清理不需要的檔案。'
 ---
 

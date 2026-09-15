@@ -12,7 +12,7 @@ date: 2024-02-08T01:23:01+09:00
 tags: ["도구", "화면 녹화", "GIF"]
 draft: false
 image: "img.webp"
-categories: ["IT·테크놀로지"]
+categories: ["it-technology"]
 description: 'PC의 화면 조작을 녹화하여 GIF 애니메이션으로 변환할 수 있는 무료 도구의 소개 및 다운로드 방법입니다. Microsoft Teams 등의 커뮤니케이션 도구에서 공유하기에 편리합니다. 조작 범위 지정부터 녹화 절차까지 알기 쉽게 해설합니다.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["Bahasa Pemrograman"]
 draft: true
 image: "img.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Kami telah membuat daftar berbagai bahasa pemrograman dari C, Python, Java, JavaScript hingga Rust, Go, OCaml, dan Clojure. Mari kita periksa gambaran umum dan karakteristik setiap bahasa sebagai referensi untuk pengembangan dan pembelajaran.'
 ---
 

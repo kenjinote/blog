@@ -5,7 +5,7 @@ date: 2022-09-08T02:22:52+09:00
 tags: ["モチベーション", "動画"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '努力が認められない時や悩んだ時に見たい、モチベーションを上げてくれる動画をご紹介します。成田悠輔氏の多様な価値観についての考え方や、宮崎駿監督の思考法など、行動や人生に良い影響を与える名言が満載です。'
 ---
 

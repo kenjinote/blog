@@ -5,7 +5,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "Arrêter", "Raccourci"]
 draft: false
 image: "img.webp"
-categories: ["PC et Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Nous expliquons comment créer un raccourci pratique permettant d''arrêter Windows en un seul clic depuis le bureau. Nous détaillons avec des images la procédure de configuration utilisant la commande ''shutdown.exe'', ainsi que la façon de le remplacer par une icône explicite.'
 ---
 

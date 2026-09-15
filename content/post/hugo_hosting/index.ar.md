@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["التدوين", "DevOps", "استضافة الويب"]
+categories: ["blogging", "devops", "web-hosting"]
 tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: 'دليل تقني شامل لاستضافة المواقع الثابتة المبنية باستخدام Hugo مجانًا وبسرعة عالية عبر Cloudflare Pages أو GitHub Pages. يشرح بالتفصيل الحوسبة الطرفية (Edge Computing)، بنية شبكة توصيل المحتوى (CDN)، ومسارات التكامل/التسليم المستمر (CI/CD).'
 ---

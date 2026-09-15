@@ -3,7 +3,7 @@ title: "Central Limit Theorem - The Miracle Where Any Data Approaches a Normal D
 description: "A detailed explanation of the Central Limit Theorem, one of the most important theorems in statistics, covering intuitive understanding, mathematical proof, and simulation using Python."
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Statistics"]
+categories: ["mathematics", "statistics"]
 tags: ["Central Limit Theorem", "Probability", "Data Science", "Python"]
 slug: "central-limit-theorem"
 ---

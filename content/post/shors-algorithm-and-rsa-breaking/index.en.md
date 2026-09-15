@@ -4,7 +4,7 @@ slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Quantum Computer", "Cryptanalysis", "Shor's Algorithm", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
-categories: ["Mathematics, Cryptography & Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Explains how RSA encryption, which supports modern communication infrastructure, is threatened by the rise of quantum computers. Discusses the future of next-generation cryptanalysis and security, from the mechanics of Shor''s algorithm to the current state of hardware in the NISQ era.'
 ---
 

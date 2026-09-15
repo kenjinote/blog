@@ -5,7 +5,7 @@ date: 2023-08-01T23:42:31+09:00
 tags: ["Poème", "Pensées"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'Ceci est un essai qui prêche l''importance de ne pas classer les métiers et les positions sociales, et de respecter toutes les personnes qui accomplissent des tâches dont vous êtes incapable. Nous vous présentons des éléments clés de cette façon de penser pour faciliter les relations humaines et se respecter mutuellement.'
 ---
 

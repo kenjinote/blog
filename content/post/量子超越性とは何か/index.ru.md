@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: 'Подробное объяснение, начиная с определения квантового превосходства, демонстрационного эксперимента 2019 года с процессором Sycamore от Google, возражений и подходов IBM, до последних тенденций в области исправления ошибок и FTQC (отказоустойчивых квантовых вычислений).'
 ---

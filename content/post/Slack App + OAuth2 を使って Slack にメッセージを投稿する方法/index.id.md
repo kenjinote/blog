@@ -5,7 +5,7 @@ date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["Manajemen Blog"]
+categories: ["blogging"]
 description: 'Menjelaskan cara menggunakan token OAuth Aplikasi Slack untuk memposting pesan melalui Slack Web API. Memperkenalkan langkah-langkah pengaturan ruang lingkup dan mendapatkan token akses, hingga contoh kode implementasi spesifik dalam C++ yang menggunakan WinHTTP.'
 ---
 

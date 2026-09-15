@@ -5,7 +5,7 @@ date: '2026-09-13T04:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "App Development"]
+categories: ["programming", "windows", "app-development"]
 tags: ["WinUI 3", "C++", "Windows App SDK", "Microsoft Store", "Personal Project"]
 description: 'A technical blog post looking back at the entire process of developing a native Windows app called LogicPad and releasing it to the Microsoft Store. From specific implementation using WinUI 3 and C++ to MSIX packaging.'
 ---

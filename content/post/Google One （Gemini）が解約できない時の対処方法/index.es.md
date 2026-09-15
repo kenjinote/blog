@@ -14,7 +14,7 @@ tags: ["Google One", "Gemini", "Cancelar", "Solución"]
 draft: false
 image: "img.webp"
 description: 'Explicamos los pasos correctos de cancelación para evitar la renovación automática de la membresía de Google One a 2900 yenes/mes tras la prueba gratuita de 1 mes de Gemini. Si te preocupa no poder cancelarlo, consulta el método de baja que indicamos en este artículo.'
-categories: ["Programación"]
+categories: ["programming"]
 ---
 
 

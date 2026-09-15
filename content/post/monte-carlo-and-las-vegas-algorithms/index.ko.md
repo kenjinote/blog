@@ -3,7 +3,7 @@ title: "몬테카를로법과 라스베이거스법: 난수를 사용한 '최강
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "난수를 이용하는 두 가지 대표적인 확률적 알고리즘, 몬테카를로법과 라스베이거스법에 대해 해설합니다. 구체적인 알고리즘의 구현이나 각각의 차이를 알기 쉽게 정리했습니다."
-categories: ["알고리즘", "프로그래밍"]
+categories: ["algorithms", "programming"]
 tags: ["난수", "Monte Carlo", "Las Vegas", "Python", "Mermaid", "Math"]
 slug: "monte-carlo-and-las-vegas-algorithms"
 ---

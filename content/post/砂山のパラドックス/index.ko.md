@@ -7,7 +7,7 @@ slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "철학", "논리학"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["역설", "모호성", "소리테스", "퍼지 논리"]
 ---
 

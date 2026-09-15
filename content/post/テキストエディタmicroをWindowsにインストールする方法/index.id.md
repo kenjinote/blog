@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "teks editor"]
 draft: false
 image: "img.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Penjelasan mudah mengenai prosedur cara menginstal editor teks berbasis terminal, ''micro'', yang bisa dijalankan dengan nyaman lewat Command Prompt ke perangkat Windows, serta bagaimana menetapkan variabel lingkungan agar siap digunakan.'
 ---
 

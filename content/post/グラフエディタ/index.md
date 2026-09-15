@@ -5,7 +5,7 @@ date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "グラフ"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'ブラウザ上で数値を入力するだけで、簡単に図表やグラフを作成できる便利なWebベースのグラフエディタをご紹介します。マウス操作での要素移動や有向グラフの作成、作成したグラフのPNG画像ダウンロード機能についても詳しく解説します。'
 ---
 # グラフエディタ

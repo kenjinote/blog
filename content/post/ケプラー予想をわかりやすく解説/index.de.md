@@ -5,7 +5,7 @@ date: 2025-07-21T22:53:03+09:00
 tags: ["Mathematik", "Kepler-Vermutung", "Erklärung"]
 draft: false
 image: "img.webp"
-categories: ["Mathematik・Kryptographie・Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir erklären auf leicht verständliche Weise die „keplersche Vermutung“, ein schwieriges mathematisches Problem, das aus der vertrauten Frage „Wie packt man Wassermelonen am dichtesten?“ entstanden ist. Lassen Sie uns gemeinsam etwas über die Romantik und den Reiz des Kugelpackungsproblems lernen, das von dem genialen Astronomen Kepler vorgeschlagen und über 400 Jahre lang nicht bewiesen wurde.'
 ---
 

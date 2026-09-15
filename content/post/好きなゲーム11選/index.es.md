@@ -9,7 +9,7 @@ date: 2022-09-12T19:28:50+09:00
 tags: ["Juegos"]
 draft: false
 image: "img_12.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Te presentamos 11 obras maestras de juegos retro nostálgicos para consolas como la Game Boy original y la Super Famicom. Está repleto de juegos de nivel de salón de la fama que no pierden su brillo incluso si los juegas hoy en día, como "SaGa 2: Hihou Densetsu", "Kirby''s Dream Land" y "Pokémon Rojo/Verde". Recordamos el encanto de estas obras de arte.'
 ---
 

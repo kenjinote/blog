@@ -12,7 +12,7 @@ date: 2024-04-06T15:36:54+09:00
 tags: ["브라우저 확장", "Edge 애드온", "자동 새로고침"]
 draft: false
 image: "img.webp"
-categories: ["블로그 운영"]
+categories: ["blogging"]
 description: 'Microsoft Edge에서 웹 페이지를 주기적으로 자동 새로 고침할 수 있는 브라우저 확장 기능 ''탭 자동 새로 고침''의 사용법을 설명합니다. 설치 방법부터 새로 고침 간격 설정, 중지 절차까지 이미지를 곁들여 알기 쉽게 소개합니다.'
 ---
 

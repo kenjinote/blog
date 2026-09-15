@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "Career", "SEO"]
+categories: ["blogging", "career", "seo"]
 tags: ["Python", "Google Search Console", "Automation", "SEO"]
 description: 'Strategien zur Maximierung der Zugriffe auf Tech-Blogs durch Daten und Automatisierung. Eine ausführliche Erklärung von SEO-Architektur, Traffic-Analyse mit Python und GSC API sowie automatisierter Verteilung über GitHub Actions.'
 ---

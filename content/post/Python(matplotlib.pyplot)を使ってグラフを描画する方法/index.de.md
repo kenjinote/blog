@@ -5,7 +5,7 @@ date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Diagramme", "Mathematik", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["Mathematik・Kryptographie・Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Erklärt für Anfänger die Schritte zum einfachen Zeichnen und Anzeigen von Sinus- und Kosinus-Graphen mit der matplotlib.pyplot-Bibliothek von Python unter Verwendung von Google Colaboratory. Kann sofort und ohne Einrichtung einer Umgebung ausprobiert werden.'
 ---
 

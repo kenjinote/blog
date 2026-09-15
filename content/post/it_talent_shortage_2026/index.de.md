@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industry", "Career", "AI"]
+categories: ["industry", "career", "ai"]
 tags: ["2026 Problem", "SIer", "Generative AI", "Developer Career"]
 description: 'Die Wahrheit über das "2026-Problem" in der IT-Branche. Eine eingehende Analyse der durch den Aufstieg generativer KI bedingten Polarisierung der Nachfrage nach Fachkräften und der Überlebensstrategien für Entwickler.'
 ---

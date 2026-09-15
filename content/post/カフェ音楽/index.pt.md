@@ -5,7 +5,7 @@ date: 2022-09-08T08:39:03+09:00
 tags: ["Café", "Música"]
 draft: false
 image: "images/img.webp"
-categories: ["Estilo de Vida / Diversos"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Compilamos músicas de café perfeitas como BGM de fundo para programação, estudos e teletrabalho. Apresentamos músicas de trabalho recomendadas, desde Electro Swing acelerado até LoFi Hip Hop e jazz relaxantes onde você pode se concentrar.'
 ---
 **Up-tempo**

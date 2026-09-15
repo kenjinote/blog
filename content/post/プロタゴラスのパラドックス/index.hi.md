@@ -7,7 +7,7 @@ slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "दर्शन", "तर्कशास्त्र"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["विरोधाभास", "स्व-संदर्भ", "कानून", "प्रोटागोरस", "तर्क"]
 ---
 

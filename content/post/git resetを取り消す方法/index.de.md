@@ -5,7 +5,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "wiederherstellen", "rückgängig machen"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Wir erklären, wie Sie in Git ein versehentlich ausgeführtes „git reset“ abbrechen und den ursprünglichen Commit-Status wiederherstellen können. Wir zeigen verständlich die Schritte zur Überprüfung der Commit-ID mit „git reflog“ und zur korrekten Wiederherstellung des Zustands.'
 ---
 # Wie man einen git reset rückgängig macht

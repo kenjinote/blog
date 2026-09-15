@@ -4,7 +4,7 @@ description: "هناك أحجام مختلفة لللانهاية. نشرح با
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "أسس الرياضيات", "نظرية المجموعات"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "الحجة القطرية", "اللانهاية", "رياضيات", "إثبات"]
 ---
 

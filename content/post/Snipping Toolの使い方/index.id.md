@@ -5,7 +5,7 @@ date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Gambar", "Video", "Tangkapan Layar", "Rekaman", "Capture"]
 draft: false
 image: "img.webp"
-categories: ["IT dan Teknologi"]
+categories: ["it-technology"]
 description: 'Menjelaskan cara dasar menggunakan ''Snipping Tool'', alat tangkapan layar bawaan Windows. Memperkenalkan dengan mudah cara memulai dengan cepat menggunakan pintasan keyboard, hingga menyimpan potongan bagian gambar, dan prosedur perekaman layar video.'
 ---
 

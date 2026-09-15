@@ -5,7 +5,7 @@ date: 2025-08-31T20:24:49+09:00
 tags: ["Transmissão de Desenvolvimento de App de Cartões de Ano Novo", "YouTube"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Primeira transmissão no YouTube do desenvolvimento do aplicativo para a criação de cartões de Ano Novo utilizando C++. Explicaremos as etapas da configuração do ambiente que é a base do desenvolvimento do app, com o código-fonte, desde a criação do repositório GIT, passando pela exibição da janela principal, até a inicialização do Direct2D e a implementação do HelloWorld.'
 ---
 

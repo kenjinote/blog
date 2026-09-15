@@ -5,7 +5,7 @@ date: 2022-09-08T02:22:52+09:00
 tags: ["动力", "视频"]
 draft: false
 image: "images/img.webp"
-categories: ["IT·科技"]
+categories: ["it-technology"]
 description: '为您介绍适合在努力不被认可或感到烦恼时观看、能提升动力的视频。包含了成田悠辅先生对多元价值观的看法，以及宫崎骏导演的思考方法等，满满都是对行动和人生有积极影响的名言。'
 ---
 

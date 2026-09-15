@@ -5,7 +5,7 @@ date: 2022-09-08T02:22:52+09:00
 tags: ["Motivation", "Vidéos"]
 draft: false
 image: "images/img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Nous vous présentons des vidéos qui boosteront votre motivation, à regarder lorsque vous vous inquiétez ou quand vos efforts ne sont pas reconnus. Rempli de citations inspirantes qui ont un impact positif sur la vie et les actions, comme les réflexions sur les valeurs diverses de M. Yusuke Narita et les méthodes de pensée du réalisateur Hayao Miyazaki.'
 ---
 

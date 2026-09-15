@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "AI"]
+categories: ["programming", "windows", "ai"]
 tags: ["Windows AI", "Copilot Runtime", "NPU", "C#", "C++"]
 description: '这是一份包含C#与C++实战代码示例的详细指南，全面涵盖了在Windows 11中实现本地AI功能的方法，以及如何充分利用Windows Copilot Runtime、NPU和DirectML。'
 ---

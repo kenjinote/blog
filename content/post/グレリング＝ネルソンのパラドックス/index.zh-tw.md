@@ -7,7 +7,7 @@ slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"
 math: true
 mermaid: true
-categories: ["數學悖論", "邏輯學"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["悖論", "語義學", "自我指涉", "集合論"]
 ---
 

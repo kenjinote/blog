@@ -4,9 +4,7 @@ description: "Penjelasan mendalam tentang 'Teorema Bola Berbulu (Hairy Ball Theo
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Topology"
+categories: ["mathematics", "topology"]
 tags:
   - "Math"
   - "Topology"

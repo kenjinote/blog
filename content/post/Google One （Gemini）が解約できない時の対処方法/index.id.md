@@ -6,7 +6,7 @@ tags: ["Google One", "Gemini", "Pembatalan", "Solusi"]
 draft: false
 image: "img.webp"
 description: 'Menjelaskan prosedur pembatalan yang benar untuk mencegah keanggotaan Google One seharga 2.900 yen/bulan berlanjut secara otomatis setelah uji coba gratis Gemini 1 bulan berakhir. Jika Anda pusing karena ''tidak bisa membatalkan'', silakan rujuk cara berhenti di artikel ini.'
-categories: ["Pemrograman"]
+categories: ["programming"]
 ---
 
 # [Perhatian] Apakah Anda akan ditagih setelah uji coba gratis Gemini berakhir? Ringkasan cara membatalkan

@@ -5,7 +5,7 @@ date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "安裝", "開發"]
 draft: false
 image: "img.webp"
-categories: ["PC・小工具"]
+categories: ["pc-gadgets"]
 description: '為初學者解說如何在Windows環境中安裝能從命令列使用Google生成式AI「Gemini」的「Gemini CLI」。詳細介紹從準備Node.js與npm，到在PowerShell中執行的步驟。'
 ---
 

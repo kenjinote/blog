@@ -4,7 +4,7 @@ slug: "Conjectura P≠NP"
 date: 2024-09-11T02:22:39+09:00
 tags: ["Conjectura P≠NP", "Matemática", "Problemas Não Resolvidos"]
 draft: false
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Sobre o ''problema P versus NP'', o maior problema não resolvido da ciência da computação, explicamos a sua visão geral de forma clara do ponto de vista de uma máquina de Turing determinística, misturando a diferença entre a ''Classe P'', que pode ser resolvida em tempo polinomial, e a ''Classe NP'', onde a validade da solução pode ser verificada em tempo polinomial.'
 ---
 

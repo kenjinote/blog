@@ -5,7 +5,7 @@ date: 2025-04-17T22:23:14+09:00
 tags: ["Tower of Hanoi", "Algorithm", "Python"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Uses the famous puzzle ''Tower of Hanoi'' as a subject to clearly explain the concept of ''recursive calls'' in programming, complete with Python sample code. Recommended for beginners who want to learn algorithm basics.'
 ---
 

@@ -5,7 +5,7 @@ date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Explains the setup steps to call and run TinyLLaMA from C++. Summarizes the process from building llama.cpp and acquiring the model from HuggingFace to building methods in various environments, in a way that is easy to understand for beginners.'
 ---
 

@@ -6,9 +6,7 @@ date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true
-categories:
-  - 'مفارقات رياضية'
-  - 'منطق'
+categories: ["mathematical-paradoxes", "logic"]
 tags:
   - 'مفارقة'
   - 'مرجعية ذاتية'

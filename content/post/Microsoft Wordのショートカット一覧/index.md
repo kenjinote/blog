@@ -5,7 +5,7 @@ date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "ショートカット"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'Microsoft Word（ワード）の作業効率を劇的に上げる便利なショートカットキーの一覧です。文字の装飾、コピー＆ペースト、検索・置換、保存など、普段の文章作成や編集でよく使う必須ショートカットを分かりやすく表でまとめて紹介します。'
 ---
 ## ショートカット一覧

@@ -9,7 +9,7 @@ date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "단축키", "애플리케이션 전환"]
 draft: 
 image: "img.webp"
-categories: ["PC·가젯"]
+categories: ["pc-gadgets"]
 description: 'Mac의 표준 기능으로는 어려운, Windows의 ''Alt+Tab''과 같은 애플리케이션 전환을 실현하는 편리한 타사 앱의 설치 절차 및 설정 방법을 알기 쉽게 해설합니다.'
 ---
 

@@ -7,7 +7,7 @@ slug: "twin-paradox"
 image: "img/twin_paradox.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "물리학"]
+categories: ["mathematical-paradoxes", "physics"]
 tags: ["역설", "상대성 이론", "시간", "아인슈타인", "우주"]
 ---
 

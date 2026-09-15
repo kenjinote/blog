@@ -13,7 +13,7 @@ date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
-categories: ["도구・개발환경"]
+categories: ["tools-development-environment"]
 description: '올해로 8회째가 되는 Microsoft MVP(2024-2025)를 재수상했다는 보고입니다. Microsoft MVP 제도의 개요와 평가받는 활동 내용, 이번 수상 이유 및 지난 1년간의 회고를 소개합니다.'
 ---
 

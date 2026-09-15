@@ -5,7 +5,7 @@ date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "perintah"]
 draft: false
 image: "img.webp"
-categories: ["Manajemen Blog"]
+categories: ["blogging"]
 description: 'Memperkenalkan cara menginstal CLI pembuat situs statis berkecepatan tinggi Hugo, serta daftar perintah dasar yang sering digunakan dalam operasional blog. Menjelaskan operasi yang harus diingat pemula Hugo, seperti peluncuran situs baru, pembuatan artikel, memutar server lokal, dan membangun (build) situs.'
 ---
 

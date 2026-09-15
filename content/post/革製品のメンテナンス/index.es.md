@@ -13,7 +13,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["Productos de cuero", "Pasatiempos"]
 draft: fales
 image: "img.webp"
-categories: ["Estilo de vida y miscelánea"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Para los principiantes en el cuidado de artículos de piel, te presentamos productos altamente recomendados que realmente he comprado, como la crema delicada de M. MOWBRAY y la crema Supreme de Collonil. Técnicas de cuidado que harán que tus preciosos artículos de cuero duren más.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurer", "annuler"]
 draft: false
 image: "img.webp"
-categories: ["Outils et Environnement de Développement"]
+categories: ["tools-development-environment"]
 description: 'Nous expliquons comment annuler une réinitialisation et restaurer l''état du commit d''origine lorsque vous avez exécuté par erreur un « git reset » sur Git. Nous présentons clairement la procédure pour vérifier l''ID du commit à l''aide de « git reflog » et restaurer correctement l''état.'
 ---
 # Comment annuler un git reset

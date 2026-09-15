@@ -5,7 +5,7 @@ date: 2022-09-23T01:37:43+09:00
 tags: ["社群", "雜記"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '從程式設計學習網站「Scratch」洗鍊的社群指南中，考察經營健全舒適的社群所需之元素。介紹對他人的尊重或確保安全性等，能通用於任何聚會的重要觀點。'
 ---
 # 社群所需要的事物

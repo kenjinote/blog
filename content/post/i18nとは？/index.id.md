@@ -5,7 +5,7 @@ date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "Terminologi"]
 draft: false
 image: "img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Menjelaskan dengan mudah makna dan asal kata dari ''i18n (Internationalization: internasionalisasi)'' yang sering terdengar dalam pengembangan perangkat lunak. Merangkum item utama yang harus dipertimbangkan saat menyesuaikan aplikasi atau sistem secara global, seperti kode karakter, format tanggal/waktu, dan informasi mata uang.'
 ---
 

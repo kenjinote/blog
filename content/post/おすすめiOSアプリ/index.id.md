@@ -5,7 +5,7 @@ date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "Aplikasi", "Rekomendasi"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadget"]
+categories: ["pc-gadgets"]
 description: 'Memperkenalkan aplikasi iOS pilihan yang kami rekomendasikan untuk memanfaatkan iPhone atau iPad dengan lebih praktis. Mari kita periksa kumpulan alat berguna untuk bekerja maupun kehidupan pribadi, serta aplikasi penting yang memperkaya kehidupan Anda.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Bild", "Video", "Screenshot", "Aufnahme", "Erfassen"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Erklärt die grundlegende Verwendung des standardmäßig in Windows integrierten Bildschirmaufnahme-Tools „Snipping Tool“. Stellt leicht verständlich vor, von schnellen Startmethoden mit Tastenkombinationen über das Ausschneiden und Speichern von Bildteilen bis hin zu Schritten der Bildschirmaufzeichnung als Video.'
 ---
 

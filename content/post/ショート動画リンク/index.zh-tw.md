@@ -5,7 +5,7 @@ date: 2024-08-25T16:24:35+09:00
 tags: ["影片", "短片"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '整理介紹在社群媒體上引發話題的推薦短影音連結，例如在熱刺比賽中拯救球隊並獲得穆里尼奧讚賞的球僮感動事蹟等。'
 ---
 1. 足球 球僮

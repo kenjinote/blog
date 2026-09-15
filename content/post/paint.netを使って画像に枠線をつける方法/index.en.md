@@ -5,7 +5,7 @@ date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "border", "image"]
 draft: false
 image: "img_3.webp"
-categories: ["AI & Technology"]
+categories: ["ai-technology"]
 description: 'Explains how to add a border to an image using the image editing software paint.net. Introduces the steps to create a border by specifying colors with the secondary color and utilizing canvas size changes for beginners. A useful technique that comes in handy right away when you want to decorate images for blogs or material creation.'
 ---
 

@@ -7,7 +7,7 @@ slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"
 math: true
 mermaid: true
-categories: ["Mathematische Paradoxien", "Philosophie", "Logik"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["Paradoxon", "Selbstreferenz", "Recht", "Protagoras", "Logik"]
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-14T19:33:31+09:00
 tags: ["paint.net"]
 draft: false
 image: "img.webp"
-categories: ["AI & Technology"]
+categories: ["ai-technology"]
 description: 'Introduces the appeal of the free and highly functional image editing software paint.net. It is packed with useful features not found in the standard Windows Paint, such as layers, transparency adjustment, and various effects. Clearly explains its lightweight and intuitive operation features, as well as the installation steps for the free version.'
 ---
 I would like to introduce paint.net, an image editing software that I often use during my development work.

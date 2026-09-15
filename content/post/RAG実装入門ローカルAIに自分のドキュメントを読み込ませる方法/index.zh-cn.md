@@ -5,7 +5,7 @@ date: "2026-09-11T13:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "RAG"]
+categories: ["ai", "llm", "rag"]
 tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 ---
 

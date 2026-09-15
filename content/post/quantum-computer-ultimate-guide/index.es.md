@@ -3,7 +3,7 @@ title: 'Principios y mecanismos de los ordenadores cuánticos 【Cobertura compl
 slug: "quantum-computer-ultimate-guide"
 date: "2026-09-09T08:00:06+09:00"
 tags: ["Quantum Computer", "Quantum Mechanics", "Algorithm", "Physics"]
-categories: ["Math, Crypto, Quantum"]
+categories: ["math-cryptography-quantum"]
 math: true
 mermaid: true
 image: "cover.webp"

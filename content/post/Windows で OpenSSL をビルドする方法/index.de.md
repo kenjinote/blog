@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Kompilierung", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Wir erklären, wie Sie die C-Sprach-Verschlüsselungskommunikationsbibliothek „OpenSSL“ in einer Windows-Umgebung kompilieren. Wir erläutern ausführlich die Vorbereitung der erforderlichen Tools wie Perl, NASM und Visual Studio 2022 bis hin zum eigentlichen Kompiliervorgang des Quellcodes.'
 ---
 

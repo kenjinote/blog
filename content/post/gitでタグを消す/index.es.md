@@ -7,7 +7,7 @@ date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y Entornos de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Una explicación simple sobre cómo eliminar etiquetas (tags) que ya no son necesarias en Git. Cubrimos desde la eliminación de etiquetas en el entorno local con "git tag -d" hasta la eliminación de etiquetas en el repositorio remoto usando "git push origin --delete".'
 ---
 

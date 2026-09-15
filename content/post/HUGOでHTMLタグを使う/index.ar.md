@@ -5,7 +5,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["إدارة المدونة"]
+categories: ["blogging"]
 description: 'نشرح كيفية تمكين كتابة وسوم HTML واستخدامها مباشرة داخل مقالات Markdown في مُنشئ المواقع الثابتة Hugo. يكتمل الأمر بمجرد إضافة إعداد ''unsafe'' إلى ''markup.goldmark.renderer'' في ملف config.toml.'
 ---
 

@@ -3,7 +3,7 @@ title: "Maxwell's Demon: The Energy of 'Information' That Breaks the Common Sens
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "The thought experiment 'Maxwell's Demon' that seems to break the second law of thermodynamics. We explain in detail how this paradox was unraveled by the 'physics of information,' using formulas and diagrams."
-categories: ["Physics", "Information Theory"]
+categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]
 slug: "maxwells-demon"
 ---

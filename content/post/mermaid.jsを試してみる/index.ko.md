@@ -13,7 +13,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["AI・테크놀로지"]
+categories: ["ai-technology"]
 description: '텍스트 기반으로 순서도나 간트 차트 등의 도표를 그릴 수 있는 JavaScript 라이브러리 ''Mermaid.js''의 개요와, 정적 사이트 생성기 Hugo에 도입·설정하여 사용할 수 있게 하는 구체적인 절차를 알기 쉽게 설명합니다.'
 ---
 

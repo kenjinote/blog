@@ -5,7 +5,7 @@ date: 2025-05-26T22:23:34+09:00
 tags: ["阴谋论", "随笔"]
 draft: false
 image: "img.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '解说为了不被卷入互联网上的阴谋论所需的“心理安全”建设方法。不把不安和答案直接挂钩的保留能力，以及防范确认偏误的信息收集技巧等，这些都是在现代网络社会中明智生存的提示。'
 ---
 

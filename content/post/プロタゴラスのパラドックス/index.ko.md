@@ -7,7 +7,7 @@ slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "철학", "논리학"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["역설", "자기 언급", "법률", "프로타고라스", "논리"]
 ---
 

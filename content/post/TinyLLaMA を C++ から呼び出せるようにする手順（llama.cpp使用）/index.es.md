@@ -13,7 +13,7 @@ date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "IA"]
 draft: false
 image: "img.webp"
-categories: ["Programación"]
+categories: ["programming"]
 description: 'Explicamos los pasos de configuración para ejecutar TinyLLaMA llamándolo desde C++. Resumimos de manera fácil de entender para principiantes todo desde la compilación de llama.cpp, la obtención del modelo desde HuggingFace y cómo construir en diversos entornos.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Menjelaskan cara menginstal aplikasi dari command line menggunakan manajer paket Windows 11, ''WinGet''. Memperkenalkan prosedur cepat untuk menerapkan dan mengelola perangkat lunak utama seperti Chrome, VSCode, dan Slack melalui antarmuka baris perintah.'
 ---
 ## Prasyarat

@@ -10,7 +10,7 @@ date: 2022-09-09T23:13:19+09:00
 tags: ["철학", "헤겔", "변증법"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '대립이나 모순을 극복하고 더 높은 차원으로 발전하는 ''헤겔의 변증법''에 대해 해설합니다. 철학의 개념뿐만 아니라 자연계의 법칙이나 컴퓨터 프로그램의 버그 수정을 통한 진화 등 친숙한 예를 들어 알기 쉽게 고찰합니다.'
 ---
 

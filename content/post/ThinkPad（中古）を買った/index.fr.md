@@ -5,7 +5,7 @@ date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Ordinateur portable"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'Il s''agit d''un article de revue sur l''achat d''un ThinkPad T470s d''occasion pour le travail à distance. Présente l''expérience réelle de son utilisation, y compris ses spécifications de Core i7, 24 Go de RAM, l''écran WQHD, son état, ainsi que les plaintes telles que la disposition du clavier.'
 ---
 

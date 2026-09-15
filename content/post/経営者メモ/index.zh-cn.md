@@ -5,7 +5,7 @@ date: 2022-09-07T02:36:11+09:00
 tags: ["经营者"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '公开了经营者应了解的实践性备忘录，包括如何发现正在流行的事业、彻底的模仿与改良、以及谁都能做到的机制化要点等。同时直击“实现企业利益最大化”这一经营理念的本质。'
 ---
 # 发现正在流行的事业

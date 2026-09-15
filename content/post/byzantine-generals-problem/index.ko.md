@@ -3,7 +3,7 @@ title: "비잔틴 장군 문제: 배신자가 있는 네트워크에서 어떻�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "분산 시스템에서의 대표적인 과제 '비잔틴 장군 문제'에 대해 그 개념부터 수학적 증명, 블록체인에서의 응용까지 구체적인 예시와 도해를 섞어 알기 쉽게 해설합니다."
-categories: ["기술 해설", "분산 시스템"]
+categories: ["technical-explanation", "distributed-systems"]
 tags: ["비잔틴 장군 문제", "블록체인", "합의 형성", "알고리즘"]
 slug: "byzantine-generals-problem"
 ---

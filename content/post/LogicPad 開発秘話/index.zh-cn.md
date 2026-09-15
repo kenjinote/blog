@@ -5,7 +5,7 @@ date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "开发", "秘辛"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '面向“不会写代码但懂逻辑的人”的低代码工具“LogicPad”的诞生秘闻。热情讲述开发背后作者的个人想法，以及对自身职业生涯的态度。'
 ---
 

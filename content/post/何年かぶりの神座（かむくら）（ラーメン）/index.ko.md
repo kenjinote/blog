@@ -10,7 +10,7 @@ date: 2022-09-09T21:45:19+09:00
 tags: ["라멘", "카무쿠라"]
 draft: false
 image: "images/img2.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '오랜만에 인기 라멘집 ''도톤보리 카무쿠라(카무쿠라)''에 다녀왔습니다. 이번에는 추천 메뉴인 ''파김치 라멘''을 주문! 가끔씩 엄청 먹고 싶어지는 그 독특하고 맛있는 국물과, 듬뿍 들어간 채소 및 파김치의 궁합이 일품이었습니다.'
 ---
 

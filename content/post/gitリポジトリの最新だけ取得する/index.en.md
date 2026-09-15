@@ -5,7 +5,7 @@ date: 2024-04-27T02:54:12+09:00
 tags: ["git", "repository", "command"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environment"]
+categories: ["tools-development-environment"]
 description: 'We explain how to get only the latest commit (shallow clone) without downloading the entire history of a Git repository. This is a convenient technique to save disk space and quickly clone a repository using the ''--depth 1'' option.'
 ---
 

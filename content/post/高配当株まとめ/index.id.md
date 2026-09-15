@@ -5,7 +5,7 @@ date: 2024-12-22T00:56:14+09:00
 tags: ["Saham"]
 draft: false
 image: "img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Kami menyusun sekaligus memperkenalkan dalam format daftar, rekomendasi saham unggulan dari Jepang dengan bayaran dividen tinggi, seperti KDDI, NTT, Mitsubishi Corporation, maupun Mitsubishi UFJ. Daftar saham-saham yang wajib dilihat bagi siapa saja yang ingin mencari panduan mengenai portofolio serta mencari keuntungan lewat investasi dalam jangka waktu panjang dari pembagian dividen.'
 ---
 

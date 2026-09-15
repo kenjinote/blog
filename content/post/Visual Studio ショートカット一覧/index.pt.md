@@ -5,7 +5,7 @@ date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Atalhos" ]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Uma lista selecionada dos atalhos mais convenientes e indispensáveis da vida diária na programação que o desenvolvedor utilizará no Visual Studio (VS2022). O pacote reúne diversas ferramentas essenciais sobre depuração e compilação além dos métodos para realizar marcação de páginas.'
 ---
 

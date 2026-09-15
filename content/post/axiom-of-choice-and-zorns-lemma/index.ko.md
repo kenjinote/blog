@@ -4,7 +4,7 @@ description: "선택 공리와 초른의 보조정리에 대해, 직관적인 �
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "집합론"]
+categories: ["mathematics", "set-theory"]
 tags: ["선택 공리", "초른의 보조정리", "ZFC 공리계", "수학기초론", "Mermaid", "KaTeX"]
 ---
 

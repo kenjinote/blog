@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: '詳細解說從量子霸權的定義，到Google利用Sycamore處理器在2019年進行的實證實驗、IBM的反駁與策略，以及朝向錯誤更正與FTQC（容錯量子計算）發展的最新動向。'
 ---

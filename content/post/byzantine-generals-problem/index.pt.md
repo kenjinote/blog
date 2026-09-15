@@ -3,7 +3,7 @@ title: "O Problema dos Generais Bizantinos: Como obter consenso numa rede com tr
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Explicaremos de forma fácil de entender o 'Problema dos Generais Bizantinos', um dos principais desafios em sistemas distribuídos, desde o seu conceito até à prova matemática e à sua aplicação em blockchain, utilizando exemplos concretos e diagramas."
-categories: ["Technical Explanation", "Distributed Systems"]
+categories: ["technical-explanation", "distributed-systems"]
 tags: ["Problema dos Generais Bizantinos", "Blockchain", "Consenso", "Algoritmo"]
 slug: "byzantine-generals-problem"
 ---

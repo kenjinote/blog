@@ -6,9 +6,7 @@ date: '2026-09-10T12:00:00+09:00'
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय विरोधाभास'
-  - 'समुच्चय सिद्धांत'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - 'विरोधाभास'
   - 'विकर्ण तर्क'

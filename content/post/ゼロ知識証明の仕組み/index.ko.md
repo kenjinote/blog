@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Web3", "Security"]
+categories: ["cryptography", "web3", "security"]
 tags: ["ZKP", "zk-SNARKs", "zk-STARKs", "Web3", "Blockchain"]
 description: '영지식 증명(ZKP)의 수학적 기초부터 zk-SNARKs, zk-STARKs의 구조, 그리고 ZK-Rollups나 개인정보 보호 신원 증명과 같은 최신 Web3 및 보안에의 응용까지 상세히 해설합니다.'
 ---

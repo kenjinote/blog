@@ -5,7 +5,7 @@ date: 2024-01-06T04:11:01+09:00
 tags: ["Japanische Musik", "Musik"]
 draft: false
 image: "img.webp"
-categories: ["Lebensstil & Sonstiges"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Wir stellen empfohlene japanische Meisterwerke vor, die das Herz berühren, wie Tulip, RADWIMPS und Hikaru Utada. Genießen Sie die vielen wunderbaren japanischen Musiktitel, die von nostalgischen Meisterwerken der Showa-Ära über J-POP-Hits der Heisei-Ära bis hin zu klassischen Balladen reichen und über Generationen hinweg geliebt werden.'
 ---
 

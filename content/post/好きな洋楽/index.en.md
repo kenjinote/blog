@@ -5,7 +5,7 @@ date: 2024-01-05T00:14:22+09:00
 tags: ["Western Music", "Music"]
 draft: false
 image: "img.webp"
-categories: ["Lifestyle & Miscellaneous"]
+categories: ["lifestyle-miscellaneous"]
 description: 'We introduce recommended classic Western music masterpieces loved across eras, such as The Beatles, Coldplay, and Ed Sheeran. We compiled must-listen classic hit songs, from heart-touching ballads to hype pop songs.'
 ---
 

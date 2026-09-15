@@ -9,7 +9,7 @@ date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["프로그래밍"]
+categories: ["programming"]
 description: 'Rust에서 `winapi`와 `user32-sys` 크레이트를 이용해 Windows API를 호출하여 간단한 메시지 박스(MessageBox)를 표시하는 방법을, 프로젝트 생성부터 코드 구현까지 단계별로 설명합니다.'
 ---
 

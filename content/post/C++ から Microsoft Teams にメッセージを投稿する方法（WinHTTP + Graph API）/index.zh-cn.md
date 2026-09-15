@@ -5,7 +5,7 @@ date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
-categories: ["工具·开发环境"]
+categories: ["tools-development-environment"]
 description: '想知道如何实现从C++向Microsoft Teams自动发送消息吗？本文将通俗易懂地讲解使用WinHTTP和Graph API的C++代码具体示例，以及必不可少的Azure应用注册和API认证步骤。'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-01-06T22:22:00+09:00
 tags: ["七草粥", "料理"]
 draft: false
 image: "img.webp"
-categories: ["IT·科技"]
+categories: ["it-technology"]
 description: '为您介绍在1月7日人日节食用的七草粥食谱，以及春之七草（水芹、荠菜、鼠曲草、繁缕、宝盖草、蔓菁、萝卜）。这是一种能让过年疲劳的胃肠得到休息、祈求一年无病消灾的传统节日食品制作方法。'
 ---
 # 七草

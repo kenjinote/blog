@@ -5,7 +5,7 @@ date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "獲獎"]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '報告榮獲 Microsoft MVP (2023-2024) Developer Technologies 類別獎項。這是自 2017 年起連續 7 年獲獎。回顧至今透過技術部落格發布資訊以及參與社群活動的歷程。'
 ---
 

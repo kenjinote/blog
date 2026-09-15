@@ -5,7 +5,7 @@ date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
-categories: ["Gestion de blog"]
+categories: ["blogging"]
 description: 'Explique comment personnaliser la taille et le placement des images dans les articles avec le thème PaperMod de Hugo. Présente les étapes concrètes de modification des CSS (blank.css et post-entry.css) pour envelopper et réduire les images à partir de la valeur par défaut de 100% de largeur et centrées.'
 ---
 La disposition par défaut place l'image au centre avec une largeur de 100 %,

@@ -5,7 +5,7 @@ date: 2025-05-26T22:23:34+09:00
 tags: ["Théorie du complot", "Poème"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et technologie"]
+categories: ["it-technology"]
 description: 'Nous expliquons comment préparer la « sécurité de l''esprit » nécessaire pour ne pas être entraîné dans les théories du complot sur Internet. Voici des astuces pour survivre intelligemment dans la société en ligne moderne, comme la capacité de suspendre son jugement sans lier directement anxiété et réponse, et des conseils pour recueillir des informations afin d''éviter le biais de confirmation.'
 ---
 

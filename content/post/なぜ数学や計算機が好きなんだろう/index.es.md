@@ -9,7 +9,7 @@ date: 2022-09-23T01:56:52+09:00
 tags: ["Miscelánea"]
 draft: false
 image: "img.webp"
-categories: ["Matemáticas, Criptografía, Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Consideraciones sobre por qué me atraen las matemáticas y las computadoras. Hablamos de su profundo encanto: son justas para todos, las reglas son claras, la respuesta derivada es siempre correcta y siempre hay problemas sin resolver con la dificultad adecuada.'
 ---
 

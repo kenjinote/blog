@@ -4,7 +4,7 @@ description: "गणित की दुनिया की सबसे कठ�
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "कंप्यूटर विज्ञान"]
+categories: ["mathematics", "computer-science"]
 tags: ["चार-रंग प्रमेय", "ग्राफ सिद्धांत", "कंप्यूटर-सहायता प्राप्त प्रमाण", "टोपोलॉजी"]
 ---
 

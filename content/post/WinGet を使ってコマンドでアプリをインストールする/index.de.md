@@ -5,7 +5,7 @@ date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
-categories: ["Tools und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Wir erklären, wie Sie Apps über die Befehlszeile mit dem Windows 11-Paketmanager „WinGet“ installieren. Wir zeigen Ihnen, wie Sie wichtige Software wie Chrome, VSCode und Slack schnell über die Befehlszeile einführen und verwalten können.'
 ---
 ## Voraussetzungen

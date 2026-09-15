@@ -5,7 +5,7 @@ date: "2026-09-11T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "Fine-Tuning"]
+categories: ["ai", "llm", "fine-tuning"]
 tags: ["TinyLLaMA", "LoRA", "QLoRA", "On-Premises", "Local AI"]
 description: '在本地環境中高效且最快地微調 TinyLLaMA 的完整指南。從 LoRA、QLoRA 的數學背景到實用的 PyTorch 程式碼，以及使用 Flash Attention 2 的最佳化方法，都將進行詳細解說。'
 ---

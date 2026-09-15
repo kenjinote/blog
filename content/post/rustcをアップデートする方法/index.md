@@ -5,7 +5,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'Rustのコンパイラであるrustcを最新バージョンにアップデートする簡単な方法を解説します。ターミナルやコマンドプロンプトで`rustup update`コマンドを一行実行するだけで、関連コンポーネントを含めて一括更新できます。'
 ---
 # rustcをアップデートする方法

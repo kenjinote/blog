@@ -7,7 +7,7 @@ slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Математический парадокс", "Геометрия"]
+categories: ["mathematical-paradoxes", "geometry"]
 tags: ["Парадокс", "Фрактал", "Мандельброт", "Бесконечность"]
 ---
 

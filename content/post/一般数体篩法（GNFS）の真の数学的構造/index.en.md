@@ -5,7 +5,7 @@ date: 2026-09-05T02:26:13+09:00
 tags: ["Mathematics", "Cryptography", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"
-categories: ["Mathematics, Cryptography, Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'We explain the true mathematical structure of the General Number Field Sieve (GNFS), a prime factorization algorithm. We unravel the advanced mechanism for efficiently factoring huge composite numbers using ''homomorphisms'' that connect the real world of integers with the world of algebraic number fields.'
 ---
 

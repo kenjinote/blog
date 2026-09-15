@@ -5,7 +5,7 @@ date: 2024-05-05T16:03:33+09:00
 tags: ["Engenheiros", "Iniciantes", "Livros"]
 draft: false
 image: "img.webp"
-categories: ["Estilo de vida e Diversos"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Leitura obrigatória para engenheiros que querem passar de iniciantes a intermediários em programação! Apresentamos uma seleção de 15 livros recomendados que são leituras obrigatórias para iniciantes aprenderem conhecimentos básicos e métodos de design no desenvolvimento de software, como ''Código Limpo'' e ''O Programador Pragmático''.'
 ---
 

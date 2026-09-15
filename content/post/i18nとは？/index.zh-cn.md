@@ -5,7 +5,7 @@ date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "术语"]
 draft: false
 image: "img.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '简单明了地讲解软件开发中常听到的“i18n（Internationalization：国际化）”的含义和词源。总结了对应用或系统进行全球化适配时应考虑的字符编码、日期时间格式、货币信息等主要项目。'
 ---
 

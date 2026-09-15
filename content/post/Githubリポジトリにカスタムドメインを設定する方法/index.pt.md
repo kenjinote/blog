@@ -5,7 +5,7 @@ date: 2022-09-13T01:16:40+09:00
 tags: ["Github","Domínio"]
 draft: false
 image: "images/octocat.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Aprenda a configurar um domínio personalizado em seu repositório do GitHub (GitHub Pages). Neste guia, detalhamos os passos para adicionar e alterar os registros A de DNS a partir do painel de controle do ''Onamae.com'' e conectá-los ao GitHub.'
 ---
 Para configurar um domínio personalizado em um repositório Github, você precisa alterar as configurações de DNS do seu domínio.

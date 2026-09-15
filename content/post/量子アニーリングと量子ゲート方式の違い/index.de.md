@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: 'Ein umfassender Vergleich und eine Erklärung der beiden Quantencomputer-Architekturen, Quanten-Annealing und Quantengatter-Modell, anhand von mathematischen Modellen und physikalischen Hintergründen wie Ising-Modell, QUBO-Formulierung, unitären Transformationen und Fehlerkorrektur bis hin zu konkreten Anwendungsfällen.'
 ---

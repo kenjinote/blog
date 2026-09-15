@@ -5,7 +5,7 @@ date: 2024-03-31T16:57:33+09:00
 tags: ["wsl", "處理方法"]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '解說在 WSL 環境中執行「sudo apt update」時，出現「Temporary failure resolving」錯誤的解決方法。介紹變更 DNS 伺服器設定，讓套件管理員通訊恢復正常的步驟。'
 ---
 

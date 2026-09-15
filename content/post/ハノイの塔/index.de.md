@@ -5,7 +5,7 @@ date: 2025-04-17T22:23:14+09:00
 tags: ["Türme von Hanoi", "Algorithmus", "Python"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Am Beispiel des berühmten Puzzles „Türme von Hanoi“ erklären wir auf leicht verständliche Weise mit Python-Beispielcode das Konzept der „rekursiven Aufrufe (rekursiv)“ in der Programmierung. Empfohlen für Anfänger, die die Grundlagen von Algorithmen erlernen möchten.'
 ---
 

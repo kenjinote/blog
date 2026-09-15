@@ -5,7 +5,7 @@ slug: "qsharp-quantum-programming-language-intro"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing"]
+categories: ["programming", "quantum-computing"]
 tags: ["Q#", "Quantum", "Microsoft", "QDK", "Programming"]
 description: 'Menjelaskan secara detail dari dasar mengenai fitur dan sintaks dasar bahasa pemrograman kuantum "Q#", serta konstruksi keterikatan kuantum dan eksekusinya dari bahasa host.'
 ---

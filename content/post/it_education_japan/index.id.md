@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: 'Beberapa tahun setelah pemrograman menjadi wajib di sekolah dasar pada tahun ajaran 2020, kami akan membahas secara mendalam dari perspektif ilmu komputer tentang tantangan mendasar yang dihadapi pendidikan TI Jepang saat ini.'
 ---

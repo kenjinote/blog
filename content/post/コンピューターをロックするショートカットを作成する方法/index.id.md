@@ -5,7 +5,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Kunci Komputer", "Pintasan"]
 draft: false
 image: "img.webp"
-categories: ["PC dan Gadget"]
+categories: ["pc-gadgets"]
 description: 'Menjelaskan dengan mudah beserta gambar, cara membuat pintasan yang mampu mengunci PC Windows dengan satu klik. Juga memperkenalkan cara instan mengunci sistem dengan tombol Win+L, yang sangat bermanfaat sebagai langkah pengamanan saat Anda meninggalkan meja.'
 ---
 

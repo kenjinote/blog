@@ -4,7 +4,7 @@ slug: "LoadIconはDestroyIconを呼び出す必要はない"
 date: 2024-04-19T01:55:17+09:00
 tags: ["أيقونة", "LoadIcon", "DestroyIcon", "برمجة ويندوز"]
 draft: false
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح الشروط الخاصة بما إذا كان يجب استدعاء DestroyIcon لموارد الأيقونات التي تم استردادها بواسطة LoadIcon أو LoadImage في واجهة برمجة تطبيقات Windows (API). قمنا بتوضيح المواصفات الصحيحة لمنع تسرب الموارد (Resource Leaks).'
 ---
 

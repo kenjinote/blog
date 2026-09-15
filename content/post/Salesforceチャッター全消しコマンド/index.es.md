@@ -8,7 +8,7 @@ date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false
 image: "img_1.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Presentamos comandos para eliminar masivamente todas las publicaciones, archivos adjuntos de Chatter y datos de la papelera, muy útiles cuando la capacidad de almacenamiento de la organización en Salesforce está llena. Se trata de un método rápido de limpieza utilizando la Ventana de Ejecución Anónima desde la Consola del Desarrollador.'
 ---
 

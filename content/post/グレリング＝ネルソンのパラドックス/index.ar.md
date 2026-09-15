@@ -7,7 +7,7 @@ slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "منطق"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["مفارقة", "علم الدلالة", "مرجعية ذاتية", "نظرية المجموعات"]
 ---
 

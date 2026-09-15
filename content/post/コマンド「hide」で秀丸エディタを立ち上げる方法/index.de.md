@@ -5,7 +5,7 @@ date: 2024-03-29T23:45:37+09:00
 tags: ["Befehl", "Hidemaru Editor", "Registrierung"]
 draft: false
 image: "img_2.webp"
-categories: ["Werkzeuge und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Wir erklären, wie Sie den Hidemaru Editor in Windows 10/11 schnell starten, indem Sie einfach im Dialogfeld „Ausführen“ oder in der Eingabeaufforderung „hide“ eingeben. Dies ist ein nützliches Anpassungsverfahren mithilfe der App Paths des Registrierungseditors.'
 ---
 

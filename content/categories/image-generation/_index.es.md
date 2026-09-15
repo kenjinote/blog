@@ -1,0 +1,5 @@
+---
+{
+  "title": "Generación de imágenes"
+}
+---

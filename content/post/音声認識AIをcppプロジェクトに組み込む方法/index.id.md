@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "Audio Processing"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "Speech Recognition", "C++"]
 description: 'Panduan lengkap untuk mengintegrasikan AI pengenalan suara berakurasi tinggi ke perangkat edge atau aplikasi native menggunakan C++ dan whisper.cpp. Meliputi dasar-dasar pemrosesan sinyal audio hingga optimasi inferensi real-time.'
 ---

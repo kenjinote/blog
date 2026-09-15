@@ -12,7 +12,7 @@ date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "Explorador de archivos"]
 draft: false
 image: "img.webp"
-categories: ["PC y Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos cómo restaurar el nuevo menú contextual de Windows 11 a la versión clásica de Windows 10. Presentamos un procedimiento sencillo para que siempre se muestre el menú de la antigua especificación modificando la configuración con el Editor del Registro.'
 ---
 

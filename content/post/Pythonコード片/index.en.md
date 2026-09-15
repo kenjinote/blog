@@ -5,7 +5,7 @@ date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "Sample Code"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Introduces a series of practical sample codes using only Python''s standard libraries to download data from an image URL on the web, save it to a temporary file, display it in a browser, and then automatically delete it.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-01-05T00:14:22+09:00
 tags: ["Música Ocidental", "Música"]
 draft: false
 image: "img.webp"
-categories: ["Estilo de vida e Diversos"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Apresentamos famosas músicas ocidentais recomendadas e adoradas em todas as épocas, como de The Beatles, Coldplay e Ed Sheeran. Das baladas que tocam o coração às músicas pop que elevam o ânimo, selecionamos os clássicos de sucesso imperdíveis.'
 ---
 

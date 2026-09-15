@@ -5,7 +5,7 @@ date: 2024-02-08T01:23:01+09:00
 tags: ["工具", "螢幕錄影", "GIF"]
 draft: false
 image: "img.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '介紹可錄製電腦畫面操作並轉換為GIF動畫的免費工具及其下載方法。非常適合在Microsoft Teams等通訊工具中分享。我們將清楚解說從指定操作範圍到錄影的步驟。'
 ---
 

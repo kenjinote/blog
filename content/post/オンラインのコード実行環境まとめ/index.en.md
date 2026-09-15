@@ -5,7 +5,7 @@ date: 2023-04-09T14:01:00+09:00
 tags: ["Online", "Code Execution Environment", "Programming"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Summarizes convenient online code execution environments by language (Python, JavaScript, C++, etc.) that let you easily start programming without needing to set up an environment. Details the features of platforms like Google Colab and AWS Cloud9.'
 ---
 

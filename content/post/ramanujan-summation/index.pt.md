@@ -4,9 +4,7 @@ description: "O que acontece se somarmos infinitamente \"1+2+3+4+...\"? Normalme
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemática"
-  - "Física"
+categories: ["mathematics", "physics"]
 tags:
   - "Série infinita"
   - "Continuação analítica"

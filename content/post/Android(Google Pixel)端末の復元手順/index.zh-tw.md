@@ -5,7 +5,7 @@ date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "還原", "疑難排解"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '您的Google Pixel是否正因不斷重新開機、卡在標誌畫面等嚴重錯誤而讓您感到困擾？本文將詳盡解說如何使用官方修復工具，安全且確實地還原與初始化裝置軟體，以及執行前必須注意的重大事項。'
 ---
 

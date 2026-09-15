@@ -5,7 +5,7 @@ date: 2023-03-19T02:54:30+09:00
 tags: ["Extensões do Chrome", "Navegador", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
-categories: ["TI / Tecnologia"]
+categories: ["it-technology"]
 description: 'Apresentamos extensões recomendadas que agilizam drasticamente a navegação no Google Chrome e Microsoft Edge, como gestos do mouse, bloqueadores de anúncios, tradução DeepL e o uso do ChatGPT na barra lateral.'
 ---
 

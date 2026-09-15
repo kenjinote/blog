@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "éditeur de texte"]
 draft: false
 image: "img.webp"
-categories: ["Outils et environnement de développement"]
+categories: ["tools-development-environment"]
 description: 'Nous expliquons de manière simple la procédure pour installer l''éditeur de texte pour terminal ''micro'', qui fonctionne confortablement dans l''invite de commande, sur Windows, et comment configurer les variables d''environnement pour pouvoir l''utiliser.'
 ---
 

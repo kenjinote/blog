@@ -5,7 +5,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '為您解說如何在GitHub Actions的workflow中動態設定環境變數。以Windows環境為例，介紹寫入「$env:GITHUB_ENV」的步驟，以及在後續步驟中參考變數並應用於建立Release的具體範例。'
 ---
 

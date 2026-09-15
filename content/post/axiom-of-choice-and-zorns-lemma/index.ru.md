@@ -4,7 +4,7 @@ description: "Глубокое погружение в аксиому выбор
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["Математика", "Теория множеств"]
+categories: ["mathematics", "set-theory"]
 tags: ["Аксиома выбора", "Лемма Цорна", "Аксиоматика ZFC", "Основания математики", "Mermaid", "KaTeX"]
 ---
 

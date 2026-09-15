@@ -5,7 +5,7 @@ date: 2022-09-10T00:48:17+09:00
 tags: ["Go", "安裝"]
 draft: false
 image: "images/cover.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '為初學者解說由Google開發的程式語言「Go（Golang）」的安裝方法。從取得安裝程式，到建立Hello World程式、編譯與執行步驟，是首次入門Go語言的最佳選擇。'
 ---
 # 簡介

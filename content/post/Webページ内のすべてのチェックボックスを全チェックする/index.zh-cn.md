@@ -5,7 +5,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "自动化"]
 draft: false
 image: "img.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '讲解如何一键勾选网页内的所有复选框。介绍在Chrome的DevTools控制台中执行的JavaScript代码，以及创建可一键全选/全不选的便捷书签脚本的步骤。'
 ---
 

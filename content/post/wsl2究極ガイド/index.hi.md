@@ -5,7 +5,7 @@ date: '2026-09-12T23:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ['Programming', 'Windows', 'Linux']
+categories: ["programming", "windows", "linux"]
 tags: ['WSL2', 'Docker', 'VSCode', 'Zsh', 'Development Environment']
 description: 'विंडोज़ पर आपके डेवलपमेंट अनुभव को नाटकीय रूप से बेहतर बनाने के लिए एक संपूर्ण WSL2 सेटअप गाइड है। आर्किटेक्चर की विस्तृत व्याख्या से लेकर रिसोर्स ट्यूनिंग, VSCode रिमोट एकीकरण, Docker ऑप्टिमाइज़ेशन और SSH एजेंट साझा करने तक, इसमें वास्तविक डेवलपमेंट के लिए आवश्यक सभी जानकारी शामिल है।'
 ---

@@ -5,7 +5,7 @@ date: 2024-03-30T15:40:24+09:00
 tags: ["檔案總管"]
 draft: false
 image: "img_2.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '解說在 Windows 中結束與重新啟動檔案總管（explorer.exe）的各種方法。淺顯易懂地介紹使用工作列、工作管理員、命令提示字元的步驟。'
 ---
 

@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Mathematical Paradox'
-  - 'Probability Theory'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'Paradox'
   - 'Bayes Theorem'

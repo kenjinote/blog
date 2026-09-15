@@ -5,7 +5,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "復元", "取り消し"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'Gitで誤って「git reset」を実行してしまった際に、リセットを取り消して元のコミット状態に復元する方法を解説します。「git reflog」を使ってコミットIDを確認し、正しく状態を戻す手順を分かりやすく紹介します。'
 ---
 # git resetを取り消す方法

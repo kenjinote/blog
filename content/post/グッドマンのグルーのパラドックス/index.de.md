@@ -7,7 +7,7 @@ slug: "grue-paradox"
 image: "img/grue_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Mathematische Paradoxien", "Philosophie", "Logik"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["Paradoxon", "Induktion", "Grue", "Wissenschaftsphilosophie"]
 ---
 

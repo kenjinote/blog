@@ -3,7 +3,7 @@ title: "O Navio de Teseu: Um navio com todas as peças substituídas é o 'mesmo
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Usando o paradoxo filosófico grego do 'Navio de Teseu' como tema, analisamos profundamente a 'identidade' (identity) associada a refatorização (refactoring), substituição de sistemas e programação orientada a objetos no desenvolvimento de software."
-categories: ["Software Engineering", "Architecture"]
+categories: ["software-engineering", "architecture"]
 tags: ["Navio de Teseu", "Refatorização", "Microsserviços", "Orientação a Objetos", "DDD"]
 slug: "ship-of-theseus"
 ---

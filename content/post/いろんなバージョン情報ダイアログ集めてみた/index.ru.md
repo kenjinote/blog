@@ -5,7 +5,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["Информация о версии", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
-categories: ["ПК и гаджеты"]
+categories: ["pc-gadgets"]
 description: 'Представляем список UI-дизайнов «диалоговых окон с информацией о версии» различных программ и инструментов для ПК, используемых ежедневно, таких как Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge, LINE и т. д.'
 ---
 

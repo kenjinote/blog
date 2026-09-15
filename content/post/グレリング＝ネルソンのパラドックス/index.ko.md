@@ -7,7 +7,7 @@ slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "논리학"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["역설", "의미론", "자기 참조", "집합론"]
 ---
 

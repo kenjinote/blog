@@ -4,10 +4,7 @@ description: "비서 문제(Secretary Problem)란 무엇인가? 최적 정지 �
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "알고리즘"
-  - "의사결정"
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "최적 정지"
   - "비서 문제"

@@ -5,7 +5,7 @@ date: 2023-04-01T03:17:52+09:00
 tags: ["rsut", "egui", "GUIライブラリ", "日本語"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'Rust向けの軽量GUIライブラリ「egui」で日本語を正しく表示するための実装方法を解説します。Windowsのメイリオ（Meiryo）フォントを読み込み、アプリケーションに適用する具体的なコードサンプルを紹介します。'
 ---
 

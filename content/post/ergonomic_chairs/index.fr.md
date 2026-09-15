@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'Explication approfondie de la physique et du choix des chaises ergonomiques qui protègent les télétravailleurs du mal de dos, basée sur la biomécanique. Comparaison des approches structurelles de modèles haut de gamme comme Aeron et Contessa.'
 ---

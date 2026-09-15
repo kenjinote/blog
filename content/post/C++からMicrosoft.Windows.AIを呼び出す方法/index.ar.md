@@ -5,7 +5,7 @@ date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
-categories: ["الأدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'الوصول إلى ميزات الذكاء الاصطناعي باستخدام Windows ML المدمج في نظام Windows! نشرح بطريقة سهلة الفهم مع نماذج برمجية الخطوات المحددة لاستدعاء ''Microsoft.Windows.AI'' من بيئة C++ لتطبيقات Win32 وتشغيل نماذج الذكاء الاصطناعي بتنسيق ONNX.'
 ---
 

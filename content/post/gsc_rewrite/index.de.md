@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Analytics"]
+categories: ["blogging", "seo", "analytics"]
 tags: ["Google Search Console", "Python", "SEO", "BigQuery"]
 description: 'Dieser Artikel erläutert, wie Sie Daten aus der Google Search Console und GA4 integrieren und Python sowie BigQuery nutzen, um technische Artikel strategisch zu überarbeiten. Er deckt datengesteuerte SEO-Maßnahmen wie TF-IDF und CTR-Analyse ab.'
 ---

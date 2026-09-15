@@ -7,7 +7,7 @@ slug: "grue-paradox"
 image: "img/grue_paradox.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "철학", "논리학"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["역설", "귀납법", "그루", "과학철학"]
 ---
 

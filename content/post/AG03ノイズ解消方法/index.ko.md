@@ -8,7 +8,7 @@ date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "노이즈"]
 draft: false
 image: "img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: 'YAMAHA AG03 사용 중 발생하는 ''지직거리는'' 주기적인 노이즈로 고민이신가요? 이 기사에서는 공식 USB 드라이버를 설치 및 업데이트하여 단번에 노이즈를 해소하는 구체적인 절차를 알기 쉽게 해설합니다. 쾌적한 오디오 환경을 되찾으세요!'
 ---
 

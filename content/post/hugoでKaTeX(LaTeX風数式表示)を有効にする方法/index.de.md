@@ -6,7 +6,7 @@ tags: ["KaTeX", "LaTeX", "Formeln", "Mathematik", "hugo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathematik/Kryptographie/Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir erklären die Schritte zur Einführung der schnellen Formel-Rendering-Bibliothek „KaTeX“ in den Static Site Generator Hugo. Von der Erstellung der math.html bis zu den Ladeeinstellungen im Header erfahren Sie ganz einfach, wie Sie die Anzeige von schönen Formeln im LaTeX-Stil auf Ihrem Blog aktivieren.'
 ---
 # Was ist KaTeX

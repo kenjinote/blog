@@ -6,9 +6,7 @@ date: '2026-09-10T02:00:00+09:00'
 image: 'img/banach_tarski.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय विरोधाभास'
-  - 'समुच्चय सिद्धांत'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - 'विरोधाभास'
   - 'चयन का स्वयंसिद्ध'

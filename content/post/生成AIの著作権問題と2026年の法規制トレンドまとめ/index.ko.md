@@ -5,7 +5,7 @@ date: "2026-09-11T23:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Law", "Tech Trends"]
+categories: ["ai", "law", "tech-trends"]
 tags: ["Copyright", "Generative AI", "Law", "2026 Trends"]
 description: '2026년 생성형 AI와 저작권 문제의 최신 동향, EU AI Act, 미국 및 일본의 법 정비, C2PA나 Nightshade 등 기술적 방어 수단에 대해 철저히 해설합니다.'
 ---

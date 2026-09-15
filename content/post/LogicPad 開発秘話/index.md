@@ -5,7 +5,7 @@ date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "開発", "秘話"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '「コードは書けないけどロジックはある人」向けのローコードツール「LogicPad」の誕生秘話。開発の裏側にある作者の個人的な想いや、自身のキャリアへの向き合い方について熱く語ります。'
 ---
 

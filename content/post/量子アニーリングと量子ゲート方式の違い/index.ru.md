@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: 'Подробное сравнение и объяснение двух архитектур квантовых компьютеров: квантового отжига и квантовых вентилей. Рассматриваются математические модели и физические основы, такие как модель Изинга, формулировка QUBO, унитарные преобразования, квантовая коррекция ошибок, а также конкретные примеры использования.'
 ---

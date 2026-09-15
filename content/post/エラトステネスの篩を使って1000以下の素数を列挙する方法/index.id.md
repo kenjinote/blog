@@ -6,7 +6,7 @@ tags: ["Saringan Eratosthenes", "Bilangan Prima", "Matematika", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matematika, Kriptografi, Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Menjelaskan mekanisme dan langkah konkret dari ''Saringan Eratosthenes'', sebuah algoritma yang secara efisien menemukan bilangan prima. Juga memperkenalkan contoh implementasi untuk mencetak daftar bilangan prima di bawah 1000 menggunakan bahasa pemrograman Rust.'
 ---
 

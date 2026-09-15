@@ -5,7 +5,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["Frase", "Expressão"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Introduzimos a ''Navalha de Hanlon'', uma abordagem psicológica que dita: ''Não considere a ação do outro como tendo intenção maligna, mas considere-a uma simples falta de atenção''. Explicamos algumas dicas de como resolver incertezas diárias, como receber uma mensagem do LINE com atraso e diminuir o estresse causado pelos relacionamentos humanos.'
 ---
 

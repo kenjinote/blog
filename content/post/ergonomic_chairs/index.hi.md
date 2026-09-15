@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'बायोमैकेनिक्स के आधार पर, रिमोट वर्कर्स को कमर दर्द से बचाने वाली एर्गोनोमिक कुर्सियों की भौतिकी और उन्हें चुनने के तरीके का विस्तृत विवरण। एरोन चेयर और कॉन्टेसा जैसे प्रीमियम मॉडलों के संरचनात्मक दृष्टिकोण की भी तुलना की गई है।'
 ---

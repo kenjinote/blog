@@ -5,7 +5,7 @@ date: 2024-08-25T16:24:35+09:00
 tags: ["動画", "ショート"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'トッテナムの試合でチームを救いモウリーニョに称賛されたボールボーイの感動エピソードなど、SNSで話題になったおすすめのショート動画リンクをまとめて紹介しています。'
 ---
 1. サッカー　ボールボーイ

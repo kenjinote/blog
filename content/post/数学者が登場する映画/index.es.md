@@ -9,7 +9,7 @@ date: 2022-09-05T10:41:00+09:00
 tags: ["Películas","Matemáticos"]
 draft: false
 image: "images/img.webp"
-categories: ["Matemáticas, Criptografía, Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Te presentamos películas clásicas recomendadas que cuentan con matemáticos geniales como protagonistas. Esta es una selección de obras maestras donde la belleza de las matemáticas se entrelaza con el drama humano, como "Una mente maravillosa", "The Imitation Game" sobre el descifrado de la máquina Enigma y la historia real de Ramanujan "El hombre que conocía el infinito".'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "shortcut keys", "application switching"]
 draft: 
 image: "img.webp"
-categories: ["PC/Gadgets"]
+categories: ["pc-gadgets"]
 description: 'We clearly explain the installation procedure and setting method for a convenient third-party app that realizes application switching like ''Alt+Tab'' on Windows, which is difficult with Mac''s standard features.'
 ---
 

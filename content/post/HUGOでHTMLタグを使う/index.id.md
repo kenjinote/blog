@@ -5,7 +5,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["Manajemen Blog"]
+categories: ["blogging"]
 description: 'Menjelaskan cara agar tag HTML dapat ditulis langsung dan digunakan di dalam artikel Markdown pada pembuat situs statis Hugo. Prosesnya selesai hanya dengan menambahkan pengaturan unsafe dari markup.goldmark.renderer di config.toml.'
 ---
 

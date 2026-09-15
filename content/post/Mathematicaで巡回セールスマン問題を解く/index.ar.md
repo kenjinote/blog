@@ -5,7 +5,7 @@ date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "مشكلة البائع المتجول", "خوارزمية", "رياضيات"]
 draft: false
 image: "img.webp"
-categories: ["الرياضيات والتشفير والكم"]
+categories: ["math-cryptography-quantum"]
 description: 'نشرح كيفية حل مشكلة بائع المتجول (TSP) باستخدام نظام المعالجة الرياضية Mathematica. نقدم خطوات إنشاء مصفوفة المسافات بين المدن باستخدام دالة SparseArray وإيجاد أقصر مسار باستخدام FindShortestTour.'
 ---
 # حل مشكلة البائع المتجول باستخدام Mathematica

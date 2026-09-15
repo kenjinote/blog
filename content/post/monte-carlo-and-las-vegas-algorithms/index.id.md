@@ -3,7 +3,7 @@ title: "Metode Monte Carlo dan Las Vegas: Algoritma 'Terkuat' Menggunakan Bilang
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Penjelasan tentang dua algoritma probabilistik utama yang menggunakan bilangan acak, yaitu metode Monte Carlo dan Las Vegas. Implementasi algoritma konkret dan perbedaan keduanya dirangkum agar mudah dipahami."
-categories: ["Algoritma", "Pemrograman"]
+categories: ["algorithms", "programming"]
 tags: ["Bilangan Acak", "Monte Carlo", "Las Vegas", "Python", "Mermaid", "Math"]
 slug: "monte-carlo-and-las-vegas-algorithms"
 ---

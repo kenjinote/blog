@@ -5,7 +5,7 @@ date: 2023-08-01T23:42:31+09:00
 tags: ["随笔", "感想"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '这是一篇阐述不要对社会上的工作和地位评判优劣、要对所有能完成自己做不到的工作的人致以敬意之重要性的随笔。为您介绍能让人际关系更加融洽、互相尊重的思维要点。'
 ---
 

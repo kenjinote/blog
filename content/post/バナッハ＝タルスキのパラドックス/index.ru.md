@@ -6,9 +6,7 @@ date: '2026-09-10T02:00:00+09:00'
 image: 'img/banach_tarski.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Математические парадоксы'
-  - 'Теория множеств'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - 'Парадокс'
   - 'Аксиома выбора'

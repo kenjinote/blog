@@ -5,7 +5,7 @@ date: "2026-09-13T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Git", "DevOps"]
+categories: ["programming", "git", "devops"]
 tags: ["Git", "Version Control", "Rebase", "Merge"]
 ---
 

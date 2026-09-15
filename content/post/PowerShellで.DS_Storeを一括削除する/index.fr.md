@@ -5,7 +5,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Explique comment supprimer en masse les fichiers .DS_Store des Mac, qui ont tendance à encombrer un environnement Windows, y compris les sous-dossiers en utilisant PowerShell. Vous pouvez facilement nettoyer les fichiers inutiles avec une seule commande courte.'
 ---
 

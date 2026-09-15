@@ -5,7 +5,7 @@ date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "Extensions", "Add-ons"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environment"]
+categories: ["tools-development-environment"]
 description: 'Introduces a list of recommended extensions that make Visual Studio Code (VSCode) even more convenient. We have carefully selected essential plugins that boost development efficiency, such as container management, Git code management, and AI code completion by Copilot.'
 ---
 

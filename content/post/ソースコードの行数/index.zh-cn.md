@@ -5,7 +5,7 @@ date: 2025-04-17T10:33:02+09:00
 tags: ["源代码", "行数"]
 draft: false
 image: "img_1.webp"
-categories: ["IT·技术"]
+categories: ["it-technology"]
 description: '讲解从航天飞机的42万行到Google的20亿行，随着时代发展呈爆炸性增长的源代码行数。介绍代码增加的利弊与引发Bug风险的关系，并分享Linux内核的案例。'
 ---
 

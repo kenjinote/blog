@@ -5,7 +5,7 @@ date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Menjelaskan cara mengatur variabel lingkungan secara dinamis di dalam alur kerja GitHub Actions. Mengambil contoh lingkungan Windows, memperkenalkan langkah menulis ke ''$env:GITHUB_ENV'' dan contoh nyata mereferensikan variabel di langkah berikutnya untuk digunakan dalam pembuatan rilis.'
 ---
 

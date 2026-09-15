@@ -5,7 +5,7 @@ date: 2024-04-16T00:42:27+09:00
 tags: ["QR-Code", "curl", "Eingabeaufforderung"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir zeigen Ihnen, wie Sie textbasierte QR-Codes mithilfe des curl-Befehls in der Windows-Eingabeaufforderung generieren und anzeigen. Da eine externe API (qrenco.de) genutzt wird, erklären wir auch die Besonderheiten im Umgang mit persönlichen Daten.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: 'Dari sandi Caesar kuno, mesin Enigma, kriptografi kunci publik, hingga Kriptografi Pasca-Kuantum (PQC) yang bersiap menghadapi ancaman masa depan yaitu komputer kuantum, kami menjelaskan sejarah epik dan evolusi teknis kriptografi secara menyeluruh.'
 ---

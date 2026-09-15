@@ -5,7 +5,7 @@ date: 2023-03-19T18:13:14+09:00
 tags: ["商业书籍", "书籍"]
 draft: false
 image: "img.webp"
-categories: ["生活方式・杂记"]
+categories: ["lifestyle-miscellaneous"]
 description: '精选推荐《人性的弱点》、《被讨厌的勇气》、《百岁人生》、《高效能人士的七个习惯》等职场人士必读的、有助于自我启发和技能提升的经典名著与商业书籍。'
 ---
 

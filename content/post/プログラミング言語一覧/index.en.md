@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["Programming Language"]
 draft: true
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'We have listed various programming languages, from C, Python, Java, and JavaScript to Rust, Go, OCaml, and Clojure. Check the overview and characteristics of each language as a reference for development and learning.'
 ---
 

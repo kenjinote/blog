@@ -5,7 +5,7 @@ date: 2025-07-21T22:53:03+09:00
 tags: ["Matematika", "Dugaan Kepler", "Penjelasan"]
 draft: false
 image: "img.webp"
-categories: ["Matematika/Kriptografi/Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: '''Bagaimana cara menumpuk semangka serapat mungkin?'' Menjelaskan dengan sederhana ''Konjektur Kepler'', pertanyaan matematika sulit yang muncul dari pertanyaan akrab tersebut. Mari pelajari romantisme dan pesona di balik teka-teki pengepakan bola yang diajukan oleh astronom genius Kepler dan tidak terbukti selama lebih dari 400 tahun.'
 ---
 

@@ -4,7 +4,7 @@ description: "Explicamos en detalle la historia del problema de los cuatro color
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Ciencias de la Computación"]
+categories: ["mathematics", "computer-science"]
 tags: ["Teorema de los Cuatro Colores", "Teoría de Grafos", "Prueba asistida por computadora", "Topología"]
 ---
 

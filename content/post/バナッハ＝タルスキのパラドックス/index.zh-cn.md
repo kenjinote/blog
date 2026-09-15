@@ -6,9 +6,7 @@ date: '2026-09-10T02:00:00+09:00'
 image: 'img/banach_tarski.jpg'
 math: true
 mermaid: true
-categories:
-  - '数学悖论'
-  - '集合论'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - '悖论'
   - '选择公理'

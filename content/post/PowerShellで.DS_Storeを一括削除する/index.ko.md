@@ -9,7 +9,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["프로그래밍"]
+categories: ["programming"]
 description: 'Windows 환경에서 방해가 되기 쉬운 Mac의 .DS_Store 파일을 PowerShell을 사용하여 하위 폴더를 포함해 일괄 삭제하는 방법을 설명합니다. 짧은 명령어 하나로 불필요한 파일을 쉽게 정리할 수 있습니다.'
 ---
 

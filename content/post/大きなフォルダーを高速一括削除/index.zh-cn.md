@@ -5,7 +5,7 @@ date: 2022-09-20T16:04:02+09:00
 tags: ["命令提示符"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '解说在Windows环境下快速批量删除大容量文件夹的方法。原本在资源管理器中需要花费很长时间的删除操作，通过利用命令提示符的DEL和RMDIR命令，可以大幅提升处理速度。'
 ---
 ## 快速批量删除大文件夹

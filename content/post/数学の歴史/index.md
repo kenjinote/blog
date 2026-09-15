@@ -5,7 +5,7 @@ date: 2023-07-22T15:25:10+09:00
 tags: ["数学", "歴史"]
 draft: false
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '数学の歴史を古代の出来事や年表とともに振り返ります。古代ギリシアの三大作図問題（円の方形化・角の三等分・立方体の倍積）やアルキメデスの螺旋、パップスの定理など、数学の発展を支えた重要な発見と歴史的な軌跡を詳しく解説。'
 ---
 

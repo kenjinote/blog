@@ -5,7 +5,7 @@ date: 2025-07-15T18:03:03+09:00
 tags: ["考拉兹猜想", "数学", "编程", "算法"]
 draft: false
 image: "img.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '“偶数减半，奇数乘3加1”不断重复最终必然是1？通俗讲解著名数学未解之谜“考拉兹猜想”的奇妙规则。此外将编写Python程序，实际模拟数列是否收敛于1。'
 ---
 

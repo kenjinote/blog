@@ -6,7 +6,7 @@ tags: ["Matemática"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matemática, Criptografia, Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Apresentamos fórmulas matemáticas fascinantes que permitem que você sinta a profundidade e a beleza da matemática, como o Teorema de Wilson, a Fórmula de Euler, o Último Teorema de Fermat e o Problema de Basileia. Por favor, dê uma olhada nessas muitas fórmulas maravilhosas, que são emocionantes e simples, mas que parecem representar as verdades do mundo.'
 ---
 ## Teorema de Wilson

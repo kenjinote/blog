@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Quantum Computing", "Mathematics"]
+categories: ["cryptography", "quantum-computing", "mathematics"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'Nous expliquons en détail la menace de la compromission cryptographique due à l''avènement des ordinateurs quantiques, et les algorithmes de la cryptographie post-quantique (PQC) du standard NIST tels que Kyber, Dilithium, FALCON, SPHINCS+ pour y faire face, allant des bases mathématiques de la cryptographie sur les réseaux (problème LWE) aux mécanismes détaillés et à la comparaison de leurs performances.'
 ---

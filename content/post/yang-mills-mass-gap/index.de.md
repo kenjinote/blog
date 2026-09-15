@@ -4,9 +4,7 @@ description: "Wir erklären auf verständliche Weise den physikalischen Hintergr
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Physik"
-  - "Mathematik"
+categories: ["physics", "mathematics"]
 tags:
   - "Yang-Mills"
   - "Massenlücke"

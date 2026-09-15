@@ -5,7 +5,7 @@ date: 2022-09-23T01:56:52+09:00
 tags: ["杂记"]
 draft: false
 image: "img.webp"
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '探讨被数学和计算机吸引的原因。讲述其深奥的魅力，例如对所有人平等且规则明确、得出的答案永远正确，以及总有未解决的难题带来适度的挑战性等。'
 ---
 

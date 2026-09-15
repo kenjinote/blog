@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Explains how to build the ''OpenSSL'' cryptographic communication library for C in a Windows environment. Details everything from preparing necessary tools like Perl, NASM, and Visual Studio 2022 to the actual source code build process.'
 ---
 

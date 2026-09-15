@@ -5,7 +5,7 @@ date: 2025-07-15T18:03:03+09:00
 tags: ["Dugaan Collatz", "Matematika", "Pemrograman", "Algoritma"]
 draft: false
 image: "img.webp"
-categories: ["Matematika・Kriptografi・Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Apakah mengulang ''jika genap bagi dua, jika ganjil kali 3 lalu tambah 1'' akan selalu menghasilkan angka 1? Menjelaskan secara ringkas aturan ajaib dari masalah matematika terkenal yang belum terpecahkan, ''Konjektur Collatz''. Selain itu, kami menulis program dengan Python untuk menyimulasikan apakah deret bilangannya benar-benar konvergen ke 1.'
 ---
 

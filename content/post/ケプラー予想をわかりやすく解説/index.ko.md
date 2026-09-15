@@ -13,7 +13,7 @@ date: 2025-07-21T22:53:03+09:00
 tags: ["수학", "케플러 추측", "해설"]
 draft: false
 image: "img.webp"
-categories: ["수학·암호·양자"]
+categories: ["math-cryptography-quantum"]
 description: '''수박을 가장 빽빽하게 채우는 방법은?'' 친숙한 의문에서 비롯된 수학 난제 ''케플러의 추측''에 대해 알기 쉽게 해설합니다. 천재 천문학자 케플러가 제창하고 400년 이상 증명되지 않았던 구 채우기 문제의 로망과 재미를 함께 배워봅시다.'
 ---
 

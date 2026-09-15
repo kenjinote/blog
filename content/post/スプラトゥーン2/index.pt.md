@@ -5,7 +5,7 @@ date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Jogos", "Nintendo Switch"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Apresentamos o charme da obra-prima ''Splatoon 2'' que pode ser jogado por muito tempo e as armas recomendadas (Splattershot Jr., vários Rollers, etc.) para iniciantes. É um diário de jogo sobre como se divertir enquanto se mantém as posições A+ a S+ em batalhas ranqueadas.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["程式語言"]
 draft: true
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '將C語言、Python、Java、JavaScript，以及Rust、Go、OCaml、Clojure等各種程式語言列出了一覽表。確認各語言的概要與特色，作為開發或學習時的參考吧。'
 ---
 

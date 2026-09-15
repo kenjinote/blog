@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Ein umfassender Vergleich von C++ Zeigern und Rusts Ownership- und Borrowing-Modell. Von rohen Zeigern und Smart Pointern bis hin zum Borrow Checker wird das Wesen der Speichersicherheit erklärt.'
 ---

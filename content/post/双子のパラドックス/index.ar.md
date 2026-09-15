@@ -7,7 +7,7 @@ slug: "twin-paradox"
 image: "img/twin_paradox.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "فيزياء"]
+categories: ["mathematical-paradoxes", "physics"]
 tags: ["مفارقة", "النظرية النسبية", "الزمن", "أينشتاين", "الفضاء"]
 ---
 

@@ -3,7 +3,7 @@ title: "中心极限定理（Central Limit Theorem）——任何数据相加都
 description: "详细讲解统计学中最重要的定理之一——中心极限定理，从直观理解到数学证明，再到使用Python进行模拟。"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "统计学"]
+categories: ["mathematics", "statistics"]
 tags: ["中心极限定理", "概率", "数据科学", "Python"]
 slug: "central-limit-theorem"
 ---

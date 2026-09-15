@@ -5,7 +5,7 @@ date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "開發", "牆壁壘", "隨筆"]
 draft: false
 image: "img_1.webp"
-categories: ["AI與科技"]
+categories: ["ai-technology"]
 description: '「只要交給AI就能輕鬆製作應用程式」的時代是真的嗎？即使靠著無程式碼(No-code)或AI生成的程式碼輕鬆完成八成進度，但之後的最終調整與錯誤修正，卻有著令人崩潰的地獄在等著。本文將毫不保留地分享AI開發的真實陷阱，以及所面臨之「門檻」的真面目。'
 ---
 

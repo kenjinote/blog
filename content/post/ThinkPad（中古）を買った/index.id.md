@@ -5,7 +5,7 @@ date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Laptop"]
 draft: false
 image: "img.webp"
-categories: ["TI dan Teknologi"]
+categories: ["it-technology"]
 description: 'Ini adalah artikel ulasan pembelian ThinkPad T470s bekas untuk pekerjaan jarak jauh. Kami memperkenalkan pengalaman penggunaan nyata, termasuk spesifikasi Core i7, RAM 24GB, dan layar LCD WQHD, kondisinya, serta kekurangan seperti tata letak keyboard.'
 ---
 

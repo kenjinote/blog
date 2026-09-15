@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: "We dive deep into the debate between remote work and return-to-office (RTO) in engineering organizations through the lens of sociological communication models (Allen Curve, Conway's Law), productivity metrics (SPACE, DORA), and network architecture (Zero Trust), to explore the true optimal solution."
 ---

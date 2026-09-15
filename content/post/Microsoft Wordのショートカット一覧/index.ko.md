@@ -12,7 +12,7 @@ date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "단축키"]
 draft: false
 image: "img.webp"
-categories: ["도구·개발 환경"]
+categories: ["tools-development-environment"]
 description: 'Microsoft Word(워드)의 작업 효율을 극적으로 높여주는 유용한 단축키 목록입니다. 글자 꾸미기, 복사 및 붙여넣기, 찾기 및 바꾸기, 저장 등 평소 문서 작성이나 편집 시 자주 사용하는 필수 단축키를 알기 쉬운 표로 정리하여 소개합니다.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Shortcuts"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environments"]
+categories: ["tools-development-environment"]
 description: 'A list of useful shortcut keys that dramatically increase work efficiency in Microsoft Word. Introduces essential shortcuts frequently used in everyday document creation and editing, such as text formatting, copy & paste, search & replace, and save, clearly summarized in a table.'
 ---
 ## Shortcuts List

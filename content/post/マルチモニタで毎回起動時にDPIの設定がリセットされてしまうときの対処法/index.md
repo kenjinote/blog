@@ -5,7 +5,7 @@ date: 2024-04-29T19:42:20+09:00
 tags: ["マルチモニタ", "DPI", "コントロールパネル"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'Windows 11環境のマルチディスプレイで、PC起動時に画面のDPI（拡大縮小）設定が勝手にリセットされてしまう現象の解決方法を解説します。コントロールパネルから高速スタートアップを無効化する手順をまとめました。'
 ---
 

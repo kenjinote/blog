@@ -5,7 +5,7 @@ date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "图表", "数学", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["数学·密码·量子"]
+categories: ["math-cryptography-quantum"]
 description: '面向初学者讲解如何使用Google Colaboratory，借助Python的matplotlib.pyplot库轻松绘制并显示正弦波和余弦波图表。无需搭建环境即可立即尝试。'
 ---
 

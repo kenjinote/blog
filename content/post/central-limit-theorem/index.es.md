@@ -3,9 +3,7 @@ title: 'Teorema del límite central: el milagro de que cualquier dato se acerque
 description: Una explicación detallada del teorema del límite central, uno de los teoremas más importantes de la estadística, que abarca la comprensión intuitiva, la prueba matemática y la simulación utilizando Python.
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Matemáticas
-- Estadística
+categories: ["mathematics", "statistics"]
 tags:
 - Teorema del límite central
 - Probabilidad

@@ -5,7 +5,7 @@ date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "self-signed certificate", "installation"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'A clear explanation with PowerShell commands of the specific steps to create and attach a self-signed certificate instead of a commercial one for MSIX packages, which are convenient for test distribution of Windows apps, making them installable in a local environment.'
 ---
 

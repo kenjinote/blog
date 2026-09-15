@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Статистика", "Психология"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["Парадокс", "Теорема Байеса", "Вероятность", "Когнитивное искажение", "Ошибка базового процента"]
 ---
 

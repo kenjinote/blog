@@ -5,7 +5,7 @@ date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: 'HugoのPaperModテーマにおける全体の配色をカスタマイズする方法を解説します。背景色やテキスト色、コードブロック等のスタイル定義が含まれるCSS（blank.css）を編集し、好みのカラースキームを適用するための具体的な変数の設定例を紹介します。'
 ---
 PaperModテーマの配色を変更しました。変更方法は下記を参考にしました。

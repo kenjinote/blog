@@ -7,7 +7,7 @@ slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "哲学", "論理学"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["パラドックス", "自己言及", "法律", "プロタゴラス", "論理"]
 ---
 

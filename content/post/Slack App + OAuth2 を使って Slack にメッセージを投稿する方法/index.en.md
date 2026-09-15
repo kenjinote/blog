@@ -5,7 +5,7 @@ date: 2025-07-16T23:36:27+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
-categories: ["Blog Operation"]
+categories: ["blogging"]
 description: 'Explains how to post messages via the Slack Web API using a Slack App''s OAuth token. Introduces everything from scope configuration and access token retrieval steps to specific C++ implementation code examples using WinHTTP.'
 ---
 

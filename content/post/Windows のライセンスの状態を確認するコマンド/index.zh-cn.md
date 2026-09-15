@@ -5,7 +5,7 @@ date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "许可证", "命令提示符"]
 draft: false
 image: "img_1.webp"
-categories: ["PC・数码"]
+categories: ["pc-gadgets"]
 description: '讲解如何确认Windows许可证是否已正确激活。介绍只需在命令提示符中执行“slmgr”命令，即可轻松检查产品密钥、许可证类型及有效期等详细状态的步骤。'
 ---
 

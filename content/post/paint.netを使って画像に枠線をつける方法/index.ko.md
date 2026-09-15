@@ -9,7 +9,7 @@ date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "테두리", "이미지"]
 draft: false
 image: "img_3.webp"
-categories: ["AI・테크놀로지"]
+categories: ["ai-technology"]
 description: '이미지 편집 소프트웨어 paint.net을 사용하여 이미지에 테두리를 추가하는 방법을 설명합니다. 보조 색상을 통한 색상 지정 및 캔버스 크기 변경을 활용한 테두리 생성 절차를 초보자용으로 소개합니다. 블로그나 자료 작성 시 이미지를 장식하고 싶을 때 바로 활용할 수 있는 편리한 기술입니다.'
 ---
 

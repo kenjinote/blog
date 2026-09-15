@@ -5,7 +5,7 @@ date: 2022-10-01T02:00:59+09:00
 tags: ["Rust", "pengujian"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["pemrograman"]
+categories: ["programming"]
 description: 'Menjelaskan untuk pemula cara menulis kode pengujian di Rust dan prosedur untuk menjalankan pengujian menggunakan perintah cargo test. Kami juga memperkenalkan secara rinci cara menggunakan atribut #[test] dan hasil keluaran jika berhasil atau gagal, lengkap dengan contoh kode spesifik.'
 ---
 

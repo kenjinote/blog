@@ -6,9 +6,7 @@ date: '2026-09-10T09:00:00+09:00'
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Mathematische Paradoxa'
-  - 'Wahrscheinlichkeitstheorie'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'Paradoxon'
   - 'Bedingte Wahrscheinlichkeit'

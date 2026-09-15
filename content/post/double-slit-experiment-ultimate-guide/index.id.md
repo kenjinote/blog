@@ -3,7 +3,7 @@ title: '[Cakupan Lengkap] Penjelasan Menyeluruh dan Mudah Dipahami tentang ''Eks
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Fisika", "Mekanika Kuantum", "Eksperimen celah ganda", "Persamaan Schrödinger"]
-categories: ["Fisika & Sains"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

@@ -5,7 +5,7 @@ date: "2026-09-13T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "App Development"]
+categories: ["programming", "windows", "app-development"]
 tags: ["WinUI 3", "C++", "Windows App SDK", "Microsoft Store", "Personal Project"]
 description: "Artikel blog teknis yang merefleksikan seluruh proses pengembangan 'LogicPad', sebuah aplikasi Windows native, hingga perilisannya di Microsoft Store. Mulai dari implementasi spesifik menggunakan WinUI 3 dan C++ hingga pemaketan MSIX."
 ---

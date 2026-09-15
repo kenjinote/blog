@@ -5,7 +5,7 @@ date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Estudo"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Resumimos os pontos principais para estudar para a qualificação em gerenciamento de projetos ''PMP''. Além do resumo do exame e da linha de aprovação, explicamos os itens importantes correspondentes ao PMBOK 7ª edição, como os 10 princípios da liderança servidora e os 4 valores do Manifesto de Desenvolvimento Ágil de Software.'
 ---
 

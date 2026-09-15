@@ -7,7 +7,7 @@ slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "दर्शनशास्त्र", "तर्कशास्त्र"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["विरोधाभास", "अस्पष्टता", "सोराइटीज़", "फ़ज़ी तर्क"]
 ---
 

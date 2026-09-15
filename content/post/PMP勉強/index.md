@@ -5,7 +5,7 @@ date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "勉強"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'プロジェクトマネジメント資格「PMP」の受験勉強に向けた要点をまとめました。試験の概要や合格ラインに加え、サーバントリーダーシップの10の原則、アジャイルソフトウェア開発宣言の4つの価値観など、PMBOK第7版対応の重要項目を解説します。'
 ---
 

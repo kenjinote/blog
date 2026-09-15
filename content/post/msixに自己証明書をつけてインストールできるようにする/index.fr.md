@@ -5,7 +5,7 @@ date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "Certificat auto-signé", "Installation"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Explique clairement, avec les commandes PowerShell, la procédure spécifique pour créer et attribuer un certificat auto-signé sans utiliser de certificat commercial pour les packages MSIX, utiles pour la distribution de tests d''applications Windows, et les rendre installables dans un environnement local.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: '고대의 카이사르 암호부터 애니그마, 공개키 암호, 그리고 미래의 위협인 양자 컴퓨터에 대비하는 양자 내성 암호(PQC)에 이르기까지, 암호 기술의 장대한 역사와 기술적 진화를 철저히 해설합니다.'
 ---

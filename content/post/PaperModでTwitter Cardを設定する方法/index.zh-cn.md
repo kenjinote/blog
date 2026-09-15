@@ -5,7 +5,7 @@ date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '讲解在Hugo的PaperMod主题中设置Twitter Card的方法。介绍应用于全站的config.toml编写方式，以及在每篇文章的Markdown头部单独指定图片的方法。这有助于在社交网络分享时显示吸睛图片。'
 ---
 # 简介

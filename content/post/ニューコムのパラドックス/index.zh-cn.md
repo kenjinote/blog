@@ -6,9 +6,7 @@ date: '2026-09-10T08:00:00+09:00'
 image: 'img/newcombs_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - '数学悖论'
-  - '博弈论'
+categories: ["mathematical-paradoxes", "game-theory"]
 tags:
   - '悖论'
   - '决定论'

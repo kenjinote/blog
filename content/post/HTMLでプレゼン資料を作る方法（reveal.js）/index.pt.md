@@ -5,7 +5,7 @@ date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "Apresentação"]
 draft: false
 image: "img.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Aprenda a instalar e a usar os recursos básicos do ''reveal.js'', uma ferramenta que permite criar apresentações de forma intuitiva com HTML e Markdown. Oferece suporte a animações, exportação para PDF e funciona muito bem com ferramentas de controle de versão como o Git.'
 ---
 

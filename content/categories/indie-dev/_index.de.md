@@ -1,0 +1,5 @@
+---
+{
+  "title": "Unabhängige Entwicklung"
+}
+---

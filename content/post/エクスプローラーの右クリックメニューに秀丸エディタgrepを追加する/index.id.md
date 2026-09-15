@@ -5,7 +5,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "File Explorer", "Menu klik kanan", "grep", "Registry"]
 draft: false
 image: "img.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Memperkenalkan langkah pengaturan yang berguna untuk menambahkan fitur grep Hidemaru Editor ke menu klik kanan di Explorer pada Windows 10/11. Menjelaskan cara mudahnya dengan jelas, menggunakan file pendaftaran registri.'
 ---
 

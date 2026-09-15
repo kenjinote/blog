@@ -5,7 +5,7 @@ date: "2026-09-13T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Tools", "Windows"]
+categories: ["programming", "tools", "windows"]
 tags: ["Windows Terminal", "PowerShell", "Oh My Posh", "Customization"]
 description: '深入探讨 Windows Terminal 的极致定制方法。全面分析 DirectX 渲染机制、Oh My Posh 与 Starship 的配置，以及配置文件的进阶设置技巧。'
 ---

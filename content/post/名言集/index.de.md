@@ -5,7 +5,7 @@ date: 2022-10-15T17:00:43+09:00
 tags: ["Zitatesammlung"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Größen und Prominenter wie Steve Jobs und Laozi vor, die das Herz berühren. Lassen Sie uns durch Worte, die als Lebenslektionen dienen, und Sprüche, die zur Steigerung der Motivation beitragen, von der Weisheit unserer Vorgänger lernen und Tipps finden, um unser eigenes Leben und unseren Alltag zu bereichern.'
 ---
 

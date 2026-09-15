@@ -5,7 +5,7 @@ date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "एक्सटेंशन", "एक्सटेंशन्स"]
 draft: false
 image: "img.webp"
-categories: ["उपकरण और विकास का वातावरण"]
+categories: ["tools-development-environment"]
 description: 'Visual Studio Code (VSCode) को और अधिक सुविधाजनक बनाने वाले अनुशंसित एक्सटेंशन की एक सूची। हमने विकास दक्षता बढ़ाने के लिए आवश्यक प्लगइन्स का सावधानीपूर्वक चयन किया है, जैसे कंटेनर प्रबंधन, Git कोड प्रबंधन, और Copilot द्वारा AI कोड पूर्णता।'
 ---
 

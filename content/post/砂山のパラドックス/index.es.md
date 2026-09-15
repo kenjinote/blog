@@ -7,7 +7,7 @@ slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Paradojas matemáticas", "Filosofía", "Lógica"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["Paradoja", "Ambigüedad", "Sorites", "Lógica difusa"]
 ---
 

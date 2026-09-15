@@ -4,9 +4,7 @@ description: "« Le dernier théorème de Fermat », le problème non résolu le
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Histoire"
+categories: ["mathematics", "history"]
 tags:
   - "Dernier théorème de Fermat"
   - "Andrew Wiles"

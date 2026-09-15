@@ -5,7 +5,7 @@ date: 2022-09-07T04:40:52+09:00
 tags: ["Criança"]
 draft: false
 image: "images/img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Apresento um episódio reconfortante em que senti a empatia e consideração de uma criança, através da atitude da minha filha de 2 anos cuidando da mãe doente e acamada. Compartilho o registro do desenvolvimento do coração bondoso que pensa nos outros, escondido nas palavras ''Não, porque a mamãe está dormindo!'', e a cura proporcionada na criação dos filhos.'
 ---
 Quando a mãe ficou doente e estava de cama,

@@ -5,7 +5,7 @@ date: 2023-04-02T14:44:17+09:00
 tags: ["圖片素材", "部落格", "Unsplash"]
 draft: false
 image: "img_1.webp"
-categories: ["部落格經營"]
+categories: ["blogging"]
 description: '介紹最適合用於部落格文章的免費照片素材網站「Unsplash」。這是一個免費、可商用、可加工，且不需標註來源或取得使用許可的高品質圖片服務，非常實用。'
 ---
 ## 關於「Unsplash」

@@ -5,7 +5,7 @@ date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Dicas", "Atalhos"]
 draft: false
 image: "img.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Apresentamos uma seleção cuidadosa de teclas de atalho úteis e truques que melhoram a eficiência do trabalho no Windows 11 e Windows 10. É uma coleção de técnicas essenciais úteis para o uso diário, de iniciantes a usuários avançados, incluindo operação de janela, exibição na área de trabalho, entrada de voz e captura de tela.'
 ---
 Esta é uma coleção de pequenas dicas e atalhos úteis para o uso diário do Windows. Espero que seja útil para iniciantes.

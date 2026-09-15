@@ -13,7 +13,7 @@ date: 2025-08-31T20:24:49+09:00
 tags: ["Transmisión de desarrollo de app de tarjetas de Año Nuevo", "YouTube"]
 draft: false
 image: "img.webp"
-categories: ["Tecnología de la Información"]
+categories: ["it-technology"]
 description: 'Primera emisión en YouTube sobre el desarrollo de una aplicación para crear tarjetas de Año Nuevo (Nengajo) usando C++. Explicamos junto con el código fuente el procedimiento de configuración del entorno, que es la base del desarrollo de la aplicación, desde la creación del repositorio GIT, mostrar la ventana principal e inicializar Direct2D hasta la implementación de HelloWorld.'
 ---
 

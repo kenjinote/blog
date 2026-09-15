@@ -6,7 +6,7 @@ tags: ["Mathematics", "Unsolved Problems"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Math, Crypto, Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'We explain fascinating unsolved math problems that remain unproven despite their simple premises. Are there infinitely many perfect numbers? We explore the mysterious problems that continue to puzzle mathematicians, such as Goldbach''s conjecture and the difficult Riemann Hypothesis.'
 ---
 

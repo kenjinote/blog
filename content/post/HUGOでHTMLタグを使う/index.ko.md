@@ -9,7 +9,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["블로그 운영"]
+categories: ["blogging"]
 description: '정적 사이트 생성기 Hugo의 Markdown 기사 내에서 HTML 태그를 직접 작성하여 사용할 수 있도록 하는 방법을 해설합니다. config.toml에 markup.goldmark.renderer의 unsafe 설정을 추가하기만 하면 완료됩니다.'
 ---
 

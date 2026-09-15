@@ -5,7 +5,7 @@ date: 2024-01-06T04:11:01+09:00
 tags: ["邦楽", "音楽"]
 draft: false
 image: "img.webp"
-categories: ["ライフスタイル・雑記"]
+categories: ["lifestyle-miscellaneous"]
 description: 'チューリップ、RADWIMPS、宇多田ヒカルなど、心に響くおすすめの邦楽名曲をご紹介します。懐かしの昭和の名曲から平成のJ-POPヒット曲、定番のバラードまで、世代を超えて愛され続ける日本の素晴らしい音楽の数々をぜひお楽しみください。'
 ---
 

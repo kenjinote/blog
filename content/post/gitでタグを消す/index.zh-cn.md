@@ -5,7 +5,7 @@ date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
-categories: ["工具・开发环境"]
+categories: ["tools-development-environment"]
 description: '简单讲解如何在Git中删除不需要的标签（tag）。涵盖从使用“git tag -d”在本地环境中删除标签，到使用“git push origin --delete”删除远程仓库上标签的方法。'
 ---
 # 删除本地标签

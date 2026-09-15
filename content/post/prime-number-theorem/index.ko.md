@@ -4,9 +4,7 @@ description: "소수의 출현 규칙성에 관한 수학의 금자탑, 소수 �
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "알고리즘"
+categories: ["mathematics", "algorithms"]
 tags:
   - "소수 정리"
   - "리만 가설"

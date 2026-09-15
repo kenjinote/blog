@@ -7,7 +7,7 @@ slug: "grue-paradox"
 image: "img/grue_paradox.jpg"
 math: true
 mermaid: true
-categories: ["数学悖论", "哲学", "逻辑学"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["悖论", "归纳法", "绿蓝", "科学哲学"]
 ---
 

@@ -4,7 +4,7 @@ description: "Il existe des différences de « taille » dans l'infini. Nous exp
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Fondements des mathématiques", "Théorie des ensembles"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Argument de la diagonale", "Infini", "Mathématiques", "Preuve"]
 ---
 

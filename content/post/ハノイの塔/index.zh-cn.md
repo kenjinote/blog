@@ -5,7 +5,7 @@ date: 2025-04-17T22:23:14+09:00
 tags: ["汉诺塔", "算法", "Python"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '以著名益智游戏“汉诺塔”为题材，通过Python示例代码通俗易懂地讲解编程中“递归调用（Recursive）”的概念。推荐给想学习算法基础的初学者。'
 ---
 

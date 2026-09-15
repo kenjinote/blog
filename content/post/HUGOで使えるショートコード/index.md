@@ -5,7 +5,7 @@ date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: 'Hugoブログで使える便利な組み込みショートコード（YouTube、Twitter、Instagram、Vimeoなど）を紹介します。また、記事内でショートコードのエスケープ（無効化）を行う方法など、役立つTipsもあわせて解説します。'
 ---
 # HUGOで使えるショートコード

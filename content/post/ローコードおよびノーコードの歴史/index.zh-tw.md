@@ -5,7 +5,7 @@ date: 2025-04-26T16:46:11+09:00
 tags: ["低代碼", "無代碼", "歷史"]
 draft: false
 image: "img.webp"
-categories: ["IT與技術"]
+categories: ["it-technology"]
 description: '解說從1980年代至今的低程式碼（Low-Code）與無程式碼（No-Code）開發歷史。介紹不需寫程式就能製作應用程式的機制是如何發展的，並分享HyperCard、FileMaker等各年代具代表性的工具。'
 ---
 

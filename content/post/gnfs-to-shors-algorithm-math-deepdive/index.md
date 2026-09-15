@@ -6,7 +6,7 @@ tags: ["量子コンピュータ", "GNFS", "Shorのアルゴリズム", "暗号�
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: 'RSA暗号の安全性を支える素因数分解問題。古典最強のアルゴリズム「一般数体ふるい法（GNFS）」の数学的メカニズムから、量子コンピュータによる「ショアのアルゴリズム」がなぜそれを打ち破るのか、数式と概念図で徹底解説します。'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "fichier exécutable", "analyse"]
 draft: false
 image: "img_1.webp"
-categories: ["PC et Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Nous présentons des outils recommandés pour analyser et décompresser le contenu d''un fichier exécutable Windows (exe). Nous expliquons de manière claire comment utiliser 7-Zip, Resource Hacker, etc., pour vérifier la structure du format PE, extraire des ressources et effectuer des éditions binaires.'
 ---
 

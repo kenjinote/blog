@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'OAuth 2.0の認可コードグラントフローの仕組みを、Slack Appの連携実装を通じて詳細に図解・解説します。Node.jsでの具体的なコード例やセキュリティのベストプラクティスも網羅した完全ガイドです。'
 ---

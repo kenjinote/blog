@@ -5,7 +5,7 @@ date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "图像", "视频", "屏幕截图", "录屏", "截图"]
 draft: false
 image: "img.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '讲解Windows自带屏幕截图工具“Snipping Tool”（截图工具）的基本使用方法。通俗易懂地介绍从使用快捷键快速启动，到截取并保存部分画面，再到视频录屏的操作步骤。'
 ---
 

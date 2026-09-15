@@ -5,7 +5,7 @@ date: 2022-09-06T02:24:11+09:00
 tags: ["Vermischtes"]
 draft: false
 image: "images/img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Dies ist ein Artikel, der persönliche Unstimmigkeiten und Probleme in Bezug auf die japanische Gesellschaft ordnet und untersucht. Er hinterfragt die aktuelle Situation, in der die Schuldenlast junger Menschen durch verzinsliche Studiendarlehen zum Geburtenrückgang führt, sowie den Zustand einer Gesellschaft, in der eine kalte Theorie der Eigenverantwortung vorherrscht, und spricht über die Bedeutung der Unterstützung Schwächerer und des Geistes der gegenseitigen Hilfe.'
 ---
 Ich möchte ordnen, was ich an der japanischen Gesellschaft seltsam finde und was ich darüber denke.

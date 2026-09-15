@@ -5,7 +5,7 @@ date: 2024-09-19T01:10:20+09:00
 tags: ["Computer", "Basic Knowledge"]
 draft: false
 image: "img.webp"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'Explains how computers work in a way that is easy for IT beginners to understand. Summarizes the basic knowledge you should know as IT fundamentals, from the roles of the ''five major components''—input, output, memory, control, and arithmetic—to the relationship between hardware and software (programs).'
 ---
 

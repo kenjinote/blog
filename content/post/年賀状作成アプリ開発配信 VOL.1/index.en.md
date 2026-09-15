@@ -5,7 +5,7 @@ date: 2025-08-31T20:24:49+09:00
 tags: ["New Year's Card Creation App Development Stream", "YouTube"]
 draft: false
 image: "img.webp"
-categories: ["IT / Technology"]
+categories: ["it-technology"]
 description: 'The first YouTube stream of developing a New Year''s card creation app using C++. We explain the steps for setting up the foundational environment for app development with source code, from creating a GIT repository to displaying the main window, initializing Direct2D, and implementing HelloWorld.'
 ---
 

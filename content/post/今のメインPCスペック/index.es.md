@@ -9,7 +9,7 @@ date: 2022-09-08T01:55:00+09:00
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
-categories: ["PC y gadgets"]
+categories: ["pc-gadgets"]
 description: 'He resumido las especificaciones de mi PC principal actual (Core i7-8700K, 32GB de RAM, Windows 11) y mi entorno de trabajo. Introduzco esta configuración actual usando un PC de escritorio de Mouse Computer como un memorándum.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-11T22:59:52+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
-categories: ["إدارة المدونة"]
+categories: ["blogging"]
 description: 'نقدم الأكواد القصيرة المضمنة والمفيدة (YouTube، Twitter، Instagram، Vimeo، إلخ) التي يمكن استخدامها في مدونة Hugo. نشرح أيضًا نصائح مفيدة مثل كيفية تجاوز (إلغاء تفعيل) الأكواد القصيرة داخل المقالات.'
 ---
 # أكواد قصيرة يمكن استخدامها في HUGO

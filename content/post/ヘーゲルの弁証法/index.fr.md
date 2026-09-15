@@ -5,7 +5,7 @@ date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophie", "Hegel", "Dialectique"]
 draft: false
 image: "images/img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Nous expliquons la « dialectique de Hegel », qui consiste à surmonter les oppositions et les contradictions pour évoluer vers une dimension supérieure. À travers des exemples familiers, nous examinons ce concept non seulement en philosophie, mais aussi dans les lois de la nature et l''évolution via la correction de bugs dans les programmes informatiques.'
 ---
 ## Qu'est-ce que la dialectique de Hegel ?

@@ -1,0 +1,5 @@
+---
+{
+  "title": "Stable Diffusion"
+}
+---

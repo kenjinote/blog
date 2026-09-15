@@ -5,7 +5,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "restaurar", "desfazer"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Aprenda a desfazer um ''git reset'' caso tenha executado por engano e restaurar seu commit original. Explicamos claramente como usar o ''git reflog'' para encontrar a ID do commit e reverter o estado corretamente.'
 ---
 # Como desfazer um git reset

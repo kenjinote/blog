@@ -5,7 +5,7 @@ date: 2024-03-29T23:45:37+09:00
 tags: ["perintah", "editor Hidemaru", "registry"]
 draft: false
 image: "img_2.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Menjelaskan cara cepat membuka Hidemaru Editor di Windows 10/11 hanya dengan mengetik ''hide'' dari dialog ''Run'' atau Command Prompt. Ini adalah prosedur penyesuaian yang bermanfaat menggunakan App Paths di Editor Registri.'
 ---
 

@@ -6,7 +6,7 @@ tags: ["埃拉托斯特尼筛法", "素数", "数学", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '通俗易懂地讲解高效寻找素数的算法“埃拉托斯特尼筛法”的原理和具体步骤。同时介绍使用Rust语言列举1000以内素数的代码实现示例。'
 ---
 

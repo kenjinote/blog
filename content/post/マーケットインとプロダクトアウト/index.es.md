@@ -13,7 +13,7 @@ date: 2025-07-15T20:18:22+09:00
 tags: ["Market-in", "Product-out", "Desarrollo", "Negocios", "Poema"]
 draft: false
 image: "img.webp"
-categories: ["Estilo de vida/Notas diversas"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Explicamos de forma sencilla el significado y las diferencias de "Market-in" (enfoque en el mercado) y "Product-out" (enfoque en el producto), términos comunes en los negocios y la planificación, utilizando el ejemplo de una tienda de ramen. Conoce las ventajas y desventajas de cada uno para diseñar una estrategia adaptada a tu situación.'
 ---
 

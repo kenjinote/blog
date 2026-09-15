@@ -7,7 +7,7 @@ slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"
 math: true
 mermaid: true
-categories: ["數學悖論", "哲學", "物理學"]
+categories: ["mathematical-paradoxes", "philosophy", "physics"]
 tags: ["悖論", "芝諾", "運動", "無限", "微積分"]
 ---
 

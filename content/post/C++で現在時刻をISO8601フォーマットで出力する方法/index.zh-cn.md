@@ -5,7 +5,7 @@ date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "日期时间", "ISO8601"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '想用C++将当前时间输出为世界标准的ISO8601格式的工程师必看！本文将易懂地介绍如何利用C++20的std::format和chrono库，智能且简洁地进行当前时间格式转换的代码示例。'
 ---
 

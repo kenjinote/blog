@@ -9,7 +9,7 @@ date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: 'IntelliJ IDEA에서 블로그 집필 등에서 유용한, 현재 날짜 및 시간을 자동 삽입하는 ''Live Template'' 설정 방법을 단계별로 자세히 소개합니다. 매번 입력하는 수고를 덜어보세요.'
 ---
 

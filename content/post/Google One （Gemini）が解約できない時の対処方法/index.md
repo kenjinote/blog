@@ -6,7 +6,7 @@ tags: ["Google One", "Gemini", "解約", "対処方法"]
 draft: false
 image: "img.webp"
 description: 'Geminiの1ヶ月無償体験終了後に月額2,900円のGoogle Oneメンバーシップが自動継続されるのを防ぐための、正しい解約手順を解説します。「解約できない」と悩んでいる方は、本記事の退会方法を参考にしてください。'
-categories: ["プログラミング"]
+categories: ["programming"]
 ---
 
 # 【注意】Geminiの無償体験が終わると請求される？解約のやり方まとめ

@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'نشرح كيفية بناء مكتبة الاتصالات المشفرة للغة C "OpenSSL" في بيئة Windows. نستعرض بالتفصيل تحضير الأدوات اللازمة مثل Perl و NASM و Visual Studio 2022، وصولاً إلى خطوات بناء الكود المصدري الفعلي.'
 ---
 

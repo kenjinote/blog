@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: '現今的AI開發主要以Python為主流，但在邊緣設備或需要高效能的環境中，C++的力量不可或缺。本文將借鏡GGML的思想，以1萬字的規模徹底解說如何只用C++從零開始建構支援CUDA與Metal後端的專屬AI推論引擎。'
 ---

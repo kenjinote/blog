@@ -4,9 +4,7 @@ description: "Peut-on trouver la valeur de pi simplement en laissant tomber une 
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Théorie des probabilités"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "Pi"
   - "Simulation"

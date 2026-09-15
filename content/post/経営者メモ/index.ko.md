@@ -10,7 +10,7 @@ date: 2022-09-07T02:36:11+09:00
 tags: ["경영자"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '유행하는 사업을 찾는 법, 철저한 모방과 개량, 누구나 할 수 있는 시스템화의 포인트 등 경영자가 알아두어야 할 실천적인 메모를 공개합니다. ''기업의 이익을 극대화한다''는 경영 이념의 본질에도 다가갑니다.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: 'Penjelasan rinci mulai dari definisi keunggulan kuantum, eksperimen demonstrasi tahun 2019 menggunakan prosesor Sycamore Google, sanggahan dan pendekatan dari IBM, hingga tren terbaru menuju koreksi kesalahan dan komputasi kuantum toleran kesalahan (FTQC).'
 ---

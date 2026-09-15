@@ -4,7 +4,7 @@ description: "유클리드 평행선 공준에 대한 의문에서 시작하여 
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "물리학"]
+categories: ["mathematics", "physics"]
 tags: ["기하학", "상대성이론", "과학사", "수학"]
 ---
 

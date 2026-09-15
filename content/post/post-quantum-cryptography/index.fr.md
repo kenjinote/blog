@@ -4,7 +4,7 @@ slug: "post-quantum-cryptography"
 tags: ["Technologie de chiffrement", "PQC", "Sécurité", "Technologie de nouvelle génération"]
 image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
-categories: ["Mathématiques, Cryptographie, Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'La cryptographie à clé publique comporte le risque d''être déchiffrée à l''avenir avec l''application pratique des ordinateurs quantiques. Cet article explique en détail les mécanismes et l''importance de la technologie de sécurité de nouvelle génération, la ''Cryptographie Post-Quantique (PQC)'', développée pour contrer cette menace (problème Y2Q).'
 ---
 

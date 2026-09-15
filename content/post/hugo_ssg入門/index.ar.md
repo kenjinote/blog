@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: 'شرح مفصل لخطوات الانتقال من نظام إدارة محتوى ديناميكي مثل WordPress إلى Hugo، منشئ المواقع الثابتة فائق السرعة والمبني على لغة Go. بدءاً من الاختلافات في البنية المعمارية وهيكل القوالب، مروراً بتحليل الأداء الرياضي، وصولاً إلى أوامر الانتقال الفعلية.'
 ---

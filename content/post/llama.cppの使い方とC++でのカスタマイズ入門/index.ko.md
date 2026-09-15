@@ -5,7 +5,7 @@ date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: 'llama.cpp의 기본부터 C++를 활용한 고급 커스터마이징, Transformer의 수학적 배경, ggml 아키텍처 해설까지 총망라한 완전 가이드.'
 ---

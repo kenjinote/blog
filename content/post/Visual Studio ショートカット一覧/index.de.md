@@ -5,7 +5,7 @@ date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Tastenkombinationen" ]
 draft: false
 image: "img.webp"
-categories: ["Tools & Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Eine Zusammenfassung nützlicher Tastenkombinationen für Visual Studio (VS2022), die die Entwicklungseffizienz drastisch verbessern. Sorgfältig ausgewählte, unverzichtbare Tastenkombinationen, die während der Programmierung häufig verwendet werden, wie Debugging, Erstellung und Lesezeichen-Operationen.'
 ---
 

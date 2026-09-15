@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "微積分学"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["パラドックス", "幾何学", "無限", "トリチェリのラッパ"]
 ---
 

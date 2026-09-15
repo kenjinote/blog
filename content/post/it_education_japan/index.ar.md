@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: 'بعد مرور عدة سنوات على جعل تعليم البرمجة إلزاميًا في المدارس الابتدائية في السنة المالية 2020، نتعمق في التحديات الأساسية التي يواجهها تعليم تكنولوجيا المعلومات في اليابان اليوم من منظور علوم الحاسوب.'
 ---

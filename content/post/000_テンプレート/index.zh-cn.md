@@ -4,7 +4,7 @@ slug: "000_模板"
 date: 2022-01-01T00:00:00+09:00
 tags: ["标签1", "标签2"]
 draft: true
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '为您介绍实用的博客文章创作模板。涵盖标题结构、列表、代码块、引用等有助于打造注重SEO的文章的Markdown基本格式。请务必在高效撰写文章时加以利用。'
 ---
 

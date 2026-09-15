@@ -3,7 +3,7 @@ title: "O Argumento do Juízo Final (Doomsday Argument): O 'limite de tempo para
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Em que ponto da história humana nos encontramos? Explicamos o 'Argumento do Juízo Final', que prevê de forma probabilística a extinção da humanidade usando o Princípio de Copérnico e a Inferência Bayesiana, utilizando fórmulas e diagramas."
-categories: ["Probabilidade", "Experiências Mentais", "Filosofia"]
+categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags: ["Inferência Bayesiana", "Argumento do Juízo Final", "Doomsday Argument", "Matemática"]
 slug: "doomsday-argument"
 ---

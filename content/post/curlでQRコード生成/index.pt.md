@@ -5,7 +5,7 @@ date: 2024-04-16T00:42:27+09:00
 tags: ["Código QR", "curl", "Prompt de Comando"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Aprenda a gerar e exibir códigos QR em modo texto no Prompt de Comando do Windows usando o comando curl. Também explicamos as precauções sobre o manuseio de informações pessoais ao usar a API externa (qrenco.de).'
 ---
 

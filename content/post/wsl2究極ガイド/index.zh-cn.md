@@ -5,7 +5,7 @@ date: '2026-09-12T23:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ['Programming', 'Windows', 'Linux']
+categories: ["programming", "windows", "linux"]
 tags: ['WSL2', 'Docker', 'VSCode', 'Zsh', 'Development Environment']
 description: '这是一份能显著提升Windows平台开发体验的WSL2完整配置指南。从架构的详细分析到资源调优、VSCode Remote的协同、Docker的优化、以及SSH Agent的共享，全面涵盖了进行专业开发所需的各类知识。'
 ---

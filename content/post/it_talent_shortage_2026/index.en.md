@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industry", "Career", "AI"]
+categories: ["industry", "career", "ai"]
 tags: ["2026 Problem", "SIer", "Generative AI", "Developer Career"]
 description: "The truth about the '2026 Problem' in the IT industry. A thorough explanation of the polarization of talent demand driven by the rise of Generative AI, and strategies for engineers to survive."
 ---

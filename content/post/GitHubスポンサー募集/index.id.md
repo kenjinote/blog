@@ -5,7 +5,7 @@ date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false
 image: "img.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Proyek kami sedang mencari sponsor GitHub. Dana dukungan yang Anda berikan akan kami manfaatkan dengan saksama sebagai biaya aktivitas untuk menyediakan perangkat lunak yang lebih baik, seperti pengembangan alat yang berguna dan perolehan sertifikat code signing.'
 ---
 

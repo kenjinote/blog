@@ -4,10 +4,7 @@ description: "A deep dive into Zipf's Law, the remarkable mathematical law gover
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Data Science"
-  - "Linguistics"
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Zipf's Law"
   - "Power Law"

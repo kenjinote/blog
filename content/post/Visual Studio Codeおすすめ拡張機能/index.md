@@ -5,7 +5,7 @@ date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "拡張機能", "エクステンション"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'Visual Studio Code（VSCode）をさらに便利にするおすすめ拡張機能を一覧で紹介。コンテナ管理、Gitコード管理、CopilotによるAIコード補完など、開発効率を上げる必須プラグインを厳選しました。'
 ---
 

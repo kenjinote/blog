@@ -5,7 +5,7 @@ date: 2022-09-08T02:22:52+09:00
 tags: ["Motivation", "Videos"]
 draft: false
 image: "images/img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen Videos vor, die die Motivation steigern, wenn Ihre Bemühungen nicht anerkannt werden oder Sie Sorgen haben. Es ist voller Zitate, die das Handeln und das Leben positiv beeinflussen, wie z.B. Yusuke Naritas Ansichten zu vielfältigen Werten und die Denkweise von Regisseur Hayao Miyazaki.'
 ---
 

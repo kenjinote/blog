@@ -4,9 +4,7 @@ description: "شرح مفصل لنظرية الأعداد الأولية (Prime 
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "الخوارزميات"
+categories: ["mathematics", "algorithms"]
 tags:
   - "نظرية الأعداد الأولية"
   - "فرضية ريمان"

@@ -5,7 +5,7 @@ date: 2023-02-07T20:59:01+09:00
 tags: ["font","fontplus"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen den Service „FONTPLUS (fontplus.jp)“ vor, mit dem Sie hochwertige, kostenpflichtige Web-Fonts integrieren können. Der attraktive Punkt ist, dass alle Schriftarten für 1.100 Yen pro Monat verfügbar sind und auch die Nutzung auf mehreren Websites unterstützt wird.'
 ---
 

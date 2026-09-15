@@ -5,7 +5,7 @@ date: 2022-09-04T14:29:09+09:00
 tags: ["雑記","子供"]
 draft: false
 image: "images/today_workplase.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '育児中の限られた時間を使った今日の作業環境についてご紹介します。子供がお昼寝している間が集中できる貴重な時間。子供の机を活用したり、iPadと変換アダプタで工夫したりと、リアルなリモートワークの様子を綴っています。'
 ---
 

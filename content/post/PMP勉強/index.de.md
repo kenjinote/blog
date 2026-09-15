@@ -5,7 +5,7 @@ date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Studium"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Fasst die wesentlichen Punkte für das Studium zur Projektmanagement-Zertifizierung „PMP“ zusammen. Neben dem Prüfungsüberblick und der Bestehensgrenze werden wichtige Themen gemäß der 7. Ausgabe des PMBOK erläutert, wie die 10 Prinzipien der Servant Leadership und die 4 Werte des Agilen Manifests für Softwareentwicklung.'
 ---
 

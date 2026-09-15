@@ -5,7 +5,7 @@ date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "نافذة"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح كيفية إنشاء وعرض نافذة بسيطة في Windows باستخدام `winapi` في Rust. نشرح بالتفصيل الكود المصدري الذي يمثل أساس برمجة واجهة المستخدم الرسومية (GUI)، من إعدادات Cargo.toml إلى تنفيذ إجراء النافذة.'
 ---
 

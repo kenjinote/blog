@@ -3,7 +3,7 @@ title: '【تغطية شاملة】شرح مبسط ومفصل للغز الأك�
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["الفيزياء", "ميكانيكا الكم", "تجربة الشق المزدوج", "معادلة شرودنغر"]
-categories: ["الفيزياء والعلوم"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

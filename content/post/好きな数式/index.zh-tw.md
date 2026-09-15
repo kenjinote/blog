@@ -6,7 +6,7 @@ tags: ["數學"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["數學、密碼學、量子"]
+categories: ["math-cryptography-quantum"]
 description: '介紹能讓人感受到數學深度與美感的迷人數學公式，如威爾遜定理、歐拉公式、費馬最後定理、巴塞爾問題等。請務必看看這些雖然簡單卻彷彿展現了世界真理、令人感動的美麗公式。'
 ---
 ## 威爾遜定理

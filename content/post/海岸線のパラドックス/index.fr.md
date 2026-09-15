@@ -7,7 +7,7 @@ slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Paradoxe Mathématique", "Géométrie"]
+categories: ["mathematical-paradoxes", "geometry"]
 tags: ["Paradoxe", "Fractale", "Mandelbrot", "Infini"]
 ---
 

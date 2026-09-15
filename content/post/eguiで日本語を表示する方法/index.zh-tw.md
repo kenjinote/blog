@@ -5,7 +5,7 @@ date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI 函式庫", "日文"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '為您解說如何在Rust的輕量GUI函式庫「egui」中，正確顯示日文的實作方法。我們將介紹載入Windows的Meiryo（メイリオ）字型並應用於應用程式的具體程式碼範例。'
 ---
 

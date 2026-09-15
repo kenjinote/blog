@@ -5,7 +5,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatisation"]
 draft: false
 image: "img.webp"
-categories: ["gestion de blog"]
+categories: ["blogging"]
 description: 'Nous expliquons comment cocher toutes les cases à cocher d''une page Web en une seule fois. Nous présentons le code JavaScript à exécuter dans la console DevTools de Chrome, ainsi que la procédure pour créer un bookmarklet pratique permettant de tout sélectionner ou désélectionner en un seul clic.'
 ---
 

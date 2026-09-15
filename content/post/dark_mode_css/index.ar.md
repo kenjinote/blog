@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: 'شرح مفصل حول كيفية تصميم CSS متقدم لتنفيذ الوضع الداكن في المدونات وتطبيقات الويب، وتدابير لمنع FOUC، وكيفية استخدام مساحة الألوان (OKLCH) مع مراعاة إمكانية الوصول (WCAG 2.1 AAA).'
 ---

@@ -9,7 +9,7 @@ date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "단축키", "복사 및 붙여넣기"]
 draft:
 image: "img.webp"
-categories: ["PC・가젯"]
+categories: ["pc-gadgets"]
 description: 'Mac과 Windows를 병용할 때 편리한, 복사 및 붙여넣기 바로 가기 키를 Windows 스타일(Ctrl 키 기반)에 맞추기 위한 시스템 환경 설정에서의 보조 키 변경 절차를 소개합니다.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: 'WordPressのような動的CMSから、Go言語ベースの超高速静的サイトジェネレーターであるHugoへの移行手順を詳細に解説します。アーキテクチャの違い、テンプレート構造、数理的パフォーマンス分析から実際の移行コマンドまで。'
 ---

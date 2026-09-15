@@ -6,9 +6,7 @@ date: '2026-09-10T01:00:00+09:00'
 image: 'img/achilles.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय विरोधाभास'
-  - 'अनंत और सीमा'
+categories: ["mathematical-paradoxes", "infinity-and-limits"]
 tags:
   - 'विरोधाभास'
   - 'ज़ेनो'

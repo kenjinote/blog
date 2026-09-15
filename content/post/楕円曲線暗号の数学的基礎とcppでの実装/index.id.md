@@ -5,7 +5,7 @@ date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Kriptografi", "C++", "Matematika"]
+categories: ["cryptography", "cpp", "mathematics"]
 tags: ["ECC", "Kriptografi", "C++", "Matematika"]
 ---
 

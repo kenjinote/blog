@@ -5,7 +5,7 @@ date: 2022-09-07T02:36:11+09:00
 tags: ["Management"]
 draft: false
 image: "images/img.webp"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'We share practical memos that executives should know, such as how to find trending businesses, thorough imitation and improvement, and points of systematization anyone can do. It also delves into the essence of the management philosophy of ''maximizing corporate profits''.'
 ---
 # Finding emerging businesses

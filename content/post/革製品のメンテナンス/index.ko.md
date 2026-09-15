@@ -13,7 +13,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["가죽 제품", "취미"]
 draft: fales
 image: "img.webp"
-categories: ["라이프스타일・잡기"]
+categories: ["lifestyle-miscellaneous"]
 description: '가죽 제품 유지보수 초보자를 위해 M.MOWBRAY의 델리케이트 크림이나 콜로닐의 슈프림 크림 등 실제로 구매해서 좋았던 추천 관리 용품을 소개합니다. 소중한 가죽 아이템을 오래 쓰기 위한 손질법입니다.'
 ---
 

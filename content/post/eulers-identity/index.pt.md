@@ -4,7 +4,7 @@ description: "Uma explicação profunda do contexto e significado da Identidade 
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matemática"]
+categories: ["mathematics"]
 tags: ["Euler", "Matemática", "Ciência"]
 ---
 

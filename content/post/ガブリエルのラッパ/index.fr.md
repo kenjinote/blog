@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["Paradoxes mathématiques", "Calcul infinitésimal"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["Paradoxe", "Géométrie", "Infini", "Trompette de Torricelli"]
 ---
 

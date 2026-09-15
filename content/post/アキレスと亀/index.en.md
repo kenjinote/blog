@@ -6,9 +6,7 @@ date: '2026-09-10T01:00:00+09:00'
 image: 'img/achilles.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Mathematical Paradoxes'
-  - 'Infinity and Limits'
+categories: ["mathematical-paradoxes", "infinity-and-limits"]
 tags:
   - 'Paradox'
   - 'Zeno'

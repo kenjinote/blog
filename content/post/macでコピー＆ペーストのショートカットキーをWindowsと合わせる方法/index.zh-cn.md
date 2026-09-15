@@ -5,7 +5,7 @@ date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "快捷键", "复制粘贴"]
 draft: 
 image: "img.webp"
-categories: ["电脑与数码"]
+categories: ["pc-gadgets"]
 description: '介绍在同时使用Mac和Windows时，从系统偏好设置中更改修饰键的步骤，以便将复制粘贴的快捷键调整为类似Windows（基于Ctrl键）的方式。'
 ---
 

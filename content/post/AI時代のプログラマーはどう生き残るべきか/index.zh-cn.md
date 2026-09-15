@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Tech Career", "AI", "Software Engineering"]
+categories: ["tech-career", "ai", "software-engineering"]
 tags: ["Career", "AI", "Future", "Programming"]
 ---
 

@@ -5,7 +5,7 @@ date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "Janela"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Apresentamos como criar e exibir uma janela simples no Windows usando o `winapi` em Rust. Explicamos detalhadamente o código-fonte que é a base da programação GUI, desde as configurações no Cargo.toml até a implementação do procedimento da janela.'
 ---
 

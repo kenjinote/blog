@@ -5,7 +5,7 @@ date: 2024-12-08T03:32:34+09:00
 tags: ["目标"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '整理了面向以软件开发创业的长期与短期目标设定以及近期任务的商业计划备忘录。公开了从资金筹集、免费/付费软件的发布、实现年销售额100亿日元的愿景，到市场调查和需求分析的具体步骤。'
 ---
 

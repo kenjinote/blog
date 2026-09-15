@@ -6,7 +6,7 @@ tags: ["Mathematics", "Paradox"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Math, Cryptography, Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'If 23 people gather, is the probability of someone having the same birthday over 50%!? We explain the counterintuitive and fascinating phenomenon known as the ''Birthday Paradox'' in an easy-to-understand way, using mathematical reasons and formulas. Let''s experience the wonder of probability.'
 ---
 

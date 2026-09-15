@@ -13,7 +13,7 @@ date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "certificado autofirmado", "instalación"]
 draft: false
 image: "img.webp"
-categories: ["IT / Tecnología"]
+categories: ["it-technology"]
 description: 'Explicamos de manera sencilla con comandos de PowerShell los pasos específicos para crear y añadir un certificado autofirmado, sin usar uno comercial, para que los paquetes MSIX, muy útiles en pruebas de distribución de aplicaciones de Windows, puedan instalarse en un entorno local.'
 ---
 

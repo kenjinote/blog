@@ -4,7 +4,7 @@ description = "شرح مفصل حول حدسية التوأم الأولي، و�
 slug = "twin-prime-conjecture"
 date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
-categories = ["الرياضيات"]
+categories = ["mathematics"]
 tags = ["الأعداد الأولية", "نظرية الأعداد", "مسائل غير محلولة"]
 +++
 

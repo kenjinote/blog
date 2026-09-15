@@ -5,7 +5,7 @@ date: 2022-09-24T02:38:18+09:00
 tags: ["雑記"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '日常生活で感じる「わかる」という感覚の正体について考察。完全な理解がなくても生活できる一方で、深く理解することの価値や、世の中に残る「わからないこと」の面白さについて解説します。'
 ---
 # わかるってなんだろう？

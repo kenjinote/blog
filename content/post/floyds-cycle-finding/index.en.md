@@ -3,9 +3,7 @@ title: "Robert Floyd's Cycle-Finding Algorithm (Tortoise and Hare Algorithm)"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "A detailed explanation of the famous 'Robert Floyd's cycle-finding algorithm (Tortoise and Hare Algorithm)' for detecting cycles in lists and graphs, featuring diagrams, mathematical proofs, and implementation in C++ and Rust."
-categories:
-  - "Algorithms"
-  - "Computer Science"
+categories: ["algorithms", "computer-science"]
 tags:
   - "Algorithm"
   - "C++"

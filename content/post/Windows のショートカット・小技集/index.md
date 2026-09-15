@@ -5,7 +5,7 @@ date: 2022-09-18T23:49:29+09:00
 tags: ["Windows","小技","ショートカット"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'Windows 11やWindows 10で作業効率がアップする便利なショートカットキーや小技を厳選して紹介します。ウィンドウ操作、デスクトップ表示、音声入力、画面キャプチャなど、初心者から上級者まで普段使いに役立つ必須テクニック集です。'
 ---
 Windowsで普段使うちょっとした小技集です。Windowsを使い始めの方に読んでもらえれば幸いです。

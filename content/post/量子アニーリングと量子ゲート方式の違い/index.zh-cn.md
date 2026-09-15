@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: '针对量子退火和量子门模型这两种量子计算机架构，从Ising模型、QUBO公式化、酉变换、纠错等数学模型和物理背景，到具体的用例，进行彻底的比较和解说。'
 ---

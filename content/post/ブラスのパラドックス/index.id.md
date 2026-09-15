@@ -7,7 +7,7 @@ slug: "braess-paradox"
 image: "img/braess_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Teori Permainan"]
+categories: ["mathematical-paradoxes", "game-theory"]
 tags: ["Paradoks", "Jaringan", "Lalu Lintas", "Keseimbangan Nash", "Paradoks Braess"]
 ---
 

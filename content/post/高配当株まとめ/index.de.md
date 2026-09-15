@@ -5,7 +5,7 @@ date: 2024-12-22T00:56:14+09:00
 tags: ["Aktien"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen eine zusammenfassende Liste empfohlener Aktien repräsentativer japanischer Blue-Chip-Unternehmen mit hoher Dividende vor, wie Mitsubishi UFJ, Mitsubishi Corporation, NTT und KDDI. Dies ist eine Liste von Aktien, die Aufmerksamkeit verdienen und ein Muss für diejenigen sind, die eine langfristige Anlage mit dem Ziel von Dividendenerträgen oder den Aufbau eines Portfolios planen.'
 ---
 

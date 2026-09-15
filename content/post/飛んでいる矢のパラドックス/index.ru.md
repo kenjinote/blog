@@ -7,7 +7,7 @@ slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Философия", "Физика"]
+categories: ["mathematical-paradoxes", "philosophy", "physics"]
 tags: ["Парадокс", "Зенон", "Движение", "Бесконечность", "Математический анализ"]
 ---
 

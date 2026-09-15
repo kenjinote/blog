@@ -6,7 +6,7 @@ tags: ["Crivo de Eratóstenes", "Números primos", "Matemática", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matemática, Criptografia, Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicamos os mecanismos e etapas específicas do algoritmo ''Crivo de Eratóstenes'' para encontrar números primos de forma eficiente. Também apresentamos um exemplo de implementação para enumerar números primos menores ou iguais a 1000 usando a linguagem Rust.'
 ---
 

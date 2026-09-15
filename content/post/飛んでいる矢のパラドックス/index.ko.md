@@ -7,7 +7,7 @@ slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "철학", "물리학"]
+categories: ["mathematical-paradoxes", "philosophy", "physics"]
 tags: ["역설", "제논", "운동", "무한", "미적분"]
 ---
 

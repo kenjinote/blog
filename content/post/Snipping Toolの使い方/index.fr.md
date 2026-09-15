@@ -5,7 +5,7 @@ date: 2024-04-01T23:19:45+09:00
 tags: ["Snipping Tool", "Image", "Vidéo", "Capture d'écran", "Enregistrement", "Capture"]
 draft: false
 image: "img.webp"
-categories: ["IT et Technologie"]
+categories: ["it-technology"]
 description: 'Explique l''utilisation de base de ''Snipping Tool'', un outil de capture d''écran intégré à Windows. Présente de manière simple la méthode de lancement rapide avec les raccourcis clavier, la sauvegarde par découpage d''une partie de l''image, jusqu''à la procédure d''enregistrement vidéo de l''écran.'
 ---
 

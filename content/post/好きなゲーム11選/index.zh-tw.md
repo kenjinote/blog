@@ -5,7 +5,7 @@ date: 2022-09-12T19:28:50+09:00
 tags: ["遊戲"]
 draft: false
 image: "img_12.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '介紹11款來自初代Game Boy、超級任天堂等懷舊復古遊戲中的推薦經典之作。包含了「Sa・Ga2 秘寶傳說」、「星之卡比」、「寶可夢 紅／綠」等，即使現在玩也毫不褪色的殿堂級神作。一起回顧經典名作的魅力吧。'
 ---
 回想起喜歡的遊戲，結果全都是殿堂級的作品。

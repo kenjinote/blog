@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industry", "Career", "AI"]
+categories: ["industry", "career", "ai"]
 tags: ["2026 Problem", "SIer", "Generative AI", "Developer Career"]
 description: 'आईटी उद्योग में "2026 की समस्या" का सच। जनरेटिव एआई के उदय के कारण प्रतिभा की मांग में ध्रुवीकरण और इंजीनियरों के जीवित रहने की रणनीतियों की विस्तृत व्याख्या।'
 ---

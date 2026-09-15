@@ -5,7 +5,7 @@ date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environment"]
+categories: ["tools-development-environment"]
 description: 'Explains how to install apps from the command line using ''WinGet'', the Windows 11 package manager. Introduces the steps to quickly deploy and manage major software like Chrome, VSCode, and Slack via the command line.'
 ---
 ## Prerequisites

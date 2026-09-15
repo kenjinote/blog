@@ -5,7 +5,7 @@ date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: 'C++ और ggml का उपयोग करके TinyLLaMA जैसे छोटे AI मॉडल के स्थानीय वातावरण में अनुमान लगाने के लिए विस्तृत विकास प्रक्रिया और आंतरिक वास्तुकला की व्याख्या करता है। मेमोरी मैपिंग, टेंसर ऑपरेशंस, और SIMD ऑप्टिमाइज़ेशन को शामिल करता है।'
 ---

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: '생체 역학을 기반으로 원격 근무자를 요통으로부터 보호하는 인체공학 의자의 물리학과 선택 방법을 철저히 해설. 에어론 체어나 콘테사 등 고급 모델의 구조적 접근법도 비교.'
 ---

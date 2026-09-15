@@ -5,7 +5,7 @@ date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "カレンダー", "テンプレート", "祝日"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '年号と月を入力するだけで、その月の日本の祝日が自動的に反映される便利なExcelカレンダーテンプレートを無料で配布しています。スケジュール管理や業務の効率化にぜひダウンロードしてご活用ください。'
 ---
 

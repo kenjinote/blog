@@ -3,7 +3,7 @@ title: '[Guia Completo] Entenda o ''Experimento da Dupla Fenda'', o Maior Misté
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Física", "Mecânica Quântica", "Experiência da Dupla Fenda", "Equação de Schrödinger"]
-categories: ["Física e Ciência"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

@@ -3,9 +3,7 @@ title: "خوارزمية كشف الحلقات لروبرت فلويد (خوار
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "نشرح بالتفصيل الخوارزمية الشهيرة لاكتشاف الحلقات (الدورات) في القوائم والرسوم البيانية، \"خوارزمية كشف الحلقات لروبرت فلويد (خوارزمية الأرنب والسلحفاة)\"، مع الرسوم التوضيحية والصيغ الرياضية وتنفيذات بلغة C++ و Rust."
-categories:
-  - "Algorithms"
-  - "Computer Science"
+categories: ["algorithms", "computer-science"]
 tags:
   - "Algorithm"
   - "C++"

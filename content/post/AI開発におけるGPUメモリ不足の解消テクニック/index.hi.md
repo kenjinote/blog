@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: 'LLM प्रशिक्षण और अनुमान में सबसे बड़ी बाधा VRAM (GPU मेमोरी) की कमी है। इस लेख में, हम CPU ऑफलोडिंग, KV कैश क्वांटिज़ेशन और ग्रैडिएंट चेकपॉइंटिंग जैसी समाधान तकनीकों को गणितीय सूत्रों और आर्किटेक्चर आरेखों के माध्यम से अच्छी तरह से समझाएंगे।'
 ---

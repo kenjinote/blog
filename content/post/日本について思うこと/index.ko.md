@@ -10,7 +10,7 @@ date: 2022-09-06T02:24:11+09:00
 tags: ["잡기"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・테크놀로지"]
+categories: ["it-technology"]
 description: '일본 사회에 대한 개인적인 위화감이나 과제를 정리·고찰한 기사입니다. 이자부 장학금에 의한 젊은이들의 빚 부담이 저출산을 초래하는 현상이나 차가운 자기책임론이 만연한 사회의 모습에 대해 의문을 던지며, 약자 구제와 공조 정신의 중요성을 이야기합니다.'
 ---
 

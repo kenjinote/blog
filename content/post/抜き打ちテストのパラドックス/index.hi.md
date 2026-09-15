@@ -6,9 +6,7 @@ date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय पैराडॉक्स'
-  - 'तर्कशास्त्र'
+categories: ["mathematical-paradoxes", "logic"]
 tags:
   - 'पैराडॉक्स'
   - 'आत्म-संदर्भ'

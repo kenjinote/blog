@@ -12,7 +12,7 @@ date: 2024-04-06T15:36:54+09:00
 tags: ["Extensión de navegador", "Complemento de Edge", "Actualización automática"]
 draft: false
 image: "img.webp"
-categories: ["Gestión del blog"]
+categories: ["blogging"]
 description: 'Explicamos cómo utilizar la extensión del navegador ''Actualización automática de pestañas'', que permite actualizar páginas web automáticamente de forma regular en Microsoft Edge. Mostramos de forma clara con imágenes desde el método de instalación hasta la configuración del intervalo de actualización y los pasos para detenerlo.'
 ---
 

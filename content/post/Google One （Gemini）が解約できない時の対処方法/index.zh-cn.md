@@ -6,7 +6,7 @@ tags: ["Google One", "Gemini", "取消", "解决方法"]
 draft: false
 image: "img.webp"
 description: '本文讲解如何防止Gemini 1个月免费体验结束后自动续期每月2,900日元的Google One会员，并提供正确的取消步骤。如果您正为“无法取消”而烦恼，请参考本文的退订方法。'
-categories: ["编程"]
+categories: ["programming"]
 ---
 
 # 【注意】Gemini 免费体验结束后会被收费？取消订阅方法汇总

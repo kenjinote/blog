@@ -3,10 +3,7 @@ title: "Paradoks Leluhur: Matematika dan Genetika dari Keruntuhan Silsilah (Pedi
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "'Paradoks Leluhur' di mana jumlah leluhur melebihi populasi dunia pada saat itu jika kita menelusuri generasi ke belakang. Kami akan menjelaskan secara rinci tentang 'Keruntuhan Silsilah (Pedigree Collapse)' yang memecahkan misteri ini dari pendekatan matematis dan perspektif genetika."
-categories:
-  - Mathematical Paradoxes
-  - Genetics
-  - Science
+categories: ["mathematical-paradoxes", "genetics", "science"]
 tags:
   - Teori Probabilitas
   - Genetika

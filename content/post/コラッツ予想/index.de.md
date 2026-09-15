@@ -5,7 +5,7 @@ date: 2025-07-15T18:03:03+09:00
 tags: ["Collatz-Problem", "Mathematik", "Programmieren", "Algorithmus"]
 draft: false
 image: "img.webp"
-categories: ["Mathematik, Kryptographie & Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Ergibt „Gerade Zahlen halbieren, ungerade Zahlen verdreifachen und 1 addieren“ immer 1? Wir erklären leicht verständlich die mysteriösen Regeln der „Collatz-Vermutung“, einem berühmten ungelösten mathematischen Problem. Zusätzlich schreiben wir ein Python-Programm, um zu simulieren, ob die Folge wirklich gegen 1 konvergiert.'
 ---
 

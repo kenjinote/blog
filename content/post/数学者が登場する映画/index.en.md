@@ -5,7 +5,7 @@ date: 2022-09-05T10:41:00+09:00
 tags: ["Movies", "Mathematicians"]
 draft: false
 image: "images/img.webp"
-categories: ["Math/Cryptography/Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'We introduce recommended masterpiece movies featuring genius mathematicians as protagonists. This is a selection of masterpieces where the beauty of mathematics and human drama intersect, such as ''A Beautiful Mind'', ''The Imitation Game'' depicting the breaking of the Enigma code, and Ramanujan''s true story ''The Man Who Knew Infinity''.'
 ---
 Here are my 3 recommended movies featuring mathematician protagonists.

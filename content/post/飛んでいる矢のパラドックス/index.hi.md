@@ -7,7 +7,7 @@ slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "दर्शनशास्त्र", "भौतिकी"]
+categories: ["mathematical-paradoxes", "philosophy", "physics"]
 tags: ["विरोधाभास", "ज़ेनो", "गति", "अनंत", "कैलकुलस"]
 ---
 

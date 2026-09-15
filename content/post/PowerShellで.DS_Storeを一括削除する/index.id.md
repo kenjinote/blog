@@ -5,7 +5,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Menjelaskan cara menghapus massal file .DS_Store Mac, yang sering mengganggu di lingkungan Windows, termasuk subfolder menggunakan PowerShell. Anda dapat dengan mudah membersihkan file yang tidak perlu hanya dengan satu perintah pendek.'
 ---
 

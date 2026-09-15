@@ -12,7 +12,7 @@ date: 2024-05-01T00:15:57+09:00
 tags: ["Excel", "달력", "템플릿", "공휴일"]
 draft: false
 image: "img.webp"
-categories: ["IT·테크놀로지"]
+categories: ["it-technology"]
 description: '연도와 월을 입력하기만 하면 해당 월의 일본 공휴일이 자동으로 반영되는 편리한 Excel 달력 템플릿을 무료로 배포하고 있습니다. 일정 관리나 업무 효율화에 꼭 다운로드하여 활용해 보세요.'
 ---
 

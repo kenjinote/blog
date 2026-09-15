@@ -5,7 +5,7 @@ date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '您正在尋找從原生C++呼叫並執行PowerShell指令碼的方法嗎？本文將詳盡解說在Visual Studio 2022環境中，建立C++/CLI的封裝DLL，並順利實現系統整合的具體實作步驟。'
 ---
 

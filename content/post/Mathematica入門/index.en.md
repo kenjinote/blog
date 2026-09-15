@@ -5,7 +5,7 @@ date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Math", "Algorithm"]
 draft: false
 image: "img.webp"
-categories: ["Math/Cryptography/Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Explains the basic usage and calculation commands of Mathematica for beginners. Summarizes specific examples of frequently used functions such as solving equations and simultaneous equations (Solve), inequalities (Reduce), differentiation (D), integration (Integrate), and matrix calculations.'
 ---
 # Introduction to Mathematica

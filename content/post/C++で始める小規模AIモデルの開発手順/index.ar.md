@@ -5,7 +5,7 @@ date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: 'شرح مفصل لخطوات التطوير والبنية الداخلية لتشغيل الاستدلال لنماذج الذكاء الاصطناعي الصغيرة مثل TinyLLaMA في البيئة المحلية باستخدام C++ و ggml. يغطي تخطيط الذاكرة، عمليات التنسور، وتحسينات SIMD.'
 ---

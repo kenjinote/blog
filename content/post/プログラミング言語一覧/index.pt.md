@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["Linguagem de Programação"]
 draft: true
 image: "img.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Listamos várias linguagens de programação, desde C, Python, Java, JavaScript até Rust, Go, OCaml e Clojure. Confira a visão geral e as características de cada linguagem para servir de referência em seu desenvolvimento ou aprendizado.'
 ---
 

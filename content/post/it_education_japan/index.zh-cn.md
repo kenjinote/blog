@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: '自2020年度小学编程教育必修化以来已过去数年，本文将从计算机科学的视角，深入剖析当前日本IT教育面临的本质性挑战。'
 ---

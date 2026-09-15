@@ -7,7 +7,7 @@ date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "Ruido"]
 draft: false
 image: "img.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: '¿Te molesta ese ruido periódico "rasposo" que se produce mientras usas tu YAMAHA AG03? En este artículo te explicaremos claramente los pasos específicos para instalar/actualizar el controlador USB oficial y eliminar el ruido de una vez por todas. ¡Recuperemos un entorno de audio cómodo!'
 ---
 

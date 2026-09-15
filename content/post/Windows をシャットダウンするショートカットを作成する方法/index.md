@@ -5,7 +5,7 @@ date: 2023-04-11T17:03:32+09:00
 tags: ["Windows", "シャットダウン", "ショートカット"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'デスクトップからワンクリックでWindowsをシャットダウンできる便利なショートカットの作成方法を解説します。「shutdown.exe」コマンドを使った設定手順や、分かりやすいアイコンへの変更方法まで画像付きで詳しく紹介します。'
 ---
 

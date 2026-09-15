@@ -7,7 +7,7 @@ slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Filsafat", "Fisika"]
+categories: ["mathematical-paradoxes", "philosophy", "physics"]
 tags: ["Paradoks", "Zeno", "Gerakan", "Tak Terhingga", "Kalkulus"]
 ---
 

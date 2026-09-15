@@ -5,7 +5,7 @@ date: 2025-07-14T13:47:51+09:00
 tags: ["输入表单", "Web开发", "UX"]
 draft: false
 image: "img.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '基于海外UI指南，解说Web表单中“必填项”标记的最佳实践。总结了星号（*）的正确使用方法、明确标注“Required”，以及为了提高无障碍访问体验而运用ARIA属性的方法。'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-03-19T18:13:14+09:00
 tags: ["ビジネス書", "書籍"]
 draft: false
 image: "img.webp"
-categories: ["ライフスタイル・雑記"]
+categories: ["lifestyle-miscellaneous"]
 description: '『人を動かす』『嫌われる勇気』『LIFE SHIFT』『7つの習慣』など、ビジネスパーソンなら一度は読んでおきたい自己啓発やスキルアップに役立つ名著・おすすめビジネス書を厳選してご紹介します。'
 ---
 

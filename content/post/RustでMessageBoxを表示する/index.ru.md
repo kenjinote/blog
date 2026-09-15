@@ -5,7 +5,7 @@ date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Программирование"]
+categories: ["programming"]
 description: 'Объясняется, как отобразить простое окно сообщения (MessageBox) путем вызова API Windows в Rust с использованием крейтов `winapi` и `user32-sys`, шаг за шагом, от создания проекта до реализации кода.'
 ---
 

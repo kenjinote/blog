@@ -5,7 +5,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["短语", "表达"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '介绍“不要将对方的行为视为恶意，而应认为是单纯的疏忽”这一心理学方法“汉隆剃刀”。讲解如何化解诸如LINE回复慢等日常烦恼，以及减少人际交往压力的启示。'
 ---
 

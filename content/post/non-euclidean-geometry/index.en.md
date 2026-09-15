@@ -4,7 +4,7 @@ description: "From the doubts about Euclid's parallel postulate, to the establis
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Physics"]
+categories: ["mathematics", "physics"]
 tags: ["Geometry", "Relativity", "History of Science", "Math"]
 ---
 

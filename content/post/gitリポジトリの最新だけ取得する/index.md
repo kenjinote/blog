@@ -5,7 +5,7 @@ date: 2024-04-27T02:54:12+09:00
 tags: ["git", "リポジトリ", "コマンド"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'Gitリポジトリの全履歴をダウンロードせず、最新のコミットだけを取得（シャロークローン）する方法を解説。「--depth 1」オプションを使ってディスク容量を節約し、素早くリポジトリをクローンする便利なテクニックです。'
 ---
 

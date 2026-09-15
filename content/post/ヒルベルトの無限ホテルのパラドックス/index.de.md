@@ -6,9 +6,7 @@ date: '2026-09-10T06:00:00+09:00'
 image: 'img/hilberts_hotel.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Mathematische Paradoxien'
-  - 'Mengenlehre'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - 'Paradoxon'
   - 'Unendlichkeit'

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: "エンジニアの生産性を劇的に向上させるハイエンドキーボードを徹底解説。物理学に基づくスイッチの解説からファームウェアの仕組みまで深く掘り下げ、究極の5台を紹介します。"
 ---

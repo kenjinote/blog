@@ -5,7 +5,7 @@ date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome扩展"]
 draft: false
 image: "img.webp"
-categories: ["IT与技术"]
+categories: ["it-technology"]
 description: '介绍能大幅提升Salesforce开发与运维效率的推荐Chrome扩展程序。精选了工程师必看的实用工具，如便于搜索自定义字段和构建SOQL的DevTools，以及对代码搜索有帮助的扩展等。'
 ---
 

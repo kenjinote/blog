@@ -6,7 +6,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["الذكاء الاصطناعي والتكنولوجيا"]
+categories: ["ai-technology"]
 description: 'نشرح بوضوح نظرة عامة على "Mermaid.js"، وهي مكتبة JavaScript تتيح رسم المخططات البيانية ومخططات جانت المستندة إلى النص، والخطوات المحددة لإضافتها وإعدادها لتصبح قابلة للاستخدام في منشئ المواقع الثابتة Hugo.'
 ---
 

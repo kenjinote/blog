@@ -5,7 +5,7 @@ date: 2024-04-29T19:42:20+09:00
 tags: ["Multi-monitor", "DPI", "Control Panel"]
 draft: false
 image: "img.webp"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'We explain how to solve the issue where screen DPI (scaling) settings automatically reset upon PC startup in a Windows 11 multi-display environment. This guide summarizes the steps to disable fast startup from the control panel.'
 ---
 

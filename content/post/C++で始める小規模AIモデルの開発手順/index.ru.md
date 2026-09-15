@@ -5,7 +5,7 @@ date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: 'Подробное руководство по разработке и внутренняя архитектура для локального вывода небольших ИИ-моделей, таких как TinyLLaMA, с использованием C++ и ggml. Охватывает отображение памяти, тензорные вычисления и оптимизацию SIMD.'
 ---

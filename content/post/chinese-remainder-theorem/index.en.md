@@ -4,9 +4,7 @@ description: "A detailed explanation of the Chinese Remainder Theorem (CRT), ori
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Cryptography"
+categories: ["mathematics", "cryptography"]
 tags:
   - "Chinese Remainder Theorem"
   - "CRT"

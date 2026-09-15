@@ -5,7 +5,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatisierung"]
 draft: false
 image: "img.webp"
-categories: ["blog-management"]
+categories: ["blogging"]
 description: 'Wir erklären, wie Sie alle Kontrollkästchen auf einer Webseite auf einmal auswählen. Wir stellen den JavaScript-Code zur Ausführung in der Chrome DevTools-Konsole sowie die Schritte zur Erstellung eines praktischen Bookmarklets vor, mit dem alles mit einem Klick ausgewählt oder abgewählt werden kann.'
 ---
 

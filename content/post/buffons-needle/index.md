@@ -4,9 +4,7 @@ description: "床に針を落とすだけで円周率πが求まる？18世紀�
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "数学"
-  - "確率論"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "円周率"
   - "シミュレーション"

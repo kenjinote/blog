@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: 'Menjelaskan secara rinci prosedur migrasi dari CMS dinamis seperti WordPress ke Hugo, generator situs statis super cepat berbasis bahasa Go. Mulai dari perbedaan arsitektur, struktur template, analisis kinerja matematis hingga perintah migrasi yang sebenarnya.'
 ---

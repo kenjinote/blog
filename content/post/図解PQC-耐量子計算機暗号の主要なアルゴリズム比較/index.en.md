@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Quantum Computing", "Mathematics"]
+categories: ["cryptography", "quantum-computing", "mathematics"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'A comprehensive guide on the threat of cryptography compromise due to the rise of quantum computers and the NIST standard Post-Quantum Cryptography (PQC) algorithms such as Kyber, Dilithium, FALCON, and SPHINCS+ that counter it, from the mathematical foundation of lattice-based cryptography (LWE problem) to detailed mechanisms and performance comparisons.'
 ---

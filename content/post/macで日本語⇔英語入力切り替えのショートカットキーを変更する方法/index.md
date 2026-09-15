@@ -5,7 +5,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "ショートカットキー", "日本語入力"]
 draft:
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'Mac（USキーボード）で日本語と英語の入力切り替えを「Alt + `」などの好きなショートカットキーに変更する方法を解説します。macOS Venturaでの設定手順や、切り替え時にカタカナが含まれるのを防ぐ設定も紹介します。'
 ---
 

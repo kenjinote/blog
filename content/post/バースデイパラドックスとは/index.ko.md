@@ -13,7 +13,7 @@ tags: ["수학", "역설"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["수학・암호・양자"]
+categories: ["math-cryptography-quantum"]
 description: '23명이 모이면 같은 생일인 사람이 있을 확률이 50% 이상!? 직관에 반하는 신기한 현상인 ''생일 문제(Birthday paradox)''에 대해 알기 쉽게 수학적인 이유와 계산식을 사용해 해설합니다. 확률의 신비를 체험해 보세요.'
 ---
 

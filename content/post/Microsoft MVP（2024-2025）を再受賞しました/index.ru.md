@@ -5,7 +5,7 @@ date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Сообщаю о получении награды Microsoft MVP (2024-2025) уже в восьмой раз. Рассказываю об обзоре программы Microsoft MVP, о том, какие виды деятельности оцениваются, о причинах получения награды в этот раз и оглядываюсь на прошедший год.'
 ---
 

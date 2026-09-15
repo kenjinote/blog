@@ -3,7 +3,7 @@ title: "Kapal Theseus: Apakah Kapal yang Semua Bagiannya Telah Diganti Masih 'Ka
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Mengambil tema paradoks filsafat Yunani 'Kapal Theseus', artikel ini mengkaji secara mendalam tentang refactoring, penggantian sistem dalam pengembangan perangkat lunak, serta 'identitas' dalam pemrograman berorientasi objek."
-categories: ["Software Engineering", "Architecture"]
+categories: ["software-engineering", "architecture"]
 tags: ["Kapal Theseus", "Refactoring", "Microservices", "Pemrograman Berorientasi Objek", "DDD"]
 slug: "ship-of-theseus"
 ---

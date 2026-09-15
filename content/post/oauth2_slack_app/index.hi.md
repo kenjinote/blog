@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Slack App एकीकरण के माध्यम से OAuth 2.0 के ऑथराइजेशन कोड ग्रांट फ्लो के काम करने के तरीके की विस्तृत व्याख्या और चित्र। यह एक संपूर्ण गाइड है जिसमें Node.js के विशिष्ट कोड उदाहरण और सुरक्षा की सर्वोत्तम प्रथाएं शामिल हैं।'
 ---

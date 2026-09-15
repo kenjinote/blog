@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: '양자 우월성의 정의부터 Google의 Sycamore 프로세서가 2019년에 수행한 실증 실험, IBM의 반론과 접근법, 그리고 오류 정정과 FTQC(결함 허용 양자 컴퓨팅)를 향한 최신 동향까지 상세하게 해설합니다.'
 ---

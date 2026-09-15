@@ -5,7 +5,7 @@ date: 2024-08-25T16:24:35+09:00
 tags: ["Video", "Shorts"]
 draft: false
 image: "img.webp"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'Introduces a compiled list of recommended short video links that trended on social media, including the touching episode of the ball boy who saved the team during a Tottenham match and was praised by Mourinho.'
 ---
 1. Soccer Ball Boy

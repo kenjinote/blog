@@ -5,7 +5,7 @@ date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "pintasan keyboard", "beralih aplikasi"]
 draft: 
 image: "img.webp"
-categories: ["PC dan Gadget"]
+categories: ["pc-gadgets"]
 description: 'Menjelaskan dengan mudah langkah instalasi dan cara pengaturan aplikasi pihak ketiga praktis yang mewujudkan pergantian aplikasi seperti ''Alt+Tab'' Windows, yang sulit dilakukan dengan fitur bawaan Mac.'
 ---
 

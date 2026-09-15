@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Hugo"]
+categories: ["blogging", "seo", "hugo"]
 tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: '精通Hugo SEO优化的完整指南。从元数据、OGP到JSON-LD结构化数据，全面分析如何通过自定义前置数据和head.html来让访问量实现飞跃式增长。'
 ---

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Workspace"]
+categories: ["gadgets", "productivity", "workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
 description: 'Der ultimative Multi-Display-Aufbau-Guide für Ingenieure. Wir erklären ausführlich visuelle Ergonomie, Bandbreitenberechnungen und wie PPI und Skalierung funktionieren.'
 ---

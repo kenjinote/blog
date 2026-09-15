@@ -5,7 +5,7 @@ date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.webp"
-categories: ["PC・Gadget"]
+categories: ["pc-gadgets"]
 description: 'Nous présentons une commande Terminal pour empêcher la génération automatique de fichiers « .DS_Store » inutiles sur des lecteurs réseau, etc., dans l''environnement macOS. Nous avons également résumé la méthode pour revenir aux paramètres d''origine et la procédure de redémarrage du Finder.'
 ---
 La commande pour empêcher la génération automatique de .DS_Store sur macOS est la suivante.

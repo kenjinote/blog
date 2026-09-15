@@ -5,7 +5,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C", "Números primos", "Algoritmo", "Matemática"]
 draft: false
 image: "img.webp"
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Apresentamos um código de exemplo simples em C que determina, gera e enumera números primos num intervalo especificado (de 1 a n). Com um algoritmo eficiente usando a função isPrime, publicamos exemplos de implementação de programação e explicações que são fáceis de entender, mesmo para iniciantes.'
 ---
 

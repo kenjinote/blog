@@ -5,7 +5,7 @@ date: 2023-04-05T00:49:02+09:00
 tags: ["macos", "mac", "Tastenkombination", "Kopieren und Einfügen"]
 draft: 
 image: "img.webp"
-categories: ["PC-Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Wir stellen die Schritte zum Ändern der Sondertasten über die Systemeinstellungen vor, um die Tastenkombinationen zum Kopieren und Einfügen an den Windows-Stil (basiert auf der Strg-Taste) anzupassen, was praktisch ist, wenn man Mac und Windows parallel nutzt.'
 ---
 

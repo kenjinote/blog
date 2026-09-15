@@ -5,7 +5,7 @@ date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["AI", "Open Source", "LLM"]
+categories: ["ai", "open-source", "llm"]
 tags: ["Llama", "Mistral", "Local AI", "Gemma"]
 description: 'نماذج LLM محلية تحمي الخصوصية ويمكن استخدامها مجاناً. في هذا المقال، سنقارن ونشرح بالتفصيل من منظور تقني أفضل نماذج LLM مفتوحة المصدر مثل Llama 3 و Mistral و Gemma 2 و Qwen 2.5 و Phi-3.'
 ---

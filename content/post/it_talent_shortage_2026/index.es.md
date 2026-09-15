@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industry", "Career", "AI"]
+categories: ["industry", "career", "ai"]
 tags: ["2026 Problem", "SIer", "Generative AI", "Developer Career"]
 description: 'La verdad sobre el "Problema de 2026" en la industria de TI. Explicación exhaustiva de la polarización de la demanda de talento causada por el auge de la IA generativa y las estrategias de supervivencia para los ingenieros.'
 ---

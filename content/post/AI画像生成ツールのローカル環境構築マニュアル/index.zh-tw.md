@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Image Generation", "Stable Diffusion"]
+categories: ["ai", "image-generation", "stable-diffusion"]
 tags: ["Stable Diffusion", "ComfyUI", "Local AI", "Windows", "CUDA"]
 description: '這是一份在Windows本機環境中建置AI圖像生成工具（Stable Diffusion WebUI、ComfyUI、Fooocus）的完整網羅手冊。'
 ---

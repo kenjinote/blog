@@ -5,7 +5,7 @@ date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Erklärt leicht verständlich die Hauptmerkmale der von Mozilla entwickelten Programmiersprache „Rust“. Stellt vor, warum sie gewählt wird, einschließlich schneller Ausführung, keiner Garbage Collection, Speichersicherheit durch Eigentum (Ownership) und Ausleihen (Borrowing) sowie plattformübergreifender Unterstützung.'
 ---
 # Eigenschaften von Rust

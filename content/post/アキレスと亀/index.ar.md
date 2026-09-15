@@ -6,9 +6,7 @@ date: '2026-09-10T01:00:00+09:00'
 image: 'img/achilles.jpg'
 math: true
 mermaid: true
-categories:
-  - 'مفارقات رياضية'
-  - 'اللانهاية والنهايات'
+categories: ["mathematical-paradoxes", "infinity-and-limits"]
 tags:
   - 'مفارقة'
   - 'زينون'

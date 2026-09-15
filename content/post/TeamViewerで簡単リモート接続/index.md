@@ -5,7 +5,7 @@ date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "コマンド", "リモート接続"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'TeamViewerを使って簡単にリモートデスクトップ接続を行う方法を解説します。コマンドラインからIDやパスワードを指定し、ショートカットで接続を自動化・省略する便利な小技もあわせて紹介します。'
 ---
 

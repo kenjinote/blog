@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["सुरक्षा", "समाज", "डेटा विज्ञान"]
+categories: ["security", "society", "data-science"]
 tags: ["प्राइवेसी", "बिग डेटा", "डिफरेंशियल प्राइवेसी", "फेडरेटेड लर्निंग"]
 ---
 

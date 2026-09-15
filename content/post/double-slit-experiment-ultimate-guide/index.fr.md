@@ -3,7 +3,7 @@ title: '[Guide Complet] Explication approfondie et claire du plus grand mystère
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Physique", "Mécanique quantique", "Expérience de la double fente", "Équation de Schrödinger"]
-categories: ["Physique et Science"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

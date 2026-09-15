@@ -5,7 +5,7 @@ date: 2026-01-23T13:43:41+09:00
 tags: ["Japanese First", "Politics", "Social Issues"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'Analyzes the realities of soaring prices and an aging population behind the term ''Japanese First'', which is gaining support in Japan in 2026. Eliminates emotional arguments to examine the true nature of social issues based on objective data and considers what future coexistence should look like.'
 ---
 

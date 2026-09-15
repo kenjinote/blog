@@ -5,7 +5,7 @@ date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "invite de commandes", "PowerToys", "winget"]
 draft: false
 image: "img.webp"
-categories: ["Outils et Environnement de Développement"]
+categories: ["tools-development-environment"]
 description: 'Dans l''environnement Windows, montre la procédure pour installer et désinstaller facilement Microsoft PowerToys en utilisant la commande du gestionnaire de paquets winget. Exécutable immédiatement à partir de l''invite de commande.'
 ---
 

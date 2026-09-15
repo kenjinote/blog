@@ -5,7 +5,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["Langage de programmation"]
 draft: true
 image: "img.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Nous avons listé divers langages de programmation, allant du C, Python, Java, JavaScript à Rust, Go, OCaml et Clojure. Découvrez les aperçus et caractéristiques de chaque langage pour vous aider dans votre développement ou apprentissage.'
 ---
 

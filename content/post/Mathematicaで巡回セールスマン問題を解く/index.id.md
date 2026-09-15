@@ -5,7 +5,7 @@ date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Masalah Pedagang Keliling", "Algoritma", "Matematika"]
 draft: false
 image: "img.webp"
-categories: ["Matematika, Kriptografi, dan Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Menjelaskan cara memecahkan Masalah Pedagang Keliling (TSP) menggunakan sistem pemrosesan rumus matematika Mathematica. Kami memperkenalkan prosedur untuk membuat matriks jarak antar kota menggunakan fungsi SparseArray dan menemukan rute terpendek dengan FindShortestTour.'
 ---
 # Menyelesaikan Masalah Pedagang Keliling dengan Mathematica

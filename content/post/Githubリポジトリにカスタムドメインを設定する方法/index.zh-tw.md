@@ -5,7 +5,7 @@ date: 2022-09-13T01:16:40+09:00
 tags: ["Github","網域"]
 draft: false
 image: "images/octocat.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '解說在GitHub儲存庫（GitHub Pages）設定自訂網域的步驟。本次將介紹從「Onamae.com」的管理畫面新增與變更DNS的A紀錄，並與GitHub連結的具體步驟。'
 ---
 要為 Github 儲存庫設定自訂網域，您需要變更網域的 DNS 設定。

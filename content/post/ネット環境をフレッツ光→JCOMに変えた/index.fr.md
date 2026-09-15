@@ -5,7 +5,7 @@ date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flet's Hikari","Ligne internet"]
 draft: false
 image: "jcom.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'Témoignage du passage de ma ligne internet domestique de FLET''S Hikari à J:COM. Nous passons en revue sans rien cacher nos impressions d''utilisation réelles, comme l''effet d''économie sur la facture mensuelle, l''amélioration de la vitesse de téléchargement, la baisse de la vitesse d''envoi en revanche, et la stabilité de la connexion.'
 ---
 

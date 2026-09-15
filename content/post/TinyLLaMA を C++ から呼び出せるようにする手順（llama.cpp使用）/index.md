@@ -5,7 +5,7 @@ date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'TinyLLaMAをC++から呼び出して実行するためのセットアップ手順を解説。llama.cppのビルドからHuggingFaceからのモデル取得、各種環境での構築方法まで初心者にもわかりやすくまとめました。'
 ---
 

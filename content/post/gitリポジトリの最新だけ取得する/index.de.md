@@ -5,7 +5,7 @@ date: 2024-04-27T02:54:12+09:00
 tags: ["git", "Repository", "Befehl"]
 draft: false
 image: "img.webp"
-categories: ["Tools und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Wir erklären, wie man nur den neuesten Commit abruft (Shallow Clone), ohne die gesamte Historie des Git-Repositories herunterzuladen. Eine nützliche Technik, um Speicherplatz zu sparen und ein Repository schnell mit der Option „--depth 1“ zu klonen.'
 ---
 

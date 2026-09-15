@@ -5,7 +5,7 @@ date: "2026-09-12T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Testing"]
+categories: ["programming", "testing"]
 tags: ["TDD", "C++", "GoogleTest", "CMake"]
 description: 'Полное руководство по внедрению разработки через тестирование (TDD) в проекты на C++. Подробно рассматриваются практический подход с использованием GoogleTest и GoogleMock, а также настройка с помощью CMake.'
 ---

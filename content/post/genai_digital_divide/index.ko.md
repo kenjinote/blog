@@ -6,7 +6,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Society", "Industry"]
+categories: ["ai", "society", "industry"]
 tags: ["Generative AI", "Digital Divide", "LLM", "Productivity"]
 ---
 

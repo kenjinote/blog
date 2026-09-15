@@ -6,7 +6,7 @@ tags: ["数学", "悖论"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '只要聚集23个人，有人生日相同的概率就在50%以上！？我们将使用通俗易懂的数学理由和计算公式，为您解说这一违反直觉的奇妙现象“生日悖论”。让我们一起来体验概率的奥秘吧。'
 ---
 

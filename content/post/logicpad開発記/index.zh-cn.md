@@ -5,7 +5,7 @@ date: "2026-09-13T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "App Development"]
+categories: ["programming", "windows", "app-development"]
 tags: ["WinUI 3", "C++", "Windows App SDK", "Microsoft Store", "Personal Project"]
 description: '这是一篇回顾从原生Windows应用LogicPad的开发到在Microsoft Store发布全过程的技术博客文章。涵盖了使用WinUI 3和C++的具体实现以及MSIX打包等内容。'
 ---

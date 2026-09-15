@@ -5,7 +5,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["科學", "物理學", "半導體"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '介紹解說藍光 LED 實現難度有多高的英文紀錄片。觸及解決了被認為不可能之難題的日本人偉業，以及在國內評價的落差。'
 ---
 

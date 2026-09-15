@@ -5,7 +5,7 @@ date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "扩展", "插件"]
 draft: false
 image: "img.webp"
-categories: ["工具·开发环境"]
+categories: ["tools-development-environment"]
 description: '盘点能让Visual Studio Code（VSCode）更加好用的推荐扩展程序。精选了容器管理、Git代码管理、利用Copilot进行AI代码补全等提升开发效率的必备插件。'
 ---
 

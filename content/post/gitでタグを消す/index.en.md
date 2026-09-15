@@ -5,7 +5,7 @@ date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Development Environment"]
+categories: ["tools-development-environment"]
 description: 'A simple explanation of how to delete tags that are no longer needed in Git. Covers everything from local tag deletion using ''git tag -d'' to deleting tags on the remote repository using ''git push origin --delete''.'
 ---
 # Delete a local tag

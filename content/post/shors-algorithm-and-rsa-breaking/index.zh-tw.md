@@ -4,7 +4,7 @@ slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子電腦", "密碼破解", "Shor演算法", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
-categories: ["數學・密碼・量子"]
+categories: ["math-cryptography-quantum"]
 description: '解說隨著量子電腦的崛起，支撐現代通訊基礎設施的 RSA 加密將面臨何種威脅。從秀爾演算法的機制到 NISQ 時代的硬體現況，探討次世代的密碼破解與安全性的未來。'
 ---
 

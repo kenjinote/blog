@@ -5,7 +5,7 @@ date: 2024-05-05T16:03:33+09:00
 tags: ["Engineer", "Beginner", "Books"]
 draft: false
 image: "img.webp"
-categories: ["Lifestyle/Miscellaneous"]
+categories: ["lifestyle-miscellaneous"]
 description: 'A must-see for engineers looking to step up from programming beginners to intermediate! Carefully selects and introduces 15 must-read books recommended for beginners to learn the basic knowledge and design methods of software development, such as ''The Art of Readable Code'' and ''The Pragmatic Programmer''.'
 ---
 

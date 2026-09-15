@@ -5,7 +5,7 @@ date: 2026-09-05T02:09:08+09:00
 tags: ["Matematika", "Kriptografi", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
-categories: ["Matematika, Kriptografi & Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Menjelaskan mekanisme ''Saringan Medan Angka Umum (GNFS)'', matematika terkuat umat manusia yang menembus enkripsi RSA pelindung komunikasi internet. Menghindari jargon, mengungkap mekanisme algoritma magis yang bisa dipahami hanya dengan pengetahuan matematika tingkat SMP.'
 ---
 

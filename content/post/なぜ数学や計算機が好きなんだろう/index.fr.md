@@ -5,7 +5,7 @@ date: 2022-09-23T01:56:52+09:00
 tags: ["Notes"]
 draft: false
 image: "img.webp"
-categories: ["Mathématiques・Cryptographie・Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Réflexion sur les raisons de l''attrait pour les mathématiques et les ordinateurs. Nous discutons de leur charme profond, tel que le fait d''être égaux pour tous avec des règles claires, que les réponses obtenues sont éternellement justes, et qu''il y a toujours des problèmes non résolus avec un niveau de difficulté approprié.'
 ---
 

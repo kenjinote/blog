@@ -4,7 +4,7 @@ description = "Penjelasan rinci tentang Konjektur Bilangan Prima Kembar, sebuah 
 slug = "twin-prime-conjecture"
 date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
-categories = ["Mathematics"]
+categories = ["mathematics"]
 tags = ["Prime Numbers", "Number Theory", "Unsolved Problems"]
 +++
 

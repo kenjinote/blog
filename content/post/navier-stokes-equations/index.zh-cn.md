@@ -4,7 +4,7 @@ description: "深入探讨克雷数学研究所千禧年大奖难题之一：纳
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "物理学"]
+categories: ["mathematics", "physics"]
 tags: ["纳维-斯托克斯", "流体力学", "千禧年大奖难题"]
 ---
 

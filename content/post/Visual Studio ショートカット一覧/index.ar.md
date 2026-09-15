@@ -5,7 +5,7 @@ date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "اختصارات" ]
 draft: false
 image: "img.webp"
-categories: ["الأدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'جمعنا قائمة باختصارات لوحة المفاتيح المفيدة في برنامج Visual Studio (VS2022) والتي تحسن كفاءة التطوير بشكل كبير. قمنا باختيار أهم الاختصارات المستخدمة بكثرة أثناء البرمجة، مثل التصحيح (Debugging)، والبناء (Building)، وعمليات الإشارات المرجعية (Bookmarks).'
 ---
 

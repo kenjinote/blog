@@ -5,7 +5,7 @@ date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Study"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technology"]
+categories: ["it-technology"]
 description: 'Summarized the key points for studying for the project management certification ''PMP'' exam. In addition to the exam overview and passing score, it explains important topics compatible with PMBOK 7th Edition, such as the 10 principles of servant leadership and the 4 values of the Agile Software Development Manifesto.'
 ---
 

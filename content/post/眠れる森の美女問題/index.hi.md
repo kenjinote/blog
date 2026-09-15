@@ -6,9 +6,7 @@ date: '2026-09-10T09:00:00+09:00'
 image: 'img/sleeping_beauty.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय विरोधाभास (Math Paradox)'
-  - 'प्रायिकता सिद्धांत (Probability Theory)'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'विरोधाभास (Paradox)'
   - 'सशर्त प्रायिकता (Conditional Probability)'

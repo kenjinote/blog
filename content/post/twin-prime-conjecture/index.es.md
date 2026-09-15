@@ -4,7 +4,7 @@ description = "Se explica en detalle la conjetura de los números primos gemelos
 slug = "twin-prime-conjecture"
 date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
-categories = ["Matemáticas"]
+categories = ["mathematics"]
 tags = ["Números primos", "Teoría de números", "Problemas no resueltos"]
 +++
 

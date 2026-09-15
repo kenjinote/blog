@@ -7,7 +7,7 @@ slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "기하학"]
+categories: ["mathematical-paradoxes", "geometry"]
 tags: ["역설", "프랙탈", "만델브로", "무한"]
 ---
 

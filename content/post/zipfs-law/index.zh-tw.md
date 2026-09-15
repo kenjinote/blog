@@ -4,10 +4,7 @@ description: 使用公式和插圖深入探討齊普夫定律，這是統治世�
 slug: zipfs-law
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- 數學
-- 數據科學
-- 語言學
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
 - 齊普夫定律
 - 冪律

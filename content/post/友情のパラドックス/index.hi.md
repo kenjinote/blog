@@ -7,7 +7,7 @@ slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "नेटवर्क सिद्धांत"]
+categories: ["mathematical-paradoxes", "network-theory"]
 tags: ["विरोधाभास", "ग्राफ़ सिद्धांत", "SNS", "सांख्यिकी"]
 ---
 

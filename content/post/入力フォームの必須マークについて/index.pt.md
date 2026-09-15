@@ -5,7 +5,7 @@ date: 2025-07-14T13:47:51+09:00
 tags: ["Formulário", "Desenvolvimento Web", "UX"]
 draft: false
 image: "img.webp"
-categories: ["Operação do Blog"]
+categories: ["blogging"]
 description: 'Explicaremos as melhores práticas para a marca de ''campo obrigatório'' em formulários web, com base em diretrizes de UI internacionais. Resumimos como usar o asterisco (*) corretamente, especificar claramente ''Required'' e como usar atributos ARIA para melhorar a acessibilidade.'
 ---
 

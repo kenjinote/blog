@@ -5,7 +5,7 @@ date: 2024-04-16T00:42:27+09:00
 tags: ["Code QR", "curl", "Invite de commandes"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Nous présentons comment générer et afficher un code QR textuel en utilisant la commande curl dans l''invite de commande Windows. Étant donné l''utilisation d''une API externe (qrenco.de), nous expliquons également les précautions à prendre concernant le traitement des informations personnelles.'
 ---
 

@@ -4,7 +4,7 @@ slug: "Dugaan P≠NP"
 date: 2024-09-11T02:22:39+09:00
 tags: ["Dugaan P≠NP", "Matematika", "Masalah belum terpecahkan"]
 draft: false
-categories: ["Matematika, kriptografi, dan kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Tentang masalah tak terpecahkan terbesar dalam ilmu komputer, ''Dugaan P≠NP'', kami menjelaskan gambaran umumnya dengan mudah dipahami dari perspektif mesin Turing deterministik, disertai dengan perbedaan antara ''Kelas P'' yang dapat dipecahkan dalam waktu polinomial dan ''Kelas NP'' yang validitas solusinya dapat diverifikasi dalam waktu polinomial.'
 ---
 

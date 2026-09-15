@@ -5,7 +5,7 @@ date: '2026-09-12T23:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ['Programming', 'Windows', 'Linux']
+categories: ["programming", "windows", "linux"]
 tags: ['WSL2', 'Docker', 'VSCode', 'Zsh', 'Development Environment']
 description: 'دليل إعداد شامل لنظام WSL2 يحسن بشكل كبير من تجربة التطوير على نظام التشغيل ويندوز. يغطي جميع المعارف اللازمة للتطوير الاحترافي، بدءاً من الشرح التفصيلي للبنية المعمارية إلى ضبط الموارد، وربط VSCode Remote، وتحسين Docker، ومشاركة وكيل SSH.'
 ---

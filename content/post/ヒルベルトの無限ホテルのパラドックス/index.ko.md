@@ -6,9 +6,7 @@ date: '2026-09-10T06:00:00+09:00'
 image: 'img/hilberts_hotel.jpg'
 math: true
 mermaid: true
-categories:
-  - '수학 역설'
-  - '집합론'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - '역설'
   - '무한'

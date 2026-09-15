@@ -9,7 +9,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "경로", "실행 파일", "명령 프롬프트"]
 draft: false
 image: "img.webp"
-categories: ["PC・가젯"]
+categories: ["pc-gadgets"]
 description: 'Windows의 명령 프롬프트나 PowerShell에서 실행 파일의 저장 위치(전체 경로)를 쉽게 찾는 방법을 해설합니다. ''where'' 명령을 사용하여 패스가 설정된 앱의 정확한 배치 위치를 빠르게 특정하는 유용한 팁을 소개합니다.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "噪音"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '您正在为使用YAMAHA AG03时产生的“沙沙”规律性噪音而烦恼吗？本文将为您简单明了地讲解通过安装和更新官方USB驱动来一次性消除噪音的具体步骤。让我们找回舒适的音频环境吧！'
 ---
 

@@ -3,7 +3,7 @@ title: "忒修斯之船：全部替換過的船還是「原來的船」嗎？從
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "以希臘哲學悖論「忒修斯之船」為題材，深入探討軟體開發中的重構、系統替換，以及物件導向中的「同一性」。"
-categories: ["Software Engineering", "Architecture"]
+categories: ["software-engineering", "architecture"]
 tags: ["忒修斯之船", "重構", "微服務", "物件導向", "DDD"]
 slug: "ship-of-theseus"
 ---

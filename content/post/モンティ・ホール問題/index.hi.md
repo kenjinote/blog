@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय विरोधाभास'
-  - 'प्रायिकता सिद्धांत'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'विरोधाभास'
   - 'बायेस की प्रमेय'

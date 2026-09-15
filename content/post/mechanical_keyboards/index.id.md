@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'Penjelasan mendalam tentang keyboard high-end yang secara dramatis meningkatkan produktivitas engineer. Menggali lebih dalam dari mekanisme switch berdasarkan fisika hingga cara kerja firmware, serta memperkenalkan 5 keyboard pamungkas.'
 ---

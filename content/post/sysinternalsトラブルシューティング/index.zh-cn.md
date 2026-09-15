@@ -5,7 +5,7 @@ date: "2026-09-13T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Windows", "Troubleshooting", "System Admin"]
+categories: ["windows", "troubleshooting", "system-administration"]
 tags: ["Sysinternals", "ProcMon", "Process Explorer", "Windows"]
 description: 'Windows故障排除的终极指南。深入讲解使用Sysinternals工具进行内核级分析的方法。'
 ---

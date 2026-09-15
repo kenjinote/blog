@@ -6,9 +6,7 @@ date: '2026-09-10T08:00:00+09:00'
 image: 'img/newcombs_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Mathematische Paradoxien'
-  - 'Spieltheorie'
+categories: ["mathematical-paradoxes", "game-theory"]
 tags:
   - 'Paradoxon'
   - 'Determinismus'

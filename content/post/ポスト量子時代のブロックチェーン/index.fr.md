@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: "L'arrivée du 'Q-Day', où la puissance de calcul phénoménale des ordinateurs quantiques ébranlera les fondements de la blockchain. De l'effondrement de l'ECDSA par l'algorithme de Shor aux stratégies de transition vers la cryptographie post-quantique (PQC), nous expliquons en profondeur l'avenir des crypto-actifs sous un angle technique."
 ---

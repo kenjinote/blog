@@ -4,9 +4,7 @@ description: "古代中国の算術書に起源を持つ中国剰余定理（CRT
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "数学"
-  - "暗号理論"
+categories: ["mathematics", "cryptography"]
 tags:
   - "中国剰余定理"
   - "CRT"

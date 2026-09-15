@@ -5,7 +5,7 @@ date: "2026-09-13T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "Automation"]
+categories: ["programming", "windows", "automation"]
 tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: '這是一份使用 PowerShell 完全自動化日常 Windows 工作的實踐指南。內文將解說備份、日誌監控與 Slack 通知、多個儲存庫的 Git 更新與建置等具體實例。'
 ---

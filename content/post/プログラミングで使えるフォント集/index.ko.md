@@ -12,7 +12,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["프로그래밍", "폰트"]
 draft: false
 image: "img.webp"
-categories: ["프로그래밍"]
+categories: ["programming"]
 description: 'JetBrains Mono, HackGen, Ricty Diminished, Cica, Migu 등 코딩에 최적인 프로그래밍용 폰트를 소개합니다. 에디터의 가독성을 높여 개발 효율을 향상시켜 보세요.'
 ---
 

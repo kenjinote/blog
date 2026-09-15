@@ -5,7 +5,7 @@ date: 2025-05-26T22:23:34+09:00
 tags: ["Teori Konspirasi", "Puisi"]
 draft: false
 image: "img.webp"
-categories: ["IT dan Teknologi"]
+categories: ["it-technology"]
 description: 'Memberikan pencerahan mengenai metode penataan ''keamanan pikiran'' yang dibutuhkan demi mencegah diri terjerumus ke dalam teori konspirasi di dunia maya (internet). Ini merupakan petunjuk tentang cara hidup cerdas di tengah masyarakat jaringan era modern, seperti petunjuk pencarian informasi agar menghindar dari bias konfirmasi, serta daya tahan agar tidak terburu-buru menyimpulkan antara ketidakpastian dan jawaban.'
 ---
 

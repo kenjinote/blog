@@ -5,7 +5,7 @@ date: 2024-09-18T00:56:59+09:00
 tags: ["Die Geschichte vom alten Ehepaar und dem Esel", "Satire"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'Anhand der berühmten Fabel „Das alte Ehepaar und der Esel“ untersuchen wir die schädlichen Auswirkungen davon, sich zu sehr um die Meinung anderer zu kümmern, und das moderne zwischenmenschliche Problem „Auf wessen Stimme sollte man hören?“. Wir bieten Tipps, wie Sie leben können, ohne sich von den Meinungen anderer beeinflussen zu lassen.'
 ---
 

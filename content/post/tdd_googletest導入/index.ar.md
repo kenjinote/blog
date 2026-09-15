@@ -5,7 +5,7 @@ date: "2026-09-12T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Testing"]
+categories: ["programming", "testing"]
 tags: ["TDD", "C++", "GoogleTest", "CMake"]
 description: 'دليل كامل لتقديم التطوير الموجه بالاختبار (TDD) إلى مشاريع C++. سنشرح بالتفصيل المنهج العملي باستخدام GoogleTest و GoogleMock، وطريقة التكوين باستخدام CMake.'
 ---

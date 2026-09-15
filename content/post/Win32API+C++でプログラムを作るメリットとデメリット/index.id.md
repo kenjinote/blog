@@ -5,7 +5,7 @@ date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "Pemrograman", "Pengembangan", "Teknologi"]
 draft: false
 image: "img_1.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Seorang insinyur aktif menjelaskan kelebihan dan kekurangan pengembangan aplikasi Windows menggunakan ''Win32API + C++''. Memperkenalkan daya tarik khas pengembangan native, seperti kecepatan eksekusi super cepat, kontrol fleksibel, tidak memerlukan runtime sehingga mudah didistribusikan, serta tantangan dalam mempelajarinya.'
 ---
 # Daya Tarik dan Tantangan Pengembangan dengan Win32API + C++

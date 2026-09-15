@@ -5,7 +5,7 @@ date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "Unduh"]
 draft: false
 image: "img_1.webp"
-categories: ["TI dan Teknologi"]
+categories: ["it-technology"]
 description: 'Menjelaskan dengan mudah cara menggunakan alat baris perintah ''yt-dlp'' untuk mengunduh dan menyimpan video YouTube dalam resolusi tinggi, serta mengekstrak dan menyimpannya sebagai file audio mp3. Meliputi semuanya dari instalasi hingga penggunaannya.'
 ---
 # Apa itu yt-dlp

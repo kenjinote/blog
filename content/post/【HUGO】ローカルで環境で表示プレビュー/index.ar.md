@@ -5,7 +5,7 @@ date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
-categories: ["إدارة المدونة"]
+categories: ["blogging"]
 description: 'نشرح بوضوح خطوات تثبيت منشئ المواقع الثابتة "Hugo" في بيئة Windows، وكيفية إعداد مسار متغير البيئة Path، وكيفية استخدام الأوامر لتشغيل خادم محلي ومعاينة مقالات المدونة.'
 ---
 # تثبيت HUGO

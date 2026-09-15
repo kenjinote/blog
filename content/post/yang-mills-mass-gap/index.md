@@ -4,9 +4,7 @@ description: "ミレニアム懸賞問題の一つである「ヤン＝ミルズ
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Physics"
-  - "Mathematics"
+categories: ["physics", "mathematics"]
 tags:
   - "Yang-Mills"
   - "Mass Gap"

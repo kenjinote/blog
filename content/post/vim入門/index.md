@@ -5,7 +5,7 @@ date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "テキストエディタ"]
 draft: false
 image: "img.webp"
-categories: ["ツール・開発環境"]
+categories: ["tools-development-environment"]
 description: 'Vimの基本的な使い方を初心者向けに解説します。Windows環境でのインストール方法をはじめ、起動と終了のコマンド（保存や強制終了など）、コマンドモードと入力モードの違いなど、最初のステップを完全網羅。'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Health", "Productivity", "Data Science"]
+categories: ["health", "productivity", "data-science"]
 tags: ["Oura Ring", "Wearables", "Python", "Biohacking"]
 description: 'Управляемое данными руководство по управлению здоровьем для максимизации производительности путем корреляционного анализа с использованием Python и Pandas данных о ВСР и сне, полученных со смарт-колец, таких как Oura Ring, и Apple Watch, с продуктивностью кодирования из WakaTime.'
 ---

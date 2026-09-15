@@ -4,9 +4,7 @@ description: अराजकता सिद्धांत और तितल�
 slug: chaos-theory
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- विज्ञान
-- गणित
+categories: ["science", "mathematics"]
 tags:
 - अराजकता सिद्धांत
 - भौतिक विज्ञान

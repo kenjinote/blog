@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Saúde", "Produtividade", "Ciência de Dados"]
+categories: ["health", "productivity", "data-science"]
 tags: ["Oura Ring", "Wearables", "Python", "Biohacking"]
 description: 'Uma técnica de gerenciamento de saúde baseada em dados para maximizar o desempenho, analisando a correlação entre VFC e dados de sono obtidos do Oura Ring e Apple Watch, com a produtividade de codificação do WakaTime usando Python e Pandas.'
 ---

@@ -5,7 +5,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "Chemin", "Fichier exécutable", "Invite de commandes"]
 draft: false
 image: "img.webp"
-categories: ["PC et Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Nous expliquons comment trouver facilement l''emplacement de sauvegarde (chemin complet) d''un fichier exécutable à l''aide de l''invite de commande de Windows ou de PowerShell. Nous présentons une astuce pratique utilisant la commande ''where'' pour localiser rapidement l''emplacement exact d''une application dans le PATH.'
 ---
 

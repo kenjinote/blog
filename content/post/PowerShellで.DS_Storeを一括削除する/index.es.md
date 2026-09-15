@@ -8,7 +8,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["Programación"]
+categories: ["programming"]
 description: 'Explicamos cómo eliminar masivamente los molestos archivos .DS_Store de Mac en un entorno Windows, incluyendo subcarpetas, utilizando PowerShell. Puedes limpiar archivos innecesarios fácilmente con un solo comando corto.'
 ---
 

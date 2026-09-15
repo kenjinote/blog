@@ -6,9 +6,7 @@ date: '2026-09-10T12:00:00+09:00'
 image: 'img/richards_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - '数学パラドックス'
-  - '集合論'
+categories: ["mathematical-paradoxes", "set-theory"]
 tags:
   - 'パラドックス'
   - '対角線論法'

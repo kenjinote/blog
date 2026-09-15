@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: 'Several years have passed since programming education became mandatory in elementary schools in 2020. This article deeply explores the fundamental challenges currently facing IT education in Japan from the perspective of computer science.'
 ---

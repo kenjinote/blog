@@ -5,7 +5,7 @@ date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["IA", "LLM", "C++", "Programación"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["llama.cpp", "C++", "LLM", "IA", "Personalización"]
 description: 'Guía completa que abarca desde los conceptos básicos de llama.cpp hasta la personalización avanzada con C++, el trasfondo matemático de los Transformers y la explicación de la arquitectura ggml.'
 ---

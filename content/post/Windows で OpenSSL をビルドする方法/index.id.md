@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Menjelaskan cara build pustaka komunikasi terenkripsi untuk bahasa C, ''OpenSSL'', di lingkungan Windows. Memperkenalkan secara rinci mulai dari persiapan alat yang dibutuhkan seperti Perl, NASM, dan Visual Studio 2022, hingga prosedur build kode sumber yang sebenarnya.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["Phrase", "Ausdruck"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen den psychologischen Ansatz „Hanlons Rasiermesser“ vor: „Betrachten Sie das Verhalten anderer nicht als Bösartigkeit, sondern als bloße Unachtsamkeit“. Wir erläutern Tipps, wie man mit alltäglichem Ärger wie verspäteten LINE-Antworten umgeht und Stress in zwischenmenschlichen Beziehungen abbaut.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "DevOps", "Web Hosting"]
+categories: ["blogging", "devops", "web-hosting"]
 tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: '这是一份关于如何利用Cloudflare Pages和GitHub Pages免费且高速地托管基于Hugo的静态网站的完整技术指南。深入分析边缘计算、CDN架构和CI/CD流水线的细节。'
 ---

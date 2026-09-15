@@ -5,7 +5,7 @@ date: "2026-09-13T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "App Development"]
+categories: ["programming", "windows", "app-development"]
 tags: ["WinUI 3", "C++", "Windows App SDK", "Microsoft Store", "Personal Project"]
 description: 'Um artigo de blog técnico que relembra todo o processo de desenvolvimento do aplicativo nativo para Windows chamado LogicPad até seu lançamento na Microsoft Store. Desde a implementação detalhada usando WinUI 3 e C++ até o empacotamento MSIX.'
 ---

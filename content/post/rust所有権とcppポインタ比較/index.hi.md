@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'C++ पॉइंटर्स और Rust के स्वामित्व/उधार मॉडल की गहन तुलना। हम रॉ पॉइंटर्स और स्मार्ट पॉइंटर्स से लेकर बरो चेकर तक, मेमोरी सुरक्षा के सार की व्याख्या करते हैं।'
 ---

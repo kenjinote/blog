@@ -4,7 +4,7 @@ slug: "P!=NP Conjecture"
 date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP conjecture", "Math", "Unsolved problems"]
 draft: false
-categories: ["Math/Cryptography/Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Provides an easy-to-understand overview of the biggest unsolved problem in computer science, the ''P≠NP conjecture'', from the perspective of a deterministic Turing machine, incorporating the difference between ''Class P'' (solvable in polynomial time) and ''Class NP'' (solution validity can be verified in polynomial time).'
 ---
 

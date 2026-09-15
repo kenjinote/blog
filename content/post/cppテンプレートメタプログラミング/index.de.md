@@ -5,7 +5,7 @@ date: "2026-09-12T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "C++"]
+categories: ["programming", "cpp"]
 tags: ["C++", "Metaprogramming", "constexpr", "Concepts"]
 description: 'Eine umfassende Erklärung der Geschichte der Template-Metaprogrammierung in C++, von SFINAE und constexpr bis hin zu den neuesten C++20 Concepts.'
 ---

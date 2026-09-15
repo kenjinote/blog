@@ -9,7 +9,7 @@ date: 2022-09-02T07:23:00+09:00
 tags: ["Notas diversas"]
 draft: false
 image: "images/komeda.webp"
-categories: ["Gestión del blog"]
+categories: ["blogging"]
 description: 'He creado un nuevo blog personal utilizando el generador de sitios estáticos "Hugo". Planeo usarlo como un bloc de notas relajado para compartir mis notas técnicas, código de programación y pequeños acontecimientos diarios.'
 ---
 

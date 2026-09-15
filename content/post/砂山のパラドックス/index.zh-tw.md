@@ -7,7 +7,7 @@ slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"
 math: true
 mermaid: true
-categories: ["數學悖論", "哲學", "邏輯學"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["悖論", "模糊性", "索瑞特斯", "模糊邏輯"]
 ---
 

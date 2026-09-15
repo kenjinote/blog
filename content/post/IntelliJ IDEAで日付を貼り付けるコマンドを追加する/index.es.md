@@ -8,7 +8,7 @@ date: 2022-09-04T05:59:04+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Presentamos detalladamente, paso a paso, cómo configurar una "Live Template" en IntelliJ IDEA para insertar automáticamente la fecha y la hora actuales, muy útil cuando escribes en un blog u otras tareas similares. Ahórrate el esfuerzo de escribirla cada vez.'
 ---
 

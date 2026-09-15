@@ -5,7 +5,7 @@ date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "SIM 卡鎖定"]
 draft: false
 image: "img.webp"
-categories: ["PC・小工具"]
+categories: ["pc-gadgets"]
 description: '淺顯易懂地解說如何從設定畫面輕鬆確認您手邊的iPhone是否有設定SIM卡鎖定，或是已經解鎖。可作為轉換至平價SIM卡或購買二手手機時的參考。'
 ---
 

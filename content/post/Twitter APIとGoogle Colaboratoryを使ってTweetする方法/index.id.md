@@ -5,7 +5,7 @@ date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Menjelaskan prosedur untuk menjalankan cuitan otomatis di Python (tweepy) menggunakan Twitter API dan Google Colaboratory. Anda dapat langsung mencobanya dengan salin tempel, mulai dari pengaturan kunci API hingga kode aktual.'
 ---
 

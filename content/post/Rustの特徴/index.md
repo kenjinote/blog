@@ -5,7 +5,7 @@ date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'Mozillaが開発するプログラミング言語「Rust」の主な特徴を分かりやすく解説します。高速な動作、ガベージコレクションなし、所有権と借用によるメモリの安全性、クロスプラットフォーム対応など、選ばれる理由を紹介します。'
 ---
 # Rust（ラスト）の特徴

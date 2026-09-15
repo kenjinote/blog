@@ -7,7 +7,7 @@ slug: "braess-paradox"
 image: "img/braess_paradox.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "ゲーム理論"]
+categories: ["mathematical-paradoxes", "game-theory"]
 tags: ["パラドックス", "ネットワーク", "交通", "ナッシュ均衡", "ブラスのパラドックス"]
 ---
 

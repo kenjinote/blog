@@ -5,7 +5,7 @@ date: 2026-01-23T13:43:41+09:00
 tags: ["Japonais d'abord", "Politique", "Problèmes de société"]
 draft: false
 image: "img.webp"
-categories: ["IT et technologie"]
+categories: ["it-technology"]
 description: 'Analyse de la réalité de l''inflation et du vieillissement de la population en déclin derrière l''expression ''Les Japonais d''abord'', qui gagne du soutien dans le Japon de 2026. Nous examinons la véritable nature des problèmes sociaux sur la base de données objectives, en écartant les arguments émotionnels, et discutons de la façon dont nous devrions coexister à l''avenir.'
 ---
 

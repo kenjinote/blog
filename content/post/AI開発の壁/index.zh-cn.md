@@ -5,7 +5,7 @@ date: 2025-07-20T21:52:42+09:00
 tags: ["AI", "开发", "墙壁垒", "随笔"]
 draft: false
 image: "img_1.webp"
-categories: ["AI・技术"]
+categories: ["ai-technology"]
 description: '“拜托AI就能轻松开发应用”的时代真的到来了吗？即使借助无代码或AI生成代码轻松完成了八成的进度，其后的最终调整和bug修复也面临着让人崩溃的地狱。本文将赤裸裸地讲述AI开发中真实的陷阱与所面临“墙壁垒”的真相。'
 ---
 

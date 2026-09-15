@@ -5,7 +5,7 @@ date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Награда"]
 draft: false
 image: "img.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Сообщаю о получении награды Microsoft MVP (2023-2024) в категории Developer Technologies. Это седьмая подряд награда с 2017 года. Я оглядываюсь назад на свою деятельность по распространению информации в технических блогах и участие в сообществе.'
 ---
 

@@ -5,7 +5,7 @@ date: 2025-04-16T01:58:03+09:00
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
-categories: ["البرمجة"]
+categories: ["programming"]
 description: 'هل تبحث عن طريقة لاستدعاء وتشغيل سكربتات PowerShell من C++ الأصلي؟ نشرح بالتفصيل خطوات التنفيذ المحددة لإنشاء ملف Wrapper DLL باستخدام C++/CLI في بيئة Visual Studio 2022 وتحقيق تكامل سلس للنظام.'
 ---
 

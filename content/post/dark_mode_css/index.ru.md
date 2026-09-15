@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: 'Подробно рассматриваются продвинутое CSS-проектирование для реализации темного режима в блогах и веб-приложениях, меры по предотвращению FOUC, а также использование цветового пространства (OKLCH) с учетом доступности (WCAG 2.1 AAA).'
 ---

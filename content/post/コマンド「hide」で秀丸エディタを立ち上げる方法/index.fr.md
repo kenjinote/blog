@@ -5,7 +5,7 @@ date: 2024-03-29T23:45:37+09:00
 tags: ["commande", "Éditeur Hidemaru", "registre"]
 draft: false
 image: "img_2.webp"
-categories: ["Outils et Environnement de Développement"]
+categories: ["tools-development-environment"]
 description: 'Nous expliquons comment lancer rapidement Hidemaru Editor sur Windows 10/11 en tapant simplement ''hide'' dans ''Exécuter'' ou l''invite de commande. Il s''agit d''une procédure de personnalisation pratique utilisant les chemins d''application de l''éditeur du registre.'
 ---
 

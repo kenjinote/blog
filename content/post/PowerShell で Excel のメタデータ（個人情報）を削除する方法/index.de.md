@@ -5,7 +5,7 @@ date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "Metadaten", "Persönliche Informationen"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Erklärt, wie man Metadaten wie den Autor aus Office-Dateien mit PowerShell entfernt. Stellt nützliche Automatisierungstechniken vor, um Informationslecks beim externen Teilen zu verhindern, von der Verarbeitung einzelner Dateien bis hin zu Skripten zum stapelweisen Löschen von Excel- und Word-Dateien in Ordnern.'
 ---
 

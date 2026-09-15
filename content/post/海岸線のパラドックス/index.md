@@ -7,7 +7,7 @@ slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "幾何学"]
+categories: ["mathematical-paradoxes", "geometry"]
 tags: ["パラドックス", "フラクタル", "マンデルブロ", "無限"]
 ---
 

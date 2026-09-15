@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Workspace"]
+categories: ["gadgets", "productivity", "workspace"]
 tags: ["Monitor", "Ultrawide", "Ergonomics", "Thunderbolt"]
 description: 'Полное руководство по созданию идеальной системы с несколькими мониторами для инженеров. Подробно объясняем эргономику зрения, расчет пропускной способности, PPI и механизмы масштабирования.'
 ---

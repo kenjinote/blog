@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Подробное сравнение указателей C++ и модели владения и заимствования в Rust. От сырых и умных указателей до borrow checker — объясняем суть безопасности памяти.'
 ---

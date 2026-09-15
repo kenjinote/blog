@@ -5,7 +5,7 @@ date: 2024-09-19T01:10:20+09:00
 tags: ["Computador", "Conhecimentos Básicos"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Explicamos de forma fácil de entender para iniciantes em TI como os computadores funcionam. Resumimos os conhecimentos básicos essenciais como a base de TI, desde a função dos ''5 dispositivos principais'' de entrada, saída, memória, controle e processamento lógico-aritmético, até a relação entre o hardware e o software (programa).'
 ---
 

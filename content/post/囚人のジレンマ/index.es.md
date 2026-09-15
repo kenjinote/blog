@@ -6,9 +6,7 @@ date: '2026-09-10T03:00:00+09:00'
 image: 'img/prisoners_dilemma.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Paradojas matemáticas'
-  - 'Teoría de juegos'
+categories: ["mathematical-paradoxes", "game-theory"]
 tags:
   - 'Paradoja'
   - 'Dilema del prisionero'

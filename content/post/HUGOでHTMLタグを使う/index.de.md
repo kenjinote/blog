@@ -5,7 +5,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["Blog-Management"]
+categories: ["blogging"]
 description: 'Wir erklären, wie Sie in Markdown-Artikeln des Static Site Generators Hugo direkt HTML-Tags schreiben und verwenden können. Es ist so einfach wie das Hinzufügen der unsafe-Einstellung zu markup.goldmark.renderer in der config.toml.'
 ---
 

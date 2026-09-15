@@ -4,7 +4,7 @@ description: "نتعمق في بديهية الاختيار ومبرهنة زو�
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات", "نظرية المجموعات"]
+categories: ["mathematics", "set-theory"]
 tags: ["بديهية الاختيار", "مبرهنة زورن", "نظام بديهيات ZFC", "أسس الرياضيات", "Mermaid", "KaTeX"]
 ---
 

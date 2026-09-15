@@ -7,7 +7,7 @@ slug: "coastline-paradox"
 image: "img/coastline_paradox.jpg"
 math: true
 mermaid: true
-categories: ["数学悖论", "几何学"]
+categories: ["mathematical-paradoxes", "geometry"]
 tags: ["悖论", "分形", "曼德博", "无限"]
 ---
 

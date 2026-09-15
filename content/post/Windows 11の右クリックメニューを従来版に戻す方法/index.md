@@ -5,7 +5,7 @@ date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "エクスプローラー"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'Windows 11の新しい右クリックメニュー（コンテキストメニュー）を、Windows 10の従来版に戻す方法を解説します。レジストリエディタを使った設定変更で、旧仕様のメニューを常に表示できるようにする簡単な手順を紹介します。'
 ---
 

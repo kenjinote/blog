@@ -5,7 +5,7 @@ date: "2026-09-12T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "C++"]
+categories: ["programming", "cpp"]
 tags: ["C++", "Multithreading", "Async", "Modern C++"]
 ---
 

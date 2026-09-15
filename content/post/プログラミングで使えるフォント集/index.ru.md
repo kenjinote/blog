@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["Программирование", "Шрифты"]
 draft: false
 image: "img.webp"
-categories: ["Программирование"]
+categories: ["programming"]
 description: 'Представляем идеальные шрифты для программирования: JetBrains Mono, HackGen, Ricty Diminished, Cica, Migu и другие. Повысьте читаемость в редакторе и улучшите эффективность разработки.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Erklärt für Anfänger den Einstieg in die schnelle und speichersichere Programmiersprache Rust. Bietet eine umfassende Einführung, von den Eigenschaften der Sprache und der Installationsmethode über die Ausführungsschritte des ersten Programms, Hello World, bis hin zu empfohlener japanischer Dokumentation.'
 ---
 # Einführung

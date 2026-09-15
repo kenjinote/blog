@@ -5,7 +5,7 @@ date: 2026-09-05T02:09:08+09:00
 tags: ["数学", "密码", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '讲解打破保护互联网通信的RSA加密的人类最强数学“普通数域筛选法（GNFS）”的原理。省去专业术语，揭秘只需初中数学知识就能理解的如魔法般的算法奥秘。'
 ---
 

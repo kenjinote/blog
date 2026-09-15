@@ -5,7 +5,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["映画", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["ライフスタイル・雑記"]
+categories: ["lifestyle-miscellaneous"]
 description: '今後見たい名作映画やアニメのTODOリストです。「博士の愛した数式」「グッド・ウィル・ハンティング」といった数学関連の映画から「サマーウォーズ」「天気の子」などの人気アニメまで、鑑賞済みのチェック記録とともに紹介します。'
 ---
 

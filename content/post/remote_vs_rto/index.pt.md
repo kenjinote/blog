@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: 'Uma exploração profunda do debate entre trabalho remoto e Retorno ao Escritório (RTO) em organizações de engenharia, a partir das perspectivas de modelos sociológicos de comunicação (Curva de Allen, Lei de Conway), métricas de produtividade (SPACE, DORA) e arquitetura de rede (Zero Trust), em busca da verdadeira solução ideal.'
 ---

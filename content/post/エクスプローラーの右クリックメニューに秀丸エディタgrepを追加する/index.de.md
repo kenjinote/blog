@@ -5,7 +5,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["Hidemaru Editor", "Explorer", "Kontextmenü", "grep", "Registrierung"]
 draft: false
 image: "img.webp"
-categories: ["Werkzeuge und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Wir stellen die praktischen Einstellungsschritte vor, um die grep-Funktion des Hidemaru-Editors zum Rechtsklick-Menü des Datei-Explorers in Windows 10/11 hinzuzufügen. Wir erklären eine einfache Methode mithilfe einer Registrierungsdatei auf leicht verständliche Weise.'
 ---
 

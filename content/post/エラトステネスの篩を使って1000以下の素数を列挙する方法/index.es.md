@@ -10,7 +10,7 @@ tags: ["Criba de Eratóstenes", "Números primos", "Matemáticas", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matemáticas・Criptografía・Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicamos de manera clara el mecanismo y el procedimiento específico de la ''criba de Eratóstenes'', un algoritmo para encontrar números primos de manera eficiente. También presentamos un ejemplo de implementación utilizando el lenguaje Rust para enumerar los números primos hasta el 1000.'
 ---
 

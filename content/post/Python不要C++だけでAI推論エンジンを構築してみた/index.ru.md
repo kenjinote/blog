@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: 'В современной разработке ИИ Python является мейнстримом, но в средах, где требуются пограничные устройства и высокая производительность, мощь C++ незаменима. В этой статье мы подробно, в масштабе 10 000 символов, объясним метод создания собственного движка ИИ-вывода с нуля только на C++, поддерживающего бэкенды CUDA и Metal, ссылаясь на философию GGML.'
 ---

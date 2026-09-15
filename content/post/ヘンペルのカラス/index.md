@@ -7,7 +7,7 @@ slug: "hempels-ravens"
 image: "img/hempels_ravens.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "論理学"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["パラドックス", "帰納法", "論理的同値", "対偶"]
 ---
 

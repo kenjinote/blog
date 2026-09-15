@@ -13,7 +13,7 @@ date: 2024-12-22T00:56:14+09:00
 tags: ["acciones"]
 draft: false
 image: "img.webp"
-categories: ["Tecnología de la información"]
+categories: ["it-technology"]
 description: 'Presentamos una lista de recomendaciones de excelentes acciones con alto rendimiento por dividendo representativas en Japón, tales como Mitsubishi UFJ, Mitsubishi Corporation, NTT y KDDI. ¡Esta es una lista imprescindible para aquellos que buscan ingresos por dividendos mediante inversiones a largo plazo o para construir su portafolio!'
 ---
 

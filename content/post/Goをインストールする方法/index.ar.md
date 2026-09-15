@@ -5,7 +5,7 @@ date: 2022-09-10T00:48:17+09:00
 tags: ["Go","تثبيت"]
 draft: false
 image: "images/cover.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح للمبتدئين كيفية تثبيت لغة البرمجة ''Go (Golang)'' المطورة من قبل جوجل. مثالي كمقدمة أولى للغة Go، حيث يغطي العملية من الحصول على المثبت، إنشاء برنامج Hello World، تجميعه، وحتى خطوات التنفيذ.'
 ---
 # مقدمة

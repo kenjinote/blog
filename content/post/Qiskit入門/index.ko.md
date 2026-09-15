@@ -5,7 +5,7 @@ date: "2026-09-11T20:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing", "Python"]
+categories: ["programming", "quantum-computing", "python"]
 tags: ["Qiskit", "Python", "Quantum Computing", "IBM"]
 description: 'IBM의 양자 컴퓨팅 프레임워크인 Qiskit을 사용하여 양자 프로그래밍의 기초부터 벨 상태 생성, 기본 알고리즘까지 철저하게 해설합니다.'
 ---

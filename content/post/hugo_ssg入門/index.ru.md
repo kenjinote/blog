@@ -5,7 +5,7 @@ date: "2026-09-13T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Web", "Blogging", "Hugo"]
+categories: ["web", "blogging", "hugo"]
 tags: ["Hugo", "WordPress", "SSG", "Markdown"]
 description: 'Подробное руководство по переходу с динамических CMS, таких как WordPress, на Hugo, сверхбыстрый генератор статических сайтов на базе языка Go. От архитектурных различий, структуры шаблонов и математического анализа производительности до практических команд миграции.'
 ---

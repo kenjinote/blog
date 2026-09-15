@@ -5,7 +5,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Lock Computer", "Shortcut"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Clearly explains how to create a shortcut to lock your Windows computer with a single click, complete with images. Also introduces the method of locking instantly using the Win+L keys, useful as a security measure when leaving your desk.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "date", "agrégation"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Explique la méthode spécifique et la syntaxe de la requête pour agréger et obtenir le nombre quotidien de création d''enregistrements tels que les comptes, en utilisant SOQL à partir de la console de développement de Salesforce. Vous comprendrez la procédure utile d''analyse de données utilisant la clause GROUP BY.'
 ---
 

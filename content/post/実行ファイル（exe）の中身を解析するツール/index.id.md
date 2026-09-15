@@ -5,7 +5,7 @@ date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "file executable", "analisis"]
 draft: false
 image: "img_1.webp"
-categories: ["PC & Gadget"]
+categories: ["pc-gadgets"]
 description: 'Kami memperkenalkan alat-alat yang direkomendasikan untuk menganalisis dan mengekstrak (dekompresi) isi file eksekusi (exe) di Windows. Kami akan menjelaskan secara mudah tentang cara memeriksa struktur format PE, mengekstrak sumber daya, dan melakukan pengeditan biner menggunakan 7-Zip, Resource Hacker, dan lain-lain.'
 ---
 

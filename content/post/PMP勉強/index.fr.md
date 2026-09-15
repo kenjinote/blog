@@ -5,7 +5,7 @@ date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Étude"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Un résumé des points clés pour la préparation de la certification de gestion de projet ''PMP''. En plus de la vue d''ensemble de l''examen et du seuil de réussite, il explique des éléments importants correspondant à la 7e édition du PMBOK, comme les 10 principes du leadership serviteur et les 4 valeurs du Manifeste pour le développement agile de logiciels.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Health", "Productivity", "Data Science"]
+categories: ["health", "productivity", "data-science"]
 tags: ["Oura Ring", "Wearables", "Python", "Biohacking"]
 description: "將從 'Oura Ring' 等智慧戒指或 'Apple Watch' 取得的 HRV、睡眠數據，與透過 'WakaTime' 測量的寫程式生產力，利用 Python 與 Pandas 進行相關性分析，以數據驅動最大化表現的健康管理術。"
 ---

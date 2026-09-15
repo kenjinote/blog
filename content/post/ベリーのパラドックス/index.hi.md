@@ -6,9 +6,7 @@ date: '2026-09-10T11:00:00+09:00'
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - 'गणितीय विरोधाभास'
-  - 'तर्कशास्त्र'
+categories: ["mathematical-paradoxes", "logic"]
 tags:
   - 'विरोधाभास'
   - 'स्व-संदर्भ'

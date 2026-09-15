@@ -7,7 +7,7 @@ slug: "braess-paradox"
 image: "img/braess_paradox.jpg"
 math: true
 mermaid: true
-categories: ["수학 역설", "게임 이론"]
+categories: ["mathematical-paradoxes", "game-theory"]
 tags: ["역설", "네트워크", "교통", "내시 균형", "브라스의 역설"]
 ---
 

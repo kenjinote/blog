@@ -3,9 +3,7 @@ title: Teorema Limit Pusat - Keajaiban Dimana Setiap Data Mendekati Distribusi N
 description: Penjelasan rinci tentang Teorema Limit Pusat, salah satu teorema terpenting dalam statistika, meliputi pemahaman intuitif, pembuktian matematis, dan simulasi menggunakan Python.
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Matematika
-- Statistik
+categories: ["mathematics", "statistics"]
 tags:
 - Teorema Limit Pusat
 - Probabilitas

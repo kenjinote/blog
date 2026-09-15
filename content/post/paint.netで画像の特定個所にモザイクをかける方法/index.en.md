@@ -5,7 +5,7 @@ date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "border", "image"]
 draft: false
 image: "img.webp"
-categories: ["AI・Technology"]
+categories: ["ai-technology"]
 description: 'Explains how to apply a mosaic effect to a part of an image using the free image editing software ''paint.net''. Introduces the steps to specify the range with the selection tool and set the effect function for beginners. A useful privacy protection technique when uploading images to SNS or blogs.'
 ---
 

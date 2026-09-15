@@ -5,7 +5,7 @@ date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
-categories: ["工具·开发环境"]
+categories: ["tools-development-environment"]
 description: '介绍在VSCode（Visual Studio Code）中开发Qt应用程序的扩展功能“Qt Extension Pack”的引入步骤。推荐给希望构建轻量级开发环境以取代Qt Creator的开发者。'
 ---
 

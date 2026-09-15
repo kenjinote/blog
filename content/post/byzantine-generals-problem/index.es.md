@@ -3,7 +3,7 @@ title: "Problema de los generales bizantinos: ¿Cómo llegar a un consenso en un
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Explicamos de forma clara el 'Problema de los generales bizantinos', un desafío fundamental en los sistemas distribuidos, desde su concepto y demostración matemática hasta su aplicación en Blockchain, con ejemplos concretos y diagramas."
-categories: ["Explicación técnica", "Sistemas distribuidos"]
+categories: ["technical-explanation", "distributed-systems"]
 tags: ["Problema de los generales bizantinos", "Cadena de bloques", "Consenso", "Algoritmos"]
 slug: "byzantine-generals-problem"
 ---

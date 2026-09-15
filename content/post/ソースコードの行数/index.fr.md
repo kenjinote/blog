@@ -5,7 +5,7 @@ date: 2025-04-17T10:33:02+09:00
 tags: ["code source", "lignes de code"]
 draft: false
 image: "img_1.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Nous expliquons l''augmentation spectaculaire du nombre de lignes de code source au fil du temps, des 420 000 lignes de la navette spatiale aux 2 milliards de lignes de Google. Nous présentons également la relation entre les avantages de l''augmentation du code et le risque d''apparition de bugs, ainsi que le cas du noyau Linux.'
 ---
 

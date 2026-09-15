@@ -5,7 +5,7 @@ date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","测试"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '面向初学者讲解在Rust中编写测试代码的方法，以及使用cargo test命令执行测试的步骤。结合具体的代码示例，详细介绍#[test]属性的用法以及成功或失败时的输出结果。'
 ---
 

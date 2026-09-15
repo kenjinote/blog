@@ -4,7 +4,7 @@ slug: "『Kimi Shinitamou Koto Nakare』"
 date: 2024-07-25T13:16:47+09:00
 tags: ["Akiko Yosano", "Janganlah Engkau Mati", "puisi", "puisi anti-perang"]
 draft: false
-categories: ["TI dan Teknologi"]
+categories: ["it-technology"]
 description: 'Menampilkan teks lengkap puisi anti-perang mahakarya Akiko Yosano, ''Kimi Shinitamou Koto Nakare'', yang ditulis untuk memikirkan adiknya yang bertugas dalam Pengepungan Port Arthur saat Perang Rusia-Jepang. Menjelajahi latar belakang karya klasik yang menyerukan cinta keluarga dan nilai kehidupan, serta mengungkap pesan mendalam di baliknya.'
 ---
 

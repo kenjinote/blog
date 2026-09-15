@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["Mathematisches Paradoxon", "Infinitesimalrechnung"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["Paradoxon", "Geometrie", "Unendlichkeit", "Torricellis Trompete"]
 ---
 

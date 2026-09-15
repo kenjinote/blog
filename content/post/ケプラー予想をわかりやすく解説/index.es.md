@@ -13,7 +13,7 @@ date: 2025-07-21T22:53:03+09:00
 tags: ["Matemáticas", "Conjetura de Kepler", "Explicación"]
 draft: false
 image: "img.webp"
-categories: ["Matemáticas, Criptografía, Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicamos de manera fácil de entender la ''conjetura de Kepler'', un difícil problema matemático nacido de la pregunta cotidiana: ''¿Cuál es la forma de empacar sandías lo más juntas posible?''. Aprendamos juntos el romance y la diversión de este problema de empaquetamiento de esferas propuesto por el genio astrónomo Kepler y que no se demostró durante más de 400 años.'
 ---
 

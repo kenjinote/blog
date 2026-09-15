@@ -5,7 +5,7 @@ date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Operação do Blog"]
+categories: ["blogging"]
 description: 'Explicamos de forma fácil de entender os procedimentos para instalar o gerador de sites estáticos ''Hugo'' em um ambiente Windows, como definir a variável de ambiente Path, e como usar comandos para iniciar um servidor local e visualizar os artigos do blog.'
 ---
 # Instalação do HUGO

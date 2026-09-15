@@ -5,7 +5,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C语言", "素数", "算法", "数学"]
 draft: false
 image: "img.webp"
-categories: ["数学・密码・量子"]
+categories: ["math-cryptography-quantum"]
 description: '介绍用于判断、生成并枚举指定范围（从1到n）内素数的简单C语言示例代码。使用isPrime函数的高效算法，并登载了即使是初学者也能轻松看懂的编程实现示例及解说。'
 ---
 

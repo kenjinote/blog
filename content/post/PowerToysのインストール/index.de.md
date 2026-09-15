@@ -5,7 +5,7 @@ date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "eingabeaufforderung", "PowerToys", "winget"]
 draft: false
 image: "img.webp"
-categories: ["Tools & Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Stellt in einer Windows-Umgebung die Schritte vor, um Microsoft PowerToys mit dem Paketmanager winget einfach zu installieren und zu deinstallieren. Kann sofort in der Eingabeaufforderung ausgeführt werden.'
 ---
 

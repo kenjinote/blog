@@ -8,7 +8,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "automatización"]
 draft: false
 image: "img.webp"
-categories: ["gestión de blog"]
+categories: ["blogging"]
 description: 'Explicamos cómo marcar todas las casillas de verificación en una página web a la vez. Presentamos el código JavaScript para ejecutar en la consola de DevTools de Chrome y el procedimiento para crear un práctico bookmarklet que permite seleccionar o deseleccionar todo con un solo clic.'
 ---
 

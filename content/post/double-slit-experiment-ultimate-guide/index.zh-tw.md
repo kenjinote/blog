@@ -3,7 +3,7 @@ title: '【完全網羅】量子力學最大謎團「雙狹縫實驗」徹底白
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["物理學", "量子力學", "雙狹縫實驗", "薛丁格方程式"]
-categories: ["物理・科學"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Explicamos como compilar a biblioteca de comunicação criptografada para a linguagem C ''OpenSSL'' no ambiente Windows. Apresentamos em detalhes desde a preparação de ferramentas necessárias como Perl, NASM e Visual Studio 2022 até o procedimento real de compilação do código-fonte.'
 ---
 

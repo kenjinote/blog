@@ -4,10 +4,7 @@ description: "確率論における極めて重要な定理「大数の法則」
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Data Science"
-  - "Gambling"
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "Law of Large Numbers"
   - "Probability"

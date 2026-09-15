@@ -6,7 +6,7 @@ tags: ["Komputer Kuantum", "GNFS", "Algoritma Shor", "Kriptanalisis", "Matematik
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["Matematika, Kriptografi, Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Masalah faktorisasi prima yang menopang keamanan sandi RSA. Kami menjelaskan secara menyeluruh dengan rumus matematika dan diagram konsep mulai dari mekanisme matematis algoritme klasik terkuat ''General Number Field Sieve (GNFS)'', hingga mengapa ''Algoritme Shor'' oleh komputer kuantum dapat mengalahkannya.'
 ---
 

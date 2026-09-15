@@ -5,7 +5,7 @@ date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Apresentamos o procedimento de introdução do ''Qt Extension Pack'', uma extensão para desenvolvimento de aplicativos Qt usando VSCode (Visual Studio Code). Recomendado para aqueles que desejam construir um ambiente de desenvolvimento mais leve em alternativa ao Qt Creator.'
 ---
 

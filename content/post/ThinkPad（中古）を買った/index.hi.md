@@ -5,7 +5,7 @@ date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "लैपटॉप"]
 draft: false
 image: "img.webp"
-categories: ["IT・प्रौद्योगिकी"]
+categories: ["it-technology"]
 description: 'यह दूरस्थ कार्य के लिए उपयोग किए गए ThinkPad T470s की खरीद की समीक्षा का लेख है। हम इसके स्पेक्स जैसे Core i7, RAM 24GB, WQHD LCD, इसकी स्थिति, और कीबोर्ड लेआउट जैसी कमियों सहित इसके वास्तविक उपयोग की भावना को प्रस्तुत करते हैं।'
 ---
 

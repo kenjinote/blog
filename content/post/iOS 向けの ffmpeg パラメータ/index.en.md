@@ -5,7 +5,7 @@ date: 2025-03-02T04:16:07+09:00
 tags: ["iOS", "ffmpeg"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'We introduce the optimal ffmpeg commands and parameter settings for smooth video playback on iOS devices such as iPhone and iPad. The meaning of each option and points for setting are also explained in detail.'
 ---
 

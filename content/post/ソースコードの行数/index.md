@@ -5,7 +5,7 @@ date: 2025-04-17T10:33:02+09:00
 tags: ["ソースコード", "行数"]
 draft: false
 image: "img_1.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'スペースシャトルの42万行からGoogleの20億行まで、時代とともに劇的に増加するソースコードの行数について解説。コード増加のメリットとバグ発生リスクの関係や、Linuxカーネルの事例も紹介します。'
 ---
 

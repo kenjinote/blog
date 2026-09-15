@@ -5,7 +5,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "shortcut key", "japanese input"]
 draft:
 image: "img.webp"
-categories: ["PC/Gadget"]
+categories: ["pc-gadgets"]
 description: 'Explains how to change the Japanese and English input switching shortcut on Mac (US keyboard) to your preferred key combination like ''Alt + `''. Also introduces the setup procedure in macOS Ventura and settings to prevent katakana from being included when switching.'
 ---
 

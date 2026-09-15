@@ -12,7 +12,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["Información de versión", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
-categories: ["PC y Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Presentamos una lista del diseño de la interfaz de usuario de las pantallas de ''diálogo de información de versión'' de varios programas de PC y herramientas de uso diario como Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge, y LINE.'
 ---
 

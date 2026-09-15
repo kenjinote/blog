@@ -10,7 +10,7 @@ date: 2023-04-01T03:45:53+09:00
 tags: ["프로그래밍 언어"]
 draft: true
 image: "img.webp"
-categories: ["프로그래밍"]
+categories: ["programming"]
 description: 'C언어, Python, Java, JavaScript부터 Rust, Go, OCaml, Clojure 등 다양한 프로그래밍 언어를 목록화했습니다. 개발이나 학습에 참고가 되도록 각 언어의 개요와 특징을 확인해 보세요.'
 ---
 

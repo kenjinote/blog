@@ -1,0 +1,5 @@
+---
+{
+  "title": "Desarrollo independiente"
+}
+---

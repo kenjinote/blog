@@ -5,7 +5,7 @@ date: 2023-01-14T20:24:00+09:00
 tags: ["Bouton", "GUI"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et technologie"]
+categories: ["it-technology"]
 description: 'Nous expliquons avec des exemples de code comment créer un « bouton », la base d''une application GUI, en utilisant l''API standard de Windows (API Win32), et comment implémenter le traitement des événements lors d''un clic (message WM_COMMAND).'
 ---
 

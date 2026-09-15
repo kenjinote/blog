@@ -5,7 +5,7 @@ date: 2022-09-13T00:25:12+09:00
 tags: ["dotnet","git"]
 draft: false
 image: "img_1.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '淺顯易懂地解說如何利用.NET SDK中包含的dotnet指令（dotnet new gitignore），自動生成適合Visual Studio等開發環境的.gitignore檔案。'
 ---
 使用 dotnet.exe 指令可以方便地執行從簡單程式的建置等操作，因此準備好它是非常有用的。

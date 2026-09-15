@@ -5,7 +5,7 @@ date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "कमांड प्रॉम्प्ट", "PowerToys", "winget"]
 draft: false
 image: "img.webp"
-categories: ["उपकरण और विकास परिवेश"]
+categories: ["tools-development-environment"]
 description: 'हम Windows वातावरण में पैकेज मैनेजर winget कमांड का उपयोग करके Microsoft PowerToys को आसानी से इंस्टॉल और अनइंस्टॉल करने की प्रक्रिया प्रस्तुत करते हैं। इसे कमांड प्रॉम्प्ट से तुरंत निष्पादित किया जा सकता है।'
 ---
 

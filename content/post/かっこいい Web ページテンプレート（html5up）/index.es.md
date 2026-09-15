@@ -9,7 +9,7 @@ date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Plantilla de página web"]
 draft: false
 image: "img.webp"
-categories: ["Gestión del blog"]
+categories: ["blogging"]
 description: 'Introducción a ''html5up'', un sitio web de plantillas con alto nivel de diseño. Resumimos el encanto de sus variadas y sofisticadas plantillas que dan ganas de usarlas de inmediato. Útil como referencia para el desarrollo web.'
 ---
 

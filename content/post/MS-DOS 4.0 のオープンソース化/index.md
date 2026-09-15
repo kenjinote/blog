@@ -5,7 +5,7 @@ date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "オープンソース"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '約40年前にリリースされたOS「MS-DOS 4.0」のソースコードがオープンソース化され、GitHubで公開されたニュースを紹介します。コードの大部分が8086アセンブリで記述された歴史的な資料について解説します。'
 ---
 

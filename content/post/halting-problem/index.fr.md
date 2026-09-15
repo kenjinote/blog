@@ -3,7 +3,7 @@ title: "Le problème de l'arrêt (Halting Problem) : Le programme ultime qu'il e
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Nous expliquons le problème de l'arrêt, l'un des problèmes insolubles (et prouvé comme tel) les plus célèbres en informatique. Nous l'illustrons clairement à l'aide de la preuve par l'absurde, d'exemples concrets intuitifs, de formules mathématiques et de schémas."
-categories: ["Computer Science", "Theory of Computation"]
+categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
 ---

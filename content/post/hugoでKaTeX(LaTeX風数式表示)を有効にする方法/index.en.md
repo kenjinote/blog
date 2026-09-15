@@ -6,7 +6,7 @@ tags: ["KaTeX", "LaTeX", "math", "mathematics", "hugo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathematics, Cryptography, Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'We explain the steps to introduce ''KaTeX'', a fast formula rendering library, into the static site generator Hugo. You can easily understand how to enable beautiful LaTeX-style formula display on your blog, from creating math.html to loading settings in the header.'
 ---
 # What is KaTeX

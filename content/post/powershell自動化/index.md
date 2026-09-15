@@ -5,7 +5,7 @@ date: "2026-09-13T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "Automation"]
+categories: ["programming", "windows", "automation"]
 tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: 'PowerShellを活用して日常のWindows業務を完全自動化するための実践的なガイド。バックアップ、ログ監視とSlack通知、複数リポジトリのGit更新とビルドなどの具体例を解説。'
 ---

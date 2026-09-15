@@ -7,7 +7,7 @@ slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Философия", "Логика"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["Парадокс", "Неопределённость", "Соритес", "Нечёткая логика"]
 ---
 

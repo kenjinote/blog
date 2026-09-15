@@ -7,7 +7,7 @@ slug: "friendship-paradox"
 image: "img/friendship_paradox.jpg"
 math: true
 mermaid: true
-categories: ["數學悖論", "網絡理論"]
+categories: ["mathematical-paradoxes", "network-theory"]
 tags: ["悖論", "圖論", "社群媒體", "統計學"]
 ---
 

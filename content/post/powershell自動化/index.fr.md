@@ -5,7 +5,7 @@ date: "2026-09-13T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "Automation"]
+categories: ["programming", "windows", "automation"]
 tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: 'Guide pratique pour l''automatisation complète des tâches Windows quotidiennes à l''aide de PowerShell. Explications détaillées avec des exemples concrets tels que les sauvegardes, la surveillance des journaux et les notifications Slack, ainsi que la mise à jour et la compilation en lot de multiples dépôts Git.'
 ---

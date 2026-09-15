@@ -5,7 +5,7 @@ date: 2025-07-15T18:03:03+09:00
 tags: ["考拉茲猜想", "數學", "程式設計", "演算法"]
 draft: false
 image: "img.webp"
-categories: ["數學・密碼・量子"]
+categories: ["math-cryptography-quantum"]
 description: '「偶數減半，奇數乘以 3 再加 1」不斷重複最後一定會變成 1？淺顯易懂地解說數學著名未解問題「考拉茲猜想」的不可思議規則。進一步使用 Python 寫程式，實際模擬數列是否會收斂至 1。'
 ---
 

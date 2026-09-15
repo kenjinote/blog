@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: '生体力学に基づき、リモートワーカーを腰痛から守るエルゴノミクスチェアの物理学と選び方を徹底解説。アーロンチェアやコンテッサなど高級モデルの構造的アプローチも比較。'
 ---

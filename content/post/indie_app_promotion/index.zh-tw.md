@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Marketing", "Indie Dev", "SEO"]
+categories: ["marketing", "indie-dev", "seo"]
 tags: ["Growth Hacking", "GA4", "PostHog", "Conversion Rate"]
 ---
 

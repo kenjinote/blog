@@ -5,7 +5,7 @@ date: 2024-04-19T22:06:34+09:00
 tags: ["vim", "text editor"]
 draft: false
 image: "img.webp"
-categories: ["tools and development environment"]
+categories: ["tools-development-environment"]
 description: 'Menjelaskan cara dasar menggunakan Vim untuk pemula. Mencakup sepenuhnya langkah-langkah pertama, termasuk metode instalasi di lingkungan Windows, perintah memulai dan mengakhiri (seperti menyimpan dan menghentikan paksa), serta perbedaan antara mode perintah dan mode input.'
 ---
 

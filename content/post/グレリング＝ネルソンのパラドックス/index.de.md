@@ -7,7 +7,7 @@ slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"
 math: true
 mermaid: true
-categories: ["Mathematische Paradoxien", "Logik"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["Paradoxon", "Semantik", "Selbstreferenz", "Mengenlehre"]
 ---
 

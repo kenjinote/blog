@@ -6,9 +6,7 @@ date: '2026-09-10T10:00:00+09:00'
 image: 'img/unexpected_hanging.jpg'
 math: true
 mermaid: true
-categories:
-  - '數學悖論'
-  - '邏輯學'
+categories: ["mathematical-paradoxes", "logic"]
 tags:
   - '悖論'
   - '自我指涉'

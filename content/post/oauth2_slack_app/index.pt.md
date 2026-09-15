@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Um guia completo e ilustrado sobre o fluxo de concessão de código de autorização do OAuth 2.0 através da implementação de uma integração com o Slack App. Inclui exemplos práticos em Node.js e as melhores práticas de segurança.'
 ---

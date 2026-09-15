@@ -5,7 +5,7 @@ date: 2025-02-01T17:15:34+09:00
 tags: ["ChatGPT", "API", "Commande"]
 draft: false
 image: "img.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Nous expliquons comment utiliser la commande curl depuis l''invite de commande Windows (cmd) pour appeler l''API ChatGPT d''OpenAI. Nous présentons clairement comment définir les commandes et les paramètres nécessaires.'
 ---
 # Appeler l'API ChatGPT depuis curl

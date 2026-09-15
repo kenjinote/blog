@@ -5,7 +5,7 @@ date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["AI", "Open Source", "LLM"]
+categories: ["ai", "open-source", "llm"]
 tags: ["Llama", "Mistral", "Local AI", "Gemma"]
 description: '프라이버시를 보호하면서 무료로 사용할 수 있는 로컬 LLM. 본 기사에서는 Llama 3, Mistral, Gemma 2, Qwen 2.5, Phi-3와 같은 최고 수준의 오픈소스 LLM을 기술적인 관점에서 철저히 비교 및 해설합니다.'
 ---

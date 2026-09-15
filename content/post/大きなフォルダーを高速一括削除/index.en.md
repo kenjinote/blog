@@ -5,7 +5,7 @@ date: 2022-09-20T16:04:02+09:00
 tags: ["Command Prompt"]
 draft: false
 image: "img.webp"
-categories: ["IT / Technology"]
+categories: ["it-technology"]
 description: 'We explain how to quickly and bulk delete large folders in a Windows environment. Deletion tasks that take time in Explorer can be dramatically sped up by utilizing the DEL and RMDIR commands in the Command Prompt.'
 ---
 ## Fast Batch Deletion of Large Folders

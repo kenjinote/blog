@@ -3,9 +3,7 @@ title: "Maxwells Dämon: Die Energie der „Information“, die den gesunden Men
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Ein Gedankenexperiment, das den Zweiten Hauptsatz der Thermodynamik zu brechen scheint: „Maxwells Dämon“. Wie dieses Paradoxon durch die „Physik der Information“ gelöst wurde, erklären wir ausführlich mit Formeln und Diagrammen."
-categories:
-  - "Physics"
-  - "Information Theory"
+categories: ["physics", "information-theory"]
 tags:
   - "Thermodynamics"
   - "Maxwell's Demon"

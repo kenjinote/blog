@@ -5,7 +5,7 @@ date: 2022-09-07T02:36:11+09:00
 tags: ["Manager"]
 draft: false
 image: "images/img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Wir veröffentlichen praxisnahe Notizen, die Führungskräfte kennen sollten, z.B. wie man aufkommende Geschäftsideen findet, gründliche Nachahmung und Verbesserung, und die Kernpunkte der Systematisierung, die jeder durchführen kann. Wir nähern uns auch dem Kern der Managementphilosophie, „die Gewinne des Unternehmens zu maximieren“.'
 ---
 # Finde Geschäfte, die populär werden

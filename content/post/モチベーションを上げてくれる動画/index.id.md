@@ -5,7 +5,7 @@ date: 2022-09-08T02:22:52+09:00
 tags: ["Motivasi", "Video"]
 draft: false
 image: "images/img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Kami akan merekomendasikan video yang dapat meningkatkan motivasi, cocok untuk ditonton ketika usaha Anda tidak diakui atau saat Anda sedang bimbang. Penuh dengan kutipan-kutipan yang memberikan dampak positif pada tindakan dan kehidupan, seperti pemikiran Yusuke Narita mengenai nilai-nilai yang beragam dan cara berpikir sutradara Hayao Miyazaki.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-03-30T15:40:24+09:00
 tags: ["مستكشف الملفات"]
 draft: false
 image: "img_2.webp"
-categories: ["تكنولوجيا المعلومات"]
+categories: ["it-technology"]
 description: 'نشرح الطرق المختلفة لإنهاء وإعادة تشغيل مستكشف Windows (explorer.exe). نقدم خطوات واضحة باستخدام شريط المهام ومدير المهام وموجه الأوامر.'
 ---
 

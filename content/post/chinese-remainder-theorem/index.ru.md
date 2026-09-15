@@ -4,9 +4,7 @@ description: "Подробное объяснение Китайской тео�
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Математика"
-  - "Криптография"
+categories: ["mathematics", "cryptography"]
 tags:
   - "Китайская теорема об остатках"
   - "CRT"

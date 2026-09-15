@@ -3,7 +3,7 @@ title: "終末論法（Doomsday Argument）：確率論が導き出す「人類�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "我々は人類の歴史のどの地点にいるのか？コペルニクスの原理とベイズ推定を用いて、人類滅亡の時期を確率論的に予測する「終末論法」について数式と図解を交えて解説します。"
-categories: ["確率論", "思考実験", "哲学"]
+categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags: ["ベイズ推定", "終末論法", "Doomsday Argument", "数学"]
 slug: "doomsday-argument"
 ---

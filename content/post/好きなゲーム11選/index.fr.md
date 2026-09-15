@@ -5,7 +5,7 @@ date: 2022-09-12T19:28:50+09:00
 tags: ["Jeux"]
 draft: false
 image: "img_12.webp"
-categories: ["IT / Technologie"]
+categories: ["it-technology"]
 description: 'Nous vous présentons 11 chefs-d''œuvre recommandés issus de jeux rétro nostalgiques comme la première Game Boy et la Super Famicom. Des jeux divins qui n''ont pas pris une ride comme « SaGa 2 », « Kirby''s Dream Land » ou « Pokémon Rouge et Vert ». Nous revenons sur le charme de ces chefs-d''œuvre.'
 ---
 En me souvenant de mes jeux préférés, la liste s'est remplie uniquement de classiques.

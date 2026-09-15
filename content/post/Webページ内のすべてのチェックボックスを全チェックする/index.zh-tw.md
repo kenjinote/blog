@@ -5,7 +5,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "自動化"]
 draft: false
 image: "img.webp"
-categories: ["部落格營運"]
+categories: ["blogging"]
 description: '解說如何一次勾選網頁中所有的核取方塊。介紹在 Chrome 的 DevTools 主控台中執行的 JavaScript 程式碼，以及能一鍵全選・全取消的實用書籤小工具建立步驟。'
 ---
 

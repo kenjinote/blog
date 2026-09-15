@@ -7,7 +7,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Gestión de blog"]
+categories: ["blogging"]
 description: 'Explicamos cómo usar "Ranklet", un servicio que permite visualizar fácilmente un ranking de las páginas más populares de tu sitio conectándolo con Google Analytics. Tomando el blog de HUGO como ejemplo, presentamos los pasos de configuración y cómo personalizar la plantilla HTML/CSS.'
 ---
 

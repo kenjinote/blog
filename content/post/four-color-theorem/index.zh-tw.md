@@ -4,7 +4,7 @@ description: "詳細解說數學界難題四色定理的歷史、證明方法，
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "電腦科學"]
+categories: ["mathematics", "computer-science"]
 tags: ["四色定理", "圖論", "電腦輔助證明", "拓撲學"]
 ---
 

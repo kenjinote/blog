@@ -9,7 +9,7 @@ date: 2022-09-09T21:45:19+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Visité la popular tienda de ramen "Dotonbori Kamukura" por primera vez en mucho tiempo. ¡Esta vez pedí el recomendado "Ramen de Kimchi y Cebolleta"! La combinación de la abundante verdura y el kimchi de cebolleta con esa sopa única y deliciosa, que a veces se te antoja irresistiblemente, fue excelente.'
 ---
 

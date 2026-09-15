@@ -5,7 +5,7 @@ date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
-categories: ["工具・開發環境"]
+categories: ["tools-development-environment"]
 description: '活用Windows內建的Windows ML來存取AI功能！本文將附上範例程式碼，淺顯易懂地解說從Win32應用程式的C++環境中呼叫「Microsoft.Windows.AI」，並執行ONNX格式AI模型的具體步驟。'
 ---
 

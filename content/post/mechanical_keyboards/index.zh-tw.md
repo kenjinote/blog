@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: '深入探討能大幅提升工程師生產力的高階鍵盤。從基於物理學的軸體解說到韌體的運作原理，為您介紹 5 款終極的機械式鍵盤。'
 ---

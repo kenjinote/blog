@@ -5,7 +5,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '說明將 Rust 編譯器 rustc 更新至最新版本的簡單方法。只需在終端機或命令提示字元中執行一行 `rustup update` 指令，即可包含相關元件進行批次更新。'
 ---
 # 如何更新 rustc

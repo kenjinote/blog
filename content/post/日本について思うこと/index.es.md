@@ -9,7 +9,7 @@ date: 2022-09-06T02:24:11+09:00
 tags: ["Miscelánea"]
 draft: false
 image: "images/img.webp"
-categories: ["TI y tecnología"]
+categories: ["it-technology"]
 description: 'Este es un artículo que organiza y examina las incongruencias y desafíos personales frente a la sociedad japonesa. Cuestionamos el estado de una sociedad plagada de teorías de responsabilidad individual sin empatía y la situación actual donde la carga de la deuda para los jóvenes, debida a las becas con intereses, lleva a una disminución en la tasa de natalidad, y se habla de la importancia de socorrer a los más vulnerables y el espíritu de ayuda mutua.'
 ---
 

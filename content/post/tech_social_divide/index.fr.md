@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Société", "Philosophie", "Web3"]
+categories: ["society", "philosophy", "web3"]
 tags: ["Chambre d'écho", "Algorithmes", "AT Protocol", "Ingénierie sociale"]
 ---
 

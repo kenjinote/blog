@@ -4,7 +4,7 @@ slug: "shors-algorithm-and-rsa-breaking"
 tags: ["كمبيوتر كمومي", "فك التشفير", "خوارزمية شور", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
-categories: ["رياضيات・تشفير・كمي"]
+categories: ["math-cryptography-quantum"]
 description: 'نشرح كيف سيهدد صعود الحواسيب الكمية تشفير RSA الذي يدعم البنية التحتية للاتصالات الحديثة. سنستعرض آلية خوارزمية شور (Shor) وحالة الأجهزة في عصر NISQ، ونناقش مستقبل فك التشفير والأمن السيبراني.'
 ---
 

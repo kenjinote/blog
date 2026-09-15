@@ -5,7 +5,7 @@ date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "恢复", "故障排除"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '您的Google Pixel设备是否遇到了反复重启、卡在logo界面等严重错误？本文将详细解说利用官方修复工具，安全可靠地对设备进行软件恢复和初始化的步骤，以及执行前需要注意的重要事项。'
 ---
 

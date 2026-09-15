@@ -6,7 +6,7 @@ tags: ["Mathematics"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Mathematics, Cryptography, Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'We introduce fascinating mathematical formulas that let you feel the depth and beauty of mathematics, such as Wilson''s Theorem, Euler''s Formula, Fermat''s Last Theorem, and the Basel Problem. Please take a look at these moving and beautiful formulas that are simple yet represent the truth of the world.'
 ---
 ## Wilson's Theorem

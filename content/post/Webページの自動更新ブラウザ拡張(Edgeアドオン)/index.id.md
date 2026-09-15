@@ -5,7 +5,7 @@ date: 2024-04-06T15:36:54+09:00
 tags: ["ekstensi browser", "add-on Edge", "pembaruan otomatis"]
 draft: false
 image: "img.webp"
-categories: ["Manajemen Blog"]
+categories: ["blogging"]
 description: 'Menjelaskan cara menggunakan ekstensi peramban ''Pembaruan Otomatis Tab'' yang memungkinkan pembaruan otomatis halaman Web secara berkala di Microsoft Edge. Kami memperkenalkan dengan mudah beserta gambar, dari metode instalasi, pengaturan interval pembaruan, hingga prosedur penghentian.'
 ---
 Saya akan memperkenalkan ekstensi browser Edge "Pembaruan Tab Otomatis" yang memperbarui halaman web secara otomatis.

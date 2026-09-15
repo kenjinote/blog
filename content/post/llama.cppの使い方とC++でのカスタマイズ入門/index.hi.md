@@ -5,7 +5,7 @@ date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: 'llama.cpp की बुनियादी बातों से लेकर C++ द्वारा उन्नत कस्टमाइज़ेशन, ट्रांसफॉर्मर की गणितीय पृष्ठभूमि, और ggml आर्किटेक्चर की व्याख्या तक सब कुछ कवर करने वाली संपूर्ण गाइड।'
 ---

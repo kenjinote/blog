@@ -14,7 +14,7 @@ tags: ["Google One", "Gemini", "해지", "대처 방법"]
 draft: false
 image: "img.webp"
 description: 'Gemini의 1개월 무료 체험 종료 후 월 2,900엔의 Google One 멤버십이 자동 연장되는 것을 막기 위한 올바른 해지 절차를 해설합니다. ''해지할 수 없다''고 고민하시는 분들은 본 기사의 탈퇴 방법을 참고해 주세요.'
-categories: ["프로그래밍"]
+categories: ["programming"]
 ---
 
 

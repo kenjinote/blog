@@ -5,7 +5,7 @@ date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false
 image: "img.webp"
-categories: ["工具與開發環境"]
+categories: ["tools-development-environment"]
 description: '解說如何使用 C++ 開發中便利的套件管理工具「vcpkg」，將支援 OpenSSL 的 libcurl 導入 Visual Studio 環境。能順利解決編譯與相依性問題。'
 ---
 

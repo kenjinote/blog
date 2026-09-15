@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Hugo"]
+categories: ["blogging", "seo", "hugo"]
 tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: 'HugoのSEO対策を極めるための完全ガイド。メタデータ、OGP、JSON-LDの構造化データまで、アクセス数を飛躍的に向上させるフロントマターとhead.htmlのカスタマイズ手法を徹底解説します。'
 ---

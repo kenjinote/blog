@@ -7,7 +7,7 @@ slug: "gabriels-horn"
 image: "img/gabriels_horn.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "حساب التفاضل والتكامل"]
+categories: ["mathematical-paradoxes", "calculus"]
 tags: ["مفارقة", "هندسة", "اللانهاية", "بوق توريتشيلي"]
 ---
 

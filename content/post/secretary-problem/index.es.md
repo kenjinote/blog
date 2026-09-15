@@ -4,10 +4,7 @@ description: "¿Qué es el Problema de la Secretaria? A través de este ejemplo 
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Algoritmos"
-  - "Toma de decisiones"
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "Parada óptima"
   - "Problema de la secretaria"

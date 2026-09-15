@@ -5,7 +5,7 @@ date: 2025-08-30T04:18:04+09:00
 tags: ["msix", "自己証明書", "インストール"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'Windowsアプリのテスト配布に便利なMSIXパッケージ向けに、商用証明書を使わず自己証明書を作成・付与して、ローカル環境へインストール可能にする具体的な手順をPowerShellのコマンド付きでわかりやすく解説します。'
 ---
 

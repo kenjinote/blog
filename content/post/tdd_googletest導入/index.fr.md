@@ -5,7 +5,7 @@ date: "2026-09-12T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Testing"]
+categories: ["programming", "testing"]
 tags: ["TDD", "C++", "GoogleTest", "CMake"]
 description: 'Le guide complet pour introduire le développement dirigé par les tests (TDD) dans un projet C++. Explications approfondies sur les approches pratiques avec GoogleTest et GoogleMock, ainsi que sur la configuration avec CMake.'
 ---

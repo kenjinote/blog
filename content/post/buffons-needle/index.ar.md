@@ -4,9 +4,7 @@ description: "هل يمكن حساب العدد π بمجرد إسقاط إبر�
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "رياضيات"
-  - "نظرية الاحتمالات"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "عدد باي"
   - "محاكاة"

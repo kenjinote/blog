@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: 'エンジニアリング組織におけるリモートワークとオフィス回帰（RTO）の議論を、社会学的なコミュニケーションモデル（アレン曲線、コンウェイの法則）、生産性指標（SPACE、DORA）、そしてネットワークアーキテクチャ（ゼロトラスト）の観点から深掘りし、真の最適解を探求します。'
 ---

@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: 'شرح مفصل للتاريخ الملحمي لتقنية التشفير وتطورها التقني، من تشفير قيصر في العصور القديمة، إلى إنجما، وتشفير المفتاح العام، وصولًا إلى التشفير المقاوم للكم (PQC) للتحضير للتهديد المستقبلي المتمثل في الحواسيب الكمومية.'
 ---

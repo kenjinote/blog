@@ -5,7 +5,7 @@ date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Restauração", "Solução de problemas"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Seu Google Pixel está preso em um ciclo de reinicialização ou travado no logotipo? Explicamos detalhadamente e de forma simples como usar a ferramenta oficial de reparo para restaurar e inicializar o software do seu dispositivo com segurança, além de pontos importantes antes de começar.'
 ---
 

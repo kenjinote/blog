@@ -5,7 +5,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["バージョン情報", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'Windows 11、IntelliJ IDEA、VS Code、Chrome、Edge、LINEなど、日常的に使われている様々なPCソフトやツールの「バージョン情報ダイアログ」画面のUIデザインを一覧で紹介します。'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: '2020년도 초등학교 프로그래밍 교육 필수화 이후 수년이 지난 현재, 일본의 IT 교육이 직면하고 있는 본질적인 과제에 대해 컴퓨터 사이언스의 관점에서 철저하게 파헤쳐 봅니다.'
 ---

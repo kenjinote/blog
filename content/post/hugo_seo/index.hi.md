@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Hugo"]
+categories: ["blogging", "seo", "hugo"]
 tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: 'ह्यूगो के एसईओ में महारत हासिल करने के लिए एक संपूर्ण गाइड। हम मेटाडेटा, ओजीपी और JSON-LD संरचित डेटा सहित फ्रंटमैटर और head.html को कस्टमाइज़ करने के तरीकों के बारे में विस्तार से बताएंगे, जो आपके ट्रैफ़िक को आसमान छूने में मदद करेंगे।'
 ---

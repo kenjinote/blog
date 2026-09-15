@@ -5,7 +5,7 @@ date: 2022-09-08T08:39:03+09:00
 tags: ["Cafe", "Music"]
 draft: false
 image: "images/img.webp"
-categories: ["Lifestyle & Misc"]
+categories: ["lifestyle-miscellaneous"]
 description: 'A compilation of cafe music perfect as BGM for programming, studying, or teleworking. Introduces recommended work music, from up-tempo Electro Swing to relaxing and focus-inducing LoFi Hip Hop and Jazz.'
 ---
 **Up-tempo**

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industry", "Career", "AI"]
+categories: ["industry", "career", "ai"]
 tags: ["2026 Problem", "SIer", "Generative AI", "Developer Career"]
 description: "IT業界中'2026年問題'的真相。徹底解說生成式AI崛起所帶來的人才需求兩極化，以及工程師生存下去的戰略。"
 ---

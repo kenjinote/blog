@@ -5,7 +5,7 @@ date: 2025-07-14T23:40:15+09:00
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Обязательно к прочтению для тех, кто хочет реализовать автоматическую отправку сообщений в Microsoft Teams из C++! Мы пошагово и понятно объясним конкретные примеры кода на C++ с использованием WinHTTP и Graph API, а также необходимые процедуры регистрации приложения в Azure и аутентификации API.'
 ---
 

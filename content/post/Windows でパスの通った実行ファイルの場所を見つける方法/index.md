@@ -5,7 +5,7 @@ date: 2023-04-03T00:02:55+09:00
 tags: ["Windows", "パス", "実行ファイル", "コマンドプロンプト"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'WindowsのコマンドプロンプトやPowerShellで、実行ファイルの保存場所（フルパス）を簡単に調べる方法を解説します。「where」コマンドを使って、パスが通っているアプリの正確な配置場所を素早く特定する便利な小技を紹介します。'
 ---
 

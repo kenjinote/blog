@@ -5,7 +5,7 @@ date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "圖形"]
 draft: false
 image: "img.webp"
-categories: ["工具 / 開發環境"]
+categories: ["tools-development-environment"]
 description: '介紹只要在瀏覽器上輸入數值，就能輕鬆建立圖表或圖形的實用網頁版圖表編輯器。詳細解說使用滑鼠移動元素、建立有向圖，以及將建立好的圖表下載為 PNG 圖片等功能。'
 ---
 # 圖形編輯器

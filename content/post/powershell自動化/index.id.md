@@ -5,7 +5,7 @@ date: "2026-09-13T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "Automation"]
+categories: ["programming", "windows", "automation"]
 tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: 'Panduan praktis untuk sepenuhnya mengotomatiskan tugas harian Windows menggunakan PowerShell. Menjelaskan contoh spesifik seperti pencadangan, pemantauan log dan notifikasi Slack, serta pembaruan dan pembuatan beberapa repositori Git.'
 ---

@@ -5,7 +5,7 @@ date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Patrocinador"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Nosso projeto está buscando patrocinadores no GitHub. Os fundos arrecadados serão utilizados cuidadosamente como custos operacionais, para desenvolver ferramentas úteis, obter certificados de assinatura de código e fornecer um software ainda melhor.'
 ---
 

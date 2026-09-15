@@ -5,7 +5,7 @@ date: 2025-07-21T22:53:03+09:00
 tags: ["數學", "克卜勒猜想", "解說"]
 draft: false
 image: "img.webp"
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '「怎樣才是最密集的西瓜裝箱方式？」淺顯易懂地解說由日常疑問誕生的數學難題「克卜勒猜想」。一起學習由天才天文學家克卜勒提出，400多年來未被證明的球體填充問題之浪漫與樂趣。'
 ---
 

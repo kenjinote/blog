@@ -5,7 +5,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["rust", "egui", "GUI library"]
 draft: false
 image: "demo.gif"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'We introduce basic usage of ''egui'', a GUI library that can be easily handled in Rust. We explain the simple steps from cloning a template from GitHub to launching and executing a sample app with the cargo run command.'
 ---
 

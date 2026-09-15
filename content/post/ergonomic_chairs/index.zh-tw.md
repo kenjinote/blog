@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: '基於生物力學，深入探討能保護遠距工作者免受腰痛之苦的人體工學椅物理學及選購方法。同時比較 Aeron 與 Contessa 等高階椅款的結構設計。'
 ---

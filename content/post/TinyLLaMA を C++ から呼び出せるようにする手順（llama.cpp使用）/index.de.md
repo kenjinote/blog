@@ -5,7 +5,7 @@ date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Erklärt die Einrichtungsschritte zum Aufrufen und Ausführen von TinyLLaMA in C++. Fasst für Anfänger leicht verständlich zusammen, vom Erstellen von llama.cpp über das Abrufen von Modellen von HuggingFace bis hin zu Konstruktionsmethoden in verschiedenen Umgebungen.'
 ---
 

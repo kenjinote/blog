@@ -5,7 +5,7 @@ date: 2026-01-23T13:43:41+09:00
 tags: ["Japaner First", "Politik", "Gesellschaftsprobleme"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir analysieren die Realität der steigenden Preise und der sinkenden Geburtenrate gepaart mit einer alternden Bevölkerung, die hinter dem im Japan von 2026 populären Begriff „Japaner zuerst“ stehen. Wir schließen emotionale Argumente aus und betrachten die wahre Natur gesellschaftlicher Probleme auf Basis objektiver Daten sowie die zukünftige Art der Koexistenz.'
 ---
 

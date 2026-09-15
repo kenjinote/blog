@@ -5,7 +5,7 @@ date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '讲解如何自定义Hugo PaperMod主题的整体配色。介绍通过编辑包含背景色、文本色及代码块等样式定义的CSS（blank.css），来应用您所偏好的配色方案的具体变量设置示例。'
 ---
 我更改了 PaperMod 主题的配色。更改方法参考了以下链接：

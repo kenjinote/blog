@@ -6,7 +6,7 @@ tags: ["KaTeX", "LaTeX", "数学公式", "数学", "hugo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '本文讲解将高速数学公式渲染库“KaTeX”引入静态网站生成器Hugo的步骤。从创建math.html到设置加载到头部，让您轻松了解如何在博客中启用类似LaTeX的优美数学公式显示。'
 ---
 # 什么是KaTeX

@@ -5,7 +5,7 @@ date: 2025-04-26T16:46:11+09:00
 tags: ["Low-code", "No-code", "Sejarah"]
 draft: false
 image: "img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Kami akan menjelaskan sejarah pengembangan low-code dan no-code dari tahun 1980-an hingga saat ini. Kami akan memperkenalkan bagaimana sistem pembuatan aplikasi tanpa pemrograman ini berkembang, beserta dengan alat-alat perwakilan dari setiap dekade seperti HyperCard dan FileMaker.'
 ---
 

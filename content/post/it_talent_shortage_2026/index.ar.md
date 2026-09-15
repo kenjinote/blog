@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Industry", "Career", "AI"]
+categories: ["industry", "career", "ai"]
 tags: ["2026 Problem", "SIer", "Generative AI", "Developer Career"]
 description: 'حقيقة "مشكلة 2026" في صناعة تكنولوجيا المعلومات. شرح شامل للاستقطاب في الطلب على المواهب المتغير بسبب ظهور الذكاء الاصطناعي التوليدي، واستراتيجيات المطورين للبقاء.'
 ---

@@ -5,7 +5,7 @@ date: 2025-04-17T10:33:02+09:00
 tags: ["Source Code", "Lines of Code"]
 draft: false
 image: "img_1.webp"
-categories: ["IT and Technology"]
+categories: ["it-technology"]
 description: 'Explains the number of lines of source code that has increased dramatically over time, from the Space Shuttle''s 400,000 lines to Google''s 2 billion lines. Also introduces the relationship between code growth advantages and bug occurrence risks, along with the case of the Linux Kernel.'
 ---
 

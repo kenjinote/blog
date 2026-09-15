@@ -6,7 +6,7 @@ tags: ["Sieve of Eratosthenes", "Prime Numbers", "Math", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Math/Crypto/Quantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Clearly explains the mechanism and specific steps of the ''Sieve of Eratosthenes'', an algorithm for finding prime numbers efficiently. Also introduces an implementation example in Rust to enumerate primes up to 1000.'
 ---
 

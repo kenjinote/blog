@@ -5,7 +5,7 @@ date: 2022-09-20T16:04:02+09:00
 tags: ["Prompt de Comando"]
 draft: false
 image: "img.webp"
-categories: ["TI・Tecnologia"]
+categories: ["it-technology"]
 description: 'Explicaremos como excluir pastas grandes de maneira rápida e em lote no ambiente Windows. Aproveitando os comandos DEL e RMDIR no Prompt de Comando, é possível acelerar drasticamente o processo de exclusão, que leva muito tempo no Explorador de Arquivos.'
 ---
 ## Exclusão Rápida em Lote de Pastas Grandes

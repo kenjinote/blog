@@ -4,9 +4,7 @@ description: "A deep explanation of the Prime Number Theorem, a monumental achie
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathematics"
-  - "Algorithms"
+categories: ["mathematics", "algorithms"]
 tags:
   - "Prime Number Theorem"
   - "Riemann Hypothesis"

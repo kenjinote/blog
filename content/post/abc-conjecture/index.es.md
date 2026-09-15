@@ -4,7 +4,7 @@ description: "Un análisis profundo de la conjetura ABC y el enfoque revoluciona
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Ciencia"]
+categories: ["mathematics", "science"]
 tags: ["Conjetura ABC", "Teoría de Números", "Teoría IUT", "Shinichi Mochizuki"]
 ---
 

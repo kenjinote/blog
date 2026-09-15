@@ -4,7 +4,7 @@ description: "详细数理解析千禧年大奖难题之一的贝赫和斯维讷
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["数学"]
+categories: ["mathematics"]
 tags: ["数论", "椭圆曲线", "BSD猜想", "千禧年大奖难题"]
 ---
 

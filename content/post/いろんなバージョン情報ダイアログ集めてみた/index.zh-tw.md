@@ -5,7 +5,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["版本資訊", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
-categories: ["PC與小工具"]
+categories: ["pc-gadgets"]
 description: '一覽介紹 Windows 11、IntelliJ IDEA、VS Code、Chrome、Edge、LINE 等日常使用的各種電腦軟體或工具的「版本資訊對話方塊」畫面 UI 設計。'
 ---
 

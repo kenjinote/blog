@@ -5,7 +5,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["Expression", "Locution"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Nous présentons l''approche psychologique du ''Rasoir d''Hanlon'', qui consiste à ''ne pas interpréter le comportement de l''autre comme malveillant, mais le considérer comme une simple négligence''. Nous expliquons des astuces pour réduire le stress dans les relations interpersonnelles en dissipant les frustrations quotidiennes, comme les réponses tardives sur LINE.'
 ---
 

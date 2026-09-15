@@ -4,7 +4,7 @@ description: "深入解析卡尔·弗里德里希·高斯发现的「绝妙定�
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "科学"]
+categories: ["mathematics", "science"]
 tags: ["几何学", "高斯", "披萨定理", "Theorema Egregium", "微分几何"]
 ---
 

@@ -3,7 +3,7 @@ title: "थीसियस का जहाज: क्या पूरी तर
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "यूनानी दर्शन के विरोधाभास 'थीसियस का जहाज' के आधार पर, हम सॉफ्टवेयर विकास में रिफैक्टरिंग, सिस्टम रिप्लेसमेंट और ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग में 'पहचान (Identity)' पर गहराई से विचार करेंगे।"
-categories: ["Software Engineering", "Architecture"]
+categories: ["software-engineering", "architecture"]
 tags: ["थीसियस का जहाज", "रिफैक्टरिंग", "माइक्रो सर्विसेज", "ऑब्जेक्ट-ओरिएंटेड", "DDD"]
 slug: "ship-of-theseus"
 ---

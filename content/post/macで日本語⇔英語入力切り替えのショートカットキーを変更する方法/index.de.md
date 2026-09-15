@@ -5,7 +5,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "Tastenkombination", "Japanische Eingabe"]
 draft: 
 image: "img.webp"
-categories: ["PC-Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Erklärt, wie man das Umschalten zwischen japanischer und englischer Eingabe auf einem Mac (US-Tastatur) auf eine beliebige Tastenkombination wie „Alt + `“ ändert. Stellt auch die Einrichtungsschritte für macOS Ventura und Einstellungen vor, um zu verhindern, dass beim Umschalten Katakana eingefügt werden.'
 ---
 

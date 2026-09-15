@@ -5,7 +5,7 @@ date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Akses fitur AI dengan memanfaatkan Windows ML bawaan Windows! Kami menjelaskan dengan mudah beserta kode sampel mengenai langkah-langkah spesifik untuk memanggil ''Microsoft.Windows.AI'' dari lingkungan C++ aplikasi Win32 dan menjalankan model AI format ONNX.'
 ---
 

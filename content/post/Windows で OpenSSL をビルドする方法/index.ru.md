@@ -5,7 +5,7 @@ date: 2023-04-07T21:06:32+09:00
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Объясняем, как собрать «OpenSSL», библиотеку зашифрованной связи для языка C, в среде Windows. Подробно описывается процесс от подготовки необходимых инструментов, таких как Perl, NASM и Visual Studio 2022, до фактических шагов сборки исходного кода.'
 ---
 

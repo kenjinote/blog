@@ -5,7 +5,7 @@ date: 2022-09-02T07:23:00+09:00
 tags: ["Diversos"]
 draft: false
 image: "images/komeda.webp"
-categories: ["Operação do blog"]
+categories: ["blogging"]
 description: 'Abri um novo blog pessoal usando o gerador de sites estáticos ''Hugo''. Planejo postar casualmente notas técnicas, códigos de programação, pequenos eventos do dia a dia, etc., como se fosse um bloco de notas.'
 ---
 

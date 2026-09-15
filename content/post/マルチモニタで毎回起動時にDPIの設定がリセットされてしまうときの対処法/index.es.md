@@ -12,7 +12,7 @@ date: 2024-04-29T19:42:20+09:00
 tags: ["Monitores múltiples", "DPI", "Panel de control"]
 draft: false
 image: "img.webp"
-categories: ["Tecnología de la información"]
+categories: ["it-technology"]
 description: 'Te explicamos cómo resolver el problema donde la configuración de DPI (escala de pantalla) se restablece automáticamente al encender la PC en un entorno de múltiples pantallas en Windows 11. Hemos resumido los pasos para desactivar el inicio rápido desde el Panel de control.'
 ---
 

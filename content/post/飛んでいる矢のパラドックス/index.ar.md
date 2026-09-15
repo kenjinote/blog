@@ -7,7 +7,7 @@ slug: "zenos-arrow"
 image: "img/zenos_arrow.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "فلسفة", "فيزياء"]
+categories: ["mathematical-paradoxes", "philosophy", "physics"]
 tags: ["مفارقة", "زينون", "حركة", "لانهاية", "تفاضل وتكامل"]
 ---
 

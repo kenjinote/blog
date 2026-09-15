@@ -5,7 +5,7 @@ date: 2024-01-06T04:11:01+09:00
 tags: ["Musique Japonaise", "Musique"]
 draft: false
 image: "img.webp"
-categories: ["Style de Vie et Divers"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Nous présentons des chefs-d''œuvre touchants de la musique japonaise recommandés, comme Tulip, RADWIMPS et Hikaru Utada. Des chansons célèbres nostalgiques de l''ère Showa aux tubes J-POP de l''ère Heisei, en passant par les ballades classiques, profitez des nombreuses musiques merveilleuses du Japon appréciées par-delà les générations.'
 ---
 

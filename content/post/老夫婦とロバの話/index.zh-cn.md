@@ -5,7 +5,7 @@ date: 2024-09-18T00:56:59+09:00
 tags: ["老夫妇和驴的故事", "讽刺"]
 draft: false
 image: "img.webp"
-categories: ["IT·科技"]
+categories: ["it-technology"]
 description: '通过著名寓言“老夫妇与驴的故事”，探讨过于在意他人眼光的弊端，以及“应该相信谁的声音”这一现代人际关系中的烦恼。为您提供不被他人意见左右的生活启示。'
 ---
 

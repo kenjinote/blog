@@ -5,7 +5,7 @@ date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "命令"]
 draft: false
 image: "img.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '介绍高速静态网站生成器Hugo CLI的安装方法，以及博客运营中频繁使用的基本命令一览。涵盖创建新网站、撰写文章、启动本地服务器、构建等Hugo初学者应掌握的操作。'
 ---
 

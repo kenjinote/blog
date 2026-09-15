@@ -5,7 +5,7 @@ date: "2026-09-11T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Cryptography", "Web3", "Security"]
+categories: ["cryptography", "web3", "security"]
 tags: ["ZKP", "zk-SNARKs", "zk-STARKs", "Web3", "Blockchain"]
 description: '從零知識證明（ZKP）的數學基礎，到zk-SNARKs、zk-STARKs的機制，再到ZK-Rollups和隱私保護身份等最新的Web3及安全應用進行詳細的解說。'
 ---

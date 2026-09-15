@@ -5,7 +5,7 @@ date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
-categories: ["工具与开发环境"]
+categories: ["tools-development-environment"]
 description: '讲解如何使用Windows 11的包管理器“WinGet”，通过命令行安装应用程序。介绍在命令行中快速安装和管理Chrome、VSCode、Slack等主流软件的步骤。'
 ---
 ## 前提条件

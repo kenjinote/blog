@@ -5,7 +5,7 @@ date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "日時", "ISO8601"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: 'C++で現在時刻を世界標準のISO8601フォーマットで出力したいエンジニア必見！この記事では、C++20のstd::formatとchronoライブラリを活用して、スマートかつ簡潔に現在時刻をフォーマット変換するコード例をわかりやすく紹介します。'
 ---
 

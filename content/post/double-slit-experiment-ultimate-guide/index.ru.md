@@ -3,7 +3,7 @@ title: '【Полный обзор】Понятное и подробное об
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["Физика", "Квантовая механика", "Эксперимент с двумя щелями", "Уравнение Шредингера"]
-categories: ["Физика и наука"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

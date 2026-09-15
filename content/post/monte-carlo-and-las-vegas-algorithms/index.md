@@ -3,7 +3,7 @@ title: "モンテカルロ法とラスベガス法：乱数を使った「最強
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "乱数を利用する2つの代表的な確率的アルゴリズム、モンテカルロ法とラスベガス法について解説します。具体的なアルゴリズムの実装や、それぞれの違いを分かりやすくまとめました。"
-categories: ["アルゴリズム", "プログラミング"]
+categories: ["algorithms", "programming"]
 tags: ["乱数", "Monte Carlo", "Las Vegas", "Python", "Mermaid", "Math"]
 slug: "monte-carlo-and-las-vegas-algorithms"
 ---

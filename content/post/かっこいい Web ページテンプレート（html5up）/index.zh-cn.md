@@ -5,7 +5,7 @@ date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Web页面模板"]
 draft: false
 image: "img.webp"
-categories: ["博客运营"]
+categories: ["blogging"]
 description: '介绍设计感十足的网页模板网站“html5up”。总结其拥有丰富精美、让人立刻想尝试的模板的魅力。可作为网页制作的参考。'
 ---
 

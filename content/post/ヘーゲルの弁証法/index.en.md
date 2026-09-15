@@ -5,7 +5,7 @@ date: 2022-09-09T23:13:19+09:00
 tags: ["Philosophy","Hegel","Dialectic"]
 draft: false
 image: "images/img.webp"
-categories: ["IT/Technology"]
+categories: ["it-technology"]
 description: 'We explain ''Hegel''s Dialectic'', a concept of overcoming conflicts and contradictions to develop into a higher dimension. We explore it in an easy-to-understand way with familiar examples, not only as a philosophical concept but also through laws of nature and evolution via bug fixes in computer programs.'
 ---
 ## What is Hegel's Dialectic?

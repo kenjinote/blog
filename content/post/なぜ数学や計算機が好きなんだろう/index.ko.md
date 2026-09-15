@@ -10,7 +10,7 @@ date: 2022-09-23T01:56:52+09:00
 tags: ["잡기"]
 draft: false
 image: "img.webp"
-categories: ["수학・암호・양자"]
+categories: ["math-cryptography-quantum"]
 description: '수학이나 컴퓨터에 끌리는 이유를 고찰합니다. 모든 사람에게 평등하고 규칙이 명확하며, 도출된 답이 영원히 옳다는 점, 그리고 항상 미해결 과제가 있어 적당한 어려움이 있는 점 등 그 심오한 매력을 이야기합니다.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["安全", "社会", "数据科学"]
+categories: ["security", "society", "data-science"]
 tags: ["隐私", "大数据", "差分隐私", "联邦学习"]
 ---
 

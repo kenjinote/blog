@@ -3,7 +3,7 @@ title: "終末論（Doomsday Argument）：機率論推導出的「人類滅亡�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "我們正處於人類歷史的哪個階段？本文將透過圖解與數學公式，為您解說運用哥白尼原理與貝氏推斷，以機率論來預測人類滅亡時間的「終末論」。"
-categories: ["機率論", "思想實驗", "哲學"]
+categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags: ["貝氏推斷", "終末論", "Doomsday Argument", "數學"]
 slug: "doomsday-argument"
 ---

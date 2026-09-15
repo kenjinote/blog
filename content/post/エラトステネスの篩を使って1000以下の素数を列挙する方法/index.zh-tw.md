@@ -6,7 +6,7 @@ tags: ["埃拉托斯特尼篩法", "質數", "數學", "Rust"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '淺顯易懂地解說能有效率找出質數的演算法「埃拉托斯特尼篩法」機制與具體步驟。同時介紹使用 Rust 語言列舉 1000 以下質數的實作範例。'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "C++", "Audio Processing"]
+categories: ["ai", "cpp", "audio-processing"]
 tags: ["Whisper", "whisper.cpp", "Speech Recognition", "C++"]
 description: '使用C++與whisper.cpp，將高精度語音辨識AI整合至邊緣裝置或原生應用程式的完整指南。內容涵蓋從語音訊號處理基礎到即時推論最佳化的所有環節。'
 ---

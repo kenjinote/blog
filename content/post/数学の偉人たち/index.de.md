@@ -5,7 +5,7 @@ date: 2022-09-22T23:06:37+09:00
 tags: ["Mathematiker"]
 draft: false
 image: "img.webp"
-categories: ["Mathematik, Kryptographie und Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir stellen die großen Mathematiker des antiken Griechenlands und Ägyptens, die in die Geschichte eingegangen sind, in der Reihenfolge ihrer Geburt vor. Wir erklären ihre erstaunlichen Entdeckungen und weniger bekannten Anekdoten leicht verständlich, wie den Satz des Pythagoras, das archimedische Prinzip und Euklids Elemente.'
 ---
 Wir stellen die großen Mathematiker, die in die Geschichte eingegangen sind, in der Reihenfolge ihrer Geburt vor.

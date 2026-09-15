@@ -5,7 +5,7 @@ date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "编程", "开发", "技术"]
 draft: false
 image: "img_1.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '现役工程师为您讲解使用“Win32API＋C++”开发Windows应用的优缺点。介绍原生开发独有的魅力（如超快的执行速度、高自由度的控制、无需运行库易于分发）以及学习上的挑战。'
 ---
 # 使用 Win32API + C++ 开发的魅力与挑战

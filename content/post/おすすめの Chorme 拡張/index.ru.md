@@ -5,7 +5,7 @@ date: 2023-03-19T02:54:30+09:00
 tags: ["Расширения Chrome", "Браузер", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
-categories: ["IT / Технологии"]
+categories: ["it-technology"]
 description: 'Представляем рекомендуемые расширения, которые кардинально повысят эффективность работы в браузере Google Chrome или Microsoft Edge, такие как жесты мышью, блокировка рекламы, переводчик DeepL, боковая панель ChatGPT и другие.'
 ---
 

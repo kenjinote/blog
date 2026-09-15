@@ -5,7 +5,7 @@ date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Computer sperren", "Verknüpfung"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Wir erklären mit Bildern verständlich, wie Sie eine Verknüpfung erstellen, mit der Sie Ihren Windows-Computer mit einem Klick sperren können. Wir stellen auch eine Methode vor, um ihn mit der Tastenkombination Win+L sofort zu sperren, was als Sicherheitsmaßnahme praktisch ist, wenn Sie sich von Ihrem Schreibtisch entfernen.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: "LLMの学習や推論において最大の障壁となるVRAM（GPUメモリ）不足。本記事では、CPUオフロード、KVキャッシュ量子化、勾配チェックポイントなどの解消テクニックを数式やアーキテクチャ図を用いて徹底解説します。"
 ---

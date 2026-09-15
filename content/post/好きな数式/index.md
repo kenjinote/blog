@@ -6,7 +6,7 @@ tags: ["数学"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: 'ウィルソンの定理、オイラーの公式、フェルマーの最終定理、バーゼル問題など、数学の奥深さや美しさを感じられる魅力的な数式をご紹介します。シンプルでありながら世界の真理を表すような、感動を覚える美しい数式の数々をぜひご覧ください。'
 ---
 ## ウィルソンの定理

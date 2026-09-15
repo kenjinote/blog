@@ -4,10 +4,7 @@ description: "Une exploration approfondie de la loi de Zipf, la remarquable loi 
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Science des données"
-  - "Linguistique"
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Loi de Zipf"
   - "Loi de puissance"

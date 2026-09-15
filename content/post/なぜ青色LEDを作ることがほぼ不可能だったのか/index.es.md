@@ -13,7 +13,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["Ciencia", "Física", "Semiconductores"]
 draft: false
 image: "img.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Presentación de un documental en inglés que explica cuán difícil fue la creación del LED azul. También aborda el gran logro de los japoneses que resolvieron un problema que se consideraba imposible y la brecha en la evaluación a nivel nacional.'
 ---
 

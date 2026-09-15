@@ -5,7 +5,7 @@ date: 2026-01-23T13:43:41+09:00
 tags: ["日本人优先", "政治", "社会问题"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '分析2026年日本社会中“日本人优先”口号获得支持背后的物价飞涨与少子老龄化现实。摒弃情感驱动，基于客观数据探讨社会问题的本质以及未来的共存方式。'
 ---
 

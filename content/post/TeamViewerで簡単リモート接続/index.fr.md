@@ -5,7 +5,7 @@ date: 2023-01-13T01:45:00+09:00
 tags: ["TeamViewer", "Commande", "Connexion à Distance"]
 draft: false
 image: "img.webp"
-categories: ["Informatique・Technologie"]
+categories: ["it-technology"]
 description: 'Explique comment effectuer facilement une connexion au bureau à distance en utilisant TeamViewer. Présente également une astuce pratique pour spécifier l''ID et le mot de passe depuis la ligne de commande afin d''automatiser et d''omettre la connexion via des raccourcis.'
 ---
 

@@ -9,7 +9,7 @@ date: 2023-02-28T00:51:49+09:00
 tags: ["teclado", "trackball", "monitor"]
 draft: false
 image: "img.webp"
-categories: ["PC y gadgets"]
+categories: ["pc-gadgets"]
 description: 'Presentamos los periféricos de PC recomendados que mejoran drásticamente la eficiencia del trabajo, utilizados por un ingeniero en activo, como un teclado de interruptor capacitivo sin contacto duradero, un mouse trackball que reduce la fatiga de la muñeca y pantallas anchas 4K de alta resolución.'
 ---
 

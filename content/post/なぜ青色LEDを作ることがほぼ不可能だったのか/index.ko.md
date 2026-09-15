@@ -13,7 +13,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["과학", "물리학", "반도체"]
 draft: false
 image: "img.webp"
-categories: ["IT·테크놀로지"]
+categories: ["it-technology"]
 description: '청색 LED의 실현이 얼마나 어려웠는지를 해설하는 영어 다큐멘터리 프로그램의 소개. 불가능하다고 여겨졌던 난제를 해결한 일본인의 위업과 국내에서의 평가 차이에 대해서도 언급합니다.'
 ---
 

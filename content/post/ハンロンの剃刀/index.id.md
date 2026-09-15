@@ -5,7 +5,7 @@ date: 2024-09-24T18:14:34+09:00
 tags: ["frasa", "ungkapan"]
 draft: false
 image: "img.webp"
-categories: ["IT dan Teknologi"]
+categories: ["it-technology"]
 description: 'Memperkenalkan ''Pisau Cukur Hanlon'', suatu pendekatan psikologis untuk ''mengartikan tindakan orang lain bukan sebagai sebuah niat jahat, melainkan sekadar kecerobohan belaka''. Memberikan petunjuk untuk menghilangkan kekesalan harian semacam balasan LINE yang lama, serta upaya mengurangi beban stres dalam menjalin relasi antarmanusia.'
 ---
 

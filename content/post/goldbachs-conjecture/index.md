@@ -4,9 +4,7 @@ description: "数学の未解決問題の中でも特に有名な「ゴールド
 slug: "goldbachs-conjecture"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "数学"
-  - "未解決問題"
+categories: ["mathematics", "unsolved-problems"]
 tags:
   - "素数"
   - "数論"

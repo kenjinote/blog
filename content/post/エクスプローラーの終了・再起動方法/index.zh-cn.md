@@ -5,7 +5,7 @@ date: 2024-03-30T15:40:24+09:00
 tags: ["文件资源管理器"]
 draft: false
 image: "img_2.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '讲解在Windows中结束和重启资源管理器（explorer.exe）的多种方法。通俗易懂地介绍使用任务栏、任务管理器、命令提示符的步骤。'
 ---
 

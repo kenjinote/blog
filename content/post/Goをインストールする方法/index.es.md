@@ -7,7 +7,7 @@ date: 2022-09-10T00:48:17+09:00
 tags: ["Go","Instalación"]
 draft: false
 image: "images/cover.webp"
-categories: ["Programación"]
+categories: ["programming"]
 description: 'Explicamos para principiantes cómo instalar "Go (Golang)", un lenguaje de programación desarrollado por Google. Desde la obtención del instalador hasta la creación, compilación y ejecución de un programa Hello World. Ideal como introducción para tu primer contacto con Go.'
 ---
 

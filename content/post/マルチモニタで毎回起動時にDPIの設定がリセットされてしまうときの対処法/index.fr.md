@@ -5,7 +5,7 @@ date: 2024-04-29T19:42:20+09:00
 tags: ["Plusieurs moniteurs", "DPI", "Panneau de configuration"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et technologie"]
+categories: ["it-technology"]
 description: 'Nous expliquons comment résoudre le problème où les paramètres DPI (mise à l''échelle de l''affichage) se réinitialisent automatiquement au démarrage du PC dans un environnement multi-écrans sous Windows 11. Voici la procédure pour désactiver le démarrage rapide depuis le panneau de configuration.'
 ---
 

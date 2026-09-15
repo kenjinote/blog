@@ -5,7 +5,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
-categories: ["Manajemen Blog"]
+categories: ["blogging"]
 description: 'Menjelaskan cara menggunakan ''Ranklet'', sebuah layanan yang dapat dengan mudah menampilkan peringkat halaman populer situs secara otomatis dengan menghubungkannya ke Google Analytics. Mengambil contoh blog HUGO, kami memperkenalkan langkah pengaturan dan cara menyesuaikan templat HTML/CSS.'
 ---
 

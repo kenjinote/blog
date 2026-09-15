@@ -5,7 +5,7 @@ date: 2023-04-09T14:01:00+09:00
 tags: ["線上", "程式碼執行環境", "程式設計"]
 draft: false
 image: "img.webp"
-categories: ["程式設計"]
+categories: ["programming"]
 description: '依語言（Python、JavaScript、C++ 等）整理了免建置環境就能輕鬆開始寫程式的實用線上程式碼執行環境。詳細解說 Google Colab 與 AWS Cloud9 等平台的特色。'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "bordure", "image"]
 draft: false
 image: "img_3.webp"
-categories: ["Technologie IA"]
+categories: ["ai-technology"]
 description: 'Explique comment ajouter des bordures aux images en utilisant le logiciel de retouche d''image paint.net. Présente aux débutants la procédure de création de bordures à l''aide de la spécification de la couleur secondaire et du redimensionnement de la zone de travail. Une technique pratique qui est utile immédiatement lorsque vous souhaitez décorer des images pour un blog ou la création de documents.'
 ---
 

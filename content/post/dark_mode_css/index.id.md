@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: 'Penjelasan terperinci mengenai desain CSS tingkat lanjut, pencegahan FOUC, dan penggunaan ruang warna (OKLCH) dengan mempertimbangkan aksesibilitas (WCAG 2.1 AAA) untuk mengimplementasikan mode gelap pada blog atau aplikasi web.'
 ---

@@ -5,7 +5,7 @@ date: 2023-02-28T00:51:49+09:00
 tags: ["Keyboard", "Trackball", "Display"]
 draft: false
 image: "img.webp"
-categories: ["PC/Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Introduces recommended PC peripherals that dramatically increase work efficiency, loved by active engineers. Includes long-lasting capacitive contactless keyboards, trackball mice that reduce wrist fatigue, and high-resolution 4K wide displays.'
 ---
 

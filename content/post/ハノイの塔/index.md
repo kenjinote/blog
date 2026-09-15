@@ -5,7 +5,7 @@ date: 2025-04-17T22:23:14+09:00
 tags: ["ハノイの塔", "アルゴリズム", "Python"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: '有名なパズル「ハノイの塔」を題材に、プログラミングにおける「再帰呼び出し（リカーシブ）」の考え方をPythonのサンプルコード付きで分かりやすく解説。アルゴリズムの基礎を学びたい初心者におすすめです。'
 ---
 

@@ -4,7 +4,7 @@ description: "Глубокое погружение в историю конти
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "Теория множеств"]
+categories: ["mathematics", "set-theory"]
 tags: ["Континуум-гипотеза", "Кантор", "Бесконечность", "Математика"]
 ---
 

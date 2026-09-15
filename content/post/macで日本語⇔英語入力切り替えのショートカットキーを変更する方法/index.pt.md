@@ -5,7 +5,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "Tecla de Atalho", "Entrada em Japonês"]
 draft: 
 image: "img.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos como alterar o atalho de teclado para alternar entre japonês e inglês no Mac (teclado US) para a sua combinação preferida, como ''Alt + `''. Também apresentamos o processo de configuração no macOS Ventura e como evitar a inclusão de Katakana ao alternar.'
 ---
 

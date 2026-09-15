@@ -12,7 +12,7 @@ date: 2023-08-01T00:26:30+09:00
 tags: ["Splatoon 2", "Juegos", "Nintendo Switch"]
 draft: false
 image: "img.webp"
-categories: ["TI y Tecnología"]
+categories: ["it-technology"]
 description: 'Presentamos el encanto del gran juego ''Splatoon 2'', que se puede jugar durante mucho tiempo, y las armas recomendadas para principiantes (como el Rociador básico y varios rodillos). Un diario de juego para disfrutar de las partidas mientras mantienes el rango A+ a S+ en los combates competitivos (Anarquía).'
 ---
 

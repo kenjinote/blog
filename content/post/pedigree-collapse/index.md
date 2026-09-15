@@ -3,10 +3,7 @@ title: "先祖のパラドックス：血統の崩壊（Pedigree Collapse）の�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "世代を遡ると先祖の数が当時の世界人口を超える「先祖のパラドックス」。その謎を解き明かす「血統の崩壊（Pedigree Collapse）」について、数学的アプローチと遺伝学の観点から詳しく解説します。"
-categories:
-  - Mathematical Paradoxes
-  - Genetics
-  - Science
+categories: ["mathematical-paradoxes", "genetics", "science"]
 tags:
   - 確率論
   - 遺伝学

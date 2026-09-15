@@ -5,7 +5,7 @@ date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "快捷键", "应用程序切换"]
 draft:
 image: "img.webp"
-categories: ["PC・数码"]
+categories: ["pc-gadgets"]
 description: '简单明了地讲解如何安装和设置实用的第三方应用，以实现在Mac标准功能中难以实现的类似Windows的“Alt+Tab”应用切换。'
 ---
 

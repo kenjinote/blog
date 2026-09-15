@@ -5,7 +5,7 @@ date: 2025-04-17T10:33:02+09:00
 tags: ["código-fonte", "linhas de código"]
 draft: false
 image: "img_1.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Explicamos sobre as linhas de código-fonte que aumentam dramaticamente com a era, dos 420 mil do Space Shuttle para 2 bilhões do Google. Introduzimos a relação entre o benefício de código aumentado e o risco de ocorrência de bugs, junto com o caso do kernel do Linux.'
 ---
 

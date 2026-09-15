@@ -5,7 +5,7 @@ date: "2026-09-13T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Tools", "Windows"]
+categories: ["programming", "tools", "windows"]
 tags: ["Windows Terminal", "PowerShell", "Oh My Posh", "Customization"]
 description: 'हम Windows Terminal कस्टमाइज़ेशन तकनीकों की गहराई से पड़ताल करेंगे। DirectX रेंडरिंग के तंत्र, Oh My Posh और Starship, और प्रोफाइल की उन्नत सेटिंग्स को विस्तार से समझाया गया है।'
 ---

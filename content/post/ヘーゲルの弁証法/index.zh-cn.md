@@ -5,7 +5,7 @@ date: 2022-09-09T23:13:19+09:00
 tags: ["哲学","黑格尔","辩证法"]
 draft: false
 image: "images/img.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '解说克服对立与矛盾、向更高维度发展的“黑格尔辩证法”。不仅涉及哲学概念，还结合自然界法则以及通过修复计算机程序Bug实现的进化等贴近生活的例子进行通俗易懂的探讨。'
 ---
 ## 什么是黑格尔的辩证法

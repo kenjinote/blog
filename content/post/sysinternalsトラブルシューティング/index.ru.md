@@ -5,7 +5,7 @@ date: "2026-09-13T05:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Windows", "Troubleshooting", "System Admin"]
+categories: ["windows", "troubleshooting", "system-administration"]
 tags: ["Sysinternals", "ProcMon", "Process Explorer", "Windows"]
 description: 'Полное руководство по устранению неполадок Windows. Подробный разбор методов анализа на уровне ядра с использованием инструментов Sysinternals.'
 ---

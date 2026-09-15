@@ -4,7 +4,7 @@ description: "A deep dive into the existence and smoothness of the Navier-Stokes
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Physics"]
+categories: ["mathematics", "physics"]
 tags: ["Navier-Stokes", "Fluid Dynamics", "Millennium Prize Problems"]
 ---
 

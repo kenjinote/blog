@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Security", "AI", "Society"]
+categories: ["security", "ai", "society"]
 tags: ["Deepfake", "GAN", "C2PA", "Information Literacy"]
 description: 'Mit der Evolution von KI-Technologien werden Deepfakes immer ausgefeilter. Wir erklären die Mechanismen ihrer Erstellung, technische Erkennungsmethoden mittels Frequenzanalyse und biologischer Signale (rPPG) sowie Herkunftsnachweise für Inhalte wie C2PA in überwältigender technischer Tiefe.'
 ---

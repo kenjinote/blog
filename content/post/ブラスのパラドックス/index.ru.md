@@ -7,7 +7,7 @@ slug: "braess-paradox"
 image: "img/braess_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Математические парадоксы", "Теория игр"]
+categories: ["mathematical-paradoxes", "game-theory"]
 tags: ["Парадокс", "Сети", "Трафик", "Равновесие Нэша", "Парадокс Браеса"]
 ---
 

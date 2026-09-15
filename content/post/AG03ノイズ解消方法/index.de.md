@@ -5,7 +5,7 @@ date: 2023-03-18T01:17:10+09:00
 tags: ["YAMAHA", "AG03", "Rauschen"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Leiden Sie unter regelmäßigen Kratzgeräuschen bei der Verwendung des YAMAHA AG03? In diesem Artikel erklären wir leicht verständlich die konkreten Schritte zur Installation und Aktualisierung des offiziellen USB-Treibers, um das Rauschen auf Anhieb zu beseitigen. Holen Sie sich Ihre komfortable Audioumgebung zurück!'
 ---
 

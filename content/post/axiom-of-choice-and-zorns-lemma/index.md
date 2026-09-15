@@ -4,7 +4,7 @@ description: "選択公理とツォルンの補題について、その直感的
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "集合論"]
+categories: ["mathematics", "set-theory"]
 tags: ["選択公理", "ツォルンの補題", "ZFC公理系", "数学基礎論", "Mermaid", "KaTeX"]
 ---
 

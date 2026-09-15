@@ -5,7 +5,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
-categories: ["برمجة"]
+categories: ["programming"]
 description: 'نشرح طريقة بسيطة لتحديث rustc، وهو المترجم الخاص بلغة Rust، إلى أحدث إصدار. يمكنك تحديث كل شيء دفعة واحدة بما في ذلك المكونات ذات الصلة بمجرد تنفيذ سطر أمر واحد `rustup update` في الوحدة الطرفية أو موجه الأوامر.'
 ---
 # كيفية تحديث rustc

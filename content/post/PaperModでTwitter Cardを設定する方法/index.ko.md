@@ -9,7 +9,7 @@ date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
-categories: ["블로그 운영"]
+categories: ["blogging"]
 description: 'Hugo의 PaperMod 테마에서 Twitter Card 설정 방법을 설명합니다. 사이트 전체에 적용하는 config.toml 작성법과 각 게시물의 Markdown 헤더에 개별적으로 이미지를 지정하는 방법을 소개합니다. SNS 공유 시 썸네일 이미지 표시에 도움이 되는 설정 절차입니다.'
 ---
 

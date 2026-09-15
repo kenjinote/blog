@@ -5,7 +5,7 @@ date: 2024-04-21T18:47:26+09:00
 tags: ["GitHub Copilot", ""]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نشرح كيفية حل المشكلة عندما يتوقف GitHub Copilot عن العمل بسبب ظهور أخطاء في الشهادة مثل "unable to verify the first certificate". نستعرض خطوات محددة تشمل تعديل إعدادات برنامج ESET.'
 ---
 

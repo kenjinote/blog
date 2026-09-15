@@ -5,7 +5,7 @@ date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "File Explorer"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explains how to restore the new right-click menu (context menu) in Windows 11 to the classic Windows 10 version. Introduces simple steps using Registry Editor settings to always show the old style menu.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-03-19T18:13:14+09:00
 tags: ["buku bisnis", "buku"]
 draft: false
 image: "img.webp"
-categories: ["Gaya Hidup & Catatan"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Kami mengulas secara eksklusif mahakarya dan buku bisnis pilihan yang setidaknya harus dibaca sekali oleh seorang pebisnis untuk pengembangan diri dan peningkatan keterampilan, seperti ''How to Win Friends and Influence People'', ''The Courage to be Disliked'', ''LIFE SHIFT'', dan ''The 7 Habits of Highly Effective People''.'
 ---
 

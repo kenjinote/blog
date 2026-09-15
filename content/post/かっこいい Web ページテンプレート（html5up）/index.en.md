@@ -5,7 +5,7 @@ date: 2023-04-17T00:26:55+09:00
 tags: ["html5up", "Web page template"]
 draft: false
 image: "img.webp"
-categories: ["Blog Operation"]
+categories: ["blogging"]
 description: 'An introduction to the highly-designed web page template site ''html5up''. Summarizes the appeal of its abundance of sophisticated, cool templates that make you want to use them right away. Useful as a reference for web production.'
 ---
 

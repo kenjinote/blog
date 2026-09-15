@@ -5,7 +5,7 @@ date: 2026-09-05T13:04:59+09:00
 tags: ["GNFS", "C++", "RSA", "Matematika", "Kriptografi"]
 draft: false
 image: "gnfs_cpp_blog_eyecatch_1788580949217.webp"
-categories: ["Matematika, Kriptografi & Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Penjelasan menyeluruh mengenai mekanisme ''General Number Field Sieve (GNFS)'', algoritme faktorisasi prima yang digunakan untuk memecahkan sandi RSA, beserta kode implementasi C++. Konten wajib bagi pecinta pemrograman yang mendalami logika komputasi menggunakan library Boost dan teori bilangan aljabar.'
 ---
 

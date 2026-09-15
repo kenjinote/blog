@@ -5,7 +5,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["Wissenschaft", "Physik", "Halbleiter"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir stellen einen englischen Dokumentarfilm vor, der erklärt, wie schwierig die Realisierung blauer LEDs war. Wir gehen auch auf die große Leistung der Japaner ein, die ein Problem gelöst haben, das als unmöglich galt, sowie auf die Kluft bei der Bewertung im eigenen Land.'
 ---
 

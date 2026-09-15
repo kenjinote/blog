@@ -4,7 +4,7 @@ description = "Eine ausführliche Erklärung der Zwillingsprimzahlvermutung, ein
 slug = "twin-prime-conjecture"
 date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
-categories = ["Mathematik"]
+categories = ["mathematics"]
 tags = ["Primzahlen", "Zahlentheorie", "Ungelöste Probleme"]
 +++
 

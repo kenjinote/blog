@@ -5,7 +5,7 @@ date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Matemática", "Algoritmos"]
 draft: false
 image: "img.webp"
-categories: ["Matemática・Criptografia・Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicamos o uso básico e os comandos de cálculo do Mathematica para iniciantes. Reunimos exemplos práticos de funções frequentemente usadas, como resolução de equações e sistemas de equações (Solve), inequações (Reduce), derivadas (D), integrais (Integrate), cálculos de matrizes, entre outros.'
 ---
 # Introdução ao Mathematica

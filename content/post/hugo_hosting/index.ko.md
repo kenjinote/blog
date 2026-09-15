@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "DevOps", "Web Hosting"]
+categories: ["blogging", "devops", "web-hosting"]
 tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: 'Hugo를 사용한 정적 사이트를 Cloudflare Pages나 GitHub Pages를 활용하여 무료이면서도 빠르게 호스팅하기 위한 완전한 기술 가이드입니다. 엣지 컴퓨팅, CDN 아키텍처, CI/CD 파이프라인에 대해 자세히 설명합니다.'
 ---

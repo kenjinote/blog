@@ -5,7 +5,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["IA", "Stable Diffusion", "Illustration", "Génération d'images", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Pourquoi ne pas créer l''illustration de vos rêves à l''aide de l''IA « Stable Diffusion » qui permet de générer des images de haute qualité à partir de texte ? Nous expliquons de manière simple les étapes permettant à quiconque de commencer facilement la génération d''images IA en utilisant uniquement Google Colab et un compte gratuit.'
 ---
 

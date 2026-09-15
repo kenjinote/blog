@@ -3,7 +3,7 @@ title: "종말 논법(Doomsday Argument): 확률론이 도출해내는 '인류 �
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "우리는 인류 역사의 어느 지점에 있는가? 코페르니쿠스의 원리와 베이즈 추정을 이용하여 인류 멸망의 시기를 확률론적으로 예측하는 '종말 논법'에 대해 수식과 도해를 섞어 해설합니다."
-categories: ["확률론", "사고 실험", "철학"]
+categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags: ["베이즈 추정", "종말 논법", "Doomsday Argument", "수학"]
 slug: "doomsday-argument"
 ---

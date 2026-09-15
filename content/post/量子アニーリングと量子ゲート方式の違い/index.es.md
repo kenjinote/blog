@@ -5,7 +5,7 @@ date: "2026-09-11T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Annealing", "Gate Model", "D-Wave", "QUBO"]
 description: 'Comparación y explicación exhaustiva de dos arquitecturas de computadoras cuánticas: recocido cuántico y modelo de puertas, desde modelos matemáticos y fundamentos físicos como el modelo de Ising, formulación QUBO, transformación unitaria y corrección de errores, hasta casos de uso específicos.'
 ---

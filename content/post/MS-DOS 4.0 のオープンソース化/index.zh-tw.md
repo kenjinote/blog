@@ -5,7 +5,7 @@ date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "開源"]
 draft: false
 image: "img.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '介紹約 40 年前發布的作業系統「MS-DOS 4.0」原始碼已開源並於 GitHub 公開的新聞。探討這個大部分程式碼以 8086 組合語言撰寫的歷史性資料。'
 ---
 

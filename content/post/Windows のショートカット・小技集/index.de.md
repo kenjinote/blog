@@ -5,7 +5,7 @@ date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Tipps", "Tastenkombinationen"]
 draft: false
 image: "img.webp"
-categories: ["PC und Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Wir stellen eine Auswahl nützlicher Tastenkombinationen und Tricks vor, die die Arbeitseffizienz unter Windows 11 und Windows 10 verbessern. Dies ist eine Sammlung unverzichtbarer Techniken für den täglichen Gebrauch, von Anfängern bis zu fortgeschrittenen Benutzern, wie Fensterbedienung, Desktop-Anzeige, Spracheingabe und Bildschirmaufnahmen.'
 ---
 Dies ist eine Sammlung von kleinen Tricks für den alltäglichen Gebrauch unter Windows. Ich würde mich freuen, wenn Windows-Anfänger dies lesen.

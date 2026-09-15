@@ -8,7 +8,7 @@ date: 2023-04-09T03:25:54+09:00
 tags: ["mac", "CocoaPods", "macOS", "xcode"]
 draft: false
 image: "img_1.webp"
-categories: ["PC y Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos detalladamente los pasos para instalar CocoaPods usando la terminal en un entorno Mac. También presentamos cómo resolver errores al ejecutar ''sudo gem install cocoapods'' y el comando de instalación usando Homebrew.'
 ---
 

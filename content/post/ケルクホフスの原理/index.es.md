@@ -13,7 +13,7 @@ date: 2025-04-16T23:53:08+09:00
 tags: ["Principio de Kerckhoffs", "Criptografía"]
 draft: false
 image: "img_2.webp"
-categories: ["Matemáticas, Criptografía y Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicación para principiantes sobre el ''principio de Kerckhoffs'', esencial para aprender sobre seguridad de la información y tecnología criptográfica. Explicamos en detalle este concepto y la razón de que ''debe ser seguro incluso si se expone el mecanismo de cifrado'', lo cual es un fundamento importante de la seguridad moderna.'
 ---
 

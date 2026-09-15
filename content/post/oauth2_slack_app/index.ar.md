@@ -5,7 +5,7 @@ date: "2026-09-13T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Security", "Web Development"]
+categories: ["programming", "security", "web-development"]
 tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'شرح تفصيلي ومصور لآلية عمل تدفق منح رمز التفويض (Authorization Code Grant) في OAuth 2.0 من خلال تنفيذ تكامل Slack App. هذا دليل شامل يتضمن أمثلة برمجية عملية باستخدام Node.js وأفضل الممارسات الأمنية.'
 ---

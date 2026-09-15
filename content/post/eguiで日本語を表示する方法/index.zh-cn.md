@@ -5,7 +5,7 @@ date: 2023-04-01T03:17:52+09:00
 tags: ["rust", "egui", "GUI库", "日语"]
 draft: false
 image: "img.webp"
-categories: ["IT与技术"]
+categories: ["it-technology"]
 description: '本文讲解在Rust的轻量级GUI库“egui”中正确显示日语（及中文等）的实现方法。介绍加载Windows的微软雅黑（或Meiryo）字体并应用于应用程序的具体代码示例。'
 ---
 

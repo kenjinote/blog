@@ -5,7 +5,7 @@ date: 2023-04-18T00:18:22+09:00
 tags: ["wxWidgets", "Sample"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'An easy-to-understand guide for beginners on everything from the installation steps of ''wxWidgets'', a C++ cross-platform GUI library, to how to create a sample project using Visual Studio.'
 ---
 

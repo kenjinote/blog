@@ -7,7 +7,7 @@ slug: "sorites-paradox"
 image: "img/sorites_paradox.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "فلسفة", "منطق"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["مفارقة", "غموض", "سوريتيس", "منطق ضبابي"]
 ---
 

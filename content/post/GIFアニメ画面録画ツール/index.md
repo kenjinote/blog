@@ -5,7 +5,7 @@ date: 2024-02-08T01:23:01+09:00
 tags: ["ツール", "画面録画", "GIF"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'パソコンの画面操作を録画してGIFアニメーションに変換できる無料ツールの紹介とダウンロード方法。Microsoft Teams等のコミュニケーションツールでの共有に便利です。操作範囲の指定から録画手順まで分かりやすく解説します。'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T20:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Quantum Computing", "Python"]
+categories: ["programming", "quantum-computing", "python"]
 tags: ["Qiskit", "Python", "Quantum Computing", "IBM"]
 description: 'IBM के क्वांटम कंप्यूटिंग फ्रेमवर्क Qiskit का उपयोग करते हुए, क्वांटम प्रोग्रामिंग की बुनियादी बातों से लेकर बेल स्टेट के निर्माण और बुनियादी एल्गोरिदम तक विस्तार से बताया गया है।'
 ---

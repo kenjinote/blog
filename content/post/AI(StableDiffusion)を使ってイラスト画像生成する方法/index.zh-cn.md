@@ -5,7 +5,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "插画", "图片生成", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '想不想尝试使用能根据输入的文字生成高质量图片的AI“Stable Diffusion”，创作出您喜欢的插画呢？本文将详细讲解仅需Google Colab和免费账号，任何人都能轻松开始AI图片生成的步骤。'
 ---
 

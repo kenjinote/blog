@@ -5,7 +5,7 @@ date: 2022-09-02T07:23:00+09:00
 tags: ["Verschiedenes"]
 draft: false
 image: "images/komeda.webp"
-categories: ["Blog-Betrieb"]
+categories: ["blogging"]
 description: 'Ich habe einen neuen persönlichen Blog mit dem statischen Website-Generator „Hugo“ erstellt. Ich plane, ihn als Notizblock zu nutzen, um technische Memos, Programmiercodes und kleine alltägliche Ereignisse auf lockere Weise zu teilen.'
 ---
 

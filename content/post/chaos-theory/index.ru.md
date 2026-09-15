@@ -4,9 +4,7 @@ description: Подробное объяснение теории хаоса и 
 slug: chaos-theory
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- Наука
-- Математика
+categories: ["science", "mathematics"]
 tags:
 - Теория Хаоса
 - Физика

@@ -5,7 +5,7 @@ date: 2024-05-31T01:36:00+09:00
 tags: ["hugo", "指令"]
 draft: false
 image: "img.webp"
-categories: ["部落格營運"]
+categories: ["blogging"]
 description: '介紹高速靜態網站產生器Hugo的CLI安裝方法，以及部落格營運中頻繁使用的基本指令一覽。為Hugo初學者解說必須記住的操作，如：架設新網站、建立文章、啟動本機伺服器、編譯(build)等。'
 ---
 

@@ -12,7 +12,7 @@ date: 2024-03-02T21:32:11+09:00
 tags: ["버전 정보", "Windows", "MacOS"]
 draft: false
 image: "img.webp"
-categories: ["PC・가젯"]
+categories: ["pc-gadgets"]
 description: 'Windows 11, IntelliJ IDEA, VS Code, Chrome, Edge, LINE 등 일상적으로 사용되는 다양한 PC 소프트웨어나 도구의 ''버전 정보 대화상자'' 화면 UI 디자인을 목록으로 소개합니다.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-10-02T02:18:04+09:00
 tags: ["git"]
 draft: false
 image: "img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Explicação simples sobre como deletar tags desnecessárias no Git. Abrange a exclusão no ambiente local com ''git tag -d'' e a remoção no repositório remoto com ''git push origin --delete''.'
 ---
 # Excluir uma tag local

@@ -5,7 +5,7 @@ date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "边框", "图片"]
 draft: false
 image: "img_3.webp"
-categories: ["AI与科技"]
+categories: ["ai-technology"]
 description: '讲解如何使用图片编辑软件paint.net为图片添加边框。面向初学者介绍利用次要颜色指定颜色及通过更改画布尺寸来制作边框的步骤。这是在编写博客或制作资料时非常实用的图片装饰技巧。'
 ---
 

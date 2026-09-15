@@ -5,7 +5,7 @@ date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Explique, étape par étape de la création du projet jusqu''à l''implémentation du code, comment utiliser les crates `winapi` et `user32-sys` en Rust pour appeler l''API Windows et afficher une simple boîte de message (MessageBox).'
 ---
 

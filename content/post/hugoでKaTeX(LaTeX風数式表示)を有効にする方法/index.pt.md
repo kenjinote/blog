@@ -6,7 +6,7 @@ tags: ["KaTeX", "LaTeX", "fórmulas", "matemática", "hugo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matemática/Criptografia/Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Explicamos os passos para introduzir a rápida biblioteca de renderização de equações ''KaTeX'' no gerador de sites estáticos Hugo. Descubra como habilitar a bela exibição de fórmulas matemáticas estilo LaTeX em seu blog, desde a criação do math.html até o carregamento no cabeçalho.'
 ---
 # O que é KaTeX

@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "محرر نصوص"]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة تطوير"]
+categories: ["tools-development-environment"]
 description: 'نشرح بوضوح خطوات تثبيت محرر النصوص الموجه للطرفية "micro" الذي يعمل بسلاسة في موجه الأوامر على نظام Windows، وإعداد متغيرات البيئة لجعله جاهزاً للاستخدام.'
 ---
 

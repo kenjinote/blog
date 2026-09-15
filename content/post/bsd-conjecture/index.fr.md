@@ -4,7 +4,7 @@ description: "Explication mathématique détaillée de la conjecture de Birch et
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques"]
+categories: ["mathematics"]
 tags: ["Théorie des nombres", "Courbes elliptiques", "Conjecture BSD", "Problèmes du prix du millénaire"]
 ---
 

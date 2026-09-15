@@ -5,7 +5,7 @@ date: 2024-08-25T16:24:35+09:00
 tags: ["视频", "短视频"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '汇总介绍在社交网络上引发热议的推荐短视频链接，如热刺比赛中拯救球队并获穆里尼奥称赞的球童感人故事等。'
 ---
 1. 足球 球童

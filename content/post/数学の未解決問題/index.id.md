@@ -6,7 +6,7 @@ tags: ["matematika", "masalah yang belum terpecahkan"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["Matematika, Kriptografi, dan Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Kami menjelaskan dengan mudah mengenai masalah-masalah matematika yang belum terpecahkan yang memesona padahal soalnya sendiri sangatlah sederhana dan belum pernah dibuktikan hingga saat ini. Apakah jumlah bilangan sempurna itu tak terhingga? Kita akan mengupas lebih dalam teka-teki dari masalah misterius yang masih membingungkan banyak ahli matematika hingga kini, seperti dugaan Goldbach dan pertanyaan rumit tentang Hipotesis Riemann.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["Pemrograman", "Font"]
 draft: false
 image: "img.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Kami akan memperkenalkan font pemrograman yang optimal untuk coding, seperti JetBrains Mono, HackGen, Ricty Diminished, Cica, dan Migu. Tingkatkan efisiensi pengembangan dengan meningkatkan visibilitas editor Anda.'
 ---
 

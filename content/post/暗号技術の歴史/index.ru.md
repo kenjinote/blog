@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: 'От древнего шифра Цезаря до Энигмы, криптографии с открытым ключом и постквантовой криптографии (PQC), подготавливающей нас к будущей угрозе квантовых компьютеров. Мы подробно объясняем грандиозную историю и технологическую эволюцию криптографии.'
 ---

@@ -3,7 +3,7 @@ title: "El principio del palomar y las colisiones Hash: Desentrañando los lími
 image: "eyecatch.jpg"
 date: "2026-09-14T00:00:00+09:00"
 description: "Descubre por qué el 'Principio del palomar', fácil de entender intuitivamente, es el concepto más importante en la seguridad de las tecnologías de encriptación modernas y las funciones hash. Lo explicaremos detalladamente con ejemplos, fórmulas y diagramas."
-categories: ["Tech", "Cryptography", "Mathematics"]
+categories: ["technology", "cryptography", "mathematics"]
 tags: ["Hash", "Principio del palomar", "Seguridad", "Algoritmo", "KaTeX", "Mermaid"]
 slug: "pigeonhole-principle-hash-collision"
 ---

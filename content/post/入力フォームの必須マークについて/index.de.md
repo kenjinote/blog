@@ -5,7 +5,7 @@ date: 2025-07-14T13:47:51+09:00
 tags: ["Eingabeformular", "Webentwicklung", "UX"]
 draft: false
 image: "img.webp"
-categories: ["Blog-Betrieb"]
+categories: ["blogging"]
 description: 'Wir erklären Best Practices für die Kennzeichnung von „Pflichtfeldern“ in Webformularen auf der Grundlage internationaler UI-Richtlinien. Wir haben die korrekte Verwendung von Sternchen (*), die klare Angabe von „Required“ und die Nutzung von ARIA-Attributen zur Verbesserung der Barrierefreiheit zusammengefasst.'
 ---
 

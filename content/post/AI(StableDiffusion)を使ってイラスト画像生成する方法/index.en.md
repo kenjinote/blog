@@ -5,7 +5,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "Illustration", "Image Generation", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Why not create illustrations to your liking using the AI ''Stable Diffusion'', which can generate high-quality images from text input? We provide an easy-to-understand explanation of the steps for anyone to easily start AI image generation using only Google Colab and a free account.'
 ---
 

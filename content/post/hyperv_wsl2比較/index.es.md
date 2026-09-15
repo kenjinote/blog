@@ -5,7 +5,7 @@ date: "2026-09-13T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Windows", "Infrastructure", "Virtualization"]
+categories: ["windows", "infrastructure", "virtualization"]
 tags: ["Hyper-V", "WSL2", "Linux", "Windows"]
 ---
 

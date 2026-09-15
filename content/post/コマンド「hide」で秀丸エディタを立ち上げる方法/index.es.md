@@ -12,7 +12,7 @@ date: 2024-03-29T23:45:37+09:00
 tags: ["Comandos", "Editor Hidemaru", "Registro"]
 draft: false
 image: "img_2.webp"
-categories: ["Herramientas y Entornos de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Explicamos cómo iniciar rápidamente el Hidemaru Editor simplemente escribiendo ''hide'' en ''Ejecutar'' o en el Símbolo del sistema en Windows 10/11. Un útil procedimiento de personalización utilizando las rutas de aplicación (App Paths) en el Editor del Registro.'
 ---
 

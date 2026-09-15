@@ -5,7 +5,7 @@ date: 2024-05-29T17:20:19+09:00
 tags: ["Visual Studio Code", "VSCode", "расширения", "плагины"]
 draft: false
 image: "img.webp"
-categories: ["Инструменты и среда разработки"]
+categories: ["tools-development-environment"]
 description: 'Список рекомендуемых расширений, которые сделают Visual Studio Code (VSCode) еще удобнее. Мы отобрали ключевые плагины, повышающие эффективность разработки, такие как управление контейнерами, управление кодом Git и автодополнение кода ИИ с помощью Copilot.'
 ---
 

@@ -4,10 +4,7 @@ description: 공식과 일러스트레이션을 사용하여 자연어부터 도
 slug: zipfs-law
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- 수학
-- 데이터 과학
-- 언어학
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
 - 지프의 법칙
 - 멱법칙

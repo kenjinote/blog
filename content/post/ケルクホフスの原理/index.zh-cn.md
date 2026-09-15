@@ -5,7 +5,7 @@ date: 2025-04-16T23:53:08+09:00
 tags: ["柯克霍夫原则", "密码学"]
 draft: false
 image: "img_2.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '面向初学者通俗易懂地讲解学习信息安全和密码技术时不可或缺的“柯克霍夫原则”。详细说明“即使密码机制泄露也应保持安全”这一构成现代安全基础的重要理念及原因。'
 ---
 

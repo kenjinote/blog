@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["Programmierung", "Schriftarten"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Wir stellen optimale Programmier-Schriftarten für das Coding vor, wie JetBrains Mono, HackGen, Ricty Diminished, Cica und Migu. Verbessern Sie die Lesbarkeit im Editor und steigern Sie so Ihre Entwicklungseffizienz.'
 ---
 

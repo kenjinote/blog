@@ -4,9 +4,7 @@ description: "Apa yang terjadi jika Anda menjumlahkan '1+2+3+4+...' tanpa batas?
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matematika"
-  - "Fisika"
+categories: ["mathematics", "physics"]
 tags:
   - "Deret Tak Terhingga"
   - "Perluasan Analitik"

@@ -8,7 +8,7 @@ date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "atajos de teclado", "cambiar de aplicación"]
 draft:
 image: "img.webp"
-categories: ["PC y gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos paso a paso cómo instalar y configurar una práctica aplicación de terceros que permite cambiar entre aplicaciones al estilo de "Alt+Tab" de Windows, algo que es difícil de conseguir con las funciones estándar de Mac.'
 ---
 

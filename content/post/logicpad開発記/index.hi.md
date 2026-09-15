@@ -5,7 +5,7 @@ date: "2026-09-13T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Windows", "App Development"]
+categories: ["programming", "windows", "app-development"]
 tags: ["WinUI 3", "C++", "Windows App SDK", "Microsoft Store", "Personal Project"]
 description: 'एक तकनीकी ब्लॉग पोस्ट जो LogicPad नामक नेटिव विंडोज़ ऐप के विकास से लेकर Microsoft Store पर इसके रिलीज़ होने तक की पूरी प्रक्रिया को देखता है। WinUI 3 और C++ का उपयोग करके विशिष्ट कार्यान्वयन से लेकर MSIX पैकेजिंग तक।'
 ---

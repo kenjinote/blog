@@ -5,7 +5,7 @@ date: 2023-04-02T18:05:30+09:00
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Para montar um ambiente confortável de desenvolvimento de aplicativos para iOS em casa, comprei um modelo mais antigo de Mac mini (2018) no Mercari. Compartilho os motivos da compra, as especificações detalhadas e o primeiro passo na preparação do ambiente.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "أتمتة"]
 draft: false
 image: "img.webp"
-categories: ["إدارة المدونة"]
+categories: ["blogging"]
 description: 'نشرح كيفية تحديد جميع مربعات الاختيار في صفحة الويب دفعة واحدة. نقدم خطوات إنشاء كود جافا سكريبت لتشغيله في وحدة تحكم DevTools في Chrome، بالإضافة إلى Bookmarklet مفيد لتحديد أو إلغاء تحديد الكل بنقرة واحدة.'
 ---
 

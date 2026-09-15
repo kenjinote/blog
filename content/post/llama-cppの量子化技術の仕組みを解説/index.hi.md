@@ -5,7 +5,7 @@ date: "2026-09-11T00:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Machine Learning", "C++"]
+categories: ["ai", "machine-learning", "cpp"]
 tags: ["llama.cpp", "GGUF", "Quantization", "LLM"]
 description: 'llama.cpp में इस्तेमाल होने वाले GGUF फॉर्मेट और k-quants क्वांटाइजेशन तकनीक की आंतरिक संरचना के बारे में गणितीय सूत्रों और आर्किटेक्चर आरेखों के साथ बहुत विस्तार से बताया गया है।'
 ---

@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Python", "Mathematics"]
+categories: ["quantum-computing", "python", "mathematics"]
 tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: 'क्वांटम कंप्यूटर वर्तमान क्रिप्टोग्राफी तकनीक को कैसे नष्ट कर सकता है, शोर के एल्गोरिथ्म की गणितीय पृष्ठभूमि से लेकर पायथन में इसके कार्यान्वयन तक का विस्तृत विवरण।'
 ---

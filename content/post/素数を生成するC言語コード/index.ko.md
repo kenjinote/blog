@@ -13,7 +13,7 @@ date: 2024-08-24T09:38:10+09:00
 tags: ["C 언어", "소수", "알고리즘", "수학"]
 draft: false
 image: "img.webp"
-categories: ["수학·암호·양자"]
+categories: ["math-cryptography-quantum"]
 description: '지정된 범위(1부터 n까지)의 소수를 판별하고 생성하여 나열하는 심플한 C언어의 샘플 코드를 소개합니다. isPrime 함수를 이용한 효율적인 알고리즘으로, 초보자도 알기 쉬운 프로그래밍 구현 예제와 해설을 게재하고 있습니다.'
 ---
 

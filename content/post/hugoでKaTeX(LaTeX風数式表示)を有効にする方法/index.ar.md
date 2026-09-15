@@ -6,7 +6,7 @@ tags: ["KaTeX", "LaTeX", "معادلات", "رياضيات", "hugo"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["رياضيات، تشفير، كم"]
+categories: ["math-cryptography-quantum"]
 description: 'نشرح خطوات تقديم مكتبة عرض المعادلات الرياضية السريعة ''KaTeX'' إلى مُنشئ المواقع الثابتة Hugo. من إنشاء ملف math.html إلى إعداد تحميله في رأس الصفحة، يمكنك بسهولة تعلم كيفية تفعيل عرض المعادلات الجميلة الشبيهة بـ LaTeX في مدونتك.'
 ---
 # ما هو KaTeX؟

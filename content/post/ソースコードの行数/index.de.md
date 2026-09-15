@@ -5,7 +5,7 @@ date: 2025-04-17T10:33:02+09:00
 tags: ["Quellcode", "Codezeilen"]
 draft: false
 image: "img_1.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir erklären die dramatische Zunahme der Quellcode-Zeilen im Laufe der Zeit, von 420.000 Zeilen im Space Shuttle bis zu 2 Milliarden Zeilen bei Google. Wir stellen auch den Zusammenhang zwischen den Vorteilen von mehr Code und dem Risiko von Fehlern sowie das Beispiel des Linux-Kernels vor.'
 ---
 

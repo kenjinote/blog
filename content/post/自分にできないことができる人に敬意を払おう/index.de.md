@@ -5,7 +5,7 @@ date: 2023-08-01T23:42:31+09:00
 tags: ["Gedicht", "Gedanken"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'Dieser Essay predigt, wie wichtig es ist, Berufe oder Positionen in der Gesellschaft nicht als über- oder unterlegen einzustufen und jedem Respekt entgegenzubringen, der Arbeiten ausführt, die man selbst nicht erledigen kann. Wir stellen Kernpunkte einer Denkweise vor, die menschliche Beziehungen glättet und gegenseitigen Respekt fördert.'
 ---
 

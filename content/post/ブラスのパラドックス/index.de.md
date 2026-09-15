@@ -7,7 +7,7 @@ slug: "braess-paradox"
 image: "img/braess_paradox.jpg"
 math: true
 mermaid: true
-categories: ["Mathematisches Paradoxon", "Spieltheorie"]
+categories: ["mathematical-paradoxes", "game-theory"]
 tags: ["Paradoxon", "Netzwerk", "Verkehr", "Nash-Gleichgewicht", "Braess-Paradoxon"]
 ---
 

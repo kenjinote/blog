@@ -5,7 +5,7 @@ date: "2026-09-11T20:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "Prompt Engineering"]
+categories: ["programming", "ai", "prompt-engineering"]
 tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 ---
 

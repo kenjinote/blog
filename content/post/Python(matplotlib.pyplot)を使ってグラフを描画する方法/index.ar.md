@@ -5,7 +5,7 @@ date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "رسوم بيانية", "رياضيات", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["الرياضيات، التشفير، الكم"]
+categories: ["math-cryptography-quantum"]
 description: 'نشرح للمبتدئين خطوات رسم وعرض رسوم الموجة الجيبية (Sine) وجيب التمام (Cosine) بسهولة باستخدام مكتبة matplotlib.pyplot في Python عبر Google Colaboratory. يمكنك تجربتها فوراً دون الحاجة لإعداد بيئة العمل.'
 ---
 

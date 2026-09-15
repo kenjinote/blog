@@ -4,9 +4,7 @@ description: شرح شامل لنظرية الفوضى وتأثير الفراش
 slug: chaos-theory
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- علوم
-- الرياضيات
+categories: ["science", "mathematics"]
 tags:
 - نظرية الفوضى
 - الفيزياء

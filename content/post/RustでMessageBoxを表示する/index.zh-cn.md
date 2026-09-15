@@ -5,7 +5,7 @@ date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '详细讲解在Rust中使用`winapi`和`user32-sys`包，通过调用Windows API来显示简单的消息框（MessageBox）的方法，从项目创建到代码实现一步步带您操作。'
 ---
 

@@ -4,9 +4,7 @@ description: 对混沌理论和蝴蝶效应（对初始条件敏感的非线性�
 slug: chaos-theory
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- 科学
-- 数学
+categories: ["science", "mathematics"]
 tags:
 - 混沌理论
 - 物理

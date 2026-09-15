@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Security", "AI", "Society"]
+categories: ["security", "ai", "society"]
 tags: ["Deepfake", "GAN", "C2PA", "Information Literacy"]
 description: 'AI 기술의 진화와 함께 고도화되는 딥페이크. 그 생성 원리와 주파수 해석, 생체 신호(rPPG)를 이용한 기술적 탐지 기법, 그리고 C2PA를 비롯한 콘텐츠 출처 증명에 대해 기술적인 측면에서 압도적인 깊이로 해설합니다.'
 ---

@@ -5,7 +5,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "Bibliothèque GUI"]
 draft: false
 image: "demo.gif"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Nous présentons l''utilisation de base de la bibliothèque GUI « egui », qui est facile à manipuler en Rust. Nous expliquons la procédure simple pour cloner un modèle depuis GitHub et lancer/exécuter l''application d''exemple avec la commande cargo run.'
 ---
 

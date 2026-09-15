@@ -4,7 +4,7 @@ description: "수학 역사상 가장 아름답다고 여겨지는 오일러의 
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["오일러", "수학", "과학"]
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-05T23:31:06+09:00
 tags: ["windows", "exe", "executable files", "analysis"]
 draft: false
 image: "img_1.webp"
-categories: ["PC and Gadgets"]
+categories: ["pc-gadgets"]
 description: 'We introduce recommended tools that can analyze and extract the contents of Windows executable files (exe). We explain in an easy-to-understand way how to check PE format structures, extract resources, and edit binaries using tools like 7-Zip and Resource Hacker.'
 ---
 

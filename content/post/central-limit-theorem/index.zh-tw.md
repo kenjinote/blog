@@ -3,7 +3,7 @@ title: "中央極限定理（Central Limit Theorem）——任何資料相加都
 description: "詳細講解統計學中最重要的定理之一——中央極限定理，從直觀理解到數學證明，再到使用Python進行模擬。"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "統計學"]
+categories: ["mathematics", "statistics"]
 tags: ["中央極限定理", "機率", "資料科學", "Python"]
 slug: "central-limit-theorem"
 ---

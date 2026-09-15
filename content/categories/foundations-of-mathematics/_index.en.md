@@ -1,0 +1,5 @@
+---
+{
+  "title": "Foundations of Mathematics"
+}
+---

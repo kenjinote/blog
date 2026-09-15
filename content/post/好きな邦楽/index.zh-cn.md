@@ -5,7 +5,7 @@ date: 2024-01-06T04:11:01+09:00
 tags: ["日本音乐", "音乐"]
 draft: false
 image: "img.webp"
-categories: ["生活方式・杂记"]
+categories: ["lifestyle-miscellaneous"]
 description: '为您介绍郁金香乐队、RADWIMPS、宇多田光等触动人心的日本名曲推荐。从怀旧的昭和老歌到平成的J-POP热门单曲、经典的抒情曲，敬请欣赏这些跨越世代、持续受到人们喜爱的优秀日本音乐。'
 ---
 

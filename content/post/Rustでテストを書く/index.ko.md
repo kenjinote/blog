@@ -9,7 +9,7 @@ date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","테스트"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["프로그래밍"]
+categories: ["programming"]
 description: 'Rust에서 테스트 코드를 작성하는 방법과 cargo test 명령어를 사용한 테스트 실행 절차를 초보자를 위해 설명합니다. #[test] 속성의 사용법과 성공·실패 시의 출력 결과에 대해서도 구체적인 코드 예제와 함께 자세히 소개합니다.'
 ---
 

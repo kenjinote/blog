@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'Uma explicação detalhada de teclados de alta qualidade que melhoram drasticamente a produtividade dos engenheiros. Aprofundamos desde a física dos switches até o funcionamento do firmware, e apresentamos 5 modelos definitivos.'
 ---

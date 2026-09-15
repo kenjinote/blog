@@ -5,7 +5,7 @@ date: 2025-07-14T13:47:51+09:00
 tags: ["入力フォーム", "Web開発", "UX"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: 'Webフォームにおける「必須項目」マークのベストプラクティスについて、海外のUIガイドラインを基に解説します。アスタリスク（*）の正しい使い方や「Required」の明記、アクセシビリティ向上のためのARIA属性の活用法をまとめました。'
 ---
 

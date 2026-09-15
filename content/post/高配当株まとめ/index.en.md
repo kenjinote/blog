@@ -5,7 +5,7 @@ date: 2024-12-22T00:56:14+09:00
 tags: ["Stocks"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'We summarize and list recommended blue-chip high-dividend stocks representing Japan, such as Mitsubishi UFJ, Mitsubishi Corporation, NTT, and KDDI. This is a must-see list of notable stocks for those aiming for dividends through long-term investing and portfolio building.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'Подробный обзор высококлассных клавиатур, кардинально повышающих продуктивность инженеров. Глубоко погружаясь в детали, от основанной на физике работы переключателей до механизмов прошивки, мы представляем 5 ультимативных моделей.'
 ---

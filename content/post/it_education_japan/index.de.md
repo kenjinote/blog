@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Bildung", "Gesellschaft", "Industrie"]
+categories: ["education", "society", "industry"]
 tags: ["Programmierausbildung", "Informatik", "GIGA School", "Japan"]
 description: 'Einige Jahre nach der Einführung des obligatorischen Programmierunterrichts an Grundschulen im Jahr 2020 untersuchen wir aus der Perspektive der Informatik eingehend die grundlegenden Herausforderungen, denen sich die japanische IT-Bildung heute gegenübersieht.'
 ---

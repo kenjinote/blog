@@ -5,7 +5,7 @@ date: '2026-09-12T23:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ['Programming', 'Windows', 'Linux']
+categories: ["programming", "windows", "linux"]
 tags: ['WSL2', 'Docker', 'VSCode', 'Zsh', 'Development Environment']
 description: 'Windows上での開発体験を劇的に向上させるWSL2の完全なセットアップガイドです。アーキテクチャの詳細な解説からリソースのチューニング、VSCode Remoteの連携、Dockerの最適化、SSHエージェントの共有まで、本格的な開発に必要なあらゆる知識を網羅します。'
 ---

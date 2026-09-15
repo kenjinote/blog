@@ -5,7 +5,7 @@ date: 2025-07-15T18:03:03+09:00
 tags: ["Conjectura de Collatz", "Matemática", "Programação", "Algoritmos"]
 draft: false
 image: "img.webp"
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'Se você repetir ''reduzir os números pares pela metade e multiplicar os números ímpares por 3 e somar 1'', sempre terminará em 1? Explicamos as regras misteriosas da ''Conjectura de Collatz'', um famoso problema não resolvido em matemática. Além disso, escreveremos um programa em Python e simularemos se a sequência numérica realmente converge para 1.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Analytics"]
+categories: ["blogging", "seo", "analytics"]
 tags: ["Google Search Console", "Python", "SEO", "BigQuery"]
 description: 'Menjelaskan metode penulisan ulang artikel teknis secara strategis dengan mengintegrasikan data Google Search Console dan GA4, serta memanfaatkan Python dan BigQuery. Mencakup langkah-langkah SEO berbasis data seperti analisis TF-IDF dan CTR.'
 ---

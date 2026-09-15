@@ -5,7 +5,7 @@ date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
-categories: ["Administração do Blog"]
+categories: ["blogging"]
 description: 'Explicamos como personalizar as cores gerais do tema Hugo PaperMod. Apresentamos exemplos específicos de configuração de variáveis ​​para aplicar o esquema de cores de sua preferência, editando o CSS (blank.css) que inclui as definições de estilo, como cor de fundo, cor de texto, blocos de código, etc.'
 ---
 Alterei o esquema de cores do tema PaperMod. Consultei o seguinte link para o método de alteração.

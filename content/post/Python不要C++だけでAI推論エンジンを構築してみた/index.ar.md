@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: 'بينما تُعتبر بايثون هي السائدة في تطوير الذكاء الاصطناعي حاليًا، فإن قوة C++ لا غنى عنها في بيئات الأجهزة الطرفية والأداء العالي. تشرح هذه المقالة بشكل شامل كيفية بناء محرك استدلال للذكاء الاصطناعي من الصفر باستخدام C++ فقط، مع دعم واجهات CUDA و Metal، بالاستفادة من أفكار مكتبة GGML.'
 ---

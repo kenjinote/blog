@@ -5,7 +5,7 @@ date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "ライセンス", "コマンドプロンプト"]
 draft: false
 image: "img_1.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'Windowsのライセンスが正しく認証されているか確認する方法を解説します。コマンドプロンプトから「slmgr」コマンドを実行するだけで、プロダクトキーやライセンスの種類・有効期限などの詳細な状態を簡単にチェックする手順を紹介します。'
 ---
 

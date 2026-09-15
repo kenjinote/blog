@@ -5,7 +5,7 @@ date: 2022-10-01T02:00:59+09:00
 tags: ["Rust","Tests"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Erklärt für Anfänger, wie man Testcode in Rust schreibt und Tests mit dem Befehl cargo test ausführt. Stellt die Verwendung des #[test]-Attributs und die Ausgabeergebnisse bei Erfolg oder Fehlschlag mit konkreten Codebeispielen ausführlich vor.'
 ---
 

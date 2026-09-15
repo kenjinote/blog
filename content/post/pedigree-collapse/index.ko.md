@@ -3,10 +3,7 @@ title: "조상의 역설: 혈통의 붕괴(Pedigree Collapse)의 수학과 유�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "세대를 거슬러 올라가면 조상의 수가 당시의 세계 인구를 넘어서는 '조상의 역설'. 그 수수께끼를 푸는 '혈통의 붕괴(Pedigree Collapse)'에 대해 수학적 접근과 유전학의 관점에서 자세히 해설합니다."
-categories:
-  - Mathematical Paradoxes
-  - Genetics
-  - Science
+categories: ["mathematical-paradoxes", "genetics", "science"]
 tags:
   - 확률론
   - 유전학

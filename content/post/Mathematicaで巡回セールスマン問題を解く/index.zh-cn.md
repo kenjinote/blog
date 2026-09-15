@@ -5,7 +5,7 @@ date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "旅行商问题", "算法", "数学"]
 draft: false
 image: "img.webp"
-categories: ["数学・密码学・量子"]
+categories: ["math-cryptography-quantum"]
 description: '讲解如何使用数学处理系统Mathematica求解旅行商问题（TSP）。介绍使用SparseArray函数创建城市间距离矩阵，并通过FindShortestTour求出最短路线的步骤。'
 ---
 # 用 Mathematica 解决旅行商问题

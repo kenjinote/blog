@@ -5,7 +5,7 @@ date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "LLM", "C++", "Programming"]
+categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: 'Detaillierte Entwicklungsschritte und interne Architektur für die Inferenz von kleinen KI-Modellen wie TinyLLaMA in einer lokalen Umgebung mit C++ und ggml. Umfasst Memory Mapping, Tensoroperationen und SIMD-Optimierung.'
 ---

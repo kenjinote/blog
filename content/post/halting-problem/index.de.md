@@ -3,9 +3,7 @@ title: "Das Halteproblem (Halting Problem): Das stärkste Programm, das absolut 
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Wir erklären das Halteproblem, eines der berühmtesten ungelösten (aber als unlösbar bewiesenen) Probleme in der Informatik. Eine leicht verständliche Erklärung mit einem Beweis durch Widerspruch, intuitiven Beispielen, mathematischen Formeln und Diagrammen."
-categories:
-  - "Computer Science"
-  - "Theory of Computation"
+categories: ["computer-science", "theory-of-computation"]
 tags:
   - "Halting Problem"
   - "Alan Turing"

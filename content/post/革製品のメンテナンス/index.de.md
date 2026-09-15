@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["Lederprodukte", "Hobby"]
 draft: fales
 image: "img.webp"
-categories: ["Lifestyle und Vermischtes"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Für Anfänger in der Lederpflege stellen wir empfehlenswerte Pflegeprodukte vor, deren Kauf sich wirklich gelohnt hat, wie die Delicate Cream von M.MOWBRAY und die Supreme Cream von Collonil. Dies sind Pflegetechniken, damit Ihre wertvollen Lederartikel länger halten.'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-04-03T00:00:46+09:00
 tags: ["秀丸编辑器", "资源管理器", "右键菜单", "grep", "注册表"]
 draft: false
 image: "img.webp"
-categories: ["工具与开发环境"]
+categories: ["tools-development-environment"]
 description: '介绍在Windows 10/11资源管理器的右键菜单中添加秀丸编辑器grep功能的便捷设置步骤。通俗易懂地讲解使用注册表配置文件的简单方法。'
 ---
 

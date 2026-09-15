@@ -10,7 +10,7 @@ date: 2022-09-20T16:04:02+09:00
 tags: ["명령 프롬프트"]
 draft: false
 image: "img.webp"
-categories: ["IT·테크놀로지"]
+categories: ["it-technology"]
 description: 'Windows 환경에서 용량이 큰 폴더를 빠르고 한꺼번에 삭제하는 방법을 해설합니다. 파일 탐색기에서는 시간이 걸리는 삭제 작업도 명령 프롬프트의 DEL 명령어나 RMDIR 명령어를 활용하면 극적으로 작업 속도를 높일 수 있습니다.'
 ---
 

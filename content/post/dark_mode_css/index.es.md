@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Frontend", "Design", "CSS"]
+categories: ["frontend", "design", "css"]
 tags: ["Dark Mode", "Tailwind CSS", "UI/UX", "Accessibility"]
 description: 'Se explica detalladamente sobre el diseño CSS avanzado, las medidas contra FOUC y cómo utilizar el espacio de color (OKLCH) prestando atención a la accesibilidad (WCAG 2.1 AAA) para implementar el modo oscuro en blogs y aplicaciones web.'
 ---

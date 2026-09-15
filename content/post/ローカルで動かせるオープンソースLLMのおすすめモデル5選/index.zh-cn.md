@@ -5,7 +5,7 @@ date: '2026-09-11T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["AI", "开源", "LLM"]
+categories: ["ai", "open-source", "llm"]
 tags: ["Llama", "Mistral", "本地AI", "Gemma"]
 description: '在保护隐私的同时免费使用的本地LLM。本文将从技术角度对Llama 3、Mistral、Gemma 2、Qwen 2.5、Phi-3等顶级开源LLM进行全面比较与分析。'
 ---

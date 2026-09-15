@@ -5,7 +5,7 @@ date: 2023-04-17T00:34:13+09:00
 tags: ["Films", "TODO"]
 draft: false
 image: "image.webp"
-categories: ["Style de Vie et Divers"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Voici ma liste TODO des grands films et animes que je veux voir à l''avenir. Des films liés aux mathématiques comme « Le Professeur et la Sirène » ou « Will Hunting » aux animes populaires comme « Summer Wars » et « Les Enfants du Temps », je les présentent avec mon suivi des films déjà regardés.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-07T04:40:52+09:00
 tags: ["孩子"]
 draft: false
 image: "images/img.webp"
-categories: ["IT與科技"]
+categories: ["it-technology"]
 description: '介紹從兩歲女兒關心因生病臥床母親的舉動中，感受到孩子察言觀色與體貼的溫馨小故事。分享隱藏在「不行，在睡覺！」這句話背後，體貼他人的溫柔心靈成長紀錄，以及育兒中的療癒時刻。'
 ---
 當媽媽生病躺在床上的時候，

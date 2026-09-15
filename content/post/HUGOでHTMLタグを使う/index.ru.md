@@ -5,7 +5,7 @@ date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
-categories: ["Управление блогом"]
+categories: ["blogging"]
 description: 'Объясняется, как разрешить прямое написание и использование HTML-тегов в статьях Markdown в генераторе статических сайтов Hugo. Достаточно добавить настройку unsafe для markup.goldmark.renderer в файл config.toml.'
 ---
 

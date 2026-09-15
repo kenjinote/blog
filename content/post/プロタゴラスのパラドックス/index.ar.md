@@ -7,7 +7,7 @@ slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "فلسفة", "منطق"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["مفارقة", "مرجعية ذاتية", "قانون", "بروتاغوراس", "منطق"]
 ---
 

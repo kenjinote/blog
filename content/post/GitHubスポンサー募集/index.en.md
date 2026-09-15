@@ -5,7 +5,7 @@ date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false
 image: "img.webp"
-categories: ["Tools / Development Environment"]
+categories: ["tools-development-environment"]
 description: 'Our project is recruiting GitHub sponsors. The funds provided by your support will be carefully utilized as activity expenses to provide better software, such as developing useful tools and obtaining code signing certificates.'
 ---
 

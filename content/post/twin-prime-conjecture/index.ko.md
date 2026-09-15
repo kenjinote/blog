@@ -4,7 +4,7 @@ description = "수학상 미해결 문제인 쌍둥이 소수 추측에 대해, 
 slug = "twin-prime-conjecture"
 date = "2026-09-14T13:04:13+09:00"
 image = "eyecatch.jpg"
-categories = ["수학"]
+categories = ["mathematics"]
 tags = ["소수", "정수론", "미해결 문제"]
 +++
 

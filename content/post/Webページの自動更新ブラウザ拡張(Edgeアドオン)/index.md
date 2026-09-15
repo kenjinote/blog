@@ -5,7 +5,7 @@ date: 2024-04-06T15:36:54+09:00
 tags: ["ブラウザ拡張", "Edgeアドオン", "自動更新"]
 draft: false
 image: "img.webp"
-categories: ["ブログ運営"]
+categories: ["blogging"]
 description: 'Microsoft EdgeでWebページを定期的に自動更新できるブラウザ拡張機能「タブの自動更新」の使い方を解説します。インストール方法から更新間隔の設定、停止手順まで、画像付きで分かりやすく紹介します。'
 ---
 Webページを自動更新するEdgeのブラウザ拡張機能「タブの自動更新」を紹介します。

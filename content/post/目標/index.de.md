@@ -5,7 +5,7 @@ date: 2024-12-08T03:32:34+09:00
 tags: ["Ziele"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Ein Geschäftsplanungs-Notizbuch, das langfristige und kurzfristige Ziele sowie die neuesten Aufgaben für eine Unternehmensgründung durch Softwareentwicklung organisiert. Von der Mittelbeschaffung, der Veröffentlichung von kostenloser und kostenpflichtiger Software über die Vision, einen Jahresumsatz von 10 Milliarden Yen zu erreichen, bis hin zu spezifischen Schritten der Marktforschung und Bedarfsanalyse wird alles offengelegt.'
 ---
 

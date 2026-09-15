@@ -9,7 +9,7 @@ date: 2022-09-04T14:29:09+09:00
 tags: ["miscelánea","niños"]
 draft: false
 image: "images/today_workplase.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Te presento mi entorno de trabajo de hoy utilizando el tiempo limitado durante la crianza de mis hijos. El precioso momento de concentración mientras los niños toman la siesta. Escribo sobre el trabajo remoto en la vida real, utilizando el escritorio de los niños y resolviendo de manera ingeniosa con un iPad y un adaptador.'
 ---
 

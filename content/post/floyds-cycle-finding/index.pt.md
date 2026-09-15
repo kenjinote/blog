@@ -3,9 +3,7 @@ title: "Algoritmo de Deteção de Ciclos de Robert Floyd (Algoritmo da Lebre e d
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Explicaremos detalhadamente o famoso 'Algoritmo de Deteção de Ciclos de Robert Floyd' (Algoritmo da Lebre e da Tartaruga), utilizado para detetar ciclos em listas ou grafos, utilizando diagramas, fórmulas matemáticas e implementações em C++ e Rust."
-categories:
-  - "Algorithms"
-  - "Computer Science"
+categories: ["algorithms", "computer-science"]
 tags:
   - "Algorithm"
   - "C++"

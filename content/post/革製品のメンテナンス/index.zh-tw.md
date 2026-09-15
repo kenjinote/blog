@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["皮皮革製品", "興趣"]
 draft: fales
 image: "img.webp"
-categories: ["生活風格・雜記"]
+categories: ["lifestyle-miscellaneous"]
 description: '針對皮皮革製品保養的初學者，介紹實際購買後覺得好用的推薦護理用品，例如M.MOWBRAY的精緻皮革保養霜以及Collonil的頂級保養霜等。這是為了讓珍貴的皮皮革製品能使用更長久的保養技巧。'
 ---
 

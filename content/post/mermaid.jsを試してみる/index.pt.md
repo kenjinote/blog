@@ -6,7 +6,7 @@ tags: ["mermaid.js"]
 draft: false
 mermaid: true
 image: "img_2.webp"
-categories: ["IA e Tecnologia"]
+categories: ["ai-technology"]
 description: 'Explicamos de forma clara a visão geral do Mermaid.js, uma biblioteca JavaScript que permite desenhar diagramas como fluxogramas e gráficos de Gantt baseados em texto, e os passos específicos para introduzir, configurar e disponibilizá-lo no gerador de sites estáticos Hugo.'
 ---
 

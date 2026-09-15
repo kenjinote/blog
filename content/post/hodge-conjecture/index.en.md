@@ -4,7 +4,7 @@ description: "A comprehensive guide to the Hodge Conjecture, one of the Clay Mat
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Science"]
+categories: ["mathematics", "science"]
 tags: ["Millennium Prize Problems", "Topology", "Algebraic Geometry", "Hodge Conjecture"]
 ---
 

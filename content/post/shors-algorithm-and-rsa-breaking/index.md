@@ -4,7 +4,7 @@ slug: "shors-algorithm-and-rsa-breaking"
 tags: ["量子コンピュータ", "暗号解読", "Shorのアルゴリズム", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '量子コンピュータの台頭によって現代の通信インフラを支えるRSA暗号がどのように脅かされるのかを解説します。ショアのアルゴリズムの仕組みからNISQ時代のハードウェアの現状まで、次世代の暗号解読とセキュリティの未来を考察します。'
 ---
 

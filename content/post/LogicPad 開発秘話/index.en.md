@@ -5,7 +5,7 @@ date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Development", "Untold Story"]
 draft: false
 image: "img.webp"
-categories: ["IT / Technology"]
+categories: ["it-technology"]
 description: 'The birth story of ''LogicPad'', a low-code tool for ''people who can''t write code but have logic''. The author passionately talks about their personal thoughts behind the development and their approach to their career.'
 ---
 

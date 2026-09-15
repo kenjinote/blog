@@ -4,9 +4,7 @@ description: "僅靠將針投到地板上就能求出圓周率π？本文詳細�
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "數學"
-  - "機率論"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "圓周率"
   - "模擬"

@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'Eine ausführliche Erklärung der Physik und Auswahl ergonomischer Stühle auf Basis der Biomechanik, um Remote-Mitarbeiter vor Rückenschmerzen zu schützen. Vergleicht zudem die strukturellen Ansätze von High-End-Modellen wie dem Aeron Chair und Contessa.'
 ---

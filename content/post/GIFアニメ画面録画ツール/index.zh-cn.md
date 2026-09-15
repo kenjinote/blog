@@ -5,7 +5,7 @@ date: 2024-02-08T01:23:01+09:00
 tags: ["工具", "屏幕录制", "GIF"]
 draft: false
 image: "img.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '介绍一款可录制电脑屏幕操作并转换为GIF动画的免费工具及其下载方法。方便在Microsoft Teams等通讯工具中分享。简单明了地讲解从指定录制范围到录制的步骤。'
 ---
 

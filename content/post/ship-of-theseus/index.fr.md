@@ -3,7 +3,7 @@ title: "Le bateau de Thésée : un bateau entièrement remplacé est-il le « ba
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "À travers le paradoxe philosophique grec du « bateau de Thésée », nous menons une réflexion approfondie sur le remaniement (refactoring), le remplacement de systèmes informatiques et la notion d'« identité » dans la programmation orientée objet."
-categories: ["Software Engineering", "Architecture"]
+categories: ["software-engineering", "architecture"]
 tags: ["Le bateau de Thésée", "Refactoring", "Microservices", "Orienté objet", "DDD"]
 slug: "ship-of-theseus"
 ---

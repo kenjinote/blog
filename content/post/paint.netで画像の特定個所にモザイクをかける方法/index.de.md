@@ -5,7 +5,7 @@ date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "Rand", "Bild"]
 draft: false
 image: "img.webp"
-categories: ["KI und Technologie"]
+categories: ["ai-technology"]
 description: 'Erklärt, wie man mit der kostenlosen Bildbearbeitungssoftware „paint.net“ Teile eines Bildes verpixelt. Stellt die Bereichsauswahl mit dem Auswahlwerkzeug und die Einstellung der Effektfunktion für Anfänger vor. Eine Technik zum Schutz der Privatsphäre, die beim Hochladen von Bildern in soziale Netzwerke oder Blogs nützlich ist.'
 ---
 

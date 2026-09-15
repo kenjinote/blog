@@ -5,7 +5,7 @@ date: "2026-09-12T04:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Rust", "C++"]
+categories: ["programming", "rust", "cpp"]
 tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'مقارنة شاملة بين مؤشرات C++ ونموذج الملكية والاستعارة في Rust. من المؤشرات الخام والمؤشرات الذكية إلى مدقق الاستعارة، نشرح جوهر أمان الذاكرة.'
 ---

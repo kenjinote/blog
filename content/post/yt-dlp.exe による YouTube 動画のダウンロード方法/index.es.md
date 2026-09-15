@@ -13,7 +13,7 @@ date: 2024-09-03T14:09:26+09:00
 tags: ["YouTube", "Descarga"]
 draft: false
 image: "img_1.webp"
-categories: ["IT y Tecnología"]
+categories: ["it-technology"]
 description: 'Explicación clara de cómo usar la herramienta de línea de comandos ''yt-dlp'' para descargar y guardar videos de YouTube en alta calidad, y el procedimiento para extraerlos y guardarlos como archivos de audio mp3. Cubre desde la instalación hasta su uso.'
 ---
 

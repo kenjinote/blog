@@ -5,7 +5,7 @@ date: 2022-09-20T16:04:02+09:00
 tags: ["Eingabeaufforderung"]
 draft: false
 image: "img.webp"
-categories: ["IT・Technologie"]
+categories: ["it-technology"]
 description: 'Wir erklären, wie man unter Windows Ordner mit großer Kapazität schnell und auf einmal löscht. Löschvorgänge, die im Datei-Explorer lange dauern, können durch die Verwendung der Befehle DEL und RMDIR in der Eingabeaufforderung drastisch beschleunigt werden.'
 ---
 ## Schnelles Stapellöschen von Großen Ordnern

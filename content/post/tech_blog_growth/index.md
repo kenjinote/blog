@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "Career", "SEO"]
+categories: ["blogging", "career", "seo"]
 tags: ["Python", "Google Search Console", "Automation", "SEO"]
 description: '技術ブログのアクセスをデータと自動化で最大化する戦略。SEOアーキテクチャ、PythonとGSC APIを用いたトラフィック分析、GitHub Actionsによる配信の自動化を徹底解説します。'
 ---

@@ -5,7 +5,7 @@ date: 2024-12-08T03:32:34+09:00
 tags: ["Objectifs"]
 draft: false
 image: "img.webp"
-categories: ["Informatique et Technologie"]
+categories: ["it-technology"]
 description: 'Il s''agit d''un mémo de plan d''affaires qui organise les objectifs à long et à court terme ainsi que les tâches immédiates en vue d''une création d''entreprise par le développement de logiciels. Nous révélons tout, depuis la levée de fonds, la sortie de logiciels gratuits et payants, la vision pour atteindre 10 milliards de yens de chiffre d''affaires, jusqu''aux étapes concrètes d''étude de marché et d''analyse des besoins.'
 ---
 

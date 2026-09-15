@@ -5,7 +5,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Erklärt, wie man mit PowerShell die in Windows-Umgebungen oft störenden Mac-.DS_Store-Dateien stapelweise einschließlich Unterordner löscht. Bereinigen Sie unnötige Dateien ganz einfach mit einem einzigen kurzen Befehl.'
 ---
 

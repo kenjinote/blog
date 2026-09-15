@@ -5,7 +5,7 @@ date: 2023-02-07T20:59:01+09:00
 tags: ["font","fontplus"]
 draft: false
 image: "img.webp"
-categories: ["TI & Tecnologia"]
+categories: ["it-technology"]
 description: 'Apresentamos o ''FONTPLUS (fontplus.jp)'', um serviço que permite adicionar web fonts pagas de alta qualidade. Com uma mensalidade de 1.100 ienes, você tem acesso a todas as fontes e o suporte para múltiplos sites é um grande atrativo.'
 ---
 

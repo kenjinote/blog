@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Education", "Society", "Industry"]
+categories: ["education", "society", "industry"]
 tags: ["Programming Education", "Computer Science", "GIGA School", "Japan"]
 description: 'Varios años después de que la educación en programación se volviera obligatoria en las escuelas primarias en el año fiscal 2020, profundizamos exhaustivamente desde la perspectiva de las ciencias de la computación en los desafíos esenciales que enfrenta la educación de TI en Japón.'
 ---

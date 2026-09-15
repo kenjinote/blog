@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: 'Nous explorons en profondeur le débat entre le télétravail et le retour au bureau (RTO) dans les organisations d''ingénierie, sous l''angle des modèles de communication sociologique (courbe d''Allen, loi de Conway), des indicateurs de productivité (SPACE, DORA), et de l''architecture réseau (Zero Trust), afin de trouver la véritable solution optimale.'
 ---

@@ -4,9 +4,7 @@ description: "Une explication approfondie du théorème des nombres premiers (Pr
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Mathématiques"
-  - "Algorithme"
+categories: ["mathematics", "algorithms"]
 tags:
   - "Théorème des nombres premiers"
   - "Hypothèse de Riemann"

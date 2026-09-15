@@ -5,7 +5,7 @@ date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '讲解从C++调用并运行TinyLLaMA的配置步骤。从llama.cpp的编译、从HuggingFace获取模型，到在各类环境中搭建的方法，为初学者进行了通俗易懂的总结。'
 ---
 

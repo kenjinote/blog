@@ -5,7 +5,7 @@ date: 2023-04-05T02:20:12+09:00
 tags: ["macos", "mac", "raccourcis clavier", "basculer entre les applications"]
 draft: 
 image: "img.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Nous expliquons clairement la procédure d''installation et de configuration d''une application tierce pratique qui permet de changer d''application comme le « Alt+Tab » de Windows, ce qui est difficile à réaliser avec les fonctions standards du Mac.'
 ---
 

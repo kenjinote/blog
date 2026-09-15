@@ -5,7 +5,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["rust", "egui", "GUI库"]
 draft: false
 image: "demo.gif"
-categories: ["IT·科技"]
+categories: ["it-technology"]
 description: '本文介绍如何在Rust中轻松使用GUI库“egui”的基本方法。讲解从GitHub克隆模板，到使用cargo run命令启动并运行示例应用的简单步骤。'
 ---
 

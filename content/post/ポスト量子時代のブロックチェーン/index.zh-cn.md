@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: '量子计算机惊人的计算能力将动摇区块链的根基，“Q-Day”即将到来。从Shor算法导致ECDSA崩溃，到向抗量子密码学（PQC）的过渡策略，本文将从技术角度彻底分析加密资产的未来。'
 ---

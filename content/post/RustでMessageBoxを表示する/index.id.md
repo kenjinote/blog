@@ -5,7 +5,7 @@ date: 2022-09-30T23:54:31+09:00
 tags: ["Rust","MessageBox"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Pemrograman"]
+categories: ["programming"]
 description: 'Menjelaskan langkah demi langkah, dari pembuatan proyek hingga implementasi kode, cara menggunakan peti ''winapi'' dan ''user32-sys'' di Rust untuk memanggil Windows API dan menampilkan kotak pesan sederhana (MessageBox).'
 ---
 

@@ -4,10 +4,7 @@ description: "Una inmersión profunda en la ley de Zipf, la notable ley matemát
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Ciencia de datos"
-  - "Lingüística"
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Ley de Zipf"
   - "Ley de potencias"

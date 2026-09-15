@@ -5,7 +5,7 @@ date: 2023-03-19T02:54:30+09:00
 tags: ["क्रोम एक्सटेंशन", "ब्राउज़र", "Chrome", "Edge"]
 draft: false
 image: "img_4.webp"
-categories: ["आईटी और प्रौद्योगिकी"]
+categories: ["it-technology"]
 description: 'Google Chrome और Microsoft Edge की ब्राउज़िंग को नाटकीय रूप से सुव्यवस्थित करने वाले अनुशंसित एक्सटेंशन का परिचय दिया गया है, जैसे माउस जेस्चर, विज्ञापन अवरोधक, DeepL अनुवाद और ChatGPT साइडबार का उपयोग।'
 ---
 

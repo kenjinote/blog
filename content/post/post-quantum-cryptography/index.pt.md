@@ -4,7 +4,7 @@ slug: "post-quantum-cryptography"
 tags: ["Criptografia", "PQC", "Segurança", "Tecnologia de Próxima Geração"]
 image: "post_quantum_cryptography_1788613735417.webp"
 date: 2026-09-05T22:09:22+09:00
-categories: ["Matemática, Criptografia e Quântica"]
+categories: ["math-cryptography-quantum"]
 description: 'A criptografia de chave pública corre o risco de ser quebrada no futuro devido à aplicação prática dos computadores quânticos. Neste artigo, explicamos em detalhes os mecanismos e a importância da ''Criptografia Pós-Quântica (PQC)'', a tecnologia de segurança de próxima geração em desenvolvimento para combater essa ameaça (o problema Y2Q).'
 ---
 

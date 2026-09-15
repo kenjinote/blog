@@ -3,7 +3,7 @@ title: "Проблема остановки (Halting Problem): Самая мощ
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Мы объясним одну из самых известных доказанных проблем в информатике — проблему остановки. Мы используем доказательство от противного, интуитивные конкретные примеры, математические формулы и диаграммы, чтобы объяснить это простым языком."
-categories: ["Computer Science", "Theory of Computation"]
+categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
 ---

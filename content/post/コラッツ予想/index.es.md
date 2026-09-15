@@ -5,7 +5,7 @@ date: 2025-07-15T18:03:03+09:00
 tags: ["Conjetura de Collatz", "Matemáticas", "Programación", "Algoritmos"]
 draft: false
 image: "img.webp"
-categories: ["Matemáticas, Criptografía, Cuántica"]
+categories: ["math-cryptography-quantum"]
 description: '¿Si se repite ''dividir a la mitad si es par, y multiplicar por 3 y sumar 1 si es impar'', siempre se llega a 1? Explicamos de forma sencilla las curiosas reglas de la ''conjetura de Collatz'', un famoso problema matemático no resuelto. Además, escribiremos un programa en Python para simular si la secuencia de números realmente converge a 1.'
 ---
 

@@ -5,7 +5,7 @@ date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Licença", "Prompt de Comando"]
 draft: false
 image: "img_1.webp"
-categories: ["PC e Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explicamos como confirmar se a licença do Windows está ativada corretamente. Apresentamos um procedimento para verificar facilmente status detalhados, como chave do produto, tipo de licença e data de expiração, apenas executando o comando ''slmgr'' no prompt de comando.'
 ---
 

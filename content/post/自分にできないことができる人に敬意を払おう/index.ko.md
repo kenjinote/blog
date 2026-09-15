@@ -12,7 +12,7 @@ date: 2023-08-01T23:42:31+09:00
 tags: ["시", "생각"]
 draft: false
 image: "img.webp"
-categories: ["IT・기술"]
+categories: ["it-technology"]
 description: '사회에서의 직업이나 입장에 우열을 두지 않고, 자신은 할 수 없는 일을 해내는 모든 사람에게 경의를 표하는 것의 중요성을 설파한 에세이입니다. 인간관계를 원활하게 하고 서로를 존중할 수 있는 사고방식의 포인트를 소개합니다.'
 ---
 

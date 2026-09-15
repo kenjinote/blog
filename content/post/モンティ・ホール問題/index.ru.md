@@ -6,9 +6,7 @@ date: '2026-09-10T00:00:00+09:00'
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true
-categories:
-  - 'Математические парадоксы'
-  - 'Теория вероятностей'
+categories: ["mathematical-paradoxes", "probability-theory"]
 tags:
   - 'Парадокс'
   - 'Теорема Байеса'

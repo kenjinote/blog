@@ -5,7 +5,7 @@ date: 2024-04-29T19:42:20+09:00
 tags: ["Mehrere Monitore", "DPI", "Systemsteuerung"]
 draft: false
 image: "img.webp"
-categories: ["IT & Technologie"]
+categories: ["it-technology"]
 description: 'Wir erklären Lösungen für das Phänomen in Windows 11-Umgebungen mit mehreren Monitoren, bei dem die DPI-Einstellungen (Skalierung) des Bildschirms bei jedem PC-Start automatisch zurückgesetzt werden. Wir haben die Schritte zusammengefasst, um den Schnellstart über die Systemsteuerung zu deaktivieren.'
 ---
 

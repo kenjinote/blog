@@ -5,7 +5,7 @@ date: 2023-04-09T14:01:00+09:00
 tags: ["在线", "代码执行环境", "编程"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '按语言（Python、JavaScript、C++等）分类整理了免配置环境、可轻松开始编程的便捷在线代码执行环境。详细讲解Google Colab、AWS Cloud9等工具的特点。'
 ---
 

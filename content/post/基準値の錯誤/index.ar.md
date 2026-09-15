@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["مفارقات رياضية", "إحصاء", "علم النفس"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["مفارقة", "مبرهنة بايز", "احتمال", "انحياز معرفي", "مغالطة معدل الأساس"]
 ---
 

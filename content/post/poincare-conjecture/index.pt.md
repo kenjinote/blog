@@ -4,7 +4,7 @@ description: "Uma explicação detalhada de toda a história da 'Conjectura de P
 date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Science"]
+categories: ["mathematics", "science"]
 tags: ["Topology", "Poincare Conjecture", "Grigori Perelman", "Math"]
 ---
 

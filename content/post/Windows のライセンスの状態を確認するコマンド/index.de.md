@@ -5,7 +5,7 @@ date: 2025-04-14T00:41:45+09:00
 tags: ["Windows", "Lizenz", "Eingabeaufforderung"]
 draft: false
 image: "img_1.webp"
-categories: ["PC & Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Wir erklären, wie Sie überprüfen können, ob Ihre Windows-Lizenz ordnungsgemäß authentifiziert ist. Wir zeigen Ihnen, wie Sie durch Ausführen des Befehls „slmgr“ über die Eingabeaufforderung detaillierte Statusinformationen wie Produktschlüssel, Lizenztyp und Ablaufdatum ganz einfach überprüfen können.'
 ---
 

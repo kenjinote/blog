@@ -5,7 +5,7 @@ date: 2022-09-08T08:39:03+09:00
 tags: ["kafe", "musik"]
 draft: false
 image: "images/img.webp"
-categories: ["Gaya Hidup & Lain-lain"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Merangkum musik kafe yang sempurna sebagai BGM pendamping pekerjaan seperti pemrograman, belajar, atau bekerja jarak jauh (telecommuting). Memperkenalkan pilihan musik pengiring yang tepat untuk bekerja, mulai dari irama tempo cepat Electro Swing hingga Lo-Fi Hip Hop atau Jazz yang bisa bikin relaks sekaligus fokus.'
 ---
 **Up-tempo**

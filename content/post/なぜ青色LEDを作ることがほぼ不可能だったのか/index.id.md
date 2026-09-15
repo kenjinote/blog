@@ -5,7 +5,7 @@ date: 2024-09-15T00:43:52+09:00
 tags: ["Sains", "Fisika", "Semikonduktor"]
 draft: false
 image: "img.webp"
-categories: ["TI dan Teknologi"]
+categories: ["it-technology"]
 description: 'Memperkenalkan program dokumenter berbahasa Inggris yang menjelaskan betapa sulitnya menciptakan LED biru. Turut menyinggung pencapaian gemilang ilmuwan Jepang yang berhasil memecahkan tantangan yang dianggap mustahil, serta kesenjangan apresiasi di dalam negeri.'
 ---
 

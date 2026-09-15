@@ -5,7 +5,7 @@ date: 2022-09-06T00:12:36+09:00
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Programação"]
+categories: ["programming"]
 description: 'Explicamos de forma amigável para iniciantes como começar com Rust, uma linguagem de programação rápida e segura em relação à memória. Abordamos abrangentemente desde os recursos da linguagem e os métodos de instalação, passando pelo procedimento de execução do Hello World, o primeiro programa, até recomendações de documentação em japonês.'
 ---
 # Introdução

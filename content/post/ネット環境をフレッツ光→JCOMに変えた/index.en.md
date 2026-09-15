@@ -5,7 +5,7 @@ date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","Flets Hikari","Internet Connection"]
 draft: false
 image: "jcom.webp"
-categories: ["IT & Technology"]
+categories: ["it-technology"]
 description: 'An experience report of switching the home internet connection from FLET''S Hikari to J:COM. Unreservedly reviews actual usage impressions, such as the monthly cost savings effect, improved download speeds, conversely decreased upload speeds, and connection stability.'
 ---
 

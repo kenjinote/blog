@@ -5,7 +5,7 @@ date: 2026-09-05T02:26:13+09:00
 tags: ["Mathématiques", "Cryptographie", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"
-categories: ["Mathématiques, Cryptographie et Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Nous expliquons la véritable structure mathématique du crible général du corps de nombres (GNFS), un algorithme de factorisation en nombres premiers. Nous décortiquons le mécanisme avancé pour factoriser efficacement d''énormes nombres composés, en utilisant l''« homomorphisme » qui relie le monde des nombres entiers réels au monde des corps algébriques.'
 ---
 

@@ -5,7 +5,7 @@ date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "イラスト", "画像生成", "Google Colaboratory"]
 draft: false
 image: "img.webp"
-categories: ["プログラミング"]
+categories: ["programming"]
 description: '入力した文字から高品質な画像を生成できるAI「Stable Diffusion」を使って、あなた好みのイラストを作成してみませんか？Google Colabと無料アカウントだけで、誰でも簡単にAI画像生成を始められる手順を分かりやすく解説します。'
 ---
 

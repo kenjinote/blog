@@ -5,7 +5,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "快捷鍵", "日文輸入"]
 draft: 
 image: "img.webp"
-categories: ["電腦與小工具"]
+categories: ["pc-gadgets"]
 description: '說明如何在 Mac (US 鍵盤) 上將日文與英文輸入切換更改為「Alt + `」等喜歡的快速鍵。介紹在 macOS Ventura 上的設定步驟，以及防止切換時包含片假名的設定方法。'
 ---
 

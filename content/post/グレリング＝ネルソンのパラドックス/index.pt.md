@@ -7,7 +7,7 @@ slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"
 math: true
 mermaid: true
-categories: ["Paradoxos Matemáticos", "Lógica"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["Paradoxos", "Semântica", "Autorreferência", "Teoria dos Conjuntos"]
 ---
 

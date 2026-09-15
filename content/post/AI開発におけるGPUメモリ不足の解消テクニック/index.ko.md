@@ -5,7 +5,7 @@ date: "2026-09-11T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["AI", "Hardware", "Optimization"]
+categories: ["ai", "hardware", "optimization"]
 tags: ["GPU", "VRAM", "CPU Offloading", "LLM"]
 description: 'LLM 학습 및 추론에서 가장 큰 장벽이 되는 VRAM(GPU 메모리) 부족. 본 기사에서는 CPU 오프로딩, KV 캐시 양자화, 그래디언트 체크포인트 등의 해소 테크닉을 수식과 아키텍처 다이어그램을 사용하여 철저하게 해설합니다.'
 ---

@@ -12,7 +12,7 @@ date: 2024-08-25T16:24:35+09:00
 tags: ["Videos", "Cortos"]
 draft: false
 image: "img.webp"
-categories: ["Tecnología"]
+categories: ["it-technology"]
 description: 'Presentamos una colección de enlaces a videos cortos recomendados que se han vuelto virales en las redes sociales, incluyendo el conmovedor episodio del recogepelotas que salvó a su equipo en un partido del Tottenham y fue elogiado por Mourinho.'
 ---
 

@@ -3,7 +3,7 @@ title: "맥스웰의 악마: 물리학의 상식을 깨는 '정보'의 에너지
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "열역학 제2법칙을 타파하는 것처럼 보이는 사고 실험 '맥스웰의 악마'. 그 역설이 어떻게 '정보의 물리학'에 의해 해명되었는지를 수식과 도해를 섞어 자세히 해설합니다."
-categories: ["Physics", "Information Theory"]
+categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]
 slug: "maxwells-demon"
 ---

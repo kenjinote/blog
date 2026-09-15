@@ -5,7 +5,7 @@ date: "2026-09-12T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Testing"]
+categories: ["programming", "testing"]
 tags: ["TDD", "C++", "GoogleTest", "CMake"]
 description: '在C++项目中引入测试驱动开发（TDD）的完整指南。深入分析使用GoogleTest和GoogleMock的实践方法，以及在CMake中的配置方式。'
 ---

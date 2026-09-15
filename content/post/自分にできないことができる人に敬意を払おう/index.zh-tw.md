@@ -5,7 +5,7 @@ date: 2023-08-01T23:42:31+09:00
 tags: ["隨筆", "想法"]
 draft: false
 image: "img.webp"
-categories: ["IT・科技"]
+categories: ["it-technology"]
 description: '這是一篇闡述不對社會中的工作與立場區分優劣，並對所有能完成自己做不到的工作的人抱持敬意的重要性的散文。介紹能讓人際關係圓滑、互相尊重的思考重點。'
 ---
 

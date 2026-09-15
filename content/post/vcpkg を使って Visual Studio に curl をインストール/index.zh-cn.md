@@ -5,7 +5,7 @@ date: 2025-07-07T21:46:08+09:00
 tags: ["vcpkg", "curl", "Visual Studio", "C++"]
 draft: false
 image: "img.webp"
-categories: ["工具与开发环境"]
+categories: ["tools-development-environment"]
 description: '讲解如何使用C++开发中便利的包管理工具“vcpkg”，在Visual Studio环境中引入支持OpenSSL的libcurl。帮您顺畅解决编译与依赖关系问题。'
 ---
 

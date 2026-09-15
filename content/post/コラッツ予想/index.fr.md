@@ -5,7 +5,7 @@ date: 2025-07-15T18:03:03+09:00
 tags: ["Conjecture de Collatz", "Mathématiques", "Programmation", "Algorithme"]
 draft: false
 image: "img.webp"
-categories: ["Mathématiques, Cryptographie et Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Si vous répétez ''diviser par deux si pair, multiplier par trois et ajouter un si impair'', finirez-vous toujours par 1 ? Nous expliquons clairement la règle mystérieuse de la célèbre ''Conjecture de Collatz'', un problème mathématique non résolu. De plus, nous écrirons un programme en Python pour simuler si la séquence converge réellement vers 1.'
 ---
 

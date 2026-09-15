@@ -5,7 +5,7 @@ date: 2022-09-23T01:56:52+09:00
 tags: ["Notizen"]
 draft: false
 image: "img.webp"
-categories: ["Mathematik・Kryptographie・Quanten"]
+categories: ["math-cryptography-quantum"]
 description: 'Wir überlegen, warum wir von Mathematik und Computern fasziniert sind. Wir sprechen über ihre tiefgründigen Reize, wie z. B. dass sie für alle gleich sind, klare Regeln haben, die abgeleiteten Antworten für immer richtig sind und dass es immer ungelöste Probleme mit einem angemessenen Schwierigkeitsgrad gibt.'
 ---
 

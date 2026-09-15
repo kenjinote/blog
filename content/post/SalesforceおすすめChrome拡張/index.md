@@ -5,7 +5,7 @@ date: 2022-05-02T10:39:36+09:00
 tags: ["Salesforce", "Chrome拡張"]
 draft: false
 image: "img.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: 'Salesforceの開発や運用を劇的に効率化する、おすすめのChrome拡張機能を紹介します。カスタム項目の検索やSOQLの組み立てに便利なDevTools、コード検索に役立つ拡張機能など、エンジニア必見のツールを厳選しました。'
 ---
 

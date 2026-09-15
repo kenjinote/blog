@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "AI", "C++"]
+categories: ["programming", "ai", "cpp"]
 tags: ["C++", "GGML", "Inference Engine", "Performance", "No Python"]
 description: 'आजकल AI विकास में पायथन मुख्यधारा है, लेकिन एज डिवाइस और उच्च प्रदर्शन की आवश्यकता वाले वातावरण में C++ की शक्ति अपरिहार्य है। इस लेख में, हम GGML की विचारधारा से प्रेरित होकर, केवल C++ का उपयोग करके शून्य से CUDA और Metal बैकएंड के साथ अपना स्वयं का AI इन्फेरेंस इंजन बनाने की विधि को विस्तार से समझाएंगे।'
 ---

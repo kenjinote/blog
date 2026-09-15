@@ -5,7 +5,7 @@ date: 2024-03-30T02:21:31+09:00
 tags: ["编程", "字体"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '为您介绍JetBrains Mono、HackGen（白源）、Ricty Diminished、Cica、Migu等非常适合编程的字体。提升编辑器的可视性，从而提高开发效率吧。'
 ---
 

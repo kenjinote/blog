@@ -5,7 +5,7 @@ date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
-categories: ["Outils et environnement de développement"]
+categories: ["tools-development-environment"]
 description: 'Nous expliquons comment installer des applications à partir d''une ligne de commande en utilisant le gestionnaire de paquets ''WinGet'' de Windows 11. Nous présentons la procédure pour déployer et gérer rapidement des logiciels majeurs comme Chrome, VSCode et Slack via la ligne de commande.'
 ---
 ## Prérequis

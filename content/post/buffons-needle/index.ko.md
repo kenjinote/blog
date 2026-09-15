@@ -4,9 +4,7 @@ description: "바닥에 바늘을 떨어뜨리는 것만으로 원주율 π를 �
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories:
-  - "수학"
-  - "확률론"
+categories: ["mathematics", "probability-theory"]
 tags:
   - "원주율"
   - "시뮬레이션"

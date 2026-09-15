@@ -6,7 +6,7 @@ tags: ["數學","未解問題"]
 draft: false
 math: true
 image: "img.webp"
-categories: ["數學・密碼・量子"]
+categories: ["math-cryptography-quantum"]
 description: '淺顯易懂地解說問題本身雖然簡單，卻至今仍未被證明的迷人數學未解之謎。完全數是否無限多？深入探討哥德巴赫猜想與世紀難題黎曼猜想等，不斷困擾著數學家們的眾多神祕問題。'
 ---
 

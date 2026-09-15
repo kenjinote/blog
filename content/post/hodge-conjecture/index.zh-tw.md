@@ -4,7 +4,7 @@ description: "關於克雷數學研究所的千禧年大獎難題之一的霍奇
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "科學"]
+categories: ["mathematics", "science"]
 tags: ["千禧年大獎難題", "拓樸學", "代數幾何學", "霍奇猜想"]
 ---
 

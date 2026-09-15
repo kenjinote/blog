@@ -5,7 +5,7 @@ date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Pintasan"]
 draft: false
 image: "img.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Daftar pintasan keyboard berguna yang secara dramatis meningkatkan efisiensi kerja di Microsoft Word. Kami menyajikan pintasan penting yang sering digunakan dalam penulisan dan pengeditan teks sehari-hari, seperti dekorasi teks, salin & tempel, cari & ganti, dan simpan, diringkas dalam tabel yang mudah dipahami.'
 ---
 ## Daftar Pintasan

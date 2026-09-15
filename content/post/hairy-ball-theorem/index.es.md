@@ -4,9 +4,7 @@ description: "Explicamos en detalle el 'Teorema de la bola peluda', un famoso te
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "Matemáticas"
-  - "Topología"
+categories: ["mathematics", "topology"]
 tags:
   - "Matemáticas"
   - "Topología"

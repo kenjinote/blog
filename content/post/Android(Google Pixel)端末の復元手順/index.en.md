@@ -5,7 +5,7 @@ date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Restore", "Troubleshooting"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Are you troubled by serious errors such as your Google Pixel repeatedly restarting or getting stuck on the logo? We thoroughly and clearly explain the official procedure for safe and reliable device software restoration and initialization using the official repair tool, as well as important precautions before execution.'
 ---
 

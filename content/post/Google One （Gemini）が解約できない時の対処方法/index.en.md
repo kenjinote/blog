@@ -6,7 +6,7 @@ tags: ["Google One", "Gemini", "Cancellation", "Troubleshooting"]
 draft: false
 image: "img.webp"
 description: 'We explain the correct cancellation procedure to prevent the 2,900 yen/month Google One membership from automatically continuing after the 1-month free trial of Gemini ends. If you are troubled by ''cannot cancel'', please refer to the withdrawal method in this article.'
-categories: ["Programming"]
+categories: ["programming"]
 ---
 
 # [Warning] Will you be charged after the Gemini free trial ends? A guide on how to cancel

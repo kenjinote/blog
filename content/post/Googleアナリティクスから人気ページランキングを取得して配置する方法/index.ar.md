@@ -5,7 +5,7 @@ date: 2023-04-10T20:26:57+09:00
 tags: ["تحليلات جوجل", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
-categories: ["إدارة المدونة"]
+categories: ["blogging"]
 description: 'نشرح كيفية استخدام خدمة ''Ranklet'' التي تتيح لك بسهولة وبشكل تلقائي عرض ترتيب الصفحات الشهيرة لموقعك من خلال الربط مع Google Analytics. بأخذ مدونة HUGO كمثال، نقدم خطوات الإعداد وطرق تخصيص قوالب HTML/CSS.'
 ---
 

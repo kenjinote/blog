@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: "क्वांटम कंप्यूटर की आश्चर्यजनक गणना क्षमता ब्लॉकचेन की नींव को हिला देने वाले 'Q-Day' के आगमन का संकेत देती है। शोर के एल्गोरिदम द्वारा ECDSA के पतन से लेकर पोस्ट-क्वांटम क्रिप्टोग्राफी (PQC) में संक्रमण की रणनीति तक, हम क्रिप्टो एसेट्स के भविष्य की गहन तकनीकी व्याख्या करेंगे।"
 ---

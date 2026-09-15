@@ -5,7 +5,7 @@ date: 2024-03-30T13:13:36+09:00
 tags: ["Windows11", "资源管理器"]
 draft: false
 image: "img.webp"
-categories: ["电脑・数码"]
+categories: ["pc-gadgets"]
 description: '讲解如何将Windows 11的新版右键菜单（上下文菜单）恢复为Windows 10的传统版。介绍使用注册表编辑器更改设置、使旧规范菜单始终显示的简单步骤。'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-12T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "System Administration"]
+categories: ["programming", "system-administration"]
 tags: ["PowerShell", "C++", "Windows", "Automation"]
 description: 'Se explica la integración de PowerShell y C++, métodos de automatización prácticos que mejoran drásticamente la gestión del sistema Windows, P/Invoke y la gestión de memoria.'
 ---

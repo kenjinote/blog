@@ -5,7 +5,7 @@ date: 2026-01-24T15:41:23+09:00
 tags: ["Masalah Sosial", "Kesehatan", "Literasi Informasi"]
 draft: false
 image: "img.webp"
-categories: ["Gaya Hidup / Serbaneka"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Kami akan menjelaskan manfaat dan kerugian ''anti-vaksin'' terkait vaksinasi COVID-19 serta pelajaran epidemiologi. Kami mengeksplorasi pentingnya pemikiran ilmiah agar tidak tertipu oleh informasi media, dengan memahami bias kognitif seperti ''confounding'' (faktor pengganggu) atau ''ilusi kausal'' pada kasus-kasus setelah vaksinasi.'
 ---
 

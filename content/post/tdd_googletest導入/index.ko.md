@@ -5,7 +5,7 @@ date: "2026-09-12T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "Testing"]
+categories: ["programming", "testing"]
 tags: ["TDD", "C++", "GoogleTest", "CMake"]
 description: 'C++ 프로젝트에 테스트 주도 개발(TDD)을 도입하기 위한 완전 가이드. GoogleTest와 GoogleMock을 사용한 실전적인 접근법 및 CMake에서의 구성 방법을 철저하게 해설합니다.'
 ---

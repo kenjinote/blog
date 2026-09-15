@@ -5,7 +5,7 @@ date: 2024-09-18T00:56:59+09:00
 tags: ["The Old Couple and the Donkey", "Satire"]
 draft: false
 image: "img.webp"
-categories: ["IT and Technology"]
+categories: ["it-technology"]
 description: 'Through the famous fable ''The Old Couple and the Donkey'', we examine the negative effects of caring too much about others'' eyes and the modern relationship dilemma of ''whose voice should we believe?''. We deliver hints for living a life unswayed by the opinions of others.'
 ---
 

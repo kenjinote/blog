@@ -5,7 +5,7 @@ date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Belajar"]
 draft: false
 image: "img.webp"
-categories: ["TI & Teknologi"]
+categories: ["it-technology"]
 description: 'Kami merangkum poin-poin penting untuk belajar menghadapi ujian kualifikasi manajemen proyek ''PMP''. Selain ikhtisar ujian dan nilai kelulusan, kami menjelaskan poin-poin penting yang sesuai dengan PMBOK Edisi ke-7, seperti 10 prinsip kepemimpinan pelayan dan 4 nilai deklarasi pengembangan perangkat lunak Agile.'
 ---
 

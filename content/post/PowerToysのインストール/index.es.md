@@ -12,7 +12,7 @@ date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "símbolo del sistema", "PowerToys", "winget"]
 draft: false
 image: "img.webp"
-categories: ["Herramientas y Entorno de Desarrollo"]
+categories: ["tools-development-environment"]
 description: 'Mostramos los pasos para instalar y desinstalar fácilmente Microsoft PowerToys en un entorno Windows utilizando el comando winget, un administrador de paquetes. Se puede ejecutar de inmediato en el símbolo del sistema.'
 ---
 

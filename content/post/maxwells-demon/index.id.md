@@ -3,7 +3,7 @@ title: "Iblis Maxwell: Energi 'Informasi' yang Mendobrak Akal Sehat Fisika"
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:00+09:00
 description: "Sebuah eksperimen pikiran bernama 'Iblis Maxwell' yang tampaknya mematahkan Hukum Kedua Termodinamika. Artikel ini menjelaskan secara rinci bagaimana paradoks tersebut dipecahkan melalui 'Fisika Informasi', lengkap dengan rumus matematika dan ilustrasi."
-categories: ["Physics", "Information Theory"]
+categories: ["physics", "information-theory"]
 tags: ["Thermodynamics", "Maxwell's Demon", "Entropy", "Landauer's Principle"]
 slug: "maxwells-demon"
 ---

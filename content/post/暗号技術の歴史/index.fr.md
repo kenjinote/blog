@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: "De l'ancien chiffre de César à la machine Enigma, en passant par la cryptographie à clé publique et jusqu'à la cryptographie post-quantique (PQC) pour se préparer aux futures menaces des ordinateurs quantiques, nous expliquons en détail l'histoire épique et l'évolution technologique de la cryptographie."
 ---

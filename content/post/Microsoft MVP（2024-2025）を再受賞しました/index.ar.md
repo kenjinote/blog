@@ -5,7 +5,7 @@ date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
 draft: false
 image: "img.webp"
-categories: ["الأدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'هذا تقرير عن تجديد حصولي على جائزة Microsoft MVP (2024-2025) للمرة الثامنة هذا العام. سنستعرض نظرة عامة على برنامج Microsoft MVP، والأنشطة التي يتم تقييمها، وأسباب حصولي على الجائزة هذه المرة، بالإضافة إلى مراجعة للعام الماضي.'
 ---
 

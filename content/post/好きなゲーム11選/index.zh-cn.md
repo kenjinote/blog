@@ -5,7 +5,7 @@ date: 2022-09-12T19:28:50+09:00
 tags: ["游戏"]
 draft: false
 image: "img_12.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '从初代Game Boy、超级任天堂等令人怀念的复古游戏中，为您推荐11款名作。囊括了《沙加2 秘宝传说》、《星之卡比》、《精灵宝可梦红·绿》等即使现在玩也不褪色、殿堂级的神作。让我们一起来回顾这些名作的魅力。'
 ---
 回想起喜欢的游戏，发现全是些殿堂级的神作。

@@ -5,7 +5,7 @@ date: 2025-05-26T22:23:34+09:00
 tags: ["Teoria da conspiração", "Poema"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Explicando como preparar a ''segurança mental'' necessária para evitar ser arrastado para teorias da conspiração na internet. Estas são dicas para sobreviver sabiamente na sociedade moderna da internet, como a capacidade de suspensão para não conectar ansiedade diretamente com respostas, e dicas de coleta de informações para prevenir o viés de confirmação.'
 ---
 

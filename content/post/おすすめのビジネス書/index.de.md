@@ -5,7 +5,7 @@ date: 2023-03-19T18:13:14+09:00
 tags: ["Wirtschaftsbücher", "Bücher"]
 draft: false
 image: "img.webp"
-categories: ["Lebensstil & Diverses"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Wir stellen eine sorgfältig ausgewählte Liste von Meisterwerken und empfohlenen Wirtschaftsbüchern vor, die für die Selbstentwicklung und den Kompetenzaufbau nützlich sind und die jeder Geschäftsmann mindestens einmal gelesen haben sollte, wie „Wie man Freunde gewinnt“, „Du musst nicht von allen gemocht werden“, „The 100-Year Life“ und „Die 7 Wege zur Effektivität“.'
 ---
 

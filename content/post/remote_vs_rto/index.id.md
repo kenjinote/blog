@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Industry", "Career", "Management"]
+categories: ["industry", "career", "management"]
 tags: ["Remote Work", "Productivity", "Conway's Law", "Zero Trust"]
 description: 'Membahas perdebatan tentang kerja jarak jauh dan kembali ke kantor (RTO) dalam organisasi rekayasa perangkat lunak dari perspektif sosiologi (Kurva Allen, Hukum Conway), metrik produktivitas (SPACE, DORA), dan arsitektur jaringan (Zero Trust) untuk menemukan solusi yang benar-benar optimal.'
 ---

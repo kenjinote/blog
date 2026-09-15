@@ -5,7 +5,7 @@ date: 2022-10-05T20:07:06+09:00
 tags: ["javascript", "otomatisasi"]
 draft: false
 image: "img.webp"
-categories: ["manajemen blog"]
+categories: ["blogging"]
 description: 'Menjelaskan cara memeriksa semua kotak centang di halaman web sekaligus. Memperkenalkan kode JavaScript untuk dijalankan di konsol DevTools Chrome, serta prosedur pembuatan bookmarklet praktis yang dapat memilih/membatalkan semua pilihan dengan satu klik.'
 ---
 

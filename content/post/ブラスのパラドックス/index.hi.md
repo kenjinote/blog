@@ -7,7 +7,7 @@ slug: "braess-paradox"
 image: "img/braess_paradox.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय पैराडॉक्स", "गेम थ्योरी"]
+categories: ["mathematical-paradoxes", "game-theory"]
 tags: ["पैराडॉक्स", "नेटवर्क", "ट्रैफिक", "नैश इक्विलिब्रियम", "ब्रैस का पैराडॉक्स"]
 ---
 

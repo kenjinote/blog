@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Analytics"]
+categories: ["blogging", "seo", "analytics"]
 tags: ["Google Search Console", "Python", "SEO", "BigQuery"]
 description: 'شرح لدمج بيانات Google Search Console و GA4 واستخدام Python و BigQuery لإعادة كتابة المقالات التقنية بشكل استراتيجي. يغطي مقاييس تحسين محركات البحث المدفوعة بالبيانات مثل تحليل TF-IDF و CTR.'
 ---

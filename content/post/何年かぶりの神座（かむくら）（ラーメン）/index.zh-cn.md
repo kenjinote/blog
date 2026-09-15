@@ -5,7 +5,7 @@ date: 2022-09-09T21:45:19+09:00
 tags: ["拉面", "神座"]
 draft: false
 image: "images/img2.webp"
-categories: ["IT·科技"]
+categories: ["it-technology"]
 description: '久违地去了人气拉面店“道顿堀神座（Kamukura）”。这次点的是推荐的“葱花泡菜拉面”！偶尔会特别想喝的那种独特美味的汤头，与满满的蔬菜和葱花泡菜简直绝配。'
 ---
 

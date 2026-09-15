@@ -5,7 +5,7 @@ date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadget"]
+categories: ["pc-gadgets"]
 description: 'Memperkenalkan perintah terminal untuk mencegah pembuatan file ''.DS_Store'' yang tidak perlu secara otomatis di drive jaringan pada lingkungan macOS. Kami juga merangkum cara mengembalikannya ke pengaturan awal dan langkah merestart Finder.'
 ---
 Perintah untuk mencegah pembuatan otomatis .DS_Store di macOS adalah sebagai berikut.

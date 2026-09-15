@@ -4,9 +4,7 @@ description: "Explicamos de forma sencilla los antecedentes físicos y las dific
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories:
-  - "Física"
-  - "Matemáticas"
+categories: ["physics", "mathematics"]
 tags:
   - "Yang-Mills"
   - "Salto de masa"

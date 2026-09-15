@@ -7,7 +7,7 @@ slug: "grue-paradox"
 image: "img/grue_paradox.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "哲学", "論理学"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["パラドックス", "帰納法", "グルー", "科学哲学"]
 ---
 

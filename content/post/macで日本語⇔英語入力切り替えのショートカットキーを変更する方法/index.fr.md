@@ -5,7 +5,7 @@ date: 2023-04-04T23:02:12+09:00
 tags: ["macos", "mac", "Touche de raccourci", "Saisie en japonais"]
 draft: 
 image: "img.webp"
-categories: ["PC et Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Explique comment changer le raccourci clavier de basculement entre la saisie en japonais et en anglais sur un Mac (clavier US) pour le raccourci de votre choix comme ''Alt + `''. Présente les étapes de configuration sur macOS Ventura et comment éviter que des katakanas soient inclus lors du basculement.'
 ---
 

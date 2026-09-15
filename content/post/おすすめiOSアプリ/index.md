@@ -5,7 +5,7 @@ date: 2024-09-18T23:31:20+09:00
 tags: ["iOS", "アプリ", "おすすめ"]
 draft: false
 image: "img.webp"
-categories: ["PC・ガジェット"]
+categories: ["pc-gadgets"]
 description: 'iPhoneやiPadをもっと便利に活用するための、おすすめiOSアプリを厳選してご紹介します。仕事やプライベートで役立つ便利なツールや、生活を豊かにする必須アプリをまとめてチェックしましょう。'
 ---
 

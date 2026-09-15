@@ -5,7 +5,7 @@ date: 2026-09-05T02:26:13+09:00
 tags: ["數學", "密碼學", "RSA", "GNFS"]
 draft: false
 image: "rsa_encryption_break_1788542156523.webp"
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '解說質因數分解演算法「普通數域篩法（GNFS）」的真實數學結構。剖析如何使用連結現實整數世界與代數體世界的「同態映射」，來有效率地對巨大合成數進行質因數分解的進階機制。'
 ---
 

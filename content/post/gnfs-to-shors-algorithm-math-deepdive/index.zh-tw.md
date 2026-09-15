@@ -6,7 +6,7 @@ tags: ["量子電腦", "GNFS", "Shor演算法", "密碼破解", "數學"]
 image: "quantum_vs_gnfs_eyecatch_1788616101508.webp"
 mermaid: true
 math: true
-categories: ["數學・密碼・量子"]
+categories: ["math-cryptography-quantum"]
 description: '質因數分解問題是RSA密碼安全性的基石。本文將透過數學公式與概念圖，徹底解說古典最強演算法「普通數域篩法（GNFS）」的數學機制，以及為何量子電腦的「秀爾演算法(Shor''s algorithm)」能將其攻破。'
 ---
 

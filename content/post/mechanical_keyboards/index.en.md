@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'A thorough explanation of high-end keyboards that dramatically improve engineer productivity. We dig deep into everything from the physics of switches to the mechanisms of firmware, and introduce 5 ultimate keyboards.'
 ---

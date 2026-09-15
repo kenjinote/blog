@@ -6,9 +6,7 @@ date: '2026-09-10T11:00:00+09:00'
 image: 'img/berry_paradox.jpg'
 math: true
 mermaid: true
-categories:
-  - '数学悖论'
-  - '逻辑学'
+categories: ["mathematical-paradoxes", "logic"]
 tags:
   - '悖论'
   - '自我指涉'

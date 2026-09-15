@@ -3,7 +3,7 @@ title: '【पूर्ण कवरेज】क्वांटम यांत�
 slug: "double-slit-experiment-ultimate-guide"
 date: "2026-09-08T01:00:00+09:00"
 tags: ["भौतिकी", "क्वांटम यांत्रिकी", "डबल-स्लिट प्रयोग", "श्रोडिंगर का समीकरण"]
-categories: ["भौतिकी और विज्ञान"]
+categories: ["physics-science"]
 math: true
 mermaid: true
 image: "cover.webp"

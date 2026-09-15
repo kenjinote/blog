@@ -5,7 +5,7 @@ date: 2023-03-19T18:13:14+09:00
 tags: ["Business Books", "Books"]
 draft: false
 image: "img.webp"
-categories: ["Lifestyle & Miscellaneous"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Carefully selects and introduces masterpieces and recommended business books useful for self-development and skill improvement that every business person should read at least once, such as ''How to Win Friends and Influence People'', ''The Courage to Be Disliked'', ''LIFE SHIFT'', and ''The 7 Habits of Highly Effective People''.'
 ---
 

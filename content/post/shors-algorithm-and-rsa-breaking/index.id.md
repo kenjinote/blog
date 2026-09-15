@@ -4,7 +4,7 @@ slug: "shors-algorithm-and-rsa-breaking"
 tags: ["Komputer Kuantum", "Dekripsi", "Algoritma Shor", "RSA"]
 image: "quantum_breaking_rsa_1788613722990.webp"
 date: 2026-09-05T22:09:21+09:00
-categories: ["Matematika・Kriptografi・Kuantum"]
+categories: ["math-cryptography-quantum"]
 description: 'Menjelaskan bagaimana kebangkitan komputer kuantum mengancam kriptografi RSA yang mendukung infrastruktur komunikasi modern. Kami mempertimbangkan masa depan dekripsi dan keamanan generasi berikutnya, dari mekanisme algoritme Shor hingga status perangkat keras saat ini di era NISQ.'
 ---
 

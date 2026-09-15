@@ -5,7 +5,7 @@ date: 2022-10-01T19:08:58+09:00
 tags: ["Rust", "Fenster"]
 draft: false
 image: "images/rust_logo.webp"
-categories: ["Programmierung"]
+categories: ["programming"]
 description: 'Stellt vor, wie man in Rust mit `winapi` ein einfaches Windows-Fenster erstellt und anzeigt. Erklärt den Quellcode, der die Grundlage der GUI-Programmierung bildet, im Detail, von den Einstellungen in Cargo.toml bis zur Implementierung der Fensterprozedur.'
 ---
 

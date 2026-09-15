@@ -5,7 +5,7 @@ date: 2023-05-02T23:28:33+09:00
 tags: ["Trackball", "Deft Pro", "M-DPT1MRBK", "Elecom"]
 draft: false
 image: "img.webp"
-categories: ["TI e Tecnologia"]
+categories: ["it-technology"]
 description: 'Uma revisão após usar o mouse trackball médio ''Deft Pro (M-DPT1MRBK)'' da Elecom por uma semana. Explicaremos desde as vantagens de diminuir a sobrecarga no pulso e vasta alocação de botões, até as desvantagens do incômodo de limpar e adaptação da sensação de operar.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-08T08:39:03+09:00
 tags: ["咖啡館", "音樂"]
 draft: false
 image: "images/img.webp"
-categories: ["生活風格・雜記"]
+categories: ["lifestyle-miscellaneous"]
 description: '整理了非常適合當作寫程式、讀書、遠距工作背景音樂的咖啡廳音樂。從快節奏的 Electro Swing 到能放鬆專注的 LoFi Hip Hop 與爵士樂，為您介紹推薦的工作用音樂。'
 ---
 **快節奏**

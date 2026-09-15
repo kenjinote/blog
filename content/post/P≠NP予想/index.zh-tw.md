@@ -4,7 +4,7 @@ slug: "P≠NP猜想"
 date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP猜想", "數學", "未解問題"]
 draft: false
-categories: ["數學・密碼學・量子"]
+categories: ["math-cryptography-quantum"]
 description: '針對資訊科學中最大的未解之謎「P≠NP 猜想」，結合可在多項式時間內求解的「P 類別」，與可在多項式時間內驗證解之正確性的「NP 類別」之間的差異，從決定性圖靈機的觀點，淺顯易懂地解說其概要。'
 ---
 

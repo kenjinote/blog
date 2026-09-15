@@ -5,7 +5,7 @@ date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "Date et Heure", "ISO8601"]
 draft: false
 image: "img.webp"
-categories: ["Programmation"]
+categories: ["programming"]
 description: 'Incontournable pour les ingénieurs qui souhaitent afficher l''heure actuelle au format standard mondial ISO8601 en C++ ! Cet article présente un exemple de code clair et élégant pour convertir le format de l''heure actuelle de manière intelligente et concise, en utilisant std::format de C++20 et la bibliothèque chrono.'
 ---
 

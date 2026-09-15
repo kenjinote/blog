@@ -8,7 +8,7 @@ date: 2022-09-12T16:03:42+09:00
 tags: ["macOS"]
 draft: false
 image: "img.webp"
-categories: ["PC y Gadgets"]
+categories: ["pc-gadgets"]
 description: 'Presentamos un comando de terminal para evitar la generación automática de archivos ".DS_Store" innecesarios en unidades de red y similares en el entorno de macOS. También resumimos cómo restaurar la configuración original y los pasos para reiniciar el Finder.'
 ---
 

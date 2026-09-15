@@ -7,7 +7,7 @@ slug: "base-rate-fallacy"
 image: "img/base_rate_fallacy.jpg"
 math: true
 mermaid: true
-categories: ["数学パラドックス", "統計学", "心理学"]
+categories: ["mathematical-paradoxes", "statistics", "psychology"]
 tags: ["パラドックス", "ベイズの定理", "確率", "認知バイアス", "基準値の錯誤"]
 ---
 

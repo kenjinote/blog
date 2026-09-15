@@ -4,10 +4,7 @@ description: जिप्फ़ के नियम में एक गहर�
 slug: zipfs-law
 date: '2026-09-14T13:20:38+09:00'
 image: eyecatch.jpg
-categories:
-- गणित
-- डेटा विज्ञान
-- भाषा विज्ञान
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
 - ज़िप्फ़ का नियम
 - घात नियम

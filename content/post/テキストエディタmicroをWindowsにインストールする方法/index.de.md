@@ -5,7 +5,7 @@ date: 2024-03-31T21:50:39+09:00
 tags: ["micro", "Texteditor"]
 draft: false
 image: "img.webp"
-categories: ["Tools und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Wir erklären anschaulich die Schritte zur Installation des terminalbasierten Texteditors „micro“, der bequem in der Eingabeaufforderung funktioniert, unter Windows, sowie das Setzen von Umgebungsvariablen, um ihn nutzbar zu machen.'
 ---
 

@@ -5,7 +5,7 @@ date: 2022-09-09T07:08:49+09:00
 tags: ["Rust", "Prime Numbers", "Algorithm"]
 draft: false
 image: "images/img.webp"
-categories: ["Programming"]
+categories: ["programming"]
 description: 'Introduces an implementation example of a simple algorithm to enumerate prime numbers up to a specified upper limit as a learning exercise for Rust programming. Explains the basic coding method using loops and conditional branching clearly with specific sample code.'
 ---
 I wrote a program to enumerate prime numbers in Rust.

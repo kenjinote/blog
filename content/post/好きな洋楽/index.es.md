@@ -12,7 +12,7 @@ date: 2024-01-05T00:14:22+09:00
 tags: ["Música occidental", "Música"]
 draft: false
 image: "img.webp"
-categories: ["Estilo de vida y miscelánea"]
+categories: ["lifestyle-miscellaneous"]
 description: 'Te presentamos clásicos atemporales y recomendados de la música occidental, desde The Beatles hasta Coldplay y Ed Sheeran. Hemos compilado una lista de canciones exitosas imprescindibles, desde baladas conmovedoras hasta música pop estimulante.'
 ---
 

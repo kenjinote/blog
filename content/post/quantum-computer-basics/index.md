@@ -4,7 +4,7 @@ slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["量子コンピュータ", "物理学", "テクノロジー"]
 image: "quantum_basics_eyecatch_1788613712487.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: '従来のスーパーコンピュータの限界を超える可能性を秘めた「量子コンピュータ」の基礎について解説します。重ね合わせ、量子もつれ、量子ゲートといった量子力学の不思議な現象を計算に利用する仕組みを、専門的かつ分かりやすく紐解きます。'
 ---
 

@@ -5,7 +5,7 @@ date: 2024-05-15T23:32:43+09:00
 tags: ["git", "memulihkan", "membatalkan"]
 draft: false
 image: "img.webp"
-categories: ["Alat & Lingkungan Pengembangan"]
+categories: ["tools-development-environment"]
 description: 'Menjelaskan cara membatalkan reset dan mengembalikan ke keadaan commit semula ketika Anda tidak sengaja menjalankan ''git reset'' di Git. Memperkenalkan dengan mudah langkah-langkah untuk memeriksa ID commit menggunakan ''git reflog'' dan mengembalikan kondisi dengan benar.'
 ---
 # Cara membatalkan git reset

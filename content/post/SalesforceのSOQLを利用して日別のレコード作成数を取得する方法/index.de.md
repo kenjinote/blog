@@ -5,7 +5,7 @@ date: 2023-04-09T02:50:30+09:00
 tags: ["salesforce", "soql", "datum", "aggregation"]
 draft: false
 image: "img.webp"
-categories: ["IT und Technologie"]
+categories: ["it-technology"]
 description: 'Erklärt die konkrete Methode und die Abfragesyntax, um die tägliche Anzahl der erstellten Datensätze für Accounts usw. durch Aggregation mit SOQL in der Salesforce Developer Console abzurufen. Zeigt praktische Datenanalyse-Schritte unter Verwendung der GROUP BY-Klausel.'
 ---
 

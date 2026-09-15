@@ -5,7 +5,7 @@ date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "图"]
 draft: false
 image: "img.webp"
-categories: ["工具与开发环境"]
+categories: ["tools-development-environment"]
 description: '介绍只需在浏览器上输入数据，即可轻松创建图表和图形的便捷Web图表编辑器。详细讲解通过鼠标移动元素、创建有向图，以及将创建的图表下载为PNG图片的功能。'
 ---
 # 图编辑器

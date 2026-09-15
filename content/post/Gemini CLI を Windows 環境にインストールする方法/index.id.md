@@ -5,7 +5,7 @@ date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "Instalasi", "開発"]
 draft: false
 image: "img.webp"
-categories: ["PC & Gadget"]
+categories: ["pc-gadgets"]
 description: 'Penjelasan untuk pemula tentang cara menginstal ''Gemini CLI'', yang memungkinkan penggunaan AI generatif Google ''Gemini'' dari baris perintah, di lingkungan Windows. Memperkenalkan secara rinci mulai dari persiapan Node.js dan npm hingga langkah eksekusi di PowerShell.'
 ---
 

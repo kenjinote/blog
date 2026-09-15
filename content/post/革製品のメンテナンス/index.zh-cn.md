@@ -5,7 +5,7 @@ date: 2024-10-30T00:31:46+09:00
 tags: ["皮革制品", "爱好"]
 draft: false
 image: "img.webp"
-categories: ["生活方式・杂记"]
+categories: ["lifestyle-miscellaneous"]
 description: '面向皮革制品的保养初学者，介绍实际购买后觉得好用的推荐护理用品，如M.MOWBRAY的柔润乳霜、Collonil的Supreme Cream等。这是能让心爱的皮具更加耐用持久的保养技巧。'
 ---
 

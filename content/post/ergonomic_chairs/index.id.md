@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Health", "Productivity"]
+categories: ["gadgets", "health", "productivity"]
 tags: ["Ergonomics", "Chair", "Remote Work", "Health"]
 description: 'Berdasarkan biomekanika, kami akan menjelaskan secara menyeluruh fisika dan cara memilih kursi ergonomis yang melindungi pekerja jarak jauh dari sakit punggung. Kami juga membandingkan pendekatan struktural dari model-model kelas atas seperti Herman Miller Aeron dan Okamura Contessa.'
 ---

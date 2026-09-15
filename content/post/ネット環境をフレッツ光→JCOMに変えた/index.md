@@ -5,7 +5,7 @@ date: 2022-09-05T22:48:51+09:00
 tags: ["J:COM","フレッツ光","ネット回線"]
 draft: false
 image: "jcom.webp"
-categories: ["IT・テクノロジー"]
+categories: ["it-technology"]
 description: '自宅のネット回線をフレッツ光からJ:COMに乗り換えた体験談。月額料金の節約効果や、ダウンロード速度の向上、逆にアップロード速度が低下した点、通信の安定性など、実際の使用感を包み隠さずレビューします。'
 ---
 

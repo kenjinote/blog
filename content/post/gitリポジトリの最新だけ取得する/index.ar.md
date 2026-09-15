@@ -5,7 +5,7 @@ date: 2024-04-27T02:54:12+09:00
 tags: ["git", "مستودع", "أمر"]
 draft: false
 image: "img.webp"
-categories: ["أدوات وبيئة التطوير"]
+categories: ["tools-development-environment"]
 description: 'نشرح كيفية جلب أحدث التزام فقط (Shallow Clone) بدلاً من تنزيل السجل الكامل لمستودع Git. تقنية مفيدة لتوفير مساحة التخزين واستنساخ المستودع بسرعة باستخدام خيار ''--depth 1''.'
 ---
 

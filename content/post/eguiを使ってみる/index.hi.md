@@ -5,7 +5,7 @@ date: 2023-03-18T10:27:02+09:00
 tags: ["rsut", "egui", "जीयूआई लाइब्रेरी"]
 draft: false
 image: "demo.gif"
-categories: ["आईटी और प्रौद्योगिकी"]
+categories: ["it-technology"]
 description: 'हम Rust में उपयोग में आसान GUI लाइब्रेरी "egui" के मूल उपयोग का परिचय देंगे। हम GitHub से टेम्प्लेट को क्लोन करने और cargo run कमांड के साथ नमूना ऐप को लॉन्च और निष्पादित करने के सरल चरणों की व्याख्या करेंगे。'
 ---
 

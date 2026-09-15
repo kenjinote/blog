@@ -7,7 +7,7 @@ slug: "paradox-of-the-court"
 image: "img/paradox_of_court.jpg"
 math: true
 mermaid: true
-categories: ["Paradoks Matematika", "Filsafat", "Logika"]
+categories: ["mathematical-paradoxes", "philosophy", "logic"]
 tags: ["Paradoks", "Referensi Diri", "Hukum", "Protagoras", "Logika"]
 ---
 

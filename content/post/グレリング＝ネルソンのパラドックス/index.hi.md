@@ -7,7 +7,7 @@ slug: "grelling-nelson-paradox"
 image: "img/grelling_nelson.jpg"
 math: true
 mermaid: true
-categories: ["गणितीय विरोधाभास", "तर्कशास्त्र"]
+categories: ["mathematical-paradoxes", "logic"]
 tags: ["विरोधाभास", "अर्थशास्त्र", "स्व-संदर्भ", "समुच्चय सिद्धान्त"]
 ---
 

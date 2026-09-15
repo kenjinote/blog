@@ -5,7 +5,7 @@ date: '2026-09-13T03:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["Web", "Design", "Hugo"]
+categories: ["web", "design", "hugo"]
 tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 ---
 

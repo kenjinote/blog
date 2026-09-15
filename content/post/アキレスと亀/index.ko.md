@@ -6,9 +6,7 @@ date: '2026-09-10T01:00:00+09:00'
 image: 'img/achilles.jpg'
 math: true
 mermaid: true
-categories:
-  - '수학 역설'
-  - '무한과 극한'
+categories: ["mathematical-paradoxes", "infinity-and-limits"]
 tags:
   - '역설'
   - '제논'

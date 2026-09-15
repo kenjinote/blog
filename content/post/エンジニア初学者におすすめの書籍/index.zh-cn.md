@@ -5,7 +5,7 @@ date: 2024-05-05T16:03:33+09:00
 tags: ["工程师", "初学者", "书籍"]
 draft: false
 image: "img.webp"
-categories: ["生活杂记"]
+categories: ["lifestyle-miscellaneous"]
 description: '想从编程初学者进阶为中级工程师的必看指南！精选推荐15本初学者必读的书籍，如《代码整洁之道》和《程序员修炼之道》等，助你学习软件开发基础知识与设计方法。'
 ---
 

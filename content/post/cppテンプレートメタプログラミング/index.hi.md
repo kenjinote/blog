@@ -5,7 +5,7 @@ date: "2026-09-12T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "C++"]
+categories: ["programming", "cpp"]
 tags: ["C++", "Metaprogramming", "constexpr", "Concepts"]
 description: 'C++ में टेंप्लेट मेटाप्रोग्रामिंग के इतिहास से लेकर SFINAE, constexpr और नवीनतम C++20 Concepts तक विस्तृत रूप से वर्णन करता है।'
 ---

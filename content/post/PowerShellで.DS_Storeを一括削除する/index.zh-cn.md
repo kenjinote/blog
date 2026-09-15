@@ -5,7 +5,7 @@ date: 2022-09-12T10:11:42+09:00
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '讲解如何使用PowerShell，在Windows环境中连同子文件夹一起批量删除碍眼的Mac .DS_Store文件。只需一条简短的命令，即可轻松清理不需要的文件。'
 ---
 

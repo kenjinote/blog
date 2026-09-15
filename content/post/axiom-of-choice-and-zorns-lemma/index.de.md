@@ -4,7 +4,7 @@ description: "Ein tiefer Einblick in das Auswahlaxiom und das Lemma von Zorn –
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Mengenlehre"]
+categories: ["mathematics", "set-theory"]
 tags: ["Auswahlaxiom", "Lemma von Zorn", "ZFC-Axiomensystem", "Grundlagen der Mathematik", "Mermaid", "KaTeX"]
 ---
 

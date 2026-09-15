@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Gadgets", "Productivity", "Hardware"]
+categories: ["gadgets", "productivity", "hardware"]
 tags: ["Keyboard", "Mechanical Keyboard", "QMK", "Ergonomics"]
 description: 'Una guía detallada de teclados de alta gama que mejoran drásticamente la productividad de los ingenieros. Profundizamos desde la física de los interruptores hasta cómo funciona el firmware, y presentamos los 5 mejores modelos definitivos.'
 ---

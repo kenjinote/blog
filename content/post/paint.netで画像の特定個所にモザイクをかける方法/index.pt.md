@@ -5,7 +5,7 @@ date: 2023-04-11T16:33:10+09:00
 tags: ["paint.net", "borda", "imagem"]
 draft: false
 image: "img.webp"
-categories: ["AI・Tecnologia"]
+categories: ["ai-technology"]
 description: 'Explicamos como aplicar o efeito de mosaico em parte de uma imagem usando o software de edição de imagem gratuito ''paint.net''. Apresentamos o procedimento para iniciantes, mostrando como especificar a área com a ferramenta de seleção e configurar a função de efeito. É uma técnica de proteção de privacidade útil ao fazer upload de imagens para redes sociais e blogs.'
 ---
 

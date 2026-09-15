@@ -5,7 +5,7 @@ date: 2024-03-29T23:45:37+09:00
 tags: ["comando", "Hidemaru Editor", "registro"]
 draft: false
 image: "img_2.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Explicamos como iniciar rapidamente o Editor Hidemaru simplesmente digitando ''hide'' em ''Executar'' ou no Prompt de Comando no Windows 10/11. Este é um procedimento de personalização útil usando App Paths do Editor do Registro.'
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T17:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blockchain", "Quantum Computing", "Technology"]
+categories: ["blockchain", "quantum-computing", "technology"]
 tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: 'Наступление «Q-Day», когда невероятная вычислительная мощность квантовых компьютеров пошатнет основы блокчейна. От краха ECDSA из-за алгоритма Шора до стратегий перехода на постквантовую криптографию (PQC) — детальный технический разбор будущего криптоактивов.'
 ---

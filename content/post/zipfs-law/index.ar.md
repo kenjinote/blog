@@ -4,10 +4,7 @@ description: "نتعمق في قانون زيف، القانون الرياضي 
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories:
-  - "الرياضيات"
-  - "علم البيانات"
-  - "اللسانيات"
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "قانون زيف"
   - "قانون القوة"

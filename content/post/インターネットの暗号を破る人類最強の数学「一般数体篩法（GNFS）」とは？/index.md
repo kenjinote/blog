@@ -5,7 +5,7 @@ date: 2026-09-05T02:09:08+09:00
 tags: ["数学", "暗号", "RSA", "GNFS"]
 draft: false
 image: "gnfs_two_worlds_1788542142485.webp"
-categories: ["数学・暗号・量子"]
+categories: ["math-cryptography-quantum"]
 description: 'インターネット通信を守るRSA暗号を打ち破る人類最強の数学「一般数体篩法（GNFS）」の仕組みを解説。専門用語を省き、中学数学の知識だけで理解できる魔法のようなアルゴリズムのカラクリに迫ります。'
 ---
 

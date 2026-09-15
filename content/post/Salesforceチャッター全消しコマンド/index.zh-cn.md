@@ -5,7 +5,7 @@ date: 2022-09-19T21:59:14+09:00
 tags: ["Salesforce", "Chatter"]
 draft: false
 image: "img_1.webp"
-categories: ["IT・技术"]
+categories: ["it-technology"]
 description: '介绍当Salesforce组织存储空间告急时非常实用的命令，可批量删除Chatter所有帖子、附件及回收站数据。这是一种从开发者控制台使用匿名执行窗口进行快速清理的方法。'
 ---
 # Salesforce Chatter 一键清空命令

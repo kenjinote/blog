@@ -5,7 +5,7 @@ date: 2022-10-03T22:47:20+09:00
 tags: ["Rust"]
 draft: false
 image: "img.webp"
-categories: ["编程"]
+categories: ["programming"]
 description: '通俗易懂地解说Mozilla开发的编程语言“Rust”的主要特点。为您介绍其备受青睐的理由，包括运行速度快、无垃圾回收机制、通过所有权与借用实现内存安全，以及跨平台支持等。'
 ---
 # Rust 的特点

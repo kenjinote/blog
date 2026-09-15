@@ -6,9 +6,7 @@ date: '2026-09-10T03:00:00+09:00'
 image: 'img/prisoners_dilemma.jpg'
 math: true
 mermaid: true
-categories:
-  - 'مفارقات رياضية'
-  - 'نظرية الألعاب'
+categories: ["mathematical-paradoxes", "game-theory"]
 tags:
   - 'مفارقة'
   - 'معضلة السجين'

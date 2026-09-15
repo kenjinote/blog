@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Blogging", "SEO", "Hugo"]
+categories: ["blogging", "seo", "hugo"]
 tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: 'Der ultimative Leitfaden zur Beherrschung von Hugo SEO. Wir erklären ausführlich, wie Sie das Frontmatter und head.html anpassen können, um Ihre Zugriffe drastisch zu steigern, von Metadaten über OGP bis hin zu strukturierten JSON-LD-Daten.'
 ---

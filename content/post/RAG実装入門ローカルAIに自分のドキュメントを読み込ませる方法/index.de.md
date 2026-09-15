@@ -5,7 +5,7 @@ date: '2026-09-11T13:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["KI", "LLM", "RAG"]
+categories: ["ai", "llm", "rag"]
 tags: ["RAG", "Vektor-DB", "Embeddings", "Python", "Lokale KI"]
 ---
 

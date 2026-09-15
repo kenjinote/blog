@@ -5,7 +5,7 @@ date: 2024-04-06T11:27:37+09:00
 tags: [ "Visual Studio", "Raccourcis" ]
 draft: false
 image: "img.webp"
-categories: ["Outils et Environnement de développement"]
+categories: ["tools-development-environment"]
 description: 'Compile une liste de raccourcis clavier pratiques pour Visual Studio (VS2022) qui améliorent considérablement l''efficacité du développement. Présente une sélection stricte des raccourcis indispensables souvent utilisés pendant la programmation, comme le débogage, la compilation et les manipulations de signets.'
 ---
 

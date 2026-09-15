@@ -5,7 +5,7 @@ date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["History", "Cryptography"]
+categories: ["history", "cryptography"]
 tags: ["Cryptography", "Security", "History", "PQC"]
 description: '从古代的凯撒密码，到恩尼格玛、公钥密码，再到为应对未来量子计算机威胁而准备的抗量子密码（PQC），我们将全面分析密码技术的宏伟历史与技术演进。'
 ---

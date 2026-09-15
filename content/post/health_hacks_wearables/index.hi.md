@@ -5,7 +5,7 @@ date: "2026-09-12T12:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Health", "Productivity", "Data Science"]
+categories: ["health", "productivity", "data-science"]
 tags: ["Oura Ring", "Wearables", "Python", "Biohacking"]
 description: 'Oura Ring जैसी स्मार्ट रिंग और Apple Watch से प्राप्त HRV, नींद के डेटा और WakaTime द्वारा कोडिंग उत्पादकता का Python और Pandas के साथ सहसंबंध विश्लेषण कर, प्रदर्शन को अधिकतम करने वाली डेटा-संचालित स्वास्थ्य प्रबंधन तकनीक।'
 ---

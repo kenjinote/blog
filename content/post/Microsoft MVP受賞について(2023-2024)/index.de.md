@@ -5,7 +5,7 @@ date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Auszeichnung"]
 draft: false
 image: "img.webp"
-categories: ["Werkzeuge und Entwicklungsumgebung"]
+categories: ["tools-development-environment"]
 description: 'Ein Bericht über die Auszeichnung als Microsoft MVP (2023-2024) in der Kategorie Developer Technologies. Dies ist das siebte Jahr in Folge seit 2017. Ich blicke auf meine bisherige Informationsverbreitung über meinen Technik-Blog und Community-Aktivitäten zurück.'
 ---
 

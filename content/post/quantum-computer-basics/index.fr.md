@@ -4,7 +4,7 @@ slug: "quantum-computer-basics"
 date: 2026-09-05T22:10:00+09:00
 tags: ["Ordinateur quantique", "Physique", "Technologie"]
 image: "quantum_basics_eyecatch_1788613712487.webp"
-categories: ["Mathématiques, Cryptographie et Quantique"]
+categories: ["math-cryptography-quantum"]
 description: 'Explique les bases des ''ordinateurs quantiques'' qui ont le potentiel de dépasser les limites des superordinateurs traditionnels. Démêle de manière professionnelle et compréhensible les mécanismes qui utilisent des phénomènes mystérieux de la mécanique quantique comme la superposition, l''intrication quantique et les portes quantiques pour le calcul.'
 ---
 

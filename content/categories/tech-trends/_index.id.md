@@ -1,0 +1,5 @@
+---
+{
+  "title": "Tren teknologi"
+}
+---

@@ -5,7 +5,7 @@ date: "2026-09-12T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Programming", "System Administration"]
+categories: ["programming", "system-administration"]
 tags: ["PowerShell", "C++", "Windows", "Automation"]
 description: '本文将讲解如何整合PowerShell与C++，以显著提高Windows系统管理效率的实用自动化手法、P/Invoke以及内存管理等内容。'
 ---

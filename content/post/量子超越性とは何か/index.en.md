@@ -5,7 +5,7 @@ date: "2026-09-11T18:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Quantum Computing", "Technology"]
+categories: ["quantum-computing", "technology"]
 tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: "A detailed explanation ranging from the definition of quantum supremacy, the 2019 demonstration experiment by Google's Sycamore processor, IBM's rebuttal and approach, to the latest trends towards error correction and FTQC (Fault-Tolerant Quantum Computing)."
 ---

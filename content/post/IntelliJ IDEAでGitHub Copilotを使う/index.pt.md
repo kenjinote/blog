@@ -5,7 +5,7 @@ date: 2022-09-10T09:44:55+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
-categories: ["Ferramentas e Ambiente de Desenvolvimento"]
+categories: ["tools-development-environment"]
 description: 'Mostramos passo a passo com imagens como instalar e ativar o GitHub Copilot no IntelliJ IDEA. Aproveite a IA para aumentar significativamente a eficiência do seu desenvolvimento.'
 ---
 # Introdução
