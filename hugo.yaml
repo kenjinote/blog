@@ -115,6 +115,8 @@ services:
     # GA Tracking ID
     googleAnalytics:
         id: "GT-5R8HJJC"
+    rss:
+        limit: 20
 
 pagination:
     pagerSize: 20
@@ -357,10 +359,6 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
-services:
-  rss:
-    limit: 20
-
 outputs:
   home:
     - HTML
