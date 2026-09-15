@@ -9,10 +9,6 @@ links:
     description: "منصة تواصل اجتماعي للنصوص القصيرة."
     website: https://x.com
     image: x.svg
-  - title: "Stack"
-    description: "سمة بنمط البطاقات مصممة للمدونين."
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: موقع آخر للكاتب يتناول برمجة Windows باستخدام C/C++.
     website: https://hack.jp/

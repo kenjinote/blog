@@ -9,10 +9,6 @@ links:
     description: "Platform media sosial teks pendek."
     website: https://x.com
     image: x.svg
-  - title: "Stack"
-    description: "Tema bergaya kartu yang dirancang untuk blogger."
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: Situs web lain milik penulis tentang pemrograman Windows dengan C/C++.
     website: https://hack.jp/

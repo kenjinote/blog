@@ -9,10 +9,6 @@ links:
     description: A short-text SNS platform.
     website: https://x.com
     image: x.svg
-  - title: Stack
-    description: Card-style theme designed for bloggers.
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: Another website by the author, covering Windows programming with C/C++.
     website: https://hack.jp/

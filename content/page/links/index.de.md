@@ -9,10 +9,6 @@ links:
     description: Eine Kurztext-SNS-Plattform.
     website: https://x.com
     image: x.svg
-  - title: "Stack"
-    description: Kartendesign-Theme für Blogger.
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: Eine weitere Website des Autors zur Windows-Programmierung mit C/C++.
     website: https://hack.jp/

@@ -9,10 +9,6 @@ links:
     description: "Платформа социальных сетей для коротких текстовых сообщений."
     website: https://x.com
     image: x.svg
-  - title: "Stack"
-    description: "Тема в карточном стиле, разработанная для блогеров."
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: Другой сайт автора о программировании для Windows на C/C++.
     website: https://hack.jp/

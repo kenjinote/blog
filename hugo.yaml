@@ -289,15 +289,31 @@ menu:
     social:
         - identifier: github
           name: GitHub
+          weight: 10
           url: https://github.com/kenjinote
           params:
               icon: brand-github
 
         - identifier: x
           name: X
+          weight: 20
           url: https://x.com/kenjinote
           params:
               icon: brand-x
+
+        - identifier: hack
+          name: hack.jp
+          weight: 30
+          url: https://hack.jp/
+          params:
+              icon: code
+
+        - identifier: microsoft-store
+          name: Microsoft Store — Kenji
+          weight: 40
+          url: https://apps.microsoft.com/search/publisher?name=Kenji
+          params:
+              icon: microsoft-store
 
 related:
     includeNewer: true

@@ -9,10 +9,6 @@ links:
     description: 단문 SNS 플랫폼입니다.
     website: https://x.com
     image: x.svg
-  - title: Stack
-    description: 블로거를 위해 디자인된 카드 스타일 테마입니다.
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: C/C++를 이용한 Windows 프로그래밍을 소개하는 저자의 또 다른 웹사이트입니다.
     website: https://hack.jp/

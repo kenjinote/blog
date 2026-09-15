@@ -9,10 +9,6 @@ links:
     description: Une plateforme de réseau social à textes courts.
     website: https://x.com
     image: x.svg
-  - title: "Stack"
-    description: Thème de style carte conçu pour les blogueurs.
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: Un autre site de Kenji consacré à la programmation Windows en C/C++.
     website: https://hack.jp/

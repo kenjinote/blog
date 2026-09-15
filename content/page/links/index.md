@@ -9,10 +9,6 @@ links:
     description: 短文SNSプラットフォームです。
     website: https://x.com
     image: x.svg
-  - title: Stack
-    description: ブログ向けに設計されたカード型のテーマです。
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: 著者の別サイト。C/C++によるWindowsプログラミングを紹介しています。
     website: https://hack.jp/

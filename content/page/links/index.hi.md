@@ -9,10 +9,6 @@ links:
     description: एक लघु-संदेश SNS मंच।
     website: https://x.com
     image: x.svg
-  - title: "Stack"
-    description: ब्लॉगर्स के लिए डिज़ाइन की गई कार्ड-स्टाइल थीम।
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: लेखक की एक अन्य वेबसाइट, जहाँ C/C++ से Windows प्रोग्रामिंग की जानकारी मिलती है।
     website: https://hack.jp/

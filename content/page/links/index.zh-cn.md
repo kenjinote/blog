@@ -9,10 +9,6 @@ links:
     description: 短文社交网络平台。
     website: https://x.com
     image: x.svg
-  - title: Stack
-    description: 专为博主设计的卡片式主题。
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: 作者的另一个网站，介绍使用C/C++进行Windows编程。
     website: https://hack.jp/

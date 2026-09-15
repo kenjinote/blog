@@ -9,10 +9,6 @@ links:
     description: Uma plataforma de SNS de textos curtos.
     website: https://x.com
     image: x.svg
-  - title: "Stack"
-    description: Tema em estilo de cartão criado para blogueiros.
-    website: https://stack.jimmycai.com/
-    image: stack.webp
   - title: hack.jp
     description: Outro site do autor sobre programação para Windows com C/C++.
     website: https://hack.jp/
