@@ -1,0 +1,74 @@
+{
+  "en": {
+    "font": "DejaVu Sans", "stage_title": "The last type alone takes 10 draws on average", "stage_x": "Types already collected (10 in total)", "stage_y": "Mean draws until the next new type",
+    "completion_title": "After 30 draws, only about 63% have finished", "completion_x": "Number of draws m (10 types)", "completion_y": "Probability of completing the collection by draw m", "point": "{m} draws: {p}", "mean": "Mean: {v} draws",
+    "simulation_title": "Some collections finish quickly; others take much longer", "simulation_x": "Draws to completion (bins of 5; last bin: 100 or more)", "simulation_y": "Proportion in each bin", "empirical": "Simulation (10,000 collections)", "theory": "Theoretical probability in the same bins", "overflow": "100+",
+    "code": ["Theoretical mean (draws)", "Simulated mean (draws)", "Simulated median (draws)", "Completed within 30 draws"], "font_error": "Install a font supporting the chart language.", "model": "Independent uniform draws with replacement"
+  },
+  "es": {
+    "font": "DejaVu Sans", "stage_title": "Solo el último tipo requiere una media de 10 extracciones", "stage_x": "Tipos ya reunidos (10 en total)", "stage_y": "Extracciones medias hasta el siguiente tipo nuevo",
+    "completion_title": "Tras 30 extracciones, solo se completa alrededor del 63 %", "completion_x": "Número de extracciones m (10 tipos)", "completion_y": "Probabilidad de completar la colección en m extracciones", "point": "{m} extracciones: {p}", "mean": "Media: {v} extracciones",
+    "simulation_title": "Algunas colecciones se completan pronto; otras tardan más", "simulation_x": "Extracciones hasta completar (intervalos de 5; último: 100 o más)", "simulation_y": "Proporción en cada intervalo", "empirical": "Simulación (10 000 colecciones)", "theory": "Probabilidad teórica en los mismos intervalos", "overflow": "100 o más",
+    "code": ["Media teórica (extracciones)", "Media simulada (extracciones)", "Mediana simulada (extracciones)", "Completadas en 30 extracciones"], "font_error": "Instala una fuente compatible con el idioma del gráfico.", "model": "Extracciones independientes y equiprobables con reemplazo"
+  },
+  "fr": {
+    "font": "DejaVu Sans", "stage_title": "Le dernier type demande à lui seul 10 tirages en moyenne", "stage_x": "Types déjà obtenus (10 au total)", "stage_y": "Nombre moyen de tirages avant un nouveau type",
+    "completion_title": "Après 30 tirages, environ 63 % des collections sont complètes", "completion_x": "Nombre de tirages m (10 types)", "completion_y": "Probabilité de terminer la collection en m tirages", "point": "{m} tirages : {p}", "mean": "Moyenne : {v} tirages",
+    "simulation_title": "Certaines collections se terminent vite, d’autres beaucoup moins", "simulation_x": "Tirages nécessaires (classes de 5 ; dernière : 100 ou plus)", "simulation_y": "Proportion dans chaque classe", "empirical": "Simulation (10 000 collections)", "theory": "Probabilité théorique dans les mêmes classes", "overflow": "100 ou plus",
+    "code": ["Moyenne théorique (tirages)", "Moyenne simulée (tirages)", "Médiane simulée (tirages)", "Collections terminées en 30 tirages"], "font_error": "Installez une police compatible avec la langue du graphique.", "model": "Tirages indépendants et équiprobables avec remise"
+  },
+  "de": {
+    "font": "DejaVu Sans", "stage_title": "Allein der letzte Typ braucht im Mittel 10 Ziehungen", "stage_x": "Bereits gesammelte Typen (insgesamt 10)", "stage_y": "Mittlere Ziehungen bis zum nächsten neuen Typ",
+    "completion_title": "Nach 30 Ziehungen sind nur etwa 63 % vollständig", "completion_x": "Anzahl der Ziehungen m (10 Typen)", "completion_y": "Wahrscheinlichkeit für Vollständigkeit nach m Ziehungen", "point": "{m} Ziehungen: {p}", "mean": "Mittelwert: {v} Ziehungen",
+    "simulation_title": "Manche Sammlungen sind schnell vollständig, andere erst spät", "simulation_x": "Ziehungen bis zur Vollständigkeit (5er-Gruppen; zuletzt: ab 100)", "simulation_y": "Anteil in jeder Gruppe", "empirical": "Simulation (10.000 Sammlungen)", "theory": "Theoretische Wahrscheinlichkeit je Gruppe", "overflow": "ab 100",
+    "code": ["Theoretischer Mittelwert (Ziehungen)", "Simulierter Mittelwert (Ziehungen)", "Simulierter Median (Ziehungen)", "Vollständig innerhalb von 30 Ziehungen"], "font_error": "Installiere eine Schriftart, die die Diagrammsprache unterstützt.", "model": "Unabhängige gleichverteilte Ziehungen mit Zurücklegen"
+  },
+  "pt": {
+    "font": "DejaVu Sans", "stage_title": "Só o último tipo exige, em média, 10 sorteios", "stage_x": "Tipos já obtidos (10 no total)", "stage_y": "Média de sorteios até o próximo tipo novo",
+    "completion_title": "Após 30 sorteios, apenas cerca de 63% completam a coleção", "completion_x": "Número de sorteios m (10 tipos)", "completion_y": "Probabilidade de completar a coleção em até m sorteios", "point": "{m} sorteios: {p}", "mean": "Média: {v} sorteios",
+    "simulation_title": "Algumas coleções ficam completas cedo; outras demoram mais", "simulation_x": "Sorteios até completar (intervalos de 5; último: 100 ou mais)", "simulation_y": "Proporção em cada intervalo", "empirical": "Simulação (10.000 coleções)", "theory": "Probabilidade teórica nos mesmos intervalos", "overflow": "100 ou mais",
+    "code": ["Média teórica (sorteios)", "Média simulada (sorteios)", "Mediana simulada (sorteios)", "Coleções completas em até 30 sorteios"], "font_error": "Instale uma fonte compatível com o idioma do gráfico.", "model": "Sorteios independentes e equiprováveis com reposição"
+  },
+  "id": {
+    "font": "DejaVu Sans", "stage_title": "Jenis terakhir saja memerlukan rata-rata 10 pengambilan", "stage_x": "Jenis yang sudah terkumpul (total 10)", "stage_y": "Rata-rata pengambilan hingga jenis baru berikutnya",
+    "completion_title": "Setelah 30 pengambilan, hanya sekitar 63% yang lengkap", "completion_x": "Jumlah pengambilan m (10 jenis)", "completion_y": "Peluang koleksi lengkap dalam m pengambilan", "point": "{m} kali: {p}", "mean": "Rata-rata: {v} kali",
+    "simulation_title": "Ada yang cepat lengkap, ada yang harus menunggu lama", "simulation_x": "Pengambilan hingga lengkap (interval 5; terakhir: 100 atau lebih)", "simulation_y": "Proporsi pada setiap interval", "empirical": "Simulasi (10.000 koleksi)", "theory": "Peluang teoretis pada interval yang sama", "overflow": "100 ke atas",
+    "code": ["Rata-rata teoretis (pengambilan)", "Rata-rata simulasi (pengambilan)", "Median simulasi (pengambilan)", "Lengkap dalam 30 pengambilan"], "font_error": "Pasang fon yang mendukung bahasa grafik.", "model": "Pengambilan independen dengan peluang sama dan pengembalian"
+  },
+  "ru": {
+    "font": "DejaVu Sans", "stage_title": "Только последний вид требует в среднем 10 попыток", "stage_x": "Уже собранные виды (всего 10)", "stage_y": "Среднее число попыток до следующего нового вида",
+    "completion_title": "После 30 попыток собрано лишь около 63% коллекций", "completion_x": "Число попыток m (10 видов)", "completion_y": "Вероятность собрать коллекцию за m попыток", "point": "{m} попыток: {p}", "mean": "Среднее: {v} попыток",
+    "simulation_title": "Одни коллекции собираются быстро, другие — гораздо дольше", "simulation_x": "Попытки до завершения (интервалы по 5; последний: от 100)", "simulation_y": "Доля в каждом интервале", "empirical": "Моделирование (10 000 коллекций)", "theory": "Теоретическая вероятность в тех же интервалах", "overflow": "от 100",
+    "code": ["Теоретическое среднее (попытки)", "Среднее в моделировании (попытки)", "Медиана в моделировании (попытки)", "Собрано за 30 попыток"], "font_error": "Установите шрифт с поддержкой языка графика.", "model": "Независимые равновероятные выборки с возвращением"
+  },
+  "ko": {
+    "font": "Malgun Gothic", "stage_title": "마지막 한 종류를 기다리는 데만 평균 10회", "stage_x": "이미 모은 종류 수 (전체 10종류)", "stage_y": "다음 새 종류까지 필요한 평균 횟수",
+    "completion_title": "30번 뽑아도 모두 모을 확률은 약 63%", "completion_x": "뽑기 횟수 m (전체 10종류)", "completion_y": "m회 이내에 모든 종류를 모을 확률", "point": "{m}회: {p}", "mean": "평균 횟수: {v}회",
+    "simulation_title": "금방 모을 때도, 오래 기다릴 때도 있다", "simulation_x": "모두 모을 때까지의 횟수 (5회 단위, 마지막은 100회 이상)", "simulation_y": "각 구간에 속하는 비율", "empirical": "시뮬레이션 (1만 회)", "theory": "같은 구간의 이론 확률", "overflow": "100 이상",
+    "code": ["이론 평균 (회)", "실험 평균 (회)", "실험 중앙값 (회)", "30회 이내 완료 비율"], "font_error": "그래프 언어를 지원하는 글꼴을 설치하세요.", "model": "동일한 확률로 독립적으로 시행하는 복원추출"
+  },
+  "zh-cn": {
+    "font": "Microsoft YaHei", "stage_title": "仅收集最后一种，平均就要抽取10次", "stage_x": "已收集的种类数（共10种）", "stage_y": "获得下一种新卡片所需的平均抽取次数",
+    "completion_title": "抽取30次，集齐概率也只有约63%", "completion_x": "抽取次数 m（共10种）", "completion_y": "在m次以内集齐所有种类的概率", "point": "{m}次：{p}", "mean": "平均次数：{v}次",
+    "simulation_title": "有时很快集齐，有时却要等待很久", "simulation_x": "集齐所需次数（每组5次，最后一组为100次及以上）", "simulation_y": "各组所占比例", "empirical": "模拟实验（1万次）", "theory": "相同分组的理论概率", "overflow": "100及以上",
+    "code": ["理论平均次数", "模拟平均次数", "模拟中位数", "30次以内集齐的比例"], "font_error": "请安装支持图表语言的字体。", "model": "独立、等概率的有放回抽样"
+  },
+  "zh-tw": {
+    "font": "Microsoft JhengHei", "stage_title": "光是收集最後一種，平均就要抽10次", "stage_x": "已收集的種類數（共10種）", "stage_y": "抽到下一種新卡片所需的平均次數",
+    "completion_title": "抽了30次，集滿機率也只有約63%", "completion_x": "抽取次數 m（共10種）", "completion_y": "在m次以內集滿所有種類的機率", "point": "{m}次：{p}", "mean": "平均次數：{v}次",
+    "simulation_title": "有時很快集滿，有時卻得等上許久", "simulation_x": "集滿所需次數（每組5次，最後一組為100次以上）", "simulation_y": "各組所占比例", "empirical": "模擬實驗（1萬次）", "theory": "相同分組的理論機率", "overflow": "100以上",
+    "code": ["理論平均次數", "模擬平均次數", "模擬中位數", "30次以內集滿的比例"], "font_error": "請安裝支援圖表語言的字型。", "model": "獨立、等機率的放回抽樣"
+  },
+  "hi": {
+    "font": "Nirmala UI", "stage_title": "अंतिम प्रकार के लिए ही औसतन 10 बार चुनना पड़ता है", "stage_x": "पहले से मिले प्रकारों की संख्या (कुल 10)", "stage_y": "अगला नया प्रकार मिलने तक औसत चयन संख्या",
+    "completion_title": "30 चयन के बाद भी पूरा होने की संभावना लगभग 63%", "completion_x": "चयन की संख्या m (10 प्रकार)", "completion_y": "m चयन तक संग्रह पूरा होने की संभावना", "point": "{m} चयन: {p}", "mean": "औसत: {v} चयन",
+    "simulation_title": "कुछ संग्रह जल्दी पूरे होते हैं, कुछ में अधिक समय लगता है", "simulation_x": "पूरा होने तक चयन (5 के अंतराल; अंतिम: 100 या अधिक)", "simulation_y": "हर अंतराल में आने वाला अनुपात", "empirical": "सिमुलेशन (10,000 संग्रह)", "theory": "उन्हीं अंतरालों की सैद्धांतिक संभावना", "overflow": "100 या अधिक",
+    "code": ["सैद्धांतिक औसत (चयन)", "सिमुलेशन का औसत (चयन)", "सिमुलेशन की माध्यिका (चयन)", "30 चयन तक पूरे हुए संग्रहों का अनुपात"], "font_error": "ग्राफ़ की भाषा का समर्थन करने वाला फ़ॉन्ट स्थापित करें।", "model": "प्रतिस्थापन के साथ स्वतंत्र और समान संभाव्यता वाले चयन"
+  },
+  "ar": {
+    "font": "Segoe UI", "stage_title": "النوع الأخير وحده يحتاج إلى 10 سحبات في المتوسط", "stage_x": "عدد الأنواع المجموعة (من أصل 10)", "stage_y": "متوسط السحبات حتى ظهور نوع جديد",
+    "completion_title": "بعد 30 سحبة، تكتمل نحو 63% فقط من المجموعات", "completion_x": "عدد السحبات (10 أنواع)", "completion_y": "احتمال اكتمال المجموعة حتى عدد السحبات المحدد", "point": "{m} سحبة: {p}", "mean": "المتوسط: {v} سحبة",
+    "simulation_title": "مجموعات تكتمل بسرعة وأخرى تستغرق وقتًا أطول", "simulation_x": "السحبات حتى الاكتمال (فئات من 5؛ الأخيرة: 100 فأكثر)", "simulation_y": "النسبة في كل فئة", "empirical": "محاكاة 10,000 مجموعة", "theory": "الاحتمال النظري للفئات نفسها", "overflow": "100 فأكثر",
+    "code": ["المتوسط النظري (سحبات)", "متوسط المحاكاة (سحبات)", "وسيط المحاكاة (سحبات)", "نسبة الاكتمال خلال 30 سحبة"], "font_error": "ثبّت خطًا يدعم لغة الرسم البياني.", "model": "سحبات مستقلة متساوية الاحتمال مع الإرجاع"
+  }
+}
