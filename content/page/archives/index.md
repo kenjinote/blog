@@ -5,6 +5,7 @@ layout: "archives"
 slug: "archives"
 menu:
     main:
+        name: アーカイブ
         weight: -70
         params: 
             icon: archives

@@ -10,6 +10,7 @@ license: CC BY-NC-ND
 lastmod: '2024-12-07'
 menu:
   main:
+    name: このブログについて
     weight: -90
     params:
       icon: user

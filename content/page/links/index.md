@@ -15,6 +15,7 @@ links:
     image: stack.webp
 menu:
     main: 
+        name: リンク
         weight: -50
         params:
             icon: link
