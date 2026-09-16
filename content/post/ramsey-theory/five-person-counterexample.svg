@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="451.25146pt" height="510.133086pt" viewBox="0 0 451.25146 510.133086" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-16T20:09:58.393137</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 510.133086
+L 451.25146 510.133086
+L 451.25146 -0
+L 0 -0
+z
+" style="fill: #f8fafc"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 225.62573 106.453086
+L 79.893066 212.334064
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke: #dc3545; stroke-opacity: 0.95; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 225.62573 106.453086
+L 135.55799 383.653086
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #087fc0; stroke-opacity: 0.95; stroke-width: 2"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 225.62573 106.453086
+L 315.69347 383.653086
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #087fc0; stroke-opacity: 0.95; stroke-width: 2"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 225.62573 106.453086
+L 371.358394 212.334064
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke: #dc3545; stroke-opacity: 0.95; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 79.893066 212.334064
+L 135.55799 383.653086
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke: #dc3545; stroke-opacity: 0.95; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 79.893066 212.334064
+L 315.69347 383.653086
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #087fc0; stroke-opacity: 0.95; stroke-width: 2"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 79.893066 212.334064
+L 371.358394 212.334064
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #087fc0; stroke-opacity: 0.95; stroke-width: 2"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 135.55799 383.653086
+L 315.69347 383.653086
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke: #dc3545; stroke-opacity: 0.95; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 135.55799 383.653086
+L 371.358394 212.334064
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #087fc0; stroke-opacity: 0.95; stroke-width: 2"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 315.69347 383.653086
+L 371.358394 212.334064
+" clip-path="url(#pe050dd172a)" style="fill: none; stroke: #dc3545; stroke-opacity: 0.95; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m582b2c1de1" d="M 0 11.18034
+C 2.965061 11.18034 5.80908 10.002309 7.905694 7.905694
+C 10.002309 5.80908 11.18034 2.965061 11.18034 0
+C 11.18034 -2.965061 10.002309 -5.80908 7.905694 -7.905694
+C 5.80908 -10.002309 2.965061 -11.18034 0 -11.18034
+C -2.965061 -11.18034 -5.80908 -10.002309 -7.905694 -7.905694
+C -10.002309 -5.80908 -11.18034 -2.965061 -11.18034 0
+C -11.18034 2.965061 -10.002309 5.80908 -7.905694 7.905694
+C -5.80908 10.002309 -2.965061 11.18034 0 11.18034
+z
+" style="stroke: #182b49"/>
+    </defs>
+    <g clip-path="url(#pe050dd172a)">
+     <use xlink:href="#m582b2c1de1" x="225.62573" y="106.453086" style="fill: #182b49; stroke: #182b49"/>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <g clip-path="url(#pe050dd172a)">
+     <use xlink:href="#m582b2c1de1" x="79.893066" y="212.334064" style="fill: #182b49; stroke: #182b49"/>
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#pe050dd172a)">
+     <use xlink:href="#m582b2c1de1" x="135.55799" y="383.653086" style="fill: #182b49; stroke: #182b49"/>
+    </g>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#pe050dd172a)">
+     <use xlink:href="#m582b2c1de1" x="315.69347" y="383.653086" style="fill: #182b49; stroke: #182b49"/>
+    </g>
+   </g>
+   <g id="PathCollection_5">
+    <g clip-path="url(#pe050dd172a)">
+     <use xlink:href="#m582b2c1de1" x="371.358394" y="212.334064" style="fill: #182b49; stroke: #182b49"/>
+    </g>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="225.62573" y="33.013086" transform="rotate(-0 225.62573 33.013086)">5人なら、単色の三角形を避けられる</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 14px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="225.62573" y="111.744102" transform="rotate(-0 225.62573 111.744102)">A</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="79.893066" y="217.62508" transform="rotate(-0 79.893066 217.62508)">B</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="135.55799" y="388.944102" transform="rotate(-0 135.55799 388.944102)">C</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 14px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="315.69347" y="388.944102" transform="rotate(-0 315.69347 388.944102)">D</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 14px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="371.358394" y="217.62508" transform="rotate(-0 371.358394 217.62508)">E</text>
+   </g>
+  </g>
+  <g id="legend_1">
+   <g id="line2d_11">
+    <path d="M 78.02573 493.668242
+L 90.02573 493.668242
+L 102.02573 493.668242
+" style="fill: none; stroke: #dc3545; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: start" x="111.62573" y="497.868242" transform="rotate(-0 111.62573 497.868242)">赤：五角形の外周</text>
+   </g>
+   <g id="line2d_12">
+    <path d="M 231.62573 493.668242
+L 243.62573 493.668242
+L 255.62573 493.668242
+" style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #087fc0; stroke-width: 3"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: start" x="265.22573" y="497.868242" transform="rotate(-0 265.22573 497.868242)">青：五角形の対角線</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe050dd172a">
+   <rect x="21.6" y="51.013086" width="408.05146" height="388.08"/>
+  </clipPath>
+ </defs>
+</svg>

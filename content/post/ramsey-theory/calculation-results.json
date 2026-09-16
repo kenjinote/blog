@@ -1,0 +1,94 @@
+{
+  "model": "各辺を独立に確率1/2で赤または青にする。頂点にはラベルがある。",
+  "enumeration": [
+    {
+      "n": 3,
+      "edges": 3,
+      "total": 8,
+      "without_triangle": 6,
+      "with_triangle": 2,
+      "probability": 0.25,
+      "minimum": 0,
+      "expected": 0.25,
+      "histogram": {
+        "0": 6,
+        "1": 2
+      }
+    },
+    {
+      "n": 4,
+      "edges": 6,
+      "total": 64,
+      "without_triangle": 18,
+      "with_triangle": 46,
+      "probability": 0.71875,
+      "minimum": 0,
+      "expected": 1.0,
+      "histogram": {
+        "0": 18,
+        "1": 32,
+        "2": 12,
+        "4": 2
+      }
+    },
+    {
+      "n": 5,
+      "edges": 10,
+      "total": 1024,
+      "without_triangle": 12,
+      "with_triangle": 1012,
+      "probability": 0.98828125,
+      "minimum": 0,
+      "expected": 2.5,
+      "histogram": {
+        "0": 12,
+        "1": 260,
+        "2": 270,
+        "3": 300,
+        "4": 100,
+        "5": 60,
+        "7": 20,
+        "10": 2
+      }
+    },
+    {
+      "n": 6,
+      "edges": 15,
+      "total": 32768,
+      "without_triangle": 0,
+      "with_triangle": 32768,
+      "probability": 1.0,
+      "minimum": 2,
+      "expected": 5.0,
+      "histogram": {
+        "2": 1760,
+        "3": 5760,
+        "4": 7500,
+        "5": 6264,
+        "6": 5040,
+        "7": 3360,
+        "8": 1530,
+        "9": 720,
+        "10": 432,
+        "11": 160,
+        "12": 90,
+        "13": 120,
+        "16": 30,
+        "20": 2
+      }
+    }
+  ],
+  "sequence": [
+    4,
+    1,
+    5,
+    2,
+    6,
+    3
+  ],
+  "increasing_indices": [
+    2,
+    4,
+    6
+  ]
+}

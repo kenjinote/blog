@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="646.559375pt" height="429.482188pt" viewBox="0 0 646.559375 429.482188" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-16T20:09:58.475964</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 429.482188
+L 646.559375 429.482188
+L 646.559375 0
+L 0 0
+z
+" style="fill: #f8fafc"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 66.959375 372.882187
+L 624.959375 372.882187
+L 624.959375 40.242188
+L 66.959375 40.242188
+z
+" style="fill: #f8fafc"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m58fd8b473e" d="M 0 0
+L 0 3.5
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m58fd8b473e" x="134.595739" y="372.882187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="134.595739" y="390.417344" transform="rotate(-0 134.595739 390.417344)">3</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m58fd8b473e" x="275.50483" y="372.882187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="275.50483" y="390.417344" transform="rotate(-0 275.50483 390.417344)">4</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m58fd8b473e" x="416.41392" y="372.882187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="416.41392" y="390.417344" transform="rotate(-0 416.41392 390.417344)">5</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m58fd8b473e" x="557.323011" y="372.882187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="557.323011" y="390.417344" transform="rotate(-0 557.323011 390.417344)">6</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="345.959375" y="406.417344" transform="rotate(-0 345.959375 406.417344)">人数（頂点の数）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <path d="M 66.959375 372.882187
+L 624.959375 372.882187
+" clip-path="url(#p79461f973e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <defs>
+       <path id="m6964a5ed66" d="M 0 0
+L -3.5 0
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6964a5ed66" x="66.959375" y="372.882187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: end" x="59.959375" y="378.149766" transform="rotate(-0 59.959375 378.149766)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <path d="M 66.959375 303.582187
+L 624.959375 303.582187
+" clip-path="url(#p79461f973e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m6964a5ed66" x="66.959375" y="303.582187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: end" x="59.959375" y="308.849766" transform="rotate(-0 59.959375 308.849766)">25</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <path d="M 66.959375 234.282187
+L 624.959375 234.282187
+" clip-path="url(#p79461f973e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m6964a5ed66" x="66.959375" y="234.282187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: end" x="59.959375" y="239.549766" transform="rotate(-0 59.959375 239.549766)">50</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_11">
+      <path d="M 66.959375 164.982188
+L 624.959375 164.982188
+" clip-path="url(#p79461f973e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m6964a5ed66" x="66.959375" y="164.982188" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: end" x="59.959375" y="170.249766" transform="rotate(-0 59.959375 170.249766)">75</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_13">
+      <path d="M 66.959375 95.682187
+L 624.959375 95.682187
+" clip-path="url(#p79461f973e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m6964a5ed66" x="66.959375" y="95.682187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: end" x="59.959375" y="100.949766" transform="rotate(-0 59.959375 100.949766)">100</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="32.135156" y="206.562188" transform="rotate(-90 32.135156 206.562188)">単色の三角形がある色分けの割合（%）</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 92.323011 372.882187
+L 176.868466 372.882187
+L 176.868466 303.582187
+L 92.323011 303.582187
+z
+" clip-path="url(#p79461f973e)" style="fill: #94a3b8"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 233.232102 372.882187
+L 317.777557 372.882187
+L 317.777557 173.644688
+L 233.232102 173.644688
+z
+" clip-path="url(#p79461f973e)" style="fill: #94a3b8"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 374.141193 372.882187
+L 458.686648 372.882187
+L 458.686648 98.930625
+L 374.141193 98.930625
+z
+" clip-path="url(#p79461f973e)" style="fill: #94a3b8"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 515.050284 372.882187
+L 599.595739 372.882187
+L 599.595739 95.682187
+L 515.050284 95.682187
+z
+" clip-path="url(#p79461f973e)" style="fill: #087fc0"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 66.959375 372.882187
+L 66.959375 40.242188
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 66.959375 372.882187
+L 624.959375 372.882187
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(111.401989 280.038188)">25.00%</text>
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(124.361989 298.038188)">2/8</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(252.31108 150.100687)">71.88%</text>
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(257.903267 168.100687)">46/64</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(393.22017 75.386625)">98.83%</text>
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(383.820795 93.386625)">1012/1024</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(530.402699 72.138188)">100.00%</text>
+    <text style="font-size: 12px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(517.362074 90.138188)">32768/32768</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 14.4px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="345.959375" y="34.242188" transform="rotate(-0 345.959375 34.242188)">5人では「ほぼ必ず」、6人では例外なく「必ず」</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p79461f973e">
+   <rect x="66.959375" y="40.242188" width="558" height="332.64"/>
+  </clipPath>
+ </defs>
+</svg>
