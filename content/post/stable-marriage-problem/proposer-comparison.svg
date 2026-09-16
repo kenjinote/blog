@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="577.474219pt" height="386.095703pt" viewBox="0 0 577.474219 386.095703" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-16T14:36:09.429581</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 386.095703
+L 577.474219 386.095703
+L 577.474219 0
+L 0 0
+z
+" style="fill: #f8fafc"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 53.674219 318.495703
+L 555.874219 318.495703
+L 555.874219 41.295703
+L 53.674219 41.295703
+z
+" style="fill: #f8fafc"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 76.501491 318.495703
+L 167.810582 318.495703
+L 167.810582 215.829036
+L 76.501491 215.829036
+z
+" clip-path="url(#p647d6a6ab0)" style="fill: #0891b2"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 345.057641 318.495703
+L 436.366732 318.495703
+L 436.366732 113.16237
+L 345.057641 113.16237
+z
+" clip-path="url(#p647d6a6ab0)" style="fill: #0891b2"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 173.181705 318.495703
+L 264.490796 318.495703
+L 264.490796 113.16237
+L 173.181705 113.16237
+z
+" clip-path="url(#p647d6a6ab0)" style="fill: #9333ea"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 441.737855 318.495703
+L 533.046946 318.495703
+L 533.046946 215.829036
+L 441.737855 215.829036
+z
+" clip-path="url(#p647d6a6ab0)" style="fill: #9333ea"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m732cb72e97" d="M 0 0
+L 0 3.5
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m732cb72e97" x="170.496144" y="318.495703" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(127.877472 340.158789)">L側が申し込む</text>
+      <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(138.690831 359.658789)">A–X、B–Y</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m732cb72e97" x="439.052294" y="318.495703" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(395.615028 340.158789)">R側が申し込む</text>
+      <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'" transform="translate(407.246981 359.658789)">A–Y、B–X</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <defs>
+       <path id="m4e3438352a" d="M 0 0
+L -3.5 0
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m4e3438352a" x="53.674219" y="318.495703" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: end" x="46.674219" y="324.202246" transform="rotate(-0 46.674219 324.202246)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m4e3438352a" x="53.674219" y="215.829036" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: end" x="46.674219" y="221.535579" transform="rotate(-0 46.674219 221.535579)">1</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m4e3438352a" x="53.674219" y="113.16237" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: end" x="46.674219" y="118.868913" transform="rotate(-0 46.674219 118.868913)">2</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="33.013086" y="179.895703" transform="rotate(-90 33.013086 179.895703)">平均希望順位（小さいほど上位）</text>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 53.674219 318.495703
+L 53.674219 41.295703
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 53.674219 318.495703
+L 555.874219 318.495703
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="122.156037" y="209.242122" transform="rotate(-0 122.156037 209.242122)">1</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="390.712187" y="106.575456" transform="rotate(-0 390.712187 106.575456)">2</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="218.836251" y="106.575456" transform="rotate(-0 218.836251 106.575456)">2</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="487.392401" y="209.242122" transform="rotate(-0 487.392401 209.242122)">1</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 15.6px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: middle" x="304.774219" y="35.295703" transform="rotate(-0 304.774219 35.295703)">2人ずつの別例：どちらの結果も安定</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_9">
+     <path d="M 187.957656 66.595703
+L 421.590781 66.595703
+Q 423.790781 66.595703 423.790781 64.395703
+L 423.790781 48.995703
+Q 423.790781 46.795703 421.590781 46.795703
+L 187.957656 46.795703
+Q 185.757656 46.795703 185.757656 48.995703
+L 185.757656 64.395703
+Q 185.757656 66.595703 187.957656 66.595703
+z
+" style="fill: #f8fafc; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+    </g>
+    <g id="patch_10">
+     <path d="M 190.157656 60.85293
+L 212.157656 60.85293
+L 212.157656 53.15293
+L 190.157656 53.15293
+z
+" style="fill: #0891b2"/>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 11px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: start" x="220.957656" y="60.85293" transform="rotate(-0 220.957656 60.85293)">L側の平均順位</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 315.081563 60.85293
+L 337.081563 60.85293
+L 337.081563 53.15293
+L 315.081563 53.15293
+z
+" style="fill: #9333ea"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 11px; font-family: 'Meiryo', 'DejaVu Sans'; text-anchor: start" x="345.881563" y="60.85293" transform="rotate(-0 345.881563 60.85293)">R側の平均順位</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p647d6a6ab0">
+   <rect x="53.674219" y="41.295703" width="502.2" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>

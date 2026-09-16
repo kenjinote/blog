@@ -1,0 +1,163 @@
+{
+  "preferences_left": {
+    "A": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "B": [
+      "Y",
+      "Z",
+      "X"
+    ],
+    "C": [
+      "X",
+      "Y",
+      "Z"
+    ]
+  },
+  "preferences_right": {
+    "X": [
+      "A",
+      "C",
+      "B"
+    ],
+    "Y": [
+      "A",
+      "B",
+      "C"
+    ],
+    "Z": [
+      "B",
+      "A",
+      "C"
+    ]
+  },
+  "enumerated": [
+    {
+      "matching": {
+        "A": "X",
+        "B": "Y",
+        "C": "Z"
+      },
+      "left_sum": 5,
+      "right_sum": 6,
+      "total": 11,
+      "blocking_pairs": []
+    },
+    {
+      "matching": {
+        "A": "X",
+        "B": "Z",
+        "C": "Y"
+      },
+      "left_sum": 5,
+      "right_sum": 5,
+      "total": 10,
+      "blocking_pairs": [
+        [
+          "B",
+          "Y"
+        ]
+      ]
+    },
+    {
+      "matching": {
+        "A": "Y",
+        "B": "X",
+        "C": "Z"
+      },
+      "left_sum": 8,
+      "right_sum": 7,
+      "total": 15,
+      "blocking_pairs": [
+        [
+          "A",
+          "X"
+        ],
+        [
+          "B",
+          "Z"
+        ],
+        [
+          "C",
+          "X"
+        ]
+      ]
+    },
+    {
+      "matching": {
+        "A": "Y",
+        "B": "Z",
+        "C": "X"
+      },
+      "left_sum": 5,
+      "right_sum": 4,
+      "total": 9,
+      "blocking_pairs": [
+        [
+          "A",
+          "X"
+        ]
+      ]
+    },
+    {
+      "matching": {
+        "A": "Z",
+        "B": "X",
+        "C": "Y"
+      },
+      "left_sum": 8,
+      "right_sum": 8,
+      "total": 16,
+      "blocking_pairs": [
+        [
+          "A",
+          "X"
+        ],
+        [
+          "A",
+          "Y"
+        ],
+        [
+          "B",
+          "Y"
+        ],
+        [
+          "B",
+          "Z"
+        ],
+        [
+          "C",
+          "X"
+        ]
+      ]
+    },
+    {
+      "matching": {
+        "A": "Z",
+        "B": "Y",
+        "C": "X"
+      },
+      "left_sum": 5,
+      "right_sum": 6,
+      "total": 11,
+      "blocking_pairs": [
+        [
+          "A",
+          "X"
+        ],
+        [
+          "A",
+          "Y"
+        ]
+      ]
+    }
+  ],
+  "algorithm_result": {
+    "A": "X",
+    "B": "Y",
+    "C": "Z"
+  },
+  "proposals": 5
+}
