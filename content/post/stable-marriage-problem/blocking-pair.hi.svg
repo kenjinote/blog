@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="712.8pt" height="395.867812pt" viewBox="0 0 712.8 395.867812" version="1.1" xml:lang="hi">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-09-16T15:13:44.282478</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 395.867812 L 712.8 395.867812 L 712.8 0 L 0 0 z " style="fill: #f8fafc" />
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 128.127273 138.985861 L 584.672727 220.117569 " clip-path="url(#p65bf6be083)" style="fill: none; stroke: #94a3b8; stroke-width: 3; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 128.127273 220.117569 L 584.672727 301.249276 " clip-path="url(#p65bf6be083)" style="fill: none; stroke: #94a3b8; stroke-width: 3; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 128.127273 301.249276 L 584.672727 138.985861 " clip-path="url(#p65bf6be083)" style="fill: none; stroke: #94a3b8; stroke-width: 3; stroke-linecap: square" />
+   </g>
+   <g id="patch_2">
+    <path d="M 163.919165 138.985861 Q 356.402058 138.985861 548.884952 138.985861 " style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #ea580c; stroke-width: 3; stroke-linecap: round" />
+    <path d="M 168.719165 141.385861 L 163.919165 138.985861 L 168.719165 136.585861 " style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #ea580c; stroke-width: 3; stroke-linecap: round" />
+    <path d="M 544.084952 136.585861 L 548.884952 138.985861 L 544.084952 141.385861 " style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #ea580c; stroke-width: 3; stroke-linecap: round" />
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m4cfea86cf8" d="M 0 21.213203 C 5.625807 21.213203 11.021954 18.978047 15 15 C 18.978047 11.021954 21.213203 5.625807 21.213203 0 C 21.213203 -5.625807 18.978047 -11.021954 15 -15 C 11.021954 -18.978047 5.625807 -21.213203 0 -21.213203 C -5.625807 -21.213203 -11.021954 -18.978047 -15 -15 C -18.978047 -11.021954 -21.213203 -5.625807 -21.213203 0 C -21.213203 5.625807 -18.978047 11.021954 -15 15 C -11.021954 18.978047 -5.625807 21.213203 0 21.213203 z " style="stroke: #0891b2" />
+    </defs>
+    <g clip-path="url(#p65bf6be083)">
+     <use xlink:href="#m4cfea86cf8" x="128.127273" y="138.985861" style="fill: #0891b2; stroke: #0891b2" />
+     <use xlink:href="#m4cfea86cf8" x="128.127273" y="220.117569" style="fill: #0891b2; stroke: #0891b2" />
+     <use xlink:href="#m4cfea86cf8" x="128.127273" y="301.249276" style="fill: #0891b2; stroke: #0891b2" />
+    </g>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 22px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="128.127273" y="144.679221" transform="rotate(-0 128.127273 144.679221)">A</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 22px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="128.127273" y="225.810928" transform="rotate(-0 128.127273 225.810928)">B</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 22px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="128.127273" y="306.942635" transform="rotate(-0 128.127273 306.942635)">C</text>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="m32cd94dc58" d="M 0 21.213203 C 5.625807 21.213203 11.021954 18.978047 15 15 C 18.978047 11.021954 21.213203 5.625807 21.213203 0 C 21.213203 -5.625807 18.978047 -11.021954 15 -15 C 11.021954 -18.978047 5.625807 -21.213203 0 -21.213203 C -5.625807 -21.213203 -11.021954 -18.978047 -15 -15 C -18.978047 -11.021954 -21.213203 -5.625807 -21.213203 0 C -21.213203 5.625807 -18.978047 11.021954 -15 15 C -11.021954 18.978047 -5.625807 21.213203 0 21.213203 z " style="stroke: #9333ea" />
+    </defs>
+    <g clip-path="url(#p65bf6be083)">
+     <use xlink:href="#m32cd94dc58" x="584.672727" y="138.985861" style="fill: #9333ea; stroke: #9333ea" />
+     <use xlink:href="#m32cd94dc58" x="584.672727" y="220.117569" style="fill: #9333ea; stroke: #9333ea" />
+     <use xlink:href="#m32cd94dc58" x="584.672727" y="301.249276" style="fill: #9333ea; stroke: #9333ea" />
+    </g>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 22px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="584.672727" y="144.679221" transform="rotate(-0 584.672727 144.679221)">X</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 22px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="584.672727" y="225.810928" transform="rotate(-0 584.672727 225.810928)">Y</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 22px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="584.672727" y="306.942635" transform="rotate(-0 584.672727 306.942635)">Z</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle; fill: #c2410c" x="356.4" y="114.646349" transform="rotate(-0 356.4 114.646349)">A और X वर्तमान साथियों से अधिक एक-दूसरे को पसंद करते हैं</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="128.127273" y="70.02391" transform="rotate(-0 128.127273 70.02391)">पक्ष L</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="584.672727" y="70.02391" transform="rotate(-0 584.672727 70.02391)">पक्ष R</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="356.4" y="349.9283" transform="rotate(-0 356.4 349.9283)">ठोस रेखा: वर्तमान जोड़ी    टूटी रेखा: अवरोधक जोड़ी</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="356.4" y="35.627812" transform="rotate(-0 356.4 35.627812)">यह मिलान अस्थिर क्यों है</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p65bf6be083">
+   <rect x="21.6" y="41.627812" width="669.6" height="332.64" />
+  </clipPath>
+ </defs>
+</svg>

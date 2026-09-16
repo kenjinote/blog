@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="712.8pt" height="391.464062pt" viewBox="0 0 712.8 391.464062" version="1.1" xml:lang="ar">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-09-16T15:13:45.577102</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 391.464062 L 712.8 391.464062 L 712.8 0 L 0 0 z " style="fill: #f8fafc" />
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 128.127273 134.582111 L 584.672727 215.713819 " clip-path="url(#p7a26b3b31a)" style="fill: none; stroke: #94a3b8; stroke-width: 3; stroke-linecap: square" />
+   </g>
+   <g id="line2d_2">
+    <path d="M 128.127273 215.713819 L 584.672727 296.845526 " clip-path="url(#p7a26b3b31a)" style="fill: none; stroke: #94a3b8; stroke-width: 3; stroke-linecap: square" />
+   </g>
+   <g id="line2d_3">
+    <path d="M 128.127273 296.845526 L 584.672727 134.582111 " clip-path="url(#p7a26b3b31a)" style="fill: none; stroke: #94a3b8; stroke-width: 3; stroke-linecap: square" />
+   </g>
+   <g id="patch_2">
+    <path d="M 163.919165 134.582111 Q 356.402058 134.582111 548.884952 134.582111 " style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #ea580c; stroke-width: 3; stroke-linecap: round" />
+    <path d="M 168.719165 136.982111 L 163.919165 134.582111 L 168.719165 132.182111 " style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #ea580c; stroke-width: 3; stroke-linecap: round" />
+    <path d="M 544.084952 132.182111 L 548.884952 134.582111 L 544.084952 136.982111 " style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #ea580c; stroke-width: 3; stroke-linecap: round" />
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mea1ee2d674" d="M 0 21.213203 C 5.625807 21.213203 11.021954 18.978047 15 15 C 18.978047 11.021954 21.213203 5.625807 21.213203 0 C 21.213203 -5.625807 18.978047 -11.021954 15 -15 C 11.021954 -18.978047 5.625807 -21.213203 0 -21.213203 C -5.625807 -21.213203 -11.021954 -18.978047 -15 -15 C -18.978047 -11.021954 -21.213203 -5.625807 -21.213203 0 C -21.213203 5.625807 -18.978047 11.021954 -15 15 C -11.021954 18.978047 -5.625807 21.213203 0 21.213203 z " style="stroke: #0891b2" />
+    </defs>
+    <g clip-path="url(#p7a26b3b31a)">
+     <use xlink:href="#mea1ee2d674" x="128.127273" y="134.582111" style="fill: #0891b2; stroke: #0891b2" />
+     <use xlink:href="#mea1ee2d674" x="128.127273" y="215.713819" style="fill: #0891b2; stroke: #0891b2" />
+     <use xlink:href="#mea1ee2d674" x="128.127273" y="296.845526" style="fill: #0891b2; stroke: #0891b2" />
+    </g>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 22px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="128.127273" y="140.275471" transform="rotate(-0 128.127273 140.275471)">A</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 22px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="128.127273" y="221.407178" transform="rotate(-0 128.127273 221.407178)">B</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 22px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="128.127273" y="302.538885" transform="rotate(-0 128.127273 302.538885)">C</text>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="m5e44e2f44c" d="M 0 21.213203 C 5.625807 21.213203 11.021954 18.978047 15 15 C 18.978047 11.021954 21.213203 5.625807 21.213203 0 C 21.213203 -5.625807 18.978047 -11.021954 15 -15 C 11.021954 -18.978047 5.625807 -21.213203 0 -21.213203 C -5.625807 -21.213203 -11.021954 -18.978047 -15 -15 C -18.978047 -11.021954 -21.213203 -5.625807 -21.213203 0 C -21.213203 5.625807 -18.978047 11.021954 -15 15 C -11.021954 18.978047 -5.625807 21.213203 0 21.213203 z " style="stroke: #9333ea" />
+    </defs>
+    <g clip-path="url(#p7a26b3b31a)">
+     <use xlink:href="#m5e44e2f44c" x="584.672727" y="134.582111" style="fill: #9333ea; stroke: #9333ea" />
+     <use xlink:href="#m5e44e2f44c" x="584.672727" y="215.713819" style="fill: #9333ea; stroke: #9333ea" />
+     <use xlink:href="#m5e44e2f44c" x="584.672727" y="296.845526" style="fill: #9333ea; stroke: #9333ea" />
+    </g>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 22px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="584.672727" y="140.275471" transform="rotate(-0 584.672727 140.275471)">X</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 22px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="584.672727" y="221.407178" transform="rotate(-0 584.672727 221.407178)">Y</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 22px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="584.672727" y="302.538885" transform="rotate(-0 584.672727 302.538885)">Z</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; fill: #c2410c; direction: rtl; unicode-bidi: plaintext" x="356.4" y="110.242599" transform="rotate(-0 356.4 110.242599)">يفضل A وX بعضهما على شريكيهما الحاليين</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; direction: rtl; unicode-bidi: plaintext" x="128.127273" y="65.62016" transform="rotate(-0 128.127273 65.62016)">الطرف L</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; direction: rtl; unicode-bidi: plaintext" x="584.672727" y="65.62016" transform="rotate(-0 584.672727 65.62016)">الطرف R</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; direction: rtl; unicode-bidi: plaintext" x="356.4" y="345.52455" transform="rotate(-0 356.4 345.52455)">خط متصل: الأزواج الحالية    متقطع: الزوج المعطل</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'Segoe UI', 'DejaVu Sans'; text-anchor: middle; direction: rtl; unicode-bidi: plaintext" x="356.4" y="31.224062" transform="rotate(-0 356.4 31.224062)">لماذا هذه المطابقة غير مستقرة؟</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7a26b3b31a">
+   <rect x="21.6" y="37.224062" width="669.6" height="332.64" />
+  </clipPath>
+ </defs>
+</svg>

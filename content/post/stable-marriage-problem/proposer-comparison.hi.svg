@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="745.742891pt" height="377.316016pt" viewBox="0 0 745.742891 377.316016" version="1.1" xml:lang="hi">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-09-16T15:13:44.365033</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 377.316016 L 745.742891 377.316016 L 745.742891 0 L 0 0 z " style="fill: #f8fafc" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 54.542891 318.827813 L 724.142891 318.827813 L 724.142891 41.627813 L 54.542891 41.627813 z " style="fill: #f8fafc" />
+   </g>
+   <g id="patch_3">
+    <path d="M 84.979254 318.827813 L 206.724709 318.827813 L 206.724709 216.161146 L 84.979254 216.161146 z " clip-path="url(#pa028b6e5c3)" style="fill: #0891b2" />
+   </g>
+   <g id="patch_4">
+    <path d="M 443.054121 318.827813 L 564.799575 318.827813 L 564.799575 113.494479 L 443.054121 113.494479 z " clip-path="url(#pa028b6e5c3)" style="fill: #0891b2" />
+   </g>
+   <g id="patch_5">
+    <path d="M 213.886206 318.827813 L 335.631661 318.827813 L 335.631661 113.494479 L 213.886206 113.494479 z " clip-path="url(#pa028b6e5c3)" style="fill: #9333ea" />
+   </g>
+   <g id="patch_6">
+    <path d="M 571.961072 318.827813 L 693.706527 318.827813 L 693.706527 216.161146 L 571.961072 216.161146 z " clip-path="url(#pa028b6e5c3)" style="fill: #9333ea" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m7b76c04f45" d="M 0 0 L 0 3.5 " style="stroke: #000000; stroke-width: 0.8" />
+      </defs>
+      <g>
+       <use xlink:href="#m7b76c04f45" x="210.305457" y="318.827813" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'" transform="translate(175.077957 339.564648)">L प्रस्ताव देता है</text>
+      <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'" transform="translate(186.995457 352.402539)">A–X, B–Y</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m7b76c04f45" x="568.380324" y="318.827813" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'" transform="translate(532.388761 339.564648)">R प्रस्ताव देता है</text>
+      <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'" transform="translate(545.785636 352.402539)">A–Y, B–X</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <defs>
+       <path id="m997449818d" d="M 0 0 L -3.5 0 " style="stroke: #000000; stroke-width: 0.8" />
+      </defs>
+      <g>
+       <use xlink:href="#m997449818d" x="54.542891" y="318.827813" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: end" x="47.542891" y="323.195977" transform="rotate(-0 47.542891 323.195977)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m997449818d" x="54.542891" y="216.161146" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: end" x="47.542891" y="220.52931" transform="rotate(-0 47.542891 220.52931)">1</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m997449818d" x="54.542891" y="113.494479" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: end" x="47.542891" y="117.862643" transform="rotate(-0 47.542891 117.862643)">2</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="34.54875" y="180.227813" transform="rotate(-90 34.54875 180.227813)">औसत पसंद रैंक (कम बेहतर है)</text>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 54.542891 318.827813 L 54.542891 41.627813 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_8">
+    <path d="M 54.542891 318.827813 L 724.142891 318.827813 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="145.851982" y="208.635755" transform="rotate(-0 145.851982 208.635755)">1</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="503.926848" y="105.969089" transform="rotate(-0 503.926848 105.969089)">2</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="274.758933" y="105.969089" transform="rotate(-0 274.758933 105.969089)">2</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="632.8338" y="208.635755" transform="rotate(-0 632.8338 208.635755)">1</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: middle" x="389.342891" y="35.627813" transform="rotate(-0 389.342891 35.627813)">दो-दो लोगों का अलग उदाहरण: दोनों परिणाम स्थिर हैं</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_9">
+     <path d="M 259.138125 70.112441 L 519.547656 70.112441 Q 521.747656 70.112441 521.747656 67.912441 L 521.747656 49.327813 Q 521.747656 47.127813 519.547656 47.127813 L 259.138125 47.127813 Q 256.938125 47.127813 256.938125 49.327813 L 256.938125 67.912441 Q 256.938125 70.112441 259.138125 70.112441 z " style="fill: #f8fafc; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter" />
+    </g>
+    <g id="patch_10">
+     <path d="M 261.338125 63.3975 L 283.338125 63.3975 L 283.338125 55.6975 L 261.338125 55.6975 z " style="fill: #0891b2" />
+    </g>
+    <g id="text_12">
+     <text style="font-size: 11px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: start" x="292.138125" y="63.3975" transform="rotate(-0 292.138125 63.3975)">पक्ष L की औसत रैंक</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 399.6425 63.3975 L 421.6425 63.3975 L 421.6425 55.6975 L 399.6425 55.6975 z " style="fill: #9333ea" />
+    </g>
+    <g id="text_13">
+     <text style="font-size: 11px; font-family: 'Nirmala UI', 'DejaVu Sans'; text-anchor: start" x="430.4425" y="63.3975" transform="rotate(-0 430.4425 63.3975)">पक्ष R की औसत रैंक</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa028b6e5c3">
+   <rect x="54.542891" y="41.627813" width="669.6" height="277.2" />
+  </clipPath>
+ </defs>
+</svg>
