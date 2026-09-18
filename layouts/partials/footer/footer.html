@@ -19,5 +19,7 @@
 
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
+        <br />
+        <a href="{{ "privacy/" | relLangURL }}" style="font-size: 0.8em; opacity: 0.7;">Privacy Policy</a>
     </section>
 </footer>
