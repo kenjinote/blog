@@ -72,3 +72,7 @@ footer:
         
     designedBy:
         other:  "قالب {{ .Theme }} مصمم من {{ .DesignedBy }}"
+
+footer.privacyPolicy:
+  other: "سياسة الخصوصية"
+

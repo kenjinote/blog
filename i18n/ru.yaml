@@ -64,3 +64,7 @@ footer:
         other: Создано при помощи {{ .Generator }}
     designedBy:
         other: Тема {{ .Theme }}, дизайн {{ .DesignedBy }}
+
+footer.privacyPolicy:
+  other: "Политика конфиденциальности"
+

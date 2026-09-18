@@ -70,3 +70,7 @@ footer:
         other: "{{ .Generator }}로 만듦"
     designedBy:
         other: "{{ .DesignedBy }}의 {{ .Theme }} 테마 사용 중"
+
+footer.privacyPolicy:
+  other: "개인정보처리방침"
+

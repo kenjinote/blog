@@ -68,3 +68,7 @@ footer:
 
     designedBy:
         other: テーマ {{ .Theme }} は {{ .DesignedBy }} によって設計されています。
+
+footer.privacyPolicy:
+  other: "プライバシーポリシー"
+

@@ -71,3 +71,7 @@ footer:
 
     designedBy:
         other: Tema {{ .Theme }} dirancang oleh {{ .DesignedBy }}
+
+footer.privacyPolicy:
+  other: "Kebijakan Privasi"
+

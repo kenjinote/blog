@@ -65,3 +65,7 @@ footer:
 
     designedBy:
         other: 主题 {{ .Theme }} 由 {{ .DesignedBy }} 设计
+
+footer.privacyPolicy:
+  other: "隐私政策"
+

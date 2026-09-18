@@ -71,3 +71,7 @@ footer:
 
     designedBy:
         other: 主題 {{ .Theme }} 由 {{ .DesignedBy }} 設計
+
+footer.privacyPolicy:
+  other: "隱私權政策"
+

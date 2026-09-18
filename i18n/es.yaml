@@ -71,3 +71,7 @@ footer:
 
     designedBy:
         other: Tema {{ .Theme }} diseñado por {{ .DesignedBy }}
+
+footer.privacyPolicy:
+  other: "Política de Privacidad"
+

@@ -70,3 +70,7 @@ footer:
 
     designedBy:
         other: Thème {{ .Theme }} conçu par {{ .DesignedBy }}
+
+footer.privacyPolicy:
+  other: "Politique de confidentialité"
+

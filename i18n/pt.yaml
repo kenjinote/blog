@@ -65,3 +65,7 @@ footer:
         other: Criado com {{ .Generator }}
     designedBy:
         other: Tema {{ .Theme }} desenvolvido por {{ .DesignedBy }}
+
+footer.privacyPolicy:
+  other: "Política de Privacidade"
+
