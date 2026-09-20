@@ -136,7 +136,7 @@ $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 Isso significa que, para um comprimento de bit $n$, a complexidade computacional é **$\mathcal{O}(2^{n/2})$**. Em outras palavras, a divisão por tentativa é um **"algoritmo de tempo exponencial puro"** em relação a $n$.
 Para cada aumento de 1 bit (o número dobra), o tempo de computação é multiplicado por aproximadamente $\sqrt{2} \approx 1.414$. Se $N$ for um número que excede 1024 bits (cerca de 300 dígitos decimais), os cálculos não terminariam nem mesmo se o tempo gasto equivalesse à idade do universo.
 
-## 2. Método de Fatoração de Fermat (Fermat's Factorization Method)
+## 2. Método de Fatoração de [Fermat](https://kenji.blog/pt/p/fermat/) ([Fermat](https://kenji.blog/pt/p/fermat/)'s Factorization Method)
 
 Este é um método concebido pelo matemático do século 17, [Pierre de Fermat](https://kenji.blog/pt/p/fermat/). Dado um número composto ímpar $N$, ele tenta expressar $N$ como a diferença de dois quadrados perfeitos.
 
@@ -169,8 +169,8 @@ Em comparação com $\mathcal{O}(2^{n/2})$ da divisão por tentativa, houve uma 
 
 ## 4. Crivo Quadrático de Múltiplos Polinômios (MPQS: Multiple Polynomial Quadratic Sieve)
 
-Na década de 1980, Carl Pomerance inventou o "Crivo Quadrático (Quadratic Sieve: QS)". É uma extensão do conceito de "diferença de quadrados" de Fermat.
-O método de Fermat procurava diretamente por $x^2 - y^2 = N$, mas o crivo quadrático busca uma condição mais branda.
+Na década de 1980, Carl Pomerance inventou o "Crivo Quadrático (Quadratic Sieve: QS)". É uma extensão do conceito de "diferença de quadrados" de [Fermat](https://kenji.blog/pt/p/fermat/).
+O método de [Fermat](https://kenji.blog/pt/p/fermat/) procurava diretamente por $x^2 - y^2 = N$, mas o crivo quadrático busca uma condição mais branda.
 
 $$ x^2 \equiv y^2 \pmod N $$
 e

@@ -30,15 +30,15 @@ $$
 x^n + y^n = z^n \quad (\text{di mana } n \ge 3 \text{ adalah bilangan bulat})
 $$
 
-Ini menyatakan bahwa tidak ada solusi bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini. Ketika $n = 2$, ini terkenal sebagai teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/), dan ada solusi yang tak terbatas (triple [Pythagoras](https://kenji.blog/id/p/pythagoras/)). Namun, Fermat mengklaim bahwa ketika $n$ adalah 3 atau lebih besar, itu tidak pernah berlaku.
+Ini menyatakan bahwa tidak ada solusi bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini. Ketika $n = 2$, ini terkenal sebagai teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/), dan ada solusi yang tak terbatas (triple [Pythagoras](https://kenji.blog/id/p/pythagoras/)). Namun, [Fermat](https://kenji.blog/id/p/fermat/) mengklaim bahwa ketika $n$ adalah 3 atau lebih besar, itu tidak pernah berlaku.
 
-Meskipun proposisi tersebut tampaknya dapat dipahami bahkan oleh siswa sekolah menengah, itu menolak bukti lengkap bahkan oleh matematikawan jenius yang meninggalkan jejak mereka dalam sejarah, seperti Euler, Sophie Germain, dan Kummer.
+Meskipun proposisi tersebut tampaknya dapat dipahami bahkan oleh siswa sekolah menengah, itu menolak bukti lengkap bahkan oleh matematikawan jenius yang meninggalkan jejak mereka dalam sejarah, seperti Euler, Sophie Germain, dan [Kummer](https://kenji.blog/id/p/kummer/).
 
 ## Jembatan Antara Kurva Eliptik dan Bentuk Modular: Dugaan Taniyama-Shimura
 
 Pada tahun 1980-an, ketika Wiles telah memajukan penelitiannya di Cambridge dan Oxford dan akhirnya menjadi profesor di Universitas Princeton di Amerika Serikat, pendekatan yang sama sekali baru untuk memecahkan [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) muncul di dunia matematika. Itu adalah hubungan dengan "Dugaan Taniyama-Shimura."
 
-Dugaan Taniyama-Shimura adalah dugaan matematika yang mendalam yang menyatakan bahwa "semua kurva eliptik di atas bidang bilangan rasional adalah modular," yang sekilas tampak tidak terkait dengan Teorema Fermat. Namun, pada tahun 1984, Gerhard Frey mengusulkan gagasan bahwa "jika [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) salah (artinya ada solusi), kurva eliptik khusus yang dibuat darinya (kurva Frey) tidak akan modular, sehingga bertentangan dengan dugaan Taniyama-Shimura."
+Dugaan Taniyama-Shimura adalah dugaan matematika yang mendalam yang menyatakan bahwa "semua kurva eliptik di atas bidang bilangan rasional adalah modular," yang sekilas tampak tidak terkait dengan Teorema [Fermat](https://kenji.blog/id/p/fermat/). Namun, pada tahun 1984, Gerhard Frey mengusulkan gagasan bahwa "jika [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) salah (artinya ada solusi), kurva eliptik khusus yang dibuat darinya (kurva Frey) tidak akan modular, sehingga bertentangan dengan dugaan Taniyama-Shimura."
 
 Situasi berubah drastis pada tahun 1986 ketika Ken Ribet membuktikan gagasan Frey dengan ketat (Teorema Ribet). Dengan kata lain, fakta menakjubkan ditetapkan bahwa "jika Anda membuktikan dugaan Taniyama-Shimura, [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) otomatis terbukti."
 
@@ -63,7 +63,7 @@ Selama tujuh tahun yang menakjubkan, Wiles menghabiskan semua sisa waktunya berp
 
 ## Pengumuman Bersejarah di Cambridge
 
-Pada Juni 1993, pada konferensi teori bilangan internasional yang diadakan di Institut Newton Universitas Cambridge, Wiles akhirnya mempresentasikan hasilnya. Konferensi berlangsung selama tiga hari, dan kuliahnya memiliki judul yang tampaknya sederhana, "Bentuk Modular, Kurva Eliptik, dan Representasi Galois."
+Pada Juni 1993, pada konferensi teori bilangan internasional yang diadakan di Institut Newton Universitas Cambridge, Wiles akhirnya mempresentasikan hasilnya. Konferensi berlangsung selama tiga hari, dan kuliahnya memiliki judul yang tampaknya sederhana, "Bentuk Modular, Kurva Eliptik, dan Representasi [Galois](https://kenji.blog/id/p/galois/)."
 
 Namun, seiring berjalannya kuliah, ahli matematika di antara hadirin mulai menyadari apa yang dia coba buktikan. Suasana di dalam ruangan berangsur-angsur memanas, dan pada kuliah hari terakhir, kerumunan yang meluap menyerbu masuk.
 
@@ -95,7 +95,7 @@ Bukti Wiles tentang [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-la
 
 Buktinya menunjukkan bahwa dugaan Taniyama-Shimura (dalam kasus semistabil) adalah benar, menetapkan bahwa bidang teori bilangan yang sama sekali berbeda (bentuk modular dan kurva eliptik) terhubung pada tingkat yang dalam. Belakangan, pada tahun 2001, matematikawan lain mencapai bukti lengkap dari seluruh dugaan Taniyama-Shimura.
 
-Atas pencapaian ini, Wiles menerima banyak penghargaan bergengsi, termasuk penghormatan khusus Medali Fields dan Hadiah Abel, dan dianugerahi gelar kebangsawanan (Sir) oleh keluarga kerajaan Inggris.
+Atas pencapaian ini, Wiles menerima banyak penghargaan bergengsi, termasuk penghormatan khusus Medali Fields dan Hadiah [Abel](https://kenji.blog/id/p/abel/), dan dianugerahi gelar kebangsawanan (Sir) oleh keluarga kerajaan Inggris.
 
 ## Kesimpulan
 

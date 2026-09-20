@@ -24,13 +24,13 @@ Sa création de la « Théorie des ensembles » est devenue le fondement de tous
 
 [Georg Cantor](https://kenji.blog/fr/p/cantor/) est né en 1845 à Saint-Pétersbourg, en Russie. Son père était un riche marchand originaire du Danemark et sa mère une musicienne russe. Faisant preuve d'un talent extraordinaire pour les mathématiques dès son plus jeune âge, il s'installe finalement en Allemagne et étudie les mathématiques à l'Université de Berlin.
 
-À l'Université de Berlin, il fut guidé par les figures de proue du monde mathématique de l'époque, **[Karl Weierstrass](https://kenji.blog/fr/p/weierstrass/)** et **Leopold Kronecker**. Kronecker, en particulier, deviendra plus tard le plus grand adversaire de Cantor.
+À l'Université de Berlin, il fut guidé par les figures de proue du monde mathématique de l'époque, **[Karl Weierstrass](https://kenji.blog/fr/p/weierstrass/)** et **Leopold [Kronecker](https://kenji.blog/fr/p/kronecker/)**. [Kronecker](https://kenji.blog/fr/p/kronecker/), en particulier, deviendra plus tard le plus grand adversaire de Cantor.
 
-### La quête de l'infini et le conflit avec Kronecker
+### La quête de l'infini et le conflit avec [Kronecker](https://kenji.blog/fr/p/kronecker/)
 
 Lorsque Cantor a fait progresser ses recherches sur la théorie des ensembles et publié la théorie révolutionnaire selon laquelle « il existe différentes hiérarchies à la taille de l'infini », une violente controverse a éclaté dans le monde mathématique.
 
-Kronecker, convaincu que « Dieu a fait les nombres entiers, tout le reste est l'œuvre de l'homme », a farouchement critiqué la théorie de Cantor. En raison de l'obstruction de Kronecker, Cantor n'a pas pu atteindre son objectif d'obtenir un poste de professeur à l'Université de Berlin et a passé sa vie à l'Université provinciale de Halle.
+[Kronecker](https://kenji.blog/fr/p/kronecker/), convaincu que « Dieu a fait les nombres entiers, tout le reste est l'œuvre de l'homme », a farouchement critiqué la théorie de Cantor. En raison de l'obstruction de [Kronecker](https://kenji.blog/fr/p/kronecker/), Cantor n'a pas pu atteindre son objectif d'obtenir un poste de professeur à l'Université de Berlin et a passé sa vie à l'Université provinciale de Halle.
 
 ```mermaid
 graph TD
@@ -44,7 +44,7 @@ graph TD
 
 Le fait que sa théorie n'ait pas été comprise et qu'il ait continué à subir les attaques incessantes de son ancien professeur a profondément miné la santé mentale de Cantor. Il a développé une dépression et a multiplié les allers-retours dans les hôpitaux psychiatriques.
 
-Cependant, sa théorie a progressivement été soutenue par les jeunes générations de mathématiciens, tels que **[David Hilbert](https://kenji.blog/fr/p/hilbert/)**. Hilbert a fait l'éloge de Cantor avec les plus grands compliments, déclarant : « Nul ne nous chassera du paradis que Cantor a créé pour nous. » Cantor a terminé sa vie dans un hôpital psychiatrique de Halle en 1918, mais après sa mort, la théorie des ensembles a établi une position inébranlable en tant que fondement le plus important des mathématiques.
+Cependant, sa théorie a progressivement été soutenue par les jeunes générations de mathématiciens, tels que **[David Hilbert](https://kenji.blog/fr/p/hilbert/)**. [Hilbert](https://kenji.blog/fr/p/hilbert/) a fait l'éloge de Cantor avec les plus grands compliments, déclarant : « Nul ne nous chassera du paradis que Cantor a créé pour nous. » Cantor a terminé sa vie dans un hôpital psychiatrique de Halle en 1918, mais après sa mort, la théorie des ensembles a établi une position inébranlable en tant que fondement le plus important des mathématiques.
 
 ## Réalisations mathématiques : Compter l'infini
 

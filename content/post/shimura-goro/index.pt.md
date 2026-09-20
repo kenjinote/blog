@@ -10,7 +10,7 @@ tags: ["Goro Shimura", "Teoria dos Números", "Conjectura de Taniyama-Shimura", 
 
 ## 1. Introdução: Um Gigante da Teoria dos Números, [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/)
 
-Na história da matemática moderna, há um matemático japonês que teve um impacto decisivo no campo da geometria aritmética. Seu nome é **[Goro Shimura](https://kenji.blog/pt/p/shimura-goro/)** (1930 - 2019). Suas conquistas são imensuráveis, tendo proposto a "Conjectura de Taniyama-Shimura" (agora conhecida como Teorema da Modularidade), que mais tarde se tornou a maior chave para a prova do "Último Teorema de Fermat", e construindo as "variedades de Shimura", um objeto extremamente importante na moderna teoria dos números.
+Na história da matemática moderna, há um matemático japonês que teve um impacto decisivo no campo da geometria aritmética. Seu nome é **[Goro Shimura](https://kenji.blog/pt/p/shimura-goro/)** (1930 - 2019). Suas conquistas são imensuráveis, tendo proposto a "Conjectura de Taniyama-Shimura" (agora conhecida como Teorema da Modularidade), que mais tarde se tornou a maior chave para a prova do "Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)", e construindo as "variedades de Shimura", um objeto extremamente importante na moderna teoria dos números.
 
 Neste artigo, ao relembrar a vida de [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/), um matemático solitário, nos aprofundaremos nas conquistas monumentais que ele estabeleceu no mundo matemático, e a feroz filosofia e estética por trás delas. Não é exagero dizer que entender suas conquistas é sinônimo de entender como a matemática se desenvolveu no final do século XX.
 
@@ -24,7 +24,7 @@ Segundo o seu livro "The Map of My Life", lia livros de matemática avançada po
 
 ### 2.2 Dias na Universidade de Tóquio
 
-Em 1949, Shimura ingressou no Departamento de Matemática, Faculdade de Ciências, da Universidade de Tóquio. Na época, a comunidade matemática japonesa, embora baseada na teoria dos corpos de classes de Teiji Takagi e outros, enfrentava o desafio de como se atualizar com as tendências globais durante o período de reconstrução do pós-guerra. Lá, Shimura conheceu **[Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/)**, com quem mais tarde faria uma profunda amizade e compartilharia um destino comum.
+Em 1949, Shimura ingressou no Departamento de Matemática, Faculdade de Ciências, da Universidade de Tóquio. Na época, a comunidade matemática japonesa, embora baseada na teoria dos corpos de classes de Teiji [Takagi](https://kenji.blog/pt/p/takagi-teiji/) e outros, enfrentava o desafio de como se atualizar com as tendências globais durante o período de reconstrução do pós-guerra. Lá, Shimura conheceu **[Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/)**, com quem mais tarde faria uma profunda amizade e compartilharia um destino comum.
 
 Taniyama era um gênio da matemática com ideias intuitivas e desinibidas, enquanto Shimura era um perfeccionista que valorizava o rigor e nunca permitia concessões nos detalhes da lógica. O encontro dessas duas figuras contrastantes acabaria por dar origem à semente de uma teoria massiva que abalaria o mundo matemático.
 
@@ -85,25 +85,25 @@ Em 1958, quando a construção da teoria começava a sério, ocorreu uma tragéd
 
 Para Shimura, a dor de perder Taniyama, o seu melhor entendedor e colaborador, era imensurável. No entanto, Shimura superou a dor e abrigou um forte senso de missão para provar as ideias inacabadas que Taniyama deixou para trás com as suas próprias mãos e fazer com que o mundo as reconhecesse. Mais tarde, Shimura mudou-se para os Estados Unidos, continuando as suas pesquisas na Universidade de Princeton e noutros lugares, ao mesmo tempo em que formulava esta conjectura numa forma mais precisa e elevava o seu perfil internacional. Por causa disso, a conjectura passou a ser chamada de "Conjectura de Taniyama-Shimura".
 
-## 5. O Caminho para o Último Teorema de Fermat
+## 5. O Caminho para o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)
 
 ### 5.1 A Ideia de Frey e a Prova de Ribet
 
-O tempo passou e, na década de 1980, a Conjectura de Taniyama-Shimura tornou-se dramaticamente ligada ao "Último Teorema de Fermat". Em 1984, Gerhard Frey mostrou que se assumirmos que um contraexemplo $a^n + b^n = c^n$ ao Último Teorema de Fermat existe, uma estranha curva elíptica (curva de Frey) poderia ser construída a partir dele.
+O tempo passou e, na década de 1980, a Conjectura de Taniyama-Shimura tornou-se dramaticamente ligada ao "Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)". Em 1984, Gerhard Frey mostrou que se assumirmos que um contraexemplo $a^n + b^n = c^n$ ao Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) existe, uma estranha curva elíptica (curva de Frey) poderia ser construída a partir dele.
 
 $$
 y^2 = x(x - a^n)(x + b^n)
 $$
 
-Frey conjeturou que, por esta curva ter propriedades extraordinariamente anormais, ela **não pode ser modular** (o que significa que não satisfaz a Conjectura de Taniyama-Shimura). Se isso fosse verdade, significaria que "se a Conjectura de Taniyama-Shimura for provada, o Último Teorema de Fermat também estará provado".
+Frey conjeturou que, por esta curva ter propriedades extraordinariamente anormais, ela **não pode ser modular** (o que significa que não satisfaz a Conjectura de Taniyama-Shimura). Se isso fosse verdade, significaria que "se a Conjectura de Taniyama-Shimura for provada, o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) também estará provado".
 
-Em 1986, Ken Ribet provou completamente a conjectura de Frey (a conjectura epsilon). Com isso, o Último Teorema de Fermat, que estava sem solução há 350 anos, foi completamente reduzido ao problema de provar a Conjectura de Taniyama-Shimura.
+Em 1986, Ken Ribet provou completamente a conjectura de Frey (a conjectura epsilon). Com isso, o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), que estava sem solução há 350 anos, foi completamente reduzido ao problema de provar a Conjectura de Taniyama-Shimura.
 
 ### 5.2 A Prova por [Andrew Wiles](https://kenji.blog/pt/p/wiles/)
 
 Aquele que se levantou ao ouvir esta notícia foi o matemático britânico **[Andrew Wiles](https://kenji.blog/pt/p/wiles/)**. Após sete anos de pesquisa secreta, ele anunciou uma prova da Conjectura de Taniyama-Shimura para curvas elípticas semiestáveis em 1993. Ao longo do caminho, houve uma crise onde uma falha crítica foi encontrada na prova, mas com a ajuda do seu ex-aluno Richard Taylor, foi completamente corrigida em 1994.
 
-A prova de Wiles (de uma parte) da Conjectura de Taniyama-Shimura significou uma prova completa do Último Teorema de Fermat. Foi um dos maiores dramas da história da matemática.
+A prova de Wiles (de uma parte) da Conjectura de Taniyama-Shimura significou uma prova completa do Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/). Foi um dos maiores dramas da história da matemática.
 
 ### 5.3 A Reação de Shimura: "Eu avisei"
 
@@ -119,13 +119,13 @@ Embora frequentemente ofuscada pela Conjectura de Taniyama-Shimura, o que solidi
 
 ### 6.1 Teoria da Multiplicação Complexa de Dimensões Superiores
 
-O matemático do século XIX Kronecker mostrou que todas as extensões abelianas de um corpo quadrático imaginário podem ser construídas usando os pontos de divisão de curvas elípticas com multiplicação complexa (o Jugendtraum de Kronecker). Shimura empreendeu um grande projeto para generalizar isso para variedades abelianas de dimensões superiores.
+O matemático do século XIX [Kronecker](https://kenji.blog/pt/p/kronecker/) mostrou que todas as extensões abelianas de um corpo quadrático imaginário podem ser construídas usando os pontos de divisão de curvas elípticas com multiplicação complexa (o Jugendtraum de [Kronecker](https://kenji.blog/pt/p/kronecker/)). Shimura empreendeu um grande projeto para generalizar isso para variedades abelianas de dimensões superiores.
 
 Ele construiu objetos geométricos massivos que são análogos de dimensões superiores a curvas modulares, usando grupos algébricos redutivos e domínios simétricos hermitianos. Estas são as "variedades de Shimura". As variedades de Shimura possuem estruturas extremamente ricas onde a teoria dos números, a geometria algébrica e a teoria das representações se cruzam.
 
 ### 6.2 A Posição das Variedades de Shimura na Matemática Moderna
 
-Hoje, as variedades de Shimura desempenham um papel central no "Programa de Langlands" proposto por Robert Langlands. Neste grandioso programa que conecta representações de grupos de Galois com representações automórficas, as variedades de Shimura são o palco indispensável para realizar geometricamente essa correspondência. A visão de Shimura também é provada pelo fato de que a teoria que ele construiu se tornou a base para o desenvolvimento da matemática décadas depois.
+Hoje, as variedades de Shimura desempenham um papel central no "Programa de Langlands" proposto por Robert Langlands. Neste grandioso programa que conecta representações de grupos de [Galois](https://kenji.blog/pt/p/galois/) com representações automórficas, as variedades de Shimura são o palco indispensável para realizar geometricamente essa correspondência. A visão de Shimura também é provada pelo fato de que a teoria que ele construiu se tornou a base para o desenvolvimento da matemática décadas depois.
 
 ## 7. A Verdadeira Face de um Matemático Solitário: Sua Filosofia e Estética
 

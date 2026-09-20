@@ -70,7 +70,7 @@ Plus le nombre d'essais `num_samples` est élevé, plus la valeur de $\pi$ obten
 C'est un algorithme permettant de déterminer très rapidement si un nombre géant est premier. Lors de la génération de clés dans la cryptographie RSA, on a besoin de nombres premiers longs de centaines de chiffres. S'y atteler avec la division par essais déterministe (en divisant successivement par $2, 3, 5, \dots$) prendrait plus de temps que l'âge de l'univers.
 
 C'est là qu'intervient le **test de primalité de Miller-Rabin**, qui utilise la méthode de Monte-Carlo.
-Pour vérifier si un nombre $n$ est premier, on choisit une base aléatoire $a$ et on vérifie si une condition spécifique basée sur une extension du petit théorème de Fermat est satisfaite.
+Pour vérifier si un nombre $n$ est premier, on choisit une base aléatoire $a$ et on vérifie si une condition spécifique basée sur une extension du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est satisfaite.
 
 Si un test détermine qu'il « est composé », alors le nombre est assurément composé. Mais s'il détermine qu'il est « peut-être premier », il y a un risque maximal de $\frac{1}{4}$ que ce soit un faux positif (le nombre est composé mais évalué comme premier).
 

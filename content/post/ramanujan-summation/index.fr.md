@@ -130,15 +130,15 @@ C'est ainsi qu'a été dérivée l'étonnante équation **$1 + 2 + 3 + 4 + \dots
 
 ---
 
-## 3. Prolongement analytique et fonction zêta de Riemann
+## 3. Prolongement analytique et fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/)
 
 De telles opérations algébriques peuvent sembler, à première vue, n'être qu'un simple tour de passe-passe ou un sophisme. Appliquer sans condition les opérations arithmétiques habituelles aux séries divergentes n'est pas permis dans les mathématiques rigoureuses.
 
 Cependant, ce résultat n'est en aucun cas dénué de sens. Dans les mathématiques modernes, cela peut être corroboré en utilisant le concept rigoureux de **prolongement analytique (Analytic Continuation)**.
 
-### La fonction zêta de Riemann
+### La fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/)
 
-Pour expliquer le prolongement analytique, nous introduisons la **fonction zêta de Riemann** $\zeta(s)$. La fonction zêta est définie comme suit :
+Pour expliquer le prolongement analytique, nous introduisons la **fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/)** $\zeta(s)$. La fonction zêta est définie comme suit :
 
 $$
 \zeta(s) = 1^{-s} + 2^{-s} + 3^{-s} + 4^{-s} + \dots = \sum_{n=1}^{\infty} \frac{1}{n^s}
@@ -167,7 +167,7 @@ graph TD
     C --> D["ζ(-1) = -1/12"]
 ```
 
-Riemann a prouvé que la fonction zêta peut être étendue de manière unique à l'ensemble du plan complexe (à l'exception du pôle en $s=1$). Si l'on calcule la valeur pour $s = -1$ dans la fonction zêta étendue, on découvre remarquablement que le résultat est **$-\frac{1}{12}$**.
+[Riemann](https://kenji.blog/fr/p/riemann/) a prouvé que la fonction zêta peut être étendue de manière unique à l'ensemble du plan complexe (à l'exception du pôle en $s=1$). Si l'on calcule la valeur pour $s = -1$ dans la fonction zêta étendue, on découvre remarquablement que le résultat est **$-\frac{1}{12}$**.
 
 En d'autres termes, l'équation « $1+2+3+... = -1/12$ » n'est pas justifiée comme une « somme au sens habituel », mais comme une « valeur au sens du prolongement analytique via la fonction zêta ».
 

@@ -136,11 +136,11 @@ If $n$ is a prime number $p$, then $\phi(p) = p - 1$, so this becomes [Fermat's 
 
 ---
 
-## 5. Finding Giant Prime Numbers: Fermat Primality Test
+## 5. Finding Giant Prime Numbers: [Fermat](https://kenji.blog/en/p/fermat/) Primality Test
 
 In cryptographic technologies (such as RSA cryptography and Diffie-Hellman key exchange), it is necessary to find "giant prime numbers" spanning hundreds of digits at high speed. However, to test whether a giant number $N$ is prime, checking if it is divisible by every number from $2$ to $\sqrt{N}$ (trial division) would take as long as the lifespan of the universe.
 
-This is where the **Fermat Primality Test** comes in, a "probabilistic primality test" that takes advantage of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
+This is where the **[Fermat](https://kenji.blog/en/p/fermat/) Primality Test** comes in, a "probabilistic primality test" that takes advantage of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
 
 ### 5.1 What is a Probabilistic Primality Test?
 
@@ -151,7 +151,7 @@ Therefore, if we want to determine whether $N$ is prime, we randomly choose seve
 
 ### 5.2 Algorithm Explanation and Flowchart
 
-The algorithm for the Fermat primality test is as follows:
+The algorithm for the [Fermat](https://kenji.blog/en/p/fermat/) primality test is as follows:
 
 ```mermaid
 flowchart TD
@@ -171,9 +171,9 @@ flowchart TD
 
 ### 5.3 The Pitfall of Carmichael Numbers (Pseudoprimes)
 
-While the Fermat test is very fast, it has a significant flaw. There are devilish numbers that are composite numbers but still satisfy $a^{N-1} \equiv 1 \pmod N$ for all $a$. These are called **Carmichael numbers**. The smallest Carmichael number is $561$ ($3 \times 11 \times 17$).
+While the [Fermat](https://kenji.blog/en/p/fermat/) test is very fast, it has a significant flaw. There are devilish numbers that are composite numbers but still satisfy $a^{N-1} \equiv 1 \pmod N$ for all $a$. These are called **Carmichael numbers**. The smallest Carmichael number is $561$ ($3 \times 11 \times 17$).
 
-Because Carmichael numbers exist, a pure Fermat test alone cannot provide absolute primality testing. Therefore, in actual cryptographic systems (such as OpenSSL), the **Miller-Rabin primality test**, an improved version of the Fermat test, is used as the standard. The Miller-Rabin test can detect Carmichael numbers, effectively reducing the probability of misjudgment to zero.
+Because Carmichael numbers exist, a pure [Fermat](https://kenji.blog/en/p/fermat/) test alone cannot provide absolute primality testing. Therefore, in actual cryptographic systems (such as OpenSSL), the **Miller-Rabin primality test**, an improved version of the [Fermat](https://kenji.blog/en/p/fermat/) test, is used as the standard. The Miller-Rabin test can detect Carmichael numbers, effectively reducing the probability of misjudgment to zero.
 
 ### 5.4 Fast Modular Exponentiation (Exponentiation by Squaring)
 
@@ -184,7 +184,7 @@ This is solved by **Exponentiation by Squaring** or modular exponentiation. By t
 
 ## 6. Implementation of Primality Testing and Modular Exponentiation
 
-Now, let's implement the Fermat primality test and exponentiation by squaring in C++ and Python.
+Now, let's implement the [Fermat](https://kenji.blog/en/p/fermat/) primality test and exponentiation by squaring in C++ and Python.
 
 ### 6.1 Implementation in C++
 
@@ -281,7 +281,7 @@ else:
 
 ---
 
-## 7. Application to RSA Cryptography: Where Fermat and Euler Bear Fruit
+## 7. Application to RSA Cryptography: Where [Fermat](https://kenji.blog/en/p/fermat/) and Euler Bear Fruit
 
 The greatest application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and Euler's Theorem) is **RSA cryptography**, developed in 1977 by Rivest, Shamir, and Adleman.
 RSA cryptography is an epoch-making system called "public-key cryptography", realizing a mechanism where the key for encryption (public key) is published to the whole world, while the key for decryption (private key) is known only to the receiver themselves.
@@ -361,7 +361,7 @@ Here, **Euler's Theorem** ($M^{\phi(N)} \equiv 1 \pmod N$) comes into play. (*St
 Applying Euler's Theorem, since $M^{\phi(N)} \equiv 1$:
 $$ M \cdot (1)^k \equiv M \pmod N $$
 
-$M$ is beautifully restored! The properties of numbers discovered hundreds of years ago by Fermat and Euler perfectly guarantee the confidentiality of modern digital communication.
+$M$ is beautifully restored! The properties of numbers discovered hundreds of years ago by [Fermat](https://kenji.blog/en/p/fermat/) and Euler perfectly guarantee the confidentiality of modern digital communication.
 
 ---
 
@@ -466,9 +466,9 @@ When you run this code, you can see how an array of characters is converted into
 
 ## 9. Conclusion: The Intersection of Mathematical Beauty and Practicality
 
-In the 17th century when [Pierre de Fermat](https://kenji.blog/en/p/fermat/) discovered this "Little Theorem", no one thought it would be of any use. Fermat himself studied number theory out of pure mathematical curiosity.
+In the 17th century when [Pierre de Fermat](https://kenji.blog/en/p/fermat/) discovered this "Little Theorem", no one thought it would be of any use. [Fermat](https://kenji.blog/en/p/fermat/) himself studied number theory out of pure mathematical curiosity.
 
-However, about 300 years later in the 1970s, at the dawn of computer networks, Fermat's theorem made a dramatic comeback as an indispensable cryptographic technology for establishing secure communication protocols. Primality testing technology based on [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) and RSA cryptography based on Euler's theorem literally support modern Internet infrastructure.
+However, about 300 years later in the 1970s, at the dawn of computer networks, [Fermat](https://kenji.blog/en/p/fermat/)'s theorem made a dramatic comeback as an indispensable cryptographic technology for establishing secure communication protocols. Primality testing technology based on [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) and RSA cryptography based on Euler's theorem literally support modern Internet infrastructure.
 
 The LINE messages we casually send every day, the shopping on Amazon, all dance on this simple and beautiful formula $a^{p-1} \equiv 1 \pmod p$. No matter how abstract mathematics may be, [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) teaches us that the time will definitely come when it will be useful to humanity.
 

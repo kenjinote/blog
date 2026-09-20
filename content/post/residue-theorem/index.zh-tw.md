@@ -18,7 +18,7 @@ $$
 
 雖然這個積分本身可以使用 $\arctan(x)$ 來求解，但如果分母變成了更高次的連續多項式，或者錯綜複雜地混合了正弦和餘弦等三角函數，在實函數範圍內找到原函數（不定積分）實際上是不可能的。
 
-這時就輪到 **複分析** （複變函數論）中被譽為數學中最優美理論之一的強大定理登場了，那就是 **柯西[留數定理](https://kenji.blog/zh-tw/p/residue-theorem/)** （Cauchy's [Residue Theorem](https://kenji.blog/zh-tw/p/residue-theorem/)）。透過將原本在實數軸（一維）上進行的積分果斷擴展到 **複數平面** （二維），我們就可以巧妙地解出原本無法計算的實數積分。
+這時就輪到 **複分析** （複變函數論）中被譽為數學中最優美理論之一的強大定理登場了，那就是 **柯西[留數定理](https://kenji.blog/zh-tw/p/residue-theorem/)** （[Cauchy](https://kenji.blog/zh-tw/p/cauchy/)'s [Residue Theorem](https://kenji.blog/zh-tw/p/residue-theorem/)）。透過將原本在實數軸（一維）上進行的積分果斷擴展到 **複數平面** （二維），我們就可以巧妙地解出原本無法計算的實數積分。
 
 ## 複積分與奇點
 

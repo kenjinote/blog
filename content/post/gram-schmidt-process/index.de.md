@@ -190,7 +190,7 @@ Wenden wir nun das Gram-Schmidt-Orthogonalisierungsverfahren auf die einfachste 
 * Berechnung von $\mathbf{u}_1(x) = x - \text{proj}_{\mathbf{u}_0}(x)$: Da $\langle x, 1 \rangle = \int_{-1}^{1} x dx = 0$, haben wir $\mathbf{u}_1(x) = x$.
 * Die Berechnung von $\mathbf{u}_2(x) = x^2 - \text{proj}_{\mathbf{u}_0}(x^2) - \text{proj}_{\mathbf{u}_1}(x^2)$ ergibt $\mathbf{u}_2(x) = x^2 - \frac{1}{3}$.
 
-Die Folge von orthogonalen Polynomen, die auf diese Weise erzeugt wird, nennt man **Legendre-Polynome**, und sie spielen eine äußerst wichtige Rolle im Elektromagnetismus und in der Quantenmechanik in der Physik sowie in der numerischen Integration (Gauß-Quadratur). Es ist ein wunderbares Beispiel dafür, wie ein algebraischer Algorithmus auf natürliche Weise Beschreibungen tiefer physikalischer Gesetze ableitet.
+Die Folge von orthogonalen Polynomen, die auf diese Weise erzeugt wird, nennt man **[Legendre](https://kenji.blog/de/p/legendre/)-Polynome**, und sie spielen eine äußerst wichtige Rolle im Elektromagnetismus und in der Quantenmechanik in der Physik sowie in der numerischen Integration (Gauß-Quadratur). Es ist ein wunderbares Beispiel dafür, wie ein algebraischer Algorithmus auf natürliche Weise Beschreibungen tiefer physikalischer Gesetze ableitet.
 
 ## 8. Erweiterte Anwendung 2: QR-Zerlegung und Data Science
 

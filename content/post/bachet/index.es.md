@@ -31,7 +31,7 @@ flowchart TD
 
 Uno de los logros más conocidos de [Bachet](https://kenji.blog/es/p/bachet/) es su traducción de la "Arithmetica" del antiguo matemático griego [Diofanto](https://kenji.blog/es/p/diophantus/) al latín, agregando comentarios y publicándola en 1621.
 
-Este libro traducido se convirtió en el texto estándar para que los matemáticos europeos de la época estudiaran el álgebra antigua y la teoría de números. Una de las anécdotas más famosas es que [Pierre de Fermat](https://kenji.blog/es/p/fermat/) escribió su famoso "Último Teorema de Fermat" en el margen de su copia de esta edición de [Bachet](https://kenji.blog/es/p/bachet/).
+Este libro traducido se convirtió en el texto estándar para que los matemáticos europeos de la época estudiaran el álgebra antigua y la teoría de números. Una de las anécdotas más famosas es que [Pierre de Fermat](https://kenji.blog/es/p/fermat/) escribió su famoso "Último Teorema de [Fermat](https://kenji.blog/es/p/fermat/)" en el margen de su copia de esta edición de [Bachet](https://kenji.blog/es/p/bachet/).
 
 [Bachet](https://kenji.blog/es/p/bachet/) no se limitó a una mera traducción; añadió sus propios y excelentes comentarios y generalizaciones a los problemas de [Diofanto](https://kenji.blog/es/p/diophantus/). Sin sus conocimientos matemáticos, el desarrollo de la teoría de números en el siglo XVII podría haber sido mucho más lento.
 
@@ -83,4 +83,4 @@ $x$ y $y$ se pueden calcular de manera concreta expandiendo el algoritmo de [Euc
 
 ## Conclusión
 
-[Claude Gaspard Bachet](https://kenji.blog/es/p/bachet/) no fue solo una "figura entre bastidores" para el Último Teorema de Fermat. Fue un gran pionero que abrió las puertas a las matemáticas modernas al revivir la sabiduría antigua mientras exploraba sus propias ecuaciones y sistematizaba las matemáticas recreativas. Sus comentarios sobre la "Arithmetica" y sus acertijos matemáticos continúan inspirando a los amantes de las matemáticas de hoy, siglos después de su fallecimiento.
+[Claude Gaspard Bachet](https://kenji.blog/es/p/bachet/) no fue solo una "figura entre bastidores" para el Último Teorema de [Fermat](https://kenji.blog/es/p/fermat/). Fue un gran pionero que abrió las puertas a las matemáticas modernas al revivir la sabiduría antigua mientras exploraba sus propias ecuaciones y sistematizaba las matemáticas recreativas. Sus comentarios sobre la "Arithmetica" y sus acertijos matemáticos continúan inspirando a los amantes de las matemáticas de hoy, siglos después de su fallecimiento.

@@ -13,7 +13,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 '소수(Prime Numbers)'는 1과 자기 자신으로만 나누어 떨어지는 자연수이며, 수학 세계에서 '원자'라고도 불립니다. 2, 3, 5, 7, 11, 13... 으로 이어지는 이 수열은 언뜻 보면 무질서하고 무작위로 나타나는 것처럼 보입니다. 고대 그리스의 수학자 [유클리드](https://kenji.blog/ko/p/euclid/)가 '소수가 무한히 존재한다'는 것을 증명한 이후, 수많은 수학자들이 이 소수의 배열에 숨겨진 규칙성을 밝혀내기 위해 도전해 왔습니다.
 
-그 소수의 수수께끼에 가장 근접한 것이 1859년 독일의 수학자 [베른하르트 리만](https://kenji.blog/ko/p/riemann/)([Bernhard Riemann](https://kenji.blog/ko/p/riemann/))이 제안한 **'리만 가설(Riemann Hypothesis)'** 입니다. 리만 가설은 현대 수학에서 가장 중요하고 미해결된 난제 중 하나이며, 클레이 수학연구소가 정한 밀레니엄 현상 문제 중 하나로 100만 달러의 상금이 걸려 있습니다.
+그 소수의 수수께끼에 가장 근접한 것이 1859년 독일의 수학자 [베른하르트 리만](https://kenji.blog/ko/p/riemann/)([Bernhard Riemann](https://kenji.blog/ko/p/riemann/))이 제안한 **'리만 가설([Riemann](https://kenji.blog/ko/p/riemann/) Hypothesis)'** 입니다. 리만 가설은 현대 수학에서 가장 중요하고 미해결된 난제 중 하나이며, 클레이 수학연구소가 정한 밀레니엄 현상 문제 중 하나로 100만 달러의 상금이 걸려 있습니다.
 
 언뜻 보기에 소수의 분포에 관한 순수 수학의 난제는 우리의 일상생활과는 무관해 보일지도 모릅니다. 하지만 현대 사회의 인프라를 지탱하는 인터넷 보안, 특히 **RSA 암호나 타원곡선암호(ECC) 같은 현대 암호 기술** 은 거대한 소수의 성질에 깊이 의존하고 있습니다.
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. 리만 제타 함수와 오일러 곱
 
-소수의 분포를 분석하는 데 있어 가장 강력한 무기가 되는 것이 **리만 제타 함수(Riemann Zeta Function)** 입니다. 원래는 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/))에 의해 실수 $s > 1$ 에 대해 정의된 무한급수였습니다.
+소수의 분포를 분석하는 데 있어 가장 강력한 무기가 되는 것이 **리만 제타 함수([Riemann](https://kenji.blog/ko/p/riemann/) Zeta Function)** 입니다. 원래는 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/))에 의해 실수 $s > 1$ 에 대해 정의된 무한급수였습니다.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -88,7 +88,7 @@ $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1
 
 리만은 소수의 영점을 계산하고 어떤 놀라운 가설을 세웠습니다. 이것이 **리만 가설** 입니다.
 
-> **리만 가설 (Riemann Hypothesis)**
+> **리만 가설 ([Riemann](https://kenji.blog/ko/p/riemann/) Hypothesis)**
 > 리만 제타 함수 $\zeta(s)$ 의 비자명한 영점은 모두 실수부가 $1/2$ 인 직선상($\text{Re}(s) = 1/2$)에 존재한다.
 
 이 실수부가 1/2인 직선을 '임계선(Critical line)'이라고 부릅니다.
@@ -165,7 +165,7 @@ RSA 암호를 운용하기 위해서는 먼저 거대한 소수 $p$ 와 $q$ 를 
 
 현재 실용적으로 사용되고 있는 것은 **밀러-라빈 소수 판별법(Miller-Rabin primality test)** 이라는 확률적 알고리즘입니다. 이 알고리즘은 매우 빠르지만, 아주 낮은 확률로 합성수를 소수라고 잘못 판별하는 '유사소수'의 위험이 있습니다.
 
-하지만 리만 가설을 디리클레 L-함수로 확장한 **'일반화된 리만 가설(Generalized Riemann Hypothesis, GRH)'** 이 참이라고 가정하면 이야기는 극적으로 달라집니다.
+하지만 리만 가설을 디리클레 L-함수로 확장한 **'일반화된 리만 가설(Generalized [Riemann](https://kenji.blog/ko/p/riemann/) Hypothesis, GRH)'** 이 참이라고 가정하면 이야기는 극적으로 달라집니다.
 GRH가 참이라면, 밀러-라빈 판별법에서의 테스트 횟수 상한이 수학적으로 보장되어 확률적 알고리즘에서 **'결정론적 다항 시간 알고리즘'으로 승화** 하는 것입니다(이는 AKS 소수 판별법이 발견되기 이전부터 알려져 있던 중대한 사실이었습니다).
 
 즉, 리만 가설(및 그 확장)은 '거대한 소수를 절대적인 확신을 가지고 빠르게 생성할 수 있는가'라는 암호의 기반 생성에 직접적인 보증을 부여하는 역할을 가지고 있습니다.

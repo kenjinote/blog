@@ -422,7 +422,7 @@ In der Welt des algebraischen Zahlkörpers $\mathbb{Z}[\alpha]$ gilt die Eindeut
 
 Hier stellen sich uns immense Hürden aus der algebraischen Zahlentheorie in den Weg: das "Hindernis der Idealklassengruppe" und das "Hindernis der Einheitengruppe".
 Um diese Hürden zu überwinden, nutzt GNFS die Magie der ** "Quadratischen Reste (Quadratic Characters)" **.
-Man fügt der Matrix aus Phase 4 vorab heimlich Spalten mit quadratischen Resten (Legendre-Symbolen) für einige Dutzend spezielle Primideale hinzu. Dadurch überspringt die gefundene Menge $S$ mit überwältigender Wahrscheinlichkeit die Hindernisse und bildet erfolgreich das "Quadrat eines echten Elements $\gamma^2$".
+Man fügt der Matrix aus Phase 4 vorab heimlich Spalten mit quadratischen Resten ([Legendre](https://kenji.blog/de/p/legendre/)-Symbolen) für einige Dutzend spezielle Primideale hinzu. Dadurch überspringt die gefundene Menge $S$ mit überwältigender Wahrscheinlichkeit die Hindernisse und bildet erfolgreich das "Quadrat eines echten Elements $\gamma^2$".
 
 Der Prozess zur Ermittlung von $\gamma$ (die algebraische Quadratwurzel) verwendet hochkomplexe Algorithmen wie die Montgomery-Methode.
 

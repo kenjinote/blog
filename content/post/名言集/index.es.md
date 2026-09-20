@@ -150,7 +150,7 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 > Un buen código es su propia mejor documentación (Steve McConnell)
 
-> Los programas deben escribirse para que la gente los lea, y solo incidentalmente para que las máquinas los ejecuten (Harold Abelson)
+> Los programas deben escribirse para que la gente los lea, y solo incidentalmente para que las máquinas los ejecuten (Harold [Abel](https://kenji.blog/es/p/abel/)son)
 
 > Primero resuelve el problema. Luego, escribe el código (John Johnson)
 

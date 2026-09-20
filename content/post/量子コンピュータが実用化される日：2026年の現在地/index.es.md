@@ -19,7 +19,7 @@ En este artículo, profundizaremos en el estado actual de los ordenadores cuánt
 
 ## 2. Conceptos básicos del estado cuántico y la fidelidad
 
-El cúbit (Qubit), que es la unidad básica de un ordenador cuántico, a diferencia de un bit clásico (0 o 1), puede tomar un estado de superposición (Superposition) de 0 y 1. El estado de un solo cúbit se representa como un vector en el espacio de Hilbert de la siguiente manera:
+El cúbit (Qubit), que es la unidad básica de un ordenador cuántico, a diferencia de un bit clásico (0 o 1), puede tomar un estado de superposición (Superposition) de 0 y 1. El estado de un solo cúbit se representa como un vector en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) de la siguiente manera:
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -130,7 +130,7 @@ Los avances de 2026 son la bidimensionalización de la arquitectura QCCD (Quantu
 
 ### 5.3 Computación cuántica topológica: Control de anyones
 
-La **computación cuántica topológica**, considerada durante mucho tiempo una existencia teórica, finalmente ha entrado en la fase de demostración experimental en 2026. Este método, promovido por empresas como Microsoft, utiliza anyones no abelianos (Non-Abelian Anyons) llamados "modos cero de Majorana (Majorana Zero Modes)".
+La **computación cuántica topológica**, considerada durante mucho tiempo una existencia teórica, finalmente ha entrado en la fase de demostración experimental en 2026. Este método, promovido por empresas como Microsoft, utiliza anyones no abelianos (Non-[Abel](https://kenji.blog/es/p/abel/)ian Anyons) llamados "modos cero de Majorana (Majorana Zero Modes)".
 
 Las puertas cuánticas se ejecutan mediante una operación llamada "trenzado (Braiding)", que intercambia las posiciones de las partículas de los anyones.
 

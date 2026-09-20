@@ -54,7 +54,7 @@ Aqui, H^{p,q}(X) representa a classe de formas diferenciais consistindo do produ
 
 Uma combinação linear formal de variedades algébricas (subvariedades) de dimensões menores dentro de uma variedade X é chamada de **Ciclo Algébrico** (Algebraic Cycle).
 
-Um ciclo algébrico de dimensão k, pela Dualidade de Poincaré (Poincaré Duality), determina um elemento do grupo de cohomologia de grau 2k de X. O importante é o fato de que as classes de cohomologia determinadas por subvariedades algébricas aparecem apenas em componentes específicos na decomposição de Hodge. Especificamente, a classe de cohomologia determinada por uma subvariedade algébrica cuja codimensão (a dimensão total menos a dimensão da subvariedade) é p pertence à componente H^{p,p}(X).
+Um ciclo algébrico de dimensão k, pela Dualidade de [Poincaré](https://kenji.blog/pt/p/poincare/) ([Poincaré](https://kenji.blog/pt/p/poincare/) Duality), determina um elemento do grupo de cohomologia de grau 2k de X. O importante é o fato de que as classes de cohomologia determinadas por subvariedades algébricas aparecem apenas em componentes específicos na decomposição de Hodge. Especificamente, a classe de cohomologia determinada por uma subvariedade algébrica cuja codimensão (a dimensão total menos a dimensão da subvariedade) é p pertence à componente H^{p,p}(X).
 
 Além disso, como os ciclos algébricos são definidos por equações, seus coeficientes podem ser considerados números racionais (ou inteiros). Portanto, a classe de cohomologia determinada por um ciclo algébrico também pertencerá ao grupo de cohomologia com coeficientes racionais H^{2p}(X, \mathbb{Q}).
 
@@ -122,7 +122,7 @@ Pode ser difícil compreender a essência da Conjectura de Hodge apenas a partir
 
 ### 7.1 Toros e Curvas Elípticas
 
-Um dos exemplos mais simples e fáceis de entender é uma variedade complexa de dimensão 1, ou seja, uma **Superfície de Riemann** (Riemann Surface). Entre elas, o toro (em forma de donut) com gênero (número de buracos) 1 é conhecido na geometria algébrica como uma **Curva Elíptica** (Elliptic Curve).
+Um dos exemplos mais simples e fáceis de entender é uma variedade complexa de dimensão 1, ou seja, uma **Superfície de [Riemann](https://kenji.blog/pt/p/riemann/)** ([Riemann](https://kenji.blog/pt/p/riemann/) Surface). Entre elas, o toro (em forma de donut) com gênero (número de buracos) 1 é conhecido na geometria algébrica como uma **Curva Elíptica** (Elliptic Curve).
 
 No caso da curva elíptica E, a dimensão complexa é 1 (dimensão real é 2). Considerando os grupos de cohomologia, o que interessa é o grupo de cohomologia de primeiro grau H^1(E, \mathbb{C}), que é de dimensão intermediária, mas a Conjectura de Hodge tem como alvo os grupos de cohomologia de dimensão total par. Portanto, na própria curva elíptica (dimensão complexa 1), não surge nenhuma afirmação não trivial da Conjectura de Hodge.
 
@@ -150,7 +150,7 @@ As Conjecturas Padrão incluem a teoria da interseção de ciclos algébricos e 
 
 ### 8.2 Conjectura de Milnor e K-Teoria Algébrica (Milnor Conjecture and Algebraic K-Theory)
 
-Com um sabor ligeiramente diferente, a Conjectura de Milnor (Milnor Conjecture), resolvida por Vladimir Voevodsky, e a Conjectura de Bloch-Kato (Bloch-Kato Conjecture), que a generalizou, conectaram a K-teoria algébrica e a cohomologia de Galois.
+Com um sabor ligeiramente diferente, a Conjectura de Milnor (Milnor Conjecture), resolvida por Vladimir Voevodsky, e a Conjectura de Bloch-Kato (Bloch-Kato Conjecture), que a generalizou, conectaram a K-teoria algébrica e a cohomologia de [Galois](https://kenji.blog/pt/p/galois/).
 
 O trabalho de Voevodsky construiu um novo quadro chamado "Cohomologia Motívica" (Motivic Cohomology), fortalecendo ainda mais a conexão entre a geometria algébrica e a topologia. Essa perspectiva motívica posiciona a Conjectura de Hodge dentro da teoria mais geral dos ciclos algébricos, tornando-se uma abordagem indispensável na pesquisa moderna da Conjectura de Hodge.
 

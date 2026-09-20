@@ -138,7 +138,7 @@ $$f(x_2) - f(x_1) = f'(c)(x_2 - x_1)$$
 
 像這樣，我們在高中數學中理所當然地使用的「導數為正即遞增，為負即遞減」的增減表原理，全都是由這個 **均值定理** 所保證的。
 
-## 5. 柯西均值定理 (Cauchy's Mean Value Theorem)
+## 5. 柯西均值定理 ([Cauchy](https://kenji.blog/zh-tw/p/cauchy/)'s Mean Value Theorem)
 
 將均值定理擴展到兩個函數的情況，就是柯西均值定理。
 

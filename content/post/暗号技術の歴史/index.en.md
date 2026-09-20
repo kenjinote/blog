@@ -120,7 +120,7 @@ However, as computer computational power improved, it became clear that a 56-bit
 ## AES (Advanced Encryption Standard)
 As a new standard to replace DES, "AES" was established in 2001. The "Rijndael" algorithm, submitted by Belgian cryptographers through an open competition, was adopted.
 
-AES adopts an "SPN structure (Substitution-Permutation Network)" rather than a Feistel Network, and utilizes mathematical operations over the Galois field (finite field) $GF(2^8)$. The key length can be chosen from 128, 192, or 256 bits, and it continues to be widely used around the world today as the standard symmetric-key cipher.
+AES adopts an "SPN structure (Substitution-Permutation Network)" rather than a Feistel Network, and utilizes mathematical operations over the [Galois](https://kenji.blog/en/p/galois/) field (finite field) $GF(2^8)$. The key length can be chosen from 128, 192, or 256 bits, and it continues to be widely used around the world today as the standard symmetric-key cipher.
 
 ```mermaid
 graph TD

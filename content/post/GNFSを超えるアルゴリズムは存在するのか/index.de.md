@@ -42,7 +42,7 @@ Die Geschichte der Entwicklung vergangener Faktorisierungsalgorithmen war auch e
 
 ## 3. Der gesamte GNFS-Algorithmus und seine mathematische Struktur
 
-Das GNFS besitzt eine äußerst komplexe und fortschrittliche mathematische Grundlage. Die grundlegende Idee ist eine Erweiterung des kleinen Fermatschen Satzes und des Quadratischen Siebs (QS): Durch das Finden eines nicht-trivialen Paares $(X, Y)$, das die Kongruenz $X^2 \equiv Y^2 \pmod n$ und $X \not\equiv \pm Y \pmod n$ erfüllt, leitet man den Faktor $\gcd(X-Y, n)$ von $n$ ab.
+Das GNFS besitzt eine äußerst komplexe und fortschrittliche mathematische Grundlage. Die grundlegende Idee ist eine Erweiterung des kleinen [Fermat](https://kenji.blog/de/p/fermat/)schen Satzes und des Quadratischen Siebs (QS): Durch das Finden eines nicht-trivialen Paares $(X, Y)$, das die Kongruenz $X^2 \equiv Y^2 \pmod n$ und $X \not\equiv \pm Y \pmod n$ erfüllt, leitet man den Faktor $\gcd(X-Y, n)$ von $n$ ab.
 
 Der Kern des GNFS liegt jedoch darin, dies nicht nur im Körper der rationalen Zahlen $\mathbb{Q}$ zu tun, sondern gleichzeitig "glatte Zahlen (Smooth numbers)" in einem Erweiterungskörper $\mathbb{Q}(\alpha)$, der als algebraischer Zahlkörper (Algebraic Number Field) bezeichnet wird, und im Körper der rationalen Zahlen zu suchen und durch einen Homomorphismus eine Kongruenzbeziehung herzustellen.
 

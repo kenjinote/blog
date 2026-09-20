@@ -38,10 +38,10 @@ Sebagai contoh,
 
 Masalahnya sendiri sangat sederhana, tetapi masih belum terbukti hingga saat ini.
 
-## Hipotesis Riemann
+## Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)
 
-Ini adalah konjektur yang menyatakan bahwa nol dari fungsi zeta Riemann terbatas pada bilangan genap negatif dan bilangan kompleks yang bagian realnya adalah 1 / 2.
+Ini adalah konjektur yang menyatakan bahwa nol dari fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/) terbatas pada bilangan genap negatif dan bilangan kompleks yang bagian realnya adalah 1 / 2.
 
-Fungsi zeta Riemann didefinisikan sebagai berikut, di mana $s$ adalah bilangan kompleks dan $n$ adalah bilangan asli:
+Fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/) didefinisikan sebagai berikut, di mana $s$ adalah bilangan kompleks dan $n$ adalah bilangan asli:
 
 $$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$

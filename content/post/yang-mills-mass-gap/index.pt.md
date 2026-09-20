@@ -15,7 +15,7 @@ tags:
 
 ## 1. Introdução: O que são os Problemas do Milênio
 
-Em 2000, o Instituto Clay de Matemática ofereceu um prêmio de 1 milhão de dólares para cada um de sete problemas não resolvidos extremamente importantes da matemática. Eles são chamados de **Problemas do Milênio**. Entre eles estão a famosa "Hipótese de Riemann" e o "Problema P versus NP", mas há um problema profundamente relacionado com a física. Trata-se das **"[Equações de Yang-Mills e a Lacuna de Massa](https://kenji.blog/pt/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
+Em 2000, o Instituto Clay de Matemática ofereceu um prêmio de 1 milhão de dólares para cada um de sete problemas não resolvidos extremamente importantes da matemática. Eles são chamados de **Problemas do Milênio**. Entre eles estão a famosa "Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/)" e o "Problema P versus NP", mas há um problema profundamente relacionado com a física. Trata-se das **"[Equações de Yang-Mills e a Lacuna de Massa](https://kenji.blog/pt/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
 
 Este problema visa estabelecer a base matemática do "Modelo Padrão" da física de partículas, que descreve as forças fundamentais da natureza. O comportamento da matéria e das forças que compõem o nosso mundo foi confirmado experimentalmente com altíssima precisão, mas prová-lo rigorosamente de forma matemática continua sendo um dos maiores desafios da matemática moderna.
 
@@ -25,13 +25,13 @@ Neste artigo, nos aprofundaremos e explicaremos o que é a teoria de Yang-Mills 
 
 Para entender a teoria de Yang-Mills, precisamos primeiro saber sobre a **Teoria de Calibre** (Gauge Theory). Na física, uma teoria de calibre é uma teoria que possui a propriedade de que a forma das equações não muda (é invariante) sob certas transformações (transformações de calibre).
 
-### Eletromagnetismo e a Teoria de Calibre Abeliana
+### Eletromagnetismo e a Teoria de Calibre [Abel](https://kenji.blog/pt/p/abel/)iana
 
 A teoria de calibre mais familiar é o eletromagnetismo. As equações de Maxwell, formuladas por James Clerk Maxwell, descrevem o comportamento dos campos elétrico e magnético. A Eletrodinâmica Quântica (QED), que trata isso na estrutura da mecânica quântica, é chamada de **Teoria de Calibre U(1)**.
 
 Aqui, uma quantidade chamada fase desempenha um papel importante. Mesmo que a fase da função de onda do elétron seja alterada independentemente em cada ponto do espaço (transformação de calibre local), as grandezas físicas observáveis não mudam. Para manter essa invariância, introduz-se um **campo de calibre**, e o campo de calibre no eletromagnetismo corresponde ao fóton (partícula de luz). Como o grupo U(1) é um grupo abeliano (o resultado é o mesmo mesmo que a ordem das operações seja invertida), a QED é chamada de teoria de calibre abeliana.
 
-### Teoria de Calibre Não-Abeliana: O Nascimento da Teoria de Yang-Mills
+### Teoria de Calibre Não-[Abel](https://kenji.blog/pt/p/abel/)iana: O Nascimento da Teoria de Yang-Mills
 
 Em 1954, Chen-Ning Yang e Robert Mills estenderam a QED baseada em grupos abelianos e propuseram uma teoria de calibre baseada em grupos não-abelianos (onde a inversão da ordem das operações altera o resultado). Esta é a **Teoria de Yang-Mills**.
 
@@ -92,7 +92,7 @@ O campo que constrói uma teoria quântica de campos matematicamente rigorosa é
 
 ### Axiomas de Wightman
 
-Como estruturas para tratar campos quânticos de forma matematicamente rigorosa, são conhecidos os **Axiomas de Wightman** (Wightman axioms) e os **Axiomas de Osterwalder-Schrader** (Osterwalder-Schrader axioms). Estes estabelecem como axiomas as propriedades que os campos quânticos devem satisfazer (covariância de Poincaré, comutatividade local, condição espectral, etc.).
+Como estruturas para tratar campos quânticos de forma matematicamente rigorosa, são conhecidos os **Axiomas de Wightman** (Wightman axioms) e os **Axiomas de Osterwalder-Schrader** (Osterwalder-Schrader axioms). Estes estabelecem como axiomas as propriedades que os campos quânticos devem satisfazer (covariância de [Poincaré](https://kenji.blog/pt/p/poincare/), comutatividade local, condição espectral, etc.).
 
 A fim de resolver o problema do milênio, primeiro é necessário mostrar que a teoria de Yang-Mills existe como um objeto matemático rigoroso que satisfaz esses axiomas e, em seguida, provar que existe uma lacuna no limite inferior do espectro (autovalores de energia) (lacuna de massa).
 

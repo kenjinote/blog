@@ -116,7 +116,7 @@ Determinanten haben einige bekannte algebraische Eigenschaften, aber wenn Sie ih
 *   **Determinante einer inversen Matrix** : $\det(A^{-1}) = \frac{1}{\det(A)}$
     Wenn eine bestimmte Transformation den Raum um das $2$-fache dehnt, muss ihre inverse Transformation den Raum auf $\frac{1}{2}$ schrumpfen lassen, um ihn in seinen ursprünglichen Zustand zurückzuversetzen.
 
-## 7. Fazit: Verbindung zur Jacobi-Matrix
+## 7. Fazit: Verbindung zur [Jacobi](https://kenji.blog/de/p/jacobi/)-Matrix
 
 Die Determinante ist nicht nur eine mühsame Berechnungsformel, sondern ein äußerst leistungsfähiges geometrisches Werkzeug zur Beschreibung der Verformung des Raumes.
 
@@ -124,4 +124,4 @@ Die Determinante ist nicht nur eine mühsame Berechnungsformel, sondern ein äu�
 *   **Vorzeichen** : Ob die "Orientierung" des Raumes erhalten bleibt (positiv) oder umgekehrt wird (negativ).
 *   **Null** : Der Raum "kollabiert" in eine niedrigere Dimension (Verlust der Dimensionalität und Irreversibilität).
 
-Dieses intuitive Bild wird als wichtige Grundlage für das Verständnis der **Jacobi-Determinante** (der lokale Volumen-Skalierungsfaktor bei nichtlinearen Transformationen) dienen, die Sie später in der Analysis lernen werden. In der Welt der linearen Algebra ist die ständige Verknüpfung von Formeln mit geometrischen Bildern der kürzeste Weg zu einem tiefen Verständnis.
+Dieses intuitive Bild wird als wichtige Grundlage für das Verständnis der **[Jacobi](https://kenji.blog/de/p/jacobi/)-Determinante** (der lokale Volumen-Skalierungsfaktor bei nichtlinearen Transformationen) dienen, die Sie später in der Analysis lernen werden. In der Welt der linearen Algebra ist die ständige Verknüpfung von Formeln mit geometrischen Bildern der kürzeste Weg zu einem tiefen Verständnis.

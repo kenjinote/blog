@@ -15,7 +15,7 @@ Dalam ilmu komputer, kriptografi, atau pemrograman kompetitif, menentukan secara
 
 Selain itu, dalam pemrograman kompetitif (seperti AtCoder atau Codeforces), pengujian keprimaan adalah tema yang sering muncul. Untuk input besar dengan batasan seperti $N \le 10^{18}$, dalam situasi di mana puluhan ribu uji keprimaan perlu dilakukan dalam waktu 1 detik, algoritma tradisional dan naif tidak akan pernah bisa memenuhi batas waktu (Time Limit Exceeded: TLE).
 
-Artikel ini akan membahas secara menyeluruh, mulai dari latar belakang matematika hingga implementasi yang sangat dioptimalkan dalam C++, dari algoritma pengujian keprimaan naif, lalu "Uji Fermat" yang merupakan metode pengujian keprimaan probabilistik, dan algoritma pengujian sangat cepat tingkat paling praktis yang mengatasi kelemahannya: "Uji Keprimaan Miller-Rabin". Khususnya untuk bilangan bulat 64-bit ($N < 2^{64}$), artikel ini akan menjelaskan secara rinci bukan hanya pengujian probabilistik tetapi juga metode untuk "100% pasti melakukan pengujian keprimaan (pengujian deterministik)", dan menyediakan kode sumber C++ yang dapat langsung digunakan dalam praktik.
+Artikel ini akan membahas secara menyeluruh, mulai dari latar belakang matematika hingga implementasi yang sangat dioptimalkan dalam C++, dari algoritma pengujian keprimaan naif, lalu "Uji [Fermat](https://kenji.blog/id/p/fermat/)" yang merupakan metode pengujian keprimaan probabilistik, dan algoritma pengujian sangat cepat tingkat paling praktis yang mengatasi kelemahannya: "Uji Keprimaan Miller-Rabin". Khususnya untuk bilangan bulat 64-bit ($N < 2^{64}$), artikel ini akan menjelaskan secara rinci bukan hanya pengujian probabilistik tetapi juga metode untuk "100% pasti melakukan pengujian keprimaan (pengujian deterministik)", dan menyediakan kode sumber C++ yang dapat langsung digunakan dalam praktik.
 
 ---
 
@@ -50,9 +50,9 @@ Kompleksitas waktu dari algoritma ini adalah $O(\sqrt{N})$. Jika $N \le 10^{12}$
 
 ---
 
-# 2. Uji Fermat: Awal dari Pengujian Keprimaan Probabilistik
+# 2. Uji [Fermat](https://kenji.blog/id/p/fermat/): Awal dari Pengujian Keprimaan Probabilistik
 
-Untuk mengatasi batasan metode pembagian coba-coba, "Algoritma Probabilistik (Probabilistic Algorithm)" menggunakan teorema teori bilangan dirancang. Perwakilan dari ini adalah "Uji Keprimaan Fermat (Fermat Primality Test)", yang menggunakan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
+Untuk mengatasi batasan metode pembagian coba-coba, "Algoritma Probabilistik (Probabilistic Algorithm)" menggunakan teorema teori bilangan dirancang. Perwakilan dari ini adalah "Uji Keprimaan [Fermat](https://kenji.blog/id/p/fermat/) ([Fermat](https://kenji.blog/id/p/fermat/) Primality Test)", yang menggunakan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
 
 ## [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/id/p/fermats-little-theorem/))
 
@@ -61,11 +61,11 @@ Teorema yang ditemukan oleh [Pierre de Fermat](https://kenji.blog/id/p/fermat/) 
 > Untuk sembarang bilangan prima $p$ dan sembarang bilangan bulat $a$ yang koprima dengannya (bukan kelipatan $p$), kongruensi berikut berlaku.
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
-Mengambil kontraposisi dari teorema ini, kita dapat mengatakan bahwa "Untuk suatu bilangan bulat $N$ dan bilangan bulat $a$ yang koprima dengan $N$, jika $a^{N-1} \not\equiv 1 \pmod N$, maka $N$ pasti bilangan komposit". Menggunakan properti ini, Uji Fermat memilih basis (base) acak $a$ untuk bilangan $N$ yang akan diuji, lalu menghitung $a^{N-1} \pmod N$ dan memeriksa apakah hasilnya $1$.
+Mengambil kontraposisi dari teorema ini, kita dapat mengatakan bahwa "Untuk suatu bilangan bulat $N$ dan bilangan bulat $a$ yang koprima dengan $N$, jika $a^{N-1} \not\equiv 1 \pmod N$, maka $N$ pasti bilangan komposit". Menggunakan properti ini, Uji [Fermat](https://kenji.blog/id/p/fermat/) memilih basis (base) acak $a$ untuk bilangan $N$ yang akan diuji, lalu menghitung $a^{N-1} \pmod N$ dan memeriksa apakah hasilnya $1$.
 
 ## Eksponensiasi Modular Cepat (Exponentiation by Squaring)
 
-Untuk melakukan Uji Fermat, perhitungan eksponensiasi yang besar $a^{N-1} \pmod N$ harus dihitung dengan cepat. "Eksponensiasi Modular (Modular Exponentiation / Binary Exponentiation)" digunakan untuk ini. Kompleksitas waktunya adalah $O(\log N)$, membuatnya sangat cepat.
+Untuk melakukan Uji [Fermat](https://kenji.blog/id/p/fermat/), perhitungan eksponensiasi yang besar $a^{N-1} \pmod N$ harus dihitung dengan cepat. "Eksponensiasi Modular (Modular Exponentiation / Binary Exponentiation)" digunakan untuk ini. Kompleksitas waktunya adalah $O(\log N)$, membuatnya sangat cepat.
 
 ```cpp
 // Menghitung a^b mod m menggunakan eksponensiasi modular
@@ -84,16 +84,16 @@ long long mod_pow(long long a, long long b, long long m) {
 
 ## Pseudoprima dan Bilangan Carmichael (Carmichael Numbers)
 
-Uji Fermat sangat kuat, tetapi memiliki kelemahan yang fatal. Artinya, ada bilangan sedemikian rupa sehingga meskipun $N$ adalah komposit, $a^{N-1} \equiv 1 \pmod N$ berlaku untuk semua $a$ ($a$ koprima dengan $N$).
+Uji [Fermat](https://kenji.blog/id/p/fermat/) sangat kuat, tetapi memiliki kelemahan yang fatal. Artinya, ada bilangan sedemikian rupa sehingga meskipun $N$ adalah komposit, $a^{N-1} \equiv 1 \pmod N$ berlaku untuk semua $a$ ($a$ koprima dengan $N$).
 
 Bilangan semacam itu disebut "pseudoprima absolut (absolute pseudoprimes)" atau "Bilangan Carmichael". Bilangan Carmichael terkecil adalah $561 = 3 \times 11 \times 17$.
-Karena adanya bilangan Carmichael, pengujian deterministik dengan "probabilitas 100%" tidak mungkin dilakukan hanya dengan Uji Fermat. Tidak peduli berapa banyak nilai $a$ berbeda yang dicoba, bilangan seperti $561$ akan selalu berpura-pura menjadi bilangan prima.
+Karena adanya bilangan Carmichael, pengujian deterministik dengan "probabilitas 100%" tidak mungkin dilakukan hanya dengan Uji [Fermat](https://kenji.blog/id/p/fermat/). Tidak peduli berapa banyak nilai $a$ berbeda yang dicoba, bilangan seperti $561$ akan selalu berpura-pura menjadi bilangan prima.
 
 ---
 
 # 3. Uji Keprimaan Miller-Rabin (Miller-Rabin Primality Test)
 
-"Uji Keprimaan Miller-Rabin", yang dirancang oleh Gary L. Miller dan Michael O. Rabin, dengan luar biasa mengatasi kelemahan Uji Fermat (adanya bilangan Carmichael).
+"Uji Keprimaan Miller-Rabin", yang dirancang oleh Gary L. Miller dan Michael O. Rabin, dengan luar biasa mengatasi kelemahan Uji [Fermat](https://kenji.blog/id/p/fermat/) (adanya bilangan Carmichael).
 Saat ini, ini paling banyak digunakan sebagai algoritma pengujian keprimaan berkecepatan tinggi yang praktis dalam perpustakaan internal berbagai bahasa pemrograman dan pembuatan kunci dalam sistem kriptografi.
 
 ## Prinsip Matematika
@@ -283,7 +283,7 @@ Mari bahas performa dari algoritma yang diimplementasikan.
 
 ## Kompleksitas Waktu (Time Complexity)
 * **Pembagian Coba-coba:** $O(\sqrt{N})$
-* **Uji Fermat:** Penghitungan pangkat $O(\log N) \times k$ ($k$ adalah jumlah percobaan)
+* **Uji [Fermat](https://kenji.blog/id/p/fermat/):** Penghitungan pangkat $O(\log N) \times k$ ($k$ adalah jumlah percobaan)
 * **Metode Miller-Rabin:** Penghitungan pangkat dan loop $O(\log N) \times k$
 
 Pada lingkungan 64-bit ($N \le 2^{64}$), metode Miller-Rabin deterministik di atas memeriksa paling banyak hanya $7$ basis. Oleh karena itu, kita dapat menganggap $k \le 7$ sebagai konstanta, dan keseluruhan kompleksitas waktu secara ketat adalah $O(\log N)$.
@@ -304,8 +304,8 @@ Artikel ini telah merangkum penjelasan lengkap mengenai pengujian keprimaan, mul
 Mari kita lihat kembali poin-poin utamanya.
 
 1. **Metode pembagian coba-coba** sangat pasti, tetapi karena kompleksitas perhitungannya adalah $O(\sqrt{N})$, itu tidak praktis ketika $N$ lebih besar dari $10^{12}$.
-2. **Uji Fermat** sangat cepat dengan $O(\log N)$, tetapi memiliki kelemahan fatal yaitu bisa tertipu oleh pseudoprima absolut seperti bilangan Carmichael.
-3. **Uji Keprimaan Miller-Rabin** memecahkan kelemahan dari Uji Fermat, dan ini adalah algoritma paling kuat dan praktis.
+2. **Uji [Fermat](https://kenji.blog/id/p/fermat/)** sangat cepat dengan $O(\log N)$, tetapi memiliki kelemahan fatal yaitu bisa tertipu oleh pseudoprima absolut seperti bilangan Carmichael.
+3. **Uji Keprimaan Miller-Rabin** memecahkan kelemahan dari Uji [Fermat](https://kenji.blog/id/p/fermat/), dan ini adalah algoritma paling kuat dan praktis.
 4. Dalam implementasi C++, kita dapat menangani overflow secara aman dalam perkalian 64-bit menggunakan `__int128_t`.
 5. Selama bilangan bulat berada dalam rentang 64-bit ($N < 2^{64}$), kita bisa membuat algoritmanya menjadi **deterministik (100% akurat) dan bukan probabilistik** dengan memilih sekumpulan tertentu $7$ atau $12$ bilangan prima sebagai basis.
 

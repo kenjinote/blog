@@ -75,9 +75,9 @@ $$ 1 \equiv a^{p-1} \pmod p $$
 
 This completes the proof.
 
-## Fermat Primality Test: Application to Prime Testing
+## [Fermat](https://kenji.blog/en/p/fermat/) Primality Test: Application to Prime Testing
 
-This theorem is applied in a **primality test algorithm** (the Fermat primality test) to determine whether a given number is prime.
+This theorem is applied in a **primality test algorithm** (the [Fermat](https://kenji.blog/en/p/fermat/) primality test) to determine whether a given number is prime.
 
 If you want to know whether a huge number $n$ is prime, randomly choose $a$ and check if $a^{n-1} \equiv 1 \pmod n$ holds true. If it does not hold true, then $n$ is **absolutely not a prime number** (it is a composite number).
 

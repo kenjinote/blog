@@ -12,7 +12,7 @@ tags: ["teoria dos números", "Mordell", "curvas elípticas", "equações diofan
 
 Um dos matemáticos que deixou uma marca brilhante no mundo matemático do século XX, particularmente no campo da **Teoria dos Números**, é Louis Joel Mordell (1888–1972). Ele alcançou resultados inovadores no estudo de equações diofantinas e lançou as bases para muitas teorias importantes na interseção da geometria algébrica moderna com a teoria dos números. Neste artigo, explicaremos em detalhes a vida de Mordell, os importantes teoremas e conjecturas que levam seu nome e o profundo impacto que ele teve na comunidade matemática.
 
-Muitos dos que ouviram falar de Mordell provavelmente o conhecem pelo **Teorema de Mordell** ou pela **Conjectura de Mordell**. Essas realizações não foram meras provas de um único teorema, mas serviram como prelúdios importantes para um magnífico drama matemático que levou à prova do **Último Teorema de Fermat**.
+Muitos dos que ouviram falar de Mordell provavelmente o conhecem pelo **Teorema de Mordell** ou pela **Conjectura de Mordell**. Essas realizações não foram meras provas de um único teorema, mas serviram como prelúdios importantes para um magnífico drama matemático que levou à prova do **Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)**.
 
 ## 2. Primeiros Anos: Do Autoestudo a Cambridge
 
@@ -30,7 +30,7 @@ O exemplo mais famoso de equação diofantina é aquele relacionado ao teorema d
 
 $$ x^2 + y^2 = z^2 $$
 
-As soluções inteiras para esta equação são chamadas de triplas pitagóricas, e sabe-se que existem infinitas delas. No entanto, à medida que o grau aumenta, o problema rapidamente se torna difícil. A seguinte equação, conhecida pelo Último Teorema de Fermat, é um excelente exemplo:
+As soluções inteiras para esta equação são chamadas de triplas pitagóricas, e sabe-se que existem infinitas delas. No entanto, à medida que o grau aumenta, o problema rapidamente se torna difícil. A seguinte equação, conhecida pelo Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), é um excelente exemplo:
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 
@@ -56,7 +56,7 @@ $$ E(\mathbb{Q}) \cong E(\mathbb{Q})_{\text{tors}} \oplus \mathbb{Z}^r $$
 
 Aqui, $E(\mathbb{Q})_{\text{tors}}$ é um **subgrupo de torção** que consiste num número finito de pontos, e $r$ é um número inteiro não negativo chamado de **posto** (rank).
 
-Este teorema significa que para encontrar todos os infinitos pontos racionais de uma curva elíptica, é suficiente encontrar um número finito de pontos "base". É um resultado monumental na geometria aritmética. A prova de Mordell foi um refinamento moderno do "Método da descida infinita" de Fermat.
+Este teorema significa que para encontrar todos os infinitos pontos racionais de uma curva elíptica, é suficiente encontrar um número finito de pontos "base". É um resultado monumental na geometria aritmética. A prova de Mordell foi um refinamento moderno do "Método da descida infinita" de [Fermat](https://kenji.blog/pt/p/fermat/).
 
 Mais tarde, em 1928, o matemático francês [André Weil](https://kenji.blog/pt/p/weil/) generalizou este teorema para corpos de números gerais e variedades abelianas, por isso é hoje frequentemente chamado de **Teorema de Mordell-Weil**.
 
@@ -85,7 +85,7 @@ $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
 Esta conjectura permaneceu sem solução por mais de 60 anos. No entanto, em 1983, foi finalmente provada pelo matemático alemão [Gerd Faltings](https://kenji.blog/pt/p/faltings/), tornando-se o **Teorema de Faltings**. Por essa conquista, Faltings recebeu a Medalha Fields em 1986.
 
-Além disso, a equação do Último Teorema de Fermat, $x^n + y^n = z^n$, tem um gênero 3 ou mais quando $n \ge 4$. Portanto, pela Conjectura de Mordell (Teorema de Faltings), segue-se imediatamente que a equação de Fermat tem no máximo um número finito de soluções racionais para cada $n$.
+Além disso, a equação do Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), $x^n + y^n = z^n$, tem um gênero 3 ou mais quando $n \ge 4$. Portanto, pela Conjectura de Mordell (Teorema de Faltings), segue-se imediatamente que a equação de [Fermat](https://kenji.blog/pt/p/fermat/) tem no máximo um número finito de soluções racionais para cada $n$.
 
 ## 7. Envolvimento com Ramanujan e Formas Modulares
 
@@ -135,7 +135,7 @@ O legado que [Louis Mordell](https://kenji.blog/pt/p/mordell/) deixou no mundo m
 2. **Teoria das Formas Modulares**: As técnicas que ele usou na demonstração da conjectura de Ramanujan tornaram-se o ponto de partida de uma teoria massiva que se estende até o moderno Programa de Langlands.
 3. **Resolução de Equações Diofantinas**: Suas abordagens concretas e numerosos artigos ainda hoje servem como base para métodos algorítmicos de resolução de equações por meio de computadores.
 
-Quando o Último Teorema de Fermat foi provado por [Andrew Wiles](https://kenji.blog/pt/p/wiles/), conceitos envolvendo profundamente Mordell, como curvas elípticas e formas modulares, foram indispensáveis ao seu embasamento teórico.
+Quando o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) foi provado por [Andrew Wiles](https://kenji.blog/pt/p/wiles/), conceitos envolvendo profundamente Mordell, como curvas elípticas e formas modulares, foram indispensáveis ao seu embasamento teórico.
 
 ## 12. Conclusão
 

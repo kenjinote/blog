@@ -16,7 +16,7 @@ In diesem Artikel entschlüsseln wir den mathematischen Mechanismus des **„Zah
 
 ---
 
-## 1. Der Ansatz zur Primfaktorzerlegung in der klassischen Berechnung: Eine Entwicklung aus Fermats Faktorisierungsmethode
+## 1. Der Ansatz zur Primfaktorzerlegung in der klassischen Berechnung: Eine Entwicklung aus [Fermat](https://kenji.blog/de/p/fermat/)s Faktorisierungsmethode
 
 Das Problem der Primfaktorzerlegung besteht darin, für eine gegebene zusammengesetzte Zahl $N$ die Primzahlen $p, q$ zu finden, sodass $N = p \times q$ gilt.
 

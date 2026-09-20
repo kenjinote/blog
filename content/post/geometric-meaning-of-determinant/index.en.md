@@ -116,7 +116,7 @@ Determinants have several well-known algebraic properties, but if you know their
 *   **Determinant of an inverse matrix** : $\det(A^{-1}) = \frac{1}{\det(A)}$
     If a certain transformation expands space by $2$ times, its inverse transformation must shrink space by $\frac{1}{2}$ to return it to its original state.
 
-## 7. Conclusion: Connecting to the Jacobian
+## 7. Conclusion: Connecting to the [Jacobi](https://kenji.blog/en/p/jacobi/)an
 
 The determinant is not just a cumbersome calculation formula, but an extremely powerful geometric tool for describing the deformation of space.
 
@@ -124,4 +124,4 @@ The determinant is not just a cumbersome calculation formula, but an extremely p
 *   **Sign** : Whether the "orientation" of space is preserved (positive) or reversed (negative).
 *   **Zero** : Space "collapsing" into a lower dimension (loss of dimensionality and irreversibility).
 
-Having this intuitive image will serve as an important foundation for understanding the **Jacobian** (the local volume scale factor in non-linear transformations) that you will learn later in calculus. In the world of linear algebra, constantly linking formulas with geometric images is the shortest path to deep understanding.
+Having this intuitive image will serve as an important foundation for understanding the **[Jacobi](https://kenji.blog/en/p/jacobi/)an** (the local volume scale factor in non-linear transformations) that you will learn later in calculus. In the world of linear algebra, constantly linking formulas with geometric images is the shortest path to deep understanding.

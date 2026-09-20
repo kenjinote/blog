@@ -15,7 +15,7 @@ In the worlds of computer science, cryptography, and competitive programming, de
 
 Also, in competitive programming (such as AtCoder and Codeforces), primality testing is a frequently occurring theme. For massive inputs with constraints like $N \le 10^{18}$, in situations where you need to perform tens of thousands of primality tests within 1 second, traditional, naive algorithms will certainly result in a Time Limit Exceeded (TLE).
 
-In this article, we will thoroughly explain everything from naive primality testing algorithms to the probabilistic primality testing method "Fermat's Primality Test," and the practically strongest fast algorithm that overcomes its weaknesses: the "Miller-Rabin Primality Test." We will cover everything from the mathematical background to a highly optimized implementation in C++. In particular, for 64-bit integers ($N < 2^{64}$), we will explain in detail a method that goes beyond probabilistic testing to "100% deterministic primality testing" and provide C++ source code that you can use directly in practice.
+In this article, we will thoroughly explain everything from naive primality testing algorithms to the probabilistic primality testing method "[Fermat](https://kenji.blog/en/p/fermat/)'s Primality Test," and the practically strongest fast algorithm that overcomes its weaknesses: the "Miller-Rabin Primality Test." We will cover everything from the mathematical background to a highly optimized implementation in C++. In particular, for 64-bit integers ($N < 2^{64}$), we will explain in detail a method that goes beyond probabilistic testing to "100% deterministic primality testing" and provide C++ source code that you can use directly in practice.
 
 ---
 
@@ -50,9 +50,9 @@ The time complexity of this algorithm is $O(\sqrt{N})$. If $N \le 10^{12}$, it c
 
 ---
 
-# 2. Fermat's Primality Test: The Dawn of Probabilistic Primality Testing
+# 2. [Fermat](https://kenji.blog/en/p/fermat/)'s Primality Test: The Dawn of Probabilistic Primality Testing
 
-To break through the limitations of trial division, "Probabilistic Algorithms" using theorems from number theory were devised. A prime example is the "Fermat Primality Test," which utilizes [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
+To break through the limitations of trial division, "Probabilistic Algorithms" using theorems from number theory were devised. A prime example is the "[Fermat](https://kenji.blog/en/p/fermat/) Primality Test," which utilizes [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
 
 ## [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)
 
@@ -61,11 +61,11 @@ This theorem, discovered by [Pierre de Fermat](https://kenji.blog/en/p/fermat/),
 > For any prime $p$ and any integer $a$ that is coprime to $p$ (not a multiple of $p$), the following congruence holds:
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
-Taking the contrapositive of this theorem, we can say, "For a given integer $N$ and an integer $a$ coprime to $N$, if $a^{N-1} \not\equiv 1 \pmod N$, then $N$ is definitely a composite number." The Fermat primality test uses this property by choosing a random base $a$ for the number $N$ to be tested, calculating $a^{N-1} \pmod N$, and checking if it equals $1$.
+Taking the contrapositive of this theorem, we can say, "For a given integer $N$ and an integer $a$ coprime to $N$, if $a^{N-1} \not\equiv 1 \pmod N$, then $N$ is definitely a composite number." The [Fermat](https://kenji.blog/en/p/fermat/) primality test uses this property by choosing a random base $a$ for the number $N$ to be tested, calculating $a^{N-1} \pmod N$, and checking if it equals $1$.
 
 ## Fast Modular Exponentiation (Binary Exponentiation)
 
-To perform the Fermat test, we need to quickly compute the massive exponentiation $a^{N-1} \pmod N$. We use "Modular Exponentiation / Binary Exponentiation" for this. The time complexity is $O(\log N)$, making it extremely fast.
+To perform the [Fermat](https://kenji.blog/en/p/fermat/) test, we need to quickly compute the massive exponentiation $a^{N-1} \pmod N$. We use "Modular Exponentiation / Binary Exponentiation" for this. The time complexity is $O(\log N)$, making it extremely fast.
 
 ```cpp
 // Calculating a^b mod m using binary exponentiation
@@ -84,16 +84,16 @@ long long mod_pow(long long a, long long b, long long m) {
 
 ## Pseudoprimes and Carmichael Numbers
 
-The Fermat test is very powerful, but it has a fatal flaw. There are numbers $N$ that are composite, yet $a^{N-1} \equiv 1 \pmod N$ holds for all $a$ (where $a$ is coprime to $N$).
+The [Fermat](https://kenji.blog/en/p/fermat/) test is very powerful, but it has a fatal flaw. There are numbers $N$ that are composite, yet $a^{N-1} \equiv 1 \pmod N$ holds for all $a$ (where $a$ is coprime to $N$).
 
 Such numbers are called "absolute pseudoprimes" or "Carmichael numbers." The smallest Carmichael number is $561 = 3 \times 11 \times 17$.
-Because Carmichael numbers exist, the Fermat test alone cannot provide a "100% probability" deterministic test. No matter how many different $a$'s you try, numbers like $561$ will always pretend to be prime (fooling the test).
+Because Carmichael numbers exist, the [Fermat](https://kenji.blog/en/p/fermat/) test alone cannot provide a "100% probability" deterministic test. No matter how many different $a$'s you try, numbers like $561$ will always pretend to be prime (fooling the test).
 
 ---
 
 # 3. Miller-Rabin Primality Test
 
-The "Miller-Rabin Primality Test," devised by Gary L. Miller and Michael O. Rabin, brilliantly overcame the weakness of the Fermat test (the existence of Carmichael numbers).
+The "Miller-Rabin Primality Test," devised by Gary L. Miller and Michael O. Rabin, brilliantly overcame the weakness of the [Fermat](https://kenji.blog/en/p/fermat/) test (the existence of Carmichael numbers).
 Currently, it is the most widely used practical fast primality testing algorithm in internal libraries of various programming languages and in key generation for cryptographic systems.
 
 ## Mathematical Principles
@@ -283,7 +283,7 @@ Let's discuss the performance of the implemented algorithm.
 
 ## Time Complexity
 * **Trial Division:** $O(\sqrt{N})$
-* **Fermat Test:** Exponentiation calculation $O(\log N) \times k$ (where $k$ is the number of trials)
+* **[Fermat](https://kenji.blog/en/p/fermat/) Test:** Exponentiation calculation $O(\log N) \times k$ (where $k$ is the number of trials)
 * **Miller-Rabin Method:** Exponentiation calculation and looping $O(\log N) \times k$
 
 In a 64-bit environment ($N \le 2^{64}$), the deterministic Miller-Rabin method above verifies at most $7$ bases. Therefore, we can treat $k \le 7$ as a constant, and the overall time complexity is strictly $O(\log N)$.
@@ -304,8 +304,8 @@ In this article, we covered everything from the basics of primality testing to a
 Let's review the key points.
 
 1. **Trial Division** is reliable, but its time complexity of $O(\sqrt{N})$ makes it impractical when $N$ exceeds $10^{12}$.
-2. **Fermat's Primality Test** is extremely fast at $O(\log N)$, but it has a fatal flaw of being fooled by absolute pseudoprimes like Carmichael numbers.
-3. The **Miller-Rabin Primality Test** is a practical and powerful algorithm that eliminates the weaknesses of the Fermat test.
+2. **[Fermat](https://kenji.blog/en/p/fermat/)'s Primality Test** is extremely fast at $O(\log N)$, but it has a fatal flaw of being fooled by absolute pseudoprimes like Carmichael numbers.
+3. The **Miller-Rabin Primality Test** is a practical and powerful algorithm that eliminates the weaknesses of the [Fermat](https://kenji.blog/en/p/fermat/) test.
 4. In the C++ implementation, leveraging `__int128_t` allows for safe handling of 64-bit integer multiplication overflows.
 5. Within the range of 64-bit integers ($N < 2^{64}$), choosing $7$ or $12$ specific primes as bases makes it possible to perform **deterministic (100% accurate) primality testing**, rather than probabilistic.
 

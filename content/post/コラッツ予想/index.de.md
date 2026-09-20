@@ -238,7 +238,7 @@ Auch Programmier-Anfänger können es ausprobieren, also spielt auf jeden Fall m
 
 Wer mehr über solche „wundersame Mathematik × Programmierung“-Themen wissen möchte,
 kann gerne ungeniert „Erzähl mir mehr“ anfragen.
-Irgendwann werde ich auch über die Riemannsche Vermutung, Primzahlen und vieles mehr berichten!
+Irgendwann werde ich auch über die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung, Primzahlen und vieles mehr berichten!
 
 ---
 

@@ -49,7 +49,7 @@ Despite being busy with harsh daily teaching duties, he stayed up late into the 
 
 ## Spectacular Return to the Mathematical World and Glory
 
-After a long period of obscurity as a rural school teacher, a dramatic turning point came for Weierstrass in 1854. He published a groundbreaking paper on Abelian functions in "Crelle's Journal" (Journal for Pure and Applied Mathematics), the most authoritative mathematical journal at the time.
+After a long period of obscurity as a rural school teacher, a dramatic turning point came for Weierstrass in 1854. He published a groundbreaking paper on [Abel](https://kenji.blog/en/p/abel/)ian functions in "Crelle's Journal" (Journal for Pure and Applied Mathematics), the most authoritative mathematical journal at the time.
 
 This paper immediately attracted the attention of mathematicians across Europe. His research brilliantly solved difficult problems that prominent mathematicians of the time had been tackling for years, and the novelty of his methods and the perfection of his logic were unparalleled. The University of Königsberg awarded him an honorary doctorate in recognition of his achievements, and the Prussian Ministry of Education also took steps to relieve him from his duties as a gymnasium teacher.
 
@@ -86,9 +86,9 @@ This discovery made mathematicians painfully realize how unreliable geometric in
 
 ### 3. Construction of Complex Analysis and Elliptic Function Theory
 
-Weierstrass also played a decisive role in the theory of complex functions. While Cauchy and Riemann emphasized geometric intuition and integration, Weierstrass adopted an algebraic approach based on "power series". He rigorously defined complex functions using the concept of analytic continuation and established the standard methods of modern complex analysis.
+Weierstrass also played a decisive role in the theory of complex functions. While [Cauchy](https://kenji.blog/en/p/cauchy/) and [Riemann](https://kenji.blog/en/p/riemann/) emphasized geometric intuition and integration, Weierstrass adopted an algebraic approach based on "power series". He rigorously defined complex functions using the concept of analytic continuation and established the standard methods of modern complex analysis.
 
-He also constructed an extremely beautiful system in the fields of elliptic function theory and Abelian function theory. Weierstrass's $\wp$-function (p-function) is still widely used today as the most fundamental function in handling elliptic functions.
+He also constructed an extremely beautiful system in the fields of elliptic function theory and [Abel](https://kenji.blog/en/p/abel/)ian function theory. Weierstrass's $\wp$-function (p-function) is still widely used today as the most fundamental function in handling elliptic functions.
 
 ```mermaid
 graph TD
@@ -120,7 +120,7 @@ Under Weierstrass's dedicated guidance, Kovalevskaya achieved magnificent result
 
 ## Later Years and Legacy
 
-In his later years, Weierstrass experienced a fierce dispute over the foundations of mathematics with Leopold Kronecker, a colleague and former student. Kronecker stated, "God made the integers, all else is the work of man," and severely criticized Weierstrass's analysis and Cantor's set theory from an intuitionist standpoint. This conflict deeply wounded Weierstrass's heart.
+In his later years, Weierstrass experienced a fierce dispute over the foundations of mathematics with Leopold [Kronecker](https://kenji.blog/en/p/kronecker/), a colleague and former student. [Kronecker](https://kenji.blog/en/p/kronecker/) stated, "God made the integers, all else is the work of man," and severely criticized Weierstrass's analysis and Cantor's set theory from an intuitionist standpoint. This conflict deeply wounded Weierstrass's heart.
 
 His health also gradually deteriorated, and in his later years, he suffered from dizziness and bronchitis, forcing him to live in a wheelchair. Nevertheless, he never lost his passion for mathematics until the end, working on compiling his own collected works with the help of his disciples.
 

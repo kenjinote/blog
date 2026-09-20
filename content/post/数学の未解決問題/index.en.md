@@ -38,11 +38,11 @@ For example,
 
 The problem itself is very simple, but it remains unproven.
 
-## Riemann Hypothesis
+## [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis
 
-The [Riemann hypothesis](https://kenji.blog/en/p/riemann-hypothesis/) is the conjecture that the zeros of the Riemann zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
+The [Riemann hypothesis](https://kenji.blog/en/p/riemann-hypothesis/) is the conjecture that the zeros of the [Riemann](https://kenji.blog/en/p/riemann/) zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
 
-The Riemann zeta function is the function $\zeta$ defined by:
+The [Riemann](https://kenji.blog/en/p/riemann/) zeta function is the function $\zeta$ defined by:
 
 $$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$
 

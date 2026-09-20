@@ -68,7 +68,7 @@ Este resultado foi inovador em relação à finitude das soluções das equaçõ
 
 ### 3.2 Zero de Siegel
 
-Na teoria analítica dos números, a distribuição dos zeros da função $L$ de Dirichlet $L(s, \chi)$ é de extrema importância para as extensões naturais do teorema dos números primos e do teorema sobre progressões aritméticas. De acordo com a Hipótese Generalizada de Riemann (GRH), todos os zeros na faixa crítica com uma parte real entre $0$ e $1$ devem situar-se na reta onde a parte real é $1/2$.
+Na teoria analítica dos números, a distribuição dos zeros da função $L$ de Dirichlet $L(s, \chi)$ é de extrema importância para as extensões naturais do teorema dos números primos e do teorema sobre progressões aritméticas. De acordo com a Hipótese Generalizada de [Riemann](https://kenji.blog/pt/p/riemann/) (GRH), todos os zeros na faixa crítica com uma parte real entre $0$ e $1$ devem situar-se na reta onde a parte real é $1/2$.
 
 No entanto, para um caráter real (de um corpo quadrático real) $\chi$, a matemática atual não excluiu a possibilidade de existir um zero real com uma parte real muito próxima a $1$. Tal hipotético zero de contraexemplo é chamado de **zero de Siegel** (Siegel zero) ou zero excepcional.
 
@@ -90,7 +90,7 @@ $$
 \mathcal{H}_g = \left\{ Z \in M_g(\mathbb{C}) \mid Z^T = Z, \text{ Im}(Z) \text{ é definida positiva} \right\}
 $$
 
-Aqui, quando $g=1$, esse espaço coincide perfeitamente com o semiplano superior de Poincaré habitual. Siegel introduziu este espaço de dimensão superior durante o processo de aprofundamento na teoria analítica das formas quadráticas, e mostrou que as formas automorfas definidas neste espaço estão profundamente conectadas ao número de representações de inteiros por formas quadráticas.
+Aqui, quando $g=1$, esse espaço coincide perfeitamente com o semiplano superior de [Poincaré](https://kenji.blog/pt/p/poincare/) habitual. Siegel introduziu este espaço de dimensão superior durante o processo de aprofundamento na teoria analítica das formas quadráticas, e mostrou que as formas automorfas definidas neste espaço estão profundamente conectadas ao número de representações de inteiros por formas quadráticas.
 
 Além disso, ele estabeleceu as bases para a **fórmula de Siegel-Weil** dentro da teoria analítica das formas quadráticas. Esta é uma fórmula maravilhosa que descreve o número de representações por formas quadráticas como os coeficientes de Fourier de séries de Eisenstein, e pode ser considerada uma expressão analítica do princípio local-global (princípio de Hasse). Essas teorias são conceitos indispensáveis que formam a base da teoria posterior das representações automorfas e do programa de Langlands.
 
@@ -129,7 +129,7 @@ A visão de Siegel sobre a matemática era tão impressionante quanto as realiza
 
 Em meados do século XX, um estilo abstrato defendido pelo jovem coletivo matemático francês, o grupo Bourbaki - que tentava reconstruir toda a matemática a partir da teoria dos conjuntos e sistemas axiomáticos - estava varrendo o mundo. No entanto, Siegel dirigiu severas críticas a essa tendência. Ele rejeitou o estilo Bourbaki como "formalismo vazio" e deixou comentários como:
 
-> "A abstração excessiva da matemática recente caiu num formalismo vazio e não produz resultados significativos. Devemos retornar aos problemas concretos, ricos em conteúdo verdadeiro, do tipo que Gauss, Euler, Riemann e Jacobi enfrentaram."
+> "A abstração excessiva da matemática recente caiu num formalismo vazio e não produz resultados significativos. Devemos retornar aos problemas concretos, ricos em conteúdo verdadeiro, do tipo que Gauss, Euler, [Riemann](https://kenji.blog/pt/p/riemann/) e [Jacobi](https://kenji.blog/pt/p/jacobi/) enfrentaram."
 
 Devido a essa forte convicção, a leitura de seus artigos é muito recompensadora; por outro lado, para os leitores modernos, os cálculos longos e altamente técnicos aparecem por toda parte, frequentemente exigindo um esforço imenso para serem decifrados. Ele nunca comprometeu a sua filosofia de vida de que "os conceitos e estruturas abstratos são apenas um meio para resolver problemas concretos e difíceis". Essa postura distante o tornou uma figura um tanto peculiar entre os matemáticos de sua época.
 

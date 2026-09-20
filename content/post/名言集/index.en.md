@@ -150,7 +150,7 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 > Good code is its own best documentation. (Steve McConnell)
 
-> Programs must be written for people to read, and only incidentally for machines to execute. (Harold Abelson)
+> Programs must be written for people to read, and only incidentally for machines to execute. (Harold [Abel](https://kenji.blog/en/p/abel/)son)
 
 > First, solve the problem. Then, write the code. (John Johnson)
 

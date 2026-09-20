@@ -92,8 +92,8 @@ Eiffel is an object-oriented programming language
 ## Ada
 Ada is an object-oriented programming language
 
-## Pascal
-Pascal is a procedural programming language
+## [Pascal](https://kenji.blog/en/p/pascal/)
+[Pascal](https://kenji.blog/en/p/pascal/) is a procedural programming language
 
 ## COBOL
 It has been around for a long time. It is a general-purpose programming language.

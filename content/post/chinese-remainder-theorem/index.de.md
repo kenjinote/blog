@@ -219,7 +219,7 @@ $$
 
 Eine der wichtigsten Anwendungen dieses verallgemeinerten Satzes ist der **Chinesische Restsatz** im univariaten Polynomring $F[x]$ über einem Körper $F$.
 
-„Teilerfremde ganze Zahlen“ im Fall der ganzen Zahlen entsprechen im Polynomring „Polynomen ohne gemeinsame Nullstellen (deren größter gemeinsamer Teiler eine Konstante ist)“. Diese Polynomversion des CRT liefert die theoretische Untermauerung der Lagrange-Interpolation, was genau dem Algorithmus entspricht, um ein Polynom minimalen Grades eindeutig zu bestimmen, das durch eine gegebene Menge von Punkten verläuft. Darüber hinaus bildet dies die mathematische Grundlage für **Reed-Solomon-Codes**, eine Art von Fehlerkorrekturcodes.
+„Teilerfremde ganze Zahlen“ im Fall der ganzen Zahlen entsprechen im Polynomring „Polynomen ohne gemeinsame Nullstellen (deren größter gemeinsamer Teiler eine Konstante ist)“. Diese Polynomversion des CRT liefert die theoretische Untermauerung der [Lagrange](https://kenji.blog/de/p/lagrange/)-Interpolation, was genau dem Algorithmus entspricht, um ein Polynom minimalen Grades eindeutig zu bestimmen, das durch eine gegebene Menge von Punkten verläuft. Darüber hinaus bildet dies die mathematische Grundlage für **Reed-Solomon-Codes**, eine Art von Fehlerkorrekturcodes.
 
 ## Massiv paralleles Rechnen mithilfe des Restklassensystems (RNS)
 

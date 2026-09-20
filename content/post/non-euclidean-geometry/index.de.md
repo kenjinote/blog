@@ -44,13 +44,13 @@ $$
 
 Aufgrund der außergewöhnlichen Innovationskraft dieser Entdeckung fürchtete Gauss das Unverständnis der Öffentlichkeit so sehr, dass er von einer Veröffentlichung zu Lebzeiten absah. Durch die Veröffentlichung der Arbeiten von Bolyai und Lobatschewski erlebte die Welt der Mathematik einen grundlegenden Paradigmenwechsel.
 
-## 4. Riemannsche Geometrie: Die Verallgemeinerung des Raumkonzepts
+## 4. [Riemann](https://kenji.blog/de/p/riemann/)sche Geometrie: Die Verallgemeinerung des Raumkonzepts
 
-Der nächste große Sprung in der nichteuklidischen Geometrie wurde durch [Bernhard Riemann](https://kenji.blog/de/p/riemann/), einen Schüler von Gauss, eingeleitet. In seiner Antrittsvorlesung im Jahr 1854 präsentierte Riemann eine bahnbrechende Idee über die Grundlagen der Geometrie.
+Der nächste große Sprung in der nichteuklidischen Geometrie wurde durch [Bernhard Riemann](https://kenji.blog/de/p/riemann/), einen Schüler von Gauss, eingeleitet. In seiner Antrittsvorlesung im Jahr 1854 präsentierte [Riemann](https://kenji.blog/de/p/riemann/) eine bahnbrechende Idee über die Grundlagen der Geometrie.
 
-Er führte den **metrischen Tensor** ein, der lokal die Krümmung des Raumes definiert, und konstruierte eine allgemeinere Geometrie (**Riemannsche Geometrie**), in der sich Dimension und Krümmung des Raumes je nach Ort ändern.
+Er führte den **metrischen Tensor** ein, der lokal die Krümmung des Raumes definiert, und konstruierte eine allgemeinere Geometrie (**[Riemann](https://kenji.blog/de/p/riemann/)sche Geometrie**), in der sich Dimension und Krümmung des Raumes je nach Ort ändern.
 
-Innerhalb von Riemanns Rahmenwerk konnten euklidische Geometrie (Krümmung 0) und hyperbolische Geometrie (negative konstante Krümmung) zusammen mit der Geometrie der Kugeloberfläche (positive konstante Krümmung, **elliptische Geometrie**) einheitlich behandelt werden. In der elliptischen Geometrie „existieren keine“ parallelen Linien, und die Summe der Innenwinkel eines Dreiecks ist größer als 180 Grad.
+Innerhalb von [Riemann](https://kenji.blog/de/p/riemann/)s Rahmenwerk konnten euklidische Geometrie (Krümmung 0) und hyperbolische Geometrie (negative konstante Krümmung) zusammen mit der Geometrie der Kugeloberfläche (positive konstante Krümmung, **elliptische Geometrie**) einheitlich behandelt werden. In der elliptischen Geometrie „existieren keine“ parallelen Linien, und die Summe der Innenwinkel eines Dreiecks ist größer als 180 Grad.
 
 $$
 \text{Summe der Innenwinkel eines Dreiecks in der elliptischen Geometrie} > 180^\circ
@@ -68,7 +68,7 @@ graph LR
 
 ## 5. Der Weg zur Relativitätstheorie: Die Verschmelzung von Mathematik und Physik
 
-Der großartige mathematische Rahmen, den Riemann aufgebaut hatte, blieb eine Zeit lang auf den Bereich der reinen Mathematik beschränkt. Im frühen 20. Jahrhundert, als Albert Einstein versuchte, eine neue Gravitationstheorie aufzubauen, sollte diese Riemannsche Geometrie jedoch eine entscheidende Rolle spielen.
+Der großartige mathematische Rahmen, den [Riemann](https://kenji.blog/de/p/riemann/) aufgebaut hatte, blieb eine Zeit lang auf den Bereich der reinen Mathematik beschränkt. Im frühen 20. Jahrhundert, als Albert Einstein versuchte, eine neue Gravitationstheorie aufzubauen, sollte diese [Riemann](https://kenji.blog/de/p/riemann/)sche Geometrie jedoch eine entscheidende Rolle spielen.
 
 Einstein schlug in der speziellen Relativitätstheorie das Konzept der „Raumzeit“ vor, in dem Zeit und Raum integriert wurden. Und in der **allgemeinen Relativitätstheorie** gelangte er zu der bahnbrechenden Idee: „Gravitation ist die Krümmung (Verzerrung) der Raumzeit durch massereiche Objekte.“
 

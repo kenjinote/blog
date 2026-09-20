@@ -36,7 +36,7 @@ Ici, $V$ représente la **classe de tous les ensembles** ( $\text{classe univers
 
 À la fin des années 1920, la mécanique quantique se développait sous la forme de deux théories apparemment complètement différentes : la « mécanique matricielle » de Werner Heisenberg et la « mécanique ondulatoire » d'Erwin Schrödinger. Von Neumann a prouvé que ces deux théories étaient mathématiquement équivalentes, donnant à la mécanique quantique un fondement mathématique strict.
 
-En utilisant la théorie de l' **espace de Hilbert**, il a formulé les grandeurs physiques (observables) comme des opérateurs auto-adjoints sur un espace de Hilbert de dimension infinie. Son livre « Fondements mathématiques de la mécanique quantique », publié en 1932, est considéré comme une bible même pour les physiciens modernes et est toujours très apprécié aujourd'hui comme manuel standard pour la mécanique quantique.
+En utilisant la théorie de l' **espace de [Hilbert](https://kenji.blog/fr/p/hilbert/)**, il a formulé les grandeurs physiques (observables) comme des opérateurs auto-adjoints sur un espace de [Hilbert](https://kenji.blog/fr/p/hilbert/) de dimension infinie. Son livre « Fondements mathématiques de la mécanique quantique », publié en 1932, est considéré comme une bible même pour les physiciens modernes et est toujours très apprécié aujourd'hui comme manuel standard pour la mécanique quantique.
 
 Il a également introduit le concept de la **matrice de densité** ( $\text{matrice de densité}$ ) pour décrire les états mixtes, jetant les bases de la mécanique statistique quantique.
 
@@ -112,7 +112,7 @@ Il existe d'innombrables anecdotes entourant le cerveau surhumain de von Neumann
 Les livres et les articles que von Neumann a laissés au cours de sa vie sont divers, mais nous présentons ici des œuvres représentatives qui ont eu un impact particulièrement important sur les générations suivantes.
 
 1. **Les fondements mathématiques de la mécanique quantique (1932)**
-   Une œuvre monumentale qui a strictement formulé la mécanique quantique en utilisant la théorie de l'espace de Hilbert.
+   Une œuvre monumentale qui a strictement formulé la mécanique quantique en utilisant la théorie de l'espace de [Hilbert](https://kenji.blog/fr/p/hilbert/).
 2. **Théorie des jeux et comportement économique (1944)**
    Co-écrit avec Oskar Morgenstern. Un chef-d'œuvre qui a discuté systématiquement de tout, des jeux à somme nulle aux jeux coopératifs.
 3. **L'ordinateur et le cerveau (1958)**

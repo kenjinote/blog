@@ -10,13 +10,13 @@ tags: ["Yutaka Taniyama", "Mathématiques", "Dernier Théorème de Fermat", "Con
 
 # [[Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/) : La vie et les réalisations du génie mathématique qui a défié les problèmes non résolus](https://kenji.blog/p/taniyama-yutaka/)
 
-La démonstration du **Dernier Théorème de Fermat** est l'un des développements les plus spectaculaires et importants des mathématiques modernes. Derrière cette réalisation monumentale se cache une étonnante conjecture proposée par deux mathématiciens japonais. L'un d'eux était **[Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/)** (1927 - 1958), décédé prématurément. Dans cet article, nous plongeons profondément dans la vision grandiose qui sous-tend la "Conjecture de Taniyama-Shimura" qu'il a proposée, et dans sa propre vie tumultueuse.
+La démonstration du **Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)** est l'un des développements les plus spectaculaires et importants des mathématiques modernes. Derrière cette réalisation monumentale se cache une étonnante conjecture proposée par deux mathématiciens japonais. L'un d'eux était **[Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/)** (1927 - 1958), décédé prématurément. Dans cet article, nous plongeons profondément dans la vision grandiose qui sous-tend la "Conjecture de Taniyama-Shimura" qu'il a proposée, et dans sa propre vie tumultueuse.
 
 ## 1. Jeunesse de [Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/)
 
 [Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/) est né en 1927 dans la ville de Kisai, préfecture de Saitama (aujourd'hui ville de Kazo). Il a montré un talent extraordinaire pour les mathématiques dès son plus jeune âge, mais ses années d'études ont coïncidé avec la période chaotique de la Seconde Guerre mondiale. Il a contracté la tuberculose et a souvent manqué de longues périodes de cours au lycée. Pendant sa convalescence, il lisait des livres de mathématiques seul et a développé une pensée mathématique profonde grâce à l'auto-apprentissage. On dit que cette période d'isolement a aiguisé son sens mathématique unique et intuitif.
 
-Après être entré au département de mathématiques de la faculté des sciences de l'Université de Tokyo, il a développé un fort intérêt pour l'algèbre abstraite et la théorie des nombres. Bien qu'elle soit dans une période de reconstruction d'après-guerre, la communauté mathématique japonaise de l'époque visait une recherche de classe mondiale, influencée par de jeunes chercheurs inspirés par Teiji Takagi et Emil Artin. Taniyama a laissé son talent s'épanouir au milieu de cet enthousiasme.
+Après être entré au département de mathématiques de la faculté des sciences de l'Université de Tokyo, il a développé un fort intérêt pour l'algèbre abstraite et la théorie des nombres. Bien qu'elle soit dans une période de reconstruction d'après-guerre, la communauté mathématique japonaise de l'époque visait une recherche de classe mondiale, influencée par de jeunes chercheurs inspirés par Teiji [Takagi](https://kenji.blog/fr/p/takagi-teiji/) et Emil Artin. Taniyama a laissé son talent s'épanouir au milieu de cet enthousiasme.
 
 ## 2. La rencontre avec [Goro Shimura](https://kenji.blog/fr/p/shimura-goro/)
 
@@ -74,22 +74,22 @@ La carrière de Taniyama en tant que mathématicien semblait se dérouler sans h
 
 Sa lettre de suicide n'indiquait aucun souci spécifique. Il a écrit : "Jusqu'à hier, je n'avais pas l'intention précise de me tuer", suggérant que même lui ne pouvait pas expliquer de manière totalement logique ses actes. Il s'agissait peut-être d'épuisement dû au surmenage ou d'une vague anxiété face à l'avenir, mais les raisons exactes restent inexpliquées à ce jour. Quelques semaines plus tard, sa fiancée, qui l'aimait profondément, s'est également suicidée, laissant un mot disant en substance : "Puisqu'il est parti seul, je dois aller à ses côtés." Cette conclusion tragique a laissé de profondes cicatrices dans les cœurs des personnes impliquées.
 
-## 6. Un pont vers le Dernier Théorème de Fermat
+## 6. Un pont vers le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)
 
-Après la mort de Taniyama, [Goro Shimura](https://kenji.blog/fr/p/shimura-goro/) a rigoureusement formulé cette conjecture et l'a diffusée auprès des mathématiciens du monde entier. Pendant longtemps, cette conjecture a été considérée comme un objectif si difficile qu'elle semblait "indémontrable". Cependant, un tournant dramatique s'est produit dans les années 1980. Le mathématicien allemand Gerhard Frey a proposé une idée étonnante : **"Si le Dernier Théorème de Fermat admet un contre-exemple, la courbe elliptique construite à partir de ce contre-exemple ne peut pas être modulaire."**
+Après la mort de Taniyama, [Goro Shimura](https://kenji.blog/fr/p/shimura-goro/) a rigoureusement formulé cette conjecture et l'a diffusée auprès des mathématiciens du monde entier. Pendant longtemps, cette conjecture a été considérée comme un objectif si difficile qu'elle semblait "indémontrable". Cependant, un tournant dramatique s'est produit dans les années 1980. Le mathématicien allemand Gerhard Frey a proposé une idée étonnante : **"Si le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) admet un contre-exemple, la courbe elliptique construite à partir de ce contre-exemple ne peut pas être modulaire."**
 
-La courbe elliptique construite par Frey (la courbe de Frey) a pris la forme suivante. Supposons qu'il existe une solution entière à l'équation de Fermat $A^n + B^n = C^n$. En utilisant cette solution, nous créons la courbe elliptique suivante :
+La courbe elliptique construite par Frey (la courbe de Frey) a pris la forme suivante. Supposons qu'il existe une solution entière à l'équation de [Fermat](https://kenji.blog/fr/p/fermat/) $A^n + B^n = C^n$. En utilisant cette solution, nous créons la courbe elliptique suivante :
 
 $$ E: y^2 = x (x - A^n) (x + B^n) $$
 
 Cette courbe possède des propriétés extrêmement "anormales" et on pensait qu'il était absolument impossible de la construire à partir de formes modulaires (ce qui signifie qu'elle n'est pas modulaire). L'intuition de Frey a ensuite été rigoureusement prouvée par le mathématicien américain Ken Ribet, via la "Conjecture Epsilon" formulée par le mathématicien français Jean-Pierre Serre.
 
 Cela a achevé un cadre logique :
-1. Si le Dernier Théorème de Fermat est faux, il existe une courbe elliptique non modulaire (courbe de Frey).
+1. Si le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est faux, il existe une courbe elliptique non modulaire (courbe de Frey).
 2. Cependant, selon la Conjecture de Taniyama-Shimura, "toutes les courbes elliptiques sont modulaires".
-3. Par conséquent, si la Conjecture de Taniyama-Shimura est vraie, la courbe de Frey ne peut pas exister, et le Dernier Théorème de Fermat doit également être vrai.
+3. Par conséquent, si la Conjecture de Taniyama-Shimura est vraie, la courbe de Frey ne peut pas exister, et le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) doit également être vrai.
 
-En d'autres termes, la chaîne du destin était liée : **"Si la Conjecture de Taniyama-Shimura est prouvée, le Dernier Théorème de Fermat, non résolu pendant plus de 300 ans, sera automatiquement prouvé également."**
+En d'autres termes, la chaîne du destin était liée : **"Si la Conjecture de Taniyama-Shimura est prouvée, le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/), non résolu pendant plus de 300 ans, sera automatiquement prouvé également."**
 
 ```mermaid
 flowchart TD
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. Preuve de la conjecture et Programme de Langlands
 
-La personne la plus inspirée par ce fait a été le mathématicien britannique **[Andrew Wiles](https://kenji.blog/fr/p/wiles/)**. Il était fasciné par le Dernier Théorème de Fermat depuis son enfance et a résolu de consacrer sa vie à le prouver. Après sept ans de recherche secrète, il a annoncé en 1993 qu'il avait "prouvé la Conjecture de Taniyama-Shimura pour les courbes elliptiques semi-stables". Bien qu'une faille ait été trouvée dans une partie de la démonstration, avec l'aide de son ancien élève Richard Taylor, il a réussi à combler cette faille en 1995 et a publié la preuve complète. Par conséquent, la partie cruciale de la conjecture laissée par Taniyama a été prouvée et, simultanément, le Dernier Théorème de Fermat est devenu une vérité éternelle.
+La personne la plus inspirée par ce fait a été le mathématicien britannique **[Andrew Wiles](https://kenji.blog/fr/p/wiles/)**. Il était fasciné par le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) depuis son enfance et a résolu de consacrer sa vie à le prouver. Après sept ans de recherche secrète, il a annoncé en 1993 qu'il avait "prouvé la Conjecture de Taniyama-Shimura pour les courbes elliptiques semi-stables". Bien qu'une faille ait été trouvée dans une partie de la démonstration, avec l'aide de son ancien élève Richard Taylor, il a réussi à combler cette faille en 1995 et a publié la preuve complète. Par conséquent, la partie cruciale de la conjecture laissée par Taniyama a été prouvée et, simultanément, le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est devenu une vérité éternelle.
 
 Par la suite, grâce aux efforts supplémentaires de Christophe Breuil, Brian Conrad, Fred Diamond et Richard Taylor, la Conjecture de Taniyama-Shimura a été complètement prouvée pour toutes les courbes elliptiques en 2001. Aujourd'hui, ce théorème est connu sous le nom de "Théorème de Modularité (Modularity Theorem)".
 
@@ -109,6 +109,6 @@ La Conjecture de Taniyama-Shimura est l'exemple le plus beau et le plus réussi 
 
 ## 8. Conclusion
 
-La modeste conjecture que [Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/) a présentée au symposium de Nikko est devenue le fondement de l'établissement du Dernier Théorème de Fermat, un sommet de l'intellect humain, un demi-siècle plus tard. Sa vision des "liens cachés derrière différents objets mathématiques" continue d'inspirer les mathématiciens aujourd'hui.
+La modeste conjecture que [Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/) a présentée au symposium de Nikko est devenue le fondement de l'établissement du Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/), un sommet de l'intellect humain, un demi-siècle plus tard. Sa vision des "liens cachés derrière différents objets mathématiques" continue d'inspirer les mathématiciens aujourd'hui.
 
 Le génie mathématique [Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/), mort jeune. La belle conjecture qu'il a laissée continuera d'être un phare illuminant le vaste univers des mathématiques. On ne peut s'empêcher de se demander quelles autres vérités profondes il nous aurait montrées s'il avait vécu.

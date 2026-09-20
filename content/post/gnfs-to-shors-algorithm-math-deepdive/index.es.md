@@ -20,7 +20,7 @@ En este artículo, desentrañaremos el mecanismo matemático de la **"Criba Gene
 
 ---
 
-## 1. El enfoque de la factorización en la computación clásica: Desarrollo a partir del método de factorización de Fermat
+## 1. El enfoque de la factorización en la computación clásica: Desarrollo a partir del método de factorización de [Fermat](https://kenji.blog/es/p/fermat/)
 
 El problema de factorización prima es encontrar los números primos $p, q$ tales que $N = p \times q$ para un número compuesto $N$ dado.
 

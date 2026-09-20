@@ -15,7 +15,7 @@ Dans le monde de l'informatique, de la théorie de la cryptographie ou de la pro
 
 De plus, en programmation compétitive (comme AtCoder et Codeforces), les tests de primalité sont un thème récurrent. Dans des situations où des dizaines de milliers de tests de primalité doivent être effectués en moins d'une seconde pour des entrées énormes avec des contraintes telles que $N \le 10^{18}$, les algorithmes traditionnels et naïfs ne peuvent absolument pas respecter la limite de temps de calcul (Time Limit Exceeded : TLE).
 
-Dans cet article, nous expliquerons en profondeur, de la base mathématique jusqu'aux implémentations hautement optimisées en C++, en commençant par des algorithmes naïfs de test de primalité, puis le "test de Fermat", qui est un test de primalité probabiliste, et enfin l'algorithme rapide de niveau pratique le plus puissant qui surmonte ses faiblesses : le "test de primalité de Miller-Rabin". En particulier, pour les entiers de 64 bits ($N < 2^{64}$), nous expliquerons en détail la méthode qui ne se limite pas à un test probabiliste mais "peut tester la primalité avec 100% de certitude (test déterministe)", et fournirons un code source en C++ prêt à être utilisé en pratique.
+Dans cet article, nous expliquerons en profondeur, de la base mathématique jusqu'aux implémentations hautement optimisées en C++, en commençant par des algorithmes naïfs de test de primalité, puis le "test de [Fermat](https://kenji.blog/fr/p/fermat/)", qui est un test de primalité probabiliste, et enfin l'algorithme rapide de niveau pratique le plus puissant qui surmonte ses faiblesses : le "test de primalité de Miller-Rabin". En particulier, pour les entiers de 64 bits ($N < 2^{64}$), nous expliquerons en détail la méthode qui ne se limite pas à un test probabiliste mais "peut tester la primalité avec 100% de certitude (test déterministe)", et fournirons un code source en C++ prêt à être utilisé en pratique.
 
 ---
 
@@ -50,22 +50,22 @@ La complexité de cet algorithme est de $O(\sqrt{N})$. Si $N \le 10^{12}$, il pe
 
 ---
 
-# 2. Le test de Fermat : L'aube du test de primalité probabiliste
+# 2. Le test de [Fermat](https://kenji.blog/fr/p/fermat/) : L'aube du test de primalité probabiliste
 
-Ce qui a été conçu pour surmonter les limites de la méthode des divisions successives est l'"algorithme probabiliste (Probabilistic Algorithm)" qui utilise des théorèmes de la théorie des nombres. L'exemple typique en est le "test de primalité de Fermat" utilisant le petit théorème de Fermat.
+Ce qui a été conçu pour surmonter les limites de la méthode des divisions successives est l'"algorithme probabiliste (Probabilistic Algorithm)" qui utilise des théorèmes de la théorie des nombres. L'exemple typique en est le "test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/)" utilisant le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
 
-## Le petit théorème de Fermat ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))
+## Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))
 
 Ce théorème, découvert par [Pierre de Fermat](https://kenji.blog/fr/p/fermat/), affirme ce qui suit :
 
 > Pour tout nombre premier $p$ et tout entier $a$ qui lui est premier (non multiple de $p$), la congruence suivante est vraie :
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
-En prenant la contraposée de ce théorème, on peut dire que "pour un certain entier $N$ et un entier $a$ premier avec $N$, si $a^{N-1} \not\equiv 1 \pmod N$, alors $N$ est définitivement un nombre composé". En utilisant cette propriété, le test de Fermat consiste à choisir une base (base) aléatoire $a$ pour le nombre cible $N$, à calculer $a^{N-1} \pmod N$ et à vérifier s'il devient $1$.
+En prenant la contraposée de ce théorème, on peut dire que "pour un certain entier $N$ et un entier $a$ premier avec $N$, si $a^{N-1} \not\equiv 1 \pmod N$, alors $N$ est définitivement un nombre composé". En utilisant cette propriété, le test de [Fermat](https://kenji.blog/fr/p/fermat/) consiste à choisir une base (base) aléatoire $a$ pour le nombre cible $N$, à calculer $a^{N-1} \pmod N$ et à vérifier s'il devient $1$.
 
 ## Exponentiation modulaire rapide (Méthode d'exponentiation binaire)
 
-Pour effectuer le test de Fermat, il est nécessaire de calculer rapidement d'énormes puissances telles que $a^{N-1} \pmod N$. Pour cela, nous utilisons la "méthode d'exponentiation binaire (Modular Exponentiation / Binary Exponentiation)". La complexité est de $O(\log N)$, ce qui est extrêmement rapide.
+Pour effectuer le test de [Fermat](https://kenji.blog/fr/p/fermat/), il est nécessaire de calculer rapidement d'énormes puissances telles que $a^{N-1} \pmod N$. Pour cela, nous utilisons la "méthode d'exponentiation binaire (Modular Exponentiation / Binary Exponentiation)". La complexité est de $O(\log N)$, ce qui est extrêmement rapide.
 
 ```cpp
 // Calcul de a^b mod m en utilisant la méthode d'exponentiation binaire
@@ -84,27 +84,27 @@ long long mod_pow(long long a, long long b, long long m) {
 
 ## Nombres pseudo-premiers et nombres de Carmichael (Carmichael Numbers)
 
-Le test de Fermat est très puissant, mais il a une faiblesse fatale. Il existe des nombres tels que bien que $N$ soit un nombre composé, $a^{N-1} \equiv 1 \pmod N$ reste vrai pour tous les $a$ ($a$ premiers avec $N$).
+Le test de [Fermat](https://kenji.blog/fr/p/fermat/) est très puissant, mais il a une faiblesse fatale. Il existe des nombres tels que bien que $N$ soit un nombre composé, $a^{N-1} \equiv 1 \pmod N$ reste vrai pour tous les $a$ ($a$ premiers avec $N$).
 
 De tels nombres sont appelés "nombres pseudo-premiers absolus" ou "nombres de Carmichael". Le plus petit nombre de Carmichael est $561 = 3 \times 11 \times 17$.
-En raison de la présence de nombres de Carmichael, il n'est pas possible d'effectuer un test déterministe avec une "probabilité de 100%" en utilisant uniquement le test de Fermat. Peu importe le nombre de bases différentes $a$ que vous essayez, un nombre comme $561$ fera toujours semblant d'être premier (une tromperie).
+En raison de la présence de nombres de Carmichael, il n'est pas possible d'effectuer un test déterministe avec une "probabilité de 100%" en utilisant uniquement le test de [Fermat](https://kenji.blog/fr/p/fermat/). Peu importe le nombre de bases différentes $a$ que vous essayez, un nombre comme $561$ fera toujours semblant d'être premier (une tromperie).
 
 ---
 
 # 3. Test de primalité de Miller-Rabin (Miller-Rabin Primality Test)
 
-Le "test de primalité de Miller-Rabin", conçu par Miller (Gary L. Miller) et Rabin (Michael O. Rabin), a brillamment surmonté la faiblesse du test de Fermat (l'existence des nombres de Carmichael).
+Le "test de primalité de Miller-Rabin", conçu par Miller (Gary L. Miller) et Rabin (Michael O. Rabin), a brillamment surmonté la faiblesse du test de [Fermat](https://kenji.blog/fr/p/fermat/) (l'existence des nombres de Carmichael).
 Aujourd'hui, il est le plus largement utilisé dans la génération de clés des systèmes cryptographiques et des bibliothèques internes de divers langages de programmation en tant algorithme de test de primalité rapide et pratique.
 
 ## Principes mathématiques
 
-En plus du petit théorème de Fermat, l'algorithme de Miller-Rabin utilise la propriété selon laquelle "dans un corps fini modulo un nombre premier ($\mathbb{Z}/p\mathbb{Z}$), les seules solutions à $x^2 \equiv 1 \pmod p$ sont $x \equiv 1$ ou $x \equiv -1$" (dans le cas modulo un nombre composé, d'autres racines carrées non triviales peuvent exister).
+En plus du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/), l'algorithme de Miller-Rabin utilise la propriété selon laquelle "dans un corps fini modulo un nombre premier ($\mathbb{Z}/p\mathbb{Z}$), les seules solutions à $x^2 \equiv 1 \pmod p$ sont $x \equiv 1$ ou $x \equiv -1$" (dans le cas modulo un nombre composé, d'autres racines carrées non triviales peuvent exister).
 
 Si l'on soustrait $1$ au nombre impair $N$ que nous voulons tester, $N-1$ sera toujours un nombre pair. Par conséquent, nous divisons $N-1$ par $2$ autant de fois que possible, et l'exprimons sous la forme suivante :
 $$ N-1 = d \cdot 2^s $$
 (Ici, $d$ est un nombre impair, $s \ge 1$)
 
-Pour toute base arbitraire $a$ ($1 < a < N-1$), nous vérifions si $a^{N-1} \equiv 1 \pmod N$ selon le petit théorème de Fermat, mais nous effectuons ce calcul par étapes.
+Pour toute base arbitraire $a$ ($1 < a < N-1$), nous vérifions si $a^{N-1} \equiv 1 \pmod N$ selon le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/), mais nous effectuons ce calcul par étapes.
 Plus précisément, nous répétons la mise au carré dans l'ordre : $a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$.
 
 La condition pour que le test de Miller-Rabin détermine que $N$ est "premier (ou probablement premier avec une forte probabilité)" est que l'une des conditions **suivantes** soit remplie.
@@ -283,7 +283,7 @@ Examinons les performances de l'algorithme implémenté.
 
 ## Complexité temporelle (Time Complexity)
 * **Méthode des divisions successives :** $O(\sqrt{N})$
-* **Test de Fermat :** Calcul d'exponentiation $O(\log N) \times k$ ($k$ étant le nombre d'essais)
+* **Test de [Fermat](https://kenji.blog/fr/p/fermat/) :** Calcul d'exponentiation $O(\log N) \times k$ ($k$ étant le nombre d'essais)
 * **Méthode de Miller-Rabin :** Calcul d'exponentiation et boucle $O(\log N) \times k$
 
 Dans un environnement 64 bits ($N \le 2^{64}$), la méthode déterministe de Miller-Rabin ci-dessus vérifie au maximum $7$ bases. Par conséquent, $k$ peut être considéré comme une constante $k \le 7$, et la complexité temporelle globale devient strictement $O(\log N)$.
@@ -304,8 +304,8 @@ Dans cet article, nous avons expliqué d'un coup de nombreux concepts, des bases
 Récapitulons les points clés.
 
 1. **La méthode des divisions successives** est certaine, mais manque d'utilité pratique lorsque $N$ dépasse $10^{12}$ en raison de sa complexité de $O(\sqrt{N})$.
-2. **Le test de Fermat** est extrêmement rapide avec $O(\log N)$, mais a une faiblesse fatale en étant trompé par des nombres pseudo-premiers absolus tels que les nombres de Carmichael.
-3. **Le test de primalité de Miller-Rabin** est l'algorithme le plus puissant et pratique qui résout les faiblesses du test de Fermat.
+2. **Le test de [Fermat](https://kenji.blog/fr/p/fermat/)** est extrêmement rapide avec $O(\log N)$, mais a une faiblesse fatale en étant trompé par des nombres pseudo-premiers absolus tels que les nombres de Carmichael.
+3. **Le test de primalité de Miller-Rabin** est l'algorithme le plus puissant et pratique qui résout les faiblesses du test de [Fermat](https://kenji.blog/fr/p/fermat/).
 4. Dans l'implémentation C++, le dépassement de capacité de multiplication d'entiers 64 bits peut être géré en toute sécurité en utilisant `__int128_t`.
 5. Dans la plage des entiers de 64 bits ($N < 2^{64}$), en choisissant $7$ ou $12$ nombres premiers spécifiques comme base, un **test de primalité déterministe (100% précis)** plutôt que probabiliste est possible.
 

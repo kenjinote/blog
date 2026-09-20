@@ -118,7 +118,7 @@ Par exemple, supposons que nous voulions trouver le reste de la division de $7^{
 
 ## 4. Base mathématique de la cryptographie RSA 3 : La fonction d'Euler et le théorème d'Euler
 
-Voici la mathématique magique qui est au cœur de la cryptographie RSA. Le « théorème d'Euler », qui est une généralisation du « petit théorème de Fermat », fait son apparition.
+Voici la mathématique magique qui est au cœur de la cryptographie RSA. Le « théorème d'Euler », qui est une généralisation du « petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) », fait son apparition.
 
 ### 4.1 L'indicatrice d'Euler $\phi(N)$
 
@@ -145,7 +145,7 @@ Cette propriété agit comme la « porte dérobée secrète (trapdoor) » de la 
 Si les entiers $a$ et $N$ sont premiers entre eux, la congruence suivante est vraie :
 $$ a^{\phi(N)} \equiv 1 \pmod N $$
 
-C'est une propriété surprenante selon laquelle « si l'on multiplie un certain nombre $a$ par lui-même $\phi(N)$ fois et qu'on le divise par $N$, le reste sera toujours $1$ ». (Si $N$ est un nombre premier $p$, cela devient $a^{p-1} \equiv 1 \pmod p$, ce qui est appelé le petit théorème de Fermat).
+C'est une propriété surprenante selon laquelle « si l'on multiplie un certain nombre $a$ par lui-même $\phi(N)$ fois et qu'on le divise par $N$, le reste sera toujours $1$ ». (Si $N$ est un nombre premier $p$, cela devient $a^{p-1} \equiv 1 \pmod p$, ce qui est appelé le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)).
 
 Transformons ce théorème d'Euler. Multiplions les deux côtés par $a$ une fois de plus.
 $$ a^{\phi(N) + 1} \equiv a \pmod N $$

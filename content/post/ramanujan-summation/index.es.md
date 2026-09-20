@@ -130,15 +130,15 @@ Así, se ha derivado la asombrosa igualdad de **$1 + 2 + 3 + 4 + \dots = -\frac{
 
 ---
 
-## 3. Continuación analítica y la función zeta de Riemann
+## 3. Continuación analítica y la función zeta de [Riemann](https://kenji.blog/es/p/riemann/)
 
 Las operaciones algebraicas anteriores pueden parecer a simple vista meros trucos o sofismas. Aplicar incondicionalmente las operaciones aritméticas normales a series divergentes no está permitido en matemáticas rigurosas.
 
 Sin embargo, este resultado no carece de sentido en absoluto. En las matemáticas modernas, se puede respaldar usando un concepto riguroso llamado **continuación analítica (Analytic Continuation)**.
 
-### La función zeta de Riemann
+### La función zeta de [Riemann](https://kenji.blog/es/p/riemann/)
 
-Para explicar la continuación analítica, introduciremos la **función zeta de Riemann** $\zeta(s)$. La función zeta se define de la siguiente manera.
+Para explicar la continuación analítica, introduciremos la **función zeta de [Riemann](https://kenji.blog/es/p/riemann/)** $\zeta(s)$. La función zeta se define de la siguiente manera.
 
 $$
 \zeta(s) = 1^{-s} + 2^{-s} + 3^{-s} + 4^{-s} + \dots = \sum_{n=1}^{\infty} \frac{1}{n^s}
@@ -167,7 +167,7 @@ graph TD
     C --> D["ζ(-1) = -1/12"]
 ```
 
-Riemann demostró que la función zeta puede extenderse de manera única a todo el plano complejo (excepto el polo en $s=1$). Si calculamos el valor para $s = -1$ en la función zeta extendida, descubrimos que resulta brillantemente ser **$-\frac{1}{12}$**.
+[Riemann](https://kenji.blog/es/p/riemann/) demostró que la función zeta puede extenderse de manera única a todo el plano complejo (excepto el polo en $s=1$). Si calculamos el valor para $s = -1$ en la función zeta extendida, descubrimos que resulta brillantemente ser **$-\frac{1}{12}$**.
 
 En otras palabras, la fórmula « $1+2+3+... = -1/12$ » se justifica no como un «valor en el sentido usual de la suma», sino como un «valor en el sentido de la continuación analítica a través de la función zeta».
 

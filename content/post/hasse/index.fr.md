@@ -31,13 +31,13 @@ En 1915, alors qu'il n'était qu'un adolescent, Hasse s'est engagé dans la Mari
 
 Après la fin de la guerre en 1918, Hasse s'est officiellement inscrit à l'Université de Göttingen. À l'époque, Göttingen était le summum mondial des mathématiques, abritant des géants comme [David Hilbert](https://kenji.blog/fr/p/hilbert/), Edmund Landau et [Emmy Noether](https://kenji.blog/fr/p/noether/). Là, Hasse a rencontré le souffle des mathématiques de pointe, permettant à ses talents de s'épanouir davantage.
 
-Plus tard, Hasse a été transféré à l'Université de Marbourg, où il a fait une rencontre fatidique avec **[Kurt Hensel](https://kenji.blog/fr/p/hensel/)**, qui allait devenir son mentor pour la vie. Hensel était le découvreur d'un système de nombres entièrement nouveau : les nombres p-adiques. Alors que de nombreux mathématiciens de l'époque considéraient les nombres p-adiques comme de simples curiosités mathématiques, Hasse a immédiatement reconnu l'immense potentiel de ce nouveau concept et l'a raffiné en une arme puissante pour ses propres recherches.
+Plus tard, Hasse a été transféré à l'Université de Marbourg, où il a fait une rencontre fatidique avec **[Kurt Hensel](https://kenji.blog/fr/p/hensel/)**, qui allait devenir son mentor pour la vie. [Hensel](https://kenji.blog/fr/p/hensel/) était le découvreur d'un système de nombres entièrement nouveau : les nombres p-adiques. Alors que de nombreux mathématiciens de l'époque considéraient les nombres p-adiques comme de simples curiosités mathématiques, Hasse a immédiatement reconnu l'immense potentiel de ce nouveau concept et l'a raffiné en une arme puissante pour ses propres recherches.
 
 ## 4. Que sont les nombres p-adiques : Un nouveau système de nombres
 
 Pour comprendre les réalisations de Hasse, on ne peut éviter le concept des nombres p-adiques. Les nombres réels que nous utilisons quotidiennement sont obtenus en complétant les nombres rationnels (fractions) sur la base du concept de "taille (valeur absolue)" — un processus de prise de limites pour combler les lacunes.
 
-Cependant, Hensel a introduit un concept de "distance" complètement différent. En fixant un nombre premier $p$, deux nombres rationnels sont définis comme "proches" si leur différence peut être divisée par $p$ de nombreuses fois. Compléter les nombres rationnels sur la base de cette étrange distance donne le corps des nombres p-adiques $\mathbb{Q}_p$. Dans le monde des nombres p-adiques, des séries infinies qui divergeraient dans le monde réel peuvent converger, ce qui permet de traiter les problèmes de congruence à l'aide de méthodes analytiques.
+Cependant, [Hensel](https://kenji.blog/fr/p/hensel/) a introduit un concept de "distance" complètement différent. En fixant un nombre premier $p$, deux nombres rationnels sont définis comme "proches" si leur différence peut être divisée par $p$ de nombreuses fois. Compléter les nombres rationnels sur la base de cette étrange distance donne le corps des nombres p-adiques $\mathbb{Q}_p$. Dans le monde des nombres p-adiques, des séries infinies qui divergeraient dans le monde réel peuvent converger, ce qui permet de traiter les problèmes de congruence à l'aide de méthodes analytiques.
 
 ## 5. Établissement du principe de Hasse (principe local-global)
 
@@ -83,7 +83,7 @@ De cette façon, Hasse était exceptionnellement doué pour saisir intuitivement
 
 ## 8. Théorème de Hasse-Weil : Points rationnels sur les courbes elliptiques
 
-Une autre contribution extrêmement importante de Hasse est le **théorème de Hasse sur les courbes elliptiques** sur les corps finis. Ce fut un résultat marquant, considéré comme le premier pas vers un "analogue de l'hypothèse de Riemann" pour les variétés algébriques sur les corps finis.
+Une autre contribution extrêmement importante de Hasse est le **théorème de Hasse sur les courbes elliptiques** sur les corps finis. Ce fut un résultat marquant, considéré comme le premier pas vers un "analogue de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)" pour les variétés algébriques sur les corps finis.
 
 Soit $N$ le nombre de points rationnels sur une courbe elliptique $E$ définie sur un corps fini $\mathbb{F}_q$ (un corps avec $q$ éléments). Hasse a prouvé que le nombre de points rationnels $N$ est proche de $q + 1$ (le nombre de points sur la droite projective), et l'erreur est limitée comme suit :
 
@@ -95,7 +95,7 @@ Cette belle inégalité a ensuite été étendue aux courbes algébriques géné
 
 ## 9. Contribution à la théorie du corps de classes : Théorie locale et réciprocité d'Artin
 
-Lorsqu'on discute des réalisations de Hasse, sa contribution massive à la **théorie du corps de classes** est indispensable. La théorie du corps de classes est une théorie qui tente de décrire complètement les extensions abéliennes (extensions où le groupe de Galois est commutatif) d'un corps de nombres algébriques (une extension finie des nombres rationnels) en utilisant les informations internes du corps de base lui-même.
+Lorsqu'on discute des réalisations de Hasse, sa contribution massive à la **théorie du corps de classes** est indispensable. La théorie du corps de classes est une théorie qui tente de décrire complètement les extensions abéliennes (extensions où le groupe de [Galois](https://kenji.blog/fr/p/galois/) est commutatif) d'un corps de nombres algébriques (une extension finie des nombres rationnels) en utilisant les informations internes du corps de base lui-même.
 
 Dans la démonstration de la "loi de réciprocité" proposée par Emil Artin, Hasse a joué un rôle d'une importance vitale. Utilisant des méthodes analytiques et la théorie des nombres p-adiques, Hasse a offert des conseils cruciaux à Artin, contribuant grandement à l'achèvement de la preuve. Hasse a également joué un rôle central dans la construction de la théorie locale du corps de classes, reconstruisant la théorie globale du corps de classes du point de vue des corps locaux.
 

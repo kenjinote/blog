@@ -36,7 +36,7 @@ Here, $V$ represents the **class of all sets** ( $\text{universal class}$ ). Thi
 
 In the late 1920s, quantum mechanics was developing as two seemingly completely different theories: Werner Heisenberg's "matrix mechanics" and Erwin Schrödinger's "wave mechanics". Von Neumann proved that these two theories were mathematically equivalent, giving quantum mechanics a strict mathematical foundation.
 
-Using the theory of **Hilbert space**, he formulated physical quantities (observables) as self-adjoint operators on an infinite-dimensional Hilbert space. His book "Mathematical Foundations of Quantum Mechanics," published in 1932, is considered a bible even for modern physicists and is still highly regarded today as a standard textbook for quantum mechanics.
+Using the theory of **[Hilbert](https://kenji.blog/en/p/hilbert/) space**, he formulated physical quantities (observables) as self-adjoint operators on an infinite-dimensional [Hilbert](https://kenji.blog/en/p/hilbert/) space. His book "Mathematical Foundations of Quantum Mechanics," published in 1932, is considered a bible even for modern physicists and is still highly regarded today as a standard textbook for quantum mechanics.
 
 He also introduced the concept of the **density matrix** ( $\text{density matrix}$ ) to describe mixed states, laying the foundation for quantum statistical mechanics.
 
@@ -112,7 +112,7 @@ There are countless anecdotes surrounding von Neumann's superhuman brain.
 The books and papers von Neumann left behind during his lifetime are diverse, but here we introduce representative works that had a particularly significant impact on later generations.
 
 1. **Mathematical Foundations of Quantum Mechanics (1932)**
-   A monumental work that strictly formulated quantum mechanics using the theory of Hilbert spaces.
+   A monumental work that strictly formulated quantum mechanics using the theory of [Hilbert](https://kenji.blog/en/p/hilbert/) spaces.
 2. **Theory of Games and Economic Behavior (1944)**
    Co-authored with Oskar Morgenstern. A masterpiece that systematically discussed everything from zero-sum games to cooperative games.
 3. **The Computer and the Brain (1958)**

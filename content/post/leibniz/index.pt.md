@@ -99,7 +99,7 @@ Ao resolver sistemas de equações lineares, Leibniz chegou independentemente ao
 
 ### 2.5 A Invenção da Calculadora de Roda Escalonada
 
-Leibniz não foi apenas um matemático teórico, mas também um inventor prático que cravou seu nome na história das calculadoras mecânicas. Ele aprimorou a calculadora de [Blaise Pascal](https://kenji.blog/pt/p/pascal/) (a Pascaline), que só podia realizar adição e subtração, e inventou uma calculadora usando a "Roda de Leibniz" (o Cilindro Escalonado) capaz de realizar multiplicação e divisão.
+Leibniz não foi apenas um matemático teórico, mas também um inventor prático que cravou seu nome na história das calculadoras mecânicas. Ele aprimorou a calculadora de [Blaise Pascal](https://kenji.blog/pt/p/pascal/) (a [Pascal](https://kenji.blog/pt/p/pascal/)ine), que só podia realizar adição e subtração, e inventou uma calculadora usando a "Roda de Leibniz" (o Cilindro Escalonado) capaz de realizar multiplicação e divisão.
 
 Esse mecanismo foi revolucionário e continuou a ser adotado como a estrutura padrão para calculadoras mecânicas ao longo dos séculos seguintes.
 

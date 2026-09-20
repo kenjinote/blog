@@ -68,7 +68,7 @@ Ce résultat a été révolutionnaire concernant la finitude des solutions des �
 
 ### 3.2 Zéro de Siegel
 
-En théorie analytique des nombres, la distribution des zéros de la fonction $L$ de Dirichlet $L(s, \chi)$ est extrêmement importante pour les extensions naturelles du théorème des nombres premiers et du théorème sur les progressions arithmétiques. Selon l'hypothèse de Riemann généralisée (GRH), tous les zéros de la bande critique dont la partie réelle est comprise entre $0$ et $1$ sont censés se trouver sur la droite où la partie réelle est de $1/2$.
+En théorie analytique des nombres, la distribution des zéros de la fonction $L$ de Dirichlet $L(s, \chi)$ est extrêmement importante pour les extensions naturelles du théorème des nombres premiers et du théorème sur les progressions arithmétiques. Selon l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) généralisée (GRH), tous les zéros de la bande critique dont la partie réelle est comprise entre $0$ et $1$ sont censés se trouver sur la droite où la partie réelle est de $1/2$.
 
 Cependant, pour un caractère réel (d'un corps quadratique réel) $\chi$, la possibilité qu'il existe un zéro réel avec une partie réelle très proche de $1$ n'a pas été exclue par les mathématiques actuelles. Un tel zéro contre-exemple hypothétique est appelé un **zéro de Siegel** (Siegel zero) ou zéro exceptionnel.
 
@@ -90,7 +90,7 @@ $$
 \mathcal{H}_g = \left\{ Z \in M_g(\mathbb{C}) \mid Z^T = Z, \text{ Im}(Z) \text{ est définie positive} \right\}
 $$
 
-Ici, lorsque $g=1$, cet espace correspond parfaitement au demi-plan supérieur de Poincaré habituel. Siegel a introduit cet espace de dimension supérieure au cours du processus d'approfondissement de la théorie analytique des formes quadratiques, et il a montré que les formes automorphes définies sur cet espace sont profondément liées au nombre de représentations des entiers par des formes quadratiques.
+Ici, lorsque $g=1$, cet espace correspond parfaitement au demi-plan supérieur de [Poincaré](https://kenji.blog/fr/p/poincare/) habituel. Siegel a introduit cet espace de dimension supérieure au cours du processus d'approfondissement de la théorie analytique des formes quadratiques, et il a montré que les formes automorphes définies sur cet espace sont profondément liées au nombre de représentations des entiers par des formes quadratiques.
 
 De plus, il a jeté les bases de la **formule de Siegel-Weil** dans la théorie analytique des formes quadratiques. C'est une formule merveilleuse qui décrit le nombre de représentations par des formes quadratiques comme les coefficients de Fourier des séries d'Eisenstein, et on peut dire que c'est une expression analytique du principe local-global (principe de Hasse). Ces théories sont des concepts indispensables qui forment la base de la théorie ultérieure des représentations automorphes et du programme de Langlands.
 
@@ -129,7 +129,7 @@ La vision des mathématiques de Siegel était aussi frappante que les réalisati
 
 Au milieu du 20e siècle, un style abstrait prôné par le jeune collectif mathématique français, le groupe Bourbaki—qui tentait de reconstruire toutes les mathématiques à partir de la théorie des ensembles et des systèmes axiomatiques—balayait le monde. Cependant, Siegel a adressé de sévères critiques à cette tendance. Il a rejeté le style Bourbaki comme un "formalisme vide" et a laissé des remarques de cet ordre :
 
-> "L'abstraction excessive des mathématiques récentes est tombée dans un formalisme vide et ne produit aucun résultat significatif. Nous devrions revenir à des problèmes concrets riches en contenu véritable, le genre de problèmes abordés par Gauss, Euler, Riemann et Jacobi."
+> "L'abstraction excessive des mathématiques récentes est tombée dans un formalisme vide et ne produit aucun résultat significatif. Nous devrions revenir à des problèmes concrets riches en contenu véritable, le genre de problèmes abordés par Gauss, Euler, [Riemann](https://kenji.blog/fr/p/riemann/) et [Jacobi](https://kenji.blog/fr/p/jacobi/)."
 
 En raison de cette forte conviction, ses articles sont très gratifiants à lire ; d'un autre côté, pour les lecteurs modernes, des calculs hautement techniques et longs apparaissent partout, nécessitant souvent des efforts immenses à déchiffrer. Il n'a jamais fait de compromis sur sa philosophie tout au long de sa vie, selon laquelle "les concepts et cadres abstraits ne sont qu'un moyen pour résoudre des problèmes concrets et difficiles". Cette attitude distante a fait de lui une figure un peu à part parmi ses mathématiciens contemporains.
 

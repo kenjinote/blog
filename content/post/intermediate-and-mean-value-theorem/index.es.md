@@ -73,7 +73,7 @@ Geométricamente, esto significa que para cualquier curva suave donde las altura
 
 ## 4. Teorema del Valor Medio
 
-El Teorema del Valor Medio (Teorema del Valor Medio de Lagrange) puede considerarse el pilar central que soporta la totalidad del cálculo.
+El Teorema del Valor Medio (Teorema del Valor Medio de [Lagrange](https://kenji.blog/es/p/lagrange/)) puede considerarse el pilar central que soporta la totalidad del cálculo.
 
 ### Enunciado del Teorema
 
@@ -138,11 +138,11 @@ Este corolario puede demostrarse exactamente de la misma manera. Cuando $x_1 < x
 
 De esta manera, los principios de las tablas de signos que usamos de manera natural en las matemáticas de secundaria ("si la derivada es positiva aumenta, si es negativa disminuye") están todos garantizados por este **Teorema del Valor Medio**.
 
-## 5. Teorema del Valor Medio de Cauchy
+## 5. Teorema del Valor Medio de [Cauchy](https://kenji.blog/es/p/cauchy/)
 
-El Teorema del Valor Medio de Cauchy es una extensión del Teorema del Valor Medio a dos funciones.
+El Teorema del Valor Medio de [Cauchy](https://kenji.blog/es/p/cauchy/) es una extensión del Teorema del Valor Medio a dos funciones.
 
-> **Teorema (Teorema del Valor Medio de Cauchy)**
+> **Teorema (Teorema del Valor Medio de [Cauchy](https://kenji.blog/es/p/cauchy/))**
 > Supongamos que dos funciones $f(x)$ y $g(x)$ son continuas en el intervalo cerrado $[a, b]$ y diferenciables en el intervalo abierto $(a, b)$, y que $g'(x) \neq 0$ para todo $x \in (a, b)$. Entonces, existe $c \in (a, b)$ tal que:
 > $$\frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f'(c)}{g'(c)}$$
 

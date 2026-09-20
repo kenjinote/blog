@@ -16,7 +16,7 @@ In this article, we will unravel the mathematical mechanism of the **"General Nu
 
 ---
 
-## 1. The Approach to Prime Factorization in Classical Computing: Evolution from Fermat's Factorization Method
+## 1. The Approach to Prime Factorization in Classical Computing: Evolution from [Fermat](https://kenji.blog/en/p/fermat/)'s Factorization Method
 
 The prime factorization problem is the problem of finding prime numbers $p$ and $q$ such that $N = p \times q$ for a given composite number $N$.
 

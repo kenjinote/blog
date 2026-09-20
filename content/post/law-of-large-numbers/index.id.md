@@ -146,12 +146,12 @@ plt.show()
 
 Saat Anda menjalankan kode ini, rata-rata berfluktuasi secara tajam pada beberapa lemparan awal, tetapi seiring bertambahnya jumlah percobaan, Anda mendapatkan grafik yang mengikuti garis putus-putus merah (nilai harapan 3.5) dengan sempurna. Ini adalah bukti visual dari [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/).
 
-## 7. Kasus di Mana [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) Tidak Berlaku: Distribusi Cauchy
+## 7. Kasus di Mana [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) Tidak Berlaku: Distribusi [Cauchy](https://kenji.blog/id/p/cauchy/)
 
 [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) tidak bersifat universal. Salah satu prasyaratnya adalah "nilai harapan (rata-rata) harus berhingga."
-Misalnya, distribusi probabilitas yang disebut **Distribusi Cauchy** memiliki ekor yang sangat tebal (nilai ekstrem mudah terjadi) dan nilai harapan serta variansnya tidak dapat ditentukan (mereka divergen tak terhingga).
+Misalnya, distribusi probabilitas yang disebut **Distribusi [Cauchy](https://kenji.blog/id/p/cauchy/)** memiliki ekor yang sangat tebal (nilai ekstrem mudah terjadi) dan nilai harapan serta variansnya tidak dapat ditentukan (mereka divergen tak terhingga).
 
-Meskipun Anda menghasilkan angka acak yang mengikuti distribusi Cauchy dan menghitung rata-ratanya, nilainya tidak akan pernah konvergen ke satu angka spesifik dan akan terus melonjak tak beraturan. Di dunia nyata juga, penting untuk memahami bahwa ada kasus-kasus (seperti pasar keuangan di mana peristiwa ekstrem yang tak terduga disebut "Angsa Hitam" terjadi) di mana [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) sederhana tidak dapat diterapkan (atau berbahaya untuk diterapkan).
+Meskipun Anda menghasilkan angka acak yang mengikuti distribusi [Cauchy](https://kenji.blog/id/p/cauchy/) dan menghitung rata-ratanya, nilainya tidak akan pernah konvergen ke satu angka spesifik dan akan terus melonjak tak beraturan. Di dunia nyata juga, penting untuk memahami bahwa ada kasus-kasus (seperti pasar keuangan di mana peristiwa ekstrem yang tak terduga disebut "Angsa Hitam" terjadi) di mana [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) sederhana tidak dapat diterapkan (atau berbahaya untuk diterapkan).
 
 ## 8. Contoh Penerapan di Dunia Nyata
 

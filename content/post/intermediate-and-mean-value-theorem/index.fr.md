@@ -138,11 +138,11 @@ Ce corollaire peut être prouvé exactement de la même manière. Lorsque $x_1 <
 
 Ainsi, les principes des tableaux de signes que nous utilisons naturellement en mathématiques au lycée (« si la dérivée est positive, elle croît ; si elle est négative, elle décroît ») sont tous garantis par ce **théorème des accroissements finis**.
 
-## 5. Théorème des Accroissements Finis de Cauchy
+## 5. Théorème des Accroissements Finis de [Cauchy](https://kenji.blog/fr/p/cauchy/)
 
-Le théorème des accroissements finis de Cauchy est une extension du théorème des accroissements finis à deux fonctions.
+Le théorème des accroissements finis de [Cauchy](https://kenji.blog/fr/p/cauchy/) est une extension du théorème des accroissements finis à deux fonctions.
 
-> **Théorème (Théorème des accroissements finis de Cauchy)**
+> **Théorème (Théorème des accroissements finis de [Cauchy](https://kenji.blog/fr/p/cauchy/))**
 > Soient deux fonctions $f(x)$ et $g(x)$ continues sur l'intervalle fermé $[a, b]$ et dérivables sur l'intervalle ouvert $(a, b)$, avec $g'(x) \neq 0$ pour tout $x \in (a, b)$. Alors, il existe $c \in (a, b)$ tel que :
 > $$\frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f'(c)}{g'(c)}$$
 

@@ -44,13 +44,13 @@ $$
 
 Karena penemuan ini terlalu revolusioner, Gauss menahan diri untuk tidak mempublikasikannya semasa hidupnya karena takut akan ketidakpahaman publik. Publikasi makalah oleh Bolyai dan Lobachevsky membawa pergeseran paradigma fundamental dalam dunia matematika.
 
-## 4. Geometri Riemann: Generalisasi Konsep Ruang
+## 4. Geometri [Riemann](https://kenji.blog/id/p/riemann/): Generalisasi Konsep Ruang
 
-Lompatan selanjutnya dalam geometri non-[[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an dibawa oleh murid Gauss, yaitu [Bernhard Riemann](https://kenji.blog/id/p/riemann/). Dalam kuliah pelantikannya pada tahun 1854, Riemann mempresentasikan gagasan terobosan tentang dasar-dasar geometri.
+Lompatan selanjutnya dalam geometri non-[[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an dibawa oleh murid Gauss, yaitu [Bernhard Riemann](https://kenji.blog/id/p/riemann/). Dalam kuliah pelantikannya pada tahun 1854, [Riemann](https://kenji.blog/id/p/riemann/) mempresentasikan gagasan terobosan tentang dasar-dasar geometri.
 
-Ia memperkenalkan **Tensor Metrik** yang mendefinisikan kelengkungan ruang secara lokal, dan membangun sebuah geometri yang lebih umum (**Geometri Riemannian**), di mana dimensi dan kelengkungan ruang dapat berubah-ubah bergantung pada lokasinya.
+Ia memperkenalkan **Tensor Metrik** yang mendefinisikan kelengkungan ruang secara lokal, dan membangun sebuah geometri yang lebih umum (**Geometri [Riemann](https://kenji.blog/id/p/riemann/)ian**), di mana dimensi dan kelengkungan ruang dapat berubah-ubah bergantung pada lokasinya.
 
-Dalam kerangka Riemann, selain geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an (kelengkungan 0) dan geometri hiperbolik (kelengkungan konstan negatif), geometri bola (kelengkungan konstan positif, **Geometri Eliptik**) juga dapat ditangani secara seragam. Dalam geometri eliptik, garis sejajar "tidak ada", dan jumlah sudut dalam sebuah segitiga lebih besar dari 180 derajat.
+Dalam kerangka [Riemann](https://kenji.blog/id/p/riemann/), selain geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an (kelengkungan 0) dan geometri hiperbolik (kelengkungan konstan negatif), geometri bola (kelengkungan konstan positif, **Geometri Eliptik**) juga dapat ditangani secara seragam. Dalam geometri eliptik, garis sejajar "tidak ada", dan jumlah sudut dalam sebuah segitiga lebih besar dari 180 derajat.
 
 $$
 \text{Jumlah sudut dalam sebuah segitiga pada Geometri Eliptik} > 180^\circ
@@ -68,7 +68,7 @@ graph LR
 
 ## 5. Jalan Menuju Teori Relativitas: Perpaduan Matematika dan Fisika
 
-Kerangka matematis agung yang dibangun oleh Riemann tetap berada di ranah matematika murni untuk beberapa waktu. Namun pada awal abad ke-20, ketika Albert Einstein mencoba membangun teori gravitasi yang baru, geometri Riemannian ini memainkan peran yang menentukan.
+Kerangka matematis agung yang dibangun oleh [Riemann](https://kenji.blog/id/p/riemann/) tetap berada di ranah matematika murni untuk beberapa waktu. Namun pada awal abad ke-20, ketika Albert Einstein mencoba membangun teori gravitasi yang baru, geometri [Riemann](https://kenji.blog/id/p/riemann/)ian ini memainkan peran yang menentukan.
 
 Einstein mengusulkan konsep "ruang-waktu" yang menyatukan ruang dan waktu dalam Teori Relativitas Khusus. Kemudian, dalam **Teori Relativitas Umum**, ia mencapai sebuah gagasan terobosan: "Gravitasi adalah distorsi (kelengkungan) ruang-waktu yang disebabkan oleh benda bermassa."
 

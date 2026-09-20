@@ -107,7 +107,7 @@ flowchart TD
 
 ---
 
-## 8. Galois-Theorie
+## 8. [Galois](https://kenji.blog/de/p/galois/)-Theorie
 
 Verbindet Gleichungen und Gruppentheorie.
 

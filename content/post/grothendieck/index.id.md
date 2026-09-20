@@ -59,7 +59,7 @@ Setelah mencapai puncak analisis fungsional, ia secara mengejutkan mengalihkan f
 
 ### Makalah Tohoku
 
-Makalahnya "Sur quelques points d'algèbre homologique" (Tentang beberapa poin aljabar homologis), yang diterbitkan dalam *Tohoku Mathematical Journal* Jepang pada tahun 1957, adalah makalah bersejarah yang menggabungkan teori kategori dan aljabar homologis, menetapkan konsep **Kategori Abelian** . Ini memungkinkan untuk mendefinisikan secara ketat kohomologi berkas (sheaf cohomology) di atas ruang topologi apa pun.
+Makalahnya "Sur quelques points d'algèbre homologique" (Tentang beberapa poin aljabar homologis), yang diterbitkan dalam *Tohoku Mathematical Journal* Jepang pada tahun 1957, adalah makalah bersejarah yang menggabungkan teori kategori dan aljabar homologis, menetapkan konsep **Kategori [Abel](https://kenji.blog/id/p/abel/)ian** . Ini memungkinkan untuk mendefinisikan secara ketat kohomologi berkas (sheaf cohomology) di atas ruang topologi apa pun.
 
 ### Pendirian IHÉS dan EGA/SGA
 
@@ -112,7 +112,7 @@ Grothendieck menjelaskan pendekatan matematikanya menggunakan analogi "pemecah k
 
 Memasuki tahun 1980-an, ia mengusulkan teori-teori baru yang mendekati misteri terdalam matematika yang dimulai dari konsep visual dan sangat sederhana.
 
-Salah satunya adalah **"Dessins d'enfants" (Gambar Anak-Anak)** . Ia menemukan bahwa dari grafik sederhana yang digambar pada permukaan melengkung seperti bola, seseorang dapat mengekstraksi aksi grup Galois absolut, objek yang sangat misterius dan kompleks dalam teori bilangan.
+Salah satunya adalah **"Dessins d'enfants" (Gambar Anak-Anak)** . Ia menemukan bahwa dari grafik sederhana yang digambar pada permukaan melengkung seperti bola, seseorang dapat mengekstraksi aksi grup [Galois](https://kenji.blog/id/p/galois/) absolut, objek yang sangat misterius dan kompleks dalam teori bilangan.
 
 Selain itu, ia mengusulkan program yang disebut **"Geometri Anabelian"** . Ini adalah dugaan mencengangkan bahwa untuk varietas aljabar tertentu, objek geometris dan aritmatika asli dapat sepenuhnya direkonstruksi semata-mata dari data topologi yang dikenal sebagai grup fundamental.
 

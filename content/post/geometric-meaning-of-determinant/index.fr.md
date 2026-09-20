@@ -116,7 +116,7 @@ Les déterminants ont plusieurs propriétés algébriques bien connues, mais si 
 *   **Déterminant d'une matrice inverse** : $\det(A^{-1}) = \frac{1}{\det(A)}$
     Si une certaine transformation étend l'espace de $2$ fois, sa transformation inverse doit rétrécir l'espace à $\frac{1}{2}$ pour le ramener à son état d'origine.
 
-## 7. Conclusion : Connexion avec le Jacobien
+## 7. Conclusion : Connexion avec le [Jacobi](https://kenji.blog/fr/p/jacobi/)en
 
 Le déterminant n'est pas seulement une formule de calcul encombrante, mais un outil géométrique extrêmement puissant pour décrire la déformation de l'espace.
 
@@ -124,4 +124,4 @@ Le déterminant n'est pas seulement une formule de calcul encombrante, mais un o
 *   **Signe** : Si "l'orientation" de l'espace est préservée (positif) ou inversée (négatif).
 *   **Zéro** : L'espace "s'effondrant" dans une dimension inférieure (perte de dimensionnalité et irréversibilité).
 
-Avoir cette image intuitive servira de base importante pour comprendre le **Jacobien** (le facteur d'échelle de volume local dans les transformations non linéaires) que vous apprendrez plus tard en calcul. Dans le monde de l'algèbre linéaire, lier constamment les formules aux images géométriques est le chemin le plus court vers une compréhension profonde.
+Avoir cette image intuitive servira de base importante pour comprendre le **[Jacobi](https://kenji.blog/fr/p/jacobi/)en** (le facteur d'échelle de volume local dans les transformations non linéaires) que vous apprendrez plus tard en calcul. Dans le monde de l'algèbre linéaire, lier constamment les formules aux images géométriques est le chemin le plus court vers une compréhension profonde.

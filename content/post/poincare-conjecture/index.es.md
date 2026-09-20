@@ -38,7 +38,7 @@ Por otro lado, una esfera (la superficie de una pelota) no tiene agujeros. Por l
 
 La [Conjetura de Poincaré](https://kenji.blog/es/p/poincare-conjecture/) intentó caracterizar una "esfera" desde esta perspectiva topológica.
 
-La "superficie de una esfera" que vemos todos los días se llama esfera bidimensional ( $S^2$ ). Poincaré pensó que si una figura es un espacio cerrado "sin agujeros", ¿no sería homeomorfo (topológicamente igual) a una esfera?
+La "superficie de una esfera" que vemos todos los días se llama esfera bidimensional ( $S^2$ ). [Poincaré](https://kenji.blog/es/p/poincare/) pensó que si una figura es un espacio cerrado "sin agujeros", ¿no sería homeomorfo (topológicamente igual) a una esfera?
 
 El concepto que se vuelve importante aquí es **simplemente conexo** (simply connected).
 
@@ -47,7 +47,7 @@ Cuando cualquier bucle (anillo) dentro de un espacio puede encogerse a un solo p
 - **Esfera ( $S^2$ )**: Cualquier bucle dibujado en la superficie puede encogerse a un solo punto deslizándolo por la superficie. Es decir, es simplemente conexa.
 - **Toro (Superficie de la rosquilla)**: Un bucle dibujado para pasar a través del agujero se quedará atrapado en el agujero y no se puede encoger a un solo punto. Es decir, no es simplemente conexo.
 
-Poincaré se preguntó si esta propiedad que se cumple para la esfera bidimensional también se cumpliría para la esfera tridimensional ( $S^3$ ).
+[Poincaré](https://kenji.blog/es/p/poincare/) se preguntó si esta propiedad que se cumple para la esfera bidimensional también se cumpliría para la esfera tridimensional ( $S^3$ ).
 
 > **[Conjetura de Poincaré](https://kenji.blog/es/p/poincare-conjecture/)**
 > Toda variedad tridimensional cerrada y simplemente conexa es homeomorfa a la esfera tridimensional $S^3$ .
@@ -125,4 +125,4 @@ La resolución de la [Conjetura de Poincaré](https://kenji.blog/es/p/poincare-c
 
 Además, el intento matemático de comprender la forma del universo continúa teniendo un profundo impacto en la comprensión de las dimensiones en la física moderna, especialmente en la teoría de cuerdas y la cosmología.
 
-El bastón del conocimiento, que comenzó con Poincaré y fue transmitido a Thurston, Hamilton y finalmente a Perelman, es quizás el mejor monumento para demostrar cuán profundamente puede acercarse el espíritu humano a las hermosas verdades del universo.
+El bastón del conocimiento, que comenzó con [Poincaré](https://kenji.blog/es/p/poincare/) y fue transmitido a Thurston, Hamilton y finalmente a Perelman, es quizás el mejor monumento para demostrar cuán profundamente puede acercarse el espíritu humano a las hermosas verdades del universo.

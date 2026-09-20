@@ -190,7 +190,7 @@ $$ \langle f, g \rangle = \int_{-1}^{1} f(x)g(x) dx $$
 * 計算 $\mathbf{u}_1(x) = x - \text{proj}_{\mathbf{u}_0}(x)$，因為 $\langle x, 1 \rangle = \int_{-1}^{1} x dx = 0$，所以 $\mathbf{u}_1(x) = x$。
 * 計算 $\mathbf{u}_2(x) = x^2 - \text{proj}_{\mathbf{u}_0}(x^2) - \text{proj}_{\mathbf{u}_1}(x^2)$，結果為 $\mathbf{u}_2(x) = x^2 - \frac{1}{3}$。
 
-這樣生成的正交多項式序列被稱為 **勒讓德多項式 (Legendre polynomials)** ，它們在物理學的電磁學、量子力學以及數值積分（高斯求積法）中扮演著極其重要的角色。代數演算法能夠自然而然地推導出深刻的物理定律描述，這是一個無比優美的範例。
+這樣生成的正交多項式序列被稱為 **勒讓德多項式 ([Legendre](https://kenji.blog/zh-tw/p/legendre/) polynomials)** ，它們在物理學的電磁學、量子力學以及數值積分（高斯求積法）中扮演著極其重要的角色。代數演算法能夠自然而然地推導出深刻的物理定律描述，這是一個無比優美的範例。
 
 ## 8. 高級應用二：QR分解與資料科學
 

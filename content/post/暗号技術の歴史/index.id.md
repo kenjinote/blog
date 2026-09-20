@@ -120,7 +120,7 @@ Namun, seiring dengan peningkatan daya komputasi komputer, menjadi jelas bahwa p
 ## AES (Advanced Encryption Standard)
 Sebagai standar baru untuk menggantikan DES, "AES" ditetapkan pada tahun 2001. Algoritma "Rijndael" yang diciptakan oleh kriptografer Belgia, yang dipilih melalui kompetisi publik, diadopsi.
 
-AES tidak menggunakan struktur Feistel melainkan "Jaringan Substitusi-Permutasi (SPN: Substitution-Permutation Network)" dan memanfaatkan operasi matematika di atas medan Galois (medan berhingga) $GF(2^8)$. Panjang kunci dapat dipilih dari 128, 192, atau 256 bit, dan hingga saat ini digunakan secara luas sebagai kriptografi kunci simetris standar di seluruh dunia.
+AES tidak menggunakan struktur Feistel melainkan "Jaringan Substitusi-Permutasi (SPN: Substitution-Permutation Network)" dan memanfaatkan operasi matematika di atas medan [Galois](https://kenji.blog/id/p/galois/) (medan berhingga) $GF(2^8)$. Panjang kunci dapat dipilih dari 128, 192, atau 256 bit, dan hingga saat ini digunakan secara luas sebagai kriptografi kunci simetris standar di seluruh dunia.
 
 ```mermaid
 graph TD

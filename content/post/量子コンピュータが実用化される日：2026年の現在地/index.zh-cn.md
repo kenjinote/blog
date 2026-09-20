@@ -130,7 +130,7 @@ sequenceDiagram
 
 ### 5.3 拓扑量子计算：任意子的控制
 
-长期以来被认为是理论存在的 **拓扑量子计算** 在2026年终于进入了实验验证阶段。由Microsoft等公司推动的这种方式，使用被称为“马约拉纳零模（Majorana Zero Modes）”的非阿贝尔任意子（Non-Abelian Anyons）。
+长期以来被认为是理论存在的 **拓扑量子计算** 在2026年终于进入了实验验证阶段。由Microsoft等公司推动的这种方式，使用被称为“马约拉纳零模（Majorana Zero Modes）”的非阿贝尔任意子（Non-[Abel](https://kenji.blog/zh-cn/p/abel/)ian Anyons）。
 
 通过交换任意子粒子位置的“编织（Braiding）”操作来执行量子门。
 

@@ -15,7 +15,7 @@ Wenn $p$ eine Primzahl ist, gilt $(p−1)!≡−1 \pmod p$.
 ## Eulersche Formel
 $e^{iπ}+1=0$
 
-## Großer Fermatscher Satz
+## Großer [Fermat](https://kenji.blog/de/p/fermat/)scher Satz
 Für jede ganze Zahl $n≥3$ existieren keine positiven ganzen Zahlen $x,y,z$, die $x^n+y^n=z^n$ erfüllen.
 
 ## Basler Problem

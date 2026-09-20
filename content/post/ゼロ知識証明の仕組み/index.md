@@ -88,7 +88,7 @@ $$ (A \cdot x) \circ (B \cdot x) = C \cdot x $$
 
 ### 2. QAP（Quadratic Arithmetic Program）への変換
 
-R1CSの行列制約は無数に存在するため、これらを個別に検証するのは非常に非効率です。そこで、ラグランジュ補間を用いて、これらの制約を単一の多項式方程式に圧縮します。これが **QAP（Quadratic Arithmetic Program）** です。
+R1CSの行列制約は無数に存在するため、これらを個別に検証するのは非常に非効率です。そこで、[ラグランジュ](https://kenji.blog/p/lagrange/)補間を用いて、これらの制約を単一の多項式方程式に圧縮します。これが **QAP（Quadratic Arithmetic Program）** です。
 
 QAPへの変換により、証明すべき問題は「特定の多項式 $P(x)$ が、別の既知の多項式 $Z(x)$ で割り切れるか？」という問題に帰着します。
 

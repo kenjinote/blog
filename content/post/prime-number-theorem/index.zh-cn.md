@@ -75,7 +75,7 @@ $$ \lim_{x \to \infty} \frac{\pi(x)}{\operatorname{Li}(x)} = 1 $$
 
 ## 与黎曼猜想的深层联系
 
-与素数定理密不可分的是数学中最重要的未解之谜—— **黎曼猜想** （Riemann Hypothesis）。
+与素数定理密不可分的是数学中最重要的未解之谜—— **黎曼猜想** （[Riemann](https://kenji.blog/zh-cn/p/riemann/) Hypothesis）。
 
 黎曼猜想断言：“黎曼ζ函数 $\zeta(s)$ 的所有非平凡零点都位于实部等于 $1/2$ 的直线（临界线）上。”
 

@@ -39,7 +39,7 @@ $$
 
 「大自然不是古典的；如果你想對自然進行模擬，你最好讓電腦依照量子力學的原理來運作。」
 
-這番話的背後，存在著一個物理事實：描述量子系統狀態的「希爾伯特空間（Hilbert Space）」的維度，會隨著粒子數量呈指數級爆炸。讓我們考慮一個由 $N$ 個自旋 $1/2$ 粒子（即具有兩個量子態的系統）所組成的系統。單一粒子的狀態由二維複數向量空間 $\mathbb{C}^2$ 所描述。因此，由 $N$ 個粒子組成的複合系統之狀態空間 $\mathcal{H}$ ，是由各子系統狀態空間的張量積（Tensor Product）構成：
+這番話的背後，存在著一個物理事實：描述量子系統狀態的「希爾伯特空間（[Hilbert](https://kenji.blog/zh-tw/p/hilbert/) Space）」的維度，會隨著粒子數量呈指數級爆炸。讓我們考慮一個由 $N$ 個自旋 $1/2$ 粒子（即具有兩個量子態的系統）所組成的系統。單一粒子的狀態由二維複數向量空間 $\mathbb{C}^2$ 所描述。因此，由 $N$ 個粒子組成的複合系統之狀態空間 $\mathcal{H}$ ，是由各子系統狀態空間的張量積（Tensor Product）構成：
 
 $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
@@ -188,7 +188,7 @@ $$
 
 ## 2.2 量子力學的要求與狄拉克符號（Bra-ket notation）
 
-量子力學的第一個公設（Postulate）是：「封閉物理系統的狀態，完全由具備複數內積的完備向量空間，亦即希爾伯特空間（Hilbert Space） $\mathcal{H}$ 上的單位向量（狀態向量）所描述」。在量子計算的語境下，由於可以忽略連續空間的自由度等因素，這個希爾伯特空間通常為有限維的複數向量空間 $\mathbb{C}^d$ 。
+量子力學的第一個公設（Postulate）是：「封閉物理系統的狀態，完全由具備複數內積的完備向量空間，亦即希爾伯特空間（[Hilbert](https://kenji.blog/zh-tw/p/hilbert/) Space） $\mathcal{H}$ 上的單位向量（狀態向量）所描述」。在量子計算的語境下，由於可以忽略連續空間的自由度等因素，這個希爾伯特空間通常為有限維的複數向量空間 $\mathbb{C}^d$ 。
 
 量子資訊的最小單位「量子位元（Qubit）」，被嚴格定義為二維複數希爾伯特空間 $\mathcal{H} \cong \mathbb{C}^2$ 中的狀態。為了描述這個向量空間中的狀態，標準做法是使用由物理學家保羅·狄拉克所引入的 **狄拉克符號（Bra-ket notation）** 。
 
@@ -409,7 +409,7 @@ $$
 
 為了從根本上理解量子電腦的運作原理，以數學上嚴格的形式掌握量子力學這一物理學理論框架是不可或缺的。物理學中的許多理論都是基於經驗法則進行歸納式發展的，但量子力學，特別是由約翰·馮·紐曼（John von Neumann）所公式化的現代量子力學，採用了從少數幾個數學「公理（Axioms）」演繹出整個體系的公理化方法。
 
-這個公理體系建立在希爾伯特空間（Hilbert space）這個可擴展至無限維的複數線性代數舞台之上。在量子資訊科學與量子計算中，由於主要處理有限維向量空間（例如量子位元系統的 $\mathbb{C}^2$ 張量積空間），因此可以避開無限維中的解析學困難（如無界算符的定義域等），純粹以線性代數的方式來描述與理解量子力學。
+這個公理體系建立在希爾伯特空間（[Hilbert](https://kenji.blog/zh-tw/p/hilbert/) space）這個可擴展至無限維的複數線性代數舞台之上。在量子資訊科學與量子計算中，由於主要處理有限維向量空間（例如量子位元系統的 $\mathbb{C}^2$ 張量積空間），因此可以避開無限維中的解析學困難（如無界算符的定義域等），純粹以線性代數的方式來描述與理解量子力學。
 
 本章將從量子態的描述開始，到時間演化，再到引發最多哲學討論的「觀測」為止的過程，排除一切妥協進行嚴格的公式化。讀者將會體會到，看似違反直覺的量子現象，是如何建立在無矛盾且優美的數學結構之上。正是這個數學結構，構成了直接描述量子電腦演算法的「語言」。
 
@@ -418,7 +418,7 @@ $$
 量子力學的第一個公理，定義了在數學上應如何表示物理系統的「狀態」。
 
  **公理 1（狀態的表示）** ：
-封閉物理系統的狀態，可由具備完備性的複內積空間——希爾伯特空間（Hilbert space） $\mathcal{H}$ 上，範數為 1 的單位向量來完全描述。這被稱為 **狀態向量** 。
+封閉物理系統的狀態，可由具備完備性的複內積空間——希爾伯特空間（[Hilbert](https://kenji.blog/zh-tw/p/hilbert/) space） $\mathcal{H}$ 上，範數為 1 的單位向量來完全描述。這被稱為 **狀態向量** 。
 
 根據保羅·狄拉克（Paul Dirac）所引入的狄拉克符號（Bra-ket notation，或稱括號記號），狀態向量被視為行向量（Column vector），並記為 Ket（右矢） **$| \psi \rangle$** 。屬於對偶空間 $\mathcal{H}^*$ 的列向量（Row vector）則記為 Bra（左矢） **$\langle \psi |$** ，它們彼此互為厄米共軛（Hermitian conjugate，即複數共軛轉置）的關係。也就是說：
 
@@ -438,7 +438,7 @@ $$
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
 $$
 
-此外，由於柯西-舒瓦茲不等式（Cauchy-Schwarz inequality） $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ 成立，因此歸一化狀態之間內積的絕對值將始終落在 0 到 1 之間。這就構成了日後被詮釋為「機率」的數學基礎。
+此外，由於柯西-舒瓦茲不等式（[Cauchy](https://kenji.blog/zh-tw/p/cauchy/)-Schwarz inequality） $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ 成立，因此歸一化狀態之間內積的絕對值將始終落在 0 到 1 之間。這就構成了日後被詮釋為「機率」的數學基礎。
 
 ### 疊加原理與單範正交基底
 
@@ -450,7 +450,7 @@ $$
 \langle e_i | e_j \rangle = \delta_{ij}
 $$
 
-（ $\delta_{ij}$ 為克羅內克 δ 函數，Kronecker delta）。此外，作為完備性關係（Completeness relation）或分解恆等式，恆等算符 $I$ 可以展開如下：
+（ $\delta_{ij}$ 為克羅內克 δ 函數，[Kronecker](https://kenji.blog/zh-tw/p/kronecker/) delta）。此外，作為完備性關係（Completeness relation）或分解恆等式，恆等算符 $I$ 可以展開如下：
 
 $$
 I = \sum_i | e_i \rangle \langle e_i |
@@ -955,7 +955,7 @@ $$
 
 ## 5.1 透過張量積（$\otimes$）對多體狀態進行的數學描述
 
-根據量子力學的公理，當獨立物理系統的狀態空間分別由希爾伯特空間（Hilbert Space） **$\mathcal{H}_A$** 與 **$\mathcal{H}_B$** 來描述時，將它們組合起來的合成系統狀態空間，即為各自空間的 ** 張量積 ** （Tensor Product） **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** 。
+根據量子力學的公理，當獨立物理系統的狀態空間分別由希爾伯特空間（[Hilbert](https://kenji.blog/zh-tw/p/hilbert/) Space） **$\mathcal{H}_A$** 與 **$\mathcal{H}_B$** 來描述時，將它們組合起來的合成系統狀態空間，即為各自空間的 ** 張量積 ** （Tensor Product） **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** 。
 
 單一量子位元的狀態空間，是一個 2 維的複數向量空間 **$\mathbb{C}^2$** 。因此，由 $n$ 個量子位元組成之系統的狀態空間，將是一個 $2^n$ 維的希爾伯特空間 **$(\mathbb{C}^2)^{\otimes n}$** 。其維度會隨著量子位元數 $n$ 呈現指數級增長，這正是量子平行性的數學基礎。
 
@@ -968,7 +968,7 @@ $$
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
 $$
 
-在此，讓我們嚴格計算張量積的矩陣表示（克羅內克積，Kronecker product）。若將單一量子位元的基底表示為行向量（Column vector）：
+在此，讓我們嚴格計算張量積的矩陣表示（克羅內克積，[Kronecker](https://kenji.blog/zh-tw/p/kronecker/) product）。若將單一量子位元的基底表示為行向量（Column vector）：
 
 $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
@@ -2676,7 +2676,7 @@ $$
 
 ### 11.3.1 齊塔耶夫鏈與馬約拉納零能模
 
-在我們所處的三維空間中，基本粒子僅有玻色子與費米子兩類。然而在二維拓撲物質系統中，卻可能存在透過粒子交換操作使波函數獲得任意相位的「任意子（Anyon）」。更為奇特的是「非阿貝爾任意子（Non-Abelian anyon）」，當交換其中兩個粒子時，系統會從相同能量的簡併態么正旋轉至另一個正交態：
+在我們所處的三維空間中，基本粒子僅有玻色子與費米子兩類。然而在二維拓撲物質系統中，卻可能存在透過粒子交換操作使波函數獲得任意相位的「任意子（Anyon）」。更為奇特的是「非阿貝爾任意子（Non-[Abel](https://kenji.blog/zh-tw/p/abel/)ian anyon）」，當交換其中兩個粒子時，系統會從相同能量的簡併態么正旋轉至另一個正交態：
 
 $$
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle

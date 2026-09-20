@@ -63,7 +63,7 @@ Ancient Greek mathematicians tackled the problem of constructing regular polygon
 
 However, on March 30, 1796, Gauss mathematically proved that **"the regular heptadecagon (17-sided polygon) can be constructed using only a compass and straightedge."** He algebraically elucidated the conditions under which the roots of the cyclotomic equation can be expressed by starting from the field of rational numbers and successively adding square roots.
 
-Specifically, he derived the theorem that if $p$ is a Fermat prime (a prime of the form $p = 2^{2^n} + 1$), the regular $p$-gon is constructible. When $n=2$, $p = 2^4 + 1 = 17$, which includes the regular heptadecagon. Gauss was extremely proud of this discovery and reportedly requested that a regular heptadecagon be engraved on his tombstone (in reality, a 17-pointed star was carved because it would be indistinguishable from a circle).
+Specifically, he derived the theorem that if $p$ is a [Fermat](https://kenji.blog/en/p/fermat/) prime (a prime of the form $p = 2^{2^n} + 1$), the regular $p$-gon is constructible. When $n=2$, $p = 2^4 + 1 = 17$, which includes the regular heptadecagon. Gauss was extremely proud of this discovery and reportedly requested that a regular heptadecagon be engraved on his tombstone (in reality, a 17-pointed star was carved because it would be indistinguishable from a circle).
 
 ### Disquisitiones Arithmeticae
 
@@ -77,7 +77,7 @@ This means that "the remainders when $a$ and $b$ are divided by $n$ are equal". 
 
 Also in the same book, Gauss provided the first rigorous proof of the **"Law of Quadratic Reciprocity"**, considered one of the most beautiful theorems in number theory. This law shows that for two different odd primes $p, q$, there is a highly symmetrical relationship between whether the congruence $x^2 \equiv p \pmod{q}$ has a solution and whether $x^2 \equiv q \pmod{p}$ has a solution.
 
-Expressed in mathematical formula using the Legendre symbol, it is represented as follows:
+Expressed in mathematical formula using the [Legendre](https://kenji.blog/en/p/legendre/) symbol, it is represented as follows:
 
 $$
 \left( \frac{p}{q} \right) \left( \frac{q}{p} \right) = (-1)^{\frac{p-1}{2} \frac{q-1}{2}}
@@ -123,7 +123,7 @@ $$
 
 (Where $E, F, G$ are the coefficients of the first fundamental form, and $L, M, N$ are the coefficients of the second fundamental form)
 
-According to this theorem, it is mathematically proven that, for example, no matter how a flat piece of paper (curvature 0) is rolled up, it is impossible to make a sphere (positive curvature) without distortion. This idea of Gauss's differential geometry was later generalized to higher dimensions by [Bernhard Riemann](https://kenji.blog/en/p/riemann/) (Riemannian geometry) and further became indispensable as the mathematical foundation for Albert Einstein's general theory of relativity in later years.
+According to this theorem, it is mathematically proven that, for example, no matter how a flat piece of paper (curvature 0) is rolled up, it is impossible to make a sphere (positive curvature) without distortion. This idea of Gauss's differential geometry was later generalized to higher dimensions by [Bernhard Riemann](https://kenji.blog/en/p/riemann/) ([Riemann](https://kenji.blog/en/p/riemann/)ian geometry) and further became indispensable as the mathematical foundation for Albert Einstein's general theory of relativity in later years.
 
 ## 6. Gaussian Distribution and Electromagnetism
 
@@ -161,9 +161,9 @@ Later, when Nikolai Lobachevsky and János Bolyai independently published non-[E
 
 ## 8. Later Years and Legacy
 
-Gauss was a perfectionist, with the motto **"Few, but ripe"** (Pauca sed matura). Because he did not publish his papers until he was completely satisfied and they were in a beautifully refined form, massive amounts of unpublished notes were discovered after his death, astounding later mathematicians. Many of the theories later discovered and made famous by other mathematicians, such as complex integration (Cauchy's integral theorem), quaternions, and the foundations of elliptic function theory, were already written in Gauss's notes.
+Gauss was a perfectionist, with the motto **"Few, but ripe"** (Pauca sed matura). Because he did not publish his papers until he was completely satisfied and they were in a beautifully refined form, massive amounts of unpublished notes were discovered after his death, astounding later mathematicians. Many of the theories later discovered and made famous by other mathematicians, such as complex integration ([Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem), quaternions, and the foundations of elliptic function theory, were already written in Gauss's notes.
 
-He also mentored the next generation. In addition to the aforementioned Riemann, great mathematicians of the next generation such as Richard Dedekind and Ferdinand Gotthold Max Eisenstein received Gauss's guidance.
+He also mentored the next generation. In addition to the aforementioned [Riemann](https://kenji.blog/en/p/riemann/), great mathematicians of the next generation such as Richard Dedekind and Ferdinand Gotthold Max Eisenstein received Gauss's guidance.
 
 On February 23, 1855, [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/) passed away in Göttingen at the age of 77. His legacy transcends the boundaries of mathematics and flows at the root of all modern science and technology. From pure abstract thought to the calculation of planetary orbits, and down to the physical phenomenon of electromagnetism, the light of his intellect continues to shine even today.
 

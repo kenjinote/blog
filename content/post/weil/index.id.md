@@ -49,7 +49,7 @@ Karakteristik yang menentukan dari Bourbaki adalah perkembangannya yang sepenuhn
 
 Dengan pecahnya Perang Dunia II pada tahun 1939, nasib Weil sangat terombang-ambing. Dia menolak dinas militer dan melarikan diri ke Finlandia, di mana dia secara keliru diidentifikasi sebagai mata-mata Soviet dan hampir dieksekusi. Dia diselamatkan oleh upaya matematikawan terkemuka Rolf Nevanlinna tetapi kemudian dideportasi kembali ke Prancis dan dipenjarakan di Rouen.
 
-Namun, yang luar biasa, kreativitas matematika Weil mencapai puncaknya di bawah kondisi yang keras ini. Di dalam sel penjaranya, ia menyelesaikan salah satu pencapaian terbesarnya: **"Bukti hipotesis Riemann untuk kurva aljabar atas lapangan hingga"** . Dalam surat-surat kepada saudara perempuannya Simone, ia dengan penuh semangat mendiskusikan kegembiraan penemuan ini dan pentingnya "analogi" dalam matematika.
+Namun, yang luar biasa, kreativitas matematika Weil mencapai puncaknya di bawah kondisi yang keras ini. Di dalam sel penjaranya, ia menyelesaikan salah satu pencapaian terbesarnya: **"Bukti hipotesis [Riemann](https://kenji.blog/id/p/riemann/) untuk kurva aljabar atas lapangan hingga"** . Dalam surat-surat kepada saudara perempuannya Simone, ia dengan penuh semangat mendiskusikan kegembiraan penemuan ini dan pentingnya "analogi" dalam matematika.
 
 ## 6. Dugaan Weil: Jembatan Antara Geometri Aljabar dan Teori Bilangan
 
@@ -59,7 +59,7 @@ Pada tahun 1949, ia menerbitkan karya khasnya, **"Dugaan Weil"** . Ini mengusulk
 
 1.  **Rasionalitas**: Fungsi zeta kongruensi $Z(X, t)$ adalah fungsi rasional.
 2.  **Persamaan fungsional**: Fungsi zeta memenuhi simetri tertentu.
-3.  **Analog hipotesis Riemann**: Nilai mutlak dari nol dan kutub fungsi zeta mengikuti aturan tertentu.
+3.  **Analog hipotesis [Riemann](https://kenji.blog/id/p/riemann/)**: Nilai mutlak dari nol dan kutub fungsi zeta mengikuti aturan tertentu.
 4.  **Koneksi dengan bilangan Betti**: Derajat fungsi zeta bertepatan dengan bilangan Betti varietas.
 
 Sebagai formulasi matematika, fungsi zeta kongruensi dari varietas proyektif non-singular $X$ di atas lapangan hingga $\mathbb{F}_q$ didefinisikan sebagai berikut:
@@ -77,13 +77,13 @@ graph LR
 %% Hubungan antara teori bilangan dan geometri aljabar
 ```
 
-Untuk membuktikan dugaan mendalam ini, [Alexander Grothendieck](https://kenji.blog/id/p/grothendieck/) membangun kerangka teoretis masif dari teori skema dan kohomologi étale dari awal. Kemudian, pada tahun 1974, murid Grothendieck Pierre Deligne membuktikan rintangan terakhir, "analog hipotesis Riemann," sepenuhnya menyelesaikan dugaan Weil. Drama besar ini dianggap sebagai salah satu pencapaian monumental terbesar dalam matematika abad ke-20.
+Untuk membuktikan dugaan mendalam ini, [Alexander Grothendieck](https://kenji.blog/id/p/grothendieck/) membangun kerangka teoretis masif dari teori skema dan kohomologi étale dari awal. Kemudian, pada tahun 1974, murid Grothendieck Pierre Deligne membuktikan rintangan terakhir, "analog hipotesis [Riemann](https://kenji.blog/id/p/riemann/)," sepenuhnya menyelesaikan dugaan Weil. Drama besar ini dianggap sebagai salah satu pencapaian monumental terbesar dalam matematika abad ke-20.
 
 ## 7. Kontribusi Signifikan Lainnya: Adele, Idele, dan Grup Weil
 
 Kontribusi Weil tidak terbatas pada mengusulkan dugaan. Ia menyempurnakan teori **"adele"** dan **"idele"** , yang telah menjadi bahasa esensial dalam teori bilangan modern. Ini melengkapi kerangka kerja yang kuat dalam teori bilangan yang menghubungkan lokal ke global.
 
-Selain itu, ia memperkenalkan **"Grup Weil"** , perluasan dari konsep grup Galois, yang memainkan peran sangat penting dalam menyatukan teori medan kelas lokal dan global. Konsep-konsep ini terus diteliti secara aktif saat ini sebagai dasar dari "program Langlands," sebuah masalah besar yang belum terpecahkan dalam matematika modern. Selain itu, objek matematika yang menggunakan namanya terlalu banyak untuk disebutkan, termasuk "pasangan Weil" (Weil pairing) yang digunakan dalam kriptografi kurva eliptik dan "metrik Weil-Petersson" dalam geometri ruang moduli.
+Selain itu, ia memperkenalkan **"Grup Weil"** , perluasan dari konsep grup [Galois](https://kenji.blog/id/p/galois/), yang memainkan peran sangat penting dalam menyatukan teori medan kelas lokal dan global. Konsep-konsep ini terus diteliti secara aktif saat ini sebagai dasar dari "program Langlands," sebuah masalah besar yang belum terpecahkan dalam matematika modern. Selain itu, objek matematika yang menggunakan namanya terlalu banyak untuk disebutkan, termasuk "pasangan Weil" (Weil pairing) yang digunakan dalam kriptografi kurva eliptik dan "metrik Weil-Petersson" dalam geometri ruang moduli.
 
 ## 8. Kehidupan Selanjutnya dan Warisan Matematika
 

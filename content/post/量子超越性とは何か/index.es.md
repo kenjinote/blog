@@ -32,7 +32,7 @@ $$
 Donde $\alpha, \beta \in \mathbb{C}$, y cumplen con la condición de normalización $|\alpha|^2 + |\beta|^2 = 1$. A esta propiedad se le llama "superposición" (Superposition).
 
 ### Entrelazamiento (Entanglement) y producto tensorial
-Cuando hay varios cúbits, el estado de todo el sistema se representa por el producto tensorial del espacio de estados de cada cúbit individual. Un sistema de $n$ cúbits es un vector en el espacio de Hilbert de $2^n$ dimensiones $\mathcal{H}^{\otimes n}$.
+Cuando hay varios cúbits, el estado de todo el sistema se representa por el producto tensorial del espacio de estados de cada cúbit individual. Un sistema de $n$ cúbits es un vector en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) de $2^n$ dimensiones $\mathcal{H}^{\otimes n}$.
 
 $$
 |\Psi\rangle = \sum_{x \in \{0, 1\}^n} c_x |x\rangle

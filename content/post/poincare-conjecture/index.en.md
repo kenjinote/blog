@@ -38,7 +38,7 @@ On the other hand, a sphere (the surface of a ball) has no holes. Therefore, no 
 
 The [Poincaré Conjecture](https://kenji.blog/en/p/poincare-conjecture/) is an attempt to characterize a "sphere" from this topological perspective.
 
-The "surface of a sphere" that we see on a daily basis is called a 2-dimensional sphere ( $S^2$ ). Poincaré thought that if a figure is a closed space with "no holes", it might be homeomorphic (topologically the same) to a sphere.
+The "surface of a sphere" that we see on a daily basis is called a 2-dimensional sphere ( $S^2$ ). [Poincaré](https://kenji.blog/en/p/poincare/) thought that if a figure is a closed space with "no holes", it might be homeomorphic (topologically the same) to a sphere.
 
 The concept that becomes important here is being **simply connected**.
 
@@ -47,7 +47,7 @@ When any loop drawn in a space can be shrunk to a single point without leaving t
 - **Sphere ( $S^2$ )**: Any loop drawn on the surface can be shrunk to a point by sliding it along the surface. That is, it is simply connected.
 - **Torus (surface of a donut)**: A loop drawn to pass through the hole will get caught on the hole and cannot be shrunk to a single point. That is, it is not simply connected.
 
-Poincaré asked whether this property, which holds for a 2-dimensional sphere, also holds for a 3-dimensional sphere ( $S^3$ ).
+[Poincaré](https://kenji.blog/en/p/poincare/) asked whether this property, which holds for a 2-dimensional sphere, also holds for a 3-dimensional sphere ( $S^3$ ).
 
 > **[Poincaré Conjecture](https://kenji.blog/en/p/poincare-conjecture/)**
 > Every simply connected, closed 3-manifold is homeomorphic to the 3-sphere $S^3$.
@@ -125,4 +125,4 @@ The resolution of the [Poincaré Conjecture](https://kenji.blog/en/p/poincare-co
 
 Also, mathematical attempts to understand the shape of the universe continue to have a deep impact on the understanding of dimensions in modern physics, especially string theory and cosmology.
 
-The baton of knowledge passed from Poincaré to Thurston, Hamilton, and finally Perelman is arguably the greatest monument proving how deeply the human mind can approach the beautiful truths of the universe.
+The baton of knowledge passed from [Poincaré](https://kenji.blog/en/p/poincare/) to Thurston, Hamilton, and finally Perelman is arguably the greatest monument proving how deeply the human mind can approach the beautiful truths of the universe.

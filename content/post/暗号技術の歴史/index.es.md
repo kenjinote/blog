@@ -120,7 +120,7 @@ Sin embargo, a medida que aumentaba el poder de cálculo de las computadoras, se
 ## AES (Advanced Encryption Standard)
 Como nuevo estándar para reemplazar a DES, en 2001 se estableció "AES". Se adoptó el algoritmo "Rijndael", creado por criptógrafos belgas y elegido a través de un concurso público.
 
-AES adoptó la "Red de Sustitución-Permutación (SPN: Substitution-Permutation Network)" en lugar de la red de Feistel y utiliza operaciones matemáticas sobre el cuerpo de Galois (cuerpo finito) $GF(2^8)$. La longitud de la clave se puede elegir entre 128, 192 y 256 bits, y todavía se utiliza ampliamente en todo el mundo como la criptografía de clave simétrica estándar.
+AES adoptó la "Red de Sustitución-Permutación (SPN: Substitution-Permutation Network)" en lugar de la red de Feistel y utiliza operaciones matemáticas sobre el cuerpo de [Galois](https://kenji.blog/es/p/galois/) (cuerpo finito) $GF(2^8)$. La longitud de la clave se puede elegir entre 128, 192 y 256 bits, y todavía se utiliza ampliamente en todo el mundo como la criptografía de clave simétrica estándar.
 
 ```mermaid
 graph TD

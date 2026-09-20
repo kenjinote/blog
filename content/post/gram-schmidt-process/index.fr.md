@@ -190,7 +190,7 @@ Maintenant, appliquons le procédé d'orthogonalisation de Gram-Schmidt à la ba
 * Calcul de $\mathbf{u}_1(x) = x - \text{proj}_{\mathbf{u}_0}(x)$, étant donné que $\langle x, 1 \rangle = \int_{-1}^{1} x dx = 0$, nous avons $\mathbf{u}_1(x) = x$.
 * Le calcul de $\mathbf{u}_2(x) = x^2 - \text{proj}_{\mathbf{u}_0}(x^2) - \text{proj}_{\mathbf{u}_1}(x^2)$ donne $\mathbf{u}_2(x) = x^2 - \frac{1}{3}$.
 
-La suite de polynômes orthogonaux générée de cette manière est appelée **polynômes de Legendre**, et ils jouent un rôle extrêmement important dans l'électromagnétisme et la mécanique quantique en physique, ainsi que dans l'intégration numérique (quadrature de Gauss). C'est un bel exemple où un algorithme algébrique dérive naturellement des descriptions de lois physiques profondes.
+La suite de polynômes orthogonaux générée de cette manière est appelée **polynômes de [Legendre](https://kenji.blog/fr/p/legendre/)**, et ils jouent un rôle extrêmement important dans l'électromagnétisme et la mécanique quantique en physique, ainsi que dans l'intégration numérique (quadrature de Gauss). C'est un bel exemple où un algorithme algébrique dérive naturellement des descriptions de lois physiques profondes.
 
 ## 8. Application avancée 2 : Décomposition QR et Science des données
 

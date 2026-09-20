@@ -92,8 +92,8 @@ Eiffel ist eine objektorientierte Programmiersprache.
 ## Ada
 Ada ist eine objektorientierte Programmiersprache.
 
-## Pascal
-Pascal ist eine prozedurale Programmiersprache.
+## [Pascal](https://kenji.blog/de/p/pascal/)
+[Pascal](https://kenji.blog/de/p/pascal/) ist eine prozedurale Programmiersprache.
 
 ## COBOL
 Gibt es schon lange. Es ist eine universelle Programmiersprache.

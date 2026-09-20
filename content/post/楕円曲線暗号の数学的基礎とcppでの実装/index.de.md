@@ -56,7 +56,7 @@ Eine Gruppe, in der die Reihenfolge der Operanden das Ergebnis nicht verändert,
 Die Menge der Punkte auf einer elliptischen Kurve bildet eine solche **abelsche Gruppe**, wenn wir eine spezifische Additionsregel definieren.
 
 ### 2.2. Endliche Körper (Finite Field)
-In der Kryptographietheorie verwenden wir keine Körper mit kontinuierlichen und unendlich vielen Elementen wie die reellen oder komplexen Zahlen, sondern **endliche Körper (Finite Fields)** oder Galois-Körper (Galois Fields), deren Elementanzahl endlich ist.
+In der Kryptographietheorie verwenden wir keine Körper mit kontinuierlichen und unendlich vielen Elementen wie die reellen oder komplexen Zahlen, sondern **endliche Körper (Finite Fields)** oder [Galois](https://kenji.blog/de/p/galois/)-Körper ([Galois](https://kenji.blog/de/p/galois/) Fields), deren Elementanzahl endlich ist.
 
 Der grundlegendste endliche Körper ist der **Primkörper $\mathbb{F}_p$** unter Verwendung einer Primzahl $p$. Dies ist die Menge der ganzen Zahlen $\{0, 1, 2, \dots, p-1\}$ versehen mit den vier Grundrechenarten (Addition, Subtraktion, Multiplikation, Division) modulo $p$ (dem Rest bei Division durch $p$).
 
@@ -152,7 +152,7 @@ $$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
 $$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
 
 > [!IMPORTANT]
-> Diese Formeln enthalten **Divisionen (Berechnung des modularen Inversen)** wie $(x_2 - x_1)^{-1}$ und $(2y_1)^{-1}$. Da die Berechnung des modularen Inversen sehr rechenintensiv ist, werden in tatsächlichen Implementierungen allgemein projektive Koordinatensysteme wie die **"Jacobi-Koordinaten (Jacobian Coordinates)"** verwendet, die die Division verzögern.
+> Diese Formeln enthalten **Divisionen (Berechnung des modularen Inversen)** wie $(x_2 - x_1)^{-1}$ und $(2y_1)^{-1}$. Da die Berechnung des modularen Inversen sehr rechenintensiv ist, werden in tatsächlichen Implementierungen allgemein projektive Koordinatensysteme wie die **"[Jacobi](https://kenji.blog/de/p/jacobi/)-Koordinaten ([Jacobi](https://kenji.blog/de/p/jacobi/)an Coordinates)"** verwendet, die die Division verzögern.
 
 ---
 
@@ -272,7 +272,7 @@ Wenn jedoch die Verzweigung (`if (k_i == 0)`) selbst vorhanden ist, bleibt das R
 
 ## 8. Implementierung der Elliptischen-Kurven-Kryptographie in C++
 
-Von nun an werden wir die Theorie in C++-Code umsetzen. Praktische Krypto-Bibliotheken (wie OpenSSL oder libsodium) verwenden hochentwickelte Assembler-Optimierungen und Jacobi-Koordinaten, aber um das mathematische Verständnis zu vertiefen, zeigen wir hier das Gerüst einer **leicht verständlichen Constant-Time-Implementierung mit affinen Koordinaten**.
+Von nun an werden wir die Theorie in C++-Code umsetzen. Praktische Krypto-Bibliotheken (wie OpenSSL oder libsodium) verwenden hochentwickelte Assembler-Optimierungen und [Jacobi](https://kenji.blog/de/p/jacobi/)-Koordinaten, aber um das mathematische Verständnis zu vertiefen, zeigen wir hier das Gerüst einer **leicht verständlichen Constant-Time-Implementierung mit affinen Koordinaten**.
 
 Wir gehen davon aus, dass wir `boost::multiprecision::cpp_int` für die Berechnungen mit großen Zahlen verwenden.
 

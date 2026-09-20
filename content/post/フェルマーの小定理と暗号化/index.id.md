@@ -136,11 +136,11 @@ Jika $n$ adalah bilangan prima $p$, karena $\phi(p) = p - 1$, ini menjadi tepat 
 
 ---
 
-## 5. Menemukan Bilangan Prima Raksasa: Uji Primalitas Fermat
+## 5. Menemukan Bilangan Prima Raksasa: Uji Primalitas [Fermat](https://kenji.blog/id/p/fermat/)
 
 Dalam teknologi kriptografi (seperti RSA dan pertukaran kunci Diffie-Hellman), kita perlu menemukan "bilangan prima raksasa" yang panjangnya bisa mencapai ratusan digit dengan sangat cepat. Namun, untuk menentukan apakah sebuah angka besar $N$ adalah bilangan prima, menggunakan metode "uji pembagian" yang mencoba membagi angka tersebut dengan semua bilangan dari $2$ hingga $\sqrt{N}$ akan memakan waktu selama umur alam semesta.
 
-Oleh karena itu, muncul "metode uji primalitas probabilistik" yang memanfaatkan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/), yaitu **Uji Fermat (Fermat Primality Test)**.
+Oleh karena itu, muncul "metode uji primalitas probabilistik" yang memanfaatkan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/), yaitu **Uji [Fermat](https://kenji.blog/id/p/fermat/) ([Fermat](https://kenji.blog/id/p/fermat/) Primality Test)**.
 
 ### 5.1 Apa itu Uji Primalitas Probabilistik?
 
@@ -151,7 +151,7 @@ Dengan demikian, jika kita ingin menguji apakah $N$ adalah bilangan prima, kita 
 
 ### 5.2 Penjelasan Algoritma dan Diagram Alur
 
-Algoritma Uji Fermat adalah sebagai berikut:
+Algoritma Uji [Fermat](https://kenji.blog/id/p/fermat/) adalah sebagai berikut:
 
 ```mermaid
 flowchart TD
@@ -171,9 +171,9 @@ flowchart TD
 
 ### 5.3 Perangkap Bilangan Carmichael (Bilangan Prima Semu)
 
-Meskipun Uji Fermat sangat cepat, ada kelemahan fatal. Terdapat bilangan komposit bagaikan iblis yang tetap memenuhi $a^{N-1} \equiv 1 \pmod N$ untuk semua nilai $a$. Angka ini disebut **Bilangan Carmichael (Carmichael numbers)**. Bilangan Carmichael terkecil adalah $561$ ($3 \times 11 \times 17$).
+Meskipun Uji [Fermat](https://kenji.blog/id/p/fermat/) sangat cepat, ada kelemahan fatal. Terdapat bilangan komposit bagaikan iblis yang tetap memenuhi $a^{N-1} \equiv 1 \pmod N$ untuk semua nilai $a$. Angka ini disebut **Bilangan Carmichael (Carmichael numbers)**. Bilangan Carmichael terkecil adalah $561$ ($3 \times 11 \times 17$).
 
-Karena adanya bilangan Carmichael, kita tidak bisa melakukan uji primalitas yang mutlak hanya dengan Uji Fermat murni. Oleh karena itu, dalam sistem kriptografi nyata (seperti OpenSSL), standar yang digunakan adalah modifikasi dari Uji Fermat, yaitu **Uji Primalitas Miller-Rabin**. Uji Miller-Rabin mampu mendeteksi bilangan Carmichael sehingga dapat menekan probabilitas kesalahan identifikasi hingga mendekati nol secara praktis.
+Karena adanya bilangan Carmichael, kita tidak bisa melakukan uji primalitas yang mutlak hanya dengan Uji [Fermat](https://kenji.blog/id/p/fermat/) murni. Oleh karena itu, dalam sistem kriptografi nyata (seperti OpenSSL), standar yang digunakan adalah modifikasi dari Uji [Fermat](https://kenji.blog/id/p/fermat/), yaitu **Uji Primalitas Miller-Rabin**. Uji Miller-Rabin mampu mendeteksi bilangan Carmichael sehingga dapat menekan probabilitas kesalahan identifikasi hingga mendekati nol secara praktis.
 
 ### 5.4 Eksponensiasi Modular Cepat (Metode Penguadratan Berulang)
 
@@ -184,7 +184,7 @@ Solusi untuk masalah ini adalah **Metode Penguadratan Berulang (Exponentiation b
 
 ## 6. Implementasi Uji Primalitas dan Eksponensiasi Modular
 
-Sekarang mari kita coba mengimplementasikan Uji Primalitas Fermat dan metode penguadratan berulang dalam C++ dan Python.
+Sekarang mari kita coba mengimplementasikan Uji Primalitas [Fermat](https://kenji.blog/id/p/fermat/) dan metode penguadratan berulang dalam C++ dan Python.
 
 ### 6.1 Implementasi dengan C++
 
@@ -281,7 +281,7 @@ else:
 
 ---
 
-## 7. Penerapan pada Kriptografi RSA: Tempat Fermat dan Euler Membuahkan Hasil
+## 7. Penerapan pada Kriptografi RSA: Tempat [Fermat](https://kenji.blog/id/p/fermat/) dan Euler Membuahkan Hasil
 
 Penerapan paling hebat dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) (dan Teorema Euler) adalah **Kriptografi RSA**, yang dikembangkan pada tahun 1977 oleh Rivest, Shamir, dan Adleman.
 Kriptografi RSA adalah sistem "kriptografi kunci publik" yang revolusioner, di mana kunci untuk mengenkripsi (kunci publik) dipublikasikan ke seluruh dunia, sementara kunci untuk mendekripsi (kunci privat) hanya diketahui oleh penerima.
@@ -361,7 +361,7 @@ Di sini **Teorema Euler** ($M^{\phi(N)} \equiv 1 \pmod N$) berperan. (*Secara ke
 Dengan menerapkan Teorema Euler, karena $M^{\phi(N)} \equiv 1$, maka:
 $$ M \cdot (1)^k \equiv M \pmod N $$
 
-Luar biasa, $M$ berhasil dipulihkan! Sifat angka yang ditemukan oleh Fermat dan Euler berabad-abad lalu mampu memberikan jaminan kerahasiaan komunikasi digital modern secara sempurna.
+Luar biasa, $M$ berhasil dipulihkan! Sifat angka yang ditemukan oleh [Fermat](https://kenji.blog/id/p/fermat/) dan Euler berabad-abad lalu mampu memberikan jaminan kerahasiaan komunikasi digital modern secara sempurna.
 
 ---
 
@@ -466,9 +466,9 @@ Jika Anda menjalankan kode ini, Anda dapat melihat array karakter diubah menjadi
 
 ## 9. Penutup: Titik Temu Keindahan dan Kepraktisan Matematika
 
-Pada abad ke-17 ketika [Pierre de Fermat](https://kenji.blog/id/p/fermat/) menemukan "Teorema Kecil" ini, tidak ada yang berpikir bahwa ini akan berguna untuk sesuatu. Fermat sendiri melakukan penelitian pada teori bilangan murni karena rasa ingin tahunya terhadap matematika.
+Pada abad ke-17 ketika [Pierre de Fermat](https://kenji.blog/id/p/fermat/) menemukan "Teorema Kecil" ini, tidak ada yang berpikir bahwa ini akan berguna untuk sesuatu. [Fermat](https://kenji.blog/id/p/fermat/) sendiri melakukan penelitian pada teori bilangan murni karena rasa ingin tahunya terhadap matematika.
 
-Namun, sekitar 300 tahun kemudian, pada era awal jaringan komputer di tahun 1970-an, Teorema Fermat dibangkitkan kembali secara dramatis sebagai teknologi kriptografi yang mutlak diperlukan untuk membangun protokol komunikasi yang aman. Teknologi uji primalitas yang didasarkan pada [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) dan kriptografi RSA yang didasarkan pada Teorema Euler, benar-benar menjadi pilar yang menopang infrastruktur internet modern.
+Namun, sekitar 300 tahun kemudian, pada era awal jaringan komputer di tahun 1970-an, Teorema [Fermat](https://kenji.blog/id/p/fermat/) dibangkitkan kembali secara dramatis sebagai teknologi kriptografi yang mutlak diperlukan untuk membangun protokol komunikasi yang aman. Teknologi uji primalitas yang didasarkan pada [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) dan kriptografi RSA yang didasarkan pada Teorema Euler, benar-benar menjadi pilar yang menopang infrastruktur internet modern.
 
 Pesan LINE yang kita kirimkan tanpa berpikir setiap harinya, atau belanja yang kita lakukan di Amazon, semuanya menari di atas persamaan matematika yang indah dan sederhana: $a^{p-1} \equiv 1 \pmod p$. [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) mengajarkan kita bahwa betapa pun abstraknya sebuah konsep matematika, suatu saat nanti ia pasti akan berguna bagi umat manusia.
 

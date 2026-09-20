@@ -110,6 +110,6 @@ Aproksimasi ini sangat diperlukan saat menghitung entropi dalam mekanika statist
 
 1. **Probabilitas dan Statistik**: Distribusi Gamma, distribusi Chi-kuadrat, dan distribusi t Student didefinisikan menggunakan fungsi Gamma.
 2. **Fisika**: Dalam regularisasi dimensional di dalam mekanika kuantum dan teori medan kuantum, fungsi Gamma berperan dalam mengendalikan divergensi.
-3. **Teori Bilangan Analitik**: Melalui hubungannya dengan fungsi zeta Riemann, ia memegang posisi sentral dalam studi distribusi bilangan prima.
+3. **Teori Bilangan Analitik**: Melalui hubungannya dengan fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/), ia memegang posisi sentral dalam studi distribusi bilangan prima.
 
 Pencarian yang dimulai dengan pertanyaan sederhana tentang memperluas faktorial ke bilangan real mengungkapkan struktur luar biasa yang membentang di seluruh matematika. [Fungsi Gamma](https://kenji.blog/id/p/gamma-function/) benar-benar mahakarya Euler, yang menjembatani dunia diskrit dan kontinu.

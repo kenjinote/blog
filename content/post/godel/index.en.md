@@ -14,13 +14,13 @@ tags: ["Kurt Gödel", "Incompleteness Theorems", "Mathematics", "Logic", "Histor
 
 Gödel's achievements extend far beyond mere mathematical proofs, reaching into philosophy, computer science, and even cosmology. In this article, we delve deeply into the trajectory of this genius who forever changed the history of mathematics, exploring the details of his mathematical feats, his profound friendship with Albert Einstein, and the tragic conclusion of his later years from multiple perspectives.
 
-# 2. The Crisis in Mathematics and Hilbert's Program
+# 2. The Crisis in Mathematics and [Hilbert](https://kenji.blog/en/p/hilbert/)'s Program
 
 To truly appreciate the value of Gödel's work, it is necessary to understand in detail the "foundational crisis" facing the mathematical world at the time. At the end of the 19th century, the theory of infinite sets, founded by [Georg Cantor](https://kenji.blog/en/p/cantor/), brought entirely new perspectives and powerful tools to mathematics. However, it was soon discovered that it harbored severe paradoxes of self-reference, such as "Russell's Paradox."
 
 Russell's Paradox considers "the set of all sets that do not contain themselves as members." If this set contains itself, it contradicts its own definition; if it does not contain itself, it must be a member of itself, again leading to a contradiction. This discovery exposed the extreme fragility of the mathematical foundations of the time, which relied heavily on intuitive reasoning.
 
-To address this, the great German mathematician [David Hilbert](https://kenji.blog/en/p/hilbert/) proposed "Hilbert's Program." This aimed for a formalistic approach to derive all mathematical theorems from a small set of axioms and mechanical rules of inference. The ultimate goal was to mathematically prove, in a finite number of steps, that the axiom system would absolutely never lead to a contradiction (consistency) and that every true proposition could be proven within that system (completeness). If successful, mathematics would stand on a perfectly solid foundation. Mathematicians of the time firmly believed in the success of this program, considering the complete formalization of mathematics to be only a matter of time.
+To address this, the great German mathematician [David Hilbert](https://kenji.blog/en/p/hilbert/) proposed "[Hilbert](https://kenji.blog/en/p/hilbert/)'s Program." This aimed for a formalistic approach to derive all mathematical theorems from a small set of axioms and mechanical rules of inference. The ultimate goal was to mathematically prove, in a finite number of steps, that the axiom system would absolutely never lead to a contradiction (consistency) and that every true proposition could be proven within that system (completeness). If successful, mathematics would stand on a perfectly solid foundation. Mathematicians of the time firmly believed in the success of this program, considering the complete formalization of mathematics to be only a matter of time.
 
 # 3. Early Life and the Philosophy of the Vienna Circle
 
@@ -34,7 +34,7 @@ The Vienna Circle advocated logical positivism, seeking to dismiss metaphysical 
 
 In 1930, in his doctoral dissertation submitted to the University of Vienna, Gödel brilliantly proved the "Completeness Theorem of First-Order Logic." First-order logic is a logical system in which quantifiers (all, exists) can only be applied to variables, not to predicates.
 
-In this paper, Gödel showed that in first-order logic, "a proposition that is logically always true (a valid logical formula) can necessarily be proven from the axioms in a finite number of steps." This signified a partial success of Hilbert's Program, guaranteeing that the inference rules of the logical system were sufficiently powerful. Many mathematicians held high hopes that this could serve as a stepping stone to proving the completeness of number theory (arithmetic) as well. However, the paper Gödel published the following year would shatter those expectations entirely.
+In this paper, Gödel showed that in first-order logic, "a proposition that is logically always true (a valid logical formula) can necessarily be proven from the axioms in a finite number of steps." This signified a partial success of [Hilbert](https://kenji.blog/en/p/hilbert/)'s Program, guaranteeing that the inference rules of the logical system were sufficiently powerful. Many mathematicians held high hopes that this could serve as a stepping stone to proving the completeness of number theory (arithmetic) as well. However, the paper Gödel published the following year would shatter those expectations entirely.
 
 # 5. The Shock of the First Incompleteness Theorem and Gödel Numbering
 
@@ -59,7 +59,7 @@ flowchart TD
 
 To prove this astonishing theorem, Gödel invented a groundbreaking technique known as "Gödel numbering." This is a method of converting symbols, logical formulas, and entire step-by-step proofs into a single massive natural number, utilizing the uniqueness of prime factorization. This allowed metamathematical propositions (such as "a certain logical formula is provable") to be treated as purely arithmetic properties of natural numbers. This "Diagonal Lemma," which allowed a logical system to speak about its own limits (self-reference), is considered one of the most beautiful proof techniques in the history of mathematics.
 
-# 6. The Second Incompleteness Theorem and the End of Hilbert's Dream
+# 6. The Second Incompleteness Theorem and the End of [Hilbert](https://kenji.blog/en/p/hilbert/)'s Dream
 
 As a direct consequence of the First Incompleteness Theorem, Gödel derived the even more powerful **Second Incompleteness Theorem**. This states: "A consistent formal axiomatic system capable of expressing arithmetic cannot prove its own consistency within the system itself."
 
@@ -69,11 +69,11 @@ $$ \text{Con}(F) \implies \neg \text{Prov}( \lceil \text{Con}(F) \rceil ) $$
 
 Here, $\text{Con}(F)$ is a logical formula representing that the axiom system $F$ is consistent. If system $F$ could prove its own consistency, the system would actually be inconsistent.
 
-The Second Incompleteness Theorem was an absolute death sentence for Hilbert's Program. Hilbert's grand dream of proving the consistency of mathematics entirely from within mathematics itself was proven to be impossible in principle. A profound truth was established here: mathematics cannot guarantee the safety of its own foundations by its own power.
+The Second Incompleteness Theorem was an absolute death sentence for [Hilbert](https://kenji.blog/en/p/hilbert/)'s Program. [Hilbert](https://kenji.blog/en/p/hilbert/)'s grand dream of proving the consistency of mathematics entirely from within mathematics itself was proven to be impossible in principle. A profound truth was established here: mathematics cannot guarantee the safety of its own foundations by its own power.
 
 # 7. Contributions to the [Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/) and the Constructible Universe (L)
 
-Even after the incompleteness theorems, Gödel's intellectual quest did not stop. He tackled the "[Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/)," a long-standing unsolved problem in set theory and the first of Hilbert's 23 problems. Proposed by Cantor, this hypothesis posits that "there is no set whose cardinality is strictly between that of the integers (countable infinity) and the real numbers (the continuum)."
+Even after the incompleteness theorems, Gödel's intellectual quest did not stop. He tackled the "[Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/)," a long-standing unsolved problem in set theory and the first of [Hilbert](https://kenji.blog/en/p/hilbert/)'s 23 problems. Proposed by Cantor, this hypothesis posits that "there is no set whose cardinality is strictly between that of the integers (countable infinity) and the real numbers (the continuum)."
 
 $$ 2^{\aleph_0} = \aleph_1 $$
 

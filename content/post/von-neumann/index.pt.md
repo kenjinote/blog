@@ -36,7 +36,7 @@ Aqui, $V$ representa a **classe de todos os conjuntos** ( $\text{classe universa
 
 No final da década de 1920, a mecânica quântica estava se desenvolvendo como duas teorias aparentemente completamente diferentes: a "mecânica matricial" de Werner Heisenberg e a "mecânica ondulatória" de Erwin Schrödinger. Von Neumann provou que essas duas teorias eram matematicamente equivalentes, dando à mecânica quântica uma base matemática estrita.
 
-Usando a teoria do **espaço de Hilbert**, ele formulou quantidades físicas (observáveis) como operadores autoadjuntos em um espaço de Hilbert de dimensão infinita. Seu livro "Fundamentos Matemáticos da Mecânica Quântica", publicado em 1932, é considerado uma bíblia até mesmo para os físicos modernos e ainda é altamente considerado hoje como um livro-texto padrão para a mecânica quântica.
+Usando a teoria do **espaço de [Hilbert](https://kenji.blog/pt/p/hilbert/)**, ele formulou quantidades físicas (observáveis) como operadores autoadjuntos em um espaço de [Hilbert](https://kenji.blog/pt/p/hilbert/) de dimensão infinita. Seu livro "Fundamentos Matemáticos da Mecânica Quântica", publicado em 1932, é considerado uma bíblia até mesmo para os físicos modernos e ainda é altamente considerado hoje como um livro-texto padrão para a mecânica quântica.
 
 Ele também introduziu o conceito de **matriz de densidade** ( $\text{matriz de densidade}$ ) para descrever estados mistos, lançando as bases da mecânica estatística quântica.
 
@@ -112,7 +112,7 @@ Existem inúmeras anedotas em torno do cérebro sobre-humano de von Neumann.
 Os livros e artigos que von Neumann deixou para trás durante sua vida são diversos, mas aqui apresentamos obras representativas que tiveram um impacto particularmente significativo nas gerações posteriores.
 
 1. **Fundamentos Matemáticos da Mecânica Quântica (1932)**
-   Uma obra monumental que formulou estritamente a mecânica quântica usando a teoria dos espaços de Hilbert.
+   Uma obra monumental que formulou estritamente a mecânica quântica usando a teoria dos espaços de [Hilbert](https://kenji.blog/pt/p/hilbert/).
 2. **Teoria dos Jogos e Comportamento Econômico (1944)**
    Em coautoria com Oskar Morgenstern. Uma obra-prima que discutiu sistematicamente tudo, desde jogos de soma zero até jogos cooperativos.
 3. **O Computador e o Cérebro (1958)**

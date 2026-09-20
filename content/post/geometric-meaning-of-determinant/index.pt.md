@@ -116,7 +116,7 @@ Os determinantes têm várias propriedades algébricas conhecidas, mas se você 
 *   **Determinante de uma matriz inversa** : $\det(A^{-1}) = \frac{1}{\det(A)}$
     Se uma certa transformação expande o espaço em $2$ vezes, sua transformação inversa deve encolher o espaço para $\frac{1}{2}$ para devolvê-lo ao seu estado original.
 
-## 7. Conclusão: Conectando com o Jacobiano
+## 7. Conclusão: Conectando com o [Jacobi](https://kenji.blog/pt/p/jacobi/)ano
 
 O determinante não é apenas uma fórmula de cálculo incômoda, mas uma ferramenta geométrica extremamente poderosa para descrever a deformação do espaço.
 
@@ -124,4 +124,4 @@ O determinante não é apenas uma fórmula de cálculo incômoda, mas uma ferram
 *   **Sinal** : Se a "orientação" do espaço é preservada (positivo) ou invertida (negativo).
 *   **Zero** : O espaço "entrando em colapso" em uma dimensão inferior (perda de dimensionalidade e irreversibilidade).
 
-Ter essa imagem intuitiva servirá como uma base importante para entender o **Jacobiano** (o fator de escala de volume local em transformações não lineares) que você aprenderá mais tarde em cálculo. No mundo da álgebra linear, ligar constantemente fórmulas com imagens geométricas é o caminho mais curto para a compreensão profunda.
+Ter essa imagem intuitiva servirá como uma base importante para entender o **[Jacobi](https://kenji.blog/pt/p/jacobi/)ano** (o fator de escala de volume local em transformações não lineares) que você aprenderá mais tarde em cálculo. No mundo da álgebra linear, ligar constantemente fórmulas com imagens geométricas é o caminho mais curto para a compreensão profunda.

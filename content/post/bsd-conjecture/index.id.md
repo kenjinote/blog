@@ -14,7 +14,7 @@ Di dalam matematika modern, salah satu misteri yang paling penting, indah, dan m
 
 Konjektur BSD berada dalam bidang "Geometri Aritmatika", yang merupakan persilangan antara geometri aljabar dan teori bilangan. Secara garis besar, konjektur ini membuat klaim yang menakjubkan: "Apakah jumlah titik rasional pada kurva eliptik itu tak terhingga atau tidak, dapat diketahui dari perilaku fungsi kompleks (fungsi L) yang ditentukan oleh kurva eliptik tersebut pada $s=1$." Dengan mengumpulkan informasi lokal (jumlah solusi modulo bilangan prima), informasi global (struktur dari solusi rasional) dapat ditentukan sepenuhnya, sebuah konjektur yang seolah mewujudkan romantisme matematika.
 
-Dalam artikel ini, untuk memahami apa arti dari Konjektur BSD, kita akan memulai dari dasar kurva eliptik, lalu membahas secara rinci dan ketat mengenai Teorema Mordell, definisi fungsi L, dan klaim eksak dari Konjektur BSD (Konjektur Lemah dan Konjektur Kuat). Selain itu, kita juga akan menyelami topik-topik tingkat lanjut seperti hubungan dengan masalah bilangan kongruen dan latar belakang melalui kohomologi Galois.
+Dalam artikel ini, untuk memahami apa arti dari Konjektur BSD, kita akan memulai dari dasar kurva eliptik, lalu membahas secara rinci dan ketat mengenai Teorema Mordell, definisi fungsi L, dan klaim eksak dari Konjektur BSD (Konjektur Lemah dan Konjektur Kuat). Selain itu, kita juga akan menyelami topik-topik tingkat lanjut seperti hubungan dengan masalah bilangan kongruen dan latar belakang melalui kohomologi [Galois](https://kenji.blog/id/p/galois/).
 
 ## 2. Apa itu Kurva Eliptik: Permata Geometri Aljabar
 
@@ -109,7 +109,7 @@ $$
 a_p = p + 1 - N_p
 $$
 
-Menurut batas Hasse (Hasse's bound), diketahui bahwa penyimpangan ini dibatasi oleh $|a_p| \le 2\sqrt{p}$. Ini adalah sejenis analogi Hipotesis Riemann untuk kurva eliptik atas lapangan berhingga.
+Menurut batas Hasse (Hasse's bound), diketahui bahwa penyimpangan ini dibatasi oleh $|a_p| \le 2\sqrt{p}$. Ini adalah sejenis analogi Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) untuk kurva eliptik atas lapangan berhingga.
 
 ### 4.2. Definisi Fungsi L
 
@@ -185,7 +185,7 @@ Invarian-invarian yang muncul dalam rumus ini adalah:
 1. **$\Omega_E$ (Periode riil)** : Bilangan transenden yang diperoleh dari integral $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ atas lapangan bilangan riil dari kurva eliptik.
 2. **$\mathrm{Reg}(E)$ (Regulator)** : Determinan matriks $r \times r$ yang disusun oleh pemasangan tinggi Néron-Tate (Néron-Tate height pairing) $\langle P_i, P_j \rangle$ dari pembangkit titik rasional berorde tak hingga $P_1, \dots, P_r$ yang berjumlah $r$. Ini adalah metrik untuk mengukur "ukuran" titik.
 3. **$|E(\mathbb{Q})_{\text{tors}}|$** : Orde dari subgrup torsi.
-4. **$c_p$ (Bilangan Tamagawa)** : Faktor koreksi lokal untuk bilangan prima $p$ yang memiliki reduksi buruk. Dihitung dari aksi grup Galois lapangan lokal.
+4. **$c_p$ (Bilangan Tamagawa)** : Faktor koreksi lokal untuk bilangan prima $p$ yang memiliki reduksi buruk. Dihitung dari aksi grup [Galois](https://kenji.blog/id/p/galois/) lapangan lokal.
 5. **$\text{Sha}(E)$ (Grup Tate-Shafarevich, $\text{\textcyrillic{Sh}}$)** : Objek yang sangat penting, akan dijelaskan di bawah ini.
 
 Rumus ini dapat dianggap sebagai wujud pamungkas yang menggeneralisasikan rumus class number Dirichlet (Dirichlet's class number formula) dari abad ke-19:
@@ -194,20 +194,20 @@ $$
 $$
 ke kurva eliptik. Class number $h_K$ pada fungsi zeta Dedekind berkorespondensi dengan $\text{Sha}(E)$, dan regulator $R_K$ dari grup unit berkorespondensi dengan regulator kurva eliptik $\mathrm{Reg}(E)$.
 
-### 5.3. Grup Misterius "Sha (Ш)" dan Kohomologi Galois
+### 5.3. Grup Misterius "Sha (Ш)" dan Kohomologi [Galois](https://kenji.blog/id/p/galois/)
 
 Objek yang paling misterius dan rumit dalam rumus tersebut adalah grup Tate-Shafarevich $\text{Sha}(E)$ (direpresentasikan dengan huruf Sirilik $\text{\textcyrillic{Sh}}$).
 
 Prinsip lokal-global (Prinsip Hasse) menyatakan, "Syarat perlu dan cukup agar suatu persamaan memiliki solusi pada lapangan rasional (global) adalah ia harus memiliki solusi pada lapangan bilangan p-adic (lokal) untuk semua bilangan prima $p$, dan juga pada lapangan riil." Untuk bentuk kuadrat, prinsip ini berlaku (Teorema Hasse-Minkowski).
 Akan tetapi, prinsip ini tidak berlaku untuk kurva eliptik (kurva kubik). Fenomena "memiliki solusi lokal di mana-mana, namun tidak memiliki solusi secara global" dapat terjadi.
 
-$\text{Sha}(E)$ adalah grup yang mengukur "kegagalan prinsip lokal-global" ini menggunakan kohomologi Galois. Secara ketat, didefinisikan sebagai berikut:
+$\text{Sha}(E)$ adalah grup yang mengukur "kegagalan prinsip lokal-global" ini menggunakan kohomologi [Galois](https://kenji.blog/id/p/galois/). Secara ketat, didefinisikan sebagai berikut:
 
 $$
 \text{Sha}(E) = \ker \left( H^1(G_{\mathbb{Q}}, E) \to \prod_{v} H^1(G_{\mathbb{Q}_v}, E) \right)
 $$
 
-Di mana $G_{\mathbb{Q}}$ adalah grup Galois absolut, dan produknya adalah atas semua tempat (bilangan prima rasional dan bilangan prima tak hingga).
+Di mana $G_{\mathbb{Q}}$ adalah grup [Galois](https://kenji.blog/id/p/galois/) absolut, dan produknya adalah atas semua tempat (bilangan prima rasional dan bilangan prima tak hingga).
 Konjektur Kuat BSD secara implisit menyertakan premis bahwa "pada setiap kurva eliptik, $\text{Sha}(E)$ adalah grup berhingga". Namun, sampai hari ini, belum ada bukti bahwa $\text{Sha}(E)$ itu berhingga untuk kurva eliptik umum. Kecuali untuk kurva dengan perkalian kompleks (complex multiplication) oleh Karl Rubin dkk., pemahaman esensial mengenai $\text{Sha}(E)$ adalah salah satu tantangan terbesar dalam teori bilangan modern.
 
 ## 6. Hubungan dengan Masalah Bilangan Kongruen
@@ -231,7 +231,7 @@ Secara mengejutkan, ketika rank analitik (orde nol dari $L(E,s)$ pada $s=1$) ber
 - **Teorema Gross-Zagier (Gross-Zagier, 1986)** :
   Jika rank analitiknya 1, mereka menunjukkan bahwa turunan pertama dari $L(E,s)$ pada $s=1$ memiliki proporsi dengan tinggi Néron-Tate dari "titik Heegner", yaitu titik spesial pada kurva modular. Karena tinggi titik Heegner tersebut bukan nol, maka terbukti bahwa rank aljabarnya $1$ atau lebih.
 - **Teorema Kolyvagin (Kolyvagin, 1989)** :
-  Ia membangun metode kohomologi Galois yang kuat bernama "Sistem Euler (Euler system)", dan membuktikan bahwa jika rank analitiknya 0 atau 1, maka rank tersebut sama dengan rank aljabarnya, serta grup Tate-Shafarevich $\text{Sha}(E)$ dipastikan menjadi grup berhingga jika dan hanya jika dalam kasus tersebut.
+  Ia membangun metode kohomologi [Galois](https://kenji.blog/id/p/galois/) yang kuat bernama "Sistem Euler (Euler system)", dan membuktikan bahwa jika rank analitiknya 0 atau 1, maka rank tersebut sama dengan rank aljabarnya, serta grup Tate-Shafarevich $\text{Sha}(E)$ dipastikan menjadi grup berhingga jika dan hanya jika dalam kasus tersebut.
 
 Dari berbagai pencapaian ini, telah dipastikan bahwa "Untuk kurva eliptik dengan rank analitik 0 atau 1, Konjektur Lemah BSD bernilai benar".
 

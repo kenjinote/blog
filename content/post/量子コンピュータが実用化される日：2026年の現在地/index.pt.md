@@ -19,7 +19,7 @@ Neste artigo, aprofundaremos na situação atual dos computadores quânticos, en
 
 ## 2. Fundamentos do estado quântico e fidelidade
 
-A unidade básica de um computador quântico, o qubit (Qubit), diferentemente do bit clássico (0 ou 1), pode assumir um estado de superposição (Superposition) de 0 e 1. O estado de um único qubit é representado como um vetor em um espaço de Hilbert da seguinte forma:
+A unidade básica de um computador quântico, o qubit (Qubit), diferentemente do bit clássico (0 ou 1), pode assumir um estado de superposição (Superposition) de 0 e 1. O estado de um único qubit é representado como um vetor em um espaço de [Hilbert](https://kenji.blog/pt/p/hilbert/) da seguinte forma:
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -130,7 +130,7 @@ O avanço de 2026 foi a bidimensionalização da arquitetura QCCD (Quantum Charg
 
 ### 5.3 Computação quântica topológica: O controle de anyons
 
-Considerada uma existência teórica por muito tempo, a **computação quântica topológica** finalmente entrou na fase de demonstração experimental em 2026. Esta abordagem, promovida pela Microsoft e outros, usa anyons não-abelianos (Non-Abelian Anyons) chamados "modos zero de Majorana (Majorana Zero Modes)".
+Considerada uma existência teórica por muito tempo, a **computação quântica topológica** finalmente entrou na fase de demonstração experimental em 2026. Esta abordagem, promovida pela Microsoft e outros, usa anyons não-abelianos (Non-[Abel](https://kenji.blog/pt/p/abel/)ian Anyons) chamados "modos zero de Majorana (Majorana Zero Modes)".
 
 As portas quânticas são executadas através de uma operação chamada "entrelaçamento (Braiding)", que troca as posições das partículas de anyon.
 

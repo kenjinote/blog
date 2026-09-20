@@ -24,7 +24,7 @@ tags: ["庫爾特·亨澤爾", "p進數", "代數數論", "數學史"]
 
 ## 3. 大學時代與克羅內克的影響
 
-亨澤爾曾在波昂大學和柏林大學學習數學。當時的柏林大學是世界數學研究的中心之一，匯聚了 **[卡爾·魏爾斯特拉斯](https://kenji.blog/zh-tw/p/weierstrass/)** ([Karl Weierstrass](https://kenji.blog/zh-tw/p/weierstrass/))和 **利奧波德·克羅內克** (Leopold Kronecker)等巨匠在此任教。
+亨澤爾曾在波昂大學和柏林大學學習數學。當時的柏林大學是世界數學研究的中心之一，匯聚了 **[卡爾·魏爾斯特拉斯](https://kenji.blog/zh-tw/p/weierstrass/)** ([Karl Weierstrass](https://kenji.blog/zh-tw/p/weierstrass/))和 **利奧波德·克羅內克** (Leopold [Kronecker](https://kenji.blog/zh-tw/p/kronecker/))等巨匠在此任教。
 
 在這些人中，克羅內克對亨澤爾的影響最深。正如他的一句名言所說：「上帝創造了整數，其餘的都是人類的工作」，克羅內克堅信所有的數學都應該嚴格地建立在整數的基礎上。在克羅內克的指導下，亨澤爾全身心地投入到代數和數論的研究中。
 
@@ -115,7 +115,7 @@ $$
 $$
 這個無窮和在通常意義上是發散的，但在p進絕對值的世界裡，各項隨著級數的推進變得越來越小，這意味著它完美地收斂，沒有任何矛盾。
 
-## 6. 亨澤爾引理 (Hensel's Lemma)
+## 6. 亨澤爾引理 ([Hensel](https://kenji.blog/zh-tw/p/hensel/)'s Lemma)
 
 亨澤爾提出的最強大的工具之一是 **亨澤爾引理** 。這個定理提供了多項式方程在p進數域內存在根的條件，它可以被描述為實分析中「牛頓法」的p進版本。
 

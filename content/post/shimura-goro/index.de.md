@@ -10,7 +10,7 @@ tags: ["Goro Shimura", "Zahlentheorie", "Taniyama-Shimura-Vermutung", "Fermatsch
 
 ## 1. Einleitung: Ein Riese der Zahlentheorie, [Goro Shimura](https://kenji.blog/de/p/shimura-goro/)
 
-In der Geschichte der modernen Mathematik gibt es einen japanischen Mathematiker, der das Gebiet der arithmetischen Geometrie entscheidend geprägt hat. Sein Name ist **[Goro Shimura](https://kenji.blog/de/p/shimura-goro/)** (1930 - 2019). Seine Errungenschaften sind unermesslich. Er schlug die "Taniyama-Shimura-Vermutung" (heute als Modularitätssatz bekannt) vor, die später der wichtigste Schlüssel zum Beweis des "Fermatschen letzten Satzes" wurde, und konstruierte die "Shimura-Varietäten", ein äußerst wichtiges Objekt in der modernen Zahlentheorie.
+In der Geschichte der modernen Mathematik gibt es einen japanischen Mathematiker, der das Gebiet der arithmetischen Geometrie entscheidend geprägt hat. Sein Name ist **[Goro Shimura](https://kenji.blog/de/p/shimura-goro/)** (1930 - 2019). Seine Errungenschaften sind unermesslich. Er schlug die "Taniyama-Shimura-Vermutung" (heute als Modularitätssatz bekannt) vor, die später der wichtigste Schlüssel zum Beweis des "[Fermat](https://kenji.blog/de/p/fermat/)schen letzten Satzes" wurde, und konstruierte die "Shimura-Varietäten", ein äußerst wichtiges Objekt in der modernen Zahlentheorie.
 
 In diesem Artikel werden wir, während wir auf das Leben von [Goro Shimura](https://kenji.blog/de/p/shimura-goro/), einem einsamen Mathematiker, zurückblicken, tief in die monumentalen Errungenschaften eintauchen, die er in der mathematischen Welt etabliert hat, sowie in die unerbittliche Philosophie und Ästhetik dahinter. Es ist keine Übertreibung zu sagen, dass das Verständnis seiner Errungenschaften gleichbedeutend mit dem Verständnis der Entwicklung der Mathematik im späten 20. Jahrhundert ist.
 
@@ -24,7 +24,7 @@ Laut seinem Buch "The Map of My Life" las er fortgeschrittene Mathematikbücher 
 
 ### 2.2 Zeit an der Universität Tokio
 
-1949 trat Shimura in die Fakultät für Naturwissenschaften (Abteilung Mathematik) der Universität Tokio ein. Zu dieser Zeit stand die japanische Mathematiker-Gemeinschaft, obwohl sie auf Teiji Takagis Klassenkörpertheorie und Ähnlichem aufbaute, vor der Herausforderung, während der Nachkriegs-Wiederaufbauphase an globale Trends anzuschließen. Hier traf Shimura auf **[Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/)**, mit dem er später eine tiefe Freundschaft und ein gemeinsames Schicksal teilen sollte.
+1949 trat Shimura in die Fakultät für Naturwissenschaften (Abteilung Mathematik) der Universität Tokio ein. Zu dieser Zeit stand die japanische Mathematiker-Gemeinschaft, obwohl sie auf Teiji [Takagi](https://kenji.blog/de/p/takagi-teiji/)s Klassenkörpertheorie und Ähnlichem aufbaute, vor der Herausforderung, während der Nachkriegs-Wiederaufbauphase an globale Trends anzuschließen. Hier traf Shimura auf **[Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/)**, mit dem er später eine tiefe Freundschaft und ein gemeinsames Schicksal teilen sollte.
 
 Taniyama war ein geniales Mathematikertalent mit intuitiven und ungehemmten Ideen, während Shimura ein Perfektionist war, der großen Wert auf Strenge legte und keine Kompromisse bei den Details der Logik duldete. Die Begegnung dieser beiden gegensätzlichen Figuren sollte schließlich den Samen für eine gewaltige Theorie legen, die die mathematische Welt erschüttern würde.
 
@@ -85,25 +85,25 @@ Anfangs war diese Vermutung so abwegig, dass selbst große Mathematiker wie Weil
 
 Für Shimura war die Trauer über den Verlust von Taniyama, seinem besten Freund und Mitarbeiter, unermesslich. Shimura überwand jedoch den Schmerz und entwickelte ein starkes Sendungsbewusstsein, die von Taniyama hinterlassenen unvollendeten Ideen mit seinen eigenen Händen zu beweisen und von der Welt anerkennen zu lassen. Shimura zog später in die USA, wo er seine Forschung an der Princeton University und anderswo fortsetzte, während er diese Vermutung in eine präzisere Form brachte und ihr internationales Profil schärfte. Aus diesem Grund wurde die Vermutung als "Taniyama-Shimura-Vermutung" bekannt.
 
-## 5. Der Weg zu Fermats letztem Satz
+## 5. Der Weg zu [Fermat](https://kenji.blog/de/p/fermat/)s letztem Satz
 
 ### 5.1 Freys Idee und Ribets Beweis
 
-Die Zeit verging, und in den 1980er Jahren wurde die Taniyama-Shimura-Vermutung auf dramatische Weise mit dem "Fermatschen letzten Satz" verknüpft. 1984 zeigte Gerhard Frey, dass man, wenn man annimmt, dass ein Gegenbeispiel $a^n + b^n = c^n$ zu Fermats letztem Satz existiert, daraus eine seltsame elliptische Kurve (Frey-Kurve) konstruieren könnte.
+Die Zeit verging, und in den 1980er Jahren wurde die Taniyama-Shimura-Vermutung auf dramatische Weise mit dem "[Fermat](https://kenji.blog/de/p/fermat/)schen letzten Satz" verknüpft. 1984 zeigte Gerhard Frey, dass man, wenn man annimmt, dass ein Gegenbeispiel $a^n + b^n = c^n$ zu [Fermat](https://kenji.blog/de/p/fermat/)s letztem Satz existiert, daraus eine seltsame elliptische Kurve (Frey-Kurve) konstruieren könnte.
 
 $$
 y^2 = x(x - a^n)(x + b^n)
 $$
 
-Frey vermutete, dass diese Kurve aufgrund ihrer außergewöhnlich abnormalen Eigenschaften **nicht modular sein kann** (was bedeutet, dass sie die Taniyama-Shimura-Vermutung nicht erfüllt). Wenn dies wahr wäre, würde das bedeuten: "Wenn die Taniyama-Shimura-Vermutung bewiesen ist, ist auch Fermats letzter Satz bewiesen."
+Frey vermutete, dass diese Kurve aufgrund ihrer außergewöhnlich abnormalen Eigenschaften **nicht modular sein kann** (was bedeutet, dass sie die Taniyama-Shimura-Vermutung nicht erfüllt). Wenn dies wahr wäre, würde das bedeuten: "Wenn die Taniyama-Shimura-Vermutung bewiesen ist, ist auch [Fermat](https://kenji.blog/de/p/fermat/)s letzter Satz bewiesen."
 
-1986 bewies Ken Ribet Freys Vermutung (die Epsilon-Vermutung) vollständig. Damit war der 350 Jahre lang ungelöste Fermatsche letzte Satz vollständig auf das Problem des Beweises der Taniyama-Shimura-Vermutung reduziert.
+1986 bewies Ken Ribet Freys Vermutung (die Epsilon-Vermutung) vollständig. Damit war der 350 Jahre lang ungelöste [Fermat](https://kenji.blog/de/p/fermat/)sche letzte Satz vollständig auf das Problem des Beweises der Taniyama-Shimura-Vermutung reduziert.
 
 ### 5.2 Der Beweis durch [Andrew Wiles](https://kenji.blog/de/p/wiles/)
 
 Derjenige, der sich nach dieser Nachricht erhob, war der britische Mathematiker **[Andrew Wiles](https://kenji.blog/de/p/wiles/)**. Nach sieben Jahren geheimer Forschung kündigte er 1993 einen Beweis der Taniyama-Shimura-Vermutung für semistabile elliptische Kurven an. Auf dem Weg dorthin gab es eine Krise, als ein kritischer Fehler im Beweis gefunden wurde, aber mit Hilfe seines ehemaligen Schülers Richard Taylor wurde er 1994 vollständig behoben.
 
-Wiles' Beweis (eines Teils) der Taniyama-Shimura-Vermutung bedeutete einen vollständigen Beweis des Fermatschen letzten Satzes. Es war eines der größten Dramen in der Geschichte der Mathematik.
+Wiles' Beweis (eines Teils) der Taniyama-Shimura-Vermutung bedeutete einen vollständigen Beweis des [Fermat](https://kenji.blog/de/p/fermat/)schen letzten Satzes. Es war eines der größten Dramen in der Geschichte der Mathematik.
 
 ### 5.3 Shimuras Reaktion: "Ich hab's euch ja gesagt"
 
@@ -119,13 +119,13 @@ Während die Taniyama-Shimura-Vermutung oft im Schatten steht, ist das, was den 
 
 ### 6.1 Höherdimensionale komplexe Multiplikationstheorie
 
-Der Mathematiker Kronecker aus dem 19. Jahrhundert zeigte, dass alle abelschen Erweiterungen eines imaginär-quadratischen Körpers unter Verwendung der Teilungspunkte von elliptischen Kurven mit komplexer Multiplikation (Kroneckers Jugendtraum) konstruiert werden können. Shimura unternahm ein ehrgeiziges Projekt, um dies auf höherdimensionale abelsche Varietäten zu verallgemeinern.
+Der Mathematiker [Kronecker](https://kenji.blog/de/p/kronecker/) aus dem 19. Jahrhundert zeigte, dass alle abelschen Erweiterungen eines imaginär-quadratischen Körpers unter Verwendung der Teilungspunkte von elliptischen Kurven mit komplexer Multiplikation ([Kronecker](https://kenji.blog/de/p/kronecker/)s Jugendtraum) konstruiert werden können. Shimura unternahm ein ehrgeiziges Projekt, um dies auf höherdimensionale abelsche Varietäten zu verallgemeinern.
 
 Er konstruierte massive geometrische Objekte, die höherdimensionale Analoga von Modulkurven sind, unter Verwendung reduktiver algebraischer Gruppen und hermitescher symmetrischer Gebiete. Dies sind die "Shimura-Varietäten". Shimura-Varietäten besitzen extrem reiche Strukturen, in denen sich Zahlentheorie, algebraische Geometrie und Darstellungstheorie überschneiden.
 
 ### 6.2 Die Position von Shimura-Varietäten in der modernen Mathematik
 
-Heute spielen Shimura-Varietäten eine zentrale Rolle im von Robert Langlands vorgeschlagenen "Langlands-Programm". In diesem großartigen Programm, das Darstellungen von Galoisgruppen mit automorphen Darstellungen verbindet, sind Shimura-Varietäten die unverzichtbare Bühne für die geometrische Realisierung dieser Entsprechung. Shimuras Weitsicht wird auch durch die Tatsache bewiesen, dass die von ihm aufgebaute Theorie Jahrzehnte später zur Grundlage für die Entwicklung der Mathematik wurde.
+Heute spielen Shimura-Varietäten eine zentrale Rolle im von Robert Langlands vorgeschlagenen "Langlands-Programm". In diesem großartigen Programm, das Darstellungen von [Galois](https://kenji.blog/de/p/galois/)gruppen mit automorphen Darstellungen verbindet, sind Shimura-Varietäten die unverzichtbare Bühne für die geometrische Realisierung dieser Entsprechung. Shimuras Weitsicht wird auch durch die Tatsache bewiesen, dass die von ihm aufgebaute Theorie Jahrzehnte später zur Grundlage für die Entwicklung der Mathematik wurde.
 
 ## 7. Das wahre Gesicht eines einsamen Mathematikers: Seine Philosophie und Ästhetik
 

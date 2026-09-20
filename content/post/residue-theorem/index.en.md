@@ -18,11 +18,11 @@ $$
 
 While this integral itself can be solved using $\arctan(x)$, if the denominator becomes a higher-degree polynomial, or if trigonometric functions like sine and cosine are intricately involved, finding an antiderivative (indefinite integral) as a real function becomes virtually impossible.
 
-This is where a powerful weapon from **complex analysis** (the theory of complex functions), widely considered one of the most beautiful theories in mathematics, comes into play: **Cauchy's [Residue Theorem](https://kenji.blog/en/p/residue-theorem/)**. By boldly extending an integral performed on the real number line (1-dimensional) to the **complex plane** (2-dimensional), impossible real integrals can be solved brilliantly.
+This is where a powerful weapon from **complex analysis** (the theory of complex functions), widely considered one of the most beautiful theories in mathematics, comes into play: **[Cauchy](https://kenji.blog/en/p/cauchy/)'s [Residue Theorem](https://kenji.blog/en/p/residue-theorem/)**. By boldly extending an integral performed on the real number line (1-dimensional) to the **complex plane** (2-dimensional), impossible real integrals can be solved brilliantly.
 
 ## Complex Integration and Singularities
 
-The integral of a complex function $f(z)$ is performed along a curve (contour) in the complex plane. In a region where the function is analytic (differentiable), the integral along a closed curve is zero. This is known as **Cauchy's Integral Theorem**.
+The integral of a complex function $f(z)$ is performed along a curve (contour) in the complex plane. In a region where the function is analytic (differentiable), the integral along a closed curve is zero. This is known as **[Cauchy](https://kenji.blog/en/p/cauchy/)'s Integral Theorem**.
 
 $$
 \oint_C f(z) dz = 0 \quad (\text{if the function is holomorphic inside and on } C)
@@ -56,7 +56,7 @@ $$
 
 Why is only the coefficient of $(z - z_0)^{-1}$ special? Because if you integrate $\frac{1}{(z - z_0)^n}$ along a tiny circle $C$ enclosing the singularity, only when $n = 1$ does the value $2\pi i$ remain; for all other values of $n$, the integral evaluates to $0$.
 
-## Cauchy's [Residue Theorem](https://kenji.blog/en/p/residue-theorem/)
+## [Cauchy](https://kenji.blog/en/p/cauchy/)'s [Residue Theorem](https://kenji.blog/en/p/residue-theorem/)
 
 Integrating these concepts yields the **[Residue Theorem](https://kenji.blog/en/p/residue-theorem/)**. If a closed curve $C$ contains multiple isolated singularities $z_1, z_2, \dots, z_k$ inside it, the complex integral along $C$ can be calculated as follows:
 

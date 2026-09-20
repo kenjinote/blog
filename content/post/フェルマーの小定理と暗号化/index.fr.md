@@ -13,15 +13,15 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 Dans la société numérique d'aujourd'hui, et particulièrement dans les communications sur Internet, le "chiffrement" est devenu une technologie fondamentale indispensable. Le fait que nous puissions naviguer en toute sécurité sur des sites web via HTTPS dans nos navigateurs, effectuer des transactions financières par le biais des services bancaires en ligne, et avoir des échanges privés sur des applications de messagerie est dû aux protocoles cryptographiques basés sur des théories mathématiques avancées fonctionnant en arrière-plan. Parmi ceux-ci, la "cryptographie à clé publique" joue un rôle particulièrement important, dont le représentant le plus célèbre est le **chiffrement RSA**.
 
-La sécurité et la validité de nombreux algorithmes cryptographiques, y compris RSA, dépendent fortement d'un théorème extrêmement beau et puissant découvert par le mathématicien français du 17e siècle, [Pierre de Fermat](https://kenji.blog/fr/p/fermat/). Il s'agit du **petit théorème de Fermat ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))**. De plus, le théorème de [Leonhard Euler](https://kenji.blog/fr/p/euler/), qui généralise ce théorème, joue également un rôle décisif dans la théorie cryptographique.
+La sécurité et la validité de nombreux algorithmes cryptographiques, y compris RSA, dépendent fortement d'un théorème extrêmement beau et puissant découvert par le mathématicien français du 17e siècle, [Pierre de Fermat](https://kenji.blog/fr/p/fermat/). Il s'agit du **petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))**. De plus, le théorème de [Leonhard Euler](https://kenji.blog/fr/p/euler/), qui généralise ce théorème, joue également un rôle décisif dans la théorie cryptographique.
 
-Cet article explique en détail, depuis les bases, comment la découverte mathématique pure qu'est le petit théorème de Fermat s'applique aux technologies cryptographiques pratiques modernes, en particulier aux "tests de primalité" et au "chiffrement RSA". Il s'agit d'un guide technique très détaillé couvrant tout, des preuves mathématiques, aux mécanismes de chiffrement et de déchiffrement, jusqu'à l'implémentation concrète des algorithmes en C++ et Python.
+Cet article explique en détail, depuis les bases, comment la découverte mathématique pure qu'est le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) s'applique aux technologies cryptographiques pratiques modernes, en particulier aux "tests de primalité" et au "chiffrement RSA". Il s'agit d'un guide technique très détaillé couvrant tout, des preuves mathématiques, aux mécanismes de chiffrement et de déchiffrement, jusqu'à l'implémentation concrète des algorithmes en C++ et Python.
 
 ---
 
 ## 2. Bases des congruences et de l'arithmétique modulaire
 
-Pour comprendre le petit théorème de Fermat, vous devez d'abord vous familiariser avec le concept mathématique d'"arithmétique modulaire (congruences)". L'arithmétique modulaire est un système de calcul qui se concentre sur le "reste" lorsqu'un nombre est divisé par un nombre fixe (appelé module). Comme il s'agit d'un calcul similaire à celui du cadran d'une horloge (qui fait un tour en 12 heures), on l'appelle aussi parfois "mathématiques de l'horloge".
+Pour comprendre le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/), vous devez d'abord vous familiariser avec le concept mathématique d'"arithmétique modulaire (congruences)". L'arithmétique modulaire est un système de calcul qui se concentre sur le "reste" lorsqu'un nombre est divisé par un nombre fixe (appelé module). Comme il s'agit d'un calcul similaire à celui du cadran d'une horloge (qui fait un tour en 12 heures), on l'appelle aussi parfois "mathématiques de l'horloge".
 
 Lorsque le reste de la division de deux entiers $a$ et $b$ par un entier positif $n$ est égal, on l'écrit mathématiquement comme suit :
 
@@ -46,15 +46,15 @@ Cependant, il faut faire attention à la **division**. En général, même si $a
 
 ---
 
-## 3. Contexte mathématique et preuve du petit théorème de Fermat
+## 3. Contexte mathématique et preuve du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)
 
-Maintenant que nous avons couvert les bases de l'arithmétique modulaire, examinons le sujet principal, le petit théorème de Fermat.
+Maintenant que nous avons couvert les bases de l'arithmétique modulaire, examinons le sujet principal, le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
 
 ### 3.1 Définition du théorème
 
-Le petit théorème de Fermat est formulé comme suit :
+Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est formulé comme suit :
 
-> **Petit théorème de Fermat ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))**
+> **Petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))**
 > Soit $p$ un nombre premier et $a$ un entier quelconque qui n'est pas un multiple de $p$ (c'est-à-dire que $a$ et $p$ sont premiers entre eux). Alors, la congruence suivante est vraie :
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
@@ -106,13 +106,13 @@ $$
 a^{p-1} \equiv 1 \pmod p
 $$
 
-Ceci est la preuve du petit théorème de Fermat.
+Ceci est la preuve du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
 
 ---
 
 ## 4. La fonction indicatrice d'Euler et le théorème d'Euler
 
-Le petit théorème de Fermat est un théorème concernant "un nombre premier $p$", mais il a été généralisé à "tout entier positif $n$" par [Leonhard Euler](https://kenji.blog/fr/p/euler/). Cette extension est essentielle pour comprendre le chiffrement RSA.
+Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est un théorème concernant "un nombre premier $p$", mais il a été généralisé à "tout entier positif $n$" par [Leonhard Euler](https://kenji.blog/fr/p/euler/). Cette extension est essentielle pour comprendre le chiffrement RSA.
 
 ### 4.1 La fonction indicatrice d'Euler $\phi(n)$
 
@@ -126,32 +126,32 @@ Cette propriété est la logique fondamentale derrière la génération de clés
 
 ### 4.2 Le théorème d'Euler
 
-Euler a généralisé le petit théorème de Fermat comme suit :
+Euler a généralisé le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) comme suit :
 
 > **Théorème d'Euler (Euler's Theorem)**
 > Pour tout entier positif $n$ et tout entier $a$ qui lui est premier entre eux, ce qui suit est vrai :
 > $$ a^{\phi(n)} \equiv 1 \pmod n $$
 
-Si $n$ est un nombre premier $p$, alors $\phi(p) = p - 1$, donc cela devient exactement le petit théorème de Fermat ($a^{p-1} \equiv 1 \pmod p$). En d'autres termes, le petit théorème de Fermat n'est qu'un cas particulier du théorème d'Euler.
+Si $n$ est un nombre premier $p$, alors $\phi(p) = p - 1$, donc cela devient exactement le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ($a^{p-1} \equiv 1 \pmod p$). En d'autres termes, le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) n'est qu'un cas particulier du théorème d'Euler.
 
 ---
 
-## 5. Trouver d'énormes nombres premiers : Le test de primalité de Fermat
+## 5. Trouver d'énormes nombres premiers : Le test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/)
 
 Dans les technologies cryptographiques (comme le chiffrement RSA et l'échange de clés Diffie-Hellman), il est nécessaire de trouver rapidement "d'énormes nombres premiers" s'étendant sur des centaines de chiffres. Cependant, utiliser la méthode de la "division par essais", qui consiste à essayer de diviser par tous les nombres de $2$ à $\sqrt{N}$ pour déterminer si un grand nombre $N$ est premier, prendrait un temps équivalent à l'âge de l'univers.
 
-C'est là qu'intervient le **test de primalité de Fermat (Fermat Primality Test)**, un "test de primalité probabiliste" qui utilise le petit théorème de Fermat à l'envers.
+C'est là qu'intervient le **test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/) ([Fermat](https://kenji.blog/fr/p/fermat/) Primality Test)**, un "test de primalité probabiliste" qui utilise le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) à l'envers.
 
 ### 5.1 Qu'est-ce qu'un test de primalité probabiliste ?
 
-Selon le petit théorème de Fermat, si $p$ est premier, alors $a^{p-1} \equiv 1 \pmod p$ est toujours vrai pour tout $a$ ($1 < a < p$).
+Selon le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/), si $p$ est premier, alors $a^{p-1} \equiv 1 \pmod p$ est toujours vrai pour tout $a$ ($1 < a < p$).
 La contraposée de cette affirmation est : "S'il existe un $a$ pour lequel $a^{p-1} \not\equiv 1 \pmod p$, alors $p$ **n'est absolument pas un nombre premier (c'est un nombre composé)**".
 
 Par conséquent, si vous voulez déterminer si $N$ est premier, vous choisissez quelques valeurs aléatoires de $a$, calculez $a^{N-1} \pmod N$ et vérifiez si le résultat est $1$. Si vous obtenez une réponse autre que $1$ ne serait-ce qu'une seule fois, il est certain que $N$ est un nombre composé. S'il vaut $1$ peu importe le nombre de fois que vous essayez, vous pouvez juger avec une forte probabilité que $N$ est "probablement premier".
 
 ### 5.2 Explication de l'algorithme et organigramme
 
-L'algorithme du test de Fermat est le suivant :
+L'algorithme du test de [Fermat](https://kenji.blog/fr/p/fermat/) est le suivant :
 
 ```mermaid
 flowchart TD
@@ -171,9 +171,9 @@ flowchart TD
 
 ### 5.3 Le piège des nombres de Carmichael (pseudo-premiers)
 
-Bien que le test de Fermat soit extrêmement rapide, il présente un défaut majeur. Il existe des nombres diaboliques qui, bien qu'ils soient composés, satisfont $a^{N-1} \equiv 1 \pmod N$ pour tous les $a$. Ceux-ci sont appelés **nombres de Carmichael (Carmichael numbers)**. Le plus petit nombre de Carmichael est $561$ ($3 \times 11 \times 17$).
+Bien que le test de [Fermat](https://kenji.blog/fr/p/fermat/) soit extrêmement rapide, il présente un défaut majeur. Il existe des nombres diaboliques qui, bien qu'ils soient composés, satisfont $a^{N-1} \equiv 1 \pmod N$ pour tous les $a$. Ceux-ci sont appelés **nombres de Carmichael (Carmichael numbers)**. Le plus petit nombre de Carmichael est $561$ ($3 \times 11 \times 17$).
 
-En raison de l'existence des nombres de Carmichael, un test de Fermat pur seul ne peut pas déterminer la primalité de manière absolue. C'est pourquoi, dans les systèmes cryptographiques réels (comme OpenSSL), le **test de primalité de Miller-Rabin (Miller-Rabin primality test)**, qui est une version améliorée du test de Fermat, est utilisé en standard. Le test de Miller-Rabin peut détecter les nombres de Carmichael, réduisant ainsi la probabilité de fausse détection à presque zéro.
+En raison de l'existence des nombres de Carmichael, un test de [Fermat](https://kenji.blog/fr/p/fermat/) pur seul ne peut pas déterminer la primalité de manière absolue. C'est pourquoi, dans les systèmes cryptographiques réels (comme OpenSSL), le **test de primalité de Miller-Rabin (Miller-Rabin primality test)**, qui est une version améliorée du test de [Fermat](https://kenji.blog/fr/p/fermat/), est utilisé en standard. Le test de Miller-Rabin peut détecter les nombres de Carmichael, réduisant ainsi la probabilité de fausse détection à presque zéro.
 
 ### 5.4 Exponentiation modulaire rapide (Méthode d'exponentiation par carrés)
 
@@ -184,7 +184,7 @@ La solution à ce problème est la **méthode d'exponentiation par carrés (Expo
 
 ## 6. Implémentation du test de primalité et de l'exponentiation modulaire
 
-Maintenant, implémentons le test de primalité de Fermat et la méthode d'exponentiation par carrés en C++ et Python.
+Maintenant, implémentons le test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/) et la méthode d'exponentiation par carrés en C++ et Python.
 
 ### 6.1 Implémentation en C++
 
@@ -281,9 +281,9 @@ else:
 
 ---
 
-## 7. Application au chiffrement RSA : Où Fermat et Euler se rencontrent
+## 7. Application au chiffrement RSA : Où [Fermat](https://kenji.blog/fr/p/fermat/) et Euler se rencontrent
 
-La plus grande application du petit théorème de Fermat (et du théorème d'Euler) est le **chiffrement RSA**, développé en 1977 par Rivest, Shamir et Adleman.
+La plus grande application du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) (et du théorème d'Euler) est le **chiffrement RSA**, développé en 1977 par Rivest, Shamir et Adleman.
 Le chiffrement RSA est un système révolutionnaire de "cryptographie à clé publique", qui réalise un mécanisme où la clé de chiffrement (clé publique) est rendue publique au monde entier, tandis que la clé de déchiffrement (clé privée) n'est connue que du destinataire.
 
 Cette asymétrie repose sur la sécurité computationnelle selon laquelle "la factorisation en nombres premiers de nombres composés géants est extrêmement difficile".
@@ -344,7 +344,7 @@ $$
 
 ### 7.2 Pourquoi cela peut-il être déchiffré ? (Preuve mathématique)
 
-C'est ici que le petit théorème de Fermat (le théorème d'Euler) montre sa véritable valeur. Pourquoi $C^d \pmod N$ revient-il à $M$ ?
+C'est ici que le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) (le théorème d'Euler) montre sa véritable valeur. Pourquoi $C^d \pmod N$ revient-il à $M$ ?
 
 Développons la formule de déchiffrement.
 Puisque $C \equiv M^e \pmod N$,
@@ -361,7 +361,7 @@ Ici, le **théorème d'Euler** ($M^{\phi(N)} \equiv 1 \pmod N$) entre en jeu. (*
 En appliquant le théorème d'Euler, puisque $M^{\phi(N)} \equiv 1$,
 $$ M \cdot (1)^k \equiv M \pmod N $$
 
-$M$ est magnifiquement restauré ! Les propriétés des nombres que Fermat et Euler ont découvertes il y a des centaines d'années garantissent parfaitement la confidentialité des communications numériques modernes.
+$M$ est magnifiquement restauré ! Les propriétés des nombres que [Fermat](https://kenji.blog/fr/p/fermat/) et Euler ont découvertes il y a des centaines d'années garantissent parfaitement la confidentialité des communications numériques modernes.
 
 ---
 
@@ -466,11 +466,11 @@ Lorsque vous exécutez ce code, vous pouvez voir le tableau de caractères être
 
 ## 9. Conclusion : L'intersection de la beauté mathématique et de la praticité
 
-Au 17ème siècle, lorsque [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) a découvert ce "petit théorème", personne ne pensait qu'il serait utile à quoi que ce soit. Fermat lui-même a mené des recherches en théorie des nombres par pure curiosité mathématique.
+Au 17ème siècle, lorsque [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) a découvert ce "petit théorème", personne ne pensait qu'il serait utile à quoi que ce soit. [Fermat](https://kenji.blog/fr/p/fermat/) lui-même a mené des recherches en théorie des nombres par pure curiosité mathématique.
 
-Cependant, environ 300 ans plus tard, dans les années 1970, à l'aube des réseaux informatiques, le théorème de Fermat a fait un retour spectaculaire en tant que technologie cryptographique essentielle pour l'établissement de protocoles de communication sécurisés. La technologie de test de primalité basée sur le petit théorème de Fermat et le chiffrement RSA basé sur le théorème d'Euler soutiennent littéralement l'infrastructure Internet moderne.
+Cependant, environ 300 ans plus tard, dans les années 1970, à l'aube des réseaux informatiques, le théorème de [Fermat](https://kenji.blog/fr/p/fermat/) a fait un retour spectaculaire en tant que technologie cryptographique essentielle pour l'établissement de protocoles de communication sécurisés. La technologie de test de primalité basée sur le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) et le chiffrement RSA basé sur le théorème d'Euler soutiennent littéralement l'infrastructure Internet moderne.
 
-Les messages LINE que nous envoyons nonchalamment tous les jours, les achats sur Amazon, tout cela danse sur cette belle et simple formule $a^{p-1} \equiv 1 \pmod p$. Le petit théorème de Fermat nous enseigne que peu importe à quel point les mathématiques peuvent être abstraites, le moment viendra toujours où elles seront utiles à l'humanité.
+Les messages LINE que nous envoyons nonchalamment tous les jours, les achats sur Amazon, tout cela danse sur cette belle et simple formule $a^{p-1} \equiv 1 \pmod p$. Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) nous enseigne que peu importe à quel point les mathématiques peuvent être abstraites, le moment viendra toujours où elles seront utiles à l'humanité.
 
 Dans l'apprentissage de la programmation et de la théorie cryptographique, comprendre les structures mathématiques à la base de celles-ci sera une arme puissante pour comprendre en profondeur le comportement des bibliothèques fournies sous forme de boîtes noires et pour concevoir des systèmes plus sécurisés.
 

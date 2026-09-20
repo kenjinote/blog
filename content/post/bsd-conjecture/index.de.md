@@ -14,7 +14,7 @@ In der modernen Mathematik ist eines der wichtigsten und zugleich schönsten und
 
 Die BSD-Vermutung gehört zum Gebiet der "arithmetischen Geometrie", in dem sich algebraische Geometrie und Zahlentheorie überschneiden. Grob gesagt stellt diese Vermutung die erstaunliche Behauptung auf, dass "die Frage, ob die Anzahl der rationalen Punkte einer elliptischen Kurve unendlich ist, durch das Verhalten der aus dieser elliptischen Kurve bestimmten komplexen Funktion (L-Funktion) bei $s=1$ verstanden werden kann". Es ist eine Vermutung, die die Romantik der Mathematik verkörpert: Durch das Sammeln lokaler Informationen (die Anzahl der Lösungen modulo von Primzahlen) wird die globale Information (die Struktur der rationalen Lösungen) vollständig bestimmt.
 
-In diesem Artikel werden wir im Detail und streng erklären, was die BSD-Vermutung bedeutet. Wir beginnen mit den Grundlagen elliptischer Kurven und gehen über den Satz von Mordell und die Definition der L-Funktion bis hin zur genauen Aussage der BSD-Vermutung (schwache und starke Vermutung). Darüber hinaus werden wir uns auch mit fortgeschrittenen Themen wie der Beziehung zum Problem der kongruenten Zahlen und dem Hintergrund in der Galois-Kohomologie befassen.
+In diesem Artikel werden wir im Detail und streng erklären, was die BSD-Vermutung bedeutet. Wir beginnen mit den Grundlagen elliptischer Kurven und gehen über den Satz von Mordell und die Definition der L-Funktion bis hin zur genauen Aussage der BSD-Vermutung (schwache und starke Vermutung). Darüber hinaus werden wir uns auch mit fortgeschrittenen Themen wie der Beziehung zum Problem der kongruenten Zahlen und dem Hintergrund in der [Galois](https://kenji.blog/de/p/galois/)-Kohomologie befassen.
 
 ## 2. Was ist eine elliptische Kurve: Ein Juwel der algebraischen Geometrie
 
@@ -109,7 +109,7 @@ $$
 a_p = p + 1 - N_p
 $$
 
-Nach dem Satz von Hasse (Hasse's bound) ist bekannt, dass diese Abweichung durch $|a_p| \le 2\sqrt{p}$ beschränkt ist. Dies ist eine Art Analogon der Riemannschen Vermutung für elliptische Kurven über endlichen Körpern.
+Nach dem Satz von Hasse (Hasse's bound) ist bekannt, dass diese Abweichung durch $|a_p| \le 2\sqrt{p}$ beschränkt ist. Dies ist eine Art Analogon der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung für elliptische Kurven über endlichen Körpern.
 
 ### 4.2. Definition der L-Funktion
 
@@ -185,7 +185,7 @@ Die Invarianten, die in dieser Formel vorkommen, sind:
 1. **$\Omega_E$ (reelle Periode)**: Eine transzendente Zahl, die aus dem Integral $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ über dem reellen Körper der elliptischen Kurve bestimmt wird.
 2. **$\mathrm{Reg}(E)$ (Regulator)**: Die Determinante der $r \times r$-Matrix, deren Einträge die Néron-Tate-Höhenpaarungen (Néron-Tate height pairing) $\langle P_i, P_j \rangle$ der Erzeuger $P_1, \dots, P_r$ der rationalen Punkte unendlicher Ordnung vom Rang $r$ sind. Es ist ein Indikator, der die "Größe" der Punkte misst.
 3. **$|E(\mathbb{Q})_{\text{tors}}|$**: Die Ordnung der Torsionsuntergruppe.
-4. **$c_p$ (Tamagawa-Zahl)**: Ein lokaler Korrekturfaktor für die Primzahl $p$ mit schlechter Reduktion. Er wird aus der Wirkung der Galoisgruppe des lokalen Körpers berechnet.
+4. **$c_p$ (Tamagawa-Zahl)**: Ein lokaler Korrekturfaktor für die Primzahl $p$ mit schlechter Reduktion. Er wird aus der Wirkung der [Galois](https://kenji.blog/de/p/galois/)gruppe des lokalen Körpers berechnet.
 5. **$\text{Sha}(E)$ (Tate-Shafarevich-Gruppe, $\text{\textcyrillic{Sh}}$)**: Ein extrem wichtiges Objekt, das später erklärt wird.
 
 Diese Formel kann als ultimative Verallgemeinerung der Dirichletschen Klassenzahlformel (Dirichlet's class number formula) aus dem 19. Jahrhundert angesehen werden:
@@ -194,20 +194,20 @@ $$
 $$
 auf elliptische Kurven. Die Klassenzahl $h_K$ in der Dedekindschen Zeta-Funktion entspricht $\text{Sha}(E)$, und der Regulator der Einheitengruppe $R_K$ entspricht dem Regulator der elliptischen Kurve $\mathrm{Reg}(E)$.
 
-### 5.3. Die mysteriöse Gruppe "Sha (Ш)" und Galois-Kohomologie
+### 5.3. Die mysteriöse Gruppe "Sha (Ш)" und [Galois](https://kenji.blog/de/p/galois/)-Kohomologie
 
 Das mystischste und am schwersten verständliche Objekt in der Formel ist die Tate-Shafarevich-Gruppe $\text{Sha}(E)$ (dargestellt durch den kyrillischen Buchstaben $\text{\textcyrillic{Sh}}$).
 
 Das Lokal-Global-Prinzip (Hasse-Prinzip) besagt: "Die notwendige und hinreichende Bedingung dafür, dass alle Gleichungen Lösungen im Körper der rationalen Zahlen (global) haben, ist, dass sie für alle Primzahlen $p$ Lösungen im Körper der $p$-adischen Zahlen (lokal) und auch im reellen Körper haben." Für quadratische Formen gilt dieses Prinzip (Satz von Hasse-Minkowski).
 Für elliptische Kurven (kubische Kurven) gilt dieses Prinzip jedoch nicht. Es kann das Phänomen auftreten, dass "es lokal überall Lösungen gibt, aber global keine Lösungen existieren".
 
-$\text{Sha}(E)$ ist die Gruppe, die dieses "Scheitern des Lokal-Global-Prinzips" mithilfe der Galois-Kohomologie misst. Streng definiert sie sich wie folgt:
+$\text{Sha}(E)$ ist die Gruppe, die dieses "Scheitern des Lokal-Global-Prinzips" mithilfe der [Galois](https://kenji.blog/de/p/galois/)-Kohomologie misst. Streng definiert sie sich wie folgt:
 
 $$
 \text{Sha}(E) = \ker \left( H^1(G_{\mathbb{Q}}, E) \to \prod_{v} H^1(G_{\mathbb{Q}_v}, E) \right)
 $$
 
-Hierbei ist $G_{\mathbb{Q}}$ die absolute Galoisgruppe und das Produkt erstreckt sich über alle Stellen (rationale Primzahlen und unendliche Stellen).
+Hierbei ist $G_{\mathbb{Q}}$ die absolute [Galois](https://kenji.blog/de/p/galois/)gruppe und das Produkt erstreckt sich über alle Stellen (rationale Primzahlen und unendliche Stellen).
 Die starke BSD-Vermutung beinhaltet die implizite Annahme, dass "$\text{Sha}(E)$ für jede elliptische Kurve eine endliche Gruppe ist". Bis heute ist jedoch noch nicht einmal bewiesen, dass $\text{Sha}(E)$ für allgemeine elliptische Kurven endlich ist. Abgesehen von Ergebnissen wie denen von Karl Rubin zu Kurven mit komplexer Multiplikation, ist das grundlegende Verständnis von $\text{Sha}(E)$ eines der größten Probleme der modernen Zahlentheorie.
 
 ## 6. Beziehung zum Problem der kongruenten Zahlen
@@ -231,7 +231,7 @@ Erstaunlicherweise ist der Großteil der BSD-Vermutung bewiesen, wenn der analyt
 - **Satz von Gross-Zagier (Gross-Zagier, 1986)**:
   Sie zeigten, dass bei einem analytischen Rang von 1 die erste Ableitung von $L(E,s)$ bei $s=1$ proportional zur Néron-Tate-Höhe eines "Heegner-Punktes (Heegner point)" ist, der aus speziellen Punkten auf der Modulkurve konstruiert wird. Aus der Tatsache, dass die Höhe des Heegner-Punktes ungleich null ist, bewiesen sie, dass der algebraische Rang mindestens 1 ist.
 - **Satz von Kolyvagin (Kolyvagin, 1989)**:
-  Er konstruierte eine mächtige Methode der Galois-Kohomologie namens Euler-System (Euler system) und bewies, dass bei einem analytischen Rang von 0 oder 1 dieser mit dem algebraischen Rang übereinstimmt, und dass nur dann die Tate-Shafarevich-Gruppe $\text{Sha}(E)$ eine endliche Gruppe wird.
+  Er konstruierte eine mächtige Methode der [Galois](https://kenji.blog/de/p/galois/)-Kohomologie namens Euler-System (Euler system) und bewies, dass bei einem analytischen Rang von 0 oder 1 dieser mit dem algebraischen Rang übereinstimmt, und dass nur dann die Tate-Shafarevich-Gruppe $\text{Sha}(E)$ eine endliche Gruppe wird.
 
 Durch diese Errungenschaften steht fest, dass "die schwache BSD-Vermutung für elliptische Kurven mit einem analytischen Rang von 0 oder 1 wahr ist".
 

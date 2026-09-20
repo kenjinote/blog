@@ -68,7 +68,7 @@ $$
 
 For a solid that is homeomorphic (topologically identical) to a sphere, the Euler characteristic is always $\chi = 2$.
 
-According to the Poincaré-Hopf Theorem, the sum of the indices of the singularities (points where the vector becomes zero) of a vector field on a manifold is equal to the Euler characteristic of that manifold.
+According to the [Poincaré](https://kenji.blog/en/p/poincare/)-Hopf Theorem, the sum of the indices of the singularities (points where the vector becomes zero) of a vector field on a manifold is equal to the Euler characteristic of that manifold.
 
 Expressed in a formula,
 $$
@@ -84,7 +84,7 @@ An interesting question arises here. What if the shape was not a ball, but a don
 
 Actually, the Euler characteristic of a torus is $\chi(T^2) = 0$.
 
-Therefore, the right side of the Poincaré-Hopf Theorem becomes 0. This means that it is **possible** to create a continuous vector field without a single singularity.
+Therefore, the right side of the [Poincaré](https://kenji.blog/en/p/poincare/)-Hopf Theorem becomes 0. This means that it is **possible** to create a continuous vector field without a single singularity.
 
 Intuitively speaking, if it were a donut-shaped hairy ball, you could comb the hair perfectly without creating a single cowlick by combing it in a constant direction around the hole of the donut.
 

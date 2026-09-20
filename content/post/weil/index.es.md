@@ -49,7 +49,7 @@ La característica definitoria de Bourbaki fue su desarrollo completamente axiom
 
 Con el estallido de la Segunda Guerra Mundial en 1939, el destino de Weil se vio gravemente alterado. Se negó al servicio militar y huyó a Finlandia, donde fue identificado por error como un espía soviético y casi ejecutado. Fue salvado por los esfuerzos del destacado matemático Rolf Nevanlinna, pero posteriormente fue deportado a Francia y encarcelado en Ruán.
 
-Sorprendentemente, sin embargo, la creatividad matemática de Weil alcanzó su cenit bajo estas duras condiciones. Dentro de su celda, completó uno de sus mayores logros: la **"Prueba de la hipótesis de Riemann para curvas algebraicas sobre campos finitos"** . En cartas a su hermana Simone, discutió apasionadamente sobre la alegría de este descubrimiento y la importancia de la "analogía" en las matemáticas.
+Sorprendentemente, sin embargo, la creatividad matemática de Weil alcanzó su cenit bajo estas duras condiciones. Dentro de su celda, completó uno de sus mayores logros: la **"Prueba de la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) para curvas algebraicas sobre campos finitos"** . En cartas a su hermana Simone, discutió apasionadamente sobre la alegría de este descubrimiento y la importancia de la "analogía" en las matemáticas.
 
 ## 6. Las Conjeturas de Weil: Un Puente Entre la Geometría Algebraica y la Teoría de Números
 
@@ -59,7 +59,7 @@ En 1949, publicó su obra insignia, las **"Conjeturas de Weil"** . Estas propon�
 
 1.  **Racionalidad**: La función zeta de congruencia $Z(X, t)$ es una función racional.
 2.  **Ecuación funcional**: La función zeta satisface una simetría específica.
-3.  **Análogo de la hipótesis de Riemann**: Los valores absolutos de los ceros y polos de la función zeta siguen reglas específicas.
+3.  **Análogo de la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/)**: Los valores absolutos de los ceros y polos de la función zeta siguen reglas específicas.
 4.  **Conexión con los números de Betti**: El grado de la función zeta coincide con los números de Betti de la variedad.
 
 Como formulación matemática, la función zeta de congruencia de una variedad proyectiva no singular $X$ sobre un campo finito $\mathbb{F}_q$ se define de la siguiente manera:
@@ -77,13 +77,13 @@ graph LR
 %% Conexión entre la teoría de números y la geometría algebraica
 ```
 
-Para probar estas profundas conjeturas, [Alexander Grothendieck](https://kenji.blog/es/p/grothendieck/) construyó el marco teórico masivo de la teoría de esquemas y la cohomología étale desde cero. Luego, en 1974, el estudiante de Grothendieck, Pierre Deligne, probó el obstáculo final, el "análogo de la hipótesis de Riemann", resolviendo por completo las conjeturas de Weil. Este gran drama se considera uno de los mayores logros monumentales de las matemáticas del siglo XX.
+Para probar estas profundas conjeturas, [Alexander Grothendieck](https://kenji.blog/es/p/grothendieck/) construyó el marco teórico masivo de la teoría de esquemas y la cohomología étale desde cero. Luego, en 1974, el estudiante de Grothendieck, Pierre Deligne, probó el obstáculo final, el "análogo de la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/)", resolviendo por completo las conjeturas de Weil. Este gran drama se considera uno de los mayores logros monumentales de las matemáticas del siglo XX.
 
 ## 7. Otras Contribuciones Significativas: Adeles, Ideles y el Grupo de Weil
 
 Las contribuciones de Weil no se limitaron a proponer conjeturas. Refinó las teorías de los **"adeles"** e **"ideles"** , que se han convertido en lenguajes esenciales en la teoría de números moderna. Esto completó un poderoso marco en la teoría de números que conecta lo local con lo global.
 
-Además, introdujo el **"grupo de Weil"** , una extensión del concepto de grupo de Galois, que jugó un papel extremadamente importante en la unificación de la teoría de campos de clases local y global. Estos conceptos continúan investigándose activamente hoy en día como la base del "programa de Langlands", un enorme problema no resuelto de las matemáticas modernas. Por otra parte, los objetos matemáticos que llevan su nombre son demasiado numerosos para mencionarlos, incluido el "emparejamiento de Weil" utilizado en la criptografía de curva elíptica y la "métrica de Weil-Petersson" en la geometría de los espacios de módulos.
+Además, introdujo el **"grupo de Weil"** , una extensión del concepto de grupo de [Galois](https://kenji.blog/es/p/galois/), que jugó un papel extremadamente importante en la unificación de la teoría de campos de clases local y global. Estos conceptos continúan investigándose activamente hoy en día como la base del "programa de Langlands", un enorme problema no resuelto de las matemáticas modernas. Por otra parte, los objetos matemáticos que llevan su nombre son demasiado numerosos para mencionarlos, incluido el "emparejamiento de Weil" utilizado en la criptografía de curva elíptica y la "métrica de Weil-Petersson" en la geometría de los espacios de módulos.
 
 ## 8. Vida Posterior y Legado Matemático
 

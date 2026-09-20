@@ -23,11 +23,11 @@ In this article, we will thoroughly explain chaos theory and the butterfly effec
 
 ---
 
-## 2. Historical Background: From Poincaré to Lorenz
+## 2. Historical Background: From [Poincaré](https://kenji.blog/en/p/poincare/) to Lorenz
 
 The seeds of chaos theory can be traced back to the research of the great 19th-century French mathematician [Henri Poincaré](https://kenji.blog/en/p/poincare/). At the time, one of the greatest challenges in physics was the "three-body problem." This was the problem of predicting the motion of three celestial bodies, such as the Sun, Earth, and Moon, exerting gravitational forces on each other based on Newtonian mechanics.
 
-While studying this problem deeply, Poincaré discovered that the motion of celestial bodies could become extremely complex. He mathematically suggested that immeasurably small errors in initial positions or velocities could expand over time, ultimately leading to completely different trajectories of celestial bodies. This was virtually the first discovery of chaotic behavior, showing that even in a deterministic system (a system where the laws are completely known), long-term prediction could sometimes become impossible. However, due to the limitations of mathematical methods and computational power (the absence of computers) at the time, this groundbreaking discovery was not deeply explored for decades afterward.
+While studying this problem deeply, [Poincaré](https://kenji.blog/en/p/poincare/) discovered that the motion of celestial bodies could become extremely complex. He mathematically suggested that immeasurably small errors in initial positions or velocities could expand over time, ultimately leading to completely different trajectories of celestial bodies. This was virtually the first discovery of chaotic behavior, showing that even in a deterministic system (a system where the laws are completely known), long-term prediction could sometimes become impossible. However, due to the limitations of mathematical methods and computational power (the absence of computers) at the time, this groundbreaking discovery was not deeply explored for decades afterward.
 
 The situation changed dramatically in the 1960s. Edward Lorenz, a meteorologist at the Massachusetts Institute of Technology (MIT), was simulating atmospheric convection using an early computer. He created a set of simple nonlinear differential equations to calculate variables such as temperature, pressure, and wind speed, and computed the values using a computer.
 
@@ -192,7 +192,7 @@ This paradigm shift presents a new worldview: "Our world is complex and unpredic
 
 In this article, we have deeply explored the butterfly effect—where minuscule differences in initial conditions yield massive results—and the chaos theory that encompasses it.
 
-Starting from Poincaré's intuition, passing through Lorenz's accidental discovery via computer, chaos theory has grown into a massive field traversing mathematics and physics. Its mathematical foundations are highly refined and full of intellectual wonder, as seen in the beautiful trajectories of strange attractors drawn by nonlinear equations, the infinite self-similarity observed in the logistic map, and the quantification of unpredictability through Lyapunov exponents.
+Starting from [Poincaré](https://kenji.blog/en/p/poincare/)'s intuition, passing through Lorenz's accidental discovery via computer, chaos theory has grown into a massive field traversing mathematics and physics. Its mathematical foundations are highly refined and full of intellectual wonder, as seen in the beautiful trajectories of strange attractors drawn by nonlinear equations, the infinite self-similarity observed in the logistic map, and the quantification of unpredictability through Lyapunov exponents.
 
 Chaos theory not only teaches us the limits of weather forecasting but also provides a powerful lens for understanding the complex phenomena surrounding us, from economic fluctuations and heartbeats to the evolution of life. It reveals that the natural world is not a simple clockwork machine, but a dynamic system filled with unpredictability and creativity.
 

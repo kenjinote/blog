@@ -109,7 +109,7 @@ int main() {
 
 ## 时间复杂度与拉梅定理
 
-[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)到底有多快呢？关于其计算复杂度，法国数学家[加布里埃尔·拉梅](https://kenji.blog/zh-cn/p/lame/)在1844年证明的 **拉梅定理** （Lamé's theorem）非常著名。
+[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)到底有多快呢？关于其计算复杂度，法国数学家[加布里埃尔·拉梅](https://kenji.blog/zh-cn/p/lame/)在1844年证明的 **拉梅定理** （[Lamé](https://kenji.blog/zh-cn/p/lame/)'s theorem）非常著名。
 
 > **拉梅定理**
 > 对两个自然数 $a, b$ （$a > b$）应用[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)时，除法的次数不超过 $b$ 在十进制下位数的 $5$ 倍。

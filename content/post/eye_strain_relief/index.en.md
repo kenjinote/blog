@@ -51,7 +51,7 @@ The important fact indicated by this formula is that **"the energy of light $E$ 
 
 ## 1.2 Chromatic Aberration and Focus Shift
 
-Furthermore, from an optical perspective, differences in the wavelength of light create differences in the "refractive index." The refractive index $n$ of a medium (such as the crystalline lens in this case) depends on the wavelength $\lambda$, and is approximated by Cauchy's equation:
+Furthermore, from an optical perspective, differences in the wavelength of light create differences in the "refractive index." The refractive index $n$ of a medium (such as the crystalline lens in this case) depends on the wavelength $\lambda$, and is approximated by [Cauchy](https://kenji.blog/en/p/cauchy/)'s equation:
 
 $$ n(\lambda) = B + \frac{C}{\lambda^2} $$
 

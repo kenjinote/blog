@@ -422,7 +422,7 @@ Dans le monde du corps algébrique $\mathbb{Z}[\alpha]$, comme l'unicité de la 
 
 Ici, nous faisons face à de puissants murs en théorie algébrique des nombres : « l'obstruction du groupe des classes d'idéaux » et « l'obstruction du groupe des unités ».
 Le GNFS utilise la magie des **« caractères quadratiques (Quadratic Characters) »** pour briser ces murs.
-Nous ajoutons secrètement à la matrice de la Phase 4 les colonnes des résidus quadratiques (symbole de Legendre) pour plusieurs dizaines d'idéaux premiers spéciaux. Grâce à cela, l'ensemble $S$ trouvé évitera les obstacles avec une probabilité écrasante, et formera sans problème « le vrai carré de l'élément $\gamma^2$ ».
+Nous ajoutons secrètement à la matrice de la Phase 4 les colonnes des résidus quadratiques (symbole de [Legendre](https://kenji.blog/fr/p/legendre/)) pour plusieurs dizaines d'idéaux premiers spéciaux. Grâce à cela, l'ensemble $S$ trouvé évitera les obstacles avec une probabilité écrasante, et formera sans problème « le vrai carré de l'élément $\gamma^2$ ».
 
 L'opération pour trouver $\gamma$ (racine carrée algébrique) est calculée à l'aide d'algorithmes très complexes comme la méthode de Montgomery.
 

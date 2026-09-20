@@ -32,7 +32,7 @@ $$
 Onde $\alpha, \beta \in \mathbb{C}$, e satisfaz a condição de normalização $|\alpha|^2 + |\beta|^2 = 1$. Esta propriedade é chamada de "Sobreposição" (Superposition).
 
 ### Emaranhamento (Entanglement) e Produto Tensorial
-Quando existem múltiplos qubits, o estado de todo o sistema é representado pelo produto tensorial dos espaços de estados dos qubits individuais. Um sistema de $n$ qubits é um vetor em um espaço de Hilbert $\mathcal{H}^{\otimes n}$ de $2^n$ dimensões.
+Quando existem múltiplos qubits, o estado de todo o sistema é representado pelo produto tensorial dos espaços de estados dos qubits individuais. Um sistema de $n$ qubits é um vetor em um espaço de [Hilbert](https://kenji.blog/pt/p/hilbert/) $\mathcal{H}^{\otimes n}$ de $2^n$ dimensões.
 
 $$
 |\Psi\rangle = \sum_{x \in \{0, 1\}^n} c_x |x\rangle

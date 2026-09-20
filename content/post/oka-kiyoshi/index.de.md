@@ -24,7 +24,7 @@ Als er in die Fakultät für Mathematik an der Kaiserlichen Universität Kyoto e
 
 An der Universität von Paris interagierte er mit Genies, die damals die europäische mathematische Welt anführten, wie Henri Cartan und Gaston Julia. Besonders während seiner häufigen Besuche in Julias Labor stieß Oka auf das Gebiet der **Funktionentheorie mehrerer komplexer Veränderlicher**, das damals noch eine unerforschte Wildnis war.
 
-Während die komplexe Analysis einer Veränderlichen im 19. Jahrhundert von Cauchy, Riemann und anderen wunderschön vollendet worden war, warteten im Fall von mehreren Veränderlichen völlig andere Schwierigkeiten. Ein repräsentatives Beispiel ist das "Hartogs'sche Phänomen".
+Während die komplexe Analysis einer Veränderlichen im 19. Jahrhundert von [Cauchy](https://kenji.blog/de/p/cauchy/), [Riemann](https://kenji.blog/de/p/riemann/) und anderen wunderschön vollendet worden war, warteten im Fall von mehreren Veränderlichen völlig andere Schwierigkeiten. Ein repräsentatives Beispiel ist das "Hartogs'sche Phänomen".
 
 $$
 \text{Hartogs'scher Satz: In } \mathbb{C}^n \ (n \ge 2) \text{ wird eine Funktion, die auf dem Rand eines bestimmten Gebiets holomorph ist, automatisch holomorph in das Innere des Gebiets fortgesetzt.}

@@ -31,13 +31,13 @@ En 1915, siendo aún un adolescente, Hasse se unió a la Marina Imperial Alemana
 
 Después de que terminó la guerra en 1918, Hasse se matriculó oficialmente en la Universidad de Gotinga. En ese momento, Gotinga era la cúspide mundial de las matemáticas, hogar de gigantes como [David Hilbert](https://kenji.blog/es/p/hilbert/), Edmund Landau y [Emmy Noether](https://kenji.blog/es/p/noether/). Allí, Hasse se encontró con el aliento de las matemáticas de vanguardia, lo que permitió que sus talentos florecieran aún más.
 
-Más tarde, Hasse se trasladó a la Universidad de Marburgo, donde tuvo un encuentro fatídico con **[Kurt Hensel](https://kenji.blog/es/p/hensel/)**, quien se convertiría en su mentor de por vida. Hensel era el descubridor de un sistema numérico completamente nuevo: los números p-ádicos. Mientras que muchos matemáticos de la época veían los números p-ádicos como meras curiosidades matemáticas, Hasse reconoció de inmediato el inmenso potencial de este nuevo concepto y lo refinó para convertirlo en una poderosa arma para su propia investigación.
+Más tarde, Hasse se trasladó a la Universidad de Marburgo, donde tuvo un encuentro fatídico con **[Kurt Hensel](https://kenji.blog/es/p/hensel/)**, quien se convertiría en su mentor de por vida. [Hensel](https://kenji.blog/es/p/hensel/) era el descubridor de un sistema numérico completamente nuevo: los números p-ádicos. Mientras que muchos matemáticos de la época veían los números p-ádicos como meras curiosidades matemáticas, Hasse reconoció de inmediato el inmenso potencial de este nuevo concepto y lo refinó para convertirlo en una poderosa arma para su propia investigación.
 
 ## 4. ¿Qué son los números p-ádicos? Un nuevo sistema numérico
 
 Para comprender los logros de Hasse, no se puede evitar el concepto de los números p-ádicos. Los números reales que usamos a diario se obtienen al completar los números racionales (fracciones) basándose en el concepto de "tamaño (valor absoluto)", un proceso de tomar límites para llenar los vacíos.
 
-Sin embargo, Hensel introdujo un concepto de "distancia" completamente diferente. Fijando un número primo $p$, dos números racionales se definen como "cercanos" si su diferencia se puede dividir por $p$ muchas veces. Completar los números racionales basándose en esta extraña distancia produce el cuerpo de los números p-ádicos $\mathbb{Q}_p$. En el mundo de los números p-ádicos, series infinitas que divergirían en el mundo real pueden converger, lo que hace posible tratar problemas de congruencia utilizando métodos analíticos.
+Sin embargo, [Hensel](https://kenji.blog/es/p/hensel/) introdujo un concepto de "distancia" completamente diferente. Fijando un número primo $p$, dos números racionales se definen como "cercanos" si su diferencia se puede dividir por $p$ muchas veces. Completar los números racionales basándose en esta extraña distancia produce el cuerpo de los números p-ádicos $\mathbb{Q}_p$. En el mundo de los números p-ádicos, series infinitas que divergirían en el mundo real pueden converger, lo que hace posible tratar problemas de congruencia utilizando métodos analíticos.
 
 ## 5. Establecimiento del Principio de Hasse (Principio local-global)
 
@@ -83,7 +83,7 @@ De esta manera, Hasse fue excepcionalmente hábil para captar de manera intuitiv
 
 ## 8. Teorema de Hasse-Weil: Puntos racionales en curvas elípticas
 
-Otra contribución sumamente importante de Hasse es el **Teorema de Hasse sobre curvas elípticas** sobre cuerpos finitos. Este fue un resultado histórico, considerado el primer paso hacia un "análogo de la Hipótesis de Riemann" para variedades algebraicas sobre cuerpos finitos.
+Otra contribución sumamente importante de Hasse es el **Teorema de Hasse sobre curvas elípticas** sobre cuerpos finitos. Este fue un resultado histórico, considerado el primer paso hacia un "análogo de la Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/)" para variedades algebraicas sobre cuerpos finitos.
 
 Sea $N$ el número de puntos racionales en una curva elíptica $E$ definida sobre un cuerpo finito $\mathbb{F}_q$ (un cuerpo con $q$ elementos). Hasse demostró que el número de puntos racionales $N$ está cerca de $q + 1$ (el número de puntos en la línea proyectiva), y el error está acotado de la siguiente manera:
 
@@ -95,7 +95,7 @@ Esta hermosa desigualdad fue luego extendida a curvas algebraicas generales por 
 
 ## 9. Contribución a la Teoría de Cuerpos de Clases: Teoría Local y Reciprocidad de Artin
 
-Al discutir los logros de Hasse, su contribución masiva a la **Teoría de Cuerpos de Clases** es indispensable. La teoría de cuerpos de clases es una teoría que intenta describir completamente las extensiones abelianas (extensiones donde el grupo de Galois es conmutativo) de un cuerpo de números algebraicos (una extensión finita de los números racionales) utilizando información interna del propio cuerpo base.
+Al discutir los logros de Hasse, su contribución masiva a la **Teoría de Cuerpos de Clases** es indispensable. La teoría de cuerpos de clases es una teoría que intenta describir completamente las extensiones abelianas (extensiones donde el grupo de [Galois](https://kenji.blog/es/p/galois/) es conmutativo) de un cuerpo de números algebraicos (una extensión finita de los números racionales) utilizando información interna del propio cuerpo base.
 
 En la demostración de la "Ley de Reciprocidad" propuesta por Emil Artin, Hasse jugó un papel de vital importancia. Utilizando métodos analíticos y la teoría de los números p-ádicos, Hasse ofreció un consejo crucial a Artin, contribuyendo en gran medida a la finalización de la demostración. El propio Hasse también jugó un papel central en la construcción de la Teoría Local de Cuerpos de Clases, reconstruyendo la teoría global de cuerpos de clases desde la perspectiva de los cuerpos locales.
 

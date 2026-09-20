@@ -47,7 +47,7 @@ Das obige Diagramm zeigt vereinfacht das Konzept der Informationsübertragung zw
 
 ### Frobenioide und Hodge-Theater
 
-Als wichtige Konzepte, die die IUT-Theorie bilden, gibt es **Frobenioide** (Frobenioid) und **Hodge-Theater** (Hodge Theater). Diese sind Mechanismen zur geometrischen Codierung zahlentheoretischer Informationen durch die Wirkung der absoluten Galois-Gruppe oder der Fundamentalgruppe von Zahlkörpern.
+Als wichtige Konzepte, die die IUT-Theorie bilden, gibt es **Frobenioide** (Frobenioid) und **Hodge-Theater** (Hodge Theater). Diese sind Mechanismen zur geometrischen Codierung zahlentheoretischer Informationen durch die Wirkung der absoluten [Galois](https://kenji.blog/de/p/galois/)-Gruppe oder der Fundamentalgruppe von Zahlkörpern.
 
 $$ \Theta \text{-Link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
 
@@ -55,13 +55,13 @@ Der Theta-Link ($\Theta$-Link) spielt die Rolle, spezifische Monodromie-Informat
 
 # Erstaunliche Konsequenzen, die sich aus der ABC-Vermutung ergeben
 
-Wenn die ABC-Vermutung (ob durch die IUT-Theorie oder auf andere Weise) vollständig bewiesen wird, würden viele wichtige zahlentheoretische Sätze auf einen Schlag abgeleitet werden. Vergleichen wir dies mit der **Mordell-Vermutung** (heute bekannt als der Satz von Faltings) oder **Fermats letztem Satz** .
+Wenn die ABC-Vermutung (ob durch die IUT-Theorie oder auf andere Weise) vollständig bewiesen wird, würden viele wichtige zahlentheoretische Sätze auf einen Schlag abgeleitet werden. Vergleichen wir dies mit der **Mordell-Vermutung** (heute bekannt als der Satz von Faltings) oder **[Fermat](https://kenji.blog/de/p/fermat/)s letztem Satz** .
 
-## Anwendung auf Fermats letzten Satz
+## Anwendung auf [Fermat](https://kenji.blog/de/p/fermat/)s letzten Satz
 
-Fermats letzter Satz besagt, dass es für $n \ge 3$ keine positiven ganzen Zahlen $(x, y, z)$ gibt, die $x^n + y^n = z^n$ erfüllen. Er wurde 1995 von [Andrew Wiles](https://kenji.blog/de/p/wiles/) bewiesen, aber es wurde eine sehr fortgeschrittene und komplexe Mathematik verwendet.
+[Fermat](https://kenji.blog/de/p/fermat/)s letzter Satz besagt, dass es für $n \ge 3$ keine positiven ganzen Zahlen $(x, y, z)$ gibt, die $x^n + y^n = z^n$ erfüllen. Er wurde 1995 von [Andrew Wiles](https://kenji.blog/de/p/wiles/) bewiesen, aber es wurde eine sehr fortgeschrittene und komplexe Mathematik verwendet.
 
-Wenn wir annehmen, dass die ABC-Vermutung wahr ist, kann Fermats letzter Satz (zumindest für hinreichend große $n$) erstaunlicherweise in nur wenigen Zeilen bewiesen werden.
+Wenn wir annehmen, dass die ABC-Vermutung wahr ist, kann [Fermat](https://kenji.blog/de/p/fermat/)s letzter Satz (zumindest für hinreichend große $n$) erstaunlicherweise in nur wenigen Zeilen bewiesen werden.
 
 Nehmen wir $x^n + y^n = z^n$ an, wobei $(x, y, z)$ teilerfremd sind. Wenn wir die ABC-Vermutung auf $a=x^n$, $b=y^n$, $c=z^n$ anwenden, erhalten wir:
 

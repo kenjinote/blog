@@ -14,13 +14,13 @@ tags: ["Kurt Gödel", "Unvollständigkeitssätze", "Mathematik", "Logik", "Gesch
 
 Gödels Errungenschaften gehen weit über bloße mathematische Beweise hinaus und reichen bis in die Philosophie, die Informatik und sogar die Kosmologie. In diesem Artikel tauchen wir tief in den Lebensweg dieses Genies ein, das die Geschichte der Mathematik für immer veränderte. Wir betrachten die Details seiner mathematischen Meisterleistungen, seine tiefe Freundschaft mit Albert Einstein und das tragische Ende seiner späten Jahre aus verschiedenen Perspektiven.
 
-# 2. Die Grundlagenkrise der Mathematik und das Hilbert-Programm
+# 2. Die Grundlagenkrise der Mathematik und das [Hilbert](https://kenji.blog/de/p/hilbert/)-Programm
 
 Um den wahren Wert von Gödels Arbeit zu schätzen, muss man die "Grundlagenkrise", mit der die mathematische Welt damals konfrontiert war, im Detail verstehen. Ende des 19. Jahrhunderts brachte die von [Georg Cantor](https://kenji.blog/de/p/cantor/) begründete Theorie der unendlichen Mengen völlig neue Perspektiven und mächtige Werkzeuge in die Mathematik. Doch bald zeigte sich, dass sie schwerwiegende Paradoxien der Selbstreferenz barg, wie etwa die "Russellsche Antinomie".
 
 Das Russellsche Paradoxon betrachtet "die Menge aller Mengen, die sich nicht selbst als Element enthalten". Wenn diese Menge sich selbst enthält, widerspricht dies ihrer eigenen Definition; wenn sie sich nicht selbst enthält, muss sie nach Definition ein Element von sich selbst sein, was wiederum zu einem Widerspruch führt. Diese Entdeckung offenbarte die extreme Zerbrechlichkeit der damaligen mathematischen Grundlagen, die stark auf intuitivem Denken beruhten.
 
-Um diesem Problem zu begegnen, schlug der große deutsche Mathematiker [David Hilbert](https://kenji.blog/de/p/hilbert/) das sogenannte "Hilbert-Programm" vor. Es strebte einen formalistischen Ansatz an, um alle mathematischen Theoreme aus einer kleinen Menge von Axiomen und mechanischen Schlussregeln abzuleiten. Das ultimative Ziel war es, in endlich vielen Schritten mathematisch zu beweisen, dass das Axiomensystem absolut keinen Widerspruch erzeugen würde (Widerspruchsfreiheit) und dass jede wahre Aussage innerhalb dieses Systems bewiesen werden könnte (Vollständigkeit). Wäre dies erfolgreich, stünde die Mathematik auf einem absolut festen Fundament. Die damaligen Mathematiker glaubten fest an den Erfolg dieses Programms und hielten die vollständige Formalisierung der Mathematik nur für eine Frage der Zeit.
+Um diesem Problem zu begegnen, schlug der große deutsche Mathematiker [David Hilbert](https://kenji.blog/de/p/hilbert/) das sogenannte "[Hilbert](https://kenji.blog/de/p/hilbert/)-Programm" vor. Es strebte einen formalistischen Ansatz an, um alle mathematischen Theoreme aus einer kleinen Menge von Axiomen und mechanischen Schlussregeln abzuleiten. Das ultimative Ziel war es, in endlich vielen Schritten mathematisch zu beweisen, dass das Axiomensystem absolut keinen Widerspruch erzeugen würde (Widerspruchsfreiheit) und dass jede wahre Aussage innerhalb dieses Systems bewiesen werden könnte (Vollständigkeit). Wäre dies erfolgreich, stünde die Mathematik auf einem absolut festen Fundament. Die damaligen Mathematiker glaubten fest an den Erfolg dieses Programms und hielten die vollständige Formalisierung der Mathematik nur für eine Frage der Zeit.
 
 # 3. Frühes Leben und die Philosophie des Wiener Kreises
 
@@ -34,7 +34,7 @@ Der Wiener Kreis vertrat den Logischen Empirismus und versuchte, metaphysische A
 
 Im Jahr 1930 bewies Gödel in seiner an der Universität Wien eingereichten Dissertation brillant den "Vollständigkeitssatz der Prädikatenlogik erster Stufe". Die Prädikatenlogik erster Stufe ist ein logisches System, in dem Quantoren (für alle, es existiert) nur auf Variablen und nicht auf Prädikate angewendet werden können.
 
-In dieser Arbeit zeigte Gödel, dass in der Prädikatenlogik erster Stufe "eine Aussage, die logisch immer wahr ist (eine allgemeingültige logische Formel), notwendigerweise in einer endlichen Anzahl von Schritten aus den Axiomen bewiesen werden kann". Dies bedeutete einen Teilerfolg für das Hilbert-Programm und garantierte, dass die Schlussregeln des logischen Systems ausreichend mächtig waren. Viele Mathematiker hegten die große Hoffnung, dass dies als Sprungbrett dienen könnte, um auch die Vollständigkeit der Zahlentheorie (Arithmetik) zu beweisen. Das Papier, das Gödel jedoch im folgenden Jahr veröffentlichte, sollte diese Erwartungen völlig zerstören.
+In dieser Arbeit zeigte Gödel, dass in der Prädikatenlogik erster Stufe "eine Aussage, die logisch immer wahr ist (eine allgemeingültige logische Formel), notwendigerweise in einer endlichen Anzahl von Schritten aus den Axiomen bewiesen werden kann". Dies bedeutete einen Teilerfolg für das [Hilbert](https://kenji.blog/de/p/hilbert/)-Programm und garantierte, dass die Schlussregeln des logischen Systems ausreichend mächtig waren. Viele Mathematiker hegten die große Hoffnung, dass dies als Sprungbrett dienen könnte, um auch die Vollständigkeit der Zahlentheorie (Arithmetik) zu beweisen. Das Papier, das Gödel jedoch im folgenden Jahr veröffentlichte, sollte diese Erwartungen völlig zerstören.
 
 # 5. Der Schock des Ersten Unvollständigkeitssatzes und die Gödelnummerierung
 
@@ -59,7 +59,7 @@ flowchart TD
 
 Um dieses erstaunliche Theorem zu beweisen, erfand Gödel eine bahnbrechende Technik, die "Gödelnummerierung". Dies ist eine Methode, um Symbole, logische Formeln und gesamte schrittweise Beweise mithilfe der Eindeutigkeit der Primfaktorzerlegung in eine einzige riesige natürliche Zahl umzuwandeln. Dadurch konnten metamathematische Aussagen (wie "eine bestimmte logische Formel ist beweisbar") als rein arithmetische Eigenschaften natürlicher Zahlen behandelt werden. Dieses "Diagonalisierungslemma", das es einem logischen System ermöglichte, über seine eigenen Grenzen zu sprechen (Selbstreferenz), gilt als eine der schönsten Beweistechniken in der Geschichte der Mathematik.
 
-# 6. Der Zweite Unvollständigkeitssatz und das Ende von Hilberts Traum
+# 6. Der Zweite Unvollständigkeitssatz und das Ende von [Hilbert](https://kenji.blog/de/p/hilbert/)s Traum
 
 Als direkte Konsequenz des Ersten Unvollständigkeitssatzes leitete Gödel den noch mächtigeren **Zweiten Unvollständigkeitssatz** ab. Dieser besagt: "Ein widerspruchsfreies formales Axiomensystem, das die Arithmetik ausdrücken kann, kann seine eigene Widerspruchsfreiheit nicht innerhalb des Systems selbst beweisen."
 
@@ -69,11 +69,11 @@ $$ \text{Con}(F) \implies \neg \text{Prov}( \lceil \text{Con}(F) \rceil ) $$
 
 Hier ist $\text{Con}(F)$ eine logische Formel, die darstellt, dass das Axiomensystem $F$ widerspruchsfrei ist. Könnte das System $F$ seine eigene Widerspruchsfreiheit beweisen, wäre das System tatsächlich widersprüchlich.
 
-Der Zweite Unvollständigkeitssatz war das absolute Todesurteil für das Hilbert-Programm. Hilberts großer Traum, die Widerspruchsfreiheit der Mathematik vollständig von innerhalb der Mathematik selbst zu beweisen, erwies sich als prinzipiell unmöglich. Hier wurde eine tiefe Wahrheit etabliert: Die Mathematik kann die Sicherheit ihrer eigenen Grundlagen nicht aus eigener Kraft garantieren.
+Der Zweite Unvollständigkeitssatz war das absolute Todesurteil für das [Hilbert](https://kenji.blog/de/p/hilbert/)-Programm. [Hilbert](https://kenji.blog/de/p/hilbert/)s großer Traum, die Widerspruchsfreiheit der Mathematik vollständig von innerhalb der Mathematik selbst zu beweisen, erwies sich als prinzipiell unmöglich. Hier wurde eine tiefe Wahrheit etabliert: Die Mathematik kann die Sicherheit ihrer eigenen Grundlagen nicht aus eigener Kraft garantieren.
 
 # 7. Beiträge zur Kontinuumshypothese und das konstruktible Universum (L)
 
-Auch nach den Unvollständigkeitssätzen kam Gödels intellektuelle Suche nicht zum Stillstand. Er nahm sich der "Kontinuumshypothese" an, einem lange ungelösten Problem in der Mengenlehre und dem ersten von Hilberts 23 Problemen. Diese von Cantor vorgeschlagene Hypothese besagt, dass "es keine Menge gibt, deren Mächtigkeit strikt zwischen der der natürlichen Zahlen (abzählbare Unendlichkeit) und der der reellen Zahlen (Kontinuum) liegt".
+Auch nach den Unvollständigkeitssätzen kam Gödels intellektuelle Suche nicht zum Stillstand. Er nahm sich der "Kontinuumshypothese" an, einem lange ungelösten Problem in der Mengenlehre und dem ersten von [Hilbert](https://kenji.blog/de/p/hilbert/)s 23 Problemen. Diese von Cantor vorgeschlagene Hypothese besagt, dass "es keine Menge gibt, deren Mächtigkeit strikt zwischen der der natürlichen Zahlen (abzählbare Unendlichkeit) und der der reellen Zahlen (Kontinuum) liegt".
 
 $$ 2^{\aleph_0} = \aleph_1 $$
 

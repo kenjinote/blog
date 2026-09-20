@@ -17,17 +17,17 @@ Dalam artikel ini, kami akan menjelaskan secara menyeluruh tentang teorema menge
 
 ---
 
-## 1. Latar Belakang: Program Hilbert dan Krisis Matematika
+## 1. Latar Belakang: Program [Hilbert](https://kenji.blog/id/p/hilbert/) dan Krisis Matematika
 
 Dari akhir abad ke-19 hingga awal abad ke-20, dunia matematika menghadapi "paradoks teori himpunan (seperti Paradoks Russell)", dan fondasinya goyah. Orang yang bangkit untuk menyelamatkan "krisis matematika" ini adalah otoritas tertinggi dalam dunia matematika saat itu, [David Hilbert](https://kenji.blog/id/p/hilbert/).
 
-Hilbert mencoba menyimbolkan sepenuhnya semua penalaran matematika dan merekonstruksi matematika hanya dengan aturan mekanis. "Program Hilbert" yang ia advokasikan bertujuan untuk membuktikan tiga sifat berikut dalam sistem formal (Formal System) matematika:
+[Hilbert](https://kenji.blog/id/p/hilbert/) mencoba menyimbolkan sepenuhnya semua penalaran matematika dan merekonstruksi matematika hanya dengan aturan mekanis. "Program [Hilbert](https://kenji.blog/id/p/hilbert/)" yang ia advokasikan bertujuan untuk membuktikan tiga sifat berikut dalam sistem formal (Formal System) matematika:
 
 1. **Konsistensi** (Consistency): Tidak ada kontradiksi (di mana suatu proposisi $P$ dan negasinya $\neg P$ keduanya terbukti) di dalam sistem.
 2. **Kelengkapan** (Completeness): Setiap proposisi matematika harus dapat dibuktikan sebagai benar atau salah di dalam sistem tersebut.
 3. **Keputusan** (Decidability): Jika diberikan proposisi sembarang, ada prosedur mekanis untuk menentukan apakah itu dapat dibuktikan atau tidak.
 
-Hilbert meninggalkan kata-kata terkenal, "Kita harus tahu, kita akan tahu (Wir müssen wissen. Wir werden wissen.)", dan ia percaya tanpa ragu bahwa matematika akan menjadi kastil logika sempurna yang dapat menyelesaikan segalanya.
+[Hilbert](https://kenji.blog/id/p/hilbert/) meninggalkan kata-kata terkenal, "Kita harus tahu, kita akan tahu (Wir müssen wissen. Wir werden wissen.)", dan ia percaya tanpa ragu bahwa matematika akan menjadi kastil logika sempurna yang dapat menyelesaikan segalanya.
 
 ```mermaid
 graph TD
@@ -47,11 +47,11 @@ Teorema Gödel menargetkan sistem yang mencakup "penjumlahan dan perkalian bilan
 
 Misalnya, fakta yang diketahui semua orang bahwa " $1 + 1 = 2$ " hanyalah sebuah "teorema" yang diturunkan secara mekanis melalui manipulasi simbol dalam sistem formal Aritmatika Peano.
 
-Hilbert berpikir bahwa dengan memperbesar sistem formal ini, suatu hari nanti ia dapat mencakup seluruh kebenaran matematis.
+[Hilbert](https://kenji.blog/id/p/hilbert/) berpikir bahwa dengan memperbesar sistem formal ini, suatu hari nanti ia dapat mencakup seluruh kebenaran matematis.
 
 ## 3. Kejutan Teorema Ketidaklengkapan Pertama: Proposisi "Benar tetapi Tidak Dapat Dibuktikan"
 
-Namun pada tahun 1931, [Kurt Gödel](https://kenji.blog/id/p/godel/), yang saat itu baru berusia 25 tahun, menerbitkan sebuah makalah yang menghancurkan impian Hilbert. Itulah **Teorema Ketidaklengkapan Pertama**.
+Namun pada tahun 1931, [Kurt Gödel](https://kenji.blog/id/p/godel/), yang saat itu baru berusia 25 tahun, menerbitkan sebuah makalah yang menghancurkan impian [Hilbert](https://kenji.blog/id/p/hilbert/). Itulah **Teorema Ketidaklengkapan Pertama**.
 
 > **Teorema Ketidaklengkapan Pertama**
 > Dalam setiap sistem formal yang konsisten yang mencakup Aritmatika Peano, selalu ada proposisi yang benar tetapi tidak dapat dibuktikan dalam sistem tersebut.
@@ -114,7 +114,7 @@ Teorema Ketidaklengkapan Pertama saja telah mengguncang dunia matematika, namun 
 > **Teorema Ketidaklengkapan Kedua**
 > Sistem formal apa pun yang konsisten dan mencakup Aritmatika Peano tidak dapat membuktikan konsistensinya sendiri di dalam sistem tersebut.
 
-Hilbert mencoba membuktikan bahwa matematika konsisten dengan menggunakan kekuatan matematika itu sendiri (Tugas paling penting dari Program Hilbert). Namun, Teorema Ketidaklengkapan Kedua mengumumkan bahwa "tidak ada sistem yang dapat membuktikan dengan kekuatannya sendiri bahwa ia tidak gila (tidak ada kontradiksi)".
+[Hilbert](https://kenji.blog/id/p/hilbert/) mencoba membuktikan bahwa matematika konsisten dengan menggunakan kekuatan matematika itu sendiri (Tugas paling penting dari Program [Hilbert](https://kenji.blog/id/p/hilbert/)). Namun, Teorema Ketidaklengkapan Kedua mengumumkan bahwa "tidak ada sistem yang dapat membuktikan dengan kekuatannya sendiri bahwa ia tidak gila (tidak ada kontradiksi)".
 
 Untuk memahami ini secara intuitif, mari berpikir sebagai berikut.
 Misalkan seseorang mengklaim "Saya tidak pernah berbohong!". Namun, kita tidak dapat membuktikan bahwa "orang ini bukan pembohong" hanya berdasarkan kata-katanya saja. Sebab, jika ia seorang pembohong, pernyataan "Saya tidak pernah berbohong" itu sendiri mungkin sebuah kebohongan.

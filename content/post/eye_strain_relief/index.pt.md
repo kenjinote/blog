@@ -51,7 +51,7 @@ O fato importante demonstrado por essa fórmula é que **"a energia da luz $E$ �
 
 ## 1.2 Aberração Cromática (Chromatic Aberration) e Desalinhamento Focal
 
-Observando mais a fundo do ponto de vista óptico, a diferença nos comprimentos de onda da luz cria uma diferença no "índice de refração". O índice de refração $n$ de um meio (neste caso, o cristalino, etc.) depende do comprimento de onda $\lambda$ e é aproximado pela equação de dispersão de Cauchy:
+Observando mais a fundo do ponto de vista óptico, a diferença nos comprimentos de onda da luz cria uma diferença no "índice de refração". O índice de refração $n$ de um meio (neste caso, o cristalino, etc.) depende do comprimento de onda $\lambda$ e é aproximado pela equação de dispersão de [Cauchy](https://kenji.blog/pt/p/cauchy/):
 
 $$ n(\lambda) = B + \frac{C}{\lambda^2} $$
 

@@ -39,10 +39,10 @@ Zum Beispiel,
 
 Das Problem selbst ist sehr einfach, aber es wurde noch nicht bewiesen.
 
-## Riemannsche Vermutung
+## [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung
 
-Die Riemannsche Vermutung besagt, dass die Nullstellen der Riemannschen Zeta-Funktion auf negative gerade Zahlen und komplexe Zahlen mit einem Realteil von 1/2 beschränkt sind.
+Die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung besagt, dass die Nullstellen der [Riemann](https://kenji.blog/de/p/riemann/)schen Zeta-Funktion auf negative gerade Zahlen und komplexe Zahlen mit einem Realteil von 1/2 beschränkt sind.
 
-Die Riemannsche Zeta-Funktion ist die Funktion $\zeta$, die definiert ist durch (wenn $s$ eine komplexe Zahl und $n$ eine natürliche Zahl ist):
+Die [Riemann](https://kenji.blog/de/p/riemann/)sche Zeta-Funktion ist die Funktion $\zeta$, die definiert ist durch (wenn $s$ eine komplexe Zahl und $n$ eine natürliche Zahl ist):
 
 $$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$

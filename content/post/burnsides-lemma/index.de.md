@@ -81,7 +81,7 @@ Diese 4 Muster gehören zur selben "Bahn". Die "Anzahl der im Wesentlichen unter
 
 ## 5. [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/)
 
-Hier tritt schließlich der Star dieses Mals, das **[Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/)**, auf. Es wird manchmal auch Cauchy-Frobenius-Lemma genannt. Dies ist ein erstaunlicher Lehrsatz, der es uns ermöglicht, die "Anzahl der Bahnen (Anzahl der im Wesentlichen unterschiedlichen Muster)" leicht zu berechnen, wenn eine Gruppe $G$ auf eine endliche Menge $X$ wirkt.
+Hier tritt schließlich der Star dieses Mals, das **[Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/)**, auf. Es wird manchmal auch [Cauchy](https://kenji.blog/de/p/cauchy/)-Frobenius-Lemma genannt. Dies ist ein erstaunlicher Lehrsatz, der es uns ermöglicht, die "Anzahl der Bahnen (Anzahl der im Wesentlichen unterschiedlichen Muster)" leicht zu berechnen, wenn eine Gruppe $G$ auf eine endliche Menge $X$ wirkt.
 
 Die Formel für den Lehrsatz lautet wie folgt:
 
@@ -231,7 +231,7 @@ Tatsächlich wurde dieser Lehrsatz nicht zuerst von William Burnside entdeckt. E
 
 Historisch gesehen hatte [Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/) jedoch bereits 1845 einen Spezialfall dieses Lehrsatzes (bezüglich symmetrischer Gruppen) veröffentlicht, und später 1887 lieferte Ferdinand Georg Frobenius einen Beweis für endliche Gruppen im Allgemeinen.
 
-Deshalb nennen diejenigen, die versuchen, bei der Mathematikgeschichte streng zu sein, diesen Lehrsatz manchmal spielerisch das **"Cauchy-Frobenius-Lemma"** oder **"Das Lemma, das nicht von Burnside ist"**. Unabhängig vom Ursprung seines Namens ist die Bedeutung der Rolle, die dieses Lemma in der Geschichte der Gruppentheorie und Kombinatorik gespielt hat, unermesslich.
+Deshalb nennen diejenigen, die versuchen, bei der Mathematikgeschichte streng zu sein, diesen Lehrsatz manchmal spielerisch das **"[Cauchy](https://kenji.blog/de/p/cauchy/)-Frobenius-Lemma"** oder **"Das Lemma, das nicht von Burnside ist"**. Unabhängig vom Ursprung seines Namens ist die Bedeutung der Rolle, die dieses Lemma in der Geschichte der Gruppentheorie und Kombinatorik gespielt hat, unermesslich.
 
 ## 11. Beispiel 2: Färben der Seiten eines Würfels
 

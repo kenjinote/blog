@@ -10,7 +10,7 @@ tags: ["Gorō Shimura", "Théorie des nombres", "Conjecture de Taniyama-Shimura"
 
 ## 1. Introduction : Un géant de la théorie des nombres, [Gorō Shimura](https://kenji.blog/fr/p/shimura-goro/)
 
-Dans l'histoire des mathématiques modernes, il est un mathématicien japonais qui a eu un impact décisif sur le domaine de la géométrie arithmétique. Son nom est **[Gorō Shimura](https://kenji.blog/fr/p/shimura-goro/)** (1930 - 2019). Ses réalisations sont incommensurables : il a proposé la « conjecture de Taniyama-Shimura » (aujourd'hui appelée théorème de modularité), qui est devenue par la suite la clé majeure de la preuve du « dernier théorème de Fermat », et a construit les « variétés de Shimura », un objet d'une importance capitale dans la théorie des nombres moderne.
+Dans l'histoire des mathématiques modernes, il est un mathématicien japonais qui a eu un impact décisif sur le domaine de la géométrie arithmétique. Son nom est **[Gorō Shimura](https://kenji.blog/fr/p/shimura-goro/)** (1930 - 2019). Ses réalisations sont incommensurables : il a proposé la « conjecture de Taniyama-Shimura » (aujourd'hui appelée théorème de modularité), qui est devenue par la suite la clé majeure de la preuve du « dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/) », et a construit les « variétés de Shimura », un objet d'une importance capitale dans la théorie des nombres moderne.
 
 Dans cet article, tout en revenant sur la vie de [Gorō Shimura](https://kenji.blog/fr/p/shimura-goro/), un mathématicien solitaire, nous plongerons profondément dans les réalisations monumentales qu'il a établies dans le monde mathématique, ainsi que dans la philosophie féroce et l'esthétique qui les sous-tendent. Il n'est pas exagéré de dire que comprendre ses réalisations est synonyme de comprendre comment les mathématiques se sont développées à la fin du XXe siècle.
 
@@ -24,7 +24,7 @@ Selon son livre « The Map of My Life », il lisait seul des livres de mathémat
 
 ### 2.2 Ses jours à l'Université de Tokyo
 
-En 1949, Shimura est entré au département de mathématiques de la faculté des sciences de l'Université de Tokyo. À l'époque, la communauté mathématique japonaise, bien que fondée sur la théorie du corps de classes de Teiji Takagi et consorts, était confrontée au défi de savoir comment rattraper les tendances mondiales pendant la période de reconstruction d'après-guerre. C'est là que Shimura a rencontré **[Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/)**, avec qui il nouera plus tard une profonde amitié et partagera un destin commun.
+En 1949, Shimura est entré au département de mathématiques de la faculté des sciences de l'Université de Tokyo. À l'époque, la communauté mathématique japonaise, bien que fondée sur la théorie du corps de classes de Teiji [Takagi](https://kenji.blog/fr/p/takagi-teiji/) et consorts, était confrontée au défi de savoir comment rattraper les tendances mondiales pendant la période de reconstruction d'après-guerre. C'est là que Shimura a rencontré **[Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/)**, avec qui il nouera plus tard une profonde amitié et partagera un destin commun.
 
 Taniyama était un mathématicien de génie aux idées intuitives et décomplexées, tandis que Shimura était un perfectionniste qui accordait une grande valeur à la rigueur et ne permettait jamais de compromis sur les détails de la logique. La rencontre de ces deux figures contrastées allait finalement donner naissance à la graine d'une théorie massive qui allait ébranler le monde mathématique.
 
@@ -54,7 +54,7 @@ $$
 L(s, E) = \prod_{p \mid \Delta} (1 - a_p p^{-s})^{-1} \prod_{p \nmid \Delta} (1 - a_p p^{-s} + p^{1-2s})^{-1}
 $$
 
-D'autre part, une forme modulaire $f$ (ici, une forme parabolique de poids 2) est une fonction hautement symétrique définie sur le demi-plan de Poincaré, et sa propre fonction $L$, $L(s, f)$, est définie à partir de ses coefficients de développement de Fourier $\{c_n\}$.
+D'autre part, une forme modulaire $f$ (ici, une forme parabolique de poids 2) est une fonction hautement symétrique définie sur le demi-plan de [Poincaré](https://kenji.blog/fr/p/poincare/), et sa propre fonction $L$, $L(s, f)$, est définie à partir de ses coefficients de développement de Fourier $\{c_n\}$.
 
 $$
 f(z) = \sum_{n=1}^{\infty} c_n e^{2\pi i n z}
@@ -85,25 +85,25 @@ En 1958, alors que la construction de la théorie commençait sérieusement, une
 
 Pour Shimura, le chagrin de perdre Taniyama, son meilleur confident et collaborateur, était incommensurable. Cependant, Shimura a surmonté la douleur et a nourri un fort sentiment de mission pour prouver les idées inachevées laissées par Taniyama de ses propres mains et les faire reconnaître par le monde. Shimura a ensuite déménagé aux États-Unis, poursuivant ses recherches à l'Université de Princeton et ailleurs, tout en formulant cette conjecture sous une forme plus précise et en augmentant sa renommée internationale. Pour cette raison, la conjecture est devenue connue sous le nom de « conjecture de Taniyama-Shimura ».
 
-## 5. Le chemin vers le dernier théorème de Fermat
+## 5. Le chemin vers le dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/)
 
 ### 5.1 L'idée de Frey et la preuve de Ribet
 
-Le temps a passé, et dans les années 1980, la conjecture de Taniyama-Shimura s'est dramatiquement liée au « dernier théorème de Fermat ». En 1984, Gerhard Frey a montré que si l'on suppose qu'il existe un contre-exemple $a^n + b^n = c^n$ au dernier théorème de Fermat, une courbe elliptique étrange (courbe de Frey) pourrait être construite à partir de celui-ci.
+Le temps a passé, et dans les années 1980, la conjecture de Taniyama-Shimura s'est dramatiquement liée au « dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ». En 1984, Gerhard Frey a montré que si l'on suppose qu'il existe un contre-exemple $a^n + b^n = c^n$ au dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/), une courbe elliptique étrange (courbe de Frey) pourrait être construite à partir de celui-ci.
 
 $$
 y^2 = x(x - a^n)(x + b^n)
 $$
 
-Frey a émis la conjecture que parce que cette courbe a des propriétés extraordinairement anormales, elle **ne peut pas être modulaire** (ce qui signifie qu'elle ne satisfait pas la conjecture de Taniyama-Shimura). Si cela était vrai, cela signifierait que « si la conjecture de Taniyama-Shimura est prouvée, le dernier théorème de Fermat est également prouvé ».
+Frey a émis la conjecture que parce que cette courbe a des propriétés extraordinairement anormales, elle **ne peut pas être modulaire** (ce qui signifie qu'elle ne satisfait pas la conjecture de Taniyama-Shimura). Si cela était vrai, cela signifierait que « si la conjecture de Taniyama-Shimura est prouvée, le dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est également prouvé ».
 
-En 1986, Ken Ribet a complètement prouvé la conjecture de Frey (la conjecture epsilon). Avec cela, le dernier théorème de Fermat, non résolu pendant 350 ans, a été complètement réduit au problème de prouver la conjecture de Taniyama-Shimura.
+En 1986, Ken Ribet a complètement prouvé la conjecture de Frey (la conjecture epsilon). Avec cela, le dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/), non résolu pendant 350 ans, a été complètement réduit au problème de prouver la conjecture de Taniyama-Shimura.
 
 ### 5.2 La preuve par [Andrew Wiles](https://kenji.blog/fr/p/wiles/)
 
 Celui qui s'est levé en apprenant cette nouvelle était le mathématicien britannique **[Andrew Wiles](https://kenji.blog/fr/p/wiles/)**. Après sept ans de recherches secrètes, il a annoncé une preuve de la conjecture de Taniyama-Shimura pour les courbes elliptiques semi-stables en 1993. En cours de route, il y a eu une crise lorsqu'une faille critique a été trouvée dans la preuve, mais avec l'aide de son ancien étudiant Richard Taylor, elle a été complètement corrigée en 1994.
 
-La preuve de Wiles d'une partie de la conjecture de Taniyama-Shimura signifiait une preuve complète du dernier théorème de Fermat. Ce fut l'un des plus grands drames de l'histoire des mathématiques.
+La preuve de Wiles d'une partie de la conjecture de Taniyama-Shimura signifiait une preuve complète du dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/). Ce fut l'un des plus grands drames de l'histoire des mathématiques.
 
 ### 5.3 La réaction de Shimura : « Je vous l'avais dit »
 
@@ -119,13 +119,13 @@ Bien que souvent éclipsé par la conjecture de Taniyama-Shimura, ce qui consoli
 
 ### 6.1 Théorie de la multiplication complexe en dimension supérieure
 
-Le mathématicien du XIXe siècle Kronecker a montré que toutes les extensions abéliennes d'un corps quadratique imaginaire peuvent être construites en utilisant les points de division des courbes elliptiques à multiplication complexe (le Jugendtraum de Kronecker). Shimura a entrepris un vaste projet pour généraliser cela aux variétés abéliennes de dimension supérieure.
+Le mathématicien du XIXe siècle [Kronecker](https://kenji.blog/fr/p/kronecker/) a montré que toutes les extensions abéliennes d'un corps quadratique imaginaire peuvent être construites en utilisant les points de division des courbes elliptiques à multiplication complexe (le Jugendtraum de [Kronecker](https://kenji.blog/fr/p/kronecker/)). Shimura a entrepris un vaste projet pour généraliser cela aux variétés abéliennes de dimension supérieure.
 
 Il a construit des objets géométriques massifs qui sont des analogues en dimension supérieure des courbes modulaires, en utilisant des groupes algébriques réductifs et des domaines symétriques hermitiens. Ce sont les « variétés de Shimura ». Les variétés de Shimura possèdent des structures extrêmement riches où se croisent la théorie des nombres, la géométrie algébrique et la théorie des représentations.
 
 ### 6.2 La position des variétés de Shimura dans les mathématiques modernes
 
-Aujourd'hui, les variétés de Shimura jouent un rôle central dans le « programme de Langlands » proposé par Robert Langlands. Dans ce vaste programme qui relie les représentations des groupes de Galois aux représentations automorphes, les variétés de Shimura sont la scène indispensable pour réaliser géométriquement cette correspondance. La clairvoyance de Shimura est également prouvée par le fait que la théorie qu'il a construite est devenue le fondement du développement des mathématiques des décennies plus tard.
+Aujourd'hui, les variétés de Shimura jouent un rôle central dans le « programme de Langlands » proposé par Robert Langlands. Dans ce vaste programme qui relie les représentations des groupes de [Galois](https://kenji.blog/fr/p/galois/) aux représentations automorphes, les variétés de Shimura sont la scène indispensable pour réaliser géométriquement cette correspondance. La clairvoyance de Shimura est également prouvée par le fait que la théorie qu'il a construite est devenue le fondement du développement des mathématiques des décennies plus tard.
 
 ## 7. Le vrai visage d'un mathématicien solitaire : Sa philosophie et son esthétique
 

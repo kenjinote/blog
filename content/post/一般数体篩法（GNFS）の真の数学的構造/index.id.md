@@ -57,7 +57,7 @@ Di dunia medan aljabar seperti $\mathbb{Z}[\alpha]$, **"keunikan faktorisasi pri
 
 Jika faktorisasi prima tidak unik, teka-teki "menghitung bilangan prima hingga jumlahnya genap" (metode saringan) pada prinsipnya tidak dapat dijalankan.
 
-### Keselamatan dari Kummer dan Dedekind: "Ideal"
+### Keselamatan dari [Kummer](https://kenji.blog/id/p/kummer/) dan Dedekind: "Ideal"
 Keruntuhan ini diselamatkan oleh konsep **"Ideal" (Bilangan Ideal)** yang diciptakan oleh matematikawan abad ke-19.
 Alih-alih melihat elemen itu sendiri, dengan mempertimbangkan "himpunan kelipatan (ideal)" yang dihasilkan oleh elemen tersebut, faktorisasi prima menjadi mungkin kembali.
 
@@ -120,7 +120,7 @@ Kecuali unit $u$ ini sendiri adalah kuadrat dari sesuatu (elemen kuadrat), sisi 
 Rintangan grup kelas ideal dan rintangan grup unit. Bagaimana kita mengatasi keduanya?
 Di sinilah muncul metode jenius yang disebut **"Karakter Kuadratik" (Quadratic Characters)**, yang diperkenalkan oleh kriptografer Leonard Adleman (huruf "A" di RSA) dan rekan-rekannya.
 
-Untuk menentukan apakah "suatu elemen benar-benar kuadrat sempurna di medan aljabar", kita menggunakan versi medan aljabar dari simbol Legendre (residu kuadrat).
+Untuk menentukan apakah "suatu elemen benar-benar kuadrat sempurna di medan aljabar", kita menggunakan versi medan aljabar dari simbol [Legendre](https://kenji.blog/id/p/legendre/) (residu kuadrat).
 Pada matriks raksasa tadi (teka-teki untuk membuat jumlah ideal prima genap), kita secara diam-diam menambahkan beberapa lusin kondisi tambahan (kolom) yang menyatakan bahwa **"karakter kuadratik untuk beberapa ideal prima khusus $\mathfrak{q}$ juga semuanya menjadi $1$ (genap)"**.
 
 Ketika kita menemukan himpunan $S$ yang memenuhi kondisi tambahan ini melalui perhitungan matriks, sebuah teorema mendalam dari teori bilangan aljabar menjamin bahwa **"baik rintangan grup kelas ideal maupun rintangan grup unit secara alami akan hilang dengan probabilitas yang sangat tinggi"**.

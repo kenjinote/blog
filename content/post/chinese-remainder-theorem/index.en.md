@@ -219,7 +219,7 @@ $$
 
 One of the most important applications of this generalized theorem is the **[Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/)** in the univariate polynomial ring $F[x]$ over a field $F$.
 
-"Coprime integers" in the integer case correspond to "polynomials without common roots (whose greatest common divisor is a constant)" in the polynomial ring. This polynomial version of CRT provides the theoretical backing for Lagrange interpolation, perfectly matching the algorithm to uniquely determine a polynomial of minimum degree passing through a given set of points. Additionally, this forms the mathematical foundation of **Reed-Solomon codes**, a type of error-correcting code.
+"Coprime integers" in the integer case correspond to "polynomials without common roots (whose greatest common divisor is a constant)" in the polynomial ring. This polynomial version of CRT provides the theoretical backing for [Lagrange](https://kenji.blog/en/p/lagrange/) interpolation, perfectly matching the algorithm to uniquely determine a polynomial of minimum degree passing through a given set of points. Additionally, this forms the mathematical foundation of **Reed-Solomon codes**, a type of error-correcting code.
 
 ## Massively Parallel Computing using Residue Number System (RNS)
 

@@ -83,7 +83,7 @@ To prove these profound conjectures, [Alexander Grothendieck](https://kenji.blog
 
 Weil's contributions were not limited to proposing conjectures. He refined the theories of **"adeles"** and **"ideles"** , which have become essential languages in modern number theory. This completed a powerful framework in number theory that connects the local to the global.
 
-Furthermore, he introduced the **"Weil group"** , an extension of the concept of the Galois group, which played an extremely important role in unifying local and global class field theory. These concepts continue to be actively researched today as the foundation of the "Langlands program," a massive unsolved problem in modern mathematics. Moreover, mathematical objects bearing his name are too numerous to mention, including the "Weil pairing" used in elliptic curve cryptography and the "Weil-Petersson metric" in the geometry of moduli spaces.
+Furthermore, he introduced the **"Weil group"** , an extension of the concept of the [Galois](https://kenji.blog/en/p/galois/) group, which played an extremely important role in unifying local and global class field theory. These concepts continue to be actively researched today as the foundation of the "Langlands program," a massive unsolved problem in modern mathematics. Moreover, mathematical objects bearing his name are too numerous to mention, including the "Weil pairing" used in elliptic curve cryptography and the "Weil-Petersson metric" in the geometry of moduli spaces.
 
 ## 8. Later Life and Mathematical Legacy
 

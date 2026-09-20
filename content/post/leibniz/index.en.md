@@ -99,7 +99,7 @@ In solving systems of linear equations, Leibniz independently arrived at the con
 
 ### 2.5 The Invention of the Stepped Reckoner
 
-Leibniz was not only a theoretical mathematician but also a practical inventor who carved his name into the history of mechanical calculators. He improved upon [Blaise Pascal](https://kenji.blog/en/p/pascal/)'s calculator (the Pascaline), which could only perform addition and subtraction, and invented a calculator using the "Leibniz wheel" (the Stepped Reckoner) capable of multiplication and division.
+Leibniz was not only a theoretical mathematician but also a practical inventor who carved his name into the history of mechanical calculators. He improved upon [Blaise Pascal](https://kenji.blog/en/p/pascal/)'s calculator (the [Pascal](https://kenji.blog/en/p/pascal/)ine), which could only perform addition and subtraction, and invented a calculator using the "Leibniz wheel" (the Stepped Reckoner) capable of multiplication and division.
 
 This mechanism was revolutionary and continued to be adopted as the standard structure for mechanical calculators over the next several hundred years.
 

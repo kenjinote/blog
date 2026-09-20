@@ -30,13 +30,13 @@ $$ (x - ky)(x + ky) = 1 $$
 
 Puisque $x$, $y$ et $k$ sont tous des entiers, $(x - ky)$ et $(x + ky)$ doivent également être des entiers. Les seules combinaisons d'entiers dont le produit est 1 sont $(1, 1)$ ou $(-1, -1)$. Résoudre ce système donne $y = 0$, ce qui signifie que les solutions se limitent aux très simples $(x, y) = (\pm 1, 0)$. Par conséquent, dans l'équation de Pell, la condition que $n$ ne soit pas un carré parfait est une prémisse essentielle pour trouver des solutions significatives.
 
-## 2. Contexte historique : Pell, Fermat et les mathématiciens indiens de l'Antiquité
+## 2. Contexte historique : Pell, [Fermat](https://kenji.blog/fr/p/fermat/) et les mathématiciens indiens de l'Antiquité
 
 Bien que cette équation porte le nom de « Pell », l'exploration des faits historiques révèle un contexte quelque peu étrange. En fait, la première personne dans l'Europe moderne à avoir étudié une solution générale pour cette équation et affirmé fermement qu'une solution existe toujours fut le grand mathématicien français **[Pierre de Fermat](https://kenji.blog/fr/p/fermat/)**.
 
 Plus tard, **[Leonhard Euler](https://kenji.blog/fr/p/euler/)** a lié par erreur le nom du mathématicien anglais **John Pell** à cette équation, et elle est depuis largement connue sous le nom d'« équation de Pell ». Pell lui-même n'a pas joué de rôle central dans la méthode de résolution de cette équation.
 
-En remontant plus loin dans le temps, les mathématiciens indiens **Brahmagupta** et **Bhāskara II** ont calculé des solutions à des équations de ce type à l'aide d'un algorithme sophistiqué appelé méthode Chakravala, des centaines d'années avant Fermat. L'histoire de l'exploration par les mathématiciens de l'Antiquité, en passant par le Moyen Âge jusqu'à l'ère moderne, est inscrite dans cette équation.
+En remontant plus loin dans le temps, les mathématiciens indiens **Brahmagupta** et **Bhāskara II** ont calculé des solutions à des équations de ce type à l'aide d'un algorithme sophistiqué appelé méthode Chakravala, des centaines d'années avant [Fermat](https://kenji.blog/fr/p/fermat/). L'histoire de l'exploration par les mathématiciens de l'Antiquité, en passant par le Moyen Âge jusqu'à l'ère moderne, est inscrite dans cette équation.
 
 ## 3. La différence entre les solutions triviales et non triviales
 
@@ -207,4 +207,4 @@ Les solutions de l'équation de Pell correspondent étroitement aux **unités** 
 
 Dans cet article, nous avons exploré en détail l'une des équations diophantiennes les plus fascinantes, **l'équation de Pell**, de ses fondements à ses applications. Nous avons expliqué le fait surprenant qu'il existe toujours une infinité de solutions non triviales pour tout $n$ non carré, un algorithme efficace pour rechercher des solutions utilisant des développements en fractions continues, et le dynamisme de la synthèse de nouvelles solutions l'une après l'autre à partir de la solution fondamentale générée en utilisant des matrices.
 
-Le fait que des problèmes classiques considérés par Fermat et Brahmagupta il y a des centaines d'années puissent être magnifiquement implémentés sous forme d'algorithmes informatiques modernes, et se connecter davantage à la théorie algébrique des nombres avancée, évoque une romance mathématique profonde et intemporelle. Nous espérons que vous saisirez cette occasion d'utiliser le code Python pour explorer le monde de l'équation de Pell pour diverses valeurs de $n$ et toucher aux propriétés profondes des nombres.
+Le fait que des problèmes classiques considérés par [Fermat](https://kenji.blog/fr/p/fermat/) et Brahmagupta il y a des centaines d'années puissent être magnifiquement implémentés sous forme d'algorithmes informatiques modernes, et se connecter davantage à la théorie algébrique des nombres avancée, évoque une romance mathématique profonde et intemporelle. Nous espérons que vous saisirez cette occasion d'utiliser le code Python pour explorer le monde de l'équation de Pell pour diverses valeurs de $n$ et toucher aux propriétés profondes des nombres.

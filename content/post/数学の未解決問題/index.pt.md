@@ -39,11 +39,11 @@ Por exemplo,
 
 O problema em si é muito simples, mas ainda não foi provado.
 
-## Hipótese de Riemann
+## Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/)
 
-A hipótese de Riemann é a conjectura de que os zeros da função zeta de Riemann estão restritos a números pares negativos e números complexos com parte real igual a 1/2.
+A hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) é a conjectura de que os zeros da função zeta de [Riemann](https://kenji.blog/pt/p/riemann/) estão restritos a números pares negativos e números complexos com parte real igual a 1/2.
 
-A função zeta de Riemann é, quando $s$ é um número complexo e $n$ é um número natural,
+A função zeta de [Riemann](https://kenji.blog/pt/p/riemann/) é, quando $s$ é um número complexo e $n$ é um número natural,
 
 $$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$
 

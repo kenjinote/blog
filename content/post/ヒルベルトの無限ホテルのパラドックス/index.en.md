@@ -18,7 +18,7 @@ tags:
 
 The great German mathematician [David Hilbert](https://kenji.blog/en/p/hilbert/) devised an interesting thought experiment to illustrate how far the concept of "infinity" is from human intuition.
 
-Imagine that somewhere in the universe, there is a hotel called **"Hilbert's Grand Hotel."**
+Imagine that somewhere in the universe, there is a hotel called **"[Hilbert](https://kenji.blog/en/p/hilbert/)'s Grand Hotel."**
 This hotel has an **infinite number** of rooms, numbered 1, 2, 3, and so on.
 
 One day, there was a massive event in the universe, and every single room in this infinite hotel was occupied, making it **"fully booked."**
@@ -156,7 +156,7 @@ In this way, the manager brilliantly managed to accommodate a staggering number 
 
 ## 5. Infinite Sets Have Different "Sizes" (Cantor's Theorem)
 
-What Hilbert's Grand Hotel teaches us is the fact that **"countably infinite (infinity that can be counted by assigning numbers like 1, 2, 3...)", no matter how many times it is added together or multiplied, will ultimately fit within the same size of "countably infinite" framework.**
+What [Hilbert](https://kenji.blog/en/p/hilbert/)'s Grand Hotel teaches us is the fact that **"countably infinite (infinity that can be counted by assigning numbers like 1, 2, 3...)", no matter how many times it is added together or multiplied, will ultimately fit within the same size of "countably infinite" framework.**
 
 However, the mathematician [Georg Cantor](https://kenji.blog/en/p/cantor/) discovered an even more terrifying truth.
 "Natural numbers" and "fractions" can all be accommodated in this infinite hotel. But **if guests of "real numbers (all decimals, including irrational numbers)" arrive, even this infinite hotel will absolutely not be able to accommodate all of them.**
@@ -168,7 +168,7 @@ Although often lumped together under the word "infinity," there actually exists 
 
 ## 6. Conclusion: The "Infinity" That Destroys Human Intuition
 
-Hilbert's Grand Hotel vividly illustrates how the "common sense of the finite" cultivated in our daily lives simply does not apply in the "world of infinity."
+[Hilbert](https://kenji.blog/en/p/hilbert/)'s Grand Hotel vividly illustrates how the "common sense of the finite" cultivated in our daily lives simply does not apply in the "world of infinity."
 
 "The whole is greater than the part"
 "No one can enter a fully booked hotel"
@@ -177,6 +177,6 @@ Hilbert's Grand Hotel vividly illustrates how the "common sense of the finite" c
 All these obvious intuitions are brilliantly betrayed.
 The world of infinity is a treasure trove of paradoxes (truths that contradict intuition). Mathematicians did not fear these paradoxes; instead, they subdued them with the power of logic, classified them, and built the beautiful system of modern set theory.
 
-The next time you are turned away because "the hotel is fully booked," try to imagine, "What if this hotel were Hilbert's Grand Hotel?"
+The next time you are turned away because "the hotel is fully booked," try to imagine, "What if this hotel were [Hilbert](https://kenji.blog/en/p/hilbert/)'s Grand Hotel?"
 
 

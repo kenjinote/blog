@@ -56,9 +56,9 @@ $$ E(\mathbb{Q}) \cong E(\mathbb{Q})_{\text{tors}} \oplus \mathbb{Z}^r $$
 
 ここで、$E(\mathbb{Q})_{\text{tors}}$ は有限個の点からなる **ねじれ部分群** (torsion subgroup) であり、$r$ は非負の整数で **ランク** (rank) と呼ばれます。
 
-この定理は、楕円曲線の有理点を無限に見つけるためには、有限個の「基底」となる点を見つければ十分であることを意味しており、数論幾何学における金字塔とも言える結果です。[モーデル](https://kenji.blog/p/mordell/)の証明は、フェルマーの「無限降下法」 (Method of infinite descent) を現代的に洗練させたものでした。
+この定理は、楕円曲線の有理点を無限に見つけるためには、有限個の「基底」となる点を見つければ十分であることを意味しており、数論幾何学における金字塔とも言える結果です。[モーデル](https://kenji.blog/p/mordell/)の証明は、[フェルマー](https://kenji.blog/p/fermat/)の「無限降下法」 (Method of infinite descent) を現代的に洗練させたものでした。
 
-その後、1928年にフランスの数学者アンドレ・[ヴェイユ](https://kenji.blog/p/weil/) ([André Weil](https://kenji.blog/p/weil/)) がこの定理を一般の代数体およびアーベル多様体に拡張したため、現在では **[モーデル](https://kenji.blog/p/mordell/)・[ヴェイユ](https://kenji.blog/p/weil/)の定理** (Mordell-Weil Theorem) と呼ばれることも多いです。
+その後、1928年にフランスの数学者アンドレ・[ヴェイユ](https://kenji.blog/p/weil/) ([André Weil](https://kenji.blog/p/weil/)) がこの定理を一般の代数体および[アーベル](https://kenji.blog/p/abel/)多様体に拡張したため、現在では **[モーデル](https://kenji.blog/p/mordell/)・[ヴェイユ](https://kenji.blog/p/weil/)の定理** (Mordell-Weil Theorem) と呼ばれることも多いです。
 
 ```mermaid
 graph TD
@@ -85,7 +85,7 @@ $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
 この予想は60年以上もの間、未解決のままでした。しかし1983年、ドイツの数学者[ゲルト・ファルティングス](https://kenji.blog/p/faltings/) ([Gerd Faltings](https://kenji.blog/p/faltings/)) によってついに証明され、**[ファルティングス](https://kenji.blog/p/faltings/)の定理** (Faltings's Theorem) となりました。この業績により、[ファルティングス](https://kenji.blog/p/faltings/)は1986年にフィールズ賞を受賞しました。
 
-また、[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)の方程式 $x^n + y^n = z^n$ は、$n \ge 4$ のとき種数が 3 以上になるため、[モーデル](https://kenji.blog/p/mordell/)予想（[ファルティングス](https://kenji.blog/p/faltings/)の定理）から、フェルマー方程式の有理数解は各 $n$ に対して高々有限個しか存在しないことが直ちに導かれます。
+また、[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)の方程式 $x^n + y^n = z^n$ は、$n \ge 4$ のとき種数が 3 以上になるため、[モーデル](https://kenji.blog/p/mordell/)予想（[ファルティングス](https://kenji.blog/p/faltings/)の定理）から、[フェルマー](https://kenji.blog/p/fermat/)方程式の有理数解は各 $n$ に対して高々有限個しか存在しないことが直ちに導かれます。
 
 ## 7. [ラマヌジャン](https://kenji.blog/p/ramanujan/)との関わりとモジュラー形式
 

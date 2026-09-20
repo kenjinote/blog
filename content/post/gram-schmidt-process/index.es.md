@@ -190,7 +190,7 @@ Ahora, apliquemos el proceso de ortogonalización de Gram-Schmidt a la base poli
 * Calculando $\mathbf{u}_1(x) = x - \text{proj}_{\mathbf{u}_0}(x)$, dado que $\langle x, 1 \rangle = \int_{-1}^{1} x dx = 0$, tenemos $\mathbf{u}_1(x) = x$.
 * Calculando $\mathbf{u}_2(x) = x^2 - \text{proj}_{\mathbf{u}_0}(x^2) - \text{proj}_{\mathbf{u}_1}(x^2)$ da como resultado $\mathbf{u}_2(x) = x^2 - \frac{1}{3}$.
 
-La secuencia de polinomios ortogonales generada de esta manera se llama **polinomios de Legendre**, y desempeñan un papel sumamente importante en el electromagnetismo y la mecánica cuántica en física, así como en la integración numérica (cuadratura gaussiana). Es un hermoso ejemplo donde un algoritmo algebraico deriva de forma natural descripciones de leyes físicas profundas.
+La secuencia de polinomios ortogonales generada de esta manera se llama **polinomios de [Legendre](https://kenji.blog/es/p/legendre/)**, y desempeñan un papel sumamente importante en el electromagnetismo y la mecánica cuántica en física, así como en la integración numérica (cuadratura gaussiana). Es un hermoso ejemplo donde un algoritmo algebraico deriva de forma natural descripciones de leyes físicas profundas.
 
 ## 8. Aplicación Avanzada 2: Descomposición QR y Ciencia de Datos
 

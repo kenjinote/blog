@@ -42,7 +42,7 @@ La historia de la evolución de los algoritmos de factorización de enteros ha s
 
 ## 3. Visión general del algoritmo GNFS (Criba General del Cuerpo de Números) y su estructura matemática
 
-GNFS tiene una base matemática sumamente compleja y avanzada. La idea básica se encuentra en la extensión del pequeño teorema de Fermat y la criba cuadrática (QS), y consiste en encontrar un par no trivial $(X, Y)$ que satisfaga la congruencia $X^2 \equiv Y^2 \pmod n$ y que $X \not\equiv \pm Y \pmod n$, para luego derivar un factor $\gcd(X-Y, n)$ de $n$.
+GNFS tiene una base matemática sumamente compleja y avanzada. La idea básica se encuentra en la extensión del pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/) y la criba cuadrática (QS), y consiste en encontrar un par no trivial $(X, Y)$ que satisfaga la congruencia $X^2 \equiv Y^2 \pmod n$ y que $X \not\equiv \pm Y \pmod n$, para luego derivar un factor $\gcd(X-Y, n)$ de $n$.
 
 Sin embargo, la esencia de GNFS es que no realiza esto solo en el cuerpo de los números racionales $\mathbb{Q}$, sino que busca simultáneamente "números suaves (Smooth numbers)" tanto en un cuerpo de extensión llamado cuerpo de números algebraicos (Algebraic Number Field) $\mathbb{Q}(\alpha)$ como en el cuerpo de los números racionales, y construye la relación de congruencia a través de un homomorfismo.
 

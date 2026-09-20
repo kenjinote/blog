@@ -138,7 +138,7 @@ $$f(x_2) - f(x_1) = f'(c)(x_2 - x_1)$$
 
 像这样，我们在高中数学中理所当然地使用的“导数为正即递增，为负即递减”的增减表原理，全都是由这个 **中值定理** 所保证的。
 
-## 5. 柯西中值定理 (Cauchy's Mean Value Theorem)
+## 5. 柯西中值定理 ([Cauchy](https://kenji.blog/zh-cn/p/cauchy/)'s Mean Value Theorem)
 
 将中值定理扩展到两个函数的情况，就是柯西中值定理。
 

@@ -73,7 +73,7 @@ Geometrically, this means that for any smooth curve where the starting and endin
 
 ## 4. Mean Value Theorem
 
-The Mean Value Theorem (Lagrange's Mean Value Theorem) can be considered the central pillar supporting the entirety of calculus.
+The Mean Value Theorem ([Lagrange](https://kenji.blog/en/p/lagrange/)'s Mean Value Theorem) can be considered the central pillar supporting the entirety of calculus.
 
 ### Statement of the Theorem
 
@@ -138,11 +138,11 @@ This corollary can be proven in exactly the same way. When $x_1 < x_2$, since $f
 
 In this way, the principles of sign charts that we use naturally in high school mathematics ("if the derivative is positive it increases, if negative it decreases") are all guaranteed by this **Mean Value Theorem**.
 
-## 5. Cauchy's Mean Value Theorem
+## 5. [Cauchy](https://kenji.blog/en/p/cauchy/)'s Mean Value Theorem
 
-Cauchy's Mean Value Theorem is an extension of the Mean Value Theorem to two functions.
+[Cauchy](https://kenji.blog/en/p/cauchy/)'s Mean Value Theorem is an extension of the Mean Value Theorem to two functions.
 
-> **Theorem (Cauchy's Mean Value Theorem)**
+> **Theorem ([Cauchy](https://kenji.blog/en/p/cauchy/)'s Mean Value Theorem)**
 > Suppose two functions $f(x)$ and $g(x)$ are continuous on the closed interval $[a, b]$ and differentiable on the open interval $(a, b)$, and that $g'(x) \neq 0$ for all $x \in (a, b)$. Then, there exists $c \in (a, b)$ such that:
 > $$\frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f'(c)}{g'(c)}$$
 

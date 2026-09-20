@@ -92,8 +92,8 @@ Eiffel é uma linguagem de programação orientada a objetos.
 ## Ada
 Ada é uma linguagem de programação orientada a objetos.
 
-## Pascal
-Pascal é uma linguagem de programação procedural.
+## [Pascal](https://kenji.blog/pt/p/pascal/)
+[Pascal](https://kenji.blog/pt/p/pascal/) é uma linguagem de programação procedural.
 
 ## COBOL
 Existe há muito tempo. É uma linguagem de programação de uso geral.

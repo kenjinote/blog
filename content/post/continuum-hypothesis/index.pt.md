@@ -39,7 +39,7 @@ $$ |\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| $$
 
 Cantor passou toda a sua vida tentando provar essa hipótese, mas nunca obteve sucesso. Às vezes, ele acreditava ter "provado" e, outras vezes, acreditava ter "refutado"; seu estado mental foi muito desgastado por esse problema difícil.
 
-Em 1900, no Segundo Congresso Internacional de Matemáticos, realizado em Paris, [David Hilbert](https://kenji.blog/pt/p/hilbert/) propôs os "23 Problemas de Hilbert" que a matemática do século XX deveria resolver. Aquele memorável **primeiro problema** era exatamente "A prova da Hipótese do Contínuo".
+Em 1900, no Segundo Congresso Internacional de Matemáticos, realizado em Paris, [David Hilbert](https://kenji.blog/pt/p/hilbert/) propôs os "23 Problemas de [Hilbert](https://kenji.blog/pt/p/hilbert/)" que a matemática do século XX deveria resolver. Aquele memorável **primeiro problema** era exatamente "A prova da Hipótese do Contínuo".
 
 ## 4. Axiomatização da Teoria dos Conjuntos: O Sistema de Axiomas ZFC
 

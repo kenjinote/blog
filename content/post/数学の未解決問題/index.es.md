@@ -52,11 +52,11 @@ Por ejemplo,
 
 Aunque el problema en sí es muy simple, todavía no ha sido demostrado.
 
-## Hipótesis de Riemann
+## Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/)
 
-Es la conjetura de que los ceros de la función zeta de Riemann se limitan a números pares negativos y a números complejos cuya parte real es 1/2.
+Es la conjetura de que los ceros de la función zeta de [Riemann](https://kenji.blog/es/p/riemann/) se limitan a números pares negativos y a números complejos cuya parte real es 1/2.
 
-La función zeta de Riemann es una función $\zeta$ definida como:
+La función zeta de [Riemann](https://kenji.blog/es/p/riemann/) es una función $\zeta$ definida como:
 
 $$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$
 

@@ -17,17 +17,17 @@ Neste artigo, explicaremos em profundidade este teorema chocante, que afirma que
 
 ---
 
-## 1. O Pano de Fundo: O Programa de Hilbert e a Crise da Matemática
+## 1. O Pano de Fundo: O Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/) e a Crise da Matemática
 
 Entre o final do século XIX e o início do século XX, o mundo da matemática enfrentou "paradoxos da teoria dos conjuntos (como o Paradoxo de Russell)", abalando os seus próprios fundamentos. Foi [David Hilbert](https://kenji.blog/pt/p/hilbert/), a maior autoridade da matemática na altura, quem se levantou para salvar esta "crise da matemática".
 
-Hilbert tentou simbolizar completamente todos os raciocínios matemáticos e reconstruir a matemática baseando-se apenas em regras mecânicas. O "Programa de Hilbert" que ele propôs tinha como objetivo provar três propriedades dentro do Sistema Formal (Formal System) da matemática:
+[Hilbert](https://kenji.blog/pt/p/hilbert/) tentou simbolizar completamente todos os raciocínios matemáticos e reconstruir a matemática baseando-se apenas em regras mecânicas. O "Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/)" que ele propôs tinha como objetivo provar três propriedades dentro do Sistema Formal (Formal System) da matemática:
 
 1. **Consistência** (Consistency): Não deve existir nenhuma contradição dentro do sistema (ou seja, uma proposição $P$ e a sua negação $\neg P$ não podem ser ambas provadas simultaneamente).
 2. **Completude** (Completeness): Qualquer proposição matemática pode ser invariavelmente provada dentro do sistema, quer como verdadeira, quer como falsa.
 3. **Decidibilidade** (Decidability): Dada uma proposição qualquer, existe um procedimento mecânico para determinar se ela é demonstrável ou não.
 
-Hilbert proferiu a famosa frase: "Temos de saber, nós saberemos (Wir müssen wissen. Wir werden wissen.)", e não tinha a menor dúvida de que a matemática se tornaria num castelo lógico perfeito capaz de resolver tudo.
+[Hilbert](https://kenji.blog/pt/p/hilbert/) proferiu a famosa frase: "Temos de saber, nós saberemos (Wir müssen wissen. Wir werden wissen.)", e não tinha a menor dúvida de que a matemática se tornaria num castelo lógico perfeito capaz de resolver tudo.
 
 ```mermaid
 graph TD
@@ -47,11 +47,11 @@ O alvo do teorema de Gödel são os sistemas que incluem "adição e multiplica�
 
 Por exemplo, até mesmo o facto que todos conhecem, "$1 + 1 = 2$", nada mais é do que um "teorema" mecanicamente derivado da manipulação de símbolos dentro do sistema formal que é a Aritmética de Peano.
 
-Hilbert acreditava que, ao expandir esses sistemas formais, um dia se conseguiria englobar todas as verdades matemáticas.
+[Hilbert](https://kenji.blog/pt/p/hilbert/) acreditava que, ao expandir esses sistemas formais, um dia se conseguiria englobar todas as verdades matemáticas.
 
 ## 3. O Choque do Primeiro Teorema da Incompletude: Proposições "Verdadeiras, mas Improváveis"
 
-Porém, em 1931, [Kurt Gödel](https://kenji.blog/pt/p/godel/), então com apenas 25 anos, publicou um artigo que esmagou o sonho de Hilbert em pedaços. Foi o **Primeiro Teorema da Incompletude**.
+Porém, em 1931, [Kurt Gödel](https://kenji.blog/pt/p/godel/), então com apenas 25 anos, publicou um artigo que esmagou o sonho de [Hilbert](https://kenji.blog/pt/p/hilbert/) em pedaços. Foi o **Primeiro Teorema da Incompletude**.
 
 > **Primeiro Teorema da Incompletude**
 > Em qualquer sistema formal consistente que inclua a Aritmética de Peano, existe sempre pelo menos uma proposição que é verdadeira, mas que não pode ser provada dentro desse sistema.
@@ -114,7 +114,7 @@ O Primeiro Teorema da Incompletude, por si só, abalou a comunidade matemática,
 > **Segundo Teorema da Incompletude**
 > Um sistema formal consistente que inclua a Aritmética de Peano não pode provar a sua própria consistência dentro de si mesmo.
 
-Hilbert tentou provar que a matemática era consistente usando o próprio poder da matemática (o desafio mais importante do Programa de Hilbert). Contudo, o Segundo Teorema da Incompletude declarou que "nenhum sistema pode provar, pelo seu próprio poder, que não é falho (que não tem contradições)".
+[Hilbert](https://kenji.blog/pt/p/hilbert/) tentou provar que a matemática era consistente usando o próprio poder da matemática (o desafio mais importante do Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/)). Contudo, o Segundo Teorema da Incompletude declarou que "nenhum sistema pode provar, pelo seu próprio poder, que não é falho (que não tem contradições)".
 
 Para compreender isto intuitivamente, pensemos da seguinte forma:
 Se uma pessoa afirmar: "Eu nunca minto!". No entanto, não podemos basear-nos apenas nas palavras dessa pessoa para provar que "esta pessoa não é mentirosa". Pois, se essa pessoa for de facto mentirosa, a própria afirmação "Eu nunca minto!" pode ser uma mentira.

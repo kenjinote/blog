@@ -15,15 +15,15 @@ tags:
 
 ## 1. Introducción
 
-En el campo de las matemáticas conocido como análisis complejo, uno de los teoremas más hermosos y poderosos es el **Teorema integral de Cauchy**. Este teorema afirma lo que a primera vista parece ser un hecho sumamente sorprendente: "Integrar una función compleja que satisface ciertas condiciones a lo largo de un contorno cerrado siempre dará exactamente cero."
+En el campo de las matemáticas conocido como análisis complejo, uno de los teoremas más hermosos y poderosos es el **Teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/)**. Este teorema afirma lo que a primera vista parece ser un hecho sumamente sorprendente: "Integrar una función compleja que satisface ciertas condiciones a lo largo de un contorno cerrado siempre dará exactamente cero."
 
 Por la experiencia de aprender la integración de funciones reales, naturalmente se piensa que la integración representa un "área" o "acumulación a lo largo de un camino", por lo que si se integra sobre una larga distancia a lo largo de un camino, parece natural que quede algún valor. Sin embargo, en el plano complejo, cuando una función posee la propiedad especial de ser **holomorfa**, surge una simetría asombrosa en la que el resultado de la integración se vuelve completamente independiente del camino recorrido, omitiendo las diferencias en las trayectorias.
 
-En este artículo, explicaremos el teorema integral de Cauchy con gran detalle, comenzando por las definiciones fundamentales del plano complejo y las funciones holomorfas, pasando por el significado intuitivo del teorema, su interpretación física y un esbozo de su prueba clásica utilizando el teorema de Green. Además, mencionaremos cómo este teorema se conecta con temas más avanzados del análisis complejo, como la fórmula integral de Cauchy y el Teorema del Residuo. Apreciemos la profunda belleza de este teorema tanto desde la perspectiva del rigor matemático como desde una imaginería intuitiva.
+En este artículo, explicaremos el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) con gran detalle, comenzando por las definiciones fundamentales del plano complejo y las funciones holomorfas, pasando por el significado intuitivo del teorema, su interpretación física y un esbozo de su prueba clásica utilizando el teorema de Green. Además, mencionaremos cómo este teorema se conecta con temas más avanzados del análisis complejo, como la fórmula integral de [Cauchy](https://kenji.blog/es/p/cauchy/) y el Teorema del Residuo. Apreciemos la profunda belleza de este teorema tanto desde la perspectiva del rigor matemático como desde una imaginería intuitiva.
 
 ## 2. Fundamentos del Plano Complejo y las Funciones Holomorfas
 
-Para comprender profundamente el teorema integral de Cauchy, primero debemos consolidar nuestra comprensión de los conceptos básicos del plano complejo y la diferenciación de funciones complejas. La comprensión aquí forma una base importante para las pruebas e interpretaciones de los teoremas que siguen.
+Para comprender profundamente el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/), primero debemos consolidar nuestra comprensión de los conceptos básicos del plano complejo y la diferenciación de funciones complejas. La comprensión aquí forma una base importante para las pruebas e interpretaciones de los teoremas que siguen.
 
 ### Funciones en el Plano Complejo
 
@@ -35,7 +35,7 @@ $$
 
 Por ejemplo, para la función $f(z) = z^2$, sustituyendo $z = x + iy$ y expandiendo obtenemos $z^2 = (x + iy)^2 = x^2 - y^2 + 2ixy$. Así, en este caso, podemos ver que está compuesta por las funciones de valor real $u(x, y) = x^2 - y^2$ y $v(x, y) = 2xy$.
 
-### Diferenciación Compleja y las Ecuaciones de Cauchy-Riemann
+### Diferenciación Compleja y las Ecuaciones de [Cauchy](https://kenji.blog/es/p/cauchy/)-[Riemann](https://kenji.blog/es/p/riemann/)
 
 Se dice que una función compleja $f(z)$ es **diferenciable** en un punto $z_0$ si el siguiente límite existe:
 
@@ -45,17 +45,17 @@ $$
 
 Lo que es extremadamente importante aquí es que este límite debe converger exactamente al mismo valor sin importar "desde qué dirección" $\Delta z$ se acerque a cero en el plano complejo. En el mundo de los números reales, solo había dos formas: acercarse desde la derecha o desde la izquierda, pero en el plano complejo, hay infinitas formas de acercarse. Debido a esta estricta condición, se derivan propiedades que son mucho más fuertes que las de la diferenciación de funciones reales.
 
-Cuando una función $f(z)$ es diferenciable en todos los puntos dentro de un cierto dominio, se dice que la función es **holomorfa** en ese dominio. Se sabe que una condición necesaria y suficiente para ser holomorfa es que la parte real $u$ y la parte imaginaria $v$ satisfagan las siguientes ecuaciones diferenciales parciales. A estas se les llama **Ecuaciones de Cauchy-Riemann**.
+Cuando una función $f(z)$ es diferenciable en todos los puntos dentro de un cierto dominio, se dice que la función es **holomorfa** en ese dominio. Se sabe que una condición necesaria y suficiente para ser holomorfa es que la parte real $u$ y la parte imaginaria $v$ satisfagan las siguientes ecuaciones diferenciales parciales. A estas se les llama **Ecuaciones de [Cauchy](https://kenji.blog/es/p/cauchy/)-[Riemann](https://kenji.blog/es/p/riemann/)**.
 
 $$
 \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
 $$
 
-Además, si $u$ y $v$ tienen derivadas parciales continuas, el cumplimiento de estas ecuaciones es equivalente a que $f(z)$ sea holomorfa. Estas ecuaciones relacionales, que poseen una hermosa simetría, juegan un papel crucial en la prueba del teorema integral de Cauchy que se describirá más adelante.
+Además, si $u$ y $v$ tienen derivadas parciales continuas, el cumplimiento de estas ecuaciones es equivalente a que $f(z)$ sea holomorfa. Estas ecuaciones relacionales, que poseen una hermosa simetría, juegan un papel crucial en la prueba del teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) que se describirá más adelante.
 
 ## 3. Definición y Propiedades de la Integración Compleja
 
-A continuación, definimos la integración de línea en el plano complejo. Dado que el teorema integral de Cauchy es un teorema sobre la integración a lo largo de una "curva" en el plano complejo, es esencial aclarar la definición de esta integración.
+A continuación, definimos la integración de línea en el plano complejo. Dado que el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) es un teorema sobre la integración a lo largo de una "curva" en el plano complejo, es esencial aclarar la definición de esta integración.
 
 Supongamos que una curva suave $C$ en el plano complejo está parametrizada usando una variable real $t \in [a, b]$ como $z(t) = x(t) + i y(t)$. La integral de línea de la función compleja $f(z)$ a lo largo de esta curva $C$ se define de la siguiente manera:
 
@@ -73,11 +73,11 @@ La integración compleja posee propiedades fundamentales similares a la integrac
 
 Estas propiedades, aunque parezcan obvias, se convierten en herramientas muy poderosas cuando más tarde avanzamos en nuestros argumentos deformando de diversas maneras las trayectorias.
 
-## 4. Formulación del Teorema Integral de Cauchy
+## 4. Formulación del Teorema Integral de [Cauchy](https://kenji.blog/es/p/cauchy/)
 
-Una vez completados los preparativos, finalmente establecemos la formulación exacta del tema principal, el teorema integral de Cauchy.
+Una vez completados los preparativos, finalmente establecemos la formulación exacta del tema principal, el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/).
 
-**Teorema (Teorema Integral de Cauchy)**
+**Teorema (Teorema Integral de [Cauchy](https://kenji.blog/es/p/cauchy/))**
 Para una función compleja $f(z)$ que es holomorfa en un dominio simplemente conexo $D$, y para cualquier contorno cerrado simple $C$ dentro de $D$, se cumple la siguiente igualdad.
 
 $$
@@ -114,13 +114,13 @@ Note el lado derecho de esta ecuación. Han aparecido dos integrales reales, y t
 
 Considerado en el contexto de la física (especialmente en dinámica de fluidos o electromagnetismo), la integral de línea de un campo vectorial a lo largo de un contorno cerrado representa la "circulación" de ese campo. Si un campo vectorial es tanto "irrotacional" como "incompresible", entonces no importa a lo largo de qué curva cerrada calcule la circulación, el resultado será cero.
 
-Recuerde las ecuaciones de Cauchy-Riemann que aprendimos antes: $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$. Esta es exactamente la condición que garantiza que los campos vectoriales $\vec{F}_1$ y $\vec{F}_2$ sean "irrotacionales". De manera similar, la otra ecuación $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ garantiza que sean "incompresibles".
+Recuerde las ecuaciones de [Cauchy](https://kenji.blog/es/p/cauchy/)-[Riemann](https://kenji.blog/es/p/riemann/) que aprendimos antes: $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$. Esta es exactamente la condición que garantiza que los campos vectoriales $\vec{F}_1$ y $\vec{F}_2$ sean "irrotacionales". De manera similar, la otra ecuación $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ garantiza que sean "incompresibles".
 
-En otras palabras, la condición de ser una función holomorfa significa formar campos vectoriales que se comportan muy "bien" (sin vórtices, sin fuentes o sumideros) desde una perspectiva física, y como resultado, la integral sobre un bucle cerrado se vuelve necesariamente cero. Este es el significado físico e intuitivo detrás del teorema integral de Cauchy.
+En otras palabras, la condición de ser una función holomorfa significa formar campos vectoriales que se comportan muy "bien" (sin vórtices, sin fuentes o sumideros) desde una perspectiva física, y como resultado, la integral sobre un bucle cerrado se vuelve necesariamente cero. Este es el significado físico e intuitivo detrás del teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/).
 
 ## 6. Esbozo de una Prueba Rigurosa Usando el Teorema de Green
 
-Aquí, como una prueba clásica e intuitiva del teorema integral de Cauchy, introducimos un método que utiliza el **Teorema de Green** del cálculo. (Nota: Esta prueba asume que las derivadas parciales son continuas, es decir, $f'(z)$ es continua).
+Aquí, como una prueba clásica e intuitiva del teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/), introducimos un método que utiliza el **Teorema de Green** del cálculo. (Nota: Esta prueba asume que las derivadas parciales son continuas, es decir, $f'(z)$ es continua).
 
 El teorema de Green es un poderoso teorema que convierte una integral de línea a lo largo de una curva cerrada en un plano en una integral doble sobre el dominio $D'$ encerrado por esa curva.
 
@@ -135,7 +135,7 @@ $$
 \oint_C (u dx - v dy) = \iint_{D'} \left( \frac{\partial (-v)}{\partial x} - \frac{\partial u}{\partial y} \right) dx dy
 $$
 
-Ahora, sustituimos la ecuación de Cauchy-Riemann $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$, que es una propiedad de las funciones holomorfas. Entonces, el integrando se vuelve el siguiente:
+Ahora, sustituimos la ecuación de [Cauchy](https://kenji.blog/es/p/cauchy/)-[Riemann](https://kenji.blog/es/p/riemann/) $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$, que es una propiedad de las funciones holomorfas. Entonces, el integrando se vuelve el siguiente:
 
 $$
 -\frac{\partial v}{\partial x} - \left( -\frac{\partial v}{\partial x} \right) = 0
@@ -149,7 +149,7 @@ $$
 \oint_C (v dx + u dy) = \iint_{D'} \left( \frac{\partial u}{\partial x} - \frac{\partial v}{\partial y} \right) dx dy
 $$
 
-Nuevamente, sustituyendo la otra ecuación de Cauchy-Riemann $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$, el integrando se convierte en $\frac{\partial v}{\partial y} - \frac{\partial v}{\partial y} = 0$, y la integral de la parte imaginaria también se vuelve cero.
+Nuevamente, sustituyendo la otra ecuación de [Cauchy](https://kenji.blog/es/p/cauchy/)-[Riemann](https://kenji.blog/es/p/riemann/) $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$, el integrando se convierte en $\frac{\partial v}{\partial y} - \frac{\partial v}{\partial y} = 0$, y la integral de la parte imaginaria también se vuelve cero.
 
 En conclusión, dado que tanto la parte real como la imaginaria se vuelven cero, se cumple lo siguiente:
 
@@ -157,19 +157,19 @@ $$
 \oint_C f(z) dz = 0 + i0 = 0
 $$
 
-Este es el esqueleto de la prueba para el teorema integral de Cauchy. Podemos ver que al engranarse bellamente las ecuaciones de Cauchy-Riemann y el teorema de Green, la prueba se puede lograr de una manera sorprendentemente simple.
+Este es el esqueleto de la prueba para el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/). Podemos ver que al engranarse bellamente las ecuaciones de [Cauchy](https://kenji.blog/es/p/cauchy/)-[Riemann](https://kenji.blog/es/p/riemann/) y el teorema de Green, la prueba se puede lograr de una manera sorprendentemente simple.
 
 ## 7. Teorema de Goursat: Eliminando la Suposición de Diferenciabilidad Continua
 
-La prueba que usa el teorema de Green anterior es muy fácil de entender e intuitiva, pero matemáticamente tiene una debilidad. Esa es, que usa implícitamente la suposición de que "$f'(z)$ es continua" (es decir, la suposición de que las derivadas parciales de $u, v$ son continuas). La prueba inicial de Cauchy también se basó en esta suposición.
+La prueba que usa el teorema de Green anterior es muy fácil de entender e intuitiva, pero matemáticamente tiene una debilidad. Esa es, que usa implícitamente la suposición de que "$f'(z)$ es continua" (es decir, la suposición de que las derivadas parciales de $u, v$ son continuas). La prueba inicial de [Cauchy](https://kenji.blog/es/p/cauchy/) también se basó en esta suposición.
 
-Sin embargo, a fines del siglo XIX, el matemático francés Édouard Goursat demostró que esta suposición de continuidad es en realidad innecesaria. Es decir, demostró que el teorema integral de Cauchy se cumple simplemente porque la función es "diferenciable (holomorfa) en cada punto".
+Sin embargo, a fines del siglo XIX, el matemático francés Édouard Goursat demostró que esta suposición de continuidad es en realidad innecesaria. Es decir, demostró que el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) se cumple simplemente porque la función es "diferenciable (holomorfa) en cada punto".
 
-La prueba de Goursat emplea un ingenioso método para dividir el dominio en pequeños triángulos y usar la prueba por contradicción para derivar una contradicción (el método de triangulación). En los libros de texto modernos de análisis complejo, este resultado se introduce generalmente como el "teorema de Cauchy-Goursat". Este resultado destacó una vez más que la condición de ser "compleja diferenciable incluso una vez" es una restricción mucho más fuerte (que resulta en ser infinitamente diferenciable) de lo que uno podría comparar con el caso de las funciones reales.
+La prueba de Goursat emplea un ingenioso método para dividir el dominio en pequeños triángulos y usar la prueba por contradicción para derivar una contradicción (el método de triangulación). En los libros de texto modernos de análisis complejo, este resultado se introduce generalmente como el "teorema de [Cauchy](https://kenji.blog/es/p/cauchy/)-Goursat". Este resultado destacó una vez más que la condición de ser "compleja diferenciable incluso una vez" es una restricción mucho más fuerte (que resulta en ser infinitamente diferenciable) de lo que uno podría comparar con el caso de las funciones reales.
 
 ## 8. Deformación de Trayectorias e Independencia de la Trayectoria
 
-Una de las consecuencias extremadamente importantes del teorema integral de Cauchy es la **independencia de la trayectoria de las integrales**.
+Una de las consecuencias extremadamente importantes del teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) es la **independencia de la trayectoria de las integrales**.
 
 Supongamos que hay dos puntos $A$ y $B$ dentro de un dominio simplemente conexo $D$, y hay dos caminos diferentes $C_1$ y $C_2$ conectándolos. En este momento, si la función $f(z)$ es holomorfa dentro de $D$, se cumple lo siguiente:
 
@@ -177,7 +177,7 @@ $$
 \int_{C_1} f(z) dz = \int_{C_2} f(z) dz
 $$
 
-La prueba es muy simple. Considere un camino que va a $B$ a través de $C_1$, y regresa a $A$ a través del camino inverso $-C_2$. Esto forma una sola curva cerrada $C = C_1 + (-C_2)$. Por el teorema integral de Cauchy, la integral a lo largo de esta curva cerrada es cero.
+La prueba es muy simple. Considere un camino que va a $B$ a través de $C_1$, y regresa a $A$ a través del camino inverso $-C_2$. Esto forma una sola curva cerrada $C = C_1 + (-C_2)$. Por el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/), la integral a lo largo de esta curva cerrada es cero.
 
 $$
 \oint_C f(z) dz = \int_{C_1} f(z) dz + \int_{-C_2} f(z) dz = \int_{C_1} f(z) dz - \int_{C_2} f(z) dz = 0
@@ -187,13 +187,13 @@ Transponiendo esto, obtenemos $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
 
 Debido a esta propiedad, la integración de una función holomorfa no depende de "qué ruta se tomó", sino que está determinada "solo por los puntos de inicio y final". Esto hace posible definir unívocamente una antiderivada (integral indefinida) $F(z)$ incluso en el plano complejo (salvo una constante de integración), garantizando que el "Teorema Fundamental del Cálculo" para funciones reales también se cumpla maravillosamente en el plano complejo.
 
-## 9. Aplicación: Fórmula Integral de Cauchy y Extensión a Dominios Múltiplemente Conexos
+## 9. Aplicación: Fórmula Integral de [Cauchy](https://kenji.blog/es/p/cauchy/) y Extensión a Dominios Múltiplemente Conexos
 
-El teorema integral de Cauchy es un teorema hermoso por sí solo, pero sirve como una poderosa base para derivar sucesivamente otros teoremas importantes en el análisis complejo.
+El teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) es un teorema hermoso por sí solo, pero sirve como una poderosa base para derivar sucesivamente otros teoremas importantes en el análisis complejo.
 
-### Fórmula Integral de Cauchy
+### Fórmula Integral de [Cauchy](https://kenji.blog/es/p/cauchy/)
 
-La consecuencia más directa y de más amplia aplicación del teorema es la **fórmula integral de Cauchy**. Cuando una función $f(z)$ es holomorfa en un dominio $D$, para una curva cerrada simple $C$ dentro de $D$ y cualquier punto $a$ dentro de ella, se cumple lo siguiente:
+La consecuencia más directa y de más amplia aplicación del teorema es la **fórmula integral de [Cauchy](https://kenji.blog/es/p/cauchy/)**. Cuando una función $f(z)$ es holomorfa en un dominio $D$, para una curva cerrada simple $C$ dentro de $D$ y cualquier punto $a$ dentro de ella, se cumple lo siguiente:
 
 $$
 f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - a} dz
@@ -203,14 +203,14 @@ Esta fórmula muestra la asombrosa rigidez de las funciones holomorfas: "Siempre
 
 ### Dominios Múltiplemente Conexos y el Teorema del Residuo
 
-Si el dominio tiene "agujeros" y no es simplemente conexo (dominio múltiplemente conexo), el teorema integral de Cauchy no se puede aplicar tal cual. Por ejemplo, la función $f(z) = 1/z$ no está definida en el origen $z=0$ y no es holomorfa allí. Si integramos a lo largo del círculo unitario que encierra el origen, el resultado no es cero, sino el valor $2\pi i$.
+Si el dominio tiene "agujeros" y no es simplemente conexo (dominio múltiplemente conexo), el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) no se puede aplicar tal cual. Por ejemplo, la función $f(z) = 1/z$ no está definida en el origen $z=0$ y no es holomorfa allí. Si integramos a lo largo del círculo unitario que encierra el origen, el resultado no es cero, sino el valor $2\pi i$.
 
-Sin embargo, al aplicar ingeniosamente el teorema integral de Cauchy y deformar el camino de integración, se estableció un método sistemático para evaluar integrales alrededor de agujeros. Esto conduce al **Teorema del Residuo**, una de las herramientas más prácticas en el análisis complejo moderno. Mediante el uso del Teorema del Residuo, las integrales definidas complejas e integrales infinitas de funciones reales pueden ser reemplazadas de forma brillante por cálculos algebraicos en el plano complejo y resueltas.
+Sin embargo, al aplicar ingeniosamente el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) y deformar el camino de integración, se estableció un método sistemático para evaluar integrales alrededor de agujeros. Esto conduce al **Teorema del Residuo**, una de las herramientas más prácticas en el análisis complejo moderno. Mediante el uso del Teorema del Residuo, las integrales definidas complejas e integrales infinitas de funciones reales pueden ser reemplazadas de forma brillante por cálculos algebraicos en el plano complejo y resueltas.
 
 ## 10. Conclusión
 
-A primera vista, el teorema integral de Cauchy puede parecer un modesto teorema que simplemente dice "la integral se vuelve cero". Sin embargo, oculto detrás de él hay una profunda y hermosa simetría provocada por la condición aparentemente simple de la "holomorfia" de las funciones complejas.
+A primera vista, el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) puede parecer un modesto teorema que simplemente dice "la integral se vuelve cero". Sin embargo, oculto detrás de él hay una profunda y hermosa simetría provocada por la condición aparentemente simple de la "holomorfia" de las funciones complejas.
 
-A partir de este teorema, se derivan sucesivamente logros gloriosos del análisis complejo como la fórmula integral de Cauchy, la prueba de que una función es infinitamente diferenciable (garantizando las expansiones de Taylor y las expansiones de Laurent), y el Teorema del Residuo. Realmente se puede decir que el teorema integral de Cauchy es la base más sólida y hermosa que soporta el magnífico edificio matemático del análisis complejo desde sus raíces.
+A partir de este teorema, se derivan sucesivamente logros gloriosos del análisis complejo como la fórmula integral de [Cauchy](https://kenji.blog/es/p/cauchy/), la prueba de que una función es infinitamente diferenciable (garantizando las expansiones de Taylor y las expansiones de Laurent), y el Teorema del Residuo. Realmente se puede decir que el teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/) es la base más sólida y hermosa que soporta el magnífico edificio matemático del análisis complejo desde sus raíces.
 
 Alentamos a los lectores a tomar papel y lápiz y trazar la prueba usando el teorema de Green con sus propias manos. Seguramente deberían poder sentir el mundo bellamente armonioso del plano complejo que se extiende detrás de las fórmulas matemáticas.

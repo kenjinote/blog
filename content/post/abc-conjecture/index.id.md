@@ -47,7 +47,7 @@ Gambar di atas secara sederhana menunjukkan konsep transmisi informasi antara se
 
 ### Frobenioid dan Teater Hodge
 
-Konsep-konsep penting yang menyusun Teori IUT meliputi **Frobenioid** (Frobenioid) dan **Teater Hodge** (Hodge Theater). Ini adalah mekanisme untuk menyandikan informasi teoretis bilangan secara geometris melalui tindakan grup Galois absolut dan grup fundamental dari lapangan bilangan.
+Konsep-konsep penting yang menyusun Teori IUT meliputi **Frobenioid** (Frobenioid) dan **Teater Hodge** (Hodge Theater). Ini adalah mekanisme untuk menyandikan informasi teoretis bilangan secara geometris melalui tindakan grup [Galois](https://kenji.blog/id/p/galois/) absolut dan grup fundamental dari lapangan bilangan.
 
 $$ \Theta \text{-link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
 

@@ -31,13 +31,13 @@ Im Jahr 1915 trat Hasse als Teenager in die Kaiserliche Marine ein und diente au
 
 Nach Kriegsende 1918 schrieb sich Hasse offiziell an der Universität Göttingen ein. Damals war Göttingen das weltweite Zentrum der Mathematik und die Heimat von Giganten wie [David Hilbert](https://kenji.blog/de/p/hilbert/), Edmund Landau und [Emmy Noether](https://kenji.blog/de/p/noether/). Dort kam Hasse mit der modernsten Mathematik in Berührung, wodurch seine Talente weiter aufblühen konnten.
 
-Später wechselte Hasse an die Universität Marburg, wo er eine schicksalhafte Begegnung mit **[Kurt Hensel](https://kenji.blog/de/p/hensel/)** hatte, der sein lebenslanger Mentor werden sollte. Hensel war der Entdecker eines völlig neuen Zahlensystems: der p-adischen Zahlen. Während viele Mathematiker zu dieser Zeit p-adische Zahlen lediglich als mathematische Kuriosität betrachteten, erkannte Hasse sofort das immense Potenzial dieses neuen Konzepts und verfeinerte es zu einer mächtigen Waffe für seine eigene Forschung.
+Später wechselte Hasse an die Universität Marburg, wo er eine schicksalhafte Begegnung mit **[Kurt Hensel](https://kenji.blog/de/p/hensel/)** hatte, der sein lebenslanger Mentor werden sollte. [Hensel](https://kenji.blog/de/p/hensel/) war der Entdecker eines völlig neuen Zahlensystems: der p-adischen Zahlen. Während viele Mathematiker zu dieser Zeit p-adische Zahlen lediglich als mathematische Kuriosität betrachteten, erkannte Hasse sofort das immense Potenzial dieses neuen Konzepts und verfeinerte es zu einer mächtigen Waffe für seine eigene Forschung.
 
 ## 4. Was sind p-adische Zahlen: Ein neues Zahlensystem
 
 Um Hasses Errungenschaften zu verstehen, kommt man am Konzept der p-adischen Zahlen nicht vorbei. Die reellen Zahlen, die wir täglich verwenden, entstehen durch die Vervollständigung der rationalen Zahlen (Brüche) basierend auf dem Konzept der "Größe (Absolutbetrag)" – ein Prozess der Grenzwertbildung, um Lücken zu schließen.
 
-Hensel führte jedoch ein völlig anderes Konzept von "Abstand" ein. Wenn man eine Primzahl $p$ fixiert, werden zwei rationale Zahlen als "nah" definiert, wenn ihre Differenz oft durch $p$ teilbar ist. Vervollständigt man die rationalen Zahlen basierend auf diesem seltsamen Abstand, erhält man den Körper der p-adischen Zahlen $\mathbb{Q}_p$. In der Welt der p-adischen Zahlen können unendliche Reihen, die in der reellen Welt divergieren würden, konvergieren, was es ermöglicht, Kongruenzprobleme mit analytischen Methoden zu behandeln.
+[Hensel](https://kenji.blog/de/p/hensel/) führte jedoch ein völlig anderes Konzept von "Abstand" ein. Wenn man eine Primzahl $p$ fixiert, werden zwei rationale Zahlen als "nah" definiert, wenn ihre Differenz oft durch $p$ teilbar ist. Vervollständigt man die rationalen Zahlen basierend auf diesem seltsamen Abstand, erhält man den Körper der p-adischen Zahlen $\mathbb{Q}_p$. In der Welt der p-adischen Zahlen können unendliche Reihen, die in der reellen Welt divergieren würden, konvergieren, was es ermöglicht, Kongruenzprobleme mit analytischen Methoden zu behandeln.
 
 ## 5. Etablierung des Lokal-Global-Prinzips
 
@@ -83,7 +83,7 @@ Auf diese Weise war Hasse außergewöhnlich geschickt darin, abstrakte Konzepte 
 
 ## 8. Satz von Hasse-Weil: Rationale Punkte auf elliptischen Kurven
 
-Ein weiterer äußerst wichtiger Beitrag von Hasse ist der **Satz von Hasse über elliptische Kurven** über endlichen Körpern. Dies war ein bahnbrechendes Ergebnis, das als der erste Schritt zu einem "Analogon der Riemannschen Vermutung" für algebraische Varietäten über endlichen Körpern gilt.
+Ein weiterer äußerst wichtiger Beitrag von Hasse ist der **Satz von Hasse über elliptische Kurven** über endlichen Körpern. Dies war ein bahnbrechendes Ergebnis, das als der erste Schritt zu einem "Analogon der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung" für algebraische Varietäten über endlichen Körpern gilt.
 
 Sei $N$ die Anzahl der rationalen Punkte auf einer elliptischen Kurve $E$, die über einem endlichen Körper $\mathbb{F}_q$ (einem Körper mit $q$ Elementen) definiert ist. Hasse bewies, dass die Anzahl der rationalen Punkte $N$ nahe bei $q + 1$ (der Anzahl der Punkte auf der projektiven Geraden) liegt und der Fehler wie folgt beschränkt ist:
 
@@ -95,7 +95,7 @@ Diese wunderschöne Ungleichung wurde später von seinem eigenen Schüler [Andr�
 
 ## 9. Beitrag zur Klassenkörpertheorie: Lokale Klassenkörpertheorie und Artin-Reziprozität
 
-Wenn man über Hasses Errungenschaften spricht, ist sein massiver Beitrag zur **Klassenkörpertheorie** unverzichtbar. Die Klassenkörpertheorie ist eine Theorie, die versucht, die abelschen Erweiterungen (Erweiterungen, bei denen die Galoisgruppe kommutativ ist) eines algebraischen Zahlkörpers (einer endlichen Erweiterung der rationalen Zahlen) vollständig mithilfe interner Informationen des Grundkörpers selbst zu beschreiben.
+Wenn man über Hasses Errungenschaften spricht, ist sein massiver Beitrag zur **Klassenkörpertheorie** unverzichtbar. Die Klassenkörpertheorie ist eine Theorie, die versucht, die abelschen Erweiterungen (Erweiterungen, bei denen die [Galois](https://kenji.blog/de/p/galois/)gruppe kommutativ ist) eines algebraischen Zahlkörpers (einer endlichen Erweiterung der rationalen Zahlen) vollständig mithilfe interner Informationen des Grundkörpers selbst zu beschreiben.
 
 Beim Beweis des von Emil Artin vorgeschlagenen "Reziprozitätsgesetzes" spielte Hasse eine überaus wichtige Rolle. Durch den Einsatz analytischer Methoden und der Theorie der p-adischen Zahlen gab Hasse Artin entscheidende Ratschläge und trug so maßgeblich zur Vollendung des Beweises bei. Hasse selbst spielte auch eine zentrale Rolle bei der Entwicklung der lokalen Klassenkörpertheorie, indem er die globale Klassenkörpertheorie aus der Perspektive der lokalen Körper rekonstruierte.
 

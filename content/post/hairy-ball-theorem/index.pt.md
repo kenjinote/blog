@@ -68,7 +68,7 @@ $$
 
 Para um sólido que é homeomorfo (topologicamente o mesmo) a uma esfera, a característica de Euler é sempre $\chi = 2$.
 
-De acordo com o Teorema de Poincaré-Hopf (Poincaré-Hopf Theorem), a soma dos índices das singularidades (pontos onde o vetor se torna zero) de um campo vetorial em uma variedade é igual à característica de Euler dessa variedade.
+De acordo com o Teorema de [Poincaré](https://kenji.blog/pt/p/poincare/)-Hopf ([Poincaré](https://kenji.blog/pt/p/poincare/)-Hopf Theorem), a soma dos índices das singularidades (pontos onde o vetor se torna zero) de um campo vetorial em uma variedade é igual à característica de Euler dessa variedade.
 
 Expressando em fórmula matemática,
 $$
@@ -84,7 +84,7 @@ Aqui surge uma questão interessante. E se não fosse uma bola, mas sim uma form
 
 Na verdade, a característica de Euler de um toro é $\chi(T^2) = 0$.
 
-Portanto, no Teorema de Poincaré-Hopf, o lado direito torna-se 0. Isso significa que é **possível** criar um campo vetorial contínuo que não possui nenhuma singularidade.
+Portanto, no Teorema de [Poincaré](https://kenji.blog/pt/p/poincare/)-Hopf, o lado direito torna-se 0. Isso significa que é **possível** criar um campo vetorial contínuo que não possui nenhuma singularidade.
 
 De modo intuitivo, se fosse uma bola de pelos com formato de rosquinha, poderíamos pentear os pelos suavemente na mesma direção ao redor do buraco da rosquinha, sem criar nenhum redemoinho.
 

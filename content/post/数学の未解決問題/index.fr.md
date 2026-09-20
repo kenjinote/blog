@@ -39,10 +39,10 @@ Par exemple,
 
 Le problème en lui-même est très simple, mais il n'a toujours pas été prouvé.
 
-## Hypothèse de Riemann
+## Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)
 
-L'hypothèse de Riemann est la conjecture selon laquelle les zéros de la fonction zêta de Riemann sont limités aux entiers pairs négatifs et aux nombres complexes dont la partie réelle est 1/2.
+L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est la conjecture selon laquelle les zéros de la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) sont limités aux entiers pairs négatifs et aux nombres complexes dont la partie réelle est 1/2.
 
-La fonction zêta de Riemann est la fonction $\zeta$ définie, pour $s$ un nombre complexe et $n$ un entier naturel, par :
+La fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) est la fonction $\zeta$ définie, pour $s$ un nombre complexe et $n$ un entier naturel, par :
 
 $$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$

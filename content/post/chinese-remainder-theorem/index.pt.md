@@ -219,7 +219,7 @@ $$
 
 Uma das aplicações mais importantes deste teorema generalizado é o **Teorema Chinês do Resto** no anel de polinómios de uma variável $F[x]$ sobre o corpo $F$.
 
-"Inteiros coprimos" no caso dos números inteiros correspondem a "polinómios sem raízes comuns (o máximo divisor comum polinomial é constante)" no anel de polinómios. Esta versão polinomial do CRT é o suporte teórico da interpolação de Lagrange, e é completamente equivalente ao algoritmo que determina exclusivamente um polinómio do menor grau possível que passa por múltiplos pontos dados. Sendo também a base matemática para o **Código de Reed-Solomon**, que é um tipo de código corretor de erros.
+"Inteiros coprimos" no caso dos números inteiros correspondem a "polinómios sem raízes comuns (o máximo divisor comum polinomial é constante)" no anel de polinómios. Esta versão polinomial do CRT é o suporte teórico da interpolação de [Lagrange](https://kenji.blog/pt/p/lagrange/), e é completamente equivalente ao algoritmo que determina exclusivamente um polinómio do menor grau possível que passa por múltiplos pontos dados. Sendo também a base matemática para o **Código de Reed-Solomon**, que é um tipo de código corretor de erros.
 
 ## Computação Massivamente Paralela Baseada no Sistema de Resíduos Numéricos (RNS)
 

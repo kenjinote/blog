@@ -41,7 +41,7 @@ Como a tabela acima mostra, para obter uma força de segurança de 128 bits (o p
 
 Para entender verdadeiramente a criptografia de curva elíptica, é necessário compreender os conceitos básicos de álgebra abstrata (teoria dos grupos e teoria dos corpos). Aqui, resumiremos os conhecimentos prévios para construir a ECC.
 
-### 2.1. Grupos (Group) e Grupos Abelianos
+### 2.1. Grupos (Group) e Grupos [Abel](https://kenji.blog/pt/p/abel/)ianos
 Um **Grupo (Group)** é um conjunto de um dado conjunto $G$ com uma operação binária nesse conjunto (aqui será a adição $+$), $(G, +)$, que satisfaz os 4 axiomas a seguir.
 
 1. **Fechamento (Closure)**: Para quaisquer $a, b \in G$, $a + b \in G$.
@@ -49,14 +49,14 @@ Um **Grupo (Group)** é um conjunto de um dado conjunto $G$ com uma operação b
 3. **Existência do Elemento Neutro (Identity element)**: Existe um elemento $e \in G$ tal que para qualquer $a \in G$, $a + e = e + a = a$. No caso de grupos aditivos, este elemento neutro é normalmente denotado como $0$ ou $\mathcal{O}$.
 4. **Existência do Elemento Inverso (Inverse element)**: Para qualquer $a \in G$, existe um elemento $b \in G$ tal que $a + b = b + a = e$. Esse $b$ é denotado como $-a$.
 
-Além disso, um grupo que não altera o resultado mesmo mudando a ordem da operação, ou seja, que satisfaz a seguinte condição, é chamado de **Grupo Abeliano (Grupo Comutativo)**.
+Além disso, um grupo que não altera o resultado mesmo mudando a ordem da operação, ou seja, que satisfaz a seguinte condição, é chamado de **Grupo [Abel](https://kenji.blog/pt/p/abel/)iano (Grupo Comutativo)**.
 
 5. **Comutatividade (Commutativity)**: Para quaisquer $a, b \in G$, $a + b = b + a$ é válido.
 
 O conjunto de pontos em uma curva elíptica forma este **grupo abeliano** pela definição de uma regra de adição específica.
 
 ### 2.2. Corpos Finitos (Finite Field)
-Na teoria criptográfica, em vez de corpos contínuos com infinitos elementos como os números reais ou complexos, usamos **Corpos Finitos (Finite Field)** ou Corpos de Galois, onde o número de elementos é finito.
+Na teoria criptográfica, em vez de corpos contínuos com infinitos elementos como os números reais ou complexos, usamos **Corpos Finitos (Finite Field)** ou Corpos de [Galois](https://kenji.blog/pt/p/galois/), onde o número de elementos é finito.
 
 O corpo finito mais básico é o **corpo primo $\mathbb{F}_p$** que usa o número primo $p$. Ele é a definição das quatro operações aritméticas (adição, subtração, multiplicação e divisão) em módulo $p$ (resto da divisão por $p$) no conjunto de inteiros $\{0, 1, 2, \dots, p-1\}$.
 
@@ -68,7 +68,7 @@ O corpo finito mais básico é o **corpo primo $\mathbb{F}_p$** que usa o númer
 O cálculo do **Inverso Multiplicativo Modular (Modular Multiplicative Inverse)** é extremamente importante nas implementações criptográficas. Para encontrar o $b^{-1}$ que satisfaz $b \times b^{-1} \equiv 1 \pmod p$, são utilizados principalmente os 2 algoritmos a seguir.
 
 1. **Algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) Estendido (Extended [[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: Rápido, mas dependendo da implementação, o tempo de processamento depende do valor de entrada, o que representa um risco de ataques de tempo.
-2. **Pequeno Teorema de Fermat ([Fermat's Little Theorem](https://kenji.blog/pt/p/fermats-little-theorem/))**: Quando $p$ é um número primo e $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ é válido. Dividindo ambos os lados por $b$, obtemos $b^{p-2} \equiv b^{-1} \pmod p$. Em outras palavras, o inverso é encontrado calculando $b$ elevado a $p-2$. A operação de exponenciação é fácil de implementar em tempo constante, por isso é a preferida em implementações criptográficas.
+2. **Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/pt/p/fermats-little-theorem/))**: Quando $p$ é um número primo e $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ é válido. Dividindo ambos os lados por $b$, obtemos $b^{p-2} \equiv b^{-1} \pmod p$. Em outras palavras, o inverso é encontrado calculando $b$ elevado a $p-2$. A operação de exponenciação é fácil de implementar em tempo constante, por isso é a preferida em implementações criptográficas.
 
 ---
 
@@ -153,7 +153,7 @@ $$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
 $$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
 
 > [!IMPORTANT]
-> Estas fórmulas contêm **divisões (cálculo do inverso modular)** como $(x_2 - x_1)^{-1}$ e $(2y_1)^{-1}$. O cálculo do inverso modular tem um custo computacional muito alto, então em implementações reais, geralmente se usa um sistema de coordenadas projetivas, como o **"Sistema de Coordenadas Jacobiano (Jacobian Coordinates)"**, que adia a divisão.
+> Estas fórmulas contêm **divisões (cálculo do inverso modular)** como $(x_2 - x_1)^{-1}$ e $(2y_1)^{-1}$. O cálculo do inverso modular tem um custo computacional muito alto, então em implementações reais, geralmente se usa um sistema de coordenadas projetivas, como o **"Sistema de Coordenadas [Jacobi](https://kenji.blog/pt/p/jacobi/)ano ([Jacobi](https://kenji.blog/pt/p/jacobi/)an Coordinates)"**, que adia a divisão.
 
 ---
 
@@ -278,7 +278,7 @@ A partir daqui, transformaremos a teoria em código C++. Bibliotecas de criptogr
 Supõe-se que será usado `boost::multiprecision::cpp_int` para operações com números inteiros enormes.
 
 ### 8.1. Aritmética Modular e Inverso
-Primeiro, vamos definir as funções auxiliares de cálculo sobre o corpo finito. Vamos implementar o cálculo do inverso com base no pequeno teorema de Fermat.
+Primeiro, vamos definir as funções auxiliares de cálculo sobre o corpo finito. Vamos implementar o cálculo do inverso com base no pequeno teorema de [Fermat](https://kenji.blog/pt/p/fermat/).
 
 ```cpp
 #include <iostream>

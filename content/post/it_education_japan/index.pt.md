@@ -142,7 +142,7 @@ Na educação em alfabetização informacional, realiza-se uma educação de seg
 
 As comunicações HTTPS e as assinaturas eletrônicas que usamos diariamente são protegidas por criptografia de chave pública, como o RSA. A segurança do RSA baseia-se na dificuldade matemática (considerada um problema NP-intermediário) que afirma que "a fatoração de números inteiros gigantes não pode ser resolvida em tempo viável por computadores clássicos atuais".
 
-As equações subjacentes à criptografia RSA são uma bela aplicação da função totiente de Euler e do pequeno teorema de Fermat.
+As equações subjacentes à criptografia RSA são uma bela aplicação da função totiente de Euler e do pequeno teorema de [Fermat](https://kenji.blog/pt/p/fermat/).
 
 1. Escolha dois primos grandes $p$ e $q$
 2. Calcule $n = p \times q$ (isto torna-se parte da chave pública)

@@ -92,7 +92,7 @@ Para além de como comer pizza, este princípio pode ser visto na engenharia, ar
 - ** Folhas de plantas **: As folhas e pétalas de muitas plantas evoluíram naturalmente formas onduladas para resistir ao vento e ao seu próprio peso.
 - ** Arquitetura **: Estruturas de casca (shell structures), edifícios que cobrem grandes espaços com materiais finos, utilizam a força mecânica e as propriedades geométricas de superfícies curvas.
 
-Este teorema descoberto por Gauss foi mais tarde expandido para variedades de alta dimensão pelo seu aluno [Bernhard Riemann](https://kenji.blog/pt/p/riemann/) (geometria Riemanniana), e tornou-se a base matemática para descrever a gravidade como a "curvatura do espaço-tempo" na teoria da relatividade geral de Albert Einstein.
+Este teorema descoberto por Gauss foi mais tarde expandido para variedades de alta dimensão pelo seu aluno [Bernhard Riemann](https://kenji.blog/pt/p/riemann/) (geometria [Riemann](https://kenji.blog/pt/p/riemann/)iana), e tornou-se a base matemática para descrever a gravidade como a "curvatura do espaço-tempo" na teoria da relatividade geral de Albert Einstein.
 
 ## 5. Conclusão
 

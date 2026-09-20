@@ -52,7 +52,7 @@ Dado un conjunto no vacío $G$ y una operación binaria $\cdot$ en él (llamada 
    $$ a \cdot a^{-1} = a^{-1} \cdot a = e $$
    se cumple.
 
-Además, un grupo en el que $a \cdot b = b \cdot a$ se cumple para cualesquiera $a, b \in G$ se llama **Grupo Conmutativo** o **Grupo Abeliano**.
+Además, un grupo en el que $a \cdot b = b \cdot a$ se cumple para cualesquiera $a, b \in G$ se llama **Grupo Conmutativo** o **Grupo [Abel](https://kenji.blog/es/p/abel/)iano**.
 
 ### 2.2. Ejemplos Concretos de Grupos
 
@@ -118,7 +118,7 @@ Un anillo conmutativo $(F, +, \cdot)$ es un **Cuerpo (Field)** si:
 
 ### 5.2. Ejemplos de Cuerpos
 
-Los números racionales $\mathbb{Q}$, reales $\mathbb{R}$ y complejos $\mathbb{C}$ son cuerpos. También existen los **Cuerpos Finitos (Galois Fields)**.
+Los números racionales $\mathbb{Q}$, reales $\mathbb{R}$ y complejos $\mathbb{C}$ son cuerpos. También existen los **Cuerpos Finitos ([Galois](https://kenji.blog/es/p/galois/) Fields)**.
 
 ---
 
@@ -143,7 +143,7 @@ flowchart TD
 
 ---
 
-## 8. Teoría de Galois
+## 8. Teoría de [Galois](https://kenji.blog/es/p/galois/)
 
 Fusionó la teoría de grupos y la teoría de cuerpos para aclarar "cuándo las ecuaciones pueden resolverse algebraicamente".
 
@@ -154,7 +154,7 @@ Fusionó la teoría de grupos y la teoría de cuerpos para aclarar "cuándo las 
 1. Criptografía y Cuerpos Finitos (RSA).
 2. Física y Teoría de Grupos (simetrías de partículas).
 3. Códigos de corrección de errores (DVD, QR).
-4. Geometría Algebraica (Teorema de Fermat).
+4. Geometría Algebraica (Teorema de [Fermat](https://kenji.blog/es/p/fermat/)).
 
 ---
 

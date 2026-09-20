@@ -17,17 +17,17 @@ En este artículo explicaremos exhaustivamente el significado y la estructura de
 
 ---
 
-## 1. El escenario: El Programa de Hilbert y la crisis de las matemáticas
+## 1. El escenario: El Programa de [Hilbert](https://kenji.blog/es/p/hilbert/) y la crisis de las matemáticas
 
 Desde finales del siglo XIX hasta principios del XX, el mundo de las matemáticas enfrentaba la "paradoja de la teoría de conjuntos" (como la paradoja de Russell) y sus bases temblaban. Quien se alzó para salvar esta "crisis de las matemáticas" fue la máxima autoridad matemática de la época, [David Hilbert](https://kenji.blog/es/p/hilbert/).
 
-Hilbert intentó simbolizar completamente todo el razonamiento matemático y reconstruir las matemáticas únicamente mediante reglas mecánicas. Lo que su propuesto "Programa de Hilbert" buscaba era demostrar las siguientes 3 propiedades dentro de un Sistema Formal (Formal System) para las matemáticas:
+[Hilbert](https://kenji.blog/es/p/hilbert/) intentó simbolizar completamente todo el razonamiento matemático y reconstruir las matemáticas únicamente mediante reglas mecánicas. Lo que su propuesto "Programa de [Hilbert](https://kenji.blog/es/p/hilbert/)" buscaba era demostrar las siguientes 3 propiedades dentro de un Sistema Formal (Formal System) para las matemáticas:
 
 1. **Consistencia** (Consistency): Que no haya contradicciones dentro del sistema (es decir, que una proposición $P$ y su negación $\neg P$ no puedan ser demostradas a la vez).
 2. **Completitud** (Completeness): Que cualquier proposición matemática pueda ser forzosamente demostrada como verdadera o falsa dentro del sistema.
 3. **Decidibilidad** (Decidability): Que dada cualquier proposición, exista un procedimiento mecánico para determinar si es demostrable o no.
 
-Hilbert creía firmemente, y dejó para la posteridad su famosa frase "Debemos saber, y sabremos" (*Wir müssen wissen. Wir werden wissen.*), que las matemáticas podrían convertirse en un castillo de lógica perfecta capaz de resolverlo todo.
+[Hilbert](https://kenji.blog/es/p/hilbert/) creía firmemente, y dejó para la posteridad su famosa frase "Debemos saber, y sabremos" (*Wir müssen wissen. Wir werden wissen.*), que las matemáticas podrían convertirse en un castillo de lógica perfecta capaz de resolverlo todo.
 
 ```mermaid
 graph TD
@@ -47,11 +47,11 @@ El objeto del teorema de Gödel son aquellos sistemas que incluyen "sumas y mult
 
 Por ejemplo, el hecho de que "$1 + 1 = 2$", que todos conocemos, dentro del sistema formal de la aritmética de Peano, no es más que un "teorema" derivado mecánicamente mediante manipulaciones simbólicas.
 
-Hilbert pensó que si expandía estos sistemas formales, algún día se abarcarían todas las verdades matemáticas.
+[Hilbert](https://kenji.blog/es/p/hilbert/) pensó que si expandía estos sistemas formales, algún día se abarcarían todas las verdades matemáticas.
 
 ## 3. El impacto del Primer Teorema de Incompletitud: Proposiciones "verdaderas pero no demostrables"
 
-Sin embargo, en 1931, [Kurt Gödel](https://kenji.blog/es/p/godel/), de solo 25 años en ese entonces, publicó un documento que hizo añicos el sueño de Hilbert. Este es el **Primer Teorema de Incompletitud**.
+Sin embargo, en 1931, [Kurt Gödel](https://kenji.blog/es/p/godel/), de solo 25 años en ese entonces, publicó un documento que hizo añicos el sueño de [Hilbert](https://kenji.blog/es/p/hilbert/). Este es el **Primer Teorema de Incompletitud**.
 
 > **Primer Teorema de Incompletitud**
 > Cualquier sistema formal consistente que incluya la aritmética de Peano, contendrá forzosamente proposiciones que, a pesar de ser verdaderas, no pueden ser demostradas dentro de ese sistema.
@@ -114,7 +114,7 @@ El Primer Teorema de Incompletitud por sí solo ya sacudió el mundo de las mate
 > **Segundo Teorema de Incompletitud**
 > Un sistema formal consistente, que incluya la aritmética de Peano, no puede demostrar su propia consistencia dentro de ese mismo sistema.
 
-Hilbert había intentado probar que las matemáticas eran consistentes utilizando el propio poder de las matemáticas (el objetivo principal del programa de Hilbert). Sin embargo, el Segundo Teorema de Incompletitud decretó que "ningún sistema puede demostrar por sí mismo que no está loco (que no tiene contradicciones)".
+[Hilbert](https://kenji.blog/es/p/hilbert/) había intentado probar que las matemáticas eran consistentes utilizando el propio poder de las matemáticas (el objetivo principal del programa de [Hilbert](https://kenji.blog/es/p/hilbert/)). Sin embargo, el Segundo Teorema de Incompletitud decretó que "ningún sistema puede demostrar por sí mismo que no está loco (que no tiene contradicciones)".
 
 Para entender esto de forma intuitiva, considerémoslo de la siguiente manera:
 Supongamos que alguien afirma: "¡Yo nunca miento!". Sin embargo, basándonos solo en las palabras de esa persona, no podemos probar que "esta persona no es un mentiroso". Porque, si esa persona fuera un mentiroso, la declaración "nunca miento" en sí misma podría ser mentira.

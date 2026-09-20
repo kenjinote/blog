@@ -59,7 +59,7 @@ timeline
 
 ### 东北论文
 
-他1957年发表在日本《东北数学杂志》上的论文“关于同调代数的某些问题（Sur quelques points d'algèbre homologique）”，是一篇融合了范畴论和同调代数、确立了 **阿贝尔范畴（Abelian Category）** 概念的历史性论文。这使得在任何拓扑空间上严格定义层的上同调成为可能。
+他1957年发表在日本《东北数学杂志》上的论文“关于同调代数的某些问题（Sur quelques points d'algèbre homologique）”，是一篇融合了范畴论和同调代数、确立了 **阿贝尔范畴（[Abel](https://kenji.blog/zh-cn/p/abel/)ian Category）** 概念的历史性论文。这使得在任何拓扑空间上严格定义层的上同调成为可能。
 
 ### IHÉS 的创立与 EGA/SGA
 

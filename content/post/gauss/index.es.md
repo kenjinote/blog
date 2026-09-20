@@ -63,7 +63,7 @@ Los antiguos matemáticos griegos abordaron el problema de construir polígonos 
 
 Sin embargo, el 30 de marzo de 1796, Gauss demostró matemáticamente que **"el heptadecágono regular (polígono de 17 lados) se puede construir utilizando solo un compás y una regla no graduada"**. Dilucidó algebraicamente las condiciones bajo las cuales las raíces de la ecuación ciclotómica se pueden expresar partiendo del cuerpo de los números racionales y añadiendo sucesivamente raíces cuadradas.
 
-Específicamente, derivó el teorema de que si $p$ es un primo de Fermat (un primo de la forma $p = 2^{2^n} + 1$), el $p$-ágono regular es construible. Cuando $n=2$, $p = 2^4 + 1 = 17$, lo que incluye el heptadecágono regular. Gauss estaba extremadamente orgulloso de este descubrimiento y, según se informa, solicitó que se grabara un heptadecágono regular en su lápida (en realidad, se talló una estrella de 17 puntas porque sería indistinguible de un círculo).
+Específicamente, derivó el teorema de que si $p$ es un primo de [Fermat](https://kenji.blog/es/p/fermat/) (un primo de la forma $p = 2^{2^n} + 1$), el $p$-ágono regular es construible. Cuando $n=2$, $p = 2^4 + 1 = 17$, lo que incluye el heptadecágono regular. Gauss estaba extremadamente orgulloso de este descubrimiento y, según se informa, solicitó que se grabara un heptadecágono regular en su lápida (en realidad, se talló una estrella de 17 puntas porque sería indistinguible de un círculo).
 
 ### Disquisitiones Arithmeticae
 
@@ -77,7 +77,7 @@ Esto significa que "los restos cuando $a$ y $b$ se dividen por $n$ son iguales".
 
 También en el mismo libro, Gauss proporcionó la primera prueba rigurosa de la **"Ley de Reciprocidad Cuadrática"**, considerada uno de los teoremas más hermosos de la teoría de números. Esta ley muestra que para dos primos impares diferentes $p, q$, existe una relación altamente simétrica entre si la congruencia $x^2 \equiv p \pmod{q}$ tiene solución y si $x^2 \equiv q \pmod{p}$ tiene solución.
 
-Expresado en fórmula matemática utilizando el símbolo de Legendre, se representa de la siguiente manera:
+Expresado en fórmula matemática utilizando el símbolo de [Legendre](https://kenji.blog/es/p/legendre/), se representa de la siguiente manera:
 
 $$
 \left( \frac{p}{q} \right) \left( \frac{q}{p} \right) = (-1)^{\frac{p-1}{2} \frac{q-1}{2}}
@@ -161,9 +161,9 @@ Más tarde, cuando Nikolai Lobachevsky y János Bolyai publicaron independientem
 
 ## 8. Últimos años y legado
 
-Gauss era un perfeccionista, con el lema **"Pocos, pero maduros"** (Pauca sed matura). Debido a que no publicaba sus artículos hasta que estaba completamente satisfecho y estaban en una forma bellamente refinada, se descubrieron cantidades masivas de notas inéditas después de su muerte, asombrando a los matemáticos posteriores. Muchas de las teorías luego descubiertas y hechas famosas por otros matemáticos, como la integración compleja (teorema integral de Cauchy), los cuaterniones y los fundamentos de la teoría de funciones elípticas, ya estaban escritas en las notas de Gauss.
+Gauss era un perfeccionista, con el lema **"Pocos, pero maduros"** (Pauca sed matura). Debido a que no publicaba sus artículos hasta que estaba completamente satisfecho y estaban en una forma bellamente refinada, se descubrieron cantidades masivas de notas inéditas después de su muerte, asombrando a los matemáticos posteriores. Muchas de las teorías luego descubiertas y hechas famosas por otros matemáticos, como la integración compleja (teorema integral de [Cauchy](https://kenji.blog/es/p/cauchy/)), los cuaterniones y los fundamentos de la teoría de funciones elípticas, ya estaban escritas en las notas de Gauss.
 
-También fue mentor de la próxima generación. Además del mencionado Riemann, grandes matemáticos de la siguiente generación como Richard Dedekind y Ferdinand Gotthold Max Eisenstein recibieron la guía de Gauss.
+También fue mentor de la próxima generación. Además del mencionado [Riemann](https://kenji.blog/es/p/riemann/), grandes matemáticos de la siguiente generación como Richard Dedekind y Ferdinand Gotthold Max Eisenstein recibieron la guía de Gauss.
 
 El 23 de febrero de 1855, [Carl Friedrich Gauss](https://kenji.blog/es/p/gauss/) falleció en Gotinga a la edad de 77 años. Su legado trasciende los límites de las matemáticas y fluye en la raíz de toda la ciencia y tecnología modernas. Desde el pensamiento abstracto puro hasta el cálculo de órbitas planetarias y hasta el fenómeno físico del electromagnetismo, la luz de su intelecto continúa brillando incluso hoy.
 

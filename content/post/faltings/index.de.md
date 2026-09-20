@@ -34,7 +34,7 @@ Die Aussage der Vermutung lautet wie folgt:
 
 > Eine algebraische Kurve über einem algebraischen Zahlkörper $K$ vom Geschlecht $g \ge 2$ hat nur endlich viele rationale Punkte über $K$.
 
-Diese Vermutung war eng mit dem Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) und dem Großen Fermatschen Satz verbunden und war ein gewaltiges Problem, an dem viele geniale Mathematiker im Laufe der Jahre gescheitert waren.
+Diese Vermutung war eng mit dem Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) und dem Großen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz verbunden und war ein gewaltiges Problem, an dem viele geniale Mathematiker im Laufe der Jahre gescheitert waren.
 
 Faltings griff dieses Problem an, indem er die gewaltige Maschinerie der algebraischen Geometrie, die von [Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/) aufgebaut worden war, wie die Schema-Theorie und die étale Kohomologie, geschickt manipulierte und außerdem einen neuen Rahmen namens Arakelov-Geometrie einführte.
 

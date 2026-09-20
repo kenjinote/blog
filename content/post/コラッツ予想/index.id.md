@@ -238,7 +238,7 @@ Ini bisa dicoba bahkan oleh pemula dalam pemrograman, jadi silakan bermain-main 
 
 Bagi kalian yang ingin mengetahui lebih banyak topik tentang "Keajaiban Matematika × Pemrograman" seperti ini,
 jangan ragu untuk meminta dengan berkata "Ajari aku lebih banyak lagi".
-Kapan-kapan, saya akan memperkenalkan tentang Dugaan Riemann, kisah bilangan prima, dan hal lainnya!
+Kapan-kapan, saya akan memperkenalkan tentang Dugaan [Riemann](https://kenji.blog/id/p/riemann/), kisah bilangan prima, dan hal lainnya!
 
 ---
 

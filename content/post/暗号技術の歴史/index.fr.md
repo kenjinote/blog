@@ -120,7 +120,7 @@ Cependant, à mesure que la puissance de calcul des ordinateurs augmentait, il e
 ## AES (Advanced Encryption Standard)
 Comme nouveau standard pour remplacer DES, « AES » a été établi en 2001. L'algorithme « Rijndael », conçu par des cryptographes belges et sélectionné par appel d'offres public, a été adopté.
 
-AES adopte une « structure SPN (Substitution-Permutation Network) » au lieu d'une structure de Feistel, et utilise des opérations mathématiques sur le corps de Galois (corps fini) $GF(2^8)$. La longueur de la clé peut être choisie parmi 128, 192 ou 256 bits, et il est encore largement utilisé dans le monde aujourd'hui comme cryptographie à clé symétrique standard.
+AES adopte une « structure SPN (Substitution-Permutation Network) » au lieu d'une structure de Feistel, et utilise des opérations mathématiques sur le corps de [Galois](https://kenji.blog/fr/p/galois/) (corps fini) $GF(2^8)$. La longueur de la clé peut être choisie parmi 128, 192 ou 256 bits, et il est encore largement utilisé dans le monde aujourd'hui comme cryptographie à clé symétrique standard.
 
 ```mermaid
 graph TD

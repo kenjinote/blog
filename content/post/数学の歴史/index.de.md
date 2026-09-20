@@ -21,7 +21,7 @@ In einer Ebene dreht sich ein Halbstrahl OB mit gleichmäßiger Geschwindigkeit 
 - Zykloide
 - Konchoide des Nikomedes
 - Zissoide des Diokles
-- Tangentenmethode von Fermat
+- Tangentenmethode von [Fermat](https://kenji.blog/de/p/fermat/)
 - Normalenmethode von [Descartes](https://kenji.blog/de/p/descartes/)
 
 ### Chronologie

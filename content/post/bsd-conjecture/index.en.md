@@ -14,7 +14,7 @@ One of the most important, beautiful, and profound mysteries in modern mathemati
 
 The BSD Conjecture belongs to the field of "arithmetic geometry," where algebraic geometry and number theory intersect. Roughly speaking, this conjecture makes the astonishing claim that "whether an elliptic curve has an infinite number of rational points can be determined by looking at the behavior of the complex function (L-function) determined by the elliptic curve at $s=1$." By gathering local information (the number of solutions modulo prime numbers), the global information (the structure of rational solutions) is completely determined. It is a conjecture that embodies the romance of mathematics.
 
-In this article, to understand what the BSD Conjecture means, we will start from the basics of elliptic curves, and explain in detail and rigorously Mordell's theorem, the definition of L-functions, and the precise statements of the BSD Conjecture (weak conjecture and strong conjecture). Furthermore, we will delve into advanced topics such as the connection with the congruent number problem and the background of Galois cohomology.
+In this article, to understand what the BSD Conjecture means, we will start from the basics of elliptic curves, and explain in detail and rigorously Mordell's theorem, the definition of L-functions, and the precise statements of the BSD Conjecture (weak conjecture and strong conjecture). Furthermore, we will delve into advanced topics such as the connection with the congruent number problem and the background of [Galois](https://kenji.blog/en/p/galois/) cohomology.
 
 ## 2. What is an Elliptic Curve: A Jewel of Algebraic Geometry
 
@@ -109,7 +109,7 @@ $$
 a_p = p + 1 - N_p
 $$
 
-According to Hasse's theorem (Hasse's bound), this deviation is known to be bounded by $|a_p| \le 2\sqrt{p}$. This is a kind of analogue to the Riemann Hypothesis for elliptic curves over finite fields.
+According to Hasse's theorem (Hasse's bound), this deviation is known to be bounded by $|a_p| \le 2\sqrt{p}$. This is a kind of analogue to the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis for elliptic curves over finite fields.
 
 ### 4.2. Definition of the L-function
 
@@ -185,7 +185,7 @@ The invariants appearing in this formula are as follows:
 1. **$\Omega_E$ (Real period)**: A transcendental number determined from the integral $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ over the field of real numbers of the elliptic curve.
 2. **$\mathrm{Reg}(E)$ (Regulator)**: The determinant of an $r \times r$ matrix whose entries are the Néron-Tate height pairings $\langle P_i, P_j \rangle$ for generators $P_1, \dots, P_r$ of the rational points of infinite order with rank $r$. It is an indicator measuring the "size" of the points.
 3. **$|E(\mathbb{Q})_{\text{tors}}|$**: The order of the torsion subgroup.
-4. **$c_p$ (Tamagawa number)**: A local correction factor for primes $p$ with bad reduction. It is calculated from the action of the Galois group of the local field.
+4. **$c_p$ (Tamagawa number)**: A local correction factor for primes $p$ with bad reduction. It is calculated from the action of the [Galois](https://kenji.blog/en/p/galois/) group of the local field.
 5. **$\text{Sha}(E)$ (Tate-Shafarevich group, $\text{\textcyrillic{Sh}}$)**: An extremely important object, which will be discussed later.
 
 This formula can be viewed as the ultimate generalized form of Dirichlet's class number formula from the 19th century:
@@ -194,20 +194,20 @@ $$
 $$
 applied to elliptic curves. The class number $h_K$ in Dedekind's zeta function corresponds to $\text{Sha}(E)$, and the regulator of the unit group $R_K$ corresponds to the regulator of the elliptic curve $\mathrm{Reg}(E)$.
 
-### 5.3. The Mysterious Group "Sha (Ш)" and Galois Cohomology
+### 5.3. The Mysterious Group "Sha (Ш)" and [Galois](https://kenji.blog/en/p/galois/) Cohomology
 
 The most mysterious and difficult object in the formula is the Tate-Shafarevich group $\text{Sha}(E)$ (represented by the Cyrillic letter $\text{\textcyrillic{Sh}}$).
 
 The local-global principle (Hasse principle) states that "a necessary and sufficient condition for all equations to have solutions in the rational number field (global) is that they have solutions in the $p$-adic number fields (local) for all primes $p$, and also have solutions in the real number field." This principle holds for quadratic forms (Hasse-Minkowski theorem).
 However, this principle does not hold for elliptic curves (cubic curves). A phenomenon can occur where "solutions exist locally everywhere, but no solutions exist globally."
 
-$\text{Sha}(E)$ is a group that measures this "failure of the local-global principle" using Galois cohomology. Strictly speaking, it is defined as follows:
+$\text{Sha}(E)$ is a group that measures this "failure of the local-global principle" using [Galois](https://kenji.blog/en/p/galois/) cohomology. Strictly speaking, it is defined as follows:
 
 $$
 \text{Sha}(E) = \ker \left( H^1(G_{\mathbb{Q}}, E) \to \prod_{v} H^1(G_{\mathbb{Q}_v}, E) \right)
 $$
 
-Here, $G_{\mathbb{Q}}$ is the absolute Galois group, and the product is taken over all places (rational primes and infinite places).
+Here, $G_{\mathbb{Q}}$ is the absolute [Galois](https://kenji.blog/en/p/galois/) group, and the product is taken over all places (rational primes and infinite places).
 The Strong BSD Conjecture includes the implicit assumption that "for any elliptic curve, $\text{Sha}(E)$ is a finite group." However, to this day, it has not even been proven that $\text{Sha}(E)$ is finite for a general elliptic curve. Except for results on curves with complex multiplication by Karl Rubin and others, a fundamental understanding of $\text{Sha}(E)$ is one of the biggest challenges in modern number theory.
 
 ## 6. Relationship with the Congruent Number Problem
@@ -231,7 +231,7 @@ Surprisingly, when the analytic rank (the order of vanishing of $L(E,s)$ at $s=1
 - **Gross-Zagier Theorem (1986)**:
   They showed that when the analytic rank is 1, the first derivative of $L(E,s)$ at $s=1$ is proportional to the Néron-Tate height of a "Heegner point" constructed from special points on a modular curve. From the fact that the height of the Heegner point is non-zero, they proved that the algebraic rank is at least 1.
 - **Kolyvagin's Theorem (1989)**:
-  He constructed a powerful Galois cohomology method called an "Euler system," and proved that when the analytic rank is 0 or 1, it coincides with the algebraic rank, and furthermore, only in that case is the Tate-Shafarevich group $\text{Sha}(E)$ a finite group.
+  He constructed a powerful [Galois](https://kenji.blog/en/p/galois/) cohomology method called an "Euler system," and proved that when the analytic rank is 0 or 1, it coincides with the algebraic rank, and furthermore, only in that case is the Tate-Shafarevich group $\text{Sha}(E)$ a finite group.
 
 Due to these achievements, it has been established that "for elliptic curves with an analytic rank of 0 or 1, the Weak BSD Conjecture is true."
 

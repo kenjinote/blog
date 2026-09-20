@@ -18,11 +18,11 @@ $$
 
 Meskipun integral ini sendiri dapat dipecahkan menggunakan $\arctan(x)$, jika penyebutnya menjadi polinomial berderajat lebih tinggi, atau jika fungsi trigonometri seperti sinus dan kosinus terlibat secara rumit, menemukan antiturunan (integral tak tentu) sebagai fungsi riil menjadi hampir tidak mungkin.
 
-Di sinilah senjata ampuh dari **analisis kompleks** (teori fungsi kompleks), yang secara luas dianggap sebagai salah satu teori terindah dalam matematika, ikut bermain: **[Teorema Residu](https://kenji.blog/id/p/residue-theorem/) Cauchy**. Dengan secara berani memperluas integral yang dilakukan pada garis bilangan riil (1 dimensi) ke **bidang kompleks** (2 dimensi), integral riil yang tidak mungkin dapat dipecahkan dengan cemerlang.
+Di sinilah senjata ampuh dari **analisis kompleks** (teori fungsi kompleks), yang secara luas dianggap sebagai salah satu teori terindah dalam matematika, ikut bermain: **[Teorema Residu](https://kenji.blog/id/p/residue-theorem/) [Cauchy](https://kenji.blog/id/p/cauchy/)**. Dengan secara berani memperluas integral yang dilakukan pada garis bilangan riil (1 dimensi) ke **bidang kompleks** (2 dimensi), integral riil yang tidak mungkin dapat dipecahkan dengan cemerlang.
 
 ## Integrasi Kompleks dan Singularitas
 
-Integral dari fungsi kompleks $f(z)$ dilakukan di sepanjang kurva (kontur) pada bidang kompleks. Di wilayah di mana fungsinya analitis (dapat didiferensialkan), integral di sepanjang kurva tertutup adalah nol. Ini dikenal sebagai **Teorema Integral Cauchy**.
+Integral dari fungsi kompleks $f(z)$ dilakukan di sepanjang kurva (kontur) pada bidang kompleks. Di wilayah di mana fungsinya analitis (dapat didiferensialkan), integral di sepanjang kurva tertutup adalah nol. Ini dikenal sebagai **Teorema Integral [Cauchy](https://kenji.blog/id/p/cauchy/)**.
 
 $$
 \oint_C f(z) dz = 0 \quad (\text{jika fungsinya holomorfik di dalam dan pada } C)
@@ -56,7 +56,7 @@ $$
 
 Mengapa hanya koefisien $(z - z_0)^{-1}$ yang istimewa? Karena jika Anda mengintegralkan $\frac{1}{(z - z_0)^n}$ di sepanjang lingkaran kecil $C$ yang menutupi singularitas, hanya ketika $n = 1$ nilai $2\pi i$ tetap ada; untuk semua nilai $n$ lainnya, integralnya bernilai $0$.
 
-## [Teorema Residu](https://kenji.blog/id/p/residue-theorem/) Cauchy
+## [Teorema Residu](https://kenji.blog/id/p/residue-theorem/) [Cauchy](https://kenji.blog/id/p/cauchy/)
 
 Mengintegrasikan konsep-konsep ini menghasilkan **[Teorema Residu](https://kenji.blog/id/p/residue-theorem/)**. Jika kurva tertutup $C$ berisi beberapa singularitas terisolasi $z_1, z_2, \dots, z_k$ di dalamnya, integral kompleks di sepanjang $C$ dapat dihitung sebagai berikut:
 

@@ -15,7 +15,7 @@ Lorsque $p$ est un nombre premier, $(p−1)!≡−1 \pmod p$ est vérifié.
 ## Formule d'Euler
 $e^{iπ}+1=0$
 
-## Dernier théorème de Fermat
+## Dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/)
 Pour tout entier $n≥3$, il n'existe pas d'entiers positifs $x,y,z$ qui satisfont $x^n+y^n=z^n$.
 
 ## Problème de Bâle

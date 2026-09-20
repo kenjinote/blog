@@ -42,8 +42,8 @@ To appreciate the true value of Baker's work, we must first review the classific
 
 In the late 19th century, [Georg Cantor](https://kenji.blog/en/p/cantor/) proved from a set-theoretic perspective that while the set of algebraic numbers is countably infinite, the set of all complex numbers is uncountably infinite. This means that "almost all numbers are transcendental." However, proving that a specific given number is transcendental is exceedingly difficult.
 
-### 3.2 Hilbert's 7th Problem and the Gelfond-Schneider Theorem
-In 1900, [David Hilbert](https://kenji.blog/en/p/hilbert/) presented 23 unsolved problems (Hilbert's 23 Problems) at the International Congress of Mathematicians in Paris. His 7th problem was as follows:
+### 3.2 [Hilbert](https://kenji.blog/en/p/hilbert/)'s 7th Problem and the Gelfond-Schneider Theorem
+In 1900, [David Hilbert](https://kenji.blog/en/p/hilbert/) presented 23 unsolved problems ([Hilbert](https://kenji.blog/en/p/hilbert/)'s 23 Problems) at the International Congress of Mathematicians in Paris. His 7th problem was as follows:
 
 > "If $\alpha$ is an algebraic number other than $0$ or $1$, and $\beta$ is an irrational algebraic number, is $\alpha^\beta$ always a transcendental number?"
 

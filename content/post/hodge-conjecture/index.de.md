@@ -54,7 +54,7 @@ Hierbei stellt H^{p,q}(X) eine Klasse von Differentialformen dar, die aus dem Da
 
 Formale Linearkombinationen von algebraischen Varietäten (Untervarietäten) niedrigerer Dimensionen in einer Mannigfaltigkeit X nennt man **algebraische Zykel** (Algebraic Cycle).
 
-Ein algebraischer Zykel der Dimension k bestimmt aufgrund der Poincaré-Dualität (Poincaré Duality) ein Element der 2k-ten Kohomologiegruppe von X. Wichtig ist die Tatsache, dass die durch algebraische Untervarietäten bestimmten Kohomologieklassen nur in bestimmten Komponenten der Hodge-Zerlegung erscheinen. Genauer gesagt gehört eine Kohomologieklasse, die durch eine algebraische Untervarietät mit Kodimension p (Gesamtdimension minus Dimension der Untervarietät) bestimmt ist, zu der Komponente H^{p,p}(X).
+Ein algebraischer Zykel der Dimension k bestimmt aufgrund der [Poincaré](https://kenji.blog/de/p/poincare/)-Dualität ([Poincaré](https://kenji.blog/de/p/poincare/) Duality) ein Element der 2k-ten Kohomologiegruppe von X. Wichtig ist die Tatsache, dass die durch algebraische Untervarietäten bestimmten Kohomologieklassen nur in bestimmten Komponenten der Hodge-Zerlegung erscheinen. Genauer gesagt gehört eine Kohomologieklasse, die durch eine algebraische Untervarietät mit Kodimension p (Gesamtdimension minus Dimension der Untervarietät) bestimmt ist, zu der Komponente H^{p,p}(X).
 
 Darüber hinaus können, da algebraische Zykel aus Gleichungen definiert sind, ihre Koeffizienten als rationale Zahlen (oder ganze Zahlen) betrachtet werden. Daher gehören Kohomologieklassen, die durch algebraische Zykel bestimmt sind, auch zur Kohomologiegruppe mit rationalen Koeffizienten H^{2p}(X, \mathbb{Q}).
 
@@ -123,7 +123,7 @@ Es mag schwierig sein, die Essenz der Hodge-Vermutung allein anhand ihrer abstra
 
 ### 7.1 Tori und elliptische Kurven
 
-Eines der einfachsten und am leichtesten verständlichen Beispiele ist eine eindimensionale komplexe Mannigfaltigkeit, d. h. eine **Riemannsche Fläche** (Riemann Surface). Darunter ist ein Torus (Donut-Form) mit dem Geschlecht (Anzahl der Löcher) 1 in der algebraischen Geometrie als **elliptische Kurve** (Elliptic Curve) bekannt.
+Eines der einfachsten und am leichtesten verständlichen Beispiele ist eine eindimensionale komplexe Mannigfaltigkeit, d. h. eine **[Riemann](https://kenji.blog/de/p/riemann/)sche Fläche** ([Riemann](https://kenji.blog/de/p/riemann/) Surface). Darunter ist ein Torus (Donut-Form) mit dem Geschlecht (Anzahl der Löcher) 1 in der algebraischen Geometrie als **elliptische Kurve** (Elliptic Curve) bekannt.
 
 Im Falle einer elliptischen Kurve E ist die komplexe Dimension 1 (die reelle Dimension ist 2). Betrachtet man die Kohomologiegruppen, ist die interessanteste die Kohomologiegruppe vom Grad 1 der mittleren Dimension, H^1(E, \mathbb{C}). Die Hodge-Vermutung zielt jedoch auf Kohomologiegruppen mit einer geraden Gesamtdimension ab. Daher gibt es in der elliptischen Kurve selbst (komplexe Dimension 1) keine nicht-triviale Aussage zur Hodge-Vermutung.
 
@@ -151,7 +151,7 @@ Die Standardvermutungen umfassen die Schnitttheorie algebraischer Zykel und die 
 
 ### 8.2 Milnor-Vermutung und algebraische K-Theorie (Milnor Conjecture and Algebraic K-Theory)
 
-Ein wenig anders, aber die Milnor-Vermutung (Milnor Conjecture), die von Vladimir Voevodsky gelöst wurde, und ihre Verallgemeinerung, die Bloch-Kato-Vermutung (Bloch-Kato Conjecture), verbanden die algebraische K-Theorie mit der Galois-Kohomologie.
+Ein wenig anders, aber die Milnor-Vermutung (Milnor Conjecture), die von Vladimir Voevodsky gelöst wurde, und ihre Verallgemeinerung, die Bloch-Kato-Vermutung (Bloch-Kato Conjecture), verbanden die algebraische K-Theorie mit der [Galois](https://kenji.blog/de/p/galois/)-Kohomologie.
 
 Voevodskys Arbeit schuf einen neuen Rahmen namens "motivische Kohomologie" (Motivic Cohomology) und stärkte die Verbindung zwischen algebraischer Geometrie und Topologie weiter. Diese motivische Perspektive ordnet die Hodge-Vermutung in eine allgemeinere Theorie der algebraischen Zykel ein und ist zu einem unverzichtbaren Ansatz in der modernen Erforschung der Hodge-Vermutung geworden.
 

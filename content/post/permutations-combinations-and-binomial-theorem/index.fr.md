@@ -14,9 +14,9 @@ tags:
 
 # Introduction
 
-Dans le monde des mathématiques, les « permutations » et les « combinaisons » — des méthodes pour compter logiquement le nombre de résultats possibles — sont des concepts fondamentaux cruciaux dans un large éventail de domaines, allant de la probabilité et la statistique jusqu'aux algorithmes informatiques. En étendant ces concepts fondamentaux dans le domaine de l'algèbre, nous arrivons au « Théorème du Binôme », et la représentation visuelle et géométrique de la séquence de ses coefficients produit le « Triangle de Pascal ». À première vue, ceux-ci peuvent sembler être des sujets mathématiques indépendants, mais en les étudiant en profondeur, on se rend compte qu'ils sont étonnamment imbriqués, formant une structure mathématique unique, massive et magnifique.
+Dans le monde des mathématiques, les « permutations » et les « combinaisons » — des méthodes pour compter logiquement le nombre de résultats possibles — sont des concepts fondamentaux cruciaux dans un large éventail de domaines, allant de la probabilité et la statistique jusqu'aux algorithmes informatiques. En étendant ces concepts fondamentaux dans le domaine de l'algèbre, nous arrivons au « Théorème du Binôme », et la représentation visuelle et géométrique de la séquence de ses coefficients produit le « Triangle de [Pascal](https://kenji.blog/fr/p/pascal/) ». À première vue, ceux-ci peuvent sembler être des sujets mathématiques indépendants, mais en les étudiant en profondeur, on se rend compte qu'ils sont étonnamment imbriqués, formant une structure mathématique unique, massive et magnifique.
 
-Dans cet article, nous commencerons par une compréhension intuitive et les méthodes de calcul de base des permutations et des combinaisons, puis nous expliquerons en détail des concepts plus complexes tels que les permutations avec répétition, les permutations circulaires et les combinaisons avec répétition. À partir de là, nous déduirons la formule du Théorème du Binôme et sa magnifique symétrie, pour finalement plonger au cœur de thèmes profonds tels que les propriétés mystérieuses cachées dans le Triangle de Pascal, sa connexion avec la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) qui décrit les lois de la nature, et les structures fractales. Embarquons pour un voyage afin d'apprécier pleinement la « beauté » et la « régularité » des mathématiques.
+Dans cet article, nous commencerons par une compréhension intuitive et les méthodes de calcul de base des permutations et des combinaisons, puis nous expliquerons en détail des concepts plus complexes tels que les permutations avec répétition, les permutations circulaires et les combinaisons avec répétition. À partir de là, nous déduirons la formule du Théorème du Binôme et sa magnifique symétrie, pour finalement plonger au cœur de thèmes profonds tels que les propriétés mystérieuses cachées dans le Triangle de [Pascal](https://kenji.blog/fr/p/pascal/), sa connexion avec la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) qui décrit les lois de la nature, et les structures fractales. Embarquons pour un voyage afin d'apprécier pleinement la « beauté » et la « régularité » des mathématiques.
 
 # Que sont les Permutations ?
 
@@ -203,13 +203,13 @@ $$
 
 En généralisant cela, la réponse à la question « Lors de la multiplication de $n$ parenthèses, quel est le nombre total de façons de choisir $k$ fois $y$ (et simultanément $n-k$ fois $x$) » est exactement $\binom{n}{k}$. Les formules de développement algébrique et l'analyse combinatoire se croisent magnifiquement ici.
 
-# Le Triangle de Pascal : La Magnifique Géométrie des Nombres
+# Le Triangle de [Pascal](https://kenji.blog/fr/p/pascal/) : La Magnifique Géométrie des Nombres
 
-Disposer les coefficients binomiaux apparaissant dans la formule de développement du Théorème du Binôme sous la forme d'une pyramide de haut en bas avec $n=0, 1, 2, \dots$ s'appelle le « Triangle de Pascal ». Ce triangle de structure simple va bien au-delà d'une simple aide au calcul, renfermant en son sein d'innombrables propriétés mathématiques magnifiques et profondes.
+Disposer les coefficients binomiaux apparaissant dans la formule de développement du Théorème du Binôme sous la forme d'une pyramide de haut en bas avec $n=0, 1, 2, \dots$ s'appelle le « Triangle de [Pascal](https://kenji.blog/fr/p/pascal/) ». Ce triangle de structure simple va bien au-delà d'une simple aide au calcul, renfermant en son sein d'innombrables propriétés mathématiques magnifiques et profondes.
 
-## Règles de Construction du Triangle de Pascal
+## Règles de Construction du Triangle de [Pascal](https://kenji.blog/fr/p/pascal/)
 
-Le Triangle de Pascal commence par placer un $1$ au sommet supérieur (rangée 0). Pour les rangées qui suivent, des $1$ sont toujours placés aux deux extrémités, et tous les nombres intérieurs sont construits selon une règle extrêmement simple : « la somme du nombre en haut à gauche et du nombre en haut à droite ».
+Le Triangle de [Pascal](https://kenji.blog/fr/p/pascal/) commence par placer un $1$ au sommet supérieur (rangée 0). Pour les rangées qui suivent, des $1$ sont toujours placés aux deux extrémités, et tous les nombres intérieurs sont construits selon une règle extrêmement simple : « la somme du nombre en haut à gauche et du nombre en haut à droite ».
 
 ```mermaid
 graph TD
@@ -236,15 +236,15 @@ graph TD
     R5C5(("1")) --- R4C4
 ```
 
-Le nombre situé à la $n$-ième rangée à partir du haut (le sommet étant la 0ème rangée) et à la $k$-ième position à partir de la gauche (le bord gauche étant la 0ème position) correspond exactement au coefficient binomial $\binom{n}{k}$. La structure où l'addition du nombre en haut à gauche $\binom{n-1}{k-1}$ et du nombre en haut à droite $\binom{n-1}{k}$ égale le nombre en dessous $\binom{n}{k}$ représente géométriquement l'importante équation suivante appelée Règle de Pascal :
+Le nombre situé à la $n$-ième rangée à partir du haut (le sommet étant la 0ème rangée) et à la $k$-ième position à partir de la gauche (le bord gauche étant la 0ème position) correspond exactement au coefficient binomial $\binom{n}{k}$. La structure où l'addition du nombre en haut à gauche $\binom{n-1}{k-1}$ et du nombre en haut à droite $\binom{n-1}{k}$ égale le nombre en dessous $\binom{n}{k}$ représente géométriquement l'importante équation suivante appelée Règle de [Pascal](https://kenji.blog/fr/p/pascal/) :
 
 $$
 \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
 $$
 
-## Propriétés Incroyables Cachées dans le Triangle de Pascal
+## Propriétés Incroyables Cachées dans le Triangle de [Pascal](https://kenji.blog/fr/p/pascal/)
 
-Si vous observez attentivement le Triangle de Pascal, vous remarquerez que d'innombrables régularités y sont cachées. Présentons quelques-unes d'entre elles.
+Si vous observez attentivement le Triangle de [Pascal](https://kenji.blog/fr/p/pascal/), vous remarquerez que d'innombrables régularités y sont cachées. Présentons quelques-unes d'entre elles.
 
 ### 1. Symétrie Parfaite
 
@@ -264,12 +264,12 @@ Cela peut être facilement prouvé de manière algébrique à partir de l'équat
 
 ### 3. La Connexion Cachée avec la Suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)
 
-Essayez d'additionner les nombres du Triangle de Pascal le long des « lignes diagonales peu profondes ». Étonnamment, la séquence $1, 1, 2, 3, 5, 8, 13, 21, \dots$ apparaît.
+Essayez d'additionner les nombres du Triangle de [Pascal](https://kenji.blog/fr/p/pascal/) le long des « lignes diagonales peu profondes ». Étonnamment, la séquence $1, 1, 2, 3, 5, 8, 13, 21, \dots$ apparaît.
 Il ne s'agit ni plus ni moins que de la **Suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)**, où vous additionnez les deux nombres précédents pour former le suivant. La séquence mystique qui apparaît partout dans la nature, comme la disposition des graines de tournesol et la spirale de la coquille d'un nautile, est profondément intégrée dans un triangle qui ne fait qu'arranger des combinaisons. C'est un exemple très beau et touchant montrant comment les mathématiques, produit de la pensée logique humaine, sont liées à la providence de la nature.
 
 ### 4. Géométrie Fractale : Triangle de Sierpinski
 
-Essayez d'agrandir énormément le Triangle de Pascal à des dizaines ou des centaines de rangées, en peignant en noir les « nombres impairs » à l'intérieur et en laissant les « nombres pairs » vides. Alors, une figure fractale auto-similaire appelée le « Triangle de Sierpinski » apparaît clairement.
+Essayez d'agrandir énormément le Triangle de [Pascal](https://kenji.blog/fr/p/pascal/) à des dizaines ou des centaines de rangées, en peignant en noir les « nombres impairs » à l'intérieur et en laissant les « nombres pairs » vides. Alors, une figure fractale auto-similaire appelée le « Triangle de Sierpinski » apparaît clairement.
 Cette structure, où le même motif triangulaire se répète infiniment, que l'on zoome ou dézoome sur l'ensemble, sert de pont reliant la théorie des nombres, la géométrie et la théorie du chaos.
 
 # Extension au Théorème Multinomial
@@ -301,8 +301,8 @@ Du calcul des probabilités de lancers de pièces à la prédiction de la probab
 
 # Conclusion
 
-Dans cet article, nous avons voyagé à travers un vaste paysage mathématique, en commençant par les permutations et les combinaisons, qui sont de simples règles de « dénombrement », en passant par leur application dans les permutations avec répétition et les permutations circulaires, en s'étendant encore vers le Théorème du Binôme de l'algèbre, pour atteindre l'exploration visuelle du Triangle de Pascal.
+Dans cet article, nous avons voyagé à travers un vaste paysage mathématique, en commençant par les permutations et les combinaisons, qui sont de simples règles de « dénombrement », en passant par leur application dans les permutations avec répétition et les permutations circulaires, en s'étendant encore vers le Théorème du Binôme de l'algèbre, pour atteindre l'exploration visuelle du Triangle de [Pascal](https://kenji.blog/fr/p/pascal/).
 
 En abstrayant et en approfondissant l'acte extrêmement simple et primitif de « choisir certains éléments parmi d'autres distincts » en utilisant le langage rigoureux des mathématiques, il est devenu clair qu'un monde mathématique d'une richesse et d'une beauté inimaginables s'étend vers l'extérieur — impliquant la symétrie parfaite, la règle des puissances de 2, la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) décrivant le monde naturel, et d'infinies structures fractales.
 
-Les formules et les théorèmes mathématiques ne sont pas de simples outils inorganiques pour résoudre des problèmes d'examens. Ce sont les chefs-d'œuvre suprêmes de l'humanité, exprimant l'ordre invisible derrière le monde qui nous entoure et les relations irrésistiblement belles tissées par les nombres. Nous espérons qu'en touchant à cette magnifique régularité des nombres montrée par les permutations, les combinaisons et le Triangle de Pascal, vous avez ressenti le véritable charme et la profondeur que possède la discipline des mathématiques.
+Les formules et les théorèmes mathématiques ne sont pas de simples outils inorganiques pour résoudre des problèmes d'examens. Ce sont les chefs-d'œuvre suprêmes de l'humanité, exprimant l'ordre invisible derrière le monde qui nous entoure et les relations irrésistiblement belles tissées par les nombres. Nous espérons qu'en touchant à cette magnifique régularité des nombres montrée par les permutations, les combinaisons et le Triangle de [Pascal](https://kenji.blog/fr/p/pascal/), vous avez ressenti le véritable charme et la profondeur que possède la discipline des mathématiques.

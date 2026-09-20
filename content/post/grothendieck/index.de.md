@@ -59,7 +59,7 @@ Nachdem er den Gipfel der Funktionalanalysis erreicht hatte, verlagerte er seine
 
 ### Das Tohoku-Papier
 
-Seine 1957 im japanischen *Tohoku Mathematical Journal* veröffentlichte Arbeit "Sur quelques points d'algèbre homologique" (Über einige Punkte der homologischen Algebra) ist eine historische Arbeit, die die Kategorientheorie und die homologische Algebra verschmolz und das Konzept einer **Abelschen Kategorie** etablierte. Dies ermöglichte es, die Garbenkohomologie über jedem topologischen Raum rigoros zu definieren.
+Seine 1957 im japanischen *Tohoku Mathematical Journal* veröffentlichte Arbeit "Sur quelques points d'algèbre homologique" (Über einige Punkte der homologischen Algebra) ist eine historische Arbeit, die die Kategorientheorie und die homologische Algebra verschmolz und das Konzept einer **[Abel](https://kenji.blog/de/p/abel/)schen Kategorie** etablierte. Dies ermöglichte es, die Garbenkohomologie über jedem topologischen Raum rigoros zu definieren.
 
 ### Die Gründung des IHÉS und EGA/SGA
 
@@ -112,7 +112,7 @@ Grothendieck erklärte seinen mathematischen Ansatz mit der Metapher eines "Nuss
 
 Zu Beginn der 1980er Jahre schlug er neue Theorien vor, die sich den tiefsten Geheimnissen der Mathematik von sehr einfachen und visuellen Konzepten aus näherten.
 
-Eines davon waren **"Dessins d'enfants" (Kinderzeichnungen)** . Er entdeckte, dass man aus einfachen Graphen, die auf gekrümmte Oberflächen wie eine Kugel gezeichnet sind, die Wirkung der absoluten Galoisgruppe extrapolieren kann, eines höchst mysteriösen und komplexen Objekts in der Zahlentheorie.
+Eines davon waren **"Dessins d'enfants" (Kinderzeichnungen)** . Er entdeckte, dass man aus einfachen Graphen, die auf gekrümmte Oberflächen wie eine Kugel gezeichnet sind, die Wirkung der absoluten [Galois](https://kenji.blog/de/p/galois/)gruppe extrapolieren kann, eines höchst mysteriösen und komplexen Objekts in der Zahlentheorie.
 
 Darüber hinaus schlug er ein Programm namens **"anabelsche Geometrie"** vor. Dies ist die erstaunliche Vermutung, dass bei bestimmten algebraischen Varietäten die ursprünglichen geometrischen und zahlentheoretischen Objekte vollständig aus den topologischen Daten, bekannt als die Fundamentalgruppe, rekonstruiert werden können.
 

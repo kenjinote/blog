@@ -54,7 +54,7 @@ Di sini, H^{p,q}(X) merepresentasikan kelas bentuk diferensial yang terdiri dari
 
 Kombinasi linear formal dari varietas aljabar berdimensi lebih rendah (subvarietas) di dalam manifold X disebut **Siklus Aljabar** (Algebraic Cycle).
 
-Siklus aljabar berdimensi k menentukan sebuah elemen dari grup kohomologi derajat 2k dari X melalui dualitas Poincaré (Poincaré Duality). Yang penting adalah fakta bahwa kelas kohomologi yang ditentukan dari subvarietas aljabar hanya muncul pada komponen tertentu dalam dekomposisi Hodge. Secara konkret, kelas kohomologi yang ditentukan oleh subvarietas aljabar dengan kodimensi p (dimensi keseluruhan dikurangi dimensi subvarietas) termasuk dalam komponen H^{p,p}(X).
+Siklus aljabar berdimensi k menentukan sebuah elemen dari grup kohomologi derajat 2k dari X melalui dualitas [Poincaré](https://kenji.blog/id/p/poincare/) ([Poincaré](https://kenji.blog/id/p/poincare/) Duality). Yang penting adalah fakta bahwa kelas kohomologi yang ditentukan dari subvarietas aljabar hanya muncul pada komponen tertentu dalam dekomposisi Hodge. Secara konkret, kelas kohomologi yang ditentukan oleh subvarietas aljabar dengan kodimensi p (dimensi keseluruhan dikurangi dimensi subvarietas) termasuk dalam komponen H^{p,p}(X).
 
 Selain itu, karena siklus aljabar didefinisikan oleh persamaan-persamaan, koefisien-koefisiennya dapat dianggap sebagai bilangan rasional (atau bilangan bulat). Oleh karena itu, kelas kohomologi yang ditentukan dari siklus aljabar juga termasuk dalam grup kohomologi dengan koefisien rasional H^{2p}(X, \mathbb{Q}).
 
@@ -94,7 +94,7 @@ Konjektur Hodge diajukan oleh Hodge sendiri pada Kongres Matematikawan Internasi
 
 Untuk beberapa kasus khusus, Konjektur Hodge telah terbukti benar.
 - **Kasus p=1 (Teorema Lefschetz)**: Untuk siklus aljabar dengan kodimensi 1 (disebut pembagi atau divisor), telah dibuktikan oleh Solomon Lefschetz pada tahun 1920-an sebelum perumusan Hodge. Ini disebut **Teorema (1,1) Lefschetz** (Lefschetz (1,1)-theorem), yang juga dapat dikatakan sebagai asal mula dari Konjektur Hodge.
-- **Hasil terkait manifold tertentu**: Misalnya, telah dikonfirmasi bahwa Konjektur Hodge berlaku untuk kelas manifold tertentu, seperti varietas Abelian dan sebagian dari permukaan K3.
+- **Hasil terkait manifold tertentu**: Misalnya, telah dikonfirmasi bahwa Konjektur Hodge berlaku untuk kelas manifold tertentu, seperti varietas [Abel](https://kenji.blog/id/p/abel/)ian dan sebagian dari permukaan K3.
 
 ### 4.2 Mengapa Ini Sulit?
 
@@ -122,7 +122,7 @@ Mungkin sulit untuk memahami esensi sebenarnya hanya melalui definisi abstrak Ko
 
 ### 7.1 Torus dan Kurva Eliptik
 
-Salah satu contoh yang paling sederhana dan mudah dipahami adalah manifold kompleks 1-dimensi, yaitu **Permukaan Riemann** (Riemann Surface). Di antaranya, torus (berbentuk donat) dengan genus (jumlah lubang) 1 dikenal sebagai **Kurva Eliptik** (Elliptic Curve) dalam geometri aljabar.
+Salah satu contoh yang paling sederhana dan mudah dipahami adalah manifold kompleks 1-dimensi, yaitu **Permukaan [Riemann](https://kenji.blog/id/p/riemann/)** ([Riemann](https://kenji.blog/id/p/riemann/) Surface). Di antaranya, torus (berbentuk donat) dengan genus (jumlah lubang) 1 dikenal sebagai **Kurva Eliptik** (Elliptic Curve) dalam geometri aljabar.
 
 Dalam kasus kurva eliptik E, dimensi kompleksnya adalah 1 (dimensi riil 2). Ketika mempertimbangkan grup kohomologi, yang menarik adalah grup kohomologi berderajat 1 di tengah, H^1(E, \mathbb{C}), namun subjek dari Konjektur Hodge adalah grup kohomologi dengan dimensi keseluruhan yang genap. Oleh karena itu, pada kurva eliptik itu sendiri (dimensi kompleks 1), tidak ada pernyataan Konjektur Hodge non-trivial yang muncul.
 
@@ -150,7 +150,7 @@ Konjektur standar mencakup teori perpotongan dari siklus aljabar dan generalisas
 
 ### 8.2 Konjektur Milnor dan Teori-K Aljabar (Milnor Conjecture and Algebraic K-Theory)
 
-Meskipun sedikit berbeda karakternya, Konjektur Milnor (Milnor Conjecture) yang dipecahkan oleh Vladimir Voevodsky, serta Konjektur Bloch-Kato (Bloch-Kato Conjecture) yang menggeneralisasinya, menghubungkan teori-K aljabar dan kohomologi Galois.
+Meskipun sedikit berbeda karakternya, Konjektur Milnor (Milnor Conjecture) yang dipecahkan oleh Vladimir Voevodsky, serta Konjektur Bloch-Kato (Bloch-Kato Conjecture) yang menggeneralisasinya, menghubungkan teori-K aljabar dan kohomologi [Galois](https://kenji.blog/id/p/galois/).
 
 Karya Voevodsky membangun kerangka baru yang disebut "Kohomologi Motivik" (Motivic Cohomology), yang semakin memperkuat hubungan antara geometri aljabar dan topologi. Sudut pandang motivik ini menempatkan Konjektur Hodge dalam teori siklus aljabar yang lebih umum, menjadikannya pendekatan yang sangat penting dalam penelitian Konjektur Hodge modern.
 

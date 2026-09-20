@@ -35,7 +35,7 @@ Al entrar en el siglo XVIII, gigantes matemáticos como Jean le Rond d'Alembert 
 
 La primera demostración esencialmente completa de este teorema inexpugnable fue dada nada menos que por [Carl Friedrich Gauss](https://kenji.blog/es/p/gauss/). En su disertación doctoral de 1799, señaló las fallas en las demostraciones de los matemáticos precedentes y presentó una demostración basada en la intuición geométrica. Gauss proporcionó cuatro demostraciones diferentes para este teorema a lo largo de su vida, indicando la importancia que le atribuía.
 
-La demostración más estándar y elegante hoy en día se considera la basada en la teoría del análisis complejo, construida por el matemático francés Joseph Liouville y otros. En la segunda mitad de este artículo, introduciremos la demostración utilizando el teorema de Liouville.
+La demostración más estándar y elegante hoy en día se considera la basada en la teoría del análisis complejo, construida por el matemático francés Joseph [Liouville](https://kenji.blog/es/p/liouville/) y otros. En la segunda mitad de este artículo, introduciremos la demostración utilizando el teorema de [Liouville](https://kenji.blog/es/p/liouville/).
 
 ## Enunciado Preciso del Teorema
 
@@ -78,26 +78,26 @@ flowchart TD
     E -->|"P(z) = 0"| F["Se demuestra la existencia de una raíz"]
 ```
 
-## Preparación del Análisis Complejo: Teorema de Liouville
+## Preparación del Análisis Complejo: Teorema de [Liouville](https://kenji.blog/es/p/liouville/)
 
-Habiendo obtenido una comprensión intuitiva, ahora introduciremos la demostración más hermosa y rigurosa de las matemáticas modernas. Esta demostración utiliza un arma poderosa del análisis complejo: el **Teorema de Liouville**.
+Habiendo obtenido una comprensión intuitiva, ahora introduciremos la demostración más hermosa y rigurosa de las matemáticas modernas. Esta demostración utiliza un arma poderosa del análisis complejo: el **Teorema de [Liouville](https://kenji.blog/es/p/liouville/)**.
 
 El análisis complejo es el campo que se ocupa del cálculo de funciones de variables complejas. A diferencia de las funciones de números reales, la diferenciabilidad (holomorfía) de las funciones complejas es una condición extremadamente fuerte; una función compleja que es diferenciable incluso una sola vez tiene la asombrosa propiedad de ser infinitamente diferenciable y capaz de expandirse en una serie de Taylor.
 
 Una función que es diferenciable (holomorfa) sobre todo el plano complejo se llama **función entera**. Los polinomios $P(z)$ y la función exponencial $e^z$ son ejemplos típicos de funciones enteras.
 
-El teorema de Liouville es un teorema profundamente poderoso con respecto a estas funciones enteras.
+El teorema de [Liouville](https://kenji.blog/es/p/liouville/) es un teorema profundamente poderoso con respecto a estas funciones enteras.
 
-**Teorema (Teorema de Liouville)**
+**Teorema (Teorema de [Liouville](https://kenji.blog/es/p/liouville/))**
 Toda función entera acotada debe ser una función constante.
 
 Aquí, "acotada" significa que para todos los números complejos $z$, el valor absoluto de la función $|f(z)|$ no excede un cierto número real $M$; es decir, existe un $M$ tal que $|f(z)| \le M$.
 
-En el mundo de los números reales, una función como $f(x) = \sin(x)$ es diferenciable sobre toda la recta numérica y está acotada por $-1 \le \sin(x) \le 1$. No es una función constante. Sin embargo, el teorema de Liouville afirma que esto nunca puede suceder en el mundo complejo. Si una función es holomorfa sobre todo el plano complejo y su valor no diverge hacia el infinito, es meramente una constante plana.
+En el mundo de los números reales, una función como $f(x) = \sin(x)$ es diferenciable sobre toda la recta numérica y está acotada por $-1 \le \sin(x) \le 1$. No es una función constante. Sin embargo, el teorema de [Liouville](https://kenji.blog/es/p/liouville/) afirma que esto nunca puede suceder en el mundo complejo. Si una función es holomorfa sobre todo el plano complejo y su valor no diverge hacia el infinito, es meramente una constante plana.
 
 ## Demostración Rigurosa del [Teorema Fundamental del Álgebra](https://kenji.blog/es/p/fundamental-theorem-of-algebra/)
 
-Demostremos ahora el [Teorema Fundamental del Álgebra](https://kenji.blog/es/p/fundamental-theorem-of-algebra/) usando el teorema de Liouville. Te sorprenderá la brillantez de esta demostración. Aquí, usamos una demostración por contradicción (reducción al absurdo).
+Demostremos ahora el [Teorema Fundamental del Álgebra](https://kenji.blog/es/p/fundamental-theorem-of-algebra/) usando el teorema de [Liouville](https://kenji.blog/es/p/liouville/). Te sorprenderá la brillantez de esta demostración. Aquí, usamos una demostración por contradicción (reducción al absurdo).
 
 **Demostración**
 
@@ -134,7 +134,7 @@ Por otro lado, dentro de la región del disco cerrado (una región cerrada acota
 Por lo tanto, tanto fuera como dentro del círculo, el valor absoluto de $f(z)$ nunca excede un cierto límite superior finito. Es decir, $f(z)$ es una función **acotada**.
 
 Hasta este punto, hemos demostrado que $f(z)$ es tanto una "función entera" como "acotada".
-Aquí, aplicamos el **teorema de Liouville**. Una función entera acotada debe ser una constante. Por lo tanto, existe un número complejo $c$ tal que para todo $z$,
+Aquí, aplicamos el **teorema de [Liouville](https://kenji.blog/es/p/liouville/)**. Una función entera acotada debe ser una constante. Por lo tanto, existe un número complejo $c$ tal que para todo $z$,
 
 $$
 f(z) = c
@@ -172,8 +172,8 @@ Además, para los polinomios donde todos los coeficientes son números reales, s
 
 ## Conclusión
 
-En este artículo, hemos analizado en detalle el [Teorema Fundamental del Álgebra](https://kenji.blog/es/p/fundamental-theorem-of-algebra/), cubriendo sus antecedentes históricos, intuición topológica y demostración analítica compleja utilizando el teorema de Liouville.
+En este artículo, hemos analizado en detalle el [Teorema Fundamental del Álgebra](https://kenji.blog/es/p/fundamental-theorem-of-algebra/), cubriendo sus antecedentes históricos, intuición topológica y demostración analítica compleja utilizando el teorema de [Liouville](https://kenji.blog/es/p/liouville/).
 
 A primera vista, es un teorema sobre ecuaciones algebraicas, pero el hecho de que su demostración más elegante tome prestado el poder del análisis (cálculo) y la topología demuestra la profundidad de las matemáticas y la belleza de cómo diferentes campos están estrechamente entrelazados.
 
-La larga búsqueda de la humanidad para encontrar las raíces de las ecuaciones ganó el vasto escenario del plano complejo a través de la introducción de los nuevos números imaginarios, y la integridad de este escenario fue demostrada por el [Teorema Fundamental del Álgebra](https://kenji.blog/es/p/fundamental-theorem-of-algebra/). Este teorema se convirtió en la llave que abrió las brillantes puertas que conducen a la teoría de Galois y la geometría algebraica, que forman la base de las matemáticas modernas.
+La larga búsqueda de la humanidad para encontrar las raíces de las ecuaciones ganó el vasto escenario del plano complejo a través de la introducción de los nuevos números imaginarios, y la integridad de este escenario fue demostrada por el [Teorema Fundamental del Álgebra](https://kenji.blog/es/p/fundamental-theorem-of-algebra/). Este teorema se convirtió en la llave que abrió las brillantes puertas que conducen a la teoría de [Galois](https://kenji.blog/es/p/galois/) y la geometría algebraica, que forman la base de las matemáticas modernas.

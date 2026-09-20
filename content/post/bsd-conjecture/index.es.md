@@ -14,7 +14,7 @@ En la matemática moderna, uno de los misterios más importantes, bellos y profu
 
 La conjetura BSD pertenece al campo de la "geometría aritmética", donde se cruzan la geometría algebraica y la teoría de números. En términos generales, esta conjetura hace una afirmación asombrosa: "Si una curva elíptica tiene o no un número infinito de puntos racionales, se puede saber observando el comportamiento de una función compleja (función L) determinada a partir de esa curva elíptica, evaluada en $s=1$". Es una conjetura que encarna el romanticismo de las matemáticas, afirmando que mediante la recopilación de información local (el número de soluciones módulo números primos), la información global (la estructura de las soluciones de los números racionales) puede determinarse por completo.
 
-En este artículo, para entender qué significa la conjetura BSD, partiremos de los fundamentos de las curvas elípticas y explicaremos detallada y rigurosamente el teorema de Mordell, la definición de las funciones L y la afirmación exacta de la conjetura BSD (conjeturas débil y fuerte). Además, nos adentraremos en temas avanzados como la relación con el problema de los números congruentes y el trasfondo de la cohomología de Galois.
+En este artículo, para entender qué significa la conjetura BSD, partiremos de los fundamentos de las curvas elípticas y explicaremos detallada y rigurosamente el teorema de Mordell, la definición de las funciones L y la afirmación exacta de la conjetura BSD (conjeturas débil y fuerte). Además, nos adentraremos en temas avanzados como la relación con el problema de los números congruentes y el trasfondo de la cohomología de [Galois](https://kenji.blog/es/p/galois/).
 
 ## 2. ¿Qué es una curva elíptica?: La joya de la geometría algebraica
 
@@ -109,7 +109,7 @@ $$
 a_p = p + 1 - N_p
 $$
 
-Según la cota de Hasse (Hasse's bound), se sabe que esta desviación está limitada por $|a_p| \le 2\sqrt{p}$. Esto es una especie de analogía a la Hipótesis de Riemann para curvas elípticas sobre cuerpos finitos.
+Según la cota de Hasse (Hasse's bound), se sabe que esta desviación está limitada por $|a_p| \le 2\sqrt{p}$. Esto es una especie de analogía a la Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) para curvas elípticas sobre cuerpos finitos.
 
 ### 4.2. Definición de la función L
 
@@ -185,7 +185,7 @@ Los invariantes que aparecen en esta fórmula son los siguientes:
 1. **$\Omega_E$ (Período real)**: Un número trascendente que resulta de la integral sobre el cuerpo de los números reales $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ de la curva elíptica.
 2. **$\mathrm{Reg}(E)$ (Regulador)**: Para los generadores $P_1, \dots, P_r$ de puntos racionales de orden infinito de rango $r$, es el determinante de la matriz $r \times r$ formada por los emparejamientos de alturas de Néron-Tate (Néron-Tate height pairing) $\langle P_i, P_j \rangle$. Es una medida del "tamaño" de los puntos.
 3. **$|E(\mathbb{Q})_{\text{tors}}|$**: El orden del subgrupo de torsión.
-4. **$c_p$ (Números de Tamagawa)**: Factores de corrección local para los números primos $p$ con mala reducción. Se calculan a partir de la acción del grupo de Galois del cuerpo local.
+4. **$c_p$ (Números de Tamagawa)**: Factores de corrección local para los números primos $p$ con mala reducción. Se calculan a partir de la acción del grupo de [Galois](https://kenji.blog/es/p/galois/) del cuerpo local.
 5. **$\text{Sha}(E)$ (Grupo de Tate-Shafarevich, $\text{\textcyrillic{Sh}}$)**: Se describirá más adelante por ser un objeto sumamente importante.
 
 Esta fórmula puede considerarse como la forma definitiva y generalizada para curvas elípticas de la fórmula del número de clases de Dirichlet (Dirichlet's class number formula) del siglo XIX:
@@ -194,20 +194,20 @@ $$
 $$
 El número de clases $h_K$ en la función zeta de Dedekind corresponde a $\text{Sha}(E)$, y el regulador $R_K$ del grupo de unidades corresponde al regulador $\mathrm{Reg}(E)$ de la curva elíptica.
 
-### 5.3. El misterioso grupo "Sha (Ш)" y la cohomología de Galois
+### 5.3. El misterioso grupo "Sha (Ш)" y la cohomología de [Galois](https://kenji.blog/es/p/galois/)
 
 El objeto más místico e inescrutable de la fórmula es el grupo de Tate-Shafarevich $\text{Sha}(E)$ (representado por la letra cirílica $\text{\textcyrillic{Sh}}$).
 
 El principio local-global (principio de Hasse) establece que "una condición necesaria y suficiente para que toda ecuación tenga solución en el cuerpo de los números racionales (global) es que tenga solución en el cuerpo de los números $p$-ádicos (local) para todos los números primos $p$, así como en el cuerpo de los números reales". Este principio se cumple para las formas cuadráticas (teorema de Hasse-Minkowski).
 Sin embargo, este principio no se cumple para las curvas elípticas (curvas cúbicas). Puede ocurrir el fenómeno de que "existan soluciones localmente en todas partes, pero no globalmente".
 
-$\text{Sha}(E)$ es un grupo que mide este "fracaso del principio local-global" mediante el uso de la cohomología de Galois. Estrictamente, se define de la siguiente manera:
+$\text{Sha}(E)$ es un grupo que mide este "fracaso del principio local-global" mediante el uso de la cohomología de [Galois](https://kenji.blog/es/p/galois/). Estrictamente, se define de la siguiente manera:
 
 $$
 \text{Sha}(E) = \ker \left( H^1(G_{\mathbb{Q}}, E) \to \prod_{v} H^1(G_{\mathbb{Q}_v}, E) \right)
 $$
 
-Aquí, $G_{\mathbb{Q}}$ es el grupo de Galois absoluto, y el producto es sobre todos los lugares (números primos racionales y el lugar en el infinito).
+Aquí, $G_{\mathbb{Q}}$ es el grupo de [Galois](https://kenji.blog/es/p/galois/) absoluto, y el producto es sobre todos los lugares (números primos racionales y el lugar en el infinito).
 La conjetura BSD fuerte incluye la premisa implícita de que "el grupo $\text{Sha}(E)$ es finito para cualquier curva elíptica". Sin embargo, hasta el día de hoy, ni siquiera se ha demostrado que $\text{Sha}(E)$ sea finito para una curva elíptica general. Salvo resultados para curvas con multiplicación compleja obtenidos por Karl Rubin, entre otros, comprender verdaderamente el grupo $\text{Sha}(E)$ es uno de los mayores desafíos de la teoría de números moderna.
 
 ## 6. Relación con el problema de los números congruentes
@@ -231,7 +231,7 @@ Sorprendentemente, para los casos en los que el rango analítico (el orden del c
 - **Teorema de Gross-Zagier (1986)**:
   Demostraron que cuando el rango analítico es 1, la primera derivada de $L(E,s)$ en $s=1$ es proporcional a la altura de Néron-Tate del "punto de Heegner", construido a partir de puntos especiales en curvas modulares. Al demostrar que la altura del punto de Heegner no es cero, comprobaron que el rango algebraico es al menos 1.
 - **Teorema de Kolyvagin (1989)**:
-  Construyó un método muy poderoso en la cohomología de Galois llamado sistema de Euler (Euler system). Demostró que cuando el rango analítico es 0 o 1, coincide con el rango algebraico, y además, solo en esos casos, el grupo de Tate-Shafarevich $\text{Sha}(E)$ es un grupo finito.
+  Construyó un método muy poderoso en la cohomología de [Galois](https://kenji.blog/es/p/galois/) llamado sistema de Euler (Euler system). Demostró que cuando el rango analítico es 0 o 1, coincide con el rango algebraico, y además, solo en esos casos, el grupo de Tate-Shafarevich $\text{Sha}(E)$ es un grupo finito.
 
 Gracias a estos logros, se ha establecido que "la conjetura BSD débil es verdadera para las curvas elípticas con rango analítico 0 o 1".
 

@@ -14,7 +14,7 @@ Na matemática moderna, um dos mistérios mais importantes, belos e profundos é
 
 A Conjectura de BSD pertence ao campo da "geometria aritmética", onde a geometria algébrica e a teoria dos números se cruzam. Grosso modo, a conjectura faz uma afirmação surpreendente de que "para saber se há um número infinito de pontos racionais em uma curva elíptica, basta observar o comportamento da função complexa (função L) determinada a partir dessa curva elíptica em $s=1$". Ao reunir informações locais (o número de soluções módulo números primos), a informação global (a estrutura das soluções racionais) é completamente determinada. É uma conjectura que encarna o romance da matemática.
 
-Neste artigo, a fim de compreender o significado da Conjectura de BSD, partiremos dos fundamentos das curvas elípticas e explicaremos o Teorema de Mordell, a definição da função L, e a afirmação exata da Conjectura de BSD (a conjectura fraca e a conjectura forte) de forma detalhada e rigorosa. Além disso, aprofundaremos em tópicos avançados como sua relação com o problema dos números congruentes e o contexto envolvendo cohomologia de Galois.
+Neste artigo, a fim de compreender o significado da Conjectura de BSD, partiremos dos fundamentos das curvas elípticas e explicaremos o Teorema de Mordell, a definição da função L, e a afirmação exata da Conjectura de BSD (a conjectura fraca e a conjectura forte) de forma detalhada e rigorosa. Além disso, aprofundaremos em tópicos avançados como sua relação com o problema dos números congruentes e o contexto envolvendo cohomologia de [Galois](https://kenji.blog/pt/p/galois/).
 
 ## 2. O que é uma Curva Elíptica: A Joia da Geometria Algébrica
 
@@ -108,7 +108,7 @@ $$
 a_p = p + 1 - N_p
 $$
 
-De acordo com o limite de Hasse (Hasse's bound), sabe-se que este desvio é limitado por $|a_p| \le 2\sqrt{p}$. Isso é uma espécie de análogo à hipótese de Riemann para curvas elípticas sobre corpos finitos.
+De acordo com o limite de Hasse (Hasse's bound), sabe-se que este desvio é limitado por $|a_p| \le 2\sqrt{p}$. Isso é uma espécie de análogo à hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) para curvas elípticas sobre corpos finitos.
 
 ### 4.2. Definição da Função L
 
@@ -184,7 +184,7 @@ Os invariantes que aparecem nesta fórmula são os seguintes:
 1. **$\Omega_E$ (Período real)**: Um número transcendental determinado pela integral $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ da curva elíptica sobre o corpo dos números reais.
 2. **$\mathrm{Reg}(E)$ (Regulador)**: O determinante da matriz $r \times r$ contendo os emparelhamentos de altura de Néron-Tate (Néron-Tate height pairing) $\langle P_i, P_j \rangle$ para os geradores $P_1, \dots, P_r$ de pontos racionais de ordem infinita de posto $r$. É um índice que mede o "tamanho" dos pontos.
 3. **$|E(\mathbb{Q})_{\text{tors}}|$**: A ordem do subgrupo de torção.
-4. **$c_p$ (Números de Tamagawa)**: Fatores de correção local para primos $p$ com má redução. São calculados a partir da ação do grupo de Galois sobre corpos locais.
+4. **$c_p$ (Números de Tamagawa)**: Fatores de correção local para primos $p$ com má redução. São calculados a partir da ação do grupo de [Galois](https://kenji.blog/pt/p/galois/) sobre corpos locais.
 5. **$\text{Sha}(E)$ (Grupo de Tate-Shafarevich, $\text{\textcyrillic{Sh}}$)**: Abordaremos mais tarde, pois é um objeto de extrema importância.
 
 Esta fórmula pode ser vista como a forma fundamental da fórmula do número de classes de Dirichlet do século 19 (Dirichlet's class number formula)
@@ -193,20 +193,20 @@ $$
 $$
 generalizada para curvas elípticas. O número de classes $h_K$ na função zeta de Dedekind corresponde a $\text{Sha}(E)$, e o regulador $R_K$ do grupo de unidades corresponde ao regulador $\mathrm{Reg}(E)$ da curva elíptica.
 
-### 5.3. O Grupo Misterioso "Sha (Ш)" e a Cohomologia de Galois
+### 5.3. O Grupo Misterioso "Sha (Ш)" e a Cohomologia de [Galois](https://kenji.blog/pt/p/galois/)
 
 O objeto mais místico e difícil de entender na fórmula é o grupo de Tate-Shafarevich $\text{Sha}(E)$ (denotado pela letra cirílica $\text{\textcyrillic{Sh}}$).
 
 O princípio local-global (Princípio de Hasse) postula que "a condição necessária e suficiente para que todas as equações tenham uma solução no corpo dos números racionais (global) é que elas tenham uma solução no corpo dos números $p$-ádicos (local) para todos os primos $p$, e que elas também tenham uma solução no corpo dos números reais". Esse princípio é válido para formas quadráticas (Teorema de Hasse-Minkowski).
 No entanto, esse princípio não se sustenta para curvas elípticas (curvas cúbicas). O fenômeno de "possuir soluções em todos os lugares localmente, mas não possuir uma solução globalmente" pode ocorrer.
 
-$\text{Sha}(E)$ é o grupo que mede essa "falha do princípio local-global" usando a cohomologia de Galois. A rigor, é definido da seguinte forma:
+$\text{Sha}(E)$ é o grupo que mede essa "falha do princípio local-global" usando a cohomologia de [Galois](https://kenji.blog/pt/p/galois/). A rigor, é definido da seguinte forma:
 
 $$
 \text{Sha}(E) = \ker \left( H^1(G_{\mathbb{Q}}, E) \to \prod_{v} H^1(G_{\mathbb{Q}_v}, E) \right)
 $$
 
-Aqui, $G_{\mathbb{Q}}$ é o grupo de Galois absoluto, e o produto abrange todos os lugares (primos racionais e o lugar infinito).
+Aqui, $G_{\mathbb{Q}}$ é o grupo de [Galois](https://kenji.blog/pt/p/galois/) absoluto, e o produto abrange todos os lugares (primos racionais e o lugar infinito).
 A Conjectura Forte de BSD contém a premissa implícita de que "$\text{Sha}(E)$ é um grupo finito para qualquer curva elíptica". No entanto, até os dias atuais, nem sequer foi provado que $\text{Sha}(E)$ é finito para curvas elípticas em geral. Excluindo os resultados relativos a curvas com multiplicação complexa de Karl Rubin e outros, a compreensão essencial de $\text{Sha}(E)$ é um dos maiores desafios da teoria dos números moderna.
 
 ## 6. Relação com o Problema dos Números Congruentes
@@ -230,7 +230,7 @@ Surpreendentemente, no caso de o posto analítico (a ordem do zero de $L(E,s)$ e
 - **Teorema de Gross-Zagier (1986)**:
   Eles mostraram que, quando o posto analítico é 1, a primeira derivada de $L(E,s)$ em $s=1$ é proporcional à altura de Néron-Tate do "Ponto de Heegner" (Heegner point) construído a partir de pontos especiais na curva modular. Devido à altura do ponto de Heegner ser não nula, eles provaram que o posto algébrico é de no mínimo 1.
 - **Teorema de Kolyvagin (1989)**:
-  Ele desenvolveu uma poderosa técnica de cohomologia de Galois chamada Sistema de Euler (Euler system) e demonstrou que se o posto analítico é 0 ou 1, o posto algébrico o igualará, e, além disso, provou que o grupo de Tate-Shafarevich $\text{Sha}(E)$ torna-se um grupo finito apenas nessas condições.
+  Ele desenvolveu uma poderosa técnica de cohomologia de [Galois](https://kenji.blog/pt/p/galois/) chamada Sistema de Euler (Euler system) e demonstrou que se o posto analítico é 0 ou 1, o posto algébrico o igualará, e, além disso, provou que o grupo de Tate-Shafarevich $\text{Sha}(E)$ torna-se um grupo finito apenas nessas condições.
 
 Devido a esses feitos, está confirmado que "a conjectura fraca de BSD é verdadeira para curvas elípticas cujo posto analítico seja 0 ou 1".
 

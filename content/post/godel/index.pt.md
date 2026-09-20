@@ -14,13 +14,13 @@ tags: ["Kurt Gödel", "Teoremas da Incompletude", "Matemática", "Lógica", "His
 
 As conquistas de Gödel vão muito além de meras provas matemáticas, alcançando a filosofia, a ciência da computação e até a cosmologia. Neste artigo, aprofundamo-nos na trajetória desse gênio que mudou para sempre a história da matemática, explorando os detalhes de suas façanhas matemáticas, sua profunda amizade com Albert Einstein e a conclusão trágica de seus últimos anos a partir de múltiplas perspectivas.
 
-# 2. A Crise na Matemática e o Programa de Hilbert
+# 2. A Crise na Matemática e o Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/)
 
 Para apreciar verdadeiramente o valor do trabalho de Gödel, é necessário entender em detalhes a "crise de fundamentos" que o mundo matemático enfrentava na época. No final do século XIX, a teoria dos conjuntos infinitos, fundada por [Georg Cantor](https://kenji.blog/pt/p/cantor/), trouxe perspectivas inteiramente novas e ferramentas poderosas para a matemática. No entanto, logo se descobriu que ela abrigava graves paradoxos de autorreferência, como o "Paradoxo de Russell".
 
 O Paradoxo de Russell considera "o conjunto de todos os conjuntos que não contêm a si mesmos como membros". Se este conjunto contiver a si mesmo, ele contradiz sua própria definição; se ele não contiver a si mesmo, ele deve, por definição, ser um membro de si mesmo, levando novamente a uma contradição. Essa descoberta expôs a extrema fragilidade dos fundamentos matemáticos da época, que dependiam muito do raciocínio intuitivo.
 
-Para resolver isso, o grande matemático alemão [David Hilbert](https://kenji.blog/pt/p/hilbert/) propôs o "Programa de Hilbert". Isso visava uma abordagem formalista para derivar todos os teoremas matemáticos de um pequeno conjunto de axiomas e regras mecânicas de inferência. O objetivo final era provar matematicamente, em um número finito de passos, que o sistema de axiomas absolutamente nunca levaria a uma contradição (consistência) e que toda proposição verdadeira poderia ser provada dentro desse sistema (completude). Se bem-sucedida, a matemática estaria em uma base perfeitamente sólida. Os matemáticos da época acreditavam firmemente no sucesso deste programa, considerando a formalização completa da matemática como apenas uma questão de tempo.
+Para resolver isso, o grande matemático alemão [David Hilbert](https://kenji.blog/pt/p/hilbert/) propôs o "Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/)". Isso visava uma abordagem formalista para derivar todos os teoremas matemáticos de um pequeno conjunto de axiomas e regras mecânicas de inferência. O objetivo final era provar matematicamente, em um número finito de passos, que o sistema de axiomas absolutamente nunca levaria a uma contradição (consistência) e que toda proposição verdadeira poderia ser provada dentro desse sistema (completude). Se bem-sucedida, a matemática estaria em uma base perfeitamente sólida. Os matemáticos da época acreditavam firmemente no sucesso deste programa, considerando a formalização completa da matemática como apenas uma questão de tempo.
 
 # 3. Início da Vida e a Filosofia do Círculo de Viena
 
@@ -34,7 +34,7 @@ O Círculo de Viena defendia o positivismo lógico, buscando descartar as propos
 
 Em 1930, em sua tese de doutorado apresentada à Universidade de Viena, Gödel provou brilhantemente o "Teorema da Completude da Lógica de Primeira Ordem". A lógica de primeira ordem é um sistema lógico no qual os quantificadores (para todo, existe) só podem ser aplicados a variáveis, não a predicados.
 
-Neste artigo, Gödel mostrou que na lógica de primeira ordem, "uma proposição que é logicamente sempre verdadeira (uma fórmula lógica válida) pode ser necessariamente provada a partir dos axiomas em um número finito de passos". Isso significou um sucesso parcial do Programa de Hilbert, garantindo que as regras de inferência do sistema lógico eram suficientemente poderosas. Muitos matemáticos tinham grandes esperanças de que isso pudesse servir como um trampolim para provar também a completude da teoria dos números (aritmética). No entanto, o artigo que Gödel publicou no ano seguinte destruiria completamente essas expectativas.
+Neste artigo, Gödel mostrou que na lógica de primeira ordem, "uma proposição que é logicamente sempre verdadeira (uma fórmula lógica válida) pode ser necessariamente provada a partir dos axiomas em um número finito de passos". Isso significou um sucesso parcial do Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/), garantindo que as regras de inferência do sistema lógico eram suficientemente poderosas. Muitos matemáticos tinham grandes esperanças de que isso pudesse servir como um trampolim para provar também a completude da teoria dos números (aritmética). No entanto, o artigo que Gödel publicou no ano seguinte destruiria completamente essas expectativas.
 
 # 5. O Choque do Primeiro Teorema da Incompletude e a Numeração de Gödel
 
@@ -59,7 +59,7 @@ flowchart TD
 
 Para provar este teorema surpreendente, Gödel inventou uma técnica inovadora conhecida como "numeração de Gödel". Este é um método de converter símbolos, fórmulas lógicas e provas inteiras passo a passo em um único número natural massivo, utilizando a exclusividade da fatoração de primos. Isso permitiu que as proposições metamatemáticas (como "uma certa fórmula lógica é provável") fossem tratadas como propriedades puramente aritméticas de números naturais. Este "Lema Diagonal", que permitiu a um sistema lógico falar sobre seus próprios limites (autorreferência), é considerado uma das técnicas de prova mais belas da história da matemática.
 
-# 6. O Segundo Teorema da Incompletude e o Fim do Sonho de Hilbert
+# 6. O Segundo Teorema da Incompletude e o Fim do Sonho de [Hilbert](https://kenji.blog/pt/p/hilbert/)
 
 Como consequência direta do Primeiro Teorema da Incompletude, Gödel derivou o ainda mais poderoso **Segundo Teorema da Incompletude**. Este afirma: "Um sistema axiomático formal consistente capaz de expressar a aritmética não pode provar sua própria consistência dentro de si mesmo."
 
@@ -69,11 +69,11 @@ $$ \text{Con}(F) \implies \neg \text{Prov}( \lceil \text{Con}(F) \rceil ) $$
 
 Aqui, $\text{Con}(F)$ é uma fórmula lógica que representa que o sistema de axiomas $F$ é consistente. Se o sistema $F$ pudesse provar sua própria consistência, o sistema seria na verdade inconsistente.
 
-O Segundo Teorema da Incompletude foi uma sentença de morte absoluta para o Programa de Hilbert. O grande sonho de Hilbert de provar a consistência da matemática inteiramente dentro da própria matemática provou ser impossível em princípio. Uma verdade profunda foi estabelecida aqui: a matemática não pode garantir a segurança de seus próprios fundamentos por seu próprio poder.
+O Segundo Teorema da Incompletude foi uma sentença de morte absoluta para o Programa de [Hilbert](https://kenji.blog/pt/p/hilbert/). O grande sonho de [Hilbert](https://kenji.blog/pt/p/hilbert/) de provar a consistência da matemática inteiramente dentro da própria matemática provou ser impossível em princípio. Uma verdade profunda foi estabelecida aqui: a matemática não pode garantir a segurança de seus próprios fundamentos por seu próprio poder.
 
 # 7. Contribuições para a Hipótese do Contínuo e o Universo Construtível (L)
 
-Mesmo depois dos teoremas da incompletude, a busca intelectual de Gödel não parou. Ele enfrentou a "Hipótese do Contínuo", um problema não resolvido de longa data na teoria dos conjuntos e o primeiro dos 23 problemas de Hilbert. Proposta por Cantor, essa hipótese postula que "não existe um conjunto cuja cardinalidade esteja estritamente entre a dos números inteiros (infinidade contável) e a dos números reais (o contínuo)".
+Mesmo depois dos teoremas da incompletude, a busca intelectual de Gödel não parou. Ele enfrentou a "Hipótese do Contínuo", um problema não resolvido de longa data na teoria dos conjuntos e o primeiro dos 23 problemas de [Hilbert](https://kenji.blog/pt/p/hilbert/). Proposta por Cantor, essa hipótese postula que "não existe um conjunto cuja cardinalidade esteja estritamente entre a dos números inteiros (infinidade contável) e a dos números reais (o contínuo)".
 
 $$ 2^{\aleph_0} = \aleph_1 $$
 

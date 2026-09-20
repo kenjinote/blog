@@ -30,7 +30,7 @@ $$ P = \frac{F}{A} $$
 
 Según el famoso estudio del cirujano ortopédico sueco Alf Nachemson, si se toma la presión intradiscal entre la 3ª y 4ª vértebra lumbar de pie como el 100%, esta alcanza el 140% al sentarse con una postura correcta, y ¡de un 185% a más del 200%! al sentarse inclinado hacia adelante (encorvado).
 
-En este momento, no solo la fuerza de compresión $F$ debido a la masa de la parte superior del cuerpo, sino también el momento de flexión causado por la postura inclinada hacia adelante, concentra la tensión en áreas específicas del disco intervertebral (especialmente en el ligamento anular posterior), aumentando drásticamente la presión $P_{local}$ en un área local $A_{local}$. Pensando en la unidad Pascal (Pa, $N/m^2$), una enorme presión que alcanza varios megapascales (MPa) se concentra en anillos fibrosos específicos, convirtiéndose en la causa directa de hernias de disco y dolor lumbar crónico.
+En este momento, no solo la fuerza de compresión $F$ debido a la masa de la parte superior del cuerpo, sino también el momento de flexión causado por la postura inclinada hacia adelante, concentra la tensión en áreas específicas del disco intervertebral (especialmente en el ligamento anular posterior), aumentando drásticamente la presión $P_{local}$ en un área local $A_{local}$. Pensando en la unidad [Pascal](https://kenji.blog/es/p/pascal/) (Pa, $N/m^2$), una enorme presión que alcanza varios megapascales (MPa) se concentra en anillos fibrosos específicos, convirtiéndose en la causa directa de hernias de disco y dolor lumbar crónico.
 
 ### Cálculo del torque en malas posturas (encorvamiento / sentarse sobre el sacro)
 

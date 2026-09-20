@@ -24,7 +24,7 @@ En 1929, [Kiyosi Oka](https://kenji.blog/fr/p/oka-kiyoshi/) se rendit à Paris, 
 
 À l'Université de Paris, il interagissait avec des génies dirigeant le monde mathématique européen de l'époque, tels que Henri Cartan et Gaston Julia. En fréquentant particulièrement le laboratoire de Julia, Oka a découvert le domaine de **l'analyse à plusieurs variables complexes** (Several Complex Variables), qui était alors encore un désert inexploré.
 
-Alors que l'analyse complexe à une variable avait été magnifiquement achevée au 19ème siècle par Cauchy, Riemann et d'autres, des difficultés entièrement différentes attendaient dans le cas de plusieurs variables. Un exemple représentatif est le « phénomène de Hartogs ».
+Alors que l'analyse complexe à une variable avait été magnifiquement achevée au 19ème siècle par [Cauchy](https://kenji.blog/fr/p/cauchy/), [Riemann](https://kenji.blog/fr/p/riemann/) et d'autres, des difficultés entièrement différentes attendaient dans le cas de plusieurs variables. Un exemple représentatif est le « phénomène de Hartogs ».
 
 $$
 \text{Théorème de Hartogs : Dans } \mathbb{C}^n \ (n \ge 2) \text{, une fonction qui est holomorphe sur la frontière d'un certain domaine est automatiquement prolongée holomorphiquement à l'intérieur du domaine.}

@@ -24,7 +24,7 @@ Pada tahun 1929, [Kiyosi Oka](https://kenji.blog/id/p/oka-kiyoshi/) melakukan pe
 
 Di Universitas Paris, ia berinteraksi dengan para jenius yang memimpin dunia matematika Eropa pada saat itu, seperti Henri Cartan dan Gaston Julia. Terutama saat sering mengunjungi laboratorium Julia, Oka menemukan bidang **beberapa variabel kompleks**, yang saat itu masih berupa hutan belantara yang belum dijelajahi.
 
-Sementara analisis kompleks satu variabel telah diselesaikan dengan indah pada abad ke-19 oleh Cauchy, Riemann, dan lainnya, kesulitan yang sama sekali berbeda menanti dalam kasus beberapa variabel. Contoh yang representatif adalah "fenomena Hartogs".
+Sementara analisis kompleks satu variabel telah diselesaikan dengan indah pada abad ke-19 oleh [Cauchy](https://kenji.blog/id/p/cauchy/), [Riemann](https://kenji.blog/id/p/riemann/), dan lainnya, kesulitan yang sama sekali berbeda menanti dalam kasus beberapa variabel. Contoh yang representatif adalah "fenomena Hartogs".
 
 $$
 \text{Teorema Hartogs: Dalam } \mathbb{C}^n \ (n \ge 2) \text{, sebuah fungsi yang holomorfik pada batas domain tertentu secara otomatis diperluas secara holomorfik ke bagian dalam domain.}

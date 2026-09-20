@@ -18,35 +18,35 @@ His discovery served as a bridge connecting the "local" and "global" perspective
 
 [Kurt Hensel](https://kenji.blog/en/p/hensel/) was born on December 29, 1861, in Königsberg, East Prussia (now Kaliningrad, Russia). His family holds a highly significant place in the intellectual and artistic history of Germany.
 
-His grandfather was the famous painter **Wilhelm Hensel**, and his grandmother was the outstanding pianist and composer **Fanny Mendelssohn** (the sister of the famous composer Felix Mendelssohn). Going back further, his great-grandfather was the representative philosopher of the Enlightenment, **Moses Mendelssohn**. It can be said that this culturally and intellectually rich family environment fostered [Kurt Hensel](https://kenji.blog/en/p/hensel/)'s free and creative thinking.
+His grandfather was the famous painter **Wilhelm [Hensel](https://kenji.blog/en/p/hensel/)**, and his grandmother was the outstanding pianist and composer **Fanny Mendelssohn** (the sister of the famous composer Felix Mendelssohn). Going back further, his great-grandfather was the representative philosopher of the Enlightenment, **Moses Mendelssohn**. It can be said that this culturally and intellectually rich family environment fostered [Kurt Hensel](https://kenji.blog/en/p/hensel/)'s free and creative thinking.
 
 When he was young, his family moved to Berlin, where he received high-quality primary and secondary education. His talent for mathematics blossomed early, leading him naturally to the path of mathematical research at the university level.
 
-## 3. University Days and Kronecker's Influence
+## 3. University Days and [Kronecker](https://kenji.blog/en/p/kronecker/)'s Influence
 
-Hensel studied mathematics at the Universities of Bonn and Berlin. At the time, the University of Berlin was one of the world's centers for mathematical research, with giants such as **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **Leopold Kronecker** teaching there.
+[Hensel](https://kenji.blog/en/p/hensel/) studied mathematics at the Universities of Bonn and Berlin. At the time, the University of Berlin was one of the world's centers for mathematical research, with giants such as **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **Leopold [Kronecker](https://kenji.blog/en/p/kronecker/)** teaching there.
 
-Among them, Kronecker had the deepest influence on Hensel. As known from his famous quote, "God made the integers, all else is the work of man," Kronecker held a strong belief that all mathematics should be rigorously reconstructed based on integers. Under Kronecker's guidance, Hensel devoted himself deeply to algebra and number theory.
+Among them, [Kronecker](https://kenji.blog/en/p/kronecker/) had the deepest influence on [Hensel](https://kenji.blog/en/p/hensel/). As known from his famous quote, "God made the integers, all else is the work of man," [Kronecker](https://kenji.blog/en/p/kronecker/) held a strong belief that all mathematics should be rigorously reconstructed based on integers. Under [Kronecker](https://kenji.blog/en/p/kronecker/)'s guidance, [Hensel](https://kenji.blog/en/p/hensel/) devoted himself deeply to algebra and number theory.
 
-In 1884, Hensel obtained his doctorate from the University of Berlin. The theme of his doctoral dissertation was on the arithmetic properties of algebraic functions, which would serve as an important foreshadowing for his later discovery of **p-adic numbers**.
+In 1884, [Hensel](https://kenji.blog/en/p/hensel/) obtained his doctorate from the University of Berlin. The theme of his doctoral dissertation was on the arithmetic properties of algebraic functions, which would serve as an important foreshadowing for his later discovery of **p-adic numbers**.
 
 ## 4. Analogy Between Functions and Numbers
 
-Hensel's greatest inspiration came from the deep analogy between "numbers" (algebraic integers) and "functions" (algebraic functions).
+[Hensel](https://kenji.blog/en/p/hensel/)'s greatest inspiration came from the deep analogy between "numbers" (algebraic integers) and "functions" (algebraic functions).
 
 In the late 19th century, **Richard Dedekind** and **Heinrich Weber** had shown that there was an astonishing structural similarity between algebraic number fields and algebraic function fields. A function on the complex plane can be represented locally around each point as a power series, such as a Taylor or Laurent expansion.
 
-Hensel asked himself: "If a function can be studied locally as a power series around each point, could rational numbers and algebraic integers also be represented as power series around some kind of 'point'?"
+[Hensel](https://kenji.blog/en/p/hensel/) asked himself: "If a function can be studied locally as a power series around each point, could rational numbers and algebraic integers also be represented as power series around some kind of 'point'?"
 
-The equivalent of a "point" in numbers was a **prime number $p$**. Hensel arrived at the innovative idea of expressing any rational number as a series with a prime number $p$ as its base.
+The equivalent of a "point" in numbers was a **prime number $p$**. [Hensel](https://kenji.blog/en/p/hensel/) arrived at the innovative idea of expressing any rational number as a series with a prime number $p$ as its base.
 
 ## 5. Discovery of p-adic Numbers and Mathematical Foundations
 
-In 1897, Hensel published a groundbreaking paper introducing the concept of **p-adic numbers** to the world for the first time.
+In 1897, [Hensel](https://kenji.blog/en/p/hensel/) published a groundbreaking paper introducing the concept of **p-adic numbers** to the world for the first time.
 
 ### 5.1 p-adic Valuation and Absolute Value
 
-Normally, the completion of the field of rational numbers $\mathbb{Q}$ yields the field of real numbers $\mathbb{R}$. This is a completion as a metric space based on the "absolute value" we use daily. However, Hensel introduced an entirely different way of measuring distance focused on a prime number $p$.
+Normally, the completion of the field of rational numbers $\mathbb{Q}$ yields the field of real numbers $\mathbb{R}$. This is a completion as a metric space based on the "absolute value" we use daily. However, [Hensel](https://kenji.blog/en/p/hensel/) introduced an entirely different way of measuring distance focused on a prime number $p$.
 
 Any non-zero rational number $x$ can be uniquely decomposed using a given prime number $p$ as follows:
 
@@ -68,7 +68,7 @@ $$
 
 ### 5.2 Completion from Rational to p-adic Numbers
 
-Using the distance $d(x, y) = |x - y|_p$ defined by this p-adic absolute value, the new number system obtained by applying Cauchy sequence completion to the field of rational numbers $\mathbb{Q}$ is the **field of p-adic numbers** $\mathbb{Q}_p$.
+Using the distance $d(x, y) = |x - y|_p$ defined by this p-adic absolute value, the new number system obtained by applying [Cauchy](https://kenji.blog/en/p/cauchy/) sequence completion to the field of rational numbers $\mathbb{Q}$ is the **field of p-adic numbers** $\mathbb{Q}_p$.
 
 The diagram below illustrates how number systems branch and expand.
 
@@ -115,9 +115,9 @@ $$
 $$
 This infinite sum diverges in the usual sense, but in the world of p-adic absolute values, the terms become smaller as they progress, meaning it converges perfectly without contradiction.
 
-## 6. Hensel's Lemma
+## 6. [Hensel](https://kenji.blog/en/p/hensel/)'s Lemma
 
-One of the most powerful tools presented by Hensel is **Hensel's Lemma**. This is a theorem that provides the conditions for a polynomial equation to have roots within the field of p-adic numbers, and it can be described as the p-adic version of "Newton's method" in real analysis.
+One of the most powerful tools presented by [Hensel](https://kenji.blog/en/p/hensel/) is **[Hensel](https://kenji.blog/en/p/hensel/)'s Lemma**. This is a theorem that provides the conditions for a polynomial equation to have roots within the field of p-adic numbers, and it can be described as the p-adic version of "Newton's method" in real analysis.
 
 The assertion of the theorem is as follows.
 Suppose we have a polynomial $f(x)$ with integer coefficients and a prime number $p$. If there exists an integer $a$ that is an approximate root modulo $p$, and its derivative is not $0$, that is,
@@ -136,15 +136,15 @@ This lemma made it possible to find exact solutions as p-adic numbers by success
 
 ## 7. Ostrowski's Theorem and the Hasse Principle
 
-Hensel's concepts were further refined by other mathematicians.
+[Hensel](https://kenji.blog/en/p/hensel/)'s concepts were further refined by other mathematicians.
 
 In 1916, Alexander Ostrowski proved **Ostrowski's Theorem**. This is the surprising fact that "every non-trivial absolute value on the field of rational numbers is equivalent to either the usual absolute value or the p-adic absolute value for some prime number $p$." Thus, gathering the real numbers and all the p-adic numbers "exhaustively covers" all possibilities of completing the rational numbers.
 
-Furthermore, Hensel's student **[Helmut Hasse](https://kenji.blog/en/p/hasse/)** established the **Local-Global Principle** (Hasse Principle). This is a beautiful theorem stating that "a necessary and sufficient condition for an equation to have a solution over the rational numbers (globally) is that it has a solution over the real numbers and the p-adic numbers for all primes $p$ (locally)." With this, p-adic numbers secured an unshakable position as essential tools in number theory.
+Furthermore, [Hensel](https://kenji.blog/en/p/hensel/)'s student **[Helmut Hasse](https://kenji.blog/en/p/hasse/)** established the **Local-Global Principle** (Hasse Principle). This is a beautiful theorem stating that "a necessary and sufficient condition for an equation to have a solution over the rational numbers (globally) is that it has a solution over the real numbers and the p-adic numbers for all primes $p$ (locally)." With this, p-adic numbers secured an unshakable position as essential tools in number theory.
 
 ## 8. Contributions as an Educator and Editor, and Legacy
 
-Hensel made tremendous contributions not only as a researcher but also as an educator and editor. From 1901 for many years, he served as the editor-in-chief of "Crelle's Journal" (officially: Journal für die reine und angewandte Mathematik), one of the world's oldest mathematics journals, supporting the dissemination of cutting-edge mathematical research of his time.
+[Hensel](https://kenji.blog/en/p/hensel/) made tremendous contributions not only as a researcher but also as an educator and editor. From 1901 for many years, he served as the editor-in-chief of "Crelle's Journal" (officially: Journal für die reine und angewandte Mathematik), one of the world's oldest mathematics journals, supporting the dissemination of cutting-edge mathematical research of his time.
 
 His lectures were clear and passionate, nurturing the next generation of brilliant mathematicians, including [Helmut Hasse](https://kenji.blog/en/p/hasse/).
 

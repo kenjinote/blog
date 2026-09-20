@@ -46,13 +46,13 @@ La historia del teorema de los números primos se remonta a finales del siglo XV
 
 Sin embargo, no lograron demostrar esto rigurosamente.
 
-El gran avance en la demostración llegó en 1859 con el revolucionario artículo de [Bernhard Riemann](https://kenji.blog/es/p/riemann/) "Sobre el número de primos menores que una magnitud dada". Riemann presentó un enfoque completamente nuevo, utilizando una función compleja, la **función zeta** $\zeta(s)$, para transformar el problema de la distribución de los números primos en un problema sobre el plano complejo.
+El gran avance en la demostración llegó en 1859 con el revolucionario artículo de [Bernhard Riemann](https://kenji.blog/es/p/riemann/) "Sobre el número de primos menores que una magnitud dada". [Riemann](https://kenji.blog/es/p/riemann/) presentó un enfoque completamente nuevo, utilizando una función compleja, la **función zeta** $\zeta(s)$, para transformar el problema de la distribución de los números primos en un problema sobre el plano complejo.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ primo}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 
 Esta fórmula del producto de Euler (Euler product formula) es una relación sumamente importante que conecta una función sobre la suma de todos los números naturales (lado izquierdo) con un producto infinito exclusivamente sobre números primos (lado derecho).
 
-Posteriormente, en 1896, Jacques Hadamard y Charles de la Vallée Poussin, de forma independiente y basándose en las ideas de Riemann, completaron la demostración del teorema de los números primos. La clave de sus demostraciones fue mostrar que "la función zeta de Riemann $\zeta(s)$ no tiene ceros en la recta $\operatorname{Re}(s) = 1$ del plano complejo".
+Posteriormente, en 1896, Jacques Hadamard y Charles de la Vallée Poussin, de forma independiente y basándose en las ideas de [Riemann](https://kenji.blog/es/p/riemann/), completaron la demostración del teorema de los números primos. La clave de sus demostraciones fue mostrar que "la función zeta de [Riemann](https://kenji.blog/es/p/riemann/) $\zeta(s)$ no tiene ceros en la recta $\operatorname{Re}(s) = 1$ del plano complejo".
 
 ## Una aproximación de mayor precisión: Integral logarítmica $\operatorname{Li}(x)$
 
@@ -73,17 +73,17 @@ De hecho, cuando $x = 10^{10}$:
 
 Podemos ver lo excelente que es la aproximación dada por la integral logarítmica.
 
-## Profunda relación con la hipótesis de Riemann
+## Profunda relación con la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/)
 
-Inseparablemente ligado al teorema de los números primos está la **Hipótesis de Riemann** (Riemann Hypothesis), considerada el problema sin resolver más importante de las matemáticas.
+Inseparablemente ligado al teorema de los números primos está la **Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/)** ([Riemann](https://kenji.blog/es/p/riemann/) Hypothesis), considerada el problema sin resolver más importante de las matemáticas.
 
-La hipótesis de Riemann afirma que "todos los ceros no triviales de la función zeta de Riemann $\zeta(s)$ se encuentran en la recta con parte real igual a $1/2$ (la línea crítica)".
+La hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) afirma que "todos los ceros no triviales de la función zeta de [Riemann](https://kenji.blog/es/p/riemann/) $\zeta(s)$ se encuentran en la recta con parte real igual a $1/2$ (la línea crítica)".
 
-Si se demuestra que la hipótesis de Riemann es correcta, se obtendría la estimación más fuerte posible para el término de error (la diferencia entre $\pi(x)$ y $\operatorname{Li}(x)$) en el teorema de los números primos. Específicamente, se sabe que existe una constante $C$ tal que,
+Si se demuestra que la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) es correcta, se obtendría la estimación más fuerte posible para el término de error (la diferencia entre $\pi(x)$ y $\operatorname{Li}(x)$) en el teorema de los números primos. Específicamente, se sabe que existe una constante $C$ tal que,
 
 $$ |\pi(x) - \operatorname{Li}(x)| \le C \sqrt{x} \ln(x) $$
 
-se cumple. Esto significa que "los números primos están distribuidos de manera tan extremadamente regular que son indistinguibles de una distribución completamente aleatoria". En otras palabras, el teorema de los números primos habla de la distribución "promedio" de los primos, mientras que la hipótesis de Riemann habla de los límites de esa "fluctuación (error)".
+se cumple. Esto significa que "los números primos están distribuidos de manera tan extremadamente regular que son indistinguibles de una distribución completamente aleatoria". En otras palabras, el teorema de los números primos habla de la distribución "promedio" de los primos, mientras que la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) habla de los límites de esa "fluctuación (error)".
 
 ## Comprobando el teorema de los números primos en Python
 
@@ -146,4 +146,4 @@ Por ejemplo, la probabilidad de que un número impar aleatorio de 1024 bits sea 
 
 El teorema de los números primos es uno de los teoremas más hermosos que encarna el "orden dentro del caos" en las matemáticas. El hecho de que una ley fundamental de la naturaleza como la función logarítmica esté oculta en la distribución aparentemente aleatoria de los números primos sigue fascinando a muchos matemáticos.
 
-Este campo, pionero gracias a genios como Gauss, Riemann y Hadamard, sigue estando a la vanguardia de las matemáticas modernas a través de ese gigantesco problema sin resolver que es la hipótesis de Riemann. El misterio de los números primos es profundo, y la exploración continuará hasta el día en que comprendamos el panorama completo.
+Este campo, pionero gracias a genios como Gauss, [Riemann](https://kenji.blog/es/p/riemann/) y Hadamard, sigue estando a la vanguardia de las matemáticas modernas a través de ese gigantesco problema sin resolver que es la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/). El misterio de los números primos es profundo, y la exploración continuará hasta el día en que comprendamos el panorama completo.

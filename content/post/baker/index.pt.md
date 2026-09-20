@@ -42,8 +42,8 @@ Para apreciar o verdadeiro valor do trabalho de Baker, devemos primeiro revisar 
 
 No final do século XIX, [Georg Cantor](https://kenji.blog/pt/p/cantor/) provou a partir de uma perspectiva da teoria dos conjuntos que, embora o conjunto dos números algébricos seja infinito enumerável, o conjunto de todos os números complexos é infinito não enumerável. Isso significa que "quase todos os números são transcendentes". No entanto, provar que um determinado número específico é transcendente é extremamente difícil.
 
-### 3.2 O 7º Problema de Hilbert e o Teorema de Gelfond-Schneider
-Em 1900, [David Hilbert](https://kenji.blog/pt/p/hilbert/) apresentou 23 problemas não resolvidos (Problemas de Hilbert) no Congresso Internacional de Matemáticos em Paris. Seu 7º problema era o seguinte:
+### 3.2 O 7º Problema de [Hilbert](https://kenji.blog/pt/p/hilbert/) e o Teorema de Gelfond-Schneider
+Em 1900, [David Hilbert](https://kenji.blog/pt/p/hilbert/) apresentou 23 problemas não resolvidos (Problemas de [Hilbert](https://kenji.blog/pt/p/hilbert/)) no Congresso Internacional de Matemáticos em Paris. Seu 7º problema era o seguinte:
 
 > "Se $\alpha$ for um número algébrico diferente de $0$ ou $1$, e $\beta$ for um número algébrico irracional, então $\alpha^\beta$ será sempre um número transcendente?"
 

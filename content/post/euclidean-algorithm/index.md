@@ -109,7 +109,7 @@ int main() {
 
 ## 計算量とラメの定理
 
-[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)はどれくらい速いのでしょうか。この計算量については、1844年にフランスの数学者[ガブリエル・ラメ](https://kenji.blog/p/lame/)によって証明された **ラメの定理** （Lamé's theorem）が有名です。
+[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)はどれくらい速いのでしょうか。この計算量については、1844年にフランスの数学者[ガブリエル・ラメ](https://kenji.blog/p/lame/)によって証明された **ラメの定理** （[Lamé](https://kenji.blog/p/lame/)'s theorem）が有名です。
 
 > **ラメの定理**
 > 2つの自然数 $a, b$ （$a > b$）に対して[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を適用したときの割り算の回数は、 $b$ の十進法での桁数の $5$ 倍以下である。

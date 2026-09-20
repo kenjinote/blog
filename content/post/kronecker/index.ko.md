@@ -20,7 +20,7 @@ tags:
 > "Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk."
 > (신은 정수를 만들었고, 나머지는 모두 인간의 작품이다)
 
-수학의 역사에서 이 명언만큼 유명하고 한 수학자의 사상을 단적으로 보여주는 구절은 없습니다. 이 말을 남긴 사람은 19세기 독일을 대표하는 수학자 **레오폴트 크로네커** (Leopold Kronecker, 1823–1891)입니다.
+수학의 역사에서 이 명언만큼 유명하고 한 수학자의 사상을 단적으로 보여주는 구절은 없습니다. 이 말을 남긴 사람은 19세기 독일을 대표하는 수학자 **레오폴트 크로네커** (Leopold [Kronecker](https://kenji.blog/ko/p/kronecker/), 1823–1891)입니다.
 
 그의 이 말은 단순한 시적 표현이 아니라, 그의 **수학적 구성주의** (Constructivism)라는 강렬한 신념에서 비롯된 것이었습니다. 이 글에서는 크로네커의 생애, 그가 수학계에서 일으킨 논쟁, 그리고 그가 현대 수학에 남긴 위대한 발자취에 대해 깊이 파헤쳐 봅니다.
 
@@ -74,7 +74,7 @@ graph TD
 
 크로네커의 사상은 때때로 극단적이었지만, 그가 남긴 수학적 업적은 틀림없이 최고 수준이었으며 현대 수학 곳곳에 그의 이름이 붙은 개념들이 남아있습니다.
 
-## 4.1. 크로네커 델타 (Kronecker Delta)
+## 4.1. 크로네커 델타 ([Kronecker](https://kenji.blog/ko/p/kronecker/) Delta)
 
 가장 널리 알려진 것은 아마도 '크로네커 델타'일 것입니다. 선형대수학이나 물리학(양자역학 및 텐서 해석)에서 자주 등장하는 이 기호는 다음과 같이 정의됩니다.
 
@@ -91,7 +91,7 @@ $$
 \mathbf{e}_i \cdot \mathbf{e}_j = \delta_{ij}
 $$
 
-## 4.2. 크로네커 곱 (Kronecker Product)
+## 4.2. 크로네커 곱 ([Kronecker](https://kenji.blog/ko/p/kronecker/) Product)
 
 행렬 텐서 곱의 일종인 '크로네커 곱' 역시 그의 이름을 딴 것입니다. 행렬 $A$ (크기 $m \times n$)와 행렬 $B$ (크기 $p \times q$)의 크로네커 곱 $A \otimes B$ 는 크기 $(mp) \times (nq)$ 의 블록 행렬로서 다음과 같이 정의됩니다.
 
@@ -105,11 +105,11 @@ $$
 
 이는 양자 정보 이론에서의 다체계 기술, 신호 처리 및 머신 러닝 알고리즘에서 중요한 역할을 합니다.
 
-## 4.3. 크로네커-베버 정리 (Kronecker-Weber Theorem)
+## 4.3. 크로네커-베버 정리 ([Kronecker](https://kenji.blog/ko/p/kronecker/)-Weber Theorem)
 
 대수적 정수론에서 금자탑 중 하나가 바로 '크로네커-베버 정리'입니다. 이 정리는 다음과 같이 주장합니다.
 
-**정리 (Kronecker-Weber):** 
+**정리 ([Kronecker](https://kenji.blog/ko/p/kronecker/)-Weber):** 
 유리수체 $\mathbb{Q}$ 상의 임의의 유한 차수 아벨 확대체는 어떤 원분체 $\mathbb{Q}(\zeta_n)$ 의 부분체가 된다. (여기서 $\zeta_n$ 은 $1$ 의 원시 $n$ 제곱근)
 
 $$

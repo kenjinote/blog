@@ -18,7 +18,7 @@ tags:
 
 Der große deutsche Mathematiker [David Hilbert](https://kenji.blog/de/p/hilbert/) hat folgendes interessantes Gedankenexperiment erfunden, um zu veranschaulichen, wie weit das Konzept der "Unendlichkeit" von der menschlichen Intuition entfernt ist.
 
-Stellen Sie sich vor: Irgendwo im Universum gibt es **"Hilberts unendliches Hotel"**.
+Stellen Sie sich vor: Irgendwo im Universum gibt es **"[Hilbert](https://kenji.blog/de/p/hilbert/)s unendliches Hotel"**.
 In diesem Hotel gibt es **unendlich viele** nummerierte Zimmer, also Zimmer 1, Zimmer 2, Zimmer 3, und so weiter.
 
 Eines Tages gab es ein riesiges Ereignis im gesamten Universum, und dieses unendliche Hotel war völlig **"ausgebucht"**, jedes Zimmer war belegt.
@@ -156,7 +156,7 @@ Auf diese Weise hat der Manager die ungeheure Anzahl von **"unendlich $\times$ u
 
 ## 5. Unendlichkeiten haben verschiedene "Größen" (Satz von Cantor)
 
-Hilberts unendliches Hotel lehrt uns die Tatsache, dass **die "abzählbare Unendlichkeit" (eine Unendlichkeit, die man mit 1, 2, 3... nummerieren und zählen kann), egal wie oft man sie addiert oder multipliziert, letztendlich immer in den Rahmen derselben "abzählbaren Unendlichkeit" passt**.
+[Hilbert](https://kenji.blog/de/p/hilbert/)s unendliches Hotel lehrt uns die Tatsache, dass **die "abzählbare Unendlichkeit" (eine Unendlichkeit, die man mit 1, 2, 3... nummerieren und zählen kann), egal wie oft man sie addiert oder multipliziert, letztendlich immer in den Rahmen derselben "abzählbaren Unendlichkeit" passt**.
 
 Der Mathematiker [Georg Cantor](https://kenji.blog/de/p/cantor/) entdeckte jedoch eine noch erschreckendere Tatsache.
 "Natürliche Zahlen" und "Brüche" können alle in diesem unendlichen Hotel untergebracht werden. Aber **wenn Gäste in Form von "reellen Zahlen (alle Dezimalzahlen einschließlich irrationaler Zahlen)" ankommen, können absolut nicht alle in diesem unendlichen Hotel untergebracht werden**.
@@ -168,7 +168,7 @@ Oft wird alles unter dem Begriff "Unendlichkeit" zusammengefasst, aber in Wirkli
 
 ## 6. Fazit: Die "Unendlichkeit", die unsere menschliche Intuition zerstört
 
-Hilberts unendliches Hotel zeigt auf brillante Weise, dass unser "endlicher gesunder Menschenverstand", den wir in unserem täglichen Leben entwickelt haben, in der "unendlichen Welt" einfach nicht funktioniert.
+[Hilbert](https://kenji.blog/de/p/hilbert/)s unendliches Hotel zeigt auf brillante Weise, dass unser "endlicher gesunder Menschenverstand", den wir in unserem täglichen Leben entwickelt haben, in der "unendlichen Welt" einfach nicht funktioniert.
 
 "Das Ganze ist größer als seine Teile"
 "Niemand kann ein voll belegtes Hotel betreten"
@@ -177,5 +177,5 @@ Hilberts unendliches Hotel zeigt auf brillante Weise, dass unser "endlicher gesu
 Alle diese selbstverständlichen Intuitionen werden auf wunderbare Weise widerlegt.
 Die unendliche Welt ist eine Schatztruhe voller Paradoxien (Wahrheiten, die der Intuition widersprechen). Mathematiker haben diese Paradoxien nicht gefürchtet, sondern sie mit der Kraft der Logik bezwungen, klassifiziert und das wunderschöne System der modernen Mengenlehre geschaffen.
 
-Wenn man Ihnen das nächste Mal absagt mit den Worten "Das Hotel ist ausgebucht", stellen Sie sich doch einfach vor: "Was wäre, wenn dieses Hotel Hilberts unendliches Hotel wäre?"
+Wenn man Ihnen das nächste Mal absagt mit den Worten "Das Hotel ist ausgebucht", stellen Sie sich doch einfach vor: "Was wäre, wenn dieses Hotel [Hilbert](https://kenji.blog/de/p/hilbert/)s unendliches Hotel wäre?"
 

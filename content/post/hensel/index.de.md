@@ -18,35 +18,35 @@ Seine Entdeckung diente als Brücke, die „lokale“ und „globale“ Perspekt
 
 [Kurt Hensel](https://kenji.blog/de/p/hensel/) wurde am 29. Dezember 1861 in Königsberg, Ostpreußen (heute Kaliningrad, Russland), geboren. Seine Familie nimmt in der intellektuellen und künstlerischen Geschichte Deutschlands einen äußerst bedeutenden Platz ein.
 
-Sein Großvater war der berühmte Maler **Wilhelm Hensel**, und seine Großmutter war die herausragende Pianistin und Komponistin **Fanny Mendelssohn** (die Schwester des berühmten Komponisten Felix Mendelssohn). Weiter zurückreichend war sein Urgroßvater der repräsentative Philosoph der Aufklärung, **Moses Mendelssohn**. Man kann sagen, dass dieses kulturell und intellektuell reiche familiäre Umfeld [Kurt Hensel](https://kenji.blog/de/p/hensel/)s freies und kreatives Denken förderte.
+Sein Großvater war der berühmte Maler **Wilhelm [Hensel](https://kenji.blog/de/p/hensel/)**, und seine Großmutter war die herausragende Pianistin und Komponistin **Fanny Mendelssohn** (die Schwester des berühmten Komponisten Felix Mendelssohn). Weiter zurückreichend war sein Urgroßvater der repräsentative Philosoph der Aufklärung, **Moses Mendelssohn**. Man kann sagen, dass dieses kulturell und intellektuell reiche familiäre Umfeld [Kurt Hensel](https://kenji.blog/de/p/hensel/)s freies und kreatives Denken förderte.
 
 In seiner Jugend zog die Familie nach Berlin, wo er eine hochwertige Grund- und Sekundarschulbildung erhielt. Sein Talent für Mathematik erblühte früh und führte ihn ganz natürlich auf den Weg der mathematischen Forschung an der Universität.
 
-## 3. Universitätszeit und Kroneckers Einfluss
+## 3. Universitätszeit und [Kronecker](https://kenji.blog/de/p/kronecker/)s Einfluss
 
-Hensel studierte Mathematik an den Universitäten Bonn und Berlin. Damals war die Universität Berlin eines der weltweiten Zentren für mathematische Forschung, an dem Größen wie **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold Kronecker** lehrten.
+[Hensel](https://kenji.blog/de/p/hensel/) studierte Mathematik an den Universitäten Bonn und Berlin. Damals war die Universität Berlin eines der weltweiten Zentren für mathematische Forschung, an dem Größen wie **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold [Kronecker](https://kenji.blog/de/p/kronecker/)** lehrten.
 
-Unter ihnen hatte Kronecker den stärksten Einfluss auf Hensel. Wie sein berühmtes Zitat „Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk“ zeigt, war Kronecker fest davon überzeugt, dass die gesamte Mathematik streng auf der Grundlage ganzer Zahlen rekonstruiert werden sollte. Unter Kroneckers Anleitung widmete sich Hensel tief der Algebra und Zahlentheorie.
+Unter ihnen hatte [Kronecker](https://kenji.blog/de/p/kronecker/) den stärksten Einfluss auf [Hensel](https://kenji.blog/de/p/hensel/). Wie sein berühmtes Zitat „Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk“ zeigt, war [Kronecker](https://kenji.blog/de/p/kronecker/) fest davon überzeugt, dass die gesamte Mathematik streng auf der Grundlage ganzer Zahlen rekonstruiert werden sollte. Unter [Kronecker](https://kenji.blog/de/p/kronecker/)s Anleitung widmete sich [Hensel](https://kenji.blog/de/p/hensel/) tief der Algebra und Zahlentheorie.
 
-1884 promovierte Hensel an der Universität Berlin. Das Thema seiner Dissertation befasste sich mit den arithmetischen Eigenschaften algebraischer Funktionen, was als wichtiger Vorbote für seine spätere Entdeckung der **p-adischen Zahlen** dienen sollte.
+1884 promovierte [Hensel](https://kenji.blog/de/p/hensel/) an der Universität Berlin. Das Thema seiner Dissertation befasste sich mit den arithmetischen Eigenschaften algebraischer Funktionen, was als wichtiger Vorbote für seine spätere Entdeckung der **p-adischen Zahlen** dienen sollte.
 
 ## 4. Analogie zwischen Funktionen und Zahlen
 
-Hensels größte Inspiration stammte aus der tiefen Analogie zwischen „Zahlen“ (algebraischen ganzen Zahlen) und „Funktionen“ (algebraischen Funktionen).
+[Hensel](https://kenji.blog/de/p/hensel/)s größte Inspiration stammte aus der tiefen Analogie zwischen „Zahlen“ (algebraischen ganzen Zahlen) und „Funktionen“ (algebraischen Funktionen).
 
 Im späten 19. Jahrhundert hatten **Richard Dedekind** und **Heinrich Weber** gezeigt, dass es eine erstaunliche strukturelle Ähnlichkeit zwischen algebraischen Zahlkörpern und algebraischen Funktionenkörpern gab. Eine Funktion in der komplexen Ebene kann lokal um jeden Punkt als Potenzreihe dargestellt werden, wie etwa durch eine Taylor- oder Laurent-Reihe.
 
-Hensel fragte sich: „Wenn eine Funktion lokal als Potenzreihe um jeden Punkt untersucht werden kann, könnten dann rationale Zahlen und algebraische ganze Zahlen nicht auch als Potenzreihen um eine Art ‚Punkt‘ dargestellt werden?“
+[Hensel](https://kenji.blog/de/p/hensel/) fragte sich: „Wenn eine Funktion lokal als Potenzreihe um jeden Punkt untersucht werden kann, könnten dann rationale Zahlen und algebraische ganze Zahlen nicht auch als Potenzreihen um eine Art ‚Punkt‘ dargestellt werden?“
 
-Das Äquivalent eines „Punktes“ bei Zahlen war eine **Primzahl $p$**. Hensel gelangte zu der innovativen Idee, jede rationale Zahl als Reihe mit einer Primzahl $p$ als Basis auszudrücken.
+Das Äquivalent eines „Punktes“ bei Zahlen war eine **Primzahl $p$**. [Hensel](https://kenji.blog/de/p/hensel/) gelangte zu der innovativen Idee, jede rationale Zahl als Reihe mit einer Primzahl $p$ als Basis auszudrücken.
 
 ## 5. Entdeckung der p-adischen Zahlen und mathematische Grundlagen
 
-1897 veröffentlichte Hensel eine bahnbrechende Arbeit, die das Konzept der **p-adischen Zahlen** erstmals der Welt vorstellte.
+1897 veröffentlichte [Hensel](https://kenji.blog/de/p/hensel/) eine bahnbrechende Arbeit, die das Konzept der **p-adischen Zahlen** erstmals der Welt vorstellte.
 
 ### 5.1 p-adische Bewertung und Absolutbetrag
 
-Normalerweise ergibt die Vervollständigung des Körpers der rationalen Zahlen $\mathbb{Q}$ den Körper der reellen Zahlen $\mathbb{R}$. Dies ist eine Vervollständigung als metrischer Raum basierend auf dem „Absolutbetrag“, den wir täglich verwenden. Hensel führte jedoch eine völlig andere Methode zur Entfernungsmessung ein, die sich auf eine Primzahl $p$ konzentrierte.
+Normalerweise ergibt die Vervollständigung des Körpers der rationalen Zahlen $\mathbb{Q}$ den Körper der reellen Zahlen $\mathbb{R}$. Dies ist eine Vervollständigung als metrischer Raum basierend auf dem „Absolutbetrag“, den wir täglich verwenden. [Hensel](https://kenji.blog/de/p/hensel/) führte jedoch eine völlig andere Methode zur Entfernungsmessung ein, die sich auf eine Primzahl $p$ konzentrierte.
 
 Jede von null verschiedene rationale Zahl $x$ kann unter Verwendung einer gegebenen Primzahl $p$ eindeutig wie folgt zerlegt werden:
 
@@ -68,7 +68,7 @@ $$
 
 ### 5.2 Vervollständigung von rationalen zu p-adischen Zahlen
 
-Unter Verwendung des durch diesen p-adischen Absolutbetrag definierten Abstands $d(x, y) = |x - y|_p$ ist das neue Zahlensystem, das man durch Anwendung der Cauchy-Folgen-Vervollständigung auf den Körper der rationalen Zahlen $\mathbb{Q}$ erhält, der **Körper der p-adischen Zahlen** $\mathbb{Q}_p$.
+Unter Verwendung des durch diesen p-adischen Absolutbetrag definierten Abstands $d(x, y) = |x - y|_p$ ist das neue Zahlensystem, das man durch Anwendung der [Cauchy](https://kenji.blog/de/p/cauchy/)-Folgen-Vervollständigung auf den Körper der rationalen Zahlen $\mathbb{Q}$ erhält, der **Körper der p-adischen Zahlen** $\mathbb{Q}_p$.
 
 Das folgende Diagramm veranschaulicht, wie sich Zahlensysteme verzweigen und erweitern.
 
@@ -115,9 +115,9 @@ $$
 $$
 Diese unendliche Summe divergiert im üblichen Sinne, aber in der Welt der p-adischen Absolutbeträge werden die Terme mit ihrem Fortschreiten kleiner, was bedeutet, dass sie ohne Widerspruch perfekt konvergiert.
 
-## 6. Henselsches Lemma
+## 6. [Hensel](https://kenji.blog/de/p/hensel/)sches Lemma
 
-Eines der mächtigsten Werkzeuge, die Hensel vorstellte, ist das **Henselsche Lemma**. Dies ist ein Satz, der die Bedingungen dafür liefert, dass eine Polynomgleichung Wurzeln im Körper der p-adischen Zahlen hat, und es kann als p-adische Version des „Newton-Verfahrens“ in der reellen Analysis beschrieben werden.
+Eines der mächtigsten Werkzeuge, die [Hensel](https://kenji.blog/de/p/hensel/) vorstellte, ist das **[Hensel](https://kenji.blog/de/p/hensel/)sche Lemma**. Dies ist ein Satz, der die Bedingungen dafür liefert, dass eine Polynomgleichung Wurzeln im Körper der p-adischen Zahlen hat, und es kann als p-adische Version des „Newton-Verfahrens“ in der reellen Analysis beschrieben werden.
 
 Die Behauptung des Satzes lautet wie folgt.
 Angenommen, wir haben ein Polynom $f(x)$ mit ganzzahligen Koeffizienten und eine Primzahl $p$. Wenn eine ganze Zahl $a$ existiert, die eine Näherungswurzel Modulo $p$ ist und deren Ableitung nicht $0$ ist, das heißt,
@@ -137,19 +137,19 @@ Dieses Lemma machte es möglich, exakte Lösungen als p-adische Zahlen zu finden
 
 ## 7. Satz von Ostrowski und Lokal-Global-Prinzip
 
-Hensels Konzepte wurden von anderen Mathematikern weiter verfeinert.
+[Hensel](https://kenji.blog/de/p/hensel/)s Konzepte wurden von anderen Mathematikern weiter verfeinert.
 
 1916 bewies Alexander Ostrowski den **Satz von Ostrowski**. Dies ist die überraschende Tatsache, dass „jeder nicht-triviale Absolutbetrag auf dem Körper der rationalen Zahlen entweder dem üblichen Absolutbetrag oder dem p-adischen Absolutbetrag für eine Primzahl $p$ äquivalent ist“. Somit deckt die Zusammenfassung der reellen Zahlen und aller p-adischen Zahlen alle Möglichkeiten der Vervollständigung der rationalen Zahlen „vollständig“ ab.
 
-Darüber hinaus etablierte Hensels Student **[Helmut Hasse](https://kenji.blog/de/p/hasse/)** das **Lokal-Global-Prinzip** (Hasse-Prinzip). Dies ist ein wunderbarer Satz, der besagt: „Eine notwendige und hinreichende Bedingung dafür, dass eine Gleichung über den rationalen Zahlen (global) eine Lösung hat, ist, dass sie über den reellen Zahlen und den p-adischen Zahlen für alle Primzahlen $p$ (lokal) eine Lösung hat.“ Damit sicherten sich p-adische Zahlen eine unerschütterliche Position als unverzichtbare Werkzeuge in der Zahlentheorie.
+Darüber hinaus etablierte [Hensel](https://kenji.blog/de/p/hensel/)s Student **[Helmut Hasse](https://kenji.blog/de/p/hasse/)** das **Lokal-Global-Prinzip** (Hasse-Prinzip). Dies ist ein wunderbarer Satz, der besagt: „Eine notwendige und hinreichende Bedingung dafür, dass eine Gleichung über den rationalen Zahlen (global) eine Lösung hat, ist, dass sie über den reellen Zahlen und den p-adischen Zahlen für alle Primzahlen $p$ (lokal) eine Lösung hat.“ Damit sicherten sich p-adische Zahlen eine unerschütterliche Position als unverzichtbare Werkzeuge in der Zahlentheorie.
 
 ## 8. Beiträge als Pädagoge und Herausgeber sowie Vermächtnis
 
-Hensel leistete nicht nur als Forscher enorme Beiträge, sondern auch als Pädagoge und Herausgeber. Ab 1901 war er viele Jahre lang Chefredakteur des „Crelle-Journals“ (offiziell: Journal für die reine und angewandte Mathematik), einer der ältesten mathematischen Fachzeitschriften der Welt, und unterstützte die Verbreitung der Spitzenforschung in der Mathematik seiner Zeit.
+[Hensel](https://kenji.blog/de/p/hensel/) leistete nicht nur als Forscher enorme Beiträge, sondern auch als Pädagoge und Herausgeber. Ab 1901 war er viele Jahre lang Chefredakteur des „Crelle-Journals“ (offiziell: Journal für die reine und angewandte Mathematik), einer der ältesten mathematischen Fachzeitschriften der Welt, und unterstützte die Verbreitung der Spitzenforschung in der Mathematik seiner Zeit.
 
 Seine Vorlesungen waren klar und leidenschaftlich und förderten die nächste Generation brillanter Mathematiker, darunter [Helmut Hasse](https://kenji.blog/de/p/hasse/).
 
-Heute finden p-adische Zahlen in einem weiten Bereich Anwendung über die algebraische Zahlentheorie hinaus, einschließlich der **p-adischen Analysis**, der **p-adischen Hodge-Theorie** und sogar der **p-adischen Quantenmechanik** in der theoretischen Physik. [Andrew Wiles](https://kenji.blog/de/p/wiles/)' historischer Beweis von „Fermats letztem Satz“ wäre ohne die Theorie der p-adischen Zahlen unmöglich gewesen.
+Heute finden p-adische Zahlen in einem weiten Bereich Anwendung über die algebraische Zahlentheorie hinaus, einschließlich der **p-adischen Analysis**, der **p-adischen Hodge-Theorie** und sogar der **p-adischen Quantenmechanik** in der theoretischen Physik. [Andrew Wiles](https://kenji.blog/de/p/wiles/)' historischer Beweis von „[Fermat](https://kenji.blog/de/p/fermat/)s letztem Satz“ wäre ohne die Theorie der p-adischen Zahlen unmöglich gewesen.
 
 ## 9. Fazit
 

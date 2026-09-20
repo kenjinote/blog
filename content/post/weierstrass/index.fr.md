@@ -86,7 +86,7 @@ Cette découverte a fait douloureusement réaliser aux mathématiciens à quel p
 
 ### 3. Construction de l'analyse complexe et théorie des fonctions elliptiques
 
-Weierstrass a également joué un rôle décisif dans la théorie des fonctions complexes. Alors que Cauchy et Riemann mettaient l'accent sur l'intuition géométrique et l'intégration, Weierstrass a adopté une approche algébrique basée sur les "séries entières". Il a rigoureusement défini les fonctions complexes en utilisant le concept de prolongement analytique et a établi les méthodes standard de l'analyse complexe moderne.
+Weierstrass a également joué un rôle décisif dans la théorie des fonctions complexes. Alors que [Cauchy](https://kenji.blog/fr/p/cauchy/) et [Riemann](https://kenji.blog/fr/p/riemann/) mettaient l'accent sur l'intuition géométrique et l'intégration, Weierstrass a adopté une approche algébrique basée sur les "séries entières". Il a rigoureusement défini les fonctions complexes en utilisant le concept de prolongement analytique et a établi les méthodes standard de l'analyse complexe moderne.
 
 Il a également construit un système extrêmement beau dans les domaines de la théorie des fonctions elliptiques et de la théorie des fonctions abéliennes. La fonction $\wp$ de Weierstrass (fonction p) est encore largement utilisée aujourd'hui comme la fonction la plus fondamentale dans le traitement des fonctions elliptiques.
 
@@ -120,7 +120,7 @@ Sous la direction dévouée de Weierstrass, Kovalevskaïa a obtenu de magnifique
 
 ## Dernières années et héritage
 
-Dans ses dernières années, Weierstrass a connu un conflit féroce sur les fondements des mathématiques avec Leopold Kronecker, un collègue et ancien élève. Kronecker a déclaré : "Dieu a fait les nombres entiers, tout le reste est l'œuvre de l'homme", et a sévèrement critiqué l'analyse de Weierstrass et la théorie des ensembles de Cantor d'un point de vue intuitionniste. Ce conflit a profondément blessé le cœur de Weierstrass.
+Dans ses dernières années, Weierstrass a connu un conflit féroce sur les fondements des mathématiques avec Leopold [Kronecker](https://kenji.blog/fr/p/kronecker/), un collègue et ancien élève. [Kronecker](https://kenji.blog/fr/p/kronecker/) a déclaré : "Dieu a fait les nombres entiers, tout le reste est l'œuvre de l'homme", et a sévèrement critiqué l'analyse de Weierstrass et la théorie des ensembles de Cantor d'un point de vue intuitionniste. Ce conflit a profondément blessé le cœur de Weierstrass.
 
 Sa santé s'est également progressivement détériorée, et dans ses dernières années, il a souffert de vertiges et de bronchites, l'obligeant à vivre en fauteuil roulant. Néanmoins, il n'a jamais perdu sa passion pour les mathématiques jusqu'à la fin, travaillant à la compilation de ses propres œuvres complètes avec l'aide de ses disciples.
 

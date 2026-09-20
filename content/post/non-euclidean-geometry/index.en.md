@@ -44,13 +44,13 @@ $$
 
 Because of the overwhelming innovation of this discovery, Gauss refrained from publishing it during his lifetime, fearing the public's lack of understanding. When Bolyai and Lobachevsky published their papers, the world of mathematics welcomed a fundamental paradigm shift.
 
-## 4. Riemannian Geometry: The Generalization of the Concept of Space
+## 4. [Riemann](https://kenji.blog/en/p/riemann/)ian Geometry: The Generalization of the Concept of Space
 
-The next leap in non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry was brought about by [Bernhard Riemann](https://kenji.blog/en/p/riemann/), a student of Gauss. In his 1854 inaugural lecture, Riemann presented groundbreaking ideas about the foundations of geometry.
+The next leap in non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry was brought about by [Bernhard Riemann](https://kenji.blog/en/p/riemann/), a student of Gauss. In his 1854 inaugural lecture, [Riemann](https://kenji.blog/en/p/riemann/) presented groundbreaking ideas about the foundations of geometry.
 
-He introduced the **metric tensor**, which locally defines the bending (curvature) of space, and constructed a more general geometry (**Riemannian geometry**) where the dimension and curvature of space can vary from place to place.
+He introduced the **metric tensor**, which locally defines the bending (curvature) of space, and constructed a more general geometry (**[Riemann](https://kenji.blog/en/p/riemann/)ian geometry**) where the dimension and curvature of space can vary from place to place.
 
-Within Riemann's framework, in addition to [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry (zero curvature) and hyperbolic geometry (negative constant curvature), the geometry of a sphere (positive constant curvature, **elliptic geometry**) could also be treated uniformly. In elliptic geometry, parallel lines "do not exist", and the sum of the interior angles of a triangle is greater than 180 degrees.
+Within [Riemann](https://kenji.blog/en/p/riemann/)'s framework, in addition to [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry (zero curvature) and hyperbolic geometry (negative constant curvature), the geometry of a sphere (positive constant curvature, **elliptic geometry**) could also be treated uniformly. In elliptic geometry, parallel lines "do not exist", and the sum of the interior angles of a triangle is greater than 180 degrees.
 
 $$
 \text{The sum of the interior angles of a triangle in elliptic geometry} > 180^\circ
@@ -68,7 +68,7 @@ graph LR
 
 ## 5. The Path to the Theory of Relativity: The Fusion of Mathematics and Physics
 
-The magnificent mathematical framework constructed by Riemann remained in the realm of pure mathematics for a while. However, in the early 20th century, when Albert Einstein attempted to construct a new theory of gravity, this Riemannian geometry would play a decisive role.
+The magnificent mathematical framework constructed by [Riemann](https://kenji.blog/en/p/riemann/) remained in the realm of pure mathematics for a while. However, in the early 20th century, when Albert Einstein attempted to construct a new theory of gravity, this [Riemann](https://kenji.blog/en/p/riemann/)ian geometry would play a decisive role.
 
 Einstein proposed the concept of "spacetime", which integrated time and space in the special theory of relativity. And in the **general theory of relativity**, he reached the groundbreaking idea that "gravity is the distortion (curve) of spacetime by objects with mass."
 

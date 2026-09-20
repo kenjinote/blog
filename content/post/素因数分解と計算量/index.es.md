@@ -136,7 +136,7 @@ $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 Esto significa que la complejidad temporal es de **$\mathcal{O}(2^{n/2})$** con respecto a la longitud en bits $n$. En otras palabras, la división por tentativa es un **"algoritmo de tiempo puramente exponencial (Exponential time)"** con respecto a $n$.
 Por cada aumento de 1 bit en el número de dígitos (el número se duplica), el tiempo de cálculo se multiplica por aproximadamente $\sqrt{2} \approx 1.414$. Si $N$ es un número que supera los 1024 bits (unos 300 dígitos en decimal), el cálculo no terminaría ni siquiera utilizando una cantidad de tiempo equivalente a la edad del universo.
 
-## 2. Método de factorización de Fermat (Fermat's Factorization Method)
+## 2. Método de factorización de [Fermat](https://kenji.blog/es/p/fermat/) ([Fermat](https://kenji.blog/es/p/fermat/)'s Factorization Method)
 
 Este método fue ideado por el matemático [Pierre de Fermat](https://kenji.blog/es/p/fermat/) en el siglo XVII. Dado un número compuesto impar $N$, intenta expresar $N$ como la diferencia de dos cuadrados.
 
@@ -169,8 +169,8 @@ Es drásticamente más rápido en comparación con el $\mathcal{O}(2^{n/2})$ de 
 
 ## 4. Criba cuadrática de polinomios múltiples (MPQS: Multiple Polynomial Quadratic Sieve)
 
-A principios de la década de 1980, Carl Pomerance ideó la "Criba cuadrática (Quadratic Sieve: QS)". Esta es una extensión del concepto de "diferencia de cuadrados" de Fermat.
-Mientras que el método de Fermat buscaba directamente $x^2 - y^2 = N$, la criba cuadrática busca condiciones mucho más laxas.
+A principios de la década de 1980, Carl Pomerance ideó la "Criba cuadrática (Quadratic Sieve: QS)". Esta es una extensión del concepto de "diferencia de cuadrados" de [Fermat](https://kenji.blog/es/p/fermat/).
+Mientras que el método de [Fermat](https://kenji.blog/es/p/fermat/) buscaba directamente $x^2 - y^2 = N$, la criba cuadrática busca condiciones mucho más laxas.
 
 $$ x^2 \equiv y^2 \pmod N $$
 y

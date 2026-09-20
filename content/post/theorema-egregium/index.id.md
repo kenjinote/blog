@@ -92,7 +92,7 @@ Tidak hanya pada cara makan pizza, prinsip ini juga dapat ditemukan di mana-mana
 - ** Daun tanaman **: Banyak daun dan kelopak bunga secara alami berevolusi menjadi bentuk bergelombang untuk menahan angin dan beratnya sendiri.
 - ** Bangunan **: Pada struktur bangunan yang menutupi ruang besar dengan material tipis, seperti struktur cangkang (shell), kekuatan mekanis dan sifat geometris dari permukaan melengkung dimanfaatkan.
 
-Teorema yang ditemukan oleh Gauss ini, kemudian diperluas ke manifold berdimensi tinggi oleh muridnya, [Bernhard Riemann](https://kenji.blog/id/p/riemann/) (Geometri Riemann), dan pada akhirnya menjadi fondasi matematis dalam Teori Relativitas Umum Albert Einstein untuk mendeskripsikan gravitasi sebagai "lengkungan ruang-waktu".
+Teorema yang ditemukan oleh Gauss ini, kemudian diperluas ke manifold berdimensi tinggi oleh muridnya, [Bernhard Riemann](https://kenji.blog/id/p/riemann/) (Geometri [Riemann](https://kenji.blog/id/p/riemann/)), dan pada akhirnya menjadi fondasi matematis dalam Teori Relativitas Umum Albert Einstein untuk mendeskripsikan gravitasi sebagai "lengkungan ruang-waktu".
 
 ## 5. Penutup
 

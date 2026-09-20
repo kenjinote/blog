@@ -136,7 +136,7 @@ $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 Ini berarti bahwa untuk panjang bit $n$, kompleksitas waktunya adalah **$\mathcal{O}(2^{n/2})$**. Dengan kata lain, pembagian percobaan adalah algoritma dengan **"waktu eksponensial murni (Exponential time)"** terhadap $n$.
 Setiap kali jumlah digit bertambah 1 bit (nilainya menjadi dua kali lipat), waktu perhitungan akan meningkat sekitar $\sqrt{2} \approx 1,414$ kali. Jika $N$ adalah angka yang melebihi 1024 bit (sekitar 300 digit desimal), perhitungan tidak akan selesai bahkan jika memakan waktu seumur alam semesta.
 
-## 2. Metode Faktorisasi Fermat (Fermat's Factorization Method)
+## 2. Metode Faktorisasi [Fermat](https://kenji.blog/id/p/fermat/) ([Fermat](https://kenji.blog/id/p/fermat/)'s Factorization Method)
 
 Ini adalah metode yang dirancang oleh matematikawan abad ke-17, [Pierre de Fermat](https://kenji.blog/id/p/fermat/). Ketika diberikan bilangan komposit ganjil $N$, ia mencoba merepresentasikan $N$ sebagai selisih dari dua bilangan kuadrat.
 
@@ -169,8 +169,8 @@ Dibandingkan dengan $\mathcal{O}(2^{n/2})$ pada pembagian percobaan, kecepatan i
 
 ## 4. Saringan Kuadrat Polinomial Berganda (MPQS: Multiple Polynomial Quadratic Sieve)
 
-Memasuki tahun 1980-an, Carl Pomerance menemukan "Saringan Kuadrat (Quadratic Sieve: QS)". Ini merupakan perluasan dari konsep "selisih kuadrat" dari Fermat.
-Sementara metode Fermat mencari $x^2 - y^2 = N$ secara langsung, metode saringan kuadrat mencari kondisi yang lebih longgar.
+Memasuki tahun 1980-an, Carl Pomerance menemukan "Saringan Kuadrat (Quadratic Sieve: QS)". Ini merupakan perluasan dari konsep "selisih kuadrat" dari [Fermat](https://kenji.blog/id/p/fermat/).
+Sementara metode [Fermat](https://kenji.blog/id/p/fermat/) mencari $x^2 - y^2 = N$ secara langsung, metode saringan kuadrat mencari kondisi yang lebih longgar.
 
 $$ x^2 \equiv y^2 \pmod N $$
 dan

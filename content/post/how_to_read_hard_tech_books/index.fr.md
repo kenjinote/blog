@@ -82,7 +82,7 @@ Lors de la mémorisation de livres techniques, il est inutile d'"apprendre de lo
 
 - **Mauvaise carte** : "Écrivez toute la preuve de l'algorithme de Dijkstra"
 - **Bonne carte** : "Dans l'algorithme de Dijkstra, quelle est la condition pour considérer que la distance la plus courte d'un sommet est définitive ?" → "Lors du choix du sommet avec la distance provisoire minimale parmi l'ensemble des sommets non confirmés."
-- **Bonne carte** : "Quelle est la formule du petit théorème de Fermat ?" → "Pour un nombre premier $p$ et un entier $a$ premier avec $p$, $a^{p-1} \equiv 1 \pmod p$"
+- **Bonne carte** : "Quelle est la formule du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ?" → "Pour un nombre premier $p$ et un entier $a$ premier avec $p$, $a^{p-1} \equiv 1 \pmod p$"
 
 Même lors de la mémorisation de formules, il est efficace de les enregistrer dans Anki au format LaTeX et d'utiliser des textes à trous (Cloze Deletion).
 

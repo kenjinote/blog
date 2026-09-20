@@ -35,7 +35,7 @@ Entering the 18th century, mathematical giants like Jean le Rond d'Alembert and 
 
 The first essentially complete proof of this impregnable theorem was given by none other than [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/). In his 1799 doctoral dissertation, he pointed out the flaws in the proofs of preceding mathematicians and presented a proof based on geometric intuition. Gauss provided four different proofs for this theorem over his lifetime, indicating how much importance he attached to it.
 
-The most standard and elegant proof today is considered to be the one based on the theory of complex analysis, built by French mathematician Joseph Liouville and others. In the latter half of this article, we will introduce the proof using Liouville's theorem.
+The most standard and elegant proof today is considered to be the one based on the theory of complex analysis, built by French mathematician Joseph [Liouville](https://kenji.blog/en/p/liouville/) and others. In the latter half of this article, we will introduce the proof using [Liouville](https://kenji.blog/en/p/liouville/)'s theorem.
 
 ## Precise Statement of the Theorem
 
@@ -78,26 +78,26 @@ flowchart TD
     E -->|"P(z) = 0"| F["Existence of a root is proven"]
 ```
 
-## Preparation from Complex Analysis: Liouville's Theorem
+## Preparation from Complex Analysis: [Liouville](https://kenji.blog/en/p/liouville/)'s Theorem
 
-Having gained an intuitive understanding, we will now introduce the most beautiful and rigorous proof in modern mathematics. This proof uses a powerful weapon of complex analysis: **Liouville's Theorem**.
+Having gained an intuitive understanding, we will now introduce the most beautiful and rigorous proof in modern mathematics. This proof uses a powerful weapon of complex analysis: **[Liouville](https://kenji.blog/en/p/liouville/)'s Theorem**.
 
 Complex analysis is the field that deals with the calculus of functions of complex variables. Unlike functions of real numbers, differentiability (holomorphy) of complex functions is an extremely strong condition; a complex function that is differentiable even once has the astonishing property of being infinitely differentiable and capable of being expanded into a Taylor series.
 
 A function that is differentiable (holomorphic) over the entire complex plane is called an **entire function**. Polynomials $P(z)$ and the exponential function $e^z$ are typical examples of entire functions.
 
-Liouville's theorem is a profoundly powerful theorem regarding these entire functions.
+[Liouville](https://kenji.blog/en/p/liouville/)'s theorem is a profoundly powerful theorem regarding these entire functions.
 
-**Theorem (Liouville's Theorem)**
+**Theorem ([Liouville](https://kenji.blog/en/p/liouville/)'s Theorem)**
 Every bounded entire function must be a constant function.
 
 Here, "bounded" means that for all complex numbers $z$, the absolute value of the function $|f(z)|$ does not exceed a certain real number $M$; that is, there exists an $M$ such that $|f(z)| \le M$.
 
-In the world of real numbers, a function like $f(x) = \sin(x)$ is differentiable over the entire number line and is bounded by $-1 \le \sin(x) \le 1$. It is not a constant function. However, Liouville's theorem asserts that this can never happen in the complex world. If a function is holomorphic over the entire complex plane and its value does not diverge to infinity, it is merely a flat constant.
+In the world of real numbers, a function like $f(x) = \sin(x)$ is differentiable over the entire number line and is bounded by $-1 \le \sin(x) \le 1$. It is not a constant function. However, [Liouville](https://kenji.blog/en/p/liouville/)'s theorem asserts that this can never happen in the complex world. If a function is holomorphic over the entire complex plane and its value does not diverge to infinity, it is merely a flat constant.
 
 ## Rigorous Proof of the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/)
 
-Let us now prove the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/) using Liouville's theorem. You will be amazed by the brilliance of this proof. Here, we use a proof by contradiction.
+Let us now prove the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/) using [Liouville](https://kenji.blog/en/p/liouville/)'s theorem. You will be amazed by the brilliance of this proof. Here, we use a proof by contradiction.
 
 **Proof**
 
@@ -134,7 +134,7 @@ On the other hand, inside the closed disk region (a bounded closed region) inclu
 Therefore, both outside and inside the circle, the absolute value of $f(z)$ never exceeds a certain finite upper bound. That is, $f(z)$ is a **bounded** function.
 
 Up to this point, we have shown that $f(z)$ is both an "entire function" and "bounded."
-Here, we apply **Liouville's theorem**. A bounded entire function must be a constant. Therefore, there exists a complex number $c$ such that for all $z$,
+Here, we apply **[Liouville](https://kenji.blog/en/p/liouville/)'s theorem**. A bounded entire function must be a constant. Therefore, there exists a complex number $c$ such that for all $z$,
 
 $$
 f(z) = c
@@ -172,7 +172,7 @@ Moreover, for polynomials where all coefficients are real numbers, if $\alpha$ i
 
 ## Conclusion
 
-In this article, we have looked in detail at the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/), covering its historical background, topological intuition, and complex analytic proof using Liouville's theorem.
+In this article, we have looked in detail at the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/), covering its historical background, topological intuition, and complex analytic proof using [Liouville](https://kenji.blog/en/p/liouville/)'s theorem.
 
 At first glance, it is a theorem about algebraic equations, but the fact that its most elegant proof borrows the power of analysis (calculus) and topology demonstrates the profundity of mathematics and the beauty of how different fields are closely intertwined.
 

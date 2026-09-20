@@ -18,11 +18,11 @@ $$
 
 Embora essa integral em si possa ser resolvida usando $\arctan(x)$, se o denominador se tornar um polinômio de grau superior, ou se funções trigonométricas como seno e cosseno estiverem intricadamente envolvidas, encontrar uma antiderivada (integral indefinida) como uma função real torna-se virtualmente impossível.
 
-É aqui que entra em cena uma arma poderosa da **análise complexa** (a teoria das funções complexas), amplamente considerada uma das teorias mais belas da matemática: o **[Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/) de Cauchy**. Ao estender de forma audaciosa uma integral realizada na reta numérica real (unidimensional) para o **plano complexo** (bidimensional), integrais reais impossíveis podem ser resolvidas de forma brilhante.
+É aqui que entra em cena uma arma poderosa da **análise complexa** (a teoria das funções complexas), amplamente considerada uma das teorias mais belas da matemática: o **[Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/) de [Cauchy](https://kenji.blog/pt/p/cauchy/)**. Ao estender de forma audaciosa uma integral realizada na reta numérica real (unidimensional) para o **plano complexo** (bidimensional), integrais reais impossíveis podem ser resolvidas de forma brilhante.
 
 ## Integração Complexa e Singularidades
 
-A integral de uma função complexa $f(z)$ é realizada ao longo de uma curva (contorno) no plano complexo. Em uma região onde a função é analítica (diferenciável), a integral ao longo de uma curva fechada é zero. Isso é conhecido como o **Teorema Integral de Cauchy**.
+A integral de uma função complexa $f(z)$ é realizada ao longo de uma curva (contorno) no plano complexo. Em uma região onde a função é analítica (diferenciável), a integral ao longo de uma curva fechada é zero. Isso é conhecido como o **Teorema Integral de [Cauchy](https://kenji.blog/pt/p/cauchy/)**.
 
 $$
 \oint_C f(z) dz = 0 \quad (\text{se a função for holomorfa dentro e sobre } C)
@@ -56,7 +56,7 @@ $$
 
 Por que apenas o coeficiente de $(z - z_0)^{-1}$ é especial? Porque se você integrar $\frac{1}{(z - z_0)^n}$ ao longo de um círculo minúsculo $C$ englobando a singularidade, apenas quando $n = 1$ o valor $2\pi i$ permanece; para todos os outros valores de $n$, a integral é avaliada em $0$.
 
-## [Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/) de Cauchy
+## [Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/) de [Cauchy](https://kenji.blog/pt/p/cauchy/)
 
 A integração desses conceitos produz o **[Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/)**. Se uma curva fechada $C$ contém múltiplas singularidades isoladas $z_1, z_2, \dots, z_k$ dentro dela, a integral complexa ao longo de $C$ pode ser calculada da seguinte forma:
 

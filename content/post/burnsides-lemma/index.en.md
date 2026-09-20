@@ -81,7 +81,7 @@ These 4 patterns belong to the same "Orbit". The "number of essentially differen
 
 ## 5. [Burnside's Lemma](https://kenji.blog/en/p/burnsides-lemma/)
 
-Here finally, the star of this time, **[Burnside's Lemma](https://kenji.blog/en/p/burnsides-lemma/)**, makes its appearance. It is also sometimes called the Cauchy-Frobenius lemma. This is an astonishing theorem that allows us to easily calculate the "number of orbits (number of essentially different patterns)" when a group $G$ acts on a finite set $X$.
+Here finally, the star of this time, **[Burnside's Lemma](https://kenji.blog/en/p/burnsides-lemma/)**, makes its appearance. It is also sometimes called the [Cauchy](https://kenji.blog/en/p/cauchy/)-Frobenius lemma. This is an astonishing theorem that allows us to easily calculate the "number of orbits (number of essentially different patterns)" when a group $G$ acts on a finite set $X$.
 
 The formula for the theorem is as follows:
 
@@ -231,7 +231,7 @@ Actually, this theorem was not first discovered by William Burnside. It was intr
 
 However, historically, [Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/) had already published a special case of this theorem (regarding symmetric groups) in 1845, and later in 1887 Ferdinand Georg Frobenius gave a proof for general finite groups.
 
-Therefore, those who try to be rigorous about mathematical history sometimes playfully call this theorem the **"Cauchy-Frobenius Lemma"** or **"The Lemma that is not Burnside's"**. Regardless of the origin of its name, the magnitude of the role this lemma has played in the history of group theory and combinatorics is immeasurable.
+Therefore, those who try to be rigorous about mathematical history sometimes playfully call this theorem the **"[Cauchy](https://kenji.blog/en/p/cauchy/)-Frobenius Lemma"** or **"The Lemma that is not Burnside's"**. Regardless of the origin of its name, the magnitude of the role this lemma has played in the history of group theory and combinatorics is immeasurable.
 
 ## 11. Example 2: Coloring the Faces of a Cube
 

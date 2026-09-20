@@ -36,7 +36,7 @@ Aquí, $V$ representa la **clase de todos los conjuntos** ( $\text{clase univers
 
 A finales de la década de 1920, la mecánica cuántica se estaba desarrollando como dos teorías aparentemente completamente diferentes: la "mecánica matricial" de Werner Heisenberg y la "mecánica ondulatoria" de Erwin Schrödinger. Von Neumann demostró que estas dos teorías eran matemáticamente equivalentes, dotando a la mecánica cuántica de una estricta base matemática.
 
-Usando la teoría del **espacio de Hilbert**, formuló cantidades físicas (observables) como operadores autoadjuntos en un espacio de Hilbert de dimensión infinita. Su libro "Fundamentos matemáticos de la mecánica cuántica", publicado en 1932, es considerado una biblia incluso para los físicos modernos y todavía es muy apreciado en la actualidad como un libro de texto estándar para la mecánica cuántica.
+Usando la teoría del **espacio de [Hilbert](https://kenji.blog/es/p/hilbert/)**, formuló cantidades físicas (observables) como operadores autoadjuntos en un espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) de dimensión infinita. Su libro "Fundamentos matemáticos de la mecánica cuántica", publicado en 1932, es considerado una biblia incluso para los físicos modernos y todavía es muy apreciado en la actualidad como un libro de texto estándar para la mecánica cuántica.
 
 También introdujo el concepto de la **matriz de densidad** ( $\text{matriz de densidad}$ ) para describir estados mixtos, sentando las bases de la mecánica estadística cuántica.
 
@@ -112,7 +112,7 @@ Hay innumerables anécdotas en torno al cerebro sobrehumano de von Neumann.
 Los libros y artículos que von Neumann dejó atrás durante su vida son diversos, pero aquí presentamos obras representativas que tuvieron un impacto particularmente significativo en las generaciones posteriores.
 
 1. **Fundamentos matemáticos de la mecánica cuántica (1932)**
-   Una obra monumental que formuló estrictamente la mecánica cuántica utilizando la teoría de los espacios de Hilbert.
+   Una obra monumental que formuló estrictamente la mecánica cuántica utilizando la teoría de los espacios de [Hilbert](https://kenji.blog/es/p/hilbert/).
 2. **Teoría de juegos y comportamiento económico (1944)**
    Coescrito con Oskar Morgenstern. Una obra maestra que discutió sistemáticamente todo, desde los juegos de suma cero hasta los juegos cooperativos.
 3. **La computadora y el cerebro (1958)**

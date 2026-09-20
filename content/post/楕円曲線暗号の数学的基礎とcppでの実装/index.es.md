@@ -56,7 +56,7 @@ Además, si el resultado no cambia al invertir el orden de la operación, es dec
 El conjunto de puntos en una curva elíptica, al definir una regla de adición específica, forma este **grupo abeliano**.
 
 ### 2.2. Campo finito (Finite Field)
-En la teoría criptográfica, no se utilizan campos con un número infinito de elementos continuos como los números reales o complejos, sino un **campo finito (Finite Field)** o campo de Galois (Galois Field), donde el número de elementos es finito.
+En la teoría criptográfica, no se utilizan campos con un número infinito de elementos continuos como los números reales o complejos, sino un **campo finito (Finite Field)** o campo de [Galois](https://kenji.blog/es/p/galois/) ([Galois](https://kenji.blog/es/p/galois/) Field), donde el número de elementos es finito.
 
 El campo finito más básico es el **campo primo $\mathbb{F}_p$** utilizando un número primo $p$. Esto es el conjunto de enteros $\{0, 1, 2, \dots, p-1\}$ en el que se definen las cuatro operaciones aritméticas (suma, resta, multiplicación, división) módulo $p$ (el resto de dividir por $p$).
 
@@ -68,7 +68,7 @@ El campo finito más básico es el **campo primo $\mathbb{F}_p$** utilizando un 
 El cálculo del **inverso multiplicativo modular (Modular Multiplicative Inverse)** es extremadamente importante en las implementaciones criptográficas. Para encontrar $b^{-1}$ que satisfaga $b \times b^{-1} \equiv 1 \pmod p$, se utilizan principalmente los dos siguientes algoritmos:
 
 1. **Algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido (Extended [[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: Es rápido, pero dependiendo de la implementación, el tiempo de procesamiento puede depender de los valores de entrada, por lo que existe el riesgo de ataques de tiempo.
-2. **Pequeño teorema de Fermat ([Fermat's Little Theorem](https://kenji.blog/es/p/fermats-little-theorem/))**: Cuando $p$ es primo y $b \neq 0$, se cumple que $b^{p-1} \equiv 1 \pmod p$. Dividiendo ambos lados por $b$, obtenemos $b^{p-2} \equiv b^{-1} \pmod p$. En otras palabras, calculando la potencia $p-2$ de $b$, se obtiene el inverso. Dado que las operaciones de exponenciación son fáciles de implementar en tiempo constante, esta es la preferida en implementaciones criptográficas.
+2. **Pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/es/p/fermats-little-theorem/))**: Cuando $p$ es primo y $b \neq 0$, se cumple que $b^{p-1} \equiv 1 \pmod p$. Dividiendo ambos lados por $b$, obtenemos $b^{p-2} \equiv b^{-1} \pmod p$. En otras palabras, calculando la potencia $p-2$ de $b$, se obtiene el inverso. Dado que las operaciones de exponenciación son fáciles de implementar en tiempo constante, esta es la preferida en implementaciones criptográficas.
 
 ---
 
@@ -152,7 +152,7 @@ $$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
 $$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
 
 > [!IMPORTANT]
-> Estas fórmulas incluyen **divisiones (cálculo del inverso modular)**, como $(x_2 - x_1)^{-1}$ y $(2y_1)^{-1}$. Dado que el cálculo del inverso modular tiene un costo computacional muy alto, en las implementaciones reales generalmente se utilizan sistemas de coordenadas proyectivas que retrasan la división, como las **"Coordenadas Jacobianas (Jacobian Coordinates)"**.
+> Estas fórmulas incluyen **divisiones (cálculo del inverso modular)**, como $(x_2 - x_1)^{-1}$ y $(2y_1)^{-1}$. Dado que el cálculo del inverso modular tiene un costo computacional muy alto, en las implementaciones reales generalmente se utilizan sistemas de coordenadas proyectivas que retrasan la división, como las **"Coordenadas [Jacobi](https://kenji.blog/es/p/jacobi/)anas ([Jacobi](https://kenji.blog/es/p/jacobi/)an Coordinates)"**.
 
 ---
 
@@ -277,7 +277,7 @@ A partir de aquí, plasmaremos la teoría en código C++. Las bibliotecas cripto
 Asumiremos el uso de `boost::multiprecision::cpp_int` para las operaciones con enteros gigantes.
 
 ### 8.1. Aritmética modular y el inverso
-Primero, definiremos funciones de ayuda para operaciones en campos finitos. Implementaremos el cálculo del inverso modular utilizando el pequeño teorema de Fermat.
+Primero, definiremos funciones de ayuda para operaciones en campos finitos. Implementaremos el cálculo del inverso modular utilizando el pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/).
 
 ```cpp
 #include <iostream>

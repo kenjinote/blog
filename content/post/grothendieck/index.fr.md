@@ -112,7 +112,7 @@ Grothendieck a expliqué son approche mathématique en utilisant l'analogie d'un
 
 Au début des années 1980, il a proposé de nouvelles théories abordant les mystères les plus profonds des mathématiques à partir de concepts très simples et visuels.
 
-L'un d'eux était les **« Dessins d'enfants »** . Il a découvert qu'à partir de graphes simples dessinés sur des surfaces courbes comme une sphère, on pouvait extraire l'action du groupe de Galois absolu, un objet hautement mystérieux et complexe en théorie des nombres.
+L'un d'eux était les **« Dessins d'enfants »** . Il a découvert qu'à partir de graphes simples dessinés sur des surfaces courbes comme une sphère, on pouvait extraire l'action du groupe de [Galois](https://kenji.blog/fr/p/galois/) absolu, un objet hautement mystérieux et complexe en théorie des nombres.
 
 De plus, il a proposé un programme appelé **« Géométrie Anabélienne »** . Il s'agit de l'étonnante conjecture selon laquelle, pour certaines variétés algébriques, les objets géométriques et arithmétiques d'origine peuvent être complètement reconstruits uniquement à partir des données topologiques connues sous le nom de groupe fondamental.
 

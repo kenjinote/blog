@@ -51,7 +51,7 @@ El hecho importante que muestra esta fórmula es que **"la energía de la luz $E
 
 ## 1.2 Aberración cromática (Chromatic Aberration) y desenfoque
 
-Además, desde el punto de vista óptico, la diferencia en la longitud de onda de la luz produce una diferencia en el "índice de refracción". El índice de refracción $n$ de un medio (como el cristalino en este caso) depende de la longitud de onda $\lambda$ y se aproxima por la fórmula de dispersión de Cauchy:
+Además, desde el punto de vista óptico, la diferencia en la longitud de onda de la luz produce una diferencia en el "índice de refracción". El índice de refracción $n$ de un medio (como el cristalino en este caso) depende de la longitud de onda $\lambda$ y se aproxima por la fórmula de dispersión de [Cauchy](https://kenji.blog/es/p/cauchy/):
 
 $$ n(\lambda) = B + \frac{C}{\lambda^2} $$
 

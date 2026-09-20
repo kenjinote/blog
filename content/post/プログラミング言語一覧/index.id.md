@@ -91,8 +91,8 @@ Eiffel adalah salah satu bahasa pemrograman berorientasi objek.
 ## Ada
 Ada adalah salah satu bahasa pemrograman berorientasi objek.
 
-## Pascal
-Pascal adalah salah satu bahasa pemrograman prosedural.
+## [Pascal](https://kenji.blog/id/p/pascal/)
+[Pascal](https://kenji.blog/id/p/pascal/) adalah salah satu bahasa pemrograman prosedural.
 
 ## COBOL
 Telah ada sejak lama. Merupakan bahasa pemrograman tujuan umum.

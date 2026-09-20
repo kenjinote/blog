@@ -73,7 +73,7 @@ Secara geometris, ini berarti bahwa untuk setiap kurva mulus di mana ketinggian 
 
 ## 4. Teorema Nilai Rata-rata
 
-Teorema Nilai Rata-rata (Teorema Nilai Rata-rata Lagrange) dapat dianggap sebagai pilar utama yang menopang keseluruhan kalkulus.
+Teorema Nilai Rata-rata (Teorema Nilai Rata-rata [Lagrange](https://kenji.blog/id/p/lagrange/)) dapat dianggap sebagai pilar utama yang menopang keseluruhan kalkulus.
 
 ### Pernyataan Teorema
 
@@ -138,11 +138,11 @@ Akibat ini dapat dibuktikan dengan cara yang persis sama. Ketika $x_1 < x_2$, ka
 
 Dengan cara ini, prinsip-prinsip tabel tanda yang biasa kita gunakan dalam matematika sekolah menengah ("jika turunannya positif maka ia naik, jika negatif maka ia turun") semuanya dijamin oleh **Teorema Nilai Rata-rata** ini.
 
-## 5. Teorema Nilai Rata-rata Cauchy
+## 5. Teorema Nilai Rata-rata [Cauchy](https://kenji.blog/id/p/cauchy/)
 
-Teorema Nilai Rata-rata Cauchy adalah perluasan dari Teorema Nilai Rata-rata untuk dua fungsi.
+Teorema Nilai Rata-rata [Cauchy](https://kenji.blog/id/p/cauchy/) adalah perluasan dari Teorema Nilai Rata-rata untuk dua fungsi.
 
-> **Teorema (Teorema Nilai Rata-rata Cauchy)**
+> **Teorema (Teorema Nilai Rata-rata [Cauchy](https://kenji.blog/id/p/cauchy/))**
 > Misalkan dua fungsi $f(x)$ dan $g(x)$ kontinu pada interval tertutup $[a, b]$ dan terdiferensialkan pada interval terbuka $(a, b)$, dan bahwa $g'(x) \neq 0$ untuk semua $x \in (a, b)$. Maka, terdapat $c \in (a, b)$ sedemikian rupa sehingga:
 > $$\frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f'(c)}{g'(c)}$$
 

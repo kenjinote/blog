@@ -42,7 +42,7 @@ A evolução dos algoritmos de fatoração no passado tem sido a história de re
 
 ## 3. Visão Geral do Algoritmo GNFS e Estrutura Matemática
 
-O GNFS possui uma base matemática muito complexa e avançada. A ideia básica é uma extensão do Pequeno Teorema de Fermat e do Crivo Quadrático (QS), consistindo em encontrar um par não-trivial $(X, Y)$ que satisfaça a congruência $X^2 \equiv Y^2 \pmod n$ e $X \not\equiv \pm Y \pmod n$, para assim derivar um fator $\gcd(X-Y, n)$ de $n$.
+O GNFS possui uma base matemática muito complexa e avançada. A ideia básica é uma extensão do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) e do Crivo Quadrático (QS), consistindo em encontrar um par não-trivial $(X, Y)$ que satisfaça a congruência $X^2 \equiv Y^2 \pmod n$ e $X \not\equiv \pm Y \pmod n$, para assim derivar um fator $\gcd(X-Y, n)$ de $n$.
 
 No entanto, a verdadeira essência do GNFS não é fazer isso apenas no corpo dos números racionais $\mathbb{Q}$, mas sim buscar simultaneamente por "números suaves (Smooth numbers)" tanto em uma extensão de corpo chamada Corpo de Números Algébricos (Algebraic Number Field) $\mathbb{Q}(\alpha)$ quanto no corpo dos números racionais, e construir uma relação de congruência por meio de um homomorfismo.
 

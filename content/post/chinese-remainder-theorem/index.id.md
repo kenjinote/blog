@@ -219,7 +219,7 @@ $$
 
 Salah satu aplikasi paling penting dari teorema yang digeneralisasi ini adalah **Teorema Sisa Tiongkok** pada gelanggang polinomial satu variabel $F[x]$ atas lapangan $F$.
 
-"Bilangan bulat yang saling prima" pada bilangan bulat, ekuivalen dengan "polinomial yang tidak memiliki akar persekutuan (polinomial pembagi persekutuan terbesarnya adalah sebuah konstanta)" dalam gelanggang polinomial. CRT versi polinomial ini adalah dasar teoretis untuk interpolasi Lagrange (Lagrange interpolation), dan sepenuhnya sesuai dengan algoritma yang menentukan polinomial derajat terendah secara unik yang melewati sejumlah titik yang diberikan. Hal ini juga merupakan dasar matematis dari **Kode Reed-Solomon**, sejenis kode koreksi kesalahan.
+"Bilangan bulat yang saling prima" pada bilangan bulat, ekuivalen dengan "polinomial yang tidak memiliki akar persekutuan (polinomial pembagi persekutuan terbesarnya adalah sebuah konstanta)" dalam gelanggang polinomial. CRT versi polinomial ini adalah dasar teoretis untuk interpolasi [Lagrange](https://kenji.blog/id/p/lagrange/) ([Lagrange](https://kenji.blog/id/p/lagrange/) interpolation), dan sepenuhnya sesuai dengan algoritma yang menentukan polinomial derajat terendah secara unik yang melewati sejumlah titik yang diberikan. Hal ini juga merupakan dasar matematis dari **Kode Reed-Solomon**, sejenis kode koreksi kesalahan.
 
 ## Komputasi Paralel Masif dengan Sistem Bilangan Residu (RNS)
 

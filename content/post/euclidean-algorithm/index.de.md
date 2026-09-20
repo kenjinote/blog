@@ -107,11 +107,11 @@ int main() {
 }
 ```
 
-## Zeitkomplexität und Satz von Lamé
+## Zeitkomplexität und Satz von [Lamé](https://kenji.blog/de/p/lame/)
 
-Wie schnell ist der euklidische Algorithmus? Bezüglich seiner rechnerischen Komplexität ist der **Satz von Lamé** (Lamé's theorem), der 1844 vom französischen Mathematiker [Gabriel Lamé](https://kenji.blog/de/p/lame/) bewiesen wurde, weithin bekannt.
+Wie schnell ist der euklidische Algorithmus? Bezüglich seiner rechnerischen Komplexität ist der **Satz von [Lamé](https://kenji.blog/de/p/lame/)** ([Lamé](https://kenji.blog/de/p/lame/)'s theorem), der 1844 vom französischen Mathematiker [Gabriel Lamé](https://kenji.blog/de/p/lame/) bewiesen wurde, weithin bekannt.
 
-> **Satz von Lamé**
+> **Satz von [Lamé](https://kenji.blog/de/p/lame/)**
 > Die Anzahl der Divisionsschritte, die erforderlich sind, um den euklidischen Algorithmus auf zwei natürliche Zahlen $a, b$ ($a > b$) anzuwenden, beträgt höchstens das $5$ -fache der Anzahl der Ziffern in der Dezimaldarstellung von $b$ .
 
 Infolgedessen beträgt die Zeitkomplexität des Algorithmus $O(\log(\min(a, b)))$ .

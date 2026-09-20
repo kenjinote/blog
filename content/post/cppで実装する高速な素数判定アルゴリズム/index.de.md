@@ -15,7 +15,7 @@ In der Informatik, der Kryptographie und im Bereich der kompetitiven Programmier
 
 Auch beim kompetitiven Programmieren (wie AtCoder oder Codeforces) sind Primzahltests ein häufiges Thema. Wenn für riesige Eingaben mit Beschränkungen wie $N \le 10^{18}$ Zehntausende von Primzahltests in weniger als 1 Sekunde durchgeführt werden müssen, werden traditionelle, naive Algorithmen das Zeitlimit (Time Limit Exceeded: TLE) niemals einhalten.
 
-In diesem Artikel werden wir von naiven Primzahltests über den "Fermat-Test", einen probabilistischen Algorithmus, bis hin zum "Miller-Rabin-Primzahltest", einem Hochgeschwindigkeitsalgorithmus auf praktisch höchstem Niveau, der die Schwächen des Fermat-Tests überwindet, alles ausführlich erklären – vom mathematischen Hintergrund bis hin zu einer hochgradig optimierten Implementierung in C++. Insbesondere für 64-Bit-Ganzzahlen ($N < 2^{64}$) werden wir nicht nur auf probabilistische Tests eingehen, sondern auch "100% sichere Primzahltests (deterministische Tests)" detailliert beschreiben und einen C++-Quellcode bereitstellen, der direkt in der Praxis verwendet werden kann.
+In diesem Artikel werden wir von naiven Primzahltests über den "[Fermat](https://kenji.blog/de/p/fermat/)-Test", einen probabilistischen Algorithmus, bis hin zum "Miller-Rabin-Primzahltest", einem Hochgeschwindigkeitsalgorithmus auf praktisch höchstem Niveau, der die Schwächen des [Fermat](https://kenji.blog/de/p/fermat/)-Tests überwindet, alles ausführlich erklären – vom mathematischen Hintergrund bis hin zu einer hochgradig optimierten Implementierung in C++. Insbesondere für 64-Bit-Ganzzahlen ($N < 2^{64}$) werden wir nicht nur auf probabilistische Tests eingehen, sondern auch "100% sichere Primzahltests (deterministische Tests)" detailliert beschreiben und einen C++-Quellcode bereitstellen, der direkt in der Praxis verwendet werden kann.
 
 ---
 
@@ -50,22 +50,22 @@ Die Zeitkomplexität dieses Algorithmus beträgt $O(\sqrt{N})$. Für $N \le 10^{
 
 ---
 
-# 2. Fermat-Test: Der Beginn der probabilistischen Primzahltests
+# 2. [Fermat](https://kenji.blog/de/p/fermat/)-Test: Der Beginn der probabilistischen Primzahltests
 
-Um die Grenzen der Probedivision zu überwinden, wurden "probabilistische Algorithmen (Probabilistic Algorithm)" entwickelt, die zahlentheoretische Theoreme nutzen. Ein typisches Beispiel ist der "Fermat-Primzahltest (Fermat Primality Test)", der den kleinen Fermatschen Satz anwendet.
+Um die Grenzen der Probedivision zu überwinden, wurden "probabilistische Algorithmen (Probabilistic Algorithm)" entwickelt, die zahlentheoretische Theoreme nutzen. Ein typisches Beispiel ist der "[Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest ([Fermat](https://kenji.blog/de/p/fermat/) Primality Test)", der den kleinen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz anwendet.
 
-## Kleiner Fermatscher Satz ([Fermat's Little Theorem](https://kenji.blog/de/p/fermats-little-theorem/))
+## Kleiner [Fermat](https://kenji.blog/de/p/fermat/)scher Satz ([Fermat's Little Theorem](https://kenji.blog/de/p/fermats-little-theorem/))
 
 Dieser von [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckte Satz besagt Folgendes:
 
 > Für jede Primzahl $p$ und jede beliebige ganze Zahl $a$, die teilerfremd zu $p$ ist (kein Vielfaches von $p$), gilt die folgende Kongruenz:
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
-Die Kontraposition dieses Satzes besagt: "Wenn für eine ganze Zahl $N$ und eine zu $N$ teilerfremde ganze Zahl $a$ gilt $a^{N-1} \not\equiv 1 \pmod N$, dann ist $N$ definitiv eine zusammengesetzte Zahl." Der Fermat-Test nutzt diese Eigenschaft, indem er für die zu testende Zahl $N$ eine zufällige Basis (base) $a$ wählt und überprüft, ob $a^{N-1} \pmod N$ den Wert $1$ ergibt.
+Die Kontraposition dieses Satzes besagt: "Wenn für eine ganze Zahl $N$ und eine zu $N$ teilerfremde ganze Zahl $a$ gilt $a^{N-1} \not\equiv 1 \pmod N$, dann ist $N$ definitiv eine zusammengesetzte Zahl." Der [Fermat](https://kenji.blog/de/p/fermat/)-Test nutzt diese Eigenschaft, indem er für die zu testende Zahl $N$ eine zufällige Basis (base) $a$ wählt und überprüft, ob $a^{N-1} \pmod N$ den Wert $1$ ergibt.
 
 ## Schnelle modulare Exponentiation (Binäre Exponentiation)
 
-Um den Fermat-Test durchzuführen, müssen wir die riesige Potenz $a^{N-1} \pmod N$ schnell berechnen. Hierfür wird die "Binäre Exponentiation (Modular Exponentiation / Binary Exponentiation)" verwendet. Die Zeitkomplexität beträgt $O(\log N)$ und ist damit extrem schnell.
+Um den [Fermat](https://kenji.blog/de/p/fermat/)-Test durchzuführen, müssen wir die riesige Potenz $a^{N-1} \pmod N$ schnell berechnen. Hierfür wird die "Binäre Exponentiation (Modular Exponentiation / Binary Exponentiation)" verwendet. Die Zeitkomplexität beträgt $O(\log N)$ und ist damit extrem schnell.
 
 ```cpp
 // Berechnung von a^b mod m mittels binärer Exponentiation
@@ -84,27 +84,27 @@ long long mod_pow(long long a, long long b, long long m) {
 
 ## Pseudoprimzahlen und Carmichael-Zahlen (Carmichael Numbers)
 
-Der Fermat-Test ist sehr mächtig, hat jedoch eine fatale Schwäche. Es gibt Zahlen $N$, die zusammengesetzt sind, für die aber dennoch $a^{N-1} \equiv 1 \pmod N$ für alle $a$ (die zu $N$ teilerfremd sind) gilt.
+Der [Fermat](https://kenji.blog/de/p/fermat/)-Test ist sehr mächtig, hat jedoch eine fatale Schwäche. Es gibt Zahlen $N$, die zusammengesetzt sind, für die aber dennoch $a^{N-1} \equiv 1 \pmod N$ für alle $a$ (die zu $N$ teilerfremd sind) gilt.
 
 Solche Zahlen werden "absolute Pseudoprimzahlen" oder "Carmichael-Zahlen" genannt. Die kleinste Carmichael-Zahl ist $561 = 3 \times 11 \times 17$.
-Aufgrund der Existenz von Carmichael-Zahlen kann der Fermat-Test allein keine 100%ige Sicherheit (deterministischer Test) bieten. Egal wie viele verschiedene $a$ man probiert, Zahlen wie $561$ werden immer so tun, als wären sie Primzahlen.
+Aufgrund der Existenz von Carmichael-Zahlen kann der [Fermat](https://kenji.blog/de/p/fermat/)-Test allein keine 100%ige Sicherheit (deterministischer Test) bieten. Egal wie viele verschiedene $a$ man probiert, Zahlen wie $561$ werden immer so tun, als wären sie Primzahlen.
 
 ---
 
 # 3. Miller-Rabin-Primzahltest (Miller-Rabin Primality Test)
 
-Die Schwäche des Fermat-Tests (die Existenz von Carmichael-Zahlen) wurde von Gary L. Miller und Michael O. Rabin mit dem "Miller-Rabin-Primzahltest" brillant überwunden.
+Die Schwäche des [Fermat](https://kenji.blog/de/p/fermat/)-Tests (die Existenz von Carmichael-Zahlen) wurde von Gary L. Miller und Michael O. Rabin mit dem "Miller-Rabin-Primzahltest" brillant überwunden.
 Heute wird er am häufigsten als praktischer, schneller Primzahltest-Algorithmus in internen Bibliotheken verschiedener Programmiersprachen und bei der Schlüsselgenerierung in Kryptosystemen verwendet.
 
 ## Mathematisches Prinzip
 
-Der Miller-Rabin-Algorithmus nutzt zusätzlich zum kleinen Fermatschen Satz die Eigenschaft, dass "in einem Restklassenkörper modulo einer Primzahl ($\mathbb{Z}/p\mathbb{Z}$) die einzigen Lösungen von $x^2 \equiv 1 \pmod p$ die Werte $x \equiv 1$ oder $x \equiv -1$ sind" (bei einer zusammengesetzten Zahl als Modul können auch andere nicht-triviale Quadratwurzeln existieren).
+Der Miller-Rabin-Algorithmus nutzt zusätzlich zum kleinen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz die Eigenschaft, dass "in einem Restklassenkörper modulo einer Primzahl ($\mathbb{Z}/p\mathbb{Z}$) die einzigen Lösungen von $x^2 \equiv 1 \pmod p$ die Werte $x \equiv 1$ oder $x \equiv -1$ sind" (bei einer zusammengesetzten Zahl als Modul können auch andere nicht-triviale Quadratwurzeln existieren).
 
 Zieht man $1$ von einer zu testenden ungeraden Zahl $N$ ab, ist $N-1$ immer gerade. Daher teilen wir $N-1$ so oft wie möglich durch $2$ und schreiben es in der folgenden Form:
 $$ N-1 = d \cdot 2^s $$
 (Wobei $d$ ungerade ist und $s \ge 1$)
 
-Für eine beliebige Basis $a$ ($1 < a < N-1$) prüfen wir gemäß dem kleinen Fermatschen Satz, ob $a^{N-1} \equiv 1 \pmod N$ gilt, führen diese Berechnung jedoch schrittweise durch.
+Für eine beliebige Basis $a$ ($1 < a < N-1$) prüfen wir gemäß dem kleinen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz, ob $a^{N-1} \equiv 1 \pmod N$ gilt, führen diese Berechnung jedoch schrittweise durch.
 Konkret wiederholen wir die Quadrierung in der Reihenfolge $a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$.
 
 Die Bedingung dafür, dass der Miller-Rabin-Test $N$ als "prim (oder mit hoher Wahrscheinlichkeit prim)" einstuft, ist, dass **eine** der folgenden Aussagen wahr ist:
@@ -283,7 +283,7 @@ Lassen Sie uns die Leistung des implementierten Algorithmus analysieren.
 
 ## Zeitkomplexität (Time Complexity)
 * **Probedivision:** $O(\sqrt{N})$
-* **Fermat-Test:** Exponentiation $O(\log N) \times k$ (wobei $k$ die Anzahl der Versuche ist)
+* **[Fermat](https://kenji.blog/de/p/fermat/)-Test:** Exponentiation $O(\log N) \times k$ (wobei $k$ die Anzahl der Versuche ist)
 * **Miller-Rabin-Test:** Exponentiation und Schleife $O(\log N) \times k$
 
 In einer 64-Bit-Umgebung ($N \le 2^{64}$) prüft die oben beschriebene deterministische Miller-Rabin-Methode maximal $7$ Basen. Daher kann $k \le 7$ als Konstante betrachtet werden, und die gesamte Zeitkomplexität ist streng genommen $O(\log N)$.
@@ -304,8 +304,8 @@ In diesem Artikel haben wir von den Grundlagen der Primzahltests bis hin zu fort
 Fassen wir die wichtigsten Punkte zusammen:
 
 1. Die **Probedivision** ist zuverlässig, hat aber eine Zeitkomplexität von $O(\sqrt{N})$, was sie für $N > 10^{12}$ unpraktisch macht.
-2. Der **Fermat-Test** ist mit $O(\log N)$ sehr schnell, hat aber die fatale Schwäche, von absoluten Pseudoprimzahlen wie Carmichael-Zahlen getäuscht zu werden.
-3. Der **Miller-Rabin-Primzahltest** ist ein praktischer, extrem starker Algorithmus, der die Schwäche des Fermat-Tests beseitigt.
+2. Der **[Fermat](https://kenji.blog/de/p/fermat/)-Test** ist mit $O(\log N)$ sehr schnell, hat aber die fatale Schwäche, von absoluten Pseudoprimzahlen wie Carmichael-Zahlen getäuscht zu werden.
+3. Der **Miller-Rabin-Primzahltest** ist ein praktischer, extrem starker Algorithmus, der die Schwäche des [Fermat](https://kenji.blog/de/p/fermat/)-Tests beseitigt.
 4. Bei der C++ Implementierung kann man den Erweiterungstyp `__int128_t` nutzen, um Überläufe bei der Multiplikation von 64-Bit-Ganzzahlen sicher zu handhaben.
 5. Im Bereich der 64-Bit-Ganzzahlen ($N < 2^{64}$) können Primzahltests **deterministisch (100% genau)** durchgeführt werden, anstatt nur probabilistisch, indem $7$ oder $12$ spezifische Primzahlen als Basis gewählt werden.
 

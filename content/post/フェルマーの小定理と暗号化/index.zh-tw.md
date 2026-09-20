@@ -140,7 +140,7 @@ $$
 
 在加密技術（如 RSA 加密與 Diffie-Hellman 金鑰交換等）中，必須能高速找出長達數百位數的「巨大質數」。然而，如果要判定一個巨大數字 $N$ 是否為質數，若使用測試除以從 $2$ 到 $\sqrt{N}$ 的所有數字是否能整除的「試除法」，將會花費等同於宇宙壽命般漫長的時間。
 
-因此，反過來利用[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的「機率性質數判定法」，即 **費馬質數判定法（Fermat Primality Test）** 便應運而生。
+因此，反過來利用[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的「機率性質數判定法」，即 **費馬質數判定法（[Fermat](https://kenji.blog/zh-tw/p/fermat/) Primality Test）** 便應運而生。
 
 ### 5.1 什麼是機率性質數判定法
 

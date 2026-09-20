@@ -82,7 +82,7 @@ En la memorización de libros técnicos, "memorizar de memoria una demostración
 
 - **Mala tarjeta**: "Escribe toda la demostración del algoritmo de Dijkstra"
 - **Buena tarjeta**: "¿Cuál es la condición para considerar que la distancia más corta de un vértice está confirmada en el algoritmo de Dijkstra?" -> "Cuando se selecciona el vértice con la distancia provisional mínima entre el conjunto de vértices no confirmados."
-- **Buena tarjeta**: "¿Cuál es la fórmula del pequeño teorema de Fermat?" -> "Para un número primo $p$ y un número entero $a$ coprimo con $p$, $a^{p-1} \equiv 1 \pmod p$"
+- **Buena tarjeta**: "¿Cuál es la fórmula del pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/)?" -> "Para un número primo $p$ y un número entero $a$ coprimo con $p$, $a^{p-1} \equiv 1 \pmod p$"
 
 Al memorizar fórmulas matemáticas, también es efectivo registrarlas en Anki en formato LaTeX y utilizar preguntas de completar espacios en blanco (Cloze Deletion).
 

@@ -133,15 +133,15 @@ flowchart LR
     D --> G["Brillengestelle, Brezel"]
 ```
 
-## Die Euler-Poincaré-Formel: Ein Sprung in die Multidimensionalität
+## Die Euler-[Poincaré](https://kenji.blog/de/p/poincare/)-Formel: Ein Sprung in die Multidimensionalität
 
-Vom späten 19. bis ins 20. Jahrhundert erweiterten Mathematiker wie [Henri Poincaré](https://kenji.blog/de/p/poincare/) den Eulerschen Satz in Räume noch höherer Dimensionen. Dies wurde zur **Euler-Poincaré-Formel**.
+Vom späten 19. bis ins 20. Jahrhundert erweiterten Mathematiker wie [Henri Poincaré](https://kenji.blog/de/p/poincare/) den Eulerschen Satz in Räume noch höherer Dimensionen. Dies wurde zur **Euler-[Poincaré](https://kenji.blog/de/p/poincare/)-Formel**.
 Durch die Verallgemeinerung der Elemente eines Polyeders betrachteten sie die alternierende Summe der Anzahl der Elemente in einer $n$-dimensionalen Form.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$
 
 Hierbei repräsentiert $k_i$ die Anzahl der $i$-dimensionalen Elemente.
-Poincaré bewies, dass dieses $\chi$ tief mit topologischen Invarianten verbunden ist, die als „Betti-Zahlen“ bezeichnet werden.
+[Poincaré](https://kenji.blog/de/p/poincare/) bewies, dass dieses $\chi$ tief mit topologischen Invarianten verbunden ist, die als „Betti-Zahlen“ bezeichnet werden.
 Anschaulich gesprochen repräsentiert die Betti-Zahl $b_i$ „die Anzahl der $i$-dimensionalen Löcher“.
 
 $$ \chi = b_0 - b_1 + b_2 - b_3 + \dots $$

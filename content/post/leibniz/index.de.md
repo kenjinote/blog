@@ -99,7 +99,7 @@ Bei der Lösung linearer Gleichungssysteme gelangte Leibniz etwa zur gleichen Ze
 
 ### 2.5 Die Erfindung der Staffelwalzen-Rechenmaschine
 
-Leibniz war nicht nur ein theoretischer Mathematiker, sondern auch ein praktischer Erfinder, der sich in der Geschichte der mechanischen Rechenmaschinen einen Namen machte. Er verbesserte die Rechenmaschine von [Blaise Pascal](https://kenji.blog/de/p/pascal/) (die Pascaline), die nur addieren und subtrahieren konnte, und erfand eine Rechenmaschine (die Staffelwalze), die auch zur Multiplikation und Division fähig war.
+Leibniz war nicht nur ein theoretischer Mathematiker, sondern auch ein praktischer Erfinder, der sich in der Geschichte der mechanischen Rechenmaschinen einen Namen machte. Er verbesserte die Rechenmaschine von [Blaise Pascal](https://kenji.blog/de/p/pascal/) (die [Pascal](https://kenji.blog/de/p/pascal/)ine), die nur addieren und subtrahieren konnte, und erfand eine Rechenmaschine (die Staffelwalze), die auch zur Multiplikation und Division fähig war.
 
 Dieser Mechanismus war revolutionär und wurde in den folgenden Jahrhunderten als Standardstruktur für mechanische Rechenmaschinen übernommen.
 

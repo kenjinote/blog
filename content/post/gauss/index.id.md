@@ -63,7 +63,7 @@ Matematikawan Yunani kuno memecahkan masalah mengonstruksi poligon beraturan men
 
 Namun, pada 30 Maret 1796, Gauss membuktikan secara matematis bahwa **"heptadekagon beraturan (poligon bersisi 17) dapat dibangun dengan menggunakan hanya jangka dan penggaris tanpa ukuran."** Ia secara aljabar menjelaskan kondisi di mana akar persamaan siklotomik dapat dinyatakan dengan memulai dari medan bilangan rasional dan berturut-turut menambahkan akar kuadrat.
 
-Secara khusus, ia menurunkan teorema bahwa jika $p$ adalah bilangan prima Fermat (bilangan prima dengan bentuk $p = 2^{2^n} + 1$), $p$-gon beraturan dapat dikonstruksi. Ketika $n=2$, $p = 2^4 + 1 = 17$, yang mencakup heptadekagon beraturan. Gauss sangat bangga dengan penemuan ini dan dilaporkan meminta agar heptadekagon beraturan diukir di batu nisannya (pada kenyataannya, bintang berujung 17 diukir karena tidak akan dapat dibedakan dari lingkaran).
+Secara khusus, ia menurunkan teorema bahwa jika $p$ adalah bilangan prima [Fermat](https://kenji.blog/id/p/fermat/) (bilangan prima dengan bentuk $p = 2^{2^n} + 1$), $p$-gon beraturan dapat dikonstruksi. Ketika $n=2$, $p = 2^4 + 1 = 17$, yang mencakup heptadekagon beraturan. Gauss sangat bangga dengan penemuan ini dan dilaporkan meminta agar heptadekagon beraturan diukir di batu nisannya (pada kenyataannya, bintang berujung 17 diukir karena tidak akan dapat dibedakan dari lingkaran).
 
 ### Disquisitiones Arithmeticae
 
@@ -77,7 +77,7 @@ Ini berarti bahwa "sisa hasil bagi ketika $a$ dan $b$ dibagi dengan $n$ adalah s
 
 Juga di buku yang sama, Gauss memberikan bukti ketat pertama tentang **"Hukum Timbal Balik Kuadrat"**, yang dianggap sebagai salah satu teorema terindah dalam teori bilangan. Hukum ini menunjukkan bahwa untuk dua bilangan prima ganjil $p, q$ yang berbeda, ada hubungan yang sangat simetris antara apakah kekongruenan $x^2 \equiv p \pmod{q}$ memiliki solusi dan apakah $x^2 \equiv q \pmod{p}$ memiliki solusi.
 
-Dinyatakan dalam rumus matematika menggunakan simbol Legendre, itu direpresentasikan sebagai berikut:
+Dinyatakan dalam rumus matematika menggunakan simbol [Legendre](https://kenji.blog/id/p/legendre/), itu direpresentasikan sebagai berikut:
 
 $$
 \left( \frac{p}{q} \right) \left( \frac{q}{p} \right) = (-1)^{\frac{p-1}{2} \frac{q-1}{2}}
@@ -123,7 +123,7 @@ $$
 
 (Di mana $E, F, G$ adalah koefisien bentuk fundamental pertama, dan $L, M, N$ adalah koefisien bentuk fundamental kedua)
 
-Menurut teorema ini, terbukti secara matematis bahwa, misalnya, tidak peduli bagaimana selembar kertas datar (kelengkungan 0) digulung, tidak mungkin membuat bola (kelengkungan positif) tanpa distorsi. Gagasan geometri diferensial Gauss ini kemudian digeneralisasikan ke dimensi yang lebih tinggi oleh [Bernhard Riemann](https://kenji.blog/id/p/riemann/) (geometri Riemannian) dan selanjutnya menjadi sangat diperlukan sebagai dasar matematis untuk teori relativitas umum Albert Einstein di tahun-tahun berikutnya.
+Menurut teorema ini, terbukti secara matematis bahwa, misalnya, tidak peduli bagaimana selembar kertas datar (kelengkungan 0) digulung, tidak mungkin membuat bola (kelengkungan positif) tanpa distorsi. Gagasan geometri diferensial Gauss ini kemudian digeneralisasikan ke dimensi yang lebih tinggi oleh [Bernhard Riemann](https://kenji.blog/id/p/riemann/) (geometri [Riemann](https://kenji.blog/id/p/riemann/)ian) dan selanjutnya menjadi sangat diperlukan sebagai dasar matematis untuk teori relativitas umum Albert Einstein di tahun-tahun berikutnya.
 
 ## 6. Distribusi Gaussian dan Elektromagnetisme
 
@@ -161,9 +161,9 @@ Kemudian, ketika Nikolai Lobachevsky dan János Bolyai secara independen menerbi
 
 ## 8. Tahun-tahun Terakhir dan Warisan
 
-Gauss adalah seorang yang perfeksionis, dengan moto **"Sedikit, namun matang"** (Pauca sed matura). Karena ia tidak mempublikasikan makalahnya sampai ia benar-benar puas dan tersusun dalam bentuk yang sangat halus, sejumlah besar catatan yang tidak dipublikasikan ditemukan setelah kematiannya, yang mengejutkan ahli matematika di kemudian hari. Banyak dari teori yang kemudian ditemukan dan dibuat terkenal oleh ahli matematika lain, seperti integrasi kompleks (teorema integral Cauchy), kuaternion, dan dasar-dasar teori fungsi elips, sudah ditulis dalam catatan Gauss.
+Gauss adalah seorang yang perfeksionis, dengan moto **"Sedikit, namun matang"** (Pauca sed matura). Karena ia tidak mempublikasikan makalahnya sampai ia benar-benar puas dan tersusun dalam bentuk yang sangat halus, sejumlah besar catatan yang tidak dipublikasikan ditemukan setelah kematiannya, yang mengejutkan ahli matematika di kemudian hari. Banyak dari teori yang kemudian ditemukan dan dibuat terkenal oleh ahli matematika lain, seperti integrasi kompleks (teorema integral [Cauchy](https://kenji.blog/id/p/cauchy/)), kuaternion, dan dasar-dasar teori fungsi elips, sudah ditulis dalam catatan Gauss.
 
-Ia juga menjadi mentor bagi generasi berikutnya. Selain Riemann yang disebutkan di atas, ahli matematika hebat dari generasi berikutnya seperti Richard Dedekind dan Ferdinand Gotthold Max Eisenstein menerima bimbingan Gauss.
+Ia juga menjadi mentor bagi generasi berikutnya. Selain [Riemann](https://kenji.blog/id/p/riemann/) yang disebutkan di atas, ahli matematika hebat dari generasi berikutnya seperti Richard Dedekind dan Ferdinand Gotthold Max Eisenstein menerima bimbingan Gauss.
 
 Pada tanggal 23 Februari 1855, [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/) meninggal di Göttingen pada usia 77 tahun. Warisannya melampaui batas-batas matematika dan mengalir di akar semua ilmu pengetahuan dan teknologi modern. Dari pemikiran abstrak murni hingga perhitungan orbit planet, dan turun ke fenomena fisik elektromagnetik, cahaya kecerdasannya terus bersinar hingga hari ini.
 

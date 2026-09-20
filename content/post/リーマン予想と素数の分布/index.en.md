@@ -9,15 +9,15 @@ categories: ["mathematics", "cryptography"]
 tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 ---
 
-# 1. Introduction: The Mystery of the Universe in Prime Numbers and the Riemann Hypothesis
+# 1. Introduction: The Mystery of the Universe in Prime Numbers and the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis
 
 "Prime Numbers" are natural numbers divisible only by 1 and themselves, often called the "atoms" in the world of mathematics. The sequence of 2, 3, 5, 7, 11, 13... appears at first glance to be unordered and random. Ever since the ancient Greek mathematician [Euclid](https://kenji.blog/en/p/euclid/) proved that "there are infinitely many prime numbers," countless mathematicians have challenged themselves to unravel the regularity hidden in the arrangement of these primes.
 
-The closest anyone has come to the mystery of prime numbers is the **"Riemann Hypothesis"** proposed by the German mathematician [Bernhard Riemann](https://kenji.blog/en/p/riemann/) in 1859. The Riemann Hypothesis is one of the most important and unsolved difficult problems in modern mathematics, and carries a $1 million prize as one of the Millennium Prize Problems designated by the Clay Mathematics Institute.
+The closest anyone has come to the mystery of prime numbers is the **"[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis"** proposed by the German mathematician [Bernhard Riemann](https://kenji.blog/en/p/riemann/) in 1859. The [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is one of the most important and unsolved difficult problems in modern mathematics, and carries a $1 million prize as one of the Millennium Prize Problems designated by the Clay Mathematics Institute.
 
 At first glance, a difficult problem in pure mathematics regarding the distribution of prime numbers may seem unrelated to our daily lives. However, internet security, which supports the infrastructure of modern society, especially **modern cryptographic technologies such as RSA cryptography and Elliptic Curve Cryptography (ECC)**, relies deeply on the properties of gigantic prime numbers.
 
-In this article, we will embark on a mathematical journey from the distribution of prime numbers to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/), the Riemann Zeta function, and the core of the Riemann Hypothesis. We will provide an extremely detailed and deep explanation of how it is connected to modern cryptography and what would happen to the world if the Riemann Hypothesis were proven.
+In this article, we will embark on a mathematical journey from the distribution of prime numbers to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/), the [Riemann](https://kenji.blog/en/p/riemann/) Zeta function, and the core of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis. We will provide an extremely detailed and deep explanation of how it is connected to modern cryptography and what would happen to the world if the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis were proven.
 
 ---
 
@@ -44,13 +44,13 @@ Or, it can be approximately expressed as follows:
 
 $$ \pi(x) \sim \frac{x}{\ln x} $$
 
-Through this theorem, it became clear that prime numbers have a very smooth and predictable distribution when viewed macroscopically. However, microscopically, there is always an "error" or "fluctuation" between $\pi(x)$ and $\text{Li}(x)$. The true nature of this fluctuation is exactly the greatest mystery that the Riemann Hypothesis attempts to unravel.
+Through this theorem, it became clear that prime numbers have a very smooth and predictable distribution when viewed macroscopically. However, microscopically, there is always an "error" or "fluctuation" between $\pi(x)$ and $\text{Li}(x)$. The true nature of this fluctuation is exactly the greatest mystery that the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis attempts to unravel.
 
 ---
 
-# 3. The Riemann Zeta Function and the Euler Product
+# 3. The [Riemann](https://kenji.blog/en/p/riemann/) Zeta Function and the Euler Product
 
-The most powerful weapon for analyzing the distribution of prime numbers is the **Riemann Zeta Function**. Originally, it was an infinite series defined by [Leonhard Euler](https://kenji.blog/en/p/euler/) for real numbers $s > 1$.
+The most powerful weapon for analyzing the distribution of prime numbers is the **[Riemann](https://kenji.blog/en/p/riemann/) Zeta Function**. Originally, it was an infinite series defined by [Leonhard Euler](https://kenji.blog/en/p/euler/) for real numbers $s > 1$.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -66,9 +66,9 @@ An intuitive understanding of the proof is that if each term on the right side i
 
 # 4. Analytic Continuation and Extension to the Complex Plane
 
-Riemann's genius lay in extending the variable $s$ of $\zeta(s)$, which Euler had considered only for real numbers, to **complex numbers $s = \sigma + it$ (where $\sigma$ is the real part and $t$ is the imaginary part)**.
+[Riemann](https://kenji.blog/en/p/riemann/)'s genius lay in extending the variable $s$ of $\zeta(s)$, which Euler had considered only for real numbers, to **complex numbers $s = \sigma + it$ (where $\sigma$ is the real part and $t$ is the imaginary part)**.
 
-The original infinite series only converges for $\sigma > 1$, but using a technique called "Analytic Continuation," Riemann extended the definition so that $\zeta(s)$ is meaningful over the entire complex plane, excluding the pole at $s = 1$.
+The original infinite series only converges for $\sigma > 1$, but using a technique called "Analytic Continuation," [Riemann](https://kenji.blog/en/p/riemann/) extended the definition so that $\zeta(s)$ is meaningful over the entire complex plane, excluding the pole at $s = 1$.
 
 He further derived a beautiful functional equation satisfied by the Zeta function:
 
@@ -84,12 +84,12 @@ However, what is important in the distribution of prime numbers are the other ze
 
 ---
 
-# 5. The Core of the Riemann Hypothesis and the Explicit Formula
+# 5. The Core of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis and the Explicit Formula
 
-Riemann calculated a small number of zeros and formulated a remarkable conjecture. This is the **Riemann Hypothesis**.
+[Riemann](https://kenji.blog/en/p/riemann/) calculated a small number of zeros and formulated a remarkable conjecture. This is the **[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis**.
 
-> **Riemann Hypothesis**
-> All non-trivial zeros of the Riemann Zeta function $\zeta(s)$ lie on the line where the real part is $1/2$ ($\text{Re}(s) = 1/2$).
+> **[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis**
+> All non-trivial zeros of the [Riemann](https://kenji.blog/en/p/riemann/) Zeta function $\zeta(s)$ lie on the line where the real part is $1/2$ ($\text{Re}(s) = 1/2$).
 
 This line with a real part of $1/2$ is called the "Critical line".
 
@@ -103,20 +103,20 @@ graph TD
     F --> G["To the proof of the limit of the error term in the prime distribution"]
 ```
 
-Why is the Riemann Hypothesis so important? It is because the zeros of the Zeta function **completely** determine the distribution of prime numbers.
+Why is the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis so important? It is because the zeros of the Zeta function **completely** determine the distribution of prime numbers.
 
-Riemann and later the mathematician von Mangoldt derived an "Explicit formula" that accurately describes the distribution of primes. Using the Chebyshev function $\psi(x)$, it is expressed as follows:
+[Riemann](https://kenji.blog/en/p/riemann/) and later the mathematician von Mangoldt derived an "Explicit formula" that accurately describes the distribution of primes. Using the Chebyshev function $\psi(x)$, it is expressed as follows:
 
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 Here, $\rho$ runs over all the non-trivial zeros of the Zeta function.
 The main term is $x$ (which corresponds to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/)), and by adding and subtracting wave-like terms depending on the zeros $\rho$, the precise step-like distribution of primes is restored. The non-trivial zeros can be said to represent the "frequencies (waves)" of the distribution of primes.
 
-If the Riemann Hypothesis is true, and the real part of all non-trivial zeros $\rho$ is exactly $1/2$, the error term of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) would fall within the theoretically smallest possible range.
+If the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is true, and the real part of all non-trivial zeros $\rho$ is exactly $1/2$, the error term of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) would fall within the theoretically smallest possible range.
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \quad x \ge 2657 $$
 
-In other words, **if the Riemann Hypothesis is true, it proves that prime numbers are distributed as "regularly and beautifully" as we can possibly imagine.**
+In other words, **if the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is true, it proves that prime numbers are distributed as "regularly and beautifully" as we can possibly imagine.**
 
 ---
 
@@ -156,40 +156,40 @@ To break RSA cryptography, one must find (factorize) the original primes $p$ and
 
 ---
 
-# 7. The Impact of the Riemann Hypothesis on Cryptography
+# 7. The Impact of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis on Cryptography
 
-So, how do the "Riemann Hypothesis," which sits at the pinnacle of pure mathematics, and "cryptography" intersect?
+So, how do the "[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis," which sits at the pinnacle of pure mathematics, and "cryptography" intersect?
 
-### 7.1. Prime Generation Algorithms (Primality Testing) and the Generalized Riemann Hypothesis (GRH)
+### 7.1. Prime Generation Algorithms (Primality Testing) and the Generalized [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis (GRH)
 To operate RSA cryptography, gigantic prime numbers $p$ and $q$ must first be generated. However, it is not easy to reliably and quickly determine whether "a certain number is prime."
 
 Currently, what is used practically is a probabilistic algorithm called the **Miller-Rabin primality test**. Although this algorithm is fast, there is a risk of "pseudoprimes," where a composite number is incorrectly identified as a prime number with an extremely low probability.
 
-However, if we assume the **"Generalized Riemann Hypothesis (GRH)"**, which extends the Riemann Hypothesis to Dirichlet L-functions, to be true, the story changes dramatically.
+However, if we assume the **"Generalized [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis (GRH)"**, which extends the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis to Dirichlet L-functions, to be true, the story changes dramatically.
 If the GRH is true, an upper bound on the number of tests in the Miller-Rabin test is mathematically guaranteed, and it is **elevated from a probabilistic algorithm to a "deterministic polynomial-time algorithm"** (this was a significant fact known even before the discovery of the AKS primality test).
 
-In short, the Riemann Hypothesis (and its generalization) plays a role in directly validating the foundation of cryptography: "Can we generate massive prime numbers quickly and with absolute confidence?"
+In short, the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis (and its generalization) plays a role in directly validating the foundation of cryptography: "Can we generate massive prime numbers quickly and with absolute confidence?"
 
 ### 7.2. Relationship with Factorization Algorithms
 When evaluating the computational complexity of algorithms for breaking codes (such as the General Number Field Sieve), knowledge of the distribution of prime numbers is also essential. Many integer factorization algorithms rely on the distribution of "Smooth numbers" (numbers that only have small prime factors).
 
-To strictly evaluate how frequently smooth numbers appear, a deep understanding of the distribution of primes is necessary, and analytic number theory techniques directly connected to the Zeta function and the Riemann Hypothesis are fully utilized here as well. If the Riemann Hypothesis is proven and the error in prime distribution is completely determined, it will become possible to more accurately assess the performance limits of integer factorization algorithms.
+To strictly evaluate how frequently smooth numbers appear, a deep understanding of the distribution of primes is necessary, and analytic number theory techniques directly connected to the Zeta function and the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis are fully utilized here as well. If the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is proven and the error in prime distribution is completely determined, it will become possible to more accurately assess the performance limits of integer factorization algorithms.
 
 ---
 
-# 8. Will Cryptography be Broken if the Riemann Hypothesis is Proven?
+# 8. Will Cryptography be Broken if the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is Proven?
 
-There is an urban legend that says, "If the Riemann Hypothesis is solved, RSA cryptography will instantly collapse," but **this is mathematically inaccurate**.
+There is an urban legend that says, "If the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is solved, RSA cryptography will instantly collapse," but **this is mathematically inaccurate**.
 
-The proof of the Riemann Hypothesis itself would not immediately yield a magical algorithm that drastically speeds up integer factorization. This is because the Riemann Hypothesis is ultimately a theorem about the "macroscopic regularity of the distribution" of primes, and it does not directly tell us which primes divide an individual number $N$ (a local property).
+The proof of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis itself would not immediately yield a magical algorithm that drastically speeds up integer factorization. This is because the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is ultimately a theorem about the "macroscopic regularity of the distribution" of primes, and it does not directly tell us which primes divide an individual number $N$ (a local property).
 
 However, the impact is not zero.
-This is because, in the process of proving the Riemann Hypothesis, it is extremely likely that **"new mathematical tools" and "unknown analytical methods"** will be discovered. Looking at history, when [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) or the [Poincaré Conjecture](https://kenji.blog/en/p/poincare-conjecture/) were proven, the new theories developed during the process greatly advanced the entirety of mathematics.
+This is because, in the process of proving the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis, it is extremely likely that **"new mathematical tools" and "unknown analytical methods"** will be discovered. Looking at history, when [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) or the [Poincaré Conjecture](https://kenji.blog/en/p/poincare-conjecture/) were proven, the new theories developed during the process greatly advanced the entirety of mathematics.
 
-If unknown algebraic geometry methods or non-commutative geometry methods are established that can completely manipulate the properties of the zeros of the Riemann Zeta function, it cannot be denied that this might ultimately lead to the discovery of a groundbreaking integer factorization algorithm (for example, a classical algorithm that reduces the computational complexity to polynomial time). In that sense, cryptographers can never take their eyes off the developments surrounding the Riemann Hypothesis.
+If unknown algebraic geometry methods or non-commutative geometry methods are established that can completely manipulate the properties of the zeros of the [Riemann](https://kenji.blog/en/p/riemann/) Zeta function, it cannot be denied that this might ultimately lead to the discovery of a groundbreaking integer factorization algorithm (for example, a classical algorithm that reduces the computational complexity to polynomial time). In that sense, cryptographers can never take their eyes off the developments surrounding the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis.
 
 ### Quantum Computers and Shor's Algorithm
-A more direct and realistic threat to cryptography is not the proof of the Riemann Hypothesis, but **quantum computers**. "Shor's Algorithm," published by Peter Shor in 1994, proved that integer factorization can be solved in polynomial time if a quantum computer with sufficient performance exists. Consequently, RSA cryptography and Elliptic Curve Cryptography will be fundamentally broken.
+A more direct and realistic threat to cryptography is not the proof of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis, but **quantum computers**. "Shor's Algorithm," published by Peter Shor in 1994, proved that integer factorization can be solved in polynomial time if a quantum computer with sufficient performance exists. Consequently, RSA cryptography and Elliptic Curve Cryptography will be fundamentally broken.
 
 Currently, a transition to "Post-Quantum Cryptography (PQC)" (such as lattice-based cryptography), which cannot be decrypted even by quantum computers, is progressing worldwide. Cryptography relying on prime numbers may be coming to the end of its golden age in a sense, but the mathematical value of prime numbers themselves will never be lost.
 
@@ -209,9 +209,9 @@ graph TD
     H --> F
 ```
 
-The insatiable exploration of prime numbers that has continued since ancient Greece was elevated by the genius of Riemann into a beautiful symphony (the zeros of the Zeta function) on the complex plane. Amazingly, after several centuries, the crystallization of that purely innocent mathematics is being applied as the strongest shield ensuring the safety of the internet society.
+The insatiable exploration of prime numbers that has continued since ancient Greece was elevated by the genius of [Riemann](https://kenji.blog/en/p/riemann/) into a beautiful symphony (the zeros of the Zeta function) on the complex plane. Amazingly, after several centuries, the crystallization of that purely innocent mathematics is being applied as the strongest shield ensuring the safety of the internet society.
 
-The Riemann Hypothesis symbolizes both the "abstract beauty" of mathematics and its "astonishing applicability to the physical world and real society."
+The [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis symbolizes both the "abstract beauty" of mathematics and its "astonishing applicability to the physical world and real society."
 
 When this massive mountain of mathematics, whose peak no one has yet reached, is conquered someday, we will completely understand the universal truth of prime numbers and gain a new perspective on the foundation of our information society. Studying cryptography is, in itself, a journey tracing the history of human wisdom.
 

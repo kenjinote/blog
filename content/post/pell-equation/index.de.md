@@ -30,13 +30,13 @@ $$ (x - ky)(x + ky) = 1 $$
 
 Da $x$, $y$ und $k$ alle ganze Zahlen sind, müssen $(x - ky)$ und $(x + ky)$ ebenfalls ganze Zahlen sein. Die einzigen Kombinationen ganzer Zahlen, deren Produkt 1 ergibt, sind $(1, 1)$ oder $(-1, -1)$. Die Lösung hierfür ergibt $y = 0$, was bedeutet, dass die einzigen Lösungen die sehr einfachen $(x, y) = (\pm 1, 0)$ sind. Daher ist in der Pellschen Gleichung die Bedingung, dass $n$ kein perfektes Quadrat ist, eine wesentliche Voraussetzung, um sinnvolle Lösungen zu finden.
 
-## 2. Historischer Hintergrund: Pell, Fermat und alte indische Mathematiker
+## 2. Historischer Hintergrund: Pell, [Fermat](https://kenji.blog/de/p/fermat/) und alte indische Mathematiker
 
 Obwohl diese Gleichung den Namen "Pell" trägt, offenbart die Erforschung der historischen Fakten einen etwas seltsamen Hintergrund. Tatsächlich war die erste Person im modernen Europa, die eine allgemeine Lösung für diese Gleichung studierte und nachdrücklich behauptete, dass immer eine Lösung existiert, der große französische Mathematiker **[Pierre de Fermat](https://kenji.blog/de/p/fermat/)**.
 
 Später brachte **[Leonhard Euler](https://kenji.blog/de/p/euler/)** fälschlicherweise den Namen des englischen Mathematikers **John Pell** mit dieser Gleichung in Verbindung, und seitdem ist sie weithin als "[Pellsche Gleichung](https://kenji.blog/de/p/pell-equation/)" bekannt. Pell selbst spielte keine zentrale Rolle bei der Lösungsmethode für diese Gleichung.
 
-Wenn man weiter in die Vergangenheit zurückgeht, so berechneten die indischen Mathematiker **Brahmagupta** und **Bhāskara II** hunderte Jahre vor Fermat Lösungen für Gleichungen dieser Art unter Verwendung eines ausgeklügelten Algorithmus, der als Chakravala-Methode bezeichnet wird. Die Geschichte der Erforschung durch Mathematiker von der Antike über das Mittelalter bis in die Neuzeit ist in dieser Gleichung eingeschrieben.
+Wenn man weiter in die Vergangenheit zurückgeht, so berechneten die indischen Mathematiker **Brahmagupta** und **Bhāskara II** hunderte Jahre vor [Fermat](https://kenji.blog/de/p/fermat/) Lösungen für Gleichungen dieser Art unter Verwendung eines ausgeklügelten Algorithmus, der als Chakravala-Methode bezeichnet wird. Die Geschichte der Erforschung durch Mathematiker von der Antike über das Mittelalter bis in die Neuzeit ist in dieser Gleichung eingeschrieben.
 
 ## 3. Der Unterschied zwischen trivialen und nicht-trivialen Lösungen
 
@@ -207,4 +207,4 @@ Die Lösungen der Pellschen Gleichung entsprechen eng den **Einheiten** (Element
 
 In diesem Artikel haben wir eine der faszinierendsten diophantischen Gleichungen, die **[Pellsche Gleichung](https://kenji.blog/de/p/pell-equation/)**, von ihren Grundlagen bis zu ihren Anwendungen im Detail untersucht. Wir haben die überraschende Tatsache erklärt, dass es für jedes nicht quadratische $n$ immer unendliche nicht-triviale Lösungen gibt, einen effizienten Algorithmus zur Suche nach Lösungen mittels Kettenbruchentwicklungen sowie die Dynamik der Synthese neuer Lösungen nacheinander aus der generierten Fundamentallösung unter Verwendung von Matrizen.
 
-Die Tatsache, dass klassische Probleme, die von Fermat und Brahmagupta vor Hunderten von Jahren betrachtet wurden, auf wunderbare Weise als moderne Computeralgorithmen implementiert werden können und darüber hinaus eine Verbindung zur fortgeschrittenen algebraischen Zahlentheorie herstellen, ruft eine tiefe und zeitlose mathematische Romantik hervor. Wir hoffen, dass Sie diese Gelegenheit nutzen werden, um mithilfe des Python-Codes die Welt der Pellschen Gleichung für verschiedene Werte von $n$ zu erkunden und die tiefgreifenden Eigenschaften von Zahlen kennenzulernen.
+Die Tatsache, dass klassische Probleme, die von [Fermat](https://kenji.blog/de/p/fermat/) und Brahmagupta vor Hunderten von Jahren betrachtet wurden, auf wunderbare Weise als moderne Computeralgorithmen implementiert werden können und darüber hinaus eine Verbindung zur fortgeschrittenen algebraischen Zahlentheorie herstellen, ruft eine tiefe und zeitlose mathematische Romantik hervor. Wir hoffen, dass Sie diese Gelegenheit nutzen werden, um mithilfe des Python-Codes die Welt der Pellschen Gleichung für verschiedene Werte von $n$ zu erkunden und die tiefgreifenden Eigenschaften von Zahlen kennenzulernen.

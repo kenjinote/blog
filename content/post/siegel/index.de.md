@@ -64,11 +64,11 @@ $$
 
 Während es beispielsweise unendlich viele reelle oder rationale Lösungen für eine elliptische Kurve (Geschlecht $g=1$) wie $x^3 + y^3 = c$ (wobei $c$ eine von Null verschiedene ganze Zahl ist) geben kann, garantiert dieser Satz, dass es bei Beschränkung auf **ganzzahlige Lösungen** immer nur endlich viele geben wird.
 
-Dieses Ergebnis war bahnbrechend hinsichtlich der Endlichkeit von Lösungen diophantischer Gleichungen und wurde zu einem entscheidenden historischen Schritt, der den Weg für den späteren Beweis des Satzes von Mordell-Weil (die Endlichkeit rationaler Punkte auf Kurven des Geschlechts 2 oder höher) durch [Gerd Faltings](https://kenji.blog/de/p/faltings/) ebnete. Siegel leitete dieses erstaunliche Ergebnis ab, indem er Axel Thues Satz über diophantische Approximationen erheblich erweiterte und ihn mit der Theorie der Jacobivarietäten über abelschen Varietäten kombinierte.
+Dieses Ergebnis war bahnbrechend hinsichtlich der Endlichkeit von Lösungen diophantischer Gleichungen und wurde zu einem entscheidenden historischen Schritt, der den Weg für den späteren Beweis des Satzes von Mordell-Weil (die Endlichkeit rationaler Punkte auf Kurven des Geschlechts 2 oder höher) durch [Gerd Faltings](https://kenji.blog/de/p/faltings/) ebnete. Siegel leitete dieses erstaunliche Ergebnis ab, indem er Axel Thues Satz über diophantische Approximationen erheblich erweiterte und ihn mit der Theorie der [Jacobi](https://kenji.blog/de/p/jacobi/)varietäten über abelschen Varietäten kombinierte.
 
 ### 3.2 Siegel-Nullstelle
 
-In der analytischen Zahlentheorie ist die Verteilung der Nullstellen der Dirichletschen $L$-Funktion $L(s, \chi)$ von extremer Bedeutung für natürliche Erweiterungen des Primzahlsatzes und des Satzes über arithmetische Progressionen. Gemäß der verallgemeinerten Riemannschen Vermutung (GRH) sollen alle Nullstellen im kritischen Streifen mit einem Realteil zwischen $0$ und $1$ auf der Geraden liegen, auf der der Realteil $1/2$ ist.
+In der analytischen Zahlentheorie ist die Verteilung der Nullstellen der Dirichletschen $L$-Funktion $L(s, \chi)$ von extremer Bedeutung für natürliche Erweiterungen des Primzahlsatzes und des Satzes über arithmetische Progressionen. Gemäß der verallgemeinerten [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung (GRH) sollen alle Nullstellen im kritischen Streifen mit einem Realteil zwischen $0$ und $1$ auf der Geraden liegen, auf der der Realteil $1/2$ ist.
 
 Für einen reellen Charakter (eines reell-quadratischen Zahlkörpers) $\chi$ wurde jedoch die Möglichkeit, dass eine reelle Nullstelle mit einem Realteil sehr nahe bei $1$ existiert, durch die aktuelle Mathematik nicht ausgeschlossen. Eine solche hypothetische Gegenbeispiel-Nullstelle wird als **Siegel-Nullstelle** (Siegel zero) oder Ausnahme-Nullstelle bezeichnet.
 
@@ -90,7 +90,7 @@ $$
 \mathcal{H}_g = \left\{ Z \in M_g(\mathbb{C}) \mid Z^T = Z, \text{ Im}(Z) \text{ ist positiv definit} \right\}
 $$
 
-Hierbei stimmt dieser Raum für $g=1$ perfekt mit der üblichen Poincaréschen Halbebene überein. Siegel führte diesen höherdimensionalen Raum im Zuge der Vertiefung der analytischen Theorie quadratischer Formen ein und zeigte, dass auf diesem Raum definierte automorphe Formen tief mit der Anzahl der Darstellungen ganzer Zahlen durch quadratische Formen verbunden sind.
+Hierbei stimmt dieser Raum für $g=1$ perfekt mit der üblichen [Poincaré](https://kenji.blog/de/p/poincare/)schen Halbebene überein. Siegel führte diesen höherdimensionalen Raum im Zuge der Vertiefung der analytischen Theorie quadratischer Formen ein und zeigte, dass auf diesem Raum definierte automorphe Formen tief mit der Anzahl der Darstellungen ganzer Zahlen durch quadratische Formen verbunden sind.
 
 Darüber hinaus legte er den Grundstein für die **Siegel-Weil-Formel** innerhalb der analytischen Theorie quadratischer Formen. Dies ist eine wunderbare Formel, die die Anzahl der Darstellungen durch quadratische Formen als Fourier-Koeffizienten von Eisensteinreihen beschreibt, und sie kann als analytischer Ausdruck des Lokal-Global-Prinzips (Hasse-Prinzip) angesehen werden. Diese Theorien sind unverzichtbare Konzepte, die die Basis für die spätere Theorie der automorphen Darstellungen und das Langlands-Programm bilden.
 
@@ -129,7 +129,7 @@ Siegels Sicht auf die Mathematik war ebenso bemerkenswert wie die Errungenschaft
 
 Mitte des 20. Jahrhunderts überschwemmte ein abstrakter Stil, der vom jungen französischen Mathematiker-Kollektiv, der Bourbaki-Gruppe, verfochten wurde – die versuchte, die gesamte Mathematik aus der Mengenlehre und axiomatischen Systemen neu aufzubauen – die Welt. Siegel übte jedoch scharfe Kritik an diesem Trend. Er tat den Bourbaki-Stil als "leeren Formalismus" ab und hinterließ Bemerkungen mit folgendem Tenor:
 
-> "Die exzessive Abstraktion der neueren Mathematik ist in einen leeren Formalismus verfallen und liefert keine bedeutsamen Ergebnisse. Wir sollten zu konkreten, an wahrem Inhalt reichen Problemen zurückkehren, wie sie Gauß, Euler, Riemann und Jacobi in Angriff genommen haben."
+> "Die exzessive Abstraktion der neueren Mathematik ist in einen leeren Formalismus verfallen und liefert keine bedeutsamen Ergebnisse. Wir sollten zu konkreten, an wahrem Inhalt reichen Problemen zurückkehren, wie sie Gauß, Euler, [Riemann](https://kenji.blog/de/p/riemann/) und [Jacobi](https://kenji.blog/de/p/jacobi/) in Angriff genommen haben."
 
 Aufgrund dieser starken Überzeugung ist das Lesen seiner Arbeiten sehr lohnend; andererseits tauchen für moderne Leser überall hochtechnische und langwierige Berechnungen auf, die oft immense Anstrengungen erfordern, um sie zu entschlüsseln. Er ging sein Leben lang keine Kompromisse bei seiner Philosophie ein, dass "abstrakte Konzepte und Rahmenwerke lediglich ein Mittel sind, um konkrete, schwierige Probleme zu lösen". Diese distanzierte Haltung machte ihn zu einer etwas eigenwilligen Figur unter seinen zeitgenössischen Mathematikern.
 

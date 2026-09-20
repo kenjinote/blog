@@ -92,8 +92,8 @@ Eiffel 是一种面向对象的编程语言
 ## Ada
 Ada 是一种面向对象的编程语言
 
-## Pascal
-Pascal 是一种过程式编程语言
+## [Pascal](https://kenji.blog/zh-cn/p/pascal/)
+[Pascal](https://kenji.blog/zh-cn/p/pascal/) 是一种过程式编程语言
 
 ## COBOL
 历史悠久。是一种通用的编程语言。

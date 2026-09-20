@@ -23,7 +23,7 @@ maka garis yang digambar oleh titik P adalah spiral [Archimedes](https://kenji.b
 - Sikloid
 - Konkoid Nicomedes
 - Sisoid Diocles
-- Metode garis singgung Fermat
+- Metode garis singgung [Fermat](https://kenji.blog/id/p/fermat/)
 - Metode garis normal [Descartes](https://kenji.blog/id/p/descartes/)
 
 ### Kronologi

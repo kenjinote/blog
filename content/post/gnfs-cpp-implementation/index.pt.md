@@ -422,7 +422,7 @@ No mundo do corpo algébrico $\mathbb{Z}[\alpha]$, dado que a unicidade da fator
 
 Deste modo, surge uma imensa barreira provinda da teoria algébrica dos números, as chamadas "Obstrução do grupo de classes de ideais" e a "Obstrução do grupo das unidades".
 No GNFS, usamos a mágica do **"Caracter Quadrático (Quadratic Characters)"** para quebrar essa parede.
-Inserimos sorrateiramente várias colunas de símbolos residuais quadráticos (símbolos de Legendre) na matriz da Fase 4 para uma dezena de números ideais primos, de forma que a chance de as obstruções sumirem aumente brutalmente, e que assim, garantam finalmente "o autêntico quadrado de um elemento $\gamma^2$".
+Inserimos sorrateiramente várias colunas de símbolos residuais quadráticos (símbolos de [Legendre](https://kenji.blog/pt/p/legendre/)) na matriz da Fase 4 para uma dezena de números ideais primos, de forma que a chance de as obstruções sumirem aumente brutalmente, e que assim, garantam finalmente "o autêntico quadrado de um elemento $\gamma^2$".
 
 Em seguida, calcula-se o $\gamma$ (raiz quadrada algébrica) usando algoritmos complexos, como o método de Montgomery.
 

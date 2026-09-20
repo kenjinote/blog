@@ -16,7 +16,7 @@ The proof of **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theo
 
 [Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/) was born in 1927 in Kisai Town, Saitama Prefecture (now Kazo City). He showed an extraordinary talent for mathematics from a young age, but his student years coincided with the chaotic period of World War II. He contracted tuberculosis and often missed long periods of high school classes. During his recuperation, he read mathematics books alone and developed deep mathematical thinking through self-study. It is said that this isolated time honed his unique and intuitive mathematical sense.
 
-After entering the Department of Mathematics at the University of Tokyo's Faculty of Science, he developed a strong interest in abstract algebra and number theory. Despite being in a post-war reconstruction period, the Japanese mathematical community at the time was aiming for world-class research, influenced by young researchers inspired by Teiji Takagi and Emil Artin. Taniyama let his talents blossom amidst this enthusiasm.
+After entering the Department of Mathematics at the University of Tokyo's Faculty of Science, he developed a strong interest in abstract algebra and number theory. Despite being in a post-war reconstruction period, the Japanese mathematical community at the time was aiming for world-class research, influenced by young researchers inspired by Teiji [Takagi](https://kenji.blog/en/p/takagi-teiji/) and Emil Artin. Taniyama let his talents blossom amidst this enthusiasm.
 
 ## 2. Meeting [Goro Shimura](https://kenji.blog/en/p/shimura-goro/)
 
@@ -78,7 +78,7 @@ His suicide note did not state any specific worries. He wrote, "Until yesterday 
 
 After Taniyama's death, [Goro Shimura](https://kenji.blog/en/p/shimura-goro/) rigorously formulated this conjecture and spread it to mathematicians worldwide. For a long time, this conjecture was considered a goal so difficult that it seemed "unprovable." However, a dramatic turn of events occurred in the 1980s. The German mathematician Gerhard Frey proposed an astonishing idea: **"If [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) has a counterexample, the elliptic curve constructed from that counterexample cannot be modular."**
 
-The elliptic curve constructed by Frey (the Frey curve) took the following form. Assume there is an integer solution to Fermat's equation $A^n + B^n = C^n$. Using that solution, we create the following elliptic curve:
+The elliptic curve constructed by Frey (the Frey curve) took the following form. Assume there is an integer solution to [Fermat](https://kenji.blog/en/p/fermat/)'s equation $A^n + B^n = C^n$. Using that solution, we create the following elliptic curve:
 
 $$ E: y^2 = x (x - A^n) (x + B^n) $$
 

@@ -19,7 +19,7 @@ In diesem Artikel werden wir den aktuellen Stand von Quantencomputern eingehend 
 
 ## 2. Grundlagen von Quantenzuständen und Fidelität (Fidelity)
 
-Das Qubit, die grundlegende Einheit eines Quantencomputers, kann sich im Gegensatz zu einem klassischen Bit (0 oder 1) in einem Überlagerungszustand (Superposition) von 0 und 1 befinden. Der Zustand eines einzelnen Qubits wird als Vektor in einem Hilbertraum wie folgt dargestellt:
+Das Qubit, die grundlegende Einheit eines Quantencomputers, kann sich im Gegensatz zu einem klassischen Bit (0 oder 1) in einem Überlagerungszustand (Superposition) von 0 und 1 befinden. Der Zustand eines einzelnen Qubits wird als Vektor in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum wie folgt dargestellt:
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -130,7 +130,7 @@ Der Durchbruch des Jahres 2026 ist die zweidimensionale Ausrichtung der QCCD-Arc
 
 ### 5.3 Topologisches Quantencomputing: Kontrolle von Anyonen
 
-Das **topologische Quantencomputing**, das lange Zeit als rein theoretisch galt, hat im Jahr 2026 endlich die Phase der experimentellen Demonstration erreicht. Dieser Ansatz, der unter anderem von Microsoft vorangetrieben wird, nutzt nicht-abelsche Anyonen (Non-Abelian Anyons), die als „Majorana-Nullmoden (Majorana Zero Modes)“ bezeichnet werden.
+Das **topologische Quantencomputing**, das lange Zeit als rein theoretisch galt, hat im Jahr 2026 endlich die Phase der experimentellen Demonstration erreicht. Dieser Ansatz, der unter anderem von Microsoft vorangetrieben wird, nutzt nicht-abelsche Anyonen (Non-[Abel](https://kenji.blog/de/p/abel/)ian Anyons), die als „Majorana-Nullmoden (Majorana Zero Modes)“ bezeichnet werden.
 
 Quantengatter werden durch eine Operation namens „Braiding (Flechten)“ ausgeführt, bei der die Positionen der Anyon-Teilchen vertauscht werden.
 

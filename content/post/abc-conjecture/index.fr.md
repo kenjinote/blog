@@ -47,7 +47,7 @@ Le diagramme ci-dessus montre une version simplifiée du concept de transmission
 
 ### Frobenioïdes et théâtres de Hodge
 
-En tant que concepts importants constituant la théorie IUT, il y a les **frobenioïdes** (Frobenioid) et les **théâtres de Hodge** (Hodge Theater). Ce sont des mécanismes qui encodent géométriquement des informations de la théorie des nombres par l'action du groupe de Galois absolu ou du groupe fondamental d'un corps de nombres.
+En tant que concepts importants constituant la théorie IUT, il y a les **frobenioïdes** (Frobenioid) et les **théâtres de Hodge** (Hodge Theater). Ce sont des mécanismes qui encodent géométriquement des informations de la théorie des nombres par l'action du groupe de [Galois](https://kenji.blog/fr/p/galois/) absolu ou du groupe fondamental d'un corps de nombres.
 
 $$ \Theta \text{-lien} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
 
@@ -55,13 +55,13 @@ Le lien Thêta ($\Theta$-lien) joue le rôle de transmettre des informations de 
 
 # Conséquences étonnantes de la conjecture ABC
 
-Si la conjecture ABC était (par la théorie IUT ou par d'autres méthodes) complètement prouvée, un grand nombre de théorèmes importants de la théorie des nombres en découleraient d'un seul coup. Comparons cela avec la **conjecture de Mordell** (maintenant connue sous le nom de théorème de Faltings) et le **dernier théorème de Fermat** .
+Si la conjecture ABC était (par la théorie IUT ou par d'autres méthodes) complètement prouvée, un grand nombre de théorèmes importants de la théorie des nombres en découleraient d'un seul coup. Comparons cela avec la **conjecture de Mordell** (maintenant connue sous le nom de théorème de Faltings) et le **dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/)** .
 
-## Application au dernier théorème de Fermat
+## Application au dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/)
 
 [Le dernier théorème de Fermat](https://kenji.blog/fr/p/fermats-last-theorem/) stipule que pour $n \ge 3$, il n'existe pas de triplet d'entiers positifs $(x, y, z)$ satisfaisant $x^n + y^n = z^n$. Il a été prouvé par [Andrew Wiles](https://kenji.blog/fr/p/wiles/) en 1995, mais des mathématiques extrêmement avancées et complexes ont été utilisées.
 
-Si nous supposons que la conjecture ABC est vraie, étonnamment, le dernier théorème de Fermat (au moins lorsque $n$ est suffisamment grand) peut être prouvé en quelques lignes seulement.
+Si nous supposons que la conjecture ABC est vraie, étonnamment, le dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/) (au moins lorsque $n$ est suffisamment grand) peut être prouvé en quelques lignes seulement.
 
 Soit $x^n + y^n = z^n$, et supposons que $(x, y, z)$ sont premiers entre eux. En appliquant la conjecture ABC à $a=x^n$, $b=y^n$, $c=z^n$, on obtient :
 

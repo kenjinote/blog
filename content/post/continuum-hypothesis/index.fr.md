@@ -39,7 +39,7 @@ L'HC affirme qu'il n'existe aucune autre cardinalité entre les deux.
 
 Cantor a passé sa vie à essayer de prouver cette hypothèse, mais n'y est jamais parvenu. Parfois il pensait l'avoir « prouvée », d'autres fois l'avoir « réfutée », et sa santé mentale a été grandement affectée par ce problème difficile.
 
-En 1900, lors du deuxième Congrès international des mathématiciens tenu à Paris, [David Hilbert](https://kenji.blog/fr/p/hilbert/) a proposé les « 23 problèmes de Hilbert » que les mathématiques du 20e siècle devraient résoudre. Le mémorable **premier problème** de cette liste était précisément la « preuve de l'hypothèse du continu ».
+En 1900, lors du deuxième Congrès international des mathématiciens tenu à Paris, [David Hilbert](https://kenji.blog/fr/p/hilbert/) a proposé les « 23 problèmes de [Hilbert](https://kenji.blog/fr/p/hilbert/) » que les mathématiques du 20e siècle devraient résoudre. Le mémorable **premier problème** de cette liste était précisément la « preuve de l'hypothèse du continu ».
 
 ## 4. Axiomatisation de la théorie des ensembles : Le système d'axiomes ZFC
 

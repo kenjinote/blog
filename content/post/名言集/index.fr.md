@@ -150,7 +150,7 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 > Un bon code est sa propre meilleure documentation (Steve McConnell)
 
-> Les programmes doivent être écrits pour que les gens puissent les lire, et seulement accessoirement pour que les machines les exécutent (Harold Abelson)
+> Les programmes doivent être écrits pour que les gens puissent les lire, et seulement accessoirement pour que les machines les exécutent (Harold [Abel](https://kenji.blog/fr/p/abel/)son)
 
 > Résolvez d'abord le problème. Ensuite, écrivez le code (John Johnson)
 

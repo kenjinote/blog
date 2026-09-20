@@ -86,7 +86,7 @@ Diese Entdeckung machte Mathematikern schmerzlich bewusst, wie unzuverlässig ge
 
 ### 3. Aufbau der komplexen Analysis und Theorie der elliptischen Funktionen
 
-Weierstraß spielte auch eine entscheidende Rolle in der Theorie der komplexen Funktionen. Während Cauchy und Riemann die geometrische Intuition und Integration betonten, wählte Weierstraß einen algebraischen Ansatz, der auf "Potenzreihen" basierte. Er definierte komplexe Funktionen rigoros mit dem Konzept der analytischen Fortsetzung und etablierte die Standardmethoden der modernen komplexen Analysis.
+Weierstraß spielte auch eine entscheidende Rolle in der Theorie der komplexen Funktionen. Während [Cauchy](https://kenji.blog/de/p/cauchy/) und [Riemann](https://kenji.blog/de/p/riemann/) die geometrische Intuition und Integration betonten, wählte Weierstraß einen algebraischen Ansatz, der auf "Potenzreihen" basierte. Er definierte komplexe Funktionen rigoros mit dem Konzept der analytischen Fortsetzung und etablierte die Standardmethoden der modernen komplexen Analysis.
 
 Er konstruierte auch ein extrem schönes System auf den Gebieten der elliptischen Funktionentheorie und der abelschen Funktionentheorie. Die $\wp$-Funktion (p-Funktion) von Weierstraß wird bis heute häufig als die grundlegendste Funktion im Umgang mit elliptischen Funktionen verwendet.
 
@@ -116,11 +116,11 @@ Unverzichtbar bei der Erörterung von Weierstraß' Aspekt als Pädagoge ist die 
 
 Im Europa des späten 19. Jahrhunderts war es fast nicht anerkannt, dass Frauen Universitäten besuchten und eine formelle Ausbildung erhielten. Kowalewskaja wollte an der Universität Berlin studieren, aber die Universität lehnte ihren Antrag auf Gasthörerschaft ab. Weierstraß erkannte jedoch sofort ihr außergewöhnliches mathematisches Talent und beschloss, ungebunden von den Universitätsbestimmungen, ihr kostenlos persönliche Anleitung zu geben.
 
-Unter der engagierten Anleitung von Weierstraß erzielte Kowalewskaja großartige Ergebnisse bei partiellen Differentialgleichungen und Himmelsmechanik und wurde später die erste Frau, die als ordentliche Professorin an eine moderne Universität (Universität Stockholm) berufen wurde. Weierstraß liebte sie tief, nicht nur als Studentin, sondern als eine seiner engsten Freundinnen. Die große Anzahl von Briefen, die zwischen den beiden ausgetauscht wurden, vermittelt ihre starke Bindung und ihren tiefen Respekt. Als Kowalewskaja im jungen Alter von 41 Jahren an einer Krankheit starb, war Weierstraß' Kummer unermesslich.
+Unter der engagierten Anleitung von Weierstraß erzielte Kowalewskaja großartige Ergebnisse bei partiellen Differentialgleichungen und Himmelsmechanik und wurde später die erste Frau, die als ordentliche Professorin an eine moderne Universität (Universität Stockholm) berufen wurde. Weierstraß liebte sie tief, nicht nur als Studentin, sondern als eine seiner engsten Freundinnen. Die große Anzahl von Briefen, die zwischen den beiden ausgetauscht wurden, vermittelt ihre starke Bindung und ihren tiefen Respekt. Als Kowalewskaja im jungen Alter von 41 Jahren an einer Krankheit starb, war Weierstraß' [Kummer](https://kenji.blog/de/p/kummer/) unermesslich.
 
 ## Späte Jahre und Vermächtnis
 
-In seinen späteren Jahren erlebte Weierstraß einen heftigen Streit über die Grundlagen der Mathematik mit Leopold Kronecker, einem Kollegen und ehemaligen Studenten. Kronecker erklärte: "Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk", und kritisierte Weierstraß' Analysis und Cantors Mengenlehre scharf aus einem intuitionistischen Standpunkt. Dieser Konflikt verwundete das Herz von Weierstraß tief.
+In seinen späteren Jahren erlebte Weierstraß einen heftigen Streit über die Grundlagen der Mathematik mit Leopold [Kronecker](https://kenji.blog/de/p/kronecker/), einem Kollegen und ehemaligen Studenten. [Kronecker](https://kenji.blog/de/p/kronecker/) erklärte: "Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk", und kritisierte Weierstraß' Analysis und Cantors Mengenlehre scharf aus einem intuitionistischen Standpunkt. Dieser Konflikt verwundete das Herz von Weierstraß tief.
 
 Auch seine Gesundheit verschlechterte sich allmählich, und in seinen späteren Jahren litt er unter Schwindel und Bronchitis, was ihn zwang, im Rollstuhl zu leben. Dennoch verlor er bis zuletzt nie seine Leidenschaft für die Mathematik und arbeitete mit Hilfe seiner Schüler an der Zusammenstellung seiner eigenen gesammelten Werke.
 

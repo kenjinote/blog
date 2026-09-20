@@ -9,15 +9,15 @@ categories: ["mathematics", "cryptography"]
 tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 ---
 
-# 1. Introduction : Le mystère cosmique des nombres premiers et l'hypothèse de Riemann
+# 1. Introduction : Le mystère cosmique des nombres premiers et l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)
 
 Les « nombres premiers » (Prime Numbers) sont des entiers naturels qui ne sont divisibles que par 1 et par eux-mêmes, et sont souvent appelés les « atomes » du monde mathématique. La suite 2, 3, 5, 7, 11, 13... semble à première vue désordonnée et aléatoire. Depuis que le mathématicien grec antique [[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) a prouvé qu'« il existe une infinité de nombres premiers », d'innombrables mathématiciens ont tenté de percer les régularités cachées dans cette suite de nombres premiers.
 
-Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de Riemann » (Riemann Hypothesis)**, proposée en 1859 par le mathématicien allemand [Bernhard Riemann](https://kenji.blog/fr/p/riemann/). L'hypothèse de Riemann est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
+Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » ([Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis)**, proposée en 1859 par le mathématicien allemand [Bernhard Riemann](https://kenji.blog/fr/p/riemann/). L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
 
 À première vue, un problème difficile de mathématiques pures concernant la distribution des nombres premiers peut sembler sans rapport avec notre vie quotidienne. Cependant, la sécurité de l'infrastructure d'Internet qui soutient la société moderne, en particulier **les technologies de cryptographie moderne telles que le chiffrement RSA et la cryptographie sur les courbes elliptiques (ECC)**, dépend profondément des propriétés des nombres premiers géants.
 
-Dans cet article, nous entreprendrons un voyage mathématique allant de la distribution des nombres premiers au théorème des nombres premiers, à la fonction zêta de Riemann, pour atteindre le cœur de l'hypothèse de Riemann. Nous explorerons en profondeur comment elle est liée à la cryptographie moderne et ce qu'il adviendrait du monde si l'hypothèse de Riemann venait à être prouvée.
+Dans cet article, nous entreprendrons un voyage mathématique allant de la distribution des nombres premiers au théorème des nombres premiers, à la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/), pour atteindre le cœur de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/). Nous explorerons en profondeur comment elle est liée à la cryptographie moderne et ce qu'il adviendrait du monde si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) venait à être prouvée.
 
 ---
 
@@ -44,13 +44,13 @@ Ou de manière approximative, il s'exprime comme suit :
 
 $$ \pi(x) \sim \frac{x}{\ln x} $$
 
-Grâce à ce théorème, nous savons que les nombres premiers ont une distribution très lisse et prévisible d'un point de vue macroscopique. Cependant, d'un point de vue microscopique, il existe toujours une « erreur » ou une « fluctuation » entre $\pi(x)$ et $\text{Li}(x)$. La véritable nature de cette fluctuation est le plus grand mystère que l'hypothèse de Riemann tente de résoudre.
+Grâce à ce théorème, nous savons que les nombres premiers ont une distribution très lisse et prévisible d'un point de vue macroscopique. Cependant, d'un point de vue microscopique, il existe toujours une « erreur » ou une « fluctuation » entre $\pi(x)$ et $\text{Li}(x)$. La véritable nature de cette fluctuation est le plus grand mystère que l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) tente de résoudre.
 
 ---
 
-# 3. La fonction zêta de Riemann et le produit eulerien
+# 3. La fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) et le produit eulerien
 
-L'arme la plus puissante pour analyser la distribution des nombres premiers est la **fonction zêta de Riemann (Riemann Zeta Function)**. À l'origine, il s'agissait d'une série infinie définie par [Leonhard Euler](https://kenji.blog/fr/p/euler/) pour les nombres réels $s > 1$.
+L'arme la plus puissante pour analyser la distribution des nombres premiers est la **fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) ([Riemann](https://kenji.blog/fr/p/riemann/) Zeta Function)**. À l'origine, il s'agissait d'une série infinie définie par [Leonhard Euler](https://kenji.blog/fr/p/euler/) pour les nombres réels $s > 1$.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -66,9 +66,9 @@ La compréhension intuitive de la preuve est que si vous développez chaque term
 
 # 4. Prolongement analytique et extension au plan complexe
 
-Le génie de Riemann réside dans l'extension de la variable $s$ de $\zeta(s)$, qu'Euler ne considérait que pour les nombres réels, à des **nombres complexes $s = \sigma + it$ ($\sigma$ est la partie réelle, $t$ est la partie imaginaire)**.
+Le génie de [Riemann](https://kenji.blog/fr/p/riemann/) réside dans l'extension de la variable $s$ de $\zeta(s)$, qu'Euler ne considérait que pour les nombres réels, à des **nombres complexes $s = \sigma + it$ ($\sigma$ est la partie réelle, $t$ est la partie imaginaire)**.
 
-La série infinie originale ne converge que pour $\sigma > 1$, mais Riemann a utilisé une méthode appelée « prolongement analytique (Analytic Continuation) » pour étendre la définition de sorte que $\zeta(s)$ ait un sens sur l'ensemble du plan complexe, à l'exception du pôle en $s = 1$.
+La série infinie originale ne converge que pour $\sigma > 1$, mais [Riemann](https://kenji.blog/fr/p/riemann/) a utilisé une méthode appelée « prolongement analytique (Analytic Continuation) » pour étendre la définition de sorte que $\zeta(s)$ ait un sens sur l'ensemble du plan complexe, à l'exception du pôle en $s = 1$.
 
 Il a en outre dérivé une magnifique équation fonctionnelle (Functional equation) satisfaite par la fonction zêta.
 
@@ -84,12 +84,12 @@ Cependant, ce qui est important dans la distribution des nombres premiers, ce so
 
 ---
 
-# 5. Le cœur de l'hypothèse de Riemann et la formule explicite
+# 5. Le cœur de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) et la formule explicite
 
-Riemann a calculé un petit nombre de zéros et a formulé une conjecture étonnante. C'est l'**hypothèse de Riemann**.
+[Riemann](https://kenji.blog/fr/p/riemann/) a calculé un petit nombre de zéros et a formulé une conjecture étonnante. C'est l'**hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)**.
 
-> **Hypothèse de Riemann (Riemann Hypothesis)**
-> Tous les zéros non triviaux de la fonction zêta de Riemann $\zeta(s)$ ont une partie réelle égale à $1/2$ (c'est-à-dire $\text{Re}(s) = 1/2$).
+> **Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) ([Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis)**
+> Tous les zéros non triviaux de la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) $\zeta(s)$ ont une partie réelle égale à $1/2$ (c'est-à-dire $\text{Re}(s) = 1/2$).
 
 Cette droite où la partie réelle est de 1/2 est appelée la « droite critique (Critical line) ».
 
@@ -103,20 +103,20 @@ graph TD
     F --> G["Vers la preuve de la limite du terme d'erreur de la distribution des nombres premiers"]
 ```
 
-Pourquoi l'hypothèse de Riemann est-elle si importante ? C'est parce que les zéros de la fonction zêta déterminent **complètement** la distribution des nombres premiers.
+Pourquoi l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est-elle si importante ? C'est parce que les zéros de la fonction zêta déterminent **complètement** la distribution des nombres premiers.
 
-Riemann, et plus tard le mathématicien von Mangoldt, ont dérivé une « formule explicite (Explicit formula) » qui décrit avec précision la distribution des nombres premiers. En utilisant la fonction de Tchebychev $\psi(x)$, elle s'exprime comme suit :
+[Riemann](https://kenji.blog/fr/p/riemann/), et plus tard le mathématicien von Mangoldt, ont dérivé une « formule explicite (Explicit formula) » qui décrit avec précision la distribution des nombres premiers. En utilisant la fonction de Tchebychev $\psi(x)$, elle s'exprime comme suit :
 
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 Où $\rho$ est la somme sur tous les zéros non triviaux de la fonction zêta.
 Le terme principal est $x$ (qui correspond au théorème des nombres premiers), et en ajoutant et en soustrayant des termes ondulatoires dépendant des zéros $\rho$, la distribution en escalier exacte des nombres premiers est restaurée. On peut dire que les zéros non triviaux représentent les « fréquences (ondes) » de la distribution des nombres premiers.
 
-Si l'hypothèse de Riemann est vraie, et que la partie réelle de tous les zéros non triviaux $\rho$ est exactement de $1/2$, alors le terme d'erreur du théorème des nombres premiers se situera dans la plus petite plage théoriquement concevable.
+Si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est vraie, et que la partie réelle de tous les zéros non triviaux $\rho$ est exactement de $1/2$, alors le terme d'erreur du théorème des nombres premiers se situera dans la plus petite plage théoriquement concevable.
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \quad x \ge 2657 $$
 
-En d'autres termes, **si l'hypothèse de Riemann est vraie, il sera prouvé que les nombres premiers sont distribués de la manière la plus « régulière et belle » que nous puissions imaginer**.
+En d'autres termes, **si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est vraie, il sera prouvé que les nombres premiers sont distribués de la manière la plus « régulière et belle » que nous puissions imaginer**.
 
 ---
 
@@ -156,40 +156,40 @@ Pour casser le chiffrement RSA, il faut trouver (factoriser) les nombres premier
 
 ---
 
-# 7. L'impact de l'hypothèse de Riemann sur la cryptographie
+# 7. L'impact de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) sur la cryptographie
 
-Alors, comment « l'hypothèse de Riemann » au sommet des mathématiques pures et la « cryptographie » se croisent-elles ?
+Alors, comment « l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » au sommet des mathématiques pures et la « cryptographie » se croisent-elles ?
 
-### 7.1. Algorithmes de génération de nombres premiers (test de primalité) et l'hypothèse de Riemann généralisée (GRH)
+### 7.1. Algorithmes de génération de nombres premiers (test de primalité) et l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) généralisée (GRH)
 Pour utiliser le chiffrement RSA, il faut d'abord générer des nombres premiers géants $p$ et $q$. Cependant, déterminer de manière fiable et rapide si « un certain nombre est premier » n'est pas facile.
 
 Actuellement, l'algorithme pratique utilisé est le **test de primalité de Miller-Rabin (Miller-Rabin primality test)**, qui est un algorithme probabiliste. Cet algorithme est rapide, mais il existe un risque de « pseudo-premiers » où un nombre composé est identifié à tort comme premier avec une probabilité extrêmement faible.
 
-Cependant, si l'**« Hypothèse de Riemann généralisée (Generalized Riemann Hypothesis, GRH) »**, qui étend l'hypothèse de Riemann aux fonctions L de Dirichlet, est supposée vraie, la situation change radicalement.
+Cependant, si l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) généralisée (Generalized [Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis, GRH) »**, qui étend l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) aux fonctions L de Dirichlet, est supposée vraie, la situation change radicalement.
 Si la GRH est vraie, la limite supérieure du nombre de tests dans le test de Miller-Rabin est mathématiquement garantie, et elle passe d'un algorithme probabiliste à un **« algorithme déterministe en temps polynomial »** (C'était un fait majeur connu avant même la découverte du test de primalité AKS).
 
-En d'autres termes, l'hypothèse de Riemann (et son extension) joue un rôle dans l'approbation directe de la génération de base de la cryptographie : « Pouvons-nous générer des nombres premiers géants rapidement et avec une confiance absolue ? ».
+En d'autres termes, l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) (et son extension) joue un rôle dans l'approbation directe de la génération de base de la cryptographie : « Pouvons-nous générer des nombres premiers géants rapidement et avec une confiance absolue ? ».
 
 ### 7.2. Relation avec les algorithmes de factorisation
 Lors de l'évaluation de la complexité des algorithmes pour le décryptage (comme le crible algébrique), la connaissance de la distribution des nombres premiers est indispensable. De nombreux algorithmes de factorisation dépendent de la distribution des « nombres friables (Smooth numbers : nombres qui n'ont que de petits facteurs premiers) ».
 
-Pour évaluer rigoureusement la fréquence d'apparition des nombres friables, une compréhension profonde de la distribution des nombres premiers est requise, et ici aussi, des techniques de théorie analytique des nombres directement liées à la fonction zêta et à l'hypothèse de Riemann sont pleinement utilisées. Si l'hypothèse de Riemann est prouvée et que l'erreur de la distribution des nombres premiers est complètement déterminée, il sera possible d'évaluer plus précisément les limites de performance des algorithmes de factorisation.
+Pour évaluer rigoureusement la fréquence d'apparition des nombres friables, une compréhension profonde de la distribution des nombres premiers est requise, et ici aussi, des techniques de théorie analytique des nombres directement liées à la fonction zêta et à l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) sont pleinement utilisées. Si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est prouvée et que l'erreur de la distribution des nombres premiers est complètement déterminée, il sera possible d'évaluer plus précisément les limites de performance des algorithmes de factorisation.
 
 ---
 
-# 8. Si l'hypothèse de Riemann est prouvée, la cryptographie sera-t-elle cassée ?
+# 8. Si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est prouvée, la cryptographie sera-t-elle cassée ?
 
-On dit parfois comme une légende urbaine que « si l'hypothèse de Riemann est résolue, le chiffrement RSA s'effondrera en un instant », mais **c'est mathématiquement inexact**.
+On dit parfois comme une légende urbaine que « si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est résolue, le chiffrement RSA s'effondrera en un instant », mais **c'est mathématiquement inexact**.
 
-La preuve de l'hypothèse de Riemann elle-même ne créera pas immédiatement un algorithme magique qui accélère considérablement la factorisation. L'hypothèse de Riemann n'est qu'un théorème sur la « régularité de la distribution macroscopique » des nombres premiers, et elle ne nous dit pas directement par quels nombres premiers un nombre individuel $N$ est divisible (propriété locale).
+La preuve de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) elle-même ne créera pas immédiatement un algorithme magique qui accélère considérablement la factorisation. L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) n'est qu'un théorème sur la « régularité de la distribution macroscopique » des nombres premiers, et elle ne nous dit pas directement par quels nombres premiers un nombre individuel $N$ est divisible (propriété locale).
 
 Cependant, l'impact n'est pas nul.
-Il est extrêmement probable que de **« nouveaux outils mathématiques » et des « méthodes analytiques inconnues » soient découverts** au cours du processus de démonstration de l'hypothèse de Riemann. L'histoire montre que lorsque le dernier théorème de Fermat et la conjecture de Poincaré ont été prouvés, les nouvelles théories développées au cours du processus ont fait progresser les mathématiques dans leur ensemble.
+Il est extrêmement probable que de **« nouveaux outils mathématiques » et des « méthodes analytiques inconnues » soient découverts** au cours du processus de démonstration de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/). L'histoire montre que lorsque le dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/) et la conjecture de [Poincaré](https://kenji.blog/fr/p/poincare/) ont été prouvés, les nouvelles théories développées au cours du processus ont fait progresser les mathématiques dans leur ensemble.
 
-Si des méthodes géométriques algébriques inconnues ou des méthodes géométriques non commutatives permettant de manipuler complètement les propriétés des zéros de la fonction zêta de Riemann sont établies, il n'est pas exclu que cela conduise à la découverte d'un algorithme révolutionnaire de factorisation (par exemple, un algorithme classique qui réduit la complexité au temps polynomial). En ce sens, les cryptographes ne peuvent jamais quitter des yeux les développements de l'hypothèse de Riemann.
+Si des méthodes géométriques algébriques inconnues ou des méthodes géométriques non commutatives permettant de manipuler complètement les propriétés des zéros de la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) sont établies, il n'est pas exclu que cela conduise à la découverte d'un algorithme révolutionnaire de factorisation (par exemple, un algorithme classique qui réduit la complexité au temps polynomial). En ce sens, les cryptographes ne peuvent jamais quitter des yeux les développements de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/).
 
 ### Ordinateurs quantiques et algorithme de Shor
-Une menace plus directe et réaliste pour la cryptographie n'est pas la preuve de l'hypothèse de Riemann, mais les **ordinateurs quantiques**. « L'algorithme de Shor » publié par Peter Shor en 1994 a prouvé qu'avec un ordinateur quantique suffisamment performant, la factorisation peut être résolue en temps polynomial. Cela casserait fondamentalement le chiffrement RSA et la cryptographie sur les courbes elliptiques.
+Une menace plus directe et réaliste pour la cryptographie n'est pas la preuve de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/), mais les **ordinateurs quantiques**. « L'algorithme de Shor » publié par Peter Shor en 1994 a prouvé qu'avec un ordinateur quantique suffisamment performant, la factorisation peut être résolue en temps polynomial. Cela casserait fondamentalement le chiffrement RSA et la cryptographie sur les courbes elliptiques.
 
 Actuellement, une transition vers la « cryptographie post-quantique (Post-Quantum Cryptography, PQC) » (comme la cryptographie fondée sur les réseaux) qui ne peut pas être déchiffrée même par des ordinateurs quantiques progresse dans le monde entier. Les technologies de cryptographie basées sur les nombres premiers peuvent en un sens atteindre la fin de leur âge d'or, mais la valeur mathématique des nombres premiers eux-mêmes ne sera jamais perdue.
 
@@ -209,9 +209,9 @@ graph TD
     H --> F
 ```
 
-La quête insatiable des nombres premiers, qui se poursuit depuis la Grèce antique, a été sublimée par le génie de Riemann en une magnifique symphonie sur le plan complexe (les zéros de la fonction zêta). Et étonnamment, ce cristal pur et immaculé des mathématiques est appliqué des siècles plus tard comme le bouclier le plus puissant garantissant la sécurité de la société de l'information.
+La quête insatiable des nombres premiers, qui se poursuit depuis la Grèce antique, a été sublimée par le génie de [Riemann](https://kenji.blog/fr/p/riemann/) en une magnifique symphonie sur le plan complexe (les zéros de la fonction zêta). Et étonnamment, ce cristal pur et immaculé des mathématiques est appliqué des siècles plus tard comme le bouclier le plus puissant garantissant la sécurité de la société de l'information.
 
-L'hypothèse de Riemann est une entité qui symbolise à la fois la « beauté abstraite » des mathématiques et sa « stupéfiante applicabilité au monde physique et à la société réelle ».
+L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est une entité qui symbolise à la fois la « beauté abstraite » des mathématiques et sa « stupéfiante applicabilité au monde physique et à la société réelle ».
 
 Lorsqu'un jour cette immense montagne mathématique, dont personne n'a encore atteint le sommet, sera conquise, nous comprendrons parfaitement la vérité cosmique des nombres premiers et acquerrons une nouvelle perspective sur les fondements de la société de l'information. L'étude de la cryptographie est aussi un voyage à travers l'histoire de la sagesse humaine.
 

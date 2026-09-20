@@ -15,7 +15,7 @@ tags: ["C++", "Miller-Rabin", "質數", "演算法"]
 
 此外，在競技程式設計（如 AtCoder 或 Codeforces 等）中，質數判定也是經常出現的主題。面對條件限制為 $N \le 10^{18}$ 等巨大的輸入值，且必須在 1 秒內進行數萬次質數判定的情況，傳統且樸素的演算法絕對會超時（Time Limit Exceeded: TLE）。
 
-本文將從樸素的質數判定演算法開始，介紹機率性質數判定法「費馬質數性檢驗（Fermat Primality Test）」，接著探討克服其弱點、在實用上堪稱最強等級的高速演算法「米勒-拉賓（Miller-Rabin）質數判定法」。我們將從數學背景出發，一直到 C++ 中高度最佳化的實作進行徹底解說。特別是針對 64 位元整數（$N < 2^{64}$），不僅止於機率性判定，還會詳細說明能「100% 準確判定質數（決定性判定）」的方法，並提供在實戰中可直接使用的 C++ 原始碼。
+本文將從樸素的質數判定演算法開始，介紹機率性質數判定法「費馬質數性檢驗（[Fermat](https://kenji.blog/zh-tw/p/fermat/) Primality Test）」，接著探討克服其弱點、在實用上堪稱最強等級的高速演算法「米勒-拉賓（Miller-Rabin）質數判定法」。我們將從數學背景出發，一直到 C++ 中高度最佳化的實作進行徹底解說。特別是針對 64 位元整數（$N < 2^{64}$），不僅止於機率性判定，還會詳細說明能「100% 準確判定質數（決定性判定）」的方法，並提供在實戰中可直接使用的 C++ 原始碼。
 
 ---
 
@@ -52,7 +52,7 @@ bool is_prime_trial_division(long long n) {
 
 # 2. 費馬質數性檢驗：機率性質數判定的開端
 
-為了突破試除法的極限，人們發想出運用數論定理的「機率性演算法（Probabilistic Algorithm）」。其代表性例子便是利用[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的「費馬質數性檢驗（Fermat Primality Test）」。
+為了突破試除法的極限，人們發想出運用數論定理的「機率性演算法（Probabilistic Algorithm）」。其代表性例子便是利用[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的「費馬質數性檢驗（[Fermat](https://kenji.blog/zh-tw/p/fermat/) Primality Test）」。
 
 ## [費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/zh-tw/p/fermats-little-theorem/))
 

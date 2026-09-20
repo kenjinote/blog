@@ -14,9 +14,9 @@ tags:
 
 # Einleitung
 
-In der Welt der Mathematik sind "Permutationen" und "Kombinationen" – Methoden zum logischen Zählen der Anzahl möglicher Ergebnisse – entscheidende grundlegende Konzepte in einer Vielzahl von Bereichen, von der Wahrscheinlichkeitstheorie und Statistik bis hin zu Algorithmen der Informatik. Die Ausweitung dieser grundlegenden Konzepte auf den Bereich der Algebra führt uns zum "Binomischen Lehrsatz", und die visuelle und geometrische Darstellung der Abfolge seiner Koeffizienten erzeugt das "Pascalsche Dreieck". Auf den ersten Blick scheinen dies unabhängige mathematische Themen zu sein, aber wenn man sie genauer studiert, erkennt man, dass sie erstaunlich miteinander verflochten sind und eine einzige, massive und wunderschöne mathematische Struktur bilden.
+In der Welt der Mathematik sind "Permutationen" und "Kombinationen" – Methoden zum logischen Zählen der Anzahl möglicher Ergebnisse – entscheidende grundlegende Konzepte in einer Vielzahl von Bereichen, von der Wahrscheinlichkeitstheorie und Statistik bis hin zu Algorithmen der Informatik. Die Ausweitung dieser grundlegenden Konzepte auf den Bereich der Algebra führt uns zum "Binomischen Lehrsatz", und die visuelle und geometrische Darstellung der Abfolge seiner Koeffizienten erzeugt das "[Pascal](https://kenji.blog/de/p/pascal/)sche Dreieck". Auf den ersten Blick scheinen dies unabhängige mathematische Themen zu sein, aber wenn man sie genauer studiert, erkennt man, dass sie erstaunlich miteinander verflochten sind und eine einzige, massive und wunderschöne mathematische Struktur bilden.
 
-In diesem Artikel beginnen wir mit einem intuitiven Verständnis und den grundlegenden Berechnungsmethoden für Permutationen und Kombinationen und erklären dann im Detail komplexere Konzepte wie Permutationen mit Wiederholung, Zirkularpermutationen und Kombinationen mit Wiederholung. Von dort aus leiten wir die Formel des Binomischen Lehrsatzes und seine wunderschöne Symmetrie ab und befassen uns schließlich ausführlich mit tiefgründigen Themen wie den mysteriösen Eigenschaften, die im Pascalschen Dreieck verborgen sind, seiner Verbindung zur [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge, die die Gesetze der Natur beschreibt, und fraktalen Strukturen. Begeben wir uns auf eine Reise, um die "Schönheit" und "Regelmäßigkeit" der Mathematik voll und ganz zu schätzen.
+In diesem Artikel beginnen wir mit einem intuitiven Verständnis und den grundlegenden Berechnungsmethoden für Permutationen und Kombinationen und erklären dann im Detail komplexere Konzepte wie Permutationen mit Wiederholung, Zirkularpermutationen und Kombinationen mit Wiederholung. Von dort aus leiten wir die Formel des Binomischen Lehrsatzes und seine wunderschöne Symmetrie ab und befassen uns schließlich ausführlich mit tiefgründigen Themen wie den mysteriösen Eigenschaften, die im [Pascal](https://kenji.blog/de/p/pascal/)schen Dreieck verborgen sind, seiner Verbindung zur [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge, die die Gesetze der Natur beschreibt, und fraktalen Strukturen. Begeben wir uns auf eine Reise, um die "Schönheit" und "Regelmäßigkeit" der Mathematik voll und ganz zu schätzen.
 
 # Was sind Permutationen?
 
@@ -203,13 +203,13 @@ $$
 
 Verallgemeinert lautet die Antwort auf die Frage "Wie groß ist bei der Multiplikation von $n$ Klammern die Gesamtzahl der Möglichkeiten, $k$-mal $y$ (und gleichzeitig $n-k$-mal $x$) auszuwählen?" genau $\binom{n}{k}$. Algebraische Entwicklungsformeln und Kombinatorik überschneiden sich hier auf wunderbare Weise.
 
-# Das Pascalsche Dreieck: Die wunderschöne Geometrie der Zahlen
+# Das [Pascal](https://kenji.blog/de/p/pascal/)sche Dreieck: Die wunderschöne Geometrie der Zahlen
 
-Die Anordnung der Binomialkoeffizienten, die in der Entwicklungsformel des Binomischen Lehrsatzes vorkommen, in Form einer Pyramide von oben nach unten als $n=0, 1, 2, \dots$ wird als "Pascalsches Dreieck" bezeichnet. Dieses einfach strukturierte Dreieck geht weit über ein bloßes Rechenhilfsmittel hinaus und birgt unzählige wunderschöne und tiefe mathematische Eigenschaften.
+Die Anordnung der Binomialkoeffizienten, die in der Entwicklungsformel des Binomischen Lehrsatzes vorkommen, in Form einer Pyramide von oben nach unten als $n=0, 1, 2, \dots$ wird als "[Pascal](https://kenji.blog/de/p/pascal/)sches Dreieck" bezeichnet. Dieses einfach strukturierte Dreieck geht weit über ein bloßes Rechenhilfsmittel hinaus und birgt unzählige wunderschöne und tiefe mathematische Eigenschaften.
 
-## Konstruktionsregeln des Pascalschen Dreiecks
+## Konstruktionsregeln des [Pascal](https://kenji.blog/de/p/pascal/)schen Dreiecks
 
-Das Pascalsche Dreieck beginnt damit, eine $1$ an die oberste Spitze (Zeile 0) zu setzen. In den folgenden Zeilen werden an beiden Enden immer Einsen platziert, und alle inneren Zahlen werden nach einer extrem einfachen Regel konstruiert: "die Summe der Zahl oben links und der Zahl oben rechts".
+Das [Pascal](https://kenji.blog/de/p/pascal/)sche Dreieck beginnt damit, eine $1$ an die oberste Spitze (Zeile 0) zu setzen. In den folgenden Zeilen werden an beiden Enden immer Einsen platziert, und alle inneren Zahlen werden nach einer extrem einfachen Regel konstruiert: "die Summe der Zahl oben links und der Zahl oben rechts".
 
 ```mermaid
 graph TD
@@ -236,15 +236,15 @@ graph TD
     R5C5(("1")) --- R4C4
 ```
 
-Die Zahl, die sich in der $n$-ten Zeile von oben (wobei die Spitze die 0-te Zeile ist) und der $k$-ten Position von links (wobei der linke Rand die 0-te Position ist) befindet, entspricht genau dem Binomialkoeffizienten $\binom{n}{k}$. Die Struktur, bei der die Addition der Zahl oben links $\binom{n-1}{k-1}$ und der Zahl oben rechts $\binom{n-1}{k}$ die Zahl darunter $\binom{n}{k}$ ergibt, stellt geometrisch die folgende wichtige Gleichung dar, die als Pascalsche Regel bezeichnet wird:
+Die Zahl, die sich in der $n$-ten Zeile von oben (wobei die Spitze die 0-te Zeile ist) und der $k$-ten Position von links (wobei der linke Rand die 0-te Position ist) befindet, entspricht genau dem Binomialkoeffizienten $\binom{n}{k}$. Die Struktur, bei der die Addition der Zahl oben links $\binom{n-1}{k-1}$ und der Zahl oben rechts $\binom{n-1}{k}$ die Zahl darunter $\binom{n}{k}$ ergibt, stellt geometrisch die folgende wichtige Gleichung dar, die als [Pascal](https://kenji.blog/de/p/pascal/)sche Regel bezeichnet wird:
 
 $$
 \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
 $$
 
-## Erstaunliche Eigenschaften, die im Pascalschen Dreieck verborgen sind
+## Erstaunliche Eigenschaften, die im [Pascal](https://kenji.blog/de/p/pascal/)schen Dreieck verborgen sind
 
-Wenn Sie das Pascalsche Dreieck genau betrachten, werden Sie feststellen, dass sich darin unzählige Regelmäßigkeiten verbergen. Stellen wir einige davon vor.
+Wenn Sie das [Pascal](https://kenji.blog/de/p/pascal/)sche Dreieck genau betrachten, werden Sie feststellen, dass sich darin unzählige Regelmäßigkeiten verbergen. Stellen wir einige davon vor.
 
 ### 1. Perfekte Symmetrie
 
@@ -264,12 +264,12 @@ Dies lässt sich algebraisch leicht aus der Gleichung $(1+1)^n = \sum \binom{n}{
 
 ### 3. Die verborgene Verbindung zur [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge
 
-Versuchen Sie einmal, die Zahlen des Pascalschen Dreiecks entlang der "flachen diagonalen Linien" zu addieren. Erstaunlicherweise erscheint die Folge $1, 1, 2, 3, 5, 8, 13, 21, \dots$.
+Versuchen Sie einmal, die Zahlen des [Pascal](https://kenji.blog/de/p/pascal/)schen Dreiecks entlang der "flachen diagonalen Linien" zu addieren. Erstaunlicherweise erscheint die Folge $1, 1, 2, 3, 5, 8, 13, 21, \dots$.
 Dies ist keine andere als die **[Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge**, bei der Sie die beiden vorherigen Zahlen addieren, um die nächste zu bilden. Die mystische Folge, die überall in der Natur vorkommt, wie z. B. bei der Anordnung von Sonnenblumenkernen und der Spirale eines Nautilusgehäuses, ist tief in einem Dreieck eingebettet, das lediglich Kombinationen anordnet. Es ist ein sehr schönes und bewegendes Beispiel dafür, wie die Mathematik, ein Produkt des menschlichen logischen Denkens, mit den Gesetzmäßigkeiten der Natur verbunden ist.
 
 ### 4. Fraktale Geometrie: Sierpinski-Dreieck
 
-Versuchen Sie, das Pascalsche Dreieck enorm auf Dutzende oder Hunderte von Zeilen zu erweitern, wobei Sie die "ungeraden Zahlen" im Inneren schwarz anmalen und die "geraden Zahlen" leer lassen. Dann kommt eine selbstähnliche fraktale Figur namens "Sierpinski-Dreieck" deutlich zum Vorschein.
+Versuchen Sie, das [Pascal](https://kenji.blog/de/p/pascal/)sche Dreieck enorm auf Dutzende oder Hunderte von Zeilen zu erweitern, wobei Sie die "ungeraden Zahlen" im Inneren schwarz anmalen und die "geraden Zahlen" leer lassen. Dann kommt eine selbstähnliche fraktale Figur namens "Sierpinski-Dreieck" deutlich zum Vorschein.
 Diese Struktur, bei der sich dasselbe Dreiecksmuster unendlich wiederholt, unabhängig davon, ob man in das Ganze hinein- oder herauszoomt, dient als Brücke, die Zahlentheorie, Geometrie und Chaostheorie verbindet.
 
 # Erweiterung zum Multinomialen Lehrsatz
@@ -301,8 +301,8 @@ Von der Berechnung der Münzwurfwahrscheinlichkeit über die Vorhersage der Auft
 
 # Fazit
 
-In diesem Artikel sind wir durch eine weite mathematische Landschaft gereist, beginnend bei den Permutationen und Kombinationen, bei denen es sich um einfache "Zähl"-Regeln handelt, über ihre Anwendung in Permutationen mit Wiederholung und Zirkularpermutationen, weiter ausgedehnt auf den Binomischen Lehrsatz der Algebra bis hin zur visuellen Erforschung des Pascalschen Dreiecks.
+In diesem Artikel sind wir durch eine weite mathematische Landschaft gereist, beginnend bei den Permutationen und Kombinationen, bei denen es sich um einfache "Zähl"-Regeln handelt, über ihre Anwendung in Permutationen mit Wiederholung und Zirkularpermutationen, weiter ausgedehnt auf den Binomischen Lehrsatz der Algebra bis hin zur visuellen Erforschung des [Pascal](https://kenji.blog/de/p/pascal/)schen Dreiecks.
 
 Indem wir den extrem einfachen und primitiven Akt des "Auswählens einiger Elemente aus verschiedenen anderen" mit der rigorosen Sprache der Mathematik abstrahiert und vertieft haben, wurde deutlich, dass sich eine unvorstellbar reiche und wunderschöne mathematische Welt nach außen hin ausdehnt – mit perfekten Symmetrien, der Regel der Zweierpotenzen, der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge zur Beschreibung der natürlichen Welt und unendlichen fraktalen Strukturen.
 
-Mathematische Formeln und Sätze sind nicht nur anorganische Werkzeuge zur Lösung von Prüfungsaufgaben. Sie sind die höchsten Kunstwerke der Menschheit, die die unsichtbare Ordnung hinter der Welt, die uns umgibt, und die überwältigend schönen Beziehungen, die von Zahlen gewebt werden, zum Ausdruck bringen. Wir hoffen, dass Sie durch die Berührung mit dieser wunderschönen Regelmäßigkeit der Zahlen, die durch Permutationen, Kombinationen und das Pascalsche Dreieck gezeigt wird, den wahren Reiz und die Tiefgründigkeit der Disziplin Mathematik gespürt haben.
+Mathematische Formeln und Sätze sind nicht nur anorganische Werkzeuge zur Lösung von Prüfungsaufgaben. Sie sind die höchsten Kunstwerke der Menschheit, die die unsichtbare Ordnung hinter der Welt, die uns umgibt, und die überwältigend schönen Beziehungen, die von Zahlen gewebt werden, zum Ausdruck bringen. Wir hoffen, dass Sie durch die Berührung mit dieser wunderschönen Regelmäßigkeit der Zahlen, die durch Permutationen, Kombinationen und das [Pascal](https://kenji.blog/de/p/pascal/)sche Dreieck gezeigt wird, den wahren Reiz und die Tiefgründigkeit der Disziplin Mathematik gespürt haben.

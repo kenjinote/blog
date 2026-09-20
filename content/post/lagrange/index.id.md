@@ -19,13 +19,13 @@ tags:
 
 Dalam sejarah matematika dan fisika, abad ke-18 adalah era di mana para jenius besar bersinar seperti bintang. Di antara mereka, salah satu matematikawan terbesar, yang sering disebut bersama [Leonhard Euler](https://kenji.blog/id/p/euler/), adalah **[Joseph-Louis Lagrange](https://kenji.blog/id/p/lagrange/)** (1736–1813). Ia dikenal sebagai pendiri "mekanika analitik," setelah menetapkan kalkulus variasi dan mengangkat mekanika dari intuisi geometris menjadi analisis matematika murni.
 
-Dalam artikel ini, kita akan menyelami kehidupan yang penuh gejolak dari Lagrange, yang memiliki kepribadian yang sederhana dan kontemplatif, dan pencapaian matematika dan fisikanya yang monumental yang membentuk dasar sains dan teknologi modern.
+Dalam artikel ini, kita akan menyelami kehidupan yang penuh gejolak dari [Lagrange](https://kenji.blog/id/p/lagrange/), yang memiliki kepribadian yang sederhana dan kontemplatif, dan pencapaian matematika dan fisikanya yang monumental yang membentuk dasar sains dan teknologi modern.
 
-## Kehidupan Lagrange
+## Kehidupan [Lagrange](https://kenji.blog/id/p/lagrange/)
 
 ### Kelahiran di Turin dan Kebangkitan Awal
 
-Lagrange lahir pada tanggal 25 Januari 1736, di Turin, Italia. Nama aslinya adalah Giuseppe Lodovico Lagrangia. Karena kakeknya adalah orang Prancis, ia kemudian mengadopsi nama bergaya Prancis. Ia dilahirkan dalam keluarga kaya, tetapi karena ayahnya kehilangan kekayaannya melalui spekulasi, Lagrange terpaksa menjadi mandiri di usia muda. Di kemudian hari, ia mengenang, "Jika saya kaya, saya mungkin tidak akan mengabdikan diri pada matematika."
+[Lagrange](https://kenji.blog/id/p/lagrange/) lahir pada tanggal 25 Januari 1736, di Turin, Italia. Nama aslinya adalah Giuseppe Lodovico Lagrangia. Karena kakeknya adalah orang Prancis, ia kemudian mengadopsi nama bergaya Prancis. Ia dilahirkan dalam keluarga kaya, tetapi karena ayahnya kehilangan kekayaannya melalui spekulasi, [Lagrange](https://kenji.blog/id/p/lagrange/) terpaksa menjadi mandiri di usia muda. Di kemudian hari, ia mengenang, "Jika saya kaya, saya mungkin tidak akan mengabdikan diri pada matematika."
 
 Awalnya, ia belajar hukum, tetapi pada usia 17 tahun, setelah membaca makalah tentang optika oleh Edmond Halley, minatnya pada matematika bangkit dengan kuat. Ia belajar matematika secara intensif secara otodidak dan diangkat menjadi profesor matematika di Sekolah Artileri Kerajaan di Turin pada usia muda 19 tahun.
 
@@ -35,11 +35,11 @@ Sekitar waktu ini, ia memulai korespondensi dengan Euler, menyampaikan ide terob
 
 Pada tahun 1766, atas undangan Frederick yang Agung, ia diangkat sebagai Direktur Matematika di Akademi Sains Prusia (Akademi Berlin), menggantikan Euler. Frederick yang Agung menyambutnya, mengatakan, "Raja terbesar di Eropa ingin memiliki matematikawan terbesar di Eropa di istananya."
 
-20 tahun di Berlin adalah periode paling produktif bagi Lagrange. Ia berturut-turut menerbitkan makalah-makalah inovatif dalam berbagai bidang yang menakjubkan, termasuk mekanika, dinamika fluida, teori probabilitas, dan teori bilangan. Sebagian besar mahakaryanya, *Mécanique analytique* (Mekanika Analitik), juga ditulis selama era Berlin ini.
+20 tahun di Berlin adalah periode paling produktif bagi [Lagrange](https://kenji.blog/id/p/lagrange/). Ia berturut-turut menerbitkan makalah-makalah inovatif dalam berbagai bidang yang menakjubkan, termasuk mekanika, dinamika fluida, teori probabilitas, dan teori bilangan. Sebagian besar mahakaryanya, *Mécanique analytique* (Mekanika Analitik), juga ditulis selama era Berlin ini.
 
 ### Tahun-Tahun Terakhir di Paris
 
-Pada tahun 1787, setelah kematian Frederick yang Agung, Lagrange pindah ke Paris, Prancis, atas undangan Louis XVI. Ia diberi apartemen di Istana Louvre, tetapi bertahun-tahun bekerja terlalu keras menelan korban, dan ia menderita depresi parah. Dikatakan bahwa ketika *Mécanique analytique* diterbitkan pada tahun 1788, ia tidak membuka buku yang baru dicetaknya itu selama dua tahun.
+Pada tahun 1787, setelah kematian Frederick yang Agung, [Lagrange](https://kenji.blog/id/p/lagrange/) pindah ke Paris, Prancis, atas undangan Louis XVI. Ia diberi apartemen di Istana Louvre, tetapi bertahun-tahun bekerja terlalu keras menelan korban, dan ia menderita depresi parah. Dikatakan bahwa ketika *Mécanique analytique* diterbitkan pada tahun 1788, ia tidak membuka buku yang baru dicetaknya itu selama dua tahun.
 
 Namun, ketika Revolusi Prancis pecah, ia melanjutkan aktivitasnya sebagai anggota komite pembentukan sistem berat dan ukuran baru (sistem metrik). Bahkan dalam badai revolusi, ketenaran dan kepribadiannya yang lembut menyelamatkannya dari eksekusi (ketika teman dekatnya, ahli kimia Lavoisier, dieksekusi, ia meratap, "Mereka hanya butuh sekejap untuk memenggal kepala itu, tetapi seratus tahun belum tentu cukup untuk menghasilkan kepala yang serupa").
 
@@ -47,23 +47,23 @@ Kemudian, ia menjadi profesor pertama di École Polytechnique dan mengabdikan di
 
 ## Pencapaian Utama dalam Matematika dan Fisika
 
-Pencapaian Lagrange sangat luas, tetapi di sini kami memperkenalkan beberapa yang paling penting.
+Pencapaian [Lagrange](https://kenji.blog/id/p/lagrange/) sangat luas, tetapi di sini kami memperkenalkan beberapa yang paling penting.
 
-### 1. Kalkulus Variasi dan Persamaan Euler-Lagrange
+### 1. Kalkulus Variasi dan Persamaan Euler-[Lagrange](https://kenji.blog/id/p/lagrange/)
 
-Lagrange secara ketat merumuskan "kalkulus variasi," yang menemukan fungsi yang memaksimalkan atau meminimalkan suatu fungsional (fungsi dari suatu fungsi). Membiarkan $S$ menjadi integral aksi dan $L$ Lagrangian, persamaan dasar mekanika berdasarkan prinsip aksi terkecil dijelaskan sebagai berikut:
+[Lagrange](https://kenji.blog/id/p/lagrange/) secara ketat merumuskan "kalkulus variasi," yang menemukan fungsi yang memaksimalkan atau meminimalkan suatu fungsional (fungsi dari suatu fungsi). Membiarkan $S$ menjadi integral aksi dan $L$ Lagrangian, persamaan dasar mekanika berdasarkan prinsip aksi terkecil dijelaskan sebagai berikut:
 
 $$ \frac{\partial L}{\partial q_i} - \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_i} \right) = 0 $$
 
-Di sini, $q_i$ adalah koordinat umum dan $\dot{q}_i$ adalah kecepatan umum. **Persamaan Euler-Lagrange** ini memungkinkan masalah sistem terbatas, seperti bidang miring atau pendulum—yang rumit dalam mekanika Newtonian—untuk diselesaikan secara terpadu tanpa bergantung pada pilihan sistem koordinat.
+Di sini, $q_i$ adalah koordinat umum dan $\dot{q}_i$ adalah kecepatan umum. **Persamaan Euler-[Lagrange](https://kenji.blog/id/p/lagrange/)** ini memungkinkan masalah sistem terbatas, seperti bidang miring atau pendulum—yang rumit dalam mekanika Newtonian—untuk diselesaikan secara terpadu tanpa bergantung pada pilihan sistem koordinat.
 
 ### 2. Konstruksi Mekanika Analitik
 
-Diterbitkan pada tahun 1788, *Mécanique analytique* adalah mahakarya bersejarah yang membebaskan mekanika dari diagram geometris dan merekonstruksinya sebagai sistem aljabar murni dan kalkulus. Dalam kata pengantarnya, Lagrange menyatakan, "Tidak ada diagram yang akan ditemukan dalam karya ini." Abstraksi ini menjadi fondasi kuat yang mengarah ke mekanika Hamiltonian oleh Hamilton kemudian, dan lebih jauh ke mekanika kuantum di abad ke-20.
+Diterbitkan pada tahun 1788, *Mécanique analytique* adalah mahakarya bersejarah yang membebaskan mekanika dari diagram geometris dan merekonstruksinya sebagai sistem aljabar murni dan kalkulus. Dalam kata pengantarnya, [Lagrange](https://kenji.blog/id/p/lagrange/) menyatakan, "Tidak ada diagram yang akan ditemukan dalam karya ini." Abstraksi ini menjadi fondasi kuat yang mengarah ke mekanika Hamiltonian oleh Hamilton kemudian, dan lebih jauh ke mekanika kuantum di abad ke-20.
 
-### 3. Pengganda Lagrange
+### 3. Pengganda [Lagrange](https://kenji.blog/id/p/lagrange/)
 
-Metode matematika yang kuat untuk menemukan nilai maksimum dan minimum lokal dari suatu fungsi yang tunduk pada kendala kesetaraan adalah metode **pengganda Lagrange** (Lagrange multipliers).
+Metode matematika yang kuat untuk menemukan nilai maksimum dan minimum lokal dari suatu fungsi yang tunduk pada kendala kesetaraan adalah metode **pengganda [Lagrange](https://kenji.blog/id/p/lagrange/)** ([Lagrange](https://kenji.blog/id/p/lagrange/) multipliers).
 Bila ingin memaksimalkan atau meminimalkan fungsi $f(x, y)$ yang tunduk pada kendala $g(x, y) = 0$, pengganda yang belum ditentukan $\lambda$ diperkenalkan untuk menentukan fungsi baru (Lagrangian):
 
 $$ \mathcal{L}(x, y, \lambda) = f(x, y) - \lambda \cdot g(x, y) $$
@@ -72,13 +72,13 @@ Dengan menyelesaikan titik di mana gradien fungsi ini menjadi nol ($\nabla \math
 
 ### 4. Kontribusi pada Teori Bilangan dan Aljabar
 
-Lagrange juga meninggalkan pencapaian cemerlang dalam teori bilangan.
-- **Teorema empat kuadrat Lagrange**: Ia membuktikan teorema bahwa setiap bilangan asli dapat direpresentasikan sebagai jumlah paling banyak empat bilangan bulat kuadrat (misalnya, $7 = 2^2 + 1^2 + 1^2 + 1^2$).
-- **Solusi aljabar persamaan**: Menggunakan ide permutasi akar, ia memelopori penelitian tentang apakah persamaan derajat lima atau lebih tinggi dapat diselesaikan secara aljabar. Ini merupakan langkah penting yang kemudian berkembang menjadi teori Galois dan teori grup.
+[Lagrange](https://kenji.blog/id/p/lagrange/) juga meninggalkan pencapaian cemerlang dalam teori bilangan.
+- **Teorema empat kuadrat [Lagrange](https://kenji.blog/id/p/lagrange/)**: Ia membuktikan teorema bahwa setiap bilangan asli dapat direpresentasikan sebagai jumlah paling banyak empat bilangan bulat kuadrat (misalnya, $7 = 2^2 + 1^2 + 1^2 + 1^2$).
+- **Solusi aljabar persamaan**: Menggunakan ide permutasi akar, ia memelopori penelitian tentang apakah persamaan derajat lima atau lebih tinggi dapat diselesaikan secara aljabar. Ini merupakan langkah penting yang kemudian berkembang menjadi teori [Galois](https://kenji.blog/id/p/galois/) dan teori grup.
 
 ## Filosofi dan Pengaruh pada Generasi Berikutnya
 
-Metode Lagrange ditandai dengan mengejar ketelitian logis dan keindahan analitik sambil menghilangkan intuisi. Pengaruhnya dapat digambarkan sebagai berikut:
+Metode [Lagrange](https://kenji.blog/id/p/lagrange/) ditandai dengan mengejar ketelitian logis dan keindahan analitik sambil menghilangkan intuisi. Pengaruhnya dapat digambarkan sebagai berikut:
 
 ```mermaid
 graph TD

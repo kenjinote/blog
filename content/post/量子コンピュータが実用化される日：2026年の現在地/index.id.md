@@ -19,7 +19,7 @@ Dalam artikel ini, kita akan menggali lebih dalam posisi komputer kuantum saat i
 
 ## 2. Dasar-dasar Keadaan Kuantum dan Fidelitas (Fidelity)
 
-Qubit, yang merupakan unit dasar dari komputer kuantum, berbeda dari bit klasik (0 atau 1) karena dapat mengambil keadaan superposisi (Superposition) antara 0 dan 1. Keadaan dari sebuah qubit tunggal direpresentasikan sebagai vektor dalam ruang Hilbert sebagai berikut:
+Qubit, yang merupakan unit dasar dari komputer kuantum, berbeda dari bit klasik (0 atau 1) karena dapat mengambil keadaan superposisi (Superposition) antara 0 dan 1. Keadaan dari sebuah qubit tunggal direpresentasikan sebagai vektor dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) sebagai berikut:
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -130,7 +130,7 @@ Terobosan di tahun 2026 adalah visualisasi 2 dimensi dari arsitektur QCCD (Quant
 
 ### 5.3 Komputasi Kuantum Topologis: Pengendalian Anyon
 
-**Komputasi kuantum topologis**, yang lama dianggap hanya ada secara teori, akhirnya memasuki fase pembuktian eksperimental pada tahun 2026. Metode yang didorong oleh Microsoft dan lainnya ini menggunakan anyon non-Abelian (Non-Abelian Anyons) yang disebut "Mode Nol Majorana (Majorana Zero Modes)".
+**Komputasi kuantum topologis**, yang lama dianggap hanya ada secara teori, akhirnya memasuki fase pembuktian eksperimental pada tahun 2026. Metode yang didorong oleh Microsoft dan lainnya ini menggunakan anyon non-[Abel](https://kenji.blog/id/p/abel/)ian (Non-[Abel](https://kenji.blog/id/p/abel/)ian Anyons) yang disebut "Mode Nol Majorana (Majorana Zero Modes)".
 
 Gerbang kuantum dijalankan melalui operasi yang disebut "Jalinan (Braiding)", yang menukar posisi partikel anyon.
 

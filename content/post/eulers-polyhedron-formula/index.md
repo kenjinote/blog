@@ -133,15 +133,15 @@ flowchart LR
     D --> G["メガネのフレーム、プレッツェル"]
 ```
 
-## [オイラー](https://kenji.blog/p/euler/)＝ポアンカレの公式：多次元への飛躍
+## [オイラー](https://kenji.blog/p/euler/)＝[ポアンカレ](https://kenji.blog/p/poincare/)の公式：多次元への飛躍
 
-19世紀後半から20世紀にかけて、[アンリ・ポアンカレ](https://kenji.blog/p/poincare/)（[Henri Poincaré](https://kenji.blog/p/poincare/)）をはじめとする数学者たちは、[オイラー](https://kenji.blog/p/euler/)の定理をさらに高次元の空間へと拡張しました。それが **[オイラー](https://kenji.blog/p/euler/)＝ポアンカレの公式** です。
+19世紀後半から20世紀にかけて、[アンリ・ポアンカレ](https://kenji.blog/p/poincare/)（[Henri Poincaré](https://kenji.blog/p/poincare/)）をはじめとする数学者たちは、[オイラー](https://kenji.blog/p/euler/)の定理をさらに高次元の空間へと拡張しました。それが **[オイラー](https://kenji.blog/p/euler/)＝[ポアンカレ](https://kenji.blog/p/poincare/)の公式** です。
 多面体の要素を一般化し、$n$ 次元の図形の要素の数を用いた交代和を考えました。
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$
 
 ここで、$k_i$ は $i$ 次元の要素の数を表します。
-ポアンカレは、この $\chi$ が、図形の「ベッチ数（Betti numbers）」と呼ばれる位相的普遍量と深く結びついていることを証明しました。
+[ポアンカレ](https://kenji.blog/p/poincare/)は、この $\chi$ が、図形の「ベッチ数（Betti numbers）」と呼ばれる位相的普遍量と深く結びついていることを証明しました。
 ベッチ数 $b_i$ は、直感的には「 $i$ 次元の穴の数」を表します。
 
 $$ \chi = b_0 - b_1 + b_2 - b_3 + \dots $$

@@ -99,7 +99,7 @@ Dalam menyelesaikan sistem persamaan linear, Leibniz secara mandiri sampai pada 
 
 ### 2.5 Penemuan Kalkulator Stepped Reckoner
 
-Leibniz bukan hanya seorang matematikawan teoretis tetapi juga seorang penemu praktis yang mengukir namanya dalam sejarah kalkulator mekanis. Ia menyempurnakan kalkulator [Blaise Pascal](https://kenji.blog/id/p/pascal/) (Pascaline), yang hanya bisa melakukan penambahan dan pengurangan, dan menemukan kalkulator yang menggunakan "Roda Leibniz" (Stepped Reckoner) yang mampu melakukan perkalian dan pembagian.
+Leibniz bukan hanya seorang matematikawan teoretis tetapi juga seorang penemu praktis yang mengukir namanya dalam sejarah kalkulator mekanis. Ia menyempurnakan kalkulator [Blaise Pascal](https://kenji.blog/id/p/pascal/) ([Pascal](https://kenji.blog/id/p/pascal/)ine), yang hanya bisa melakukan penambahan dan pengurangan, dan menemukan kalkulator yang menggunakan "Roda Leibniz" (Stepped Reckoner) yang mampu melakukan perkalian dan pembagian.
 
 Mekanisme ini revolusioner dan terus diadopsi sebagai struktur standar untuk kalkulator mekanis selama beberapa ratus tahun berikutnya.
 

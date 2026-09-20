@@ -16,7 +16,7 @@ Cet article décortique le mécanisme mathématique du **« crible algébrique �
 
 ---
 
-## 1. L'approche de la factorisation en nombres premiers dans le calcul classique : Évolution à partir de la méthode de factorisation de Fermat
+## 1. L'approche de la factorisation en nombres premiers dans le calcul classique : Évolution à partir de la méthode de factorisation de [Fermat](https://kenji.blog/fr/p/fermat/)
 
 Le problème de la factorisation en nombres premiers consiste, pour un nombre composé $N$ donné, à trouver les nombres premiers $p, q$ tels que $N = p \times q$.
 

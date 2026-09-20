@@ -107,11 +107,11 @@ int main() {
 }
 ```
 
-## Complexidade de Tempo e Teorema de Lamé
+## Complexidade de Tempo e Teorema de [Lamé](https://kenji.blog/pt/p/lame/)
 
-Quão rápido é o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)? Em relação à sua complexidade computacional, o **Teorema de Lamé** (Lamé's theorem), provado pelo matemático francês [Gabriel Lamé](https://kenji.blog/pt/p/lame/) em 1844, é bem conhecido.
+Quão rápido é o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)? Em relação à sua complexidade computacional, o **Teorema de [Lamé](https://kenji.blog/pt/p/lame/)** ([Lamé](https://kenji.blog/pt/p/lame/)'s theorem), provado pelo matemático francês [Gabriel Lamé](https://kenji.blog/pt/p/lame/) em 1844, é bem conhecido.
 
-> **Teorema de Lamé**
+> **Teorema de [Lamé](https://kenji.blog/pt/p/lame/)**
 > O número de passos de divisão necessários para aplicar o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) a dois números naturais $a, b$ ($a > b$) é no máximo $5$ vezes o número de dígitos na representação decimal de $b$ .
 
 Como resultado, a complexidade de tempo do algoritmo é $O(\log(\min(a, b)))$ .

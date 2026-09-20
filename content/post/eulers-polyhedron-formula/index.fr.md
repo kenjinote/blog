@@ -133,15 +133,15 @@ flowchart LR
     D --> G["Montures de lunettes, bretzel"]
 ```
 
-## La Formule d'Euler-Poincaré : Un Saut dans les Multidimensions
+## La Formule d'Euler-[Poincaré](https://kenji.blog/fr/p/poincare/) : Un Saut dans les Multidimensions
 
-De la fin du 19ème siècle jusqu'au 20ème siècle, des mathématiciens, dont [Henri Poincaré](https://kenji.blog/fr/p/poincare/), ont étendu le théorème d'Euler dans des espaces de dimensions encore plus grandes. Cela est devenu la **Formule d'Euler-Poincaré**.
+De la fin du 19ème siècle jusqu'au 20ème siècle, des mathématiciens, dont [Henri Poincaré](https://kenji.blog/fr/p/poincare/), ont étendu le théorème d'Euler dans des espaces de dimensions encore plus grandes. Cela est devenu la **Formule d'Euler-[Poincaré](https://kenji.blog/fr/p/poincare/)**.
 En généralisant les éléments d'un polyèdre, ils ont considéré la somme alternée du nombre d'éléments dans une forme de dimension $n$.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$
 
 Ici, $k_i$ représente le nombre d'éléments de dimension $i$.
-Poincaré a prouvé que ce $\chi$ est profondément lié aux invariants topologiques appelés "Nombres de Betti".
+[Poincaré](https://kenji.blog/fr/p/poincare/) a prouvé que ce $\chi$ est profondément lié aux invariants topologiques appelés "Nombres de Betti".
 Intuitivement, le nombre de Betti $b_i$ représente "le nombre de trous de dimension $i$".
 
 $$ \chi = b_0 - b_1 + b_2 - b_3 + \dots $$

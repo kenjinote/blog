@@ -30,13 +30,13 @@ $$ (x - ky)(x + ky) = 1 $$
 
 Dado que $x$, $y$ y $k$ son todos enteros, $(x - ky)$ y $(x + ky)$ también deben ser enteros. Las únicas combinaciones de enteros cuyo producto es 1 son $(1, 1)$ o $(-1, -1)$. Resolver esto da como resultado $y = 0$, lo que significa que las únicas soluciones son las muy simples: $(x, y) = (\pm 1, 0)$. Por lo tanto, en la ecuación de Pell, la condición de que $n$ no sea un cuadrado perfecto es una premisa esencial para encontrar soluciones significativas.
 
-## 2. Antecedentes Históricos: Pell, Fermat y los Matemáticos Indios Antiguos
+## 2. Antecedentes Históricos: Pell, [Fermat](https://kenji.blog/es/p/fermat/) y los Matemáticos Indios Antiguos
 
 Aunque esta ecuación lleva el nombre de "Pell", explorar los hechos históricos revela un trasfondo un tanto extraño. De hecho, la primera persona en la Europa moderna que estudió una solución general para esta ecuación y afirmó firmemente que siempre existe una solución fue el gran matemático francés **[Pierre de Fermat](https://kenji.blog/es/p/fermat/)**.
 
 Más tarde, **[Leonhard Euler](https://kenji.blog/es/p/euler/)** vinculó por error el nombre del matemático inglés **John Pell** a esta ecuación, y desde entonces ha sido ampliamente conocida como la "ecuación de Pell". El propio Pell no desempeñó un papel central en el método de resolución de esta ecuación.
 
-Yendo más atrás en el tiempo, los matemáticos indios **Brahmagupta** y **Bhāskara II** calcularon soluciones a ecuaciones de este tipo utilizando un algoritmo sofisticado llamado el método Chakravala, cientos de años antes que Fermat. La historia de la exploración por matemáticos desde la antigüedad a través de la Edad Media hasta la era moderna está inscrita en esta ecuación.
+Yendo más atrás en el tiempo, los matemáticos indios **Brahmagupta** y **Bhāskara II** calcularon soluciones a ecuaciones de este tipo utilizando un algoritmo sofisticado llamado el método Chakravala, cientos de años antes que [Fermat](https://kenji.blog/es/p/fermat/). La historia de la exploración por matemáticos desde la antigüedad a través de la Edad Media hasta la era moderna está inscrita en esta ecuación.
 
 ## 3. La Diferencia Entre Soluciones Triviales y No Triviales
 
@@ -207,4 +207,4 @@ Las soluciones a la ecuación de Pell corresponden estrechamente a las **unidade
 
 En este artículo, exploramos en detalle una de las ecuaciones diofánticas más fascinantes, la **ecuación de Pell**, desde sus fundamentos hasta sus aplicaciones. Explicamos el hecho sorprendente de que siempre hay infinitas soluciones no triviales para cualquier $n$ no cuadrado, un algoritmo eficiente para buscar soluciones utilizando expansiones en fracciones continuas y el dinamismo de sintetizar nuevas soluciones una tras otra a partir de la solución fundamental generada usando matrices.
 
-El hecho de que los problemas clásicos considerados por Fermat y Brahmagupta hace cientos de años se puedan implementar maravillosamente como algoritmos informáticos modernos, y además se conecten con la teoría algebraica de números avanzada, evoca un romance matemático profundo y atemporal. Esperamos que aproveche esta oportunidad para utilizar el código de Python y explorar el mundo de la ecuación de Pell para varios valores de $n$ y entrar en contacto con las profundas propiedades de los números.
+El hecho de que los problemas clásicos considerados por [Fermat](https://kenji.blog/es/p/fermat/) y Brahmagupta hace cientos de años se puedan implementar maravillosamente como algoritmos informáticos modernos, y además se conecten con la teoría algebraica de números avanzada, evoca un romance matemático profundo y atemporal. Esperamos que aproveche esta oportunidad para utilizar el código de Python y explorar el mundo de la ecuación de Pell para varios valores de $n$ y entrar en contacto con las profundas propiedades de los números.

@@ -88,7 +88,7 @@ Aquí, $\circ$ representa el producto de Hadamard (producto elemento a elemento)
 
 ### 2. Transformación a QAP (Quadratic Arithmetic Program)
 
-Dado que hay innumerables restricciones matriciales en R1CS, verificarlas individualmente es muy ineficiente. Por lo tanto, utilizando la interpolación de Lagrange, estas restricciones se comprimen en una sola ecuación polinómica. Esto es el **QAP (Quadratic Arithmetic Program)**.
+Dado que hay innumerables restricciones matriciales en R1CS, verificarlas individualmente es muy ineficiente. Por lo tanto, utilizando la interpolación de [Lagrange](https://kenji.blog/es/p/lagrange/), estas restricciones se comprimen en una sola ecuación polinómica. Esto es el **QAP (Quadratic Arithmetic Program)**.
 
 Al transformarlo en un QAP, el problema a probar se reduce a la pregunta: "¿Es un polinomio específico $P(x)$ divisible por otro polinomio conocido $Z(x)$?".
 

@@ -18,11 +18,11 @@ $$
 
 Bien que cette intégrale elle-même puisse être résolue en utilisant $\arctan(x)$, si le dénominateur devient un polynôme de degré supérieur, ou si des fonctions trigonométriques comme le sinus et le cosinus sont intimement impliquées, trouver une primitive (intégrale indéfinie) en tant que fonction réelle devient pratiquement impossible.
 
-C'est là qu'intervient une arme puissante de l'**analyse complexe** (la théorie des fonctions complexes), largement considérée comme l'une des plus belles théories des mathématiques : le **[Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/) de Cauchy**. En étendant audacieusement une intégrale effectuée sur la droite numérique réelle (unidimensionnelle) au **plan complexe** (bidimensionnel), des intégrales réelles impossibles peuvent être résolues avec brio.
+C'est là qu'intervient une arme puissante de l'**analyse complexe** (la théorie des fonctions complexes), largement considérée comme l'une des plus belles théories des mathématiques : le **[Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/) de [Cauchy](https://kenji.blog/fr/p/cauchy/)**. En étendant audacieusement une intégrale effectuée sur la droite numérique réelle (unidimensionnelle) au **plan complexe** (bidimensionnel), des intégrales réelles impossibles peuvent être résolues avec brio.
 
 ## Intégration Complexe et Singularités
 
-L'intégrale d'une fonction complexe $f(z)$ est effectuée le long d'une courbe (contour) dans le plan complexe. Dans une région où la fonction est analytique (différentiable), l'intégrale le long d'une courbe fermée est nulle. Ceci est connu sous le nom de **Théorème Intégral de Cauchy**.
+L'intégrale d'une fonction complexe $f(z)$ est effectuée le long d'une courbe (contour) dans le plan complexe. Dans une région où la fonction est analytique (différentiable), l'intégrale le long d'une courbe fermée est nulle. Ceci est connu sous le nom de **Théorème Intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/)**.
 
 $$
 \oint_C f(z) dz = 0 \quad (\text{si la fonction est holomorphe à l'intérieur et sur } C)
@@ -56,7 +56,7 @@ $$
 
 Pourquoi seul le coefficient de $(z - z_0)^{-1}$ est-il spécial ? Parce que si vous intégrez $\frac{1}{(z - z_0)^n}$ le long d'un minuscule cercle $C$ enfermant la singularité, ce n'est que lorsque $n = 1$ que la valeur $2\pi i$ reste ; pour toutes les autres valeurs de $n$, l'intégrale s'évalue à $0$.
 
-## [Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/) de Cauchy
+## [Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/) de [Cauchy](https://kenji.blog/fr/p/cauchy/)
 
 L'intégration de ces concepts donne le **[Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/)**. Si une courbe fermée $C$ contient plusieurs singularités isolées $z_1, z_2, \dots, z_k$ à l'intérieur, l'intégrale complexe le long de $C$ peut être calculée comme suit :
 

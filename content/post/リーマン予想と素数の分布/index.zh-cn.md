@@ -13,7 +13,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 “素数（Prime Numbers）”是只能被1和自身整除的自然数，在数学世界中被称为“原子”。2, 3, 5, 7, 11, 13... 这串数列乍看之下显得杂乱无章、随机出现。自从古希腊数学家[欧几里得](https://kenji.blog/zh-cn/p/euclid/)证明“素数有无限多个”以来，无数数学家试图解开隐藏在素数排列中的规律。
 
-在探索素数之谜的道路上，最接近真相的是1859年由德国数学家[波恩哈德·黎曼](https://kenji.blog/zh-cn/p/riemann/)（[Bernhard Riemann](https://kenji.blog/zh-cn/p/riemann/)）提出的 **“黎曼猜想（Riemann Hypothesis）”** 。黎曼猜想是现代数学中最重要且未解决的难题之一，也是克雷数学研究所设立的千禧年大奖难题之一，悬赏100万美元。
+在探索素数之谜的道路上，最接近真相的是1859年由德国数学家[波恩哈德·黎曼](https://kenji.blog/zh-cn/p/riemann/)（[Bernhard Riemann](https://kenji.blog/zh-cn/p/riemann/)）提出的 **“黎曼猜想（[Riemann](https://kenji.blog/zh-cn/p/riemann/) Hypothesis）”** 。黎曼猜想是现代数学中最重要且未解决的难题之一，也是克雷数学研究所设立的千禧年大奖难题之一，悬赏100万美元。
 
 乍看之下，关于素数分布的纯数学难题似乎与我们的日常生活毫不相干。然而，支撑现代社会基础设施的互联网安全，尤其是 **RSA加密和椭圆曲线密码学（ECC）等现代密码技术** ，都深深依赖于巨大素数的性质。
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. 黎曼zeta函数与欧拉乘积
 
-分析素数分布最强大的武器是 **黎曼zeta函数（Riemann Zeta Function）** 。它最初是由[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）针对实数 $s > 1$ 定义的无穷级数。
+分析素数分布最强大的武器是 **黎曼zeta函数（[Riemann](https://kenji.blog/zh-cn/p/riemann/) Zeta Function）** 。它最初是由[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）针对实数 $s > 1$ 定义的无穷级数。
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -88,7 +88,7 @@ $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1
 
 黎曼计算了少数几个零点，并提出了一个惊人的猜想。这就是 **黎曼猜想** 。
 
-> **黎曼猜想 (Riemann Hypothesis)**
+> **黎曼猜想 ([Riemann](https://kenji.blog/zh-cn/p/riemann/) Hypothesis)**
 > 黎曼zeta函数 $\zeta(s)$ 的所有非平凡零点，其实部都在 $1/2$ 的直线上（$\text{Re}(s) = 1/2$）。
 
 这条实部为1/2的直线被称为“临界线（Critical line）”。
@@ -165,7 +165,7 @@ graph LR
 
 目前在实际应用中使用的是一种被称为 **米勒-拉宾素性测试（Miller-Rabin primality test）** 的概率算法。这种算法速度很快，但存在以极低概率将合数误判为素数的“伪素数”风险。
 
-然而，如果假设将黎曼猜想扩展到狄利克雷L函数上的 **“广义黎曼猜想（Generalized Riemann Hypothesis, GRH）”** 为真，情况将发生戏剧性的变化。
+然而，如果假设将黎曼猜想扩展到狄利克雷L函数上的 **“广义黎曼猜想（Generalized [Riemann](https://kenji.blog/zh-cn/p/riemann/) Hypothesis, GRH）”** 为真，情况将发生戏剧性的变化。
 如果GRH为真，那么在数学上就能保证米勒-拉宾测试的测试次数上限，使其从概率算法 **升华为“确定性多项式时间算法”** （这是在AKS素性测试被发现之前就已知晓的重大事实）。
 
 换言之，黎曼猜想（及其推广）在“能否带着绝对的自信、高速地生成巨大素数”这一密码基石的生成中，起到了直接背书的作用。

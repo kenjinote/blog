@@ -12,7 +12,7 @@ tags: ["théorie des nombres", "Mordell", "courbes elliptiques", "équations dio
 
 L'un des mathématiciens qui a laissé une empreinte brillante dans le monde mathématique du XXe siècle, en particulier dans le domaine de la **théorie des nombres**, est Louis Joel Mordell (1888–1972). Il a obtenu des résultats révolutionnaires dans l'étude des équations diophantiennes et a jeté les bases de nombreuses théories importantes à l'intersection de la géométrie algébrique moderne et de la théorie des nombres. Dans cet article, nous expliquerons en détail la vie de Mordell, les théorèmes et conjectures importants qui portent son nom, et le profond impact qu'il a eu sur la communauté mathématique.
 
-Beaucoup de ceux qui ont entendu parler de Mordell le connaissent probablement grâce au **Théorème de Mordell** ou à la **Conjecture de Mordell**. Ces réalisations n'étaient pas de simples démonstrations d'un seul théorème, mais ont servi de préludes importants à un magnifique drame mathématique qui a conduit à la démonstration du **Dernier Théorème de Fermat**.
+Beaucoup de ceux qui ont entendu parler de Mordell le connaissent probablement grâce au **Théorème de Mordell** ou à la **Conjecture de Mordell**. Ces réalisations n'étaient pas de simples démonstrations d'un seul théorème, mais ont servi de préludes importants à un magnifique drame mathématique qui a conduit à la démonstration du **Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)**.
 
 ## 2. Les Premières Années : De l'Autodidaxie à Cambridge
 
@@ -30,7 +30,7 @@ L'exemple le plus célèbre d'équation diophantienne est celui lié au théorè
 
 $$ x^2 + y^2 = z^2 $$
 
-Les solutions entières de cette équation sont appelées triplets pythagoriciens, et on sait qu'il en existe une infinité. Cependant, à mesure que le degré augmente, le problème devient rapidement difficile. L'équation suivante, connue pour le Dernier Théorème de Fermat, en est un excellent exemple :
+Les solutions entières de cette équation sont appelées triplets pythagoriciens, et on sait qu'il en existe une infinité. Cependant, à mesure que le degré augmente, le problème devient rapidement difficile. L'équation suivante, connue pour le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/), en est un excellent exemple :
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 
@@ -56,7 +56,7 @@ $$ E(\mathbb{Q}) \cong E(\mathbb{Q})_{\text{tors}} \oplus \mathbb{Z}^r $$
 
 Ici, $E(\mathbb{Q})_{\text{tors}}$ est un **sous-groupe de torsion** composé d'un nombre fini de points, et $r$ est un entier positif ou nul appelé le **rang**.
 
-Ce théorème signifie que pour trouver tous les points rationnels en nombre infini d'une courbe elliptique, il suffit de trouver un nombre fini de points de « base ». C'est un résultat monumental en géométrie arithmétique. La preuve de Mordell était un raffinement moderne de la « Méthode de descente infinie » de Fermat.
+Ce théorème signifie que pour trouver tous les points rationnels en nombre infini d'une courbe elliptique, il suffit de trouver un nombre fini de points de « base ». C'est un résultat monumental en géométrie arithmétique. La preuve de Mordell était un raffinement moderne de la « Méthode de descente infinie » de [Fermat](https://kenji.blog/fr/p/fermat/).
 
 Plus tard, en 1928, le mathématicien français [André Weil](https://kenji.blog/fr/p/weil/) a généralisé ce théorème à des corps de nombres généraux et à des variétés abéliennes, c'est pourquoi on l'appelle aujourd'hui souvent le **Théorème de Mordell-Weil**.
 
@@ -85,7 +85,7 @@ $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
 Cette conjecture est restée non résolue pendant plus de 60 ans. Cependant, en 1983, elle a finalement été prouvée par le mathématicien allemand [Gerd Faltings](https://kenji.blog/fr/p/faltings/), devenant ainsi le **Théorème de Faltings**. Pour cet accomplissement, Faltings a reçu la Médaille Fields en 1986.
 
-De plus, l'équation du Dernier Théorème de Fermat, $x^n + y^n = z^n$, a un genre supérieur ou égal à 3 lorsque $n \ge 4$. Par conséquent, d'après la Conjecture de Mordell (Théorème de Faltings), il s'ensuit immédiatement que l'équation de Fermat a au plus un nombre fini de solutions rationnelles pour chaque $n$.
+De plus, l'équation du Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/), $x^n + y^n = z^n$, a un genre supérieur ou égal à 3 lorsque $n \ge 4$. Par conséquent, d'après la Conjecture de Mordell (Théorème de Faltings), il s'ensuit immédiatement que l'équation de [Fermat](https://kenji.blog/fr/p/fermat/) a au plus un nombre fini de solutions rationnelles pour chaque $n$.
 
 ## 7. Implication avec Ramanujan et les Formes Modulaires
 
@@ -135,7 +135,7 @@ L'héritage que [Louis Mordell](https://kenji.blog/fr/p/mordell/) a laissé dans
 2. **Théorie des Formes Modulaires** : Les techniques qu'il a utilisées dans la preuve de la conjecture de Ramanujan sont devenues le point de départ d'une théorie massive qui s'étend jusqu'au Programme de Langlands moderne.
 3. **Résolution d'Équations Diophantiennes** : Ses approches concrètes et ses nombreux articles servent toujours de base aux méthodes algorithmiques actuelles de résolution d'équations à l'aide d'ordinateurs.
 
-Lorsque le Dernier Théorème de Fermat a été prouvé par [Andrew Wiles](https://kenji.blog/fr/p/wiles/), des concepts impliquant profondément Mordell, tels que les courbes elliptiques et les formes modulaires, étaient indispensables à sa base théorique.
+Lorsque le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) a été prouvé par [Andrew Wiles](https://kenji.blog/fr/p/wiles/), des concepts impliquant profondément Mordell, tels que les courbes elliptiques et les formes modulaires, étaient indispensables à sa base théorique.
 
 ## 12. Conclusion
 

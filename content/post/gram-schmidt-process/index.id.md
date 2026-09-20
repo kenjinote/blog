@@ -190,7 +190,7 @@ Sekarang, mari terapkan proses ortogonalisasi Gram-Schmidt pada basis polinomial
 * Menghitung $\mathbf{u}_1(x) = x - \text{proj}_{\mathbf{u}_0}(x)$, mengingat $\langle x, 1 \rangle = \int_{-1}^{1} x dx = 0$, kita memiliki $\mathbf{u}_1(x) = x$.
 * Perhitungan $\mathbf{u}_2(x) = x^2 - \text{proj}_{\mathbf{u}_0}(x^2) - \text{proj}_{\mathbf{u}_1}(x^2)$ menghasilkan $\mathbf{u}_2(x) = x^2 - \frac{1}{3}$.
 
-Barisan polinomial ortogonal yang dihasilkan dengan cara ini disebut **polinomial Legendre**, dan mereka memainkan peran yang sangat penting dalam elektromagnetisme dan mekanika kuantum dalam fisika, serta dalam integrasi numerik (kuadratur Gaussian). Ini adalah contoh yang indah di mana algoritma aljabar secara alami memperoleh deskripsi dari hukum fisika yang mendalam.
+Barisan polinomial ortogonal yang dihasilkan dengan cara ini disebut **polinomial [Legendre](https://kenji.blog/id/p/legendre/)**, dan mereka memainkan peran yang sangat penting dalam elektromagnetisme dan mekanika kuantum dalam fisika, serta dalam integrasi numerik (kuadratur Gaussian). Ini adalah contoh yang indah di mana algoritma aljabar secara alami memperoleh deskripsi dari hukum fisika yang mendalam.
 
 ## 8. Aplikasi Tingkat Lanjut 2: Dekomposisi QR dan Ilmu Data
 

@@ -46,13 +46,13 @@ Sejarah Teorema Bilangan Prima berawal pada akhir abad ke-18. Matematikawan jeni
 
 Namun, mereka belum berhasil membuktikannya secara ketat.
 
-Kemajuan besar dalam pembuktian dicapai melalui makalah terobosan [Bernhard Riemann](https://kenji.blog/id/p/riemann/) tahun 1859 yang berjudul "Tentang Jumlah Bilangan Prima yang Kurang dari Besaran Tertentu". Riemann menyajikan pendekatan yang sama sekali baru, yaitu mengubah masalah distribusi bilangan prima menjadi masalah pada bidang kompleks menggunakan fungsi kompleks, **Fungsi Zeta** $\zeta(s)$.
+Kemajuan besar dalam pembuktian dicapai melalui makalah terobosan [Bernhard Riemann](https://kenji.blog/id/p/riemann/) tahun 1859 yang berjudul "Tentang Jumlah Bilangan Prima yang Kurang dari Besaran Tertentu". [Riemann](https://kenji.blog/id/p/riemann/) menyajikan pendekatan yang sama sekali baru, yaitu mengubah masalah distribusi bilangan prima menjadi masalah pada bidang kompleks menggunakan fungsi kompleks, **Fungsi Zeta** $\zeta(s)$.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prima}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 
 Rumus perkalian Euler (Euler product formula) ini adalah persamaan sangat penting yang menghubungkan fungsi mengenai jumlah semua bilangan natural (sisi kiri) dengan perkalian tak terhingga yang hanya melibatkan bilangan prima (sisi kanan).
 
-Kemudian, pada tahun 1896, Jacques Hadamard dan Charles de la Vallée Poussin secara independen menyelesaikan pembuktian Teorema Bilangan Prima berdasarkan ide Riemann. Kunci pembuktian mereka adalah menunjukkan bahwa "Fungsi zeta Riemann $\zeta(s)$ tidak memiliki titik nol pada garis $\operatorname{Re}(s) = 1$ di bidang kompleks".
+Kemudian, pada tahun 1896, Jacques Hadamard dan Charles de la Vallée Poussin secara independen menyelesaikan pembuktian Teorema Bilangan Prima berdasarkan ide [Riemann](https://kenji.blog/id/p/riemann/). Kunci pembuktian mereka adalah menunjukkan bahwa "Fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/) $\zeta(s)$ tidak memiliki titik nol pada garis $\operatorname{Re}(s) = 1$ di bidang kompleks".
 
 ## Aproksimasi dengan Akurasi Lebih Tinggi: Integral Logaritmik $\operatorname{Li}(x)$
 
@@ -73,17 +73,17 @@ Kenyataannya, ketika $x = 10^{10}$,
 
 Ini menunjukkan seberapa baik integral logaritmik memberikan nilai pendekatan.
 
-## Hubungan Mendalam dengan Hipotesis Riemann
+## Hubungan Mendalam dengan Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)
 
-Hal yang tak terpisahkan dari Teorema Bilangan Prima adalah **Hipotesis Riemann** (Riemann Hypothesis), yang dianggap sebagai masalah belum terpecahkan paling penting dalam matematika.
+Hal yang tak terpisahkan dari Teorema Bilangan Prima adalah **Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)** ([Riemann](https://kenji.blog/id/p/riemann/) Hypothesis), yang dianggap sebagai masalah belum terpecahkan paling penting dalam matematika.
 
-Hipotesis Riemann menyatakan bahwa "semua titik nol tak-trivial dari fungsi zeta Riemann $\zeta(s)$ terletak pada garis dengan bagian real $1/2$ (garis kritis)".
+Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) menyatakan bahwa "semua titik nol tak-trivial dari fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/) $\zeta(s)$ terletak pada garis dengan bagian real $1/2$ (garis kritis)".
 
-Jika Hipotesis Riemann terbukti benar, batas paling kuat untuk nilai galat (selisih antara $\pi(x)$ dan $\operatorname{Li}(x)$) dalam Teorema Bilangan Prima dapat diperoleh. Secara spesifik, diketahui bahwa terdapat suatu konstanta $C$ sehingga,
+Jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) terbukti benar, batas paling kuat untuk nilai galat (selisih antara $\pi(x)$ dan $\operatorname{Li}(x)$) dalam Teorema Bilangan Prima dapat diperoleh. Secara spesifik, diketahui bahwa terdapat suatu konstanta $C$ sehingga,
 
 $$ |\pi(x) - \operatorname{Li}(x)| \le C \sqrt{x} \ln(x) $$
 
-berlaku. Ini berarti bahwa "bilangan prima terdistribusi dengan sangat teratur sehingga tidak dapat dibedakan dari distribusi acak sempurna". Dengan kata lain, Teorema Bilangan Prima berbicara tentang distribusi "rata-rata" dari bilangan prima, sementara Hipotesis Riemann berbicara tentang batas dari "fluktuasi (kesalahan)" tersebut.
+berlaku. Ini berarti bahwa "bilangan prima terdistribusi dengan sangat teratur sehingga tidak dapat dibedakan dari distribusi acak sempurna". Dengan kata lain, Teorema Bilangan Prima berbicara tentang distribusi "rata-rata" dari bilangan prima, sementara Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) berbicara tentang batas dari "fluktuasi (kesalahan)" tersebut.
 
 ## Memeriksa Teorema Bilangan Prima dengan Python
 
@@ -146,4 +146,4 @@ Sebagai contoh, probabilitas bahwa bilangan ganjil acak 1024-bit adalah bilangan
 
 Teorema Bilangan Prima adalah salah satu teorema paling indah yang mewujudkan "keteraturan di dalam kekacauan" dalam matematika. Fakta bahwa distribusi bilangan prima yang sekilas tampak acak menyembunyikan hukum dasar alam berupa fungsi logaritma, terus memikat banyak matematikawan.
 
-Bidang yang dirintis oleh para jenius seperti Gauss, Riemann, dan Hadamard ini tetap menjadi garda depan matematika modern, terutama melalui masalah besar yang belum terpecahkan yaitu Hipotesis Riemann. Misteri bilangan prima begitu dalam, dan pencarian kita mungkin akan terus berlanjut hingga tiba saatnya kita memahami gambarannya secara utuh.
+Bidang yang dirintis oleh para jenius seperti Gauss, [Riemann](https://kenji.blog/id/p/riemann/), dan Hadamard ini tetap menjadi garda depan matematika modern, terutama melalui masalah besar yang belum terpecahkan yaitu Hipotesis [Riemann](https://kenji.blog/id/p/riemann/). Misteri bilangan prima begitu dalam, dan pencarian kita mungkin akan terus berlanjut hingga tiba saatnya kita memahami gambarannya secara utuh.

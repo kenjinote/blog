@@ -31,13 +31,13 @@ Pada tahun 1915, saat masih remaja, Hasse bergabung dengan Angkatan Laut Kekaisa
 
 Setelah perang berakhir pada tahun 1918, Hasse resmi mendaftar di Universitas Göttingen. Pada saat itu, Göttingen adalah puncak matematika dunia, rumah bagi para raksasa seperti [David Hilbert](https://kenji.blog/id/p/hilbert/), Edmund Landau, dan [Emmy Noether](https://kenji.blog/id/p/noether/). Di sana, Hasse menjumpai napas matematika mutakhir, yang memungkinkan bakatnya semakin berkembang.
 
-Kemudian, Hasse pindah ke Universitas Marburg, di mana ia mengalami pertemuan yang menentukan dengan **[Kurt Hensel](https://kenji.blog/id/p/hensel/)**, yang akan menjadi mentor seumur hidupnya. Hensel adalah penemu sistem bilangan yang sama sekali baru: bilangan p-adic. Sementara banyak matematikawan pada saat itu memandang bilangan p-adic sebagai sekadar keingintahuan matematis, Hasse segera mengenali potensi besar dari konsep baru ini dan menyempurnakannya menjadi senjata ampuh untuk penelitiannya sendiri.
+Kemudian, Hasse pindah ke Universitas Marburg, di mana ia mengalami pertemuan yang menentukan dengan **[Kurt Hensel](https://kenji.blog/id/p/hensel/)**, yang akan menjadi mentor seumur hidupnya. [Hensel](https://kenji.blog/id/p/hensel/) adalah penemu sistem bilangan yang sama sekali baru: bilangan p-adic. Sementara banyak matematikawan pada saat itu memandang bilangan p-adic sebagai sekadar keingintahuan matematis, Hasse segera mengenali potensi besar dari konsep baru ini dan menyempurnakannya menjadi senjata ampuh untuk penelitiannya sendiri.
 
 ## 4. Apa itu Bilangan p-adic: Sistem Bilangan Baru
 
 Untuk memahami pencapaian Hasse, seseorang tidak dapat menghindari konsep bilangan p-adic. Bilangan real yang kita gunakan sehari-hari diperoleh dengan melengkapi bilangan rasional (pecahan) berdasarkan konsep "ukuran (nilai mutlak)"—sebuah proses mengambil limit untuk mengisi celah.
 
-Namun, Hensel memperkenalkan konsep "jarak" yang sama sekali berbeda. Menetapkan sebuah bilangan prima $p$, dua bilangan rasional didefinisikan sebagai "dekat" jika selisihnya dapat dibagi $p$ berkali-kali. Melengkapi bilangan rasional berdasarkan jarak aneh ini menghasilkan lapangan bilangan p-adic $\mathbb{Q}_p$. Dalam dunia bilangan p-adic, deret tak terhingga yang akan divergen di dunia nyata dapat konvergen, sehingga memungkinkan untuk menangani masalah kekongruenan menggunakan metode analitik.
+Namun, [Hensel](https://kenji.blog/id/p/hensel/) memperkenalkan konsep "jarak" yang sama sekali berbeda. Menetapkan sebuah bilangan prima $p$, dua bilangan rasional didefinisikan sebagai "dekat" jika selisihnya dapat dibagi $p$ berkali-kali. Melengkapi bilangan rasional berdasarkan jarak aneh ini menghasilkan lapangan bilangan p-adic $\mathbb{Q}_p$. Dalam dunia bilangan p-adic, deret tak terhingga yang akan divergen di dunia nyata dapat konvergen, sehingga memungkinkan untuk menangani masalah kekongruenan menggunakan metode analitik.
 
 ## 5. Penetapan Prinsip Hasse (Prinsip Lokal-Global)
 
@@ -83,7 +83,7 @@ Dengan cara ini, Hasse sangat terampil dalam memahami konsep abstrak secara intu
 
 ## 8. Teorema Hasse-Weil: Titik Rasional pada Kurva Eliptik
 
-Kontribusi lain yang sangat penting dari Hasse adalah **Teorema Hasse tentang Kurva Eliptik** atas lapangan hingga. Ini merupakan hasil penting, yang dianggap sebagai langkah pertama menuju "analog dari Hipotesis Riemann" untuk varietas aljabar atas lapangan hingga.
+Kontribusi lain yang sangat penting dari Hasse adalah **Teorema Hasse tentang Kurva Eliptik** atas lapangan hingga. Ini merupakan hasil penting, yang dianggap sebagai langkah pertama menuju "analog dari Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)" untuk varietas aljabar atas lapangan hingga.
 
 Misalkan $N$ adalah jumlah titik rasional pada kurva eliptik $E$ yang didefinisikan atas lapangan hingga $\mathbb{F}_q$ (lapangan dengan elemen $q$). Hasse membuktikan bahwa jumlah titik rasional $N$ mendekati $q + 1$ (jumlah titik pada garis proyektif), dan kesalahannya dibatasi sebagai berikut:
 
@@ -95,7 +95,7 @@ Ketidaksamaan yang indah ini kemudian diperluas ke kurva aljabar umum oleh murid
 
 ## 9. Kontribusi pada Teori Medan Kelas: Teori Medan Kelas Lokal dan Timbal Balik Artin
 
-Saat mendiskusikan pencapaian Hasse, kontribusinya yang masif terhadap **Teori Medan Kelas** sangatlah penting. Teori medan kelas adalah teori yang mencoba mendeskripsikan secara utuh perluasan abelian (perluasan di mana grup Galois komutatif) dari suatu medan bilangan aljabar (perluasan hingga dari bilangan rasional) menggunakan informasi internal dari medan dasarnya sendiri.
+Saat mendiskusikan pencapaian Hasse, kontribusinya yang masif terhadap **Teori Medan Kelas** sangatlah penting. Teori medan kelas adalah teori yang mencoba mendeskripsikan secara utuh perluasan abelian (perluasan di mana grup [Galois](https://kenji.blog/id/p/galois/) komutatif) dari suatu medan bilangan aljabar (perluasan hingga dari bilangan rasional) menggunakan informasi internal dari medan dasarnya sendiri.
 
 Dalam pembuktian "Hukum Timbal Balik" yang diajukan oleh Emil Artin, Hasse memainkan peran yang sangat penting. Memanfaatkan metode analitik dan teori bilangan p-adic, Hasse menawarkan nasihat krusial kepada Artin, yang sangat berkontribusi pada penyelesaian pembuktian. Hasse sendiri juga memainkan peran sentral dalam membangun Teori Medan Kelas Lokal, merekonstruksi teori medan kelas global dari perspektif medan lokal.
 

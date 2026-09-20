@@ -82,7 +82,7 @@ Beim Auswendiglernen von Fachbüchern ist es sinnlos, „lange Beweise auswendig
 
 - **Schlechte Karte**: „Schreibe den gesamten Beweis für den Dijkstra-Algorithmus auf.“
 - **Gute Karte**: „Unter welcher Bedingung kann die kürzeste Distanz zu einem bestimmten Knoten im Dijkstra-Algorithmus als endgültig betrachtet werden?“ → „Wenn der Knoten mit der geringsten vorläufigen Distanz aus der Menge der noch nicht festgelegten Knoten ausgewählt wird.“
-- **Gute Karte**: „Wie lautet die Formel für den kleinen Satz von Fermat?“ → „Für eine Primzahl $p$ und eine dazu teilerfremde ganze Zahl $a$ gilt: $a^{p-1} \equiv 1 \pmod p$.“
+- **Gute Karte**: „Wie lautet die Formel für den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/)?“ → „Für eine Primzahl $p$ und eine dazu teilerfremde ganze Zahl $a$ gilt: $a^{p-1} \equiv 1 \pmod p$.“
 
 Beim Auswendiglernen von Formeln ist es effektiv, sie im LaTeX-Format in Anki einzugeben und Lückentexte (Cloze Deletion) zu verwenden.
 

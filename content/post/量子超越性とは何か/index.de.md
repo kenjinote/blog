@@ -32,7 +32,7 @@ $$
 Hierbei sind $\alpha, \beta \in \mathbb{C}$ und erfüllen die Normierungsbedingung $|\alpha|^2 + |\beta|^2 = 1$. Diese Eigenschaft wird als "Superposition" (Überlagerung) bezeichnet.
 
 ### Verschränkung (Entanglement) und Tensorprodukt
-Wenn mehrere Qubits vorhanden sind, wird der Zustand des gesamten Systems durch das Tensorprodukt der Zustandsräume der einzelnen Qubits dargestellt. Ein System aus $n$ Qubits ist ein Vektor im $2^n$-dimensionalen Hilbertraum $\mathcal{H}^{\otimes n}$.
+Wenn mehrere Qubits vorhanden sind, wird der Zustand des gesamten Systems durch das Tensorprodukt der Zustandsräume der einzelnen Qubits dargestellt. Ein System aus $n$ Qubits ist ein Vektor im $2^n$-dimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}^{\otimes n}$.
 
 $$
 |\Psi\rangle = \sum_{x \in \{0, 1\}^n} c_x |x\rangle

@@ -150,7 +150,7 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 > Kode yang baik adalah dokumentasinya sendiri yang terbaik (Steve McConnell)
 
-> Program harus ditulis untuk dibaca manusia, dan hanya secara kebetulan untuk dieksekusi oleh mesin (Harold Abelson)
+> Program harus ditulis untuk dibaca manusia, dan hanya secara kebetulan untuk dieksekusi oleh mesin (Harold [Abel](https://kenji.blog/id/p/abel/)son)
 
 > Pertama, selesaikan masalahnya. Kemudian, tulis kodenya (John Johnson)
 

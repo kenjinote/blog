@@ -39,7 +39,7 @@ Seiring komputer klasik yang mendekati batasan fisiknya, paradigma komputasi yan
 
 "Alam bukanlah sistem klasik, jadi jika Anda ingin membuat simulasi alam, Anda harus membuat komputer yang berdasarkan prinsip-prinsip mekanika kuantum."
 
-Latar belakang dari pernyataan ini adalah fakta bahwa dimensi "Ruang Hilbert (Hilbert Space)", yang mendeskripsikan keadaan dari sistem kuantum, meledak secara eksponensial seiring bertambahnya jumlah partikel. Mari kita pertimbangkan sebuah sistem yang terdiri dari kumpulan $N$ buah partikel dengan spin $1/2$ (yaitu, sebuah sistem yang memiliki dua keadaan kuantum). Keadaan dari satu partikel dideskripsikan oleh ruang vektor kompleks 2 dimensi $\mathbb{C}^2$. Oleh karena itu, ruang keadaan $\mathcal{H}$ dari sistem komposit yang terdiri dari $N$ partikel dibentuk sebagai produk tensor dari ruang keadaan masing-masing subsistem.
+Latar belakang dari pernyataan ini adalah fakta bahwa dimensi "Ruang [Hilbert](https://kenji.blog/id/p/hilbert/) ([Hilbert](https://kenji.blog/id/p/hilbert/) Space)", yang mendeskripsikan keadaan dari sistem kuantum, meledak secara eksponensial seiring bertambahnya jumlah partikel. Mari kita pertimbangkan sebuah sistem yang terdiri dari kumpulan $N$ buah partikel dengan spin $1/2$ (yaitu, sebuah sistem yang memiliki dua keadaan kuantum). Keadaan dari satu partikel dideskripsikan oleh ruang vektor kompleks 2 dimensi $\mathbb{C}^2$. Oleh karena itu, ruang keadaan $\mathcal{H}$ dari sistem komposit yang terdiri dari $N$ partikel dibentuk sebagai produk tensor dari ruang keadaan masing-masing subsistem.
 
 $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
@@ -155,7 +155,7 @@ Dengan cara ini, komputer kuantum bukanlah sekadar solusi sementara untuk menghi
 
 # Bab 2: Dasar-dasar Bit Klasik dan Qubit (Bit Kuantum)
 
-Dalam membangun kerangka teoretis informasi kuantum, konsep yang paling fundamental adalah definisi dari "unit informasi terkecil". Pada bab ini, kita berangkat dari bit dalam teori informasi klasik dan memperluas konsep tersebut ke "qubit (Qubit)", yaitu unit terkecil dari informasi kuantum yang didasarkan pada aksioma-aksioma mekanika kuantum. Menggunakan bahasa yang ketat dari ruang Hilbert, notasi bra-ket, dan aljabar linear, kita akan membedah tuntas struktur matematis dari keadaan kuantum. Tanpa kompromi sedikit pun, mari kita selami kedalaman informasi kuantum dari sudut pandang ahli.
+Dalam membangun kerangka teoretis informasi kuantum, konsep yang paling fundamental adalah definisi dari "unit informasi terkecil". Pada bab ini, kita berangkat dari bit dalam teori informasi klasik dan memperluas konsep tersebut ke "qubit (Qubit)", yaitu unit terkecil dari informasi kuantum yang didasarkan pada aksioma-aksioma mekanika kuantum. Menggunakan bahasa yang ketat dari ruang [Hilbert](https://kenji.blog/id/p/hilbert/), notasi bra-ket, dan aljabar linear, kita akan membedah tuntas struktur matematis dari keadaan kuantum. Tanpa kompromi sedikit pun, mari kita selami kedalaman informasi kuantum dari sudut pandang ahli.
 
 ## 2.1 Unit Terkecil Informasi: Formulasi Matematis dan Batasan Bit Klasik
 
@@ -178,7 +178,7 @@ Di sini, $p_0, p_1$ masing-masing adalah bilangan riil yang menyatakan probabili
 1. **Non-negativitas** : $p_0 \ge 0, \quad p_1 \ge 0$
 2. **Kondisi normalisasi (probabilitas total sama dengan 1)** : $p_0 + p_1 = 1$
 
-Dalam dunia bit klasik, sistem komposit yang menggabungkan beberapa bit dideskripsikan oleh produk tensor (produk Kronecker) dari masing-masing vektor probabilitasnya. Sebagai contoh, probabilitas bersama dari dua bit klasik adalah sebagai berikut:
+Dalam dunia bit klasik, sistem komposit yang menggabungkan beberapa bit dideskripsikan oleh produk tensor (produk [Kronecker](https://kenji.blog/id/p/kronecker/)) dari masing-masing vektor probabilitasnya. Sebagai contoh, probabilitas bersama dari dua bit klasik adalah sebagai berikut:
 
 $$
 \mathbf{p}_{AB} = \mathbf{p}_A \otimes \mathbf{p}_B = \begin{pmatrix} p_{A0} \\ p_{A1} \end{pmatrix} \otimes \begin{pmatrix} p_{B0} \\ p_{B1} \end{pmatrix} = \begin{pmatrix} p_{A0}p_{B0} \\ p_{A0}p_{B1} \\ p_{A1}p_{B0} \\ p_{A1}p_{B1} \end{pmatrix}
@@ -188,9 +188,9 @@ Kerangka teori informasi klasik sangatlah kuat dan membentuk fondasi masyarakat 
 
 ## 2.2 Postulat Mekanika Kuantum dan Notasi Bra-ket (Bra-ket notation)
 
-Postulat (Postulate) pertama dalam mekanika kuantum menyatakan bahwa "keadaan dari suatu sistem fisik tertutup dideskripsikan secara lengkap sebagai vektor satuan (vektor keadaan) pada ruang vektor lengkap yang dilengkapi perkalian dalam kompleks, yaitu ruang Hilbert (Hilbert Space) $\mathcal{H}$." Dalam konteks komputasi kuantum, karena derajat kebebasan ruang kontinu dapat diabaikan, ruang Hilbert ini umumnya berupa ruang vektor kompleks berdimensi berhingga $\mathbb{C}^d$.
+Postulat (Postulate) pertama dalam mekanika kuantum menyatakan bahwa "keadaan dari suatu sistem fisik tertutup dideskripsikan secara lengkap sebagai vektor satuan (vektor keadaan) pada ruang vektor lengkap yang dilengkapi perkalian dalam kompleks, yaitu ruang [Hilbert](https://kenji.blog/id/p/hilbert/) ([Hilbert](https://kenji.blog/id/p/hilbert/) Space) $\mathcal{H}$." Dalam konteks komputasi kuantum, karena derajat kebebasan ruang kontinu dapat diabaikan, ruang [Hilbert](https://kenji.blog/id/p/hilbert/) ini umumnya berupa ruang vektor kompleks berdimensi berhingga $\mathbb{C}^d$.
 
-Unit terkecil dari informasi kuantum, yaitu "qubit (Qubit)", didefinisikan secara ketat sebagai keadaan dalam ruang Hilbert kompleks 2 dimensi $\mathcal{H} \cong \mathbb{C}^2$. Untuk mendeskripsikan keadaan dalam ruang vektor ini, merupakan standar untuk menggunakan **notasi bra-ket (Bra-ket notation)** yang diperkenalkan oleh fisikawan Paul Dirac.
+Unit terkecil dari informasi kuantum, yaitu "qubit (Qubit)", didefinisikan secara ketat sebagai keadaan dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) kompleks 2 dimensi $\mathcal{H} \cong \mathbb{C}^2$. Untuk mendeskripsikan keadaan dalam ruang vektor ini, merupakan standar untuk menggunakan **notasi bra-ket (Bra-ket notation)** yang diperkenalkan oleh fisikawan Paul Dirac.
 
 Vektor kolom yang menyatakan keadaan kuantum disebut **vektor ket (Ket vector)** dan dinotasikan sebagai $|\psi\rangle$. Sebagai keadaan yang berkorespondensi dengan $0$ dan $1$ pada bit klasik, mari kita perkenalkan basis ortonormal yang disebut basis komputasi (Computational basis). Basis ini juga disebut basis $Z$ dari qubit, dan masing-masing didefinisikan sebagai $|0\rangle$ dan $|1\rangle$:
 
@@ -198,7 +198,7 @@ $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 $$
 
-Di sisi lain, berdasarkan teorema representasi Riesz (Riesz representation theorem), setiap vektor ket dalam ruang Hilbert berkorespondensi secara unik dengan elemen dari ruang dual (Dual space) yang bertindak sebagai fungsional linear kontinu. Ini disebut **vektor bra (Bra vector)** dan dinotasikan sebagai $\langle\psi|$. Dalam representasi matriks, vektor bra yang bersesuaian diperoleh dengan mengambil konjugat Hermite (transpos konjugat kompleks, dilambangkan dengan $^\dagger$) dari vektor ket:
+Di sisi lain, berdasarkan teorema representasi Riesz (Riesz representation theorem), setiap vektor ket dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) berkorespondensi secara unik dengan elemen dari ruang dual (Dual space) yang bertindak sebagai fungsional linear kontinu. Ini disebut **vektor bra (Bra vector)** dan dinotasikan sebagai $\langle\psi|$. Dalam representasi matriks, vektor bra yang bersesuaian diperoleh dengan mengambil konjugat Hermite (transpos konjugat kompleks, dilambangkan dengan $^\dagger$) dari vektor ket:
 
 $$
 \langle\psi| = (|\psi\rangle)^\dagger = (|\psi\rangle^*)^T
@@ -210,7 +210,7 @@ $$
 \langle 0| = \begin{pmatrix} 1 & 0 \end{pmatrix}, \quad \langle 1| = \begin{pmatrix} 0 & 1 \end{pmatrix}
 $$
 
-Nilai sejati dari notasi bra-ket terletak pada kenyataan bahwa perhitungan perkalian dalam menjadi sangat jelas secara visual. Perkalian dalam antara bra $\langle\phi|$ dan ket $|\psi\rangle$ ditulis sebagai $\langle\phi|\psi\rangle$ (ini berasal dari permainan kata Dirac di mana "Bra" dan "Ket" bergabung membentuk "Bracket"). Karena basis komputasi $\{|0\rangle, |1\rangle\}$ membentuk sistem ortonormal (Orthonormal system), perkalian dalamnya dinyatakan menggunakan delta Kronecker $\delta_{ij}$ sebagai berikut:
+Nilai sejati dari notasi bra-ket terletak pada kenyataan bahwa perhitungan perkalian dalam menjadi sangat jelas secara visual. Perkalian dalam antara bra $\langle\phi|$ dan ket $|\psi\rangle$ ditulis sebagai $\langle\phi|\psi\rangle$ (ini berasal dari permainan kata Dirac di mana "Bra" dan "Ket" bergabung membentuk "Bracket"). Karena basis komputasi $\{|0\rangle, |1\rangle\}$ membentuk sistem ortonormal (Orthonormal system), perkalian dalamnya dinyatakan menggunakan delta [Kronecker](https://kenji.blog/id/p/kronecker/) $\delta_{ij}$ sebagai berikut:
 
 $$
 \langle i | j \rangle = \delta_{ij} \quad (i, j \in \{0, 1\})
@@ -232,7 +232,7 @@ $$
 
 ## 2.3 Prinsip Superposisi Kuantum dan Amplitudo Probabilitas Kompleks
 
-Sementara bit klasik selalu berada dalam keadaan pasti $0$ atau $1$, atau campuran probabilistiknya, tuntutan linearitas (Linearity) mekanika kuantum memungkinkan qubit untuk berada dalam keadaan yang secara fundamental berbeda yang disebut "superposisi (Superposition)", yang direpresentasikan melalui kombinasi linear dari $|0\rangle$ dan $|1\rangle$. Setiap vektor satuan dalam ruang Hilbert $\mathcal{H}$ diakui sebagai keadaan fisik yang valid.
+Sementara bit klasik selalu berada dalam keadaan pasti $0$ atau $1$, atau campuran probabilistiknya, tuntutan linearitas (Linearity) mekanika kuantum memungkinkan qubit untuk berada dalam keadaan yang secara fundamental berbeda yang disebut "superposisi (Superposition)", yang direpresentasikan melalui kombinasi linear dari $|0\rangle$ dan $|1\rangle$. Setiap vektor satuan dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) $\mathcal{H}$ diakui sebagai keadaan fisik yang valid.
 
 Oleh karena itu, keadaan murni (Pure state) $|\psi\rangle$ yang paling umum dari sebuah qubit tunggal dapat diekspansikan menggunakan basis komputasi sebagai berikut:
 
@@ -282,7 +282,7 @@ $$
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
 $$
 
-Dengan demikian, karena fase global saling meniadakan, fase tersebut mustahil untuk diamati melalui pengukuran fisik apa pun. Dengan kata lain, meskipun $|\psi\rangle$ dan $e^{i\phi_0}|\psi\rangle$ adalah vektor yang berbeda dalam ruang Hilbert (namun berada pada sinar yang sama), keduanya secara fisik merepresentasikan keadaan yang persis sama.
+Dengan demikian, karena fase global saling meniadakan, fase tersebut mustahil untuk diamati melalui pengukuran fisik apa pun. Dengan kata lain, meskipun $|\psi\rangle$ dan $e^{i\phi_0}|\psi\rangle$ adalah vektor yang berbeda dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) (namun berada pada sinar yang sama), keduanya secara fisik merepresentasikan keadaan yang persis sama.
 
 Oleh karena itu, dengan mengabaikan fase global dan hanya menyisakan fase relatif (Relative phase) $\varphi = \phi_1 - \phi_0$ (di mana $\varphi \in [0, 2\pi)$) antara $|0\rangle$ dan $|1\rangle$ sebagai parameter, keadaan murni dari sembarang qubit tunggal dapat direpresentasikan secara unik dan ketat dalam **bentuk standar** berikut:
 
@@ -313,7 +313,7 @@ graph TD
     style State fill:#bbf,stroke:#333,stroke-width:4px,stroke-dasharray: 5 5
 ```
 
-Sifat yang paling penting dari bola Bloch adalah bahwa "keadaan ortogonal (keadaan dengan perkalian dalam sama dengan 0) dalam ruang Hilbert terletak pada titik antipodal (Antipodal points: titik yang berlawanan 180 derajat) satu sama lain pada ruang riil 3 dimensi bola Bloch." Sebagai contoh, keadaan yang ortogonal terhadap $|0\rangle$ (kutub utara, $\theta=0$) adalah $|1\rangle$ (kutub selatan, $\theta=\pi$). Perhitungan perkalian dalam antara keadaan yang saling ortogonal dalam ruang Hilbert $\langle 0 | 1 \rangle = 0$ bersesuaian dengan pemisahan sudut sebesar $\pi$ (180 derajat) pada bola Bloch. Di sinilah letak keniscayaan matematis digunakannya sudut setengah $\theta/2$ dalam parameterisasi, karena sudut geometris bernilai dua kali lipat dari sudut dalam ruang Hilbert.
+Sifat yang paling penting dari bola Bloch adalah bahwa "keadaan ortogonal (keadaan dengan perkalian dalam sama dengan 0) dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) terletak pada titik antipodal (Antipodal points: titik yang berlawanan 180 derajat) satu sama lain pada ruang riil 3 dimensi bola Bloch." Sebagai contoh, keadaan yang ortogonal terhadap $|0\rangle$ (kutub utara, $\theta=0$) adalah $|1\rangle$ (kutub selatan, $\theta=\pi$). Perhitungan perkalian dalam antara keadaan yang saling ortogonal dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) $\langle 0 | 1 \rangle = 0$ bersesuaian dengan pemisahan sudut sebesar $\pi$ (180 derajat) pada bola Bloch. Di sinilah letak keniscayaan matematis digunakannya sudut setengah $\theta/2$ dalam parameterisasi, karena sudut geometris bernilai dua kali lipat dari sudut dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/).
 
 Koordinat $\mathbf{r} = (x, y, z)$ pada bola Bloch ini diturunkan secara ketat sebagai nilai ekspektasi dari **matriks Pauli (Pauli matrices)** , yang merupakan besaran teramati (Observable) dalam mekanika kuantum. Matriks Pauli yang menjadi basis operator Hermite untuk sistem 2 dimensi didefinisikan sebagai berikut:
 
@@ -385,7 +385,7 @@ sehingga keadaan tersebut runtuh sepenuhnya menjadi $|0\rangle$ (fase global dia
 
 ## 2.6 Pengantar Perluasan ke Sistem Banyak-Partikel dan Prospek Bab Selanjutnya
 
-Setelah memahami secara mendalam sifat-sifat qubit tunggal, kita juga perlu menyentuh dasar matematis dari "sistem multi-qubit" yang akan dibahas secara mendalam pada bab-bab berikutnya. Berbeda dengan distribusi probabilitas klasik yang memperluas ruang keadaan melalui produk Kartesius, ruang Hilbert $\mathcal{H}_{AB}$ dari sistem komposit dalam mekanika kuantum dikonstruksikan melalui **produk tensor (Tensor product)** dari ruang Hilbert masing-masing subsistem $\mathcal{H}_A$ dan $\mathcal{H}_B$:
+Setelah memahami secara mendalam sifat-sifat qubit tunggal, kita juga perlu menyentuh dasar matematis dari "sistem multi-qubit" yang akan dibahas secara mendalam pada bab-bab berikutnya. Berbeda dengan distribusi probabilitas klasik yang memperluas ruang keadaan melalui produk Kartesius, ruang [Hilbert](https://kenji.blog/id/p/hilbert/) $\mathcal{H}_{AB}$ dari sistem komposit dalam mekanika kuantum dikonstruksikan melalui **produk tensor (Tensor product)** dari ruang [Hilbert](https://kenji.blog/id/p/hilbert/) masing-masing subsistem $\mathcal{H}_A$ dan $\mathcal{H}_B$:
 
 $$
 \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
@@ -399,7 +399,7 @@ $$
 
 Di sini, keberadaan keadaan yang tidak dapat difaktorkan sebagai produk tensor dari keadaan-keadaan penyusunnya (misalnya, keadaan Bell $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$) menjadi sumber dari keterikatan kuantum (Quantum Entanglement). Ledakan eksponensial dari dimensi akibat produk tensor ($2^N$ dimensi untuk $N$ qubit) inilah yang menjadi fondasi bagi komputer kuantum untuk menunjukkan kemampuan komputasi paralel yang luar biasa.
 
-Pada bab ini, kita telah membangun perbedaan esensial antara bit klasik dan qubit di atas fondasi matematis ruang Hilbert. Qubit mampu mengambil keadaan superposisi kontinu dengan amplitudo probabilitas kompleks, dan melalui penurunan bola Bloch, kita memperoleh metode yang ampuh untuk memahami vektor kompleks abstrak secara intuitif sebagai model geometris dalam ruang riil 3 dimensi.
+Pada bab ini, kita telah membangun perbedaan esensial antara bit klasik dan qubit di atas fondasi matematis ruang [Hilbert](https://kenji.blog/id/p/hilbert/). Qubit mampu mengambil keadaan superposisi kontinu dengan amplitudo probabilitas kompleks, dan melalui penurunan bola Bloch, kita memperoleh metode yang ampuh untuk memahami vektor kompleks abstrak secara intuitif sebagai model geometris dalam ruang riil 3 dimensi.
 
 Pada bab berikutnya, "Bab 3: Gerbang Kuantum dan Transformasi Uniter", kita akan menguraikan secara rinci "gerbang logika kuantum" konkret yang memanipulasi keadaan qubit tunggal ini, serta menyingkap sifat-sifat matematis dari operasi rotasi oleh matriks uniter pada bola Bloch. Pintu menuju dunia informasi kuantum yang mendalam baru saja terbuka.
 
@@ -409,16 +409,16 @@ Pada bab berikutnya, "Bab 3: Gerbang Kuantum dan Transformasi Uniter", kita akan
 
 Untuk memahami prinsip kerja komputer kuantum dari dasarnya, sangat penting untuk memahami kerangka teori fisika mekanika kuantum dalam bentuk matematis yang ketat. Meskipun banyak teori fisika berkembang secara induktif berdasarkan hukum empiris, mekanika kuantum, terutama mekanika kuantum modern yang dirumuskan oleh John von Neumann, mengadopsi pendekatan aksiomatik yang mendeduksi seluruh sistem dari sejumlah kecil "Aksioma" (Axioms) matematis.
 
-Sistem aksioma ini dibangun di atas panggung aljabar linear kompleks yang dapat diperluas ke dimensi tak hingga, yang disebut ruang Hilbert. Dalam ilmu informasi kuantum dan komputasi kuantum, kita terutama berurusan dengan ruang vektor berdimensi hingga (misalnya, ruang produk tensor $\mathbb{C}^2$ dari sistem qubit), sehingga kita dapat menghindari kesulitan analitik dalam dimensi tak hingga (seperti domain operator tak terbatas) dan dapat mendeskripsikan serta memahami mekanika kuantum murni sebagai aljabar linear.
+Sistem aksioma ini dibangun di atas panggung aljabar linear kompleks yang dapat diperluas ke dimensi tak hingga, yang disebut ruang [Hilbert](https://kenji.blog/id/p/hilbert/). Dalam ilmu informasi kuantum dan komputasi kuantum, kita terutama berurusan dengan ruang vektor berdimensi hingga (misalnya, ruang produk tensor $\mathbb{C}^2$ dari sistem qubit), sehingga kita dapat menghindari kesulitan analitik dalam dimensi tak hingga (seperti domain operator tak terbatas) dan dapat mendeskripsikan serta memahami mekanika kuantum murni sebagai aljabar linear.
 
 Dalam bab ini, kita akan merumuskan dengan ketat tanpa kompromi proses dari deskripsi keadaan kuantum hingga evolusi waktu, dan hingga "pengukuran" yang telah memicu perdebatan paling filosofis. Pembaca akan menyadari bagaimana fenomena kuantum, yang pada pandangan pertama tampak berlawanan dengan intuisi, sebenarnya dibangun di atas struktur matematis yang konsisten dan indah. Struktur matematis inilah yang menjadi "bahasa" langsung untuk mendeskripsikan algoritma komputer kuantum.
 
-## 3.2 Aksioma Pertama: Ruang Keadaan (Ruang Hilbert dan Vektor Keadaan)
+## 3.2 Aksioma Pertama: Ruang Keadaan (Ruang [Hilbert](https://kenji.blog/id/p/hilbert/) dan Vektor Keadaan)
 
 Aksioma pertama dalam mekanika kuantum menentukan bagaimana "keadaan" suatu sistem fisik direpresentasikan secara matematis.
 
  **Aksioma 1 (Representasi Keadaan)** :
-Keadaan dari sistem fisik tertutup dideskripsikan sepenuhnya oleh sebuah vektor satuan dengan norma 1 pada ruang Hilbert (Hilbert space) $\mathcal{H}$, yang merupakan ruang hasil kali dalam kompleks yang memenuhi kelengkapan. Ini disebut **vektor keadaan** .
+Keadaan dari sistem fisik tertutup dideskripsikan sepenuhnya oleh sebuah vektor satuan dengan norma 1 pada ruang [Hilbert](https://kenji.blog/id/p/hilbert/) ([Hilbert](https://kenji.blog/id/p/hilbert/) space) $\mathcal{H}$, yang merupakan ruang hasil kali dalam kompleks yang memenuhi kelengkapan. Ini disebut **vektor keadaan** .
 
 Menurut notasi Bra-ket (Bra-ket notation) yang diperkenalkan oleh Paul Dirac, vektor keadaan diperlakukan sebagai vektor kolom dan ditulis sebagai ket **$| \psi \rangle$** . Vektor baris yang termasuk dalam ruang dual $\mathcal{H}^*$ ditulis sebagai bra **$\langle \psi |$** , dan keduanya memiliki hubungan konjugat Hermitian (transpose konjugat kompleks) satu sama lain. Yaitu,
 
@@ -426,7 +426,7 @@ $$
 \langle \psi | = ( | \psi \rangle )^\dagger
 $$
 
-Hasil kali dalam (inner product) dari dua keadaan sembarang **$| \phi \rangle$** dan **$| \psi \rangle$** dalam ruang Hilbert dihitung sebagai perkalian bra dan ket **$\langle \phi | \psi \rangle$** , yang menghasilkan nilai kompleks. Hasil kali dalam ini memenuhi sifat-sifat berikut:
+Hasil kali dalam (inner product) dari dua keadaan sembarang **$| \phi \rangle$** dan **$| \psi \rangle$** dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) dihitung sebagai perkalian bra dan ket **$\langle \phi | \psi \rangle$** , yang menghasilkan nilai kompleks. Hasil kali dalam ini memenuhi sifat-sifat berikut:
 
 1. **Definit Positif** : Untuk setiap **$| \psi \rangle \neq 0$** , berlaku $\langle \psi | \psi \rangle > 0$
 2. **Linearitas** : $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
@@ -438,19 +438,19 @@ $$
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
 $$
 
-Lebih lanjut, karena ketaksamaan Cauchy-Schwarz (Cauchy-Schwarz inequality) $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ berlaku, nilai mutlak hasil kali dalam antara dua keadaan yang telah dinormalisasi akan selalu berada di antara 0 dan 1. Ini menjadi dasar matematis agar nantinya dapat diinterpretasikan sebagai "probabilitas".
+Lebih lanjut, karena ketaksamaan [Cauchy](https://kenji.blog/id/p/cauchy/)-Schwarz ([Cauchy](https://kenji.blog/id/p/cauchy/)-Schwarz inequality) $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ berlaku, nilai mutlak hasil kali dalam antara dua keadaan yang telah dinormalisasi akan selalu berada di antara 0 dan 1. Ini menjadi dasar matematis agar nantinya dapat diinterpretasikan sebagai "probabilitas".
 
 ### Prinsip Superposisi dan Basis Ortonormal Lengkap
 
-Karakteristik yang paling menonjol dari mekanika kuantum adalah "Prinsip Superposisi" (Superposition principle). Jika **$| \phi \rangle$** dan **$| \psi \rangle$** adalah keadaan yang secara fisik diizinkan, maka kombinasi linear kompleks sembarang dari keduanya $c_1 | \phi \rangle + c_2 | \psi \rangle$ juga akan menjadi keadaan yang secara fisik diizinkan (jika dilakukan normalisasi). Sifat ini diturunkan langsung dari linearitas ruang Hilbert.
+Karakteristik yang paling menonjol dari mekanika kuantum adalah "Prinsip Superposisi" (Superposition principle). Jika **$| \phi \rangle$** dan **$| \psi \rangle$** adalah keadaan yang secara fisik diizinkan, maka kombinasi linear kompleks sembarang dari keduanya $c_1 | \phi \rangle + c_2 | \psi \rangle$ juga akan menjadi keadaan yang secara fisik diizinkan (jika dilakukan normalisasi). Sifat ini diturunkan langsung dari linearitas ruang [Hilbert](https://kenji.blog/id/p/hilbert/).
 
-Di dalam ruang Hilbert $\mathcal{H}$, terdapat basis ortonormal (Orthonormal basis) $\{ | e_i \rangle \}$. Basis-basis ini saling ortogonal dan telah dinormalisasi.
+Di dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) $\mathcal{H}$, terdapat basis ortonormal (Orthonormal basis) $\{ | e_i \rangle \}$. Basis-basis ini saling ortogonal dan telah dinormalisasi.
 
 $$
 \langle e_i | e_j \rangle = \delta_{ij}
 $$
 
-( $\delta_{ij}$ adalah delta Kronecker). Selain itu, sebagai relasi kelengkapan (Completeness relation) atau identitas resolusi, operator identitas $I$ dapat diekspansi sebagai berikut:
+( $\delta_{ij}$ adalah delta [Kronecker](https://kenji.blog/id/p/kronecker/)). Selain itu, sebagai relasi kelengkapan (Completeness relation) atau identitas resolusi, operator identitas $I$ dapat diekspansi sebagai berikut:
 
 $$
 I = \sum_i | e_i \rangle \langle e_i |
@@ -469,7 +469,7 @@ Di sini, koefisien ekspansi $c_i = \langle e_i | \psi \rangle$ disebut sebagai a
 Dalam mekanika klasik, besaran fisis (observabel) seperti posisi, momentum, dan energi dijelaskan sebagai fungsi bernilai riil. Namun, dalam mekanika kuantum terjadi pergeseran paradigma yang mendasar.
 
  **Aksioma 2 (Besaran Fisis)** :
-Besaran fisis yang dapat diobservasi (observabel) dideskripsikan oleh operator swa-adjoin linear (operator Hermitian) $A$ pada ruang Hilbert $\mathcal{H}$.
+Besaran fisis yang dapat diobservasi (observabel) dideskripsikan oleh operator swa-adjoin linear (operator Hermitian) $A$ pada ruang [Hilbert](https://kenji.blog/id/p/hilbert/) $\mathcal{H}$.
 
 Operator Hermitian adalah operator yang konjugat Hermitiannya sama dengan dirinya sendiri. Artinya, ia memenuhi $A = A^\dagger$. Jika direpresentasikan sebagai matriks dalam ruang berdimensi hingga, ini berarti elemen-elemennya memiliki simetri konjugat kompleks ( $A_{ij} = A_{ji}^*$ ).
 
@@ -477,7 +477,7 @@ Alasan mengapa besaran fisis harus didefinisikan sebagai operator Hermitian terl
 
 1. **Semua nilai eigen $a_i$ adalah bilangan riil.** (Karena besaran fisis yang diukur harus selalu bernilai riil, ini sesuai dengan persyaratan fisis.)
 2. **Vektor eigen yang terkait dengan nilai eigen yang berbeda saling ortogonal.** 
-3. **Vektor eigen dari operator $\{ | a_i \rangle \}$ membentuk basis ortonormal lengkap dari ruang Hilbert.** 
+3. **Vektor eigen dari operator $\{ | a_i \rangle \}$ membentuk basis ortonormal lengkap dari ruang [Hilbert](https://kenji.blog/id/p/hilbert/).** 
 
 Oleh karena itu, setiap observabel $A$ dapat didekomposisi secara spektral (Spectral decomposition) sebagai kombinasi linear dari operator proyeksi $P_i = | a_i \rangle \langle a_i |$, menggunakan nilai eigen $a_i$ dan vektor eigen **$| a_i \rangle$** .
 
@@ -485,7 +485,7 @@ $$
 A = \sum_i a_i | a_i \rangle \langle a_i |
 $$
 
-Melalui rumusan ini, tindakan "mengukur besaran fisis" dapat dipahami sebagai operasi geometris berupa proyeksi ke basis tertentu (vektor eigen) dari ruang Hilbert. Misalnya, pengukuran $\sigma_z$ dari sebuah qubit sepenuhnya dijelaskan sebagai operasi proyeksi ke basis ortogonal yang terdiri dari keadaan **$| 0 \rangle$** yang sesuai dengan nilai eigen $+1$ dan keadaan **$| 1 \rangle$** yang sesuai dengan nilai eigen $-1$.
+Melalui rumusan ini, tindakan "mengukur besaran fisis" dapat dipahami sebagai operasi geometris berupa proyeksi ke basis tertentu (vektor eigen) dari ruang [Hilbert](https://kenji.blog/id/p/hilbert/). Misalnya, pengukuran $\sigma_z$ dari sebuah qubit sepenuhnya dijelaskan sebagai operasi proyeksi ke basis ortogonal yang terdiri dari keadaan **$| 0 \rangle$** yang sesuai dengan nilai eigen $+1$ dan keadaan **$| 1 \rangle$** yang sesuai dengan nilai eigen $-1$.
 
 ## 3.4 Aksioma Ketiga: Evolusi Waktu Uniter dan Persamaan Schrödinger
 
@@ -600,7 +600,7 @@ Dengan demikian, konsep-konsep abstrak dalam aljabar linear—seperti ruang vekt
 
 # Bab 4: Gerbang Kuantum Tunggal dan Transformasi Unitari
 
-Landasan dari komputasi kuantum adalah manipulasi presisi terhadap keadaan kuantum. Jika gerbang logika pada komputer klasik (seperti AND, OR, NOT) memanipulasi nilai bit secara ireversibel, "gerbang kuantum" pada komputer kuantum adalah evolusi waktu yang reversibel sesuai dengan persamaan Schrödinger, dan secara matematis dideskripsikan secara ketat sebagai "transformasi unitari (matriks unitari)" pada ruang Hilbert kompleks. Pada bab ini, kita akan menggali secara mendalam tanpa kompromi mengenai struktur matematis, sifat aljabar, dan makna geometris intuitif pada bola Bloch (Bloch sphere) dari gerbang-gerbang kuantum dasar yang bekerja pada bit kuantum tunggal (sistem dua tingkat).
+Landasan dari komputasi kuantum adalah manipulasi presisi terhadap keadaan kuantum. Jika gerbang logika pada komputer klasik (seperti AND, OR, NOT) memanipulasi nilai bit secara ireversibel, "gerbang kuantum" pada komputer kuantum adalah evolusi waktu yang reversibel sesuai dengan persamaan Schrödinger, dan secara matematis dideskripsikan secara ketat sebagai "transformasi unitari (matriks unitari)" pada ruang [Hilbert](https://kenji.blog/id/p/hilbert/) kompleks. Pada bab ini, kita akan menggali secara mendalam tanpa kompromi mengenai struktur matematis, sifat aljabar, dan makna geometris intuitif pada bola Bloch (Bloch sphere) dari gerbang-gerbang kuantum dasar yang bekerja pada bit kuantum tunggal (sistem dua tingkat).
 
 ## 4.1 Postulat Mekanika Kuantum dan Keniscayaan Matriks Unitari
 
@@ -698,7 +698,7 @@ Ini bersesuaian dengan rotasi **$\pi$** di sekitar sumbu Z. Karena basis komputa
 
 ### 4.2.4 Struktur Aljabar Mendalam dari Grup Pauli
 
-Grup matriks Pauli **$\{I, X, Y, Z\}$** membentuk struktur aljabar yang sangat indah sebagai operator linear pada ruang Hilbert.
+Grup matriks Pauli **$\{I, X, Y, Z\}$** membentuk struktur aljabar yang sangat indah sebagai operator linear pada ruang [Hilbert](https://kenji.blog/id/p/hilbert/).
 
 1. **Koeksistensi Sifat Adjoin Diri (Hermitian) dan Unitari** : **$X = X^\dagger$** , **$Y = Y^\dagger$** , **$Z = Z^\dagger$** , dan pada saat yang sama memenuhi **$X^\dagger X = I$** (yaitu **$X = X^{-1}$** ). Ini adalah sifat langka di mana mereka bertindak sebagai kuantitas fisik (besaran yang dapat diobservasi) dan sekaligus menjadi generator evolusi waktu unitari (gerbang). Jika diterapkan dua kali secara berurutan, ia akan kembali ke transformasi identitas (involusi: **$X^2 = Y^2 = Z^2 = I$** ).
 2. **Relasi Antikomutasi Penuh** : Matriks Pauli yang berbeda akan mengalami pembalikan tanda jika urutan perkaliannya ditukar.
@@ -945,7 +945,7 @@ $$
 Secara menakjubkan, hal ini membuktikan bahwa operasi berurutan dari gerbang diskrit di sekitar sumbu yang sama sekali berbeda, yaitu " **$H \rightarrow S \rightarrow H$** ", apabila mengabaikan fase globalnya, ekuivalen secara matematis kata demi kata dengan operasi tunggal berupa "rotasi **$\pi/2$** di sekitar sumbu X".
 Dengan cara ini, meskipun keadaan kuantum menempuh jalur interferensi kompleks yang menolak intuisi klasik kita, melalui kerangka matematika aljabar linear yang kokoh, perilakunya dapat dikendalikan dan diprediksi secara penuh tanpa ada kesalahan sekecil apa pun (bahkan satu bit).
 
-Pada bab selanjutnya, dengan menggunakan pengetahuan tentang operasi qubit tunggal yang kuat ini sebagai pijakan, kita akan melangkah ke dalam dunia yang lebih mendalam mengenai perkalian tensor (tensor product) yang meledakkan dimensi ruang Hilbert secara eksponensial, serta gerbang multi-qubit yang menghasilkan "keterikatan kuantum (entanglement)" yang pernah disebut oleh Einstein sebagai "aksi seram dari jarak jauh" (spooky action at a distance).
+Pada bab selanjutnya, dengan menggunakan pengetahuan tentang operasi qubit tunggal yang kuat ini sebagai pijakan, kita akan melangkah ke dalam dunia yang lebih mendalam mengenai perkalian tensor (tensor product) yang meledakkan dimensi ruang [Hilbert](https://kenji.blog/id/p/hilbert/) secara eksponensial, serta gerbang multi-qubit yang menghasilkan "keterikatan kuantum (entanglement)" yang pernah disebut oleh Einstein sebagai "aksi seram dari jarak jauh" (spooky action at a distance).
 
 # Bab 5: Sistem Multiqubit dan Keterikatan Kuantum (Entanglement)
 
@@ -955,9 +955,9 @@ Dalam bab-bab sebelumnya, kita telah membahas secara mendalam sifat superposisi 
 
 ## 5.1 Deskripsi Matematis Keadaan Banyak-Benda dengan Produk Tensor ($\otimes$)
 
-Menurut aksioma mekanika kuantum, ketika ruang keadaan dari sistem fisik yang independen masing-masing dideskripsikan oleh ruang Hilbert **$\mathcal{H}_A$** dan **$\mathcal{H}_B$** , ruang keadaan dari sistem komposit yang menggabungkan keduanya diberikan sebagai **produk tensor** (Tensor Product) dari masing-masing ruang, yaitu **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** .
+Menurut aksioma mekanika kuantum, ketika ruang keadaan dari sistem fisik yang independen masing-masing dideskripsikan oleh ruang [Hilbert](https://kenji.blog/id/p/hilbert/) **$\mathcal{H}_A$** dan **$\mathcal{H}_B$** , ruang keadaan dari sistem komposit yang menggabungkan keduanya diberikan sebagai **produk tensor** (Tensor Product) dari masing-masing ruang, yaitu **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** .
 
-Ruang keadaan dari qubit tunggal adalah ruang vektor kompleks dua dimensi **$\mathbb{C}^2$** . Oleh karena itu, ruang keadaan dari sistem yang terdiri dari $n$ qubit adalah ruang Hilbert berdimensi $2^n$, yaitu **$(\mathbb{C}^2)^{\otimes n}$** . Pertumbuhan dimensi secara eksponensial terhadap jumlah qubit $n$ inilah yang menjadi fondasi matematis dari paralelisme kuantum.
+Ruang keadaan dari qubit tunggal adalah ruang vektor kompleks dua dimensi **$\mathbb{C}^2$** . Oleh karena itu, ruang keadaan dari sistem yang terdiri dari $n$ qubit adalah ruang [Hilbert](https://kenji.blog/id/p/hilbert/) berdimensi $2^n$, yaitu **$(\mathbb{C}^2)^{\otimes n}$** . Pertumbuhan dimensi secara eksponensial terhadap jumlah qubit $n$ inilah yang menjadi fondasi matematis dari paralelisme kuantum.
 
 Mari kita tinjau sistem yang terdiri dari dua qubit (qubit A dan qubit B). Basis komputasi didefinisikan sebagai produk tensor dari keadaan basis masing-masing qubit tunggal.
 
@@ -968,7 +968,7 @@ $$
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
 $$
 
-Di sini, mari kita hitung secara ketat representasi matriks dari produk tensor (produk Kronecker). Jika kita menyatakan basis qubit tunggal sebagai vektor kolom:
+Di sini, mari kita hitung secara ketat representasi matriks dari produk tensor (produk [Kronecker](https://kenji.blog/id/p/kronecker/)). Jika kita menyatakan basis qubit tunggal sebagai vektor kolom:
 
 $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
@@ -1009,7 +1009,7 @@ $$
 
 maka keadaan tersebut dikatakan dapat terpisahkan (separable). Sebaliknya, keadaan yang **tidak dapat** dinyatakan sebagai produk tensor dari keadaan subsistem mana pun didefinisikan sebagai **keadaan terikat secara kuantum (Entangled State)** .
 
-Dalam sistem dua-qubit, keadaan yang terikat secara kuantum paling kuat disebut **keadaan Bell** (Bell States), atau pasangan EPR. Keadaan Bell terdiri dari empat keadaan murni ortogonal berikut, yang membentuk basis ortonormal lengkap (basis Bell) bagi ruang Hilbert 4 dimensi:
+Dalam sistem dua-qubit, keadaan yang terikat secara kuantum paling kuat disebut **keadaan Bell** (Bell States), atau pasangan EPR. Keadaan Bell terdiri dari empat keadaan murni ortogonal berikut, yang membentuk basis ortonormal lengkap (basis Bell) bagi ruang [Hilbert](https://kenji.blog/id/p/hilbert/) 4 dimensi:
 
 $$
 |\Phi^+\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle + |11\rangle \Big)
@@ -1906,7 +1906,7 @@ Melalui reduksi klasik ini, masalahnya menyempit menjadi satu poin: "Bagaimana c
 
 Inti dari algoritma kuantum untuk mengekstraksi periode tersembunyi $r$ dari fungsi $f(x)$ dalam waktu polinomial adalah "Transformasi Fourier Kuantum" (Quantum Fourier Transform, QFT). QFT adalah analogi mekanika kuantum dari Transformasi Fourier Diskrit (DFT) klasik, dan merupakan transformasi uniter yang beroperasi pada amplitudo probabilitas dari ruang keadaan.
 
-Aksi Transformasi Fourier Kuantum terhadap basis komputasi $|j\rangle$ ($j = 0, 1, \dots, M-1$) di ruang Hilbert $\mathcal{H}$ berdimensi $M = 2^n$ didefinisikan secara ketat sebagai berikut:
+Aksi Transformasi Fourier Kuantum terhadap basis komputasi $|j\rangle$ ($j = 0, 1, \dots, M-1$) di ruang [Hilbert](https://kenji.blog/id/p/hilbert/) $\mathcal{H}$ berdimensi $M = 2^n$ didefinisikan secara ketat sebagai berikut:
 
 
 $$
@@ -2036,7 +2036,7 @@ $$
 
 
 Di sini, $k$ dan $M$ adalah nilai yang diketahui, sedangkan $j$ dan $r$ tidak diketahui. Karena kita telah memilih $t$ sedemikian rupa sehingga $M \ge N^2$, maka $k/M$ memberikan perkiraan yang sangat akurat terhadap pecahan yang tidak diketahui $j/r$, yaitu $\left| \frac{k}{M} - \frac{j}{r} \right| \le \frac{1}{2M} < \frac{1}{2r^2}$.
-Menurut teorema pendekatan Diophantine (Teorema Legendre), bilangan rasional $j/r$ yang memenuhi syarat ini pasti termasuk dalam pecahan konvergen dari "Ekspansi Pecahan Berlanjut" (Continued Fraction Expansion) dari bilangan riil $k/M$.
+Menurut teorema pendekatan Diophantine (Teorema [Legendre](https://kenji.blog/id/p/legendre/)), bilangan rasional $j/r$ yang memenuhi syarat ini pasti termasuk dalam pecahan konvergen dari "Ekspansi Pecahan Berlanjut" (Continued Fraction Expansion) dari bilangan riil $k/M$.
 Oleh karena itu, dengan menghitung ekspansi pecahan berlanjut dari $k/M$ dalam waktu polinomial menggunakan komputer klasik, kita dapat menentukan periode $r$ sebagai penyebutnya. Dengan ini masalah penemuan orde diselesaikan, dan sebagai hasilnya kita menjadi mungkin untuk menurunkan faktor prima $p$ dan $q$ yang merupakan kunci dari kriptografi RSA.
 
 ## 8.5 Mengapa Algoritma Shor Membawa Percepatan Eksponensial Terhadap Komputasi Klasik
@@ -2050,7 +2050,7 @@ Namun, berdasarkan aksioma mekanika kuantum, begitu pengukuran dilakukan, keadaa
 Dari sinilah keajaiban sesungguhnya dimulai, dan kunci kedua adalah interferensi kuantum dan ekstraksi struktur global. Transformasi Fourier Kuantum menciptakan interferensi melintasi seluruh ruang keadaan yang sangat luas secara eksponensial. Ini bukanlah operasi untuk mencoba mengetahui nilai spesifik dari masing-masing $f(x)$, melainkan operasi untuk mengekstraksi hanya pola struktural yaitu "periodisitas global" dari keseluruhan fungsi tersebut.
 Amplitudo probabilitas yang bersesuaian dengan periode yang salah akan sepenuhnya musnah akibat interferensi destruktif, seperti puncak dan lembah gelombang yang saling meniadakan, dan hanya amplitudo probabilitas yang bersesuaian dengan periode $r$ yang benarlah yang akan dimaksimalkan oleh interferensi konstruktif. Dengan kata lain, hukum fisika alam itu sendirilah yang memainkan peran sebagai komputer, menghapus jawaban-jawaban yang salah yang tak terhitung jumlahnya dan membiarkan hanya jawaban yang benar yang muncul ke permukaan.
 
-Dilihat dari sudut pandang Masalah Subgrup Tersembunyi (Hidden Subgroup Problem, HSP), Algoritma Shor adalah sebuah kerangka umum untuk memecahkan "HSP pada grup Abelian berhingga" secara efisien. Penemuan orde grup komutatif yang menjadi basis kriptografi RSA sangat cocok dengan kerangka kerja ini.
+Dilihat dari sudut pandang Masalah Subgrup Tersembunyi (Hidden Subgroup Problem, HSP), Algoritma Shor adalah sebuah kerangka umum untuk memecahkan "HSP pada grup [Abel](https://kenji.blog/id/p/abel/)ian berhingga" secara efisien. Penemuan orde grup komutatif yang menjadi basis kriptografi RSA sangat cocok dengan kerangka kerja ini.
 
 Komputer kuantum bukanlah tongkat ajaib yang serba bisa, dan ia tidak dapat menyelesaikan setiap masalah secara eksponensial lebih cepat. Namun, untuk masalah di mana "periodisitas" atau "struktur aljabar" ini tersembunyi, mekanisme fisik dari interferensi kuantum akan menerobos secara mendasar batasan-batasan komputasi klasik. Itulah alasan terdalam dan paling indah mengapa Algoritma Shor memberikan titik akhir bagi teori kriptografi, dan membawa perkembangan yang eksplosif pada bidang ilmu informasi kuantum.
 
@@ -2074,13 +2074,13 @@ $$
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
 $$
 
-Keadaan **$|s\rangle$** ini dapat dipisahkan secara jelas di ruang Hilbert sebagai kombinasi linear dari keadaan benar $|w\rangle$ dan semua keadaan tidak benar lainnya. Untuk mempermudah menangkap interpretasi geometris di masa mendatang secara visual, kita memperkenalkan vektor ternormalisasi baru $|s^\perp\rangle$ yang merupakan superposisi merata hanya dari keadaan tidak benar sebagai berikut.
+Keadaan **$|s\rangle$** ini dapat dipisahkan secara jelas di ruang [Hilbert](https://kenji.blog/id/p/hilbert/) sebagai kombinasi linear dari keadaan benar $|w\rangle$ dan semua keadaan tidak benar lainnya. Untuk mempermudah menangkap interpretasi geometris di masa mendatang secara visual, kita memperkenalkan vektor ternormalisasi baru $|s^\perp\rangle$ yang merupakan superposisi merata hanya dari keadaan tidak benar sebagai berikut.
 
 $$
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
 $$
 
-Dengan definisi ini, keadaan $|s^\perp\rangle$ dan keadaan benar $|w\rangle$ saling ortogonal ( $\langle s^\perp | w \rangle = 0$ ). Kemudian, keadaan superposisi merata awal **$|s\rangle$** dapat diekspansi secara sangat sederhana sebagai berikut pada subruang Hilbert 2 dimensi yang direntangkan oleh dua vektor yang saling ortogonal $|w\rangle$ dan $|s^\perp\rangle$ ini.
+Dengan definisi ini, keadaan $|s^\perp\rangle$ dan keadaan benar $|w\rangle$ saling ortogonal ( $\langle s^\perp | w \rangle = 0$ ). Kemudian, keadaan superposisi merata awal **$|s\rangle$** dapat diekspansi secara sangat sederhana sebagai berikut pada subruang [Hilbert](https://kenji.blog/id/p/hilbert/) 2 dimensi yang direntangkan oleh dua vektor yang saling ortogonal $|w\rangle$ dan $|s^\perp\rangle$ ini.
 
 $$
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
@@ -2092,7 +2092,7 @@ $$
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
 $$
 
-Fakta kejam yang diceritakan oleh persamaan ini adalah bahwa probabilitas untuk mengamati keadaan benar $|w\rangle$ pada keadaan awal **$|s\rangle$** hanyalah sebesar $|\sin \theta|^2 = \frac{1}{N}$. Tujuan tertinggi dari algoritma Grover adalah dengan menerapkan kombinasi oracle dan operator difusi, yang akan dijelaskan nanti, secara iteratif untuk "memutar" vektor keadaan **$|s\rangle$** ini secara bertahap ke arah $|w\rangle$ di bidang 2 dimensi ruang Hilbert, dan membawa probabilitas mengamati jawaban yang benar sedekat mungkin ke batas teoretisnya yaitu $1$ (memperkuat amplitudo).
+Fakta kejam yang diceritakan oleh persamaan ini adalah bahwa probabilitas untuk mengamati keadaan benar $|w\rangle$ pada keadaan awal **$|s\rangle$** hanyalah sebesar $|\sin \theta|^2 = \frac{1}{N}$. Tujuan tertinggi dari algoritma Grover adalah dengan menerapkan kombinasi oracle dan operator difusi, yang akan dijelaskan nanti, secara iteratif untuk "memutar" vektor keadaan **$|s\rangle$** ini secara bertahap ke arah $|w\rangle$ di bidang 2 dimensi ruang [Hilbert](https://kenji.blog/id/p/hilbert/), dan membawa probabilitas mengamati jawaban yang benar sedekat mungkin ke batas teoretisnya yaitu $1$ (memperkuat amplitudo).
 
 ## 9.2 Definisi Quantum Oracle dan Phase Kickback
 
@@ -2404,7 +2404,7 @@ Hambatan pertama yang menghadang dalam membangun koreksi kesalahan kuantum adala
 
 ## 10.2 Prinsip Dasar Koreksi Kesalahan Kuantum: Redundansi dan Pengukuran Sindrom
 
-Alternatif pengganti "penyalinan" dalam informasi kuantum adalah dengan membuat beberapa qubit berada dalam keadaan keterikatan kuantum (Entanglement), sehingga memetakan informasi asli ke dalam subruang (ruang kode, Code Space) dari ruang Hilbert yang berdimensi lebih tinggi.
+Alternatif pengganti "penyalinan" dalam informasi kuantum adalah dengan membuat beberapa qubit berada dalam keadaan keterikatan kuantum (Entanglement), sehingga memetakan informasi asli ke dalam subruang (ruang kode, Code Space) dari ruang [Hilbert](https://kenji.blog/id/p/hilbert/) yang berdimensi lebih tinggi.
 
 Sebagai contoh paling sederhana, kita mengonstruksi "kode pembalikan bit 3-qubit" yang melindungi keadaan 1-qubit $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ dari pembalikan bit probabilistik.
 Basis logis (Logical Basis) didefinisikan sebagai berikut:
@@ -2563,10 +2563,10 @@ Koreksi kesalahan kuantum dan FTQC bukanlah sekadar tambal sulam rekayasa belaka
 
 # Bab 11: Implementasi Fisik Perangkat Keras Kuantum
 
-Dasar teoritis sains informasi kuantum dan struktur matematis algoritma telah diuraikan secara mendalam hingga Bab 10. Betapa pun canggihnya algoritma kuantum yang dirancang, dan sekalipun keunggulan kuantum (Quantum Supremacy) teoretis telah dibuktikan dalam kerangka teori kompleksitas komputasi, tanpa adanya "perangkat keras kuantum" sebagai entitas fisik untuk menjalankannya, semua itu hanyalah sebatas permainan matematika murni. Pada bab ini, kami akan menjelaskan secara ketat metode implementasi perangkat keras mutakhir untuk mewujudkan vektor keadaan $ |\psi\rangle $ dari ruang Hilbert abstrak ke dalam dunia fisik, mulai dari prinsip-prinsip fisika kuantum mendalam yang melandasinya.
+Dasar teoritis sains informasi kuantum dan struktur matematis algoritma telah diuraikan secara mendalam hingga Bab 10. Betapa pun canggihnya algoritma kuantum yang dirancang, dan sekalipun keunggulan kuantum (Quantum Supremacy) teoretis telah dibuktikan dalam kerangka teori kompleksitas komputasi, tanpa adanya "perangkat keras kuantum" sebagai entitas fisik untuk menjalankannya, semua itu hanyalah sebatas permainan matematika murni. Pada bab ini, kami akan menjelaskan secara ketat metode implementasi perangkat keras mutakhir untuk mewujudkan vektor keadaan $ |\psi\rangle $ dari ruang [Hilbert](https://kenji.blog/id/p/hilbert/) abstrak ke dalam dunia fisik, mulai dari prinsip-prinsip fisika kuantum mendalam yang melandasinya.
 
 Untuk mengendalikan sistem fisika kuantum secara artifisial dan membuatnya berfungsi sebagai komputer universal (Universal), lima persyaratan fisik ketat yang dikenal sebagai kriteria DiVincenzo (DiVincenzo's criteria) harus dipenuhi:
-1. **Keberadaan sistem qubit yang terkarakterisasi dengan baik dan skalabel** : Kemampuan untuk memastikan struktur perkalian tensor ruang Hilbert $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ secara fisik.
+1. **Keberadaan sistem qubit yang terkarakterisasi dengan baik dan skalabel** : Kemampuan untuk memastikan struktur perkalian tensor ruang [Hilbert](https://kenji.blog/id/p/hilbert/) $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ secara fisik.
 2. **Inisialisasi keadaan kuantum** : Kemampuan untuk mereset sistem ke keadaan murni (biasanya $ |00\dots0\rangle $ ) dengan fidelitas tinggi.
 3. **Waktu koherensi yang cukup panjang** : Waktu dekoherensi keadaan kuantum ($T_1$ dan $T_2$) yang jauh lebih panjang beberapa orde besaran dibandingkan waktu yang dibutuhkan untuk satu operasi gerbang.
 4. **Implementasi set gerbang kuantum universal** : Kemampuan untuk mengaproksimasi transformasi uniter sembarang $ \hat{U} \in SU(2^n) $ dengan presisi sembarang menggunakan kombinasi sejumlah berhingga gerbang basis (misalnya gerbang H, T, CNOT).
@@ -2670,19 +2670,19 @@ Operasi ini menghasilkan keadaan terbelit sempurna dan memiliki daya komputasi y
  **Tantangan dan Keterbatasan** 
 Waktu operasi gerbang berada pada kisaran puluhan mikrodetik, beberapa orde besaran lebih lambat dibandingkan pendekatan superkonduktor. Selain itu, jika puluhan ion atau lebih ditempatkan dalam satu perangkap satu dimensi, spektrum mode vibrasi menjadi terlalu padat sehingga crosstalk tidak dapat dihindari. Teknologi penskalaan seperti arsitektur QCCD (Quantum Charge-Coupled Device) untuk mengatasi kendala ini merupakan fokus penelitian utama saat ini.
 
-## 11.3 Qubit Topologis: Anyon Non-Abelian dan Ketahanan Mutlak
+## 11.3 Qubit Topologis: Anyon Non-[Abel](https://kenji.blog/id/p/abel/)ian dan Ketahanan Mutlak
 
 Baik superkonduktor maupun perangkap ion rentan terhadap galat yang dipicu oleh derau lokal dari lingkungan, sehingga koreksi galat kuantum yang akan dibahas nanti menjadi hal yang tak terelakkan. Namun, terdapat pendekatan yang sangat ambisius untuk membangun keadaan kuantum yang secara fundamental terlindungi dari derau pada tingkat fisik. Pendekatan tersebut adalah komputer kuantum topologis.
 
 ### 11.3.1 Rantai Kitaev dan Mode Nol Majorana
 
-Di dalam ruang tiga dimensi tempat kita hidup, partikel elementer hanya ada dalam dua jenis: boson dan fermion. Namun, dalam sistem material topologis dua dimensi, dapat eksis "anyon (Anyon)", yaitu partikel yang fungsi gelombangnya memperoleh fase sembarang saat dilakukan operasi pertukaran partikel. Terlebih lagi, pada kasus "anyon non-Abelian (Non-Abelian anyon)" yang sangat eksotis, ketika dua partikel dipertukarkan, sistem akan mengalami rotasi uniter dari suatu keadaan terdegenerasi berenergi sama ke keadaan ortogonal lainnya:
+Di dalam ruang tiga dimensi tempat kita hidup, partikel elementer hanya ada dalam dua jenis: boson dan fermion. Namun, dalam sistem material topologis dua dimensi, dapat eksis "anyon (Anyon)", yaitu partikel yang fungsi gelombangnya memperoleh fase sembarang saat dilakukan operasi pertukaran partikel. Terlebih lagi, pada kasus "anyon non-[Abel](https://kenji.blog/id/p/abel/)ian (Non-[Abel](https://kenji.blog/id/p/abel/)ian anyon)" yang sangat eksotis, ketika dua partikel dipertukarkan, sistem akan mengalami rotasi uniter dari suatu keadaan terdegenerasi berenergi sama ke keadaan ortogonal lainnya:
 
 $$
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
 $$
 
-Kandidat fisik paling menjanjikan untuk anyon non-Abelian ini adalah "mode nol Majorana (Majorana Zero Modes, MZM)" sebagai kuasipartikel dalam fisika benda terkondensasi. Nanokawat semikonduktor satu dimensi (seperti InSb) dengan interaksi spin-orbit yang kuat dikopel secara proksimitas dengan superkonduktor gelombang-s, dan medan magnet luar diterapkan padanya. Berdasarkan model yang diajukan oleh Alexei Kitaev, pada wilayah parameter tertentu, nanokawat akan mengalami transisi fase menjadi fase superkonduktor topologis, dan partikel Majorana berenergi nol akan terlokalisasi pada kedua ujung kawat sebagai keadaan tepi (edge state).
+Kandidat fisik paling menjanjikan untuk anyon non-[Abel](https://kenji.blog/id/p/abel/)ian ini adalah "mode nol Majorana (Majorana Zero Modes, MZM)" sebagai kuasipartikel dalam fisika benda terkondensasi. Nanokawat semikonduktor satu dimensi (seperti InSb) dengan interaksi spin-orbit yang kuat dikopel secara proksimitas dengan superkonduktor gelombang-s, dan medan magnet luar diterapkan padanya. Berdasarkan model yang diajukan oleh Alexei Kitaev, pada wilayah parameter tertentu, nanokawat akan mengalami transisi fase menjadi fase superkonduktor topologis, dan partikel Majorana berenergi nol akan terlokalisasi pada kedua ujung kawat sebagai keadaan tepi (edge state).
 
 Operator Majorana $ \hat{\gamma}_1, \hat{\gamma}_2 $ bersifat swa-damping ( $ \hat{\gamma}_j = \hat{\gamma}_j^\dagger $ ) serta memenuhi relasi antikomutasi $ \{ \hat{\gamma}_i, \hat{\gamma}_j \} = 2\delta_{ij} $ . Operator kreasi dan anihilasi fermion Dirac biasa dapat dikonstruksi secara nonlokal spasial menggunakan kedua operator Majorana ini:
 
@@ -2767,7 +2767,7 @@ $$
 
 Dalam sirkuit kuantum acak yang cukup dalam ($d$ bernilai besar), setiap amplitudo $ \alpha_x $ menunjukkan perilaku seperti jalan acak (random walk) pada bidang kompleks, dan diketahui bahwa distribusi probabilitasnya $ P_{\text{ideal}}(x) $ mengikuti distribusi Porter-Thomas (Porter-Thomas distribution). Dengan kata lain, fungsi kepekatan probabilitas untuk kemunculan probabilitas $p$ adalah $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $. Ini berarti bahwa string bit tertentu membentuk "pola bintik (speckle pattern)" yang lebih mudah diamati daripada string bit lainnya.
 
-Untuk melakukan pengambilan sampel secara eksak dari distribusi ini menggunakan komputer klasik, amplitudo $ \alpha_x $ harus dihitung secara langsung melalui kalkulasi kontraksi jaringan tensor yang sangat besar. Dimensi vektor keadaan adalah $ 2^n $, dan untuk kasus $ n = 53 $, sekitar $ 9 \times 10^{15} $ amplitudo bilangan kompleks (memori kelas petabita) harus dilacak, yang berhadapan dengan dinding komputasi yang memerlukan waktu luar biasa lama bahkan jika menggunakan superkomputer tercepat di dunia saat itu. Di sisi lain, komputer kuantum secara inheren mempertahankan keadaan sistem fisik itu sendiri **$|\psi_f\rangle$** sebagai vektor alami pada ruang Hilbert, dan melakukan pengambilan sampel sesuai pola bintik secara instan (dalam puluhan mikrodetik) dengan satu kali pengukuran.
+Untuk melakukan pengambilan sampel secara eksak dari distribusi ini menggunakan komputer klasik, amplitudo $ \alpha_x $ harus dihitung secara langsung melalui kalkulasi kontraksi jaringan tensor yang sangat besar. Dimensi vektor keadaan adalah $ 2^n $, dan untuk kasus $ n = 53 $, sekitar $ 9 \times 10^{15} $ amplitudo bilangan kompleks (memori kelas petabita) harus dilacak, yang berhadapan dengan dinding komputasi yang memerlukan waktu luar biasa lama bahkan jika menggunakan superkomputer tercepat di dunia saat itu. Di sisi lain, komputer kuantum secara inheren mempertahankan keadaan sistem fisik itu sendiri **$|\psi_f\rangle$** sebagai vektor alami pada ruang [Hilbert](https://kenji.blog/id/p/hilbert/), dan melakukan pengambilan sampel sesuai pola bintik secara instan (dalam puluhan mikrodetik) dengan satu kali pengukuran.
 
 Untuk mengevaluasi keberhasilan eksperimen tersebut, tolok ukur entropi silang linear (Linear Cross-Entropy Benchmarking, XEB) diperkenalkan. Fidelitas (Fidelity) $ \mathcal{F}_{\text{XEB}} $ didefinisikan sebagai berikut:
 
@@ -2823,7 +2823,7 @@ Meskipun keunggulan kuantum telah dibuktikan, perangkat berskala puluhan hingga 
 
 Satu-satunya jalur teoretis untuk menembus batas fisik ini dan memungkinkan pelaksanaan algoritma kuantum skala besar yang praktis hingga ratusan juta langkah adalah realisasi **Komputasi Kuantum Toleran Kesalahan (Fault-Tolerant Quantum Computation, FTQC)** menggunakan **Koreksi Kesalahan Kuantum (Quantum Error Correction, QEC)** . Koreksi kesalahan pada komputer klasik (seperti kode suara mayoritas melalui replikasi bit) tidak dapat diterapkan pada keadaan kuantum karena "Teorema Tanpa Kloning (No-Cloning Theorem)" yang merupakan fondasi mekanika kuantum. Secara matematis, tidak ada transformasi uniter yang dapat menyalin keadaan kuantum yang tidak diketahui **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** secara sempurna menjadi **$|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$** .
 
-Namun, fisika teoretis menemukan solusi yang elegan untuk mengatasi keputusasaan ini. Informasi kuantum dapat dilindungi bukan dengan menyalin keadaan secara individual, melainkan dengan "menyembunyikan satu informasi logis yang disebarkan ke dalam topologi 'ruang keterikatan (entanglement)' dari ruang Hilbert raksasa yang dibentuk oleh banyak qubit fisik". Saat ini, "Kode Permukaan (Surface Code)", yang dipandang paling menjanjikan dari perspektif implementasi perangkat keras, didasarkan pada Formalisme Penstabil (Stabilizer Formalism) pada kisi 2 dimensi.
+Namun, fisika teoretis menemukan solusi yang elegan untuk mengatasi keputusasaan ini. Informasi kuantum dapat dilindungi bukan dengan menyalin keadaan secara individual, melainkan dengan "menyembunyikan satu informasi logis yang disebarkan ke dalam topologi 'ruang keterikatan (entanglement)' dari ruang [Hilbert](https://kenji.blog/id/p/hilbert/) raksasa yang dibentuk oleh banyak qubit fisik". Saat ini, "Kode Permukaan (Surface Code)", yang dipandang paling menjanjikan dari perspektif implementasi perangkat keras, didasarkan pada Formalisme Penstabil (Stabilizer Formalism) pada kisi 2 dimensi.
 
 Dalam kode permukaan, "qubit data" yang menyimpan informasi kuantum ditempatkan pada sisi (edge) kisi 2 dimensi, dan "qubit untuk pengukuran sindrom (qubit ancilla)" yang digunakan untuk mendeteksi kesalahan ditempatkan pada plakat (face) dan titik sudut (vertex) kisi. Kemudian, kelompok operator penstabil yang terdiri dari produk tensor operator Pauli didefinisikan sebagai berikut:
 
@@ -2851,7 +2851,7 @@ Ditinjau dari tahapan puluhan hingga ratusan qubit fisik saat ini, ini adalah ta
 
 Dimulai dari pengenalan superposisi **$|0\rangle$** dan **$|1\rangle$** dengan notasi bra-ket di Bab 1, evolusi waktu menggunakan matriks uniter, formulasi matematis sistem banyak-partikel melalui produk tensor, runtuhnya realisme lokal Einstein akibat ketidaksetaraan Bell, hingga keindahan struktur matematis dari algoritma kuantum Shor dan Grover, kita telah menelusuri puncak pengetahuan "Ilmu Informasi Kuantum" secara sangat ketat melalui keseluruhan 12 bab dalam seri ini.
 
-Jika komputer klasik didasarkan pada "nilai kebenaran deterministik (aljabar Boolean)", maka komputer kuantum didasarkan pada "rotasi uniter dan produk tensor dalam ruang Hilbert kompleks (aljabar linear)". Pergeseran paradigma fundamental ini melampaui sekadar aspek industri atau praktis mengenai "peningkatan kecepatan komputasi", serta menghadapkan kita pada pertanyaan filosofis mendalam di mana teori informasi dan fisika fundamental menyatu seutuhnya: "Apakah kapasitas pemrosesan informasi pamungkas di alam semesta ini?" dan "Bagaimana komputabilitas serta kompleksitas bergantung pada struktur hukum fisika di alam semesta tempat kita hidup?".
+Jika komputer klasik didasarkan pada "nilai kebenaran deterministik (aljabar Boolean)", maka komputer kuantum didasarkan pada "rotasi uniter dan produk tensor dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) kompleks (aljabar linear)". Pergeseran paradigma fundamental ini melampaui sekadar aspek industri atau praktis mengenai "peningkatan kecepatan komputasi", serta menghadapkan kita pada pertanyaan filosofis mendalam di mana teori informasi dan fisika fundamental menyatu seutuhnya: "Apakah kapasitas pemrosesan informasi pamungkas di alam semesta ini?" dan "Bagaimana komputabilitas serta kompleksitas bergantung pada struktur hukum fisika di alam semesta tempat kita hidup?".
 
 Keterikatan kuantum (entanglement), yang dahulu dicemooh oleh Einstein sebagai "aksi seram pada jarak jauh (spooky action at a distance)", kini telah mapan sebagai "sumber daya (resource)" yang paling mendasar dan sangat diperlukan untuk menggerakkan teleportasi kuantum, kriptografi kuantum, dan komputer kuantum. Intuisi fisikawan jenius Richard Feynman pada tahun 1982: "Jika Anda ingin membuat simulasi tentang alam, sebaiknya Anda menjadikannya mekanika kuantum, dan astaga ini adalah masalah yang luar biasa, karena tampaknya sama sekali tidak mudah," kini setelah beberapa dekade telah tiba pada tahap di mana ia akhirnya beroperasi di atas prosesor nyata berkat perjuangan tanpa henti dari para fisikawan, matematikawan, ilmuwan komputer, serta para insinyur perangkat keras terkemuka di seluruh dunia.
 

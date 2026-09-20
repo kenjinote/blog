@@ -15,7 +15,7 @@ tags:
 
 ## 1. Introduction: What are the Millennium Prize Problems?
 
-In 2000, the Clay Mathematics Institute offered a $1 million prize for each of seven immensely important unsolved problems in mathematics. These are called the **Millennium Prize Problems**. They include famous problems such as the "Riemann Hypothesis" and the "P versus NP Problem", but there is one problem deeply connected to physics. That is the **"Yang-Mills and Mass Gap"** problem.
+In 2000, the Clay Mathematics Institute offered a $1 million prize for each of seven immensely important unsolved problems in mathematics. These are called the **Millennium Prize Problems**. They include famous problems such as the "[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis" and the "P versus NP Problem", but there is one problem deeply connected to physics. That is the **"Yang-Mills and Mass Gap"** problem.
 
 The purpose of this problem is to establish the mathematical foundation of the "Standard Model" of particle physics, which describes the fundamental forces of nature. The behavior of the matter and forces that make up our world has been confirmed experimentally with extremely high precision, but rigorously proving it mathematically remains one of the greatest challenges in modern mathematics.
 
@@ -25,17 +25,17 @@ In this article, we will delve into what Yang-Mills theory is and what the mass 
 
 To understand Yang-Mills theory, one must first know about **Gauge Theory**. In physics, gauge theory is a theory that has the property of the equations remaining unchanged (invariant) under certain transformations (gauge transformations).
 
-### Electromagnetism and Abelian Gauge Theory
+### Electromagnetism and [Abel](https://kenji.blog/en/p/abel/)ian Gauge Theory
 
 The most familiar gauge theory is electromagnetism. Maxwell's equations, formulated by James Clerk Maxwell, describe the behavior of electric and magnetic fields. Quantum Electrodynamics (QED), which handles this in the framework of quantum mechanics, is called a **U(1) gauge theory**.
 
-Here, a quantity called phase plays an important role. Even if the phase of the electron's wave function is changed independently at each point in space (local gauge transformation), the physically observable quantities do not change. To maintain this invariance, a **gauge field** is introduced, and the gauge field in electromagnetism corresponds to the photon. Because the U(1) group is an Abelian group (the result is the same even if the order of operations is swapped), QED is called an Abelian gauge theory.
+Here, a quantity called phase plays an important role. Even if the phase of the electron's wave function is changed independently at each point in space (local gauge transformation), the physically observable quantities do not change. To maintain this invariance, a **gauge field** is introduced, and the gauge field in electromagnetism corresponds to the photon. Because the U(1) group is an [Abel](https://kenji.blog/en/p/abel/)ian group (the result is the same even if the order of operations is swapped), QED is called an [Abel](https://kenji.blog/en/p/abel/)ian gauge theory.
 
-### Non-Abelian Gauge Theory: The Birth of Yang-Mills Theory
+### Non-[Abel](https://kenji.blog/en/p/abel/)ian Gauge Theory: The Birth of Yang-Mills Theory
 
-In 1954, Chen-Ning Yang and Robert Mills extended QED, which is based on an Abelian group, and proposed a gauge theory based on a non-Abelian group (a group where swapping the order of operations changes the result). This is **Yang-Mills Theory**.
+In 1954, Chen-Ning Yang and Robert Mills extended QED, which is based on an [Abel](https://kenji.blog/en/p/abel/)ian group, and proposed a gauge theory based on a non-[Abel](https://kenji.blog/en/p/abel/)ian group (a group where swapping the order of operations changes the result). This is **Yang-Mills Theory**.
 
-Initially, they constructed a theory based on SU(2) isospin symmetry to explain the "strong force" that binds protons and neutrons together. Later, this theory developed into the fundamental theory of the Standard Model of particle physics. The current Standard Model is based on non-Abelian gauge theories: Quantum Chromodynamics (QCD), which describes the strong force, is SU(3), and the Electroweak theory, which unifies the weak force and electromagnetic force, is SU(2) × U(1).
+Initially, they constructed a theory based on SU(2) isospin symmetry to explain the "strong force" that binds protons and neutrons together. Later, this theory developed into the fundamental theory of the Standard Model of particle physics. The current Standard Model is based on non-[Abel](https://kenji.blog/en/p/abel/)ian gauge theories: Quantum Chromodynamics (QCD), which describes the strong force, is SU(3), and the Electroweak theory, which unifies the weak force and electromagnetic force, is SU(2) × U(1).
 
 The Lagrangian density of Yang-Mills theory is written as follows:
 
@@ -45,7 +45,7 @@ Here, $ F_{\mu\nu}^a $ is the field strength (curvature tensor), which is define
 
 $$ F_{\mu\nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a + g f^{abc} A_\mu^b A_\nu^c $$
 
-$ g $ is the coupling constant, and $ f^{abc} $ are the structure constants of the Lie algebra. Because it is a non-Abelian theory, the last nonlinear term appears, which gives rise to the unique property that **the gauge fields themselves interact**.
+$ g $ is the coupling constant, and $ f^{abc} $ are the structure constants of the Lie algebra. Because it is a non-[Abel](https://kenji.blog/en/p/abel/)ian theory, the last nonlinear term appears, which gives rise to the unique property that **the gauge fields themselves interact**.
 
 ```mermaid
 graph TD
@@ -88,11 +88,11 @@ graph LR
 
 Physicists have drawn many physical predictions from Yang-Mills theory using Feynman diagrams and renormalization group techniques. However, these are based on perturbation theory (an approximation technique assuming weak interactions) and lack mathematical rigor. In particular, perturbation theory breaks down in the low-energy region (where the coupling constant becomes large), so the mass gap and confinement cannot be proven this way.
 
-The field that constructs mathematically rigorous quantum field theories is called **Constructive Quantum Field Theory**. So far, rigorous construction has been achieved for some models in 2D or 3D spacetime, but no one has succeeded in the rigorous construction of a non-Abelian gauge theory (Yang-Mills theory) in our realistic 4-dimensional spacetime.
+The field that constructs mathematically rigorous quantum field theories is called **Constructive Quantum Field Theory**. So far, rigorous construction has been achieved for some models in 2D or 3D spacetime, but no one has succeeded in the rigorous construction of a non-[Abel](https://kenji.blog/en/p/abel/)ian gauge theory (Yang-Mills theory) in our realistic 4-dimensional spacetime.
 
 ### Wightman Axioms
 
-As frameworks for treating quantum fields with mathematical rigor, the **Wightman axioms** and the **Osterwalder-Schrader axioms** are well-known. These establish properties that quantum fields must satisfy (such as Poincaré covariance, local commutativity, spectral condition, etc.) as axioms.
+As frameworks for treating quantum fields with mathematical rigor, the **Wightman axioms** and the **Osterwalder-Schrader axioms** are well-known. These establish properties that quantum fields must satisfy (such as [Poincaré](https://kenji.blog/en/p/poincare/) covariance, local commutativity, spectral condition, etc.) as axioms.
 
 To solve the Millennium Prize Problem, one must first show that Yang-Mills theory exists as a rigorous mathematical object satisfying these axioms, and then prove that there is a gap at the lower bound of the spectrum (energy eigenvalues), which is the mass gap.
 

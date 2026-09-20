@@ -15,7 +15,7 @@ tags:
 
 ## 1. Introducción: ¿Qué son los Problemas del Milenio?
 
-En el año 2000, el Instituto de Matemáticas Clay ofreció un premio de un millón de dólares por cada uno de los siete problemas no resueltos más importantes de las matemáticas. Estos se conocen como los **Problemas del Milenio**. Entre ellos se incluyen la famosa "Hipótesis de Riemann" y el "Problema P vs NP", pero hay un problema que está profundamente relacionado con la física. Se trata de las **"[Ecuaciones de Yang-Mills y el problema del salto de masa](https://kenji.blog/es/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
+En el año 2000, el Instituto de Matemáticas Clay ofreció un premio de un millón de dólares por cada uno de los siete problemas no resueltos más importantes de las matemáticas. Estos se conocen como los **Problemas del Milenio**. Entre ellos se incluyen la famosa "Hipótesis de [Riemann](https://kenji.blog/es/p/riemann/)" y el "Problema P vs NP", pero hay un problema que está profundamente relacionado con la física. Se trata de las **"[Ecuaciones de Yang-Mills y el problema del salto de masa](https://kenji.blog/es/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
 
 Este problema tiene como objetivo establecer una base matemática sólida para el "Modelo Estándar" de la física de partículas, que describe las fuerzas fundamentales de la naturaleza. Aunque el comportamiento de la materia y las fuerzas que componen nuestro mundo ha sido confirmado experimentalmente con una precisión extremadamente alta, demostrarlo matemáticamente con rigor sigue siendo uno de los mayores desafíos de las matemáticas modernas.
 
@@ -25,13 +25,13 @@ En este artículo, profundizaremos en qué es la teoría de Yang-Mills y qué si
 
 Para entender la teoría de Yang-Mills, primero debemos conocer la **Teoría Gauge** (Gauge Theory). En física, una teoría de gauge es aquella que tiene la propiedad de que las ecuaciones no cambian de forma (son invariantes) ante ciertas transformaciones (transformaciones de gauge).
 
-### Electromagnetismo y Teoría Gauge Abeliana
+### Electromagnetismo y Teoría Gauge [Abel](https://kenji.blog/es/p/abel/)iana
 
 La teoría de gauge más familiar es el electromagnetismo. Las ecuaciones de Maxwell, formuladas por James Clerk Maxwell, describen el comportamiento de los campos eléctrico y magnético. La electrodinámica cuántica (QED), que trata esto en el marco de la mecánica cuántica, se llama **Teoría Gauge U(1)**.
 
 Aquí, una cantidad llamada fase juega un papel importante. Incluso si la fase de la función de onda del electrón se cambia de forma independiente en cada punto del espacio (transformación de gauge local), las cantidades observables físicas no cambian. Para preservar esta invariancia, se introduce el **campo gauge**, y el campo gauge en el electromagnetismo corresponde al fotón. Dado que el grupo U(1) es un grupo abeliano o conmutativo (el orden de las operaciones no altera el resultado), la QED se denomina teoría gauge abeliana.
 
-### Teoría Gauge No Abeliana: El nacimiento de la Teoría de Yang-Mills
+### Teoría Gauge No [Abel](https://kenji.blog/es/p/abel/)iana: El nacimiento de la Teoría de Yang-Mills
 
 En 1954, Chen Ning Yang y Robert Mills extendieron la QED basada en grupos abelianos y propusieron una teoría gauge basada en grupos no abelianos (grupos donde el orden de las operaciones cambia el resultado). Esta es la **Teoría de Yang-Mills**.
 
@@ -92,7 +92,7 @@ El campo que construye una teoría cuántica de campos matemáticamente rigurosa
 
 ### Sistemas axiomáticos de Wightman
 
-Como marco para tratar matemáticamente los campos cuánticos de forma rigurosa, se conocen los **axiomas de Wightman** (Wightman axioms) y los **axiomas de Osterwalder-Schrader** (Osterwalder-Schrader axioms). Estos definen como axiomas las propiedades que deben satisfacer los campos cuánticos (covarianza de Poincaré, conmutatividad local, condiciones espectrales, etc.).
+Como marco para tratar matemáticamente los campos cuánticos de forma rigurosa, se conocen los **axiomas de Wightman** (Wightman axioms) y los **axiomas de Osterwalder-Schrader** (Osterwalder-Schrader axioms). Estos definen como axiomas las propiedades que deben satisfacer los campos cuánticos (covarianza de [Poincaré](https://kenji.blog/es/p/poincare/), conmutatividad local, condiciones espectrales, etc.).
 
 Para resolver este Problema del Milenio, primero es necesario demostrar que la teoría de Yang-Mills existe como un objeto matemático riguroso que satisface estos axiomas, y luego demostrar que existe un salto en el límite inferior del espectro (valores propios de energía), es decir, un salto de masa.
 

@@ -88,7 +88,7 @@ Où $\circ$ représente le produit de Hadamard (produit élément par élément)
 
 ### 2. Conversion en QAP (Quadratic Arithmetic Program)
 
-Puisqu'il existe un nombre infini de contraintes matricielles R1CS, il serait très inefficace de les vérifier individuellement. Par conséquent, à l'aide de l'interpolation de Lagrange, ces contraintes sont compressées en une seule équation polynomiale. C'est ce qu'on appelle le **QAP (Quadratic Arithmetic Program)**.
+Puisqu'il existe un nombre infini de contraintes matricielles R1CS, il serait très inefficace de les vérifier individuellement. Par conséquent, à l'aide de l'interpolation de [Lagrange](https://kenji.blog/fr/p/lagrange/), ces contraintes sont compressées en une seule équation polynomiale. C'est ce qu'on appelle le **QAP (Quadratic Arithmetic Program)**.
 
 Par la conversion en QAP, le problème à prouver se réduit à la question : « Un polynôme spécifique $P(x)$ est-il divisible par un autre polynôme connu $Z(x)$ ? ».
 

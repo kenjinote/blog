@@ -54,7 +54,7 @@ Here, H^{p,q}(X) represents the class of differential forms consisting of the we
 
 Formal linear combinations of lower-dimensional algebraic varieties (subvarieties) within the manifold X are called **Algebraic Cycles**.
 
-An algebraic cycle of dimension k determines an element of the 2k-th cohomology group of X by Poincaré Duality. Importantly, the cohomology class determined by an algebraic subvariety only appears in specific components in the Hodge decomposition. Specifically, a cohomology class determined by an algebraic subvariety of codimension p (the dimension of the whole minus the dimension of the subvariety) belongs to the component H^{p,p}(X).
+An algebraic cycle of dimension k determines an element of the 2k-th cohomology group of X by [Poincaré](https://kenji.blog/en/p/poincare/) Duality. Importantly, the cohomology class determined by an algebraic subvariety only appears in specific components in the Hodge decomposition. Specifically, a cohomology class determined by an algebraic subvariety of codimension p (the dimension of the whole minus the dimension of the subvariety) belongs to the component H^{p,p}(X).
 
 Furthermore, since algebraic cycles are defined by equations, their coefficients can be considered as rational numbers (or integers). Therefore, the cohomology class determined by an algebraic cycle also belongs to the cohomology group with rational coefficients H^{2p}(X, \mathbb{Q}).
 
@@ -94,7 +94,7 @@ The [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) was proposed b
 
 The [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) has been proven true for some special cases.
 - **The case of p=1 (Lefschetz's Theorem)**: For algebraic cycles of codimension 1 (called divisors), it was already proven by Solomon Lefschetz in the 1920s, before Hodge's formulation. This is called the **Lefschetz (1,1)-theorem**, and it can be said to be the origin of the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/).
-- **Results for specific varieties**: For example, it has been confirmed that the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) holds for specific classes of varieties, such as some Abelian varieties and K3 surfaces.
+- **Results for specific varieties**: For example, it has been confirmed that the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) holds for specific classes of varieties, such as some [Abel](https://kenji.blog/en/p/abel/)ian varieties and K3 surfaces.
 
 ### 4.2 Why is it difficult?
 
@@ -123,7 +123,7 @@ It may be difficult to grasp the reality of the [Hodge Conjecture](https://kenji
 
 ### 7.1 Tori and Elliptic Curves
 
-One of the simplest and easiest-to-understand examples is a 1-dimensional complex manifold, namely a **Riemann Surface**. Among them, a torus (doughnut shape) with genus (number of holes) 1 is known algebraically as an **Elliptic Curve**.
+One of the simplest and easiest-to-understand examples is a 1-dimensional complex manifold, namely a **[Riemann](https://kenji.blog/en/p/riemann/) Surface**. Among them, a torus (doughnut shape) with genus (number of holes) 1 is known algebraically as an **Elliptic Curve**.
 
 In the case of an elliptic curve E, the complex dimension is 1 (real dimension is 2). Considering cohomology groups, the interesting one is the middle-dimensional 1st cohomology group H^1(E, \mathbb{C}), but the subject of the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) is cohomology groups with an even overall dimension. Therefore, in the elliptic curve itself (complex dimension 1), no non-trivial statement of the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) appears.
 
@@ -151,7 +151,7 @@ The Standard Conjectures include intersection theory of algebraic cycles and the
 
 ### 8.2 Milnor Conjecture and Algebraic K-Theory
 
-With a slightly different flavor, the Milnor Conjecture solved by Vladimir Voevodsky, and the Bloch-Kato Conjecture which generalized it, connect algebraic K-theory and Galois cohomology.
+With a slightly different flavor, the Milnor Conjecture solved by Vladimir Voevodsky, and the Bloch-Kato Conjecture which generalized it, connect algebraic K-theory and [Galois](https://kenji.blog/en/p/galois/) cohomology.
 
 Voevodsky's work constructed a new framework called "Motivic Cohomology" and further solidified the connection between algebraic geometry and topology. This motivic perspective positions the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) within a more general theory of algebraic cycles, and has become an indispensable approach in modern [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) research.
 

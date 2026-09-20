@@ -23,11 +23,11 @@ Neste artigo, explicaremos detalhadamente a teoria do caos e o efeito borboleta,
 
 ---
 
-## 2. Contexto Histórico: De Poincaré a Lorenz
+## 2. Contexto Histórico: De [Poincaré](https://kenji.blog/pt/p/poincare/) a Lorenz
 
 As sementes da teoria do caos podem ser rastreadas até a pesquisa do grande matemático francês do século XIX, [Henri Poincaré](https://kenji.blog/pt/p/poincare/). Na época, um dos maiores desafios da física era o "problema dos três corpos". Este era o problema de prever o movimento de três corpos celestes, como o Sol, a Terra e a Lua, exercendo forças gravitacionais uns sobre os outros com base na mecânica newtoniana.
 
-Ao estudar este problema profundamente, Poincaré descobriu que o movimento dos corpos celestes poderia se tornar extremamente complexo. Ele sugeriu matematicamente que erros imensuravelmente pequenos nas posições ou velocidades iniciais poderiam se expandir ao longo do tempo, levando a trajetórias completamente diferentes dos corpos celestes. Esta foi virtualmente a primeira descoberta do comportamento caótico, mostrando que mesmo em um sistema determinístico (um sistema onde as leis são completamente conhecidas), a previsão a longo prazo poderia às vezes se tornar impossível. No entanto, devido às limitações dos métodos matemáticos e poder computacional (a ausência de computadores) na época, esta descoberta inovadora não foi explorada profundamente por décadas.
+Ao estudar este problema profundamente, [Poincaré](https://kenji.blog/pt/p/poincare/) descobriu que o movimento dos corpos celestes poderia se tornar extremamente complexo. Ele sugeriu matematicamente que erros imensuravelmente pequenos nas posições ou velocidades iniciais poderiam se expandir ao longo do tempo, levando a trajetórias completamente diferentes dos corpos celestes. Esta foi virtualmente a primeira descoberta do comportamento caótico, mostrando que mesmo em um sistema determinístico (um sistema onde as leis são completamente conhecidas), a previsão a longo prazo poderia às vezes se tornar impossível. No entanto, devido às limitações dos métodos matemáticos e poder computacional (a ausência de computadores) na época, esta descoberta inovadora não foi explorada profundamente por décadas.
 
 A situação mudou drasticamente na década de 1960. Edward Lorenz, um meteorologista do Instituto de Tecnologia de Massachusetts (MIT), estava simulando a convecção atmosférica usando um dos primeiros computadores. Ele criou um conjunto de equações diferenciais não lineares simples para calcular variáveis como temperatura, pressão e velocidade do vento, e computou os valores usando um computador.
 
@@ -192,7 +192,7 @@ Esta mudança de paradigma apresenta uma nova visão do mundo: "O nosso mundo é
 
 Neste artigo, exploramos profundamente o efeito borboleta — onde diferenças minúsculas nas condições iniciais produzem resultados massivos — e a teoria do caos que o engloba.
 
-A partir da intuição de Poincaré, passando pela descoberta acidental de Lorenz pelo computador, a teoria do caos transformou-se num vasto campo que atravessa a matemática e a física. Os seus fundamentos matemáticos são altamente refinados e cheios de maravilha intelectual, como pode ser visto nas belas trajetórias de atratores estranhos desenhados por equações não lineares, na infinita auto-similaridade observada no mapa logístico e na quantificação da imprevisibilidade pelos expoentes de Lyapunov.
+A partir da intuição de [Poincaré](https://kenji.blog/pt/p/poincare/), passando pela descoberta acidental de Lorenz pelo computador, a teoria do caos transformou-se num vasto campo que atravessa a matemática e a física. Os seus fundamentos matemáticos são altamente refinados e cheios de maravilha intelectual, como pode ser visto nas belas trajetórias de atratores estranhos desenhados por equações não lineares, na infinita auto-similaridade observada no mapa logístico e na quantificação da imprevisibilidade pelos expoentes de Lyapunov.
 
 A teoria do caos não apenas nos ensina os limites da previsão do tempo, mas também fornece uma lente poderosa para a compreensão dos fenômenos complexos que nos rodeiam, desde as flutuações econômicas e os batimentos cardíacos até à evolução da vida. Ela revela que o mundo natural não é uma simples máquina mecânica, mas um sistema dinâmico cheio de imprevisibilidade e criatividade.
 

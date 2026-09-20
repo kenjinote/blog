@@ -146,12 +146,12 @@ plt.show()
 
 En exécutant ce code, la moyenne fluctue grandement lors des premiers lancers, mais à mesure que le nombre d'essais augmente, on obtient un graphique qui suit parfaitement la ligne pointillée rouge (valeur espérée 3,5). Il s'agit d'une preuve visuelle de la loi des grands nombres.
 
-## 7. Les cas où la loi des grands nombres ne s'applique pas : la distribution de Cauchy
+## 7. Les cas où la loi des grands nombres ne s'applique pas : la distribution de [Cauchy](https://kenji.blog/fr/p/cauchy/)
 
 [La loi des grands nombres](https://kenji.blog/fr/p/law-of-large-numbers/) n'est pas universelle. L'une de ses conditions préalables est que "la valeur espérée (moyenne) doit être finie".
-Par exemple, la loi de probabilité connue sous le nom de **loi de Cauchy** possède des queues très épaisses (les valeurs extrêmes se produisent facilement) et sa valeur espérée et sa variance ne peuvent pas être définies (elles divergent vers l'infini).
+Par exemple, la loi de probabilité connue sous le nom de **loi de [Cauchy](https://kenji.blog/fr/p/cauchy/)** possède des queues très épaisses (les valeurs extrêmes se produisent facilement) et sa valeur espérée et sa variance ne peuvent pas être définies (elles divergent vers l'infini).
 
-Même si vous générez des nombres aléatoires suivant une loi de Cauchy et que vous en faites la moyenne, la valeur ne convergera jamais vers un nombre spécifique et continuera de fluctuer sauvagement. Dans le monde réel également, il est important de comprendre qu'il existe des situations (comme les marchés financiers où se produisent des événements imprévisibles et extrêmes appelés "cygnes noirs") où la simple loi des grands nombres ne s'applique pas (ou est dangereuse à appliquer).
+Même si vous générez des nombres aléatoires suivant une loi de [Cauchy](https://kenji.blog/fr/p/cauchy/) et que vous en faites la moyenne, la valeur ne convergera jamais vers un nombre spécifique et continuera de fluctuer sauvagement. Dans le monde réel également, il est important de comprendre qu'il existe des situations (comme les marchés financiers où se produisent des événements imprévisibles et extrêmes appelés "cygnes noirs") où la simple loi des grands nombres ne s'applique pas (ou est dangereuse à appliquer).
 
 ## 8. Exemples d'applications dans le monde réel
 

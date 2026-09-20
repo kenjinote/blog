@@ -52,7 +52,7 @@ bool is_prime_trial_division(long long n) {
 
 # 2. اختبار فيرما: بداية اختبارات الأولية الاحتمالية
 
-لتجاوز حدود طريقة القسمة التجريبية، تم ابتكار "الخوارزميات الاحتمالية (Probabilistic Algorithm)" باستخدام نظريات من نظرية الأعداد. والمثال النموذجي لذلك هو "اختبار فيرما للأولية (Fermat Primality Test)" الذي يستخدم [مبرهنة فيرما الصغرى](https://kenji.blog/ar/p/fermats-little-theorem/).
+لتجاوز حدود طريقة القسمة التجريبية، تم ابتكار "الخوارزميات الاحتمالية (Probabilistic Algorithm)" باستخدام نظريات من نظرية الأعداد. والمثال النموذجي لذلك هو "اختبار فيرما للأولية ([Fermat](https://kenji.blog/ar/p/fermat/) Primality Test)" الذي يستخدم [مبرهنة فيرما الصغرى](https://kenji.blog/ar/p/fermats-little-theorem/).
 
 ## [مبرهنة فيرما الصغرى](https://kenji.blog/ar/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/ar/p/fermats-little-theorem/))
 

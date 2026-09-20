@@ -140,7 +140,7 @@ $$
 
 암호 기술(RSA 암호나 Diffie-Hellman 키 교환 등)에서는 수백 자리에 달하는 '거대한 소수'를 고속으로 찾아낼 필요가 있습니다. 하지만 거대한 수 $N$이 소수인지 판별하기 위해 $2$부터 $\sqrt{N}$까지의 모든 수로 나누어 떨어지는지 시험하는 '시도 나눗셈법'으로는 우주의 수명만큼의 시간이 걸려 버립니다.
 
-그래서 등장하는 것이 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 역으로 이용한 '확률적 소수 판별법'인 **페르마 테스트(Fermat Primality Test)** 입니다.
+그래서 등장하는 것이 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 역으로 이용한 '확률적 소수 판별법'인 **페르마 테스트([Fermat](https://kenji.blog/ko/p/fermat/) Primality Test)** 입니다.
 
 ### 5.1 확률적 소수 판별법이란
 

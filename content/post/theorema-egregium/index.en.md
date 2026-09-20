@@ -92,7 +92,7 @@ Beyond just how to eat pizza, this principle can be seen everywhere in engineeri
 - ** Plant leaves **: Many plant leaves and petals have naturally evolved into wavy shapes to withstand wind and their own weight.
 - ** Architecture **: In buildings that cover large spaces with thin materials, such as shell structures, the mechanical strength and geometric properties of curved surfaces are utilized.
 
-This theorem discovered by Gauss was later extended to higher-dimensional manifolds by his student [Bernhard Riemann](https://kenji.blog/en/p/riemann/) (Riemannian geometry), and eventually became the mathematical foundation for describing gravity as the "distortion of spacetime" in Albert Einstein's general theory of relativity.
+This theorem discovered by Gauss was later extended to higher-dimensional manifolds by his student [Bernhard Riemann](https://kenji.blog/en/p/riemann/) ([Riemann](https://kenji.blog/en/p/riemann/)ian geometry), and eventually became the mathematical foundation for describing gravity as the "distortion of spacetime" in Albert Einstein's general theory of relativity.
 
 ## 5. Conclusion
 

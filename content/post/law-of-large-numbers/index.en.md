@@ -146,12 +146,12 @@ plt.show()
 
 When you run this code, the average fluctuates greatly in the first few rolls, but as the number of trials increases, you get a graph that perfectly follows the red dotted line (expected value 3.5). This is a visual proof of the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/).
 
-## 7. Cases Where the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) Doesn't Hold: Cauchy Distribution
+## 7. Cases Where the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) Doesn't Hold: [Cauchy](https://kenji.blog/en/p/cauchy/) Distribution
 
 The [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) is not universal. A prerequisite is that "the expected value (mean) must be finite."
-For example, a probability distribution called the **Cauchy distribution** has very heavy tails (extreme values occur easily), and its expected value and variance cannot be defined (they diverge to infinity).
+For example, a probability distribution called the **[Cauchy](https://kenji.blog/en/p/cauchy/) distribution** has very heavy tails (extreme values occur easily), and its expected value and variance cannot be defined (they diverge to infinity).
 
-Even if you generate random numbers following a Cauchy distribution and take the average, the value will never converge to a specific number and will continue to jump wildly. Even in the real world, it's important to understand that there are cases (such as financial markets where unpredictable and extreme events called "Black Swans" occur) where the simple [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) cannot be applied (or is dangerous to apply).
+Even if you generate random numbers following a [Cauchy](https://kenji.blog/en/p/cauchy/) distribution and take the average, the value will never converge to a specific number and will continue to jump wildly. Even in the real world, it's important to understand that there are cases (such as financial markets where unpredictable and extreme events called "Black Swans" occur) where the simple [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) cannot be applied (or is dangerous to apply).
 
 ## 8. Application Examples in the Real World
 

@@ -46,13 +46,13 @@ L'histoire du théorème des nombres premiers remonte à la fin du 18ème siècl
 
 Cependant, ils ne parvinrent pas à prouver cela de manière rigoureuse.
 
-Une avancée majeure dans la preuve a été apportée par l'article révolutionnaire de [Bernhard Riemann](https://kenji.blog/fr/p/riemann/) de 1859, "Sur le nombre de nombres premiers inférieurs à une taille donnée". Riemann a présenté une approche entièrement nouvelle en utilisant la **fonction zêta** $\zeta(s)$, qui est une fonction complexe, pour transformer le problème de la distribution des nombres premiers en un problème sur le plan complexe.
+Une avancée majeure dans la preuve a été apportée par l'article révolutionnaire de [Bernhard Riemann](https://kenji.blog/fr/p/riemann/) de 1859, "Sur le nombre de nombres premiers inférieurs à une taille donnée". [Riemann](https://kenji.blog/fr/p/riemann/) a présenté une approche entièrement nouvelle en utilisant la **fonction zêta** $\zeta(s)$, qui est une fonction complexe, pour transformer le problème de la distribution des nombres premiers en un problème sur le plan complexe.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ premier}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 
 Cette formule du produit d'Euler (Euler product formula) est une relation extrêmement importante qui relie une fonction sur la somme de tous les entiers naturels (côté gauche) et un produit infini portant uniquement sur les nombres premiers (côté droit).
 
-Par la suite, en 1896, Jacques Hadamard et Charles de La Vallée Poussin ont chacun achevé, de manière indépendante, la preuve du théorème des nombres premiers en se basant sur les idées de Riemann. La clé de leur preuve était de montrer que "la fonction zêta de Riemann $\zeta(s)$ n'a pas de zéros sur la droite $\operatorname{Re}(s) = 1$ du plan complexe".
+Par la suite, en 1896, Jacques Hadamard et Charles de La Vallée Poussin ont chacun achevé, de manière indépendante, la preuve du théorème des nombres premiers en se basant sur les idées de [Riemann](https://kenji.blog/fr/p/riemann/). La clé de leur preuve était de montrer que "la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) $\zeta(s)$ n'a pas de zéros sur la droite $\operatorname{Re}(s) = 1$ du plan complexe".
 
 ## Une approximation plus précise : Le logarithme intégral $\operatorname{Li}(x)$
 
@@ -73,17 +73,17 @@ En fait, lorsque $x = 10^{10}$,
 
 On peut voir à quel point le logarithme intégral donne une excellente approximation.
 
-## La relation profonde avec l'hypothèse de Riemann
+## La relation profonde avec l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)
 
-Le théorème des nombres premiers est indissociablement lié à l'**hypothèse de Riemann** (Riemann Hypothesis), considérée comme le problème non résolu le plus important en mathématiques.
+Le théorème des nombres premiers est indissociablement lié à l'**hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)** ([Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis), considérée comme le problème non résolu le plus important en mathématiques.
 
-L'hypothèse de Riemann affirme que "tous les zéros non triviaux de la fonction zêta de Riemann $\zeta(s)$ se trouvent sur la droite (ligne critique) dont la partie réelle est $1/2$".
+L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) affirme que "tous les zéros non triviaux de la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) $\zeta(s)$ se trouvent sur la droite (ligne critique) dont la partie réelle est $1/2$".
 
-S'il est prouvé que l'hypothèse de Riemann est correcte, nous obtiendrons l'évaluation la plus forte possible concernant le terme d'erreur (la différence entre $\pi(x)$ et $\operatorname{Li}(x)$) dans le théorème des nombres premiers. Plus précisément, on sait qu'il existerait une constante $C$ telle que,
+S'il est prouvé que l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est correcte, nous obtiendrons l'évaluation la plus forte possible concernant le terme d'erreur (la différence entre $\pi(x)$ et $\operatorname{Li}(x)$) dans le théorème des nombres premiers. Plus précisément, on sait qu'il existerait une constante $C$ telle que,
 
 $$ |\pi(x) - \operatorname{Li}(x)| \le C \sqrt{x} \ln(x) $$
 
-Cela signifie que "les nombres premiers sont distribués de manière si régulière qu'ils sont indiscernables d'une distribution complètement aléatoire". En d'autres termes, le théorème des nombres premiers décrit la distribution "moyenne" des nombres premiers, tandis que l'hypothèse de Riemann décrit la limite de leurs "fluctuations (erreurs)".
+Cela signifie que "les nombres premiers sont distribués de manière si régulière qu'ils sont indiscernables d'une distribution complètement aléatoire". En d'autres termes, le théorème des nombres premiers décrit la distribution "moyenne" des nombres premiers, tandis que l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) décrit la limite de leurs "fluctuations (erreurs)".
 
 ## Vérification du théorème des nombres premiers en Python
 
@@ -146,4 +146,4 @@ Par exemple, la probabilité qu'un nombre impair aléatoire de 1024 bits soit pr
 
 Le théorème des nombres premiers est l'un des plus beaux théorèmes incarnant "l'ordre dans le chaos" en mathématiques. Le fait qu'une loi fondamentale de la nature, telle que la fonction logarithmique, se cache dans la distribution apparemment aléatoire des nombres premiers continue de fasciner de nombreux mathématiciens.
 
-Ce domaine, défriché par des génies tels que Gauss, Riemann et Hadamard, reste à la pointe des mathématiques modernes à travers le problème colossal et non résolu de l'hypothèse de Riemann. Le mystère des nombres premiers est profond, et la quête se poursuivra probablement jusqu'au jour où nous en comprendrons l'intégralité.
+Ce domaine, défriché par des génies tels que Gauss, [Riemann](https://kenji.blog/fr/p/riemann/) et Hadamard, reste à la pointe des mathématiques modernes à travers le problème colossal et non résolu de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/). Le mystère des nombres premiers est profond, et la quête se poursuivra probablement jusqu'au jour où nous en comprendrons l'intégralité.

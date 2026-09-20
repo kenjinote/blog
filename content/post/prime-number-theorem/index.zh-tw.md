@@ -75,7 +75,7 @@ $$ \lim_{x \to \infty} \frac{\pi(x)}{\operatorname{Li}(x)} = 1 $$
 
 ## 與黎曼猜想的深厚關係
 
-與質數定理密不可分的是數學中未解決問題裡最重要的 **黎曼猜想** （Riemann Hypothesis）。
+與質數定理密不可分的是數學中未解決問題裡最重要的 **黎曼猜想** （[Riemann](https://kenji.blog/zh-tw/p/riemann/) Hypothesis）。
 
 黎曼猜想主張：「黎曼 zeta 函數 $\zeta(s)$ 的所有非平凡零點都位於實部為 $1/2$ 的直線（臨界線）上」。
 

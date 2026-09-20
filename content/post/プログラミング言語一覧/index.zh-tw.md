@@ -92,8 +92,8 @@ Eiffel 是一種物件導向程式語言。
 ## Ada
 Ada 是一種物件導向程式語言。
 
-## Pascal
-Pascal 是一種程序式程式語言。
+## [Pascal](https://kenji.blog/zh-tw/p/pascal/)
+[Pascal](https://kenji.blog/zh-tw/p/pascal/) 是一種程序式程式語言。
 
 ## COBOL
 歷史悠久。是一種通用程式語言。

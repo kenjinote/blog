@@ -9,15 +9,15 @@ categories: ["mathematics", "cryptography"]
 tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 ---
 
-# 1. Pendahuluan: Misteri Alam Semesta Bilangan Prima dan Hipotesis Riemann
+# 1. Pendahuluan: Misteri Alam Semesta Bilangan Prima dan Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)
 
 "Bilangan prima (Prime Numbers)" adalah bilangan asli yang hanya bisa dibagi oleh 1 dan bilangan itu sendiri, yang juga sering disebut sebagai "atom" dalam dunia matematika. Deret bilangan 2, 3, 5, 7, 11, 13... ini pada pandangan pertama terlihat tidak beraturan dan muncul secara acak. Sejak matematikawan Yunani kuno, [Euclid](https://kenji.blog/id/p/euclid/), membuktikan bahwa "bilangan prima jumlahnya tak terhingga", tak terhitung banyaknya matematikawan yang menantang diri mereka untuk mengungkap keteraturan yang tersembunyi di balik susunan bilangan prima ini.
 
-Yang paling mendekati misteri bilangan prima ini adalah **"Hipotesis Riemann (Riemann Hypothesis)"**, yang diusulkan oleh matematikawan Jerman, [Bernhard Riemann](https://kenji.blog/id/p/riemann/), pada tahun 1859. Hipotesis Riemann adalah salah satu dari masalah terpenting dan belum terpecahkan dalam matematika modern, serta merupakan salah satu dari Masalah Hadiah Milenium (Millennium Prize Problems) yang ditetapkan oleh Clay Mathematics Institute dengan hadiah sebesar 1 juta dolar.
+Yang paling mendekati misteri bilangan prima ini adalah **"Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) ([Riemann](https://kenji.blog/id/p/riemann/) Hypothesis)"**, yang diusulkan oleh matematikawan Jerman, [Bernhard Riemann](https://kenji.blog/id/p/riemann/), pada tahun 1859. Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) adalah salah satu dari masalah terpenting dan belum terpecahkan dalam matematika modern, serta merupakan salah satu dari Masalah Hadiah Milenium (Millennium Prize Problems) yang ditetapkan oleh Clay Mathematics Institute dengan hadiah sebesar 1 juta dolar.
 
 Sekilas, masalah sulit matematika murni terkait distribusi bilangan prima mungkin terasa tidak ada hubungannya dengan kehidupan kita sehari-hari. Namun, keamanan internet yang menopang infrastruktur masyarakat modern, terutama **teknologi kriptografi modern seperti kriptografi RSA dan kriptografi kurva eliptik (ECC)**, sangat bergantung pada sifat-sifat bilangan prima yang sangat besar.
 
-Dalam artikel ini, kita akan melakukan perjalanan matematis dari distribusi bilangan prima menuju Teorema Bilangan Prima, fungsi Zeta Riemann, hingga ke inti dari Hipotesis Riemann, lalu menggali lebih dalam dan detail tentang bagaimana hal tersebut terhubung dengan teknologi kriptografi modern, serta apa yang akan terjadi pada dunia jika Hipotesis Riemann berhasil dibuktikan.
+Dalam artikel ini, kita akan melakukan perjalanan matematis dari distribusi bilangan prima menuju Teorema Bilangan Prima, fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/), hingga ke inti dari Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), lalu menggali lebih dalam dan detail tentang bagaimana hal tersebut terhubung dengan teknologi kriptografi modern, serta apa yang akan terjadi pada dunia jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) berhasil dibuktikan.
 
 ---
 
@@ -44,13 +44,13 @@ Atau secara pendekatan dinyatakan sebagai berikut.
 
 $$ \pi(x) \sim \frac{x}{\ln x} $$
 
-Melalui teorema ini, kita mengetahui bahwa jika dilihat secara makroskopis, bilangan prima memiliki distribusi yang sangat mulus dan dapat diprediksi. Namun, jika dilihat secara mikroskopis, selalu terdapat "galat (error)" atau "fluktuasi" antara $\pi(x)$ dan $\text{Li}(x)$. Sifat asli dari fluktuasi inilah misteri terbesar yang coba dipecahkan oleh Hipotesis Riemann.
+Melalui teorema ini, kita mengetahui bahwa jika dilihat secara makroskopis, bilangan prima memiliki distribusi yang sangat mulus dan dapat diprediksi. Namun, jika dilihat secara mikroskopis, selalu terdapat "galat (error)" atau "fluktuasi" antara $\pi(x)$ dan $\text{Li}(x)$. Sifat asli dari fluktuasi inilah misteri terbesar yang coba dipecahkan oleh Hipotesis [Riemann](https://kenji.blog/id/p/riemann/).
 
 ---
 
-# 3. Fungsi Zeta Riemann dan Produk Euler
+# 3. Fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/) dan Produk Euler
 
-Senjata paling kuat dalam menganalisis distribusi bilangan prima adalah **Fungsi Zeta Riemann (Riemann Zeta Function)**. Awalnya, fungsi ini adalah deret tak terhingga yang didefinisikan untuk bilangan real $s > 1$ oleh [Leonhard Euler](https://kenji.blog/id/p/euler/).
+Senjata paling kuat dalam menganalisis distribusi bilangan prima adalah **Fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/) ([Riemann](https://kenji.blog/id/p/riemann/) Zeta Function)**. Awalnya, fungsi ini adalah deret tak terhingga yang didefinisikan untuk bilangan real $s > 1$ oleh [Leonhard Euler](https://kenji.blog/id/p/euler/).
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -66,9 +66,9 @@ Pemahaman intuitif dari pembuktian ini adalah dengan mengekspansi setiap suku di
 
 # 4. Perluasan Analitik dan Perluasan ke Bidang Kompleks
 
-Kejeniusan Riemann terletak pada kenyataan bahwa ia memperluas variabel $s$ dalam $\zeta(s)$, yang awalnya hanya dipertimbangkan Euler pada bilangan real, menjadi **bilangan kompleks $s = \sigma + it$ ($\sigma$ adalah bagian real, $t$ adalah bagian imajiner)**.
+Kejeniusan [Riemann](https://kenji.blog/id/p/riemann/) terletak pada kenyataan bahwa ia memperluas variabel $s$ dalam $\zeta(s)$, yang awalnya hanya dipertimbangkan Euler pada bilangan real, menjadi **bilangan kompleks $s = \sigma + it$ ($\sigma$ adalah bagian real, $t$ adalah bagian imajiner)**.
 
-Deret tak terhingga aslinya hanya konvergen pada $\sigma > 1$, namun Riemann menggunakan metode yang disebut "Perluasan Analitik (Analytic Continuation)" untuk memperluas definisi sehingga $\zeta(s)$ memiliki arti di seluruh bidang kompleks, kecuali pada titik kutub $s = 1$.
+Deret tak terhingga aslinya hanya konvergen pada $\sigma > 1$, namun [Riemann](https://kenji.blog/id/p/riemann/) menggunakan metode yang disebut "Perluasan Analitik (Analytic Continuation)" untuk memperluas definisi sehingga $\zeta(s)$ memiliki arti di seluruh bidang kompleks, kecuali pada titik kutub $s = 1$.
 
 Lebih lanjut, ia menurunkan persamaan fungsional (Functional equation) indah yang dipenuhi oleh fungsi zeta.
 
@@ -84,12 +84,12 @@ Namun, yang penting dalam distribusi bilangan prima adalah pembuat nol lainnya, 
 
 ---
 
-# 5. Inti dari Hipotesis Riemann dan Rumus Eksplisit
+# 5. Inti dari Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) dan Rumus Eksplisit
 
-Riemann menghitung sejumlah kecil pembuat nol dan merumuskan sebuah dugaan yang mengejutkan. Inilah **Hipotesis Riemann**.
+[Riemann](https://kenji.blog/id/p/riemann/) menghitung sejumlah kecil pembuat nol dan merumuskan sebuah dugaan yang mengejutkan. Inilah **Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)**.
 
-> **Hipotesis Riemann (Riemann Hypothesis)**
-> Semua pembuat nol non-trivial dari fungsi zeta Riemann $\zeta(s)$ berada pada garis dengan bagian real $1/2$ ($\text{Re}(s) = 1/2$).
+> **Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) ([Riemann](https://kenji.blog/id/p/riemann/) Hypothesis)**
+> Semua pembuat nol non-trivial dari fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/) $\zeta(s)$ berada pada garis dengan bagian real $1/2$ ($\text{Re}(s) = 1/2$).
 
 Garis dengan bagian real 1/2 ini disebut sebagai "Garis kritis (Critical line)".
 
@@ -103,20 +103,20 @@ graph TD
     F --> G["Menuju pembuktian limit suku galat dari distribusi bilangan prima"]
 ```
 
-Mengapa Hipotesis Riemann begitu penting? Hal itu karena pembuat nol dari fungsi zeta **sepenuhnya** menentukan distribusi bilangan prima.
+Mengapa Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) begitu penting? Hal itu karena pembuat nol dari fungsi zeta **sepenuhnya** menentukan distribusi bilangan prima.
 
-Riemann dan kemudian matematikawan von Mangoldt, menurunkan "Rumus eksplisit (Explicit formula)" yang mendeskripsikan distribusi bilangan prima dengan akurat. Dengan menggunakan fungsi Chebyshev $\psi(x)$, hal tersebut diekspresikan sebagai berikut.
+[Riemann](https://kenji.blog/id/p/riemann/) dan kemudian matematikawan von Mangoldt, menurunkan "Rumus eksplisit (Explicit formula)" yang mendeskripsikan distribusi bilangan prima dengan akurat. Dengan menggunakan fungsi Chebyshev $\psi(x)$, hal tersebut diekspresikan sebagai berikut.
 
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 Di sini, $\rho$ adalah penjumlahan atas semua pembuat nol non-trivial dari fungsi zeta.
 Suku utamanya adalah $x$ (yang berkorespondensi dengan Teorema Bilangan Prima), dan dengan menambahkan/mengurangkan suku berbentuk gelombang yang bergantung pada pembuat nol $\rho$, bentuk tangga distribusi bilangan prima yang akurat dapat dipulihkan. Dapat dikatakan bahwa pembuat nol non-trivial merepresentasikan "frekuensi (gelombang)" dari distribusi bilangan prima.
 
-Jika Hipotesis Riemann benar, dan bagian real dari semua pembuat nol non-trivial $\rho$ tepat bernilai $1/2$, maka suku galat pada Teorema Bilangan Prima secara teoretis akan berada pada rentang batas minimum yang mungkin terbayangkan.
+Jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) benar, dan bagian real dari semua pembuat nol non-trivial $\rho$ tepat bernilai $1/2$, maka suku galat pada Teorema Bilangan Prima secara teoretis akan berada pada rentang batas minimum yang mungkin terbayangkan.
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{untuk} \quad x \ge 2657 $$
 
-Dengan kata lain, **jika Hipotesis Riemann terbukti benar, hal itu akan membuktikan bahwa bilangan prima terdistribusi dengan cara yang paling "teratur dan indah" yang dapat kita bayangkan**.
+Dengan kata lain, **jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) terbukti benar, hal itu akan membuktikan bahwa bilangan prima terdistribusi dengan cara yang paling "teratur dan indah" yang dapat kita bayangkan**.
 
 ---
 
@@ -156,40 +156,40 @@ Untuk memecahkan kriptografi RSA, seseorang harus menemukan (melakukan faktorisa
 
 ---
 
-# 7. Dampak Hipotesis Riemann terhadap Teknologi Kriptografi
+# 7. Dampak Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) terhadap Teknologi Kriptografi
 
-Lalu, bagaimana "Hipotesis Riemann" yang berada di puncak matematika murni, bersinggungan dengan "teknologi kriptografi"?
+Lalu, bagaimana "Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)" yang berada di puncak matematika murni, bersinggungan dengan "teknologi kriptografi"?
 
-### 7.1. Algoritma Pembangkitan Bilangan Prima (Pengujian Keprimaan) dan Hipotesis Riemann yang Diperluas (GRH)
+### 7.1. Algoritma Pembangkitan Bilangan Prima (Pengujian Keprimaan) dan Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) yang Diperluas (GRH)
 Untuk mengoperasikan kriptografi RSA, pertama-tama kita perlu membangkitkan bilangan prima $p$ dan $q$ yang berukuran sangat besar. Akan tetapi, tidaklah mudah untuk memastikan dengan cepat dan pasti apakah "suatu bilangan merupakan bilangan prima atau bukan".
 
 Saat ini, metode yang digunakan secara praktis adalah algoritma probabilistik yang disebut **Uji Keprimaan Miller-Rabin (Miller-Rabin primality test)**. Algoritma ini sangat cepat, namun memiliki risiko bahwa bilangan komposit disalahartikan sebagai bilangan prima atau disebut "bilangan prima semu (pseudoprime)" dengan probabilitas yang sangat kecil.
 
-Namun, jika kita berasumsi bahwa **"Hipotesis Riemann yang Diperluas (Generalized Riemann Hypothesis, GRH)"**, yang memperluas Hipotesis Riemann pada fungsi L-Dirichlet bernilai benar, maka ceritanya akan berubah secara dramatis.
+Namun, jika kita berasumsi bahwa **"Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) yang Diperluas (Generalized [Riemann](https://kenji.blog/id/p/riemann/) Hypothesis, GRH)"**, yang memperluas Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) pada fungsi L-Dirichlet bernilai benar, maka ceritanya akan berubah secara dramatis.
 Jika GRH benar, batas atas dari jumlah pengujian dalam uji Miller-Rabin akan dijamin secara matematis, sehingga meningkatkannya dari sekadar algoritma probabilistik menjadi **"Algoritma Waktu Polinomial Deterministik"** (Ini adalah fakta penting yang telah diketahui bahkan sebelum Uji Keprimaan AKS ditemukan).
 
-Dengan kata lain, Hipotesis Riemann (dan perluasannya) memainkan peranan langsung dalam memberikan kepastian mutlak pada pondasi dasar kriptografi: "apakah kita dapat membangkitkan bilangan prima raksasa secara cepat dan dengan keyakinan yang pasti".
+Dengan kata lain, Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) (dan perluasannya) memainkan peranan langsung dalam memberikan kepastian mutlak pada pondasi dasar kriptografi: "apakah kita dapat membangkitkan bilangan prima raksasa secara cepat dan dengan keyakinan yang pasti".
 
 ### 7.2. Hubungan dengan Algoritma Faktorisasi Prima
 Pengetahuan tentang distribusi bilangan prima juga mutlak diperlukan ketika mengevaluasi kompleksitas komputasi dari algoritma pihak pemecah sandi (seperti General Number Field Sieve). Banyak algoritma faktorisasi prima bergantung pada distribusi "bilangan mulus (Smooth numbers: bilangan yang hanya memiliki faktor prima kecil)".
 
-Untuk mengevaluasi secara ketat seberapa sering bilangan mulus ini muncul, pemahaman yang mendalam mengenai distribusi bilangan prima sangatlah diperlukan, dan di sinilah teknik teori bilangan analitik yang berhubungan langsung dengan fungsi zeta dan Hipotesis Riemann banyak digunakan. Jika Hipotesis Riemann berhasil dibuktikan, dan batas galat dari distribusi bilangan prima ditetapkan sepenuhnya, maka kita akan mampu mengidentifikasi batas performa algoritma faktorisasi prima secara lebih akurat.
+Untuk mengevaluasi secara ketat seberapa sering bilangan mulus ini muncul, pemahaman yang mendalam mengenai distribusi bilangan prima sangatlah diperlukan, dan di sinilah teknik teori bilangan analitik yang berhubungan langsung dengan fungsi zeta dan Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) banyak digunakan. Jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) berhasil dibuktikan, dan batas galat dari distribusi bilangan prima ditetapkan sepenuhnya, maka kita akan mampu mengidentifikasi batas performa algoritma faktorisasi prima secara lebih akurat.
 
 ---
 
-# 8. Jika Hipotesis Riemann Terbukti, Apakah Kriptografi Akan Terpecahkan?
+# 8. Jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) Terbukti, Apakah Kriptografi Akan Terpecahkan?
 
-Terkadang muncul legenda urban yang mengatakan, "Jika Hipotesis Riemann terpecahkan, kriptografi RSA akan runtuh seketika", tetapi **secara matematis hal ini tidaklah tepat**.
+Terkadang muncul legenda urban yang mengatakan, "Jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) terpecahkan, kriptografi RSA akan runtuh seketika", tetapi **secara matematis hal ini tidaklah tepat**.
 
-Pembuktian Hipotesis Riemann itu sendiri tidak serta merta akan langsung menghasilkan algoritma ajaib yang mempercepat faktorisasi prima secara drastis. Hipotesis Riemann pada dasarnya adalah teorema tentang "keteraturan distribusi bilangan prima secara makroskopis", dan hal ini tidak serta merta memberikan petunjuk langsung tentang bilangan prima manakah yang dapat membagi bilangan $N$ tertentu (sifat secara lokal).
+Pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) itu sendiri tidak serta merta akan langsung menghasilkan algoritma ajaib yang mempercepat faktorisasi prima secara drastis. Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) pada dasarnya adalah teorema tentang "keteraturan distribusi bilangan prima secara makroskopis", dan hal ini tidak serta merta memberikan petunjuk langsung tentang bilangan prima manakah yang dapat membagi bilangan $N$ tertentu (sifat secara lokal).
 
 Namun, dampaknya tidaklah nol.
-Sebab, dalam proses pembuktian Hipotesis Riemann, probabilitas ditemukannya **"peralatan matematis baru" atau "metode analisis yang belum pernah diketahui"** sangatlah tinggi. Melihat sejarah ke belakang, ketika [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) atau [Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/) dibuktikan, teori-teori baru yang dikembangkan selama proses tersebut telah mendorong lompatan besar bagi matematika secara keseluruhan.
+Sebab, dalam proses pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), probabilitas ditemukannya **"peralatan matematis baru" atau "metode analisis yang belum pernah diketahui"** sangatlah tinggi. Melihat sejarah ke belakang, ketika [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) atau [Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/) dibuktikan, teori-teori baru yang dikembangkan selama proses tersebut telah mendorong lompatan besar bagi matematika secara keseluruhan.
 
-Jika suatu metode geometri aljabar atau geometri non-komutatif yang belum diketahui dapat dimantapkan, di mana metode ini bisa mengontrol secara penuh sifat dari pembuat nol fungsi zeta Riemann, bukan tidak mungkin hal itu pada akhirnya berujung pada penemuan algoritma faktorisasi prima yang revolusioner (contohnya, algoritma klasik yang dapat mereduksi kompleksitas komputasi menjadi waktu polinomial). Dalam artian tersebut, para ahli kriptografi tidak pernah bisa memalingkan pandangannya dari perkembangan Hipotesis Riemann.
+Jika suatu metode geometri aljabar atau geometri non-komutatif yang belum diketahui dapat dimantapkan, di mana metode ini bisa mengontrol secara penuh sifat dari pembuat nol fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/), bukan tidak mungkin hal itu pada akhirnya berujung pada penemuan algoritma faktorisasi prima yang revolusioner (contohnya, algoritma klasik yang dapat mereduksi kompleksitas komputasi menjadi waktu polinomial). Dalam artian tersebut, para ahli kriptografi tidak pernah bisa memalingkan pandangannya dari perkembangan Hipotesis [Riemann](https://kenji.blog/id/p/riemann/).
 
 ### Komputer Kuantum dan Algoritma Shor
-Ancaman yang lebih langsung dan nyata bagi teknologi kriptografi bukanlah pembuktian Hipotesis Riemann, melainkan **komputer kuantum**. "Algoritma Shor", yang dipublikasikan oleh Peter Shor pada tahun 1994, membuktikan bahwa jika terdapat komputer kuantum dengan performa yang cukup, faktorisasi prima dapat dipecahkan dalam waktu polinomial. Hal ini secara mendasar akan mematahkan kriptografi RSA maupun kriptografi kurva eliptik.
+Ancaman yang lebih langsung dan nyata bagi teknologi kriptografi bukanlah pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), melainkan **komputer kuantum**. "Algoritma Shor", yang dipublikasikan oleh Peter Shor pada tahun 1994, membuktikan bahwa jika terdapat komputer kuantum dengan performa yang cukup, faktorisasi prima dapat dipecahkan dalam waktu polinomial. Hal ini secara mendasar akan mematahkan kriptografi RSA maupun kriptografi kurva eliptik.
 
 Saat ini, transisi menuju "Kriptografi Pasca-Kuantum (Post-Quantum Cryptography, PQC)" (seperti kriptografi kisi/lattice-based cryptography), yang bahkan tidak dapat dipecahkan oleh komputer kuantum, sedang digalakkan di seluruh dunia. Teknologi kriptografi yang bergantung pada bilangan prima dalam beberapa artian mungkin sedang mendekati akhir masa keemasannya, namun nilai matematis dari bilangan prima itu sendiri tidak akan pernah pudar selamanya.
 
@@ -209,9 +209,9 @@ graph TD
     H --> F
 ```
 
-Pencarian tiada henti akan bilangan prima yang telah berlangsung sejak zaman Yunani Kuno, melalui tangan jenius bernama Riemann, disublimasikan menjadi sebuah simfoni yang indah di atas bidang kompleks (yaitu pembuat nol fungsi zeta). Dan yang sangat menakjubkan, kristalisasi dari matematika yang murni ini, melintasi waktu berabad-abad, kini diaplikasikan sebagai tameng terkuat yang menjamin keamanan masyarakat internet.
+Pencarian tiada henti akan bilangan prima yang telah berlangsung sejak zaman Yunani Kuno, melalui tangan jenius bernama [Riemann](https://kenji.blog/id/p/riemann/), disublimasikan menjadi sebuah simfoni yang indah di atas bidang kompleks (yaitu pembuat nol fungsi zeta). Dan yang sangat menakjubkan, kristalisasi dari matematika yang murni ini, melintasi waktu berabad-abad, kini diaplikasikan sebagai tameng terkuat yang menjamin keamanan masyarakat internet.
 
-Hipotesis Riemann adalah sebuah eksistensi yang secara bersamaan menyimbolkan "keindahan yang abstrak" yang dimiliki matematika dan "daya aplikatifnya yang menakjubkan terhadap dunia fisik serta masyarakat nyata".
+Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) adalah sebuah eksistensi yang secara bersamaan menyimbolkan "keindahan yang abstrak" yang dimiliki matematika dan "daya aplikatifnya yang menakjubkan terhadap dunia fisik serta masyarakat nyata".
 
 Kelak suatu hari, ketika puncak gunung raksasa matematika yang belum pernah ditaklukkan oleh siapa pun ini berhasil didaki, kita tidak hanya akan memahami secara utuh kebenaran semesta dari bilangan prima, tetapi juga akan mendapatkan sudut pandang yang sama sekali baru mengenai landasan dari masyarakat informasi ini. Pada akhirnya, mempelajari teknologi kriptografi juga berarti menelusuri sejarah kebijaksanaan umat manusia itu sendiri.
 

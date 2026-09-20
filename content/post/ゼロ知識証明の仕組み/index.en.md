@@ -88,7 +88,7 @@ Here, $\circ$ represents the Hadamard product (element-wise product). This const
 
 ### 2. Conversion to QAP (Quadratic Arithmetic Program)
 
-Since there are countless R1CS matrix constraints, verifying them individually is highly inefficient. Therefore, Lagrange interpolation is used to compress these constraints into a single polynomial equation. This is the **QAP (Quadratic Arithmetic Program)**.
+Since there are countless R1CS matrix constraints, verifying them individually is highly inefficient. Therefore, [Lagrange](https://kenji.blog/en/p/lagrange/) interpolation is used to compress these constraints into a single polynomial equation. This is the **QAP (Quadratic Arithmetic Program)**.
 
 Through the conversion to QAP, the problem to be proven is reduced to the question: "Is a specific polynomial $P(x)$ divisible by another known polynomial $Z(x)$?"
 

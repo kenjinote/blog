@@ -100,8 +100,8 @@ Eiffel es uno de los lenguajes de programación orientados a objetos.
 ## Ada
 Ada es uno de los lenguajes de programación orientados a objetos.
 
-## Pascal
-Pascal es uno de los lenguajes de programación procedimentales.
+## [Pascal](https://kenji.blog/es/p/pascal/)
+[Pascal](https://kenji.blog/es/p/pascal/) es uno de los lenguajes de programación procedimentales.
 
 ## COBOL
 Existe desde hace mucho tiempo. Es un lenguaje de programación de propósito general.

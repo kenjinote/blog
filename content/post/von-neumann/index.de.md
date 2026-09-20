@@ -36,7 +36,7 @@ Hier repräsentiert $V$ die **Klasse aller Mengen** ( $\text{Universalklasse}$ )
 
 In den späten 1920er Jahren entwickelte sich die Quantenmechanik als zwei scheinbar völlig unterschiedliche Theorien: Werner Heisenbergs "Matrizenmechanik" und Erwin Schrödingers "Wellenmechanik". Von Neumann bewies, dass diese beiden Theorien mathematisch äquivalent sind, und gab der Quantenmechanik eine strenge mathematische Grundlage.
 
-Unter Verwendung der Theorie des **Hilbertraums** formulierte er physikalische Größen (Observablen) als selbstadjungierte Operatoren in einem unendlichdimensionalen Hilbertraum. Sein 1932 erschienenes Buch "Mathematische Grundlagen der Quantenmechanik" gilt selbst modernen Physikern als Bibel und genießt auch heute noch als Standardlehrbuch der Quantenmechanik hohes Ansehen.
+Unter Verwendung der Theorie des **[Hilbert](https://kenji.blog/de/p/hilbert/)raums** formulierte er physikalische Größen (Observablen) als selbstadjungierte Operatoren in einem unendlichdimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)raum. Sein 1932 erschienenes Buch "Mathematische Grundlagen der Quantenmechanik" gilt selbst modernen Physikern als Bibel und genießt auch heute noch als Standardlehrbuch der Quantenmechanik hohes Ansehen.
 
 Er führte auch das Konzept der **Dichtematrix** ( $\text{Dichtematrix}$ ) zur Beschreibung gemischter Zustände ein und legte damit den Grundstein für die Quantenstatistik.
 
@@ -112,7 +112,7 @@ Es gibt unzählige Anekdoten rund um von Neumanns übermenschliches Gehirn.
 Die Bücher und Artikel, die von Neumann zu Lebzeiten hinterlassen hat, sind vielfältig, aber hier stellen wir repräsentative Werke vor, die einen besonders bedeutenden Einfluss auf spätere Generationen hatten.
 
 1. **Mathematische Grundlagen der Quantenmechanik (1932)**
-   Ein monumentales Werk, das die Quantenmechanik mithilfe der Theorie des Hilbertraums streng formulierte.
+   Ein monumentales Werk, das die Quantenmechanik mithilfe der Theorie des [Hilbert](https://kenji.blog/de/p/hilbert/)raums streng formulierte.
 2. **Spieltheorie und wirtschaftliches Verhalten (1944)**
    Zusammen mit Oskar Morgenstern verfasst. Ein Meisterwerk, das systematisch alles von Nullsummenspielen bis hin zu kooperativen Spielen diskutierte.
 3. **Der Computer und das Gehirn (1958)**

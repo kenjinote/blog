@@ -57,7 +57,7 @@ Em mundos de corpos algébricos como $\mathbb{Z}[\alpha]$, a **"unicidade da fat
 
 Se a fatoração não for única, o quebra-cabeça de "contar o número de primos para torná-los pares" (o método do crivo) é, em princípio, impossível de executar.
 
-### A Salvação de Kummer e Dedekind: "Ideais"
+### A Salvação de [Kummer](https://kenji.blog/pt/p/kummer/) e Dedekind: "Ideais"
 O que salvou esse colapso foi o conceito de **"Ideal (Ideal: número ideal)"** criado pelos matemáticos do século 19.
 Pensando não no elemento em si, mas no "conjunto de múltiplos (ideal)" gerado por esse elemento, a fatoração em números primos tornou-se possível novamente.
 
@@ -120,7 +120,7 @@ A menos que esta unidade $u$ em si seja o quadrado de algo, o lado esquerdo nunc
 O obstáculo do grupo de classes de ideais e o obstáculo do grupo de unidades. Como superar esses dois?
 Aqui entra o brilhante método dos **"Caracteres Quadráticos (Quadratic Characters)"** , introduzido pelo criptógrafo Leonard Adleman (o "A" do RSA) e outros.
 
-Para determinar "se um certo elemento é um quadrado perfeito no corpo algébrico", usamos a versão de corpos algébricos do Símbolo de Legendre (resíduo quadratique).
+Para determinar "se um certo elemento é um quadrado perfeito no corpo algébrico", usamos a versão de corpos algébricos do Símbolo de [Legendre](https://kenji.blog/pt/p/legendre/) (resíduo quadratique).
 Naquela matriz gigante anterior (o quebra-cabeça para tornar pares as contagens de ideais primos), nós **furtivamente adicionamos algumas dezenas de condições extras (colunas) dizendo "os caracteres quadráticos para certos ideais primos especiais $\mathfrak{q}$ também devem ser todos $1$ (par)"** .
 
 Quando encontramos um conjunto $S$ que satisfaz até mesmo essas condições adicionais através de cálculos de matrizes, teoremas profundos da teoria algébrica dos números garantem que **"tanto o obstáculo do grupo de classes de ideais quanto o obstáculo do grupo de unidades desaparecerão naturalmente com uma probabilidade esmagadora"** .

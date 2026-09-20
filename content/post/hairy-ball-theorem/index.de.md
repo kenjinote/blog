@@ -68,7 +68,7 @@ $$
 
 Für Körper, die homöomorph zur Sphäre sind (topologisch gleich), ist die Euler-Charakteristik immer $\chi = 2$.
 
-Nach dem Satz von Poincaré-Hopf (Poincaré-Hopf Theorem) ist die Summe der Indizes der Singularitäten (Punkte, an denen der Vektor null wird) eines Vektorfeldes auf einer Mannigfaltigkeit gleich der Euler-Charakteristik dieser Mannigfaltigkeit.
+Nach dem Satz von [Poincaré](https://kenji.blog/de/p/poincare/)-Hopf ([Poincaré](https://kenji.blog/de/p/poincare/)-Hopf Theorem) ist die Summe der Indizes der Singularitäten (Punkte, an denen der Vektor null wird) eines Vektorfeldes auf einer Mannigfaltigkeit gleich der Euler-Charakteristik dieser Mannigfaltigkeit.
 
 In mathematischer Notation ausgedrückt:
 $$
@@ -84,7 +84,7 @@ Hier stellt sich eine interessante Frage. Was passiert, wenn es kein Ball, sonde
 
 Tatsächlich beträgt die Euler-Charakteristik eines Torus $\chi(T^2) = 0$.
 
-Folglich wird die rechte Seite des Satzes von Poincaré-Hopf zu 0. Dies bedeutet, dass es **möglich** ist, ein stetiges Vektorfeld zu erzeugen, in dem es keine einzige Singularität gibt.
+Folglich wird die rechte Seite des Satzes von [Poincaré](https://kenji.blog/de/p/poincare/)-Hopf zu 0. Dies bedeutet, dass es **möglich** ist, ein stetiges Vektorfeld zu erzeugen, in dem es keine einzige Singularität gibt.
 
 Intuitiv gesprochen: Wenn Sie einen donutartigen behaarten Ball hätten, könnten Sie die Haare glatt und ohne einen einzigen Wirbel kämmen, indem Sie sie kontinuierlich in einer Richtung entlang des Lochs des Donuts bürsten.
 

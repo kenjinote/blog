@@ -49,7 +49,7 @@ Das bestimmende Merkmal von Bourbaki war seine vollständig axiomatische und str
 
 Mit dem Ausbruch des Zweiten Weltkriegs 1939 wurde Weils Schicksal schwer erschüttert. Er verweigerte den Militärdienst und floh nach Finnland, wo er fälschlicherweise als sowjetischer Spion identifiziert und fast hingerichtet wurde. Er wurde durch die Bemühungen des prominenten Mathematikers Rolf Nevanlinna gerettet, aber anschließend nach Frankreich deportiert und in Rouen inhaftiert.
 
-Bemerkenswerterweise erreichte Weils mathematische Kreativität unter diesen harten Bedingungen ihren Höhepunkt. In seiner Gefängniszelle vollendete er eine seiner größten Errungenschaften: den **„Beweis der Riemannschen Vermutung für algebraische Kurven über endlichen Körpern“** . In Briefen an seine Schwester Simone diskutierte er leidenschaftlich über die Freude dieser Entdeckung und die Bedeutung der „Analogie“ in der Mathematik.
+Bemerkenswerterweise erreichte Weils mathematische Kreativität unter diesen harten Bedingungen ihren Höhepunkt. In seiner Gefängniszelle vollendete er eine seiner größten Errungenschaften: den **„Beweis der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung für algebraische Kurven über endlichen Körpern“** . In Briefen an seine Schwester Simone diskutierte er leidenschaftlich über die Freude dieser Entdeckung und die Bedeutung der „Analogie“ in der Mathematik.
 
 ## 6. Die Weil-Vermutungen: Eine Brücke zwischen algebraischer Geometrie und Zahlentheorie
 
@@ -59,7 +59,7 @@ Im Jahr 1949 veröffentlichte er sein Hauptwerk, die **„Weil-Vermutungen“** 
 
 1.  **Rationalität**: Die Kongruenzzetafunktion $Z(X, t)$ ist eine rationale Funktion.
 2.  **Funktionalgleichung**: Die Zetafunktion erfüllt eine spezifische Symmetrie.
-3.  **Analogon der Riemannschen Vermutung**: Die Absolutbeträge der Nullstellen und Pole der Zetafunktion folgen spezifischen Regeln.
+3.  **Analogon der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung**: Die Absolutbeträge der Nullstellen und Pole der Zetafunktion folgen spezifischen Regeln.
 4.  **Verbindung mit den Betti-Zahlen**: Der Grad der Zetafunktion stimmt mit den Betti-Zahlen der Varietät überein.
 
 Als mathematische Formulierung wird die Kongruenzzetafunktion einer nichtsingulären projektiven Varietät $X$ über einem endlichen Körper $\mathbb{F}_q$ wie folgt definiert:
@@ -77,13 +77,13 @@ graph LR
 %% Verbindung zwischen Zahlentheorie und algebraischer Geometrie
 ```
 
-Um diese tiefgreifenden Vermutungen zu beweisen, baute [Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/) den massiven theoretischen Rahmen der Schema-Theorie und der étale Kohomologie von Grund auf neu auf. Dann, im Jahr 1974, bewies Grothendiecks Schüler Pierre Deligne die letzte Hürde, das „Analogon der Riemannschen Vermutung“, und löste damit die Weil-Vermutungen vollständig. Dieses große Drama gilt als eine der größten monumentalen Errungenschaften der Mathematik des 20. Jahrhunderts.
+Um diese tiefgreifenden Vermutungen zu beweisen, baute [Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/) den massiven theoretischen Rahmen der Schema-Theorie und der étale Kohomologie von Grund auf neu auf. Dann, im Jahr 1974, bewies Grothendiecks Schüler Pierre Deligne die letzte Hürde, das „Analogon der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung“, und löste damit die Weil-Vermutungen vollständig. Dieses große Drama gilt als eine der größten monumentalen Errungenschaften der Mathematik des 20. Jahrhunderts.
 
 ## 7. Weitere bedeutende Beiträge: Adele, Idele und die Weil-Gruppe
 
 Weils Beiträge beschränkten sich nicht darauf, Vermutungen aufzustellen. Er verfeinerte die Theorien der **„Adele“** und **„Idele“** , die zu wesentlichen Sprachen in der modernen Zahlentheorie geworden sind. Dies vervollständigte einen leistungsstarken Rahmen in der Zahlentheorie, der das Lokale mit dem Globalen verbindet.
 
-Darüber hinaus führte er die **„Weil-Gruppe“** ein, eine Erweiterung des Konzepts der Galois-Gruppe, die eine äußerst wichtige Rolle bei der Vereinheitlichung der lokalen und globalen Klassenkörpertheorie spielte. Diese Konzepte werden auch heute noch aktiv als Grundlage des „Langlands-Programms“, eines massiven ungelösten Problems der modernen Mathematik, erforscht. Darüber hinaus sind die mathematischen Objekte, die seinen Namen tragen, zu zahlreich, um sie alle zu erwähnen, darunter die „Weil-Paarung“ (Weil pairing), die in der Kryptographie mit elliptischen Kurven verwendet wird, und die „Weil-Petersson-Metrik“ in der Geometrie der Modulräume.
+Darüber hinaus führte er die **„Weil-Gruppe“** ein, eine Erweiterung des Konzepts der [Galois](https://kenji.blog/de/p/galois/)-Gruppe, die eine äußerst wichtige Rolle bei der Vereinheitlichung der lokalen und globalen Klassenkörpertheorie spielte. Diese Konzepte werden auch heute noch aktiv als Grundlage des „Langlands-Programms“, eines massiven ungelösten Problems der modernen Mathematik, erforscht. Darüber hinaus sind die mathematischen Objekte, die seinen Namen tragen, zu zahlreich, um sie alle zu erwähnen, darunter die „Weil-Paarung“ (Weil pairing), die in der Kryptographie mit elliptischen Kurven verwendet wird, und die „Weil-Petersson-Metrik“ in der Geometrie der Modulräume.
 
 ## 8. Späteres Leben und mathematisches Erbe
 

@@ -44,13 +44,13 @@ $$
 
 Devido à incrível inovação dessa descoberta e temendo a falta de compreensão do público, Gauss absteve-se de publicá-la em vida. Com a publicação dos trabalhos de Bolyai e Lobachevsky, o mundo da matemática experimentou uma mudança de paradigma fundamental.
 
-## 4. Geometria Riemanniana: A Generalização do Conceito de Espaço
+## 4. Geometria [Riemann](https://kenji.blog/pt/p/riemann/)iana: A Generalização do Conceito de Espaço
 
-O próximo salto na geometria não-euclidiana foi dado pelo aluno de Gauss, [Bernhard Riemann](https://kenji.blog/pt/p/riemann/). Em sua palestra inaugural de 1854, Riemann apresentou uma ideia inovadora sobre os fundamentos da geometria.
+O próximo salto na geometria não-euclidiana foi dado pelo aluno de Gauss, [Bernhard Riemann](https://kenji.blog/pt/p/riemann/). Em sua palestra inaugural de 1854, [Riemann](https://kenji.blog/pt/p/riemann/) apresentou uma ideia inovadora sobre os fundamentos da geometria.
 
 Ele introduziu o **tensor métrico** para definir localmente a curvatura do espaço e construiu uma geometria mais geral (**geometria riemanniana**) onde as dimensões e a curvatura do espaço podem variar de um lugar para outro.
 
-Dentro da estrutura de Riemann, além da geometria euclidiana (curvatura 0) e da geometria hiperbólica (curvatura constante negativa), a geometria de uma esfera (curvatura constante positiva, **geometria elíptica**) poderia ser tratada de forma unificada. Na geometria elíptica, as linhas paralelas "não existem" e a soma dos ângulos internos de um triângulo é maior que 180 graus.
+Dentro da estrutura de [Riemann](https://kenji.blog/pt/p/riemann/), além da geometria euclidiana (curvatura 0) e da geometria hiperbólica (curvatura constante negativa), a geometria de uma esfera (curvatura constante positiva, **geometria elíptica**) poderia ser tratada de forma unificada. Na geometria elíptica, as linhas paralelas "não existem" e a soma dos ângulos internos de um triângulo é maior que 180 graus.
 
 $$
 \text{Soma dos ângulos internos de um triângulo na geometria elíptica} > 180^\circ
@@ -68,7 +68,7 @@ graph LR
 
 ## 5. O Caminho para a Teoria da Relatividade: A Fusão da Matemática e da Física
 
-A grandiosa estrutura matemática construída por Riemann permaneceu puramente no domínio da matemática por algum tempo. No entanto, no início do século XX, quando Albert Einstein tentou construir uma nova teoria da gravidade, essa geometria riemanniana desempenharia um papel decisivo.
+A grandiosa estrutura matemática construída por [Riemann](https://kenji.blog/pt/p/riemann/) permaneceu puramente no domínio da matemática por algum tempo. No entanto, no início do século XX, quando Albert Einstein tentou construir uma nova teoria da gravidade, essa geometria riemanniana desempenharia um papel decisivo.
 
 Einstein propôs o conceito de "espaço-tempo", que integra tempo e espaço em sua teoria da relatividade especial. E na **teoria da relatividade geral**, ele chegou à ideia revolucionária de que "a gravidade é a distorção (curvatura) do espaço-tempo por objetos massivos".
 

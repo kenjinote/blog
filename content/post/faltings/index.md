@@ -48,7 +48,7 @@ graph TD
     E["ガロア表現"] -->|"有限性の性質"| A
 ```
 
-彼はまず、アーベル多様体に関する **テイト予想** (Tate conjecture) を証明し、それを用いて **シャファレヴィッチ予想** (Shafarevich conjecture) を解決しました。そして、シャファレヴィッチ予想が成り立つならば[モーデル](https://kenji.blog/p/mordell/)予想も成り立つというパルシン (Parshin) のトリックを用いることで、最終的な結論に到達したのです。
+彼はまず、[アーベル](https://kenji.blog/p/abel/)多様体に関する **テイト予想** (Tate conjecture) を証明し、それを用いて **シャファレヴィッチ予想** (Shafarevich conjecture) を解決しました。そして、シャファレヴィッチ予想が成り立つならば[モーデル](https://kenji.blog/p/mordell/)予想も成り立つというパルシン (Parshin) のトリックを用いることで、最終的な結論に到達したのです。
 
 数式で表すと、種数 $g(C) \ge 2$ の曲線 $C$ に対し、有理点の集合 $C(K)$ の濃度は有限となります。
 $$ |C(K)| < \infty \quad \text{ただし } g(C) \ge 2 $$
@@ -59,7 +59,7 @@ $$ |C(K)| < \infty \quad \text{ただし } g(C) \ge 2 $$
 
 [モーデル](https://kenji.blog/p/mordell/)予想の証明において決定的な役割を果たしたのが、アラケロフ幾何学の発展です。スレン・アラケロフ (Suren Arakelov) によって創始されたこの理論は、代数体の整数環上のスキームに対して、無限素点（[アルキメデス](https://kenji.blog/p/archimedes/)付値）での解析的な情報を組み込むという画期的なものでした。
 
-[ファルティングス](https://kenji.blog/p/faltings/)は、このアラケロフ幾何学をアーベル多様体上の交差理論に応用し、現在 **[ファルティングス](https://kenji.blog/p/faltings/)の高さ** (Faltings height) と呼ばれる概念を導入しました。これは、アーベル多様体の数論的な「複雑さ」を測る尺度であり、有限性定理を証明するための鍵となりました。
+[ファルティングス](https://kenji.blog/p/faltings/)は、このアラケロフ幾何学を[アーベル](https://kenji.blog/p/abel/)多様体上の交差理論に応用し、現在 **[ファルティングス](https://kenji.blog/p/faltings/)の高さ** (Faltings height) と呼ばれる概念を導入しました。これは、[アーベル](https://kenji.blog/p/abel/)多様体の数論的な「複雑さ」を測る尺度であり、有限性定理を証明するための鍵となりました。
 
 ## 5. p進ホッジ理論への絶大な貢献
 

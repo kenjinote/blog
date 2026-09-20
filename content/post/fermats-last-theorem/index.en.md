@@ -29,19 +29,19 @@ However, proving this simple assertion was a journey of unimaginable difficulty 
 
 [Pierre de Fermat](https://kenji.blog/en/p/fermat/) was not a professional mathematician. He enjoyed mathematics in his spare time while working as a judge at the Parlement of Toulouse. However, his mathematical intuition and talent were at the highest level of his time, and he is considered to have built the foundation of modern number theory.
 
-Fermat had a habit of writing down ideas and theorems that came to him while reading in the margins of his books. Among the notes he left behind, the one that remained unproven until the end was this "Last Theorem." Fermat left the following famous words in the margin:
+[Fermat](https://kenji.blog/en/p/fermat/) had a habit of writing down ideas and theorems that came to him while reading in the margins of his books. Among the notes he left behind, the one that remained unproven until the end was this "Last Theorem." [Fermat](https://kenji.blog/en/p/fermat/) left the following famous words in the margin:
 
 > "I have a truly marvelous demonstration of this proposition which this margin is too narrow to contain."
 
-These words became a letter of challenge to mathematicians of later generations. Did he really have a proof? Most modern mathematicians believe that the proof Fermat had must have contained an error somewhere. This is because the final proof required highly advanced theories of modern mathematics that did not exist in Fermat's time.
+These words became a letter of challenge to mathematicians of later generations. Did he really have a proof? Most modern mathematicians believe that the proof [Fermat](https://kenji.blog/en/p/fermat/) had must have contained an error somewhere. This is because the final proof required highly advanced theories of modern mathematics that did not exist in [Fermat](https://kenji.blog/en/p/fermat/)'s time.
 
 ## 3. The Challenges and Frustrations of Geniuses
 
-After Fermat's death, other theorems he left behind were proven one after another, but this Last Theorem stood as an insurmountable wall. Many mathematicians attempted to prove it for specific values of $n$.
+After [Fermat](https://kenji.blog/en/p/fermat/)'s death, other theorems he left behind were proven one after another, but this Last Theorem stood as an insurmountable wall. Many mathematicians attempted to prove it for specific values of $n$.
 
-- **[Leonhard Euler](https://kenji.blog/en/p/euler/)**: The greatest mathematician of the 18th century, Euler succeeded in proving the cases for $n = 3$ and $n = 4$ (it is said that Fermat himself had proven the case for $n = 4$).
+- **[Leonhard Euler](https://kenji.blog/en/p/euler/)**: The greatest mathematician of the 18th century, Euler succeeded in proving the cases for $n = 3$ and $n = 4$ (it is said that [Fermat](https://kenji.blog/en/p/fermat/) himself had proven the case for $n = 4$).
 - **Sophie Germain**: In the early 19th century, female mathematician Sophie Germain showed that the theorem holds for primes satisfying specific conditions (today called "Sophie Germain primes"). This was a major step toward a general proof.
-- **[Ernst Kummer](https://kenji.blog/en/p/kummer/)**: In the mid-19th century, Kummer introduced the concept of "ideal numbers" and proved the theorem for a large class of prime numbers called regular primes.
+- **[Ernst Kummer](https://kenji.blog/en/p/kummer/)**: In the mid-19th century, [Kummer](https://kenji.blog/en/p/kummer/) introduced the concept of "ideal numbers" and proved the theorem for a large class of prime numbers called regular primes.
 
 However, the goal of proving it for all infinite natural numbers $n$ still remained far out of reach.
 

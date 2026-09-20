@@ -18,11 +18,11 @@ $$
 
 Während dieses Integral selbst mit $\arctan(x)$ gelöst werden kann, wird es praktisch unmöglich, eine Stammfunktion (unbestimmtes Integral) als reelle Funktion zu finden, wenn der Nenner ein Polynom höheren Grades wird oder wenn trigonometrische Funktionen wie Sinus und Kosinus stark involviert sind.
 
-Hier kommt eine mächtige Waffe der **Funktionentheorie** (komplexe Analysis), die weithin als eine der schönsten Theorien der Mathematik gilt, ins Spiel: der **[Residuensatz](https://kenji.blog/de/p/residue-theorem/) von Cauchy**. Indem man ein Integral, das auf der reellen Zahlengeraden (eindimensional) ausgeführt wird, mutig auf die **komplexe Ebene** (zweidimensional) erweitert, können unmögliche reelle Integrale meisterhaft gelöst werden.
+Hier kommt eine mächtige Waffe der **Funktionentheorie** (komplexe Analysis), die weithin als eine der schönsten Theorien der Mathematik gilt, ins Spiel: der **[Residuensatz](https://kenji.blog/de/p/residue-theorem/) von [Cauchy](https://kenji.blog/de/p/cauchy/)**. Indem man ein Integral, das auf der reellen Zahlengeraden (eindimensional) ausgeführt wird, mutig auf die **komplexe Ebene** (zweidimensional) erweitert, können unmögliche reelle Integrale meisterhaft gelöst werden.
 
 ## Komplexe Integration und Singularitäten
 
-Das Integral einer komplexen Funktion $f(z)$ wird entlang einer Kurve (Kontur) in der komplexen Ebene ausgeführt. In einem Bereich, in dem die Funktion analytisch (differenzierbar) ist, ist das Integral entlang einer geschlossenen Kurve null. Dies ist bekannt als der **Cauchysche Integralsatz**.
+Das Integral einer komplexen Funktion $f(z)$ wird entlang einer Kurve (Kontur) in der komplexen Ebene ausgeführt. In einem Bereich, in dem die Funktion analytisch (differenzierbar) ist, ist das Integral entlang einer geschlossenen Kurve null. Dies ist bekannt als der **[Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralsatz**.
 
 $$
 \oint_C f(z) dz = 0 \quad (\text{wenn die Funktion innerhalb und auf } C \text{ holomorph ist})
@@ -56,7 +56,7 @@ $$
 
 Warum ist nur der Koeffizient von $(z - z_0)^{-1}$ besonders? Weil, wenn Sie $\frac{1}{(z - z_0)^n}$ entlang eines winzigen Kreises $C$ integrieren, der die Singularität umschließt, nur für $n = 1$ der Wert $2\pi i$ übrig bleibt; für alle anderen Werte von $n$ ergibt das Integral $0$.
 
-## Der [Residuensatz](https://kenji.blog/de/p/residue-theorem/) von Cauchy
+## Der [Residuensatz](https://kenji.blog/de/p/residue-theorem/) von [Cauchy](https://kenji.blog/de/p/cauchy/)
 
 Die Integration dieser Konzepte führt zum **[Residuensatz](https://kenji.blog/de/p/residue-theorem/)**. Wenn eine geschlossene Kurve $C$ mehrere isolierte Singularitäten $z_1, z_2, \dots, z_k$ in ihrem Inneren enthält, kann das komplexe Integral entlang $C$ wie folgt berechnet werden:
 

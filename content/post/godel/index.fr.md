@@ -14,13 +14,13 @@ tags: ["Kurt Gödel", "Théorèmes d'incomplétude", "Mathématiques", "Logique"
 
 Les réalisations de Gödel vont bien au-delà de simples preuves mathématiques, touchant à la philosophie, à l'informatique et même à la cosmologie. Dans cet article, nous plongerons profondément dans la trajectoire de ce génie qui a changé à jamais l'histoire des mathématiques, en explorant les détails de ses exploits mathématiques, sa profonde amitié avec Albert Einstein et la conclusion tragique de ses dernières années sous de multiples perspectives.
 
-# 2. La crise des mathématiques et le programme de Hilbert
+# 2. La crise des mathématiques et le programme de [Hilbert](https://kenji.blog/fr/p/hilbert/)
 
 Pour apprécier à sa juste valeur le travail de Gödel, il est nécessaire de comprendre en détail la « crise des fondements » à laquelle le monde mathématique était confronté à l'époque. À la fin du 19e siècle, la théorie des ensembles infinis, fondée par [Georg Cantor](https://kenji.blog/fr/p/cantor/), a apporté des perspectives entièrement nouvelles et des outils puissants aux mathématiques. Cependant, on a vite découvert qu'elle recelait de graves paradoxes d'autoréférence, tels que le « paradoxe de Russell ».
 
 Le paradoxe de Russell considère « l'ensemble de tous les ensembles qui ne se contiennent pas eux-mêmes en tant qu'éléments ». Si cet ensemble se contient lui-même, il contredit sa propre définition ; s'il ne se contient pas, il doit par définition être un élément de lui-même, conduisant de nouveau à une contradiction. Cette découverte a exposé l'extrême fragilité des fondements mathématiques de l'époque, qui s'appuyaient fortement sur le raisonnement intuitif.
 
-Pour y remédier, le grand mathématicien allemand [David Hilbert](https://kenji.blog/fr/p/hilbert/) a proposé le « programme de Hilbert ». Celui-ci visait une approche formaliste pour dériver tous les théorèmes mathématiques à partir d'un petit ensemble d'axiomes et de règles d'inférence mécaniques. Le but ultime était de prouver mathématiquement, en un nombre fini d'étapes, que le système d'axiomes ne conduirait absolument jamais à une contradiction (cohérence) et que chaque proposition vraie pourrait être prouvée au sein de ce système (complétude). En cas de succès, les mathématiques reposeraient sur des fondations parfaitement solides. Les mathématiciens de l'époque croyaient fermement au succès de ce programme, considérant la formalisation complète des mathématiques comme une simple question de temps.
+Pour y remédier, le grand mathématicien allemand [David Hilbert](https://kenji.blog/fr/p/hilbert/) a proposé le « programme de [Hilbert](https://kenji.blog/fr/p/hilbert/) ». Celui-ci visait une approche formaliste pour dériver tous les théorèmes mathématiques à partir d'un petit ensemble d'axiomes et de règles d'inférence mécaniques. Le but ultime était de prouver mathématiquement, en un nombre fini d'étapes, que le système d'axiomes ne conduirait absolument jamais à une contradiction (cohérence) et que chaque proposition vraie pourrait être prouvée au sein de ce système (complétude). En cas de succès, les mathématiques reposeraient sur des fondations parfaitement solides. Les mathématiciens de l'époque croyaient fermement au succès de ce programme, considérant la formalisation complète des mathématiques comme une simple question de temps.
 
 # 3. Jeunesse et philosophie du cercle de Vienne
 
@@ -34,7 +34,7 @@ Le Cercle de Vienne prônait le positivisme logique, cherchant à rejeter les pr
 
 En 1930, dans sa thèse de doctorat soumise à l'Université de Vienne, Gödel a brillamment prouvé le « théorème de complétude de la logique du premier ordre ». La logique du premier ordre est un système logique dans lequel les quantificateurs (pour tout, il existe) ne peuvent être appliqués qu'à des variables, et non à des prédicats.
 
-Dans cet article, Gödel a montré qu'en logique du premier ordre, « une proposition qui est logiquement toujours vraie (une formule logique valide) peut nécessairement être prouvée à partir des axiomes en un nombre fini d'étapes ». Cela signifiait un succès partiel du programme de Hilbert, garantissant que les règles d'inférence du système logique étaient suffisamment puissantes. De nombreux mathématiciens espéraient beaucoup que cela pourrait servir de tremplin pour prouver également la complétude de la théorie des nombres (l'arithmétique). Cependant, l'article que Gödel a publié l'année suivante allait anéantir ces attentes.
+Dans cet article, Gödel a montré qu'en logique du premier ordre, « une proposition qui est logiquement toujours vraie (une formule logique valide) peut nécessairement être prouvée à partir des axiomes en un nombre fini d'étapes ». Cela signifiait un succès partiel du programme de [Hilbert](https://kenji.blog/fr/p/hilbert/), garantissant que les règles d'inférence du système logique étaient suffisamment puissantes. De nombreux mathématiciens espéraient beaucoup que cela pourrait servir de tremplin pour prouver également la complétude de la théorie des nombres (l'arithmétique). Cependant, l'article que Gödel a publié l'année suivante allait anéantir ces attentes.
 
 # 5. Le choc du premier théorème d'incomplétude et le codage de Gödel
 
@@ -59,7 +59,7 @@ flowchart TD
 
 Pour prouver cet étonnant théorème, Gödel a inventé une technique révolutionnaire connue sous le nom de « codage de Gödel » (ou numérotation de Gödel). Il s'agit d'une méthode de conversion de symboles, de formules logiques et de preuves étape par étape entières en un seul nombre naturel massif, en utilisant l'unicité de la décomposition en facteurs premiers. Cela a permis aux propositions métamathématiques (telles que « une certaine formule logique est prouvable ») d'être traitées comme des propriétés purement arithmétiques des nombres naturels. Ce « lemme diagonal », qui permettait à un système logique de parler de ses propres limites (autoréférence), est considéré comme l'une des plus belles techniques de preuve de l'histoire des mathématiques.
 
-# 6. Le second théorème d'incomplétude et la fin du rêve de Hilbert
+# 6. Le second théorème d'incomplétude et la fin du rêve de [Hilbert](https://kenji.blog/fr/p/hilbert/)
 
 Conséquence directe du premier théorème d'incomplétude, Gödel a dérivé le **second théorème d'incomplétude**, encore plus puissant. Il stipule : « Un système axiomatique formel cohérent capable d'exprimer l'arithmétique ne peut pas prouver sa propre cohérence à l'intérieur de lui-même. »
 
@@ -69,11 +69,11 @@ $$ \text{Con}(F) \implies \neg \text{Prov}( \lceil \text{Con}(F) \rceil ) $$
 
 Ici, $\text{Con}(F)$ est une formule logique représentant que le système d'axiomes $F$ est cohérent. Si le système $F$ pouvait prouver sa propre cohérence, le système serait en fait incohérent.
 
-Le second théorème d'incomplétude a été une condamnation à mort absolue pour le programme de Hilbert. Le grand rêve de Hilbert de prouver la cohérence des mathématiques entièrement de l'intérieur des mathématiques elles-mêmes s'est avéré impossible en principe. Une vérité profonde s'est établie ici : les mathématiques ne peuvent pas garantir la sécurité de leurs propres fondements par leur propre pouvoir.
+Le second théorème d'incomplétude a été une condamnation à mort absolue pour le programme de [Hilbert](https://kenji.blog/fr/p/hilbert/). Le grand rêve de [Hilbert](https://kenji.blog/fr/p/hilbert/) de prouver la cohérence des mathématiques entièrement de l'intérieur des mathématiques elles-mêmes s'est avéré impossible en principe. Une vérité profonde s'est établie ici : les mathématiques ne peuvent pas garantir la sécurité de leurs propres fondements par leur propre pouvoir.
 
 # 7. Contributions à l'hypothèse du continu et l'univers constructible (L)
 
-Même après les théorèmes d'incomplétude, la quête intellectuelle de Gödel ne s'est pas arrêtée. Il s'est attaqué à « l'hypothèse du continu », un problème non résolu de longue date dans la théorie des ensembles et le premier des 23 problèmes de Hilbert. Proposée par Cantor, cette hypothèse postule « qu'il n'y a pas d'ensemble dont la cardinalité est strictement comprise entre celle des entiers (l'infini dénombrable) et celle des nombres réels (le continu) ».
+Même après les théorèmes d'incomplétude, la quête intellectuelle de Gödel ne s'est pas arrêtée. Il s'est attaqué à « l'hypothèse du continu », un problème non résolu de longue date dans la théorie des ensembles et le premier des 23 problèmes de [Hilbert](https://kenji.blog/fr/p/hilbert/). Proposée par Cantor, cette hypothèse postule « qu'il n'y a pas d'ensemble dont la cardinalité est strictement comprise entre celle des entiers (l'infini dénombrable) et celle des nombres réels (le continu) ».
 
 $$ 2^{\aleph_0} = \aleph_1 $$
 

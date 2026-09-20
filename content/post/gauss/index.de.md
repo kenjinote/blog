@@ -63,7 +63,7 @@ Antike griechische Mathematiker widmeten sich dem Problem der Konstruktion regel
 
 Am 30. März 1796 bewies Gauß jedoch mathematisch, dass **„das regelmäßige Siebzehneck (17-Eck) allein mit Zirkel und Lineal konstruiert werden kann.“** Er klärte algebraisch die Bedingungen, unter denen die Wurzeln der Kreisteilungsgleichung ausgedrückt werden können, indem man vom Körper der rationalen Zahlen ausgeht und sukzessive Quadratwurzeln hinzufügt.
 
-Konkret leitete er den Satz ab, dass ein regelmäßiges $p$-Eck konstruierbar ist, wenn $p$ eine Fermat-Primzahl ist (eine Primzahl der Form $p = 2^{2^n} + 1$). Wenn $n=2$, ist $p = 2^4 + 1 = 17$, was das regelmäßige Siebzehneck einschließt. Gauß war auf diese Entdeckung äußerst stolz und soll darum gebeten haben, ein regelmäßiges Siebzehneck auf seinen Grabstein gravieren zu lassen (in Wirklichkeit wurde ein 17-zackiger Stern gemeißelt, da dieser kaum von einem Kreis zu unterscheiden wäre).
+Konkret leitete er den Satz ab, dass ein regelmäßiges $p$-Eck konstruierbar ist, wenn $p$ eine [Fermat](https://kenji.blog/de/p/fermat/)-Primzahl ist (eine Primzahl der Form $p = 2^{2^n} + 1$). Wenn $n=2$, ist $p = 2^4 + 1 = 17$, was das regelmäßige Siebzehneck einschließt. Gauß war auf diese Entdeckung äußerst stolz und soll darum gebeten haben, ein regelmäßiges Siebzehneck auf seinen Grabstein gravieren zu lassen (in Wirklichkeit wurde ein 17-zackiger Stern gemeißelt, da dieser kaum von einem Kreis zu unterscheiden wäre).
 
 ### Disquisitiones Arithmeticae
 
@@ -77,7 +77,7 @@ Dies bedeutet, dass „die Reste, wenn $a$ und $b$ durch $n$ geteilt werden, gle
 
 Auch in demselben Buch lieferte Gauß den ersten strengen Beweis für das **„Quadratische Reziprozitätsgesetz“**, das als einer der schönsten Sätze in der Zahlentheorie gilt. Dieses Gesetz zeigt, dass für zwei verschiedene ungerade Primzahlen $p, q$ eine höchst symmetrische Beziehung zwischen der Frage besteht, ob die Kongruenz $x^2 \equiv p \pmod{q}$ eine Lösung hat und ob $x^2 \equiv q \pmod{p}$ eine Lösung hat.
 
-Ausgedrückt in mathematischer Formel mit dem Legendre-Symbol wird es wie folgt dargestellt:
+Ausgedrückt in mathematischer Formel mit dem [Legendre](https://kenji.blog/de/p/legendre/)-Symbol wird es wie folgt dargestellt:
 
 $$
 \left( \frac{p}{q} \right) \left( \frac{q}{p} \right) = (-1)^{\frac{p-1}{2} \frac{q-1}{2}}
@@ -123,7 +123,7 @@ $$
 
 (Wobei $E, F, G$ die Koeffizienten der ersten Fundamentalform und $L, M, N$ die Koeffizienten der zweiten Fundamentalform sind)
 
-Nach diesem Satz ist mathematisch bewiesen, dass es beispielsweise unmöglich ist, eine Kugel (positive Krümmung) ohne Verzerrung aus einem flachen Stück Papier (Krümmung 0) herzustellen, egal wie man es aufrollt. Diese Idee der Gaußschen Differentialgeometrie wurde später von [Bernhard Riemann](https://kenji.blog/de/p/riemann/) in höhere Dimensionen verallgemeinert (Riemannsche Geometrie) und wurde in späteren Jahren als mathematische Grundlage für Albert Einsteins allgemeine Relativitätstheorie unverzichtbar.
+Nach diesem Satz ist mathematisch bewiesen, dass es beispielsweise unmöglich ist, eine Kugel (positive Krümmung) ohne Verzerrung aus einem flachen Stück Papier (Krümmung 0) herzustellen, egal wie man es aufrollt. Diese Idee der Gaußschen Differentialgeometrie wurde später von [Bernhard Riemann](https://kenji.blog/de/p/riemann/) in höhere Dimensionen verallgemeinert ([Riemann](https://kenji.blog/de/p/riemann/)sche Geometrie) und wurde in späteren Jahren als mathematische Grundlage für Albert Einsteins allgemeine Relativitätstheorie unverzichtbar.
 
 ## 6. Normalverteilung und Elektromagnetismus
 
@@ -161,9 +161,9 @@ Als später Nikolai Lobatschewski und János Bolyai unabhängig voneinander die 
 
 ## 8. Spätere Jahre und Vermächtnis
 
-Gauß war ein Perfektionist, mit dem Motto **„Pauca sed matura“** (Weniges, aber Reifes). Da er seine Papiere nicht veröffentlichte, bis er völlig zufrieden war und sie in einer wunderbar verfeinerten Form vorlagen, wurden nach seinem Tod massive Mengen unveröffentlichter Notizen entdeckt, die spätere Mathematiker in Erstaunen versetzten. Viele der Theorien, die später von anderen Mathematikern entdeckt und berühmt gemacht wurden, wie die komplexe Integration (Cauchys Integralsatz), Quaternionen und die Grundlagen der elliptischen Funktionstheorie, waren bereits in den Notizen von Gauß verzeichnet.
+Gauß war ein Perfektionist, mit dem Motto **„Pauca sed matura“** (Weniges, aber Reifes). Da er seine Papiere nicht veröffentlichte, bis er völlig zufrieden war und sie in einer wunderbar verfeinerten Form vorlagen, wurden nach seinem Tod massive Mengen unveröffentlichter Notizen entdeckt, die spätere Mathematiker in Erstaunen versetzten. Viele der Theorien, die später von anderen Mathematikern entdeckt und berühmt gemacht wurden, wie die komplexe Integration ([Cauchy](https://kenji.blog/de/p/cauchy/)s Integralsatz), Quaternionen und die Grundlagen der elliptischen Funktionstheorie, waren bereits in den Notizen von Gauß verzeichnet.
 
-Er war auch Mentor der nächsten Generation. Neben dem bereits erwähnten Riemann erhielten große Mathematiker der nächsten Generation wie Richard Dedekind und Ferdinand Gotthold Max Eisenstein die Anleitung von Gauß.
+Er war auch Mentor der nächsten Generation. Neben dem bereits erwähnten [Riemann](https://kenji.blog/de/p/riemann/) erhielten große Mathematiker der nächsten Generation wie Richard Dedekind und Ferdinand Gotthold Max Eisenstein die Anleitung von Gauß.
 
 Am 23. Februar 1855 verstarb [Carl Friedrich Gauß](https://kenji.blog/de/p/gauss/) in Göttingen im Alter von 77 Jahren. Sein Vermächtnis überschreitet die Grenzen der Mathematik und fließt an der Wurzel aller modernen Wissenschaft und Technologie. Vom reinen abstrakten Denken über die Berechnung von Planetenbahnen bis hin zum physikalischen Phänomen des Elektromagnetismus leuchtet das Licht seines Intellekts auch heute noch.
 

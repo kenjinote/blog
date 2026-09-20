@@ -18,35 +18,35 @@ Su descubrimiento sirvió como un puente que conectaba las perspectivas "local" 
 
 [Kurt Hensel](https://kenji.blog/es/p/hensel/) nació el 29 de diciembre de 1861 en Königsberg, Prusia Oriental (hoy Kaliningrado, Rusia). Su familia ocupa un lugar muy significativo en la historia intelectual y artística de Alemania.
 
-Su abuelo fue el famoso pintor **Wilhelm Hensel**, y su abuela fue la destacada pianista y compositora **Fanny Mendelssohn** (hermana del famoso compositor Felix Mendelssohn). Yendo más atrás, su bisabuelo fue el filósofo representativo de la Ilustración, **Moses Mendelssohn**. Se puede decir que este entorno familiar, cultural e intelectualmente rico, fomentó el pensamiento libre y creativo de [Kurt Hensel](https://kenji.blog/es/p/hensel/).
+Su abuelo fue el famoso pintor **Wilhelm [Hensel](https://kenji.blog/es/p/hensel/)**, y su abuela fue la destacada pianista y compositora **Fanny Mendelssohn** (hermana del famoso compositor Felix Mendelssohn). Yendo más atrás, su bisabuelo fue el filósofo representativo de la Ilustración, **Moses Mendelssohn**. Se puede decir que este entorno familiar, cultural e intelectualmente rico, fomentó el pensamiento libre y creativo de [Kurt Hensel](https://kenji.blog/es/p/hensel/).
 
 Cuando era joven, su familia se mudó a Berlín, donde recibió una educación primaria y secundaria de alta calidad. Su talento para las matemáticas floreció temprano, llevándolo de manera natural al camino de la investigación matemática en la universidad.
 
-## 3. Época universitaria y la influencia de Kronecker
+## 3. Época universitaria y la influencia de [Kronecker](https://kenji.blog/es/p/kronecker/)
 
-Hensel estudió matemáticas en las Universidades de Bonn y Berlín. En ese momento, la Universidad de Berlín era uno de los centros mundiales para la investigación matemática, con gigantes como **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **Leopold Kronecker** enseñando allí.
+[Hensel](https://kenji.blog/es/p/hensel/) estudió matemáticas en las Universidades de Bonn y Berlín. En ese momento, la Universidad de Berlín era uno de los centros mundiales para la investigación matemática, con gigantes como **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **Leopold [Kronecker](https://kenji.blog/es/p/kronecker/)** enseñando allí.
 
-Entre ellos, Kronecker tuvo la influencia más profunda en Hensel. Como se sabe por su famosa cita: "Dios hizo los números enteros, todo lo demás es obra del hombre", Kronecker sostenía una firme creencia de que todas las matemáticas debían reconstruirse rigurosamente sobre la base de los números enteros. Bajo la guía de Kronecker, Hensel se dedicó profundamente al álgebra y a la teoría de números.
+Entre ellos, [Kronecker](https://kenji.blog/es/p/kronecker/) tuvo la influencia más profunda en [Hensel](https://kenji.blog/es/p/hensel/). Como se sabe por su famosa cita: "Dios hizo los números enteros, todo lo demás es obra del hombre", [Kronecker](https://kenji.blog/es/p/kronecker/) sostenía una firme creencia de que todas las matemáticas debían reconstruirse rigurosamente sobre la base de los números enteros. Bajo la guía de [Kronecker](https://kenji.blog/es/p/kronecker/), [Hensel](https://kenji.blog/es/p/hensel/) se dedicó profundamente al álgebra y a la teoría de números.
 
-En 1884, Hensel obtuvo su doctorado de la Universidad de Berlín. El tema de su tesis doctoral trataba sobre las propiedades aritméticas de las funciones algebraicas, lo que serviría como un presagio importante para su posterior descubrimiento de los **números p-ádicos**.
+En 1884, [Hensel](https://kenji.blog/es/p/hensel/) obtuvo su doctorado de la Universidad de Berlín. El tema de su tesis doctoral trataba sobre las propiedades aritméticas de las funciones algebraicas, lo que serviría como un presagio importante para su posterior descubrimiento de los **números p-ádicos**.
 
 ## 4. Analogía entre funciones y números
 
-La mayor inspiración de Hensel provino de la profunda analogía entre "números" (enteros algebraicos) y "funciones" (funciones algebraicas).
+La mayor inspiración de [Hensel](https://kenji.blog/es/p/hensel/) provino de la profunda analogía entre "números" (enteros algebraicos) y "funciones" (funciones algebraicas).
 
 A finales del siglo XIX, **Richard Dedekind** y **Heinrich Weber** habían demostrado que existía una sorprendente similitud estructural entre los cuerpos de números algebraicos y los cuerpos de funciones algebraicas. Una función en el plano complejo puede representarse localmente alrededor de cada punto como una serie de potencias, tal como un desarrollo de Taylor o de Laurent.
 
-Hensel se preguntó a sí mismo: "Si una función puede ser estudiada localmente como una serie de potencias alrededor de cada punto, ¿no podrían también los números racionales y los enteros algebraicos representarse como series de potencias alrededor de algún tipo de 'punto'?"
+[Hensel](https://kenji.blog/es/p/hensel/) se preguntó a sí mismo: "Si una función puede ser estudiada localmente como una serie de potencias alrededor de cada punto, ¿no podrían también los números racionales y los enteros algebraicos representarse como series de potencias alrededor de algún tipo de 'punto'?"
 
-El equivalente de un "punto" en los números era un **número primo $p$**. Hensel llegó a la innovadora idea de expresar cualquier número racional como una serie con un número primo $p$ como base.
+El equivalente de un "punto" en los números era un **número primo $p$**. [Hensel](https://kenji.blog/es/p/hensel/) llegó a la innovadora idea de expresar cualquier número racional como una serie con un número primo $p$ como base.
 
 ## 5. Descubrimiento de los números p-ádicos y fundamentos matemáticos
 
-En 1897, Hensel publicó un artículo innovador introduciendo el concepto de los **números p-ádicos** al mundo por primera vez.
+En 1897, [Hensel](https://kenji.blog/es/p/hensel/) publicó un artículo innovador introduciendo el concepto de los **números p-ádicos** al mundo por primera vez.
 
 ### 5.1 Valuación p-ádica y valor absoluto
 
-Normalmente, la completación del cuerpo de los números racionales $\mathbb{Q}$ da lugar al cuerpo de los números reales $\mathbb{R}$. Esta es una completación como espacio métrico basada en el "valor absoluto" que utilizamos a diario. Sin embargo, Hensel introdujo una forma completamente diferente de medir distancias centrada en un número primo $p$.
+Normalmente, la completación del cuerpo de los números racionales $\mathbb{Q}$ da lugar al cuerpo de los números reales $\mathbb{R}$. Esta es una completación como espacio métrico basada en el "valor absoluto" que utilizamos a diario. Sin embargo, [Hensel](https://kenji.blog/es/p/hensel/) introdujo una forma completamente diferente de medir distancias centrada en un número primo $p$.
 
 Cualquier número racional distinto de cero $x$ puede descomponerse de manera única utilizando un número primo $p$ dado de la siguiente manera:
 
@@ -68,7 +68,7 @@ $$
 
 ### 5.2 Completación de los números racionales a los p-ádicos
 
-Utilizando la distancia $d(x, y) = |x - y|_p$ definida por este valor absoluto p-ádico, el nuevo sistema numérico obtenido al aplicar la completación de secuencias de Cauchy al cuerpo de los números racionales $\mathbb{Q}$ es el **cuerpo de los números p-ádicos** $\mathbb{Q}_p$.
+Utilizando la distancia $d(x, y) = |x - y|_p$ definida por este valor absoluto p-ádico, el nuevo sistema numérico obtenido al aplicar la completación de secuencias de [Cauchy](https://kenji.blog/es/p/cauchy/) al cuerpo de los números racionales $\mathbb{Q}$ es el **cuerpo de los números p-ádicos** $\mathbb{Q}_p$.
 
 El diagrama a continuación ilustra cómo los sistemas numéricos se ramifican y se expanden.
 
@@ -115,9 +115,9 @@ $$
 $$
 Esta suma infinita diverge en el sentido habitual, pero en el mundo de los valores absolutos p-ádicos, los términos se vuelven más pequeños a medida que avanzan, lo que significa que converge perfectamente sin contradicción.
 
-## 6. Lema de Hensel
+## 6. Lema de [Hensel](https://kenji.blog/es/p/hensel/)
 
-Una de las herramientas más poderosas presentadas por Hensel es el **Lema de Hensel**. Este es un teorema que proporciona las condiciones para que una ecuación polinómica tenga raíces dentro del cuerpo de los números p-ádicos, y puede ser descrito como la versión p-ádica del "método de Newton" en el análisis real.
+Una de las herramientas más poderosas presentadas por [Hensel](https://kenji.blog/es/p/hensel/) es el **Lema de [Hensel](https://kenji.blog/es/p/hensel/)**. Este es un teorema que proporciona las condiciones para que una ecuación polinómica tenga raíces dentro del cuerpo de los números p-ádicos, y puede ser descrito como la versión p-ádica del "método de Newton" en el análisis real.
 
 La afirmación del teorema es la siguiente.
 Supongamos que tenemos un polinomio $f(x)$ con coeficientes enteros y un número primo $p$. Si existe un entero $a$ que es una raíz aproximada módulo $p$, y su derivada no es $0$, es decir,
@@ -136,19 +136,19 @@ Este lema hizo posible encontrar soluciones exactas como números p-ádicos al i
 
 ## 7. Teorema de Ostrowski y el Principio Local-Global
 
-Los conceptos de Hensel fueron refinados aún más por otros matemáticos.
+Los conceptos de [Hensel](https://kenji.blog/es/p/hensel/) fueron refinados aún más por otros matemáticos.
 
 En 1916, Alexander Ostrowski probó el **Teorema de Ostrowski**. Este es el hecho sorprendente de que "todo valor absoluto no trivial en el cuerpo de los números racionales es equivalente ya sea al valor absoluto usual o al valor absoluto p-ádico para algún número primo $p$". Así, reuniendo los números reales y todos los números p-ádicos, se cubren "exhaustivamente" todas las posibilidades de completar los números racionales.
 
-Además, el estudiante de Hensel, **[Helmut Hasse](https://kenji.blog/es/p/hasse/)**, estableció el **Principio Local-Global** (Principio de Hasse). Este es un hermoso teorema que establece que "una condición necesaria y suficiente para que una ecuación tenga una solución sobre los números racionales (globalmente) es que tenga una solución sobre los números reales y los números p-ádicos para todos los números primos $p$ (localmente)". Con esto, los números p-ádicos aseguraron una posición inquebrantable como herramientas esenciales en la teoría de números.
+Además, el estudiante de [Hensel](https://kenji.blog/es/p/hensel/), **[Helmut Hasse](https://kenji.blog/es/p/hasse/)**, estableció el **Principio Local-Global** (Principio de Hasse). Este es un hermoso teorema que establece que "una condición necesaria y suficiente para que una ecuación tenga una solución sobre los números racionales (globalmente) es que tenga una solución sobre los números reales y los números p-ádicos para todos los números primos $p$ (localmente)". Con esto, los números p-ádicos aseguraron una posición inquebrantable como herramientas esenciales en la teoría de números.
 
 ## 8. Contribuciones como educador y editor, y legado
 
-Hensel hizo enormes contribuciones no solo como investigador sino también como educador y editor. Desde 1901 y durante muchos años, se desempeñó como redactor jefe del "Crelle's Journal" (oficialmente: Journal für die reine und angewandte Mathematik), una de las revistas de matemáticas más antiguas del mundo, apoyando la difusión de investigaciones matemáticas de vanguardia de su tiempo.
+[Hensel](https://kenji.blog/es/p/hensel/) hizo enormes contribuciones no solo como investigador sino también como educador y editor. Desde 1901 y durante muchos años, se desempeñó como redactor jefe del "Crelle's Journal" (oficialmente: Journal für die reine und angewandte Mathematik), una de las revistas de matemáticas más antiguas del mundo, apoyando la difusión de investigaciones matemáticas de vanguardia de su tiempo.
 
 Sus clases eran claras y apasionadas, nutriendo a la próxima generación de brillantes matemáticos, incluyendo a [Helmut Hasse](https://kenji.blog/es/p/hasse/).
 
-Hoy en día, los números p-ádicos se aplican en una amplia gama de campos más allá de la teoría algebraica de números, incluyendo el **análisis p-ádico**, la **teoría de Hodge p-ádica**, e incluso la **mecánica cuántica p-ádica** en física teórica. La histórica demostración del "Último Teorema de Fermat" por [Andrew Wiles](https://kenji.blog/es/p/wiles/) hubiera sido imposible sin la teoría de los números p-ádicos.
+Hoy en día, los números p-ádicos se aplican en una amplia gama de campos más allá de la teoría algebraica de números, incluyendo el **análisis p-ádico**, la **teoría de Hodge p-ádica**, e incluso la **mecánica cuántica p-ádica** en física teórica. La histórica demostración del "Último Teorema de [Fermat](https://kenji.blog/es/p/fermat/)" por [Andrew Wiles](https://kenji.blog/es/p/wiles/) hubiera sido imposible sin la teoría de los números p-ádicos.
 
 ## 9. Conclusión
 

@@ -130,7 +130,7 @@ sequenceDiagram
 
 ### 5.3 위상 양자 컴퓨팅: 애니온의 제어
 
-오랫동안 이론상의 존재로 여겨져 왔던 **위상 양자 컴퓨팅** 이 2026년에 마침내 실험적인 실증 단계에 들어섰습니다. Microsoft 등이 추진하는 이 방식은 '마요라나 제로 모드(Majorana Zero Modes)'라고 불리는 비가환 애니온(Non-Abelian Anyons)을 사용합니다.
+오랫동안 이론상의 존재로 여겨져 왔던 **위상 양자 컴퓨팅** 이 2026년에 마침내 실험적인 실증 단계에 들어섰습니다. Microsoft 등이 추진하는 이 방식은 '마요라나 제로 모드(Majorana Zero Modes)'라고 불리는 비가환 애니온(Non-[Abel](https://kenji.blog/ko/p/abel/)ian Anyons)을 사용합니다.
 
 애니온 입자의 위치를 맞바꾸는 '브레이딩(Braiding, 땋기)'이라는 조작을 통해 양자 게이트를 실행합니다.
 

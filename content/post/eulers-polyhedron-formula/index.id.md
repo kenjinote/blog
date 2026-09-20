@@ -133,15 +133,15 @@ flowchart LR
     D --> G["Bingkai kacamata, pretzel"]
 ```
 
-## Rumus Euler-Poincaré: Lompatan ke Multi-Dimensi
+## Rumus Euler-[Poincaré](https://kenji.blog/id/p/poincare/): Lompatan ke Multi-Dimensi
 
-Dari akhir abad ke-19 hingga abad ke-20, para matematikawan, termasuk [Henri Poincaré](https://kenji.blog/id/p/poincare/), memperluas teorema Euler ke ruang dengan dimensi yang lebih tinggi lagi. Ini menjadi **Rumus Euler-Poincaré**.
+Dari akhir abad ke-19 hingga abad ke-20, para matematikawan, termasuk [Henri Poincaré](https://kenji.blog/id/p/poincare/), memperluas teorema Euler ke ruang dengan dimensi yang lebih tinggi lagi. Ini menjadi **Rumus Euler-[Poincaré](https://kenji.blog/id/p/poincare/)**.
 Dengan menggeneralisasi elemen-elemen dari polyhedron, mereka mempertimbangkan jumlah bolak-balik dari jumlah elemen dalam bentuk $n$-dimensi.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$
 
 Di sini, $k_i$ mewakili jumlah elemen berdimensi $i$.
-Poincaré membuktikan bahwa nilai $\chi$ ini sangat terkait erat dengan invarian topologi yang disebut "Bilangan Betti".
+[Poincaré](https://kenji.blog/id/p/poincare/) membuktikan bahwa nilai $\chi$ ini sangat terkait erat dengan invarian topologi yang disebut "Bilangan Betti".
 Secara intuitif, bilangan Betti $b_i$ melambangkan "jumlah lubang berdimensi $i$".
 
 $$ \chi = b_0 - b_1 + b_2 - b_3 + \dots $$

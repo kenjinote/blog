@@ -31,13 +31,13 @@ In 1915, while still a teenager, Hasse joined the Imperial German Navy and serve
 
 After the war ended in 1918, Hasse officially enrolled at the University of Göttingen. At the time, Göttingen was the world's pinnacle of mathematics, home to giants like [David Hilbert](https://kenji.blog/en/p/hilbert/), Edmund Landau, and [Emmy Noether](https://kenji.blog/en/p/noether/). There, Hasse encountered the breath of cutting-edge mathematics, allowing his talents to blossom further.
 
-Later, Hasse transferred to the University of Marburg, where he had a fateful encounter with **[Kurt Hensel](https://kenji.blog/en/p/hensel/)**, who would become his lifelong mentor. Hensel was the discoverer of an entirely new number system: the p-adic numbers. While many mathematicians at the time viewed p-adic numbers as mere mathematical curiosities, Hasse immediately recognized the immense potential of this new concept and refined it into a powerful weapon for his own research.
+Later, Hasse transferred to the University of Marburg, where he had a fateful encounter with **[Kurt Hensel](https://kenji.blog/en/p/hensel/)**, who would become his lifelong mentor. [Hensel](https://kenji.blog/en/p/hensel/) was the discoverer of an entirely new number system: the p-adic numbers. While many mathematicians at the time viewed p-adic numbers as mere mathematical curiosities, Hasse immediately recognized the immense potential of this new concept and refined it into a powerful weapon for his own research.
 
 ## 4. What are p-adic Numbers: A New Number System
 
 To understand Hasse's achievements, one cannot avoid the concept of p-adic numbers. The real numbers we use daily are obtained by completing the rational numbers (fractions) based on the concept of "size (absolute value)"—a process of taking limits to fill in the gaps.
 
-However, Hensel introduced a completely different concept of "distance." Fixing a prime number $p$, two rational numbers are defined as "close" if their difference can be divided by $p$ many times. Completing the rational numbers based on this strange distance yields the field of p-adic numbers $\mathbb{Q}_p$. In the world of p-adic numbers, infinite series that would diverge in the real world can converge, making it possible to treat congruence problems using analytical methods.
+However, [Hensel](https://kenji.blog/en/p/hensel/) introduced a completely different concept of "distance." Fixing a prime number $p$, two rational numbers are defined as "close" if their difference can be divided by $p$ many times. Completing the rational numbers based on this strange distance yields the field of p-adic numbers $\mathbb{Q}_p$. In the world of p-adic numbers, infinite series that would diverge in the real world can converge, making it possible to treat congruence problems using analytical methods.
 
 ## 5. Establishment of the Hasse Principle (Local-Global Principle)
 
@@ -83,7 +83,7 @@ In this way, Hasse was exceptionally skilled at intuitively and visually graspin
 
 ## 8. Hasse-Weil Theorem: Rational Points on Elliptic Curves
 
-Another extremely important contribution by Hasse is **Hasse's Theorem on Elliptic Curves** over finite fields. This was an epoch-making result, considered the first step toward an "analog of the Riemann Hypothesis" for algebraic varieties over finite fields.
+Another extremely important contribution by Hasse is **Hasse's Theorem on Elliptic Curves** over finite fields. This was an epoch-making result, considered the first step toward an "analog of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis" for algebraic varieties over finite fields.
 
 Let $N$ be the number of rational points on an elliptic curve $E$ defined over a finite field $\mathbb{F}_q$ (a field with $q$ elements). Hasse proved that the number of rational points $N$ is close to $q + 1$ (the number of points on the projective line), and the error is bounded as follows:
 
@@ -95,7 +95,7 @@ This beautiful inequality was later extended to general algebraic curves by his 
 
 ## 9. Contribution to Class Field Theory: Local Class Field Theory and Artin Reciprocity
 
-When discussing Hasse's achievements, his massive contribution to **Class Field Theory** is indispensable. Class field theory is a theory that attempts to completely describe the abelian extensions (extensions where the Galois group is commutative) of an algebraic number field (a finite extension of the rational numbers) using internal information from the base field itself.
+When discussing Hasse's achievements, his massive contribution to **Class Field Theory** is indispensable. Class field theory is a theory that attempts to completely describe the abelian extensions (extensions where the [Galois](https://kenji.blog/en/p/galois/) group is commutative) of an algebraic number field (a finite extension of the rational numbers) using internal information from the base field itself.
 
 In the proof of the "Reciprocity Law" proposed by Emil Artin, Hasse played a vitally important role. Utilizing analytical methods and the theory of p-adic numbers, Hasse offered crucial advice to Artin, greatly contributing to the completion of the proof. Hasse himself also played a central role in constructing Local Class Field Theory, reconstructing global class field theory from the perspective of local fields.
 

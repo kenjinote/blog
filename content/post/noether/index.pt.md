@@ -41,11 +41,11 @@ Apesar de obter seu doutorado, não havia nenhum cargo universitário disponíve
 
 Em 1915, [David Hilbert](https://kenji.blog/pt/p/hilbert/) e Felix Klein da Universidade de Göttingen convidaram Noether a Göttingen para ajudar a resolver problemas matemáticos relativos à conservação de energia na teoria da relatividade geral de Albert Einstein. Seu profundo conhecimento da teoria dos invariantes era considerado indispensável.
 
-No entanto, sua possível nomeação como membro regular do corpo docente (Privatdozent) encontrou forte oposição de professores de outras disciplinas da Faculdade de Filosofia, mais uma vez simplesmente porque ela era uma "mulher". Eles argumentavam: "O que pensarão nossos soldados quando voltarem para a universidade e descobrirem que são obrigados a aprender aos pés de uma mulher?" A isso, Hilbert respondeu de forma famosa:
+No entanto, sua possível nomeação como membro regular do corpo docente (Privatdozent) encontrou forte oposição de professores de outras disciplinas da Faculdade de Filosofia, mais uma vez simplesmente porque ela era uma "mulher". Eles argumentavam: "O que pensarão nossos soldados quando voltarem para a universidade e descobrirem que são obrigados a aprender aos pés de uma mulher?" A isso, [Hilbert](https://kenji.blog/pt/p/hilbert/) respondeu de forma famosa:
 
 > "Não vejo que o sexo da candidata seja um argumento contra sua admissão como Privatdozent. Afinal, somos uma universidade, não uma casa de banho."
 
-Em última análise, nos seus primeiros anos, ela foi forçada a dar aulas sob o nome de Hilbert como "assistente de Hilbert" sem remuneração. No entanto, sua pesquisa produziu uma conquista monumental que abalaria a história da física. Este foi o **Teorema de Noether**, publicado em 1918.
+Em última análise, nos seus primeiros anos, ela foi forçada a dar aulas sob o nome de [Hilbert](https://kenji.blog/pt/p/hilbert/) como "assistente de [Hilbert](https://kenji.blog/pt/p/hilbert/)" sem remuneração. No entanto, sua pesquisa produziu uma conquista monumental que abalaria a história da física. Este foi o **Teorema de Noether**, publicado em 1918.
 
 ### Expressão Matemática do Teorema de Noether
 

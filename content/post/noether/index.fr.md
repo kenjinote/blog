@@ -41,11 +41,11 @@ Malgré l'obtention de son doctorat, aucun poste universitaire ne lui était pro
 
 En 1915, [David Hilbert](https://kenji.blog/fr/p/hilbert/) et Felix Klein de l'Université de Göttingen invitèrent Noether à Göttingen pour aider à résoudre des problèmes mathématiques concernant la conservation de l'énergie dans la théorie de la relativité générale d'Albert Einstein. Sa profonde connaissance de la théorie des invariants était considérée comme indispensable.
 
-Cependant, son éventuelle nomination en tant que membre régulier du corps professoral (Privatdozent) rencontra une opposition féroce de la part de professeurs d'autres disciplines de la Faculté de philosophie, là encore simplement parce qu'elle était une « femme ». Ils soutenaient : « Que penseront nos soldats lorsqu'ils retourneront à l'université et découvriront qu'ils sont tenus d'apprendre aux pieds d'une femme ? » À cela, Hilbert a répondu de manière célèbre :
+Cependant, son éventuelle nomination en tant que membre régulier du corps professoral (Privatdozent) rencontra une opposition féroce de la part de professeurs d'autres disciplines de la Faculté de philosophie, là encore simplement parce qu'elle était une « femme ». Ils soutenaient : « Que penseront nos soldats lorsqu'ils retourneront à l'université et découvriront qu'ils sont tenus d'apprendre aux pieds d'une femme ? » À cela, [Hilbert](https://kenji.blog/fr/p/hilbert/) a répondu de manière célèbre :
 
 > « Je ne vois pas en quoi le sexe de la candidate est un argument contre son admission en tant que Privatdozent. Après tout, nous sommes une université, pas un établissement de bains publics. »
 
-En fin de compte, pendant ses premières années, elle fut contrainte de donner des cours sous le nom de Hilbert en tant qu'« assistante de Hilbert » sans rémunération. Pourtant, ses recherches ont produit une réalisation monumentale qui allait ébranler l'histoire de la physique. Il s'agit du **théorème de Noether**, publié en 1918.
+En fin de compte, pendant ses premières années, elle fut contrainte de donner des cours sous le nom de [Hilbert](https://kenji.blog/fr/p/hilbert/) en tant qu'« assistante de [Hilbert](https://kenji.blog/fr/p/hilbert/) » sans rémunération. Pourtant, ses recherches ont produit une réalisation monumentale qui allait ébranler l'histoire de la physique. Il s'agit du **théorème de Noether**, publié en 1918.
 
 ### Expression mathématique du théorème de Noether
 

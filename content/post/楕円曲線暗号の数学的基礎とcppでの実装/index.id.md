@@ -41,7 +41,7 @@ Seperti yang ditunjukkan pada tabel di atas, untuk mendapatkan kekuatan keamanan
 
 Untuk benar-benar memahami kriptografi kurva eliptik, penting untuk memahami konsep dasar aljabar abstrak (teori grup dan teori lapangan). Di sini, kami merangkum pengetahuan prasyarat untuk mengonstruksi ECC secara ringkas.
 
-### 2.1. Grup (Group) dan Grup Abelian
+### 2.1. Grup (Group) dan Grup [Abel](https://kenji.blog/id/p/abel/)ian
 **Grup (Group)** adalah himpunan $G$ yang dilengkapi dengan operasi biner (di sini kita gunakan penjumlahan $+$), disimbolkan dengan $(G, +)$, yang memenuhi 4 aksioma berikut:
 
 1. **Sifat Tertutup (Closure)**: Untuk setiap $a, b \in G$, maka $a + b \in G$.
@@ -49,14 +49,14 @@ Untuk benar-benar memahami kriptografi kurva eliptik, penting untuk memahami kon
 3. **Eksistensi Elemen Identitas (Identity element)**: Terdapat elemen $e \in G$ sehingga untuk setiap $a \in G$, berlaku $a + e = e + a = a$. Dalam kasus grup aditif, elemen identitas ini biasanya dilambangkan dengan $0$ atau $\mathcal{O}$.
 4. **Eksistensi Elemen Invers (Inverse element)**: Untuk setiap $a \in G$, terdapat elemen $b \in G$ sehingga $a + b = b + a = e$. $b$ ini dilambangkan sebagai $-a$.
 
-Lebih lanjut, jika urutan operasi diubah dan hasilnya tetap sama, yaitu memenuhi kondisi di bawah ini, grup tersebut disebut **Grup Abelian (Grup Komutatif)**.
+Lebih lanjut, jika urutan operasi diubah dan hasilnya tetap sama, yaitu memenuhi kondisi di bawah ini, grup tersebut disebut **Grup [Abel](https://kenji.blog/id/p/abel/)ian (Grup Komutatif)**.
 
 5. **Sifat Komutatif (Commutativity)**: Untuk setiap $a, b \in G$, berlaku $a + b = b + a$.
 
-Himpunan titik-titik pada kurva eliptik membentuk **grup Abelian** ini dengan mendefinisikan aturan penjumlahan tertentu.
+Himpunan titik-titik pada kurva eliptik membentuk **grup [Abel](https://kenji.blog/id/p/abel/)ian** ini dengan mendefinisikan aturan penjumlahan tertentu.
 
 ### 2.2. Lapangan Berhingga (Finite Field)
-Dalam teori kriptografi, kita tidak menggunakan lapangan dengan elemen yang kontinu dan tak terhingga seperti bilangan real atau bilangan kompleks, melainkan menggunakan **Lapangan Berhingga (Finite Field)** atau Lapangan Galois (Galois Field) yang jumlah elemennya terbatas.
+Dalam teori kriptografi, kita tidak menggunakan lapangan dengan elemen yang kontinu dan tak terhingga seperti bilangan real atau bilangan kompleks, melainkan menggunakan **Lapangan Berhingga (Finite Field)** atau Lapangan [Galois](https://kenji.blog/id/p/galois/) ([Galois](https://kenji.blog/id/p/galois/) Field) yang jumlah elemennya terbatas.
 
 Lapangan berhingga yang paling dasar adalah **lapangan prima $\mathbb{F}_p$** menggunakan bilangan prima $p$. Ini adalah himpunan bilangan bulat $\{0, 1, 2, \dots, p-1\}$ yang dilengkapi dengan empat operasi aritmetika (penjumlahan, pengurangan, perkalian, pembagian) dengan modulo $p$ (sisa pembagian dengan $p$).
 
@@ -153,7 +153,7 @@ $$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
 $$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
 
 > [!IMPORTANT]
-> Rumus-rumus ini melibatkan **pembagian (perhitungan invers modulo)** seperti $(x_2 - x_1)^{-1}$ dan $(2y_1)^{-1}$. Karena perhitungan invers modulo memiliki biaya komputasi yang sangat tinggi, dalam implementasi praktis, sistem koordinat proyektif seperti **"Sistem Koordinat Jacobian (Jacobian Coordinates)"** umumnya digunakan untuk menunda pembagian.
+> Rumus-rumus ini melibatkan **pembagian (perhitungan invers modulo)** seperti $(x_2 - x_1)^{-1}$ dan $(2y_1)^{-1}$. Karena perhitungan invers modulo memiliki biaya komputasi yang sangat tinggi, dalam implementasi praktis, sistem koordinat proyektif seperti **"Sistem Koordinat [Jacobi](https://kenji.blog/id/p/jacobi/)an ([Jacobi](https://kenji.blog/id/p/jacobi/)an Coordinates)"** umumnya digunakan untuk menunda pembagian.
 
 ---
 
@@ -273,7 +273,7 @@ Namun, jika percabangan (`if (k_i == 0)`) itu sendiri ada, masih ada risiko bahw
 
 ## 8. Implementasi Kriptografi Kurva Eliptik dalam C++
 
-Mulai dari sini, kita akan mengubah teori menjadi kode C++. Pustaka kriptografi praktis (seperti OpenSSL dan libsodium) menggunakan optimasi assembly tingkat lanjut dan sistem koordinat Jacobian, tetapi di sini untuk memperdalam pemahaman matematika, kami menunjukkan kerangka dari **implementasi Constant-Time yang mudah dipahami menggunakan sistem koordinat afinitas**.
+Mulai dari sini, kita akan mengubah teori menjadi kode C++. Pustaka kriptografi praktis (seperti OpenSSL dan libsodium) menggunakan optimasi assembly tingkat lanjut dan sistem koordinat [Jacobi](https://kenji.blog/id/p/jacobi/)an, tetapi di sini untuk memperdalam pemahaman matematika, kami menunjukkan kerangka dari **implementasi Constant-Time yang mudah dipahami menggunakan sistem koordinat afinitas**.
 
 Kami asumsikan penggunaan `boost::multiprecision::cpp_int` untuk perhitungan bilangan bulat raksasa.
 

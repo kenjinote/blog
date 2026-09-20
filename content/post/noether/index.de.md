@@ -41,15 +41,15 @@ Trotz der Promotion gab es an der Universität keine Stelle für sie, ganz einfa
 
 1915 luden [David Hilbert](https://kenji.blog/de/p/hilbert/) und Felix Klein von der Universität Göttingen Noether nach Göttingen ein, um bei der Lösung mathematischer Probleme bezüglich der Energieerhaltung in Albert Einsteins allgemeiner Relativitätstheorie zu helfen. Ihr tiefes Wissen in der Invariantentheorie wurde als unverzichtbar erachtet.
 
-Doch auch hier stieß ihre mögliche Ernennung zur regulären Dozentin (Privatdozentin) auf heftigen Widerstand von Professoren anderer Disziplinen der Philosophischen Fakultät, wiederum einfach deshalb, weil sie eine "Frau" war. Sie argumentierten: "Was werden unsere Soldaten denken, wenn sie an die Universität zurückkehren und feststellen, dass sie zu Füßen einer Frau lernen sollen?" Darauf soll Hilbert berühmt geantwortet haben:
+Doch auch hier stieß ihre mögliche Ernennung zur regulären Dozentin (Privatdozentin) auf heftigen Widerstand von Professoren anderer Disziplinen der Philosophischen Fakultät, wiederum einfach deshalb, weil sie eine "Frau" war. Sie argumentierten: "Was werden unsere Soldaten denken, wenn sie an die Universität zurückkehren und feststellen, dass sie zu Füßen einer Frau lernen sollen?" Darauf soll [Hilbert](https://kenji.blog/de/p/hilbert/) berühmt geantwortet haben:
 
 > "Ich sehe nicht, dass das Geschlecht der Kandidatin ein Argument gegen ihre Zulassung als Privatdozentin ist. Schließlich sind wir eine Universität, keine Badeanstalt."
 
-Letztendlich war sie in den ersten Jahren gezwungen, unbezahlt als "Hilberts Assistentin" unter Hilberts Namen Vorlesungen zu halten. Dennoch brachte ihre Forschung eine monumentale Leistung hervor, die die Geschichte der Physik erschüttern sollte. Dies war das 1918 veröffentlichte **Noether-Theorem**.
+Letztendlich war sie in den ersten Jahren gezwungen, unbezahlt als "[Hilbert](https://kenji.blog/de/p/hilbert/)s Assistentin" unter [Hilbert](https://kenji.blog/de/p/hilbert/)s Namen Vorlesungen zu halten. Dennoch brachte ihre Forschung eine monumentale Leistung hervor, die die Geschichte der Physik erschüttern sollte. Dies war das 1918 veröffentlichte **Noether-Theorem**.
 
 ### Mathematischer Ausdruck des Noether-Theorems
 
-Das Noether-Theorem hat eine höchst universelle Wahrheit mathematisch bewiesen: "Wenn ein physikalisches System eine kontinuierliche Symmetrie aufweist, gibt es zwangsläufig einen entsprechenden Erhaltungssatz." Betrachten wir das Wirkungsintegral $S$ basierend auf der Lagrange-Funktion $L$.
+Das Noether-Theorem hat eine höchst universelle Wahrheit mathematisch bewiesen: "Wenn ein physikalisches System eine kontinuierliche Symmetrie aufweist, gibt es zwangsläufig einen entsprechenden Erhaltungssatz." Betrachten wir das Wirkungsintegral $S$ basierend auf der [Lagrange](https://kenji.blog/de/p/lagrange/)-Funktion $L$.
 
 $$
 S = \int_{t_1}^{t_2} L(q_i, \dot{q}_i, t) dt

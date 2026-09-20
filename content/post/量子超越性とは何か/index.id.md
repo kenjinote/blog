@@ -32,7 +32,7 @@ $$
 Di sini, $\alpha, \beta \in \mathbb{C}$, dan memenuhi kondisi normalisasi $|\alpha|^2 + |\beta|^2 = 1$. Sifat ini disebut "Superposisi (Superposition)".
 
 ### Keterikatan (Entanglement) dan Produk Tensor
-Ketika ada beberapa qubit, keadaan sistem secara keseluruhan direpresentasikan oleh produk tensor dari ruang keadaan masing-masing qubit. Sistem $n$ qubit akan menjadi vektor dalam ruang Hilbert berdimensi $2^n$ $\mathcal{H}^{\otimes n}$.
+Ketika ada beberapa qubit, keadaan sistem secara keseluruhan direpresentasikan oleh produk tensor dari ruang keadaan masing-masing qubit. Sistem $n$ qubit akan menjadi vektor dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) berdimensi $2^n$ $\mathcal{H}^{\otimes n}$.
 
 $$
 |\Psi\rangle = \sum_{x \in \{0, 1\}^n} c_x |x\rangle

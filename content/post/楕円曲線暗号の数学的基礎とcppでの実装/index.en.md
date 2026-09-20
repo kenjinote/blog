@@ -41,7 +41,7 @@ As shown in the table above, to achieve a security strength of 128 bits (current
 
 To truly understand elliptic curve cryptography, it is necessary to grasp the basic concepts of abstract algebra (group theory and field theory). Here, we briefly summarize the prerequisite knowledge for constructing ECC.
 
-### 2.1. Groups and Abelian Groups
+### 2.1. Groups and [Abel](https://kenji.blog/en/p/abel/)ian Groups
 A **Group** is a pair consisting of a set $G$ and a binary operation on that set (here we'll use addition $+$), denoted as $(G, +)$, which satisfies the following four axioms:
 
 1. **Closure**: For any $a, b \in G$, $a + b \in G$.
@@ -49,14 +49,14 @@ A **Group** is a pair consisting of a set $G$ and a binary operation on that set
 3. **Identity element**: There exists an element $e \in G$ such that for any $a \in G$, $a + e = e + a = a$. For additive groups, this identity element is usually denoted as $0$ or $\mathcal{O}$.
 4. **Inverse element**: For any $a \in G$, there exists an element $b \in G$ such that $a + b = b + a = e$. This $b$ is denoted as $-a$.
 
-Furthermore, a group that satisfies the following condition, where the result does not change even if the order of the operation is swapped, is called an **Abelian group (commutative group)**.
+Furthermore, a group that satisfies the following condition, where the result does not change even if the order of the operation is swapped, is called an **[Abel](https://kenji.blog/en/p/abel/)ian group (commutative group)**.
 
 5. **Commutativity**: For any $a, b \in G$, $a + b = b + a$.
 
-The set of points on an elliptic curve, by defining a specific addition rule, constitutes this **Abelian group**.
+The set of points on an elliptic curve, by defining a specific addition rule, constitutes this **[Abel](https://kenji.blog/en/p/abel/)ian group**.
 
 ### 2.2. Finite Fields
-In cryptography, we do not use fields with continuous and infinite elements like real or complex numbers, but rather **Finite Fields** (or Galois Fields), which have a finite number of elements.
+In cryptography, we do not use fields with continuous and infinite elements like real or complex numbers, but rather **Finite Fields** (or [Galois](https://kenji.blog/en/p/galois/) Fields), which have a finite number of elements.
 
 The most basic finite field is the **prime field $\mathbb{F}_p$** using a prime number $p$. This defines the four basic arithmetic operations (addition, subtraction, multiplication, division) modulo $p$ (the remainder when divided by $p$) on the set of integers $\{0, 1, 2, \dots, p-1\}$.
 
@@ -153,7 +153,7 @@ $$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
 $$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
 
 > [!IMPORTANT]
-> These formulas include **division (calculation of modular inverses)**, such as $(x_2 - x_1)^{-1}$ and $(2y_1)^{-1}$. Since calculating modular inverses incurs a very high computational cost, practical implementations generally use projective coordinate systems like **"Jacobian Coordinates"**, which delay division.
+> These formulas include **division (calculation of modular inverses)**, such as $(x_2 - x_1)^{-1}$ and $(2y_1)^{-1}$. Since calculating modular inverses incurs a very high computational cost, practical implementations generally use projective coordinate systems like **"[Jacobi](https://kenji.blog/en/p/jacobi/)an Coordinates"**, which delay division.
 
 ---
 
@@ -273,7 +273,7 @@ However, if a branch (`if (k_i == 0)`) itself exists, the risk of execution time
 
 ## 8. Implementation of Elliptic Curve Cryptography in C++
 
-From here, we will translate the theory into C++ code. While practical cryptographic libraries (like OpenSSL or libsodium) use highly advanced assembly optimizations and Jacobian coordinates, we present the skeleton of an **easy-to-understand Constant-Time implementation using affine coordinates** to deepen mathematical understanding.
+From here, we will translate the theory into C++ code. While practical cryptographic libraries (like OpenSSL or libsodium) use highly advanced assembly optimizations and [Jacobi](https://kenji.blog/en/p/jacobi/)an coordinates, we present the skeleton of an **easy-to-understand Constant-Time implementation using affine coordinates** to deepen mathematical understanding.
 
 We assume the use of `boost::multiprecision::cpp_int` for operations on huge integers.
 

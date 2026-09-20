@@ -24,7 +24,7 @@ Menurut bukunya "The Map of My Life", dia membaca buku-buku matematika tingkat l
 
 ### 2.2 Masa-masa di Universitas Tokyo
 
-Pada tahun 1949, Shimura masuk ke Departemen Matematika, Fakultas Sains, Universitas Tokyo. Pada saat itu, komunitas matematika Jepang, meskipun berlandaskan pada teori medan kelas Teiji Takagi dan lainnya, menghadapi tantangan bagaimana mengejar tren global selama masa rekonstruksi pascaperang. Di sana, Shimura bertemu **[Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/)**, dengan siapa dia kemudian akan menjalin persahabatan yang erat dan berbagi takdir yang sama.
+Pada tahun 1949, Shimura masuk ke Departemen Matematika, Fakultas Sains, Universitas Tokyo. Pada saat itu, komunitas matematika Jepang, meskipun berlandaskan pada teori medan kelas Teiji [Takagi](https://kenji.blog/id/p/takagi-teiji/) dan lainnya, menghadapi tantangan bagaimana mengejar tren global selama masa rekonstruksi pascaperang. Di sana, Shimura bertemu **[Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/)**, dengan siapa dia kemudian akan menjalin persahabatan yang erat dan berbagi takdir yang sama.
 
 Taniyama adalah seorang matematikawan jenius dengan ide-ide intuitif dan tanpa hambatan, sedangkan Shimura adalah seorang perfeksionis yang menghargai ketelitian dan tidak pernah membiarkan kompromi dalam detail logika. Pertemuan dua sosok yang kontras ini pada akhirnya akan melahirkan benih dari teori masif yang akan mengguncang dunia matematika.
 
@@ -119,13 +119,13 @@ Meskipun sering dibayangi oleh Konjektur Taniyama-Shimura, apa yang lebih memper
 
 ### 6.1 Teori Perkalian Kompleks Dimensi Lebih Tinggi
 
-Matematikawan abad ke-19 Kronecker menunjukkan bahwa semua perluasan abelian dari lapangan kuadratik imajiner dapat dikonstruksi menggunakan titik pembagian dari kurva eliptik dengan perkalian kompleks (Jugendtraum Kronecker). Shimura melakukan proyek besar untuk menggeneralisasi hal ini ke varietas abelian berdimensi lebih tinggi.
+Matematikawan abad ke-19 [Kronecker](https://kenji.blog/id/p/kronecker/) menunjukkan bahwa semua perluasan abelian dari lapangan kuadratik imajiner dapat dikonstruksi menggunakan titik pembagian dari kurva eliptik dengan perkalian kompleks (Jugendtraum [Kronecker](https://kenji.blog/id/p/kronecker/)). Shimura melakukan proyek besar untuk menggeneralisasi hal ini ke varietas abelian berdimensi lebih tinggi.
 
 Dia mengonstruksi objek geometris masif yang merupakan analogi dimensi yang lebih tinggi dari kurva modular, menggunakan grup aljabar reduktif dan domain simetris Hermitian. Ini adalah "Varietas Shimura". Varietas Shimura memiliki struktur yang sangat kaya di mana teori bilangan, geometri aljabar, dan teori representasi saling berpotongan.
 
 ### 6.2 Posisi Varietas Shimura dalam Matematika Modern
 
-Saat ini, varietas Shimura memainkan peran sentral dalam "Program Langlands" yang diusulkan oleh Robert Langlands. Dalam program besar yang menghubungkan representasi kelompok Galois dengan representasi automorfik ini, varietas Shimura adalah panggung yang sangat diperlukan untuk mewujudkan korespondensi tersebut secara geometris. Visi Shimura juga terbukti dengan fakta bahwa teori yang dibangunnya menjadi landasan bagi perkembangan matematika beberapa dekade kemudian.
+Saat ini, varietas Shimura memainkan peran sentral dalam "Program Langlands" yang diusulkan oleh Robert Langlands. Dalam program besar yang menghubungkan representasi kelompok [Galois](https://kenji.blog/id/p/galois/) dengan representasi automorfik ini, varietas Shimura adalah panggung yang sangat diperlukan untuk mewujudkan korespondensi tersebut secara geometris. Visi Shimura juga terbukti dengan fakta bahwa teori yang dibangunnya menjadi landasan bagi perkembangan matematika beberapa dekade kemudian.
 
 ## 7. Wajah Asli Seorang Matematikawan Penyendiri: Filosofi dan Estetikanya
 

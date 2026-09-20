@@ -136,7 +136,7 @@ $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 This means that the computational complexity is **$\mathcal{O}(2^{n/2})$** for the bit length $n$. In other words, Trial Division is a **"pure exponential time algorithm"** with respect to $n$.
 For every 1 bit increase in the number of digits (the number doubles), the computational time increases by a factor of about $\sqrt{2} \approx 1.414$. If $N$ is a number exceeding 1024 bits (about 300 decimal digits), the calculation would not finish even if you spent the age of the universe.
 
-## 2. Fermat's Factorization Method
+## 2. [Fermat](https://kenji.blog/en/p/fermat/)'s Factorization Method
 
 This is a method devised by the 17th-century mathematician [Pierre de Fermat](https://kenji.blog/en/p/fermat/). Given an odd composite number $N$, it attempts to express $N$ as the difference of two squares.
 
@@ -169,8 +169,8 @@ Compared to Trial Division's $\mathcal{O}(2^{n/2})$, it is dramatically faster, 
 
 ## 4. Multiple Polynomial Quadratic Sieve (MPQS)
 
-Entering the 1980s, the "Quadratic Sieve (QS)" was devised by Carl Pomerance. This is an extension of Fermat's concept of the "difference of squares."
-While Fermat's method looked directly for $x^2 - y^2 = N$, the Quadratic Sieve looks for a much looser condition:
+Entering the 1980s, the "Quadratic Sieve (QS)" was devised by Carl Pomerance. This is an extension of [Fermat](https://kenji.blog/en/p/fermat/)'s concept of the "difference of squares."
+While [Fermat](https://kenji.blog/en/p/fermat/)'s method looked directly for $x^2 - y^2 = N$, the Quadratic Sieve looks for a much looser condition:
 
 $$ x^2 \equiv y^2 \pmod N $$
 and

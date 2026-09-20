@@ -12,7 +12,7 @@ tags: ["zahlentheorie", "Mordell", "elliptische kurven", "diophantische gleichun
 
 Einer der Mathematiker, der im 20. Jahrhundert insbesondere auf dem Gebiet der **Zahlentheorie** (Number Theory) brillante Spuren in der mathematischen Welt hinterlassen hat, ist Louis Joel Mordell (1888–1972). Er erzielte bahnbrechende Ergebnisse bei der Untersuchung diophantischer Gleichungen und legte den Grundstein für viele wichtige Theorien an der Schnittstelle von moderner algebraischer Geometrie und Zahlentheorie. In diesem Artikel werden wir das Leben von Mordell, die wichtigen Sätze und Vermutungen, die seinen Namen tragen, sowie seinen tiefgreifenden Einfluss auf die mathematische Gemeinschaft detailliert erläutern.
 
-Viele, die von Mordell gehört haben, kennen ihn wahrscheinlich durch den **Satz von Mordell** (Mordell's Theorem) oder die **Mordell-Vermutung** (Mordell Conjecture). Diese Errungenschaften waren nicht nur Beweise einzelner Sätze, sondern dienten als wichtige Vorspiele für ein großartiges mathematisches Drama, das zum Beweis von **Fermats Letztem Satz** ([Fermat's Last Theorem](https://kenji.blog/de/p/fermats-last-theorem/)) führte.
+Viele, die von Mordell gehört haben, kennen ihn wahrscheinlich durch den **Satz von Mordell** (Mordell's Theorem) oder die **Mordell-Vermutung** (Mordell Conjecture). Diese Errungenschaften waren nicht nur Beweise einzelner Sätze, sondern dienten als wichtige Vorspiele für ein großartiges mathematisches Drama, das zum Beweis von **[Fermat](https://kenji.blog/de/p/fermat/)s Letztem Satz** ([Fermat's Last Theorem](https://kenji.blog/de/p/fermats-last-theorem/)) führte.
 
 ## 2. Frühe Jahre: Vom Selbststudium nach Cambridge
 
@@ -30,7 +30,7 @@ Das berühmteste Beispiel für eine diophantische Gleichung ist die Gleichung, d
 
 $$ x^2 + y^2 = z^2 $$
 
-Die ganzzahligen Lösungen dieser Gleichung werden pythagoreische Tripel genannt, und es ist bekannt, dass es unendlich viele davon gibt. Mit zunehmendem Grad wird das Problem jedoch schnell schwierig. Die folgende Gleichung, bekannt durch Fermats Letzten Satz, ist ein Paradebeispiel:
+Die ganzzahligen Lösungen dieser Gleichung werden pythagoreische Tripel genannt, und es ist bekannt, dass es unendlich viele davon gibt. Mit zunehmendem Grad wird das Problem jedoch schnell schwierig. Die folgende Gleichung, bekannt durch [Fermat](https://kenji.blog/de/p/fermat/)s Letzten Satz, ist ein Paradebeispiel:
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 
@@ -56,7 +56,7 @@ $$ E(\mathbb{Q}) \cong E(\mathbb{Q})_{\text{tors}} \oplus \mathbb{Z}^r $$
 
 Hierbei ist $E(\mathbb{Q})_{\text{tors}}$ eine **Torsionsuntergruppe** (torsion subgroup), die aus einer endlichen Anzahl von Punkten besteht, und $r$ ist eine nichtnegative ganze Zahl, die **Rang** (rank) genannt wird.
 
-Dieser Satz bedeutet, dass es ausreicht, eine endliche Anzahl von "Basis"-Punkten zu finden, um alle unendlich vielen rationalen Punkte einer elliptischen Kurve zu finden. Es ist ein monumentales Ergebnis in der arithmetischen Geometrie. Mordells Beweis war eine moderne Verfeinerung von Fermats "Methode des unendlichen Abstiegs" (Method of infinite descent).
+Dieser Satz bedeutet, dass es ausreicht, eine endliche Anzahl von "Basis"-Punkten zu finden, um alle unendlich vielen rationalen Punkte einer elliptischen Kurve zu finden. Es ist ein monumentales Ergebnis in der arithmetischen Geometrie. Mordells Beweis war eine moderne Verfeinerung von [Fermat](https://kenji.blog/de/p/fermat/)s "Methode des unendlichen Abstiegs" (Method of infinite descent).
 
 Später, im Jahr 1928, verallgemeinerte der französische Mathematiker [André Weil](https://kenji.blog/de/p/weil/) diesen Satz auf allgemeine Zahlkörper und abelsche Varietäten, weshalb er heute oft als **Satz von Mordell-Weil** (Mordell-Weil Theorem) bezeichnet wird.
 
@@ -85,7 +85,7 @@ $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
 Diese Vermutung blieb über 60 Jahre lang ungelöst. 1983 wurde sie jedoch schließlich vom deutschen Mathematiker [Gerd Faltings](https://kenji.blog/de/p/faltings/) bewiesen und wurde so zum **Satz von Faltings** (Faltings's Theorem). Für diese Leistung wurde Faltings 1986 mit der Fields-Medaille ausgezeichnet.
 
-Darüber hinaus hat die Gleichung für Fermats Letzten Satz, $x^n + y^n = z^n$, ein Geschlecht von 3 oder mehr, wenn $n \ge 4$. Daher folgt aus der Mordell-Vermutung (Satz von Faltings) unmittelbar, dass die Fermat-Gleichung für jedes $n$ höchstens endlich viele rationale Lösungen hat.
+Darüber hinaus hat die Gleichung für [Fermat](https://kenji.blog/de/p/fermat/)s Letzten Satz, $x^n + y^n = z^n$, ein Geschlecht von 3 oder mehr, wenn $n \ge 4$. Daher folgt aus der Mordell-Vermutung (Satz von Faltings) unmittelbar, dass die [Fermat](https://kenji.blog/de/p/fermat/)-Gleichung für jedes $n$ höchstens endlich viele rationale Lösungen hat.
 
 ## 7. Beteiligung an Ramanujan und Modulformen
 

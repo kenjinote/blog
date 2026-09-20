@@ -46,13 +46,13 @@ Die Geschichte des Primzahlsatzes reicht bis in das späte 18. Jahrhundert zurü
 
 Allerdings gelang es ihnen nicht, dies streng zu beweisen.
 
-Ein großer Durchbruch beim Beweis kam durch die bahnbrechende Arbeit "Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse" von [Bernhard Riemann](https://kenji.blog/de/p/riemann/) im Jahr 1859. Riemann präsentierte einen völlig neuen Ansatz, indem er die **Zeta-Funktion** $\zeta(s)$, eine komplexe Funktion, verwendete, um die Verteilung von Primzahlen in ein Problem auf der komplexen Zahlenebene zu transformieren.
+Ein großer Durchbruch beim Beweis kam durch die bahnbrechende Arbeit "Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse" von [Bernhard Riemann](https://kenji.blog/de/p/riemann/) im Jahr 1859. [Riemann](https://kenji.blog/de/p/riemann/) präsentierte einen völlig neuen Ansatz, indem er die **Zeta-Funktion** $\zeta(s)$, eine komplexe Funktion, verwendete, um die Verteilung von Primzahlen in ein Problem auf der komplexen Zahlenebene zu transformieren.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prim}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 
 Diese Formel für das Euler-Produkt (Euler product formula) ist eine äußerst wichtige Beziehung, die eine Funktion der Summe aller natürlichen Zahlen (linke Seite) mit einem unendlichen Produkt verbindet, das nur Primzahlen betrifft (rechte Seite).
 
-Später, im Jahr 1896, vollendeten Jacques Hadamard und Charles de la Vallée Poussin unabhängig voneinander den Beweis des Primzahlsatzes auf der Grundlage von Riemanns Ideen. Der Schlüssel zu ihrem Beweis war zu zeigen, dass "die Riemannsche Zeta-Funktion $\zeta(s)$ keine Nullstellen auf der Geraden $\operatorname{Re}(s) = 1$ in der komplexen Ebene besitzt".
+Später, im Jahr 1896, vollendeten Jacques Hadamard und Charles de la Vallée Poussin unabhängig voneinander den Beweis des Primzahlsatzes auf der Grundlage von [Riemann](https://kenji.blog/de/p/riemann/)s Ideen. Der Schlüssel zu ihrem Beweis war zu zeigen, dass "die [Riemann](https://kenji.blog/de/p/riemann/)sche Zeta-Funktion $\zeta(s)$ keine Nullstellen auf der Geraden $\operatorname{Re}(s) = 1$ in der komplexen Ebene besitzt".
 
 ## Eine genauere Näherung: Das logarithmische Integral $\operatorname{Li}(x)$
 
@@ -73,17 +73,17 @@ Tatsächlich, wenn $x = 10^{10}$:
 
 Dies zeigt, welch hervorragende Näherung das logarithmische Integral bietet.
 
-## Die tiefe Beziehung zur Riemannschen Vermutung
+## Die tiefe Beziehung zur [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung
 
-Untrennbar mit dem Primzahlsatz verbunden ist die **Riemannsche Vermutung** (Riemann Hypothesis), die als das wichtigste ungelöste Problem der Mathematik gilt.
+Untrennbar mit dem Primzahlsatz verbunden ist die **[Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung** ([Riemann](https://kenji.blog/de/p/riemann/) Hypothesis), die als das wichtigste ungelöste Problem der Mathematik gilt.
 
-Die Riemannsche Vermutung besagt, dass "alle nicht-trivialen Nullstellen der Riemannschen Zeta-Funktion $\zeta(s)$ auf der Geraden mit dem Realteil $1/2$ (der kritischen Geraden) liegen".
+Die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung besagt, dass "alle nicht-trivialen Nullstellen der [Riemann](https://kenji.blog/de/p/riemann/)schen Zeta-Funktion $\zeta(s)$ auf der Geraden mit dem Realteil $1/2$ (der kritischen Geraden) liegen".
 
-Wenn bewiesen wird, dass die Riemannsche Vermutung wahr ist, erhält man die stärkste Form der Abschätzung für den Fehlerterm im Primzahlsatz (die Differenz zwischen $\pi(x)$ und $\operatorname{Li}(x)$). Speziell ist bekannt, dass eine Konstante $C$ existiert, sodass gilt:
+Wenn bewiesen wird, dass die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung wahr ist, erhält man die stärkste Form der Abschätzung für den Fehlerterm im Primzahlsatz (die Differenz zwischen $\pi(x)$ und $\operatorname{Li}(x)$). Speziell ist bekannt, dass eine Konstante $C$ existiert, sodass gilt:
 
 $$ |\pi(x) - \operatorname{Li}(x)| \le C \sqrt{x} \ln(x) $$
 
-Dies bedeutet: "Primzahlen sind so extrem regelmäßig verteilt, dass sie von einer völlig zufälligen Verteilung nicht zu unterscheiden sind." Das heißt, der Primzahlsatz beschreibt die "durchschnittliche" Verteilung der Primzahlen, während die Riemannsche Vermutung die Grenzen dieser "Schwankung (Fehler)" beschreibt.
+Dies bedeutet: "Primzahlen sind so extrem regelmäßig verteilt, dass sie von einer völlig zufälligen Verteilung nicht zu unterscheiden sind." Das heißt, der Primzahlsatz beschreibt die "durchschnittliche" Verteilung der Primzahlen, während die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung die Grenzen dieser "Schwankung (Fehler)" beschreibt.
 
 ## Den Primzahlsatz in Python überprüfen
 
@@ -146,4 +146,4 @@ Beispielsweise wird die Wahrscheinlichkeit, dass eine zufällige ungerade 1024-B
 
 Der Primzahlsatz ist einer der schönsten Sätze in der Mathematik, der die "Ordnung im Chaos" verkörpert. Die Tatsache, dass sich hinter der scheinbar zufälligen Verteilung von Primzahlen ein grundlegendes Naturgesetz in Form einer logarithmischen Funktion verbirgt, fasziniert Mathematiker weiterhin.
 
-Dieses von Genies wie Gauß, Riemann und Hadamard erschlossene Gebiet bleibt durch das enorme ungelöste Problem der Riemannschen Vermutung an der Spitze der modernen Mathematik. Das Geheimnis der Primzahlen ist tief, und die Erforschung wird weitergehen, bis wir das ganze Bild verstehen.
+Dieses von Genies wie Gauß, [Riemann](https://kenji.blog/de/p/riemann/) und Hadamard erschlossene Gebiet bleibt durch das enorme ungelöste Problem der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung an der Spitze der modernen Mathematik. Das Geheimnis der Primzahlen ist tief, und die Erforschung wird weitergehen, bis wir das ganze Bild verstehen.

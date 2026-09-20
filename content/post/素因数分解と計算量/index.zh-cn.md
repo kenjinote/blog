@@ -136,7 +136,7 @@ $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 这意味着，相对于比特长度 $n$，其时间复杂度为 **$\mathcal{O}(2^{n/2})$** 。也就是说，试除法是一个关于 $n$ 的 **“纯指数时间（Exponential time）算法”** 。
 位数每增加1比特（数值变为2倍），计算时间就会变为约 $\sqrt{2} \approx 1.414$ 倍。如果 $N$ 是一个超过1024比特（十进制约300位）的数字，即使花费宇宙年龄那么长的时间也算不完。
 
-## 2. 费马素数分解法（Fermat's Factorization Method）
+## 2. 费马素数分解法（[Fermat](https://kenji.blog/zh-cn/p/fermat/)'s Factorization Method）
 
 这是由17世纪数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)提出的方法。当给定一个奇合数 $N$ 时，它尝试将 $N$ 表示为两个平方数之差：
 

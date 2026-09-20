@@ -35,7 +35,7 @@ Dado um conjunto $G$ e uma operação $\cdot$, é um **Grupo (Group)** se:
 2. **Elemento Neutro**: $a \cdot e = e \cdot a = a$
 3. **Elemento Inverso**: $a \cdot a^{-1} = a^{-1} \cdot a = e$
 
-Se $a \cdot b = b \cdot a$ for válido, é um **Grupo Comutativo** ou **Grupo Abeliano**.
+Se $a \cdot b = b \cdot a$ for válido, é um **Grupo Comutativo** ou **Grupo [Abel](https://kenji.blog/pt/p/abel/)iano**.
 
 ```mermaid
 graph LR

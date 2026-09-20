@@ -17,17 +17,17 @@ In diesem Artikel werden wir dieses schockierende Theorem, das besagt, dass es �
 
 ---
 
-## 1. Hintergrund: Das Hilbert-Programm und die Krise der Mathematik
+## 1. Hintergrund: Das [Hilbert](https://kenji.blog/de/p/hilbert/)-Programm und die Krise der Mathematik
 
 Vom späten 19. bis zum frühen 20. Jahrhundert sah sich die mathematische Welt mit den „Paradoxien der Mengenlehre (z. B. dem Russellschen Paradoxon)“ konfrontiert, was ihre Grundlagen erschütterte. [David Hilbert](https://kenji.blog/de/p/hilbert/), die höchste Autorität der damaligen mathematischen Welt, stand auf, um diese „Krise der Mathematik“ zu lösen.
 
-Hilbert versuchte, alle mathematischen Schlussfolgerungen vollständig zu symbolisieren und die Mathematik nur durch mechanische Regeln neu aufzubauen. Das von ihm vorgeschlagene „Hilbert-Programm“ zielte darauf ab, in einem formalen System der Mathematik die folgenden drei Eigenschaften zu beweisen:
+[Hilbert](https://kenji.blog/de/p/hilbert/) versuchte, alle mathematischen Schlussfolgerungen vollständig zu symbolisieren und die Mathematik nur durch mechanische Regeln neu aufzubauen. Das von ihm vorgeschlagene „[Hilbert](https://kenji.blog/de/p/hilbert/)-Programm“ zielte darauf ab, in einem formalen System der Mathematik die folgenden drei Eigenschaften zu beweisen:
 
 1. **Widerspruchsfreiheit** (Consistency): Es gibt keine Widersprüche im System (d. h. eine Aussage $P$ und ihre Verneinung $\neg P$ werden nicht beide bewiesen).
 2. **Vollständigkeit** (Completeness): Jede mathematische Aussage kann innerhalb des Systems zwingend entweder als wahr oder falsch bewiesen werden.
 3. **Entscheidbarkeit** (Decidability): Für jede gegebene Aussage gibt es ein mechanisches Verfahren, um zu bestimmen, ob sie beweisbar ist oder nicht.
 
-Hilbert hinterließ den berühmten Satz „Wir müssen wissen. Wir werden wissen.“ und glaubte fest daran, dass die Mathematik ein Schloss perfekter Logik werden könnte, das alles lösen kann.
+[Hilbert](https://kenji.blog/de/p/hilbert/) hinterließ den berühmten Satz „Wir müssen wissen. Wir werden wissen.“ und glaubte fest daran, dass die Mathematik ein Schloss perfekter Logik werden könnte, das alles lösen kann.
 
 ```mermaid
 graph TD
@@ -47,11 +47,11 @@ Das Ziel von Gödels Theorem ist ein System, das „die Addition und Multiplikat
 
 Zum Beispiel ist die allseits bekannte Tatsache „ $1 + 1 = 2$ “ innerhalb des formalen Systems der Peano-Arithmetik nur ein „Theorem“, das durch Manipulation von Symbolen mechanisch abgeleitet wird.
 
-Hilbert dachte, dass wenn man solche formalen Systeme vergrößert, man irgendwann alle mathematischen Wahrheiten abdecken könnte.
+[Hilbert](https://kenji.blog/de/p/hilbert/) dachte, dass wenn man solche formalen Systeme vergrößert, man irgendwann alle mathematischen Wahrheiten abdecken könnte.
 
 ## 3. Der Schock des Ersten Unvollständigkeitssatzes: Aussagen, die „wahr, aber nicht beweisbar“ sind
 
-Aber 1931 veröffentlichte der damals erst 25-jährige [Kurt Gödel](https://kenji.blog/de/p/godel/) eine Arbeit, die Hilberts Traum zunichtemachte. Das ist der **Erste Unvollständigkeitssatz**.
+Aber 1931 veröffentlichte der damals erst 25-jährige [Kurt Gödel](https://kenji.blog/de/p/godel/) eine Arbeit, die [Hilbert](https://kenji.blog/de/p/hilbert/)s Traum zunichtemachte. Das ist der **Erste Unvollständigkeitssatz**.
 
 > **Erster Unvollständigkeitssatz**
 > In jedem widerspruchsfreien formalen System, das stark genug ist (um die Peano-Arithmetik zu enthalten), gibt es immer Aussagen, die wahr sind, aber innerhalb dieses Systems nicht bewiesen werden können.
@@ -114,7 +114,7 @@ Der Erste Unvollständigkeitssatz allein erschütterte bereits die mathematische
 > **Zweiter Unvollständigkeitssatz**
 > Ein widerspruchsfreies formales System (das stark genug ist) kann seine eigene Widerspruchsfreiheit nicht innerhalb des Systems beweisen.
 
-Hilbert hatte versucht zu beweisen, dass die Mathematik widerspruchsfrei ist, indem er die Mittel der Mathematik selbst nutzte (die wichtigste Aufgabe des Hilbert-Programms). Aber der Zweite Unvollständigkeitssatz deklarierte: „Kein System kann durch seine eigene Kraft beweisen, dass es nicht verrückt (widersprüchlich) ist.“
+[Hilbert](https://kenji.blog/de/p/hilbert/) hatte versucht zu beweisen, dass die Mathematik widerspruchsfrei ist, indem er die Mittel der Mathematik selbst nutzte (die wichtigste Aufgabe des [Hilbert](https://kenji.blog/de/p/hilbert/)-Programms). Aber der Zweite Unvollständigkeitssatz deklarierte: „Kein System kann durch seine eigene Kraft beweisen, dass es nicht verrückt (widersprüchlich) ist.“
 
 Um dies intuitiv zu verstehen, denken wir so:
 Wenn jemand behauptet: „Ich lüge nie!“. Aber wir können nicht allein auf der Grundlage seiner Worte beweisen, dass „diese Person kein Lügner ist“. Denn wenn diese Person ein Lügner wäre, könnte die Aussage „Ich lüge nie“ selbst eine Lüge sein.

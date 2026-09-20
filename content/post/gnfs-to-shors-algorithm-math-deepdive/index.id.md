@@ -16,7 +16,7 @@ Dalam artikel ini, kita akan mengungkap mekanisme matematis dari **"General Numb
 
 ---
 
-## 1. Pendekatan Faktorisasi Prima dalam Komputasi Klasik: Perkembangan dari Metode Faktorisasi Fermat
+## 1. Pendekatan Faktorisasi Prima dalam Komputasi Klasik: Perkembangan dari Metode Faktorisasi [Fermat](https://kenji.blog/id/p/fermat/)
 
 Masalah faktorisasi prima adalah masalah untuk menemukan bilangan prima $p, q$ sedemikian rupa sehingga $N = p \times q$ untuk suatu bilangan komposit $N$ yang diberikan.
 

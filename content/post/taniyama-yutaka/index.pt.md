@@ -10,13 +10,13 @@ tags: ["Yutaka Taniyama", "Matemática", "Último Teorema de Fermat", "Conjectur
 
 # [[Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/): A Vida e as Conquistas do Gênio Matemático que Desafiou Problemas Não Resolvidos](https://kenji.blog/p/taniyama-yutaka/)
 
-A demonstração do **Último Teorema de Fermat** é um dos desenvolvimentos mais dramáticos e importantes da matemática moderna. Por trás dessa conquista monumental, reside uma espantosa conjectura proposta por dois matemáticos japoneses. Um deles foi **[Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/)** (1927 - 1958), que faleceu muito jovem. Neste artigo, vamos nos aprofundar na grandiosa visão por trás da "Conjectura de Taniyama-Shimura" que ele propôs, bem como em sua própria vida turbulenta.
+A demonstração do **Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)** é um dos desenvolvimentos mais dramáticos e importantes da matemática moderna. Por trás dessa conquista monumental, reside uma espantosa conjectura proposta por dois matemáticos japoneses. Um deles foi **[Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/)** (1927 - 1958), que faleceu muito jovem. Neste artigo, vamos nos aprofundar na grandiosa visão por trás da "Conjectura de Taniyama-Shimura" que ele propôs, bem como em sua própria vida turbulenta.
 
 ## 1. O Início da Vida e a Juventude de [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/)
 
 [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/) nasceu em 1927, na cidade de Kisai, província de Saitama (hoje, cidade de Kazo). Ele demonstrou um talento extraordinário para a matemática desde a infância, mas seus anos de estudante coincidiram com o período caótico da Segunda Guerra Mundial. Ele contraiu tuberculose e muitas vezes perdeu longos períodos de aulas no ensino médio. Durante a sua recuperação, lia livros de matemática sozinho e desenvolveu um profundo pensamento matemático através do auto-estudo. Diz-se que esse tempo de isolamento aprimorou o seu sentido matemático, único e intuitivo.
 
-Após ingressar no Departamento de Matemática da Faculdade de Ciências da Universidade de Tóquio, desenvolveu um forte interesse em álgebra abstrata e teoria dos números. Apesar de estar num período de reconstrução pós-guerra, a comunidade matemática japonesa da época ambicionava realizar pesquisas de nível mundial, influenciada por jovens investigadores inspirados por Teiji Takagi e Emil Artin. Taniyama deixou o seu talento florescer no meio de todo esse entusiasmo.
+Após ingressar no Departamento de Matemática da Faculdade de Ciências da Universidade de Tóquio, desenvolveu um forte interesse em álgebra abstrata e teoria dos números. Apesar de estar num período de reconstrução pós-guerra, a comunidade matemática japonesa da época ambicionava realizar pesquisas de nível mundial, influenciada por jovens investigadores inspirados por Teiji [Takagi](https://kenji.blog/pt/p/takagi-teiji/) e Emil Artin. Taniyama deixou o seu talento florescer no meio de todo esse entusiasmo.
 
 ## 2. O Encontro com [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/)
 
@@ -74,22 +74,22 @@ A carreira de Taniyama como matemático parecia correr de feição, tendo recebi
 
 A sua nota de suicídio não referia qualquer preocupação específica. Escreveu: "Até ontem não tinha uma intenção definida de me matar", o que sugere que nem ele próprio conseguia explicar as suas ações de forma totalmente lógica. Poderá ter sido exaustão por excesso de trabalho ou uma vaga ansiedade em relação ao futuro, mas as razões exatas continuam por desvendar até aos dias de hoje. Algumas semanas mais tarde, a sua noiva, que o amava profundamente, também tirou a sua própria vida, deixando uma nota com a seguinte mensagem: "Já que ele partiu sozinho, eu devo ir para ficar a seu lado." Este trágico desfecho deixou cicatrizes profundas nos corações dos envolvidos.
 
-## 6. Uma Ponte para o Último Teorema de Fermat
+## 6. Uma Ponte para o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)
 
-Após a morte de Taniyama, [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/) formulou rigorosamente esta conjectura e difundiu-a aos matemáticos de todo o mundo. Durante muito tempo, esta conjectura foi considerada um objetivo tão difícil que parecia "impossível de provar". No entanto, uma dramática reviravolta ocorreu na década de 1980. O matemático alemão Gerhard Frey propôs uma ideia espantosa: **"Se o Último Teorema de Fermat tiver um contraexemplo, a curva elíptica construída a partir desse contraexemplo não poderá ser modular."**
+Após a morte de Taniyama, [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/) formulou rigorosamente esta conjectura e difundiu-a aos matemáticos de todo o mundo. Durante muito tempo, esta conjectura foi considerada um objetivo tão difícil que parecia "impossível de provar". No entanto, uma dramática reviravolta ocorreu na década de 1980. O matemático alemão Gerhard Frey propôs uma ideia espantosa: **"Se o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) tiver um contraexemplo, a curva elíptica construída a partir desse contraexemplo não poderá ser modular."**
 
-A curva elíptica construída por Frey (a curva de Frey) tomava a seguinte forma. Suponhamos que existe uma solução inteira para a equação de Fermat $A^n + B^n = C^n$. Utilizando essa solução, criamos a seguinte curva elíptica:
+A curva elíptica construída por Frey (a curva de Frey) tomava a seguinte forma. Suponhamos que existe uma solução inteira para a equação de [Fermat](https://kenji.blog/pt/p/fermat/) $A^n + B^n = C^n$. Utilizando essa solução, criamos a seguinte curva elíptica:
 
 $$ E: y^2 = x (x - A^n) (x + B^n) $$
 
 Esta curva tem propriedades extremamente "anormais", e pensava-se ser absolutamente impossível ser construída a partir de formas modulares (o que significa que não é modular). A intuição de Frey viria mais tarde a ser rigorosamente provada pelo matemático norte-americano Ken Ribet, através da "Conjectura Epsilon", formulada pelo matemático francês Jean-Pierre Serre.
 
 Isto completou um quadro lógico:
-1. Se o Último Teorema de Fermat for falso, existirá uma curva elíptica não modular (curva de Frey).
+1. Se o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) for falso, existirá uma curva elíptica não modular (curva de Frey).
 2. Porém, de acordo com a Conjectura de Taniyama-Shimura, "todas as curvas elípticas são modulares".
-3. Portanto, se a Conjectura de Taniyama-Shimura for verdadeira, a curva de Frey não poderá existir, e o Último Teorema de Fermat deverá também ser verdadeiro.
+3. Portanto, se a Conjectura de Taniyama-Shimura for verdadeira, a curva de Frey não poderá existir, e o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) deverá também ser verdadeiro.
 
-Por outras palavras, a cadeia do destino unia-se: **"Se a Conjectura de Taniyama-Shimura for provada, o Último Teorema de Fermat, por resolver durante mais de 300 anos, será automaticamente provado também."**
+Por outras palavras, a cadeia do destino unia-se: **"Se a Conjectura de Taniyama-Shimura for provada, o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), por resolver durante mais de 300 anos, será automaticamente provado também."**
 
 ```mermaid
 flowchart TD
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. Prova da Conjectura e o Programa de Langlands
 
-A pessoa que mais se sentiu inspirada por este facto foi o matemático britânico **[Andrew Wiles](https://kenji.blog/pt/p/wiles/)**. Desde a infância que era fascinado pelo Último Teorema de Fermat, e decidiu dedicar a sua vida a prová-lo. Após sete anos de pesquisa secreta, anunciou em 1993 que tinha "provado a Conjectura de Taniyama-Shimura para curvas elípticas semiestáveis". Embora tenha sido encontrada uma lacuna numa parte da demonstração, com a ajuda de um ex-aluno seu, Richard Taylor, conseguiu preenchê-la com sucesso em 1995 e publicou a demonstração completa. Como resultado, a parte crucial da conjectura deixada por Taniyama foi provada e, simultaneamente, o Último Teorema de Fermat tornou-se numa verdade eterna.
+A pessoa que mais se sentiu inspirada por este facto foi o matemático britânico **[Andrew Wiles](https://kenji.blog/pt/p/wiles/)**. Desde a infância que era fascinado pelo Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), e decidiu dedicar a sua vida a prová-lo. Após sete anos de pesquisa secreta, anunciou em 1993 que tinha "provado a Conjectura de Taniyama-Shimura para curvas elípticas semiestáveis". Embora tenha sido encontrada uma lacuna numa parte da demonstração, com a ajuda de um ex-aluno seu, Richard Taylor, conseguiu preenchê-la com sucesso em 1995 e publicou a demonstração completa. Como resultado, a parte crucial da conjectura deixada por Taniyama foi provada e, simultaneamente, o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) tornou-se numa verdade eterna.
 
 Posteriormente, através dos esforços adicionais de Christophe Breuil, Brian Conrad, Fred Diamond e Richard Taylor, a Conjectura de Taniyama-Shimura foi completamente provada para todas as curvas elípticas em 2001. Atualmente, este teorema é conhecido como o "Teorema de Modularidade (Modularity Theorem)".
 
@@ -109,6 +109,6 @@ A Conjectura de Taniyama-Shimura é o exemplo mais belo e bem-sucedido da grandi
 
 ## 8. Conclusão
 
-A modesta conjectura apresentada por [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/) no simpósio de Nikko tornou-se a base que estabeleceu o Último Teorema de Fermat, um pináculo do intelecto humano, meio século depois. A sua perceção das "ligações ocultas por detrás de diferentes objetos matemáticos" continua a inspirar os matemáticos dos dias de hoje.
+A modesta conjectura apresentada por [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/) no simpósio de Nikko tornou-se a base que estabeleceu o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), um pináculo do intelecto humano, meio século depois. A sua perceção das "ligações ocultas por detrás de diferentes objetos matemáticos" continua a inspirar os matemáticos dos dias de hoje.
 
 O genial matemático [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/) morreu jovem, mas a belíssima conjectura que deixou para trás continuará a ser um guia a iluminar o vasto universo da matemática. Não há como não questionar que outras profundas verdades ele nos teria revelado, caso tivesse sobrevivido.

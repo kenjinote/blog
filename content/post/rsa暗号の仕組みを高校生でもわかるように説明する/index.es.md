@@ -118,7 +118,7 @@ Por ejemplo, supongamos que queremos encontrar el resto de dividir $7^{100}$ ent
 
 ## 4. Fundamento matemático 3 que sustenta el cifrado RSA: La función de Euler y el Teorema de Euler
 
-A partir de aquí entran las matemáticas mágicas que son el núcleo del cifrado RSA. Aparece el "Teorema de Euler", que es una generalización del "Pequeño teorema de Fermat".
+A partir de aquí entran las matemáticas mágicas que son el núcleo del cifrado RSA. Aparece el "Teorema de Euler", que es una generalización del "Pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/)".
 
 ### 4.1 La función indicatriz de Euler $\phi(N)$
 
@@ -145,7 +145,7 @@ Esta propiedad funciona como la "puerta trasera secreta (trapdoor)" del cifrado 
 Cuando dos enteros $a$ y $N$ son coprimos, se cumple la siguiente congruencia:
 $$ a^{\phi(N)} \equiv 1 \pmod N $$
 
-Esta es una propiedad sorprendente que dice que "si multiplicas un número $a$ por sí mismo $\phi(N)$ veces y lo divides por $N$, el resto siempre será $1$". (Cuando $N$ es un número primo $p$, se convierte en $a^{p-1} \equiv 1 \pmod p$, lo que se conoce como el Pequeño teorema de Fermat).
+Esta es una propiedad sorprendente que dice que "si multiplicas un número $a$ por sí mismo $\phi(N)$ veces y lo divides por $N$, el resto siempre será $1$". (Cuando $N$ es un número primo $p$, se convierte en $a^{p-1} \equiv 1 \pmod p$, lo que se conoce como el Pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/)).
 
 Modifiquemos este teorema de Euler. Multiplicamos ambos lados por $a$ una vez más:
 $$ a^{\phi(N) + 1} \equiv a \pmod N $$

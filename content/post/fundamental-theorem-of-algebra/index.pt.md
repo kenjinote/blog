@@ -35,7 +35,7 @@ Entrando no século XVIII, gigantes matemáticos como Jean le Rond d'Alembert e 
 
 A primeira prova essencialmente completa deste teorema inexpugnável foi dada por ninguém menos que [Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/). Em sua dissertação de doutorado de 1799, ele apontou as falhas nas provas dos matemáticos anteriores e apresentou uma prova baseada na intuição geométrica. Gauss forneceu quatro provas diferentes para este teorema ao longo da sua vida, indicando a importância que lhe atribuía.
 
-A prova mais padrão e elegante hoje é considerada aquela baseada na teoria da análise complexa, construída pelo matemático francês Joseph Liouville e outros. Na segunda metade deste artigo, introduziremos a prova usando o teorema de Liouville.
+A prova mais padrão e elegante hoje é considerada aquela baseada na teoria da análise complexa, construída pelo matemático francês Joseph [Liouville](https://kenji.blog/pt/p/liouville/) e outros. Na segunda metade deste artigo, introduziremos a prova usando o teorema de [Liouville](https://kenji.blog/pt/p/liouville/).
 
 ## Enunciado Preciso do Teorema
 
@@ -78,26 +78,26 @@ flowchart TD
     E -->|"P(z) = 0"| F["A existência de uma raiz é provada"]
 ```
 
-## Preparação da Análise Complexa: Teorema de Liouville
+## Preparação da Análise Complexa: Teorema de [Liouville](https://kenji.blog/pt/p/liouville/)
 
-Tendo obtido uma compreensão intuitiva, introduziremos agora a prova mais bela e rigorosa da matemática moderna. Esta prova usa uma arma poderosa da análise complexa: o **Teorema de Liouville**.
+Tendo obtido uma compreensão intuitiva, introduziremos agora a prova mais bela e rigorosa da matemática moderna. Esta prova usa uma arma poderosa da análise complexa: o **Teorema de [Liouville](https://kenji.blog/pt/p/liouville/)**.
 
 A análise complexa é o campo que trata do cálculo de funções de variáveis complexas. Ao contrário das funções de números reais, a diferenciabilidade (holomorfia) de funções complexas é uma condição extremamente forte; uma função complexa que é diferenciável mesmo que uma única vez tem a propriedade surpreendente de ser infinitamente diferenciável e capaz de ser expandida numa série de Taylor.
 
 Uma função que é diferenciável (holomorfa) sobre todo o plano complexo é chamada de **função inteira**. Os polinômios $P(z)$ e a função exponencial $e^z$ são exemplos típicos de funções inteiras.
 
-O teorema de Liouville é um teorema profundamente poderoso a respeito destas funções inteiras.
+O teorema de [Liouville](https://kenji.blog/pt/p/liouville/) é um teorema profundamente poderoso a respeito destas funções inteiras.
 
-**Teorema (Teorema de Liouville)**
+**Teorema (Teorema de [Liouville](https://kenji.blog/pt/p/liouville/))**
 Toda função inteira limitada deve ser uma função constante.
 
 Aqui, "limitada" significa que para todos os números complexos $z$, o valor absoluto da função $|f(z)|$ não excede um certo número real $M$; isto é, existe um $M$ tal que $|f(z)| \le M$.
 
-No mundo dos números reais, uma função como $f(x) = \sin(x)$ é diferenciável ao longo de toda a reta numérica e é limitada por $-1 \le \sin(x) \le 1$. Não é uma função constante. No entanto, o teorema de Liouville afirma que isso nunca pode acontecer no mundo complexo. Se uma função é holomorfa sobre todo o plano complexo e o seu valor não diverge para o infinito, é meramente uma constante plana.
+No mundo dos números reais, uma função como $f(x) = \sin(x)$ é diferenciável ao longo de toda a reta numérica e é limitada por $-1 \le \sin(x) \le 1$. Não é uma função constante. No entanto, o teorema de [Liouville](https://kenji.blog/pt/p/liouville/) afirma que isso nunca pode acontecer no mundo complexo. Se uma função é holomorfa sobre todo o plano complexo e o seu valor não diverge para o infinito, é meramente uma constante plana.
 
 ## Prova Rigorosa do [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/)
 
-Vamos agora provar o [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/) usando o teorema de Liouville. Você ficará surpreso com o brilhantismo desta prova. Aqui, usamos uma prova por contradição (redução ao absurdo).
+Vamos agora provar o [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/) usando o teorema de [Liouville](https://kenji.blog/pt/p/liouville/). Você ficará surpreso com o brilhantismo desta prova. Aqui, usamos uma prova por contradição (redução ao absurdo).
 
 **Prova**
 
@@ -134,7 +134,7 @@ Por outro lado, dentro da região do disco fechado (uma região fechada limitada
 Portanto, tanto fora como dentro do círculo, o valor absoluto de $f(z)$ nunca excede um certo limite superior finito. Isto é, $f(z)$ é uma função **limitada**.
 
 Até este ponto, mostramos que $f(z)$ é tanto uma "função inteira" como "limitada".
-Aqui, aplicamos o **teorema de Liouville**. Uma função inteira limitada deve ser uma constante. Portanto, existe um número complexo $c$ tal que para todo $z$,
+Aqui, aplicamos o **teorema de [Liouville](https://kenji.blog/pt/p/liouville/)**. Uma função inteira limitada deve ser uma constante. Portanto, existe um número complexo $c$ tal que para todo $z$,
 
 $$
 f(z) = c
@@ -172,8 +172,8 @@ Além disso, para polinômios em que todos os coeficientes são números reais, 
 
 ## Conclusão
 
-Neste artigo, analisamos em detalhe o [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/), cobrindo o seu contexto histórico, a intuição topológica e a prova analítica complexa usando o teorema de Liouville.
+Neste artigo, analisamos em detalhe o [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/), cobrindo o seu contexto histórico, a intuição topológica e a prova analítica complexa usando o teorema de [Liouville](https://kenji.blog/pt/p/liouville/).
 
 À primeira vista, é um teorema sobre equações algébricas, mas o fato de a sua prova mais elegante tomar emprestado o poder da análise (cálculo) e da topologia demonstra a profundidade da matemática e a beleza de como diferentes campos estão intimamente entrelaçados.
 
-A longa busca da humanidade para encontrar as raízes das equações ganhou o vasto palco do plano complexo através da introdução dos novos números imaginários, e a completude deste palco foi provada pelo [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/). Este teorema tornou-se a chave que abriu as portas brilhantes que conduzem à teoria de Galois e à geometria algébrica, que formam a base da matemática moderna.
+A longa busca da humanidade para encontrar as raízes das equações ganhou o vasto palco do plano complexo através da introdução dos novos números imaginários, e a completude deste palco foi provada pelo [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/). Este teorema tornou-se a chave que abriu as portas brilhantes que conduzem à teoria de [Galois](https://kenji.blog/pt/p/galois/) e à geometria algébrica, que formam a base da matemática moderna.

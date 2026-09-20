@@ -13,15 +13,15 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 In der modernen digitalen Gesellschaft, insbesondere bei der Kommunikation über das Internet, ist "Verschlüsselung" zu einer unverzichtbaren Basistechnologie geworden. Dass wir Websites über HTTPS sicher in einem Webbrowser durchsuchen, Finanztransaktionen im Online-Banking durchführen und privat in Messaging-Apps kommunizieren können, liegt daran, dass kryptographische Protokolle, die durch fortgeschrittene mathematische Theorien gestützt werden, im Hintergrund arbeiten. Eine besonders wichtige Rolle spielt dabei die "Public-Key-Kryptographie", deren prominentester Vertreter die **RSA-Verschlüsselung** ist.
 
-Die Sicherheit und Gültigkeit vieler kryptographischer Algorithmen, einschließlich RSA, hängt stark von einem sehr schönen und mächtigen Satz ab, der im 17. Jahrhundert vom französischen Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde. Das ist der **kleine Satz von Fermat**. Darüber hinaus spielt der Satz von [Leonhard Euler](https://kenji.blog/de/p/euler/), der diesen verallgemeinert, eine entscheidende Rolle in der Kryptographietheorie.
+Die Sicherheit und Gültigkeit vieler kryptographischer Algorithmen, einschließlich RSA, hängt stark von einem sehr schönen und mächtigen Satz ab, der im 17. Jahrhundert vom französischen Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde. Das ist der **kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/)**. Darüber hinaus spielt der Satz von [Leonhard Euler](https://kenji.blog/de/p/euler/), der diesen verallgemeinert, eine entscheidende Rolle in der Kryptographietheorie.
 
-In diesem Artikel werden wir von Grund auf ausführlich erklären, wie die Entdeckung der reinen Mathematik, der kleine Satz von Fermat, in der modernen, praktischen Kryptographie, insbesondere beim "Primzahltest" und bei der "RSA-Verschlüsselung", Anwendung findet. Dies ist ein sehr detaillierter technischer Leitfaden, der mathematische Beweise, Ver- und Entschlüsselungsmechanismen sowie spezifische Algorithmus-Implementierungen in C++ und Python abdeckt.
+In diesem Artikel werden wir von Grund auf ausführlich erklären, wie die Entdeckung der reinen Mathematik, der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/), in der modernen, praktischen Kryptographie, insbesondere beim "Primzahltest" und bei der "RSA-Verschlüsselung", Anwendung findet. Dies ist ein sehr detaillierter technischer Leitfaden, der mathematische Beweise, Ver- und Entschlüsselungsmechanismen sowie spezifische Algorithmus-Implementierungen in C++ und Python abdeckt.
 
 ---
 
 ## 2. Grundlagen der Kongruenzen und der modularen Arithmetik
 
-Um den kleinen Satz von Fermat zu verstehen, müssen wir uns zunächst mit dem mathematischen Konzept der "modularen Arithmetik (Kongruenz)" vertraut machen. Die modulare Arithmetik ist ein Rechensystem, das sich auf den "Rest" nach der Division durch eine bestimmte feste Zahl (Modul genannt) konzentriert. Da es sich um eine Berechnung wie beim Zifferblatt einer Uhr (die in 12 Stunden einen Umlauf macht) handelt, wird sie auch "Uhrenarithmetik" genannt.
+Um den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) zu verstehen, müssen wir uns zunächst mit dem mathematischen Konzept der "modularen Arithmetik (Kongruenz)" vertraut machen. Die modulare Arithmetik ist ein Rechensystem, das sich auf den "Rest" nach der Division durch eine bestimmte feste Zahl (Modul genannt) konzentriert. Da es sich um eine Berechnung wie beim Zifferblatt einer Uhr (die in 12 Stunden einen Umlauf macht) handelt, wird sie auch "Uhrenarithmetik" genannt.
 
 Wenn die Reste der Division der ganzen Zahlen $a$ und $b$ durch eine positive ganze Zahl $n$ gleich sind, wird dies mathematisch wie folgt beschrieben:
 
@@ -46,15 +46,15 @@ Bei der **Division** ist jedoch Vorsicht geboten. Im Allgemeinen bedeutet $a \ti
 
 ---
 
-## 3. Mathematischer Hintergrund und Beweis des kleinen Satzes von Fermat
+## 3. Mathematischer Hintergrund und Beweis des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/)
 
-Nachdem wir nun die Grundlagen der modularen Arithmetik behandelt haben, kommen wir zum Hauptthema: dem kleinen Satz von Fermat.
+Nachdem wir nun die Grundlagen der modularen Arithmetik behandelt haben, kommen wir zum Hauptthema: dem kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/).
 
 ### 3.1 Definition des Satzes
 
 [Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) wird wie folgt formuliert:
 
-> **Kleiner Satz von Fermat ([Fermat's Little Theorem](https://kenji.blog/de/p/fermats-little-theorem/))**
+> **Kleiner Satz von [Fermat](https://kenji.blog/de/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/de/p/fermats-little-theorem/))**
 > Sei $p$ eine Primzahl und $a$ eine beliebige ganze Zahl, die kein Vielfaches von $p$ ist (d.h. $a$ und $p$ sind teilerfremd). Dann gilt die folgende Kongruenz:
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
@@ -106,7 +106,7 @@ $$
 a^{p-1} \equiv 1 \pmod p
 $$
 
-Dies ist der Beweis für den kleinen Satz von Fermat.
+Dies ist der Beweis für den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/).
 
 ---
 
@@ -126,32 +126,32 @@ Diese Eigenschaft ist die Kernlogik bei der Schlüsselgenerierung für die RSA-V
 
 ### 4.2 Der Satz von Euler
 
-Euler verallgemeinerte den kleinen Satz von Fermat wie folgt:
+Euler verallgemeinerte den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) wie folgt:
 
 > **Satz von Euler (Euler's Theorem)**
 > Für eine positive ganze Zahl $n$ und eine zu ihr teilerfremde ganze Zahl $a$ gilt:
 > $$ a^{\phi(n)} \equiv 1 \pmod n $$
 
-Wenn $n$ eine Primzahl $p$ ist, dann ist $\phi(p) = p - 1$, also ist dies genau der kleine Satz von Fermat ($a^{p-1} \equiv 1 \pmod p$). [Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) ist also nur ein Spezialfall des Satzes von Euler.
+Wenn $n$ eine Primzahl $p$ ist, dann ist $\phi(p) = p - 1$, also ist dies genau der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/) ($a^{p-1} \equiv 1 \pmod p$). [Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) ist also nur ein Spezialfall des Satzes von Euler.
 
 ---
 
-## 5. Riesige Primzahlen finden: Der Fermat-Primzahltest
+## 5. Riesige Primzahlen finden: Der [Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest
 
 In der Kryptographie (wie bei der RSA-Verschlüsselung und dem Diffie-Hellman-Schlüsselaustausch) ist es notwendig, schnell "riesige Primzahlen" mit hunderten von Ziffern zu finden. Um jedoch zu testen, ob eine riesige Zahl $N$ prim ist, würde die Methode der "Probedivision", bei der man versucht, durch alle Zahlen von $2$ bis $\sqrt{N}$ zu teilen, etwa so lange dauern wie das Alter des Universums.
 
-Hier kommt der **Fermat-Primzahltest (Fermat Primality Test)** ins Spiel, ein "probabilistischer Primzahltest", der den kleinen Satz von Fermat umkehrt.
+Hier kommt der **[Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest ([Fermat](https://kenji.blog/de/p/fermat/) Primality Test)** ins Spiel, ein "probabilistischer Primzahltest", der den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) umkehrt.
 
 ### 5.1 Was ist ein probabilistischer Primzahltest?
 
-Nach dem kleinen Satz von Fermat gilt, wenn $p$ eine Primzahl ist, für jedes $a$ ($1 < a < p$) immer $a^{p-1} \equiv 1 \pmod p$.
+Nach dem kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) gilt, wenn $p$ eine Primzahl ist, für jedes $a$ ($1 < a < p$) immer $a^{p-1} \equiv 1 \pmod p$.
 Wenn wir die Kontraposition davon nehmen, können wir sagen: "Wenn es ein $a$ gibt, für das $a^{p-1} \not\equiv 1 \pmod p$ ist, dann ist $p$ **absolut keine Primzahl (es ist eine zusammengesetzte Zahl)**".
 
 Wenn wir also testen wollen, ob $N$ prim ist, wählen wir zufällig einige $a$ und berechnen $a^{N-1} \pmod N$, um zu sehen, ob das Ergebnis $1$ ist. Wenn wir auch nur einmal ein anderes Ergebnis als $1$ erhalten, ist mit Sicherheit bestätigt, dass $N$ eine zusammengesetzte Zahl ist. Wenn das Ergebnis nach vielen Versuchen immer $1$ ist, können wir mit hoher Wahrscheinlichkeit schlussfolgern, dass $N$ "wahrscheinlich eine Primzahl ist".
 
 ### 5.2 Erklärung des Algorithmus und Flussdiagramm
 
-Der Algorithmus für den Fermat-Test ist wie folgt:
+Der Algorithmus für den [Fermat](https://kenji.blog/de/p/fermat/)-Test ist wie folgt:
 
 ```mermaid
 flowchart TD
@@ -171,9 +171,9 @@ flowchart TD
 
 ### 5.3 Die Falle der Carmichael-Zahlen (Pseudoprimzahlen)
 
-Der Fermat-Test ist sehr schnell, hat aber einen großen Fehler. Es gibt teuflische Zahlen, die zusammengesetzt sind, aber dennoch $a^{N-1} \equiv 1 \pmod N$ für alle $a$ erfüllen. Diese werden **Carmichael-Zahlen (Carmichael numbers)** genannt. Die kleinste Carmichael-Zahl ist $561$ ($3 \times 11 \times 17$).
+Der [Fermat](https://kenji.blog/de/p/fermat/)-Test ist sehr schnell, hat aber einen großen Fehler. Es gibt teuflische Zahlen, die zusammengesetzt sind, aber dennoch $a^{N-1} \equiv 1 \pmod N$ für alle $a$ erfüllen. Diese werden **Carmichael-Zahlen (Carmichael numbers)** genannt. Die kleinste Carmichael-Zahl ist $561$ ($3 \times 11 \times 17$).
 
-Aufgrund der Existenz von Carmichael-Zahlen kann ein reiner Fermat-Test allein keinen absoluten Primzahltest garantieren. Daher verwenden reale Verschlüsselungssysteme (wie OpenSSL) standardmäßig den **Miller-Rabin-Primzahltest**, der eine Verbesserung des Fermat-Tests darstellt. Der Miller-Rabin-Test kann Carmichael-Zahlen erkennen, wodurch die Wahrscheinlichkeit eines falschen Ergebnisses praktisch auf Null reduziert wird.
+Aufgrund der Existenz von Carmichael-Zahlen kann ein reiner [Fermat](https://kenji.blog/de/p/fermat/)-Test allein keinen absoluten Primzahltest garantieren. Daher verwenden reale Verschlüsselungssysteme (wie OpenSSL) standardmäßig den **Miller-Rabin-Primzahltest**, der eine Verbesserung des [Fermat](https://kenji.blog/de/p/fermat/)-Tests darstellt. Der Miller-Rabin-Test kann Carmichael-Zahlen erkennen, wodurch die Wahrscheinlichkeit eines falschen Ergebnisses praktisch auf Null reduziert wird.
 
 ### 5.4 Schnelles modulares Potenzieren (Binäre Exponentiation)
 
@@ -184,7 +184,7 @@ Die Lösung dafür ist die **binäre Exponentiation (Exponentiation by Squaring)
 
 ## 6. Implementierung von Primzahltest und modularem Potenzieren
 
-Lassen Sie uns nun den Fermat-Primzahltest und die binäre Exponentiation in C++ und Python implementieren.
+Lassen Sie uns nun den [Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest und die binäre Exponentiation in C++ und Python implementieren.
 
 ### 6.1 Implementierung in C++
 
@@ -281,9 +281,9 @@ else:
 
 ---
 
-## 7. Anwendung auf die RSA-Verschlüsselung: Wo Fermat und Euler zusammenkommen
+## 7. Anwendung auf die RSA-Verschlüsselung: Wo [Fermat](https://kenji.blog/de/p/fermat/) und Euler zusammenkommen
 
-Die großartigste Anwendung des kleinen Satzes von Fermat (und des Satzes von Euler) ist die **RSA-Verschlüsselung**, die 1977 von Rivest, Shamir und Adleman entwickelt wurde.
+Die großartigste Anwendung des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/) (und des Satzes von Euler) ist die **RSA-Verschlüsselung**, die 1977 von Rivest, Shamir und Adleman entwickelt wurde.
 Die RSA-Verschlüsselung ist ein revolutionäres "Public-Key-Kryptographie"-System, das es ermöglicht, den Schlüssel zur Verschlüsselung (öffentlicher Schlüssel) der ganzen Welt zugänglich zu machen, während nur der Empfänger den Schlüssel zur Entschlüsselung (privater Schlüssel) kennt.
 
 Diese Asymmetrie beruht auf der rechnerischen Sicherheit der Tatsache, dass "es extrem schwierig ist, eine riesige zusammengesetzte Zahl in ihre Primfaktoren zu zerlegen".
@@ -344,7 +344,7 @@ Erstaunlicherweise stimmt das Ergebnis dieser Berechnung $M'$ perfekt mit der ur
 
 ### 7.2 Warum kann es entschlüsselt werden? (Mathematischer Beweis)
 
-Hier zeigen der kleine Satz von Fermat (und der Satz von Euler) ihren wahren Wert. Warum kehrt $C^d \pmod N$ zu $M$ zurück?
+Hier zeigen der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/) (und der Satz von Euler) ihren wahren Wert. Warum kehrt $C^d \pmod N$ zu $M$ zurück?
 
 Lassen Sie uns die Entschlüsselungsformel erweitern.
 Da $C \equiv M^e \pmod N$, haben wir:
@@ -361,7 +361,7 @@ Hier kommt der **Satz von Euler** ($M^{\phi(N)} \equiv 1 \pmod N$) ins Spiel. (*
 Wenden wir den Satz von Euler an, da $M^{\phi(N)} \equiv 1$ ist:
 $$ M \cdot (1)^k \equiv M \pmod N $$
 
-Hervorragend, $M$ wurde wiederhergestellt! Die Eigenschaften von Zahlen, die von Fermat und Euler vor Hunderten von Jahren entdeckt wurden, garantieren perfekt die Vertraulichkeit der modernen digitalen Kommunikation.
+Hervorragend, $M$ wurde wiederhergestellt! Die Eigenschaften von Zahlen, die von [Fermat](https://kenji.blog/de/p/fermat/) und Euler vor Hunderten von Jahren entdeckt wurden, garantieren perfekt die Vertraulichkeit der modernen digitalen Kommunikation.
 
 ---
 
@@ -466,11 +466,11 @@ Wenn Sie diesen Code ausführen, können Sie sehen, wie ein Array von Zeichen in
 
 ## 9. Fazit: Die Kreuzung von mathematischer Schönheit und Praktikabilität
 
-Als [Pierre de Fermat](https://kenji.blog/de/p/fermat/) im 17. Jahrhundert diesen "kleinen Satz" entdeckte, dachte niemand, dass er für irgendetwas nützlich sein würde. Fermat selbst betrieb zahlentheoretische Forschung aus reiner mathematischer Neugier.
+Als [Pierre de Fermat](https://kenji.blog/de/p/fermat/) im 17. Jahrhundert diesen "kleinen Satz" entdeckte, dachte niemand, dass er für irgendetwas nützlich sein würde. [Fermat](https://kenji.blog/de/p/fermat/) selbst betrieb zahlentheoretische Forschung aus reiner mathematischer Neugier.
 
-Etwa 300 Jahre später, in den 1970er Jahren, an den Anfängen von Computernetzwerken, feierte der Satz von Fermat jedoch ein dramatisches Comeback als unverzichtbare Verschlüsselungstechnologie zur Etablierung sicherer Kommunikationsprotokolle. Die Primzahltesttechnologie, die auf dem kleinen Satz von Fermat basiert, und die RSA-Verschlüsselung, die auf dem Satz von Euler basiert, stützen buchstäblich die moderne Internet-Infrastruktur.
+Etwa 300 Jahre später, in den 1970er Jahren, an den Anfängen von Computernetzwerken, feierte der Satz von [Fermat](https://kenji.blog/de/p/fermat/) jedoch ein dramatisches Comeback als unverzichtbare Verschlüsselungstechnologie zur Etablierung sicherer Kommunikationsprotokolle. Die Primzahltesttechnologie, die auf dem kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) basiert, und die RSA-Verschlüsselung, die auf dem Satz von Euler basiert, stützen buchstäblich die moderne Internet-Infrastruktur.
 
-Die LINE-Nachrichten, die wir jeden Tag beiläufig senden, und unsere Einkäufe bei Amazon tanzen alle auf dieser einfachen und schönen Formel $a^{p-1} \equiv 1 \pmod p$. Egal wie abstrakt Mathematik ist, der kleine Satz von Fermat lehrt uns, dass immer die Zeit kommen wird, in der sie für die Menschheit nützlich sein wird.
+Die LINE-Nachrichten, die wir jeden Tag beiläufig senden, und unsere Einkäufe bei Amazon tanzen alle auf dieser einfachen und schönen Formel $a^{p-1} \equiv 1 \pmod p$. Egal wie abstrakt Mathematik ist, der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/) lehrt uns, dass immer die Zeit kommen wird, in der sie für die Menschheit nützlich sein wird.
 
 Beim Erlernen von Programmierung und Kryptographietheorie wird das Verständnis der zugrunde liegenden mathematischen Strukturen eine starke Waffe sein, um das Verhalten von Bibliotheken, die als Blackboxes bereitgestellt werden, tiefgreifend zu verstehen und sicherere Systeme zu entwerfen.
 

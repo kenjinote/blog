@@ -38,7 +38,7 @@ Di sisi lain, bola (permukaan bola) tidak memiliki lubang. Oleh karena itu, baga
 
 [Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/) merupakan sebuah upaya untuk mengkarakterisasi "bola" dari sudut pandang topologi ini.
 
-"Permukaan bola" yang biasa kita lihat sehari-hari disebut sebagai bola 2-dimensi ( $S^2$ ). Poincaré berpikir bahwa jika suatu bangun adalah ruang tertutup yang "tanpa lubang", bukankah bangun tersebut homeomorfik (secara topologi sama) dengan bola?
+"Permukaan bola" yang biasa kita lihat sehari-hari disebut sebagai bola 2-dimensi ( $S^2$ ). [Poincaré](https://kenji.blog/id/p/poincare/) berpikir bahwa jika suatu bangun adalah ruang tertutup yang "tanpa lubang", bukankah bangun tersebut homeomorfik (secara topologi sama) dengan bola?
 
 Konsep yang menjadi penting di sini adalah **terhubung sederhana** (simply connected).
 
@@ -47,7 +47,7 @@ Ketika sebarang loop (lingkaran) di dalam sebuah ruang dapat disusutkan menjadi 
 - **Permukaan bola ( $S^2$ )**: Lingkaran apa pun yang digambar di permukaannya dapat disusutkan menjadi satu titik dengan menggesernya di sepanjang permukaan. Dengan kata lain, permukaannya terhubung sederhana.
 - **Torus (Permukaan donat)**: Lingkaran yang digambar melewati lubangnya akan tersangkut pada lubang tersebut dan tidak dapat disusutkan menjadi satu titik. Dengan kata lain, ia tidak terhubung sederhana.
 
-Poincaré mempertanyakan apakah sifat yang berlaku pada bola 2-dimensi ini juga berlaku pada bola 3-dimensi ( $S^3$ ).
+[Poincaré](https://kenji.blog/id/p/poincare/) mempertanyakan apakah sifat yang berlaku pada bola 2-dimensi ini juga berlaku pada bola 3-dimensi ( $S^3$ ).
 
 > **[Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/)**
 > Manifold tertutup 3-dimensi yang terhubung sederhana adalah homeomorfik terhadap bola 3-dimensi $S^3$.
@@ -125,4 +125,4 @@ Penyelesaian [Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/)
 
 Selain itu, upaya matematis untuk memahami bentuk alam semesta terus memberikan pengaruh mendalam terhadap pemahaman kita mengenai dimensi dalam fisika modern, khususnya pada teori dawai dan kosmologi.
 
-Tongkat estafet pengetahuan yang dimulai dari Poincaré, diteruskan kepada Thurston, Hamilton, dan akhirnya kepada Perelman, dapat dikatakan sebagai monumen terbaik yang membuktikan seberapa dalam dan indahnya pikiran manusia dapat mendekati kebenaran alam semesta.
+Tongkat estafet pengetahuan yang dimulai dari [Poincaré](https://kenji.blog/id/p/poincare/), diteruskan kepada Thurston, Hamilton, dan akhirnya kepada Perelman, dapat dikatakan sebagai monumen terbaik yang membuktikan seberapa dalam dan indahnya pikiran manusia dapat mendekati kebenaran alam semesta.

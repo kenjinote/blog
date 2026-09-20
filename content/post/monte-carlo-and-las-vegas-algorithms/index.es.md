@@ -70,7 +70,7 @@ Cuanto más aumentes el número de intentos `num_samples`, obtendrás un valor m
 Este es un algoritmo rápido para determinar si un número muy grande es primo. Al generar claves en la criptografía RSA se necesitan números primos de cientos de dígitos; comprobar si un número es primo mediante un método de división por ensayo determinista (dividiendo secuencialmente entre $2, 3, 5, \dots$) llevaría más tiempo que la edad del universo.
 
 Aquí es donde entra en juego el algoritmo de Montecarlo conocido como el **Test de primalidad de Miller-Rabin**.
-Para un número dado $n$ que queremos evaluar, elegimos una base aleatoria $a$ y probamos si cumple con ciertas ecuaciones basadas en la extensión del pequeño teorema de Fermat.
+Para un número dado $n$ que queremos evaluar, elegimos una base aleatoria $a$ y probamos si cumple con ciertas ecuaciones basadas en la extensión del pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/).
 
 Si en un solo test se determina que "es compuesto", entonces el número es de hecho compuesto. Pero si el algoritmo dictamina que "podría ser primo", existe como máximo un $\frac{1}{4}$ de probabilidad de que el número sea en realidad compuesto y haya sido clasificado erróneamente como primo.
 

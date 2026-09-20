@@ -51,7 +51,7 @@ Fakta penting yang ditunjukkan oleh rumus ini adalah **"Energi cahaya $E$ berban
 
 ## 1.2 Aberasi Kromatik (Chromatic Aberration) dan Pergeseran Titik Fokus
 
-Lebih jauh lagi dari perspektif optik, perbedaan panjang gelombang cahaya menghasilkan perbedaan "indeks bias". Indeks bias $n$ dari suatu medium (di sini seperti lensa mata) bergantung pada panjang gelombang $\lambda$, dan didekati oleh persamaan dispersi Cauchy.
+Lebih jauh lagi dari perspektif optik, perbedaan panjang gelombang cahaya menghasilkan perbedaan "indeks bias". Indeks bias $n$ dari suatu medium (di sini seperti lensa mata) bergantung pada panjang gelombang $\lambda$, dan didekati oleh persamaan dispersi [Cauchy](https://kenji.blog/id/p/cauchy/).
 
 $$ n(\lambda) = B + \frac{C}{\lambda^2} $$
 

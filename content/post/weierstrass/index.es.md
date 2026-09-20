@@ -86,7 +86,7 @@ Este descubrimiento hizo que los matemáticos se dieran cuenta dolorosamente de 
 
 ### 3. Construcción del análisis complejo y teoría de funciones elípticas
 
-Weierstrass también desempeñó un papel decisivo en la teoría de funciones complejas. Mientras que Cauchy y Riemann enfatizaron la intuición geométrica y la integración, Weierstrass adoptó un enfoque algebraico basado en "series de potencias". Definió rigurosamente las funciones complejas utilizando el concepto de continuación analítica y estableció los métodos estándar del análisis complejo moderno.
+Weierstrass también desempeñó un papel decisivo en la teoría de funciones complejas. Mientras que [Cauchy](https://kenji.blog/es/p/cauchy/) y [Riemann](https://kenji.blog/es/p/riemann/) enfatizaron la intuición geométrica y la integración, Weierstrass adoptó un enfoque algebraico basado en "series de potencias". Definió rigurosamente las funciones complejas utilizando el concepto de continuación analítica y estableció los métodos estándar del análisis complejo moderno.
 
 También construyó un sistema extremadamente hermoso en los campos de la teoría de funciones elípticas y la teoría de funciones abelianas. La función $\wp$ (función p) de Weierstrass todavía se usa ampliamente en la actualidad como la función más fundamental en el manejo de funciones elípticas.
 
@@ -120,7 +120,7 @@ Bajo la dedicada guía de Weierstrass, Kovalévskaya logró magníficos resultad
 
 ## Últimos años y legado
 
-En sus últimos años, Weierstrass experimentó una feroz disputa sobre los fundamentos de las matemáticas con Leopold Kronecker, un colega y antiguo alumno. Kronecker declaró: "Dios hizo los números enteros, todo lo demás es obra del hombre", y criticó duramente el análisis de Weierstrass y la teoría de conjuntos de Cantor desde un punto de vista intuicionista. Este conflicto hirió profundamente el corazón de Weierstrass.
+En sus últimos años, Weierstrass experimentó una feroz disputa sobre los fundamentos de las matemáticas con Leopold [Kronecker](https://kenji.blog/es/p/kronecker/), un colega y antiguo alumno. [Kronecker](https://kenji.blog/es/p/kronecker/) declaró: "Dios hizo los números enteros, todo lo demás es obra del hombre", y criticó duramente el análisis de Weierstrass y la teoría de conjuntos de Cantor desde un punto de vista intuicionista. Este conflicto hirió profundamente el corazón de Weierstrass.
 
 Su salud también se deterioró gradualmente, y en sus últimos años sufrió de mareos y bronquitis, lo que lo obligó a vivir en una silla de ruedas. Sin embargo, nunca perdió su pasión por las matemáticas hasta el final, trabajando en la compilación de sus propias obras completas con la ayuda de sus discípulos.
 

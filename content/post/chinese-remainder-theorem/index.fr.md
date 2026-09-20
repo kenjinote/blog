@@ -219,7 +219,7 @@ $$
 
 L'une des applications les plus importantes de ce théorème généralisé est le **théorème des restes chinois** dans l'anneau des polynômes à une variable $F[x]$ sur un corps $F$.
 
-Les « entiers premiers entre eux » dans le cas des entiers correspondent aux « polynômes qui n'ont pas de racines communes (le plus grand commun diviseur polynomial est une constante) » dans l'anneau des polynômes. Cette version polynomiale du TRC fournit le fondement théorique de l'interpolation de Lagrange, correspondant parfaitement à l'algorithme qui détermine uniquement le polynôme de degré minimum passant par plusieurs points donnés. C'est également la base mathématique des **codes de Reed-Solomon**, un type de code correcteur d'erreurs.
+Les « entiers premiers entre eux » dans le cas des entiers correspondent aux « polynômes qui n'ont pas de racines communes (le plus grand commun diviseur polynomial est une constante) » dans l'anneau des polynômes. Cette version polynomiale du TRC fournit le fondement théorique de l'interpolation de [Lagrange](https://kenji.blog/fr/p/lagrange/), correspondant parfaitement à l'algorithme qui détermine uniquement le polynôme de degré minimum passant par plusieurs points donnés. C'est également la base mathématique des **codes de Reed-Solomon**, un type de code correcteur d'erreurs.
 
 ## Calcul massivement parallèle par le système de numération résiduelle (RNS)
 

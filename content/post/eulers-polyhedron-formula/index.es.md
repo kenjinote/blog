@@ -133,15 +133,15 @@ flowchart LR
     D --> G["Armazones de lentes, pretzel"]
 ```
 
-## La Fórmula de Euler-Poincaré: Un Salto a las Multidimensiones
+## La Fórmula de Euler-[Poincaré](https://kenji.blog/es/p/poincare/): Un Salto a las Multidimensiones
 
-Desde finales del siglo XIX hasta el siglo XX, matemáticos como [Henri Poincaré](https://kenji.blog/es/p/poincare/) ampliaron aún más el teorema de Euler a espacios de mayor dimensión. Esto se convirtió en la **Fórmula de Euler-Poincaré**.
+Desde finales del siglo XIX hasta el siglo XX, matemáticos como [Henri Poincaré](https://kenji.blog/es/p/poincare/) ampliaron aún más el teorema de Euler a espacios de mayor dimensión. Esto se convirtió en la **Fórmula de Euler-[Poincaré](https://kenji.blog/es/p/poincare/)**.
 Al generalizar los elementos de un poliedro, consideraron la suma alterna del número de elementos en una forma de $n$-dimensiones.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$
 
 Aquí, $k_i$ representa el número de elementos de $i$-dimensiones.
-Poincaré demostró que esta $\chi$ está profundamente conectada con invariantes topológicas llamadas "Números de Betti".
+[Poincaré](https://kenji.blog/es/p/poincare/) demostró que esta $\chi$ está profundamente conectada con invariantes topológicas llamadas "Números de Betti".
 De forma intuitiva, el número de Betti $b_i$ representa "el número de agujeros de $i$-dimensiones".
 
 $$ \chi = b_0 - b_1 + b_2 - b_3 + \dots $$

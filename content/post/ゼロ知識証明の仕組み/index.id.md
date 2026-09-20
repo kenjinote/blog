@@ -88,7 +88,7 @@ Di sini, $\circ$ melambangkan perkalian Hadamard (perkalian elemen per elemen). 
 
 ### 2. Transformasi ke QAP (Quadratic Arithmetic Program)
 
-Karena kendala matriks R1CS bisa sangat banyak, memverifikasinya satu per satu akan sangat tidak efisien. Oleh karena itu, interpolasi Lagrange digunakan untuk mengompresi kendala-kendala ini menjadi sebuah persamaan polinomial tunggal. Inilah yang disebut **QAP (Quadratic Arithmetic Program)**.
+Karena kendala matriks R1CS bisa sangat banyak, memverifikasinya satu per satu akan sangat tidak efisien. Oleh karena itu, interpolasi [Lagrange](https://kenji.blog/id/p/lagrange/) digunakan untuk mengompresi kendala-kendala ini menjadi sebuah persamaan polinomial tunggal. Inilah yang disebut **QAP (Quadratic Arithmetic Program)**.
 
 Dengan transformasi ke QAP, masalah yang perlu dibuktikan direduksi menjadi: "Apakah sebuah polinomial tertentu $P(x)$ dapat dibagi habis oleh polinomial lain yang diketahui, $Z(x)$?"
 

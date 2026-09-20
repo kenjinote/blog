@@ -18,7 +18,7 @@ tags:
 
 Matematikawan besar Jerman, [David Hilbert](https://kenji.blog/id/p/hilbert/), merancang eksperimen pemikiran yang menarik berikut ini untuk menjelaskan betapa konsep "tak terhingga" sangat jauh dari intuisi manusia.
 
-Bayangkan. Di suatu tempat di alam semesta, ada sebuah hotel bernama **"Hotel Tak Terhingga Hilbert"**.
+Bayangkan. Di suatu tempat di alam semesta, ada sebuah hotel bernama **"Hotel Tak Terhingga [Hilbert](https://kenji.blog/id/p/hilbert/)"**.
 Di hotel ini, terdapat **jumlah tak terhingga** kamar tamu yang diberi nomor, seperti kamar 1, kamar 2, kamar 3, dan seterusnya.
 
 Suatu hari, ada acara besar di alam semesta, dan setiap kamar di hotel yang tak terhingga ini terisi, menjadi **"penuh"**.
@@ -156,7 +156,7 @@ Dengan cara ini, manajer berhasil menampung sejumlah **"tak terhingga $\times$ t
 
 ## 5. Ada Perbedaan "Ukuran" pada Tak Terhingga (Teorema Cantor)
 
-Apa yang diajarkan oleh Hotel Tak Terhingga Hilbert adalah fakta bahwa **"tak terhingga yang dapat dihitung (tak terhingga yang bisa Anda hitung dengan memberikan angka seperti 1, 2, 3...)" pada akhirnya akan masuk ke dalam kategori "tak terhingga yang dapat dihitung" yang ukurannya sama, tidak peduli seberapa banyak Anda menambah atau mengalikannya**.
+Apa yang diajarkan oleh Hotel Tak Terhingga [Hilbert](https://kenji.blog/id/p/hilbert/) adalah fakta bahwa **"tak terhingga yang dapat dihitung (tak terhingga yang bisa Anda hitung dengan memberikan angka seperti 1, 2, 3...)" pada akhirnya akan masuk ke dalam kategori "tak terhingga yang dapat dihitung" yang ukurannya sama, tidak peduli seberapa banyak Anda menambah atau mengalikannya**.
 
 Namun, matematikawan [Georg Cantor](https://kenji.blog/id/p/cantor/) menemukan fakta yang lebih menakutkan.
 "Bilangan asli" dan "pecahan" semuanya dapat ditampung di Hotel Tak Terhingga ini. Namun, **jika ada tamu dari "bilangan real (semua desimal termasuk bilangan irasional)" yang datang, bahkan dengan menggunakan Hotel Tak Terhingga ini, tidak mungkin untuk menampung semuanya**.
@@ -168,7 +168,7 @@ Istilah "tak terhingga" sering kali dikelompokkan bersama, namun nyatanya di dal
 
 ## 6. Kesimpulan: "Tak Terhingga" yang Menghancurkan Intuisi Manusia
 
-Hotel Tak Terhingga Hilbert dengan jelas menggambarkan bagaimana "akal sehat terbatas" yang dipupuk dalam kehidupan kita sehari-hari sama sekali tidak berlaku di "dunia tak terhingga".
+Hotel Tak Terhingga [Hilbert](https://kenji.blog/id/p/hilbert/) dengan jelas menggambarkan bagaimana "akal sehat terbatas" yang dipupuk dalam kehidupan kita sehari-hari sama sekali tidak berlaku di "dunia tak terhingga".
 
 "Keseluruhan lebih besar daripada sebagiannya"
 "Tidak ada yang bisa masuk ke hotel yang penuh"
@@ -177,5 +177,5 @@ Hotel Tak Terhingga Hilbert dengan jelas menggambarkan bagaimana "akal sehat ter
 Semua intuisi yang dianggap wajar ini dikhianati dengan indahnya.
 Dunia tak terhingga adalah harta karun dari paradoks (kebenaran yang bertentangan dengan intuisi). Bukannya takut pada paradoks ini, para matematikawan justru menaklukkannya dengan kekuatan logika, mengklasifikasikannya, dan menciptakan sistem yang indah dari teori himpunan modern.
 
-Lain kali jika Anda ditolak dan diberitahu bahwa "Hotel sudah penuh," cobalah bayangkan, "Seandainya saja hotel ini adalah Hotel Tak Terhingga Hilbert."
+Lain kali jika Anda ditolak dan diberitahu bahwa "Hotel sudah penuh," cobalah bayangkan, "Seandainya saja hotel ini adalah Hotel Tak Terhingga [Hilbert](https://kenji.blog/id/p/hilbert/)."
 

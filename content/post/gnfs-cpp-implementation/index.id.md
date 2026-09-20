@@ -421,7 +421,7 @@ Di dunia field aljabar $\mathbb{Z}[\alpha]$, keunikan faktorisasi prima tidak be
 
 Di sinilah hambatan (Obstruction) kuat teori bilangan aljabar menghalangi, yang disebut "Hambatan Grup Kelas Ideal" dan "Hambatan Grup Unit".
 GNFS menembus dinding ini dengan menggunakan keajaiban yang disebut ** "Karakter Kuadrat (Quadratic Characters)" **.
-Ke dalam matriks Fase 4, kita diam-diam menambahkan beberapa kolom residu kuadrat (Simbol Legendre) untuk beberapa puluh ideal prima khusus sebelumnya. Berkat hal ini, himpunan $S$ yang ditemukan akan lolos dari hambatan dengan probabilitas sangat tinggi, dan berhasil membentuk "kuadrat elemen sejati $\gamma^2$".
+Ke dalam matriks Fase 4, kita diam-diam menambahkan beberapa kolom residu kuadrat (Simbol [Legendre](https://kenji.blog/id/p/legendre/)) untuk beberapa puluh ideal prima khusus sebelumnya. Berkat hal ini, himpunan $S$ yang ditemukan akan lolos dari hambatan dengan probabilitas sangat tinggi, dan berhasil membentuk "kuadrat elemen sejati $\gamma^2$".
 
 Tugas menemukan $\gamma$ (Akar Kuadrat Aljabar) dihitung dengan menggunakan algoritma yang sangat kompleks seperti Metode Montgomery.
 

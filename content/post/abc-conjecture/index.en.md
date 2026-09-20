@@ -47,7 +47,7 @@ The diagram above provides a simplified illustration of the concept of informati
 
 ### Frobenioids and Hodge Theaters
 
-Important concepts constituting IUT Theory include **Frobenioids** and **Hodge Theaters**. These are mechanisms for geometrically encoding number-theoretic information through the action of the absolute Galois groups or fundamental groups of number fields.
+Important concepts constituting IUT Theory include **Frobenioids** and **Hodge Theaters**. These are mechanisms for geometrically encoding number-theoretic information through the action of the absolute [Galois](https://kenji.blog/en/p/galois/) groups or fundamental groups of number fields.
 
 $$ \Theta \text{-link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
 

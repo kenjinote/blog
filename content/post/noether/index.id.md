@@ -41,11 +41,11 @@ Meskipun meraih gelar doktornya, tidak ada posisi universitas yang tersedia untu
 
 Pada tahun 1915, [David Hilbert](https://kenji.blog/id/p/hilbert/) dan Felix Klein dari Universitas Göttingen mengundang Noether ke Göttingen untuk membantu memecahkan masalah matematika terkait kekekalan energi dalam teori relativitas umum Albert Einstein. Pengetahuannya yang mendalam tentang teori invarian dianggap sangat diperlukan.
 
-Namun, kemungkinan pengangkatannya sebagai anggota fakultas reguler (Privatdozent) mendapat tentangan sengit dari para profesor di disiplin ilmu lain di dalam Fakultas Filsafat, sekali lagi hanya karena ia adalah seorang "perempuan". Mereka berargumen, "Apa yang akan dipikirkan tentara kita ketika mereka kembali ke universitas dan menemukan bahwa mereka diharuskan belajar di bawah kaki seorang perempuan?" Menanggapi hal ini, Hilbert memberikan jawaban yang terkenal:
+Namun, kemungkinan pengangkatannya sebagai anggota fakultas reguler (Privatdozent) mendapat tentangan sengit dari para profesor di disiplin ilmu lain di dalam Fakultas Filsafat, sekali lagi hanya karena ia adalah seorang "perempuan". Mereka berargumen, "Apa yang akan dipikirkan tentara kita ketika mereka kembali ke universitas dan menemukan bahwa mereka diharuskan belajar di bawah kaki seorang perempuan?" Menanggapi hal ini, [Hilbert](https://kenji.blog/id/p/hilbert/) memberikan jawaban yang terkenal:
 
 > "Saya tidak melihat bahwa jenis kelamin kandidat adalah argumen yang menentang penerimaannya sebagai Privatdozent. Bagaimanapun, kita adalah universitas, bukan pemandian umum."
 
-Pada akhirnya, selama beberapa tahun pertamanya, ia terpaksa memberikan kuliah di bawah nama Hilbert sebagai "asisten Hilbert" tanpa bayaran. Namun, penelitiannya menghasilkan pencapaian monumental yang akan mengguncang sejarah fisika. Ini adalah **Teorema Noether**, yang diterbitkan pada tahun 1918.
+Pada akhirnya, selama beberapa tahun pertamanya, ia terpaksa memberikan kuliah di bawah nama [Hilbert](https://kenji.blog/id/p/hilbert/) sebagai "asisten [Hilbert](https://kenji.blog/id/p/hilbert/)" tanpa bayaran. Namun, penelitiannya menghasilkan pencapaian monumental yang akan mengguncang sejarah fisika. Ini adalah **Teorema Noether**, yang diterbitkan pada tahun 1918.
 
 ### Ekspresi Matematis Teorema Noether
 

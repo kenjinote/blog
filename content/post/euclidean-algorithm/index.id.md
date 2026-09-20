@@ -107,11 +107,11 @@ int main() {
 }
 ```
 
-## Kompleksitas Waktu dan Teorema Lamé
+## Kompleksitas Waktu dan Teorema [Lamé](https://kenji.blog/id/p/lame/)
 
-Seberapa cepat algoritma [Euclide](https://kenji.blog/id/p/euclid/)an? Mengenai kompleksitas komputasinya, **teorema Lamé** (Lamé's theorem), yang dibuktikan oleh matematikawan Prancis [Gabriel Lamé](https://kenji.blog/id/p/lame/) pada tahun 1844, sangat terkenal.
+Seberapa cepat algoritma [Euclide](https://kenji.blog/id/p/euclid/)an? Mengenai kompleksitas komputasinya, **teorema [Lamé](https://kenji.blog/id/p/lame/)** ([Lamé](https://kenji.blog/id/p/lame/)'s theorem), yang dibuktikan oleh matematikawan Prancis [Gabriel Lamé](https://kenji.blog/id/p/lame/) pada tahun 1844, sangat terkenal.
 
-> **Teorema Lamé**
+> **Teorema [Lamé](https://kenji.blog/id/p/lame/)**
 > Jumlah langkah pembagian yang diperlukan untuk menerapkan algoritma [Euclide](https://kenji.blog/id/p/euclid/)an ke dua bilangan asli $a, b$ ($a > b$) paling banyak $5$ kali jumlah digit representasi desimal dari $b$ .
 
 Sebagai hasil, kompleksitas waktu algoritma adalah $O(\log(\min(a, b)))$ .

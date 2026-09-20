@@ -41,11 +41,11 @@ Despite earning her doctorate, there was no university position available for he
 
 In 1915, [David Hilbert](https://kenji.blog/en/p/hilbert/) and Felix Klein of the University of Göttingen invited Noether to Göttingen to help resolve mathematical problems concerning the conservation of energy in Albert Einstein's general theory of relativity. Her deep knowledge of invariant theory was considered indispensable.
 
-However, her potential appointment as a regular faculty member (Privatdozent) was met with fierce opposition from professors in other disciplines within the Faculty of Philosophy, again simply because she was a "woman." They argued, "What will our soldiers think when they return to the university and find that they are required to learn at the feet of a woman?" To this, Hilbert famously retorted:
+However, her potential appointment as a regular faculty member (Privatdozent) was met with fierce opposition from professors in other disciplines within the Faculty of Philosophy, again simply because she was a "woman." They argued, "What will our soldiers think when they return to the university and find that they are required to learn at the feet of a woman?" To this, [Hilbert](https://kenji.blog/en/p/hilbert/) famously retorted:
 
 > "I do not see that the sex of the candidate is an argument against her admission as Privatdozent. After all, we are a university, not a bathhouse."
 
-Ultimately, for her first few years, she was forced to lecture under Hilbert's name as "Hilbert's assistant" without pay. Yet, her research produced a monumental achievement that would shake the history of physics. This was **Noether's Theorem**, published in 1918.
+Ultimately, for her first few years, she was forced to lecture under [Hilbert](https://kenji.blog/en/p/hilbert/)'s name as "[Hilbert](https://kenji.blog/en/p/hilbert/)'s assistant" without pay. Yet, her research produced a monumental achievement that would shake the history of physics. This was **Noether's Theorem**, published in 1918.
 
 ### Mathematical Expression of Noether's Theorem
 

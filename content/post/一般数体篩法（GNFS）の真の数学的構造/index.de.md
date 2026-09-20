@@ -57,7 +57,7 @@ In algebraischen Welten wie $\mathbb{Z}[\alpha]$ **bricht die "Eindeutigkeit der
 
 Wenn die Faktorzerlegung nicht eindeutig ist, ist das Rätsel "Primzahlen zählen, um sie gerade zu machen" (die Siebmethode) im Prinzip unmöglich auszuführen.
 
-### Die Rettung durch Kummer und Dedekind: "Ideale"
+### Die Rettung durch [Kummer](https://kenji.blog/de/p/kummer/) und Dedekind: "Ideale"
 Was diesen Zusammenbruch rettete, war das Konzept des **"Ideals (Ideal: ideale Zahl)"** , das von Mathematikern des 19. Jahrhunderts geschaffen wurde.
 Indem man nicht an das Element selbst dachte, sondern an die "Menge der Vielfachen (Ideal)", die von diesem Element erzeugt wird, wurde die Primfaktorzerlegung wieder möglich.
 
@@ -120,7 +120,7 @@ Wenn diese Einheit $u$ nicht selbst das Quadrat von etwas ist, kann die linke Se
 Das Hindernis der Idealklassengruppe und das Hindernis der Einheitengruppe. Wie können wir diese beiden überwinden?
 Hier kommt die brillante Methode der **"Quadratischen Charaktere (Quadratic Characters)"** ins Spiel, die von dem Kryptographen Leonard Adleman (das "A" von RSA) und anderen eingeführt wurde.
 
-Um festzustellen, "ob ein bestimmtes Element ein perfektes Quadrat im algebraischen Körper ist", verwenden wir die Zahlkörper-Version des Legendre-Symbols (quadratischer Rest).
+Um festzustellen, "ob ein bestimmtes Element ein perfektes Quadrat im algebraischen Körper ist", verwenden wir die Zahlkörper-Version des [Legendre](https://kenji.blog/de/p/legendre/)-Symbols (quadratischer Rest).
 In dieser riesigen Matrix (dem Rätsel, um die Primidealzählungen gerade zu machen), **fügen wir heimlich ein paar Dutzend zusätzliche Bedingungen (Spalten) hinzu, die besagen: "Die quadratischen Charaktere für einige spezielle Primideale $\mathfrak{q}$ müssen ebenfalls alle $1$ (gerade) sein"** .
 
 Wenn wir eine Menge $S$ finden, die durch die Matrixberechnung sogar diese zusätzliche Bedingungen erfüllt, garantieren tiefe Sätze aus der algebraischen Zahlentheorie, dass **"sowohl das Hindernis der Idealklassengruppe als auch das Hindernis der Einheitengruppe mit überwältigender Wahrscheinlichkeit natürlich verschwinden werden"** .

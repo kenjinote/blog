@@ -113,7 +113,7 @@ $$
 B_0 = 1, \quad B_1 = -\frac{1}{2}, \quad B_2 = \frac{1}{6}, \quad B_4 = -\frac{1}{30}, \quad B_6 = \frac{1}{42} \dots
 $$
 
-Seki menyebut hal ini sebagai "Daseki-jutsu" dan menetapkan metode untuk menghitungnya secara efisien menggunakan tabel koefisien yang mirip dengan segitiga Pascal (disebut "Rippo-shiki" dalam Wasan).
+Seki menyebut hal ini sebagai "Daseki-jutsu" dan menetapkan metode untuk menghitungnya secara efisien menggunakan tabel koefisien yang mirip dengan segitiga [Pascal](https://kenji.blog/id/p/pascal/) (disebut "Rippo-shiki" dalam Wasan).
 
 # 8. Perkembangan Sekolah Wasan Seki dan Penerusnya
 

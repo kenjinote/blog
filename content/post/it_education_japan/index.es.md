@@ -142,7 +142,7 @@ Aunque en la educación sobre alfabetización informacional se brinda educación
 
 Las comunicaciones HTTPS y las firmas electrónicas que usamos a diario están protegidas por sistemas de cifrado de clave pública como RSA. La seguridad del cifrado RSA se basa en la dificultad matemática (considerada un problema NP-intermedio) de que "la factorización de enteros gigantes no se puede resolver en un tiempo realista con las computadoras clásicas actuales".
 
-Las fórmulas matemáticas que forman la base del cifrado RSA son hermosas y aplican la función indicatriz de Euler y el pequeño teorema de Fermat.
+Las fórmulas matemáticas que forman la base del cifrado RSA son hermosas y aplican la función indicatriz de Euler y el pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/).
 
 1. Seleccionar dos grandes números primos $p$ y $q$
 2. Calcular $n = p \times q$ (esto forma parte de la clave pública)

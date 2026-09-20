@@ -75,9 +75,9 @@ $$ 1 \equiv a^{p-1} \pmod p $$
 
 Ini melengkapi pembuktian.
 
-## Uji Primalitas Fermat: Aplikasi pada Pengujian Bilangan Prima
+## Uji Primalitas [Fermat](https://kenji.blog/id/p/fermat/): Aplikasi pada Pengujian Bilangan Prima
 
-Teorema ini diterapkan dalam sebuah **algoritma uji primalitas** (uji primalitas Fermat) untuk menentukan apakah suatu bilangan prima.
+Teorema ini diterapkan dalam sebuah **algoritma uji primalitas** (uji primalitas [Fermat](https://kenji.blog/id/p/fermat/)) untuk menentukan apakah suatu bilangan prima.
 
 Jika Anda ingin tahu apakah suatu bilangan besar $n$ adalah prima, pilih $a$ secara acak dan periksa apakah $a^{n-1} \equiv 1 \pmod n$ berlaku. Jika tidak berlaku, maka $n$ **sama sekali bukan bilangan prima** (itu adalah bilangan komposit).
 

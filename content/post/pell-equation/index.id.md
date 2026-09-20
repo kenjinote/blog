@@ -30,13 +30,13 @@ $$ (x - ky)(x + ky) = 1 $$
 
 Karena $x$, $y$, dan $k$ semuanya adalah bilangan bulat, $(x - ky)$ dan $(x + ky)$ juga harus bilangan bulat. Satu-satunya kombinasi bilangan bulat yang hasil kalinya adalah 1 adalah $(1, 1)$ atau $(-1, -1)$. Memecahkan ini menghasilkan $y = 0$, yang berarti solusinya terbatas pada yang sangat sederhana: $(x, y) = (\pm 1, 0)$. Oleh karena itu, dalam persamaan Pell, kondisi bahwa $n$ bukan kuadrat sempurna adalah premis penting untuk menemukan solusi yang bermakna.
 
-## 2. Latar Belakang Sejarah: Pell, Fermat, dan Matematikawan India Kuno
+## 2. Latar Belakang Sejarah: Pell, [Fermat](https://kenji.blog/id/p/fermat/), dan Matematikawan India Kuno
 
 Meskipun persamaan ini menyandang nama "Pell," menjelajahi fakta-fakta sejarah mengungkapkan latar belakang yang agak aneh. Sebenarnya, orang pertama di Eropa modern yang mempelajari solusi umum untuk persamaan ini dan dengan kuat menegaskan bahwa solusi selalu ada adalah matematikawan hebat Prancis **[Pierre de Fermat](https://kenji.blog/id/p/fermat/)**.
 
 Kemudian, **[Leonhard Euler](https://kenji.blog/id/p/euler/)** secara keliru menghubungkan nama matematikawan Inggris **John Pell** dengan persamaan ini, dan sejak itu dikenal luas sebagai "persamaan Pell". Pell sendiri tidak memainkan peran sentral dalam metode penyelesaian persamaan ini.
 
-Mundur lebih jauh ke belakang, matematikawan India **Brahmagupta** dan **Bhāskara II** menghitung solusi persamaan jenis ini menggunakan algoritma canggih yang disebut metode Chakravala, ratusan tahun sebelum Fermat. Sejarah penjelajahan oleh para matematikawan dari zaman kuno melalui Abad Pertengahan hingga era modern tertulis dalam persamaan ini.
+Mundur lebih jauh ke belakang, matematikawan India **Brahmagupta** dan **Bhāskara II** menghitung solusi persamaan jenis ini menggunakan algoritma canggih yang disebut metode Chakravala, ratusan tahun sebelum [Fermat](https://kenji.blog/id/p/fermat/). Sejarah penjelajahan oleh para matematikawan dari zaman kuno melalui Abad Pertengahan hingga era modern tertulis dalam persamaan ini.
 
 ## 3. Perbedaan Antara Solusi Trivial dan Non-Trivial
 
@@ -207,4 +207,4 @@ Solusi dari persamaan Pell berkaitan erat dengan **unit** (elemen yang inversnya
 
 Dalam artikel ini, kami menjelajahi secara rinci salah satu persamaan Diophantine yang paling menarik, **persamaan Pell**, mulai dari dasar-dasarnya hingga aplikasinya. Kami menjelaskan fakta mengejutkan bahwa selalu ada solusi non-trivial tak terbatas untuk $n$ bukan kuadrat apa pun, algoritma yang efisien untuk mencari solusi menggunakan ekspansi pecahan berlanjut, dan dinamika mensintesis solusi baru satu demi satu dari solusi fundamental yang dihasilkan menggunakan matriks.
 
-Fakta bahwa masalah klasik yang dipertimbangkan oleh Fermat dan Brahmagupta ratusan tahun yang lalu dapat diimplementasikan dengan indah sebagai algoritma komputer modern, dan selanjutnya terhubung ke teori bilangan aljabar tingkat lanjut, membangkitkan romansa matematika yang dalam dan abadi. Kami berharap Anda akan mengambil kesempatan ini untuk menggunakan kode Python dan menjelajahi dunia persamaan Pell untuk berbagai nilai $n$ dan menyentuh sifat mendalam dari bilangan.
+Fakta bahwa masalah klasik yang dipertimbangkan oleh [Fermat](https://kenji.blog/id/p/fermat/) dan Brahmagupta ratusan tahun yang lalu dapat diimplementasikan dengan indah sebagai algoritma komputer modern, dan selanjutnya terhubung ke teori bilangan aljabar tingkat lanjut, membangkitkan romansa matematika yang dalam dan abadi. Kami berharap Anda akan mengambil kesempatan ini untuk menggunakan kode Python dan menjelajahi dunia persamaan Pell untuk berbagai nilai $n$ dan menyentuh sifat mendalam dari bilangan.

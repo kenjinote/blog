@@ -47,7 +47,7 @@ O diagrama acima ilustra de forma simplificada o conceito de transmissão de inf
 
 ### Frobenioide e Teatro de Hodge
 
-Conceitos importantes que compõem a Teoria IUT incluem **Frobenioide** (Frobenioid) e o **Teatro de Hodge** (Hodge Theater). Estes são mecanismos para codificar geometricamente informações na teoria dos números através das ações de grupos de Galois absolutos e grupos fundamentais de corpos de números.
+Conceitos importantes que compõem a Teoria IUT incluem **Frobenioide** (Frobenioid) e o **Teatro de Hodge** (Hodge Theater). Estes são mecanismos para codificar geometricamente informações na teoria dos números através das ações de grupos de [Galois](https://kenji.blog/pt/p/galois/) absolutos e grupos fundamentais de corpos de números.
 
 $$ \Theta \text{-link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
 
@@ -55,13 +55,13 @@ A Ligação Teta ($\Theta$-link) desempenha o papel de transmitir informações 
 
 # Consequências Surpreendentes da [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/)
 
-Se a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) for completamente provada (pela Teoria IUT ou por outros métodos), um grande número de teoremas importantes na teoria dos números será derivado de uma só vez. Vamos comparar isso com a **Conjectura de Mordell** (agora conhecida como Teorema de Faltings) e o **Último Teorema de Fermat** .
+Se a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) for completamente provada (pela Teoria IUT ou por outros métodos), um grande número de teoremas importantes na teoria dos números será derivado de uma só vez. Vamos comparar isso com a **Conjectura de Mordell** (agora conhecida como Teorema de Faltings) e o **Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)** .
 
-## Aplicação ao Último Teorema de Fermat
+## Aplicação ao Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)
 
 [O Último Teorema de Fermat](https://kenji.blog/pt/p/fermats-last-theorem/) afirma que para $n \ge 3$, não existe um conjunto de inteiros positivos $(x, y, z)$ que satisfaça $x^n + y^n = z^n$. Ele foi provado por [Andrew Wiles](https://kenji.blog/pt/p/wiles/) em 1995, mas uma matemática extremamente avançada e complexa foi utilizada.
 
-Se assumirmos que a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) é verdadeira, surpreendentemente, o Último Teorema de Fermat (pelo menos para $n$ suficientemente grande) pode ser provado em apenas algumas linhas.
+Se assumirmos que a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) é verdadeira, surpreendentemente, o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) (pelo menos para $n$ suficientemente grande) pode ser provado em apenas algumas linhas.
 
 Seja $x^n + y^n = z^n$, e suponha que $(x, y, z)$ são coprimos. Aplicando a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) para $a=x^n$, $b=y^n$, $c=z^n$,
 

@@ -19,7 +19,7 @@ Dans cet article, nous explorerons en profondeur l'état actuel des ordinateurs 
 
 ## 2. Fondements de l'état quantique et fidélité (Fidelity)
 
-L'unité fondamentale d'un ordinateur quantique, le bit quantique (Qubit), contrairement au bit classique (0 ou 1), peut prendre un état de superposition de 0 et de 1. L'état d'un seul qubit est représenté comme un vecteur dans l'espace de Hilbert comme suit :
+L'unité fondamentale d'un ordinateur quantique, le bit quantique (Qubit), contrairement au bit classique (0 ou 1), peut prendre un état de superposition de 0 et de 1. L'état d'un seul qubit est représenté comme un vecteur dans l'espace de [Hilbert](https://kenji.blog/fr/p/hilbert/) comme suit :
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -130,7 +130,7 @@ La percée de 2026 fut la bidimensionnalisation de l'architecture QCCD (Quantum 
 
 ### 5.3 Informatique quantique topologique : Contrôle des anyons
 
-L'**informatique quantique topologique**, longtemps considérée comme une existence théorique, est finalement entrée dans la phase de démonstration expérimentale en 2026. Cette méthode, promue par des entreprises telles que Microsoft, utilise des anyons non abéliens (Non-Abelian Anyons) appelés "modes zéro de Majorana (Majorana Zero Modes)".
+L'**informatique quantique topologique**, longtemps considérée comme une existence théorique, est finalement entrée dans la phase de démonstration expérimentale en 2026. Cette méthode, promue par des entreprises telles que Microsoft, utilise des anyons non abéliens (Non-[Abel](https://kenji.blog/fr/p/abel/)ian Anyons) appelés "modes zéro de Majorana (Majorana Zero Modes)".
 
 Les portes quantiques sont exécutées par une opération de tressage (Braiding) qui intervertit les positions des particules d'anyons.
 

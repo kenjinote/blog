@@ -18,7 +18,7 @@ $$
 
 이 적분 자체는 $\arctan(x)$ 를 사용하여 풀 수 있지만, 분모가 더 고차 다항식이 되거나 사인, 코사인과 같은 삼각함수가 복잡하게 얽혀 있다면 실수 함수 범위 내에서 원시 함수(부정적분)를 찾는 것은 사실상 불가능해집니다.
 
-여기서 등장하는 것이 수학에서 가장 아름다운 이론 중 하나로 꼽히는 **복소해석학** 의 강력한 정리, 즉 **코시의 [유수 정리](https://kenji.blog/ko/p/residue-theorem/)** (Cauchy's [Residue Theorem](https://kenji.blog/ko/p/residue-theorem/))입니다. 실수 축(1차원)에서 수행하던 적분을 과감하게 **복소평면** (2차원)으로 확장함으로써 계산 불가능한 실수 적분을 멋지게 풀 수 있습니다.
+여기서 등장하는 것이 수학에서 가장 아름다운 이론 중 하나로 꼽히는 **복소해석학** 의 강력한 정리, 즉 **코시의 [유수 정리](https://kenji.blog/ko/p/residue-theorem/)** ([Cauchy](https://kenji.blog/ko/p/cauchy/)'s [Residue Theorem](https://kenji.blog/ko/p/residue-theorem/))입니다. 실수 축(1차원)에서 수행하던 적분을 과감하게 **복소평면** (2차원)으로 확장함으로써 계산 불가능한 실수 적분을 멋지게 풀 수 있습니다.
 
 ## 복소 적분과 특이점
 

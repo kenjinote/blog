@@ -19,7 +19,7 @@ In this article, we will delve deep into the current state of quantum computers,
 
 ## 2. Fundamentals of Quantum States and Fidelity
 
-The qubit, the fundamental unit of a quantum computer, differs from a classical bit (0 or 1) in that it can exist in a superposition of 0 and 1. The state of a single qubit is represented as a vector on a Hilbert space as follows:
+The qubit, the fundamental unit of a quantum computer, differs from a classical bit (0 or 1) in that it can exist in a superposition of 0 and 1. The state of a single qubit is represented as a vector on a [Hilbert](https://kenji.blog/en/p/hilbert/) space as follows:
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -130,7 +130,7 @@ The 2026 breakthrough involved expanding the QCCD (Quantum Charge Coupled Device
 
 ### 5.3 Topological Quantum Computing: Controlling Anyons
 
-**Topological quantum computing**, long considered theoretical, has finally entered the phase of experimental demonstration in 2026. This approach, promoted by Microsoft and others, uses non-Abelian anyons called "Majorana Zero Modes."
+**Topological quantum computing**, long considered theoretical, has finally entered the phase of experimental demonstration in 2026. This approach, promoted by Microsoft and others, uses non-[Abel](https://kenji.blog/en/p/abel/)ian anyons called "Majorana Zero Modes."
 
 Quantum gates are executed through an operation called "Braiding," which involves swapping the positions of anyon particles.
 

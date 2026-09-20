@@ -47,7 +47,7 @@ graph TD
 
 ### フロベニオイドとホッジ劇場
 
-IUT理論を構成する重要な概念として **フロベニオイド** （Frobenioid）や **ホッジ劇場** （Hodge Theater）があります。これらは、数体の絶対ガロア群や基本群の作用を通じて、数論的な情報を幾何学的にエンコードする仕組みです。
+IUT理論を構成する重要な概念として **フロベニオイド** （Frobenioid）や **ホッジ劇場** （Hodge Theater）があります。これらは、数体の絶対[ガロア](https://kenji.blog/p/galois/)群や基本群の作用を通じて、数論的な情報を幾何学的にエンコードする仕組みです。
 
 $$ \Theta \text{-link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
 

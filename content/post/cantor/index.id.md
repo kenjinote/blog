@@ -24,13 +24,13 @@ Penciptaannya tentang "Teori Himpunan" telah menjadi fondasi dari setiap bidang 
 
 [Georg Cantor](https://kenji.blog/id/p/cantor/) lahir pada tahun 1845 di St. Petersburg, Rusia. Ayahnya adalah seorang saudagar kaya dari Denmark, dan ibunya adalah seorang musisi Rusia. Menunjukkan bakat luar biasa dalam matematika sejak usia dini, ia akhirnya pindah ke Jerman dan belajar matematika di Universitas Berlin.
 
-Di Universitas Berlin, ia dibimbing oleh tokoh-tokoh terkemuka dunia matematika pada masa itu, **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold Kronecker**. Kronecker secara khusus kelak akan menjadi penentang terbesar Cantor.
+Di Universitas Berlin, ia dibimbing oleh tokoh-tokoh terkemuka dunia matematika pada masa itu, **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold [Kronecker](https://kenji.blog/id/p/kronecker/)**. [Kronecker](https://kenji.blog/id/p/kronecker/) secara khusus kelak akan menjadi penentang terbesar Cantor.
 
-### Pencarian Ketakterhinggaan dan Konflik dengan Kronecker
+### Pencarian Ketakterhinggaan dan Konflik dengan [Kronecker](https://kenji.blog/id/p/kronecker/)
 
 Ketika Cantor memajukan penelitiannya dalam teori himpunan dan menerbitkan teori revolusioner bahwa "ada hierarki yang berbeda untuk ukuran ketakterhinggaan", sebuah kontroversi sengit meletus di dunia matematika.
 
-Kronecker, yang memegang keyakinan bahwa "Tuhan menciptakan bilangan bulat, yang lainnya adalah karya manusia," dengan sengit mengkritik teori Cantor. Akibat halangan Kronecker, Cantor tidak dapat mencapai tujuannya untuk menjadi profesor di Universitas Berlin, dan menghabiskan hidupnya di Universitas provinsi Halle.
+[Kronecker](https://kenji.blog/id/p/kronecker/), yang memegang keyakinan bahwa "Tuhan menciptakan bilangan bulat, yang lainnya adalah karya manusia," dengan sengit mengkritik teori Cantor. Akibat halangan [Kronecker](https://kenji.blog/id/p/kronecker/), Cantor tidak dapat mencapai tujuannya untuk menjadi profesor di Universitas Berlin, dan menghabiskan hidupnya di Universitas provinsi Halle.
 
 ```mermaid
 graph TD
@@ -44,7 +44,7 @@ graph TD
 
 Fakta bahwa teorinya tidak dipahami dan bahwa ia terus menerima serangan tanpa henti dari mantan gurunya sangat merusak kesehatan mental Cantor. Ia menderita depresi dan berulang kali masuk dan keluar dari rumah sakit jiwa.
 
-Namun, teorinya perlahan-lahan didukung oleh generasi ahli matematika yang lebih muda, seperti **[David Hilbert](https://kenji.blog/id/p/hilbert/)**. Hilbert memuji Cantor dengan pujian tertinggi, menyatakan, "Tidak ada seorang pun yang akan mengusir kita dari surga yang telah diciptakan Cantor untuk kita." Cantor mengakhiri hidupnya di rumah sakit jiwa di Halle pada tahun 1918, tetapi setelah kematiannya, teori himpunan menetapkan posisi yang tidak tergoyahkan sebagai fondasi matematika yang paling penting.
+Namun, teorinya perlahan-lahan didukung oleh generasi ahli matematika yang lebih muda, seperti **[David Hilbert](https://kenji.blog/id/p/hilbert/)**. [Hilbert](https://kenji.blog/id/p/hilbert/) memuji Cantor dengan pujian tertinggi, menyatakan, "Tidak ada seorang pun yang akan mengusir kita dari surga yang telah diciptakan Cantor untuk kita." Cantor mengakhiri hidupnya di rumah sakit jiwa di Halle pada tahun 1918, tetapi setelah kematiannya, teori himpunan menetapkan posisi yang tidak tergoyahkan sebagai fondasi matematika yang paling penting.
 
 ## Pencapaian Matematis: Menghitung Ketakterhinggaan
 

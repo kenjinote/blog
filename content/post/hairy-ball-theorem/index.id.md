@@ -68,7 +68,7 @@ $$
 
 Dalam kasus bangun ruang yang homeomorfik (secara topologi sama) dengan permukaan bola, karakteristik Eulernya selalu $\chi = 2$.
 
-Menurut Teorema Poincaré-Hopf, jumlah dari indeks titik singular (titik di mana vektor menjadi nol) dari suatu medan vektor pada manifold sama dengan karakteristik Euler dari manifold tersebut.
+Menurut Teorema [Poincaré](https://kenji.blog/id/p/poincare/)-Hopf, jumlah dari indeks titik singular (titik di mana vektor menjadi nol) dari suatu medan vektor pada manifold sama dengan karakteristik Euler dari manifold tersebut.
 
 Dalam rumus matematis:
 $$
@@ -84,7 +84,7 @@ Sebuah pertanyaan menarik muncul di sini. Bagaimana jika bentuknya bukan bola, m
 
 Faktanya, karakteristik Euler dari torus adalah $\chi(T^2) = 0$.
 
-Oleh karena itu, sisi kanan pada Teorema Poincaré-Hopf menjadi 0. Ini berarti **mungkin** untuk membuat medan vektor kontinu tanpa satu pun titik singular.
+Oleh karena itu, sisi kanan pada Teorema [Poincaré](https://kenji.blog/id/p/poincare/)-Hopf menjadi 0. Ini berarti **mungkin** untuk membuat medan vektor kontinu tanpa satu pun titik singular.
 
 Secara intuitif, jika itu adalah bola berbulu berbentuk donat, Anda dapat menyisir bulunya dengan rapi tanpa membuat pusaran satu pun dengan menyisirnya terus-menerus ke arah yang sama di sepanjang lubang donat.
 

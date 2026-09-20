@@ -16,7 +16,7 @@ Neste artigo, desvendaremos o mecanismo matemático do **"Crivo do Corpo de Núm
 
 ---
 
-## 1. A abordagem da fatoração na computação clássica: Evolução do método de fatoração de Fermat
+## 1. A abordagem da fatoração na computação clássica: Evolução do método de fatoração de [Fermat](https://kenji.blog/pt/p/fermat/)
 
 O problema da fatoração de inteiros é o problema de encontrar os números primos $p, q$ tais que $N = p \times q$ , para um dado número composto $N$ .
 

@@ -81,7 +81,7 @@ Estos 4 patrones pertenecen a la misma "Órbita". El "número de diseños esenci
 
 ## 5. [Lema de Burnside](https://kenji.blog/es/p/burnsides-lemma/)
 
-Aquí finalmente, hace su aparición el protagonista de hoy, el **[Lema de Burnside](https://kenji.blog/es/p/burnsides-lemma/)**. A veces también se le llama el lema de Cauchy-Frobenius. Este es un teorema asombroso que nos permite calcular fácilmente el "número de órbitas (número de patrones esencialmente diferentes)" cuando un grupo $G$ actúa sobre un conjunto finito $X$.
+Aquí finalmente, hace su aparición el protagonista de hoy, el **[Lema de Burnside](https://kenji.blog/es/p/burnsides-lemma/)**. A veces también se le llama el lema de [Cauchy](https://kenji.blog/es/p/cauchy/)-Frobenius. Este es un teorema asombroso que nos permite calcular fácilmente el "número de órbitas (número de patrones esencialmente diferentes)" cuando un grupo $G$ actúa sobre un conjunto finito $X$.
 
 La fórmula del teorema es la siguiente:
 
@@ -231,7 +231,7 @@ En realidad, este teorema no fue descubierto por primera vez por William Burnsid
 
 Sin embargo, históricamente, [Augustin-Louis Cauchy](https://kenji.blog/es/p/cauchy/) ya había publicado un caso especial de este teorema (sobre grupos simétricos) en 1845, y más tarde en 1887 Ferdinand Georg Frobenius dio una prueba para grupos finitos generales.
 
-Por lo tanto, aquellos que intentan ser rigurosos acerca de la historia matemática a veces llaman a este teorema, en tono de broma, el **"Lema de Cauchy-Frobenius"** o **"El Lema que no es de Burnside"**. Independientemente del origen de su nombre, la magnitud del papel que ha jugado este lema en la historia de la teoría de grupos y la combinatoria es inmensurable.
+Por lo tanto, aquellos que intentan ser rigurosos acerca de la historia matemática a veces llaman a este teorema, en tono de broma, el **"Lema de [Cauchy](https://kenji.blog/es/p/cauchy/)-Frobenius"** o **"El Lema que no es de Burnside"**. Independientemente del origen de su nombre, la magnitud del papel que ha jugado este lema en la historia de la teoría de grupos y la combinatoria es inmensurable.
 
 ## 11. Ejemplo 2: Colorear las caras de un cubo
 

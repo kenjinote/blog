@@ -99,7 +99,7 @@ Al resolver sistemas de ecuaciones lineales, Leibniz llegó independientemente a
 
 ### 2.5 La invención de la calculadora de engranajes escalonados
 
-Leibniz no solo fue un matemático teórico, sino también un inventor práctico que dejó su huella en la historia de las calculadoras mecánicas. Mejoró la máquina de [Blaise Pascal](https://kenji.blog/es/p/pascal/) (la Pascalina), que solo podía sumar y restar, inventando una calculadora (la *Stepped Reckoner*) que empleaba el "cilindro de Leibniz" y era capaz de realizar multiplicaciones y divisiones.
+Leibniz no solo fue un matemático teórico, sino también un inventor práctico que dejó su huella en la historia de las calculadoras mecánicas. Mejoró la máquina de [Blaise Pascal](https://kenji.blog/es/p/pascal/) (la [Pascal](https://kenji.blog/es/p/pascal/)ina), que solo podía sumar y restar, inventando una calculadora (la *Stepped Reckoner*) que empleaba el "cilindro de Leibniz" y era capaz de realizar multiplicaciones y divisiones.
 
 Este mecanismo fue revolucionario y se adoptó como la estructura estándar de las calculadoras mecánicas durante los siglos siguientes.
 

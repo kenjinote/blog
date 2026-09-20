@@ -42,8 +42,8 @@ Untuk menghargai nilai sebenarnya dari karya Baker, pertama-tama kita harus meni
 
 Pada akhir abad ke-19, [Georg Cantor](https://kenji.blog/id/p/cantor/) membuktikan dari perspektif teori himpunan bahwa sementara himpunan bilangan aljabar adalah tak terhingga yang dapat dihitung, himpunan semua bilangan kompleks adalah tak terhingga yang tidak dapat dihitung. Ini berarti bahwa "hampir semua bilangan adalah transenden". Namun, membuktikan bahwa suatu bilangan tertentu adalah transenden sangatlah sulit.
 
-### 3.2 Masalah Ke-7 Hilbert dan Teorema Gelfond-Schneider
-Pada tahun 1900, [David Hilbert](https://kenji.blog/id/p/hilbert/) menyajikan 23 masalah yang belum terpecahkan (Masalah Hilbert) di Kongres Matematikawan Internasional di Paris. Masalah ke-7-nya adalah sebagai berikut:
+### 3.2 Masalah Ke-7 [Hilbert](https://kenji.blog/id/p/hilbert/) dan Teorema Gelfond-Schneider
+Pada tahun 1900, [David Hilbert](https://kenji.blog/id/p/hilbert/) menyajikan 23 masalah yang belum terpecahkan (Masalah [Hilbert](https://kenji.blog/id/p/hilbert/)) di Kongres Matematikawan Internasional di Paris. Masalah ke-7-nya adalah sebagai berikut:
 
 > "Jika $\alpha$ adalah bilangan aljabar selain $0$ atau $1$, dan $\beta$ adalah bilangan aljabar irasional, apakah $\alpha^\beta$ selalu merupakan bilangan transenden?"
 

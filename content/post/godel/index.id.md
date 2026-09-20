@@ -14,13 +14,13 @@ tags: ["Kurt Gödel", "Teorema Ketidaklengkapan", "Matematika", "Logika", "Sejar
 
 Pencapaian Gödel jauh melampaui sekadar pembuktian matematis belaka, menjangkau ke dalam filsafat, ilmu komputer, dan bahkan kosmologi. Dalam artikel ini, kita mendalami secara mendalam jejak jenius ini yang mengubah sejarah matematika selamanya, menjelajahi detail prestasi matematisnya, persahabatan mendalamnya dengan Albert Einstein, dan akhir tragis di tahun-tahun terakhirnya dari berbagai sudut pandang.
 
-# 2. Krisis dalam Matematika dan Program Hilbert
+# 2. Krisis dalam Matematika dan Program [Hilbert](https://kenji.blog/id/p/hilbert/)
 
 Untuk benar-benar menghargai nilai karya Gödel, penting untuk memahami secara rinci "krisis fondasi" yang dihadapi dunia matematika pada saat itu. Pada akhir abad ke-19, teori himpunan tak terhingga, yang didirikan oleh [Georg Cantor](https://kenji.blog/id/p/cantor/), membawa perspektif yang sepenuhnya baru dan alat yang kuat bagi matematika. Namun, tak lama kemudian ditemukan bahwa teori ini menyimpan paradoks referensi diri yang parah, seperti "Paradoks Russell."
 
 Paradoks Russell mempertimbangkan "himpunan semua himpunan yang tidak memuat dirinya sendiri sebagai anggota." Jika himpunan ini memuat dirinya sendiri, ia bertentangan dengan definisinya sendiri; jika ia tidak memuat dirinya sendiri, ia harus berdasarkan definisi menjadi anggota dirinya sendiri, yang lagi-lagi berujung pada kontradiksi. Penemuan ini mengekspos kerapuhan ekstrem dari fondasi matematika pada masa itu, yang sangat bergantung pada penalaran intuitif.
 
-Untuk mengatasi ini, matematikawan hebat Jerman [David Hilbert](https://kenji.blog/id/p/hilbert/) mengusulkan "Program Hilbert." Ini bertujuan untuk pendekatan formalistik guna menurunkan semua teorema matematika dari sekumpulan kecil aksioma dan aturan inferensi mekanis. Tujuan utamanya adalah membuktikan secara matematis, dalam jumlah langkah yang terbatas, bahwa sistem aksioma tersebut sama sekali tidak akan pernah mengarah pada kontradiksi (konsistensi) dan bahwa setiap proposisi yang benar dapat dibuktikan di dalam sistem tersebut (kelengkapan). Jika berhasil, matematika akan berdiri di atas fondasi yang sangat kokoh. Para matematikawan pada saat itu sangat percaya pada keberhasilan program ini, menganggap formalisasi matematika yang lengkap hanyalah masalah waktu.
+Untuk mengatasi ini, matematikawan hebat Jerman [David Hilbert](https://kenji.blog/id/p/hilbert/) mengusulkan "Program [Hilbert](https://kenji.blog/id/p/hilbert/)." Ini bertujuan untuk pendekatan formalistik guna menurunkan semua teorema matematika dari sekumpulan kecil aksioma dan aturan inferensi mekanis. Tujuan utamanya adalah membuktikan secara matematis, dalam jumlah langkah yang terbatas, bahwa sistem aksioma tersebut sama sekali tidak akan pernah mengarah pada kontradiksi (konsistensi) dan bahwa setiap proposisi yang benar dapat dibuktikan di dalam sistem tersebut (kelengkapan). Jika berhasil, matematika akan berdiri di atas fondasi yang sangat kokoh. Para matematikawan pada saat itu sangat percaya pada keberhasilan program ini, menganggap formalisasi matematika yang lengkap hanyalah masalah waktu.
 
 # 3. Kehidupan Awal dan Filsafat Lingkaran Wina
 
@@ -34,7 +34,7 @@ Lingkaran Wina menganjurkan positivisme logis, berusaha mengabaikan proposisi me
 
 Pada tahun 1930, dalam disertasi doktoralnya yang diajukan ke Universitas Wina, Gödel dengan cemerlang membuktikan "Teorema Kelengkapan Logika Orde Pertama." Logika orde pertama adalah sistem logis di mana kuantor (untuk semua, terdapat) hanya dapat diterapkan pada variabel, bukan pada predikat.
 
-Dalam makalah ini, Gödel menunjukkan bahwa dalam logika orde pertama, "sebuah proposisi yang secara logis selalu benar (rumus logis yang valid) niscaya dapat dibuktikan dari aksioma dalam jumlah langkah yang terbatas." Ini menandakan keberhasilan sebagian dari Program Hilbert, menjamin bahwa aturan inferensi sistem logis itu cukup kuat. Banyak matematikawan menaruh harapan tinggi bahwa ini dapat berfungsi sebagai batu loncatan untuk juga membuktikan kelengkapan teori bilangan (aritmatika). Namun, makalah yang diterbitkan Gödel pada tahun berikutnya akan menghancurkan harapan itu sepenuhnya.
+Dalam makalah ini, Gödel menunjukkan bahwa dalam logika orde pertama, "sebuah proposisi yang secara logis selalu benar (rumus logis yang valid) niscaya dapat dibuktikan dari aksioma dalam jumlah langkah yang terbatas." Ini menandakan keberhasilan sebagian dari Program [Hilbert](https://kenji.blog/id/p/hilbert/), menjamin bahwa aturan inferensi sistem logis itu cukup kuat. Banyak matematikawan menaruh harapan tinggi bahwa ini dapat berfungsi sebagai batu loncatan untuk juga membuktikan kelengkapan teori bilangan (aritmatika). Namun, makalah yang diterbitkan Gödel pada tahun berikutnya akan menghancurkan harapan itu sepenuhnya.
 
 # 5. Kejutan Teorema Ketidaklengkapan Pertama dan Penomoran Gödel
 
@@ -59,7 +59,7 @@ flowchart TD
 
 Untuk membuktikan teorema yang menakjubkan ini, Gödel menemukan teknik terobosan yang dikenal sebagai "Penomoran Gödel". Ini adalah metode untuk mengubah simbol, rumus logika, dan keseluruhan langkah pembuktian menjadi satu bilangan asli yang sangat besar, dengan memanfaatkan keunikan faktorisasi prima. Hal ini memungkinkan proposisi metamatematika (seperti "rumus logika tertentu dapat dibuktikan") diperlakukan murni sebagai sifat aritmatika dari bilangan asli. "Lemma Diagonal" ini, yang memungkinkan sistem logika untuk berbicara tentang batas-batasnya sendiri (referensi diri), dianggap sebagai salah satu teknik pembuktian paling indah dalam sejarah matematika.
 
-# 6. Teorema Ketidaklengkapan Kedua dan Akhir Impian Hilbert
+# 6. Teorema Ketidaklengkapan Kedua dan Akhir Impian [Hilbert](https://kenji.blog/id/p/hilbert/)
 
 Sebagai konsekuensi langsung dari Teorema Ketidaklengkapan Pertama, Gödel menurunkan **Teorema Ketidaklengkapan Kedua** yang bahkan lebih kuat. Ini menyatakan: "Sebuah sistem aksiomatik formal yang konsisten dan mampu mengekspresikan aritmatika tidak dapat membuktikan konsistensinya sendiri di dalam sistem itu sendiri."
 
@@ -69,11 +69,11 @@ $$ \text{Con}(F) \implies \neg \text{Prov}( \lceil \text{Con}(F) \rceil ) $$
 
 Di sini, $\text{Con}(F)$ adalah rumus logis yang mewakili bahwa sistem aksioma $F$ konsisten. Jika sistem $F$ dapat membuktikan konsistensinya sendiri, sistem itu sebenarnya tidak konsisten.
 
-Teorema Ketidaklengkapan Kedua adalah hukuman mati mutlak bagi Program Hilbert. Impian besar Hilbert untuk membuktikan konsistensi matematika sepenuhnya dari dalam matematika itu sendiri terbukti mustahil secara prinsip. Kebenaran yang mendalam telah ditetapkan di sini: matematika tidak dapat menjamin keamanan fondasinya sendiri dengan kekuatannya sendiri.
+Teorema Ketidaklengkapan Kedua adalah hukuman mati mutlak bagi Program [Hilbert](https://kenji.blog/id/p/hilbert/). Impian besar [Hilbert](https://kenji.blog/id/p/hilbert/) untuk membuktikan konsistensi matematika sepenuhnya dari dalam matematika itu sendiri terbukti mustahil secara prinsip. Kebenaran yang mendalam telah ditetapkan di sini: matematika tidak dapat menjamin keamanan fondasinya sendiri dengan kekuatannya sendiri.
 
 # 7. Kontribusi terhadap Hipotesis Kontinum dan Semesta yang Dapat Dikonstruksi (L)
 
-Bahkan setelah teorema ketidaklengkapan, pencarian intelektual Gödel tidak berhenti. Ia memecahkan "Hipotesis Kontinum," masalah yang lama belum terpecahkan dalam teori himpunan dan yang pertama dari 23 masalah Hilbert. Diusulkan oleh Cantor, hipotesis ini mengemukakan bahwa "tidak ada himpunan yang kardinalitasnya berada di antara bilangan bulat (tak terhingga yang dapat dihitung) dan bilangan riil (kontinum)."
+Bahkan setelah teorema ketidaklengkapan, pencarian intelektual Gödel tidak berhenti. Ia memecahkan "Hipotesis Kontinum," masalah yang lama belum terpecahkan dalam teori himpunan dan yang pertama dari 23 masalah [Hilbert](https://kenji.blog/id/p/hilbert/). Diusulkan oleh Cantor, hipotesis ini mengemukakan bahwa "tidak ada himpunan yang kardinalitasnya berada di antara bilangan bulat (tak terhingga yang dapat dihitung) dan bilangan riil (kontinum)."
 
 $$ 2^{\aleph_0} = \aleph_1 $$
 

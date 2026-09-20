@@ -44,13 +44,13 @@ $$
 
 Debido a la naturaleza tan innovadora de este descubrimiento, Gauss temió la incomprensión del público y se abstuvo de publicarlo en vida. Con la publicación de los artículos de Bolyai y Lobachevsky, el mundo de las matemáticas experimentó un cambio de paradigma fundamental.
 
-## 4. Geometría de Riemann: Generalización del concepto de espacio
+## 4. Geometría de [Riemann](https://kenji.blog/es/p/riemann/): Generalización del concepto de espacio
 
-El siguiente gran salto en la geometría no euclidiana fue dado por [Bernhard Riemann](https://kenji.blog/es/p/riemann/), estudiante de Gauss. En su conferencia de habilitación de 1854, Riemann presentó ideas revolucionarias sobre los fundamentos de la geometría.
+El siguiente gran salto en la geometría no euclidiana fue dado por [Bernhard Riemann](https://kenji.blog/es/p/riemann/), estudiante de Gauss. En su conferencia de habilitación de 1854, [Riemann](https://kenji.blog/es/p/riemann/) presentó ideas revolucionarias sobre los fundamentos de la geometría.
 
-Introdujo el **tensor métrico**, que define localmente la curvatura del espacio, y construyó una geometría más general (**geometría de Riemann**) en la que la dimensión y la curvatura del espacio pueden variar según la ubicación.
+Introdujo el **tensor métrico**, que define localmente la curvatura del espacio, y construyó una geometría más general (**geometría de [Riemann](https://kenji.blog/es/p/riemann/)**) en la que la dimensión y la curvatura del espacio pueden variar según la ubicación.
 
-Dentro del marco de Riemann, además de la geometría euclidiana (curvatura 0) y la geometría hiperbólica (curvatura constante negativa), también se puede tratar de manera unificada la geometría esférica (curvatura constante positiva, **geometría elíptica**). En la geometría elíptica, las líneas paralelas "no existen", y la suma de los ángulos interiores de un triángulo es mayor a 180 grados.
+Dentro del marco de [Riemann](https://kenji.blog/es/p/riemann/), además de la geometría euclidiana (curvatura 0) y la geometría hiperbólica (curvatura constante negativa), también se puede tratar de manera unificada la geometría esférica (curvatura constante positiva, **geometría elíptica**). En la geometría elíptica, las líneas paralelas "no existen", y la suma de los ángulos interiores de un triángulo es mayor a 180 grados.
 
 $$
 \text{Suma de los ángulos interiores de un triángulo en la geometría elíptica} > 180^\circ
@@ -68,7 +68,7 @@ graph LR
 
 ## 5. El camino hacia la teoría de la relatividad: Fusión de matemáticas y física
 
-El magnífico marco matemático construido por Riemann permaneció en el ámbito de las matemáticas puras durante algún tiempo. Sin embargo, a principios del siglo XX, cuando Albert Einstein intentó construir una nueva teoría de la gravedad, esta geometría de Riemann jugó un papel decisivo.
+El magnífico marco matemático construido por [Riemann](https://kenji.blog/es/p/riemann/) permaneció en el ámbito de las matemáticas puras durante algún tiempo. Sin embargo, a principios del siglo XX, cuando Albert Einstein intentó construir una nueva teoría de la gravedad, esta geometría de [Riemann](https://kenji.blog/es/p/riemann/) jugó un papel decisivo.
 
 En su teoría de la relatividad especial, Einstein propuso el concepto de "espacio-tiempo", que integra el tiempo y el espacio. Y en la **teoría de la relatividad general**, llegó a la idea revolucionaria de que "la gravedad es la curvatura (deformación) del espacio-tiempo causada por objetos con masa".
 

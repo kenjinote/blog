@@ -59,7 +59,7 @@ timeline
 
 ### 東北論文
 
-他1957年發表在日本《東北數學雜誌》上的論文「關於同調代數的某些問題（Sur quelques points d'algèbre homologique）」，是一篇融合了範疇論和同調代數、確立了 **阿貝爾範疇（Abelian Category）** 概念的歷史性論文。這使得在任何拓撲空間上嚴格定義層的上同調成為可能。
+他1957年發表在日本《東北數學雜誌》上的論文「關於同調代數的某些問題（Sur quelques points d'algèbre homologique）」，是一篇融合了範疇論和同調代數、確立了 **阿貝爾範疇（[Abel](https://kenji.blog/zh-tw/p/abel/)ian Category）** 概念的歷史性論文。這使得在任何拓撲空間上嚴格定義層的上同調成為可能。
 
 ### IHÉS 的創立與 EGA/SGA
 

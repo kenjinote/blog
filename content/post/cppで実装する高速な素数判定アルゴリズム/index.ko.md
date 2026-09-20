@@ -52,7 +52,7 @@ bool is_prime_trial_division(long long n) {
 
 # 2. 페르마 테스트：확률적 소수 판별의 서막
 
-시험 나눗셈의 한계를 돌파하기 위해 고안된 것이 정수론의 정리를 이용한 「확률적 알고리즘 (Probabilistic Algorithm)」입니다. 그 대표적인 예가 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 이용한 「페르마 테스트 (Fermat Primality Test)」입니다.
+시험 나눗셈의 한계를 돌파하기 위해 고안된 것이 정수론의 정리를 이용한 「확률적 알고리즘 (Probabilistic Algorithm)」입니다. 그 대표적인 예가 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 이용한 「페르마 테스트 ([Fermat](https://kenji.blog/ko/p/fermat/) Primality Test)」입니다.
 
 ## [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))
 

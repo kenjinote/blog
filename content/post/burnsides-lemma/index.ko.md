@@ -81,7 +81,7 @@ flowchart LR
 
 ## 5. [번사이드 보조정리](https://kenji.blog/ko/p/burnsides-lemma/) ([Burnside's Lemma](https://kenji.blog/ko/p/burnsides-lemma/))
 
-여기서 드디어 이번 주제의 주인공인 **[번사이드 보조정리](https://kenji.blog/ko/p/burnsides-lemma/)** 가 등장합니다. 코시-프로베니우스 보조정리(Cauchy-Frobenius lemma)라고 불리기도 합니다. 이것은 어떤 군 $G$가 유한 집합 $X$에 작용할 때, 그 "궤도의 수(본질적으로 다른 패턴의 수)"를 쉽게 계산할 수 있게 해주는 경이로운 정리입니다.
+여기서 드디어 이번 주제의 주인공인 **[번사이드 보조정리](https://kenji.blog/ko/p/burnsides-lemma/)** 가 등장합니다. 코시-프로베니우스 보조정리([Cauchy](https://kenji.blog/ko/p/cauchy/)-Frobenius lemma)라고 불리기도 합니다. 이것은 어떤 군 $G$가 유한 집합 $X$에 작용할 때, 그 "궤도의 수(본질적으로 다른 패턴의 수)"를 쉽게 계산할 수 있게 해주는 경이로운 정리입니다.
 
 정리의 수식은 다음과 같습니다.
 

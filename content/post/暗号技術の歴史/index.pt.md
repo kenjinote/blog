@@ -120,7 +120,7 @@ No entanto, à medida que o poder de computação melhorava, tornou-se claro que
 ## AES (Advanced Encryption Standard)
 Como um novo padrão para substituir o DES, o "AES" foi estabelecido em 2001. O algoritmo "Rijndael", criado por criptógrafos belgas selecionado através de um concurso público, foi adotado.
 
-O AES não utiliza a Rede de Feistel, mas sim a "Estrutura SPN (Substitution-Permutation Network)", e utiliza operações matemáticas sobre o Campo de Galois (campo finito) $GF(2^8)$. O tamanho da chave pode ser selecionado entre 128, 192 e 256 bits, e ainda hoje é amplamente utilizado como o padrão de criptografia de chave simétrica em todo o mundo.
+O AES não utiliza a Rede de Feistel, mas sim a "Estrutura SPN (Substitution-Permutation Network)", e utiliza operações matemáticas sobre o Campo de [Galois](https://kenji.blog/pt/p/galois/) (campo finito) $GF(2^8)$. O tamanho da chave pode ser selecionado entre 128, 192 e 256 bits, e ainda hoje é amplamente utilizado como o padrão de criptografia de chave simétrica em todo o mundo.
 
 ```mermaid
 graph TD

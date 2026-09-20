@@ -30,7 +30,7 @@ $$ P = \frac{F}{A} $$
 
 Laut der berühmten Studie des schwedischen Orthopäden Alf Nachemson steigt der Bandscheibeninnendruck zwischen dem 3. und 4. Lendenwirbel – ausgehend von 100% im Stehen – bei einer korrekten Sitzhaltung auf 140% an. Bei einer nach vorne gebeugten Haltung (Rundrücken) erreicht er sogar 185% bis über 200%.
 
-Dabei konzentrieren nicht nur die Kompressionskraft $F$ durch die Masse des Oberkörpers, sondern auch das Biegemoment durch die vorgebeugte Haltung die Spannungen auf bestimmte Bereiche der Bandscheibe (insbesondere das hintere Ringband) und lassen den Druck $P_{local}$ auf einer lokalen Fläche $A_{local}$ drastisch ansteigen. Denkt man an die Einheit Pascal (Pa, $N/m^2$), konzentriert sich ein gewaltiger Druck von mehreren Megapascal (MPa) auf bestimmte Faserringe. Dies ist die direkte Ursache für Bandscheibenvorfälle und chronische Rückenschmerzen.
+Dabei konzentrieren nicht nur die Kompressionskraft $F$ durch die Masse des Oberkörpers, sondern auch das Biegemoment durch die vorgebeugte Haltung die Spannungen auf bestimmte Bereiche der Bandscheibe (insbesondere das hintere Ringband) und lassen den Druck $P_{local}$ auf einer lokalen Fläche $A_{local}$ drastisch ansteigen. Denkt man an die Einheit [Pascal](https://kenji.blog/de/p/pascal/) (Pa, $N/m^2$), konzentriert sich ein gewaltiger Druck von mehreren Megapascal (MPa) auf bestimmte Faserringe. Dies ist die direkte Ursache für Bandscheibenvorfälle und chronische Rückenschmerzen.
 
 ### Berechnung des Drehmoments bei schlechter Körperhaltung (Rundrücken / Beckenkippung nach hinten)
 

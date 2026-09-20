@@ -156,7 +156,7 @@ C'est ainsi que le directeur a réussi à loger de manière spectaculaire un nom
 
 ## 5. L'infini a des différences de « taille » (Le théorème de Cantor)
 
-Ce que l'Hôtel Infini de Hilbert nous apprend, c'est le fait que **l'« infini dénombrable » (l'infini que l'on peut compter en attribuant des numéros 1, 2, 3...), peu importe combien on l'additionne ou le multiplie, finit toujours par tenir dans le cadre d'un « infini dénombrable » de la même taille.**
+Ce que l'Hôtel Infini de [Hilbert](https://kenji.blog/fr/p/hilbert/) nous apprend, c'est le fait que **l'« infini dénombrable » (l'infini que l'on peut compter en attribuant des numéros 1, 2, 3...), peu importe combien on l'additionne ou le multiplie, finit toujours par tenir dans le cadre d'un « infini dénombrable » de la même taille.**
 
 Cependant, le mathématicien [Georg Cantor](https://kenji.blog/fr/p/cantor/) a découvert un fait encore plus terrifiant.
 Les « entiers naturels » et les « fractions » peuvent tous être logés dans cet hôtel infini. Mais, **si les clients des « nombres réels » (tous les nombres décimaux, y compris les nombres irrationnels) arrivaient, il serait absolument impossible de tous les loger, même en utilisant cet hôtel infini.**
@@ -177,5 +177,5 @@ On a tendance à tout regrouper sous le mot « infini », mais en réalité, il 
 Toutes ces intuitions évidentes sont brillamment contredites.
 Le monde de l'infini est un trésor de paradoxes (des vérités contraires à l'intuition). Les mathématiciens n'ont pas craint ces paradoxes ; ils les ont maîtrisés par la force de la logique, les ont classés et ont créé le magnifique système de la théorie des ensembles moderne.
 
-La prochaine fois que l'on vous refusera une chambre en disant « L'hôtel est complet », essayez d'imaginer : « Si seulement cet hôtel était l'Hôtel Infini de Hilbert... »
+La prochaine fois que l'on vous refusera une chambre en disant « L'hôtel est complet », essayez d'imaginer : « Si seulement cet hôtel était l'Hôtel Infini de [Hilbert](https://kenji.blog/fr/p/hilbert/)... »
 

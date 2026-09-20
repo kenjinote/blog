@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introdução
 
-Na história da matemática, existe uma figura conhecida como o "Pai da Álgebra". Essa figura é **[Diofanto](https://kenji.blog/pt/p/diophantus/)** ([Diofanto](https://kenji.blog/pt/p/diophantus/) de Alexandria), que esteve ativo na antiga Alexandria. A sua obra principal, *Arithmetica*, teve uma influência profunda nos matemáticos posteriores no mundo islâmico e nos matemáticos na Europa renascentista. Em particular, o "Último Teorema de Fermat", que [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) escreveu nas margens de *Arithmetica*, é extremamente famoso.
+Na história da matemática, existe uma figura conhecida como o "Pai da Álgebra". Essa figura é **[Diofanto](https://kenji.blog/pt/p/diophantus/)** ([Diofanto](https://kenji.blog/pt/p/diophantus/) de Alexandria), que esteve ativo na antiga Alexandria. A sua obra principal, *Arithmetica*, teve uma influência profunda nos matemáticos posteriores no mundo islâmico e nos matemáticos na Europa renascentista. Em particular, o "Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)", que [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) escreveu nas margens de *Arithmetica*, é extremamente famoso.
 
 Neste artigo, vamos aprofundar a vida de [Diofanto](https://kenji.blog/pt/p/diophantus/), as suas conquistas matemáticas, os detalhes da sua obra-prima *Arithmetica* e as "equações diofantinas" que têm o seu nome. Além disso, também desvendaremos o mistério do seu "epitáfio", a partir do qual se pode deduzir o seu tempo de vida.
 
@@ -97,7 +97,7 @@ Na margem ao lado deste problema, [Pierre de Fermat](https://kenji.blog/pt/p/fer
 
 > "É impossível separar um cubo em dois cubos, ou uma quarta potência em duas quartas potências, ou em geral, qualquer potência maior que a segunda, em duas potências iguais. Descobri uma demonstração verdadeiramente maravilhosa disto, mas esta margem é demasiado estreita para a conter."
 
-Este é o famoso **Último Teorema de Fermat** (que $x^n + y^n = z^n \ (n \ge 3)$ não tem soluções inteiras positivas). Este teorema continuou a rejeitar os desafios de matemáticos geniais de todo o mundo durante cerca de 350 anos depois de ter sido proposto, até que foi finalmente provado por [Andrew Wiles](https://kenji.blog/pt/p/wiles/) em 1995. Sem o livro de [Diofanto](https://kenji.blog/pt/p/diophantus/), este grande drama poderia nunca ter ocorrido.
+Este é o famoso **Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)** (que $x^n + y^n = z^n \ (n \ge 3)$ não tem soluções inteiras positivas). Este teorema continuou a rejeitar os desafios de matemáticos geniais de todo o mundo durante cerca de 350 anos depois de ter sido proposto, até que foi finalmente provado por [Andrew Wiles](https://kenji.blog/pt/p/wiles/) em 1995. Sem o livro de [Diofanto](https://kenji.blog/pt/p/diophantus/), este grande drama poderia nunca ter ocorrido.
 
 ```mermaid
 graph TD
@@ -176,9 +176,9 @@ As obras de [Diofanto](https://kenji.blog/pt/p/diophantus/) perderam-se temporar
 
 Em particular, matemáticos em Bagdade no século IX traduziram *Arithmetica* para o árabe, contribuindo muito para o desenvolvimento da álgebra islâmica. Matemáticos islâmicos como Al-Karaji adotaram e desenvolveram ainda mais os métodos de [Diofanto](https://kenji.blog/pt/p/diophantus/).
 
-No século XVI, à medida que os clássicos gregos foram redescobertos na Europa renascentista, *Arithmetica* foi traduzida para o latim. Uma edição bilíngue em grego e latim publicada por [Claude Gaspard Bachet](https://kenji.blog/pt/p/bachet/) de Méziriac em 1621 foi muito lida. Foi esta edição de [Bachet](https://kenji.blog/pt/p/bachet/) de *Arithmetica* que Fermat estudou cuidadosamente, o que desencadeou a abertura de uma nova porta na matemática.
+No século XVI, à medida que os clássicos gregos foram redescobertos na Europa renascentista, *Arithmetica* foi traduzida para o latim. Uma edição bilíngue em grego e latim publicada por [Claude Gaspard Bachet](https://kenji.blog/pt/p/bachet/) de Méziriac em 1621 foi muito lida. Foi esta edição de [Bachet](https://kenji.blog/pt/p/bachet/) de *Arithmetica* que [Fermat](https://kenji.blog/pt/p/fermat/) estudou cuidadosamente, o que desencadeou a abertura de uma nova porta na matemática.
 
-A teoria das equações diofantinas foi subsequentemente profundamente estudada por gigantes como [Leonhard Euler](https://kenji.blog/pt/p/euler/), [Joseph-Louis Lagrange](https://kenji.blog/pt/p/lagrange/) e [Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/). A sua pesquisa transformou-se nos vastos campos matemáticos modernos da "teoria algébrica dos números" e da "geometria algébrica". O 10º dos 23 problemas de Hilbert foi "encontrar um algoritmo geral para determinar se uma dada equação diofantina é solucionável", e em 1970 Yuri Matiyasevich provou que "nenhum algoritmo desse tipo existe". O nome de [Diofanto](https://kenji.blog/pt/p/diophantus/) está profundamente gravado na vanguarda da matemática moderna.
+A teoria das equações diofantinas foi subsequentemente profundamente estudada por gigantes como [Leonhard Euler](https://kenji.blog/pt/p/euler/), [Joseph-Louis Lagrange](https://kenji.blog/pt/p/lagrange/) e [Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/). A sua pesquisa transformou-se nos vastos campos matemáticos modernos da "teoria algébrica dos números" e da "geometria algébrica". O 10º dos 23 problemas de [Hilbert](https://kenji.blog/pt/p/hilbert/) foi "encontrar um algoritmo geral para determinar se uma dada equação diofantina é solucionável", e em 1970 Yuri Matiyasevich provou que "nenhum algoritmo desse tipo existe". O nome de [Diofanto](https://kenji.blog/pt/p/diophantus/) está profundamente gravado na vanguarda da matemática moderna.
 
 ## 7. Conclusão
 

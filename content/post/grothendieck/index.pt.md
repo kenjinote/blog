@@ -59,7 +59,7 @@ Depois de alcançar o auge da análise funcional, mudou surpreendentemente o seu
 
 ### O Artigo de Tohoku
 
-O seu artigo "Sur quelques points d'algèbre homologique" (Sobre alguns pontos da álgebra homológica), publicado na revista japonesa *Tohoku Mathematical Journal* em 1957, é um artigo histórico que fundiu a teoria das categorias e a álgebra homológica, estabelecendo o conceito de uma **Categoria Abeliana** . Isso possibilitou definir rigorosamente a cohomologia de feixes sobre qualquer espaço topológico.
+O seu artigo "Sur quelques points d'algèbre homologique" (Sobre alguns pontos da álgebra homológica), publicado na revista japonesa *Tohoku Mathematical Journal* em 1957, é um artigo histórico que fundiu a teoria das categorias e a álgebra homológica, estabelecendo o conceito de uma **Categoria [Abel](https://kenji.blog/pt/p/abel/)iana** . Isso possibilitou definir rigorosamente a cohomologia de feixes sobre qualquer espaço topológico.
 
 ### A Fundação do IHÉS e EGA/SGA
 
@@ -112,7 +112,7 @@ Grothendieck explicou a sua abordagem matemática usando a analogia de um "quebr
 
 Entrando na década de 1980, propôs novas teorias que abordavam os mistérios mais profundos da matemática a partir de conceitos muito simples e visuais.
 
-Um destes foi os **"Dessins d'enfants" (Desenhos de crianças)** . Descobriu que a partir de gráficos simples desenhados em superfícies curvas como uma esfera, se podia extrair a ação do grupo de Galois absoluto, um objeto altamente misterioso e complexo na teoria dos números.
+Um destes foi os **"Dessins d'enfants" (Desenhos de crianças)** . Descobriu que a partir de gráficos simples desenhados em superfícies curvas como uma esfera, se podia extrair a ação do grupo de [Galois](https://kenji.blog/pt/p/galois/) absoluto, um objeto altamente misterioso e complexo na teoria dos números.
 
 Além disso, propôs um programa chamado **"Geometria Anabeliana"** . Esta é a surpreendente conjetura de que para certas variedades algébricas, os objetos geométricos e aritméticos originais podem ser completamente reconstruídos apenas a partir dos dados topológicos conhecidos como grupo fundamental.
 

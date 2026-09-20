@@ -99,7 +99,7 @@ En cherchant à résoudre les systèmes d'équations linéaires, Leibniz découv
 
 ### 2.5 L'invention de la machine à calculer à cylindres cannelés
 
-Théoricien brillant, Leibniz n'en fut pas moins un inventeur pratique qui laissa son nom dans l'histoire des calculatrices mécaniques. Il améliora la machine de [Blaise Pascal](https://kenji.blog/fr/p/pascal/) (la Pascaline), qui ne pouvait faire que des additions et des soustractions, en concevant une machine utilisant un « cylindre de Leibniz » (le multiplicateur à cylindres cannelés) capable d'effectuer des multiplications et des divisions.
+Théoricien brillant, Leibniz n'en fut pas moins un inventeur pratique qui laissa son nom dans l'histoire des calculatrices mécaniques. Il améliora la machine de [Blaise Pascal](https://kenji.blog/fr/p/pascal/) (la [Pascal](https://kenji.blog/fr/p/pascal/)ine), qui ne pouvait faire que des additions et des soustractions, en concevant une machine utilisant un « cylindre de Leibniz » (le multiplicateur à cylindres cannelés) capable d'effectuer des multiplications et des divisions.
 
 Ce mécanisme ingénieux devint le standard de l'architecture des calculatrices mécaniques pour les siècles à venir.
 

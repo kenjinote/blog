@@ -44,13 +44,13 @@ $$
 
 Gauss, craignant l'incompréhension du public face à l'innovation radicale de cette découverte, s'est abstenu de la publier de son vivant. C'est la publication des travaux par Bolyai et Lobatchevski qui a entraîné un changement de paradigme fondamental dans le monde des mathématiques.
 
-## 4. La Géométrie Riemannienne : Généralisation du Concept d'Espace
+## 4. La Géométrie [Riemann](https://kenji.blog/fr/p/riemann/)ienne : Généralisation du Concept d'Espace
 
-Le prochain bond en avant de la géométrie non euclidienne a été réalisé par [Bernhard Riemann](https://kenji.blog/fr/p/riemann/), un élève de Gauss. Lors de sa leçon d'habilitation en 1854, Riemann a présenté des idées révolutionnaires sur les fondements de la géométrie.
+Le prochain bond en avant de la géométrie non euclidienne a été réalisé par [Bernhard Riemann](https://kenji.blog/fr/p/riemann/), un élève de Gauss. Lors de sa leçon d'habilitation en 1854, [Riemann](https://kenji.blog/fr/p/riemann/) a présenté des idées révolutionnaires sur les fondements de la géométrie.
 
 Il a introduit le **tenseur métrique** pour définir localement la courbure de l'espace, et a construit une géométrie plus générale (**la géométrie riemannienne**) où la dimension et la courbure de l'espace peuvent varier selon le lieu.
 
-Dans le cadre de Riemann, il est devenu possible de traiter de manière unifiée la géométrie euclidienne (courbure nulle), la géométrie hyperbolique (courbure constante négative) et la géométrie sphérique (courbure constante positive, **géométrie elliptique**). En géométrie elliptique, les droites parallèles « n'existent pas », et la somme des angles intérieurs d'un triangle est supérieure à 180 degrés.
+Dans le cadre de [Riemann](https://kenji.blog/fr/p/riemann/), il est devenu possible de traiter de manière unifiée la géométrie euclidienne (courbure nulle), la géométrie hyperbolique (courbure constante négative) et la géométrie sphérique (courbure constante positive, **géométrie elliptique**). En géométrie elliptique, les droites parallèles « n'existent pas », et la somme des angles intérieurs d'un triangle est supérieure à 180 degrés.
 
 $$
 \text{Somme des angles intérieurs d'un triangle en géométrie elliptique} > 180^\circ
@@ -68,7 +68,7 @@ graph LR
 
 ## 5. Vers la Théorie de la Relativité : Fusion des Mathématiques et de la Physique
 
-Le grand cadre mathématique construit par Riemann est resté quelque temps confiné au domaine des mathématiques pures. Cependant, au début du XXe siècle, lorsque Albert Einstein a cherché à construire une nouvelle théorie de la gravité, cette géométrie riemannienne a joué un rôle décisif.
+Le grand cadre mathématique construit par [Riemann](https://kenji.blog/fr/p/riemann/) est resté quelque temps confiné au domaine des mathématiques pures. Cependant, au début du XXe siècle, lorsque Albert Einstein a cherché à construire une nouvelle théorie de la gravité, cette géométrie riemannienne a joué un rôle décisif.
 
 Einstein a proposé le concept d'« espace-temps » unifiant l'espace et le temps dans sa théorie de la relativité restreinte. Puis, dans sa **théorie de la relativité générale**, il a abouti à l'idée révolutionnaire que « la gravité est la distorsion (courbure) de l'espace-temps par des objets massifs ».
 

@@ -42,8 +42,8 @@ Para apreciar el verdadero valor del trabajo de Baker, primero debemos revisar l
 
 A finales del siglo XIX, [Georg Cantor](https://kenji.blog/es/p/cantor/) demostró desde una perspectiva de la teoría de conjuntos que mientras el conjunto de números algebraicos es infinito numerable, el conjunto de todos los números complejos es infinito no numerable. Esto significa que "casi todos los números son trascendentes". Sin embargo, demostrar que un número específico dado es trascendente es extremadamente difícil.
 
-### 3.2 El Séptimo Problema de Hilbert y el Teorema de Gelfond-Schneider
-En 1900, [David Hilbert](https://kenji.blog/es/p/hilbert/) presentó 23 problemas sin resolver (los 23 problemas de Hilbert) en el Congreso Internacional de Matemáticos en París. Su séptimo problema fue el siguiente:
+### 3.2 El Séptimo Problema de [Hilbert](https://kenji.blog/es/p/hilbert/) y el Teorema de Gelfond-Schneider
+En 1900, [David Hilbert](https://kenji.blog/es/p/hilbert/) presentó 23 problemas sin resolver (los 23 problemas de [Hilbert](https://kenji.blog/es/p/hilbert/)) en el Congreso Internacional de Matemáticos en París. Su séptimo problema fue el siguiente:
 
 > "Si $\alpha$ es un número algebraico distinto de $0$ o $1$, y $\beta$ es un número algebraico irracional, ¿es $\alpha^\beta$ siempre un número trascendente?"
 

@@ -113,7 +113,7 @@ $$
 B_0 = 1, \quad B_1 = -\frac{1}{2}, \quad B_2 = \frac{1}{6}, \quad B_4 = -\frac{1}{30}, \quad B_6 = \frac{1}{42} \dots
 $$
 
-Seki chamou isso de "Daseki-jutsu" e estabeleceu um método para calculá-lo eficientemente usando uma tabela de coeficientes semelhante ao triângulo de Pascal (chamada "Rippo-shiki" no Wasan).
+Seki chamou isso de "Daseki-jutsu" e estabeleceu um método para calculá-lo eficientemente usando uma tabela de coeficientes semelhante ao triângulo de [Pascal](https://kenji.blog/pt/p/pascal/) (chamada "Rippo-shiki" no Wasan).
 
 # 8. Desenvolvimento da Escola Seki de Wasan e seus Sucessores
 

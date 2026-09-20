@@ -39,7 +39,7 @@ A medida que las computadoras clásicas se acercaban a sus límites físicos, co
 
 «La naturaleza no es clásica, por lo que si se quiere hacer una simulación de la naturaleza, más vale que se construya con principios de la mecánica cuántica».
 
-Detrás de esta afirmación se encuentra el hecho de que la dimensión del «espacio de Hilbert» (Hilbert Space) que describe el estado de un sistema cuántico explota exponencialmente con respecto al número de partículas. Consideremos un sistema compuesto por $N$ partículas de espín $1/2$ (es decir, sistemas con dos estados cuánticos). El estado de una partícula se describe en un espacio vectorial complejo bidimensional $\mathbb{C}^2$. Por lo tanto, el espacio de estados $\mathcal{H}$ del sistema compuesto por $N$ partículas se construye como el producto tensorial de los espacios de estados de cada subsistema:
+Detrás de esta afirmación se encuentra el hecho de que la dimensión del «espacio de [Hilbert](https://kenji.blog/es/p/hilbert/)» ([Hilbert](https://kenji.blog/es/p/hilbert/) Space) que describe el estado de un sistema cuántico explota exponencialmente con respecto al número de partículas. Consideremos un sistema compuesto por $N$ partículas de espín $1/2$ (es decir, sistemas con dos estados cuánticos). El estado de una partícula se describe en un espacio vectorial complejo bidimensional $\mathbb{C}^2$. Por lo tanto, el espacio de estados $\mathcal{H}$ del sistema compuesto por $N$ partículas se construye como el producto tensorial de los espacios de estados de cada subsistema:
 
 $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
@@ -155,7 +155,7 @@ De este modo, la computación cuántica no representa una mera medida temporal p
 
 # Capítulo 2: Fundamentos del Bit Clásico y el Cúbit (Qubit)
 
-Al construir el marco teórico de la información cuántica, el concepto más fundamental es la definición de la "unidad mínima de información". En este capítulo, partiremos del bit de la teoría clásica de la información y ampliaremos el concepto hacia el "cúbit (Qubit)", la unidad mínima de información cuántica basada en los postulados de la mecánica cuántica. Utilizando el lenguaje riguroso del espacio de Hilbert, la notación bra-ket y el álgebra lineal, desentrañaremos a fondo la estructura matemática de los estados cuánticos. Sin hacer concesiones, asomémonos al abismo de la información cuántica desde una perspectiva profesional y experta.
+Al construir el marco teórico de la información cuántica, el concepto más fundamental es la definición de la "unidad mínima de información". En este capítulo, partiremos del bit de la teoría clásica de la información y ampliaremos el concepto hacia el "cúbit (Qubit)", la unidad mínima de información cuántica basada en los postulados de la mecánica cuántica. Utilizando el lenguaje riguroso del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/), la notación bra-ket y el álgebra lineal, desentrañaremos a fondo la estructura matemática de los estados cuánticos. Sin hacer concesiones, asomémonos al abismo de la información cuántica desde una perspectiva profesional y experta.
 
 ## 2.1 La unidad mínima de información: Formulación matemática y límites del bit clásico
 
@@ -178,7 +178,7 @@ Aquí, $p_0, p_1$ son números reales que representan las probabilidades de que 
 1. **No negatividad** : $p_0 \ge 0, \quad p_1 \ge 0$
 2. **Condición de normalización (probabilidad total igual a 1)** : $p_0 + p_1 = 1$
 
-En el mundo de los bits clásicos, un sistema compuesto que combina múltiples bits se describe mediante el producto tensorial (producto de Kronecker) de sus respectivos vectores de probabilidad. Por ejemplo, la probabilidad conjunta de dos bits clásicos es la siguiente:
+En el mundo de los bits clásicos, un sistema compuesto que combina múltiples bits se describe mediante el producto tensorial (producto de [Kronecker](https://kenji.blog/es/p/kronecker/)) de sus respectivos vectores de probabilidad. Por ejemplo, la probabilidad conjunta de dos bits clásicos es la siguiente:
 
 $$
 \mathbf{p}_{AB} = \mathbf{p}_A \otimes \mathbf{p}_B = \begin{pmatrix} p_{A0} \\ p_{A1} \end{pmatrix} \otimes \begin{pmatrix} p_{B0} \\ p_{B1} \end{pmatrix} = \begin{pmatrix} p_{A0}p_{B0} \\ p_{A0}p_{B1} \\ p_{A1}p_{B0} \\ p_{A1}p_{B1} \end{pmatrix}
@@ -188,9 +188,9 @@ El marco de la teoría de la información clásica es sumamente potente y consti
 
 ## 2.2 Postulados de la mecánica cuántica y notación bra-ket (Bra-ket notation)
 
-El primer postulado (Postulate) de la mecánica cuántica establece que "el estado de un sistema físico cerrado se describe completamente mediante un vector unitario (vector de estado) en un espacio vectorial completo dotado de un producto interno complejo, es decir, un espacio de Hilbert (Hilbert Space) $\mathcal{H}$ ". En el contexto de la computación cuántica, dado que se pueden ignorar los grados de libertad espaciales continuos, este espacio de Hilbert suele ser un espacio vectorial complejo de dimensión finita $\mathbb{C}^d$ .
+El primer postulado (Postulate) de la mecánica cuántica establece que "el estado de un sistema físico cerrado se describe completamente mediante un vector unitario (vector de estado) en un espacio vectorial completo dotado de un producto interno complejo, es decir, un espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) ([Hilbert](https://kenji.blog/es/p/hilbert/) Space) $\mathcal{H}$ ". En el contexto de la computación cuántica, dado que se pueden ignorar los grados de libertad espaciales continuos, este espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) suele ser un espacio vectorial complejo de dimensión finita $\mathbb{C}^d$ .
 
-La unidad mínima de información cuántica, el "cúbit (Qubit)", se define rigurosamente como un estado en un espacio de Hilbert complejo bidimensional $\mathcal{H} \cong \mathbb{C}^2$ . Para describir los estados en este espacio vectorial, es estándar utilizar la **notación bra-ket (Bra-ket notation)** introducida por el físico Paul Dirac.
+La unidad mínima de información cuántica, el "cúbit (Qubit)", se define rigurosamente como un estado en un espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) complejo bidimensional $\mathcal{H} \cong \mathbb{C}^2$ . Para describir los estados en este espacio vectorial, es estándar utilizar la **notación bra-ket (Bra-ket notation)** introducida por el físico Paul Dirac.
 
 El vector columna que representa un estado cuántico se denomina **vector ket (Ket vector)** y se denota como $|\psi\rangle$ . Introduzcamos una base ortonormal llamada base computacional (Computational basis) como los estados correspondientes al $0$ y $1$ del bit clásico. Estos también se conocen como la base $Z$ del cúbit y se definen respectivamente como $|0\rangle$ y $|1\rangle$ :
 
@@ -198,7 +198,7 @@ $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 $$
 
-Por otra parte, según el teorema de representación de Riesz (Riesz representation theorem), a cada vector ket de un espacio de Hilbert le corresponde de manera única un elemento del espacio dual (Dual space) que actúa como un funcional lineal continuo. A este se le denomina **vector bra (Bra vector)** y se denota como $\langle\psi|$ . En la representación matricial, el vector bra correspondiente se obtiene tomando el conjugado hermítico (la transpuesta conjugada compleja, denotada por $^\dagger$ ) del vector ket:
+Por otra parte, según el teorema de representación de Riesz (Riesz representation theorem), a cada vector ket de un espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) le corresponde de manera única un elemento del espacio dual (Dual space) que actúa como un funcional lineal continuo. A este se le denomina **vector bra (Bra vector)** y se denota como $\langle\psi|$ . En la representación matricial, el vector bra correspondiente se obtiene tomando el conjugado hermítico (la transpuesta conjugada compleja, denotada por $^\dagger$ ) del vector ket:
 
 $$
 \langle\psi| = (|\psi\rangle)^\dagger = (|\psi\rangle^*)^T
@@ -210,7 +210,7 @@ $$
 \langle 0| = \begin{pmatrix} 1 & 0 \end{pmatrix}, \quad \langle 1| = \begin{pmatrix} 0 & 1 \end{pmatrix}
 $$
 
-El verdadero valor de la notación bra-ket radica en que el cálculo del producto interno se vuelve visualmente en extremo intuitivo y claro. El producto interno entre el bra $\langle\phi|$ y el ket $|\psi\rangle$ se escribe como $\langle\phi|\psi\rangle$ (lo cual proviene del juego de palabras de Dirac, donde Bra y Ket se unen para formar un Bracket). Como la base computacional $\{|0\rangle, |1\rangle\}$ constituye un sistema ortonormal (Orthonormal system), se expresa mediante la delta de Kronecker $\delta_{ij}$ de la siguiente manera:
+El verdadero valor de la notación bra-ket radica en que el cálculo del producto interno se vuelve visualmente en extremo intuitivo y claro. El producto interno entre el bra $\langle\phi|$ y el ket $|\psi\rangle$ se escribe como $\langle\phi|\psi\rangle$ (lo cual proviene del juego de palabras de Dirac, donde Bra y Ket se unen para formar un Bracket). Como la base computacional $\{|0\rangle, |1\rangle\}$ constituye un sistema ortonormal (Orthonormal system), se expresa mediante la delta de [Kronecker](https://kenji.blog/es/p/kronecker/) $\delta_{ij}$ de la siguiente manera:
 
 $$
 \langle i | j \rangle = \delta_{ij} \quad (i, j \in \{0, 1\})
@@ -232,7 +232,7 @@ $$
 
 ## 2.3 El principio de superposición cuántica y amplitudes de probabilidad complejas
 
-Mientras que un bit clásico se encuentra siempre en un estado definido de $0$ o $1$, o en una mezcla probabilística de ambos, la exigencia de linealidad (Linearity) de la mecánica cuántica permite que un cúbit adopte un estado fundamentalmente distinto denominado "superposición (Superposition)", expresado como una combinación lineal de $|0\rangle$ y $|1\rangle$ . Cualquier vector unitario dentro del espacio de Hilbert $\mathcal{H}$ es admisible como un estado físico válido.
+Mientras que un bit clásico se encuentra siempre en un estado definido de $0$ o $1$, o en una mezcla probabilística de ambos, la exigencia de linealidad (Linearity) de la mecánica cuántica permite que un cúbit adopte un estado fundamentalmente distinto denominado "superposición (Superposition)", expresado como una combinación lineal de $|0\rangle$ y $|1\rangle$ . Cualquier vector unitario dentro del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) $\mathcal{H}$ es admisible como un estado físico válido.
 
 Por consiguiente, el estado puro (Pure state) más general de un único cúbit $|\psi\rangle$ se desarrolla utilizando la base computacional de la siguiente manera:
 
@@ -282,7 +282,7 @@ $$
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
 $$
 
-De este modo, dado que la fase global se cancela a sí misma, es imposible observarla mediante cualquier medición física. En otras palabras, aunque $|\psi\rangle$ y $e^{i\phi_0}|\psi\rangle$ son vectores distintos en el espacio de Hilbert (aunque representan el mismo rayo), representan físicamente exactamente el mismo estado.
+De este modo, dado que la fase global se cancela a sí misma, es imposible observarla mediante cualquier medición física. En otras palabras, aunque $|\psi\rangle$ y $e^{i\phi_0}|\psi\rangle$ son vectores distintos en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) (aunque representan el mismo rayo), representan físicamente exactamente el mismo estado.
 
 Por lo tanto, ignorando la fase global y manteniendo únicamente la fase relativa (Relative phase) $\varphi = \phi_1 - \phi_0$ (donde $\varphi \in [0, 2\pi)$ ) entre $|0\rangle$ y $|1\rangle$ como parámetro, cualquier estado puro de un único cúbit se expresa de manera única y rigurosa en la siguiente **forma canónica** :
 
@@ -313,7 +313,7 @@ graph TD
     style State fill:#bbf,stroke:#333,stroke-width:4px,stroke-dasharray: 5 5
 ```
 
-La propiedad más destacada de la esfera de Bloch es que "los estados ortogonales en el espacio de Hilbert (estados cuyo producto interno es cero) se sitúan como puntos antípodas (Antipodal points: puntos opuestos a 180 grados) entre sí en el espacio real tridimensional de la esfera de Bloch". Por ejemplo, el estado ortogonal a $|0\rangle$ (polo norte, $\theta=0$ ) es $|1\rangle$ (polo sur, $\theta=\pi$ ). El cálculo del producto interno entre estados ortogonales en el espacio de Hilbert $\langle 0 | 1 \rangle = 0$ equivale a una separación angular de $\pi$ (180 grados) sobre la esfera de Bloch. Dado que el ángulo geométrico es el doble del ángulo en el espacio de Hilbert, aquí radica la necesidad matemática de utilizar el ángulo mitad $\theta/2$ en la parametrización.
+La propiedad más destacada de la esfera de Bloch es que "los estados ortogonales en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) (estados cuyo producto interno es cero) se sitúan como puntos antípodas (Antipodal points: puntos opuestos a 180 grados) entre sí en el espacio real tridimensional de la esfera de Bloch". Por ejemplo, el estado ortogonal a $|0\rangle$ (polo norte, $\theta=0$ ) es $|1\rangle$ (polo sur, $\theta=\pi$ ). El cálculo del producto interno entre estados ortogonales en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) $\langle 0 | 1 \rangle = 0$ equivale a una separación angular de $\pi$ (180 grados) sobre la esfera de Bloch. Dado que el ángulo geométrico es el doble del ángulo en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/), aquí radica la necesidad matemática de utilizar el ángulo mitad $\theta/2$ en la parametrización.
 
 Las coordenadas $\mathbf{r} = (x, y, z)$ de esta esfera de Bloch se deducen rigurosamente como los valores esperados de las **matrices de Pauli (Pauli matrices)** , que son observables (Observable) en mecánica cuántica. Las matrices de Pauli, que constituyen una base para los operadores hermíticos en un sistema bidimensional, se definen de la siguiente manera:
 
@@ -385,7 +385,7 @@ y el estado colapsa completamente a $|0\rangle$ (la fase global se ignora). Esta
 
 ## 2.6 Introducción a la extensión a sistemas de múltiples partículas y perspectivas hacia el siguiente capítulo
 
-Habiendo comprendido en profundidad las propiedades de un único cúbit, abordemos también los fundamentos matemáticos de los "sistemas de múltiples cúbits" que trataremos a fondo a partir del siguiente capítulo. Mientras que las distribuciones de probabilidad clásicas expanden el espacio de estados mediante el producto cartesiano, el espacio de Hilbert $\mathcal{H}_{AB}$ de un sistema compuesto en mecánica cuántica se construye mediante el **producto tensorial (Tensor product)** de los espacios de Hilbert $\mathcal{H}_A$ y $\mathcal{H}_B$ de cada subsistema:
+Habiendo comprendido en profundidad las propiedades de un único cúbit, abordemos también los fundamentos matemáticos de los "sistemas de múltiples cúbits" que trataremos a fondo a partir del siguiente capítulo. Mientras que las distribuciones de probabilidad clásicas expanden el espacio de estados mediante el producto cartesiano, el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) $\mathcal{H}_{AB}$ de un sistema compuesto en mecánica cuántica se construye mediante el **producto tensorial (Tensor product)** de los espacios de [Hilbert](https://kenji.blog/es/p/hilbert/) $\mathcal{H}_A$ y $\mathcal{H}_B$ de cada subsistema:
 
 $$
 \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
@@ -399,7 +399,7 @@ $$
 
 Aquí, la existencia de estados que no pueden factorizarse como un producto tensorial de estados individuales (por ejemplo, el estado de Bell $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$ ) constituye la fuente del entrelazamiento cuántico (Entanglement). La explosión exponencial de la dimensionalidad debida al producto tensorial ( $2^N$ dimensiones para $N$ cúbits) es precisamente la base sobre la cual las computadoras cuánticas despliegan su abrumadora potencia de cálculo paralelo.
 
-En este capítulo, hemos fundamentado la diferencia esencial entre el bit clásico y el cúbit sobre la base matemática del espacio de Hilbert. El cúbit es capaz de adoptar estados de superposición continua con amplitudes de probabilidad complejas y, a través de la deducción de la esfera de Bloch, hemos adquirido una poderosa metodología para comprender intuitivamente vectores complejos abstractos como un modelo geométrico en el espacio real tridimensional.
+En este capítulo, hemos fundamentado la diferencia esencial entre el bit clásico y el cúbit sobre la base matemática del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/). El cúbit es capaz de adoptar estados de superposición continua con amplitudes de probabilidad complejas y, a través de la deducción de la esfera de Bloch, hemos adquirido una poderosa metodología para comprender intuitivamente vectores complejos abstractos como un modelo geométrico en el espacio real tridimensional.
 
 En el siguiente capítulo, "Capítulo 3: Puertas Cuánticas y Transformaciones Unitarias", detallaremos las "puertas lógicas cuánticas" concretas para manipular este estado de un único cúbit, esclareciendo las propiedades matemáticas de las operaciones de rotación mediante matrices unitarias sobre la esfera de Bloch. Las puertas hacia el fascinante y profundo mundo de la información cuántica acaban de abrirse.
 
@@ -409,16 +409,16 @@ En el siguiente capítulo, "Capítulo 3: Puertas Cuánticas y Transformaciones U
 
 Para comprender fundamentalmente los principios de funcionamiento de las computadoras cuánticas, es indispensable captar el marco teórico de la física conocido como mecánica cuántica de forma matemáticamente rigurosa. Aunque muchas teorías físicas se han desarrollado inductivamente a partir de reglas empíricas, la mecánica cuántica, especialmente la mecánica cuántica moderna formulada por John von Neumann, adopta un enfoque axiomático que deduce todo el sistema a partir de un pequeño número de "Axiomas" matemáticos.
 
-Este sistema axiomático se construye sobre el escenario del álgebra lineal compleja, que puede extenderse a dimensiones infinitas, conocido como espacio de Hilbert. En la ciencia de la información cuántica y la computación cuántica, como tratamos principalmente con espacios vectoriales de dimensión finita (por ejemplo, el espacio del producto tensorial de $\mathbb{C}^2$ para sistemas de cúbits), podemos evitar las dificultades analíticas de las dimensiones infinitas (como el dominio de definición de operadores no acotados) y describir y comprender la mecánica cuántica puramente como álgebra lineal.
+Este sistema axiomático se construye sobre el escenario del álgebra lineal compleja, que puede extenderse a dimensiones infinitas, conocido como espacio de [Hilbert](https://kenji.blog/es/p/hilbert/). En la ciencia de la información cuántica y la computación cuántica, como tratamos principalmente con espacios vectoriales de dimensión finita (por ejemplo, el espacio del producto tensorial de $\mathbb{C}^2$ para sistemas de cúbits), podemos evitar las dificultades analíticas de las dimensiones infinitas (como el dominio de definición de operadores no acotados) y describir y comprender la mecánica cuántica puramente como álgebra lineal.
 
 En este capítulo, formularemos rigurosamente, sin ningún compromiso, el proceso que va desde la descripción de los estados cuánticos hasta la evolución temporal y la "observación", que ha provocado los debates más filosóficos. El lector se dará cuenta de cómo los fenómenos cuánticos, que a primera vista parecen contrarios a la intuición, se construyen sobre una estructura matemática hermosa y consistente. Esta estructura matemática se convierte en el "lenguaje" directo para describir los algoritmos de las computadoras cuánticas.
 
-## 3.2 Primer Axioma: Espacio de Estados (Espacio de Hilbert y Vector de Estado)
+## 3.2 Primer Axioma: Espacio de Estados (Espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) y Vector de Estado)
 
 El primer axioma de la mecánica cuántica define cómo se representa matemáticamente el "estado" de un sistema físico.
 
  **Axioma 1 (Representación del estado)** :
-El estado de un sistema físico cerrado se describe completamente por un vector unitario de norma 1 en un espacio de Hilbert (Hilbert space) $\mathcal{H}$, que es un espacio de producto interno complejo que satisface la completitud. Esto se llama **vector de estado** .
+El estado de un sistema físico cerrado se describe completamente por un vector unitario de norma 1 en un espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) ([Hilbert](https://kenji.blog/es/p/hilbert/) space) $\mathcal{H}$, que es un espacio de producto interno complejo que satisface la completitud. Esto se llama **vector de estado** .
 
 Según la notación Bra-ket (Bra-ket notation) introducida por Paul Dirac, el vector de estado se trata como un vector columna y se denota como un ket **$| \psi \rangle$** . Un vector fila que pertenece al espacio dual $\mathcal{H}^*$ se denota como un bra **$\langle \psi |$** , y estos son el conjugado hermítico (transpuesta conjugada compleja) el uno del otro. Es decir,
 
@@ -426,7 +426,7 @@ $$
 \langle \psi | = ( | \psi \rangle )^\dagger
 $$
 
-El producto interno de dos estados cualesquiera **$| \phi \rangle$** y **$| \psi \rangle$** en el espacio de Hilbert se calcula como el producto del bra y el ket **$\langle \phi | \psi \rangle$** , y da un valor complejo. Este producto interno satisface las siguientes propiedades:
+El producto interno de dos estados cualesquiera **$| \phi \rangle$** y **$| \psi \rangle$** en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) se calcula como el producto del bra y el ket **$\langle \phi | \psi \rangle$** , y da un valor complejo. Este producto interno satisface las siguientes propiedades:
 
 1. **Definido positivo** : Para cualquier **$| \psi \rangle \neq 0$** , $\langle \psi | \psi \rangle > 0$
 2. **Linealidad** : $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
@@ -438,19 +438,19 @@ $$
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
 $$
 
-Además, debido a que se cumple la desigualdad de Cauchy-Schwarz (Cauchy-Schwarz inequality) $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$, el valor absoluto del producto interno entre estados normalizados siempre cae entre 0 y 1. Esta es la base matemática para que posteriormente se interprete como una "probabilidad".
+Además, debido a que se cumple la desigualdad de [Cauchy](https://kenji.blog/es/p/cauchy/)-Schwarz ([Cauchy](https://kenji.blog/es/p/cauchy/)-Schwarz inequality) $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$, el valor absoluto del producto interno entre estados normalizados siempre cae entre 0 y 1. Esta es la base matemática para que posteriormente se interprete como una "probabilidad".
 
 ### Principio de Superposición y Base Ortonormal Completa
 
-La característica más destacada de la mecánica cuántica es el "principio de superposición" (Superposition principle). Si **$| \phi \rangle$** y **$| \psi \rangle$** son estados físicamente permitidos, cualquier combinación lineal compleja arbitraria de ellos $c_1 | \phi \rangle + c_2 | \psi \rangle$ también es (tras la normalización) un estado físicamente permitido. Esta propiedad se deriva directamente de la linealidad del espacio de Hilbert.
+La característica más destacada de la mecánica cuántica es el "principio de superposición" (Superposition principle). Si **$| \phi \rangle$** y **$| \psi \rangle$** son estados físicamente permitidos, cualquier combinación lineal compleja arbitraria de ellos $c_1 | \phi \rangle + c_2 | \psi \rangle$ también es (tras la normalización) un estado físicamente permitido. Esta propiedad se deriva directamente de la linealidad del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/).
 
-En el espacio de Hilbert $\mathcal{H}$, existe una base ortonormal completa (Orthonormal basis) $\{ | e_i \rangle \}$. Estas bases son mutuamente ortogonales y están normalizadas.
+En el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) $\mathcal{H}$, existe una base ortonormal completa (Orthonormal basis) $\{ | e_i \rangle \}$. Estas bases son mutuamente ortogonales y están normalizadas.
 
 $$
 \langle e_i | e_j \rangle = \delta_{ij}
 $$
 
-(donde $\delta_{ij}$ es la delta de Kronecker). Además, como relación de completitud (Completeness relation) o identidad de resolución, el operador identidad $I$ se puede expandir de la siguiente manera:
+(donde $\delta_{ij}$ es la delta de [Kronecker](https://kenji.blog/es/p/kronecker/)). Además, como relación de completitud (Completeness relation) o identidad de resolución, el operador identidad $I$ se puede expandir de la siguiente manera:
 
 $$
 I = \sum_i | e_i \rangle \langle e_i |
@@ -469,7 +469,7 @@ Aquí, los coeficientes de expansión $c_i = \langle e_i | \psi \rangle$ se deno
 En la mecánica clásica, las magnitudes físicas (observables) como la posición, el momento y la energía se describen como funciones de valores reales. Sin embargo, en la mecánica cuántica se produce un cambio de paradigma fundamental.
 
  **Axioma 2 (Magnitudes físicas)** :
-Las magnitudes físicas observables (observables) se describen mediante operadores autoadjuntos lineales (operadores hermíticos) $A$ en el espacio de Hilbert $\mathcal{H}$.
+Las magnitudes físicas observables (observables) se describen mediante operadores autoadjuntos lineales (operadores hermíticos) $A$ en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) $\mathcal{H}$.
 
 Un operador hermítico es aquel cuyo conjugado hermítico es igual a sí mismo. Es decir, cumple $A = A^\dagger$. Cuando se representa como una matriz en un espacio de dimensión finita, significa que sus elementos tienen simetría conjugada compleja ( $A_{ij} = A_{ji}^*$ ).
 
@@ -477,7 +477,7 @@ La razón por la que las magnitudes físicas deben definirse como operadores her
 
 1. **Todos los valores propios $a_i$ son números reales.** (Como las magnitudes físicas observadas siempre deben ser números reales, esto coincide con los requisitos físicos).
 2. **Los vectores propios pertenecientes a diferentes valores propios son mutuamente ortogonales.** 
-3. **Los vectores propios del operador $\{ | a_i \rangle \}$ forman una base ortonormal completa del espacio de Hilbert.** 
+3. **Los vectores propios del operador $\{ | a_i \rangle \}$ forman una base ortonormal completa del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/).** 
 
 Por lo tanto, cualquier observable $A$ se puede someter a una descomposición espectral (Spectral decomposition) como una combinación lineal de operadores de proyección $P_i = | a_i \rangle \langle a_i |$ utilizando sus valores propios $a_i$ y vectores propios **$| a_i \rangle$** :
 
@@ -485,7 +485,7 @@ $$
 A = \sum_i a_i | a_i \rangle \langle a_i |
 $$
 
-Con esta formulación, el acto de "medir una magnitud física" se puede entender como una operación geométrica de proyección sobre una base específica (vectores propios) del espacio de Hilbert. Por ejemplo, la observación $\sigma_z$ de un cúbit se describe completamente como una operación de proyección sobre la base ortogonal formada por el estado **$| 0 \rangle$** correspondiente al valor propio $+1$ y el estado **$| 1 \rangle$** correspondiente al valor propio $-1$.
+Con esta formulación, el acto de "medir una magnitud física" se puede entender como una operación geométrica de proyección sobre una base específica (vectores propios) del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/). Por ejemplo, la observación $\sigma_z$ de un cúbit se describe completamente como una operación de proyección sobre la base ortogonal formada por el estado **$| 0 \rangle$** correspondiente al valor propio $+1$ y el estado **$| 1 \rangle$** correspondiente al valor propio $-1$.
 
 ## 3.4 Tercer Axioma: Evolución Temporal Unitaria y Ecuación de Schrödinger
 
@@ -600,7 +600,7 @@ De esta manera, los conceptos abstractos del álgebra lineal —espacios vectori
 
 # Capítulo 4: Puertas de un Solo Qubit y Transformaciones Unitarias
 
-En la base de la computación cuántica se encuentra la manipulación precisa de los estados cuánticos. Mientras que las puertas lógicas en los ordenadores clásicos (AND, OR, NOT, etc.) manipulan los valores de los bits de forma irreversible, las "puertas cuánticas" en un ordenador cuántico son evoluciones temporales reversibles que obedecen a los requisitos de la ecuación de Schrödinger, y se describen matemáticamente de manera rigurosa como "transformaciones unitarias (matrices unitarias)" sobre espacios de Hilbert complejos. En este capítulo, profundizaremos exhaustivamente y sin concesiones en la estructura matemática, las propiedades algebraicas y el significado geométrico intuitivo sobre la esfera de Bloch de las puertas cuánticas fundamentales que actúan sobre un solo qubit (sistema de dos niveles).
+En la base de la computación cuántica se encuentra la manipulación precisa de los estados cuánticos. Mientras que las puertas lógicas en los ordenadores clásicos (AND, OR, NOT, etc.) manipulan los valores de los bits de forma irreversible, las "puertas cuánticas" en un ordenador cuántico son evoluciones temporales reversibles que obedecen a los requisitos de la ecuación de Schrödinger, y se describen matemáticamente de manera rigurosa como "transformaciones unitarias (matrices unitarias)" sobre espacios de [Hilbert](https://kenji.blog/es/p/hilbert/) complejos. En este capítulo, profundizaremos exhaustivamente y sin concesiones en la estructura matemática, las propiedades algebraicas y el significado geométrico intuitivo sobre la esfera de Bloch de las puertas cuánticas fundamentales que actúan sobre un solo qubit (sistema de dos niveles).
 
 ## 4.1 Requisitos de la Mecánica Cuántica y la Necesidad de las Matrices Unitarias
 
@@ -698,7 +698,7 @@ Esto corresponde a una rotación de **$\pi$** alrededor del eje Z. Dado que las 
 
 ### 4.2.4 La Profunda Estructura Algebraica del Grupo de Pauli
 
-El grupo de matrices de Pauli **$\{I, X, Y, Z\}$** forma una estructura algebraica sumamente hermosa como operadores lineales en el espacio de Hilbert.
+El grupo de matrices de Pauli **$\{I, X, Y, Z\}$** forma una estructura algebraica sumamente hermosa como operadores lineales en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/).
 
 1. **Coexistencia de auto-adjunticidad (hermiticidad) y unitariedad** : Se cumple que **$X = X^\dagger$** , **$Y = Y^\dagger$** , **$Z = Z^\dagger$** , y al mismo tiempo satisfacen **$X^\dagger X = I$** (es decir, **$X = X^{-1}$** ). Es una propiedad rara en la que son simultáneamente cantidades físicas (observables) y, por sí mismas, generadores unitarios de evolución temporal (puertas). Si se aplican dos veces consecutivas, regresan a la transformación identidad (involución: **$X^2 = Y^2 = Z^2 = I$** ).
 2. **Relación de anticonmutación completa** : Entre diferentes matrices de Pauli, al invertir el orden de la multiplicación, el signo se invierte.
@@ -945,7 +945,7 @@ $$
 Sorprendentemente, se ha demostrado que una operación secuencial mediante un grupo discreto de puertas alrededor de ejes completamente diferentes, " **$H \rightarrow S \rightarrow H$** ", es matemáticamente equivalente, letra por letra, a una única "operación de rotación de **$\pi/2$** alrededor del eje X", exceptuando la fase global.
 De esta manera, el estado cuántico sigue una ruta de interferencia compleja que rechaza nuestra intuición clásica, pero al pasarla por el robusto marco matemático del álgebra lineal, es posible dominar y predecir su comportamiento por completo y sin un solo bit de error.
 
-En el próximo capítulo, construiremos sobre esta sólida base de conocimientos acerca de las operaciones de un solo qubit, para adentrarnos en el profundo mundo de los productos tensoriales que hacen explotar exponencialmente las dimensiones del espacio de Hilbert, y de las puertas de múltiples qubits que generan el "entrelazamiento cuántico" (entanglement), que Einstein denominó "una acción espeluznante a distancia".
+En el próximo capítulo, construiremos sobre esta sólida base de conocimientos acerca de las operaciones de un solo qubit, para adentrarnos en el profundo mundo de los productos tensoriales que hacen explotar exponencialmente las dimensiones del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/), y de las puertas de múltiples qubits que generan el "entrelazamiento cuántico" (entanglement), que Einstein denominó "una acción espeluznante a distancia".
 
 # Capítulo 5: Sistemas multicúbit y entrelazamiento cuántico (Entanglement)
 
@@ -955,9 +955,9 @@ En los capítulos anteriores, hemos examinado en detalle las propiedades de supe
 
 ## 5.1 Descripción matemática de estados de muchos cuerpos mediante el producto tensorial ($\otimes$)
 
-De acuerdo con los postulados de la mecánica cuántica, cuando los espacios de estados de sistemas físicos independientes están descritos por los espacios de Hilbert **$\mathcal{H}_A$** y **$\mathcal{H}_B$** , el espacio de estados del sistema compuesto que los combina viene dado por el **producto tensorial** (Tensor Product) de ambos espacios, es decir, **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** .
+De acuerdo con los postulados de la mecánica cuántica, cuando los espacios de estados de sistemas físicos independientes están descritos por los espacios de [Hilbert](https://kenji.blog/es/p/hilbert/) **$\mathcal{H}_A$** y **$\mathcal{H}_B$** , el espacio de estados del sistema compuesto que los combina viene dado por el **producto tensorial** (Tensor Product) de ambos espacios, es decir, **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** .
 
-El espacio de estados de un único cúbit es el espacio vectorial complejo bidimensional **$\mathbb{C}^2$** . Por consiguiente, el espacio de estados de un sistema compuesto por $n$ cúbits es un espacio de Hilbert de $2^n$ dimensiones, **$(\mathbb{C}^2)^{\otimes n}$** . El crecimiento exponencial de la dimensión respecto al número de cúbits $n$ constituye la base matemática del paralelismo cuántico.
+El espacio de estados de un único cúbit es el espacio vectorial complejo bidimensional **$\mathbb{C}^2$** . Por consiguiente, el espacio de estados de un sistema compuesto por $n$ cúbits es un espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) de $2^n$ dimensiones, **$(\mathbb{C}^2)^{\otimes n}$** . El crecimiento exponencial de la dimensión respecto al número de cúbits $n$ constituye la base matemática del paralelismo cuántico.
 
 Consideremos un sistema formado por dos cúbits (cúbit A y cúbit B). La base computacional se define como el producto tensorial de los estados base individuales de cada cúbit.
 
@@ -968,7 +968,7 @@ $$
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
 $$
 
-A continuación, calculemos rigurosamente la representación matricial del producto tensorial (producto de Kronecker). Expresando la base de un único cúbit como vectores columna:
+A continuación, calculemos rigurosamente la representación matricial del producto tensorial (producto de [Kronecker](https://kenji.blog/es/p/kronecker/)). Expresando la base de un único cúbit como vectores columna:
 
 $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
@@ -1009,7 +1009,7 @@ $$
 
 se dice que dicho estado es separable. Por el contrario, un estado que **no** puede expresarse como el producto tensorial de ningún estado de sus subsistemas se define como un **estado entrelazado (Entangled State)** .
 
-En un sistema de dos cúbits, los estados que presentan el entrelazamiento cuántico más fuerte se denominan **estados de Bell** (Bell States) o pares EPR. Los estados de Bell están formados por los siguientes cuatro estados puros ortogonales y constituyen una base ortonormal completa (la base de Bell) del espacio de Hilbert de 4 dimensiones:
+En un sistema de dos cúbits, los estados que presentan el entrelazamiento cuántico más fuerte se denominan **estados de Bell** (Bell States) o pares EPR. Los estados de Bell están formados por los siguientes cuatro estados puros ortogonales y constituyen una base ortonormal completa (la base de Bell) del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) de 4 dimensiones:
 
 $$
 |\Phi^+\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle + |11\rangle \Big)
@@ -1907,7 +1907,7 @@ Mediante esta reducción clásica, el problema queda delimitado a un único inte
 
 El núcleo fundamental del algoritmo cuántico para extraer en tiempo polinomial el período oculto $r$ de la función $f(x)$ es la «transformada cuántica de Fourier» (Quantum Fourier Transform, QFT). La QFT es el análogo cuántico de la transformada discreta de Fourier clásica (DFT) y consiste en una transformación unitaria que actúa sobre las amplitudes de probabilidad del espacio de estados.
 
-En un espacio de Hilbert $\mathcal{H}$ de dimensión $M = 2^n$, la acción de la transformada cuántica de Fourier sobre la base computacional $|j\rangle$ ($j = 0, 1, \dots, M-1$) se define rigurosamente como:
+En un espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) $\mathcal{H}$ de dimensión $M = 2^n$, la acción de la transformada cuántica de Fourier sobre la base computacional $|j\rangle$ ($j = 0, 1, \dots, M-1$) se define rigurosamente como:
 
 
 $$
@@ -2037,7 +2037,7 @@ $$
 
 
 Aquí, $k$ y $M$ son valores conocidos, mientras que $j$ y $r$ son desconocidos. Como se ha escogido $t$ tal que $M \ge N^2$, el cociente $k/M$ proporciona una aproximación extraordinariamente precisa de la fracción desconocida $j/r$, verificando $\left| \frac{k}{M} - \frac{j}{r} \right| \le \frac{1}{2M} < \frac{1}{2r^2}$.
-De acuerdo con el teorema de aproximación diofántica (teorema de Legendre), todo número racional $j/r$ que satisface esta condición aparece necesariamente entre las fracciones convergentes del «desarrollo en fracciones continuas» (Continued Fraction Expansion) del número real $k/M$.
+De acuerdo con el teorema de aproximación diofántica (teorema de [Legendre](https://kenji.blog/es/p/legendre/)), todo número racional $j/r$ que satisface esta condición aparece necesariamente entre las fracciones convergentes del «desarrollo en fracciones continuas» (Continued Fraction Expansion) del número real $k/M$.
 Por ende, calculando en tiempo polinomial el desarrollo en fracciones continuas de $k/M$ mediante una computadora clásica, es posible determinar el período $r$ a través del denominador. Con ello queda resuelto el problema de búsqueda del orden y, en consecuencia, es posible deducir los factores primos $p$ y $q$ que sustentan la clave del cifrado RSA.
 
 ## 8.5 Por qué el algoritmo de Shor produce una aceleración exponencial frente al cómputo clásico
@@ -2075,13 +2075,13 @@ $$
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
 $$
 
-Este estado **$|s\rangle$** puede separarse claramente en el espacio de Hilbert como una combinación lineal del estado correcto $|w\rangle$ y de todos los demás estados incorrectos. Para facilitar la comprensión visual de la interpretación geométrica posterior, introducimos un nuevo vector normalizado $|s^\perp\rangle$ que superpone equitativamente solo los estados incorrectos de la siguiente manera:
+Este estado **$|s\rangle$** puede separarse claramente en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) como una combinación lineal del estado correcto $|w\rangle$ y de todos los demás estados incorrectos. Para facilitar la comprensión visual de la interpretación geométrica posterior, introducimos un nuevo vector normalizado $|s^\perp\rangle$ que superpone equitativamente solo los estados incorrectos de la siguiente manera:
 
 $$
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
 $$
 
-Con esta definición, el estado $|s^\perp\rangle$ y el estado correcto $|w\rangle$ son mutuamente ortogonales ( $\langle s^\perp | w \rangle = 0$ ). Entonces, el estado de superposición uniforme inicial **$|s\rangle$** se puede expandir de manera extremadamente simple en el subespacio de Hilbert de 2 dimensiones abarcado por estos 2 vectores mutuamente ortogonales $|w\rangle$ y $|s^\perp\rangle$:
+Con esta definición, el estado $|s^\perp\rangle$ y el estado correcto $|w\rangle$ son mutuamente ortogonales ( $\langle s^\perp | w \rangle = 0$ ). Entonces, el estado de superposición uniforme inicial **$|s\rangle$** se puede expandir de manera extremadamente simple en el subespacio de [Hilbert](https://kenji.blog/es/p/hilbert/) de 2 dimensiones abarcado por estos 2 vectores mutuamente ortogonales $|w\rangle$ y $|s^\perp\rangle$:
 
 $$
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
@@ -2093,7 +2093,7 @@ $$
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
 $$
 
-Lo que nos dice esta fórmula es el hecho frío de que la probabilidad de observar el estado correcto $|w\rangle$ en el estado inicial **$|s\rangle$** es apenas de $|\sin \theta|^2 = \frac{1}{N}$. El propósito supremo del algoritmo de Grover es aplicar iterativamente una combinación del oráculo y el operador de difusión descritos más adelante para "rotar" gradualmente este vector de estado **$|s\rangle$** hacia la dirección de $|w\rangle$ dentro del plano bidimensional del espacio de Hilbert, acercando así la probabilidad de observación de la respuesta correcta lo más posible al límite teórico de $1$ (amplificar la amplitud).
+Lo que nos dice esta fórmula es el hecho frío de que la probabilidad de observar el estado correcto $|w\rangle$ en el estado inicial **$|s\rangle$** es apenas de $|\sin \theta|^2 = \frac{1}{N}$. El propósito supremo del algoritmo de Grover es aplicar iterativamente una combinación del oráculo y el operador de difusión descritos más adelante para "rotar" gradualmente este vector de estado **$|s\rangle$** hacia la dirección de $|w\rangle$ dentro del plano bidimensional del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/), acercando así la probabilidad de observación de la respuesta correcta lo más posible al límite teórico de $1$ (amplificar la amplitud).
 
 ## 9.2 Definición del oráculo cuántico (Quantum Oracle) y retroceso de fase
 
@@ -2405,7 +2405,7 @@ El primer obstáculo que surge al construir la corrección de errores cuánticos
 
 ## 10.2 Principios fundamentales de la corrección de errores cuánticos: redundancia y medición de síndromes
 
-La alternativa al "copiado" en la información cuántica consiste en entrelazar múltiples cúbits (Entanglement), mapeando la información original a un subespacio (espacio de código, Code Space) de un espacio de Hilbert de mayor dimensión.
+La alternativa al "copiado" en la información cuántica consiste en entrelazar múltiples cúbits (Entanglement), mapeando la información original a un subespacio (espacio de código, Code Space) de un espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) de mayor dimensión.
 
 Como ejemplo más simple, construiremos el "código de inversión de bit de 3 cúbits", que protege el estado de un cúbit $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ frente a inversiones de bit probabilísticas.
 Definimos la base lógica (Logical Basis) de la siguiente manera:
@@ -2564,10 +2564,10 @@ La corrección de errores cuánticos y la FTQC no son meros remiendos ingenieril
 
 # Capítulo 11: Implementación física del hardware cuántico
 
-Hasta el Capítulo 10, hemos detallado los fundamentos teóricos de la ciencia de la información cuántica y la estructura matemática de sus algoritmos. Por muy sofisticados que sean los algoritmos cuánticos diseñados y por mucho que la supremacía cuántica teórica (Quantum Supremacy) haya sido demostrada en el marco de la teoría de la complejidad computacional, si no existe una entidad física —un «hardware cuántico»— capaz de ejecutarlos, todo quedaría reducido a un mero juego de matemática pura. En este capítulo, explicaremos rigurosamente, a partir de los profundos principios de la física cuántica subyacente, los esquemas de implementación de hardware más avanzados para materializar en el mundo físico el vector de estado $ |\psi\rangle $ del espacio de Hilbert abstracto.
+Hasta el Capítulo 10, hemos detallado los fundamentos teóricos de la ciencia de la información cuántica y la estructura matemática de sus algoritmos. Por muy sofisticados que sean los algoritmos cuánticos diseñados y por mucho que la supremacía cuántica teórica (Quantum Supremacy) haya sido demostrada en el marco de la teoría de la complejidad computacional, si no existe una entidad física —un «hardware cuántico»— capaz de ejecutarlos, todo quedaría reducido a un mero juego de matemática pura. En este capítulo, explicaremos rigurosamente, a partir de los profundos principios de la física cuántica subyacente, los esquemas de implementación de hardware más avanzados para materializar en el mundo físico el vector de estado $ |\psi\rangle $ del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) abstracto.
 
 Para controlar artificialmente un sistema cuántico físico y hacer que funcione como una computadora universal, se deben satisfacer cinco exigentes requisitos físicos conocidos como los criterios de DiVincenzo (DiVincenzo's criteria):
-1. **Un sistema de cúbits escalable y bien caracterizado** : Capacidad de asegurar físicamente la estructura de producto tensorial del espacio de Hilbert $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ .
+1. **Un sistema de cúbits escalable y bien caracterizado** : Capacidad de asegurar físicamente la estructura de producto tensorial del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ .
 2. **Inicialización del estado cuántico** : Capacidad de restablecer el sistema a un estado puro (típicamente $ |00\dots0\rangle $ ) con alta fidelidad.
 3. **Tiempos de coherencia suficientemente largos** : Los tiempos de descoherencia del estado cuántico (T1 y T2) deben ser muchos órdenes de magnitud más largos que el tiempo requerido para una operación de puerta lógica.
 4. **Implementación de un conjunto universal de puertas cuánticas** : Capacidad de aproximar cualquier transformación unitaria $ \hat{U} \in SU(2^n) $ con una precisión arbitraria mediante la combinación de un número finito de puertas elementales (por ejemplo, las puertas H, T y CNOT).
@@ -2677,7 +2677,7 @@ Tanto los cúbits superconductores como los de iones atrapados son vulnerables a
 
 ### 11.3.1 La cadena de Kitaev y los modos cero de Majorana
 
-En el espacio tridimensional en el que habitamos, las partículas fundamentales se clasifican únicamente en bosones y fermiones. No obstante, en sistemas de materia topológica bidimensionales pueden emerger cuasipartículas cuya función de onda adquiere una fase arbitraria al intercambiarse entre sí: los «aniones» (Anyons). En el caso aún más singular de los «aniones no abelianos» (Non-Abelian anyons), el intercambio de dos partículas produce una rotación unitaria del sistema entre estados degenerados ortogonales con la misma energía:
+En el espacio tridimensional en el que habitamos, las partículas fundamentales se clasifican únicamente en bosones y fermiones. No obstante, en sistemas de materia topológica bidimensionales pueden emerger cuasipartículas cuya función de onda adquiere una fase arbitraria al intercambiarse entre sí: los «aniones» (Anyons). En el caso aún más singular de los «aniones no abelianos» (Non-[Abel](https://kenji.blog/es/p/abel/)ian anyons), el intercambio de dos partículas produce una rotación unitaria del sistema entre estados degenerados ortogonales con la misma energía:
 
 $$
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
@@ -2771,7 +2771,7 @@ $$
 
 En un circuito cuántico aleatorio suficientemente profundo ($d$ grande), se sabe que cada amplitud $ \alpha_x $ exhibe un comportamiento similar a un paseo aleatorio en el plano complejo, y su distribución de probabilidad $ P_{\text{ideal}}(x) $ sigue la distribución de Porter-Thomas (Porter-Thomas distribution). Es decir, la función de densidad de probabilidad de que aparezca una probabilidad $p$ es $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $. Esto significa que se forma un «patrón de moteado (speckle pattern)», en el cual ciertas cadenas de bits tienen una probabilidad de ser observadas mucho mayor que otras.
 
-Para realizar un muestreo exacto a partir de esta distribución en una computadora clásica, es necesario calcular directamente las amplitudes $ \alpha_x $ mediante la contracción de redes tensoriales gigantescas. La dimensión del vector de estado es $ 2^n $, y para $ n = 53 $, se deben rastrear aproximadamente $ 9 \times 10^{15} $ amplitudes complejas (memoria del orden de petabytes), lo que choca contra una barrera computacional que requeriría una cantidad desmesurada de tiempo incluso utilizando la supercomputadora más rápida del mundo en aquel momento. Por otro lado, en una computadora cuántica, el propio sistema físico almacena el estado **$|\psi_f\rangle$** como un vector natural en el espacio de Hilbert, realizando en una sola medición un muestreo que sigue el patrón de moteado de forma instantánea (en decenas de microsegundos).
+Para realizar un muestreo exacto a partir de esta distribución en una computadora clásica, es necesario calcular directamente las amplitudes $ \alpha_x $ mediante la contracción de redes tensoriales gigantescas. La dimensión del vector de estado es $ 2^n $, y para $ n = 53 $, se deben rastrear aproximadamente $ 9 \times 10^{15} $ amplitudes complejas (memoria del orden de petabytes), lo que choca contra una barrera computacional que requeriría una cantidad desmesurada de tiempo incluso utilizando la supercomputadora más rápida del mundo en aquel momento. Por otro lado, en una computadora cuántica, el propio sistema físico almacena el estado **$|\psi_f\rangle$** como un vector natural en el espacio de [Hilbert](https://kenji.blog/es/p/hilbert/), realizando en una sola medición un muestreo que sigue el patrón de moteado de forma instantánea (en decenas de microsegundos).
 
 Para evaluar el éxito del experimento, se introdujo la evaluación comparativa de entropía cruzada lineal (Linear Cross-Entropy Benchmarking, XEB). La fidelidad (Fidelity) $ \mathcal{F}_{\text{XEB}} $ se define como:
 
@@ -2827,7 +2827,7 @@ Aunque se haya demostrado la supremacía cuántica, los dispositivos actuales de
 
 La única vía teórica para superar este límite físico y hacer posible la ejecución de algoritmos cuánticos prácticos a gran escala que requieran cientos de millones de pasos es la consecución de la **computación cuántica tolerante a fallos (Fault-Tolerant Quantum Computation, FTQC)** mediante la **corrección de errores cuánticos (Quantum Error Correction, QEC)** . La corrección de errores de la computación clásica (como los códigos de repetición por mayoría basados en duplicar bits) no puede aplicarse a los estados cuánticos debido al «teorema de no clonación (No-Cloning Theorem)», pilar fundamental de la mecánica cuántica. Matemáticamente no existe ninguna transformación unitaria capaz de copiar a la perfección un estado cuántico desconocido **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** simplemente como **$|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$** .
 
-Sin embargo, la física teórica halló una solución elegante para superar esta aparente fatalidad. La información cuántica puede protegerse «no duplicando los estados individuales, sino ocultando y distribuyendo una pieza de información lógica dentro de la topología del "espacio entrelazado" de un gigantesco espacio de Hilbert constituido por una multitud de qubits físicos». En la actualidad, la opción considerada más prometedora desde el punto de vista de la implementación física en hardware es el «código de superficie (Surface Code)», basado en el formalismo estabilizador (Stabilizer Formalism) sobre una red bidimensional.
+Sin embargo, la física teórica halló una solución elegante para superar esta aparente fatalidad. La información cuántica puede protegerse «no duplicando los estados individuales, sino ocultando y distribuyendo una pieza de información lógica dentro de la topología del "espacio entrelazado" de un gigantesco espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) constituido por una multitud de qubits físicos». En la actualidad, la opción considerada más prometedora desde el punto de vista de la implementación física en hardware es el «código de superficie (Surface Code)», basado en el formalismo estabilizador (Stabilizer Formalism) sobre una red bidimensional.
 
 En el código de superficie, los «qubits de datos», que almacenan la información cuántica, se sitúan en las aristas (bordes) de una red bidimensional, mientras que los «qubits para la medición de síndromes (qubits ancilla)», destinados a detectar errores, se ubican en las plaquetas (caras) y en los vértices de la red. A continuación, se define un conjunto de operadores estabilizadores formados por productos tensoriales de operadores de Pauli de la siguiente manera:
 
@@ -2855,7 +2855,7 @@ Frente al estado actual de apenas decenas a cientos de qubits físicos, este emp
 
 Comenzando en el Capítulo 1 con la introducción de la superposición de **$|0\rangle$** y **$|1\rangle$** mediante la notación bra-ket, pasando por la evolución temporal descrita por matrices unitarias, la representación matemática de sistemas de muchos cuerpos a través del producto tensorial, la refutación del realismo local de Einstein mediante las desigualdades de Bell, hasta las brillantes estructuras matemáticas de los algoritmos cuánticos de Shor y Grover, hemos recorrido de forma sumamente rigurosa a lo largo de esta serie de 12 capítulos la cumbre del conocimiento que constituye la «ciencia de la información cuántica».
 
-Mientras que la computación clásica se sustenta en «valores de verdad deterministas (álgebra booleana)», la computación cuántica se fundamenta en «rotaciones unitarias y productos tensoriales en un espacio complejo de Hilbert (álgebra lineal)». Este cambio radical de paradigma trasciende la dimensión puramente práctica o industrial de «acelerar los cálculos», planteándonos profundos interrogantes filosóficos donde la teoría de la información y la física fundamental convergen plenamente: «¿cuál es la capacidad máxima de procesamiento de información del universo?» y «¿de qué manera dependen la computabilidad y la complejidad de la estructura íntima de las leyes físicas de nuestro cosmos?».
+Mientras que la computación clásica se sustenta en «valores de verdad deterministas (álgebra booleana)», la computación cuántica se fundamenta en «rotaciones unitarias y productos tensoriales en un espacio complejo de [Hilbert](https://kenji.blog/es/p/hilbert/) (álgebra lineal)». Este cambio radical de paradigma trasciende la dimensión puramente práctica o industrial de «acelerar los cálculos», planteándonos profundos interrogantes filosóficos donde la teoría de la información y la física fundamental convergen plenamente: «¿cuál es la capacidad máxima de procesamiento de información del universo?» y «¿de qué manera dependen la computabilidad y la complejidad de la estructura íntima de las leyes físicas de nuestro cosmos?».
 
 El entrelazamiento cuántico, que en su día Einstein rechazó calificándolo de «acción fantasmal a distancia (spooky action at a distance)», se ha consolidado en la actualidad como el «recurso» más fundamental e insustituible para hacer posibles la teleportación cuántica, la criptografía cuántica y el funcionamiento de las computadoras cuánticas. La intuición formulada en 1982 por el célebre físico Richard Feynman: «si quieres hacer una simulación de la naturaleza, más vale que la hagas con mecánica cuántica; y es un problema maravilloso, ¡porque no parece nada fácil!», ha alcanzado hoy, tras décadas de investigación y gracias a la dedicación incansable y sacrificada de físicos, matemáticos, informáticos y destacados ingenieros de hardware de todo el mundo, la etapa de ejecutarse finalmente en procesadores físicos reales.
 

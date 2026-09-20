@@ -130,15 +130,15 @@ Assim, derivamos a surpreendente igualdade de que **$1 + 2 + 3 + 4 + \dots = -\f
 
 ---
 
-## 3. Continuação analítica e a função zeta de Riemann
+## 3. Continuação analítica e a função zeta de [Riemann](https://kenji.blog/pt/p/riemann/)
 
 Operações algébricas como as acima podem, à primeira vista, parecer meros truques ou sofismas. A aplicação incondicional da aritmética normal a séries divergentes não é permitida na matemática rigorosa.
 
 No entanto, este resultado não é de forma alguma sem sentido. Na matemática moderna, isso pode ser justificado usando um conceito rigoroso chamado **continuação analítica (Analytic Continuation)** .
 
-### Função zeta de Riemann
+### Função zeta de [Riemann](https://kenji.blog/pt/p/riemann/)
 
-Para explicar a continuação analítica, introduzimos a **função zeta de Riemann** $\zeta(s)$ . A função zeta é definida da seguinte forma:
+Para explicar a continuação analítica, introduzimos a **função zeta de [Riemann](https://kenji.blog/pt/p/riemann/)** $\zeta(s)$ . A função zeta é definida da seguinte forma:
 
 $$
 \zeta(s) = 1^{-s} + 2^{-s} + 3^{-s} + 4^{-s} + \dots = \sum_{n=1}^{\infty} \frac{1}{n^s}
@@ -167,7 +167,7 @@ graph TD
     C --> D["ζ(-1) = -1/12"]
 ```
 
-Riemann provou que a função zeta pode ser estendida de forma única para todo o plano complexo (exceto pelo polo em $s=1$ ). Se calcularmos o valor em $s = -1$ usando a função zeta estendida, vemos que resulta brilhantemente em **$-\frac{1}{12}$** .
+[Riemann](https://kenji.blog/pt/p/riemann/) provou que a função zeta pode ser estendida de forma única para todo o plano complexo (exceto pelo polo em $s=1$ ). Se calcularmos o valor em $s = -1$ usando a função zeta estendida, vemos que resulta brilhantemente em **$-\frac{1}{12}$** .
 
 Em outras palavras, a equação " $1+2+3+... = -1/12$ " é justificada não como uma "soma no sentido normal", mas como um "valor no sentido da continuação analítica através da função zeta".
 

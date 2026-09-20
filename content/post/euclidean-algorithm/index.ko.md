@@ -109,7 +109,7 @@ int main() {
 
 ## 계산 복잡도와 라메의 정리
 
-[유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)은 얼마나 빠를까요? 이 계산 복잡도에 대해서는 1844년 프랑스 수학자 [가브리엘 라메](https://kenji.blog/ko/p/lame/)가 증명한 **라메의 정리** (Lamé's theorem)가 유명합니다.
+[유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)은 얼마나 빠를까요? 이 계산 복잡도에 대해서는 1844년 프랑스 수학자 [가브리엘 라메](https://kenji.blog/ko/p/lame/)가 증명한 **라메의 정리** ([Lamé](https://kenji.blog/ko/p/lame/)'s theorem)가 유명합니다.
 
 > **라메의 정리**
 > 두 자연수 $a, b$ ($a > b$)에 대해 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)을 적용했을 때의 나눗셈 횟수는 $b$ 의 십진법 자릿수의 $5$ 배 이하이다.

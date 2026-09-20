@@ -437,7 +437,7 @@ En el mundo del cuerpo algebraico $\mathbb{Z}[\alpha]$, dado que la factorizaci�
 
 Aquí se levantan poderosos muros en la teoría algebraica de números llamados "obstrucción del grupo de clases de ideales" y "obstrucción del grupo de unidades".
 Para romper este muro, GNFS utiliza la magia llamada **"Caracteres Cuadráticos (Quadratic Characters)"**.
-A la matriz de la Fase 4, se añaden secretamente de antemano columnas de residuos cuadráticos (Símbolo de Legendre) para decenas de ideales primos especiales. Con esto, hay una probabilidad abrumadora de que el conjunto $S$ encontrado evite la obstrucción y forme con éxito el "cuadrado del elemento verdadero $\gamma^2$".
+A la matriz de la Fase 4, se añaden secretamente de antemano columnas de residuos cuadráticos (Símbolo de [Legendre](https://kenji.blog/es/p/legendre/)) para decenas de ideales primos especiales. Con esto, hay una probabilidad abrumadora de que el conjunto $S$ encontrado evite la obstrucción y forme con éxito el "cuadrado del elemento verdadero $\gamma^2$".
 
 El proceso de encontrar $\gamma$ (raíz cuadrada algebraica) se calcula utilizando algoritmos muy complejos como el método de Montgomery.
 

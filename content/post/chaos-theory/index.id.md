@@ -23,11 +23,11 @@ Dalam artikel ini, kita akan menjelaskan secara mendalam teori kekacauan dan efe
 
 ---
 
-## 2. Latar Belakang Sejarah: Dari Poincaré hingga Lorenz
+## 2. Latar Belakang Sejarah: Dari [Poincaré](https://kenji.blog/id/p/poincare/) hingga Lorenz
 
 Benih-benih teori kekacauan dapat ditelusuri kembali ke penelitian matematikawan besar Prancis abad ke-19, [Henri Poincaré](https://kenji.blog/id/p/poincare/). Pada saat itu, salah satu tantangan terbesar dalam fisika adalah "masalah tiga benda." Ini adalah masalah memprediksi pergerakan tiga benda langit, seperti Matahari, Bumi, dan Bulan, yang saling memberikan gaya gravitasi berdasarkan mekanika Newton.
 
-Sambil mempelajari masalah ini secara mendalam, Poincaré menemukan bahwa pergerakan benda langit bisa menjadi sangat kompleks. Ia secara matematis menyarankan bahwa kesalahan yang sangat kecil pada posisi atau kecepatan awal dapat meluas seiring waktu, pada akhirnya mengarah pada lintasan benda langit yang sama sekali berbeda. Ini secara virtual merupakan penemuan pertama dari perilaku kacau, menunjukkan bahwa bahkan dalam sistem deterministik (sistem di mana hukum-hukumnya diketahui sepenuhnya), prediksi jangka panjang kadang-kadang bisa menjadi tidak mungkin. Namun, karena keterbatasan metode matematika dan daya komputasi (ketiadaan komputer) pada saat itu, penemuan inovatif ini tidak dieksplorasi secara mendalam selama beberapa dekade sesudahnya.
+Sambil mempelajari masalah ini secara mendalam, [Poincaré](https://kenji.blog/id/p/poincare/) menemukan bahwa pergerakan benda langit bisa menjadi sangat kompleks. Ia secara matematis menyarankan bahwa kesalahan yang sangat kecil pada posisi atau kecepatan awal dapat meluas seiring waktu, pada akhirnya mengarah pada lintasan benda langit yang sama sekali berbeda. Ini secara virtual merupakan penemuan pertama dari perilaku kacau, menunjukkan bahwa bahkan dalam sistem deterministik (sistem di mana hukum-hukumnya diketahui sepenuhnya), prediksi jangka panjang kadang-kadang bisa menjadi tidak mungkin. Namun, karena keterbatasan metode matematika dan daya komputasi (ketiadaan komputer) pada saat itu, penemuan inovatif ini tidak dieksplorasi secara mendalam selama beberapa dekade sesudahnya.
 
 Situasinya berubah secara dramatis pada tahun 1960-an. Edward Lorenz, seorang ahli meteorologi di Massachusetts Institute of Technology (MIT), sedang mensimulasikan konveksi atmosfer menggunakan komputer awal. Ia menciptakan serangkaian persamaan diferensial nonlinier sederhana untuk menghitung variabel-variabel seperti suhu, tekanan, dan kecepatan angin, serta menghitung nilai-nilainya menggunakan komputer.
 
@@ -192,7 +192,7 @@ Pergeseran paradigma ini menyajikan pandangan dunia baru: "Dunia kita kompleks d
 
 Dalam artikel ini, kita telah mengeksplorasi secara mendalam efek kupu-kupu—di mana perbedaan mikroskopis dalam kondisi awal menghasilkan hasil yang sangat besar—dan teori kekacauan yang melingkupinya.
 
-Mulai dari intuisi Poincaré, melewati penemuan tidak sengaja Lorenz melalui komputer, teori kekacauan telah berkembang menjadi bidang luas yang melintasi matematika dan fisika. Dasar-dasar matematikanya sangat disempurnakan dan penuh keajaiban intelektual, sebagaimana terlihat dalam lintasan atraktor aneh yang indah yang digambar oleh persamaan nonlinier, keserupaan diri tak terhingga yang diamati dalam peta logistik, dan kuantifikasi ketidakpastian melalui eksponen Lyapunov.
+Mulai dari intuisi [Poincaré](https://kenji.blog/id/p/poincare/), melewati penemuan tidak sengaja Lorenz melalui komputer, teori kekacauan telah berkembang menjadi bidang luas yang melintasi matematika dan fisika. Dasar-dasar matematikanya sangat disempurnakan dan penuh keajaiban intelektual, sebagaimana terlihat dalam lintasan atraktor aneh yang indah yang digambar oleh persamaan nonlinier, keserupaan diri tak terhingga yang diamati dalam peta logistik, dan kuantifikasi ketidakpastian melalui eksponen Lyapunov.
 
 Teori kekacauan tidak hanya mengajarkan kita tentang keterbatasan prakiraan cuaca tetapi juga menyediakan lensa yang kuat untuk memahami fenomena kompleks di sekitar kita, dari fluktuasi ekonomi dan detak jantung hingga evolusi kehidupan. Ini mengungkapkan bahwa alam bukanlah mesin jam sederhana, melainkan sistem dinamis yang dipenuhi dengan ketidakpastian dan kreativitas.
 

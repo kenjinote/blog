@@ -64,11 +64,11 @@ $$
 
 Sebagai contoh, meskipun mungkin terdapat tak terhingga banyak solusi real atau rasional untuk kurva eliptik (genus $g=1$) seperti $x^3 + y^3 = c$ (di mana $c$ adalah bilangan bulat bukan nol), teorema ini menjamin bahwa jika dibatasi pada **solusi integral**, maka akan selalu ada jumlah yang berhingga.
 
-Hasil ini merupakan terobosan mengenai keterhinggaan solusi persamaan Diophantine dan menjadi langkah sejarah yang krusial yang membuka jalan bagi pembuktian selanjutnya dari teorema Mordell-Weil (keterhinggaan titik-titik rasional pada kurva dengan genus 2 atau lebih tinggi) oleh [Gerd Faltings](https://kenji.blog/id/p/faltings/). Siegel menurunkan hasil yang mencengangkan ini dengan memperluas secara signifikan teorema Axel Thue tentang aproksimasi Diophantine dan menggabungkannya dengan teori Jacobian pada varietas Abelian.
+Hasil ini merupakan terobosan mengenai keterhinggaan solusi persamaan Diophantine dan menjadi langkah sejarah yang krusial yang membuka jalan bagi pembuktian selanjutnya dari teorema Mordell-Weil (keterhinggaan titik-titik rasional pada kurva dengan genus 2 atau lebih tinggi) oleh [Gerd Faltings](https://kenji.blog/id/p/faltings/). Siegel menurunkan hasil yang mencengangkan ini dengan memperluas secara signifikan teorema Axel Thue tentang aproksimasi Diophantine dan menggabungkannya dengan teori [Jacobi](https://kenji.blog/id/p/jacobi/)an pada varietas [Abel](https://kenji.blog/id/p/abel/)ian.
 
 ### 3.2 Nol Siegel (Siegel Zero)
 
-Dalam teori bilangan analitik, distribusi nol dari fungsi $L$ Dirichlet $L(s, \chi)$ sangat penting untuk ekstensi alami dari teorema bilangan prima dan teorema tentang barisan aritmatika. Menurut Hipotesis Riemann yang Diperumum (GRH), semua nol pada pita kritis dengan bagian real antara $0$ dan $1$ seharusnya terletak pada garis di mana bagian realnya adalah $1/2$.
+Dalam teori bilangan analitik, distribusi nol dari fungsi $L$ Dirichlet $L(s, \chi)$ sangat penting untuk ekstensi alami dari teorema bilangan prima dan teorema tentang barisan aritmatika. Menurut Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) yang Diperumum (GRH), semua nol pada pita kritis dengan bagian real antara $0$ dan $1$ seharusnya terletak pada garis di mana bagian realnya adalah $1/2$.
 
 Namun, untuk karakter real (dari suatu lapangan kuadratik real) $\chi$, kemungkinan adanya nol real dengan bagian real yang sangat dekat ke $1$ belum dapat disingkirkan oleh matematika saat ini. Nol pengecualian hipotetis semacam itu disebut **nol Siegel** (Siegel zero) atau nol eksepsional.
 
@@ -90,7 +90,7 @@ $$
 \mathcal{H}_g = \left\{ Z \in M_g(\mathbb{C}) \mid Z^T = Z, \text{ Im}(Z) \text{ adalah definit positif} \right\}
 $$
 
-Di sini, ketika $g=1$, ruang ini sangat cocok dengan bidang setengah atas Poincaré yang biasa. Siegel memperkenalkan ruang berdimensi tinggi ini selama proses pendalaman teori analitik bentuk kuadratik, dan ia menunjukkan bahwa bentuk automorfik yang didefinisikan pada ruang ini sangat terhubung dengan jumlah representasi bilangan bulat oleh bentuk kuadratik.
+Di sini, ketika $g=1$, ruang ini sangat cocok dengan bidang setengah atas [Poincaré](https://kenji.blog/id/p/poincare/) yang biasa. Siegel memperkenalkan ruang berdimensi tinggi ini selama proses pendalaman teori analitik bentuk kuadratik, dan ia menunjukkan bahwa bentuk automorfik yang didefinisikan pada ruang ini sangat terhubung dengan jumlah representasi bilangan bulat oleh bentuk kuadratik.
 
 Lebih jauh lagi, ia meletakkan dasar untuk **rumus Siegel-Weil** di dalam teori analitik bentuk kuadratik. Ini adalah rumus yang menakjubkan yang mendeskripsikan jumlah representasi oleh bentuk kuadratik sebagai koefisien Fourier dari deret Eisenstein, dan ini dapat dikatakan sebagai ekspresi analitik dari prinsip lokal-global (prinsip Hasse). Teori-teori ini adalah konsep yang sangat diperlukan yang membentuk dasar untuk teori representasi automorfik berikutnya dan program Langlands.
 
@@ -129,7 +129,7 @@ Pandangan Siegel terhadap matematika sama mencoloknya dengan pencapaian yang dit
 
 Pada pertengahan abad ke-20, gaya abstrak yang dianjurkan oleh kelompok matematika Prancis muda, kelompok Bourbaki—yang mencoba membangun kembali seluruh matematika dari teori himpunan dan sistem aksiomatik—menyapu dunia. Namun, Siegel melontarkan kritik keras terhadap tren ini. Ia mengabaikan gaya Bourbaki sebagai "formalisme kosong" dan meninggalkan komentar dengan nada berikut:
 
-> "Abstraksi berlebihan pada matematika akhir-akhir ini telah jatuh ke dalam formalisme kosong dan tidak menghasilkan hasil yang bermakna. Kita harus kembali ke masalah-masalah konkret yang kaya akan konten sejati, jenis masalah yang dihadapi oleh Gauss, Euler, Riemann, dan Jacobi."
+> "Abstraksi berlebihan pada matematika akhir-akhir ini telah jatuh ke dalam formalisme kosong dan tidak menghasilkan hasil yang bermakna. Kita harus kembali ke masalah-masalah konkret yang kaya akan konten sejati, jenis masalah yang dihadapi oleh Gauss, Euler, [Riemann](https://kenji.blog/id/p/riemann/), dan [Jacobi](https://kenji.blog/id/p/jacobi/)."
 
 Karena keyakinan yang kuat ini, makalah-makalahnya sangat berharga untuk dibaca; di sisi lain, bagi pembaca modern, perhitungan yang sangat teknis dan panjang muncul di mana-mana, yang sering kali membutuhkan usaha keras untuk menguraikannya. Ia tidak pernah mengkompromikan filosofinya sepanjang hidupnya bahwa "konsep dan kerangka abstrak hanyalah sebuah cara untuk memecahkan masalah konkret yang sulit". Sikapnya yang menyendiri itu menjadikannya sosok yang agak berbeda di antara matematikawan pada masanya.
 

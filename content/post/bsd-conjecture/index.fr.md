@@ -108,7 +108,7 @@ $$
 a_p = p + 1 - N_p
 $$
 
-Selon le théorème de Hasse (Hasse's bound), on sait que cet écart est borné par $|a_p| \le 2\sqrt{p}$. C'est une sorte d'analogue de l'hypothèse de Riemann pour les courbes elliptiques sur les corps finis.
+Selon le théorème de Hasse (Hasse's bound), on sait que cet écart est borné par $|a_p| \le 2\sqrt{p}$. C'est une sorte d'analogue de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) pour les courbes elliptiques sur les corps finis.
 
 ### 4.2. Définition de la fonction L
 
@@ -185,7 +185,7 @@ Les invariants apparaissant dans cette formule sont les suivants :
 1. **$\Omega_E$ (Période réelle)** : Un nombre transcendant déterminé à partir de l'intégrale $\int_{E(\mathbb{R})} \frac{dx}{|2y + a_1x + a_3|}$ sur le corps des nombres réels de la courbe elliptique.
 2. **$\mathrm{Reg}(E)$ (Régulateur)** : Le déterminant de la matrice $r \times r$ formée par les accouplements de hauteur de Néron-Tate (Néron-Tate height pairing) $\langle P_i, P_j \rangle$ pour les générateurs $P_1, \dots, P_r$ des points rationnels d'ordre infini de rang $r$. C'est un indicateur mesurant la « taille » des points.
 3. **$|E(\mathbb{Q})_{\text{tors}}|$** : L'ordre du sous-groupe de torsion.
-4. **$c_p$ (Nombres de Tamagawa)** : Facteurs de correction locaux pour les nombres premiers $p$ ayant une mauvaise réduction. Calculés à partir de l'action du groupe de Galois du corps local.
+4. **$c_p$ (Nombres de Tamagawa)** : Facteurs de correction locaux pour les nombres premiers $p$ ayant une mauvaise réduction. Calculés à partir de l'action du groupe de [Galois](https://kenji.blog/fr/p/galois/) du corps local.
 5. **$\text{Sha}(E)$ (Groupe de Tate-Shafarevich, $\text{\textcyrillic{Sh}}$)** : Un objet extrêmement important dont nous parlerons plus loin.
 
 Cette formule peut être considérée comme la forme ultime généralisant aux courbes elliptiques la formule du nombre de classes de Dirichlet (Dirichlet's class number formula) du 19ème siècle :
@@ -207,7 +207,7 @@ $$
 \text{Sha}(E) = \ker \left( H^1(G_{\mathbb{Q}}, E) \to \prod_{v} H^1(G_{\mathbb{Q}_v}, E) \right)
 $$
 
-Ici, $G_{\mathbb{Q}}$ est le groupe de Galois absolu, et le produit porte sur toutes les places (nombres premiers finis et la place infinie).
+Ici, $G_{\mathbb{Q}}$ est le groupe de [Galois](https://kenji.blog/fr/p/galois/) absolu, et le produit porte sur toutes les places (nombres premiers finis et la place infinie).
 La conjecture BSD forte contient la prémisse implicite que « pour toute courbe elliptique, $\text{Sha}(E)$ est un groupe fini ». Cependant, à ce jour, il n'a même pas été prouvé que $\text{Sha}(E)$ est fini pour les courbes elliptiques générales. À l'exception de résultats concernant les courbes à multiplication complexe obtenus par Karl Rubin et d'autres, la compréhension fondamentale de $\text{Sha}(E)$ reste l'un des plus grands défis de la théorie des nombres moderne.
 
 ## 6. Relation avec le problème des nombres congruents

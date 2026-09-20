@@ -146,12 +146,12 @@ plt.show()
 
 Wenn Sie diesen Code ausführen, schwankt der Durchschnitt bei den ersten Würfen stark, aber mit zunehmender Anzahl der Versuche erhalten Sie einen Graphen, der sich perfekt an die rote gestrichelte Linie (Erwartungswert 3,5) anpasst. Dies ist ein visueller Beweis für das Gesetz der großen Zahlen.
 
-## 7. Fälle, in denen das Gesetz der großen Zahlen nicht gilt: Cauchy-Verteilung
+## 7. Fälle, in denen das Gesetz der großen Zahlen nicht gilt: [Cauchy](https://kenji.blog/de/p/cauchy/)-Verteilung
 
 [Das Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) ist nicht universell. Eine Voraussetzung ist, dass "der Erwartungswert (Mittelwert) endlich sein muss".
-Eine Wahrscheinlichkeitsverteilung namens **Cauchy-Verteilung** hat beispielsweise sehr schwere Ränder (extreme Werte treten leicht auf) und ihr Erwartungswert und ihre Varianz können nicht definiert werden (sie divergieren gegen unendlich).
+Eine Wahrscheinlichkeitsverteilung namens **[Cauchy](https://kenji.blog/de/p/cauchy/)-Verteilung** hat beispielsweise sehr schwere Ränder (extreme Werte treten leicht auf) und ihr Erwartungswert und ihre Varianz können nicht definiert werden (sie divergieren gegen unendlich).
 
-Selbst wenn Sie Zufallszahlen generieren, die einer Cauchy-Verteilung folgen, und den Durchschnitt bilden, wird der Wert nie gegen eine bestimmte Zahl konvergieren und weiterhin wild springen. Auch in der realen Welt ist es wichtig zu verstehen, dass es Situationen (wie auf Finanzmärkten, wo unvorhersehbare und extreme Ereignisse namens "Schwarze Schwäne" auftreten) gibt, in denen das einfache Gesetz der großen Zahlen nicht angewandt werden kann (oder seine Anwendung gefährlich ist).
+Selbst wenn Sie Zufallszahlen generieren, die einer [Cauchy](https://kenji.blog/de/p/cauchy/)-Verteilung folgen, und den Durchschnitt bilden, wird der Wert nie gegen eine bestimmte Zahl konvergieren und weiterhin wild springen. Auch in der realen Welt ist es wichtig zu verstehen, dass es Situationen (wie auf Finanzmärkten, wo unvorhersehbare und extreme Ereignisse namens "Schwarze Schwäne" auftreten) gibt, in denen das einfache Gesetz der großen Zahlen nicht angewandt werden kann (oder seine Anwendung gefährlich ist).
 
 ## 8. Anwendungsbeispiele in der realen Welt
 

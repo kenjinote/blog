@@ -24,13 +24,13 @@ Seine Schaffung der "Mengenlehre" ist zur Grundlage jedes Bereichs der modernen 
 
 [Georg Cantor](https://kenji.blog/de/p/cantor/) wurde 1845 in St. Petersburg, Russland, geboren. Sein Vater war ein wohlhabender Kaufmann aus Dänemark und seine Mutter eine russische Musikerin. Da er von klein auf ein außergewöhnliches Talent für Mathematik zeigte, zog er schließlich nach Deutschland und studierte Mathematik an der Universität Berlin.
 
-An der Universität Berlin wurde er von den damals führenden Persönlichkeiten der mathematischen Welt, **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold Kronecker**, betreut. Insbesondere Kronecker sollte später zu Cantors größtem Gegner werden.
+An der Universität Berlin wurde er von den damals führenden Persönlichkeiten der mathematischen Welt, **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold [Kronecker](https://kenji.blog/de/p/kronecker/)**, betreut. Insbesondere [Kronecker](https://kenji.blog/de/p/kronecker/) sollte später zu Cantors größtem Gegner werden.
 
-### Die Suche nach Unendlichkeit und der Konflikt mit Kronecker
+### Die Suche nach Unendlichkeit und der Konflikt mit [Kronecker](https://kenji.blog/de/p/kronecker/)
 
 Als Cantor seine Forschungen in der Mengenlehre vorantrieb und die revolutionäre Theorie veröffentlichte, dass "es verschiedene Hierarchien in der Größe der Unendlichkeit gibt", entbrannte eine heftige Kontroverse in der mathematischen Welt.
 
-Kronecker, der der Überzeugung war: "Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk", kritisierte Cantors Theorie scharf. Aufgrund von Kroneckers Behinderungen konnte Cantor sein Ziel, eine Professur an der Universität Berlin zu erlangen, nicht erreichen und verbrachte sein Leben an der provinzgebundenen Universität Halle.
+[Kronecker](https://kenji.blog/de/p/kronecker/), der der Überzeugung war: "Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk", kritisierte Cantors Theorie scharf. Aufgrund von [Kronecker](https://kenji.blog/de/p/kronecker/)s Behinderungen konnte Cantor sein Ziel, eine Professur an der Universität Berlin zu erlangen, nicht erreichen und verbrachte sein Leben an der provinzgebundenen Universität Halle.
 
 ```mermaid
 graph TD
@@ -44,7 +44,7 @@ graph TD
 
 Die Tatsache, dass seine Theorie nicht verstanden wurde und er weiterhin unerbittlichen Angriffen von seinem ehemaligen Lehrer ausgesetzt war, untergrub Cantors geistige Gesundheit zutiefst. Er entwickelte eine Depression und wurde wiederholt in psychiatrische Kliniken eingewiesen und entlassen.
 
-Allerdings wurde seine Theorie nach und nach von jüngeren Generationen von Mathematikern, wie etwa **[David Hilbert](https://kenji.blog/de/p/hilbert/)**, unterstützt. Hilbert lobte Cantor mit den höchsten Komplimenten und erklärte: "Aus dem Paradies, das Cantor uns geschaffen, soll uns niemand vertreiben können." Cantor beendete sein Leben 1918 in einer psychiatrischen Klinik in Halle, aber nach seinem Tod etablierte sich die Mengenlehre unumstößlich als die wichtigste Grundlage der Mathematik.
+Allerdings wurde seine Theorie nach und nach von jüngeren Generationen von Mathematikern, wie etwa **[David Hilbert](https://kenji.blog/de/p/hilbert/)**, unterstützt. [Hilbert](https://kenji.blog/de/p/hilbert/) lobte Cantor mit den höchsten Komplimenten und erklärte: "Aus dem Paradies, das Cantor uns geschaffen, soll uns niemand vertreiben können." Cantor beendete sein Leben 1918 in einer psychiatrischen Klinik in Halle, aber nach seinem Tod etablierte sich die Mengenlehre unumstößlich als die wichtigste Grundlage der Mathematik.
 
 ## Mathematische Errungenschaften: Die Unendlichkeit zählen
 

@@ -116,7 +116,7 @@ Determinan memiliki beberapa sifat aljabar yang terkenal, tetapi jika Anda menge
 *   **Determinan matriks invers** : $\det(A^{-1}) = \frac{1}{\det(A)}$
     Jika transformasi tertentu memperluas ruang $2$ kali, transformasi inversnya harus menyusutkan ruang menjadi $\frac{1}{2}$ untuk mengembalikannya ke keadaan semula.
 
-## 7. Kesimpulan: Menghubungkan dengan Jacobian
+## 7. Kesimpulan: Menghubungkan dengan [Jacobi](https://kenji.blog/id/p/jacobi/)an
 
 Determinan bukan sekadar rumus perhitungan yang rumit, melainkan alat geometris yang sangat kuat untuk menggambarkan deformasi ruang.
 
@@ -124,4 +124,4 @@ Determinan bukan sekadar rumus perhitungan yang rumit, melainkan alat geometris 
 *   **Tanda** : Apakah "orientasi" ruang dipertahankan (positif) atau dibalik (negatif).
 *   **Nol** : Ruang "runtuh" menjadi dimensi yang lebih rendah (hilangnya dimensi dan ireversibilitas).
 
-Memiliki gambar intuitif ini akan berfungsi sebagai dasar penting untuk memahami **Jacobian** (faktor skala volume lokal dalam transformasi non-linear) yang akan Anda pelajari nanti di kalkulus. Di dunia aljabar linear, secara konstan menghubungkan rumus dengan gambar geometris adalah jalan terpendek menuju pemahaman yang mendalam.
+Memiliki gambar intuitif ini akan berfungsi sebagai dasar penting untuk memahami **[Jacobi](https://kenji.blog/id/p/jacobi/)an** (faktor skala volume lokal dalam transformasi non-linear) yang akan Anda pelajari nanti di kalkulus. Di dunia aljabar linear, secara konstan menghubungkan rumus dengan gambar geometris adalah jalan terpendek menuju pemahaman yang mendalam.

@@ -15,7 +15,7 @@ tags:
 
 ## 1. Einführung: Was sind die Millennium-Probleme?
 
-Im Jahr 2000 setzte das Clay Mathematics Institute ein Preisgeld von jeweils 1 Million Dollar für die Lösung von sieben extrem wichtigen ungelösten mathematischen Problemen aus. Diese werden als **Millennium-Probleme** bezeichnet. Darunter befinden sich die berühmte "Riemannsche Vermutung" und das "P-NP-Problem", aber es gibt ein Problem, das tief mit der Physik verbunden ist. Das ist das **"Yang-Mills- und Massenlücken-Problem"** (Yang-Mills and Mass Gap).
+Im Jahr 2000 setzte das Clay Mathematics Institute ein Preisgeld von jeweils 1 Million Dollar für die Lösung von sieben extrem wichtigen ungelösten mathematischen Problemen aus. Diese werden als **Millennium-Probleme** bezeichnet. Darunter befinden sich die berühmte "[Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung" und das "P-NP-Problem", aber es gibt ein Problem, das tief mit der Physik verbunden ist. Das ist das **"Yang-Mills- und Massenlücken-Problem"** (Yang-Mills and Mass Gap).
 
 Dieses Problem zielt darauf ab, die mathematischen Grundlagen des "Standardmodells" der Teilchenphysik zu etablieren, das die fundamentalen Kräfte der Natur beschreibt. Obwohl das Verhalten von Materie und Kräften, aus denen unsere Welt besteht, experimentell mit extrem hoher Präzision bestätigt wurde, ist der mathematisch strenge Beweis dafür eine der größten Herausforderungen in der modernen Mathematik.
 
@@ -37,7 +37,7 @@ Hier spielt eine Größe namens Phase eine wichtige Rolle. Selbst wenn man die P
 
 Ursprünglich konstruierten sie diese Theorie basierend auf der SU(2)-Isospin-Symmetrie, um die "starke Kraft", die Protonen und Neutronen bindet, zu erklären. Später entwickelte sich diese Theorie zu der Theorie, die den Kern des Standardmodells der Teilchenphysik bildet. Das aktuelle Standardmodell basiert auf nicht-abelschen Eichtheorien: Die Quantenchromodynamik (QCD), die die starke Kraft beschreibt, basiert auf SU(3), und die elektroschwache Theorie, die die schwache und elektromagnetische Kraft vereinheitlicht, basiert auf SU(2) × U(1).
 
-Die Lagrange-Dichte der Yang-Mills-Theorie wird wie folgt geschrieben:
+Die [Lagrange](https://kenji.blog/de/p/lagrange/)-Dichte der Yang-Mills-Theorie wird wie folgt geschrieben:
 
 $$ \mathcal{L} = -\frac{1}{4} F_{\mu\nu}^a F^{a\mu\nu} $$
 
@@ -92,7 +92,7 @@ Das Gebiet, das streng eine Quantenfeldtheorie mathematisch konstruiert, wird al
 
 ### Axiomensysteme von Wightman
 
-Als Rahmen zur mathematisch strengen Behandlung von Quantenfeldern sind die **Wightman-Axiome** (Wightman axioms) und die **Osterwalder-Schrader-Axiome** (Osterwalder-Schrader axioms) bekannt. Diese axiomatisieren die Eigenschaften, die Quantenfelder erfüllen müssen (wie Poincaré-Kovarianz, lokale Kommutativität, Spektralbedingung).
+Als Rahmen zur mathematisch strengen Behandlung von Quantenfeldern sind die **Wightman-Axiome** (Wightman axioms) und die **Osterwalder-Schrader-Axiome** (Osterwalder-Schrader axioms) bekannt. Diese axiomatisieren die Eigenschaften, die Quantenfelder erfüllen müssen (wie [Poincaré](https://kenji.blog/de/p/poincare/)-Kovarianz, lokale Kommutativität, Spektralbedingung).
 
 Um das Millennium-Problem zu lösen, muss zunächst gezeigt werden, dass die Yang-Mills-Theorie als strenges mathematisches Objekt existiert, das diese Axiome erfüllt, und dann muss bewiesen werden, dass es an der unteren Grenze des Spektrums (der Energieeigenwerte) eine Lücke gibt (die Massenlücke).
 

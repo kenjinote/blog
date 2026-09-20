@@ -133,15 +133,15 @@ flowchart LR
     D --> G["Eyeglass frames, pretzel"]
 ```
 
-## The Euler-Poincaré Formula: A Leap into Multi-Dimensions
+## The Euler-[Poincaré](https://kenji.blog/en/p/poincare/) Formula: A Leap into Multi-Dimensions
 
-From the late 19th century into the 20th century, mathematicians, including [Henri Poincaré](https://kenji.blog/en/p/poincare/), extended Euler's theorem into even higher-dimensional spaces. This became the **Euler-Poincaré formula**.
+From the late 19th century into the 20th century, mathematicians, including [Henri Poincaré](https://kenji.blog/en/p/poincare/), extended Euler's theorem into even higher-dimensional spaces. This became the **Euler-[Poincaré](https://kenji.blog/en/p/poincare/) formula**.
 By generalizing the elements of a polyhedron, they considered the alternating sum of the number of elements (simplices) in an $n$-dimensional shape.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$
 
 Here, $k_i$ represents the number of $i$-dimensional elements.
-Poincaré proved that this $\chi$ is deeply connected to topological invariants called "Betti numbers."
+[Poincaré](https://kenji.blog/en/p/poincare/) proved that this $\chi$ is deeply connected to topological invariants called "Betti numbers."
 Intuitively, the Betti number $b_i$ represents "the number of $i$-dimensional holes."
 
 $$ \chi = b_0 - b_1 + b_2 - b_3 + \dots $$

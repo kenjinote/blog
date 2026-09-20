@@ -219,7 +219,7 @@ $$
 
 Una de las aplicaciones más importantes de este teorema generalizado es el **Teorema Chino del Resto** en un anillo de polinomios de una variable $F[x]$ sobre un cuerpo $F$.
 
-Los "enteros coprimos" en el caso de los enteros corresponden a "polinomios que no comparten ninguna raíz (su polinomio máximo común divisor es una constante)" en el anillo de polinomios. Esta versión polinómica del CRT proporciona el respaldo teórico para la interpolación de Lagrange (Lagrange interpolation), y coincide completamente con el algoritmo para determinar de forma única el polinomio de grado mínimo que pasa a través de múltiples puntos dados. Además, esta es la base matemática para el **código Reed-Solomon**, un tipo de código de corrección de errores.
+Los "enteros coprimos" en el caso de los enteros corresponden a "polinomios que no comparten ninguna raíz (su polinomio máximo común divisor es una constante)" en el anillo de polinomios. Esta versión polinómica del CRT proporciona el respaldo teórico para la interpolación de [Lagrange](https://kenji.blog/es/p/lagrange/) ([Lagrange](https://kenji.blog/es/p/lagrange/) interpolation), y coincide completamente con el algoritmo para determinar de forma única el polinomio de grado mínimo que pasa a través de múltiples puntos dados. Además, esta es la base matemática para el **código Reed-Solomon**, un tipo de código de corrección de errores.
 
 ## Computación masivamente paralela utilizando Sistemas de Residuos (RNS)
 

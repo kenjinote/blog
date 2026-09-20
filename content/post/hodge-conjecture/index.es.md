@@ -54,7 +54,7 @@ Aquí, H^{p,q}(X) representa la clase de formas diferenciales consistentes en el
 
 Una combinación lineal formal de variedades algebraicas (subvariedades) de menor dimensión dentro de la variedad X se llama **Ciclo Algebraico** (Algebraic Cycle).
 
-Un ciclo algebraico de dimensión k define un elemento del grupo de cohomología de dimensión 2k de X mediante la Dualidad de Poincaré (Poincaré Duality). Lo importante es el hecho de que la clase de cohomología determinada por la subvariedad algebraica aparece solo en ciertos componentes en la descomposición de Hodge. Específicamente, la clase de cohomología determinada por una subvariedad algebraica cuya codimensión (la dimensión total menos la dimensión de la subvariedad) es p pertenece al componente H^{p,p}(X).
+Un ciclo algebraico de dimensión k define un elemento del grupo de cohomología de dimensión 2k de X mediante la Dualidad de [Poincaré](https://kenji.blog/es/p/poincare/) ([Poincaré](https://kenji.blog/es/p/poincare/) Duality). Lo importante es el hecho de que la clase de cohomología determinada por la subvariedad algebraica aparece solo en ciertos componentes en la descomposición de Hodge. Específicamente, la clase de cohomología determinada por una subvariedad algebraica cuya codimensión (la dimensión total menos la dimensión de la subvariedad) es p pertenece al componente H^{p,p}(X).
 
 Además, dado que un ciclo algebraico se define mediante ecuaciones, sus coeficientes pueden considerarse como números racionales (o enteros). Por lo tanto, la clase de cohomología determinada por el ciclo algebraico también pertenece al grupo de cohomología con coeficientes racionales H^{2p}(X, \mathbb{Q}).
 
@@ -123,7 +123,7 @@ Puede ser difícil captar la realidad de la Conjetura de Hodge solo con su defin
 
 ### 7.1 Toros y Curvas Elípticas
 
-Uno de los ejemplos más simples y fáciles de entender es una variedad compleja unidimensional, es decir, una **Superficie de Riemann** (Riemann Surface). Entre ellas, el toro (forma de rosquilla) con género (número de agujeros) igual a 1 se conoce algebraico-geométricamente como una **Curva Elíptica** (Elliptic Curve).
+Uno de los ejemplos más simples y fáciles de entender es una variedad compleja unidimensional, es decir, una **Superficie de [Riemann](https://kenji.blog/es/p/riemann/)** ([Riemann](https://kenji.blog/es/p/riemann/) Surface). Entre ellas, el toro (forma de rosquilla) con género (número de agujeros) igual a 1 se conoce algebraico-geométricamente como una **Curva Elíptica** (Elliptic Curve).
 
 En el caso de una curva elíptica E, la dimensión compleja es 1 (la dimensión real es 2). Considerando el grupo de cohomología, lo interesante es el grupo de cohomología unidimensional intermedio H^1(E, \mathbb{C}), pero el objetivo de la Conjetura de Hodge son los grupos de cohomología de dimensión par total. Por lo tanto, no aparece una afirmación no trivial de la Conjetura de Hodge en la curva elíptica misma (dimensión compleja 1).
 
@@ -151,7 +151,7 @@ Las conjeturas estándar incluyen la teoría de la intersección de ciclos algeb
 
 ### 8.2 Conjetura de Milnor y Teoría K Algebraica (Milnor Conjecture and Algebraic K-Theory)
 
-De una naturaleza un poco diferente, la Conjetura de Milnor (Milnor Conjecture) resuelta por Vladimir Voevodsky, y su generalización, la Conjetura de Bloch-Kato (Bloch-Kato Conjecture), conectaban la Teoría K Algebraica y la cohomología de Galois.
+De una naturaleza un poco diferente, la Conjetura de Milnor (Milnor Conjecture) resuelta por Vladimir Voevodsky, y su generalización, la Conjetura de Bloch-Kato (Bloch-Kato Conjecture), conectaban la Teoría K Algebraica y la cohomología de [Galois](https://kenji.blog/es/p/galois/).
 
 El trabajo de Voevodsky construyó un nuevo marco llamado "Cohomología Motívica" (Motivic Cohomology) e hizo la conexión entre la geometría algebraica y la topología aún más sólida. Esta perspectiva motívica sitúa la Conjetura de Hodge dentro de una teoría más general de ciclos algebraicos, y se ha convertido en un enfoque esencial en la investigación moderna de la Conjetura de Hodge.
 

@@ -110,6 +110,6 @@ The Gamma function is not merely a product of mathematical curiosity. It plays a
 
 1. **Probability and Statistics**: The Gamma distribution, Chi-squared distribution, and Student's t-distribution are defined using the Gamma function.
 2. **Physics**: In dimensional regularization within quantum mechanics and quantum field theory, the Gamma function plays a role in controlling divergences.
-3. **Analytic Number Theory**: Through its relationship with the Riemann zeta function, it holds a central position in the study of prime number distribution.
+3. **Analytic Number Theory**: Through its relationship with the [Riemann](https://kenji.blog/en/p/riemann/) zeta function, it holds a central position in the study of prime number distribution.
 
 The quest that began with a simple question of extending the factorial to real numbers revealed a magnificent structure that runs through all of mathematics. The Gamma function is truly Euler's masterpiece, bridging the discrete and continuous worlds.

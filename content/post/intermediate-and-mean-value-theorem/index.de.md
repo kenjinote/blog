@@ -73,7 +73,7 @@ Geometrisch bedeutet dies, dass es bei jeder glatten Kurve, bei der die Anfangs-
 
 ## 4. Der Mittelwertsatz der Differentialrechnung
 
-Der Mittelwertsatz (Mittelwertsatz von Lagrange) kann als der zentrale Pfeiler betrachtet werden, der die gesamte Analysis stützt.
+Der Mittelwertsatz (Mittelwertsatz von [Lagrange](https://kenji.blog/de/p/lagrange/)) kann als der zentrale Pfeiler betrachtet werden, der die gesamte Analysis stützt.
 
 ### Aussage des Satzes
 
@@ -138,9 +138,9 @@ Dieses Korollar lässt sich auf genau dieselbe Weise beweisen. Wenn $x_1 < x_2$,
 
 Auf diese Weise werden die Prinzipien der Vorzeichentabellen, die wir in der Schulmathematik selbstverständlich verwenden („wenn die Ableitung positiv ist, steigt sie, wenn negativ, fällt sie“), alle durch diesen **Mittelwertsatz** garantiert.
 
-## 5. Der Erweiterte Mittelwertsatz (Cauchy)
+## 5. Der Erweiterte Mittelwertsatz ([Cauchy](https://kenji.blog/de/p/cauchy/))
 
-Der Mittelwertsatz von Cauchy ist eine Erweiterung des Mittelwertsatzes auf zwei Funktionen.
+Der Mittelwertsatz von [Cauchy](https://kenji.blog/de/p/cauchy/) ist eine Erweiterung des Mittelwertsatzes auf zwei Funktionen.
 
 > **Satz (Erweiterter Mittelwertsatz)**
 > Seien zwei Funktionen $f(x)$ und $g(x)$ stetig auf dem abgeschlossenen Intervall $[a, b]$ und differenzierbar auf dem offenen Intervall $(a, b)$, und sei $g'(x) \neq 0$ für alle $x \in (a, b)$. Dann existiert ein $c \in (a, b)$, sodass:

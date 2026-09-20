@@ -51,7 +51,7 @@ Le fait important révélé par cette formule est que **« l'énergie $E$ de la 
 
 ## 1.2 Aberration chromatique (Chromatic Aberration) et décalage focal
 
-De plus, d'un point de vue optique, la différence de longueur d'onde de la lumière crée une différence d'« indice de réfraction ». L'indice de réfraction $n$ du milieu (ici le cristallin, etc.) dépend de la longueur d'onde $\lambda$ et est approximé par l'équation de dispersion de Cauchy.
+De plus, d'un point de vue optique, la différence de longueur d'onde de la lumière crée une différence d'« indice de réfraction ». L'indice de réfraction $n$ du milieu (ici le cristallin, etc.) dépend de la longueur d'onde $\lambda$ et est approximé par l'équation de dispersion de [Cauchy](https://kenji.blog/fr/p/cauchy/).
 
 $$ n(\lambda) = B + \frac{C}{\lambda^2} $$
 

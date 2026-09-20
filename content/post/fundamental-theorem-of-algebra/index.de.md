@@ -35,7 +35,7 @@ Zu Beginn des 18. Jahrhunderts versuchten mathematische Riesen wie Jean le Rond 
 
 Der erste im Wesentlichen vollständige Beweis für diesen uneinnehmbaren Satz wurde von keinem Geringeren als [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/) erbracht. In seiner Dissertation von 1799 wies er auf die Mängel in den Beweisen der vorhergehenden Mathematiker hin und präsentierte einen Beweis, der auf geometrischer Intuition basierte. Gauss lieferte im Laufe seines Lebens vier verschiedene Beweise für diesen Satz, was zeigt, welche Bedeutung er ihm beimaß.
 
-Der heute standardmäßigste und eleganteste Beweis gilt als derjenige, der auf der Theorie der komplexen Analysis basiert, die von dem französischen Mathematiker Joseph Liouville und anderen aufgebaut wurde. In der zweiten Hälfte dieses Artikels werden wir den Beweis mit Hilfe des Satzes von Liouville vorstellen.
+Der heute standardmäßigste und eleganteste Beweis gilt als derjenige, der auf der Theorie der komplexen Analysis basiert, die von dem französischen Mathematiker Joseph [Liouville](https://kenji.blog/de/p/liouville/) und anderen aufgebaut wurde. In der zweiten Hälfte dieses Artikels werden wir den Beweis mit Hilfe des Satzes von [Liouville](https://kenji.blog/de/p/liouville/) vorstellen.
 
 ## Genaue Formulierung des Satzes
 
@@ -78,26 +78,26 @@ flowchart TD
     E -->|"P(z) = 0"| F["Die Existenz einer Wurzel ist bewiesen"]
 ```
 
-## Vorbereitung aus der Komplexen Analysis: Satz von Liouville
+## Vorbereitung aus der Komplexen Analysis: Satz von [Liouville](https://kenji.blog/de/p/liouville/)
 
-Nachdem wir ein intuitives Verständnis erlangt haben, werden wir nun den schönsten und strengsten Beweis der modernen Mathematik vorstellen. Dieser Beweis nutzt eine mächtige Waffe der komplexen Analysis: den **Satz von Liouville**.
+Nachdem wir ein intuitives Verständnis erlangt haben, werden wir nun den schönsten und strengsten Beweis der modernen Mathematik vorstellen. Dieser Beweis nutzt eine mächtige Waffe der komplexen Analysis: den **Satz von [Liouville](https://kenji.blog/de/p/liouville/)**.
 
 Die komplexe Analysis ist das Gebiet, das sich mit der Infinitesimalrechnung von Funktionen komplexer Variablen befasst. Im Gegensatz zu Funktionen reeller Zahlen ist die Differenzierbarkeit (Holomorphie) komplexer Funktionen eine extrem starke Bedingung; eine komplexe Funktion, die auch nur einmal differenzierbar ist, hat die erstaunliche Eigenschaft, unendlich oft differenzierbar zu sein und in eine Taylorreihe entwickelt werden zu können.
 
 Eine Funktion, die in der gesamten komplexen Ebene differenzierbar (holomorph) ist, wird als **ganze Funktion** bezeichnet. Polynome $P(z)$ und die Exponentialfunktion $e^z$ sind typische Beispiele für ganze Funktionen.
 
-Der Satz von Liouville ist ein zutiefst mächtiger Satz bezüglich dieser ganzen Funktionen.
+Der Satz von [Liouville](https://kenji.blog/de/p/liouville/) ist ein zutiefst mächtiger Satz bezüglich dieser ganzen Funktionen.
 
-**Satz (Satz von Liouville)**
+**Satz (Satz von [Liouville](https://kenji.blog/de/p/liouville/))**
 Jede beschränkte ganze Funktion muss eine konstante Funktion sein.
 
 Hier bedeutet "beschränkt", dass für alle komplexen Zahlen $z$ der Betrag der Funktion $|f(z)|$ eine bestimmte reelle Zahl $M$ nicht überschreitet; das heißt, es existiert ein $M$, so dass $|f(z)| \le M$.
 
-In der Welt der reellen Zahlen ist eine Funktion wie $f(x) = \sin(x)$ über die gesamte Zahlengerade differenzierbar und durch $-1 \le \sin(x) \le 1$ beschränkt. Sie ist keine konstante Funktion. Der Satz von Liouville besagt jedoch, dass dies in der komplexen Welt niemals passieren kann. Wenn eine Funktion in der gesamten komplexen Ebene holomorph ist und ihr Wert nicht gegen unendlich divergiert, ist sie lediglich eine flache Konstante.
+In der Welt der reellen Zahlen ist eine Funktion wie $f(x) = \sin(x)$ über die gesamte Zahlengerade differenzierbar und durch $-1 \le \sin(x) \le 1$ beschränkt. Sie ist keine konstante Funktion. Der Satz von [Liouville](https://kenji.blog/de/p/liouville/) besagt jedoch, dass dies in der komplexen Welt niemals passieren kann. Wenn eine Funktion in der gesamten komplexen Ebene holomorph ist und ihr Wert nicht gegen unendlich divergiert, ist sie lediglich eine flache Konstante.
 
 ## Strenger Beweis des Fundamentalsatzes der Algebra
 
-Lassen Sie uns nun den [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) mit Hilfe des Satzes von Liouville beweisen. Sie werden von der Brillanz dieses Beweises erstaunt sein. Hier verwenden wir einen Beweis durch Widerspruch.
+Lassen Sie uns nun den [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) mit Hilfe des Satzes von [Liouville](https://kenji.blog/de/p/liouville/) beweisen. Sie werden von der Brillanz dieses Beweises erstaunt sein. Hier verwenden wir einen Beweis durch Widerspruch.
 
 **Beweis**
 
@@ -134,7 +134,7 @@ Andererseits muss eine stetige Funktion innerhalb der abgeschlossenen Kreisschei
 Daher überschreitet der Betrag von $f(z)$ sowohl außerhalb als auch innerhalb des Kreises niemals eine bestimmte endliche obere Schranke. Das heißt, $f(z)$ ist eine **beschränkte** Funktion.
 
 Bis zu diesem Punkt haben wir gezeigt, dass $f(z)$ sowohl eine "ganze Funktion" als auch "beschränkt" ist.
-Hier wenden wir den **Satz von Liouville** an. Eine beschränkte ganze Funktion muss eine Konstante sein. Daher existiert eine komplexe Zahl $c$, so dass für alle $z$ gilt:
+Hier wenden wir den **Satz von [Liouville](https://kenji.blog/de/p/liouville/)** an. Eine beschränkte ganze Funktion muss eine Konstante sein. Daher existiert eine komplexe Zahl $c$, so dass für alle $z$ gilt:
 
 $$
 f(z) = c
@@ -172,8 +172,8 @@ Darüber hinaus muss für Polynome, bei denen alle Koeffizienten reelle Zahlen s
 
 ## Fazit
 
-In diesem Artikel haben wir uns eingehend mit dem [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) befasst und seinen historischen Hintergrund, die topologische Intuition und den komplex analytischen Beweis mit Hilfe des Satzes von Liouville behandelt.
+In diesem Artikel haben wir uns eingehend mit dem [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) befasst und seinen historischen Hintergrund, die topologische Intuition und den komplex analytischen Beweis mit Hilfe des Satzes von [Liouville](https://kenji.blog/de/p/liouville/) behandelt.
 
 Auf den ersten Blick handelt es sich um einen Satz über algebraische Gleichungen, aber die Tatsache, dass sein elegantester Beweis die Kraft der Analysis (Infinitesimalrechnung) und der Topologie ausleiht, zeigt die Tiefe der Mathematik und die Schönheit, wie verschiedene Bereiche eng miteinander verflochten sind.
 
-Die lange Suche der Menschheit nach den Wurzeln von Gleichungen gewann durch die Einführung der neuen imaginären Zahlen die riesige Bühne der komplexen Ebene, und die Vollständigkeit dieser Bühne wurde durch den [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) bewiesen. Dieser Satz wurde zum Schlüssel, der die glänzenden Türen zur Galois-Theorie und zur algebraischen Geometrie öffnete, die das Fundament der modernen Mathematik bilden.
+Die lange Suche der Menschheit nach den Wurzeln von Gleichungen gewann durch die Einführung der neuen imaginären Zahlen die riesige Bühne der komplexen Ebene, und die Vollständigkeit dieser Bühne wurde durch den [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) bewiesen. Dieser Satz wurde zum Schlüssel, der die glänzenden Türen zur [Galois](https://kenji.blog/de/p/galois/)-Theorie und zur algebraischen Geometrie öffnete, die das Fundament der modernen Mathematik bilden.

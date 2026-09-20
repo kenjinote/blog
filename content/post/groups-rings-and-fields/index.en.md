@@ -52,12 +52,12 @@ Given a non-empty set $G$ and a binary operation $\cdot$ on it (called a "produc
    $$ a \cdot a^{-1} = a^{-1} \cdot a = e $$
    holds. (An element that cancels out the operation and returns to the original state.)
 
-Furthermore, a group in which $a \cdot b = b \cdot a$ (commutative law) holds for any $a, b \in G$ is called a **Commutative Group** or **Abelian Group**.
+Furthermore, a group in which $a \cdot b = b \cdot a$ (commutative law) holds for any $a, b \in G$ is called a **Commutative Group** or **[Abel](https://kenji.blog/en/p/abel/)ian Group**.
 
 ### 2.2. Concrete Examples and Visualization of Groups
 
 **Example 1: Addition of Integers**
-The combination of the set of integers $\mathbb{Z}$ and addition $(+)$ forms an Abelian group.
+The combination of the set of integers $\mathbb{Z}$ and addition $(+)$ forms an [Abel](https://kenji.blog/en/p/abel/)ian group.
 - Associativity: $(a + b) + c = a + (b + c)$
 - Identity element: $0$ (because $a + 0 = 0 + a = a$)
 - Inverse element: The inverse of $a$ is $-a$ (because $a + (-a) = 0$)
@@ -83,7 +83,7 @@ A group was a structure concerning one operation (e.g., addition only). However,
 
 Given a non-empty set $R$ and two binary operations $+$ (addition) and $\cdot$ (multiplication), the tuple $(R, +, \cdot)$ satisfying the following axioms is called a **Ring**.
 
-1. **$(R, +)$ is a commutative group (Abelian group)**
+1. **$(R, +)$ is a commutative group ([Abel](https://kenji.blog/en/p/abel/)ian group)**
    That is, associativity, identity element (written as $0$), inverse element (written as $-a$), and the commutative law hold for addition.
 2. **$(R, \cdot)$ is a semigroup**
    Associativity holds for multiplication.
@@ -151,8 +151,8 @@ A commutative ring $(F, +, \cdot)$ satisfying the following conditions is called
 **Example 1: Field of Rational Numbers, Real Numbers, Complex Numbers**
 The rational numbers $\mathbb{Q}$, real numbers $\mathbb{R}$, and complex numbers $\mathbb{C}$ all form fields. These are spaces where division by non-zero is freely possible.
 
-**Example 2: Finite Field (Galois Field)**
-Fields with a finite number of elements also exist, and are called **Finite Fields** or **Galois Fields**.
+**Example 2: Finite Field ([Galois](https://kenji.blog/en/p/galois/) Field)**
+Fields with a finite number of elements also exist, and are called **Finite Fields** or **[Galois](https://kenji.blog/en/p/galois/) Fields**.
 The quotient ring $\mathbb{Z}/p\mathbb{Z}$ modulo a prime $p$ actually forms a field (it is crucial that $p$ is a prime).
 This space, where all four basic operations can be fully defined even with a finite number of elements, is essential as a foundation for digital signal processing and cryptography.
 
@@ -189,7 +189,7 @@ A "shape-preserving mapping" between these structures is called a **Homomorphism
 
 Further beyond field theory is **[Galois Theory](https://kenji.blog/en/p/galois-theory/)**, which can be considered the monumental achievement of algebra. The brilliant French mathematician [Évariste Galois](https://kenji.blog/en/p/galois/) fused group theory and field theory to clarify the "conditions under which equations can be solved algebraically."
 
-When considering the field extension (splitting field) that contains all the roots of an equation, the structure of the automorphism group (Galois group) of that field completely determines the properties of the equation's roots. The long-standing conundrum that "there is no general solution formula for equations of degree 5 or higher (Abel-Ruffini theorem)" was elegantly proven by showing that the Galois group lacks a specific property (solvability).
+When considering the field extension (splitting field) that contains all the roots of an equation, the structure of the automorphism group ([Galois](https://kenji.blog/en/p/galois/) group) of that field completely determines the properties of the equation's roots. The long-standing conundrum that "there is no general solution formula for equations of degree 5 or higher ([Abel](https://kenji.blog/en/p/abel/)-Ruffini theorem)" was elegantly proven by showing that the [Galois](https://kenji.blog/en/p/galois/) group lacks a specific property (solvability).
 
 ---
 

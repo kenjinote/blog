@@ -18,7 +18,7 @@ $$
 
 虽然这个积分本身可以使用 $\arctan(x)$ 来求解，但如果分母变成了更高次的连续多项式，或者错综复杂地混合了正弦和余弦等三角函数，在实函数范围内找到原函数（不定积分）实际上是不可能的。
 
-这时就轮到 **复分析** （复变函数论）中被誉为数学中最优美理论之一的强大定理登场了，那就是 **柯西[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)** （Cauchy's [Residue Theorem](https://kenji.blog/zh-cn/p/residue-theorem/)）。通过将原本在实数轴（一维）上进行的积分果断扩展到 **复平面** （二维），我们就可以巧妙地解出原本无法计算的实数积分。
+这时就轮到 **复分析** （复变函数论）中被誉为数学中最优美理论之一的强大定理登场了，那就是 **柯西[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)** （[Cauchy](https://kenji.blog/zh-cn/p/cauchy/)'s [Residue Theorem](https://kenji.blog/zh-cn/p/residue-theorem/)）。通过将原本在实数轴（一维）上进行的积分果断扩展到 **复平面** （二维），我们就可以巧妙地解出原本无法计算的实数积分。
 
 ## 复积分与奇点
 

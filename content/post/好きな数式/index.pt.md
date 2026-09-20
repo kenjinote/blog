@@ -15,7 +15,7 @@ Quando $p$ é um número primo, $(p−1)!≡−1 \pmod p$ é válido.
 ## Fórmula de Euler
 $e^{iπ}+1=0$
 
-## Último Teorema de Fermat
+## Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)
 Para qualquer inteiro $n≥3$, não existem inteiros positivos $x,y,z$ que satisfaçam $x^n+y^n=z^n$.
 
 ## Problema de Basileia

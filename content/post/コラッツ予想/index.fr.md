@@ -239,7 +239,7 @@ Même les débutants en programmation peuvent essayer, alors n'hésitez pas à j
 
 Si vous voulez en savoir plus sur ce genre de sujet « mathématiques mystérieuses × programmation »,
 n'hésitez pas à me demander « dis-m'en plus ».
-Plus tard, je vous présenterai l'hypothèse de Riemann, des histoires de nombres premiers et bien d'autres choses encore !
+Plus tard, je vous présenterai l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/), des histoires de nombres premiers et bien d'autres choses encore !
 
 ---
 

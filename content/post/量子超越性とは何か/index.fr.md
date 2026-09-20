@@ -32,7 +32,7 @@ $$
 Ici, $\alpha, \beta \in \mathbb{C}$, et ils satisfont la condition de normalisation $|\alpha|^2 + |\beta|^2 = 1$. Cette propriété est appelée « Superposition » (Superposition).
 
 ### Intrication (Entanglement) et Produit tensoriel
-Lorsqu'il existe plusieurs qubits, l'état du système global est représenté par le produit tensoriel des espaces d'états des qubits individuels. Un système de $n$ qubits devient un vecteur sur un espace de Hilbert de dimension $2^n$, $\mathcal{H}^{\otimes n}$.
+Lorsqu'il existe plusieurs qubits, l'état du système global est représenté par le produit tensoriel des espaces d'états des qubits individuels. Un système de $n$ qubits devient un vecteur sur un espace de [Hilbert](https://kenji.blog/fr/p/hilbert/) de dimension $2^n$, $\mathcal{H}^{\otimes n}$.
 
 $$
 |\Psi\rangle = \sum_{x \in \{0, 1\}^n} c_x |x\rangle

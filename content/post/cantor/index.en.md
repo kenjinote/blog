@@ -24,13 +24,13 @@ His creation of "Set Theory" has become the foundation of every field in modern 
 
 [Georg Cantor](https://kenji.blog/en/p/cantor/) was born in 1845 in St. Petersburg, Russia. His father was a wealthy merchant from Denmark, and his mother was a Russian musician. Showing an extraordinary talent for mathematics from an early age, he eventually moved to Germany and studied mathematics at the University of Berlin.
 
-At the University of Berlin, he was guided by the leading figures of the mathematical world at the time, **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **Leopold Kronecker**. Kronecker in particular would later become Cantor's greatest opponent.
+At the University of Berlin, he was guided by the leading figures of the mathematical world at the time, **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **Leopold [Kronecker](https://kenji.blog/en/p/kronecker/)**. [Kronecker](https://kenji.blog/en/p/kronecker/) in particular would later become Cantor's greatest opponent.
 
-### The Quest for Infinity and the Conflict with Kronecker
+### The Quest for Infinity and the Conflict with [Kronecker](https://kenji.blog/en/p/kronecker/)
 
 When Cantor advanced his research in set theory and published the revolutionary theory that "there are different hierarchies to the size of infinity", a fierce controversy erupted in the mathematical world.
 
-Kronecker, holding the belief that "God made the integers, all else is the work of man," fiercely criticized Cantor's theory. Due to Kronecker's obstruction, Cantor was unable to obtain his goal of a professorship at the University of Berlin, and spent his life at the provincial University of Halle.
+[Kronecker](https://kenji.blog/en/p/kronecker/), holding the belief that "God made the integers, all else is the work of man," fiercely criticized Cantor's theory. Due to [Kronecker](https://kenji.blog/en/p/kronecker/)'s obstruction, Cantor was unable to obtain his goal of a professorship at the University of Berlin, and spent his life at the provincial University of Halle.
 
 ```mermaid
 graph TD
@@ -44,7 +44,7 @@ graph TD
 
 The fact that his theory was not understood and that he continued to receive relentless attacks from his former teacher deeply undermined Cantor's mental health. He developed depression and repeatedly entered and left psychiatric hospitals.
 
-However, his theory gradually became supported by younger generations of mathematicians, such as **[David Hilbert](https://kenji.blog/en/p/hilbert/)**. Hilbert praised Cantor with the highest compliments, stating, "No one shall expel us from the paradise which Cantor has created for us." Cantor closed his life in a psychiatric hospital in Halle in 1918, but after his death, set theory established an immovable position as the most important foundation of mathematics.
+However, his theory gradually became supported by younger generations of mathematicians, such as **[David Hilbert](https://kenji.blog/en/p/hilbert/)**. [Hilbert](https://kenji.blog/en/p/hilbert/) praised Cantor with the highest compliments, stating, "No one shall expel us from the paradise which Cantor has created for us." Cantor closed his life in a psychiatric hospital in Halle in 1918, but after his death, set theory established an immovable position as the most important foundation of mathematics.
 
 ## Mathematical Achievements: Counting Infinity
 

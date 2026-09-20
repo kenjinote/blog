@@ -236,7 +236,7 @@ Incluso los principiantes en programación pueden probarla, ¡así que anímate 
 
 Si hay quienes quieren conocer más temas de este tipo de "Matemáticas misteriosas × Programación",
 no duden en pedir "Enséñame más" sin ningún compromiso.
-¡Con el tiempo iré presentando varias cosas, como la hipótesis de Riemann o temas sobre números primos!
+¡Con el tiempo iré presentando varias cosas, como la hipótesis de [Riemann](https://kenji.blog/es/p/riemann/) o temas sobre números primos!
 
 ---
 

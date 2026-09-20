@@ -110,6 +110,6 @@ $$ \Gamma(z+1) \approx \sqrt{2\pi z} \left(\frac{z}{e}\right)^z $$
 
 1. **確率論と統計学**: ガンマ分布、カイ二乗分布、スチューデントのt分布などは、[ガンマ関数](https://kenji.blog/p/gamma-function/)を用いて定義されます。
 2. **物理学**: 量子力学や場の量子論における次元正規化（Dimensional Regularization）において、[ガンマ関数](https://kenji.blog/p/gamma-function/)は発散を制御する役割を果たします。
-3. **解析的整数論**: リーマンゼータ関数との関係を通じて、素数分布の研究においても中心的な位置を占めます。
+3. **解析的整数論**: [リーマン](https://kenji.blog/p/riemann/)ゼータ関数との関係を通じて、素数分布の研究においても中心的な位置を占めます。
 
 階乗を実数へと拡張するというシンプルな問いから始まった探求は、数学全体を貫く壮大な構造を明らかにしました。[ガンマ関数](https://kenji.blog/p/gamma-function/)は、離散の世界と連続の世界をつなぐ、まさに[オイラー](https://kenji.blog/p/euler/)の傑作と言えるでしょう。

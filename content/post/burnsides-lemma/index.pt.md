@@ -81,7 +81,7 @@ Esses 4 padrões pertencem à mesma "Órbita". O "número de designs essencialme
 
 ## 5. [Lema de Burnside](https://kenji.blog/pt/p/burnsides-lemma/)
 
-Aqui, finalmente, a estrela desta vez, o **[Lema de Burnside](https://kenji.blog/pt/p/burnsides-lemma/)**, faz sua aparição. Às vezes, também é chamado de lema de Cauchy-Frobenius. Este é um teorema surpreendente que nos permite calcular facilmente o "número de órbitas (número de padrões essencialmente diferentes)" quando um grupo $G$ age sobre um conjunto finito $X$.
+Aqui, finalmente, a estrela desta vez, o **[Lema de Burnside](https://kenji.blog/pt/p/burnsides-lemma/)**, faz sua aparição. Às vezes, também é chamado de lema de [Cauchy](https://kenji.blog/pt/p/cauchy/)-Frobenius. Este é um teorema surpreendente que nos permite calcular facilmente o "número de órbitas (número de padrões essencialmente diferentes)" quando um grupo $G$ age sobre um conjunto finito $X$.
 
 A fórmula para o teorema é a seguinte:
 
@@ -231,7 +231,7 @@ Na verdade, este teorema não foi descoberto pela primeira vez por William Burns
 
 No entanto, historicamente, [Augustin-Louis Cauchy](https://kenji.blog/pt/p/cauchy/) já havia publicado um caso especial desse teorema (em relação a grupos simétricos) em 1845, e mais tarde em 1887 Ferdinand Georg Frobenius deu uma prova para grupos finitos em geral.
 
-Portanto, aqueles que tentam ser rigorosos sobre a história da matemática às vezes chamam de brincadeira esse teorema de **"Lema de Cauchy-Frobenius"** ou **"O Lema que não é de Burnside"**. Independentemente da origem de seu nome, a magnitude do papel que este lema tem desempenhado na história da teoria dos grupos e combinatória é imensurável.
+Portanto, aqueles que tentam ser rigorosos sobre a história da matemática às vezes chamam de brincadeira esse teorema de **"Lema de [Cauchy](https://kenji.blog/pt/p/cauchy/)-Frobenius"** ou **"O Lema que não é de Burnside"**. Independentemente da origem de seu nome, a magnitude do papel que este lema tem desempenhado na história da teoria dos grupos e combinatória é imensurável.
 
 ## 11. Exemplo 2: Colorindo as Faces de um Cubo
 

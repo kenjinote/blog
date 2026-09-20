@@ -68,7 +68,7 @@ $$
 
 Pour un solide homéomorphe (topologiquement équivalent) à une sphère, la caractéristique d'Euler est toujours $\chi = 2$.
 
-Selon le théorème de Poincaré-Hopf, la somme des indices des singularités (points où le vecteur s'annule) d'un champ de vecteurs sur une variété est égale à la caractéristique d'Euler de cette variété.
+Selon le théorème de [Poincaré](https://kenji.blog/fr/p/poincare/)-Hopf, la somme des indices des singularités (points où le vecteur s'annule) d'un champ de vecteurs sur une variété est égale à la caractéristique d'Euler de cette variété.
 
 Exprimé sous forme de formule :
 $$
@@ -84,7 +84,7 @@ Ici se pose une question intéressante. Que se passerait-il si la forme n'était
 
 En fait, la caractéristique d'Euler d'un tore est $\chi(T^2) = 0$.
 
-Par conséquent, le côté droit du théorème de Poincaré-Hopf devient 0. Cela signifie qu'il est **possible** de créer un champ de vecteurs continu sans aucune singularité.
+Par conséquent, le côté droit du théorème de [Poincaré](https://kenji.blog/fr/p/poincare/)-Hopf devient 0. Cela signifie qu'il est **possible** de créer un champ de vecteurs continu sans aucune singularité.
 
 Intuitivement, s'il s'agissait d'une boule chevelue en forme de beignet, en peignant les poils dans une direction constante autour du trou du beignet, on pourrait les peigner parfaitement sans créer le moindre épi.
 

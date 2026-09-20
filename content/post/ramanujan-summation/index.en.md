@@ -130,15 +130,15 @@ Thus, the surprising equation **$1 + 2 + 3 + 4 + \dots = -\frac{1}{12}$** has be
 
 ---
 
-## 3. Analytic Continuation and the Riemann Zeta Function
+## 3. Analytic Continuation and the [Riemann](https://kenji.blog/en/p/riemann/) Zeta Function
 
 The algebraic operations like the above may at first glance seem like mere tricks or sophistry. Applying normal arithmetic operations unconditionally to a divergent series is not allowed in rigorous mathematics.
 
 However, this result is by no means meaningless. In modern mathematics, this can be supported using a rigorous concept called **Analytic Continuation**.
 
-### The Riemann Zeta Function
+### The [Riemann](https://kenji.blog/en/p/riemann/) Zeta Function
 
-To explain analytic continuation, we introduce the **Riemann zeta function** $\zeta(s)$. The zeta function is defined as follows:
+To explain analytic continuation, we introduce the **[Riemann](https://kenji.blog/en/p/riemann/) zeta function** $\zeta(s)$. The zeta function is defined as follows:
 
 $$
 \zeta(s) = 1^{-s} + 2^{-s} + 3^{-s} + 4^{-s} + \dots = \sum_{n=1}^{\infty} \frac{1}{n^s}
@@ -167,7 +167,7 @@ graph TD
     C --> D["ζ(-1) = -1/12"]
 ```
 
-Riemann proved that the zeta function can be uniquely extended to the entire complex plane (except for the pole at $s=1$). If we calculate the value at $s = -1$ in the extended zeta function, we beautifully find that it is **$-\frac{1}{12}$**.
+[Riemann](https://kenji.blog/en/p/riemann/) proved that the zeta function can be uniquely extended to the entire complex plane (except for the pole at $s=1$). If we calculate the value at $s = -1$ in the extended zeta function, we beautifully find that it is **$-\frac{1}{12}$**.
 
 In other words, the equation "$1+2+3+... = -1/12$" is justified not as a "sum in the usual sense", but as a "value in the sense of being analytically continued through the zeta function".
 

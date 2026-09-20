@@ -56,7 +56,7 @@ $$ E(\mathbb{Q}) \cong E(\mathbb{Q})_{\text{tors}} \oplus \mathbb{Z}^r $$
 
 Di sini, $E(\mathbb{Q})_{\text{tors}}$ adalah **subgrup torsi** (torsion subgroup) yang terdiri dari sejumlah titik terhingga, dan $r$ adalah bilangan bulat non-negatif yang disebut **rank** (peringkat).
 
-Teorema ini berarti bahwa untuk menemukan semua titik rasional yang jumlahnya tak terhingga dari sebuah kurva eliptik, cukup dengan menemukan sejumlah terhingga titik "basis". Ini adalah hasil yang monumental dalam geometri aritmatika. Pembuktian Mordell adalah penyempurnaan modern dari "Metode penurunan tak terhingga" (Method of infinite descent) Fermat.
+Teorema ini berarti bahwa untuk menemukan semua titik rasional yang jumlahnya tak terhingga dari sebuah kurva eliptik, cukup dengan menemukan sejumlah terhingga titik "basis". Ini adalah hasil yang monumental dalam geometri aritmatika. Pembuktian Mordell adalah penyempurnaan modern dari "Metode penurunan tak terhingga" (Method of infinite descent) [Fermat](https://kenji.blog/id/p/fermat/).
 
 Kemudian, pada tahun 1928, matematikawan Prancis [André Weil](https://kenji.blog/id/p/weil/) memperumum teorema ini pada lapangan bilangan umum dan varietas abelian, sehingga sekarang sering disebut **Teorema Mordell-Weil** (Mordell-Weil Theorem).
 
@@ -85,7 +85,7 @@ $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
 Konjektur ini tetap belum terpecahkan selama lebih dari 60 tahun. Namun, pada tahun 1983, akhirnya dibuktikan oleh matematikawan Jerman [Gerd Faltings](https://kenji.blog/id/p/faltings/), menjadi **Teorema Faltings**. Atas pencapaian ini, Faltings dianugerahi Medali Fields pada tahun 1986.
 
-Selain itu, persamaan untuk [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/), $x^n + y^n = z^n$, memiliki genus 3 atau lebih ketika $n \ge 4$. Oleh karena itu, dari Konjektur Mordell (Teorema Faltings), segera disimpulkan bahwa persamaan Fermat paling banyak memiliki solusi rasional yang terhingga untuk setiap $n$.
+Selain itu, persamaan untuk [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/), $x^n + y^n = z^n$, memiliki genus 3 atau lebih ketika $n \ge 4$. Oleh karena itu, dari Konjektur Mordell (Teorema Faltings), segera disimpulkan bahwa persamaan [Fermat](https://kenji.blog/id/p/fermat/) paling banyak memiliki solusi rasional yang terhingga untuk setiap $n$.
 
 ## 7. Keterlibatan dengan Ramanujan dan Bentuk Modular
 

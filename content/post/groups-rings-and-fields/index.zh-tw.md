@@ -39,7 +39,7 @@ tags: ["代數", "群論", "環論", "體論"]
 2. **單位元素的存在 (Identity Element)**：存在特殊元素 $e \in G$，使得對任意 $a \in G$，有 $a \cdot e = e \cdot a = a$。
 3. **反元素的存在 (Inverse Element)**：對任意 $a \in G$，存在元素 $a^{-1} \in G$，使得 $a \cdot a^{-1} = a^{-1} \cdot a = e$。
 
-如果滿足交換律 $a \cdot b = b \cdot a$，則稱為 **交換群** 或 **阿貝爾群 (Abelian Group)**。
+如果滿足交換律 $a \cdot b = b \cdot a$，則稱為 **交換群** 或 **阿貝爾群 ([Abel](https://kenji.blog/zh-tw/p/abel/)ian Group)**。
 
 ```mermaid
 graph LR

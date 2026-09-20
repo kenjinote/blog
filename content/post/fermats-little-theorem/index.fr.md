@@ -14,15 +14,15 @@ tags:
 
 Dans la société Internet moderne, nous devons notre capacité à communiquer en toute sécurité à la **cryptographie**. À la base même de cette cryptographie se trouve un magnifique théorème découvert par le mathématicien du XVIIe siècle [Pierre de Fermat](https://kenji.blog/fr/p/fermat/).
 
-Dans cet article, nous expliquerons **le petit théorème de Fermat**, une pierre angulaire cruciale de la théorie des nombres, d'une manière facile à comprendre, en couvrant sa signification, sa démonstration et la façon dont il est appliqué à la cryptographie RSA moderne.
+Dans cet article, nous expliquerons **le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)**, une pierre angulaire cruciale de la théorie des nombres, d'une manière facile à comprendre, en couvrant sa signification, sa démonstration et la façon dont il est appliqué à la cryptographie RSA moderne.
 
-## Qu'est-ce que le petit théorème de Fermat ?
+## Qu'est-ce que le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ?
 
-Le petit théorème de Fermat est un théorème extrêmement simple mais puissant qui démontre la relation entre les nombres premiers et les nombres entiers.
+Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est un théorème extrêmement simple mais puissant qui démontre la relation entre les nombres premiers et les nombres entiers.
 
 Le théorème énonce ce qui suit :
 
-> **Petit Théorème de Fermat**
+> **Petit Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)**
 > Soit $p$ un nombre premier, et $a$ un nombre entier quelconque non divisible par $p$ (c'est-à-dire que $a$ et $p$ sont premiers entre eux). Alors, la relation de congruence suivante est vraie :
 > 
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -52,7 +52,7 @@ De cette façon, peu importe le nombre premier $p$ que vous choisissez, cette lo
 
 ## Démonstration du théorème
 
-Il existe plusieurs approches pour démontrer le petit théorème de Fermat, mais nous introduisons ici une méthode de démonstration représentative basée sur la théorie des nombres.
+Il existe plusieurs approches pour démontrer le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/), mais nous introduisons ici une méthode de démonstration représentative basée sur la théorie des nombres.
 
 Soit $p$ un nombre premier et $a$ un entier non divisible par $p$.
 Considérez l'ensemble $S = \{1, 2, 3, \dots, p-1\}$. Soit $S'$ un nouvel ensemble créé en multipliant chaque élément de cet ensemble par $a$.
@@ -75,9 +75,9 @@ $$ 1 \equiv a^{p-1} \pmod p $$
 
 Ceci complète la démonstration.
 
-## Test de primalité de Fermat : Application à la détection de nombres premiers
+## Test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/) : Application à la détection de nombres premiers
 
-Ce théorème est appliqué dans un **algorithme de test de primalité** (le test de primalité de Fermat) pour déterminer si un nombre donné est premier.
+Ce théorème est appliqué dans un **algorithme de test de primalité** (le test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/)) pour déterminer si un nombre donné est premier.
 
 Si vous voulez savoir si un nombre énorme $n$ est premier, choisissez au hasard $a$ et vérifiez si $a^{n-1} \equiv 1 \pmod n$ est vrai. Si ce n'est pas le cas, alors $n$ n'est **absolument pas un nombre premier** (c'est un nombre composé).
 
@@ -94,9 +94,9 @@ Cependant, parce qu'il existe des nombres exceptionnels appelés **nombres de Ca
 
 ## Application à la cryptographie moderne : Cryptographie RSA
 
-L'application la plus importante du petit théorème de Fermat (et de sa généralisation, le **théorème d'Euler**) est la **cryptographie RSA**, qui sous-tend la sécurité d'Internet.
+L'application la plus importante du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) (et de sa généralisation, le **théorème d'Euler**) est la **cryptographie RSA**, qui sous-tend la sécurité d'Internet.
 
-La cryptographie RSA repose sur la difficulté de factoriser des nombres massifs pour sa sécurité. Dans son mécanisme, le principe du « petit théorème de Fermat » joue un rôle décisif dans les processus de génération de clés et de déchiffrement.
+La cryptographie RSA repose sur la difficulté de factoriser des nombres massifs pour sa sécurité. Dans son mécanisme, le principe du « petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) » joue un rôle décisif dans les processus de génération de clés et de déchiffrement.
 
 ```mermaid
 sequenceDiagram
@@ -112,10 +112,10 @@ sequenceDiagram
 ```
 
 Dans la cryptographie RSA, deux énormes nombres premiers, $p$ et $q$, sont préparés, et nous définissons $n = p \times q$.
-Par le théorème d'Euler, les clés ($e$ et $d$) sont conçues pour que $M^{ed} \equiv M \pmod n$ soit vrai dans les processus de chiffrement et de déchiffrement. Ici, le phénomène magique du texte clair $M$ reprenant sa forme d'origine repose essentiellement sur les propriétés mathématiques garanties par le petit théorème de Fermat.
+Par le théorème d'Euler, les clés ($e$ et $d$) sont conçues pour que $M^{ed} \equiv M \pmod n$ soit vrai dans les processus de chiffrement et de déchiffrement. Ici, le phénomène magique du texte clair $M$ reprenant sa forme d'origine repose essentiellement sur les propriétés mathématiques garanties par le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
 
 ## Conclusion
 
 Un petit théorème découvert par [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) au XVIIe siècle est devenu un élément indispensable soutenant le fondement de la sécurité de l'information dans la société moderne des centaines d'années plus tard.
 
-**Le petit théorème de Fermat** peut être considéré comme l'un des plus beaux exemples démontrant comment les mathématiques pures se connectent à la technologie pratique (cryptographie et algorithmes). On ne peut s'empêcher d'être étonné par la profondeur des mathématiques et l'étendue de leur applicabilité.
+**Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)** peut être considéré comme l'un des plus beaux exemples démontrant comment les mathématiques pures se connectent à la technologie pratique (cryptographie et algorithmes). On ne peut s'empêcher d'être étonné par la profondeur des mathématiques et l'étendue de leur applicabilité.

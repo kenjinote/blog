@@ -102,8 +102,8 @@ Eiffel은 객체 지향 프로그래밍 언어 중 하나
 ## Ada
 Ada는 객체 지향 프로그래밍 언어 중 하나
 
-## Pascal
-Pascal은 절차적 프로그래밍 언어 중 하나
+## [Pascal](https://kenji.blog/ko/p/pascal/)
+[Pascal](https://kenji.blog/ko/p/pascal/)은 절차적 프로그래밍 언어 중 하나
 
 ## COBOL
 예전부터 있었다. 범용 프로그래밍 언어이다.

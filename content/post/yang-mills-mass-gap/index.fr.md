@@ -15,7 +15,7 @@ tags:
 
 ## 1. Introduction : Que sont les problèmes du prix du millénaire ?
 
-En l'an 2000, l'Institut de mathématiques Clay a offert un million de dollars pour chacun des sept problèmes non résolus d'une importance capitale en mathématiques. Ce sont les **problèmes du prix du millénaire**. Parmi eux figurent des problèmes célèbres tels que l'« Hypothèse de Riemann » et le problème « P = NP », mais il y a aussi un problème profondément lié à la physique. Il s'agit des **« équations de Yang-Mills et du problème du saut de masse »** (Yang-Mills and Mass Gap).
+En l'an 2000, l'Institut de mathématiques Clay a offert un million de dollars pour chacun des sept problèmes non résolus d'une importance capitale en mathématiques. Ce sont les **problèmes du prix du millénaire**. Parmi eux figurent des problèmes célèbres tels que l'« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » et le problème « P = NP », mais il y a aussi un problème profondément lié à la physique. Il s'agit des **« équations de Yang-Mills et du problème du saut de masse »** (Yang-Mills and Mass Gap).
 
 Ce problème vise à établir les bases mathématiques du « modèle standard » de la physique des particules, qui décrit les forces fondamentales de la nature. Bien que le comportement de la matière et des forces qui composent notre monde ait été confirmé expérimentalement avec une très grande précision, le prouver mathématiquement de manière rigoureuse reste l'un des plus grands défis des mathématiques modernes.
 
@@ -92,7 +92,7 @@ Le domaine qui construit des théories quantiques des champs de manière mathém
 
 ### Les axiomes de Wightman
 
-Les **axiomes de Wightman** ou les **axiomes d'Osterwalder-Schrader** sont connus comme un cadre pour traiter mathématiquement rigoureusement les champs quantiques. Ceux-ci définissent comme axiomes les propriétés qu'un champ quantique doit satisfaire (covariance de Poincaré, commutativité locale, condition spectrale, etc.).
+Les **axiomes de Wightman** ou les **axiomes d'Osterwalder-Schrader** sont connus comme un cadre pour traiter mathématiquement rigoureusement les champs quantiques. Ceux-ci définissent comme axiomes les propriétés qu'un champ quantique doit satisfaire (covariance de [Poincaré](https://kenji.blog/fr/p/poincare/), commutativité locale, condition spectrale, etc.).
 
 Pour résoudre le problème du prix du millénaire, il est d'abord nécessaire de montrer que la théorie de Yang-Mills existe en tant qu'objet mathématique rigoureux satisfaisant à ces axiomes, puis de prouver qu'il existe un espace à la limite inférieure du spectre (valeur propre de l'énergie) (saut de masse).
 

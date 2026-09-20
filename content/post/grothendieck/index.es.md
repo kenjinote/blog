@@ -59,7 +59,7 @@ Después de alcanzar el pináculo del análisis funcional, sorprendentemente cam
 
 ### El artículo de Tohoku
 
-Su artículo "Sur quelques points d'algèbre homologique" (Sobre algunos puntos del álgebra homológica), publicado en la revista japonesa *Tohoku Mathematical Journal* en 1957, es un artículo histórico que fusionó la teoría de categorías y el álgebra homológica, estableciendo el concepto de una **Categoría Abeliana** . Esto hizo posible definir rigurosamente la cohomología de haces sobre cualquier espacio topológico.
+Su artículo "Sur quelques points d'algèbre homologique" (Sobre algunos puntos del álgebra homológica), publicado en la revista japonesa *Tohoku Mathematical Journal* en 1957, es un artículo histórico que fusionó la teoría de categorías y el álgebra homológica, estableciendo el concepto de una **Categoría [Abel](https://kenji.blog/es/p/abel/)iana** . Esto hizo posible definir rigurosamente la cohomología de haces sobre cualquier espacio topológico.
 
 ### La fundación del IHÉS y EGA/SGA
 
@@ -112,7 +112,7 @@ Grothendieck explicó su enfoque matemático utilizando la analogía de un "casc
 
 Entrando en la década de 1980, propuso nuevas teorías que abordaban los misterios más profundos de las matemáticas a partir de conceptos muy simples y visuales.
 
-Uno de estos fue los **"Dessins d'enfants" (Dibujos de niños)** . Descubrió que a partir de gráficos simples dibujados sobre superficies curvas como una esfera, se podía extraer la acción del grupo de Galois absoluto, un objeto sumamente misterioso y complejo en la teoría de números.
+Uno de estos fue los **"Dessins d'enfants" (Dibujos de niños)** . Descubrió que a partir de gráficos simples dibujados sobre superficies curvas como una esfera, se podía extraer la acción del grupo de [Galois](https://kenji.blog/es/p/galois/) absoluto, un objeto sumamente misterioso y complejo en la teoría de números.
 
 Además, propuso un programa llamado **"Geometría Anabeliana"** . Esta es la asombrosa conjetura de que para ciertas variedades algebraicas, los objetos geométricos y aritméticos originales pueden reconstruirse por completo únicamente a partir de los datos topológicos conocidos como grupo fundamental.
 

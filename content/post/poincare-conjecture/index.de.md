@@ -8,15 +8,15 @@ categories: ["mathematics", "science"]
 tags: ["Topologie", "Poincaré-Vermutung", "Grigori Perelman", "Mathematik"]
 ---
 
-In der Welt der Mathematik gibt es viele tiefe und schöne Rätsel, die die menschliche Intuition auf die Probe stellen. Darunter ist das berühmteste mit dem dramatischsten Ende die **Poincaré-Vermutung** ([Poincaré Conjecture](https://kenji.blog/de/p/poincare-conjecture/)).
+In der Welt der Mathematik gibt es viele tiefe und schöne Rätsel, die die menschliche Intuition auf die Probe stellen. Darunter ist das berühmteste mit dem dramatischsten Ende die **[Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung** ([Poincaré Conjecture](https://kenji.blog/de/p/poincare-conjecture/)).
 
 Diese Vermutung, die 1904 von dem brillanten französischen Mathematiker [Henri Poincaré](https://kenji.blog/de/p/poincare/) aufgestellt wurde, war ein grundlegendes Problem der Topologie (Analysis Situs), das direkt mit dem großen Thema der Form des Universums verbunden war. Etwa 100 Jahre lang versuchten viele berühmte Mathematiker, dieses extrem schwierige Problem zu lösen, und scheiterten. Von 2002 bis 2003 wurde es dann plötzlich von dem einsamen russischen Mathematiker Grigori Perelman bewiesen, was die ganze Welt überraschte.
 
-In diesem Artikel werden wir tief eintauchen, beginnend mit der Bedeutung der Poincaré-Vermutung über die grundlegenden Konzepte der Topologie bis hin zum Hintergrund von Perelmans Beweis, und dabei mathematische Formeln und Diagramme verwenden.
+In diesem Artikel werden wir tief eintauchen, beginnend mit der Bedeutung der [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung über die grundlegenden Konzepte der Topologie bis hin zum Hintergrund von Perelmans Beweis, und dabei mathematische Formeln und Diagramme verwenden.
 
 ## 1. Was ist Topologie?
 
-Um die Poincaré-Vermutung zu verstehen, müssen wir zunächst das mathematische Gebiet der **Topologie** kennenlernen. Topologie wird auch als "weiche Geometrie" bezeichnet.
+Um die [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung zu verstehen, müssen wir zunächst das mathematische Gebiet der **Topologie** kennenlernen. Topologie wird auch als "weiche Geometrie" bezeichnet.
 
 In der gewöhnlichen Geometrie (euklidischen Geometrie) sind Eigenschaften wie Länge, Winkel und Fläche wichtig, aber in der Topologie werden diese ignoriert. Es werden nur die Eigenschaften (topologische Eigenschaften) untersucht, die erhalten bleiben, auch wenn das Objekt kontinuierlichen Verformungen wie "Dehnen", "Biegen" oder "Schrumpfen" unterzogen wird. Operationen wie "Schneiden", "Kleben" oder "Löcher machen" sind jedoch nicht erlaubt.
 
@@ -34,11 +34,11 @@ Eine Kaffeetasse hat ein "Loch", nämlich den Henkel. Ein Donut hat ebenfalls ei
 
 Andererseits hat eine Kugel (die Oberfläche eines Balls) keine Löcher. Daher kann eine Kugel, egal wie man sie kontinuierlich verformt, nicht in die Form eines Donuts gebracht werden. Diese "Anwesenheit oder Abwesenheit von Löchern" ist der entscheidende Unterschied in der Topologie.
 
-## 2. Einfach zusammenhängender Raum und die Aussage der Poincaré-Vermutung
+## 2. Einfach zusammenhängender Raum und die Aussage der [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung
 
 [Die Poincaré-Vermutung](https://kenji.blog/de/p/poincare-conjecture/) ist ein Versuch, eine "Sphäre" aus dieser topologischen Perspektive zu charakterisieren.
 
-Die "Kugeloberfläche", die wir im Alltag sehen, wird als 2-dimensionale Sphäre ( $S^2$ ) bezeichnet. Poincaré dachte, dass, wenn eine Form ein geschlossener Raum "ohne Löcher" ist, sie homöomorph (topologisch gleich) zu einer Sphäre sein könnte.
+Die "Kugeloberfläche", die wir im Alltag sehen, wird als 2-dimensionale Sphäre ( $S^2$ ) bezeichnet. [Poincaré](https://kenji.blog/de/p/poincare/) dachte, dass, wenn eine Form ein geschlossener Raum "ohne Löcher" ist, sie homöomorph (topologisch gleich) zu einer Sphäre sein könnte.
 
 Das hierbei wichtige Konzept ist **einfach zusammenhängend** (simply connected).
 
@@ -47,28 +47,28 @@ Wenn eine beliebige geschlossene Kurve (Schleife) im Raum auf einen einzigen Pun
 - **Sphäre ( $S^2$ )**: Jede auf der Oberfläche gezeichnete Schleife kann auf einen Punkt zusammengezogen werden, indem man sie über die Oberfläche gleiten lässt. Das heißt, sie ist einfach zusammenhängend.
 - **Torus (Oberfläche eines Donuts)**: Eine Schleife, die so gezeichnet ist, dass sie durch das Loch verläuft, bleibt am Loch hängen und kann nicht auf einen Punkt zusammengezogen werden. Das heißt, er ist nicht einfach zusammenhängend.
 
-Poincaré fragte, ob diese Eigenschaft, die für eine 2-dimensionale Sphäre gilt, auch für eine 3-dimensionale Sphäre ( $S^3$ ) zutrifft.
+[Poincaré](https://kenji.blog/de/p/poincare/) fragte, ob diese Eigenschaft, die für eine 2-dimensionale Sphäre gilt, auch für eine 3-dimensionale Sphäre ( $S^3$ ) zutrifft.
 
-> **Poincaré-Vermutung**
+> **[Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung**
 > Jede einfach zusammenhängende geschlossene 3-dimensionale Mannigfaltigkeit ist homöomorph zur 3-dimensionalen Sphäre $S^3$.
 
 Intuitiv gesprochen lautet die Frage: "Angenommen, du gehst mit einem langen Seil in den Weltraum, fliegst einmal irgendwie herum und kommst zurück. Wenn du beide Enden des Seils ziehst und das Seil immer vollständig einholen kannst, kann man dann sagen, dass das Universum rund (eine 3-dimensionale Sphäre) ist?"
 
 ## 3. Erweiterung auf höhere Dimensionen und die Kämpfe der Mathematiker
 
-Interessanterweise wurde die Poincaré-Vermutung für höhere Dimensionen als die 3-dimensionale (die Dimension des Raumes, in dem wir leben) früher gelöst.
+Interessanterweise wurde die [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung für höhere Dimensionen als die 3-dimensionale (die Dimension des Raumes, in dem wir leben) früher gelöst.
 
 $$
 \text{Für Mannigfaltigkeiten der Dimension } n \ge 5
 $$
 
-In den 1960er Jahren bewiesen Stephen Smale und andere die höherdimensionale Poincaré-Vermutung für $n \ge 5$. In höheren Dimensionen ist der "Freiheitsgrad" bei der Verformung von Formen groß, sodass es genügend Platz gibt, um Verwicklungen zu entwirren, was den Beweis relativ einfach machte.
+In den 1960er Jahren bewiesen Stephen Smale und andere die höherdimensionale [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung für $n \ge 5$. In höheren Dimensionen ist der "Freiheitsgrad" bei der Verformung von Formen groß, sodass es genügend Platz gibt, um Verwicklungen zu entwirren, was den Beweis relativ einfach machte.
 
 $$
 \text{Für Mannigfaltigkeiten der Dimension } n = 4
 $$
 
-1982 bewies Michael Freedman die 4-dimensionale Poincaré-Vermutung mit sehr komplexen Methoden und erhielt dafür die Fields-Medaille.
+1982 bewies Michael Freedman die 4-dimensionale [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung mit sehr komplexen Methoden und erhielt dafür die Fields-Medaille.
 
 Aber nur der ursprüngliche Fall $n = 3$ (3 Dimensionen) konnte einfach nicht gelöst werden. Der 3-dimensionale Raum war die problematischste Dimension, ohne ausreichend "Spielraum", um Verwicklungen zu entwirren, und doch nicht so einfach wie die niedrigeren Dimensionen.
 
@@ -88,7 +88,7 @@ graph LR
     C --> G["5 weitere Geometrien"]
 ```
 
-Wenn Thurstons Geometrisierungsvermutung richtig wäre, würde daraus folgen, dass eine einfach zusammenhängende Mannigfaltigkeit automatisch nur Komponenten der "sphärischen Geometrie" haben kann, was folglich auch die Poincaré-Vermutung beweisen würde. Mit anderen Worten, es stellte sich heraus, dass die Poincaré-Vermutung nur ein Puzzleteil in der weitaus größeren Geometrisierungsvermutung war.
+Wenn Thurstons Geometrisierungsvermutung richtig wäre, würde daraus folgen, dass eine einfach zusammenhängende Mannigfaltigkeit automatisch nur Komponenten der "sphärischen Geometrie" haben kann, was folglich auch die [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung beweisen würde. Mit anderen Worten, es stellte sich heraus, dass die [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung nur ein Puzzleteil in der weitaus größeren Geometrisierungsvermutung war.
 
 Die Geometrisierungsvermutung selbst war jedoch ein unfassbar schwieriges Problem.
 
@@ -112,7 +112,7 @@ Perelman klassifizierte alle Singularitäten, die im Ricci-Fluss auftreten, voll
 
 ## 6. Der legendäre Beweis und sein Ende
 
-Zwischen 2002 und 2003 veröffentlichte Perelman plötzlich drei Artikel auf einem Preprint-Server (arXiv). Sie enthielten einen vollständigen Beweis von Thurstons Geometrisierungsvermutung und damit auch der Poincaré-Vermutung.
+Zwischen 2002 und 2003 veröffentlichte Perelman plötzlich drei Artikel auf einem Preprint-Server (arXiv). Sie enthielten einen vollständigen Beweis von Thurstons Geometrisierungsvermutung und damit auch der [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung.
 
 Seine Artikel waren so schwierig und zu knapp, dass sich Top-Mathematiker aus der ganzen Welt in Teams zusammenschlossen und Jahre damit verbrachten, sie zu überprüfen. Infolgedessen wurde bestätigt, dass Perelmans Beweis keinerlei Fehler aufwies und perfekt war.
 
@@ -121,8 +121,8 @@ Er lehnte die Fields-Medaille ab und weigerte sich zudem, das Preisgeld von 1 Mi
 
 ## 7. Fazit: Die Zukunft, die die Topologie eröffnet
 
-Die Lösung der Poincaré-Vermutung bedeutete nicht nur das Ende eines 100 Jahre alten schwierigen Problems. Die Einführung der leistungsstarken analytischen Methode des Ricci-Flusses in die Geometrie hat der Welt der Mathematik neue Horizonte eröffnet.
+Die Lösung der [Poincaré](https://kenji.blog/de/p/poincare/)-Vermutung bedeutete nicht nur das Ende eines 100 Jahre alten schwierigen Problems. Die Einführung der leistungsstarken analytischen Methode des Ricci-Flusses in die Geometrie hat der Welt der Mathematik neue Horizonte eröffnet.
 
 Darüber hinaus haben mathematische Versuche, die Form des Universums zu verstehen, weiterhin einen tiefgreifenden Einfluss auf die moderne Physik, insbesondere auf unser Verständnis von Dimensionen in der Stringtheorie und der Kosmologie.
 
-Der von Poincaré begonnene und an Thurston, Hamilton und Perelman weitergegebene Staffelstab des Wissens ist vielleicht das größte Monument, das beweist, wie tief der menschliche Geist an die wunderschönen Wahrheiten des Universums herankommen kann.
+Der von [Poincaré](https://kenji.blog/de/p/poincare/) begonnene und an Thurston, Hamilton und Perelman weitergegebene Staffelstab des Wissens ist vielleicht das größte Monument, das beweist, wie tief der menschliche Geist an die wunderschönen Wahrheiten des Universums herankommen kann.

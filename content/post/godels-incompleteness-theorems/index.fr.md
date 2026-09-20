@@ -17,17 +17,17 @@ Dans cet article, nous allons expliquer de manière approfondie et claire la sig
 
 ---
 
-## 1. Contexte : Le programme de Hilbert et la crise des fondements des mathématiques
+## 1. Contexte : Le programme de [Hilbert](https://kenji.blog/fr/p/hilbert/) et la crise des fondements des mathématiques
 
 De la fin du 19ème siècle au début du 20ème siècle, le monde des mathématiques était confronté aux « paradoxes de la théorie des ensembles (comme le paradoxe de Russell) » ; les fondations de la discipline en étaient ébranlées. C'est [David Hilbert](https://kenji.blog/fr/p/hilbert/), l'autorité suprême des mathématiques à l'époque, qui s'est levé pour sauver les mathématiques de cette crise.
 
-Hilbert a tenté de symboliser intégralement tous les raisonnements mathématiques, dans l'espoir de reconstruire les mathématiques en n'utilisant que des règles mécaniques. L'objectif de son « Programme de Hilbert » était de prouver que, dans un système formel mathématique, les trois propriétés suivantes étaient réunies :
+[Hilbert](https://kenji.blog/fr/p/hilbert/) a tenté de symboliser intégralement tous les raisonnements mathématiques, dans l'espoir de reconstruire les mathématiques en n'utilisant que des règles mécaniques. L'objectif de son « Programme de [Hilbert](https://kenji.blog/fr/p/hilbert/) » était de prouver que, dans un système formel mathématique, les trois propriétés suivantes étaient réunies :
 
 1. **La cohérence** (Consistency) : Le fait qu'il n'existe aucune contradiction au sein du système (c'est-à-dire qu'une proposition $P$ et sa négation $\neg P$ ne puissent pas être prouvées toutes les deux).
 2. **La complétude** (Completeness) : Le fait que toute proposition mathématique puisse toujours être prouvée au sein de ce système, soit comme vraie, soit comme fausse.
 3. **La décidabilité** (Decidability) : Le fait qu'il existe une procédure mécanique permettant de déterminer, pour toute proposition donnée, si elle est prouvable ou non.
 
-Hilbert, à qui l'on doit la célèbre phrase « Nous devons savoir. Nous saurons. (Wir müssen wissen. Wir werden wissen.) », croyait fermement que les mathématiques deviendraient un château de logique parfait, capable de tout résoudre.
+[Hilbert](https://kenji.blog/fr/p/hilbert/), à qui l'on doit la célèbre phrase « Nous devons savoir. Nous saurons. (Wir müssen wissen. Wir werden wissen.) », croyait fermement que les mathématiques deviendraient un château de logique parfait, capable de tout résoudre.
 
 ```mermaid
 graph TD
@@ -47,11 +47,11 @@ Les théorèmes de Gödel s'appliquent à des systèmes qui incluent « l'additi
 
 Par exemple, le fait que tout le monde connaît, « $1 + 1 = 2$ », n'est, à l'intérieur du système formel de l'arithmétique de Peano, qu'un seul « théorème » dérivé mécaniquement par la manipulation de symboles.
 
-Hilbert pensait qu'en agrandissant ce type de système formel, on finirait un jour par pouvoir couvrir toutes les vérités mathématiques possibles.
+[Hilbert](https://kenji.blog/fr/p/hilbert/) pensait qu'en agrandissant ce type de système formel, on finirait un jour par pouvoir couvrir toutes les vérités mathématiques possibles.
 
 ## 3. Le choc du premier théorème d'incomplétude : une proposition « Vraie mais indémontrable »
 
-Cependant, en 1931, [Kurt Gödel](https://kenji.blog/fr/p/godel/), alors âgé de 25 ans seulement, publia un article qui pulvérisa les rêves de Hilbert. Il s'agissait du **premier théorème d'incomplétude**.
+Cependant, en 1931, [Kurt Gödel](https://kenji.blog/fr/p/godel/), alors âgé de 25 ans seulement, publia un article qui pulvérisa les rêves de [Hilbert](https://kenji.blog/fr/p/hilbert/). Il s'agissait du **premier théorème d'incomplétude**.
 
 > **Premier théorème d'incomplétude**
 > Dans tout système formel cohérent (non contradictoire) contenant l'arithmétique de Peano, il existera toujours une proposition qui est vraie, mais qui ne peut être prouvée à l'intérieur de ce système.
@@ -114,7 +114,7 @@ Le premier théorème d'incomplétude suffisait à secouer la communauté mathé
 > **Deuxième théorème d'incomplétude**
 > Aucun système formel cohérent contenant l'arithmétique de Peano ne peut prouver sa propre cohérence à l'intérieur de ce même système.
 
-Hilbert essayait de prouver que les mathématiques n'avaient aucune contradiction en se servant de la force des mathématiques elles-mêmes (le défi principal du programme de Hilbert). Or, le deuxième théorème d'incomplétude déclare brutalement : « Aucun système ne peut utiliser sa propre force pour prouver qu'il n'est pas fou (qu'il ne se contredit pas). »
+[Hilbert](https://kenji.blog/fr/p/hilbert/) essayait de prouver que les mathématiques n'avaient aucune contradiction en se servant de la force des mathématiques elles-mêmes (le défi principal du programme de [Hilbert](https://kenji.blog/fr/p/hilbert/)). Or, le deuxième théorème d'incomplétude déclare brutalement : « Aucun système ne peut utiliser sa propre force pour prouver qu'il n'est pas fou (qu'il ne se contredit pas). »
 
 Pour comprendre cela intuitivement, imaginons la situation suivante.
 Si quelqu'un dit : « Je ne dis absolument jamais de mensonge ! ». Nous ne pouvons cependant pas nous fier à ses seules paroles pour prouver qu'il n'est pas un menteur. En effet, si cette personne est un menteur, alors sa déclaration « Je ne dis absolument jamais de mensonge » pourrait elle-même être un mensonge.

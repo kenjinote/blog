@@ -29,19 +29,19 @@ Namun, membuktikan klaim sederhana ini adalah perjalanan yang sangat sulit bagi 
 
 [Pierre de Fermat](https://kenji.blog/id/p/fermat/) bukanlah matematikawan profesional. Ia menikmati matematika di waktu luangnya sambil bekerja sebagai hakim di pengadilan tinggi Toulouse. Namun, intuisi dan bakat matematikanya berada pada level tertinggi pada saat itu, dan ia dianggap telah meletakkan dasar bagi teori bilangan modern.
 
-Fermat memiliki kebiasaan menuliskan ide dan teorema yang ia pikirkan saat membaca di margin buku. Di antara catatan yang ia tinggalkan, "Teorema Terakhir" ini adalah yang dibiarkan tak terbuktikan hingga akhir. Fermat meninggalkan ungkapan terkenal berikut di margin:
+[Fermat](https://kenji.blog/id/p/fermat/) memiliki kebiasaan menuliskan ide dan teorema yang ia pikirkan saat membaca di margin buku. Di antara catatan yang ia tinggalkan, "Teorema Terakhir" ini adalah yang dibiarkan tak terbuktikan hingga akhir. [Fermat](https://kenji.blog/id/p/fermat/) meninggalkan ungkapan terkenal berikut di margin:
 
 > "Saya memiliki bukti yang benar-benar menakjubkan untuk proposisi ini, tetapi marginnya terlalu sempit untuk menuliskannya di sini"
 
-Kata-kata ini menjadi surat tantangan bagi para matematikawan di generasi berikutnya. Apakah dia benar-benar memiliki buktinya? Sebagian besar matematikawan modern percaya bahwa pasti ada kesalahan dalam bukti yang dimiliki Fermat. Alasannya adalah bahwa bukti akhir memerlukan teori matematika modern tingkat lanjut yang belum ada pada masa Fermat.
+Kata-kata ini menjadi surat tantangan bagi para matematikawan di generasi berikutnya. Apakah dia benar-benar memiliki buktinya? Sebagian besar matematikawan modern percaya bahwa pasti ada kesalahan dalam bukti yang dimiliki [Fermat](https://kenji.blog/id/p/fermat/). Alasannya adalah bahwa bukti akhir memerlukan teori matematika modern tingkat lanjut yang belum ada pada masa [Fermat](https://kenji.blog/id/p/fermat/).
 
 ## 3. Tantangan dan Kegagalan Para Jenius
 
-Setelah kematian Fermat, teorema-teorema lain yang ia tinggalkan dibuktikan satu per satu, tetapi Teorema Terakhir ini berdiri sebagai tembok penghalang. Banyak matematikawan mencoba membuktikannya untuk $n$ tertentu.
+Setelah kematian [Fermat](https://kenji.blog/id/p/fermat/), teorema-teorema lain yang ia tinggalkan dibuktikan satu per satu, tetapi Teorema Terakhir ini berdiri sebagai tembok penghalang. Banyak matematikawan mencoba membuktikannya untuk $n$ tertentu.
 
-- **[Leonhard Euler](https://kenji.blog/id/p/euler/)**: Matematikawan terbesar abad ke-18, Euler, berhasil membuktikan kasus $n = 3$ dan $n = 4$ (dikatakan bahwa Fermat sendiri yang membuktikan $n = 4$).
+- **[Leonhard Euler](https://kenji.blog/id/p/euler/)**: Matematikawan terbesar abad ke-18, Euler, berhasil membuktikan kasus $n = 3$ dan $n = 4$ (dikatakan bahwa [Fermat](https://kenji.blog/id/p/fermat/) sendiri yang membuktikan $n = 4$).
 - **Sophie Germain**: Pada awal abad ke-19, matematikawan wanita Sophie Germain menunjukkan bahwa teorema tersebut berlaku untuk bilangan prima yang memenuhi kondisi tertentu (sekarang disebut "Bilangan Prima Sophie Germain"). Ini adalah langkah besar menuju bukti umum.
-- **[Ernst Kummer](https://kenji.blog/id/p/kummer/)**: Pada pertengahan abad ke-19, Kummer memperkenalkan konsep "bilangan ideal" dan membuktikan teorema untuk banyak bilangan prima yang disebut bilangan prima reguler.
+- **[Ernst Kummer](https://kenji.blog/id/p/kummer/)**: Pada pertengahan abad ke-19, [Kummer](https://kenji.blog/id/p/kummer/) memperkenalkan konsep "bilangan ideal" dan membuktikan teorema untuk banyak bilangan prima yang disebut bilangan prima reguler.
 
 Namun, tujuan untuk membuktikan semua bilangan asli $n$ yang tak terhingga masih jauh dari jangkauan.
 

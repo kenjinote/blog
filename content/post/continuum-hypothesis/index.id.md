@@ -39,7 +39,7 @@ berlaku. CH adalah klaim bahwa tidak ada kardinalitas lain di antara keduanya.
 
 Cantor menghabiskan seluruh hidupnya mencoba membuktikan hipotesis ini, namun tidak pernah berhasil. Kadang-kadang ia berpikir telah "membuktikannya", dan di lain waktu berpikir telah "membantahnya". Kondisi mentalnya sangat terkuras oleh masalah yang sulit ini.
 
-Pada tahun 1900, di Kongres Matematikawan Internasional ke-2 yang diadakan di Paris, [David Hilbert](https://kenji.blog/id/p/hilbert/) mengajukan "23 Masalah Hilbert" yang harus diselesaikan oleh matematika abad ke-20. **Masalah pertama** yang monumental tersebut tak lain adalah "Pembuktian Hipotesis Kontinum".
+Pada tahun 1900, di Kongres Matematikawan Internasional ke-2 yang diadakan di Paris, [David Hilbert](https://kenji.blog/id/p/hilbert/) mengajukan "23 Masalah [Hilbert](https://kenji.blog/id/p/hilbert/)" yang harus diselesaikan oleh matematika abad ke-20. **Masalah pertama** yang monumental tersebut tak lain adalah "Pembuktian Hipotesis Kontinum".
 
 ## 4. Aksiomatisasi Teori Himpunan: Sistem Aksioma ZFC
 

@@ -18,35 +18,35 @@ Penemuannya berfungsi sebagai jembatan yang menghubungkan perspektif "lokal" dan
 
 [Kurt Hensel](https://kenji.blog/id/p/hensel/) lahir pada tanggal 29 Desember 1861, di Königsberg, Prusia Timur (sekarang Kaliningrad, Rusia). Keluarganya memegang tempat yang sangat penting dalam sejarah intelektual dan artistik Jerman.
 
-Kakeknya adalah pelukis terkenal **Wilhelm Hensel**, dan neneknya adalah pianis dan komposer luar biasa **Fanny Mendelssohn** (saudara perempuan dari komposer terkenal Felix Mendelssohn). Lebih jauh ke belakang, kakek buyutnya adalah filsuf perwakilan Pencerahan, **Moses Mendelssohn**. Dapat dikatakan bahwa lingkungan keluarga yang kaya secara budaya dan intelektual ini mendorong pemikiran [Kurt Hensel](https://kenji.blog/id/p/hensel/) yang bebas dan kreatif.
+Kakeknya adalah pelukis terkenal **Wilhelm [Hensel](https://kenji.blog/id/p/hensel/)**, dan neneknya adalah pianis dan komposer luar biasa **Fanny Mendelssohn** (saudara perempuan dari komposer terkenal Felix Mendelssohn). Lebih jauh ke belakang, kakek buyutnya adalah filsuf perwakilan Pencerahan, **Moses Mendelssohn**. Dapat dikatakan bahwa lingkungan keluarga yang kaya secara budaya dan intelektual ini mendorong pemikiran [Kurt Hensel](https://kenji.blog/id/p/hensel/) yang bebas dan kreatif.
 
 Ketika dia masih muda, keluarganya pindah ke Berlin, di mana dia menerima pendidikan dasar dan menengah yang berkualitas tinggi. Bakatnya di bidang matematika berkembang lebih awal, secara alami membawanya ke jalur penelitian matematika di tingkat universitas.
 
-## 3. Hari-hari Universitas dan Pengaruh Kronecker
+## 3. Hari-hari Universitas dan Pengaruh [Kronecker](https://kenji.blog/id/p/kronecker/)
 
-Hensel belajar matematika di Universitas Bonn dan Berlin. Pada saat itu, Universitas Berlin adalah salah satu pusat penelitian matematika dunia, dengan tokoh-tokoh raksasa seperti **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold Kronecker** mengajar di sana.
+[Hensel](https://kenji.blog/id/p/hensel/) belajar matematika di Universitas Bonn dan Berlin. Pada saat itu, Universitas Berlin adalah salah satu pusat penelitian matematika dunia, dengan tokoh-tokoh raksasa seperti **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold [Kronecker](https://kenji.blog/id/p/kronecker/)** mengajar di sana.
 
-Di antara mereka, Kronecker memiliki pengaruh terdalam pada Hensel. Seperti yang diketahui dari kutipannya yang terkenal, "Tuhan menciptakan bilangan bulat, semua yang lain adalah karya manusia," Kronecker memegang keyakinan kuat bahwa semua matematika harus direkonstruksi secara ketat berdasarkan bilangan bulat. Di bawah bimbingan Kronecker, Hensel mengabdikan dirinya secara mendalam pada aljabar dan teori bilangan.
+Di antara mereka, [Kronecker](https://kenji.blog/id/p/kronecker/) memiliki pengaruh terdalam pada [Hensel](https://kenji.blog/id/p/hensel/). Seperti yang diketahui dari kutipannya yang terkenal, "Tuhan menciptakan bilangan bulat, semua yang lain adalah karya manusia," [Kronecker](https://kenji.blog/id/p/kronecker/) memegang keyakinan kuat bahwa semua matematika harus direkonstruksi secara ketat berdasarkan bilangan bulat. Di bawah bimbingan [Kronecker](https://kenji.blog/id/p/kronecker/), [Hensel](https://kenji.blog/id/p/hensel/) mengabdikan dirinya secara mendalam pada aljabar dan teori bilangan.
 
-Pada tahun 1884, Hensel memperoleh gelar doktor dari Universitas Berlin. Tema disertasi doktoralnya adalah tentang sifat aritmetika fungsi aljabar, yang akan berfungsi sebagai bayangan penting untuk penemuan **bilangan p-adik**-nya di kemudian hari.
+Pada tahun 1884, [Hensel](https://kenji.blog/id/p/hensel/) memperoleh gelar doktor dari Universitas Berlin. Tema disertasi doktoralnya adalah tentang sifat aritmetika fungsi aljabar, yang akan berfungsi sebagai bayangan penting untuk penemuan **bilangan p-adik**-nya di kemudian hari.
 
 ## 4. Analogi Antara Fungsi dan Bilangan
 
-Inspirasi terbesar Hensel datang dari analogi mendalam antara "bilangan" (bilangan bulat aljabar) dan "fungsi" (fungsi aljabar).
+Inspirasi terbesar [Hensel](https://kenji.blog/id/p/hensel/) datang dari analogi mendalam antara "bilangan" (bilangan bulat aljabar) dan "fungsi" (fungsi aljabar).
 
 Pada akhir abad ke-19, **Richard Dedekind** dan **Heinrich Weber** telah menunjukkan bahwa ada kesamaan struktural yang menakjubkan antara lapangan bilangan aljabar dan lapangan fungsi aljabar. Suatu fungsi pada bidang kompleks dapat direpresentasikan secara lokal di sekitar setiap titik sebagai deret pangkat, seperti ekspansi Taylor atau Laurent.
 
-Hensel bertanya pada dirinya sendiri: "Jika suatu fungsi dapat dipelajari secara lokal sebagai deret pangkat di sekitar setiap titik, tidak bisakah bilangan rasional dan bilangan bulat aljabar juga direpresentasikan sebagai deret pangkat di sekitar semacam 'titik'?"
+[Hensel](https://kenji.blog/id/p/hensel/) bertanya pada dirinya sendiri: "Jika suatu fungsi dapat dipelajari secara lokal sebagai deret pangkat di sekitar setiap titik, tidak bisakah bilangan rasional dan bilangan bulat aljabar juga direpresentasikan sebagai deret pangkat di sekitar semacam 'titik'?"
 
-Ekuivalen dari sebuah "titik" dalam angka adalah sebuah **bilangan prima $p$**. Hensel tiba pada ide inovatif untuk mengekspresikan sembarang bilangan rasional sebagai deret dengan bilangan prima $p$ sebagai basisnya.
+Ekuivalen dari sebuah "titik" dalam angka adalah sebuah **bilangan prima $p$**. [Hensel](https://kenji.blog/id/p/hensel/) tiba pada ide inovatif untuk mengekspresikan sembarang bilangan rasional sebagai deret dengan bilangan prima $p$ sebagai basisnya.
 
 ## 5. Penemuan Bilangan p-adik dan Fondasi Matematis
 
-Pada tahun 1897, Hensel menerbitkan sebuah makalah terobosan yang memperkenalkan konsep **bilangan p-adik** kepada dunia untuk pertama kalinya.
+Pada tahun 1897, [Hensel](https://kenji.blog/id/p/hensel/) menerbitkan sebuah makalah terobosan yang memperkenalkan konsep **bilangan p-adik** kepada dunia untuk pertama kalinya.
 
 ### 5.1 Valuasi p-adik dan Nilai Mutlak
 
-Biasanya, kelengkapan lapangan bilangan rasional $\mathbb{Q}$ menghasilkan lapangan bilangan real $\mathbb{R}$. Ini adalah kelengkapan sebagai ruang metrik berdasarkan "nilai mutlak" yang kita gunakan sehari-hari. Namun, Hensel memperkenalkan cara yang sama sekali berbeda untuk mengukur jarak yang difokuskan pada bilangan prima $p$.
+Biasanya, kelengkapan lapangan bilangan rasional $\mathbb{Q}$ menghasilkan lapangan bilangan real $\mathbb{R}$. Ini adalah kelengkapan sebagai ruang metrik berdasarkan "nilai mutlak" yang kita gunakan sehari-hari. Namun, [Hensel](https://kenji.blog/id/p/hensel/) memperkenalkan cara yang sama sekali berbeda untuk mengukur jarak yang difokuskan pada bilangan prima $p$.
 
 Setiap bilangan rasional tidak nol $x$ dapat didekomposisi secara unik menggunakan bilangan prima $p$ yang diberikan sebagai berikut:
 
@@ -68,7 +68,7 @@ $$
 
 ### 5.2 Kelengkapan dari Bilangan Rasional ke p-adik
 
-Menggunakan jarak $d(x, y) = |x - y|_p$ yang didefinisikan oleh nilai mutlak p-adik ini, sistem bilangan baru yang diperoleh dengan menerapkan kelengkapan barisan Cauchy ke lapangan bilangan rasional $\mathbb{Q}$ adalah **lapangan bilangan p-adik** $\mathbb{Q}_p$.
+Menggunakan jarak $d(x, y) = |x - y|_p$ yang didefinisikan oleh nilai mutlak p-adik ini, sistem bilangan baru yang diperoleh dengan menerapkan kelengkapan barisan [Cauchy](https://kenji.blog/id/p/cauchy/) ke lapangan bilangan rasional $\mathbb{Q}$ adalah **lapangan bilangan p-adik** $\mathbb{Q}_p$.
 
 Diagram di bawah ini mengilustrasikan bagaimana sistem bilangan bercabang dan meluas.
 
@@ -115,9 +115,9 @@ $$
 $$
 Jumlah tak terhingga ini menyimpang dalam arti biasa, tetapi dalam dunia nilai mutlak p-adik, suku-sukunya menjadi lebih kecil seiring perkembangannya, yang berarti ia konvergen secara sempurna tanpa kontradiksi.
 
-## 6. Lemma Hensel
+## 6. Lemma [Hensel](https://kenji.blog/id/p/hensel/)
 
-Salah satu alat paling kuat yang disajikan oleh Hensel adalah **Lemma Hensel**. Ini adalah teorema yang memberikan kondisi bagi persamaan polinomial untuk memiliki akar dalam lapangan bilangan p-adik, dan ini dapat digambarkan sebagai versi p-adik dari "metode Newton" dalam analisis real.
+Salah satu alat paling kuat yang disajikan oleh [Hensel](https://kenji.blog/id/p/hensel/) adalah **Lemma [Hensel](https://kenji.blog/id/p/hensel/)**. Ini adalah teorema yang memberikan kondisi bagi persamaan polinomial untuk memiliki akar dalam lapangan bilangan p-adik, dan ini dapat digambarkan sebagai versi p-adik dari "metode Newton" dalam analisis real.
 
 Pernyataan teorema ini adalah sebagai berikut.
 Misalkan kita memiliki polinomial $f(x)$ dengan koefisien bilangan bulat dan bilangan prima $p$. Jika ada bilangan bulat $a$ yang merupakan akar perkiraan modulo $p$, dan turunannya bukan $0$, yaitu,
@@ -136,15 +136,15 @@ Lemma ini memungkinkan untuk menemukan solusi eksak sebagai bilangan p-adik deng
 
 ## 7. Teorema Ostrowski dan Prinsip Lokal-Global
 
-Konsep Hensel lebih lanjut disempurnakan oleh matematikawan lain.
+Konsep [Hensel](https://kenji.blog/id/p/hensel/) lebih lanjut disempurnakan oleh matematikawan lain.
 
 Pada tahun 1916, Alexander Ostrowski membuktikan **Teorema Ostrowski**. Ini adalah fakta mengejutkan bahwa "setiap nilai mutlak non-trivial pada lapangan bilangan rasional ekuivalen dengan nilai mutlak biasa atau nilai mutlak p-adik untuk suatu bilangan prima $p$." Dengan demikian, mengumpulkan bilangan real dan semua bilangan p-adik "secara mendalam mencakup" semua kemungkinan kelengkapan bilangan rasional.
 
-Lebih jauh, murid Hensel, **[Helmut Hasse](https://kenji.blog/id/p/hasse/)**, menetapkan **Prinsip Lokal-Global** (Prinsip Hasse). Ini adalah teorema yang indah yang menyatakan bahwa "syarat perlu dan cukup bagi suatu persamaan untuk memiliki solusi pada bilangan rasional (secara global) adalah ia memiliki solusi pada bilangan real dan bilangan p-adik untuk semua prima $p$ (secara lokal)." Dengan ini, bilangan p-adik mengamankan posisi yang tak tergoyahkan sebagai alat penting dalam teori bilangan.
+Lebih jauh, murid [Hensel](https://kenji.blog/id/p/hensel/), **[Helmut Hasse](https://kenji.blog/id/p/hasse/)**, menetapkan **Prinsip Lokal-Global** (Prinsip Hasse). Ini adalah teorema yang indah yang menyatakan bahwa "syarat perlu dan cukup bagi suatu persamaan untuk memiliki solusi pada bilangan rasional (secara global) adalah ia memiliki solusi pada bilangan real dan bilangan p-adik untuk semua prima $p$ (secara lokal)." Dengan ini, bilangan p-adik mengamankan posisi yang tak tergoyahkan sebagai alat penting dalam teori bilangan.
 
 ## 8. Kontribusi sebagai Pendidik dan Editor, serta Warisan
 
-Hensel memberikan kontribusi luar biasa tidak hanya sebagai peneliti tetapi juga sebagai pendidik dan editor. Dari tahun 1901 selama bertahun-tahun, ia menjabat sebagai pemimpin redaksi "Crelle's Journal" (secara resmi: Journal für die reine und angewandte Mathematik), salah satu jurnal matematika tertua di dunia, yang mendukung penyebaran penelitian matematika mutakhir di masanya.
+[Hensel](https://kenji.blog/id/p/hensel/) memberikan kontribusi luar biasa tidak hanya sebagai peneliti tetapi juga sebagai pendidik dan editor. Dari tahun 1901 selama bertahun-tahun, ia menjabat sebagai pemimpin redaksi "Crelle's Journal" (secara resmi: Journal für die reine und angewandte Mathematik), salah satu jurnal matematika tertua di dunia, yang mendukung penyebaran penelitian matematika mutakhir di masanya.
 
 Kuliahnya jelas dan penuh semangat, membina generasi berikutnya dari matematikawan brilian, termasuk [Helmut Hasse](https://kenji.blog/id/p/hasse/).
 

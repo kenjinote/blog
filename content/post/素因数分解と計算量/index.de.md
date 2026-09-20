@@ -136,7 +136,7 @@ $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 Dies bedeutet, dass die Komplexität für die Bitlänge $n$ **$\mathcal{O}(2^{n/2})$** beträgt. Mit anderen Worten: Die Probedivision ist ein ** „rein exponentieller Zeit-Algorithmus (Exponential time algorithm)“** in Bezug auf $n$.
 Für jedes zusätzliche Bit (was einer Verdoppelung des Zahlenwertes entspricht) steigt die Rechenzeit um etwa das $\sqrt{2} \approx 1.414$-fache. Wenn $N$ eine Zahl ist, die 1024 Bit (etwa 300 Ziffern im Dezimalsystem) überschreitet, würde die Berechnung nicht einmal nach der Dauer des Alters des Universums abgeschlossen sein.
 
-## 2. Fermats Faktorisierungsmethode (Fermat's Factorization Method)
+## 2. [Fermat](https://kenji.blog/de/p/fermat/)s Faktorisierungsmethode ([Fermat](https://kenji.blog/de/p/fermat/)'s Factorization Method)
 
 Dies ist eine Methode, die von dem Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) im 17. Jahrhundert entwickelt wurde. Gegeben eine ungerade zusammengesetzte Zahl $N$, versucht die Methode, $N$ als Differenz zweier Quadratzahlen darzustellen.
 
@@ -169,8 +169,8 @@ Im Vergleich zu $\mathcal{O}(2^{n/2})$ der Probedivision ist dies drastisch schn
 
 ## 4. Multiples Polynom-quadratisches Sieb (MPQS: Multiple Polynomial Quadratic Sieve)
 
-In den 1980er Jahren wurde von Carl Pomerance das „Quadratische Sieb (Quadratic Sieve: QS)“ entwickelt. Es ist eine Erweiterung von Fermats Konzept der „Differenz von Quadraten“.
-Während die Fermat-Methode direkt nach $x^2 - y^2 = N$ suchte, sucht das Quadratische Sieb nach einer viel lockereren Bedingung:
+In den 1980er Jahren wurde von Carl Pomerance das „Quadratische Sieb (Quadratic Sieve: QS)“ entwickelt. Es ist eine Erweiterung von [Fermat](https://kenji.blog/de/p/fermat/)s Konzept der „Differenz von Quadraten“.
+Während die [Fermat](https://kenji.blog/de/p/fermat/)-Methode direkt nach $x^2 - y^2 = N$ suchte, sucht das Quadratische Sieb nach einer viel lockereren Bedingung:
 
 $$ x^2 \equiv y^2 \pmod N $$
 und

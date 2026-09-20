@@ -136,7 +136,7 @@ $$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
 Cela signifie que pour une longueur de bit $n$, la complexité est **$\mathcal{O}(2^{n/2})$**. Autrement dit, la méthode des divisions successives est un algorithme à ** « temps exponentiel pur (Exponential time) »** par rapport à $n$.
 Chaque fois que le nombre de bits augmente de 1 (le nombre double), le temps de calcul est multiplié par environ $\sqrt{2} \approx 1,414$. Si $N$ est un nombre dépassant 1024 bits (environ 300 chiffres en décimal), même en y consacrant un temps égal à l'âge de l'univers, le calcul ne s'achèverait pas.
 
-## 2. Méthode de factorisation de Fermat (Fermat's Factorization Method)
+## 2. Méthode de factorisation de [Fermat](https://kenji.blog/fr/p/fermat/) ([Fermat](https://kenji.blog/fr/p/fermat/)'s Factorization Method)
 
 Il s'agit d'une méthode inventée par le mathématicien du 17ème siècle, [Pierre de Fermat](https://kenji.blog/fr/p/fermat/). Étant donné un nombre composé impair $N$, on tente de représenter $N$ comme la différence de deux carrés.
 
@@ -169,8 +169,8 @@ Par rapport au $\mathcal{O}(2^{n/2})$ de la méthode des divisions successives, 
 
 ## 4. Crible Quadratique à Polys Multiples (MPQS: Multiple Polynomial Quadratic Sieve)
 
-Au début des années 1980, Carl Pomerance a inventé le « crible quadratique (Quadratic Sieve : QS) ». C'est une extension du concept de la « différence de carrés » de Fermat.
-Alors que la méthode de Fermat cherchait directement $x^2 - y^2 = N$, le crible quadratique recherche une condition beaucoup plus souple.
+Au début des années 1980, Carl Pomerance a inventé le « crible quadratique (Quadratic Sieve : QS) ». C'est une extension du concept de la « différence de carrés » de [Fermat](https://kenji.blog/fr/p/fermat/).
+Alors que la méthode de [Fermat](https://kenji.blog/fr/p/fermat/) cherchait directement $x^2 - y^2 = N$, le crible quadratique recherche une condition beaucoup plus souple.
 
 $$ x^2 \equiv y^2 \pmod N $$
 et

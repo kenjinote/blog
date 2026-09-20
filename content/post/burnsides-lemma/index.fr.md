@@ -81,7 +81,7 @@ Ces 4 motifs appartiennent à la même "Orbite". Le "nombre de conceptions essen
 
 ## 5. [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)
 
-Ici enfin, la vedette de cette fois, le **[Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)**, fait son apparition. On l'appelle aussi parfois le lemme de Cauchy-Frobenius. Il s'agit d'un théorème étonnant qui nous permet de calculer facilement le "nombre d'orbites (nombre de motifs essentiellement différents)" lorsqu'un groupe $G$ agit sur un ensemble fini $X$.
+Ici enfin, la vedette de cette fois, le **[Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)**, fait son apparition. On l'appelle aussi parfois le lemme de [Cauchy](https://kenji.blog/fr/p/cauchy/)-Frobenius. Il s'agit d'un théorème étonnant qui nous permet de calculer facilement le "nombre d'orbites (nombre de motifs essentiellement différents)" lorsqu'un groupe $G$ agit sur un ensemble fini $X$.
 
 La formule du théorème est la suivante :
 
@@ -231,7 +231,7 @@ En fait, ce théorème n'a pas été découvert en premier par William Burnside.
 
 Cependant, historiquement, [Augustin-Louis Cauchy](https://kenji.blog/fr/p/cauchy/) avait déjà publié un cas particulier de ce théorème (concernant les groupes symétriques) en 1845, et plus tard en 1887 Ferdinand Georg Frobenius a donné une preuve pour les groupes finis en général.
 
-Par conséquent, ceux qui essaient d'être rigoureux quant à l'histoire des mathématiques appellent parfois ce théorème avec espièglerie le **"Lemme de Cauchy-Frobenius"** ou **"Le Lemme qui n'est pas de Burnside"**. Indépendamment de l'origine de son nom, l'ampleur du rôle que ce lemme a joué dans l'histoire de la théorie des groupes et de la combinatoire est incommensurable.
+Par conséquent, ceux qui essaient d'être rigoureux quant à l'histoire des mathématiques appellent parfois ce théorème avec espièglerie le **"Lemme de [Cauchy](https://kenji.blog/fr/p/cauchy/)-Frobenius"** ou **"Le Lemme qui n'est pas de Burnside"**. Indépendamment de l'origine de son nom, l'ampleur du rôle que ce lemme a joué dans l'histoire de la théorie des groupes et de la combinatoire est incommensurable.
 
 ## 11. Exemple 2 : Coloration des faces d'un cube
 

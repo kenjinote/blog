@@ -36,7 +36,7 @@ Di sini, $V$ mewakili **kelas dari semua himpunan** ( $\text{kelas universal}$ )
 
 Pada akhir tahun 1920-an, mekanika kuantum berkembang sebagai dua teori yang tampaknya sama sekali berbeda: "mekanika matriks" dari Werner Heisenberg dan "mekanika gelombang" dari Erwin Schrödinger. Von Neumann membuktikan bahwa kedua teori ini setara secara matematis, memberikan mekanika kuantum fondasi matematika yang ketat.
 
-Menggunakan teori **ruang Hilbert**, ia merumuskan besaran fisis (observabel) sebagai operator adjoin-diri pada ruang Hilbert berdimensi tak hingga. Bukunya "Fondasi Matematika Mekanika Kuantum," yang diterbitkan pada tahun 1932, dianggap sebagai Alkitab bahkan bagi fisikawan modern dan masih sangat dihargai saat ini sebagai buku teks standar untuk mekanika kuantum.
+Menggunakan teori **ruang [Hilbert](https://kenji.blog/id/p/hilbert/)**, ia merumuskan besaran fisis (observabel) sebagai operator adjoin-diri pada ruang [Hilbert](https://kenji.blog/id/p/hilbert/) berdimensi tak hingga. Bukunya "Fondasi Matematika Mekanika Kuantum," yang diterbitkan pada tahun 1932, dianggap sebagai Alkitab bahkan bagi fisikawan modern dan masih sangat dihargai saat ini sebagai buku teks standar untuk mekanika kuantum.
 
 Ia juga memperkenalkan konsep **matriks densitas** ( $\text{matriks densitas}$ ) untuk menggambarkan keadaan campuran, meletakkan dasar bagi mekanika statistik kuantum.
 
@@ -112,7 +112,7 @@ Ada banyak anekdot seputar otak manusia super von Neumann.
 Buku-buku dan makalah yang ditinggalkan von Neumann semasa hidupnya beragam, namun di sini kami memperkenalkan karya-karya perwakilan yang memiliki dampak signifikan bagi generasi selanjutnya.
 
 1. **Fondasi Matematika dari Mekanika Kuantum (1932)**
-   Sebuah karya monumental yang secara ketat merumuskan mekanika kuantum menggunakan teori ruang Hilbert.
+   Sebuah karya monumental yang secara ketat merumuskan mekanika kuantum menggunakan teori ruang [Hilbert](https://kenji.blog/id/p/hilbert/).
 2. **Teori Permainan dan Perilaku Ekonomi (1944)**
    Ditulis bersama Oskar Morgenstern. Mahakarya yang secara sistematis membahas segala hal mulai dari permainan jumlah-nol hingga permainan kooperatif.
 3. **Komputer dan Otak (1958)**

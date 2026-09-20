@@ -39,7 +39,7 @@ holds. CH is the assertion that no other cardinality exists in between these.
 
 Cantor spent his life trying to prove this hypothesis, but he never succeeded. At times he believed he had "proved it", and at other times he thought he had "disproved it"; his mental state was greatly worn down by this profound problem.
 
-In 1900, at the second International Congress of Mathematicians held in Paris, [David Hilbert](https://kenji.blog/en/p/hilbert/) proposed "Hilbert's 23 problems" that 20th-century mathematics should solve. That memorable **first problem** was precisely this "proof of the continuum hypothesis".
+In 1900, at the second International Congress of Mathematicians held in Paris, [David Hilbert](https://kenji.blog/en/p/hilbert/) proposed "[Hilbert](https://kenji.blog/en/p/hilbert/)'s 23 problems" that 20th-century mathematics should solve. That memorable **first problem** was precisely this "proof of the continuum hypothesis".
 
 ## 4. Axiomatization of Set Theory: The ZFC Axiom System
 

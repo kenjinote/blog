@@ -14,15 +14,15 @@ tags:
 
 Na sociedade moderna da internet, devemos nossa capacidade de comunicação segura à **criptografia**. Na própria base desta criptografia reside um belo teorema descoberto pelo matemático do século XVII [Pierre de Fermat](https://kenji.blog/pt/p/fermat/).
 
-Neste artigo, explicaremos **o Pequeno Teorema de Fermat**, uma pedra angular crucial da teoria dos números, de uma maneira fácil de entender, cobrindo seu significado, prova e como ele é aplicado na moderna criptografia RSA.
+Neste artigo, explicaremos **o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)**, uma pedra angular crucial da teoria dos números, de uma maneira fácil de entender, cobrindo seu significado, prova e como ele é aplicado na moderna criptografia RSA.
 
-## O que é o Pequeno Teorema de Fermat?
+## O que é o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)?
 
 [O Pequeno Teorema de Fermat](https://kenji.blog/pt/p/fermats-little-theorem/) é um teorema extremamente simples, mas poderoso, que demonstra a relação entre números primos e inteiros.
 
 O teorema afirma o seguinte:
 
-> **Pequeno Teorema de Fermat**
+> **Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)**
 > Seja $p$ um número primo e $a$ um número inteiro qualquer não divisível por $p$ (o que significa que $a$ e $p$ são coprimos). Então, a seguinte relação de congruência é verdadeira:
 > 
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -52,7 +52,7 @@ Dessa forma, não importa qual número primo $p$ você escolha, essa lei misteri
 
 ## Prova do Teorema
 
-Existem várias abordagens para provar o Pequeno Teorema de Fermat, mas aqui introduzimos um método de prova representativo baseado na teoria dos números.
+Existem várias abordagens para provar o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), mas aqui introduzimos um método de prova representativo baseado na teoria dos números.
 
 Seja $p$ um número primo e $a$ um número inteiro não divisível por $p$.
 Considere o conjunto $S = \{1, 2, 3, \dots, p-1\}$. Seja $S'$ um novo conjunto criado multiplicando cada elemento deste conjunto por $a$.
@@ -75,9 +75,9 @@ $$ 1 \equiv a^{p-1} \pmod p $$
 
 Isso conclui a prova.
 
-## Teste de Primalidade de Fermat: Aplicação ao Teste de Primos
+## Teste de Primalidade de [Fermat](https://kenji.blog/pt/p/fermat/): Aplicação ao Teste de Primos
 
-Este teorema é aplicado em um **algoritmo de teste de primalidade** (o teste de primalidade de Fermat) para determinar se um determinado número é primo.
+Este teorema é aplicado em um **algoritmo de teste de primalidade** (o teste de primalidade de [Fermat](https://kenji.blog/pt/p/fermat/)) para determinar se um determinado número é primo.
 
 Se você quiser saber se um número enorme $n$ é primo, escolha aleatoriamente $a$ e verifique se $a^{n-1} \equiv 1 \pmod n$ é verdadeiro. Se não for verdade, então $n$ **absolutamente não é um número primo** (é um número composto).
 
@@ -94,9 +94,9 @@ No entanto, como existem números excepcionais chamados **números de Carmichael
 
 ## Aplicação na Criptografia Moderna: Criptografia RSA
 
-A aplicação mais importante do Pequeno Teorema de Fermat (e de sua generalização, o **Teorema de Euler**) é a **criptografia RSA**, que sustenta a segurança da internet.
+A aplicação mais importante do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) (e de sua generalização, o **Teorema de Euler**) é a **criptografia RSA**, que sustenta a segurança da internet.
 
-A criptografia RSA baseia-se na dificuldade de fatorar números massivos para sua segurança. Dentro de seu mecanismo, o princípio do "Pequeno Teorema de Fermat" desempenha um papel decisivo nos processos de geração de chaves e descriptografia.
+A criptografia RSA baseia-se na dificuldade de fatorar números massivos para sua segurança. Dentro de seu mecanismo, o princípio do "Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)" desempenha um papel decisivo nos processos de geração de chaves e descriptografia.
 
 ```mermaid
 sequenceDiagram
@@ -112,7 +112,7 @@ sequenceDiagram
 ```
 
 Na criptografia RSA, dois enormes números primos, $p$ e $q$, são preparados e definimos $n = p \times q$.
-Pelo Teorema de Euler, as chaves ($e$ e $d$) são projetadas de forma que $M^{ed} \equiv M \pmod n$ seja verdadeiro nos processos de criptografia e descriptografia. Aqui, o fenômeno mágico do texto simples $M$ retornando à sua forma original baseia-se essencialmente nas propriedades matemáticas garantidas pelo Pequeno Teorema de Fermat.
+Pelo Teorema de Euler, as chaves ($e$ e $d$) são projetadas de forma que $M^{ed} \equiv M \pmod n$ seja verdadeiro nos processos de criptografia e descriptografia. Aqui, o fenômeno mágico do texto simples $M$ retornando à sua forma original baseia-se essencialmente nas propriedades matemáticas garantidas pelo Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/).
 
 ## Conclusão
 

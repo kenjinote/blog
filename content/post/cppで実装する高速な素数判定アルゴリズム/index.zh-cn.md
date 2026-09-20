@@ -52,7 +52,7 @@ bool is_prime_trial_division(long long n) {
 
 # 2. 费马测试：概率性素数判定的开端
 
-为了突破试除法的局限性，人们利用数论定理提出了“概率性算法（Probabilistic Algorithm）”。其中最具代表性的就是利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的“费马测试（Fermat Primality Test）”。
+为了突破试除法的局限性，人们利用数论定理提出了“概率性算法（Probabilistic Algorithm）”。其中最具代表性的就是利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的“费马测试（[Fermat](https://kenji.blog/zh-cn/p/fermat/) Primality Test）”。
 
 ## [费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/))
 

@@ -51,7 +51,7 @@ $$ E = h\nu = \frac{hc}{\lambda} $$
 
 ## 1.2 色差（Chromatic Aberration）與焦點偏移
 
-進一步從光學的角度來看，光波長的不同會產生「折射率」的差異。介質（在這裡指水晶體等）的折射率 $n$ 依賴於波長 $\lambda$，可以透過柯西色散公式（Cauchy's equation）來近似。
+進一步從光學的角度來看，光波長的不同會產生「折射率」的差異。介質（在這裡指水晶體等）的折射率 $n$ 依賴於波長 $\lambda$，可以透過柯西色散公式（[Cauchy](https://kenji.blog/zh-tw/p/cauchy/)'s equation）來近似。
 
 $$ n(\lambda) = B + \frac{C}{\lambda^2} $$
 

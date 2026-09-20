@@ -35,7 +35,7 @@ Memasuki abad ke-18, raksasa matematika seperti Jean le Rond d'Alembert dan [Leo
 
 Bukti pertama yang pada dasarnya lengkap dari teorema yang tak tertembus ini diberikan oleh [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/). Dalam disertasi doktoralnya tahun 1799, ia menunjukkan kelemahan dalam bukti-bukti para ahli matematika sebelumnya dan menyajikan bukti yang didasarkan pada intuisi geometris. Gauss memberikan empat bukti berbeda untuk teorema ini sepanjang hidupnya, yang menunjukkan betapa pentingnya ia melampirkan hal itu.
 
-Bukti yang paling standar dan elegan saat ini dianggap sebagai bukti yang didasarkan pada teori analisis kompleks, yang dibangun oleh ahli matematika Prancis Joseph Liouville dan lainnya. Pada paruh kedua artikel ini, kita akan memperkenalkan bukti yang menggunakan teorema Liouville.
+Bukti yang paling standar dan elegan saat ini dianggap sebagai bukti yang didasarkan pada teori analisis kompleks, yang dibangun oleh ahli matematika Prancis Joseph [Liouville](https://kenji.blog/id/p/liouville/) dan lainnya. Pada paruh kedua artikel ini, kita akan memperkenalkan bukti yang menggunakan teorema [Liouville](https://kenji.blog/id/p/liouville/).
 
 ## Pernyataan Teorema yang Tepat
 
@@ -78,26 +78,26 @@ flowchart TD
     E -->|"P(z) = 0"| F["Eksistensi suatu akar terbukti"]
 ```
 
-## Persiapan dari Analisis Kompleks: Teorema Liouville
+## Persiapan dari Analisis Kompleks: Teorema [Liouville](https://kenji.blog/id/p/liouville/)
 
-Setelah memperoleh pemahaman intuitif, kini kami akan memperkenalkan bukti terindah dan paling ketat dalam matematika modern. Bukti ini menggunakan senjata ampuh dari analisis kompleks: **Teorema Liouville**.
+Setelah memperoleh pemahaman intuitif, kini kami akan memperkenalkan bukti terindah dan paling ketat dalam matematika modern. Bukti ini menggunakan senjata ampuh dari analisis kompleks: **Teorema [Liouville](https://kenji.blog/id/p/liouville/)**.
 
 Analisis kompleks adalah bidang yang membahas kalkulus fungsi variabel kompleks. Tidak seperti fungsi bilangan real, diferensiabilitas (holomorfisme) fungsi kompleks adalah kondisi yang sangat kuat; fungsi kompleks yang dapat dideiferensiasikan meskipun hanya sekali memiliki sifat menakjubkan karena dapat dideiferensiasikan secara tak terhingga dan dapat diekspansi menjadi deret Taylor.
 
 Fungsi yang dapat dideiferensiasikan (holomorfik) di seluruh bidang kompleks disebut **fungsi utuh** (entire function). Polinomial $P(z)$ dan fungsi eksponensial $e^z$ adalah contoh tipikal dari fungsi utuh.
 
-Teorema Liouville adalah teorema yang sangat kuat mengenai fungsi-fungsi utuh ini.
+Teorema [Liouville](https://kenji.blog/id/p/liouville/) adalah teorema yang sangat kuat mengenai fungsi-fungsi utuh ini.
 
-**Teorema (Teorema Liouville)**
+**Teorema (Teorema [Liouville](https://kenji.blog/id/p/liouville/))**
 Setiap fungsi utuh yang terbatas haruslah merupakan fungsi konstan.
 
 Di sini, "terbatas" berarti bahwa untuk semua bilangan kompleks $z$, nilai absolut dari fungsi $|f(z)|$ tidak melebihi bilangan real $M$ tertentu; yaitu, ada $M$ sedemikian rupa sehingga $|f(z)| \le M$.
 
-Dalam dunia bilangan real, suatu fungsi seperti $f(x) = \sin(x)$ dapat dideiferensiasikan di seluruh garis bilangan dan dibatasi oleh $-1 \le \sin(x) \le 1$. Fungsi ini bukanlah fungsi konstan. Namun, teorema Liouville menegaskan bahwa ini tidak akan pernah terjadi di dunia kompleks. Jika sebuah fungsi bersifat holomorfik di seluruh bidang kompleks dan nilainya tidak menyimpang menuju ketakterhinggaan, fungsi tersebut hanyalah sebuah konstanta datar.
+Dalam dunia bilangan real, suatu fungsi seperti $f(x) = \sin(x)$ dapat dideiferensiasikan di seluruh garis bilangan dan dibatasi oleh $-1 \le \sin(x) \le 1$. Fungsi ini bukanlah fungsi konstan. Namun, teorema [Liouville](https://kenji.blog/id/p/liouville/) menegaskan bahwa ini tidak akan pernah terjadi di dunia kompleks. Jika sebuah fungsi bersifat holomorfik di seluruh bidang kompleks dan nilainya tidak menyimpang menuju ketakterhinggaan, fungsi tersebut hanyalah sebuah konstanta datar.
 
 ## Bukti Ketat [Teorema Fundamental Aljabar](https://kenji.blog/id/p/fundamental-theorem-of-algebra/)
 
-Sekarang mari kita buktikan [Teorema Fundamental Aljabar](https://kenji.blog/id/p/fundamental-theorem-of-algebra/) dengan menggunakan teorema Liouville. Anda akan kagum dengan kecemerlangan bukti ini. Di sini, kita menggunakan pembuktian dengan kontradiksi.
+Sekarang mari kita buktikan [Teorema Fundamental Aljabar](https://kenji.blog/id/p/fundamental-theorem-of-algebra/) dengan menggunakan teorema [Liouville](https://kenji.blog/id/p/liouville/). Anda akan kagum dengan kecemerlangan bukti ini. Di sini, kita menggunakan pembuktian dengan kontradiksi.
 
 **Bukti**
 
@@ -134,7 +134,7 @@ Di sisi lain, di dalam wilayah cakram tertutup (wilayah tertutup terbatas) yang 
 Oleh karena itu, baik di luar maupun di dalam lingkaran, nilai absolut dari $f(z)$ tidak pernah melampaui batas atas berhingga tertentu. Artinya, $f(z)$ adalah fungsi **terbatas**.
 
 Sampai pada titik ini, kami telah menunjukkan bahwa $f(z)$ adalah "fungsi utuh" dan "terbatas".
-Di sini, kita menerapkan **teorema Liouville**. Fungsi utuh yang terbatas haruslah sebuah konstanta. Oleh karena itu, terdapat sebuah bilangan kompleks $c$ sedemikian rupa sehingga untuk semua $z$,
+Di sini, kita menerapkan **teorema [Liouville](https://kenji.blog/id/p/liouville/)**. Fungsi utuh yang terbatas haruslah sebuah konstanta. Oleh karena itu, terdapat sebuah bilangan kompleks $c$ sedemikian rupa sehingga untuk semua $z$,
 
 $$
 f(z) = c
@@ -172,8 +172,8 @@ Lebih dari itu, untuk polinomial di mana semua koefisiennya berupa bilangan real
 
 ## Kesimpulan
 
-Dalam artikel ini, kita telah melihat secara rinci pada [Teorema Fundamental Aljabar](https://kenji.blog/id/p/fundamental-theorem-of-algebra/), mencakup latar belakang sejarahnya, intuisi topologi, dan bukti analitis kompleksnya yang menggunakan teorema Liouville.
+Dalam artikel ini, kita telah melihat secara rinci pada [Teorema Fundamental Aljabar](https://kenji.blog/id/p/fundamental-theorem-of-algebra/), mencakup latar belakang sejarahnya, intuisi topologi, dan bukti analitis kompleksnya yang menggunakan teorema [Liouville](https://kenji.blog/id/p/liouville/).
 
 Sepintas, ini adalah teorema tentang persamaan aljabar, tetapi fakta bahwa buktinya yang paling elegan meminjam kekuatan analisis (kalkulus) dan topologi menunjukkan kedalaman matematika dan keindahan bagaimana berbagai bidang saling terkait erat.
 
-Pencarian panjang umat manusia untuk menemukan akar-akar persamaan memperoleh panggung bidang kompleks yang luas melalui diperkenalkannya bilangan-bilangan imajiner baru, dan kelengkapan panggung ini dibuktikan oleh [Teorema Fundamental Aljabar](https://kenji.blog/id/p/fundamental-theorem-of-algebra/). Teorema ini menjadi kunci yang membuka pintu-pintu cemerlang yang mengarah pada teori Galois dan geometri aljabar, yang menjadi landasan matematika modern.
+Pencarian panjang umat manusia untuk menemukan akar-akar persamaan memperoleh panggung bidang kompleks yang luas melalui diperkenalkannya bilangan-bilangan imajiner baru, dan kelengkapan panggung ini dibuktikan oleh [Teorema Fundamental Aljabar](https://kenji.blog/id/p/fundamental-theorem-of-algebra/). Teorema ini menjadi kunci yang membuka pintu-pintu cemerlang yang mengarah pada teori [Galois](https://kenji.blog/id/p/galois/) dan geometri aljabar, yang menjadi landasan matematika modern.

@@ -81,7 +81,7 @@ Ke-4 pola ini termasuk dalam "Orbit" yang sama. "Jumlah desain yang pada dasarny
 
 ## 5. [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)
 
-Di sini akhirnya, bintang kita kali ini, **[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)**, muncul. Ini terkadang juga disebut lema Cauchy-Frobenius. Ini adalah teorema mencengangkan yang memungkinkan kita menghitung dengan mudah "jumlah orbit (jumlah pola yang pada dasarnya berbeda)" ketika grup $G$ bekerja pada himpunan berhingga $X$.
+Di sini akhirnya, bintang kita kali ini, **[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)**, muncul. Ini terkadang juga disebut lema [Cauchy](https://kenji.blog/id/p/cauchy/)-Frobenius. Ini adalah teorema mencengangkan yang memungkinkan kita menghitung dengan mudah "jumlah orbit (jumlah pola yang pada dasarnya berbeda)" ketika grup $G$ bekerja pada himpunan berhingga $X$.
 
 Rumus untuk teorema adalah sebagai berikut:
 
@@ -231,7 +231,7 @@ Faktanya, teorema ini tidak pertama kali ditemukan oleh William Burnside. Itu di
 
 Namun, secara historis, [Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/) telah menerbitkan sebuah kasus khusus dari teorema ini (mengenai grup simetris) pada tahun 1845, dan kemudian pada tahun 1887 Ferdinand Georg Frobenius memberikan bukti untuk grup hingga secara umum.
 
-Oleh karena itu, orang-orang yang mencoba keras tentang sejarah matematika kadang-kadang dengan bercanda menyebut teorema ini **"Lema Cauchy-Frobenius"** atau **"Lema yang bukan milik Burnside"**. Terlepas dari asal usul namanya, besarnya peran yang dimainkan lema ini dalam sejarah teori grup dan kombinatorika tidak terukur.
+Oleh karena itu, orang-orang yang mencoba keras tentang sejarah matematika kadang-kadang dengan bercanda menyebut teorema ini **"Lema [Cauchy](https://kenji.blog/id/p/cauchy/)-Frobenius"** atau **"Lema yang bukan milik Burnside"**. Terlepas dari asal usul namanya, besarnya peran yang dimainkan lema ini dalam sejarah teori grup dan kombinatorika tidak terukur.
 
 ## 11. Contoh 2: Mewarnai Sisi-sisi Kubus
 

@@ -86,7 +86,7 @@ Un anneau commutatif est un Corps si :
 1. Il a au moins deux éléments ($0 \neq 1$).
 2. Tout élément non nul a un inverse multiplicatif.
 
-Exemples : $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, et les **Corps Finis (Galois Fields)**.
+Exemples : $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, et les **Corps Finis ([Galois](https://kenji.blog/fr/p/galois/) Fields)**.
 
 ---
 

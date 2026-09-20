@@ -13,7 +13,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 「質數（Prime Numbers）」是只能被1和自己整除的自然數，在數學世界中也被稱為「原子」。2, 3, 5, 7, 11, 13... 這般延續的數列，乍看之下似乎毫無秩序、隨機出現。自從古希臘數學家[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)證明了「質數有無窮多個」以來，無數的數學家們便不斷挑戰，試圖解開隱藏在這個質數排列中的規律。
 
-最逼近這個質數之謎的，是1859年由德國數學家[波恩哈德·黎曼](https://kenji.blog/zh-tw/p/riemann/)（[Bernhard Riemann](https://kenji.blog/zh-tw/p/riemann/)）所提出的 **「黎曼猜想（Riemann Hypothesis）」** 。黎曼猜想是現代數學中最重要且未解決的難題之一，被克雷數學研究所列為千禧年大獎難題之一，並懸賞了100萬美元的獎金。
+最逼近這個質數之謎的，是1859年由德國數學家[波恩哈德·黎曼](https://kenji.blog/zh-tw/p/riemann/)（[Bernhard Riemann](https://kenji.blog/zh-tw/p/riemann/)）所提出的 **「黎曼猜想（[Riemann](https://kenji.blog/zh-tw/p/riemann/) Hypothesis）」** 。黎曼猜想是現代數學中最重要且未解決的難題之一，被克雷數學研究所列為千禧年大獎難題之一，並懸賞了100萬美元的獎金。
 
 乍看之下，關於質數分佈的純數學難題，似乎與我們的日常生活毫無關聯。然而，支撐現代社會基礎設施的網際網路安全，特別是 **RSA加密和橢圓曲線密碼學（ECC）等現代密碼技術** ，都深深依賴於巨大質數的性質。
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. 黎曼ζ函數與歐拉乘積
 
-在解析質數分佈時，最強大的武器就是 **黎曼ζ函數（Riemann Zeta Function）** 。這原本是由萊昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）針對實數 $s > 1$ 所定義的無窮級數。
+在解析質數分佈時，最強大的武器就是 **黎曼ζ函數（[Riemann](https://kenji.blog/zh-tw/p/riemann/) Zeta Function）** 。這原本是由萊昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）針對實數 $s > 1$ 所定義的無窮級數。
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -88,7 +88,7 @@ $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1
 
 黎曼計算了少數幾個零點，並提出了一個令人驚嘆的猜想。這就是 **黎曼猜想** 。
 
-> **黎曼猜想 (Riemann Hypothesis)**
+> **黎曼猜想 ([Riemann](https://kenji.blog/zh-tw/p/riemann/) Hypothesis)**
 > 黎曼ζ函數 $\zeta(s)$ 的所有非平凡零點，其實部都位於 $1/2$ 的直線上（$\text{Re}(s) = 1/2$）。
 
 這條實部為1/2的直線被稱為「臨界線（Critical line）」。
@@ -165,7 +165,7 @@ graph LR
 
 目前實用上被廣泛使用的是 **米勒-拉賓質數判定法（Miller-Rabin primality test）** ，這是一種機率性演算法。這個演算法速度很快，但有極低的機率會將合成數誤判為質數（稱為「偽質數」）。
 
-但是，如果假設將黎曼猜想擴展到狄利克雷L函數上的 **「廣義黎曼猜想（Generalized Riemann Hypothesis, GRH）」** 為真，情況就會發生戲劇性的變化。
+但是，如果假設將黎曼猜想擴展到狄利克雷L函數上的 **「廣義黎曼猜想（Generalized [Riemann](https://kenji.blog/zh-tw/p/riemann/) Hypothesis, GRH）」** 為真，情況就會發生戲劇性的變化。
 若GRH為真，米勒-拉賓判定法的測試次數上限就能獲得數學上的保證，從機率性演算法 **昇華為「確定性多項式時間演算法」** （這是在AKS質數測試演算法被發現前就已知的重要事實）。
 
 也就是說，黎曼猜想（及其推廣）扮演著直接為「能否以絕對的自信且高速地生成巨大質數」這個密碼學基礎生成過程背書的角色。

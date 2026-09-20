@@ -15,7 +15,7 @@ tags:
 
 ## 1. Pendahuluan: Apa itu Masalah Hadiah Milenium?
 
-Pada tahun 2000, Clay Mathematics Institute menawarkan hadiah masing-masing sebesar 1 juta dolar untuk 7 masalah matematika terpenting yang belum terpecahkan. Masalah-masalah ini disebut **Masalah Hadiah Milenium** (Millennium Prize Problems). Di antaranya terdapat masalah terkenal seperti "Hipotesis Riemann" dan "Masalah P vs NP", namun ada satu masalah yang sangat berkaitan erat dengan fisika. Masalah tersebut adalah **"[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/id/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
+Pada tahun 2000, Clay Mathematics Institute menawarkan hadiah masing-masing sebesar 1 juta dolar untuk 7 masalah matematika terpenting yang belum terpecahkan. Masalah-masalah ini disebut **Masalah Hadiah Milenium** (Millennium Prize Problems). Di antaranya terdapat masalah terkenal seperti "Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)" dan "Masalah P vs NP", namun ada satu masalah yang sangat berkaitan erat dengan fisika. Masalah tersebut adalah **"[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/id/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
 
 Masalah ini bertujuan untuk menetapkan dasar matematika dari "Model Standar" fisika partikel yang mendeskripsikan gaya-gaya dasar di alam semesta. Perilaku materi dan gaya yang membentuk dunia kita telah dikonfirmasi dengan akurasi yang sangat tinggi melalui eksperimen, namun pembuktian secara matematis dan ketat (rigor) merupakan salah satu tantangan terbesar dalam matematika modern.
 
@@ -25,13 +25,13 @@ Dalam artikel ini, kita akan menggali lebih dalam dan menjelaskan apa itu teori 
 
 Untuk memahami teori Yang-Mills, pertama-tama kita perlu mengetahui tentang **Teori Gauge** (Gauge Theory). Dalam fisika, teori gauge adalah sebuah teori yang memiliki sifat di mana bentuk persamaannya tidak berubah (invarian) terhadap transformasi tertentu (transformasi gauge).
 
-### Elektromagnetisme dan Teori Gauge Abelian
+### Elektromagnetisme dan Teori Gauge [Abel](https://kenji.blog/id/p/abel/)ian
 
 Teori gauge yang paling akrab adalah elektromagnetisme. Persamaan Maxwell yang dirumuskan oleh James Clerk Maxwell mendeskripsikan perilaku medan listrik dan medan magnet. Elektrodinamika Kuantum (QED) yang menangani hal ini dalam kerangka mekanika kuantum disebut sebagai **Teori Gauge U(1)**.
 
 Di sini, besaran yang disebut fase memainkan peran penting. Sekalipun fase fungsi gelombang elektron diubah secara independen pada setiap titik di ruang (transformasi gauge lokal), kuantitas observasi fisik tidak akan berubah. **Medan gauge** diperkenalkan untuk menjaga invariansi ini, dan medan gauge dalam elektromagnetisme setara dengan foton (photon). Karena grup U(1) adalah grup abelian (komutatif, urutan operasi dapat ditukar tanpa mengubah hasil), QED disebut teori gauge abelian.
 
-### Teori Gauge Non-Abelian: Lahirnya Teori Yang-Mills
+### Teori Gauge Non-[Abel](https://kenji.blog/id/p/abel/)ian: Lahirnya Teori Yang-Mills
 
 Pada tahun 1954, Chen-Ning Yang dan Robert Mills memperluas QED yang berbasis pada grup abelian, dan mengusulkan teori gauge yang berbasis pada grup non-abelian (grup non-komutatif, di mana urutan operasi mengubah hasil). Inilah yang disebut **Teori Yang-Mills**.
 
@@ -92,7 +92,7 @@ Bidang yang membangun teori medan kuantum secara matematis dengan ketat disebut 
 
 ### Aksioma Wightman
 
-Sebagai kerangka kerja untuk menangani medan kuantum secara matematis dengan ketat, dikenal **Aksioma Wightman** (Wightman axioms) dan **Aksioma Osterwalder-Schrader** (Osterwalder-Schrader axioms). Ini menetapkan sifat-sifat yang harus dipenuhi oleh medan kuantum (seperti kovariansi Poincaré, komutativitas lokal, kondisi spektral, dll.) sebagai aksioma.
+Sebagai kerangka kerja untuk menangani medan kuantum secara matematis dengan ketat, dikenal **Aksioma Wightman** (Wightman axioms) dan **Aksioma Osterwalder-Schrader** (Osterwalder-Schrader axioms). Ini menetapkan sifat-sifat yang harus dipenuhi oleh medan kuantum (seperti kovariansi [Poincaré](https://kenji.blog/id/p/poincare/), komutativitas lokal, kondisi spektral, dll.) sebagai aksioma.
 
 Untuk menyelesaikan Masalah Hadiah Milenium, pertama-tama perlu ditunjukkan bahwa teori Yang-Mills eksis sebagai objek matematis yang ketat yang memenuhi aksioma-aksioma ini, dan kemudian harus dibuktikan bahwa terdapat batas bawah yang memiliki kesenjangan (kesenjangan massa) pada spektrum (nilai eigen energi).
 

@@ -46,13 +46,13 @@ The history of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-t
 
 However, they could not strictly prove this.
 
-A major breakthrough in the proof was brought about by [Bernhard Riemann](https://kenji.blog/en/p/riemann/)'s groundbreaking 1859 paper, "On the Number of Primes Less Than a Given Magnitude." Riemann presented a completely new approach of transforming the distribution of prime numbers into a problem on the complex plane using the **Riemann zeta function** $\zeta(s)$, which is a complex function.
+A major breakthrough in the proof was brought about by [Bernhard Riemann](https://kenji.blog/en/p/riemann/)'s groundbreaking 1859 paper, "On the Number of Primes Less Than a Given Magnitude." [Riemann](https://kenji.blog/en/p/riemann/) presented a completely new approach of transforming the distribution of prime numbers into a problem on the complex plane using the **[Riemann](https://kenji.blog/en/p/riemann/) zeta function** $\zeta(s)$, which is a complex function.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prime}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 
 This Euler product formula is a very important relation that connects a function of the sum of all natural numbers (left side) with an infinite product over only prime numbers (right side).
 
-Later, in 1896, Jacques Hadamard and Charles de la Vallée Poussin independently completed the proof of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) based on Riemann's ideas. The key to their proof was to show that "the Riemann zeta function $\zeta(s)$ has no zeros on the line $\operatorname{Re}(s) = 1$ in the complex plane."
+Later, in 1896, Jacques Hadamard and Charles de la Vallée Poussin independently completed the proof of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) based on [Riemann](https://kenji.blog/en/p/riemann/)'s ideas. The key to their proof was to show that "the [Riemann](https://kenji.blog/en/p/riemann/) zeta function $\zeta(s)$ has no zeros on the line $\operatorname{Re}(s) = 1$ in the complex plane."
 
 ## A More Precise Approximation: The Logarithmic Integral $\operatorname{Li}(x)$
 
@@ -73,17 +73,17 @@ In fact, when $x = 10^{10}$:
 
 You can see what an excellent approximation the logarithmic integral provides.
 
-## Deep Relationship with the Riemann Hypothesis
+## Deep Relationship with the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis
 
-Inseparably linked to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) is the **Riemann Hypothesis**, considered the most important unsolved problem in mathematics.
+Inseparably linked to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) is the **[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis**, considered the most important unsolved problem in mathematics.
 
-The Riemann Hypothesis claims that "all non-trivial zeros of the Riemann zeta function $\zeta(s)$ lie on the line (the critical line) where the real part is $1/2$."
+The [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis claims that "all non-trivial zeros of the [Riemann](https://kenji.blog/en/p/riemann/) zeta function $\zeta(s)$ lie on the line (the critical line) where the real part is $1/2$."
 
-If the Riemann Hypothesis is proven to be true, we will obtain the strongest form of evaluation for the error term (the difference between $\pi(x)$ and $\operatorname{Li}(x)$) in the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/). Specifically, it is known that there exists a constant $C$ such that:
+If the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is proven to be true, we will obtain the strongest form of evaluation for the error term (the difference between $\pi(x)$ and $\operatorname{Li}(x)$) in the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/). Specifically, it is known that there exists a constant $C$ such that:
 
 $$ |\pi(x) - \operatorname{Li}(x)| \le C \sqrt{x} \ln(x) $$
 
-This means that "prime numbers are distributed so extremely regularly that they are indistinguishable from being completely randomly distributed." In other words, the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) tells of the "average" distribution of primes, while the Riemann Hypothesis tells of the limits of its "fluctuations (errors)."
+This means that "prime numbers are distributed so extremely regularly that they are indistinguishable from being completely randomly distributed." In other words, the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) tells of the "average" distribution of primes, while the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis tells of the limits of its "fluctuations (errors)."
 
 ## Verifying the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) in Python
 
@@ -146,4 +146,4 @@ For example, the probability that a random 1024-bit odd number is prime is estim
 
 The [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) is one of the most beautiful theorems that embodies "order within chaos" in mathematics. The fact that the fundamental law of the natural world, the logarithmic function, lies hidden within the seemingly random distribution of prime numbers continues to fascinate many mathematicians.
 
-This field, opened up by geniuses such as Gauss, Riemann, and Hadamard, continues to be at the forefront of modern mathematics through the huge unsolved problem of the Riemann Hypothesis. The mysteries of prime numbers are deep, and the exploration will likely continue until the day we understand the full picture.
+This field, opened up by geniuses such as Gauss, [Riemann](https://kenji.blog/en/p/riemann/), and Hadamard, continues to be at the forefront of modern mathematics through the huge unsolved problem of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis. The mysteries of prime numbers are deep, and the exploration will likely continue until the day we understand the full picture.

@@ -92,8 +92,8 @@ Eiffel est un langage de programmation orienté objet.
 ## Ada
 Ada est un langage de programmation orienté objet.
 
-## Pascal
-Pascal est un langage de programmation procédural.
+## [Pascal](https://kenji.blog/fr/p/pascal/)
+[Pascal](https://kenji.blog/fr/p/pascal/) est un langage de programmation procédural.
 
 ## COBOL
 Existe depuis longtemps. C'est un langage de programmation à usage général.

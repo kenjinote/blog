@@ -8,19 +8,19 @@ categories: ["Matematika", "Biografi"]
 tags: ["Abel", "Aljabar", "Sejarah", "Matematika"]
 ---
 
-# 1. Pendahuluan: Jenius Muda Abel
+# 1. Pendahuluan: Jenius Muda [Abel](https://kenji.blog/id/p/abel/)
 
 Dalam sejarah matematika, ada beberapa jenius yang meninggal di usia muda namun meninggalkan dampak yang menentukan bagi generasi mendatang. Di antara mereka, **[Niels Henrik Abel](https://kenji.blog/id/p/abel/)** kelahiran Norwegia menonjol, bersama [Évariste Galois](https://kenji.blog/id/p/galois/), sebagai salah satu jenius tragis yang paling terkenal. Dalam hidupnya yang singkat, hanya 26 tahun, ia membuktikan bahwa "tidak ada solusi aljabar umum untuk persamaan derajat lima atau lebih tinggi", sebuah masalah yang telah mengganggu para matematikawan selama berabad-abad.
 
-Dalam artikel ini, kita akan mempelajari kehidupan Abel, yang didorong oleh hasratnya terhadap matematika terlepas dari kemiskinan dan penyakit, serta pencapaian monumentalnya seperti "Grup Abelian" dan "Integral Abelian".
+Dalam artikel ini, kita akan mempelajari kehidupan [Abel](https://kenji.blog/id/p/abel/), yang didorong oleh hasratnya terhadap matematika terlepas dari kemiskinan dan penyakit, serta pencapaian monumentalnya seperti "Grup [Abel](https://kenji.blog/id/p/abel/)ian" dan "Integral [Abel](https://kenji.blog/id/p/abel/)ian".
 
-# 2. Kehidupan Abel: Kemiskinan dan Mekarnya Bakat
+# 2. Kehidupan [Abel](https://kenji.blog/id/p/abel/): Kemiskinan dan Mekarnya Bakat
 
 ## 2.1 Masa Kecil dan Pertemuan dengan Mentornya Holmboe
 
-[Niels Henrik Abel](https://kenji.blog/id/p/abel/) lahir pada 5 Agustus 1802, di desa kecil Finnøy, Norwegia, sebagai putra seorang pendeta. Norwegia pada saat itu miskin secara ekonomi, dan keluarga Abel tidak terkecuali.
+[Niels Henrik Abel](https://kenji.blog/id/p/abel/) lahir pada 5 Agustus 1802, di desa kecil Finnøy, Norwegia, sebagai putra seorang pendeta. Norwegia pada saat itu miskin secara ekonomi, dan keluarga [Abel](https://kenji.blog/id/p/abel/) tidak terkecuali.
 
-Takdirnya berubah secara signifikan ketika ia memasuki Sekolah Katedral di Oslo pada tahun 1817 dan bertemu dengan guru matematikanya, **Bernt Michael Holmboe**. Holmboe segera mengenali bakat luar biasa Abel dan mengajarinya matematika tingkat lanjut setingkat universitas. Dengan melahap karya-karya master seperti Euler, Lagrange, dan Laplace, Abel dengan cepat menyerap matematika mutakhir.
+Takdirnya berubah secara signifikan ketika ia memasuki Sekolah Katedral di Oslo pada tahun 1817 dan bertemu dengan guru matematikanya, **Bernt Michael Holmboe**. Holmboe segera mengenali bakat luar biasa [Abel](https://kenji.blog/id/p/abel/) dan mengajarinya matematika tingkat lanjut setingkat universitas. Dengan melahap karya-karya master seperti Euler, [Lagrange](https://kenji.blog/id/p/lagrange/), dan Laplace, [Abel](https://kenji.blog/id/p/abel/) dengan cepat menyerap matematika mutakhir.
 
 ```mermaid
 flowchart TD
@@ -33,15 +33,15 @@ flowchart TD
 
 ## 2.2 Kematian Ayahnya dan Beban Berat
 
-Pada tahun 1820, saat Abel berusia 18 tahun, ayahnya meninggal dunia. Ayahnya telah memperdalam konflik politik dan meninggal dengan meninggalkan banyak hutang. Akibatnya, Abel harus memikul tanggung jawab berat untuk menghidupi ibu dan enam saudara kandungnya. Meskipun berada dalam kemiskinan ekstrem, dengan dukungan mentornya Holmboe dan teman-temannya, ia masuk Royal Frederick University (kini University of Oslo) pada tahun 1821.
+Pada tahun 1820, saat [Abel](https://kenji.blog/id/p/abel/) berusia 18 tahun, ayahnya meninggal dunia. Ayahnya telah memperdalam konflik politik dan meninggal dengan meninggalkan banyak hutang. Akibatnya, [Abel](https://kenji.blog/id/p/abel/) harus memikul tanggung jawab berat untuk menghidupi ibu dan enam saudara kandungnya. Meskipun berada dalam kemiskinan ekstrem, dengan dukungan mentornya Holmboe dan teman-temannya, ia masuk Royal Frederick University (kini University of Oslo) pada tahun 1821.
 
 # 3. Kemustahilan Rumus Persamaan Derajat Lima
 
-Pencapaian besar pertama Abel berkaitan dengan persamaan aljabar. Persamaan kuadrat telah memiliki rumus penyelesaian yang diketahui sejak zaman kuno, dan rumus untuk persamaan pangkat tiga dan pangkat empat ditemukan di Italia pada abad ke-16. Namun, tidak ada yang bisa menemukan rumus umum untuk persamaan derajat lima (kuintik) selama hampir 300 tahun setelahnya.
+Pencapaian besar pertama [Abel](https://kenji.blog/id/p/abel/) berkaitan dengan persamaan aljabar. Persamaan kuadrat telah memiliki rumus penyelesaian yang diketahui sejak zaman kuno, dan rumus untuk persamaan pangkat tiga dan pangkat empat ditemukan di Italia pada abad ke-16. Namun, tidak ada yang bisa menemukan rumus umum untuk persamaan derajat lima (kuintik) selama hampir 300 tahun setelahnya.
 
-Awalnya, Abel mengira dia telah menemukan rumus persamaan derajat lima dan menulis sebuah makalah. Namun, selama proses tinjauan sejawat oleh Holmboe dan lainnya, dia menyadari kesalahannya. Selanjutnya, ia sampai pada gagasan yang berlawanan: "Mungkinkah tidak ada rumus umum yang hanya menggunakan empat operasi aritmatika dasar dan akar untuk persamaan berderajat lima dan lebih tinggi?"
+Awalnya, [Abel](https://kenji.blog/id/p/abel/) mengira dia telah menemukan rumus persamaan derajat lima dan menulis sebuah makalah. Namun, selama proses tinjauan sejawat oleh Holmboe dan lainnya, dia menyadari kesalahannya. Selanjutnya, ia sampai pada gagasan yang berlawanan: "Mungkinkah tidak ada rumus umum yang hanya menggunakan empat operasi aritmatika dasar dan akar untuk persamaan berderajat lima dan lebih tinggi?"
 
-Akhirnya, pada tahun 1824, dia membuktikan fakta ini sepenuhnya. Saat ini, hal tersebut dikenal sebagai **Teorema Abel-Ruffini** (karena matematikawan Italia Paolo Ruffini sebelumnya telah menerbitkan bukti yang tidak lengkap).
+Akhirnya, pada tahun 1824, dia membuktikan fakta ini sepenuhnya. Saat ini, hal tersebut dikenal sebagai **Teorema [Abel](https://kenji.blog/id/p/abel/)-Ruffini** (karena matematikawan Italia Paolo Ruffini sebelumnya telah menerbitkan bukti yang tidak lengkap).
 
 $$ a x^5 + b x^4 + c x^3 + d x^2 + e x + f = 0 \quad (\text{Bentuk umum persamaan derajat lima}) $$
 
@@ -49,37 +49,37 @@ Secara umum tidak mungkin menyatakan akar-akar persamaan ini dalam jumlah suku y
 
 # 4. Perjalanan ke Eropa dan Pertemuan dengan Crelle
 
-Pada tahun 1825, Abel memperoleh beasiswa dari pemerintah Norwegia dan memiliki kesempatan untuk belajar di benua Eropa. Tujuannya adalah mengunjungi Paris, pusat matematika saat itu, dan Göttingen, tempat tinggal matematikawan hebat [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/).
+Pada tahun 1825, [Abel](https://kenji.blog/id/p/abel/) memperoleh beasiswa dari pemerintah Norwegia dan memiliki kesempatan untuk belajar di benua Eropa. Tujuannya adalah mengunjungi Paris, pusat matematika saat itu, dan Göttingen, tempat tinggal matematikawan hebat [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/).
 
-Abel mengirimkan makalahnya ke Gauss, tetapi Gauss mengabaikannya tanpa membacanya. Menyerah untuk bertemu Gauss, Abel menuju ke Berlin.
+[Abel](https://kenji.blog/id/p/abel/) mengirimkan makalahnya ke Gauss, tetapi Gauss mengabaikannya tanpa membacanya. Menyerah untuk bertemu Gauss, [Abel](https://kenji.blog/id/p/abel/) menuju ke Berlin.
 
-Di Berlin, dia bertemu **August Leopold Crelle**, seorang insinyur sipil dan penggemar berat matematika. Terkesan dengan bakat Abel, Crelle meluncurkan jurnal matematika khusus pertama di dunia, *Journal für die reine und angewandte Mathematik* (umumnya dikenal sebagai Jurnal Crelle). Abel menyumbangkan banyak makalah pada edisi perdananya, membuat namanya dikenal di komunitas matematika Eropa.
+Di Berlin, dia bertemu **August Leopold Crelle**, seorang insinyur sipil dan penggemar berat matematika. Terkesan dengan bakat [Abel](https://kenji.blog/id/p/abel/), Crelle meluncurkan jurnal matematika khusus pertama di dunia, *Journal für die reine und angewandte Mathematik* (umumnya dikenal sebagai Jurnal Crelle). [Abel](https://kenji.blog/id/p/abel/) menyumbangkan banyak makalah pada edisi perdananya, membuat namanya dikenal di komunitas matematika Eropa.
 
-# 5. Kemunduran di Paris dan Kelalaian Cauchy
+# 5. Kemunduran di Paris dan Kelalaian [Cauchy](https://kenji.blog/id/p/cauchy/)
 
-Pada tahun 1826, Abel tiba di Paris. Di sini dia menyerahkan sebuah makalah kepada Akademi Ilmu Pengetahuan Prancis tentang "Teorema luas mengenai fungsi transenden", yang dapat dianggap sebagai mahakaryanya. Makalah ini berisi konten terobosan yang kemudian dikenal sebagai **Teorema Abel**.
+Pada tahun 1826, [Abel](https://kenji.blog/id/p/abel/) tiba di Paris. Di sini dia menyerahkan sebuah makalah kepada Akademi Ilmu Pengetahuan Prancis tentang "Teorema luas mengenai fungsi transenden", yang dapat dianggap sebagai mahakaryanya. Makalah ini berisi konten terobosan yang kemudian dikenal sebagai **Teorema [Abel](https://kenji.blog/id/p/abel/)**.
 
-Namun, kemalangan kembali melanda. Matematikawan hebat **[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/)**, yang ditugaskan untuk meninjaunya, salah meletakkan makalah Abel di tumpukan dokumen di kamarnya dan tidak pernah meninjaunya.
+Namun, kemalangan kembali melanda. Matematikawan hebat **[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/)**, yang ditugaskan untuk meninjaunya, salah meletakkan makalah [Abel](https://kenji.blog/id/p/abel/) di tumpukan dokumen di kamarnya dan tidak pernah meninjaunya.
 
-Terdorong oleh keputusasaan, kekurangan dana, dan penyakit tuberkulosis yang semakin parah, Abel terpaksa meninggalkan Paris.
+Terdorong oleh keputusasaan, kekurangan dana, dan penyakit tuberkulosis yang semakin parah, [Abel](https://kenji.blog/id/p/abel/) terpaksa meninggalkan Paris.
 
 # 6. Pulang ke Rumah dan Akhir yang Tragis
 
-Pada tahun 1827, kemiskinan ekstrem menanti Abel setibanya di Norwegia. Karena tidak dapat menemukan posisi akademis permanen, dia menulis makalah dengan panik di sisa waktu yang dimilikinya.
+Pada tahun 1827, kemiskinan ekstrem menanti [Abel](https://kenji.blog/id/p/abel/) setibanya di Norwegia. Karena tidak dapat menemukan posisi akademis permanen, dia menulis makalah dengan panik di sisa waktu yang dimilikinya.
 
-Pada tanggal 6 April 1829, diawasi oleh tunangan dan teman-temannya, Abel meninggal dunia di usia muda 26 tahun.
+Pada tanggal 6 April 1829, diawasi oleh tunangan dan teman-temannya, [Abel](https://kenji.blog/id/p/abel/) meninggal dunia di usia muda 26 tahun.
 
-Tragisnya, hanya dua hari setelah kematiannya, sepucuk surat tiba dari Crelle. Surat itu menyatakan bahwa **posisi profesor matematika di Universitas Berlin telah diamankan untuk Abel**. Pada saat bakatnya menerima pengakuan yang selayaknya, semuanya sudah terlambat.
+Tragisnya, hanya dua hari setelah kematiannya, sepucuk surat tiba dari Crelle. Surat itu menyatakan bahwa **posisi profesor matematika di Universitas Berlin telah diamankan untuk [Abel](https://kenji.blog/id/p/abel/)**. Pada saat bakatnya menerima pengakuan yang selayaknya, semuanya sudah terlambat.
 
-# 7. Warisan Matematika Abel
+# 7. Warisan Matematika [Abel](https://kenji.blog/id/p/abel/)
 
-Pencapaian yang ditinggalkan Abel telah mengakar di semua bidang matematika modern.
+Pencapaian yang ditinggalkan [Abel](https://kenji.blog/id/p/abel/) telah mengakar di semua bidang matematika modern.
 
-## 7.1 Grup Abelian
+## 7.1 Grup [Abel](https://kenji.blog/id/p/abel/)ian
 
-Dalam aljabar abstrak, salah satu struktur yang paling mendasar dan penting adalah "Grup". Di antara grup-grup tersebut, grup yang hasilnya tidak berubah meskipun urutan operasinya ditukar disebut **Grup Abelian**.
+Dalam aljabar abstrak, salah satu struktur yang paling mendasar dan penting adalah "Grup". Di antara grup-grup tersebut, grup yang hasilnya tidak berubah meskipun urutan operasinya ditukar disebut **Grup [Abel](https://kenji.blog/id/p/abel/)ian**.
 
-Berdasarkan definisi, suatu grup $G$ disebut grup Abelian jika hukum komutatif berikut berlaku untuk setiap elemen $a, b$ di $G$:
+Berdasarkan definisi, suatu grup $G$ disebut grup [Abel](https://kenji.blog/id/p/abel/)ian jika hukum komutatif berikut berlaku untuk setiap elemen $a, b$ di $G$:
 
 $$ a * b = b * a \quad (\text{Hukum komutatif}) $$
 
@@ -93,13 +93,13 @@ flowchart LR
     D --> F["Contoh: Perkalian matriks"]
 ```
 
-## 7.2 Integral Abelian dan Fungsi Abelian
+## 7.2 Integral [Abel](https://kenji.blog/id/p/abel/)ian dan Fungsi [Abel](https://kenji.blog/id/p/abel/)ian
 
-Subjek memoar Paris Abel, **Integral Abelian**, adalah perumuman integral yang melibatkan fungsi aljabar. Setelah kematiannya, teori ini dikembangkan oleh Jacobi dan lainnya, berkembang menjadi teori-teori luar biasa seperti **Varietas Abelian** dalam geometri aljabar.
+Subjek memoar Paris [Abel](https://kenji.blog/id/p/abel/), **Integral [Abel](https://kenji.blog/id/p/abel/)ian**, adalah perumuman integral yang melibatkan fungsi aljabar. Setelah kematiannya, teori ini dikembangkan oleh [Jacobi](https://kenji.blog/id/p/jacobi/) dan lainnya, berkembang menjadi teori-teori luar biasa seperti **Varietas [Abel](https://kenji.blog/id/p/abel/)ian** dalam geometri aljabar.
 
-## 7.3 Teorema Limit Abel
+## 7.3 Teorema Limit [Abel](https://kenji.blog/id/p/abel/)
 
-Abel juga meninggalkan jejak penting dalam bidang analisis. Ini adalah teorema mengenai konvergensi deret tak terhingga.
+[Abel](https://kenji.blog/id/p/abel/) juga meninggalkan jejak penting dalam bidang analisis. Ini adalah teorema mengenai konvergensi deret tak terhingga.
 
 $$ \lim_{x \to 1^-} \sum_{n=0}^{\infty} a_n x^n = \sum_{n=0}^{\infty} a_n \quad (\text{jika deret di ruas kanan konvergen}) $$
 

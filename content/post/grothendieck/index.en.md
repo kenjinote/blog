@@ -59,7 +59,7 @@ After reaching the pinnacle of functional analysis, he surprisingly shifted his 
 
 ### The Tohoku Paper
 
-His paper "Sur quelques points d'algèbre homologique" (On some points of homological algebra), published in the Japanese *Tohoku Mathematical Journal* in 1957, is a historical paper that merged category theory and homological algebra, establishing the concept of an **Abelian Category** . This made it possible to rigorously define sheaf cohomology over any topological space.
+His paper "Sur quelques points d'algèbre homologique" (On some points of homological algebra), published in the Japanese *Tohoku Mathematical Journal* in 1957, is a historical paper that merged category theory and homological algebra, establishing the concept of an **[Abel](https://kenji.blog/en/p/abel/)ian Category** . This made it possible to rigorously define sheaf cohomology over any topological space.
 
 ### The Founding of IHÉS and EGA/SGA
 
@@ -112,7 +112,7 @@ Grothendieck explained his mathematical approach using the analogy of a "nutcrac
 
 Entering the 1980s, he proposed new theories that approached the deepest mysteries of mathematics starting from very simple and visual concepts.
 
-One of these was **"Dessins d'enfants" (Children's Drawings)** . He discovered that from simple graphs drawn on curved surfaces like a sphere, one could extract the action of the absolute Galois group, a highly mysterious and complex object in number theory.
+One of these was **"Dessins d'enfants" (Children's Drawings)** . He discovered that from simple graphs drawn on curved surfaces like a sphere, one could extract the action of the absolute [Galois](https://kenji.blog/en/p/galois/) group, a highly mysterious and complex object in number theory.
 
 Furthermore, he proposed a program called **"Anabelian Geometry."** This is the astonishing conjecture that for certain algebraic varieties, the original geometric and number-theoretic objects can be completely reconstructed solely from the topological data known as the fundamental group.
 

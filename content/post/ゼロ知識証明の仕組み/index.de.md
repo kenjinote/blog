@@ -88,7 +88,7 @@ Hier steht $\circ$ für das Hadamard-Produkt (elementweises Produkt). Diese Eins
 
 ### 2. Umwandlung in QAP (Quadratic Arithmetic Program)
 
-Da es unzählige R1CS-Matrixeinschränkungen gibt, wäre es sehr ineffizient, diese einzeln zu verifizieren. Daher werden diese Einschränkungen mithilfe der Lagrange-Interpolation in eine einzige Polynomgleichung komprimiert. Dies ist das **QAP (Quadratic Arithmetic Program)**.
+Da es unzählige R1CS-Matrixeinschränkungen gibt, wäre es sehr ineffizient, diese einzeln zu verifizieren. Daher werden diese Einschränkungen mithilfe der [Lagrange](https://kenji.blog/de/p/lagrange/)-Interpolation in eine einzige Polynomgleichung komprimiert. Dies ist das **QAP (Quadratic Arithmetic Program)**.
 
 Durch die Umwandlung in ein QAP reduziert sich das zu beweisende Problem auf die Frage: "Ist ein bestimmtes Polynom $P(x)$ durch ein anderes bekanntes Polynom $Z(x)$ teilbar?".
 

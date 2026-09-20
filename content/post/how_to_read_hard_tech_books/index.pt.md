@@ -82,7 +82,7 @@ Ao memorizar livros técnicos, não faz sentido "decorar longas provas inteiras"
 
 - **Cartão Ruim**: "Escreva toda a prova do Algoritmo de Dijkstra."
 - **Cartão Bom**: "No Algoritmo de Dijkstra, qual é a condição para que a distância mais curta de um certo vértice seja considerada determinada?" → "Quando você escolhe o vértice com a menor distância provisória do conjunto de vértices não determinados."
-- **Cartão Bom**: "Qual é a fórmula do Pequeno Teorema de Fermat?" → "Para um número primo $p$ e um inteiro $a$ coprimo a $p$, $a^{p-1} \equiv 1 \pmod p$"
+- **Cartão Bom**: "Qual é a fórmula do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)?" → "Para um número primo $p$ e um inteiro $a$ coprimo a $p$, $a^{p-1} \equiv 1 \pmod p$"
 
 Mesmo ao memorizar fórmulas, é eficaz registrá-las no Anki no formato LaTeX e usar omissão de palavras (Cloze Deletion).
 

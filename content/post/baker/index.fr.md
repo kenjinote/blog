@@ -42,8 +42,8 @@ Pour apprécier la véritable valeur du travail de Baker, nous devons d'abord re
 
 À la fin du XIXe siècle, [Georg Cantor](https://kenji.blog/fr/p/cantor/) a prouvé d'un point de vue de la théorie des ensembles que, bien que l'ensemble des nombres algébriques soit infini dénombrable, l'ensemble de tous les nombres complexes est infini non dénombrable. Cela signifie que « presque tous les nombres sont transcendants ». Cependant, prouver qu'un nombre spécifique donné est transcendant est extrêmement difficile.
 
-### 3.2 Le 7e problème de Hilbert et le théorème de Gelfond-Schneider
-En 1900, [David Hilbert](https://kenji.blog/fr/p/hilbert/) a présenté 23 problèmes non résolus (les 23 problèmes de Hilbert) lors du Congrès international des mathématiciens à Paris. Son 7e problème était le suivant :
+### 3.2 Le 7e problème de [Hilbert](https://kenji.blog/fr/p/hilbert/) et le théorème de Gelfond-Schneider
+En 1900, [David Hilbert](https://kenji.blog/fr/p/hilbert/) a présenté 23 problèmes non résolus (les 23 problèmes de [Hilbert](https://kenji.blog/fr/p/hilbert/)) lors du Congrès international des mathématiciens à Paris. Son 7e problème était le suivant :
 
 > « Si $\alpha$ est un nombre algébrique autre que $0$ ou $1$, et $\beta$ est un nombre algébrique irrationnel, $\alpha^\beta$ est-il toujours un nombre transcendant ? »
 

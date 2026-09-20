@@ -56,7 +56,7 @@ De plus, un groupe qui satisfait la condition suivante, où l'ordre des opérati
 L'ensemble des points sur une courbe elliptique forme ce **groupe abélien** en définissant une règle d'addition spécifique.
 
 ### 2.2. Corps finis (Finite Field)
-Dans la théorie cryptographique, nous n'utilisons pas des corps ayant un nombre infini et continu d'éléments comme les nombres réels ou complexes, mais plutôt des **corps finis (Finite Field)** ou corps de Galois (Galois Field), dont le nombre d'éléments est fini.
+Dans la théorie cryptographique, nous n'utilisons pas des corps ayant un nombre infini et continu d'éléments comme les nombres réels ou complexes, mais plutôt des **corps finis (Finite Field)** ou corps de [Galois](https://kenji.blog/fr/p/galois/) ([Galois](https://kenji.blog/fr/p/galois/) Field), dont le nombre d'éléments est fini.
 
 Le corps fini le plus fondamental est le **corps premier $\mathbb{F}_p$** utilisant un nombre premier $p$. Il s'agit de l'ensemble des entiers $\{0, 1, 2, \dots, p-1\}$ muni des quatre opérations arithmétiques (addition, soustraction, multiplication, division) définies modulo $p$ (le reste de la division par $p$).
 
@@ -68,7 +68,7 @@ Le corps fini le plus fondamental est le **corps premier $\mathbb{F}_p$** utilis
 Le calcul de l'**inverse multiplicatif (Modular Multiplicative Inverse)** est extrêmement important dans l'implémentation cryptographique. Pour trouver $b^{-1}$ satisfaisant $b \times b^{-1} \equiv 1 \pmod p$, les deux algorithmes suivants sont principalement utilisés :
 
 1. **Algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) étendu (Extended [[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)** : Il est rapide, mais selon l'implémentation, le temps de traitement dépend des valeurs d'entrée, ce qui présente un risque d'attaque temporelle.
-2. **Petit théorème de Fermat ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))** : Lorsque $p$ est un nombre premier et $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ est vrai. En divisant les deux côtés par $b$, on obtient $b^{p-2} \equiv b^{-1} \pmod p$. Autrement dit, l'inverse peut être trouvé en calculant $b$ à la puissance $p-2$. Comme l'opération d'exponentiation est plus facile à implémenter en temps constant, elle est préférée dans les implémentations cryptographiques.
+2. **Petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))** : Lorsque $p$ est un nombre premier et $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ est vrai. En divisant les deux côtés par $b$, on obtient $b^{p-2} \equiv b^{-1} \pmod p$. Autrement dit, l'inverse peut être trouvé en calculant $b$ à la puissance $p-2$. Comme l'opération d'exponentiation est plus facile à implémenter en temps constant, elle est préférée dans les implémentations cryptographiques.
 
 ---
 
@@ -152,7 +152,7 @@ $$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
 $$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
 
 > [!IMPORTANT]
-> Ces formules contiennent des **divisions (calcul de l'inverse modulo)** telles que $(x_2 - x_1)^{-1}$ et $(2y_1)^{-1}$. Le calcul de l'inverse modulo ayant un coût de calcul très élevé, les implémentations réelles utilisent généralement des systèmes de coordonnées projectives comme les **"coordonnées jacobiennes (Jacobian Coordinates)"** pour retarder la division.
+> Ces formules contiennent des **divisions (calcul de l'inverse modulo)** telles que $(x_2 - x_1)^{-1}$ et $(2y_1)^{-1}$. Le calcul de l'inverse modulo ayant un coût de calcul très élevé, les implémentations réelles utilisent généralement des systèmes de coordonnées projectives comme les **"coordonnées jacobiennes ([Jacobi](https://kenji.blog/fr/p/jacobi/)an Coordinates)"** pour retarder la division.
 
 ---
 
@@ -277,7 +277,7 @@ Cependant, si le branchement conditionnel (`if (k_i == 0)`) lui-même existe, il
 Nous supposerons l'utilisation de `boost::multiprecision::cpp_int` pour les opérations sur les très grands entiers.
 
 ### 8.1. Arithmétique modulaire et inverse
-Tout d'abord, nous définissons des fonctions d'aide pour les opérations sur les corps finis. Nous implémentons le calcul de l'inverse en utilisant le petit théorème de Fermat.
+Tout d'abord, nous définissons des fonctions d'aide pour les opérations sur les corps finis. Nous implémentons le calcul de l'inverse en utilisant le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
 
 ```cpp
 #include <iostream>

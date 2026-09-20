@@ -118,7 +118,7 @@ Por exemplo, imagine que você queira encontrar o resto de $7^{100}$ dividido po
 
 ## 4. Base Matemática 3 Sustentando a Criptografia RSA: Função de Euler e Teorema de Euler
 
-A partir daqui, entra a matemática mágica que forma o núcleo da criptografia RSA. Apresentamos o "Teorema de Euler", que é uma generalização do "Pequeno Teorema de Fermat".
+A partir daqui, entra a matemática mágica que forma o núcleo da criptografia RSA. Apresentamos o "Teorema de Euler", que é uma generalização do "Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)".
 
 ### 4.1 A Função Totiente de Euler $\phi(N)$
 
@@ -145,7 +145,7 @@ Essa propriedade funciona como a "porta dos fundos secreta (alçapão)" na cript
 Quando um inteiro $a$ e $N$ são coprimos, a seguinte congruência é verdadeira:
 $$ a^{\phi(N)} \equiv 1 \pmod N $$
 
-Isso é uma propriedade surpreendente que diz: "quando você multiplica um certo número $a$ por ele mesmo $\phi(N)$ vezes e divide por $N$, o resto será sempre $1$". (Se $N$ for um número primo $p$, torna-se $a^{p-1} \equiv 1 \pmod p$, que é chamado de Pequeno Teorema de Fermat).
+Isso é uma propriedade surpreendente que diz: "quando você multiplica um certo número $a$ por ele mesmo $\phi(N)$ vezes e divide por $N$, o resto será sempre $1$". (Se $N$ for um número primo $p$, torna-se $a^{p-1} \equiv 1 \pmod p$, que é chamado de Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)).
 
 Vamos transformar este Teorema de Euler. Multiplicamos ambos os lados por $a$ mais uma vez.
 $$ a^{\phi(N) + 1} \equiv a \pmod N $$

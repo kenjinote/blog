@@ -52,7 +52,7 @@ bool is_prime_trial_division(long long n) {
 
 # 2. Тест Ферма: Начало вероятностной проверки на простоту
 
-Чтобы преодолеть ограничения метода пробных делений, были придуманы «вероятностные алгоритмы» (Probabilistic Algorithm), использующие теоремы теории чисел. Ярким примером является «Тест Ферма на простоту» (Fermat Primality Test), основанный на малой теореме Ферма.
+Чтобы преодолеть ограничения метода пробных делений, были придуманы «вероятностные алгоритмы» (Probabilistic Algorithm), использующие теоремы теории чисел. Ярким примером является «Тест Ферма на простоту» ([Fermat](https://kenji.blog/ru/p/fermat/) Primality Test), основанный на малой теореме Ферма.
 
 ## [Малая теорема Ферма](https://kenji.blog/ru/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/ru/p/fermats-little-theorem/))
 

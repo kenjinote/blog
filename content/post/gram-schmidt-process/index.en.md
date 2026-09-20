@@ -190,7 +190,7 @@ Now, let's apply the Gram-Schmidt orthogonalization process to the simplest poly
 * Calculating $\mathbf{u}_1(x) = x - \text{proj}_{\mathbf{u}_0}(x)$, since $\langle x, 1 \rangle = \int_{-1}^{1} x dx = 0$, we have $\mathbf{u}_1(x) = x$.
 * Calculating $\mathbf{u}_2(x) = x^2 - \text{proj}_{\mathbf{u}_0}(x^2) - \text{proj}_{\mathbf{u}_1}(x^2)$ gives $\mathbf{u}_2(x) = x^2 - \frac{1}{3}$.
 
-The sequence of orthogonal polynomials generated in this way is called **Legendre polynomials**, and they play extremely important roles in electromagnetism and quantum mechanics in physics, as well as in numerical integration (Gaussian quadrature). It is a beautiful example where an algebraic algorithm naturally derives descriptions of deep physical laws.
+The sequence of orthogonal polynomials generated in this way is called **[Legendre](https://kenji.blog/en/p/legendre/) polynomials**, and they play extremely important roles in electromagnetism and quantum mechanics in physics, as well as in numerical integration (Gaussian quadrature). It is a beautiful example where an algebraic algorithm naturally derives descriptions of deep physical laws.
 
 ## 8. Advanced Application 2: QR Decomposition and Data Science
 

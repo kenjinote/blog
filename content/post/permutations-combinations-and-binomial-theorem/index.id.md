@@ -14,9 +14,9 @@ tags:
 
 # Pengantar
 
-Dalam dunia matematika, "permutasi" dan "kombinasi"—metode untuk menghitung jumlah kemungkinan hasil secara logis—adalah konsep dasar yang krusial di berbagai bidang, mulai dari probabilitas dan statistik hingga algoritma ilmu komputer. Memperluas konsep dasar ini ke ranah aljabar membawa kita pada "Teorema Binomial", dan merepresentasikan urutan koefisiennya secara visual dan geometris menghasilkan "Segitiga Pascal". Sepintas, topik-topik matematika ini mungkin tampak independen, namun saat Anda mempelajarinya lebih dalam, Anda menyadari bahwa topik-topik tersebut saling terkait secara menakjubkan, membentuk struktur matematika yang tunggal, masif, dan indah.
+Dalam dunia matematika, "permutasi" dan "kombinasi"—metode untuk menghitung jumlah kemungkinan hasil secara logis—adalah konsep dasar yang krusial di berbagai bidang, mulai dari probabilitas dan statistik hingga algoritma ilmu komputer. Memperluas konsep dasar ini ke ranah aljabar membawa kita pada "Teorema Binomial", dan merepresentasikan urutan koefisiennya secara visual dan geometris menghasilkan "Segitiga [Pascal](https://kenji.blog/id/p/pascal/)". Sepintas, topik-topik matematika ini mungkin tampak independen, namun saat Anda mempelajarinya lebih dalam, Anda menyadari bahwa topik-topik tersebut saling terkait secara menakjubkan, membentuk struktur matematika yang tunggal, masif, dan indah.
 
-Dalam artikel ini, kita akan mulai dengan pemahaman intuitif dan metode perhitungan dasar untuk permutasi dan kombinasi, dan kemudian menjelaskan secara rinci konsep-konsep yang lebih kompleks seperti permutasi dengan pengulangan, permutasi melingkar (siklis), dan kombinasi dengan pengulangan. Dari situ, kita akan menurunkan rumus Teorema Binomial dan simetrinya yang indah, dan pada akhirnya mendalami tema-tema mendalam secara menyeluruh seperti sifat-sifat misterius yang tersembunyi di Segitiga Pascal, hubungannya dengan deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang mendeskripsikan hukum alam, dan struktur fraktal. Mari kita memulai perjalanan untuk sepenuhnya mengapresiasi "keindahan" dan "keteraturan" matematika.
+Dalam artikel ini, kita akan mulai dengan pemahaman intuitif dan metode perhitungan dasar untuk permutasi dan kombinasi, dan kemudian menjelaskan secara rinci konsep-konsep yang lebih kompleks seperti permutasi dengan pengulangan, permutasi melingkar (siklis), dan kombinasi dengan pengulangan. Dari situ, kita akan menurunkan rumus Teorema Binomial dan simetrinya yang indah, dan pada akhirnya mendalami tema-tema mendalam secara menyeluruh seperti sifat-sifat misterius yang tersembunyi di Segitiga [Pascal](https://kenji.blog/id/p/pascal/), hubungannya dengan deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang mendeskripsikan hukum alam, dan struktur fraktal. Mari kita memulai perjalanan untuk sepenuhnya mengapresiasi "keindahan" dan "keteraturan" matematika.
 
 # Apa itu Permutasi?
 
@@ -203,13 +203,13 @@ $$
 
 Menggeneralisasi hal ini, jawaban atas pertanyaan "Dalam perkalian $n$ tanda kurung, berapa total jumlah cara untuk memilih $k$ buah $y$ (dan secara bersamaan $n-k$ buah $x$)?" tepatnya adalah $\binom{n}{k}$. Rumus ekspansi aljabar dan kombinatorika saling bersinggungan secara indah di sini.
 
-# Segitiga Pascal: Geometri Angka yang Indah
+# Segitiga [Pascal](https://kenji.blog/id/p/pascal/): Geometri Angka yang Indah
 
-Menyusun koefisien binomial yang muncul dalam rumus ekspansi Teorema Binomial ke dalam bentuk piramida dari atas ke bawah sebagai $n=0, 1, 2, \dots$ disebut "Segitiga Pascal". Segitiga berstruktur sederhana ini jauh melampaui sekadar bantuan perhitungan belaka, menyimpan sifat-sifat matematika yang sangat indah dan dalam tak terhitung jumlahnya di dalamnya.
+Menyusun koefisien binomial yang muncul dalam rumus ekspansi Teorema Binomial ke dalam bentuk piramida dari atas ke bawah sebagai $n=0, 1, 2, \dots$ disebut "Segitiga [Pascal](https://kenji.blog/id/p/pascal/)". Segitiga berstruktur sederhana ini jauh melampaui sekadar bantuan perhitungan belaka, menyimpan sifat-sifat matematika yang sangat indah dan dalam tak terhitung jumlahnya di dalamnya.
 
-## Aturan Konstruksi Segitiga Pascal
+## Aturan Konstruksi Segitiga [Pascal](https://kenji.blog/id/p/pascal/)
 
-Segitiga Pascal dimulai dengan menempatkan angka $1$ di puncak paling atas (baris 0). Untuk baris-baris berikutnya, angka $1$ selalu ditempatkan di kedua ujungnya, dan semua angka bagian dalam dibangun menurut aturan yang sangat sederhana: "penjumlahan angka kiri atas dan angka kanan atas".
+Segitiga [Pascal](https://kenji.blog/id/p/pascal/) dimulai dengan menempatkan angka $1$ di puncak paling atas (baris 0). Untuk baris-baris berikutnya, angka $1$ selalu ditempatkan di kedua ujungnya, dan semua angka bagian dalam dibangun menurut aturan yang sangat sederhana: "penjumlahan angka kiri atas dan angka kanan atas".
 
 ```mermaid
 graph TD
@@ -236,15 +236,15 @@ graph TD
     R5C5(("1")) --- R4C4
 ```
 
-Angka yang terletak di baris ke-$n$ dari atas (dengan puncaknya menjadi baris ke-0) dan posisi ke-$k$ dari kiri (dengan tepi kiri menjadi posisi ke-0) sesuai persis dengan koefisien binomial $\binom{n}{k}$. Struktur di mana menjumlahkan angka kiri atas $\binom{n-1}{k-1}$ dan angka kanan atas $\binom{n-1}{k}$ sama dengan angka di bawahnya $\binom{n}{k}$ secara geometris merepresentasikan persamaan penting berikut yang disebut Aturan Pascal (Pascal's Rule):
+Angka yang terletak di baris ke-$n$ dari atas (dengan puncaknya menjadi baris ke-0) dan posisi ke-$k$ dari kiri (dengan tepi kiri menjadi posisi ke-0) sesuai persis dengan koefisien binomial $\binom{n}{k}$. Struktur di mana menjumlahkan angka kiri atas $\binom{n-1}{k-1}$ dan angka kanan atas $\binom{n-1}{k}$ sama dengan angka di bawahnya $\binom{n}{k}$ secara geometris merepresentasikan persamaan penting berikut yang disebut Aturan [Pascal](https://kenji.blog/id/p/pascal/) ([Pascal](https://kenji.blog/id/p/pascal/)'s Rule):
 
 $$
 \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
 $$
 
-## Sifat-Sifat Menakjubkan yang Tersembunyi di Segitiga Pascal
+## Sifat-Sifat Menakjubkan yang Tersembunyi di Segitiga [Pascal](https://kenji.blog/id/p/pascal/)
 
-Jika Anda mengamati Segitiga Pascal secara saksama, Anda akan memperhatikan bahwa banyak keteraturan yang tak terhitung jumlahnya tersembunyi di dalamnya. Mari kita perkenalkan beberapa di antaranya.
+Jika Anda mengamati Segitiga [Pascal](https://kenji.blog/id/p/pascal/) secara saksama, Anda akan memperhatikan bahwa banyak keteraturan yang tak terhitung jumlahnya tersembunyi di dalamnya. Mari kita perkenalkan beberapa di antaranya.
 
 ### 1. Simetri Sempurna
 
@@ -264,12 +264,12 @@ Hal ini dapat dengan mudah dibuktikan secara aljabar dari persamaan $(1+1)^n = \
 
 ### 3. Koneksi Tersembunyi dengan Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)
 
-Cobalah menjumlahkan angka-angka Segitiga Pascal di sepanjang "garis diagonal landai." Secara mencengangkan, deret $1, 1, 2, 3, 5, 8, 13, 21, \dots$ muncul.
+Cobalah menjumlahkan angka-angka Segitiga [Pascal](https://kenji.blog/id/p/pascal/) di sepanjang "garis diagonal landai." Secara mencengangkan, deret $1, 1, 2, 3, 5, 8, 13, 21, \dots$ muncul.
 Ini tidak lain adalah **Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)**, di mana Anda menjumlahkan dua angka sebelumnya untuk membuat angka berikutnya. Deret mistik yang muncul di mana-mana di alam, seperti susunan biji bunga matahari dan spiral cangkang nautilus, tertanam dalam-dalam di dalam sebuah segitiga yang hanya menyusun kombinasi. Ini adalah contoh yang sangat indah dan mengharukan yang menunjukkan bagaimana matematika, sebagai produk dari pemikiran logis manusia, terikat dengan ketetapan alam.
 
 ### 4. Geometri Fraktal: Segitiga Sierpinski
 
-Cobalah memperbesar Segitiga Pascal menjadi sangat besar hingga puluhan atau ratusan baris, lalu cat "angka ganjil" di dalamnya dengan warna hitam, dan biarkan "angka genap" kosong. Kemudian, sosok fraktal yang serupa dengan dirinya sendiri (self-similar) yang disebut "Segitiga Sierpinski (Sierpinski Gasket)" terlihat dengan jelas.
+Cobalah memperbesar Segitiga [Pascal](https://kenji.blog/id/p/pascal/) menjadi sangat besar hingga puluhan atau ratusan baris, lalu cat "angka ganjil" di dalamnya dengan warna hitam, dan biarkan "angka genap" kosong. Kemudian, sosok fraktal yang serupa dengan dirinya sendiri (self-similar) yang disebut "Segitiga Sierpinski (Sierpinski Gasket)" terlihat dengan jelas.
 Struktur ini, di mana pola segitiga yang sama berulang tak terhingga baik jika Anda memperbesar atau memperkecil keseluruhannya, berfungsi sebagai jembatan yang menghubungkan teori bilangan, geometri, dan teori kekacauan (chaos theory).
 
 # Perluasan ke Teorema Multinomial
@@ -301,8 +301,8 @@ Mulai dari menghitung probabilitas pelemparan koin hingga memprediksi probabilit
 
 # Kesimpulan
 
-Dalam artikel ini, kita telah melakukan perjalanan melintasi lanskap matematika yang luas, mulai dari permutasi dan kombinasi, yang merupakan aturan "berhitung" sederhana, hingga aplikasinya dalam permutasi dengan pengulangan dan permutasi melingkar, meluas lebih jauh ke Teorema Binomial aljabar, dan mencapai penjelajahan visual atas Segitiga Pascal.
+Dalam artikel ini, kita telah melakukan perjalanan melintasi lanskap matematika yang luas, mulai dari permutasi dan kombinasi, yang merupakan aturan "berhitung" sederhana, hingga aplikasinya dalam permutasi dengan pengulangan dan permutasi melingkar, meluas lebih jauh ke Teorema Binomial aljabar, dan mencapai penjelajahan visual atas Segitiga [Pascal](https://kenji.blog/id/p/pascal/).
 
 Dengan mengabstraksi dan menggali tindakan yang sangat sederhana dan primitif dalam "memilih beberapa item dari yang lain yang berbeda" menggunakan bahasa matematika yang ketat, menjadi jelas bahwa dunia matematika yang sangat kaya dan indah memanjang ke luar—melibatkan simetri sempurna, aturan pangkat 2, deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang menggambarkan dunia alam, dan struktur fraktal yang tak terhingga.
 
-Rumus dan teorema matematika bukan semata-mata alat anorganik untuk memecahkan soal ujian. Mereka adalah karya seni tertinggi umat manusia, mengekspresikan tatanan tak kasat mata di balik dunia yang mengelilingi kita dan hubungan sangat indah yang ditenun oleh angka-angka. Kami berharap dengan bersentuhan dengan keteraturan angka yang indah yang ditunjukkan oleh permutasi, kombinasi, dan Segitiga Pascal ini, Anda telah merasakan pesona sejati dan kedalaman yang dimiliki disiplin matematika.
+Rumus dan teorema matematika bukan semata-mata alat anorganik untuk memecahkan soal ujian. Mereka adalah karya seni tertinggi umat manusia, mengekspresikan tatanan tak kasat mata di balik dunia yang mengelilingi kita dan hubungan sangat indah yang ditenun oleh angka-angka. Kami berharap dengan bersentuhan dengan keteraturan angka yang indah yang ditunjukkan oleh permutasi, kombinasi, dan Segitiga [Pascal](https://kenji.blog/id/p/pascal/) ini, Anda telah merasakan pesona sejati dan kedalaman yang dimiliki disiplin matematika.

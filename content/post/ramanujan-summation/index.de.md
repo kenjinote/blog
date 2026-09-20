@@ -130,15 +130,15 @@ So wird die erstaunliche Gleichung **$1 + 2 + 3 + 4 + \dots = -\frac{1}{12}$** h
 
 ---
 
-## 3. Analytische Fortsetzung und die Riemannsche Zetafunktion
+## 3. Analytische Fortsetzung und die [Riemann](https://kenji.blog/de/p/riemann/)sche Zetafunktion
 
 Die obigen algebraischen Manipulationen mögen auf den ersten Blick wie bloße Tricks oder Sophismen wirken. Tatsächlich ist es in der strengen Mathematik nicht erlaubt, gewöhnliche Rechenoperationen bedenkenlos auf divergente Reihen anzuwenden.
 
 Doch dieses Ergebnis ist keineswegs bedeutungslos. In der modernen Mathematik lässt es sich durch das strenge Konzept der **analytischen Fortsetzung** untermauern.
 
-### Die Riemannsche Zetafunktion
+### Die [Riemann](https://kenji.blog/de/p/riemann/)sche Zetafunktion
 
-Um die analytische Fortsetzung zu erklären, führen wir die **Riemannsche Zetafunktion** $\zeta(s)$ ein. Sie ist wie folgt definiert:
+Um die analytische Fortsetzung zu erklären, führen wir die **[Riemann](https://kenji.blog/de/p/riemann/)sche Zetafunktion** $\zeta(s)$ ein. Sie ist wie folgt definiert:
 
 $$
 \zeta(s) = 1^{-s} + 2^{-s} + 3^{-s} + 4^{-s} + \dots = \sum_{n=1}^{\infty} \frac{1}{n^s}
@@ -167,7 +167,7 @@ graph TD
     C --> D["ζ(-1) = -1/12"]
 ```
 
-Riemann bewies, dass die Zetafunktion eindeutig auf die gesamte komplexe Ebene (mit Ausnahme des Pols bei $s=1$) fortgesetzt werden kann. Der Wert der fortgesetzten Funktion bei $s = -1$ ergibt tatsächlich **$-\frac{1}{12}$**.
+[Riemann](https://kenji.blog/de/p/riemann/) bewies, dass die Zetafunktion eindeutig auf die gesamte komplexe Ebene (mit Ausnahme des Pols bei $s=1$) fortgesetzt werden kann. Der Wert der fortgesetzten Funktion bei $s = -1$ ergibt tatsächlich **$-\frac{1}{12}$**.
 
 Das bedeutet: Die Gleichung „ $1+2+3+... = -1/12$ " ist nicht im gewöhnlichen Sinne einer Summe zu verstehen, sondern als Wert, der „durch analytische Fortsetzung der Zetafunktion gerechtfertigt" wird.
 

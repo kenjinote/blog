@@ -42,7 +42,7 @@ L'histoire de l'évolution des algorithmes de factorisation du passé a égaleme
 
 ## 3. L'algorithme complet et la structure mathématique de GNFS
 
-GNFS possède des fondations mathématiques extrêmement complexes et avancées. L'idée de base s'inscrit dans la continuité du petit théorème de Fermat et du crible quadratique (QS), qui consiste à trouver des paires non triviales $(X, Y)$ satisfaisant la congruence $X^2 \equiv Y^2 \pmod n$ et $X \not\equiv \pm Y \pmod n$, pour en déduire un facteur de $n$, $\gcd(X-Y, n)$.
+GNFS possède des fondations mathématiques extrêmement complexes et avancées. L'idée de base s'inscrit dans la continuité du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) et du crible quadratique (QS), qui consiste à trouver des paires non triviales $(X, Y)$ satisfaisant la congruence $X^2 \equiv Y^2 \pmod n$ et $X \not\equiv \pm Y \pmod n$, pour en déduire un facteur de $n$, $\gcd(X-Y, n)$.
 
 Cependant, l'essence de GNFS réside dans le fait qu'il n'effectue pas cela uniquement dans le corps des nombres rationnels $\mathbb{Q}$, mais qu'il recherche simultanément des « nombres friables (Smooth numbers) » à la fois dans un corps d'extension $\mathbb{Q}(\alpha)$ appelé corps de nombres algébriques (Algebraic Number Field) et dans le corps des rationnels, et construit des relations de congruence par le biais d'homomorphismes.
 

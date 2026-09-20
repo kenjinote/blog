@@ -56,7 +56,7 @@ $$ E(\mathbb{Q}) \cong E(\mathbb{Q})_{\text{tors}} \oplus \mathbb{Z}^r $$
 
 Here, $E(\mathbb{Q})_{\text{tors}}$ is a **torsion subgroup** consisting of a finite number of points, and $r$ is a non-negative integer called the **rank**.
 
-This theorem means that in order to find all infinitely many rational points of an elliptic curve, it is sufficient to find a finite number of "basis" points. It is a monumental result in arithmetic geometry. Mordell's proof was a modern refinement of Fermat's "Method of infinite descent".
+This theorem means that in order to find all infinitely many rational points of an elliptic curve, it is sufficient to find a finite number of "basis" points. It is a monumental result in arithmetic geometry. Mordell's proof was a modern refinement of [Fermat](https://kenji.blog/en/p/fermat/)'s "Method of infinite descent".
 
 Later, in 1928, the French mathematician [André Weil](https://kenji.blog/en/p/weil/) generalized this theorem to general number fields and abelian varieties, so it is now often called the **Mordell-Weil Theorem**.
 
@@ -85,7 +85,7 @@ $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
 This conjecture remained unsolved for over 60 years. However, in 1983, it was finally proved by the German mathematician [Gerd Faltings](https://kenji.blog/en/p/faltings/), becoming **Faltings's Theorem**. For this achievement, Faltings was awarded the Fields Medal in 1986.
 
-Furthermore, the equation for [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/), $x^n + y^n = z^n$, has a genus of 3 or more when $n \ge 4$. Therefore, from the Mordell Conjecture (Faltings's Theorem), it immediately follows that the Fermat equation has at most finitely many rational solutions for each $n$.
+Furthermore, the equation for [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/), $x^n + y^n = z^n$, has a genus of 3 or more when $n \ge 4$. Therefore, from the Mordell Conjecture (Faltings's Theorem), it immediately follows that the [Fermat](https://kenji.blog/en/p/fermat/) equation has at most finitely many rational solutions for each $n$.
 
 ## 7. Involvement with Ramanujan and Modular Forms
 

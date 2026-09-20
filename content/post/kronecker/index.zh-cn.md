@@ -20,7 +20,7 @@ tags:
 > "Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk."
 > （上帝创造了整数，其余皆是人造）
 
-在数学史上，很少有引言能像这句话一样著名，或者如此完美地概括了一位数学家的思想。说出这番话的是19世纪卓越的德国数学家 **利奥波德·克罗内克** （Leopold Kronecker, 1823–1891）。
+在数学史上，很少有引言能像这句话一样著名，或者如此完美地概括了一位数学家的思想。说出这番话的是19世纪卓越的德国数学家 **利奥波德·克罗内克** （Leopold [Kronecker](https://kenji.blog/zh-cn/p/kronecker/), 1823–1891）。
 
 这句话并非仅仅具有诗意；其背后是他对 **数学构造主义** （Constructivism）的强烈信仰。在这篇文章中，我们将深入探讨克罗内克的一生、他在数学界引发的争议，以及他为现代数学留下的宏伟遗产。
 
@@ -74,7 +74,7 @@ graph TD
 
 尽管克罗内克的思想有时显得极端，但他的数学成就无可争议地处于顶尖水平，他的名字被冠于现代数学中众多的概念之上。
 
-## 4.1. 克罗内克δ (Kronecker Delta)
+## 4.1. 克罗内克δ ([Kronecker](https://kenji.blog/zh-cn/p/kronecker/) Delta)
 
 也许最广为人知的是“克罗内克δ”。这个符号频繁出现在线性代数和物理学（如量子力学和张量分析）中，其定义如下：
 
@@ -91,7 +91,7 @@ $$
 \mathbf{e}_i \cdot \mathbf{e}_j = \delta_{ij}
 $$
 
-## 4.2. 克罗内克积 (Kronecker Product)
+## 4.2. 克罗内克积 ([Kronecker](https://kenji.blog/zh-cn/p/kronecker/) Product)
 
 矩阵张量积的一种——“克罗内克积”，也是以他的名字命名的。对于矩阵 $A$ （大小为 $m \times n$）和矩阵 $B$ （大小为 $p \times q$），它们的克罗内克积 $A \otimes B$ 被定义为一个大小为 $(mp) \times (nq)$ 的分块矩阵：
 
@@ -105,7 +105,7 @@ $$
 
 这在量子信息理论中描述多体系统、信号处理以及机器学习算法中发挥着核心作用。
 
-## 4.3. 克罗内克-韦伯定理 (Kronecker-Weber Theorem)
+## 4.3. 克罗内克-韦伯定理 ([Kronecker](https://kenji.blog/zh-cn/p/kronecker/)-Weber Theorem)
 
 代数数论中一个里程碑式的支柱是“克罗内克-韦伯定理”。该定理指出：
 

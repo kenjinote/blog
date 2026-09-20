@@ -52,7 +52,7 @@ $$
 P(r) = \frac{\frac{1}{r^\alpha}}{\sum_{n=1}^{N} \frac{1}{n^\alpha}}
 $$
 
-Aquí, $N$ es la variedad de elementos (como el tamaño del vocabulario). La serie del denominador converge a la función zeta de Riemann $\zeta(\alpha)$ en el límite $\alpha > 1$. Por lo tanto, la **Ley de Zipf** a veces se denomina distribución zeta.
+Aquí, $N$ es la variedad de elementos (como el tamaño del vocabulario). La serie del denominador converge a la función zeta de [Riemann](https://kenji.blog/es/p/riemann/) $\zeta(\alpha)$ en el límite $\alpha > 1$. Por lo tanto, la **Ley de Zipf** a veces se denomina distribución zeta.
 
 Al tomar el logaritmo, esta relación se puede visualizar más claramente.
 

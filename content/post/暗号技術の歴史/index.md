@@ -120,7 +120,7 @@ DESは「ファイステル構造（Feistel Network）」と呼ばれるアー�
 ## AES (Advanced Encryption Standard)
 DESに代わる新たな標準として、2001年に制定されたのが「AES」です。公募によって選ばれたベルギーの暗号学者による「Rijndael（ラインダール）」アルゴリズムが採用されました。
 
-AESはファイステル構造ではなく「SPN構造（Substitution-Permutation Network）」を採用し、ガロア体（有限体） $GF(2^8)$ 上の数学的演算を利用しています。鍵長は128、192、256ビットから選択でき、現在でも世界中で標準的な共通鍵暗号として広く利用されています。
+AESはファイステル構造ではなく「SPN構造（Substitution-Permutation Network）」を採用し、[ガロア](https://kenji.blog/p/galois/)体（有限体） $GF(2^8)$ 上の数学的演算を利用しています。鍵長は128、192、256ビットから選択でき、現在でも世界中で標準的な共通鍵暗号として広く利用されています。
 
 ```mermaid
 graph TD

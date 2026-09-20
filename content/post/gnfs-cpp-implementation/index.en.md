@@ -422,7 +422,7 @@ In the algebraic field world $\mathbb{Z}[\alpha]$, since the uniqueness of prime
 
 Here stands a formidable wall in algebraic number theory: the "obstruction of the ideal class group" and the "obstruction of the unit group".
 In GNFS, we use the magic of **"Quadratic Characters"** to break through this wall.
-Columns of quadratic residues (Legendre symbols) for several tens of special prime ideals are secretly added in advance to the matrix in Phase 4. As a result, the found set $S$ ignores the obstructions with an overwhelming probability and successfully forms the "true square of an element $\gamma^2$".
+Columns of quadratic residues ([Legendre](https://kenji.blog/en/p/legendre/) symbols) for several tens of special prime ideals are secretly added in advance to the matrix in Phase 4. As a result, the found set $S$ ignores the obstructions with an overwhelming probability and successfully forms the "true square of an element $\gamma^2$".
 
 The work of finding $\gamma$ (algebraic square root) is computed using highly complex algorithms such as Montgomery's method.
 

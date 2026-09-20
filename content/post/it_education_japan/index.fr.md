@@ -142,7 +142,7 @@ L'enseignement de l'informatique aborde une éducation superficielle à la sécu
 
 Les communications HTTPS et les signatures numériques que nous utilisons quotidiennement sont protégées par la cryptographie à clé publique, comme le chiffrement RSA. La sécurité du chiffrement RSA repose sur la difficulté mathématique (considérée comme un problème NP-intermédiaire) qu'« il est impossible pour un ordinateur classique actuel de factoriser d'énormes nombres entiers en nombres premiers dans un délai raisonnable ».
 
-Les formules mathématiques à la base du chiffrement RSA sont une belle application de la fonction indicatrice d'Euler et du petit théorème de Fermat.
+Les formules mathématiques à la base du chiffrement RSA sont une belle application de la fonction indicatrice d'Euler et du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
 
 1. Choisir deux grands nombres premiers $p$ et $q$.
 2. Calculer $n = p \times q$ (cela fait partie de la clé publique).

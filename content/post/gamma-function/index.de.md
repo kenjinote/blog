@@ -110,6 +110,6 @@ Diese Näherung ist unabdingbar bei der Berechnung der Entropie in der statistis
 
 1. **Wahrscheinlichkeitstheorie und Statistik**: Die Gammaverteilung, Chi-Quadrat-Verteilung und die Student-t-Verteilung werden unter Verwendung der Gammafunktion definiert.
 2. **Physik**: Bei der dimensionalen Regularisierung innerhalb der Quantenmechanik und der Quantenfeldtheorie spielt die Gammafunktion eine Rolle bei der Kontrolle von Divergenzen.
-3. **Analytische Zahlentheorie**: Durch ihre Beziehung zur Riemannschen Zetafunktion nimmt sie eine zentrale Stellung bei der Untersuchung der Primzahlverteilung ein.
+3. **Analytische Zahlentheorie**: Durch ihre Beziehung zur [Riemann](https://kenji.blog/de/p/riemann/)schen Zetafunktion nimmt sie eine zentrale Stellung bei der Untersuchung der Primzahlverteilung ein.
 
 Die Suche, die mit einer einfachen Frage zur Erweiterung der Fakultät auf reelle Zahlen begann, offenbarte eine großartige Struktur, die sich durch die gesamte Mathematik zieht. [Die Gammafunktion](https://kenji.blog/de/p/gamma-function/) ist wahrlich Eulers Meisterwerk und schlägt eine Brücke zwischen der diskreten und der kontinuierlichen Welt.

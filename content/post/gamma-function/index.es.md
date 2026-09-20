@@ -110,6 +110,6 @@ La función Gamma no es simplemente un producto de la curiosidad matemática. Ju
 
 1. **Probabilidad y Estadística**: La distribución Gamma, la distribución Chi-cuadrado y la distribución t de Student se definen utilizando la función Gamma.
 2. **Física**: En la regularización dimensional dentro de la mecánica cuántica y la teoría cuántica de campos, la función Gamma juega un papel en el control de las divergencias.
-3. **Teoría Analítica de Números**: A través de su relación con la función zeta de Riemann, ocupa una posición central en el estudio de la distribución de los números primos.
+3. **Teoría Analítica de Números**: A través de su relación con la función zeta de [Riemann](https://kenji.blog/es/p/riemann/), ocupa una posición central en el estudio de la distribución de los números primos.
 
 La búsqueda que comenzó con una simple pregunta sobre cómo extender el factorial a los números reales reveló una magnífica estructura que atraviesa todas las matemáticas. La función Gamma es verdaderamente la obra maestra de Euler, tendiendo un puente entre el mundo discreto y el continuo.

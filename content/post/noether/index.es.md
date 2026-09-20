@@ -41,11 +41,11 @@ A pesar de haber obtenido su doctorado, no había ningún puesto universitario d
 
 En 1915, [David Hilbert](https://kenji.blog/es/p/hilbert/) y Felix Klein de la Universidad de Gotinga invitaron a Noether a Gotinga para ayudar a resolver problemas matemáticos relacionados con la conservación de la energía en la teoría de la relatividad general de Albert Einstein. Su profundo conocimiento de la teoría de invariantes se consideraba indispensable.
 
-Sin embargo, su posible nombramiento como miembro regular de la facultad (Privatdozent) se encontró con una feroz oposición por parte de profesores de otras disciplinas dentro de la Facultad de Filosofía, de nuevo simplemente porque era una "mujer". Argumentaban: "¿Qué pensarán nuestros soldados cuando regresen a la universidad y descubran que deben aprender a los pies de una mujer?" A esto, Hilbert replicó famosamente:
+Sin embargo, su posible nombramiento como miembro regular de la facultad (Privatdozent) se encontró con una feroz oposición por parte de profesores de otras disciplinas dentro de la Facultad de Filosofía, de nuevo simplemente porque era una "mujer". Argumentaban: "¿Qué pensarán nuestros soldados cuando regresen a la universidad y descubran que deben aprender a los pies de una mujer?" A esto, [Hilbert](https://kenji.blog/es/p/hilbert/) replicó famosamente:
 
 > "No veo que el sexo de la candidata sea un argumento en contra de su admisión como Privatdozent. Después de todo, somos una universidad, no una casa de baños públicos".
 
-En última instancia, durante sus primeros años, se vio obligada a dar clases bajo el nombre de Hilbert como "asistente de Hilbert" sin sueldo. Sin embargo, su investigación produjo un logro monumental que sacudiría la historia de la física. Este fue el **teorema de Noether**, publicado en 1918.
+En última instancia, durante sus primeros años, se vio obligada a dar clases bajo el nombre de [Hilbert](https://kenji.blog/es/p/hilbert/) como "asistente de [Hilbert](https://kenji.blog/es/p/hilbert/)" sin sueldo. Sin embargo, su investigación produjo un logro monumental que sacudiría la historia de la física. Este fue el **teorema de Noether**, publicado en 1918.
 
 ### Expresión matemática del teorema de Noether
 

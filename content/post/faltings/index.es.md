@@ -34,7 +34,7 @@ El enunciado de la conjetura es el siguiente:
 
 > Una curva algebraica sobre un cuerpo numérico algebraico $K$ de género $g \ge 2$ tiene solo un número finito de puntos racionales sobre $K$.
 
-Esta conjetura estaba profundamente relacionada con el teorema de Pitágoras y el Último Teorema de Fermat, y fue un problema formidable que muchos genios matemáticos habían desafiado y fallado a lo largo de los años.
+Esta conjetura estaba profundamente relacionada con el teorema de Pitágoras y el Último Teorema de [Fermat](https://kenji.blog/es/p/fermat/), y fue un problema formidable que muchos genios matemáticos habían desafiado y fallado a lo largo de los años.
 
 Faltings atacó este problema manipulando hábilmente la enorme maquinaria de la geometría algebraica construida por [Alexander Grothendieck](https://kenji.blog/es/p/grothendieck/), como la teoría de esquemas y la cohomología etal, e introduciendo además un nuevo marco llamado geometría de Arakelov.
 

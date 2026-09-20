@@ -130,7 +130,7 @@ sequenceDiagram
 
 ### 5.3 拓撲量子運算：任意子的控制
 
-長期以來被認為僅存在於理論上的 **拓撲量子運算** ，終於在2026年進入了實驗證實的階段。由Microsoft等推動的此種方式，使用了被稱為「馬約拉納零模（Majorana Zero Modes）」的非阿貝爾任意子（Non-Abelian Anyons）。
+長期以來被認為僅存在於理論上的 **拓撲量子運算** ，終於在2026年進入了實驗證實的階段。由Microsoft等推動的此種方式，使用了被稱為「馬約拉納零模（Majorana Zero Modes）」的非阿貝爾任意子（Non-[Abel](https://kenji.blog/zh-tw/p/abel/)ian Anyons）。
 
 透過交換任意子粒子位置的「編織（Braiding）」操作來執行量子閘。
 

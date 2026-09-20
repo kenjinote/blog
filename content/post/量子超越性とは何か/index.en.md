@@ -32,7 +32,7 @@ $$
 Here, $\alpha, \beta \in \mathbb{C}$, and they satisfy the normalization condition $|\alpha|^2 + |\beta|^2 = 1$. This property is called "Superposition."
 
 ### Entanglement and Tensor Product
-When there are multiple qubits, the state of the entire system is represented by the tensor product of the state spaces of the individual qubits. A system of $n$ qubits becomes a vector on a $2^n$-dimensional Hilbert space $\mathcal{H}^{\otimes n}$.
+When there are multiple qubits, the state of the entire system is represented by the tensor product of the state spaces of the individual qubits. A system of $n$ qubits becomes a vector on a $2^n$-dimensional [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H}^{\otimes n}$.
 
 $$
 |\Psi\rangle = \sum_{x \in \{0, 1\}^n} c_x |x\rangle

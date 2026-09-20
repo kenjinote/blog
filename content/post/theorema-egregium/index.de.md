@@ -92,7 +92,7 @@ Nicht nur beim Pizza-Essen, sondern auch in der Ingenieurwissenschaft, der Archi
 - ** Pflanzenblätter **: Die Blätter und Blütenblätter vieler Pflanzen haben sich natürlicherweise zu gewellten Formen entwickelt, um Wind und ihrem eigenen Gewicht standzuhalten.
 - ** Gebäude **: Bei Bauwerken, die große Räume mit dünnen Materialien überdachen, wie Schalenstrukturen, werden die mechanische Festigkeit und die geometrischen Eigenschaften gekrümmter Flächen genutzt.
 
-Dieses von Gauss entdeckte Theorem wurde später von seinem Schüler [Bernhard Riemann](https://kenji.blog/de/p/riemann/) auf höherdimensionale Mannigfaltigkeiten erweitert (Riemannsche Geometrie) und bildete schließlich die mathematische Grundlage in Albert Einsteins allgemeiner Relativitätstheorie, um die Schwerkraft als „Krümmung der Raumzeit“ zu beschreiben.
+Dieses von Gauss entdeckte Theorem wurde später von seinem Schüler [Bernhard Riemann](https://kenji.blog/de/p/riemann/) auf höherdimensionale Mannigfaltigkeiten erweitert ([Riemann](https://kenji.blog/de/p/riemann/)sche Geometrie) und bildete schließlich die mathematische Grundlage in Albert Einsteins allgemeiner Relativitätstheorie, um die Schwerkraft als „Krümmung der Raumzeit“ zu beschreiben.
 
 ## 5. Fazit
 

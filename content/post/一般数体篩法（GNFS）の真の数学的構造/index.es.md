@@ -73,7 +73,7 @@ En un mundo de cuerpos algebraicos como $\mathbb{Z}[\alpha]$, **se derrumba la "
 
 Si la factorización prima no es única, el rompecabezas de "contar el número de primos para hacerlos pares" (la criba) es en principio imposible de ejecutar.
 
-### La salvación de Kummer y Dedekind: el "Ideal"
+### La salvación de [Kummer](https://kenji.blog/es/p/kummer/) y Dedekind: el "Ideal"
 Lo que salvó a las matemáticas de este colapso fue el concepto de **"Ideal" (número ideal)** creado por los matemáticos del siglo XIX.
 Al pensar en el "conjunto de múltiplos (ideal)" generado por un elemento en lugar del elemento en sí, volvieron a hacer posible la factorización prima.
 
@@ -136,7 +136,7 @@ A menos que esta unidad $u$ sea en sí misma un cuadrado (elemento cuadrático) 
 Los obstáculos del grupo de clases de ideales y del grupo de unidades. ¿Cómo los superamos?
 Aquí es donde entra la genial técnica introducida por el criptógrafo Leonard Adleman (la "A" de RSA) y otros: los **"Caracteres Cuadráticos" (Quadratic Characters)**.
 
-Para determinar "si un elemento es un cuadrado perfecto dentro de un cuerpo algebraico", utilizamos una versión para cuerpos algebraicos del símbolo de Legendre (residuo cuadrático).
+Para determinar "si un elemento es un cuadrado perfecto dentro de un cuerpo algebraico", utilizamos una versión para cuerpos algebraicos del símbolo de [Legendre](https://kenji.blog/es/p/legendre/) (residuo cuadrático).
 En la matriz gigante anterior (el rompecabezas para hacer que el número de ideales primos sea par), **añadimos en secreto unas cuantas decenas de condiciones (columnas) adicionales para que "los caracteres cuadráticos para algunos ideales primos especiales $\mathfrak{q}$ también sean todos $1$ (pares)"**.
 
 Cuando encontramos un conjunto $S$ que incluso satisface estas condiciones adicionales mediante el cálculo de matrices, por los teoremas profundos de la teoría de números algebraicos, se garantiza que **"los obstáculos tanto del grupo de clases de ideales como del grupo de unidades desaparecerán naturalmente con una probabilidad abrumadora"**.

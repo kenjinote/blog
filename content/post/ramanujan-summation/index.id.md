@@ -130,15 +130,15 @@ Dengan demikian, persamaan mengejutkan **$1 + 2 + 3 + 4 + \dots = -\frac{1}{12}$
 
 ---
 
-## 3. Perluasan Analitik dan Fungsi Zeta Riemann
+## 3. Perluasan Analitik dan Fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/)
 
 Operasi aljabar seperti di atas mungkin pada pandangan pertama terlihat seperti sekadar trik atau sofisme. Menerapkan operasi aritmetika standar tanpa syarat pada deret yang divergen secara tegas tidak diizinkan dalam matematika yang ketat.
 
 Namun, hasil ini tidak sama sekali tidak berarti. Dalam matematika modern, hal ini dapat didukung menggunakan konsep ketat yang disebut **Perluasan Analitik (Analytic Continuation)**.
 
-### Fungsi Zeta Riemann
+### Fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/)
 
-Untuk menjelaskan perluasan analitik, kami akan memperkenalkan **Fungsi Zeta Riemann** $\zeta(s)$. Fungsi zeta didefinisikan sebagai berikut.
+Untuk menjelaskan perluasan analitik, kami akan memperkenalkan **Fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/)** $\zeta(s)$. Fungsi zeta didefinisikan sebagai berikut.
 
 $$
 \zeta(s) = 1^{-s} + 2^{-s} + 3^{-s} + 4^{-s} + \dots = \sum_{n=1}^{\infty} \frac{1}{n^s}
@@ -167,7 +167,7 @@ graph TD
     C --> D["ζ(-1) = -1/12"]
 ```
 
-Riemann membuktikan bahwa fungsi zeta dapat diperluas secara unik ke seluruh bidang kompleks (tidak termasuk kutub pada $s=1$). Jika kita menghitung nilai untuk $s = -1$ dalam fungsi zeta yang diperluas ini, kita menemukan bahwa nilainya menjadi **$-\frac{1}{12}$** dengan luar biasa.
+[Riemann](https://kenji.blog/id/p/riemann/) membuktikan bahwa fungsi zeta dapat diperluas secara unik ke seluruh bidang kompleks (tidak termasuk kutub pada $s=1$). Jika kita menghitung nilai untuk $s = -1$ dalam fungsi zeta yang diperluas ini, kita menemukan bahwa nilainya menjadi **$-\frac{1}{12}$** dengan luar biasa.
 
 Dengan kata lain, ekspresi "$1+2+3+... = -1/12$" dibenarkan bukan sebagai "penjumlahan dalam arti biasa," tetapi sebagai "nilai dalam pengertian perluasan analitik melalui fungsi zeta".
 

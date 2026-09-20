@@ -54,7 +54,7 @@ Ici, H^{p,q}(X) représente la classe des formes différentielles constituée du
 
 Une combinaison linéaire formelle de variétés algébriques (sous-variétés) de dimension inférieure à l'intérieur de la variété X est appelée un **cycle algébrique** (Algebraic Cycle).
 
-Un cycle algébrique de dimension k détermine un élément du groupe de cohomologie de degré 2k de X, par la dualité de Poincaré (Poincaré Duality). Ce qui est important, c'est le fait que les classes de cohomologie déterminées par les sous-variétés algébriques n'apparaissent que dans des composantes spécifiques de la décomposition de Hodge. Plus précisément, la classe de cohomologie définie par une sous-variété algébrique de codimension p (la dimension totale moins la dimension de la sous-variété) appartient à la composante H^{p,p}(X).
+Un cycle algébrique de dimension k détermine un élément du groupe de cohomologie de degré 2k de X, par la dualité de [Poincaré](https://kenji.blog/fr/p/poincare/) ([Poincaré](https://kenji.blog/fr/p/poincare/) Duality). Ce qui est important, c'est le fait que les classes de cohomologie déterminées par les sous-variétés algébriques n'apparaissent que dans des composantes spécifiques de la décomposition de Hodge. Plus précisément, la classe de cohomologie définie par une sous-variété algébrique de codimension p (la dimension totale moins la dimension de la sous-variété) appartient à la composante H^{p,p}(X).
 
 De plus, comme un cycle algébrique est défini par des équations, ses coefficients peuvent être considérés comme des nombres rationnels (ou des entiers). Par conséquent, la classe de cohomologie déterminée par un cycle algébrique appartient également au groupe de cohomologie à coefficients rationnels H^{2p}(X, \mathbb{Q}).
 
@@ -123,7 +123,7 @@ La définition abstraite de la conjecture de Hodge seule peut rendre difficile l
 
 ### 7.1 Tores et courbes elliptiques
 
-L'un des exemples les plus simples et les plus faciles à comprendre est la variété complexe de dimension 1, à savoir une **surface de Riemann** (Riemann Surface). Parmi celles-ci, le tore (de forme torique) de genre 1 (nombre de trous) est connu en géométrie algébrique sous le nom de **courbe elliptique** (Elliptic Curve).
+L'un des exemples les plus simples et les plus faciles à comprendre est la variété complexe de dimension 1, à savoir une **surface de [Riemann](https://kenji.blog/fr/p/riemann/)** ([Riemann](https://kenji.blog/fr/p/riemann/) Surface). Parmi celles-ci, le tore (de forme torique) de genre 1 (nombre de trous) est connu en géométrie algébrique sous le nom de **courbe elliptique** (Elliptic Curve).
 
 Dans le cas d'une courbe elliptique E, la dimension complexe est de 1 (la dimension réelle est de 2). Si l'on considère les groupes de cohomologie, ce qui est intéressant, c'est le groupe de cohomologie de degré 1 H^1(E, \mathbb{C}), qui est une dimension intermédiaire. Cependant, les objets visés par la conjecture de Hodge sont les groupes de cohomologie dont la dimension totale est paire. Par conséquent, il n'y a pas d'énoncé non trivial de la conjecture de Hodge sur la courbe elliptique elle-même (de dimension complexe 1).
 

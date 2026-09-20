@@ -42,8 +42,8 @@ Um den wahren Wert von Bakers Arbeit zu würdigen, müssen wir zunächst die Ein
 
 Im späten 19. Jahrhundert bewies [Georg Cantor](https://kenji.blog/de/p/cantor/) aus einer mengentheoretischen Perspektive, dass die Menge der algebraischen Zahlen abzählbar unendlich ist, die Menge aller komplexen Zahlen jedoch überabzählbar unendlich ist. Das bedeutet, dass „fast alle Zahlen transzendent sind“. Zu beweisen, dass eine bestimmte gegebene Zahl transzendent ist, ist jedoch äußerst schwierig.
 
-### 3.2 Hilberts 7. Problem und der Satz von Gelfond-Schneider
-Im Jahr 1900 präsentierte [David Hilbert](https://kenji.blog/de/p/hilbert/) auf dem Internationalen Mathematikerkongress in Paris 23 ungelöste Probleme (Hilberts 23 Probleme). Sein 7. Problem war folgendes:
+### 3.2 [Hilbert](https://kenji.blog/de/p/hilbert/)s 7. Problem und der Satz von Gelfond-Schneider
+Im Jahr 1900 präsentierte [David Hilbert](https://kenji.blog/de/p/hilbert/) auf dem Internationalen Mathematikerkongress in Paris 23 ungelöste Probleme ([Hilbert](https://kenji.blog/de/p/hilbert/)s 23 Probleme). Sein 7. Problem war folgendes:
 
 > „Wenn $\alpha$ eine algebraische Zahl ungleich $0$ oder $1$ ist und $\beta$ eine irrationale algebraische Zahl ist, ist dann $\alpha^\beta$ immer eine transzendente Zahl?“
 

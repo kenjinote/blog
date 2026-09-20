@@ -17,17 +17,17 @@ In this article, we will thoroughly explain this shocking theorem, which states 
 
 ---
 
-## 1. Stage Background: Hilbert's Program and the Crisis of Mathematics
+## 1. Stage Background: [Hilbert](https://kenji.blog/en/p/hilbert/)'s Program and the Crisis of Mathematics
 
 From the end of the 19th century to the beginning of the 20th century, the world of mathematics faced "paradoxes of set theory (such as Russell's paradox)," and its foundation was shaken. It was [David Hilbert](https://kenji.blog/en/p/hilbert/), the highest authority in the mathematics world at the time, who stood up to save this "crisis of mathematics."
 
-Hilbert attempted to completely symbolize all mathematical reasoning and reconstruct mathematics solely with mechanical rules. The "Hilbert's Program" he advocated aimed to prove the following three properties in the Formal System of mathematics:
+[Hilbert](https://kenji.blog/en/p/hilbert/) attempted to completely symbolize all mathematical reasoning and reconstruct mathematics solely with mechanical rules. The "[Hilbert](https://kenji.blog/en/p/hilbert/)'s Program" he advocated aimed to prove the following three properties in the Formal System of mathematics:
 
 1. **Consistency**: That there are no contradictions within the system (that a certain proposition $P$ and its negation $\neg P$ are not both proven).
 2. **Completeness**: That any mathematical proposition can always be proven either true or false within that system.
 3. **Decidability**: That when an arbitrary proposition is given, there exists a mechanical procedure to determine whether it can be proven.
 
-Hilbert left behind the famous words, "We must know. We will know. (Wir müssen wissen. Wir werden wissen.)," and believed without a doubt that mathematics would become a perfect castle of logic that could solve everything.
+[Hilbert](https://kenji.blog/en/p/hilbert/) left behind the famous words, "We must know. We will know. (Wir müssen wissen. Wir werden wissen.)," and believed without a doubt that mathematics would become a perfect castle of logic that could solve everything.
 
 ```mermaid
 graph TD
@@ -47,11 +47,11 @@ The subject of Gödel's theorems are systems that include "addition and multipli
 
 For example, the widely known fact that "$1 + 1 = 2$" is merely one "theorem" that is mechanically derived by the manipulation of symbols within the formal system of Peano Arithmetic.
 
-Hilbert thought that if we expanded such formal systems, we could eventually encompass all mathematical truths.
+[Hilbert](https://kenji.blog/en/p/hilbert/) thought that if we expanded such formal systems, we could eventually encompass all mathematical truths.
 
 ## 3. The Shock of the First Incompleteness Theorem: "True but Unprovable" Propositions
 
-However, in 1931, [Kurt Gödel](https://kenji.blog/en/p/godel/), who was only 25 years old at the time, published a paper that shattered Hilbert's dream to pieces. That is the **First Incompleteness Theorem**.
+However, in 1931, [Kurt Gödel](https://kenji.blog/en/p/godel/), who was only 25 years old at the time, published a paper that shattered [Hilbert](https://kenji.blog/en/p/hilbert/)'s dream to pieces. That is the **First Incompleteness Theorem**.
 
 > **First Incompleteness Theorem** 
 > In any consistent formal system that includes Peano Arithmetic, there will always exist propositions that are true but cannot be proven within that system.
@@ -114,7 +114,7 @@ The First Incompleteness Theorem alone shocked the mathematics world, but Gödel
 > **Second Incompleteness Theorem** 
 > A consistent formal system that includes Peano Arithmetic cannot prove its own consistency within that system.
 
-Hilbert tried to prove that mathematics is consistent using the power of mathematics itself (the most important task of Hilbert's Program). However, the Second Incompleteness Theorem declared that "no system can prove by its own power that it is not insane (not contradictory)."
+[Hilbert](https://kenji.blog/en/p/hilbert/) tried to prove that mathematics is consistent using the power of mathematics itself (the most important task of [Hilbert](https://kenji.blog/en/p/hilbert/)'s Program). However, the Second Incompleteness Theorem declared that "no system can prove by its own power that it is not insane (not contradictory)."
 
 To understand this intuitively, let's think about it like this:
 Suppose someone claims, "I absolutely never tell a lie!" However, we cannot prove that "this person is not a liar" based solely on their words. Because if that person is a liar, the statement "I absolutely never tell a lie" itself might be a lie.

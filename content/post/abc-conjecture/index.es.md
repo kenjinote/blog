@@ -47,7 +47,7 @@ El diagrama anterior muestra de manera simplificada el concepto de transmisión 
 
 ### Frobenioide y Teatro de Hodge
 
-Conceptos importantes que componen la Teoría IUT incluyen el **frobenioide** (Frobenioid) y el **teatro de Hodge** (Hodge Theater). Estos son mecanismos para codificar geométricamente la información de la teoría de números a través de la acción del grupo absoluto de Galois o el grupo fundamental de un cuerpo numérico.
+Conceptos importantes que componen la Teoría IUT incluyen el **frobenioide** (Frobenioid) y el **teatro de Hodge** (Hodge Theater). Estos son mecanismos para codificar geométricamente la información de la teoría de números a través de la acción del grupo absoluto de [Galois](https://kenji.blog/es/p/galois/) o el grupo fundamental de un cuerpo numérico.
 
 $$ \Theta \text{-enlace} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
 
@@ -55,13 +55,13 @@ El enlace Theta ($\Theta$-enlace) juega el papel de transmitir información de m
 
 # Consecuencias asombrosas de la conjetura ABC
 
-Si la conjetura ABC se demostrara completamente (ya sea mediante la Teoría IUT o por otros métodos), conduciría inmediatamente a muchos teoremas importantes en la teoría de números. Comparemos esto con la **conjetura de Mordell** (ahora conocida como el teorema de Faltings) o el **último teorema de Fermat**.
+Si la conjetura ABC se demostrara completamente (ya sea mediante la Teoría IUT o por otros métodos), conduciría inmediatamente a muchos teoremas importantes en la teoría de números. Comparemos esto con la **conjetura de Mordell** (ahora conocida como el teorema de Faltings) o el **último teorema de [Fermat](https://kenji.blog/es/p/fermat/)**.
 
-## Aplicación al último teorema de Fermat
+## Aplicación al último teorema de [Fermat](https://kenji.blog/es/p/fermat/)
 
 [El último teorema de Fermat](https://kenji.blog/es/p/fermats-last-theorem/) establece que para $n \ge 3$, no existe ninguna terna de números enteros positivos $(x, y, z)$ que satisfaga $x^n + y^n = z^n$. Fue demostrado por [Andrew Wiles](https://kenji.blog/es/p/wiles/) en 1995, pero se utilizaron matemáticas sumamente avanzadas y complejas.
 
-Si asumimos que la conjetura ABC es cierta, sorprendentemente, el último teorema de Fermat (al menos cuando $n$ es suficientemente grande) puede demostrarse en apenas unas pocas líneas.
+Si asumimos que la conjetura ABC es cierta, sorprendentemente, el último teorema de [Fermat](https://kenji.blog/es/p/fermat/) (al menos cuando $n$ es suficientemente grande) puede demostrarse en apenas unas pocas líneas.
 
 Supongamos $x^n + y^n = z^n$, y que $(x, y, z)$ son coprimos. Aplicando la conjetura ABC a $a=x^n$, $b=y^n$, $c=z^n$, obtenemos:
 

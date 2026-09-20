@@ -49,7 +49,7 @@ Meskipun sibuk dengan tugas mengajar harian yang berat, ia begadang hingga larut
 
 ## Kembalinya yang Spektakuler ke Dunia Matematika dan Kejayaan
 
-Setelah sekian lama tidak dikenal sebagai guru sekolah pedesaan, titik balik dramatis datang bagi Weierstrass pada tahun 1854. Ia menerbitkan makalah terobosan tentang fungsi Abelian di "Jurnal Crelle" (Jurnal untuk Matematika Murni dan Terapan), jurnal matematika paling otoritatif pada saat itu.
+Setelah sekian lama tidak dikenal sebagai guru sekolah pedesaan, titik balik dramatis datang bagi Weierstrass pada tahun 1854. Ia menerbitkan makalah terobosan tentang fungsi [Abel](https://kenji.blog/id/p/abel/)ian di "Jurnal Crelle" (Jurnal untuk Matematika Murni dan Terapan), jurnal matematika paling otoritatif pada saat itu.
 
 Makalah ini segera menarik perhatian para matematikawan di seluruh Eropa. Penelitiannya secara brilian memecahkan masalah sulit yang telah diselesaikan oleh para matematikawan terkemuka saat itu selama bertahun-tahun, dan kebaruan metodenya serta kesempurnaan logikanya tak tertandingi. Universitas Königsberg memberinya gelar doktor kehormatan sebagai pengakuan atas pencapaiannya, dan Kementerian Pendidikan Prusia juga mengambil langkah-langkah untuk membebaskannya dari tugasnya sebagai guru gimnasium.
 
@@ -86,9 +86,9 @@ Penemuan ini membuat matematikawan sadar dengan menyakitkan betapa tidak dapat d
 
 ### 3. Konstruksi Analisis Kompleks dan Teori Fungsi Elips
 
-Weierstrass juga memainkan peran yang menentukan dalam teori fungsi kompleks. Sementara Cauchy dan Riemann menekankan intuisi dan integrasi geometris, Weierstrass mengadopsi pendekatan aljabar berdasarkan "deret pangkat". Ia secara ketat mendefinisikan fungsi kompleks menggunakan konsep kelanjutan analitik dan menetapkan metode standar analisis kompleks modern.
+Weierstrass juga memainkan peran yang menentukan dalam teori fungsi kompleks. Sementara [Cauchy](https://kenji.blog/id/p/cauchy/) dan [Riemann](https://kenji.blog/id/p/riemann/) menekankan intuisi dan integrasi geometris, Weierstrass mengadopsi pendekatan aljabar berdasarkan "deret pangkat". Ia secara ketat mendefinisikan fungsi kompleks menggunakan konsep kelanjutan analitik dan menetapkan metode standar analisis kompleks modern.
 
-Ia juga membangun sistem yang sangat indah di bidang teori fungsi elips dan teori fungsi Abelian. Fungsi $\wp$ (p-function) Weierstrass masih banyak digunakan saat ini sebagai fungsi paling mendasar dalam menangani fungsi elips.
+Ia juga membangun sistem yang sangat indah di bidang teori fungsi elips dan teori fungsi [Abel](https://kenji.blog/id/p/abel/)ian. Fungsi $\wp$ (p-function) Weierstrass masih banyak digunakan saat ini sebagai fungsi paling mendasar dalam menangani fungsi elips.
 
 ```mermaid
 graph TD
@@ -120,7 +120,7 @@ Di bawah bimbingan Weierstrass yang berdedikasi, Kovalevskaya mencapai hasil yan
 
 ## Tahun-Tahun Terakhir dan Warisan
 
-Di tahun-tahun terakhirnya, Weierstrass mengalami perselisihan sengit mengenai dasar matematika dengan Leopold Kronecker, seorang kolega dan mantan mahasiswanya. Kronecker menyatakan, "Tuhan menciptakan bilangan bulat, yang lainnya adalah karya manusia," dan mengkritik tajam analisis Weierstrass serta teori himpunan Cantor dari sudut pandang intuisionis. Konflik ini sangat melukai hati Weierstrass.
+Di tahun-tahun terakhirnya, Weierstrass mengalami perselisihan sengit mengenai dasar matematika dengan Leopold [Kronecker](https://kenji.blog/id/p/kronecker/), seorang kolega dan mantan mahasiswanya. [Kronecker](https://kenji.blog/id/p/kronecker/) menyatakan, "Tuhan menciptakan bilangan bulat, yang lainnya adalah karya manusia," dan mengkritik tajam analisis Weierstrass serta teori himpunan Cantor dari sudut pandang intuisionis. Konflik ini sangat melukai hati Weierstrass.
 
 Kesehatannya juga berangsur-angsur memburuk, dan pada tahun-tahun terakhirnya, ia menderita pusing dan bronkitis, yang memaksanya hidup di kursi roda. Meskipun demikian, ia tidak pernah kehilangan hasratnya terhadap matematika sampai akhir hayatnya, mengerjakan kompilasi karya-karyanya sendiri dengan bantuan murid-muridnya.
 

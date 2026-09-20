@@ -34,7 +34,7 @@ L'énoncé de la conjecture est le suivant :
 
 > Une courbe algébrique définie sur un corps de nombres $K$ de genre $g \ge 2$ n'a qu'un nombre fini de points rationnels sur $K$.
 
-Cette conjecture était profondément liée au théorème de Pythagore et au dernier théorème de Fermat, et c'était un problème redoutable que de nombreux mathématiciens de génie avaient tenté de résoudre en vain au fil des ans.
+Cette conjecture était profondément liée au théorème de Pythagore et au dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/), et c'était un problème redoutable que de nombreux mathématiciens de génie avaient tenté de résoudre en vain au fil des ans.
 
 Faltings a attaqué ce problème en manipulant habilement la machinerie massive de la géométrie algébrique construite par [Alexandre Grothendieck](https://kenji.blog/fr/p/grothendieck/), comme la théorie des schémas et la cohomologie étale, et en introduisant en outre un nouveau cadre appelé géométrie d'Arakelov.
 

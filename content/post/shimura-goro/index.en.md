@@ -24,7 +24,7 @@ According to his book "The Map of My Life", he read advanced mathematics books o
 
 ### 2.2 Days at the University of Tokyo
 
-In 1949, Shimura entered the Department of Mathematics, Faculty of Science, at the University of Tokyo. At the time, the Japanese mathematical community, while based on Teiji Takagi's class field theory and the like, was facing the challenge of how to catch up with global trends during the post-war reconstruction period. Here, Shimura met **[Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/)**, with whom he would later form a deep friendship and share a common destiny.
+In 1949, Shimura entered the Department of Mathematics, Faculty of Science, at the University of Tokyo. At the time, the Japanese mathematical community, while based on Teiji [Takagi](https://kenji.blog/en/p/takagi-teiji/)'s class field theory and the like, was facing the challenge of how to catch up with global trends during the post-war reconstruction period. Here, Shimura met **[Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/)**, with whom he would later form a deep friendship and share a common destiny.
 
 Taniyama was a genius mathematician with intuitive and uninhibited ideas, while Shimura was a perfectionist who valued strictness and never allowed any compromise on the details of logic. The meeting of these two contrasting figures would eventually give birth to the seed of a massive theory that would shake the mathematical world.
 
@@ -119,13 +119,13 @@ While often overshadowed by the Taniyama-Shimura Conjecture, what further solidi
 
 ### 6.1 Higher-Dimensional Complex Multiplication Theory
 
-The 19th-century mathematician Kronecker showed that all abelian extensions of an imaginary quadratic field can be constructed using the division points of elliptic curves with complex multiplication (Kronecker's Jugendtraum). Shimura undertook a grand project to generalize this to higher-dimensional abelian varieties.
+The 19th-century mathematician [Kronecker](https://kenji.blog/en/p/kronecker/) showed that all abelian extensions of an imaginary quadratic field can be constructed using the division points of elliptic curves with complex multiplication ([Kronecker](https://kenji.blog/en/p/kronecker/)'s Jugendtraum). Shimura undertook a grand project to generalize this to higher-dimensional abelian varieties.
 
 He constructed massive geometric objects that are higher-dimensional analogues of modular curves, using reductive algebraic groups and Hermitian symmetric domains. These are the "Shimura varieties". Shimura varieties possess extremely rich structures where number theory, algebraic geometry, and representation theory intersect.
 
 ### 6.2 The Position of Shimura Varieties in Modern Mathematics
 
-Today, Shimura varieties play a central role in the "Langlands Program" proposed by Robert Langlands. In this grand program that connects representations of Galois groups with automorphic representations, Shimura varieties are the indispensable stage for geometrically realizing that correspondence. Shimura's foresight is also proven by the fact that the theory he built became the foundation for the development of mathematics decades later.
+Today, Shimura varieties play a central role in the "Langlands Program" proposed by Robert Langlands. In this grand program that connects representations of [Galois](https://kenji.blog/en/p/galois/) groups with automorphic representations, Shimura varieties are the indispensable stage for geometrically realizing that correspondence. Shimura's foresight is also proven by the fact that the theory he built became the foundation for the development of mathematics decades later.
 
 ## 7. The True Face of a Solitary Mathematician: His Philosophy and Aesthetics
 

@@ -35,7 +35,7 @@ Au début du 18ème siècle, des géants des mathématiques comme Jean le Rond d
 
 La première preuve essentiellement complète de ce théorème imprenable a été donnée par nul autre que [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/). Dans sa thèse de doctorat de 1799, il a souligné les défauts des preuves des mathématiciens précédents et a présenté une preuve basée sur l'intuition géométrique. Gauss a fourni quatre preuves différentes pour ce théorème au cours de sa vie, indiquant l'importance qu'il y attachait.
 
-La preuve la plus standard et la plus élégante aujourd'hui est considérée comme celle basée sur la théorie de l'analyse complexe, construite par le mathématicien français Joseph Liouville et d'autres. Dans la seconde moitié de cet article, nous présenterons la preuve utilisant le théorème de Liouville.
+La preuve la plus standard et la plus élégante aujourd'hui est considérée comme celle basée sur la théorie de l'analyse complexe, construite par le mathématicien français Joseph [Liouville](https://kenji.blog/fr/p/liouville/) et d'autres. Dans la seconde moitié de cet article, nous présenterons la preuve utilisant le théorème de [Liouville](https://kenji.blog/fr/p/liouville/).
 
 ## Énoncé Précis du Théorème
 
@@ -78,26 +78,26 @@ flowchart TD
     E -->|"P(z) = 0"| F["L'existence d'une racine est prouvée"]
 ```
 
-## Préparation de l'Analyse Complexe : Théorème de Liouville
+## Préparation de l'Analyse Complexe : Théorème de [Liouville](https://kenji.blog/fr/p/liouville/)
 
-Ayant acquis une compréhension intuitive, nous allons maintenant introduire la preuve la plus belle et la plus rigoureuse des mathématiques modernes. Cette preuve utilise une arme puissante de l'analyse complexe : le **Théorème de Liouville**.
+Ayant acquis une compréhension intuitive, nous allons maintenant introduire la preuve la plus belle et la plus rigoureuse des mathématiques modernes. Cette preuve utilise une arme puissante de l'analyse complexe : le **Théorème de [Liouville](https://kenji.blog/fr/p/liouville/)**.
 
 L'analyse complexe est le domaine qui traite du calcul infinitésimal des fonctions de variables complexes. Contrairement aux fonctions de nombres réels, la dérivabilité (holomorphie) des fonctions complexes est une condition extrêmement forte ; une fonction complexe qui est dérivable même une seule fois a la propriété étonnante d'être indéfiniment dérivable et capable d'être développée en une série de Taylor.
 
 Une fonction qui est dérivable (holomorphe) sur tout le plan complexe s'appelle une **fonction entière**. Les polynômes $P(z)$ et la fonction exponentielle $e^z$ sont des exemples typiques de fonctions entières.
 
-Le théorème de Liouville est un théorème profondément puissant concernant ces fonctions entières.
+Le théorème de [Liouville](https://kenji.blog/fr/p/liouville/) est un théorème profondément puissant concernant ces fonctions entières.
 
-**Théorème (Théorème de Liouville)**
+**Théorème (Théorème de [Liouville](https://kenji.blog/fr/p/liouville/))**
 Toute fonction entière bornée doit être une fonction constante.
 
 Ici, "bornée" signifie que pour tous les nombres complexes $z$, la valeur absolue de la fonction $|f(z)|$ ne dépasse pas un certain nombre réel $M$ ; c'est-à-dire qu'il existe un $M$ tel que $|f(z)| \le M$.
 
-Dans le monde des nombres réels, une fonction comme $f(x) = \sin(x)$ est dérivable sur toute la droite des nombres et est bornée par $-1 \le \sin(x) \le 1$. Ce n'est pas une fonction constante. Cependant, le théorème de Liouville affirme que cela ne peut jamais se produire dans le monde complexe. Si une fonction est holomorphe sur tout le plan complexe et que sa valeur ne diverge pas vers l'infini, c'est simplement une constante plate.
+Dans le monde des nombres réels, une fonction comme $f(x) = \sin(x)$ est dérivable sur toute la droite des nombres et est bornée par $-1 \le \sin(x) \le 1$. Ce n'est pas une fonction constante. Cependant, le théorème de [Liouville](https://kenji.blog/fr/p/liouville/) affirme que cela ne peut jamais se produire dans le monde complexe. Si une fonction est holomorphe sur tout le plan complexe et que sa valeur ne diverge pas vers l'infini, c'est simplement une constante plate.
 
 ## Preuve Rigoureuse du [Théorème Fondamental de l'Algèbre](https://kenji.blog/fr/p/fundamental-theorem-of-algebra/)
 
-Prouvons maintenant le théorème fondamental de l'algèbre en utilisant le théorème de Liouville. Vous serez étonné par l'éclat de cette preuve. Ici, nous utilisons un raisonnement par l'absurde (preuve par contradiction).
+Prouvons maintenant le théorème fondamental de l'algèbre en utilisant le théorème de [Liouville](https://kenji.blog/fr/p/liouville/). Vous serez étonné par l'éclat de cette preuve. Ici, nous utilisons un raisonnement par l'absurde (preuve par contradiction).
 
 **Preuve**
 
@@ -134,7 +134,7 @@ D'autre part, à l'intérieur de la région du disque fermé (une région fermé
 Par conséquent, à la fois à l'extérieur et à l'intérieur du cercle, la valeur absolue de $f(z)$ ne dépasse jamais une certaine limite supérieure finie. C'est-à-dire que $f(z)$ est une fonction **bornée**.
 
 Jusqu'à ce stade, nous avons montré que $f(z)$ est à la fois une "fonction entière" et "bornée".
-Ici, nous appliquons le **théorème de Liouville**. Une fonction entière bornée doit être une constante. Par conséquent, il existe un nombre complexe $c$ tel que pour tout $z$,
+Ici, nous appliquons le **théorème de [Liouville](https://kenji.blog/fr/p/liouville/)**. Une fonction entière bornée doit être une constante. Par conséquent, il existe un nombre complexe $c$ tel que pour tout $z$,
 
 $$
 f(z) = c
@@ -172,8 +172,8 @@ De plus, pour les polynômes dont tous les coefficients sont des nombres réels,
 
 ## Conclusion
 
-Dans cet article, nous avons examiné en détail le théorème fondamental de l'algèbre, couvrant son contexte historique, son intuition topologique et sa preuve analytique complexe utilisant le théorème de Liouville.
+Dans cet article, nous avons examiné en détail le théorème fondamental de l'algèbre, couvrant son contexte historique, son intuition topologique et sa preuve analytique complexe utilisant le théorème de [Liouville](https://kenji.blog/fr/p/liouville/).
 
 À première vue, c'est un théorème sur les équations algébriques, mais le fait que sa preuve la plus élégante emprunte le pouvoir de l'analyse (calcul infinitésimal) et de la topologie démontre la profondeur des mathématiques et la beauté de la façon dont les différents domaines sont étroitement imbriqués.
 
-La longue quête de l'humanité pour trouver les racines des équations a gagné la vaste scène du plan complexe grâce à l'introduction des nouveaux nombres imaginaires, et la complétude de cette scène a été prouvée par le théorème fondamental de l'algèbre. Ce théorème est devenu la clé qui a ouvert les portes brillantes menant à la théorie de Galois et à la géométrie algébrique, qui forment le socle des mathématiques modernes.
+La longue quête de l'humanité pour trouver les racines des équations a gagné la vaste scène du plan complexe grâce à l'introduction des nouveaux nombres imaginaires, et la complétude de cette scène a été prouvée par le théorème fondamental de l'algèbre. Ce théorème est devenu la clé qui a ouvert les portes brillantes menant à la théorie de [Galois](https://kenji.blog/fr/p/galois/) et à la géométrie algébrique, qui forment le socle des mathématiques modernes.

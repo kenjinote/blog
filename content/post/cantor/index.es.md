@@ -24,13 +24,13 @@ Su creación de la "Teoría de conjuntos" se ha convertido en la base de todos l
 
 [Georg Cantor](https://kenji.blog/es/p/cantor/) nació en 1845 en San Petersburgo, Rusia. Su padre era un rico comerciante de Dinamarca y su madre una música rusa. Mostrando un talento extraordinario para las matemáticas desde temprana edad, finalmente se mudó a Alemania y estudió matemáticas en la Universidad de Berlín.
 
-En la Universidad de Berlín, fue guiado por las figuras destacadas del mundo matemático de la época, **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **Leopold Kronecker**. Kronecker en particular se convertiría más tarde en el mayor oponente de Cantor.
+En la Universidad de Berlín, fue guiado por las figuras destacadas del mundo matemático de la época, **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **Leopold [Kronecker](https://kenji.blog/es/p/kronecker/)**. [Kronecker](https://kenji.blog/es/p/kronecker/) en particular se convertiría más tarde en el mayor oponente de Cantor.
 
-### La búsqueda del infinito y el conflicto con Kronecker
+### La búsqueda del infinito y el conflicto con [Kronecker](https://kenji.blog/es/p/kronecker/)
 
 Cuando Cantor avanzó en su investigación sobre la teoría de conjuntos y publicó la teoría revolucionaria de que "existen diferentes jerarquías para el tamaño del infinito", estalló una feroz controversia en el mundo matemático.
 
-Kronecker, sosteniendo la creencia de que "Dios hizo los números enteros, todo lo demás es obra del hombre", criticó ferozmente la teoría de Cantor. Debido a la obstrucción de Kronecker, Cantor no pudo alcanzar su objetivo de obtener una cátedra en la Universidad de Berlín, y pasó su vida en la universidad provincial de Halle.
+[Kronecker](https://kenji.blog/es/p/kronecker/), sosteniendo la creencia de que "Dios hizo los números enteros, todo lo demás es obra del hombre", criticó ferozmente la teoría de Cantor. Debido a la obstrucción de [Kronecker](https://kenji.blog/es/p/kronecker/), Cantor no pudo alcanzar su objetivo de obtener una cátedra en la Universidad de Berlín, y pasó su vida en la universidad provincial de Halle.
 
 ```mermaid
 graph TD
@@ -44,7 +44,7 @@ graph TD
 
 El hecho de que su teoría no fuera entendida y de que continuara recibiendo ataques implacables de su antiguo profesor socavó profundamente la salud mental de Cantor. Desarrolló depresión y repetidamente entraba y salía de hospitales psiquiátricos.
 
-Sin embargo, su teoría fue gradualmente apoyada por generaciones más jóvenes de matemáticos, como **[David Hilbert](https://kenji.blog/es/p/hilbert/)**. Hilbert elogió a Cantor con los más altos cumplidos, afirmando: "Nadie nos expulsará del paraíso que Cantor ha creado para nosotros". Cantor terminó su vida en un hospital psiquiátrico en Halle en 1918, pero después de su muerte, la teoría de conjuntos estableció una posición inamovible como la base más importante de las matemáticas.
+Sin embargo, su teoría fue gradualmente apoyada por generaciones más jóvenes de matemáticos, como **[David Hilbert](https://kenji.blog/es/p/hilbert/)**. [Hilbert](https://kenji.blog/es/p/hilbert/) elogió a Cantor con los más altos cumplidos, afirmando: "Nadie nos expulsará del paraíso que Cantor ha creado para nosotros". Cantor terminó su vida en un hospital psiquiátrico en Halle en 1918, pero después de su muerte, la teoría de conjuntos estableció una posición inamovible como la base más importante de las matemáticas.
 
 ## Logros matemáticos: Contando el infinito
 

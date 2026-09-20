@@ -51,7 +51,7 @@ Die wichtige Tatsache, die diese Formel zeigt, ist: **"Die Lichtenergie $E$ ist 
 
 ## 1.2 Chromatische Aberration (Farbfehler) und Fokusverschiebung
 
-Aus einer weiteren optischen Perspektive betrachtet, führen Unterschiede in der Lichtwellenlänge zu Unterschieden im "Brechungsindex". Der Brechungsindex $n$ eines Mediums (hier z. B. die Linse) hängt von der Wellenlänge $\lambda$ ab und wird durch die Cauchysche Dispersionsformel angenähert:
+Aus einer weiteren optischen Perspektive betrachtet, führen Unterschiede in der Lichtwellenlänge zu Unterschieden im "Brechungsindex". Der Brechungsindex $n$ eines Mediums (hier z. B. die Linse) hängt von der Wellenlänge $\lambda$ ab und wird durch die [Cauchy](https://kenji.blog/de/p/cauchy/)sche Dispersionsformel angenähert:
 
 $$ n(\lambda) = B + \frac{C}{\lambda^2} $$
 

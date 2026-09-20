@@ -64,11 +64,11 @@ $$
 
 For example, while there may be infinitely many real or rational solutions for an elliptic curve (genus $g=1$) like $x^3 + y^3 = c$ (where $c$ is a non-zero integer), this theorem guarantees that if restricted to **integral solutions**, there will always be only finitely many.
 
-This result was groundbreaking regarding the finiteness of solutions to Diophantine equations and became a crucial historical step paving the way for the later proof of the Mordell-Weil theorem (the finiteness of rational points on curves of genus 2 or higher) by [Gerd Faltings](https://kenji.blog/en/p/faltings/). Siegel derived this astonishing result by significantly extending Axel Thue's theorem on Diophantine approximations and combining it with the theory of Jacobians on Abelian varieties.
+This result was groundbreaking regarding the finiteness of solutions to Diophantine equations and became a crucial historical step paving the way for the later proof of the Mordell-Weil theorem (the finiteness of rational points on curves of genus 2 or higher) by [Gerd Faltings](https://kenji.blog/en/p/faltings/). Siegel derived this astonishing result by significantly extending Axel Thue's theorem on Diophantine approximations and combining it with the theory of [Jacobi](https://kenji.blog/en/p/jacobi/)ans on [Abel](https://kenji.blog/en/p/abel/)ian varieties.
 
 ### 3.2 Siegel Zero
 
-In analytic number theory, the distribution of zeros of Dirichlet's $L$-function $L(s, \chi)$ is extremely important for natural extensions of the prime number theorem and the theorem on arithmetic progressions. According to the Generalized Riemann Hypothesis (GRH), all zeros in the critical strip with a real part between $0$ and $1$ are supposed to lie on the line where the real part is $1/2$.
+In analytic number theory, the distribution of zeros of Dirichlet's $L$-function $L(s, \chi)$ is extremely important for natural extensions of the prime number theorem and the theorem on arithmetic progressions. According to the Generalized [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis (GRH), all zeros in the critical strip with a real part between $0$ and $1$ are supposed to lie on the line where the real part is $1/2$.
 
 However, for a real character (of a real quadratic field) $\chi$, the possibility that there exists a real zero with a real part very close to $1$ has not been ruled out by current mathematics. Such a hypothetical counterexample zero is called a **Siegel zero** or an exceptional zero.
 
@@ -90,7 +90,7 @@ $$
 \mathcal{H}_g = \left\{ Z \in M_g(\mathbb{C}) \mid Z^T = Z, \text{ Im}(Z) \text{ is positive definite} \right\}
 $$
 
-Here, when $g=1$, this space perfectly matches the usual Poincaré upper half-plane. Siegel introduced this higher-dimensional space during the process of deepening the analytic theory of quadratic forms, and he showed that automorphic forms defined on this space are deeply connected to the number of representations of integers by quadratic forms.
+Here, when $g=1$, this space perfectly matches the usual [Poincaré](https://kenji.blog/en/p/poincare/) upper half-plane. Siegel introduced this higher-dimensional space during the process of deepening the analytic theory of quadratic forms, and he showed that automorphic forms defined on this space are deeply connected to the number of representations of integers by quadratic forms.
 
 Furthermore, he laid the foundation for the **Siegel-Weil formula** within the analytic theory of quadratic forms. This is a marvelous formula that describes the number of representations by quadratic forms as the Fourier coefficients of Eisenstein series, and it can be said to be an analytic expression of the local-global principle (Hasse principle). These theories are indispensable concepts that form the basis for the later theory of automorphic representations and the Langlands program.
 
@@ -129,7 +129,7 @@ Siegel's view of mathematics was as striking as the achievements he left behind,
 
 In the mid-20th century, an abstract style advocated by the young French mathematical collective, the Bourbaki group—which attempted to rebuild all of mathematics from set theory and axiomatic systems—was sweeping the globe. However, Siegel leveled severe criticism against this trend. He dismissed the Bourbaki style as "empty formalism" and left remarks to the following effect:
 
-> "The excessive abstraction of recent mathematics has fallen into empty formalism and produces no meaningful results. We should return to concrete problems rich in true content, the kind that Gauss, Euler, Riemann, and Jacobi tackled."
+> "The excessive abstraction of recent mathematics has fallen into empty formalism and produces no meaningful results. We should return to concrete problems rich in true content, the kind that Gauss, Euler, [Riemann](https://kenji.blog/en/p/riemann/), and [Jacobi](https://kenji.blog/en/p/jacobi/) tackled."
 
 Because of this strong conviction, his papers are very rewarding to read; on the other hand, for modern readers, highly technical and lengthy calculations appear everywhere, often requiring immense effort to decipher. He never compromised on his philosophy throughout his life that "abstract concepts and frameworks are merely one means to solve concrete, difficult problems." That aloof stance made him a somewhat distinct figure among his contemporary mathematicians.
 

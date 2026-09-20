@@ -140,7 +140,7 @@ $$
 
 在加密技术（如RSA加密或Diffie-Hellman密钥交换等）中，需要高速地找出长达数百位的“巨大素数”。然而，为了判断一个巨大的数 $N$ 是否为素数，如果尝试用 $2$ 到 $\sqrt{N}$ 之间的所有数去试除，这种“试除法”可能需要耗费宇宙寿命般的时间。
 
-于是，利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)逆向思维的“概率素性测试”—— **费马测试（Fermat Primality Test）** 登场了。
+于是，利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)逆向思维的“概率素性测试”—— **费马测试（[Fermat](https://kenji.blog/zh-cn/p/fermat/) Primality Test）** 登场了。
 
 ### 5.1 什么是概率素性测试
 

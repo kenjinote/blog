@@ -30,15 +30,15 @@ $$
 x^n + y^n = z^n \quad (\text{where } n \ge 3 \text{ is an integer})
 $$
 
-It states that there are no positive integer solutions $(x, y, z)$ that satisfy this equation. When $n = 2$, it is well known as the Pythagorean theorem, and there are infinitely many solutions (Pythagorean triples). However, Fermat claimed that when $n$ is 3 or greater, it never holds true.
+It states that there are no positive integer solutions $(x, y, z)$ that satisfy this equation. When $n = 2$, it is well known as the Pythagorean theorem, and there are infinitely many solutions (Pythagorean triples). However, [Fermat](https://kenji.blog/en/p/fermat/) claimed that when $n$ is 3 or greater, it never holds true.
 
-Although the proposition seems understandable even to a middle school student, it resisted complete proof even by genius mathematicians who left their mark on history, such as Euler, Sophie Germain, and Kummer.
+Although the proposition seems understandable even to a middle school student, it resisted complete proof even by genius mathematicians who left their mark on history, such as Euler, Sophie Germain, and [Kummer](https://kenji.blog/en/p/kummer/).
 
 ## The Bridge Between Elliptic Curves and Modular Forms: The Taniyama-Shimura Conjecture
 
 In the 1980s, when Wiles had advanced his research at Cambridge and Oxford and eventually became a professor at Princeton University in the United States, a completely new approach to solving [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) emerged in the mathematical world. It was a connection to the "Taniyama-Shimura Conjecture."
 
-The Taniyama-Shimura conjecture is a deep mathematical conjecture stating that "all elliptic curves over the field of rational numbers are modular," which at first glance seems unrelated to Fermat's Theorem. However, in 1984, Gerhard Frey proposed the idea that "if [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) is false (meaning a solution exists), the special elliptic curve created from it (the Frey curve) would not be modular, thus contradicting the Taniyama-Shimura conjecture."
+The Taniyama-Shimura conjecture is a deep mathematical conjecture stating that "all elliptic curves over the field of rational numbers are modular," which at first glance seems unrelated to [Fermat](https://kenji.blog/en/p/fermat/)'s Theorem. However, in 1984, Gerhard Frey proposed the idea that "if [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) is false (meaning a solution exists), the special elliptic curve created from it (the Frey curve) would not be modular, thus contradicting the Taniyama-Shimura conjecture."
 
 The situation changed dramatically in 1986 when Ken Ribet rigorously proved Frey's idea (Ribet's Theorem). In other words, the astonishing fact was established that "if you prove the Taniyama-Shimura conjecture, [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) is automatically proved."
 
@@ -63,7 +63,7 @@ For an astonishing seven years, Wiles spent all his remaining time thinking in h
 
 ## Historic Announcement at Cambridge
 
-In June 1993, at an international number theory conference held at the Newton Institute at Cambridge University, Wiles finally presented his results. The conference lasted for three days, and his lecture had the seemingly unassuming title "Modular Forms, Elliptic Curves, and Galois Representations."
+In June 1993, at an international number theory conference held at the Newton Institute at Cambridge University, Wiles finally presented his results. The conference lasted for three days, and his lecture had the seemingly unassuming title "Modular Forms, Elliptic Curves, and [Galois](https://kenji.blog/en/p/galois/) Representations."
 
 However, as his lecture progressed, the mathematicians in the audience began to realize what he was trying to prove. The atmosphere in the room gradually heated up, and by the final day's lecture, an overflow crowd had rushed in.
 
@@ -95,7 +95,7 @@ Wiles's proof of [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-th
 
 His proof showed that the Taniyama-Shimura conjecture (in the semistable case) was correct, establishing that completely different fields of number theory (modular forms and elliptic curves) are connected at a deep level. Later, in 2001, other mathematicians achieved the complete proof of the full Taniyama-Shimura conjecture.
 
-For this achievement, Wiles received numerous prestigious awards, including the Fields Medal special tribute and the Abel Prize, and was awarded a knighthood (Sir) by the British royal family.
+For this achievement, Wiles received numerous prestigious awards, including the Fields Medal special tribute and the [Abel](https://kenji.blog/en/p/abel/) Prize, and was awarded a knighthood (Sir) by the British royal family.
 
 ## Conclusion
 

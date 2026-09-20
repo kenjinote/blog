@@ -14,9 +14,9 @@ tags:
 
 # Introduction
 
-In the world of mathematics, "permutations" and "combinations"—methods for logically counting the number of possible outcomes—are crucial foundational concepts across a wide range of fields, from probability and statistics to computer science algorithms. Extending these fundamental concepts into the realm of algebra leads us to the "Binomial Theorem," and visually and geometrically representing the sequence of its coefficients produces "Pascal's Triangle." At first glance, these may seem like independent mathematical topics, but as you study them deeply, you realize that they are astonishingly intertwined, forming a single, massive, and beautiful mathematical structure.
+In the world of mathematics, "permutations" and "combinations"—methods for logically counting the number of possible outcomes—are crucial foundational concepts across a wide range of fields, from probability and statistics to computer science algorithms. Extending these fundamental concepts into the realm of algebra leads us to the "Binomial Theorem," and visually and geometrically representing the sequence of its coefficients produces "[Pascal](https://kenji.blog/en/p/pascal/)'s Triangle." At first glance, these may seem like independent mathematical topics, but as you study them deeply, you realize that they are astonishingly intertwined, forming a single, massive, and beautiful mathematical structure.
 
-In this article, we will start with an intuitive understanding and the basic calculation methods for permutations and combinations, and then explain in detail more complex concepts like permutations with repetition, circular permutations, and combinations with repetition. From there, we will derive the formula of the Binomial Theorem and its beautiful symmetry, and ultimately delve thoroughly into profound themes such as the mysterious properties hidden in Pascal's Triangle, its connection to the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence describing the laws of nature, and fractal structures. Let us embark on a journey to fully appreciate the "beauty" and "regularity" of mathematics.
+In this article, we will start with an intuitive understanding and the basic calculation methods for permutations and combinations, and then explain in detail more complex concepts like permutations with repetition, circular permutations, and combinations with repetition. From there, we will derive the formula of the Binomial Theorem and its beautiful symmetry, and ultimately delve thoroughly into profound themes such as the mysterious properties hidden in [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle, its connection to the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence describing the laws of nature, and fractal structures. Let us embark on a journey to fully appreciate the "beauty" and "regularity" of mathematics.
 
 # What are Permutations?
 
@@ -203,13 +203,13 @@ $$
 
 Generalizing this, the answer to the question "In the multiplication of $n$ brackets, what is the total number of ways to choose $k$ of $y$ (and simultaneously $n-k$ of $x$)" is exactly $\binom{n}{k}$. Algebraic expansion formulas and combinatorics beautifully intersect here.
 
-# Pascal's Triangle: The Beautiful Geometry of Numbers
+# [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle: The Beautiful Geometry of Numbers
 
-Arranging the binomial coefficients appearing in the expansion formula of the Binomial Theorem into a pyramid shape from top to bottom as $n=0, 1, 2, \dots$ is called "Pascal's Triangle." This simply structured triangle goes far beyond being a mere calculation aid, holding countless beautiful and deep mathematical properties within.
+Arranging the binomial coefficients appearing in the expansion formula of the Binomial Theorem into a pyramid shape from top to bottom as $n=0, 1, 2, \dots$ is called "[Pascal](https://kenji.blog/en/p/pascal/)'s Triangle." This simply structured triangle goes far beyond being a mere calculation aid, holding countless beautiful and deep mathematical properties within.
 
-## Construction Rules of Pascal's Triangle
+## Construction Rules of [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle
 
-Pascal's Triangle begins by placing a $1$ at the very top vertex (row 0). For the rows that follow, $1$s are always placed on both ends, and all inner numbers are constructed according to an extremely simple rule: "the sum of the number to the upper left and the number to the upper right."
+[Pascal](https://kenji.blog/en/p/pascal/)'s Triangle begins by placing a $1$ at the very top vertex (row 0). For the rows that follow, $1$s are always placed on both ends, and all inner numbers are constructed according to an extremely simple rule: "the sum of the number to the upper left and the number to the upper right."
 
 ```mermaid
 graph TD
@@ -236,15 +236,15 @@ graph TD
     R5C5(("1")) --- R4C4
 ```
 
-The number located in the $n$-th row from the top (with the vertex being the 0th row) and the $k$-th position from the left (with the left edge being the 0th position) corresponds exactly to the binomial coefficient $\binom{n}{k}$. The structure where adding the upper left number $\binom{n-1}{k-1}$ and the upper right number $\binom{n-1}{k}$ equals the number below $\binom{n}{k}$ geometrically represents the following important equation called Pascal's Rule:
+The number located in the $n$-th row from the top (with the vertex being the 0th row) and the $k$-th position from the left (with the left edge being the 0th position) corresponds exactly to the binomial coefficient $\binom{n}{k}$. The structure where adding the upper left number $\binom{n-1}{k-1}$ and the upper right number $\binom{n-1}{k}$ equals the number below $\binom{n}{k}$ geometrically represents the following important equation called [Pascal](https://kenji.blog/en/p/pascal/)'s Rule:
 
 $$
 \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
 $$
 
-## Amazing Properties Hidden in Pascal's Triangle
+## Amazing Properties Hidden in [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle
 
-If you observe Pascal's Triangle closely, you will notice that countless regularities are hidden within. Let's introduce a few of them.
+If you observe [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle closely, you will notice that countless regularities are hidden within. Let's introduce a few of them.
 
 ### 1. Perfect Symmetry
 
@@ -264,12 +264,12 @@ This can be easily proven algebraically from the equation $(1+1)^n = \sum \binom
 
 ### 3. The Hidden Connection with the [Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence
 
-Try adding the numbers of Pascal's Triangle along "shallow diagonal lines." Astonishingly, the sequence $1, 1, 2, 3, 5, 8, 13, 21, \dots$ appears.
+Try adding the numbers of [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle along "shallow diagonal lines." Astonishingly, the sequence $1, 1, 2, 3, 5, 8, 13, 21, \dots$ appears.
 This is none other than the **[Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence**, where you add the previous two numbers to make the next. The mystical sequence that appears everywhere in nature, such as the arrangement of sunflower seeds and the spiral of a nautilus shell, is deeply embedded within a triangle that merely arranges combinations. It is a very beautiful and moving example showing how mathematics, a product of human logical thinking, is tied to the providence of nature.
 
 ### 4. Fractal Geometry: Sierpinski Gasket
 
-Try expanding Pascal's Triangle enormously to dozens or hundreds of rows, painting the "odd numbers" inside black, and leaving the "even numbers" blank. Then, a self-similar fractal figure called the "Sierpinski Gasket" clearly emerges.
+Try expanding [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle enormously to dozens or hundreds of rows, painting the "odd numbers" inside black, and leaving the "even numbers" blank. Then, a self-similar fractal figure called the "Sierpinski Gasket" clearly emerges.
 This structure, where the same triangular pattern repeats infinitely whether you zoom in or zoom out on the whole, serves as a bridge connecting number theory, geometry, and chaos theory.
 
 # Extension to the Multinomial Theorem
@@ -301,8 +301,8 @@ From calculating coin toss probabilities to predicting the occurrence probabilit
 
 # Conclusion
 
-In this article, we have traveled through a vast mathematical landscape, starting from permutations and combinations, which are simple "counting" rules, to their application in permutations with repetition and circular permutations, further expanding into algebra's Binomial Theorem, and reaching the visual exploration of Pascal's Triangle.
+In this article, we have traveled through a vast mathematical landscape, starting from permutations and combinations, which are simple "counting" rules, to their application in permutations with repetition and circular permutations, further expanding into algebra's Binomial Theorem, and reaching the visual exploration of [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle.
 
 By abstracting and delving into the extremely simple and primitive act of "choosing some items from distinct ones" using the rigorous language of mathematics, it has become clear that an unimaginably rich and beautiful mathematical world extends out—involving perfect symmetry, the rule of powers of 2, the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence describing the natural world, and infinite fractal structures.
 
-Mathematical formulas and theorems are not merely inorganic tools for solving test problems. They are the supreme works of art of humanity, expressing the invisible order behind the world surrounding us and the overwhelmingly beautiful relationships woven by numbers. We hope that by touching upon this beautiful regularity of numbers shown by permutations, combinations, and Pascal's Triangle, you have felt the true charm and profundity possessed by the discipline of mathematics.
+Mathematical formulas and theorems are not merely inorganic tools for solving test problems. They are the supreme works of art of humanity, expressing the invisible order behind the world surrounding us and the overwhelmingly beautiful relationships woven by numbers. We hope that by touching upon this beautiful regularity of numbers shown by permutations, combinations, and [Pascal](https://kenji.blog/en/p/pascal/)'s Triangle, you have felt the true charm and profundity possessed by the discipline of mathematics.

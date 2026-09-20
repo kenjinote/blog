@@ -120,7 +120,7 @@ Jedoch wurde mit der Verbesserung der Rechenleistung von Computern klar, dass ei
 ## AES (Advanced Encryption Standard)
 Als Ersatz für DES wurde im Jahr 2001 "AES" als neuer Standard etabliert. Der durch einen offenen Wettbewerb ausgewählte "Rijndael"-Algorithmus, der von belgischen Kryptographen entwickelt wurde, wurde übernommen.
 
-AES verwendet nicht das Feistel-Netzwerk, sondern ein "SPN-Netzwerk (Substitution-Permutation Network)" und nutzt mathematische Operationen über dem Galois-Körper (endlichen Körper) $GF(2^8)$. Die Schlüssellängen können zwischen 128, 192 oder 256 Bits gewählt werden, und es wird heute weltweit noch immer als symmetrische Standardverschlüsselung eingesetzt.
+AES verwendet nicht das Feistel-Netzwerk, sondern ein "SPN-Netzwerk (Substitution-Permutation Network)" und nutzt mathematische Operationen über dem [Galois](https://kenji.blog/de/p/galois/)-Körper (endlichen Körper) $GF(2^8)$. Die Schlüssellängen können zwischen 128, 192 oder 256 Bits gewählt werden, und es wird heute weltweit noch immer als symmetrische Standardverschlüsselung eingesetzt.
 
 ```mermaid
 graph TD

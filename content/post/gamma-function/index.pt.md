@@ -110,6 +110,6 @@ A função Gama não é meramente um produto da curiosidade matemática. Ela des
 
 1. **Probabilidade e Estatística**: A distribuição Gama, distribuição Qui-quadrado e distribuição t de Student são definidas usando a função Gama.
 2. **Física**: Na regularização dimensional dentro da mecânica quântica e da teoria quântica de campos, a função Gama desempenha um papel no controle de divergências.
-3. **Teoria Analítica dos Números**: Através de sua relação com a função zeta de Riemann, ela ocupa uma posição central no estudo da distribuição de números primos.
+3. **Teoria Analítica dos Números**: Através de sua relação com a função zeta de [Riemann](https://kenji.blog/pt/p/riemann/), ela ocupa uma posição central no estudo da distribuição de números primos.
 
 A busca que começou com uma simples pergunta sobre a extensão do fatorial para números reais revelou uma magnífica estrutura que atravessa toda a matemática. A função Gama é verdadeiramente a obra-prima de Euler, servindo de ponte entre o mundo discreto e o mundo contínuo.

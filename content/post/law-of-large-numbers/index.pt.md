@@ -146,12 +146,12 @@ plt.show()
 
 Ao executar este código, a média flutuará bastante nos primeiros lançamentos, mas à medida que o número de tentativas aumenta, você obterá um gráfico que segue perfeitamente a linha pontilhada vermelha (valor esperado 3,5). Esta é uma prova visual da [Lei dos Grandes Números](https://kenji.blog/pt/p/law-of-large-numbers/).
 
-## 7. Casos em que a [Lei dos Grandes Números](https://kenji.blog/pt/p/law-of-large-numbers/) não se aplica: Distribuição de Cauchy
+## 7. Casos em que a [Lei dos Grandes Números](https://kenji.blog/pt/p/law-of-large-numbers/) não se aplica: Distribuição de [Cauchy](https://kenji.blog/pt/p/cauchy/)
 
 A [Lei dos Grandes Números](https://kenji.blog/pt/p/law-of-large-numbers/) não é universal. Um pré-requisito é que "o valor esperado (média) deve ser finito".
-Por exemplo, uma distribuição de probabilidade chamada de **distribuição de Cauchy** tem caudas muito pesadas (valores extremos ocorrem com facilidade) e seu valor esperado e variância não podem ser definidos (eles divergem para o infinito).
+Por exemplo, uma distribuição de probabilidade chamada de **distribuição de [Cauchy](https://kenji.blog/pt/p/cauchy/)** tem caudas muito pesadas (valores extremos ocorrem com facilidade) e seu valor esperado e variância não podem ser definidos (eles divergem para o infinito).
 
-Mesmo se você gerar números aleatórios seguindo uma distribuição de Cauchy e calcular a média, o valor nunca convergirá para um número específico e continuará a saltar descontroladamente. Mesmo no mundo real, é importante entender que existem casos (como nos mercados financeiros onde ocorrem eventos imprevisíveis e extremos chamados "cisnes negros") onde a simples [Lei dos Grandes Números](https://kenji.blog/pt/p/law-of-large-numbers/) não pode ser aplicada (ou é perigoso aplicar).
+Mesmo se você gerar números aleatórios seguindo uma distribuição de [Cauchy](https://kenji.blog/pt/p/cauchy/) e calcular a média, o valor nunca convergirá para um número específico e continuará a saltar descontroladamente. Mesmo no mundo real, é importante entender que existem casos (como nos mercados financeiros onde ocorrem eventos imprevisíveis e extremos chamados "cisnes negros") onde a simples [Lei dos Grandes Números](https://kenji.blog/pt/p/law-of-large-numbers/) não pode ser aplicada (ou é perigoso aplicar).
 
 ## 8. Exemplos de aplicação no mundo real
 

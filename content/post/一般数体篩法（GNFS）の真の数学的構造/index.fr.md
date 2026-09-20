@@ -57,7 +57,7 @@ Dans des mondes algébriques comme $\mathbb{Z}[\alpha]$, **l'"unicité de la fac
 
 Si la factorisation n'est pas unique, le puzzle consistant à "compter le nombre de nombres premiers pour les rendre pairs" (la méthode du crible) est, en principe, impossible à exécuter.
 
-### Le Sauvetage de Kummer et Dedekind : les "Idéaux"
+### Le Sauvetage de [Kummer](https://kenji.blog/fr/p/kummer/) et Dedekind : les "Idéaux"
 Ce qui a sauvé cet effondrement, c'est le concept d' **"Idéal (Ideal : nombre idéal)"** créé par les mathématiciens du 19ème siècle.
 En pensant non pas à l'élément lui-même, mais à "l'ensemble des multiples (idéal)" généré par cet élément, la factorisation première est redevenue possible.
 
@@ -120,7 +120,7 @@ $$\prod_{S} (a - b\alpha) = u \cdot \gamma^2$$
 L'obstacle du groupe des classes d'idéaux et l'obstacle du groupe des unités. Comment surmonter ces deux-là ?
 C'est ici qu'intervient la brillante méthode des **"Caractères Quadratiques (Quadratic Characters)"** , introduzido par le cryptographe Leonard Adleman (le "A" de RSA) et d'autres.
 
-Pour déterminer "si un certain élément est un carré parfait dans le corps algébrique", on utilise la version pour corps algébriques du Symbole de Legendre (résidu quadratique).
+Pour déterminer "si un certain élément est un carré parfait dans le corps algébrique", on utilise la version pour corps algébriques du Symbole de [Legendre](https://kenji.blog/fr/p/legendre/) (résidu quadratique).
 Dans cette matrice géante d'avant (le puzzle pour rendre pairs les comptes d'idéaux premiers), on **ajoute furtivement quelques dizaines de conditions supplémentaires (colonnes) disant que "les caractères quadratiques pour certains idéaux premiers spéciaux $\mathfrak{q}$ doivent également tous être $1$ (pairs)"** .
 
 Lorsqu'on trouve un ensemble $S$ qui satisfait même à ces conditions supplémentaires par le calcul matriciel, des théorèmes profonds de la théorie algébrique des nombres garantissent que **"l'obstacle du groupe des classes d'idéaux et l'obstacle du groupe des unités disparaîtront naturellement avec une probabilité écrasante"** .

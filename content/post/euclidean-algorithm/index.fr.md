@@ -107,11 +107,11 @@ int main() {
 }
 ```
 
-## Complexité temporelle et théorème de Lamé
+## Complexité temporelle et théorème de [Lamé](https://kenji.blog/fr/p/lame/)
 
-À quelle vitesse s'exécute l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) ? En ce qui concerne sa complexité de calcul, le **théorème de Lamé** (Lamé's theorem), prouvé par le mathématicien français [Gabriel Lamé](https://kenji.blog/fr/p/lame/) en 1844, est bien connu.
+À quelle vitesse s'exécute l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) ? En ce qui concerne sa complexité de calcul, le **théorème de [Lamé](https://kenji.blog/fr/p/lame/)** ([Lamé](https://kenji.blog/fr/p/lame/)'s theorem), prouvé par le mathématicien français [Gabriel Lamé](https://kenji.blog/fr/p/lame/) en 1844, est bien connu.
 
-> **Théorème de Lamé**
+> **Théorème de [Lamé](https://kenji.blog/fr/p/lame/)**
 > Le nombre d'étapes de division nécessaires pour appliquer l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) à deux entiers naturels $a, b$ ($a > b$) est d'au plus $5$ fois le nombre de chiffres dans la représentation décimale de $b$ .
 
 En conséquence, la complexité temporelle de l'algorithme est de $O(\log(\min(a, b)))$ .

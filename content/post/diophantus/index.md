@@ -176,9 +176,9 @@ $$
 
 特に、9世紀のバグダードの数学者たちが『算術』をアラビア語に翻訳し、イスラムの代数学の発展に大きく寄与しました。アル＝カラジーなどのイスラム数学者は、[ディオファントス](https://kenji.blog/p/diophantus/)の手法を取り入れ、さらに発展させました。
 
-16世紀に入り、ルネサンス期のヨーロッパにおいてギリシャ語の古典が再発見されると、『算術』もラテン語に翻訳されました。1621年にクロード・[バシェ](https://kenji.blog/p/bachet/)（[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac）が出版したギリシャ語とラテン語の対訳本が、広く読まれることになります。この[バシェ](https://kenji.blog/p/bachet/)版『算術』こそが、フェルマーが熟読し、新たな数学の扉を開くきっかけとなったのです。
+16世紀に入り、ルネサンス期のヨーロッパにおいてギリシャ語の古典が再発見されると、『算術』もラテン語に翻訳されました。1621年にクロード・[バシェ](https://kenji.blog/p/bachet/)（[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac）が出版したギリシャ語とラテン語の対訳本が、広く読まれることになります。この[バシェ](https://kenji.blog/p/bachet/)版『算術』こそが、[フェルマー](https://kenji.blog/p/fermat/)が熟読し、新たな数学の扉を開くきっかけとなったのです。
 
-[ディオファントス](https://kenji.blog/p/diophantus/)方程式の理論は、その後、レオンハルト・[オイラー](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）、[ジョゼフ＝ルイ・ラグランジュ](https://kenji.blog/p/lagrange/)（[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/)）、カール・フリードリヒ・[ガウス](https://kenji.blog/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/p/gauss/)）といった巨匠たちによって深く研究されました。彼らの研究は、現代の「代数的整数論」や「代数幾何学」という巨大な数学の分野へと成長しました。ヒルベルトの23の問題のうち、第10問題は「任意の[ディオファントス](https://kenji.blog/p/diophantus/)方程式が可解であるかどうかを判定する一般的なアルゴリズムを見つけること」であり、1970年にユーリ・マチヤセヴィッチによって「そのようなアルゴリズムは存在しない」と証明されました。[ディオファントス](https://kenji.blog/p/diophantus/)の名は、現代数学の最先端にも深く刻まれています。
+[ディオファントス](https://kenji.blog/p/diophantus/)方程式の理論は、その後、レオンハルト・[オイラー](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）、[ジョゼフ＝ルイ・ラグランジュ](https://kenji.blog/p/lagrange/)（[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/)）、カール・フリードリヒ・[ガウス](https://kenji.blog/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/p/gauss/)）といった巨匠たちによって深く研究されました。彼らの研究は、現代の「代数的整数論」や「代数幾何学」という巨大な数学の分野へと成長しました。[ヒルベルト](https://kenji.blog/p/hilbert/)の23の問題のうち、第10問題は「任意の[ディオファントス](https://kenji.blog/p/diophantus/)方程式が可解であるかどうかを判定する一般的なアルゴリズムを見つけること」であり、1970年にユーリ・マチヤセヴィッチによって「そのようなアルゴリズムは存在しない」と証明されました。[ディオファントス](https://kenji.blog/p/diophantus/)の名は、現代数学の最先端にも深く刻まれています。
 
 ## 7. まとめ
 

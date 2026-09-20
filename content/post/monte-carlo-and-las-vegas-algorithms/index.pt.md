@@ -70,7 +70,7 @@ Quanto maior for a estipulação nas tentativas `num_samples`, maiores níveis d
 Este é um algoritmo que avalia num método ultrarrápido a existência de "primos" aplicados nos cômputos a grandes números. Para gerar chaves criptográficas (ex: RSA), são exigidos números primos de centenas de dígitos; Aplicando os moldes em divisão determinísticos das lógicas face testes iterativos progressivos a ($2, 3, 5, \dots$), nem as eras estelares chegariam até completar todos os cálculos no tempo em curso.
 
 Aplica-se aqui um método em Monte Carlo chamado **"Teste de Primalidade de Miller-Rabin"**.
-Dada o número base a avaliar por via do $n$, recorre no processamento do modelo escolhendo pseudoraleatoriamente por seleção à base do argumento basilar - $a$, operando perante a lógica num limite das regras pelo pequeno Teorema estipulador nas expansões procedimentais face equações de Fermat.
+Dada o número base a avaliar por via do $n$, recorre no processamento do modelo escolhendo pseudoraleatoriamente por seleção à base do argumento basilar - $a$, operando perante a lógica num limite das regras pelo pequeno Teorema estipulador nas expansões procedimentais face equações de [Fermat](https://kenji.blog/pt/p/fermat/).
 
 Se em ensaios individuais retornar indicativo sobre ser "um formato em Base Composto"; É efetivamente provado com plenas validade na constatação à impossibilidade sobre a sua primalidade. Contudo, em análises das respostas sob preceito de "Talvez Primo", a probabilidade num limite para a falibilidade induzida pela natureza do formato compósito - mas falsamente induzido num rótulo estipulante primo em erros analíticos pode existir no patamar probabilístico de falha em $\frac{1}{4}$.
 

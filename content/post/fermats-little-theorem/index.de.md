@@ -14,9 +14,9 @@ tags:
 
 In der modernen Internetgesellschaft verdanken wir unsere Fähigkeit zur sicheren Kommunikation der **Kryptographie**. An der eigentlichen Basis dieser Kryptographie liegt ein wunderschöner Satz, der im 17. Jahrhundert von dem Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde.
 
-In diesem Artikel werden wir **den kleinen Satz von Fermat**, einen entscheidenden Grundstein der Zahlentheorie, auf leicht verständliche Weise erklären und dabei seine Bedeutung, seinen Beweis und seine Anwendung in der modernen RSA-Kryptographie behandeln.
+In diesem Artikel werden wir **den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/)**, einen entscheidenden Grundstein der Zahlentheorie, auf leicht verständliche Weise erklären und dabei seine Bedeutung, seinen Beweis und seine Anwendung in der modernen RSA-Kryptographie behandeln.
 
-## Was ist der kleine Satz von Fermat?
+## Was ist der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/)?
 
 [Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) ist ein extrem einfacher, aber mächtiger Satz, der die Beziehung zwischen Primzahlen und ganzen Zahlen aufzeigt.
 
@@ -52,7 +52,7 @@ Auf diese Weise gilt dieses mysteriöse Gesetz, egal welche Primzahl $p$ Sie wä
 
 ## Beweis des Satzes
 
-Es gibt mehrere Ansätze, um den kleinen Satz von Fermat zu beweisen, aber hier stellen wir eine repräsentative Beweismethode vor, die auf der Zahlentheorie basiert.
+Es gibt mehrere Ansätze, um den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) zu beweisen, aber hier stellen wir eine repräsentative Beweismethode vor, die auf der Zahlentheorie basiert.
 
 Sei $p$ eine Primzahl und $a$ eine ganze Zahl, die nicht durch $p$ teilbar ist.
 Betrachten Sie die Menge $S = \{1, 2, 3, \dots, p-1\}$. Sei $S'$ eine neue Menge, die durch Multiplikation jedes Elements dieser Menge mit $a$ gebildet wird.
@@ -75,9 +75,9 @@ $$ 1 \equiv a^{p-1} \pmod p $$
 
 Dies schließt den Beweis ab.
 
-## Fermat-Primzahltest: Anwendung beim Primzahlentest
+## [Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest: Anwendung beim Primzahlentest
 
-Dieser Satz wird in einem **Primzahltest-Algorithmus** (dem Fermat-Primzahltest) angewendet, um zu bestimmen, ob eine gegebene Zahl prim ist.
+Dieser Satz wird in einem **Primzahltest-Algorithmus** (dem [Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest) angewendet, um zu bestimmen, ob eine gegebene Zahl prim ist.
 
 Wenn Sie wissen wollen, ob eine riesige Zahl $n$ prim ist, wählen Sie zufällig $a$ und überprüfen Sie, ob $a^{n-1} \equiv 1 \pmod n$ gilt. Wenn dies nicht zutrifft, ist $n$ **absolut keine Primzahl** (es ist eine zusammengesetzte Zahl).
 
@@ -94,9 +94,9 @@ Da es jedoch Ausnahmezahlen gibt, die sogenannten **Carmichael-Zahlen**, die zus
 
 ## Anwendung in der modernen Kryptographie: RSA-Kryptographie
 
-Die wichtigste Anwendung des kleinen Satzes von Fermat (und seiner Verallgemeinerung, des **Satzes von Euler**) ist die **RSA-Kryptographie**, die der Internetsicherheit zugrunde liegt.
+Die wichtigste Anwendung des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/) (und seiner Verallgemeinerung, des **Satzes von Euler**) ist die **RSA-Kryptographie**, die der Internetsicherheit zugrunde liegt.
 
-Die RSA-Kryptographie beruht für ihre Sicherheit auf der Schwierigkeit, massive Zahlen zu faktorisieren. Innerhalb ihres Mechanismus spielt das Prinzip des "kleinen Satzes von Fermat" eine entscheidende Rolle bei den Schlüsselerzeugungs- und Entschlüsselungsprozessen.
+Die RSA-Kryptographie beruht für ihre Sicherheit auf der Schwierigkeit, massive Zahlen zu faktorisieren. Innerhalb ihres Mechanismus spielt das Prinzip des "kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/)" eine entscheidende Rolle bei den Schlüsselerzeugungs- und Entschlüsselungsprozessen.
 
 ```mermaid
 sequenceDiagram
@@ -112,7 +112,7 @@ sequenceDiagram
 ```
 
 In der RSA-Kryptographie werden zwei riesige Primzahlen, $p$ und $q$, vorbereitet, und wir setzen $n = p \times q$.
-Nach dem Satz von Euler werden die Schlüssel ($e$ und $d$) so konstruiert, dass $M^{ed} \equiv M \pmod n$ bei den Verschlüsselungs- und Entschlüsselungsprozessen gilt. Hierbei beruht das magische Phänomen, dass der Klartext $M$ in seine ursprüngliche Form zurückkehrt, im Wesentlichen auf den mathematischen Eigenschaften, die durch den kleinen Satz von Fermat garantiert werden.
+Nach dem Satz von Euler werden die Schlüssel ($e$ und $d$) so konstruiert, dass $M^{ed} \equiv M \pmod n$ bei den Verschlüsselungs- und Entschlüsselungsprozessen gilt. Hierbei beruht das magische Phänomen, dass der Klartext $M$ in seine ursprüngliche Form zurückkehrt, im Wesentlichen auf den mathematischen Eigenschaften, die durch den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) garantiert werden.
 
 ## Fazit
 

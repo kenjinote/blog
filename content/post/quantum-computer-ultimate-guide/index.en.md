@@ -39,7 +39,7 @@ As classical computing approached these physical limits, the demand emerged for 
 
 "Nature isn't classical, dammit, and if you want to make a simulation of nature, you'd better make it quantum mechanical!"
 
-Underlying this insight is the fact that the dimensionality of the "Hilbert space" describing quantum states explodes exponentially with the number of particles. Consider an ensemble of $N$ spin- $1/2$ particles (i.e., two-level quantum systems). The state of a single particle is described by a 2-dimensional complex vector space $\mathbb{C}^2$ . Thus, the state space $\mathcal{H}$ of a composite system of $N$ particles is constructed as the tensor product of the individual state spaces:
+Underlying this insight is the fact that the dimensionality of the "[Hilbert](https://kenji.blog/en/p/hilbert/) space" describing quantum states explodes exponentially with the number of particles. Consider an ensemble of $N$ spin- $1/2$ particles (i.e., two-level quantum systems). The state of a single particle is described by a 2-dimensional complex vector space $\mathbb{C}^2$ . Thus, the state space $\mathcal{H}$ of a composite system of $N$ particles is constructed as the tensor product of the individual state spaces:
 
 $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
@@ -155,7 +155,7 @@ In this manner, quantum computing is not merely an incremental extension or work
 
 # Chapter 2: Fundamentals of Classical Bits and Quantum Bits (Qubits)
 
-In constructing the theoretical framework of quantum information, the most fundamental concept is the definition of the "elementary unit of information." In this chapter, starting from the bit in classical information theory, we extend the concept to the "quantum bit (qubit)," the elementary unit of quantum information founded upon the postulates of quantum mechanics. Using the rigorous language of Hilbert spaces, bra-ket notation, and linear algebra, we will thoroughly unravel the mathematical structure of quantum states. Without compromise, let us gaze into the profound depths of quantum information from an expert perspective.
+In constructing the theoretical framework of quantum information, the most fundamental concept is the definition of the "elementary unit of information." In this chapter, starting from the bit in classical information theory, we extend the concept to the "quantum bit (qubit)," the elementary unit of quantum information founded upon the postulates of quantum mechanics. Using the rigorous language of [Hilbert](https://kenji.blog/en/p/hilbert/) spaces, bra-ket notation, and linear algebra, we will thoroughly unravel the mathematical structure of quantum states. Without compromise, let us gaze into the profound depths of quantum information from an expert perspective.
 
 ## 2.1 The Elementary Unit of Information: Mathematical Formulation and Limitations of Classical Bits
 
@@ -178,7 +178,7 @@ Here, $p_0$ and $p_1$ are real numbers representing the probabilities of being i
 1. **Non-negativity** : $p_0 \ge 0, \quad p_1 \ge 0$
 2. **Normalization condition (total probability equals 1)** : $p_0 + p_1 = 1$
 
-In the realm of classical bits, a composite system formed by combining multiple bits is described by the tensor product (Kronecker product) of their respective probability vectors. For example, the joint probability vector of two classical bits is given by:
+In the realm of classical bits, a composite system formed by combining multiple bits is described by the tensor product ([Kronecker](https://kenji.blog/en/p/kronecker/) product) of their respective probability vectors. For example, the joint probability vector of two classical bits is given by:
 
 $$
 \mathbf{p}_{AB} = \mathbf{p}_A \otimes \mathbf{p}_B = \begin{pmatrix} p_{A0} \\ p_{A1} \end{pmatrix} \otimes \begin{pmatrix} p_{B0} \\ p_{B1} \end{pmatrix} = \begin{pmatrix} p_{A0}p_{B0} \\ p_{A0}p_{B1} \\ p_{A1}p_{B0} \\ p_{A1}p_{B1} \end{pmatrix}
@@ -188,9 +188,9 @@ While the framework of classical information theory is exceptionally powerful an
 
 ## 2.2 Postulates of Quantum Mechanics and Bra-Ket Notation
 
-The first postulate of quantum mechanics states that "the state of an isolated physical system is completely described by a unit vector (state vector) in a Hilbert space $\mathcal{H}$, which is a complete vector space equipped with a complex inner product." In the context of quantum computation, since continuous spatial degrees of freedom can be neglected, this Hilbert space is typically a finite-dimensional complex vector space $\mathbb{C}^d$.
+The first postulate of quantum mechanics states that "the state of an isolated physical system is completely described by a unit vector (state vector) in a [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H}$, which is a complete vector space equipped with a complex inner product." In the context of quantum computation, since continuous spatial degrees of freedom can be neglected, this [Hilbert](https://kenji.blog/en/p/hilbert/) space is typically a finite-dimensional complex vector space $\mathbb{C}^d$.
 
-The fundamental unit of quantum information, the "qubit," is rigorously defined as a state in a two-dimensional complex Hilbert space $\mathcal{H} \cong \mathbb{C}^2$. To describe states in this vector space, it is standard to use **bra-ket notation** , introduced by physicist Paul Dirac.
+The fundamental unit of quantum information, the "qubit," is rigorously defined as a state in a two-dimensional complex [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H} \cong \mathbb{C}^2$. To describe states in this vector space, it is standard to use **bra-ket notation** , introduced by physicist Paul Dirac.
 
 A column vector representing a quantum state is called a **ket vector** and is denoted as $|\psi\rangle$. Corresponding to the classical states $0$ and $1$, let us introduce an orthonormal basis called the computational basis. These are also referred to as the $Z$ basis of the qubit, and are defined respectively as $|0\rangle$ and $|1\rangle$:
 
@@ -198,7 +198,7 @@ $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 $$
 
-On the other hand, by the Riesz representation theorem, to any ket vector in a Hilbert space there uniquely corresponds an element of the dual space acting as a continuous linear functional. This is called a **bra vector** and is denoted as $\langle\psi|$. In matrix representation, taking the Hermitian conjugate (conjugate transpose, denoted by $^\dagger$) of a ket vector yields the corresponding bra vector:
+On the other hand, by the Riesz representation theorem, to any ket vector in a [Hilbert](https://kenji.blog/en/p/hilbert/) space there uniquely corresponds an element of the dual space acting as a continuous linear functional. This is called a **bra vector** and is denoted as $\langle\psi|$. In matrix representation, taking the Hermitian conjugate (conjugate transpose, denoted by $^\dagger$) of a ket vector yields the corresponding bra vector:
 
 $$
 \langle\psi| = (|\psi\rangle)^\dagger = (|\psi\rangle^*)^T
@@ -210,7 +210,7 @@ $$
 \langle 0| = \begin{pmatrix} 1 & 0 \end{pmatrix}, \quad \langle 1| = \begin{pmatrix} 0 & 1 \end{pmatrix}
 $$
 
-The true power of bra-ket notation lies in how visually clear inner product calculations become. The inner product between a bra $\langle\phi|$ and a ket $|\psi\rangle$ is written as $\langle\phi|\psi\rangle$ (originating from Dirac's wordplay where "bra" and "ket" join together to form a "bracket"). Because the computational basis $\{|0\rangle, |1\rangle\}$ forms an orthonormal system, it is expressed using the Kronecker delta $\delta_{ij}$ as:
+The true power of bra-ket notation lies in how visually clear inner product calculations become. The inner product between a bra $\langle\phi|$ and a ket $|\psi\rangle$ is written as $\langle\phi|\psi\rangle$ (originating from Dirac's wordplay where "bra" and "ket" join together to form a "bracket"). Because the computational basis $\{|0\rangle, |1\rangle\}$ forms an orthonormal system, it is expressed using the [Kronecker](https://kenji.blog/en/p/kronecker/) delta $\delta_{ij}$ as:
 
 $$
 \langle i | j \rangle = \delta_{ij} \quad (i, j \in \{0, 1\})
@@ -232,7 +232,7 @@ $$
 
 ## 2.3 The Principle of Quantum Superposition and Complex Probability Amplitudes
 
-Whereas a classical bit is always definitely in state $0$ or state $1$, or in a probabilistic mixture of the two, the linearity postulate of quantum mechanics allows a qubit to take on fundamentally distinct states known as "superpositions," expressed as linear combinations of $|0\rangle$ and $|1\rangle$. Any unit vector in the Hilbert space $\mathcal{H}$ is admissible as a valid physical state.
+Whereas a classical bit is always definitely in state $0$ or state $1$, or in a probabilistic mixture of the two, the linearity postulate of quantum mechanics allows a qubit to take on fundamentally distinct states known as "superpositions," expressed as linear combinations of $|0\rangle$ and $|1\rangle$. Any unit vector in the [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H}$ is admissible as a valid physical state.
 
 Therefore, the most general pure state $|\psi\rangle$ of a single qubit is expanded in the computational basis as:
 
@@ -282,7 +282,7 @@ $$
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
 $$
 
-Because global phases cancel each other out in this manner, it is impossible to observe them through any physical measurement. That is, although $|\psi\rangle$ and $e^{i\phi_0}|\psi\rangle$ are distinct vectors in Hilbert space (representing the same ray), physically they represent the exact same state.
+Because global phases cancel each other out in this manner, it is impossible to observe them through any physical measurement. That is, although $|\psi\rangle$ and $e^{i\phi_0}|\psi\rangle$ are distinct vectors in [Hilbert](https://kenji.blog/en/p/hilbert/) space (representing the same ray), physically they represent the exact same state.
 
 Therefore, by ignoring the global phase and retaining only the relative phase $\varphi = \phi_1 - \phi_0$ (where $\varphi \in [0, 2\pi)$) between $|0\rangle$ and $|1\rangle$ as a parameter, any pure state of a single qubit can be uniquely and rigorously expressed in the following **canonical form** :
 
@@ -313,7 +313,7 @@ graph TD
     style State fill:#bbf,stroke:#333,stroke-width:4px,stroke-dasharray: 5 5
 ```
 
-The most remarkable property of the Bloch sphere is that "orthogonal states in Hilbert space (states whose inner product is 0) are located at antipodal points (points 180 degrees opposite to each other) in the three-dimensional real space of the Bloch sphere." For example, the state orthogonal to $|0\rangle$ (North Pole, $\theta=0$) is $|1\rangle$ (South Pole, $\theta=\pi$). The inner product calculation $\langle 0 | 1 \rangle = 0$ between mutually orthogonal states in Hilbert space corresponds to an angular separation of $\pi$ (180 degrees) on the Bloch sphere. Because geometric angles are twice the angles in Hilbert space, there is a mathematical necessity for using the half-angle $\theta/2$ in the parameterization.
+The most remarkable property of the Bloch sphere is that "orthogonal states in [Hilbert](https://kenji.blog/en/p/hilbert/) space (states whose inner product is 0) are located at antipodal points (points 180 degrees opposite to each other) in the three-dimensional real space of the Bloch sphere." For example, the state orthogonal to $|0\rangle$ (North Pole, $\theta=0$) is $|1\rangle$ (South Pole, $\theta=\pi$). The inner product calculation $\langle 0 | 1 \rangle = 0$ between mutually orthogonal states in [Hilbert](https://kenji.blog/en/p/hilbert/) space corresponds to an angular separation of $\pi$ (180 degrees) on the Bloch sphere. Because geometric angles are twice the angles in [Hilbert](https://kenji.blog/en/p/hilbert/) space, there is a mathematical necessity for using the half-angle $\theta/2$ in the parameterization.
 
 The coordinates $\mathbf{r} = (x, y, z)$ of this Bloch sphere are rigorously derived as the expectation values of the **Pauli matrices** , which are observables in quantum mechanics. The Pauli matrices, which form the basis for Hermitian operators on two-dimensional systems, are defined as follows:
 
@@ -385,7 +385,7 @@ and the state collapses completely into $|0\rangle$ (the global phase is ignored
 
 ## 2.6 Introduction to Multi-Particle Extensions and Outlook for the Next Chapter
 
-Having deeply understood the properties of a single qubit, we also touch upon the mathematical foundations of "multi-qubit systems," which will be treated in earnest in subsequent chapters. Whereas classical probability distributions extend the state space via Cartesian products, the Hilbert space $\mathcal{H}_{AB}$ of a composite system in quantum mechanics is formed by the **tensor product** of the Hilbert spaces $\mathcal{H}_A$ and $\mathcal{H}_B$ of the respective subsystems:
+Having deeply understood the properties of a single qubit, we also touch upon the mathematical foundations of "multi-qubit systems," which will be treated in earnest in subsequent chapters. Whereas classical probability distributions extend the state space via Cartesian products, the [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H}_{AB}$ of a composite system in quantum mechanics is formed by the **tensor product** of the [Hilbert](https://kenji.blog/en/p/hilbert/) spaces $\mathcal{H}_A$ and $\mathcal{H}_B$ of the respective subsystems:
 
 $$
 \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
@@ -399,7 +399,7 @@ $$
 
 Here, the existence of states that cannot be factorized into a tensor product of states (e.g., the Bell state $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$) is the origin of quantum entanglement. The exponential explosion of dimensions via the tensor product ($2^N$ dimensions for $N$ qubits) is precisely the foundation that enables quantum computers to demonstrate overwhelming parallel computing power.
 
-In this chapter, we established the fundamental differences between classical bits and qubits on the mathematical foundation of Hilbert spaces. Qubits are capable of taking continuous superposition states with complex probability amplitudes, and through the derivation of the Bloch sphere, we obtained a powerful method for intuitively understanding abstract complex vectors as geometric models in three-dimensional real space.
+In this chapter, we established the fundamental differences between classical bits and qubits on the mathematical foundation of [Hilbert](https://kenji.blog/en/p/hilbert/) spaces. Qubits are capable of taking continuous superposition states with complex probability amplitudes, and through the derivation of the Bloch sphere, we obtained a powerful method for intuitively understanding abstract complex vectors as geometric models in three-dimensional real space.
 
 In the next chapter, "Chapter 3: Quantum Logic Gates and Unitary Transformations," we will elaborate on concrete "quantum logic gates" that manipulate these single-qubit states, and elucidate the mathematical properties of rotational operations by unitary matrices on the Bloch sphere. The door to the profound world of quantum information has only just begun to open.
 
@@ -409,16 +409,16 @@ In the next chapter, "Chapter 3: Quantum Logic Gates and Unitary Transformations
 
 To understand the operating principles of quantum computers from the ground up, it is essential to grasp the theoretical framework of physics known as quantum mechanics in a mathematically rigorous form. While many theories in physics have undergone inductive development based on empirical rules, quantum mechanics—particularly modern quantum mechanics formulated by John von Neumann—adopts an axiomatic approach that deduces the entire system from a small number of mathematical "Axioms".
 
-This axiomatic system is constructed on the stage of complex linear algebra, extensible to infinite dimensions, known as Hilbert space. In quantum information science and quantum computing, we primarily deal with finite-dimensional vector spaces (for example, the tensor product space of $\mathbb{C}^2$ for qubit systems). This allows us to avoid the analytical difficulties of infinite dimensions (such as the domains of unbounded operators) and makes it possible to describe and understand quantum mechanics purely as linear algebra.
+This axiomatic system is constructed on the stage of complex linear algebra, extensible to infinite dimensions, known as [Hilbert](https://kenji.blog/en/p/hilbert/) space. In quantum information science and quantum computing, we primarily deal with finite-dimensional vector spaces (for example, the tensor product space of $\mathbb{C}^2$ for qubit systems). This allows us to avoid the analytical difficulties of infinite dimensions (such as the domains of unbounded operators) and makes it possible to describe and understand quantum mechanics purely as linear algebra.
 
 In this chapter, we will strictly formulate the processes ranging from the description of quantum states and time evolution to "observation," which has sparked the most philosophical debates, without any compromise. Readers will realize how seemingly counter-intuitive quantum phenomena are built upon a consistent and beautiful mathematical structure. This very mathematical structure serves as the direct "language" that describes quantum computer algorithms.
 
-## 3.2 The First Axiom: State Space (Hilbert Space and State Vectors)
+## 3.2 The First Axiom: State Space ([Hilbert](https://kenji.blog/en/p/hilbert/) Space and State Vectors)
 
 The first axiom in quantum mechanics determines how the "state" of a physical system is represented mathematically.
 
  **Axiom 1 (Representation of States)** :
-The state of a closed physical system is completely described by a unit vector with a norm of 1 in a Hilbert space $\mathcal{H}$, which is a complete complex inner product space. This is called a **state vector** .
+The state of a closed physical system is completely described by a unit vector with a norm of 1 in a [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H}$, which is a complete complex inner product space. This is called a **state vector** .
 
 According to the Bra-ket notation introduced by Paul Dirac, a state vector is treated as a column vector and is denoted as a ket **$| \psi \rangle$** . A row vector belonging to the dual space $\mathcal{H}^*$ is denoted as a bra **$\langle \psi |$** , and these are Hermitian conjugates (complex conjugate transposes) of each other. That is,
 
@@ -426,7 +426,7 @@ $$
 \langle \psi | = ( | \psi \rangle )^\dagger
 $$
 
-The inner product of any two states **$| \phi \rangle$** and **$| \psi \rangle$** in the Hilbert space is calculated as the product of the bra and the ket **$\langle \phi | \psi \rangle$** , yielding a complex value. This inner product satisfies the following properties:
+The inner product of any two states **$| \phi \rangle$** and **$| \psi \rangle$** in the [Hilbert](https://kenji.blog/en/p/hilbert/) space is calculated as the product of the bra and the ket **$\langle \phi | \psi \rangle$** , yielding a complex value. This inner product satisfies the following properties:
 
 1. **Positive definiteness** : For any **$| \psi \rangle \neq 0$** , $\langle \psi | \psi \rangle > 0$
 2. **Linearity** : $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
@@ -438,19 +438,19 @@ $$
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
 $$
 
-Furthermore, since the Cauchy-Schwarz inequality $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ holds, the absolute value of the inner product between normalized states always falls between 0 and 1. This becomes the mathematical foundation for later interpreting it as a "probability".
+Furthermore, since the [Cauchy](https://kenji.blog/en/p/cauchy/)-Schwarz inequality $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$ holds, the absolute value of the inner product between normalized states always falls between 0 and 1. This becomes the mathematical foundation for later interpreting it as a "probability".
 
 ### Superposition Principle and Complete Orthonormal Basis
 
-The most prominent feature of quantum mechanics is the "Superposition principle". If **$| \phi \rangle$** and **$| \psi \rangle$** are physically permissible states, then any complex linear combination of them $c_1 | \phi \rangle + c_2 | \psi \rangle$ is also a physically permissible state (once normalized). This property is directly derived from the linearity of Hilbert space.
+The most prominent feature of quantum mechanics is the "Superposition principle". If **$| \phi \rangle$** and **$| \psi \rangle$** are physically permissible states, then any complex linear combination of them $c_1 | \phi \rangle + c_2 | \psi \rangle$ is also a physically permissible state (once normalized). This property is directly derived from the linearity of [Hilbert](https://kenji.blog/en/p/hilbert/) space.
 
-In the Hilbert space $\mathcal{H}$, there exists an orthonormal basis $\{ | e_i \rangle \}$. These basis vectors are mutually orthogonal and normalized.
+In the [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H}$, there exists an orthonormal basis $\{ | e_i \rangle \}$. These basis vectors are mutually orthogonal and normalized.
 
 $$
 \langle e_i | e_j \rangle = \delta_{ij}
 $$
 
-(where $\delta_{ij}$ is the Kronecker delta). Also, as the completeness relation or resolution of the identity, the identity operator $I$ can be expanded as follows:
+(where $\delta_{ij}$ is the [Kronecker](https://kenji.blog/en/p/kronecker/) delta). Also, as the completeness relation or resolution of the identity, the identity operator $I$ can be expanded as follows:
 
 $$
 I = \sum_i | e_i \rangle \langle e_i |
@@ -469,7 +469,7 @@ Here, the expansion coefficients $c_i = \langle e_i | \psi \rangle$ are called c
 In classical mechanics, physical quantities (observables) such as position, momentum, and energy are described as real-valued functions. However, a fundamental paradigm shift occurs in quantum mechanics.
 
  **Axiom 2 (Observables)** :
-Observable physical quantities (observables) are described by linear self-adjoint operators (Hermitian operators) $A$ on the Hilbert space $\mathcal{H}$.
+Observable physical quantities (observables) are described by linear self-adjoint operators (Hermitian operators) $A$ on the [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H}$.
 
 A Hermitian operator is an operator whose Hermitian conjugate is equal to itself. That is, it satisfies $A = A^\dagger$. When represented as a matrix in a finite-dimensional space, it means that its elements are complex conjugate symmetric ( $A_{ij} = A_{ji}^*$ ).
 
@@ -477,7 +477,7 @@ The reason observables must be defined as Hermitian operators lies in their "Eig
 
 1. **All eigenvalues $a_i$ are real numbers.** (Since observed physical quantities must always be real numbers, this matches the physical requirements.)
 2. **Eigenvectors belonging to different eigenvalues are orthogonal to each other.** 
-3. **The eigenvectors $\{ | a_i \rangle \}$ of the operator form a complete orthonormal basis for the Hilbert space.** 
+3. **The eigenvectors $\{ | a_i \rangle \}$ of the operator form a complete orthonormal basis for the [Hilbert](https://kenji.blog/en/p/hilbert/) space.** 
 
 Therefore, any observable $A$ can be subjected to a spectral decomposition as a linear combination of projection operators $P_i = | a_i \rangle \langle a_i |$, using its eigenvalues $a_i$ and eigenvectors **$| a_i \rangle$** :
 
@@ -485,7 +485,7 @@ $$
 A = \sum_i a_i | a_i \rangle \langle a_i |
 $$
 
-Through this formulation, the act of "measuring a physical quantity" can be understood as a geometric operation of projecting onto a specific basis (eigenvectors) in the Hilbert space. For example, the $\sigma_z$ observation of a qubit is completely described as a projection operation onto an orthogonal basis consisting of the state **$| 0 \rangle$** corresponding to the eigenvalue $+1$, and the state **$| 1 \rangle$** corresponding to the eigenvalue $-1$.
+Through this formulation, the act of "measuring a physical quantity" can be understood as a geometric operation of projecting onto a specific basis (eigenvectors) in the [Hilbert](https://kenji.blog/en/p/hilbert/) space. For example, the $\sigma_z$ observation of a qubit is completely described as a projection operation onto an orthogonal basis consisting of the state **$| 0 \rangle$** corresponding to the eigenvalue $+1$, and the state **$| 1 \rangle$** corresponding to the eigenvalue $-1$.
 
 ## 3.4 The Third Axiom: Unitary Time Evolution and the Schrödinger Equation
 
@@ -600,7 +600,7 @@ In this way, the abstract concepts of linear algebra—vector spaces, inner prod
 
 # Chapter 4: Single-Qubit Gates and Unitary Transformations
 
-At the foundation of quantum computation lies the precise manipulation of quantum states. While logic gates in classical computers (such as AND, OR, and NOT) irreversibly manipulate bit values, "quantum gates" in a quantum computer represent reversible time evolution governed by the Schrödinger equation, and are mathematically described rigorously as "unitary transformations (unitary matrices)" on a complex Hilbert space. In this chapter, we delve thoroughly and uncompromisingly into the mathematical structure, algebraic properties, and intuitive geometric meaning on the Bloch sphere of the fundamental quantum gates acting on a single qubit (a two-level system).
+At the foundation of quantum computation lies the precise manipulation of quantum states. While logic gates in classical computers (such as AND, OR, and NOT) irreversibly manipulate bit values, "quantum gates" in a quantum computer represent reversible time evolution governed by the Schrödinger equation, and are mathematically described rigorously as "unitary transformations (unitary matrices)" on a complex [Hilbert](https://kenji.blog/en/p/hilbert/) space. In this chapter, we delve thoroughly and uncompromisingly into the mathematical structure, algebraic properties, and intuitive geometric meaning on the Bloch sphere of the fundamental quantum gates acting on a single qubit (a two-level system).
 
 ## 4.1 Postulates of Quantum Mechanics and the Inevitability of Unitary Matrices
 
@@ -698,7 +698,7 @@ This corresponds to a **$\pi$** rotation about the Z-axis. Since the computation
 
 ### 4.2.4 Profound Algebraic Structure of the Pauli Group
 
-The Pauli matrix set **$\{I, X, Y, Z\}$** forms an exceptionally elegant algebraic structure as linear operators on Hilbert space:
+The Pauli matrix set **$\{I, X, Y, Z\}$** forms an exceptionally elegant algebraic structure as linear operators on [Hilbert](https://kenji.blog/en/p/hilbert/) space:
 
 1. **Simultaneous Self-Adjointness (Hermiticity) and Unitarity** : **$X = X^\dagger$** , **$Y = Y^\dagger$** , **$Z = Z^\dagger$** , while simultaneously satisfying **$X^\dagger X = I$** (i.e., **$X = X^{-1}$** ). They possess the rare property of being physical observables while simultaneously serving as unitary generators of time evolution (quantum gates). Applying them twice consecutively returns to the identity transformation (involution: **$X^2 = Y^2 = Z^2 = I$** ).
 2. **Complete Anti-Commutation Relations** : Interchanging the order of multiplication between different Pauli matrices reverses their sign:
@@ -945,7 +945,7 @@ $$
 Astonishingly, a sequence of operations using a discrete set of gates around entirely different axes—" **$H \rightarrow S \rightarrow H$** "—is proven to be mathematically equivalent, down to the last detail (up to a global phase), to a single "rotation of **$\pi/2$** about the X-axis."
 In this manner, quantum states traverse complex interference pathways that defy our classical intuition; yet, through the robust mathematical framework of linear algebra, their behavior can be completely governed and predicted without an error of a single bit.
 
-In the next chapter, building upon this strong foundation of single-qubit operations, we will step into the profound world of the tensor product, which causes the dimensionality of Hilbert space to explode exponentially, and multi-qubit gates, which generate what Einstein called "spooky action at a distance"—"quantum entanglement."
+In the next chapter, building upon this strong foundation of single-qubit operations, we will step into the profound world of the tensor product, which causes the dimensionality of [Hilbert](https://kenji.blog/en/p/hilbert/) space to explode exponentially, and multi-qubit gates, which generate what Einstein called "spooky action at a distance"—"quantum entanglement."
 
 # Chapter 5: Multi-Qubit Systems and Quantum Entanglement
 
@@ -955,9 +955,9 @@ In the preceding chapters, we explored in detail the superposition property of s
 
 ## 5.1 Mathematical Description of Many-Body States via Tensor Product ($\otimes$)
 
-According to the postulates of quantum mechanics, when the state spaces of independent physical systems are described by Hilbert spaces **$\mathcal{H}_A$** and **$\mathcal{H}_B$** , respectively, the state space of the combined composite system is given by the **tensor product** of the respective spaces, **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** .
+According to the postulates of quantum mechanics, when the state spaces of independent physical systems are described by [Hilbert](https://kenji.blog/en/p/hilbert/) spaces **$\mathcal{H}_A$** and **$\mathcal{H}_B$** , respectively, the state space of the combined composite system is given by the **tensor product** of the respective spaces, **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** .
 
-The state space of a single qubit is the two-dimensional complex vector space **$\mathbb{C}^2$** . Therefore, the state space of a system composed of $n$ qubits is the $2^n$-dimensional Hilbert space **$(\mathbb{C}^2)^{\otimes n}$** . This exponential increase of dimensionality with respect to the number of qubits $n$ is the mathematical foundation of quantum parallelism.
+The state space of a single qubit is the two-dimensional complex vector space **$\mathbb{C}^2$** . Therefore, the state space of a system composed of $n$ qubits is the $2^n$-dimensional [Hilbert](https://kenji.blog/en/p/hilbert/) space **$(\mathbb{C}^2)^{\otimes n}$** . This exponential increase of dimensionality with respect to the number of qubits $n$ is the mathematical foundation of quantum parallelism.
 
 Let us consider a system composed of two qubits (qubit A and qubit B). The computational basis is defined as the tensor product of the basis states of each individual qubit:
 
@@ -968,7 +968,7 @@ $$
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
 $$
 
-Here, let us rigorously compute the matrix representation of the tensor product (the Kronecker product). Representing the basis of a single qubit as column vectors:
+Here, let us rigorously compute the matrix representation of the tensor product (the [Kronecker](https://kenji.blog/en/p/kronecker/) product). Representing the basis of a single qubit as column vectors:
 
 $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
@@ -1009,7 +1009,7 @@ $$
 
 the state is said to be separable. Conversely, a state that **cannot** be expressed as the tensor product of any subsystem states is defined as an **entangled state** .
 
-In a two-qubit system, the states possessing maximal quantum entanglement are called **Bell states** or EPR pairs. The Bell states consist of the following four orthogonal pure states, forming a complete orthonormal basis (the Bell basis) of the four-dimensional Hilbert space:
+In a two-qubit system, the states possessing maximal quantum entanglement are called **Bell states** or EPR pairs. The Bell states consist of the following four orthogonal pure states, forming a complete orthonormal basis (the Bell basis) of the four-dimensional [Hilbert](https://kenji.blog/en/p/hilbert/) space:
 
 $$
 |\Phi^+\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle + |11\rangle \Big)
@@ -1907,7 +1907,7 @@ Through this classical reduction, the problem is narrowed down to the single poi
 
 The heart of the quantum algorithm for extracting the hidden period $r$ of the function $f(x) in polynomial time is the "Quantum Fourier Transform (QFT)". The QFT is a quantum mechanical analogy of the classical Discrete Fourier Transform (DFT), and it is a unitary transformation acting on the probability amplitudes of the state space.
 
-The action of the Quantum Fourier Transform on a computational basis state $|j\rangle$ ($j = 0, 1, \dots, M-1$) in a Hilbert space $\mathcal{H}$ of dimension $M = 2^n$ is rigorously defined as follows:
+The action of the Quantum Fourier Transform on a computational basis state $|j\rangle$ ($j = 0, 1, \dots, M-1$) in a [Hilbert](https://kenji.blog/en/p/hilbert/) space $\mathcal{H}$ of dimension $M = 2^n$ is rigorously defined as follows:
 
 
 $$
@@ -2037,7 +2037,7 @@ $$
 
 
 Here, $k$ and $M$ are known values, but $j$ and $r$ are unknown. Since $t$ is chosen such that $M \ge N^2$, $k/M$ gives an extremely highly accurate approximation for the unknown fraction $j/r$, satisfying $\left| \frac{k}{M} - \frac{j}{r} \right| \le \frac{1}{2M} < \frac{1}{2r^2}$.
-According to the theorem of Diophantine approximation (Legendre's theorem), a rational number $j/r$ satisfying this condition is guaranteed to be included among the convergents of the "Continued Fraction Expansion" of the real number $k/M$.
+According to the theorem of Diophantine approximation ([Legendre](https://kenji.blog/en/p/legendre/)'s theorem), a rational number $j/r$ satisfying this condition is guaranteed to be included among the convergents of the "Continued Fraction Expansion" of the real number $k/M$.
 Therefore, by computing the continued fraction expansion of $k/M$ in polynomial time using a classical computer, the period $r$ can be determined as the denominator. This solves the order-finding problem, making it possible to derive the prime factors $p$ and $q$, which are the keys to RSA cryptography, as a result.
 
 ## 8.5 Why Shor's Algorithm Brings an Exponential Speedup Over Classical Computation
@@ -2051,7 +2051,7 @@ However, according to the axioms of quantum mechanics, once a measurement is per
 Here is where the true magic lies, the second key: quantum interference and the extraction of global structure. The Quantum Fourier Transform generates interference across the entire exponentially vast state space. This is an operation that does not seek to know the specific value of individual $f(x)$'s, but rather extracts only the structural pattern of the "global periodicity" of the entire function.
 The probability amplitudes corresponding to incorrect periods are completely extinguished by destructive interference, just as the peaks and troughs of waves cancel each other out, while only the probability amplitude corresponding to the correct period $r$ is maximized by constructive interference. In other words, the laws of physics of the natural world themselves play the role of a computer, erasing countless wrong answers and bringing only the correct answer to the surface.
 
-From the perspective of the Hidden Subgroup Problem (HSP), Shor's algorithm is a general framework for efficiently solving the "HSP on finite Abelian groups." The order-finding of the commutative group on which RSA cryptography relies perfectly matches this framework.
+From the perspective of the Hidden Subgroup Problem (HSP), Shor's algorithm is a general framework for efficiently solving the "HSP on finite [Abel](https://kenji.blog/en/p/abel/)ian groups." The order-finding of the commutative group on which RSA cryptography relies perfectly matches this framework.
 
 Quantum computers are not omnipotent magic wands and cannot solve every problem exponentially faster. However, for problems where this "periodicity" or "algebraic structure" is hidden, the physical mechanism of quantum interference fundamentally breaks through the limits of classical computation. That is the most profound and beautiful reason why Shor's algorithm put an end to cryptographic theory and brought explosive development to the field of quantum information science.
 
@@ -2075,13 +2075,13 @@ $$
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
 $$
 
-In the Hilbert space, this state **$|s\rangle$** can be clearly decomposed into a linear combination of the target state $|w\rangle$ and all other non-target (incorrect) states. To make the subsequent geometric interpretation visually accessible, we introduce a new normalized vector $|s^\perp\rangle$, which is an equal superposition of non-target states only:
+In the [Hilbert](https://kenji.blog/en/p/hilbert/) space, this state **$|s\rangle$** can be clearly decomposed into a linear combination of the target state $|w\rangle$ and all other non-target (incorrect) states. To make the subsequent geometric interpretation visually accessible, we introduce a new normalized vector $|s^\perp\rangle$, which is an equal superposition of non-target states only:
 
 $$
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
 $$
 
-By this definition, the state $|s^\perp\rangle$ and the target state $|w\rangle$ are mutually orthogonal ( $\langle s^\perp | w \rangle = 0$ ). Consequently, the initial uniform superposition state **$|s\rangle$** can be expanded very simply on the two-dimensional Hilbert subspace spanned by these two mutually orthogonal vectors $|w\rangle$ and $|s^\perp\rangle$:
+By this definition, the state $|s^\perp\rangle$ and the target state $|w\rangle$ are mutually orthogonal ( $\langle s^\perp | w \rangle = 0$ ). Consequently, the initial uniform superposition state **$|s\rangle$** can be expanded very simply on the two-dimensional [Hilbert](https://kenji.blog/en/p/hilbert/) subspace spanned by these two mutually orthogonal vectors $|w\rangle$ and $|s^\perp\rangle$:
 
 $$
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
@@ -2093,7 +2093,7 @@ $$
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
 $$
 
-What this equation tells us is the stark reality that in the initial state **$|s\rangle$** , the probability of observing the target state $|w\rangle$ is merely $|\sin \theta|^2 = \frac{1}{N}$. The ultimate goal of Grover's algorithm is to iteratively apply a combination of an oracle and a diffusion operator (discussed below) to gradually "rotate" this state vector **$|s\rangle$** toward $|w\rangle$ within the two-dimensional plane of the Hilbert space, driving the probability of observing the correct state arbitrarily close to the theoretical limit of $1$ (amplifying its amplitude).
+What this equation tells us is the stark reality that in the initial state **$|s\rangle$** , the probability of observing the target state $|w\rangle$ is merely $|\sin \theta|^2 = \frac{1}{N}$. The ultimate goal of Grover's algorithm is to iteratively apply a combination of an oracle and a diffusion operator (discussed below) to gradually "rotate" this state vector **$|s\rangle$** toward $|w\rangle$ within the two-dimensional plane of the [Hilbert](https://kenji.blog/en/p/hilbert/) space, driving the probability of observing the correct state arbitrarily close to the theoretical limit of $1$ (amplifying its amplitude).
 
 ## 9.2 Definition of the Quantum Oracle and Phase Kickback
 
@@ -2405,7 +2405,7 @@ The first obstacle encountered in constructing quantum error correction is the "
 
 ## 10.2 Fundamental Principles of Quantum Error Correction: Redundancy and Syndrome Measurement
 
-The alternative to "copying" in quantum information is to entangle multiple qubits, mapping the original information into a subspace (code space) of a higher-dimensional Hilbert space.
+The alternative to "copying" in quantum information is to entangle multiple qubits, mapping the original information into a subspace (code space) of a higher-dimensional [Hilbert](https://kenji.blog/en/p/hilbert/) space.
 
 As the simplest example, we construct the "3-qubit bit flip code" that protects a single-qubit state $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ from probabilistic bit flips.
 We define the logical basis as follows:
@@ -2564,10 +2564,10 @@ Quantum error correction and FTQC are not mere engineering patches. They represe
 
 # Chapter 11: Physical Implementation of Quantum Hardware
 
-Up to Chapter 10, we have detailed the theoretical foundations of quantum information science and the mathematical structure of algorithms. No matter how advanced quantum algorithms are designed and theoretical Quantum Supremacy is proven within the framework of computational complexity theory, without "quantum hardware" as a physical entity to execute them, it remains a play of pure mathematics. In this chapter, we will rigorously explain state-of-the-art hardware implementation schemes for materializing the state vector $ |\psi\rangle $ in an abstract Hilbert space into the physical world, starting from the deep principles of quantum physics behind them.
+Up to Chapter 10, we have detailed the theoretical foundations of quantum information science and the mathematical structure of algorithms. No matter how advanced quantum algorithms are designed and theoretical Quantum Supremacy is proven within the framework of computational complexity theory, without "quantum hardware" as a physical entity to execute them, it remains a play of pure mathematics. In this chapter, we will rigorously explain state-of-the-art hardware implementation schemes for materializing the state vector $ |\psi\rangle $ in an abstract [Hilbert](https://kenji.blog/en/p/hilbert/) space into the physical world, starting from the deep principles of quantum physics behind them.
 
 In order to artificially control a quantum physical system and make it function as a universal computer, five severe physical requirements called DiVincenzo's criteria must be met.
-1. **A scalable physical system with well-characterized qubits** : The tensor product structure of the Hilbert space $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ must be physically secured.
+1. **A scalable physical system with well-characterized qubits** : The tensor product structure of the [Hilbert](https://kenji.blog/en/p/hilbert/) space $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ must be physically secured.
 2. **The ability to initialize the state of the qubits to a simple fiducial state** : The ability to reset the system to a pure state (typically $ |00\dots0\rangle $) with high fidelity.
 3. **Long relevant decoherence times** : The decoherence times of quantum states (T1 and T2) must be many orders of magnitude longer than the time required for a single gate operation.
 4. **A "universal" set of quantum gates** : Any unitary transformation $ \hat{U} \in SU(2^n) $ can be approximated with arbitrary precision by a combination of a finite number of basis gates (e.g., H, T, CNOT gates).
@@ -2671,19 +2671,19 @@ This operation generates a fully entangled state and has equivalent computationa
  **Challenges and Limitations** 
 The gate operation time is tens of microseconds, orders of magnitude slower than superconducting schemes. Furthermore, placing dozens or more ions in a single one-dimensional trap leads to an overcrowded vibrational mode spectrum, making crosstalk inevitable. Scaling technologies such as the QCCD (Quantum Charge-Coupled Device) architecture to break through this are currently major research topics.
 
-## 11.3 Topological Qubits: Non-Abelian Anyons and Ultimate Robustness
+## 11.3 Topological Qubits: Non-[Abel](https://kenji.blog/en/p/abel/)ian Anyons and Ultimate Robustness
 
 Both superconducting and trapped ion schemes are vulnerable to errors caused by local noise from the environment, making quantum error correction, which will be discussed later, indispensable. However, there is an extremely ambitious approach to construct quantum states that are fundamentally protected from noise at the physical level. That is the topological quantum computer.
 
 ### 11.3.1 Kitaev Chain and Majorana Zero Modes
 
-In the three-dimensional space where we live, only two types of elementary particles exist: bosons and fermions. However, in two-dimensional topological matter systems, "anyons" can exist, where the wave function acquires an arbitrary phase through particle exchange operations. Furthermore, in the case of peculiar "non-Abelian anyons," exchanging two particles causes the system to undergo a unitary rotation from a degenerate state of the same energy to another orthogonal state.
+In the three-dimensional space where we live, only two types of elementary particles exist: bosons and fermions. However, in two-dimensional topological matter systems, "anyons" can exist, where the wave function acquires an arbitrary phase through particle exchange operations. Furthermore, in the case of peculiar "non-[Abel](https://kenji.blog/en/p/abel/)ian anyons," exchanging two particles causes the system to undergo a unitary rotation from a degenerate state of the same energy to another orthogonal state.
 
 $$
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
 $$
 
-The most promising physical candidate for these non-Abelian anyons are "Majorana Zero Modes (MZM)" as quasiparticles in condensed matter physics. A one-dimensional semiconductor nanowire (such as InSb) is given a strong spin-orbit interaction, brought into proximity contact with an s-wave superconductor, and subjected to an external magnetic field. According to the model proposed by Alexei Kitaev, in a specific parameter regime, the nanowire undergoes a phase transition to a topological superconducting phase, and zero-energy Majorana particles are localized as edge states at both ends of the wire.
+The most promising physical candidate for these non-[Abel](https://kenji.blog/en/p/abel/)ian anyons are "Majorana Zero Modes (MZM)" as quasiparticles in condensed matter physics. A one-dimensional semiconductor nanowire (such as InSb) is given a strong spin-orbit interaction, brought into proximity contact with an s-wave superconductor, and subjected to an external magnetic field. According to the model proposed by Alexei Kitaev, in a specific parameter regime, the nanowire undergoes a phase transition to a topological superconducting phase, and zero-energy Majorana particles are localized as edge states at both ends of the wire.
 
 The Majorana operators $ \hat{\gamma}_1, \hat{\gamma}_2 $ are self-adjoint ($ \hat{\gamma}_j = \hat{\gamma}_j^\dagger $) and satisfy the anti-commutation relation $ \{ \hat{\gamma}_i, \hat{\gamma}_j \} = 2\delta_{ij} $. The creation and annihilation operators of standard Dirac fermions can be constructed spatially non-locally using these two Majorana operators.
 
@@ -2768,7 +2768,7 @@ $$
 
 In a sufficiently deep (large $d$) random quantum circuit, each amplitude $ \alpha_x $ exhibits random walk-like behavior on the complex plane, and it is known that its probability distribution $ P_{\text{ideal}}(x) $ follows the Porter-Thomas distribution. In other words, the probability density function for the appearance of probability $p$ is $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $. This means that it forms a "speckle pattern" where specific bitstrings are more likely to be observed than others.
 
-To perform exact sampling from this distribution using a classical computer, it is necessary to calculate the amplitudes $ \alpha_x $ directly through giant tensor network contraction calculations. The dimensionality of the state vector is $ 2^n $, and in the case of $ n = 53 $, we must track approximately $ 9 \times 10^{15} $ complex amplitudes (petabytes of memory). This confronts a computational wall that would take a tremendous amount of time even using the world's fastest supercomputers of that time. On the other hand, a quantum computer inherently maintains the state **$|\psi_f\rangle$** physically as a natural vector on a Hilbert space, and it instantly (in tens of microseconds) performs sampling according to the speckle pattern with a single measurement.
+To perform exact sampling from this distribution using a classical computer, it is necessary to calculate the amplitudes $ \alpha_x $ directly through giant tensor network contraction calculations. The dimensionality of the state vector is $ 2^n $, and in the case of $ n = 53 $, we must track approximately $ 9 \times 10^{15} $ complex amplitudes (petabytes of memory). This confronts a computational wall that would take a tremendous amount of time even using the world's fastest supercomputers of that time. On the other hand, a quantum computer inherently maintains the state **$|\psi_f\rangle$** physically as a natural vector on a [Hilbert](https://kenji.blog/en/p/hilbert/) space, and it instantly (in tens of microseconds) performs sampling according to the speckle pattern with a single measurement.
 
 To evaluate the success or failure of the experiment, Linear Cross-Entropy Benchmarking (XEB) was introduced. The fidelity $ \mathcal{F}_{\text{XEB}} $ is defined as follows:
 
@@ -2824,7 +2824,7 @@ Even though quantum supremacy has been demonstrated, current devices with tens t
 
 The only theoretical path to breaking through this physical limit and enabling practical large-scale quantum algorithms spanning hundreds of millions of steps to be completed is the realization of **Fault-Tolerant Quantum Computation (FTQC)** using **Quantum Error Correction (QEC)** . Error correction in classical computers (such as majority vote codes via bit replication) cannot be applied to quantum states due to the "No-Cloning Theorem," which forms the foundation of quantum mechanics. There is mathematically no unitary transformation that can perfectly copy an unknown quantum state **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** into something like **$|\psi\rangle \otimes |\psi\rangle \otimes |\psi\rangle$** .
 
-However, theoretical physics has found an elegant solution to overcome this despair. Quantum information can be protected not by replicating individual states, but by "distributing and hiding a single piece of logical information within the topology of an 'entanglement space' of a giant Hilbert space composed of a large number of physical qubit groups." Currently, the "Surface Code," which is considered the most promising from a hardware implementation perspective, is based on the Stabilizer Formalism on a 2-dimensional lattice.
+However, theoretical physics has found an elegant solution to overcome this despair. Quantum information can be protected not by replicating individual states, but by "distributing and hiding a single piece of logical information within the topology of an 'entanglement space' of a giant [Hilbert](https://kenji.blog/en/p/hilbert/) space composed of a large number of physical qubit groups." Currently, the "Surface Code," which is considered the most promising from a hardware implementation perspective, is based on the Stabilizer Formalism on a 2-dimensional lattice.
 
 In the surface code, "data qubits" that hold quantum information are placed on the edges of a 2D lattice, and "syndrome measurement qubits (ancilla qubits)" for detecting errors are placed on the plaquettes (faces) and vertices of the lattice. Then, stabilizer operator groups consisting of tensor products of Pauli operators are defined as follows:
 
@@ -2852,7 +2852,7 @@ Viewed from the current stage of tens to hundreds of physical qubits, this poses
 
 Beginning with the introduction of the superposition of **$|0\rangle$** and **$|1\rangle$** through bra-ket notation in Chapter 1, progressing through time evolution by unitary matrices, the mathematical description of many-body systems by tensor products, the breakdown of Einstein's local realism through Bell's inequalities, and finally reaching the elegant mathematical structures of Shor's and Grover's quantum algorithms, we have traced the culmination of knowledge known as "quantum information science" in an extremely rigorous form throughout this entire 12-chapter series.
 
-While classical computers are based on "deterministic truth values (Boolean algebra)," quantum computers are based on "unitary rotations and tensor products in complex Hilbert spaces (linear algebra)." This fundamental paradigm shift transcends the industrial and practical aspect of merely "speeding up calculations"; it confronts us with profound philosophical questions where information theory and fundamental physics are perfectly unified: "What is the ultimate information processing capability of this universe?" and "How do computability and complexity depend on the structure of the physical laws of the universe in which we live?"
+While classical computers are based on "deterministic truth values (Boolean algebra)," quantum computers are based on "unitary rotations and tensor products in complex [Hilbert](https://kenji.blog/en/p/hilbert/) spaces (linear algebra)." This fundamental paradigm shift transcends the industrial and practical aspect of merely "speeding up calculations"; it confronts us with profound philosophical questions where information theory and fundamental physics are perfectly unified: "What is the ultimate information processing capability of this universe?" and "How do computability and complexity depend on the structure of the physical laws of the universe in which we live?"
 
 Quantum entanglement, which Einstein once despised as "spooky action at a distance," has now been established as the most fundamental and indispensable "resource" for driving quantum teleportation, quantum cryptographic communication, and quantum computers. The intuition proposed by genius physicist Richard Feynman in 1982: "If you want to make a simulation of nature, you'd better make it quantum mechanical, and by golly it's a wonderful problem, because it doesn't look so easy," has, after decades, finally reached the stage of running on real processors through the blood, sweat, and tears of physicists, mathematicians, computer scientists, and preeminent hardware engineers worldwide.
 

@@ -92,8 +92,8 @@ Eiffelはオブジェクト指向プログラミング言語のひとつ
 ## Ada
 Adaはオブジェクト指向プログラミング言語のひとつ
 
-## Pascal
-Pascalは手続き型プログラミング言語のひとつ
+## [Pascal](https://kenji.blog/p/pascal/)
+[Pascal](https://kenji.blog/p/pascal/)は手続き型プログラミング言語のひとつ
 
 ## COBOL
 昔からある。汎用のプログラミング言語である。

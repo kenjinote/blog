@@ -86,7 +86,7 @@ Esta descoberta fez com que os matemáticos percebessem dolorosamente o quão n�
 
 ### 3. Construção da Análise Complexa e Teoria das Funções Elípticas
 
-Weierstrass também teve um papel decisivo na teoria das funções complexas. Enquanto Cauchy e Riemann enfatizavam a intuição geométrica e a integração, Weierstrass adotou uma abordagem algébrica baseada em "séries de potências". Ele definiu rigorosamente as funções complexas usando o conceito de continuação analítica e estabeleceu os métodos padrão da análise complexa moderna.
+Weierstrass também teve um papel decisivo na teoria das funções complexas. Enquanto [Cauchy](https://kenji.blog/pt/p/cauchy/) e [Riemann](https://kenji.blog/pt/p/riemann/) enfatizavam a intuição geométrica e a integração, Weierstrass adotou uma abordagem algébrica baseada em "séries de potências". Ele definiu rigorosamente as funções complexas usando o conceito de continuação analítica e estabeleceu os métodos padrão da análise complexa moderna.
 
 Ele também construiu um sistema extremamente belo nas áreas da teoria das funções elípticas e da teoria das funções abelianas. A função $\wp$ de Weierstrass (função p) ainda é amplamente usada hoje como a função mais fundamental no tratamento de funções elípticas.
 
@@ -120,7 +120,7 @@ Sob a orientação dedicada de Weierstrass, Kovalevskaya obteve resultados magn�
 
 ## Últimos Anos e Legado
 
-Nos seus últimos anos, Weierstrass viveu uma disputa acirrada sobre os fundamentos da matemática com Leopold Kronecker, um colega e ex-aluno. Kronecker afirmou: "Deus fez os números inteiros, tudo o resto é obra do homem", e criticou severamente a análise de Weierstrass e a teoria dos conjuntos de Cantor de um ponto de vista intuicionista. Esse conflito feriu profundamente o coração de Weierstrass.
+Nos seus últimos anos, Weierstrass viveu uma disputa acirrada sobre os fundamentos da matemática com Leopold [Kronecker](https://kenji.blog/pt/p/kronecker/), um colega e ex-aluno. [Kronecker](https://kenji.blog/pt/p/kronecker/) afirmou: "Deus fez os números inteiros, tudo o resto é obra do homem", e criticou severamente a análise de Weierstrass e a teoria dos conjuntos de Cantor de um ponto de vista intuicionista. Esse conflito feriu profundamente o coração de Weierstrass.
 
 Sua saúde também piorou gradualmente e, nos seus últimos anos, sofreu de tonturas e bronquite, sendo forçado a viver numa cadeira de rodas. No entanto, ele nunca perdeu a paixão pela matemática até ao fim, trabalhando na compilação de suas próprias obras completas com a ajuda dos seus discípulos.
 

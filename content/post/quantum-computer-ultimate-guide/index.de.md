@@ -39,7 +39,7 @@ Da klassische Computer an ihre physikalischen Grenzen stießen, wurde ein völli
 
 „Da die Natur nicht klassisch ist, sollte man, wenn man eine Simulation der Natur erstellen möchte, einen Computer entwickeln, der auf quantenmechanischen Prinzipien basiert.“
 
-Hinter dieser Aussage steht die Tatsache, dass die Dimension des „Hilbert-Raums“ (Hilbert Space), der den Zustand eines Quantensystems beschreibt, mit der Anzahl der Teilchen exponentiell explodiert. Betrachten wir ein System, das aus $N$ Teilchen mit einem Spin von $1/2$ (d. h. einem System mit zwei Quantenzuständen) besteht. Der Zustand eines einzelnen Teilchens wird durch den zweidimensionalen komplexen Vektorraum $\mathbb{C}^2$ beschrieben. Daher wird der Zustandsraum $\mathcal{H}$ des aus $N$ Teilchen bestehenden zusammengesetzten Systems als Tensorprodukt der Zustandsräume jedes Teilsystems konstruiert:
+Hinter dieser Aussage steht die Tatsache, dass die Dimension des „[Hilbert](https://kenji.blog/de/p/hilbert/)-Raums“ ([Hilbert](https://kenji.blog/de/p/hilbert/) Space), der den Zustand eines Quantensystems beschreibt, mit der Anzahl der Teilchen exponentiell explodiert. Betrachten wir ein System, das aus $N$ Teilchen mit einem Spin von $1/2$ (d. h. einem System mit zwei Quantenzuständen) besteht. Der Zustand eines einzelnen Teilchens wird durch den zweidimensionalen komplexen Vektorraum $\mathbb{C}^2$ beschrieben. Daher wird der Zustandsraum $\mathcal{H}$ des aus $N$ Teilchen bestehenden zusammengesetzten Systems als Tensorprodukt der Zustandsräume jedes Teilsystems konstruiert:
 
 $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
@@ -155,7 +155,7 @@ Auf diese Weise ist der Quantencomputer keine vorübergehende lebensverlängernd
 
 # Kapitel 2: Grundlagen von klassischen Bits und Quantenbits (Qubits)
 
-Beim Aufbau des theoretischen Systems der Quanteninformation ist das fundamentalste Konzept die Definition der „kleinsten Informationseinheit“. In diesem Kapitel beginnen wir mit dem Bit in der klassischen Informationstheorie und erweitern das Konzept auf das „Quantenbit (Qubit)“, die kleinste Einheit der Quanteninformation, basierend auf den Postulaten der Quantenmechanik. Wir werden die mathematische Struktur von Quantenzuständen unter Verwendung der rigorosen Sprache von Hilberträumen, der Bra-Ket-Notation und der linearen Algebra gründlich entschlüsseln. Ohne jegliche Kompromisse wollen wir aus einer fachspezifischen Perspektive in die Tiefen der Quanteninformation vordringen.
+Beim Aufbau des theoretischen Systems der Quanteninformation ist das fundamentalste Konzept die Definition der „kleinsten Informationseinheit“. In diesem Kapitel beginnen wir mit dem Bit in der klassischen Informationstheorie und erweitern das Konzept auf das „Quantenbit (Qubit)“, die kleinste Einheit der Quanteninformation, basierend auf den Postulaten der Quantenmechanik. Wir werden die mathematische Struktur von Quantenzuständen unter Verwendung der rigorosen Sprache von [Hilbert](https://kenji.blog/de/p/hilbert/)räumen, der Bra-Ket-Notation und der linearen Algebra gründlich entschlüsseln. Ohne jegliche Kompromisse wollen wir aus einer fachspezifischen Perspektive in die Tiefen der Quanteninformation vordringen.
 
 ## 2.1 Die kleinste Informationseinheit: Mathematische Formulierung und Grenzen des klassischen Bits
 
@@ -178,7 +178,7 @@ Hierbei sind $p_0, p_1$ reelle Zahlen, die jeweils die Wahrscheinlichkeit darste
 1. **Nicht-Negativität** : $p_0 \ge 0, \quad p_1 \ge 0$
 2. **Normierungsbedingung (Gesamtwahrscheinlichkeit ist 1)** : $p_0 + p_1 = 1$
 
-In der Welt der klassischen Bits wird ein zusammengesetztes System aus mehreren Bits durch das Tensorprodukt (Kronecker-Produkt) der jeweiligen Wahrscheinlichkeitsvektoren beschrieben. Beispielsweise ergibt sich die Verbundwahrscheinlichkeit für zwei klassische Bits wie folgt:
+In der Welt der klassischen Bits wird ein zusammengesetztes System aus mehreren Bits durch das Tensorprodukt ([Kronecker](https://kenji.blog/de/p/kronecker/)-Produkt) der jeweiligen Wahrscheinlichkeitsvektoren beschrieben. Beispielsweise ergibt sich die Verbundwahrscheinlichkeit für zwei klassische Bits wie folgt:
 
 $$
 \mathbf{p}_{AB} = \mathbf{p}_A \otimes \mathbf{p}_B = \begin{pmatrix} p_{A0} \\ p_{A1} \end{pmatrix} \otimes \begin{pmatrix} p_{B0} \\ p_{B1} \end{pmatrix} = \begin{pmatrix} p_{A0}p_{B0} \\ p_{A0}p_{B1} \\ p_{A1}p_{B0} \\ p_{A1}p_{B1} \end{pmatrix}
@@ -188,9 +188,9 @@ Der Rahmen der klassischen Informationstheorie ist extrem mächtig und bildet da
 
 ## 2.2 Postulate der Quantenmechanik und Bra-Ket-Notation (Bra-ket notation)
 
-Das erste Postulat (Postulate) der Quantenmechanik besagt: „Der Zustand eines geschlossenen physikalischen Systems wird vollständig durch einen Einheitsvektor (Zustandsvektor) in einem vollständigen Vektorraum mit komplexem inneren Produkt, d. h. einem Hilbertraum (Hilbert Space) $\mathcal{H}$, beschrieben.“ Im Kontext des Quantencomputings können kontinuierliche räumliche Freiheitsgrade ignoriert werden, sodass dieser Hilbertraum typischerweise ein endlichdimensionaler komplexer Vektorraum $\mathbb{C}^d$ ist.
+Das erste Postulat (Postulate) der Quantenmechanik besagt: „Der Zustand eines geschlossenen physikalischen Systems wird vollständig durch einen Einheitsvektor (Zustandsvektor) in einem vollständigen Vektorraum mit komplexem inneren Produkt, d. h. einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum ([Hilbert](https://kenji.blog/de/p/hilbert/) Space) $\mathcal{H}$, beschrieben.“ Im Kontext des Quantencomputings können kontinuierliche räumliche Freiheitsgrade ignoriert werden, sodass dieser [Hilbert](https://kenji.blog/de/p/hilbert/)raum typischerweise ein endlichdimensionaler komplexer Vektorraum $\mathbb{C}^d$ ist.
 
-Die kleinste Einheit der Quanteninformation, das „Quantenbit (Qubit)“, wird streng als Zustand in einem zweidimensionalen komplexen Hilbertraum $\mathcal{H} \cong \mathbb{C}^2$ definiert. Um Zustände in diesem Vektorraum zu beschreiben, ist es Standard, die von dem Physiker Paul Dirac eingeführte **Bra-Ket-Notation (Bra-ket notation)** zu verwenden.
+Die kleinste Einheit der Quanteninformation, das „Quantenbit (Qubit)“, wird streng als Zustand in einem zweidimensionalen komplexen [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H} \cong \mathbb{C}^2$ definiert. Um Zustände in diesem Vektorraum zu beschreiben, ist es Standard, die von dem Physiker Paul Dirac eingeführte **Bra-Ket-Notation (Bra-ket notation)** zu verwenden.
 
 Ein Spaltenvektor, der einen Quantenzustand darstellt, wird als **Ket-Vektor (Ket vector)** bezeichnet und als $|\psi\rangle$ notiert. Als Zustände, die den klassischen Bits $0$ und $1$ entsprechen, führen wir eine Orthonormalbasis ein, die sogenannte Rechenbasis (Computational basis). Diese wird auch als $Z$-Basis des Qubits bezeichnet und durch $|0\rangle$ sowie $|1\rangle$ definiert:
 
@@ -198,7 +198,7 @@ $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 $$
 
-Andererseits entspricht nach dem Darstellungssatz von Riesz (Riesz representation theorem) jedem Ket-Vektor in einem Hilbertraum eindeutig ein Element des Dualraums (Dual space), das als stetiges lineares Funktional fungiert. Dieses wird als **Bra-Vektor (Bra vector)** bezeichnet und als $\langle\psi|$ geschrieben. In der Matrixdarstellung erhält man den entsprechenden Bra-Vektor durch Bildung der hermiteschen Konjugierten (der komplex konjugierten Transponierten, bezeichnet mit $^\dagger$) des Ket-Vektors:
+Andererseits entspricht nach dem Darstellungssatz von Riesz (Riesz representation theorem) jedem Ket-Vektor in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum eindeutig ein Element des Dualraums (Dual space), das als stetiges lineares Funktional fungiert. Dieses wird als **Bra-Vektor (Bra vector)** bezeichnet und als $\langle\psi|$ geschrieben. In der Matrixdarstellung erhält man den entsprechenden Bra-Vektor durch Bildung der hermiteschen Konjugierten (der komplex konjugierten Transponierten, bezeichnet mit $^\dagger$) des Ket-Vektors:
 
 $$
 \langle\psi| = (|\psi\rangle)^\dagger = (|\psi\rangle^*)^T
@@ -210,7 +210,7 @@ $$
 \langle 0| = \begin{pmatrix} 1 & 0 \end{pmatrix}, \quad \langle 1| = \begin{pmatrix} 0 & 1 \end{pmatrix}
 $$
 
-Der wahre Wert der Bra-Ket-Notation zeigt sich darin, dass die Berechnung innerer Produkte visuell extrem intuitiv und klar wird. Das innere Produkt eines Bras $\langle\phi|$ und eines Kets $|\psi\rangle$ wird als $\langle\phi|\psi\rangle$ geschrieben (was auf Diracs Wortspiel zurückgeht, dass Bra und Ket zusammen ein Bracket bilden). Da die Rechenbasis $\{|0\rangle, |1\rangle\}$ ein Orthonormalsystem (Orthonormal system) bildet, lässt sich dies unter Verwendung des Kronecker-Deltas $\delta_{ij}$ wie folgt ausdrücken:
+Der wahre Wert der Bra-Ket-Notation zeigt sich darin, dass die Berechnung innerer Produkte visuell extrem intuitiv und klar wird. Das innere Produkt eines Bras $\langle\phi|$ und eines Kets $|\psi\rangle$ wird als $\langle\phi|\psi\rangle$ geschrieben (was auf Diracs Wortspiel zurückgeht, dass Bra und Ket zusammen ein Bracket bilden). Da die Rechenbasis $\{|0\rangle, |1\rangle\}$ ein Orthonormalsystem (Orthonormal system) bildet, lässt sich dies unter Verwendung des [Kronecker](https://kenji.blog/de/p/kronecker/)-Deltas $\delta_{ij}$ wie folgt ausdrücken:
 
 $$
 \langle i | j \rangle = \delta_{ij} \quad (i, j \in \{0, 1\})
@@ -232,7 +232,7 @@ $$
 
 ## 2.3 Das Prinzip der Quantenüberlagerung und komplexe Wahrscheinlichkeitsamplituden
 
-Während ein klassisches Bit stets einen eindeutigen Zustand $0$ oder $1$ oder deren statistische Mischung einnimmt, erlaubt die Forderung nach Linearität (Linearity) in der Quantenmechanik, dass ein Qubit einen fundamental andersartigen Zustand annehmen kann: eine „Überlagerung (Superposition)“, die durch eine Linearkombination von $|0\rangle$ und $|1\rangle$ dargestellt wird. Jeder beliebige Einheitsvektor im Hilbertraum $\mathcal{H}$ ist als physikalisch gültiger Zustand zulässig.
+Während ein klassisches Bit stets einen eindeutigen Zustand $0$ oder $1$ oder deren statistische Mischung einnimmt, erlaubt die Forderung nach Linearität (Linearity) in der Quantenmechanik, dass ein Qubit einen fundamental andersartigen Zustand annehmen kann: eine „Überlagerung (Superposition)“, die durch eine Linearkombination von $|0\rangle$ und $|1\rangle$ dargestellt wird. Jeder beliebige Einheitsvektor im [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}$ ist als physikalisch gültiger Zustand zulässig.
 
 Folglich lässt sich der allgemeinste reine Zustand (Pure state) $|\psi\rangle$ eines einzelnen Qubits unter Verwendung der Rechenbasis wie folgt entwickeln:
 
@@ -282,7 +282,7 @@ $$
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
 $$
 
-Da sich die globale Phase auf diese Weise stets herauskürzt, ist sie durch keinerlei physikalische Messung beobachtbar. Das bedeutet: Obwohl $|\psi\rangle$ und $e^{i\phi_0}|\psi\rangle$ im Hilbertraum unterschiedliche Vektoren darstellen (sie bilden denselben Strahl), repräsentieren sie physikalisch exakt denselben Zustand.
+Da sich die globale Phase auf diese Weise stets herauskürzt, ist sie durch keinerlei physikalische Messung beobachtbar. Das bedeutet: Obwohl $|\psi\rangle$ und $e^{i\phi_0}|\psi\rangle$ im [Hilbert](https://kenji.blog/de/p/hilbert/)raum unterschiedliche Vektoren darstellen (sie bilden denselben Strahl), repräsentieren sie physikalisch exakt denselben Zustand.
 
 Indem man die globale Phase vernachlässigt und lediglich die relative Phase (Relative phase) $\varphi = \phi_1 - \phi_0$ (wobei $\varphi \in [0, 2\pi)$) zwischen $|0\rangle$ und $|1\rangle$ als Parameter beibehält, lässt sich der reine Zustand eines beliebigen einzelnen Qubits eindeutig und rigoros in der folgenden **Standardform** darstellen:
 
@@ -313,7 +313,7 @@ graph TD
     style State fill:#bbf,stroke:#333,stroke-width:4px,stroke-dasharray: 5 5
 ```
 
-Die bemerkenswerteste Eigenschaft der Bloch-Kugel besteht darin, dass orthogonale Zustände im Hilbertraum (Zustände, deren inneres Produkt null ist) im dreidimensionalen realen Raum der Bloch-Kugel an antipodalen Punkten (Antipodal points: um 180 Grad gegenüberliegende Punkte) liegen. Beispielsweise ist der zu $|0\rangle$ (Nordpol, $\theta=0$) orthogonale Zustand $|1\rangle$ (Südpol, $\theta=\pi$). Das Verschwinden des inneren Produkts orthogonaler Zustände im Hilbertraum, $\langle 0 | 1 \rangle = 0$, entspricht auf der Bloch-Kugel einem Winkelabstand von $\pi$ (180 Grad). Da der geometrische Winkel im realen Raum doppelt so groß ist wie der Winkel im Hilbertraum, liegt hierin die mathematische Notwendigkeit begründet, bei der Parametrisierung den Halbwinkel $\theta/2$ zu verwenden.
+Die bemerkenswerteste Eigenschaft der Bloch-Kugel besteht darin, dass orthogonale Zustände im [Hilbert](https://kenji.blog/de/p/hilbert/)raum (Zustände, deren inneres Produkt null ist) im dreidimensionalen realen Raum der Bloch-Kugel an antipodalen Punkten (Antipodal points: um 180 Grad gegenüberliegende Punkte) liegen. Beispielsweise ist der zu $|0\rangle$ (Nordpol, $\theta=0$) orthogonale Zustand $|1\rangle$ (Südpol, $\theta=\pi$). Das Verschwinden des inneren Produkts orthogonaler Zustände im [Hilbert](https://kenji.blog/de/p/hilbert/)raum, $\langle 0 | 1 \rangle = 0$, entspricht auf der Bloch-Kugel einem Winkelabstand von $\pi$ (180 Grad). Da der geometrische Winkel im realen Raum doppelt so groß ist wie der Winkel im [Hilbert](https://kenji.blog/de/p/hilbert/)raum, liegt hierin die mathematische Notwendigkeit begründet, bei der Parametrisierung den Halbwinkel $\theta/2$ zu verwenden.
 
 Die Koordinaten des Bloch-Vektors $\mathbf{r} = (x, y, z)$ lassen sich rigoros als Erwartungswerte der **Pauli-Matrizen (Pauli matrices)** herleiten, welche fundamentale Observablen (Observable) in der Quantenmechanik darstellen. Die Pauli-Matrizen, die eine Basis für die hermiteschen Operatoren in zweidimensionalen Systemen bilden, sind wie folgt definiert:
 
@@ -385,7 +385,7 @@ und der Zustand kollabiert vollständig in den Zustand $|0\rangle$ (wobei die gl
 
 ## 2.6 Einführung der Erweiterung auf Vielteilchensysteme und Ausblick auf das nächste Kapitel
 
-Nachdem wir die Eigenschaften eines einzelnen Qubits vertieft verstanden haben, wollen wir kurz die mathematischen Grundlagen von „Multi-Qubit-Systemen“ berühren, die ab dem nächsten Kapitel im Mittelpunkt stehen werden. Während klassische Wahrscheinlichkeitsverteilungen den Zustandsraum über das kartesische Produkt erweitern, wird der Hilbertraum $\mathcal{H}_{AB}$ eines zusammengesetzten Systems in der Quantenmechanik durch das **Tensorprodukt (Tensor product)** der Hilberträume der jeweiligen Teilsysteme $\mathcal{H}_A$ und $\mathcal{H}_B$ konstruiert:
+Nachdem wir die Eigenschaften eines einzelnen Qubits vertieft verstanden haben, wollen wir kurz die mathematischen Grundlagen von „Multi-Qubit-Systemen“ berühren, die ab dem nächsten Kapitel im Mittelpunkt stehen werden. Während klassische Wahrscheinlichkeitsverteilungen den Zustandsraum über das kartesische Produkt erweitern, wird der [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}_{AB}$ eines zusammengesetzten Systems in der Quantenmechanik durch das **Tensorprodukt (Tensor product)** der [Hilbert](https://kenji.blog/de/p/hilbert/)räume der jeweiligen Teilsysteme $\mathcal{H}_A$ und $\mathcal{H}_B$ konstruiert:
 
 $$
 \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
@@ -399,7 +399,7 @@ $$
 
 Die Existenz von Zuständen, die sich nicht als Tensorprodukt von Einzelzuständen faktorisieren lassen (wie beispielsweise der Bell-Zustand $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$), stellt den Ursprung der Quantenverschränkung (Entanglement) dar. Diese exponentielle Explosion der Dimensionalität durch das Tensorprodukt ($2^N$ Dimensionen bei $N$ Qubits) bildet das Fundament für die überwältigende parallele Rechenleistung von Quantencomputern.
 
-In diesem Kapitel haben wir die grundlegenden Unterschiede zwischen klassischen Bits und Quantenbits auf dem mathematischen Fundament des Hilbertraums herausgearbeitet. Ein Qubit kann kontinuierliche Überlagerungszustände mit komplexen Wahrscheinlichkeitsamplituden annehmen. Durch die Herleitung der Bloch-Kugel haben wir zudem ein mächtiges Werkzeug gewonnen, um abstrakte komplexe Vektoren intuitiv als geometrisches Modell im dreidimensionalen reellen Raum zu visualisieren und zu verstehen.
+In diesem Kapitel haben wir die grundlegenden Unterschiede zwischen klassischen Bits und Quantenbits auf dem mathematischen Fundament des [Hilbert](https://kenji.blog/de/p/hilbert/)raums herausgearbeitet. Ein Qubit kann kontinuierliche Überlagerungszustände mit komplexen Wahrscheinlichkeitsamplituden annehmen. Durch die Herleitung der Bloch-Kugel haben wir zudem ein mächtiges Werkzeug gewonnen, um abstrakte komplexe Vektoren intuitiv als geometrisches Modell im dreidimensionalen reellen Raum zu visualisieren und zu verstehen.
 
 Im folgenden „Kapitel 3: Quantengatter und unitäre Transformationen“ werden wir die konkreten „Quantenlogikgatter“ zur Manipulation dieser Einzel-Qubit-Zustände detailliert behandeln und die mathematischen Eigenschaften von Rotationsoperationen mittels unitärer Matrizen auf der Bloch-Kugel untersuchen. Das Tor zur tiefgründigen Welt der Quanteninformation hat sich gerade erst geöffnet.
 
@@ -409,16 +409,16 @@ Im folgenden „Kapitel 3: Quantengatter und unitäre Transformationen“ werden
 
 Um die Funktionsprinzipien von Quantencomputern von Grund auf zu verstehen, ist es unerlässlich, den theoretischen Rahmen der Physik namens Quantenmechanik in einer mathematisch strengen Form zu begreifen. Während viele physikalische Theorien eine induktive Entwicklung auf der Grundlage empirischer Regeln durchlaufen haben, verwendet die Quantenmechanik – insbesondere die moderne, von John von Neumann formulierte Quantenmechanik – einen axiomatischen Ansatz, der das gesamte System aus wenigen mathematischen „Axiomen (Axioms)“ deduziert.
 
-Dieses Axiomensystem baut auf der Bühne der komplexen linearen Algebra auf, die in Form von Hilberträumen auf unendliche Dimensionen erweitert werden kann. In der Quanteninformationswissenschaft und im Quantencomputing werden jedoch hauptsächlich endlichdimensionale Vektorräume behandelt (beispielsweise der Tensorproduktraum $\mathbb{C}^2$ für Qubit-Systeme). Dadurch lassen sich analytische Schwierigkeiten unendlichdimensionaler Räume (wie der Definitionsbereich unbeschränkter Operatoren) vermeiden, und die Quantenmechanik kann rein im Rahmen der linearen Algebra beschrieben und verstanden werden.
+Dieses Axiomensystem baut auf der Bühne der komplexen linearen Algebra auf, die in Form von [Hilbert](https://kenji.blog/de/p/hilbert/)räumen auf unendliche Dimensionen erweitert werden kann. In der Quanteninformationswissenschaft und im Quantencomputing werden jedoch hauptsächlich endlichdimensionale Vektorräume behandelt (beispielsweise der Tensorproduktraum $\mathbb{C}^2$ für Qubit-Systeme). Dadurch lassen sich analytische Schwierigkeiten unendlichdimensionaler Räume (wie der Definitionsbereich unbeschränkter Operatoren) vermeiden, und die Quantenmechanik kann rein im Rahmen der linearen Algebra beschrieben und verstanden werden.
 
 In diesem Kapitel formulieren wir die Prozesse von der Beschreibung von Quantenzuständen über die Zeitentwicklung bis hin zur „Messung“, die die meisten philosophischen Debatten ausgelöst hat, ohne jegliche Kompromisse rigoros. Die Leser werden erkennen, wie scheinbar kontraintuitive Quantenphänomene auf einer widerspruchsfreien und eleganten mathematischen Struktur beruhen. Genau diese mathematische Struktur bildet die direkte „Sprache“, in der die Algorithmen von Quantencomputern formuliert werden.
 
-## 3.2 Erstes Axiom: Zustandsraum (Hilbertraum und Zustandsvektoren)
+## 3.2 Erstes Axiom: Zustandsraum ([Hilbert](https://kenji.blog/de/p/hilbert/)raum und Zustandsvektoren)
 
 Das erste Axiom der Quantenmechanik legt fest, wie der „Zustand“ eines physikalischen Systems mathematisch dargestellt wird.
 
  **Axiom 1 (Darstellung des Zustands)** :
-Der Zustand eines geschlossenen physikalischen Systems wird vollständig durch einen Einheitsvektor mit der Norm 1 in einem Hilbertraum (Hilbert space) $\mathcal{H}$ beschrieben, welcher ein komplexer innerer Produktraum ist und Vollständigkeit besitzt. Dieser wird als **Zustandsvektor** bezeichnet.
+Der Zustand eines geschlossenen physikalischen Systems wird vollständig durch einen Einheitsvektor mit der Norm 1 in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum ([Hilbert](https://kenji.blog/de/p/hilbert/) space) $\mathcal{H}$ beschrieben, welcher ein komplexer innerer Produktraum ist und Vollständigkeit besitzt. Dieser wird als **Zustandsvektor** bezeichnet.
 
 Gemäß der von Paul Dirac eingeführten Bra-Ket-Notation (Bra-ket notation) wird der Zustandsvektor als Spaltenvektor behandelt und als Ket **$| \psi \rangle$** geschrieben. Ein Zeilenvektor, der dem Dualraum $\mathcal{H}^*$ angehört, wird als Bra **$\langle \psi |$** bezeichnet, und diese stehen zueinander in der Beziehung der hermiteschen Konjugation (komplex-konjugierte Transposition). Das heißt:
 
@@ -426,7 +426,7 @@ $$
 \langle \psi | = ( | \psi \rangle )^\dagger
 $$
 
-Das innere Produkt zweier beliebiger Zustände **$| \phi \rangle$** und **$| \psi \rangle$** auf dem Hilbertraum wird als Produkt von Bra und Ket **$\langle \phi | \psi \rangle$** berechnet und liefert einen komplexen Wert. Dieses innere Produkt erfüllt die folgenden Eigenschaften:
+Das innere Produkt zweier beliebiger Zustände **$| \phi \rangle$** und **$| \psi \rangle$** auf dem [Hilbert](https://kenji.blog/de/p/hilbert/)raum wird als Produkt von Bra und Ket **$\langle \phi | \psi \rangle$** berechnet und liefert einen komplexen Wert. Dieses innere Produkt erfüllt die folgenden Eigenschaften:
 
 1. **Positivität** : Für jedes **$| \psi \rangle \neq 0$** gilt $\langle \psi | \psi \rangle > 0$
 2. **Linearität** : $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
@@ -438,19 +438,19 @@ $$
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
 $$
 
-Darüber hinaus gilt die Cauchy-Schwarz-Ungleichung (Cauchy-Schwarz inequality) $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$, sodass der Betrag des inneren Produkts zwischen normierten Zuständen stets zwischen 0 und 1 liegt. Dies bildet das mathematische Fundament dafür, dass dieses später als „Wahrscheinlichkeit“ interpretiert werden kann.
+Darüber hinaus gilt die [Cauchy](https://kenji.blog/de/p/cauchy/)-Schwarz-Ungleichung ([Cauchy](https://kenji.blog/de/p/cauchy/)-Schwarz inequality) $|\langle \phi | \psi \rangle|^2 \le \langle \phi | \phi \rangle \langle \psi | \psi \rangle$, sodass der Betrag des inneren Produkts zwischen normierten Zuständen stets zwischen 0 und 1 liegt. Dies bildet das mathematische Fundament dafür, dass dieses später als „Wahrscheinlichkeit“ interpretiert werden kann.
 
 ### Superpositionsprinzip und vollständige Orthonormalbasis
 
-Das hervorstechendste Merkmal der Quantenmechanik ist das „Superpositionsprinzip (Superposition principle)“. Wenn **$| \phi \rangle$** und **$| \psi \rangle$** physikalisch zulässige Zustände sind, ist auch jede beliebige komplexe Linearkombination $c_1 | \phi \rangle + c_2 | \psi \rangle$ (nach Normierung) wiederum ein physikalisch zulässiger Zustand. Diese Eigenschaft folgt direkt aus der Linearität des Hilbertraums.
+Das hervorstechendste Merkmal der Quantenmechanik ist das „Superpositionsprinzip (Superposition principle)“. Wenn **$| \phi \rangle$** und **$| \psi \rangle$** physikalisch zulässige Zustände sind, ist auch jede beliebige komplexe Linearkombination $c_1 | \phi \rangle + c_2 | \psi \rangle$ (nach Normierung) wiederum ein physikalisch zulässiger Zustand. Diese Eigenschaft folgt direkt aus der Linearität des [Hilbert](https://kenji.blog/de/p/hilbert/)raums.
 
-Im Hilbertraum $\mathcal{H}$ existiert eine vollständige Orthonormalbasis (Orthonormal basis) $\{ | e_i \rangle \}$. Diese Basisvektoren sind zueinander orthogonal und normiert:
+Im [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}$ existiert eine vollständige Orthonormalbasis (Orthonormal basis) $\{ | e_i \rangle \}$. Diese Basisvektoren sind zueinander orthogonal und normiert:
 
 $$
 \langle e_i | e_j \rangle = \delta_{ij}
 $$
 
-($\delta_{ij}$ ist das Kronecker-Delta). Zudem lässt sich der Identitätsoperator $I$ über die Vollständigkeitsrelation (Completeness relation), auch als Zerlegung der Identität bezeichnet, wie folgt entwickeln:
+($\delta_{ij}$ ist das [Kronecker](https://kenji.blog/de/p/kronecker/)-Delta). Zudem lässt sich der Identitätsoperator $I$ über die Vollständigkeitsrelation (Completeness relation), auch als Zerlegung der Identität bezeichnet, wie folgt entwickeln:
 
 $$
 I = \sum_i | e_i \rangle \langle e_i |
@@ -469,7 +469,7 @@ Hierbei werden die Entwicklungskoeffizienten $c_i = \langle e_i | \psi \rangle$ 
 In der klassischen Mechanik werden physikalische Größen (Observablen) wie Ort, Impuls und Energie als reellwertige Funktionen beschrieben. In der Quantenmechanik vollzieht sich jedoch ein grundlegender Paradigmenwechsel.
 
  **Axiom 2 (Physikalische Größen)** :
-Beobachtbare physikalische Größen (Observablen) werden durch lineare selbstadjungierte Operatoren (hermitesche Operatoren) $A$ auf dem Hilbertraum $\mathcal{H}$ beschrieben.
+Beobachtbare physikalische Größen (Observablen) werden durch lineare selbstadjungierte Operatoren (hermitesche Operatoren) $A$ auf dem [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}$ beschrieben.
 
 Ein hermitescher Operator ist ein Operator, dessen hermitesche Adjungierte gleich ihm selbst ist; das heißt, er erfüllt $A = A^\dagger$. Wird er in einem endlichdimensionalen Raum als Matrix dargestellt, bedeutet dies, dass seine Einträge komplex-konjugiert symmetrisch sind ($A_{ij} = A_{ji}^*$).
 
@@ -477,7 +477,7 @@ Der Grund, warum physikalische Größen als hermitesche Operatoren definiert wer
 
 1. **Alle Eigenwerte $a_i$ sind reell.** (Da gemessene physikalische Größen stets reell sein müssen, entspricht dies den physikalischen Anforderungen.)
 2. **Eigenvektoren zu verschiedenen Eigenwerten sind zueinander orthogonal.** 
-3. **Die Eigenvektoren $\{ | a_i \rangle \}$ des Operators bilden eine vollständige Orthonormalbasis des Hilbertraums.** 
+3. **Die Eigenvektoren $\{ | a_i \rangle \}$ des Operators bilden eine vollständige Orthonormalbasis des [Hilbert](https://kenji.blog/de/p/hilbert/)raums.** 
 
 Folglich lässt sich jede beliebige Observable $A$ unter Verwendung ihrer Eigenwerte $a_i$ und Eigenvektoren **$| a_i \rangle$** als Linearkombination von Projektionsoperatoren $P_i = | a_i \rangle \langle a_i |$ spektral zerlegen (Spektralzerlegung, Spectral decomposition):
 
@@ -485,7 +485,7 @@ $$
 A = \sum_i a_i | a_i \rangle \langle a_i |
 $$
 
-Durch diese Formulierung lässt sich der Vorgang der „Messung einer physikalischen Größe“ als geometrische Operation verstehen: als Projektion auf eine bestimmte Basis (Eigenvektoren) des Hilbertraums. Beispielsweise wird die Messung von $\sigma_z$ an einem Qubit vollständig als Projektionsoperation auf die orthogonale Basis beschrieben, die aus dem dem Eigenwert $+1$ entsprechenden Zustand **$| 0 \rangle$** und dem dem Eigenwert $-1$ entsprechenden Zustand **$| 1 \rangle$** besteht.
+Durch diese Formulierung lässt sich der Vorgang der „Messung einer physikalischen Größe“ als geometrische Operation verstehen: als Projektion auf eine bestimmte Basis (Eigenvektoren) des [Hilbert](https://kenji.blog/de/p/hilbert/)raums. Beispielsweise wird die Messung von $\sigma_z$ an einem Qubit vollständig als Projektionsoperation auf die orthogonale Basis beschrieben, die aus dem dem Eigenwert $+1$ entsprechenden Zustand **$| 0 \rangle$** und dem dem Eigenwert $-1$ entsprechenden Zustand **$| 1 \rangle$** besteht.
 
 ## 3.4 Drittes Axiom: Unitäre Zeitentwicklung und Schrödinger-Gleichung
 
@@ -600,7 +600,7 @@ Auf diese Weise sind die abstrakten Konzepte der linearen Algebra – Vektorräu
 
 # Kapitel 4: Einzel-Qubit-Gatter und Unitäre Transformationen
 
-Die Grundlage des Quantencomputings ist die präzise Manipulation von Quantenzuständen. Während Logikgatter in klassischen Computern (wie AND, OR, NOT) die Werte von Bits irreversibel manipulieren, sind "Quantengatter" in einem Quantencomputer reversible Zeitentwicklungen, die den Anforderungen der Schrödinger-Gleichung folgen. Mathematisch werden sie streng als "unitäre Transformationen (unitäre Matrizen)" in einem komplexen Hilbertraum beschrieben. In diesem Kapitel werden wir die mathematische Struktur, die algebraischen Eigenschaften und die intuitive geometrische Bedeutung auf der Bloch-Kugel (Bloch sphere) der grundlegenden Quantengatter, die auf ein einzelnes Qubit (Zweiniveausystem) wirken, kompromisslos und gründlich untersuchen.
+Die Grundlage des Quantencomputings ist die präzise Manipulation von Quantenzuständen. Während Logikgatter in klassischen Computern (wie AND, OR, NOT) die Werte von Bits irreversibel manipulieren, sind "Quantengatter" in einem Quantencomputer reversible Zeitentwicklungen, die den Anforderungen der Schrödinger-Gleichung folgen. Mathematisch werden sie streng als "unitäre Transformationen (unitäre Matrizen)" in einem komplexen [Hilbert](https://kenji.blog/de/p/hilbert/)raum beschrieben. In diesem Kapitel werden wir die mathematische Struktur, die algebraischen Eigenschaften und die intuitive geometrische Bedeutung auf der Bloch-Kugel (Bloch sphere) der grundlegenden Quantengatter, die auf ein einzelnes Qubit (Zweiniveausystem) wirken, kompromisslos und gründlich untersuchen.
 
 ## 4.1 Die Postulate der Quantenmechanik und die Notwendigkeit unitärer Matrizen
 
@@ -698,7 +698,7 @@ Dies entspricht einer **$\pi$** -Rotation um die Z-Achse. Da die Rechenbasen **$
 
 ### 4.2.4 Die tiefgründige algebraische Struktur der Pauli-Gruppe
 
-Die Pauli-Matrix-Gruppe **$\{I, X, Y, Z\}$** bildet eine äußerst schöne algebraische Struktur als lineare Operatoren auf dem Hilbertraum.
+Die Pauli-Matrix-Gruppe **$\{I, X, Y, Z\}$** bildet eine äußerst schöne algebraische Struktur als lineare Operatoren auf dem [Hilbert](https://kenji.blog/de/p/hilbert/)raum.
 
 1. **Vereinbarkeit von Selbstadjungiertheit (Hermitizität) und Unitarität** : Es gilt **$X = X^\dagger$** , **$Y = Y^\dagger$** , **$Z = Z^\dagger$** , und gleichzeitig erfüllen sie **$X^\dagger X = I$** (das heißt **$X = X^{-1}$** ). Dies ist eine seltene Eigenschaft, da sie sowohl eine physikalische Größe (Observable) als auch selbst ein unitärer Zeitentwicklungsgenerator (Gatter) sind. Wenn sie zweimal hintereinander angewendet werden, kehren sie zur Identitätstransformation zurück (Involution: **$X^2 = Y^2 = Z^2 = I$** ).
 2. **Vollständige Antikommutativität** : Wenn die Reihenfolge des Produkts verschiedener Pauli-Matrizen vertauscht wird, kehrt sich das Vorzeichen um.
@@ -945,7 +945,7 @@ $$
 Erstaunlicherweise ist damit bewiesen, dass eine kontinuierliche Operation durch eine Gruppe diskreter Gatter um völlig unterschiedliche Achsen wie " **$H \rightarrow S \rightarrow H$** " – abgesehen von der globalen Phase – mathematisch exakt und wortwörtlich äquivalent zu einer einzigen " **$\pi/2$** -Rotationsoperation um die X-Achse" ist.
 Auf diese Weise folgt ein Quantenzustand Pfaden komplexer Interferenz, die unsere klassische Intuition ablehnen, aber durch das robuste mathematische Rahmenwerk der linearen Algebra ist es möglich, sein Verhalten vollständig zu beherrschen und ohne den geringsten Fehler vorherzusagen.
 
-Im nächsten Kapitel werden wir auf dem Wissen über diese leistungsstarken Einzel-Qubit-Operationen aufbauen und in die tiefgreifende Welt der Mehr-Qubit-Gatter eintreten, die durch das Tensorprodukt (Tensor product) die Dimensionalität des Hilbertraums exponentiell explodieren lassen und die Quantenverschränkung (Entanglement) erzeugen, die Einstein als "spukhafte Fernwirkung" bezeichnete.
+Im nächsten Kapitel werden wir auf dem Wissen über diese leistungsstarken Einzel-Qubit-Operationen aufbauen und in die tiefgreifende Welt der Mehr-Qubit-Gatter eintreten, die durch das Tensorprodukt (Tensor product) die Dimensionalität des [Hilbert](https://kenji.blog/de/p/hilbert/)raums exponentiell explodieren lassen und die Quantenverschränkung (Entanglement) erzeugen, die Einstein als "spukhafte Fernwirkung" bezeichnete.
 
 # Kapitel 5: Mehr-Qubit-Systeme und Quantenverschränkung (Entanglement)
 
@@ -955,9 +955,9 @@ In den bisherigen Kapiteln haben wir uns ausführlich mit der Eigenschaft der Ü
 
 ## 5.1 Mathematische Beschreibung von Vielteilchenzuständen durch das Tensorprodukt ($\otimes$)
 
-Gemäß den Axiomen der Quantenmechanik ist der Zustandsraum eines zusammengesetzten Systems, wenn die Zustandsräume unabhängiger physikalischer Systeme jeweils durch die Hilberträume **$\mathcal{H}_A$** und **$\mathcal{H}_B$** beschrieben werden, durch das **Tensorprodukt** (Tensor Product) der jeweiligen Räume als **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** gegeben.
+Gemäß den Axiomen der Quantenmechanik ist der Zustandsraum eines zusammengesetzten Systems, wenn die Zustandsräume unabhängiger physikalischer Systeme jeweils durch die [Hilbert](https://kenji.blog/de/p/hilbert/)räume **$\mathcal{H}_A$** und **$\mathcal{H}_B$** beschrieben werden, durch das **Tensorprodukt** (Tensor Product) der jeweiligen Räume als **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** gegeben.
 
-Der Zustandsraum eines einzelnen Qubits ist ein zweidimensionaler komplexer Vektorraum **$\mathbb{C}^2$** . Daher ist der Zustandsraum eines Systems aus $n$ Qubits ein $2^n$-dimensionaler Hilbertraum **$(\mathbb{C}^2)^{\otimes n}$** . Dass die Dimension exponentiell mit der Anzahl der Qubits $n$ wächst, ist genau die mathematische Grundlage der Quantenparallelität.
+Der Zustandsraum eines einzelnen Qubits ist ein zweidimensionaler komplexer Vektorraum **$\mathbb{C}^2$** . Daher ist der Zustandsraum eines Systems aus $n$ Qubits ein $2^n$-dimensionaler [Hilbert](https://kenji.blog/de/p/hilbert/)raum **$(\mathbb{C}^2)^{\otimes n}$** . Dass die Dimension exponentiell mit der Anzahl der Qubits $n$ wächst, ist genau die mathematische Grundlage der Quantenparallelität.
 
 Betrachten wir ein System, das aus zwei Qubits (Qubit A und Qubit B) besteht. Die Rechenbasis ist als das Tensorprodukt der Basiszustände der einzelnen Qubits definiert:
 
@@ -968,7 +968,7 @@ $$
 |1\rangle_A \otimes |1\rangle_B \equiv |11\rangle
 $$
 
-Lassen Sie uns hier die Matrixdarstellung des Tensorprodukts (das Kronecker-Produkt) streng berechnen. Wenn wir die Basis eines einzelnen Qubits als Spaltenvektor darstellen, ergibt sich:
+Lassen Sie uns hier die Matrixdarstellung des Tensorprodukts (das [Kronecker](https://kenji.blog/de/p/kronecker/)-Produkt) streng berechnen. Wenn wir die Basis eines einzelnen Qubits als Spaltenvektor darstellen, ergibt sich:
 
 $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
@@ -1009,7 +1009,7 @@ $$
 
 beschrieben werden kann, bezeichnet man diesen Zustand als separierbar. Im Gegensatz dazu wird ein Zustand, der **nicht** als Tensorprodukt irgendwelcher Teilsystemzustände dargestellt werden kann, als **verschränkter Zustand (Entangled State)** definiert.
 
-In einem 2-Qubit-System werden die Zustände mit der stärksten Quantenverschränkung als **Bell-Zustände** (Bell States) oder EPR-Paare bezeichnet. Die Bell-Zustände bestehen aus den folgenden vier orthogonalen reinen Zuständen und bilden eine vollständige Orthonormalbasis (Bell-Basis) im vierdimensionalen Hilbertraum:
+In einem 2-Qubit-System werden die Zustände mit der stärksten Quantenverschränkung als **Bell-Zustände** (Bell States) oder EPR-Paare bezeichnet. Die Bell-Zustände bestehen aus den folgenden vier orthogonalen reinen Zuständen und bilden eine vollständige Orthonormalbasis (Bell-Basis) im vierdimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)raum:
 
 $$
 |\Phi^+\rangle = \frac{1}{\sqrt{2}} \Big( |00\rangle + |11\rangle \Big)
@@ -1907,7 +1907,7 @@ Durch diese klassische Reduktion konzentriert sich das Problem nun auf eine einz
 
 Das Herzstück des Quantenalgorithmus zur Extraktion der verborgenen Periode $r$ der Funktion $f(x)$ in polynomieller Zeit ist die „Quanten-Fouriertransformation“ (Quantum Fourier Transform, QFT). Die QFT ist das quantenmechanische Analogon zur klassischen diskreten Fouriertransformation (DFT) und eine unitäre Transformation, die auf die Wahrscheinlichkeitsamplituden des Zustandsraums wirkt.
 
-Die Wirkung der Quanten-Fouriertransformation auf die Rechenbasiszustände $|j\rangle$ ($j = 0, 1, \dots, M-1$) in einem Hilbertraum $\mathcal{H}$ der Dimension $M = 2^n$ ist streng wie folgt definiert:
+Die Wirkung der Quanten-Fouriertransformation auf die Rechenbasiszustände $|j\rangle$ ($j = 0, 1, \dots, M-1$) in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}$ der Dimension $M = 2^n$ ist streng wie folgt definiert:
 
 
 $$
@@ -2037,7 +2037,7 @@ $$
 
 
 Hier sind $k$ und $M$ bekannte Werte, aber $j$ und $r$ sind unbekannt. Da $t$ so gewählt wurde, dass $M \ge N^2$ gilt, liefert $k/M$ eine extrem genaue Näherung für den unbekannten Bruch $j/r$: $\left| \frac{k}{M} - \frac{j}{r} \right| \le \frac{1}{2M} < \frac{1}{2r^2}$.
-Nach einem Satz der diophantischen Approximation (Satz von Legendre) ist die rationale Zahl $j/r$, die diese Bedingung erfüllt, immer unter den Näherungsbrüchen der „Kettenbruchentwicklung“ (Continued Fraction Expansion) der reellen Zahl $k/M$ enthalten.
+Nach einem Satz der diophantischen Approximation (Satz von [Legendre](https://kenji.blog/de/p/legendre/)) ist die rationale Zahl $j/r$, die diese Bedingung erfüllt, immer unter den Näherungsbrüchen der „Kettenbruchentwicklung“ (Continued Fraction Expansion) der reellen Zahl $k/M$ enthalten.
 Daher können wir durch Berechnung der Kettenbruchentwicklung von $k/M$ in polynomieller Zeit auf einem klassischen Computer die Periode $r$ als Nenner bestimmen. Damit ist das Problem der Ordnungsfindung gelöst, und als Resultat ist es möglich, die Primfaktoren $p$ und $q$ abzuleiten, die die Schlüssel für die RSA-Verschlüsselung sind.
 
 ## 8.5 Warum Shors Algorithmus eine exponentielle Beschleunigung gegenüber klassischen Berechnungen bringt
@@ -2075,13 +2075,13 @@ $$
 |s\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x\rangle
 $$
 
-Dieser Zustand **$|s\rangle$** lässt sich im Hilbertraum eindeutig als Linearkombination aus dem Zielzustand $|w\rangle$ und allen übrigen (nicht gesuchten) Zuständen darstellen. Um die spätere geometrische Interpretation anschaulich zu gestalten, führen wir einen neuen, normierten Vektor $|s^\perp\rangle$ ein, der ausschließlich aus der gleichmäßigen Überlagerung aller nicht gesuchten Zustände besteht:
+Dieser Zustand **$|s\rangle$** lässt sich im [Hilbert](https://kenji.blog/de/p/hilbert/)raum eindeutig als Linearkombination aus dem Zielzustand $|w\rangle$ und allen übrigen (nicht gesuchten) Zuständen darstellen. Um die spätere geometrische Interpretation anschaulich zu gestalten, führen wir einen neuen, normierten Vektor $|s^\perp\rangle$ ein, der ausschließlich aus der gleichmäßigen Überlagerung aller nicht gesuchten Zustände besteht:
 
 $$
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
 $$
 
-Gemäß dieser Definition stehen der Zustand $|s^\perp\rangle$ und der Zielzustand $|w\rangle$ orthogonal aufeinander ( $\langle s^\perp | w \rangle = 0$ ). Folglich lässt sich der anfängliche gleichmäßige Superpositionszustand **$|s\rangle$** in dem zweidimensionalen Hilbert-Unterraum, der von diesen beiden zueinander orthogonalen Vektoren $|w\rangle$ und $|s^\perp\rangle$ aufgespannt wird, denkbar einfach zerlegen:
+Gemäß dieser Definition stehen der Zustand $|s^\perp\rangle$ und der Zielzustand $|w\rangle$ orthogonal aufeinander ( $\langle s^\perp | w \rangle = 0$ ). Folglich lässt sich der anfängliche gleichmäßige Superpositionszustand **$|s\rangle$** in dem zweidimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)-Unterraum, der von diesen beiden zueinander orthogonalen Vektoren $|w\rangle$ und $|s^\perp\rangle$ aufgespannt wird, denkbar einfach zerlegen:
 
 $$
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
@@ -2093,7 +2093,7 @@ $$
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
 $$
 
-Diese Beziehung verdeutlicht die ernüchternde Tatsache, dass die Wahrscheinlichkeit, im Anfangszustand **$|s\rangle$** den Zielzustand $|w\rangle$ zu messen, lediglich $|\sin \theta|^2 = \frac{1}{N}$ beträgt. Das primäre Ziel des Grover-Algorithmus besteht darin, durch wiederholte Anwendung der im Folgenden beschriebenen Kombination aus Orakel und Diffusionsoperator diesen Zustandsvektor **$|s\rangle$** in der zweidimensionalen Ebene des Hilbertraums schrittweise in Richtung von $|w\rangle$ zu „drehen“, um so die Messwahrscheinlichkeit der korrekten Lösung der theoretischen Obergrenze von $1$ beliebig nahe zu bringen (also deren Amplitude zu verstärken).
+Diese Beziehung verdeutlicht die ernüchternde Tatsache, dass die Wahrscheinlichkeit, im Anfangszustand **$|s\rangle$** den Zielzustand $|w\rangle$ zu messen, lediglich $|\sin \theta|^2 = \frac{1}{N}$ beträgt. Das primäre Ziel des Grover-Algorithmus besteht darin, durch wiederholte Anwendung der im Folgenden beschriebenen Kombination aus Orakel und Diffusionsoperator diesen Zustandsvektor **$|s\rangle$** in der zweidimensionalen Ebene des [Hilbert](https://kenji.blog/de/p/hilbert/)raums schrittweise in Richtung von $|w\rangle$ zu „drehen“, um so die Messwahrscheinlichkeit der korrekten Lösung der theoretischen Obergrenze von $1$ beliebig nahe zu bringen (also deren Amplitude zu verstärken).
 
 ## 9.2 Definition des Quantenorakels (Quantum Oracle) und Phasen-Kickback
 
@@ -2405,7 +2405,7 @@ Die erste Barriere bei der Entwicklung der Quantenfehlerkorrektur ist das "No-Cl
 
 ## 10.2 Grundprinzipien der Quantenfehlerkorrektur: Redundanz und Syndrommessung
 
-Die Alternative zum "Kopieren" in der Quanteninformation besteht darin, die ursprünglichen Informationen auf einen Unterraum eines höherdimensionalen Hilbertraums (den Code-Raum, Code Space) abzubilden, indem mehrere Qubits in einen verschränkten Zustand (Entanglement) versetzt werden.
+Die Alternative zum "Kopieren" in der Quanteninformation besteht darin, die ursprünglichen Informationen auf einen Unterraum eines höherdimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)raums (den Code-Raum, Code Space) abzubilden, indem mehrere Qubits in einen verschränkten Zustand (Entanglement) versetzt werden.
 
 Als einfachstes Beispiel konstruieren wir einen "3-Qubit-Bit-Flip-Code", der den Zustand eines einzelnen Qubits $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ vor stochastischen Bit-Flips schützt.
 Wir definieren die logische Basis (Logical Basis) wie folgt:
@@ -2564,10 +2564,10 @@ Quantenfehlerkorrektur und FTQC sind nicht einfach nur ein technisches Patchwork
 
 # Kapitel 11: Physikalische Realisierung von Quantenhardware
 
-Bis Kapitel 10 haben wir die theoretischen Grundlagen der Quanteninformationswissenschaft und die mathematische Struktur von Quantenalgorithmen ausführlich behandelt. Wie hochentwickelt ein Quantenalgorithmus auch entworfen sein mag und wie sehr die theoretische Quantenüberlegenheit (Quantum Supremacy) im Rahmen der Komplexitätstheorie auch bewiesen sein mag – ohne die physische Entität der „Quantenhardware“, die ihn ausführt, bleibt dies ein rein mathematisches Gedankenspiel. In diesem Kapitel erläutern wir die modernsten Hardware-Implementierungsansätze zur Verkörperung des Zustandsvektors $ |\psi\rangle $ im abstrakten Hilbert-Raum in der physikalischen Welt streng ausgehend von den tiefgreifenden Prinzipien der Quantenphysik.
+Bis Kapitel 10 haben wir die theoretischen Grundlagen der Quanteninformationswissenschaft und die mathematische Struktur von Quantenalgorithmen ausführlich behandelt. Wie hochentwickelt ein Quantenalgorithmus auch entworfen sein mag und wie sehr die theoretische Quantenüberlegenheit (Quantum Supremacy) im Rahmen der Komplexitätstheorie auch bewiesen sein mag – ohne die physische Entität der „Quantenhardware“, die ihn ausführt, bleibt dies ein rein mathematisches Gedankenspiel. In diesem Kapitel erläutern wir die modernsten Hardware-Implementierungsansätze zur Verkörperung des Zustandsvektors $ |\psi\rangle $ im abstrakten [Hilbert](https://kenji.blog/de/p/hilbert/)-Raum in der physikalischen Welt streng ausgehend von den tiefgreifenden Prinzipien der Quantenphysik.
 
 Um ein quantenphysikalisches System künstlich zu steuern und es als universellen (Universal) Rechner fungieren zu lassen, müssen fünf anspruchsvolle physikalische Anforderungen erfüllt werden, die als DiVincenzo-Kriterien (DiVincenzo's criteria) bekannt sind:
-1. **Ein skalierbares, wohldefiniertes Qubit-System** : Die Tensorproduktstruktur des Hilbert-Raums $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ muss physikalisch gewährleistet werden können.
+1. **Ein skalierbares, wohldefiniertes Qubit-System** : Die Tensorproduktstruktur des [Hilbert](https://kenji.blog/de/p/hilbert/)-Raums $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ muss physikalisch gewährleistet werden können.
 2. **Initialisierung von Quantenzuständen** : Die Fähigkeit, das System mit hoher Fidelität (Fidelity) in einen reinen Zustand (typischerweise $ |00\dots0\rangle $ ) zurückzusetzen.
 3. **Ausreichend lange Kohärenzzeiten** : Die Dekohärenzzeiten (T1 und T2) des Quantenzustands müssen um viele Größenordnungen länger sein als die für eine einzelne Gatteroperation benötigte Zeit.
 4. **Implementierung eines universellen Quantengattersatzes** : Jede beliebige unitäre Transformation $ \hat{U} \in SU(2^n) $ muss durch eine Kombination einer endlichen Anzahl von Basisgattern (z. B. H-, T-, CNOT-Gatter) mit beliebiger Präzision approximiert werden können.
@@ -2677,7 +2677,7 @@ Sowohl supraleitende Schaltkreise als auch gefangene Ionen sind anfällig für F
 
 ### 11.3.1 Kitaev-Kette und Majorana-Nullmoden
 
-In dem dreidimensionalen Raum, in dem wir leben, existieren nur zwei Arten von Elementarteilchen: Bosonen und Fermionen. In zweidimensionalen topologischen Materialsystemen können jedoch „Anyonen“ (Anyon) existieren, bei denen die Wellenfunktion durch eine Teilchenaustauschoperation eine beliebige Phase annehmen kann. Im noch außergewöhnlicheren Fall „nicht-abelscher Anyonen“ (Non-Abelian anyon) führt der Austausch zweier Teilchen dazu, dass das System innerhalb eines entarteten Zustandsraums gleicher Energie eine unitäre Rotation in einen anderen, orthogonalen Zustand erfährt:
+In dem dreidimensionalen Raum, in dem wir leben, existieren nur zwei Arten von Elementarteilchen: Bosonen und Fermionen. In zweidimensionalen topologischen Materialsystemen können jedoch „Anyonen“ (Anyon) existieren, bei denen die Wellenfunktion durch eine Teilchenaustauschoperation eine beliebige Phase annehmen kann. Im noch außergewöhnlicheren Fall „nicht-abelscher Anyonen“ (Non-[Abel](https://kenji.blog/de/p/abel/)ian anyon) führt der Austausch zweier Teilchen dazu, dass das System innerhalb eines entarteten Zustandsraums gleicher Energie eine unitäre Rotation in einen anderen, orthogonalen Zustand erfährt:
 
 $$
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
@@ -2768,7 +2768,7 @@ $$
 
 In ausreichend tiefen (hinreichend großes $d$) zufälligen Quantenschaltkreisen zeigen die einzelnen Amplituden $ \alpha_x $ ein Random-Walk-artiges Verhalten in der komplexen Ebene, und es ist mathematisch bewiesen, dass ihre Wahrscheinlichkeitsverteilung $ P_{\text{ideal}}(x) $ einer Porter-Thomas-Verteilung folgt. Das bedeutet, dass die Wahrscheinlichkeitsdichtefunktion für das Auftreten einer Wahrscheinlichkeit $p$ durch $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $ gegeben ist. Dies führt dazu, dass manche Bitfolgen mit signifikant höherer Wahrscheinlichkeit gemessen werden als andere, wodurch ein charakteristisches Interferenz- bzw. „Speckle-Muster“ (Fleckenmuster) entsteht.
 
-Um aus dieser Verteilung auf einem klassischen Computer ein exaktes Sampling durchzuführen, müssen die Amplituden $ \alpha_x $ über die Kontraktion gigantischer Tensornetzwerke direkt berechnet werden. Die Dimension des Zustandsvektors beträgt $ 2^n $; im Fall von $ n = 53 $ entspricht dies etwa $ 9 \times 10^{15} $ komplexen Amplituden (ein Speicherbedarf im Petabyte-Bereich), die simultan verfolgt werden müssen. Dies stößt an eine Berechnungsmauer, die selbst mit den modernsten Supercomputern der Welt astronomische Rechenzeiten erfordert hätte. Ein Quantencomputer hingegen hält den Zustand **$|\psi_f\rangle$** über das physikalische System selbst ganz natürlich als Vektor im Hilbertraum und vollzieht mit einer einzigen Messung augenblicklich (in wenigen Dutzend Mikrosekunden) ein Sampling gemäß diesem Speckle-Muster.
+Um aus dieser Verteilung auf einem klassischen Computer ein exaktes Sampling durchzuführen, müssen die Amplituden $ \alpha_x $ über die Kontraktion gigantischer Tensornetzwerke direkt berechnet werden. Die Dimension des Zustandsvektors beträgt $ 2^n $; im Fall von $ n = 53 $ entspricht dies etwa $ 9 \times 10^{15} $ komplexen Amplituden (ein Speicherbedarf im Petabyte-Bereich), die simultan verfolgt werden müssen. Dies stößt an eine Berechnungsmauer, die selbst mit den modernsten Supercomputern der Welt astronomische Rechenzeiten erfordert hätte. Ein Quantencomputer hingegen hält den Zustand **$|\psi_f\rangle$** über das physikalische System selbst ganz natürlich als Vektor im [Hilbert](https://kenji.blog/de/p/hilbert/)raum und vollzieht mit einer einzigen Messung augenblicklich (in wenigen Dutzend Mikrosekunden) ein Sampling gemäß diesem Speckle-Muster.
 
 Um den Erfolg des Experiments quantitativ zu bewerten, wurde das lineare Kreuzentropie-Benchmarking (Linear Cross-Entropy Benchmarking, XEB) eingeführt. Die Fidelität (Fidelity) $ \mathcal{F}_{\text{XEB}} $ ist wie folgt definiert:
 
@@ -2852,7 +2852,7 @@ Vom heutigen Stand von einigen Dutzend bis Hunderten physikalischer Qubits aus b
 
 Ausgehend von Kapitel 1 mit der Einführung der Bra-Ket-Notation und der Superposition der Basiszustände **$|0\rangle$** und **$|1\rangle$** , über die unitäre Zeitentwicklung, die mathematische Beschreibung von Vielteilchensystemen via Tensorprodukte, den Zusammenbruch von Einsteins lokalem Realismus durch die Bellsche Ungleichung bis hin zu den eleganten Konstruktionen der Quantenalgorithmen von Shor und Grover: Im Verlauf dieser 12 Kapitel haben wir das monumentale Lehrgebäude der Quanteninformationswissenschaft mit mathematischer Strenge durchmessen.
 
-Während klassische Rechenmaschinen auf deterministischen Wahrheitswerten und der Booleschen Algebra beruhen, fundiert der Quantencomputer auf unitären Rotationen und Tensorprodukten in komplexen Hilberträumen – der linearen Algebra. Dieser fundamentale Paradigmenwechsel geht weit über den rein pragmatischen Aspekt schnellerer Rechenzeiten hinaus: Er konfrontiert uns mit tiefgreifenden epistemologischen Fragen an der Schnittstelle von Informationstheorie und Grundlagenphysik: „Was ist die ultimative Grenze der Informationsverarbeitung in unserem Universum?“ und „Inwiefern hängen Berechenbarkeit und Komplexität von den physikalischen Naturgesetzen des Kosmos ab, in dem wir leben?“.
+Während klassische Rechenmaschinen auf deterministischen Wahrheitswerten und der Booleschen Algebra beruhen, fundiert der Quantencomputer auf unitären Rotationen und Tensorprodukten in komplexen [Hilbert](https://kenji.blog/de/p/hilbert/)räumen – der linearen Algebra. Dieser fundamentale Paradigmenwechsel geht weit über den rein pragmatischen Aspekt schnellerer Rechenzeiten hinaus: Er konfrontiert uns mit tiefgreifenden epistemologischen Fragen an der Schnittstelle von Informationstheorie und Grundlagenphysik: „Was ist die ultimative Grenze der Informationsverarbeitung in unserem Universum?“ und „Inwiefern hängen Berechenbarkeit und Komplexität von den physikalischen Naturgesetzen des Kosmos ab, in dem wir leben?“.
 
 Jene Quantenverschränkung (Entanglement), die Albert Einstein einst als „spukhafte Fernwirkung“ (spooky action at a distance) abtat, gilt heute als fundamentale und unersetzliche Ressource für Quantenteleportation, abhörsichere Quantenkryptographie und Quantenprozessoren. Die visionäre Intuition des genialen Physikers Richard Feynman aus dem Jahr 1982 – „Wenn man die Natur simulieren will, sollte man das besser quantenmechanisch tun, und beim Himmel, das ist ein wunderbares Problem, denn es sieht nicht so einfach aus“ – ist durch die jahrzehntelange, unermüdliche Arbeit von Physikern, Mathematikern, Informatikern und herausragenden Ingenieuren weltweit Realität geworden: Quantensimulationen laufen heute auf real existierenden Prozessoren.
 

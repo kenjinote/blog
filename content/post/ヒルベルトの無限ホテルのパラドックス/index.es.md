@@ -18,7 +18,7 @@ tags:
 
 El gran matemático alemán [David Hilbert](https://kenji.blog/es/p/hilbert/) ideó el siguiente experimento mental fascinante para explicar cuán lejos está el concepto de "infinito" de la intuición humana.
 
-Imagínese: en algún lugar del universo existe el **"Gran Hotel de Hilbert"**.
+Imagínese: en algún lugar del universo existe el **"Gran Hotel de [Hilbert](https://kenji.blog/es/p/hilbert/)"**.
 En este hotel hay **infinitas** habitaciones numeradas: habitación 1, habitación 2, habitación 3...
 
 Un día, hubo un gran evento en todo el universo, y este hotel infinito se llenó, ocupando todas sus habitaciones, quedando **"completo"**.
@@ -156,7 +156,7 @@ De esta manera, el gerente logró alojar brillantemente a la incomprensible cant
 
 ## 5. El infinito tiene diferentes "tamaños" (Teorema de Cantor)
 
-Lo que nos enseña el Gran Hotel de Hilbert es el hecho de que **el "infinito numerable (el infinito que se puede contar asignando números como 1, 2, 3...)", por mucho que se sume o se multiplique, finalmente cabe dentro del mismo tamaño de 'infinito numerable'**.
+Lo que nos enseña el Gran Hotel de [Hilbert](https://kenji.blog/es/p/hilbert/) es el hecho de que **el "infinito numerable (el infinito que se puede contar asignando números como 1, 2, 3...)", por mucho que se sume o se multiplique, finalmente cabe dentro del mismo tamaño de 'infinito numerable'**.
 
 Sin embargo, el matemático [Georg Cantor](https://kenji.blog/es/p/cantor/) descubrió una verdad aún más aterradora.
 Los "números naturales" y las "fracciones" se pueden alojar todos en este hotel infinito. Pero **si llegan huéspedes que representan los "números reales (todos los decimales, incluidos los irracionales)", es absolutamente imposible alojarlos a todos, incluso usando este hotel infinito**.
@@ -168,7 +168,7 @@ Solemos agrupar todo bajo la palabra "infinito", pero en realidad, dentro del in
 
 ## 6. Conclusión: El "infinito" que destruye la intuición humana
 
-El Gran Hotel de Hilbert ilustra vívidamente cómo el "sentido común de lo finito" cultivado en nuestra vida diaria simplemente no aplica en el "mundo de lo infinito".
+El Gran Hotel de [Hilbert](https://kenji.blog/es/p/hilbert/) ilustra vívidamente cómo el "sentido común de lo finito" cultivado en nuestra vida diaria simplemente no aplica en el "mundo de lo infinito".
 
 "El todo es mayor que la parte"
 "Nadie puede entrar en un hotel lleno"
@@ -177,5 +177,5 @@ El Gran Hotel de Hilbert ilustra vívidamente cómo el "sentido común de lo fin
 Todas estas intuiciones obvias son espectacularmente traicionadas.
 El mundo del infinito es un tesoro de paradojas (verdades contraintuitivas). Los matemáticos, en lugar de temer a estas paradojas, las dominaron con el poder de la lógica, las clasificaron y construyeron el hermoso sistema que hoy conocemos como teoría de conjuntos moderna.
 
-La próxima vez que le digan "el hotel está completo" y le rechacen una habitación, intente imaginar: "Ojalá este hotel fuera el Gran Hotel de Hilbert".
+La próxima vez que le digan "el hotel está completo" y le rechacen una habitación, intente imaginar: "Ojalá este hotel fuera el Gran Hotel de [Hilbert](https://kenji.blog/es/p/hilbert/)".
 

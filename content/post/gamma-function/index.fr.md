@@ -110,6 +110,6 @@ La fonction Gamma n'est pas seulement le produit d'une curiosité mathématique.
 
 1. **Probabilités et Statistiques** : La loi Gamma, la loi du Chi-deux et la loi de Student sont définies à l'aide de la fonction Gamma.
 2. **Physique** : Dans la régularisation dimensionnelle en mécanique quantique et en théorie quantique des champs, la fonction Gamma joue un rôle dans le contrôle des divergences.
-3. **Théorie Analytique des Nombres** : Grâce à sa relation avec la fonction zêta de Riemann, elle occupe une position centrale dans l'étude de la répartition des nombres premiers.
+3. **Théorie Analytique des Nombres** : Grâce à sa relation avec la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/), elle occupe une position centrale dans l'étude de la répartition des nombres premiers.
 
 La quête qui a commencé par une simple question sur l'extension de la factorielle aux nombres réels a révélé une structure magnifique qui traverse l'ensemble des mathématiques. La fonction Gamma est véritablement le chef-d'œuvre d'Euler, jetant un pont entre le monde discret et le monde continu.

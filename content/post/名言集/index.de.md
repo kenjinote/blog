@@ -150,7 +150,7 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 
 > Guter Code ist seine eigene beste Dokumentation. (Steve McConnell)
 
-> Programme müssen geschrieben werden, damit Menschen sie lesen können, und nur nebenbei, damit Maschinen sie ausführen können. (Harold Abelson)
+> Programme müssen geschrieben werden, damit Menschen sie lesen können, und nur nebenbei, damit Maschinen sie ausführen können. (Harold [Abel](https://kenji.blog/de/p/abel/)son)
 
 > Löse zuerst das Problem. Dann schreibe den Code. (John Johnson)
 

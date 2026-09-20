@@ -142,7 +142,7 @@ In der Ausbildung zur Informationskompetenz wird zwar eine oberflächliche Siche
 
 Die HTTPS-Kommunikation und die digitalen Signaturen, die wir täglich nutzen, werden durch asymmetrische Kryptosysteme wie RSA geschützt. Die Sicherheit der RSA-Verschlüsselung beruht auf der mathematischen Schwierigkeit (die als NP-intermediäres Problem gilt), dass „die Primfaktorzerlegung gigantischer ganzer Zahlen mit aktuellen klassischen Computern nicht in realistischer Zeit gelöst werden kann“.
 
-Die mathematischen Formeln, die der RSA-Verschlüsselung zugrunde liegen, sind schöne Anwendungen der Eulerschen Phi-Funktion und des kleinen Satzes von Fermat.
+Die mathematischen Formeln, die der RSA-Verschlüsselung zugrunde liegen, sind schöne Anwendungen der Eulerschen Phi-Funktion und des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/).
 
 1. Wähle zwei gigantische Primzahlen $p$ und $q$
 2. Berechne $n = p \times q$ (Dies wird Teil des öffentlichen Schlüssels)

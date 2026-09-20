@@ -81,7 +81,7 @@ flowchart LR
 
 ## 5. [バーンサイドの補題](https://kenji.blog/p/burnsides-lemma/) ([Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/))
 
-ここでいよいよ、今回の主役である **[バーンサイドの補題](https://kenji.blog/p/burnsides-lemma/)** が登場します。コーシー・フロベニウスの補題 (Cauchy-Frobenius lemma) と呼ばれることもあります。これは、ある群 $G$ が有限集合 $X$ に作用しているとき、その「軌道の数（本質的に異なるパターンの数）」を簡単に計算できるという驚異的な定理です。
+ここでいよいよ、今回の主役である **[バーンサイドの補題](https://kenji.blog/p/burnsides-lemma/)** が登場します。[コーシー](https://kenji.blog/p/cauchy/)・フロベニウスの補題 ([Cauchy](https://kenji.blog/p/cauchy/)-Frobenius lemma) と呼ばれることもあります。これは、ある群 $G$ が有限集合 $X$ に作用しているとき、その「軌道の数（本質的に異なるパターンの数）」を簡単に計算できるという驚異的な定理です。
 
 定理の数式は以下の通りです。
 
@@ -231,7 +231,7 @@ $$
 
 しかし、歴史的には[オーギュスタン＝ルイ・コーシー](https://kenji.blog/p/cauchy/) ([Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)) が1845年に既にこの定理の特別な場合（対称群に関するもの）を発表しており、その後1887年にフェルディナント・ゲオルク・フロベニウス (Ferdinand Georg Frobenius) が一般の有限群に対して証明を与えました。
 
-そのため、数学史に厳密であろうとする人々は、この定理を **「コーシー・フロベニウスの補題」** (Cauchy-Frobenius Lemma) や **「バーンサイドに帰されない補題」** (The Lemma that is not Burnside's) とユーモアを交えて呼ぶこともあります。名前の由来はどうであれ、この補題が群論と組み合わせ数学の歴史において果たした役割の大きさは計り知れません。
+そのため、数学史に厳密であろうとする人々は、この定理を **「[コーシー](https://kenji.blog/p/cauchy/)・フロベニウスの補題」** ([Cauchy](https://kenji.blog/p/cauchy/)-Frobenius Lemma) や **「バーンサイドに帰されない補題」** (The Lemma that is not Burnside's) とユーモアを交えて呼ぶこともあります。名前の由来はどうであれ、この補題が群論と組み合わせ数学の歴史において果たした役割の大きさは計り知れません。
 
 ## 11. 具体例2：立方体の面の塗り分け
 

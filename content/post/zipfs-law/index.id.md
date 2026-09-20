@@ -52,7 +52,7 @@ $$
 P(r) = \frac{\frac{1}{r^\alpha}}{\sum_{n=1}^{N} \frac{1}{n^\alpha}}
 $$
 
-Di sini, $N$ adalah ragam elemen (seperti ukuran kosakata). Deret pada penyebut menyatu ke fungsi zeta Riemann $\zeta(\alpha)$ dalam batas $\alpha > 1$. Oleh karena itu, **[Hukum Zipf](https://kenji.blog/id/p/zipfs-law/)** terkadang disebut sebagai distribusi zeta.
+Di sini, $N$ adalah ragam elemen (seperti ukuran kosakata). Deret pada penyebut menyatu ke fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/) $\zeta(\alpha)$ dalam batas $\alpha > 1$. Oleh karena itu, **[Hukum Zipf](https://kenji.blog/id/p/zipfs-law/)** terkadang disebut sebagai distribusi zeta.
 
 Dengan mengambil logaritma, hubungan ini dapat divisualisasikan dengan lebih jelas.
 

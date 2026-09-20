@@ -238,7 +238,7 @@ Até mesmo iniciantes em programação podem tentar, então não deixe de brinca
 
 Para aqueles que querem saber mais sobre esse tipo de tema "Matemática misteriosa × Programação",
 fiquem à vontade para pedir "Conte-me mais!".
-Qualquer hora dessas vou apresentar a Hipótese de Riemann, histórias sobre números primos e muito mais!
+Qualquer hora dessas vou apresentar a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), histórias sobre números primos e muito mais!
 
 ---
 

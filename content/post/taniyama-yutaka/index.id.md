@@ -16,7 +16,7 @@ Bukti dari **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theo
 
 [Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/) lahir pada tahun 1927 di Kota Kisai, Prefektur Saitama (sekarang Kota Kazo). Ia menunjukkan bakat luar biasa dalam matematika sejak usia muda, namun masa studinya bertepatan dengan periode kacau Perang Dunia II. Ia terjangkit tuberkulosis dan sering melewatkan kelas sekolah menengah untuk waktu yang lama. Selama masa pemulihannya, ia membaca buku-buku matematika sendirian dan mengembangkan pemikiran matematika yang mendalam melalui belajar mandiri. Dikatakan bahwa masa isolasi ini mengasah indera matematikanya yang unik dan intuitif.
 
-Setelah masuk ke Departemen Matematika di Fakultas Sains Universitas Tokyo, ia mengembangkan minat yang kuat pada aljabar abstrak dan teori bilangan. Meskipun berada dalam periode rekonstruksi pasca-perang, komunitas matematika Jepang pada saat itu bertujuan untuk melakukan penelitian kelas dunia, dipengaruhi oleh peneliti muda yang terinspirasi oleh Teiji Takagi dan Emil Artin. Taniyama membiarkan bakatnya berkembang di tengah antusiasme ini.
+Setelah masuk ke Departemen Matematika di Fakultas Sains Universitas Tokyo, ia mengembangkan minat yang kuat pada aljabar abstrak dan teori bilangan. Meskipun berada dalam periode rekonstruksi pasca-perang, komunitas matematika Jepang pada saat itu bertujuan untuk melakukan penelitian kelas dunia, dipengaruhi oleh peneliti muda yang terinspirasi oleh Teiji [Takagi](https://kenji.blog/id/p/takagi-teiji/) dan Emil Artin. Taniyama membiarkan bakatnya berkembang di tengah antusiasme ini.
 
 ## 2. Pertemuan dengan [Goro Shimura](https://kenji.blog/id/p/shimura-goro/)
 
@@ -78,7 +78,7 @@ Catatan bunuh dirinya tidak menyatakan kekhawatiran spesifik. Ia menulis, "Sampa
 
 Setelah kematian Taniyama, [Goro Shimura](https://kenji.blog/id/p/shimura-goro/) secara ketat merumuskan konjektur ini dan menyebarkannya kepada matematikawan di seluruh dunia. Untuk waktu yang lama, konjektur ini dianggap sebagai tujuan yang sangat sulit sehingga tampak "tidak dapat dibuktikan." Namun, titik balik dramatis terjadi pada tahun 1980-an. Matematikawan Jerman Gerhard Frey mengusulkan ide yang menakjubkan: **"Jika [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) memiliki contoh penyangkal, kurva eliptik yang dibangun dari contoh penyangkal tersebut tidak bisa menjadi modular."**
 
-Kurva eliptik yang dibangun oleh Frey (kurva Frey) mengambil bentuk berikut. Asumsikan ada solusi bilangan bulat untuk persamaan Fermat $A^n + B^n = C^n$. Menggunakan solusi tersebut, kita membuat kurva eliptik berikut:
+Kurva eliptik yang dibangun oleh Frey (kurva Frey) mengambil bentuk berikut. Asumsikan ada solusi bilangan bulat untuk persamaan [Fermat](https://kenji.blog/id/p/fermat/) $A^n + B^n = C^n$. Menggunakan solusi tersebut, kita membuat kurva eliptik berikut:
 
 $$ E: y^2 = x (x - A^n) (x + B^n) $$
 

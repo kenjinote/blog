@@ -23,7 +23,7 @@ Cuando $p$ es un número primo, se cumple que $(p−1)!≡−1 \pmod p$
 ## Fórmula de Euler
 $e^{iπ}+1=0$
 
-## Último teorema de Fermat
+## Último teorema de [Fermat](https://kenji.blog/es/p/fermat/)
 Para todo número entero $n≥3$, no existen números enteros positivos $x,y,z$ que cumplan $x^n+y^n=z^n$
 
 ## Problema de Basilea

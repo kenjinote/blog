@@ -39,7 +39,7 @@ La CH es la afirmación de que no existen otras cardinalidades entre estas dos.
 
 Cantor intentó demostrar esta hipótesis durante toda su vida, pero nunca tuvo éxito. A veces creía haberla "demostrado", y otras veces creía haberla "refutado"; su estado mental se vio gravemente afectado por este difícil problema.
 
-En el Segundo Congreso Internacional de Matemáticos celebrado en París en el año 1900, [David Hilbert](https://kenji.blog/es/p/hilbert/) propuso los "23 problemas de Hilbert" que las matemáticas del siglo XX debían resolver. El memorable **primer problema** fue precisamente esta "demostración de la Hipótesis del continuo".
+En el Segundo Congreso Internacional de Matemáticos celebrado en París en el año 1900, [David Hilbert](https://kenji.blog/es/p/hilbert/) propuso los "23 problemas de [Hilbert](https://kenji.blog/es/p/hilbert/)" que las matemáticas del siglo XX debían resolver. El memorable **primer problema** fue precisamente esta "demostración de la Hipótesis del continuo".
 
 ## 4. Axiomatización de la teoría de conjuntos: El sistema de axiomas ZFC
 

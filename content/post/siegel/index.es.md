@@ -68,7 +68,7 @@ Este resultado fue innovador en cuanto a la finitud de las soluciones de las ecu
 
 ### 3.2 Cero de Siegel
 
-En la teoría analítica de números, la distribución de los ceros de la función $L$ de Dirichlet $L(s, \chi)$ es de extrema importancia para extensiones naturales del teorema de los números primos y el teorema sobre progresiones aritméticas. Según la Hipótesis Generalizada de Riemann (GRH), todos los ceros en la banda crítica con una parte real entre $0$ y $1$ deberían encontrarse en la recta donde la parte real es $1/2$.
+En la teoría analítica de números, la distribución de los ceros de la función $L$ de Dirichlet $L(s, \chi)$ es de extrema importancia para extensiones naturales del teorema de los números primos y el teorema sobre progresiones aritméticas. Según la Hipótesis Generalizada de [Riemann](https://kenji.blog/es/p/riemann/) (GRH), todos los ceros en la banda crítica con una parte real entre $0$ y $1$ deberían encontrarse en la recta donde la parte real es $1/2$.
 
 Sin embargo, para un carácter real (de un cuerpo cuadrático real) $\chi$, las matemáticas actuales no han descartado la posibilidad de que exista un cero real con una parte real muy cercana a $1$. A tal hipotético cero contraejemplo se le llama un **cero de Siegel** (Siegel zero) o cero excepcional.
 
@@ -90,7 +90,7 @@ $$
 \mathcal{H}_g = \left\{ Z \in M_g(\mathbb{C}) \mid Z^T = Z, \text{ Im}(Z) \text{ es definida positiva} \right\}
 $$
 
-Aquí, cuando $g=1$, este espacio coincide perfectamente con el semiplano superior de Poincaré habitual. Siegel introdujo este espacio de dimensiones superiores durante el proceso de profundizar en la teoría analítica de las formas cuadráticas, y demostró que las formas automorfas definidas en este espacio están profundamente conectadas con el número de representaciones de los enteros mediante formas cuadráticas.
+Aquí, cuando $g=1$, este espacio coincide perfectamente con el semiplano superior de [Poincaré](https://kenji.blog/es/p/poincare/) habitual. Siegel introdujo este espacio de dimensiones superiores durante el proceso de profundizar en la teoría analítica de las formas cuadráticas, y demostró que las formas automorfas definidas en este espacio están profundamente conectadas con el número de representaciones de los enteros mediante formas cuadráticas.
 
 Además, sentó las bases de la **fórmula de Siegel-Weil** dentro de la teoría analítica de las formas cuadráticas. Se trata de una fórmula maravillosa que describe el número de representaciones por formas cuadráticas como los coeficientes de Fourier de las series de Eisenstein, y se puede decir que es una expresión analítica del principio local-global (principio de Hasse). Estas teorías son conceptos indispensables que forman la base de la teoría posterior de representaciones automorfas y el programa de Langlands.
 
@@ -129,7 +129,7 @@ La visión de Siegel de las matemáticas fue tan sorprendente como los logros qu
 
 A mediados del siglo XX, un estilo abstracto defendido por el joven colectivo matemático francés, el grupo Bourbaki —que intentaba reconstruir todas las matemáticas a partir de la teoría de conjuntos y los sistemas axiomáticos— estaba barriendo el mundo. Sin embargo, Siegel lanzó severas críticas contra esta tendencia. Desestimó el estilo Bourbaki como "formalismo vacío" y dejó comentarios del siguiente tenor:
 
-> "La excesiva abstracción de las matemáticas recientes ha caído en un formalismo vacío y no produce resultados significativos. Debemos regresar a problemas concretos ricos en contenido real, el tipo de problemas que abordaron Gauss, Euler, Riemann y Jacobi."
+> "La excesiva abstracción de las matemáticas recientes ha caído en un formalismo vacío y no produce resultados significativos. Debemos regresar a problemas concretos ricos en contenido real, el tipo de problemas que abordaron Gauss, Euler, [Riemann](https://kenji.blog/es/p/riemann/) y [Jacobi](https://kenji.blog/es/p/jacobi/)."
 
 Debido a esta fuerte convicción, sus artículos son muy gratificantes de leer; por otro lado, para los lectores modernos, los cálculos larguísimos y altamente técnicos aparecen por todas partes, requiriendo a menudo un esfuerzo inmenso para descifrarlos. Nunca transigió a lo largo de su vida con su filosofía de que "los conceptos y marcos abstractos son solo un medio para resolver problemas concretos y difíciles". Esa postura distante lo convirtió en una figura un tanto peculiar entre sus matemáticos contemporáneos.
 
