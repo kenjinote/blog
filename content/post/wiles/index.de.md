@@ -30,7 +30,7 @@ $$
 x^n + y^n = z^n \quad (\text{wobei } n \ge 3 \text{ eine ganze Zahl ist})
 $$
 
-Er besagt, dass es keine positiven ganzzahligen Lösungen $(x, y, z)$ gibt, die diese Gleichung erfüllen. Wenn $n = 2$ ist, ist dies als Satz des Pythagoras wohlbekannt, und es gibt unendlich viele Lösungen (pythagoreische Tripel). Fermat behauptete jedoch, dass es niemals zutrifft, wenn $n$ gleich 3 oder größer ist.
+Er besagt, dass es keine positiven ganzzahligen Lösungen $(x, y, z)$ gibt, die diese Gleichung erfüllen. Wenn $n = 2$ ist, ist dies als Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) wohlbekannt, und es gibt unendlich viele Lösungen (pythagoreische Tripel). Fermat behauptete jedoch, dass es niemals zutrifft, wenn $n$ gleich 3 oder größer ist.
 
 Obwohl die Aussage selbst für einen Mittelschüler verständlich zu sein scheint, widerstand sie einem vollständigen Beweis selbst durch geniale Mathematiker, die ihre Spuren in der Geschichte hinterließen, wie Euler, Sophie Germain und Kummer.
 

@@ -16,7 +16,7 @@ tags:
 
 No mundo da matemática, as "permutações" e "combinações" — métodos para contar logicamente o número de resultados possíveis — são conceitos fundamentais cruciais em uma ampla gama de campos, desde a probabilidade e estatística até os algoritmos da ciência da computação. Estender esses conceitos fundamentais para o reino da álgebra nos leva ao "Teorema Binomial", e representar visual e geometricamente a sequência de seus coeficientes produz o "Triângulo de Pascal". À primeira vista, esses podem parecer tópicos matemáticos independentes, mas ao estudá-los profundamente, você percebe que eles estão surpreendentemente entrelaçados, formando uma única, maciça e bela estrutura matemática.
 
-Neste artigo, começaremos com uma compreensão intuitiva e os métodos básicos de cálculo para permutações e combinações, e então explicaremos em detalhes conceitos mais complexos como permutações com repetição, permutações circulares e combinações com repetição. A partir daí, derivaremos a fórmula do Teorema Binomial e sua bela simetria, e finalmente mergulharemos a fundo em temas profundos como as propriedades misteriosas escondidas no Triângulo de Pascal, sua conexão com a sequência de Fibonacci que descreve as leis da natureza e estruturas fractais. Vamos embarcar em uma jornada para apreciar plenamente a "beleza" e a "regularidade" da matemática.
+Neste artigo, começaremos com uma compreensão intuitiva e os métodos básicos de cálculo para permutações e combinações, e então explicaremos em detalhes conceitos mais complexos como permutações com repetição, permutações circulares e combinações com repetição. A partir daí, derivaremos a fórmula do Teorema Binomial e sua bela simetria, e finalmente mergulharemos a fundo em temas profundos como as propriedades misteriosas escondidas no Triângulo de Pascal, sua conexão com a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) que descreve as leis da natureza e estruturas fractais. Vamos embarcar em uma jornada para apreciar plenamente a "beleza" e a "regularidade" da matemática.
 
 # O que são Permutações?
 
@@ -262,10 +262,10 @@ Se você somar horizontalmente todos os números em qualquer $n$-ésima linha da
 
 Isso pode ser facilmente provado algebricamente a partir da equação $(1+1)^n = \sum \binom{n}{k}$, obtida ao substituir $x=1, y=1$ no Teorema Binomial $(x+y)^n = \sum \binom{n}{k} x^{n-k} y^k$. De uma perspectiva da teoria dos conjuntos, indica que o "número de todos os subconjuntos" de um conjunto com $n$ elementos é $2^n$.
 
-### 3. A Conexão Oculta com a Sequência de Fibonacci
+### 3. A Conexão Oculta com a Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)
 
 Tente adicionar os números do Triângulo de Pascal ao longo de "linhas diagonais rasas". Surpreendentemente, a sequência $1, 1, 2, 3, 5, 8, 13, 21, \dots$ aparece.
-Isso não é nada menos que a **Sequência de Fibonacci**, onde você soma os dois números anteriores para compor o próximo. A sequência mística que aparece em todos os lugares da natureza, como o arranjo das sementes de girassol e a espiral da concha de um náutilo, está profundamente embutida em um triângulo que simplesmente organiza combinações. É um exemplo muito bonito e comovente que mostra como a matemática, um produto do pensamento lógico humano, está ligada à providência da natureza.
+Isso não é nada menos que a **Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)**, onde você soma os dois números anteriores para compor o próximo. A sequência mística que aparece em todos os lugares da natureza, como o arranjo das sementes de girassol e a espiral da concha de um náutilo, está profundamente embutida em um triângulo que simplesmente organiza combinações. É um exemplo muito bonito e comovente que mostra como a matemática, um produto do pensamento lógico humano, está ligada à providência da natureza.
 
 ### 4. Geometria Fractal: Triângulo de Sierpinski
 
@@ -303,6 +303,6 @@ Desde o cálculo das probabilidades de jogar uma moeda até prever a probabilida
 
 Neste artigo, viajamos através de uma vasta paisagem matemática, partindo das permutações e combinações, que são regras simples de "contagem", para sua aplicação em permutações com repetição e permutações circulares, expandindo-se ainda mais para o Teorema Binomial da álgebra e chegando à exploração visual do Triângulo de Pascal.
 
-Ao abstrair e aprofundar no ato extremamente simples e primitivo de "escolher alguns itens de outros distintos" usando a linguagem rigorosa da matemática, ficou claro que um mundo matemático inimaginavelmente rico e bonito se estende para fora — envolvendo simetria perfeita, a regra das potências de 2, a sequência de Fibonacci descrevendo o mundo natural e infinitas estruturas fractais.
+Ao abstrair e aprofundar no ato extremamente simples e primitivo de "escolher alguns itens de outros distintos" usando a linguagem rigorosa da matemática, ficou claro que um mundo matemático inimaginavelmente rico e bonito se estende para fora — envolvendo simetria perfeita, a regra das potências de 2, a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) descrevendo o mundo natural e infinitas estruturas fractais.
 
 As fórmulas matemáticas e teoremas não são meramente ferramentas inorgânicas para resolver problemas de provas. São as obras de arte supremas da humanidade, expressando a ordem invisível por trás do mundo que nos rodeia e as relações avassaladoramente belas tecidas pelos números. Esperamos que, ao entrar em contato com esta bela regularidade dos números mostrada pelas permutações, combinações e o Triângulo de Pascal, você tenha sentido o verdadeiro encanto e a profundidade que a disciplina da matemática possui.

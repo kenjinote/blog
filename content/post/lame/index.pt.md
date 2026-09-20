@@ -109,9 +109,9 @@ Expresso como uma fórmula, é:
 
 $$ \text{Número de passos} \le 5 \times \text{Número de dígitos do número menor} $$
 
-### 4.2 Profunda Conexão com a Sequência de Fibonacci
+### 4.2 Profunda Conexão com a Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)
 
-No processo de prova desse teorema, Lamé descobriu que o pior cenário (ou seja, aquele que leva mais passos) para o algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) ocorre quando as entradas são dois **números de Fibonacci** consecutivos. Utilizando a taxa de crescimento da sequência de Fibonacci e as propriedades da proporção áurea, ele derivou esse belo limite superior. Devido a essa conquista, Lamé é considerado um dos "pais da teoria da complexidade" na ciência da computação moderna.
+No processo de prova desse teorema, Lamé descobriu que o pior cenário (ou seja, aquele que leva mais passos) para o algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) ocorre quando as entradas são dois **números de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)** consecutivos. Utilizando a taxa de crescimento da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) e as propriedades da proporção áurea, ele derivou esse belo limite superior. Devido a essa conquista, Lamé é considerado um dos "pais da teoria da complexidade" na ciência da computação moderna.
 
 ## 5. Contribuições à Física: Teoria da Elasticidade e Parâmetros de Lamé
 

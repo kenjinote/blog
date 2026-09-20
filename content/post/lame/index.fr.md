@@ -109,9 +109,9 @@ Exprimé sous forme de formule, cela donne :
 
 $$ \text{Nombre d'étapes} \le 5 \times \text{Nombre de chiffres du plus petit nombre} $$
 
-### 4.2 Lien profond avec la suite de Fibonacci
+### 4.2 Lien profond avec la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)
 
-En prouvant ce théorème, Lamé a découvert que le pire des cas (c'est-à-dire celui nécessitant le plus d'étapes) pour l'algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) se produit lorsque les entrées sont deux **nombres de Fibonacci** consécutifs. En utilisant le taux de croissance de la suite de Fibonacci et les propriétés du nombre d'or, il a dérivé cette magnifique borne supérieure. Grâce à cette réalisation, Lamé est considéré comme l'un des « pères de la théorie de la complexité » dans l'informatique moderne.
+En prouvant ce théorème, Lamé a découvert que le pire des cas (c'est-à-dire celui nécessitant le plus d'étapes) pour l'algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) se produit lorsque les entrées sont deux **nombres de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)** consécutifs. En utilisant le taux de croissance de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) et les propriétés du nombre d'or, il a dérivé cette magnifique borne supérieure. Grâce à cette réalisation, Lamé est considéré comme l'un des « pères de la théorie de la complexité » dans l'informatique moderne.
 
 ## 5. Contributions à la physique : Théorie de l'élasticité et coefficients de Lamé
 

@@ -32,7 +32,7 @@ Durante la Segunda Guerra Púnica (218 a.C. - 201 a.C.), Siracusa fue sitiada po
 
 Las armas que se dice que ideó incluyen las siguientes:
 
-- **La Garra de Arquímedes** (The Claw of Archimedes): Una máquina gigante parecida a una grúa que se dice que levantaba barcos enemigos del mar y los volcaba.
+- **La Garra de Arquímedes** (The Claw of [Archimedes](https://kenji.blog/es/p/archimedes/)): Una máquina gigante parecida a una grúa que se dice que levantaba barcos enemigos del mar y los volcaba.
 - **Rayo de Calor** (Heat Ray): Una leyenda de que usó una gran cantidad de espejos para recoger la luz solar y enfocarla en los buques de guerra romanos, provocando que se incendiaran. La autenticidad de esto sigue siendo objeto de debate hoy en día.
 - **Catapultas Poderosas** (Catapults): Lanzaban enormes piedras con precisión desde la distancia, destruyendo las formaciones enemigas.
 

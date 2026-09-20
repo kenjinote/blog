@@ -88,18 +88,18 @@ flowchart TD
     H --> I["Beweis abgeschlossen: V - E + F = 2"]
 ```
 
-## Das Geheime Manuskript von Descartes: Eine Weitere Entdeckungsgeschichte
+## Das Geheime Manuskript von [Descartes](https://kenji.blog/de/p/descartes/): Eine Weitere Entdeckungsgeschichte
 
 Tatsächlich hatte der französische Philosoph und Mathematiker [René Descartes](https://kenji.blog/de/p/descartes/) etwa ein Jahrhundert bevor Euler diesen Satz veröffentlichte, im Wesentlichen den gleichen Satz aufgestellt.
-Descartes konzentrierte sich auf das Konzept des „Winkeldefekts“ an den Ecken eines Polyeders.
+[Descartes](https://kenji.blog/de/p/descartes/) konzentrierte sich auf das Konzept des „Winkeldefekts“ an den Ecken eines Polyeders.
 Die Summe der Winkel, die an einer einzigen Ecke zusammentreffen, beträgt auf einer Ebene $360^\circ$, aber an der Ecke eines Körpers ist sie immer kleiner als $360^\circ$. Dieser Fehlbetrag zu $360^\circ$ wird „Winkeldefekt“ genannt.
 
-Descartes entdeckte einen bemerkenswerten Satz: „Wenn man die Winkeldefekte aller Ecken addiert, wird die Summe für jedes Polyeder immer $720^\circ$ betragen.“
+[Descartes](https://kenji.blog/de/p/descartes/) entdeckte einen bemerkenswerten Satz: „Wenn man die Winkeldefekte aller Ecken addiert, wird die Summe für jedes Polyeder immer $720^\circ$ betragen.“
 Als Formel ausgedrückt sieht dies so aus:
 
 $$ \sum (\text{Winkeldefekt}) = 720^\circ $$
 
-Dieser Satz ist mathematisch vollkommen äquivalent zur Eulerschen Formel $V - E + F = 2$. Jedoch veröffentlichte Descartes diese Entdeckung nie, sondern hielt sie in einem verschlüsselten Manuskript verborgen. Nach seinem Tod wurde das Manuskript von Leibniz entschlüsselt, wurde aber nicht weithin bekannt. Folglich wurde diese großartige Eigenschaft von Euler wiederentdeckt und ging als die „Eulersche Formel“ in die Geschichte ein.
+Dieser Satz ist mathematisch vollkommen äquivalent zur Eulerschen Formel $V - E + F = 2$. Jedoch veröffentlichte [Descartes](https://kenji.blog/de/p/descartes/) diese Entdeckung nie, sondern hielt sie in einem verschlüsselten Manuskript verborgen. Nach seinem Tod wurde das Manuskript von Leibniz entschlüsselt, wurde aber nicht weithin bekannt. Folglich wurde diese großartige Eigenschaft von Euler wiederentdeckt und ging als die „Eulersche Formel“ in die Geschichte ein.
 
 ## Die Geburt der Topologie: „Gummituch-Geometrie“
 

@@ -26,7 +26,7 @@ Er kaufte mathematische Fachbücher in Antiquariaten und eignete sich fortgeschr
 
 Im Zentrum von Mordells Forschung standen immer **diophantische Gleichungen** (Diophantine equations). Eine diophantische Gleichung ist das Problem, ganzzahlige oder rationale Lösungen für Polynomgleichungen mit ganzzahligen Koeffizienten zu finden. Sie ist nach dem antiken griechischen Mathematiker Diophantos benannt.
 
-Das berühmteste Beispiel für eine diophantische Gleichung ist die Gleichung, die mit dem Satz des Pythagoras zusammenhängt:
+Das berühmteste Beispiel für eine diophantische Gleichung ist die Gleichung, die mit dem Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) zusammenhängt:
 
 $$ x^2 + y^2 = z^2 $$
 

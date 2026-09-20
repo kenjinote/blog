@@ -10,13 +10,13 @@ tags: ["Bachet", "Teoria dos Números", "História da Matemática", "Matemática
 
 Na história da matemática, há figuras que desempenharam papéis cruciais, mesmo que às vezes permaneçam escondidas à sombra de grandes descobertas posteriores. O matemático francês do século XVII **[Claude Gaspard Bachet](https://kenji.blog/pt/p/bachet/) de Méziriac (1581–1638)** é um deles. Ele é famoso por sua influência sobre [Pierre de Fermat](https://kenji.blog/pt/p/fermat/), mas suas próprias realizações também foram vastas e diversas.
 
-Neste artigo, vamos nos aprofundar na vida de Bachet e em suas principais realizações matemáticas.
+Neste artigo, vamos nos aprofundar na vida de [Bachet](https://kenji.blog/pt/p/bachet/) e em suas principais realizações matemáticas.
 
-## A Vida de Bachet: De Nobre a Acadêmico
+## A Vida de [Bachet](https://kenji.blog/pt/p/bachet/): De Nobre a Acadêmico
 
-Bachet nasceu em 9 de outubro de 1581 em Bourg-en-Bresse, no centro-leste da França. Sua família pertencia à nobreza rica, e ele teve a sorte de receber uma excelente educação desde tenra idade.
+[Bachet](https://kenji.blog/pt/p/bachet/) nasceu em 9 de outubro de 1581 em Bourg-en-Bresse, no centro-leste da França. Sua família pertencia à nobreza rica, e ele teve a sorte de receber uma excelente educação desde tenra idade.
 
-Após perder os pais muito cedo, ele foi educado pelos jesuítas, estudando em Lyon, Milão e outros lugares. Ele considerou brevemente ingressar na ordem dos jesuítas para viver como monge, mas depois retornou à vida secular e dedicou-se à pesquisa acadêmica. Bachet se destacou não apenas em matemática, mas também em literatura, linguística e poesia, ganhando fama como tradutor de clássicos latinos e gregos. Em 1635, ele também foi eleito como um dos primeiros membros da prestigiosa Académie Française.
+Após perder os pais muito cedo, ele foi educado pelos jesuítas, estudando em Lyon, Milão e outros lugares. Ele considerou brevemente ingressar na ordem dos jesuítas para viver como monge, mas depois retornou à vida secular e dedicou-se à pesquisa acadêmica. [Bachet](https://kenji.blog/pt/p/bachet/) se destacou não apenas em matemática, mas também em literatura, linguística e poesia, ganhando fama como tradutor de clássicos latinos e gregos. Em 1635, ele também foi eleito como um dos primeiros membros da prestigiosa Académie Française.
 
 ```mermaid
 flowchart TD
@@ -29,15 +29,15 @@ flowchart TD
 
 ## A Tradução Latina da "Arithmetica" de [Diofanto](https://kenji.blog/pt/p/diophantus/)
 
-Uma das realizações mais conhecidas de Bachet é a sua tradução da "Arithmetica" do antigo matemático grego [Diofanto](https://kenji.blog/pt/p/diophantus/) para o latim, adicionando comentários, e publicando-a em 1621.
+Uma das realizações mais conhecidas de [Bachet](https://kenji.blog/pt/p/bachet/) é a sua tradução da "Arithmetica" do antigo matemático grego [Diofanto](https://kenji.blog/pt/p/diophantus/) para o latim, adicionando comentários, e publicando-a em 1621.
 
-Este livro traduzido tornou-se o texto padrão para os matemáticos europeus da época estudarem a álgebra antiga e a teoria dos números. Uma das anedotas mais famosas é que [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) escreveu o seu famoso "Último Teorema de Fermat" na margem da sua cópia desta edição de Bachet.
+Este livro traduzido tornou-se o texto padrão para os matemáticos europeus da época estudarem a álgebra antiga e a teoria dos números. Uma das anedotas mais famosas é que [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) escreveu o seu famoso "Último Teorema de Fermat" na margem da sua cópia desta edição de [Bachet](https://kenji.blog/pt/p/bachet/).
 
-Bachet não parou na mera tradução; ele adicionou seus próprios excelentes comentários e generalizações aos problemas de [Diofanto](https://kenji.blog/pt/p/diophantus/). Sem seus insights matemáticos, o desenvolvimento da teoria dos números no século XVII poderia ter sido muito mais lento.
+[Bachet](https://kenji.blog/pt/p/bachet/) não parou na mera tradução; ele adicionou seus próprios excelentes comentários e generalizações aos problemas de [Diofanto](https://kenji.blog/pt/p/diophantus/). Sem seus insights matemáticos, o desenvolvimento da teoria dos números no século XVII poderia ter sido muito mais lento.
 
-## Equação de Bachet
+## Equação de [Bachet](https://kenji.blog/pt/p/bachet/)
 
-Na teoria dos números, Bachet estudou uma forma específica de equação diofantina agora conhecida como **equação de Bachet**. Isso representa uma curva cúbica (um tipo de curva elíptica) na seguinte forma:
+Na teoria dos números, [Bachet](https://kenji.blog/pt/p/bachet/) estudou uma forma específica de equação diofantina agora conhecida como **equação de [Bachet](https://kenji.blog/pt/p/bachet/)**. Isso representa uma curva cúbica (um tipo de curva elíptica) na seguinte forma:
 
 $$
 y^2 = x^3 - c
@@ -45,15 +45,15 @@ $$
 
 (Ou às vezes é escrito como $y^2 = x^3 + k$, onde $c$ ou $k$ são constantes.)
 
-Bachet considerou métodos geométricos e algébricos (equivalentes ao que agora é chamado de adição de pontos em curvas elípticas, especificamente o método da tangente para duplicação) para derivar novas soluções racionais quando uma solução racional específica é dada. Isso mostrou uma maneira de gerar infinitas soluções para a equação diofantina e tornou-se um dos fundamentos para a teoria posterior das curvas elípticas.
+[Bachet](https://kenji.blog/pt/p/bachet/) considerou métodos geométricos e algébricos (equivalentes ao que agora é chamado de adição de pontos em curvas elípticas, especificamente o método da tangente para duplicação) para derivar novas soluções racionais quando uma solução racional específica é dada. Isso mostrou uma maneira de gerar infinitas soluções para a equação diofantina e tornou-se um dos fundamentos para a teoria posterior das curvas elípticas.
 
 ## Pai da Matemática Recreativa: "Problemas Agradáveis e Deleitáveis"
 
-Em 1612, Bachet publicou um livro intitulado "Problèmes plaisans et délectables, qui se font par les nombres" (Problemas agradáveis e deleitáveis, que são feitos por números). Este é considerado o primeiro livro especializado em "Matemática Recreativa" publicado na Europa.
+Em 1612, [Bachet](https://kenji.blog/pt/p/bachet/) publicou um livro intitulado "Problèmes plaisans et délectables, qui se font par les nombres" (Problemas agradáveis e deleitáveis, que são feitos por números). Este é considerado o primeiro livro especializado em "Matemática Recreativa" publicado na Europa.
 
-Este livro continha muitos quebra-cabeças matemáticos que permanecem populares hoje, como o quebra-cabeça de atravessar o rio, o problema de Josefo, métodos para fazer quadrados mágicos e o famoso "problema dos pesos de Bachet".
+Este livro continha muitos quebra-cabeças matemáticos que permanecem populares hoje, como o quebra-cabeça de atravessar o rio, o problema de Josefo, métodos para fazer quadrados mágicos e o famoso "problema dos pesos de [Bachet](https://kenji.blog/pt/p/bachet/)".
 
-### O Problema dos Pesos de Bachet
+### O Problema dos Pesos de [Bachet](https://kenji.blog/pt/p/bachet/)
 
 Um dos problemas mais famosos em seu livro é o seguinte:
 
@@ -67,19 +67,19 @@ $$
 N = a_0 3^0 + a_1 3^1 + a_2 3^2 + a_3 3^3 \quad (a_i \in \{-1, 0, 1\})
 $$
 
-Aqui, $a_i = 1$ significa colocar o peso no prato oposto ao objeto sendo pesado, $a_i = -1$ significa colocá-lo no mesmo prato, e $a_i = 0$ significa não usar esse peso. O problema de Bachet foi uma expressão brilhante da teoria fundamental dos sistemas numéricos através do jogo.
+Aqui, $a_i = 1$ significa colocar o peso no prato oposto ao objeto sendo pesado, $a_i = -1$ significa colocá-lo no mesmo prato, e $a_i = 0$ significa não usar esse peso. O problema de [Bachet](https://kenji.blog/pt/p/bachet/) foi uma expressão brilhante da teoria fundamental dos sistemas numéricos através do jogo.
 
-## Identidade de Bachet (Identidade de Bézout)
+## Identidade de [Bachet](https://kenji.blog/pt/p/bachet/) (Identidade de Bézout)
 
-Além disso, Bachet provou o teorema conhecido na matemática moderna como "identidade de Bézout" para números inteiros mais de 150 anos antes de Étienne Bézout.
+Além disso, [Bachet](https://kenji.blog/pt/p/bachet/) provou o teorema conhecido na matemática moderna como "identidade de Bézout" para números inteiros mais de 150 anos antes de Étienne Bézout.
 
-Bachet mostrou que, para quaisquer dois números inteiros coprimos $a$ e $b$, sempre existem números inteiros $x, y$ que satisfazem o seguinte:
+[Bachet](https://kenji.blog/pt/p/bachet/) mostrou que, para quaisquer dois números inteiros coprimos $a$ e $b$, sempre existem números inteiros $x, y$ que satisfazem o seguinte:
 
 $$
 ax + by = 1
 $$
 
-$x$ e $y$ podem ser calculados concretamente expandindo o algoritmo euclidiano (o algoritmo euclidiano estendido), que se tornou um teorema fundamental indispensável na criptografia moderna (como RSA). Em contextos que valorizam a precisão histórica, isso às vezes é chamado de **teorema de Bachet**.
+$x$ e $y$ podem ser calculados concretamente expandindo o algoritmo euclidiano (o algoritmo euclidiano estendido), que se tornou um teorema fundamental indispensável na criptografia moderna (como RSA). Em contextos que valorizam a precisão histórica, isso às vezes é chamado de **teorema de [Bachet](https://kenji.blog/pt/p/bachet/)**.
 
 ## Conclusão
 

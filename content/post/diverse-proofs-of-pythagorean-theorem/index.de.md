@@ -16,7 +16,7 @@ tags:
 
 ## Einleitung
 
-Einer der berühmtesten Sätze der Mathematik, für den es auch die meisten Beweise gibt, ist der **Satz des Pythagoras**. Dieser Satz, der die Beziehung zwischen den drei Seiten eines rechtwinkligen Dreiecks beschreibt, ist nach dem antiken griechischen Philosophen Pythagoras benannt, obwohl er schon lange vor seiner Zeit in Babylonien, China und anderswo bekannt war.
+Einer der berühmtesten Sätze der Mathematik, für den es auch die meisten Beweise gibt, ist der **Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/)**. Dieser Satz, der die Beziehung zwischen den drei Seiten eines rechtwinkligen Dreiecks beschreibt, ist nach dem antiken griechischen Philosophen [Pythagoras](https://kenji.blog/de/p/pythagoras/) benannt, obwohl er schon lange vor seiner Zeit in Babylonien, China und anderswo bekannt war.
 
 Die Aussage des Satzes ist sehr einfach. Wenn die Länge der Hypotenuse eines rechtwinkligen Dreiecks $c$ ist und die Längen der anderen beiden Seiten $a$ und $b$ sind, gilt die folgende Beziehung:
 
@@ -118,7 +118,7 @@ Multipliziert man beide Seiten mit 2 und multipliziert aus, erhält man:
 
 $$ a^2 + 2ab + b^2 = 2ab + c^2 $$
 
-Zieht man von beiden Seiten $2ab$ ab, lässt sich der **Satz des Pythagoras** auf brillante Weise ableiten:
+Zieht man von beiden Seiten $2ab$ ab, lässt sich der **Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/)** auf brillante Weise ableiten:
 
 $$ a^2 + b^2 = c^2 $$
 
@@ -128,7 +128,7 @@ Garfields Beweis, der von jemandem stammt, der sowohl Politiker als auch mathema
 
 ## 4. Albert Einsteins Beweis durch Dimensionsanalyse
 
-Albert Einstein, der größte Physiker des 20. Jahrhunderts, soll den Satz des Pythagoras in seiner Kindheit ebenfalls auf seine eigene Art bewiesen haben. Sein Ansatz nutzte das Konzept der **Dimensionsanalyse**, eine sehr intuitive, für einen Physiker charakteristische Methode.
+Albert Einstein, der größte Physiker des 20. Jahrhunderts, soll den Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) in seiner Kindheit ebenfalls auf seine eigene Art bewiesen haben. Sein Ansatz nutzte das Konzept der **Dimensionsanalyse**, eine sehr intuitive, für einen Physiker charakteristische Methode.
 
 ### Idee der Dimensionsanalyse
 
@@ -163,6 +163,6 @@ Dieser Beweis wurde nicht durch das Herumspielen mit Formeln abgeleitet, sondern
 
 ## Fazit
 
-Der Satz des Pythagoras ist nicht bloß eine auswendig zu lernende mathematische Formel. Er ist ein wunderbares Beispiel für das Wesen der Mathematik, dem man sich aus **verschiedenen Perspektiven** nähern kann, einschließlich geometrischer Rätsel, der Manipulation algebraischer Gleichungen und sogar dem physikalischen Konzept der Dimensionen.
+Der Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) ist nicht bloß eine auswendig zu lernende mathematische Formel. Er ist ein wunderbares Beispiel für das Wesen der Mathematik, dem man sich aus **verschiedenen Perspektiven** nähern kann, einschließlich geometrischer Rätsel, der Manipulation algebraischer Gleichungen und sogar dem physikalischen Konzept der Dimensionen.
 
 Neben den vier hier vorgestellten Beweisen gibt es weltweit unzählige weitere Ansätze, etwa einen Beweis von Leonardo da Vinci und Beweise mittels Origami. Versuchen Sie auf jeden Fall, selbst neue Beweismethoden zu erforschen. Die Welt der Mathematik ist immer voller neuer Entdeckungen.

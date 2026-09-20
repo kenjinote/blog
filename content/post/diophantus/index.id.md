@@ -28,7 +28,7 @@ Hampir tidak ada catatan akurat yang tersisa mengenai kapan [Diophantus](https:/
 
 ### 2.2 Budaya Helenistik dan Alexandria
 
-Pada saat itu, Alexandria adalah pusat budaya dan pembelajaran Helenistik, membanggakan perpustakaan raksasa (Perpustakaan Alexandria) dan berfungsi sebagai pusat pengetahuan tempat banyak sarjana berkumpul. Di kota ini di mana pengetahuan dari Yunani, Mesir, Babilonia, dan bahkan India bersilangan, [Diophantus](https://kenji.blog/id/p/diophantus/) diperkirakan memiliki akses ke warisan matematika masa lalu yang luas. Berbeda dengan tradisi geometris yang dibangun oleh matematikawan besar Yunani seperti [Euclid](https://kenji.blog/id/p/euclid/), Archimedes, dan Apollonius, beberapa teori menunjukkan bahwa [Diophantus](https://kenji.blog/id/p/diophantus/) sangat dipengaruhi oleh pendekatan aljabar dari Babilonia.
+Pada saat itu, Alexandria adalah pusat budaya dan pembelajaran Helenistik, membanggakan perpustakaan raksasa (Perpustakaan Alexandria) dan berfungsi sebagai pusat pengetahuan tempat banyak sarjana berkumpul. Di kota ini di mana pengetahuan dari Yunani, Mesir, Babilonia, dan bahkan India bersilangan, [Diophantus](https://kenji.blog/id/p/diophantus/) diperkirakan memiliki akses ke warisan matematika masa lalu yang luas. Berbeda dengan tradisi geometris yang dibangun oleh matematikawan besar Yunani seperti [Euclid](https://kenji.blog/id/p/euclid/), [Archimedes](https://kenji.blog/id/p/archimedes/), dan Apollonius, beberapa teori menunjukkan bahwa [Diophantus](https://kenji.blog/id/p/diophantus/) sangat dipengaruhi oleh pendekatan aljabar dari Babilonia.
 
 ```mermaid
 timeline
@@ -83,15 +83,15 @@ Karena $\gcd(4, 6) = 2$, dan $2$ membagi habis $8$, maka solusi bilangan bulat a
 Salah satu solusinya adalah $x = 2, y = 0$ ($4(2) + 6(0) = 8$).
 Selain itu, solusi umum dapat dinyatakan sebagai $x = 2 + 3k, y = -2k$ (di mana $k$ adalah sembarang bilangan bulat).
 
-### 4.2 Tripel Pythagoras dan Persamaan Diophantine Non-linear
+### 4.2 Tripel [Pythagoras](https://kenji.blog/id/p/pythagoras/) dan Persamaan Diophantine Non-linear
 
-Persamaan yang tidak asing dari teorema Pythagoras juga merupakan jenis persamaan Diophantine.
+Persamaan yang tidak asing dari teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) juga merupakan jenis persamaan Diophantine.
 
 $$
 x^2 + y^2 = z^2
 $$
 
-Himpunan bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini disebut **Tripel Pythagoras**. Contoh terkenal antara lain $(3, 4, 5)$ dan $(5, 12, 13)$. Dalam Buku II, Masalah 8 dari *Arithmetica*, [Diophantus](https://kenji.blog/id/p/diophantus/) membahas masalah pembagian suatu bilangan kuadrat menjadi jumlah dari dua bilangan kuadrat (misalnya, mencari bilangan rasional $x, y$ sehingga $16 = x^2 + y^2$).
+Himpunan bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini disebut **Tripel [Pythagoras](https://kenji.blog/id/p/pythagoras/)**. Contoh terkenal antara lain $(3, 4, 5)$ dan $(5, 12, 13)$. Dalam Buku II, Masalah 8 dari *Arithmetica*, [Diophantus](https://kenji.blog/id/p/diophantus/) membahas masalah pembagian suatu bilangan kuadrat menjadi jumlah dari dua bilangan kuadrat (misalnya, mencari bilangan rasional $x, y$ sehingga $16 = x^2 + y^2$).
 
 Di bagian pinggir di sebelah masalah ini, [Pierre de Fermat](https://kenji.blog/id/p/fermat/), seorang hakim Prancis abad ke-17 dan matematikawan amatir, meninggalkan catatan berikut:
 
@@ -176,7 +176,7 @@ Karya-karya [Diophantus](https://kenji.blog/id/p/diophantus/) sempat hilang di d
 
 Secara khusus, matematikawan di Bagdad pada abad ke-9 menerjemahkan *Arithmetica* ke dalam bahasa Arab, yang sangat berkontribusi pada perkembangan aljabar Islam. Matematikawan Islam seperti Al-Karaji mengadopsi dan mengembangkan metode [Diophantus](https://kenji.blog/id/p/diophantus/) lebih lanjut.
 
-Pada abad ke-16, ketika karya klasik Yunani ditemukan kembali di Eropa zaman Renaisans, *Arithmetica* diterjemahkan ke dalam bahasa Latin. Edisi dwibahasa Yunani dan Latin yang diterbitkan oleh [Claude Gaspard Bachet](https://kenji.blog/id/p/bachet/) de Méziriac pada tahun 1621 dibaca secara luas. Edisi Bachet dari *Arithmetica* inilah yang dipelajari Fermat dengan saksama, yang memicu terbukanya pintu baru dalam matematika.
+Pada abad ke-16, ketika karya klasik Yunani ditemukan kembali di Eropa zaman Renaisans, *Arithmetica* diterjemahkan ke dalam bahasa Latin. Edisi dwibahasa Yunani dan Latin yang diterbitkan oleh [Claude Gaspard Bachet](https://kenji.blog/id/p/bachet/) de Méziriac pada tahun 1621 dibaca secara luas. Edisi [Bachet](https://kenji.blog/id/p/bachet/) dari *Arithmetica* inilah yang dipelajari Fermat dengan saksama, yang memicu terbukanya pintu baru dalam matematika.
 
 Teori persamaan Diophantine kemudian dipelajari secara mendalam oleh para raksasa seperti [Leonhard Euler](https://kenji.blog/id/p/euler/), [Joseph-Louis Lagrange](https://kenji.blog/id/p/lagrange/), dan [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/). Penelitian mereka berkembang menjadi bidang matematika modern yang luas, yaitu "teori bilangan aljabar" dan "geometri aljabar". Masalah ke-10 dari 23 masalah Hilbert adalah "menemukan algoritma umum untuk menentukan apakah persamaan Diophantine tertentu dapat diselesaikan", dan pada tahun 1970 Yuri Matiyasevich membuktikan bahwa "algoritma semacam itu tidak ada". Nama [Diophantus](https://kenji.blog/id/p/diophantus/) terukir dalam-dalam di garda terdepan matematika modern.
 

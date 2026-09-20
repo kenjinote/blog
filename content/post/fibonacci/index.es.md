@@ -10,17 +10,17 @@ tags: ["Fibonacci", "Matemáticas", "Historia", "Proporción Áurea", "Liber Aba
 
 ## Introducción: La Luz Matemática que Iluminó la Edad Oscura
 
-En la Europa medieval, durante lo que a menudo se llama la "Edad Oscura", el progreso académico estaba estancado. Sin embargo, a principios del siglo XIII, surgió un genio que cambiaría para siempre la historia de las matemáticas europeas. Su nombre era Leonardo de Pisa. Esta figura, más tarde conocida como **Fibonacci**, fue la fuerza impulsora detrás de la popularización de los "números arábigos" (números indoarábigos) que usamos a diario en la actualidad, y el descubridor de la "sucesión de Fibonacci" que desentraña los misterios del mundo natural.
+En la Europa medieval, durante lo que a menudo se llama la "Edad Oscura", el progreso académico estaba estancado. Sin embargo, a principios del siglo XIII, surgió un genio que cambiaría para siempre la historia de las matemáticas europeas. Su nombre era Leonardo de Pisa. Esta figura, más tarde conocida como **[Fibonacci](https://kenji.blog/es/p/fibonacci/)**, fue la fuerza impulsora detrás de la popularización de los "números arábigos" (números indoarábigos) que usamos a diario en la actualidad, y el descubridor de la "sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/)" que desentraña los misterios del mundo natural.
 
-En este artículo, profundizaremos en la turbulenta vida de Fibonacci, el impacto que su obra magna "Liber Abaci" tuvo en la sociedad y su legado matemático que se extiende hasta la ciencia moderna y la naturaleza.
+En este artículo, profundizaremos en la turbulenta vida de [Fibonacci](https://kenji.blog/es/p/fibonacci/), el impacto que su obra magna "Liber Abaci" tuvo en la sociedad y su legado matemático que se extiende hasta la ciencia moderna y la naturaleza.
 
-## Vida de Fibonacci y Contexto Histórico
+## Vida de [Fibonacci](https://kenji.blog/es/p/fibonacci/) y Contexto Histórico
 
-### Nacimiento en Pisa y el Origen del Nombre "Fibonacci"
+### Nacimiento en Pisa y el Origen del Nombre "[Fibonacci](https://kenji.blog/es/p/fibonacci/)"
 
 [Leonardo Fibonacci](https://kenji.blog/es/p/fibonacci/) nació alrededor de 1170 en la ciudad-estado italiana de Pisa. Pisa en ese momento florecía como un centro de comercio mediterráneo, una república próspera con una poderosa armada y red comercial. Su padre, Guglielmo Bonacci, era un rico comerciante que también trabajaba como funcionario de aduanas para Pisa.
 
-El nombre "Fibonacci" en realidad no se usó durante su vida. Es un término acuñado por historiadores posteriores, que abrevia el latín "filius Bonacci" (hijo de Bonacci). Él se llamaba a sí mismo "Leonardo Pisano" (Leonardo de Pisa) o, debido a su amor por los viajes, "Bigollo" (que significa vagabundo o perezoso).
+El nombre "[Fibonacci](https://kenji.blog/es/p/fibonacci/)" en realidad no se usó durante su vida. Es un término acuñado por historiadores posteriores, que abrevia el latín "filius Bonacci" (hijo de Bonacci). Él se llamaba a sí mismo "Leonardo Pisano" (Leonardo de Pisa) o, debido a su amor por los viajes, "Bigollo" (que significa vagabundo o perezoso).
 
 ### Educación en el Norte de África y Encuentros con Diferentes Culturas
 
@@ -36,7 +36,7 @@ A través de estos extensos viajes, se convenció de que los números indoarábi
 
 ## "Liber Abaci" y su Impacto
 
-En 1202, Fibonacci completó su obra magna, "Liber Abaci" (El Libro del Cálculo), publicándose una edición revisada en 1228. Aunque el título menciona el "ábaco", en realidad era un libro revolucionario que explicaba cómo realizar cálculos usando el nuevo sistema numérico sin usar un ábaco.
+En 1202, [Fibonacci](https://kenji.blog/es/p/fibonacci/) completó su obra magna, "Liber Abaci" (El Libro del Cálculo), publicándose una edición revisada en 1228. Aunque el título menciona el "ábaco", en realidad era un libro revolucionario que explicaba cómo realizar cálculos usando el nuevo sistema numérico sin usar un ábaco.
 
 ### Introducción de los Números Arábigos
 
@@ -48,7 +48,7 @@ Este libro no solo enseñaba cómo escribir números; cubría de manera integral
 
 ### Aplicación a las Matemáticas Comerciales
 
-Para demostrar lo excepcionalmente práctico que era este nuevo sistema matemático, Fibonacci incluyó numerosos problemas realistas a los que se enfrentaban los comerciantes.
+Para demostrar lo excepcionalmente práctico que era este nuevo sistema matemático, [Fibonacci](https://kenji.blog/es/p/fibonacci/) incluyó numerosos problemas realistas a los que se enfrentaban los comerciantes.
 
 - Cálculo de tipos de cambio complejos entre diferentes monedas
 - Cálculo de ganancias y pérdidas en bienes
@@ -66,9 +66,9 @@ flowchart TD
     D -->|"Modernización de las Matemáticas"| F["Revolución Científica / Renacimiento"]
 ```
 
-## La Sucesión de Fibonacci y la Proporción Áurea: El Código de la Naturaleza
+## La Sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) y la Proporción Áurea: El Código de la Naturaleza
 
-La parte más famosa del "Liber Abaci" es el "Problema de los Conejos" que aparece en el Capítulo 12. Este rompecabezas aparentemente simple dio a luz a una sucesión fenomenal más tarde llamada la "Sucesión de Fibonacci".
+La parte más famosa del "Liber Abaci" es el "Problema de los Conejos" que aparece en el Capítulo 12. Este rompecabezas aparentemente simple dio a luz a una sucesión fenomenal más tarde llamada la "Sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/)".
 
 ### El Problema de los Conejos
 
@@ -93,7 +93,7 @@ $$
 
 ### La Asombrosa Relación con la Proporción Áurea
 
-Una de las características más místicas de la sucesión de Fibonacci es que a medida que se toma la proporción de dos números adyacentes ($F_{n+1} / F_n$), esta converge a una constante específica.
+Una de las características más místicas de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) es que a medida que se toma la proporción de dos números adyacentes ($F_{n+1} / F_n$), esta converge a una constante específica.
 
 - $1 / 1 = 1.000$
 - $2 / 1 = 2.000$
@@ -112,19 +112,19 @@ $$
 
 Esto se conoce como la "Proporción Áurea", considerada desde la antigua Grecia como la proporción más hermosa y armoniosa. Esta proporción se utiliza intencionalmente (o inconscientemente) en la arquitectura histórica y en obras de arte, como el Partenón y la Mona Lisa.
 
-Además, el matemático del siglo XIX Jacques Philippe Marie Binet descubrió la "Fórmula de Binet", que encuentra el término general de la sucesión de Fibonacci usando la Proporción Áurea:
+Además, el matemático del siglo XIX Jacques Philippe Marie Binet descubrió la "Fórmula de Binet", que encuentra el término general de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) usando la Proporción Áurea:
 
 $$
 F_n = \frac{\phi^n - (1-\phi)^n}{\sqrt{5}}
 $$
 
-### Los Números de Fibonacci en la Naturaleza
+### Los Números de [Fibonacci](https://kenji.blog/es/p/fibonacci/) en la Naturaleza
 
-La sucesión de Fibonacci y la Proporción Áurea no son un mero juego matemático. Sorprendentemente, esta secuencia está oculta en todas partes en el mundo natural.
+La sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) y la Proporción Áurea no son un mero juego matemático. Sorprendentemente, esta secuencia está oculta en todas partes en el mundo natural.
 
-1. **Número de Pétalos**: El recuento de pétalos de muchas flores es un número de Fibonacci (ej., los lirios tienen 3, los ranúnculos 5, las espuelas de caballero 8, las caléndulas 13, los girasoles 21, 34, 55, etc.).
-2. **Filotaxis (Disposición de las Hojas)**: El patrón de disposición de las hojas que crecen en el tallo de una planta evolucionó para que las hojas superiores e inferiores no se superpongan y bloqueen la luz solar. Este ángulo se convierte en el "Ángulo Áureo" (alrededor de 137.5 grados), resultando en la aparición de números de Fibonacci.
-3. **Piñas y Piñas Tropicales**: Al contar el número de espirales en la superficie, las espirales en sentido horario y antihorario forman números de Fibonacci adyacentes, como 8 y 13, o 13 y 21.
+1. **Número de Pétalos**: El recuento de pétalos de muchas flores es un número de [Fibonacci](https://kenji.blog/es/p/fibonacci/) (ej., los lirios tienen 3, los ranúnculos 5, las espuelas de caballero 8, las caléndulas 13, los girasoles 21, 34, 55, etc.).
+2. **Filotaxis (Disposición de las Hojas)**: El patrón de disposición de las hojas que crecen en el tallo de una planta evolucionó para que las hojas superiores e inferiores no se superpongan y bloqueen la luz solar. Este ángulo se convierte en el "Ángulo Áureo" (alrededor de 137.5 grados), resultando en la aparición de números de [Fibonacci](https://kenji.blog/es/p/fibonacci/).
+3. **Piñas y Piñas Tropicales**: Al contar el número de espirales en la superficie, las espirales en sentido horario y antihorario forman números de [Fibonacci](https://kenji.blog/es/p/fibonacci/) adyacentes, como 8 y 13, o 13 y 21.
 4. **Conchas de Nautilus**: La "espiral logarítmica (espiral áurea)" dibujada basándose en la proporción áurea coincide perfectamente con el patrón de crecimiento de las conchas de caracol.
 
 ```mermaid
@@ -144,7 +144,7 @@ stateDiagram-v2
 
 ## Otros Logros Matemáticos
 
-Los logros de Fibonacci no se limitaron al "Liber Abaci". Su fama llegó a oídos del Emperador del Sacro Imperio Romano Germánico, Federico II, quien lo invitó a su corte para abordar numerosos desafíos matemáticos.
+Los logros de [Fibonacci](https://kenji.blog/es/p/fibonacci/) no se limitaron al "Liber Abaci". Su fama llegó a oídos del Emperador del Sacro Imperio Romano Germánico, Federico II, quien lo invitó a su corte para abordar numerosos desafíos matemáticos.
 
 ### "Liber Quadratorum" (El Libro de los Cuadrados)
 
@@ -154,20 +154,20 @@ Escrito en 1225, este libro es un tratado avanzado sobre ecuaciones diofánticas
 
 Escrito en 1220, este libro detalla la topografía y la geometría. Proporcionó métodos rigurosos para calcular áreas y volúmenes, y aplicaciones prácticas de los principios de la geometría euclidiana griega antigua, convirtiéndolo en un recurso valioso para los ingenieros y topógrafos de la época.
 
-## La Sociedad Moderna y el Legado de Fibonacci
+## La Sociedad Moderna y el Legado de [Fibonacci](https://kenji.blog/es/p/fibonacci/)
 
-Los descubrimientos de Fibonacci, que vivió hace unos 800 años, continúan desempeñando un papel importante en los campos más avanzados de la sociedad moderna.
+Los descubrimientos de [Fibonacci](https://kenji.blog/es/p/fibonacci/), que vivió hace unos 800 años, continúan desempeñando un papel importante en los campos más avanzados de la sociedad moderna.
 
 ### Aplicaciones en Ciencias de la Computación
 
-En los algoritmos informáticos, la sucesión de Fibonacci es muy útil. El algoritmo llamado "búsqueda de Fibonacci" puede buscar datos de manera más eficiente que la búsqueda binaria bajo condiciones específicas. Además, una estructura de datos conocida como "montículo de Fibonacci" es indispensable para acelerar algoritmos de la teoría de grafos como el algoritmo de Dijkstra.
+En los algoritmos informáticos, la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) es muy útil. El algoritmo llamado "búsqueda de [Fibonacci](https://kenji.blog/es/p/fibonacci/)" puede buscar datos de manera más eficiente que la búsqueda binaria bajo condiciones específicas. Además, una estructura de datos conocida como "montículo de [Fibonacci](https://kenji.blog/es/p/fibonacci/)" es indispensable para acelerar algoritmos de la teoría de grafos como el algoritmo de Dijkstra.
 
-### Retroceso de Fibonacci en los Mercados Financieros
+### Retroceso de [Fibonacci](https://kenji.blog/es/p/fibonacci/) en los Mercados Financieros
 
-Sorprendentemente, su nombre también se escucha con frecuencia en el mundo de las finanzas. Un método de análisis técnico llamado "retroceso de Fibonacci" se utiliza para predecir los puntos donde los precios de las acciones o los tipos de cambio rebotarán o retrocederán en los gráficos. Los operadores dibujan líneas de soporte y resistencia basadas en proporciones de Fibonacci como 23.6%, 38.2% y 61.8% (como el recíproco de la proporción áurea). La idea de que las mismas leyes de la naturaleza se aplican a las olas del mercado creadas por la psicología de grupo humana es profundamente fascinante.
+Sorprendentemente, su nombre también se escucha con frecuencia en el mundo de las finanzas. Un método de análisis técnico llamado "retroceso de [Fibonacci](https://kenji.blog/es/p/fibonacci/)" se utiliza para predecir los puntos donde los precios de las acciones o los tipos de cambio rebotarán o retrocederán en los gráficos. Los operadores dibujan líneas de soporte y resistencia basadas en proporciones de [Fibonacci](https://kenji.blog/es/p/fibonacci/) como 23.6%, 38.2% y 61.8% (como el recíproco de la proporción áurea). La idea de que las mismas leyes de la naturaleza se aplican a las olas del mercado creadas por la psicología de grupo humana es profundamente fascinante.
 
 ## Conclusión
 
 [Leonardo Fibonacci](https://kenji.blog/es/p/fibonacci/) tendió un puente entre el conocimiento del mundo islámico y Europa, trayendo la luz de las matemáticas al mundo occidental. Sin los números arábigos que popularizó a través del "Liber Abaci", la posterior Revolución Científica y la sociedad digital moderna podrían no haber existido.
 
-Además, la sucesión nacida del lúdico "Problema de los Conejos" encarna la belleza de las matemáticas puras y continúa cautivándonos hoy como una ley universal que se extiende desde el crecimiento de las plantas hasta las espirales galácticas e incluso la actividad económica humana. El legado de Fibonacci nos enseña a través del tiempo que las matemáticas no son solo una técnica de cálculo, sino un "lenguaje común" para desbloquear las verdades del universo.
+Además, la sucesión nacida del lúdico "Problema de los Conejos" encarna la belleza de las matemáticas puras y continúa cautivándonos hoy como una ley universal que se extiende desde el crecimiento de las plantas hasta las espirales galácticas e incluso la actividad económica humana. El legado de [Fibonacci](https://kenji.blog/es/p/fibonacci/) nos enseña a través del tiempo que las matemáticas no son solo una técnica de cálculo, sino un "lenguaje común" para desbloquear las verdades del universo.

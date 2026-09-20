@@ -22,7 +22,7 @@ On a plane, let a ray OB rotate around a fixed point O at a uniform speed. Assum
 - Conchoid of Nicomedes
 - Cissoid of Diocles
 - Fermat's tangent method
-- Descartes' normal method
+- [Descartes](https://kenji.blog/en/p/descartes/)' normal method
 
 ### Timeline
 | Year         | Event                       |

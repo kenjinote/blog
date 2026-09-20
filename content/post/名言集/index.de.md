@@ -113,7 +113,7 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 
 > In der Geometrie gibt es keinen Königsweg. ([Euklid](https://kenji.blog/de/p/euclid/))
 
-> Gebt mir einen festen Punkt, und ich werde die Erde aus den Angeln heben. (Archimedes)
+> Gebt mir einen festen Punkt, und ich werde die Erde aus den Angeln heben. ([Archimedes](https://kenji.blog/de/p/archimedes/))
 
 ## IT & Informatik
 

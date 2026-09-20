@@ -34,7 +34,7 @@ Pernyataan dugaannya adalah sebagai berikut:
 
 > Sebuah kurva aljabar pada lapangan bilangan aljabar $K$ dari genus $g \ge 2$ hanya memiliki sejumlah titik rasional yang berhingga pada $K$.
 
-Dugaan ini sangat berkaitan dengan teorema Pythagoras dan [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/), dan itu adalah masalah yang tangguh yang telah ditantang oleh banyak ahli matematika jenius dan gagal selama bertahun-tahun.
+Dugaan ini sangat berkaitan dengan teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) dan [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/), dan itu adalah masalah yang tangguh yang telah ditantang oleh banyak ahli matematika jenius dan gagal selama bertahun-tahun.
 
 Faltings menyerang masalah ini dengan memanipulasi secara terampil mesin besar geometri aljabar yang dibangun oleh [Alexander Grothendieck](https://kenji.blog/id/p/grothendieck/), seperti teori skema dan kohomologi etale, dan dengan memperkenalkan lebih lanjut kerangka kerja baru yang disebut geometri Arakelov.
 

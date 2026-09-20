@@ -15,7 +15,7 @@ tags:
 
 Di dunia matematika, terdapat konsep-konsep yang bertindak seperti "jembatan ajaib", menghubungkan bidang-bidang yang tampaknya tidak berkaitan. Salah satunya adalah **[Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/)** (Generating Function). Dengan mengubah "barisan" diskrit menjadi "fungsi" kontinu, masalah kombinatorik yang kompleks dapat disederhanakan menjadi perhitungan aljabar.
 
-Artikel ini dimulai dengan ide dasar fungsi pembangkit, dan menjelaskan secara rinci kehebatannya yang luar biasa—dari menghitung kombinasi pembayaran koin hingga menurunkan suku umum dari barisan Fibonacci. Selain itu, kita juga akan menyinggung penerapannya pada Deret Pangkat Formal (Formal Power Series/FPS) dalam algoritma dan pemrograman kompetitif.
+Artikel ini dimulai dengan ide dasar fungsi pembangkit, dan menjelaskan secara rinci kehebatannya yang luar biasa—dari menghitung kombinasi pembayaran koin hingga menurunkan suku umum dari barisan [Fibonacci](https://kenji.blog/id/p/fibonacci/). Selain itu, kita juga akan menyinggung penerapannya pada Deret Pangkat Formal (Formal Power Series/FPS) dalam algoritma dan pemrograman kompetitif.
 
 ## 1. Apa itu [Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/)?
 
@@ -75,9 +75,9 @@ $$
 
 Koefisien dari $x^n$ saat dijabarkan adalah $\sum_{k=0}^{n} a_k b_{n-k}$. Ini disebut **Konvolusi** (Convolution). Dalam contoh koin, penambahan kombinasi seperti "buat $k$ yen dengan koin 1 yen dan $n-k$ yen dengan koin 2 yen" secara otomatis dihitung oleh perkalian fungsi-fungsi ini.
 
-## 3. Penerapan pada Barisan Fibonacci
+## 3. Penerapan pada Barisan [Fibonacci](https://kenji.blog/id/p/fibonacci/)
 
-Selanjutnya, sebagai penerapan yang lebih tingkat lanjut, mari kita cari suku umum dari barisan Fibonacci. Barisan Fibonacci $F_n$ didefinisikan sebagai berikut:
+Selanjutnya, sebagai penerapan yang lebih tingkat lanjut, mari kita cari suku umum dari barisan [Fibonacci](https://kenji.blog/id/p/fibonacci/). Barisan [Fibonacci](https://kenji.blog/id/p/fibonacci/) $F_n$ didefinisikan sebagai berikut:
 
 *   $F_0 = 0$
 *   $F_1 = 1$
@@ -100,13 +100,13 @@ $$
 F(x) = x + x F(x) + x^2 F(x)
 $$
 
-Menyelesaikan persamaan ini untuk $F(x)$ memberikan fungsi pembangkit untuk barisan Fibonacci.
+Menyelesaikan persamaan ini untuk $F(x)$ memberikan fungsi pembangkit untuk barisan [Fibonacci](https://kenji.blog/id/p/fibonacci/).
 
 $$
 F(x) = \frac{x}{1 - x - x^2}
 $$
 
-Hebatnya, informasi dari barisan Fibonacci yang terus berlanjut tanpa henti telah diringkas menjadi sebuah fungsi pecahan sederhana.
+Hebatnya, informasi dari barisan [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang terus berlanjut tanpa henti telah diringkas menjadi sebuah fungsi pecahan sederhana.
 
 ### Dekomposisi Pecahan Parsial dan Suku Umum
 

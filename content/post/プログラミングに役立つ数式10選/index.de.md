@@ -339,7 +339,7 @@ $$ d = R \cdot c $$
 (Hier sind $\phi$ der Breitengrad, $\lambda$ der Längengrad und $R$ der Erdradius)
 
 ### Anwendung in der Programmierung
-Es ist eine essenzielle Formel zur Berechnung der Entfernung zwischen zwei Breiten- und Längengradkoordinaten in GPS-Tracking-Apps und ortsbasierten Diensten wie Uber oder Pokémon GO. Bei der Berechnung linearer Entfernungen mit dem Satz des Pythagoras kann die Krümmung der Erde nicht berücksichtigt werden, was bei großen Entfernungen zu erheblichen Fehlern führt.
+Es ist eine essenzielle Formel zur Berechnung der Entfernung zwischen zwei Breiten- und Längengradkoordinaten in GPS-Tracking-Apps und ortsbasierten Diensten wie Uber oder Pokémon GO. Bei der Berechnung linearer Entfernungen mit dem Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) kann die Krümmung der Erde nicht berücksichtigt werden, was bei großen Entfernungen zu erheblichen Fehlern führt.
 
 ### Implementierungsbeispiel (Python)
 Eine Funktion, die zwei Koordinaten (Breiten- und Längengrad) entgegennimmt und ihre Entfernung in Kilometern zurückgibt.
@@ -559,10 +559,10 @@ Die Verzweigung des obigen Codes mit `x >= 0` und anderen Werten dient dazu, "Ü
 
 ---
 
-## 10. [Euklid](https://kenji.blog/de/p/euclid/)ischer Abstand und Satz des Pythagoras ([[Euclid](https://kenji.blog/de/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [Euklid](https://kenji.blog/de/p/euclid/)ischer Abstand und Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) ([[Euclid](https://kenji.blog/de/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Schönheit der Formel und Übersicht
-Es ist die Grundlage der aus dem antiken Griechenland überlieferten Geometrie und die Formel, die den geradlinigen Abstand zwischen zwei Punkten in einem $n$-dimensionalen Raum definiert. Im zweidimensionalen Raum ist es der Satz des Pythagoras ($a^2 + b^2 = c^2$) selbst.
+Es ist die Grundlage der aus dem antiken Griechenland überlieferten Geometrie und die Formel, die den geradlinigen Abstand zwischen zwei Punkten in einem $n$-dimensionalen Raum definiert. Im zweidimensionalen Raum ist es der Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) ($a^2 + b^2 = c^2$) selbst.
 
 Der euklidische Abstand $d$ zwischen den Punkten $P(x_1, y_1, z_1)$ und $Q(x_2, y_2, z_2)$ in einem 3D-Raum wird wie folgt ausgedrückt:
 
@@ -619,7 +619,7 @@ Wenn man streng nach der mathematischen Formel berechnet, muss man am Ende die Q
 
 ## Fazit
 
-Wie war das? Von der Eulerschen Identität bis zum Satz des Pythagoras sind diese 10 Formeln nicht bloß theoretische Konzepte in einem Lehrbuch. Hinter dem Code, den wir täglich schreiben, pulsieren sie als das "Herz", das Daten komprimiert, maschinelle Lernmodelle Vorhersagen treffen lässt, weiche Animationen rendert und blitzschnelle Suchen ermöglicht.
+Wie war das? Von der Eulerschen Identität bis zum Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) sind diese 10 Formeln nicht bloß theoretische Konzepte in einem Lehrbuch. Hinter dem Code, den wir täglich schreiben, pulsieren sie als das "Herz", das Daten komprimiert, maschinelle Lernmodelle Vorhersagen treffen lässt, weiche Animationen rendert und blitzschnelle Suchen ermöglicht.
 
 Das Verständnis des mathematischen Hintergrunds ist essenziell für den Aufstieg von einem Programmierer, der nur existierende Bibliotheken (wie `math.sin` oder `numpy.fft`) aufruft, zu einem Ingenieur, der deren interne Strukturen begreift und ihre Grenzen ausreizen kann. Wenn Sie das nächste Mal Code schreiben, versuchen Sie sich vorzustellen, welch schöne mathematische Formel im Hintergrund am Werk ist.
 

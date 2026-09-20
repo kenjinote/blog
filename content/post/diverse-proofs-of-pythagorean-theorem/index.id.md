@@ -16,7 +16,7 @@ tags:
 
 ## Pengantar
 
-Salah satu teorema paling terkenal dalam matematika, dan yang memiliki jumlah bukti terbanyak, adalah **Teorema Pythagoras**. Teorema ini, yang menjelaskan hubungan antara ketiga sisi segitiga siku-siku, dinamai dari filsuf Yunani kuno Pythagoras, meskipun hal ini telah dikenal di Babilonia, Tiongkok, dan tempat lain jauh sebelum masanya.
+Salah satu teorema paling terkenal dalam matematika, dan yang memiliki jumlah bukti terbanyak, adalah **Teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/)**. Teorema ini, yang menjelaskan hubungan antara ketiga sisi segitiga siku-siku, dinamai dari filsuf Yunani kuno [Pythagoras](https://kenji.blog/id/p/pythagoras/), meskipun hal ini telah dikenal di Babilonia, Tiongkok, dan tempat lain jauh sebelum masanya.
 
 Pernyataan dari teorema ini sangat sederhana. Ketika panjang sisi miring dari sebuah segitiga siku-siku adalah $c$, dan panjang dari dua sisi lainnya adalah $a$ dan $b$, hubungan berikut ini berlaku:
 
@@ -118,7 +118,7 @@ Mengalikan kedua ruas dengan 2 dan menjabarkannya akan menghasilkan:
 
 $$ a^2 + 2ab + b^2 = 2ab + c^2 $$
 
-Mengurangkan $2ab$ dari kedua ruas secara brilian akan menurunkan **Teorema Pythagoras**:
+Mengurangkan $2ab$ dari kedua ruas secara brilian akan menurunkan **Teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/)**:
 
 $$ a^2 + b^2 = c^2 $$
 
@@ -128,7 +128,7 @@ Bukti Garfield, yang diciptakan oleh seseorang yang merupakan seorang politikus 
 
 ## 4. Bukti Albert Einstein melalui Analisis Dimensional
 
-Albert Einstein, fisikawan terbesar di abad ke-20, juga dikatakan telah membuktikan teorema Pythagoras dengan caranya sendiri semasa kecil. Pendekatannya menggunakan konsep **analisis dimensional**, sebuah metode yang sangat intuitif khas dari seorang fisikawan.
+Albert Einstein, fisikawan terbesar di abad ke-20, juga dikatakan telah membuktikan teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) dengan caranya sendiri semasa kecil. Pendekatannya menggunakan konsep **analisis dimensional**, sebuah metode yang sangat intuitif khas dari seorang fisikawan.
 
 ### Ide Analisis Dimensional
 
@@ -163,6 +163,6 @@ Bukti ini tidak diturunkan dengan bermain-main menggunakan rumus, tetapi dari se
 
 ## Kesimpulan
 
-Teorema Pythagoras bukan sekadar rumus matematika yang harus dihafal. Ini adalah sebuah contoh yang luar biasa dari esensi matematika, yang dapat didekati dari **berbagai perspektif**, termasuk teka-teki geometris, manipulasi persamaan aljabar, dan bahkan konsep fisik tentang dimensi.
+Teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) bukan sekadar rumus matematika yang harus dihafal. Ini adalah sebuah contoh yang luar biasa dari esensi matematika, yang dapat didekati dari **berbagai perspektif**, termasuk teka-teki geometris, manipulasi persamaan aljabar, dan bahkan konsep fisik tentang dimensi.
 
 Selain keempat bukti yang diperkenalkan di sini, ada banyak sekali pendekatan lain di seluruh dunia, seperti bukti oleh Leonardo da Vinci dan bukti-bukti yang menggunakan origami. Tentu saja, cobalah untuk mengeksplorasi metode-metode pembuktian baru dengan kemampuan Anda sendiri. Dunia matematika selalu penuh dengan penemuan-penemuan baru.

@@ -109,7 +109,7 @@ valoramos más los de la izquierda.
 - Liderazgo de servicio
 - Modelo de Tuckman (Formación, Conflicto, Normalización, Desempeño, Disolución)
 - Acta constitutiva del equipo
-- Planning Poker (Sucesión de Fibonacci)
+- Planning Poker (Sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/))
 - Retrospectiva (Actividad de revisión)
 - Equipo virtual
 - Acta constitutiva del proyecto

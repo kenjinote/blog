@@ -101,7 +101,7 @@ Darüber hinaus schlug er auf dem Gebiet der Physik (Optik) das **Fermatsche Pri
 
 Trotz so zahlreicher großer Errungenschaften, die er hinterließ, ist das, was Fermat unbestreitbar zum berühmtesten Mathematiker der Geschichte macht, die Existenz des **„Fermatschen letzten Satzes“**.
 
-Am Rande einer Passage bezüglich des Satzes des Pythagoras ( $x^2 + y^2 = z^2$ ) in Band 2 seines Lieblingsbuches, der *Arithmetica* des Diophantos, verfasste Fermat die folgende erstaunliche Notiz auf Latein:
+Am Rande einer Passage bezüglich des Satzes des [Pythagoras](https://kenji.blog/de/p/pythagoras/) ( $x^2 + y^2 = z^2$ ) in Band 2 seines Lieblingsbuches, der *Arithmetica* des Diophantos, verfasste Fermat die folgende erstaunliche Notiz auf Latein:
 
 > "Cubum autem in duos cubos, aut quadratoquadratum in duos quadratoquadratos, et generaliter nullam in infinitum ultra quadratum potestatem in duas eiusdem nominis fas est dividere cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet."
 > 

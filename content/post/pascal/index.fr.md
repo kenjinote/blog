@@ -23,7 +23,7 @@ Sa vie fut une bataille constante contre la maladie, et il est décédé à l'â
 ### 2.2. Déménagement à Paris et politique éducative d'Étienne
 En 1631, pour offrir à ses enfants la meilleure éducation possible, Étienne déménagea avec sa famille à Paris. Insatisfait de l'enseignement scolaire de l'époque, Étienne choisit de devenir lui-même le précepteur de ses enfants. Sa politique éducative était très singulière : « Ne pas enseigner les mathématiques, qui sont une matière trop abstraite, avant que la raison de l'enfant ne soit suffisamment développée. » Il privilégia les langues et l'histoire, et élimina tous les livres de mathématiques de la maison.
 
-Cependant, cette « interdiction » a paradoxalement stimulé intensément la curiosité du jeune Blaise. À l'âge de 12 ans, Blaise commença à explorer la géométrie par lui-même pendant ses jeux. Dessinant des figures sur le sol avec du charbon, il prouva indépendamment la 32ème proposition des *Éléments* d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) : « La somme des angles intérieurs d'un triangle est égale à deux angles droits (180 degrés). » Témoin de cet aperçu écrasant de talent, son père changea de politique, lui permit d'étudier les mathématiques et commença à l'emmener aux réunions des plus grands intellectuels d'Europe organisées par le père Mersenne (le prédécesseur de l'Académie des sciences française).
+Cependant, cette « interdiction » a paradoxalement stimulé intensément la curiosité du jeune Blaise. À l'âge de 12 ans, Blaise commença à explorer la géométrie par lui-même pendant ses jeux. Dessinant des figures sur le sol avec du charbon, il prouva indépendamment la 32ème proposition des *Éléments* d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) : « La somme des angles intérieurs d'un triangle est égale à deux angles droits (180 degrés). » Témoin de cet aperçu écrasant de talent, son père changea de politique, lui permit d'étudier les mathématiques et commença à l'emmener aux réunions des plus grands intellectuels d'Europe organisées par le père [Mersenne](https://kenji.blog/fr/p/mersenne/) (le prédécesseur de l'Académie des sciences française).
 
 ## 3. Réalisations innovantes en mathématiques
 
@@ -31,7 +31,7 @@ Le talent mathématique de Pascal s'est épanoui très tôt au cours de son adol
 
 ### 3.1. Pionnier de la géométrie projective : Le théorème de Pascal (Hexagramme mystique)
 
-En 1639, Pascal, alors âgé de 16 ans, découvre les travaux de géométrie projective de Girard Desargues à l'Académie de Mersenne. Comprenant profondément les idées de Desargues, Pascal découvrit un théorème révolutionnaire concernant les coniques et le publia sur une simple feuille de papier (essai). Ceci est connu aujourd'hui sous le nom de **théorème de Pascal**.
+En 1639, Pascal, alors âgé de 16 ans, découvre les travaux de géométrie projective de Girard Desargues à l'Académie de [Mersenne](https://kenji.blog/fr/p/mersenne/). Comprenant profondément les idées de Desargues, Pascal découvrit un théorème révolutionnaire concernant les coniques et le publia sur une simple feuille de papier (essai). Ceci est connu aujourd'hui sous le nom de **théorème de Pascal**.
 
 Le théorème de Pascal s'applique à tout hexagone inscrit dans une conique (ellipse, parabole, hyperbole et cercle).
 

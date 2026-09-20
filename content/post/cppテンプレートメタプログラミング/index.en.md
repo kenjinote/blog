@@ -72,9 +72,9 @@ int main() {
 
 What's important here is that `Factorial<5>::value` is not calculated at runtime, but expanded at compile time. The final binary will generate code equivalent to `std::cout << "5! = " << 120 << std::endl;`. As a result, the runtime overhead becomes zero.
 
-### 2.2 Fibonacci Sequence and Time Complexity
+### 2.2 [Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence and Time Complexity
 
-Next, let's calculate the Fibonacci sequence. The recurrence relation is as follows:
+Next, let's calculate the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence. The recurrence relation is as follows:
 
 $$
 F_n = F_{n-1} + F_{n-2} \quad (F_0 = 0, F_1 = 1)

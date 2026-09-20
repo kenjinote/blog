@@ -109,9 +109,9 @@ Dinyatakan sebagai rumus, yaitu:
 
 $$ \text{Jumlah langkah} \le 5 \times \text{Jumlah digit dari bilangan yang lebih kecil} $$
 
-### 4.2 Hubungan Mendalam dengan Deret Fibonacci
+### 4.2 Hubungan Mendalam dengan Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)
 
-Dalam proses pembuktian teorema ini, Lamé menemukan bahwa skenario terburuk (berarti yang mengambil langkah paling banyak) untuk algoritma [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/) terjadi ketika inputnya adalah dua **bilangan Fibonacci** yang berurutan. Dengan memanfaatkan tingkat pertumbuhan deret Fibonacci dan sifat-sifat rasio emas, ia memperoleh batas atas yang indah ini. Karena pencapaian ini, Lamé dianggap sebagai salah satu "bapak teori kompleksitas" dalam ilmu komputer modern.
+Dalam proses pembuktian teorema ini, Lamé menemukan bahwa skenario terburuk (berarti yang mengambil langkah paling banyak) untuk algoritma [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/) terjadi ketika inputnya adalah dua **bilangan [Fibonacci](https://kenji.blog/id/p/fibonacci/)** yang berurutan. Dengan memanfaatkan tingkat pertumbuhan deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) dan sifat-sifat rasio emas, ia memperoleh batas atas yang indah ini. Karena pencapaian ini, Lamé dianggap sebagai salah satu "bapak teori kompleksitas" dalam ilmu komputer modern.
 
 ## 5. Kontribusi pada Fisika: Teori Elastisitas dan Parameter Lamé
 

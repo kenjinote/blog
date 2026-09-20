@@ -91,7 +91,7 @@ flowchart TD
   H --> I["Verificar Permissões NTFS / Níveis de Integridade / UAC"]
 ```
 
-**Uso do Filtro de Descartes (Drop Filter):**
+**Uso do Filtro de [Descartes](https://kenji.blog/pt/p/descartes/) (Drop Filter):**
 Ao habilitar `Filter` -> `Drop Filtered Events`, os eventos filtrados não serão salvos na memória ou no disco. Isso evita que o ProcMon trave por falta de memória (OOM) mesmo ao realizar rastreamentos longos (por exemplo, monitorando problemas intermitentes).
 
 ### 3.2 Cenário Prático: Depuração de Falha no Carregamento de DLL (Side-Loading / Missing DLL)

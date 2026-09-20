@@ -72,9 +72,9 @@ int main() {
 
 Yang penting di sini adalah `Factorial<5>::value` tidak dihitung pada saat eksekusi (runtime), melainkan diekspansi saat kompilasi, dan pada biner akhirnya akan dihasilkan kode yang ekuivalen dengan `std::cout << "5! = " << 120 << std::endl;`. Dengan ini, overhead pada saat eksekusi menjadi nol.
 
-### 2.2 Deret Fibonacci dan Kompleksitas Waktu
+### 2.2 Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) dan Kompleksitas Waktu
 
-Selanjutnya, mari kita hitung deret Fibonacci. Persamaan rekurensinya adalah sebagai berikut:
+Selanjutnya, mari kita hitung deret [Fibonacci](https://kenji.blog/id/p/fibonacci/). Persamaan rekurensinya adalah sebagai berikut:
 
 $$
 F_n = F_{n-1} + F_{n-2} \quad (F_0 = 0, F_1 = 1)

@@ -16,7 +16,7 @@ tags:
 
 Dalam dunia matematika, "permutasi" dan "kombinasi"—metode untuk menghitung jumlah kemungkinan hasil secara logis—adalah konsep dasar yang krusial di berbagai bidang, mulai dari probabilitas dan statistik hingga algoritma ilmu komputer. Memperluas konsep dasar ini ke ranah aljabar membawa kita pada "Teorema Binomial", dan merepresentasikan urutan koefisiennya secara visual dan geometris menghasilkan "Segitiga Pascal". Sepintas, topik-topik matematika ini mungkin tampak independen, namun saat Anda mempelajarinya lebih dalam, Anda menyadari bahwa topik-topik tersebut saling terkait secara menakjubkan, membentuk struktur matematika yang tunggal, masif, dan indah.
 
-Dalam artikel ini, kita akan mulai dengan pemahaman intuitif dan metode perhitungan dasar untuk permutasi dan kombinasi, dan kemudian menjelaskan secara rinci konsep-konsep yang lebih kompleks seperti permutasi dengan pengulangan, permutasi melingkar (siklis), dan kombinasi dengan pengulangan. Dari situ, kita akan menurunkan rumus Teorema Binomial dan simetrinya yang indah, dan pada akhirnya mendalami tema-tema mendalam secara menyeluruh seperti sifat-sifat misterius yang tersembunyi di Segitiga Pascal, hubungannya dengan deret Fibonacci yang mendeskripsikan hukum alam, dan struktur fraktal. Mari kita memulai perjalanan untuk sepenuhnya mengapresiasi "keindahan" dan "keteraturan" matematika.
+Dalam artikel ini, kita akan mulai dengan pemahaman intuitif dan metode perhitungan dasar untuk permutasi dan kombinasi, dan kemudian menjelaskan secara rinci konsep-konsep yang lebih kompleks seperti permutasi dengan pengulangan, permutasi melingkar (siklis), dan kombinasi dengan pengulangan. Dari situ, kita akan menurunkan rumus Teorema Binomial dan simetrinya yang indah, dan pada akhirnya mendalami tema-tema mendalam secara menyeluruh seperti sifat-sifat misterius yang tersembunyi di Segitiga Pascal, hubungannya dengan deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang mendeskripsikan hukum alam, dan struktur fraktal. Mari kita memulai perjalanan untuk sepenuhnya mengapresiasi "keindahan" dan "keteraturan" matematika.
 
 # Apa itu Permutasi?
 
@@ -262,10 +262,10 @@ Jika Anda menjumlahkan secara horizontal semua angka dalam baris ke-$n$ tertentu
 
 Hal ini dapat dengan mudah dibuktikan secara aljabar dari persamaan $(1+1)^n = \sum \binom{n}{k}$, yang diperoleh dengan menyubstitusikan $x=1, y=1$ ke dalam Teorema Binomial $(x+y)^n = \sum \binom{n}{k} x^{n-k} y^k$. Dari perspektif teori himpunan, ini mengindikasikan bahwa "jumlah dari semua himpunan bagian" dari himpunan dengan $n$ elemen adalah $2^n$.
 
-### 3. Koneksi Tersembunyi dengan Deret Fibonacci
+### 3. Koneksi Tersembunyi dengan Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)
 
 Cobalah menjumlahkan angka-angka Segitiga Pascal di sepanjang "garis diagonal landai." Secara mencengangkan, deret $1, 1, 2, 3, 5, 8, 13, 21, \dots$ muncul.
-Ini tidak lain adalah **Deret Fibonacci**, di mana Anda menjumlahkan dua angka sebelumnya untuk membuat angka berikutnya. Deret mistik yang muncul di mana-mana di alam, seperti susunan biji bunga matahari dan spiral cangkang nautilus, tertanam dalam-dalam di dalam sebuah segitiga yang hanya menyusun kombinasi. Ini adalah contoh yang sangat indah dan mengharukan yang menunjukkan bagaimana matematika, sebagai produk dari pemikiran logis manusia, terikat dengan ketetapan alam.
+Ini tidak lain adalah **Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)**, di mana Anda menjumlahkan dua angka sebelumnya untuk membuat angka berikutnya. Deret mistik yang muncul di mana-mana di alam, seperti susunan biji bunga matahari dan spiral cangkang nautilus, tertanam dalam-dalam di dalam sebuah segitiga yang hanya menyusun kombinasi. Ini adalah contoh yang sangat indah dan mengharukan yang menunjukkan bagaimana matematika, sebagai produk dari pemikiran logis manusia, terikat dengan ketetapan alam.
 
 ### 4. Geometri Fraktal: Segitiga Sierpinski
 
@@ -303,6 +303,6 @@ Mulai dari menghitung probabilitas pelemparan koin hingga memprediksi probabilit
 
 Dalam artikel ini, kita telah melakukan perjalanan melintasi lanskap matematika yang luas, mulai dari permutasi dan kombinasi, yang merupakan aturan "berhitung" sederhana, hingga aplikasinya dalam permutasi dengan pengulangan dan permutasi melingkar, meluas lebih jauh ke Teorema Binomial aljabar, dan mencapai penjelajahan visual atas Segitiga Pascal.
 
-Dengan mengabstraksi dan menggali tindakan yang sangat sederhana dan primitif dalam "memilih beberapa item dari yang lain yang berbeda" menggunakan bahasa matematika yang ketat, menjadi jelas bahwa dunia matematika yang sangat kaya dan indah memanjang ke luar—melibatkan simetri sempurna, aturan pangkat 2, deret Fibonacci yang menggambarkan dunia alam, dan struktur fraktal yang tak terhingga.
+Dengan mengabstraksi dan menggali tindakan yang sangat sederhana dan primitif dalam "memilih beberapa item dari yang lain yang berbeda" menggunakan bahasa matematika yang ketat, menjadi jelas bahwa dunia matematika yang sangat kaya dan indah memanjang ke luar—melibatkan simetri sempurna, aturan pangkat 2, deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang menggambarkan dunia alam, dan struktur fraktal yang tak terhingga.
 
 Rumus dan teorema matematika bukan semata-mata alat anorganik untuk memecahkan soal ujian. Mereka adalah karya seni tertinggi umat manusia, mengekspresikan tatanan tak kasat mata di balik dunia yang mengelilingi kita dan hubungan sangat indah yang ditenun oleh angka-angka. Kami berharap dengan bersentuhan dengan keteraturan angka yang indah yang ditunjukkan oleh permutasi, kombinasi, dan Segitiga Pascal ini, Anda telah merasakan pesona sejati dan kedalaman yang dimiliki disiplin matematika.

@@ -11,7 +11,7 @@ tags: ["Algorithm", "DP", "C++", "Python"]
 
 Desde a programação competitiva até o design de algoritmos na prática, a **Programação Dinâmica (Dynamic Programming, conhecida como DP)** aparece em muitas situações e se torna uma barreira para muitos programadores. "Não consigo montar a relação de recorrência", "Os índices dão erro", "Nem sei avaliar se o problema pode ser resolvido com DP"... Muitos de vocês devem ter essas dúvidas.
 
-Neste artigo, cobriremos tudo de forma exaustiva, desde a essência da programação dinâmica, abordagens específicas (top-down e bottom-up), até explicações práticas através de três problemas representativos (Sequência de Fibonacci, Problema da Mochila 0/1, e a Maior Subsequência Comum). Mostraremos exemplos de implementação tanto em C++ quanto em Python e, com o auxílio de fórmulas matemáticas e diagramas, forneceremos o caminho para você "dominá-la completamente". Será um artigo bastante longo, mas, ao terminar de ler até o fim, suas habilidades com algoritmos certamente terão dado um salto.
+Neste artigo, cobriremos tudo de forma exaustiva, desde a essência da programação dinâmica, abordagens específicas (top-down e bottom-up), até explicações práticas através de três problemas representativos (Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/), Problema da Mochila 0/1, e a Maior Subsequência Comum). Mostraremos exemplos de implementação tanto em C++ quanto em Python e, com o auxílio de fórmulas matemáticas e diagramas, forneceremos o caminho para você "dominá-la completamente". Será um artigo bastante longo, mas, ao terminar de ler até o fim, suas habilidades com algoritmos certamente terão dado um salto.
 
 ---
 
@@ -27,7 +27,7 @@ Para que a programação dinâmica seja aplicável, o problema em questão deve 
 
 É a propriedade na qual, durante o processo de resolver um problema maior, **os mesmos subproblemas aparecem repetidamente**.
 
-Por exemplo, no cálculo da sequência de Fibonacci que veremos mais adiante, o cálculo de "encontrar o 3º termo" será necessário tanto para encontrar o 5º termo quanto o 4º termo. Se os subproblemas não se sobrepõem (ex: métodos de divisão e conquista, como o Merge Sort), não há vantagem em registrar as soluções e, portanto, não são alvos para a aplicação da DP. É exatamente porque eles se sobrepõem que registrar o resultado calculado uma vez na memória (memoização ou tabulação) e reutilizá-lo permite uma aceleração drástica.
+Por exemplo, no cálculo da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) que veremos mais adiante, o cálculo de "encontrar o 3º termo" será necessário tanto para encontrar o 5º termo quanto o 4º termo. Se os subproblemas não se sobrepõem (ex: métodos de divisão e conquista, como o Merge Sort), não há vantagem em registrar as soluções e, portanto, não são alvos para a aplicação da DP. É exatamente porque eles se sobrepõem que registrar o resultado calculado uma vez na memória (memoização ou tabulação) e reutilizá-lo permite uma aceleração drástica.
 
 ### 1-2. Subestrutura Ótima (Optimal Substructure)
 
@@ -66,10 +66,10 @@ Na implementação da programação dinâmica, existem principalmente duas abord
 
 ---
 
-## 3. Prática 1: Sequência de Fibonacci
+## 3. Prática 1: Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)
 
-Primeiro, tomaremos a sequência de Fibonacci como o exemplo mais básico e fácil de entender.
-A sequência de Fibonacci é definida da seguinte forma:
+Primeiro, tomaremos a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) como o exemplo mais básico e fácil de entender.
+A sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) é definida da seguinte forma:
 
 $$
 F(0) = 0, \quad F(1) = 1 \\
@@ -292,7 +292,7 @@ int main() {
 
 ### 4-4. Otimização da Complexidade de Espaço (Array 1D)
 
-Ao atualizar o array 2D $dp[i][w]$, nota-se que sempre nos referimos apenas à linha anterior $dp[i-1]$. Este é o mesmo princípio da otimização espacial da sequência de Fibonacci.
+Ao atualizar o array 2D $dp[i][w]$, nota-se que sempre nos referimos apenas à linha anterior $dp[i-1]$. Este é o mesmo princípio da otimização espacial da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/).
 Portanto, podemos comprimir o array para um array 1D $dp[w]$. Contudo, é necessário cuidado durante a atualização. O loop da capacidade $w$ deve ser iterado **do maior para o menor (de trás para frente)**. Se atualizarmos da frente para trás, acabaríamos referenciando o "estado do $i$-ésimo item" recém-atualizado dentro da mesma etapa, em vez do "estado do $(i-1)$-ésimo item", e acabaríamos escolhendo o mesmo item várias vezes (esta se tornaria a solução para o "Problema da Mochila Ilimitada").
 
 **Implementação em Python (Array 1D):**

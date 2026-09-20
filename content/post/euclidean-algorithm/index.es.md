@@ -116,7 +116,7 @@ int main() {
 
 Como resultado, la complejidad temporal del algoritmo es $O(\log(\min(a, b)))$ .
 
-El peor de los casos (donde se maximiza el número de divisiones) ocurre cuando se proporcionan dos números consecutivos de la sucesión de Fibonacci. Por ejemplo, en el proceso de encontrar el MCD de $F_{n+2}$ y $F_{n+1}$ , el cociente es siempre $1$ , transitando continuamente a números de Fibonacci más pequeños.
+El peor de los casos (donde se maximiza el número de divisiones) ocurre cuando se proporcionan dos números consecutivos de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/). Por ejemplo, en el proceso de encontrar el MCD de $F_{n+2}$ y $F_{n+1}$ , el cociente es siempre $1$ , transitando continuamente a números de [Fibonacci](https://kenji.blog/es/p/fibonacci/) más pequeños.
 
 ## Algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) extendido
 

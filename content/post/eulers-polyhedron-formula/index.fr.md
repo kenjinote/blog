@@ -88,18 +88,18 @@ flowchart TD
     H --> I["Preuve terminée : V - E + F = 2"]
 ```
 
-## Le Manuscrit Secret de Descartes : Une Autre Histoire de Découverte
+## Le Manuscrit Secret de [Descartes](https://kenji.blog/fr/p/descartes/) : Une Autre Histoire de Découverte
 
 En fait, environ un siècle avant la publication de ce théorème par Euler, le philosophe et mathématicien français [René Descartes](https://kenji.blog/fr/p/descartes/) avait atteint essentiellement le même résultat.
-Descartes s'était concentré sur le concept de "défaut angulaire" aux sommets d'un polyèdre.
+[Descartes](https://kenji.blog/fr/p/descartes/) s'était concentré sur le concept de "défaut angulaire" aux sommets d'un polyèdre.
 La somme des angles se rejoignant en un seul sommet est de $360^\circ$ sur un plan, mais au sommet d'un solide, elle est toujours inférieure à $360^\circ$. Ce manque par rapport à $360^\circ$ est appelé le "défaut angulaire".
 
-Descartes a découvert un théorème étonnant : "Si vous additionnez les défauts angulaires de tous les sommets, le total sera toujours de $720^\circ$ pour n'importe quel polyèdre."
+[Descartes](https://kenji.blog/fr/p/descartes/) a découvert un théorème étonnant : "Si vous additionnez les défauts angulaires de tous les sommets, le total sera toujours de $720^\circ$ pour n'importe quel polyèdre."
 Exprimé sous forme de formule :
 
 $$ \sum (\text{Défaut angulaire}) = 720^\circ $$
 
-Ce théorème est mathématiquement parfaitement équivalent à la formule d'Euler $V - E + F = 2$. Cependant, Descartes n'a jamais publié cette découverte, la gardant cachée dans un manuscrit crypté. Après sa mort, le manuscrit a été déchiffré par Leibniz mais n'est pas devenu largement connu. Par conséquent, cette grande propriété a été redécouverte par Euler et est passée à la postérité sous le nom de "Formule d'Euler".
+Ce théorème est mathématiquement parfaitement équivalent à la formule d'Euler $V - E + F = 2$. Cependant, [Descartes](https://kenji.blog/fr/p/descartes/) n'a jamais publié cette découverte, la gardant cachée dans un manuscrit crypté. Après sa mort, le manuscrit a été déchiffré par Leibniz mais n'est pas devenu largement connu. Par conséquent, cette grande propriété a été redécouverte par Euler et est passée à la postérité sous le nom de "Formule d'Euler".
 
 ## La Naissance de la Topologie : "Géométrie de la Feuille de Caoutchouc"
 

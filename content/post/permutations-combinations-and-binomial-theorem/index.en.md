@@ -16,7 +16,7 @@ tags:
 
 In the world of mathematics, "permutations" and "combinations"—methods for logically counting the number of possible outcomes—are crucial foundational concepts across a wide range of fields, from probability and statistics to computer science algorithms. Extending these fundamental concepts into the realm of algebra leads us to the "Binomial Theorem," and visually and geometrically representing the sequence of its coefficients produces "Pascal's Triangle." At first glance, these may seem like independent mathematical topics, but as you study them deeply, you realize that they are astonishingly intertwined, forming a single, massive, and beautiful mathematical structure.
 
-In this article, we will start with an intuitive understanding and the basic calculation methods for permutations and combinations, and then explain in detail more complex concepts like permutations with repetition, circular permutations, and combinations with repetition. From there, we will derive the formula of the Binomial Theorem and its beautiful symmetry, and ultimately delve thoroughly into profound themes such as the mysterious properties hidden in Pascal's Triangle, its connection to the Fibonacci sequence describing the laws of nature, and fractal structures. Let us embark on a journey to fully appreciate the "beauty" and "regularity" of mathematics.
+In this article, we will start with an intuitive understanding and the basic calculation methods for permutations and combinations, and then explain in detail more complex concepts like permutations with repetition, circular permutations, and combinations with repetition. From there, we will derive the formula of the Binomial Theorem and its beautiful symmetry, and ultimately delve thoroughly into profound themes such as the mysterious properties hidden in Pascal's Triangle, its connection to the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence describing the laws of nature, and fractal structures. Let us embark on a journey to fully appreciate the "beauty" and "regularity" of mathematics.
 
 # What are Permutations?
 
@@ -262,10 +262,10 @@ If you horizontally add all the numbers in any given $n$-th row, their total wil
 
 This can be easily proven algebraically from the equation $(1+1)^n = \sum \binom{n}{k}$, obtained by substituting $x=1, y=1$ into the Binomial Theorem $(x+y)^n = \sum \binom{n}{k} x^{n-k} y^k$. From a set theory perspective, it indicates that the "number of all subsets" of a set with $n$ elements is $2^n$.
 
-### 3. The Hidden Connection with the Fibonacci Sequence
+### 3. The Hidden Connection with the [Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence
 
 Try adding the numbers of Pascal's Triangle along "shallow diagonal lines." Astonishingly, the sequence $1, 1, 2, 3, 5, 8, 13, 21, \dots$ appears.
-This is none other than the **Fibonacci Sequence**, where you add the previous two numbers to make the next. The mystical sequence that appears everywhere in nature, such as the arrangement of sunflower seeds and the spiral of a nautilus shell, is deeply embedded within a triangle that merely arranges combinations. It is a very beautiful and moving example showing how mathematics, a product of human logical thinking, is tied to the providence of nature.
+This is none other than the **[Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence**, where you add the previous two numbers to make the next. The mystical sequence that appears everywhere in nature, such as the arrangement of sunflower seeds and the spiral of a nautilus shell, is deeply embedded within a triangle that merely arranges combinations. It is a very beautiful and moving example showing how mathematics, a product of human logical thinking, is tied to the providence of nature.
 
 ### 4. Fractal Geometry: Sierpinski Gasket
 
@@ -303,6 +303,6 @@ From calculating coin toss probabilities to predicting the occurrence probabilit
 
 In this article, we have traveled through a vast mathematical landscape, starting from permutations and combinations, which are simple "counting" rules, to their application in permutations with repetition and circular permutations, further expanding into algebra's Binomial Theorem, and reaching the visual exploration of Pascal's Triangle.
 
-By abstracting and delving into the extremely simple and primitive act of "choosing some items from distinct ones" using the rigorous language of mathematics, it has become clear that an unimaginably rich and beautiful mathematical world extends out—involving perfect symmetry, the rule of powers of 2, the Fibonacci sequence describing the natural world, and infinite fractal structures.
+By abstracting and delving into the extremely simple and primitive act of "choosing some items from distinct ones" using the rigorous language of mathematics, it has become clear that an unimaginably rich and beautiful mathematical world extends out—involving perfect symmetry, the rule of powers of 2, the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence describing the natural world, and infinite fractal structures.
 
 Mathematical formulas and theorems are not merely inorganic tools for solving test problems. They are the supreme works of art of humanity, expressing the invisible order behind the world surrounding us and the overwhelmingly beautiful relationships woven by numbers. We hope that by touching upon this beautiful regularity of numbers shown by permutations, combinations, and Pascal's Triangle, you have felt the true charm and profundity possessed by the discipline of mathematics.

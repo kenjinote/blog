@@ -101,7 +101,7 @@ Selain itu, di bidang fisika (optik), ia mengusulkan **Prinsip Fermat**, yang me
 
 Meskipun meninggalkan begitu banyak pencapaian besar, hal yang secara tegas menjadikan Fermat sebagai matematikawan paling terkenal dalam sejarah adalah eksistensi **"[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)"**.
 
-Di margin sebuah bagian mengenai teorema Pythagoras ( $x^2 + y^2 = z^2$ ) pada Volume 2 buku favoritnya, *Arithmetica* karya [Diophantus](https://kenji.blog/id/p/diophantus/), Fermat menulis catatan mencengangkan berikut ini dalam bahasa Latin:
+Di margin sebuah bagian mengenai teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) ( $x^2 + y^2 = z^2$ ) pada Volume 2 buku favoritnya, *Arithmetica* karya [Diophantus](https://kenji.blog/id/p/diophantus/), Fermat menulis catatan mencengangkan berikut ini dalam bahasa Latin:
 
 > "Cubum autem in duos cubos, aut quadratoquadratum in duos quadratoquadratos, et generaliter nullam in infinitum ultra quadratum potestatem in duas eiusdem nominis fas est dividere cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet."
 > 

@@ -59,7 +59,7 @@ graph TD
 
 ## Réalisations majeures en mathématiques : L'algébrisation de la géométrie et le défi de l'infini
 
-Après avoir occupé la chaire savilienne, Wallis a fait progresser ses recherches mathématiques à un rythme fulgurant. Sa plus grande réalisation a été de rompre avec les méthodes géométriques classiques pour faire progresser davantage les méthodes de géométrie analytique de Descartes.
+Après avoir occupé la chaire savilienne, Wallis a fait progresser ses recherches mathématiques à un rythme fulgurant. Sa plus grande réalisation a été de rompre avec les méthodes géométriques classiques pour faire progresser davantage les méthodes de géométrie analytique de [Descartes](https://kenji.blog/fr/p/descartes/).
 
 ### Introduction du symbole de l'infini ' $\infty$ ' et 'De sectionibus conicis'
 

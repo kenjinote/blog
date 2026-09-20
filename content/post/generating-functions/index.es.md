@@ -15,7 +15,7 @@ tags:
 
 En el mundo de las matemáticas, existen conceptos que actúan como "puentes mágicos", conectando campos aparentemente no relacionados. Uno de ellos es la **función generadora** (Generating Function). Al transformar una "sucesión" discreta en una "función" continua, problemas combinatorios complejos pueden reducirse a cálculos algebraicos.
 
-Este artículo comienza con la idea básica de las funciones generadoras y explica en detalle su asombroso poder: desde calcular combinaciones de pagos con monedas hasta derivar el término general de la sucesión de Fibonacci. Además, mencionaremos su aplicación a las series de potencias formales (FPS) en algoritmos y programación competitiva.
+Este artículo comienza con la idea básica de las funciones generadoras y explica en detalle su asombroso poder: desde calcular combinaciones de pagos con monedas hasta derivar el término general de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/). Además, mencionaremos su aplicación a las series de potencias formales (FPS) en algoritmos y programación competitiva.
 
 ## 1. ¿Qué es una función generadora?
 
@@ -75,9 +75,9 @@ $$
 
 El coeficiente de $x^n$ al expandir es $\sum_{k=0}^{n} a_k b_{n-k}$. Esto se llama **convolución** (Convolution). En el ejemplo de las monedas, la adición de combinaciones como "hacer $k$ yenes con monedas de 1 yen y $n-k$ yenes con monedas de 2 yenes" se calcula automáticamente mediante este producto de funciones.
 
-## 3. Aplicación a la sucesión de Fibonacci
+## 3. Aplicación a la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/)
 
-A continuación, como una aplicación más avanzada, busquemos el término general de la sucesión de Fibonacci. La sucesión de Fibonacci $F_n$ se define de la siguiente manera:
+A continuación, como una aplicación más avanzada, busquemos el término general de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/). La sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) $F_n$ se define de la siguiente manera:
 
 *   $F_0 = 0$
 *   $F_1 = 1$
@@ -100,13 +100,13 @@ $$
 F(x) = x + x F(x) + x^2 F(x)
 $$
 
-Resolver esta ecuación para $F(x)$ da la función generadora de la sucesión de Fibonacci.
+Resolver esta ecuación para $F(x)$ da la función generadora de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/).
 
 $$
 F(x) = \frac{x}{1 - x - x^2}
 $$
 
-Sorprendentemente, la información de la sucesión de Fibonacci que continúa infinitamente se ha condensado en una sola y simple función fraccional.
+Sorprendentemente, la información de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) que continúa infinitamente se ha condensado en una sola y simple función fraccional.
 
 ### Descomposición en fracciones parciales y término general
 

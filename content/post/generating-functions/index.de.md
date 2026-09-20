@@ -15,7 +15,7 @@ tags:
 
 In der Welt der Mathematik gibt es Konzepte, die wie „magische Brücken“ wirken und scheinbar unzusammenhängende Felder miteinander verbinden. Eines davon ist die **erzeugende Funktion** (Generating Function). Durch die Umwandlung einer diskreten „Folge“ in eine kontinuierliche „Funktion“ können komplexe kombinatorische Probleme auf algebraische Berechnungen reduziert werden.
 
-Dieser Artikel beginnt mit der Grundidee der erzeugenden Funktionen und erklärt ausführlich ihre erstaunliche Kraft – von der Berechnung von Münzzahlungskombinationen bis hin zur Herleitung des allgemeinen Glieds der Fibonacci-Folge. Darüber hinaus werden wir die Anwendung auf formale Potenzreihen (FPS) in Algorithmen und der wettbewerbsorientierten Programmierung (Competitive Programming) ansprechen.
+Dieser Artikel beginnt mit der Grundidee der erzeugenden Funktionen und erklärt ausführlich ihre erstaunliche Kraft – von der Berechnung von Münzzahlungskombinationen bis hin zur Herleitung des allgemeinen Glieds der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge. Darüber hinaus werden wir die Anwendung auf formale Potenzreihen (FPS) in Algorithmen und der wettbewerbsorientierten Programmierung (Competitive Programming) ansprechen.
 
 ## 1. Was ist eine erzeugende Funktion?
 
@@ -75,9 +75,9 @@ $$
 
 Der Koeffizient von $x^n$ beim Ausmultiplizieren lautet $\sum_{k=0}^{n} a_k b_{n-k}$. Dies wird als **Faltung** (Convolution) bezeichnet. Im Münzbeispiel wird die Addition von Kombinationen wie „bilde $k$ Yen mit 1-Yen-Münzen und $n-k$ Yen mit 2-Yen-Münzen“ automatisch durch dieses Produkt von Funktionen berechnet.
 
-## 3. Anwendung auf die Fibonacci-Folge
+## 3. Anwendung auf die [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge
 
-Als nächstes wollen wir als etwas fortgeschrittenere Anwendung das allgemeine Glied der Fibonacci-Folge bestimmen. Die Fibonacci-Folge $F_n$ ist wie folgt definiert:
+Als nächstes wollen wir als etwas fortgeschrittenere Anwendung das allgemeine Glied der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge bestimmen. Die [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge $F_n$ ist wie folgt definiert:
 
 *   $F_0 = 0$
 *   $F_1 = 1$
@@ -100,13 +100,13 @@ $$
 F(x) = x + x F(x) + x^2 F(x)
 $$
 
-Löst man diese Gleichung nach $F(x)$ auf, erhält man die erzeugende Funktion der Fibonacci-Folge.
+Löst man diese Gleichung nach $F(x)$ auf, erhält man die erzeugende Funktion der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge.
 
 $$
 F(x) = \frac{x}{1 - x - x^2}
 $$
 
-Erstaunlicherweise wurden die Informationen der unendlich weitergehenden Fibonacci-Folge in einer einzigen einfachen gebrochenrationalen Funktion verdichtet.
+Erstaunlicherweise wurden die Informationen der unendlich weitergehenden [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge in einer einzigen einfachen gebrochenrationalen Funktion verdichtet.
 
 ### Partialbruchzerlegung und das allgemeine Glied
 

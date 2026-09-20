@@ -23,7 +23,7 @@ Su vida fue una batalla constante contra la enfermedad, y falleció a la tempran
 ### 2.2. Traslado a París y la política educativa de Étienne
 En 1631, para brindar a sus hijos la mejor educación posible, Étienne mudó a la familia a París. Insatisfecho con la educación escolar de la época, Étienne decidió convertirse él mismo en tutor privado de sus hijos. Su política educativa era muy singular: "No enseñar matemáticas, que es una materia demasiado abstracta, hasta que la razón del niño esté suficientemente desarrollada". Dio prioridad a los idiomas y la historia, y eliminó todos los libros matemáticos de la casa.
 
-Sin embargo, esta "prohibición", paradójicamente, estimuló intensamente la curiosidad del joven Blaise. A la edad de 12 años, Blaise comenzó a explorar la geometría por su cuenta durante su tiempo de juego. Dibujando figuras en el suelo con carbón, demostró de forma independiente la 32ª proposición de los *Elementos* de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/): "La suma de los ángulos interiores de un triángulo es igual a dos ángulos rectos (180 grados)". Al presenciar este abrumador destello de talento, su padre cambió su política, le permitió estudiar matemáticas y comenzó a llevarlo a las reuniones de los intelectuales más grandes de Europa organizadas por el padre Mersenne (la predecesora de la Academia de Ciencias de Francia).
+Sin embargo, esta "prohibición", paradójicamente, estimuló intensamente la curiosidad del joven Blaise. A la edad de 12 años, Blaise comenzó a explorar la geometría por su cuenta durante su tiempo de juego. Dibujando figuras en el suelo con carbón, demostró de forma independiente la 32ª proposición de los *Elementos* de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/): "La suma de los ángulos interiores de un triángulo es igual a dos ángulos rectos (180 grados)". Al presenciar este abrumador destello de talento, su padre cambió su política, le permitió estudiar matemáticas y comenzó a llevarlo a las reuniones de los intelectuales más grandes de Europa organizadas por el padre [Mersenne](https://kenji.blog/es/p/mersenne/) (la predecesora de la Academia de Ciencias de Francia).
 
 ## 3. Logros innovadores en matemáticas
 
@@ -31,7 +31,7 @@ El talento matemático de Pascal floreció temprano en su adolescencia. Su inves
 
 ### 3.1. Pionero de la geometría proyectiva: El teorema de Pascal (Hexagrama místico)
 
-En 1639, Pascal, de 16 años, se encontró con las obras de geometría proyectiva de Girard Desargues en la Academia Mersenne. Entendiendo profundamente las ideas de Desargues, Pascal descubrió un teorema revolucionario sobre las secciones cónicas y lo publicó en una sola hoja de papel (ensayo). Esto se conoce hoy como el **teorema de Pascal**.
+En 1639, Pascal, de 16 años, se encontró con las obras de geometría proyectiva de Girard Desargues en la Academia [Mersenne](https://kenji.blog/es/p/mersenne/). Entendiendo profundamente las ideas de Desargues, Pascal descubrió un teorema revolucionario sobre las secciones cónicas y lo publicó en una sola hoja de papel (ensayo). Esto se conoce hoy como el **teorema de Pascal**.
 
 El teorema de Pascal se cumple para cualquier hexágono inscrito en una sección cónica (elipse, parábola, hipérbola y círculo).
 

@@ -53,7 +53,7 @@ graph TD
 
 ## 数学成就：梅森素数
 
-毋庸置疑，今天人们最容易通过 **梅森素数** （Mersenne primes）记住梅森的名字。
+毋庸置疑，今天人们最容易通过 **梅森素数** （[Mersenne](https://kenji.blog/zh-cn/p/mersenne/) primes）记住梅森的名字。
 
 梅森数的定义如下：
 

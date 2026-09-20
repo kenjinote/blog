@@ -29,9 +29,9 @@ Dalam artikel ini, kita akan mendalami kehidupan matematikawan yang menyendiri i
 
 Gilles Personne lahir pada 10 Agustus 1602, di sebuah desa kecil bernama Roberval dekat Beauvais di Prancis utara. Keluarganya diyakini sebagai petani, yang sama sekali bukan latar belakang yang menguntungkan untuk bersekolah dalam masyarakat kelas yang ketat pada masa itu. Namun, sejak usia muda, ia menunjukkan kecerdasan luar biasa dan minat yang kuat pada matematika. Kemudian, ia mengambil nama desa asalnya dan mulai menyebut dirinya "de Roberval". Hal ini dapat dilihat sebagai ekspresi kebanggaannya terhadap asal-usulnya serta upaya untuk membangun identitasnya sebagai seorang sarjana.
 
-Setelah belajar matematika dan bahasa klasik (Latin dan Yunani) secara otodidak pada usia muda, Roberval membidik tingkat akademis yang lebih tinggi dan pindah ke ibu kota, Paris, sekitar tahun 1628. Paris pada saat itu merupakan tempat berkumpulnya para ilmuwan, mengumpulkan para cendekiawan dari seluruh Eropa. Di sana, ia mulai sering menghadiri pertemuan para cendekiawan yang berpusat di sekitar Pastor [Marin Mersenne](https://kenji.blog/id/p/mersenne/), yang dikenal sebagai "Académie de Mersenne". Mersenne, yang sering disebut "kepala kantor pos keilmuan Eropa", bertindak sebagai perantara korespondensi antar ilmuwan di seluruh Eropa, memainkan peran dalam berbagi penemuan ilmiah terbaru.
+Setelah belajar matematika dan bahasa klasik (Latin dan Yunani) secara otodidak pada usia muda, Roberval membidik tingkat akademis yang lebih tinggi dan pindah ke ibu kota, Paris, sekitar tahun 1628. Paris pada saat itu merupakan tempat berkumpulnya para ilmuwan, mengumpulkan para cendekiawan dari seluruh Eropa. Di sana, ia mulai sering menghadiri pertemuan para cendekiawan yang berpusat di sekitar Pastor [Marin Mersenne](https://kenji.blog/id/p/mersenne/), yang dikenal sebagai "Académie de [Mersenne](https://kenji.blog/id/p/mersenne/)". [Mersenne](https://kenji.blog/id/p/mersenne/), yang sering disebut "kepala kantor pos keilmuan Eropa", bertindak sebagai perantara korespondensi antar ilmuwan di seluruh Eropa, memainkan peran dalam berbagi penemuan ilmiah terbaru.
 
-Melalui salon Mersenne, Roberval memperdalam interaksinya dengan para pemikir terkemuka Prancis pada saat itu, seperti [René Descartes](https://kenji.blog/id/p/descartes/), [Pierre de Fermat](https://kenji.blog/id/p/fermat/), [Blaise Pascal](https://kenji.blog/id/p/pascal/), dan Étienne Pascal (ayah Blaise), yang memungkinkan bakat matematikanya berkembang.
+Melalui salon [Mersenne](https://kenji.blog/id/p/mersenne/), Roberval memperdalam interaksinya dengan para pemikir terkemuka Prancis pada saat itu, seperti [René Descartes](https://kenji.blog/id/p/descartes/), [Pierre de Fermat](https://kenji.blog/id/p/fermat/), [Blaise Pascal](https://kenji.blog/id/p/pascal/), dan Étienne Pascal (ayah Blaise), yang memungkinkan bakat matematikanya berkembang.
 
 ### 2.2. Jabatan Profesor Collège Royal dan Pertempuran Bertahan yang Melelahkan
 
@@ -61,7 +61,7 @@ Pencapaian matematika terbesar Roberval adalah menjadi orang pertama yang memper
 
 Indivisibles (yang tak dapat dibagi) Cavalieri adalah konsep bahwa "suatu permukaan adalah kumpulan segmen garis sejajar (besaran indivisibles) yang tak terhingga banyaknya, dan suatu benda padat adalah kumpulan bidang sejajar yang tak terhingga banyaknya". Dalam istilah modern, ini adalah ide dasar yang persis dari integral tentu: mengiris suatu bangun menjadi irisan yang sangat tipis dan menjumlahkannya untuk menemukan luas atau volume.
 
-Roberval menyempurnakan konsep ini secara lebih matematis. Ketika menghitung luas kurva tertentu, ia menyatakannya sebagai jumlah persegi panjang yang sangat tipis yang membentuk kurva tersebut. Metodenya membuat "metode penghabis" yang digunakan oleh ilmuwan Yunani kuno Archimedes menjadi lebih intuitif dan lebih mudah dihitung, menjadi alat yang ampuh untuk memecahkan banyak masalah geometri yang sulit.
+Roberval menyempurnakan konsep ini secara lebih matematis. Ketika menghitung luas kurva tertentu, ia menyatakannya sebagai jumlah persegi panjang yang sangat tipis yang membentuk kurva tersebut. Metodenya membuat "metode penghabis" yang digunakan oleh ilmuwan Yunani kuno [Archimedes](https://kenji.blog/id/p/archimedes/) menjadi lebih intuitif dan lebih mudah dihitung, menjadi alat yang ampuh untuk memecahkan banyak masalah geometri yang sulit.
 
 ### 3.2. Integrasi Pangkat dan Penemuan Paralel bersama Fermat
 
@@ -106,13 +106,13 @@ A &= \int_{0}^{2\pi r} y \, dx \\
 \end{aligned}
 $$
 
-Roberval mencapai penemuan besar ini, namun, seperti biasa, menunda publikasinya untuk mempertahankan jabatan profesornya, hanya mengomunikasikannya melalui surat kepada beberapa matematikawan dekat (seperti Mersenne).
+Roberval mencapai penemuan besar ini, namun, seperti biasa, menunda publikasinya untuk mempertahankan jabatan profesornya, hanya mengomunikasikannya melalui surat kepada beberapa matematikawan dekat (seperti [Mersenne](https://kenji.blog/id/p/mersenne/)).
 
 ### 4.3. Kontroversi dengan Torricelli
 
 Beberapa tahun kemudian, pada 1644, orang Italia Evangelista Torricelli (murid Galileo, yang terkenal dengan "hampa Torricelli") secara independen menemukan bahwa luas sikloid adalah tiga kali luas lingkarannya, dan menerbitkannya dalam sebuah buku.
 
-Setelah mengetahui hal ini, Roberval sangat marah. Ia menuduh Torricelli, dengan mengklaim, "Torricelli mengintip hasil temuan saya melalui surat-surat dari Mersenne dan menerbitkannya sebagai penemuannya sendiri." Kontroversi mengenai plagiarisme ini menjadi sangat sengit, dan hubungan antara keduanya menjadi rusak tak dapat diperbaiki. Saat ini, diyakini bahwa penemuan Torricelli dilakukan secara independen dan bukan plagiarisme, tetapi insiden ini dikenang sebagai anekdot yang menggambarkan sifat pemarah Roberval dan keterbatasan transmisi informasi pada waktu itu.
+Setelah mengetahui hal ini, Roberval sangat marah. Ia menuduh Torricelli, dengan mengklaim, "Torricelli mengintip hasil temuan saya melalui surat-surat dari [Mersenne](https://kenji.blog/id/p/mersenne/) dan menerbitkannya sebagai penemuannya sendiri." Kontroversi mengenai plagiarisme ini menjadi sangat sengit, dan hubungan antara keduanya menjadi rusak tak dapat diperbaiki. Saat ini, diyakini bahwa penemuan Torricelli dilakukan secara independen dan bukan plagiarisme, tetapi insiden ini dikenang sebagai anekdot yang menggambarkan sifat pemarah Roberval dan keterbatasan transmisi informasi pada waktu itu.
 
 ## 5. Konstruksi Kinematika Garis Singgung: Jalan Lain Menuju Turunan
 
@@ -155,9 +155,9 @@ Sebagai hasilnya, timbangan dengan karakteristik praktis yang sangat baik terwuj
 Selain bakatnya yang luar biasa, Roberval dikatakan memiliki sifat yang sangat pemarah dan keras kepala yang menolak untuk menyerah pada teori-teorinya. Akibatnya, ia terlibat dalam kontroversi sengit dengan banyak cendekiawan terkenal pada masanya.
 
 - **Konflik dengan [René Descartes](https://kenji.blog/id/p/descartes/)**:
-  Sementara Descartes mempromosikan "geometri analitik", yang memecahkan masalah geometri menggunakan aljabar, Roberval menghargai metode geometris dan kinematika murni. Roberval mengkritik metode Descartes karena terlalu dibuat-buat dan sering menyerang kelemahan dalam teori Descartes. Descartes, sebaliknya, memandang rendah Roberval sebagai orang yang "kasar dan tidak berpendidikan", dan hubungan mereka tetap bermusuhan sepanjang hidup mereka.
+  Sementara [Descartes](https://kenji.blog/id/p/descartes/) mempromosikan "geometri analitik", yang memecahkan masalah geometri menggunakan aljabar, Roberval menghargai metode geometris dan kinematika murni. Roberval mengkritik metode [Descartes](https://kenji.blog/id/p/descartes/) karena terlalu dibuat-buat dan sering menyerang kelemahan dalam teori [Descartes](https://kenji.blog/id/p/descartes/). [Descartes](https://kenji.blog/id/p/descartes/), sebaliknya, memandang rendah Roberval sebagai orang yang "kasar dan tidak berpendidikan", dan hubungan mereka tetap bermusuhan sepanjang hidup mereka.
 - **Persahabatan dengan [Pierre de Fermat](https://kenji.blog/id/p/fermat/)**:
-  Berbeda dengan Descartes, Roberval membangun hubungan yang sangat baik dengan Fermat, yang tinggal di Toulouse. Meskipun memiliki kepribadian yang bertolak belakang, mereka berbagi ide-ide matematika melalui surat yang diperantarai oleh Mersenne, saling melengkapi penelitian satu sama lain tentang masalah-masalah seperti indivisibles.
+  Berbeda dengan [Descartes](https://kenji.blog/id/p/descartes/), Roberval membangun hubungan yang sangat baik dengan Fermat, yang tinggal di Toulouse. Meskipun memiliki kepribadian yang bertolak belakang, mereka berbagi ide-ide matematika melalui surat yang diperantarai oleh [Mersenne](https://kenji.blog/id/p/mersenne/), saling melengkapi penelitian satu sama lain tentang masalah-masalah seperti indivisibles.
 - **Pengaruh pada [Blaise Pascal](https://kenji.blog/id/p/pascal/)**:
   Jenius muda Pascal juga sangat dipengaruhi oleh Roberval. Pascal kemudian menerbitkan makalah tentang sikloid menggunakan nama samaran "A. Dettonville", dan banyak metode yang digunakan di dalamnya adalah versi yang telah disempurnakan dari ide Roberval tentang indivisibles. Roberval sangat menghargai bakat Pascal dan mendukungnya.
 
@@ -184,6 +184,6 @@ graph TD
 
 [Gilles Personne de Roberval](https://kenji.blog/id/p/roberval/), pada era tepat sebelum lahirnya kalkulus secara formal, sepenuhnya memanfaatkan dua senjata ampuh—metode indivisibles dan pendekatan kinematika—untuk secara berurutan memecahkan masalah matematika dengan tingkat kesulitan tertinggi pada masanya.
 
-Sebagai akibat dari penundaannya yang berlebihan dalam menerbitkan penemuan-penemuannya karena tekanan untuk mempertahankan jabatan profesornya setiap tiga tahun, beberapa pencapaiannya tidak dinilai secara adil oleh orang-orang sezamannya, dan ia terkadang terseret ke dalam perselisihan prioritas yang tidak diinginkan. Namun, benih-benih ide matematika yang ia tabur pastinya menyebar melalui jaringan Mersenne dan kenalan-kenalan seperti Fermat dan Pascal, menjadi jembatan kuat yang mengarah ke fondasi kalkulus oleh Newton dan Leibniz di kemudian hari.
+Sebagai akibat dari penundaannya yang berlebihan dalam menerbitkan penemuan-penemuannya karena tekanan untuk mempertahankan jabatan profesornya setiap tiga tahun, beberapa pencapaiannya tidak dinilai secara adil oleh orang-orang sezamannya, dan ia terkadang terseret ke dalam perselisihan prioritas yang tidak diinginkan. Namun, benih-benih ide matematika yang ia tabur pastinya menyebar melalui jaringan [Mersenne](https://kenji.blog/id/p/mersenne/) dan kenalan-kenalan seperti Fermat dan Pascal, menjadi jembatan kuat yang mengarah ke fondasi kalkulus oleh Newton dan Leibniz di kemudian hari.
 
 Selanjutnya, sebagaimana terlihat dalam penemuannya, "timbangan Roberval", dalam mekanika, alih-alih hanya sekadar matematika abstrak, pemikiran teoretisnya selalu terhubung secara mendalam dengan dunia fisik nyata. Roberval, yang aktif di wilayah batas antara matematika dan fisika, benar-benar terukir selamanya dalam sejarah matematika sebagai "pemain kunci di balik layar" yang secara fundamental mendukung dan mendorong Revolusi Ilmiah abad ke-17.

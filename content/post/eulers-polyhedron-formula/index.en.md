@@ -88,18 +88,18 @@ flowchart TD
     H --> I["Proof completed: V - E + F = 2"]
 ```
 
-## Descartes' Secret Manuscript: Another Tale of Discovery
+## [Descartes](https://kenji.blog/en/p/descartes/)' Secret Manuscript: Another Tale of Discovery
 
 Actually, about a century before Euler published this theorem, the French philosopher and mathematician [René Descartes](https://kenji.blog/en/p/descartes/) had reached essentially the same theorem.
-Descartes focused on the concept of "angular defect" at the vertices of a polyhedron.
+[Descartes](https://kenji.blog/en/p/descartes/) focused on the concept of "angular defect" at the vertices of a polyhedron.
 The sum of the angles meeting at a single vertex is $360^\circ$ on a flat plane, but at the vertex of a solid, it is always less than $360^\circ$. This shortfall from $360^\circ$ is called the "angular defect."
 
-Descartes discovered a remarkable theorem: "If you add up the angular defects of all vertices, it will always be $720^\circ$ for any polyhedron."
+[Descartes](https://kenji.blog/en/p/descartes/) discovered a remarkable theorem: "If you add up the angular defects of all vertices, it will always be $720^\circ$ for any polyhedron."
 Expressed as a formula, it looks like this:
 
 $$ \sum (\text{Angular defect}) = 720^\circ $$
 
-This theorem is mathematically perfectly equivalent to Euler's formula $V - E + F = 2$. However, Descartes never published this discovery, keeping it hidden in an encrypted manuscript. After his death, the manuscript was deciphered by Leibniz but didn't become widely known. Consequently, this great property was rediscovered by Euler and went down in history as "Euler's formula."
+This theorem is mathematically perfectly equivalent to Euler's formula $V - E + F = 2$. However, [Descartes](https://kenji.blog/en/p/descartes/) never published this discovery, keeping it hidden in an encrypted manuscript. After his death, the manuscript was deciphered by Leibniz but didn't become widely known. Consequently, this great property was rediscovered by Euler and went down in history as "Euler's formula."
 
 ## The Birth of Topology: "Rubber-Sheet Geometry"
 

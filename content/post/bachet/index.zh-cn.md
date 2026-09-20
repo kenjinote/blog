@@ -35,7 +35,7 @@ flowchart TD
 
 巴谢并没有止步于纯粹的翻译；他在[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的问题中加入了自己精彩的注释和推广。如果没有他的数学洞察力，17 世纪数论的发展可能会缓慢得多。
 
-## 巴谢方程 (Bachet's Equation)
+## 巴谢方程 ([Bachet](https://kenji.blog/zh-cn/p/bachet/)'s Equation)
 
 在数论中，巴谢研究了一种特定形式的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程，现在被称为 **巴谢方程** 。它代表了以下形式的三次曲线（一种椭圆曲线）：
 

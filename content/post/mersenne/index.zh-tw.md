@@ -53,7 +53,7 @@ graph TD
 
 ## 數學成就：梅森質數
 
-毋庸置疑，今天人們最容易透過 **梅森質數** （Mersenne primes）記住梅森的名字。
+毋庸置疑，今天人們最容易透過 **梅森質數** （[Mersenne](https://kenji.blog/zh-tw/p/mersenne/) primes）記住梅森的名字。
 
 梅森數的定義如下：
 

@@ -339,7 +339,7 @@ $$ d = R \cdot c $$
 (Di sini, $\phi$ adalah lintang, $\lambda$ adalah bujur, dan $R$ adalah jari-jari bumi)
 
 ### Aplikasi dalam Pemrograman
-Rumus ini wajib digunakan ketika menghitung jarak antara dua koordinat garis lintang dan bujur dalam aplikasi pelacakan GPS, atau layanan berbasis lokasi seperti Uber dan Pokemon GO. Menghitung jarak lurus menggunakan teorema Pythagoras tidak dapat memperhitungkan kelengkungan bumi, sehingga akan terjadi kesalahan (error) besar dalam jarak yang jauh.
+Rumus ini wajib digunakan ketika menghitung jarak antara dua koordinat garis lintang dan bujur dalam aplikasi pelacakan GPS, atau layanan berbasis lokasi seperti Uber dan Pokemon GO. Menghitung jarak lurus menggunakan teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) tidak dapat memperhitungkan kelengkungan bumi, sehingga akan terjadi kesalahan (error) besar dalam jarak yang jauh.
 
 ### Contoh Implementasi (Python)
 Ini adalah fungsi yang menerima 2 koordinat (lintang dan bujur) dan mengembalikan jarak (kilometer).
@@ -559,10 +559,10 @@ Pada kode di atas, kita melakukan percabangan `x >= 0` dan kebalikannya untuk me
 
 ---
 
-## 10. Jarak [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an dan Teorema Pythagoras ([[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. Jarak [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an dan Teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) ([[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Keindahan Rumus dan Gambaran Umum
-Sebagai fondasi geometri yang berasal dari Yunani kuno, rumus ini mendefinisikan jarak garis lurus antara dua titik dalam ruang $n$-dimensi. Dalam ruang 2 dimensi, ini tidak lain adalah Teorema Pythagoras itu sendiri ($a^2 + b^2 = c^2$).
+Sebagai fondasi geometri yang berasal dari Yunani kuno, rumus ini mendefinisikan jarak garis lurus antara dua titik dalam ruang $n$-dimensi. Dalam ruang 2 dimensi, ini tidak lain adalah Teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/) itu sendiri ($a^2 + b^2 = c^2$).
 
 Jarak [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an $d$ antara titik $P(x_1, y_1, z_1)$ dan $Q(x_2, y_2, z_2)$ dalam ruang 3 dimensi dinyatakan sebagai berikut:
 
@@ -619,7 +619,7 @@ Jika menghitung tepat sesuai rumus matematika, kita harus menghitung akar kuadra
 
 ## Kesimpulan
 
-Bagaimana menurut Anda? Dari Identitas Euler hingga Teorema Pythagoras, 10 rumus ini bukanlah sekadar konsep teoritis yang hanya tertulis di buku teks. Di balik kode yang kita tulis sehari-hari, rumus-rumus ini berdenyut sebagai "jantung" yang mengompresi data, memungkinkan model *machine learning* membuat prediksi, merender animasi dengan mulus, dan memungkinkan pencarian data berkecepatan tinggi.
+Bagaimana menurut Anda? Dari Identitas Euler hingga Teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/), 10 rumus ini bukanlah sekadar konsep teoritis yang hanya tertulis di buku teks. Di balik kode yang kita tulis sehari-hari, rumus-rumus ini berdenyut sebagai "jantung" yang mengompresi data, memungkinkan model *machine learning* membuat prediksi, merender animasi dengan mulus, dan memungkinkan pencarian data berkecepatan tinggi.
 
 Memahami latar belakang matematika dari rumus-rumus ini adalah langkah penting untuk meningkatkan diri, dari sekadar *coder* yang memanggil pustaka/library yang sudah ada (seperti `math.sin` atau `numpy.fft`), menjadi seorang *engineer* yang mampu memahami struktur internal dan mengeluarkan potensi maksimal dari sistem tersebut. Saat Anda menulis kode berikutnya, cobalah bayangkan sejenak, rumus matematika indah apa yang mungkin sedang bekerja di baliknya.
 

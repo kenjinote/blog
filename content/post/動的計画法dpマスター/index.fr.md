@@ -11,7 +11,7 @@ tags: ["Algorithm", "DP", "C++", "Python"]
 
 De la programmation compétitive à la conception d'algorithmes en entreprise, la **programmation dynamique (Dynamic Programming, souvent abrégée en DP)** apparaît dans de nombreuses situations et constitue souvent un mur pour beaucoup de programmeurs. "Je n'arrive pas à formuler la relation de récurrence", "Les indices sont buggés", "Je ne sais même pas si le problème peut être résolu avec DP"... Vous êtes probablement nombreux à avoir ces doutes.
 
-Dans cet article, nous couvrirons tout en détail, de l'essence même de la programmation dynamique aux approches concrètes (descendante et ascendante), en passant par des explications pratiques à travers 3 problèmes représentatifs (suite de Fibonacci, problème du sac à dos 0/1, plus longue sous-séquence commune). En montrant des exemples d'implémentation en C++ et en Python, avec des formules mathématiques et des diagrammes, nous fournirons un chemin pour "maîtriser complètement" le sujet. Ce sera un article très long, mais lorsque vous l'aurez lu jusqu'à la fin, vos compétences en algorithmique auront certainement fait un bond en avant.
+Dans cet article, nous couvrirons tout en détail, de l'essence même de la programmation dynamique aux approches concrètes (descendante et ascendante), en passant par des explications pratiques à travers 3 problèmes représentatifs (suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/), problème du sac à dos 0/1, plus longue sous-séquence commune). En montrant des exemples d'implémentation en C++ et en Python, avec des formules mathématiques et des diagrammes, nous fournirons un chemin pour "maîtriser complètement" le sujet. Ce sera un article très long, mais lorsque vous l'aurez lu jusqu'à la fin, vos compétences en algorithmique auront certainement fait un bond en avant.
 
 ---
 
@@ -27,7 +27,7 @@ Pour que la programmation dynamique soit applicable, le problème cible doit sat
 
 C'est la propriété selon laquelle **le même sous-problème apparaît de manière répétée** au cours du processus de résolution du problème plus vaste.
 
-Par exemple, dans le calcul de la suite de Fibonacci que nous verrons plus loin, le calcul de "trouver le 3ème terme" est nécessaire à la fois pour trouver le 5ème terme et pour trouver le 4ème terme. Si les sous-problèmes ne se chevauchent pas (ex. : les méthodes diviser pour régner comme le tri fusion), il n'y a aucun avantage à enregistrer les solutions, ce qui ne justifie pas l'application de la DP. C'est précisément parce qu'il y a des chevauchements qu'il est possible d'accélérer considérablement le processus en sauvegardant le résultat d'un calcul dans la mémoire (mémoïsation ou tabulation) pour le réutiliser.
+Par exemple, dans le calcul de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) que nous verrons plus loin, le calcul de "trouver le 3ème terme" est nécessaire à la fois pour trouver le 5ème terme et pour trouver le 4ème terme. Si les sous-problèmes ne se chevauchent pas (ex. : les méthodes diviser pour régner comme le tri fusion), il n'y a aucun avantage à enregistrer les solutions, ce qui ne justifie pas l'application de la DP. C'est précisément parce qu'il y a des chevauchements qu'il est possible d'accélérer considérablement le processus en sauvegardant le résultat d'un calcul dans la mémoire (mémoïsation ou tabulation) pour le réutiliser.
 
 ### 1-2. Sous-structure optimale (Optimal Substructure)
 
@@ -66,10 +66,10 @@ C'est une approche qui part du plus petit sous-problème (cas de base) et rempli
 
 ---
 
-## 3. Pratique 1 : Suite de Fibonacci
+## 3. Pratique 1 : Suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)
 
-Tout d'abord, prenons la suite de Fibonacci comme l'exemple le plus fondamental et le plus facile à comprendre.
-La suite de Fibonacci est définie comme suit :
+Tout d'abord, prenons la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) comme l'exemple le plus fondamental et le plus facile à comprendre.
+La suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) est définie comme suit :
 
 $$
 F(0) = 0, \quad F(1) = 1 \\
@@ -292,7 +292,7 @@ int main() {
 
 ### 4-4. Optimisation de la complexité spatiale (Tableau 1D)
 
-Lors de la mise à jour du tableau 2D $dp[i][w]$, on remarque que seule la ligne précédente $dp[i-1]$ est référencée. C'est le même principe que l'optimisation spatiale de la suite de Fibonacci.
+Lors de la mise à jour du tableau 2D $dp[i][w]$, on remarque que seule la ligne précédente $dp[i-1]$ est référencée. C'est le même principe que l'optimisation spatiale de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/).
 Par conséquent, on peut compresser le tableau en 1D $dp[w]$. Cependant, il faut faire attention lors de la mise à jour. Il faut boucler sur la capacité $w$ **du plus grand au plus petit (de l'arrière vers l'avant)**. Si l'on met à jour depuis l'avant, on référencerait "l'état $i$-ème" qui vient d'être mis à jour dans la même étape, et non "l'état $i-1$-ème", ce qui signifierait choisir le même objet plusieurs fois (c'est la solution pour le "problème du sac à dos sans contrainte de quantité").
 
 **Implémentation en Python (1D) :**

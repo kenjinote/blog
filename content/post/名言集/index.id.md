@@ -113,7 +113,7 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 > Tidak ada jalan pintas menuju geometri ([Euclid](https://kenji.blog/id/p/euclid/))
 
-> Beri aku titik tumpu, dan aku akan menggerakkan bumi (Archimedes)
+> Beri aku titik tumpu, dan aku akan menggerakkan bumi ([Archimedes](https://kenji.blog/id/p/archimedes/))
 
 ## IT & Ilmu Komputer
 

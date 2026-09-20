@@ -109,9 +109,9 @@ Expressed as a formula, it is:
 
 $$ \text{Number of steps} \le 5 \times \text{Number of digits of the smaller number} $$
 
-### 4.2 Deep Connection with the Fibonacci Sequence
+### 4.2 Deep Connection with the [Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence
 
-In the process of proving this theorem, Lamé discovered that the worst-case scenario (meaning the one taking the most steps) for the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm occurs when the inputs are two consecutive **Fibonacci numbers**. By utilizing the growth rate of the Fibonacci sequence and the properties of the golden ratio, he derived this beautiful upper bound. Due to this achievement, Lamé is considered one of the "fathers of complexity theory" in modern computer science.
+In the process of proving this theorem, Lamé discovered that the worst-case scenario (meaning the one taking the most steps) for the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm occurs when the inputs are two consecutive **[Fibonacci](https://kenji.blog/en/p/fibonacci/) numbers**. By utilizing the growth rate of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence and the properties of the golden ratio, he derived this beautiful upper bound. Due to this achievement, Lamé is considered one of the "fathers of complexity theory" in modern computer science.
 
 ## 5. Contributions to Physics: Elasticity Theory and Lamé Parameters
 

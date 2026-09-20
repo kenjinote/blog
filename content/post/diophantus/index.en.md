@@ -28,7 +28,7 @@ There are almost no accurate records remaining regarding when [Diophantus](https
 
 ### 2.2 Hellenistic Culture and Alexandria
 
-At the time, Alexandria was the center of Hellenistic culture and learning, boasting a massive library (the Library of Alexandria) and serving as a nexus of knowledge where many scholars gathered. In this city where knowledge from Greece, Egypt, Babylonia, and even India intersected, [Diophantus](https://kenji.blog/en/p/diophantus/) is thought to have had access to a vast mathematical heritage of the past. Unlike the geometric tradition established by great Greek mathematicians like [Euclid](https://kenji.blog/en/p/euclid/), Archimedes, and Apollonius, some theories suggest that [Diophantus](https://kenji.blog/en/p/diophantus/) was strongly influenced by the algebraic approach of Babylonia.
+At the time, Alexandria was the center of Hellenistic culture and learning, boasting a massive library (the Library of Alexandria) and serving as a nexus of knowledge where many scholars gathered. In this city where knowledge from Greece, Egypt, Babylonia, and even India intersected, [Diophantus](https://kenji.blog/en/p/diophantus/) is thought to have had access to a vast mathematical heritage of the past. Unlike the geometric tradition established by great Greek mathematicians like [Euclid](https://kenji.blog/en/p/euclid/), [Archimedes](https://kenji.blog/en/p/archimedes/), and Apollonius, some theories suggest that [Diophantus](https://kenji.blog/en/p/diophantus/) was strongly influenced by the algebraic approach of Babylonia.
 
 ```mermaid
 timeline
@@ -176,7 +176,7 @@ Therefore, we can see that [Diophantus](https://kenji.blog/en/p/diophantus/) die
 
 In particular, 9th-century mathematicians in Baghdad translated *Arithmetica* into Arabic, greatly contributing to the development of Islamic algebra. Islamic mathematicians like Al-Karaji adopted and further developed [Diophantus](https://kenji.blog/en/p/diophantus/)'s methods.
 
-In the 16th century, as Greek classics were rediscovered in Renaissance Europe, *Arithmetica* was translated into Latin. A bilingual Greek and Latin edition published by [Claude Gaspard Bachet](https://kenji.blog/en/p/bachet/) de Méziriac in 1621 became widely read. It was this Bachet edition of *Arithmetica* that Fermat studied carefully, which triggered the opening of a new door in mathematics.
+In the 16th century, as Greek classics were rediscovered in Renaissance Europe, *Arithmetica* was translated into Latin. A bilingual Greek and Latin edition published by [Claude Gaspard Bachet](https://kenji.blog/en/p/bachet/) de Méziriac in 1621 became widely read. It was this [Bachet](https://kenji.blog/en/p/bachet/) edition of *Arithmetica* that Fermat studied carefully, which triggered the opening of a new door in mathematics.
 
 The theory of Diophantine equations was subsequently deeply studied by giants such as [Leonhard Euler](https://kenji.blog/en/p/euler/), [Joseph-Louis Lagrange](https://kenji.blog/en/p/lagrange/), and [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/). Their research grew into the vast mathematical fields of modern "algebraic number theory" and "algebraic geometry". The 10th of Hilbert's 23 problems was "to find a general algorithm to determine whether a given Diophantine equation is solvable," and in 1970 Yuri Matiyasevich proved that "no such algorithm exists." The name of [Diophantus](https://kenji.blog/en/p/diophantus/) is deeply engraved at the cutting edge of modern mathematics.
 

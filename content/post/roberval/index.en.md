@@ -29,9 +29,9 @@ In this article, we will delve deeply into the life of this solitary mathematici
 
 Gilles Personne was born on August 10, 1602, in a small village called Roberval near Beauvais in northern France. His family is thought to have been peasants, which was by no means an advantageous background for scholarship in the strict class society of the time. However, from a young age, he showed extraordinary intellect and a strong interest in mathematics. He later took the name of his home village and began calling himself "de Roberval." This can be seen as an expression of his pride in his origins as well as an attempt to establish his identity as a scholar.
 
-Having taught himself mathematics and classical languages (Latin and Greek) at a young age, Roberval aimed for higher scholarly heights and moved to the capital, Paris, around 1628. Paris at that time was a melting pot of scholarship, gathering intellectuals from all over Europe. There, he began frequenting the gathering of intellectuals centered around Father [Marin Mersenne](https://kenji.blog/en/p/mersenne/), known as the "Académie de Mersenne." Mersenne, often called "the postmaster of European scholarship," acted as an intermediary for correspondence among scholars across Europe, playing a role in sharing the latest scientific discoveries.
+Having taught himself mathematics and classical languages (Latin and Greek) at a young age, Roberval aimed for higher scholarly heights and moved to the capital, Paris, around 1628. Paris at that time was a melting pot of scholarship, gathering intellectuals from all over Europe. There, he began frequenting the gathering of intellectuals centered around Father [Marin Mersenne](https://kenji.blog/en/p/mersenne/), known as the "Académie de [Mersenne](https://kenji.blog/en/p/mersenne/)." [Mersenne](https://kenji.blog/en/p/mersenne/), often called "the postmaster of European scholarship," acted as an intermediary for correspondence among scholars across Europe, playing a role in sharing the latest scientific discoveries.
 
-Through Mersenne's salon, Roberval deepened his interactions with leading minds of France at the time, such as [René Descartes](https://kenji.blog/en/p/descartes/), [Pierre de Fermat](https://kenji.blog/en/p/fermat/), [Blaise Pascal](https://kenji.blog/en/p/pascal/), and Étienne Pascal (Blaise's father), allowing his mathematical talents to blossom.
+Through [Mersenne](https://kenji.blog/en/p/mersenne/)'s salon, Roberval deepened his interactions with leading minds of France at the time, such as [René Descartes](https://kenji.blog/en/p/descartes/), [Pierre de Fermat](https://kenji.blog/en/p/fermat/), [Blaise Pascal](https://kenji.blog/en/p/pascal/), and Étienne Pascal (Blaise's father), allowing his mathematical talents to blossom.
 
 ### 2.2. The Collège Royal Professorship and Grueling Defense Battles
 
@@ -61,7 +61,7 @@ Roberval's greatest mathematical achievement was being the first to introduce to
 
 Cavalieri's indivisibles is the concept that "a surface is a collection of infinitely many parallel line segments (indivisible quantities), and a solid is a collection of infinitely many parallel planes." In modern terms, it is the exact fundamental idea of definite integration: slicing a figure into infinitely thin slices and adding them up to find the area or volume.
 
-Roberval refined this concept more mathematically. When calculating the area of a certain curve, he represented it as the sum of infinitely thin rectangles constituting that curve. His method made the "method of exhaustion" used by the ancient Greek Archimedes more intuitive and easier to calculate, becoming a powerful tool for solving numerous difficult geometry problems.
+Roberval refined this concept more mathematically. When calculating the area of a certain curve, he represented it as the sum of infinitely thin rectangles constituting that curve. His method made the "method of exhaustion" used by the ancient Greek [Archimedes](https://kenji.blog/en/p/archimedes/) more intuitive and easier to calculate, becoming a powerful tool for solving numerous difficult geometry problems.
 
 ### 3.2. Integration of Powers and Parallel Discovery with Fermat
 
@@ -106,13 +106,13 @@ A &= \int_{0}^{2\pi r} y \, dx \\
 \end{aligned}
 $$
 
-Roberval achieved this great discovery, but, true to form, delayed publication to defend his professorship, communicating it only through letters to a few close mathematicians (like Mersenne).
+Roberval achieved this great discovery, but, true to form, delayed publication to defend his professorship, communicating it only through letters to a few close mathematicians (like [Mersenne](https://kenji.blog/en/p/mersenne/)).
 
 ### 4.3. Controversy with Torricelli
 
 Several years later, in 1644, the Italian Evangelista Torricelli (a pupil of Galileo, famous for "Torricelli's vacuum") independently discovered that the area of a cycloid is three times that of its circle, and published it in a book.
 
-Upon learning this, Roberval was furious. He accused Torricelli, claiming, "Torricelli stole a look at my results through letters from Mersenne and published them as his own discovery." This controversy over plagiarism became extremely fierce, and the relationship between the two became irreparably damaged. Today, it is believed that Torricelli's discovery was made independently and was not plagiarism, but this incident is remembered as an anecdote illustrating Roberval's fiery temper and the limitations of information transmission at the time.
+Upon learning this, Roberval was furious. He accused Torricelli, claiming, "Torricelli stole a look at my results through letters from [Mersenne](https://kenji.blog/en/p/mersenne/) and published them as his own discovery." This controversy over plagiarism became extremely fierce, and the relationship between the two became irreparably damaged. Today, it is believed that Torricelli's discovery was made independently and was not plagiarism, but this incident is remembered as an anecdote illustrating Roberval's fiery temper and the limitations of information transmission at the time.
 
 ## 5. Kinematic Construction of Tangents: Another Path to Derivatives
 
@@ -155,9 +155,9 @@ As a result, a balance was realized with extremely excellent practical character
 Alongside his outstanding talent, Roberval is said to have had a very fiery temper and a stubborn personality that refused to yield his theories. Consequently, he engaged in fierce controversies with many famous scholars of his time.
 
 - **Conflict with [René Descartes](https://kenji.blog/en/p/descartes/)**:
-  While Descartes promoted "analytic geometry," which solved geometry using algebra, Roberval valued purely geometric and kinematic methods. Roberval criticized Descartes' method as too artificial and often attacked flaws in Descartes' theories. Descartes, in turn, looked down on Roberval as "coarse and uneducated," and their relationship remained hostile throughout their lives.
+  While [Descartes](https://kenji.blog/en/p/descartes/) promoted "analytic geometry," which solved geometry using algebra, Roberval valued purely geometric and kinematic methods. Roberval criticized [Descartes](https://kenji.blog/en/p/descartes/)' method as too artificial and often attacked flaws in [Descartes](https://kenji.blog/en/p/descartes/)' theories. [Descartes](https://kenji.blog/en/p/descartes/), in turn, looked down on Roberval as "coarse and uneducated," and their relationship remained hostile throughout their lives.
 - **Friendship with [Pierre de Fermat](https://kenji.blog/en/p/fermat/)**:
-  In contrast to Descartes, Roberval built a very good relationship with Fermat, who lived in Toulouse. Although they had contrasting personalities, they shared mathematical ideas through letters mediated by Mersenne, complementing each other's research on issues like indivisibles.
+  In contrast to [Descartes](https://kenji.blog/en/p/descartes/), Roberval built a very good relationship with Fermat, who lived in Toulouse. Although they had contrasting personalities, they shared mathematical ideas through letters mediated by [Mersenne](https://kenji.blog/en/p/mersenne/), complementing each other's research on issues like indivisibles.
 - **Influence on [Blaise Pascal](https://kenji.blog/en/p/pascal/)**:
   The young genius Pascal was also greatly influenced by Roberval. Pascal later published papers on the cycloid using the pseudonym "A. Dettonville," and many of the methods used therein were refined versions of Roberval's ideas on indivisibles. Roberval highly valued Pascal's talent and supported him.
 
@@ -184,6 +184,6 @@ graph TD
 
 [Gilles Personne de Roberval](https://kenji.blog/en/p/roberval/), in the era just before the formal birth of calculus, fully utilized two powerful weapons—the method of indivisibles and the kinematic approach—to sequentially solve mathematical problems of the highest difficulty of his time.
 
-As a result of excessively delaying the publication of his discoveries due to the pressure of defending his professorship every three years, some of his achievements were not justly evaluated by his contemporaries, and he was sometimes drawn into unwilling priority disputes. However, the seeds of mathematical ideas he sowed surely spread through Mersenne's network and acquaintances like Fermat and Pascal, becoming a strong bridge leading to the foundation of calculus by Newton and Leibniz later on.
+As a result of excessively delaying the publication of his discoveries due to the pressure of defending his professorship every three years, some of his achievements were not justly evaluated by his contemporaries, and he was sometimes drawn into unwilling priority disputes. However, the seeds of mathematical ideas he sowed surely spread through [Mersenne](https://kenji.blog/en/p/mersenne/)'s network and acquaintances like Fermat and Pascal, becoming a strong bridge leading to the foundation of calculus by Newton and Leibniz later on.
 
 Furthermore, as seen in his invention of the "Roberval balance" in mechanics, rather than just abstract mathematics, his theoretical thinking was always deeply connected to the real physical world. Roberval, who was active in the boundary area between mathematics and physics, is truly etched in the history of mathematics forever as a "behind-the-scenes key player" who fundamentally supported and drove the 17th-century Scientific Revolution.

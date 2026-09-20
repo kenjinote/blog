@@ -23,7 +23,7 @@ Kehidupannya adalah pertempuran konstan melawan penyakit, dan ia meninggal pada 
 ### 2.2. Pindah ke Paris dan Kebijakan Pendidikan Étienne
 Pada tahun 1631, untuk memberikan pendidikan terbaik bagi anak-anaknya, Étienne memindahkan keluarganya ke Paris. Karena tidak puas dengan pendidikan sekolah pada saat itu, Étienne memilih untuk menjadi guru privat bagi anak-anaknya sendiri. Kebijakan pendidikannya sangat unik: "Jangan ajarkan matematika, yang merupakan mata pelajaran yang terlalu abstrak, sampai nalar anak cukup berkembang." Ia memprioritaskan bahasa dan sejarah, dan menyingkirkan semua buku matematika dari rumah.
 
-Namun, "larangan" ini secara paradoks sangat merangsang rasa ingin tahu Blaise muda. Pada usia 12 tahun, Blaise mulai mengeksplorasi geometri sendiri selama waktu bermainnya. Dengan menggambar bangun datar di lantai menggunakan arang, ia secara mandiri membuktikan dalil ke-32 dalam *Elemen* [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/): "Jumlah sudut dalam sebuah segitiga sama dengan dua sudut siku-siku (180 derajat)." Menyaksikan kilasan bakat yang luar biasa ini, ayahnya mengubah kebijakannya, mengizinkannya untuk belajar matematika, dan mulai membawanya ke pertemuan para intelektual terbesar Eropa yang dipandu oleh Pastor Mersenne (pendahulu Akademi Sains Prancis).
+Namun, "larangan" ini secara paradoks sangat merangsang rasa ingin tahu Blaise muda. Pada usia 12 tahun, Blaise mulai mengeksplorasi geometri sendiri selama waktu bermainnya. Dengan menggambar bangun datar di lantai menggunakan arang, ia secara mandiri membuktikan dalil ke-32 dalam *Elemen* [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/): "Jumlah sudut dalam sebuah segitiga sama dengan dua sudut siku-siku (180 derajat)." Menyaksikan kilasan bakat yang luar biasa ini, ayahnya mengubah kebijakannya, mengizinkannya untuk belajar matematika, dan mulai membawanya ke pertemuan para intelektual terbesar Eropa yang dipandu oleh Pastor [Mersenne](https://kenji.blog/id/p/mersenne/) (pendahulu Akademi Sains Prancis).
 
 ## 3. Pencapaian Inovatif dalam Matematika
 
@@ -31,7 +31,7 @@ Bakat matematika Pascal berkembang lebih awal di usia remajanya. Penelitiannya m
 
 ### 3.1. Merintis Geometri Proyektif: Teorema Pascal (Heksagram Mistik)
 
-Pada tahun 1639, Pascal yang berusia 16 tahun menemukan karya-karya geometri proyektif Girard Desargues di Akademi Mersenne. Memahami ide-ide Desargues secara mendalam, Pascal menemukan teorema inovatif mengenai irisan kerucut dan menerbitkannya pada selembar kertas tunggal (esai). Hal ini dikenal hari ini sebagai **teorema Pascal**.
+Pada tahun 1639, Pascal yang berusia 16 tahun menemukan karya-karya geometri proyektif Girard Desargues di Akademi [Mersenne](https://kenji.blog/id/p/mersenne/). Memahami ide-ide Desargues secara mendalam, Pascal menemukan teorema inovatif mengenai irisan kerucut dan menerbitkannya pada selembar kertas tunggal (esai). Hal ini dikenal hari ini sebagai **teorema Pascal**.
 
 Teorema Pascal berlaku untuk heksagon (segi enam) sembarang yang digambar di dalam irisan kerucut (elips, parabola, hiperbola, dan lingkaran).
 

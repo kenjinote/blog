@@ -178,7 +178,7 @@ $$
 D^{100} = \begin{pmatrix} 2^{100} & 0 \\ 0 & 5^{100} \end{pmatrix}
 $$
 
-Cette propriété est une technique indispensable pour prédire les états à long terme dans des modèles de probabilité tels que les chaînes de Markov, lors de la résolution de systèmes d'équations différentielles, ou même lors de la recherche du terme général de la suite de Fibonacci.
+Cette propriété est une technique indispensable pour prédire les états à long terme dans des modèles de probabilité tels que les chaînes de Markov, lors de la résolution de systèmes d'équations différentielles, ou même lors de la recherche du terme général de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/).
 
 ## Applications concrètes des valeurs propres et des vecteurs propres
 

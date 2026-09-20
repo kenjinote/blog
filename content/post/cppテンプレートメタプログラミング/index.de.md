@@ -72,9 +72,9 @@ int main() {
 
 Das Wichtige hierbei ist, dass `Factorial<5>::value` nicht zur Laufzeit berechnet, sondern zur Kompilierzeit aufgelöst wird, und in der endgültigen Binärdatei wird ein Code generiert, der äquivalent zu `std::cout << "5! = " << 120 << std::endl;` ist. Dadurch wird der Laufzeit-Overhead auf null reduziert.
 
-### 2.2 Fibonacci-Folge und Komplexität
+### 2.2 [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge und Komplexität
 
-Als Nächstes berechnen wir die Fibonacci-Folge. Die Rekursionsgleichung lautet wie folgt:
+Als Nächstes berechnen wir die [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge. Die Rekursionsgleichung lautet wie folgt:
 
 $$
 F_n = F_{n-1} + F_{n-2} \quad (F_0 = 0, F_1 = 1)

@@ -88,18 +88,18 @@ flowchart TD
     H --> I["Pembuktian selesai: V - E + F = 2"]
 ```
 
-## Manuskrip Rahasia Descartes: Kisah Penemuan Lain
+## Manuskrip Rahasia [Descartes](https://kenji.blog/id/p/descartes/): Kisah Penemuan Lain
 
 Sebenarnya, sekitar satu abad sebelum Euler menerbitkan teorema ini, filsuf dan matematikawan Prancis [René Descartes](https://kenji.blog/id/p/descartes/) telah mencapai teorema yang pada dasarnya sama.
-Descartes berfokus pada konsep "cacat sudut" (angular defect) pada titik-titik sudut sebuah polyhedron.
+[Descartes](https://kenji.blog/id/p/descartes/) berfokus pada konsep "cacat sudut" (angular defect) pada titik-titik sudut sebuah polyhedron.
 Jumlah sudut yang bertemu pada satu titik sudut adalah $360^\circ$ pada bidang datar, tetapi pada titik sudut bangun ruang, jumlahnya selalu kurang dari $360^\circ$. Kekurangan dari $360^\circ$ ini disebut "cacat sudut".
 
-Descartes menemukan teorema yang luar biasa: "Jika Anda menjumlahkan cacat sudut dari semua titik sudut, hasilnya akan selalu $720^\circ$ untuk polyhedron apa pun."
+[Descartes](https://kenji.blog/id/p/descartes/) menemukan teorema yang luar biasa: "Jika Anda menjumlahkan cacat sudut dari semua titik sudut, hasilnya akan selalu $720^\circ$ untuk polyhedron apa pun."
 Dinyatakan dalam rumus, bentuknya seperti ini:
 
 $$ \sum (\text{Cacat sudut}) = 720^\circ $$
 
-Teorema ini secara matematis sepenuhnya setara dengan rumus Euler $V - E + F = 2$. Akan tetapi, Descartes tidak pernah menerbitkan penemuan ini dan menyembunyikannya dalam sebuah manuskrip terenkripsi. Setelah kematiannya, manuskrip tersebut diuraikan oleh Leibniz tetapi tidak dikenal secara luas. Akibatnya, sifat hebat ini ditemukan kembali oleh Euler dan tercatat dalam sejarah sebagai "Rumus Euler".
+Teorema ini secara matematis sepenuhnya setara dengan rumus Euler $V - E + F = 2$. Akan tetapi, [Descartes](https://kenji.blog/id/p/descartes/) tidak pernah menerbitkan penemuan ini dan menyembunyikannya dalam sebuah manuskrip terenkripsi. Setelah kematiannya, manuskrip tersebut diuraikan oleh Leibniz tetapi tidak dikenal secara luas. Akibatnya, sifat hebat ini ditemukan kembali oleh Euler dan tercatat dalam sejarah sebagai "Rumus Euler".
 
 ## Kelahiran Topologi: "Geometri Lembaran Karet"
 

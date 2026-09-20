@@ -22,7 +22,7 @@ Dans un plan, une demi-droite OB tourne autour d'un point fixe O à une vitesse 
 - Conchoïde de Nicomède
 - Cissoïde de Dioclès
 - Méthode des tangentes de Fermat
-- Méthode des normales de Descartes
+- Méthode des normales de [Descartes](https://kenji.blog/fr/p/descartes/)
 
 ### Chronologie
 | Année         | Événement                       |

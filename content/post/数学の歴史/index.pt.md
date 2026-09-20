@@ -22,7 +22,7 @@ Em um plano, uma semirreta OB gira em torno de um ponto fixo O com velocidade un
 - Concoide de Nicomedes
 - Cissoide de Diocles
 - Método das tangentes de Fermat
-- Método das normais de Descartes
+- Método das normais de [Descartes](https://kenji.blog/pt/p/descartes/)
 
 ### Cronologia
 | Ano         | Evento                       |

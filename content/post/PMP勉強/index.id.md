@@ -91,7 +91,7 @@ Artinya, sementara ada nilai pada item di sebelah kanan, kami lebih menghargai i
 - Servant Leadership
 - Tuckman Model (Forming, Storming, Norming, Performing, Adjourning)
 - Piagam Tim (Team Charter)
-- Planning Poker (Deret Fibonacci)
+- Planning Poker (Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/))
 - Retrospektif (Aktivitas refleksi)
 - Tim Virtual
 - Piagam Proyek (Project Charter)

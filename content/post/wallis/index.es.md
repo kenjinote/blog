@@ -59,7 +59,7 @@ graph TD
 
 ## Principales logros en matemáticas: La algebrización de la geometría y el desafío del infinito
 
-Habiendo asumido la cátedra saviliana, Wallis avanzó en su investigación matemática a un ritmo asombroso. Su mayor logro fue romper con los métodos geométricos clásicos y avanzar aún más en los métodos de geometría analítica de Descartes.
+Habiendo asumido la cátedra saviliana, Wallis avanzó en su investigación matemática a un ritmo asombroso. Su mayor logro fue romper con los métodos geométricos clásicos y avanzar aún más en los métodos de geometría analítica de [Descartes](https://kenji.blog/es/p/descartes/).
 
 ### Introducción del símbolo de infinito ' $\infty$ ' y 'De sectionibus conicis'
 

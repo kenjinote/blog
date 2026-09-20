@@ -72,9 +72,9 @@ int main() {
 
 Lo importante aquí es que `Factorial<5>::value` no se calcula en tiempo de ejecución, sino que se expande en tiempo de compilación. En el binario final se genera un código equivalente a `std::cout << "5! = " << 120 << std::endl;`. Esto reduce a cero la sobrecarga en tiempo de ejecución (overhead).
 
-### 2.2 Sucesión de Fibonacci y complejidad computacional
+### 2.2 Sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) y complejidad computacional
 
-A continuación, calculemos la sucesión de Fibonacci. La relación de recurrencia es la siguiente:
+A continuación, calculemos la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/). La relación de recurrencia es la siguiente:
 
 $$
 F_n = F_{n-1} + F_{n-2} \quad (F_0 = 0, F_1 = 1)

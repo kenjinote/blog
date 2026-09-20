@@ -116,7 +116,7 @@ int main() {
 
 En conséquence, la complexité temporelle de l'algorithme est de $O(\log(\min(a, b)))$ .
 
-Le pire des cas (où le nombre de divisions est maximisé) se produit lorsque deux nombres consécutifs de la suite de Fibonacci sont fournis. Par exemple, dans le processus de recherche du PGCD de $F_{n+2}$ et $F_{n+1}$ , le quotient est toujours de $1$ , passant continuellement à des nombres de Fibonacci plus petits.
+Le pire des cas (où le nombre de divisions est maximisé) se produit lorsque deux nombres consécutifs de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) sont fournis. Par exemple, dans le processus de recherche du PGCD de $F_{n+2}$ et $F_{n+1}$ , le quotient est toujours de $1$ , passant continuellement à des nombres de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) plus petits.
 
 ## Algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu
 

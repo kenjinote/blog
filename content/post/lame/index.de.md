@@ -109,9 +109,9 @@ In mathematischer Form ausgedrückt:
 
 $$ \text{Anzahl der Schritte} \le 5 \times \text{Anzahl der Stellen der kleineren Zahl} $$
 
-### 4.2 Tiefe Verbindung zur Fibonacci-Folge
+### 4.2 Tiefe Verbindung zur [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge
 
-Beim Beweis dieses Satzes entdeckte Lamé, dass der schlimmste Fall (also der mit den meisten Schritten) auftritt, wenn die Eingabe aus zwei aufeinanderfolgenden **Fibonacci-Zahlen** besteht. Durch die Nutzung der Wachstumsrate der Fibonacci-Folge und der Eigenschaften des Goldenen Schnitts leitete er diese elegante Obergrenze ab. Aufgrund dieser Leistung gilt Lamé als einer der "Väter der Komplexitätstheorie" in der modernen Informatik.
+Beim Beweis dieses Satzes entdeckte Lamé, dass der schlimmste Fall (also der mit den meisten Schritten) auftritt, wenn die Eingabe aus zwei aufeinanderfolgenden **[Fibonacci](https://kenji.blog/de/p/fibonacci/)-Zahlen** besteht. Durch die Nutzung der Wachstumsrate der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge und der Eigenschaften des Goldenen Schnitts leitete er diese elegante Obergrenze ab. Aufgrund dieser Leistung gilt Lamé als einer der "Väter der Komplexitätstheorie" in der modernen Informatik.
 
 ## 5. Beiträge zur Physik: Elastizitätstheorie und Lamé-Konstanten
 

@@ -116,7 +116,7 @@ Wie schnell ist der euklidische Algorithmus? Bezüglich seiner rechnerischen Kom
 
 Infolgedessen beträgt die Zeitkomplexität des Algorithmus $O(\log(\min(a, b)))$ .
 
-Das Worst-Case-Szenario (bei dem die Anzahl der Divisionen maximiert wird) tritt auf, wenn zwei aufeinanderfolgende Zahlen der Fibonacci-Folge angegeben werden. Beispielsweise ist bei der Berechnung des ggT von $F_{n+2}$ und $F_{n+1}$ der Quotient immer $1$ und geht kontinuierlich in kleinere Fibonacci-Zahlen über.
+Das Worst-Case-Szenario (bei dem die Anzahl der Divisionen maximiert wird) tritt auf, wenn zwei aufeinanderfolgende Zahlen der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge angegeben werden. Beispielsweise ist bei der Berechnung des ggT von $F_{n+2}$ und $F_{n+1}$ der Quotient immer $1$ und geht kontinuierlich in kleinere [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Zahlen über.
 
 ## Erweiterter euklidischer Algorithmus
 

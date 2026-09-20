@@ -94,7 +94,7 @@ the left, we value the items on the right more.
 - Servant Leadership
 - Tuckman's Model (Forming, Storming, Norming, Performing, Adjourning)
 - Team Charter
-- Planning Poker (Fibonacci sequence)
+- Planning Poker ([Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence)
 - Retrospective (Looking back activity)
 - Virtual Team
 - Project Charter

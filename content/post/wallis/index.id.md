@@ -59,7 +59,7 @@ graph TD
 
 ## Pencapaian Utama dalam Matematika: Aljabaritas Geometri dan Tantangan Tak Terhingga
 
-Setelah menduduki kursi Savilian, Wallis memajukan penelitian matematikanya dengan kecepatan yang mencengangkan. Pencapaian terbesarnya adalah melepaskan diri dari metode geometris klasik dan memajukan lebih jauh metode geometri analitis Descartes.
+Setelah menduduki kursi Savilian, Wallis memajukan penelitian matematikanya dengan kecepatan yang mencengangkan. Pencapaian terbesarnya adalah melepaskan diri dari metode geometris klasik dan memajukan lebih jauh metode geometri analitis [Descartes](https://kenji.blog/id/p/descartes/).
 
 ### Pengenalan Simbol Tak Terhingga ' $\infty$ ' dan 'De sectionibus conicis'
 

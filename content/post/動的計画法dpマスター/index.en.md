@@ -11,7 +11,7 @@ tags: ["Algorithm", "DP", "C++", "Python"]
 
 From competitive programming to practical algorithm design in business, **Dynamic Programming (DP)** appears in many scenarios and often becomes a wall for many programmers. "I can't formulate the recurrence relation", "Indices get buggy", "I can't even judge if the problem can be solved by DP"... many people might have such concerns.
 
-In this article, we will thoroughly cover everything from the essence of dynamic programming to specific approaches (top-down and bottom-up), and provide practical explanations through three representative problems (Fibonacci sequence, 0/1 Knapsack problem, and Longest Common Subsequence). We will provide implementation examples in both C++ and Python, offering a path to "completely master" it using formulas and diagrams. This will be a very lengthy article, but by the time you finish reading it to the end, your algorithm skills will surely have taken a leap forward.
+In this article, we will thoroughly cover everything from the essence of dynamic programming to specific approaches (top-down and bottom-up), and provide practical explanations through three representative problems ([Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence, 0/1 Knapsack problem, and Longest Common Subsequence). We will provide implementation examples in both C++ and Python, offering a path to "completely master" it using formulas and diagrams. This will be a very lengthy article, but by the time you finish reading it to the end, your algorithm skills will surely have taken a leap forward.
 
 ---
 
@@ -27,7 +27,7 @@ For dynamic programming to be established, the target problem needs to satisfy t
 
 This is the property where **the same subproblem repeatedly appears** in the process of solving a larger problem.
 
-For example, in the calculation of the Fibonacci sequence described later, the computation "finding the 3rd term" is required both when finding the 5th term and when finding the 4th term. If subproblems do not overlap (e.g., in divide-and-conquer algorithms like merge sort), there is no benefit in recording the solutions, so DP is not applicable. Precisely because they overlap, dramatic speedups become possible by saving the results of calculations once performed in memory (memoization or tabulation) and reusing them.
+For example, in the calculation of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence described later, the computation "finding the 3rd term" is required both when finding the 5th term and when finding the 4th term. If subproblems do not overlap (e.g., in divide-and-conquer algorithms like merge sort), there is no benefit in recording the solutions, so DP is not applicable. Precisely because they overlap, dramatic speedups become possible by saving the results of calculations once performed in memory (memoization or tabulation) and reusing them.
 
 ### 1-2. Optimal Substructure
 
@@ -66,10 +66,10 @@ This is an approach that starts from the smallest subproblem (base case) and fil
 
 ---
 
-## 3. Practical Part 1: Fibonacci Sequence
+## 3. Practical Part 1: [Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence
 
-First, as the most basic and easy-to-understand example, let's take up the Fibonacci sequence.
-The Fibonacci sequence is defined as follows:
+First, as the most basic and easy-to-understand example, let's take up the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence.
+The [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence is defined as follows:
 
 $$
 F(0) = 0, \quad F(1) = 1 \\
@@ -292,7 +292,7 @@ int main() {
 
 ### 4-4. Space Complexity Optimization (1D Array Conversion)
 
-When updating the 2D array $dp[i][w]$, you'll notice that you are always only referencing the previous row $dp[i-1]$. This is the same principle as the space optimization of the Fibonacci sequence.
+When updating the 2D array $dp[i][w]$, you'll notice that you are always only referencing the previous row $dp[i-1]$. This is the same principle as the space optimization of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence.
 Therefore, the array can be compressed into 1 dimension $dp[w]$. However, care is needed during the update. You need to loop the capacity $w$ **from the largest to the smallest (from back to front)**. If you update from the front, you'll end up referencing the "$i$-th state" that has just been updated within the same step, rather than the "$(i-1)$-th state", resulting in choosing the same item multiple times (this would end up as a solution for the "Unbounded Knapsack Problem").
 
 **Python Implementation (1D Conversion):**

@@ -94,7 +94,7 @@ nós valorizamos mais os itens à esquerda.
 - Liderança Servidora (Servant Leadership)
 - Modelo de Tuckman (Formação, Tormenta, Normalização, Desempenho, Dissolução)
 - Termo de Abertura da Equipe (Team Charter)
-- Planning Poker (Sequência de Fibonacci)
+- Planning Poker (Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/))
 - Retrospectiva (Atividade de reflexão)
 - Equipe Virtual
 - Termo de Abertura do Projeto (Project Charter)

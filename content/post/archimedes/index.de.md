@@ -10,29 +10,29 @@ tags: ["Archimedes", "Antikes Griechenland", "Geometrie", "Physik", "Infinitesim
 
 # 1. Einleitung: Der größte Intellekt der antiken Welt
 
-Archimedes (ca. 287 v. Chr. - ca. 212 v. Chr.) war ein antiker griechischer Mathematiker, Physiker, Ingenieur, Erfinder und Astronom. Er gilt weithin als einer der bedeutendsten Wissenschaftler der antiken Welt, und seine Errungenschaften legten den Grundstein für die moderne Wissenschaft und Mathematik. Geboren in Syrakus (auf der heutigen Insel Sizilien, Italien), wo er den größten Teil seines Lebens verbrachte, zeigte er außergewöhnliches Talent sowohl in der rein mathematischen Erforschung als auch bei praktischen technischen Erfindungen.
+[Archimedes](https://kenji.blog/de/p/archimedes/) (ca. 287 v. Chr. - ca. 212 v. Chr.) war ein antiker griechischer Mathematiker, Physiker, Ingenieur, Erfinder und Astronom. Er gilt weithin als einer der bedeutendsten Wissenschaftler der antiken Welt, und seine Errungenschaften legten den Grundstein für die moderne Wissenschaft und Mathematik. Geboren in Syrakus (auf der heutigen Insel Sizilien, Italien), wo er den größten Teil seines Lebens verbrachte, zeigte er außergewöhnliches Talent sowohl in der rein mathematischen Erforschung als auch bei praktischen technischen Erfindungen.
 
 In diesem Artikel werden wir tief in sein Genie eintauchen, von den dramatischen Anekdoten seines Lebens bis zu den erstaunlichen mathematischen und physikalischen Errungenschaften, die er hinterlassen hat. Indem wir den Verlauf seines Denkens nachzeichnen, können wir verstehen, wie altes Wissen mit der modernen Wissenschaft verbunden ist. Seine Beiträge sind nicht bloß historische Relikte, sondern repräsentieren genau jene Haltung der Erforschung universeller Wahrheiten, die das Fundament der modernen Wissenschaft und Technologie bildet.
 
 # 2. Leben und legendäre Episoden
 
-Ein Großteil der Aufzeichnungen über das Leben des Archimedes wurde von antiken Historikern wie Plutarch und Livius hinterlassen. Sein Leben ist von zahlreichen legendären Episoden geprägt.
+Ein Großteil der Aufzeichnungen über das Leben des [Archimedes](https://kenji.blog/de/p/archimedes/) wurde von antiken Historikern wie Plutarch und Livius hinterlassen. Sein Leben ist von zahlreichen legendären Episoden geprägt.
 
 ## 2.1 Die goldene Krone und "Heureka!"
 
-Die berühmteste Anekdote im Zusammenhang mit Archimedes ist die Überprüfung einer Krone, bekannt durch das Wort "Heureka!" (Ich hab's gefunden!). König Hieron II. von Syrakus gab einem Goldschmied reines Gold, um eine Krone anzufertigen, verdächtigte den Handwerker jedoch, betrogen zu haben, indem er dem Gold Silber beimischte. Der König befahl Archimedes, einen Weg zu finden, diesen Betrug aufzudecken, ohne die Krone zu beschädigen.
+Die berühmteste Anekdote im Zusammenhang mit [Archimedes](https://kenji.blog/de/p/archimedes/) ist die Überprüfung einer Krone, bekannt durch das Wort "Heureka!" (Ich hab's gefunden!). König Hieron II. von Syrakus gab einem Goldschmied reines Gold, um eine Krone anzufertigen, verdächtigte den Handwerker jedoch, betrogen zu haben, indem er dem Gold Silber beimischte. Der König befahl [Archimedes](https://kenji.blog/de/p/archimedes/), einen Weg zu finden, diesen Betrug aufzudecken, ohne die Krone zu beschädigen.
 
-Als Archimedes eines Tages in einem öffentlichen Badehaus in eine Wanne stieg, bemerkte er, dass der Wasserspiegel stieg, als sein Körper in das Wasser eintauchte. Er erkannte, dass dieses Phänomen genutzt werden konnte, um das Volumen der Krone genau zu messen. Es wird erzählt, dass er so außer sich vor Freude war, dass er vergaß, sich anzuziehen, und nackt auf die Straße stürmte, während er schrie: "Heureka! Heureka!"
+Als [Archimedes](https://kenji.blog/de/p/archimedes/) eines Tages in einem öffentlichen Badehaus in eine Wanne stieg, bemerkte er, dass der Wasserspiegel stieg, als sein Körper in das Wasser eintauchte. Er erkannte, dass dieses Phänomen genutzt werden konnte, um das Volumen der Krone genau zu messen. Es wird erzählt, dass er so außer sich vor Freude war, dass er vergaß, sich anzuziehen, und nackt auf die Straße stürmte, während er schrie: "Heureka! Heureka!"
 
 Diese Entdeckung entwickelte sich später zu dem als "Archimedisches Prinzip" bekannten Grundprinzip der Hydrostatik.
 
 ## 2.2 Die Verteidigung von Syrakus und wundersame Waffen
 
-Während des Zweiten Punischen Krieges (218 v. Chr. - 201 v. Chr.) wurde Syrakus von dem römischen General Marcus Claudius Marcellus belagert. Zu dieser Zeit quälte der bereits betagte Archimedes die römische Armee mit zahlreichen von ihm erfundenen Waffen.
+Während des Zweiten Punischen Krieges (218 v. Chr. - 201 v. Chr.) wurde Syrakus von dem römischen General Marcus Claudius Marcellus belagert. Zu dieser Zeit quälte der bereits betagte [Archimedes](https://kenji.blog/de/p/archimedes/) die römische Armee mit zahlreichen von ihm erfundenen Waffen.
 
 Zu den Waffen, die er erfunden haben soll, gehören folgende:
 
-- **Die Kralle des Archimedes** (The Claw of Archimedes): Eine riesige kranähnliche Maschine, die angeblich feindliche Schiffe aus dem Meer hob und zum Kentern brachte.
+- **Die Kralle des [Archimedes](https://kenji.blog/de/p/archimedes/)** (The Claw of [Archimedes](https://kenji.blog/de/p/archimedes/)): Eine riesige kranähnliche Maschine, die angeblich feindliche Schiffe aus dem Meer hob und zum Kentern brachte.
 - **Hitzestrahl** (Heat Ray): Eine Legende besagt, dass er eine große Anzahl von Spiegeln benutzte, um Sonnenlicht zu bündeln und auf römische Kriegsschiffe zu richten, wodurch diese in Brand gerieten. Der Wahrheitsgehalt dieser Legende wird bis heute debattiert.
 - **Leistungsstarke Katapulte** (Catapults): Sie schleuderten riesige Steine präzise aus der Ferne und zerstörten feindliche Formationen.
 
@@ -40,17 +40,17 @@ Dank dieser Verteidigungswaffen verbrachte die römische Armee mehrere Jahre mit
 
 ## 2.3 Ein tragisches Ende: "Störe meine Kreise nicht!"
 
-Im Jahr 212 v. Chr. fiel Syrakus schließlich an die römische Armee. General Marcellus schätzte das Genie des Archimedes sehr und gab den strengen Befehl, ihn lebend gefangen zu nehmen.
+Im Jahr 212 v. Chr. fiel Syrakus schließlich an die römische Armee. General Marcellus schätzte das Genie des [Archimedes](https://kenji.blog/de/p/archimedes/) sehr und gab den strengen Befehl, ihn lebend gefangen zu nehmen.
 
-Als jedoch ein römischer Soldat das Haus des Archimedes betrat, war dieser in geometrische Figuren vertieft, die er in den Sand gezeichnet hatte. Als der Soldat ihm befahl, seinen Namen zu nennen, weigerte er sich und sagte: "Störe meine Kreise nicht! (Noli turbare circulos meos!)" und wurde von dem wütenden Soldaten getötet. Marcellus trauerte zutiefst um diesen Tod und soll dem Testament des Archimedes folgend ein Grabmal errichtet haben, in das die Figur einer in einen Zylinder eingeschriebenen Kugel eingraviert war.
+Als jedoch ein römischer Soldat das Haus des [Archimedes](https://kenji.blog/de/p/archimedes/) betrat, war dieser in geometrische Figuren vertieft, die er in den Sand gezeichnet hatte. Als der Soldat ihm befahl, seinen Namen zu nennen, weigerte er sich und sagte: "Störe meine Kreise nicht! (Noli turbare circulos meos!)" und wurde von dem wütenden Soldaten getötet. Marcellus trauerte zutiefst um diesen Tod und soll dem Testament des [Archimedes](https://kenji.blog/de/p/archimedes/) folgend ein Grabmal errichtet haben, in das die Figur einer in einen Zylinder eingeschriebenen Kugel eingraviert war.
 
 # 3. Erstaunliche mathematische Errungenschaften
 
-Die wahre Größe des Archimedes liegt in seiner mathematischen Einsicht. Er erweiterte die Grenzen der damaligen Mathematik enorm und hinterließ einen massiven Einfluss auf künftige Mathematiker.
+Die wahre Größe des [Archimedes](https://kenji.blog/de/p/archimedes/) liegt in seiner mathematischen Einsicht. Er erweiterte die Grenzen der damaligen Mathematik enorm und hinterließ einen massiven Einfluss auf künftige Mathematiker.
 
 ## 3.1 Näherung von Pi ("Kreismessung")
 
-Archimedes bestimmte eine genaue Näherung für Pi ($\pi$), das Verhältnis des Umfangs eines Kreises zu seinem Durchmesser. Er benutzte die "Exhaustionsmethode" (Ausschöpfungsmethode), bei der der Umfang des Kreises von oben und unten mit ein- und umbeschriebenen regelmäßigen Polygonen eingeschlossen wurde.
+[Archimedes](https://kenji.blog/de/p/archimedes/) bestimmte eine genaue Näherung für Pi ($\pi$), das Verhältnis des Umfangs eines Kreises zu seinem Durchmesser. Er benutzte die "Exhaustionsmethode" (Ausschöpfungsmethode), bei der der Umfang des Kreises von oben und unten mit ein- und umbeschriebenen regelmäßigen Polygonen eingeschlossen wurde.
 
 Er begann mit einem regelmäßigen Sechseck und verdoppelte sukzessive die Anzahl der Seiten, bis er die Berechnung schließlich mit einem regelmäßigen 96-Eck durchführte. Als Ergebnis bewies er, dass der Wert von Pi $\pi$ in den folgenden Bereich fällt:
 
@@ -68,7 +68,7 @@ Das heißt, $3.1408 < \pi < 3.1429$, und er hatte damit einen auf zwei Dezimalst
 
 ## 3.2 Der Satz von Kugel und Zylinder ("Über Kugel und Zylinder")
 
-Die Errungenschaft, auf die Archimedes selbst am meisten stolz war, war die Entdeckung von Sätzen über die Oberfläche und das Volumen einer Kugel. Er bewies, dass es eine schöne mathematische Beziehung zwischen einer Kugel und einem umbeschriebenen Zylinder (einem Zylinder, dessen Höhe und Grundflächendurchmesser dem Durchmesser der Kugel entsprechen) gibt.
+Die Errungenschaft, auf die [Archimedes](https://kenji.blog/de/p/archimedes/) selbst am meisten stolz war, war die Entdeckung von Sätzen über die Oberfläche und das Volumen einer Kugel. Er bewies, dass es eine schöne mathematische Beziehung zwischen einer Kugel und einem umbeschriebenen Zylinder (einem Zylinder, dessen Höhe und Grundflächendurchmesser dem Durchmesser der Kugel entsprechen) gibt.
 
 Sei der Radius $r$, das Volumen der Kugel $V_{\text{Kugel}}$ und das Volumen des Zylinders $V_{\text{Zylinder}}$ sind wie folgt:
 
@@ -102,7 +102,7 @@ flowchart TD
 
 ## 3.3 Quadratur der Parabel ("Die Quadratur der Parabel")
 
-Archimedes entwickelte auch Methoden zur Bestimmung der von Kurven eingeschlossenen Flächen. Er bewies, dass die Fläche eines Parabelsegments, das durch das Schneiden einer Parabel mit einer Geraden entsteht, das $\frac{4}{3}$-fache der Fläche eines Dreiecks mit gleicher Grundfläche und Höhe beträgt.
+[Archimedes](https://kenji.blog/de/p/archimedes/) entwickelte auch Methoden zur Bestimmung der von Kurven eingeschlossenen Flächen. Er bewies, dass die Fläche eines Parabelsegments, das durch das Schneiden einer Parabel mit einer Geraden entsteht, das $\frac{4}{3}$-fache der Fläche eines Dreiecks mit gleicher Grundfläche und Höhe beträgt.
 
 Bei diesem Beweis wird das Konzept der Summe einer unendlichen geometrischen Reihe verwendet. Er schrieb eine unendliche Anzahl von Dreiecken in das Parabelsegment ein und berechnete die Summe ihrer Flächen.
 
@@ -114,7 +114,7 @@ Dies ist eines der ersten Beispiele in der Geschichte der Mathematik, bei dem ei
 
 ## 3.4 Erforschung gigantischer Zahlen ("Der Sandrechner")
 
-Im antiken Griechenland war das System zur Darstellung großer Zahlen unzureichend, und die "Myriade" (10.000) war die größte Basiseinheit. Da einige Menschen glaubten, dass "die Anzahl der Sandkörner, die das Universum füllen, unendlich ist", schrieb Archimedes ein Werk namens "Der Sandrechner", um dies zu widerlegen.
+Im antiken Griechenland war das System zur Darstellung großer Zahlen unzureichend, und die "Myriade" (10.000) war die größte Basiseinheit. Da einige Menschen glaubten, dass "die Anzahl der Sandkörner, die das Universum füllen, unendlich ist", schrieb [Archimedes](https://kenji.blog/de/p/archimedes/) ein Werk namens "Der Sandrechner", um dies zu widerlegen.
 
 Er entwarf selbst ein neues Zahlensystem, um gigantische Zahlen auszudrücken, und ging von einem riesigen Universumsmodell aus, das auf der heliozentrischen Theorie von Aristarchos basierte. Anschließend berechnete er die Anzahl der Sandkörner, die erforderlich wären, um dieses Universum lückenlos zu füllen.
 
@@ -122,17 +122,17 @@ Als Ergebnis zeigte er, dass die Zahl (in moderner Notation) nicht größer als 
 
 ## 3.5 Die Anfänge der Infinitesimalrechnung ("Die Methode")
 
-Im Jahr 1906 wurde in Konstantinopel (dem heutigen Istanbul) ein Palimpsest (ein Manuskript, dessen Text abgekratzt und wiederverwendet wurde) entdeckt, das viele der verlorenen Werke des Archimedes enthielt. Dieses "Archimedes-Palimpsest" enthielt eine unschätzbare Abhandlung mit dem Titel "Die Methode der mechanischen Lehrsätze".
+Im Jahr 1906 wurde in Konstantinopel (dem heutigen Istanbul) ein Palimpsest (ein Manuskript, dessen Text abgekratzt und wiederverwendet wurde) entdeckt, das viele der verlorenen Werke des [Archimedes](https://kenji.blog/de/p/archimedes/) enthielt. Dieses "[Archimedes](https://kenji.blog/de/p/archimedes/)-Palimpsest" enthielt eine unschätzbare Abhandlung mit dem Titel "Die Methode der mechanischen Lehrsätze".
 
-In diesem Werk offenbart Archimedes seinen "Denkprozess", wie er zu zahlreichen geometrischen Entdeckungen gelangte. Er zerlegte Figuren in Ansammlungen unendlich dünner "Linien" oder "Ebenen" und schätzte ihre Flächen und Volumen mithilfe eines mechanischen Modells ab, bei dem sie auf einer Waage balanciert wurden. Dieser Ansatz entspricht im Wesentlichen der "Integralrechnung", die in späteren Epochen von [Isaac Newton](https://kenji.blog/de/p/newton/) und [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) etabliert wurde, und zeigt, dass Archimedes dem Konzept der Infinitesimalrechnung sehr nahe gekommen war.
+In diesem Werk offenbart [Archimedes](https://kenji.blog/de/p/archimedes/) seinen "Denkprozess", wie er zu zahlreichen geometrischen Entdeckungen gelangte. Er zerlegte Figuren in Ansammlungen unendlich dünner "Linien" oder "Ebenen" und schätzte ihre Flächen und Volumen mithilfe eines mechanischen Modells ab, bei dem sie auf einer Waage balanciert wurden. Dieser Ansatz entspricht im Wesentlichen der "Integralrechnung", die in späteren Epochen von [Isaac Newton](https://kenji.blog/de/p/newton/) und [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) etabliert wurde, und zeigt, dass [Archimedes](https://kenji.blog/de/p/archimedes/) dem Konzept der Infinitesimalrechnung sehr nahe gekommen war.
 
 ## 3.6 Archimedische Körper
 
-Archimedes erweiterte die platonischen Körper (regelmäßige Polyeder) und entdeckte 13 Arten von halbregelmäßigen Polyedern (Archimedische Körper), die aus verschiedenen Arten regelmäßiger Polygone bestehen und an allen Ecken die gleiche Konfiguration aufweisen. Obwohl sein Originalwerk verloren ging, wurde es später von Mathematikern wie Pappos zitiert. Auch diese spielen in der modernen Kristallographie und Chemie (beispielsweise in der Struktur des Fullerenmoleküls) eine wichtige Rolle.
+[Archimedes](https://kenji.blog/de/p/archimedes/) erweiterte die platonischen Körper (regelmäßige Polyeder) und entdeckte 13 Arten von halbregelmäßigen Polyedern (Archimedische Körper), die aus verschiedenen Arten regelmäßiger Polygone bestehen und an allen Ecken die gleiche Konfiguration aufweisen. Obwohl sein Originalwerk verloren ging, wurde es später von Mathematikern wie Pappos zitiert. Auch diese spielen in der modernen Kristallographie und Chemie (beispielsweise in der Struktur des Fullerenmoleküls) eine wichtige Rolle.
 
 # 4. Beiträge zur Physik und Ingenieurwissenschaft
 
-Archimedes machte bahnbrechende Entdeckungen nicht nur in der Mathematik, sondern auch in den Bereichen Physik und Ingenieurwesen. Seine Forschung war eine großartige Verschmelzung von Theorie und Praxis.
+[Archimedes](https://kenji.blog/de/p/archimedes/) machte bahnbrechende Entdeckungen nicht nur in der Mathematik, sondern auch in den Bereichen Physik und Ingenieurwesen. Seine Forschung war eine großartige Verschmelzung von Theorie und Praxis.
 
 ## 4.1 Das Archimedische Prinzip (Hydrostatik)
 
@@ -152,7 +152,7 @@ flowchart LR
 
 ## 4.2 Das Hebelgesetz und der Schwerpunkt
 
-Archimedes legte auch den Grundstein für die Mechanik. In "Über das Gleichgewicht ebener Flächen" bewies er das "Hebelgesetz" mathematisch. Er formulierte die Bedingungen, unter denen Gegenstände an beiden Enden eines Hebels im Gleichgewicht sind, und soll folgende berühmte Worte hinterlassen haben:
+[Archimedes](https://kenji.blog/de/p/archimedes/) legte auch den Grundstein für die Mechanik. In "Über das Gleichgewicht ebener Flächen" bewies er das "Hebelgesetz" mathematisch. Er formulierte die Bedingungen, unter denen Gegenstände an beiden Enden eines Hebels im Gleichgewicht sind, und soll folgende berühmte Worte hinterlassen haben:
 
 "Gebt mir einen festen Punkt, und ich werde die Erde aus den Angeln heben."
 
@@ -166,12 +166,12 @@ Sie soll erfunden worden sein, als er sich in Ägypten aufhielt, um Wasser aus d
 
 # 5. Einfluss auf die Nachwelt und Vermächtnis
 
-Die von Archimedes hinterlassenen Werke wurden zu einer Bibel für Gelehrte von der hellenistischen Periode bis zur römischen Ära und später in der mittelalterlichen arabischen Welt und im Europa der Renaissance. Galileo Galilei lobte Archimedes als "übermenschliche Figur" und studierte dessen Methoden mit Begeisterung. Johannes Kepler, [René Descartes](https://kenji.blog/de/p/descartes/) und Newton, der die Infinitesimalrechnung perfektionierte, wurden ebenfalls direkt und indirekt stark von Archimedes' Schriften beeinflusst.
+Die von [Archimedes](https://kenji.blog/de/p/archimedes/) hinterlassenen Werke wurden zu einer Bibel für Gelehrte von der hellenistischen Periode bis zur römischen Ära und später in der mittelalterlichen arabischen Welt und im Europa der Renaissance. Galileo Galilei lobte [Archimedes](https://kenji.blog/de/p/archimedes/) als "übermenschliche Figur" und studierte dessen Methoden mit Begeisterung. Johannes Kepler, [René Descartes](https://kenji.blog/de/p/descartes/) und Newton, der die Infinitesimalrechnung perfektionierte, wurden ebenfalls direkt und indirekt stark von [Archimedes](https://kenji.blog/de/p/archimedes/)' Schriften beeinflusst.
 
-Sein Forschergeist und seine Methodik strahlen nicht nur als antike Relikte weiter, sondern als Archetyp des wissenschaftlichen Denkens. Archimedes ist die Person, die im Alleingang die drei Säulen der modernen Wissenschaft verkörperte: strenge Beweisführung in der Mathematik, mathematische Modellierung physikalischer Phänomene und praktische technologische Entwicklung unter Anwendung der Theorie.
+Sein Forschergeist und seine Methodik strahlen nicht nur als antike Relikte weiter, sondern als Archetyp des wissenschaftlichen Denkens. [Archimedes](https://kenji.blog/de/p/archimedes/) ist die Person, die im Alleingang die drei Säulen der modernen Wissenschaft verkörperte: strenge Beweisführung in der Mathematik, mathematische Modellierung physikalischer Phänomene und praktische technologische Entwicklung unter Anwendung der Theorie.
 
 # 6. Fazit
 
-Archimedes, das Genie von Syrakus, besaß einen überwältigenden Intellekt, der in der antiken Welt seinesgleichen suchte. Sein Ausruf "Heureka" wird noch heute als Phrase weitergegeben, die die Freude an wissenschaftlichen Entdeckungen symbolisiert. Seine Errungenschaften umfassen ein breites Spektrum, von der präzisen Berechnung von Pi über die Entdeckung der schönen Beziehung zwischen Kugel und Zylinder bis hin zur Vorwegnahme von Konzepten der Infinitesimalrechnung und der Etablierung der Grundlagen von Hydrostatik und Mechanik.
+[Archimedes](https://kenji.blog/de/p/archimedes/), das Genie von Syrakus, besaß einen überwältigenden Intellekt, der in der antiken Welt seinesgleichen suchte. Sein Ausruf "Heureka" wird noch heute als Phrase weitergegeben, die die Freude an wissenschaftlichen Entdeckungen symbolisiert. Seine Errungenschaften umfassen ein breites Spektrum, von der präzisen Berechnung von Pi über die Entdeckung der schönen Beziehung zwischen Kugel und Zylinder bis hin zur Vorwegnahme von Konzepten der Infinitesimalrechnung und der Etablierung der Grundlagen von Hydrostatik und Mechanik.
 
-Seine letzten Worte "Störe meine Kreise nicht" zeugen von seiner reinen und außergewöhnlichen Besessenheit von der Suche nach Wahrheit. Auch heute, über 2.000 Jahre später, stützen das Wissen und die Inspiration, die Archimedes hinterlassen hat, weiterhin das Fundament unserer Gesellschaft als ewiger Wegweiser, der die Entwicklung von Wissenschaft und Mathematik beleuchtet.
+Seine letzten Worte "Störe meine Kreise nicht" zeugen von seiner reinen und außergewöhnlichen Besessenheit von der Suche nach Wahrheit. Auch heute, über 2.000 Jahre später, stützen das Wissen und die Inspiration, die [Archimedes](https://kenji.blog/de/p/archimedes/) hinterlassen hat, weiterhin das Fundament unserer Gesellschaft als ewiger Wegweiser, der die Entwicklung von Wissenschaft und Mathematik beleuchtet.

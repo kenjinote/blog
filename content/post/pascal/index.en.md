@@ -23,7 +23,7 @@ His life was a constant battle with illness, and he passed away at the young age
 ### 2.2. Move to Paris and Étienne's Educational Policy
 In 1631, to provide his children with the best possible education, Étienne moved the family to Paris. Dissatisfied with the school education of the time, Étienne chose to become a private tutor to his children himself. His educational policy was very unique: "Do not teach mathematics, which is an overly abstract subject, until the child's reason is sufficiently developed." He prioritized languages and history, and eliminated all mathematical books from the house.
 
-However, this "prohibition" paradoxically stimulated young Blaise's curiosity intensely. At the age of 12, Blaise began exploring geometry on his own during his playtime. Drawing figures on the floor with charcoal, he independently proved the 32nd proposition in [Euclid](https://kenji.blog/en/p/euclid/)'s *Elements*: "The sum of the interior angles of a triangle is equal to two right angles (180 degrees)." Witnessing this overwhelming glimpse of talent, his father changed his policy, allowed him to study mathematics, and began taking him to the gatherings of Europe's greatest intellectuals hosted by Father Mersenne (the predecessor of the French Academy of Sciences).
+However, this "prohibition" paradoxically stimulated young Blaise's curiosity intensely. At the age of 12, Blaise began exploring geometry on his own during his playtime. Drawing figures on the floor with charcoal, he independently proved the 32nd proposition in [Euclid](https://kenji.blog/en/p/euclid/)'s *Elements*: "The sum of the interior angles of a triangle is equal to two right angles (180 degrees)." Witnessing this overwhelming glimpse of talent, his father changed his policy, allowed him to study mathematics, and began taking him to the gatherings of Europe's greatest intellectuals hosted by Father [Mersenne](https://kenji.blog/en/p/mersenne/) (the predecessor of the French Academy of Sciences).
 
 ## 3. Innovative Achievements in Mathematics
 
@@ -31,7 +31,7 @@ Pascal's mathematical talent blossomed early in his teenage years. His research 
 
 ### 3.1. Pioneering Projective Geometry: Pascal's Theorem (Mystic Hexagram)
 
-In 1639, 16-year-old Pascal encountered the projective geometry works of Girard Desargues at the Mersenne Academy. Deeply understanding Desargues' ideas, Pascal discovered a groundbreaking theorem concerning conic sections and published it on a single sheet of paper (essay). This is known today as **Pascal's theorem**.
+In 1639, 16-year-old Pascal encountered the projective geometry works of Girard Desargues at the [Mersenne](https://kenji.blog/en/p/mersenne/) Academy. Deeply understanding Desargues' ideas, Pascal discovered a groundbreaking theorem concerning conic sections and published it on a single sheet of paper (essay). This is known today as **Pascal's theorem**.
 
 Pascal's theorem holds for any hexagon inscribed in a conic section (ellipse, parabola, hyperbola, and circle).
 

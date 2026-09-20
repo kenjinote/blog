@@ -26,11 +26,11 @@ Pada tahun 1906, pada usia 18 tahun, Mordell pergi ke Inggris sendirian dengan u
 
 Pusat penelitian Mordell selalu pada **persamaan Diophantine**. Persamaan Diophantine adalah masalah mencari solusi bilangan bulat atau rasional untuk persamaan polinomial dengan koefisien bilangan bulat. Dinamai menurut nama matematikawan Yunani kuno [Diophantus](https://kenji.blog/id/p/diophantus/).
 
-Contoh paling terkenal dari persamaan Diophantine adalah yang terkait dengan teorema Pythagoras:
+Contoh paling terkenal dari persamaan Diophantine adalah yang terkait dengan teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/):
 
 $$ x^2 + y^2 = z^2 $$
 
-Solusi bilangan bulat untuk persamaan ini disebut triple Pythagoras, dan diketahui jumlahnya tak terhingga. Namun, seiring dengan meningkatnya derajat, masalahnya dengan cepat menjadi sulit. Persamaan berikut, yang dikenal dari [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/), adalah contoh utama:
+Solusi bilangan bulat untuk persamaan ini disebut triple [Pythagoras](https://kenji.blog/id/p/pythagoras/), dan diketahui jumlahnya tak terhingga. Namun, seiring dengan meningkatnya derajat, masalahnya dengan cepat menjadi sulit. Persamaan berikut, yang dikenal dari [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/), adalah contoh utama:
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 

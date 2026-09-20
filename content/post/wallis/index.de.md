@@ -59,7 +59,7 @@ graph TD
 
 ## Wichtige Errungenschaften in der Mathematik: Die Algebraisierung der Geometrie und die Herausforderung der Unendlichkeit
 
-Nachdem er den savilianischen Lehrstuhl übernommen hatte, trieb Wallis seine mathematischen Forschungen in einem erstaunlichen Tempo voran. Seine größte Errungenschaft bestand darin, sich von klassischen geometrischen Methoden zu lösen und Descartes' Methoden der analytischen Geometrie weiterzuentwickeln.
+Nachdem er den savilianischen Lehrstuhl übernommen hatte, trieb Wallis seine mathematischen Forschungen in einem erstaunlichen Tempo voran. Seine größte Errungenschaft bestand darin, sich von klassischen geometrischen Methoden zu lösen und [Descartes](https://kenji.blog/de/p/descartes/)' Methoden der analytischen Geometrie weiterzuentwickeln.
 
 ### Einführung des Unendlichkeitssymbols ' $\infty$ ' und 'De sectionibus conicis'
 

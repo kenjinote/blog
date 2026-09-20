@@ -113,7 +113,7 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 > There is no royal road to geometry. ([Euclid](https://kenji.blog/en/p/euclid/))
 
-> Give me a place to stand, and I shall move the earth. (Archimedes)
+> Give me a place to stand, and I shall move the earth. ([Archimedes](https://kenji.blog/en/p/archimedes/))
 
 ## IT and Computer Science
 

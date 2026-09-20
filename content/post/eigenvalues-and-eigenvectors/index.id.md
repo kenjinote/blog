@@ -178,7 +178,7 @@ $$
 D^{100} = \begin{pmatrix} 2^{100} & 0 \\ 0 & 5^{100} \end{pmatrix}
 $$
 
-Properti ini merupakan teknik yang sangat penting saat memprediksi keadaan jangka panjang dalam model probabilitas seperti [Rantai Markov](https://kenji.blog/id/p/markov-chain/), saat menyelesaikan sistem persamaan diferensial, atau bahkan saat mencari suku umum barisan Fibonacci.
+Properti ini merupakan teknik yang sangat penting saat memprediksi keadaan jangka panjang dalam model probabilitas seperti [Rantai Markov](https://kenji.blog/id/p/markov-chain/), saat menyelesaikan sistem persamaan diferensial, atau bahkan saat mencari suku umum barisan [Fibonacci](https://kenji.blog/id/p/fibonacci/).
 
 ## Aplikasi [Nilai Eigen dan Vektor Eigen](https://kenji.blog/id/p/eigenvalues-and-eigenvectors/) di Dunia Nyata
 

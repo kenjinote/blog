@@ -11,7 +11,7 @@ tags: ["Algorithm", "DP", "C++", "Python"]
 
 Von der Wettbewerbsprogrammierung bis zum praktischen Algorithmus-Design taucht sie in vielen Situationen auf und wird für viele Programmierer zur Hürde: **die Dynamische Programmierung (Dynamic Programming, kurz DP)**. "Ich kann keine Rekursionsgleichung aufstellen", "Die Indizes sind fehlerhaft", "Ich kann nicht einmal beurteilen, ob es sich um ein Problem handelt, das mit DP gelöst werden kann"... Viele von Ihnen haben wahrscheinlich mit solchen Problemen zu kämpfen.
 
-In diesem Artikel werden wir alles ausführlich behandeln: vom Wesen der dynamischen Programmierung über konkrete Ansätze (Top-Down und Bottom-Up) bis hin zu praktischen Erklärungen anhand von drei repräsentativen Problemen (Fibonacci-Folge, 0/1-Rucksackproblem und längste gemeinsame Teilfolge). Wir zeigen Implementierungsbeispiele sowohl in C++ als auch in Python und bieten einen Weg zur "vollständigen Beherrschung" mit Hilfe von mathematischen Formeln und Illustrationen. Es ist ein sehr langer Artikel, aber wenn Sie ihn bis zum Ende gelesen haben, wird Ihre Fähigkeit, Algorithmen zu verstehen, mit Sicherheit einen großen Sprung gemacht haben.
+In diesem Artikel werden wir alles ausführlich behandeln: vom Wesen der dynamischen Programmierung über konkrete Ansätze (Top-Down und Bottom-Up) bis hin zu praktischen Erklärungen anhand von drei repräsentativen Problemen ([Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge, 0/1-Rucksackproblem und längste gemeinsame Teilfolge). Wir zeigen Implementierungsbeispiele sowohl in C++ als auch in Python und bieten einen Weg zur "vollständigen Beherrschung" mit Hilfe von mathematischen Formeln und Illustrationen. Es ist ein sehr langer Artikel, aber wenn Sie ihn bis zum Ende gelesen haben, wird Ihre Fähigkeit, Algorithmen zu verstehen, mit Sicherheit einen großen Sprung gemacht haben.
 
 ---
 
@@ -27,7 +27,7 @@ Damit die Dynamische Programmierung angewendet werden kann, muss das zu lösende
 
 Diese Eigenschaft bedeutet, dass im Prozess der Lösung eines großen Problems **dieselben Teilprobleme immer wieder auftreten**.
 
-Zum Beispiel wird bei der später erläuterten Berechnung der Fibonacci-Folge die Berechnung zur "Ermittlung des 3. Terms" sowohl bei der Ermittlung des 5. als auch des 4. Terms benötigt. Wenn sich Teilprobleme nicht überlappen (z. B. bei Divide-and-Conquer-Verfahren wie Merge Sort), gibt es keinen Vorteil, Lösungen zu speichern, weshalb DP dort nicht anwendbar ist. Gerade weil sie sich überlappen, wird durch das Speichern einmal berechneter Ergebnisse im Speicher (Memoisierung oder Tabellierung) und deren Wiederverwendung eine drastische Geschwindigkeitssteigerung möglich.
+Zum Beispiel wird bei der später erläuterten Berechnung der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge die Berechnung zur "Ermittlung des 3. Terms" sowohl bei der Ermittlung des 5. als auch des 4. Terms benötigt. Wenn sich Teilprobleme nicht überlappen (z. B. bei Divide-and-Conquer-Verfahren wie Merge Sort), gibt es keinen Vorteil, Lösungen zu speichern, weshalb DP dort nicht anwendbar ist. Gerade weil sie sich überlappen, wird durch das Speichern einmal berechneter Ergebnisse im Speicher (Memoisierung oder Tabellierung) und deren Wiederverwendung eine drastische Geschwindigkeitssteigerung möglich.
 
 ### 1-2. Optimale Teilstruktur (Optimal Substructure)
 
@@ -66,10 +66,10 @@ Dies ist ein Ansatz, der beim kleinsten Teilproblem (Basisfall) beginnt und die 
 
 ---
 
-## 3. Praxis Teil 1: Fibonacci-Folge
+## 3. Praxis Teil 1: [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge
 
-Zunächst betrachten wir als grundlegendstes und verständlichstes Beispiel die Fibonacci-Folge.
-Die Fibonacci-Folge ist wie folgt definiert:
+Zunächst betrachten wir als grundlegendstes und verständlichstes Beispiel die [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge.
+Die [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge ist wie folgt definiert:
 
 $$
 F(0) = 0, \quad F(1) = 1 \\
@@ -292,7 +292,7 @@ int main() {
 
 ### 4-4. Optimierung der Speicherkomplexität (1D-Array)
 
-Wir stellen fest, dass bei der Aktualisierung des 2D-Arrays $dp[i][w]$ immer nur auf die vorherige Zeile $dp[i-1]$ zugegriffen wird. Das ist dasselbe Prinzip wie bei der Speicheroptimierung der Fibonacci-Folge.
+Wir stellen fest, dass bei der Aktualisierung des 2D-Arrays $dp[i][w]$ immer nur auf die vorherige Zeile $dp[i-1]$ zugegriffen wird. Das ist dasselbe Prinzip wie bei der Speicheroptimierung der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge.
 Daher können wir das Array in ein eindimensionales Array $dp[w]$ komprimieren. Bei der Aktualisierung ist jedoch Vorsicht geboten: Wir müssen die Kapazität $w$ **von groß nach klein (von hinten nach vorne)** durchlaufen. Wenn wir von vorne aktualisieren, würden wir auf den soeben im selben Schritt aktualisierten "$i$-ten Zustand" anstelle des "$i-1$-ten Zustands" zugreifen, was dazu führen würde, dass wir denselben Gegenstand mehrmals auswählen (dies wäre die Lösung für das "Rucksackproblem ohne Mengenbegrenzung").
 
 **Python-Implementierung (Eindimensional):**

@@ -88,18 +88,18 @@ flowchart TD
     H --> I["Demonstração concluída: V - E + F = 2"]
 ```
 
-## O Manuscrito Secreto de Descartes: Outra História de Descoberta
+## O Manuscrito Secreto de [Descartes](https://kenji.blog/pt/p/descartes/): Outra História de Descoberta
 
 Na verdade, cerca de um século antes de Euler publicar este teorema, o filósofo e matemático francês [René Descartes](https://kenji.blog/pt/p/descartes/) já havia chegado essencialmente ao mesmo resultado.
-Descartes concentrou-se no conceito de "defeito angular" nos vértices de um poliedro.
+[Descartes](https://kenji.blog/pt/p/descartes/) concentrou-se no conceito de "defeito angular" nos vértices de um poliedro.
 A soma dos ângulos que se encontram em um único vértice é de $360^\circ$ em um plano, mas no vértice de um sólido, é sempre menor que $360^\circ$. A essa diferença para chegar a $360^\circ$ dá-se o nome de "defeito angular".
 
-Descartes descobriu um teorema surpreendente: "Se você somar os defeitos angulares de todos os vértices, o total será sempre de $720^\circ$ para qualquer poliedro."
+[Descartes](https://kenji.blog/pt/p/descartes/) descobriu um teorema surpreendente: "Se você somar os defeitos angulares de todos os vértices, o total será sempre de $720^\circ$ para qualquer poliedro."
 Expresso como uma fórmula:
 
 $$ \sum (\text{Defeito angular}) = 720^\circ $$
 
-Este teorema é matematicamente equivalente à fórmula de Euler $V - E + F = 2$. No entanto, Descartes nunca publicou esta descoberta, mantendo-a oculta num manuscrito encriptado. Após a sua morte, o manuscrito foi decifrado por Leibniz, mas não se tornou amplamente conhecido. Consequentemente, esta grande propriedade foi redescoberta por Euler e passou à história como a "Fórmula de Euler".
+Este teorema é matematicamente equivalente à fórmula de Euler $V - E + F = 2$. No entanto, [Descartes](https://kenji.blog/pt/p/descartes/) nunca publicou esta descoberta, mantendo-a oculta num manuscrito encriptado. Após a sua morte, o manuscrito foi decifrado por Leibniz, mas não se tornou amplamente conhecido. Consequentemente, esta grande propriedade foi redescoberta por Euler e passou à história como a "Fórmula de Euler".
 
 ## O Nascimento da Topologia: "Geometria da Folha de Borracha"
 

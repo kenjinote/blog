@@ -15,7 +15,7 @@ tags:
 
 In the world of mathematics, there are concepts that act like "magic bridges," connecting seemingly unrelated fields. One of these is the **Generating Function**. By transforming a discrete "sequence" into a continuous "function," complex combinatorial problems can be reduced to algebraic calculations.
 
-This article starts with the basic idea of generating functions, and explains in detail their amazing power—from calculating coin payment combinations to deriving the general term of the Fibonacci sequence. Furthermore, we will touch on applications to Formal Power Series (FPS) in algorithms and competitive programming.
+This article starts with the basic idea of generating functions, and explains in detail their amazing power—from calculating coin payment combinations to deriving the general term of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence. Furthermore, we will touch on applications to Formal Power Series (FPS) in algorithms and competitive programming.
 
 ## 1. What is a Generating Function?
 
@@ -75,9 +75,9 @@ $$
 
 The coefficient of $x^n$ upon expansion is $\sum_{k=0}^{n} a_k b_{n-k}$. This is called **Convolution**. In the coin example, the addition of combinations like "make $k$ yen with 1-yen coins and $n-k$ yen with 2-yen coins" is automatically calculated by this product of functions.
 
-## 3. Application to the Fibonacci Sequence
+## 3. Application to the [Fibonacci](https://kenji.blog/en/p/fibonacci/) Sequence
 
-Next, as a more advanced application, let's find the general term of the Fibonacci sequence. The Fibonacci sequence $F_n$ is defined as follows:
+Next, as a more advanced application, let's find the general term of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence. The [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence $F_n$ is defined as follows:
 
 *   $F_0 = 0$
 *   $F_1 = 1$
@@ -100,13 +100,13 @@ $$
 F(x) = x + x F(x) + x^2 F(x)
 $$
 
-Solving this equation for $F(x)$ gives the generating function for the Fibonacci sequence.
+Solving this equation for $F(x)$ gives the generating function for the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence.
 
 $$
 F(x) = \frac{x}{1 - x - x^2}
 $$
 
-Amazingly, the information of the infinitely continuing Fibonacci sequence has been condensed into a single simple fractional function.
+Amazingly, the information of the infinitely continuing [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence has been condensed into a single simple fractional function.
 
 ### Partial Fraction Decomposition and the General Term
 

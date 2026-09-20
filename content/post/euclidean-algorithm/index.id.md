@@ -116,7 +116,7 @@ Seberapa cepat algoritma [Euclide](https://kenji.blog/id/p/euclid/)an? Mengenai 
 
 Sebagai hasil, kompleksitas waktu algoritma adalah $O(\log(\min(a, b)))$ .
 
-Skenario terburuk (di mana jumlah pembagian dimaksimalkan) terjadi ketika dua bilangan berurutan dari deret Fibonacci disediakan. Misalnya, dalam proses mencari FPB dari $F_{n+2}$ dan $F_{n+1}$ , hasil baginya selalu $1$ , secara kontinu bertransisi ke bilangan Fibonacci yang lebih kecil.
+Skenario terburuk (di mana jumlah pembagian dimaksimalkan) terjadi ketika dua bilangan berurutan dari deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) disediakan. Misalnya, dalam proses mencari FPB dari $F_{n+2}$ dan $F_{n+1}$ , hasil baginya selalu $1$ , secara kontinu bertransisi ke bilangan [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang lebih kecil.
 
 ## [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas
 

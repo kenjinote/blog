@@ -28,7 +28,7 @@ tags:
 
 ### 2.2 希腊化文化与亚历山大港
 
-当时的亚历山大港是希腊化文化和学术的中心，拥有庞大的图书馆（亚历山大图书馆），是众多学者聚集的智慧枢纽。在这个汇聚了希腊、埃及、巴比伦甚至印度知识的城市里，[丢番图](https://kenji.blog/zh-cn/p/diophantus/)能够接触到大量过去的数学遗产。与[欧几里得](https://kenji.blog/zh-cn/p/euclid/)（[Euclid](https://kenji.blog/zh-cn/p/euclid/)）、阿基米德（Archimedes）、阿波罗尼奥斯（Apollonius）等伟大希腊数学家建立的几何学传统不同，有理论认为[丢番图](https://kenji.blog/zh-cn/p/diophantus/)受到了巴比伦代数方法的强烈影响。
+当时的亚历山大港是希腊化文化和学术的中心，拥有庞大的图书馆（亚历山大图书馆），是众多学者聚集的智慧枢纽。在这个汇聚了希腊、埃及、巴比伦甚至印度知识的城市里，[丢番图](https://kenji.blog/zh-cn/p/diophantus/)能够接触到大量过去的数学遗产。与[欧几里得](https://kenji.blog/zh-cn/p/euclid/)（[Euclid](https://kenji.blog/zh-cn/p/euclid/)）、阿基米德（[Archimedes](https://kenji.blog/zh-cn/p/archimedes/)）、阿波罗尼奥斯（Apollonius）等伟大希腊数学家建立的几何学传统不同，有理论认为[丢番图](https://kenji.blog/zh-cn/p/diophantus/)受到了巴比伦代数方法的强烈影响。
 
 ```mermaid
 timeline

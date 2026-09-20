@@ -116,7 +116,7 @@ Quão rápido é o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)? Em 
 
 Como resultado, a complexidade de tempo do algoritmo é $O(\log(\min(a, b)))$ .
 
-O pior cenário (onde o número de divisões é maximizado) ocorre quando são fornecidos dois números consecutivos da sequência de Fibonacci. Por exemplo, no processo de encontrar o MDC de $F_{n+2}$ e $F_{n+1}$ , o quociente é sempre $1$ , em transição contínua para números menores de Fibonacci.
+O pior cenário (onde o número de divisões é maximizado) ocorre quando são fornecidos dois números consecutivos da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/). Por exemplo, no processo de encontrar o MDC de $F_{n+2}$ e $F_{n+1}$ , o quociente é sempre $1$ , em transição contínua para números menores de [Fibonacci](https://kenji.blog/pt/p/fibonacci/).
 
 ## Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido
 

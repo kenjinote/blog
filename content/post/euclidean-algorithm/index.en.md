@@ -116,7 +116,7 @@ How fast is the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm? Regardin
 
 As a result, the time complexity of the algorithm is $O(\log(\min(a, b)))$.
 
-The worst-case scenario (where the number of divisions is maximized) occurs when two consecutive numbers of the Fibonacci sequence are provided. For example, in the process of finding the GCD of $F_{n+2}$ and $F_{n+1}$, the quotient is always $1$, continuously transitioning to smaller Fibonacci numbers.
+The worst-case scenario (where the number of divisions is maximized) occurs when two consecutive numbers of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence are provided. For example, in the process of finding the GCD of $F_{n+2}$ and $F_{n+1}$, the quotient is always $1$, continuously transitioning to smaller [Fibonacci](https://kenji.blog/en/p/fibonacci/) numbers.
 
 ## Extended [Euclide](https://kenji.blog/en/p/euclid/)an Algorithm
 

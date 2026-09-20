@@ -72,9 +72,9 @@ int main() {
 
 Ce qui est important ici, c'est que `Factorial<5>::value` n'est pas calculé à l'exécution. Il est développé à la compilation, et le binaire final contient un code équivalent à `std::cout << "5! = " << 120 << std::endl;`. Cela permet d'obtenir un surcoût d'exécution nul.
 
-### 2.2 Suite de Fibonacci et complexité temporelle
+### 2.2 Suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) et complexité temporelle
 
-Ensuite, calculons la suite de Fibonacci. La relation de récurrence est la suivante :
+Ensuite, calculons la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/). La relation de récurrence est la suivante :
 
 $$
 F_n = F_{n-1} + F_{n-2} \quad (F_0 = 0, F_1 = 1)

@@ -10,13 +10,13 @@ tags: ["Bachet", "Zahlentheorie", "Geschichte der Mathematik", "Unterhaltungsmat
 
 In der Geschichte der Mathematik gibt es Persönlichkeiten, die eine entscheidende Rolle gespielt haben, auch wenn sie manchmal im Schatten späterer großer Entdeckungen stehen. Der französische Mathematiker des 17. Jahrhunderts, **[Claude Gaspard Bachet](https://kenji.blog/de/p/bachet/) de Méziriac (1581–1638)**, ist einer von ihnen. Er ist berühmt für seinen Einfluss auf [Pierre de Fermat](https://kenji.blog/de/p/fermat/), aber auch seine eigenen Errungenschaften waren äußerst vielfältig und bedeutend.
 
-In diesem Artikel werden wir das Leben von Bachet und seine wichtigsten mathematischen Errungenschaften näher betrachten.
+In diesem Artikel werden wir das Leben von [Bachet](https://kenji.blog/de/p/bachet/) und seine wichtigsten mathematischen Errungenschaften näher betrachten.
 
-## Bachets Leben: Vom Adligen zum Gelehrten
+## [Bachet](https://kenji.blog/de/p/bachet/)s Leben: Vom Adligen zum Gelehrten
 
-Bachet wurde am 9. Oktober 1581 in Bourg-en-Bresse im mittleren Osten Frankreichs geboren. Seine Familie gehörte dem wohlhabenden Adel an, und er hatte das Glück, von klein auf eine hervorragende Ausbildung zu erhalten.
+[Bachet](https://kenji.blog/de/p/bachet/) wurde am 9. Oktober 1581 in Bourg-en-Bresse im mittleren Osten Frankreichs geboren. Seine Familie gehörte dem wohlhabenden Adel an, und er hatte das Glück, von klein auf eine hervorragende Ausbildung zu erhalten.
 
-Nachdem er seine Eltern früh verloren hatte, wurde er von den Jesuiten ausgebildet und studierte unter anderem in Lyon und Mailand. Er erwog kurzzeitig, dem Jesuitenorden beizutreten, um ein Leben als Mönch zu führen, kehrte aber später in das säkulare Leben zurück und widmete sich der akademischen Forschung. Bachet zeichnete sich nicht nur in der Mathematik aus, sondern auch in Literatur, Linguistik und Poesie und erlangte als Übersetzer von lateinischen und griechischen Klassikern Berühmtheit. Im Jahr 1635 wurde er zudem als eines der ersten Mitglieder in die prestigeträchtige Académie Française gewählt.
+Nachdem er seine Eltern früh verloren hatte, wurde er von den Jesuiten ausgebildet und studierte unter anderem in Lyon und Mailand. Er erwog kurzzeitig, dem Jesuitenorden beizutreten, um ein Leben als Mönch zu führen, kehrte aber später in das säkulare Leben zurück und widmete sich der akademischen Forschung. [Bachet](https://kenji.blog/de/p/bachet/) zeichnete sich nicht nur in der Mathematik aus, sondern auch in Literatur, Linguistik und Poesie und erlangte als Übersetzer von lateinischen und griechischen Klassikern Berühmtheit. Im Jahr 1635 wurde er zudem als eines der ersten Mitglieder in die prestigeträchtige Académie Française gewählt.
 
 ```mermaid
 flowchart TD
@@ -29,15 +29,15 @@ flowchart TD
 
 ## Die lateinische Übersetzung von Diophantos' "Arithmetica"
 
-Eine der bekanntesten Errungenschaften von Bachet ist seine Übersetzung der "Arithmetica" des antiken griechischen Mathematikers Diophantos ins Lateinische, die er mit Kommentaren versah und 1621 veröffentlichte.
+Eine der bekanntesten Errungenschaften von [Bachet](https://kenji.blog/de/p/bachet/) ist seine Übersetzung der "Arithmetica" des antiken griechischen Mathematikers Diophantos ins Lateinische, die er mit Kommentaren versah und 1621 veröffentlichte.
 
-Dieses übersetzte Buch wurde für die europäischen Mathematiker jener Zeit zum Standardwerk, um antike Algebra und Zahlentheorie zu studieren. Eine der berühmtesten Anekdoten besagt, dass [Pierre de Fermat](https://kenji.blog/de/p/fermat/) seinen berühmten "Großen Fermatschen Satz" an den Rand seiner Ausgabe dieses Bachet-Buches schrieb.
+Dieses übersetzte Buch wurde für die europäischen Mathematiker jener Zeit zum Standardwerk, um antike Algebra und Zahlentheorie zu studieren. Eine der berühmtesten Anekdoten besagt, dass [Pierre de Fermat](https://kenji.blog/de/p/fermat/) seinen berühmten "Großen Fermatschen Satz" an den Rand seiner Ausgabe dieses [Bachet](https://kenji.blog/de/p/bachet/)-Buches schrieb.
 
-Bachet begnügte sich nicht mit einer bloßen Übersetzung, sondern fügte den Problemen von Diophantos seine eigenen hervorragenden Kommentare und Verallgemeinerungen hinzu. Ohne seine mathematischen Einsichten wäre die Entwicklung der Zahlentheorie im 17. Jahrhundert vielleicht viel langsamer vorangegangen.
+[Bachet](https://kenji.blog/de/p/bachet/) begnügte sich nicht mit einer bloßen Übersetzung, sondern fügte den Problemen von Diophantos seine eigenen hervorragenden Kommentare und Verallgemeinerungen hinzu. Ohne seine mathematischen Einsichten wäre die Entwicklung der Zahlentheorie im 17. Jahrhundert vielleicht viel langsamer vorangegangen.
 
-## Bachet-Gleichung
+## [Bachet](https://kenji.blog/de/p/bachet/)-Gleichung
 
-In der Zahlentheorie untersuchte Bachet eine bestimmte Form der diophantischen Gleichung, die heute als **Bachet-Gleichung** bekannt ist. Diese Gleichung stellt eine kubische Kurve (eine Art elliptische Kurve) in der folgenden Form dar:
+In der Zahlentheorie untersuchte [Bachet](https://kenji.blog/de/p/bachet/) eine bestimmte Form der diophantischen Gleichung, die heute als **[Bachet](https://kenji.blog/de/p/bachet/)-Gleichung** bekannt ist. Diese Gleichung stellt eine kubische Kurve (eine Art elliptische Kurve) in der folgenden Form dar:
 
 $$
 y^2 = x^3 - c
@@ -45,15 +45,15 @@ $$
 
 (Manchmal wird sie auch als $y^2 = x^3 + k$ geschrieben, wobei $c$ oder $k$ Konstanten sind.)
 
-Bachet betrachtete geometrische und algebraische Methoden (die der heutigen Addition von Punkten auf elliptischen Kurven, insbesondere der Tangentenmethode zur Verdopplung, entsprechen), um aus einer gegebenen rationalen Lösung neue rationale Lösungen abzuleiten. Dies zeigte einen Weg auf, unendlich viele Lösungen für diophantische Gleichungen zu generieren, und wurde zu einer der Grundlagen der späteren Theorie der elliptischen Kurven.
+[Bachet](https://kenji.blog/de/p/bachet/) betrachtete geometrische und algebraische Methoden (die der heutigen Addition von Punkten auf elliptischen Kurven, insbesondere der Tangentenmethode zur Verdopplung, entsprechen), um aus einer gegebenen rationalen Lösung neue rationale Lösungen abzuleiten. Dies zeigte einen Weg auf, unendlich viele Lösungen für diophantische Gleichungen zu generieren, und wurde zu einer der Grundlagen der späteren Theorie der elliptischen Kurven.
 
 ## Vater der Unterhaltungsmathematik: "Angenehme und reizvolle Probleme"
 
-Im Jahr 1612 veröffentlichte Bachet ein Buch mit dem Titel "Problèmes plaisans et délectables, qui se font par les nombres" (Angenehme und reizvolle Probleme, die mit Zahlen gemacht werden). Dies gilt als das erste in Europa veröffentlichte Fachbuch über "Unterhaltungsmathematik" (Recreational Mathematics).
+Im Jahr 1612 veröffentlichte [Bachet](https://kenji.blog/de/p/bachet/) ein Buch mit dem Titel "Problèmes plaisans et délectables, qui se font par les nombres" (Angenehme und reizvolle Probleme, die mit Zahlen gemacht werden). Dies gilt als das erste in Europa veröffentlichte Fachbuch über "Unterhaltungsmathematik" (Recreational Mathematics).
 
-Dieses Buch enthielt viele mathematische Rätsel, die bis heute populär sind, wie das Flussüberquerungsrätsel, das Josephus-Problem, Methoden zur Erstellung magischer Quadrate und das berühmte "Bachetsche Gewichtsproblem".
+Dieses Buch enthielt viele mathematische Rätsel, die bis heute populär sind, wie das Flussüberquerungsrätsel, das Josephus-Problem, Methoden zur Erstellung magischer Quadrate und das berühmte "[Bachet](https://kenji.blog/de/p/bachet/)sche Gewichtsproblem".
 
-### Das Bachetsche Gewichtsproblem
+### Das [Bachet](https://kenji.blog/de/p/bachet/)sche Gewichtsproblem
 
 Eines der berühmtesten Probleme in seinem Buch ist das folgende:
 
@@ -67,19 +67,19 @@ $$
 N = a_0 3^0 + a_1 3^1 + a_2 3^2 + a_3 3^3 \quad (a_i \in \{-1, 0, 1\})
 $$
 
-Hier bedeutet $a_i = 1$, dass das Gewicht in die dem Wiegegut gegenüberliegende Schale gelegt wird, $a_i = -1$ bedeutet, dass es in dieselbe Schale gelegt wird, und $a_i = 0$ bedeutet, dass dieses Gewicht nicht verwendet wird. Bachets Problem war ein brillanter Ausdruck der grundlegenden Theorie der Zahlensysteme durch ein Spiel.
+Hier bedeutet $a_i = 1$, dass das Gewicht in die dem Wiegegut gegenüberliegende Schale gelegt wird, $a_i = -1$ bedeutet, dass es in dieselbe Schale gelegt wird, und $a_i = 0$ bedeutet, dass dieses Gewicht nicht verwendet wird. [Bachet](https://kenji.blog/de/p/bachet/)s Problem war ein brillanter Ausdruck der grundlegenden Theorie der Zahlensysteme durch ein Spiel.
 
-## Bachets Identität (Bézouts Lemma)
+## [Bachet](https://kenji.blog/de/p/bachet/)s Identität (Bézouts Lemma)
 
-Darüber hinaus bewies Bachet das Theorem, das in der modernen Mathematik als "Bézouts Lemma" (oder Identität) bekannt ist, für ganze Zahlen mehr als 150 Jahre vor Étienne Bézout.
+Darüber hinaus bewies [Bachet](https://kenji.blog/de/p/bachet/) das Theorem, das in der modernen Mathematik als "Bézouts Lemma" (oder Identität) bekannt ist, für ganze Zahlen mehr als 150 Jahre vor Étienne Bézout.
 
-Bachet zeigte, dass für zwei beliebige teilerfremde ganze Zahlen $a$ und $b$ immer ganze Zahlen $x, y$ existieren, die Folgendes erfüllen:
+[Bachet](https://kenji.blog/de/p/bachet/) zeigte, dass für zwei beliebige teilerfremde ganze Zahlen $a$ und $b$ immer ganze Zahlen $x, y$ existieren, die Folgendes erfüllen:
 
 $$
 ax + by = 1
 $$
 
-$x$ und $y$ können durch den erweiterten euklidischen Algorithmus konkret berechnet werden, der zu einem unverzichtbaren Grundlagen-Theorem in der modernen Kryptographie (wie RSA) geworden ist. In Kontexten, die Wert auf historische Genauigkeit legen, wird dies manchmal als **Satz von Bachet** bezeichnet.
+$x$ und $y$ können durch den erweiterten euklidischen Algorithmus konkret berechnet werden, der zu einem unverzichtbaren Grundlagen-Theorem in der modernen Kryptographie (wie RSA) geworden ist. In Kontexten, die Wert auf historische Genauigkeit legen, wird dies manchmal als **Satz von [Bachet](https://kenji.blog/de/p/bachet/)** bezeichnet.
 
 ## Fazit
 

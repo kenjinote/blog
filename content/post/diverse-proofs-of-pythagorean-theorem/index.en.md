@@ -16,7 +16,7 @@ tags:
 
 ## Introduction
 
-One of the most famous theorems in mathematics, and one with the most numerous proofs, is the **Pythagorean Theorem**. This theorem, which describes the relationship between the three sides of a right-angled triangle, is named after the ancient Greek philosopher Pythagoras, although it was known in Babylon, China, and elsewhere well before his time.
+One of the most famous theorems in mathematics, and one with the most numerous proofs, is the **Pythagorean Theorem**. This theorem, which describes the relationship between the three sides of a right-angled triangle, is named after the ancient Greek philosopher [Pythagoras](https://kenji.blog/en/p/pythagoras/), although it was known in Babylon, China, and elsewhere well before his time.
 
 The assertion of the theorem is very simple. When the length of the hypotenuse of a right-angled triangle is $c$, and the lengths of the other two sides are $a$ and $b$, the following relationship holds:
 

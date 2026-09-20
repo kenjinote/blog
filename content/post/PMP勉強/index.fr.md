@@ -93,7 +93,7 @@ C'est-à-dire que, bien qu'il y ait de la valeur dans les éléments situés à 
 - Leadership serviteur (Servant Leadership)
 - Modèle de Tuckman (Formation, Tension, Normalisation, Exécution, Dissolution)
 - Charte d'équipe
-- Planning Poker (Suite de Fibonacci)
+- Planning Poker (Suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/))
 - Rétrospective (Activité de réflexion)
 - Équipe virtuelle
 - Charte de projet

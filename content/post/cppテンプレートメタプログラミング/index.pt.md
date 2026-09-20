@@ -72,9 +72,9 @@ int main() {
 
 O importante aqui é que o `Factorial<5>::value` não é calculado durante a execução; ele é expandido no momento da compilação e, no binário final, será gerado um código equivalente a `std::cout << "5! = " << 120 << std::endl;`. Isso faz com que a sobrecarga (overhead) em tempo de execução seja zero.
 
-### 2.2 Sequência de Fibonacci e Complexidade
+### 2.2 Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) e Complexidade
 
-Em seguida, vamos calcular a sequência de Fibonacci. A relação de recorrência é:
+Em seguida, vamos calcular a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/). A relação de recorrência é:
 
 $$
 F_n = F_{n-1} + F_{n-2} \quad (F_0 = 0, F_1 = 1)

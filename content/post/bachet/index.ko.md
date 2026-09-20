@@ -35,7 +35,7 @@ flowchart TD
 
 바셰 자신도 단순한 번역에 그치지 않고, [디오판토스](https://kenji.blog/ko/p/diophantus/)의 문제에 대해 독자적이고 뛰어난 주석과 일반화를 덧붙였습니다. 그의 수학적 통찰력이 없었다면 17세기 정수론의 발전은 훨씬 더뎌졌을지도 모릅니다.
 
-## 바셰 방정식 (Bachet's Equation)
+## 바셰 방정식 ([Bachet](https://kenji.blog/ko/p/bachet/)'s Equation)
 
 정수론에서 바셰는 현재 **바셰 방정식** 이라고 불리는 특정 형태의 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식을 연구했습니다. 이것은 다음 형태의 3차 곡선 (타원 곡선의 일종) 을 나타내는 방정식입니다.
 

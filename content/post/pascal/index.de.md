@@ -23,7 +23,7 @@ Sein Leben war ein ständiger Kampf gegen Krankheiten, und er verstarb im frühe
 ### 2.2. Umzug nach Paris und Étiennes Bildungspolitik
 Um seinen Kindern die bestmögliche Ausbildung zu bieten, zog Étienne 1631 mit der Familie nach Paris. Unzufrieden mit der damaligen Schulbildung, entschied sich Étienne, selbst Privatlehrer für seine Kinder zu werden. Seine Bildungspolitik war sehr eigenwillig: „Lehre keine Mathematik, die ein allzu abstraktes Fach ist, bevor die Vernunft des Kindes ausreichend entwickelt ist.“ Er räumte Sprachen und Geschichte Vorrang ein und verbannte sämtliche Mathematikbücher aus dem Haus.
 
-Dieses „Verbot“ regte die Neugier des jungen Blaise jedoch paradoxerweise intensiv an. Im Alter von 12 Jahren begann Blaise, die Geometrie während seiner Spielzeit auf eigene Faust zu erkunden. Indem er mit Kohle Figuren auf den Boden zeichnete, bewies er unabhängig die 32. Proposition in [Euklid](https://kenji.blog/de/p/euclid/)s *Elementen*: „Die Summe der Innenwinkel eines Dreiecks ist gleich zwei rechten Winkeln (180 Grad).“ Als sein Vater diesen überwältigenden Beweis an Talent miterlebte, änderte er seine Politik, erlaubte ihm, Mathematik zu studieren, und begann, ihn zu den Versammlungen der größten Intellektuellen Europas mitzunehmen, die von Pater Mersenne (dem Vorläufer der französischen Akademie der Wissenschaften) ausgerichtet wurden.
+Dieses „Verbot“ regte die Neugier des jungen Blaise jedoch paradoxerweise intensiv an. Im Alter von 12 Jahren begann Blaise, die Geometrie während seiner Spielzeit auf eigene Faust zu erkunden. Indem er mit Kohle Figuren auf den Boden zeichnete, bewies er unabhängig die 32. Proposition in [Euklid](https://kenji.blog/de/p/euclid/)s *Elementen*: „Die Summe der Innenwinkel eines Dreiecks ist gleich zwei rechten Winkeln (180 Grad).“ Als sein Vater diesen überwältigenden Beweis an Talent miterlebte, änderte er seine Politik, erlaubte ihm, Mathematik zu studieren, und begann, ihn zu den Versammlungen der größten Intellektuellen Europas mitzunehmen, die von Pater [Mersenne](https://kenji.blog/de/p/mersenne/) (dem Vorläufer der französischen Akademie der Wissenschaften) ausgerichtet wurden.
 
 ## 3. Innovative Errungenschaften in der Mathematik
 
@@ -31,7 +31,7 @@ Pascals mathematisches Talent erblühte schon früh in seinen Teenagerjahren. Se
 
 ### 3.1. Pionier der projektiven Geometrie: Der Satz von Pascal (Mystisches Hexagramm)
 
-Im Jahr 1639 begegnete der 16-jährige Pascal in der Mersenne-Akademie den Werken Girard Desargues' zur projektiven Geometrie. Pascal verstand Desargues' Ideen zutiefst, entdeckte einen bahnbrechenden Lehrsatz über Kegelschnitte und veröffentlichte ihn auf einem einzigen Blatt Papier (Essay). Dies ist heute als **Satz von Pascal** bekannt.
+Im Jahr 1639 begegnete der 16-jährige Pascal in der [Mersenne](https://kenji.blog/de/p/mersenne/)-Akademie den Werken Girard Desargues' zur projektiven Geometrie. Pascal verstand Desargues' Ideen zutiefst, entdeckte einen bahnbrechenden Lehrsatz über Kegelschnitte und veröffentlichte ihn auf einem einzigen Blatt Papier (Essay). Dies ist heute als **Satz von Pascal** bekannt.
 
 Der Satz von Pascal gilt für jedes Hexagon (Sechseck), das einem Kegelschnitt (Ellipse, Parabel, Hyperbel und Kreis) eingeschrieben ist.
 

@@ -15,7 +15,7 @@ tags:
 
 No mundo da matemática, existem conceitos que atuam como "pontes mágicas", conectando campos aparentemente não relacionados. Um deles é a **função geradora** (Generating Function). Ao transformar uma "sequência" discreta em uma "função" contínua, problemas combinatórios complexos podem ser reduzidos a cálculos algébricos.
 
-Este artigo começa com a ideia básica das funções geradoras e explica detalhadamente o seu incrível poder — desde o cálculo de combinações de pagamentos com moedas até a derivação do termo geral da sequência de Fibonacci. Além disso, mencionaremos sua aplicação em séries de potências formais (FPS) em algoritmos e programação competitiva.
+Este artigo começa com a ideia básica das funções geradoras e explica detalhadamente o seu incrível poder — desde o cálculo de combinações de pagamentos com moedas até a derivação do termo geral da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/). Além disso, mencionaremos sua aplicação em séries de potências formais (FPS) em algoritmos e programação competitiva.
 
 ## 1. O que é uma função geradora?
 
@@ -75,9 +75,9 @@ $$
 
 O coeficiente de $x^n$ na expansão é $\sum_{k=0}^{n} a_k b_{n-k}$. Isso é chamado de **convolução** (Convolution). No exemplo das moedas, a adição de combinações como "fazer $k$ ienes com moedas de 1 iene e $n-k$ ienes com moedas de 2 ienes" é automaticamente calculada por esse produto de funções.
 
-## 3. Aplicação na sequência de Fibonacci
+## 3. Aplicação na sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)
 
-A seguir, como uma aplicação mais avançada, vamos encontrar o termo geral da sequência de Fibonacci. A sequência de Fibonacci $F_n$ é definida da seguinte forma:
+A seguir, como uma aplicação mais avançada, vamos encontrar o termo geral da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/). A sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) $F_n$ é definida da seguinte forma:
 
 *   $F_0 = 0$
 *   $F_1 = 1$
@@ -100,13 +100,13 @@ $$
 F(x) = x + x F(x) + x^2 F(x)
 $$
 
-Resolver essa equação para $F(x)$ nos dá a função geradora para a sequência de Fibonacci.
+Resolver essa equação para $F(x)$ nos dá a função geradora para a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/).
 
 $$
 F(x) = \frac{x}{1 - x - x^2}
 $$
 
-De forma surpreendente, as informações da sequência infinitamente contínua de Fibonacci foram condensadas em uma única função fracionária simples.
+De forma surpreendente, as informações da sequência infinitamente contínua de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) foram condensadas em uma única função fracionária simples.
 
 ### Decomposição em frações parciais e o termo geral
 

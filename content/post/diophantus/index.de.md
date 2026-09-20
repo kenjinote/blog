@@ -28,7 +28,7 @@ Es gibt fast keine genauen Aufzeichnungen darüber, wann [Diophantus](https://ke
 
 ### 2.2 Hellenistische Kultur und Alexandria
 
-Zu dieser Zeit war Alexandria das Zentrum der hellenistischen Kultur und Gelehrsamkeit, rühmte sich einer riesigen Bibliothek (der Bibliothek von Alexandria) und diente als Knotenpunkt des Wissens, an dem sich viele Gelehrte versammelten. In dieser Stadt, in der sich das Wissen aus Griechenland, Ägypten, Babylonien und sogar Indien kreuzte, wird angenommen, dass [Diophantus](https://kenji.blog/de/p/diophantus/) Zugang zu einem riesigen mathematischen Erbe der Vergangenheit hatte. Im Gegensatz zur geometrischen Tradition, die von großen griechischen Mathematikern wie [Euklid](https://kenji.blog/de/p/euclid/), Archimedes und Apollonius begründet wurde, deuten einige Theorien darauf hin, dass [Diophantus](https://kenji.blog/de/p/diophantus/) stark vom algebraischen Ansatz Babyloniens beeinflusst wurde.
+Zu dieser Zeit war Alexandria das Zentrum der hellenistischen Kultur und Gelehrsamkeit, rühmte sich einer riesigen Bibliothek (der Bibliothek von Alexandria) und diente als Knotenpunkt des Wissens, an dem sich viele Gelehrte versammelten. In dieser Stadt, in der sich das Wissen aus Griechenland, Ägypten, Babylonien und sogar Indien kreuzte, wird angenommen, dass [Diophantus](https://kenji.blog/de/p/diophantus/) Zugang zu einem riesigen mathematischen Erbe der Vergangenheit hatte. Im Gegensatz zur geometrischen Tradition, die von großen griechischen Mathematikern wie [Euklid](https://kenji.blog/de/p/euclid/), [Archimedes](https://kenji.blog/de/p/archimedes/) und Apollonius begründet wurde, deuten einige Theorien darauf hin, dass [Diophantus](https://kenji.blog/de/p/diophantus/) stark vom algebraischen Ansatz Babyloniens beeinflusst wurde.
 
 ```mermaid
 timeline
@@ -85,7 +85,7 @@ Auch die allgemeine Lösung kann als $x = 2 + 3k, y = -2k$ (wobei $k$ eine belie
 
 ### 4.2 Pythagoreische Tripel und nichtlineare diophantische Gleichungen
 
-Die bekannte Gleichung aus dem Satz des Pythagoras ist ebenfalls eine Art diophantische Gleichung.
+Die bekannte Gleichung aus dem Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) ist ebenfalls eine Art diophantische Gleichung.
 
 $$
 x^2 + y^2 = z^2
@@ -176,7 +176,7 @@ Die Werke des [Diophantus](https://kenji.blog/de/p/diophantus/) gingen mit dem N
 
 Insbesondere Mathematiker in Bagdad im 9. Jahrhundert übersetzten die *Arithmetica* ins Arabische und trugen so maßgeblich zur Entwicklung der islamischen Algebra bei. Islamische Mathematiker wie Al-Karaji übernahmen und entwickelten die Methoden des [Diophantus](https://kenji.blog/de/p/diophantus/) weiter.
 
-Im 16. Jahrhundert, als griechische Klassiker im Europa der Renaissance wiederentdeckt wurden, wurde die *Arithmetica* ins Lateinische übersetzt. Eine zweisprachige griechische und lateinische Ausgabe, die 1621 von [Claude Gaspard Bachet](https://kenji.blog/de/p/bachet/) de Méziriac herausgegeben wurde, fand große Verbreitung. Es war diese Bachet-Ausgabe der *Arithmetica*, die Fermat sorgfältig studierte, was die Öffnung einer neuen Tür in der Mathematik auslöste.
+Im 16. Jahrhundert, als griechische Klassiker im Europa der Renaissance wiederentdeckt wurden, wurde die *Arithmetica* ins Lateinische übersetzt. Eine zweisprachige griechische und lateinische Ausgabe, die 1621 von [Claude Gaspard Bachet](https://kenji.blog/de/p/bachet/) de Méziriac herausgegeben wurde, fand große Verbreitung. Es war diese [Bachet](https://kenji.blog/de/p/bachet/)-Ausgabe der *Arithmetica*, die Fermat sorgfältig studierte, was die Öffnung einer neuen Tür in der Mathematik auslöste.
 
 Die Theorie der diophantischen Gleichungen wurde in der Folge von Giganten wie [Leonhard Euler](https://kenji.blog/de/p/euler/), [Joseph-Louis Lagrange](https://kenji.blog/de/p/lagrange/) und [Carl Friedrich Gauß](https://kenji.blog/de/p/gauss/) tiefgreifend untersucht. Ihre Forschung wuchs zu den riesigen mathematischen Gebieten der modernen "algebraischen Zahlentheorie" und "algebraischen Geometrie" heran. Das 10. der 23 Hilbertschen Probleme war "die Angabe eines Verfahrens, nach welchem sich mittels einer endlichen Anzahl von Operationen entscheiden lässt, ob die Gleichung in rationalen ganzen Zahlen lösbar ist", und 1970 bewies Juri Matijassewitsch, dass "ein solches Verfahren nicht existiert". Der Name [Diophantus](https://kenji.blog/de/p/diophantus/) ist tief in die Spitzenforschung der modernen Mathematik eingraviert.
 

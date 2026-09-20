@@ -74,7 +74,7 @@ int main() {
 
 ### 2.2 費氏數列與時間複雜度
 
-接下來我們來計算費氏數列（Fibonacci sequence）。遞迴公式如下：
+接下來我們來計算費氏數列（[Fibonacci](https://kenji.blog/zh-tw/p/fibonacci/) sequence）。遞迴公式如下：
 
 $$
 F_n = F_{n-1} + F_{n-2} \quad (F_0 = 0, F_1 = 1)

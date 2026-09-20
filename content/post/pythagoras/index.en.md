@@ -13,11 +13,11 @@ tags:
   - 'Philosophy'
 ---
 
-Pythagoras (c. 570 BC – c. 495 BC) was an ancient Greek philosopher and mathematician. His philosophy that "all is number" laid the foundation for Western mathematics, science, and philosophy. In this article, we will explore his life and mathematical achievements in detail.
+[Pythagoras](https://kenji.blog/en/p/pythagoras/) (c. 570 BC – c. 495 BC) was an ancient Greek philosopher and mathematician. His philosophy that "all is number" laid the foundation for Western mathematics, science, and philosophy. In this article, we will explore his life and mathematical achievements in detail.
 
 ## Life and the Founding of the Order
 
-Born on the Aegean island of Samos, Pythagoras traveled to Egypt and Babylonia at a young age in pursuit of knowledge. There he studied geometry, astronomy, and mystical religious rites. He later migrated to Croton in southern Italy, where he founded his own school and religious order, known as the Pythagorean Order.
+Born on the Aegean island of Samos, [Pythagoras](https://kenji.blog/en/p/pythagoras/) traveled to Egypt and Babylonia at a young age in pursuit of knowledge. There he studied geometry, astronomy, and mystical religious rites. He later migrated to Croton in southern Italy, where he founded his own school and religious order, known as the Pythagorean Order.
 
 ```mermaid
 graph TD
@@ -61,8 +61,8 @@ The Pythagorean Order believed that "all phenomena can be expressed as a ratio o
 
 ## Harmony of Music and Mathematics: Pythagorean Tuning
 
-Pythagoras discovered that pleasant chords (consonances) are produced when the lengths of strings are in simple integer ratios (e.g., 2:1 or 3:2). This discovery developed into **Pythagorean tuning** , which became the foundation of music theory. The concept of the "Music of the Spheres", which posits that celestial bodies also play chords in their orbits, influenced later astronomers like Kepler.
+[Pythagoras](https://kenji.blog/en/p/pythagoras/) discovered that pleasant chords (consonances) are produced when the lengths of strings are in simple integer ratios (e.g., 2:1 or 3:2). This discovery developed into **Pythagorean tuning** , which became the foundation of music theory. The concept of the "Music of the Spheres", which posits that celestial bodies also play chords in their orbits, influenced later astronomers like Kepler.
 
 ## Conclusion
 
-Pythagoras was not merely a mathematician; he was a great thinker who tried to understand the world through the lens of "numbers". His teachings continue to shine as the spiritual origin of modern scientific approaches.
+[Pythagoras](https://kenji.blog/en/p/pythagoras/) was not merely a mathematician; he was a great thinker who tried to understand the world through the lens of "numbers". His teachings continue to shine as the spiritual origin of modern scientific approaches.

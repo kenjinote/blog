@@ -59,7 +59,7 @@ graph TD
 
 ## Principais Conquistas na Matemática: A Algebrização da Geometria e o Desafio do Infinito
 
-Tendo assumido a cátedra saviliana, Wallis avançou suas pesquisas matemáticas em um ritmo surpreendente. Sua maior conquista foi romper com os métodos geométricos clássicos e avançar ainda mais nos métodos de geometria analítica de Descartes.
+Tendo assumido a cátedra saviliana, Wallis avançou suas pesquisas matemáticas em um ritmo surpreendente. Sua maior conquista foi romper com os métodos geométricos clássicos e avançar ainda mais nos métodos de geometria analítica de [Descartes](https://kenji.blog/pt/p/descartes/).
 
 ### Introdução do Símbolo do Infinito ' $\infty$ ' e 'De sectionibus conicis'
 

@@ -10,17 +10,17 @@ tags: ["Fibonacci", "Matematika", "Sejarah", "Rasio Emas", "Liber Abaci"]
 
 ## Pengantar: Cahaya Matematika yang Menerangi Zaman Kegelapan
 
-Di Eropa abad pertengahan, selama masa yang sering disebut "Zaman Kegelapan", kemajuan ilmu pengetahuan mengalami stagnasi. Namun, pada awal abad ke-13, seorang jenius muncul yang akan mengubah sejarah matematika Eropa selamanya. Namanya adalah Leonardo dari Pisa. Tokoh ini, yang kemudian dikenal sebagai **Fibonacci**, adalah kekuatan pendorong di balik mempopulerkan "angka Arab" (angka Hindu-Arab) yang kita gunakan sehari-hari di zaman modern, dan penemu "deret Fibonacci" yang mengungkap misteri alam semesta.
+Di Eropa abad pertengahan, selama masa yang sering disebut "Zaman Kegelapan", kemajuan ilmu pengetahuan mengalami stagnasi. Namun, pada awal abad ke-13, seorang jenius muncul yang akan mengubah sejarah matematika Eropa selamanya. Namanya adalah Leonardo dari Pisa. Tokoh ini, yang kemudian dikenal sebagai **[Fibonacci](https://kenji.blog/id/p/fibonacci/)**, adalah kekuatan pendorong di balik mempopulerkan "angka Arab" (angka Hindu-Arab) yang kita gunakan sehari-hari di zaman modern, dan penemu "deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)" yang mengungkap misteri alam semesta.
 
-Dalam artikel ini, kita akan menggali lebih dalam kehidupan Fibonacci yang penuh gejolak, dampak karya besarnya "Liber Abaci" terhadap masyarakat, dan warisan matematikanya yang meluas hingga sains modern dan alam.
+Dalam artikel ini, kita akan menggali lebih dalam kehidupan [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang penuh gejolak, dampak karya besarnya "Liber Abaci" terhadap masyarakat, dan warisan matematikanya yang meluas hingga sains modern dan alam.
 
-## Kehidupan Fibonacci dan Latar Belakang Sejarah
+## Kehidupan [Fibonacci](https://kenji.blog/id/p/fibonacci/) dan Latar Belakang Sejarah
 
-### Kelahiran di Pisa dan Asal Usul Nama "Fibonacci"
+### Kelahiran di Pisa dan Asal Usul Nama "[Fibonacci](https://kenji.blog/id/p/fibonacci/)"
 
 [Leonardo Fibonacci](https://kenji.blog/id/p/fibonacci/) lahir sekitar tahun 1170 di negara-kota Italia, Pisa. Pisa pada saat itu berkembang pesat sebagai pusat perdagangan Mediterania, sebuah republik yang makmur dengan angkatan laut dan jaringan komersial yang kuat. Ayahnya, Guglielmo Bonacci, adalah seorang pedagang kaya yang juga bekerja sebagai pejabat bea cukai untuk Pisa.
 
-Nama "Fibonacci" sebenarnya tidak digunakan selama masa hidupnya. Itu adalah istilah ciptaan yang dibuat oleh sejarawan di kemudian hari, menyingkat bahasa Latin "filius Bonacci" (putra Bonacci). Ia menyebut dirinya "Leonardo Pisano" (Leonardo dari Pisa) atau, karena kecintaannya pada perjalanan, "Bigollo" (yang berarti pengembara atau pemalas).
+Nama "[Fibonacci](https://kenji.blog/id/p/fibonacci/)" sebenarnya tidak digunakan selama masa hidupnya. Itu adalah istilah ciptaan yang dibuat oleh sejarawan di kemudian hari, menyingkat bahasa Latin "filius Bonacci" (putra Bonacci). Ia menyebut dirinya "Leonardo Pisano" (Leonardo dari Pisa) atau, karena kecintaannya pada perjalanan, "Bigollo" (yang berarti pengembara atau pemalas).
 
 ### Pendidikan di Afrika Utara dan Perjumpaan dengan Budaya Berbeda
 
@@ -36,7 +36,7 @@ Melalui perjalanan ekstensif ini, ia menjadi yakin bahwa angka Hindu-Arab bukan 
 
 ## "Liber Abaci" dan Dampaknya
 
-Pada tahun 1202, Fibonacci menyelesaikan karya besarnya, "Liber Abaci" (Buku Perhitungan), dengan edisi revisi yang diterbitkan pada tahun 1228. Meskipun judulnya menyebutkan "sempoa" (abacus), ini sebenarnya adalah buku terobosan yang menjelaskan cara melakukan perhitungan menggunakan sistem angka baru tanpa menggunakan sempoa.
+Pada tahun 1202, [Fibonacci](https://kenji.blog/id/p/fibonacci/) menyelesaikan karya besarnya, "Liber Abaci" (Buku Perhitungan), dengan edisi revisi yang diterbitkan pada tahun 1228. Meskipun judulnya menyebutkan "sempoa" (abacus), ini sebenarnya adalah buku terobosan yang menjelaskan cara melakukan perhitungan menggunakan sistem angka baru tanpa menggunakan sempoa.
 
 ### Pengenalan Angka Arab
 
@@ -48,7 +48,7 @@ Buku ini tidak sekadar mengajarkan cara menulis angka; buku ini secara komprehen
 
 ### Aplikasi pada Matematika Komersial
 
-Untuk membuktikan betapa praktisnya sistem matematika baru ini, Fibonacci memasukkan banyak masalah realistis yang dihadapi oleh para pedagang.
+Untuk membuktikan betapa praktisnya sistem matematika baru ini, [Fibonacci](https://kenji.blog/id/p/fibonacci/) memasukkan banyak masalah realistis yang dihadapi oleh para pedagang.
 
 - Menghitung nilai tukar mata uang yang kompleks
 - Menghitung keuntungan dan kerugian atas barang
@@ -66,9 +66,9 @@ flowchart TD
     D -->|"Modernisasi Matematika"| F["Revolusi Ilmiah / Renaisans"]
 ```
 
-## Deret Fibonacci dan Rasio Emas: Kode Alam
+## Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) dan Rasio Emas: Kode Alam
 
-Bagian paling terkenal dari "Liber Abaci" adalah "Masalah Kelinci" yang muncul di Bab 12. Teka-teki yang tampaknya sederhana ini melahirkan deret fenomenal yang kemudian dinamakan "Deret Fibonacci".
+Bagian paling terkenal dari "Liber Abaci" adalah "Masalah Kelinci" yang muncul di Bab 12. Teka-teki yang tampaknya sederhana ini melahirkan deret fenomenal yang kemudian dinamakan "Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)".
 
 ### Masalah Kelinci
 
@@ -93,7 +93,7 @@ $$
 
 ### Hubungan Menakjubkan dengan Rasio Emas
 
-Salah satu fitur paling mistis dari deret Fibonacci adalah bahwa saat Anda mengambil rasio dari dua angka yang berdekatan ($F_{n+1} / F_n$), rasio tersebut konvergen ke konstanta tertentu.
+Salah satu fitur paling mistis dari deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) adalah bahwa saat Anda mengambil rasio dari dua angka yang berdekatan ($F_{n+1} / F_n$), rasio tersebut konvergen ke konstanta tertentu.
 
 - $1 / 1 = 1.000$
 - $2 / 1 = 2.000$
@@ -112,19 +112,19 @@ $$
 
 Ini dikenal sebagai "Rasio Emas", yang dianggap sejak Yunani kuno sebagai proporsi yang paling indah dan harmonis. Rasio ini sengaja (atau tidak sadar) digunakan dalam arsitektur bersejarah dan karya seni, seperti Parthenon dan Mona Lisa.
 
-Selain itu, matematikawan abad ke-19 Jacques Philippe Marie Binet menemukan "Rumus Binet", yang menemukan suku umum deret Fibonacci menggunakan Rasio Emas:
+Selain itu, matematikawan abad ke-19 Jacques Philippe Marie Binet menemukan "Rumus Binet", yang menemukan suku umum deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) menggunakan Rasio Emas:
 
 $$
 F_n = \frac{\phi^n - (1-\phi)^n}{\sqrt{5}}
 $$
 
-### Angka Fibonacci di Alam
+### Angka [Fibonacci](https://kenji.blog/id/p/fibonacci/) di Alam
 
-Deret Fibonacci dan Rasio Emas bukan sekadar permainan matematika. Menakjubkannya, deret ini tersembunyi di mana-mana di alam semesta.
+Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) dan Rasio Emas bukan sekadar permainan matematika. Menakjubkannya, deret ini tersembunyi di mana-mana di alam semesta.
 
-1. **Jumlah Kelopak Bunga**: Jumlah kelopak banyak bunga adalah angka Fibonacci (misal, lili punya 3, buttercup 5, delphinium 8, marigold 13, bunga matahari 21, 34, 55, dll.).
-2. **Filotaksis (Susunan Daun)**: Pola susunan daun yang tumbuh dari batang tanaman berevolusi sedemikian rupa sehingga daun atas dan bawah tidak saling tumpang tindih dan menghalangi sinar matahari. Sudut ini menjadi "Sudut Emas" (sekitar 137,5 derajat), yang menghasilkan munculnya angka Fibonacci.
-3. **Biji Pinus dan Nanas**: Saat menghitung jumlah spiral di permukaannya, spiral searah jarum jam dan berlawanan arah jarum jam membentuk angka Fibonacci yang berdekatan, seperti 8 dan 13, atau 13 dan 21.
+1. **Jumlah Kelopak Bunga**: Jumlah kelopak banyak bunga adalah angka [Fibonacci](https://kenji.blog/id/p/fibonacci/) (misal, lili punya 3, buttercup 5, delphinium 8, marigold 13, bunga matahari 21, 34, 55, dll.).
+2. **Filotaksis (Susunan Daun)**: Pola susunan daun yang tumbuh dari batang tanaman berevolusi sedemikian rupa sehingga daun atas dan bawah tidak saling tumpang tindih dan menghalangi sinar matahari. Sudut ini menjadi "Sudut Emas" (sekitar 137,5 derajat), yang menghasilkan munculnya angka [Fibonacci](https://kenji.blog/id/p/fibonacci/).
+3. **Biji Pinus dan Nanas**: Saat menghitung jumlah spiral di permukaannya, spiral searah jarum jam dan berlawanan arah jarum jam membentuk angka [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang berdekatan, seperti 8 dan 13, atau 13 dan 21.
 4. **Cangkang Nautilus**: "Spiral logaritmik (spiral emas)" yang digambar berdasarkan rasio emas sangat cocok dengan pola pertumbuhan cangkang siput.
 
 ```mermaid
@@ -144,30 +144,30 @@ stateDiagram-v2
 
 ## Prestasi Matematika Lainnya
 
-Pencapaian Fibonacci tidak terbatas pada "Liber Abaci". Ketenarannya mencapai telinga Kaisar Romawi Suci Frederick II, yang mengundangnya ke istananya untuk mengatasi berbagai tantangan matematika.
+Pencapaian [Fibonacci](https://kenji.blog/id/p/fibonacci/) tidak terbatas pada "Liber Abaci". Ketenarannya mencapai telinga Kaisar Romawi Suci Frederick II, yang mengundangnya ke istananya untuk mengatasi berbagai tantangan matematika.
 
 ### "Liber Quadratorum" (Buku Persegi)
 
-Ditulis pada tahun 1225, buku ini adalah risalah lanjutan tentang persamaan Diophantine (persamaan yang mencari solusi bilangan bulat). Buku ini mengeksplorasi konsep "angka kongruen" dan menunjukkan wawasan mendalam tentang teorema Pythagoras. Buku ini sangat dianggap sebagai mahakarya terbesar teori bilangan di Eropa abad pertengahan.
+Ditulis pada tahun 1225, buku ini adalah risalah lanjutan tentang persamaan Diophantine (persamaan yang mencari solusi bilangan bulat). Buku ini mengeksplorasi konsep "angka kongruen" dan menunjukkan wawasan mendalam tentang teorema [Pythagoras](https://kenji.blog/id/p/pythagoras/). Buku ini sangat dianggap sebagai mahakarya terbesar teori bilangan di Eropa abad pertengahan.
 
 ### "Practica Geometriae" (Geometri Praktis)
 
 Ditulis pada tahun 1220, buku ini merinci survei dan geometri. Buku ini menyediakan metode yang ketat untuk menghitung luas dan volume, dan penerapan praktis dari prinsip-prinsip geometri [Euclide](https://kenji.blog/id/p/euclid/)an Yunani kuno, menjadikannya sumber daya yang berharga bagi para insinyur dan surveyor pada masa itu.
 
-## Masyarakat Modern dan Warisan Fibonacci
+## Masyarakat Modern dan Warisan [Fibonacci](https://kenji.blog/id/p/fibonacci/)
 
-Penemuan Fibonacci, yang hidup sekitar 800 tahun yang lalu, terus memainkan peran penting dalam bidang-bidang paling maju di masyarakat modern.
+Penemuan [Fibonacci](https://kenji.blog/id/p/fibonacci/), yang hidup sekitar 800 tahun yang lalu, terus memainkan peran penting dalam bidang-bidang paling maju di masyarakat modern.
 
 ### Aplikasi dalam Ilmu Komputer
 
-Dalam algoritma komputer, deret Fibonacci sangat berguna. Algoritma yang disebut "Pencarian Fibonacci" dapat mencari data lebih efisien daripada pencarian biner di bawah kondisi tertentu. Selain itu, struktur data yang dikenal sebagai "tumpukan Fibonacci (Fibonacci heap)" sangat diperlukan untuk mempercepat algoritma teori graf seperti algoritma Dijkstra.
+Dalam algoritma komputer, deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) sangat berguna. Algoritma yang disebut "Pencarian [Fibonacci](https://kenji.blog/id/p/fibonacci/)" dapat mencari data lebih efisien daripada pencarian biner di bawah kondisi tertentu. Selain itu, struktur data yang dikenal sebagai "tumpukan [Fibonacci](https://kenji.blog/id/p/fibonacci/) ([Fibonacci](https://kenji.blog/id/p/fibonacci/) heap)" sangat diperlukan untuk mempercepat algoritma teori graf seperti algoritma Dijkstra.
 
-### Retracement Fibonacci di Pasar Keuangan
+### Retracement [Fibonacci](https://kenji.blog/id/p/fibonacci/) di Pasar Keuangan
 
-Mengejutkannya, namanya juga sering terdengar di dunia keuangan. Sebuah metode analisis teknis yang disebut "Fibonacci retracement" digunakan untuk memprediksi titik di mana harga saham atau nilai tukar akan melambung atau turun kembali pada grafik. Para trader menarik garis support dan resistance berdasarkan rasio Fibonacci seperti 23,6%, 38,2%, dan 61,8% (seperti kebalikan dari rasio emas). Gagasan bahwa hukum alam yang sama berlaku untuk gelombang pasar yang diciptakan oleh psikologi kelompok manusia sangatlah menarik.
+Mengejutkannya, namanya juga sering terdengar di dunia keuangan. Sebuah metode analisis teknis yang disebut "[Fibonacci](https://kenji.blog/id/p/fibonacci/) retracement" digunakan untuk memprediksi titik di mana harga saham atau nilai tukar akan melambung atau turun kembali pada grafik. Para trader menarik garis support dan resistance berdasarkan rasio [Fibonacci](https://kenji.blog/id/p/fibonacci/) seperti 23,6%, 38,2%, dan 61,8% (seperti kebalikan dari rasio emas). Gagasan bahwa hukum alam yang sama berlaku untuk gelombang pasar yang diciptakan oleh psikologi kelompok manusia sangatlah menarik.
 
 ## Kesimpulan
 
 [Leonardo Fibonacci](https://kenji.blog/id/p/fibonacci/) menjembatani pengetahuan dunia Islam dan Eropa, membawa cahaya matematika ke dunia Barat. Tanpa angka Arab yang ia populerkan melalui "Liber Abaci", Revolusi Ilmiah yang menyusul dan masyarakat digital modern mungkin tidak akan pernah ada.
 
-Lebih jauh lagi, deret yang lahir dari "Masalah Kelinci" yang main-main mewujudkan keindahan matematika murni dan terus memikat kita hari ini sebagai hukum universal yang meluas dari pertumbuhan tanaman hingga spiral galaksi, dan bahkan aktivitas ekonomi manusia. Warisan Fibonacci mengajarkan kita melintasi waktu bahwa matematika bukan sekadar teknik berhitung, melainkan "bahasa universal" untuk membuka kebenaran alam semesta.
+Lebih jauh lagi, deret yang lahir dari "Masalah Kelinci" yang main-main mewujudkan keindahan matematika murni dan terus memikat kita hari ini sebagai hukum universal yang meluas dari pertumbuhan tanaman hingga spiral galaksi, dan bahkan aktivitas ekonomi manusia. Warisan [Fibonacci](https://kenji.blog/id/p/fibonacci/) mengajarkan kita melintasi waktu bahwa matematika bukan sekadar teknik berhitung, melainkan "bahasa universal" untuk membuka kebenaran alam semesta.

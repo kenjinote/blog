@@ -15,7 +15,7 @@ tags:
 
 Dans le monde des mathématiques, il existe des concepts qui agissent comme des « ponts magiques », reliant des domaines apparemment sans rapport. L'un d'eux est la **fonction génératrice** (Generating Function). En transformant une « suite » discrète en une « fonction » continue, des problèmes combinatoires complexes peuvent être réduits à des calculs algébriques.
 
-Cet article part de l'idée de base des fonctions génératrices et explique en détail leur incroyable pouvoir : du calcul des combinaisons de paiements avec des pièces à la dérivation du terme général de la suite de Fibonacci. De plus, nous aborderons leur application aux séries entières formelles (FPS) dans les algorithmes et la programmation compétitive.
+Cet article part de l'idée de base des fonctions génératrices et explique en détail leur incroyable pouvoir : du calcul des combinaisons de paiements avec des pièces à la dérivation du terme général de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/). De plus, nous aborderons leur application aux séries entières formelles (FPS) dans les algorithmes et la programmation compétitive.
 
 ## 1. Qu'est-ce qu'une fonction génératrice ?
 
@@ -75,9 +75,9 @@ $$
 
 Le coefficient de $x^n$ lors du développement est $\sum_{k=0}^{n} a_k b_{n-k}$. C'est ce qu'on appelle la **convolution** (Convolution). Dans l'exemple des pièces, l'addition de combinaisons comme « faire $k$ yens avec des pièces de 1 yen et $n-k$ yens avec des pièces de 2 yens » est calculée automatiquement par ce produit de fonctions.
 
-## 3. Application à la suite de Fibonacci
+## 3. Application à la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)
 
-Ensuite, comme application plus avancée, trouvons le terme général de la suite de Fibonacci. La suite de Fibonacci $F_n$ est définie comme suit :
+Ensuite, comme application plus avancée, trouvons le terme général de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/). La suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) $F_n$ est définie comme suit :
 
 *   $F_0 = 0$
 *   $F_1 = 1$
@@ -100,13 +100,13 @@ $$
 F(x) = x + x F(x) + x^2 F(x)
 $$
 
-Résoudre cette équation pour $F(x)$ donne la fonction génératrice de la suite de Fibonacci.
+Résoudre cette équation pour $F(x)$ donne la fonction génératrice de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/).
 
 $$
 F(x) = \frac{x}{1 - x - x^2}
 $$
 
-Étonnamment, les informations de la suite de Fibonacci qui se poursuit à l'infini ont été condensées en une seule fonction fractionnaire simple.
+Étonnamment, les informations de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) qui se poursuit à l'infini ont été condensées en une seule fonction fractionnaire simple.
 
 ### Décomposition en éléments simples et terme général
 

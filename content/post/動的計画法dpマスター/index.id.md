@@ -11,7 +11,7 @@ tags: ["Algorithm", "DP", "C++", "Python"]
 
 Dari competitive programming hingga desain algoritma di dunia nyata, **Pemrograman Dinamis (Dynamic Programming, biasa disebut DP)** sering muncul di banyak situasi dan menjadi hambatan bagi banyak programmer. "Tidak bisa menyusun relasi rekurensi (recurrence relation)", "Indeksnya selalu salah/bug", "Bahkan tidak bisa menilai apakah masalah tersebut bisa diselesaikan dengan DP atau tidak"...... Pasti banyak dari Anda yang memiliki kekhawatiran seperti ini.
 
-Dalam artikel ini, kita akan membahas secara menyeluruh dari esensi pemrograman dinamis, pendekatan konkretnya (top-down dan bottom-up), hingga penjelasan praktis melalui 3 masalah representatif (Deret Fibonacci, Masalah 0/1 Knapsack, dan Longest Common Subsequence). Kami akan menunjukkan contoh implementasi dalam C++ dan Python, serta memberikan panduan untuk "menguasainya sepenuhnya" menggunakan rumus matematika dan ilustrasi gambar. Ini akan menjadi artikel yang sangat panjang, tetapi ketika Anda selesai membacanya sampai akhir, kemampuan algoritma Anda pasti akan melonjak drastis.
+Dalam artikel ini, kita akan membahas secara menyeluruh dari esensi pemrograman dinamis, pendekatan konkretnya (top-down dan bottom-up), hingga penjelasan praktis melalui 3 masalah representatif (Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/), Masalah 0/1 Knapsack, dan Longest Common Subsequence). Kami akan menunjukkan contoh implementasi dalam C++ dan Python, serta memberikan panduan untuk "menguasainya sepenuhnya" menggunakan rumus matematika dan ilustrasi gambar. Ini akan menjadi artikel yang sangat panjang, tetapi ketika Anda selesai membacanya sampai akhir, kemampuan algoritma Anda pasti akan melonjak drastis.
 
 ---
 
@@ -27,7 +27,7 @@ Agar pemrograman dinamis dapat diterapkan, masalah yang menjadi target harus mem
 
 Ini adalah sifat di mana dalam proses menyelesaikan masalah besar, **sub-masalah yang sama muncul berulang kali**.
 
-Misalnya, dalam perhitungan deret Fibonacci yang akan dibahas nanti, perhitungan "mencari suku ke-3" diperlukan baik saat mencari suku ke-5 maupun suku ke-4. Jika sub-masalah tidak tumpang tindih (contoh: metode divide and conquer seperti merge sort), tidak ada gunanya mencatat solusi, sehingga masalah tersebut bukan target penerapan DP. Justru karena saling tumpang tindih, menyimpan hasil perhitungan sekali ke dalam memori (memoisasi atau tabulasi) dan menggunakan kembali akan memungkinkan percepatan yang dramatis.
+Misalnya, dalam perhitungan deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang akan dibahas nanti, perhitungan "mencari suku ke-3" diperlukan baik saat mencari suku ke-5 maupun suku ke-4. Jika sub-masalah tidak tumpang tindih (contoh: metode divide and conquer seperti merge sort), tidak ada gunanya mencatat solusi, sehingga masalah tersebut bukan target penerapan DP. Justru karena saling tumpang tindih, menyimpan hasil perhitungan sekali ke dalam memori (memoisasi atau tabulasi) dan menggunakan kembali akan memungkinkan percepatan yang dramatis.
 
 ### 1-2. Struktur Sub-optimal (Optimal Substructure)
 
@@ -66,10 +66,10 @@ Pendekatan ini dimulai dari sub-masalah yang paling kecil (base case) dan secara
 
 ---
 
-## 3. Praktik 1: Deret Fibonacci
+## 3. Praktik 1: Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/)
 
-Pertama-tama, sebagai contoh paling dasar dan mudah dipahami, kita akan membahas deret Fibonacci.
-Deret Fibonacci didefinisikan sebagai berikut:
+Pertama-tama, sebagai contoh paling dasar dan mudah dipahami, kita akan membahas deret [Fibonacci](https://kenji.blog/id/p/fibonacci/).
+Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) didefinisikan sebagai berikut:
 
 $$
 F(0) = 0, \quad F(1) = 1 \\
@@ -292,7 +292,7 @@ int main() {
 
 ### 4-4. Optimasi Kompleksitas Ruang (Menggunakan Array 1 Dimensi)
 
-Saat memperbarui array 2 dimensi $dp[i][w]$, kita menyadari bahwa ia selalu hanya mengacu pada baris sebelumnya yaitu $dp[i-1]$. Prinsip ini sama dengan optimasi ruang pada deret Fibonacci.
+Saat memperbarui array 2 dimensi $dp[i][w]$, kita menyadari bahwa ia selalu hanya mengacu pada baris sebelumnya yaitu $dp[i-1]$. Prinsip ini sama dengan optimasi ruang pada deret [Fibonacci](https://kenji.blog/id/p/fibonacci/).
 Oleh karena itu, array dapat dikompresi menjadi array 1 dimensi $dp[w]$. Namun, perlu berhati-hati saat memperbarui nilainya. Perulangan untuk kapasitas $w$ harus dilakukan **dari yang lebih besar ke yang lebih kecil (dari belakang ke depan)**. Jika diperbarui dari depan, kita tidak akan mengacu pada "state ke-$(i-1)$", tetapi pada "state ke-$i$" yang baru saja diperbarui di langkah yang sama, yang akan menyebabkan barang yang sama dipilih berulang kali (ini adalah solusi untuk "Unbounded Knapsack Problem").
 
 **Implementasi Python (1 dimensi):**

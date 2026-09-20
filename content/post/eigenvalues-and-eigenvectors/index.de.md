@@ -178,7 +178,7 @@ $$
 D^{100} = \begin{pmatrix} 2^{100} & 0 \\ 0 & 5^{100} \end{pmatrix}
 $$
 
-Diese Eigenschaft ist eine unverzichtbare Technik bei der Vorhersage langfristiger Zustände in Wahrscheinlichkeitsmodellen wie Markov-Ketten, bei der Lösung von Systemen linearer Differentialgleichungen oder sogar bei der Suche nach dem allgemeinen Glied der Fibonacci-Folge.
+Diese Eigenschaft ist eine unverzichtbare Technik bei der Vorhersage langfristiger Zustände in Wahrscheinlichkeitsmodellen wie Markov-Ketten, bei der Lösung von Systemen linearer Differentialgleichungen oder sogar bei der Suche nach dem allgemeinen Glied der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge.
 
 ## Reale Anwendungen von Eigenwerten und Eigenvektoren
 

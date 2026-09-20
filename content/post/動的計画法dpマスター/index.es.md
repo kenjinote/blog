@@ -11,7 +11,7 @@ tags: ["Algorithm", "DP", "C++", "Python"]
 
 Desde la programación competitiva hasta el diseño de algoritmos en la práctica profesional, aparece en muchas situaciones y se convierte en un muro para muchos programadores: la **Programación Dinámica (Dynamic Programming, comúnmente DP)**. "No puedo formular la relación de recurrencia", "los índices tienen errores", "ni siquiera puedo determinar si el problema se puede resolver con DP"... ¿No hay muchos de ustedes que tienen este tipo de problemas?
 
-En este artículo, cubriremos exhaustivamente desde la esencia de la programación dinámica hasta los enfoques específicos (top-down y bottom-up), junto con explicaciones prácticas a través de tres problemas representativos (la sucesión de Fibonacci, el problema de la mochila 0/1 y la subsecuencia común más larga). Mostraremos ejemplos de implementación en C++ y Python, y proporcionaremos el camino para "dominarla por completo" mezclando fórmulas matemáticas y diagramas. Será un artículo muy extenso, pero cuando termines de leerlo hasta el final, tu habilidad en algoritmos seguramente habrá dado un salto.
+En este artículo, cubriremos exhaustivamente desde la esencia de la programación dinámica hasta los enfoques específicos (top-down y bottom-up), junto con explicaciones prácticas a través de tres problemas representativos (la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/), el problema de la mochila 0/1 y la subsecuencia común más larga). Mostraremos ejemplos de implementación en C++ y Python, y proporcionaremos el camino para "dominarla por completo" mezclando fórmulas matemáticas y diagramas. Será un artículo muy extenso, pero cuando termines de leerlo hasta el final, tu habilidad en algoritmos seguramente habrá dado un salto.
 
 ---
 
@@ -27,7 +27,7 @@ Para que la programación dinámica sea aplicable, el problema objetivo debe cum
 
 Es la propiedad en la que, durante el proceso de resolver un problema grande, **el mismo subproblema aparece repetidamente**.
 
-Por ejemplo, en el cálculo de la sucesión de Fibonacci descrito más adelante, la operación de "calcular el 3er término" será necesaria tanto al calcular el 5to término como al calcular el 4to término. Si los subproblemas no se superponen (ejemplo: algoritmos de divide y vencerás como Merge Sort), no hay beneficio en registrar las soluciones, por lo que no son objeto de aplicación de la DP. Es precisamente porque se superponen, que guardar los resultados calculados una vez en memoria (memoización o tabulación) y reutilizarlos hace posible una aceleración dramática.
+Por ejemplo, en el cálculo de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) descrito más adelante, la operación de "calcular el 3er término" será necesaria tanto al calcular el 5to término como al calcular el 4to término. Si los subproblemas no se superponen (ejemplo: algoritmos de divide y vencerás como Merge Sort), no hay beneficio en registrar las soluciones, por lo que no son objeto de aplicación de la DP. Es precisamente porque se superponen, que guardar los resultados calculados una vez en memoria (memoización o tabulación) y reutilizarlos hace posible una aceleración dramática.
 
 ### 1-2. Subestructura Óptima (Optimal Substructure)
 
@@ -66,10 +66,10 @@ Es un enfoque que parte del subproblema más pequeño (caso base) y, mediante pr
 
 ---
 
-## 3. Sección práctica 1: Sucesión de Fibonacci
+## 3. Sección práctica 1: Sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/)
 
-Primero, tomaremos la sucesión de Fibonacci como el ejemplo más básico y fácil de entender.
-La sucesión de Fibonacci se define de la siguiente manera:
+Primero, tomaremos la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) como el ejemplo más básico y fácil de entender.
+La sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) se define de la siguiente manera:
 
 $$
 F(0) = 0, \quad F(1) = 1 \\
@@ -292,7 +292,7 @@ int main() {
 
 ### 4-4. Optimización de la complejidad espacial (Uso de arreglo unidimensional)
 
-Al actualizar el arreglo bidimensional $dp[i][w]$, nos damos cuenta de que siempre se hace referencia únicamente a la fila anterior $dp[i-1]$. Este es el mismo principio de optimización espacial de la sucesión de Fibonacci.
+Al actualizar el arreglo bidimensional $dp[i][w]$, nos damos cuenta de que siempre se hace referencia únicamente a la fila anterior $dp[i-1]$. Este es el mismo principio de optimización espacial de la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/).
 Por lo tanto, el arreglo se puede comprimir a una dimensión $dp[w]$. Sin embargo, es necesario tener cuidado durante la actualización. Debemos hacer un bucle de la capacidad $w$ **de mayor a menor (de atrás hacia adelante)**. Si actualizamos desde el principio, terminaremos haciendo referencia al "estado $i$" que acaba de ser actualizado en el mismo paso, en lugar del "estado $i-1$", y terminaríamos eligiendo el mismo artículo múltiples veces (esta sería la solución para el "Problema de la mochila sin límite de cantidad").
 
 **Implementación en Python (Unidimensional):**

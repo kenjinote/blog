@@ -59,7 +59,7 @@ graph TD
 
 ## Major Achievements in Mathematics: The Algebraization of Geometry and the Challenge of Infinity
 
-Having taken up the Savilian chair, Wallis advanced his mathematical research at an astonishing pace. His greatest achievement was breaking away from classical geometric methods and further advancing Descartes's methods of analytical geometry.
+Having taken up the Savilian chair, Wallis advanced his mathematical research at an astonishing pace. His greatest achievement was breaking away from classical geometric methods and further advancing [Descartes](https://kenji.blog/en/p/descartes/)'s methods of analytical geometry.
 
 ### Introduction of the Infinity Symbol ' $\infty$ ' and 'De sectionibus conicis'
 

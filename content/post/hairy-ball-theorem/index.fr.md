@@ -60,7 +60,7 @@ Ce point $p_0$ où $V(p_0) = 0$ correspond à l'« épi » ou à l'« endroit o�
 
 Derrière ce théorème se cache la **caractéristique d'Euler**, un invariant topologique.
 
-La caractéristique d'Euler $\chi$ d'un polyèdre est calculée à l'aide de la célèbre formule suivante (théorème de Descartes-Euler), utilisant le nombre de sommets ($V$), d'arêtes ($E$) et de faces ($F$) :
+La caractéristique d'Euler $\chi$ d'un polyèdre est calculée à l'aide de la célèbre formule suivante (théorème de [Descartes](https://kenji.blog/fr/p/descartes/)-Euler), utilisant le nombre de sommets ($V$), d'arêtes ($E$) et de faces ($F$) :
 
 $$
 \chi = V - E + F

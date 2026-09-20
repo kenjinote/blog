@@ -30,7 +30,7 @@ En un plano, se hace girar una semirrecta OB alrededor de un punto fijo O a una 
 - Concoide de Nicomedes
 - Cisoide de Diocles
 - Método de las tangentes de Fermat
-- Método de las normales de Descartes
+- Método de las normales de [Descartes](https://kenji.blog/es/p/descartes/)
 
 ### Cronología
 | Año | Evento |

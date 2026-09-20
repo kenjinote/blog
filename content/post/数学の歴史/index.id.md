@@ -14,17 +14,17 @@ description: 'Kami akan mengulas sejarah matematika bersama dengan peristiwa dan
 2. Diberikan sudut sembarang, bagilah menjadi tiga bagian yang sama besar (Triseksi sudut)
 3. Diberikan sebuah kubus, buatlah kubus dengan volume dua kali lipat dari kubus tersebut (Menggandakan kubus)
 
-### Spiral Archimedes
+### Spiral [Archimedes](https://kenji.blog/id/p/archimedes/)
 Pada sebuah bidang, putar sinar OB di sekitar titik tetap O dengan kecepatan seragam. Jika posisi awal adalah OA,
 dan titik P mulai bergerak dari O di sepanjang OB dengan kecepatan konstan pada saat yang sama ketika sinar mulai bergerak dari OA,
-maka garis yang digambar oleh titik P adalah spiral Archimedes.
+maka garis yang digambar oleh titik P adalah spiral [Archimedes](https://kenji.blog/id/p/archimedes/).
 
 ### Teorema Pappus
 - Sikloid
 - Konkoid Nicomedes
 - Sisoid Diocles
 - Metode garis singgung Fermat
-- Metode garis normal Descartes
+- Metode garis normal [Descartes](https://kenji.blog/id/p/descartes/)
 
 ### Kronologi
 | Tahun         | Peristiwa                       |
@@ -32,7 +32,7 @@ maka garis yang digambar oleh titik P adalah spiral Archimedes.
 | Sekitar 3400 SM  | Bangsa Sumeria menggunakan koin tanah liat sebagai alat hitung     |
 | Sekitar 3000 SM | Matematika hieroglif muncul di Mesir         |
 | Sekitar 2800 SM | Peradaban Lembah Indus menggunakan sistem ukuran dan berat desimal   |
-| Sekitar 2700 SM | Bangsa Mesir menggunakan tali dan triple Pythagoras untuk memeriksa sudut |
+| Sekitar 2700 SM | Bangsa Mesir menggunakan tali dan triple [Pythagoras](https://kenji.blog/id/p/pythagoras/) untuk memeriksa sudut |
 | Sekitar 2500 SM | Sempoa (abacus), alat yang digunakan untuk menghitung, ditemukan        |
 | Sekitar 2500 SM |         |
 
