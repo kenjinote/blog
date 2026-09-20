@@ -75,7 +75,7 @@ No entanto, se você submeter este código e executar uma compilação em um ser
 
 Vamos pensar matematicamente sobre o processamento interno que ocorre quando o sistema de arquivos resolve o caminho de um arquivo.
 
-No caso do ext4, que diferencia maiúsculas de minúsculas, as entradas no diretório são gerenciadas por estruturas como tabelas de hash ou B-Trees. Se o número de arquivos no diretório for $N$ e o comprimento do nome do arquivo for $L$, a complexidade computacional no caso de uma simples busca binária ou pesquisa em árvore é a seguinte:
+No caso do ext4, que diferencia maiúsculas de minúsculas, as entradas no diretório são gerenciadas por estruturas como tabelas de hash ou [B-Tree](https://kenji.blog/pt/p/b-tree-database-index-theory/)s. Se o número de arquivos no diretório for $N$ e o comprimento do nome do arquivo for $L$, a complexidade computacional no caso de uma simples busca binária ou pesquisa em árvore é a seguinte:
 
 $$ T_{search}(N) = O(L \log N) $$
 

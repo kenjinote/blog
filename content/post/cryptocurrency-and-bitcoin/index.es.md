@@ -157,7 +157,7 @@ En el proceso de verificación, se realizan los siguientes cálculos usando la c
 
 En una red descentralizada, un algoritmo de consenso es el mecanismo para que todos acuerden el mismo estado del libro mayor.
 
-### Problema de los Generales Bizantinos (Byzantine Generals Problem)
+### Problema de los Generales Bizantinos ([Byzantine Generals](https://kenji.blog/es/p/byzantine-generals-problem-consensus/) Problem)
 
 El "Problema de los Generales Bizantinos" es un problema clásico en la computación distribuida. Múltiples generales están asediando una ciudad enemiga y deben acordar si atacar o retirarse. Sin embargo, puede haber traidores entre los generales que envían mensajes falsos. El problema es cómo los generales honestos pueden llegar a un acuerdo correcto en tal situación.
 

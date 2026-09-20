@@ -8,7 +8,7 @@ tags: ["Masalah Jenderal Bizantium", "Blockchain", "Konsensus", "Algoritma"]
 slug: "byzantine-generals-problem"
 ---
 
-Dalam mempelajari sistem terdistribusi atau teknologi blockchain, kita hampir selalu dihadapkan pada **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** (Byzantine Generals Problem). Masalah ini membahas tema yang sangat penting mengenai bagaimana sistem secara keseluruhan dapat membentuk kesepakatan yang benar dalam situasi di mana terdapat "pengkhianat" atau "node yang rusak" di dalam jaringan.
+Dalam mempelajari sistem terdistribusi atau teknologi blockchain, kita hampir selalu dihadapkan pada **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) Problem). Masalah ini membahas tema yang sangat penting mengenai bagaimana sistem secara keseluruhan dapat membentuk kesepakatan yang benar dalam situasi di mana terdapat "pengkhianat" atau "node yang rusak" di dalam jaringan.
 
 Dalam artikel ini, kami akan menjelaskan **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** secara rinci, mulai dari dasar hingga aplikasinya, disertai dengan cerita konkret, persamaan matematis, dan ilustrasi.
 

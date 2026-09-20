@@ -49,7 +49,7 @@ This probability is extremely low, and practically speaking, it is almost imposs
 
 ---
 
-# 3. Graph Theory and DAG: The Mathematical Model of Git History
+# 3. [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/) and DAG: The Mathematical Model of Git History
 
 Git's commit history is modeled as a "Directed Acyclic Graph (DAG)" in graph theory.
 

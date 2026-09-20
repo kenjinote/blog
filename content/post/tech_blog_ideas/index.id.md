@@ -304,7 +304,7 @@ Tepat setelah mempelajari konsep baru, $S$ berukuran kecil, dan $R$ turun (lupa)
 Perangkat lunak yang secara otomatis menghitung waktu peninjauan kembali optimal dengan menggunakan algoritme (seperti SuperMemo 2) dan menyajikannya sebagai kartu flash (flashcard) adalah "Anki".
 
 Sebagai pendekatan yang kuat untuk menghasilkan ide blog teknologi, **mengonversi konten Permanent Notes di Obsidian menjadi kartu flash Anki** bisa dilakukan.
-Misalnya, Anda bisa mendaftarkan pertanyaan seputar dasar-dasar teknis ke dalam Anki, seperti "Apa 3 elemen dari Teorema CAP?" atau "Mengapa indeks B-Tree memiliki performa pencarian O(log N)?", lalu meninjaunya kembali sebagai rutinitas harian. Begitu pengetahuan tersebut terindeks dalam otak sebagai memori jangka panjang, informasi-informasi itu akan terhubung di bawah sadar saat Anda mandi atau berjalan-jalan, sehingga memicu ilham (momen Eureka) seperti, "Ah, sepertinya saya bisa menulis artikel tentang algoritme konsensus sistem terdistribusi."
+Misalnya, Anda bisa mendaftarkan pertanyaan seputar dasar-dasar teknis ke dalam Anki, seperti "Apa 3 elemen dari Teorema CAP?" atau "Mengapa indeks [B-Tree](https://kenji.blog/id/p/b-tree-database-index-theory/) memiliki performa pencarian O(log N)?", lalu meninjaunya kembali sebagai rutinitas harian. Begitu pengetahuan tersebut terindeks dalam otak sebagai memori jangka panjang, informasi-informasi itu akan terhubung di bawah sadar saat Anda mandi atau berjalan-jalan, sehingga memicu ilham (momen Eureka) seperti, "Ah, sepertinya saya bisa menulis artikel tentang algoritme konsensus sistem terdistribusi."
 
 ## 7. Kreativitas Kombinatorial (Combinatorial Creativity)
 

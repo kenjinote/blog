@@ -207,7 +207,7 @@ En una implementación real (clasificador Bayesiano ingenuo), se multiplican las
 
 ---
 
-## 4. Entropía de Shannon (Shannon Entropy)
+## 4. Entropía de Shannon ([Shannon Entropy](https://kenji.blog/es/p/information-theory-shannon-entropy/))
 
 ### Belleza matemática y resumen
 La "entropía" definida por Claude Shannon, el padre de la teoría de la información, es una fórmula que cuantifica la "incertidumbre", el "desorden" o la "cantidad promedio de información" que posee una fuente de información.

@@ -302,7 +302,7 @@ Direkt nach dem Erlernen eines neuen Konzepts ist $S$ gering und $R$ sinkt rapid
 Die Software "Anki" berechnet den optimalen Zeitpunkt für diese Wiederholungen automatisch mithilfe eines Algorithmus (wie z. B. SuperMemo 2) und präsentiert den Inhalt in Form von Karteikarten.
 
 Ein mächtiger Ansatz zur Generierung von Ideen für den Technik-Blog besteht darin, **die Inhalte der Permanent Notes aus Obsidian in Anki-Karteikarten umzuwandeln**.
-Sie können beispielsweise grundlegende technische Fragen in Anki aufnehmen, wie: "Was sind die 3 Elemente des CAP-Theorems?" oder "Warum haben B-Tree-Indizes eine Such-Performance von O(log N)?", und diese im Rahmen Ihrer täglichen Routine wiederholen. Sobald das Wissen in Ihrem Langzeitgedächtnis indexiert ist, verknüpfen sich die Informationen beim Duschen oder Spazierengehen unbewusst, und Sie erleben Heureka-Momente wie: "Ah, ich könnte einen Artikel über Konsens-Algorithmen in verteilten Systemen schreiben."
+Sie können beispielsweise grundlegende technische Fragen in Anki aufnehmen, wie: "Was sind die 3 Elemente des CAP-Theorems?" oder "Warum haben [B-Tree](https://kenji.blog/de/p/b-tree-database-index-theory/)-Indizes eine Such-Performance von O(log N)?", und diese im Rahmen Ihrer täglichen Routine wiederholen. Sobald das Wissen in Ihrem Langzeitgedächtnis indexiert ist, verknüpfen sich die Informationen beim Duschen oder Spazierengehen unbewusst, und Sie erleben Heureka-Momente wie: "Ah, ich könnte einen Artikel über Konsens-Algorithmen in verteilten Systemen schreiben."
 
 ## 7. Kombinatorische Kreativität (Combinatorial Creativity)
 

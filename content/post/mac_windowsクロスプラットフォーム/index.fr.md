@@ -75,7 +75,7 @@ Cependant, lorsque vous commitez ce code et exécutez le build sur un serveur CI
 
 Voyons mathématiquement quel processus interne se produit lorsqu'un système de fichiers résout un chemin de fichier.
 
-Dans le cas de ext4, qui distingue les majuscules et minuscules, les entrées dans un répertoire sont gérées par des structures telles que des tables de hachage ou des arbres B (B-Tree). Si le nombre de fichiers dans un répertoire est $N$ et la longueur du nom de fichier est $L$, la complexité d'une simple recherche binaire ou d'une recherche dans l'arbre sera la suivante :
+Dans le cas de ext4, qui distingue les majuscules et minuscules, les entrées dans un répertoire sont gérées par des structures telles que des tables de hachage ou des arbres B ([B-Tree](https://kenji.blog/fr/p/b-tree-database-index-theory/)). Si le nombre de fichiers dans un répertoire est $N$ et la longueur du nom de fichier est $L$, la complexité d'une simple recherche binaire ou d'une recherche dans l'arbre sera la suivante :
 
 $$ T_{search}(N) = O(L \log N) $$
 

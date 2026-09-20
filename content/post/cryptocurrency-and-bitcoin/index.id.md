@@ -157,7 +157,7 @@ Dalam proses verifikasi, perhitungan berikut dilakukan menggunakan kunci publik 
 
 Dalam jaringan terdesentralisasi, mekanisme untuk membuat semua orang menyetujui status buku besar yang sama disebut algoritma konsensus.
 
-### Masalah Jenderal Bizantium (Byzantine Generals Problem)
+### Masalah Jenderal Bizantium ([Byzantine Generals](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) Problem)
 
 Sebagai masalah klasik dalam komputasi terdistribusi, ada "Masalah Jenderal Bizantium". Beberapa jenderal mengepung kota musuh dan harus mencapai konsensus apakah akan menyerang atau mundur, tetapi mungkin ada pengkhianat di antara para jenderal yang mengirim pesan palsu. Masalahnya adalah bagaimana mencapai konsensus yang benar hanya di antara jenderal yang jujur dalam situasi seperti itu.
 

@@ -8,7 +8,7 @@ tags: ["비잔틴 장군 문제", "블록체인", "합의 형성", "알고리즘
 slug: "byzantine-generals-problem"
 ---
 
-분산 시스템이나 블록체인 기술을 배울 때 반드시 직면하게 되는 것이 ** [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) ** (Byzantine Generals Problem)입니다. 이는 네트워크 내에 '배신자'나 '고장 난 노드'가 존재하는 상황에서 시스템 전체적으로 어떻게 올바른 합의를 형성할 것인가 하는 매우 중요한 주제를 다루고 있습니다.
+분산 시스템이나 블록체인 기술을 배울 때 반드시 직면하게 되는 것이 ** [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) ** ([Byzantine Generals](https://kenji.blog/ko/p/byzantine-generals-problem-consensus/) Problem)입니다. 이는 네트워크 내에 '배신자'나 '고장 난 노드'가 존재하는 상황에서 시스템 전체적으로 어떻게 올바른 합의를 형성할 것인가 하는 매우 중요한 주제를 다루고 있습니다.
 
 본 기사에서는 이 ** [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/) ** 에 대해 구체적인 스토리, 수학적인 조건식, 도해를 섞어가며 기초부터 응용까지 자세히 해설하겠습니다.
 

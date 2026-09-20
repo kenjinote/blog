@@ -207,7 +207,7 @@ print(f"ईमेल जिसमें 'जीत' है, उसके स्�
 
 ---
 
-## 4. शैनन एन्ट्रॉपी (Shannon Entropy)
+## 4. शैनन एन्ट्रॉपी ([Shannon Entropy](https://kenji.blog/hi/p/information-theory-shannon-entropy/))
 
 ### सूत्र की सुंदरता और अवलोकन
 सूचना सिद्धांत के जनक क्लॉड शैनन द्वारा परिभाषित "एन्ट्रॉपी" एक गणितीय सूत्र है जो किसी सूचना स्रोत की "अनिश्चितता" (uncertainty), "यादृच्छिकता" (randomness), या "औसत सूचना सामग्री" (average information content) को मापता है।

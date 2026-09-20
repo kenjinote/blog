@@ -124,7 +124,7 @@ flowchart TD
 
 - **الاتساق (Consistency)**: هل ترى جميع العقد نفس البيانات في نفس الوقت؟
 - **التوافر (Availability)**: هل يستمر النظام في الاستجابة حتى لو فشلت بعض العقد؟
-- **تحمل الانقسام (Partition Tolerance)**: هل يستمر النظام في العمل حتى لو حدث انقسام في الشبكة؟
+- **تحمل الانقسام ([Partition Tolerance](https://kenji.blog/ar/p/cap-theorem-distributed-systems/))**: هل يستمر النظام في العمل حتى لو حدث انقسام في الشبكة؟
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

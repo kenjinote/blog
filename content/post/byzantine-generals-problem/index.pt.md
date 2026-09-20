@@ -8,7 +8,7 @@ tags: ["Problema dos Generais Bizantinos", "Blockchain", "Consenso", "Algoritmo"
 slug: "byzantine-generals-problem"
 ---
 
-Ao estudar sistemas distribuídos e tecnologia blockchain, um conceito que inevitavelmente se depara é o **Problema dos Generais Bizantinos** (Byzantine Generals Problem). Este aborda um tema extremamente importante: como um sistema como um todo pode formar um consenso correto numa situação em que existem "traidores" ou "nós defeituosos" na rede.
+Ao estudar sistemas distribuídos e tecnologia blockchain, um conceito que inevitavelmente se depara é o **Problema dos Generais Bizantinos** ([Byzantine Generals](https://kenji.blog/pt/p/byzantine-generals-problem-consensus/) Problem). Este aborda um tema extremamente importante: como um sistema como um todo pode formar um consenso correto numa situação em que existem "traidores" ou "nós defeituosos" na rede.
 
 Neste artigo, explicaremos detalhadamente este **Problema dos Generais Bizantinos**, desde os fundamentos até as aplicações, incluindo histórias concretas, fórmulas matemáticas e diagramas.
 

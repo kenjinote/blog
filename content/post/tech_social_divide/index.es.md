@@ -23,7 +23,7 @@ Nosotros, los ingenieros, no somos solo entidades que escriben código y constru
 
 # Capítulo 1: La estructura matemática de la "Cámara de eco" desde la teoría de redes
 
-Al discutir la brecha social, lo primero que no podemos evitar es el análisis estructural de la comunidad utilizando la "teoría de redes (Graph Theory)". Las relaciones humanas en las redes sociales se pueden modelar como un gráfico gigante donde los usuarios son "nodos (vértices)" y los seguimientos o interacciones entre usuarios son "aristas (bordes)".
+Al discutir la brecha social, lo primero que no podemos evitar es el análisis estructural de la comunidad utilizando la "teoría de redes ([Graph Theory](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/))". Las relaciones humanas en las redes sociales se pueden modelar como un gráfico gigante donde los usuarios son "nodos (vértices)" y los seguimientos o interacciones entre usuarios son "aristas (bordes)".
 
 Uno de los indicadores más importantes que caracterizan la división es el "coeficiente de agrupamiento (Clustering Coefficient)". El coeficiente de agrupamiento $C_i$ de un usuario $i$ indica la probabilidad de que los amigos del usuario $i$ sean amigos entre sí, y se define por la siguiente fórmula.
 

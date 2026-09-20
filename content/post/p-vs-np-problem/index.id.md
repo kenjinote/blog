@@ -58,7 +58,7 @@ Secara sederhana, itu adalah **"masalah di mana komputer dapat menemukan jawaban
 ### Masalah Representatif dari Kelas P
 
 - **Masalah Pengurutan**: Mengurutkan nilai yang diberikan secara menaik (seperti $O(n \log n)$).
-- **Masalah Rute Terpendek**: Seperti navigasi mobil, menemukan rute terpendek antara 2 titik (dengan algoritma Dijkstra $O(E + V \log V)$).
+- **Masalah Rute Terpendek**: Seperti navigasi mobil, menemukan rute terpendek antara 2 titik (dengan algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) $O(E + V \log V)$).
 - **Masalah Pengujian Primalitas**: Menentukan apakah suatu bilangan adalah bilangan prima (telah dibuktikan bahwa ini dapat dipecahkan dalam waktu polinomial oleh algoritma AKS).
 
 Berikut ini adalah implementasi Python dari algoritma pencarian biner, yang merupakan contoh representatif dari Kelas P.

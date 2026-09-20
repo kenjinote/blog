@@ -58,7 +58,7 @@ xychart-beta
 ### 类P的代表性问题
 
 - **排序问题**: 将给定的数字按升序排列（例如 $O(n \log n)$ ）。
-- **最短路径问题**: 像车载导航一样，寻找两点之间的最短路线（使用Dijkstra算法为 $O(E + V \log V)$ ）。
+- **最短路径问题**: 像车载导航一样，寻找两点之间的最短路线（使用[Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)算法为 $O(E + V \log V)$ ）。
 - **素数判定问题**: 判定某个数是否为素数（已经证明通过AKS素数测试可以在多项式时间内解决）。
 
 以下是类P的一个代表性例子，二分查找算法的Python实现。

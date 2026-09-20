@@ -80,7 +80,7 @@ graph LR
 
 在記憶技術書的內容時，「死記硬背長篇大論的證明」是毫無意義的。應該將知識分割為最小單位（Atomic）並製作成卡片。
 
-- **糟糕的卡片** ：「寫下 Dijkstra 演算法的完整證明」
+- **糟糕的卡片** ：「寫下 [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法的完整證明」
 - **好的卡片** ：「在 Dijkstra 演算法中，某個頂點的最短距離被視為確定的條件是什麼？」→「在未確定的頂點集合中，選出暫定距離最小的頂點時。」
 - **好的卡片** ：「寫出[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的公式」→「對於質數 $p$ 以及與其互質的整數 $a$，$a^{p-1} \equiv 1 \pmod p$」
 
@@ -173,7 +173,7 @@ rsa_demo()
 
 為了找到滿足公式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ 的 $d$，我們必須實作稱為擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法的演算法。像這樣， **當試圖將數學公式寫成程式碼時，就會面臨「這個變數具體該如何計算？」的實作問題，而在解決這些問題的過程中，對數學的理解將會突飛猛進** 。
 
-### 4.2 範例 2：Dijkstra 演算法與鬆弛操作（Relaxation）
+### 4.2 範例 2：[Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法與鬆弛操作（Relaxation）
 
 讓我們思考用來解決圖論中單源最短路徑問題（SSSP）的 Dijkstra 演算法。
 

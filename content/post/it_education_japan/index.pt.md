@@ -134,7 +134,7 @@ As operações de banco de dados são definidas através das seguintes operaçõ
 - Projeção (Projection, $\pi$): Extrair atributos específicos (colunas)
 - Junção (Join, $\bowtie$): Interseção condicional de múltiplas relações
 
-Além disso, aprender a estrutura de índices "B-Tree" (Árvore B) para buscar dados instantaneamente em enormes registros é a melhor aplicação prática das estruturas de dados. B-Trees minimizam as E/S (I/O) de disco enquanto garantem uma velocidade de busca de $O(\log N)$. Sem conhecer as propriedades ACID das transações (Atomicidade, Consistência, Isolamento, Durabilidade), é impossível construir sistemas robustos.
+Além disso, aprender a estrutura de índices "[B-Tree](https://kenji.blog/pt/p/b-tree-database-index-theory/)" (Árvore B) para buscar dados instantaneamente em enormes registros é a melhor aplicação prática das estruturas de dados. B-Trees minimizam as E/S (I/O) de disco enquanto garantem uma velocidade de busca de $O(\log N)$. Sem conhecer as propriedades ACID das transações (Atomicidade, Consistência, Isolamento, Durabilidade), é impossível construir sistemas robustos.
 
 ## 6. Segurança e Teoria da Criptografia: A Infraestrutura Social Apoiada na Dificuldade da Fatoração de Primos
 

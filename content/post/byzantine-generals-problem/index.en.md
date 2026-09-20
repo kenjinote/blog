@@ -8,7 +8,7 @@ tags: ["Byzantine Generals Problem", "Blockchain", "Consensus Building", "Algori
 slug: "byzantine-generals-problem"
 ---
 
-When studying distributed systems and blockchain technology, you will almost certainly encounter the **Byzantine Generals Problem**. It deals with the highly important theme of how a system as a whole can form a correct consensus in a situation where "traitors" or "faulty nodes" exist within the network.
+When studying distributed systems and blockchain technology, you will almost certainly encounter the **[Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem**. It deals with the highly important theme of how a system as a whole can form a correct consensus in a situation where "traitors" or "faulty nodes" exist within the network.
 
 In this article, we will explain this **Byzantine Generals Problem** in detail, from basics to applications, mixing in concrete stories, mathematical formulas, and diagrams.
 
@@ -43,7 +43,7 @@ end
 
 In this situation, Lieutenant 1 receives contradictory information: "The commander says attack, but Lieutenant 2 says retreat," making them unable to make a correct decision.
 
-In this way, asking "how can normal nodes reach the same conclusion in a network where malicious nodes can broadcast arbitrary false information" is the essence of the **Byzantine Generals Problem**.
+In this way, asking "how can normal nodes reach the same conclusion in a network where malicious nodes can broadcast arbitrary false information" is the essence of the **[Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem**.
 
 ## 2. Strict Conditions for Consensus
 
@@ -98,7 +98,7 @@ From Lieutenant 1's perspective, **the combination of information received is ex
 
 ## 3. Algorithms as Solutions
 
-What kind of algorithm is necessary to solve the Byzantine Generals Problem and form consensus?
+What kind of algorithm is necessary to solve the [Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem and form consensus?
 
 ### Recursive Oral Messages Algorithm
 
@@ -151,7 +151,7 @@ Through this process, even if there are $m$ faulty or malicious nodes in the net
 
 Satoshi Nakamoto, the creator of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/), addressed this problem with a completely new approach. This is the **Nakamoto Consensus**, combining **Proof of Work** (PoW) with a rule that considers the longest chain as the correct one.
 
-In Nakamoto Consensus, only the one who wins a mathematical computational race (mining) gains the right to propose a block. To make the network recognize fake information, it is necessary to control the majority (51% or more) of the computing power of the entire network, which is designed to be extremely difficult in reality. As a result, it is evaluated as having probabilistically solved the Byzantine Generals Problem in an open network with an unspecified number of participants.
+In Nakamoto Consensus, only the one who wins a mathematical computational race (mining) gains the right to propose a block. To make the network recognize fake information, it is necessary to control the majority (51% or more) of the computing power of the entire network, which is designed to be extremely difficult in reality. As a result, it is evaluated as having probabilistically solved the [Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem in an open network with an unspecified number of participants.
 
 ### Application of BFT in PoS (Proof of Stake)
 

@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 어떤 출발지(시작점)에서 다른 모든 정점까지의 최단 경로를 구하는 문제입니다. 간선의 가중치가 음이 아닌지, 혹은 음의 가중치가 존재하는지에 따라 적용할 수 있는 알고리즘이 다릅니다.
 
-### 다익스트라 알고리즘 (Dijkstra's Algorithm)
+### 다익스트라 알고리즘 ([Dijkstra](https://kenji.blog/ko/p/graph-theory-dijkstra-a-star/)'s Algorithm)
 
 다익스트라 알고리즘은 **모든 간선의 가중치가 음수 값이 아닐 때** 적용할 수 있는 빠른 최단 경로 알고리즘입니다. '현재까지 알려진 최단 거리가 가장 짧은 정점을 확정 짓고, 그 정점에서 인접한 정점들로의 거리를 갱신한다(완화)'는 그리디(탐욕) 방법에 기반합니다.
 

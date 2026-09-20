@@ -124,7 +124,7 @@ Ao projetar sistemas distribuídos, engenheiros enfrentam constantemente o "Teor
 
 - **Consistency (Consistência)**: Todos os nós visualizam os mesmos dados simultaneamente?
 - **Availability (Disponibilidade)**: O sistema continua respondendo mesmo se alguns nós falharem?
-- **Partition Tolerance (Tolerância a Partições)**: O sistema continua operando mesmo se ocorrerem falhas de rede (partições)?
+- **[Partition Tolerance](https://kenji.blog/pt/p/cap-theorem-distributed-systems/) (Tolerância a Partições)**: O sistema continua operando mesmo se ocorrerem falhas de rede (partições)?
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

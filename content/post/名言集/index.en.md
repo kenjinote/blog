@@ -140,7 +140,7 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 > Talk is cheap. Show me the code. (Linus Torvalds)
 
-> Simplicity is prerequisite for reliability. (Edsger W. Dijkstra)
+> Simplicity is prerequisite for reliability. (Edsger W. [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/))
 
 > Computer science is no more about computers than astronomy is about telescopes. (Edsger W. Dijkstra)
 

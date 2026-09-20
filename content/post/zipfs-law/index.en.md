@@ -185,7 +185,7 @@ Running this code confirms that actual word frequencies are distributed along th
 
 In caching strategies for web servers and databases, **[Zipf's Law](https://kenji.blog/en/p/zipfs-law/)** is extremely crucial. Because a small amount of popular content (like viral videos or top news) accounts for the vast majority of overall access, storing these in fast caching like memory (RAM) can drastically improve the performance of the entire system. Algorithms like LFU (Least Frequently Used) and LRU (Least Recently Used) are precisely designed to take advantage of this data bias (power law).
 
-## 7.2. Data Compression
+## 7.2. [Data Compression](https://kenji.blog/en/p/information-theory-shannon-entropy/)
 
 In entropy coding such as Huffman Coding, short bit strings are assigned to frequently occurring data patterns, while long bit strings are assigned to rarely occurring patterns. If data occurrence frequencies are extremely skewed like in **[Zipf's Law](https://kenji.blog/en/p/zipfs-law/)**, using such variable-length coding allows data size to be drastically compressed. The foundation of compression technologies like ZIP files and JPEG images also utilizes these statistical properties.
 

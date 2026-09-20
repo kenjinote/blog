@@ -185,7 +185,7 @@ print("Protokoll des BFS-Ausführungsergebnisses:")
 bfs(graph_data, 'A')
 ```
 
-### 5.2. Problem des kürzesten Weges: Dijkstra-Algorithmus
+### 5.2. Problem des kürzesten Weges: [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus
 
 Bei der Suche nach der schnellsten Route zu einem Ziel in einer Kartenanwendung ist das, was im Kern des Systems arbeitet, ein **Algorithmus für den kürzesten Weg**. Die Route hat Kosten (Gewichte) wie „Entfernung“ und „Reisezeit“, und das Ziel ist es, den Weg zu finden, der die kumulativen Kosten vom Startpunkt zum Ziel minimiert.
 
@@ -299,4 +299,4 @@ In diesem Artikel haben wir skizziert, wie sich die **Graphentheorie**, die aus 
 
 Obwohl Graphen nur aus den einfachsten und abstraktesten Elementen bestehen, die möglich sind: Punkten (Knoten) und Linien (Kanten), ist die Welt der mathematischen Theorien und Berechnungsalgorithmen, die auf sie angewendet werden, so tief wie das Universum und birgt eine überwältigende Macht. Für Softwareentwickler, Datenwissenschaftler oder jeden, der sich für komplexe Systeme interessiert, werden systematische Kenntnisse der Graphentheorie die Fähigkeit zur abstrakten Problemlösung und das logische Denken zur Ableitung optimaler Lösungen exponentiell verbessern.
 
-Wenn Sie das Programmieren lernen, nutzen Sie diesen Artikel bitte als Sprungbrett und versuchen Sie, Algorithmen wie Dijkstra oder die Breitensuche tatsächlich auf Ihrem eigenen Computer zu programmieren und auszuführen. Wenn Sie erleben, wie unsichtbare, komplexe Netzwerke durch den von Ihnen geschriebenen Code anschaulich entwirrt werden, werden Sie die wahre Schönheit und Faszination der Graphentheorie wirklich erkennen. Die Welt ist voller schönerer und berechenbarerer Graphen, als Sie vielleicht denken.
+Wenn Sie das Programmieren lernen, nutzen Sie diesen Artikel bitte als Sprungbrett und versuchen Sie, Algorithmen wie [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/) oder die Breitensuche tatsächlich auf Ihrem eigenen Computer zu programmieren und auszuführen. Wenn Sie erleben, wie unsichtbare, komplexe Netzwerke durch den von Ihnen geschriebenen Code anschaulich entwirrt werden, werden Sie die wahre Schönheit und Faszination der Graphentheorie wirklich erkennen. Die Welt ist voller schönerer und berechenbarerer Graphen, als Sie vielleicht denken.

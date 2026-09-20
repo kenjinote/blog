@@ -91,7 +91,7 @@ A strict data type is defined for each "value" in the registry. When manipulatin
 
 ## 5. Mathematical Models and Performance of the Registry in the Operating System
 
-Since the registry is directly linked to OS performance (especially boot time and process initialization speed), it is internally optimized using an advanced data structure similar to a B-Tree called "Cell Index".
+Since the registry is directly linked to OS performance (especially boot time and process initialization speed), it is internally optimized using an advanced data structure similar to a [B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/) called "Cell Index".
 
 ### Search Time Complexity
 

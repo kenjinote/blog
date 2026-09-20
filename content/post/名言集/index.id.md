@@ -140,7 +140,7 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 > Bicara itu murah. Tunjukkan kodenya (Linus Torvalds)
 
-> Kesederhanaan adalah prasyarat dari keandalan (Edsger W. Dijkstra)
+> Kesederhanaan adalah prasyarat dari keandalan (Edsger W. [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/))
 
 > Ilmu komputer bukanlah tentang komputer, sama seperti astronomi bukan tentang teleskop (Edsger W. Dijkstra)
 

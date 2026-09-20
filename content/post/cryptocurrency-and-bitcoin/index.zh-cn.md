@@ -157,7 +157,7 @@ $$
 
 在去中心化网络中，让所有人都对相同的账本状态达成一致的机制就是共识算法。
 
-### 拜占庭将军问题（Byzantine Generals Problem）
+### 拜占庭将军问题（[Byzantine Generals](https://kenji.blog/zh-cn/p/byzantine-generals-problem-consensus/) Problem）
 
 分布式计算中的一个经典问题是“拜占庭将军问题”。多位将军包围了一座敌方城市，他们必须在进攻或撤退上达成一致意见，但将军中可能有叛徒发送虚假信息。在这个问题中，我们要探讨在这样的情况下，忠诚的将军们如何达成正确的共识。
 

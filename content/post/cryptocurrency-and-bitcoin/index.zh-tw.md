@@ -157,7 +157,7 @@ $$
 
 在去中心化網路中，讓所有人對相同帳本狀態達成一致的機制就是共識演算法。
 
-### 拜占庭將軍問題（Byzantine Generals Problem）
+### 拜占庭將軍問題（[Byzantine Generals](https://kenji.blog/zh-tw/p/byzantine-generals-problem-consensus/) Problem）
 
 分散式計算中一個經典的問題是「拜占庭將軍問題」。多位將軍包圍了一座敵方城市，他們必須在攻擊或撤退上達成一致意見，但將軍中可能會有叛徒發送假訊息。在這種情況下，問題在於如何僅讓誠實的將軍們達成正確的共識。
 

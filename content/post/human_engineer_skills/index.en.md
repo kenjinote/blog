@@ -113,17 +113,17 @@ Rather than instructing AI to "build the entire system", humans will delegate im
 
 ---
 
-## 4. Human-Specific Skill 3: Distributed System Architecture Design and Scaling
+## 4. Human-Specific Skill 3: [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems/) Architecture Design and Scaling
 
 Modern software is evolving from monoliths running on a single server to cloud-native microservices architectures and event-driven architectures. Designing such distributed systems is a profoundly difficult area for AI, which can only perform localized logic optimization.
 
-### 4.1 The CAP Theorem and Judging Trade-offs
+### 4.1 The [CAP Theorem](https://kenji.blog/en/p/cap-theorem-distributed-systems/) and Judging Trade-offs
 
 When designing a distributed system, engineers constantly confront the "CAP Theorem." The CAP Theorem is the principle that a distributed system can only satisfy two out of the following three properties simultaneously:
 
 - **Consistency**: Does every node see the same data at the same time?
 - **Availability**: Does the system continue to respond even if some nodes fail?
-- **Partition Tolerance**: Does the system continue to operate even if a network partition occurs?
+- **[Partition Tolerance](https://kenji.blog/en/p/cap-theorem-distributed-systems/)**: Does the system continue to operate even if a network partition occurs?
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

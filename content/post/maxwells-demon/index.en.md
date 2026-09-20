@@ -114,7 +114,7 @@ $$
 
 Szilard saw that a profound relationship between entropy and information lies in the very process of the demon "observing" the state of the system and "remembering" it. He considered that acquiring information itself increases entropy.
 
-## Fusion of Shannon Entropy and Thermodynamics
+## Fusion of [Shannon Entropy](https://kenji.blog/en/p/information-theory-shannon-entropy/) and Thermodynamics
 
 In 1948, Claude Shannon founded information theory and defined **Information Entropy** (Shannon entropy) to express the uncertainty of information. The entropy $H$ of an information source following a probability distribution $P(x)$ is expressed as follows:
 

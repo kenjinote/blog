@@ -80,7 +80,7 @@ graph LR
 
 Beim Auswendiglernen von Fachbüchern ist es sinnlos, „lange Beweise auswendig zu lernen“. Unterteilen Sie das Wissen in kleinste Einheiten (atomar) und erstellen Sie daraus Karten.
 
-- **Schlechte Karte**: „Schreibe den gesamten Beweis für den Dijkstra-Algorithmus auf.“
+- **Schlechte Karte**: „Schreibe den gesamten Beweis für den [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus auf.“
 - **Gute Karte**: „Unter welcher Bedingung kann die kürzeste Distanz zu einem bestimmten Knoten im Dijkstra-Algorithmus als endgültig betrachtet werden?“ → „Wenn der Knoten mit der geringsten vorläufigen Distanz aus der Menge der noch nicht festgelegten Knoten ausgewählt wird.“
 - **Gute Karte**: „Wie lautet die Formel für den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/)?“ → „Für eine Primzahl $p$ und eine dazu teilerfremde ganze Zahl $a$ gilt: $a^{p-1} \equiv 1 \pmod p$.“
 
@@ -174,7 +174,7 @@ rsa_demo()
 
 Um $d$ zu finden, das die Formel $e \cdot d \equiv 1 \pmod{\phi(n)}$ erfüllt, muss ein Algorithmus namens erweiterter euklidischer Algorithmus implementiert werden. Auf diese Weise stehen Sie beim **Versuch, Formeln in Code umzusetzen, vor der implementierungsspezifischen Herausforderung: „Wie berechnet man diese Variable genau?“. Der Prozess zur Lösung dieser Herausforderung vertieft das mathematische Verständnis enorm**.
 
-### 4.2 Beispiel 2: Dijkstra-Algorithmus und Relaxation (Entspannung)
+### 4.2 Beispiel 2: [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus und Relaxation (Entspannung)
 
 Betrachten wir den Dijkstra-Algorithmus, der das Problem des kürzesten Pfades von einem Startknoten (Single-Source Shortest Path, SSSP) in der Graphentheorie löst.
 

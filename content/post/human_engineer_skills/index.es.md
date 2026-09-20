@@ -124,7 +124,7 @@ Al diseñar sistemas distribuidos, los ingenieros siempre enfrentan el "Teorema 
 
 - **Consistency (Consistencia)**: ¿Se ven los mismos datos al mismo tiempo en todos los nodos?
 - **Availability (Disponibilidad)**: ¿Sigue respondiendo el sistema incluso si fallan algunos de los nodos?
-- **Partition Tolerance (Tolerancia a particiones)**: ¿Continúa funcionando el sistema incluso si ocurre una división en la red?
+- **[Partition Tolerance](https://kenji.blog/es/p/cap-theorem-distributed-systems/) (Tolerancia a particiones)**: ¿Continúa funcionando el sistema incluso si ocurre una división en la red?
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

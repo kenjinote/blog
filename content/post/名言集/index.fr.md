@@ -140,7 +140,7 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 > Les mots ne coûtent rien. Montrez-moi le code (Linus Torvalds)
 
-> La simplicité est la condition préalable à la fiabilité (Edsger Dijkstra)
+> La simplicité est la condition préalable à la fiabilité (Edsger [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/))
 
 > L'informatique n'est pas plus la science des ordinateurs que l'astronomie n'est celle des télescopes (Edsger Dijkstra)
 

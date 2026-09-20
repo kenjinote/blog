@@ -58,7 +58,7 @@ En términos sencillos, son **«los problemas que una computadora puede resolver
 ### Problemas representativos de la clase P
 
 - **Problema de ordenamiento**: Ordenar ascendentemente los números dados (ej. $O(n \log n)$).
-- **Problema del camino más corto**: Como en un sistema de navegación para automóviles, encontrar la ruta más corta entre 2 puntos (algoritmo de Dijkstra con $O(E + V \log V)$).
+- **Problema del camino más corto**: Como en un sistema de navegación para automóviles, encontrar la ruta más corta entre 2 puntos (algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/) con $O(E + V \log V)$).
 - **Problema de primalidad**: Determinar si un número determinado es primo (se demostró que se puede resolver en tiempo polinómico mediante el test de primalidad AKS).
 
 A continuación, se muestra una implementación en Python del algoritmo de búsqueda binaria, un ejemplo clásico de la clase P.

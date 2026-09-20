@@ -75,7 +75,7 @@ When you finish coloring according to the rules of Sperner coloring, what phenom
 
 No matter how intentionally you color the internal vertices, or how finely and complexly you divide the triangle, a small triangle with all 3 colors (let's call it a **Complete Triangle**) will definitely appear somewhere.
 
-# 5. A Beautiful Proof Using Graph Theory
+# 5. A Beautiful Proof Using [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
 This theorem might seem magical intuitively, but it can be proven beautifully using the concepts of "Dual Graph" and "Handshaking Lemma". This approach is very easy to understand if we use the analogy of "rooms and doors".
 

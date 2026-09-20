@@ -134,7 +134,7 @@ Les opérations sur les bases de données sont définies par les opérations fon
 - Projection (Projection, $\pi$) : Extraction d'attributs (colonnes) spécifiques
 - Jointure (Join, $\bowtie$) : Intersection conditionnelle de plusieurs relations
 
-De plus, l'apprentissage de la structure de l'« index B-Tree », qui permet de rechercher instantanément les données cibles parmi un nombre massif d'enregistrements, constitue la meilleure application pratique des structures de données. Le B-Tree garantit une vitesse de recherche de $O(\log N)$ tout en minimisant le nombre d'E/S disque. Il est impossible de construire un système robuste sans connaître les propriétés ACID (Atomicity, Consistency, Isolation, Durability) des transactions.
+De plus, l'apprentissage de la structure de l'« index [B-Tree](https://kenji.blog/fr/p/b-tree-database-index-theory/) », qui permet de rechercher instantanément les données cibles parmi un nombre massif d'enregistrements, constitue la meilleure application pratique des structures de données. Le B-Tree garantit une vitesse de recherche de $O(\log N)$ tout en minimisant le nombre d'E/S disque. Il est impossible de construire un système robuste sans connaître les propriétés ACID (Atomicity, Consistency, Isolation, Durability) des transactions.
 
 ## 6. Sécurité et cryptographie : La difficulté de la factorisation des nombres premiers, pilier des infrastructures sociales
 

@@ -91,7 +91,7 @@ Os "valores" do registro têm tipos de dados estritamente definidos. Ao manipula
 
 ## 5. Modelo Matemático e Desempenho do Registro no Sistema Operacional
 
-Como o registro afeta diretamente o desempenho do sistema operacional (especialmente o tempo de inicialização e a velocidade de inicialização do processo), ele é internamente otimizado usando uma estrutura de dados avançada chamada "Cell Index", semelhante a uma B-Tree (Árvore B).
+Como o registro afeta diretamente o desempenho do sistema operacional (especialmente o tempo de inicialização e a velocidade de inicialização do processo), ele é internamente otimizado usando uma estrutura de dados avançada chamada "Cell Index", semelhante a uma [B-Tree](https://kenji.blog/pt/p/b-tree-database-index-theory/) (Árvore B).
 
 ### Complexidade de Tempo da Pesquisa (Time Complexity)
 A complexidade de tempo $T_{\text{search}}$ ao pesquisar por uma chave (caminho) específica no registro depende da profundidade da árvore e do número de nós em cada nível. Ao pesquisar uma subchave na profundidade $d$ (ex: `A\B\C\D` implica $d=4$), a complexidade pode ser teoricamente modelada da seguinte forma:

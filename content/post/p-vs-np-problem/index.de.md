@@ -58,7 +58,7 @@ Einfach gesagt handelt es sich um **„Probleme, bei denen der Computer in reali
 ### Typische Probleme der Klasse P
 
 - **Sortierproblem**: Gegebene Zahlen in aufsteigender Reihenfolge sortieren (z. B. $O(n \log n)$).
-- **Kürzeste-Wege-Problem**: Den kürzesten Weg zwischen zwei Punkten finden, wie bei einem Navigationssystem (mit dem Dijkstra-Algorithmus in $O(E + V \log V)$).
+- **Kürzeste-Wege-Problem**: Den kürzesten Weg zwischen zwei Punkten finden, wie bei einem Navigationssystem (mit dem [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus in $O(E + V \log V)$).
 - **Primzahltest**: Überprüfen, ob eine bestimmte Zahl eine Primzahl ist (es wurde bewiesen, dass dies mit dem AKS-Primzahltest in polynomieller Zeit lösbar ist).
 
 Im Folgenden sehen Sie eine Python-Implementierung des binären Suchalgorithmus, eines typischen Beispiels für die Klasse P.

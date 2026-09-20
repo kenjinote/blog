@@ -91,7 +91,7 @@ Die „Werte“ in der Registrierung haben jeweils strikt definierte Datentypen.
 
 ## 5. Das mathematische Modell und die Leistung der Registrierung im Betriebssystem
 
-Da die Registrierung direkt an die Leistung des Betriebssystems (insbesondere Boot-Zeit und Initialisierungsgeschwindigkeit von Prozessen) gekoppelt ist, wird sie intern mithilfe einer fortschrittlichen Datenstruktur optimiert, die als „Cell Index“ bezeichnet wird und einem B-Baum (B-Tree) ähnelt.
+Da die Registrierung direkt an die Leistung des Betriebssystems (insbesondere Boot-Zeit und Initialisierungsgeschwindigkeit von Prozessen) gekoppelt ist, wird sie intern mithilfe einer fortschrittlichen Datenstruktur optimiert, die als „Cell Index“ bezeichnet wird und einem B-Baum ([B-Tree](https://kenji.blog/de/p/b-tree-database-index-theory/)) ähnelt.
 
 ### Zeitkomplexität der Suche (Time Complexity)
 Die Zeitkomplexität $T_{\text{search}}$ bei der Suche nach einem bestimmten Schlüssel (Pfad) innerhalb der Registrierung hängt von der Tiefe des Baums und der Anzahl der Knoten auf jeder Ebene ab. Die Komplexität beim Suchen eines Unterschlüssels der Tiefe $d$ (z. B. für `A\B\C\D` ist $d=4$) kann theoretisch wie folgt modelliert werden:

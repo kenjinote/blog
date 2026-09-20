@@ -26,7 +26,7 @@ In 1879, a mathematician named Alfred Kempe published a proof of the [Four Color
 
 However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While pointing out the logical error in Kempe's work, Heawood successfully applied Kempe's method to prove the "Five Color Theorem," which states that "any map can be colored with **5 colors**." The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) once again stood as an unsolved problem.
 
-## 4. Conversion to Graph Theory
+## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
 To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar Graph."
 
@@ -82,7 +82,7 @@ In 1879, a mathematician named Alfred Kempe published a proof of the [Four Color
 
 However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While pointing out the logical error in Kempe's work, Heawood successfully applied Kempe's method to prove the "Five Color Theorem," which states that "any map can be colored with **5 colors**." The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) once again stood as an unsolved problem.
 
-## 4. Conversion to Graph Theory
+## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
 To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar Graph."
 
@@ -138,7 +138,7 @@ In 1879, a mathematician named Alfred Kempe published a proof of the [Four Color
 
 However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While pointing out the logical error in Kempe's work, Heawood successfully applied Kempe's method to prove the "Five Color Theorem," which states that "any map can be colored with **5 colors**." The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) once again stood as an unsolved problem.
 
-## 4. Conversion to Graph Theory
+## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
 To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar Graph."
 
@@ -194,7 +194,7 @@ In 1879, a mathematician named Alfred Kempe published a proof of the [Four Color
 
 However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While pointing out the logical error in Kempe's work, Heawood successfully applied Kempe's method to prove the "Five Color Theorem," which states that "any map can be colored with **5 colors**." The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) once again stood as an unsolved problem.
 
-## 4. Conversion to Graph Theory
+## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
 To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar Graph."
 

@@ -58,7 +58,7 @@ En clair, ce sont **"les problèmes pour lesquels un ordinateur peut trouver la 
 ### Problèmes représentatifs de la classe P
 
 - **Problème de tri** : Trier les nombres donnés par ordre croissant ($O(n \log n)$ etc.).
-- **Problème du plus court chemin** : Trouver le chemin le plus court entre deux points, comme un système de navigation (algorithme de Dijkstra en $O(E + V \log V)$).
+- **Problème du plus court chemin** : Trouver le chemin le plus court entre deux points, comme un système de navigation (algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/) en $O(E + V \log V)$).
 - **Test de primalité** : Déterminer si un nombre donné est premier (il a été prouvé qu'il peut être résolu en temps polynomial grâce au test de primalité AKS).
 
 Voici une implémentation en Python de l'algorithme de recherche dichotomique, un exemple classique de la classe P.

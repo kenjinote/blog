@@ -11,7 +11,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 In competitive programming, graph theory and its algorithms are some of the most important themes that cannot be avoided. Many of the problems presented in contests like AtCoder, Codeforces, and TopCoder have a graph structure behind them. They serve as a powerful weapon for abstracting and solving real-world problems, such as finding the shortest path in a road network, minimizing communication costs in a network, and resolving task dependencies.
 
-In this article, we will completely cover the major graph algorithms that frequently appear in competitive programming (Topological Sort, Dijkstra's Algorithm, Bellman-Ford Algorithm, Floyd-Warshall Algorithm, Kruskal's Algorithm, Prim's Algorithm, and Strongly Connected Component Decomposition), including their theoretical backgrounds, computational complexity evaluations using mathematical formulas, and highly optimized implementation examples in modern C++ (C++17/20). Delivered in a massive volume of about 10,000 characters, this is truly a "complete guide".
+In this article, we will completely cover the major graph algorithms that frequently appear in competitive programming (Topological Sort, [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s Algorithm, Bellman-Ford Algorithm, Floyd-Warshall Algorithm, Kruskal's Algorithm, Prim's Algorithm, and Strongly Connected Component Decomposition), including their theoretical backgrounds, computational complexity evaluations using mathematical formulas, and highly optimized implementation examples in modern C++ (C++17/20). Delivered in a massive volume of about 10,000 characters, this is truly a "complete guide".
 
 ---
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 This is the problem of finding the shortest paths from a given source vertex to all other vertices. The applicable algorithms differ depending on whether the edge weights are non-negative or if negative weights exist.
 
-### Dijkstra's Algorithm
+### [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s Algorithm
 
 Dijkstra's algorithm is a fast shortest path algorithm that can be applied when **all edge weights are non-negative**. It is based on a greedy approach: "finalize the vertex with the shortest currently known distance, and update (relax) the distances to its adjacent vertices from that vertex."
 
@@ -121,7 +121,7 @@ graph TD
     A["Vertex A(2)"] -- 4 --> C["Vertex C(6)"]
     B["Vertex B(3)"] -- 1 --> C["Vertex C(4)"]
 ```
-As shown in the figure above, the cost to go directly from S to B is 5, but going via A allows reaching it with a cost of 3. Dijkstra's algorithm performs optimizations in this way.
+As shown in the figure above, the cost to go directly from S to B is 5, but going via A allows reaching it with a cost of 3. [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm performs optimizations in this way.
 
 #### C++ Implementation Example
 
@@ -170,7 +170,7 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
     return dist;
 }
 ```
-The statement `if (dist[u] < d) continue;` is very important. In Dijkstra's algorithm, the same vertex might be pushed to the queue multiple times, but this check prunes unnecessary explorations.
+The statement `if (dist[u] < d) continue;` is very important. In [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm, the same vertex might be pushed to the queue multiple times, but this check prunes unnecessary explorations.
 
 ### Bellman-Ford Algorithm
 
@@ -356,7 +356,7 @@ long long kruskal(int V, vector<Edge>& edges) {
 
 ### Prim's Algorithm
 
-It takes a very similar approach to Dijkstra's algorithm. Starting from one vertex, it successively selects the edge with the smallest weight among those directly connected to the already formed tree, growing the tree.
+It takes a very similar approach to [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm. Starting from one vertex, it successively selects the edge with the smallest weight among those directly connected to the already formed tree, growing the tree.
 
 The computational complexity when using a priority queue is $O((V + E) \log V)$. For dense graphs (graphs with a large number of edges), an array-based implementation of Prim's algorithm in $O(V^2)$ can be faster than Kruskal's algorithm.
 
@@ -505,7 +505,7 @@ In this article, we comprehensively reviewed the graph algorithms that frequentl
 The key to improving in graph problems is **"implementing them repeatedly until they become muscle memory"** and **"training yourself to think about what kind of graph a problem can be reduced to (what are the vertices, and what are the edges)."**
 
 1. First, make sure you can quickly write DFS / BFS without making mistakes.
-2. Next, be able to write Dijkstra's algorithm and Kruskal's algorithm from memory (essential for AtCoder Brown to Green tiers).
+2. Next, be able to write [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm and Kruskal's algorithm from memory (essential for AtCoder Brown to Green tiers).
 3. Finally, expand your repertoire with Bellman-Ford, Floyd-Warshall, Topological Sort, SCC, etc. (these become powerful weapons in AtCoder Cyan to Blue tiers).
 
 We highly recommend modularizing them as code snippets (saving them in a snippet tool or your own GitHub repository) so that you can call them without hesitation during a real contest.

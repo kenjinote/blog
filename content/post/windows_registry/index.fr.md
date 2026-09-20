@@ -91,7 +91,7 @@ Les « valeurs » du registre ont chacune un type de données strictement défin
 
 ## 5. Modèles mathématiques et performances du Registre dans le système d'exploitation
 
-Puisque le registre est directement lié aux performances du système d'exploitation (en particulier le temps de démarrage et la vitesse d'initialisation des processus), il est optimisé en interne à l'aide d'une structure de données avancée similaire à un B-Tree (Arbre B) appelée « Cell Index ».
+Puisque le registre est directement lié aux performances du système d'exploitation (en particulier le temps de démarrage et la vitesse d'initialisation des processus), il est optimisé en interne à l'aide d'une structure de données avancée similaire à un [B-Tree](https://kenji.blog/fr/p/b-tree-database-index-theory/) (Arbre B) appelée « Cell Index ».
 
 ### Complexité algorithmique de la recherche (Time Complexity)
 La complexité temporelle $T_{\text{search}}$ lors de la recherche d'une clé spécifique (chemin) dans le registre dépend de la profondeur de l'arbre et du nombre de nœuds à chaque niveau de la hiérarchie. Lors de la recherche d'une sous-clé de profondeur $d$ (par exemple, $d=4$ pour `A\B\C\D`), la complexité peut théoriquement être modélisée comme suit :

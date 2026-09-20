@@ -11,7 +11,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 In der kompetitiven Programmierung (CP) sind die Graphentheorie und ihre Algorithmen eines der wichtigsten Themen, denen man nicht ausweichen kann. Viele Probleme in Wettbewerben wie AtCoder, Codeforces und TopCoder haben eine Graphenstruktur im Hintergrund. Sie sind eine mächtige Waffe zur Abstraktion und Lösung realer Probleme, wie z.B. kürzeste Wege in Straßennetzen, Minimierung der Kommunikationskosten in Netzwerken und Auflösung von Aufgabenabhängigkeiten.
 
-In diesem Artikel behandeln wir umfassend die wichtigsten Graphenalgorithmen, die in der kompetitiven Programmierung häufig vorkommen (Topologische Sortierung, Dijkstra-Algorithmus, Bellman-Ford-Algorithmus, Floyd-Warshall-Algorithmus, Kruskal-Algorithmus, Prim-Algorithmus, Zerlegung in stark zusammenhängende Komponenten). Wir werden ihren theoretischen Hintergrund, die Bewertung der Zeitkomplexität mit mathematischen Formeln und hochoptimierte Implementierungsbeispiele in modernem C++ (C++17/20) erläutern. Dies ist ein echter "kompletter Leitfaden" mit großem Volumen.
+In diesem Artikel behandeln wir umfassend die wichtigsten Graphenalgorithmen, die in der kompetitiven Programmierung häufig vorkommen (Topologische Sortierung, [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus, Bellman-Ford-Algorithmus, Floyd-Warshall-Algorithmus, Kruskal-Algorithmus, Prim-Algorithmus, Zerlegung in stark zusammenhängende Komponenten). Wir werden ihren theoretischen Hintergrund, die Bewertung der Zeitkomplexität mit mathematischen Formeln und hochoptimierte Implementierungsbeispiele in modernem C++ (C++17/20) erläutern. Dies ist ein echter "kompletter Leitfaden" mit großem Volumen.
 
 ---
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 Ein Problem, bei dem der kürzeste Weg von einem Startknoten zu allen anderen Knoten gefunden wird. Der anwendbare Algorithmus hängt davon ab, ob die Kantengewichte nicht negativ sind oder ob negative Gewichte existieren.
 
-### Dijkstra-Algorithmus (Dijkstra's Algorithm)
+### [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus (Dijkstra's Algorithm)
 
 Der Dijkstra-Algorithmus ist ein schneller Algorithmus für kürzeste Pfade, der anwendbar ist, wenn **alle Kantengewichte nicht negativ** sind. Er basiert auf einem Greedy-Ansatz: "Bestimme den Knoten mit dem kürzesten bekannten Abstand und aktualisiere die Abstände zu den benachbarten Knoten dieses Knotens (Relaxation)".
 
@@ -121,7 +121,7 @@ graph TD
     A["Knoten A(2)"] -- 4 --> C["Knoten C(6)"]
     B["Knoten B(3)"] -- 1 --> C["Knoten C(4)"]
 ```
-Wie in der Abbildung oben gezeigt, betragen die direkten Kosten von S nach B 5, aber durch A können wir B mit den Kosten 3 erreichen. Der Dijkstra-Algorithmus führt Optimierungen auf diese Weise durch.
+Wie in der Abbildung oben gezeigt, betragen die direkten Kosten von S nach B 5, aber durch A können wir B mit den Kosten 3 erreichen. Der [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus führt Optimierungen auf diese Weise durch.
 
 #### C++ Implementierungsbeispiel
 
@@ -170,7 +170,7 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
     return dist;
 }
 ```
-Die Zeile `if (dist[u] < d) continue;` ist sehr wichtig. Beim Dijkstra-Algorithmus kann derselbe Knoten mehrmals in die Warteschlange geschoben werden; diese Überprüfung schneidet unnötige Suchen ab.
+Die Zeile `if (dist[u] < d) continue;` ist sehr wichtig. Beim [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus kann derselbe Knoten mehrmals in die Warteschlange geschoben werden; diese Überprüfung schneidet unnötige Suchen ab.
 
 ### Bellman-Ford-Algorithmus (Bellman-Ford Algorithm)
 
@@ -356,7 +356,7 @@ long long kruskal(int V, vector<Edge>& edges) {
 
 ### Prim-Algorithmus (Prim's Algorithm)
 
-Es verfolgt einen Ansatz, der dem Dijkstra-Algorithmus sehr ähnlich ist. Ausgehend von einem einzigen Knoten wächst der Baum, indem sukzessive die Kante mit dem geringsten Gewicht unter den direkt mit dem bereits gebildeten Baum verbundenen Kanten ausgewählt wird.
+Es verfolgt einen Ansatz, der dem [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus sehr ähnlich ist. Ausgehend von einem einzigen Knoten wächst der Baum, indem sukzessive die Kante mit dem geringsten Gewicht unter den direkt mit dem bereits gebildeten Baum verbundenen Kanten ausgewählt wird.
 
 Die Zeitkomplexität bei Verwendung einer Prioritätswarteschlange beträgt $O((V + E) \log V)$. Bei dichten Graphen (Graphen mit vielen Kanten) kann eine arraybasierte Implementierung des Prim-Algorithmus in $O(V^2)$ schneller sein als der Kruskal-Algorithmus.
 
@@ -505,7 +505,7 @@ In diesem Artikel haben wir die häufigsten Graphenalgorithmen in der kompetitiv
 Das Geheimnis zur Verbesserung bei Graphenproblemen besteht darin, **"sie immer wieder zu implementieren, bis sie zur Gewohnheit werden"** und **"zu trainieren, auf welchen Graphen das Problem reduziert werden kann (was sind die Knoten, was sind die Kanten)"**.
 
 1. Lernen Sie zunächst, DFS / BFS schnell und fehlerfrei zu schreiben.
-2. Lernen Sie als Nächstes, den Dijkstra- und Kruskal-Algorithmus aus dem Gedächtnis zu schreiben (Pflicht für die braunen bis grünen Ränge bei AtCoder).
+2. Lernen Sie als Nächstes, den [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)- und Kruskal-Algorithmus aus dem Gedächtnis zu schreiben (Pflicht für die braunen bis grünen Ränge bei AtCoder).
 3. Erweitern Sie schließlich Ihr Repertoire um Bellman-Ford, Floyd-Warshall, topologische Sortierung, SCC usw. (eine Waffe in den hellblauen bis blauen Rängen bei AtCoder).
 
 Es wird dringend empfohlen, diese als Code-Snippets in einer Bibliothek zu organisieren (in einem Snippet-Tool oder Ihrem eigenen GitHub-Repository zu speichern), damit Sie sie bei echten Wettbewerben ohne Zögern abrufen können.

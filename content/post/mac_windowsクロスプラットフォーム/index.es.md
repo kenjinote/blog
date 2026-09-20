@@ -75,7 +75,7 @@ Sin embargo, si haces commit de este código y ejecutas la compilación en un se
 
 Pensemos matemáticamente en el procesamiento interno que se realiza cuando el sistema de archivos resuelve la ruta de un archivo.
 
-En el caso de ext4 que distingue entre mayúsculas y minúsculas, las entradas en un directorio se gestionan en estructuras como tablas hash o B-Tree. Si el número de archivos en un directorio es $N$ y la longitud del nombre del archivo es $L$, la complejidad computacional en el caso de una búsqueda binaria simple o de árbol es la siguiente:
+En el caso de ext4 que distingue entre mayúsculas y minúsculas, las entradas en un directorio se gestionan en estructuras como tablas hash o [B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/). Si el número de archivos en un directorio es $N$ y la longitud del nombre del archivo es $L$, la complejidad computacional en el caso de una búsqueda binaria simple o de árbol es la siguiente:
 
 $$ T_{search}(N) = O(L \log N) $$
 

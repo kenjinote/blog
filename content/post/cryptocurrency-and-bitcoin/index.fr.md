@@ -157,7 +157,7 @@ Dans le processus de vérification, le calcul suivant est effectué à l'aide de
 
 Le mécanisme permettant à chacun de s'accorder sur le même état du registre dans un réseau décentralisé est l'algorithme de consensus.
 
-### Le problème des généraux byzantins (Byzantine Generals Problem)
+### Le problème des généraux byzantins ([Byzantine Generals](https://kenji.blog/fr/p/byzantine-generals-problem-consensus/) Problem)
 
 Un problème classique de l'informatique distribuée est le « problème des généraux byzantins ». Plusieurs généraux assiègent une ville ennemie et doivent convenir d'attaquer ou de battre en retraite, mais il peut y avoir des traîtres parmi les généraux qui envoient de faux messages. Sous une telle situation, la question est de savoir comment les généraux honnêtes peuvent parvenir à eux seuls à un accord correct.
 

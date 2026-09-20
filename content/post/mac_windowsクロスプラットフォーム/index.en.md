@@ -75,7 +75,7 @@ However, if you commit this code and run the build on a CI/CD server (usually Li
 
 Let's think mathematically about what kind of processing takes place internally when a file system resolves a file path.
 
-In the case of case-sensitive ext4, the entries in the directory are managed by structures such as hash tables or B-Trees. Assuming the number of files in the directory is $N$ and the length of the file name is $L$, the computational complexity for a simple binary search or tree search is as follows.
+In the case of case-sensitive ext4, the entries in the directory are managed by structures such as hash tables or [B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/)s. Assuming the number of files in the directory is $N$ and the length of the file name is $L$, the computational complexity for a simple binary search or tree search is as follows.
 
 $$ T_{search}(N) = O(L \log N) $$
 

@@ -118,13 +118,13 @@ flowchart TD
 
 现代软件正在从运行在单一服务器上的单体架构，向云原生的微服务架构和事件驱动架构演进。对于只能进行局部逻辑优化的AI来说，设计这种分布式系统是一个非常困难的领域。
 
-### 4.1 CAP定理与权衡判断
+### 4.1 [CAP定理](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems/)与权衡判断
 
 在设计分布式系统时，工程师始终要面临“CAP定理”。CAP定理指出，分布式系统在以下三个特性中，同时只能满足两个。
 
 - **Consistency（一致性）**: 所有节点在同一时间是否能看到相同的数据
 - **Availability（可用性）**: 即使部分节点发生故障，系统是否还能继续响应
-- **Partition Tolerance（分区容错性）**: 在网络发生分区时，系统是否还能继续运行
+- **[Partition Tolerance](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems/)（分区容错性）**: 在网络发生分区时，系统是否还能继续运行
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

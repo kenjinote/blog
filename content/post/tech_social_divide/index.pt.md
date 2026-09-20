@@ -23,7 +23,7 @@ Nós, engenheiros, não somos apenas seres que escrevem códigos e constroem sis
 
 # Capítulo 1: A estrutura matemática das "câmaras de eco" sob a ótica da teoria das redes
 
-Ao discutir a divisão social, o primeiro passo inevitável é a análise da estrutura da comunidade usando a "Teoria dos Grafos" (Graph Theory). As relações humanas nas mídias sociais podem ser modeladas como um grafo gigantesco, onde os usuários são "nós" (vértices) e as interações ou o ato de seguir entre usuários são "arestas" (bordas).
+Ao discutir a divisão social, o primeiro passo inevitável é a análise da estrutura da comunidade usando a "Teoria dos Grafos" ([Graph Theory](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/)). As relações humanas nas mídias sociais podem ser modeladas como um grafo gigantesco, onde os usuários são "nós" (vértices) e as interações ou o ato de seguir entre usuários são "arestas" (bordas).
 
 Um dos indicadores mais importantes que caracterizam a divisão é o "Coeficiente de Aglomeração" (Clustering Coefficient). O coeficiente de aglomeração $C_i$ de um usuário $i$ indica a probabilidade de que os amigos do usuário $i$ também sejam amigos entre si, e é definido pela seguinte fórmula:
 

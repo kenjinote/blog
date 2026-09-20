@@ -106,7 +106,7 @@ In particular, [Alan Turing](https://kenji.blog/en/p/turing/) developed an elect
 
 After the war, with the advent of computers, cryptography underwent a dramatic paradigm shift from manipulating "letters" to manipulating "bits (0 and 1)."
 
-## Claude Shannon and Information Theory
+## Claude Shannon and [Information Theory](https://kenji.blog/en/p/information-theory-shannon-entropy/)
 In 1949, Claude Shannon published the paper "Communication Theory of Secrecy Systems," laying the mathematical foundation for modern cryptography. He proposed "Confusion" and "Diffusion" as principles of secure cryptographic design.
 - **Confusion**: Making the relationship between the key and the ciphertext as complex as possible. (Realized by substitution and S-boxes)
 - **Diffusion**: Ensuring that changing one bit of the plaintext affects many bits in the ciphertext. (Realized by transposition and permutation)

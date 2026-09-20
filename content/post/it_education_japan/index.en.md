@@ -134,7 +134,7 @@ Database operations are defined by the following basic operations based on set t
 - Projection ($\pi$): Extracting specific attributes (columns)
 - Join ($\bowtie$): Conditional intersection of multiple relations
 
-Furthermore, learning the structure of the "B-Tree index" to instantly search for the desired data from a vast number of records is the best practical application of data structures. The B-Tree minimizes disk I/O operations while guaranteeing a search speed of $O(\log N)$. Without knowing the ACID properties (Atomicity, Consistency, Isolation, Durability) of a transaction, it is impossible to build robust systems.
+Furthermore, learning the structure of the "[B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/) index" to instantly search for the desired data from a vast number of records is the best practical application of data structures. The B-Tree minimizes disk I/O operations while guaranteeing a search speed of $O(\log N)$. Without knowing the ACID properties (Atomicity, Consistency, Isolation, Durability) of a transaction, it is impossible to build robust systems.
 
 ## 6. Security and [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: The Social Infrastructure Supported by the Difficulty of Prime Factorization
 

@@ -10,7 +10,7 @@ tags: ["SVD", "線形代数", "機械学習", "データ圧縮", "人工知能",
 
 線形代数において、最も重要で強力なツールの1つが **特異値分解** (Singular Value Decomposition, 略して SVD) です。あらゆる行列を基本的な操作に分解できるこの手法は、データサイエンス、機械学習、画像処理など、現代の技術の根幹を支えています。
 
-本記事では、SVD の数学的な定義から始まり、その幾何学的な意味、そして実際のデータ圧縮やAIへの応用例まで、詳細に解説します。
+本記事では、SVD の数学的な定義から始まり、その幾何学的な意味、そして実際の[データ圧縮](https://kenji.blog/p/information-theory-shannon-entropy/)やAIへの応用例まで、詳細に解説します。
 
 ## 1. [特異値分解 (SVD)](https://kenji.blog/p/singular-value-decomposition/) の数学的定義
 

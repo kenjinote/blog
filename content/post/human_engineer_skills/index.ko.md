@@ -124,7 +124,7 @@ AI에게 "시스템 전체를 만들어 줘"라고 지시하는 것이 아니라
 
 - **Consistency(일관성)**: 모든 노드에서 동시에 같은 데이터가 보이는가
 - **Availability(가용성)**: 노드의 일부에 장애가 발생해도 시스템이 계속해서 응답하는가
-- **Partition Tolerance(분할 내성)**: 네트워크 분할이 발생해도 시스템이 계속해서 동작하는가
+- **[Partition Tolerance](https://kenji.blog/ko/p/cap-theorem-distributed-systems/)(분할 내성)**: 네트워크 분할이 발생해도 시스템이 계속해서 동작하는가
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

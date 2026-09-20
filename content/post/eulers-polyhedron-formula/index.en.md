@@ -155,7 +155,7 @@ The concepts of topology, which began with the simple equation $V - E + F = 2$, 
 ### 1. Fullerenes ($C_{60}$) and Chemistry
 The "fullerene" is a molecule in which carbon atoms bond in a soccer-ball shape. Chemists used Euler's theorem to theoretically prove the fact that "you cannot create a closed spherical molecule without 12 pentagons."
 
-### 2. Network Theory and Graph Theory
+### 2. Network Theory and [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 Modern society is filled with "networks," such as internet routing and transportation network design. Euler's formula serves as the foundation for determining whether these networks can be drawn on a plane without intersecting. It is also indispensable in proving the "[Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/)."
 
 ### 3. Topological Data Analysis (TDA)

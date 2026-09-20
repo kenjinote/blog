@@ -23,7 +23,7 @@ tags: ["Echo Chamber", "Algorithms", "AT Protocol", "Social Engineering"]
 
 # 第一章：从网络理论看“回音室”的数学结构
 
-在探讨社会分歧时，首先无法避开的是使用“网络理论（Graph Theory）”对社区结构进行的分析。社交媒体上的人际关系可以被建模为一个巨大的图，其中用户是“节点（Node）”，用户之间的关注和互动是“边（Edge）”。
+在探讨社会分歧时，首先无法避开的是使用“网络理论（[Graph Theory](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)）”对社区结构进行的分析。社交媒体上的人际关系可以被建模为一个巨大的图，其中用户是“节点（Node）”，用户之间的关注和互动是“边（Edge）”。
 
 特征化分歧的最重要指标之一是“聚类系数（Clustering Coefficient）”。某个用户 $i$ 的聚类系数 $C_i$ 表示用户 $i$ 的朋友们彼此之间也是朋友的概率，由以下公式定义：
 

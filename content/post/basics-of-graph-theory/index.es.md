@@ -185,7 +185,7 @@ print("Registro de resultado de ejecución de BFS:")
 bfs(graph_data, 'A')
 ```
 
-### 5.2. Problema del Camino Más Corto: Algoritmo de Dijkstra
+### 5.2. Problema del Camino Más Corto: Algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/)
 
 Al buscar la ruta más rápida hacia un destino en una aplicación de mapas, lo que opera en el núcleo del sistema es un **Algoritmo del Camino Más Corto**. La ruta tiene costos (pesos) como "distancia" y "tiempo de viaje", y el objetivo es encontrar el camino que minimice el costo acumulado desde el punto de inicio hasta el destino.
 
@@ -299,4 +299,4 @@ En este artículo, hemos esbozado cómo la **Teoría de Grafos**, que nació de 
 
 Aunque los grafos se componen solo de los elementos más simples y abstractos posibles: puntos (vértices) y líneas (aristas), el mundo de las teorías matemáticas y los algoritmos computacionales aplicados a ellos es tan profundo como el universo y alberga un poder abrumador. Para ingenieros de software, científicos de datos, o cualquier persona interesada en sistemas complejos, el conocimiento sistemático de la teoría de grafos mejorará exponencialmente la capacidad de abstracción de alto nivel frente a problemas difíciles y el pensamiento lógico para derivar soluciones óptimas.
 
-Si está aprendiendo a programar, utilice este artículo como un trampolín e intente codificar y ejecutar algoritmos como el de Dijkstra o la búsqueda en anchura en su propia computadora. Cuando experimente el proceso de redes complejas e invisibles siendo desentrañadas vívidamente por el código que escribe, realmente se dará cuenta de la verdadera belleza y fascinación de la teoría de grafos. El mundo está lleno de grafos más hermosos y computables de lo que podría pensar.
+Si está aprendiendo a programar, utilice este artículo como un trampolín e intente codificar y ejecutar algoritmos como el de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/) o la búsqueda en anchura en su propia computadora. Cuando experimente el proceso de redes complejas e invisibles siendo desentrañadas vívidamente por el código que escribe, realmente se dará cuenta de la verdadera belleza y fascinación de la teoría de grafos. El mundo está lleno de grafos más hermosos y computables de lo que podría pensar.

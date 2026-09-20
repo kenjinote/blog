@@ -124,7 +124,7 @@ flowchart TD
 
 - **Consistency (Согласованность)**: Видят ли все узлы одновременно одни и те же данные?
 - **Availability (Доступность)**: Будет ли система продолжать отвечать на запросы, даже если часть узлов выйдет из строя?
-- **Partition Tolerance (Устойчивость к разделению)**: Будет ли система продолжать работать в случае разделения сети?
+- **[Partition Tolerance](https://kenji.blog/ru/p/cap-theorem-distributed-systems/) (Устойчивость к разделению)**: Будет ли система продолжать работать в случае разделения сети?
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

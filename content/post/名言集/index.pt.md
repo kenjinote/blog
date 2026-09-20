@@ -140,7 +140,7 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 
 > Falar é fácil. Mostre-me o código (Linus Torvalds)
 
-> A simplicidade é um pré-requisito para a confiabilidade (Edsger Dijkstra)
+> A simplicidade é um pré-requisito para a confiabilidade (Edsger [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/))
 
 > A ciência da computação não é mais sobre computadores do que a astronomia é sobre telescópios (Edsger Dijkstra)
 

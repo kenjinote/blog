@@ -207,7 +207,7 @@ Na implementação real (Classificador Naive Bayes), as probabilidades de vária
 
 ---
 
-## 4. Entropia de Shannon (Shannon Entropy)
+## 4. Entropia de Shannon ([Shannon Entropy](https://kenji.blog/pt/p/information-theory-shannon-entropy/))
 
 ### A beleza e visão geral da fórmula
 A "entropia", definida por Claude Shannon, o pai da teoria da informação, é uma fórmula que quantifica a "incerteza", "desordem" ou a "quantidade média de informação" contida em uma fonte de informação.

@@ -8,7 +8,7 @@ tags: ["ビザンチン将軍問題", "ブロックチェーン", "合意形成"
 slug: "byzantine-generals-problem"
 ---
 
-分散システムやブロックチェーン技術を学ぶ上で、必ずと言っていいほど直面するのが **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** (Byzantine Generals Problem) です。これは、ネットワーク内に「裏切り者」や「故障したノード」が存在する状況下で、システム全体としてどのように正しい合意を形成するのか、という非常に重要なテーマを扱っています。
+[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)やブロックチェーン技術を学ぶ上で、必ずと言っていいほど直面するのが **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/p/byzantine-generals-problem-consensus/) Problem) です。これは、ネットワーク内に「裏切り者」や「故障したノード」が存在する状況下で、システム全体としてどのように正しい合意を形成するのか、という非常に重要なテーマを扱っています。
 
 本記事では、この **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** について、具体的なストーリー、数学的な条件式、図解を交えながら、基礎から応用までを詳しく解説していきます。
 
@@ -118,7 +118,7 @@ end
 
 ## 4. ブロックチェーンとビザンチン・フォールト・トレランス
 
-[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)に対する耐性のことを **ビザンチン・フォールト・トレランス** (Byzantine Fault Tolerance, BFT) と呼びます。分散システムが故障や悪意のある攻撃に耐えて正常に稼働し続けるための重要な指標です。
+[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)に対する耐性のことを **ビザンチン・フォールト・トレランス** (Byzantine Fault Tolerance, BFT) と呼びます。[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)が故障や悪意のある攻撃に耐えて正常に稼働し続けるための重要な指標です。
 
 近年、この問題が再び大きく脚光を浴びたのは **ブロックチェーン技術** の登場によるものです。ブロックチェーンは中央管理者のいない P2P ネットワークであるため、悪意のある参加者（ノード）が嘘の取引履歴を流す可能性があります。まさに[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)そのものです。
 
@@ -161,7 +161,7 @@ end
 
 ## 5. BFTの数学的モデリングと応用
 
-より高度な分散システム設計においては、システムの状態遷移を厳密に定義し、BFTアルゴリズムの正当性を証明します。
+より高度な[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)設計においては、システムの状態遷移を厳密に定義し、BFTアルゴリズムの正当性を証明します。
 
 例えば、ノード集合を $\mathcal{N} = \{1, 2, \dots, n\}$、裏切り者ノードの最大数を $f$ とします。あるラウンド $r$ において、各ノード $i$ は状態 $s_i^{(r)}$ を保持し、他のノードとメッセージの交換を行います。
 
@@ -179,7 +179,7 @@ $$
 
 ## 6. おわりに
 
-この **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** は、分散システムの信頼性を担保するための根幹となる理論です。「誰を信じてよいかわからない環境で、いかにして全体として正しい決定を下すか」というこの問いは、[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の基盤技術から、航空機の制御システム、クラウドコンピューティングに至るまで、現代のあらゆるITインフラに応用されています。
+この **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** は、[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)の信頼性を担保するための根幹となる理論です。「誰を信じてよいかわからない環境で、いかにして全体として正しい決定を下すか」というこの問いは、[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の基盤技術から、航空機の制御システム、クラウドコンピューティングに至るまで、現代のあらゆるITインフラに応用されています。
 
-裏切り者の存在を前提とし、それでもシステムを止めないためのアルゴリズムの進化は、今後も止まることはありません。分散システムの設計に関わるエンジニアにとって、この問題の背景にある数学的証明とアルゴリズムの理解は、非常に強力な武器となるでしょう。
+裏切り者の存在を前提とし、それでもシステムを止めないためのアルゴリズムの進化は、今後も止まることはありません。[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)の設計に関わるエンジニアにとって、この問題の背景にある数学的証明とアルゴリズムの理解は、非常に強力な武器となるでしょう。
 

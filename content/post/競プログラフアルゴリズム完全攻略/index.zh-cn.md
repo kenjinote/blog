@@ -11,7 +11,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 在竞技编程（竞程）中，图论及其算法是不可避免的最重要主题之一。在AtCoder、Codeforces、TopCoder等比赛中，许多题目背后都具有图的结构。无论是道路网的最短路径、网络通信成本的最小化，还是任务依赖关系的解除，它都是将现实世界的问题抽象化并加以解决的强大武器。
 
-本文将针对竞技编程中频繁出现的主要图算法（拓扑排序、Dijkstra算法、Bellman-Ford算法、Floyd-Warshall算法、Kruskal算法、Prim算法、强连通分量分解），从其理论背景、使用数学公式进行的时间复杂度评估，以及使用现代C++ (C++17/20) 编写的高度优化的实现示例，进行全面而彻底的解析。为您带来约10,000字的超大容量，名副其实的“完全攻略”指南。
+本文将针对竞技编程中频繁出现的主要图算法（拓扑排序、[Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)算法、Bellman-Ford算法、Floyd-Warshall算法、Kruskal算法、Prim算法、强连通分量分解），从其理论背景、使用数学公式进行的时间复杂度评估，以及使用现代C++ (C++17/20) 编写的高度优化的实现示例，进行全面而彻底的解析。为您带来约10,000字的超大容量，名副其实的“完全攻略”指南。
 
 ---
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 求从某个起点到其他所有顶点的最短路径问题。根据边的权重是非负数，还是存在负权边，适用的算法会有所不同。
 
-### Dijkstra算法 (Dijkstra's Algorithm)
+### [Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)算法 (Dijkstra's Algorithm)
 
 Dijkstra算法是一种在 **所有边的权重均为非负数** 时适用的快速最短路径算法。它基于贪心法：“确定目前已知最短距离最小的顶点，并更新从该顶点到其相邻顶点的距离（松弛）”。
 
@@ -121,7 +121,7 @@ graph TD
     A["顶点 A(2)"] -- 4 --> C["顶点 C(6)"]
     B["顶点 B(3)"] -- 1 --> C["顶点 C(4)"]
 ```
-如上图所示，从S直接到B的代价是5，但是如果经过A，则只需代价3即可到达。Dijkstra算法就是这样进行优化的。
+如上图所示，从S直接到B的代价是5，但是如果经过A，则只需代价3即可到达。[Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)算法就是这样进行优化的。
 
 #### C++ 实现示例
 
@@ -170,7 +170,7 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
     return dist;
 }
 ```
-`if (dist[u] < d) continue;` 这一句非常重要。在Dijkstra算法中，同一个顶点可能会被多次推入队列，通过这个检查可以剪去无效的搜索分支。
+`if (dist[u] < d) continue;` 这一句非常重要。在[Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)算法中，同一个顶点可能会被多次推入队列，通过这个检查可以剪去无效的搜索分支。
 
 ### Bellman-Ford算法 (Bellman-Ford Algorithm)
 
@@ -356,7 +356,7 @@ long long kruskal(int V, vector<Edge>& edges) {
 
 ### Prim算法 (Prim's Algorithm)
 
-采用了与Dijkstra算法非常相似的方法。从某个顶点开始，在与已经生成的树直接相连的边中，不断选择权重最小的边来让树逐渐生长。
+采用了与[Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)算法非常相似的方法。从某个顶点开始，在与已经生成的树直接相连的边中，不断选择权重最小的边来让树逐渐生长。
 
 使用优先队列时的时间复杂度为 $O((V + E) \log V)$。在稠密图（边数较多的图）中，基于数组的Prim算法实现 $O(V^2)$ 可能会比Kruskal算法更快。
 
@@ -505,7 +505,7 @@ struct SCC {
 提高解决图问题能力的诀窍在于 **“反复实现直到形成肌肉记忆”** ，以及 **“训练思考这个问题能归结为什么样的图（顶点是什么，边是什么）”** 。
 
 1. 首先要做到能准确迅速地写出 DFS / BFS。
-2. 其次，要做到能默写出 Dijkstra 算法和 Kruskal 算法（在 AtCoder 茶色到绿色段位是必须的）。
+2. 其次，要做到能默写出 [Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/) 算法和 Kruskal 算法（在 AtCoder 茶色到绿色段位是必须的）。
 3. 最后，增加 Bellman-Ford、Floyd-Warshall、拓扑排序、SCC 等知识储备（在 AtCoder 水色到蓝色段位将成为有力武器）。
 
 强烈建议将代码片段作为代码库保存起来（保存在代码片段工具或自己的 GitHub 仓库中），以便在正式比赛中能毫不犹豫地调用。

@@ -80,7 +80,7 @@ graph LR
 
 Lors de la mémorisation de livres techniques, il est inutile d'"apprendre de longues preuves par cœur". Divisez les connaissances dans leur unité minimale (Atomic) et créez des cartes.
 
-- **Mauvaise carte** : "Écrivez toute la preuve de l'algorithme de Dijkstra"
+- **Mauvaise carte** : "Écrivez toute la preuve de l'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)"
 - **Bonne carte** : "Dans l'algorithme de Dijkstra, quelle est la condition pour considérer que la distance la plus courte d'un sommet est définitive ?" → "Lors du choix du sommet avec la distance provisoire minimale parmi l'ensemble des sommets non confirmés."
 - **Bonne carte** : "Quelle est la formule du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ?" → "Pour un nombre premier $p$ et un entier $a$ premier avec $p$, $a^{p-1} \equiv 1 \pmod p$"
 
@@ -173,7 +173,7 @@ rsa_demo()
 
 Pour trouver $d$ satisfaisant la formule $e \cdot d \equiv 1 \pmod{\phi(n)}$, il est nécessaire d'implémenter l'algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) étendu. Ainsi, **lorsque l'on essaie de coder des formules mathématiques, on est confronté à des problèmes d'implémentation tels que "comment calculer cette variable concrètement ?", et en les résolvant, la compréhension mathématique s'approfondit considérablement**.
 
-### 4.2 Exemple 2 : Algorithme de Dijkstra et Relâchement (Relaxation)
+### 4.2 Exemple 2 : Algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/) et Relâchement (Relaxation)
 
 Considérons l'algorithme de Dijkstra qui résout le problème du plus court chemin à origine unique (SSSP) dans la théorie des graphes.
 

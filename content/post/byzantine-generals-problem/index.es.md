@@ -8,7 +8,7 @@ tags: ["Problema de los generales bizantinos", "Cadena de bloques", "Consenso", 
 slug: "byzantine-generals-problem"
 ---
 
-Al estudiar sistemas distribuidos o tecnología blockchain, invariablemente nos encontramos con el **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** (Byzantine Generals Problem). Este aborda un tema crucial: ¿cómo logra el sistema en su conjunto alcanzar un consenso correcto en una situación donde existen "traidores" o "nodos defectuosos" en la red?
+Al estudiar sistemas distribuidos o tecnología blockchain, invariablemente nos encontramos con el **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/es/p/byzantine-generals-problem-consensus/) Problem). Este aborda un tema crucial: ¿cómo logra el sistema en su conjunto alcanzar un consenso correcto en una situación donde existen "traidores" o "nodos defectuosos" en la red?
 
 En este artículo, explicaremos detalladamente este **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)**, desde sus fundamentos hasta sus aplicaciones, utilizando una historia concreta, fórmulas matemáticas y diagramas.
 

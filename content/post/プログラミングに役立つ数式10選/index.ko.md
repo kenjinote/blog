@@ -207,7 +207,7 @@ print(f"'당첨'이 포함된 메일이 스팸일 확률: {result:.2%}")
 
 ---
 
-## 4. 섀넌 엔트로피 (Shannon Entropy)
+## 4. 섀넌 엔트로피 ([Shannon Entropy](https://kenji.blog/ko/p/information-theory-shannon-entropy/))
 
 ### 수식의 아름다움과 개요
 정보 이론의 아버지인 클로드 섀넌이 정의한 '엔트로피'는 정보원이 가지는 '불확실성'이나 '무질서도', 혹은 '평균 정보량'을 정량화하는 수식입니다.

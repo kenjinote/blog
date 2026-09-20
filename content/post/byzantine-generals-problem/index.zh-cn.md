@@ -8,7 +8,7 @@ tags: ["拜占庭将军问题", "区块链", "共识机制", "算法"]
 slug: "byzantine-generals-problem"
 ---
 
-在学习分布式系统或区块链技术时，必然会面临的一个问题就是 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** (Byzantine Generals Problem)。它探讨的是在网络中存在“叛徒”或“故障节点”的情况下，整个系统该如何达成正确的共识这一极其重要的课题。
+在学习分布式系统或区块链技术时，必然会面临的一个问题就是 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/zh-cn/p/byzantine-generals-problem-consensus/) Problem)。它探讨的是在网络中存在“叛徒”或“故障节点”的情况下，整个系统该如何达成正确的共识这一极其重要的课题。
 
 本文将结合具体的故事场景、数学条件公式以及图解，对这个 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** 进行从基础到应用的详细解说。
 

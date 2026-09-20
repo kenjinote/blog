@@ -152,11 +152,11 @@ In the verification process, the following calculations are performed using the 
 3. Calculate the point $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
 4. If $r \equiv x_2 \pmod{n}$, the signature is considered valid.
 
-## 5. Consensus Algorithms and Proof of Work (PoW)
+## 5. [Consensus Algorithm](https://kenji.blog/en/p/byzantine-generals-problem-consensus/)s and Proof of Work (PoW)
 
 In a decentralized network, the consensus algorithm is the mechanism by which everyone agrees on the state of the same ledger.
 
-### Byzantine Generals Problem
+### [Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem
 
 A classic problem in distributed computing is the "Byzantine Generals Problem". Multiple generals are besieging an enemy city and must agree on whether to attack or retreat, but there may be traitors among the generals who might send fake messages. The problem is how to reach a correct consensus with only honest generals under such circumstances.
 
@@ -330,7 +330,7 @@ For those who wish to learn more deeply about blockchain technology and cryptogr
 To truly understand the blockchain, knowledge of information security and applied mathematics is essential. We recommend studying the following fields:
 1. **Abstract Algebra (Groups, Rings, Fields)**: In particular, the concept of finite fields (Galois Fields) is unavoidable when understanding elliptic curve cryptography.
 2. **Computational Complexity Theory**: Concepts such as the P versus NP problem and polynomial-time reductions are important for understanding what cryptographic "security" means.
-3. **Game Theory**: Provides a framework for mathematically modeling the incentive design of participants, such as Nash equilibria and the Byzantine Generals Problem.
+3. **Game Theory**: Provides a framework for mathematically modeling the incentive design of participants, such as Nash equilibria and the [Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem.
 
 > **Warning: Investment Disclaimer**
 > This article was created for the purpose of explaining the underlying technology, history, and mathematical structure of cryptocurrencies, and does not recommend or solicit investment in any cryptocurrency. The prices of cryptocurrencies are extremely volatile, and investing carries significant risks, including the loss of principal.

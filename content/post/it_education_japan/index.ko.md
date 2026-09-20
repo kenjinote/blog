@@ -134,7 +134,7 @@ int main() {
 - 추출 (Projection, $\pi$): 특정 속성(열)의 추출
 - 조인 (Join, $\bowtie$): 복수 릴레이션의 조건부 교차
 
-더욱이 방대한 레코드에서 순식간에 목적하는 데이터를 검색하기 위한 'B-Tree(B트리) 인덱스'의 구조를 배우는 것은 자료 구조 응용의 최고의 실천입니다. B-Tree는 디스크 I/O 횟수를 최소화하면서 $O(\log N)$의 검색 속도를 보장합니다. 트랜잭션의 ACID 특성(Atomicity, Consistency, Isolation, Durability)을 알지 못하고서는 견고한 시스템을 만들 수 없습니다.
+더욱이 방대한 레코드에서 순식간에 목적하는 데이터를 검색하기 위한 '[B-Tree](https://kenji.blog/ko/p/b-tree-database-index-theory/)(B트리) 인덱스'의 구조를 배우는 것은 자료 구조 응용의 최고의 실천입니다. B-Tree는 디스크 I/O 횟수를 최소화하면서 $O(\log N)$의 검색 속도를 보장합니다. 트랜잭션의 ACID 특성(Atomicity, Consistency, Isolation, Durability)을 알지 못하고서는 견고한 시스템을 만들 수 없습니다.
 
 ## 6. 보안과 암호 이론: 소인수분해의 곤란성이 지탱하는 사회 인프라
 

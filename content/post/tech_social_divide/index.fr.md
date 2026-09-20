@@ -23,7 +23,7 @@ Nous, ingénieurs, ne sommes pas simplement là pour écrire du code et construi
 
 # Chapitre 1 : La structure mathématique des "chambres d'écho" vue par la théorie des réseaux
 
-Pour discuter de la fracture sociale, on ne peut éviter l'analyse de la structure des communautés à l'aide de la "théorie des réseaux" (Graph Theory). Les relations humaines sur les médias sociaux peuvent être modélisées comme un graphe géant où les utilisateurs sont des "nœuds" (sommets) et les abonnements ou interactions entre utilisateurs sont des "arêtes" (liens).
+Pour discuter de la fracture sociale, on ne peut éviter l'analyse de la structure des communautés à l'aide de la "théorie des réseaux" ([Graph Theory](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)). Les relations humaines sur les médias sociaux peuvent être modélisées comme un graphe géant où les utilisateurs sont des "nœuds" (sommets) et les abonnements ou interactions entre utilisateurs sont des "arêtes" (liens).
 
 L'un des indicateurs les plus importants caractérisant la fracture est le "coefficient de clustering" (Clustering Coefficient). Le coefficient de clustering $C_i$ d'un utilisateur $i$ indique la probabilité que les amis de l'utilisateur $i$ soient également amis entre eux, et est défini par la formule suivante :
 

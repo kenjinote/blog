@@ -23,7 +23,7 @@ We engineers are not just entities who write code and build systems. Behind the 
 
 # Chapter 1: The Mathematical Structure of "Echo Chambers" through the Lens of Network Theory
 
-When discussing the social divide, the structural analysis of communities using "Network Theory (Graph Theory)" is an unavoidable starting point. Human relationships on social media can be modeled as a giant graph where users are "nodes (vertices)" and follows or interactions between users are "edges."
+When discussing the social divide, the structural analysis of communities using "Network Theory ([Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/))" is an unavoidable starting point. Human relationships on social media can be modeled as a giant graph where users are "nodes (vertices)" and follows or interactions between users are "edges."
 
 One of the most important metrics characterizing division is the "Clustering Coefficient." The clustering coefficient $C_i$ of a certain user $i$ represents the probability that the friends of user $i$ are also friends with each other, and is defined by the following formula:
 

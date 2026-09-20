@@ -304,7 +304,7 @@ Inmediatamente después de aprender un nuevo concepto, $S$ es pequeña y, a medi
 El software que calcula automáticamente este momento óptimo de repaso mediante algoritmos (como SuperMemo 2) y lo presenta como tarjetas de memoria (flashcards) es "Anki".
 
 Un enfoque poderoso para crear ideas para el blog técnico es **convertir el contenido de las Permanent Notes de Obsidian en tarjetas de Anki**.
-Por ejemplo, registrar en Anki preguntas relacionadas con fundamentos técnicos como "¿Cuáles son los 3 elementos del teorema CAP?" o "¿Por qué los índices B-Tree tienen un rendimiento de búsqueda de O(log N)?" y repasarlas como parte de tu rutina diaria. Cuando el conocimiento se indexa en el cerebro como memoria a largo plazo, la información se conectará inconscientemente mientras te bañas o caminas, generando momentos de inspiración (momentos Eureka) como: "Ah, creo que podría escribir un artículo sobre los algoritmos de consenso en sistemas distribuidos".
+Por ejemplo, registrar en Anki preguntas relacionadas con fundamentos técnicos como "¿Cuáles son los 3 elementos del teorema CAP?" o "¿Por qué los índices [B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) tienen un rendimiento de búsqueda de O(log N)?" y repasarlas como parte de tu rutina diaria. Cuando el conocimiento se indexa en el cerebro como memoria a largo plazo, la información se conectará inconscientemente mientras te bañas o caminas, generando momentos de inspiración (momentos Eureka) como: "Ah, creo que podría escribir un artículo sobre los algoritmos de consenso en sistemas distribuidos".
 
 ## 7. Creatividad combinatoria (Combinatorial Creativity)
 

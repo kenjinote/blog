@@ -91,7 +91,7 @@ Masing-masing "Nilai" pada Registry memiliki tipe data yang didefinisikan secara
 
 ## 5. Model Matematika dan Performa Registry pada Sistem Operasi
 
-Karena Registry berhubungan langsung dengan performa OS (terutama waktu booting dan kecepatan inisialisasi proses), secara internal ia dioptimalkan menggunakan struktur data tingkat lanjut mirip B-Tree yang disebut "Cell Index".
+Karena Registry berhubungan langsung dengan performa OS (terutama waktu booting dan kecepatan inisialisasi proses), secara internal ia dioptimalkan menggunakan struktur data tingkat lanjut mirip [B-Tree](https://kenji.blog/id/p/b-tree-database-index-theory/) yang disebut "Cell Index".
 
 ### Kompleksitas Waktu Pencarian (Time Complexity)
 Kompleksitas waktu $T_{\text{search}}$ untuk mencari kunci (path) tertentu di dalam Registry bergantung pada kedalaman pohon dan jumlah node di setiap hierarki. Kompleksitas mencari subkunci dengan kedalaman $d$ (contoh: `A\B\C\D` memiliki $d=4$) secara teoritis dapat dimodelkan sebagai berikut:

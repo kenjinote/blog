@@ -80,7 +80,7 @@ graph LR
 
 En la memorización de libros técnicos, "memorizar de memoria una demostración larga" no tiene sentido. Divide el conocimiento en unidades mínimas (Atómicas) para crear tarjetas.
 
-- **Mala tarjeta**: "Escribe toda la demostración del algoritmo de Dijkstra"
+- **Mala tarjeta**: "Escribe toda la demostración del algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/)"
 - **Buena tarjeta**: "¿Cuál es la condición para considerar que la distancia más corta de un vértice está confirmada en el algoritmo de Dijkstra?" -> "Cuando se selecciona el vértice con la distancia provisional mínima entre el conjunto de vértices no confirmados."
 - **Buena tarjeta**: "¿Cuál es la fórmula del pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/)?" -> "Para un número primo $p$ y un número entero $a$ coprimo con $p$, $a^{p-1} \equiv 1 \pmod p$"
 
@@ -173,7 +173,7 @@ rsa_demo()
 
 Para encontrar un $d$ que satisfaga la fórmula matemática $e \cdot d \equiv 1 \pmod{\phi(n)}$, necesitas implementar un algoritmo llamado algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido. De esta manera, **cuando intentas codificar fórmulas matemáticas, te enfrentas a problemas de implementación como "¿cómo calculo específicamente esta variable?", y en el proceso de resolverlos, tu comprensión matemática se profundiza drásticamente**.
 
-### 4.2 Ejemplo práctico 2: Algoritmo de Dijkstra y Relajación (Relaxation)
+### 4.2 Ejemplo práctico 2: Algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/) y Relajación (Relaxation)
 
 Consideremos el algoritmo de Dijkstra para resolver el problema de la ruta más corta desde un único origen (SSSP) en la teoría de grafos.
 

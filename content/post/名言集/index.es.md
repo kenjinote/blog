@@ -140,7 +140,7 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 > Hablar es barato. Enséñame el código (Linus Torvalds)
 
-> La simplicidad es un requisito previo para la confiabilidad (Edsger Dijkstra)
+> La simplicidad es un requisito previo para la confiabilidad (Edsger [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/))
 
 > La informática no trata sobre los ordenadores, al igual que la astronomía no trata sobre los telescopios (Edsger Dijkstra)
 

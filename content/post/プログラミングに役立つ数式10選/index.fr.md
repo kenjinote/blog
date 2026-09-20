@@ -207,7 +207,7 @@ Dans une implémentation réelle (classificateur naïf de Bayes), les probabilit
 
 ---
 
-## 4. Entropie de Shannon (Shannon Entropy)
+## 4. Entropie de Shannon ([Shannon Entropy](https://kenji.blog/fr/p/information-theory-shannon-entropy/))
 
 ### Beauté de la formule et aperçu
 Définie par Claude Shannon, le père de la théorie de l'information, l'"entropie" est une formule qui quantifie l'"incertitude", le "désordre" ou la "quantité moyenne d'information" possédée par une source d'information.

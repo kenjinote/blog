@@ -80,7 +80,7 @@ graph LR
 
 技術書の暗記においては、「長い証明を丸暗記する」ことは無意味です。知識を最小単位（Atomic）に分割してカード化します。
 
-- **悪いカード**: 「Dijkstra法の証明を全て書け」
+- **悪いカード**: 「[Dijkstra](https://kenji.blog/p/graph-theory-dijkstra-a-star/)法の証明を全て書け」
 - **良いカード**: 「Dijkstra法で、ある頂点の最短距離が確定したとみなせる条件は何か？」→「未確定の頂点集合の中で、暫定距離が最小の頂点を選んだとき。」
 - **良いカード**: 「[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)の数式を答えよ」→「素数 $p$ と、互いに素な整数 $a$ について、 $a^{p-1} \equiv 1 \pmod p$」
 
@@ -173,9 +173,9 @@ rsa_demo()
 
 数式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ を満たす $d$ を見つけるために、拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)というアルゴリズムを実装する必要があります。このように、 **数式をコード化しようとすると、「この変数は具体的にどう計算するのか？」という実装上の課題に直面し、それを解決する過程で数学的理解が飛躍的に深まる** のです。
 
-### 4.2 実例2：ダイクストラ法と緩和（Relaxation）
+### 4.2 実例2：[ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/)と緩和（Relaxation）
 
-グラフ理論における単一始点最短経路問題（SSSP）を解くダイクストラ法を考えます。
+[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)における単一始点最短経路問題（SSSP）を解くダイクストラ法を考えます。
 
 数学的・アルゴリズム的な核となるのは「緩和（Relaxation）」と呼ばれる操作です。
 頂点 $u$ から頂点 $v$ への重み $w(u, v)$ の辺があるとき、頂点 $v$ への暫定的な最短距離 $d[v]$ を以下の式で更新します。

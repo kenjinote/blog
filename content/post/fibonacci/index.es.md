@@ -160,7 +160,7 @@ Los descubrimientos de [Fibonacci](https://kenji.blog/es/p/fibonacci/), que vivi
 
 ### Aplicaciones en Ciencias de la Computación
 
-En los algoritmos informáticos, la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) es muy útil. El algoritmo llamado "búsqueda de [Fibonacci](https://kenji.blog/es/p/fibonacci/)" puede buscar datos de manera más eficiente que la búsqueda binaria bajo condiciones específicas. Además, una estructura de datos conocida como "montículo de [Fibonacci](https://kenji.blog/es/p/fibonacci/)" es indispensable para acelerar algoritmos de la teoría de grafos como el algoritmo de Dijkstra.
+En los algoritmos informáticos, la sucesión de [Fibonacci](https://kenji.blog/es/p/fibonacci/) es muy útil. El algoritmo llamado "búsqueda de [Fibonacci](https://kenji.blog/es/p/fibonacci/)" puede buscar datos de manera más eficiente que la búsqueda binaria bajo condiciones específicas. Además, una estructura de datos conocida como "montículo de [Fibonacci](https://kenji.blog/es/p/fibonacci/)" es indispensable para acelerar algoritmos de la teoría de grafos como el algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/).
 
 ### Retroceso de [Fibonacci](https://kenji.blog/es/p/fibonacci/) en los Mercados Financieros
 

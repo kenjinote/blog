@@ -304,7 +304,7 @@ Logo após assimilar um novo conceito, $S$ é pequeno, e a medida que o tempo $t
 "Anki" é um software que usa algoritmos (como o SuperMemo 2) para calcular automaticamente este tempo ideal de revisão e o apresenta por meio de flashcards.
 
 Uma abordagem poderosa para gerar conteúdo em um blog técnico é **transformar o conteúdo das Notas Permanentes do Obsidian em flashcards no Anki**.
-Por exemplo, você pode adicionar perguntas fundamentais sobre engenharia ao Anki, como "Quais são os 3 elementos do Teorema CAP?" ou "Por que os índices B-Tree têm capacidade de pesquisa O(log N)?", e os revisar diariamente. Quando o conhecimento for indexado ao seu cérebro como memória de longo prazo, tomando banho ou andando, informações se juntam inconscientemente resultando em um momento de inspiração (momento eureka) em que pensará: "Ah, agora sou capaz de escrever um artigo sobre algoritmos de consenso para sistemas distribuídos".
+Por exemplo, você pode adicionar perguntas fundamentais sobre engenharia ao Anki, como "Quais são os 3 elementos do Teorema CAP?" ou "Por que os índices [B-Tree](https://kenji.blog/pt/p/b-tree-database-index-theory/) têm capacidade de pesquisa O(log N)?", e os revisar diariamente. Quando o conhecimento for indexado ao seu cérebro como memória de longo prazo, tomando banho ou andando, informações se juntam inconscientemente resultando em um momento de inspiração (momento eureka) em que pensará: "Ah, agora sou capaz de escrever um artigo sobre algoritmos de consenso para sistemas distribuídos".
 
 ## 7. Criatividade Combinatória (Combinatorial Creativity)
 

@@ -12,7 +12,7 @@ tags:
 slug: "byzantine-generals-problem"
 ---
 
-Beim Erlernen von verteilten Systemen und Blockchain-Technologie stößt man fast zwangsläufig auf das **Problem der byzantinischen Generäle** (Byzantine Generals Problem). Es behandelt das äußerst wichtige Thema, wie ein System als Ganzes einen korrekten Konsens bilden kann, wenn sich im Netzwerk „Verräter“ oder „fehlerhafte Knoten“ befinden.
+Beim Erlernen von verteilten Systemen und Blockchain-Technologie stößt man fast zwangsläufig auf das **Problem der byzantinischen Generäle** ([Byzantine Generals](https://kenji.blog/de/p/byzantine-generals-problem-consensus/) Problem). Es behandelt das äußerst wichtige Thema, wie ein System als Ganzes einen korrekten Konsens bilden kann, wenn sich im Netzwerk „Verräter“ oder „fehlerhafte Knoten“ befinden.
 
 In diesem Artikel werden wir dieses **Problem der byzantinischen Generäle** von den Grundlagen bis zur Anwendung detailliert erläutern, unterstützt durch anschauliche Geschichten, mathematische Bedingungen und Diagramme.
 

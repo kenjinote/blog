@@ -11,7 +11,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 在競技程式設計（競程）中，圖論及其演算法是無法避開的最重要主題之一。在 AtCoder、Codeforces、TopCoder 等競賽中出現的許多問題，其背後都具有圖的結構。例如道路網的最短路徑、網路通訊成本的最小化、任務依賴關係的解除等，將現實世界的問題抽象化並解決，這是非常強大的武器。
 
-本文將針對競技程式設計中常見的主要圖論演算法（拓撲排序、Dijkstra 演算法、Bellman-Ford 演算法、Floyd-Warshall 演算法、Kruskal 演算法、Prim 演算法、強連通分量分解），介紹其理論背景、使用數學公式的複雜度評估，以及使用現代 C++（C++17/20）高度最佳化的實作範例，進行全面性的網羅。這是一份將近 10,000 字的大份量「完全攻略」指南。
+本文將針對競技程式設計中常見的主要圖論演算法（拓撲排序、[Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法、Bellman-Ford 演算法、Floyd-Warshall 演算法、Kruskal 演算法、Prim 演算法、強連通分量分解），介紹其理論背景、使用數學公式的複雜度評估，以及使用現代 C++（C++17/20）高度最佳化的實作範例，進行全面性的網羅。這是一份將近 10,000 字的大份量「完全攻略」指南。
 
 ---
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 這是一個求從某個起點到其他所有頂點的最短路徑的問題。根據邊的權重是非負數還是存在負權重，適用的演算法會有所不同。
 
-### Dijkstra 演算法 (Dijkstra's Algorithm)
+### [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法 (Dijkstra's Algorithm)
 
 Dijkstra 演算法是一種在 **所有邊的權重皆為非負** 時適用的高速最短路徑演算法。它基於貪婪法：「確定目前已知最短距離最短的頂點，並更新從該頂點到相鄰頂點的距離（鬆弛）」。
 
@@ -121,7 +121,7 @@ graph TD
     A["頂點 A(2)"] -- 4 --> C["頂點 C(6)"]
     B["頂點 B(3)"] -- 1 --> C["頂點 C(4)"]
 ```
-如上圖所示，直接從 S 到 B 的成本是 5，但如果經過 A，則能以成本 3 抵達。Dijkstra 演算法就是這樣進行最佳化的。
+如上圖所示，直接從 S 到 B 的成本是 5，但如果經過 A，則能以成本 3 抵達。[Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法就是這樣進行最佳化的。
 
 #### C++ 實作範例
 
@@ -170,7 +170,7 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
     return dist;
 }
 ```
-`if (dist[u] < d) continue;` 這行程式碼非常重要。在 Dijkstra 演算法中，同一個頂點可能會被多次推入佇列，透過這個檢查可以剪枝（剪去無謂的搜尋）。
+`if (dist[u] < d) continue;` 這行程式碼非常重要。在 [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法中，同一個頂點可能會被多次推入佇列，透過這個檢查可以剪枝（剪去無謂的搜尋）。
 
 ### Bellman-Ford 演算法 (Bellman-Ford Algorithm)
 
@@ -356,7 +356,7 @@ long long kruskal(int V, vector<Edge>& edges) {
 
 ### Prim 演算法 (Prim's Algorithm)
 
-採用與 Dijkstra 演算法非常相似的方法。從某一個頂點開始，在已經建構的樹所直接連接的邊中，不斷選擇權重最小的邊來讓樹成長。
+採用與 [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法非常相似的方法。從某一個頂點開始，在已經建構的樹所直接連接的邊中，不斷選擇權重最小的邊來讓樹成長。
 
 使用優先權佇列時的時間複雜度為 $O((V + E) \log V)$。在稠密圖（邊數多的圖）的情況下，Prim 演算法的陣列基礎實作 $O(V^2)$ 有時會比 Kruskal 演算法更快。
 
@@ -505,7 +505,7 @@ struct SCC {
 擅長圖論問題的秘訣在於 **「反覆實作直到變成反射動作」** ，以及 **「訓練自己思考這個問題可以歸約為哪種圖（頂點是什麼，邊是什麼）」** 。
 
 1. 首先要能無誤且快速地寫出 DFS / BFS。
-2. 接著要能默寫出 Dijkstra 演算法和 Kruskal 演算法（AtCoder 棕色～綠色區間必備）。
+2. 接著要能默寫出 [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法和 Kruskal 演算法（AtCoder 棕色～綠色區間必備）。
 3. 最後，增加 Bellman-Ford、Floyd-Warshall、拓撲排序、SCC 等演算法的武器庫（在 AtCoder 水色～藍色區間將成為利器）。
 
 強烈建議將程式碼片段整理成函式庫（儲存在 Snippet 工具或自己的 GitHub 儲存庫中），以便在正式比賽中能毫不猶豫地呼叫使用。

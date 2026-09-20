@@ -124,7 +124,7 @@ Saat merancang sistem terdistribusi, insinyur selalu dihadapkan pada "Teorema CA
 
 - **Consistency (Konsistensi)**: Apakah semua node melihat data yang sama pada waktu yang sama?
 - **Availability (Ketersediaan)**: Apakah sistem terus merespons meskipun beberapa node mengalami kegagalan?
-- **Partition Tolerance (Toleransi Partisi)**: Apakah sistem terus beroperasi meskipun terjadi pemisahan (partisi) jaringan?
+- **[Partition Tolerance](https://kenji.blog/id/p/cap-theorem-distributed-systems/) (Toleransi Partisi)**: Apakah sistem terus beroperasi meskipun terjadi pemisahan (partisi) jaringan?
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

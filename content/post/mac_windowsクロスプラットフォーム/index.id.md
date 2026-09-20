@@ -75,7 +75,7 @@ Namun, ketika Anda melakukan komit pada kode ini dan menjalankan build di server
 
 Mari kita pikirkan secara matematis pemrosesan internal seperti apa yang terjadi saat sistem file menyelesaikan jalur file.
 
-Dalam kasus ext4 yang membedakan huruf besar/kecil, entri-entri di dalam direktori dikelola menggunakan struktur seperti tabel hash atau B-Tree. Jika jumlah file dalam direktori adalah $N$ dan panjang nama file adalah $L$, kompleksitas komputasi untuk pencarian biner sederhana atau pencarian pohon adalah sebagai berikut:
+Dalam kasus ext4 yang membedakan huruf besar/kecil, entri-entri di dalam direktori dikelola menggunakan struktur seperti tabel hash atau [B-Tree](https://kenji.blog/id/p/b-tree-database-index-theory/). Jika jumlah file dalam direktori adalah $N$ dan panjang nama file adalah $L$, kompleksitas komputasi untuk pencarian biner sederhana atau pencarian pohon adalah sebagai berikut:
 
 $$ T_{search}(N) = O(L \log N) $$
 

@@ -17,7 +17,7 @@ tags:
 
 Dalam masyarakat modern, kita terus-menerus terhubung ke suatu hal. Baik itu komunikasi antar komputer melalui internet, hubungan manusia yang kompleks pada layanan jejaring sosial (SNS), jaringan jalan dan kereta api luas yang menghubungkan kota-kota, rantai pasokan global untuk logistik, atau koneksi saraf yang tak terhitung jumlahnya di dalam otak kita sendiri—tidak berlebihan untuk mengatakan bahwa dunia terdiri dari jaringan yang tak terhitung jumlahnya.
 
-Menyediakan kerangka kerja yang kuat untuk merepresentasikan dan menganalisis jaringan-jaringan ini secara sederhana dan ketat secara matematis, yang pada pandangan pertama tampak sangat kompleks dan bahkan kacau, adalah **Teori Graf** (Graph Theory). Dengan menggunakan teori graf, kita dapat mengungkap struktur dan sifat tersembunyi di dalam sistem yang kompleks, menemukan rute komunikasi yang optimal, dan mengevaluasi kerentanan seluruh jaringan.
+Menyediakan kerangka kerja yang kuat untuk merepresentasikan dan menganalisis jaringan-jaringan ini secara sederhana dan ketat secara matematis, yang pada pandangan pertama tampak sangat kompleks dan bahkan kacau, adalah **Teori Graf** ([Graph Theory](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)). Dengan menggunakan teori graf, kita dapat mengungkap struktur dan sifat tersembunyi di dalam sistem yang kompleks, menemukan rute komunikasi yang optimal, dan mengevaluasi kerentanan seluruh jaringan.
 
 Artikel ini akan secara komprehensif dan sistematis menjelaskan teori graf, mulai dari asal-usul historisnya, mencakup definisi matematis dasar dan struktur data untuk pemrograman komputer, dan memperkenalkan algoritma representatif yang mendukung fondasi teknologi modern.
 
@@ -185,7 +185,7 @@ print("Log hasil eksekusi BFS:")
 bfs(graph_data, 'A')
 ```
 
-### 5.2. Masalah Jalur Terpendek: Algoritma Dijkstra
+### 5.2. Masalah Jalur Terpendek: Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)
 
 Mencari rute tercepat ke tujuan pada aplikasi peta, apa yang beroperasi pada inti sistem adalah **Algoritma Jalur Terpendek**. Rute tersebut memiliki biaya (bobot) seperti "jarak" dan "waktu tempuh", dan tujuannya adalah menemukan jalur yang meminimalkan biaya kumulatif dari titik awal ke tujuan.
 
@@ -299,4 +299,4 @@ Dalam artikel ini, kami telah menguraikan bagaimana **Teori Graf**, yang lahir d
 
 Meskipun graf hanya terdiri dari elemen yang paling sederhana dan abstrak yang mungkin ada: titik (simpul) dan garis (sisi), dunia teori matematika dan algoritma komputasi yang diterapkan padanya sedalam alam semesta dan menyimpan kekuatan yang luar biasa. Bagi insinyur perangkat lunak, ilmuwan data, atau siapa saja yang tertarik dengan sistem yang kompleks, pengetahuan sistematis tentang teori graf akan secara eksponensial meningkatkan kemampuan untuk melakukan abstraksi tingkat tinggi terhadap masalah-masalah sulit dan pemikiran logis untuk menurunkan solusi optimal.
 
-Jika Anda sedang belajar pemrograman, silakan gunakan artikel ini sebagai batu loncatan dan cobalah untuk benar-benar membuat kode dan menjalankan algoritma seperti algoritma Dijkstra atau pencarian melebar-pertama di komputer Anda sendiri. Saat Anda merasakan proses di mana jaringan kompleks dan tidak terlihat diungkap secara jelas dengan kode yang Anda tulis, Anda akan benar-benar menyadari keindahan sejati serta pesona teori graf. Dunia ini dipenuhi dengan graf yang jauh lebih indah dan dapat dihitung daripada yang Anda bayangkan.
+Jika Anda sedang belajar pemrograman, silakan gunakan artikel ini sebagai batu loncatan dan cobalah untuk benar-benar membuat kode dan menjalankan algoritma seperti algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) atau pencarian melebar-pertama di komputer Anda sendiri. Saat Anda merasakan proses di mana jaringan kompleks dan tidak terlihat diungkap secara jelas dengan kode yang Anda tulis, Anda akan benar-benar menyadari keindahan sejati serta pesona teori graf. Dunia ini dipenuhi dengan graf yang jauh lebih indah dan dapat dihitung daripada yang Anda bayangkan.

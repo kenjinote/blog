@@ -14,7 +14,7 @@ In the history of mathematics, trivial everyday questions or games can sometimes
 
 In the 18th century, the city of Königsberg in the Kingdom of Prussia (now Kaliningrad, Russian Federation) was divided by the large Pregel River, and seven bridges were built to connect its islands and both banks. During their evening walks, the citizens of the time came up with the following game: "Is it possible to walk across all seven bridges in the city exactly once and return to the starting point?"
 
-When this seemingly simple puzzle fell into the hands of the genius mathematician **[Leonhard Euler](https://kenji.blog/en/p/euler/)**, a revolution occurred in the world of mathematics. Euler not only proved that this problem was impossible but, in the process, also re-examined the properties of space from an entirely new perspective, laying the foundations for two critically important fields in modern mathematics: **Graph Theory** and **Topology**.
+When this seemingly simple puzzle fell into the hands of the genius mathematician **[Leonhard Euler](https://kenji.blog/en/p/euler/)**, a revolution occurred in the world of mathematics. Euler not only proved that this problem was impossible but, in the process, also re-examined the properties of space from an entirely new perspective, laying the foundations for two critically important fields in modern mathematics: **[Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)** and **Topology**.
 
 In this article, we will delve deeply into the historical background of the [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/) problem, Euler's brilliant method of solving it, and how it connects to modern science and technology, incorporating mathematical details. Go beyond a mere historical introduction and enjoy the beauty of the mathematical structure behind it.
 
@@ -51,7 +51,7 @@ From the elaborate real map of Königsberg, he completely ignored the physical s
 1. Represent **landmasses (islands and banks)** as mere "points" with no size. In modern terms, these are called **vertices** or **nodes**.
 2. Represent **bridges** as "lines" connecting vertices to each other. These are called **edges** or **links**. The curvature and length of the lines do not matter.
 
-A discrete structure represented as a finite set of vertices and edges connecting them in this way is called a **graph** in mathematics. This was precisely the moment of birth of the field we now call "Graph Theory."
+A discrete structure represented as a finite set of vertices and edges connecting them in this way is called a **graph** in mathematics. This was precisely the moment of birth of the field we now call "[Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)."
 
 The Mermaid diagram below shows how the geographical map of the city of Königsberg was transformed into an abstract graph representation.
 
@@ -139,12 +139,12 @@ The Königsberg graph is exactly the same. Even if you stretch or shrink the bri
 
 Euler himself later discovered an astonishing universal law regarding the number of vertices ($V$), edges ($E$), and faces ($F$) of a polyhedron in 1750, the so-called **Euler's Polyhedral Formula** ($V - E + F = 2$). This also captures a topological invariant that does not depend on the specific shape or size of the polyhedron, and it stands as a monumentally important milestone in the development of topology.
 
-## Applications and Expansion of Graph Theory in Modern Society
+## Applications and Expansion of [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/) in Modern Society
 
 Graph theory and topology, which originated from the pure intellectual exploration of an 18th-century mathematician, certainly did not remain confined to the ivory tower. Today, they are blooming as highly practical and indispensable tools that fundamentally support our highly information-oriented society and technology.
 
 ### 1. Computer Networks and the Internet
-The physical and logical structure of the Internet that we use every day is exactly a gigantic graph on a global scale. Individual routers, servers, and computers act as vertices, and the optical fibers and wireless communication links connecting them are represented as edges. Routing protocols (e.g., Dijkstra's algorithm) to deliver packets of data to their destinations as quickly and efficiently as possible while avoiding congestion are all designed as algorithms on graph theory.
+The physical and logical structure of the Internet that we use every day is exactly a gigantic graph on a global scale. Individual routers, servers, and computers act as vertices, and the optical fibers and wireless communication links connecting them are represented as edges. Routing protocols (e.g., [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm) to deliver packets of data to their destinations as quickly and efficiently as possible while avoiding congestion are all designed as algorithms on graph theory.
 
 ### 2. Navigation Systems and Logistics Optimization
 Route searches on smartphone map apps and car navigation systems perform calculations by considering intersections and junctions as vertices and roads as edges. This is nothing other than the **Shortest Path Problem** in graph theory. Also, in logistics networks, the problem of determining a route to visit numerous delivery destinations in the most efficient order is known as the **Traveling Salesman Problem**.

@@ -11,7 +11,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 Dalam pemrograman kompetitif (competitive programming), teori graf beserta algoritmanya adalah salah satu tema terpenting yang tidak bisa dihindari. Banyak masalah yang diujikan dalam kontes seperti AtCoder, Codeforces, maupun TopCoder, memiliki struktur graf di baliknya. Baik itu pencarian rute terpendek pada jaringan jalan, meminimalkan biaya komunikasi jaringan, maupun menyelesaikan dependensi tugas, graf menjadi senjata ampuh untuk memecahkan masalah dunia nyata secara abstrak.
 
-Pada artikel ini, kita akan membahas secara lengkap algoritma graf utama yang sering muncul dalam pemrograman kompetitif (Topological Sort, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal, Prim, dan Strongly Connected Components), meliputi latar belakang teoretisnya, evaluasi kompleksitas dengan rumus matematika, serta contoh implementasi yang sangat dioptimalkan menggunakan C++ modern (C++17/20). Kami menyajikan panduan yang benar-benar "lengkap" ini dalam volume besar.
+Pada artikel ini, kita akan membahas secara lengkap algoritma graf utama yang sering muncul dalam pemrograman kompetitif (Topological Sort, [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/), Bellman-Ford, Floyd-Warshall, Kruskal, Prim, dan Strongly Connected Components), meliputi latar belakang teoretisnya, evaluasi kompleksitas dengan rumus matematika, serta contoh implementasi yang sangat dioptimalkan menggunakan C++ modern (C++17/20). Kami menyajikan panduan yang benar-benar "lengkap" ini dalam volume besar.
 
 ---
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 Ini adalah masalah untuk mencari rute terpendek dari suatu titik awal ke semua simpul lainnya. Algoritma yang diterapkan berbeda-beda tergantung pada apakah bobot sisi non-negatif atau terdapat bobot negatif.
 
-### Algoritma Dijkstra (Dijkstra's Algorithm)
+### Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) (Dijkstra's Algorithm)
 
 Algoritma Dijkstra merupakan algoritma rute terpendek yang cepat dan bisa digunakan saat **semua bobot sisi bernilai non-negatif**. Algoritma ini berdasarkan metode greedy: "Konfirmasikan simpul yang memiliki jarak terpendek yang diketahui saat ini, lalu perbarui jarak dari simpul tersebut ke simpul-simpul tetangganya (relaksasi)".
 
@@ -121,7 +121,7 @@ graph TD
     A["Simpul A(2)"] -- 4 --> C["Simpul C(6)"]
     B["Simpul B(3)"] -- 1 --> C["Simpul C(4)"]
 ```
-Seperti terlihat pada gambar di atas, biaya untuk langsung dari S ke B adalah 5, tetapi dapat dicapai dengan biaya 3 jika melalui A. Algoritma Dijkstra melakukan optimisasi seperti ini.
+Seperti terlihat pada gambar di atas, biaya untuk langsung dari S ke B adalah 5, tetapi dapat dicapai dengan biaya 3 jika melalui A. Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) melakukan optimisasi seperti ini.
 
 #### Contoh Implementasi C++
 
@@ -170,7 +170,7 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
     return dist;
 }
 ```
-Pernyataan `if (dist[u] < d) continue;` sangat penting. Pada algoritma Dijkstra, satu simpul yang sama bisa masuk ke dalam antrean beberapa kali. Pengecekan ini berfungsi memangkas pencarian yang tidak diperlukan.
+Pernyataan `if (dist[u] < d) continue;` sangat penting. Pada algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/), satu simpul yang sama bisa masuk ke dalam antrean beberapa kali. Pengecekan ini berfungsi memangkas pencarian yang tidak diperlukan.
 
 ### Algoritma Bellman-Ford (Bellman-Ford Algorithm)
 
@@ -356,7 +356,7 @@ long long kruskal(int V, vector<Edge>& edges) {
 
 ### Algoritma Prim (Prim's Algorithm)
 
-Pendekatannya sangat mirip dengan algoritma Dijkstra. Dimulai dari satu simpul, algoritma menumbuhkan pohon secara bertahap dengan memilih sisi berbobot terkecil yang terhubung langsung ke pohon yang sudah terbentuk.
+Pendekatannya sangat mirip dengan algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/). Dimulai dari satu simpul, algoritma menumbuhkan pohon secara bertahap dengan memilih sisi berbobot terkecil yang terhubung langsung ke pohon yang sudah terbentuk.
 
 Ketika menggunakan antrean prioritas, kompleksitasnya menjadi $O((V + E) \log V)$. Pada graf padat (graf dengan banyak sisi), implementasi berbasis array dari algoritma Prim $O(V^2)$ bisa jadi lebih cepat daripada algoritma Kruskal.
 
@@ -505,7 +505,7 @@ Dalam artikel ini, kita telah meninjau algoritma graf yang sering muncul pada pe
 Kunci untuk mahir dalam masalah graf adalah **"mengimplementasikan berulang kali sampai menjadi kebiasaan"** dan **"melatih pikiran untuk merepresentasikan suatu masalah sebagai graf (apa saja simpulnya, apa saja sisinya)"**.
 
 1. Pertama-tama, pastikan bisa menulis DFS / BFS dengan cepat dan tanpa kesalahan.
-2. Selanjutnya, pastikan bisa menulis algoritma Dijkstra dan Kruskal di luar kepala (Wajib untuk sabuk cokelat hingga hijau di AtCoder).
+2. Selanjutnya, pastikan bisa menulis algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) dan Kruskal di luar kepala (Wajib untuk sabuk cokelat hingga hijau di AtCoder).
 3. Terakhir, perluas wawasan dengan Bellman-Ford, Floyd-Warshall, Topological Sort, dan SCC (Berguna sebagai senjata ampuh di sabuk biru muda hingga biru di AtCoder).
 
 Kami sangat menyarankan untuk menyimpannya sebagai library berupa cuplikan kode (snippet tool atau repository GitHub pribadi) sehingga Anda dapat memanggilnya tanpa ragu pada saat kontes berlangsung.

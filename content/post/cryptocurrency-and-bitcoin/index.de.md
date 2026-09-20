@@ -157,7 +157,7 @@ Beim Verifizierungsprozess wird mit dem öffentlichen Schlüssel $K$ und der Sig
 
 In dezentralisierten Netzwerken ist ein Konsensalgorithmus der Mechanismus, durch den sich alle auf denselben Status des Ledgers einigen.
 
-### Problem der byzantinischen Generäle (Byzantine Generals Problem)
+### Problem der byzantinischen Generäle ([Byzantine Generals](https://kenji.blog/de/p/byzantine-generals-problem-consensus/) Problem)
 
 Ein klassisches Problem im Distributed Computing ist das "Problem der byzantinischen Generäle". Mehrere Generäle belagern eine feindliche Stadt und müssen sich auf Angriff oder Rückzug einigen. Einige der Generäle könnten jedoch Verräter sein und falsche Nachrichten senden. Die Frage ist, wie die loyalen Generäle unter diesen Umständen eine korrekte Übereinkunft erzielen können.
 

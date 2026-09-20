@@ -17,7 +17,7 @@ tags:
 
 Na sociedade moderna, estamos constantemente conectados a algo. Quer seja a comunicação entre computadores através da internet, as complexas relações humanas nas redes sociais (SNS), as vastas redes rodoviárias e ferroviárias que ligam as cidades, as cadeias de abastecimento globais para a logística, ou as inúmeras conexões neurais dentro dos nossos próprios cérebros – não é exagero dizer que o mundo é composto por inúmeras redes.
 
-Fornecendo uma estrutura poderosa para representar e analisar de forma simples e matematicamente rigorosa estas redes, que à primeira vista parecem altamente complexas e até caóticas, está a **Teoria dos Grafos** (Graph Theory). Ao utilizar a teoria dos grafos, podemos desvendar as estruturas e propriedades ocultas em sistemas complexos, encontrar rotas de comunicação ideais e avaliar a vulnerabilidade de redes inteiras.
+Fornecendo uma estrutura poderosa para representar e analisar de forma simples e matematicamente rigorosa estas redes, que à primeira vista parecem altamente complexas e até caóticas, está a **Teoria dos Grafos** ([Graph Theory](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/)). Ao utilizar a teoria dos grafos, podemos desvendar as estruturas e propriedades ocultas em sistemas complexos, encontrar rotas de comunicação ideais e avaliar a vulnerabilidade de redes inteiras.
 
 Este artigo explicará de forma abrangente e sistemática a teoria dos grafos, começando por suas origens históricas, abrangendo definições matemáticas básicas e estruturas de dados para programação de computadores, e introduzindo algoritmos representativos que sustentam a base da tecnologia moderna.
 
@@ -185,7 +185,7 @@ print("Registo de resultados de execução do BFS:")
 bfs(graph_data, 'A')
 ```
 
-### 5.2. Problema do Caminho Mais Curto: Algoritmo de Dijkstra
+### 5.2. Problema do Caminho Mais Curto: Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/)
 
 Ao procurar a rota mais rápida para um destino em uma aplicação de mapas, o que opera no núcleo do sistema é um **Algoritmo de Caminho Mais Curto**. A rota tem custos (pesos) como "distância" e "tempo de viagem", e o objetivo é encontrar o caminho que minimize o custo cumulativo desde o ponto de partida até ao destino.
 
@@ -299,4 +299,4 @@ Neste artigo, traçámos como a **Teoria dos Grafos**, nascida de um simples que
 
 Embora os grafos sejam compostos apenas pelos elementos mais simples e abstratos possíveis: pontos (vértices) e linhas (arestas), o mundo das teorias matemáticas e dos algoritmos de cálculo que lhes são aplicados é tão profundo como o universo e encerra um poder avassalador. Para engenheiros de software, cientistas de dados ou qualquer pessoa interessada em sistemas complexos, o conhecimento sistemático da teoria dos grafos melhorará exponencialmente a capacidade de abstração de alto nível perante problemas difíceis e o pensamento lógico para derivar as soluções ideais.
 
-Se estiver a aprender programação, utilize este artigo como trampolim e tente efetivamente codificar e executar no seu próprio computador algoritmos como o de Dijkstra ou a busca em largura. Quando experienciar o processo em que redes invisíveis e complexas são desvendadas de forma vívida através do código que escreveu, compreenderá verdadeiramente a autêntica beleza e o fascínio da teoria dos grafos. O mundo está cheio de grafos mais belos e computáveis do que poderia pensar.
+Se estiver a aprender programação, utilize este artigo como trampolim e tente efetivamente codificar e executar no seu próprio computador algoritmos como o de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) ou a busca em largura. Quando experienciar o processo em que redes invisíveis e complexas são desvendadas de forma vívida através do código que escreveu, compreenderá verdadeiramente a autêntica beleza e o fascínio da teoria dos grafos. O mundo está cheio de grafos mais belos e computáveis do que poderia pensar.

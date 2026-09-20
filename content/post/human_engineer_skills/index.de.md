@@ -124,7 +124,7 @@ Beim Entwurf verteilter Systeme werden Ingenieure immer mit dem „CAP-Theorem�
 
 - **Consistency (Konsistenz)**: Sehen alle Knoten gleichzeitig dieselben Daten?
 - **Availability (Verfügbarkeit)**: Antwortet das System weiterhin, auch wenn ein Teil der Knoten ausfällt?
-- **Partition Tolerance (Ausfalltoleranz/Netzwerkpartitionierung)**: Funktioniert das System auch bei Netzwerkunterbrechungen weiter?
+- **[Partition Tolerance](https://kenji.blog/de/p/cap-theorem-distributed-systems/) (Ausfalltoleranz/Netzwerkpartitionierung)**: Funktioniert das System auch bei Netzwerkunterbrechungen weiter?
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

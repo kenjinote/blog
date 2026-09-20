@@ -207,15 +207,15 @@ print(f"「当選」が含まれるメールがスパムである確率: {result
 
 ---
 
-## 4. シャノンエントロピー (Shannon Entropy)
+## 4. [シャノンエントロピー](https://kenji.blog/p/information-theory-shannon-entropy/) ([Shannon Entropy](https://kenji.blog/p/information-theory-shannon-entropy/))
 
 ### 数式の美しさと概要
-情報理論の父であるクロード・シャノンが定義した「エントロピー」は、情報源が持つ「不確実性」や「乱雑さ」、あるいは「平均情報量」を定量化する数式です。
+[情報理論](https://kenji.blog/p/information-theory-shannon-entropy/)の父であるクロード・シャノンが定義した「エントロピー」は、情報源が持つ「不確実性」や「乱雑さ」、あるいは「平均情報量」を定量化する数式です。
 
 $$ H(X) = - \sum_{i=1}^n P(x_i) \log_2 P(x_i) $$
 
 ### プログラミングにおける応用
-エントロピーは、ファイルのデータ圧縮（ハフマン符号化やZIP圧縮アルゴリズムの理論的限界）、暗号理論における乱数の強度評価、そして機械学習における「決定木（Decision Trees）」のアルゴリズム（ID3やC4.5など）で不可欠な存在です。決定木の構築では、データを分割した際のエントロピーの減少量（情報利得：Information Gain）が最大になるような特徴量を見つけ出します。
+エントロピーは、ファイルの[データ圧縮](https://kenji.blog/p/information-theory-shannon-entropy/)（ハフマン符号化やZIP圧縮アルゴリズムの理論的限界）、暗号理論における乱数の強度評価、そして機械学習における「決定木（Decision Trees）」のアルゴリズム（ID3やC4.5など）で不可欠な存在です。決定木の構築では、データを分割した際のエントロピーの減少量（情報利得：Information Gain）が最大になるような特徴量を見つけ出します。
 
 ### 実装例 (Python)
 文字列（データセット）のエントロピーを計算し、情報量を評価する関数です。
@@ -282,7 +282,7 @@ graph TD
 ```
 
 ### プログラミングにおける応用
-FFTは現代社会を支える不可欠な技術です。音声認識（SiriやAlexa）、MP3やJPEG/MPEGのデータ圧縮、LTEやWi-Fiなどのデジタル通信、さらには非常に巨大な整数の掛け算（ショーンハーゲ・ストラッセン法）に至るまで、あらゆる場所で動いています。
+FFTは現代社会を支える不可欠な技術です。音声認識（SiriやAlexa）、MP3やJPEG/MPEGの[データ圧縮](https://kenji.blog/p/information-theory-shannon-entropy/)、LTEやWi-Fiなどのデジタル通信、さらには非常に巨大な整数の掛け算（ショーンハーゲ・ストラッセン法）に至るまで、あらゆる場所で動いています。
 
 ### 実装例 (Python)
 再帰的なCooley-Tukey型アルゴリズムのシンプルな実装例です。（※実務ではCやアセンブラで極限まで最適化された `FFTW` ライブラリや `numpy.fft` を使用します）

@@ -207,7 +207,7 @@ In actual implementations (Naive Bayes Classifier), probabilities of multiple wo
 
 ---
 
-## 4. Shannon Entropy
+## 4. [Shannon Entropy](https://kenji.blog/en/p/information-theory-shannon-entropy/)
 
 ### Beauty and Overview of the Formula
 Defined by Claude Shannon, the father of information theory, "Entropy" is a mathematical formula that quantifies the "uncertainty", "randomness", or "average information content" of an information source.

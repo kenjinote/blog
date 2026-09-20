@@ -17,7 +17,7 @@ tags:
 
 Dans la société moderne, nous sommes constamment connectés à quelque chose. Qu'il s'agisse de la communication entre les ordinateurs via Internet, des relations humaines complexes sur les services de réseaux sociaux (SNS), des vastes réseaux routiers et ferroviaires reliant les villes, des chaînes d'approvisionnement mondiales pour la logistique ou des innombrables connexions neuronales au sein de nos propres cerveaux, il n'est pas exagéré de dire que le monde est composé de réseaux innombrables.
 
-Fournissant un cadre puissant pour représenter et analyser de manière simple et mathématiquement rigoureuse ces réseaux qui, à première vue, semblent très complexes et même chaotiques, c'est la **Théorie des Graphes** (Graph Theory). En utilisant la théorie des graphes, nous pouvons démêler les structures et les propriétés cachées au sein de systèmes complexes, trouver des itinéraires de communication optimaux et évaluer la vulnérabilité de réseaux entiers.
+Fournissant un cadre puissant pour représenter et analyser de manière simple et mathématiquement rigoureuse ces réseaux qui, à première vue, semblent très complexes et même chaotiques, c'est la **Théorie des Graphes** ([Graph Theory](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)). En utilisant la théorie des graphes, nous pouvons démêler les structures et les propriétés cachées au sein de systèmes complexes, trouver des itinéraires de communication optimaux et évaluer la vulnérabilité de réseaux entiers.
 
 Cet article expliquera de manière exhaustive et systématique la théorie des graphes, en commençant par ses origines historiques, en couvrant les définitions mathématiques de base et les structures de données pour la programmation informatique, et en présentant des algorithmes représentatifs qui soutiennent les fondations de la technologie moderne.
 
@@ -185,7 +185,7 @@ print("Journal des résultats de l'exécution de BFS :")
 bfs(graph_data, 'A')
 ```
 
-### 5.2. Problème du Plus Court Chemin : Algorithme de Dijkstra
+### 5.2. Problème du Plus Court Chemin : Algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)
 
 Lors de la recherche de l'itinéraire le plus rapide vers une destination sur une application cartographique, ce qui opère au cœur du système est un **Algorithme du Plus Court Chemin**. L'itinéraire a des coûts (poids) tels que la « distance » et le « temps de trajet », et l'objectif est de trouver le chemin qui minimise le coût cumulé du point de départ à la destination.
 
@@ -299,4 +299,4 @@ Dans cet article, nous avons décrit comment la **Théorie des Graphes**, née d
 
 Bien que les graphes soient composés uniquement des éléments les plus simples et les plus abstraits possibles : des points (sommets) et des lignes (arêtes), le monde des théories mathématiques et des algorithmes informatiques qui leur sont appliqués est aussi profond que l'univers et recèle une puissance écrasante. [Pour les ingénieurs](https://kenji.blog/fr/p/prompt-engineering-for-engineers/) logiciels, les scientifiques des données ou toute personne intéressée par les systèmes complexes, des connaissances systématiques de la théorie des graphes amélioreront de manière exponentielle la capacité d'abstraction de haut niveau face à des problèmes difficiles et la réflexion logique pour dériver des solutions optimales.
 
-Si vous apprenez la programmation, veuillez utiliser cet article comme un tremplin et essayez de coder et d'exécuter réellement des algorithmes comme celui de Dijkstra ou le parcours en largeur sur votre propre ordinateur. Lorsque vous ferez l'expérience du processus de réseaux complexes et invisibles en train d'être démêlés de manière vivante par le code que vous écrivez, vous réaliserez véritablement la véritable beauté et la fascination de la théorie des graphes. Le monde est rempli de graphes plus beaux et calculables que vous ne le pensez.
+Si vous apprenez la programmation, veuillez utiliser cet article comme un tremplin et essayez de coder et d'exécuter réellement des algorithmes comme celui de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/) ou le parcours en largeur sur votre propre ordinateur. Lorsque vous ferez l'expérience du processus de réseaux complexes et invisibles en train d'être démêlés de manière vivante par le code que vous écrivez, vous réaliserez véritablement la véritable beauté et la fascination de la théorie des graphes. Le monde est rempli de graphes plus beaux et calculables que vous ne le pensez.

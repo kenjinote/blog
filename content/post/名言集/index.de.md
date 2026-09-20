@@ -140,7 +140,7 @@ description: 'Wir stellen eine sorgf채ltige Auswahl von Zitaten historischer Gr�
 
 > Reden ist billig. Zeig mir den Code. (Linus Torvalds)
 
-> Einfachheit ist eine Voraussetzung f체r Zuverl채ssigkeit. (Edsger W. Dijkstra)
+> Einfachheit ist eine Voraussetzung f체r Zuverl채ssigkeit. (Edsger W. [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/))
 
 > In der Informatik geht es genauso wenig um Computer, wie in der Astronomie um Teleskope. (Edsger W. Dijkstra)
 

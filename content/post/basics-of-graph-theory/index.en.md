@@ -17,7 +17,7 @@ tags:
 
 In modern society, we are constantly connected to something. Whether it is communication between computers via the internet, complex human relationships on social networking services (SNS), vast road and railway networks connecting cities, global supply chains for logistics, or the countless neural connections within our own brains—it is no exaggeration to say that the world is composed of countless networks.
 
-Providing a powerful framework to simply and mathematically represent and analyze these networks, which at first glance appear highly complex and even chaotic, is **Graph Theory**. By using graph theory, we can unravel the hidden structures and properties within complex systems, find optimal communication routes, and evaluate the vulnerability of entire networks.
+Providing a powerful framework to simply and mathematically represent and analyze these networks, which at first glance appear highly complex and even chaotic, is **[Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)**. By using graph theory, we can unravel the hidden structures and properties within complex systems, find optimal communication routes, and evaluate the vulnerability of entire networks.
 
 This article will comprehensively and systematically explain graph theory, starting from its historical origins, covering basic mathematical definitions and data structures for computer programming, and introducing representative algorithms that support the foundation of modern technology.
 
@@ -44,7 +44,7 @@ Euler realized that in order to "pass through" a point, there must always be a p
 
 In the abstract graph of the Königsberg bridges, the number of connected bridges at all four landmasses (points) was "odd" (either 3 or 5). Therefore, it was concluded that it is impossible to draw a continuous line crossing all bridges exactly once.
 
-This discovery by Euler was the exact moment **Graph Theory** was born. By discarding complex physical terrain and focusing solely on the connection relationships (topology) of points and lines, he opened up an entirely new field of mathematics.
+This discovery by Euler was the exact moment **[Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)** was born. By discarding complex physical terrain and focusing solely on the connection relationships (topology) of points and lines, he opened up an entirely new field of mathematics.
 
 ## 3. Basic Concepts and Mathematical Definitions of Graph Theory
 
@@ -185,7 +185,7 @@ print("BFS execution result log:")
 bfs(graph_data, 'A')
 ```
 
-### 5.2. Shortest Path Problem: Dijkstra's Algorithm
+### 5.2. Shortest Path Problem: [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s Algorithm
 
 When searching for the fastest route to a destination on a map application, what operates at the core of the system is a **Shortest Path Algorithm**. The route has costs (weights) such as "distance" and "travel time", and the objective is to find the path that minimizes the cumulative cost from the starting point to the destination.
 
@@ -266,7 +266,7 @@ Bipartite graphs are ideal for modeling relationships between two sets with diff
 
 One of the most important problems in bipartite graphs is the **Matching Problem**. This is the problem of picking a set of edges (matching) from the graph that do not share endpoints with each other. In particular, "maximum bipartite matching," which forms as many pairs as possible, directly links to optimal resource allocation problems. Furthermore, problems maximizing the satisfaction or profit of each pair have been solved by the "Gale-Shapley Algorithm," which was the subject of the Nobel Prize in Economics, and are deeply integrated into real-world social system designs, such as medical resident hospital placements and school choice systems.
 
-## 7. Applications of Graph Theory in Modern Society
+## 7. Applications of [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/) in Modern Society
 
 Graph theory is not confined to abstract mathematics on a blackboard; it is utilized in a wide variety of domains as an infrastructure technology that fundamentally supports our daily lives.
 
@@ -299,4 +299,4 @@ In this article, we have outlined how **Graph Theory**, which was born from a si
 
 Although graphs are composed only of the simplest and most abstract elements possible: points (vertices) and lines (edges), the world of mathematical theories and computational algorithms applied to them is as deep as the universe and harbors overwhelming power. For software engineers, data scientists, or anyone interested in complex systems, systematic knowledge of graph theory will exponentially improve the ability for high-level abstraction against difficult problems and logical thinking to derive optimal solutions.
 
-If you are learning programming, please use this article as a stepping stone and try actually coding and running algorithms like Dijkstra's or breadth-first search on your own computer. When you experience the process of invisible, complex networks being vividly unraveled by the code you write, you will truly realize the true beauty and fascination of graph theory. The world is filled with more beautiful, computable graphs than you might think.
+If you are learning programming, please use this article as a stepping stone and try actually coding and running algorithms like [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s or breadth-first search on your own computer. When you experience the process of invisible, complex networks being vividly unraveled by the code you write, you will truly realize the true beauty and fascination of graph theory. The world is filled with more beautiful, computable graphs than you might think.

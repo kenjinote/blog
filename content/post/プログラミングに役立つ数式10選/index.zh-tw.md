@@ -207,7 +207,7 @@ print(f"包含「中獎」的郵件為垃圾郵件的機率: {result:.2%}")
 
 ---
 
-## 4. 夏農熵 (Shannon Entropy)
+## 4. 夏農熵 ([Shannon Entropy](https://kenji.blog/zh-tw/p/information-theory-shannon-entropy/))
 
 ### 公式的優美與概要
 由資訊理論之父克勞德·夏農 (Claude Shannon) 定義的「熵」，是將資訊源所具備的「不確定性」、「混亂度」或「平均資訊量」加以量化的數學公式。

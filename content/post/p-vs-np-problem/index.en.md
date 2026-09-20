@@ -58,7 +58,7 @@ Put simply, they are **"problems where a computer can figure out the answer on i
 ### Representative Problems in Class P
 
 - **Sorting Problem**: Rearranging given numbers in ascending order (e.g., $O(n \log n)$).
-- **Shortest Path Problem**: Finding the shortest route between two points, like a car navigation system (solved in $O(E + V \log V)$ using Dijkstra's algorithm).
+- **Shortest Path Problem**: Finding the shortest route between two points, like a car navigation system (solved in $O(E + V \log V)$ using [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm).
 - **Primality Testing Problem**: Determining whether a certain number is a prime number (proven to be solvable in polynomial time by the AKS primality test).
 
 Below is a Python implementation of the binary search algorithm, a representative example of Class P.

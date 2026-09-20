@@ -160,7 +160,7 @@ As descobertas de [Fibonacci](https://kenji.blog/pt/p/fibonacci/), que viveu há
 
 ### Aplicações na Ciência da Computação
 
-Em algoritmos de computador, a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) é altamente útil. O algoritmo chamado "pesquisa de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)" pode pesquisar dados com mais eficiência do que a pesquisa binária sob condições específicas. Além disso, uma estrutura de dados conhecida como "heap de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)" é indispensável para acelerar algoritmos de teoria dos grafos, como o algoritmo de Dijkstra.
+Em algoritmos de computador, a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) é altamente útil. O algoritmo chamado "pesquisa de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)" pode pesquisar dados com mais eficiência do que a pesquisa binária sob condições específicas. Além disso, uma estrutura de dados conhecida como "heap de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)" é indispensável para acelerar algoritmos de teoria dos grafos, como o algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/).
 
 ### Retração de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) nos Mercados Financeiros
 

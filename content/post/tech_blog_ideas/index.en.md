@@ -304,7 +304,7 @@ Right after learning a new concept, $S$ is small, and as time $t$ passes, $R$ dr
 The software that automatically calculates this optimal review timing using an algorithm (like SuperMemo 2) and presents it as flashcards is "Anki".
 
 A powerful approach for generating tech blog ideas is to **convert the contents of Obsidian's Permanent Notes into Anki flashcards**.
-For example, you register questions related to fundamental technical concepts like "What are the 3 elements of the CAP theorem?" or "Why does a B-Tree index have a search performance of O(log N)?" into Anki and review them as a daily routine. When knowledge is indexed in your brain as long-term memory, while taking a shower or walking, information connects subconsciously, producing a eureka moment like "Ah, I could write an article about consensus algorithms in distributed systems."
+For example, you register questions related to fundamental technical concepts like "What are the 3 elements of the CAP theorem?" or "Why does a [B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/) index have a search performance of O(log N)?" into Anki and review them as a daily routine. When knowledge is indexed in your brain as long-term memory, while taking a shower or walking, information connects subconsciously, producing a eureka moment like "Ah, I could write an article about consensus algorithms in distributed systems."
 
 ## 7. Combinatorial Creativity
 

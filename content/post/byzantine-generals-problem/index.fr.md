@@ -8,7 +8,7 @@ tags: ["Problème des généraux byzantins", "Blockchain", "Consensus", "Algorit
 slug: "byzantine-generals-problem"
 ---
 
-Lorsque l'on étudie les systèmes distribués et la technologie blockchain, on est presque inévitablement confronté au **problème des généraux byzantins** (Byzantine Generals Problem). Ce problème traite d'un thème crucial : comment un système global parvient-il à former un consensus correct lorsqu'il y a des « traîtres » ou des « nœuds défaillants » au sein du réseau ?
+Lorsque l'on étudie les systèmes distribués et la technologie blockchain, on est presque inévitablement confronté au **problème des généraux byzantins** ([Byzantine Generals](https://kenji.blog/fr/p/byzantine-generals-problem-consensus/) Problem). Ce problème traite d'un thème crucial : comment un système global parvient-il à former un consensus correct lorsqu'il y a des « traîtres » ou des « nœuds défaillants » au sein du réseau ?
 
 Dans cet article, nous allons expliquer en détail ce **problème des généraux byzantins**, de ses concepts de base à ses applications, en utilisant des histoires concrètes, des formules mathématiques et des schémas.
 

@@ -23,7 +23,7 @@ Kita, para teknisi, bukanlah sekadar eksistensi yang hanya menulis kode dan memb
 
 # Bab 1: Struktur Matematis "Ruang Gema" dari Perspektif Teori Jaringan
 
-Dalam membahas kesenjangan sosial, pertama-tama kita tidak bisa menghindari analisis struktur komunitas menggunakan "teori jaringan" (Graph Theory). Hubungan manusia di media sosial dapat dimodelkan sebagai grafik raksasa dengan pengguna sebagai "simpul" (node) dan tindakan mengikuti atau interaksi antar pengguna sebagai "tepi" (edge).
+Dalam membahas kesenjangan sosial, pertama-tama kita tidak bisa menghindari analisis struktur komunitas menggunakan "teori jaringan" ([Graph Theory](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)). Hubungan manusia di media sosial dapat dimodelkan sebagai grafik raksasa dengan pengguna sebagai "simpul" (node) dan tindakan mengikuti atau interaksi antar pengguna sebagai "tepi" (edge).
 
 Salah satu indikator paling penting yang menjadi ciri khas perpecahan adalah "Koefisien Pengelompokan" (Clustering Coefficient). Koefisien pengelompokan $C_i$ dari seorang pengguna $i$ menunjukkan probabilitas bahwa teman-teman dari pengguna $i$ juga berteman satu sama lain, dan didefinisikan dengan rumus berikut:
 

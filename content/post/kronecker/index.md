@@ -103,7 +103,7 @@ a_{m1} B & \cdots & a_{mn} B
 \end{pmatrix}
 $$
 
-これは量子情報理論における多体系の記述や、信号処理、機械学習のアルゴリズムにおいても重要な役割を果たしています。
+これは量子[情報理論](https://kenji.blog/p/information-theory-shannon-entropy/)における多体系の記述や、信号処理、機械学習のアルゴリズムにおいても重要な役割を果たしています。
 
 ## 4.3. [クロネッカー](https://kenji.blog/p/kronecker/)・ヴェーバーの定理 ([Kronecker](https://kenji.blog/p/kronecker/)-Weber Theorem)
 

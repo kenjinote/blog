@@ -49,7 +49,7 @@ $$
 
 ---
 
-# 3. グラフ理論とDAG：Git履歴の数学的モデル
+# 3. [グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)とDAG：Git履歴の数学的モデル
 
 Gitのコミット履歴は、グラフ理論における「有向非巡回グラフ（Directed Acyclic Graph, DAG）」としてモデル化されます。
 

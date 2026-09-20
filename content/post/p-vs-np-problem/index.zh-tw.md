@@ -58,7 +58,7 @@ xychart-beta
 ### P類別的代表性問題
 
 - **排序問題**：將給定的數值按升序排列（如 $O(n \log n)$ ）。
-- **最短路徑問題**：像汽車導航一樣，尋找兩點之間的最短路線（使用Dijkstra演算法為 $O(E + V \log V)$ ）。
+- **最短路徑問題**：像汽車導航一樣，尋找兩點之間的最短路線（使用[Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/)演算法為 $O(E + V \log V)$ ）。
 - **質數判定問題**：判定某個數是否為質數（已證明可藉由AKS質數測試在多項式時間內解開）。
 
 以下是P類別代表例，即二元搜尋演算法的Python實作。

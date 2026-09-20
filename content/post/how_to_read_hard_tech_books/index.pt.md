@@ -80,7 +80,7 @@ graph LR
 
 Ao memorizar livros técnicos, não faz sentido "decorar longas provas inteiras". Divida o conhecimento nas menores unidades (Atômicas) e crie cartões a partir delas.
 
-- **Cartão Ruim**: "Escreva toda a prova do Algoritmo de Dijkstra."
+- **Cartão Ruim**: "Escreva toda a prova do Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/)."
 - **Cartão Bom**: "No Algoritmo de Dijkstra, qual é a condição para que a distância mais curta de um certo vértice seja considerada determinada?" → "Quando você escolhe o vértice com a menor distância provisória do conjunto de vértices não determinados."
 - **Cartão Bom**: "Qual é a fórmula do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)?" → "Para um número primo $p$ e um inteiro $a$ coprimo a $p$, $a^{p-1} \equiv 1 \pmod p$"
 
@@ -174,7 +174,7 @@ rsa_demo()
 
 Para encontrar um $d$ que satisfaça a equação $e \cdot d \equiv 1 \pmod{\phi(n)}$, precisamos implementar um algoritmo chamado algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) estendido. Desta forma, **quando você tenta codificar uma fórmula, se depara com a questão de implementação: "como eu calculo especificamente essa variável?", e no processo de resolvê-la, sua compreensão matemática se aprofunda exponencialmente**.
 
-### 4.2 Exemplo Prático 2: Algoritmo de Dijkstra e Relaxamento (Relaxation)
+### 4.2 Exemplo Prático 2: Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) e Relaxamento (Relaxation)
 
 Considere o algoritmo de Dijkstra para resolver o Problema do Caminho Mais Curto de Origem Única (SSSP) na teoria dos grafos.
 

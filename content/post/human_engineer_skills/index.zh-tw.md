@@ -124,7 +124,7 @@ flowchart TD
 
 - **Consistency (一致性)**: 所有節點在同一時間是否能看到相同的資料
 - **Availability (可用性)**: 即使部分節點發生故障，系統是否仍能持續回應
-- **Partition Tolerance (分區容忍性)**: 即使發生網路分區（斷線），系統是否仍能持續運作
+- **[Partition Tolerance](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems/) (分區容忍性)**: 即使發生網路分區（斷線），系統是否仍能持續運作
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

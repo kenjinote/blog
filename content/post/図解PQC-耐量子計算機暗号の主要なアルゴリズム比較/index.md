@@ -66,7 +66,7 @@ PQCアルゴリズムは、その安全性の根拠となる数学的な問題�
 4. **多変数多項式暗号 (Multivariate Polynomial [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    有限体上の多変数連立二次方程式の解を求めること（MQ問題）の困難性に基づきます。主にデジタル署名（Rainbowなど）として提案されましたが、NISTの最終ラウンドの最中にパソコン1台で数日で解読されるという強力な攻撃手法が発見され、多くのアルゴリズムが標準化から脱落しました。
 5. **同種写像暗号 (Isogeny-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
-   楕円曲線の同種写像（Isogeny）グラフ上での経路探索問題に基づきます。鍵サイズが非常に小さく、ECCの正当な後継として期待されていましたが、最終候補であった「SIKE」が2022年に古典的な数学（Castryck-Decru攻撃など）を用いて通常のPCでわずか数時間で完全に解読されてしまい、PQC設計の難しさと恐ろしさを象徴する劇的な幕引きとなりました。
+   楕円曲線の同種写像（Isogeny）グラフ上での[経路探索](https://kenji.blog/p/graph-theory-dijkstra-a-star/)問題に基づきます。鍵サイズが非常に小さく、ECCの正当な後継として期待されていましたが、最終候補であった「SIKE」が2022年に古典的な数学（Castryck-Decru攻撃など）を用いて通常のPCでわずか数時間で完全に解読されてしまい、PQC設計の難しさと恐ろしさを象徴する劇的な幕引きとなりました。
 
 ---
 

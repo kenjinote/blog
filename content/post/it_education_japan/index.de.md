@@ -134,7 +134,7 @@ Datenbankoperationen sind durch die folgenden Grundoperationen definiert, die au
 - Projektion (Projection, $\pi$): Extrahieren bestimmter Attribute (Spalten)
 - Join ($\bowtie$): Bedingte Schnittmenge mehrerer Relationen
 
-Darüber hinaus ist das Erlernen der Struktur von „B-Tree (B-Baum)-Indizes“, mit denen man gewünschte Daten in großen Mengen an Datensätzen sofort durchsuchen kann, die beste praktische Anwendung von Datenstrukturen. B-Bäume garantieren eine Suchgeschwindigkeit von $O(\log N)$ bei gleichzeitiger Minimierung der Anzahl an Festplatten-I/Os. Ohne Kenntnis der ACID-Eigenschaften von Transaktionen (Atomicity, Consistency, Isolation, Durability) kann man kein robustes System aufbauen.
+Darüber hinaus ist das Erlernen der Struktur von „[B-Tree](https://kenji.blog/de/p/b-tree-database-index-theory/) (B-Baum)-Indizes“, mit denen man gewünschte Daten in großen Mengen an Datensätzen sofort durchsuchen kann, die beste praktische Anwendung von Datenstrukturen. B-Bäume garantieren eine Suchgeschwindigkeit von $O(\log N)$ bei gleichzeitiger Minimierung der Anzahl an Festplatten-I/Os. Ohne Kenntnis der ACID-Eigenschaften von Transaktionen (Atomicity, Consistency, Isolation, Durability) kann man kein robustes System aufbauen.
 
 ## 6. Sicherheit und Kryptographie: Eine soziale Infrastruktur, die auf der Schwierigkeit der Primfaktorzerlegung basiert
 

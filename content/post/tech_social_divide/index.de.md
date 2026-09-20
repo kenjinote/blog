@@ -23,7 +23,7 @@ Wir Ingenieure sind nicht nur dazu da, Code zu schreiben und Systeme zu bauen. H
 
 # Kapitel 1: Die mathematische Struktur der "Echokammer" aus Sicht der Netzwerktheorie
 
-Wenn man über gesellschaftliche Spaltung diskutiert, kommt man um die Strukturanalyse von Gemeinschaften mithilfe der "Netzwerktheorie" (Graph Theory) nicht herum. Menschliche Beziehungen in sozialen Medien lassen sich als riesiger Graph modellieren, bei dem die Nutzer als "Knoten" (Nodes) und die Verbindungen oder Interaktionen zwischen ihnen als "Kanten" (Edges) fungieren.
+Wenn man über gesellschaftliche Spaltung diskutiert, kommt man um die Strukturanalyse von Gemeinschaften mithilfe der "Netzwerktheorie" ([Graph Theory](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)) nicht herum. Menschliche Beziehungen in sozialen Medien lassen sich als riesiger Graph modellieren, bei dem die Nutzer als "Knoten" (Nodes) und die Verbindungen oder Interaktionen zwischen ihnen als "Kanten" (Edges) fungieren.
 
 Einer der wichtigsten Indikatoren, der die Spaltung charakterisiert, ist der "Clusterkoeffizient" (Clustering Coefficient). Der Clusterkoeffizient $C_i$ eines Nutzers $i$ gibt die Wahrscheinlichkeit an, dass die Freunde von Nutzer $i$ auch untereinander befreundet sind, und wird durch die folgende Formel definiert:
 

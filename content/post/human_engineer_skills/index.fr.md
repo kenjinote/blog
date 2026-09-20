@@ -124,7 +124,7 @@ Lors de la conception de systèmes distribués, les ingénieurs sont constamment
 
 - **Consistency (Cohérence)** : Tous les nœuds voient-ils les mêmes données au même moment ?
 - **Availability (Disponibilité)** : Le système continue-t-il de répondre même si certains nœuds tombent en panne ?
-- **Partition Tolerance (Tolérance au partitionnement)** : Le système continue-t-il de fonctionner même s'il y a une rupture du réseau ?
+- **[Partition Tolerance](https://kenji.blog/fr/p/cap-theorem-distributed-systems/) (Tolérance au partitionnement)** : Le système continue-t-il de fonctionner même s'il y a une rupture du réseau ?
 
 $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 

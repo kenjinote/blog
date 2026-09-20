@@ -207,7 +207,7 @@ Pada implementasi aktual (pengklasifikasi Naive Bayes), probabilitas dihitung de
 
 ---
 
-## 4. Entropi Shannon (Shannon Entropy)
+## 4. Entropi Shannon ([Shannon Entropy](https://kenji.blog/id/p/information-theory-shannon-entropy/))
 
 ### Keindahan Rumus dan Gambaran Umum
 "Entropi" yang didefinisikan oleh bapak teori informasi, Claude Shannon, adalah rumus yang mengukur "ketidakpastian", "keacakan", atau "jumlah rata-rata informasi" dari sebuah sumber informasi.

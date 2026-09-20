@@ -11,7 +11,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 Na programação competitiva (maratona de programação), a teoria dos grafos e seus algoritmos são um dos temas mais importantes que não podem ser evitados. Muitos dos problemas apresentados em competições como AtCoder, Codeforces e TopCoder têm uma estrutura de grafo por trás deles. Servem como uma arma poderosa para abstrair e resolver problemas do mundo real, como o caminho mais curto de uma rede rodoviária, a minimização do custo de comunicação de uma rede e a resolução de dependências de tarefas.
 
-Neste artigo, cobriremos de forma abrangente os principais algoritmos de grafos que aparecem frequentemente em programação competitiva (Ordenação Topológica, Algoritmo de Dijkstra, Algoritmo de Bellman-Ford, Algoritmo de Floyd-Warshall, Algoritmo de Kruskal, Algoritmo de Prim e Decomposição em Componentes Fortemente Conexos). Incluiremos o seu contexto teórico, a avaliação da complexidade computacional usando fórmulas matemáticas e exemplos de implementação altamente otimizados em C++ moderno (C++17/20). Este é um verdadeiro guia "completo", entregue em um grande volume de cerca de 10.000 caracteres!
+Neste artigo, cobriremos de forma abrangente os principais algoritmos de grafos que aparecem frequentemente em programação competitiva (Ordenação Topológica, Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/), Algoritmo de Bellman-Ford, Algoritmo de Floyd-Warshall, Algoritmo de Kruskal, Algoritmo de Prim e Decomposição em Componentes Fortemente Conexos). Incluiremos o seu contexto teórico, a avaliação da complexidade computacional usando fórmulas matemáticas e exemplos de implementação altamente otimizados em C++ moderno (C++17/20). Este é um verdadeiro guia "completo", entregue em um grande volume de cerca de 10.000 caracteres!
 
 ---
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 Este é o problema de encontrar o caminho mais curto de um ponto de origem para todos os outros vértices. O algoritmo aplicável difere dependendo se os pesos das arestas são não-negativos ou se existem pesos negativos.
 
-### Algoritmo de Dijkstra (Dijkstra's Algorithm)
+### Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) (Dijkstra's Algorithm)
 
 O algoritmo de Dijkstra é um algoritmo de caminho mais curto rápido aplicável quando **todos os pesos das arestas são não-negativos**. Baseia-se em uma abordagem gulosa: "fixar o vértice com a menor distância atual conhecida e atualizar (relaxar) a distância para os vértices adjacentes a partir desse vértice".
 
@@ -121,7 +121,7 @@ graph TD
     A["Vértice A(2)"] -- 4 --> C["Vértice C(6)"]
     B["Vértice B(3)"] -- 1 --> C["Vértice C(4)"]
 ```
-Como na figura acima, o custo direto de S para B é 5, mas pode-se alcançá-lo com custo 3 passando por A. O algoritmo de Dijkstra realiza otimizações dessa maneira.
+Como na figura acima, o custo direto de S para B é 5, mas pode-se alcançá-lo com custo 3 passando por A. O algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) realiza otimizações dessa maneira.
 
 #### Exemplo de Implementação em C++
 
@@ -170,7 +170,7 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
     return dist;
 }
 ```
-A declaração `if (dist[u] < d) continue;` é extremamente importante. No algoritmo de Dijkstra, o mesmo vértice pode ser inserido na fila várias vezes, mas essa verificação poda explorações desnecessárias.
+A declaração `if (dist[u] < d) continue;` é extremamente importante. No algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/), o mesmo vértice pode ser inserido na fila várias vezes, mas essa verificação poda explorações desnecessárias.
 
 ### Algoritmo de Bellman-Ford (Bellman-Ford Algorithm)
 
@@ -356,7 +356,7 @@ long long kruskal(int V, vector<Edge>& edges) {
 
 ### Algoritmo de Prim (Prim's Algorithm)
 
-Ele segue uma abordagem muito semelhante ao algoritmo de Dijkstra. Começando em um vértice, ele escolhe sucessivamente a aresta de menor peso conectada diretamente da árvore já formada para aumentar a árvore.
+Ele segue uma abordagem muito semelhante ao algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/). Começando em um vértice, ele escolhe sucessivamente a aresta de menor peso conectada diretamente da árvore já formada para aumentar a árvore.
 
 A complexidade computacional ao usar uma fila de prioridade é $O((V + E) \log V)$. No caso de grafos densos (grafos com muitas arestas), a implementação baseada em array do algoritmo de Prim com $O(V^2)$ pode ser mais rápida que a do algoritmo de Kruskal.
 
@@ -505,7 +505,7 @@ Neste artigo, revisamos os algoritmos de grafos mais comuns que aparecem em prog
 As dicas para melhorar na resolução de problemas de grafos são **"implementar repetidamente até se tornar um hábito"** e **"treinar para pensar em qual grafo este problema pode ser reduzido (o que são os vértices, o que são as arestas)"**.
 
 1. Primeiro, seja capaz de escrever DFS / BFS de forma rápida e sem erros.
-2. Em seguida, seja capaz de escrever o algoritmo de Dijkstra e o algoritmo de Kruskal de cor (essencial nas classificações Marrom a Verde do AtCoder).
+2. Em seguida, seja capaz de escrever o algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) e o algoritmo de Kruskal de cor (essencial nas classificações Marrom a Verde do AtCoder).
 3. Por fim, expanda seu repertório com algoritmos como Bellman-Ford, Floyd-Warshall, Ordenação Topológica, SCC, etc. (uma arma nas classificações Azul claro a Azul do AtCoder).
 
 Recomendamos vivamente que os transforme numa biblioteca como snippets de código (salvando-os numa ferramenta de snippets ou no seu próprio repositório GitHub) para que possa chamá-los sem hesitação durante um concurso real.

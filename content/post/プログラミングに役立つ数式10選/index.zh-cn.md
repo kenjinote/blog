@@ -207,7 +207,7 @@ print(f"包含“中奖”一词的邮件是垃圾邮件的概率: {result:.2%}"
 
 ---
 
-## 4. 香农熵 (Shannon Entropy)
+## 4. 香农熵 ([Shannon Entropy](https://kenji.blog/zh-cn/p/information-theory-shannon-entropy/))
 
 ### 公式的优美性与概述
 由信息论之父克劳德·香农定义的“熵”，是一个量化信息源所具有的“不确定性”、“混乱度”或者“平均信息量”的数学公式。

@@ -80,7 +80,7 @@ graph LR
 
 在记忆技术书时，“死记硬背长篇证明”是毫无意义的。应该将知识分割成最小单元（Atomic）制成卡片。
 
-- **糟糕的卡片**: “写下 Dijkstra 算法的全部证明”
+- **糟糕的卡片**: “写下 [Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/) 算法的全部证明”
 - **优秀的卡片**: “在 Dijkstra 算法中，可以认为某个顶点的最短距离已经确定的条件是什么？”→“在未确定的顶点集合中，选择当前暂定距离最小的顶点时。”
 - **优秀的卡片**: “写出[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的公式”→“对于素数 $p$ 和互素的整数 $a$， $a^{p-1} \equiv 1 \pmod p$”
 
@@ -173,7 +173,7 @@ rsa_demo()
 
 为了找到满足公式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ 的 $d$，我们需要实现名为扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)的算法。像这样， **当尝试将公式代码化时，我们会面临“这个变量具体该如何计算？”的实现难题，而在解决这些难题的过程中，数学理解会得到飞跃性的加深。**
 
-### 4.2 实例2：Dijkstra 算法与松弛（Relaxation）
+### 4.2 实例2：[Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/) 算法与松弛（Relaxation）
 
 考虑图论中用于解决单源最短路径问题（SSSP）的 Dijkstra 算法。
 

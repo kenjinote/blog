@@ -80,7 +80,7 @@ graph LR
 
 Dalam menghafal buku teknis, "menghafal pembuktian panjang secara utuh" adalah hal yang sia-sia. Bagilah pengetahuan menjadi unit terkecil (Atomic) sebelum dijadikan kartu.
 
-- **Kartu yang buruk**: "Tulis seluruh pembuktian Algoritma Dijkstra."
+- **Kartu yang buruk**: "Tulis seluruh pembuktian Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)."
 - **Kartu yang baik**: "Dalam Algoritma Dijkstra, apa syarat agar jarak terpendek sebuah simpul dianggap sudah pasti?" → "Ketika simpul dengan jarak sementara terkecil dipilih dari himpunan simpul yang belum pasti."
 - **Kartu yang baik**: "Sebutkan rumus [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)." → "Untuk bilangan prima $p$ dan bilangan bulat $a$ yang saling prima, $a^{p-1} \equiv 1 \pmod p$."
 
@@ -173,7 +173,7 @@ rsa_demo()
 
 Untuk menemukan $d$ yang memenuhi rumus $e \cdot d \equiv 1 \pmod{\phi(n)}$, kita perlu mengimplementasikan algoritma yang disebut [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Lanjutan. Dengan cara ini, **ketika Anda mencoba menerjemahkan rumus matematika ke dalam kode, Anda akan dihadapkan pada tantangan implementasi "bagaimana secara spesifik menghitung variabel ini?", dan dalam proses memecahkannya, pemahaman matematis Anda akan menjadi jauh lebih dalam**.
 
-### 4.2 Contoh 2: Algoritma Dijkstra dan Relaksasi (Relaxation)
+### 4.2 Contoh 2: Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) dan Relaksasi (Relaxation)
 
 Mari kita pertimbangkan Algoritma Dijkstra untuk menyelesaikan masalah lintasan terpendek dari sumber tunggal (SSSP) dalam teori graf.
 
