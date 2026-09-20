@@ -98,18 +98,18 @@ A robustez do Bitcoin é sustentada por bases matemáticas avançadas. Aqui, nos
 
 A função de hash criptográfica mais frequentemente usada no Bitcoin é a **SHA-256**. Uma função de hash é uma função unidirecional que recebe dados de qualquer tamanho como entrada e gera dados de tamanho fixo (256 bits no caso do SHA-256).
 
-A função de hash $$H$$ deve satisfazer as seguintes propriedades:
-1. **Unidirecionalidade (Pre-image resistance)**: Dado um valor de hash $$h$$, é computacionalmente difícil encontrar uma entrada $$x$$ tal que $$H(x) = h$$.
-2. **Resistência à segunda pré-imagem (Second pre-image resistance)**: Dada uma entrada $$x_1$$, é difícil encontrar outra entrada $$x_2$$ tal que $$H(x_1) = H(x_2)$$.
-3. **Resistência forte à colisão (Collision resistance)**: É difícil encontrar quaisquer duas entradas $$x_1, x_2$$ tais que $$H(x_1) = H(x_2)$$.
+A função de hash $H$ deve satisfazer as seguintes propriedades:
+1. **Unidirecionalidade (Pre-image resistance)**: Dado um valor de hash $h$, é computacionalmente difícil encontrar uma entrada $x$ tal que $H(x) = h$.
+2. **Resistência à segunda pré-imagem (Second pre-image resistance)**: Dada uma entrada $x_1$, é difícil encontrar outra entrada $x_2$ tal que $H(x_1) = H(x_2)$.
+3. **Resistência forte à colisão (Collision resistance)**: É difícil encontrar quaisquer duas entradas $x_1, x_2$ tais que $H(x_1) = H(x_2)$.
 
 No Bitcoin, o SHA-256 é aplicado duplamente em processos como o cálculo de hashes de blocos e a geração de endereços a partir de chaves públicas (isso é chamado de `SHA256(SHA256(x))` ou Hash256).
 
 ### Criptografia de Chave Pública (Public Key Cryptography) e Assinaturas Digitais
 
 A propriedade das criptomoedas é provada por um par de Chave Privada (Private Key) e Chave Pública (Public Key).
-- **Chave Privada** $$k$$: Um número inteiro de 256 bits gerado aleatoriamente. Absolutamente não deve ser conhecida por outros.
-- **Chave Pública** $$K$$: Uma chave calculada a partir da chave privada usando uma função unidirecional. É publicada na rede.
+- **Chave Privada** $k$: Um número inteiro de 256 bits gerado aleatoriamente. Absolutamente não deve ser conhecida por outros.
+- **Chave Pública** $K$: Uma chave calculada a partir da chave privada usando uma função unidirecional. É publicada na rede.
 
 Quando Alice envia Bitcoin para Bob, Alice usa sua chave privada para criar uma **Assinatura Digital (Digital Signature)** para os dados da transação. Os participantes da rede podem usar a chave pública de Alice para verificar se a assinatura é válida (se Alice realmente a criou usando sua chave privada).
 
@@ -117,41 +117,41 @@ Quando Alice envia Bitcoin para Bob, Alice usa sua chave privada para criar uma 
 
 Para a geração de chaves públicas e assinaturas digitais no Bitcoin, em vez da criptografia RSA, a **Criptografia de Curva Elíptica (ECC)** é adotada. A ECC tem a vantagem de fornecer um nível de segurança equivalente com um tamanho de chave muito menor em comparação com o RSA.
 
-Os parâmetros específicos da curva elíptica usados no Bitcoin são chamados de **secp256k1**. Esta curva é definida sobre um corpo finito $$\mathbb{F}_p$$ e é expressa pela seguinte equação:
+Os parâmetros específicos da curva elíptica usados no Bitcoin são chamados de **secp256k1**. Esta curva é definida sobre um corpo finito $\mathbb{F}_p$ e é expressa pela seguinte equação:
 
 $$
 y^2 \equiv x^3 + 7 \pmod{p}
 $$
 
-Aqui, $$p$$ é um número primo muito grande:
+Aqui, $p$ é um número primo muito grande:
 $$
 p = 2^{256} - 2^{32} - 2^{9} - 2^{8} - 2^{7} - 2^{6} - 2^{4} - 1
 $$
 
-A chave privada $$k$$ é um número aleatório no intervalo de $$1$$ a $$n-1$$ ($$n$$ é a ordem da curva). A chave pública $$K$$ é obtida multiplicando-se por escalar um determinado ponto base (Generator Point) $$G$$ na curva pelo número de vezes da chave privada.
+A chave privada $k$ é um número aleatório no intervalo de $1$ a $n-1$ ($n$ é a ordem da curva). A chave pública $K$ é obtida multiplicando-se por escalar um determinado ponto base (Generator Point) $G$ na curva pelo número de vezes da chave privada.
 
 $$
 K = k \cdot G
 $$
 
-Este cálculo pode ser feito eficientemente repetindo-se a Adição de Pontos (Point Addition) e a Duplicação de Pontos (Point Doubling) na curva elíptica. No entanto, reversamente, calcular a chave privada $$k$$ a partir da chave pública $$K$$ e do ponto base $$G$$ é um problema computacionalmente extremamente difícil chamado de **Problema do Logaritmo Discreto em Curvas Elípticas (Elliptic Curve Discrete Logarithm Problem: ECDLP)**, que constitui o núcleo da segurança das criptomoedas.
+Este cálculo pode ser feito eficientemente repetindo-se a Adição de Pontos (Point Addition) e a Duplicação de Pontos (Point Doubling) na curva elíptica. No entanto, reversamente, calcular a chave privada $k$ a partir da chave pública $K$ e do ponto base $G$ é um problema computacionalmente extremamente difícil chamado de **Problema do Logaritmo Discreto em Curvas Elípticas (Elliptic Curve Discrete Logarithm Problem: ECDLP)**, que constitui o núcleo da segurança das criptomoedas.
 
 ### ECDSA (Elliptic Curve Digital Signature Algorithm)
 
-**ECDSA** é usado para assinaturas de transações. O processo de assinatura quando a mensagem (hash da transação) é $$z$$ é o seguinte:
+**ECDSA** é usado para assinaturas de transações. O processo de assinatura quando a mensagem (hash da transação) é $z$ é o seguinte:
 
-1. Selecionar um número inteiro aleatório $$k_e$$ (chave efêmera) de $$1$$ a $$n-1$$.
-2. Calcular o ponto na curva $$(x_1, y_1) = k_e \cdot G$$.
-3. Calcular $$r = x_1 \pmod{n}$$. Se $$r = 0$$, retorne ao passo 1.
-4. Calcular $$s = k_e^{-1} (z + r \cdot k) \pmod{n}$$. Se $$s = 0$$, retorne ao passo 1.
-5. A assinatura será o par $$(r, s)$$.
+1. Selecionar um número inteiro aleatório $k_e$ (chave efêmera) de $1$ a $n-1$.
+2. Calcular o ponto na curva $(x_1, y_1) = k_e \cdot G$.
+3. Calcular $r = x_1 \pmod{n}$. Se $r = 0$, retorne ao passo 1.
+4. Calcular $s = k_e^{-1} (z + r \cdot k) \pmod{n}$. Se $s = 0$, retorne ao passo 1.
+5. A assinatura será o par $(r, s)$.
 
-No processo de verificação, os seguintes cálculos são realizados usando a chave pública $$K$$ e a assinatura $$(r, s)$$:
+No processo de verificação, os seguintes cálculos são realizados usando a chave pública $K$ e a assinatura $(r, s)$:
 
-1. $$u_1 = z \cdot s^{-1} \pmod{n}$$
-2. $$u_2 = r \cdot s^{-1} \pmod{n}$$
-3. Calcular o ponto $$(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$$.
-4. Se $$r \equiv x_2 \pmod{n}$$, a assinatura é considerada válida.
+1. $u_1 = z \cdot s^{-1} \pmod{n}$
+2. $u_2 = r \cdot s^{-1} \pmod{n}$
+3. Calcular o ponto $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
+4. Se $r \equiv x_2 \pmod{n}$, a assinatura é considerada válida.
 
 ## 5. Algoritmo de Consenso e Proof of Work (PoW)
 
@@ -173,7 +173,7 @@ $$
 
 Como a saída da função de hash parece completamente aleatória, não existe um algoritmo eficiente para encontrar um Nonce que satisfaça a condição. O único método é um ataque de força bruta (Brute-force) alterando repetidamente o valor do Nonce e repetindo o cálculo do hash.
 
-Quanto menor for o valor do alvo, menor será a probabilidade de encontrar um hash que satisfaça a condição. Se o alvo for um valor que exija $$k$$ zeros no início, o número médio de cálculos necessários para encontrar esse bloco será $$2^k$$. É a injeção dessa enorme energia computacional que torna impossível adulterar os registros passados da blockchain.
+Quanto menor for o valor do alvo, menor será a probabilidade de encontrar um hash que satisfaça a condição. Se o alvo for um valor que exija $k$ zeros no início, o número médio de cálculos necessários para encontrar esse bloco será $2^k$. É a injeção dessa enorme energia computacional que torna impossível adulterar os registros passados da blockchain.
 
 ### Ajuste de Dificuldade (Difficulty Adjustment)
 
@@ -241,19 +241,19 @@ Por trás do SHA-256 e da Criptografia de Curva Elíptica (ECC) explicados nos c
 A segurança computacional é a segurança baseada na premissa de que "para decifrar uma certa criptografia, seria necessário mais tempo do que a vida do universo e recursos computacionais astronômicos, portanto é praticamente indecifrável".
 
 Vamos reconfirmar o Problema do Logaritmo Discreto em Curvas Elípticas (ECDLP) que garante a segurança da criptografia de chave pública do Bitcoin com uma fórmula.
-O problema é encontrar o inteiro desconhecido $$k$$ que satisfaça $$Q = kP$$, onde os pontos $$P$$ e $$Q$$ estão em uma curva elíptica $$E(\mathbb{F}_p)$$.
-Quando se utiliza um computador clássico, a complexidade de tempo do melhor algoritmo para resolver esse problema (como o método $$\rho$$ de Pollard) é $$\mathcal{O}(\sqrt{p})$$.
-Na secp256k1 do Bitcoin, como $$p \approx 2^{256}$$, são necessárias cerca de $$2^{128}$$ operações para decifrá-la. Esta é uma quantidade de cálculos que levaria trilhões de vezes mais do que a vida do universo (cerca de 13,8 bilhões de anos), mesmo que todos os computadores na Terra hoje fossem mobilizados.
+O problema é encontrar o inteiro desconhecido $k$ que satisfaça $Q = kP$, onde os pontos $P$ e $Q$ estão em uma curva elíptica $E(\mathbb{F}_p)$.
+Quando se utiliza um computador clássico, a complexidade de tempo do melhor algoritmo para resolver esse problema (como o método $\rho$ de Pollard) é $\mathcal{O}(\sqrt{p})$.
+Na secp256k1 do Bitcoin, como $p \approx 2^{256}$, são necessárias cerca de $2^{128}$ operações para decifrá-la. Esta é uma quantidade de cálculos que levaria trilhões de vezes mais do que a vida do universo (cerca de 13,8 bilhões de anos), mesmo que todos os computadores na Terra hoje fossem mobilizados.
 
 ### A Ameaça dos Computadores Quânticos e a Criptografia Pós-Quântica
 
 No entanto, há uma grande preocupação com a segurança computacional. Essa é a ascensão dos **Computadores Quânticos (Quantum Computers)**.
-O "Algoritmo de Shor" (Shor's Algorithm), publicado por Peter Shor em 1994, provou matematicamente que o uso de computadores quânticos pode resolver o problema de fatoração de primos (a base da criptografia RSA) e o problema do logaritmo discreto (a base da ECC) em tempo polinomial $$\mathcal{O}(n^3)$$.
+O "Algoritmo de Shor" (Shor's Algorithm), publicado por Peter Shor em 1994, provou matematicamente que o uso de computadores quânticos pode resolver o problema de fatoração de primos (a base da criptografia RSA) e o problema do logaritmo discreto (a base da ECC) em tempo polinomial $\mathcal{O}(n^3)$.
 
 Se for concluído um computador quântico prático em larga escala com Qubits suficientes e baixa taxa de erro, haverá o risco de que chaves privadas sejam calculadas retroativamente a partir das chaves públicas do Bitcoin.
 As defesas da rede Bitcoin contra isso são as seguintes:
 
-1. **Proteção de Funções de Hash**: Um endereço Bitcoin não é a própria chave pública, mas o resultado da aplicação das funções de hash SHA-256 e RIPEMD-160 à chave pública. Mesmo com um computador quântico, o cálculo inverso da função de hash (mesmo usando o algoritmo de Grover, a complexidade é $$\mathcal{O}(\sqrt{N})$$) continua sendo difícil. Portanto, até que uma transação seja feita e a chave pública seja exposta à rede, o conteúdo do endereço é considerado seguro mesmo contra computadores quânticos.
+1. **Proteção de Funções de Hash**: Um endereço Bitcoin não é a própria chave pública, mas o resultado da aplicação das funções de hash SHA-256 e RIPEMD-160 à chave pública. Mesmo com um computador quântico, o cálculo inverso da função de hash (mesmo usando o algoritmo de Grover, a complexidade é $\mathcal{O}(\sqrt{N})$) continua sendo difícil. Portanto, até que uma transação seja feita e a chave pública seja exposta à rede, o conteúdo do endereço é considerado seguro mesmo contra computadores quânticos.
 2. **Transição para Criptografia Pós-Quântica (Post-Quantum Cryptography: PQC)**: Antes que os computadores quânticos sejam colocados em uso prático, o protocolo do Bitcoin seria bifurcado (hard fork) e discutido para mudar para um novo algoritmo de assinatura que seja difícil de ser decifrado por computadores quânticos, como a criptografia baseada em reticulados (Lattice-based cryptography) ou criptografia polinomial multivariável (Multivariate polynomial cryptography) selecionadas pelo NIST (Instituto Nacional de Padrões e Tecnologia dos EUA).
 
 ## 9. Topologia de Rede e Detalhes do Protocolo P2P

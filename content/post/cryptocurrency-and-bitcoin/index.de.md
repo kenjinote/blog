@@ -98,18 +98,18 @@ Die Robustheit von Bitcoin wird durch fortschrittliche mathematische Grundlagen 
 
 Die am häufigsten in Bitcoin verwendete kryptografische Hash-Funktion ist **SHA-256**. Eine Hash-Funktion ist eine Einwegfunktion, die Daten beliebiger Länge als Eingabe nimmt und Daten fester Länge (bei SHA-256 sind das 256 Bit) ausgibt.
 
-Eine Hash-Funktion $$H$$ muss die folgenden Eigenschaften erfüllen:
-1. **Urbildresistenz (Pre-image resistance)**: Es muss rechnerisch unmöglich sein, aus einem gegebenen Hash-Wert $$h$$ eine Eingabe $$x$$ zu finden, für die $$H(x) = h$$ gilt.
-2. **Schwache Kollisionsresistenz (Second pre-image resistance)**: Es muss rechnerisch unmöglich sein, für eine gegebene Eingabe $$x_1$$ eine andere Eingabe $$x_2$$ zu finden, sodass $$H(x_1) = H(x_2)$$ gilt.
-3. **Starke Kollisionsresistenz (Collision resistance)**: Es muss rechnerisch unmöglich sein, zwei beliebige Eingaben $$x_1$$ und $$x_2$$ zu finden, sodass $$H(x_1) = H(x_2)$$ gilt.
+Eine Hash-Funktion $H$ muss die folgenden Eigenschaften erfüllen:
+1. **Urbildresistenz (Pre-image resistance)**: Es muss rechnerisch unmöglich sein, aus einem gegebenen Hash-Wert $h$ eine Eingabe $x$ zu finden, für die $H(x) = h$ gilt.
+2. **Schwache Kollisionsresistenz (Second pre-image resistance)**: Es muss rechnerisch unmöglich sein, für eine gegebene Eingabe $x_1$ eine andere Eingabe $x_2$ zu finden, sodass $H(x_1) = H(x_2)$ gilt.
+3. **Starke Kollisionsresistenz (Collision resistance)**: Es muss rechnerisch unmöglich sein, zwei beliebige Eingaben $x_1$ und $x_2$ zu finden, sodass $H(x_1) = H(x_2)$ gilt.
 
 Bei Bitcoin wird SHA-256 doppelt angewendet, zum Beispiel bei der Berechnung von Block-Hashes oder der Generierung von Adressen aus öffentlichen Schlüsseln (dies wird `SHA256(SHA256(x))` oder Hash256 genannt).
 
 ### Public-Key-Kryptografie (Asymmetrische Kryptosysteme) und digitale Signaturen
 
 Der Besitz von Kryptowährungen wird durch ein Paar aus einem privaten Schlüssel (Private Key) und einem öffentlichen Schlüssel (Public Key) bewiesen.
-- **Privater Schlüssel** $$k$$: Eine zufällig generierte 256-Bit-Ganzzahl. Er darf niemals anderen bekannt gegeben werden.
-- **Öffentlicher Schlüssel** $$K$$: Ein Schlüssel, der aus dem privaten Schlüssel mithilfe einer Einwegfunktion berechnet wird. Er wird im Netzwerk veröffentlicht.
+- **Privater Schlüssel** $k$: Eine zufällig generierte 256-Bit-Ganzzahl. Er darf niemals anderen bekannt gegeben werden.
+- **Öffentlicher Schlüssel** $K$: Ein Schlüssel, der aus dem privaten Schlüssel mithilfe einer Einwegfunktion berechnet wird. Er wird im Netzwerk veröffentlicht.
 
 Wenn Alice Bitcoins an Bob sendet, erstellt Alice eine **digitale Signatur (Digital Signature)** für die Transaktionsdaten mit ihrem eigenen privaten Schlüssel. Die Netzwerkteilnehmer können Alices öffentlichen Schlüssel verwenden, um zu überprüfen, ob die Signatur gültig ist (ob sie wirklich von Alice mit ihrem privaten Schlüssel erstellt wurde).
 
@@ -117,41 +117,41 @@ Wenn Alice Bitcoins an Bob sendet, erstellt Alice eine **digitale Signatur (Digi
 
 Für die Erstellung öffentlicher Schlüssel und digitale Signaturen bei Bitcoin wird nicht die RSA-Kryptografie, sondern die **elliptische Kurvenkryptografie (ECC)** verwendet. ECC bietet den Vorteil, bei deutlich kürzerer Schlüssellänge ein vergleichbares Sicherheitsniveau wie RSA zu bieten.
 
-Die spezifischen Parameter der bei Bitcoin verwendeten elliptischen Kurve werden **secp256k1** genannt. Diese Kurve ist über einem endlichen Körper $$\mathbb{F}_p$$ definiert und wird durch die folgende Gleichung dargestellt:
+Die spezifischen Parameter der bei Bitcoin verwendeten elliptischen Kurve werden **secp256k1** genannt. Diese Kurve ist über einem endlichen Körper $\mathbb{F}_p$ definiert und wird durch die folgende Gleichung dargestellt:
 
 $$
 y^2 \equiv x^3 + 7 \pmod{p}
 $$
 
-Hierbei ist $$p$$ eine sehr große Primzahl:
+Hierbei ist $p$ eine sehr große Primzahl:
 $$
 p = 2^{256} - 2^{32} - 2^{9} - 2^{8} - 2^{7} - 2^{6} - 2^{4} - 1
 $$
 
-Der private Schlüssel $$k$$ ist eine Zufallszahl im Bereich von $$1$$ bis $$n-1$$ (wobei $$n$$ die Ordnung der Kurve ist). Der öffentliche Schlüssel $$K$$ wird durch skalare Multiplikation eines bestimmten Basispunktes (Generator Point) $$G$$ auf der Kurve mit dem privaten Schlüssel berechnet.
+Der private Schlüssel $k$ ist eine Zufallszahl im Bereich von $1$ bis $n-1$ (wobei $n$ die Ordnung der Kurve ist). Der öffentliche Schlüssel $K$ wird durch skalare Multiplikation eines bestimmten Basispunktes (Generator Point) $G$ auf der Kurve mit dem privaten Schlüssel berechnet.
 
 $$
 K = k \cdot G
 $$
 
-Diese Berechnung kann effizient durch wiederholte Punktaddition (Point Addition) und Punktverdopplung (Point Doubling) auf der elliptischen Kurve durchgeführt werden. Die umgekehrte Berechnung des privaten Schlüssels $$k$$ aus dem öffentlichen Schlüssel $$K$$ und dem Basispunkt $$G$$ ist jedoch ein rechnerisch extrem schwieriges Problem, das als **Elliptische-Kurven-Diskreter-Logarithmus-Problem (Elliptic Curve Discrete Logarithm Problem: ECDLP)** bezeichnet wird. Dies bildet den Kern der Sicherheit von Kryptowährungen.
+Diese Berechnung kann effizient durch wiederholte Punktaddition (Point Addition) und Punktverdopplung (Point Doubling) auf der elliptischen Kurve durchgeführt werden. Die umgekehrte Berechnung des privaten Schlüssels $k$ aus dem öffentlichen Schlüssel $K$ und dem Basispunkt $G$ ist jedoch ein rechnerisch extrem schwieriges Problem, das als **Elliptische-Kurven-Diskreter-Logarithmus-Problem (Elliptic Curve Discrete Logarithm Problem: ECDLP)** bezeichnet wird. Dies bildet den Kern der Sicherheit von Kryptowährungen.
 
 ### ECDSA (Elliptic Curve Digital Signature Algorithm)
 
-Für das Signieren von Transaktionen wird **ECDSA** verwendet. Wenn die Nachricht (der Hash der Transaktion) $$z$$ ist, verläuft der Signaturprozess wie folgt:
+Für das Signieren von Transaktionen wird **ECDSA** verwendet. Wenn die Nachricht (der Hash der Transaktion) $z$ ist, verläuft der Signaturprozess wie folgt:
 
-1. Wähle eine zufällige Ganzzahl $$k_e$$ (Ephemeral Key) zwischen $$1$$ und $$n-1$$.
-2. Berechne den Punkt auf der Kurve $$(x_1, y_1) = k_e \cdot G$$.
-3. Berechne $$r = x_1 \pmod{n}$$. Wenn $$r = 0$$, kehre zu Schritt 1 zurück.
-4. Berechne $$s = k_e^{-1} (z + r \cdot k) \pmod{n}$$. Wenn $$s = 0$$, kehre zu Schritt 1 zurück.
-5. Die Signatur ist das Paar $$(r, s)$$.
+1. Wähle eine zufällige Ganzzahl $k_e$ (Ephemeral Key) zwischen $1$ und $n-1$.
+2. Berechne den Punkt auf der Kurve $(x_1, y_1) = k_e \cdot G$.
+3. Berechne $r = x_1 \pmod{n}$. Wenn $r = 0$, kehre zu Schritt 1 zurück.
+4. Berechne $s = k_e^{-1} (z + r \cdot k) \pmod{n}$. Wenn $s = 0$, kehre zu Schritt 1 zurück.
+5. Die Signatur ist das Paar $(r, s)$.
 
-Beim Verifizierungsprozess wird mit dem öffentlichen Schlüssel $$K$$ und der Signatur $$(r, s)$$ folgende Berechnung durchgeführt:
+Beim Verifizierungsprozess wird mit dem öffentlichen Schlüssel $K$ und der Signatur $(r, s)$ folgende Berechnung durchgeführt:
 
-1. $$u_1 = z \cdot s^{-1} \pmod{n}$$
-2. $$u_2 = r \cdot s^{-1} \pmod{n}$$
-3. Berechne den Punkt $$(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$$.
-4. Wenn $$r \equiv x_2 \pmod{n}$$, gilt die Signatur als gültig.
+1. $u_1 = z \cdot s^{-1} \pmod{n}$
+2. $u_2 = r \cdot s^{-1} \pmod{n}$
+3. Berechne den Punkt $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
+4. Wenn $r \equiv x_2 \pmod{n}$, gilt die Signatur als gültig.
 
 ## 5. Konsensalgorithmen und Proof of Work (PoW)
 
@@ -173,7 +173,7 @@ $$
 
 Da die Ausgabe einer Hash-Funktion völlig zufällig erscheint, gibt es keinen effizienten Algorithmus, um eine Nonce zu finden, die die Bedingung erfüllt. Die einzige Methode ist ein Brute-Force-Angriff, bei dem der Nonce-Wert unentwegt geändert und die Hash-Berechnung wiederholt wird.
 
-Je kleiner der Zielwert ist, desto geringer ist die Wahrscheinlichkeit, einen Hash zu finden, der die Bedingung erfüllt. Wenn das Ziel einen Wert erfordert, der mit $$k$$ Nullen beginnt, beträgt die durchschnittliche Anzahl an Berechnungen, um diesen Block zu finden, $$2^k$$. Dieser massive Einsatz von Rechenenergie macht es unmöglich, die vergangenen Aufzeichnungen der Blockchain zu manipulieren.
+Je kleiner der Zielwert ist, desto geringer ist die Wahrscheinlichkeit, einen Hash zu finden, der die Bedingung erfüllt. Wenn das Ziel einen Wert erfordert, der mit $k$ Nullen beginnt, beträgt die durchschnittliche Anzahl an Berechnungen, um diesen Block zu finden, $2^k$. Dieser massive Einsatz von Rechenenergie macht es unmöglich, die vergangenen Aufzeichnungen der Blockchain zu manipulieren.
 
 ### Schwierigkeitsanpassung (Difficulty Adjustment)
 
@@ -241,19 +241,19 @@ Hinter SHA-256 und der elliptischen Kurvenkryptografie (ECC), die in den vorheri
 Rechentechnische Sicherheit ist Sicherheit basierend auf der Prämisse, dass "das Knacken einer Verschlüsselung mehr Zeit als das Alter des Universums und astronomische Rechenressourcen erfordert, wodurch es praktisch unmöglich zu knacken ist".
 
 Lassen Sie uns das Elliptische-Kurven-Diskreter-Logarithmus-Problem (ECDLP), das die Sicherheit von Bitcoins Public-Key-Kryptografie garantiert, anhand von Formeln nochmals überprüfen.
-Gegeben sind die Punkte $$P$$ und $$Q$$ auf der elliptischen Kurve $$E(\mathbb{F}_p)$$. Es gilt, die unbekannte Ganzzahl $$k$$ zu finden, die $$Q = kP$$ erfüllt.
-Bei Verwendung klassischer Computer beträgt die Rechenkomplexität der besten Algorithmen zur Lösung dieses Problems (wie Pollards $$\rho$$-Methode) $$\mathcal{O}(\sqrt{p})$$.
-Bei Bitcoins secp256k1 ist $$p \approx 2^{256}$$, daher erfordert das Knacken etwa $$2^{128}$$ Operationen. Selbst wenn man alle heutigen Computer auf der Erde zusammenfasst, würde diese Rechenmenge Billionen Mal länger dauern als das Alter des Universums (ca. 13,8 Milliarden Jahre).
+Gegeben sind die Punkte $P$ und $Q$ auf der elliptischen Kurve $E(\mathbb{F}_p)$. Es gilt, die unbekannte Ganzzahl $k$ zu finden, die $Q = kP$ erfüllt.
+Bei Verwendung klassischer Computer beträgt die Rechenkomplexität der besten Algorithmen zur Lösung dieses Problems (wie Pollards $\rho$-Methode) $\mathcal{O}(\sqrt{p})$.
+Bei Bitcoins secp256k1 ist $p \approx 2^{256}$, daher erfordert das Knacken etwa $2^{128}$ Operationen. Selbst wenn man alle heutigen Computer auf der Erde zusammenfasst, würde diese Rechenmenge Billionen Mal länger dauern als das Alter des Universums (ca. 13,8 Milliarden Jahre).
 
 ### Die Bedrohung durch Quantencomputer und Post-Quanten-Kryptografie
 
 Es gibt jedoch ein großes Bedenken hinsichtlich der rechentechnischen Sicherheit: den Aufstieg von **Quantencomputern (Quantum Computers)**.
-"Shor's Algorithmus", 1994 von Peter Shor veröffentlicht, bewies mathematisch, dass ein Quantencomputer Probleme wie die Primfaktorzerlegung (die Basis von RSA) und das Problem des diskreten Logarithmus (die Basis von ECC) in Polynomialzeit $$\mathcal{O}(n^3)$$ lösen kann.
+"Shor's Algorithmus", 1994 von Peter Shor veröffentlicht, bewies mathematisch, dass ein Quantencomputer Probleme wie die Primfaktorzerlegung (die Basis von RSA) und das Problem des diskreten Logarithmus (die Basis von ECC) in Polynomialzeit $\mathcal{O}(n^3)$ lösen kann.
 
 Wenn praktische und große Quantencomputer mit genügend Qubits und niedrigen Fehlerraten entwickelt werden, besteht das Risiko, dass der private Schlüssel aus dem öffentlichen Schlüssel von Bitcoin zurückgerechnet werden kann.
 Die Verteidigungsmaßnahmen des Bitcoin-Netzwerks dagegen sind wie folgt:
 
-1. **Schutz durch Hash-Funktionen**: Eine Bitcoin-Adresse ist nicht der öffentliche Schlüssel selbst, sondern das Ergebnis der Anwendung der Hash-Funktionen SHA-256 und RIPEMD-160 auf den öffentlichen Schlüssel. Selbst mit Quantencomputern bleibt die Rückrechnung einer Hash-Funktion (sogar mit Grovers Algorithmus beträgt die Komplexität $$\mathcal{O}(\sqrt{N})$$) schwierig. Daher gilt der Inhalt einer Adresse als quantensicher, bis eine Transaktion durchgeführt und der öffentliche Schlüssel dem Netzwerk offengelegt wird.
+1. **Schutz durch Hash-Funktionen**: Eine Bitcoin-Adresse ist nicht der öffentliche Schlüssel selbst, sondern das Ergebnis der Anwendung der Hash-Funktionen SHA-256 und RIPEMD-160 auf den öffentlichen Schlüssel. Selbst mit Quantencomputern bleibt die Rückrechnung einer Hash-Funktion (sogar mit Grovers Algorithmus beträgt die Komplexität $\mathcal{O}(\sqrt{N})$) schwierig. Daher gilt der Inhalt einer Adresse als quantensicher, bis eine Transaktion durchgeführt und der öffentliche Schlüssel dem Netzwerk offengelegt wird.
 2. **Übergang zur Post-Quanten-Kryptografie (Post-Quantum Cryptography: PQC)**: Es wird diskutiert, das Bitcoin-Protokoll vor der praktischen Anwendung von Quantencomputern zu "hard forken" und zu neuen Signaturalgorithmen überzugehen, die selbst für Quantencomputer schwer zu knacken sind, wie z.B. gitterbasierte Kryptografie (Lattice-based cryptography) oder multivariate polynomische Kryptografie (Multivariate polynomial cryptography), die vom NIST (National Institute of Standards and Technology) ausgewählt werden.
 
 ## 9. Netzwerk-Topologie und Details des P2P-Protokolls

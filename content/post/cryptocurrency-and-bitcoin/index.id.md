@@ -98,18 +98,18 @@ Ketahanan Bitcoin didukung oleh fondasi matematika tingkat lanjut. Di sini, kita
 
 Fungsi hash kriptografis yang paling sering digunakan dalam Bitcoin adalah **SHA-256**. Fungsi hash adalah fungsi satu arah yang mengambil input data dengan panjang arbitrer dan menghasilkan output data dengan panjang tetap (256 bit untuk SHA-256).
 
-Fungsi hash $$H$$ harus memenuhi sifat-sifat berikut:
-1. **Satu Arah (Pre-image resistance)**: Secara komputasi sulit untuk menemukan input $$x$$ sedemikian rupa sehingga $$H(x) = h$$ dari nilai hash $$h$$ yang diberikan.
-2. **Ketahanan Tabrakan Lemah (Second pre-image resistance)**: Secara komputasi sulit untuk menemukan input lain $$x_2$$ sedemikian rupa sehingga $$H(x_1) = H(x_2)$$ untuk input yang diberikan $$x_1$$.
-3. **Ketahanan Tabrakan Kuat (Collision resistance)**: Secara komputasi sulit untuk menemukan dua input sembarang $$x_1, x_2$$ sedemikian rupa sehingga $$H(x_1) = H(x_2)$$.
+Fungsi hash $H$ harus memenuhi sifat-sifat berikut:
+1. **Satu Arah (Pre-image resistance)**: Secara komputasi sulit untuk menemukan input $x$ sedemikian rupa sehingga $H(x) = h$ dari nilai hash $h$ yang diberikan.
+2. **Ketahanan Tabrakan Lemah (Second pre-image resistance)**: Secara komputasi sulit untuk menemukan input lain $x_2$ sedemikian rupa sehingga $H(x_1) = H(x_2)$ untuk input yang diberikan $x_1$.
+3. **Ketahanan Tabrakan Kuat (Collision resistance)**: Secara komputasi sulit untuk menemukan dua input sembarang $x_1, x_2$ sedemikian rupa sehingga $H(x_1) = H(x_2)$.
 
 Dalam Bitcoin, SHA-256 diterapkan dua kali dalam proses seperti menghitung hash blok dan membuat alamat dari kunci publik (ini disebut `SHA256(SHA256(x))` atau Hash256).
 
 ### Kriptografi Kunci Publik (Public Key Cryptography) dan Tanda Tangan Digital
 
 Kepemilikan aset kripto dibuktikan oleh pasangan Kunci Privat (Private Key) dan Kunci Publik (Public Key).
-- **Kunci Privat** $$k$$: Bilangan bulat 256-bit yang dihasilkan secara acak. Tidak boleh diketahui oleh siapa pun.
-- **Kunci Publik** $$K$$: Kunci yang dihitung dari kunci privat menggunakan fungsi satu arah. Kunci ini dipublikasikan ke jaringan.
+- **Kunci Privat** $k$: Bilangan bulat 256-bit yang dihasilkan secara acak. Tidak boleh diketahui oleh siapa pun.
+- **Kunci Publik** $K$: Kunci yang dihitung dari kunci privat menggunakan fungsi satu arah. Kunci ini dipublikasikan ke jaringan.
 
 Ketika Alice mentransfer Bitcoin ke Bob, Alice menggunakan kunci privatnya untuk membuat **Tanda Tangan Digital (Digital Signature)** pada data transaksi. Peserta jaringan dapat memverifikasi validitas tanda tangan (apakah Alice benar-benar membuatnya menggunakan kunci privatnya) menggunakan kunci publik Alice.
 
@@ -117,41 +117,41 @@ Ketika Alice mentransfer Bitcoin ke Bob, Alice menggunakan kunci privatnya untuk
 
 Bitcoin menggunakan **Kriptografi Kurva Eliptik (ECC)** alih-alih kriptografi RSA untuk menghasilkan kunci publik dan tanda tangan digital. ECC memiliki keuntungan menawarkan tingkat keamanan yang setara dengan RSA namun dengan panjang kunci yang jauh lebih pendek.
 
-Parameter kurva eliptik tertentu yang digunakan dalam Bitcoin disebut **secp256k1**. Kurva ini didefinisikan di atas medan berhingga (finite field) $$\mathbb{F}_p$$ dan diwakili oleh persamaan berikut:
+Parameter kurva eliptik tertentu yang digunakan dalam Bitcoin disebut **secp256k1**. Kurva ini didefinisikan di atas medan berhingga (finite field) $\mathbb{F}_p$ dan diwakili oleh persamaan berikut:
 
 $$
 y^2 \equiv x^3 + 7 \pmod{p}
 $$
 
-Di mana $$p$$ adalah bilangan prima yang sangat besar.
+Di mana $p$ adalah bilangan prima yang sangat besar.
 $$
 p = 2^{256} - 2^{32} - 2^{9} - 2^{8} - 2^{7} - 2^{6} - 2^{4} - 1
 $$
 
-Kunci privat $$k$$ adalah angka acak dalam rentang dari $$1$$ hingga $$n-1$$ (di mana $$n$$ adalah orde kurva). Kunci publik $$K$$ diperoleh dengan mengalikan skalar titik acuan (Generator Point) $$G$$ pada kurva dengan kunci privat.
+Kunci privat $k$ adalah angka acak dalam rentang dari $1$ hingga $n-1$ (di mana $n$ adalah orde kurva). Kunci publik $K$ diperoleh dengan mengalikan skalar titik acuan (Generator Point) $G$ pada kurva dengan kunci privat.
 
 $$
 K = k \cdot G
 $$
 
-Perhitungan ini dapat dilakukan secara efisien dengan mengulang Penambahan Titik (Point Addition) dan Penggandaan Titik (Point Doubling) pada kurva eliptik. Namun, perhitungan mundur untuk mencari kunci privat $$k$$ dari kunci publik $$K$$ dan titik acuan $$G$$ secara komputasi sangat sulit. Ini dikenal sebagai **Masalah Logaritma Diskrit Kurva Eliptik (Elliptic Curve Discrete Logarithm Problem: ECDLP)**, yang membentuk fondasi keamanan aset kripto.
+Perhitungan ini dapat dilakukan secara efisien dengan mengulang Penambahan Titik (Point Addition) dan Penggandaan Titik (Point Doubling) pada kurva eliptik. Namun, perhitungan mundur untuk mencari kunci privat $k$ dari kunci publik $K$ dan titik acuan $G$ secara komputasi sangat sulit. Ini dikenal sebagai **Masalah Logaritma Diskrit Kurva Eliptik (Elliptic Curve Discrete Logarithm Problem: ECDLP)**, yang membentuk fondasi keamanan aset kripto.
 
 ### ECDSA (Elliptic Curve Digital Signature Algorithm)
 
-**ECDSA** digunakan untuk menandatangani transaksi. Proses penandatanganan dengan pesan (hash dari transaksi) $$z$$ adalah sebagai berikut:
+**ECDSA** digunakan untuk menandatangani transaksi. Proses penandatanganan dengan pesan (hash dari transaksi) $z$ adalah sebagai berikut:
 
-1. Pilih bilangan bulat acak $$k_e$$ (kunci efemeral) dari $$1$$ hingga $$n-1$$.
-2. Hitung titik pada kurva $$(x_1, y_1) = k_e \cdot G$$.
-3. Hitung $$r = x_1 \pmod{n}$$. Jika $$r = 0$$, kembali ke langkah 1.
-4. Hitung $$s = k_e^{-1} (z + r \cdot k) \pmod{n}$$. Jika $$s = 0$$, kembali ke langkah 1.
-5. Tanda tangannya adalah pasangan $$(r, s)$$.
+1. Pilih bilangan bulat acak $k_e$ (kunci efemeral) dari $1$ hingga $n-1$.
+2. Hitung titik pada kurva $(x_1, y_1) = k_e \cdot G$.
+3. Hitung $r = x_1 \pmod{n}$. Jika $r = 0$, kembali ke langkah 1.
+4. Hitung $s = k_e^{-1} (z + r \cdot k) \pmod{n}$. Jika $s = 0$, kembali ke langkah 1.
+5. Tanda tangannya adalah pasangan $(r, s)$.
 
-Dalam proses verifikasi, perhitungan berikut dilakukan menggunakan kunci publik $$K$$ dan tanda tangan $$(r, s)$$.
+Dalam proses verifikasi, perhitungan berikut dilakukan menggunakan kunci publik $K$ dan tanda tangan $(r, s)$.
 
-1. $$u_1 = z \cdot s^{-1} \pmod{n}$$
-2. $$u_2 = r \cdot s^{-1} \pmod{n}$$
-3. Hitung titik $$(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$$.
-4. Jika $$r \equiv x_2 \pmod{n}$$, maka tanda tangan dianggap valid.
+1. $u_1 = z \cdot s^{-1} \pmod{n}$
+2. $u_2 = r \cdot s^{-1} \pmod{n}$
+3. Hitung titik $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
+4. Jika $r \equiv x_2 \pmod{n}$, maka tanda tangan dianggap valid.
 
 ## 5. Algoritma Konsensus dan Proof of Work (PoW)
 
@@ -173,7 +173,7 @@ $$
 
 Karena keluaran fungsi hash tampak sepenuhnya acak, tidak ada algoritma yang efisien untuk menemukan nonce yang memenuhi kondisi tersebut. Satu-satunya metode adalah dengan melakukan serangan brute-force, yaitu mengulang perhitungan hash dengan terus-menerus mengubah nilai nonce.
 
-Semakin kecil nilai target, semakin rendah kemungkinan menemukan hash yang memenuhi kondisi. Jika target mengharuskan $$k$$ angka nol di awal, jumlah rata-rata perhitungan yang diperlukan untuk menemukan blok tersebut adalah $$2^k$$. Alokasi energi komputasi yang sangat besar inilah yang membuat catatan masa lalu pada blockchain tidak mungkin dipalsukan.
+Semakin kecil nilai target, semakin rendah kemungkinan menemukan hash yang memenuhi kondisi. Jika target mengharuskan $k$ angka nol di awal, jumlah rata-rata perhitungan yang diperlukan untuk menemukan blok tersebut adalah $2^k$. Alokasi energi komputasi yang sangat besar inilah yang membuat catatan masa lalu pada blockchain tidak mungkin dipalsukan.
 
 ### Penyesuaian Kesulitan (Difficulty Adjustment)
 
@@ -241,19 +241,19 @@ Di balik SHA-256 dan Kriptografi Kurva Eliptik (ECC) yang dijelaskan di bab-bab 
 Keamanan komputasional adalah keamanan yang didasarkan pada premis bahwa "dibutuhkan waktu lebih lama dari umur alam semesta dan sumber daya komputasi yang astronomis untuk memecahkan sandi, sehingga secara praktis mustahil untuk dipecahkan".
 
 Mari kita konfirmasi kembali dengan rumus matematika Masalah Logaritma Diskrit Kurva Eliptik (ECDLP) yang menjamin keamanan kriptografi kunci publik Bitcoin.
-Misalkan Titik $$P$$ dan $$Q$$ berada pada kurva eliptik $$E(\mathbb{F}_p)$$, dan pertanyaannya adalah menemukan bilangan bulat tak diketahui $$k$$ yang memenuhi $$Q = kP$$.
-Jika menggunakan komputer klasik, kompleksitas komputasi dari algoritma terbaik untuk menyelesaikan masalah ini (seperti algoritma $$\rho$$ Pollard) adalah $$\mathcal{O}(\sqrt{p})$$.
-Dalam secp256k1 Bitcoin, karena $$p \approx 2^{256}$$, dekripsi membutuhkan sekitar $$2^{128}$$ operasi. Ini adalah jumlah komputasi yang akan memakan waktu triliunan kali umur alam semesta (sekitar 13,8 miliar tahun) bahkan jika seluruh komputer di bumi saat ini dikerahkan.
+Misalkan Titik $P$ dan $Q$ berada pada kurva eliptik $E(\mathbb{F}_p)$, dan pertanyaannya adalah menemukan bilangan bulat tak diketahui $k$ yang memenuhi $Q = kP$.
+Jika menggunakan komputer klasik, kompleksitas komputasi dari algoritma terbaik untuk menyelesaikan masalah ini (seperti algoritma $\rho$ Pollard) adalah $\mathcal{O}(\sqrt{p})$.
+Dalam secp256k1 Bitcoin, karena $p \approx 2^{256}$, dekripsi membutuhkan sekitar $2^{128}$ operasi. Ini adalah jumlah komputasi yang akan memakan waktu triliunan kali umur alam semesta (sekitar 13,8 miliar tahun) bahkan jika seluruh komputer di bumi saat ini dikerahkan.
 
 ### Ancaman Komputer Kuantum dan Kriptografi Tahan Kuantum
 
 Namun, ada satu kekhawatiran besar mengenai keamanan komputasional. Yaitu munculnya **Komputer Kuantum (Quantum Computer)**.
-"Algoritma Shor (Shor's Algorithm)" yang diterbitkan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum digunakan, masalah faktorisasi prima (dasar dari enkripsi RSA) dan masalah logaritma diskrit (dasar ECC) dapat diselesaikan dalam waktu polinomial $$\mathcal{O}(n^3)$$.
+"Algoritma Shor (Shor's Algorithm)" yang diterbitkan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum digunakan, masalah faktorisasi prima (dasar dari enkripsi RSA) dan masalah logaritma diskrit (dasar ECC) dapat diselesaikan dalam waktu polinomial $\mathcal{O}(n^3)$.
 
 Jika komputer kuantum skala besar yang praktis dengan Qubit (Qubits) yang cukup dan tingkat kesalahan yang rendah berhasil dikembangkan, ada risiko bahwa kunci privat dapat dihitung mundur dari kunci publik Bitcoin.
 Langkah-langkah pertahanan jaringan Bitcoin terhadap hal ini adalah sebagai berikut:
 
-1. **Perlindungan Fungsi Hash**: Alamat Bitcoin bukanlah kunci publik itu sendiri, melainkan hasil dari penerapan fungsi hash SHA-256 dan RIPEMD-160 ke kunci publik. Bahkan dengan komputer kuantum, menghitung mundur fungsi hash (bahkan menggunakan algoritma Grover, kompleksitas komputasinya adalah $$\mathcal{O}(\sqrt{N})$$) masih sulit. Oleh karena itu, alamat tersebut aman terhadap komputer kuantum hingga transaksi dilakukan dan kunci publik diekspos ke jaringan.
+1. **Perlindungan Fungsi Hash**: Alamat Bitcoin bukanlah kunci publik itu sendiri, melainkan hasil dari penerapan fungsi hash SHA-256 dan RIPEMD-160 ke kunci publik. Bahkan dengan komputer kuantum, menghitung mundur fungsi hash (bahkan menggunakan algoritma Grover, kompleksitas komputasinya adalah $\mathcal{O}(\sqrt{N})$) masih sulit. Oleh karena itu, alamat tersebut aman terhadap komputer kuantum hingga transaksi dilakukan dan kunci publik diekspos ke jaringan.
 2. **Transisi ke Kriptografi Pasca-Kuantum (Post-Quantum Cryptography: PQC)**: Sebelum komputer kuantum digunakan secara praktis, ada diskusi untuk melakukan hard fork pada protokol Bitcoin untuk beralih ke algoritma tanda tangan baru yang sulit dipecahkan bahkan oleh komputer kuantum, seperti kriptografi berbasis kisi (Lattice-based cryptography) atau kriptografi polinomial multivariat (Multivariate polynomial cryptography) yang dipilih oleh NIST (Institut Nasional Standar dan Teknologi AS).
 
 ## 9. Topologi Jaringan dan Detail Protokol P2P

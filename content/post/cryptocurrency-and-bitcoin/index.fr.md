@@ -98,18 +98,18 @@ La robustesse du Bitcoin est soutenue par des bases mathématiques avancées. Ic
 
 La fonction de hachage cryptographique la plus fréquemment utilisée dans le Bitcoin est **SHA-256** . Une fonction de hachage est une fonction unidirectionnelle qui prend des données de n'importe quelle longueur en entrée et produit des données d'une longueur fixe (256 bits dans le cas de SHA-256) en sortie.
 
-Une fonction de hachage $$H$$ doit satisfaire aux propriétés suivantes :
-1. **Unidirectionnalité (Résistance à la préimage)** : Étant donné une valeur de hachage $$h$$, il est informatiquement difficile de trouver une entrée $$x$$ telle que $$H(x) = h$$.
-2. **Faible résistance aux collisions (Résistance à la seconde préimage)** : Étant donné une entrée $$x_1$$, il est difficile de trouver une autre entrée $$x_2$$ telle que $$H(x_1) = H(x_2)$$.
-3. **Forte résistance aux collisions (Résistance aux collisions)** : Il est difficile de trouver deux entrées arbitraires $$x_1, x_2$$ telles que $$H(x_1) = H(x_2)$$.
+Une fonction de hachage $H$ doit satisfaire aux propriétés suivantes :
+1. **Unidirectionnalité (Résistance à la préimage)** : Étant donné une valeur de hachage $h$, il est informatiquement difficile de trouver une entrée $x$ telle que $H(x) = h$.
+2. **Faible résistance aux collisions (Résistance à la seconde préimage)** : Étant donné une entrée $x_1$, il est difficile de trouver une autre entrée $x_2$ telle que $H(x_1) = H(x_2)$.
+3. **Forte résistance aux collisions (Résistance aux collisions)** : Il est difficile de trouver deux entrées arbitraires $x_1, x_2$ telles que $H(x_1) = H(x_2)$.
 
 Dans le Bitcoin, SHA-256 est appliqué deux fois dans le processus de calcul du hachage de bloc ou de génération d'une adresse à partir d'une clé publique (ceci est appelé `SHA256(SHA256(x))`, ou Hash256).
 
 ### Cryptographie à clé publique (Public Key Cryptography) et signature numérique
 
 La propriété de la cryptomonnaie est prouvée par une paire d'une clé privée (Private Key) et d'une clé publique (Public Key).
-- **Clé privée** $$k$$ : Un entier de 256 bits généré aléatoirement. Elle ne doit jamais être connue de quiconque d'autre.
-- **Clé publique** $$K$$ : Une clé calculée à partir de la clé privée à l'aide d'une fonction unidirectionnelle. Elle est publiée sur le réseau.
+- **Clé privée** $k$ : Un entier de 256 bits généré aléatoirement. Elle ne doit jamais être connue de quiconque d'autre.
+- **Clé publique** $K$ : Une clé calculée à partir de la clé privée à l'aide d'une fonction unidirectionnelle. Elle est publiée sur le réseau.
 
 Lorsqu'Alice envoie du Bitcoin à Bob, Alice utilise sa propre clé privée pour créer une **signature numérique (Digital Signature)** pour les données de transaction. Les participants au réseau peuvent utiliser la clé publique d'Alice pour vérifier si la signature est valide (si Alice l'a vraiment créée à l'aide de la clé privée).
 
@@ -117,41 +117,41 @@ Lorsqu'Alice envoie du Bitcoin à Bob, Alice utilise sa propre clé privée pour
 
 La **cryptographie sur les courbes elliptiques (ECC)** est adoptée pour la génération de clés publiques et les signatures numériques du Bitcoin, plutôt que le cryptage RSA. L'ECC a l'avantage de fournir un niveau de sécurité équivalent avec une longueur de clé beaucoup plus courte que le RSA.
 
-Les paramètres de la courbe elliptique spécifique utilisée dans le Bitcoin sont appelés **secp256k1** . Cette courbe est définie sur un corps fini $$\mathbb{F}_p$$ et est représentée par l'équation suivante :
+Les paramètres de la courbe elliptique spécifique utilisée dans le Bitcoin sont appelés **secp256k1** . Cette courbe est définie sur un corps fini $\mathbb{F}_p$ et est représentée par l'équation suivante :
 
 $$
 y^2 \equiv x^3 + 7 \pmod{p}
 $$
 
-Ici, $$p$$ est un nombre premier très grand.
+Ici, $p$ est un nombre premier très grand.
 $$
 p = 2^{256} - 2^{32} - 2^{9} - 2^{8} - 2^{7} - 2^{6} - 2^{4} - 1
 $$
 
-La clé privée $$k$$ est un nombre aléatoire compris entre $$1$$ et $$n-1$$ ($$n$$ est l'ordre de la courbe). La clé publique $$K$$ est obtenue par multiplication scalaire d'un certain point de base (Point Générateur) $$G$$ sur la courbe par le nombre de fois de la clé privée.
+La clé privée $k$ est un nombre aléatoire compris entre $1$ et $n-1$ ($n$ est l'ordre de la courbe). La clé publique $K$ est obtenue par multiplication scalaire d'un certain point de base (Point Générateur) $G$ sur la courbe par le nombre de fois de la clé privée.
 
 $$
 K = k \cdot G
 $$
 
-Ce calcul peut être effectué efficacement en répétant l'addition de points (Point Addition) et le doublement de points (Point Doubling) sur la courbe elliptique. Cependant, calculer à l'inverse la clé privée $$k$$ à partir de la clé publique $$K$$ et du point de base $$G$$ est un problème extrêmement difficile informatiquement appelé le **problème du logarithme discret sur courbe elliptique (Elliptic Curve Discrete Logarithm Problem : ECDLP)** , et c'est le fondement de la sécurité des cryptomonnaies.
+Ce calcul peut être effectué efficacement en répétant l'addition de points (Point Addition) et le doublement de points (Point Doubling) sur la courbe elliptique. Cependant, calculer à l'inverse la clé privée $k$ à partir de la clé publique $K$ et du point de base $G$ est un problème extrêmement difficile informatiquement appelé le **problème du logarithme discret sur courbe elliptique (Elliptic Curve Discrete Logarithm Problem : ECDLP)** , et c'est le fondement de la sécurité des cryptomonnaies.
 
 ### ECDSA (Elliptic Curve Digital Signature Algorithm)
 
-**ECDSA** est utilisé pour la signature des transactions. Le processus de signature lorsque le message (hachage de la transaction) est $$z$$ est le suivant :
+**ECDSA** est utilisé pour la signature des transactions. Le processus de signature lorsque le message (hachage de la transaction) est $z$ est le suivant :
 
-1. Choisir un entier aléatoire $$k_e$$ (clé éphémère) compris entre $$1$$ et $$n-1$$.
-2. Calculer le point sur la courbe $$(x_1, y_1) = k_e \cdot G$$.
-3. Calculer $$r = x_1 \pmod{n}$$. Si $$r = 0$$, retourner à l'étape 1.
-4. Calculer $$s = k_e^{-1} (z + r \cdot k) \pmod{n}$$. Si $$s = 0$$, retourner à l'étape 1.
-5. La signature est la paire $$(r, s)$$.
+1. Choisir un entier aléatoire $k_e$ (clé éphémère) compris entre $1$ et $n-1$.
+2. Calculer le point sur la courbe $(x_1, y_1) = k_e \cdot G$.
+3. Calculer $r = x_1 \pmod{n}$. Si $r = 0$, retourner à l'étape 1.
+4. Calculer $s = k_e^{-1} (z + r \cdot k) \pmod{n}$. Si $s = 0$, retourner à l'étape 1.
+5. La signature est la paire $(r, s)$.
 
-Dans le processus de vérification, le calcul suivant est effectué à l'aide de la clé publique $$K$$ et de la signature $$(r, s)$$.
+Dans le processus de vérification, le calcul suivant est effectué à l'aide de la clé publique $K$ et de la signature $(r, s)$.
 
-1. $$u_1 = z \cdot s^{-1} \pmod{n}$$
-2. $$u_2 = r \cdot s^{-1} \pmod{n}$$
-3. Calculer le point $$(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$$.
-4. Si $$r \equiv x_2 \pmod{n}$$, la signature est considérée comme valide.
+1. $u_1 = z \cdot s^{-1} \pmod{n}$
+2. $u_2 = r \cdot s^{-1} \pmod{n}$
+3. Calculer le point $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
+4. Si $r \equiv x_2 \pmod{n}$, la signature est considérée comme valide.
 
 ## 5. Algorithme de consensus et Preuve de travail (PoW)
 
@@ -173,7 +173,7 @@ $$
 
 Étant donné que la sortie d'une fonction de hachage semble complètement aléatoire, il n'existe pas d'algorithme efficace pour trouver un nonce qui satisfait à la condition. La seule méthode est une attaque par force brute (Brute-force) où la valeur du nonce est modifiée et le calcul du hachage est répété.
 
-Plus la valeur cible est petite, plus la probabilité de trouver un hachage satisfaisant à la condition est faible. Si la cible est une valeur qui nécessite $$k$$ zéros au début, le nombre moyen de calculs nécessaires pour trouver ce bloc est de $$2^k$$ fois. L'investissement de cette énorme quantité d'énergie de calcul est ce qui rend impossible la falsification des enregistrements passés de la blockchain.
+Plus la valeur cible est petite, plus la probabilité de trouver un hachage satisfaisant à la condition est faible. Si la cible est une valeur qui nécessite $k$ zéros au début, le nombre moyen de calculs nécessaires pour trouver ce bloc est de $2^k$ fois. L'investissement de cette énorme quantité d'énergie de calcul est ce qui rend impossible la falsification des enregistrements passés de la blockchain.
 
 ### Ajustement de la difficulté (Difficulty Adjustment)
 
@@ -241,19 +241,19 @@ Derrière SHA-256 et la cryptographie sur les courbes elliptiques (ECC) expliqu�
 La sécurité calculatoire est basée sur le principe selon lequel « le décryptage d'un certain cryptogramme nécessite plus de temps que la durée de vie de l'univers et des ressources informatiques astronomiques, il est donc pratiquement indécryptable ».
 
 Réexaminons avec une formule mathématique le problème du logarithme discret sur courbe elliptique (ECDLP), qui garantit la sécurité de la cryptographie à clé publique du Bitcoin.
-C'est le problème de trouver un entier inconnu $$k$$ qui satisfait $$Q = kP$$, sachant que les points $$P$$ et $$Q$$ sont sur la courbe elliptique $$E(\mathbb{F}_p)$$.
-Si un ordinateur classique est utilisé, la complexité de calcul du meilleur algorithme pour résoudre ce problème (comme la méthode $$\rho$$ de Pollard) est $$\mathcal{O}(\sqrt{p})$$.
-Dans secp256k1 de Bitcoin, $$p \approx 2^{256}$$, donc environ $$2^{128}$$ opérations sont nécessaires pour le décryptage. Il s'agit d'une quantité de calcul qui prendrait des billions de fois la durée de vie de l'univers (environ 13,8 milliards d'années) même si tous les ordinateurs sur terre étaient mobilisés aujourd'hui.
+C'est le problème de trouver un entier inconnu $k$ qui satisfait $Q = kP$, sachant que les points $P$ et $Q$ sont sur la courbe elliptique $E(\mathbb{F}_p)$.
+Si un ordinateur classique est utilisé, la complexité de calcul du meilleur algorithme pour résoudre ce problème (comme la méthode $\rho$ de Pollard) est $\mathcal{O}(\sqrt{p})$.
+Dans secp256k1 de Bitcoin, $p \approx 2^{256}$, donc environ $2^{128}$ opérations sont nécessaires pour le décryptage. Il s'agit d'une quantité de calcul qui prendrait des billions de fois la durée de vie de l'univers (environ 13,8 milliards d'années) même si tous les ordinateurs sur terre étaient mobilisés aujourd'hui.
 
 ### La menace des ordinateurs quantiques et la cryptographie post-quantique
 
 Cependant, il existe une préoccupation majeure concernant la sécurité calculatoire. C'est l'essor des **ordinateurs quantiques (Quantum Computers)** .
-L'algorithme de Shor, publié par Peter Shor en 1994, a prouvé mathématiquement qu'un ordinateur quantique pourrait résoudre le problème de factorisation en nombres premiers (le fondement du chiffrement RSA) et le problème du logarithme discret (le fondement de l'ECC) en temps polynomial $$\mathcal{O}(n^3)$$.
+L'algorithme de Shor, publié par Peter Shor en 1994, a prouvé mathématiquement qu'un ordinateur quantique pourrait résoudre le problème de factorisation en nombres premiers (le fondement du chiffrement RSA) et le problème du logarithme discret (le fondement de l'ECC) en temps polynomial $\mathcal{O}(n^3)$.
 
 Si un ordinateur quantique à grande échelle et pratique avec un nombre suffisant de qubits (Qubits) et un faible taux d'erreur est achevé, il y a un risque que la clé privée puisse être calculée à rebours à partir de la clé publique du Bitcoin.
 Les mesures défensives du réseau Bitcoin contre cela sont les suivantes.
 
-1. **Protection par fonction de hachage** : L'adresse Bitcoin n'est pas la clé publique elle-même, mais les fonctions de hachage SHA-256 et RIPEMD-160 appliquées à la clé publique. Même avec un ordinateur quantique, l'inversion d'une fonction de hachage (même avec l'algorithme de Grover, la complexité de calcul est de $$\mathcal{O}(\sqrt{N})$$) reste difficile. Par conséquent, jusqu'à ce qu'une transaction soit effectuée et que la clé publique soit exposée au réseau, le contenu de l'adresse peut être considéré comme sûr même contre les ordinateurs quantiques.
+1. **Protection par fonction de hachage** : L'adresse Bitcoin n'est pas la clé publique elle-même, mais les fonctions de hachage SHA-256 et RIPEMD-160 appliquées à la clé publique. Même avec un ordinateur quantique, l'inversion d'une fonction de hachage (même avec l'algorithme de Grover, la complexité de calcul est de $\mathcal{O}(\sqrt{N})$) reste difficile. Par conséquent, jusqu'à ce qu'une transaction soit effectuée et que la clé publique soit exposée au réseau, le contenu de l'adresse peut être considéré comme sûr même contre les ordinateurs quantiques.
 2. **Transition vers la cryptographie post-quantique (Post-Quantum Cryptography : PQC)** : Il est discuté qu'avant que les ordinateurs quantiques ne deviennent d'usage pratique, le protocole Bitcoin fera l'objet d'un hard fork pour passer à de nouveaux algorithmes de signature difficiles à déchiffrer même pour les ordinateurs quantiques, tels que la cryptographie basée sur les réseaux (Lattice-based cryptography) ou la cryptographie polynomiale multivariée (Multivariate polynomial cryptography) sélectionnées par le NIST (National Institute of Standards and Technology).
 
 ## 9. Topologie du réseau et détails du protocole P2P

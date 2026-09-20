@@ -97,18 +97,18 @@ Bitcoin's robustness is supported by advanced mathematical foundations. Here, we
 
 The cryptographic hash function most frequently used in Bitcoin is **SHA-256**. A hash function is a one-way function that takes data of any length as input and outputs fixed-length data (256 bits in the case of SHA-256).
 
-A hash function $$H$$ must satisfy the following properties:
-1. **Pre-image resistance**: Given a hash value $$h$$, it must be computationally difficult to find an input $$x$$ such that $$H(x) = h$$.
-2. **Second pre-image resistance**: Given an input $$x_1$$, it must be computationally difficult to find another input $$x_2$$ such that $$H(x_1) = H(x_2)$$.
-3. **Collision resistance**: It must be computationally difficult to find any two inputs $$x_1, x_2$$ such that $$H(x_1) = H(x_2)$$.
+A hash function $H$ must satisfy the following properties:
+1. **Pre-image resistance**: Given a hash value $h$, it must be computationally difficult to find an input $x$ such that $H(x) = h$.
+2. **Second pre-image resistance**: Given an input $x_1$, it must be computationally difficult to find another input $x_2$ such that $H(x_1) = H(x_2)$.
+3. **Collision resistance**: It must be computationally difficult to find any two inputs $x_1, x_2$ such that $H(x_1) = H(x_2)$.
 
 In Bitcoin, SHA-256 is applied twice (this is called `SHA256(SHA256(x))`, or Hash256) in processes such as calculating block hashes and generating addresses from public keys.
 
 ### Public Key Cryptography and Digital Signatures
 
 Ownership of cryptocurrency is proven by a pair of keys: a Private Key and a Public Key.
-- **Private Key** $$k$$: A randomly generated 256-bit integer. It must never be known to anyone else.
-- **Public Key** $$K$$: A key calculated from the private key using a one-way function. It is published on the network.
+- **Private Key** $k$: A randomly generated 256-bit integer. It must never be known to anyone else.
+- **Public Key** $K$: A key calculated from the private key using a one-way function. It is published on the network.
 
 When Alice sends Bitcoin to Bob, Alice uses her private key to create a **Digital Signature** for the transaction data. Network participants can use Alice's public key to verify whether the signature is valid (whether Alice truly created it using her private key).
 
@@ -116,41 +116,41 @@ When Alice sends Bitcoin to Bob, Alice uses her private key to create a **Digita
 
 For Bitcoin's public key generation and digital signatures, **Elliptic Curve Cryptography (ECC)** is adopted instead of RSA encryption. ECC has the advantage of providing an equivalent level of security with a much shorter key length compared to RSA.
 
-The specific elliptic curve parameters used in Bitcoin are called **secp256k1**. This curve is defined over a finite field $$\mathbb{F}_p$$ and is represented by the following equation:
+The specific elliptic curve parameters used in Bitcoin are called **secp256k1**. This curve is defined over a finite field $\mathbb{F}_p$ and is represented by the following equation:
 
 $$
 y^2 \equiv x^3 + 7 \pmod{p}
 $$
 
-Here, $$p$$ is a very large prime number:
+Here, $p$ is a very large prime number:
 $$
 p = 2^{256} - 2^{32} - 2^{9} - 2^{8} - 2^{7} - 2^{6} - 2^{4} - 1
 $$
 
-The private key $$k$$ is a random number in the range from $$1$$ to $$n-1$$ ($$n$$ is the order of the curve). The public key $$K$$ is obtained by performing scalar multiplication on a certain Generator Point $$G$$ on the curve by the number of times specified by the private key.
+The private key $k$ is a random number in the range from $1$ to $n-1$ ($n$ is the order of the curve). The public key $K$ is obtained by performing scalar multiplication on a certain Generator Point $G$ on the curve by the number of times specified by the private key.
 
 $$
 K = k \cdot G
 $$
 
-This calculation can be performed efficiently by repeating Point Addition and Point Doubling on the elliptic curve. However, calculating the private key $$k$$ backwards from the public key $$K$$ and the Generator Point $$G$$ is an extremely computationally difficult problem known as the **Elliptic Curve Discrete Logarithm Problem (ECDLP)**, which forms the foundation of cryptocurrency security.
+This calculation can be performed efficiently by repeating Point Addition and Point Doubling on the elliptic curve. However, calculating the private key $k$ backwards from the public key $K$ and the Generator Point $G$ is an extremely computationally difficult problem known as the **Elliptic Curve Discrete Logarithm Problem (ECDLP)**, which forms the foundation of cryptocurrency security.
 
 ### ECDSA (Elliptic Curve Digital Signature Algorithm)
 
-**ECDSA** is used to sign transactions. The signature process when the message (transaction hash) is $$z$$ is as follows:
+**ECDSA** is used to sign transactions. The signature process when the message (transaction hash) is $z$ is as follows:
 
-1. Select a random integer $$k_e$$ (ephemeral key) from $$1$$ to $$n-1$$.
-2. Calculate the point $$(x_1, y_1) = k_e \cdot G$$ on the curve.
-3. Calculate $$r = x_1 \pmod{n}$$. If $$r = 0$$, return to step 1.
-4. Calculate $$s = k_e^{-1} (z + r \cdot k) \pmod{n}$$. If $$s = 0$$, return to step 1.
-5. The signature is the pair $$(r, s)$$.
+1. Select a random integer $k_e$ (ephemeral key) from $1$ to $n-1$.
+2. Calculate the point $(x_1, y_1) = k_e \cdot G$ on the curve.
+3. Calculate $r = x_1 \pmod{n}$. If $r = 0$, return to step 1.
+4. Calculate $s = k_e^{-1} (z + r \cdot k) \pmod{n}$. If $s = 0$, return to step 1.
+5. The signature is the pair $(r, s)$.
 
-In the verification process, the following calculations are performed using the public key $$K$$ and the signature $$(r, s)$$:
+In the verification process, the following calculations are performed using the public key $K$ and the signature $(r, s)$:
 
-1. $$u_1 = z \cdot s^{-1} \pmod{n}$$
-2. $$u_2 = r \cdot s^{-1} \pmod{n}$$
-3. Calculate the point $$(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$$.
-4. If $$r \equiv x_2 \pmod{n}$$, the signature is considered valid.
+1. $u_1 = z \cdot s^{-1} \pmod{n}$
+2. $u_2 = r \cdot s^{-1} \pmod{n}$
+3. Calculate the point $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
+4. If $r \equiv x_2 \pmod{n}$, the signature is considered valid.
 
 ## 5. Consensus Algorithms and Proof of Work (PoW)
 
@@ -172,7 +172,7 @@ $$
 
 Because the output of a hash function appears completely random, there is no efficient algorithm to find a nonce that meets the condition. The only way is to use a brute-force attack, changing the value of the nonce and repeating the hash calculation.
 
-The smaller the target value, the lower the probability of finding a hash that meets the condition. If the target requires $$k$$ leading zeros, the average number of calculations required to find that block is $$2^k$$. This massive investment of computational energy makes it impossible to tamper with past records on the blockchain.
+The smaller the target value, the lower the probability of finding a hash that meets the condition. If the target requires $k$ leading zeros, the average number of calculations required to find that block is $2^k$. This massive investment of computational energy makes it impossible to tamper with past records on the blockchain.
 
 ### Difficulty Adjustment
 
@@ -240,19 +240,19 @@ Behind SHA-256 and Elliptic Curve Cryptography (ECC) explained in the previous c
 Computational security is a security premise based on the idea that "breaking a certain cipher would require more time than the lifespan of the universe and astronomical computational resources, making it practically unbreakable."
 
 Let's review the Elliptic Curve Discrete Logarithm Problem (ECDLP), which guarantees the security of Bitcoin's public-key cryptography, using mathematical formulas.
-The problem is to find an unknown integer $$k$$ that satisfies $$Q = kP$$, given points $$P$$ and $$Q$$ on an elliptic curve $$E(\mathbb{F}_p)$$.
-Using a classical computer, the computational complexity of the best algorithms to solve this problem (such as Pollard's $$\rho$$ algorithm) is $$\mathcal{O}(\sqrt{p})$$.
-In Bitcoin's secp256k1, $$p \approx 2^{256}$$, so cracking it would require about $$2^{128}$$ operations. This is an amount of calculation that would take trillions of times longer than the age of the universe (about 13.8 billion years), even if all computers currently on Earth were mobilized.
+The problem is to find an unknown integer $k$ that satisfies $Q = kP$, given points $P$ and $Q$ on an elliptic curve $E(\mathbb{F}_p)$.
+Using a classical computer, the computational complexity of the best algorithms to solve this problem (such as Pollard's $\rho$ algorithm) is $\mathcal{O}(\sqrt{p})$.
+In Bitcoin's secp256k1, $p \approx 2^{256}$, so cracking it would require about $2^{128}$ operations. This is an amount of calculation that would take trillions of times longer than the age of the universe (about 13.8 billion years), even if all computers currently on Earth were mobilized.
 
 ### The Threat of Quantum Computers and Post-Quantum Cryptography
 
 However, there is one major concern regarding computational security. That is the rise of **Quantum Computers**.
-"Shor's Algorithm", published by Peter Shor in 1994, mathematically proved that if a quantum computer is used, problems such as the prime factorization problem (the foundation of RSA cryptography) and the discrete logarithm problem (the foundation of ECC) can be solved in polynomial time $$\mathcal{O}(n^3)$$.
+"Shor's Algorithm", published by Peter Shor in 1994, mathematically proved that if a quantum computer is used, problems such as the prime factorization problem (the foundation of RSA cryptography) and the discrete logarithm problem (the foundation of ECC) can be solved in polynomial time $\mathcal{O}(n^3)$.
 
 If a practical, large-scale quantum computer with sufficient Qubits and a low error rate is completed, there will be a risk that private keys could be reverse-engineered from Bitcoin public keys.
 The Bitcoin network's defense measures against this are as follows:
 
-1. **Protection of Hash Functions**: A Bitcoin address is not the public key itself, but the result of applying the SHA-256 and RIPEMD-160 hash functions to the public key. Even using a quantum computer, reversing a hash function (even using Grover's algorithm, the computational complexity is $$\mathcal{O}(\sqrt{N})$$) remains difficult. Therefore, until a transaction is made and the public key is exposed to the network, the contents of the address can be considered safe even from quantum computers.
+1. **Protection of Hash Functions**: A Bitcoin address is not the public key itself, but the result of applying the SHA-256 and RIPEMD-160 hash functions to the public key. Even using a quantum computer, reversing a hash function (even using Grover's algorithm, the computational complexity is $\mathcal{O}(\sqrt{N})$) remains difficult. Therefore, until a transaction is made and the public key is exposed to the network, the contents of the address can be considered safe even from quantum computers.
 2. **Transition to Post-Quantum Cryptography (PQC)**: There is discussion about hard forking the Bitcoin protocol before quantum computers become practical to transition to new signature algorithms that are difficult even for quantum computers to crack, such as lattice-based cryptography or multivariate polynomial cryptography, which are being selected by NIST (National Institute of Standards and Technology).
 
 ## 9. Network Topology and P2P Protocol Details
