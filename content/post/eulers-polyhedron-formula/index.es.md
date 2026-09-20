@@ -60,7 +60,7 @@ Dibuja diagonales para dividir cada polígono del grafo plano en triángulos.
 Dibujar una diagonal añade 1 arista ($E$) y 1 cara ($F$).
 Por lo tanto, $V - (E + 1) + (F + 1) = V - E + F$, manteniendo inalterado el valor de la fórmula.
 
-### Paso 3: Quitando Triángulos desde el Exterior
+### Paso 3: Quitando [Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulos desde el Exterior
 
 Una vez que todas las caras son triángulos, comienza a quitarlos uno por uno desde el exterior.
 Al quitarlos, ocurrirá uno de los dos patrones siguientes:
@@ -68,7 +68,7 @@ Al quitarlos, ocurrirá uno de los dos patrones siguientes:
 1. **Quitar una arista exterior**: Se pierde 1 arista ($E$) y 1 cara ($F$). El valor de la fórmula se mantiene inalterado.
 2. **Quitar dos aristas exteriores y el vértice entre ellas**: Se pierde 1 vértice ($V$), 2 aristas ($E$) y 1 cara ($F$). $(V - 1) - (E - 2) + (F - 1) = V - E + F$, por lo que el valor también se mantiene inalterado.
 
-### Paso 4: El Último Triángulo
+### Paso 4: El Último [Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulo
 
 Repitiendo esta operación, eventualmente solo quedará un único triángulo.
 Este triángulo tiene 3 vértices, 3 aristas y 1 cara.

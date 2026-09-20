@@ -30,7 +30,7 @@ En programmation compétitive, il est courant d'utiliser une **liste d'adjacence
 
 ## 2. Exploration et ordonnancement des graphes
 
-### Tri topologique (Topological Sort)
+### [Tri](https://kenji.blog/fr/p/sorting-algorithms/) topologique (Topological Sort)
 
 Le tri topologique est un algorithme qui aligne les sommets d'un graphe orienté acyclique (DAG : Directed Acyclic Graph) de sorte que chaque arête orientée aille d'un sommet précédent vers un sommet suivant. Il est utilisé pour résoudre les dépendances entre les tâches (par exemple : la tâche B ne peut commencer que lorsque la tâche A est terminée) ou pour déterminer l'ordre de calcul de la programmation dynamique (DP) sur un DAG.
 

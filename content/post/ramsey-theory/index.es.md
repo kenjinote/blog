@@ -37,7 +37,7 @@ Representamos a las personas como puntos y sus relaciones como líneas:
 | Punto (vértice) | 1 participante |
 | Línea continua roja | Ambos se conocen mutuamente |
 | Línea discontinua azul | Ambos no se conocen entre sí |
-| Triángulo formado por 3 lados del mismo color | El trío buscado |
+| [Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulo formado por 3 lados del mismo color | El trío buscado |
 
 Como conectamos todos los pares posibles de personas, esto constituye un **grafo completo**. Un grafo completo de $n$ vértices se denota como $K_n$, y su número de aristas es el siguiente:
 

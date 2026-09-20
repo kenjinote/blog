@@ -65,18 +65,18 @@ $$
 \exists C > 0, \exists x_0 > 0, \forall x > x_0, |f(x)| \le C \cdot |g(x)|
 $$
 
-日本の情報教育において、例えばデータの並び替え（ソート処理）を学ぶ際、単にPythonで `array.sort()` というビルトインメソッドを呼んで終わりにしてしまうケースが散見されます。しかし、情報工学として真に求められるのは、なぜ単純なバブルソートが実用領域で決して使われず、クイックソート、マージソート、あるいはティムソート（Timsort）が標準ライブラリとして採用されているのかを、数学的に理解し証明することです。
+日本の情報教育において、例えばデータの並び替え（[ソート](https://kenji.blog/p/sorting-algorithms/)処理）を学ぶ際、単にPythonで `array.sort()` というビルトインメソッドを呼んで終わりにしてしまうケースが散見されます。しかし、情報工学として真に求められるのは、なぜ単純な[バブル[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)が実用領域で決して使われず、[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)、[マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)、あるいは[ティム[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)（[Timsort](https://kenji.blog/p/sorting-algorithms/)）が標準ライブラリとして採用されているのかを、数学的に理解し証明することです。
 
-以下に代表的なソートアルゴリズムの平均時間計算量を示します。
+以下に代表的な[[ソート](https://kenji.blog/p/sorting-algorithms/)アルゴリズム](https://kenji.blog/p/sorting-algorithms/)の平均時間計算量を示します。
 
-- バブルソート (Bubble Sort): $O(N^2)$
-- 選択ソート (Selection Sort): $O(N^2)$
-- 挿入ソート (Insertion Sort): $O(N^2)$
-- マージソート (Merge Sort): $O(N \log N)$
-- クイックソート (Quick Sort): $O(N \log N)$
-- ヒープソート (Heap Sort): $O(N \log N)$
+- [バブル[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Bubble Sort): $O(N^2)$
+- 選択[ソート](https://kenji.blog/p/sorting-algorithms/) (Selection Sort): $O(N^2)$
+- [挿入[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Insertion Sort): $O(N^2)$
+- [マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Merge Sort): $O(N \log N)$
+- [クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Quick Sort): $O(N \log N)$
+- [ヒープ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Heap Sort): $O(N \log N)$
 
-例えば、マージソートの時間計算量 $T(N)$ は、分割統治法（Divide and Conquer）のパラダイムにより、以下の漸化式で表現されます。
+例えば、[マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)の時間計算量 $T(N)$ は、分割統治法（Divide and Conquer）のパラダイムにより、以下の漸化式で表現されます。
 
 $$
 T(N) = 2T\left(\frac{N}{2}\right) + O(N)

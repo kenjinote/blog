@@ -65,7 +65,7 @@ $$
 \exists C > 0, \exists x_0 > 0, \forall x > x_0, |f(x)| \le C \cdot |g(x)|
 $$
 
-In Japan's information education, when learning about data sorting, for example, there are cases where it simply ends with calling a built-in method like `array.sort()` in Python. However, what is truly required in information engineering is the mathematical understanding and proof of why the simple Bubble Sort is never used in practical domains, and why Quick Sort, Merge Sort, or Timsort are adopted as standard libraries.
+In Japan's information education, when learning about data sorting, for example, there are cases where it simply ends with calling a built-in method like `array.sort()` in Python. However, what is truly required in information engineering is the mathematical understanding and proof of why the simple Bubble Sort is never used in practical domains, and why Quick Sort, Merge Sort, or [Timsort](https://kenji.blog/en/p/sorting-algorithms/) are adopted as standard libraries.
 
 Below are the average time complexities of representative sorting algorithms.
 

@@ -60,7 +60,7 @@ Desenhe diagonais para dividir cada polígono no grafo planar em triângulos.
 Desenhar uma diagonal adiciona 1 aresta ($E$) e 1 face ($F$).
 Portanto, $V - (E + 1) + (F + 1) = V - E + F$, mantendo inalterado o valor da fórmula.
 
-### Passo 3: Removendo Triângulos do Exterior
+### Passo 3: Removendo [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulos do Exterior
 
 Quando todas as faces forem triângulos, comece a removê-las uma por uma a partir do exterior.
 Ao removê-las, um dos dois padrões a seguir ocorrerá:
@@ -68,7 +68,7 @@ Ao removê-las, um dos dois padrões a seguir ocorrerá:
 1. **Remover uma aresta exterior**: 1 aresta ($E$) é perdida, e 1 face ($F$) é perdida. O valor da fórmula permanece inalterado.
 2. **Remover duas arestas exteriores e o vértice entre elas**: 1 vértice ($V$) é perdido, 2 arestas ($E$) são perdidas, e 1 face ($F$) é perdida. $(V - 1) - (E - 2) + (F - 1) = V - E + F$, de modo que o valor também permanece inalterado.
 
-### Passo 4: O Último Triângulo
+### Passo 4: O Último [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo
 
 Ao repetir esta operação, restará apenas um único triângulo.
 Este triângulo tem 3 vértices, 3 arestas e 1 face.

@@ -266,7 +266,7 @@ No matter how sophisticated a system or tool you build, it defeats the purpose i
 
 1. **Keep it simple**: Do not create overly complex properties or perfect relations from the start. Strive for "agile Notion building" where you add properties only when needed.
 2. **Thorough Weekly Reviews**: Set aside time, such as every Sunday night, to review Notion as a whole. Keep the system clean by organizing completed tasks, rescheduling expired tasks, and tagging uncategorized Notes.
-3. **Utilize an Inbox**: Sorting ideas and tasks you come up with into appropriate databases each time is tedious. A stress-free operation is to create an "Inbox" database where you dump everything first, and sort them into Projects or Notes later (such as during a weekly review).
+3. **Utilize an Inbox**: [Sorting](https://kenji.blog/en/p/sorting-algorithms/) ideas and tasks you come up with into appropriate databases each time is tedious. A stress-free operation is to create an "Inbox" database where you dump everything first, and sort them into Projects or Notes later (such as during a weekly review).
 
 ## 8. Conclusion
 

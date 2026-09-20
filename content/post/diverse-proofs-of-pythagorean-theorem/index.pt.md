@@ -53,7 +53,7 @@ Embora este método pareça complexo devido às numerosas linhas auxiliares, é 
 
 ---
 
-## 2. Prova Algébrica Usando Triângulos Semelhantes
+## 2. Prova Algébrica Usando [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulos Semelhantes
 
 A seguir, apresentamos uma prova que utiliza a razão de semelhança dos triângulos. Este método requer cálculo mínimo e apresenta uma progressão lógica altamente elegante.
 

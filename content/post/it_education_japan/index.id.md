@@ -65,7 +65,7 @@ $$
 \exists C > 0, \exists x_0 > 0, \forall x > x_0, |f(x)| \le C \cdot |g(x)|
 $$
 
-Dalam pendidikan informasi di Jepang, misalnya saat mempelajari pengurutan data (sorting), kerap ditemui kasus di mana materi selesai hanya dengan memanggil metode bawaan (built-in) `array.sort()` menggunakan Python. Namun, yang sesungguhnya dituntut dalam teknik informatika adalah memahami dan membuktikan secara matematis mengapa Bubble Sort sederhana hampir tidak pernah digunakan di lingkungan nyata, sedangkan Quick Sort, Merge Sort, atau Timsort diadopsi sebagai library standar.
+Dalam pendidikan informasi di Jepang, misalnya saat mempelajari pengurutan data (sorting), kerap ditemui kasus di mana materi selesai hanya dengan memanggil metode bawaan (built-in) `array.sort()` menggunakan Python. Namun, yang sesungguhnya dituntut dalam teknik informatika adalah memahami dan membuktikan secara matematis mengapa Bubble Sort sederhana hampir tidak pernah digunakan di lingkungan nyata, sedangkan Quick Sort, Merge Sort, atau [Timsort](https://kenji.blog/id/p/sorting-algorithms/) diadopsi sebagai library standar.
 
 Berikut adalah rata-rata kompleksitas waktu dari algoritma pengurutan yang umum digunakan:
 

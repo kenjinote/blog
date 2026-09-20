@@ -76,7 +76,7 @@ Em 1642, após muitas tentativas e erros, [Pascal](https://kenji.blog/pt/p/pasca
 
 ### 3.3. O triângulo de [Pascal](https://kenji.blog/pt/p/pascal/) e o teorema binomial
 
-O conceito matemático pelo qual o nome de [Pascal](https://kenji.blog/pt/p/pascal/) é mais amplamente conhecido é o **triângulo de [Pascal](https://kenji.blog/pt/p/pascal/)**. Trata-se de um arranjo geométrico dos coeficientes de uma expansão binomial em forma de triângulo. Embora fosse conhecido antes de [Pascal](https://kenji.blog/pt/p/pascal/) por matemáticos como Jia Xian e Yang Hui na China, e Omar Khayyam na Pérsia, [Pascal](https://kenji.blog/pt/p/pascal/) estudou sistemática e minuciosamente as propriedades deste triângulo em seu *Tratado sobre o Triângulo Aritmético* de 1653.
+O conceito matemático pelo qual o nome de [Pascal](https://kenji.blog/pt/p/pascal/) é mais amplamente conhecido é o **triângulo de [Pascal](https://kenji.blog/pt/p/pascal/)**. Trata-se de um arranjo geométrico dos coeficientes de uma expansão binomial em forma de triângulo. Embora fosse conhecido antes de [Pascal](https://kenji.blog/pt/p/pascal/) por matemáticos como Jia Xian e Yang Hui na China, e Omar Khayyam na Pérsia, [Pascal](https://kenji.blog/pt/p/pascal/) estudou sistemática e minuciosamente as propriedades deste triângulo em seu *Tratado sobre o [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo Aritmético* de 1653.
 
 O triângulo de [Pascal](https://kenji.blog/pt/p/pascal/) é construído de tal forma que o número na $n$-ésima linha a partir do topo e na $k$-ésima posição a partir da esquerda é o coeficiente binomial $\binom{n}{k}$. O teorema binomial é expresso da seguinte forma:
 

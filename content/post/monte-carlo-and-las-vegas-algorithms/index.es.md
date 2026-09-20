@@ -89,15 +89,15 @@ La fortaleza del método de Las Vegas radica en su fiabilidad para "no devolver 
 Por otro lado, el tiempo hasta que el algoritmo termina depende de los números aleatorios. Aunque el "tiempo de ejecución esperado (complejidad promedio)" sea muy corto, no se puede descartar por completo la posibilidad teórica de alcanzar la complejidad computacional del peor de los casos, o entrar en un bucle infinito si se tiene una suerte nefasta.
 Aun así, en el mundo real, las probabilidades de caer en ese "caso de extrema mala suerte" son astronómicamente bajas, por lo que en la práctica estos algoritmos suelen operar más rápido que los deterministas y son ampliamente adoptados.
 
-### Ejemplo 1: Quicksort Aleatorizado (Randomized QuickSort)
+### Ejemplo 1: [Quicksort](https://kenji.blog/es/p/sorting-algorithms/) Aleatorizado (Randomized QuickSort)
 
-Una aplicación clásica del método de Las Vegas la encontramos en el célebre algoritmo de ordenamiento Quicksort, al utilizar un número aleatorio para elegir el pivote (el valor de referencia).
+Una aplicación clásica del método de Las Vegas la encontramos en el célebre algoritmo de ordenamiento [Quicksort](https://kenji.blog/es/p/sorting-algorithms/), al utilizar un número aleatorio para elegir el pivote (el valor de referencia).
 
-En un Quicksort convencional, suele usarse una estrategia fija, como escoger siempre el último elemento del arreglo como pivote. Sin embargo, en ese caso, si la matriz que se le pasa ya está previamente ordenada, su complejidad temporal caerá en el peor caso posible: $O(n^2)$.
+En un [Quicksort](https://kenji.blog/es/p/sorting-algorithms/) convencional, suele usarse una estrategia fija, como escoger siempre el último elemento del arreglo como pivote. Sin embargo, en ese caso, si la matriz que se le pasa ya está previamente ordenada, su complejidad temporal caerá en el peor caso posible: $O(n^2)$.
 
-En el **Quicksort Aleatorizado**, el pivote se elige al azar entre los elementos del arreglo. Con esto se garantiza matemáticamente que la complejidad promedio sea $O(n \log n)$, independientemente del orden de los datos de entrada. El resultado de la clasificación arrojado siempre es totalmente correcto.
+En el **[Quicksort](https://kenji.blog/es/p/sorting-algorithms/) Aleatorizado**, el pivote se elige al azar entre los elementos del arreglo. Con esto se garantiza matemáticamente que la complejidad promedio sea $O(n \log n)$, independientemente del orden de los datos de entrada. El resultado de la clasificación arrojado siempre es totalmente correcto.
 
-Si el arreglo que queremos ordenar cuenta con varios cientos de millones de elementos y da la casualidad de que casi todos ya vienen ordenados, el Quicksort normal entrañaría un serio peligro de provocar un desbordamiento de pila (stack overflow) o de prolongar exageradamente el tiempo de proceso. En cambio, mediante el Quicksort Aleatorizado, poseemos la ventaja de garantizar un rendimiento rápido y estable, incluso frente a datos de entrada maliciosos ideados para forzar el peor de los casos (un tipo de ataque DoS). Así es como el método de Las Vegas contribuye también a afianzar la robustez y seguridad de los sistemas.
+Si el arreglo que queremos ordenar cuenta con varios cientos de millones de elementos y da la casualidad de que casi todos ya vienen ordenados, el [Quicksort](https://kenji.blog/es/p/sorting-algorithms/) normal entrañaría un serio peligro de provocar un desbordamiento de pila (stack overflow) o de prolongar exageradamente el tiempo de proceso. En cambio, mediante el [Quicksort](https://kenji.blog/es/p/sorting-algorithms/) Aleatorizado, poseemos la ventaja de garantizar un rendimiento rápido y estable, incluso frente a datos de entrada maliciosos ideados para forzar el peor de los casos (un tipo de ataque DoS). Así es como el método de Las Vegas contribuye también a afianzar la robustez y seguridad de los sistemas.
 
 #### Ejemplo de implementación en Python
 
@@ -142,7 +142,7 @@ A continuación, mostramos una comparación clara sobre las diferencias entre am
 | Algoritmo | Tiempo de Ejecución | Precisión de los Resultados | Principales casos de uso |
 | --- | --- | --- | --- |
 | **Método de Montecarlo** | Siempre constante (con límite máximo) | Puede equivocarse de manera probabilística | Cálculo de Pi, pruebas de primalidad, simulaciones físicas |
-| **Método de Las Vegas** | Fluctúa de manera probabilística (infinito en el peor caso) | Siempre 100% correcto | Quicksort aleatorizado, construcción de tablas Hash |
+| **Método de Las Vegas** | Fluctúa de manera probabilística (infinito en el peor caso) | Siempre 100% correcto | [Quicksort](https://kenji.blog/es/p/sorting-algorithms/) aleatorizado, construcción de tablas Hash |
 
 Igualmente, los dos se ubican en los extremos opuestos respecto a qué factor prefieren fijar: el "tiempo" o la "precisión". Podríamos interpretar que el método de Montecarlo sacrifica precisión a cambio de asegurar un tiempo fijo, mientras que el método de Las Vegas supedita el tiempo a fin de garantizar una precisión invariable.
 
@@ -182,7 +182,7 @@ Si programamos un bucle en el cual lanzamos el de Montecarlo, aplicamos un verif
 En el artículo de hoy hemos abordado dos potentes concepciones de algoritmos que sacan provecho de los números aleatorios.
 
 - **Método de Montecarlo**: Acata los plazos de tiempo, aunque a veces yerra en los resultados. (Ej: cálculos aproximados, tests de primalidad, etc.)
-- **Método de Las Vegas**: Bajo ningún concepto comete un error, pero a veces no acata los plazos. (Ej: Quicksort, creación de tablas Hash, etc.)
+- **Método de Las Vegas**: Bajo ningún concepto comete un error, pero a veces no acata los plazos. (Ej: [Quicksort](https://kenji.blog/es/p/sorting-algorithms/), creación de tablas Hash, etc.)
 
 De cara al desarrollo en entornos reales o a la labor en ciencia de datos, el decidirnos por uno u otro proceder estará condicionado por si prevalece la urgencia del proceso (un tope estricto de computación en tiempo real) o si, por contrapartida, impera el rigor extremo. A veces, las circunstancias exigirán un modelo intermedio.
 

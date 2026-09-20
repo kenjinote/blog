@@ -89,10 +89,10 @@ Er generiert Zufallszahlen und überprüft das Ergebnis. Wenn das Ergebnis falsc
 
 ### Repräsentative Anwendungsbeispiele
 
-#### Randomisiertes Quicksort (Randomized Quick Sort)
+#### Randomisiertes [Quicksort](https://kenji.blog/de/p/sorting-algorithms/) (Randomized Quick Sort)
 
-Das bekannte Quicksort ist im Grunde ein Las-Vegas-Algorithmus.
-Quicksort wählt ein Element als Pivot aus und teilt das Array in Elemente auf, die kleiner bzw. größer als der Pivot sind.
+Das bekannte [Quicksort](https://kenji.blog/de/p/sorting-algorithms/) ist im Grunde ein Las-Vegas-Algorithmus.
+[Quicksort](https://kenji.blog/de/p/sorting-algorithms/) wählt ein Element als Pivot aus und teilt das Array in Elemente auf, die kleiner bzw. größer als der Pivot sind.
 Wenn die Pivot-Auswahl ungünstig ist (z. B. wenn das Array bereits sortiert ist und das kleinste/größte Element gewählt wird), verschlechtert sich die Zeitkomplexität auf das schlimmste Niveau von $O(N^2)$.
 Indem man **den Pivot jedoch jedes Mal zufällig auswählt**, beträgt die erwartete Zeitkomplexität $O(N \log N)$.
 
@@ -138,7 +138,7 @@ Die Antwort bei Beendigung ist definitiv zu 100% sortiert. Allerdings beträgt d
 | **Korrektheit der Lösung** | **Nicht zu 100% garantiert** (enthält eine Fehlerwahrscheinlichkeit) | **Immer 100% korrekt** |
 | **Ausführungszeit** | Garantiert deterministisch (**schnell**) | **Zufällig** (kann sehr lange dauern) |
 | **Gegenmaßnahmen (Wiederholung)** | Reduziert die Fehlerwahrscheinlichkeit (wird genauer) | Stabilisiert die erwartete Ausführungszeit (wird berechenbarer) |
-| **Eignung / Anwendungsfälle** | Wenn „Geschwindigkeit“ wichtiger ist als „absolute Genauigkeit“ (z. B. Primzahltests, maschinelles Lernen, Physik-Simulationen) | Wenn „absolute Genauigkeit“ erforderlich ist, aber „die Lösung schwer zu finden, aber leicht zu überprüfen ist“ (z. B. Sortieren, Suche nach der optimalen Lösung, randomisierte Hash-Tabellen) |
+| **Eignung / Anwendungsfälle** | Wenn „Geschwindigkeit“ wichtiger ist als „absolute Genauigkeit“ (z. B. Primzahltests, maschinelles Lernen, Physik-Simulationen) | Wenn „absolute Genauigkeit“ erforderlich ist, aber „die Lösung schwer zu finden, aber leicht zu überprüfen ist“ (z. B. [Sortieren](https://kenji.blog/de/p/sorting-algorithms/), Suche nach der optimalen Lösung, randomisierte Hash-Tabellen) |
 
 ## 4. Umwandlung zwischen beiden
 
@@ -153,6 +153,6 @@ Das Gegenteil ist ebenfalls möglich. Wenn man die Ausführung eines Las-Vegas-A
 ## Fazit
 
 - **Monte Carlo**: Garantiert Zeit, geht Kompromisse bei der Korrektheit der Lösung (Wahrscheinlichkeit) ein. (Beispiel: Miller-Rabin-Primzahltest)
-- **Las Vegas**: Garantiert die Korrektheit der Lösung, geht Kompromisse bei der Zeit (Wahrscheinlichkeit) ein. (Beispiel: Randomisiertes Quicksort)
+- **Las Vegas**: Garantiert die Korrektheit der Lösung, geht Kompromisse bei der Zeit (Wahrscheinlichkeit) ein. (Beispiel: Randomisiertes [Quicksort](https://kenji.blog/de/p/sorting-algorithms/))
 
 In realen Systementwicklungen und dem Entwurf moderner Algorithmen (insbesondere bei großen Datenmengen, verteiltes Rechnen und Kryptografie) kann das Beharren auf streng deterministischen Algorithmen zu astronomischen Rechenzeiten führen. Das Verständnis der Merkmale von Monte-Carlo und Las-Vegas und deren geschickte Implementierung ist ein sehr mächtiges Werkzeug, um Leistungsengpässe zu überwinden.

@@ -25,7 +25,7 @@ Para entender el Lema de Sperner, primero debemos aclarar los conceptos de un **
 En un espacio de $n$ dimensiones, cuando hay $n+1$ puntos geométricamente independientes, el conjunto convexo más pequeño construido con ellos como vértices se llama un **$n$-símplice**.
 - 0-símplice: Punto
 - 1-símplice: Segmento de línea
-- 2-símplice: Triángulo
+- 2-símplice: [Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulo
 - 3-símplice: Tetraedro
 
 Aquí nos enfocaremos principalmente en el 2-símplice, el "triángulo", que es el más fácil de entender visualmente. Supongamos que hay un gran triángulo $T$, y sean sus tres vértices $V_1, V_2, V_3$.
@@ -73,7 +73,7 @@ Cuando terminas de colorear de acuerdo con las reglas de la coloración de Spern
 > En cualquier coloración de Sperner, el número de pequeños triángulos donde los tres vértices están pintados de colores diferentes (color 1, color 2 y color 3) **debe ser un número impar**.
 > Como es un número impar (1, 3, 5, ...), tal "triángulo pequeño completo con los 3 colores" **debe existir al menos una vez**.
 
-No importa cuán intencionadamente colorees los vértices internos, o cuán fina y complejamente dividas el triángulo, un pequeño triángulo con los 3 colores (llamémoslo un **Triángulo Completo**) aparecerá definitivamente en alguna parte.
+No importa cuán intencionadamente colorees los vértices internos, o cuán fina y complejamente dividas el triángulo, un pequeño triángulo con los 3 colores (llamémoslo un **[Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulo Completo**) aparecerá definitivamente en alguna parte.
 
 # 5. Una Hermosa Demostración Usando la Teoría de Grafos
 
@@ -95,7 +95,7 @@ Consideremos cuántas puertas tiene cada habitación (triángulo pequeño). Dado
    - Hay exactamente dos aristas que conectan el color 1 y el color 2. Por lo tanto, hay **2 puertas** .
 3. **Habitaciones con colores (1, 3, 3) o (2, 2, 3) etc.**
    - Como no hay un par de 1 y 2, hay **0 puertas** .
-4. **Habitaciones con colores (1, 2, 3) (Triángulo Completo)**
+4. **Habitaciones con colores (1, 2, 3) ([Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulo Completo)**
    - Sólo hay una arista que conecta el color 1 y el color 2. Por lo tanto, hay **1 puerta** .
 
 En resumen, **sólo las habitaciones de los triángulos completos tienen un número impar (1) de puertas, y todas las demás habitaciones tienen un número par (0 o 2) de puertas** .
@@ -124,11 +124,11 @@ En el grafo que creamos, ¿cuáles son los grados (número de puertas) de cada v
 - Grado de otras habitaciones = 0 o 2 = **Número par**
 
 Calculemos la suma total de los grados.
-$$ \text{Suma Total} = \text{Grado del Exterior} + \text{Suma de Grados de Triángulos Completos} + \text{Suma de Grados de Otras Habitaciones} $$
+$$ \text{Suma Total} = \text{Grado del Exterior} + \text{Suma de Grados de [Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulos Completos} + \text{Suma de Grados de Otras Habitaciones} $$
 
 La suma total debe ser un número par.
 El grado del exterior es "impar", y la suma de los grados de las otras habitaciones es "par".
-Por lo tanto, la "Suma de Grados de Triángulos Completos" **debe ser un número impar** para que la suma total sea par.
+Por lo tanto, la "Suma de Grados de [Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulos Completos" **debe ser un número impar** para que la suma total sea par.
 Como el grado de cada triángulo completo es 1, el número de triángulos completos **debe ser un número impar** .
 
 Con esto, queda perfectamente demostrado que hay al menos un triángulo completo.

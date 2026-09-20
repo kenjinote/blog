@@ -65,7 +65,7 @@ $$
 \exists C > 0, \exists x_0 > 0, \forall x > x_0, |f(x)| \le C \cdot |g(x)|
 $$
 
-No ensino de informática no Japão, por exemplo, ao aprender sobre a ordenação de dados (classificação), há casos em que os alunos simplesmente chamam um método integrado como `array.sort()` no Python e consideram o assunto encerrado. No entanto, o que a engenharia da computação realmente exige é entender matematicamente e provar por que um simples bubble sort nunca é usado na prática, enquanto quicksort, mergesort ou Timsort são adotados como bibliotecas padrão.
+No ensino de informática no Japão, por exemplo, ao aprender sobre a ordenação de dados (classificação), há casos em que os alunos simplesmente chamam um método integrado como `array.sort()` no Python e consideram o assunto encerrado. No entanto, o que a engenharia da computação realmente exige é entender matematicamente e provar por que um simples bubble sort nunca é usado na prática, enquanto quicksort, mergesort ou [Timsort](https://kenji.blog/pt/p/sorting-algorithms/) são adotados como bibliotecas padrão.
 
 Abaixo está a complexidade de tempo média dos algoritmos de classificação representativos.
 

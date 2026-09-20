@@ -65,7 +65,7 @@ $$
 \exists C > 0, \exists x_0 > 0, \forall x > x_0, |f(x)| \le C \cdot |g(x)|
 $$
 
-Im japanischen Informatikunterricht ist es beispielsweise beim Erlernen der Datensortierung üblich, dass die Schüler einfach die integrierte Methode `array.sort()` in Python aufrufen und es damit belassen. Was in der Informatik jedoch wirklich gefordert ist, ist das mathematische Verständnis und der Beweis, warum ein einfaches Bubble Sort niemals in der Praxis verwendet wird und warum stattdessen Quick Sort, Merge Sort oder Timsort (Timsort) in Standardbibliotheken implementiert werden.
+Im japanischen Informatikunterricht ist es beispielsweise beim Erlernen der Datensortierung üblich, dass die Schüler einfach die integrierte Methode `array.sort()` in Python aufrufen und es damit belassen. Was in der Informatik jedoch wirklich gefordert ist, ist das mathematische Verständnis und der Beweis, warum ein einfaches Bubble Sort niemals in der Praxis verwendet wird und warum stattdessen Quick Sort, Merge Sort oder [Timsort](https://kenji.blog/de/p/sorting-algorithms/) ([Timsort](https://kenji.blog/de/p/sorting-algorithms/)) in Standardbibliotheken implementiert werden.
 
 Im Folgenden sind die durchschnittlichen Zeitkomplexitäten typischer Sortieralgorithmen aufgeführt.
 

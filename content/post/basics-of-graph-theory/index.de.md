@@ -246,7 +246,7 @@ Auf diese Weise wird ein Teilgraph, der alle Knoten des Graphen umfasst, absolut
 
 Einer der repräsentativen Algorithmen, um diesen minimalen Spannbaum zu finden, ist der **Kruskal-Algorithmus**. Der Kruskal-Algorithmus ist ein typisches Beispiel für einen „Gierigen Algorithmus (Greedy Algorithm)“, der lokale optimale Lösungen akkumuliert und dabei äußerst einfachen und intuitiven Schritten folgt.
 
-1.  Sortieren Sie alle im Graphen vorhandenen Kanten in aufsteigender Reihenfolge ihrer Gewichte.
+1.  [Sortieren](https://kenji.blog/de/p/sorting-algorithms/) Sie alle im Graphen vorhandenen Kanten in aufsteigender Reihenfolge ihrer Gewichte.
 2.  Extrahieren Sie die Kanten nacheinander, beginnend mit der mit dem kleinsten Gewicht, und übernehmen Sie sie nur dann offiziell in den Spannbaum, wenn das Hinzufügen dieser Kante keinen „Zyklus (Schleife)“ bildet.
 3.  Beenden Sie den Algorithmus, wenn die Anzahl der in den Spannbaum übernommenen Kanten „Gesamtzahl der Knoten - 1“ erreicht.
 

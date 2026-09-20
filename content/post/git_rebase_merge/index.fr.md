@@ -74,7 +74,7 @@ graph BT
 
 La caractéristique principale d'un DAG est l'absence de cycles (boucles). Grâce à cela, les algorithmes qui remontent l'historique des commits ne tombent jamais dans une boucle infinie et peuvent atteindre la fin (le commit initial) à coup sûr.
 
-## 3.2 Tri topologique et ordre de l'historique
+## 3.2 [Tri](https://kenji.blog/fr/p/sorting-algorithms/) topologique et ordre de l'historique
 
 Lors de l'affichage de l'historique avec des commandes comme `git log`, le DAG est ordonné sous forme de liste unidimensionnelle par un algorithme de tri topologique (Topological Sort). Pour toute arête orientée $u \to v$ ($u$ est l'enfant de $v$) dans le DAG, l'algorithme les réorganise de sorte que $u$ apparaisse avant $v$ dans la liste.
 

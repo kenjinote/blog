@@ -65,7 +65,7 @@ $$
 \exists C > 0, \exists x_0 > 0, \forall x > x_0, |f(x)| \le C \cdot |g(x)|
 $$
 
-En la educación en informática en Japón, al aprender a ordenar datos, por ejemplo, se ve con frecuencia el caso de simplemente llamar al método incorporado `array.sort()` en Python y darlo por terminado. Sin embargo, lo que realmente se requiere como ingeniería de la información es comprender matemáticamente y demostrar por qué un simple Bubble Sort nunca se usa en áreas prácticas, y por qué Quick Sort, Merge Sort o Timsort se adoptan como bibliotecas estándar.
+En la educación en informática en Japón, al aprender a ordenar datos, por ejemplo, se ve con frecuencia el caso de simplemente llamar al método incorporado `array.sort()` en Python y darlo por terminado. Sin embargo, lo que realmente se requiere como ingeniería de la información es comprender matemáticamente y demostrar por qué un simple Bubble Sort nunca se usa en áreas prácticas, y por qué Quick Sort, Merge Sort o [Timsort](https://kenji.blog/es/p/sorting-algorithms/) se adoptan como bibliotecas estándar.
 
 A continuación se muestra la complejidad temporal promedio de los algoritmos de ordenamiento representativos.
 

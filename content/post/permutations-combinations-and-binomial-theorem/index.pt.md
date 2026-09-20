@@ -14,9 +14,9 @@ tags:
 
 # Introdução
 
-No mundo da matemática, as "permutações" e "combinações" — métodos para contar logicamente o número de resultados possíveis — são conceitos fundamentais cruciais em uma ampla gama de campos, desde a probabilidade e estatística até os algoritmos da ciência da computação. Estender esses conceitos fundamentais para o reino da álgebra nos leva ao "Teorema Binomial", e representar visual e geometricamente a sequência de seus coeficientes produz o "Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/)". À primeira vista, esses podem parecer tópicos matemáticos independentes, mas ao estudá-los profundamente, você percebe que eles estão surpreendentemente entrelaçados, formando uma única, maciça e bela estrutura matemática.
+No mundo da matemática, as "permutações" e "combinações" — métodos para contar logicamente o número de resultados possíveis — são conceitos fundamentais cruciais em uma ampla gama de campos, desde a probabilidade e estatística até os algoritmos da ciência da computação. Estender esses conceitos fundamentais para o reino da álgebra nos leva ao "Teorema Binomial", e representar visual e geometricamente a sequência de seus coeficientes produz o "[Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/)". À primeira vista, esses podem parecer tópicos matemáticos independentes, mas ao estudá-los profundamente, você percebe que eles estão surpreendentemente entrelaçados, formando uma única, maciça e bela estrutura matemática.
 
-Neste artigo, começaremos com uma compreensão intuitiva e os métodos básicos de cálculo para permutações e combinações, e então explicaremos em detalhes conceitos mais complexos como permutações com repetição, permutações circulares e combinações com repetição. A partir daí, derivaremos a fórmula do Teorema Binomial e sua bela simetria, e finalmente mergulharemos a fundo em temas profundos como as propriedades misteriosas escondidas no Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/), sua conexão com a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) que descreve as leis da natureza e estruturas fractais. Vamos embarcar em uma jornada para apreciar plenamente a "beleza" e a "regularidade" da matemática.
+Neste artigo, começaremos com uma compreensão intuitiva e os métodos básicos de cálculo para permutações e combinações, e então explicaremos em detalhes conceitos mais complexos como permutações com repetição, permutações circulares e combinações com repetição. A partir daí, derivaremos a fórmula do Teorema Binomial e sua bela simetria, e finalmente mergulharemos a fundo em temas profundos como as propriedades misteriosas escondidas no [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/), sua conexão com a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) que descreve as leis da natureza e estruturas fractais. Vamos embarcar em uma jornada para apreciar plenamente a "beleza" e a "regularidade" da matemática.
 
 # O que são Permutações?
 
@@ -203,13 +203,13 @@ $$
 
 Generalizando isso, a resposta para a pergunta "Na multiplicação de $n$ parênteses, qual é o número total de maneiras de escolher $k$ vezes $y$ (e simultaneamente $n-k$ vezes $x$)?" é exatamente $\binom{n}{k}$. As fórmulas de expansão algébrica e a combinatória se cruzam belamente aqui.
 
-# O Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/): A Bela Geometria dos Números
+# O [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/): A Bela Geometria dos Números
 
-Organizar os coeficientes binomiais que aparecem na fórmula de expansão do Teorema Binomial em forma de pirâmide de cima para baixo como $n=0, 1, 2, \dots$ é chamado de "Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/)". Este triângulo de estrutura simples vai muito além de ser um mero auxílio de cálculo, guardando em seu interior inúmeras propriedades matemáticas belas e profundas.
+Organizar os coeficientes binomiais que aparecem na fórmula de expansão do Teorema Binomial em forma de pirâmide de cima para baixo como $n=0, 1, 2, \dots$ é chamado de "[Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/)". Este triângulo de estrutura simples vai muito além de ser um mero auxílio de cálculo, guardando em seu interior inúmeras propriedades matemáticas belas e profundas.
 
-## Regras de Construção do Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/)
+## Regras de Construção do [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/)
 
-O Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/) começa colocando um $1$ no vértice mais alto (linha 0). Para as linhas a seguir, os $1$s são sempre colocados em ambas as extremidades, e todos os números internos são construídos de acordo com uma regra extremamente simples: "a soma do número acima à esquerda e do número acima à direita".
+O [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/) começa colocando um $1$ no vértice mais alto (linha 0). Para as linhas a seguir, os $1$s são sempre colocados em ambas as extremidades, e todos os números internos são construídos de acordo com uma regra extremamente simples: "a soma do número acima à esquerda e do número acima à direita".
 
 ```mermaid
 graph TD
@@ -242,9 +242,9 @@ $$
 \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
 $$
 
-## Propriedades Surpreendentes Escondidas no Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/)
+## Propriedades Surpreendentes Escondidas no [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/)
 
-Se você observar atentamente o Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/), notará que inúmeras regularidades estão ocultas nele. Vamos introduzir algumas delas.
+Se você observar atentamente o [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/), notará que inúmeras regularidades estão ocultas nele. Vamos introduzir algumas delas.
 
 ### 1. Simetria Perfeita
 
@@ -264,12 +264,12 @@ Isso pode ser facilmente provado algebricamente a partir da equação $(1+1)^n =
 
 ### 3. A Conexão Oculta com a Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)
 
-Tente adicionar os números do Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/) ao longo de "linhas diagonais rasas". Surpreendentemente, a sequência $1, 1, 2, 3, 5, 8, 13, 21, \dots$ aparece.
+Tente adicionar os números do [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/) ao longo de "linhas diagonais rasas". Surpreendentemente, a sequência $1, 1, 2, 3, 5, 8, 13, 21, \dots$ aparece.
 Isso não é nada menos que a **Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)**, onde você soma os dois números anteriores para compor o próximo. A sequência mística que aparece em todos os lugares da natureza, como o arranjo das sementes de girassol e a espiral da concha de um náutilo, está profundamente embutida em um triângulo que simplesmente organiza combinações. É um exemplo muito bonito e comovente que mostra como a matemática, um produto do pensamento lógico humano, está ligada à providência da natureza.
 
-### 4. Geometria Fractal: Triângulo de Sierpinski
+### 4. Geometria Fractal: [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de Sierpinski
 
-Tente expandir o Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/) enormemente para dezenas ou centenas de linhas, pintando os "números ímpares" de preto por dentro e deixando os "números pares" em branco. Então, uma figura fractal autossimilar chamada "Triângulo de Sierpinski" surge claramente.
+Tente expandir o [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/) enormemente para dezenas ou centenas de linhas, pintando os "números ímpares" de preto por dentro e deixando os "números pares" em branco. Então, uma figura fractal autossimilar chamada "[Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de Sierpinski" surge claramente.
 Essa estrutura, onde o mesmo padrão triangular se repete infinitamente, não importa se você aproxima ou afasta o zoom no todo, serve como uma ponte conectando a teoria dos números, a geometria e a teoria do caos.
 
 # Extensão ao Teorema Multinomial
@@ -301,8 +301,8 @@ Desde o cálculo das probabilidades de jogar uma moeda até prever a probabilida
 
 # Conclusão
 
-Neste artigo, viajamos através de uma vasta paisagem matemática, partindo das permutações e combinações, que são regras simples de "contagem", para sua aplicação em permutações com repetição e permutações circulares, expandindo-se ainda mais para o Teorema Binomial da álgebra e chegando à exploração visual do Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/).
+Neste artigo, viajamos através de uma vasta paisagem matemática, partindo das permutações e combinações, que são regras simples de "contagem", para sua aplicação em permutações com repetição e permutações circulares, expandindo-se ainda mais para o Teorema Binomial da álgebra e chegando à exploração visual do [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/).
 
 Ao abstrair e aprofundar no ato extremamente simples e primitivo de "escolher alguns itens de outros distintos" usando a linguagem rigorosa da matemática, ficou claro que um mundo matemático inimaginavelmente rico e bonito se estende para fora — envolvendo simetria perfeita, a regra das potências de 2, a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) descrevendo o mundo natural e infinitas estruturas fractais.
 
-As fórmulas matemáticas e teoremas não são meramente ferramentas inorgânicas para resolver problemas de provas. São as obras de arte supremas da humanidade, expressando a ordem invisível por trás do mundo que nos rodeia e as relações avassaladoramente belas tecidas pelos números. Esperamos que, ao entrar em contato com esta bela regularidade dos números mostrada pelas permutações, combinações e o Triângulo de [Pascal](https://kenji.blog/pt/p/pascal/), você tenha sentido o verdadeiro encanto e a profundidade que a disciplina da matemática possui.
+As fórmulas matemáticas e teoremas não são meramente ferramentas inorgânicas para resolver problemas de provas. São as obras de arte supremas da humanidade, expressando a ordem invisível por trás do mundo que nos rodeia e as relações avassaladoramente belas tecidas pelos números. Esperamos que, ao entrar em contato com esta bela regularidade dos números mostrada pelas permutações, combinações e o [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/), você tenha sentido o verdadeiro encanto e a profundidade que a disciplina da matemática possui.

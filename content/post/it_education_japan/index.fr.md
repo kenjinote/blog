@@ -65,16 +65,16 @@ $$
 \exists C > 0, \exists x_0 > 0, \forall x > x_0, |f(x)| \le C \cdot |g(x)|
 $$
 
-Dans l'enseignement de l'informatique au Japon, lorsqu'on apprend par exemple le tri de données, il arrive souvent que l'on se contente d'appeler la méthode intégrée `array.sort()` en Python. Cependant, ce qui est vraiment requis en ingénierie informatique, c'est de comprendre mathématiquement et de prouver pourquoi le tri à bulles simple n'est jamais utilisé en pratique, et pourquoi le tri rapide, le tri fusion ou le Timsort sont adoptés comme bibliothèques standard.
+Dans l'enseignement de l'informatique au Japon, lorsqu'on apprend par exemple le tri de données, il arrive souvent que l'on se contente d'appeler la méthode intégrée `array.sort()` en Python. Cependant, ce qui est vraiment requis en ingénierie informatique, c'est de comprendre mathématiquement et de prouver pourquoi le tri à bulles simple n'est jamais utilisé en pratique, et pourquoi le tri rapide, le tri fusion ou le [Timsort](https://kenji.blog/fr/p/sorting-algorithms/) sont adoptés comme bibliothèques standard.
 
 Voici les complexités temporelles moyennes des algorithmes de tri représentatifs :
 
-- Tri à bulles (Bubble Sort) : $O(N^2)$
-- Tri par sélection (Selection Sort) : $O(N^2)$
-- Tri par insertion (Insertion Sort) : $O(N^2)$
-- Tri fusion (Merge Sort) : $O(N \log N)$
-- Tri rapide (Quick Sort) : $O(N \log N)$
-- Tri par tas (Heap Sort) : $O(N \log N)$
+- [Tri](https://kenji.blog/fr/p/sorting-algorithms/) à bulles (Bubble Sort) : $O(N^2)$
+- [Tri](https://kenji.blog/fr/p/sorting-algorithms/) par sélection (Selection Sort) : $O(N^2)$
+- [Tri](https://kenji.blog/fr/p/sorting-algorithms/) par insertion (Insertion Sort) : $O(N^2)$
+- [Tri](https://kenji.blog/fr/p/sorting-algorithms/) fusion (Merge Sort) : $O(N \log N)$
+- [Tri](https://kenji.blog/fr/p/sorting-algorithms/) rapide (Quick Sort) : $O(N \log N)$
+- [Tri](https://kenji.blog/fr/p/sorting-algorithms/) par tas (Heap Sort) : $O(N \log N)$
 
 Par exemple, la complexité temporelle $T(N)$ du tri fusion est exprimée par la relation de récurrence suivante, basée sur le paradigme « diviser pour régner » :
 

@@ -65,9 +65,9 @@ $$
 \exists C > 0, \exists x_0 > 0, \forall x > x_0, |f(x)| \le C \cdot |g(x)|
 $$
 
-在日本的信息教育中，例如在学习数据排序（Sort）时，有些情况只是简单地在Python中调用 `array.sort()` 这样的内置方法就结束了。然而，作为信息工程真正要求的是，在数学上理解并证明，为什么简单的冒泡排序在实际应用领域从不被使用，而快速排序、归并排序，或者Timsort会被作为标准库采用。
+在日本的信息教育中，例如在学习数据排序（Sort）时，有些情况只是简单地在Python中调用 `array.sort()` 这样的内置方法就结束了。然而，作为信息工程真正要求的是，在数学上理解并证明，为什么简单的冒泡排序在实际应用领域从不被使用，而快速排序、归并排序，或者[Timsort](https://kenji.blog/zh-cn/p/sorting-algorithms/)会被作为标准库采用。
 
-以下是代表性排序算法的平均时间复杂度。
+以下是代表性[排序算法](https://kenji.blog/zh-cn/p/sorting-algorithms/)的平均时间复杂度。
 
 - 冒泡排序 (Bubble Sort): $O(N^2)$
 - 选择排序 (Selection Sort): $O(N^2)$

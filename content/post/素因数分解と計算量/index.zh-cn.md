@@ -49,7 +49,7 @@ $$ \exists c > 0, \exists n_0 > 0 \text{ s.t. } \forall n \ge n_0, 0 \le f(n) \l
    执行时间与输入规模成正比增加。如果数据量达到原来的10倍，时间也会变成10倍。按顺序检查数组中所有元素的“线性搜索”就是这种情况。
 
 4. **$\mathcal{O}(N \log N)$ : 线性对数时间（Linearithmic time）**
-   比 $\mathcal{O}(N)$ 稍慢一些，但仍属于高效的一类。归并排序（Merge Sort）和快速排序（Quick Sort 的平均时间复杂度）等大多数实用的高效排序算法都属于这个复杂度。
+   比 $\mathcal{O}(N)$ 稍慢一些，但仍属于高效的一类。归并排序（Merge Sort）和快速排序（Quick Sort 的平均时间复杂度）等大多数实用的高效[排序算法](https://kenji.blog/zh-cn/p/sorting-algorithms/)都属于这个复杂度。
 
 5. **$\mathcal{O}(N^2)$ : 多项式时间 / 平方时间（Quadratic time）**
    当输入规模翻倍时，执行时间变为4倍；如果是10倍，则变为100倍。使用双重循环的简单处理、冒泡排序、插入排序等属于此类。当数据量超过几万时，处理时间就会变得很长。这些以 $\mathcal{O}(N^k)$ 形式表示的时间复杂度统称为 **多项式时间（Polynomial time）** 。

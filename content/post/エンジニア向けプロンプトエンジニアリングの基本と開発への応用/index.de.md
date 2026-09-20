@@ -108,7 +108,7 @@ Ab hier werden spezifische Prompting-Paradigmen erläutert, die die Präzision v
 
 ### 3.1 Zero-Shot Prompting und Few-Shot Prompting
 
-**Zero-Shot Prompting** ist eine Methode, bei der dem Modell nur Aufgabenanweisungen gegeben werden und es um eine Antwort gebeten wird, ohne dass Beispiele angegeben werden. Bei allgemeinen Anforderungen wie „Schreibe einen Quicksort in Python“ funktionieren heutige hoch entwickelte LLMs auch mit Zero-Shot recht gut.
+**Zero-Shot Prompting** ist eine Methode, bei der dem Modell nur Aufgabenanweisungen gegeben werden und es um eine Antwort gebeten wird, ohne dass Beispiele angegeben werden. Bei allgemeinen Anforderungen wie „Schreibe einen [Quicksort](https://kenji.blog/de/p/sorting-algorithms/) in Python“ funktionieren heutige hoch entwickelte LLMs auch mit Zero-Shot recht gut.
 
 Wenn Sie jedoch möchten, dass das Modell projektspezifischen Codierrichtlinien folgt oder ein bestimmtes JSON-Schema ausgibt, ist die Wahrscheinlichkeit hoch, dass die Formatierung bei Zero-Shot fehlerhaft ist. Dies wird durch **Few-Shot Prompting** gelöst.
 

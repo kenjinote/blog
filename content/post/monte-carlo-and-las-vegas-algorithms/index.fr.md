@@ -91,13 +91,13 @@ Cependant, dans la réalité, la probabilité de tirer ce « cas de malchance ex
 
 ### Exemple concret 1 : Le tri rapide randomisé (Randomized QuickSort)
 
-Le choix aléatoire d'un pivot dans le Tri rapide (Quicksort), l'algorithme de tri le plus célèbre, est un exemple typique de la méthode de Las Vegas.
+Le choix aléatoire d'un pivot dans le [Tri](https://kenji.blog/fr/p/sorting-algorithms/) rapide ([Quicksort](https://kenji.blog/fr/p/sorting-algorithms/)), l'algorithme de tri le plus célèbre, est un exemple typique de la méthode de Las Vegas.
 
-Dans un Quicksort normal, on utilise souvent une stratégie fixe consistant à toujours choisir le dernier élément du tableau comme pivot. Néanmoins, avec cette stratégie, si l'on donne un tableau déjà trié, on fait face au pire cas avec une complexité de $O(n^2)$.
+Dans un [Quicksort](https://kenji.blog/fr/p/sorting-algorithms/) normal, on utilise souvent une stratégie fixe consistant à toujours choisir le dernier élément du tableau comme pivot. Néanmoins, avec cette stratégie, si l'on donne un tableau déjà trié, on fait face au pire cas avec une complexité de $O(n^2)$.
 
 Dans le **tri rapide randomisé**, le pivot est choisi de manière aléatoire parmi les éléments du tableau. Il est mathématiquement garanti que, de cette manière, pour n'importe quelles données d'entrée, la complexité moyenne sera de $O(n \log n)$. Et le résultat du tri produit est toujours parfaitement correct.
 
-Si le tableau à trier comporte des centaines de millions d'éléments et est déjà presque trié, le Quicksort normal risquerait de provoquer un dépassement de capacité (stack overflow) ou de faire exploser le temps de calcul. L'utilisation du tri rapide randomisé permet de contrer efficacement des données malveillantes cherchant délibérément à provoquer le pire cas (comme une forme d'attaque DoS), garantissant ainsi une performance rapide et stable. De la sorte, la méthode de Las Vegas aide à améliorer la sécurité et la robustesse des systèmes.
+Si le tableau à trier comporte des centaines de millions d'éléments et est déjà presque trié, le [Quicksort](https://kenji.blog/fr/p/sorting-algorithms/) normal risquerait de provoquer un dépassement de capacité (stack overflow) ou de faire exploser le temps de calcul. L'utilisation du tri rapide randomisé permet de contrer efficacement des données malveillantes cherchant délibérément à provoquer le pire cas (comme une forme d'attaque DoS), garantissant ainsi une performance rapide et stable. De la sorte, la méthode de Las Vegas aide à améliorer la sécurité et la robustesse des systèmes.
 
 #### Exemple d'implémentation en Python
 
@@ -142,7 +142,7 @@ Comparons clairement la différence entre ces deux algorithmes.
 | Algorithme | Temps d'exécution | Précision du résultat | Exemples d'application typiques |
 | --- | --- | --- | --- |
 | **Méthode de Monte-Carlo** | Toujours constant (limite supérieure) | Probablement sujet à erreurs | Calcul de $\pi$, test de primalité, simulations physiques |
-| **Méthode de Las Vegas** | Fluctuation probabiliste (pire infini) | Toujours 100% correct | Tri rapide randomisé, construction de table de hachage |
+| **Méthode de Las Vegas** | Fluctuation probabiliste (pire infini) | Toujours 100% correct | [Tri](https://kenji.blog/fr/p/sorting-algorithms/) rapide randomisé, construction de table de hachage |
 
 De plus, ces algorithmes sont à l'opposé l'un de l'autre quant à ce qui est « figé » : le « temps » ou la « précision ». On peut dire que la méthode de Monte-Carlo fige le temps et sacrifie la précision, tandis que la méthode de Las Vegas fige la précision et sacrifie le temps.
 

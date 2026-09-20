@@ -25,7 +25,7 @@ Para entender o Lema de Sperner, devemos primeiro esclarecer os conceitos de um 
 Em um espaço de $n$ dimensões, quando existem $n+1$ pontos geometricamente independentes, o menor conjunto convexo construído com eles como vértices é chamado de um **$n$-simplexo**.
 - 0-simplexo: Ponto
 - 1-simplexo: Segmento de reta
-- 2-simplexo: Triângulo
+- 2-simplexo: [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo
 - 3-simplexo: Tetraedro
 
 Aqui, vamos nos concentrar principalmente no 2-simplexo, o "triângulo", que é o mais fácil de entender visualmente. Suponha que exista um grande triângulo $T$, e que seus três vértices sejam $V_1, V_2, V_3$.
@@ -73,7 +73,7 @@ Quando você termina de colorir de acordo com as regras da coloração de Sperne
 > Em qualquer coloração de Sperner, o número de pequenos triângulos onde os três vértices são pintados com cores diferentes (cor 1, cor 2 e cor 3) **deve ser um número ímpar**.
 > Como é um número ímpar (1, 3, 5, ...), tal "pequeno triângulo completo com as 3 cores" **deve existir pelo menos uma vez**.
 
-Não importa quão intencionalmente você colora os vértices internos, ou quão fina e complexamente você divida o triângulo, um pequeno triângulo com as 3 cores (vamos chamá-lo de **Triângulo Completo**) aparecerá definitivamente em algum lugar.
+Não importa quão intencionalmente você colora os vértices internos, ou quão fina e complexamente você divida o triângulo, um pequeno triângulo com as 3 cores (vamos chamá-lo de **[Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo Completo**) aparecerá definitivamente em algum lugar.
 
 # 5. Uma Bela Prova Usando a Teoria dos Grafos
 
@@ -95,7 +95,7 @@ Vamos considerar quantas portas cada sala (pequeno triângulo) tem. Como um pequ
    - Existem exatamente duas arestas conectando a cor 1 e a cor 2. Portanto, há **2 portas** .
 3. **Salas com cores (1, 3, 3) ou (2, 2, 3) etc.**
    - Como não há par de 1 e 2, há **0 portas** .
-4. **Salas com cores (1, 2, 3) (Triângulo Completo)**
+4. **Salas com cores (1, 2, 3) ([Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo Completo)**
    - Há apenas uma aresta conectando a cor 1 e a cor 2. Portanto, há **1 porta** .
 
 Resumindo, **apenas as salas dos triângulos completos têm um número ímpar (1) de portas, e todas as outras salas têm um número par (0 ou 2) de portas** .
@@ -124,11 +124,11 @@ No grafo que criamos, quais são os graus (número de portas) de cada vértice?
 - Grau das outras salas = 0 ou 2 = **Número par**
 
 Vamos calcular a soma total dos graus.
-$$ \text{Soma Total} = \text{Grau do Exterior} + \text{Soma dos Graus dos Triângulos Completos} + \text{Soma dos Graus das Outras Salas} $$
+$$ \text{Soma Total} = \text{Grau do Exterior} + \text{Soma dos Graus dos [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulos Completos} + \text{Soma dos Graus das Outras Salas} $$
 
 A soma total deve ser um número par.
 O grau do exterior é "ímpar", e a soma dos graus das outras salas é "par".
-Portanto, a "Soma dos Graus dos Triângulos Completos" **deve ser um número ímpar** para que a soma total seja par.
+Portanto, a "Soma dos Graus dos [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulos Completos" **deve ser um número ímpar** para que a soma total seja par.
 Como o grau de cada triângulo completo é 1, o número de triângulos completos **deve ser um número ímpar** .
 
 Com isso, fica perfeitamente provado que existe pelo menos um triângulo completo.

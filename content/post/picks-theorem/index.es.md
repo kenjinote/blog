@@ -80,7 +80,7 @@ $$
 
 Coincidió perfectamente con el resultado del cálculo habitual de $15$.
 
-### Ejemplo 2: Triángulo Rectángulo
+### Ejemplo 2: [Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulo Rectángulo
 
 A continuación, intentemos con un triángulo rectángulo que incluye un enfoque diagonal. Este es un triángulo rectángulo con vértices en $(0, 0), (6, 0), (0, 4)$.
 
@@ -125,7 +125,7 @@ $$
 
 (En esta $F$, la región infinitamente grande que se extiende fuera del grafo también se cuenta como una cara).
 
-### Dividir el Polígono en Triángulos
+### Dividir el Polígono en [Tri](https://kenji.blog/es/p/sorting-algorithms/)ángulos
 
 Primero, considere el polígono objetivo $P$ cuya área desea encontrar. Tomando todos los puntos de la cuadrícula en el interior y en el límite de este polígono como vértices, y conectando los puntos de la cuadrícula entre sí, dividimos (triangulamos) el interior del polígono $P$ de modo que se llene por completo con pequeños "triángulos primitivos".
 Un triángulo primitivo es un triángulo que no contiene ningún punto de cuadrícula aparte de sus vértices, ni en el interior ni en las aristas de su límite. El área de tales triángulos primitivos es, sin excepción, todas de $\frac{1}{2}$.

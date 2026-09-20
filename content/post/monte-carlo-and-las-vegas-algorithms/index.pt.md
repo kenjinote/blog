@@ -91,7 +91,7 @@ O risco de materialização nas extremas percentuais com incidência catastrófi
 
 ### Exemplo Concreto 1: Ordenação por base aleatória (Randomized QuickSort)
 
-Nos parâmetros ao quadro e matriz no Sorting (Ordens aos array); nas predefinições operantes nas viabilidades estipuladoras de algoritmos de QuickSort, com a conjetura e base estipulada via escolha procedimental na seleção para escolhas do fator Pivô (Pivot) estipular a atuações da via base pseudoaleatórias aleatórias, é o representativo máximo de modelo das metodologias no parâmetro algorítmico do Las Vegas.
+Nos parâmetros ao quadro e matriz no [Sorting](https://kenji.blog/pt/p/sorting-algorithms/) (Ordens aos array); nas predefinições operantes nas viabilidades estipuladoras de algoritmos de QuickSort, com a conjetura e base estipulada via escolha procedimental na seleção para escolhas do fator Pivô (Pivot) estipular a atuações da via base pseudoaleatórias aleatórias, é o representativo máximo de modelo das metodologias no parâmetro algorítmico do Las Vegas.
 
 No cômputo tradicional ao modelo normal QuickSort, o seu postulado procedimental atua num arranjo fixado aos padrões pré-definidos posicional; (exemplo fixar-se numa constante d'extrações no índice de arranjo a valores contidos num final d'array estipulado). Nessas formatações processuais em que incidam já prévias organizabilidades nos agrupamentos base sob vetores a tratar num input: desencadeará num "worst-case", nas celeridades avaliativas máximas processuais com agravamento face - $O(n^2)$.
 

@@ -108,7 +108,7 @@ OpenAIのAPI（GPT-4など）やAnthropicのAPI（Claudeなど）を利用して
 
 ### 3.1 Zero-Shot Prompting と Few-Shot Prompting
 
-**Zero-Shot Prompting** は、タスクの指示のみを与え、例示を一切与えずにモデルに解答を求める手法です。「Pythonでクイックソートを書いて」といった一般的な要求であれば、現在の高度なLLMはZero-Shotでも十分に機能します。
+**Zero-Shot Prompting** は、タスクの指示のみを与え、例示を一切与えずにモデルに解答を求める手法です。「Pythonで[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)を書いて」といった一般的な要求であれば、現在の高度なLLMはZero-Shotでも十分に機能します。
 
 しかし、プロジェクト独自のコーディング規約に従わせたい場合や、特定のJSONスキーマを出力させたい場合、Zero-Shotではフォーマットが崩れる確率が高くなります。これを解決するのが **Few-Shot Prompting** です。
 
