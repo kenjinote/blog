@@ -12,7 +12,7 @@ description: 'Das Faktorisierungsproblem, das die Sicherheit der RSA-Verschlüss
 
 In der heutigen Internetgesellschaft wird die Informationssicherheit durch Public-Key-Kryptographie wie das RSA-Kryptosystem geschützt. Die Grundlage der Sicherheit des RSA-Kryptosystems beruht auf der Tatsache, dass **„die Primfaktorzerlegung riesiger zusammengesetzter Zahlen rechnerisch extrem schwierig ist“** .
 
-In diesem Artikel entschlüsseln wir den mathematischen Mechanismus des **„Zahlkörpersiebs“ ** (General Number Field Sieve, GNFS), dem stärksten Algorithmus zur Primfaktorzerlegung für klassische Computer. Zugleich werden wir durch Formeln und Konzeptdiagramme detailliert ergründen, warum er durch den von Peter Shor entdeckten ** „Shor-Algorithmus“** vollständig besiegt wird und welchen Paradigmenwechsel dies darstellt.
+In diesem Artikel entschlüsseln wir den mathematischen Mechanismus des **„Zahlkörpersiebs“ ** (General Number Field Sieve, GNFS), dem stärksten Algorithmus zur Primfaktorzerlegung für klassische Computer. Zugleich werden wir durch Formeln und Konzeptdiagramme detailliert ergründen, warum er durch den von Peter Shor entdeckten ** „[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)“** vollständig besiegt wird und welchen Paradigmenwechsel dies darstellt.
 
 ---
 
@@ -88,7 +88,7 @@ Schließlich wird sowohl im algebraischen Zahlkörper als auch im Ring der ganze
 
 ---
 
-## 3. Der Durchbruch durch Quantencomputing: Der „Shor-Algorithmus“
+## 3. Der Durchbruch durch Quantencomputing: Der „[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)“
 
 Während GNFS subexponentielle Zeit benötigt, kann der 1994 von Peter Shor veröffentlichte **„Shor-Algorithmus“ ** dieses Problem mithilfe eines Quantencomputers in ** „polynomieller Zeit“** lösen.
 
@@ -189,7 +189,7 @@ graph TD
 
 GNFS verfolgt den Ansatz, **„in einem mathematischen Raum (algebraischen Zahlkörper) nach Relationen zu suchen“** . Da dieser Suchraum jedoch exponentiell mit der Anzahl der Ziffern wächst, wird die Entschlüsselung mit der Rechenleistung klassischer Computer (selbst bei Parallelisierung) faktisch unmöglich, wenn die Schlüssellänge 2048 Bit überschreitet.
 
-Auf der anderen Seite nutzt der Shor-Algorithmus die **„Welleneigenschaften durch Quanteninterferenz“ ** . Alle Berechnungswege in der Superposition werden gleichzeitig ausgewertet. Durch die QFT werden unnötige Antworten aufgehoben (destruktive Interferenz), und nur die Wahrscheinlichkeitsamplitude der korrekten Periode wird verstärkt (konstruktive Interferenz). Anstatt den Raum zu durchsuchen, wird so der völlig andere Ansatz realisiert, ** „die richtige Antwort selbst hervortreten zu lassen“** .
+Auf der anderen Seite nutzt der [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) die **„Welleneigenschaften durch Quanteninterferenz“ ** . Alle Berechnungswege in der Superposition werden gleichzeitig ausgewertet. Durch die QFT werden unnötige Antworten aufgehoben (destruktive Interferenz), und nur die Wahrscheinlichkeitsamplitude der korrekten Periode wird verstärkt (konstruktive Interferenz). Anstatt den Raum zu durchsuchen, wird so der völlig andere Ansatz realisiert, ** „die richtige Antwort selbst hervortreten zu lassen“** .
 
 ## 6. Zusammenfassung
 

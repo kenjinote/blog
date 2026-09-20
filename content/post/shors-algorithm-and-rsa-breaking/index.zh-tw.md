@@ -14,7 +14,7 @@ description: '解說隨著量子電腦的崛起，支撐現代通訊基礎設施
 
 然而，隨著「量子電腦」的出現，有人指出這種安全性可能會從根本上被顛覆。媒體上偶爾會出現「只要量子電腦完成，全世界的密碼和加密都會在幾秒鐘內被破解」這樣聳動的標題。究竟這是不是真的呢？
 
-本文將深入探討傳統的密碼破解手法GNFS（普通數體篩法）以及使用量子電腦破解密碼的決定性演算法「Shor演算法（Shor's Algorithm）」的運作原理。我們將用淺顯易懂的方式解說量子傅立葉變換與尋找週期等進階概念，並詳細驗證目前在NISQ（Noisy Intermediate-Scale Quantum）時代量子硬體的現狀，以及實際要破解RSA-2048所需克服的障礙。
+本文將深入探討傳統的密碼破解手法GNFS（普通數體篩法）以及使用量子電腦破解密碼的決定性演算法「Shor演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）」的運作原理。我們將用淺顯易懂的方式解說量子傅立葉變換與尋找週期等進階概念，並詳細驗證目前在NISQ（Noisy Intermediate-Scale Quantum）時代量子硬體的現狀，以及實際要破解RSA-2048所需克服的障礙。
 
 ---
 

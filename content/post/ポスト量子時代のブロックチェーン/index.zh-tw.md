@@ -60,7 +60,7 @@ $$
 
 使用傳統電腦從公開的公鑰 $K$ 和基點 $G$ 反推私鑰 $k$（求解離散對數），即使使用Pollard's rho質因數分解法等最佳傳統演算法，也需要 $\mathcal{O}(\sqrt{p})$ 的指數級運算時間。對於256位元的金鑰，大約需要 $2^{128}$ 次運算，這即使讓目前的超級電腦運行幾十億年也無法破解。
 
-### 2.2. Shor演算法（Shor's Algorithm）導致的崩潰
+### 2.2. Shor演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）導致的崩潰
 
 然而，Peter Shor在1994年發表的 **Shor演算法** 徹底破壞了這個前提。Shor演算法最初是為了解決質因數分解問題（RSA密碼學的基礎）而在多項式時間內被提出，但它同樣適用於離散對數問題與橢圓曲線離散對數問題。
 

@@ -248,7 +248,7 @@ Bei Bitcoins secp256k1 ist $p \approx 2^{256}$, daher erfordert das Knacken etwa
 ### Die Bedrohung durch Quantencomputer und Post-Quanten-Kryptografie
 
 Es gibt jedoch ein großes Bedenken hinsichtlich der rechentechnischen Sicherheit: den Aufstieg von **Quantencomputern (Quantum Computers)**.
-"Shor's Algorithmus", 1994 von Peter Shor veröffentlicht, bewies mathematisch, dass ein Quantencomputer Probleme wie die Primfaktorzerlegung (die Basis von RSA) und das Problem des diskreten Logarithmus (die Basis von ECC) in Polynomialzeit $\mathcal{O}(n^3)$ lösen kann.
+"[Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)us", 1994 von Peter Shor veröffentlicht, bewies mathematisch, dass ein Quantencomputer Probleme wie die Primfaktorzerlegung (die Basis von RSA) und das Problem des diskreten Logarithmus (die Basis von ECC) in Polynomialzeit $\mathcal{O}(n^3)$ lösen kann.
 
 Wenn praktische und große Quantencomputer mit genügend Qubits und niedrigen Fehlerraten entwickelt werden, besteht das Risiko, dass der private Schlüssel aus dem öffentlichen Schlüssel von Bitcoin zurückgerechnet werden kann.
 Die Verteidigungsmaßnahmen des Bitcoin-Netzwerks dagegen sind wie folgt:

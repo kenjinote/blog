@@ -138,7 +138,7 @@ graph TD
 
 괴델의 정리가 가져온 영향은 수학의 테두리에 머물지 않았습니다. 1936년 영국의 수학자 [앨런 튜링](https://kenji.blog/ko/p/turing/)은 괴델의 '형식적 체계' 개념을 물리적인 계산 프로세스로 치환하여 '튜링 머신'이라는 가상의 계산기 모델을 고안했습니다.
 
-튜링은 [괴델의 불완전성 정리](https://kenji.blog/ko/p/godels-incompleteness-theorems/)를 컴퓨터 세계에 응용하여 "어떤 컴퓨터 프로그램에도 영원히 계산이 끝나지 않을지 여부를 미리 판정하는 만능 알고리즘은 존재하지 않는다"는 것을 증명했습니다. 이것이 그 유명한 ** 정지 문제 ** (Halting Problem)입니다.
+튜링은 [괴델의 불완전성 정리](https://kenji.blog/ko/p/godels-incompleteness-theorems/)를 컴퓨터 세계에 응용하여 "어떤 컴퓨터 프로그램에도 영원히 계산이 끝나지 않을지 여부를 미리 판정하는 만능 알고리즘은 존재하지 않는다"는 것을 증명했습니다. 이것이 그 유명한 ** 정지 문제 ** ([Halting Problem](https://kenji.blog/ko/p/turing-machine-computability/))입니다.
 
 ```mermaid
 graph TD

@@ -60,7 +60,7 @@ $$
 
 Calculating the private key $k$ (finding the discrete logarithm) from the exposed public key $K$ and base point $G$ using classical computers requires an exponential computational time of $\mathcal{O}(\sqrt{p})$, even when using the best classical algorithms like Pollard's rho algorithm. For a 256-bit key, it takes about $2^{128}$ operations, a level that cannot be solved even if current supercomputers are run for billions of years.
 
-### 2.2. Collapse by Shor's Algorithm
+### 2.2. Collapse by [Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)
 
 However, **Shor's Algorithm**, published by Peter Shor in 1994, completely destroyed this premise. Shor's algorithm was originally proposed to solve the prime factorization problem (the foundation of RSA cryptography) in polynomial time, but it can also be applied to the discrete logarithm problem and the elliptic curve discrete logarithm problem.
 

@@ -10,7 +10,7 @@ tags: ["Alan Turing", "Machine de Turing", "Enigma", "Problème de l'arrêt", "M
 
 # 1. Introduction
 
-Alan Mathison Turing était un mathématicien britannique qui a jeté les bases de l'informatique moderne, de l'intelligence artificielle et de la biologie mathématique. La **Machine de Turing** qu'il a conçue est devenue le prototype théorique de tous les ordinateurs que nous utilisons aujourd'hui. Dans cet article, nous explorerons en détail la vie turbulente de Turing et les grandes réalisations mathématiques et scientifiques qu'il a laissées derrière lui. Sans son existence, notre société numérique moderne serait soit complètement différente, soit son avènement aurait été retardé de plusieurs décennies.
+Alan Mathison Turing était un mathématicien britannique qui a jeté les bases de l'informatique moderne, de l'intelligence artificielle et de la biologie mathématique. La **[Machine de Turing](https://kenji.blog/fr/p/turing-machine-computability/)** qu'il a conçue est devenue le prototype théorique de tous les ordinateurs que nous utilisons aujourd'hui. Dans cet article, nous explorerons en détail la vie turbulente de Turing et les grandes réalisations mathématiques et scientifiques qu'il a laissées derrière lui. Sans son existence, notre société numérique moderne serait soit complètement différente, soit son avènement aurait été retardé de plusieurs décennies.
 
 # 2. Jeunesse et éveil aux mathématiques
 
@@ -22,7 +22,7 @@ Pendant ses années d'école à Sherborne, il a déjà fait preuve d'un talent e
 
 L'un des plus grands problèmes non résolus dans le monde mathématique à l'époque était l'« Entscheidungsproblem » (Problème de la décision) proposé par [David Hilbert](https://kenji.blog/fr/p/hilbert/) en 1928. Il s'agissait d'une question fondamentale : « Étant donné une proposition mathématique quelconque, existe-t-il une procédure algorithmique mécanique pour déterminer si elle est vraie ou fausse ? »
 
-Turing s'est attaqué à ce problème avec une approche entièrement nouvelle. Dans son article novateur de 1936, « Sur les nombres calculables, avec une application à l'Entscheidungsproblem », il a défini une machine à calculer abstraite, la **Machine de Turing**.
+Turing s'est attaqué à ce problème avec une approche entièrement nouvelle. Dans son article novateur de 1936, « Sur les nombres calculables, avec une application à l'Entscheidungsproblem », il a défini une machine à calculer abstraite, la **[Machine de Turing](https://kenji.blog/fr/p/turing-machine-computability/)**.
 
 ## 3.1 Structure de la machine de Turing
 
@@ -36,7 +36,7 @@ flowchart TD
     B -->|"Écrire le symbole"| A
 ```
 
-Turing a démontré mathématiquement que toute fonction calculable pouvait être calculée par cette **Machine de Turing**. De plus, il a conçu la « Machine de Turing universelle », qui pouvait lire des données décrivant la structure de n'importe quelle machine de Turing et simuler son fonctionnement. C'est exactement le concept de base de l'ordinateur à « architecture de von Neumann » moderne : stocker un programme en tant que données en mémoire et l'exécuter.
+Turing a démontré mathématiquement que toute fonction calculable pouvait être calculée par cette **[Machine de Turing](https://kenji.blog/fr/p/turing-machine-computability/)**. De plus, il a conçu la « Machine de Turing universelle », qui pouvait lire des données décrivant la structure de n'importe quelle machine de Turing et simuler son fonctionnement. C'est exactement le concept de base de l'ordinateur à « architecture de von Neumann » moderne : stocker un programme en tant que données en mémoire et l'exécuter.
 
 ## 3.2 Le problème de l'arrêt et l'incomplétude
 

@@ -117,7 +117,7 @@ flowchart TD
    與奧斯卡·摩根斯頓合著。系統論述從零和賽局到合作賽局的巨著。
 3. **《計算機與人腦》 (The Computer and the Brain, 1958)**
    紐曼死後出版的未竟遺稿。將人腦的神經網路與數位計算機的機制進行比較的先驅性著作。
-4. **《自複製自動機理論》 (Theory of Self-Reproducing Automata, 1966)**
+4. **《自複製自動機理論》 (Theory of Self-Reproducing [Automata](https://kenji.blog/zh-tw/p/automata-formal-language-theory/), 1966)**
    由阿瑟·伯克斯編纂紐曼遺稿出版。
 
 ## 11. 約翰·馮·紐曼 簡要年表

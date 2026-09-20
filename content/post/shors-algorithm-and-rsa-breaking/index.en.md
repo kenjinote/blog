@@ -14,7 +14,7 @@ In modern Internet society, "public-key cryptography" is the foundation for prot
 
 However, it has been pointed out that the advent of "quantum computers" could fundamentally overturn this security. Media outlets sometimes run sensational headlines like, "Once quantum computers are completed, passwords and codes worldwide will be decrypted in seconds." But is this really true?
 
-In this article, we delve deeply into the mechanisms of GNFS (General Number Field Sieve), a classical cryptanalysis method, and "Shor's Algorithm," the definitive cryptanalysis algorithm using a quantum computer. We will explain advanced concepts like Quantum Fourier Transform and period finding in an easy-to-understand manner, and examine in detail the current state of quantum hardware in the NISQ (Noisy Intermediate-Scale Quantum) era and the hurdles required to actually break RSA-2048.
+In this article, we delve deeply into the mechanisms of GNFS (General Number Field Sieve), a classical cryptanalysis method, and "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)," the definitive cryptanalysis algorithm using a quantum computer. We will explain advanced concepts like Quantum Fourier Transform and period finding in an easy-to-understand manner, and examine in detail the current state of quantum hardware in the NISQ (Noisy Intermediate-Scale Quantum) era and the hurdles required to actually break RSA-2048.
 
 ---
 

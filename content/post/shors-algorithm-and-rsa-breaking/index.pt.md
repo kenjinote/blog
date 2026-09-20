@@ -14,7 +14,7 @@ Na sociedade da internet moderna, a base para proteger o segredo das comunicaç�
 
 No entanto, com o surgimento dos "computadores quânticos", foi apontado que essa segurança pode ser subvertida desde a base. Na mídia, às vezes vemos manchetes sensacionalistas como "Se um computador quântico for concluído, senhas e criptografias em todo o mundo serão decifradas em segundos". Mas será que isso é verdade?
 
-Neste artigo, aprofundaremos como funcionam o GNFS (General Number Field Sieve), um método clássico de descriptografia, e a versão definitiva dos algoritmos de descriptografia usando computadores quânticos, o "Algoritmo de Shor (Shor's Algorithm)". Explicaremos de forma fácil conceitos avançados, como a transformação quântica de Fourier e a descoberta de períodos, e examinaremos em detalhes o estado atual do hardware quântico na era NISQ (Noisy Intermediate-Scale Quantum) e os obstáculos reais necessários para quebrar a RSA-2048.
+Neste artigo, aprofundaremos como funcionam o GNFS (General Number Field Sieve), um método clássico de descriptografia, e a versão definitiva dos algoritmos de descriptografia usando computadores quânticos, o "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))". Explicaremos de forma fácil conceitos avançados, como a transformação quântica de Fourier e a descoberta de períodos, e examinaremos em detalhes o estado atual do hardware quântico na era NISQ (Noisy Intermediate-Scale Quantum) e os obstáculos reais necessários para quebrar a RSA-2048.
 
 ---
 

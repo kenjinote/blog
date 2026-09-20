@@ -14,7 +14,7 @@ description: '詳細解說從量子霸權的定義，到Google利用Sycamore處�
 
 量子計算透過將物理學的基本原理——量子力學應用於資訊處理，具備了解決古典電腦（我們現在日常使用的個人電腦或超級電腦）在現實時間內無法解開的複雜問題的潛力。這個領域長久以來以理論研究為主，但近年來，隨著硬體的快速進步，邁向實用化的競爭正日益激烈。
 
-其中最受矚目的關鍵字之一就是「量子超越性（Quantum Supremacy，或稱量子霸權）」。這指的是在特定的計算任務中，量子電腦展現出壓倒古典電腦計算能力的瞬間。本文將從量子超越性的嚴格定義開始，詳細解說Google在2019年宣布全球首次達成此里程碑的「Sycamore」處理器的實驗細節、IBM對此的反駁與獨特策略，以及邁向真正實用化最大障礙的「量子錯誤更正（Quantum Error Correction: QEC）」與「容錯量子計算（Fault-Tolerant Quantum Computing: FTQC）」的最新發展藍圖，並進行技術與數學上的深入探討。
+其中最受矚目的關鍵字之一就是「量子超越性（Quantum Supremacy，或稱量子霸權）」。這指的是在特定的計算任務中，量子電腦展現出壓倒古典電腦計算能力的瞬間。本文將從量子超越性的嚴格定義開始，詳細解說Google在2019年宣布全球首次達成此里程碑的「Sycamore」處理器的實驗細節、IBM對此的反駁與獨特策略，以及邁向真正實用化最大障礙的「量子錯誤更正（Quantum Error Correction: QEC）」與「容錯量子計算（Fault-Tolerant [Quantum Computing](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/): FTQC）」的最新發展藍圖，並進行技術與數學上的深入探討。
 
 ---
 
@@ -160,7 +160,7 @@ $$
 
 ## 6. 邁向FTQC（容錯量子計算）的發展藍圖與展望
 
-Google與IBM雖然各自採用了不同的架構與策略，但都在為了最終目標FTQC（Fault-Tolerant Quantum Computing，容錯量子計算）展開著激烈的開發競爭。
+Google與IBM雖然各自採用了不同的架構與策略，但都在為了最終目標FTQC（Fault-Tolerant [Quantum Computing](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)，容錯量子計算）展開著激烈的開發競爭。
 
 ### IBM的策略：模組化與重六角（Heavy-Hex）網格
 IBM在徹底降低錯誤率的同時，也致力於處理器的規模擴充。在挑戰「Eagle(127Q)」、「Osprey(433Q)」、「Condor(1121Q)」等單一晶片極限的同時，也發表了名為「Quantum System Two」的模組化架構。此外，在量子位元的耦合拓撲結構上，採用了能減少不必要的串擾（crosstalk）並提高穩定性的「重六角（Heavy-Hex）網格」。IBM的策略是一種混合式方法，短期內透過高度的錯誤緩解追求實用性，並階段性地導入QEC。

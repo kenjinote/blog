@@ -135,7 +135,7 @@ S'il existait un algorithme en $L_n[1/4]$, ou même un algorithme classique en t
 
 ## 5. La percée par les ordinateurs quantiques : l'algorithme de Shor
 
-Alors que les ordinateurs classiques font face au mur du $L_n[1/3]$, c'est l'**algorithme de Shor (Shor's Algorithm)**, publié en 1994 par Peter Shor, qui a brisé ce mur en changeant fondamentalement le modèle de calcul lui-même.
+Alors que les ordinateurs classiques font face au mur du $L_n[1/3]$, c'est l'**algorithme de Shor ([Shor's Algorithm](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/))**, publié en 1994 par Peter Shor, qui a brisé ce mur en changeant fondamentalement le modèle de calcul lui-même.
 
 ### 5.1 Le choc du temps quantique polynomial
 
@@ -160,7 +160,7 @@ La différence entre ces deux classes de complexité a une signification décisi
 
 Prenons l'exemple de la factorisation de RSA-2048 (un nombre composé de 2048 bits).
 - **GNFS (Classique)** : En substituant $n \approx 2^{2048}$ dans $L_n[1/3, 1.923]$, il faut environ $2^{112}$ opérations. Il s'agit d'une quantité astronomique de calculs qui prendrait plus de temps que l'âge de l'univers, même en rassemblant toutes les ressources informatiques actuelles sur Terre.
-- **Algorithme de Shor (Quantique)** : Avec un algorithme en $O((\log n)^3)$, il suffit d'environ $2048^3 \approx 8.5 \times 10^9$ opérations de portes logiques. Cela signifie que si le matériel approprié (un ordinateur quantique universel avec des millions de qubits physiques et des capacités de correction d'erreurs) existait, le calcul serait terminé en quelques heures à quelques jours seulement.
+- **[Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/) (Quantique)** : Avec un algorithme en $O((\log n)^3)$, il suffit d'environ $2048^3 \approx 8.5 \times 10^9$ opérations de portes logiques. Cela signifie que si le matériel approprié (un ordinateur quantique universel avec des millions de qubits physiques et des capacités de correction d'erreurs) existait, le calcul serait terminé en quelques heures à quelques jours seulement.
 
 Le changement de paradigme passant d'une fonction sous-exponentielle avec un « exposant $\alpha=1/3$ » à un « temps polynomial » neutralise la stratégie traditionnelle de la cryptographie qui consiste à garantir la sécurité en augmentant la longueur de la clé.
 

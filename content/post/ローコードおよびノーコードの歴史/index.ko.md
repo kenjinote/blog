@@ -87,7 +87,7 @@ description: '1980년대부터 현재에 이르기까지 로우코드·노코드
 최근, 클라우드 기반의 로우코드/노코드 도구가 급속도로 진화하고 있습니다.
 
 * **Power Platform (Microsoft)**
-  'Power Apps', 'Power Automate' 등을 포함한 통합형 업무 앱 개발 및 자동화 플랫폼. 기업의 업무 프로세스를 드래그 앤 드롭으로 시각적으로 구축할 수 있습니다.
+  'Power Apps', 'Power [Automate](https://kenji.blog/ko/p/automata-formal-language-theory/)' 등을 포함한 통합형 업무 앱 개발 및 자동화 플랫폼. 기업의 업무 프로세스를 드래그 앤 드롭으로 시각적으로 구축할 수 있습니다.
 
 * **Salesforce Lightning Platform**
   CRM인 Salesforce에서 제공하는 앱 개발 기반. GUI로 업무 앱을 제작할 수 있으며, 다른 Salesforce 서비스와의 통합도 용이합니다.

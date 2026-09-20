@@ -20,7 +20,7 @@ In this article, we will take our first steps into the world of quantum programm
 
 ---
 
-## 2. Fundamentals of Physics and Mathematics Behind Quantum Computing
+## 2. Fundamentals of Physics and Mathematics Behind [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)
 
 To understand quantum programming, you first need to grasp the basic concepts of quantum mechanics. Here, we will explain the three important pillars: qubits, superposition, and quantum entanglement.
 

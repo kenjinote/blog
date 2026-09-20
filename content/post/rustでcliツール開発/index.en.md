@@ -421,7 +421,7 @@ cargo publish
 ```
 Once published, users all over the world will be able to install your tool with a single command: `cargo install gh-stats-fetcher`.
 
-### Automated Releases with GitHub Actions
+### [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Releases with GitHub Actions
 Build a CI/CD pipeline that automatically uploads cross-compiled binaries to GitHub Releases. Write settings like the following in `.github/workflows/release.yml`. By doing this, binaries for Linux, macOS, and Windows are automatically built and attached as release assets simply by pushing a tag (due to space limitations, detailed YAML description is omitted here, but using an Action like `taiki-e/upload-rust-binary-action` is the current best practice).
 
 ---

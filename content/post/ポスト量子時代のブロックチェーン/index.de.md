@@ -60,7 +60,7 @@ $$
 
 Die umgekehrte Berechnung des privaten Schlüssels $k$ aus dem veröffentlichten öffentlichen Schlüssel $K$ und dem Basispunkt $G$ (Berechnung des diskreten Logarithmus) mit einem klassischen Computer erfordert selbst mit den besten klassischen Algorithmen wie der Pollard-Rho-Methode eine exponentielle Rechenzeit von $\mathcal{O}(\sqrt{p})$. Bei einem 256-Bit-Schlüssel sind etwa $2^{128}$ Operationen erforderlich, was auf einem Niveau liegt, das selbst bei Milliarden Jahren Betrieb aktueller Supercomputer nicht gelöst werden kann.
 
-### 2.2. Der Zusammenbruch durch Shors Algorithmus (Shor's Algorithm)
+### 2.2. Der Zusammenbruch durch Shors Algorithmus ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))
 
 Dieser Ansatz wurde jedoch 1994 durch **Shors Algorithmus**, der von Peter Shor veröffentlicht wurde, vollständig zerstört. Shors Algorithmus wurde ursprünglich vorgeschlagen, um das Primfaktorzerlegungsproblem (die Basis der RSA-Kryptografie) in polynomieller Zeit zu lösen, er kann jedoch auch auf das Problem des diskreten Logarithmus und das Problem des diskreten Logarithmus auf elliptischen Kurven angewendet werden.
 

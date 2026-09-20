@@ -138,7 +138,7 @@ graph TD
 
 哥德爾定理帶來的影響，並未局限在數學的框架內。1936 年，英國數學家艾倫・圖靈（[Alan Turing](https://kenji.blog/zh-tw/p/turing/)）將哥德爾「形式系統」的概念轉換為物理性的計算過程，構想出名為「圖靈機」的虛擬計算機模型。
 
-圖靈將哥德爾的不完備定理應用到電腦的世界，證明了「不存在一種萬能的演算法，能預先判定任何電腦程式是否會永遠無法結束計算」。這就是著名的 **停機問題** （Halting Problem）。
+圖靈將哥德爾的不完備定理應用到電腦的世界，證明了「不存在一種萬能的演算法，能預先判定任何電腦程式是否會永遠無法結束計算」。這就是著名的 **停機問題** （[Halting Problem](https://kenji.blog/zh-tw/p/turing-machine-computability/)）。
 
 ```mermaid
 graph TD

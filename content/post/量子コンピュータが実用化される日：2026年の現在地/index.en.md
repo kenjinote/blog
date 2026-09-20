@@ -9,7 +9,7 @@ categories: ["quantum-computing", "technology", "mathematics"]
 tags: ["Quantum", "Error Correction", "Qubit", "2026"]
 ---
 
-## 1. Introduction: Where Quantum Computing Stands in 2026
+## 1. Introduction: Where [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/) Stands in 2026
 
 As of 2026, quantum computing has made a decisive shift from a "theoretical dream" to an "engineering reality." As the limitations of **NISQ (Noisy Intermediate-Scale Quantum)** devices—which were mainstream until a few years ago—became clear, research institutions and tech giants around the world shifted their focus toward realizing "FTQC (Fault-Tolerant Quantum Computing)."
 
@@ -128,7 +128,7 @@ The ion-trap architecture (led by Quantinuum, IonQ, etc.) uses the internal ener
 
 The 2026 breakthrough involved expanding the QCCD (Quantum Charge Coupled Device) architecture into two dimensions and generating high-speed entanglement between multiple traps using photonic interconnects. This drastically improved the slow gate speeds and scalability issues that were weaknesses of the ion-trap method.
 
-### 5.3 Topological Quantum Computing: Controlling Anyons
+### 5.3 Topological [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/): Controlling Anyons
 
 **Topological quantum computing**, long considered theoretical, has finally entered the phase of experimental demonstration in 2026. This approach, promoted by Microsoft and others, uses non-[Abel](https://kenji.blog/en/p/abel/)ian anyons called "Majorana Zero Modes."
 

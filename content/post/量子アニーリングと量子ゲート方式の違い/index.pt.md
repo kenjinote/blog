@@ -137,7 +137,7 @@ O maior desafio do modelo de porta quântica é a "decoerência", onde os estado
 
 Para realizar cálculos ideais, a **Correção de Erros Quânticos (Quantum Error Correction)** é essencial. Por exemplo, em métodos como o "Código de Superfície" (Surface Code), agrupa-se múltiplos qubits físicos para formar 1 "qubit lógico" (Logical Qubit) sem erros. No entanto, são necessários milhares a dezenas de milhares de qubits físicos para criar 1 qubit lógico, resultando em um enorme custo indireto (overhead).
 
-O estágio em que estamos agora é a era dos dispositivos **NISQ (Noisy Intermediate-Scale Quantum)** de dezenas a centenas de qubits sem correção de erros. Para alcançar o **FTQC (Fault-Tolerant Quantum Computing)** com correção de erros total, muitos avanços ainda são necessários.
+O estágio em que estamos agora é a era dos dispositivos **NISQ (Noisy Intermediate-Scale Quantum)** de dezenas a centenas de qubits sem correção de erros. Para alcançar o **FTQC (Fault-Tolerant [Quantum Computing](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))** com correção de erros total, muitos avanços ainda são necessários.
 
 ---
 
@@ -184,7 +184,7 @@ Vamos ver as áreas de aplicação específicas em que cada método se destaca.
 
 ### 6.2. Casos de Uso do Modelo de Porta Quântica
 - **Simulação Química Quântica**: Simulação de alta precisão dos estados energéticos de moléculas e reações químicas.
-- **Fatoração em Primos (Algoritmo de Shor)**: Um algoritmo para fatorar enormes números compostos em tempo polinomial. Se for colocado em uso prático, a infraestrutura atual de criptografia de chave pública, como o RSA, será quebrada, tornando urgente a transição para a criptografia pós-quântica (PQC).
+- **Fatoração em Primos ([Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))**: Um algoritmo para fatorar enormes números compostos em tempo polinomial. Se for colocado em uso prático, a infraestrutura atual de criptografia de chave pública, como o RSA, será quebrada, tornando urgente a transição para a criptografia pós-quântica (PQC).
 - **Busca em Banco de Dados (Algoritmo de Grover)**: Quando se pesquisa dados em bancos de dados não classificados, computadores clássicos exigem etapas de $O(N)$, enquanto o algoritmo de Grover pode pesquisar em etapas de $O(\sqrt{N})$.
 
 ### 6.3. Algoritmos Híbridos na Era NISQ: VQE e QAOA

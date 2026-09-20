@@ -60,7 +60,7 @@ $$
 
 Usar um computador clássico para calcular reversamente (encontrar o logaritmo discreto) a chave privada $k$ a partir da chave pública publicada $K$ e do ponto base $G$ leva um tempo computacional exponencial de $\mathcal{O}(\sqrt{p})$, mesmo usando os melhores algoritmos clássicos, como o método de fatoração rho de Pollard. Para uma chave de 256 bits, seriam necessárias cerca de $2^{128}$ operações, um nível impossível de resolver mesmo executando os supercomputadores atuais por bilhões de anos.
 
-### 2.2. Colapso pelo Algoritmo de Shor (Shor's Algorithm)
+### 2.2. Colapso pelo [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))
 
 No entanto, o **Algoritmo de Shor**, publicado por Peter Shor em 1994, destruiu completamente essa premissa. O algoritmo de Shor foi originalmente proposto para resolver o problema de fatoração de inteiros (a base da criptografia RSA) em tempo polinomial, mas também pode ser aplicado ao problema do logaritmo discreto e ao problema do logaritmo discreto em curvas elípticas.
 
@@ -327,7 +327,7 @@ Existem alguns projetos inovadores na era blockchain focados exclusivamente ness
 
 A era pós-quântica está deixando de ser uma premissa da FC (Ficção Científica) para transformar-se numa ameaça tangível de problemas e riscos graves na própria infraestrutura do ecossistema criptográfico hoje.
 
-Com o machado de ponta-dupla do Algoritmo de Shor e do Algoritmo de Grover pelas frentes quânticas, tanto o ECDSA da Chave Pública quanto a Função Hash encaram o seu extermínio respectivo. Notoriamente a fragilidade destrutiva do ECDSA dita as regras: os perigos vindos da extração dos fundos via ataques front-running (Front-Running Attacks) exigirão medidas impetuosas para o PQC sem demora.
+Com o machado de ponta-dupla do [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) e do Algoritmo de Grover pelas frentes quânticas, tanto o ECDSA da Chave Pública quanto a Função Hash encaram o seu extermínio respectivo. Notoriamente a fragilidade destrutiva do ECDSA dita as regras: os perigos vindos da extração dos fundos via ataques front-running (Front-Running Attacks) exigirão medidas impetuosas para o PQC sem demora.
 
 Felizmente, não é apenas um fim apocalíptico onde sentam-se à espera. As soluções de reticulados, hashes sob novos padrões validados do PQC, os recursos Layer-2 ZK-STARKs provaram ser barreiras excelentes no desafio iminente, controlando por fim a praga da enorme quantia e tamanho que as transações requerem.
 

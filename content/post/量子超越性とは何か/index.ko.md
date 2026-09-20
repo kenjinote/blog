@@ -14,7 +14,7 @@ description: '양자 우월성의 정의부터 Google의 Sycamore 프로세서�
 
 양자 컴퓨팅은 물리학의 근본 원리인 양자역학을 정보 처리에 응용함으로써, 고전 컴퓨터(현재 우리가 일상적으로 사용하는 PC나 슈퍼컴퓨터)로는 현실적인 시간 내에 풀 수 없는 복잡한 문제를 해결할 가능성을 품고 있습니다. 이 분야는 오랫동안 이론적인 연구가 주를 이루었으나, 최근 하드웨어의 급속한 진보로 실용화를 향한 경쟁이 격화되고 있습니다.
 
-그 중에서도 가장 큰 주목을 받은 키워드 중 하나가 '양자 우월성(Quantum Supremacy)'입니다. 이는 특정 계산 작업에서 양자 컴퓨터가 고전 컴퓨터를 압도하는 계산 능력을 보여주는 순간을 의미합니다. 본 기사에서는 양자 우월성의 엄밀한 정의를 시작으로, 2019년 세계 최초로 이 마일스톤에 도달했다고 발표한 Google의 'Sycamore(시카모어)' 프로세서의 실험 세부 내용, 이에 대한 IBM의 반론과 독자적인 접근법, 그리고 진정한 실용화를 위한 가장 큰 장벽인 '양자 오류 정정(Quantum Error Correction: QEC)'과 '결함 허용 양자 컴퓨팅(Fault-Tolerant Quantum Computing: FTQC)'을 향한 최신 로드맵에 대해 기술적이고 수학적으로 깊이 있게 해설합니다.
+그 중에서도 가장 큰 주목을 받은 키워드 중 하나가 '양자 우월성(Quantum Supremacy)'입니다. 이는 특정 계산 작업에서 양자 컴퓨터가 고전 컴퓨터를 압도하는 계산 능력을 보여주는 순간을 의미합니다. 본 기사에서는 양자 우월성의 엄밀한 정의를 시작으로, 2019년 세계 최초로 이 마일스톤에 도달했다고 발표한 Google의 'Sycamore(시카모어)' 프로세서의 실험 세부 내용, 이에 대한 IBM의 반론과 독자적인 접근법, 그리고 진정한 실용화를 위한 가장 큰 장벽인 '양자 오류 정정(Quantum Error Correction: QEC)'과 '결함 허용 양자 컴퓨팅(Fault-Tolerant [Quantum Computing](https://kenji.blog/ko/p/quantum-computing-shors-algorithm/): FTQC)'을 향한 최신 로드맵에 대해 기술적이고 수학적으로 깊이 있게 해설합니다.
 
 ---
 
@@ -172,7 +172,7 @@ $$
 
 ## 6. FTQC(결함 허용 양자 컴퓨팅)를 향한 로드맵과 전망
 
-Google과 IBM은 각각 다른 아키텍처와 접근법을 채택하면서도, 최종 목표인 FTQC(Fault-Tolerant Quantum Computing)를 향해 치열한 개발 경쟁을 벌이고 있습니다.
+Google과 IBM은 각각 다른 아키텍처와 접근법을 채택하면서도, 최종 목표인 FTQC(Fault-Tolerant [Quantum Computing](https://kenji.blog/ko/p/quantum-computing-shors-algorithm/))를 향해 치열한 개발 경쟁을 벌이고 있습니다.
 
 ### IBM의 접근법: 모듈화와 헤비 헥스 격자
 

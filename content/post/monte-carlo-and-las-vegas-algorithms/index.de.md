@@ -83,7 +83,7 @@ Ein Las-Vegas-Algorithmus ist ein Algorithmus, bei dem **das erhaltene Ergebnis 
 - **Korrektheit der Lösung**: Immer zu 100% korrekt.
 - **Ausführungszeit**: Zufällig (kann im schlimmsten Fall extrem lang dauern).
 
-Der Name leitet sich ebenfalls von Las Vegas ab. Anders als bei Monte Carlo ist „der Gewinn (die korrekte Lösung) garantiert, wenn man weiterspielt, aber man weiß nicht, wie lange man am Automaten sitzen muss“.
+Der Name leitet sich ebenfalls von Las Vegas ab. Anders als bei Monte Carlo ist „der Gewinn (die korrekte Lösung) garantiert, wenn man weiterspielt, aber man weiß nicht, wie lange man am [[Automate](https://kenji.blog/de/p/automata-formal-language-theory/)n](https://kenji.blog/de/p/automata-formal-language-theory/) sitzen muss“.
 
 Er generiert Zufallszahlen und überprüft das Ergebnis. Wenn das Ergebnis falsch oder nicht gut ist, wird es verworfen und von vorne begonnen. Dieser Vorgang wird so lange wiederholt, bis die richtige Lösung gefunden ist.
 

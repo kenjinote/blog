@@ -248,7 +248,7 @@ Na secp256k1 do Bitcoin, como $p \approx 2^{256}$, são necessárias cerca de $2
 ### A Ameaça dos Computadores Quânticos e a Criptografia Pós-Quântica
 
 No entanto, há uma grande preocupação com a segurança computacional. Essa é a ascensão dos **Computadores Quânticos (Quantum Computers)**.
-O "Algoritmo de Shor" (Shor's Algorithm), publicado por Peter Shor em 1994, provou matematicamente que o uso de computadores quânticos pode resolver o problema de fatoração de primos (a base da criptografia RSA) e o problema do logaritmo discreto (a base da ECC) em tempo polinomial $\mathcal{O}(n^3)$.
+O "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)), publicado por Peter Shor em 1994, provou matematicamente que o uso de computadores quânticos pode resolver o problema de fatoração de primos (a base da criptografia RSA) e o problema do logaritmo discreto (a base da ECC) em tempo polinomial $\mathcal{O}(n^3)$.
 
 Se for concluído um computador quântico prático em larga escala com Qubits suficientes e baixa taxa de erro, haverá o risco de que chaves privadas sejam calculadas retroativamente a partir das chaves públicas do Bitcoin.
 As defesas da rede Bitcoin contra isso são as seguintes:

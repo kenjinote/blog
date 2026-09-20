@@ -86,7 +86,7 @@ flowchart TD
 
 Von Neumann nahm am EDVAC-Entwicklungsprojekt an der University of Pennsylvania teil und fasste dieses bahnbrechende Konzept im "First Draft of a Report on the EDVAC" zusammen. Dies ermöglichte die Realisierung eines Allzweckcomputers, der verschiedene Berechnungen durchführen kann, indem einfach die Software (das Programm) neu geschrieben wird, ohne die Hardware physisch neu verkabeln zu müssen. Die moderne IT-Gesellschaft baut auf diesem von ihm geschaffenen Fundament auf.
 
-## 7. Zelluläre Automaten und die Theorie selbstreplizierender Maschinen
+## 7. Zelluläre [[Automate](https://kenji.blog/de/p/automata-formal-language-theory/)n](https://kenji.blog/de/p/automata-formal-language-theory/) und die Theorie selbstreplizierender Maschinen
 
 In seinen späteren Jahren interessierte sich von Neumann sehr für die mathematische Modellierung der Mechanismen der biologischen Selbstreplikation. Auf Anraten seines Kollegen Stanislaw Ulam entwarf er das Konzept der **zellulären Automaten**, bei dem der Raum in ein Raster unterteilt ist und jede Rasterzelle ihren Zustand nach einer bestimmten Regel ändert.
 
@@ -117,7 +117,7 @@ Die Bücher und Artikel, die von Neumann zu Lebzeiten hinterlassen hat, sind vie
    Zusammen mit Oskar Morgenstern verfasst. Ein Meisterwerk, das systematisch alles von Nullsummenspielen bis hin zu kooperativen Spielen diskutierte.
 3. **Der Computer und das Gehirn (1958)**
    Ein unvollendetes Manuskript, das posthum veröffentlicht wurde. Ein Pionierwerk, das die neuronalen Netze des menschlichen Gehirns mit den Mechanismen digitaler Computer vergleicht.
-4. **Theorie der selbstreproduzierenden Automaten (1966)**
+4. **Theorie der selbstreproduzierenden [[Automate](https://kenji.blog/de/p/automata-formal-language-theory/)n](https://kenji.blog/de/p/automata-formal-language-theory/) (1966)**
    Zusammengestellt und veröffentlicht aus von Neumanns posthumen Manuskripten von Arthur Burks.
 
 ## 11. John von Neumann: Kurze Chronologie

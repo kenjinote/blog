@@ -12,7 +12,7 @@ description: 'O problema da fatoração de inteiros, que garante a segurança da
 
 A segurança da informação na sociedade da internet moderna é protegida por sistemas de criptografia de chave pública, como a criptografia RSA. A base para a segurança da criptografia RSA depende do fato de que **"a fatoração de números compostos gigantescos é computacionalmente extremamente difícil"** .
 
-Neste artigo, desvendaremos o mecanismo matemático do **"Crivo do Corpo de Números Generalizado"** (General Number Field Sieve, GNFS), que é o algoritmo de fatoração mais poderoso em computadores clássicos, e aprofundaremos minuciosamente, usando fórmulas matemáticas e diagramas conceituais, a mudança de paradigma de por que ele é completamente superado pelo **"Algoritmo de Shor"** , descoberto por Peter Shor.
+Neste artigo, desvendaremos o mecanismo matemático do **"Crivo do Corpo de Números Generalizado"** (General Number Field Sieve, GNFS), que é o algoritmo de fatoração mais poderoso em computadores clássicos, e aprofundaremos minuciosamente, usando fórmulas matemáticas e diagramas conceituais, a mudança de paradigma de por que ele é completamente superado pelo **"[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)"** , descoberto por Peter Shor.
 
 ---
 
@@ -88,7 +88,7 @@ Por fim, extraímos a raiz quadrada tanto no corpo algébrico quanto no anel de 
 
 ---
 
-## 3. Um avanço revolucionário pela computação quântica: "Algoritmo de Shor"
+## 3. Um avanço revolucionário pela computação quântica: "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)"
 
 Enquanto o GNFS requer tempo subexponencial, o **"Algoritmo de Shor"** , publicado por Peter Shor em 1994, pode resolver esse problema em **"tempo polinomial"** usando um computador quântico.
 
@@ -188,7 +188,7 @@ graph TD
 
 O GNFS adota uma abordagem que consiste em **"buscar relações dentro de um espaço matemático (corpo algébrico)"** . No entanto, como o espaço de busca se expande exponencialmente em relação ao número de dígitos, com as capacidades computacionais clássicas (incluindo paralelização), a decodificação se torna quase impossível quando o tamanho da chave excede os 2048 bits.
 
-Por outro lado, o Algoritmo de Shor utiliza a **"natureza de onda devido à interferência quântica"** . Ele avalia simultaneamente todos os caminhos computacionais na sobreposição de estados e usa a QFT para cancelar respostas desnecessárias (interferência destrutiva) enquanto amplifica apenas a amplitude de probabilidade do período correto (interferência construtiva). Com isso, ao invés de buscar no espaço, atinge uma abordagem de dimensão completamente diferente onde **"surge a própria resposta correta"** .
+Por outro lado, o [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) utiliza a **"natureza de onda devido à interferência quântica"** . Ele avalia simultaneamente todos os caminhos computacionais na sobreposição de estados e usa a QFT para cancelar respostas desnecessárias (interferência destrutiva) enquanto amplifica apenas a amplitude de probabilidade do período correto (interferência construtiva). Com isso, ao invés de buscar no espaço, atinge uma abordagem de dimensão completamente diferente onde **"surge a própria resposta correta"** .
 
 ## 6. Conclusão
 

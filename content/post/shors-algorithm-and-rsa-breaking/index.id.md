@@ -14,7 +14,7 @@ Di masyarakat internet modern, dasar untuk melindungi rahasia komunikasi adalah 
 
 Namun, dengan munculnya "komputer kuantum", ada kemungkinan keamanan ini dihancurkan dari akarnya. Di media berita, kadang-kadang terdapat tajuk utama yang sensasional seperti "Setelah komputer kuantum selesai, semua kata sandi dan enkripsi di dunia akan didekripsi dalam hitungan detik". Apakah ini benar-benar terjadi?
 
-Artikel ini mendalami mekanisme GNFS (General Number Field Sieve) sebagai metode dekripsi kriptografi klasik, dan algoritma dekripsi definitif menggunakan komputer kuantum, yaitu "Algoritma Shor" (Shor's Algorithm). Kita akan menjelaskan konsep lanjutan seperti Transformasi Fourier Kuantum dan penemuan periode dengan cara yang mudah dimengerti, serta menyelidiki kondisi perangkat keras kuantum saat ini di era NISQ (Noisy Intermediate-Scale Quantum) dan tantangan nyata untuk menghancurkan RSA-2048.
+Artikel ini mendalami mekanisme GNFS (General Number Field Sieve) sebagai metode dekripsi kriptografi klasik, dan algoritma dekripsi definitif menggunakan komputer kuantum, yaitu "Algoritma Shor" ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/)). Kita akan menjelaskan konsep lanjutan seperti Transformasi Fourier Kuantum dan penemuan periode dengan cara yang mudah dimengerti, serta menyelidiki kondisi perangkat keras kuantum saat ini di era NISQ (Noisy Intermediate-Scale Quantum) dan tantangan nyata untuk menghancurkan RSA-2048.
 
 ---
 

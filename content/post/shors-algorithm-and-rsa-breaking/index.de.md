@@ -14,7 +14,7 @@ In der modernen Internetgesellschaft ist die "Public-Key-Kryptographie" die Grun
 
 Jedoch wurde darauf hingewiesen, dass die Sicherheit durch das Aufkommen von "Quantencomputern" grundlegend untergraben werden könnte. In den Medien finden sich manchmal aufsehenerregende Schlagzeilen wie "Wenn der Quantencomputer fertiggestellt ist, werden alle Passwörter und Verschlüsselungen der Welt in Sekunden geknackt". Ist das wirklich wahr?
 
-In diesem Artikel werden wir tief in die Mechanismen der GNFS (General Number Field Sieve), einer klassischen kryptoanalytischen Methode, und des "Shor-Algorithmus (Shor's Algorithm)", des ultimativen kryptoanalytischen Algorithmus unter Verwendung eines Quantencomputers, eintauchen. Wir werden fortgeschrittene Konzepte wie die Quanten-Fouriertransformation und das Finden von Perioden leicht verständlich erklären und den aktuellen Stand der Quantenhardware in der derzeitigen NISQ-Ära (Noisy Intermediate-Scale Quantum) sowie die tatsächlichen Hürden zur Knackung von RSA-2048 detailliert untersuchen.
+In diesem Artikel werden wir tief in die Mechanismen der GNFS (General Number Field Sieve), einer klassischen kryptoanalytischen Methode, und des "[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))", des ultimativen kryptoanalytischen Algorithmus unter Verwendung eines Quantencomputers, eintauchen. Wir werden fortgeschrittene Konzepte wie die Quanten-Fouriertransformation und das Finden von Perioden leicht verständlich erklären und den aktuellen Stand der Quantenhardware in der derzeitigen NISQ-Ära (Noisy Intermediate-Scale Quantum) sowie die tatsächlichen Hürden zur Knackung von RSA-2048 detailliert untersuchen.
 
 ---
 
@@ -108,7 +108,7 @@ Nach den Regeln der Quantenmechanik können wir nicht direkt in den Überlagerun
 
 ### Schritt 4: Quanten-Fouriertransformation (QFT: Quantum Fourier Transform)
 
-Der geniale Durchbruch des Shor-Algorithmus zur Überwindung dieser Barriere ist die Anwendung der ** Quanten-Fouriertransformation (QFT) ** auf das erste Register.
+Der geniale Durchbruch des [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) zur Überwindung dieser Barriere ist die Anwendung der ** Quanten-Fouriertransformation (QFT) ** auf das erste Register.
 
 Bevor wir eine Messung vornehmen, analysieren wir die Welleneigenschaften der Funktion $ f(x) $. Angenommen, wir beobachten das zweite Register. Angenommen, wir erhalten einen Wert $ y $. Dann kollabiert der Zustand des ersten Registers in "die Superposition aller $ x $, für die $ a^x \pmod N = y $ gilt".
 Diese Werte von $ x $ werden ein diskret angeordneter Zustand (eine Art kammartige Wahrscheinlichkeitsamplitudenverteilung) in Intervallen der Periode $ r $ sein, wie $ x_0, x_0 + r, x_0 + 2r, x_0 + 3r, \dots $.
@@ -167,7 +167,7 @@ Die Skalierung von Tausenden physikalischen Qubits auf ** 20 Millionen ** prakti
 
 Es ist jedoch voreilig zu denken, dass "wir sicher sind, wenn es noch mehr als 10 Jahre dauert". Derzeit gibt es Daten wie nationale Geheimnisse, medizinische Daten und langfristige Infrastrukturdesigns, deren Geheimhaltung für Jahrzehnte garantiert werden muss.
 
-Die Besorgnis betrifft die Angriffsmethode ** "Store Now, Decrypt Later" ** . Böswillige Staaten oder Organisationen fangen alle mit aktueller RSA oder ECC (Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy) verschlüsselten Kommunikationsdaten ab und speichern sie. Wenn dann in 10 oder 20 Jahren leistungsstarke Quantencomputer fertiggestellt sind, nutzen sie den Shor-Algorithmus, um alle vergangenen Daten zu entschlüsseln und Geheimnisse zu lüften.
+Die Besorgnis betrifft die Angriffsmethode ** "Store Now, Decrypt Later" ** . Böswillige Staaten oder Organisationen fangen alle mit aktueller RSA oder ECC (Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy) verschlüsselten Kommunikationsdaten ab und speichern sie. Wenn dann in 10 oder 20 Jahren leistungsstarke Quantencomputer fertiggestellt sind, nutzen sie den [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/), um alle vergangenen Daten zu entschlüsseln und Geheimnisse zu lüften.
 
 Um der Bedrohung durch diese zeitliche Verzögerung entgegenzuwirken, hat das NIST (National Institute of Standards and Technology) in den USA den Standardisierungsprozess für ** "Post-Quanten-Kryptographie (PQC)" ** rasch vorangetrieben.
 

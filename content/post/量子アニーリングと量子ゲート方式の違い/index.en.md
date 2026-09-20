@@ -20,7 +20,7 @@ In this article, we will thoroughly compare and explain these two models from a 
 
 ---
 
-## 1. Basics of Quantum Computing: Fundamental Differences from Classical Computers
+## 1. Basics of [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/): Fundamental Differences from Classical Computers
 
 Classical computers process information as "Bits" that take either a "0" or "1" state. On the other hand, quantum computers use "Qubits". Due to the quantum mechanical principle of "Superposition", a qubit can probabilistically hold both 0 and 1 states simultaneously.
 
@@ -137,7 +137,7 @@ The biggest challenge for the quantum gate model is "decoherence", where quantum
 
 To perform ideal computations, **Quantum Error Correction** is essential. For example, in methods like the "Surface Code", multiple physical qubits are bundled together to form a single error-free "Logical Qubit". However, creating one logical qubit requires thousands to tens of thousands of physical qubits, resulting in massive overhead.
 
-The stage we are currently at is the era of **NISQ (Noisy Intermediate-Scale Quantum)** devices, which have tens to hundreds of qubits without error correction. Many breakthroughs are still needed to achieve **FTQC (Fault-Tolerant Quantum Computing)** with complete error correction.
+The stage we are currently at is the era of **NISQ (Noisy Intermediate-Scale Quantum)** devices, which have tens to hundreds of qubits without error correction. Many breakthroughs are still needed to achieve **FTQC (Fault-Tolerant [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/))** with complete error correction.
 
 ---
 
@@ -184,7 +184,7 @@ Let's look at the specific application areas where each method excels.
 
 ### 6.2. Use Cases for the Quantum Gate Model
 - **Quantum Chemistry Simulation**: Simulating molecular energy states and chemical reactions with high precision.
-- **Prime Factorization (Shor's Algorithm)**: An algorithm that factors huge composite numbers in polynomial time. When this is put into practical use, current public-key infrastructure like RSA encryption will be broken, making the transition to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) an urgent issue.
+- **Prime Factorization ([Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/))**: An algorithm that factors huge composite numbers in polynomial time. When this is put into practical use, current public-key infrastructure like RSA encryption will be broken, making the transition to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) an urgent issue.
 - **Database Search (Grover's Algorithm)**: When searching for target data from an unsorted database, classical computers require $O(N)$ steps, but Grover's algorithm can search in $O(\sqrt{N})$ steps.
 
 ### 6.3. Hybrid Algorithms in the NISQ Era: VQE and QAOA

@@ -227,7 +227,7 @@ To consolidate unnecessary consecutive line breaks into one:
 
 By executing these via VS Code's search and replace feature (regular expression mode) or Neovim's `%s` command (`:%s/<b>\(.*?\)<\/b>/**\1**/g`), you can instantly unify formats.
 
-### Automated Checking via CI/CD Pipelines
+### [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Checking via CI/CD Pipelines
 
 Furthermore, using GitHub Actions, you can build a CI pipeline that automatically runs textlint when you push a blog post. This prevents deploying articles that contain rule violations.
 

@@ -14,7 +14,7 @@ Heutzutage wird ein Großteil unserer alltäglichen Kommunikation im Internet �
 
 Diese Verschlüsselungsmethoden basieren auf der Sicherheit mathematischer Probleme, wie der "Faktorisierung riesiger Zahlen" und dem "diskreten Logarithmusproblem", für deren Lösung heutige klassische Computer (einschließlich Supercomputer) astronomisch lange brauchen würden. Wenn jedoch der in den letzten Jahren rasant voranschreitende **Quantencomputer** in die Praxis umgesetzt wird, wird diese Prämisse grundlegend auf den Kopf gestellt.
 
-Der "Shor-Algorithmus", der 1994 von Peter Shor veröffentlicht wurde, bewies mathematisch, dass ein Quantencomputer mit ausreichender Leistung Probleme wie Faktorisierung und diskrete Logarithmen in extrem kurzer Zeit lösen kann. Das bedeutet das Risiko, dass die kryptographische Kommunikation, die das heutige Internet schützt, in Zukunft vollständig entschlüsselt wird (ein Problem, das als Y2Q: Years to Quantum oder Q-Day bezeichnet wird).
+Der "[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)", der 1994 von Peter Shor veröffentlicht wurde, bewies mathematisch, dass ein Quantencomputer mit ausreichender Leistung Probleme wie Faktorisierung und diskrete Logarithmen in extrem kurzer Zeit lösen kann. Das bedeutet das Risiko, dass die kryptographische Kommunikation, die das heutige Internet schützt, in Zukunft vollständig entschlüsselt wird (ein Problem, das als Y2Q: Years to Quantum oder Q-Day bezeichnet wird).
 
 Noch gravierender ist die Existenz einer Angriffsmethode namens "Harvest Now, Decrypt Later" (Jetzt Daten stehlen und speichern, später entschlüsseln, wenn die Kryptographie gebrochen werden kann). Daten, die über Jahrzehnte hinweg vertraulich bleiben müssen, wie nationale Geheimnisse, geistiges Eigentum von Unternehmen und persönliche biometrische Informationen, könnten bereits jetzt gestohlen werden mit der Prämisse einer künftigen Entschlüsselung.
 
@@ -24,7 +24,7 @@ Um auf diese beispiellose Krise zu reagieren, bündeln Kryptographen und Forschu
 
 ## Was ist Post-Quanten-Kryptographie (PQC)?
 
-Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy, PQC) ist ein Sammelbegriff für kryptographische Algorithmen, die so konzipiert sind, dass sie auf bestehenden klassischen Computern laufen und gleichzeitig resistent gegen Angriffe durch zukünftige große Quantencomputer (wie den Shor-Algorithmus) sind.
+Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy, PQC) ist ein Sammelbegriff für kryptographische Algorithmen, die so konzipiert sind, dass sie auf bestehenden klassischen Computern laufen und gleichzeitig resistent gegen Angriffe durch zukünftige große Quantencomputer (wie den [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)) sind.
 
 Technologien, die oft damit verwechselt werden, sind die "Quantenkryptographie (Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)" und die "Quantenschlüsselverteilung (QKD)", aber diese verfolgen völlig andere Ansätze. Die Quantenkryptographie (QKD) ist eine hardwarebasierte Technologie, die physikalische Gesetze der Quantenmechanik (wie die Eigenschaft, dass sich der Zustand bei Beobachtung ändert) nutzt, um Abhören auf dem Kommunikationsweg physikalisch unmöglich zu machen. Sie erfordert dedizierte Glasfasern und spezielle Geräte, was zu Herausforderungen hinsichtlich Einführungskosten und Entfernungsbeschränkungen führt.
 

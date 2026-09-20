@@ -138,7 +138,7 @@ En raison de leur nom dramatique, les théorèmes d'incomplétude de Gödel sont
 
 L'impact du théorème de Gödel n'est pas resté confiné au monde mathématique. En 1936, le mathématicien britannique [Alan Turing](https://kenji.blog/fr/p/turing/) a remplacé le concept de « système formel » de Gödel par un processus de calcul physique et a conçu un modèle informatique virtuel appelé « la machine de Turing ».
 
-Turing a appliqué le théorème d'incomplétude de Gödel au domaine informatique et a prouvé que « pour n'importe quel programme informatique, il n'existe pas d'algorithme universel permettant de déterminer à l'avance si le calcul finira un jour par s'arrêter ou non ». C'est le fameux **problème de l'arrêt (Halting Problem)**.
+Turing a appliqué le théorème d'incomplétude de Gödel au domaine informatique et a prouvé que « pour n'importe quel programme informatique, il n'existe pas d'algorithme universel permettant de déterminer à l'avance si le calcul finira un jour par s'arrêter ou non ». C'est le fameux **problème de l'arrêt ([Halting Problem](https://kenji.blog/fr/p/turing-machine-computability/))**.
 
 ```mermaid
 graph TD

@@ -138,7 +138,7 @@ Devido ao seu nome dramático, os Teoremas da Incompletude de Gödel são freque
 
 O impacto do teorema de Gödel não se limitou à matemática. Em 1936, o matemático britânico [Alan Turing](https://kenji.blog/pt/p/turing/) substituiu o conceito do "sistema formal" de Gödel por processos de cálculo físico e idealizou o modelo de computador virtual chamado "Máquina de Turing".
 
-Turing aplicou o teorema da incompletude de Gödel ao mundo dos computadores e provou que "não existe nenhum algoritmo universal que possa prever de antemão se um programa de computador alguma vez terminará o seu cálculo (ou se ficará num loop eterno)". Este é o famoso **Problema da Paragem** (Halting Problem).
+Turing aplicou o teorema da incompletude de Gödel ao mundo dos computadores e provou que "não existe nenhum algoritmo universal que possa prever de antemão se um programa de computador alguma vez terminará o seu cálculo (ou se ficará num loop eterno)". Este é o famoso **Problema da Paragem** ([Halting Problem](https://kenji.blog/pt/p/turing-machine-computability/)).
 
 ```mermaid
 graph TD

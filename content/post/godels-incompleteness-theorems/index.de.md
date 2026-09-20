@@ -138,7 +138,7 @@ Der Zweite Unvollständigkeitssatz zeigte die entscheidende Grenze auf, dass es 
 
 Die Auswirkungen von Gödels Theorem beschränkten sich nicht auf die Mathematik. 1936 übertrug der britische Mathematiker [Alan Turing](https://kenji.blog/de/p/turing/) Gödels Konzept des „formalen Systems“ auf physische Rechenprozesse und erdachte ein virtuelles Computermodell namens „Turingmaschine“.
 
-Turing wandte Gödels Unvollständigkeitssatz auf die Welt der Computer an und bewies: „Es gibt keinen universellen Algorithmus, der im Voraus bestimmen kann, ob ein Computerprogramm jemals anhalten wird.“ Dies ist das berühmte **Halteproblem** (Halting Problem).
+Turing wandte Gödels Unvollständigkeitssatz auf die Welt der Computer an und bewies: „Es gibt keinen universellen Algorithmus, der im Voraus bestimmen kann, ob ein Computerprogramm jemals anhalten wird.“ Dies ist das berühmte **[Halteproblem](https://kenji.blog/de/p/turing-machine-computability/)** ([Halting Problem](https://kenji.blog/de/p/turing-machine-computability/)).
 
 ```mermaid
 graph TD

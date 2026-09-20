@@ -117,7 +117,7 @@ $$ P( \text{God} ) \implies \Box \exists x \; \text{God}(x) $$
 
 # 11. [チューリング](https://kenji.blog/p/turing/)と計算機科学への遺産
 
-[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)と[ゲーデル](https://kenji.blog/p/godel/)数化のアイデアは、計算理論の誕生に直接的な影響を与えました。イギリスの数学者[アラン・チューリング](https://kenji.blog/p/turing/)は、[ゲーデル](https://kenji.blog/p/godel/)の論理を応用して「[チューリング](https://kenji.blog/p/turing/)マシン」という抽象的な計算モデルを考案し、アルゴリズムによって解けない問題（停止問題）が存在することを証明しました。同時期にアロンゾ・チャーチもラムダ計算を用いて同様の結論に達しました。
+[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)と[ゲーデル](https://kenji.blog/p/godel/)数化のアイデアは、計算理論の誕生に直接的な影響を与えました。イギリスの数学者[アラン・チューリング](https://kenji.blog/p/turing/)は、[ゲーデル](https://kenji.blog/p/godel/)の論理を応用して「[チューリング](https://kenji.blog/p/turing/)マシン」という抽象的な計算モデルを考案し、アルゴリズムによって解けない問題（停止問題）が存在することを証明しました。同時期にアロンゾ・チャーチも[ラムダ計算](https://kenji.blog/p/lambda-calculus-functional-programming/)を用いて同様の結論に達しました。
 
 今日、[ゲーデル](https://kenji.blog/p/godel/)の定理は人工知能（AI）の限界に関する議論でも頻繁に引用されます。物理学者のロジャー・ペンローズは、「機械（AI）はアルゴリズムに従うため[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)の制約を受けるが、人間の直感は真理を見抜くことができるため、人間の意識は計算不能なプロセスに基づいている」という「ペンローズ・[ゲーデル](https://kenji.blog/p/godel/)論法」を提唱し、AIが真の意味で人間の知性を超えられるかという論争に火をつけました。
 

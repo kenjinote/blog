@@ -10,7 +10,7 @@ slug: "halting-problem"
 
 Lorsque l'on programme, il arrive d'être inquiet et de se demander : « Ce programme ne va-t-il pas finir en boucle infinie quelque part ? » S'il existait un **outil capable de déterminer avec certitude si n'importe quel programme finira par boucler à l'infini ou non**, le développement et le débogage deviendraient incroyablement plus simples.
 
-Cependant, dans le domaine de l'informatique, il a été mathématiquement prouvé qu'un tel outil de rêve est **« absolument impossible à créer »**. C'est le célèbre **« problème de l'arrêt (Halting Problem) »**.
+Cependant, dans le domaine de l'informatique, il a été mathématiquement prouvé qu'un tel outil de rêve est **« absolument impossible à créer »**. C'est le célèbre **« problème de l'arrêt ([Halting Problem](https://kenji.blog/fr/p/turing-machine-computability/)) »**.
 
 Cet article explique clairement, à l'aide d'exemples concrets intuitifs, de formules mathématiques (KaTeX) et de schémas (Mermaid), ce problème dont la solution a été prouvée par [Alan Turing](https://kenji.blog/fr/p/turing/) en 1936.
 
@@ -150,7 +150,7 @@ Comme le montre le schéma, dès l'instant où l'on donne $D$ lui-même en entr�
 
 ## L'histoire des ordinateurs et la machine de Turing
 
-C'est en 1936, à une époque où les ordinateurs électroniques modernes n'existaient pas encore, qu'[Alan Turing](https://kenji.blog/fr/p/turing/) a soulevé et prouvé ce problème. Afin de définir mathématiquement et rigoureusement « qu'est-ce qu'un calcul ? », il a inventé une machine conceptuelle appelée **« la machine de Turing (Turing Machine) »**.
+C'est en 1936, à une époque où les ordinateurs électroniques modernes n'existaient pas encore, qu'[Alan Turing](https://kenji.blog/fr/p/turing/) a soulevé et prouvé ce problème. Afin de définir mathématiquement et rigoureusement « qu'est-ce qu'un calcul ? », il a inventé une machine conceptuelle appelée **« la machine de Turing ([Turing Machine](https://kenji.blog/fr/p/turing-machine-computability/)) »**.
 
 Une machine de Turing se compose d'un ruban infiniment long, d'une tête de lecture/écriture pour lire et écrire les informations sur le ruban, et d'un tableau de transition d'états gérant l'état de la machine. Il est admis que même les programmes modernes les plus complexes peuvent théoriquement être réduits à cette machine de Turing. C'est ce que l'on appelle la **« thèse de Church-Turing (Church-Turing Thesis) »**.
 

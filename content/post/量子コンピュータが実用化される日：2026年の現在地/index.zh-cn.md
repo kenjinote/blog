@@ -11,7 +11,7 @@ tags: ["Quantum", "Error Correction", "Qubit", "2026"]
 
 ## 1. 引言：2026年，量子计算机发展到了什么程度
 
-截至2026年，量子计算已经完成了从昔日“理论上的梦想”到“工程上的现实”的决定性转变。随着几年前还是主流的 **NISQ（Noisy Intermediate-Scale Quantum，含噪声中等规模量子）** 设备的局限性变得明显，世界各地的研究机构和科技巨头纷纷转向实现“容错量子计算（FTQC: Fault-Tolerant Quantum Computing）”。
+截至2026年，量子计算已经完成了从昔日“理论上的梦想”到“工程上的现实”的决定性转变。随着几年前还是主流的 **NISQ（Noisy Intermediate-Scale Quantum，含噪声中等规模量子）** 设备的局限性变得明显，世界各地的研究机构和科技巨头纷纷转向实现“容错量子计算（FTQC: Fault-Tolerant [Quantum Computing](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）”。
 
 本文将结合2026年的最新突破，深入探讨量子计算机的现状。特别是，将详细讲解量子纠错（表面码）、物理量子比特与逻辑量子比特的区别、拓扑量子计算的进展，以及超导和离子阱方式的最前沿。
 

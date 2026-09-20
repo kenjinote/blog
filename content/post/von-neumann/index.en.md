@@ -86,7 +86,7 @@ flowchart TD
 
 Von Neumann participated in the EDVAC development project at the University of Pennsylvania and summarized this groundbreaking concept in the "First Draft of a Report on the EDVAC." This made it possible to realize a general-purpose computer that can perform various calculations simply by rewriting the software (program) without physically rewiring the hardware. The modern IT society is built upon this foundation he established.
 
-## 7. Cellular Automata and the Theory of Self-Reproducing Machines
+## 7. Cellular [Automata](https://kenji.blog/en/p/automata-formal-language-theory/) and the Theory of Self-Reproducing Machines
 
 In his later years, von Neumann took a strong interest in mathematically modeling the mechanisms of biological self-reproduction. With the advice of his colleague Stanislaw Ulam, he devised the concept of **cellular automata**, in which space is divided into a grid, and each grid cell changes its state according to a certain rule.
 
@@ -117,7 +117,7 @@ The books and papers von Neumann left behind during his lifetime are diverse, bu
    Co-authored with Oskar Morgenstern. A masterpiece that systematically discussed everything from zero-sum games to cooperative games.
 3. **The Computer and the Brain (1958)**
    An unfinished manuscript published posthumously. A pioneering work comparing the neural networks of the human brain with the mechanisms of digital computers.
-4. **Theory of Self-Reproducing Automata (1966)**
+4. **Theory of Self-Reproducing [Automata](https://kenji.blog/en/p/automata-formal-language-theory/) (1966)**
    Compiled and published from von Neumann's posthumous manuscripts by Arthur Burks.
 
 ## 11. John von Neumann: Brief Chronology

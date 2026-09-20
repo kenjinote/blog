@@ -216,7 +216,7 @@ $$ C_{total} = \sum_{i=1}^{M} \left( T_i \times R_i \right) $$
 
 Reducing build times not only speeds up the feedback loop but also directly leads to reduced operating costs for the project (especially for private repositories). For further speedups, introducing `ccache` to cache compilation results is an effective technique.
 
-## 6. Integrating Automated Testing and Sanitizers
+## 6. Integrating [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Testing and Sanitizers
 
 To prevent bugs in C++ proactively, it is strongly recommended to introduce "sanitizers" that detect memory leaks and undefined behaviors at runtime, in addition to unit tests. We will use AddressSanitizer (ASAN) and UndefinedBehaviorSanitizer (UBSAN) developed by Google.
 
@@ -300,7 +300,7 @@ Define an independent job for coverage measurement in GitHub Actions.
 
 The `lcov --remove` command is used to exclude system headers, third-party libraries, and the test code itself from the coverage measurement. This allows us to obtain the pure coverage of the project-specific source code.
 
-## 8. Automated Binary Delivery (CD) via GitHub Releases
+## 8. [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Binary Delivery (CD) via GitHub Releases
 
 We will now build the "CD" part of CI/CD. When a developer adds and pushes a version tag in Git (e.g., `v1.2.0`), it will automatically compile the executable binaries for each OS, package them into ZIPs or Tarballs, and upload them to GitHub Releases.
 

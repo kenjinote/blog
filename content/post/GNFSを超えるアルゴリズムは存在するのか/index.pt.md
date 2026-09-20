@@ -135,9 +135,9 @@ Se um algoritmo $L_n[1/4]$ ou mesmo um algoritmo polinomial clássico existisse,
 
 ---
 
-## 5. O Grande Avanço da Computação Quântica: Algoritmo de Shor
+## 5. O Grande Avanço da Computação Quântica: [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)
 
-Enquanto os computadores clássicos enfrentam a barreira de $L_n[1/3]$, o **Algoritmo de Shor (Shor's Algorithm)**, introduzido por Peter Shor em 1994, destruiu esta parede mudando fundamentalmente o modelo de computação em si.
+Enquanto os computadores clássicos enfrentam a barreira de $L_n[1/3]$, o **Algoritmo de Shor ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))**, introduzido por Peter Shor em 1994, destruiu esta parede mudando fundamentalmente o modelo de computação em si.
 
 ### 5.1 O impacto do tempo polinomial quântico
 
@@ -162,7 +162,7 @@ A diferença entre essas duas classes de complexidade tem um significado decisiv
 
 Por exemplo, considere a fatoração do RSA-2048 (um número composto de 2048 bits).
 - **GNFS (Clássico)**: Substituindo $n \approx 2^{2048}$ em $L_n[1/3, 1.923]$, serão necessárias cerca de $2^{112}$ operações. Essa é uma quantidade de cálculos astronômica que demoraria mais que a idade do universo, mesmo se reuníssemos todos os recursos de computação do planeta.
-- **Algoritmo de Shor (Quântico)**: No algoritmo $O((\log n)^3)$, seriam necessárias apenas cerca de $2048^3 \approx 8.5 \times 10^9$ operações em portas lógicas. Isso significa que a computação poderia ser concluída de apenas algumas horas a alguns dias se houvesse o hardware adequado (um computador quântico universal capaz de corrigir erros com alguns milhões de qubits físicos).
+- **[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) (Quântico)**: No algoritmo $O((\log n)^3)$, seriam necessárias apenas cerca de $2048^3 \approx 8.5 \times 10^9$ operações em portas lógicas. Isso significa que a computação poderia ser concluída de apenas algumas horas a alguns dias se houvesse o hardware adequado (um computador quântico universal capaz de corrigir erros com alguns milhões de qubits físicos).
 
 A mudança de paradigma da complexidade subexponencial com "expoente $\alpha=1/3$" para "tempo polinomial" anula a estratégia tradicional de criptografia que consiste em garantir a segurança por meio do alongamento do comprimento da chave.
 

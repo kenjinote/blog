@@ -14,7 +14,7 @@ Currently, many of the communications we conduct daily on the internet—such as
 
 These cryptographic methods rely on mathematical hard problems, such as "prime factorization of large numbers" and the "discrete logarithm problem," which would take astronomical amounts of time for current classical computers (including supercomputers) to solve. However, when **"quantum computers,"** which have been making remarkable progress in recent years, become practically viable, this premise will be fundamentally overturned.
 
-Shor's Algorithm, introduced by Peter Shor in 1994, mathematically proved that a sufficiently powerful quantum computer could solve prime factorization and discrete logarithm problems in an extremely short time. This means there is a risk that all cryptographic communications currently protecting the internet will eventually be decrypted (an issue known as Y2Q: Years to Quantum, or Q-Day).
+[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/), introduced by Peter Shor in 1994, mathematically proved that a sufficiently powerful quantum computer could solve prime factorization and discrete logarithm problems in an extremely short time. This means there is a risk that all cryptographic communications currently protecting the internet will eventually be decrypted (an issue known as Y2Q: Years to Quantum, or Q-Day).
 
 Even more serious is the existence of the "Harvest Now, Decrypt Later" attack method (stealing and storing data now to decrypt it in the future when cryptography can be broken). Data that needs to remain confidential for decades, such as state secrets, corporate intellectual property, and personal biometric information, may already be the target of theft with the premise of future decryption.
 

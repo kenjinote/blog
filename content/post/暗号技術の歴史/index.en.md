@@ -205,7 +205,7 @@ The Elliptic Curve Discrete Logarithm Problem (ECDLP) is known to be even harder
 
 # 7. The Threat of Quantum Computers and Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)
 
-[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic technology seemed rock-solid, but in 1994, a massive shockwave hit with the announcement of "Shor's Algorithm" by Peter Shor.
+[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic technology seemed rock-solid, but in 1994, a massive shockwave hit with the announcement of "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)" by Peter Shor.
 
 Quantum computers perform calculations utilizing the properties of quantum mechanics, namely "superposition" and "quantum entanglement." It was mathematically proven that if Shor's algorithm is executed on a sufficiently capable quantum computer, the integer factorization problem and the discrete logarithm problem could be solved in "polynomial time." This means that on the day a practical quantum computer is completed (Q-Day), all currently used public-key cryptosystems like RSA and ECC will instantaneously collapse.
 

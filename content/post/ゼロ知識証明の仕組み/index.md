@@ -121,7 +121,7 @@ zk-SNARKs（特に初期のGroth16など）の最大の弱点は、秘密の点 
 
 ## zk-STARKsの技術的詳細
 
-トラステッド・セットアップへの依存と、量子コンピュータによる楕円曲線暗号の解読リスクに対する回答として登場したのが **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge）です。
+トラステッド・セットアップへの依存と、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)による楕円曲線暗号の解読リスクに対する回答として登場したのが **zk-STARKs** （Zero-Knowledge Scalable Transparent Argument of Knowledge）です。
 
 Eli Ben-Sassonらによって開発されたSTARKsは、「Transparent（透明性）」の名の通りトラステッド・セットアップを一切必要とせず、「Scalable（スケーラビリティ）」の名の通り、計算量が増えても証明サイズと検証時間が効率的に保たれるという特徴を持っています。
 

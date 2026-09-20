@@ -14,7 +14,7 @@ description: 'Wie Quantencomputer aktuelle Kryptographie zerstören könnten: Ei
 
 Ein Großteil der Sicherheit in der modernen Internetgesellschaft hängt von **Public-Key-Kryptographie** (insbesondere RSA-Verschlüsselung) ab. Wenn wir beim Online-Shopping Kreditkarteninformationen senden oder hochsensible Daten austauschen, wird der Inhalt dieser Kommunikation stark durch RSA-Kryptographie geschützt.
 
-Die Sicherheit der RSA-Verschlüsselung beruht auf der mathematischen Tatsache, dass "**die Primfaktorzerlegung riesiger ganzer Zahlen für klassische Computer (die PCs und Supercomputer, die wir normalerweise verwenden) extrem schwierig ist**". Der 1994 von Peter Shor vorgestellte "**Shor-Algorithmus (Shor's Algorithm)**" stellte diese Prämisse jedoch grundlegend in Frage. Es wurde mathematisch bewiesen, dass der Shor-Algorithmus, wenn er auf einem großen Quantencomputer ausgeführt wird, die Primfaktorzerlegung, für die klassische Computer länger als das Alter des Universums benötigen würden, in nur wenigen Minuten bis Stunden lösen kann.
+Die Sicherheit der RSA-Verschlüsselung beruht auf der mathematischen Tatsache, dass "**die Primfaktorzerlegung riesiger ganzer Zahlen für klassische Computer (die PCs und Supercomputer, die wir normalerweise verwenden) extrem schwierig ist**". Der 1994 von Peter Shor vorgestellte "**[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))**" stellte diese Prämisse jedoch grundlegend in Frage. Es wurde mathematisch bewiesen, dass der Shor-Algorithmus, wenn er auf einem großen Quantencomputer ausgeführt wird, die Primfaktorzerlegung, für die klassische Computer länger als das Alter des Universums benötigen würden, in nur wenigen Minuten bis Stunden lösen kann.
 
 In diesem Artikel werden wir ausführlich im Detail erklären, wie dieser Shor-Algorithmus eine schnelle Primfaktorzerlegung durchführt, von seinem mathematischen Mechanismus bis hin zu einer konkreten Simulationsimplementierung mit Python und dem Quanten-Computing-Framework **Qiskit**.
 
@@ -49,7 +49,7 @@ graph TD
 
 # 3. Gesamtbild des Algorithmus und mathematischer Hintergrund
 
-Beim Shor-Algorithmus wird nicht alles auf einem Quantencomputer ausgeführt. Er basiert auf der Zusammenarbeit zwischen Vorverarbeitung/Nachbearbeitung durch klassische Computer und dem Kernteil (Periodenfindungsalgorithmus) durch Quantencomputer.
+Beim [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) wird nicht alles auf einem Quantencomputer ausgeführt. Er basiert auf der Zusammenarbeit zwischen Vorverarbeitung/Nachbearbeitung durch klassische Computer und dem Kernteil (Periodenfindungsalgorithmus) durch Quantencomputer.
 
 Der Gesamtablauf des Algorithmus ist wie folgt:
 
@@ -347,7 +347,7 @@ Für Ingenieure, die IT-Infrastrukturen verwalten, wird der Einbau von "[Crypto]
 
 # 8. Fazit
 
-In diesem Artikel haben wir eine umfassende Erklärung im Umfang von etwa 10.000 Zeichen geliefert, beginnend mit dem theoretischen mathematischen Hintergrund des Shor-Algorithmus, über den Mechanismus der Periodenextraktion mittels der Quanten-Fouriertransformation, bis hin zu spezifischem Simulationscode mit Python und Qiskit.
+In diesem Artikel haben wir eine umfassende Erklärung im Umfang von etwa 10.000 Zeichen geliefert, beginnend mit dem theoretischen mathematischen Hintergrund des [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/), über den Mechanismus der Periodenextraktion mittels der Quanten-Fouriertransformation, bis hin zu spezifischem Simulationscode mit Python und Qiskit.
 
 Die Tatsache, dass die physikalischen Gesetze der mikroskopischen Welt der Quantenmechanik die Grundlagen der Komplexitätstheorie und der Kryptographietheorie, die die Grundlagen der makroskopischen Informationswissenschaft bilden, komplett umstürzen können, ist einer der aufregendsten Paradigmenwechsel in der Geschichte der Wissenschaft. Es bleibt spannend, die anhaltende technologische Entwicklung der Quantencomputer und die Abwehrschlacht durch neue Verschlüsselungstechnologien weiter zu beobachten.
 

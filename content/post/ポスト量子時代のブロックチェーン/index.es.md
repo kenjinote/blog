@@ -60,7 +60,7 @@ $$
 
 Usando una computadora clásica, calcular inversamente la clave privada $k$ (encontrar el logaritmo discreto) a partir de la clave pública expuesta $K$ y el punto base $G$ requiere un tiempo computacional exponencial de $\mathcal{O}(\sqrt{p})$ incluso usando los mejores algoritmos clásicos como el método de factorización rho de Pollard. Para una clave de 256 bits, se requieren aproximadamente $2^{128}$ operaciones, un nivel que no podría resolverse ni operando supercomputadoras actuales durante miles de millones de años.
 
-### 2.2. Colapso por el Algoritmo de Shor (Shor's Algorithm)
+### 2.2. Colapso por el [Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))
 
 Sin embargo, el **Algoritmo de Shor**, publicado por Peter Shor en 1994, destruyó por completo esta premisa. El algoritmo de Shor fue propuesto originalmente para resolver el problema de factorización de enteros (la base del cifrado RSA) en tiempo polinómico, pero también es aplicable al problema del logaritmo discreto y al problema del logaritmo discreto de curva elíptica.
 
@@ -328,7 +328,7 @@ Algunos proyectos de blockchain han sido proactivos ante esta amenaza cuántica 
 
 La llegada de la "era post-cuántica" ya ha rebasado los dominios imaginarios de la ciencia ficción para transformarse en un desafío técnico concreto y una amenaza inminente frente a nuestros sistemas criptográficos del mundo real.
 
-Las dos grandes espadas computacionales del mundo cuántico —el Algoritmo de Shor y el Algoritmo de Grover— amenazan los pilares de la criptografía de clave pública y las funciones hash de las blockchains modernas. En particular, la debilidad de ECDSA es letal, haciendo que la migración hacia Criptografía Post-Cuántica (PQC) sea el único camino ineludible para eludir el hurto masivo de fondos vía ataques front-running.
+Las dos grandes espadas computacionales del mundo cuántico —el [Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/) y el Algoritmo de Grover— amenazan los pilares de la criptografía de clave pública y las funciones hash de las blockchains modernas. En particular, la debilidad de ECDSA es letal, haciendo que la migración hacia Criptografía Post-Cuántica (PQC) sea el único camino ineludible para eludir el hurto masivo de fondos vía ataques front-running.
 
 Sin embargo, ni el ámbito tecnológico ni la comunidad de blockchain observan esto sin accionar. La selección y normalización de algoritmos PQC, como la criptografía basada en retículos y las firmas fundamentadas en hashes, están evolucionando con certidumbre; además, ya comienzan a dibujarse las formas en que superaremos la gran barrera del "aumento colosal de volumen de datos", haciendo uso de ZK-STARKs (Pruebas de Conocimiento Cero) y soluciones de escalado en Capa 2.
 

@@ -71,7 +71,7 @@ Low-code / no-code development is a development method that allows you to create
 In recent years, cloud-based low-code / no-code tools have evolved rapidly.
 
 * **Power Platform (Microsoft)**
-  An integrated business app development and automation platform including "Power Apps" and "Power Automate." It allows you to visually construct corporate business processes via drag-and-drop.
+  An integrated business app development and automation platform including "Power Apps" and "Power [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)." It allows you to visually construct corporate business processes via drag-and-drop.
 
 * **Salesforce Lightning Platform**
   An app development platform provided by the CRM Salesforce. Business apps can be created via GUI, and integration with other Salesforce services is easy.

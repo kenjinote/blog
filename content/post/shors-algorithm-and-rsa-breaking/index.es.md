@@ -30,7 +30,7 @@ En la sociedad de Internet moderna, la base para proteger el secreto de las comu
 
 Sin embargo, con la llegada de las "computadoras cuánticas", se ha señalado la posibilidad de que esta seguridad se vea socavada desde sus cimientos. A veces, en los medios de comunicación aparecen titulares sensacionalistas como: "Si se perfecciona la computadora cuántica, las contraseñas y códigos de todo el mundo serán descifrados en segundos". Pero, ¿es esto realmente cierto?
 
-En este artículo, profundizaremos en los mecanismos del GNFS (Criba General del Cuerpo de Números), que es un método clásico de criptoanálisis, y el "Algoritmo de Shor" (Shor's Algorithm), que es la versión definitiva del algoritmo de descifrado utilizando computadoras cuánticas. Explicaremos de manera sencilla conceptos avanzados como la transformada cuántica de Fourier y el hallazgo de períodos, y examinaremos en detalle el estado actual del hardware cuántico en la era actual NISQ (Noisy Intermediate-Scale Quantum) y los obstáculos necesarios para romper realmente RSA-2048.
+En este artículo, profundizaremos en los mecanismos del GNFS (Criba General del Cuerpo de Números), que es un método clásico de criptoanálisis, y el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)), que es la versión definitiva del algoritmo de descifrado utilizando computadoras cuánticas. Explicaremos de manera sencilla conceptos avanzados como la transformada cuántica de Fourier y el hallazgo de períodos, y examinaremos en detalle el estado actual del hardware cuántico en la era actual NISQ (Noisy Intermediate-Scale Quantum) y los obstáculos necesarios para romper realmente RSA-2048.
 
 ---
 

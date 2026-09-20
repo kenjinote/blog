@@ -14,7 +14,7 @@ description: '从量子超越性的定义，到Google的Sycamore处理器在2019
 
 量子计算通过将作为物理学根本原理的量子力学应用于信息处理，蕴含着解决经典计算机（我们现在日常使用的个人电脑和超级计算机）在现实时间内无法解决的复杂问题的潜力。这一领域长期以来以理论研究为主，但近年来，随着硬件的快速进步，迈向实用化的竞争正日益激烈。
 
-其中最受瞩目的关键词之一就是“量子超越性（Quantum Supremacy）”。这指的是在特定的计算任务中，量子计算机展现出压倒经典计算机计算能力的瞬间。本文将从量子超越性的严格定义出发，详细探讨2019年宣布在世界上首次达成这一里程碑的Google“Sycamore”处理器的实验细节、IBM对此的反驳及独特方法，以及迈向真正实用化的最大障碍——“量子纠错（Quantum Error Correction: QEC）”和“容错量子计算（Fault-Tolerant Quantum Computing: FTQC）”的最新路线图，并进行技术和数学层面的深入解说。
+其中最受瞩目的关键词之一就是“量子超越性（Quantum Supremacy）”。这指的是在特定的计算任务中，量子计算机展现出压倒经典计算机计算能力的瞬间。本文将从量子超越性的严格定义出发，详细探讨2019年宣布在世界上首次达成这一里程碑的Google“Sycamore”处理器的实验细节、IBM对此的反驳及独特方法，以及迈向真正实用化的最大障碍——“量子纠错（Quantum Error Correction: QEC）”和“容错量子计算（Fault-Tolerant [Quantum Computing](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/): FTQC）”的最新路线图，并进行技术和数学层面的深入解说。
 
 ---
 
@@ -160,7 +160,7 @@ $$
 
 ## 6. 迈向FTQC（容错量子计算）的路线图与展望
 
-Google和IBM虽然采用了不同的架构和方法，但都在为了最终目标——FTQC（Fault-Tolerant Quantum Computing）而展开激烈的研发竞争。
+Google和IBM虽然采用了不同的架构和方法，但都在为了最终目标——FTQC（Fault-Tolerant [Quantum Computing](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）而展开激烈的研发竞争。
 
 ### IBM的方法：模块化与重六边形网格
 IBM在致力于将错误率降至最低的同时，也专注于处理器的规模扩大。在以“Eagle(127Q)”、“Osprey(433Q)”、“Condor(1121Q)”挑战单芯片极限的同时，他们还发布了名为“Quantum System Two”的模块化架构。此外，在量子比特的耦合拓扑结构上，采用了能够减少不必要的串扰并提高稳定性的“重六边形（Heavy-Hex）网格”。IBM的战略是在短期内通过高级错误缓解来追求实用性，同时分阶段引入QEC的混合方法。

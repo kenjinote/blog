@@ -145,7 +145,7 @@ Cependant, le chiffrement RSA ne s'est pas non plus avoué vaincu. Ce qui est ut
 Bien que le GNFS soit l'algorithme le plus puissant de l'humanité, même pour résoudre 270 chiffres (RSA-270), on dit que cela prendrait des milliers ou des dizaines de milliers d'années, même en connectant des ordinateurs du monde entier. Pour l'instant, nos données LINE et bancaires sont en sécurité.
 
 Mais que se passerait-il si ** « une magie capable de trouver instantanément $X$ et $Y$ pour n'importe quel nombre géant » ** apparaissait ?
-En fait, la chose qui s'en rapproche le plus est l' ** « Ordinateur Quantique (Algorithme de Shor) » ** , actuellement en développement. En utilisant la nature ondulatoire de la mécanique quantique, il a été prouvé mathématiquement qu'il est possible d'ignorer le fastidieux puzzle de collecte de cartes et de tirer la réponse d'un seul coup.
+En fait, la chose qui s'en rapproche le plus est l' ** « Ordinateur Quantique ([Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)) » ** , actuellement en développement. En utilisant la nature ondulatoire de la mécanique quantique, il a été prouvé mathématiquement qu'il est possible d'ignorer le fastidieux puzzle de collecte de cartes et de tirer la réponse d'un seul coup.
 
 La bataille d'intelligence sans fin entre ceux qui créent le chiffrement (la défense) et ceux qui créent des algorithmes pour le briser (l'attaque).
 Savoir que la « factorisation en nombres premiers » et les « expressions littérales apprises au collège sont en fait les armes qui s'affrontent sur la ligne de front de la sécurité mondiale ne rend-il pas les cours de mathématiques un peu plus intéressants ?

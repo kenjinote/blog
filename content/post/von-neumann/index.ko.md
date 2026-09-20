@@ -117,7 +117,7 @@ flowchart TD
    오스카 모르겐슈테른과의 공저. 제로섬 게임부터 협력 게임까지를 체계적으로 논한 대저.
 3. **『컴퓨터와 뇌』 (The Computer and the Brain, 1958)**
    노이만의 사후에 출판된 미완성의 유고. 인간 뇌의 신경망과 디지털 컴퓨터의 구조를 비교한 선구적 저작.
-4. **『자기 증식 오토마타의 이론』 (Theory of Self-Reproducing Automata, 1966)**
+4. **『자기 증식 오토마타의 이론』 (Theory of Self-Reproducing [Automata](https://kenji.blog/ko/p/automata-formal-language-theory/), 1966)**
    아서 버크스가 노이만의 유고를 편찬한 것.
 
 ## 11. 존 폰 노이만 약식 연표

@@ -17,7 +17,7 @@ tags:
 
 ## 1. [コンウェイのライフゲーム](https://kenji.blog/p/conways-game-of-life/)とは？
 
-**[コンウェイのライフゲーム](https://kenji.blog/p/conways-game-of-life/)** ([Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/)) は、1970年にイギリスの数学者ジョン・ホートン・コンウェイ (John Horton Conway) によって考案された **セル・オートマトン** (Cellular Automaton) の一種です。ゲームという名前がついていますが、プレイヤーが操作するものではなく、初期状態を設定した後はルールに従って自動的に世代が進行する「ゼロプレイヤーゲーム」です。
+**[コンウェイのライフゲーム](https://kenji.blog/p/conways-game-of-life/)** ([Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/)) は、1970年にイギリスの数学者ジョン・ホートン・コンウェイ (John Horton Conway) によって考案された **セル・[オートマトン](https://kenji.blog/p/automata-formal-language-theory/)** (Cellular Automaton) の一種です。ゲームという名前がついていますが、プレイヤーが操作するものではなく、初期状態を設定した後はルールに従って自動的に世代が進行する「ゼロプレイヤーゲーム」です。
 
 このシステムの最大の魅力は、**極めて単純な決定論的ルールから、予測不可能で複雑な生命のような振る舞い（創発）が生み出される** 点にあります。
 

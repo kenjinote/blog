@@ -71,7 +71,7 @@ description: '解说从1980年代至今的低代码、无代码开发历史。�
 近年来，基于云的低代码/无代码工具正在快速发展。
 
 * **Power Platform（Microsoft）**
-  包含“Power Apps”、“Power Automate”等在内的集成型业务应用程序开发与自动化平台。可以通过拖放可视化地构建企业的业务流程。
+  包含“Power Apps”、“Power [Automate](https://kenji.blog/zh-cn/p/automata-formal-language-theory/)”等在内的集成型业务应用程序开发与自动化平台。可以通过拖放可视化地构建企业的业务流程。
 
 * **Salesforce Lightning Platform**
   CRM软件Salesforce提供的应用程序开发基础。可以通过GUI创建业务应用程序，也很容易与其他Salesforce服务集成。

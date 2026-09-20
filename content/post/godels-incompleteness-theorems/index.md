@@ -138,7 +138,7 @@ graph TD
 
 [ゲーデル](https://kenji.blog/p/godel/)の定理がもたらした影響は、数学の枠にとどまりませんでした。1936年、イギリスの数学者[アラン・チューリング](https://kenji.blog/p/turing/)は、[ゲーデル](https://kenji.blog/p/godel/)の「形式的体系」の概念を物理的な計算プロセスに置き換え、「[チューリング](https://kenji.blog/p/turing/)マシン」という仮想の計算機モデルを考案しました。
 
-[チューリング](https://kenji.blog/p/turing/)は、[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)を計算機の世界に応用し、「どんなコンピュータのプログラムにも、永遠に計算が終わらないかどうかをあらかじめ判定する万能なアルゴリズムは存在しない」ことを証明しました。これが有名な **停止性問題** （Halting Problem）です。
+[チューリング](https://kenji.blog/p/turing/)は、[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)を計算機の世界に応用し、「どんなコンピュータのプログラムにも、永遠に計算が終わらないかどうかをあらかじめ判定する万能なアルゴリズムは存在しない」ことを証明しました。これが有名な **[停止性問題](https://kenji.blog/p/turing-machine-computability/)** （[Halting Problem](https://kenji.blog/p/turing-machine-computability/)）です。
 
 ```mermaid
 graph TD

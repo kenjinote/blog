@@ -11,7 +11,7 @@ description: 'Provides a thorough explanation of the background leading to the d
 ---
 
 
-# Chapter 1: The Dawn and Limits of Quantum Computing
+# Chapter 1: The Dawn and Limits of [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)
 
 ## 1.1 Physical Limits of Classical Computing and the End of Moore's Law
 
@@ -55,11 +55,11 @@ Here, $|x\rangle$ denotes the computational basis states, and $c_x \in \mathbb{C
 
 To simulate a system of merely $N = 300$ quantum bits (qubits), one would need to keep track of $2^{300} \approx 10^{90}$ complex numbers—a number that vastly outstrips the estimated total number of atoms in the observable universe (approximately $10^{80}$ ). Storing this colossal set of variables in classical memory and calculating their time evolution under the Schrödinger equation (multiplication by a $2^N \times 2^N$ unitary matrix) is impossible even across the lifetime of the universe. This "curse of dimensionality" defines the fundamental ceiling of classical computing, while simultaneously serving as the wellspring of the latent computational power of quantum computers.
 
-## 1.3 David Deutsch and the Formulation of the Quantum Turing Machine
+## 1.3 David Deutsch and the Formulation of the Quantum [Turing Machine](https://kenji.blog/en/p/turing-machine-computability/)
 
 It was David Deutsch, a physicist at the University of Oxford, who rigorously formalized Feynman's intuitive vision within theoretical computer science. In his groundbreaking 1985 paper, Deutsch pointed out that the "Strong Church-Turing Thesis"—which asserts that any physical process can be efficiently simulated by a probabilistic Turing machine—might not hold in a physical universe governed by quantum mechanics.
 
-Deutsch extended [Alan Turing](https://kenji.blog/en/p/turing/)'s deterministic model to formulate the concept of the "Quantum Turing Machine" (QTM). In this machine, internal states, tape symbols, and head positions can exist in quantum superpositions, with state transitions governed by unitary operators $U$ .
+Deutsch extended [Alan Turing](https://kenji.blog/en/p/turing/)'s deterministic model to formulate the concept of the "Quantum [Turing Machine](https://kenji.blog/en/p/turing-machine-computability/)" (QTM). In this machine, internal states, tape symbols, and head positions can exist in quantum superpositions, with state transitions governed by unitary operators $U$ .
 
 The foundational unit of quantum computation is the "quantum bit" or "qubit." Whereas a classical bit is restricted to the definite states $0$ or $1$ , a qubit can exist in an arbitrary linear superposition of $|0\rangle$ and $|1\rangle$ :
 
@@ -81,7 +81,7 @@ $$
 
 This transitions the system into an equal superposition state in which $|0\rangle$ and $|1\rangle$ are observed with equal probability. Deutsch's crucial contribution was elevating these core principles of quantum mechanics into an abstract model of computation, proving mathematically that a Universal Quantum Computer is physically realizable in principle.
 
-## 1.4 The Essence of Quantum Computing: Dispelling the Misconception of Pure "Massive Parallelism"
+## 1.4 The Essence of [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/): Dispelling the Misconception of Pure "Massive Parallelism"
 
 Why do quantum computers possess computational capabilities exceeding those of classical machines? A popular explanation frequently encountered is: "A quantum computer branches across countless parallel universes, computes all possibilities simultaneously, and instantly pulls out the correct solution." While this serves as a colorful metaphor for "quantum parallelism," it is **an extremely misleading and inaccurate explanation** .
 
@@ -1818,11 +1818,11 @@ With this exquisite mathematical structure, a problem that required at worst $O(
 
 The fact demonstrated in this chapter stands as an exceptionally significant milestone in human history, proving that by applying the principles of quantum mechanics to information processing, the physical limits of classical information theory can be broken.
 
-# Chapter 8: Shor's Algorithm and the Threat to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
+# Chapter 8: [Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/) and the Threat to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 ## 8.1 Introduction: The Mathematics of RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and the Difficulty of Prime Factorization
 
-In modern digital society, public-key cryptography is the foundation that ensures secure communication on the Internet. Among them, the most widely used RSA cryptography proves its security by relying on a mathematical asymmetry (a property of a one-way function) that "it is computationally extremely difficult to prime factorize a massive composite number." In this chapter, we will rigorously uncover the theoretical structure of "Shor's Algorithm," the definitive method by which quantum computers destroy the very foundation of this RSA cryptography, without any compromise.
+In modern digital society, public-key cryptography is the foundation that ensures secure communication on the Internet. Among them, the most widely used RSA cryptography proves its security by relying on a mathematical asymmetry (a property of a one-way function) that "it is computationally extremely difficult to prime factorize a massive composite number." In this chapter, we will rigorously uncover the theoretical structure of "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)," the definitive method by which quantum computers destroy the very foundation of this RSA cryptography, without any compromise.
 
 Let's first mathematically formulate the mechanism of RSA cryptography. Key generation in RSA cryptography begins by randomly selecting two massive prime numbers $p$ and $q$ (currently, sizes of 2048 bits or more each are recommended). We calculate the composite number $N = pq$, which is the product of these, and publish this to the public as part of the public key. Next, we calculate Euler's totient function $\phi(N)$. From the properties of prime numbers, this becomes $\phi(N) = (p-1)(q-1)$.
 
@@ -2040,7 +2040,7 @@ Here, $k$ and $M$ are known values, but $j$ and $r$ are unknown. Since $t$ is ch
 According to the theorem of Diophantine approximation ([Legendre](https://kenji.blog/en/p/legendre/)'s theorem), a rational number $j/r$ satisfying this condition is guaranteed to be included among the convergents of the "Continued Fraction Expansion" of the real number $k/M$.
 Therefore, by computing the continued fraction expansion of $k/M$ in polynomial time using a classical computer, the period $r$ can be determined as the denominator. This solves the order-finding problem, making it possible to derive the prime factors $p$ and $q$, which are the keys to RSA cryptography, as a result.
 
-## 8.5 Why Shor's Algorithm Brings an Exponential Speedup Over Classical Computation
+## 8.5 Why [Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/) Brings an Exponential Speedup Over Classical Computation
 
 The reason Shor's algorithm became a historical major breakthrough is that it was not mere heuristics (a heuristic solution) but the first practical algorithm accompanied by rigorous mathematical proof demonstrating a "true exponential speedup against classical counterparts." The essence of its extraordinary computational power lies in the perfect fusion of the following two quantum mechanical phenomena:
 
@@ -2059,7 +2059,7 @@ Quantum computers are not omnipotent magic wands and cannot solve every problem 
 
 In modern information science, the "search problem"—finding an element satisfying specific conditions from a massive dataset—is a critically important challenge and simultaneously one of the most fundamental questions in computer science. When some structure exists within the dataset (for example, elements sorted in alphabetical or numerical order), efficient classical algorithms such as binary search can be utilized, keeping the search time down to $O(\log N)$ for $N$ elements. However, searching within a completely randomly arranged **"unstructured database"** forces classical computers to rely on linear search, checking elements sequentially one by one. For $N$ elements, this requires in the worst case $N$ queries and on average $N/2$ queries—that is, $O(N)$ computational steps.
 
-However, **Grover's algorithm** , discovered in 1996 by Bell Labs physicist Lov Grover, succeeded in solving this unstructured search problem with $O(\sqrt{N})$ queries by masterfully and elegantly utilizing the principles of "superposition" and "interference" fundamental to quantum mechanics. Unlike Shor's algorithm, which provides an exponential speedup in computation time relative to problem size, Grover's algorithm provides a form of polynomial acceleration known as a **quadratic speedup** . Nonetheless, considering that unstructured search problems appear universally across all domains—such as brute-force searches for NP-complete problems and key recovery in cryptographic systems—its breadth of application and practical impact are immeasurable. In the vast field of quantum information science, Grover's algorithm occupies an unshakeable position as one of the most versatile and essential algorithms.
+However, **Grover's algorithm** , discovered in 1996 by Bell Labs physicist Lov Grover, succeeded in solving this unstructured search problem with $O(\sqrt{N})$ queries by masterfully and elegantly utilizing the principles of "superposition" and "interference" fundamental to quantum mechanics. Unlike Shor's algorithm, which provides an exponential speedup in computation time relative to problem size, Grover's algorithm provides a form of polynomial acceleration known as a **quadratic speedup** . Nonetheless, considering that unstructured search problems appear universally across all domains—such as brute-force searches for [NP-complet](https://kenji.blog/en/p/p-vs-np-problem/)e problems and key recovery in cryptographic systems—its breadth of application and practical impact are immeasurable. In the vast field of quantum information science, Grover's algorithm occupies an unshakeable position as one of the most versatile and essential algorithms.
 
 In this chapter, we will unpack the profound mechanism of **"amplitude amplification"** , which lies at the core of Grover's algorithm, in rigorous detail from both an intuitive geometric perspective and an uncompromising, exact linear-algebraic framework, offering deep insights even for experts.
 
@@ -2348,7 +2348,7 @@ The quadratic speedup from $O(N)$ to $O(\sqrt{N})$ provided by Grover's algorith
 
 Shor's factoring algorithm relies heavily on the very special algebraic structure of "periodicity" possessed by the multiplicative group of integers. In contrast, Grover's algorithm is unconditionally applicable to "unstructured database search"—the most fundamental and primitive form of any computational problem that possesses no prior knowledge or structure whatsoever.
 
-This impact is most vividly demonstrated in the intractable problems belonging to the complexity class NP and in cryptographic technologies underpinning modern society. For example, NP-complete problems such as the Traveling Salesperson Problem (TSP) and the Boolean Satisfiability Problem (SAT) essentially boil down to exhaustively searching an enormous candidate space for a solution that satisfies the constraints. For these problems, where classical algorithms require $O(2^n)$ time, applying Grover's algorithm effectively halves the exponent of the computation time down to $O(\sqrt{2^n}) = O(2^{n/2})$.
+This impact is most vividly demonstrated in the intractable problems belonging to the complexity class NP and in cryptographic technologies underpinning modern society. For example, [NP-complet](https://kenji.blog/en/p/p-vs-np-problem/)e problems such as the Traveling Salesperson Problem (TSP) and the Boolean Satisfiability Problem (SAT) essentially boil down to exhaustively searching an enormous candidate space for a solution that satisfies the constraints. For these problems, where classical algorithms require $O(2^n)$ time, applying Grover's algorithm effectively halves the exponent of the computation time down to $O(\sqrt{2^n}) = O(2^{n/2})$.
 
 The impact on cryptography is likewise decisive and profound. The security of symmetric-key cryptosystems such as AES, which currently underpin the safety of the Internet, relies entirely on the intractability of brute-force attacks against the key space. For example, the search space for AES-128 (with a 128-bit key space) is an astronomical $N = 2^{128}$. While a classical computer requires an average of $2^{127}$ key verification evaluations, a quantum computer using Grover's algorithm can reliably discover the correct key in merely $\frac{\pi}{4} 2^{64}$ evaluations. This fact is the primary reason why standards organizations worldwide (such as NIST) regard the transition to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) as an urgent imperative, strongly recommending migration away from AES-128 to AES-256 (which still requires $2^{128}$ operations even with quantum computers).
 
@@ -2738,7 +2738,7 @@ In the quantum supremacy experiment demonstrated by Google, an index called cros
 
 ### 11.5.2 Transition to Quantum Error Correction (The Dawn of FTQC)
 
-To break through the limits of NISQ devices and establish true "quantum supremacy" in chemical calculations, materials science, or cryptography, rather than relying on a single physical system, the transition to **FTQC (Fault-Tolerant Quantum Computing)** , which constructs a single error-free "logical qubit" by bundling numerous physical qubits, is an absolute requirement.
+To break through the limits of NISQ devices and establish true "quantum supremacy" in chemical calculations, materials science, or cryptography, rather than relying on a single physical system, the transition to **FTQC (Fault-Tolerant [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/))** , which constructs a single error-free "logical qubit" by bundling numerous physical qubits, is an absolute requirement.
 
 For example, when using a topological error-correcting code called the Surface Code, as long as the error rate of physical qubits is below the threshold, the logical error rate decreases exponentially as the system is expanded. However, as a tradeoff, an overhead of 1,000 to 10,000 physical qubits is required to construct a single logical qubit.
 
@@ -2790,9 +2790,9 @@ graph TD
     H --> I["Calculation of Ideal Probability and XEB Fidelity Evaluation via Classical Supercomputer"]
 ```
 
-## 12.2 The Misconception of the "Magic Box": The Trap of Parallel Computing and BQP vs NP
+## 12.2 The Misconception of the "Magic Box": The Trap of Parallel Computing and BQ[P vs NP](https://kenji.blog/en/p/p-vs-np-problem/)
 
-In general media reports and popular science books regarding quantum computers, catchphrases such as "Because it can compute $2^n$ states simultaneously, it can solve any problem in an instant" are occasionally seen. However, from the perspective of computational complexity theory, this is definitively incorrect. A quantum computer is by no means a magic wand that can unconditionally solve "NP-Complete" problems in polynomial time.
+In general media reports and popular science books regarding quantum computers, catchphrases such as "Because it can compute $2^n$ states simultaneously, it can solve any problem in an instant" are occasionally seen. However, from the perspective of computational complexity theory, this is definitively incorrect. A quantum computer is by no means a magic wand that can unconditionally solve "[NP-Complete](https://kenji.blog/en/p/p-vs-np-problem/)" problems in polynomial time.
 
 This misconception stems from the fact (quantum parallelism) that through state superposition via Hadamard gates, $ |\psi\rangle = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle $, the evaluation of a function for all inputs can be performed "in a single operation." Using an oracle (the unitary operator responsible for the computation) **$U_f$** , when the computation of function $ f(x) $ is executed on a superposition state, the entire state evolves according to linearity as follows:
 
@@ -2814,7 +2814,7 @@ $$
 G = U_s U_\omega = (2|s\rangle\langle s| - I)(I - 2|\omega\rangle\langle\omega|)
 $$
 
-By applying this unitary operator **$G$** approximately $ \frac{\pi}{4}\sqrt{N} $ times, the state vector rotates towards the target $ |\omega\rangle $, raising the probability of observing the correct answer to almost 1 (100%). However, an extremely important fact here is that this is merely a "square-root speedup," and not an exponential speedup ($ O(2^n) \to O(\text{poly}(n)) $). To date, no pattern of quantum interference has been found that solves general cases of NP-complete problems in polynomial time. Many quantum information scientists and computer scientists strongly believe that **$\text{BQP} \not\supset \text{NP-Complete}$** (quantum computers cannot efficiently solve NP-complete problems) as a foundational conjecture of computational complexity theory.
+By applying this unitary operator **$G$** approximately $ \frac{\pi}{4}\sqrt{N} $ times, the state vector rotates towards the target $ |\omega\rangle $, raising the probability of observing the correct answer to almost 1 (100%). However, an extremely important fact here is that this is merely a "square-root speedup," and not an exponential speedup ($ O(2^n) \to O(\text{poly}(n)) $). To date, no pattern of quantum interference has been found that solves general cases of [NP-complet](https://kenji.blog/en/p/p-vs-np-problem/)e problems in polynomial time. Many quantum information scientists and computer scientists strongly believe that **$\text{BQP} \not\supset \text{NP-Complete}$** (quantum computers cannot efficiently solve NP-complete problems) as a foundational conjecture of computational complexity theory.
 
 A quantum computer is an extremely refined, specialized co-processor that yields superpolynomial speedups through the Quantum Fourier Transform (QFT) only when there is an "algebraic structure such as a hidden periodicity within the problem," as seen in factorization in Shor's algorithm.
 
@@ -2856,13 +2856,13 @@ While classical computers are based on "deterministic truth values (Boolean alge
 
 Quantum entanglement, which Einstein once despised as "spooky action at a distance," has now been established as the most fundamental and indispensable "resource" for driving quantum teleportation, quantum cryptographic communication, and quantum computers. The intuition proposed by genius physicist Richard Feynman in 1982: "If you want to make a simulation of nature, you'd better make it quantum mechanical, and by golly it's a wonderful problem, because it doesn't look so easy," has, after decades, finally reached the stage of running on real processors through the blood, sweat, and tears of physicists, mathematicians, computer scientists, and preeminent hardware engineers worldwide.
 
-To reiterate, a quantum computer is not a universal magic box. It is not a dream machine that brute-forces NP-complete problems in polynomial time. However, in specific domains that transcend the limits of classical computers—such as the rigorous simulation of complex electronic states in chemical reactions (quantum chemical calculations), unraveling the physical properties of new materials and high-temperature superconductors, specific classes of optimization problems, and prime factorization and discrete logarithm problems—it possesses an undeniable "Supremacy."
+To reiterate, a quantum computer is not a universal magic box. It is not a dream machine that brute-forces [NP-complet](https://kenji.blog/en/p/p-vs-np-problem/)e problems in polynomial time. However, in specific domains that transcend the limits of classical computers—such as the rigorous simulation of complex electronic states in chemical reactions (quantum chemical calculations), unraveling the physical properties of new materials and high-temperature superconductors, specific classes of optimization problems, and prime factorization and discrete logarithm problems—it possesses an undeniable "Supremacy."
 
 The battle against noise (the grueling journey from NISQ to FTQC) spanning the coming decades will by no means be smooth. A mountain of engineering barriers stands before us, such as controlling massive thermal loads in cryogenic environments, scalability problems of millions of microwave wirings, dramatic extensions of qubit coherence times ($T_1, T_2$), and the construction of classical-quantum hybrid control systems that process enormous amounts of syndrome measurements in real-time. Yet, what lies beyond is the birth of the ultimate computational architecture in human history that, in a true sense, "directly describes, manipulates, and utilizes the dynamics of the laws of nature (the Schrödinger equation) for computation."
 
 If this series has served to deeply convey to readers the true nature of quantum computers and the extremely beautiful and rigorous mathematical and physical structures behind them—without being swept away by superficial buzzwords or the inflation of excessive expectations—then as the author, there could be no greater joy. The quantum world is deeply, bizarrely, and overwhelmingly beautiful, far beyond our common sense. We now stand at the entrance to the most exciting technological and scientific frontier in human history. This grand intellectual voyage exploring the truth of this universe has only just begun.
 
 ---
- **The Series "Principles of Quantum Computing" (12 Chapters in Total) - End** 
+ **The Series "Principles of [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)" (12 Chapters in Total) - End** 
 
 

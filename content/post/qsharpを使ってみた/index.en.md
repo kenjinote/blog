@@ -10,7 +10,7 @@ tags: ["Q#", "Quantum", "Microsoft", "QDK", "Programming"]
 description: 'A detailed, from-the-basics explanation of the features and basic syntax of the quantum programming language Q#, as well as the construction of quantum entanglement and its execution from host languages.'
 ---
 
-## 1. Introduction: The Dawn of Quantum Computing and a New Paradigm of Programming
+## 1. Introduction: The Dawn of [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/) and a New Paradigm of Programming
 
 In recent years, technological innovations in hardware and software in the field of quantum computing have been remarkable. While classical computers (such as the PCs, smartphones, and supercomputers we use daily) process information using combinations of deterministic bits that are either "0" or "1", quantum computers directly utilize physical phenomena unique to quantum mechanics, such as "Superposition" and "Entanglement", as the foundation of information processing. This has shown the potential to achieve computational speeds for specific classes of problems that would be unreachable for classical computers even over the lifespan of the universe, a concept known as "Quantum Supremacy" or "Quantum Advantage". For example, dramatic reductions in computational complexity are expected in areas like factoring enormous numbers (Shor's algorithm), high-speed database searches (Grover's algorithm), quantum chemistry simulations (VQE algorithm), combinatorial optimization problems, and even specific processes in machine learning (Quantum Machine Learning).
 

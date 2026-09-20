@@ -234,15 +234,15 @@ Isto significa que, embora não tenha chegado ao tempo polinomial ($\gamma=0$), 
 
 Como vimos, a humanidade conseguiu evoluir os algoritmos da divisão por tentativa para o GNFS, concentrando seu brilhantismo matemático na tentativa de suplantar o obstáculo imposto pela fatoração. Contudo, mesmo com o GNFS, a fatoração de primos continua incapaz de ser resolvida em "tempo polinomial" num computador clássico.
 
-## O Problema P vs NP e a Posição da Fatoração de Primos
+## O Problema [P vs NP](https://kenji.blog/pt/p/p-vs-np-problem/) e a Posição da Fatoração de Primos
 
 Um dos maiores problemas não resolvidos da ciência da computação é a hipótese "P = NP".
-O problema de fatoração de primos pertence a NP (uma classe de problemas onde, uma vez fornecida uma resposta, a corretude pode ser testada em tempo polinomial), no entanto, não está provado que ele seja NP-completo (a classe de problemas mais complexos da categoria NP).
+O problema de fatoração de primos pertence a NP (uma classe de problemas onde, uma vez fornecida uma resposta, a corretude pode ser testada em tempo polinomial), no entanto, não está provado que ele seja [NP-complet](https://kenji.blog/pt/p/p-vs-np-problem/)o (a classe de problemas mais complexos da categoria NP).
 Adicionalmente, se ele pertence a P (uma classe de problemas solucionáveis em tempo polinomial, ou seja, onde existe um algoritmo em tempo polinomial), ainda não se sabe.
 
 Muitos estudiosos preveem que a fatoração de primos pertence a uma classe intermediária que não é P nem NP-completo (NP-intermediário). Se fosse descoberto um algoritmo em tempo polinomial (por exemplo, $\mathcal{O}(n^3)$) num computador clássico, seria um evento colossal que colapsaria sistemas de criptografia mundiais, mas até então tal algoritmo ainda não foi encontrado. Estima-se que decifrar a criptografia RSA-2048 exigiria mais tempo que o tempo de vida do universo, mesmo se o desempenho do computador clássico melhorasse consoante à lei de Moore.
 
-## O Computador Quântico como um "Divisor de Águas": Algoritmo de Shor
+## O Computador Quântico como um "Divisor de Águas": [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)
 
 A criptografia RSA, robusta diante dos computadores clássicos, entra em um panorama diametralmente distinto com a viabilidade dos "computadores quânticos", que funcionam baseados em princípios inteiramente diversos.
 O **"Algoritmo de Shor (Shor's algorithm)"**, revelado por Peter Shor em 1994, utiliza a transformada quântica de Fourier para solucionar de maneira notável o problema da fatoração de primos em **tempo polinomial $\mathcal{O}(n^3)$** (ou mais precisamente, requerendo no contexto das portas lógicas quânticas, cerca de $\mathcal{O}(n^2 \log n \log \log n)$).

@@ -12,7 +12,7 @@ description: 'The prime factorization problem that underpins the security of RSA
 
 Information security in the modern internet society is protected by public-key cryptography, such as RSA cryptography. The basis for the security of RSA relies on the fact that **"the prime factorization of huge composite numbers is computationally extremely difficult."**
 
-In this article, we will unravel the mathematical mechanism of the **"General Number Field Sieve"** (GNFS), which is the most powerful prime factorization algorithm for classical computers. We will also dive deeply into why it is completely defeated by **"Shor's Algorithm,"** discovered by Peter Shor, exploring this paradigm shift thoroughly with mathematical formulas and conceptual diagrams.
+In this article, we will unravel the mathematical mechanism of the **"General Number Field Sieve"** (GNFS), which is the most powerful prime factorization algorithm for classical computers. We will also dive deeply into why it is completely defeated by **"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/),"** discovered by Peter Shor, exploring this paradigm shift thoroughly with mathematical formulas and conceptual diagrams.
 
 ---
 
@@ -88,7 +88,7 @@ Finally, we take square roots in both the number field and the integer ring to d
 
 ---
 
-## 3. The Breakthrough by Quantum Computing: "Shor's Algorithm"
+## 3. The Breakthrough by [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/): "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)"
 
 While GNFS requires sub-exponential time, **"Shor's Algorithm,"** published by Peter Shor in 1994, can solve this problem in **"polynomial time"** by using a quantum computer.
 
@@ -193,7 +193,7 @@ On the other hand, Shor's algorithm utilizes the **"wave nature of quantum inter
 
 ## 6. Summary
 
-In this article, we deeply compared the mathematical backgrounds and algorithmic structures of **"GNFS,"** the pinnacle of classical limits, and **"Shor's Algorithm,"** which demonstrates the power of quantum computing.
+In this article, we deeply compared the mathematical backgrounds and algorithmic structures of **"GNFS,"** the pinnacle of classical limits, and **"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/),"** which demonstrates the power of quantum computing.
 
 While GNFS drove computational complexity down to sub-exponential time by employing mathematical tricks such as polynomial selection and massive matrix calculations, Shor's algorithm fused the fundamental principles of quantum mechanics—superposition and interference—with a mathematical tool (QFT), achieving a breakthrough to polynomial time in one stroke.
 

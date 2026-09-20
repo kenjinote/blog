@@ -248,7 +248,7 @@ Dalam secp256k1 Bitcoin, karena $p \approx 2^{256}$, dekripsi membutuhkan sekita
 ### Ancaman Komputer Kuantum dan Kriptografi Tahan Kuantum
 
 Namun, ada satu kekhawatiran besar mengenai keamanan komputasional. Yaitu munculnya **Komputer Kuantum (Quantum Computer)**.
-"Algoritma Shor (Shor's Algorithm)" yang diterbitkan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum digunakan, masalah faktorisasi prima (dasar dari enkripsi RSA) dan masalah logaritma diskrit (dasar ECC) dapat diselesaikan dalam waktu polinomial $\mathcal{O}(n^3)$.
+"Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))" yang diterbitkan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum digunakan, masalah faktorisasi prima (dasar dari enkripsi RSA) dan masalah logaritma diskrit (dasar ECC) dapat diselesaikan dalam waktu polinomial $\mathcal{O}(n^3)$.
 
 Jika komputer kuantum skala besar yang praktis dengan Qubit (Qubits) yang cukup dan tingkat kesalahan yang rendah berhasil dikembangkan, ada risiko bahwa kunci privat dapat dihitung mundur dari kunci publik Bitcoin.
 Langkah-langkah pertahanan jaringan Bitcoin terhadap hal ini adalah sebagai berikut:

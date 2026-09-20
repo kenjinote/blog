@@ -110,7 +110,7 @@ Der wahre Wert von Quantencomputern liegt ausschließlich in **"spezifischen Pro
 
 ### Worin Quantencomputer gut sind (Killer-Applikationen)
 
-#### 1. Primfaktorzerlegung und Entschlüsselung (Shor-Algorithmus)
+#### 1. Primfaktorzerlegung und Entschlüsselung ([Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))
 Gegenwärtig basiert "RSA-Kryptographie", die sichere Kommunikation im Internet schützt (wie Kreditkartenzahlungen und die Übertragung persönlicher Daten), auf der Prämisse, dass "die Primfaktorzerlegung sehr großer Zahlen für klassische Computer praktisch unmöglich ist (da sie enorm viel Zeit in Anspruch nimmt)".
 Mit dem "Shor-Algorithmus", der 1994 von dem Mathematiker Peter Shor entdeckt wurde, können Quantencomputer Interferenz jedoch geschickt nutzen, um dies mit dramatischer Geschwindigkeit (in polynomieller Zeit) zu lösen. Infolgedessen besteht das Risiko, dass aktuelle kryptografische Systeme in Zukunft zusammenbrechen, und Zentralbanken sowie Regierungsbehörden weltweit beeilen sich, auf "Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)" umzusteigen.
 
@@ -142,7 +142,7 @@ Berechnungsfehler (wie Bitflips aufgrund von kosmischer Strahlung) existieren au
 
 Da Quantenzustände jedoch die Eigenschaft haben, "bei der Messung zusammenzubrechen", gibt es ein fatales Dilemma, dass wir nicht direkt in sie hineinsehen (sie messen) können, um auf Fehler zu prüfen.
 Um dies zu vermeiden, wurden Theorien (wie Oberflächencodes) etabliert, um geschickt eine große Anzahl von instabilen "physikalischen Qubits" zu kombinieren, um ein einziges stabiles "logisches Qubit" aufzubauen, das Fehler erkennen und korrigieren kann.
-Es wird jedoch gesagt, dass 1.000 bis 10.000 physikalische Qubits erforderlich sind, um 1 logisches Qubit zu erzeugen. Um den Shor-Algorithmus unter Verwendung von Tausenden von logischen Qubits auszuführen, wäre ein riesiges System mit insgesamt Millionen bis zehn Millionen physikalischen Qubits erforderlich.
+Es wird jedoch gesagt, dass 1.000 bis 10.000 physikalische Qubits erforderlich sind, um 1 logisches Qubit zu erzeugen. Um den [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) unter Verwendung von Tausenden von logischen Qubits auszuführen, wäre ein riesiges System mit insgesamt Millionen bis zehn Millionen physikalischen Qubits erforderlich.
 
 Wir befinden uns derzeit im sogenannten Zeitalter der **NISQ-Geräte (Noisy Intermediate-Scale Quantum)** . Dies ist eine Übergangsphase von Maschinen, die mit Dutzenden bis Hunderten von Qubits ohne Fehlerkorrektur arbeiten.
 Experten prognostizieren, dass langfristige Forschung und Entwicklung über 10 bis mehrere Jahrzehnte erforderlich sein werden, um das ultimative Ziel zu erreichen: einen vollständig fehlerkorrigierbaren **"fehlertoleranten Quantencomputer (Fault-Tolerant Quantum Computer: FTQC)"** .

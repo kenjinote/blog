@@ -60,7 +60,7 @@ $$
 
 使用经典计算机，从公开的公钥 $K$ 和基点 $G$ 反推私钥 $k$（求解离散对数），即使使用Pollard's rho算法等最佳经典算法，也需要 $\mathcal{O}(\sqrt{p})$ 的指数级计算时间。对于256位的密钥，大约需要进行 $2^{128}$ 次运算，这即使让目前的超级计算机运行几十亿年也无法破解。
 
-### 2.2. Shor算法（Shor's Algorithm）导致的崩溃
+### 2.2. Shor算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）导致的崩溃
 
 然而，彼得·肖尔（Peter Shor）在1994年提出的 **Shor算法** 彻底打破了这一前提。Shor算法最初是为了在多项式时间内解决整数分解问题（RSA密码的基础）而提出的，但它同样适用于离散对数问题和椭圆曲线离散对数问题。
 

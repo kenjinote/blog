@@ -135,7 +135,7 @@ Si existiera un algoritmo de $L_n[1/4]$, o incluso un algoritmo clásico de tiem
 
 ## 5. El gran avance gracias a la computación cuántica: El algoritmo de Shor
 
-Mientras que los ordenadores clásicos se enfrentan a la barrera de $L_n[1/3]$, el **algoritmo de Shor (Shor's Algorithm)**, presentado por Peter Shor en 1994, destruyó esta barrera al cambiar fundamentalmente el propio modelo de cálculo.
+Mientras que los ordenadores clásicos se enfrentan a la barrera de $L_n[1/3]$, el **algoritmo de Shor ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))**, presentado por Peter Shor en 1994, destruyó esta barrera al cambiar fundamentalmente el propio modelo de cálculo.
 
 ### 5.1 El impacto del tiempo polinómico cuántico
 
@@ -160,7 +160,7 @@ La diferencia entre estas dos clases de complejidad computacional tiene un signi
 
 Por ejemplo, considere el caso de factorizar RSA-2048 (un número compuesto de 2048 bits).
 - **GNFS (Clásico)**: Al sustituir $n \approx 2^{2048}$ en $L_n[1/3, 1.923]$, se requieren aproximadamente $2^{112}$ operaciones. Esta es una cantidad astronómica de cálculos que tomaría más del tiempo de vida del universo, incluso combinando todos los recursos de computación de la Tierra en la actualidad.
-- **Algoritmo de Shor (Cuántico)**: Con el algoritmo de $O((\log n)^3)$, tomaría aproximadamente $2048^3 \approx 8.5 \times 10^9$ operaciones de puertas lógicas. Esto significa que si existiera el hardware adecuado (un ordenador cuántico universal con millones de cúbits físicos y capacidad de corrección de errores), el cálculo se completaría en tan solo unas horas o unos días.
+- **[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/) (Cuántico)**: Con el algoritmo de $O((\log n)^3)$, tomaría aproximadamente $2048^3 \approx 8.5 \times 10^9$ operaciones de puertas lógicas. Esto significa que si existiera el hardware adecuado (un ordenador cuántico universal con millones de cúbits físicos y capacidad de corrección de errores), el cálculo se completaría en tan solo unas horas o unos días.
 
 El cambio de paradigma del tiempo subexponencial de "exponente $\alpha=1/3$" al "tiempo polinómico" neutraliza la estrategia tradicional de la criptografía de garantizar la seguridad extendiendo la longitud de la clave.
 

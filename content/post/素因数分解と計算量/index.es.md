@@ -234,10 +234,10 @@ Esto significa que, aunque no alcanza el tiempo polinómico ($\gamma=0$), la com
 
 Como hemos visto hasta ahora, la humanidad ha movilizado su sabiduría matemática para continuar desafiando las barreras de la factorización de números primos mediante la evolución de algoritmos, desde la división por tentativa hasta el GNFS. Sin embargo, incluso con el GNFS, la factorización de números primos aún no se puede resolver en "tiempo polinómico" en una computadora clásica.
 
-## El problema P vs NP y la posición de la factorización de números primos
+## El problema [P vs NP](https://kenji.blog/es/p/p-vs-np-problem/) y la posición de la factorización de números primos
 
 El mayor problema sin resolver en la informática es la "hipótesis P = NP".
-El problema de la factorización de números primos pertenece a NP (la clase de problemas para los cuales la corrección de una respuesta proporcionada se puede verificar en tiempo polinómico), pero no se ha demostrado que sea NP-completo (la clase de problemas más difíciles dentro de NP).
+El problema de la factorización de números primos pertenece a NP (la clase de problemas para los cuales la corrección de una respuesta proporcionada se puede verificar en tiempo polinómico), pero no se ha demostrado que sea [NP-complet](https://kenji.blog/es/p/p-vs-np-problem/)o (la clase de problemas más difíciles dentro de NP).
 Además, tampoco está resuelto si pertenece a P (la clase de problemas que se pueden resolver en tiempo polinómico) (es decir, si existe un algoritmo de tiempo polinómico).
 
 Muchos investigadores conjeturan que la factorización de números primos pertenece a una clase intermedia (NP-intermediate) que no es ni P ni NP-completa. Si se descubriera un algoritmo que resuelva la factorización de números primos en tiempo polinómico en una computadora clásica (por ejemplo, $\mathcal{O}(n^3)$), sería un evento monumental que colapsaría los sistemas criptográficos de todo el mundo; sin embargo, hasta la fecha, no se ha descubierto tal algoritmo. Se estima que descifrar un cifrado RSA de 2048 bits tomaría un tiempo mayor que la edad del universo, incluso asumiendo que las mejoras de rendimiento en computadoras clásicas sigan la Ley de Moore.
@@ -245,7 +245,7 @@ Muchos investigadores conjeturan que la factorización de números primos perten
 ## Las computadoras cuánticas como "cambiadores de juego": El algoritmo de Shor
 
 Aunque el cifrado RSA es robusto en las computadoras clásicas, la situación cambiará drásticamente cuando las "computadoras cuánticas", que operan bajo principios completamente diferentes, se vuelvan viables.
-El **"Algoritmo de Shor (Shor's algorithm)"**, publicado por Peter Shor en 1994, es un algoritmo que puede resolver de manera asombrosa la factorización de números primos en **tiempo polinómico $\mathcal{O}(n^3)$** (más estrictamente, alrededor de $\mathcal{O}(n^2 \log n \log \log n)$ en términos de número de puertas cuánticas) aprovechando la transformada cuántica de Fourier.
+El **"[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/) (Shor's algorithm)"**, publicado por Peter Shor en 1994, es un algoritmo que puede resolver de manera asombrosa la factorización de números primos en **tiempo polinómico $\mathcal{O}(n^3)$** (más estrictamente, alrededor de $\mathcal{O}(n^2 \log n \log \log n)$ en términos de número de puertas cuánticas) aprovechando la transformada cuántica de Fourier.
 
 Verifiquemos la diferencia en la complejidad temporal entre los algoritmos clásicos y cuánticos en el siguiente diagrama Mermaid.
 

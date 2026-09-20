@@ -247,7 +247,7 @@ In Bitcoin's secp256k1, $p \approx 2^{256}$, so cracking it would require about 
 ### The Threat of Quantum Computers and Post-Quantum Cryptography
 
 However, there is one major concern regarding computational security. That is the rise of **Quantum Computers**.
-"Shor's Algorithm", published by Peter Shor in 1994, mathematically proved that if a quantum computer is used, problems such as the prime factorization problem (the foundation of RSA cryptography) and the discrete logarithm problem (the foundation of ECC) can be solved in polynomial time $\mathcal{O}(n^3)$.
+"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)", published by Peter Shor in 1994, mathematically proved that if a quantum computer is used, problems such as the prime factorization problem (the foundation of RSA cryptography) and the discrete logarithm problem (the foundation of ECC) can be solved in polynomial time $\mathcal{O}(n^3)$.
 
 If a practical, large-scale quantum computer with sufficient Qubits and a low error rate is completed, there will be a risk that private keys could be reverse-engineered from Bitcoin public keys.
 The Bitcoin network's defense measures against this are as follows:

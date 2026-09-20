@@ -10,11 +10,11 @@ slug: "halting-problem"
 
 When programming, you might sometimes feel anxious, wondering, "Is this program falling into an infinite loop somewhere?" If there were a tool that could **reliably determine whether any given program will fall into an infinite loop**, development and debugging would become dramatically easier.
 
-However, in the field of computer science, it has been mathematically proven that such a dream tool **"can never be created."** This is the famous **"Halting Problem."**
+However, in the field of computer science, it has been mathematically proven that such a dream tool **"can never be created."** This is the famous **"[Halting Problem](https://kenji.blog/en/p/turing-machine-computability/)."**
 
 In this article, we will explain this problem, which was proven by [Alan Turing](https://kenji.blog/en/p/turing/) in 1936, in an easy-to-understand manner using intuitive concrete examples, mathematical formulas (KaTeX), and diagrams (Mermaid).
 
-## What is the Halting Problem?
+## What is the [Halting Problem](https://kenji.blog/en/p/turing-machine-computability/)?
 
 [The Halting Problem](https://kenji.blog/en/p/halting-problem/) refers to the following problem:
 
@@ -148,9 +148,9 @@ graph TD
 
 As the diagram shows, the moment $D$ itself is provided as input, a loop (paradox) occurs where the determination result and the actual behavior reverse, causing logic to break down. It has a structure very similar to the liar paradox, "This statement is false."
 
-## History of Computers and the Turing Machine
+## History of Computers and the [Turing Machine](https://kenji.blog/en/p/turing-machine-computability/)
 
-[Alan Turing](https://kenji.blog/en/p/turing/) raised and proved this problem in 1936, an era before modern electronic computers existed. To rigorously define mathematically "what computation is," he devised a hypothetical machine called the **"Turing Machine."**
+[Alan Turing](https://kenji.blog/en/p/turing/) raised and proved this problem in 1936, an era before modern electronic computers existed. To rigorously define mathematically "what computation is," he devised a hypothetical machine called the **"[Turing Machine](https://kenji.blog/en/p/turing-machine-computability/)."**
 
 A Turing Machine consists of an infinitely long tape, a head that reads and writes information on the tape, and a state transition table that manages the state of the machine. It is known that no matter how complex a modern program is, it can theoretically be reduced to this Turing Machine. This is called the **"Church-Turing Thesis."**
 
@@ -158,11 +158,11 @@ Turing attempted to draw a line between "computable problems" and "uncomputable 
 
 ## Deep Connection with [Gödel's Incompleteness Theorems](https://kenji.blog/en/p/godels-incompleteness-theorems/)
 
-The "paradox of self-reference" that underlies the proof of the Halting Problem is deeply connected to the **"Incompleteness Theorems"** published by [Kurt Gödel](https://kenji.blog/en/p/godel/) in 1931, slightly before Turing.
+The "paradox of self-reference" that underlies the proof of the [Halting Problem](https://kenji.blog/en/p/turing-machine-computability/) is deeply connected to the **"Incompleteness Theorems"** published by [Kurt Gödel](https://kenji.blog/en/p/godel/) in 1931, slightly before Turing.
 
 Gödel's First Incompleteness Theorem states that "in any sufficiently powerful axiomatic system that includes the theory of natural numbers, there always exists a true statement that can neither be proven nor disproven." When proving this theorem, Gödel mathematically constructed a self-referential proposition stating, "This proposition cannot be proven."
 
-The malicious program $D$ in Turing's Halting Problem makes a self-reference in the form of "infinite looping if the decision machine $H$ determines it halts, and halting if it determines it infinite loops." In other words, the Halting Problem can also be interpreted as the **programming version of the Incompleteness Theorem** on the stage of computer science. These two great proofs, which indicate the limits of logic, share the exact same paradox structure.
+The malicious program $D$ in Turing's [Halting Problem](https://kenji.blog/en/p/turing-machine-computability/) makes a self-reference in the form of "infinite looping if the decision machine $H$ determines it halts, and halting if it determines it infinite loops." In other words, the Halting Problem can also be interpreted as the **programming version of the Incompleteness Theorem** on the stage of computer science. These two great proofs, which indicate the limits of logic, share the exact same paradox structure.
 
 ## The Meaning This Theorem Brings Today
 
@@ -188,7 +188,7 @@ Modern compilers, static code analysis tools, and antivirus software that detect
 
 ## Conclusion
 
-In this article, we explained the **Halting Problem** proven by Turing.
+In this article, we explained the **[Halting Problem](https://kenji.blog/en/p/turing-machine-computability/)** proven by Turing.
 
 - There is no algorithm that can reliably determine whether any arbitrary program will halt in a finite amount of time.
 - Assuming a decision machine $H$ exists leads to a contradiction due to a malicious program $D$ that betrays the decision result (Proof by Contradiction).

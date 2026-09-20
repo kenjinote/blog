@@ -11,7 +11,7 @@ tags: ["Quantum", "Error Correction", "Qubit", "2026"]
 
 ## 1. Einführung: Wie weit sind Quantencomputer im Jahr 2026 gekommen?
 
-Im Jahr 2026 hat das Quantencomputing einen entscheidenden Wandel vom einstigen „theoretischen Traum“ zur „ingenieurstechnischen Realität“ vollzogen. Da die Grenzen der bis vor wenigen Jahren noch vorherrschenden **NISQ (Noisy Intermediate-Scale Quantum)**-Geräte deutlich wurden, haben Forschungseinrichtungen und Tech-Giganten weltweit das Ruder in Richtung der Realisierung des „fehlertoleranten Quantencomputings (FTQC: Fault-Tolerant Quantum Computing)“ herumgerissen.
+Im Jahr 2026 hat das Quantencomputing einen entscheidenden Wandel vom einstigen „theoretischen Traum“ zur „ingenieurstechnischen Realität“ vollzogen. Da die Grenzen der bis vor wenigen Jahren noch vorherrschenden **NISQ (Noisy Intermediate-Scale Quantum)**-Geräte deutlich wurden, haben Forschungseinrichtungen und Tech-Giganten weltweit das Ruder in Richtung der Realisierung des „fehlertoleranten Quantencomputings (FTQC: Fault-Tolerant [Quantum Computing](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))“ herumgerissen.
 
 In diesem Artikel werden wir den aktuellen Stand von Quantencomputern eingehend beleuchten und dabei die neuesten Durchbrüche des Jahres 2026 miteinbeziehen. Insbesondere werden wir die Quantenfehlerkorrektur (Oberflächencode), den Unterschied zwischen physischen und logischen Qubits, Fortschritte beim topologischen Quantencomputing sowie die neuesten Entwicklungen bei supraleitenden und Ionenfallen-Ansätzen im Detail erläutern.
 

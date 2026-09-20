@@ -135,7 +135,7 @@ Sollte es $L_n[1/4]$ oder gar einen klassischen Polynomzeitalgorithmus geben, m�
 
 ## 5. Durchbruch durch Quantencomputer: Shors Algorithmus
 
-Während klassische Computer an der $L_n[1/3]$-Wand stehen, zerschmetterte der 1994 von Peter Shor vorgestellte **Shor-Algorithmus (Shor's Algorithm)** diese Wand, indem er das Berechnungsmodell grundlegend veränderte.
+Während klassische Computer an der $L_n[1/3]$-Wand stehen, zerschmetterte der 1994 von Peter Shor vorgestellte **[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))** diese Wand, indem er das Berechnungsmodell grundlegend veränderte.
 
 ### 5.1 Der Schock der quantenmechanischen Polynomzeit
 
@@ -160,7 +160,7 @@ Der Unterschied zwischen diesen beiden Komplexitätsklassen hat entscheidende Au
 
 Betrachten wir beispielsweise den Fall der Faktorisierung von RSA-2048 (eine zusammengesetzte Zahl mit 2048 Bit).
 - **GNFS (Klassisch)**: Setzt man $n \approx 2^{2048}$ in $L_n[1/3, 1.923]$ ein, so benötigt man etwa $2^{112}$ Operationen. Dies ist eine astronomische Rechenmenge, die länger als die Lebensdauer des Universums dauern würde, selbst wenn man alle aktuellen Rechenressourcen der Erde bündeln würde.
-- **Shor-Algorithmus (Quanten)**: Bei einem $O((\log n)^3)$-Algorithmus sind nur etwa $2048^3 \approx 8,5 \times 10^9$ logische Gatteroperationen erforderlich. Dies bedeutet, dass die Berechnung in nur wenigen Stunden bis Tagen abgeschlossen sein könnte, sofern die entsprechende Hardware (ein universeller Quantencomputer mit Millionen von physischen Qubits und Fehlerkorrekturfähigkeiten) vorhanden ist.
+- **[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) (Quanten)**: Bei einem $O((\log n)^3)$-Algorithmus sind nur etwa $2048^3 \approx 8,5 \times 10^9$ logische Gatteroperationen erforderlich. Dies bedeutet, dass die Berechnung in nur wenigen Stunden bis Tagen abgeschlossen sein könnte, sofern die entsprechende Hardware (ein universeller Quantencomputer mit Millionen von physischen Qubits und Fehlerkorrekturfähigkeiten) vorhanden ist.
 
 Der Paradigmenwechsel von einer subexponentiellen Funktion mit einem "Exponenten $\alpha=1/3$" zur "Polynomzeit" macht die traditionelle kryptographische Strategie, die Sicherheit durch Erhöhung der Schlüssellänge zu gewährleisten, völlig wirkungslos.
 

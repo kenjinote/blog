@@ -146,7 +146,7 @@ However, RSA cryptography is not giving up either. What is currently used on the
 Even though GNFS is humanity's strongest algorithm, it is said that even to solve 270 digits (RSA-270), it would take thousands or tens of thousands of years even if all the computers in the world were connected. For now, our LINE and bank data are safe.
 
 But what if a **"magic that instantly finds $X$ and $Y$ for any gigantic number"** appears?
-Actually, the closest thing to that is the **"Quantum Computer (Shor's Algorithm)"** currently under development. It has been mathematically proven that by using the wave properties of quantum mechanics, one can ignore the tedious card collecting puzzle and draw the answer in one shot.
+Actually, the closest thing to that is the **"Quantum Computer ([Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/))"** currently under development. It has been mathematically proven that by using the wave properties of quantum mechanics, one can ignore the tedious card collecting puzzle and draw the answer in one shot.
 
 The endless battle of wits between the people who make cryptography (defense) and the people who make algorithms to break it (attack).
 When you learn that the "prime factorization" and "algebraic expressions" learned in junior high school are actually weapons fiercely fighting on the front lines of global security, doesn't math class seem just a little bit more interesting?

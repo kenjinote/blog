@@ -60,7 +60,7 @@ $$
 
 En utilisant un ordinateur classique, calculer la clé privée $k$ à partir de la clé publique $K$ (calculer le logarithme discret) nécessite un temps de calcul exponentiel $\mathcal{O}(\sqrt{p})$ même avec les meilleurs algorithmes classiques tels que l'algorithme rho de Pollard. Pour une clé de 256 bits, environ $2^{128}$ opérations sont nécessaires, ce qui est impossible à résoudre même en faisant fonctionner les supercalculateurs actuels pendant des milliards d'années.
 
-### 2.2. L'effondrement causé par l'algorithme de Shor (Shor's Algorithm)
+### 2.2. L'effondrement causé par l'algorithme de Shor ([Shor's Algorithm](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/))
 
 Cependant, l'**algorithme de Shor**, publié par Peter Shor en 1994, a complètement détruit cette hypothèse. L'algorithme de Shor a été initialement proposé pour résoudre le problème de la factorisation en nombres premiers (la base du chiffrement RSA) en temps polynomial, mais il s'applique également au problème du logarithme discret et au problème du logarithme discret sur courbe elliptique.
 

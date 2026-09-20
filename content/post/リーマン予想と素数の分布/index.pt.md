@@ -189,8 +189,8 @@ Isso porque é extremamente provável que, no processo de provar a Hipótese de 
 
 Se for estabelecido um método desconhecido de geometria algébrica ou de geometria não-comutativa capaz de manipular completamente as propriedades dos zeros da função zeta de [Riemann](https://kenji.blog/pt/p/riemann/), não se pode negar a possibilidade de que isso leve à descoberta de um algoritmo de fatoração revolucionário (por exemplo, um algoritmo clássico que reduz a complexidade para o tempo polinomial). Nesse sentido, os criptógrafos nunca podem tirar os olhos dos desenvolvimentos da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/).
 
-### Computadores Quânticos e o Algoritmo de Shor
-Uma ameaça mais direta e realista à criptografia não é a prova da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), mas os **computadores quânticos**. O "Algoritmo de Shor", anunciado por Peter Shor em 1994, provou que, com um computador quântico de capacidade suficiente, a fatoração pode ser resolvida em tempo polinomial. Isso fundamentalmente quebraria a criptografia RSA e a criptografia de curva elíptica.
+### Computadores Quânticos e o [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)
+Uma ameaça mais direta e realista à criptografia não é a prova da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), mas os **computadores quânticos**. O "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)", anunciado por Peter Shor em 1994, provou que, com um computador quântico de capacidade suficiente, a fatoração pode ser resolvida em tempo polinomial. Isso fundamentalmente quebraria a criptografia RSA e a criptografia de curva elíptica.
 
 Atualmente, ao redor do mundo, há uma transição em andamento para a "Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy, PQC)" (como a criptografia baseada em reticulados), que não pode ser decifrada nem por computadores quânticos. As tecnologias de criptografia baseadas em números primos podem, de certa forma, estar encerrando sua era de ouro, mas o valor matemático dos números primos em si nunca se perderá.
 

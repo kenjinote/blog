@@ -205,7 +205,7 @@ Sabe-se que o Problema do Logaritmo Discreto em Curvas Elípticas (ECDLP) é ain
 
 # 7. A Ameaça dos Computadores Quânticos e a Criptografia Pós-Quântica (PQC)
 
-A tecnologia criptográfica parecia sólida, mas em 1994, o "Algoritmo de Shor" publicado por Peter Shor causou um grande impacto.
+A tecnologia criptográfica parecia sólida, mas em 1994, o "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)" publicado por Peter Shor causou um grande impacto.
 
 Os computadores quânticos realizam cálculos utilizando as propriedades da mecânica quântica de "superposição" e "emaranhamento quântico". Foi matematicamente provado que a execução do algoritmo de Shor em um computador quântico de desempenho suficiente pode resolver o problema de fatoração de primos e o problema do logaritmo discreto em "tempo polinomial". Ou seja, no dia em que um computador quântico prático for concluído (Q-Day), as criptografias de chave pública usadas atualmente, como RSA e ECC, serão corrompidas instantaneamente.
 

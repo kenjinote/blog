@@ -71,7 +71,7 @@ Pengembangan Low-code / No-code adalah metode pengembangan yang memungkinkan And
 Dalam beberapa tahun terakhir, alat low-code / no-code berbasis cloud telah berkembang pesat.
 
 * **Power Platform (Microsoft)**
-  Platform pengembangan dan otomatisasi aplikasi bisnis terintegrasi yang mencakup "Power Apps", "Power Automate", dll. Memungkinkan Anda membangun proses bisnis perusahaan secara visual melalui drag-and-drop.
+  Platform pengembangan dan otomatisasi aplikasi bisnis terintegrasi yang mencakup "Power Apps", "Power [Automate](https://kenji.blog/id/p/automata-formal-language-theory/)", dll. Memungkinkan Anda membangun proses bisnis perusahaan secara visual melalui drag-and-drop.
 
 * **Salesforce Lightning Platform**
   Platform pengembangan aplikasi yang disediakan oleh Salesforce, sebuah CRM. Memungkinkan pembuatan aplikasi bisnis melalui GUI, dan integrasi dengan layanan Salesforce lainnya juga mudah.

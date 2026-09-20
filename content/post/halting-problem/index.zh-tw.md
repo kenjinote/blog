@@ -14,7 +14,7 @@ slug: "halting-problem"
 
 本文將針對 1936 年由[艾倫·圖靈](https://kenji.blog/zh-tw/p/turing/)（[Alan Turing](https://kenji.blog/zh-tw/p/turing/)）所證明的這個問題，運用直觀的具體例子、數學公式（KaTeX）以及圖解（Mermaid），來進行淺顯易懂的解說。
 
-## 什麼是停止性問題？
+## 什麼是[停止性問題](https://kenji.blog/zh-tw/p/turing-machine-computability/)？
 
 停止性問題指的是以下這樣的問題：
 
@@ -150,19 +150,19 @@ graph TD
 
 ## 電腦的歷史與圖靈機
 
-[艾倫·圖靈](https://kenji.blog/zh-tw/p/turing/)提出並證明這個問題是在 1936 年，那是一個還沒有像現代這種電子計算機（電腦）存在的時代。他為了在數學上嚴密定義「計算是什麼？」，構想出了一種稱為 **「圖靈機（Turing Machine）」** 的虛擬機器。
+[艾倫·圖靈](https://kenji.blog/zh-tw/p/turing/)提出並證明這個問題是在 1936 年，那是一個還沒有像現代這種電子計算機（電腦）存在的時代。他為了在數學上嚴密定義「計算是什麼？」，構想出了一種稱為 **「圖靈機（[Turing Machine](https://kenji.blog/zh-tw/p/turing-machine-computability/)）」** 的虛擬機器。
 
 圖靈機由無限延伸的紙帶、能夠讀寫紙帶資訊的讀寫頭，以及管理機器狀態的狀態轉移表所構成。我們已經知道，即使是現代再怎麼複雜的程式，理論上都可以還原成這個圖靈機。這被稱為 **「邱奇－圖靈論題（Church-Turing Thesis）」** 。
 
-圖靈試圖利用這個簡單的模型，在「可計算的問題」與「不可計算的問題」之間劃出一條界線。其結果所發現的，就是不可判定問題的代表——停止性問題。
+圖靈試圖利用這個簡單的模型，在「可計算的問題」與「不可計算的問題」之間劃出一條界線。其結果所發現的，就是不可判定問題的代表——[停止性問題](https://kenji.blog/zh-tw/p/turing-machine-computability/)。
 
 ## 與[哥德爾不完備定理](https://kenji.blog/zh-tw/p/godels-incompleteness-theorems/)的深層關聯
 
-停止性問題證明根底的「自我指涉悖論」，與圖靈之前，在 1931 年由[庫爾特·哥德爾](https://kenji.blog/zh-tw/p/godel/)（[Kurt Gödel](https://kenji.blog/zh-tw/p/godel/)）發表的 **「不完備定理（Incompleteness Theorems）」** 有著深層的關聯。
+[停止性問題](https://kenji.blog/zh-tw/p/turing-machine-computability/)證明根底的「自我指涉悖論」，與圖靈之前，在 1931 年由[庫爾特·哥德爾](https://kenji.blog/zh-tw/p/godel/)（[Kurt Gödel](https://kenji.blog/zh-tw/p/godel/)）發表的 **「不完備定理（Incompleteness Theorems）」** 有著深層的關聯。
 
 哥德爾的第一不完備定理指出：「在包含自然數論且足夠強大的公理系統中，必定存在無法證明也無法反證的真命題。」哥德爾在這個定理的證明中，在數學上建構了「這個命題無法被證明」這樣的自我指涉命題。
 
-圖靈停止性問題中惡意的程式 $D$，以「如果判定機 $H$ 判定為停止則陷入無窮迴圈，如果判定為無窮迴圈則停止」的形式進行了自我指涉。也就是說，停止性問題也可以被解釋為計算機科學舞台上 **不完備定理的程式設計版** 。這兩個展示邏輯極限的偉大證明，共享著相同的悖論結構。
+圖靈[停止性問題](https://kenji.blog/zh-tw/p/turing-machine-computability/)中惡意的程式 $D$，以「如果判定機 $H$ 判定為停止則陷入無窮迴圈，如果判定為無窮迴圈則停止」的形式進行了自我指涉。也就是說，停止性問題也可以被解釋為計算機科學舞台上 **不完備定理的程式設計版** 。這兩個展示邏輯極限的偉大證明，共享著相同的悖論結構。
 
 ## 這個定理對現代的意義
 

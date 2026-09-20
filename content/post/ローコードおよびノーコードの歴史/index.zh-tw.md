@@ -71,7 +71,7 @@ description: '解說從1980年代至今的低程式碼（Low-Code）與無程式
 近年來，基於雲的低代碼／無代碼工具發展迅速。
 
 * **Power Platform（Microsoft）**
-  包含「Power Apps」、「Power Automate」等的綜合業務應用程式開發與自動化平台。可以通過拖放可視化地構建企業的業務流程。
+  包含「Power Apps」、「Power [Automate](https://kenji.blog/zh-tw/p/automata-formal-language-theory/)」等的綜合業務應用程式開發與自動化平台。可以通過拖放可視化地構建企業的業務流程。
 
 * **Salesforce Lightning Platform**
   CRM的Salesforce提供的應用程式開發基礎。可以通過GUI創建業務應用程式，並且很容易與其他Salesforce服務整合。

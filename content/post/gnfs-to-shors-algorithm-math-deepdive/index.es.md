@@ -16,7 +16,7 @@ description: 'El problema de la factorización de enteros que respalda la seguri
 
 La seguridad de la información en la sociedad de Internet moderna está protegida por sistemas de criptografía de clave pública como la criptografía RSA. La base de la seguridad del cifrado RSA depende del hecho de que **"la factorización de números compuestos enormes es computacionalmente muy difícil"**.
 
-En este artículo, desentrañaremos el mecanismo matemático de la **"Criba General del Cuerpo de Números"** (General Number Field Sieve, GNFS), que es el algoritmo de factorización más fuerte en computadoras clásicas, y profundizaremos a través de fórmulas y diagramas conceptuales por qué es completamente derrotado por el **"Algoritmo de Shor"** descubierto por Peter Shor, y el cambio de paradigma que esto representa.
+En este artículo, desentrañaremos el mecanismo matemático de la **"Criba General del Cuerpo de Números"** (General Number Field Sieve, GNFS), que es el algoritmo de factorización más fuerte en computadoras clásicas, y profundizaremos a través de fórmulas y diagramas conceptuales por qué es completamente derrotado por el **"[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)"** descubierto por Peter Shor, y el cambio de paradigma que esto representa.
 
 ---
 
@@ -92,7 +92,7 @@ Finalmente, extraemos raíces cuadradas tanto en el cuerpo de números como en e
 
 ---
 
-## 3. El avance mediante computación cuántica: "Algoritmo de Shor"
+## 3. El avance mediante computación cuántica: "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)"
 
 Mientras que el GNFS requiere tiempo subexponencial, el **"Algoritmo de Shor"** introducido por Peter Shor en 1994 puede resolver este problema en **"tiempo polinomial"** utilizando una computadora cuántica.
 
@@ -196,7 +196,7 @@ Por otro lado, el algoritmo de Shor utiliza **"las propiedades ondulatorias debi
 
 ## 6. Conclusión
 
-En este artículo, comparamos profundamente los antecedentes matemáticos y las estructuras de los algoritmos de **"GNFS"**, que es el pináculo del límite clásico, y el **"Algoritmo de Shor"**, que muestra el poder de la computación cuántica.
+En este artículo, comparamos profundamente los antecedentes matemáticos y las estructuras de los algoritmos de **"GNFS"**, que es el pináculo del límite clásico, y el **"[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)"**, que muestra el poder de la computación cuántica.
 
 Mientras que el GNFS redujo la complejidad temporal al tiempo subexponencial mediante elaboradas técnicas matemáticas como la selección de polinomios y el cálculo de enormes matrices, el algoritmo de Shor fusionó la superposición y la interferencia, que son los principios básicos de la mecánica cuántica, con herramientas matemáticas (QFT) para lograr un avance hacia el tiempo polinomial de un solo golpe.
 

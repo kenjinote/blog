@@ -145,7 +145,7 @@ Doch auch die RSA-Verschlüsselung hat nicht aufgegeben. Was im heutigen Interne
 Obwohl GNFS der stärkste Algorithmus der Menschheit ist, sagt man, dass selbst das Lösen von 270 Stellen (RSA-270) Tausende oder Zehntausende von Jahren dauern würde, selbst wenn man Computer auf der ganzen Welt miteinander verbindet. Vorerst sind unsere LINE- und Bankdaten sicher.
 
 Aber was wäre, wenn eine ** "Magie, um $X$ und $Y$ für jede riesige Zahl sofort zu finden" ** , auftauchen würde?
-Tatsächlich kommt der ** "Quantencomputer (Shor-Algorithmus)" ** , der sich derzeit in der Entwicklung befindet, dem am nächsten. Unter Ausnutzung der Wellennatur der Quantenmechanik wurde mathematisch bewiesen, dass es möglich ist, das mühsame Kartensammelpuzzle zu umgehen und die Antwort auf einen Schlag zu finden.
+Tatsächlich kommt der ** "Quantencomputer ([Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))" ** , der sich derzeit in der Entwicklung befindet, dem am nächsten. Unter Ausnutzung der Wellennatur der Quantenmechanik wurde mathematisch bewiesen, dass es möglich ist, das mühsame Kartensammelpuzzle zu umgehen und die Antwort auf einen Schlag zu finden.
 
 Ein endloser Kampf des Verstandes zwischen denen, die Verschlüsselung erschaffen (Verteidigung), und denen, die Algorithmen entwickeln, um sie zu knacken (Angriff).
 Macht das Wissen, dass die in der Mittelstufe erlernte "Primfaktorzerlegung" und "algebraische Ausdrücke" tatsächlich die Waffen sind, die an vorderster Front der globalen Sicherheit kämpfen, den Mathematikunterricht nicht ein wenig interessanter?

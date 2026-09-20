@@ -134,7 +134,7 @@ If an $L_n[1/4]$ or even a classical polynomial-time algorithm were to exist, it
 
 ---
 
-## 5. Breakthrough by Quantum Computers: Shor's Algorithm
+## 5. Breakthrough by Quantum Computers: [Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)
 
 While classical computers face the barrier of $L_n[1/3]$, **Shor's Algorithm**, published by Peter Shor in 1994, smashed this barrier by fundamentally changing the computation model itself.
 
@@ -161,7 +161,7 @@ The difference between these two complexity classes holds decisive meaning in re
 
 For example, consider the case of factoring RSA-2048 (a 2048-bit composite number).
 - **GNFS (Classical)**: Substituting $n \approx 2^{2048}$ into $L_n[1/3, 1.923]$, about $2^{112}$ operations are required. This is an astronomical amount of computation that would take longer than the lifespan of the universe even if all the computing resources on Earth today were mobilized.
-- **Shor's Algorithm (Quantum)**: With an $O((\log n)^3)$ algorithm, about $2048^3 \approx 8.5 \times 10^9$ logical gate operations are sufficient. This means that if appropriate hardware (a universal quantum computer with millions of physical qubits and error correction capabilities) exists, the calculation could be completed in just a few hours to a few days.
+- **[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/) (Quantum)**: With an $O((\log n)^3)$ algorithm, about $2048^3 \approx 8.5 \times 10^9$ logical gate operations are sufficient. This means that if appropriate hardware (a universal quantum computer with millions of physical qubits and error correction capabilities) exists, the calculation could be completed in just a few hours to a few days.
 
 The paradigm shift from the sub-exponential function of "exponent $\alpha=1/3$" to "polynomial time" neutralizes the traditional cryptographic strategy of ensuring security by increasing the key length.
 

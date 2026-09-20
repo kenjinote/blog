@@ -134,11 +134,11 @@ Because of its dramatic name, Gödel's Incompleteness Theorem is often misused i
 - **Misunderstanding 3: "There are things that cannot be proven about anything."**
   - **Fact**: The Incompleteness Theorem applies only to sufficiently complex systems that include "addition and multiplication of natural numbers (Peano Arithmetic)." For example, "[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry" or the "first-order theory of real numbers" are complete, and all true propositions are provable. Incompleteness only arises when the subject has a sufficiently complex structure (a structure that enables self-reference).
 
-## 7. Baton to the Turing Machine: The Dawn of Computer Science
+## 7. Baton to the [Turing Machine](https://kenji.blog/en/p/turing-machine-computability/): The Dawn of Computer Science
 
-The impact brought by Gödel's theorems was not confined to the framework of mathematics. In 1936, the British mathematician [Alan Turing](https://kenji.blog/en/p/turing/) replaced Gödel's concept of a "formal system" with a physical computational process and devised a hypothetical computational machine model called the "Turing Machine."
+The impact brought by Gödel's theorems was not confined to the framework of mathematics. In 1936, the British mathematician [Alan Turing](https://kenji.blog/en/p/turing/) replaced Gödel's concept of a "formal system" with a physical computational process and devised a hypothetical computational machine model called the "[Turing Machine](https://kenji.blog/en/p/turing-machine-computability/)."
 
-Turing applied Gödel's Incompleteness Theorem to the world of computers and proved that "there is no universal algorithm that can determine in advance whether any computer program will never finish calculating." This is the famous **Halting Problem**.
+Turing applied Gödel's Incompleteness Theorem to the world of computers and proved that "there is no universal algorithm that can determine in advance whether any computer program will never finish calculating." This is the famous **[Halting Problem](https://kenji.blog/en/p/turing-machine-computability/)**.
 
 ```mermaid
 graph TD

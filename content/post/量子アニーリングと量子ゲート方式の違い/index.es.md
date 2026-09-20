@@ -137,7 +137,7 @@ El mayor desafío del modelo de puertas cuánticas es la "decoherencia", en la c
 
 Para realizar cálculos ideales, la **corrección de errores cuánticos (Quantum Error Correction)** es indispensable. Por ejemplo, en métodos como el "código de superficie" (Surface Code), múltiples cúbits físicos se agrupan para formar un único "cúbit lógico" (Logical Qubit) libre de errores. Sin embargo, para crear un solo cúbit lógico se requieren de miles a decenas de miles de cúbits físicos, lo que genera una enorme sobrecarga.
 
-La etapa en la que nos encontramos actualmente es la era de los dispositivos **NISQ (Noisy Intermediate-Scale Quantum)** de decenas a cientos de cúbits sin corrección de errores. Se necesitan muchos avances para lograr la **FTQC (Computación Cuántica Tolerante a Fallos: Fault-Tolerant Quantum Computing)** equipada con una corrección de errores completa.
+La etapa en la que nos encontramos actualmente es la era de los dispositivos **NISQ (Noisy Intermediate-Scale Quantum)** de decenas a cientos de cúbits sin corrección de errores. Se necesitan muchos avances para lograr la **FTQC (Computación Cuántica Tolerante a Fallos: Fault-Tolerant [Quantum Computing](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))** equipada con una corrección de errores completa.
 
 ---
 
@@ -184,7 +184,7 @@ Veamos áreas de aplicación específicas en las que cada método sobresale.
 
 ### 6.2. Casos de uso del modelo de puertas cuánticas
 - **Simulación de química cuántica**: Simulaciones de alta precisión de estados de energía moleculares y reacciones químicas.
-- **Factorización de enteros (Algoritmo de Shor)**: Algoritmo que factoriza números compuestos enormes en tiempo polinomial. Si esto se vuelve práctico, las infraestructuras de criptografía de clave pública actuales como RSA se romperían, por lo que la transición a la criptografía poscuántica (PQC) es urgente.
+- **Factorización de enteros ([Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))**: Algoritmo que factoriza números compuestos enormes en tiempo polinomial. Si esto se vuelve práctico, las infraestructuras de criptografía de clave pública actuales como RSA se romperían, por lo que la transición a la criptografía poscuántica (PQC) es urgente.
 - **Búsqueda en bases de datos (Algoritmo de Grover)**: Al buscar datos objetivo en una base de datos no ordenada, las computadoras clásicas requieren pasos $O(N)$, pero el algoritmo de Grover puede buscar en pasos $O(\sqrt{N})$.
 
 ### 6.3. Algoritmos híbridos en la era NISQ: VQE y QAOA

@@ -36,7 +36,7 @@ flowchart TD
     B -->|"記号の書き込み"| A
 ```
 
-[チューリング](https://kenji.blog/p/turing/)は、いかなる計算可能な関数も、この **[チューリング](https://kenji.blog/p/turing/)マシン** によって計算可能であることを数学的に示しました。さらに彼は、任意の[チューリング](https://kenji.blog/p/turing/)マシンの構造を記述したデータを読み込み、その動作をシミュレートできる「万能[チューリング](https://kenji.blog/p/turing/)マシン (Universal Turing Machine)」を考案しました。これは、プログラムをデータとしてメモリに格納し実行するという、現代の「ノイマン型コンピュータ」の基本概念そのものです。
+[チューリング](https://kenji.blog/p/turing/)は、いかなる計算可能な関数も、この **[チューリング](https://kenji.blog/p/turing/)マシン** によって計算可能であることを数学的に示しました。さらに彼は、任意の[チューリング](https://kenji.blog/p/turing/)マシンの構造を記述したデータを読み込み、その動作をシミュレートできる「万能[チューリング](https://kenji.blog/p/turing/)マシン (Universal [Turing Machine](https://kenji.blog/p/turing-machine-computability/))」を考案しました。これは、プログラムをデータとしてメモリに格納し実行するという、現代の「ノイマン型コンピュータ」の基本概念そのものです。
 
 ## 3.2 停止問題と不完全性
 

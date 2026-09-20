@@ -11,7 +11,7 @@ tags: ["Quantum", "Error Correction", "Qubit", "2026"]
 
 ## 1. Pendahuluan: Sejauh Mana Komputer Kuantum Berkembang di Tahun 2026?
 
-Pada tahun 2026 saat ini, komputasi kuantum telah membuat pergeseran yang menentukan dari "mimpi teoretis" di masa lalu menjadi "realitas rekayasa". Seiring dengan semakin jelasnya batasan perangkat **NISQ (Noisy Intermediate-Scale Quantum)** yang merupakan arus utama hingga beberapa tahun lalu, lembaga penelitian dan raksasa teknologi di seluruh dunia telah mengalihkan haluan menuju realisasi "Komputasi Kuantum Toleransi Kesalahan (FTQC: Fault-Tolerant Quantum Computing)".
+Pada tahun 2026 saat ini, komputasi kuantum telah membuat pergeseran yang menentukan dari "mimpi teoretis" di masa lalu menjadi "realitas rekayasa". Seiring dengan semakin jelasnya batasan perangkat **NISQ (Noisy Intermediate-Scale Quantum)** yang merupakan arus utama hingga beberapa tahun lalu, lembaga penelitian dan raksasa teknologi di seluruh dunia telah mengalihkan haluan menuju realisasi "Komputasi Kuantum Toleransi Kesalahan (FTQC: Fault-Tolerant [Quantum Computing](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))".
 
 Dalam artikel ini, kita akan menggali lebih dalam posisi komputer kuantum saat ini, sekaligus membahas terobosan terbaru di tahun 2026. Secara khusus, kita akan menjelaskan secara rinci tentang koreksi kesalahan kuantum (kode permukaan), perbedaan antara qubit fisik dan qubit logis, kemajuan komputasi kuantum topologis, serta garis depan metode superkonduktor dan perangkap ion.
 

@@ -60,7 +60,7 @@ $$
 
 Menghitung mundur (mencari logaritma diskrit) kunci privat $k$ dari kunci publik yang dipublikasikan $K$ dan titik dasar $G$ menggunakan komputer klasik akan memakan waktu komputasi eksponensial $\mathcal{O}(\sqrt{p})$ bahkan menggunakan algoritma klasik terbaik seperti metode faktorisasi rho Pollard. Untuk kunci 256-bit, diperlukan sekitar $2^{128}$ operasi, yang merupakan tingkat yang tidak dapat dipecahkan bahkan jika superkomputer saat ini dioperasikan selama miliaran tahun.
 
-### 2.2. Keruntuhan oleh Algoritma Shor (Shor's Algorithm)
+### 2.2. Keruntuhan oleh Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))
 
 Namun, **Algoritma Shor** yang diumumkan oleh Peter Shor pada tahun 1994, menghancurkan premis ini sepenuhnya. Algoritma Shor pada awalnya diusulkan untuk memecahkan masalah faktorisasi prima (dasar kriptografi RSA) dalam waktu polinomial, tetapi algoritma ini juga dapat diterapkan pada masalah logaritma diskrit dan masalah logaritma diskrit kurva eliptik.
 

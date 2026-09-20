@@ -161,7 +161,7 @@ Sin embargo, el cifrado RSA tampoco se queda atrás. Lo que se utiliza en el Int
 Aunque GNFS es el algoritmo más fuerte de la humanidad, se dice que incluso para resolver 270 dígitos (RSA-270), llevaría miles o decenas de miles de años incluso conectando las computadoras de todo el mundo. Por ahora, nuestros datos de LINE o bancos están a salvo.
 
 Sin embargo, ¿qué pasaría si apareciera **"una magia para encontrar $X$ e $Y$ en un instante sin importar cuán grande sea el número"**?
-En realidad, la existencia más cercana a eso es la **"computadora cuántica (Algoritmo de Shor)"** actualmente en desarrollo. Usando las propiedades ondulatorias de la mecánica cuántica, se ha demostrado matemáticamente que se puede ignorar el molesto rompecabezas de recolección de tarjetas y encontrar la respuesta en un solo intento.
+En realidad, la existencia más cercana a eso es la **"computadora cuántica ([Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))"** actualmente en desarrollo. Usando las propiedades ondulatorias de la mecánica cuántica, se ha demostrado matemáticamente que se puede ignorar el molesto rompecabezas de recolección de tarjetas y encontrar la respuesta en un solo intento.
 
 La interminable batalla de ingenio entre los creadores de cifrados (defensa) y los creadores de algoritmos para romperlos (ataque).
 Saber que la "factorización de primos" o el "álgebra" que se aprenden en la secundaria son en realidad armas que luchan ferozmente en la vanguardia de la seguridad mundial, ¿no hace que las clases de matemáticas parezcan un poco más interesantes?

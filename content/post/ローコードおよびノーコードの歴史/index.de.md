@@ -71,7 +71,7 @@ Die Low-Code- / No-Code-Entwicklung ist ein Ansatz, der es ermöglicht, Apps, We
 In den letzten Jahren haben sich cloudbasierte Low-Code- / No-Code-Tools rasant entwickelt.
 
 * **Power Platform (Microsoft)**
-  Eine integrierte Plattform zur Entwicklung und Automatisierung von Geschäftsanwendungen, die "Power Apps", "Power Automate" usw. umfasst. Geschäftsprozesse von Unternehmen können visuell per Drag-and-Drop aufgebaut werden.
+  Eine integrierte Plattform zur Entwicklung und Automatisierung von Geschäftsanwendungen, die "Power Apps", "Power [Automate](https://kenji.blog/de/p/automata-formal-language-theory/)" usw. umfasst. Geschäftsprozesse von Unternehmen können visuell per Drag-and-Drop aufgebaut werden.
 
 * **Salesforce Lightning Platform**
   Die App-Entwicklungsbasis des CRM Salesforce. Geschäfts-Apps können über GUI erstellt werden, und die Integration in andere Salesforce-Dienste ist einfach.

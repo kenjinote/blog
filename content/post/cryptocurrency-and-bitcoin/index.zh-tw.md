@@ -248,7 +248,7 @@ PoW 的另一個重大挑戰是挖礦造成的龐大電力消耗。作為對此�
 ### 量子電腦的威脅與抗量子密碼學
 
 然而，計算複雜度安全性有一個巨大的隱憂。那就是 **量子電腦（Quantum Computer）** 的崛起。
-Peter Shor 於 1994 年發表的「Shor 演算法（Shor's Algorithm）」在數學上證明了，如果使用量子電腦，就可以在多項式時間 $\mathcal{O}(n^3)$ 內解決質因數分解問題（RSA 加密的基礎）與離散對數問題（ECC 的基礎）。
+Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）」在數學上證明了，如果使用量子電腦，就可以在多項式時間 $\mathcal{O}(n^3)$ 內解決質因數分解問題（RSA 加密的基礎）與離散對數問題（ECC 的基礎）。
 
 如果完成具有足夠量子位元（Qubits）且錯誤率低的實用大規模量子電腦，就會產生從比特幣公開金鑰反推私有金鑰的風險。
 對此，比特幣網路的防禦對策如下：

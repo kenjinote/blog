@@ -117,7 +117,7 @@ flowchart TD
    与奥斯卡·摩根斯顿合著。系统论述从零和博弈到合作博弈的巨著。
 3. **《计算机与人脑》 (The Computer and the Brain, 1958)**
    诺伊曼死后出版的未竟遗稿。将人脑的神经网络与数字计算机的机制进行比较的先驱性著作。
-4. **《自复制自动机理论》 (Theory of Self-Reproducing Automata, 1966)**
+4. **《自复制自动机理论》 (Theory of Self-Reproducing [Automata](https://kenji.blog/zh-cn/p/automata-formal-language-theory/), 1966)**
    由阿瑟·伯克斯编纂诺伊曼遗稿出版。
 
 ## 11. 约翰·冯·诺伊曼 简要年表

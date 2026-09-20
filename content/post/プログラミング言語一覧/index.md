@@ -114,7 +114,7 @@ Adaはオブジェクト指向プログラミング言語のひとつ
 前置記法で記述するプログラミング言語
 
 ## ML
-MLは関数型プログラミング言語の一つ
+MLは[関数型プログラミング](https://kenji.blog/p/lambda-calculus-functional-programming/)言語の一つ
 
 ## Prolog
 関係を定義し問題を解くために使われるプログラミング言語

@@ -137,7 +137,7 @@ graph LR
 
 为了进行理想的计算， **量子纠错（Quantum Error Correction）** 是必不可少的。例如，通过“表面码（Surface Code）”等方法，将多个物理量子比特捆绑在一起，构成一个没有错误的“逻辑量子比特（Logical Qubit）”。然而，要构建一个逻辑量子比特，需要数千至数万个物理量子比特，这将带来巨大的开销。
 
-我们目前所处的阶段是 **NISQ（Noisy Intermediate-Scale Quantum：含噪声中型量子）** 时代，设备拥有数十至数百个量子比特但缺乏纠错能力。要实现具备完全纠错能力的 **FTQC（Fault-Tolerant Quantum Computing：容错量子计算）** ，仍需要取得许多突破。
+我们目前所处的阶段是 **NISQ（Noisy Intermediate-Scale Quantum：含噪声中型量子）** 时代，设备拥有数十至数百个量子比特但缺乏纠错能力。要实现具备完全纠错能力的 **FTQC（Fault-Tolerant [Quantum Computing](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)：容错量子计算）** ，仍需要取得许多突破。
 
 ---
 

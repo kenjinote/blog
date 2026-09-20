@@ -10,7 +10,7 @@ slug: "halting-problem"
 
 Cuando programamos, a veces nos preocupamos: "¿Habrá entrado este programa en un bucle infinito en algún lugar?". Si existiera una **herramienta que determinara con certeza si cualquier programa dado va a entrar en un bucle infinito**, el desarrollo y la depuración serían drásticamente más fáciles.
 
-Sin embargo, en el campo de la informática, está matemáticamente demostrado que crear tal herramienta soñada es **"absolutamente imposible"**. Este es el famoso **"Problema de la Parada" (Halting Problem)**.
+Sin embargo, en el campo de la informática, está matemáticamente demostrado que crear tal herramienta soñada es **"absolutamente imposible"**. Este es el famoso **"Problema de la Parada" ([Halting Problem](https://kenji.blog/es/p/turing-machine-computability/))**.
 
 En este artículo, explicaremos de forma clara este problema, demostrado en 1936 por [Alan Turing](https://kenji.blog/es/p/turing/), utilizando ejemplos intuitivos, fórmulas (KaTeX) y diagramas (Mermaid).
 
@@ -150,7 +150,7 @@ Como se puede ver en el diagrama, en el momento en que se da $D$ a sí mismo com
 
 ## La historia de la informática y la máquina de Turing
 
-[Alan Turing](https://kenji.blog/es/p/turing/) planteó y demostró este problema en 1936, una época en la que los ordenadores electrónicos modernos (computadoras) aún no existían. Para definir matemáticamente y de manera estricta "¿qué es el cálculo?", inventó una máquina virtual llamada **"Máquina de Turing" (Turing Machine)**.
+[Alan Turing](https://kenji.blog/es/p/turing/) planteó y demostró este problema en 1936, una época en la que los ordenadores electrónicos modernos (computadoras) aún no existían. Para definir matemáticamente y de manera estricta "¿qué es el cálculo?", inventó una máquina virtual llamada **"Máquina de Turing" ([Turing Machine](https://kenji.blog/es/p/turing-machine-computability/))**.
 
 La Máquina de Turing consta de una cinta infinita, un cabezal que lee y escribe información en la cinta, y una tabla de transición de estados que gestiona el estado de la máquina. Se sabe que por muy complejo que sea un programa moderno, en teoría se puede reducir a esta Máquina de Turing. A esto se le llama la **"Tesis de Church-Turing" (Church-Turing Thesis)**.
 

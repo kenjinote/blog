@@ -10,7 +10,7 @@ tags: ["PowerShell", "Scripting", "Automation", "Windows"]
 description: 'A practical guide to completely automating everyday Windows tasks using PowerShell. Explains specific examples such as backups, log monitoring with Slack notifications, and Git updates and builds for multiple repositories.'
 ---
 
-## Introduction: Why Automate Tasks with PowerShell?
+## Introduction: Why [Automate](https://kenji.blog/en/p/automata-formal-language-theory/) Tasks with PowerShell?
 
 In modern IT infrastructures and development environments, "daily routine tasks" are an unavoidable challenge for users utilizing the Windows OS as a platform. Performing tasks such as file backups, system log monitoring, and updating/building development resources (Git repositories) manually becomes a breeding ground for human error and leads to a waste of valuable time.
 

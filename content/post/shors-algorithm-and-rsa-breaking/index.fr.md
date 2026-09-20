@@ -14,7 +14,7 @@ Dans la société Internet moderne, la cryptographie à clé publique est la bas
 
 Cependant, avec l'avènement de l'"ordinateur quantique", il a été souligné que cette sécurité pourrait être fondamentalement bouleversée. Dans les médias, on voit parfois des gros titres sensationnels comme : "Une fois l'ordinateur quantique achevé, les mots de passe et les cryptages du monde entier seront décryptés en quelques secondes". Est-ce vraiment le cas ?
 
-Cet article se penche sur les mécanismes de la méthode classique de décryptage GNFS (Crible du corps de nombres généralisé) et sur l'algorithme définitif de décryptage utilisant des ordinateurs quantiques, l'"Algorithme de Shor" (Shor's Algorithm). Nous expliquerons de manière simple des concepts avancés tels que la transformée de Fourier quantique et la recherche de période, et examinerons en détail l'état actuel du matériel quantique à l'ère NISQ (Noisy Intermediate-Scale Quantum) ainsi que les obstacles nécessaires pour briser réellement le RSA-2048.
+Cet article se penche sur les mécanismes de la méthode classique de décryptage GNFS (Crible du corps de nombres généralisé) et sur l'algorithme définitif de décryptage utilisant des ordinateurs quantiques, l'"[Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)). Nous expliquerons de manière simple des concepts avancés tels que la transformée de Fourier quantique et la recherche de période, et examinerons en détail l'état actuel du matériel quantique à l'ère NISQ (Noisy Intermediate-Scale Quantum) ainsi que les obstacles nécessaires pour briser réellement le RSA-2048.
 
 ---
 

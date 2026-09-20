@@ -135,7 +135,7 @@ Jika algoritma $L_n[1/4]$, atau algoritma waktu polinomial klasik ada, itu pasti
 
 ## 5. Terobosan Melalui Komputer Kuantum: Algoritma Shor
 
-Sementara komputer klasik sedang berhadapan dengan tembok $L_n[1/3]$, tembok ini telah dihancurkan dengan secara radikal mengubah model komputasinya itu sendiri, melalui **Algoritma Shor (Shor's Algorithm)** yang diterbitkan oleh Peter Shor pada tahun 1994.
+Sementara komputer klasik sedang berhadapan dengan tembok $L_n[1/3]$, tembok ini telah dihancurkan dengan secara radikal mengubah model komputasinya itu sendiri, melalui **Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))** yang diterbitkan oleh Peter Shor pada tahun 1994.
 
 ### 5.1 Dampak Waktu Polinomial Kuantum
 

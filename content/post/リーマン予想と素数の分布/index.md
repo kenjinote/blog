@@ -188,8 +188,8 @@ GRHが真であれば、ミラー・ラビン判定法におけるテスト回�
 
 もし[リーマン](https://kenji.blog/p/riemann/)ゼータ関数の零点の性質を完全に操作できる未知の代数幾何学的手法や、非可換幾何の手法が確立されれば、それが結果として素因数分解の画期的なアルゴリズム（例えば、計算量を多項式時間に落とし込むような古典アルゴリズム）の発見に繋がる可能性は否定できません。その意味で、暗号学者は[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の動向から決して目を離すことができないのです。
 
-### 量子コンピュータとショアのアルゴリズム
-暗号技術にとってより直接的で現実的な脅威は、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の証明ではなく **量子コンピュータ** です。1994年にピーター・ショア（Peter Shor）が発表した「ショアのアルゴリズム」は、十分な性能を持つ量子コンピュータがあれば、素因数分解を多項式時間で解けることを証明しました。これにより、RSA暗号や楕円曲線暗号は根本的に破られることになります。
+### [量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)と[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)
+暗号技術にとってより直接的で現実的な脅威は、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の証明ではなく **[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)** です。1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」は、十分な性能を持つ量子コンピュータがあれば、素因数分解を多項式時間で解けることを証明しました。これにより、RSA暗号や楕円曲線暗号は根本的に破られることになります。
 
 現在、世界中で量子コンピュータでも解読できない「耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy, PQC）」への移行（格子暗号など）が進められています。素数に依存した暗号技術は、ある意味で黄金期を終えようとしているのかもしれませんが、素数そのものの数学的価値が失われることは永遠にありません。
 

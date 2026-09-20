@@ -137,7 +137,7 @@ graph LR
 
 이상적인 계산을 수행하기 위해서는 **양자 오류 정정(Quantum Error Correction)** 이 필수적입니다. 예를 들어 '표면 부호(Surface Code)' 등의 기법에서는 여러 물리 양자 비트를 묶어 하나의 오류 없는 '논리 양자 비트(Logical Qubit)'를 구성합니다. 그러나 하나의 논리 양자 비트를 만들기 위해 수천~수만 개의 물리 양자 비트가 필요하게 되어 막대한 오버헤드가 발생합니다.
 
-현재 우리가 있는 단계는 오류 정정이 없는 수십~수백 양자 비트의 **NISQ(Noisy Intermediate-Scale Quantum)** 디바이스 시대입니다. 완벽한 오류 정정을 갖춘 **FTQC(Fault-Tolerant Quantum Computing: 결함 허용 양자 계산)** 의 실현에는 아직 많은 돌파구가 필요합니다.
+현재 우리가 있는 단계는 오류 정정이 없는 수십~수백 양자 비트의 **NISQ(Noisy Intermediate-Scale Quantum)** 디바이스 시대입니다. 완벽한 오류 정정을 갖춘 **FTQC(Fault-Tolerant [Quantum Computing](https://kenji.blog/ko/p/quantum-computing-shors-algorithm/): 결함 허용 양자 계산)** 의 실현에는 아직 많은 돌파구가 필요합니다.
 
 ---
 

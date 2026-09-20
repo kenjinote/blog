@@ -10,7 +10,7 @@ tags: ["Quantum Computing", "Google", "IBM", "Sycamore", "FTQC"]
 description: "A detailed explanation ranging from the definition of quantum supremacy, the 2019 demonstration experiment by Google's Sycamore processor, IBM's rebuttal and approach, to the latest trends towards error correction and FTQC (Fault-Tolerant Quantum Computing)."
 ---
 
-## 1. Introduction: The Dawn of Quantum Computing and "Quantum Supremacy"
+## 1. Introduction: The Dawn of [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/) and "Quantum Supremacy"
 
 Quantum computing has the potential to solve complex problems that cannot be solved within a realistic timeframe by classical computers (the PCs and supercomputers we use daily) by applying quantum mechanics, the fundamental principle of physics, to information processing. For a long time, this field was primarily focused on theoretical research, but in recent years, rapid hardware advancements have intensified the race toward practical application.
 
@@ -158,7 +158,7 @@ This means they have stepped into the region where $p < p_{th}$, showing that th
 
 ---
 
-## 6. Roadmap and Prospects for FTQC (Fault-Tolerant Quantum Computing)
+## 6. Roadmap and Prospects for FTQC (Fault-Tolerant [Quantum Computing](https://kenji.blog/en/p/quantum-computing-shors-algorithm/))
 
 While adopting different architectures and approaches, Google and IBM are engaged in fierce development competition towards the ultimate goal of FTQC (Fault-Tolerant Quantum Computing).
 

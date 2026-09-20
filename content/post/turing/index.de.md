@@ -38,7 +38,7 @@ flowchart TD
 
 Turing zeigte mathematisch, dass jede berechenbare Funktion von dieser **Turingmaschine** berechnet werden konnte. Darüber hinaus entwarf er die "Universelle Turingmaschine", die Daten lesen konnte, welche die Struktur jeder beliebigen Turingmaschine beschrieben, und deren Betrieb simulieren konnte. Genau das ist das Grundkonzept des modernen Computers mit "Von-Neumann-Architektur" – ein Programm als Daten im Speicher abzulegen und auszuführen.
 
-## 3.2 Das Halteproblem und die Unvollständigkeit
+## 3.2 Das [Halteproblem](https://kenji.blog/de/p/turing-machine-computability/) und die Unvollständigkeit
 
 Turing bewies, dass es keinen allgemeinen Algorithmus gibt, um im Voraus zu bestimmen, ob ein gegebenes Programm für eine gegebene Eingabe schließlich anhalten wird, was bedeutet, dass das **Halteproblem** unentscheidbar ist.
 

@@ -126,7 +126,7 @@ El verdadero valor de las computadoras cuánticas se desata únicamente en **"pr
 
 ### En lo que destacan las computadoras cuánticas (Aplicaciones asesinas)
 
-#### 1. Factorización y descifrado de códigos (Algoritmo de Shor)
+#### 1. Factorización y descifrado de códigos ([Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))
 Actualmente, el "cifrado RSA", que protege las comunicaciones seguras en Internet (pagos con tarjeta de crédito, transmisión de información personal, etc.), se basa en la premisa de que "la factorización de números gigantes es prácticamente imposible (toma una cantidad asombrosa de tiempo) para las computadoras clásicas".
 Sin embargo, al utilizar el "algoritmo de Shor" descubierto por el matemático Peter Shor en 1994, las computadoras cuánticas pueden resolver esto a una velocidad dramática (tiempo polinómico) al explotar hábilmente la interferencia. Por este motivo, existe el riesgo de que el actual sistema criptográfico colapse en el futuro, y los bancos centrales y las agencias gubernamentales de todo el mundo se apresuran a migrar a la "Criptografía Post-Cuántica" (Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy).
 

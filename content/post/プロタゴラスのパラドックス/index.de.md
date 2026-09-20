@@ -88,6 +88,6 @@ Mit anderen Worten: Wenn man versucht, das Paradoxon "in einem einzigen Prozess 
 
 Das Paradoxon des Protagoras hat dieselbe **selbstreferenzielle Struktur** wie das "Lügner-Paradoxon ('Dieser Satz ist falsch')" oder das "Russellsche Paradoxon". Eine bestimmte Aussage (der Ausgang des Prozesses) beeinflusst die Bedingungen (Erfüllung des Vertrags), die ihren eigenen Wahrheitswert bestimmen.
 
-Diese Art von Paradoxon steht in engem Zusammenhang mit Problemen, die grundlegende Grenzen von Logik und Berechnung aufzeigen, wie dem "Halteproblem" in der modernen Informatik (es kann kein Programm geschrieben werden, das entscheidet, ob ein bestimmtes Programm anhält oder nicht) oder dem Unvollständigkeitssatz von Gödel.
+Diese Art von Paradoxon steht in engem Zusammenhang mit Problemen, die grundlegende Grenzen von Logik und Berechnung aufzeigen, wie dem "[Halteproblem](https://kenji.blog/de/p/turing-machine-computability/)" in der modernen Informatik (es kann kein Programm geschrieben werden, das entscheidet, ob ein bestimmtes Programm anhält oder nicht) oder dem Unvollständigkeitssatz von Gödel.
 
 Das Paradoxon des Protagoras ist eine 2400 Jahre alte Warnung, die uns lehrt, dass von Menschen geschaffene Regelsysteme (Gesetze und Verträge) durch geschickte Selbstreferenz von innen heraus zusammenbrechen können.

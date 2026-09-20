@@ -137,7 +137,7 @@ Die größte Herausforderung des Quantengatter-Modells ist die "Dekohärenz", be
 
 Für ideale Berechnungen ist eine **Quantenfehlerkorrektur (Quantum Error Correction)** unerlässlich. Bei Methoden wie dem "Surface Code" werden beispielsweise mehrere physikalische Qubits gebündelt, um ein fehlerfreies "logisches Qubit" (Logical Qubit) zu bilden. Um jedoch ein einziges logisches Qubit zu erzeugen, werden Tausende bis Zehntausende physikalische Qubits benötigt, was zu einem enormen Overhead führt.
 
-Wir befinden uns derzeit in der Ära der **NISQ (Noisy Intermediate-Scale Quantum)** Geräte, die über Dutzende bis Hunderte von Qubits ohne Fehlerkorrektur verfügen. Die Realisierung von **FTQC (Fault-Tolerant Quantum Computing)**, das vollständige Fehlerkorrektur bietet, erfordert noch viele Durchbrüche.
+Wir befinden uns derzeit in der Ära der **NISQ (Noisy Intermediate-Scale Quantum)** Geräte, die über Dutzende bis Hunderte von Qubits ohne Fehlerkorrektur verfügen. Die Realisierung von **FTQC (Fault-Tolerant [Quantum Computing](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))**, das vollständige Fehlerkorrektur bietet, erfordert noch viele Durchbrüche.
 
 ---
 
@@ -184,7 +184,7 @@ Betrachten wir die spezifischen Anwendungsbereiche, in denen jede der beiden Met
 
 ### 6.2. Anwendungsfälle des Quantengatter-Modells
 - **Quantenchemiesimulation**: Hochpräzise Simulation von molekularen Energiezuständen und chemischen Reaktionen.
-- **Primfaktorzerlegung (Shor-Algorithmus)**: Ein Algorithmus zur Zerlegung riesiger zusammengesetzter Zahlen in Polynomzeit. Wenn dieser praxistauglich wird, könnte er heutige Public-Key-Infrastrukturen wie RSA brechen, weshalb der Übergang zur Post-Quanten-Kryptographie (PQC) dringlich ist.
+- **Primfaktorzerlegung ([Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))**: Ein Algorithmus zur Zerlegung riesiger zusammengesetzter Zahlen in Polynomzeit. Wenn dieser praxistauglich wird, könnte er heutige Public-Key-Infrastrukturen wie RSA brechen, weshalb der Übergang zur Post-Quanten-Kryptographie (PQC) dringlich ist.
 - **Datenbanksuche (Grover-Algorithmus)**: Bei der Suche nach bestimmten Daten in einer unsortierten Datenbank benötigen klassische Computer $O(N)$ Schritte, während der Grover-Algorithmus dies in $O(\sqrt{N})$ Schritten schafft.
 
 ### 6.3. Hybrid-Algorithmen der NISQ-Ära: VQE und QAOA

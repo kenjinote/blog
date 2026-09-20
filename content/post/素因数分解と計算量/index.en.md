@@ -234,15 +234,15 @@ This means that although it hasn't reached polynomial time ($\gamma=0$), the com
 
 As we have seen so far, humanity has continued to challenge the wall of prime factorization by bringing together mathematical wisdom and advancing algorithms from Trial Division to GNFS. However, even with GNFS, prime factorization still cannot be solved in "polynomial time" on classical computers.
 
-## The P vs NP Problem and the Position of Prime Factorization
+## The [P vs NP](https://kenji.blog/en/p/p-vs-np-problem/) Problem and the Position of Prime Factorization
 
 One of the greatest unsolved problems in computer science is the "P = NP conjecture."
-The prime factorization problem belongs to NP (the class of problems whose correctness can be verified in polynomial time if an answer is given), but it has not been proven to be NP-complete (the class of the most difficult problems in NP).
+The prime factorization problem belongs to NP (the class of problems whose correctness can be verified in polynomial time if an answer is given), but it has not been proven to be [NP-complet](https://kenji.blog/en/p/p-vs-np-problem/)e (the class of the most difficult problems in NP).
 Also, whether it belongs to P (the class of problems that can be solved in polynomial time) (i.e., whether a polynomial time algorithm exists) remains unsolved.
 
 Many researchers conjecture that prime factorization belongs to an intermediate class that is neither P nor NP-complete (NP-intermediate). If an algorithm that solves prime factorization on a classical computer in polynomial time (for example, $\mathcal{O}(n^3)$) is discovered, it will be a huge incident that destroys cryptographic systems all over the world, but to date, no such algorithm has been discovered. It is estimated that breaking a 2048-bit RSA cipher would take longer than the lifespan of the universe, even if the performance of classical computers improves according to Moore's Law.
 
-## Quantum Computers as a "Game Changer": Shor's Algorithm
+## Quantum Computers as a "Game Changer": [Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)
 
 RSA cryptography is robust on classical computers, but the situation changes entirely when "quantum computers," which operate on entirely different principles, are put to practical use.
 **"Shor's algorithm"**, published by Peter Shor in 1994, is an algorithm that can shockingly solve prime factorization in **polynomial time $\mathcal{O}(n^3)$** (more strictly, about $\mathcal{O}(n^2 \log n \log \log n)$ in terms of the number of quantum gates) by utilizing the Quantum Fourier Transform.

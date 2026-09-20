@@ -137,7 +137,7 @@ Le plus grand défi du modèle à portes quantiques est la "décohérence", où 
 
 Pour effectuer des calculs idéaux, la **correction d'erreurs quantiques (Quantum Error Correction)** est essentielle. Par exemple, avec des méthodes comme le "Code de surface (Surface Code)", plusieurs qubits physiques sont regroupés pour former un seul "qubit logique (Logical Qubit)" sans erreur. Cependant, la création d'un qubit logique nécessite des milliers à des dizaines de milliers de qubits physiques, ce qui entraîne une énorme surcharge.
 
-L'étape à laquelle nous nous trouvons actuellement est l'ère des dispositifs **NISQ (Noisy Intermediate-Scale Quantum)** de plusieurs dizaines à centaines de qubits sans correction d'erreurs. La réalisation d'un **FTQC (Fault-Tolerant Quantum Computing : Calcul quantique tolérant aux pannes)** avec une correction d'erreurs complète nécessite encore de nombreuses percées.
+L'étape à laquelle nous nous trouvons actuellement est l'ère des dispositifs **NISQ (Noisy Intermediate-Scale Quantum)** de plusieurs dizaines à centaines de qubits sans correction d'erreurs. La réalisation d'un **FTQC (Fault-Tolerant [Quantum Computing](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/) : Calcul quantique tolérant aux pannes)** avec une correction d'erreurs complète nécessite encore de nombreuses percées.
 
 ---
 
@@ -184,7 +184,7 @@ Examinons les domaines d'application spécifiques dans lesquels chaque méthode 
 
 ### 6.2. Cas d'utilisation du modèle à portes quantiques
 - **Simulation de chimie quantique** : Simule les états énergétiques des molécules et les réactions chimiques avec une grande précision.
-- **Factorisation en nombres premiers (Algorithme de Shor)** : Un algorithme qui factorise d'énormes nombres composés en temps polynomial. Lorsque cela sera mis en pratique, les infrastructures de cryptographie à clé publique actuelles, telles que le chiffrement RSA, seront compromises, rendant la transition vers la cryptographie post-quantique (PQC) urgente.
+- **Factorisation en nombres premiers ([Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/))** : Un algorithme qui factorise d'énormes nombres composés en temps polynomial. Lorsque cela sera mis en pratique, les infrastructures de cryptographie à clé publique actuelles, telles que le chiffrement RSA, seront compromises, rendant la transition vers la cryptographie post-quantique (PQC) urgente.
 - **Recherche dans une base de données (Algorithme de Grover)** : Lors de la recherche de données cibles dans une base de données non triée, les ordinateurs classiques nécessitent $O(N)$ étapes, mais l'algorithme de Grover peut effectuer la recherche en $O(\sqrt{N})$ étapes.
 
 ### 6.3. Algorithmes hybrides de l'ère NISQ : VQE et QAOA

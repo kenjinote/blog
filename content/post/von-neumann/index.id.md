@@ -86,7 +86,7 @@ flowchart TD
 
 Von Neumann berpartisipasi dalam proyek pengembangan EDVAC di Universitas Pennsylvania dan merangkum konsep terobosan ini dalam "Draf Pertama Laporan tentang EDVAC". Hal ini memungkinkan terwujudnya komputer tujuan umum yang dapat melakukan berbagai perhitungan hanya dengan menulis ulang perangkat lunak (program) tanpa harus menyambungkan kembali perangkat keras secara fisik. Masyarakat TI modern dibangun di atas fondasi yang ia bangun.
 
-## 7. Automata Seluler dan Teori Mesin yang Berkembang Biak Sendiri
+## 7. [Automata](https://kenji.blog/id/p/automata-formal-language-theory/) Seluler dan Teori Mesin yang Berkembang Biak Sendiri
 
 Pada tahun-tahun terakhirnya, von Neumann menaruh minat yang kuat dalam memodelkan secara matematis mekanisme reproduksi biologis. Atas saran rekannya Stanislaw Ulam, ia merancang konsep **automata seluler**, di mana ruang dibagi menjadi kisi, dan setiap sel kisi mengubah keadaannya menurut aturan tertentu.
 
@@ -117,7 +117,7 @@ Buku-buku dan makalah yang ditinggalkan von Neumann semasa hidupnya beragam, nam
    Ditulis bersama Oskar Morgenstern. Mahakarya yang secara sistematis membahas segala hal mulai dari permainan jumlah-nol hingga permainan kooperatif.
 3. **Komputer dan Otak (1958)**
    Naskah yang belum selesai diterbitkan secara anumerta. Karya perintis yang membandingkan jaringan saraf otak manusia dengan mekanisme komputer digital.
-4. **Teori Automata yang Berkembang Biak Sendiri (1966)**
+4. **Teori [Automata](https://kenji.blog/id/p/automata-formal-language-theory/) yang Berkembang Biak Sendiri (1966)**
    Disusun dan diterbitkan dari naskah anumerta von Neumann oleh Arthur Burks.
 
 ## 11. John von Neumann: Kronologi Singkat

@@ -234,10 +234,10 @@ Cela signifie que bien qu'on n'atteigne pas le temps polynomial ($\gamma=0$), la
 
 Comme nous l'avons vu, l'humanité a mobilisé la sagesse mathématique pour repousser les limites de la factorisation en faisant évoluer les algorithmes, de la méthode des divisions successives au GNFS. Cependant, même avec le GNFS, la factorisation n'a toujours pas pu être résolue en « temps polynomial » sur des ordinateurs classiques.
 
-## Le problème P vs NP et la position de la factorisation en nombres premiers
+## Le problème [P vs NP](https://kenji.blog/fr/p/p-vs-np-problem/) et la position de la factorisation en nombres premiers
 
 L'un des plus grands problèmes non résolus de l'informatique est la « conjecture P = NP ».
-Le problème de la factorisation appartient à NP (la classe des problèmes dont la solution, si elle est donnée, peut être vérifiée en temps polynomial), mais il n'a pas été prouvé qu'il soit NP-complet (la classe des problèmes les plus difficiles dans NP).
+Le problème de la factorisation appartient à NP (la classe des problèmes dont la solution, si elle est donnée, peut être vérifiée en temps polynomial), mais il n'a pas été prouvé qu'il soit [NP-complet](https://kenji.blog/fr/p/p-vs-np-problem/) (la classe des problèmes les plus difficiles dans NP).
 De plus, il n'est pas encore prouvé s'il appartient à P (la classe des problèmes solvables en temps polynomial), c'est-à-dire s'il existe un algorithme en temps polynomial pour le résoudre.
 
 De nombreux chercheurs supposent que la factorisation appartient à une classe intermédiaire entre P et NP-complet (NP-intermédiaire). Si un algorithme résolvant la factorisation en temps polynomial sur un ordinateur classique (par exemple, $\mathcal{O}(n^3)$) venait à être découvert, ce serait un événement majeur qui ferait s'effondrer les systèmes cryptographiques du monde entier ; cependant, jusqu'à présent, aucun algorithme de ce type n'a été trouvé. Il est estimé que le déchiffrement d'une clé RSA de 2048 bits prendrait plus de temps que la durée de vie de l'univers, même si les performances des ordinateurs classiques continuaient à s'améliorer selon la loi de Moore.

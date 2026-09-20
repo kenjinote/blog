@@ -27,7 +27,7 @@ Here, $X$ is a random variable of topics obtained from an information source, an
 
 To keep entropy high, you intentionally need to incorporate information sources you don't usually encounter as noise, leveling the probability distribution of encountering unknown topics. This is the biggest reason to automate input from diverse information sources.
 
-## 2. Building an Automated Information Gathering Pipeline: Hacker News & Lobsters API
+## 2. Building an [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Information Gathering Pipeline: Hacker News & Lobsters API
 
 To obtain high-quality input, it is effective to extract trend information from high-quality engineer communities with low noise. Hacker News (operated by Y Combinator) and Lobsters are optimal places where deep technical discussions take place. However, patrolling these sites every day takes time and consumes cognitive resources.
 

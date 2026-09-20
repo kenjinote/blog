@@ -234,10 +234,10 @@ Ini berarti, meskipun belum mencapai waktu polinomial ($\gamma=0$), kompleksitas
 
 Seperti yang telah kita lihat, umat manusia telah mengerahkan kebijaksanaan matematika untuk terus menantang batasan faktorisasi prima dengan mengembangkan algoritma dari pembagian percobaan hingga GNFS. Namun, bahkan dengan menggunakan GNFS, faktorisasi prima masih tidak dapat diselesaikan dalam "waktu polinomial" pada komputer klasik.
 
-## Masalah P vs NP dan Posisi Faktorisasi Prima
+## Masalah [P vs NP](https://kenji.blog/id/p/p-vs-np-problem/) dan Posisi Faktorisasi Prima
 
 Masalah yang belum terpecahkan terbesar dalam ilmu komputer adalah "Masalah P = NP".
-Masalah faktorisasi prima masuk dalam kelas NP (kelas masalah di mana jika diberikan jawaban, kebenarannya dapat diverifikasi dalam waktu polinomial), tetapi belum terbukti sebagai NP-complete (kelas masalah yang paling sulit di dalam NP).
+Masalah faktorisasi prima masuk dalam kelas NP (kelas masalah di mana jika diberikan jawaban, kebenarannya dapat diverifikasi dalam waktu polinomial), tetapi belum terbukti sebagai [NP-complet](https://kenji.blog/id/p/p-vs-np-problem/)e (kelas masalah yang paling sulit di dalam NP).
 Selain itu, masih belum terpecahkan juga apakah masalah tersebut masuk ke dalam kelas P (kelas masalah yang dapat diselesaikan dalam waktu polinomial) atau tidak (yaitu apakah ada algoritma waktu polinomial).
 
 Banyak peneliti memperkirakan bahwa faktorisasi prima masuk ke dalam kelas perantara antara P dan NP-complete (NP-intermediate). Jika suatu algoritma yang dapat menyelesaikan faktorisasi prima pada komputer klasik dalam waktu polinomial (misalnya, $\mathcal{O}(n^3)$) ditemukan, hal itu akan menjadi peristiwa besar yang menghancurkan sistem kriptografi di seluruh dunia. Namun, hingga saat ini, belum ada algoritma semacam itu yang ditemukan. Untuk memecahkan kriptografi RSA 2048 bit, diperkirakan butuh waktu yang lebih lama dari umur alam semesta, bahkan jika kinerja komputer klasik meningkat sesuai dengan Hukum Moore.

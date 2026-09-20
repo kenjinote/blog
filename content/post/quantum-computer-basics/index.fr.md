@@ -110,7 +110,7 @@ Les ordinateurs quantiques ne montrent leur véritable valeur que pour **« les 
 
 ### Ce pour quoi les ordinateurs quantiques sont doués (Applications tueuses)
 
-#### 1. Factorisation en nombres premiers et cryptanalyse (Algorithme de Shor)
+#### 1. Factorisation en nombres premiers et cryptanalyse ([Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/))
 Actuellement, les communications sécurisées sur Internet (telles que les paiements par carte de crédit et la transmission d'informations personnelles) sont protégées par le « cryptage RSA », etc., qui repose sur l'hypothèse que « la factorisation en nombres premiers de très grands nombres est pratiquement impossible (prend énormément de temps) pour un ordinateur classique ».
 Cependant, en utilisant l'« algorithme de Shor » découvert par le mathématicien Peter Shor en 1994, les ordinateurs quantiques peuvent exploiter intelligemment les interférences pour le résoudre à une vitesse spectaculaire (temps polynomial). En conséquence, il existe un risque que le système cryptographique actuel s'effondre à l'avenir, et les banques centrales et les agences gouvernementales du monde entier se précipitent pour faire la transition vers la « cryptographie post-quantique » (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy).
 

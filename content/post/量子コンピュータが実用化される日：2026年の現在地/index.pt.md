@@ -11,7 +11,7 @@ tags: ["Quântico", "Correção de Erros", "Qubit", "2026"]
 
 ## 1. Introdução: Até onde chegaram os computadores quânticos em 2026?
 
-Atualmente, em 2026, a computação quântica passou por uma mudança decisiva, deixando de ser um "sonho teórico" do passado para se tornar uma "realidade de engenharia". À medida que os limites dos dispositivos **NISQ (Noisy Intermediate-Scale Quantum)**, que eram predominantes até poucos anos atrás, tornaram-se claros, instituições de pesquisa e gigantes da tecnologia em todo o mundo mudaram o rumo em direção à realização da "Computação Quântica Tolerante a Falhas (FTQC: Fault-Tolerant Quantum Computing)".
+Atualmente, em 2026, a computação quântica passou por uma mudança decisiva, deixando de ser um "sonho teórico" do passado para se tornar uma "realidade de engenharia". À medida que os limites dos dispositivos **NISQ (Noisy Intermediate-Scale Quantum)**, que eram predominantes até poucos anos atrás, tornaram-se claros, instituições de pesquisa e gigantes da tecnologia em todo o mundo mudaram o rumo em direção à realização da "Computação Quântica Tolerante a Falhas (FTQC: Fault-Tolerant [Quantum Computing](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))".
 
 Neste artigo, aprofundaremos na situação atual dos computadores quânticos, entrelaçando as descobertas mais recentes de 2026. Em particular, detalharemos a correção de erros quânticos (código de superfície), a diferença entre qubits físicos e lógicos, o avanço da computação quântica topológica e a vanguarda das abordagens de supercondutores e armadilhas de íons.
 

@@ -248,7 +248,7 @@ Dado que $p \approx 2^{256}$ en secp256k1 de Bitcoin, el descifrado requiere alr
 ### La Amenaza de las Computadoras Cuánticas y la Criptografía Poscúantica
 
 Sin embargo, hay una gran preocupación con la seguridad computacional. Ese es el surgimiento de las **computadoras cuánticas (Quantum Computers)**.
-En 1994, Peter Shor publicó el "Algoritmo de Shor" (Shor's Algorithm), que demostró matemáticamente que las computadoras cuánticas pueden resolver el problema de factorización de enteros (la base del cifrado RSA) y el problema del logaritmo discreto (la base de ECC) en tiempo polinomial $\mathcal{O}(n^3)$.
+En 1994, Peter Shor publicó el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)), que demostró matemáticamente que las computadoras cuánticas pueden resolver el problema de factorización de enteros (la base del cifrado RSA) y el problema del logaritmo discreto (la base de ECC) en tiempo polinomial $\mathcal{O}(n^3)$.
 
 Si se completan computadoras cuánticas prácticas a gran escala con suficientes qubits y bajas tasas de error, existe el riesgo de que la clave privada pueda ser calculada inversamente a partir de la clave pública de Bitcoin.
 Las medidas de defensa de la red de Bitcoin contra esto son las siguientes:

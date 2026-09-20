@@ -138,7 +138,7 @@ Karena namanya yang dramatis, [Teorema Ketidaklengkapan Gödel](https://kenji.bl
 
 Dampak dari teorema Gödel tidak terbatas pada batas matematika. Pada tahun 1936, matematikawan Inggris [Alan Turing](https://kenji.blog/id/p/turing/) mengganti konsep "sistem formal" Gödel dengan proses komputasi fisik, dan merancang model komputer virtual yang disebut "Mesin Turing".
 
-Turing menerapkan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/) ke dalam dunia komputer dan membuktikan bahwa "tidak ada algoritma universal untuk menentukan sebelumnya apakah program komputer mana pun akan berjalan selamanya tanpa akhir atau tidak". Inilah **Masalah Penghentian** (Halting Problem) yang terkenal.
+Turing menerapkan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/) ke dalam dunia komputer dan membuktikan bahwa "tidak ada algoritma universal untuk menentukan sebelumnya apakah program komputer mana pun akan berjalan selamanya tanpa akhir atau tidak". Inilah **Masalah Penghentian** ([Halting Problem](https://kenji.blog/id/p/turing-machine-computability/)) yang terkenal.
 
 ```mermaid
 graph TD

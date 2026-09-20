@@ -150,7 +150,7 @@ Seperti yang dapat dilihat dari diagram, pada saat $D$ itu sendiri diberikan seb
 
 ## Sejarah Komputer dan Mesin Turing
 
-[Alan Turing](https://kenji.blog/id/p/turing/) mengajukan dan membuktikan masalah ini pada tahun 1936, di era ketika komputer elektronik modern seperti sekarang belum ada. Untuk mendefinisikan secara matematis dan ketat "apa itu komputasi?", ia merancang sebuah mesin virtual yang disebut **"Mesin Turing (Turing Machine)"**.
+[Alan Turing](https://kenji.blog/id/p/turing/) mengajukan dan membuktikan masalah ini pada tahun 1936, di era ketika komputer elektronik modern seperti sekarang belum ada. Untuk mendefinisikan secara matematis dan ketat "apa itu komputasi?", ia merancang sebuah mesin virtual yang disebut **"Mesin Turing ([Turing Machine](https://kenji.blog/id/p/turing-machine-computability/))"**.
 
 Mesin Turing terdiri dari sebuah pita yang tak terbatas panjangnya, sebuah head yang dapat membaca dan menulis informasi pada pita tersebut, serta tabel transisi status yang mengatur status mesin. Telah diketahui bahwa sekompleks apa pun program modern, secara teori program tersebut dapat disederhanakan ke dalam bentuk Mesin Turing. Hal ini disebut **"Tesis Church-Turing (Church-Turing Thesis)"**.
 

@@ -137,7 +137,7 @@ graph LR
 
 為了進行理想的運算， **量子錯誤更正（Quantum Error Correction）** 是不可或缺的。舉例來說，在「表面碼（Surface Code）」等方法中，會將多個物理量子位元綑綁在一起，構成一個無錯誤的「邏輯量子位元（Logical Qubit）」。然而，為了一個邏輯量子位元，需要數千到數萬個物理量子位元，這會產生龐大的額外開銷（Overhead）。
 
-我們目前所處的階段，是尚未具備錯誤更正能力，僅擁有數十到數百個量子位元的 **NISQ（Noisy Intermediate-Scale Quantum，有雜訊的中等規模量子）** 設備時代。要實現具備完整錯誤更正能力的 **FTQC（Fault-Tolerant Quantum Computing：容錯量子運算）** ，還需要許多技術上的突破。
+我們目前所處的階段，是尚未具備錯誤更正能力，僅擁有數十到數百個量子位元的 **NISQ（Noisy Intermediate-Scale Quantum，有雜訊的中等規模量子）** 設備時代。要實現具備完整錯誤更正能力的 **FTQC（Fault-Tolerant [Quantum Computing](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)：容錯量子運算）** ，還需要許多技術上的突破。
 
 ---
 

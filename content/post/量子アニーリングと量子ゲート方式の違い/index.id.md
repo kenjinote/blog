@@ -137,7 +137,7 @@ Tantangan terbesar dari Model Quantum Gate adalah "Dekoherensi", di mana keadaan
 
 Untuk melakukan komputasi ideal, **Koreksi Kesalahan Kuantum (Quantum Error Correction)** sangatlah penting. Misalnya, dalam metode seperti "Surface Code", beberapa qubit fisik digabungkan untuk membentuk satu "Qubit Logis" (Logical Qubit) yang bebas kesalahan. Namun, untuk membuat satu qubit logis, diperlukan ribuan hingga puluhan ribu qubit fisik, sehingga menimbulkan overhead yang luar biasa.
 
-Saat ini kita berada di era perangkat **NISQ (Noisy Intermediate-Scale Quantum)** yang memiliki puluhan hingga ratusan qubit tanpa koreksi kesalahan. Banyak terobosan masih dibutuhkan untuk mewujudkan **FTQC (Fault-Tolerant Quantum Computing)** dengan koreksi kesalahan penuh.
+Saat ini kita berada di era perangkat **NISQ (Noisy Intermediate-Scale Quantum)** yang memiliki puluhan hingga ratusan qubit tanpa koreksi kesalahan. Banyak terobosan masih dibutuhkan untuk mewujudkan **FTQC (Fault-Tolerant [Quantum Computing](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))** dengan koreksi kesalahan penuh.
 
 ---
 

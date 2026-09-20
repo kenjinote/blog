@@ -88,7 +88,7 @@ $$ \begin{cases} 3s_1 + 4s_2 + 2s_3 \equiv 12 \pmod{17} \\ 1s_1 + 9s_2 + 5s_3 \e
 
 $$ \begin{cases} 3s_1 + 4s_2 + 2s_3 + e_1 \equiv 13 \pmod{17} \\ 1s_1 + 9s_2 + 5s_3 + e_2 \equiv 7 \pmod{17} \\ \vdots \end{cases} $$
 
-この誤差 $e$ が加わるだけで、秘密の変数ベクトル $\vec{s}$ を見つけ出す問題は、現在のスーパーコンピュータや量子コンピュータを用いても解読が困難なNP困難な問題へと変貌します。これがLWE問題です。
+この誤差 $e$ が加わるだけで、秘密の変数ベクトル $\vec{s}$ を見つけ出す問題は、現在のスーパーコンピュータや[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)を用いても解読が困難な[NP困難](https://kenji.blog/p/p-vs-np-problem/)な問題へと変貌します。これがLWE問題です。
 
 ### Ring-LWE問題（RLWE）
 標準のLWE問題は行列演算を含むため、鍵のサイズが非常に大きく（ギガバイト単位になることも）、計算効率も悪いという問題がありました。これを解決するために導入されたのが、多項式環上の演算を用いる **Ring-LWE (RLWE) 問題** です。

@@ -11,7 +11,7 @@ tags: ["Quantum", "Error Correction", "Qubit", "2026"]
 
 ## 1. 시작하며: 2026년, 양자 컴퓨터는 어디까지 왔는가
 
-2026년 현재, 양자 컴퓨팅은 과거의 '이론상의 꿈'에서 '공학적인 현실'로 결정적인 전환을 이루었습니다. 수년 전까지 주류였던 **NISQ(Noisy Intermediate-Scale Quantum)** 디바이스의 한계가 명확해짐에 따라, 전 세계의 연구 기관과 거대 기술 기업들은 '오류 내성 양자 컴퓨팅(FTQC: Fault-Tolerant Quantum Computing)'의 실현으로 방향을 틀었습니다.
+2026년 현재, 양자 컴퓨팅은 과거의 '이론상의 꿈'에서 '공학적인 현실'로 결정적인 전환을 이루었습니다. 수년 전까지 주류였던 **NISQ(Noisy Intermediate-Scale Quantum)** 디바이스의 한계가 명확해짐에 따라, 전 세계의 연구 기관과 거대 기술 기업들은 '오류 내성 양자 컴퓨팅(FTQC: Fault-Tolerant [Quantum Computing](https://kenji.blog/ko/p/quantum-computing-shors-algorithm/))'의 실현으로 방향을 틀었습니다.
 
 이 글에서는 2026년의 최신 돌파구를 교차하며, 양자 컴퓨터의 현재 위치를 깊이 파고듭니다. 특히, 양자 오류 정정(표면 부호), 물리 큐비트와 논리 큐비트의 차이, 위상 양자 컴퓨팅의 진전, 그리고 초전도·이온 트랩 방식의 최전선에 대해 자세히 설명합니다.
 

@@ -32,7 +32,7 @@ C++という言語が持つ最大の魅力であり、同時に最大の魔境�
 
 ## 2. 古典的テンプレートメタプログラミング (C++98 / C++03)
 
-初期のテンプレートメタプログラミングは、構造体（`struct`）とテンプレートの特殊化（Template Specialization）を利用した純粋な関数型プログラミングのスタイルを取っていました。
+初期のテンプレートメタプログラミングは、構造体（`struct`）とテンプレートの特殊化（Template Specialization）を利用した純粋な[関数型プログラミング](https://kenji.blog/p/lambda-calculus-functional-programming/)のスタイルを取っていました。
 
 ### 2.1 階乗（Factorial）の計算
 

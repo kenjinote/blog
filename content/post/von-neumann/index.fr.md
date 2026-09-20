@@ -86,7 +86,7 @@ flowchart TD
 
 Von Neumann a participé au projet de développement de l'EDVAC à l'Université de Pennsylvanie et a résumé ce concept révolutionnaire dans la « Première ébauche d'un rapport sur l'EDVAC ». Cela a permis de réaliser un ordinateur à usage général qui peut effectuer divers calculs simplement en réécrivant le logiciel (programme) sans avoir à recâbler physiquement le matériel. La société informatique moderne repose sur ces fondations qu'il a établies.
 
-## 7. Automates cellulaires et théorie des machines auto-réplicatives
+## 7. [Automate](https://kenji.blog/fr/p/automata-formal-language-theory/)s cellulaires et théorie des machines auto-réplicatives
 
 Dans ses dernières années, von Neumann s'est beaucoup intéressé à la modélisation mathématique des mécanismes d'auto-reproduction biologique. Avec les conseils de son collègue Stanislaw Ulam, il a conçu le concept d' **automates cellulaires**, dans lequel l'espace est divisé en une grille, et chaque cellule de la grille change d'état selon une certaine règle.
 

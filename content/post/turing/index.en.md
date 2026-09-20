@@ -10,7 +10,7 @@ tags: ["Alan Turing", "Turing Machine", "Enigma", "Halting Problem", "Morphogene
 
 # 1. Introduction
 
-Alan Mathison Turing was a British mathematician who laid the foundations of modern computer science, artificial intelligence, and mathematical biology. The **Turing Machine** he conceived became the theoretical prototype for every computer we use today. In this article, we will explore in detail Turing's turbulent life and the great mathematical and scientific achievements he left behind. Without his existence, our modern digital society would either be completely different or its arrival would have been delayed by decades.
+Alan Mathison Turing was a British mathematician who laid the foundations of modern computer science, artificial intelligence, and mathematical biology. The **[Turing Machine](https://kenji.blog/en/p/turing-machine-computability/)** he conceived became the theoretical prototype for every computer we use today. In this article, we will explore in detail Turing's turbulent life and the great mathematical and scientific achievements he left behind. Without his existence, our modern digital society would either be completely different or its arrival would have been delayed by decades.
 
 # 2. Early Life and Awakening to Mathematics
 
@@ -22,7 +22,7 @@ During his school days at Sherborne, he already demonstrated extraordinary talen
 
 One of the greatest unsolved problems in the mathematical world at that time was the "Entscheidungsproblem" (Decision Problem) proposed by [David Hilbert](https://kenji.blog/en/p/hilbert/) in 1928. This was a fundamental question: "Given any mathematical statement, does there exist a mechanical algorithmic procedure to determine whether it is true or false?"
 
-Turing tackled this problem with an entirely new approach. In his groundbreaking 1936 paper "On Computable Numbers, with an Application to the Entscheidungsproblem," he defined an abstract computing machine, the **Turing Machine**.
+Turing tackled this problem with an entirely new approach. In his groundbreaking 1936 paper "On Computable Numbers, with an Application to the Entscheidungsproblem," he defined an abstract computing machine, the **[Turing Machine](https://kenji.blog/en/p/turing-machine-computability/)**.
 
 ## 3.1 Structure of the Turing Machine
 
@@ -36,11 +36,11 @@ flowchart TD
     B -->|"Write Symbol"| A
 ```
 
-Turing mathematically showed that any computable function could be computed by this **Turing Machine**. Furthermore, he devised the "Universal Turing Machine," which could read data describing the structure of any Turing machine and simulate its operation. This is exactly the basic concept of the modern "von Neumann architecture" computer—storing a program as data in memory and executing it.
+Turing mathematically showed that any computable function could be computed by this **[Turing Machine](https://kenji.blog/en/p/turing-machine-computability/)**. Furthermore, he devised the "Universal Turing Machine," which could read data describing the structure of any Turing machine and simulate its operation. This is exactly the basic concept of the modern "von Neumann architecture" computer—storing a program as data in memory and executing it.
 
 ## 3.2 [The Halting Problem](https://kenji.blog/en/p/halting-problem/) and Incompleteness
 
-Turing proved that there is no general algorithm to determine in advance whether a given program will eventually halt for a given input, meaning the **Halting Problem** is undecidable.
+Turing proved that there is no general algorithm to determine in advance whether a given program will eventually halt for a given input, meaning the **[Halting Problem](https://kenji.blog/en/p/turing-machine-computability/)** is undecidable.
 
 Mathematically, let's assume a halting problem decision function $H(x, y)$, where $x$ is the program and $y$ is the input:
 
@@ -89,7 +89,7 @@ Thanks to this achievement, the Allies were able to repel the threat of German U
 
 # 5. Post-War Computer Development: ACE and Manchester Mark 1
 
-After the war, Turing worked at the National Physical Laboratory (NPL) and tackled the design of the **ACE** (Automatic Computing Engine). This design attempted to realize the Universal Turing Machine he conceived in 1936 with actual electronic circuits. The design of ACE was highly ambitious, featuring a fast and efficient instruction set that could be considered a forerunner of the modern RISC (Reduced Instruction Set Computer) architecture.
+After the war, Turing worked at the National Physical Laboratory (NPL) and tackled the design of the **ACE** (Automatic Computing Engine). This design attempted to realize the Universal [Turing Machine](https://kenji.blog/en/p/turing-machine-computability/) he conceived in 1936 with actual electronic circuits. The design of ACE was highly ambitious, featuring a fast and efficient instruction set that could be considered a forerunner of the modern RISC (Reduced Instruction Set Computer) architecture.
 
 However, frustrated by bureaucratic procedures and developmental delays at the NPL, Turing moved to the University of Manchester in 1948. There, he was deeply involved in the software development for the **Manchester Mark 1**, one of the world's first stored-program computers. He established the concepts of early programming languages and subroutines, making immense contributions as one of the world's first programmers.
 

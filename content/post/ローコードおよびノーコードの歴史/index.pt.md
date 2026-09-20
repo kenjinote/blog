@@ -71,7 +71,7 @@ O desenvolvimento low-code / no-code é uma abordagem que permite criar aplicati
 Nos últimos anos, as ferramentas low-code / no-code baseadas em nuvem evoluíram rapidamente.
 
 * **Power Platform (Microsoft)**
-  Uma plataforma integrada de desenvolvimento e automação de aplicativos de negócios que inclui "Power Apps", "Power Automate", etc. Os processos de negócios corporativos podem ser construídos visualmente arrastando e soltando.
+  Uma plataforma integrada de desenvolvimento e automação de aplicativos de negócios que inclui "Power Apps", "Power [Automate](https://kenji.blog/pt/p/automata-formal-language-theory/)", etc. Os processos de negócios corporativos podem ser construídos visualmente arrastando e soltando.
 
 * **Salesforce Lightning Platform**
   A base de desenvolvimento de aplicativos fornecida pela Salesforce, um CRM. Aplicativos de negócios podem ser criados via GUI e a integração com outros serviços da Salesforce é fácil.

@@ -71,7 +71,7 @@ description: '1980年代から現在に至るまでのローコード・ノー�
 近年、クラウドベースのローコード／ノーコードツールが急速に進化しています。
 
 * **Power Platform（Microsoft）**
-  「Power Apps」「Power Automate」などを含む統合型の業務アプリ開発・自動化プラットフォーム。企業の業務プロセスをドラッグ＆ドロップで視覚的に構築できます。
+  「Power Apps」「Power [Automate](https://kenji.blog/p/automata-formal-language-theory/)」などを含む統合型の業務アプリ開発・自動化プラットフォーム。企業の業務プロセスをドラッグ＆ドロップで視覚的に構築できます。
 
 * **Salesforce Lightning Platform**
   CRMのSalesforceが提供するアプリ開発基盤。GUIで業務アプリを作成でき、他のSalesforceサービスとの統合も容易です。
