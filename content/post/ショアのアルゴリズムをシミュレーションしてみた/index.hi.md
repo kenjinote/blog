@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 यदि $r$ सम है, तो हम इसे वर्गों के अंतर के सूत्र का उपयोग करके गुणनखंडित कर सकते हैं:
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-यह इंगित करता है कि $N$ का $(a^{r/2} - 1)$ या $(a^{r/2} + 1)$ के साथ कोई सार्व भाजक (common divisor) है (बशर्ते कि शर्त $a^{r/2} \not\equiv -1 \pmod N$ संतुष्ट हो)। इसलिए, यूक्लिडियन एल्गोरिथ्म (Euclidean algorithm) का उपयोग करके,
+यह इंगित करता है कि $N$ का $(a^{r/2} - 1)$ या $(a^{r/2} + 1)$ के साथ कोई सार्व भाजक (common divisor) है (बशर्ते कि शर्त $a^{r/2} \not\equiv -1 \pmod N$ संतुष्ट हो)। इसलिए, [[यूक्लिड](https://kenji.blog/p/euclid/)ियन एल्गोरिथ्म](https://kenji.blog/p/euclidean-algorithm/) ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm) का उपयोग करके,
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$

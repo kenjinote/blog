@@ -84,9 +84,9 @@ Esta es una opinión sólida basada en el "frecuentismo" o el "principio antróp
 
 ---
 
-## 3. Intentando calcular con el Teorema de Bayes
+## 3. Intentando calcular con el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)
 
-También hay intentos de desentrañar este problema utilizando el "Teorema de Bayes", una herramienta para actualizar matemáticamente las probabilidades.
+También hay intentos de desentrañar este problema utilizando el "[Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)", una herramienta para actualizar matemáticamente las probabilidades.
 Organicemos la lógica de "La facción de 1/3" desde la perspectiva de la probabilidad condicional.
 
 Al despertar, el estado será uno de los siguientes tres:

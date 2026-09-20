@@ -211,7 +211,7 @@ La ejecución de este código deja caer una gran cantidad de agujas virtuales ut
 
 ## Resumen
 
-La aguja de Buffon parece a primera vista ser un mero juego físico de azar, pero hay una sólida teoría matemática detrás de ello. La forma en que los eventos aleatorios (probabilidad), las formas geométricas (líneas y segmentos de línea) y el último número irracional $\pi$ se fusionan en una sola fórmula matemática simple encarna la belleza de las matemáticas.
+[La aguja de Buffon](https://kenji.blog/p/buffons-needle/) parece a primera vista ser un mero juego físico de azar, pero hay una sólida teoría matemática detrás de ello. La forma en que los eventos aleatorios (probabilidad), las formas geométricas (líneas y segmentos de línea) y el último número irracional $\pi$ se fusionan en una sola fórmula matemática simple encarna la belleza de las matemáticas.
 
 Además, este problema tiene importancia histórica como el origen del método de Montecarlo, que es indispensable para la ciencia y tecnología modernas. Al simular sistemas complejos y calcular integrales que son difíciles de resolver analíticamente, la idea de Buffon todavía apoya a nuestro mundo en diversas formas hoy en día.
 

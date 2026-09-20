@@ -14,8 +14,8 @@ tags:
 
 # 1. はじめに：[ガロア理論](https://kenji.blog/p/galois-theory/)とは？
 
-数学の歴史において、最もドラマチックで、かつ最も深遠な理論の一つが **[ガロア理論](https://kenji.blog/p/galois-theory/)** （Galois Theory）です。
-この理論は、19世紀初頭にフランスの若き数学者エヴァリスト・ガロア（Évariste Galois）によって構築されました。
+数学の歴史において、最もドラマチックで、かつ最も深遠な理論の一つが **[ガロア理論](https://kenji.blog/p/galois-theory/)** （[Galois Theory](https://kenji.blog/p/galois-theory/)）です。
+この理論は、19世紀初頭にフランスの若き数学者[エヴァリスト・ガロア](https://kenji.blog/p/galois/)（[Évariste Galois](https://kenji.blog/p/galois/)）によって構築されました。
 [ガロア理論](https://kenji.blog/p/galois-theory/)は、「なぜ5次以上の方程式には一般的な解の公式が存在しないのか？」という古くからの難問を、 **群** （Group）という全く新しい概念を用いて見事に解決しました。
 
 本記事では、[ガロア理論](https://kenji.blog/p/galois-theory/)の基本的なアイデアから、その歴史的背景、そして現代数学に与えた影響までを、できるだけ深く、かつ分かりやすく解説します。代数学の扉を開き、対称性の美しさに触れてみましょう。
@@ -109,7 +109,7 @@ $$
 
 これは単に「まだ公式が見つかっていない」ということではなく、「そのような公式は数学的に存在し得ない」という決定的な事実を示しています。
 
-# 4. エヴァリスト・ガロアの生涯
+# 4. [エヴァリスト・ガロア](https://kenji.blog/p/galois/)の生涯
 
 [ガロア理論](https://kenji.blog/p/galois-theory/)の美しさは数学史に燦然と輝いていますが、ガロア自身の劇的な生涯もまた、多くの人々を惹きつけてやみません。
 

@@ -17,7 +17,7 @@ tags:
 
 ## Introdução: O Homem Que Recebeu Fórmulas dos Deuses
 
-Srinivasa Ramanujan (1887–1920) foi um gênio matemático indiano que apareceu como um cometa no mundo matemático do início do século XX, antes que sua vida tragicamente curta chegasse ao fim. Apesar de não ter quase nenhuma educação matemática formal, ele deduziu inúmeros teoremas e fórmulas surpreendentes por meio de pura intuição e uma visão única. Seus cadernos, que sobreviveram, continuam a influenciar pesquisas de ponta na matemática e física modernas, mais de um século após sua morte.
+[Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) (1887–1920) foi um gênio matemático indiano que apareceu como um cometa no mundo matemático do início do século XX, antes que sua vida tragicamente curta chegasse ao fim. Apesar de não ter quase nenhuma educação matemática formal, ele deduziu inúmeros teoremas e fórmulas surpreendentes por meio de pura intuição e uma visão única. Seus cadernos, que sobreviveram, continuam a influenciar pesquisas de ponta na matemática e física modernas, mais de um século após sua morte.
 
 Neste artigo, vamos mergulhar na vida turbulenta de Ramanujan, em suas interações cruciais com o matemático britânico G.H. Hardy, que o descobriu, e no brilhante legado matemático que ele deixou para trás. Sua vida é um poderoso testemunho de como a paixão e o talento podem superar a adversidade e mudar o mundo.
 
@@ -138,7 +138,7 @@ Em 1919, após o fim da Primeira Guerra Mundial, sua saúde melhorou um pouco e 
 
 O último caderno que Ramanujan escreveu em seu leito de morte ficou perdido por um longo tempo, mas foi descoberto na biblioteca da Universidade de Cambridge pelo matemático americano George Andrews, em 1976. Ele ficou conhecido como "O Caderno Perdido" e mais uma vez enviou ondas de choque através da comunidade matemática. Continha cerca de 600 novas fórmulas, e pesquisas sobre o significado e aplicações delas continuam até hoje.
 
-A vida turbulenta de Srinivasa Ramanujan foi retratada na biografia de Robert Kanigel *O Homem que Conhecia o Infinito* e em sua adaptação para o cinema de 2015 com o mesmo nome, inspirando inúmeras pessoas além da comunidade matemática.
+A vida turbulenta de [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) foi retratada na biografia de Robert Kanigel *O Homem que Conhecia o Infinito* e em sua adaptação para o cinema de 2015 com o mesmo nome, inspirando inúmeras pessoas além da comunidade matemática.
 
 Seu maior legado é a imensa quantidade de fórmulas deixadas em seus cadernos. Como elas muitas vezes não possuíam provas, matemáticos posteriores passaram décadas provando cada uma delas. Graças aos esforços incansáveis de matemáticos como Bruce Berndt, a decifração de seus cadernos progrediu, mas os novos mistérios e temas de pesquisa deles derivados ainda estão longe de se esgotar.
 

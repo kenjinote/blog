@@ -56,7 +56,7 @@ Warum gibt es immer eine solche Linie? Denken wir unter Verwendung des Konzepts 
 
 Aus diesem Grund können Sie im 2D-Fall zwei Objekte gleichzeitig halbieren.
 
-## 3. Erweiterung auf 3D: Der Schinken-Sandwich-Satz
+## 3. Erweiterung auf 3D: [Der Schinken-Sandwich-Satz](https://kenji.blog/p/ham-sandwich-theorem/)
 
 Lassen Sie uns nun endlich zur dreidimensionalen Geschichte übergehen. Wenn die Dimension um eins zunimmt, erhöht sich auch die Anzahl der Objekte, die Sie teilen können, um eins.
 
@@ -98,7 +98,7 @@ Für eine Funktion $f(x) = \left( \text{Temperatur}, \text{Druck} \right)$, die 
 
 ### Beweisskizze des Schinken-Sandwich-Satzes
 
-Der Schinken-Sandwich-Satz (3D-Version) kann unter Verwendung des Falles $n=2$ des Borsuk-Ulam-Satzes bewiesen werden. Nachfolgend finden Sie eine Skizze seines schönen Beweises.
+[Der Schinken-Sandwich-Satz](https://kenji.blog/p/ham-sandwich-theorem/) (3D-Version) kann unter Verwendung des Falles $n=2$ des Borsuk-Ulam-Satzes bewiesen werden. Nachfolgend finden Sie eine Skizze seines schönen Beweises.
 
 1. Betrachten Sie einen Punkt $p$ auf der Einheitssphäre $S^2$ mit dem Ursprung als Zentrum (dies stellt den Normalenvektor der Ebene dar, d. h. die "Richtung" der Ebene).
 2. Wenn die Richtung $p$ festgelegt ist, ist eine Ebene, die das Volumen des "oberen Brotes" halbiert, eindeutig bestimmt (nennen wir sie Ebene $H(p)$).
@@ -150,6 +150,6 @@ Wenn beispielsweise eine riesige Menge von Datenpunkten (Punktwolken) im Raum ex
 
 ## 7. Fazit
 
-Der Schinken-Sandwich-Satz mag auf den ersten Blick wie ein Witz mit einem lustigen Namen erscheinen, aber in Wirklichkeit ist es ein schönes Ergebnis, das von einem mächtigen Satz in der modernen Mathematik, insbesondere der algebraischen Topologie, angewendet wird. Die Tatsache, dass eine abstrakte mathematische Theorie durch etwas so Konkretes und Alltägliches wie ein Sandwich ausgedrückt wird, ist wohl einer der faszinierenden Aspekte der Mathematik.
+[Der Schinken-Sandwich-Satz](https://kenji.blog/p/ham-sandwich-theorem/) mag auf den ersten Blick wie ein Witz mit einem lustigen Namen erscheinen, aber in Wirklichkeit ist es ein schönes Ergebnis, das von einem mächtigen Satz in der modernen Mathematik, insbesondere der algebraischen Topologie, angewendet wird. Die Tatsache, dass eine abstrakte mathematische Theorie durch etwas so Konkretes und Alltägliches wie ein Sandwich ausgedrückt wird, ist wohl einer der faszinierenden Aspekte der Mathematik.
 
 Wenn Sie das nächste Mal beiläufig ein Sandwich schneiden, gibt es vielleicht einfach einen Moment, in dem alle drei Zutaten durch Zufall perfekt halbiert werden. Warum lassen Sie Ihre Gedanken in Ihrer nächsten Mittagspause nicht in höherdimensionale Räume und zum Borsuk-Ulam-Satz schweifen, während Sie Ihr Messer greifen?

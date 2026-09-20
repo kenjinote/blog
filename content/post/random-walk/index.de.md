@@ -8,11 +8,11 @@ categories: ["Mathematik"]
 tags: ["Random Walk", "Wahrscheinlichkeitstheorie", "Diffusionsgleichung", "Brownsche Bewegung", "Python"]
 ---
 
-# Einführung: Was ist ein Random Walk?
+# Einführung: Was ist ein [Random Walk](https://kenji.blog/p/random-walk/)?
 
-Ein Random Walk (Irrfahrt) ist ein mathematisches Konzept, bei dem die nächste Position zufällig (probabilistisch) bestimmt wird. Er wird oft als "Trunkenbold-Spaziergang" bezeichnet, da er einer betrunkenen Person ähnelt, die mit unsicheren Schritten nach links und rechts taumelt. Auf den ersten Blick scheint es eine chaotische Bewegung zu sein, doch bei vielen Schritten entstehen erstaunlich schöne und regelmäßige mathematische Gesetze.
+Ein [Random Walk](https://kenji.blog/p/random-walk/) (Irrfahrt) ist ein mathematisches Konzept, bei dem die nächste Position zufällig (probabilistisch) bestimmt wird. Er wird oft als "Trunkenbold-Spaziergang" bezeichnet, da er einer betrunkenen Person ähnelt, die mit unsicheren Schritten nach links und rechts taumelt. Auf den ersten Blick scheint es eine chaotische Bewegung zu sein, doch bei vielen Schritten entstehen erstaunlich schöne und regelmäßige mathematische Gesetze.
 
-In diesem Artikel beginnen wir mit den Grundlagen des einfachsten eindimensionalen Random Walks und untersuchen die Verbindung zur Diffusionsgleichung und der Brownschen Bewegung. Auch Pólyas Satz und Finanzanwendungen werden beleuchtet.
+In diesem Artikel beginnen wir mit den Grundlagen des einfachsten eindimensionalen [Random Walk](https://kenji.blog/p/random-walk/)s und untersuchen die Verbindung zur Diffusionsgleichung und der Brownschen Bewegung. Auch Pólyas Satz und Finanzanwendungen werden beleuchtet.
 
 ## Historischer Hintergrund: Karl Pearsons Frage
 
@@ -63,9 +63,9 @@ $$
 E[S_n] = 0, \quad V(S_n) = n
 $$
 
-Im Durchschnitt bleibt man bei 0, aber die Streuung ist $\sqrt{n}$. Das ist das Hauptmerkmal des Random Walks.
+Im Durchschnitt bleibt man bei 0, aber die Streuung ist $\sqrt{n}$. Das ist das Hauptmerkmal des [Random Walk](https://kenji.blog/p/random-walk/)s.
 
-## Zentraler Grenzwertsatz
+## [Zentraler Grenzwertsatz](https://kenji.blog/p/central-limit-theorem/)
 
 Für große $n$ konvergiert die Binomialverteilung gegen die **Normalverteilung** (Gauß-Verteilung).
 
@@ -98,7 +98,7 @@ stateDiagram-v2
 
 ## Brownsche Bewegung und Wiener-Prozess
 
-Albert Einstein erklärte 1905 die Brownsche Bewegung der Pollen als Random Walk. Mathematisch ist dies der **Wiener-Prozess** $W(t)$. Die Pfade sind überall stetig, aber **nirgends differenzierbar**.
+Albert Einstein erklärte 1905 die Brownsche Bewegung der Pollen als [Random Walk](https://kenji.blog/p/random-walk/). Mathematisch ist dies der **Wiener-Prozess** $W(t)$. Die Pfade sind überall stetig, aber **nirgends differenzierbar**.
 
 ## Pólyas Rekurrenzsatz
 
@@ -160,4 +160,4 @@ plt.show()
 
 ## Fazit
 
-Zufällige lokale Regeln erzeugen die komplexe makroskopische Welt. Das macht die Mathematik des Random Walks so faszinierend.
+Zufällige lokale Regeln erzeugen die komplexe makroskopische Welt. Das macht die Mathematik des [Random Walk](https://kenji.blog/p/random-walk/)s so faszinierend.

@@ -13,7 +13,7 @@ tags: ["Pequeño teorema de Fermat", "RSA", "Prueba de primalidad", "Matemática
 
 En la sociedad digital moderna, especialmente en las comunicaciones a través de Internet, la "criptografía" se ha convertido en una tecnología base indispensable. El hecho de que podamos navegar de forma segura por sitios web a través de HTTPS en nuestros navegadores web, realizar transacciones financieras en la banca en línea e intercambiar mensajes privados en aplicaciones de mensajería, se debe a que detrás funcionan protocolos criptográficos respaldados por teorías matemáticas avanzadas. Entre ellos, la "criptografía de clave pública" desempeña un papel particularmente importante, y su representante principal es el **cifrado RSA**.
 
-La seguridad y validez de muchos algoritmos criptográficos, incluido el cifrado RSA, dependen en gran medida de un teorema muy hermoso y poderoso descubierto por el matemático francés del siglo XVII Pierre de Fermat. Este es el **pequeño teorema de Fermat (Fermat's Little Theorem)**. Además, el teorema de Leonhard Euler, que es una generalización de este, también juega un papel decisivo en la teoría criptográfica.
+La seguridad y validez de muchos algoritmos criptográficos, incluido el cifrado RSA, dependen en gran medida de un teorema muy hermoso y poderoso descubierto por el matemático francés del siglo XVII [Pierre de Fermat](https://kenji.blog/p/fermat/). Este es el **pequeño teorema de Fermat ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**. Además, el teorema de [Leonhard Euler](https://kenji.blog/p/euler/), que es una generalización de este, también juega un papel decisivo en la teoría criptográfica.
 
 En este artículo, explicaremos exhaustivamente desde los fundamentos cómo el descubrimiento de las matemáticas puras, el pequeño teorema de Fermat, se aplica a la tecnología criptográfica práctica moderna, especialmente a la "prueba de primalidad" y al "cifrado RSA". Será una guía técnica muy detallada que cubrirá las demostraciones matemáticas, los mecanismos de cifrado y descifrado, y las implementaciones de algoritmos específicos utilizando C++ y Python.
 
@@ -54,7 +54,7 @@ Habiendo cubierto los fundamentos de la aritmética modular, echemos un vistazo 
 
 El pequeño teorema de Fermat se formula de la siguiente manera:
 
-> **Pequeño teorema de Fermat (Fermat's Little Theorem)**
+> **Pequeño teorema de Fermat ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**
 > Sea $p$ un número primo y sea $a$ cualquier número entero que no sea un múltiplo de $p$ (es decir, $a$ y $p$ son coprimos). Entonces, se cumple la siguiente congruencia:
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
@@ -112,7 +112,7 @@ Esta es la demostración del pequeño teorema de Fermat.
 
 ## 4. Función totiente de Euler y teorema de Euler
 
-El pequeño teorema de Fermat es un teorema sobre "números primos $p$", pero fue Leonhard Euler quien generalizó esto a "cualquier entero positivo $n$". Esta extensión es esencial para entender el cifrado RSA.
+El pequeño teorema de Fermat es un teorema sobre "números primos $p$", pero fue [Leonhard Euler](https://kenji.blog/p/euler/) quien generalizó esto a "cualquier entero positivo $n$". Esta extensión es esencial para entender el cifrado RSA.
 
 ### 4.1 Función totiente de Euler $\phi(n)$
 
@@ -317,7 +317,7 @@ A continuación, se explican los pasos matemáticos detallados.
 4. Elegir un número entero $e$ (exponente público) que sea coprimo con $\phi(N)$ (a menudo se usa $e = 65537$).
 5. Calcular el inverso modular $d$ (exponente privado) de $e$. Es decir, encontrar $d$ que cumpla lo siguiente:
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   Para este cálculo, se utiliza el **algoritmo de Euclides extendido**.
+   Para este cálculo, se utiliza el **algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido**.
 
 Con esto, la **clave pública es $(N, e)$** y la **clave privada es $(N, d)$**. (Se deben descartar inmediatamente u ocultar estrictamente $p, q$ y $\phi(N)$).
 
@@ -369,7 +369,7 @@ $$ M \cdot (1)^k \equiv M \pmod N $$
 
 Como es difícil captar la idea solo con teoría, intentemos implementar el proceso de generación de claves, cifrado y descifrado del cifrado RSA usando Python. Esta es una "implementación de juguete" con fines educativos, pero las matemáticas utilizadas son exactamente las mismas que las reales.
 
-También incluiremos en la implementación el "algoritmo de Euclides extendido" para encontrar el inverso modular $d$.
+También incluiremos en la implementación el "algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido" para encontrar el inverso modular $d$.
 
 ```python
 import random
@@ -466,7 +466,7 @@ Al ejecutar este código, puedes confirmar cómo una matriz de caracteres se con
 
 ## 9. Conclusión: La intersección entre la belleza matemática y la utilidad práctica
 
-En el siglo XVII, cuando Pierre de Fermat descubrió este "pequeño teorema", nadie pensaba que sería útil para nada. El propio Fermat investigó la teoría de números por pura curiosidad matemática.
+En el siglo XVII, cuando [Pierre de Fermat](https://kenji.blog/p/fermat/) descubrió este "pequeño teorema", nadie pensaba que sería útil para nada. El propio Fermat investigó la teoría de números por pura curiosidad matemática.
 
 Sin embargo, unos 300 años más tarde, en la década de 1970, en los albores de las redes informáticas, el teorema de Fermat hizo un regreso dramático como una tecnología criptográfica indispensable para establecer protocolos de comunicación seguros. La tecnología de prueba de primalidad basada en el pequeño teorema de Fermat, y el cifrado RSA basado en el teorema de Euler, sostienen literalmente la infraestructura moderna de Internet.
 

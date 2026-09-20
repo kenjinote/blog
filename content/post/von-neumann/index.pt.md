@@ -22,9 +22,9 @@ Na época, Budapeste era um centro global de cultura e erudição, produzindo mu
 
 ## 3. Contribuições para os Fundamentos da Matemática: Teoria Axiomática dos Conjuntos
 
-Uma das realizações iniciais mais importantes de von Neumann foi sua pesquisa sobre a axiomatização da teoria dos conjuntos. Esperava-se que a teoria dos conjuntos, fundada por Georg Cantor, fosse o fundamento da matemática, mas ela enfrentava contradições lógicas (paradoxos) como o paradoxo de Russell. Para resolver esse problema, Ernst Zermelo, Adolf Fraenkel e outros estavam construindo a teoria axiomática dos conjuntos, mas von Neumann adotou uma abordagem diferente.
+Uma das realizações iniciais mais importantes de von Neumann foi sua pesquisa sobre a axiomatização da teoria dos conjuntos. Esperava-se que a teoria dos conjuntos, fundada por [Georg Cantor](https://kenji.blog/p/cantor/), fosse o fundamento da matemática, mas ela enfrentava contradições lógicas (paradoxos) como o paradoxo de Russell. Para resolver esse problema, Ernst Zermelo, Adolf Fraenkel e outros estavam construindo a teoria axiomática dos conjuntos, mas von Neumann adotou uma abordagem diferente.
 
-Ele introduziu o conceito de "classes" e evitou brilhantemente os paradoxos distinguindo estritamente entre conjuntos normais e classes que são grandes demais para serem conjuntos (classes próprias). Este sistema foi posteriormente melhorado por Paul Bernays e Kurt Gödel, e agora é conhecido como a **teoria dos conjuntos de von Neumann-Bernays-Gödel** (teoria dos conjuntos NBG).
+Ele introduziu o conceito de "classes" e evitou brilhantemente os paradoxos distinguindo estritamente entre conjuntos normais e classes que são grandes demais para serem conjuntos (classes próprias). Este sistema foi posteriormente melhorado por Paul Bernays e [Kurt Gödel](https://kenji.blog/p/godel/), e agora é conhecido como a **teoria dos conjuntos de von Neumann-Bernays-Gödel** (teoria dos conjuntos NBG).
 
 $$
 \forall X \ ( X \in V \iff \exists Y \ (X \in Y) )

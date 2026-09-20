@@ -9,7 +9,7 @@ categories: ["career", "ai", "software-engineering"]
 tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 ---
 
-# Die 'menschlichen Ingenieurfähigkeiten', die im Zeitalter der KI-Codegenerierung gefragt sind
+# [Die 'menschlichen Ingenieurfähigkeiten', die im Zeitalter der KI-Codegenerierung gefragt sind](https://kenji.blog/p/human_engineer_skills/)
 
 In den letzten Jahren hat sich die Landschaft der Softwareentwicklung durch die rasante Entwicklung generativer KI (Generative AI) und großer Sprachmodelle (LLM) dramatisch verändert. Die tägliche Nutzung von GitHub Copilot und verschiedenen KI-Programmierassistenten ist zur Normalität geworden. Das Phänomen, dass „KI sofort Code generiert, wenn man Anweisungen in natürlicher Sprache gibt“, ist nicht länger Zukunftsmusik aus Science-Fiction, sondern heutige Realität.
 

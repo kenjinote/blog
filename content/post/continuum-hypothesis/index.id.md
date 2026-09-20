@@ -10,12 +10,12 @@ tags: ["Hipotesis Kontinum", "Cantor", "Ketakterhinggaan", "Matematika"]
 
 ## 1. Pengantar: Mengukur Ukuran Ketakterhinggaan
 
-Di dunia matematika, konsep "ketakterhinggaan" (infinitas) telah lama menjadi topik perdebatan filosofis. Namun, hingga munculnya Georg Cantor pada akhir abad ke-19, tidak ada metode matematis yang ketat untuk membandingkan ukuran ketakterhinggaan. Cantor mendirikan teori himpunan dan membuktikan bahwa ketakterhinggaan juga memiliki **ukuran yang berbeda** (kardinalitas).
+Di dunia matematika, konsep "ketakterhinggaan" (infinitas) telah lama menjadi topik perdebatan filosofis. Namun, hingga munculnya [Georg Cantor](https://kenji.blog/p/cantor/) pada akhir abad ke-19, tidak ada metode matematis yang ketat untuk membandingkan ukuran ketakterhinggaan. Cantor mendirikan teori himpunan dan membuktikan bahwa ketakterhinggaan juga memiliki **ukuran yang berbeda** (kardinalitas).
 
 Mempertimbangkan himpunan bilangan asli $\mathbb{N}$ dan himpunan bilangan real $\mathbb{R}$, melalui argumen diagonal Cantor, ditunjukkan bahwa himpunan bilangan real "benar-benar lebih besar" daripada himpunan bilangan asli. Kardinalitas bilangan asli dilambangkan dengan $\aleph_0$ (Aleph-nol), dan kardinalitas bilangan real dilambangkan dengan $\mathfrak{c}$ (kardinalitas kontinum) atau $2^{\aleph_0}$. Menurut Teorema Cantor, $\aleph_0 < 2^{\aleph_0}$.
 
 Di sini, Cantor memiliki satu pertanyaan alami. "Apakah ada himpunan dengan kardinalitas yang terletak di **tengah-tengah** antara kardinalitas bilangan asli dan kardinalitas bilangan real?"
-Ini adalah awal dari **Hipotesis Kontinum** (Continuum Hypothesis, CH) yang kelak akan mengguncang dasar-dasar matematika.
+Ini adalah awal dari **Hipotesis Kontinum** ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH) yang kelak akan mengguncang dasar-dasar matematika.
 
 ## 2. Definisi Ketat Hipotesis Kontinum (CH)
 
@@ -35,11 +35,11 @@ Oleh karena itu, untuk himpunan bilangan asli $\mathbb{N}$,
 $$ |\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| $$
 berlaku. CH adalah klaim bahwa tidak ada kardinalitas lain di antara keduanya.
 
-## 3. Penderitaan Cantor dan Pertanyaan David Hilbert
+## 3. Penderitaan Cantor dan Pertanyaan [David Hilbert](https://kenji.blog/p/hilbert/)
 
 Cantor menghabiskan seluruh hidupnya mencoba membuktikan hipotesis ini, namun tidak pernah berhasil. Kadang-kadang ia berpikir telah "membuktikannya", dan di lain waktu berpikir telah "membantahnya". Kondisi mentalnya sangat terkuras oleh masalah yang sulit ini.
 
-Pada tahun 1900, di Kongres Matematikawan Internasional ke-2 yang diadakan di Paris, David Hilbert mengajukan "23 Masalah Hilbert" yang harus diselesaikan oleh matematika abad ke-20. **Masalah pertama** yang monumental tersebut tak lain adalah "Pembuktian Hipotesis Kontinum".
+Pada tahun 1900, di Kongres Matematikawan Internasional ke-2 yang diadakan di Paris, [David Hilbert](https://kenji.blog/p/hilbert/) mengajukan "23 Masalah Hilbert" yang harus diselesaikan oleh matematika abad ke-20. **Masalah pertama** yang monumental tersebut tak lain adalah "Pembuktian Hipotesis Kontinum".
 
 ## 4. Aksiomatisasi Teori Himpunan: Sistem Aksioma ZFC
 
@@ -58,9 +58,9 @@ Sistem Aksioma ZFC terdiri dari 9 aksioma (atau skema aksioma) berikut.
 
 Dengan menggunakan aksioma-aksioma ini, para matematikawan mencoba menentukan kebenaran CH.
 
-## 5. Kurt Gödel dan "Himpunan Konstruktibel"
+## 5. [Kurt Gödel](https://kenji.blog/p/godel/) dan "Himpunan Konstruktibel"
 
-Pada tahun 1940, Kurt Gödel mengumumkan hasil yang mengejutkan. Ia membuktikan bahwa jika sistem aksioma ZFC diasumsikan konsisten, maka **"menambahkan CH ke sistem aksioma ZFC tidak akan menimbulkan kontradiksi."**
+Pada tahun 1940, [Kurt Gödel](https://kenji.blog/p/godel/) mengumumkan hasil yang mengejutkan. Ia membuktikan bahwa jika sistem aksioma ZFC diasumsikan konsisten, maka **"menambahkan CH ke sistem aksioma ZFC tidak akan menimbulkan kontradiksi."**
 
 Gödel membangun sebuah model himpunan yang disebut **Alam Semesta Konstruktibel** (Constructible Universe, $L$). Di dalam $L$, semua himpunan dikonstruksi secara hierarkis oleh rumus-rumus logis. Gödel menunjukkan bahwa di dalam $L$ ini, semua aksioma ZFC terpenuhi, dan terlebih lagi **CH juga bernilai benar**.
 
@@ -96,7 +96,7 @@ graph TD
 
 Menggabungkan pencapaian Gödel dan Cohen, dipastikan bahwa Hipotesis Kontinum **tidak dapat dibuktikan maupun dibantah** dari sistem aksioma ZFC. Proposisi semacam ini disebut **independen** (Independent) dari sistem aksioma.
 
-Hal ini memberikan kejutan yang tak terukur bagi dunia matematika. Apa sebenarnya kebenaran matematis itu? Sistem aksioma (ZFC) yang kita adopsi ternyata tidak lengkap untuk menentukan ukuran sebenarnya dari himpunan bilangan real (ini bisa dikatakan sebagai salah satu manifestasi dari Teorema Ketidaklengkapan Gödel).
+Hal ini memberikan kejutan yang tak terukur bagi dunia matematika. Apa sebenarnya kebenaran matematis itu? Sistem aksioma (ZFC) yang kita adopsi ternyata tidak lengkap untuk menentukan ukuran sebenarnya dari himpunan bilangan real (ini bisa dikatakan sebagai salah satu manifestasi dari [Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/)).
 
 ### Prospek Teori Himpunan Modern
 
@@ -131,11 +131,11 @@ Cohen menyusun metode pemaksaan yang menambahkan sejumlah besar fungsi (sesuai d
 
 Independensi CH menimbulkan masalah mendalam pada filsafat matematika, yaitu "Platonisme" dan "Formalisme".
 - **Pandangan Platonisme** : Dunia ide himpunan adalah tunggal, dan CH pasti memiliki nilai kebenaran objektif baik "benar" atau "salah". Alasan ZFC tidak dapat menentukannya adalah karena ZFC merupakan sistem aksioma yang tidak lengkap akibat keterbatasan kognisi manusia.
-- **Pandangan Formalisme** : Matematika hanyalah permainan memanipulasi simbol mengikuti aturan logika dari aksioma. Sama seperti aksioma garis sejajar dalam geometri Euclidean, semesta matematika yang berbeda yaitu "teori himpunan di mana CH benar" dan "teori himpunan di mana CH salah" hanya eksis secara paralel.
+- **Pandangan Formalisme** : Matematika hanyalah permainan memanipulasi simbol mengikuti aturan logika dari aksioma. Sama seperti aksioma garis sejajar dalam geometri [Euclide](https://kenji.blog/p/euclid/)an, semesta matematika yang berbeda yaitu "teori himpunan di mana CH benar" dan "teori himpunan di mana CH salah" hanya eksis secara paralel.
 
 ## 10. Kesimpulan
 
-Pencarian hierarki ketakterhinggaan yang diimpikan oleh Georg Cantor menemui akhir yang dramatis yaitu "tidak dapat dibuktikan maupun dibantah" oleh dua orang jenius, Gödel dan Cohen. Namun, itu sama sekali tidak berarti kekalahan matematika. Sebaliknya, hal itu menciptakan alat yang ampuh bernama metode pemaksaan, dan mengevolusikan bidang teori himpunan menjadi sesuatu yang lebih kaya dan kompleks dari sebelumnya.
+Pencarian hierarki ketakterhinggaan yang diimpikan oleh [Georg Cantor](https://kenji.blog/p/cantor/) menemui akhir yang dramatis yaitu "tidak dapat dibuktikan maupun dibantah" oleh dua orang jenius, Gödel dan Cohen. Namun, itu sama sekali tidak berarti kekalahan matematika. Sebaliknya, hal itu menciptakan alat yang ampuh bernama metode pemaksaan, dan mengevolusikan bidang teori himpunan menjadi sesuatu yang lebih kaya dan kompleks dari sebelumnya.
 
 Hipotesis Kontinum masih terus mengajukan pertanyaan mendasar kepada kita, "Apa itu ketakterhinggaan?" dan "Apa itu kebenaran matematis?".
 

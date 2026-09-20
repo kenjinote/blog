@@ -52,11 +52,11 @@ bool is_prime_trial_division(long long n) {
 
 # 2. 페르마 테스트：확률적 소수 판별의 서막
 
-시험 나눗셈의 한계를 돌파하기 위해 고안된 것이 정수론의 정리를 이용한 「확률적 알고리즘 (Probabilistic Algorithm)」입니다. 그 대표적인 예가 페르마의 소정리를 이용한 「페르마 테스트 (Fermat Primality Test)」입니다.
+시험 나눗셈의 한계를 돌파하기 위해 고안된 것이 정수론의 정리를 이용한 「확률적 알고리즘 (Probabilistic Algorithm)」입니다. 그 대표적인 예가 [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)를 이용한 「페르마 테스트 (Fermat Primality Test)」입니다.
 
-## 페르마의 소정리 (Fermat's Little Theorem)
+## [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-피에르 드 페르마(Pierre de Fermat)가 발견한 이 정리는 다음과 같이 주장합니다.
+[피에르 드 페르마](https://kenji.blog/p/fermat/)([Pierre de Fermat](https://kenji.blog/p/fermat/))가 발견한 이 정리는 다음과 같이 주장합니다.
 
 > 임의의 소수 $p$ 와, 서로 소인($p$ 의 배수가 아닌) 임의의 정수 $a$ 에 대해 다음 합동식이 성립한다.
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -98,13 +98,13 @@ long long mod_pow(long long a, long long b, long long m) {
 
 ## 수학적 원리
 
-밀러-라빈 알고리즘은 페르마의 소정리에 더해, 「소수를 법으로 하는 잉여체($\mathbb{Z}/p\mathbb{Z}$)에서는 $x^2 \equiv 1 \pmod p$ 의 해는 $x \equiv 1$ 또는 $x \equiv -1$ 로 제한된다」는 성질을 이용합니다 (합성수를 법으로 하는 경우에는 이외의 비자명한 제곱근이 존재할 수 있습니다).
+밀러-라빈 알고리즘은 [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)에 더해, 「소수를 법으로 하는 잉여체($\mathbb{Z}/p\mathbb{Z}$)에서는 $x^2 \equiv 1 \pmod p$ 의 해는 $x \equiv 1$ 또는 $x \equiv -1$ 로 제한된다」는 성질을 이용합니다 (합성수를 법으로 하는 경우에는 이외의 비자명한 제곱근이 존재할 수 있습니다).
 
 판별하려는 홀수 $N$ 에서 $1$ 을 뺀 $N-1$ 은 반드시 짝수가 됩니다. 그래서 $N-1$ 을 $2$ 로 나눌 수 있을 때까지 나누어 다음과 같은 형태로 나타냅니다.
 $$ N-1 = d \cdot 2^s $$
 (여기서 $d$ 는 홀수, $s \ge 1$)
 
-임의의 밑 $a$ ($1 < a < N-1$)에 대해, $a^{N-1} \equiv 1 \pmod N$ 인지를 페르마의 소정리에 따라 검증하되, 그 계산을 단계적으로 수행합니다.
+임의의 밑 $a$ ($1 < a < N-1$)에 대해, $a^{N-1} \equiv 1 \pmod N$ 인지를 [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)에 따라 검증하되, 그 계산을 단계적으로 수행합니다.
 구체적으로는 $a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$ 와 같이 순서대로 제곱을 반복해 나갑니다.
 
 밀러-라빈 테스트가 $N$ 을 「소수이다(혹은 강한 확률로 소수이다)」라고 판별하기 위한 조건은 다음 중 **하나** 가 성립하는 것입니다.

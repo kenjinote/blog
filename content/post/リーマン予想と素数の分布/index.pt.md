@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Introdução: O Mistério Cósmico dos Números Primos e a Hipótese de Riemann
 
-Os "Números Primos" (Prime Numbers) são números naturais divisíveis apenas por 1 e por si mesmos, sendo frequentemente chamados de "átomos" do mundo da matemática. Essa sequência que segue como 2, 3, 5, 7, 11, 13... parece, à primeira vista, desordenada e aleatória. Desde que o matemático grego antigo Euclides provou que "os números primos são infinitos", incontáveis matemáticos têm tentado desvendar os padrões ocultos nessa disposição de primos.
+Os "Números Primos" (Prime Numbers) são números naturais divisíveis apenas por 1 e por si mesmos, sendo frequentemente chamados de "átomos" do mundo da matemática. Essa sequência que segue como 2, 3, 5, 7, 11, 13... parece, à primeira vista, desordenada e aleatória. Desde que o matemático grego antigo [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) provou que "os números primos são infinitos", incontáveis matemáticos têm tentado desvendar os padrões ocultos nessa disposição de primos.
 
-Aquele que chegou mais perto de desvendar esse mistério dos números primos foi o matemático alemão Bernhard Riemann, que propôs a **"Hipótese de Riemann" (Riemann Hypothesis)** em 1859. A Hipótese de Riemann é um dos problemas mais importantes e não resolvidos da matemática moderna, com um prêmio de 1 milhão de dólares oferecido pelo Instituto de Matemática Clay como um dos Problemas do Prêmio Millennium.
+Aquele que chegou mais perto de desvendar esse mistério dos números primos foi o matemático alemão [Bernhard Riemann](https://kenji.blog/p/riemann/), que propôs a **"Hipótese de Riemann" (Riemann Hypothesis)** em 1859. A Hipótese de Riemann é um dos problemas mais importantes e não resolvidos da matemática moderna, com um prêmio de 1 milhão de dólares oferecido pelo Instituto de Matemática Clay como um dos Problemas do Prêmio Millennium.
 
 À primeira vista, pode parecer que esse problema formidável da matemática pura sobre a distribuição de números primos não tenha relação com o nosso dia a dia. No entanto, a segurança da internet, que sustenta a infraestrutura da sociedade moderna, especialmente as **tecnologias de criptografia modernas como a criptografia RSA e a criptografia de curva elíptica (ECC)**, depende profundamente das propriedades de números primos gigantescos.
 
@@ -30,13 +30,13 @@ Por exemplo:
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-O gênio matemático de 15 anos, Carl Friedrich Gauss, calculou extensas tabelas de números primos e descobriu que a frequência de aparecimento dos números primos diminui de forma inversamente proporcional ao logaritmo natural $\ln x$. Em outras palavras, ele conjecturou que a probabilidade de encontrar um número primo perto de um número $x$ é de aproximadamente $\frac{1}{\ln x}$.
+O gênio matemático de 15 anos, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), calculou extensas tabelas de números primos e descobriu que a frequência de aparecimento dos números primos diminui de forma inversamente proporcional ao logaritmo natural $\ln x$. Em outras palavras, ele conjecturou que a probabilidade de encontrar um número primo perto de um número $x$ é de aproximadamente $\frac{1}{\ln x}$.
 
 Expressando isso por meio de uma integral, obtemos o **logaritmo integral (Logarithmic integral)** $\text{Li}(x)$.
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-A conjectura de Gauss foi posteriormente provada de forma independente por Jacques Hadamard e Charles Jean de la Vallée Poussin em 1896, estabelecendo-se como o **Teorema dos Números Primos (Prime Number Theorem, PNT)**.
+A conjectura de Gauss foi posteriormente provada de forma independente por Jacques Hadamard e Charles Jean de la Vallée Poussin em 1896, estabelecendo-se como o **Teorema dos Números Primos ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT)**.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ Este teorema mostrou que, de uma perspectiva macroscópica, os números primos t
 
 # 3. A Função Zeta de Riemann e o Produto de Euler
 
-A arma mais poderosa para analisar a distribuição dos números primos é a **Função Zeta de Riemann (Riemann Zeta Function)**. Originalmente, era uma série infinita definida por Leonhard Euler para números reais $s > 1$.
+A arma mais poderosa para analisar a distribuição dos números primos é a **Função Zeta de Riemann (Riemann Zeta Function)**. Originalmente, era uma série infinita definida por [Leonhard Euler](https://kenji.blog/p/euler/) para números reais $s > 1$.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 

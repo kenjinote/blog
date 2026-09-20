@@ -14,13 +14,13 @@ tags:
 
 ## Introdução
 
-Na área da matemática chamada topologia (geometria topológica), existem muitos teoremas que são intuitivamente interessantes e poderosos. Um dos mais famosos entre eles é o **Teorema da Bola Cabeluda** (Hairy Ball Theorem). Esse teorema é frequentemente expresso em palavras muito visuais e fáceis de entender: "você não pode pentear perfeitamente uma bola com pelos sem criar pelo menos um redemoinho".
+Na área da matemática chamada topologia (geometria topológica), existem muitos teoremas que são intuitivamente interessantes e poderosos. Um dos mais famosos entre eles é o **Teorema da Bola Cabeluda** ([Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)). Esse teorema é frequentemente expresso em palavras muito visuais e fáceis de entender: "você não pode pentear perfeitamente uma bola com pelos sem criar pelo menos um redemoinho".
 
 No entanto, por trás disso, há um profundo significado matemático oculto, que influencia desde a meteorologia da nossa Terra e computação gráfica até as leis fundamentais da física. Neste artigo, explicaremos detalhadamente desde o significado intuitivo deste teorema até a sua formulação matemática e exemplos surpreendentes de aplicações.
 
 ## O que é o Teorema da Bola Cabeluda?
 
-O Teorema da Bola Cabeluda foi mencionado pela primeira vez em 1885 por Henri Poincaré e foi rigorosamente provado em 1912 por Luitzen Egbertus Jan Brouwer.
+O Teorema da Bola Cabeluda foi mencionado pela primeira vez em 1885 por [Henri Poincaré](https://kenji.blog/p/poincare/) e foi rigorosamente provado em 1912 por Luitzen Egbertus Jan Brouwer.
 
 ### Compreensão Intuitiva
 

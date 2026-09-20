@@ -10,21 +10,21 @@ tags: ["Kurt Hensel", "p-adische Zahlen", "algebraische Zahlentheorie", "Mathema
 
 ## 1. Einleitung
 
-In der modernen Zahlentheorie, insbesondere in der algebraischen Zahlentheorie und der arithmetischen Geometrie, sind **p-adische Zahlen** ein unverzichtbares Werkzeug. Dieses revolutionäre Konzept wurde Ende des 19. Jahrhunderts vom deutschen Mathematiker **Kurt Hensel** (1861–1941) eingeführt.
+In der modernen Zahlentheorie, insbesondere in der algebraischen Zahlentheorie und der arithmetischen Geometrie, sind **p-adische Zahlen** ein unverzichtbares Werkzeug. Dieses revolutionäre Konzept wurde Ende des 19. Jahrhunderts vom deutschen Mathematiker **[Kurt Hensel](https://kenji.blog/p/hensel/)** (1861–1941) eingeführt.
 
-Seine Entdeckung diente als Brücke, die „lokale“ und „globale“ Perspektiven in der Mathematik verband und im 20. Jahrhundert einen Paradigmenwechsel herbeiführte. Dieser Artikel bietet eine detaillierte Untersuchung von Kurt Hensels Leben, seiner größten Errungenschaft – der Entdeckung der **p-adischen Zahlen** –, ihren mathematischen Grundlagen und ihrem tiefgreifenden Einfluss auf die moderne Mathematik.
+Seine Entdeckung diente als Brücke, die „lokale“ und „globale“ Perspektiven in der Mathematik verband und im 20. Jahrhundert einen Paradigmenwechsel herbeiführte. Dieser Artikel bietet eine detaillierte Untersuchung von [Kurt Hensel](https://kenji.blog/p/hensel/)s Leben, seiner größten Errungenschaft – der Entdeckung der **p-adischen Zahlen** –, ihren mathematischen Grundlagen und ihrem tiefgreifenden Einfluss auf die moderne Mathematik.
 
 ## 2. Bemerkenswerte Abstammung und frühes Leben
 
-Kurt Hensel wurde am 29. Dezember 1861 in Königsberg, Ostpreußen (heute Kaliningrad, Russland), geboren. Seine Familie nimmt in der intellektuellen und künstlerischen Geschichte Deutschlands einen äußerst bedeutenden Platz ein.
+[Kurt Hensel](https://kenji.blog/p/hensel/) wurde am 29. Dezember 1861 in Königsberg, Ostpreußen (heute Kaliningrad, Russland), geboren. Seine Familie nimmt in der intellektuellen und künstlerischen Geschichte Deutschlands einen äußerst bedeutenden Platz ein.
 
-Sein Großvater war der berühmte Maler **Wilhelm Hensel**, und seine Großmutter war die herausragende Pianistin und Komponistin **Fanny Mendelssohn** (die Schwester des berühmten Komponisten Felix Mendelssohn). Weiter zurückreichend war sein Urgroßvater der repräsentative Philosoph der Aufklärung, **Moses Mendelssohn**. Man kann sagen, dass dieses kulturell und intellektuell reiche familiäre Umfeld Kurt Hensels freies und kreatives Denken förderte.
+Sein Großvater war der berühmte Maler **Wilhelm Hensel**, und seine Großmutter war die herausragende Pianistin und Komponistin **Fanny Mendelssohn** (die Schwester des berühmten Komponisten Felix Mendelssohn). Weiter zurückreichend war sein Urgroßvater der repräsentative Philosoph der Aufklärung, **Moses Mendelssohn**. Man kann sagen, dass dieses kulturell und intellektuell reiche familiäre Umfeld [Kurt Hensel](https://kenji.blog/p/hensel/)s freies und kreatives Denken förderte.
 
 In seiner Jugend zog die Familie nach Berlin, wo er eine hochwertige Grund- und Sekundarschulbildung erhielt. Sein Talent für Mathematik erblühte früh und führte ihn ganz natürlich auf den Weg der mathematischen Forschung an der Universität.
 
 ## 3. Universitätszeit und Kroneckers Einfluss
 
-Hensel studierte Mathematik an den Universitäten Bonn und Berlin. Damals war die Universität Berlin eines der weltweiten Zentren für mathematische Forschung, an dem Größen wie **Karl Weierstraß** und **Leopold Kronecker** lehrten.
+Hensel studierte Mathematik an den Universitäten Bonn und Berlin. Damals war die Universität Berlin eines der weltweiten Zentren für mathematische Forschung, an dem Größen wie **[Karl Weierstraß](https://kenji.blog/p/weierstrass/)** und **Leopold Kronecker** lehrten.
 
 Unter ihnen hatte Kronecker den stärksten Einfluss auf Hensel. Wie sein berühmtes Zitat „Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk“ zeigt, war Kronecker fest davon überzeugt, dass die gesamte Mathematik streng auf der Grundlage ganzer Zahlen rekonstruiert werden sollte. Unter Kroneckers Anleitung widmete sich Hensel tief der Algebra und Zahlentheorie.
 
@@ -141,18 +141,18 @@ Hensels Konzepte wurden von anderen Mathematikern weiter verfeinert.
 
 1916 bewies Alexander Ostrowski den **Satz von Ostrowski**. Dies ist die überraschende Tatsache, dass „jeder nicht-triviale Absolutbetrag auf dem Körper der rationalen Zahlen entweder dem üblichen Absolutbetrag oder dem p-adischen Absolutbetrag für eine Primzahl $p$ äquivalent ist“. Somit deckt die Zusammenfassung der reellen Zahlen und aller p-adischen Zahlen alle Möglichkeiten der Vervollständigung der rationalen Zahlen „vollständig“ ab.
 
-Darüber hinaus etablierte Hensels Student **Helmut Hasse** das **Lokal-Global-Prinzip** (Hasse-Prinzip). Dies ist ein wunderbarer Satz, der besagt: „Eine notwendige und hinreichende Bedingung dafür, dass eine Gleichung über den rationalen Zahlen (global) eine Lösung hat, ist, dass sie über den reellen Zahlen und den p-adischen Zahlen für alle Primzahlen $p$ (lokal) eine Lösung hat.“ Damit sicherten sich p-adische Zahlen eine unerschütterliche Position als unverzichtbare Werkzeuge in der Zahlentheorie.
+Darüber hinaus etablierte Hensels Student **[Helmut Hasse](https://kenji.blog/p/hasse/)** das **Lokal-Global-Prinzip** (Hasse-Prinzip). Dies ist ein wunderbarer Satz, der besagt: „Eine notwendige und hinreichende Bedingung dafür, dass eine Gleichung über den rationalen Zahlen (global) eine Lösung hat, ist, dass sie über den reellen Zahlen und den p-adischen Zahlen für alle Primzahlen $p$ (lokal) eine Lösung hat.“ Damit sicherten sich p-adische Zahlen eine unerschütterliche Position als unverzichtbare Werkzeuge in der Zahlentheorie.
 
 ## 8. Beiträge als Pädagoge und Herausgeber sowie Vermächtnis
 
 Hensel leistete nicht nur als Forscher enorme Beiträge, sondern auch als Pädagoge und Herausgeber. Ab 1901 war er viele Jahre lang Chefredakteur des „Crelle-Journals“ (offiziell: Journal für die reine und angewandte Mathematik), einer der ältesten mathematischen Fachzeitschriften der Welt, und unterstützte die Verbreitung der Spitzenforschung in der Mathematik seiner Zeit.
 
-Seine Vorlesungen waren klar und leidenschaftlich und förderten die nächste Generation brillanter Mathematiker, darunter Helmut Hasse.
+Seine Vorlesungen waren klar und leidenschaftlich und förderten die nächste Generation brillanter Mathematiker, darunter [Helmut Hasse](https://kenji.blog/p/hasse/).
 
-Heute finden p-adische Zahlen in einem weiten Bereich Anwendung über die algebraische Zahlentheorie hinaus, einschließlich der **p-adischen Analysis**, der **p-adischen Hodge-Theorie** und sogar der **p-adischen Quantenmechanik** in der theoretischen Physik. Andrew Wiles' historischer Beweis von „Fermats letztem Satz“ wäre ohne die Theorie der p-adischen Zahlen unmöglich gewesen.
+Heute finden p-adische Zahlen in einem weiten Bereich Anwendung über die algebraische Zahlentheorie hinaus, einschließlich der **p-adischen Analysis**, der **p-adischen Hodge-Theorie** und sogar der **p-adischen Quantenmechanik** in der theoretischen Physik. [Andrew Wiles](https://kenji.blog/p/wiles/)' historischer Beweis von „Fermats letztem Satz“ wäre ohne die Theorie der p-adischen Zahlen unmöglich gewesen.
 
 ## 9. Fazit
 
-Ausgehend von der schönen Analogie zwischen Funktionen und Zahlen brachte Kurt Hensel mit den **p-adischen Zahlen** eine völlig neue Dimension in die Welt der Mathematik. Sein Ansatz, „das Globale durch das Betrachten des Lokalen zu verstehen“, wurde zu einer der grundlegenden Philosophien der Mathematik ab dem 20. Jahrhundert.
+Ausgehend von der schönen Analogie zwischen Funktionen und Zahlen brachte [Kurt Hensel](https://kenji.blog/p/hensel/) mit den **p-adischen Zahlen** eine völlig neue Dimension in die Welt der Mathematik. Sein Ansatz, „das Globale durch das Betrachten des Lokalen zu verstehen“, wurde zu einer der grundlegenden Philosophien der Mathematik ab dem 20. Jahrhundert.
 
 Seine reichen und originellen Ideen inspirieren auch heute noch Mathematiker weltweit, die nach den Wahrheiten der Zahlen und der Natur suchen.

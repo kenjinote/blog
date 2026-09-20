@@ -18,7 +18,7 @@ tags:
 
 No campo da geometria na matemática, o tema de encontrar a área de uma figura tem sido estudado por muitos matemáticos desde os tempos da Grécia antiga. Nas aulas da escola, aprendemos várias abordagens, começando da fórmula básica para a área de um triângulo, "base $\times$ altura $\div 2$", até fórmulas de área usando razões trigonométricas na matemática do ensino médio, a regra de Sarrus usando o produto vetorial em um plano de coordenadas e até a fórmula de Heron, que deriva a área baseada apenas nos comprimentos dos três lados.
 
-No entanto, se todos os vértices de um polígono se encontrarem em **pontos da grade** (pontos onde ambas as coordenadas $x$ e $y$ são números inteiros), existe uma fórmula mágica que permite calcular a área usando apenas operações aritméticas extremamente simples, sem medir comprimentos ou realizar multiplicações complexas ou cálculos de raiz quadrada. Esse é o **Teorema de Pick**, que explicaremos em detalhes desta vez.
+No entanto, se todos os vértices de um polígono se encontrarem em **pontos da grade** (pontos onde ambas as coordenadas $x$ e $y$ são números inteiros), existe uma fórmula mágica que permite calcular a área usando apenas operações aritméticas extremamente simples, sem medir comprimentos ou realizar multiplicações complexas ou cálculos de raiz quadrada. Esse é o **[Teorema de Pick](https://kenji.blog/p/picks-theorem/)**, que explicaremos em detalhes desta vez.
 
 O teorema de Pick não é apenas uma "fórmula conveniente e misteriosa para encontrar a área facilmente", mas tem um pano de fundo muito profundo que se conecta com a topologia, a teoria dos grafos e a geometria algébrica na matemática moderna. Neste artigo, nos aprofundaremos no teorema de Pick de vários ângulos, desde como usá-lo basicamente, até a demonstração matemática de por que uma fórmula tão simples se aplica, seu contexto histórico e até mesmo as limitações do teorema e a possibilidade de sua extensão para 3D.
 
@@ -30,9 +30,9 @@ Este teorema foi publicado em 1899 pelo matemático de origem austríaca **Georg
 
 Curiosamente, Pick tinha uma conexão profunda com o famoso Albert Einstein. Quando Einstein assumiu um cargo na universidade em Praga em 1911, Pick o recebeu calorosamente, e eles construíram uma amizade próxima, não apenas se engajando em discussões acadêmicas, mas também tocando violino juntos. Diz-se que Pick foi uma das pessoas que recomendou fortemente que Einstein estudasse "análise tensorial" e "geometria riemanniana", que se tornaram essenciais para a construção da teoria da relatividade geral.
 
-No entanto, os últimos anos de Pick foram muito trágicos. Sendo de ascendência judaica, ele enfrentou perseguição com a ascensão da Alemanha nazista. Em 1942, ele foi enviado para o campo de concentração de Theresienstadt, onde faleceu apenas duas semanas depois, aos 82 anos. Embora sua vida tenha tido um final triste, o "Teorema de Pick" que ele deixou para trás continua a ser amado na educação matemática em todo o mundo de hoje devido à sua beleza e simplicidade.
+No entanto, os últimos anos de Pick foram muito trágicos. Sendo de ascendência judaica, ele enfrentou perseguição com a ascensão da Alemanha nazista. Em 1942, ele foi enviado para o campo de concentração de Theresienstadt, onde faleceu apenas duas semanas depois, aos 82 anos. Embora sua vida tenha tido um final triste, o "[Teorema de Pick](https://kenji.blog/p/picks-theorem/)" que ele deixou para trás continua a ser amado na educação matemática em todo o mundo de hoje devido à sua beleza e simplicidade.
 
-## 3. O que é o Teorema de Pick?
+## 3. O que é o [Teorema de Pick](https://kenji.blog/p/picks-theorem/)?
 
 Agora, vamos ao cerne do teorema de Pick. A afirmação do teorema é surpreendentemente simples e pode ser compreendida até por alunos do ensino fundamental.
 

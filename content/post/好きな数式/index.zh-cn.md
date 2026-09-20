@@ -15,7 +15,7 @@ description: '为您介绍威尔逊定理、欧拉公式、费马大定理、巴
 ## 欧拉公式
 $e^{iπ}+1=0$
 
-## 费马大定理
+## [费马大定理](https://kenji.blog/p/fermats-last-theorem/)
 对于 $n≥3$ 的整数 $n$，不存在满足 $x^n+y^n=z^n$ 的正整数组 $x,y,z$
 
 ## 巴塞尔问题

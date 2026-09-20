@@ -15,9 +15,9 @@ tags:
   - "Python"
 ---
 
-## 1. Was ist Conways Spiel des Lebens?
+## 1. Was ist [Conways Spiel des Lebens](https://kenji.blog/p/conways-game-of-life/)?
 
-**Conways Spiel des Lebens** (Conway's Game of Life) ist eine Art **zellulärer Automat**, der 1970 vom britischen Mathematiker John Horton Conway entwickelt wurde. Obwohl es als Spiel bezeichnet wird, ist es ein „Null-Spieler-Spiel“, was bedeutet, dass seine Entwicklung durch seinen Anfangszustand bestimmt wird und keine weiteren Eingaben erforderlich sind.
+**[Conways Spiel des Lebens](https://kenji.blog/p/conways-game-of-life/)** ([Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/)) ist eine Art **zellulärer Automat**, der 1970 vom britischen Mathematiker John Horton Conway entwickelt wurde. Obwohl es als Spiel bezeichnet wird, ist es ein „Null-Spieler-Spiel“, was bedeutet, dass seine Entwicklung durch seinen Anfangszustand bestimmt wird und keine weiteren Eingaben erforderlich sind.
 
 Der größte Reiz dieses Systems liegt in der Tatsache, dass **aus extrem einfachen deterministischen Regeln unvorhersehbare und komplexe lebensähnliche Verhaltensweisen (Emergenz) generiert werden**.
 
@@ -135,4 +135,4 @@ plt.show()
 
 ## 6. Fazit
 
-Conways Spiel des Lebens ist eines der schönsten und intuitivsten Beispiele für **Emergenz**, bei dem Komplexität aus einfachen Regeln entsteht. Angesiedelt an den Grenzen von Mathematik, Informatik, Physik und Biologie, bietet dieses Modell weiterhin eine kraftvolle Metapher für unser Verständnis der Konzepte von "Leben" und "Berechnung".
+[Conways Spiel des Lebens](https://kenji.blog/p/conways-game-of-life/) ist eines der schönsten und intuitivsten Beispiele für **Emergenz**, bei dem Komplexität aus einfachen Regeln entsteht. Angesiedelt an den Grenzen von Mathematik, Informatik, Physik und Biologie, bietet dieses Modell weiterhin eine kraftvolle Metapher für unser Verständnis der Konzepte von "Leben" und "Berechnung".

@@ -17,7 +17,7 @@ tags:
 
 ## Introduction
 
-In the history of mathematics, the 19th century was a crucial period when analysis and algebra developed into their modern forms. At the center of this movement was the French mathematician **Joseph Liouville** (1809–1882). He established foundational theorems in complex analysis and was the first person in human history to concretely prove the existence of "transcendental numbers." He is also well known as the benefactor who deciphered and published the challenging manuscripts of Évariste Galois. In this article, we will delve deeply into Liouville's turbulent life and his numerous **mathematical achievements**.
+In the history of mathematics, the 19th century was a crucial period when analysis and algebra developed into their modern forms. At the center of this movement was the French mathematician **Joseph Liouville** (1809–1882). He established foundational theorems in complex analysis and was the first person in human history to concretely prove the existence of "transcendental numbers." He is also well known as the benefactor who deciphered and published the challenging manuscripts of [Évariste Galois](https://kenji.blog/p/galois/). In this article, we will delve deeply into Liouville's turbulent life and his numerous **mathematical achievements**.
 
 ## Early Life and Education
 
@@ -27,7 +27,7 @@ In 1825, he entered the prestigious **École Polytechnique**, where he learned f
 
 ## Rescuing Galois's Manuscripts
 
-When discussing Liouville, one cannot omit the story of how he saved the manuscripts of the young genius **Évariste Galois**. Galois lost his life in a duel at the young age of 20, but just before his death, he entrusted his mathematical discoveries to his friend Auguste Chevalier.
+When discussing Liouville, one cannot omit the story of how he saved the manuscripts of the young genius **[Évariste Galois](https://kenji.blog/p/galois/)**. Galois lost his life in a duel at the young age of 20, but just before his death, he entrusted his mathematical discoveries to his friend Auguste Chevalier.
 
 It was Liouville who shed light on Galois's theory, which had been ignored and misunderstood for a long time. In 1843, he thoroughly studied Galois's papers and realized they contained profoundly important discoveries regarding the solvability of algebraic equations. In 1846, Liouville published Galois's papers in the academic journal he had founded, the *Journal de Mathématiques Pures et Appliquées*, thereby presenting them to the world.
 
@@ -51,7 +51,7 @@ $$
 \text{If } f(z) \text{ is an entire and bounded function, then } f(z) = C \text{ (constant).}
 $$
 
-This theorem is astonishingly powerful and is used to provide extremely concise proofs for the Fundamental Theorem of Algebra (which states that every non-constant single-variable polynomial with complex coefficients has at least one complex root).
+This theorem is astonishingly powerful and is used to provide extremely concise proofs for the [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) (which states that every non-constant single-variable polynomial with complex coefficients has at least one complex root).
 
 ### 2. Discovery of Transcendental Numbers and Liouville Numbers
 

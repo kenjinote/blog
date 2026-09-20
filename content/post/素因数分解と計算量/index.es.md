@@ -138,7 +138,7 @@ Por cada aumento de 1 bit en el número de dígitos (el número se duplica), el 
 
 ## 2. Método de factorización de Fermat (Fermat's Factorization Method)
 
-Este método fue ideado por el matemático Pierre de Fermat en el siglo XVII. Dado un número compuesto impar $N$, intenta expresar $N$ como la diferencia de dos cuadrados.
+Este método fue ideado por el matemático [Pierre de Fermat](https://kenji.blog/p/fermat/) en el siglo XVII. Dado un número compuesto impar $N$, intenta expresar $N$ como la diferencia de dos cuadrados.
 
 $$ N = x^2 - y^2 = (x - y)(x + y) $$
 

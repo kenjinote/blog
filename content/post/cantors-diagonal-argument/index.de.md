@@ -12,7 +12,7 @@ tags: ["Cantor", "Diagonalargument", "Unendlichkeit", "Mathematik", "Beweis"]
 
 Das Konzept der „Unendlichkeit“, wie wir es uns im Alltag vorstellen, bedeutet wörtlich, dass es „kein Ende gibt“. Da natürliche Zahlen ($1, 2, 3, \dots$) immer weitergezählt werden können, ist ihre Anzahl unendlich. Andererseits existieren reelle Zahlen (alle Punkte auf der Zahlengeraden) ebenfalls in unendlicher Anzahl.
 
-Intuitiv neigen wir zu der Annahme: „Unendlich ist unendlich, beides ist gleichermaßen endlos“, aber der Mathematiker des 19. Jahrhunderts, Georg Cantor, bewies die erstaunliche Tatsache, dass **es bei Unendlichkeiten Größenunterschiede (Mächtigkeiten) gibt** .
+Intuitiv neigen wir zu der Annahme: „Unendlich ist unendlich, beides ist gleichermaßen endlos“, aber der Mathematiker des 19. Jahrhunderts, [Georg Cantor](https://kenji.blog/p/cantor/), bewies die erstaunliche Tatsache, dass **es bei Unendlichkeiten Größenunterschiede (Mächtigkeiten) gibt** .
 
 In diesem Artikel erklären wir detailliert, wie die Menge der reellen Zahlen „überwältigend größer“ als die Menge der natürlichen Zahlen ist, und zwar mithilfe einer von Cantor erdachten bahnbrechenden Beweismethode: dem **Diagonalargument (Diagonal Argument)** .
 
@@ -158,9 +158,9 @@ Als Schlussfolgerung wurde bewiesen, dass **die Menge der reellen Zahlen nicht i
 
 ---
 
-## Der Weg zur Kontinuumshypothese (Continuum Hypothesis)
+## Der Weg zur [Kontinuumshypothese (Continuum Hypothesis)](https://kenji.blog/p/continuum-hypothesis/)
 
-Cantors Diagonalargument zeigte, dass es „Hierarchien“ in der Unendlichkeit gibt.
+[Cantors Diagonalargument](https://kenji.blog/p/cantors-diagonal-argument/) zeigte, dass es „Hierarchien“ in der Unendlichkeit gibt.
 Wenn wir die Mächtigkeit der natürlichen Zahlen mit $\aleph_0$ und die der reellen Zahlen mit $\aleph_1$ oder $2^{\aleph_0}$ bezeichnen, gilt die folgende Beziehung:
 
 $$
@@ -169,18 +169,18 @@ $$
 
 Hier stand Cantor vor einer großen Frage. **„Gibt es eine unendliche Menge mit einer Mächtigkeit zwischen $\aleph_0$ und $2^{\aleph_0}$ ?“**
 
-Die Hypothese, dass „keine dazwischenliegende Mächtigkeit existiert“, wird als **Kontinuumshypothese (Continuum Hypothesis, CH)** bezeichnet. Cantor widmete sein Leben diesem Beweis, konnte ihn aber nicht erbringen.
+Die Hypothese, dass „keine dazwischenliegende Mächtigkeit existiert“, wird als **Kontinuumshypothese ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH)** bezeichnet. Cantor widmete sein Leben diesem Beweis, konnte ihn aber nicht erbringen.
 
-Später wurde von Kurt Gödel und Paul Cohen bewiesen, dass die Kontinuumshypothese **„in den aktuellen Axiomen der Mathematik (ZFC) weder bewiesen noch widerlegt werden kann (sie ist unabhängig)“** . Dies ist eine der tiefgreifendsten Entdeckungen der Mathematik des 20. Jahrhunderts.
+Später wurde von [Kurt Gödel](https://kenji.blog/p/godel/) und Paul Cohen bewiesen, dass die Kontinuumshypothese **„in den aktuellen Axiomen der Mathematik (ZFC) weder bewiesen noch widerlegt werden kann (sie ist unabhängig)“** . Dies ist eine der tiefgreifendsten Entdeckungen der Mathematik des 20. Jahrhunderts.
 
 ---
 
 ## Zusammenfassung
 
-Cantors Diagonalargument mag auf den ersten Blick wie ein einfaches Rätsel aussehen, aber dahinter verbirgt sich eine mächtige Logik, die sich der „Wahrheit der Unendlichkeit“ nähert.
+[Cantors Diagonalargument](https://kenji.blog/p/cantors-diagonal-argument/) mag auf den ersten Blick wie ein einfaches Rätsel aussehen, aber dahinter verbirgt sich eine mächtige Logik, die sich der „Wahrheit der Unendlichkeit“ nähert.
 
 1. Die Größe unendlicher Mengen lässt sich durch „Eins-zu-eins-Zuordnungen“ vergleichen.
 2. Bis hin zu den rationalen Zahlen haben sie dieselbe Größe wie natürliche Zahlen (abzählbar unendlich).
 3. Durch das Argument, neue Zahlen durch Verschieben entlang der Diagonale zu bilden, wird bewiesen, dass es mehr reelle als natürliche Zahlen gibt (überabzählbar unendlich).
 
-Genau diese der Intuition widersprechende, aber absolut fehlerfreie Schönheit der Logik ist wohl der größte Reiz der Mathematik. Das Diagonalargument wurde später auch in Theorien angewandt, die den Kern der Informatik und der mathematischen Logik bilden, wie etwa beim Halteproblem von Alan Turing und beim Beweis von Gödels Unvollständigkeitssatz.
+Genau diese der Intuition widersprechende, aber absolut fehlerfreie Schönheit der Logik ist wohl der größte Reiz der Mathematik. Das Diagonalargument wurde später auch in Theorien angewandt, die den Kern der Informatik und der mathematischen Logik bilden, wie etwa beim Halteproblem von [Alan Turing](https://kenji.blog/p/turing/) und beim Beweis von Gödels Unvollständigkeitssatz.

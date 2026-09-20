@@ -8,9 +8,9 @@ categories: ["Matematika", "Biografi"]
 tags: ["Grothendieck", "Geometri Aljabar", "Teori Skema", "Teori Kategori"]
 ---
 
-# Alexander Grothendieck: Kehidupan dan Pencapaian Matematikawan Terbesar Abad ke-20
+# [[Alexander Grothendieck](https://kenji.blog/p/grothendieck/): Kehidupan dan Pencapaian Matematikawan Terbesar Abad ke-20](https://kenji.blog/p/grothendieck/)
 
-Alexander Grothendieck adalah salah satu matematikawan terbesar dalam sejarah yang membawa pergeseran paradigma mendasar dalam komunitas matematika di akhir abad ke-20, khususnya di bidang geometri aljabar. Pencapaiannya jauh melampaui penyelesaian masalah terbuka secara individu; pencapaian tersebut pada dasarnya merekonstruksi bahasa dan kerangka konseptual matematika itu sendiri. Dalam artikel ini, kami akan memberikan penjelasan terperinci tentang kehidupannya yang luar biasa dan dramatis, serta dampaknya yang tak terukur pada matematika modern.
+[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) adalah salah satu matematikawan terbesar dalam sejarah yang membawa pergeseran paradigma mendasar dalam komunitas matematika di akhir abad ke-20, khususnya di bidang geometri aljabar. Pencapaiannya jauh melampaui penyelesaian masalah terbuka secara individu; pencapaian tersebut pada dasarnya merekonstruksi bahasa dan kerangka konseptual matematika itu sendiri. Dalam artikel ini, kami akan memberikan penjelasan terperinci tentang kehidupannya yang luar biasa dan dramatis, serta dampaknya yang tak terukur pada matematika modern.
 
 ## 1. Masa Kecil yang Penuh Gejolak dan Bayang-Bayang Perang
 
@@ -124,4 +124,4 @@ Pada tahun 1980-an, ia menulis memoar besar-besaran berjudul *Récoltes et Semai
 
 ## Kesimpulan
 
-Alexander Grothendieck adalah seorang raksasa yang membawa lanskap yang sama sekali baru ke disiplin matematika. Konsep-konsep yang ia tinggalkan melampaui kerangka matematika belaka, menunjukkan kemungkinan-kemungkinan yang meluas dari pemikiran logis manusia. Dunia mendalam yang ia tatap terus membuahkan hasil yang kaya bahkan hingga hari ini.
+[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) adalah seorang raksasa yang membawa lanskap yang sama sekali baru ke disiplin matematika. Konsep-konsep yang ia tinggalkan melampaui kerangka matematika belaka, menunjukkan kemungkinan-kemungkinan yang meluas dari pemikiran logis manusia. Dunia mendalam yang ia tatap terus membuahkan hasil yang kaya bahkan hingga hari ini.

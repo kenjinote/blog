@@ -32,7 +32,7 @@ Ele então prosseguiu para o Departamento de Matemática da Faculdade de Ciênci
 
 Em 1898, Takagi viajou para a Alemanha como estudante no exterior pelo Ministério da Educação. Ele inicialmente estudou na Universidade de Berlim, mas depois se transferiu para a Universidade de Göttingen, que era o centro da matemática no mundo naquela época.
 
-Esperando por ele lá estavam grandes matemáticos que deixaram seus nomes na história da matemática, como David Hilbert e Felix Klein. Em particular, Hilbert acabara de publicar o seu "Zahlbericht" (Relatório sobre os Números), que era o culminar da teoria algébrica dos números, e o seu conteúdo teve um impacto profundo em Takagi. Sob a orientação de Hilbert, ele resolveu uma parte do "Sonho de Juventude de Kronecker" (um problema relativo à teoria da multiplicação complexa), obteve seu doutorado em 1903 e retornou ao Japão.
+Esperando por ele lá estavam grandes matemáticos que deixaram seus nomes na história da matemática, como [David Hilbert](https://kenji.blog/p/hilbert/) e Felix Klein. Em particular, Hilbert acabara de publicar o seu "Zahlbericht" (Relatório sobre os Números), que era o culminar da teoria algébrica dos números, e o seu conteúdo teve um impacto profundo em Takagi. Sob a orientação de Hilbert, ele resolveu uma parte do "Sonho de Juventude de Kronecker" (um problema relativo à teoria da multiplicação complexa), obteve seu doutorado em 1903 e retornou ao Japão.
 
 ## 2. Avanço no isolamento: O nascimento da teoria de corpos de classes
 
@@ -80,7 +80,7 @@ A teoria de corpos de classes de Takagi determinou completamente que tipo de cor
 
 Em 1920, no Congresso Internacional de Matemáticos realizado em Estrasburgo, após o fim da Primeira Guerra Mundial, Takagi apresentou esta teoria de corpos de classes. No entanto, pelo fato de o conteúdo ser tão inovador a princípio, ele não foi totalmente compreendido.
 
-Mais tarde, o envio de uma separata do seu artigo a Carl Siegel, na Alemanha, chamou a atenção de matemáticos promissores, como Emil Artin e Helmut Hasse. Eles compreenderam imediatamente a grandeza da teoria de Takagi e avançaram em pesquisas posteriores baseadas nessa base.
+Mais tarde, o envio de uma separata do seu artigo a Carl Siegel, na Alemanha, chamou a atenção de matemáticos promissores, como Emil Artin e [Helmut Hasse](https://kenji.blog/p/hasse/). Eles compreenderam imediatamente a grandeza da teoria de Takagi e avançaram em pesquisas posteriores baseadas nessa base.
 
 Em particular, Artin provou a **lei de reciprocidade de Artin** usando a teoria de Takagi, completando a formulação da teoria de corpos de classes. Com isso, o nome de Teiji Takagi ficou para sempre gravado na história da matemática.
 
@@ -109,7 +109,7 @@ Além de suas realizações matemáticas, Teiji Takagi fez contribuições incom
 - **"Lições sobre a Teoria Elementar dos Números"**: Um livro que explica tudo, desde os fundamentos da teoria dos números até a lei de reciprocidade de Gauss.
 - **"Contos Históricos da Matemática Moderna"**: Um livro histórico que descreve vividamente o conjunto de matemáticos do século XIX. Ele transmite o drama do desenvolvimento matemático.
 
-As sementes que ele plantou foram passadas a matemáticos japoneses que mais tarde atuaram mundialmente, como Kunihiko Kodaira, Kiyoshi Ito e, além disso, Goro Shimura e Yutaka Taniyama.
+As sementes que ele plantou foram passadas a matemáticos japoneses que mais tarde atuaram mundialmente, como [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/), Kiyoshi Ito e, além disso, [Goro Shimura](https://kenji.blog/p/shimura-goro/) e [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/).
 
 ## Conclusão
 

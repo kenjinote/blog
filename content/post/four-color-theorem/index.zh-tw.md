@@ -10,7 +10,7 @@ tags: ["四色定理", "圖論", "電腦輔助證明", "拓撲學"]
 
 ## 1. 什麼是[四色定理](https://kenji.blog/p/four-color-theorem/)？
 
-[四色定理](https://kenji.blog/p/four-color-theorem/)（Four Color Theorem）是數學，特別是圖論及拓撲學中最著名且迷人的問題之一。它的主張非常簡單，直觀到連小學生都能理解。「任何平面上的地圖，若要相鄰的區域塗上不同的顏色，最多只需要 **4種顏色** 就足夠了。」
+[四色定理](https://kenji.blog/p/four-color-theorem/)（[Four Color Theorem](https://kenji.blog/p/four-color-theorem/)）是數學，特別是圖論及拓撲學中最著名且迷人的問題之一。它的主張非常簡單，直觀到連小學生都能理解。「任何平面上的地圖，若要相鄰的區域塗上不同的顏色，最多只需要 **4種顏色** 就足夠了。」
 
 這裡說的「相鄰」，是指共享邊界線的狀態，而不是只有點接觸。如果只是在點上接觸，那麼塗上相同的顏色也沒有問題。這個直觀的假說最初是在1852年由法蘭西斯·古德里（Francis Guthrie）提出。他在為英國地圖塗色時，注意到無論縣的邊界線多麼複雜，只要有4種顏色就能完全塗滿。
 
@@ -67,7 +67,7 @@ graph TD
 
 ## 1. 什麼是[四色定理](https://kenji.blog/p/four-color-theorem/)？
 
-[四色定理](https://kenji.blog/p/four-color-theorem/)（Four Color Theorem）是數學，特別是圖論及拓撲學中最著名且迷人的問題之一。它的主張非常簡單，直觀到連小學生都能理解。「任何平面上的地圖，若要相鄰的區域塗上不同的顏色，最多只需要 **4種顏色** 就足夠了。」
+[四色定理](https://kenji.blog/p/four-color-theorem/)（[Four Color Theorem](https://kenji.blog/p/four-color-theorem/)）是數學，特別是圖論及拓撲學中最著名且迷人的問題之一。它的主張非常簡單，直觀到連小學生都能理解。「任何平面上的地圖，若要相鄰的區域塗上不同的顏色，最多只需要 **4種顏色** 就足夠了。」
 
 這裡說的「相鄰」，是指共享邊界線的狀態，而不是只有點接觸。如果只是在點上接觸，那麼塗上相同的顏色也沒有問題。這個直觀的假說最初是在1852年由法蘭西斯·古德里（Francis Guthrie）提出。他在為英國地圖塗色時，注意到無論縣的邊界線多麼複雜，只要有4種顏色就能完全塗滿。
 
@@ -124,7 +124,7 @@ graph TD
 
 ## 1. 什麼是[四色定理](https://kenji.blog/p/four-color-theorem/)？
 
-[四色定理](https://kenji.blog/p/four-color-theorem/)（Four Color Theorem）是數學，特別是圖論及拓撲學中最著名且迷人的問題之一。它的主張非常簡單，直觀到連小學生都能理解。「任何平面上的地圖，若要相鄰的區域塗上不同的顏色，最多只需要 **4種顏色** 就足夠了。」
+[四色定理](https://kenji.blog/p/four-color-theorem/)（[Four Color Theorem](https://kenji.blog/p/four-color-theorem/)）是數學，特別是圖論及拓撲學中最著名且迷人的問題之一。它的主張非常簡單，直觀到連小學生都能理解。「任何平面上的地圖，若要相鄰的區域塗上不同的顏色，最多只需要 **4種顏色** 就足夠了。」
 
 這裡說的「相鄰」，是指共享邊界線的狀態，而不是只有點接觸。如果只是在點上接觸，那麼塗上相同的顏色也沒有問題。這個直觀的假說最初是在1852年由法蘭西斯·古德里（Francis Guthrie）提出。他在為英國地圖塗色時，注意到無論縣的邊界線多麼複雜，只要有4種顏色就能完全塗滿。
 
@@ -181,7 +181,7 @@ graph TD
 
 ## 1. 什麼是[四色定理](https://kenji.blog/p/four-color-theorem/)？
 
-[四色定理](https://kenji.blog/p/four-color-theorem/)（Four Color Theorem）是數學，特別是圖論及拓撲學中最著名且迷人的問題之一。它的主張非常簡單，直觀到連小學生都能理解。「任何平面上的地圖，若要相鄰的區域塗上不同的顏色，最多只需要 **4種顏色** 就足夠了。」
+[四色定理](https://kenji.blog/p/four-color-theorem/)（[Four Color Theorem](https://kenji.blog/p/four-color-theorem/)）是數學，特別是圖論及拓撲學中最著名且迷人的問題之一。它的主張非常簡單，直觀到連小學生都能理解。「任何平面上的地圖，若要相鄰的區域塗上不同的顏色，最多只需要 **4種顏色** 就足夠了。」
 
 這裡說的「相鄰」，是指共享邊界線的狀態，而不是只有點接觸。如果只是在點上接觸，那麼塗上相同的顏色也沒有問題。這個直觀的假說最初是在1852年由法蘭西斯·古德里（Francis Guthrie）提出。他在為英國地圖塗色時，注意到無論縣的邊界線多麼複雜，只要有4種顏色就能完全塗滿。
 

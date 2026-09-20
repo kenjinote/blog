@@ -10,7 +10,7 @@ tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: 'C++とggmlを用いて、TinyLLaMAのような小規模AIモデルをローカル環境で推論するための詳細な開発手順と内部アーキテクチャを解説します。メモリマッピング、テンソル演算、SIMD最適化まで網羅。'
 ---
 
-# C++で始める小規模AIモデル（TinyLLaMAなど）の開発手順
+# [C++で始める小規模AIモデル（TinyLLaMAなど）の開発手順](https://kenji.blog/p/cpp-small-ai-model-tinyllama-dev-guide/)
 
 近年、大規模言語モデル（LLM）のローカル環境での実行に対する関心が急速に高まっています。特に、TinyLLaMA（1.1Bパラメータ）のような小規模モデルは、限られたリソースのエッジデバイスや一般的なノートPC（Windows環境を含む）上でも実用的な速度で推論が可能です。PythonとPyTorchを用いた開発が主流である一方で、究極のパフォーマンスと省メモリ性を追求する場合、C++とC言語ベースのテンソルライブラリである「ggml」の組み合わせがデファクトスタンダードとなっています。
 

@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 Si $r$ est pair, nous pouvons factoriser en utilisant la différence de deux carrés :
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-Cela implique que $N$ partage un diviseur commun avec $(a^{r/2} - 1)$ ou $(a^{r/2} + 1)$ (à condition que $a^{r/2} \not\equiv -1 \pmod N$). Ainsi, en utilisant l'algorithme d'Euclide pour calculer :
+Cela implique que $N$ partage un diviseur commun avec $(a^{r/2} - 1)$ ou $(a^{r/2} + 1)$ (à condition que $a^{r/2} \not\equiv -1 \pmod N$). Ainsi, en utilisant l'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) pour calculer :
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$
@@ -341,7 +341,7 @@ Pour se préparer à l'arrivée du « Q-Day » (le jour où les ordinateurs quan
 
 La PQC est basée sur de nouveaux problèmes mathématiques (problèmes de réseaux euclidiens, polynômes multivariés, fonctions de hachage, etc.) que l'on considère impossibles à résoudre efficacement même avec l'algorithme de Shor (ou l'algorithme de Grover). Des algorithmes comme « CRYSTALS-Kyber » et « CRYSTALS-Dilithium » ont déjà été sélectionnés comme normes standards, et leur intégration commence progressivement dans les protocoles de communication des navigateurs web ou iMessage d'Apple.
 
-Pour les ingénieurs qui gèrent les infrastructures informatiques, intégrer l'« agilité cryptographique » (la capacité à changer rapidement de méthode de chiffrement) pour passer du RSA existant ou de la cryptographie sur les courbes elliptiques à la PQC, constituera une mission majeure dans le futur.
+[Pour les ingénieurs](https://kenji.blog/p/[エンジニア向け](https://kenji.blog/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)プロンプトエンジニアリングの基本と開発への応用/) qui gèrent les infrastructures informatiques, intégrer l'« agilité cryptographique » (la capacité à changer rapidement de méthode de chiffrement) pour passer du RSA existant ou de la cryptographie sur les courbes elliptiques à la PQC, constituera une mission majeure dans le futur.
 
 ---
 

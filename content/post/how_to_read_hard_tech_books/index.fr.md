@@ -98,7 +98,7 @@ Voyons ici le processus de transcription de formules en code à travers deux exe
 
 ### 4.1 Exemple 1 : Les mathématiques de la cryptographie RSA et son implémentation en Python
 
-La cryptographie RSA, représentante de la cryptographie à clé publique, est une belle application de la théorie élémentaire des nombres (congruences, théorème d'Euler, algorithme d'Euclide étendu).
+La cryptographie RSA, représentante de la cryptographie à clé publique, est une belle application de la théorie élémentaire des nombres (congruences, théorème d'Euler, algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) étendu).
 
 #### Contexte mathématique
 Les processus de génération de clés, de chiffrement et de déchiffrement de la cryptographie RSA sont représentés par les formules suivantes.
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-Pour trouver $d$ satisfaisant la formule $e \cdot d \equiv 1 \pmod{\phi(n)}$, il est nécessaire d'implémenter l'algorithme d'Euclide étendu. Ainsi, **lorsque l'on essaie de coder des formules mathématiques, on est confronté à des problèmes d'implémentation tels que "comment calculer cette variable concrètement ?", et en les résolvant, la compréhension mathématique s'approfondit considérablement**.
+Pour trouver $d$ satisfaisant la formule $e \cdot d \equiv 1 \pmod{\phi(n)}$, il est nécessaire d'implémenter l'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) étendu. Ainsi, **lorsque l'on essaie de coder des formules mathématiques, on est confronté à des problèmes d'implémentation tels que "comment calculer cette variable concrètement ?", et en les résolvant, la compréhension mathématique s'approfondit considérablement**.
 
 ### 4.2 Exemple 2 : Algorithme de Dijkstra et Relâchement (Relaxation)
 

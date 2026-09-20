@@ -20,7 +20,7 @@ During his school days at Sherborne, he already demonstrated extraordinary talen
 
 # 3. Turing Machine and the Theory of Computability
 
-One of the greatest unsolved problems in the mathematical world at that time was the "Entscheidungsproblem" (Decision Problem) proposed by David Hilbert in 1928. This was a fundamental question: "Given any mathematical statement, does there exist a mechanical algorithmic procedure to determine whether it is true or false?"
+One of the greatest unsolved problems in the mathematical world at that time was the "Entscheidungsproblem" (Decision Problem) proposed by [David Hilbert](https://kenji.blog/p/hilbert/) in 1928. This was a fundamental question: "Given any mathematical statement, does there exist a mechanical algorithmic procedure to determine whether it is true or false?"
 
 Turing tackled this problem with an entirely new approach. In his groundbreaking 1936 paper "On Computable Numbers, with an Application to the Entscheidungsproblem," he defined an abstract computing machine, the **Turing Machine**.
 
@@ -38,7 +38,7 @@ flowchart TD
 
 Turing mathematically showed that any computable function could be computed by this **Turing Machine**. Furthermore, he devised the "Universal Turing Machine," which could read data describing the structure of any Turing machine and simulate its operation. This is exactly the basic concept of the modern "von Neumann architecture" computer—storing a program as data in memory and executing it.
 
-## 3.2 The Halting Problem and Incompleteness
+## 3.2 [The Halting Problem](https://kenji.blog/p/halting-problem/) and Incompleteness
 
 Turing proved that there is no general algorithm to determine in advance whether a given program will eventually halt for a given input, meaning the **Halting Problem** is undecidable.
 
@@ -139,4 +139,4 @@ On June 7, 1954, he passed away at the young age of 41. The cause of death was c
 
 However, decades after his death, global reassessment of his achievements and the restoration of his honor progressed. In 2009, the British government officially apologized for the unjust treatment he received at the time, and in 2013, he was granted a posthumous royal pardon by Queen Elizabeth II.
 
-Today, the world's highest award in computer science (often called the "Nobel Prize of Computing") is named the **Turing Award** to forever honor his achievements. Alan Turing possessed ideas that were vastly ahead of his time in diverse fields: mathematics, cryptography, computer science, artificial intelligence, and biology. The theories and ideas he left behind continue to breathe powerfully today as the foundation of our modern digital society.
+Today, the world's highest award in computer science (often called the "Nobel Prize of Computing") is named the **Turing Award** to forever honor his achievements. [Alan Turing](https://kenji.blog/p/turing/) possessed ideas that were vastly ahead of his time in diverse fields: mathematics, cryptography, computer science, artificial intelligence, and biology. The theories and ideas he left behind continue to breathe powerfully today as the foundation of our modern digital society.

@@ -16,7 +16,7 @@ tags:
 
 ## Introdução
 
-Na história da matemática, o século XIX é conhecido como a "Era do Rigor". O matemático francês **Augustin-Louis Cauchy** (1789-1857) foi quem forneceu uma base lógica firme para o cálculo, que anteriormente havia sido tratado de forma intuitiva. Seu nome coroa tantos teoremas e conceitos que qualquer pessoa que estude matemática moderna está fadada a encontrá-lo.
+Na história da matemática, o século XIX é conhecido como a "Era do Rigor". O matemático francês **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** (1789-1857) foi quem forneceu uma base lógica firme para o cálculo, que anteriormente havia sido tratado de forma intuitiva. Seu nome coroa tantos teoremas e conceitos que qualquer pessoa que estude matemática moderna está fadada a encontrá-lo.
 
 Este artigo explora a vida turbulenta de Cauchy, um gigante no mundo matemático, e as brilhantes realizações matemáticas que ele deixou para trás.
 
@@ -95,6 +95,6 @@ Seus temas de pesquisa não se limitaram à análise, mas se estenderam a uma am
 
 ## Conclusão
 
-Augustin-Louis Cauchy forjou a matemática, que dependia da intuição, em uma disciplina acadêmica rigorosa através do poder da lógica. Os conceitos e teoremas que ele criou estão profundamente enraizados em todos os lugares da matemática moderna.
+[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) forjou a matemática, que dependia da intuição, em uma disciplina acadêmica rigorosa através do poder da lógica. Os conceitos e teoremas que ele criou estão profundamente enraizados em todos os lugares da matemática moderna.
 
 Embora sua vida não tenha sido tranquila, ao escolher o exílio como um mártir por suas convicções políticas, sua paixão pela busca da verdade nunca vacilou. O imenso legado intelectual que ele deixou continua a orientar matemáticos e cientistas em todo o mundo hoje.

@@ -10,15 +10,15 @@ tags: ["Andrew Wiles", "Fermat", "Number Theory"]
 
 ## Introduction
 
-In the history of mathematics, few stories are as dramatic and inspiring as this one. The British mathematician **Andrew Wiles** achieved the monumental feat of proving "[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)," a problem that had remained unsolved for over 350 years.
+In the history of mathematics, few stories are as dramatic and inspiring as this one. The British mathematician **[Andrew Wiles](https://kenji.blog/p/wiles/)** achieved the monumental feat of proving "[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)," a problem that had remained unsolved for over 350 years.
 
 His life's journey reads like a movie, beginning with a romantic childhood dream, followed by seven years of solitary, secret research, the devastating discovery of a flaw, and a miraculous comeback. This article delves into the episodes of Wiles's life and the profound mathematical achievements he undertook.
 
 ## A Boy's Dream: An Encounter at Age 10
 
-Andrew Wiles was born on April 11, 1953, in Cambridge, England. His destiny was set when he was just 10 years old. In his local library, he picked up a mathematics book titled "Men of Mathematics" (by E. T. Bell).
+[Andrew Wiles](https://kenji.blog/p/wiles/) was born on April 11, 1953, in Cambridge, England. His destiny was set when he was just 10 years old. In his local library, he picked up a mathematics book titled "Men of Mathematics" (by E. T. Bell).
 
-In that book, he encountered what was considered the greatest mystery in the history of mathematics: [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/). It is the famous theorem where the French mathematician Pierre de Fermat wrote in the margin of a book, "I have a truly marvelous demonstration of this proposition which this margin is too narrow to contain."
+In that book, he encountered what was considered the greatest mystery in the history of mathematics: [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/). It is the famous theorem where the French mathematician [Pierre de Fermat](https://kenji.blog/p/fermat/) wrote in the margin of a book, "I have a truly marvelous demonstration of this proposition which this margin is too narrow to contain."
 
 As a 10-year-old boy, Wiles was deeply fascinated by how simple the theorem looked, yet how it had thwarted the efforts of great mathematicians for centuries. "I will be the first person to prove this theorem," the boy swore to himself. This **pure passion** became the driving force for the rest of his life.
 
@@ -85,7 +85,7 @@ In September 1994, Wiles finally decided to give up and thought about writing a 
 
 Suddenly, an idea flashed through his mind to combine the previously abandoned Iwasawa theory approach with this Kolyvagin-Flach method. It was a moment of sheer revelation, where the weakness of one perfectly complemented the other.
 
-> "It was an unbelievable revelation. It was so beautifully, so simply, and I could not understand how I had missed it." (Andrew Wiles)
+> "It was an unbelievable revelation. It was so beautifully, so simply, and I could not understand how I had missed it." ([Andrew Wiles](https://kenji.blog/p/wiles/))
 
 Thanks to this "magic moment," the flaw in the proof was completely repaired. In October 1994, Wiles and Taylor submitted two corrected papers, finally putting a complete end to the greatest mystery in the mathematical world after 350 years.
 
@@ -99,6 +99,6 @@ For this achievement, Wiles received numerous prestigious awards, including the 
 
 ## Conclusion
 
-Andrew Wiles's story demonstrates the infinite possibilities of human beings brought about by pure curiosity and an indomitable spirit. The seemingly **reckless dream** harbored by a 10-year-old boy became a reality decades later, overcoming numerous setbacks.
+[Andrew Wiles](https://kenji.blog/p/wiles/)'s story demonstrates the infinite possibilities of human beings brought about by pure curiosity and an indomitable spirit. The seemingly **reckless dream** harbored by a 10-year-old boy became a reality decades later, overcoming numerous setbacks.
 
-Although [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) has been solved, many mathematicians continue to explore the fertile new fields of mathematics opened up by Wiles in search of the next truth. His name, along with Pierre de Fermat, will be forever etched in the history of human intellect.
+Although [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) has been solved, many mathematicians continue to explore the fertile new fields of mathematics opened up by Wiles in search of the next truth. His name, along with [Pierre de Fermat](https://kenji.blog/p/fermat/), will be forever etched in the history of human intellect.

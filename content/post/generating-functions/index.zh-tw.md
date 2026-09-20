@@ -13,11 +13,11 @@ tags:
   - "演算法"
 ---
 
-在數學的世界裡，存在著一些像「魔法橋樑」一樣的概念，能夠將看似毫不相干的領域連接起來。其中之一就是 **母函數** (Generating Function)。透過將離散的「數列」轉化為連續的「函數」，可以將複雜的組合問題轉化為代數計算。
+在數學的世界裡，存在著一些像「魔法橋樑」一樣的概念，能夠將看似毫不相干的領域連接起來。其中之一就是 **[母函數](https://kenji.blog/p/generating-functions/)** (Generating Function)。透過將離散的「數列」轉化為連續的「函數」，可以將複雜的組合問題轉化為代數計算。
 
-本文將從母函數的基本思想出發，詳細講解其驚人的威力——從計算硬幣支付方式的組合，到推導費氏數列的通項公式。此外，我們還將提及它在演算法和競技程式設計中的形式冪級數 (FPS) 應用。
+本文將從[母函數](https://kenji.blog/p/generating-functions/)的基本思想出發，詳細講解其驚人的威力——從計算硬幣支付方式的組合，到推導費氏數列的通項公式。此外，我們還將提及它在演算法和競技程式設計中的形式冪級數 (FPS) 應用。
 
-## 1. 什麼是母函數？
+## 1. 什麼是[母函數](https://kenji.blog/p/generating-functions/)？
 
 給定一個數列 $a_0, a_1, a_2, \dots$，我們考慮一個函數 $A(x)$，它的每一項係數正好對應數列中各個項作為 $x$ 的冪的係數。
 
@@ -25,7 +25,7 @@ $$
 A(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \dots = \sum_{n=0}^{\infty} a_n x^n
 $$
 
-這個函數 $A(x)$ 就被稱為數列 $\{a_n\}$ 的 **普通母函數** (Ordinary Generating Function)。
+這個函數 $A(x)$ 就被稱為數列 $\{a_n\}$ 的 **普通[母函數](https://kenji.blog/p/generating-functions/)** (Ordinary Generating Function)。
 
 為什麼要進行這樣的轉換呢？這是因為 **可以將對數列的操作替換為對函數的代數操作**。數列的平移、求和或卷積等操作，都被轉換為函數之間的加法、乘法、微分和積分等我們熟悉的操作。
 
@@ -37,14 +37,14 @@ graph LR
     A -.->|"複雜操作"| D
 ```
 
-## 2. 硬幣支付方式與母函數
+## 2. 硬幣支付方式與[母函數](https://kenji.blog/p/generating-functions/)
 
-要直觀地理解母函數的威力，讓我們考慮一個「硬幣支付方式」的問題。
+要直觀地理解[母函數](https://kenji.blog/p/generating-functions/)的威力，讓我們考慮一個「硬幣支付方式」的問題。
 
 **問題：**
 使用1日圓、2日圓和5日圓硬幣，求恰好支付 $n$ 日圓的組合數 $a_n$。
 
-我們使用母函數來解這個問題。
+我們使用[母函數](https://kenji.blog/p/generating-functions/)來解這個問題。
 對於每種硬幣，我們根據使用的數量構建一個多項式。
 
 *   1日圓硬幣的選擇: $1 + x + x^2 + x^3 + \dots$ (0枚、1枚、2枚...)
@@ -67,7 +67,7 @@ $$
 
 ### 卷積與多項式乘積
 
-為什麼函數的乘積對應於組合的計數呢？讓我們看看兩個數列 $a_n$ 和 $b_n$ 的母函數 $A(x), B(x)$ 相乘會發生什麼。
+為什麼函數的乘積對應於組合的計數呢？讓我們看看兩個數列 $a_n$ 和 $b_n$ 的[母函數](https://kenji.blog/p/generating-functions/) $A(x), B(x)$ 相乘會發生什麼。
 
 $$
 A(x)B(x) = (a_0 + a_1 x + a_2 x^2 + \dots)(b_0 + b_1 x + b_2 x^2 + \dots)
@@ -83,7 +83,7 @@ $$
 *   $F_1 = 1$
 *   $F_n = F_{n-1} + F_{n-2} \quad (n \ge 2)$
 
-設這個數列的母函數為 $F(x) = \sum_{n=0}^{\infty} F_n x^n$。
+設這個數列的[母函數](https://kenji.blog/p/generating-functions/)為 $F(x) = \sum_{n=0}^{\infty} F_n x^n$。
 
 $$
 \begin{aligned}
@@ -100,7 +100,7 @@ $$
 F(x) = x + x F(x) + x^2 F(x)
 $$
 
-解關於 $F(x)$ 的方程，我們得到了費氏數列的母函數。
+解關於 $F(x)$ 的方程，我們得到了費氏數列的[母函數](https://kenji.blog/p/generating-functions/)。
 
 $$
 F(x) = \frac{x}{1 - x - x^2}
@@ -137,17 +137,17 @@ graph TD
     PF -->|"冪級數展開及比較係數"| AN["通項公式 (比內公式)"]
 ```
 
-## 4. 指數型母函數與排列
+## 4. 指數型[母函數](https://kenji.blog/p/generating-functions/)與排列
 
-在處理考慮順序的組合問題，即「排列」時，**指數型母函數** (Exponential Generating Function) 將大顯身手。
+在處理考慮順序的組合問題，即「排列」時，**指數型[母函數](https://kenji.blog/p/generating-functions/)** (Exponential Generating Function) 將大顯身手。
 
-對於數列 $a_n$，其指數型母函數 $E(x)$ 定義如下：
+對於數列 $a_n$，其指數型[母函數](https://kenji.blog/p/generating-functions/) $E(x)$ 定義如下：
 
 $$
 E(x) = \sum_{n=0}^{\infty} \frac{a_n}{n!} x^n = a_0 + a_1 x + \frac{a_2}{2!} x^2 + \frac{a_3}{3!} x^3 + \dots
 $$
 
-透過除以 $n!$，考慮順序的計算（如微分操作）會變得非常整潔。例如，所有元素均為 $1$ 的數列 $1, 1, 1, \dots$ 的指數型母函數是 $e^x$。
+透過除以 $n!$，考慮順序的計算（如微分操作）會變得非常整潔。例如，所有元素均為 $1$ 的數列 $1, 1, 1, \dots$ 的指數型[母函數](https://kenji.blog/p/generating-functions/)是 $e^x$。
 
 $$
 e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots
@@ -157,14 +157,14 @@ $$
 
 ## 5. 向形式冪級數 (FPS) 的發展
 
-在現代計算機科學和競技程式設計中，母函數常常被作為 **形式冪級數** (Formal Power Series, FPS) 來實作。
+在現代計算機科學和競技程式設計中，[母函數](https://kenji.blog/p/generating-functions/)常常被作為 **形式冪級數** (Formal Power Series, FPS) 來實作。
 在 FPS 中，我們不關心將具體的數值代入 $x$ 後是否收斂（解析性質），而是將重點放在將「係數序列」作為多項式進行代數操作上。
 
 利用快速傅立葉轉換 (FFT) 或數論轉換 (NTT)，可以在 $\mathcal{O}(N \log N)$ 的時間複雜度內求出兩個 $N$ 次多項式的乘積（即長度為 $N$ 的數列的卷積）。這使得原本用動態規劃需要 $\mathcal{O}(N^2)$ 的計算得到了極大的加速。
 
 ## 6. 總結
 
-母函數不僅僅是「存放數列的盒子」。它是一個「翻譯機」，能將數列的規律和性質轉化為函數的形式，從而可以應用微積分和代數計算等強大的數學工具。
+[母函數](https://kenji.blog/p/generating-functions/)不僅僅是「存放數列的盒子」。它是一個「翻譯機」，能將數列的規律和性質轉化為函數的形式，從而可以應用微積分和代數計算等強大的數學工具。
 
 *   **組合的計數** 被替換成了函數的乘積。
 *   **求解遞迴式** 被替換成了求解方程和進行泰勒展開。

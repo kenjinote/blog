@@ -17,21 +17,21 @@ tags:
 
 ## 1. Introduction: Bridging the Local and the Global
 
-In the world of mathematics, particularly in number theory, many readers may have heard the term "local-global principle." The central figure who established this profound concept and powerfully led 20th-century algebraic number theory was the German mathematician **Helmut Hasse** (1898–1979). He elevated the theory of p-adic numbers, pioneered by his mentor Kurt Hensel, into a powerful tool, building crucial frameworks in modern mathematics.
+In the world of mathematics, particularly in number theory, many readers may have heard the term "local-global principle." The central figure who established this profound concept and powerfully led 20th-century algebraic number theory was the German mathematician **[Helmut Hasse](https://kenji.blog/p/hasse/)** (1898–1979). He elevated the theory of p-adic numbers, pioneered by his mentor [Kurt Hensel](https://kenji.blog/p/hensel/), into a powerful tool, building crucial frameworks in modern mathematics.
 
 In this article, we will delve into the episodes of Hasse's turbulent life and his brilliant mathematical achievements in detail. The **Hasse Principle** he advocated has become an indispensable concept in modern mathematics, continuing to inspire many mathematicians today.
 
 ## 2. Background and Early Life: From Kassel to the Navy
 
-Helmut Hasse was born on August 25, 1898, in the city of Kassel, German Empire. His father was a judge, and he was raised in a strict, intellectual environment. Although Hasse showed an extraordinary talent for mathematics from a young age, his youth was deeply affected by the outbreak of World War I.
+[Helmut Hasse](https://kenji.blog/p/hasse/) was born on August 25, 1898, in the city of Kassel, German Empire. His father was a judge, and he was raised in a strict, intellectual environment. Although Hasse showed an extraordinary talent for mathematics from a young age, his youth was deeply affected by the outbreak of World War I.
 
 In 1915, while still a teenager, Hasse joined the Imperial German Navy and served aboard a warship. Even in the harsh and unceasingly war-torn military life, his passion for mathematics never cooled. It is said that during every leave, he avidly read mathematical textbooks and independently worked on calculations, maintaining an unquenchable thirst for learning.
 
-## 3. Göttingen and Marburg: Meeting Kurt Hensel
+## 3. Göttingen and Marburg: Meeting [Kurt Hensel](https://kenji.blog/p/hensel/)
 
-After the war ended in 1918, Hasse officially enrolled at the University of Göttingen. At the time, Göttingen was the world's pinnacle of mathematics, home to giants like David Hilbert, Edmund Landau, and Emmy Noether. There, Hasse encountered the breath of cutting-edge mathematics, allowing his talents to blossom further.
+After the war ended in 1918, Hasse officially enrolled at the University of Göttingen. At the time, Göttingen was the world's pinnacle of mathematics, home to giants like [David Hilbert](https://kenji.blog/p/hilbert/), Edmund Landau, and [Emmy Noether](https://kenji.blog/p/noether/). There, Hasse encountered the breath of cutting-edge mathematics, allowing his talents to blossom further.
 
-Later, Hasse transferred to the University of Marburg, where he had a fateful encounter with **Kurt Hensel**, who would become his lifelong mentor. Hensel was the discoverer of an entirely new number system: the p-adic numbers. While many mathematicians at the time viewed p-adic numbers as mere mathematical curiosities, Hasse immediately recognized the immense potential of this new concept and refined it into a powerful weapon for his own research.
+Later, Hasse transferred to the University of Marburg, where he had a fateful encounter with **[Kurt Hensel](https://kenji.blog/p/hensel/)**, who would become his lifelong mentor. Hensel was the discoverer of an entirely new number system: the p-adic numbers. While many mathematicians at the time viewed p-adic numbers as mere mathematical curiosities, Hasse immediately recognized the immense potential of this new concept and refined it into a powerful weapon for his own research.
 
 ## 4. What are p-adic Numbers: A New Number System
 
@@ -91,7 +91,7 @@ $$
 |N - (q + 1)| \le 2\sqrt{q}
 $$
 
-This beautiful inequality was later extended to general algebraic curves by his own student André Weil (the Weil Conjectures) and finally resolved by Pierre Deligne, marking a crucial starting point in a grand history of mathematics.
+This beautiful inequality was later extended to general algebraic curves by his own student [André Weil](https://kenji.blog/p/weil/) (the Weil Conjectures) and finally resolved by Pierre Deligne, marking a crucial starting point in a grand history of mathematics.
 
 ## 9. Contribution to Class Field Theory: Local Class Field Theory and Artin Reciprocity
 
@@ -99,9 +99,9 @@ When discussing Hasse's achievements, his massive contribution to **Class Field 
 
 In the proof of the "Reciprocity Law" proposed by Emil Artin, Hasse played a vitally important role. Utilizing analytical methods and the theory of p-adic numbers, Hasse offered crucial advice to Artin, greatly contributing to the completion of the proof. Hasse himself also played a central role in constructing Local Class Field Theory, reconstructing global class field theory from the perspective of local fields.
 
-## 10. Interaction with Emmy Noether and Contemporaries
+## 10. Interaction with [Emmy Noether](https://kenji.blog/p/noether/) and Contemporaries
 
-A particularly notable figure in Hasse's academic interactions is **Emmy Noether**, often called the mother of abstract algebra. Hasse deeply resonated with Noether's abstract and structural approach, actively incorporating her framework of non-commutative algebra into his own number-theoretic research.
+A particularly notable figure in Hasse's academic interactions is **[Emmy Noether](https://kenji.blog/p/noether/)**, often called the mother of abstract algebra. Hasse deeply resonated with Noether's abstract and structural approach, actively incorporating her framework of non-commutative algebra into his own number-theoretic research.
 
 As a result of this collaboration, the **Albert-Brauer-Hasse-Noether Theorem**, proven by Hasse, Noether, Richard Brauer, and A. A. Albert, stands as a monumental achievement in the theory of algebras. This is also a beautiful example of the local-global principle.
 
@@ -121,6 +121,6 @@ Hasse also poured his passion into editing the specialized mathematics journal *
 
 ## 14. Conclusion: Legacy to Modern Mathematics
 
-Helmut Hasse closed his life in 1979. The fact that he always masterfully integrated the opposing concepts of "concrete and abstract" and "local and global" is proven by the numerous theorems he left behind.
+[Helmut Hasse](https://kenji.blog/p/hasse/) closed his life in 1979. The fact that he always masterfully integrated the opposing concepts of "concrete and abstract" and "local and global" is proven by the numerous theorems he left behind.
 
 His p-adic approach and the Hasse Principle have expanded their applications across a wide range of fields, including modern arithmetic geometry and cryptography. The figure of a scholar who continued to pursue truth while surviving a turbulent era, and the beautiful mathematical theories he wove, will surely remain a guiding light for those who aspire to study mathematics for a long time to come.

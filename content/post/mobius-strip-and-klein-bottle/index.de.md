@@ -18,7 +18,7 @@ In der Geometrie und Topologie ist eine Fläche "orientierbar", wenn man Konzept
 
 Zum Beispiel sind eine Kugel und ein Torus (Donutform) orientierbare Flächen. Stellen Sie sich eine Ameise vor, die auf diesen Flächen läuft. Egal wie sich die Ameise bewegt und zu ihrem Ausgangspunkt zurückkehrt, ihr eigenes "Oben" und "Unten" wird sich niemals umkehren.
 
-Auf einer nicht-orientierbaren Fläche hingegen, wenn man einen Rundgang entlang eines bestimmten Weges beendet und zum Ausgangspunkt zurückkehrt, **kehren sich "Links und Rechts" oder "Vorne und Hinten" um**. Das Möbiusband und die Kleinsche Flasche, die unten vorgestellt werden, besitzen genau diese Eigenschaft.
+Auf einer nicht-orientierbaren Fläche hingegen, wenn man einen Rundgang entlang eines bestimmten Weges beendet und zum Ausgangspunkt zurückkehrt, **kehren sich "Links und Rechts" oder "Vorne und Hinten" um**. [Das Möbiusband und die Kleinsche Flasche](https://kenji.blog/p/mobius-strip-and-klein-bottle/), die unten vorgestellt werden, besitzen genau diese Eigenschaft.
 
 ## 2. Das Möbiusband
 
@@ -108,7 +108,7 @@ Umgekehrt, wenn Sie die Begrenzungen zweier Möbiusbänder zusammenkleben, vervo
 
 ## 4. Anwendungen und Zusammenfassung
 
-Das Möbiusband und die Kleinsche Flasche sind nicht nur mathematische Rätsel.
+[Das Möbiusband und die Kleinsche Flasche](https://kenji.blog/p/mobius-strip-and-klein-bottle/) sind nicht nur mathematische Rätsel.
 
 - **Industrielle Anwendungen**: Förderbänder, die wie ein Möbiusband geformt sind, verschleißen gleichmäßig auf beiden Seiten, was ihre Lebensdauer effektiv verdoppelt. Dasselbe Konzept wurde bei Endlos-Kassetten verwendet.
 - **Chemie und Physik**: Moleküle mit der Struktur eines Möbiusbandes (Möbius-Aromatizität) wurden synthetisiert.

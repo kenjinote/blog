@@ -10,7 +10,7 @@ tags: ["Euler", "Mathématiques", "Science"]
 
 # Qu'est-ce que l'identité d'Euler ?
 
-L'**identité d'Euler** (Euler's Identity) est connue comme la relation la plus belle et la plus profonde des mathématiques. Cette équation relie de manière étonnamment simple cinq constantes mathématiques fondamentales issues de domaines totalement différents.
+L'**identité d'Euler** ([Euler's Identity](https://kenji.blog/p/eulers-identity/)) est connue comme la relation la plus belle et la plus profonde des mathématiques. Cette équation relie de manière étonnamment simple cinq constantes mathématiques fondamentales issues de domaines totalement différents.
 
 $$
 e^{i\pi} + 1 = 0
@@ -62,7 +62,7 @@ C'est ainsi qu'une équation étonnamment simple est dérivée.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -82,7 +82,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -102,7 +102,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -122,7 +122,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -142,7 +142,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -162,7 +162,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -182,7 +182,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -202,7 +202,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -222,7 +222,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 
@@ -242,7 +242,7 @@ En substituant ici $x = ix$ et en simplifiant, on dérive la formule d'Euler.
 
 ## Contexte historique
 
-Leonhard Euler (Leonhard Euler) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) était un mathématicien représentatif du 18ème siècle, qui a laissé des réalisations dans de nombreux domaines tels que la physique, l'astronomie et la logique. Cette identité qui porte son nom peut être considérée comme l'un des aboutissements de ses vastes recherches.
 
 ### Découverte de la fonction exponentielle complexe
 

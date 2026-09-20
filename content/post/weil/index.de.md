@@ -10,13 +10,13 @@ tags: ["André Weil", "Bourbaki", "Algebraische Geometrie", "Zahlentheorie"]
 
 ## 1. Einführung: Architekt der modernen Mathematik
 
-André Weil (6. Mai 1906 - 6. August 1998) war eine der einflussreichsten Persönlichkeiten der mathematischen Welt des 20. Jahrhunderts. Seine Arbeit verband auf tiefgreifende Weise Bereiche, die sich zuvor unabhängig voneinander entwickelt hatten — Zahlentheorie, algebraische Geometrie und Topologie — und schuf ein völlig neues Paradigma in der modernen Mathematik. Insbesondere seine vorgeschlagenen **„Weil-Vermutungen“** (Weil conjectures) dienten in den folgenden Jahrzehnten als Kompass für die mathematische Forschung und gaben der nächsten Generation von Genies wie Alexander Grothendieck und Pierre Deligne immense Inspiration. Dieser Artikel beschreibt sein außergewöhnliches Leben, seine Rolle bei der Gründung des fiktiven Mathematikers **„Nicolas Bourbaki“** und das tiefgreifende mathematische Erbe, das er hinterlassen hat.
+[André Weil](https://kenji.blog/p/weil/) (6. Mai 1906 - 6. August 1998) war eine der einflussreichsten Persönlichkeiten der mathematischen Welt des 20. Jahrhunderts. Seine Arbeit verband auf tiefgreifende Weise Bereiche, die sich zuvor unabhängig voneinander entwickelt hatten — Zahlentheorie, algebraische Geometrie und Topologie — und schuf ein völlig neues Paradigma in der modernen Mathematik. Insbesondere seine vorgeschlagenen **„Weil-Vermutungen“** (Weil conjectures) dienten in den folgenden Jahrzehnten als Kompass für die mathematische Forschung und gaben der nächsten Generation von Genies wie [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) und Pierre Deligne immense Inspiration. Dieser Artikel beschreibt sein außergewöhnliches Leben, seine Rolle bei der Gründung des fiktiven Mathematikers **„Nicolas Bourbaki“** und das tiefgreifende mathematische Erbe, das er hinterlassen hat.
 
 ## 2. Die Reise eines jungen Wunderkindes: Von Paris in die Welt
 
 Weil wurde in Paris (Frankreich) in eine kultivierte jüdische Familie geboren. Seine jüngere Schwester Simone Weil ging ebenfalls als renommierte Philosophin und soziale Aktivistin in die Geschichte ein. Schon in jungen Jahren zeigte Weil außergewöhnliches Talent sowohl für Sprachen als auch für Mathematik; er war ein Wunderkind, das klassische Texte in Sanskrit und Griechisch in ihren Originalfassungen lesen konnte.
 
-Im jungen Alter von 16 Jahren trat er in die École Normale Supérieure (ENS), Frankreichs führende Bildungseinrichtung, ein. Dort lernte er brillante Mathematiker wie Henri Cartan kennen, die zu seinen lebenslangen Freunden wurden. Nach seinem Abschluss reiste Weil durch europäische akademische Zentren wie Rom, Göttingen und Berlin und erweiterte seinen Horizont, indem er direkt von den Spitzenmathematikern seiner Zeit wie Carl Ludwig Siegel und Emmy Noether lernte.
+Im jungen Alter von 16 Jahren trat er in die École Normale Supérieure (ENS), Frankreichs führende Bildungseinrichtung, ein. Dort lernte er brillante Mathematiker wie Henri Cartan kennen, die zu seinen lebenslangen Freunden wurden. Nach seinem Abschluss reiste Weil durch europäische akademische Zentren wie Rom, Göttingen und Berlin und erweiterte seinen Horizont, indem er direkt von den Spitzenmathematikern seiner Zeit wie [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) und [Emmy Noether](https://kenji.blog/p/noether/) lernte.
 
 ## 3. Erfahrung in Indien und Hingabe zur Philosophie
 
@@ -77,7 +77,7 @@ graph LR
 %% Verbindung zwischen Zahlentheorie und algebraischer Geometrie
 ```
 
-Um diese tiefgreifenden Vermutungen zu beweisen, baute Alexander Grothendieck den massiven theoretischen Rahmen der Schema-Theorie und der étale Kohomologie von Grund auf neu auf. Dann, im Jahr 1974, bewies Grothendiecks Schüler Pierre Deligne die letzte Hürde, das „Analogon der Riemannschen Vermutung“, und löste damit die Weil-Vermutungen vollständig. Dieses große Drama gilt als eine der größten monumentalen Errungenschaften der Mathematik des 20. Jahrhunderts.
+Um diese tiefgreifenden Vermutungen zu beweisen, baute [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) den massiven theoretischen Rahmen der Schema-Theorie und der étale Kohomologie von Grund auf neu auf. Dann, im Jahr 1974, bewies Grothendiecks Schüler Pierre Deligne die letzte Hürde, das „Analogon der Riemannschen Vermutung“, und löste damit die Weil-Vermutungen vollständig. Dieses große Drama gilt als eine der größten monumentalen Errungenschaften der Mathematik des 20. Jahrhunderts.
 
 ## 7. Weitere bedeutende Beiträge: Adele, Idele und die Weil-Gruppe
 
@@ -89,4 +89,4 @@ Darüber hinaus führte er die **„Weil-Gruppe“** ein, eine Erweiterung des K
 
 Weil war viele Jahre lang in Forschung und Lehre am Institute for Advanced Study in Princeton tätig und betreute zahlreiche Nachfolger. Er besaß ein enormes Wissen und scharfe Einsichten und war manchmal als bissiger Kritiker bekannt. Er hatte auch tiefes Wissen über die Geschichte der Mathematik, und die Bücher, die er zu diesem Thema schrieb, werden als Meisterwerke voller historischer Einsichten hoch geschätzt.
 
-Im Jahr 1998 verstarb André Weil im Alter von 92 Jahren. Der Samen der „Verschmelzung von Zahlentheorie und Geometrie“, den er gesät hatte, ist in der modernen Mathematik brillant erblüht. Seine erhaltenen Errungenschaften und seine kompromisslose Haltung gegenüber der Mathematik werden Mathematiker zweifellos für immer faszinieren und leiten. Sein Leben war wahrlich ein großes Epos, in dem sich die turbulente Geschichte des 20. Jahrhunderts mit der Brillanz des menschlichen Intellekts kreuzte.
+Im Jahr 1998 verstarb [André Weil](https://kenji.blog/p/weil/) im Alter von 92 Jahren. Der Samen der „Verschmelzung von Zahlentheorie und Geometrie“, den er gesät hatte, ist in der modernen Mathematik brillant erblüht. Seine erhaltenen Errungenschaften und seine kompromisslose Haltung gegenüber der Mathematik werden Mathematiker zweifellos für immer faszinieren und leiten. Sein Leben war wahrlich ein großes Epos, in dem sich die turbulente Geschichte des 20. Jahrhunderts mit der Brillanz des menschlichen Intellekts kreuzte.

@@ -17,9 +17,9 @@ tags:
 
 ## 1. Introduction : Les géants à l'aube du calcul infinitésimal et les mathématiques du 17ème siècle
 
-L'Europe du 17ème siècle fut une époque d'explosion dramatique des connaissances, plus tard connue sous le nom de "Révolution scientifique". Particulièrement dans le domaine des mathématiques, des préparations rapides étaient en cours pour la naissance d'une nouvelle mathématique, qui dépassait le cadre de la géométrie euclidienne héritée de la Grèce antique pour traiter des quantités changeantes, de l'infiniment petit et de l'infini : à savoir, le "calcul infinitésimal". Le monument historique que représente l'achèvement du calcul par Isaac Newton et Gottfried Wilhelm Leibniz ne fut en aucun cas accompli par le seul génie de ces deux hommes. Derrière eux se cachaient les luttes de nombreux mathématiciens qui avaient combattu avec les concepts d'infini et de limites avant eux.
+L'Europe du 17ème siècle fut une époque d'explosion dramatique des connaissances, plus tard connue sous le nom de "Révolution scientifique". Particulièrement dans le domaine des mathématiques, des préparations rapides étaient en cours pour la naissance d'une nouvelle mathématique, qui dépassait le cadre de la géométrie euclidienne héritée de la Grèce antique pour traiter des quantités changeantes, de l'infiniment petit et de l'infini : à savoir, le "calcul infinitésimal". Le monument historique que représente l'achèvement du calcul par [Isaac Newton](https://kenji.blog/p/newton/) et Gottfried Wilhelm Leibniz ne fut en aucun cas accompli par le seul génie de ces deux hommes. Derrière eux se cachaient les luttes de nombreux mathématiciens qui avaient combattu avec les concepts d'infini et de limites avant eux.
 
-L'un des mathématiciens les plus importants en France à cette "veille du calcul" fut Gilles Personne de Roberval (1602-1675). Roberval introduisit en France la "méthode des indivisibles" proposée par l'Italien Bonaventura Cavalieri, et en l'affinant de manière indépendante, il créa des méthodes puissantes pour calculer l'aire des figures délimitées par des courbes et le volume des solides de révolution. Il fit également preuve d'un talent exceptionnel dans les domaines de la physique et de la mécanique, laissant derrière lui une invention révolutionnaire connue sous le nom de "balance de Roberval", que l'on peut encore voir aujourd'hui sur les marchés et dans les laboratoires de sciences.
+L'un des mathématiciens les plus importants en France à cette "veille du calcul" fut [Gilles Personne de Roberval](https://kenji.blog/p/roberval/) (1602-1675). Roberval introduisit en France la "méthode des indivisibles" proposée par l'Italien Bonaventura Cavalieri, et en l'affinant de manière indépendante, il créa des méthodes puissantes pour calculer l'aire des figures délimitées par des courbes et le volume des solides de révolution. Il fit également preuve d'un talent exceptionnel dans les domaines de la physique et de la mécanique, laissant derrière lui une invention révolutionnaire connue sous le nom de "balance de Roberval", que l'on peut encore voir aujourd'hui sur les marchés et dans les laboratoires de sciences.
 
 Dans cet article, nous explorerons en profondeur la vie de ce mathématicien solitaire qui a vécu une époque mouvementée, ses féroces controverses avec ses contemporains, et les profondes réalisations mathématiques et mécaniques qu'il a laissées derrière lui, le tout accompagné de riches illustrations et de formules mathématiques.
 
@@ -29,9 +29,9 @@ Dans cet article, nous explorerons en profondeur la vie de ce mathématicien sol
 
 Gilles Personne est né le 10 août 1602 dans un petit village appelé Roberval, près de Beauvais, dans le nord de la France. On pense que sa famille était d'origine paysanne, ce qui n'était en aucun cas un milieu favorable à l'érudition dans la stricte société de classes de l'époque. Cependant, dès son plus jeune âge, il montra un intellect extraordinaire et un fort intérêt pour les mathématiques. Plus tard, il prit le nom de son village natal et commença à se faire appeler "de Roberval". Cela peut être considéré comme une expression de sa fierté quant à ses origines, ainsi qu'une tentative d'établir son identité en tant qu'érudit.
 
-Ayant appris les mathématiques et les langues classiques (latin et grec) en autodidacte dans sa jeunesse, Roberval visa des sommets académiques plus élevés et s'installa dans la capitale, Paris, vers 1628. Paris, à cette époque, était un creuset de l'érudition, rassemblant des intellectuels de toute l'Europe. Là, il commença à fréquenter le rassemblement d'intellectuels centré autour du père Marin Mersenne, connu sous le nom d'"Académie de Mersenne". Mersenne, souvent appelé "le maître de poste de l'érudition européenne", agissait comme intermédiaire pour la correspondance entre les érudits de toute l'Europe, jouant un rôle dans le partage des dernières découvertes scientifiques.
+Ayant appris les mathématiques et les langues classiques (latin et grec) en autodidacte dans sa jeunesse, Roberval visa des sommets académiques plus élevés et s'installa dans la capitale, Paris, vers 1628. Paris, à cette époque, était un creuset de l'érudition, rassemblant des intellectuels de toute l'Europe. Là, il commença à fréquenter le rassemblement d'intellectuels centré autour du père [Marin Mersenne](https://kenji.blog/p/mersenne/), connu sous le nom d'"Académie de Mersenne". Mersenne, souvent appelé "le maître de poste de l'érudition européenne", agissait comme intermédiaire pour la correspondance entre les érudits de toute l'Europe, jouant un rôle dans le partage des dernières découvertes scientifiques.
 
-Grâce au salon de Mersenne, Roberval approfondit ses interactions avec les plus grands esprits de la France de l'époque, tels que René Descartes, Pierre de Fermat, Blaise Pascal et Étienne Pascal (le père de Blaise), ce qui permit à ses talents mathématiques de s'épanouir.
+Grâce au salon de Mersenne, Roberval approfondit ses interactions avec les plus grands esprits de la France de l'époque, tels que [René Descartes](https://kenji.blog/p/descartes/), [Pierre de Fermat](https://kenji.blog/p/fermat/), [Blaise Pascal](https://kenji.blog/p/pascal/) et Étienne Pascal (le père de Blaise), ce qui permit à ses talents mathématiques de s'épanouir.
 
 ### 2.2. La chaire au Collège Royal et les batailles de défense épuisantes
 
@@ -71,7 +71,7 @@ $$
 \int_{0}^{a} x^n dx = \frac{a^{n+1}}{n+1} \quad \left( \text{où } n \text{ est un entier positif} \right)
 $$
 
-Par exemple, lorsque $ n = 2 $, l'aire sous la parabole $ y = x^2 $ est $ \frac{a^3}{3} $. C'était le même résultat que Pierre de Fermat avait découvert indépendamment à peu près à la même époque. Roberval et Fermat se respectaient mutuellement et partageaient cette découverte par le biais de lettres. Leurs réalisations sont devenues un tremplin important vers la formulation ultérieure de l'intégration par Leibniz.
+Par exemple, lorsque $ n = 2 $, l'aire sous la parabole $ y = x^2 $ est $ \frac{a^3}{3} $. C'était le même résultat que [Pierre de Fermat](https://kenji.blog/p/fermat/) avait découvert indépendamment à peu près à la même époque. Roberval et Fermat se respectaient mutuellement et partageaient cette découverte par le biais de lettres. Leurs réalisations sont devenues un tremplin important vers la formulation ultérieure de l'intégration par Leibniz.
 
 ## 4. Étude de la cycloïde et féroces querelles de priorité
 
@@ -118,7 +118,7 @@ En apprenant cela, Roberval fut furieux. Il a accusé Torricelli, affirmant : "T
 
 Roberval a conçu une approche révolutionnaire non seulement dans le domaine de l'intégration, mais aussi dans le domaine de la différenciation (le problème du tracé des tangentes). Il s'agissait de réexaminer les problèmes géométriques en tant que "cinématique" physique.
 
-À l'époque, trouver la tangente d'une courbe était l'une des questions les plus importantes en géométrie. René Descartes essayait de trouver des tangentes en utilisant une approche géométrique algébrique avec des équations algébriques, mais elle présentait l'inconvénient de calculs extrêmement lourds.
+À l'époque, trouver la tangente d'une courbe était l'une des questions les plus importantes en géométrie. [René Descartes](https://kenji.blog/p/descartes/) essayait de trouver des tangentes en utilisant une approche géométrique algébrique avec des équations algébriques, mais elle présentait l'inconvénient de calculs extrêmement lourds.
 
 En revanche, Roberval pensait ainsi : "Si une courbe est une trajectoire tracée par un point en mouvement, alors la direction dans laquelle ce point se déplace à un instant donné (le vecteur vitesse) est précisément la tangente à la courbe."
 
@@ -132,7 +132,7 @@ graph LR
     D -->|"Influence idéologique"| E["Méthode des fluxions de Newton"]
 ```
 
-Cette "méthode des tangentes cinématiques" a démontré une puissance extraordinaire pour trouver des tangentes à des courbes transcendantes (des courbes qui ne peuvent pas être exprimées par des équations algébriques) comme la cycloïde. L'approche de Roberval, qui consistait à introduire ce concept physique de mouvement dans les mathématiques, a été une étape extrêmement importante qui a conduit directement à l'idéologie fondamentale de la "Méthode des fluxions" (calcul cinématique) fondée plus tard par Isaac Newton.
+Cette "méthode des tangentes cinématiques" a démontré une puissance extraordinaire pour trouver des tangentes à des courbes transcendantes (des courbes qui ne peuvent pas être exprimées par des équations algébriques) comme la cycloïde. L'approche de Roberval, qui consistait à introduire ce concept physique de mouvement dans les mathématiques, a été une étape extrêmement importante qui a conduit directement à l'idéologie fondamentale de la "Méthode des fluxions" (calcul cinématique) fondée plus tard par [Isaac Newton](https://kenji.blog/p/newton/).
 
 ## 6. Contributions à la mécanique : La balance de Roberval
 
@@ -154,11 +154,11 @@ En conséquence, une balance a été réalisée avec des caractéristiques prati
 
 Parallèlement à son talent exceptionnel, on dit que Roberval avait un tempérament très sanguin et une personnalité têtue qui refusait de céder sur ses théories. Par conséquent, il s'est engagé dans de féroces controverses avec de nombreux érudits célèbres de son temps.
 
-- **Conflit avec René Descartes** :
+- **Conflit avec [René Descartes](https://kenji.blog/p/descartes/)** :
   Alors que Descartes promouvait la "géométrie analytique", qui résolvait la géométrie à l'aide de l'algèbre, Roberval valorisait les méthodes purement géométriques et cinématiques. Roberval critiquait la méthode de Descartes comme étant trop artificielle et attaquait souvent les failles des théories de Descartes. Descartes, à son tour, méprisait Roberval en le qualifiant de "grossier et sans éducation", et leur relation resta hostile tout au long de leur vie.
-- **Amitié avec Pierre de Fermat** :
+- **Amitié avec [Pierre de Fermat](https://kenji.blog/p/fermat/)** :
   Contrairement à Descartes, Roberval a noué d'excellentes relations avec Fermat, qui vivait à Toulouse. Bien qu'ils eussent des personnalités contrastées, ils ont partagé des idées mathématiques par le biais de lettres médiées par Mersenne, complétant leurs recherches mutuelles sur des questions telles que les indivisibles.
-- **Influence sur Blaise Pascal** :
+- **Influence sur [Blaise Pascal](https://kenji.blog/p/pascal/)** :
   Le jeune génie Pascal a également été grandement influencé par Roberval. Pascal publia plus tard des articles sur la cycloïde sous le pseudonyme d'"A. Dettonville", et nombre des méthodes utilisées étaient des versions affinées des idées de Roberval sur les indivisibles. Roberval appréciait grandement le talent de Pascal et le soutenait.
 
 ```mermaid
@@ -182,7 +182,7 @@ graph TD
 
 ## 8. Conclusion : Le génie solitaire qui a jeté un pont vers le calcul infinitésimal
 
-Gilles Personne de Roberval, à l'époque juste avant la naissance formelle du calcul infinitésimal, a pleinement utilisé deux armes puissantes — la méthode des indivisibles et l'approche cinématique — pour résoudre séquentiellement les problèmes mathématiques les plus difficiles de son temps.
+[Gilles Personne de Roberval](https://kenji.blog/p/roberval/), à l'époque juste avant la naissance formelle du calcul infinitésimal, a pleinement utilisé deux armes puissantes — la méthode des indivisibles et l'approche cinématique — pour résoudre séquentiellement les problèmes mathématiques les plus difficiles de son temps.
 
 En raison de son retard excessif à publier ses découvertes en raison de la pression de devoir défendre son poste de professeur tous les trois ans, certaines de ses réalisations n'ont pas été évaluées à leur juste valeur par ses contemporains, et il a parfois été entraîné dans des querelles de priorité malheureuses. Cependant, les graines d'idées mathématiques qu'il a semées se sont sûrement propagées grâce au réseau de Mersenne et à des connaissances comme Fermat et Pascal, devenant un pont solide menant plus tard à la fondation du calcul par Newton et Leibniz.
 

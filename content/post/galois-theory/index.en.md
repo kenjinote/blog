@@ -12,11 +12,11 @@ tags:
   - "History"
 ---
 
-# 1. Introduction: What is Galois Theory?
+# 1. Introduction: What is [Galois Theory](https://kenji.blog/p/galois-theory/)?
 
-In the history of mathematics, one of the most dramatic and profound theories is **Galois Theory**.
-This theory was constructed in the early 19th century by the young French mathematician Évariste Galois.
-Galois Theory brilliantly solved the age-old problem of "Why is there no general formula for equations of degree 5 or higher?" by using a completely new concept called a **Group**.
+In the history of mathematics, one of the most dramatic and profound theories is **[Galois Theory](https://kenji.blog/p/galois-theory/)**.
+This theory was constructed in the early 19th century by the young French mathematician [Évariste Galois](https://kenji.blog/p/galois/).
+[Galois Theory](https://kenji.blog/p/galois-theory/) brilliantly solved the age-old problem of "Why is there no general formula for equations of degree 5 or higher?" by using a completely new concept called a **Group**.
 
 In this article, we will explain everything from the basic ideas of [Galois theory](https://kenji.blog/p/galois-theory/) to its historical background and its impact on modern mathematics as deeply and clearly as possible. Let's open the door to algebra and touch the beauty of symmetry.
 
@@ -109,7 +109,7 @@ $$
 
 This does not simply mean "a formula hasn't been found yet," but shows the definitive fact that "such a formula cannot mathematically exist."
 
-# 4. The Life of Évariste Galois
+# 4. The Life of [Évariste Galois](https://kenji.blog/p/galois/)
 
 While the beauty of [Galois theory](https://kenji.blog/p/galois-theory/) shines brilliantly in the history of mathematics, Galois's own dramatic life also never ceases to captivate many people.
 
@@ -124,7 +124,7 @@ It is said that the tragic words "I have no time! (Je n'ai pas le temps!)" were 
 Shot in the abdomen during the duel on May 30th, Galois passed away the following day at the mere age of 20.
 His difficult notes were carefully deciphered and organized by Joseph Liouville over 10 years later, and were finally published in an academic journal in 1846. It was long after his death that their astonishing contents became known to the world and sent shockwaves through the mathematical community.
 
-# 5. The Impact of Galois Theory on Modern Mathematics
+# 5. The Impact of [Galois Theory](https://kenji.blog/p/galois-theory/) on Modern Mathematics
 
 The abstract seeds of "groups" and "field extensions" that Galois sowed greatly transformed subsequent mathematics.
 It is no exaggeration to say that modern **abstract algebra** developed with [Galois theory](https://kenji.blog/p/galois-theory/) as its starting point. The style of finding structures in collections of all kinds of objects—not just numbers, but polynomials, matrices, and functions—and studying them has become firmly established.

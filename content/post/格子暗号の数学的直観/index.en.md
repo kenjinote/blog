@@ -60,7 +60,7 @@ The security of lattice-based cryptography depends on the difficulty of solving 
 SVP is the most classical and famous problem in lattice theory.
 
 **Definition (SVP):**
-Given an arbitrary lattice basis $B$, find the vector $\mathbf{v}$ with the minimum Euclidean norm (length) among the non-zero vectors belonging to that lattice $\mathcal{L}(B)$.
+Given an arbitrary lattice basis $B$, find the vector $\mathbf{v}$ with the minimum [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an norm (length) among the non-zero vectors belonging to that lattice $\mathcal{L}(B)$.
 
 Expressed mathematically, it is the problem of finding $\mathbf{v}$ such that $\min_{\mathbf{v} \in \mathcal{L}(B) \setminus \{\mathbf{0}\}} \| \mathbf{v} \|$. This minimum length is written as $\lambda_1(\mathcal{L})$ and is called the "first successive minimum" of the lattice.
 

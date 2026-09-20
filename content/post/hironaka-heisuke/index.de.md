@@ -10,7 +10,7 @@ tags: ["Heisuke Hironaka", "Algebraische Geometrie", "Auflösung von Singularit�
 
 ## Einführung
 
- **Heisuke Hironaka** ist ein japanischer Mathematiker, der im späten 20. Jahrhundert revolutionäre Spuren in der mathematischen Welt hinterlassen hat, insbesondere auf dem Gebiet der algebraischen Geometrie. Die Fields-Medaille, die er 1970 erhielt, ist die höchste Auszeichnung in der Mathematik, verliehen für seine Lösung zur „Auflösung von Singularitäten einer algebraischen Varietät über einem Körper der Charakteristik null“ – ein monumentales Problem, das damals jeder für unmöglich hielt.
+ **[Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/)** ist ein japanischer Mathematiker, der im späten 20. Jahrhundert revolutionäre Spuren in der mathematischen Welt hinterlassen hat, insbesondere auf dem Gebiet der algebraischen Geometrie. Die Fields-Medaille, die er 1970 erhielt, ist die höchste Auszeichnung in der Mathematik, verliehen für seine Lösung zur „Auflösung von Singularitäten einer algebraischen Varietät über einem Körper der Charakteristik null“ – ein monumentales Problem, das damals jeder für unmöglich hielt.
 
 In diesem Artikel tauchen wir tief in Hironakas dramatisches Leben von seiner Kindheit bis zur Auszeichnung mit der Fields-Medaille ein, beleuchten den mathematischen Hintergrund seines gleichnamigen „Satzes über die Auflösung von Singularitäten“ und die einzigartige Philosophie in Bezug auf „Kreativität“, die er kontinuierlich vertrat.
 
@@ -103,4 +103,4 @@ Für Hironaka war das Erreichen einer Sackgasse im Denken (eine intellektuelle S
 
 ## Fazit
 
-Heisuke Hironakas Satz über die Auflösung von Singularitäten hat die Landschaft der algebraischen Geometrie verändert und bleibt ein unverzichtbares Werkzeug in verschiedenen Bereichen wie der Superstringtheorie. Konfrontiert mit schwierigen Mauern, fasziniert seine Einstellung, komplexe Verstrickungen zu „entwirren“, auch heute noch viele Menschen.
+[Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/)s Satz über die Auflösung von Singularitäten hat die Landschaft der algebraischen Geometrie verändert und bleibt ein unverzichtbares Werkzeug in verschiedenen Bereichen wie der Superstringtheorie. Konfrontiert mit schwierigen Mauern, fasziniert seine Einstellung, komplexe Verstrickungen zu „entwirren“, auch heute noch viele Menschen.

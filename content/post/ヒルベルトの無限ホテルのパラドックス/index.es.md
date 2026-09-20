@@ -16,7 +16,7 @@ tags:
 
 ## 1. Bienvenido al hotel definitivo
 
-El gran matemático alemán David Hilbert ideó el siguiente experimento mental fascinante para explicar cuán lejos está el concepto de "infinito" de la intuición humana.
+El gran matemático alemán [David Hilbert](https://kenji.blog/p/hilbert/) ideó el siguiente experimento mental fascinante para explicar cuán lejos está el concepto de "infinito" de la intuición humana.
 
 Imagínese: en algún lugar del universo existe el **"Gran Hotel de Hilbert"**.
 En este hotel hay **infinitas** habitaciones numeradas: habitación 1, habitación 2, habitación 3...
@@ -158,7 +158,7 @@ De esta manera, el gerente logró alojar brillantemente a la incomprensible cant
 
 Lo que nos enseña el Gran Hotel de Hilbert es el hecho de que **el "infinito numerable (el infinito que se puede contar asignando números como 1, 2, 3...)", por mucho que se sume o se multiplique, finalmente cabe dentro del mismo tamaño de 'infinito numerable'**.
 
-Sin embargo, el matemático Georg Cantor descubrió una verdad aún más aterradora.
+Sin embargo, el matemático [Georg Cantor](https://kenji.blog/p/cantor/) descubrió una verdad aún más aterradora.
 Los "números naturales" y las "fracciones" se pueden alojar todos en este hotel infinito. Pero **si llegan huéspedes que representan los "números reales (todos los decimales, incluidos los irracionales)", es absolutamente imposible alojarlos a todos, incluso usando este hotel infinito**.
 
 Está demostrado que la cantidad de números reales es fundamentalmente un "infinito mayor (de un nivel superior)" que la cantidad de habitaciones del hotel infinito (infinito numerable).

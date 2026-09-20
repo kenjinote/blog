@@ -12,11 +12,11 @@ When programming, you might sometimes feel anxious, wondering, "Is this program 
 
 However, in the field of computer science, it has been mathematically proven that such a dream tool **"can never be created."** This is the famous **"Halting Problem."**
 
-In this article, we will explain this problem, which was proven by Alan Turing in 1936, in an easy-to-understand manner using intuitive concrete examples, mathematical formulas (KaTeX), and diagrams (Mermaid).
+In this article, we will explain this problem, which was proven by [Alan Turing](https://kenji.blog/p/turing/) in 1936, in an easy-to-understand manner using intuitive concrete examples, mathematical formulas (KaTeX), and diagrams (Mermaid).
 
 ## What is the Halting Problem?
 
-The Halting Problem refers to the following problem:
+[The Halting Problem](https://kenji.blog/p/halting-problem/) refers to the following problem:
 
 > Given an arbitrary computer program and an input, does a general algorithm exist that can determine whether the program will finish (halt) in a finite amount of time, or run forever (infinite loop)?
 
@@ -150,15 +150,15 @@ As the diagram shows, the moment $D$ itself is provided as input, a loop (parado
 
 ## History of Computers and the Turing Machine
 
-Alan Turing raised and proved this problem in 1936, an era before modern electronic computers existed. To rigorously define mathematically "what computation is," he devised a hypothetical machine called the **"Turing Machine."**
+[Alan Turing](https://kenji.blog/p/turing/) raised and proved this problem in 1936, an era before modern electronic computers existed. To rigorously define mathematically "what computation is," he devised a hypothetical machine called the **"Turing Machine."**
 
 A Turing Machine consists of an infinitely long tape, a head that reads and writes information on the tape, and a state transition table that manages the state of the machine. It is known that no matter how complex a modern program is, it can theoretically be reduced to this Turing Machine. This is called the **"Church-Turing Thesis."**
 
-Turing attempted to draw a line between "computable problems" and "uncomputable problems" using this simple model. The Halting Problem, a prime example of an undecidable problem, was discovered as a result.
+Turing attempted to draw a line between "computable problems" and "uncomputable problems" using this simple model. [The Halting Problem](https://kenji.blog/p/halting-problem/), a prime example of an undecidable problem, was discovered as a result.
 
-## Deep Connection with Gödel's Incompleteness Theorems
+## Deep Connection with [Gödel's Incompleteness Theorems](https://kenji.blog/p/godels-incompleteness-theorems/)
 
-The "paradox of self-reference" that underlies the proof of the Halting Problem is deeply connected to the **"Incompleteness Theorems"** published by Kurt Gödel in 1931, slightly before Turing.
+The "paradox of self-reference" that underlies the proof of the Halting Problem is deeply connected to the **"Incompleteness Theorems"** published by [Kurt Gödel](https://kenji.blog/p/godel/) in 1931, slightly before Turing.
 
 Gödel's First Incompleteness Theorem states that "in any sufficiently powerful axiomatic system that includes the theory of natural numbers, there always exists a true statement that can neither be proven nor disproven." When proving this theorem, Gödel mathematically constructed a self-referential proposition stating, "This proposition cannot be proven."
 
@@ -170,7 +170,7 @@ The fact that the Halting Problem is "Undecidable" holds significant meaning eve
 
 ### Extension to Rice's Theorem
 
-The Halting Problem developed further into the more general **"Rice's Theorem."** Rice's Theorem states that "there is no general algorithm that determines whether a program possesses any non-trivial semantic property."
+[The Halting Problem](https://kenji.blog/p/halting-problem/) developed further into the more general **"Rice's Theorem."** Rice's Theorem states that "there is no general algorithm that determines whether a program possesses any non-trivial semantic property."
 
 In other words, it is generally undecidable not only whether a program will fall into an infinite loop, but also questions like the following:
 - "Does this function always return 0?"

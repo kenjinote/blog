@@ -16,7 +16,7 @@ tags:
 
 # 1. Introducción: Un buscador del pensamiento puro
 
-Carl Gustav Jacob Jacobi (1804–1851) fue un **matemático alemán** del siglo XIX que realizó contribuciones decisivas a diversos campos como el álgebra, el análisis, la teoría de números y la mecánica. Junto con Niels Henrik Abel, es célebre como el "descubridor de las funciones elípticas", y es el epónimo del "Jacobiano" (determinante jacobiano) que encontramos frecuentemente en el cálculo multivariable actual.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/) (1804–1851) fue un **matemático alemán** del siglo XIX que realizó contribuciones decisivas a diversos campos como el álgebra, el análisis, la teoría de números y la mecánica. Junto con [Niels Henrik Abel](https://kenji.blog/p/abel/), es célebre como el "descubridor de las funciones elípticas", y es el epónimo del "Jacobiano" (determinante jacobiano) que encontramos frecuentemente en el cálculo multivariable actual.
 
 Él valoraba la belleza de las matemáticas en sí mismas y el honor del espíritu humano por encima de la utilidad práctica. En este artículo, profundizaremos en la vida de Jacobi, sus principales logros matemáticos y los famosos episodios que dejó atrás.
 

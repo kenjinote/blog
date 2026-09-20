@@ -30,7 +30,7 @@ Cette déclaration n'était pas purement poétique ; elle était soutenue par sa
 
 Kronecker est né en 1823 dans une riche famille juive de Liegnitz, en Prusse (aujourd'hui Legnica, en Pologne). Faisant preuve d'une intelligence extraordinaire dès son plus jeune âge, il s'inscrivit au Gymnasium local (école secondaire de niveau avancé).
 
-C'est là qu'eut lieu une rencontre fatidique. Un nouveau professeur arriva au Gymnasium — **Ernst Kummer** , qui allait plus tard devenir un pionnier de la théorie des idéaux. Kummer reconnut immédiatement le talent de Kronecker et lui dispensa un enseignement mathématique avancé et personnalisé.
+C'est là qu'eut lieu une rencontre fatidique. Un nouveau professeur arriva au Gymnasium — **[Ernst Kummer](https://kenji.blog/p/kummer/)** , qui allait plus tard devenir un pionnier de la théorie des idéaux. Kummer reconnut immédiatement le talent de Kronecker et lui dispensa un enseignement mathématique avancé et personnalisé.
 
 ```mermaid
 graph TD
@@ -42,7 +42,7 @@ graph TD
 
 ## 2.2. Parcours académique et succès en tant qu'homme d'affaires
 
-En 1841, Kronecker entra à l'Université de Berlin, étudiant sous la direction de mathématiciens de premier plan comme Peter Gustav Lejeune Dirichlet et Carl Gustav Jacob Jacobi. En 1845, il obtint son doctorat avec une thèse exceptionnelle sur la théorie algébrique des nombres.
+En 1841, Kronecker entra à l'Université de Berlin, étudiant sous la direction de mathématiciens de premier plan comme Peter Gustav Lejeune Dirichlet et [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/). En 1845, il obtint son doctorat avec une thèse exceptionnelle sur la théorie algébrique des nombres.
 
 Cependant, Kronecker prit ensuite un chemin de carrière étrange. Au lieu de chercher un poste universitaire, il retourna dans sa ville natale pour reprendre le vaste domaine agricole et les affaires bancaires de son oncle. Il connut un succès fulgurant en tant qu'homme d'affaires et amassa une grande richesse. Tout au long de cette période, il continua ses recherches mathématiques comme passe-temps, ce qui faisait essentiellement de lui le mathématicien amateur le plus fort de son époque.
 
@@ -66,9 +66,9 @@ Par exemple, en ce qui concerne le théorème fondamental de l'algèbre, il sout
 
 Cette idéologie extrême l'a conduit à des conflits avec ses contemporains.
 
-La plus célèbre d'entre elles fut sa critique véhémente de **Georg Cantor** et de sa théorie des ensembles. Kronecker condamnait les concepts de Cantor concernant les cardinalités des ensembles infinis et les nombres transfinis comme étant du "mysticisme, et non des mathématiques", et a même pris des mesures pour entraver la publication des articles de Cantor.
+La plus célèbre d'entre elles fut sa critique véhémente de **[Georg Cantor](https://kenji.blog/p/cantor/)** et de sa théorie des ensembles. Kronecker condamnait les concepts de Cantor concernant les cardinalités des ensembles infinis et les nombres transfinis comme étant du "mysticisme, et non des mathématiques", et a même pris des mesures pour entraver la publication des articles de Cantor.
 
-Il s'est également heurté à **Karl Weierstrass** , qui était autrefois un ami proche. En ce qui concerne l'analyse de Weierstrass (telle que la construction de fonctions continues qui ne sont dérivables nulle part), Kronecker a critiqué ces fonctions comme étant "pathologiques" et a déclaré qu'elles n'existaient pas.
+Il s'est également heurté à **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** , qui était autrefois un ami proche. En ce qui concerne l'analyse de Weierstrass (telle que la construction de fonctions continues qui ne sont dérivables nulle part), Kronecker a critiqué ces fonctions comme étant "pathologiques" et a déclaré qu'elles n'existaient pas.
 
 # 4. Grandes contributions aux mathématiques
 

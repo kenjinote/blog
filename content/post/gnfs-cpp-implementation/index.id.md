@@ -270,7 +270,7 @@ $X^2 - Y^2 \equiv 0 \pmod N$
 Dengan kata lain, $(X-Y)(X+Y)$ adalah kelipatan $N$.
 
 Jika $X \not\equiv \pm Y \pmod N$ (solusi non-trivial), maka akan ada "pembagi persekutuan yang lebih besar dari 1 dan lebih kecil dari $N$" antara $(X-Y)$ dan $N$.
-Di sini, jika kita menggunakan Algoritma Euclidean untuk menghitung ** $\gcd(X-Y, N)$ **, kita dapat dengan mudah menemukan faktor prima dari $N$.
+Di sini, jika kita menggunakan [Algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) untuk menghitung ** $\gcd(X-Y, N)$ **, kita dapat dengan mudah menemukan faktor prima dari $N$.
 
 Namun, menemukan $X$ dan $Y$ ini seperti mencari jarum di padang pasir. Oleh karena itu, GNFS mengambil pendekatan jenius dengan mendistribusikan komputasi dengan menciptakan ** dua dunia **: "dunia bilangan bulat nyata" dan "dunia field aljabar polinomial".
 

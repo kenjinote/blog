@@ -10,7 +10,7 @@ tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topolog
 
 ## 1. Was ist der Vier-Farben-Satz?
 
-Der Vier-Farben-Satz (Four Color Theorem) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
+[Der Vier-Farben-Satz (Four Color Theorem)](https://kenji.blog/p/four-color-theorem/) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
 
 Hier bedeutet "benachbart", dass eine Grenze und nicht nur ein Punkt geteilt wird. Wenn sie sich nur an einem Punkt berühren, ist es kein Problem, sie mit derselben Farbe zu färben. Diese intuitive Hypothese wurde erstmals 1852 von Francis Guthrie aufgestellt. Als er die Landkreise auf einer Karte von England einfärbte, stellte er fest, dass unabhängig davon, wie komplex die Grenzen waren, 4 Farben ausreichten.
 
@@ -67,7 +67,7 @@ Die Erforschung dieses Problems lehrt uns, wie mächtig die menschliche Intuitio
 
 ## 1. Was ist der Vier-Farben-Satz?
 
-Der Vier-Farben-Satz (Four Color Theorem) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
+[Der Vier-Farben-Satz (Four Color Theorem)](https://kenji.blog/p/four-color-theorem/) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
 
 Hier bedeutet "benachbart", dass eine Grenze und nicht nur ein Punkt geteilt wird. Wenn sie sich nur an einem Punkt berühren, ist es kein Problem, sie mit derselben Farbe zu färben. Diese intuitive Hypothese wurde erstmals 1852 von Francis Guthrie aufgestellt. Als er die Landkreise auf einer Karte von England einfärbte, stellte er fest, dass unabhängig davon, wie komplex die Grenzen waren, 4 Farben ausreichten.
 
@@ -124,7 +124,7 @@ Die Erforschung dieses Problems lehrt uns, wie mächtig die menschliche Intuitio
 
 ## 1. Was ist der Vier-Farben-Satz?
 
-Der Vier-Farben-Satz (Four Color Theorem) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
+[Der Vier-Farben-Satz (Four Color Theorem)](https://kenji.blog/p/four-color-theorem/) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
 
 Hier bedeutet "benachbart", dass eine Grenze und nicht nur ein Punkt geteilt wird. Wenn sie sich nur an einem Punkt berühren, ist es kein Problem, sie mit derselben Farbe zu färben. Diese intuitive Hypothese wurde erstmals 1852 von Francis Guthrie aufgestellt. Als er die Landkreise auf einer Karte von England einfärbte, stellte er fest, dass unabhängig davon, wie komplex die Grenzen waren, 4 Farben ausreichten.
 
@@ -181,7 +181,7 @@ Die Erforschung dieses Problems lehrt uns, wie mächtig die menschliche Intuitio
 
 ## 1. Was ist der Vier-Farben-Satz?
 
-Der Vier-Farben-Satz (Four Color Theorem) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
+[Der Vier-Farben-Satz (Four Color Theorem)](https://kenji.blog/p/four-color-theorem/) ist eines der berühmtesten und faszinierendsten Probleme in der Mathematik, insbesondere in der Graphentheorie und Topologie. Seine Behauptung ist sehr einfach und intuitiv genug, um von einem Grundschüler verstanden zu werden: "Für jede Karte auf einer Ebene reichen maximal **4 Farben** aus, um benachbarte Regionen so einzufärben, dass sie unterschiedliche Farben haben."
 
 Hier bedeutet "benachbart", dass eine Grenze und nicht nur ein Punkt geteilt wird. Wenn sie sich nur an einem Punkt berühren, ist es kein Problem, sie mit derselben Farbe zu färben. Diese intuitive Hypothese wurde erstmals 1852 von Francis Guthrie aufgestellt. Als er die Landkreise auf einer Karte von England einfärbte, stellte er fest, dass unabhängig davon, wie komplex die Grenzen waren, 4 Farben ausreichten.
 

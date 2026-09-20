@@ -70,7 +70,7 @@ The more you increase the number of trials `num_samples`, the more accurate the 
 This is an algorithm that quickly determines whether a huge number is a prime number. When generating keys for RSA encryption, etc., prime numbers of hundreds of digits are required, but if this is done using deterministic trial division (dividing sequentially by $2, 3, 5, \dots$), it will not finish even if the lifespan of the universe runs out.
 
 Here, we use a Monte Carlo method called the **Miller-Rabin primality test**.
-For the number $n$ you want to test, select a random base $a$ and test whether it satisfies a specific conditional expression based on an extension of Fermat's Little Theorem.
+For the number $n$ you want to test, select a random base $a$ and test whether it satisfies a specific conditional expression based on an extension of [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/).
 
 If it is judged to be "composite" in one test, that number is definitively composite. However, if it is judged as "possibly prime," there is a maximum probability of $\frac{1}{4}$ that it is misjudged as prime when it is actually composite.
 
@@ -135,7 +135,7 @@ At this time, we take the approach: "Randomly select a hash function and try to 
 
 Since this repeats until a perfect state with no collisions (the correct solution) is obtained, it is a typical Las Vegas method. Theoretically, it might continue to collide forever, but if an appropriate family of hash functions is prepared, a collision-free hash function can be found in a few trials.
 
-## 3. Comparison of Monte Carlo and Las Vegas Algorithms
+## 3. Comparison of [Monte Carlo and Las Vegas Algorithms](https://kenji.blog/p/monte-carlo-and-las-vegas-algorithms/)
 
 Let's clearly compare the differences between the two algorithms.
 

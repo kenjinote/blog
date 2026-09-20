@@ -12,17 +12,17 @@ tags:
   - "Primzahlen"
 ---
 
-In der modernen Internetgesellschaft verdanken wir unsere Fähigkeit zur sicheren Kommunikation der **Kryptographie**. An der eigentlichen Basis dieser Kryptographie liegt ein wunderschöner Satz, der im 17. Jahrhundert von dem Mathematiker Pierre de Fermat entdeckt wurde.
+In der modernen Internetgesellschaft verdanken wir unsere Fähigkeit zur sicheren Kommunikation der **Kryptographie**. An der eigentlichen Basis dieser Kryptographie liegt ein wunderschöner Satz, der im 17. Jahrhundert von dem Mathematiker [Pierre de Fermat](https://kenji.blog/p/fermat/) entdeckt wurde.
 
 In diesem Artikel werden wir **den kleinen Satz von Fermat**, einen entscheidenden Grundstein der Zahlentheorie, auf leicht verständliche Weise erklären und dabei seine Bedeutung, seinen Beweis und seine Anwendung in der modernen RSA-Kryptographie behandeln.
 
 ## Was ist der kleine Satz von Fermat?
 
-Der kleine Satz von Fermat ist ein extrem einfacher, aber mächtiger Satz, der die Beziehung zwischen Primzahlen und ganzen Zahlen aufzeigt.
+[Der kleine Satz von Fermat](https://kenji.blog/p/fermats-little-theorem/) ist ein extrem einfacher, aber mächtiger Satz, der die Beziehung zwischen Primzahlen und ganzen Zahlen aufzeigt.
 
 Der Satz besagt Folgendes:
 
-> **Der kleine Satz von Fermat**
+> **[Der kleine Satz von Fermat](https://kenji.blog/p/fermats-little-theorem/)**
 > Sei $p$ eine Primzahl und $a$ eine beliebige ganze Zahl, die nicht durch $p$ teilbar ist (was bedeutet, dass $a$ und $p$ teilerfremd sind). Dann gilt die folgende Kongruenzrelation:
 > 
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -116,6 +116,6 @@ Nach dem Satz von Euler werden die Schlüssel ($e$ und $d$) so konstruiert, dass
 
 ## Fazit
 
-Ein kleiner Satz, der im 17. Jahrhundert von Pierre de Fermat entdeckt wurde, ist zu einem unverzichtbaren Element geworden, das Hunderte von Jahren später die Grundlage der Informationssicherheit in der modernen Gesellschaft bildet.
+Ein kleiner Satz, der im 17. Jahrhundert von [Pierre de Fermat](https://kenji.blog/p/fermat/) entdeckt wurde, ist zu einem unverzichtbaren Element geworden, das Hunderte von Jahren später die Grundlage der Informationssicherheit in der modernen Gesellschaft bildet.
 
-**Der kleine Satz von Fermat** kann als eines der schönsten Beispiele dafür angesehen werden, wie reine Mathematik mit praktischer Technologie (Kryptographie und Algorithmen) in Verbindung steht. Man kann nicht umhin, über die Tiefe der Mathematik und die Breite ihrer Anwendbarkeit zu staunen.
+**[Der kleine Satz von Fermat](https://kenji.blog/p/fermats-little-theorem/)** kann als eines der schönsten Beispiele dafür angesehen werden, wie reine Mathematik mit praktischer Technologie (Kryptographie und Algorithmen) in Verbindung steht. Man kann nicht umhin, über die Tiefe der Mathematik und die Breite ihrer Anwendbarkeit zu staunen.

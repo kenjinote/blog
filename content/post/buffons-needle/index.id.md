@@ -11,7 +11,7 @@ tags:
   - "Probabilitas geometris"
 ---
 
-# Apa itu Jarum Buffon?
+# Apa itu [Jarum Buffon](https://kenji.blog/p/buffons-needle/)?
 
 Di dunia matematika, ada banyak teorema indah di mana fakta mengejutkan yang berlawanan dengan intuisi atau peristiwa yang tampaknya tidak berhubungan terhubung dengan indah. Salah satu masalah yang paling terkenal dan menarik di antaranya adalah **masalah jarum Buffon**.
 
@@ -19,7 +19,7 @@ Masalah ini diusulkan pada tahun 1733 oleh Georges-Louis Leclerc, Comte de Buffo
 
 Yang mengejutkan, masalah ini menyatakan bahwa melalui tindakan yang sangat fisik dan acak yaitu "menjatuhkan jarum secara acak di lantai", seseorang dapat menentukan salah satu konstanta terpenting dalam matematika, **Pi $\pi$**. Ini dikenal sebagai salah satu masalah paling awal dalam probabilitas geometris dan merupakan penemuan perintis yang dapat dikatakan sebagai pelopor metode Monte Carlo di kemudian hari.
 
-Dalam artikel ini, kami akan menjelaskan secara rinci dan dengan cara yang mudah dipahami, mulai dari pengaturan masalah **Jarum Buffon**, pembuktian matematisnya, hingga perkiraan Pi melalui simulasi menggunakan komputer modern.
+Dalam artikel ini, kami akan menjelaskan secara rinci dan dengan cara yang mudah dipahami, mulai dari pengaturan masalah **[Jarum Buffon](https://kenji.blog/p/buffons-needle/)**, pembuktian matematisnya, hingga perkiraan Pi melalui simulasi menggunakan komputer modern.
 
 ## Pengaturan Dasar Masalah
 
@@ -120,7 +120,7 @@ $$
 P = \frac{2l}{d\pi} \times 1 = \frac{2l}{\pi d}
 $$
 
-Ini adalah rumus dasar **Jarum Buffon**. Probabilitas bahwa jarum melintasi garis adalah dua kali panjang jarum $l$, dibagi dengan produk Pi $\pi$ dan jarak antar garis $d$.
+Ini adalah rumus dasar **[Jarum Buffon](https://kenji.blog/p/buffons-needle/)**. Probabilitas bahwa jarum melintasi garis adalah dua kali panjang jarum $l$, dibagi dengan produk Pi $\pi$ dan jarak antar garis $d$.
 
 ## Memperkirakan Pi (Metode Monte Carlo)
 
@@ -211,7 +211,7 @@ Menjalankan kode ini menjatuhkan sejumlah besar jarum virtual menggunakan angka 
 
 ## Ringkasan
 
-Jarum Buffon sekilas tampak hanya permainan peluang fisik, tetapi ada teori matematika yang kuat di baliknya. Cara peristiwa acak (probabilitas), bentuk geometris (garis dan segmen garis), dan bilangan irasional pamungkas $\pi$ bergabung menjadi satu rumus matematika sederhana mewujudkan keindahan matematika.
+[Jarum Buffon](https://kenji.blog/p/buffons-needle/) sekilas tampak hanya permainan peluang fisik, tetapi ada teori matematika yang kuat di baliknya. Cara peristiwa acak (probabilitas), bentuk geometris (garis dan segmen garis), dan bilangan irasional pamungkas $\pi$ bergabung menjadi satu rumus matematika sederhana mewujudkan keindahan matematika.
 
 Juga, masalah ini memiliki kepentingan sejarah sebagai asal dari metode Monte Carlo, yang sangat diperlukan untuk ilmu pengetahuan dan teknologi modern. Mensimulasikan sistem yang kompleks dan menghitung integral yang sulit dipecahkan secara analitis, gagasan Buffon masih mendukung dunia kita dalam berbagai bentuk saat ini.
 

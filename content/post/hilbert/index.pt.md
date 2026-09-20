@@ -10,7 +10,7 @@ tags: ["Hilbert", "História da Matemática", "Geometria", "Análise Funcional",
 
 ## 1. Introdução: O Pai da Matemática Moderna
 
-David Hilbert (23 de janeiro de 1862 – 14 de fevereiro de 1943) foi um matemático alemão, amplamente reconhecido como um dos mais influentes e brilhantes matemáticos do final do século XIX e início do século XX. Frequentemente comparado ao seu brilhante contemporâneo francês Henri Poincaré, Hilbert enfatizava a lógica estrita e o formalismo, em contraste com a dependência de Poincaré da intuição. Hilbert influenciou profundamente quase todos os campos da matemática moderna, ganhando o apelido de **"O Rei da Matemática"**.
+[David Hilbert](https://kenji.blog/p/hilbert/) (23 de janeiro de 1862 – 14 de fevereiro de 1943) foi um matemático alemão, amplamente reconhecido como um dos mais influentes e brilhantes matemáticos do final do século XIX e início do século XX. Frequentemente comparado ao seu brilhante contemporâneo francês [Henri Poincaré](https://kenji.blog/p/poincare/), Hilbert enfatizava a lógica estrita e o formalismo, em contraste com a dependência de Poincaré da intuição. Hilbert influenciou profundamente quase todos os campos da matemática moderna, ganhando o apelido de **"O Rei da Matemática"**.
 
 Suas contribuições abrangem a teoria dos invariantes, teoria dos números algébricos, axiomatização da geometria, equações integrais, análise funcional (espaços de Hilbert) e física teórica (os fundamentos matemáticos da relatividade geral). Seu maior legado reside não apenas na resolução de problemas em aberto isolados, mas em reimaginar fundamentalmente a estrutura e a natureza da própria matemática, estabelecendo os novos paradigmas do axiomatismo e formalismo. Neste artigo, damos uma olhada profunda e detalhada nos episódios dramáticos da vida de Hilbert e em suas brilhantes realizações.
 
@@ -18,7 +18,7 @@ Suas contribuições abrangem a teoria dos invariantes, teoria dos números alg�
 
 Hilbert nasceu em 23 de janeiro de 1862, em Wehlau, perto de Königsberg (agora Kaliningrado, Rússia), a capital da Província da Prússia Oriental no Reino da Prússia. Seu pai, Otto Hilbert, era um rígido juiz distrital. Sua mãe, Maria Therese, era uma mulher bem-educada com um profundo interesse em filosofia e astronomia. Diz-se que Hilbert herdou seu pensamento lógico e sede de conhecimento de seus pais.
 
-Königsberg era uma cidade com raízes acadêmicas profundas; foi o local de nascimento do grande filósofo Immanuel Kant e famosa pelo problema das "Sete Pontes de Königsberg" resolvido por Leonhard Euler. Durante seus dias de escola, as notas de Hilbert não eram notáveis, mas ele possuía uma intuição e paixão especiais pela matemática. Ele detestava a memorização mecânica, preferindo resolver problemas construindo a lógica do zero em sua própria mente. Essa abordagem — construir a partir de fundamentos lógicos em vez de depender da memorização — tornou-se o núcleo de seu estilo matemático posterior.
+Königsberg era uma cidade com raízes acadêmicas profundas; foi o local de nascimento do grande filósofo Immanuel Kant e famosa pelo problema das "Sete Pontes de Königsberg" resolvido por [Leonhard Euler](https://kenji.blog/p/euler/). Durante seus dias de escola, as notas de Hilbert não eram notáveis, mas ele possuía uma intuição e paixão especiais pela matemática. Ele detestava a memorização mecânica, preferindo resolver problemas construindo a lógica do zero em sua própria mente. Essa abordagem — construir a partir de fundamentos lógicos em vez de depender da memorização — tornou-se o núcleo de seu estilo matemático posterior.
 
 ### "Caminhadas Matemáticas" e Amigos Para a Vida Toda
 
@@ -53,17 +53,17 @@ Neste relatório, ele aplicou a teoria de Galois à teoria dos números, estabel
 
 Em 1899, Hilbert publicou o livro "Grundlagen der Geometrie" (Fundamentos da Geometria). Ele reconstruiu completamente o sistema axiomático da geometria euclidiana, que tinha sido o alicerce absoluto da geometria por mais de 2000 anos, de uma perspectiva moderna.
 
-Os "Elementos" de Euclides continham várias suposições implícitas e elementos que dependiam da intuição visual. Hilbert os eliminou rigorosamente, apresentando um sistema axiomático estritamente definido composto por cinco grupos: axiomas de incidência, ordem, congruência, paralelismo e continuidade.
+Os "Elementos" de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) continham várias suposições implícitas e elementos que dependiam da intuição visual. Hilbert os eliminou rigorosamente, apresentando um sistema axiomático estritamente definido composto por cinco grupos: axiomas de incidência, ordem, congruência, paralelismo e continuidade.
 
 Ele declarou famosamente: **"Deve-se sempre poder dizer — em vez de pontos, linhas retas e planos — mesas, cadeiras e canecas de cerveja."** Esta foi uma declaração retumbante do **formalismo**, despojando a geometria de qualquer realidade intuitiva ou física sobre o que são os objetos, e estabelecendo apenas as relações lógicas entre os objetos como a base da matemática. Esta abordagem inovadora tornou-se o estilo padrão do método axiomático na matemática moderna.
 
 ## 6. Convite para a Universidade de Göttingen e o Amanhecer de uma Era de Ouro
 
-Em 1895, graças à forte recomendação de Felix Klein, um peso-pesado da matemática alemã, Hilbert foi nomeado professor na Universidade de Göttingen. Göttingen já era conhecida como um solo sagrado para a matemática, tendo abrigado Carl Friedrich Gauss e Bernhard Riemann no passado.
+Em 1895, graças à forte recomendação de Felix Klein, um peso-pesado da matemática alemã, Hilbert foi nomeado professor na Universidade de Göttingen. Göttingen já era conhecida como um solo sagrado para a matemática, tendo abrigado [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) e [Bernhard Riemann](https://kenji.blog/p/riemann/) no passado.
 
-Com a chegada de Hilbert, Göttingen se restabeleceu firmemente como o principal centro matemático do mundo. Suas palestras eram sempre claras e transbordantes de paixão por novas ideias matemáticas, atraindo estudantes brilhantes e pesquisadores de todo o globo. Muitas superestrelas que mais tarde liderariam a matemática do século XX, como Emmy Noether, Hermann Weyl, Richard Courant e John von Neumann, foram orientados por Hilbert.
+Com a chegada de Hilbert, Göttingen se restabeleceu firmemente como o principal centro matemático do mundo. Suas palestras eram sempre claras e transbordantes de paixão por novas ideias matemáticas, atraindo estudantes brilhantes e pesquisadores de todo o globo. Muitas superestrelas que mais tarde liderariam a matemática do século XX, como [Emmy Noether](https://kenji.blog/p/noether/), Hermann Weyl, Richard Courant e John von Neumann, foram orientados por Hilbert.
 
-A anedota sobre Emmy Noether é particularmente famosa. Na época, as regras da universidade proibiam mulheres de ocupar cargos acadêmicos. Hilbert, valorizando muito o seu excepcional talento em álgebra, protestou ferozmente na reunião do conselho de professores, declarando: **"O senado da universidade não é uma casa de banhos, portanto o sexo não importa!"** Esta declaração ilustra vividamente o seu caráter progressista, meritocrático e sem preconceitos.
+A anedota sobre [Emmy Noether](https://kenji.blog/p/noether/) é particularmente famosa. Na época, as regras da universidade proibiam mulheres de ocupar cargos acadêmicos. Hilbert, valorizando muito o seu excepcional talento em álgebra, protestou ferozmente na reunião do conselho de professores, declarando: **"O senado da universidade não é uma casa de banhos, portanto o sexo não importa!"** Esta declaração ilustra vividamente o seu caráter progressista, meritocrático e sem preconceitos.
 
 ## 7. O Congresso Internacional de Matemáticos de Paris de 1900: Os 23 Problemas de Hilbert
 
@@ -75,7 +75,7 @@ Estes problemas englobavam todos os campos da matemática na época e serviram c
 2. **A Consistência dos Axiomas da Aritmética** (2º Problema): Prove que os axiomas da aritmética são consistentes usando apenas métodos finitistas.
 3. **A Igualdade de Volumes de Dois Tetraedros com Bases e Alturas Iguais** (3º Problema): Podem dois desses poliedros sempre ser particionados em um número finito de peças e remontados um no outro? Isso foi resolvido negativamente por seu aluno Max Dehn.
 6. **Axiomatização da Física** (6º Problema): Axiomatizar ramos da física onde a matemática desempenha um papel crucial, como a teoria das probabilidades e a mecânica.
-8. **Problemas Relacionados à Distribuição de Números Primos** (8º Problema): A infame Hipótese de Riemann e a Conjectura de Goldbach. Eles continuam sem solução até hoje.
+8. **Problemas Relacionados à Distribuição de Números Primos** (8º Problema): A infame Hipótese de Riemann e a [Conjectura de Goldbach](https://kenji.blog/p/goldbachs-conjecture/). Eles continuam sem solução até hoje.
 10. **Determinação da Solubilidade de uma Equação Diofantina** (10º Problema): Encontrar um algoritmo geral para determinar se uma dada equação polinomial com coeficientes inteiros tem uma solução inteira. Em 1970, Matiyasevich provou que tal algoritmo não existe.
 
 Os problemas de Hilbert continuam a ser sinais vitais para os matemáticos modernos ainda hoje.
@@ -128,15 +128,15 @@ Este programa desencadeou debates ferozes (a crise fundacional) com intuicionist
 
 ## 11. O Choque dos Teoremas da Incompletude de Gödel e a Transformação do Programa
 
-Porém, em 1931, o jovem lógico austríaco Kurt Gödel publicou os seus **teoremas da incompletude**, desferindo um golpe decisivo no Programa de Hilbert.
+Porém, em 1931, o jovem lógico austríaco [Kurt Gödel](https://kenji.blog/p/godel/) publicou os seus **teoremas da incompletude**, desferindo um golpe decisivo no Programa de Hilbert.
 
 Gödel provou de forma matemática e perfeita que em qualquer sistema formal suficientemente poderoso e que contenha os axiomas da aritmética, existirão sempre proposições que são "verdadeiras dentro do sistema, mas não podem ser provadas nem refutadas" (Primeiro Teorema da Incompletude), e que "é impossível provar a consistência do sistema dentro do próprio sistema" (Segundo Teorema da Incompletude).
 
-Isso demonstrou que a construção do "sistema matemático perfeito onde tudo pode ser provado, incluindo a sua própria consistência", com a qual Hilbert sonhara, era impossível. Embora Hilbert tenha ficado inicialmente, segundo relatos, profundamente decepcionado e irritado com esse resultado, os métodos rigorosos da metamatemática e da lógica formal desenvolvidos durante a busca do Programa de Hilbert acabaram conduzindo diretamente à fundação da ciência da computação e da ciência da computação teórica por Alan Turing.
+Isso demonstrou que a construção do "sistema matemático perfeito onde tudo pode ser provado, incluindo a sua própria consistência", com a qual Hilbert sonhara, era impossível. Embora Hilbert tenha ficado inicialmente, segundo relatos, profundamente decepcionado e irritado com esse resultado, os métodos rigorosos da metamatemática e da lógica formal desenvolvidos durante a busca do Programa de Hilbert acabaram conduzindo diretamente à fundação da ciência da computação e da ciência da computação teórica por [Alan Turing](https://kenji.blog/p/turing/).
 
 ## 12. Anos Finais em Göttingen: A Ascensão dos Nazistas e o Fim de um Santuário Matemático
 
-Na década de 1930, o Partido Nazista, liderado por Adolf Hitler, tomou o poder na Alemanha. A "Lei para a Restauração do Serviço Público Profissional" foi promulgada em 1933, resultando na expulsão cruel de muitos matemáticos judeus de destaque e estudiosos dissidentes na Universidade de Göttingen, incluindo Emmy Noether, Hermann Weyl, Richard Courant e Max Born.
+Na década de 1930, o Partido Nazista, liderado por Adolf Hitler, tomou o poder na Alemanha. A "Lei para a Restauração do Serviço Público Profissional" foi promulgada em 1933, resultando na expulsão cruel de muitos matemáticos judeus de destaque e estudiosos dissidentes na Universidade de Göttingen, incluindo [Emmy Noether](https://kenji.blog/p/noether/), Hermann Weyl, Richard Courant e Max Born.
 
 Göttingen, outrora um santuário matemático vibrante onde talentos de todo o mundo se reuniam, entrou em colapso quase da noite para o dia. Certa vez, num banquete, o Ministro da Educação nazista, Bernhard Rust, perguntou a Hilbert: "Como está a matemática no seu instituto agora que ele foi liberto da influência judaica?" Hilbert respondeu com raiva e tristeza: "Instituto de Matemática? Não existe mais nenhum."
 
@@ -144,7 +144,7 @@ Em 14 de fevereiro de 1943, em plena Segunda Guerra Mundial, Hilbert faleceu na 
 
 ## 13. Conclusão: "Devemos Saber, Saberemos"
 
-Mesmo depois da morte de David Hilbert, o legado matemático que ele deixou nunca desapareceu. A trajetória dos seus pensamentos está inscrita em todos os cantos da matemática moderna.
+Mesmo depois da morte de [David Hilbert](https://kenji.blog/p/hilbert/), o legado matemático que ele deixou nunca desapareceu. A trajetória dos seus pensamentos está inscrita em todos os cantos da matemática moderna.
 
 Na sua lápide estão gravadas as famosas palavras que encerraram o seu discurso de aposentadoria em Königsberg, sua cidade natal, em 1930, demonstrando a sua fé inabalável e absoluta na razão humana e na investigação científica. Esta foi uma forte refutação ao agnosticismo pessimista da época, resumido pela frase "ignoramus et ignorabimus" (não sabemos e não saberemos).
 
@@ -152,7 +152,7 @@ Na sua lápide estão gravadas as famosas palavras que encerraram o seu discurso
 > **Wir werden wissen.**
 > (Devemos saber. Saberemos.)
 
-David Hilbert acreditava profundamente nas infinitas possibilidades da matemática e continuou a ser pioneiro nas suas fronteiras ao longo de sua vida. Seu espírito resiliente, sua filosofia e suas brilhantes realizações tornaram-se carne e osso dos matemáticos modernos, dando vida a todos os cantos da matemática de hoje e continuando a inspirar os exploradores do futuro.
+[David Hilbert](https://kenji.blog/p/hilbert/) acreditava profundamente nas infinitas possibilidades da matemática e continuou a ser pioneiro nas suas fronteiras ao longo de sua vida. Seu espírito resiliente, sua filosofia e suas brilhantes realizações tornaram-se carne e osso dos matemáticos modernos, dando vida a todos os cantos da matemática de hoje e continuando a inspirar os exploradores do futuro.
 
 ## Cronologia
 

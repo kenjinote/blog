@@ -13,7 +13,7 @@ math: true
 
 Bayangkan ada 10 jenis kartu, satu kartu dalam setiap kemasan tertutup. Peluang setiap jenis sama. Awalnya hampir setiap kemasan menambah jenis baru. Lama-kelamaan kartu duplikat menumpuk. Ketika tinggal satu jenis yang belum didapat, penantiannya terasa paling panjang.
 
-**Masalah pengumpul kupon** menjelaskan pengalaman ini secara matematis. “Kupon” di sini berarti benda koleksi dengan jenis yang dapat dibedakan, misalnya kartu, stiker, atau mainan kapsul; tidak harus berupa kupon diskon.
+**[Masalah pengumpul kupon](https://kenji.blog/p/coupon-collector-problem/)** menjelaskan pengalaman ini secara matematis. “Kupon” di sini berarti benda koleksi dengan jenis yang dapat dibedakan, misalnya kartu, stiker, atau mainan kapsul; tidak harus berupa kupon diskon.
 
 Untuk 10 jenis, jawabannya adalah **rata-rata sekitar 29,3 pengambilan**. Namun, itu bukan jaminan selesai dalam 30 pengambilan. Peluangnya sekitar 62,9%; untuk mencapai setidaknya 95%, diperlukan 51 pengambilan. Kita akan menurunkan angka-angka ini, melihat variasinya, dan mengujinya dengan Python.
 

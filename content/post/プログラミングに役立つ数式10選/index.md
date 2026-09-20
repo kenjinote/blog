@@ -9,7 +9,7 @@ categories: ["mathematics", "programming", "algorithms"]
 tags: ["Math", "Algorithms", "Python", "C++"]
 ---
 
-# 数学好き必見！プログラミングに役立つ美しい数式10選
+# [数学好き必見！プログラミングに役立つ美しい数式10選](https://kenji.blog/p/プログラミングに役立つ数式10選/)
 
 プログラミングと数学は、一見すると全く異なる分野のように思えるかもしれません。プログラミングは論理的で具体的なコードを記述する作業であり、数学は抽象的で普遍的な真理を追求する学問です。しかし、コンピュータサイエンスの根底には常に数学が存在しています。アルゴリズムの最適化、データサイエンス、機械学習、コンピュータグラフィックス、さらには日常的なアプリケーションの裏側でも、美しい数式が静かに、そして強力に働いています。
 
@@ -19,7 +19,7 @@ tags: ["Math", "Algorithms", "Python", "C++"]
 
 ---
 
-## 1. [オイラー](https://kenji.blog/p/euler/)の等式 (Euler's Identity)
+## 1. [オイラー](https://kenji.blog/p/euler/)の等式 ([Euler's Identity](https://kenji.blog/p/eulers-identity/))
 
 ### 数式の美しさと概要
 「人類の至宝」「世界で最も美しい数式」と称される[オイラー](https://kenji.blog/p/euler/)の等式です。数学における5つの最も重要な定数（ネイピア数 $e$、虚数単位 $i$、円周率 $\pi$、乗法の単位元 $1$、加法の単位元 $0$）が、たった一つのシンプルな式に統合されています。
@@ -132,10 +132,10 @@ print(f"Taylor series sin: {taylor_sin(angle, terms=5)}")
 
 ---
 
-## 3. ベイズの定理 (Bayes' Theorem)
+## 3. [ベイズの定理](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
 
 ### 数式の美しさと概要
-ベイズの定理は、ある事象に関連する事前知識（事前確率）に基づいて、その事象の確率（事後確率）を更新していくための定理です。確率論と統計学において最も重要な公式の一つです。
+[ベイズの定理](https://kenji.blog/p/bayes-theorem/)は、ある事象に関連する事前知識（事前確率）に基づいて、その事象の確率（事後確率）を更新していくための定理です。確率論と統計学において最も重要な公式の一つです。
 
 $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
 
@@ -559,12 +559,12 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. ユークリッド距離と[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理 (Euclidean Distance & Pythagorean Theorem)
+## 10. [ユークリッド](https://kenji.blog/p/euclid/)距離と[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理 ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### 数式の美しさと概要
 古代ギリシャから伝わる幾何学の基礎であり、$n$次元空間における2点間の直線距離を定義する数式です。2次元空間では[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理（$a^2 + b^2 = c^2$）そのものです。
 
-3次元空間における点 $P(x_1, y_1, z_1)$ と $Q(x_2, y_2, z_2)$ のユークリッド距離 $d$ は次のように表されます。
+3次元空間における点 $P(x_1, y_1, z_1)$ と $Q(x_2, y_2, z_2)$ の[ユークリッド](https://kenji.blog/p/euclid/)距離 $d$ は次のように表されます。
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

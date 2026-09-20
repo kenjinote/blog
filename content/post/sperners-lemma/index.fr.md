@@ -10,7 +10,7 @@ tags: ["topologie", "combinatoire", "théorème-du-point-fixe"]
 
 # 1. Introduction : Le mystère des mathématiques à partir d'un puzzle
 
-La beauté des mathématiques réside souvent dans la façon dont des règles extrêmement simples peuvent conduire à des résultats profonds et complètement inattendus. L'un des exemples les plus emblématiques de cela est le **Lemme de Sperner** (Sperner's Lemma). Publié en 1928 par le mathématicien allemand Emanuel Sperner, ce lemme, à première vue, semble n'être rien de plus qu'un "puzzle de coloriage de triangles" que même un élève du primaire pourrait comprendre.
+La beauté des mathématiques réside souvent dans la façon dont des règles extrêmement simples peuvent conduire à des résultats profonds et complètement inattendus. L'un des exemples les plus emblématiques de cela est le **Lemme de Sperner** ([Sperner's Lemma](https://kenji.blog/p/sperners-lemma/)). Publié en 1928 par le mathématicien allemand Emanuel Sperner, ce lemme, à première vue, semble n'être rien de plus qu'un "puzzle de coloriage de triangles" que même un élève du primaire pourrait comprendre.
 
 Cependant, ce simple puzzle occupe une place extrêmement importante dans les mathématiques modernes. En particulier, il sert d'outil puissant pour une preuve combinatoire et constructive du **Théorème du point fixe de Brouwer** (Brouwer Fixed-Point Theorem), qui est un théorème fondamental en topologie et est largement appliqué dans des domaines comme la théorie des jeux en économie (comme dans la démonstration de l'existence de l'équilibre de Nash).
 
@@ -135,7 +135,7 @@ Avec cela, il est parfaitement prouvé qu'il y a au moins un triangle complet.
 
 # 6. Généralisation aux dimensions supérieures
 
-Le Lemme de Sperner ne se limite pas aux triangles 2D mais s'applique à tout simplexe de dimension $n$.
+[Le Lemme de Sperner](https://kenji.blog/p/sperners-lemma/) ne se limite pas aux triangles 2D mais s'applique à tout simplexe de dimension $n$.
 
 Dans le cas d'un simplexe de dimension $n$ (par exemple, un tétraèdre pour $n=3$), il y a $n+1$ sommets, et nous utilisons $n+1$ couleurs, $1, 2, \dots, n+1$.
 La condition de frontière est généralisée comme suit : "Les sommets sur toute face de dimension $k$ (facette) doivent utiliser uniquement les mêmes couleurs que les $k+1$ sommets qui constituent cette face."

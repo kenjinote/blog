@@ -16,7 +16,7 @@ tags:
 
 ## 1. Welcome to the Ultimate Hotel
 
-The great German mathematician David Hilbert devised an interesting thought experiment to illustrate how far the concept of "infinity" is from human intuition.
+The great German mathematician [David Hilbert](https://kenji.blog/p/hilbert/) devised an interesting thought experiment to illustrate how far the concept of "infinity" is from human intuition.
 
 Imagine that somewhere in the universe, there is a hotel called **"Hilbert's Grand Hotel."**
 This hotel has an **infinite number** of rooms, numbered 1, 2, 3, and so on.
@@ -158,7 +158,7 @@ In this way, the manager brilliantly managed to accommodate a staggering number 
 
 What Hilbert's Grand Hotel teaches us is the fact that **"countably infinite (infinity that can be counted by assigning numbers like 1, 2, 3...)", no matter how many times it is added together or multiplied, will ultimately fit within the same size of "countably infinite" framework.**
 
-However, the mathematician Georg Cantor discovered an even more terrifying truth.
+However, the mathematician [Georg Cantor](https://kenji.blog/p/cantor/) discovered an even more terrifying truth.
 "Natural numbers" and "fractions" can all be accommodated in this infinite hotel. But **if guests of "real numbers (all decimals, including irrational numbers)" arrive, even this infinite hotel will absolutely not be able to accommodate all of them.**
 
 It has been proven that the number of real numbers is fundamentally a "larger (higher-level) infinity" than the number of rooms in the infinite hotel (countably infinite).

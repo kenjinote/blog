@@ -19,13 +19,13 @@ For example, if you take the first digit of diverse data in nature and society, 
 
 The most frequently appearing number among them is **"1"**. Surprisingly, about 30% of all data starts with 1. Intuitively, we might expect the numbers 1 through 9 to each appear about 11.1% of the time, but real-world data doesn't work that way.
 
-The mathematical law that explains this mysterious phenomenon is **Benford's Law**.
+The mathematical law that explains this mysterious phenomenon is **[Benford's Law](https://kenji.blog/p/benfords-law/)**.
 
-In this article, we will thoroughly explain how Benford's Law works, why this phenomenon occurs, and how this law is applied to detect fraud.
+In this article, we will thoroughly explain how [Benford's Law](https://kenji.blog/p/benfords-law/) works, why this phenomenon occurs, and how this law is applied to detect fraud.
 
-## What is Benford's Law?
+## What is [Benford's Law](https://kenji.blog/p/benfords-law/)?
 
-Benford's Law (also known as the First-Digit Law) states that in many collections of real-life numerical data, the probability of the first digit (the most significant non-zero digit) appearing is higher for smaller numbers.
+[Benford's Law](https://kenji.blog/p/benfords-law/) (also known as the First-Digit Law) states that in many collections of real-life numerical data, the probability of the first digit (the most significant non-zero digit) appearing is higher for smaller numbers.
 
 Specifically, the probability $P(d)$ that the first digit is $d$ ($d \in \{1, 2, ..., 9\}$) is expressed by the following logarithmic equation:
 
@@ -57,7 +57,7 @@ Why does this counter-intuitive bias occur? The intuitive explanations for under
 
 ### Scale Invariance
 
-If a universal natural law exists, the law itself should not change even if the unit of measurement is changed. For example, whether distance is measured in kilometers or miles, the probability distribution of the first digit must be the same. Mathematically, when seeking a probability distribution that satisfies the condition that the distribution remains unchanged even when multiplied by a constant (scale invariance), one inevitably arrives at the logarithmic distribution of Benford's Law.
+If a universal natural law exists, the law itself should not change even if the unit of measurement is changed. For example, whether distance is measured in kilometers or miles, the probability distribution of the first digit must be the same. Mathematically, when seeking a probability distribution that satisfies the condition that the distribution remains unchanged even when multiplied by a constant (scale invariance), one inevitably arrives at the logarithmic distribution of [Benford's Law](https://kenji.blog/p/benfords-law/).
 
 ### Logarithmic Scale and Growth
 
@@ -71,7 +71,7 @@ $$ \text{Duration} \propto \log_{10}(d+1) - \log_{10}(d) $$
 
 ## What Kind of Data Does it Apply To?
 
-Benford's Law cannot be applied to all data. There is a clear difference between data it applies to and data it doesn't.
+[Benford's Law](https://kenji.blog/p/benfords-law/) cannot be applied to all data. There is a clear difference between data it applies to and data it doesn't.
 
 ### Examples of Applicable Data
 - **Widely distributed data**: Data spanning multiple orders of magnitude (e.g., data distributed from 10 to 1,000,000).
@@ -85,13 +85,13 @@ Benford's Law cannot be applied to all data. There is a clear difference between
 
 ## Application in Fraud Detection
 
-Currently, one of the fields where Benford's Law is used most practically is **Fraud Detection**.
+Currently, one of the fields where [Benford's Law](https://kenji.blog/p/benfords-law/) is used most practically is **Fraud Detection**.
 
-When humans try to randomly fabricate or manipulate numbers to create data, they unconsciously try to use each number equally or avoid certain numbers. However, because natural data follows Benford's Law, fabricated data will deviate significantly from this law.
+When humans try to randomly fabricate or manipulate numbers to create data, they unconsciously try to use each number equally or avoid certain numbers. However, because natural data follows [Benford's Law](https://kenji.blog/p/benfords-law/), fabricated data will deviate significantly from this law.
 
 ### Use in Accounting Audits
 
-Tax authorities and accounting audit firms scan corporate ledgers and expense reports to automatically check whether the first digit (or the second digit) of the numbers follows Benford's Law.
+Tax authorities and accounting audit firms scan corporate ledgers and expense reports to automatically check whether the first digit (or the second digit) of the numbers follows [Benford's Law](https://kenji.blog/p/benfords-law/).
 
 ```mermaid
 graph TD
@@ -102,15 +102,15 @@ graph TD
     E --> F["Conduct Detailed Audit"]
 ```
 
-If a large amount of "fictitious expenses" are inflated, the distribution of those amounts will become unnatural and pop out from the Benford's Law curve. This method is incredibly powerful, and in fact, many embezzlement cases and accounting frauds have been uncovered triggered by this law.
+If a large amount of "fictitious expenses" are inflated, the distribution of those amounts will become unnatural and pop out from the [Benford's Law](https://kenji.blog/p/benfords-law/) curve. This method is incredibly powerful, and in fact, many embezzlement cases and accounting frauds have been uncovered triggered by this law.
 
 ### Election Fraud Allegations
 
-Also, in election vote count data, whether the aggregated results of each polling station follow Benford's Law is sometimes used as an indicator to verify election fraud (however, in the case of election data, it is sometimes difficult to apply depending on the size of the districts, which is a subject of debate).
+Also, in election vote count data, whether the aggregated results of each polling station follow [Benford's Law](https://kenji.blog/p/benfords-law/) is sometimes used as an indicator to verify election fraud (however, in the case of election data, it is sometimes difficult to apply depending on the size of the districts, which is a subject of debate).
 
 ## Conclusion
 
-**Benford's Law** is one of the beautiful mathematical orders hidden in a seemingly chaotic world.
+**[Benford's Law](https://kenji.blog/p/benfords-law/)** is one of the beautiful mathematical orders hidden in a seemingly chaotic world.
 
 Our intuition tends to think that "numbers appear equally," but in reality, "1" has an overwhelming presence. Knowing this law might slightly change how you look at the data you see in the news, corporate financial statements, and even the expansiveness of the natural world.
 

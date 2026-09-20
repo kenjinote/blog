@@ -14,8 +14,8 @@ tags:
 
 # 1. Introducción: ¿Qué es la Teoría de Galois?
 
-Una de las teorías más dramáticas y profundas en la historia de las matemáticas es la **Teoría de Galois** (Galois Theory).
-Esta teoría fue desarrollada a principios del siglo XIX por el joven matemático francés Évariste Galois.
+Una de las teorías más dramáticas y profundas en la historia de las matemáticas es la **Teoría de Galois** ([Galois Theory](https://kenji.blog/p/galois-theory/)).
+Esta teoría fue desarrollada a principios del siglo XIX por el joven matemático francés [Évariste Galois](https://kenji.blog/p/galois/).
 La Teoría de Galois resolvió brillantemente el antiguo enigma de "¿por qué no existe una fórmula general para ecuaciones de grado 5 o superior?" utilizando un concepto completamente nuevo llamado **grupo** (Group).
 
 En este artículo, explicaremos de la manera más profunda y comprensible posible las ideas básicas de la Teoría de Galois, su contexto histórico y el impacto que ha tenido en las matemáticas modernas. Abramos la puerta del álgebra y experimentemos la belleza de la simetría.
@@ -109,7 +109,7 @@ $$
 
 Esto no significa simplemente que "la fórmula aún no se ha encontrado", sino que muestra el hecho decisivo de que "tal fórmula no puede existir matemáticamente".
 
-# 4. La vida de Évariste Galois
+# 4. La vida de [Évariste Galois](https://kenji.blog/p/galois/)
 
 Aunque la belleza de la Teoría de Galois brilla en la historia de las matemáticas, la dramática vida del propio Galois también sigue cautivando a muchas personas.
 

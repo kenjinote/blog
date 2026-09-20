@@ -15,13 +15,13 @@ tags:
 
 ## Introdução
 
-Marin Mersenne (1588–1648) foi um teólogo, filósofo, matemático e teórico musical francês do século XVII. Embora tenha feito suas próprias descobertas matemáticas, ele é mais conhecido por seu papel como o **"correio da Europa"**, conectando os grandes estudiosos de seu tempo.
+[Marin Mersenne](https://kenji.blog/p/mersenne/) (1588–1648) foi um teólogo, filósofo, matemático e teórico musical francês do século XVII. Embora tenha feito suas próprias descobertas matemáticas, ele é mais conhecido por seu papel como o **"correio da Europa"**, conectando os grandes estudiosos de seu tempo.
 
 Neste artigo, exploraremos a vida de Mersenne, a enorme rede intelectual que ele construiu e os **números primos de Mersenne** que estão profundamente conectados à criptografia moderna. Além disso, nos aprofundaremos em suas contribuições para a acústica e sua influência na metodologia científica.
 
 ## Início de vida e vida monástica
 
-Marin Mersenne nasceu em 8 de setembro de 1588, em uma família de camponeses em Oizé, Maine, França. Após receber educação básica em um colégio em Le Mans, ele ingressou no colégio jesuíta de La Flèche em 1604. Lá, ele conheceu René Descartes, que mais tarde se tornaria o pai da filosofia moderna, e forjou uma profunda amizade para toda a vida com ele.
+[Marin Mersenne](https://kenji.blog/p/mersenne/) nasceu em 8 de setembro de 1588, em uma família de camponeses em Oizé, Maine, França. Após receber educação básica em um colégio em Le Mans, ele ingressou no colégio jesuíta de La Flèche em 1604. Lá, ele conheceu [René Descartes](https://kenji.blog/p/descartes/), que mais tarde se tornaria o pai da filosofia moderna, e forjou uma profunda amizade para toda a vida com ele.
 
 Em 1611, Mersenne ingressou na Ordem dos Mínimos. Os Mínimos eram uma ordem com disciplinas estritas (como jejum e vegetarianismo), mas promoviam uma cultura que encorajava a busca da erudição. Em 1619, ele se estabeleceu no Convento de L'Annonciade em Paris, que se tornou sua base para mergulhar na teologia, filosofia e ciências naturais.
 
@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Acústica"| Huygens
 ```
 
-No centro dessa rede, quando alguém descobria um novo teorema, Mersenne o repassava a outros estudiosos, encorajando a crítica e a verificação. Por exemplo, foi Mersenne quem comunicou as descobertas matemáticas de Pierre de Fermat a Descartes, provocando um intenso debate entre os dois. Ele também é conhecido por traduzir as obras de Galileu Galilei (como o *Diálogo sobre os Dois Principais Sistemas do Mundo*) para o francês, tornando-as amplamente conhecidas, apesar da rigorosa censura da Igreja Católica. Alguns historiadores avaliam que, sem ele, a Revolução Científica do século XVII poderia ter sido atrasada em décadas.
+No centro dessa rede, quando alguém descobria um novo teorema, Mersenne o repassava a outros estudiosos, encorajando a crítica e a verificação. Por exemplo, foi Mersenne quem comunicou as descobertas matemáticas de [Pierre de Fermat](https://kenji.blog/p/fermat/) a Descartes, provocando um intenso debate entre os dois. Ele também é conhecido por traduzir as obras de Galileu Galilei (como o *Diálogo sobre os Dois Principais Sistemas do Mundo*) para o francês, tornando-as amplamente conhecidas, apesar da rigorosa censura da Igreja Católica. Alguns historiadores avaliam que, sem ele, a Revolução Científica do século XVII poderia ter sido atrasada em décadas.
 
 ## Realizações matemáticas: Números primos de Mersenne
 
@@ -137,6 +137,6 @@ Mersenne acreditava firmemente que o progresso científico provava a grandeza do
 
 ## Conclusão
 
-Marin Mersenne possuía não apenas intuição matemática notável, mas também um talento raro para conectar pessoas e conhecimento. A rede intelectual que ele estabeleceu acabou levando ao nascimento de sociedades científicas formais, como a Academia Francesa de Ciências e a Royal Society na Inglaterra.
+[Marin Mersenne](https://kenji.blog/p/mersenne/) possuía não apenas intuição matemática notável, mas também um talento raro para conectar pessoas e conhecimento. A rede intelectual que ele estabeleceu acabou levando ao nascimento de sociedades científicas formais, como a Academia Francesa de Ciências e a Royal Society na Inglaterra.
 
 Seu nome está eternamente gravado na história da matemática na forma dos números primos de Mersenne, mas seu papel como "facilitador intelectual" na Revolução Científica do século XVII também é uma grande conquista que nunca deve ser esquecida. Sua vida nos ensina que a ciência se desenvolve não apenas pelo gênio dos indivíduos, mas também pela comunicação aberta e colaboração.

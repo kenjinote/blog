@@ -10,13 +10,13 @@ tags: ["William Brouncker", "Pi", "Fracción continua", "Ecuación de Pell", "Ro
 
 ## 1. Introducción
 
-La Europa del siglo XVII se encontraba en medio de una revolución científica. Fue una época en la que las matemáticas y la física dieron saltos espectaculares, como lo demuestra el descubrimiento del cálculo por Isaac Newton y Gottfried Wilhelm Leibniz. En medio de esto, la institución que desempeñó un papel central en el desarrollo de la academia británica fue **The Royal Society** (La Real Sociedad de Londres).
+La Europa del siglo XVII se encontraba en medio de una revolución científica. Fue una época en la que las matemáticas y la física dieron saltos espectaculares, como lo demuestra el descubrimiento del cálculo por [Isaac Newton](https://kenji.blog/p/newton/) y Gottfried Wilhelm Leibniz. En medio de esto, la institución que desempeñó un papel central en el desarrollo de la academia británica fue **The Royal Society** (La Real Sociedad de Londres).
 
-Este artículo proporciona una explicación detallada de la vida y los notables logros matemáticos de **William Brouncker**, quien se desempeñó como el primer presidente de la Royal Society y dejó su huella en la historia como matemático con su "representación en fracción continua de Pi" y su "solución a la ecuación de Pell". Brouncker interactuó con las mentes más brillantes de la Europa de la época y abordó numerosos problemas desafiantes. Sus logros contribuyeron significativamente a sentar las bases para un tratamiento matemáticamente riguroso del concepto de infinito.
+Este artículo proporciona una explicación detallada de la vida y los notables logros matemáticos de **[William Brouncker](https://kenji.blog/p/brouncker/)**, quien se desempeñó como el primer presidente de la Royal Society y dejó su huella en la historia como matemático con su "representación en fracción continua de Pi" y su "solución a la ecuación de Pell". Brouncker interactuó con las mentes más brillantes de la Europa de la época y abordó numerosos problemas desafiantes. Sus logros contribuyeron significativamente a sentar las bases para un tratamiento matemáticamente riguroso del concepto de infinito.
 
 ## 2. Vida temprana y carrera
 
-William Brouncker (1620 - 5 de abril de 1684) nació como el hijo mayor de William Brouncker, primer vizconde de Brouncker, y Winifred Leigh. Si bien hay muchos detalles desconocidos sobre su lugar exacto de nacimiento y educación temprana, se cree que estudió en la Universidad de Oxford, cultivando excelentes habilidades lingüísticas y sentido matemático. En 1645, tras la muerte de su padre, se convirtió en el segundo vizconde Brouncker.
+[William Brouncker](https://kenji.blog/p/brouncker/) (1620 - 5 de abril de 1684) nació como el hijo mayor de [William Brouncker](https://kenji.blog/p/brouncker/), primer vizconde de Brouncker, y Winifred Leigh. Si bien hay muchos detalles desconocidos sobre su lugar exacto de nacimiento y educación temprana, se cree que estudió en la Universidad de Oxford, cultivando excelentes habilidades lingüísticas y sentido matemático. En 1645, tras la muerte de su padre, se convirtió en el segundo vizconde Brouncker.
 
 En ese momento, Inglaterra se encontraba en el período caótico de la Revolución Puritana (Guerra Civil Inglesa), pero Brouncker se dedicó más al mundo de la academia que a la política. Tenía un interés particularmente fuerte en las matemáticas y la música, comenzando a construir sus propias teorías. En 1647, obtuvo un doctorado en medicina de la Universidad de Oxford, pero su principal interés siempre permaneció en las ciencias exactas. También se sabe que su hermano menor, Henry Brouncker, estuvo activo en el mundo político y cortesano mientras mantenía un interés en el ajedrez y las matemáticas.
 
@@ -24,7 +24,7 @@ En ese momento, Inglaterra se encontraba en el período caótico de la Revoluci�
 
 La Royal Society es una de las sociedades científicas más antiguas del mundo, dedicada a mejorar el conocimiento natural. Sus orígenes residen en una reunión formada después de una conferencia de Christopher Wren en Londres en 1660, y se lanzó oficialmente en 1662 tras recibir una Carta Real del rey Carlos II.
 
-El elegido como **Primer Presidente** de esta histórica sociedad fue William Brouncker. En medio de la formación de la sociedad gracias a los esfuerzos de Robert Moray y otros, Brouncker se desempeñó como presidente durante un largo período de 15 años, desde 1662 hasta 1677, dedicándose a construir las bases de la sociedad.
+El elegido como **Primer Presidente** de esta histórica sociedad fue [William Brouncker](https://kenji.blog/p/brouncker/). En medio de la formación de la sociedad gracias a los esfuerzos de Robert Moray y otros, Brouncker se desempeñó como presidente durante un largo período de 15 años, desde 1662 hasta 1677, dedicándose a construir las bases de la sociedad.
 
 ```mermaid
 graph TD
@@ -40,7 +40,7 @@ Brouncker desempeñó un papel crucial al reunir a científicos destacados como 
 
 ## 4. Logro matemático: Representación en fracción continua de Pi
 
-El logro matemático más famoso de Brouncker es el descubrimiento de la fracción continua generalizada para la constante $\pi$. Esto se introdujo en el libro *Arithmetica Infinitorum* (1655) por el matemático contemporáneo John Wallis, lo que lo hizo ampliamente conocido.
+El logro matemático más famoso de Brouncker es el descubrimiento de la fracción continua generalizada para la constante $\pi$. Esto se introdujo en el libro *Arithmetica Infinitorum* (1655) por el matemático contemporáneo [John Wallis](https://kenji.blog/p/wallis/), lo que lo hizo ampliamente conocido.
 
 ### Fórmula de Wallis y transformación de Brouncker
 
@@ -72,7 +72,7 @@ $$
 
 ### El desafío de Fermat
 
-En 1657, el gran matemático francés Pierre de Fermat envió un desafío a los matemáticos ingleses para encontrar soluciones enteras a esta ecuación. Fermat citó casos difíciles como $n=61$ a modo de ejemplo.
+En 1657, el gran matemático francés [Pierre de Fermat](https://kenji.blog/p/fermat/) envió un desafío a los matemáticos ingleses para encontrar soluciones enteras a esta ecuación. Fermat citó casos difíciles como $n=61$ a modo de ejemplo.
 
 ### El algoritmo de Brouncker
 
@@ -98,13 +98,13 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-Brouncker demostró que incluso soluciones tan gigantescas podían derivarse sistemáticamente utilizando su método. Irónicamente, debido a un malentendido de Leonhard Euler, esta ecuación recibió más tarde el nombre del matemático inglés John Pell, pero la mayor contribución para establecer el método de solución pertenece indiscutiblemente a Brouncker.
+Brouncker demostró que incluso soluciones tan gigantescas podían derivarse sistemáticamente utilizando su método. Irónicamente, debido a un malentendido de [Leonhard Euler](https://kenji.blog/p/euler/), esta ecuación recibió más tarde el nombre del matemático inglés John Pell, pero la mayor contribución para establecer el método de solución pertenece indiscutiblemente a Brouncker.
 
 ## 6. Otros logros y años posteriores
 
 ### Contribuciones a la teoría musical
 
-Brouncker estaba interesado no solo en las matemáticas sino también en la teoría musical. Tradujo el *Musicae Compendium* de René Descartes al inglés y lo publicó de forma anónima. Al hacerlo, no se limitó a traducirlo, sino que añadió un apéndice proponiendo su propio sistema de afinación (temperamento igual de 17 tonos) que dividía una octava en 17 intervalos iguales. Este fue un intento pionero de analizar las escalas musicales matemáticamente utilizando logaritmos.
+Brouncker estaba interesado no solo en las matemáticas sino también en la teoría musical. Tradujo el *Musicae Compendium* de [René Descartes](https://kenji.blog/p/descartes/) al inglés y lo publicó de forma anónima. Al hacerlo, no se limitó a traducirlo, sino que añadió un apéndice proponiendo su propio sistema de afinación (temperamento igual de 17 tonos) que dividía una octava en 17 intervalos iguales. Este fue un intento pionero de analizar las escalas musicales matemáticamente utilizando logaritmos.
 
 ### Cuadratura de la parábola y curva logarítmica
 
@@ -118,6 +118,6 @@ En sus últimos años, incluso después de dejar el cargo de presidente de la Ro
 
 ## 7. Conclusión
 
-William Brouncker fue un líder destacado y un matemático original que impulsó la comunidad científica británica del siglo XVII. Sus logros al sentar las bases de la ciencia moderna como primer presidente de la Royal Society son inconmensurables. Además, sus logros matemáticos, como la representación en fracción continua de Pi y la solución a la ecuación de Pell, se convirtieron en hitos importantes en el desarrollo del análisis matemático, que se ocupa del concepto de infinito, y de la teoría de números.
+[William Brouncker](https://kenji.blog/p/brouncker/) fue un líder destacado y un matemático original que impulsó la comunidad científica británica del siglo XVII. Sus logros al sentar las bases de la ciencia moderna como primer presidente de la Royal Society son inconmensurables. Además, sus logros matemáticos, como la representación en fracción continua de Pi y la solución a la ecuación de Pell, se convirtieron en hitos importantes en el desarrollo del análisis matemático, que se ocupa del concepto de infinito, y de la teoría de números.
 
 Su enfoque simboliza el período de transición de la geometría rigurosa al análisis utilizando el álgebra y las series infinitas. Si bien su nombre a menudo se ve ensombrecido por gigantes como Newton y Fermat, sin la existencia de **Brouncker**, no se puede discutir la riqueza de las matemáticas en la actualidad. Su curiosidad intelectual y espíritu de investigación continúan brillando ante nosotros como la belleza de las matemáticas, incluso cientos de años después.

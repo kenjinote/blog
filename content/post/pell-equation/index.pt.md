@@ -17,7 +17,7 @@ tags:
 
 No campo da teoria dos números, a **equação de Pell** (Pell's equation) é conhecida como uma das equações diofantinas mais belas e com profunda fundamentação teórica. Neste artigo, forneceremos uma explicação muito detalhada, começando da definição básica e propriedades desta equação, até um método de solução elegante e eficiente usando frações contínuas (Continued fractions), e o mecanismo de geração de suas infinitas soluções. Para todos os amantes da matemática, abordamos desde a dedução de fórmulas até a visualização de algoritmos e a implementação utilizando uma linguagem de programação.
 
-## 1. O que é a Equação de Pell?
+## 1. O que é a [Equação de Pell](https://kenji.blog/p/pell-equation/)?
 
 A equação de Pell refere-se a uma equação diofantina quadrática em duas variáveis que possui a seguinte forma:
 
@@ -32,9 +32,9 @@ Como $x$, $y$ e $k$ são todos inteiros, $(x - ky)$ e $(x + ky)$ também devem s
 
 ## 2. Contexto Histórico: Pell, Fermat e Antigos Matemáticos Indianos
 
-Embora esta equação leve o nome "Pell", explorar os fatos históricos revela um contexto um tanto estranho. Na verdade, a primeira pessoa na Europa moderna a estudar uma solução geral para esta equação e afirmar fortemente que sempre existe uma solução foi o grande matemático francês **Pierre de Fermat**.
+Embora esta equação leve o nome "Pell", explorar os fatos históricos revela um contexto um tanto estranho. Na verdade, a primeira pessoa na Europa moderna a estudar uma solução geral para esta equação e afirmar fortemente que sempre existe uma solução foi o grande matemático francês **[Pierre de Fermat](https://kenji.blog/p/fermat/)**.
 
-Mais tarde, **Leonhard Euler** vinculou erroneamente o nome do matemático inglês **John Pell** a esta equação, e desde então ela tem sido amplamente conhecida como "equação de Pell". O próprio Pell não desempenhou um papel central no método de resolução desta equação.
+Mais tarde, **[Leonhard Euler](https://kenji.blog/p/euler/)** vinculou erroneamente o nome do matemático inglês **John Pell** a esta equação, e desde então ela tem sido amplamente conhecida como "equação de Pell". O próprio Pell não desempenhou um papel central no método de resolução desta equação.
 
 Retrocedendo ainda mais no tempo, os matemáticos indianos **Brahmagupta** e **Bhāskara II** calcularam soluções para equações deste tipo usando um algoritmo sofisticado chamado método Chakravala, centenas de anos antes de Fermat. A história da exploração por matemáticos desde a antiguidade até a Idade Média e a era moderna está inscrita nesta equação.
 
@@ -44,7 +44,7 @@ Para a equação de Pell $x^2 - ny^2 = 1$, independentemente do valor de $n$, se
 
 Contudo, o que realmente interessa aos matemáticos é uma **solução não trivial** (non-trivial solution) onde $y \neq 0$. Surpreendentemente, se $n$ for um inteiro positivo que não seja um quadrado perfeito, foi matematicamente provado que a equação de Pell possui **infinitas soluções não triviais**. Além disso, dentre essas infinitas soluções, a menor solução onde tanto $x$ quanto $y$ são inteiros positivos é chamada de **solução fundamental** (fundamental solution), e uma vez que esta é encontrada, todas as outras soluções podem ser facilmente geradas por meio de operações algébricas.
 
-## 4. A Profunda Conexão entre Frações Contínuas e a Equação de Pell
+## 4. A Profunda Conexão entre Frações Contínuas e a [Equação de Pell](https://kenji.blog/p/pell-equation/)
 
 A ferramenta mais poderosa e padrão para encontrar eficientemente a solução fundamental é a **fração contínua** (Continued fraction). Como o número irracional $\sqrt{n}$ não pode ser representado por uma fração finita, ele pode ser expressado belamente como uma fração contínua regular periódica e infinitamente contínua.
 

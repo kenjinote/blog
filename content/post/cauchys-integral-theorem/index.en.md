@@ -19,7 +19,7 @@ In the field of mathematics known as complex analysis, one of the most beautiful
 
 From the experience of learning the integration of real functions, integration is naturally thought of as representing "area" or "accumulation along a path," so if you integrate over a long distance along a path, it seems natural that some value would remain. However, on the complex plane, when a function possesses the special property of being **holomorphic**, an astonishing symmetry emerges where the result of the integration becomes completely independent of the path taken, skipping over differences in paths.
 
-In this article, we will explain Cauchy's integral theorem in great detail, starting from the foundational definitions of the complex plane and holomorphic functions, moving through the intuitive meaning of the theorem, its physical interpretation, and a sketch of its classical proof using Green's theorem. Furthermore, we will touch upon how this theorem connects to more advanced topics in complex analysis, such as Cauchy's integral formula and the Residue Theorem. Let us appreciate the profound depth of this theorem from both a mathematical rigor and intuitive imagery perspective.
+In this article, we will explain Cauchy's integral theorem in great detail, starting from the foundational definitions of the complex plane and holomorphic functions, moving through the intuitive meaning of the theorem, its physical interpretation, and a sketch of its classical proof using Green's theorem. Furthermore, we will touch upon how this theorem connects to more advanced topics in complex analysis, such as Cauchy's integral formula and the [Residue Theorem](https://kenji.blog/p/residue-theorem/). Let us appreciate the profound depth of this theorem from both a mathematical rigor and intuitive imagery perspective.
 
 ## 2. Foundations of the Complex Plane and Holomorphic Functions
 
@@ -201,16 +201,16 @@ $$
 
 This formula shows the astonishing rigidity of holomorphic functions: "As long as the values of the function on the boundary of the closed curve are known, the value of the function at every point inside the domain is completely determined by integral calculation."
 
-### Multiply Connected Domains and the Residue Theorem
+### Multiply Connected Domains and the [Residue Theorem](https://kenji.blog/p/residue-theorem/)
 
 If the domain has "holes" and is not simply connected (multiply connected domain), Cauchy's integral theorem cannot be applied as is. For example, the function $f(z) = 1/z$ is not defined at the origin $z=0$ and is not holomorphic there. If we integrate along the unit circle enclosing the origin, the result is not zero, but the value $2\pi i$.
 
-However, by ingeniously applying Cauchy's integral theorem and deforming the integration path, a systematic method for evaluating integrals around holes was established. This leads to the **Residue Theorem**, one of the most practical tools in modern complex analysis. By using the Residue Theorem, complex definite integrals and infinite integrals of real functions can be brilliantly replaced with algebraic calculations on the complex plane and solved.
+However, by ingeniously applying Cauchy's integral theorem and deforming the integration path, a systematic method for evaluating integrals around holes was established. This leads to the **[Residue Theorem](https://kenji.blog/p/residue-theorem/)**, one of the most practical tools in modern complex analysis. By using the [Residue Theorem](https://kenji.blog/p/residue-theorem/), complex definite integrals and infinite integrals of real functions can be brilliantly replaced with algebraic calculations on the complex plane and solved.
 
 ## 10. Conclusion
 
 At first glance, Cauchy's integral theorem might look like a modest theorem that simply says "the integral becomes zero." However, hidden behind it is a profound and beautiful symmetry brought about by the seemingly simple condition of the "holomorphy" of complex functions.
 
-Starting from this theorem, glorious achievements of complex analysis such as Cauchy's integral formula, the proof that a function is infinitely differentiable (guaranteeing Taylor expansions and Laurent expansions), and the Residue Theorem are successively derived. Cauchy's integral theorem can truly be said to be the most robust and beautiful foundation that supports the magnificent mathematical edifice of complex analysis from its roots.
+Starting from this theorem, glorious achievements of complex analysis such as Cauchy's integral formula, the proof that a function is infinitely differentiable (guaranteeing Taylor expansions and Laurent expansions), and the [Residue Theorem](https://kenji.blog/p/residue-theorem/) are successively derived. Cauchy's integral theorem can truly be said to be the most robust and beautiful foundation that supports the magnificent mathematical edifice of complex analysis from its roots.
 
 We encourage readers to pick up a paper and pen and trace the proof using Green's theorem with your own hands. You should be able to surely feel the beautifully harmonious world of the complex plane spreading out behind the mathematical formulas.

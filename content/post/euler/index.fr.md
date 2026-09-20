@@ -10,7 +10,7 @@ tags: ["Euler", "Histoire des Mathématiques", "Génie", "Physique"]
 
 ## Introduction
 
-Lorsqu'on se penche sur l'histoire des mathématiques, il est absolument impossible d'omettre le nom de **Leonhard Euler** (1707–1783). Il est largement reconnu comme l'un des mathématiciens les plus prolifiques et influents de l'histoire humaine. Du calcul et de la théorie des nombres à la théorie des graphes, la mécanique, l'optique et l'astronomie, son esprit curieux et son empreinte s'étendent à tous les domaines de la science.
+Lorsqu'on se penche sur l'histoire des mathématiques, il est absolument impossible d'omettre le nom de **[Leonhard Euler](https://kenji.blog/p/euler/)** (1707–1783). Il est largement reconnu comme l'un des mathématiciens les plus prolifiques et influents de l'histoire humaine. Du calcul et de la théorie des nombres à la théorie des graphes, la mécanique, l'optique et l'astronomie, son esprit curieux et son empreinte s'étendent à tous les domaines de la science.
 
 Dans cet article, nous plongerons profondément dans la vie tumultueuse du génie Euler et dans les brillantes réalisations qu'il a laissées aux générations futures. Les lois et formules qu'il a découvertes constituent le fondement de la science et de la technologie d'aujourd'hui, rendant son travail profondément pertinent pour nous tous qui vivons dans le monde moderne.
 
@@ -133,6 +133,6 @@ Dans les manuels de mathématiques que nous étudions aujourd'hui, le souffle d'
 
 ## Conclusion
 
-Leonhard Euler n'était pas seulement un génie du calcul ; il possédait une intuition et une perspicacité extraordinaires, ce qui lui permettait de discerner les structures essentielles au sein de phénomènes complexes et de les exprimer sous forme de formules et de concepts magnifiques.
+[Leonhard Euler](https://kenji.blog/p/euler/) n'était pas seulement un génie du calcul ; il possédait une intuition et une perspicacité extraordinaires, ce qui lui permettait de discerner les structures essentielles au sein de phénomènes complexes et de les exprimer sous forme de formules et de concepts magnifiques.
 
 Même dans la situation désespérée de perdre la vue, Euler n'a jamais perdu sa passion pour les mathématiques, continuant de planer dans l'univers de l'esprit avec une mémoire et une concentration incroyables. Les superbes formules et théorèmes qu'il a laissés continueront de briller à jamais comme propriété intellectuelle de l'humanité. Sa vie nous enseigne à quel point l'esprit humain peut être incroyablement puissant et noble.

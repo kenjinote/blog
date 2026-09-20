@@ -17,7 +17,7 @@ tags:
 
 ## 1. O que é o Jogo da Vida de Conway?
 
-O **Jogo da Vida de Conway** (Conway's Game of Life) é um tipo de **autômato celular** inventado pelo matemático britânico John Horton Conway em 1970. Embora seja chamado de jogo, é um "jogo de zero jogadores", o que significa que sua evolução é determinada pelo seu estado inicial, não necessitando de nenhuma entrada adicional.
+O **Jogo da Vida de Conway** ([Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/)) é um tipo de **autômato celular** inventado pelo matemático britânico John Horton Conway em 1970. Embora seja chamado de jogo, é um "jogo de zero jogadores", o que significa que sua evolução é determinada pelo seu estado inicial, não necessitando de nenhuma entrada adicional.
 
 O maior atrativo deste sistema reside no fato de que **comportamentos complexos e imprevisíveis semelhantes à vida (emergência) são gerados a partir de regras determinísticas extremamente simples**.
 
@@ -135,4 +135,4 @@ plt.show()
 
 ## 6. Conclusão
 
-O Jogo da Vida de Conway é um dos exemplos mais belos e intuitivos de **emergência**, onde a complexidade é gerada a partir de regras simples. Situado nas fronteiras da matemática, ciência da computação, física e biologia, este modelo continua a fornecer uma metáfora poderosa para a nossa compreensão dos conceitos de "vida" e "computação".
+[O Jogo da Vida de Conway](https://kenji.blog/p/conways-game-of-life/) é um dos exemplos mais belos e intuitivos de **emergência**, onde a complexidade é gerada a partir de regras simples. Situado nas fronteiras da matemática, ciência da computação, física e biologia, este modelo continua a fornecer uma metáfora poderosa para a nossa compreensão dos conceitos de "vida" e "computação".

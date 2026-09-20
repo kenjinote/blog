@@ -15,13 +15,13 @@ tags:
 
 ## Introduction
 
-Marin Mersenne (1588–1648) was a 17th-century French theologian, philosopher, mathematician, and music theorist. While he made his own mathematical discoveries, he is most widely known for his role as the **"post-box of Europe"**, connecting the great scholars of his time.
+[Marin Mersenne](https://kenji.blog/p/mersenne/) (1588–1648) was a 17th-century French theologian, philosopher, mathematician, and music theorist. While he made his own mathematical discoveries, he is most widely known for his role as the **"post-box of Europe"**, connecting the great scholars of his time.
 
 In this article, we will explore Mersenne's life, the massive intellectual network he built, and the **Mersenne primes** that are deeply connected to modern cryptography. Furthermore, we will delve into his contributions to acoustics and his influence on scientific methodology.
 
 ## Early Life and Monastic Life
 
-Marin Mersenne was born on September 8, 1588, to a peasant family in Oizé, Maine, France. After receiving basic education at a college in Le Mans, he entered the Jesuit college of La Flèche in 1604. There, he met René Descartes, who would later become the father of modern philosophy, and forged a lifelong friendship with him.
+[Marin Mersenne](https://kenji.blog/p/mersenne/) was born on September 8, 1588, to a peasant family in Oizé, Maine, France. After receiving basic education at a college in Le Mans, he entered the Jesuit college of La Flèche in 1604. There, he met [René Descartes](https://kenji.blog/p/descartes/), who would later become the father of modern philosophy, and forged a lifelong friendship with him.
 
 In 1611, Mersenne joined the Order of Minims. The Minims were an order with strict disciplines (such as fasting and vegetarianism), but they fostered a culture that encouraged the pursuit of scholarship. In 1619, he settled at the Convent of L'Annonciade in Paris, which became his base for immersing himself in theology, philosophy, and natural sciences.
 
@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Acoustics"| Huygens
 ```
 
-At the center of this network, when someone discovered a new theorem, Mersenne would relay it to other scholars, encouraging critique and verification. For example, it was Mersenne who communicated Pierre de Fermat's mathematical discoveries to Descartes, sparking a fierce debate between the two. He is also known for translating Galileo Galilei's works (such as *Dialogue Concerning the Two Chief World Systems*) into French, introducing them widely despite strict censorship by the Catholic Church. Some historians assess that without him, the Scientific Revolution of the 17th century might have been delayed by decades.
+At the center of this network, when someone discovered a new theorem, Mersenne would relay it to other scholars, encouraging critique and verification. For example, it was Mersenne who communicated [Pierre de Fermat](https://kenji.blog/p/fermat/)'s mathematical discoveries to Descartes, sparking a fierce debate between the two. He is also known for translating Galileo Galilei's works (such as *Dialogue Concerning the Two Chief World Systems*) into French, introducing them widely despite strict censorship by the Catholic Church. Some historians assess that without him, the Scientific Revolution of the 17th century might have been delayed by decades.
 
 ## Mathematical Achievements: Mersenne Primes
 
@@ -137,6 +137,6 @@ Mersenne firmly believed that scientific progress proved the greatness of the wo
 
 ## Conclusion
 
-Marin Mersenne possessed not only outstanding mathematical intuition but also a rare talent for connecting people and knowledge. The intellectual network he established eventually led to the birth of formal scientific societies, such as the French Academy of Sciences and the Royal Society in England.
+[Marin Mersenne](https://kenji.blog/p/mersenne/) possessed not only outstanding mathematical intuition but also a rare talent for connecting people and knowledge. The intellectual network he established eventually led to the birth of formal scientific societies, such as the French Academy of Sciences and the Royal Society in England.
 
 His name is forever etched in the history of mathematics in the form of Mersenne primes, but his role as an "intellectual facilitator" in the 17th-century Scientific Revolution is also a great achievement that must never be forgotten. His life teaches us that science develops not only through the genius of individuals but also through open communication and collaboration.

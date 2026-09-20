@@ -9,7 +9,7 @@ categories: ["mathematics", "programming", "algorithms"]
 tags: ["Math", "Algorithms", "Python", "C++"]
 ---
 
-# Avis aux passionnés de mathématiques ! 10 superbes formules mathématiques utiles pour la programmation
+# [Avis aux passionnés de mathématiques ! 10 superbes formules mathématiques utiles pour la programmation](https://kenji.blog/p/プログラミングに役立つ数式10選/)
 
 La programmation et les mathématiques peuvent sembler à première vue être des domaines totalement différents. La programmation est le processus d'écriture de code logique et concret, tandis que les mathématiques sont la poursuite de vérités abstraites et universelles. Cependant, les mathématiques sont toujours au cœur de l'informatique. Derrière l'optimisation des algorithmes, la science des données, l'apprentissage automatique, l'infographie et même les applications quotidiennes, de belles formules mathématiques travaillent silencieusement et puissamment.
 
@@ -19,7 +19,7 @@ Bienvenue dans un monde où la beauté des mathématiques croise l'aspect pratiq
 
 ---
 
-## 1. Identité d'Euler (Euler's Identity)
+## 1. [Identité d'Euler ([Euler's Identity](https://kenji.blog/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
 
 ### Beauté de la formule et aperçu
 Voici l'identité d'Euler, souvent qualifiée de "trésor de l'humanité" ou de "la plus belle équation du monde". Les cinq constantes les plus importantes en mathématiques (le nombre de Néper $e$, l'unité imaginaire $i$, le nombre pi $\pi$, l'élément neutre de la multiplication $1$ et l'élément neutre de l'addition $0$) sont intégrées dans une seule formule simple.
@@ -132,7 +132,7 @@ Dans le code ci-dessus, la valeur d'entrée `x` est normalisée dans la plage $[
 
 ---
 
-## 3. Théorème de Bayes (Bayes' Theorem)
+## 3. [Théorème de Bayes](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
 
 ### Beauté de la formule et aperçu
 Le théorème de Bayes est un théorème permettant de mettre à jour la probabilité d'un événement (probabilité a posteriori) sur la base de connaissances préalables (probabilité a priori) liées à cet événement. C'est l'une des formules les plus importantes en théorie des probabilités et en statistiques.
@@ -559,7 +559,7 @@ La ramification conditionnelle avec `x >= 0` et le reste dans le code ci-dessus 
 
 ---
 
-## 10. Distance euclidienne et théorème de Pythagore (Euclidean Distance & Pythagorean Theorem)
+## 10. Distance euclidienne et théorème de Pythagore ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Beauté de la formule et aperçu
 C'est le fondement de la géométrie hérité de la Grèce antique, et une équation qui définit la distance en ligne droite entre deux points dans un espace à $n$ dimensions. Dans l'espace bidimensionnel, il s'agit du théorème de Pythagore ($a^2 + b^2 = c^2$) lui-même.

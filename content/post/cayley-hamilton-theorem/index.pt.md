@@ -60,7 +60,7 @@ Aqui sabe-se que $c_{n-1} = -\text{tr}(A)$ (o oposto do traço) e $c_0 = (-1)^n 
 
 Agora chegamos ao cerne do **teorema de Cayley-Hamilton**. O enunciado do teorema é muito simples, mas impactante.
 
-> **Teorema (Teorema de Cayley-Hamilton)**
+> **Teorema ([Teorema de Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/))**
 > Para qualquer matriz quadrada $A$ de ordem $n$ e seu polinômio característico $p(\lambda) = \det(\lambda I - A)$, substituir a variável $\lambda$ pela matriz $A$ resulta na matriz nula $O$. Ou seja,
 > $$ p(A) = A^n + c_{n-1}A^{n-1} + \dots + c_1 A + c_0 I = O $$
 > é satisfeito.

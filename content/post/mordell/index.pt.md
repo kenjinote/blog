@@ -24,7 +24,7 @@ Em 1906, aos 18 anos, Mordell viajou sozinho para a Inglaterra com muito pouco d
 
 ## 3. Paixão por Equações Diofantinas
 
-No centro da pesquisa de Mordell estavam sempre as **equações diofantinas**. Uma equação diofantina é um problema para encontrar soluções inteiras ou racionais para equações polinomiais com coeficientes inteiros. O nome vem do antigo matemático grego Diofanto.
+No centro da pesquisa de Mordell estavam sempre as **equações diofantinas**. Uma equação diofantina é um problema para encontrar soluções inteiras ou racionais para equações polinomiais com coeficientes inteiros. O nome vem do antigo matemático grego [Diofanto](https://kenji.blog/p/diophantus/).
 
 O exemplo mais famoso de equação diofantina é aquele relacionado ao teorema de Pitágoras:
 
@@ -42,7 +42,7 @@ Mordell prestou atenção especial à forma da equação agora conhecida como **
 
 $$ y^2 = x^3 + k $$
 
-Aqui, $k$ é um número inteiro diferente de zero. Esta equação é uma das formas mais simples de uma curva elíptica. Desde que Pierre de Fermat no século 17 provou que para $k = -2$, ou seja, $y^2 = x^3 - 2$, as únicas soluções inteiras são $(x, y) = (3, \pm 5)$, muitas dessas equações foram estudadas.
+Aqui, $k$ é um número inteiro diferente de zero. Esta equação é uma das formas mais simples de uma curva elíptica. Desde que [Pierre de Fermat](https://kenji.blog/p/fermat/) no século 17 provou que para $k = -2$, ou seja, $y^2 = x^3 - 2$, as únicas soluções inteiras são $(x, y) = (3, \pm 5)$, muitas dessas equações foram estudadas.
 
 Mordell pesquisou profundamente os métodos gerais para encontrar soluções inteiras para esta equação e a finitude de suas soluções. Sua abordagem aplicou a teoria de classes de ideais na teoria algébrica dos números, representando um salto significativo em relação aos métodos clássicos.
 
@@ -58,7 +58,7 @@ Aqui, $E(\mathbb{Q})_{\text{tors}}$ é um **subgrupo de torção** que consiste 
 
 Este teorema significa que para encontrar todos os infinitos pontos racionais de uma curva elíptica, é suficiente encontrar um número finito de pontos "base". É um resultado monumental na geometria aritmética. A prova de Mordell foi um refinamento moderno do "Método da descida infinita" de Fermat.
 
-Mais tarde, em 1928, o matemático francês André Weil generalizou este teorema para corpos de números gerais e variedades abelianas, por isso é hoje frequentemente chamado de **Teorema de Mordell-Weil**.
+Mais tarde, em 1928, o matemático francês [André Weil](https://kenji.blog/p/weil/) generalizou este teorema para corpos de números gerais e variedades abelianas, por isso é hoje frequentemente chamado de **Teorema de Mordell-Weil**.
 
 ```mermaid
 graph TD
@@ -83,13 +83,13 @@ A afirmação para o caso $g \ge 2$ é a Conjectura de Mordell. Esta conjectura 
 
 $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
-Esta conjectura permaneceu sem solução por mais de 60 anos. No entanto, em 1983, foi finalmente provada pelo matemático alemão Gerd Faltings, tornando-se o **Teorema de Faltings**. Por essa conquista, Faltings recebeu a Medalha Fields em 1986.
+Esta conjectura permaneceu sem solução por mais de 60 anos. No entanto, em 1983, foi finalmente provada pelo matemático alemão [Gerd Faltings](https://kenji.blog/p/faltings/), tornando-se o **Teorema de Faltings**. Por essa conquista, Faltings recebeu a Medalha Fields em 1986.
 
 Além disso, a equação do Último Teorema de Fermat, $x^n + y^n = z^n$, tem um gênero 3 ou mais quando $n \ge 4$. Portanto, pela Conjectura de Mordell (Teorema de Faltings), segue-se imediatamente que a equação de Fermat tem no máximo um número finito de soluções racionais para cada $n$.
 
 ## 7. Envolvimento com Ramanujan e Formas Modulares
 
-As realizações de Mordell não se limitaram a equações diofantinas. Ele também fez contribuições significativas para os problemas não resolvidos deixados pelo genial matemático Srinivasa Ramanujan.
+As realizações de Mordell não se limitaram a equações diofantinas. Ele também fez contribuições significativas para os problemas não resolvidos deixados pelo genial matemático [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/).
 
 Ramanujan conjecturou várias propriedades surpreendentes sobre a função tau de Ramanujan $\tau(n)$, definida da seguinte forma:
 
@@ -129,16 +129,16 @@ Mordell também tinha um olhar atento para detectar o talento dos outros. Uma da
 
 ## 11. Legado para a Matemática Moderna
 
-O legado que Louis Mordell deixou no mundo matemático está profundamente enraizado nos fundamentos da matemática moderna.
+O legado que [Louis Mordell](https://kenji.blog/p/mordell/) deixou no mundo matemático está profundamente enraizado nos fundamentos da matemática moderna.
 
 1. **Fundamentos da Geometria Aritmética**: O Teorema de Mordell e a Conjectura de Mordell estimularam fortemente o desenvolvimento da "Geometria Aritmética", que vê objetos teóricos dos números de uma perspectiva geométrica.
 2. **Teoria das Formas Modulares**: As técnicas que ele usou na demonstração da conjectura de Ramanujan tornaram-se o ponto de partida de uma teoria massiva que se estende até o moderno Programa de Langlands.
 3. **Resolução de Equações Diofantinas**: Suas abordagens concretas e numerosos artigos ainda hoje servem como base para métodos algorítmicos de resolução de equações por meio de computadores.
 
-Quando o Último Teorema de Fermat foi provado por Andrew Wiles, conceitos envolvendo profundamente Mordell, como curvas elípticas e formas modulares, foram indispensáveis ao seu embasamento teórico.
+Quando o Último Teorema de Fermat foi provado por [Andrew Wiles](https://kenji.blog/p/wiles/), conceitos envolvendo profundamente Mordell, como curvas elípticas e formas modulares, foram indispensáveis ao seu embasamento teórico.
 
 ## 12. Conclusão
 
-Louis Mordell passou de um jovem apaixonado e autodidata a um gigante da teoria dos números, representando o século XX. O seu nome está gravado para sempre na história da matemática sob a forma do **Teorema de Mordell** e da **Conjectura de Mordell**.
+[Louis Mordell](https://kenji.blog/p/mordell/) passou de um jovem apaixonado e autodidata a um gigante da teoria dos números, representando o século XX. O seu nome está gravado para sempre na história da matemática sob a forma do **Teorema de Mordell** e da **Conjectura de Mordell**.
 
 Com seu forte compromisso em resolver problemas concretos e o calor humano que salvou matemáticos refugiados, a vida e as conquistas de Mordell são um excelente modelo que mostra como a disciplina da matemática se desenvolve e como uma pessoa pode contribuir para esse desenvolvimento. O mundo das equações diofantinas que ele explorou continua a fascinar muitos matemáticos até hoje.

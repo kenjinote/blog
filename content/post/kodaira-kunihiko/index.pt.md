@@ -10,11 +10,11 @@ tags: ["Kunihiko Kodaira", "Medalha Fields", "Geometria Complexa"]
 
 ## 1. Introdução
 
-O grande matemático japonês **Kunihiko Kodaira** (1915–1997) foi o primeiro medalhista Fields do Japão e fez imensas contribuições para a geometria algébrica e a teoria das variedades complexas no século XX. Seu trabalho influenciou profundamente não apenas a matemática moderna, mas também a física teórica, como a teoria das cordas. Neste artigo, exploramos a vida de Kodaira e seu mundo matemático intuitivo.
+O grande matemático japonês **[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/)** (1915–1997) foi o primeiro medalhista Fields do Japão e fez imensas contribuições para a geometria algébrica e a teoria das variedades complexas no século XX. Seu trabalho influenciou profundamente não apenas a matemática moderna, mas também a física teórica, como a teoria das cordas. Neste artigo, exploramos a vida de Kodaira e seu mundo matemático intuitivo.
 
 ## 2. Trajetória de Vida
 
-Kunihiko Kodaira nasceu em Tóquio em 1915. Ele gostava de tocar piano desde muito jovem e diz-se que seu profundo amor por a música mais tarde influenciou seu pensamento matemático. Sua frase "Entender matemática é como ouvir música e sentir que é bela" é famosa.
+[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) nasceu em Tóquio em 1915. Ele gostava de tocar piano desde muito jovem e diz-se que seu profundo amor por a música mais tarde influenciou seu pensamento matemático. Sua frase "Entender matemática é como ouvir música e sentir que é bela" é famosa.
 
 ```mermaid
 flowchart TD
@@ -74,4 +74,4 @@ Depois de retornar ao Japão em 1967, ele ensinou na Universidade de Tóquio e e
 
 ## 5. Conclusão
 
-A matemática deixada por Kunihiko Kodaira é como uma grande sinfonia onde a análise, a álgebra e a geometria estão lindamente harmonizadas. Sua abordagem intuitiva e insights profundos continuam a fascinar muitos matemáticos hoje.
+A matemática deixada por [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) é como uma grande sinfonia onde a análise, a álgebra e a geometria estão lindamente harmonizadas. Sua abordagem intuitiva e insights profundos continuam a fascinar muitos matemáticos hoje.

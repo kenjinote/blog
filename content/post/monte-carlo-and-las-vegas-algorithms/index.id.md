@@ -70,7 +70,7 @@ Semakin besar jumlah percobaan `num_samples`, semakin akurat nilai $\pi$ yang di
 Ini adalah algoritma untuk menguji apakah suatu bilangan besar adalah bilangan prima dengan cepat. Saat membuat kunci pada kriptografi RSA, diperlukan bilangan prima dengan panjang ratusan digit, namun jika hal ini dilakukan dengan metode pembagian percobaan deterministik (metode dengan membagi berurutan $2, 3, 5, \dots$), ia tidak akan selesai bahkan hingga akhir umur alam semesta.
 
 Di sinilah kita menggunakan **uji primalitas Miller-Rabin** yang memanfaatkan metode Monte Carlo.
-Untuk bilangan $n$ yang akan diuji, kita memilih basis acak $a$, dan mengujinya apakah ia memenuhi kondisi tertentu berdasarkan generalisasi Teorema Kecil Fermat.
+Untuk bilangan $n$ yang akan diuji, kita memilih basis acak $a$, dan mengujinya apakah ia memenuhi kondisi tertentu berdasarkan generalisasi [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/).
 
 Jika dalam satu tes bilangan tersebut ditentukan "bilangan komposit", maka bilangan tersebut pasti adalah komposit. Namun, jika ia ditentukan "mungkin bilangan prima", ada kemungkinan maksimal $\frac{1}{4}$ bahwa bilangan tersebut sebenarnya komposit tetapi keliru diidentifikasi sebagai prima.
 
@@ -135,7 +135,7 @@ Pada saat seperti ini, pendekatannya adalah "Pilih fungsi hash secara acak, dan 
 
 Hal ini akan terus diulang hingga sebuah status sempurna tanpa *collision* (solusi yang benar) tercapai, sehingga ini merupakan tipe klasik metode Las Vegas. Secara teori, *collision* bisa saja terus berlanjut tanpa henti, tetapi jika keluarga fungsi hash yang sesuai telah disiapkan, fungsi hash tanpa *collision* dapat ditemukan dengan beberapa kali percobaan saja.
 
-## 3. Perbandingan Metode Monte Carlo dan Las Vegas
+## 3. Perbandingan [Metode Monte Carlo dan Las Vegas](https://kenji.blog/p/monte-carlo-and-las-vegas-algorithms/)
 
 Mari bandingkan perbedaan antara kedua algoritma ini agar mudah dipahami.
 

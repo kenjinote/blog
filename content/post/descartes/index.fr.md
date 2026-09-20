@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introduction
 
-René Descartes (1596-1650) était un philosophe, mathématicien et scientifique français. Il a laissé la célèbre phrase "Je pense, donc je suis (Cogito, ergo sum)" et est largement connu comme le père de la philosophie moderne. Cependant, le rôle qu'il a joué dans l'histoire des mathématiques était tout aussi immense que ses réalisations philosophiques.
+[René Descartes](https://kenji.blog/p/descartes/) (1596-1650) était un philosophe, mathématicien et scientifique français. Il a laissé la célèbre phrase "Je pense, donc je suis (Cogito, ergo sum)" et est largement connu comme le père de la philosophie moderne. Cependant, le rôle qu'il a joué dans l'histoire des mathématiques était tout aussi immense que ses réalisations philosophiques.
 
 La plus grande réalisation mathématique de Descartes a été la création de la **géométrie analytique**, qui a fusionné l'algèbre et la géométrie. Dans cet article, nous expliquerons en détail les épisodes de sa vie et la révolution qu'il a apportée au monde des mathématiques.
 
@@ -66,7 +66,7 @@ $$
 
 ## 4. Impact sur la philosophie et la science
 
-La géométrie analytique de Descartes est devenue une fondation indispensable pour le développement ultérieur des mathématiques et de la physique. On peut dire que la création du calcul infinitésimal par Isaac Newton et Gottfried Leibniz n'a été possible qu'en raison du décor fourni par le système de coordonnées cartésiennes.
+La géométrie analytique de Descartes est devenue une fondation indispensable pour le développement ultérieur des mathématiques et de la physique. On peut dire que la création du calcul infinitésimal par [Isaac Newton](https://kenji.blog/p/newton/) et [Gottfried Leibniz](https://kenji.blog/p/leibniz/) n'a été possible qu'en raison du décor fourni par le système de coordonnées cartésiennes.
 
 De plus, son "doute méthodique" en philosophie, une approche pour trouver des vérités certaines après avoir douté de tout, a établi l'esprit de rationalisme qui sert de fondement à la recherche scientifique.
 
@@ -74,4 +74,4 @@ De plus, son "doute méthodique" en philosophie, une approche pour trouver des v
 
 Descartes était un homme qui aimait tellement la pensée qu'une anecdote raconte qu'il restait au lit jusqu'à tard dans la matinée à observer le mouvement d'une mouche au plafond. (Selon une théorie, essayer d'exprimer le mouvement de cette mouche a conduit à l'idée du système de coordonnées).
 
-La vie et la pensée de René Descartes continuent de nous donner beaucoup d'inspiration aujourd'hui, transcendant les frontières des disciplines académiques. Lorsque nous considérons que l'infographie d'aujourd'hui, l'IA et toutes sortes de technologies scientifiques fonctionnent sur le système de coordonnées qu'il a laissé derrière lui, nous pouvons à nouveau réaliser sa grandeur.
+La vie et la pensée de [René Descartes](https://kenji.blog/p/descartes/) continuent de nous donner beaucoup d'inspiration aujourd'hui, transcendant les frontières des disciplines académiques. Lorsque nous considérons que l'infographie d'aujourd'hui, l'IA et toutes sortes de technologies scientifiques fonctionnent sur le système de coordonnées qu'il a laissé derrière lui, nous pouvons à nouveau réaliser sa grandeur.

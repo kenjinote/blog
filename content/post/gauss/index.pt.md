@@ -10,7 +10,7 @@ tags: ["Gauss", "História da matemática", "Gênio", "Geometria", "Teoria dos n
 
 ## 1. Introdução: O Homem Conhecido como o "Príncipe dos Matemáticos"
 
-Johann Carl Friedrich Gauss (30 de abril de 1777 - 23 de fevereiro de 1855) foi um grande matemático, astrônomo e físico alemão. Devido ao seu intelecto avassalador e suas contribuições decisivas para uma ampla gama de campos, ele é aclamado como o **"Príncipe dos Matemáticos"** (Princeps mathematicorum). As conquistas de Gauss cobrem um espectro extremamente amplo, desde teorias profundas em matemática pura até matemática aplicada que descreve fenômenos físicos no mundo real.
+Johann [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) (30 de abril de 1777 - 23 de fevereiro de 1855) foi um grande matemático, astrônomo e físico alemão. Devido ao seu intelecto avassalador e suas contribuições decisivas para uma ampla gama de campos, ele é aclamado como o **"Príncipe dos Matemáticos"** (Princeps mathematicorum). As conquistas de Gauss cobrem um espectro extremamente amplo, desde teorias profundas em matemática pura até matemática aplicada que descreve fenômenos físicos no mundo real.
 
 Os numerosos teoremas e conceitos que ele deixou para trás formam a base da matemática e da ciência modernas. As leis descobertas por Gauss dão vida às tecnologias das quais nos beneficiamos diariamente. Neste artigo, seguiremos a vida deste gênio sem precedentes cronologicamente, investigando profundamente seus episódios detalhados e conquistas matemáticas para ver como ele realizou tantos grandes feitos.
 
@@ -85,13 +85,13 @@ $$
 
 Gauss chamou esta lei de "Teorema de Ouro" e publicou oito provas diferentes ao longo de sua vida.
 
-## 4. Contribuições para a Astronomia: Cálculo da Órbita de Ceres e o Método dos Mínimos Quadrados
+## 4. Contribuições para a Astronomia: Cálculo da Órbita de Ceres e o [Método dos Mínimos Quadrados](https://kenji.blog/p/method-of-least-squares/)
 
 Os talentos de Gauss não se limitaram à matemática pura; ele também alcançou resultados fenomenais na astronomia.
 
 Em 1º de janeiro de 1801, o astrônomo italiano Giuseppe Piazzi descobriu um novo corpo celeste (mais tarde chamado de planeta anão Ceres). No entanto, após alguns dias de observação, o corpo celeste escondeu-se atrás do sol e foi perdido de vista. Os astrônomos da época tentaram prever sua órbita subsequente com base em apenas alguns dias de dados de observação, mas todos falharam.
 
-É aqui que entra Gauss. Ele calculou a órbita de Ceres usando uma nova técnica matemática que construiu secretamente por algum tempo, o **"Método dos Mínimos Quadrados"**. O método dos mínimos quadrados é uma técnica para estimar os parâmetros mais prováveis para minimizar os erros contidos nos dados de observação.
+É aqui que entra Gauss. Ele calculou a órbita de Ceres usando uma nova técnica matemática que construiu secretamente por algum tempo, o **"[Método dos Mínimos Quadrados](https://kenji.blog/p/method-of-least-squares/)"**. O método dos mínimos quadrados é uma técnica para estimar os parâmetros mais prováveis para minimizar os erros contidos nos dados de observação.
 
 Assumindo que o valor observado é $y_i$ e o valor teórico é $f(x_i, \boldsymbol{\theta})$, encontramos o parâmetro $\boldsymbol{\theta}$ que minimiza a soma dos erros quadráticos $S$.
 
@@ -123,7 +123,7 @@ $$
 
 (Onde $E, F, G$ são os coeficientes da primeira forma fundamental, e $L, M, N$ são os coeficientes da segunda forma fundamental)
 
-De acordo com este teorema, é matematicamente provado que, por exemplo, não importa como um pedaço de papel plano (curvatura 0) seja enrolado, é impossível fazer uma esfera (curvatura positiva) sem distorção. Esta ideia da geometria diferencial de Gauss foi mais tarde generalizada para dimensões superiores por Bernhard Riemann (geometria Riemanniana) e, mais tarde, tornou-se indispensável como base matemática para a teoria da relatividade geral de Albert Einstein.
+De acordo com este teorema, é matematicamente provado que, por exemplo, não importa como um pedaço de papel plano (curvatura 0) seja enrolado, é impossível fazer uma esfera (curvatura positiva) sem distorção. Esta ideia da geometria diferencial de Gauss foi mais tarde generalizada para dimensões superiores por [Bernhard Riemann](https://kenji.blog/p/riemann/) (geometria Riemanniana) e, mais tarde, tornou-se indispensável como base matemática para a teoria da relatividade geral de Albert Einstein.
 
 ## 6. Distribuição Gaussiana e Eletromagnetismo
 
@@ -151,9 +151,9 @@ $$
 
 A unidade de densidade de fluxo magnético, o "Gauss (G)", também tem o seu nome.
 
-## 7. Insights Ocultos sobre a Geometria Não Euclidiana
+## 7. Insights Ocultos sobre a Geometria Não [Euclid](https://kenji.blog/p/euclid/)iana
 
-Um episódio que mostra a incrível visão de futuro de Gauss é a anedota sobre a **"Geometria Não Euclidiana"**. Se o postulado das paralelas de Euclides (por um ponto fora de uma reta, passa exatamente uma reta paralela) poderia ser provado, havia sido um grande mistério matemático por mais de 2.000 anos.
+Um episódio que mostra a incrível visão de futuro de Gauss é a anedota sobre a **"Geometria Não [Euclid](https://kenji.blog/p/euclid/)iana"**. Se o postulado das paralelas de [Euclides](https://kenji.blog/p/euclid/) (por um ponto fora de uma reta, passa exatamente uma reta paralela) poderia ser provado, havia sido um grande mistério matemático por mais de 2.000 anos.
 
 Nas suas notas não publicadas, Gauss estava totalmente ciente da existência de uma nova geometria (geometria hiperbólica) na qual o postulado das paralelas não se sustenta, e havia construído seu sistema. No entanto, nos círculos filosóficos conservadores da época (uma era em que a filosofia kantiana era predominante), ele temia se envolver em críticas e controvérsias incompreensíveis (nas palavras de Gauss, "o clamor dos beócios") se publicasse uma teoria que negasse a absolutidade do espaço, por isso ele nunca a publicou em vida.
 
@@ -165,6 +165,6 @@ Gauss era um perfeccionista, com o lema **"Poucos, mas maduros"** (Pauca sed mat
 
 Ele também orientou a próxima geração. Além do já mencionado Riemann, grandes matemáticos da geração seguinte, como Richard Dedekind e Ferdinand Gotthold Max Eisenstein, receberam a orientação de Gauss.
 
-Em 23 de fevereiro de 1855, Carl Friedrich Gauss faleceu em Göttingen aos 77 anos. Seu legado transcende as fronteiras da matemática e flui na raiz de toda a ciência e tecnologia modernas. Do pensamento abstrato puro ao cálculo das órbitas planetárias e até o fenômeno físico do eletromagnetismo, a luz do seu intelecto continua a brilhar ainda hoje.
+Em 23 de fevereiro de 1855, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) faleceu em Göttingen aos 77 anos. Seu legado transcende as fronteiras da matemática e flui na raiz de toda a ciência e tecnologia modernas. Do pensamento abstrato puro ao cálculo das órbitas planetárias e até o fenômeno físico do eletromagnetismo, a luz do seu intelecto continua a brilhar ainda hoje.
 
 Quando olhamos para o céu noturno ou usamos a comunicação em nossos smartphones, as grandes pegadas de Gauss, o "Príncipe dos Matemáticos", estão certamente lá.

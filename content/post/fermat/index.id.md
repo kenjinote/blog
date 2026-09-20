@@ -10,17 +10,17 @@ tags: ["Fermat", "Sejarah Matematika", "Teorema Terakhir Fermat", "Teori Bilanga
 
 ## Pengantar: Pria yang Meninggalkan Misteri Terbesar dalam Matematika
 
-Bila berbicara tentang sosok yang melahirkan kisah paling terkenal dan dramatis dalam sejarah matematika, kita tidak perlu mencari selain Pierre de Fermat. Ia bukanlah seorang matematikawan profesional. Ia biasanya bekerja sebagai hakim daerah dan menikmati matematika di waktu luangnya, menjadikannya apa yang disebut sebagai **"matematikawan amatir"**. Akan tetapi, pencapaian yang ditinggalkannya membuat takjub pemikir-pemikir terhebat Eropa pada masa itu dan akan terus menyiksa para matematikawan jenius di seluruh dunia selama lebih dari 350 tahun setelah kematiannya.
+Bila berbicara tentang sosok yang melahirkan kisah paling terkenal dan dramatis dalam sejarah matematika, kita tidak perlu mencari selain [Pierre de Fermat](https://kenji.blog/p/fermat/). Ia bukanlah seorang matematikawan profesional. Ia biasanya bekerja sebagai hakim daerah dan menikmati matematika di waktu luangnya, menjadikannya apa yang disebut sebagai **"matematikawan amatir"**. Akan tetapi, pencapaian yang ditinggalkannya membuat takjub pemikir-pemikir terhebat Eropa pada masa itu dan akan terus menyiksa para matematikawan jenius di seluruh dunia selama lebih dari 350 tahun setelah kematiannya.
 
-Dalam artikel ini, kita akan menggali lebih dalam kehidupan Fermat, penemuan-penemuan matematika utamanya, dan kisah romantis yang mengelilingi **"Teorema Terakhir Fermat"** yang monumental dan tetap terukir dalam sejarah matematika. Mari kita telusuri bagaimana ia meletakkan dasar-dasar matematika modern dan mengungkap sumber wawasan serta imajinasinya yang menakjubkan.
+Dalam artikel ini, kita akan menggali lebih dalam kehidupan Fermat, penemuan-penemuan matematika utamanya, dan kisah romantis yang mengelilingi **"[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)"** yang monumental dan tetap terukir dalam sejarah matematika. Mari kita telusuri bagaimana ia meletakkan dasar-dasar matematika modern dan mengungkap sumber wawasan serta imajinasinya yang menakjubkan.
 
 ## 1. Wajah Publiknya sebagai Hakim dan Hasratnya pada Matematika
 
-Pierre de Fermat lahir pada akhir tahun 1607 (atau 1601, menurut beberapa teori) dalam sebuah keluarga pedagang kulit yang kaya raya di Beaumont-de-Lomagne, di barat daya Prancis. Sangat cerdas sejak usia muda, ia belajar hukum di Universitas Orléans dan, pada tahun 1631, mengambil posisi terhormat sebagai penasihat (hakim) di Parlemen Toulouse. Sejak saat itu, ia menghabiskan seluruh hidupnya sebagai pegawai negeri.
+[Pierre de Fermat](https://kenji.blog/p/fermat/) lahir pada akhir tahun 1607 (atau 1601, menurut beberapa teori) dalam sebuah keluarga pedagang kulit yang kaya raya di Beaumont-de-Lomagne, di barat daya Prancis. Sangat cerdas sejak usia muda, ia belajar hukum di Universitas Orléans dan, pada tahun 1631, mengambil posisi terhormat sebagai penasihat (hakim) di Parlemen Toulouse. Sejak saat itu, ia menghabiskan seluruh hidupnya sebagai pegawai negeri.
 
 Di Prancis pada masa itu, para hakim didorong untuk menghindari memperluas lingkaran sosial mereka terlalu luas guna mencegah konflik politik dan sosial. Ironisnya, lingkungan yang terisolasi ini justru memberi Fermat waktu tenang yang ia butuhkan, mendorongnya menuju kedalaman matematika. Baginya, matematika adalah kegembiraan murni yang membebaskannya dari tekanan berat tugas-tugasnya, bukan sesuatu yang dipaksakan kepadanya oleh siapa pun.
 
-Fermat tidak suka menerbitkan penelitiannya sebagai makalah formal; ia merasa puas dengan hanya mencatat ide-ide dan pembuktiannya di buku catatan atau di margin buku, atau dengan bertukar surat dengan para sarjana lain melalui Marin Mersenne, seorang biarawan di Paris yang bertindak sebagai pusat akademik pada saat itu. Ia menikmati menyajikan penemuannya sebagai **"masalah"** kepada matematikawan lain, secara provokatif menuntut penyelesaian dari mereka. Ia juga dikenal sering terlibat dalam perdebatan sengit dengan matematikawan besar seperti René Descartes dan John Wallis.
+Fermat tidak suka menerbitkan penelitiannya sebagai makalah formal; ia merasa puas dengan hanya mencatat ide-ide dan pembuktiannya di buku catatan atau di margin buku, atau dengan bertukar surat dengan para sarjana lain melalui [Marin Mersenne](https://kenji.blog/p/mersenne/), seorang biarawan di Paris yang bertindak sebagai pusat akademik pada saat itu. Ia menikmati menyajikan penemuannya sebagai **"masalah"** kepada matematikawan lain, secara provokatif menuntut penyelesaian dari mereka. Ia juga dikenal sering terlibat dalam perdebatan sengit dengan matematikawan besar seperti [René Descartes](https://kenji.blog/p/descartes/) dan [John Wallis](https://kenji.blog/p/wallis/).
 
 ```mermaid
 flowchart TD
@@ -35,11 +35,11 @@ flowchart TD
 
 ## 2. Kontribusi Besar pada Teori Bilangan
 
-Minat terbesar Fermat dan bidang di mana ia meninggalkan jejak terdalamnya adalah **Teori Bilangan** (cabang yang mengeksplorasi sifat-sifat bilangan). Karena sangat gemar membaca *Arithmetica* karya matematikawan Yunani kuno Diophantus, ia menarik inspirasi dari buku tersebut untuk menemukan banyak teorema yang inovatif.
+Minat terbesar Fermat dan bidang di mana ia meninggalkan jejak terdalamnya adalah **Teori Bilangan** (cabang yang mengeksplorasi sifat-sifat bilangan). Karena sangat gemar membaca *Arithmetica* karya matematikawan Yunani kuno [Diophantus](https://kenji.blog/p/diophantus/), ia menarik inspirasi dari buku tersebut untuk menemukan banyak teorema yang inovatif.
 
-### 2.1. Teorema Kecil Fermat
+### 2.1. [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)
 
-Sebuah teorema yang sangat penting dan membentuk dasar kriptografi modern (seperti enkripsi RSA) adalah **Teorema Kecil Fermat**. Teorema ini mengungkapkan sifat yang mengejutkan mengenai bilangan prima dan secara diam-diam mendukung teknologi keamanan dalam masyarakat internet modern kita.
+Sebuah teorema yang sangat penting dan membentuk dasar kriptografi modern (seperti enkripsi RSA) adalah **[Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)**. Teorema ini mengungkapkan sifat yang mengejutkan mengenai bilangan prima dan secara diam-diam mendukung teknologi keamanan dalam masyarakat internet modern kita.
 
 Pernyataan teorema tersebut adalah sebagai berikut:
 Untuk sembarang bilangan prima $p$ dan sembarang bilangan bulat $a$ yang relatif prima terhadap $p$ (berarti bukan kelipatan dari $p$), kekongruenan berikut berlaku:
@@ -64,7 +64,7 @@ Sebagai contoh, jika $p = 5$, maka $5 = 1^2 + 2^2$; jika $p = 13$, maka $13 = 2^
 
 Fermat juga mempertimbangkan rumus matematika yang menghasilkan bilangan prima. Ia menduga bahwa semua bilangan dalam bentuk $F_n = 2^{2^n} + 1$ adalah bilangan prima. Memang, untuk $n=0, 1, 2, 3, 4$, hasilnya berturut-turut adalah $3, 5, 17, 257, 65537$, dan semuanya adalah bilangan prima. Ini disebut **Bilangan prima Fermat**.
 
-Namun, Leonhard Euler kemudian menunjukkan bahwa ketika $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, sehingga menyangkal dugaan Fermat itu sendiri. Meski begitu, Carl Friedrich Gauss di kemudian hari membuktikan bahwa bilangan prima Fermat ini memiliki hubungan erat dengan "syarat-syarat agar segi-$n$ beraturan dapat dikonstruksi menggunakan jangka dan penggaris tanpa skala", memainkan peran yang sangat penting dalam perpaduan geometri dan aljabar untuk generasi berikutnya.
+Namun, [Leonhard Euler](https://kenji.blog/p/euler/) kemudian menunjukkan bahwa ketika $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, sehingga menyangkal dugaan Fermat itu sendiri. Meski begitu, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) di kemudian hari membuktikan bahwa bilangan prima Fermat ini memiliki hubungan erat dengan "syarat-syarat agar segi-$n$ beraturan dapat dikonstruksi menggunakan jangka dan penggaris tanpa skala", memainkan peran yang sangat penting dalam perpaduan geometri dan aljabar untuk generasi berikutnya.
 
 ## 3. Metode Penurunan Tak Terhingga: Pedang Tajam Fermat
 
@@ -82,7 +82,7 @@ Menggunakan teknik ini, Fermat sendiri membuktikan proposisi seperti "luas segit
 
 ## 4. Sebagai Pendiri Teori Peluang
 
-Bakat luar biasa Fermat tidak terbatas pada teori bilangan. Pada tahun 1654, ia bertukar serangkaian surat dengan pemikir dan matematikawan jenius Blaise Pascal. Korespondensi inilah yang dianggap sebagai awal mula **Teori Peluang** modern.
+Bakat luar biasa Fermat tidak terbatas pada teori bilangan. Pada tahun 1654, ia bertukar serangkaian surat dengan pemikir dan matematikawan jenius [Blaise Pascal](https://kenji.blog/p/pascal/). Korespondensi inilah yang dianggap sebagai awal mula **Teori Peluang** modern.
 
 Katalisator dari diskusi mereka adalah pertanyaan terkait perjudian yang dikenal sebagai **"Masalah titik-titik"** (Problem of points), yang dibawa ke Pascal oleh seorang pria bernama Chevalier de Méré.
 Pertanyaannya adalah: "Dua pemain dengan keterampilan yang sama sedang memainkan permainan di mana orang pertama yang memenangkan sejumlah ronde tertentu akan mengambil seluruh hadiah. Namun, jika permainan dihentikan di tengah jalan, bagaimana hadiah tersebut harus dibagi secara adil berdasarkan keadaan menang dan kalah saat itu?"
@@ -91,17 +91,17 @@ Meskipun Fermat dan Pascal masing-masing menggunakan pendekatan matematika yang 
 
 ## 5. Kontribusi Perintis pada Kalkulus dan Fisika
 
-Berdekade-dekade sebelum Isaac Newton dan Gottfried Leibniz menetapkan kalkulus, Fermat telah merancang metodenya sendiri untuk menggambar garis singgung pada kurva dan menemukan nilai maksimum serta minimum dari fungsi.
+Berdekade-dekade sebelum [Isaac Newton](https://kenji.blog/p/newton/) dan [Gottfried Leibniz](https://kenji.blog/p/leibniz/) menetapkan kalkulus, Fermat telah merancang metodenya sendiri untuk menggambar garis singgung pada kurva dan menemukan nilai maksimum serta minimum dari fungsi.
 
 Ia memperkenalkan sebuah konsep yang disebut **"Adequality"**. Ini adalah teknik di mana suatu nilai diperlakukan sebagai "hampir sama" ketika kuantitas kecil $E$ divariasikan, dan nilai ekstrem ditemukan dengan memperlakukan $E$ sebagai $0$ pada tahap akhir perhitungan. Pada dasarnya ini adalah gagasan utama dari diferensiasi modern, dan Newton sendiri kemudian berkomentar, "Saya mendapat petunjuk tentang metode ini dari cara Fermat menggambar garis singgung." Tanpa Fermat, penyelesaian kalkulus mungkin akan lebih tertunda lagi.
 
 Selain itu, di bidang fisika (optik), ia mengusulkan **Prinsip Fermat**, yang menyatakan bahwa "cahaya merambat di antara dua titik di sepanjang lintasan yang membutuhkan waktu paling singkat." Hal ini secara matematis menurunkan hukum pembiasan Snellius, membentuk dasar optik modern, dan menjadi penemuan yang sangat penting yang mengarah pada "prinsip aksi terkecil" yang melintasi keseluruhan fisika di masa mendatang.
 
-## 6. Drama di Margin Buku: Teorema Terakhir Fermat
+## 6. Drama di Margin Buku: [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)
 
-Meskipun meninggalkan begitu banyak pencapaian besar, hal yang secara tegas menjadikan Fermat sebagai matematikawan paling terkenal dalam sejarah adalah eksistensi **"Teorema Terakhir Fermat"**.
+Meskipun meninggalkan begitu banyak pencapaian besar, hal yang secara tegas menjadikan Fermat sebagai matematikawan paling terkenal dalam sejarah adalah eksistensi **"[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)"**.
 
-Di margin sebuah bagian mengenai teorema Pythagoras ( $x^2 + y^2 = z^2$ ) pada Volume 2 buku favoritnya, *Arithmetica* karya Diophantus, Fermat menulis catatan mencengangkan berikut ini dalam bahasa Latin:
+Di margin sebuah bagian mengenai teorema Pythagoras ( $x^2 + y^2 = z^2$ ) pada Volume 2 buku favoritnya, *Arithmetica* karya [Diophantus](https://kenji.blog/p/diophantus/), Fermat menulis catatan mencengangkan berikut ini dalam bahasa Latin:
 
 > "Cubum autem in duos cubos, aut quadratoquadratum in duos quadratoquadratos, et generaliter nullam in infinitum ultra quadratum potestatem in duas eiusdem nominis fas est dividere cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet."
 > 
@@ -123,7 +123,7 @@ Para jenius berturut-turut seperti Euler, Legendre, Dirichlet, Gauss, dan Sophie
 
 Selama lebih dari 350 tahun setelah dikemukakan, masalah ini bertahta sebagai "masalah matematika terbesar yang belum terpecahkan," tidak dapat dipecahkan oleh siapa pun. Pada paruh kedua abad ke-20, ketika banyak orang mulai curiga bahwa "Fermat sebenarnya belum membuktikannya (atau telah membuat kesalahan)," seorang matematikawan akhirnya mengakhiri teka-teki yang menakutkan ini.
 
-Dia adalah matematikawan Inggris, Andrew Wiles. Setelah menemukan masalah tersebut di perpustakaan setempat pada usia 10 tahun, ia bersumpah untuk mendedikasikan hidupnya demi memecahkannya. Ia mengambil pendekatan besar yang tak terbayangkan di zaman Fermat, menggabungkan **Konjektur Taniyama-Shimura**—yang mengusulkan bahwa "semua kurva eliptik adalah modular," diajukan oleh matematikawan Jepang Yutaka Taniyama dan Goro Shimura—dengan penelitian Ken Ribet tentang kurva Frey (konjektur epsilon).
+Dia adalah matematikawan Inggris, [Andrew Wiles](https://kenji.blog/p/wiles/). Setelah menemukan masalah tersebut di perpustakaan setempat pada usia 10 tahun, ia bersumpah untuk mendedikasikan hidupnya demi memecahkannya. Ia mengambil pendekatan besar yang tak terbayangkan di zaman Fermat, menggabungkan **Konjektur Taniyama-Shimura**—yang mengusulkan bahwa "semua kurva eliptik adalah modular," diajukan oleh matematikawan Jepang [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) dan [Goro Shimura](https://kenji.blog/p/shimura-goro/)—dengan penelitian Ken Ribet tentang kurva Frey (konjektur epsilon).
 
 Wiles mengurung diri di loteng rumahnya dan, setelah tujuh tahun penelitian yang sepi, mempublikasikan bukti lengkapnya pada tahun 1995. Buktinya merupakan puncak matematika modern yang membentang ratusan halaman, sama sekali berbeda dari metode matematika abad ke-17 ("pembuktian yang benar-benar menakjubkan") yang mungkin dibayangkan Fermat.
 
@@ -131,6 +131,6 @@ Apakah Fermat benar-benar memiliki bukti yang tepat tetap menjadi misteri abadi 
 
 ## Kesimpulan: Warisan Sang Pangeran Amatir
 
-Pierre de Fermat hanyalah seorang hakim yang tidak tertarik melangkah ke panggung utama dunia akademis yang glamor. Namun, ide-ide yang ia catat di secarik kertas dan di margin buku telah membuka lebar pintu ke berbagai bidang mulai dari teori bilangan dan peluang hingga kalkulus dan optik.
+[Pierre de Fermat](https://kenji.blog/p/fermat/) hanyalah seorang hakim yang tidak tertarik melangkah ke panggung utama dunia akademis yang glamor. Namun, ide-ide yang ia catat di secarik kertas dan di margin buku telah membuka lebar pintu ke berbagai bidang mulai dari teori bilangan dan peluang hingga kalkulus dan optik.
 
 Misteri terbesar yang ia tinggalkan memikat sekaligus menyiksa banyak sekali matematikawan selama beberapa abad, memelihara teori-teori matematika baru dalam prosesnya. Eksistensi Fermat sendiri terus berbicara kepada kita hari ini tentang romansa dan kedalaman yang tak habis-habisnya yang terkandung dalam disiplin matematika. Ia, tanpa diragukan lagi, adalah **"Pangeran Amatir"** terbesar dan paling menggetarkan jiwa dalam sejarah.

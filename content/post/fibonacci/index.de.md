@@ -18,7 +18,7 @@ In diesem Artikel werden wir tief in das turbulente Leben von Fibonacci eintauch
 
 ### Geburt in Pisa und der Ursprung des Namens "Fibonacci"
 
-Leonardo Fibonacci wurde um 1170 in der italienischen Stadtstaat Pisa geboren. Pisa blühte zu dieser Zeit als Zentrum des Mittelmeerhandels, eine wohlhabende Republik mit einer starken Marine und einem Handelsnetzwerk. Sein Vater, Guglielmo Bonacci, war ein wohlhabender Kaufmann, der auch als Zollbeamter für Pisa arbeitete.
+[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) wurde um 1170 in der italienischen Stadtstaat Pisa geboren. Pisa blühte zu dieser Zeit als Zentrum des Mittelmeerhandels, eine wohlhabende Republik mit einer starken Marine und einem Handelsnetzwerk. Sein Vater, Guglielmo Bonacci, war ein wohlhabender Kaufmann, der auch als Zollbeamter für Pisa arbeitete.
 
 Der Name "Fibonacci" wurde zu seinen Lebzeiten eigentlich nicht verwendet. Es ist ein geprägter Begriff späterer Historiker, der das lateinische "filius Bonacci" (Sohn des Bonacci) abkürzt. Er nannte sich selbst "Leonardo Pisano" (Leonardo von Pisa) oder aufgrund seiner Liebe zum Reisen "Bigollo" (was Wanderer oder Faulenzer bedeutet).
 
@@ -168,6 +168,6 @@ In Computeralgorithmen ist die Fibonacci-Folge äußerst nützlich. Der Algorith
 
 ## Fazit
 
-Leonardo Fibonacci überbrückte das Wissen der islamischen Welt und Europas und brachte das Licht der Mathematik in die westliche Welt. Ohne die arabischen Ziffern, die er durch den "Liber Abaci" populär machte, hätten die spätere wissenschaftliche Revolution und die moderne digitale Gesellschaft möglicherweise nicht existiert.
+[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) überbrückte das Wissen der islamischen Welt und Europas und brachte das Licht der Mathematik in die westliche Welt. Ohne die arabischen Ziffern, die er durch den "Liber Abaci" populär machte, hätten die spätere wissenschaftliche Revolution und die moderne digitale Gesellschaft möglicherweise nicht existiert.
 
 Darüber hinaus verkörpert die Folge, die aus dem spielerischen "Kaninchenproblem" entstand, die Schönheit der reinen Mathematik und fasziniert uns noch heute als universelles Gesetz, das sich vom Pflanzenwachstum bis zu galaktischen Spiralen und sogar bis zur menschlichen Wirtschaftstätigkeit erstreckt. Fibonaccis Erbe lehrt uns im Laufe der Zeit, dass Mathematik nicht nur eine Berechnungstechnik ist, sondern eine "gemeinsame Sprache" zur Entschlüsselung der Wahrheiten des Universums.

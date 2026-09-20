@@ -9,7 +9,7 @@ categories: ["programming", "ai", "productivity"]
 tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 ---
 
-# CopilotとローカルAIの使い分けで開発効率を爆上げする：ハイブリッドAI開発ワークフローの完全ガイド
+# [CopilotとローカルAIの使い分けで開発効率を爆上げする](https://kenji.blog/p/hybrid-ai-development-workflow/)：ハイブリッドAI開発ワークフローの完全ガイド
 
 現代のソフトウェア開発において、AIアシスタントの活用は「あれば便利」なツールから「なくてはならない」インフラへと進化を遂げました。特にGitHub Copilotの登場以降、開発者のコーディング体験は劇的に変化しています。しかし、すべてのタスクをクラウド上のAIに依存することが常に最適な解であるとは限りません。
 

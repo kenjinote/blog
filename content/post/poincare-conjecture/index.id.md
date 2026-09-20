@@ -8,17 +8,17 @@ categories: ["mathematics", "science"]
 tags: ["Topology", "Poincare Conjecture", "Grigori Perelman", "Math"]
 ---
 
-Di dunia matematika, terdapat banyak misteri mendalam dan indah yang menguji intuisi manusia. Di antara misteri-misteri tersebut, yang paling terkenal dan memiliki akhir yang paling dramatis adalah **Konjektur Poincaré** (Poincaré Conjecture).
+Di dunia matematika, terdapat banyak misteri mendalam dan indah yang menguji intuisi manusia. Di antara misteri-misteri tersebut, yang paling terkenal dan memiliki akhir yang paling dramatis adalah **[Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/)** ([Poincaré Conjecture](https://kenji.blog/p/poincare-conjecture/)).
 
-Konjektur yang diajukan oleh matematikawan jenius asal Prancis, Henri Poincaré, pada tahun 1904 ini merupakan masalah mendasar dalam topologi yang berkaitan langsung dengan tema besar mengenai bentuk alam semesta. Masalah super sulit ini, yang telah membuat banyak matematikawan terkenal gagal selama sekitar 100 tahun, tiba-tiba dibuktikan pada tahun 2002 hingga 2003 oleh seorang matematikawan penyendiri asal Rusia, Grigori Perelman, yang mengejutkan seluruh dunia.
+Konjektur yang diajukan oleh matematikawan jenius asal Prancis, [Henri Poincaré](https://kenji.blog/p/poincare/), pada tahun 1904 ini merupakan masalah mendasar dalam topologi yang berkaitan langsung dengan tema besar mengenai bentuk alam semesta. Masalah super sulit ini, yang telah membuat banyak matematikawan terkenal gagal selama sekitar 100 tahun, tiba-tiba dibuktikan pada tahun 2002 hingga 2003 oleh seorang matematikawan penyendiri asal Rusia, Grigori Perelman, yang mengejutkan seluruh dunia.
 
-Dalam artikel ini, kita akan menggali lebih dalam mulai dari makna Konjektur Poincaré, konsep dasar topologi, hingga latar belakang pembuktian oleh Perelman, dengan menyertakan rumus matematika dan ilustrasi.
+Dalam artikel ini, kita akan menggali lebih dalam mulai dari makna [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/), konsep dasar topologi, hingga latar belakang pembuktian oleh Perelman, dengan menyertakan rumus matematika dan ilustrasi.
 
 ## 1. Apa itu Topologi (Geometri Topologi)?
 
-Untuk memahami Konjektur Poincaré, pertama-tama kita perlu mengetahui tentang bidang matematika yang disebut **Topologi** . Topologi sering juga disebut sebagai "geometri karet".
+Untuk memahami [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/), pertama-tama kita perlu mengetahui tentang bidang matematika yang disebut **Topologi** . Topologi sering juga disebut sebagai "geometri karet".
 
-Dalam geometri biasa (geometri Euklides), sifat-sifat seperti panjang, sudut, dan luas sangatlah penting, tetapi dalam topologi hal-hal ini diabaikan. Topologi hanya mempelajari sifat-sifat (sifat topologis) yang dipertahankan bahkan ketika suatu objek mengalami deformasi kontinu seperti "diregangkan", "dibengkokkan", atau "diciutkan". Namun, operasi seperti "memotong", "menempelkan", atau "melubangi" tidak diperbolehkan.
+Dalam geometri biasa (geometri [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/)), sifat-sifat seperti panjang, sudut, dan luas sangatlah penting, tetapi dalam topologi hal-hal ini diabaikan. Topologi hanya mempelajari sifat-sifat (sifat topologis) yang dipertahankan bahkan ketika suatu objek mengalami deformasi kontinu seperti "diregangkan", "dibengkokkan", atau "diciutkan". Namun, operasi seperti "memotong", "menempelkan", atau "melubangi" tidak diperbolehkan.
 
 Contoh yang terkenal adalah "cangkir kopi dan donat".
 
@@ -34,9 +34,9 @@ Cangkir kopi memiliki satu "lubang", yaitu pegangannya. Donat juga memiliki satu
 
 Di sisi lain, bola (permukaan bola) tidak memiliki lubang. Oleh karena itu, bagaimanapun kita mendeformasi bola secara kontinu, kita tidak akan pernah bisa mengubahnya menjadi bentuk donat. "Ada atau tidaknya lubang" inilah yang menjadi perbedaan krusial dalam topologi.
 
-## 2. Ruang Terhubung Sederhana dan Pernyataan Konjektur Poincaré
+## 2. Ruang Terhubung Sederhana dan Pernyataan [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/)
 
-Konjektur Poincaré merupakan sebuah upaya untuk mengkarakterisasi "bola" dari sudut pandang topologi ini.
+[Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/) merupakan sebuah upaya untuk mengkarakterisasi "bola" dari sudut pandang topologi ini.
 
 "Permukaan bola" yang biasa kita lihat sehari-hari disebut sebagai bola 2-dimensi ( $S^2$ ). Poincaré berpikir bahwa jika suatu bangun adalah ruang tertutup yang "tanpa lubang", bukankah bangun tersebut homeomorfik (secara topologi sama) dengan bola?
 
@@ -49,26 +49,26 @@ Ketika sebarang loop (lingkaran) di dalam sebuah ruang dapat disusutkan menjadi 
 
 Poincaré mempertanyakan apakah sifat yang berlaku pada bola 2-dimensi ini juga berlaku pada bola 3-dimensi ( $S^3$ ).
 
-> **Konjektur Poincaré**
+> **[Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/)**
 > Manifold tertutup 3-dimensi yang terhubung sederhana adalah homeomorfik terhadap bola 3-dimensi $S^3$.
 
 Secara intuitif, ini sama dengan bertanya: "Jika kita pergi ke luar angkasa dengan membawa tali yang panjang, berkeliling secara acak lalu kembali, dan jika kita menarik kedua ujung tali itu kita selalu bisa menarik kembali seluruh tali tersebut sepenuhnya, dapatkah kita mengatakan bahwa bentuk alam semesta itu bulat (merupakan bola 3-dimensi)?"
 
 ## 3. Perluasan ke Dimensi Tinggi dan Perjuangan Para Matematikawan
 
-Menariknya, Konjektur Poincaré justru diselesaikan lebih dulu untuk dimensi yang lebih tinggi daripada 3-dimensi (dimensi ruang tempat kita hidup).
+Menariknya, [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/) justru diselesaikan lebih dulu untuk dimensi yang lebih tinggi daripada 3-dimensi (dimensi ruang tempat kita hidup).
 
 $$
 \text{Kasus dimensi manifold } n \ge 5 
 $$
 
-Pada tahun 1960-an, Stephen Smale dan rekan-rekannya membuktikan Konjektur Poincaré untuk dimensi tinggi dengan $n \ge 5$. Pada dimensi yang lebih tinggi, "derajat kebebasan" saat mendeformasi suatu bangun lebih besar, sehingga terdapat cukup ruang untuk mengurai kekusutan, dan pembuktiannya pun menjadi relatif lebih mudah.
+Pada tahun 1960-an, Stephen Smale dan rekan-rekannya membuktikan [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/) untuk dimensi tinggi dengan $n \ge 5$. Pada dimensi yang lebih tinggi, "derajat kebebasan" saat mendeformasi suatu bangun lebih besar, sehingga terdapat cukup ruang untuk mengurai kekusutan, dan pembuktiannya pun menjadi relatif lebih mudah.
 
 $$
 \text{Kasus dimensi manifold } n = 4 
 $$
 
-Pada tahun 1982, Michael Freedman menggunakan metode yang sangat kompleks untuk membuktikan Konjektur Poincaré dalam 4-dimensi, yang membuatnya meraih Medali Fields.
+Pada tahun 1982, Michael Freedman menggunakan metode yang sangat kompleks untuk membuktikan [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/) dalam 4-dimensi, yang membuatnya meraih Medali Fields.
 
 Namun, hanya kasus original dengan $n = 3$ (3-dimensi) yang tidak dapat dipecahkan bagaimanapun juga. Ruang 3-dimensi tidak memiliki cukup "keleluasaan" untuk mengurai kekusutan, tetapi juga tidak sesederhana ruang berdimensi rendah, menjadikannya dimensi yang paling merepotkan.
 
@@ -88,7 +88,7 @@ graph LR
     C --> G["5 Geometri lainnya"]
 ```
 
-Jika Konjektur Geometrisasi Thurston benar, maka secara otomatis akan diturunkan bahwa manifold yang terhubung sederhana hanya memiliki elemen "geometri bola", dan sebagai hasilnya, Konjektur Poincaré juga akan terbukti. Dengan kata lain, Konjektur Poincaré ternyata hanyalah satu kepingan puzzle dari Konjektur Geometrisasi yang jauh lebih besar.
+Jika Konjektur Geometrisasi Thurston benar, maka secara otomatis akan diturunkan bahwa manifold yang terhubung sederhana hanya memiliki elemen "geometri bola", dan sebagai hasilnya, [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/) juga akan terbukti. Dengan kata lain, [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/) ternyata hanyalah satu kepingan puzzle dari Konjektur Geometrisasi yang jauh lebih besar.
 
 Akan tetapi, Konjektur Geometrisasi itu sendiri adalah masalah yang sangat sulit.
 
@@ -112,7 +112,7 @@ Perelman mengklasifikasikan secara lengkap semua singularitas yang terjadi dalam
 
 ## 6. Pembuktian Legendaris dan Akhir Kisahnya
 
-Pada tahun 2002 hingga 2003, Perelman secara tiba-tiba mengirimkan 3 makalah ke sebuah server pracetak (arXiv). Di dalamnya tertulis pembuktian lengkap dari Konjektur Geometrisasi Thurston, dan tentunya, Konjektur Poincaré.
+Pada tahun 2002 hingga 2003, Perelman secara tiba-tiba mengirimkan 3 makalah ke sebuah server pracetak (arXiv). Di dalamnya tertulis pembuktian lengkap dari Konjektur Geometrisasi Thurston, dan tentunya, [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/).
 
 Karena makalah-makalahnya sangat sulit dipahami dan terlalu ringkas, matematikawan tingkat atas dari seluruh dunia membentuk tim dan menghabiskan beberapa tahun untuk memverifikasi makalah tersebut. Hasilnya, dipastikan bahwa tidak ada satupun cacat pada pembuktian Perelman, dan pembuktiannya benar-benar sempurna.
 
@@ -121,7 +121,7 @@ Ia menolak penganugerahan Medali Fields, dan juga menolak menerima hadiah uang s
 
 ## 7. Penutup: Masa Depan yang Dibuka oleh Topologi
 
-Penyelesaian Konjektur Poincaré bukan sekadar berakhirnya masalah sulit yang telah berusia seratus tahun. Dengan dibawanya metode analitik yang kuat bernama Aliran Ricci ke dalam geometri, cakrawala baru telah terbuka di dunia matematika.
+Penyelesaian [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/) bukan sekadar berakhirnya masalah sulit yang telah berusia seratus tahun. Dengan dibawanya metode analitik yang kuat bernama Aliran Ricci ke dalam geometri, cakrawala baru telah terbuka di dunia matematika.
 
 Selain itu, upaya matematis untuk memahami bentuk alam semesta terus memberikan pengaruh mendalam terhadap pemahaman kita mengenai dimensi dalam fisika modern, khususnya pada teori dawai dan kosmologi.
 

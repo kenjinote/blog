@@ -21,9 +21,9 @@ Providing a powerful framework to simply and mathematically represent and analyz
 
 This article will comprehensively and systematically explain graph theory, starting from its historical origins, covering basic mathematical definitions and data structures for computer programming, and introducing representative algorithms that support the foundation of modern technology.
 
-## 2. The Birth of Graph Theory: The Seven Bridges of Königsberg
+## 2. The Birth of Graph Theory: The [Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)
 
-The history of graph theory dates back to the 18th century. In 1736, the brilliant Swiss mathematician Leonhard Euler elegantly solved a famous mathematical puzzle, marking the beginning of this field. This puzzle is known as the "Seven Bridges of Königsberg".
+The history of graph theory dates back to the 18th century. In 1736, the brilliant Swiss mathematician [Leonhard Euler](https://kenji.blog/p/euler/) elegantly solved a famous mathematical puzzle, marking the beginning of this field. This puzzle is known as the "[Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)".
 
 In the beautiful city of Königsberg in the Kingdom of Prussia (now Kaliningrad, Russia), the Pregel River flowed, with two islands in the middle and a total of seven bridges connecting them to the riverbanks. A game became popular among the citizens: "Is it possible to cross every bridge exactly once and return to the original starting point?" Many people tried, but no one succeeded.
 

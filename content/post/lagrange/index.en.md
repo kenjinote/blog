@@ -17,7 +17,7 @@ tags:
 
 ## Introduction
 
-In the history of mathematics and physics, the 18th century was an era when great geniuses shone like stars. Among them, one of the greatest mathematicians, often mentioned alongside Leonhard Euler, is **Joseph-Louis Lagrange** (1736–1813). He is known as the founder of "analytical mechanics," having established the calculus of variations and elevated mechanics from geometric intuition to pure mathematical analysis.
+In the history of mathematics and physics, the 18th century was an era when great geniuses shone like stars. Among them, one of the greatest mathematicians, often mentioned alongside [Leonhard Euler](https://kenji.blog/p/euler/), is **[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/)** (1736–1813). He is known as the founder of "analytical mechanics," having established the calculus of variations and elevated mechanics from geometric intuition to pure mathematical analysis.
 
 In this article, we will delve into the turbulent life of Lagrange, who had a modest and contemplative personality, and his monumental mathematical and physical achievements that form the foundation of modern science and technology.
 
@@ -92,4 +92,4 @@ The concept of the "Lagrangian" that he left behind has become the common langua
 
 ## Conclusion
 
-Joseph-Louis Lagrange survived the turbulent 18th century, yet his mind was always in the world of pure mathematical truth. His achievements are not merely past discoveries; they still breathe at the forefront of physics and mathematics today. His legacy, believing in the beauty of mathematical formulas and the universality of logic, will continue to guide humanity's quest for knowledge.
+[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/) survived the turbulent 18th century, yet his mind was always in the world of pure mathematical truth. His achievements are not merely past discoveries; they still breathe at the forefront of physics and mathematics today. His legacy, believing in the beauty of mathematical formulas and the universality of logic, will continue to guide humanity's quest for knowledge.

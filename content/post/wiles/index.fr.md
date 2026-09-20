@@ -10,21 +10,21 @@ tags: ["Andrew Wiles", "Fermat", "Théorie des nombres"]
 
 ## Introduction
 
-Dans l'histoire des mathématiques, peu d'histoires sont aussi dramatiques et inspirantes que celle-ci. Le mathématicien britannique **Andrew Wiles** a accompli l'exploit monumental de prouver le « dernier théorème de Fermat », un problème qui était resté non résolu pendant plus de 350 ans.
+Dans l'histoire des mathématiques, peu d'histoires sont aussi dramatiques et inspirantes que celle-ci. Le mathématicien britannique **[Andrew Wiles](https://kenji.blog/p/wiles/)** a accompli l'exploit monumental de prouver le « dernier théorème de Fermat », un problème qui était resté non résolu pendant plus de 350 ans.
 
 Le parcours de sa vie se lit comme un film, commençant par un rêve d'enfance romantique, suivi de sept années de recherche solitaire et secrète, la découverte dévastatrice d'une faille, et un retour miraculeux. Cet article se penche sur les épisodes de la vie de Wiles et sur les profondes réalisations mathématiques qu'il a entreprises.
 
 ## Un rêve de petit garçon : Une rencontre à l'âge de 10 ans
 
-Andrew Wiles est né le 11 avril 1953 à Cambridge, en Angleterre. Son destin s'est scellé alors qu'il n'avait que 10 ans. Dans sa bibliothèque locale, il a pris un livre de mathématiques intitulé « Men of Mathematics » (par E. T. Bell).
+[Andrew Wiles](https://kenji.blog/p/wiles/) est né le 11 avril 1953 à Cambridge, en Angleterre. Son destin s'est scellé alors qu'il n'avait que 10 ans. Dans sa bibliothèque locale, il a pris un livre de mathématiques intitulé « Men of Mathematics » (par E. T. Bell).
 
-Dans ce livre, il a rencontré ce qui était considéré comme le plus grand mystère de l'histoire des mathématiques : le dernier théorème de Fermat. C'est le célèbre théorème où le mathématicien français Pierre de Fermat a écrit dans la marge d'un livre : « J'ai une démonstration véritablement merveilleuse de cette proposition, que cette marge est trop étroite pour contenir. »
+Dans ce livre, il a rencontré ce qui était considéré comme le plus grand mystère de l'histoire des mathématiques : le dernier théorème de Fermat. C'est le célèbre théorème où le mathématicien français [Pierre de Fermat](https://kenji.blog/p/fermat/) a écrit dans la marge d'un livre : « J'ai une démonstration véritablement merveilleuse de cette proposition, que cette marge est trop étroite pour contenir. »
 
 En tant que garçon de 10 ans, Wiles était profondément fasciné par la simplicité apparente du théorème, et par la façon dont il avait contrecarré les efforts de grands mathématiciens pendant des siècles. « Je serai la première personne à prouver ce théorème », s'est juré le jeune garçon. Cette **passion pure** est devenue le moteur de tout le reste de sa vie.
 
 ## Qu'est-ce que le dernier théorème de Fermat ?
 
-Le dernier théorème de Fermat s'exprime par la formule très simple suivante :
+[Le dernier théorème de Fermat](https://kenji.blog/p/fermats-last-theorem/) s'exprime par la formule très simple suivante :
 
 $$
 x^n + y^n = z^n \quad (\text{où } n \ge 3 \text{ est un entier})
@@ -67,7 +67,7 @@ En juin 1993, lors d'une conférence internationale sur la théorie des nombres 
 
 Cependant, au fur et à mesure que sa conférence progressait, les mathématiciens dans le public ont commencé à réaliser ce qu'il essayait de prouver. L'atmosphère dans la salle s'est progressivement réchauffée, et lors de la conférence du dernier jour, une foule débordante s'est précipitée.
 
-À la fin de la conférence, Wiles a écrit la formule du dernier théorème de Fermat au tableau noir et a annoncé tranquillement : « Je pense que je vais m'arrêter ici. » À ce moment-là, la salle a éclaté en un tonnerre d'applaudissements. Les médias du monde entier ont largement rapporté : « Le dernier théorème de Fermat enfin prouvé ! », faisant de Wiles une célébrité soudaine.
+À la fin de la conférence, Wiles a écrit la formule du dernier théorème de Fermat au tableau noir et a annoncé tranquillement : « Je pense que je vais m'arrêter ici. » À ce moment-là, la salle a éclaté en un tonnerre d'applaudissements. Les médias du monde entier ont largement rapporté : « [Le dernier théorème de Fermat](https://kenji.blog/p/fermats-last-theorem/) enfin prouvé ! », faisant de Wiles une célébrité soudaine.
 
 ## Le cauchemar commence : Une faille dans la preuve
 
@@ -85,7 +85,7 @@ En septembre 1994, Wiles a finalement décidé d'abandonner et a pensé à écri
 
 Soudain, une idée lui traversa l'esprit pour combiner l'approche de la théorie d'Iwasawa précédemment abandonnée avec cette méthode de Kolyvagin-Flach. Ce fut un moment de pure révélation, où la faiblesse de l'un complétait parfaitement l'autre.
 
-> « C'était une révélation incroyable. C'était tellement beau, tellement simple, et je ne pouvais pas comprendre comment j'avais pu passer à côté. » (Andrew Wiles)
+> « C'était une révélation incroyable. C'était tellement beau, tellement simple, et je ne pouvais pas comprendre comment j'avais pu passer à côté. » ([Andrew Wiles](https://kenji.blog/p/wiles/))
 
 Grâce à ce « moment magique », la faille de la preuve a été entièrement réparée. En octobre 1994, Wiles et Taylor ont soumis deux articles corrigés, mettant enfin un terme complet au plus grand mystère du monde mathématique après 350 ans.
 
@@ -99,6 +99,6 @@ Pour cette réalisation, Wiles a reçu de nombreux prix prestigieux, dont l'homm
 
 ## Conclusion
 
-L'histoire d'Andrew Wiles démontre les possibilités infinies des êtres humains apportées par la curiosité pure et un esprit indomptable. Le rêve apparemment **téméraire** nourri par un garçon de 10 ans est devenu réalité des décennies plus tard, surmontant de nombreux revers.
+L'histoire d'[Andrew Wiles](https://kenji.blog/p/wiles/) démontre les possibilités infinies des êtres humains apportées par la curiosité pure et un esprit indomptable. Le rêve apparemment **téméraire** nourri par un garçon de 10 ans est devenu réalité des décennies plus tard, surmontant de nombreux revers.
 
-Bien que le dernier théorème de Fermat ait été résolu, de nombreux mathématiciens continuent d'explorer les nouveaux champs fertiles des mathématiques ouverts par Wiles à la recherche de la prochaine vérité. Son nom, avec celui de Pierre de Fermat, restera à jamais gravé dans l'histoire de l'intellect humain.
+Bien que le dernier théorème de Fermat ait été résolu, de nombreux mathématiciens continuent d'explorer les nouveaux champs fertiles des mathématiques ouverts par Wiles à la recherche de la prochaine vérité. Son nom, avec celui de [Pierre de Fermat](https://kenji.blog/p/fermat/), restera à jamais gravé dans l'histoire de l'intellect humain.

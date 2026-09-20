@@ -9,7 +9,7 @@ categories: ["cryptography", "cpp", "mathematics"]
 tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 ---
 
-# 楕円曲線暗号（ECC）の数学的基礎とC++での実装
+# [楕円曲線暗号（ECC）の数学的基礎とC++での実装](https://kenji.blog/p/楕円曲線暗号の数学的基礎とcppでの実装/)
 
 現代の暗号技術において、 **楕円曲線暗号（Elliptic Curve Cryptography: ECC）** は極めて重要な役割を果たしています。私たちの日常的なインターネット通信（HTTPS/TLS）から、スマートフォンのセキュアエンクレーブ、SSHによるサーバー認証、FIDOなどのパスワードレス認証、さらにはビットコインやイーサリアムなどの暗号資産に至るまで、現代のデジタル社会の信頼基盤はECCによって支えられていると言っても過言ではありません。
 
@@ -67,8 +67,8 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 **乗法逆元（Modular Multiplicative Inverse）** の計算は暗号実装において非常に重要です。$b \times b^{-1} \equiv 1 \pmod p$ を満たす $b^{-1}$ を求めるには、主に以下の2つのアルゴリズムが用いられます。
 
-1. **拡張ユークリッドの互除法（Extended Euclidean Algorithm）**: 高速ですが、実装によっては処理時間が入力値に依存するためタイミング攻撃のリスクがあります。
-2. **フェルマーの小定理（Fermat's Little Theorem）**: $p$ が素数で $b \neq 0$ のとき、$b^{p-1} \equiv 1 \pmod p$ が成り立ちます。両辺を $b$ で割ると、$b^{p-2} \equiv b^{-1} \pmod p$ となります。つまり、$b$ の $p-2$ 乗を計算することで逆元が求まります。べき乗演算は定数時間で実装しやすいため、暗号実装ではこちらが好まれます。
+1. **拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)（Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm）**: 高速ですが、実装によっては処理時間が入力値に依存するためタイミング攻撃のリスクがあります。
+2. **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)）**: $p$ が素数で $b \neq 0$ のとき、$b^{p-1} \equiv 1 \pmod p$ が成り立ちます。両辺を $b$ で割ると、$b^{p-2} \equiv b^{-1} \pmod p$ となります。つまり、$b$ の $p-2$ 乗を計算することで逆元が求まります。べき乗演算は定数時間で実装しやすいため、暗号実装ではこちらが好まれます。
 
 ---
 
@@ -278,7 +278,7 @@ Montgomery Ladderの美しい点は、ビットが `0` であっても `1` で�
 巨大な整数の演算には `boost::multiprecision::cpp_int` を用いると仮定します。
 
 ### 8.1. モジュロ演算と逆元
-まず、有限体上の演算ヘルパー関数を定義します。フェルマーの小定理による逆元計算を実装します。
+まず、有限体上の演算ヘルパー関数を定義します。[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)による逆元計算を実装します。
 
 ```cpp
 #include <iostream>

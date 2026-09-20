@@ -10,7 +10,7 @@ tags: ["Heisuke Hironaka", "Algebraic Geometry", "Resolution of Singularities", 
 
 ## Introduction
 
- **Heisuke Hironaka** is a Japanese mathematician who left a revolutionary mark on the mathematical world in the late 20th century, particularly in the field of algebraic geometry. The Fields Medal he received in 1970 is the highest honor in mathematics, awarded for his solution to the "resolution of singularities of an algebraic variety over a field of characteristic zero"—a monumental problem that everyone at the time considered impossible.
+ **[Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/)** is a Japanese mathematician who left a revolutionary mark on the mathematical world in the late 20th century, particularly in the field of algebraic geometry. The Fields Medal he received in 1970 is the highest honor in mathematics, awarded for his solution to the "resolution of singularities of an algebraic variety over a field of characteristic zero"—a monumental problem that everyone at the time considered impossible.
 
 In this article, we delve deeply into Hironaka's dramatic life from his childhood to his Fields Medal award, the mathematical background of his synonymous "Resolution of Singularities Theorem", and the unique philosophy regarding "creativity" that he continuously advocated.
 
@@ -103,4 +103,4 @@ For Hironaka, reaching a dead end in thought (an intellectual singularity) was n
 
 ## Conclusion
 
-Heisuke Hironaka's Resolution of Singularities Theorem transformed the landscape of algebraic geometry and remains an indispensable tool in diverse fields like superstring theory. When faced with difficult walls, his attitude of "unraveling" complex entanglements continues to fascinate many people today.
+[Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/)'s Resolution of Singularities Theorem transformed the landscape of algebraic geometry and remains an indispensable tool in diverse fields like superstring theory. When faced with difficult walls, his attitude of "unraveling" complex entanglements continues to fascinate many people today.

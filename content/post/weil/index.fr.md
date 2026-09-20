@@ -10,13 +10,13 @@ tags: ["André Weil", "Bourbaki", "Géométrie Algébrique", "Théorie des Nombr
 
 ## 1. Introduction : Architecte des Mathématiques Modernes
 
-André Weil (6 mai 1906 - 6 août 1998) fut l'une des figures les plus influentes du monde mathématique du 20e siècle. Ses travaux ont profondément relié des domaines qui s'étaient développés séparément jusque-là — la théorie des nombres, la géométrie algébrique et la topologie — créant ainsi un paradigme entièrement nouveau dans les mathématiques modernes. En particulier, les **« conjectures de Weil »** qu'il a proposées ont servi de boussole pour la recherche mathématique au cours des décennies suivantes, inspirant massivement la génération suivante de génies tels qu'Alexandre Grothendieck et Pierre Deligne. Cet article détaille sa vie extraordinaire, son rôle dans la fondation du mathématicien fictif **« Nicolas Bourbaki »** , et le profond héritage mathématique qu'il a laissé.
+[André Weil](https://kenji.blog/p/weil/) (6 mai 1906 - 6 août 1998) fut l'une des figures les plus influentes du monde mathématique du 20e siècle. Ses travaux ont profondément relié des domaines qui s'étaient développés séparément jusque-là — la théorie des nombres, la géométrie algébrique et la topologie — créant ainsi un paradigme entièrement nouveau dans les mathématiques modernes. En particulier, les **« conjectures de Weil »** qu'il a proposées ont servi de boussole pour la recherche mathématique au cours des décennies suivantes, inspirant massivement la génération suivante de génies tels qu'[Alexandre Grothendieck](https://kenji.blog/p/grothendieck/) et Pierre Deligne. Cet article détaille sa vie extraordinaire, son rôle dans la fondation du mathématicien fictif **« Nicolas Bourbaki »** , et le profond héritage mathématique qu'il a laissé.
 
 ## 2. Le Parcours d'un Jeune Prodige : De Paris au Monde
 
 Weil est né à Paris, en France, dans une famille juive cultivée. Sa sœur cadette, Simone Weil, a également marqué l'histoire en tant que célèbre philosophe et militante sociale. Dès son plus jeune âge, Weil a fait preuve d'un talent extraordinaire tant pour les langues que pour les mathématiques ; c'était un prodige capable de lire des textes classiques en sanskrit et en grec dans leurs versions originales.
 
-À l'âge précoce de 16 ans, il entre à l'École Normale Supérieure (ENS), la plus prestigieuse institution d'enseignement de France. Il y rencontre de brillants mathématiciens comme Henri Cartan, qui deviendront ses amis pour la vie. Après l'obtention de son diplôme, Weil a voyagé dans les centres académiques européens, notamment à Rome, Göttingen et Berlin, élargissant ses horizons en apprenant directement des mathématiciens de premier plan de l'époque, tels que Carl Ludwig Siegel et Emmy Noether.
+À l'âge précoce de 16 ans, il entre à l'École Normale Supérieure (ENS), la plus prestigieuse institution d'enseignement de France. Il y rencontre de brillants mathématiciens comme Henri Cartan, qui deviendront ses amis pour la vie. Après l'obtention de son diplôme, Weil a voyagé dans les centres académiques européens, notamment à Rome, Göttingen et Berlin, élargissant ses horizons en apprenant directement des mathématiciens de premier plan de l'époque, tels que [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) et [Emmy Noether](https://kenji.blog/p/noether/).
 
 ## 3. Expérience en Inde et Dévouement à la Philosophie
 
@@ -77,7 +77,7 @@ graph LR
 %% Connexion entre la théorie des nombres et la géométrie algébrique
 ```
 
-Pour prouver ces profondes conjectures, Alexandre Grothendieck a construit de toutes pièces le cadre théorique massif de la théorie des schémas et de la cohomologie étale. Puis, en 1974, l'élève de Grothendieck, Pierre Deligne, a prouvé l'obstacle final, « l'analogue de l'hypothèse de Riemann », résolvant complètement les conjectures de Weil. Ce grand drame est considéré comme l'une des plus grandes réalisations monumentales des mathématiques du 20e siècle.
+Pour prouver ces profondes conjectures, [Alexandre Grothendieck](https://kenji.blog/p/grothendieck/) a construit de toutes pièces le cadre théorique massif de la théorie des schémas et de la cohomologie étale. Puis, en 1974, l'élève de Grothendieck, Pierre Deligne, a prouvé l'obstacle final, « l'analogue de l'hypothèse de Riemann », résolvant complètement les conjectures de Weil. Ce grand drame est considéré comme l'une des plus grandes réalisations monumentales des mathématiques du 20e siècle.
 
 ## 7. Autres Contributions Significatives : Adèles, Idèles et le Groupe de Weil
 
@@ -89,4 +89,4 @@ De plus, il a introduit le **« groupe de Weil »** , une extension du concept d
 
 Weil s'est engagé dans la recherche et l'enseignement pendant de nombreuses années à l'Institute for Advanced Study de Princeton, encadrant de nombreux successeurs. Il possédait de vastes connaissances et une perspicacité aiguë, et était parfois connu comme un critique mordant. Il avait également une profonde connaissance de l'histoire des mathématiques, et les livres qu'il a écrits sur le sujet sont très appréciés comme des chefs-d'œuvre pleins de perspicacité historique.
 
-En 1998, André Weil est décédé à l'âge de 92 ans. La graine de la « fusion de la théorie des nombres et de la géométrie » qu'il a semée a fleuri brillamment dans les mathématiques modernes. Ses réalisations survivantes, et son attitude intransigeante envers les mathématiques, continueront sans doute à fasciner et à guider les mathématiciens pour toujours. Sa vie fut véritablement une grande épopée où l'histoire turbulente du 20e siècle a croisé l'éclat de l'intellect humain.
+En 1998, [André Weil](https://kenji.blog/p/weil/) est décédé à l'âge de 92 ans. La graine de la « fusion de la théorie des nombres et de la géométrie » qu'il a semée a fleuri brillamment dans les mathématiques modernes. Ses réalisations survivantes, et son attitude intransigeante envers les mathématiques, continueront sans doute à fasciner et à guider les mathématiciens pour toujours. Sa vie fut véritablement une grande épopée où l'histoire turbulente du 20e siècle a croisé l'éclat de l'intellect humain.

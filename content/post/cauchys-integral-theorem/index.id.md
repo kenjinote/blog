@@ -19,7 +19,7 @@ Di bidang matematika yang dikenal sebagai analisis kompleks, salah satu teorema 
 
 Dari pengalaman mempelajari integrasi fungsi nyata, integrasi secara alami dianggap mewakili "area" atau "akumulasi di sepanjang jalan", jadi jika Anda berintegrasi melalui jarak yang jauh di sepanjang jalan, tampaknya wajar bahwa beberapa nilai akan tetap ada. Namun, pada bidang kompleks, ketika suatu fungsi memiliki sifat khusus sebagai **holomorfik**, sebuah simetri yang menakjubkan muncul di mana hasil dari integrasi menjadi sepenuhnya terlepas dari jalan yang diambil, melewatkan perbedaan jalur.
 
-Dalam artikel ini, kami akan menjelaskan teorema integral Cauchy dengan sangat rinci, mulai dari definisi dasar bidang kompleks dan fungsi holomorfik, beranjak pada makna intuitif dari teorema, interpretasi fisiknya, dan sketsa pembuktian klasiknya menggunakan teorema Green. Lebih jauh lagi, kami akan menyentuh bagaimana teorema ini terhubung dengan topik yang lebih maju dalam analisis kompleks, seperti rumus integral Cauchy dan Teorema Residu. Mari kita hargai kedalaman mendalam dari teorema ini baik dari perspektif ketelitian matematika maupun gambaran intuitif.
+Dalam artikel ini, kami akan menjelaskan teorema integral Cauchy dengan sangat rinci, mulai dari definisi dasar bidang kompleks dan fungsi holomorfik, beranjak pada makna intuitif dari teorema, interpretasi fisiknya, dan sketsa pembuktian klasiknya menggunakan teorema Green. Lebih jauh lagi, kami akan menyentuh bagaimana teorema ini terhubung dengan topik yang lebih maju dalam analisis kompleks, seperti rumus integral Cauchy dan [Teorema Residu](https://kenji.blog/p/residue-theorem/). Mari kita hargai kedalaman mendalam dari teorema ini baik dari perspektif ketelitian matematika maupun gambaran intuitif.
 
 ## 2. Fondasi Bidang Kompleks dan Fungsi Holomorfik
 
@@ -201,16 +201,16 @@ $$
 
 Rumus ini menunjukkan kekakuan yang mencengangkan dari fungsi holomorfik: "Selama nilai-nilai fungsi pada batas kurva tertutup diketahui, nilai fungsi pada setiap titik di dalam domain sepenuhnya ditentukan oleh kalkulasi integral."
 
-### Domain Terhubung Ganda dan Teorema Residu
+### Domain Terhubung Ganda dan [Teorema Residu](https://kenji.blog/p/residue-theorem/)
 
 Jika domain memiliki "lubang" dan tidak terhubung sederhana (domain terhubung ganda), teorema integral Cauchy tidak dapat diterapkan begitu saja. Misalnya, fungsi $f(z) = 1/z$ tidak didefinisikan pada titik asal $z=0$ dan tidak holomorfik di sana. Jika kita mengintegralkan sepanjang lingkaran satuan yang mengelilingi titik asal, hasilnya bukan nol, tetapi nilainya $2\pi i$.
 
-Namun, dengan secara cerdik menerapkan teorema integral Cauchy dan mengubah bentuk jalur integrasi, suatu metode sistematis untuk mengevaluasi integral di sekitar lubang telah ditetapkan. Ini mengarah pada **Teorema Residu** (Residue theorem), salah satu alat paling praktis dalam analisis kompleks modern. Dengan menggunakan Teorema Residu, integral tertentu kompleks dan integral tak hingga dari fungsi nyata dapat dengan cemerlang digantikan dengan perhitungan aljabar pada bidang kompleks dan diselesaikan.
+Namun, dengan secara cerdik menerapkan teorema integral Cauchy dan mengubah bentuk jalur integrasi, suatu metode sistematis untuk mengevaluasi integral di sekitar lubang telah ditetapkan. Ini mengarah pada **[Teorema Residu](https://kenji.blog/p/residue-theorem/)** (Residue theorem), salah satu alat paling praktis dalam analisis kompleks modern. Dengan menggunakan [Teorema Residu](https://kenji.blog/p/residue-theorem/), integral tertentu kompleks dan integral tak hingga dari fungsi nyata dapat dengan cemerlang digantikan dengan perhitungan aljabar pada bidang kompleks dan diselesaikan.
 
 ## 10. Kesimpulan
 
 Sepintas, teorema integral Cauchy mungkin terlihat seperti teorema sederhana yang sekadar mengatakan "integral menjadi nol." Namun, tersembunyi di baliknya adalah simetri mendalam dan indah yang dihasilkan oleh kondisi "holomorfi" yang tampak sederhana dari fungsi kompleks.
 
-Berawal dari teorema ini, pencapaian luar biasa dari analisis kompleks seperti rumus integral Cauchy, pembuktian bahwa suatu fungsi dapat diturunkan secara tak terbatas (menjamin ekspansi Taylor dan ekspansi Laurent), dan Teorema Residu diturunkan secara berurutan. Teorema integral Cauchy benar-benar dapat dikatakan sebagai fondasi yang paling kuat dan indah yang menopang bangunan matematika yang megah dari analisis kompleks dari akar-akarnya.
+Berawal dari teorema ini, pencapaian luar biasa dari analisis kompleks seperti rumus integral Cauchy, pembuktian bahwa suatu fungsi dapat diturunkan secara tak terbatas (menjamin ekspansi Taylor dan ekspansi Laurent), dan [Teorema Residu](https://kenji.blog/p/residue-theorem/) diturunkan secara berurutan. Teorema integral Cauchy benar-benar dapat dikatakan sebagai fondasi yang paling kuat dan indah yang menopang bangunan matematika yang megah dari analisis kompleks dari akar-akarnya.
 
 Kami mendorong para pembaca untuk mengambil kertas dan pena dan menelusuri pembuktian menggunakan teorema Green dengan tangan Anda sendiri. Anda kemudian pasti akan dapat merasakan dunia bidang kompleks yang selaras dengan indah yang terbentang di balik rumus-rumus matematika.

@@ -8,7 +8,7 @@ categories: ["matemáticas"]
 tags: ["álgebra", "teoría de grupos", "teoría de anillos", "teoría de cuerpos"]
 ---
 
-# Grupos, Anillos y Cuerpos: La Belleza de la "Estructura" Descrita por el Álgebra Moderna
+# [Grupos, Anillos y Cuerpos](https://kenji.blog/p/groups-rings-and-fields/): La Belleza de la "Estructura" Descrita por el Álgebra Moderna
 
 Para muchos de nosotros, las "matemáticas" que aprendemos primero en la escuela son un mundo de suma y multiplicación de números, es decir, las "cuatro operaciones básicas". Cálculos como $1 + 1 = 2$ y $3 \times 4 = 12$ son extremadamente útiles para describir las cantidades y tamaños del mundo real con el que interactuamos diariamente.
 

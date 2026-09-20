@@ -17,9 +17,9 @@ tags:
 
 ## 1. Pendahuluan: Para Raksasa Menjelang Penemuan Kalkulus dan Matematika Abad Ke-17
 
-Eropa pada abad ke-17 adalah masa ledakan pengetahuan yang dramatis, yang kemudian dikenal sebagai "Revolusi Ilmiah". Khususnya dalam bidang matematika, persiapan yang cepat sedang berlangsung untuk kelahiran matematika baru yang melampaui kerangka kerja geometri Euclidean yang diwarisi dari Yunani kuno untuk menangani besaran yang berubah, yang sangat kecil, dan yang tak terhingga—yaitu, "kalkulus". Monumen bersejarah penyelesaian kalkulus oleh Isaac Newton dan Gottfried Wilhelm Leibniz sama sekali bukan dicapai oleh kejeniusan mereka berdua saja. Di baliknya terdapat perjuangan banyak matematikawan yang bergulat dengan konsep ketakterhinggaan dan limit sebelum mereka.
+Eropa pada abad ke-17 adalah masa ledakan pengetahuan yang dramatis, yang kemudian dikenal sebagai "Revolusi Ilmiah". Khususnya dalam bidang matematika, persiapan yang cepat sedang berlangsung untuk kelahiran matematika baru yang melampaui kerangka kerja geometri [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an yang diwarisi dari Yunani kuno untuk menangani besaran yang berubah, yang sangat kecil, dan yang tak terhingga—yaitu, "kalkulus". Monumen bersejarah penyelesaian kalkulus oleh [Isaac Newton](https://kenji.blog/p/newton/) dan Gottfried Wilhelm Leibniz sama sekali bukan dicapai oleh kejeniusan mereka berdua saja. Di baliknya terdapat perjuangan banyak matematikawan yang bergulat dengan konsep ketakterhinggaan dan limit sebelum mereka.
 
-Salah satu matematikawan terpenting di Prancis pada "malam sebelum kalkulus" ini adalah Gilles Personne de Roberval (1602–1675). Roberval memperkenalkan "metode indivisibles" ke Prancis yang diusulkan oleh ilmuwan Italia Bonaventura Cavalieri, dan dengan menyempurnakannya secara independen, ia menciptakan metode yang kuat untuk menghitung luas bangun yang dibatasi oleh kurva dan volume benda putar. Ia juga menunjukkan bakat luar biasa dalam bidang fisika dan mekanika, meninggalkan penemuan terobosan yang dikenal sebagai "timbangan Roberval", yang masih dapat dilihat di pasar dan laboratorium sains saat ini.
+Salah satu matematikawan terpenting di Prancis pada "malam sebelum kalkulus" ini adalah [Gilles Personne de Roberval](https://kenji.blog/p/roberval/) (1602–1675). Roberval memperkenalkan "metode indivisibles" ke Prancis yang diusulkan oleh ilmuwan Italia Bonaventura Cavalieri, dan dengan menyempurnakannya secara independen, ia menciptakan metode yang kuat untuk menghitung luas bangun yang dibatasi oleh kurva dan volume benda putar. Ia juga menunjukkan bakat luar biasa dalam bidang fisika dan mekanika, meninggalkan penemuan terobosan yang dikenal sebagai "timbangan Roberval", yang masih dapat dilihat di pasar dan laboratorium sains saat ini.
 
 Dalam artikel ini, kita akan mendalami kehidupan matematikawan yang menyendiri ini yang hidup melalui era yang penuh pergolakan, kontroversi sengitnya dengan orang-orang sezamannya, dan pencapaian matematika dan mekanika yang mendalam yang ia tinggalkan, lengkap dengan ilustrasi dan rumus matematika yang kaya.
 
@@ -29,9 +29,9 @@ Dalam artikel ini, kita akan mendalami kehidupan matematikawan yang menyendiri i
 
 Gilles Personne lahir pada 10 Agustus 1602, di sebuah desa kecil bernama Roberval dekat Beauvais di Prancis utara. Keluarganya diyakini sebagai petani, yang sama sekali bukan latar belakang yang menguntungkan untuk bersekolah dalam masyarakat kelas yang ketat pada masa itu. Namun, sejak usia muda, ia menunjukkan kecerdasan luar biasa dan minat yang kuat pada matematika. Kemudian, ia mengambil nama desa asalnya dan mulai menyebut dirinya "de Roberval". Hal ini dapat dilihat sebagai ekspresi kebanggaannya terhadap asal-usulnya serta upaya untuk membangun identitasnya sebagai seorang sarjana.
 
-Setelah belajar matematika dan bahasa klasik (Latin dan Yunani) secara otodidak pada usia muda, Roberval membidik tingkat akademis yang lebih tinggi dan pindah ke ibu kota, Paris, sekitar tahun 1628. Paris pada saat itu merupakan tempat berkumpulnya para ilmuwan, mengumpulkan para cendekiawan dari seluruh Eropa. Di sana, ia mulai sering menghadiri pertemuan para cendekiawan yang berpusat di sekitar Pastor Marin Mersenne, yang dikenal sebagai "Académie de Mersenne". Mersenne, yang sering disebut "kepala kantor pos keilmuan Eropa", bertindak sebagai perantara korespondensi antar ilmuwan di seluruh Eropa, memainkan peran dalam berbagi penemuan ilmiah terbaru.
+Setelah belajar matematika dan bahasa klasik (Latin dan Yunani) secara otodidak pada usia muda, Roberval membidik tingkat akademis yang lebih tinggi dan pindah ke ibu kota, Paris, sekitar tahun 1628. Paris pada saat itu merupakan tempat berkumpulnya para ilmuwan, mengumpulkan para cendekiawan dari seluruh Eropa. Di sana, ia mulai sering menghadiri pertemuan para cendekiawan yang berpusat di sekitar Pastor [Marin Mersenne](https://kenji.blog/p/mersenne/), yang dikenal sebagai "Académie de Mersenne". Mersenne, yang sering disebut "kepala kantor pos keilmuan Eropa", bertindak sebagai perantara korespondensi antar ilmuwan di seluruh Eropa, memainkan peran dalam berbagi penemuan ilmiah terbaru.
 
-Melalui salon Mersenne, Roberval memperdalam interaksinya dengan para pemikir terkemuka Prancis pada saat itu, seperti René Descartes, Pierre de Fermat, Blaise Pascal, dan Étienne Pascal (ayah Blaise), yang memungkinkan bakat matematikanya berkembang.
+Melalui salon Mersenne, Roberval memperdalam interaksinya dengan para pemikir terkemuka Prancis pada saat itu, seperti [René Descartes](https://kenji.blog/p/descartes/), [Pierre de Fermat](https://kenji.blog/p/fermat/), [Blaise Pascal](https://kenji.blog/p/pascal/), dan Étienne Pascal (ayah Blaise), yang memungkinkan bakat matematikanya berkembang.
 
 ### 2.2. Jabatan Profesor Collège Royal dan Pertempuran Bertahan yang Melelahkan
 
@@ -71,7 +71,7 @@ $$
 \int_{0}^{a} x^n dx = \frac{a^{n+1}}{n+1} \quad \left( \text{di mana } n \text{ adalah bilangan bulat positif} \right)
 $$
 
-Misalnya, ketika $ n = 2 $, luas di bawah parabola $ y = x^2 $ adalah $ \frac{a^3}{3} $. Ini adalah hasil yang sama yang ditemukan Pierre de Fermat secara independen pada waktu yang hampir bersamaan. Roberval dan Fermat saling menghormati metode satu sama lain dan membagikan penemuan ini melalui surat. Pencapaian mereka menjadi batu loncatan penting menuju perumusan integral oleh Leibniz di kemudian hari.
+Misalnya, ketika $ n = 2 $, luas di bawah parabola $ y = x^2 $ adalah $ \frac{a^3}{3} $. Ini adalah hasil yang sama yang ditemukan [Pierre de Fermat](https://kenji.blog/p/fermat/) secara independen pada waktu yang hampir bersamaan. Roberval dan Fermat saling menghormati metode satu sama lain dan membagikan penemuan ini melalui surat. Pencapaian mereka menjadi batu loncatan penting menuju perumusan integral oleh Leibniz di kemudian hari.
 
 ## 4. Studi tentang Sikloid dan Perselisihan Prioritas yang Sengit
 
@@ -118,7 +118,7 @@ Setelah mengetahui hal ini, Roberval sangat marah. Ia menuduh Torricelli, dengan
 
 Roberval merancang pendekatan inovatif tidak hanya di bidang integral tetapi juga di bidang diferensial (masalah menggambar garis singgung). Ia memeriksa kembali masalah geometris sebagai "kinematika" fisik.
 
-Pada masa itu, menemukan garis singgung suatu kurva adalah salah satu masalah paling penting dalam geometri. René Descartes mencoba mencari garis singgung menggunakan pendekatan geometris aljabar dengan persamaan aljabar, namun pendekatan ini memiliki kelemahan yaitu perhitungannya sangat rumit.
+Pada masa itu, menemukan garis singgung suatu kurva adalah salah satu masalah paling penting dalam geometri. [René Descartes](https://kenji.blog/p/descartes/) mencoba mencari garis singgung menggunakan pendekatan geometris aljabar dengan persamaan aljabar, namun pendekatan ini memiliki kelemahan yaitu perhitungannya sangat rumit.
 
 Sebaliknya, Roberval berpikir sebagai berikut: "Jika suatu kurva adalah lintasan yang ditelusuri oleh sebuah titik yang bergerak, maka arah pergerakan titik tersebut pada suatu waktu tertentu (vektor kecepatan) adalah tepat merupakan garis singgung pada kurva tersebut."
 
@@ -132,7 +132,7 @@ graph LR
     D -->|"Pengaruh Ideologi"| E["Metode Fluksi Newton"]
 ```
 
-"Metode garis singgung kinematika" ini menunjukkan kekuatan yang luar biasa dalam menemukan garis singgung untuk kurva transendental (kurva yang tidak dapat dinyatakan dengan persamaan aljabar) seperti sikloid. Pendekatan Roberval dalam membawa konsep fisik gerak ini ke dalam matematika merupakan langkah yang sangat penting yang secara langsung mengarah pada ideologi mendasar "Metode Fluksi" (kalkulus kinematika) yang kemudian didirikan oleh Isaac Newton.
+"Metode garis singgung kinematika" ini menunjukkan kekuatan yang luar biasa dalam menemukan garis singgung untuk kurva transendental (kurva yang tidak dapat dinyatakan dengan persamaan aljabar) seperti sikloid. Pendekatan Roberval dalam membawa konsep fisik gerak ini ke dalam matematika merupakan langkah yang sangat penting yang secara langsung mengarah pada ideologi mendasar "Metode Fluksi" (kalkulus kinematika) yang kemudian didirikan oleh [Isaac Newton](https://kenji.blog/p/newton/).
 
 ## 6. Kontribusi pada Mekanika: Timbangan Roberval
 
@@ -154,11 +154,11 @@ Sebagai hasilnya, timbangan dengan karakteristik praktis yang sangat baik terwuj
 
 Selain bakatnya yang luar biasa, Roberval dikatakan memiliki sifat yang sangat pemarah dan keras kepala yang menolak untuk menyerah pada teori-teorinya. Akibatnya, ia terlibat dalam kontroversi sengit dengan banyak cendekiawan terkenal pada masanya.
 
-- **Konflik dengan René Descartes**:
+- **Konflik dengan [René Descartes](https://kenji.blog/p/descartes/)**:
   Sementara Descartes mempromosikan "geometri analitik", yang memecahkan masalah geometri menggunakan aljabar, Roberval menghargai metode geometris dan kinematika murni. Roberval mengkritik metode Descartes karena terlalu dibuat-buat dan sering menyerang kelemahan dalam teori Descartes. Descartes, sebaliknya, memandang rendah Roberval sebagai orang yang "kasar dan tidak berpendidikan", dan hubungan mereka tetap bermusuhan sepanjang hidup mereka.
-- **Persahabatan dengan Pierre de Fermat**:
+- **Persahabatan dengan [Pierre de Fermat](https://kenji.blog/p/fermat/)**:
   Berbeda dengan Descartes, Roberval membangun hubungan yang sangat baik dengan Fermat, yang tinggal di Toulouse. Meskipun memiliki kepribadian yang bertolak belakang, mereka berbagi ide-ide matematika melalui surat yang diperantarai oleh Mersenne, saling melengkapi penelitian satu sama lain tentang masalah-masalah seperti indivisibles.
-- **Pengaruh pada Blaise Pascal**:
+- **Pengaruh pada [Blaise Pascal](https://kenji.blog/p/pascal/)**:
   Jenius muda Pascal juga sangat dipengaruhi oleh Roberval. Pascal kemudian menerbitkan makalah tentang sikloid menggunakan nama samaran "A. Dettonville", dan banyak metode yang digunakan di dalamnya adalah versi yang telah disempurnakan dari ide Roberval tentang indivisibles. Roberval sangat menghargai bakat Pascal dan mendukungnya.
 
 ```mermaid
@@ -182,7 +182,7 @@ graph TD
 
 ## 8. Kesimpulan: Sang Jenius Penyendiri yang Menjembatani Jalan Menuju Kalkulus
 
-Gilles Personne de Roberval, pada era tepat sebelum lahirnya kalkulus secara formal, sepenuhnya memanfaatkan dua senjata ampuh—metode indivisibles dan pendekatan kinematika—untuk secara berurutan memecahkan masalah matematika dengan tingkat kesulitan tertinggi pada masanya.
+[Gilles Personne de Roberval](https://kenji.blog/p/roberval/), pada era tepat sebelum lahirnya kalkulus secara formal, sepenuhnya memanfaatkan dua senjata ampuh—metode indivisibles dan pendekatan kinematika—untuk secara berurutan memecahkan masalah matematika dengan tingkat kesulitan tertinggi pada masanya.
 
 Sebagai akibat dari penundaannya yang berlebihan dalam menerbitkan penemuan-penemuannya karena tekanan untuk mempertahankan jabatan profesornya setiap tiga tahun, beberapa pencapaiannya tidak dinilai secara adil oleh orang-orang sezamannya, dan ia terkadang terseret ke dalam perselisihan prioritas yang tidak diinginkan. Namun, benih-benih ide matematika yang ia tabur pastinya menyebar melalui jaringan Mersenne dan kenalan-kenalan seperti Fermat dan Pascal, menjadi jembatan kuat yang mengarah ke fondasi kalkulus oleh Newton dan Leibniz di kemudian hari.
 

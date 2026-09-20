@@ -9,7 +9,7 @@ categories: ["productivity", "notion", "project-management"]
 tags: ["Notion API", "Python", "Kanban", "PARA"]
 ---
 
-# La gestion des tâches avec Notion pour le développement personnel et l'écriture de blog
+# [La gestion des tâches avec Notion pour le développement personnel et l'écriture de blog](https://kenji.blog/p/notion_task_management/)
 
 Pour continuer le développement personnel et l'écriture de blog, la gestion des tâches, le maintien de la motivation et la manière dont on stocke et utilise les idées quotidiennes sont des thèmes extrêmement importants. Plus un projet devient important, plus le nombre de tâches à accomplir augmente, et on se demande souvent par quoi commencer. De plus, où et comment stocker les informations qui surviennent quotidiennement, comme les idées d'articles de blog ou les notes techniques, devient également un défi.
 

@@ -104,7 +104,7 @@ graph TD
 
 Quem assegura esse "comportamento visível externamente" são os **testes automatizados**. Contanto que os testes continuem a passar, não importa o quão modificadas as suas peças, métodos, classes ou toda a arquitetura interna sejam, esse software permanece, como o Navio de Teseu, sendo "o mesmo".
 
-## 4. O Navio de Teseu em Equipas de Projeto
+## 4. [O Navio de Teseu](https://kenji.blog/p/ship-of-theseus/) em Equipas de Projeto
 
 Não só os sistemas de software por si só, como também as **equipas de desenvolvimento** por trás da sua construção podem se comportar como Navios de Teseu.
 

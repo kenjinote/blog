@@ -8,7 +8,7 @@ categories: ["matemática"]
 tags: ["álgebra", "teoria de grupos", "teoria de anéis", "teoria de corpos"]
 ---
 
-# Grupos, Anéis e Corpos: A Beleza da "Estrutura" Descrita pela Álgebra Moderna
+# [Grupos, Anéis e Corpos](https://kenji.blog/p/groups-rings-and-fields/): A Beleza da "Estrutura" Descrita pela Álgebra Moderna
 
 Para muitos de nós, a "matemática" que aprendemos primeiro na escola é um mundo de adição e multiplicação de números, ou seja, as "quatro operações básicas".
 
@@ -105,7 +105,7 @@ flowchart TD
 
 ---
 
-## 8. Teoria de Galois
+## 8. [Teoria de Galois](https://kenji.blog/p/galois-theory/)
 
 ## 9. Aplicações (Criptografia, Física)
 

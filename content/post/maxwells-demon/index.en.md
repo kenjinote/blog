@@ -10,7 +10,7 @@ slug: "maxwells-demon"
 
 ## Introduction
 
-In the history of physics, one of the most famous and most debated thought experiments is **Maxwell's Demon**. This "demon," proposed in 1867 by the 19th-century physicist James Clerk Maxwell, has greatly troubled physicists around the world for many years. This is because the existence of this demon seemed to directly break the **Second Law of Thermodynamics**, one of the most robust laws in physics that dictates the irreversibility of the universe.
+In the history of physics, one of the most famous and most debated thought experiments is **[Maxwell's Demon](https://kenji.blog/p/maxwells-demon/)**. This "demon," proposed in 1867 by the 19th-century physicist James Clerk Maxwell, has greatly troubled physicists around the world for many years. This is because the existence of this demon seemed to directly break the **Second Law of Thermodynamics**, one of the most robust laws in physics that dictates the irreversibility of the universe.
 
 If this demon truly existed, we would be able to extract infinite heat energy from the air and convert it into work, creating a "perpetual motion machine of the second kind." That would mean the eternal solution to our energy problems, but at the same time, it would mean the collapse of the premises of the physical laws as we know them.
 
@@ -38,7 +38,7 @@ Here, $k_B$ is the Boltzmann constant ($1.38 \times 10^{-23} \ \mathrm{J/K}$). T
 
 As a familiar example, consider pouring hot coffee and cold milk into the same cup. Over time, they naturally mix together, becoming lukewarm café au lait. In this process, the system becomes more disordered, and entropy increases. However, the reverse—that is, the lukewarm café au lait spontaneously separating into hot coffee and cold milk—will absolutely never happen. In this way, natural phenomena have an irreversible directionality, which is expressed in the form of increasing entropy.
 
-## The Thought Experiment of Maxwell's Demon
+## The Thought Experiment of [Maxwell's Demon](https://kenji.blog/p/maxwells-demon/)
 
 Against this law, which forms the foundation of physics, Maxwell proposed the following ingenious thought experiment.
 
@@ -146,7 +146,7 @@ $$
 
 "Writing" or "computing" information can, in principle, be done without consuming energy. However, in the irreversible operation of "forgetting" or "erasing" information, a thermodynamic price must invariably be paid.
 
-## The Death of Maxwell's Demon and the End of the Paradox
+## The Death of [Maxwell's Demon](https://kenji.blog/p/maxwells-demon/) and the End of the Paradox
 
 In 1982, Charles Bennett used Landauer's principle to finally lay Maxwell's demon's paradox to rest.
 

@@ -107,7 +107,7 @@ Inverse[m]
 {{-2, 1}, {1.5, -0.5}}
 ```
 
-## आइगेनवैल्यू और आइगेनवेक्टर ज्ञात करना
+## [आइगेनवैल्यू और आइगेनवेक्टर](https://kenji.blog/p/eigenvalues-and-eigenvectors/) ज्ञात करना
 ```
 Eigensystem[m]
 ```

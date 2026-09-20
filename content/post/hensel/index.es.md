@@ -10,21 +10,21 @@ tags: ["Kurt Hensel", "números p-ádicos", "teoría algebraica de números", "h
 
 ## 1. Introducción
 
-En la teoría de números moderna, particularmente en la teoría algebraica de números y la geometría aritmética, los **números p-ádicos** son una herramienta indispensable. Este concepto revolucionario fue introducido a finales del siglo XIX por el matemático alemán **Kurt Hensel** (1861–1941).
+En la teoría de números moderna, particularmente en la teoría algebraica de números y la geometría aritmética, los **números p-ádicos** son una herramienta indispensable. Este concepto revolucionario fue introducido a finales del siglo XIX por el matemático alemán **[Kurt Hensel](https://kenji.blog/p/hensel/)** (1861–1941).
 
-Su descubrimiento sirvió como un puente que conectaba las perspectivas "local" y "global" en matemáticas, provocando un cambio de paradigma en las matemáticas del siglo XX. Este artículo ofrece una exploración detallada de la vida de Kurt Hensel, su mayor logro —el descubrimiento de los **números p-ádicos**—, sus fundamentos matemáticos y el profundo impacto que han tenido en las matemáticas modernas.
+Su descubrimiento sirvió como un puente que conectaba las perspectivas "local" y "global" en matemáticas, provocando un cambio de paradigma en las matemáticas del siglo XX. Este artículo ofrece una exploración detallada de la vida de [Kurt Hensel](https://kenji.blog/p/hensel/), su mayor logro —el descubrimiento de los **números p-ádicos**—, sus fundamentos matemáticos y el profundo impacto que han tenido en las matemáticas modernas.
 
 ## 2. Linaje notable y primeros años
 
-Kurt Hensel nació el 29 de diciembre de 1861 en Königsberg, Prusia Oriental (hoy Kaliningrado, Rusia). Su familia ocupa un lugar muy significativo en la historia intelectual y artística de Alemania.
+[Kurt Hensel](https://kenji.blog/p/hensel/) nació el 29 de diciembre de 1861 en Königsberg, Prusia Oriental (hoy Kaliningrado, Rusia). Su familia ocupa un lugar muy significativo en la historia intelectual y artística de Alemania.
 
-Su abuelo fue el famoso pintor **Wilhelm Hensel**, y su abuela fue la destacada pianista y compositora **Fanny Mendelssohn** (hermana del famoso compositor Felix Mendelssohn). Yendo más atrás, su bisabuelo fue el filósofo representativo de la Ilustración, **Moses Mendelssohn**. Se puede decir que este entorno familiar, cultural e intelectualmente rico, fomentó el pensamiento libre y creativo de Kurt Hensel.
+Su abuelo fue el famoso pintor **Wilhelm Hensel**, y su abuela fue la destacada pianista y compositora **Fanny Mendelssohn** (hermana del famoso compositor Felix Mendelssohn). Yendo más atrás, su bisabuelo fue el filósofo representativo de la Ilustración, **Moses Mendelssohn**. Se puede decir que este entorno familiar, cultural e intelectualmente rico, fomentó el pensamiento libre y creativo de [Kurt Hensel](https://kenji.blog/p/hensel/).
 
 Cuando era joven, su familia se mudó a Berlín, donde recibió una educación primaria y secundaria de alta calidad. Su talento para las matemáticas floreció temprano, llevándolo de manera natural al camino de la investigación matemática en la universidad.
 
 ## 3. Época universitaria y la influencia de Kronecker
 
-Hensel estudió matemáticas en las Universidades de Bonn y Berlín. En ese momento, la Universidad de Berlín era uno de los centros mundiales para la investigación matemática, con gigantes como **Karl Weierstrass** y **Leopold Kronecker** enseñando allí.
+Hensel estudió matemáticas en las Universidades de Bonn y Berlín. En ese momento, la Universidad de Berlín era uno de los centros mundiales para la investigación matemática, con gigantes como **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** y **Leopold Kronecker** enseñando allí.
 
 Entre ellos, Kronecker tuvo la influencia más profunda en Hensel. Como se sabe por su famosa cita: "Dios hizo los números enteros, todo lo demás es obra del hombre", Kronecker sostenía una firme creencia de que todas las matemáticas debían reconstruirse rigurosamente sobre la base de los números enteros. Bajo la guía de Kronecker, Hensel se dedicó profundamente al álgebra y a la teoría de números.
 
@@ -140,18 +140,18 @@ Los conceptos de Hensel fueron refinados aún más por otros matemáticos.
 
 En 1916, Alexander Ostrowski probó el **Teorema de Ostrowski**. Este es el hecho sorprendente de que "todo valor absoluto no trivial en el cuerpo de los números racionales es equivalente ya sea al valor absoluto usual o al valor absoluto p-ádico para algún número primo $p$". Así, reuniendo los números reales y todos los números p-ádicos, se cubren "exhaustivamente" todas las posibilidades de completar los números racionales.
 
-Además, el estudiante de Hensel, **Helmut Hasse**, estableció el **Principio Local-Global** (Principio de Hasse). Este es un hermoso teorema que establece que "una condición necesaria y suficiente para que una ecuación tenga una solución sobre los números racionales (globalmente) es que tenga una solución sobre los números reales y los números p-ádicos para todos los números primos $p$ (localmente)". Con esto, los números p-ádicos aseguraron una posición inquebrantable como herramientas esenciales en la teoría de números.
+Además, el estudiante de Hensel, **[Helmut Hasse](https://kenji.blog/p/hasse/)**, estableció el **Principio Local-Global** (Principio de Hasse). Este es un hermoso teorema que establece que "una condición necesaria y suficiente para que una ecuación tenga una solución sobre los números racionales (globalmente) es que tenga una solución sobre los números reales y los números p-ádicos para todos los números primos $p$ (localmente)". Con esto, los números p-ádicos aseguraron una posición inquebrantable como herramientas esenciales en la teoría de números.
 
 ## 8. Contribuciones como educador y editor, y legado
 
 Hensel hizo enormes contribuciones no solo como investigador sino también como educador y editor. Desde 1901 y durante muchos años, se desempeñó como redactor jefe del "Crelle's Journal" (oficialmente: Journal für die reine und angewandte Mathematik), una de las revistas de matemáticas más antiguas del mundo, apoyando la difusión de investigaciones matemáticas de vanguardia de su tiempo.
 
-Sus clases eran claras y apasionadas, nutriendo a la próxima generación de brillantes matemáticos, incluyendo a Helmut Hasse.
+Sus clases eran claras y apasionadas, nutriendo a la próxima generación de brillantes matemáticos, incluyendo a [Helmut Hasse](https://kenji.blog/p/hasse/).
 
-Hoy en día, los números p-ádicos se aplican en una amplia gama de campos más allá de la teoría algebraica de números, incluyendo el **análisis p-ádico**, la **teoría de Hodge p-ádica**, e incluso la **mecánica cuántica p-ádica** en física teórica. La histórica demostración del "Último Teorema de Fermat" por Andrew Wiles hubiera sido imposible sin la teoría de los números p-ádicos.
+Hoy en día, los números p-ádicos se aplican en una amplia gama de campos más allá de la teoría algebraica de números, incluyendo el **análisis p-ádico**, la **teoría de Hodge p-ádica**, e incluso la **mecánica cuántica p-ádica** en física teórica. La histórica demostración del "Último Teorema de Fermat" por [Andrew Wiles](https://kenji.blog/p/wiles/) hubiera sido imposible sin la teoría de los números p-ádicos.
 
 ## 9. Conclusión
 
-A partir de la hermosa analogía entre funciones y números, Kurt Hensel aportó una dimensión completamente nueva al mundo de las matemáticas con los **números p-ádicos**. Su enfoque de "entender lo global observando lo local" se convirtió en una de las filosofías fundamentales de las matemáticas desde el siglo XX en adelante.
+A partir de la hermosa analogía entre funciones y números, [Kurt Hensel](https://kenji.blog/p/hensel/) aportó una dimensión completamente nueva al mundo de las matemáticas con los **números p-ádicos**. Su enfoque de "entender lo global observando lo local" se convirtió en una de las filosofías fundamentales de las matemáticas desde el siglo XX en adelante.
 
 Sus ricas y originales ideas continúan inspirando a los matemáticos de todo el mundo que hoy en día buscan las verdades de los números y del mundo natural.

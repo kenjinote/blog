@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. 引言：素数这一宇宙奥秘与黎曼猜想
 
-“素数（Prime Numbers）”是只能被1和自身整除的自然数，在数学世界中被称为“原子”。2, 3, 5, 7, 11, 13... 这串数列乍看之下显得杂乱无章、随机出现。自从古希腊数学家欧几里得证明“素数有无限多个”以来，无数数学家试图解开隐藏在素数排列中的规律。
+“素数（Prime Numbers）”是只能被1和自身整除的自然数，在数学世界中被称为“原子”。2, 3, 5, 7, 11, 13... 这串数列乍看之下显得杂乱无章、随机出现。自从古希腊数学家[欧几里得](https://kenji.blog/p/euclid/)证明“素数有无限多个”以来，无数数学家试图解开隐藏在素数排列中的规律。
 
-在探索素数之谜的道路上，最接近真相的是1859年由德国数学家波恩哈德·黎曼（Bernhard Riemann）提出的 **“黎曼猜想（Riemann Hypothesis）”** 。黎曼猜想是现代数学中最重要且未解决的难题之一，也是克雷数学研究所设立的千禧年大奖难题之一，悬赏100万美元。
+在探索素数之谜的道路上，最接近真相的是1859年由德国数学家[波恩哈德·黎曼](https://kenji.blog/p/riemann/)（[Bernhard Riemann](https://kenji.blog/p/riemann/)）提出的 **“黎曼猜想（Riemann Hypothesis）”** 。黎曼猜想是现代数学中最重要且未解决的难题之一，也是克雷数学研究所设立的千禧年大奖难题之一，悬赏100万美元。
 
 乍看之下，关于素数分布的纯数学难题似乎与我们的日常生活毫不相干。然而，支撑现代社会基础设施的互联网安全，尤其是 **RSA加密和椭圆曲线密码学（ECC）等现代密码技术** ，都深深依赖于巨大素数的性质。
 
@@ -30,13 +30,13 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-15岁的天才数学家卡尔·弗里德里希·高斯（Carl Friedrich Gauss）计算了庞大的素数表，并发现素数出现的频率与自然对数 $\ln x$ 成反比而递减。也就是说，他推测在一个数 $x$ 附近找到素数的概率大约是 $\frac{1}{\ln x}$。
+15岁的天才数学家[卡尔·弗里德里希·高斯](https://kenji.blog/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/p/gauss/)）计算了庞大的素数表，并发现素数出现的频率与自然对数 $\ln x$ 成反比而递减。也就是说，他推测在一个数 $x$ 附近找到素数的概率大约是 $\frac{1}{\ln x}$。
 
 用积分来表达这个推测，就得到了 **对数积分（Logarithmic integral）** $\text{Li}(x)$：
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-高斯的猜想后来在1896年由雅克·阿达马和夏尔-让·德拉瓦莱·普桑分别独立证明，确立为 **素数定理（Prime Number Theorem, PNT）** 。
+高斯的猜想后来在1896年由雅克·阿达马和夏尔-让·德拉瓦莱·普桑分别独立证明，确立为 **素数定理（[Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT）** 。
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. 黎曼zeta函数与欧拉乘积
 
-分析素数分布最强大的武器是 **黎曼zeta函数（Riemann Zeta Function）** 。它最初是由莱昂哈德·欧拉（Leonhard Euler）针对实数 $s > 1$ 定义的无穷级数。
+分析素数分布最强大的武器是 **黎曼zeta函数（Riemann Zeta Function）** 。它最初是由[莱昂哈德·欧拉](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）针对实数 $s > 1$ 定义的无穷级数。
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -74,7 +74,7 @@ $$ \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}} = \left( \frac{1}{1 -
 
 $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s) $$
 
-这里的 $\Gamma(x)$ 是伽玛函数。通过这个方程，可以从右半平面的性质得知左半平面的性质。
+这里的 $\Gamma(x)$ 是[伽玛函数](https://kenji.blog/p/gamma-function/)。通过这个方程，可以从右半平面的性质得知左半平面的性质。
 
 ### 零点（Zeros of the Zeta Function）
 使zeta函数值为0的复数 $s$ 被称为“零点”。
@@ -184,7 +184,7 @@ graph LR
 黎曼猜想的证明本身，并不会直接产生一种能让质因数分解戏剧性加速的魔法算法。因为黎曼猜想终究是关于素数“宏观分布规律性”的定理，并不能直接告诉我们个别的数字 $N$ 能被哪个素数整除（局部性质）。
 
 然而，影响并非为零。
-因为在证明黎曼猜想的过程中， **极有可能发现“新的数学工具”或“未知的分析方法”** 。回顾历史，当费马大定理或庞加莱猜想被证明时，在这个过程中发展出的新理论让整个数学界实现了巨大的飞跃。
+因为在证明黎曼猜想的过程中， **极有可能发现“新的数学工具”或“未知的分析方法”** 。回顾历史，当[费马大定理](https://kenji.blog/p/fermats-last-theorem/)或[庞加莱猜想](https://kenji.blog/p/poincare-conjecture/)被证明时，在这个过程中发展出的新理论让整个数学界实现了巨大的飞跃。
 
 如果确立了某种能够完全操控黎曼zeta函数零点性质的未知代数几何学方法或非交换几何学方法，那么这可能会导致发现具有突破性的质因数分解算法（例如将计算复杂度降低到多项式时间的经典算法），这种可能性是无法否认的。正因如此，密码学家们绝对无法将视线从黎曼猜想的动向上移开。
 

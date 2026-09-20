@@ -8,7 +8,7 @@ categories: ["mathematics", "science"]
 tags: ["Geometrie", "Gauss", "Pizza-Theorem", "Theorema Egregium", "Differentialgeometrie"]
 ---
 
-In der Welt der Mathematik können auf den ersten Blick abstrakt und schwer verständlich wirkende Konzepte an unerwarteten Stellen in unserem Alltag nützlich sein. Eines der besten Beispiele hierfür ist das von Carl Friedrich Gauss entdeckte ** Theorema Egregium ** (Bemerkenswerter Lehrsatz). Dieser Satz ist als eines der wichtigsten und schönsten Ergebnisse im Bereich der Differentialgeometrie bekannt.
+In der Welt der Mathematik können auf den ersten Blick abstrakt und schwer verständlich wirkende Konzepte an unerwarteten Stellen in unserem Alltag nützlich sein. Eines der besten Beispiele hierfür ist das von [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) entdeckte ** Theorema Egregium ** (Bemerkenswerter Lehrsatz). Dieser Satz ist als eines der wichtigsten und schönsten Ergebnisse im Bereich der Differentialgeometrie bekannt.
 
 In diesem Artikel werden wir tief eintauchen, beginnend mit der mathematischen Bedeutung dieses ** Theorema Egregium **, über die Frage, was eine gekrümmte Fläche ist, bis hin dazu, warum uns dieses Theorem enorm hilft, wenn wir Pizza essen.
 
@@ -92,10 +92,10 @@ Nicht nur beim Pizza-Essen, sondern auch in der Ingenieurwissenschaft, der Archi
 - ** Pflanzenblätter **: Die Blätter und Blütenblätter vieler Pflanzen haben sich natürlicherweise zu gewellten Formen entwickelt, um Wind und ihrem eigenen Gewicht standzuhalten.
 - ** Gebäude **: Bei Bauwerken, die große Räume mit dünnen Materialien überdachen, wie Schalenstrukturen, werden die mechanische Festigkeit und die geometrischen Eigenschaften gekrümmter Flächen genutzt.
 
-Dieses von Gauss entdeckte Theorem wurde später von seinem Schüler Bernhard Riemann auf höherdimensionale Mannigfaltigkeiten erweitert (Riemannsche Geometrie) und bildete schließlich die mathematische Grundlage in Albert Einsteins allgemeiner Relativitätstheorie, um die Schwerkraft als „Krümmung der Raumzeit“ zu beschreiben.
+Dieses von Gauss entdeckte Theorem wurde später von seinem Schüler [Bernhard Riemann](https://kenji.blog/p/riemann/) auf höherdimensionale Mannigfaltigkeiten erweitert (Riemannsche Geometrie) und bildete schließlich die mathematische Grundlage in Albert Einsteins allgemeiner Relativitätstheorie, um die Schwerkraft als „Krümmung der Raumzeit“ zu beschreiben.
 
 ## 5. Fazit
 
 Hinter unserer unbewussten Handlung, „den Rand der Pizza zu falten“, verbarg sich ein tiefes und schönes mathematisches Gesetz, das bis zu Einsteins Kosmologie reicht.
 
-Das ** Theorema Egregium ** ist wohl das leckerste und verständlichste Beispiel dafür, wie abstrakte Mathematik die reale Welt beherrscht. Wenn Sie das nächste Mal Pizza essen, denken Sie an Carl Friedrich Gauss und seine großartige Entdeckung, während Sie ein perfekt gefaltetes Stück genießen.
+Das ** Theorema Egregium ** ist wohl das leckerste und verständlichste Beispiel dafür, wie abstrakte Mathematik die reale Welt beherrscht. Wenn Sie das nächste Mal Pizza essen, denken Sie an [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) und seine großartige Entdeckung, während Sie ein perfekt gefaltetes Stück genießen.

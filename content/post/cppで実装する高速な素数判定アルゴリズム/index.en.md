@@ -52,11 +52,11 @@ The time complexity of this algorithm is $O(\sqrt{N})$. If $N \le 10^{12}$, it c
 
 # 2. Fermat's Primality Test: The Dawn of Probabilistic Primality Testing
 
-To break through the limitations of trial division, "Probabilistic Algorithms" using theorems from number theory were devised. A prime example is the "Fermat Primality Test," which utilizes Fermat's Little Theorem.
+To break through the limitations of trial division, "Probabilistic Algorithms" using theorems from number theory were devised. A prime example is the "Fermat Primality Test," which utilizes [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/).
 
-## Fermat's Little Theorem
+## [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)
 
-This theorem, discovered by Pierre de Fermat, states the following:
+This theorem, discovered by [Pierre de Fermat](https://kenji.blog/p/fermat/), states the following:
 
 > For any prime $p$ and any integer $a$ that is coprime to $p$ (not a multiple of $p$), the following congruence holds:
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -98,13 +98,13 @@ Currently, it is the most widely used practical fast primality testing algorithm
 
 ## Mathematical Principles
 
-The Miller-Rabin algorithm uses Fermat's Little Theorem along with the property that "in a residue field modulo a prime ($\mathbb{Z}/p\mathbb{Z}$), the only solutions to $x^2 \equiv 1 \pmod p$ are $x \equiv 1$ or $x \equiv -1$" (if modulo a composite number, other non-trivial square roots may exist).
+The Miller-Rabin algorithm uses [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) along with the property that "in a residue field modulo a prime ($\mathbb{Z}/p\mathbb{Z}$), the only solutions to $x^2 \equiv 1 \pmod p$ are $x \equiv 1$ or $x \equiv -1$" (if modulo a composite number, other non-trivial square roots may exist).
 
 Subtracting $1$ from the odd number $N$ you want to test always results in an even number, $N-1$. We divide $N-1$ by $2$ as many times as possible and express it in the following form:
 $$ N-1 = d \cdot 2^s $$
 (Where $d$ is odd and $s \ge 1$)
 
-For any base $a$ ($1 < a < N-1$), we verify whether $a^{N-1} \equiv 1 \pmod N$ according to Fermat's Little Theorem, but we perform the calculation in steps.
+For any base $a$ ($1 < a < N-1$), we verify whether $a^{N-1} \equiv 1 \pmod N$ according to [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/), but we perform the calculation in steps.
 Specifically, we repeatedly square it in the order of $a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$.
 
 The conditions for the Miller-Rabin test to determine that $N$ is "prime (or probably prime with a high probability)" are that **either** of the following holds true:

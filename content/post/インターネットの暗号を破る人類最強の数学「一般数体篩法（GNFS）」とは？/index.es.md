@@ -67,7 +67,7 @@ Con solo el número primo $p$ entrando en la habitación de $(X - Y)$, calculemo
 * Contenido de $N$ = $p \times q$
   ¡La única pieza común es **"$p$"**!
 
-Es decir, en el momento en que se calcula el máximo común divisor, el número primo oculto $p$ cae, ¡y el cifrado se descifra por completo! (*El máximo común divisor se puede calcular en un instante incluso en un teléfono inteligente si usas el "Algoritmo de Euclides").
+Es decir, en el momento en que se calcula el máximo común divisor, el número primo oculto $p$ cae, ¡y el cifrado se descifra por completo! (*El máximo común divisor se puede calcular en un instante incluso en un teléfono inteligente si usas el "Algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)").
 
 **[Breve columna: ¿Por qué al cuadrado? ¿No se puede al cubo o al doble?]**
 > Si es "$2X - 2Y$", se convierte en $2(X - Y)$ y como solo hay una habitación, no se pueden separar los números primos. Si es "$X^3 - Y^3$", el tamaño de las habitaciones se desequilibra y el cálculo se vuelve innecesariamente pesado. Para separar los números primos en dos, la opción más eficiente que se divide bellamente en dos habitaciones es "al cuadrado".

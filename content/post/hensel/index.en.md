@@ -10,21 +10,21 @@ tags: ["Kurt Hensel", "p-adic numbers", "algebraic number theory", "history of m
 
 ## 1. Introduction
 
-In modern number theory, particularly algebraic number theory and arithmetic geometry, **p-adic numbers** are an indispensable tool. This revolutionary concept was introduced at the end of the 19th century by the German mathematician **Kurt Hensel** (1861–1941).
+In modern number theory, particularly algebraic number theory and arithmetic geometry, **p-adic numbers** are an indispensable tool. This revolutionary concept was introduced at the end of the 19th century by the German mathematician **[Kurt Hensel](https://kenji.blog/p/hensel/)** (1861–1941).
 
-His discovery served as a bridge connecting the "local" and "global" perspectives in mathematics, bringing about a paradigm shift in 20th-century mathematics. This article provides a detailed exploration of Kurt Hensel's life, his greatest achievement—the discovery of **p-adic numbers**—their mathematical foundations, and the profound impact they have had on modern mathematics.
+His discovery served as a bridge connecting the "local" and "global" perspectives in mathematics, bringing about a paradigm shift in 20th-century mathematics. This article provides a detailed exploration of [Kurt Hensel](https://kenji.blog/p/hensel/)'s life, his greatest achievement—the discovery of **p-adic numbers**—their mathematical foundations, and the profound impact they have had on modern mathematics.
 
 ## 2. Remarkable Lineage and Early Life
 
-Kurt Hensel was born on December 29, 1861, in Königsberg, East Prussia (now Kaliningrad, Russia). His family holds a highly significant place in the intellectual and artistic history of Germany.
+[Kurt Hensel](https://kenji.blog/p/hensel/) was born on December 29, 1861, in Königsberg, East Prussia (now Kaliningrad, Russia). His family holds a highly significant place in the intellectual and artistic history of Germany.
 
-His grandfather was the famous painter **Wilhelm Hensel**, and his grandmother was the outstanding pianist and composer **Fanny Mendelssohn** (the sister of the famous composer Felix Mendelssohn). Going back further, his great-grandfather was the representative philosopher of the Enlightenment, **Moses Mendelssohn**. It can be said that this culturally and intellectually rich family environment fostered Kurt Hensel's free and creative thinking.
+His grandfather was the famous painter **Wilhelm Hensel**, and his grandmother was the outstanding pianist and composer **Fanny Mendelssohn** (the sister of the famous composer Felix Mendelssohn). Going back further, his great-grandfather was the representative philosopher of the Enlightenment, **Moses Mendelssohn**. It can be said that this culturally and intellectually rich family environment fostered [Kurt Hensel](https://kenji.blog/p/hensel/)'s free and creative thinking.
 
 When he was young, his family moved to Berlin, where he received high-quality primary and secondary education. His talent for mathematics blossomed early, leading him naturally to the path of mathematical research at the university level.
 
 ## 3. University Days and Kronecker's Influence
 
-Hensel studied mathematics at the Universities of Bonn and Berlin. At the time, the University of Berlin was one of the world's centers for mathematical research, with giants such as **Karl Weierstrass** and **Leopold Kronecker** teaching there.
+Hensel studied mathematics at the Universities of Bonn and Berlin. At the time, the University of Berlin was one of the world's centers for mathematical research, with giants such as **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** and **Leopold Kronecker** teaching there.
 
 Among them, Kronecker had the deepest influence on Hensel. As known from his famous quote, "God made the integers, all else is the work of man," Kronecker held a strong belief that all mathematics should be rigorously reconstructed based on integers. Under Kronecker's guidance, Hensel devoted himself deeply to algebra and number theory.
 
@@ -140,18 +140,18 @@ Hensel's concepts were further refined by other mathematicians.
 
 In 1916, Alexander Ostrowski proved **Ostrowski's Theorem**. This is the surprising fact that "every non-trivial absolute value on the field of rational numbers is equivalent to either the usual absolute value or the p-adic absolute value for some prime number $p$." Thus, gathering the real numbers and all the p-adic numbers "exhaustively covers" all possibilities of completing the rational numbers.
 
-Furthermore, Hensel's student **Helmut Hasse** established the **Local-Global Principle** (Hasse Principle). This is a beautiful theorem stating that "a necessary and sufficient condition for an equation to have a solution over the rational numbers (globally) is that it has a solution over the real numbers and the p-adic numbers for all primes $p$ (locally)." With this, p-adic numbers secured an unshakable position as essential tools in number theory.
+Furthermore, Hensel's student **[Helmut Hasse](https://kenji.blog/p/hasse/)** established the **Local-Global Principle** (Hasse Principle). This is a beautiful theorem stating that "a necessary and sufficient condition for an equation to have a solution over the rational numbers (globally) is that it has a solution over the real numbers and the p-adic numbers for all primes $p$ (locally)." With this, p-adic numbers secured an unshakable position as essential tools in number theory.
 
 ## 8. Contributions as an Educator and Editor, and Legacy
 
 Hensel made tremendous contributions not only as a researcher but also as an educator and editor. From 1901 for many years, he served as the editor-in-chief of "Crelle's Journal" (officially: Journal für die reine und angewandte Mathematik), one of the world's oldest mathematics journals, supporting the dissemination of cutting-edge mathematical research of his time.
 
-His lectures were clear and passionate, nurturing the next generation of brilliant mathematicians, including Helmut Hasse.
+His lectures were clear and passionate, nurturing the next generation of brilliant mathematicians, including [Helmut Hasse](https://kenji.blog/p/hasse/).
 
-Today, p-adic numbers are applied in a wide range of fields beyond algebraic number theory, including **p-adic analysis**, **p-adic Hodge theory**, and even **p-adic quantum mechanics** in theoretical physics. Andrew Wiles' historic proof of "[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)" would have been impossible without the theory of p-adic numbers.
+Today, p-adic numbers are applied in a wide range of fields beyond algebraic number theory, including **p-adic analysis**, **p-adic Hodge theory**, and even **p-adic quantum mechanics** in theoretical physics. [Andrew Wiles](https://kenji.blog/p/wiles/)' historic proof of "[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)" would have been impossible without the theory of p-adic numbers.
 
 ## 9. Conclusion
 
-Starting from the beautiful analogy between functions and numbers, Kurt Hensel brought an entirely new dimension to the world of mathematics with **p-adic numbers**. His approach of "understanding the global by looking locally" became one of the fundamental philosophies of mathematics from the 20th century onwards.
+Starting from the beautiful analogy between functions and numbers, [Kurt Hensel](https://kenji.blog/p/hensel/) brought an entirely new dimension to the world of mathematics with **p-adic numbers**. His approach of "understanding the global by looking locally" became one of the fundamental philosophies of mathematics from the 20th century onwards.
 
 His rich and original ideas continue to inspire mathematicians worldwide who seek the truths of numbers and the natural world today.

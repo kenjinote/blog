@@ -8,18 +8,18 @@ categories: ["Mathématiques", "Biographie"]
 tags: ["Euclide", "Géométrie", "Histoire des mathématiques", "Grèce antique", "Éléments", "Algorithme d'Euclide"]
 ---
 
-Lorsque l'on parle de l'histoire des mathématiques, il y a une étoile géante que l'on ne peut ignorer. Il s'agit de l'ancien mathématicien grec **Euclide**. Également connu sous le nom de « Père de la géométrie », il fut le pionnier qui établit les mathématiques comme un système logique. Dans cet article, nous plongerons dans les épisodes de la vie d'Euclide, le contenu de son chef-d'œuvre historique « Éléments », et les importantes réalisations mathématiques qu'il a laissées derrière lui.
+Lorsque l'on parle de l'histoire des mathématiques, il y a une étoile géante que l'on ne peut ignorer. Il s'agit de l'ancien mathématicien grec **[Euclide](https://kenji.blog/p/euclid/)**. Également connu sous le nom de « Père de la géométrie », il fut le pionnier qui établit les mathématiques comme un système logique. Dans cet article, nous plongerons dans les épisodes de la vie d'[Euclide](https://kenji.blog/p/euclid/), le contenu de son chef-d'œuvre historique « Éléments », et les importantes réalisations mathématiques qu'il a laissées derrière lui.
 
-## La vie et les épisodes d'Euclide
+## La vie et les épisodes d'[Euclide](https://kenji.blog/p/euclid/)
 
-En ce qui concerne la vie d'Euclide (vers 300 av. J.-C.), il reste en fait très peu de documents historiques définitifs. Le lieu de sa naissance et le type de vie qu'il a mené ne peuvent être déduits que des descriptions fragmentaires des érudits des époques ultérieures. Cependant, il est largement connu qu'il fut actif à **Alexandrie**, en Égypte, et qu'il dirigea une école de mathématiques sous le règne de Ptolémée Ier.
+En ce qui concerne la vie d'[Euclide](https://kenji.blog/p/euclid/) (vers 300 av. J.-C.), il reste en fait très peu de documents historiques définitifs. Le lieu de sa naissance et le type de vie qu'il a mené ne peuvent être déduits que des descriptions fragmentaires des érudits des époques ultérieures. Cependant, il est largement connu qu'il fut actif à **Alexandrie**, en Égypte, et qu'il dirigea une école de mathématiques sous le règne de Ptolémée Ier.
 
 ### « Il n'y a pas de voie royale en géométrie »
 
-L'un des épisodes les plus célèbres liés à Euclide est son interaction avec le roi égyptien Ptolémée Ier.
-Le roi essaya d'étudier le livre « Éléments » d'Euclide, mais parce que son contenu était trop difficile et long, il demanda à Euclide :
+L'un des épisodes les plus célèbres liés à [Euclide](https://kenji.blog/p/euclid/) est son interaction avec le roi égyptien Ptolémée Ier.
+Le roi essaya d'étudier le livre « Éléments » d'[Euclide](https://kenji.blog/p/euclid/), mais parce que son contenu était trop difficile et long, il demanda à [Euclide](https://kenji.blog/p/euclid/) :
 « N'y a-t-il pas un chemin plus court ou plus facile pour apprendre la géométrie ? »
-À cela, on dit qu'Euclide aurait répondu fermement :
+À cela, on dit qu'[Euclide](https://kenji.blog/p/euclid/) aurait répondu fermement :
 
 > « Sire, il n'y a pas de voie royale en géométrie. »
 
@@ -27,7 +27,7 @@ Cette phrase touche à la vérité qu'il n'y a pas de raccourcis ou de privilèg
 
 ## Le plus grand best-seller de l'histoire : « Éléments »
 
-L'accomplissement le plus grand et le plus durable d'Euclide est la compilation du livre de mathématiques **« Éléments »**, composé de 13 volumes. Ce livre est une compilation des connaissances mathématiques de la Grèce antique et est considéré comme le livre le plus publié au monde après la Bible.
+L'accomplissement le plus grand et le plus durable d'[Euclide](https://kenji.blog/p/euclid/) est la compilation du livre de mathématiques **« Éléments »**, composé de 13 volumes. Ce livre est une compilation des connaissances mathématiques de la Grèce antique et est considéré comme le livre le plus publié au monde après la Bible.
 
 L'aspect révolutionnaire des « Éléments » est qu'il a établi une **approche axiomatique**, plutôt que de simplement énumérer des théorèmes individuels. La méthode consistant à partir de quelques prémisses évidentes (axiomes et postulats) et à prouver tous les théorèmes uniquement par déduction logique a déterminé le cours futur des mathématiques et de la science.
 
@@ -49,15 +49,15 @@ Dans le premier volume des « Éléments », cinq postulats (prémisses géomét
 
 « Si une droite tombant sur deux droites fait les angles intérieurs du même côté plus petits que deux droits, les deux droites, prolongées à l'infini, se rencontreront du côté où les angles sont plus petits que deux droits. »
 
-Ce postulat était plus complexe que les quatre autres, et de nombreux mathématiciens ont soupçonné : « N'est-ce pas un théorème qui peut être prouvé à partir des autres postulats, plutôt qu'un postulat en soi ? » Les tentatives pour le prouver s'étalant sur des milliers d'années se sont toutes soldées par un échec. Cependant, au XIXe siècle, la **Géométrie non euclidienne**, une géométrie dans laquelle le cinquième postulat ne tient pas, a finalement été découverte, apportant une révolution dans le monde mathématique. On peut dire que cet événement a paradoxalement prouvé la finesse de l'intuition d'Euclide.
+Ce postulat était plus complexe que les quatre autres, et de nombreux mathématiciens ont soupçonné : « N'est-ce pas un théorème qui peut être prouvé à partir des autres postulats, plutôt qu'un postulat en soi ? » Les tentatives pour le prouver s'étalant sur des milliers d'années se sont toutes soldées par un échec. Cependant, au XIXe siècle, la **Géométrie non euclidienne**, une géométrie dans laquelle le cinquième postulat ne tient pas, a finalement été découverte, apportant une révolution dans le monde mathématique. On peut dire que cet événement a paradoxalement prouvé la finesse de l'intuition d'[Euclide](https://kenji.blog/p/euclid/).
 
-## Les grandes réalisations mathématiques d'Euclide
+## Les grandes réalisations mathématiques d'[Euclide](https://kenji.blog/p/euclid/)
 
-Euclide a laissé des réalisations exceptionnelles non seulement en géométrie mais aussi dans le domaine de la théorie des nombres. Nous présentons ici deux réalisations particulièrement célèbres.
+[Euclide](https://kenji.blog/p/euclid/) a laissé des réalisations exceptionnelles non seulement en géométrie mais aussi dans le domaine de la théorie des nombres. Nous présentons ici deux réalisations particulièrement célèbres.
 
-### 1. Algorithme d'Euclide
+### 1. Algorithme d'[Euclide](https://kenji.blog/p/euclid/)
 
-L'**Algorithme d'Euclide** est un algorithme permettant de trouver efficacement le plus grand commun diviseur (PGCD) de deux nombres entiers naturels. Il est également qualifié de l'un des plus anciens algorithmes de l'histoire humaine.
+L'**Algorithme d'[Euclide](https://kenji.blog/p/euclid/)** est un algorithme permettant de trouver efficacement le plus grand commun diviseur (PGCD) de deux nombres entiers naturels. Il est également qualifié de l'un des plus anciens algorithmes de l'histoire humaine.
 
 Soit le plus grand commun diviseur de deux nombres entiers naturels $a$ et $b$ (où $a > b$) noté $\gcd(a, b)$. Si le quotient de la division de $a$ par $b$ est $q$ et le reste est $r$, la relation suivante s'applique :
 
@@ -71,7 +71,7 @@ En répétant ce processus jusqu'à ce que le reste $r$ devienne $0$, le plus gr
 
 ### 2. Preuve de l'infinité des nombres premiers
 
-Dans le 9ème volume des « Éléments », Euclide a prouvé qu'il existe une infinité de nombres premiers en utilisant une preuve par l'absurde très belle et élégante.
+Dans le 9ème volume des « Éléments », [Euclide](https://kenji.blog/p/euclid/) a prouvé qu'il existe une infinité de nombres premiers en utilisant une preuve par l'absurde très belle et élégante.
 
 **Résumé de la preuve :**
 Supposons qu'il n'y ait qu'un nombre fini de nombres premiers, et que l'ensemble de tous les nombres premiers soit $p_1, p_2, \dots, p_n$.
@@ -84,8 +84,8 @@ Par conséquent, soit $P$ est lui-même un nouveau nombre premier, soit il est d
 Dans les deux cas, cela contredit l'hypothèse initiale selon laquelle « il n'y a qu'un nombre fini de nombres premiers ».
 Ainsi, il est prouvé que **les nombres premiers existent en nombre infini**.
 
-## Conclusion : L'héritage d'Euclide
+## Conclusion : L'héritage d'[Euclide](https://kenji.blog/p/euclid/)
 
-Les « Éléments » d'Euclide vont au-delà d'un simple manuel de mathématiques ; ils ont grandement influencé plus tard de grands scientifiques tels que Newton et Einstein en tant que matériel pédagogique ultime pour que l'humanité apprenne la pensée logique.
+Les « Éléments » d'[Euclide](https://kenji.blog/p/euclid/) vont au-delà d'un simple manuel de mathématiques ; ils ont grandement influencé plus tard de grands scientifiques tels que Newton et Einstein en tant que matériel pédagogique ultime pour que l'humanité apprenne la pensée logique.
 
-Le style qu'il a établi de « déduire logiquement des conclusions à partir de prémisses » s'est profondément enraciné au-delà du cadre des mathématiques, dans la philosophie, la science et le fondement de l'informatique moderne. Chaque fois que nous pensons logiquement aux choses, nous pouvons toujours sentir le souffle d'Euclide.
+Le style qu'il a établi de « déduire logiquement des conclusions à partir de prémisses » s'est profondément enraciné au-delà du cadre des mathématiques, dans la philosophie, la science et le fondement de l'informatique moderne. Chaque fois que nous pensons logiquement aux choses, nous pouvons toujours sentir le souffle d'[Euclide](https://kenji.blog/p/euclid/).

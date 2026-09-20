@@ -10,7 +10,7 @@ tags: ["Heisuke Hironaka", "Géométrie Algébrique", "Résolution des Singulari
 
 ## Introduction
 
- **Heisuke Hironaka** est un mathématicien japonais qui a laissé une marque révolutionnaire dans le monde mathématique à la fin du 20e siècle, en particulier dans le domaine de la géométrie algébrique. La médaille Fields qu'il a reçue en 1970 est la plus haute distinction en mathématiques, décernée pour sa solution à la « résolution des singularités d'une variété algébrique sur un corps de caractéristique zéro » — un problème monumental que tout le monde à l'époque considérait comme impossible.
+ **[Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/)** est un mathématicien japonais qui a laissé une marque révolutionnaire dans le monde mathématique à la fin du 20e siècle, en particulier dans le domaine de la géométrie algébrique. La médaille Fields qu'il a reçue en 1970 est la plus haute distinction en mathématiques, décernée pour sa solution à la « résolution des singularités d'une variété algébrique sur un corps de caractéristique zéro » — un problème monumental que tout le monde à l'époque considérait comme impossible.
 
 Dans cet article, nous plongeons profondément dans la vie dramatique de Hironaka, de son enfance à l'obtention de la médaille Fields, le contexte mathématique de son célèbre « Théorème de résolution des singularités », et la philosophie unique de la « créativité » qu'il a continuellement défendue.
 
@@ -103,4 +103,4 @@ Pour Hironaka, arriver à une impasse dans la réflexion (une singularité intel
 
 ## Conclusion
 
-Le théorème de résolution des singularités de Heisuke Hironaka a transformé le paysage de la géométrie algébrique et reste un outil indispensable dans divers domaines comme la théorie des supercordes. Face à des murs difficiles, son attitude consistant à « dénouer » les enchevêtrements complexes continue de fasciner de nombreuses personnes aujourd'hui.
+Le théorème de résolution des singularités de [Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/) a transformé le paysage de la géométrie algébrique et reste un outil indispensable dans divers domaines comme la théorie des supercordes. Face à des murs difficiles, son attitude consistant à « dénouer » les enchevêtrements complexes continue de fasciner de nombreuses personnes aujourd'hui.

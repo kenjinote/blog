@@ -13,7 +13,7 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 Na sociedade digital moderna, especialmente nas comunicações via Internet, a "criptografia" tornou-se uma tecnologia fundamental indispensável. O fato de podermos navegar na web de forma segura via HTTPS em nossos navegadores, realizar transações financeiras no internet banking e trocar mensagens privadas em aplicativos de mensagens é possível devido aos protocolos criptográficos apoiados por teorias matemáticas avançadas que operam nos bastidores. Entre eles, o sistema de "criptografia de chave pública" desempenha um papel particularmente importante, e seu principal representante é a **Criptografia RSA**.
 
-A segurança e a validade de muitos algoritmos criptográficos, incluindo o RSA, dependem fortemente de um teorema muito belo e poderoso descoberto pelo matemático francês do século 17, Pierre de Fermat. Esse é o **Pequeno Teorema de Fermat (Fermat's Little Theorem)**. Além disso, o teorema de Leonhard Euler, que generaliza isso, também desempenha um papel decisivo na teoria da criptografia.
+A segurança e a validade de muitos algoritmos criptográficos, incluindo o RSA, dependem fortemente de um teorema muito belo e poderoso descoberto pelo matemático francês do século 17, [Pierre de Fermat](https://kenji.blog/p/fermat/). Esse é o **Pequeno Teorema de Fermat ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**. Além disso, o teorema de [Leonhard Euler](https://kenji.blog/p/euler/), que generaliza isso, também desempenha um papel decisivo na teoria da criptografia.
 
 Neste artigo, explicaremos detalhadamente desde o básico como a descoberta do Pequeno Teorema de Fermat, na matemática pura, é aplicada às tecnologias de criptografia práticas modernas, em particular ao "teste de primalidade" e à "criptografia RSA". Este será um guia técnico muito detalhado que cobre provas matemáticas, os mecanismos de criptografia e descriptografia, e implementações de algoritmos específicos em C++ e Python.
 
@@ -52,9 +52,9 @@ Agora que entendemos os fundamentos da aritmética modular, vamos analisar o ass
 
 ### 3.1 Definição do Teorema
 
-O Pequeno Teorema de Fermat é formulado da seguinte maneira:
+[O Pequeno Teorema de Fermat](https://kenji.blog/p/fermats-little-theorem/) é formulado da seguinte maneira:
 
-> **Pequeno Teorema de Fermat (Fermat's Little Theorem)**
+> **Pequeno Teorema de Fermat ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**
 > Seja $p$ um número primo e $a$ um número inteiro que não seja um múltiplo de $p$ (ou seja, $a$ e $p$ são coprimos). Então, a seguinte congruência é válida:
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
@@ -112,7 +112,7 @@ Esta é a prova do Pequeno Teorema de Fermat.
 
 ## 4. A Função Totiente de Euler e o Teorema de Euler
 
-O Pequeno Teorema de Fermat é um teorema sobre um "número primo $p$", mas quem o generalizou para "qualquer inteiro positivo $n$" foi Leonhard Euler. Essa extensão é essencial para compreender a criptografia RSA.
+[O Pequeno Teorema de Fermat](https://kenji.blog/p/fermats-little-theorem/) é um teorema sobre um "número primo $p$", mas quem o generalizou para "qualquer inteiro positivo $n$" foi [Leonhard Euler](https://kenji.blog/p/euler/). Essa extensão é essencial para compreender a criptografia RSA.
 
 ### 4.1 Função Totiente de Euler $\phi(n)$
 
@@ -317,7 +317,7 @@ Abaixo, explicaremos os passos matemáticos detalhados.
 4. Escolhe um número inteiro $e$ (expoente público) que seja coprimo com $\phi(N)$ (geralmente $e = 65537$ é usado).
 5. Calcula o inverso modular $d$ (expoente privado) de $e$. Ou seja, encontra $d$ que satisfaça o seguinte:
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   Para esse cálculo, o **Algoritmo de Euclides Estendido** é usado.
+   Para esse cálculo, o **Algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) Estendido** é usado.
 
 Com isso, a **chave pública é $(N, e)$** e a **chave privada é $(N, d)$**. (Eles descartam imediatamente ou ocultam estritamente $p, q, \phi(N)$).
 
@@ -369,7 +369,7 @@ $M$ foi perfeitamente restaurado! As propriedades dos números que Fermat e Eule
 
 Uma vez que é difícil ter uma noção de como isso funciona baseando-se apenas na teoria, vamos usar o Python para implementar o processo de geração de chaves, criptografia e descriptografia da criptografia RSA na prática. Esta é uma "implementação de brinquedo" educacional, mas a matemática subjacente é exatamente a mesma.
 
-O "Algoritmo de Euclides Estendido" para encontrar o inverso modular $d$ também será incluído na implementação.
+O "Algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) Estendido" para encontrar o inverso modular $d$ também será incluído na implementação.
 
 ```python
 import random
@@ -466,11 +466,11 @@ Quando você executa este código, você pode confirmar como a matriz de caracte
 
 ## 9. Conclusão: A Intersecção entre a Beleza da Matemática e a Praticidade
 
-Quando Pierre de Fermat descobriu este "pequeno teorema" no século 17, ninguém pensou que isso pudesse ser útil de alguma forma. O próprio Fermat conduziu suas pesquisas em teoria dos números com curiosidade puramente matemática.
+Quando [Pierre de Fermat](https://kenji.blog/p/fermat/) descobriu este "pequeno teorema" no século 17, ninguém pensou que isso pudesse ser útil de alguma forma. O próprio Fermat conduziu suas pesquisas em teoria dos números com curiosidade puramente matemática.
 
 No entanto, nos anos 1970, cerca de 300 anos depois, nos primórdios das redes de computadores, o teorema de Fermat fez um retorno dramático como uma tecnologia de criptografia essencial para estabelecer protocolos de comunicação seguros. A tecnologia do teste de primalidade baseada no Pequeno Teorema de Fermat e a Criptografia RSA, com base no Teorema de Euler, sustentam literalmente a infraestrutura moderna da internet.
 
-Até mesmo a mensagem no LINE que enviamos casualmente todos os dias e nossas compras na Amazon, estão todas dançando no topo desta simples e bela fórmula: $a^{p-1} \equiv 1 \pmod p$. O Pequeno Teorema de Fermat nos ensina que, não importa o quão abstrata seja a matemática, o momento em que ela for útil para a humanidade sem dúvida chegará algum dia.
+Até mesmo a mensagem no LINE que enviamos casualmente todos os dias e nossas compras na Amazon, estão todas dançando no topo desta simples e bela fórmula: $a^{p-1} \equiv 1 \pmod p$. [O Pequeno Teorema de Fermat](https://kenji.blog/p/fermats-little-theorem/) nos ensina que, não importa o quão abstrata seja a matemática, o momento em que ela for útil para a humanidade sem dúvida chegará algum dia.
 
 Ao aprender programação e teoria criptográfica, compreender a estrutura matemática em seus fundamentos será uma grande arma para o profundo entendimento do comportamento das bibliotecas fornecidas como caixas-pretas e para o design de sistemas mais seguros.
 

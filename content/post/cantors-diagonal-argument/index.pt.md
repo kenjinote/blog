@@ -12,7 +12,7 @@ tags: ["Cantor", "Argumento de Diagonalização", "Infinito", "Matemática", "Pr
 
 O conceito de "infinito" que pensamos no dia a dia significa literalmente que "não tem fim". Os números naturais ($1, 2, 3, \dots$) podem continuar a ser contados para sempre, portanto o seu número é infinito. Por outro lado, os números reais (todos os pontos numa reta numérica) também existem infinitamente.
 
-Intuitivamente, tendemos a pensar que "o infinito é o infinito, e ambos não têm fim da mesma forma", mas o matemático do século XIX Georg Cantor provou o fato surpreendente de que **"existem diferenças de tamanho (cardinalidade) no infinito"** .
+Intuitivamente, tendemos a pensar que "o infinito é o infinito, e ambos não têm fim da mesma forma", mas o matemático do século XIX [Georg Cantor](https://kenji.blog/p/cantor/) provou o fato surpreendente de que **"existem diferenças de tamanho (cardinalidade) no infinito"** .
 
 Neste artigo, explicaremos em detalhes que o conjunto dos números reais é "esmagadoramente maior" que o conjunto dos números naturais, usando o **Argumento de Diagonalização (Diagonal Argument)** , um método de prova inovador criado por Cantor.
 
@@ -158,7 +158,7 @@ Em conclusão, foi provado que **o conjunto de números reais não pode ter uma 
 
 ---
 
-## O Caminho para a Hipótese do Contínuo (Continuum Hypothesis)
+## O Caminho para a [Hipótese do Contínuo (Continuum Hypothesis)](https://kenji.blog/p/continuum-hypothesis/)
 
 O argumento de diagonalização de Cantor mostrou que existem "hierarquias" no infinito.
 Se a cardinalidade dos números naturais for expressa como $\aleph_0$, e a cardinalidade dos números reais como $\aleph_1$ ou $2^{\aleph_0}$, a seguinte relação é válida.
@@ -169,9 +169,9 @@ $$
 
 Aqui, Cantor enfrentou uma enorme questão. **"Existe um conjunto infinito com uma cardinalidade intermediária entre $\aleph_0$ e $2^{\aleph_0}$?"** 
 
-A hipótese de que "não existe cardinalidade intermediária" é chamada de **Hipótese do Contínuo (Continuum Hypothesis, CH)** . Cantor dedicou sua vida a prová-la, mas não conseguiu resolvê-la.
+A hipótese de que "não existe cardinalidade intermediária" é chamada de **Hipótese do Contínuo ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH)** . Cantor dedicou sua vida a prová-la, mas não conseguiu resolvê-la.
 
-Mais tarde, foi provado por Kurt Gödel e Paul Cohen que a hipótese do contínuo é **"indemonstrável e irrefutável (independente) no sistema axiomático atual da matemática (ZFC)"** . Esta é uma das descobertas mais profundas da matemática do século XX.
+Mais tarde, foi provado por [Kurt Gödel](https://kenji.blog/p/godel/) e Paul Cohen que a hipótese do contínuo é **"indemonstrável e irrefutável (independente) no sistema axiomático atual da matemática (ZFC)"** . Esta é uma das descobertas mais profundas da matemática do século XX.
 
 ---
 
@@ -183,4 +183,4 @@ O argumento de diagonalização de Cantor parece um quebra-cabeça simples à pr
 2. Até os números racionais, o tamanho é o mesmo dos números naturais (infinito enumerável).
 3. Ao deslocar a diagonal para criar novos números, prova-se que os números reais são mais numerosos do que os números naturais (infinitos não enumeráveis).
 
-A beleza desta lógica contraintuitiva, porém absoluta, pode ser considerada o maior encanto da disciplina da matemática. O argumento de diagonalização seria posteriormente aplicado a teorias que formam o núcleo da ciência da computação e da lógica matemática, como o problema da parada de Alan Turing e a prova do teorema da incompletude de Gödel.
+A beleza desta lógica contraintuitiva, porém absoluta, pode ser considerada o maior encanto da disciplina da matemática. O argumento de diagonalização seria posteriormente aplicado a teorias que formam o núcleo da ciência da computação e da lógica matemática, como o problema da parada de [Alan Turing](https://kenji.blog/p/turing/) e a prova do teorema da incompletude de Gödel.

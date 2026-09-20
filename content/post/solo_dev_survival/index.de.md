@@ -25,7 +25,7 @@ Große Unternehmen zielen auf den Massenmarkt ab, bei dem der TAM (Total Address
 
 Im Gegensatz dazu liegt die Stärke von Einzelentwicklern in ihrem **"extrem niedrigen Break-Even-Punkt"**. Ein monatlicher Gewinn von einigen tausend Euro reicht oft aus, um als Einzelperson ein rentables Geschäft aufzubauen. Hier liegt der Sweet Spot der "Long-Tail-Theorie".
 
-## Das Zipfsche Gesetz (Zipf's Law) und die Marktverteilung
+## [Das Zipfsche Gesetz](https://kenji.blog/p/zipfs-law/) ([Zipf's Law](https://kenji.blog/p/zipfs-law/)) und die Marktverteilung
 
 Das Verhältnis zwischen Marktgröße und Anzahl der Märkte folgt oft dem Zipfschen Gesetz oder dem Pareto-Prinzip. Wenn der Rang eines Marktes $k$ ist und seine Marktgröße (Umsatzpotenzial) $P(k)$, kann es durch das folgende Potenzgesetzmodell dargestellt werden:
 

@@ -14,7 +14,7 @@ Dans cet article, nous allons expliquer en détail ce **problème des généraux
 
 ## 1. Qu'est-ce que le problème des généraux byzantins ?
 
-Le problème des généraux byzantins est une expérience de pensée sur la formation du consensus dans l'informatique distribuée, introduite en 1982 par Leslie Lamport et ses collègues.
+[Le problème des généraux byzantins](https://kenji.blog/p/byzantine-generals-problem/) est une expérience de pensée sur la formation du consensus dans l'informatique distribuée, introduite en 1982 par Leslie Lamport et ses collègues.
 
 ### Un exemple concret : Les généraux de l'Empire byzantin
 
@@ -181,4 +181,4 @@ $$
 
 Le **problème des généraux byzantins** est la théorie fondamentale qui garantit la fiabilité des systèmes distribués. La question « Comment prendre des décisions collectives correctes dans un environnement où l'on ne sait pas à qui faire confiance ? » est aujourd'hui appliquée dans toutes les infrastructures informatiques modernes, des fondations technologiques des crypto-monnaies aux systèmes de contrôle des avions et au cloud computing.
 
-En supposant l'existence de traîtres, l'évolution des algorithmes conçus pour empêcher l'arrêt des systèmes ne s'arrêtera jamais. Pour les ingénieurs impliqués dans la conception de systèmes distribués, comprendre les preuves mathématiques et les algorithmes sous-jacents à ce problème sera une arme redoutable.
+En supposant l'existence de traîtres, l'évolution des algorithmes conçus pour empêcher l'arrêt des systèmes ne s'arrêtera jamais. [Pour les ingénieurs](https://kenji.blog/p/prompt-engineering-for-engineers/) impliqués dans la conception de systèmes distribués, comprendre les preuves mathématiques et les algorithmes sous-jacents à ce problème sera une arme redoutable.

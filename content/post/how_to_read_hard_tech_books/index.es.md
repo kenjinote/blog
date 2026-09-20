@@ -98,7 +98,7 @@ Aquí, veamos el proceso de convertir fórmulas matemáticas en código a travé
 
 ### 4.1 Ejemplo práctico 1: Matemáticas de la criptografía RSA e implementación en Python
 
-La criptografía RSA, un representante de la criptografía de clave pública, es una hermosa aplicación de la teoría elemental de números (congruencias, teorema de Euler, algoritmo de Euclides extendido).
+La criptografía RSA, un representante de la criptografía de clave pública, es una hermosa aplicación de la teoría elemental de números (congruencias, teorema de Euler, algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido).
 
 #### Contexto matemático
 El proceso de generación de claves, cifrado y descifrado de la criptografía RSA se expresa mediante las siguientes fórmulas.
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-Para encontrar un $d$ que satisfaga la fórmula matemática $e \cdot d \equiv 1 \pmod{\phi(n)}$, necesitas implementar un algoritmo llamado algoritmo de Euclides extendido. De esta manera, **cuando intentas codificar fórmulas matemáticas, te enfrentas a problemas de implementación como "¿cómo calculo específicamente esta variable?", y en el proceso de resolverlos, tu comprensión matemática se profundiza drásticamente**.
+Para encontrar un $d$ que satisfaga la fórmula matemática $e \cdot d \equiv 1 \pmod{\phi(n)}$, necesitas implementar un algoritmo llamado algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido. De esta manera, **cuando intentas codificar fórmulas matemáticas, te enfrentas a problemas de implementación como "¿cómo calculo específicamente esta variable?", y en el proceso de resolverlos, tu comprensión matemática se profundiza drásticamente**.
 
 ### 4.2 Ejemplo práctico 2: Algoritmo de Dijkstra y Relajación (Relaxation)
 

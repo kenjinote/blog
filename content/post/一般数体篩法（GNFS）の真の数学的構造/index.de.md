@@ -157,7 +157,7 @@ Da die ursprünglichen Paare $(a, b)$ außerdem in Entsprechung in den Formen $a
 Alles, was bleibt, ist zu beten, dass diese $X$ und $Y$ keine trivialen Lösungen ($X \equiv \pm Y$) sind, und
 **$\gcd(X - Y, N)$** zu berechnen.
 
-Wenn es sich um eine nicht-triviale Lösung handelt, durchläuft der Euklidische Algorithmus sie in 0,001 Sekunden, und die geheimen Primzahlen $p$ und $q$, die das Herzstück der RSA-Kryptographie bilden, werden auf dem Ausgabebildschirm gedruckt.
+Wenn es sich um eine nicht-triviale Lösung handelt, durchläuft der [Euklid](https://kenji.blog/p/euclid/)ische Algorithmus sie in 0,001 Sekunden, und die geheimen Primzahlen $p$ und $q$, die das Herzstück der RSA-Kryptographie bilden, werden auf dem Ausgabebildschirm gedruckt.
 
 ---
 

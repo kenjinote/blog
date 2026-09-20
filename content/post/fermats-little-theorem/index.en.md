@@ -12,17 +12,17 @@ tags:
   - "Prime Numbers"
 ---
 
-In modern internet society, we owe our ability to communicate securely to **cryptography**. At the very foundation of this cryptography lies a beautiful theorem discovered by the 17th-century mathematician Pierre de Fermat.
+In modern internet society, we owe our ability to communicate securely to **cryptography**. At the very foundation of this cryptography lies a beautiful theorem discovered by the 17th-century mathematician [Pierre de Fermat](https://kenji.blog/p/fermat/).
 
-In this article, we will explain **Fermat's Little Theorem**, a crucial cornerstone of number theory, in an easy-to-understand manner, covering its meaning, proof, and how it is applied to modern RSA cryptography.
+In this article, we will explain **[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)**, a crucial cornerstone of number theory, in an easy-to-understand manner, covering its meaning, proof, and how it is applied to modern RSA cryptography.
 
-## What is Fermat's Little Theorem?
+## What is [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)?
 
-Fermat's Little Theorem is an extremely simple yet powerful theorem that demonstrates the relationship between prime numbers and integers.
+[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) is an extremely simple yet powerful theorem that demonstrates the relationship between prime numbers and integers.
 
 The theorem states the following:
 
-> **Fermat's Little Theorem**
+> **[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)**
 > Let $p$ be a prime number, and $a$ be any integer not divisible by $p$ (meaning $a$ and $p$ are coprime). Then, the following congruence relation holds true:
 > 
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -52,7 +52,7 @@ In this way, no matter what prime number $p$ you choose, this mysterious law hol
 
 ## Proof of the Theorem
 
-There are several approaches to proving Fermat's Little Theorem, but here we introduce a representative proof method based on number theory.
+There are several approaches to proving [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/), but here we introduce a representative proof method based on number theory.
 
 Let $p$ be a prime number and $a$ be an integer not divisible by $p$.
 Consider the set $S = \{1, 2, 3, \dots, p-1\}$. Let $S'$ be a new set created by multiplying each element of this set by $a$.
@@ -94,9 +94,9 @@ However, because there exist exceptional numbers called **Carmichael numbers**, 
 
 ## Application to Modern Cryptography: RSA Cryptography
 
-The most important application of Fermat's Little Theorem (and its generalization, **Euler's Theorem**) is **RSA cryptography**, which underpins internet security.
+The most important application of [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) (and its generalization, **Euler's Theorem**) is **RSA cryptography**, which underpins internet security.
 
-RSA cryptography relies on the difficulty of factoring massive numbers for its security. Within its mechanism, the principle of "Fermat's Little Theorem" plays a decisive role in the key generation and decryption processes.
+RSA cryptography relies on the difficulty of factoring massive numbers for its security. Within its mechanism, the principle of "[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)" plays a decisive role in the key generation and decryption processes.
 
 ```mermaid
 sequenceDiagram
@@ -112,10 +112,10 @@ sequenceDiagram
 ```
 
 In RSA cryptography, two huge prime numbers, $p$ and $q$, are prepared, and we set $n = p \times q$.
-By Euler's Theorem, the keys ($e$ and $d$) are designed so that $M^{ed} \equiv M \pmod n$ holds true in the encryption and decryption processes. Here, the magical phenomenon of the plaintext $M$ returning to its original form essentially relies on the mathematical properties guaranteed by Fermat's Little Theorem.
+By Euler's Theorem, the keys ($e$ and $d$) are designed so that $M^{ed} \equiv M \pmod n$ holds true in the encryption and decryption processes. Here, the magical phenomenon of the plaintext $M$ returning to its original form essentially relies on the mathematical properties guaranteed by [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/).
 
 ## Conclusion
 
-A small theorem discovered by Pierre de Fermat in the 17th century has become an indispensable element supporting the foundation of information security in modern society hundreds of years later.
+A small theorem discovered by [Pierre de Fermat](https://kenji.blog/p/fermat/) in the 17th century has become an indispensable element supporting the foundation of information security in modern society hundreds of years later.
 
-**Fermat's Little Theorem** can be said to be one of the most beautiful examples demonstrating how pure mathematics connects to practical technology (cryptography and algorithms). One cannot help but be amazed by the depth of mathematics and the breadth of its applicability.
+**[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)** can be said to be one of the most beautiful examples demonstrating how pure mathematics connects to practical technology (cryptography and algorithms). One cannot help but be amazed by the depth of mathematics and the breadth of its applicability.

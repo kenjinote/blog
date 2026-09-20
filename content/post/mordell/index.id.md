@@ -12,7 +12,7 @@ tags: ["teori bilangan", "Mordell", "kurva eliptik", "persamaan diophantine"]
 
 Salah satu matematikawan yang meninggalkan jejak cemerlang di dunia matematika abad ke-20, khususnya di bidang **Teori Bilangan** (Number Theory), adalah Louis Joel Mordell (1888–1972). Ia mencapai hasil yang inovatif dalam studi persamaan Diophantine dan meletakkan dasar bagi banyak teori penting di persimpangan geometri aljabar modern dan teori bilangan. Dalam artikel ini, kita akan menjelaskan secara rinci kehidupan Mordell, teorema dan konjektur penting yang memakai namanya, serta dampak mendalam yang ia berikan pada komunitas matematika.
 
-Banyak orang yang pernah mendengar tentang Mordell mungkin mengenalnya melalui **Teorema Mordell** (Mordell's Theorem) atau **Konjektur Mordell** (Mordell Conjecture). Pencapaian ini bukan sekadar pembuktian teorema tunggal, tetapi berfungsi sebagai awal yang penting dari sebuah drama matematika yang luar biasa yang mengarah pada pembuktian **Teorema Terakhir Fermat** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)).
+Banyak orang yang pernah mendengar tentang Mordell mungkin mengenalnya melalui **Teorema Mordell** (Mordell's Theorem) atau **Konjektur Mordell** (Mordell Conjecture). Pencapaian ini bukan sekadar pembuktian teorema tunggal, tetapi berfungsi sebagai awal yang penting dari sebuah drama matematika yang luar biasa yang mengarah pada pembuktian **[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)).
 
 ## 2. Masa Muda: Dari Belajar Otodidak ke Cambridge
 
@@ -24,13 +24,13 @@ Pada tahun 1906, pada usia 18 tahun, Mordell pergi ke Inggris sendirian dengan u
 
 ## 3. Gairah pada Persamaan Diophantine
 
-Pusat penelitian Mordell selalu pada **persamaan Diophantine**. Persamaan Diophantine adalah masalah mencari solusi bilangan bulat atau rasional untuk persamaan polinomial dengan koefisien bilangan bulat. Dinamai menurut nama matematikawan Yunani kuno Diophantus.
+Pusat penelitian Mordell selalu pada **persamaan Diophantine**. Persamaan Diophantine adalah masalah mencari solusi bilangan bulat atau rasional untuk persamaan polinomial dengan koefisien bilangan bulat. Dinamai menurut nama matematikawan Yunani kuno [Diophantus](https://kenji.blog/p/diophantus/).
 
 Contoh paling terkenal dari persamaan Diophantine adalah yang terkait dengan teorema Pythagoras:
 
 $$ x^2 + y^2 = z^2 $$
 
-Solusi bilangan bulat untuk persamaan ini disebut triple Pythagoras, dan diketahui jumlahnya tak terhingga. Namun, seiring dengan meningkatnya derajat, masalahnya dengan cepat menjadi sulit. Persamaan berikut, yang dikenal dari Teorema Terakhir Fermat, adalah contoh utama:
+Solusi bilangan bulat untuk persamaan ini disebut triple Pythagoras, dan diketahui jumlahnya tak terhingga. Namun, seiring dengan meningkatnya derajat, masalahnya dengan cepat menjadi sulit. Persamaan berikut, yang dikenal dari [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/), adalah contoh utama:
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 
@@ -42,7 +42,7 @@ Mordell memberikan perhatian khusus pada bentuk persamaan yang sekarang dikenal 
 
 $$ y^2 = x^3 + k $$
 
-Di sini, $k$ adalah bilangan bulat bukan nol. Persamaan ini adalah salah satu bentuk kurva eliptik yang paling sederhana. Sejak Pierre de Fermat pada abad ke-17 membuktikan bahwa untuk $k = -2$, yaitu $y^2 = x^3 - 2$, satu-satunya solusi bilangan bulat adalah $(x, y) = (3, \pm 5)$, banyak persamaan seperti itu telah dipelajari.
+Di sini, $k$ adalah bilangan bulat bukan nol. Persamaan ini adalah salah satu bentuk kurva eliptik yang paling sederhana. Sejak [Pierre de Fermat](https://kenji.blog/p/fermat/) pada abad ke-17 membuktikan bahwa untuk $k = -2$, yaitu $y^2 = x^3 - 2$, satu-satunya solusi bilangan bulat adalah $(x, y) = (3, \pm 5)$, banyak persamaan seperti itu telah dipelajari.
 
 Mordell secara mendalam meneliti metode umum untuk menemukan solusi bilangan bulat pada persamaan ini dan keterhinggaan solusinya. Pendekatannya menerapkan teori kelas ideal dalam teori bilangan aljabar, yang mewakili lompatan maju yang signifikan dari metode klasik.
 
@@ -58,7 +58,7 @@ Di sini, $E(\mathbb{Q})_{\text{tors}}$ adalah **subgrup torsi** (torsion subgrou
 
 Teorema ini berarti bahwa untuk menemukan semua titik rasional yang jumlahnya tak terhingga dari sebuah kurva eliptik, cukup dengan menemukan sejumlah terhingga titik "basis". Ini adalah hasil yang monumental dalam geometri aritmatika. Pembuktian Mordell adalah penyempurnaan modern dari "Metode penurunan tak terhingga" (Method of infinite descent) Fermat.
 
-Kemudian, pada tahun 1928, matematikawan Prancis André Weil memperumum teorema ini pada lapangan bilangan umum dan varietas abelian, sehingga sekarang sering disebut **Teorema Mordell-Weil** (Mordell-Weil Theorem).
+Kemudian, pada tahun 1928, matematikawan Prancis [André Weil](https://kenji.blog/p/weil/) memperumum teorema ini pada lapangan bilangan umum dan varietas abelian, sehingga sekarang sering disebut **Teorema Mordell-Weil** (Mordell-Weil Theorem).
 
 ```mermaid
 graph TD
@@ -83,13 +83,13 @@ Klaim untuk kasus $g \ge 2$ adalah Konjektur Mordell. Konjektur ini menyatakan b
 
 $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
-Konjektur ini tetap belum terpecahkan selama lebih dari 60 tahun. Namun, pada tahun 1983, akhirnya dibuktikan oleh matematikawan Jerman Gerd Faltings, menjadi **Teorema Faltings**. Atas pencapaian ini, Faltings dianugerahi Medali Fields pada tahun 1986.
+Konjektur ini tetap belum terpecahkan selama lebih dari 60 tahun. Namun, pada tahun 1983, akhirnya dibuktikan oleh matematikawan Jerman [Gerd Faltings](https://kenji.blog/p/faltings/), menjadi **Teorema Faltings**. Atas pencapaian ini, Faltings dianugerahi Medali Fields pada tahun 1986.
 
-Selain itu, persamaan untuk Teorema Terakhir Fermat, $x^n + y^n = z^n$, memiliki genus 3 atau lebih ketika $n \ge 4$. Oleh karena itu, dari Konjektur Mordell (Teorema Faltings), segera disimpulkan bahwa persamaan Fermat paling banyak memiliki solusi rasional yang terhingga untuk setiap $n$.
+Selain itu, persamaan untuk [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/), $x^n + y^n = z^n$, memiliki genus 3 atau lebih ketika $n \ge 4$. Oleh karena itu, dari Konjektur Mordell (Teorema Faltings), segera disimpulkan bahwa persamaan Fermat paling banyak memiliki solusi rasional yang terhingga untuk setiap $n$.
 
 ## 7. Keterlibatan dengan Ramanujan dan Bentuk Modular
 
-Pencapaian Mordell tidak terbatas pada persamaan Diophantine. Ia juga memberikan kontribusi signifikan terhadap masalah yang belum terpecahkan yang ditinggalkan oleh matematikawan jenius Srinivasa Ramanujan.
+Pencapaian Mordell tidak terbatas pada persamaan Diophantine. Ia juga memberikan kontribusi signifikan terhadap masalah yang belum terpecahkan yang ditinggalkan oleh matematikawan jenius [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/).
 
 Ramanujan menduga beberapa sifat mengejutkan tentang fungsi tau Ramanujan $\tau(n)$, yang didefinisikan sebagai berikut:
 
@@ -129,16 +129,16 @@ Mordell juga memiliki pandangan tajam untuk melihat bakat orang lain. Salah satu
 
 ## 11. Warisan pada Matematika Modern
 
-Warisan yang ditinggalkan Louis Mordell dalam dunia matematika berakar kuat pada fondasi matematika modern.
+Warisan yang ditinggalkan [Louis Mordell](https://kenji.blog/p/mordell/) dalam dunia matematika berakar kuat pada fondasi matematika modern.
 
 1. **Dasar Geometri Aritmatika**: Teorema Mordell dan Konjektur Mordell dengan kuat memacu pengembangan "Geometri Aritmatika", yang memandang objek teori bilangan dari perspektif geometris.
 2. **Teori Bentuk Modular**: Teknik yang ia gunakan dalam pembuktian konjektur Ramanujan menjadi titik awal untuk teori masif yang meluas ke Program Langlands (Langlands Program) modern.
 3. **Penyelesaian Persamaan Diophantine**: Pendekatan konkretnya dan banyak makalahnya masih menjadi dasar bagi metode algoritma untuk menyelesaikan persamaan menggunakan komputer saat ini.
 
-Ketika Teorema Terakhir Fermat dibuktikan oleh Andrew Wiles, konsep-konsep yang sangat melibatkan Mordell, seperti kurva eliptik dan bentuk modular, sangat diperlukan untuk latar belakang teoretisnya.
+Ketika [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/) dibuktikan oleh [Andrew Wiles](https://kenji.blog/p/wiles/), konsep-konsep yang sangat melibatkan Mordell, seperti kurva eliptik dan bentuk modular, sangat diperlukan untuk latar belakang teoretisnya.
 
 ## 12. Kesimpulan
 
-Louis Mordell bangkit dari seorang pemuda otodidak yang bersemangat menjadi raksasa teori bilangan yang mewakili abad ke-20. Namanya terukir abadi dalam sejarah matematika dalam bentuk **Teorema Mordell** dan **Konjektur Mordell**.
+[Louis Mordell](https://kenji.blog/p/mordell/) bangkit dari seorang pemuda otodidak yang bersemangat menjadi raksasa teori bilangan yang mewakili abad ke-20. Namanya terukir abadi dalam sejarah matematika dalam bentuk **Teorema Mordell** dan **Konjektur Mordell**.
 
 Dengan komitmennya yang kuat untuk menyelesaikan masalah konkret dan kehangatan kemanusiaannya yang menyelamatkan para matematikawan pengungsi, kehidupan dan pencapaian Mordell adalah model yang sangat baik yang menunjukkan bagaimana disiplin ilmu matematika berkembang dan bagaimana seseorang dapat berkontribusi pada perkembangan itu. Dunia persamaan Diophantine yang ia eksplorasi terus mempesona banyak matematikawan hingga hari ini.

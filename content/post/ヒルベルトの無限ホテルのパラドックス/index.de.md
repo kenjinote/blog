@@ -16,7 +16,7 @@ tags:
 
 ## 1. Willkommen im ultimativen Hotel
 
-Der große deutsche Mathematiker David Hilbert hat folgendes interessantes Gedankenexperiment erfunden, um zu veranschaulichen, wie weit das Konzept der "Unendlichkeit" von der menschlichen Intuition entfernt ist.
+Der große deutsche Mathematiker [David Hilbert](https://kenji.blog/p/hilbert/) hat folgendes interessantes Gedankenexperiment erfunden, um zu veranschaulichen, wie weit das Konzept der "Unendlichkeit" von der menschlichen Intuition entfernt ist.
 
 Stellen Sie sich vor: Irgendwo im Universum gibt es **"Hilberts unendliches Hotel"**.
 In diesem Hotel gibt es **unendlich viele** nummerierte Zimmer, also Zimmer 1, Zimmer 2, Zimmer 3, und so weiter.
@@ -158,7 +158,7 @@ Auf diese Weise hat der Manager die ungeheure Anzahl von **"unendlich $\times$ u
 
 Hilberts unendliches Hotel lehrt uns die Tatsache, dass **die "abzählbare Unendlichkeit" (eine Unendlichkeit, die man mit 1, 2, 3... nummerieren und zählen kann), egal wie oft man sie addiert oder multipliziert, letztendlich immer in den Rahmen derselben "abzählbaren Unendlichkeit" passt**.
 
-Der Mathematiker Georg Cantor entdeckte jedoch eine noch erschreckendere Tatsache.
+Der Mathematiker [Georg Cantor](https://kenji.blog/p/cantor/) entdeckte jedoch eine noch erschreckendere Tatsache.
 "Natürliche Zahlen" und "Brüche" können alle in diesem unendlichen Hotel untergebracht werden. Aber **wenn Gäste in Form von "reellen Zahlen (alle Dezimalzahlen einschließlich irrationaler Zahlen)" ankommen, können absolut nicht alle in diesem unendlichen Hotel untergebracht werden**.
 
 Es ist bewiesen, dass die Menge der reellen Zahlen grundlegend eine "größere (höherstufige) Unendlichkeit" ist als die Anzahl der Zimmer im unendlichen Hotel (abzählbare Unendlichkeit).

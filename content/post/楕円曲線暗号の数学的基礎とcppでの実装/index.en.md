@@ -9,7 +9,7 @@ categories: ["cryptography", "cpp", "mathematics"]
 tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 ---
 
-# Mathematical Foundations of Elliptic Curve Cryptography (ECC) and Implementation in C++
+# [Mathematical Foundations of Elliptic Curve Cryptography (ECC) and Implementation in C++](https://kenji.blog/p/楕円曲線暗号の数学的基礎とcppでの実装/)
 
 In modern cryptographic technology, **Elliptic Curve Cryptography (ECC)** plays a tremendously important role. It is no exaggeration to say that the foundation of trust in our modern digital society—from everyday Internet communications (HTTPS/TLS) and smartphone secure enclaves, to server authentication via SSH, passwordless authentication like FIDO, and even crypto assets like Bitcoin and Ethereum—is supported by ECC.
 
@@ -67,8 +67,8 @@ The most basic finite field is the **prime field $\mathbb{F}_p$** using a prime 
 
 Calculating the **Modular Multiplicative Inverse** is extremely important in cryptographic implementations. To find $b^{-1}$ satisfying $b \times b^{-1} \equiv 1 \pmod p$, the following two main algorithms are used:
 
-1. **Extended Euclidean Algorithm**: Fast, but depending on the implementation, the processing time can depend on the input values, leading to a risk of timing attacks.
-2. **Fermat's Little Theorem**: When $p$ is prime and $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ holds. Dividing both sides by $b$ yields $b^{p-2} \equiv b^{-1} \pmod p$. That is, the inverse is found by raising $b$ to the power of $p-2$. Exponentiation is easier to implement in constant time, so this method is preferred in cryptographic implementations.
+1. **Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm**: Fast, but depending on the implementation, the processing time can depend on the input values, leading to a risk of timing attacks.
+2. **[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)**: When $p$ is prime and $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ holds. Dividing both sides by $b$ yields $b^{p-2} \equiv b^{-1} \pmod p$. That is, the inverse is found by raising $b$ to the power of $p-2$. Exponentiation is easier to implement in constant time, so this method is preferred in cryptographic implementations.
 
 ---
 
@@ -278,7 +278,7 @@ From here, we will translate the theory into C++ code. While practical cryptogra
 We assume the use of `boost::multiprecision::cpp_int` for operations on huge integers.
 
 ### 8.1. Modular Arithmetic and Inverses
-First, we define helper functions for operations over finite fields. We implement inverse calculation using Fermat's Little Theorem.
+First, we define helper functions for operations over finite fields. We implement inverse calculation using [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/).
 
 ```cpp
 #include <iostream>

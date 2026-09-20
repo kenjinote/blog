@@ -15,7 +15,7 @@ tags:
 
 ## Qu'est-ce que le théorème des nombres premiers ?
 
-L'un des résultats les plus beaux dans le domaine des mathématiques est le **théorème des nombres premiers** (Prime Number Theorem, PNT). Il montre que les nombres premiers, qui semblent apparaître de manière irrégulière et aléatoire à première vue, possèdent une régularité étonnamment lisse lorsqu'ils sont observés à une échelle macroscopique.
+L'un des résultats les plus beaux dans le domaine des mathématiques est le **théorème des nombres premiers** ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT). Il montre que les nombres premiers, qui semblent apparaître de manière irrégulière et aléatoire à première vue, possèdent une régularité étonnamment lisse lorsqu'ils sont observés à une échelle macroscopique.
 
 Plus précisément, si l'on note $\pi(x)$ (fonction de comptage des nombres premiers) le "nombre de nombres premiers inférieurs ou égaux à un certain nombre réel $x$", le théorème stipule que lorsque $x$ est très grand, $\pi(x)$ est asymptotique à $x / \ln(x)$.
 
@@ -42,11 +42,11 @@ graph TD;
 
 ## Contexte historique : De la conjecture de Gauss à la preuve
 
-L'histoire du théorème des nombres premiers remonte à la fin du 18ème siècle. Le mathématicien de génie Carl Friedrich Gauss, alors âgé de seulement 15 ans, en observant des tables de nombres premiers, remarqua que la fréquence d'apparition des nombres premiers était liée à la fonction logarithmique. Vers la même époque, Adrien-Marie Legendre formula indépendamment une conjecture similaire.
+L'histoire du théorème des nombres premiers remonte à la fin du 18ème siècle. Le mathématicien de génie [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), alors âgé de seulement 15 ans, en observant des tables de nombres premiers, remarqua que la fréquence d'apparition des nombres premiers était liée à la fonction logarithmique. Vers la même époque, [Adrien-Marie Legendre](https://kenji.blog/p/legendre/) formula indépendamment une conjecture similaire.
 
 Cependant, ils ne parvinrent pas à prouver cela de manière rigoureuse.
 
-Une avancée majeure dans la preuve a été apportée par l'article révolutionnaire de Bernhard Riemann de 1859, "Sur le nombre de nombres premiers inférieurs à une taille donnée". Riemann a présenté une approche entièrement nouvelle en utilisant la **fonction zêta** $\zeta(s)$, qui est une fonction complexe, pour transformer le problème de la distribution des nombres premiers en un problème sur le plan complexe.
+Une avancée majeure dans la preuve a été apportée par l'article révolutionnaire de [Bernhard Riemann](https://kenji.blog/p/riemann/) de 1859, "Sur le nombre de nombres premiers inférieurs à une taille donnée". Riemann a présenté une approche entièrement nouvelle en utilisant la **fonction zêta** $\zeta(s)$, qui est une fonction complexe, pour transformer le problème de la distribution des nombres premiers en un problème sur le plan complexe.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ premier}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 

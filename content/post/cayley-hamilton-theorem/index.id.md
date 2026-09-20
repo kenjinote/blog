@@ -24,7 +24,7 @@ Dalam artikel ini, kita akan menjelaskan **teorema Cayley-Hamilton** secara terp
 
 Aljabar linear merupakan disiplin ilmu dasar untuk banyak bidang saat ini, mulai dari matematika dan fisika hingga teknik, pembelajaran mesin, dan ilmu data. Matriks adalah alat yang ampuh untuk merepresentasikan pemetaan linear di dalam bidang-bidang tersebut.
 
-**Teorema Cayley-Hamilton** adalah kunci untuk memahami sifat aljabar matriks secara mendalam. Teorema ini memungkinkan reduksi polinomial matriks berderajat tinggi menjadi polinomial berderajat lebih rendah, bertindak sebagai jembatan antara ruang berdimensi tak hingga dengan ruang berdimensi hingga. Teorema ini sering muncul dalam situasi praktis, seperti menganalisis keterkendalian dan keteramatan dalam teori kendali, serta menghitung operator dalam mekanika kuantum.
+**[Teorema Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)** adalah kunci untuk memahami sifat aljabar matriks secara mendalam. Teorema ini memungkinkan reduksi polinomial matriks berderajat tinggi menjadi polinomial berderajat lebih rendah, bertindak sebagai jembatan antara ruang berdimensi tak hingga dengan ruang berdimensi hingga. Teorema ini sering muncul dalam situasi praktis, seperti menganalisis keterkendalian dan keteramatan dalam teori kendali, serta menghitung operator dalam mekanika kuantum.
 
 ## 3. Tinjauan Persamaan Karakteristik dan Nilai Eigen
 
@@ -56,11 +56,11 @@ $$
 
 Di sini diketahui bahwa $c_{n-1} = -\text{tr}(A)$ (negatif dari trace) dan $c_0 = (-1)^n \det(A)$.
 
-## 4. Pernyataan Teorema Cayley-Hamilton
+## 4. Pernyataan [Teorema Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)
 
 Sekarang kita tiba pada inti dari **teorema Cayley-Hamilton**. Pernyataan teoremanya sangat sederhana namun berdampak kuat.
 
-> **Teorema (Teorema Cayley-Hamilton)**
+> **Teorema ([Teorema Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/))**
 > Untuk sembarang matriks persegi $A$ berukuran $n \times n$ dan polinomial karakteristiknya $p(\lambda) = \det(\lambda I - A)$, mensubstitusikan matriks $A$ untuk variabel $\lambda$ dalam polinomial tersebut akan menghasilkan matriks nol $O$. Yakni,
 > $$ p(A) = A^n + c_{n-1}A^{n-1} + \dots + c_1 A + c_0 I = O $$
 > bernilai benar.
@@ -101,7 +101,7 @@ $$
 p(\lambda) = \lambda^2 - \text{tr}(A)\lambda + \det(A)
 $$
 
-Teorema Cayley-Hamilton menyatakan bahwa mensubstitusikan $\lambda = A$ ke dalam persamaan ini menghasilkan matriks nol, yang berarti persamaan berikut berlaku:
+[Teorema Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) menyatakan bahwa mensubstitusikan $\lambda = A$ ke dalam persamaan ini menghasilkan matriks nol, yang berarti persamaan berikut berlaku:
 
 $$
 A^2 - \text{tr}(A)A + \det(A)I = O
@@ -153,7 +153,7 @@ Berdasarkan definisi polinomial karakteristik, setiap nilai eigen $\lambda_i$ me
 
 Namun, karena tidak semua matriks dapat didiagonalkan (misalnya, yang kekurangan vektor eigen yang independen linear), penjelasan ini tidak dapat dianggap sebagai pembuktian yang lengkap. Pendekatan lain diperlukan untuk pembuktian secara umum.
 
-## 7. Pembuktian Ketat Teorema Cayley-Hamilton
+## 7. Pembuktian Ketat [Teorema Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)
 
 Berikut adalah pembuktian umum (menggunakan matriks adjoin) yang berlaku untuk sembarang matriks persegi $A$ berukuran $n \times n$. Pembuktian ini sangat elegan dan memancarkan kecerdikan aljabar.
 
@@ -284,4 +284,4 @@ Dalam artikel ini, kita telah menjelaskan secara terperinci tentang **teorema Ca
 * Pembuktian yang elegan dan ketat menggunakan identitas matriks adjoin.
 * Aplikasi praktis seperti perhitungan cepat untuk matriks berpangkat tinggi menggunakan pembagian polinomial dan rumus untuk mencari invers matriks.
 
-Teorema Cayley-Hamilton tidak hanya memiliki keindahan teori yang mendalam, tetapi juga menjadi alat bantu yang sangat berguna dalam perhitungan konkret. Menyadari bahwa teorema ini selalu hadir di latar belakang ketika Anda berurusan dengan matriks tidak diragukan lagi akan memperdalam pemahaman Anda tentang aljabar linear.
+[Teorema Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) tidak hanya memiliki keindahan teori yang mendalam, tetapi juga menjadi alat bantu yang sangat berguna dalam perhitungan konkret. Menyadari bahwa teorema ini selalu hadir di latar belakang ketika Anda berurusan dengan matriks tidak diragukan lagi akan memperdalam pemahaman Anda tentang aljabar linear.

@@ -14,7 +14,7 @@ tags:
 
 ## 引言
 
-最佳傳輸問題 (Optimal Transport Problem) 是一個數學問題，探討在將某處的物質（如沙堆）移動到另一處（如坑洞）時， **「如何以最小的代價完成移動？」** 
+[最佳傳輸問題](https://kenji.blog/p/optimal-transport-problem/) ([Optimal Transport Problem](https://kenji.blog/p/optimal-transport-problem/)) 是一個數學問題，探討在將某處的物質（如沙堆）移動到另一處（如坑洞）時， **「如何以最小的代價完成移動？」** 
 
 它由法國數學家加斯帕爾·蒙日 (Gaspard Monge) 在18世紀提出，並在20世紀由列昂尼德·康托羅維奇 (Leonid Kantorovich) 進行了現代形式的表述。如今，它被廣泛應用於從經濟學的資源分配到機器學習等各個領域。
 
@@ -33,7 +33,7 @@ flowchart LR
 用數學語言來表達，假設原沙堆的分佈是 $X$ 上的機率測度 $\mu$，坑洞的分佈是 $Y$ 上的機率測度 $\nu$。
 我們設 $T: X \to Y$ 是一個映射（函數），決定了每個地點 $x \in X$ 到 $y \in Y$ 的移動目的地。這個 $T$ 必須將 $\mu$ 轉移（前推）到 $\nu$。也就是說， $T_{\#}\mu = \nu$。
 
-假設移動帶來的成本函數為 $c(x, y)$，蒙日最佳傳輸問題就是要找到一個使以下總成本最小化的映射 $T$。
+假設移動帶來的成本函數為 $c(x, y)$，蒙日[最佳傳輸問題](https://kenji.blog/p/optimal-transport-problem/)就是要找到一個使以下總成本最小化的映射 $T$。
 
 $$
 \inf_{T_{\#}\mu = \nu} \int_X c(x, T(x)) d\mu(x)
@@ -65,7 +65,7 @@ flowchart TD
     X2 -->|"運輸量 π(x_2, y_2)"| Y2
 ```
 
-康托羅維奇最佳傳輸問題就是要找到一個使以下總成本最小化的聯合分佈 $\pi$。
+康托羅維奇[最佳傳輸問題](https://kenji.blog/p/optimal-transport-problem/)就是要找到一個使以下總成本最小化的聯合分佈 $\pi$。
 
 $$
 \inf_{\pi \in \Pi(\mu, \nu)} \int_{X \times Y} c(x, y) d\pi(x, y)
@@ -95,4 +95,4 @@ $$
 
 透過最小化生成器 (Generator) 生成的資料分佈與實際資料分佈之間的 Wasserstein 距離，實現了更穩定的訓練，並使生成的影像品質得到了飛躍性的提升。
 
-最佳傳輸問題始於純粹的數學探索，如今已成為支撐資料科學的強大工具。這種衡量分佈與分佈間「差異」的直觀思想，在未來必定會繼續在各個領域中得到應用。
+[最佳傳輸問題](https://kenji.blog/p/optimal-transport-problem/)始於純粹的數學探索，如今已成為支撐資料科學的強大工具。這種衡量分佈與分佈間「差異」的直觀思想，在未來必定會繼續在各個領域中得到應用。

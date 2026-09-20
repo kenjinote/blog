@@ -141,9 +141,9 @@ e^{J_k(\lambda)t} = e^{\lambda t} \begin{pmatrix}
 $$
 Cela explique les termes résonants $te^{\lambda t}$ en physique.
 
-## Théorème de Cayley-Hamilton et polynôme minimal
+## [Théorème de Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) et polynôme minimal
 
-Toute matrice $A$ annule son polynôme caractéristique $p(A) = 0$ (**Théorème de Cayley-Hamilton**).
+Toute matrice $A$ annule son polynôme caractéristique $p(A) = 0$ (**[Théorème de Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)**).
 Le **polynôme minimal** $m(\lambda)$ est celui de plus bas degré tel que $m(A) = 0$. Si ses racines sont simples, la matrice est diagonalisable.
 
 ## Différence avec la décomposition en valeurs singulières (SVD)

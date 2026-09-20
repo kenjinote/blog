@@ -10,7 +10,7 @@ tags: ["Heisuke Hironaka", "Geometri Aljabar", "Resolusi Singularitas", "Medali 
 
 ## Pengantar
 
- **Heisuke Hironaka** adalah seorang matematikawan Jepang yang meninggalkan jejak revolusioner dalam dunia matematika pada akhir abad ke-20, khususnya di bidang geometri aljabar. Medali Fields yang ia terima pada tahun 1970 adalah penghargaan tertinggi dalam matematika, diberikan atas solusinya untuk "resolusi singularitas varietas aljabar di atas lapangan dengan karakteristik nol"—sebuah masalah monumental yang pada saat itu dianggap mustahil oleh semua orang.
+ **[Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/)** adalah seorang matematikawan Jepang yang meninggalkan jejak revolusioner dalam dunia matematika pada akhir abad ke-20, khususnya di bidang geometri aljabar. Medali Fields yang ia terima pada tahun 1970 adalah penghargaan tertinggi dalam matematika, diberikan atas solusinya untuk "resolusi singularitas varietas aljabar di atas lapangan dengan karakteristik nol"—sebuah masalah monumental yang pada saat itu dianggap mustahil oleh semua orang.
 
 Dalam artikel ini, kita menyelami lebih dalam kehidupan dramatis Hironaka dari masa kecilnya hingga penghargaan Medali Fields-nya, latar belakang matematis dari "Teorema Resolusi Singularitas" yang identik dengannya, dan filosofi unik mengenai "kreativitas" yang terus ia advokasi.
 
@@ -103,4 +103,4 @@ Bagi Hironaka, menemui jalan buntu dalam berpikir (sebuah singularitas intelektu
 
 ## Kesimpulan
 
-Teorema Resolusi Singularitas Heisuke Hironaka mengubah lanskap geometri aljabar dan tetap menjadi alat yang sangat diperlukan dalam berbagai bidang seperti teori superstring. Ketika dihadapkan pada dinding yang sulit, sikapnya "mengurai" keterikatan yang kompleks terus mempesona banyak orang hingga saat ini.
+Teorema Resolusi Singularitas [Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/) mengubah lanskap geometri aljabar dan tetap menjadi alat yang sangat diperlukan dalam berbagai bidang seperti teori superstring. Ketika dihadapkan pada dinding yang sulit, sikapnya "mengurai" keterikatan yang kompleks terus mempesona banyak orang hingga saat ini.

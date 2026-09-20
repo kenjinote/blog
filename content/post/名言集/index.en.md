@@ -35,7 +35,7 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 ## Philosophy and Thought
 
-> The heart has its reasons which reason knows nothing of. (Blaise Pascal)
+> The heart has its reasons which reason knows nothing of. ([Blaise Pascal](https://kenji.blog/p/pascal/))
 
 > God is dead. (Friedrich Nietzsche)
 
@@ -54,7 +54,7 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 > Everything flows. (Heraclitus)
 
 
-> I think, therefore I am. (René Descartes)
+> I think, therefore I am. ([René Descartes](https://kenji.blog/p/descartes/))
 
 > I know that I know nothing. (Socrates)
 
@@ -62,7 +62,7 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 > Man is by nature a political animal. (Aristotle)
 
-> Man is but a reed, the most feeble thing in nature, but he is a thinking reed. (Blaise Pascal)
+> Man is but a reed, the most feeble thing in nature, but he is a thinking reed. ([Blaise Pascal](https://kenji.blog/p/pascal/))
 
 > Knowledge is power. (Francis Bacon)
 
@@ -76,9 +76,9 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 ## Science, Mathematics, and Technology
 
-> Mathematics is the queen of the sciences. (Carl Friedrich Gauss)
+> Mathematics is the queen of the sciences. ([Carl Friedrich Gauss](https://kenji.blog/p/gauss/))
 
-> We must know, we will know. (David Hilbert)
+> We must know, we will know. ([David Hilbert](https://kenji.blog/p/hilbert/))
 
 > There is no branch of mathematics, however abstract, which may not some day be applied to phenomena of the real world. (Nikolai Lobachevsky)
 
@@ -90,7 +90,7 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 > The good thing about science is that it's true whether or not you believe in it. (Neil deGrasse Tyson)
 
-> In mathematics the art of proposing a question must be held of higher value than solving it. (Georg Cantor)
+> In mathematics the art of proposing a question must be held of higher value than solving it. ([Georg Cantor](https://kenji.blog/p/cantor/))
 
 > If we knew what it was we were doing, it would not be called research, would it? (Albert Einstein)
 
@@ -107,11 +107,11 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 > A person who never made a mistake never tried anything new. (Albert Einstein)
 
-> If I have seen further it is by standing on the shoulders of Giants. (Isaac Newton)
+> If I have seen further it is by standing on the shoulders of Giants. ([Isaac Newton](https://kenji.blog/p/newton/))
 
 > And yet it moves. (Galileo Galilei)
 
-> There is no royal road to geometry. (Euclid)
+> There is no royal road to geometry. ([Euclid](https://kenji.blog/p/euclid/))
 
 > Give me a place to stand, and I shall move the earth. (Archimedes)
 

@@ -18,7 +18,7 @@ Bayangkan ada 6 orang yang berkumpul dalam sebuah pesta. Sebagian mungkin sudah 
 
 Ini bukan sekadar "biasanya ditemukan". Bagaimana pun Anda menyusun atau memvariasikan hubungan di antara mereka, kondisi ini selalu terpenuhi tanpa pengecualian. Selain itu, angka 6 adalah jumlah minimum. Jika hanya ada 5 orang, kita masih bisa membuat konfigurasi yang tidak menghasilkan salah satu dari kedua trio tersebut.
 
-Kejutan kecil inilah yang menjadi pintu masuk menuju **Teori Ramsey** (*Ramsey theory*). Teori ini mempelajari "keteraturan yang tak terelakkan": betapa pun rumitnya kita mempartisi sebuah struktur besar, asalkan struktur tersebut cukup besar, struktur kecil dengan kondisi yang seragam sama sekali tidak bisa dihindari.
+Kejutan kecil inilah yang menjadi pintu masuk menuju **[Teori Ramsey](https://kenji.blog/p/ramsey-theory/)** (*Ramsey theory*). Teori ini mempelajari "keteraturan yang tak terelakkan": betapa pun rumitnya kita mempartisi sebuah struktur besar, asalkan struktur tersebut cukup besar, struktur kecil dengan kondisi yang seragam sama sekali tidak bisa dihindari.
 
 Namun, ini bukan berarti sembarang aturan yang kita sukai akan muncul begitu saja di tengah kekacauan. Sebuah klaim matematis baru terbentuk setelah kita menentukan objek apa yang diamati, dibagi menjadi berapa kelompok, dan pola seperti apa yang dicari. Mari kita mulai dari contoh sederhana yang bisa digambar dengan 6 titik di atas kertas.
 
@@ -153,7 +153,7 @@ $$
 
 Untuk 6 orang, rata-rata segitiga monokromatik yang muncul adalah $\binom{6}{3}\frac{1}{4} = 20 \times \frac{1}{4} = 5$ buah. Meskipun segitiga-segitiga tersebut saling berbagi sisi dan kejadiannya tidak saling independen, penjumlahan nilai harapan tidak mensyaratkan independensi.
 
-Namun, fakta bahwa nilai rata-ratanya positif tidak membuktikan bahwa segitiga tersebut selalu ada di setiap konfigurasi. Pada 5 orang pun nilai harapannya adalah 2,5 buah, namun tetap ada konfigurasi dengan 0 segitiga. Tidak mencampuradukkan antara "rata-rata" dan "kasus terburuk (*worst-case*)" adalah sudut pandang berharga lainnya yang diajarkan oleh Teori Ramsey.
+Namun, fakta bahwa nilai rata-ratanya positif tidak membuktikan bahwa segitiga tersebut selalu ada di setiap konfigurasi. Pada 5 orang pun nilai harapannya adalah 2,5 buah, namun tetap ada konfigurasi dengan 0 segitiga. Tidak mencampuradukkan antara "rata-rata" dan "kasus terburuk (*worst-case*)" adalah sudut pandang berharga lainnya yang diajarkan oleh [Teori Ramsey](https://kenji.blog/p/ramsey-theory/).
 
 ## 7. Memverifikasi 32.768 Kemungkinan Menggunakan Python
 
@@ -214,9 +214,9 @@ Mari kita ganti kata "saling kenal" dengan koneksi langsung antardua perangkat. 
 
 Dari teorema ini, dipastikan selalu ada kelompok 3 perangkat yang ketiga-tiganya saling terhubung secara langsung, atau kelompok 3 perangkat di mana tidak ada satu pun pasangan yang terhubung secara langsung. Dalam teori graf, kondisi pertama disebut sebagai **klik** (*clique*) 3 simpul, dan kondisi kedua disebut sebagai **himpunan independen** (*independent set*) 3 simpul. Perlu dicatat bahwa "tanpa koneksi langsung" tidak berarti perangkat-perangkat tersebut tidak dapat berkomunikasi melalui perantara perangkat lain.
 
-Sudut pandang ini juga dapat digunakan untuk memeriksa desain jaringan kecil atau penjadwalan tugas yang kompatibilitas antarpasangannya telah ditentukan. Jika Anda memiliki kebutuhan desain seperti "menghindari adanya 3 tugas yang semuanya saling kompatibel, sekaligus menghindari 3 tugas yang semuanya saling tidak kompatibel", Teori Ramsey memberi tahu bahwa hal itu mustahil dihindari jika terdapat 6 tugas yang ditinjau — bahkan sebelum Anda mulai mencari kombinasinya.
+Sudut pandang ini juga dapat digunakan untuk memeriksa desain jaringan kecil atau penjadwalan tugas yang kompatibilitas antarpasangannya telah ditentukan. Jika Anda memiliki kebutuhan desain seperti "menghindari adanya 3 tugas yang semuanya saling kompatibel, sekaligus menghindari 3 tugas yang semuanya saling tidak kompatibel", [Teori Ramsey](https://kenji.blog/p/ramsey-theory/) memberi tahu bahwa hal itu mustahil dihindari jika terdapat 6 tugas yang ditinjau — bahkan sebelum Anda mulai mencari kombinasinya.
 
-Namun, teorema ini tidak memberi tahu kita mana di antara kedua kondisi tersebut yang akan muncul. Anda mungkin menginginkan 3 tugas yang saling kompatibel, tetapi yang ditemukan justru 3 tugas yang saling tidak kompatibel. Selain itu, meskipun setiap pasangan kompatibel secara biner, kendala lain seperti kekurangan sumber daya jika 3 tugas dijalankan secara bersamaan tetap perlu diverifikasi secara terpisah. Jaminan Teori Ramsey hanya berlaku pada relasi biner yang telah didefinisikan.
+Namun, teorema ini tidak memberi tahu kita mana di antara kedua kondisi tersebut yang akan muncul. Anda mungkin menginginkan 3 tugas yang saling kompatibel, tetapi yang ditemukan justru 3 tugas yang saling tidak kompatibel. Selain itu, meskipun setiap pasangan kompatibel secara biner, kendala lain seperti kekurangan sumber daya jika 3 tugas dijalankan secara bersamaan tetap perlu diverifikasi secara terpisah. Jaminan [Teori Ramsey](https://kenji.blog/p/ramsey-theory/) hanya berlaku pada relasi biner yang telah didefinisikan.
 
 ## 9. Penerapan 2: Mengekstrak Barisan Naik atau Turun dari Barisan Acak
 
@@ -254,7 +254,7 @@ Ada tiga poin penting yang patut kita ingat:
 - **Keberadaan suatu aturan berbeda dengan makna dari aturan tersebut.** Sekadar menemukan segitiga monokromatik atau subbarisan monoton tidak serta-merta menentukan sifat keseluruhan populasi atau hubungan sebab-akibat di dalamnya.
 - **Setiap jaminan matematis memiliki objek dan asumsi yang spesifik.** Kita harus memperjelas apakah relasinya simetris, apakah semua pasangan dapat dipartisi menjadi dua kelompok, dan substruktur apa yang sebenarnya dicari.
 
-Daya tarik Teori Ramsey bukanlah membuat sistem yang rumit menjadi sederhana. Betapa pun rumitnya sistem secara keseluruhan, keteraturan kecil di dalamnya tidak akan pernah bisa dihilangkan sepenuhnya. Melalui beberapa garis sederhana yang digambar di atas selembar kertas, kita dapat menyaksikan keindahan konsep matematika yang mendalam ini.
+Daya tarik [Teori Ramsey](https://kenji.blog/p/ramsey-theory/) bukanlah membuat sistem yang rumit menjadi sederhana. Betapa pun rumitnya sistem secara keseluruhan, keteraturan kecil di dalamnya tidak akan pernah bisa dihilangkan sepenuhnya. Melalui beberapa garis sederhana yang digambar di atas selembar kertas, kita dapat menyaksikan keindahan konsep matematika yang mendalam ini.
 
 ### Referensi
 

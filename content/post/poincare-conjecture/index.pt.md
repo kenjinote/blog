@@ -8,9 +8,9 @@ categories: ["mathematics", "science"]
 tags: ["Topology", "Poincare Conjecture", "Grigori Perelman", "Math"]
 ---
 
-No mundo da matemática, existem muitos mistérios profundos e belos que testam a intuição humana. Entre eles, o mais famoso e com o desfecho mais dramático é a **Conjectura de Poincaré** (Poincaré Conjecture).
+No mundo da matemática, existem muitos mistérios profundos e belos que testam a intuição humana. Entre eles, o mais famoso e com o desfecho mais dramático é a **Conjectura de Poincaré** ([Poincaré Conjecture](https://kenji.blog/p/poincare-conjecture/)).
 
-Proposta em 1904 pelo genial matemático francês Henri Poincaré, esta conjectura era um problema fundamental na topologia, diretamente ligado ao grandioso tema da forma do universo. Durante cerca de 100 anos, inúmeros matemáticos proeminentes tentaram e falharam neste problema superdifícil, até que, entre 2002 e 2003, foi subitamente provado pelo solitário matemático russo Grigori Perelman, surpreendendo o mundo inteiro.
+Proposta em 1904 pelo genial matemático francês [Henri Poincaré](https://kenji.blog/p/poincare/), esta conjectura era um problema fundamental na topologia, diretamente ligado ao grandioso tema da forma do universo. Durante cerca de 100 anos, inúmeros matemáticos proeminentes tentaram e falharam neste problema superdifícil, até que, entre 2002 e 2003, foi subitamente provado pelo solitário matemático russo Grigori Perelman, surpreendendo o mundo inteiro.
 
 Neste artigo, aprofundaremos desde o significado da Conjectura de Poincaré e os conceitos básicos da topologia, até o contexto da demonstração por Perelman, com a ajuda de equações e diagramas.
 
@@ -36,7 +36,7 @@ Por outro lado, uma esfera (superfície de uma bola) não tem buracos. Portanto,
 
 ## 2. Espaço Simplesmente Conexo e a Afirmação da Conjectura de Poincaré
 
-A Conjectura de Poincaré foi uma tentativa de caracterizar uma "esfera" dessa perspectiva topológica.
+[A Conjectura de Poincaré](https://kenji.blog/p/poincare-conjecture/) foi uma tentativa de caracterizar uma "esfera" dessa perspectiva topológica.
 
 A "superfície de uma esfera" que vemos no dia a dia é chamada de esfera bidimensional ( $S^2$ ). Poincaré pensou que se uma figura fosse um espaço fechado "sem buracos", ela poderia ser homeomorfa (topologicamente equivalente) a uma esfera.
 

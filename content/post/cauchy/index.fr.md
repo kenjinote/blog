@@ -16,7 +16,7 @@ tags:
 
 ## Introduction
 
-Dans l'histoire des mathématiques, le XIXe siècle est connu comme "l'ère de la rigueur". Le mathématicien français **Augustin-Louis Cauchy** (1789-1857) est celui qui a fourni un fondement logique solide au calcul infinitésimal, qui avait été traité de manière intuitive auparavant. Son nom couronne tant de théorèmes et de concepts que quiconque étudiant les mathématiques modernes est tenu de le rencontrer.
+Dans l'histoire des mathématiques, le XIXe siècle est connu comme "l'ère de la rigueur". Le mathématicien français **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** (1789-1857) est celui qui a fourni un fondement logique solide au calcul infinitésimal, qui avait été traité de manière intuitive auparavant. Son nom couronne tant de théorèmes et de concepts que quiconque étudiant les mathématiques modernes est tenu de le rencontrer.
 
 Cet article explore la vie tumultueuse de Cauchy, un géant du monde mathématique, et les brillantes réalisations mathématiques qu'il a laissées derrière lui.
 
@@ -95,6 +95,6 @@ Ses sujets de recherche ne se limitaient pas à l'analyse mais s'étendaient à 
 
 ## Conclusion
 
-Augustin-Louis Cauchy a forgé les mathématiques, qui s'étaient appuyées sur l'intuition, en une discipline académique rigoureuse grâce au pouvoir de la logique. Les concepts et les théorèmes qu'il a créés sont profondément enracinés partout dans les mathématiques modernes.
+[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) a forgé les mathématiques, qui s'étaient appuyées sur l'intuition, en une discipline académique rigoureuse grâce au pouvoir de la logique. Les concepts et les théorèmes qu'il a créés sont profondément enracinés partout dans les mathématiques modernes.
 
 Bien que sa vie n'ait pas été facile, car il a choisi l'exil en tant que martyr de ses convictions politiques, sa passion pour la recherche de la vérité n'a jamais vacillé. L'immense héritage intellectuel qu'il a laissé derrière lui continue de guider les mathématiciens et les scientifiques du monde entier aujourd'hui.

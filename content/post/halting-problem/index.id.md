@@ -10,9 +10,9 @@ slug: "halting-problem"
 
 Saat melakukan pemrograman, kita kadang merasa cemas, "Apakah program ini akan terjebak dalam infinite loop di suatu tempat?" Jika ada **sebuah alat yang dapat secara pasti menentukan apakah program apa pun akan mengalami infinite loop**, maka pengembangan dan debugging akan menjadi jauh lebih mudah secara drastis.
 
-Namun, di bidang ilmu komputer, telah dibuktikan secara matematis bahwa alat impian semacam itu **"mustahil dibuat"**. Inilah yang dikenal sebagai **"Masalah Penghentian (Halting Problem)"**.
+Namun, di bidang ilmu komputer, telah dibuktikan secara matematis bahwa alat impian semacam itu **"mustahil dibuat"**. Inilah yang dikenal sebagai **"[Masalah Penghentian (Halting Problem)](https://kenji.blog/p/halting-problem/)"**.
 
-Artikel ini akan menjelaskan masalah yang dibuktikan oleh Alan Turing pada tahun 1936 ini dengan cara yang mudah dipahami, menggunakan contoh konkret yang intuitif, rumus matematika (KaTeX), dan diagram (Mermaid).
+Artikel ini akan menjelaskan masalah yang dibuktikan oleh [Alan Turing](https://kenji.blog/p/turing/) pada tahun 1936 ini dengan cara yang mudah dipahami, menggunakan contoh konkret yang intuitif, rumus matematika (KaTeX), dan diagram (Mermaid).
 
 ## Apa itu Masalah Penghentian?
 
@@ -150,15 +150,15 @@ Seperti yang dapat dilihat dari diagram, pada saat $D$ itu sendiri diberikan seb
 
 ## Sejarah Komputer dan Mesin Turing
 
-Alan Turing mengajukan dan membuktikan masalah ini pada tahun 1936, di era ketika komputer elektronik modern seperti sekarang belum ada. Untuk mendefinisikan secara matematis dan ketat "apa itu komputasi?", ia merancang sebuah mesin virtual yang disebut **"Mesin Turing (Turing Machine)"**.
+[Alan Turing](https://kenji.blog/p/turing/) mengajukan dan membuktikan masalah ini pada tahun 1936, di era ketika komputer elektronik modern seperti sekarang belum ada. Untuk mendefinisikan secara matematis dan ketat "apa itu komputasi?", ia merancang sebuah mesin virtual yang disebut **"Mesin Turing (Turing Machine)"**.
 
 Mesin Turing terdiri dari sebuah pita yang tak terbatas panjangnya, sebuah head yang dapat membaca dan menulis informasi pada pita tersebut, serta tabel transisi status yang mengatur status mesin. Telah diketahui bahwa sekompleks apa pun program modern, secara teori program tersebut dapat disederhanakan ke dalam bentuk Mesin Turing. Hal ini disebut **"Tesis Church-Turing (Church-Turing Thesis)"**.
 
 Turing mencoba menarik garis batas antara "masalah yang dapat dihitung" dan "masalah yang tidak dapat dihitung" menggunakan model sederhana ini. Hasil penemuannya adalah Masalah Penghentian, yang merupakan representasi utama dari masalah-masalah yang tak dapat diputuskan (undecidable problems).
 
-## Hubungan Erat dengan Teorema Ketidaklengkapan Gödel
+## Hubungan Erat dengan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/)
 
-"Paradoks rujukan diri" yang menjadi akar pembuktian Masalah Penghentian memiliki kaitan yang sangat erat dengan **"Teorema Ketidaklengkapan (Incompleteness Theorems)"** yang dikemukakan oleh Kurt Gödel pada tahun 1931, beberapa waktu sebelum Turing.
+"Paradoks rujukan diri" yang menjadi akar pembuktian Masalah Penghentian memiliki kaitan yang sangat erat dengan **"Teorema Ketidaklengkapan (Incompleteness Theorems)"** yang dikemukakan oleh [Kurt Gödel](https://kenji.blog/p/godel/) pada tahun 1931, beberapa waktu sebelum Turing.
 
 Teorema Ketidaklengkapan Pertama Gödel menyatakan bahwa, "Dalam sistem aksioma mana pun yang cukup kuat untuk mencakup aritmatika bilangan asli, pasti akan selalu ada proposisi benar yang tidak dapat dibuktikan maupun dibantah." Saat membuktikan teorema ini, Gödel menyusun proposisi rujukan diri secara matematis yang menyatakan, "Proposisi ini tidak dapat dibuktikan."
 

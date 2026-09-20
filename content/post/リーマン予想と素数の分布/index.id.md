@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Pendahuluan: Misteri Alam Semesta Bilangan Prima dan Hipotesis Riemann
 
-"Bilangan prima (Prime Numbers)" adalah bilangan asli yang hanya bisa dibagi oleh 1 dan bilangan itu sendiri, yang juga sering disebut sebagai "atom" dalam dunia matematika. Deret bilangan 2, 3, 5, 7, 11, 13... ini pada pandangan pertama terlihat tidak beraturan dan muncul secara acak. Sejak matematikawan Yunani kuno, Euclid, membuktikan bahwa "bilangan prima jumlahnya tak terhingga", tak terhitung banyaknya matematikawan yang menantang diri mereka untuk mengungkap keteraturan yang tersembunyi di balik susunan bilangan prima ini.
+"Bilangan prima (Prime Numbers)" adalah bilangan asli yang hanya bisa dibagi oleh 1 dan bilangan itu sendiri, yang juga sering disebut sebagai "atom" dalam dunia matematika. Deret bilangan 2, 3, 5, 7, 11, 13... ini pada pandangan pertama terlihat tidak beraturan dan muncul secara acak. Sejak matematikawan Yunani kuno, [Euclid](https://kenji.blog/p/euclid/), membuktikan bahwa "bilangan prima jumlahnya tak terhingga", tak terhitung banyaknya matematikawan yang menantang diri mereka untuk mengungkap keteraturan yang tersembunyi di balik susunan bilangan prima ini.
 
-Yang paling mendekati misteri bilangan prima ini adalah **"Hipotesis Riemann (Riemann Hypothesis)"**, yang diusulkan oleh matematikawan Jerman, Bernhard Riemann, pada tahun 1859. Hipotesis Riemann adalah salah satu dari masalah terpenting dan belum terpecahkan dalam matematika modern, serta merupakan salah satu dari Masalah Hadiah Milenium (Millennium Prize Problems) yang ditetapkan oleh Clay Mathematics Institute dengan hadiah sebesar 1 juta dolar.
+Yang paling mendekati misteri bilangan prima ini adalah **"Hipotesis Riemann (Riemann Hypothesis)"**, yang diusulkan oleh matematikawan Jerman, [Bernhard Riemann](https://kenji.blog/p/riemann/), pada tahun 1859. Hipotesis Riemann adalah salah satu dari masalah terpenting dan belum terpecahkan dalam matematika modern, serta merupakan salah satu dari Masalah Hadiah Milenium (Millennium Prize Problems) yang ditetapkan oleh Clay Mathematics Institute dengan hadiah sebesar 1 juta dolar.
 
 Sekilas, masalah sulit matematika murni terkait distribusi bilangan prima mungkin terasa tidak ada hubungannya dengan kehidupan kita sehari-hari. Namun, keamanan internet yang menopang infrastruktur masyarakat modern, terutama **teknologi kriptografi modern seperti kriptografi RSA dan kriptografi kurva eliptik (ECC)**, sangat bergantung pada sifat-sifat bilangan prima yang sangat besar.
 
@@ -30,13 +30,13 @@ Sebagai contoh:
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-Carl Friedrich Gauss, seorang matematikawan jenius berusia 15 tahun, menghitung tabel bilangan prima yang sangat besar dan menemukan bahwa frekuensi kemunculan bilangan prima berkurang secara berbanding terbalik dengan logaritma natural $\ln x$. Dengan kata lain, ia memperkirakan bahwa peluang menemukan bilangan prima di sekitar suatu bilangan $x$ adalah sekitar $\frac{1}{\ln x}$.
+[Carl Friedrich Gauss](https://kenji.blog/p/gauss/), seorang matematikawan jenius berusia 15 tahun, menghitung tabel bilangan prima yang sangat besar dan menemukan bahwa frekuensi kemunculan bilangan prima berkurang secara berbanding terbalik dengan logaritma natural $\ln x$. Dengan kata lain, ia memperkirakan bahwa peluang menemukan bilangan prima di sekitar suatu bilangan $x$ adalah sekitar $\frac{1}{\ln x}$.
 
 Representasi dari penemuan ini menggunakan integral disebut **integral logaritmik (Logarithmic integral)** $\text{Li}(x)$.
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-Perkiraan Gauss kemudian dibuktikan secara independen oleh Jacques Hadamard dan Charles-Jean de La Vallée Poussin pada tahun 1896, yang memantapkannya sebagai **Teorema Bilangan Prima (Prime Number Theorem, PNT)**.
+Perkiraan Gauss kemudian dibuktikan secara independen oleh Jacques Hadamard dan Charles-Jean de La Vallée Poussin pada tahun 1896, yang memantapkannya sebagai **Teorema Bilangan Prima ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT)**.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ Melalui teorema ini, kita mengetahui bahwa jika dilihat secara makroskopis, bila
 
 # 3. Fungsi Zeta Riemann dan Produk Euler
 
-Senjata paling kuat dalam menganalisis distribusi bilangan prima adalah **Fungsi Zeta Riemann (Riemann Zeta Function)**. Awalnya, fungsi ini adalah deret tak terhingga yang didefinisikan untuk bilangan real $s > 1$ oleh Leonhard Euler.
+Senjata paling kuat dalam menganalisis distribusi bilangan prima adalah **Fungsi Zeta Riemann (Riemann Zeta Function)**. Awalnya, fungsi ini adalah deret tak terhingga yang didefinisikan untuk bilangan real $s > 1$ oleh [Leonhard Euler](https://kenji.blog/p/euler/).
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -184,7 +184,7 @@ Terkadang muncul legenda urban yang mengatakan, "Jika Hipotesis Riemann terpecah
 Pembuktian Hipotesis Riemann itu sendiri tidak serta merta akan langsung menghasilkan algoritma ajaib yang mempercepat faktorisasi prima secara drastis. Hipotesis Riemann pada dasarnya adalah teorema tentang "keteraturan distribusi bilangan prima secara makroskopis", dan hal ini tidak serta merta memberikan petunjuk langsung tentang bilangan prima manakah yang dapat membagi bilangan $N$ tertentu (sifat secara lokal).
 
 Namun, dampaknya tidaklah nol.
-Sebab, dalam proses pembuktian Hipotesis Riemann, probabilitas ditemukannya **"peralatan matematis baru" atau "metode analisis yang belum pernah diketahui"** sangatlah tinggi. Melihat sejarah ke belakang, ketika Teorema Terakhir Fermat atau Konjektur Poincaré dibuktikan, teori-teori baru yang dikembangkan selama proses tersebut telah mendorong lompatan besar bagi matematika secara keseluruhan.
+Sebab, dalam proses pembuktian Hipotesis Riemann, probabilitas ditemukannya **"peralatan matematis baru" atau "metode analisis yang belum pernah diketahui"** sangatlah tinggi. Melihat sejarah ke belakang, ketika [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/) atau [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/) dibuktikan, teori-teori baru yang dikembangkan selama proses tersebut telah mendorong lompatan besar bagi matematika secara keseluruhan.
 
 Jika suatu metode geometri aljabar atau geometri non-komutatif yang belum diketahui dapat dimantapkan, di mana metode ini bisa mengontrol secara penuh sifat dari pembuat nol fungsi zeta Riemann, bukan tidak mungkin hal itu pada akhirnya berujung pada penemuan algoritma faktorisasi prima yang revolusioner (contohnya, algoritma klasik yang dapat mereduksi kompleksitas komputasi menjadi waktu polinomial). Dalam artian tersebut, para ahli kriptografi tidak pernah bisa memalingkan pandangannya dari perkembangan Hipotesis Riemann.
 

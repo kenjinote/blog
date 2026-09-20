@@ -10,7 +10,7 @@ tags: ["Euler", "Historia de las Matemáticas", "Genio", "Física"]
 
 ## Introducción
 
-Al recordar la historia de las matemáticas, es absolutamente imposible omitir el nombre de **Leonhard Euler** (1707–1783). Es ampliamente reconocido como uno de los matemáticos más prolíficos e influyentes en la historia de la humanidad. Desde el cálculo y la teoría de números hasta la teoría de grafos, la mecánica, la óptica y la astronomía, su mente inquisitiva y sus huellas se extienden a todos los campos de la ciencia.
+Al recordar la historia de las matemáticas, es absolutamente imposible omitir el nombre de **[Leonhard Euler](https://kenji.blog/p/euler/)** (1707–1783). Es ampliamente reconocido como uno de los matemáticos más prolíficos e influyentes en la historia de la humanidad. Desde el cálculo y la teoría de números hasta la teoría de grafos, la mecánica, la óptica y la astronomía, su mente inquisitiva y sus huellas se extienden a todos los campos de la ciencia.
 
 En este artículo, profundizaremos en la turbulenta vida del genio Euler y los brillantes logros que dejó para las generaciones futuras. Las leyes y fórmulas que descubrió forman la base de la ciencia y la tecnología actuales, lo que hace que su trabajo sea profundamente relevante para quienes vivimos en el mundo moderno.
 
@@ -72,9 +72,9 @@ $$
 
 Con este descubrimiento, instantáneamente capturó la atención de toda Europa.
 
-### 4.2 Los Siete Puentes de Königsberg
+### 4.2 [Los Siete Puentes de Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)
 
-En 1736, Euler resolvió un acertijo conocido como "Los Siete Puentes de Königsberg". El problema era el siguiente: "¿Es posible cruzar los siete puentes sobre el río Pregel exactamente una vez y regresar al punto de partida?"
+En 1736, Euler resolvió un acertijo conocido como "[Los Siete Puentes de Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)". El problema era el siguiente: "¿Es posible cruzar los siete puentes sobre el río Pregel exactamente una vez y regresar al punto de partida?"
 
 Euler modeló este problema como una red abstracta, tratando las masas de tierra como "vértices" (nodos) y los puentes como "aristas".
 
@@ -133,6 +133,6 @@ En los libros de texto de matemáticas que estudiamos hoy, el aliento de Euler s
 
 ## Conclusión
 
-Leonhard Euler no fue solo un genio del cálculo; poseía una intuición y una perspicacia extraordinarias, lo que le permitía discernir las estructuras esenciales dentro de fenómenos complejos y expresarlas como hermosas fórmulas y conceptos.
+[Leonhard Euler](https://kenji.blog/p/euler/) no fue solo un genio del cálculo; poseía una intuición y una perspicacia extraordinarias, lo que le permitía discernir las estructuras esenciales dentro de fenómenos complejos y expresarlas como hermosas fórmulas y conceptos.
 
 Incluso en la desesperada situación de perder la vista, Euler nunca perdió su pasión por las matemáticas, continuando su vuelo a través del universo de la mente con una memoria y una concentración increíbles. Las hermosas fórmulas y teoremas que dejó seguirán brillando para siempre como propiedad intelectual de la humanidad. Su vida nos enseña cuán increíblemente poderoso y noble puede ser el espíritu humano.

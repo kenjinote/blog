@@ -10,7 +10,7 @@ tags: ["Windows AI", "Copilot Runtime", "NPU", "C#", "C++"]
 description: 'Windows 11におけるローカルAI機能の実装方法、Windows Copilot Runtime、NPU、DirectMLを活用するC#およびC++の実践的コード例を網羅した詳細なガイドです。'
 ---
 
-# Microsoft.Windows.AIの最新API活用事例とサンプルコード：Windows Copilot Runtimeの深淵を探る
+# [Microsoft.Windows.AIの最新API活用事例とサンプルコード](https://kenji.blog/p/Microsoft.Windows.AIの最新API活用事例とサンプルコード/)：Windows Copilot Runtimeの深淵を探る
 
 ## 1. はじめに：AIがネイティブに組み込まれるWindowsの新時代
 

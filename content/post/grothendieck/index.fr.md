@@ -8,9 +8,9 @@ categories: ["Mathématiques", "Biographie"]
 tags: ["Grothendieck", "Géométrie Algébrique", "Théorie des Schémas", "Théorie des Catégories"]
 ---
 
-# Alexandre Grothendieck : Vie et Œuvres du Plus Grand Mathématicien du 20e Siècle
+# [[Alexandre Grothendieck](https://kenji.blog/p/grothendieck/) : Vie et Œuvres du Plus Grand Mathématicien du 20e Siècle](https://kenji.blog/p/grothendieck/)
 
-Alexandre Grothendieck est l'un des plus grands mathématiciens de l'histoire, ayant apporté un changement de paradigme fondamental dans la communauté mathématique de la fin du 20e siècle, en particulier dans le domaine de la géométrie algébrique. Ses réalisations sont allées bien au-delà de la résolution de problèmes ouverts individuels ; elles ont fondamentalement reconstruit le langage même et le cadre conceptuel des mathématiques. Dans cet article, nous fournirons une explication détaillée de sa vie extraordinaire et dramatique, ainsi que de son impact incommensurable sur les mathématiques modernes.
+[Alexandre Grothendieck](https://kenji.blog/p/grothendieck/) est l'un des plus grands mathématiciens de l'histoire, ayant apporté un changement de paradigme fondamental dans la communauté mathématique de la fin du 20e siècle, en particulier dans le domaine de la géométrie algébrique. Ses réalisations sont allées bien au-delà de la résolution de problèmes ouverts individuels ; elles ont fondamentalement reconstruit le langage même et le cadre conceptuel des mathématiques. Dans cet article, nous fournirons une explication détaillée de sa vie extraordinaire et dramatique, ainsi que de son impact incommensurable sur les mathématiques modernes.
 
 ## 1. Une Enfance Tumultueuse et l'Ombre de la Guerre
 
@@ -124,4 +124,4 @@ Dans les années 1980, il a écrit d'immenses mémoires intitulés *Récoltes et
 
 ## Conclusion
 
-Alexandre Grothendieck était un géant qui a apporté un paysage entièrement nouveau à la discipline des mathématiques. Les concepts qu'il a laissés derrière lui transcendent le simple cadre des mathématiques, démontrant les possibilités d'expansion de la pensée logique humaine. Le monde profond qu'il contemplait continue de porter des fruits abondants encore aujourd'hui.
+[Alexandre Grothendieck](https://kenji.blog/p/grothendieck/) était un géant qui a apporté un paysage entièrement nouveau à la discipline des mathématiques. Les concepts qu'il a laissés derrière lui transcendent le simple cadre des mathématiques, démontrant les possibilités d'expansion de la pensée logique humaine. Le monde profond qu'il contemplait continue de porter des fruits abondants encore aujourd'hui.

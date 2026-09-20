@@ -17,7 +17,7 @@ tags:
 
 ## 1. Qu'est-ce que le jeu de la vie de Conway ?
 
-Le **Jeu de la vie de Conway** (Conway's Game of Life) est un type d'**automate cellulaire** conçu par le mathématicien britannique John Horton Conway en 1970. Bien qu'il s'appelle un jeu, c'est un « jeu à zéro joueur », ce qui signifie que son évolution est déterminée par son état initial, ne nécessitant aucune intervention supplémentaire.
+Le **Jeu de la vie de Conway** ([Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/)) est un type d'**automate cellulaire** conçu par le mathématicien britannique John Horton Conway en 1970. Bien qu'il s'appelle un jeu, c'est un « jeu à zéro joueur », ce qui signifie que son évolution est déterminée par son état initial, ne nécessitant aucune intervention supplémentaire.
 
 Le plus grand attrait de ce système réside dans le fait que **des comportements complexes et imprévisibles semblables à la vie (émergence) sont générés à partir de règles déterministes extrêmement simples**.
 
@@ -135,4 +135,4 @@ plt.show()
 
 ## 6. Conclusion
 
-Le jeu de la vie de Conway est l'un des exemples les plus beaux et les plus intuitifs d'**émergence**, où la complexité est générée à partir de règles simples. Situé aux frontières des mathématiques, de l'informatique, de la physique et de la biologie, ce modèle continue de fournir une métaphore puissante pour notre compréhension des concepts de « vie » et de « calcul ».
+[Le jeu de la vie de Conway](https://kenji.blog/p/conways-game-of-life/) est l'un des exemples les plus beaux et les plus intuitifs d'**émergence**, où la complexité est générée à partir de règles simples. Situé aux frontières des mathématiques, de l'informatique, de la physique et de la biologie, ce modèle continue de fournir une métaphore puissante pour notre compréhension des concepts de « vie » et de « calcul ».

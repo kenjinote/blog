@@ -9,7 +9,7 @@ categories: ["ai", "llm", "api"]
 tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 ---
 
-# ChatGPT・Gemini・ClaudeのAPI徹底比較！どれを選ぶべき？
+# [ChatGPT・Gemini・ClaudeのAPI徹底比較！どれを選ぶべき？](https://kenji.blog/p/chatgpt-gemini-claude-api-comparison/)
 
 AI技術の進化は目覚ましく、特に大規模言語モデル（LLM: Large Language Model）の分野では、OpenAIのChatGPT（GPTシリーズ）、GoogleのGemini、AnthropicのClaudeが三つ巴の激しい覇権争いを繰り広げています。2026年現在、各社は数ヶ月、いや数週間単位で新しいモデルやAPI機能をリリースしており、開発者や企業のITアーキテクトにとって「どのAPIをプロダクトに組み込むべきか」という問いは、プロジェクトの成功を左右する極めて重要な意思決定となっています。
 

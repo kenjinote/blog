@@ -10,7 +10,7 @@ tags: ["Hilbert", "Geschichte der Mathematik", "Geometrie", "Funktionalanalysis"
 
 ## 1. Einleitung: Der Vater der modernen Mathematik
 
-David Hilbert (23. Januar 1862 – 14. Februar 1943) war ein deutscher Mathematiker und gilt weithin als einer der einflussreichsten und bedeutendsten Mathematiker des späten 19. und frühen 20. Jahrhunderts. Oft mit seinem brillanten französischen Zeitgenossen Henri Poincaré verglichen, betonte Hilbert im Gegensatz zu Poincarés Verlass auf die Intuition die strenge Logik und den Formalismus. Hilbert beeinflusste fast jeden Bereich der modernen Mathematik zutiefst und verdiente sich den Beinamen **"Der König der Mathematik"**.
+[David Hilbert](https://kenji.blog/p/hilbert/) (23. Januar 1862 – 14. Februar 1943) war ein deutscher Mathematiker und gilt weithin als einer der einflussreichsten und bedeutendsten Mathematiker des späten 19. und frühen 20. Jahrhunderts. Oft mit seinem brillanten französischen Zeitgenossen [Henri Poincaré](https://kenji.blog/p/poincare/) verglichen, betonte Hilbert im Gegensatz zu Poincarés Verlass auf die Intuition die strenge Logik und den Formalismus. Hilbert beeinflusste fast jeden Bereich der modernen Mathematik zutiefst und verdiente sich den Beinamen **"Der König der Mathematik"**.
 
 Seine Beiträge umfassen die Invariantentheorie, die algebraische Zahlentheorie, die Axiomatisierung der Geometrie, Integralgleichungen, die Funktionalanalysis (Hilberträume) und die theoretische Physik (die mathematischen Grundlagen der allgemeinen Relativitätstheorie). Sein größtes Vermächtnis liegt nicht nur in der Lösung isolierter offener Probleme, sondern in der grundlegenden Neugestaltung der Struktur und Natur der Mathematik selbst, wodurch die neuen Paradigmen des Axiomatismus und Formalismus etabliert wurden. In diesem Artikel werfen wir einen tiefen und detaillierten Blick auf die dramatischen Lebensepisoden Hilberts und seine brillanten Errungenschaften.
 
@@ -18,7 +18,7 @@ Seine Beiträge umfassen die Invariantentheorie, die algebraische Zahlentheorie,
 
 Hilbert wurde am 23. Januar 1862 in Wehlau in der Nähe von Königsberg (heute Kaliningrad, Russland), der Hauptstadt der Provinz Ostpreußen im Königreich Preußen, geboren. Sein Vater, Otto Hilbert, war ein strenger Amtsrichter. Seine Mutter, Maria Therese, war eine gebildete Frau mit großem Interesse an Philosophie und Astronomie. Man sagt, Hilbert habe sein logisches Denken und seinen Wissensdurst von seinen Eltern geerbt.
 
-Königsberg war eine Stadt mit tiefen akademischen Wurzeln; es war der Geburtsort des großen Philosophen Immanuel Kant und war berühmt für das von Leonhard Euler gelöste Problem der "Sieben Brücken von Königsberg". In seiner Schulzeit waren Hilberts Noten unauffällig, aber er besaß eine besondere Intuition und Leidenschaft für Mathematik. Er verabscheute das Auswendiglernen und zog es vor, Probleme zu lösen, indem er die Logik in seinem eigenen Kopf von Grund auf neu aufbaute. Dieser Ansatz – das Aufbauen auf logischen Grundlagen anstatt sich auf das Auswendiglernen zu verlassen – wurde zum Kern seines späteren mathematischen Stils.
+Königsberg war eine Stadt mit tiefen akademischen Wurzeln; es war der Geburtsort des großen Philosophen Immanuel Kant und war berühmt für das von [Leonhard Euler](https://kenji.blog/p/euler/) gelöste Problem der "Sieben Brücken von Königsberg". In seiner Schulzeit waren Hilberts Noten unauffällig, aber er besaß eine besondere Intuition und Leidenschaft für Mathematik. Er verabscheute das Auswendiglernen und zog es vor, Probleme zu lösen, indem er die Logik in seinem eigenen Kopf von Grund auf neu aufbaute. Dieser Ansatz – das Aufbauen auf logischen Grundlagen anstatt sich auf das Auswendiglernen zu verlassen – wurde zum Kern seines späteren mathematischen Stils.
 
 ### "Mathematische Spaziergänge" und lebenslange Freunde
 
@@ -53,17 +53,17 @@ In diesem Bericht wandte er die Galoistheorie auf die Zahlentheorie an und legte
 
 1899 veröffentlichte Hilbert das Buch "Grundlagen der Geometrie". Es rekonstruierte das Axiomensystem der euklidischen Geometrie, das über 2000 Jahre lang das absolute Fundament der Geometrie gewesen war, vollständig aus einer modernen Perspektive.
 
-Euklids "Elemente" enthielten mehrere implizite Annahmen und Elemente, die auf visueller Intuition beruhten. Hilbert beseitigte diese konsequent und präsentierte ein streng definiertes Axiomensystem, das aus fünf Gruppen bestand: Axiome der Verknüpfung (Inzidenz), der Anordnung, der Kongruenz, der Parallelen und der Stetigkeit.
+[Euklid](https://kenji.blog/p/euclid/)s "Elemente" enthielten mehrere implizite Annahmen und Elemente, die auf visueller Intuition beruhten. Hilbert beseitigte diese konsequent und präsentierte ein streng definiertes Axiomensystem, das aus fünf Gruppen bestand: Axiome der Verknüpfung (Inzidenz), der Anordnung, der Kongruenz, der Parallelen und der Stetigkeit.
 
 Er erklärte berühmt: **"Man muss jederzeit an Stelle von 'Punkte, Geraden, Ebenen' 'Tische, Stühle, Bierseidel' sagen können."** Dies war eine durchschlagende Erklärung des **Formalismus**, die die Geometrie von jeder intuitiven oder physikalischen Realität bezüglich der Natur der Objekte befreite und lediglich die logischen Beziehungen zwischen den Objekten als Grundlage der Mathematik festlegte. Dieser bahnbrechende Ansatz wurde zum Standardstil der axiomatischen Methode in der modernen Mathematik.
 
 ## 6. Einladung an die Universität Göttingen und der Beginn eines Goldenen Zeitalters
 
-1895 wurde Hilbert auf nachdrückliche Empfehlung von Felix Klein, einem Schwergewicht der deutschen Mathematik, zum Professor an der Universität Göttingen ernannt. Göttingen war bereits als heiliger Boden der Mathematik bekannt, da hier einst Carl Friedrich Gauss und Bernhard Riemann wirkten.
+1895 wurde Hilbert auf nachdrückliche Empfehlung von Felix Klein, einem Schwergewicht der deutschen Mathematik, zum Professor an der Universität Göttingen ernannt. Göttingen war bereits als heiliger Boden der Mathematik bekannt, da hier einst [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) und [Bernhard Riemann](https://kenji.blog/p/riemann/) wirkten.
 
-Mit Hilberts Ankunft etablierte sich Göttingen wieder fest als das weltweit führende mathematische Zentrum. Seine Vorlesungen waren stets klar und voller Leidenschaft für neue mathematische Ideen und zogen brillante Studenten und Forscher aus der ganzen Welt an. Viele Superstars, die später die Mathematik des 20. Jahrhunderts prägen sollten, wie Emmy Noether, Hermann Weyl, Richard Courant und John von Neumann, wurden von Hilbert betreut.
+Mit Hilberts Ankunft etablierte sich Göttingen wieder fest als das weltweit führende mathematische Zentrum. Seine Vorlesungen waren stets klar und voller Leidenschaft für neue mathematische Ideen und zogen brillante Studenten und Forscher aus der ganzen Welt an. Viele Superstars, die später die Mathematik des 20. Jahrhunderts prägen sollten, wie [Emmy Noether](https://kenji.blog/p/noether/), Hermann Weyl, Richard Courant und John von Neumann, wurden von Hilbert betreut.
 
-Besonders berühmt ist die Anekdote um Emmy Noether. Zu dieser Zeit verboten die Universitätsregeln Frauen, akademische Positionen innezuhaben. Hilbert, der ihr außergewöhnliches Talent in der Algebra hoch schätzte, protestierte vehement in der Fakultätssitzung und erklärte: **"Die Fakultät ist doch keine Badeanstalt, daher spielt das Geschlecht keine Rolle!"** Diese Aussage veranschaulicht anschaulich seinen fortschrittlichen, leistungsorientierten und unvoreingenommenen Charakter.
+Besonders berühmt ist die Anekdote um [Emmy Noether](https://kenji.blog/p/noether/). Zu dieser Zeit verboten die Universitätsregeln Frauen, akademische Positionen innezuhaben. Hilbert, der ihr außergewöhnliches Talent in der Algebra hoch schätzte, protestierte vehement in der Fakultätssitzung und erklärte: **"Die Fakultät ist doch keine Badeanstalt, daher spielt das Geschlecht keine Rolle!"** Diese Aussage veranschaulicht anschaulich seinen fortschrittlichen, leistungsorientierten und unvoreingenommenen Charakter.
 
 ## 7. Der Internationale Mathematikerkongress in Paris 1900: Hilberts 23 Probleme
 
@@ -128,15 +128,15 @@ Dieses Programm löste heftige Debatten (den Grundlagenstreit) mit Intuitioniste
 
 ## 11. Der Schock der Gödelschen Unvollständigkeitssätze und die Transformation des Programms
 
-Im Jahr 1931 veröffentlichte jedoch der junge österreichische Logiker Kurt Gödel seine **Unvollständigkeitssätze**, die dem Hilbertprogramm einen vernichtenden Schlag versetzten.
+Im Jahr 1931 veröffentlichte jedoch der junge österreichische Logiker [Kurt Gödel](https://kenji.blog/p/godel/) seine **Unvollständigkeitssätze**, die dem Hilbertprogramm einen vernichtenden Schlag versetzten.
 
 Gödel bewies mathematisch und perfekt, dass es in jedem hinreichend mächtigen formalen System, das die Axiome der Arithmetik enthält, immer Aussagen geben wird, die "innerhalb des Systems wahr sind, aber nicht bewiesen oder widerlegt werden können" (Erster Unvollständigkeitssatz), und dass "es unmöglich ist, die Konsistenz des Systems innerhalb des Systems selbst zu beweisen" (Zweiter Unvollständigkeitssatz).
 
-Dies zeigte, dass die Konstruktion des "perfekten mathematischen Systems, in dem alles bewiesen werden kann, einschließlich seiner eigenen Konsistenz", wovon Hilbert geträumt hatte, unmöglich war. Obwohl Hilbert Berichten zufolge anfangs zutiefst enttäuscht und verärgert über dieses Ergebnis war, führten die strengen Methoden der Metamathematik und der formalen Logik, die während der Verfolgung des Hilbertprogramms entwickelt wurden, letztendlich direkt zur Gründung der Informatik und der theoretischen Informatik durch Alan Turing.
+Dies zeigte, dass die Konstruktion des "perfekten mathematischen Systems, in dem alles bewiesen werden kann, einschließlich seiner eigenen Konsistenz", wovon Hilbert geträumt hatte, unmöglich war. Obwohl Hilbert Berichten zufolge anfangs zutiefst enttäuscht und verärgert über dieses Ergebnis war, führten die strengen Methoden der Metamathematik und der formalen Logik, die während der Verfolgung des Hilbertprogramms entwickelt wurden, letztendlich direkt zur Gründung der Informatik und der theoretischen Informatik durch [Alan Turing](https://kenji.blog/p/turing/).
 
 ## 12. Späte Jahre in Göttingen: Der Aufstieg der Nazis und das Ende eines mathematischen Heiligtums
 
-In den 1930er Jahren ergriff die NSDAP unter der Führung von Adolf Hitler die Macht in Deutschland. 1933 wurde das "Gesetz zur Wiederherstellung des Berufsbeamtentums" erlassen, was zur rücksichtslosen Vertreibung vieler herausragender jüdischer Mathematiker und regimekritischer Wissenschaftler an der Universität Göttingen führte, darunter Emmy Noether, Hermann Weyl, Richard Courant und Max Born.
+In den 1930er Jahren ergriff die NSDAP unter der Führung von Adolf Hitler die Macht in Deutschland. 1933 wurde das "Gesetz zur Wiederherstellung des Berufsbeamtentums" erlassen, was zur rücksichtslosen Vertreibung vieler herausragender jüdischer Mathematiker und regimekritischer Wissenschaftler an der Universität Göttingen führte, darunter [Emmy Noether](https://kenji.blog/p/noether/), Hermann Weyl, Richard Courant und Max Born.
 
 Göttingen, einst ein pulsierendes mathematisches Heiligtum, in dem sich Talente aus der ganzen Welt versammelten, brach fast über Nacht zusammen. Einmal fragte der NS-Erziehungsminister Bernhard Rust Hilbert auf einem Bankett: "Wie ist die Mathematik in Ihrem Institut, nachdem sie von dem jüdischen Einfluss befreit worden ist?" Hilbert antwortete voller Wut und Trauer: "Mathematisches Institut? Das gibt es ja gar nicht mehr."
 
@@ -144,14 +144,14 @@ Am 14. Februar 1943, mitten im Zweiten Weltkrieg, verstarb Hilbert einsam im Alt
 
 ## 13. Fazit: "Wir müssen wissen, wir werden wissen"
 
-Auch nach David Hilberts Tod ist sein mathematisches Vermächtnis nie verblasst. Die Entwicklung seiner Gedanken ist in jeder Ecke der modernen Mathematik eingeschrieben.
+Auch nach [David Hilbert](https://kenji.blog/p/hilbert/)s Tod ist sein mathematisches Vermächtnis nie verblasst. Die Entwicklung seiner Gedanken ist in jeder Ecke der modernen Mathematik eingeschrieben.
 
 Auf seinem Grabstein sind die berühmten Worte eingraviert, die seine Abschiedsrede in seiner Heimatstadt Königsberg im Jahr 1930 abschlossen und seinen unerschütterlichen, absoluten Glauben an die menschliche Vernunft und wissenschaftliche Forschung demonstrierten. Dies war eine kraftvolle Widerlegung des pessimistischen Agnostizismus der damaligen Zeit, der in dem Satz "ignoramus et ignorabimus" (wir wissen nicht und werden nicht wissen) zusammengefasst war.
 
 > **Wir müssen wissen.**
 > **Wir werden wissen.**
 
-David Hilbert glaubte zutiefst an die unendlichen Möglichkeiten der Mathematik und war zeitlebens ein Pionier ihrer Grenzen. Sein widerstandsfähiger Geist, seine Philosophie und seine brillanten Leistungen sind Fleisch und Blut der modernen Mathematiker geworden, hauchen heute jedem Winkel der Mathematik Leben ein und inspirieren weiterhin zukünftige Entdecker.
+[David Hilbert](https://kenji.blog/p/hilbert/) glaubte zutiefst an die unendlichen Möglichkeiten der Mathematik und war zeitlebens ein Pionier ihrer Grenzen. Sein widerstandsfähiger Geist, seine Philosophie und seine brillanten Leistungen sind Fleisch und Blut der modernen Mathematiker geworden, hauchen heute jedem Winkel der Mathematik Leben ein und inspirieren weiterhin zukünftige Entdecker.
 
 ## Chronologie
 

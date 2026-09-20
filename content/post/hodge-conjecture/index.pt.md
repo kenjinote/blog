@@ -10,7 +10,7 @@ tags: ["Problemas do Prêmio Millennium", "Topologia", "Geometria Algébrica", "
 
 # Introdução
 
-No mundo da matemática, ainda existem muitos mistérios não resolvidos. Entre eles, especialmente importantes e que se erguem como grandes barreiras na matemática moderna, estão os **Problemas do Prêmio Millennium** (Millennium Prize Problems). Os 7 problemas não resolvidos anunciados pelo Clay Mathematics Institute no ano 2000 têm, cada um, um prêmio de 1 milhão de dólares, e matemáticos geniais de todo o mundo estão tentando resolvê-los. Neste artigo, exploraremos profundamente um desses Problemas do Prêmio Millennium, uma conjectura muito bela que conecta a geometria algébrica e a topologia: a **Conjectura de Hodge** (Hodge Conjecture).
+No mundo da matemática, ainda existem muitos mistérios não resolvidos. Entre eles, especialmente importantes e que se erguem como grandes barreiras na matemática moderna, estão os **Problemas do Prêmio Millennium** (Millennium Prize Problems). Os 7 problemas não resolvidos anunciados pelo Clay Mathematics Institute no ano 2000 têm, cada um, um prêmio de 1 milhão de dólares, e matemáticos geniais de todo o mundo estão tentando resolvê-los. Neste artigo, exploraremos profundamente um desses Problemas do Prêmio Millennium, uma conjectura muito bela que conecta a geometria algébrica e a topologia: a **Conjectura de Hodge** ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/)).
 
 A Conjectura de Hodge é, em poucas palavras, uma conjectura sobre a profunda relação entre "formas geométricas" e "equações algébricas". Mais precisamente, ela questiona se, em uma variedade algébrica projetiva não singular sobre o corpo dos números complexos, objetos com propriedades topológicas específicas podem ser expressos por uma combinação de subvariedades algébricas.
 
@@ -68,7 +68,7 @@ são chamadas de **Classes de Hodge** (Hodge Class).
 
 Estamos prontos. A afirmação da Conjectura de Hodge é extremamente simples, mas surpreendentemente poderosa.
 
-> **Conjectura de Hodge (Hodge Conjecture)**
+> **[Conjectura de Hodge ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))](https://kenji.blog/p/hodge-conjecture/)**
 > Qualquer classe de Hodge em uma variedade algébrica projetiva não singular X sobre o corpo dos números complexos pode ser expressa por uma combinação linear com coeficientes racionais de ciclos algébricos.
 
 Em outras palavras, ela afirma que "classes de cohomologia (classes de Hodge) que parecem algébrico-geométricas do ponto de vista da topologia e da análise complexa são, na verdade, originadas de formas (ciclos algébricos) criadas a partir de equações algébricas".
@@ -106,7 +106,7 @@ Um método geral para reconstruir equações algébricas concretas a partir de d
 
 Existem várias generalizações e conjecturas relacionadas à Conjectura de Hodge.
 
-- **Conjectura de Hodge Generalizada (Generalized Hodge Conjecture)**: Uma tentativa de estender a Conjectura de Hodge para um quadro mais geral (por exemplo, variedades com singularidades ou variedades abertas). Foi formulada por Alexander Grothendieck e outros, mas encontrar contra-exemplos, entre outras coisas, tornou a própria formulação adequada um desafio.
+- **Conjectura de Hodge Generalizada (Generalized [Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))**: Uma tentativa de estender a Conjectura de Hodge para um quadro mais geral (por exemplo, variedades com singularidades ou variedades abertas). Foi formulada por [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) e outros, mas encontrar contra-exemplos, entre outras coisas, tornou a própria formulação adequada um desafio.
 - **Conjectura de Tate (Tate Conjecture)**: Conhecida como um análogo da teoria dos números para a Conjectura de Hodge. Ela é formulada usando o conceito de cohomologia étale (Étale Cohomology) para variedades sobre corpos finitos, e não sobre o corpo dos números complexos. Este também é um problema não resolvido extremamente difícil.
 
 ## 6. Resumo e Perspectivas Futuras
@@ -144,7 +144,7 @@ A Conjectura de Hodge não é um problema isolado, mas está profundamente conec
 
 ### 8.1 Conjecturas Padrão de Grothendieck (Grothendieck's Standard Conjectures)
 
-Alexander Grothendieck estabeleceu uma série de conjecturas grandiosas sobre ciclos algébricos em variedades algébricas. Estas são as **Conjecturas Padrão** (Standard Conjectures on Algebraic Cycles).
+[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) estabeleceu uma série de conjecturas grandiosas sobre ciclos algébricos em variedades algébricas. Estas são as **Conjecturas Padrão** (Standard Conjectures on Algebraic Cycles).
 
 As Conjecturas Padrão incluem a teoria da interseção de ciclos algébricos e a generalização do Teorema de Lefschetz para dimensões arbitrárias. Acredita-se que, se a Conjectura de Hodge for verdadeira, parte das Conjecturas Padrão se seguirá para variedades sobre o corpo dos números complexos. Inversamente, se as Conjecturas Padrão forem resolvidas, elas fornecerão meios poderosos para a Conjectura de Hodge. Estas são peças essenciais para a conclusão da "Teoria dos Motivos" (Theory of Motives), que é o objetivo final da geometria algébrica.
 

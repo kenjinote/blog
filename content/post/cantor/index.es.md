@@ -14,17 +14,17 @@ tags:
   - "Historia de las matemáticas"
 ---
 
-# ¿Quién fue Georg Cantor?
+# ¿Quién fue [Georg Cantor](https://kenji.blog/p/cantor/)?
 
-En la historia de las matemáticas, el concepto de "infinito" fue considerado un tabú durante mucho tiempo. El infinito se trataba estrictamente como un "estado sin fin (infinito potencial)" y se consideraba peligroso tratarlo como un "todo completado (infinito actual)". Sin embargo, a finales del siglo XIX, hubo un hombre que desafió este tabú de frente y esculpió el infinito mismo como un tema de las matemáticas. Ese hombre fue **Georg Cantor**.
+En la historia de las matemáticas, el concepto de "infinito" fue considerado un tabú durante mucho tiempo. El infinito se trataba estrictamente como un "estado sin fin (infinito potencial)" y se consideraba peligroso tratarlo como un "todo completado (infinito actual)". Sin embargo, a finales del siglo XIX, hubo un hombre que desafió este tabú de frente y esculpió el infinito mismo como un tema de las matemáticas. Ese hombre fue **[Georg Cantor](https://kenji.blog/p/cantor/)**.
 
 Su creación de la "Teoría de conjuntos" se ha convertido en la base de todos los campos de las matemáticas modernas. En este artículo, analizaremos en detalle la vida de Cantor y sus asombrosos logros matemáticos.
 
 ## Una vida turbulenta
 
-Georg Cantor nació en 1845 en San Petersburgo, Rusia. Su padre era un rico comerciante de Dinamarca y su madre una música rusa. Mostrando un talento extraordinario para las matemáticas desde temprana edad, finalmente se mudó a Alemania y estudió matemáticas en la Universidad de Berlín.
+[Georg Cantor](https://kenji.blog/p/cantor/) nació en 1845 en San Petersburgo, Rusia. Su padre era un rico comerciante de Dinamarca y su madre una música rusa. Mostrando un talento extraordinario para las matemáticas desde temprana edad, finalmente se mudó a Alemania y estudió matemáticas en la Universidad de Berlín.
 
-En la Universidad de Berlín, fue guiado por las figuras destacadas del mundo matemático de la época, **Karl Weierstrass** y **Leopold Kronecker**. Kronecker en particular se convertiría más tarde en el mayor oponente de Cantor.
+En la Universidad de Berlín, fue guiado por las figuras destacadas del mundo matemático de la época, **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** y **Leopold Kronecker**. Kronecker en particular se convertiría más tarde en el mayor oponente de Cantor.
 
 ### La búsqueda del infinito y el conflicto con Kronecker
 
@@ -44,7 +44,7 @@ graph TD
 
 El hecho de que su teoría no fuera entendida y de que continuara recibiendo ataques implacables de su antiguo profesor socavó profundamente la salud mental de Cantor. Desarrolló depresión y repetidamente entraba y salía de hospitales psiquiátricos.
 
-Sin embargo, su teoría fue gradualmente apoyada por generaciones más jóvenes de matemáticos, como **David Hilbert**. Hilbert elogió a Cantor con los más altos cumplidos, afirmando: "Nadie nos expulsará del paraíso que Cantor ha creado para nosotros". Cantor terminó su vida en un hospital psiquiátrico en Halle en 1918, pero después de su muerte, la teoría de conjuntos estableció una posición inamovible como la base más importante de las matemáticas.
+Sin embargo, su teoría fue gradualmente apoyada por generaciones más jóvenes de matemáticos, como **[David Hilbert](https://kenji.blog/p/hilbert/)**. Hilbert elogió a Cantor con los más altos cumplidos, afirmando: "Nadie nos expulsará del paraíso que Cantor ha creado para nosotros". Cantor terminó su vida en un hospital psiquiátrico en Halle en 1918, pero después de su muerte, la teoría de conjuntos estableció una posición inamovible como la base más importante de las matemáticas.
 
 ## Logros matemáticos: Contando el infinito
 
@@ -113,8 +113,8 @@ graph TD
 
 ¿Existe una cardinalidad intermedia entre la cardinalidad de los números naturales $\aleph_0$ y la cardinalidad de los números reales $\mathfrak{c}$? Cantor planteó la hipótesis de que "no existe tal cardinalidad intermedia". Esta es la **Hipótesis del Continuo (HC)**.
 
-Cantor pasó gran parte de sus últimos años tratando de probar esta hipótesis, pero finalmente no pudo resolverla. Más tarde, a través de la investigación de Kurt Gödel y Paul Cohen, se descubrió que la hipótesis del continuo es una proposición independiente que "no puede ser probada ni refutada" a partir de los axiomas estándar de la teoría de conjuntos (axiomas ZFC), dando una vez más una gran conmoción a la comunidad matemática.
+Cantor pasó gran parte de sus últimos años tratando de probar esta hipótesis, pero finalmente no pudo resolverla. Más tarde, a través de la investigación de [Kurt Gödel](https://kenji.blog/p/godel/) y Paul Cohen, se descubrió que la hipótesis del continuo es una proposición independiente que "no puede ser probada ni refutada" a partir de los axiomas estándar de la teoría de conjuntos (axiomas ZFC), dando una vez más una gran conmoción a la comunidad matemática.
 
 ## Conclusión
 
-Georg Cantor demostró que la razón humana puede alcanzar el reino divino del "infinito". Su trágica vida cuenta la historia de la soledad de un genio que estaba demasiado adelantado a su tiempo, pero el vasto "Paraíso de Cantor" que esculpió continúa fascinando a los matemáticos de todo el mundo en la actualidad. No es exagerado decir que las matemáticas modernas se construyen sobre la base de su desesperada búsqueda.
+[Georg Cantor](https://kenji.blog/p/cantor/) demostró que la razón humana puede alcanzar el reino divino del "infinito". Su trágica vida cuenta la historia de la soledad de un genio que estaba demasiado adelantado a su tiempo, pero el vasto "Paraíso de Cantor" que esculpió continúa fascinando a los matemáticos de todo el mundo en la actualidad. No es exagerado decir que las matemáticas modernas se construyen sobre la base de su desesperada búsqueda.

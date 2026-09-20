@@ -50,7 +50,7 @@ Lewis Fry Richardson discovered this phenomenon empirically in 1951. As the unit
 
 ## Fractal Dimension: Between 1D and 2D
 
-The mathematician Benoit Mandelbrot provided a mathematical explanation for this paradox. In 1967, he published a famous paper in the journal *Science* titled "How Long Is the Coast of Britain? Statistical Self-Similarity and Fractional Dimension".
+The mathematician Benoit Mandelbrot provided a mathematical explanation for this paradox. In 1967, he published a famous paper in the journal *Science* titled "[How Long Is the Coast of Britain?](https://kenji.blog/p/海岸線のパラドックス/) Statistical Self-Similarity and Fractional Dimension".
 
 Mandelbrot pointed out that natural shapes like coastlines possess **self-similarity (fractals)**, meaning that "no matter how much you zoom in, the same kind of complex structure appears."
 

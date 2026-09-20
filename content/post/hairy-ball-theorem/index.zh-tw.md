@@ -14,13 +14,13 @@ tags:
 
 ## 前言
 
-在拓撲學（Topology）這個數學領域中，存在許多直觀上有趣且強大的定理。其中特別有名的就是 **毛球定理** （Hairy Ball Theorem）。這個定理可以用非常視覺化且易懂的話來表達：「你無法將一個長滿毛的球梳理平整，而不留下任何髮旋」。
+在拓撲學（Topology）這個數學領域中，存在許多直觀上有趣且強大的定理。其中特別有名的就是 **毛球定理** （[Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)）。這個定理可以用非常視覺化且易懂的話來表達：「你無法將一個長滿毛的球梳理平整，而不留下任何髮旋」。
 
 然而，在其背後隱藏著深刻的數學意義，甚至影響著我們居住的地球氣象、電腦圖學，甚至是物理學的基本定律。本文將詳細解說這個定理的直觀意義、數學公式化，以及令人驚嘆的應用實例。
 
 ## 什麼是毛球定理？
 
-毛球定理最早由亨利·龐加萊（Henri Poincaré）在1885年提及，並在1912年由魯伊茲·布勞威爾（Luitzen Egbertus Jan Brouwer）嚴謹證明。
+毛球定理最早由[亨利·龐加萊](https://kenji.blog/p/poincare/)（[Henri Poincaré](https://kenji.blog/p/poincare/)）在1885年提及，並在1912年由魯伊茲·布勞威爾（Luitzen Egbertus Jan Brouwer）嚴謹證明。
 
 ### 直觀的理解
 

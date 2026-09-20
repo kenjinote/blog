@@ -54,9 +54,9 @@ Die Zeitkomplexität dieses Algorithmus beträgt $O(\sqrt{N})$. Für $N \le 10^{
 
 Um die Grenzen der Probedivision zu überwinden, wurden "probabilistische Algorithmen (Probabilistic Algorithm)" entwickelt, die zahlentheoretische Theoreme nutzen. Ein typisches Beispiel ist der "Fermat-Primzahltest (Fermat Primality Test)", der den kleinen Fermatschen Satz anwendet.
 
-## Kleiner Fermatscher Satz (Fermat's Little Theorem)
+## Kleiner Fermatscher Satz ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-Dieser von Pierre de Fermat entdeckte Satz besagt Folgendes:
+Dieser von [Pierre de Fermat](https://kenji.blog/p/fermat/) entdeckte Satz besagt Folgendes:
 
 > Für jede Primzahl $p$ und jede beliebige ganze Zahl $a$, die teilerfremd zu $p$ ist (kein Vielfaches von $p$), gilt die folgende Kongruenz:
 > $$ a^{p-1} \equiv 1 \pmod p $$

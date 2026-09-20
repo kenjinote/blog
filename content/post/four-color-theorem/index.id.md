@@ -10,7 +10,7 @@ tags: ["Teorema Empat Warna", "Teori Graf", "Pembuktian Berbantuan Komputer", "T
 
 ## 1. Apa itu Masalah Empat Warna?
 
-Masalah Empat Warna (Four Color Theorem) adalah salah satu masalah paling terkenal dan menarik dalam matematika, terutama dalam teori graf dan topologi. Klaimnya sangat sederhana dan cukup intuitif untuk dipahami bahkan oleh siswa sekolah dasar. Klaim tersebut adalah bahwa "untuk mewarnai peta mana pun di bidang datar sedemikian rupa sehingga wilayah yang berdekatan memiliki warna yang berbeda, maksimal **4 warna** sudah cukup".
+Masalah Empat Warna ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) adalah salah satu masalah paling terkenal dan menarik dalam matematika, terutama dalam teori graf dan topologi. Klaimnya sangat sederhana dan cukup intuitif untuk dipahami bahkan oleh siswa sekolah dasar. Klaim tersebut adalah bahwa "untuk mewarnai peta mana pun di bidang datar sedemikian rupa sehingga wilayah yang berdekatan memiliki warna yang berbeda, maksimal **4 warna** sudah cukup".
 
 "Berdekatan" di sini berarti berbagi garis batas, bukan hanya sebuah titik. Jika mereka hanya bersentuhan di satu titik, tidak masalah jika diwarnai dengan warna yang sama. Hipotesis intuitif ini pertama kali diajukan oleh Francis Guthrie pada tahun 1852. Saat mewarnai peta Inggris, ia menyadari bahwa betapapun rumitnya batas-batas suatu wilayah, 4 warna sudah cukup untuk mewarnai semuanya.
 
@@ -67,7 +67,7 @@ Eksplorasi masalah ini mengajarkan kita betapa kuatnya intuisi manusia, dan bera
 
 ## 1. Apa itu Masalah Empat Warna?
 
-Masalah Empat Warna (Four Color Theorem) adalah salah satu masalah paling terkenal dan menarik dalam matematika, terutama dalam teori graf dan topologi. Klaimnya sangat sederhana dan cukup intuitif untuk dipahami bahkan oleh siswa sekolah dasar. Klaim tersebut adalah bahwa "untuk mewarnai peta mana pun di bidang datar sedemikian rupa sehingga wilayah yang berdekatan memiliki warna yang berbeda, maksimal **4 warna** sudah cukup".
+Masalah Empat Warna ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) adalah salah satu masalah paling terkenal dan menarik dalam matematika, terutama dalam teori graf dan topologi. Klaimnya sangat sederhana dan cukup intuitif untuk dipahami bahkan oleh siswa sekolah dasar. Klaim tersebut adalah bahwa "untuk mewarnai peta mana pun di bidang datar sedemikian rupa sehingga wilayah yang berdekatan memiliki warna yang berbeda, maksimal **4 warna** sudah cukup".
 
 "Berdekatan" di sini berarti berbagi garis batas, bukan hanya sebuah titik. Jika mereka hanya bersentuhan di satu titik, tidak masalah jika diwarnai dengan warna yang sama. Hipotesis intuitif ini pertama kali diajukan oleh Francis Guthrie pada tahun 1852. Saat mewarnai peta Inggris, ia menyadari bahwa betapapun rumitnya batas-batas suatu wilayah, 4 warna sudah cukup untuk mewarnai semuanya.
 
@@ -124,7 +124,7 @@ Eksplorasi masalah ini mengajarkan kita betapa kuatnya intuisi manusia, dan bera
 
 ## 1. Apa itu Masalah Empat Warna?
 
-Masalah Empat Warna (Four Color Theorem) adalah salah satu masalah paling terkenal dan menarik dalam matematika, terutama dalam teori graf dan topologi. Klaimnya sangat sederhana dan cukup intuitif untuk dipahami bahkan oleh siswa sekolah dasar. Klaim tersebut adalah bahwa "untuk mewarnai peta mana pun di bidang datar sedemikian rupa sehingga wilayah yang berdekatan memiliki warna yang berbeda, maksimal **4 warna** sudah cukup".
+Masalah Empat Warna ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) adalah salah satu masalah paling terkenal dan menarik dalam matematika, terutama dalam teori graf dan topologi. Klaimnya sangat sederhana dan cukup intuitif untuk dipahami bahkan oleh siswa sekolah dasar. Klaim tersebut adalah bahwa "untuk mewarnai peta mana pun di bidang datar sedemikian rupa sehingga wilayah yang berdekatan memiliki warna yang berbeda, maksimal **4 warna** sudah cukup".
 
 "Berdekatan" di sini berarti berbagi garis batas, bukan hanya sebuah titik. Jika mereka hanya bersentuhan di satu titik, tidak masalah jika diwarnai dengan warna yang sama. Hipotesis intuitif ini pertama kali diajukan oleh Francis Guthrie pada tahun 1852. Saat mewarnai peta Inggris, ia menyadari bahwa betapapun rumitnya batas-batas suatu wilayah, 4 warna sudah cukup untuk mewarnai semuanya.
 

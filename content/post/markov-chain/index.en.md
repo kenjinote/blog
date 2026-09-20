@@ -98,7 +98,7 @@ Solving the system of equations yields the following:
 
 Solving this gives $\pi_{\text{Sunny}} = \frac{4}{7} \approx 0.57$ and $\pi_{\text{Rainy}} = \frac{3}{7} \approx 0.43$. In other words, in the long run, there is about a 57% chance of it being sunny and a 43% chance of it being rainy.
 
-## Applications of Markov Chains
+## Applications of [Markov Chains](https://kenji.blog/p/markov-chain/)
 
 Markov chains are not limited to the world of mathematics; they are applied to various real-world systems.
 

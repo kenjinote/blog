@@ -23,7 +23,7 @@ Zwillingsprimzahlen (Twin Primes) sind Paare von Primzahlen, deren Differenz gen
 - $(29, 31)$
 - $(41, 43)$
 
-Durch den Primzahlsatz (Prime Number Theorem) ist bekannt, dass die Häufigkeit des Auftretens von Primzahlen selbst abnimmt, je größer die Zahlen werden. Dementsprechend nimmt auch die Häufigkeit des Auftretens von Zwillingsprimzahlen ab. Mathematiker haben jedoch seit langem vermutet, dass dieses "Primzahlpaar mit einer Differenz von 2" unerschöpflich auftaucht, egal wie groß die Zahlen werden.
+Durch den Primzahlsatz ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/)) ist bekannt, dass die Häufigkeit des Auftretens von Primzahlen selbst abnimmt, je größer die Zahlen werden. Dementsprechend nimmt auch die Häufigkeit des Auftretens von Zwillingsprimzahlen ab. Mathematiker haben jedoch seit langem vermutet, dass dieses "Primzahlpaar mit einer Differenz von 2" unerschöpflich auftaucht, egal wie groß die Zahlen werden.
 
 Dies ist die **Zwillingsprimzahlvermutung** .
 
@@ -76,7 +76,7 @@ $$
 
 Dieser Konvergenzwert $B_2$ wird als **Brunsche Konstante** (Brun's Constant) bezeichnet. Nach aktuellen Berechnungen wird sie auf $B_2 \approx 1.90216058$ geschätzt.
 
-Dass die Summe der Kehrwerte aller Primzahlen divergiert, wurde von Leonhard Euler bewiesen. Wenn die Zwillingsprimzahlvermutung falsch wäre und es nur endlich viele Zwillingsprimzahlen gäbe, würde die Summe natürlich konvergieren, da es sich um die Summe einer endlichen Anzahl von Zahlen handelt. Der Satz von Brun bedeutet jedoch: "Selbst wenn es unendlich viele Zwillingsprimzahlen gibt, existieren sie so 'spärlich', dass die Summe ihrer Kehrwerte konvergiert." Dies ist einer der Faktoren, der die Lösung der Zwillingsprimzahlvermutung so extrem schwierig macht.
+Dass die Summe der Kehrwerte aller Primzahlen divergiert, wurde von [Leonhard Euler](https://kenji.blog/p/euler/) bewiesen. Wenn die Zwillingsprimzahlvermutung falsch wäre und es nur endlich viele Zwillingsprimzahlen gäbe, würde die Summe natürlich konvergieren, da es sich um die Summe einer endlichen Anzahl von Zahlen handelt. Der Satz von Brun bedeutet jedoch: "Selbst wenn es unendlich viele Zwillingsprimzahlen gibt, existieren sie so 'spärlich', dass die Summe ihrer Kehrwerte konvergiert." Dies ist einer der Faktoren, der die Lösung der Zwillingsprimzahlvermutung so extrem schwierig macht.
 
 ## 4. Dramatische Fortschritte der letzten Jahre: Der Durchbruch von Yitang Zhang
 

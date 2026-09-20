@@ -42,7 +42,7 @@ $$
 
 ## 3. GNFS（一般數體篩法）的演算法全貌與數學結構
 
-GNFS 擁有非常複雜且高度的數學基礎。其基本概念是費馬小定理和二次篩法（QS）的延伸，透過找到滿足同餘式 $X^2 \equiv Y^2 \pmod n$ 且 $X \not\equiv \pm Y \pmod n$ 的非平凡解 $(X, Y)$，進而導出 $n$ 的因數 $\gcd(X-Y, n)$。
+GNFS 擁有非常複雜且高度的數學基礎。其基本概念是[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)和二次篩法（QS）的延伸，透過找到滿足同餘式 $X^2 \equiv Y^2 \pmod n$ 且 $X \not\equiv \pm Y \pmod n$ 的非平凡解 $(X, Y)$，進而導出 $n$ 的因數 $\gcd(X-Y, n)$。
 
 然而，GNFS 的精髓在於，它並非僅在有理數體 $\mathbb{Q}$ 上進行，而是同時在稱為代數數體（Algebraic Number Field）的擴充體 $\mathbb{Q}(\alpha)$ 及有理數體兩端探索「平滑數（Smooth numbers）」，並透過同態映射來建構同餘關係。
 

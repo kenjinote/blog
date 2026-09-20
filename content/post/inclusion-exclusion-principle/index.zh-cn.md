@@ -17,13 +17,13 @@ tags:
 
 在数学和计算机科学中，我们经常会遇到需要计算满足多个条件的元素数量的情况。然而，当存在多个条件时，满足每个条件的元素集合通常会重叠（有交集）。简单地将它们相加会导致元素被多次计算。
 
-一种能准确消除这些重叠并得出正确元素数量的强大方法是 **容斥原理** （Inclusion-Exclusion Principle）。
+一种能准确消除这些重叠并得出正确元素数量的强大方法是 **[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)** （[Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/)）。
 
-在本文中，我们将全面详细地解释容斥原理，从其基本概念到一般化的数学公式、数学证明以及具体的应用实例（例如欧拉函数和错排问题）。此外，我们还将介绍编程实现示例，以从理论和实践两个角度加深您的理解。
+在本文中，我们将全面详细地解释[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)，从其基本概念到一般化的数学公式、数学证明以及具体的应用实例（例如欧拉函数和错排问题）。此外，我们还将介绍编程实现示例，以从理论和实践两个角度加深您的理解。
 
 ## 2. 集合与元素数量的基础
 
-在学习容斥原理之前，让我们先回顾一下基本的集合符号。
+在学习[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)之前，让我们先回顾一下基本的集合符号。
 
 - $A, B$ ：集合
 - $|A|$ ：集合 $A$ 的元素数量（势）
@@ -32,7 +32,7 @@ tags:
 
 我们要寻找的是多个集合的并集的元素数量，即 $|A \cup B \cup \dots|$ 。
 
-## 3. 2个集合的容斥原理
+## 3. 2个集合的[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)
 
 让我们考虑最简单的包含两个集合 $A$ 和 $B$ 的情况。
 
@@ -59,7 +59,7 @@ flowchart TD
     B -->|"重叠"| AandB
 ```
 
-## 4. 3个集合的容斥原理
+## 4. 3个集合的[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)
 
 当有三个集合时，它变得稍微复杂一些。考虑集合 $A, B, C$ 。
 
@@ -98,7 +98,7 @@ $$
 $$
 因此，能被2、3或5整除的数字有 **74** 个。
 
-## 5. 一般 $n$ 个集合的容斥原理
+## 5. 一般 $n$ 个集合的[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)
 
 将其推广到 $n$ 个集合 $A_1, A_2, \dots, A_n$ ，我们得到以下优美的公式。
 
@@ -133,7 +133,7 @@ $$
 
 ## 6. 应用示例1：欧拉函数
 
-欧拉函数 $\varphi(N)$ 表示从 $1$ 到 $N$ 中与 $N$ 互质的整数的数量。这也可以使用容斥原理来计算。
+欧拉函数 $\varphi(N)$ 表示从 $1$ 到 $N$ 中与 $N$ 互质的整数的数量。这也可以使用[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)来计算。
 
 设 $N$ 的质因数为 $p_1, p_2, \dots, p_k$ 。
 设全集为 $U = \{1, 2, \dots, N\}$ ， $A_i$ 为“ $p_i$ 的倍数的集合”。
@@ -143,7 +143,7 @@ $$
 \varphi(N) = N - \left| \bigcup_{i=1}^k A_i \right|
 $$
 
-应用容斥原理并进行化简可得出这个著名的公式：
+应用[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)并进行化简可得出这个著名的公式：
 
 $$
 \varphi(N) = N \left(1 - \frac{1}{p_1}\right) \left(1 - \frac{1}{p_2}\right) \dots \left(1 - \frac{1}{p_k}\right)
@@ -156,7 +156,7 @@ $$
 设 $A_i$ 为“ $i$ 在第 $i$ 个位置的排列的集合”。全集的元素数量为 $n!$ 。
 我们想要求的是 $n! - |A_1 \cup A_2 \cup \dots \cup A_n|$ 。
 
-任何 $k$ 个集合交集的元素数量是 $(n-k)!$ ，而选择这些 $k$ 个集合的方法有 $\binom{n}{k}$ 种。应用容斥原理，错排的数量 $D_n$ 如下：
+任何 $k$ 个集合交集的元素数量是 $(n-k)!$ ，而选择这些 $k$ 个集合的方法有 $\binom{n}{k}$ 种。应用[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)，错排的数量 $D_n$ 如下：
 
 $$
 D_n = n! \sum_{k=0}^n \frac{(-1)^k}{k!}
@@ -164,7 +164,7 @@ $$
 
 ## 8. 通过编程计算和实现
 
-容斥原理在编程中非常有用。特别是当结合位运算全排列搜索（二进制枚举）时，$n$ 个条件的容斥原理可以被简洁地实现。
+[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)在编程中非常有用。特别是当结合位运算全排列搜索（二进制枚举）时，$n$ 个条件的[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)可以被简洁地实现。
 
 以下是使用 Python 来寻找“在1到 $M$ 之间能被给定列表中的任何素数整除的整数数量”的代码。
 
@@ -203,7 +203,7 @@ print(f"结果: {count_multiples(M, primes)}")
 
 ## 9. 结论
 
-容斥原理是一个神奇的数学公式，它将看似复杂的集合重叠分解为简单而机械的加减法重复。
+[容斥原理](https://kenji.blog/p/inclusion-exclusion-principle/)是一个神奇的数学公式，它将看似复杂的集合重叠分解为简单而机械的加减法重复。
 
 它的应用范围异常广泛，从基本的概率问题到高级的竞赛编程，以及与密码学相关的欧拉函数计算。
 掌握这门强大的技巧将大大提高您在数学和算法领域的解决问题的能力。请务必尝试将其应用于各种问题中，并体验其威力。

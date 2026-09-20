@@ -8,13 +8,13 @@ categories: ["Mathematics", "Biography"]
 tags: ["Poincare", "Topology", "Chaos Theory", "History of Mathematics", "Physics"]
 ---
 
-Henri Poincaré (1854–1912) is one of the greatest mathematicians in history that France has ever produced, as well as a theoretical physicist, engineer, and philosopher of science. He is often referred to as **"The Last Universalist"** because he deeply understood every mathematical field of his time and made fundamental contributions to each of them. Considering how highly specialized and fragmented modern mathematics has become, it is unlikely that anyone with such a comprehensive view of all fields will ever appear again.
+[Henri Poincaré](https://kenji.blog/p/poincare/) (1854–1912) is one of the greatest mathematicians in history that France has ever produced, as well as a theoretical physicist, engineer, and philosopher of science. He is often referred to as **"The Last Universalist"** because he deeply understood every mathematical field of his time and made fundamental contributions to each of them. Considering how highly specialized and fragmented modern mathematics has become, it is unlikely that anyone with such a comprehensive view of all fields will ever appear again.
 
 In this article, we will explore with overwhelming volume and depth the dramatic life of Poincaré, his very human episodes, and the profound mathematical and physical legacy he left to the world.
 
 ## 1. Early Life and Unique Educational Environment: The Sprouting of a Genius
 
-Henri Poincaré was born on April 29, 1854, in the northeastern French city of Nancy, into a highly intellectual elite family. His father, Léon Poincaré, was a professor in the faculty of medicine at the University of Nancy, and his cousin, Raymond Poincaré, would later become a prominent politician serving as Prime Minister and President of France. Such a blessed family environment greatly stimulated his intellectual curiosity.
+[Henri Poincaré](https://kenji.blog/p/poincare/) was born on April 29, 1854, in the northeastern French city of Nancy, into a highly intellectual elite family. His father, Léon Poincaré, was a professor in the faculty of medicine at the University of Nancy, and his cousin, Raymond Poincaré, would later become a prominent politician serving as Prime Minister and President of France. Such a blessed family environment greatly stimulated his intellectual curiosity.
 
 During his childhood, Poincaré suffered from diphtheria, which left him unable to speak for a long period and confined to his sickbed. However, this period of isolation abnormally developed his internal thinking abilities. He possessed an **intuitive memory** that allowed him to perfectly memorize the contents of a book after reading it just once, and he learned to freely manipulate the visual arrangement of letters and spatial relationships in his mind.
 
@@ -39,7 +39,7 @@ graph TD
 
 Instead of chasing complex celestial trajectories with calculation formulas, Poincaré focused on the "geometric shape of space" traced by the entire trajectory. He fully utilized the concept of phase space and devised the "Poincaré map," which records only the points where the trajectory crosses a specific plane. This opened the way for a qualitative understanding of the behavior of complex mechanical systems.
 
-## 3. The Poincaré Conjecture: The Founding of Topology
+## 3. The [Poincaré Conjecture](https://kenji.blog/p/poincare-conjecture/): The Founding of Topology
 
 Another monumental achievement of Poincaré was his single-handed founding of **Topology** , a major field in modern mathematics. In his 1895 paper "Analysis Situs," he constructed a new mathematical framework to study the properties of figures that are preserved even when they are continuously deformed.
 
@@ -75,18 +75,18 @@ Poincaré observed how mathematical intuition worked within himself and left man
 
 He had been agonizing over a difficult mathematical problem for several months, unable to find a clue to the solution despite repeated conscious calculations and logical reasoning. Exhausted, he decided to step away from his research and joined a geological excursion. Then, during the trip, at the exact moment he was about to board a horse-drawn omnibus in the town of Coutances, a perfect solution suddenly flashed in his mind.
 
-> "At the moment when I put my foot on the step the idea came to me, without anything in my former thoughts seeming to have paved the way for it, that the transformations I had used to define the Fuchsian functions were identical with those of non-Euclidean geometry. I did not verify the idea; I should not have had time, as, upon taking my seat in the omnibus, I went on with a conversation already commenced, but I felt a perfect certainty."
+> "At the moment when I put my foot on the step the idea came to me, without anything in my former thoughts seeming to have paved the way for it, that the transformations I had used to define the Fuchsian functions were identical with those of non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry. I did not verify the idea; I should not have had time, as, upon taking my seat in the omnibus, I went on with a conversation already commenced, but I felt a perfect certainty."
 
 From this experience, Poincaré categorized the process of creative discovery into four stages: "Preparation" (conscious effort), "Incubation" (combining information in the unconscious), "Illumination" (sudden intuitive understanding), and "Verification" (logical proof). His insights prove how powerful the unconscious is as a computational resource in the depths of human thought.
 
 ## 6. Philosophy of Science: The Advocacy of Conventionalism
 
-Poincaré also left a huge mark in the field of philosophy of science. He advocated a position known as **Conventionalism** . This is the idea that "fundamental axioms and laws in science (such as the axioms of Euclidean geometry) are neither a priori truths nor empirical facts, but merely 'convenient conventions' adopted by humans to describe nature."
+Poincaré also left a huge mark in the field of philosophy of science. He advocated a position known as **Conventionalism** . This is the idea that "fundamental axioms and laws in science (such as the axioms of [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry) are neither a priori truths nor empirical facts, but merely 'convenient conventions' adopted by humans to describe nature."
 
-He stated, "It is not that Euclidean geometry is true and non-Euclidean geometry is false. It is the same as saying that the metric system is not more true than the yard system." This flexible philosophical attitude later became an important ideological foundation when Einstein constructed the General Theory of Relativity using non-Euclidean geometry.
+He stated, "It is not that [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry is true and non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry is false. It is the same as saying that the metric system is not more true than the yard system." This flexible philosophical attitude later became an important ideological foundation when Einstein constructed the General Theory of Relativity using non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry.
 
 ## 7. Conclusion: Poincaré's Eternal Legacy
 
-In 1912, Henri Poincaré passed away at the young age of 58. When he died, scientists around the world grieved that "the light of French intellect has been extinguished."
+In 1912, [Henri Poincaré](https://kenji.blog/p/poincare/) passed away at the young age of 58. When he died, scientists around the world grieved that "the light of French intellect has been extinguished."
 
 The mathematical foundations he left behind for **Topology** , **Chaos theory** , and the **Principle of Relativity** breathe life into every field today, from modern particle physics and cosmology to weather prediction and economic models. Poincaré taught us not just fragmented pieces of specialized knowledge, but the universal beauty of mathematics that pierces through the entire world. When we reflect on his life and achievements, we witness the ultimate depth and expanse that the human spirit can reach.

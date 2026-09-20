@@ -50,7 +50,7 @@ Lewis Fry Richardson entdeckte dieses Phänomen 1951 empirisch. Wenn die Maßein
 
 ## Fraktale Dimension: Zwischen 1D und 2D
 
-Der Mathematiker Benoît Mandelbrot lieferte eine mathematische Erklärung für dieses Paradoxon. Im Jahr 1967 veröffentlichte er in der Zeitschrift Science seinen berühmten Artikel „How Long Is the Coast of Britain? Statistical Self-Similarity and Fractional Dimension“.
+Der Mathematiker Benoît Mandelbrot lieferte eine mathematische Erklärung für dieses Paradoxon. Im Jahr 1967 veröffentlichte er in der Zeitschrift Science seinen berühmten Artikel „[How Long Is the Coast of Britain?](https://kenji.blog/p/海岸線のパラドックス/) Statistical Self-Similarity and Fractional Dimension“.
 
 Mandelbrot wies darauf hin, dass natürliche Formen wie Küstenlinien eine **Selbstähnlichkeit (Fraktal)** besitzen, bei der "egal wie stark man vergrößert, ähnlich komplexe Strukturen erscheinen".
 
@@ -71,5 +71,5 @@ Dies zeigt mathematisch, dass das Messergebnis $L(s)$ gegen Unendlich $\infty$ d
 
 Das Konzept der "Länge", das wir im Alltag verwenden, funktioniert nur für glatte gerade Linien und Kurven. Für fraktale Formen in der Natur (Küstenlinien, Wolken, Gebirgszüge, Verzweigungen von Blutgefäßen usw.) ist die Frage nach einer "absoluten Länge" im Grunde mathematisch bedeutungslos.
 
-"Wie lang ist die Küstenlinie Großbritanniens?"
+"[Wie lang ist die Küstenlinie Großbritanniens?](https://kenji.blog/p/海岸線のパラドックス/)"
 Die richtige Antwort darauf lautet: "Das hängt von der Länge des Lineals ab, mit dem man misst", und theoretisch ist sie "unendlich". Die Tatsache, dass sich eine unendliche Länge in einem begrenzten, kleinen Raum zusammenfaltet, kann man als ein schönes Paradoxon unserer Raumwahrnehmung bezeichnen.

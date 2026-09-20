@@ -23,7 +23,7 @@ Twin Primes are pairs of prime numbers that have a difference of exactly 2. For 
 - $(29, 31)$
 - $(41, 43)$
 
-It is known from the Prime Number Theorem that as numbers grow larger, the frequency of appearance of primes themselves decreases. Accordingly, the frequency of appearance of twin primes also decreases. However, mathematicians have long speculated that no matter how large the numbers become, these "pairs of primes with a difference of 2" will continue to appear endlessly.
+It is known from the [Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/) that as numbers grow larger, the frequency of appearance of primes themselves decreases. Accordingly, the frequency of appearance of twin primes also decreases. However, mathematicians have long speculated that no matter how large the numbers become, these "pairs of primes with a difference of 2" will continue to appear endlessly.
 
 This is the **Twin Prime Conjecture**.
 
@@ -48,7 +48,7 @@ graph LR
     D -->|"Example"| E("(3,5), (11,13)...")
 ```
 
-According to the Prime Number Theorem, the number of primes $\pi(x)$ less than or equal to $x$ is asymptotic to approximately $x / \ln(x)$. Regarding the number of twin primes $\pi_2(x)$, there is a more powerful quantitative conjecture known as the Hardy-Littlewood Conjecture (First Hardy-Littlewood Conjecture).
+According to the [Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), the number of primes $\pi(x)$ less than or equal to $x$ is asymptotic to approximately $x / \ln(x)$. Regarding the number of twin primes $\pi_2(x)$, there is a more powerful quantitative conjecture known as the Hardy-Littlewood Conjecture (First Hardy-Littlewood Conjecture).
 
 ### Hardy-Littlewood Conjecture
 
@@ -76,7 +76,7 @@ $$
 
 This convergent value $B_2$ is called **Brun's Constant**. According to current calculations, it is estimated that $B_2 \approx 1.90216058$.
 
-It was proven by Leonhard Euler that the sum of the reciprocals of all prime numbers diverges. If the twin prime conjecture were false and there were only finitely many twin primes, it would naturally converge because it would be a sum of a finite number of terms. However, what Brun's Theorem means is that "even if twin primes exist infinitely, they exist so 'sparsely' that the sum of their reciprocals converges." This is one of the factors making the resolution of the twin prime conjecture significantly difficult.
+It was proven by [Leonhard Euler](https://kenji.blog/p/euler/) that the sum of the reciprocals of all prime numbers diverges. If the twin prime conjecture were false and there were only finitely many twin primes, it would naturally converge because it would be a sum of a finite number of terms. However, what Brun's Theorem means is that "even if twin primes exist infinitely, they exist so 'sparsely' that the sum of their reciprocals converges." This is one of the factors making the resolution of the twin prime conjecture significantly difficult.
 
 ## 4. Dramatic Progress in Recent Years: Yitang Zhang's Breakthrough
 

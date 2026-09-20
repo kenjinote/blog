@@ -12,7 +12,7 @@ tags: ["Fonction Gamma", "Euler", "Analyse Complexe", "Calcul Différentiel et I
 
 Lorsqu'on étudie les mathématiques, on est parfois confronté à la question : « Un concept discret peut-il être étendu à un concept continu ? » L'un des exemples les plus beaux et les plus importants en est la **Fonction Gamma**.
 
-La fonction Gamma étend la « factorielle » ($n!$), définie pour les nombres entiers naturels, aux nombres réels positifs et même à l'ensemble du plan complexe. Découverte par le grand mathématicien du 18ème siècle Leonhard Euler, cette fonction apparaît dans presque tous les domaines, de l'analyse mathématique et la théorie des probabilités aux statistiques et à la physique.
+La fonction Gamma étend la « factorielle » ($n!$), définie pour les nombres entiers naturels, aux nombres réels positifs et même à l'ensemble du plan complexe. Découverte par le grand mathématicien du 18ème siècle [Leonhard Euler](https://kenji.blog/p/euler/), cette fonction apparaît dans presque tous les domaines, de l'analyse mathématique et la théorie des probabilités aux statistiques et à la physique.
 
 Dans cet article, nous allons examiner de plus près les bases de la fonction Gamma et ses propriétés profondes.
 

@@ -14,7 +14,7 @@ tags:
 
 ## Pengantar
 
-Masalah Transportasi Optimal (Optimal Transport Problem) adalah masalah matematika yang menanyakan **"bagaimana memindahkan material dengan usaha minimal"** ketika memindahkan suatu zat (seperti tumpukan pasir) dari satu tempat ke tempat lain (seperti lubang).
+[Masalah Transportasi Optimal](https://kenji.blog/p/optimal-transport-problem/) ([Optimal Transport Problem](https://kenji.blog/p/optimal-transport-problem/)) adalah masalah matematika yang menanyakan **"bagaimana memindahkan material dengan usaha minimal"** ketika memindahkan suatu zat (seperti tumpukan pasir) dari satu tempat ke tempat lain (seperti lubang).
 
 Masalah ini diajukan oleh matematikawan Prancis Gaspard Monge pada abad ke-18, dan perumusan modern ditetapkan oleh Leonid Kantorovich pada abad ke-20. Saat ini, masalah tersebut banyak diterapkan di berbagai bidang mulai dari alokasi sumber daya di bidang ekonomi hingga pembelajaran mesin.
 

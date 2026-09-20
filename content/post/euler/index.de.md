@@ -10,7 +10,7 @@ tags: ["Euler", "Geschichte der Mathematik", "Genie", "Physik"]
 
 ## Einleitung
 
-Wenn man auf die Geschichte der Mathematik zurückblickt, ist es absolut unmöglich, den Namen **Leonhard Euler** (1707–1783) wegzulassen. Er ist weithin als einer der produktivsten und einflussreichsten Mathematiker der Menschheitsgeschichte anerkannt. Von der Analysis und Zahlentheorie bis hin zu Graphentheorie, Mechanik, Optik und Astronomie erstreckt sich sein Forscherdrang und seine Spuren über jeden Bereich der Wissenschaft.
+Wenn man auf die Geschichte der Mathematik zurückblickt, ist es absolut unmöglich, den Namen **[Leonhard Euler](https://kenji.blog/p/euler/)** (1707–1783) wegzulassen. Er ist weithin als einer der produktivsten und einflussreichsten Mathematiker der Menschheitsgeschichte anerkannt. Von der Analysis und Zahlentheorie bis hin zu Graphentheorie, Mechanik, Optik und Astronomie erstreckt sich sein Forscherdrang und seine Spuren über jeden Bereich der Wissenschaft.
 
 In diesem Artikel werden wir tief in das turbulente Leben des Genies Euler und die brillanten Errungenschaften, die er der Nachwelt hinterlassen hat, eintauchen. Die von ihm entdeckten Gesetze und Formeln bilden die Grundlage der heutigen Wissenschaft und Technologie und sind für uns, die wir in der modernen Welt leben, keineswegs bedeutungslos.
 
@@ -72,9 +72,9 @@ $$
 
 Mit dieser Entdeckung zog er sofort die Aufmerksamkeit ganz Europas auf sich.
 
-### 4.2 Die sieben Brücken von Königsberg
+### 4.2 [Die sieben Brücken von Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)
 
-Im Jahr 1736 löste Euler ein Rätsel, das als „Die sieben Brücken von Königsberg“ bekannt ist. Das Problem lautete: „Ist es möglich, genau einmal über alle sieben Brücken über den Fluss Pregel zu gehen und zum Ausgangspunkt zurückzukehren?“
+Im Jahr 1736 löste Euler ein Rätsel, das als „[Die sieben Brücken von Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)“ bekannt ist. Das Problem lautete: „Ist es möglich, genau einmal über alle sieben Brücken über den Fluss Pregel zu gehen und zum Ausgangspunkt zurückzukehren?“
 
 Euler modellierte dieses Problem als abstraktes Netzwerk und behandelte die Landmassen als „Knoten“ und die Brücken als „Kanten“.
 
@@ -133,6 +133,6 @@ In den Mathe-Lehrbüchern, die wir heute studieren, ist Eulers Atem überall zu 
 
 ## Fazit
 
-Leonhard Euler war nicht nur ein Rechengenie; er besaß eine außergewöhnliche Intuition und Einsicht, die es ihm ermöglichte, die wesentlichen Strukturen innerhalb komplexer Phänomene zu erkennen und sie als wunderschöne Formeln und Konzepte auszudrücken.
+[Leonhard Euler](https://kenji.blog/p/euler/) war nicht nur ein Rechengenie; er besaß eine außergewöhnliche Intuition und Einsicht, die es ihm ermöglichte, die wesentlichen Strukturen innerhalb komplexer Phänomene zu erkennen und sie als wunderschöne Formeln und Konzepte auszudrücken.
 
 Selbst in der verzweifelten Situation, sein Augenlicht zu verlieren, verlor Euler nie seine Leidenschaft für die Mathematik und flog mit unglaublichem Gedächtnis und Konzentration weiter durch das Universum des Geistes. Die wunderschönen Formeln und Theoreme, die er hinterlassen hat, werden für immer als intellektuelles Eigentum der Menschheit erstrahlen. Sein Leben lehrt uns, wie unglaublich kraftvoll und edel der menschliche Geist sein kann.

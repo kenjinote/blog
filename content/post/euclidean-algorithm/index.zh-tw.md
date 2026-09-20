@@ -8,16 +8,16 @@ categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 
-# 什麼是歐幾里得算法
+# 什麼是[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)
 
-**歐幾里得算法** （Euclidean algorithm），又稱輾轉相除法，是一種用於高效計算兩個自然數（或整數）最大公因數（Greatest Common Divisor, GCD）的算法。大約在公元前300年，古希臘數學家歐幾里得在其數學著作《幾何原本》（Elements）第7卷中記載了該算法，它也被廣泛認為是「人類最古老的算法」之一。
+**[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)** （[Euclide](https://kenji.blog/p/euclid/)an algorithm），又稱輾轉相除法，是一種用於高效計算兩個自然數（或整數）最大公因數（Greatest Common Divisor, GCD）的算法。大約在公元前300年，古希臘數學家[歐幾里得](https://kenji.blog/p/euclid/)在其數學著作《幾何原本》（Elements）第7卷中記載了該算法，它也被廣泛認為是「人類最古老的算法」之一。
 
-求最大公因數最樸素的方法是將兩個數分別進行質因數分解，然後將相同的質因數相乘。但是，當數字變得非常龐大時，質因數分解本身的計算量會變得極其巨大，難以在現實時間內得出結果。相反，如果使用 **歐幾里得算法** ，即使是長達數千位的巨大數字，也能以極快的速度計算出它們的最大公因數。
+求最大公因數最樸素的方法是將兩個數分別進行質因數分解，然後將相同的質因數相乘。但是，當數字變得非常龐大時，質因數分解本身的計算量會變得極其巨大，難以在現實時間內得出結果。相反，如果使用 **[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)** ，即使是長達數千位的巨大數字，也能以極快的速度計算出它們的最大公因數。
 
 ## 基本定理與原理
 
 設兩個自然數 $a$ 和 $b$ （$a \ge b$）的最大公因數為 $\gcd(a, b)$。
-歐幾里得算法基於以下簡單的定理：
+[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)基於以下簡單的定理：
 
 $$
 a = bq + r \implies \gcd(a, b) = \gcd(b, r)
@@ -39,7 +39,7 @@ $$
 
 ## 算法流程圖
 
-利用這一性質，歐幾里得算法通過不斷重複除法運算，直到餘數為 $0$ 為止。
+利用這一性質，[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)通過不斷重複除法運算，直到餘數為 $0$ 為止。
 
 ```mermaid
 flowchart TD
@@ -109,24 +109,24 @@ int main() {
 
 ## 時間複雜度與拉梅定理
 
-歐幾里得算法到底有多快呢？關於其計算複雜度，法國數學家加布里埃爾·拉梅在1844年證明的 **拉梅定理** （Lamé's theorem）非常著名。
+[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)到底有多快呢？關於其計算複雜度，法國數學家[加布里埃爾·拉梅](https://kenji.blog/p/lame/)在1844年證明的 **拉梅定理** （Lamé's theorem）非常著名。
 
 > **拉梅定理**
-> 對兩個自然數 $a, b$ （$a > b$）應用歐幾里得算法時，除法的次數不超過 $b$ 在十進位下位數的 $5$ 倍。
+> 對兩個自然數 $a, b$ （$a > b$）應用[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)時，除法的次數不超過 $b$ 在十進位下位數的 $5$ 倍。
 
 由此可知，該算法的時間複雜度為 $O(\log(\min(a, b)))$。
 
 最壞的情況（即除法次數最多的情況）發生在輸入費氏數列的相鄰兩項時。例如，在求 $F_{n+2}$ 和 $F_{n+1}$ 的最大公因數的過程中，商數始終為 $1$，並不斷向更小的費氏數過渡。
 
-## 擴展歐幾里得算法
+## 擴展[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)
 
-不僅能求出最大公因數，還能求出滿足以下裴蜀定理（Bézout's identity）的整數 $x, y$ 的算法，被稱為 **擴展歐幾里得算法** （Extended Euclidean algorithm）。
+不僅能求出最大公因數，還能求出滿足以下裴蜀定理（Bézout's identity）的整數 $x, y$ 的算法，被稱為 **擴展[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)** （Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm）。
 
 $$
 ax + by = \gcd(a, b)
 $$
 
-### 擴展歐幾里得算法的實作
+### 擴展[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)的實作
 
 在遞迴呼叫返回的過程中，逆向推導出 $x, y$ 的係數。
 
@@ -152,10 +152,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 
 ## 在現代社會中的應用（RSA加密等）
 
-擴展歐幾里得算法不僅僅是一個數學難題，它還是支撐現代網際網路社會不可或缺的技術。
+擴展[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)不僅僅是一個數學難題，它還是支撐現代網際網路社會不可或缺的技術。
 一個典型的例子就是 **RSA加密** 。在RSA加密的金鑰生成過程中，對於某個數 $e$ 和歐拉函數 $\phi(N)$ ，需要求解滿足 $e d \equiv 1 \pmod{\phi(N)}$ 的私鑰 $d$ （模反元素）。
-因為它可以轉化為 $ed + k\phi(N) = 1$ 的形式，所以我們可以直接使用擴展歐幾里得算法以極快的速度計算出 $d$。
+因為它可以轉化為 $ed + k\phi(N) = 1$ 的形式，所以我們可以直接使用擴展[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)以極快的速度計算出 $d$。
 
 ## 總結
 
-儘管歐幾里得算法早在公元前就被發現，但由於其精簡的邏輯和極高的計算效率，它至今仍在支撐著現代計算機科學的根基。在學習算法時，這往往是我們最先接觸的主題之一，但其背後卻蘊含著豐富的數學之美與實用性。
+儘管[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)早在公元前就被發現，但由於其精簡的邏輯和極高的計算效率，它至今仍在支撐著現代計算機科學的根基。在學習算法時，這往往是我們最先接觸的主題之一，但其背後卻蘊含著豐富的數學之美與實用性。

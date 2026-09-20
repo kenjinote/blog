@@ -19,7 +19,7 @@ Selamat datang di dunia tempat bertemunya keindahan matematika dan kepraktisan p
 
 ---
 
-## 1. Identitas Euler (Euler's Identity)
+## 1. [Identitas Euler ([Euler's Identity](https://kenji.blog/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
 
 ### Keindahan Rumus dan Gambaran Umum
 Ini adalah identitas Euler yang sering disebut "Harta Karun Umat Manusia" dan "Rumus Terindah di Dunia". Lima konstanta terpenting dalam matematika (bilangan Euler $e$, unit imajiner $i$, pi $\pi$, elemen identitas perkalian $1$, dan elemen identitas penjumlahan $0$) diintegrasikan ke dalam satu rumus tunggal yang sederhana.
@@ -132,10 +132,10 @@ Pada kode di atas, nilai input `x` dinormalisasi ke dalam rentang $[-\pi, \pi]$.
 
 ---
 
-## 3. Teorema Bayes (Bayes' Theorem)
+## 3. [Teorema Bayes](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
 
 ### Keindahan Rumus dan Gambaran Umum
-Teorema Bayes adalah teorema untuk memperbarui probabilitas suatu peristiwa (probabilitas posterior) berdasarkan pengetahuan sebelumnya (probabilitas prior) yang berkaitan dengan peristiwa tersebut. Ini adalah salah satu rumus paling penting dalam teori probabilitas dan statistik.
+[Teorema Bayes](https://kenji.blog/p/bayes-theorem/) adalah teorema untuk memperbarui probabilitas suatu peristiwa (probabilitas posterior) berdasarkan pengetahuan sebelumnya (probabilitas prior) yang berkaitan dengan peristiwa tersebut. Ini adalah salah satu rumus paling penting dalam teori probabilitas dan statistik.
 
 $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
 
@@ -559,12 +559,12 @@ Pada kode di atas, kita melakukan percabangan `x >= 0` dan kebalikannya untuk me
 
 ---
 
-## 10. Jarak Euclidean dan Teorema Pythagoras (Euclidean Distance & Pythagorean Theorem)
+## 10. Jarak [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an dan Teorema Pythagoras ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Keindahan Rumus dan Gambaran Umum
 Sebagai fondasi geometri yang berasal dari Yunani kuno, rumus ini mendefinisikan jarak garis lurus antara dua titik dalam ruang $n$-dimensi. Dalam ruang 2 dimensi, ini tidak lain adalah Teorema Pythagoras itu sendiri ($a^2 + b^2 = c^2$).
 
-Jarak Euclidean $d$ antara titik $P(x_1, y_1, z_1)$ dan $Q(x_2, y_2, z_2)$ dalam ruang 3 dimensi dinyatakan sebagai berikut:
+Jarak [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an $d$ antara titik $P(x_1, y_1, z_1)$ dan $Q(x_2, y_2, z_2)$ dalam ruang 3 dimensi dinyatakan sebagai berikut:
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

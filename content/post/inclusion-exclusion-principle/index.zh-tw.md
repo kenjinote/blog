@@ -17,13 +17,13 @@ tags:
 
 在數學和計算機科學中，我們經常會遇到需要計算滿足多個條件的元素數量的情況。然而，當存在多個條件時，滿足每個條件的元素集合通常會重疊（有交集）。簡單地將它們相加會導致元素被多次計算。
 
-一種能準確消除這些重疊並得出正確元素數量的強大方法是 **排容原理** （Inclusion-Exclusion Principle）。
+一種能準確消除這些重疊並得出正確元素數量的強大方法是 **[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)** （[Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/)）。
 
-在本文中，我們將全面詳細地解釋排容原理，從其基本概念到一般化的數學公式、數學證明以及具體的應用實例（例如歐拉函數和錯排問題）。此外，我們還將介紹程式設計實作範例，以從理論和實務兩個角度加深您的理解。
+在本文中，我們將全面詳細地解釋[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)，從其基本概念到一般化的數學公式、數學證明以及具體的應用實例（例如歐拉函數和錯排問題）。此外，我們還將介紹程式設計實作範例，以從理論和實務兩個角度加深您的理解。
 
 ## 2. 集合與元素數量的基礎
 
-在學習排容原理之前，讓我們先回顧一下基本的集合符號。
+在學習[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)之前，讓我們先回顧一下基本的集合符號。
 
 - $A, B$ ：集合
 - $|A|$ ：集合 $A$ 的元素數量（勢）
@@ -32,7 +32,7 @@ tags:
 
 我們要尋找的是多個集合的聯集的元素數量，即 $|A \cup B \cup \dots|$ 。
 
-## 3. 2個集合的排容原理
+## 3. 2個集合的[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)
 
 讓我們考慮最簡單的包含兩個集合 $A$ 和 $B$ 的情況。
 
@@ -59,7 +59,7 @@ flowchart TD
     B -->|"重疊"| AandB
 ```
 
-## 4. 3個集合的排容原理
+## 4. 3個集合的[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)
 
 當有三個集合時，它變得稍微複雜一些。考慮集合 $A, B, C$ 。
 
@@ -98,7 +98,7 @@ $$
 $$
 因此，能被2、3或5整除的數字有 **74** 個。
 
-## 5. 一般 $n$ 個集合的排容原理
+## 5. 一般 $n$ 個集合的[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)
 
 將其推廣到 $n$ 個集合 $A_1, A_2, \dots, A_n$ ，我們得到以下優美的公式。
 
@@ -133,7 +133,7 @@ $$
 
 ## 6. 應用範例1：歐拉函數
 
-歐拉函數 $\varphi(N)$ 表示從 $1$ 到 $N$ 中與 $N$ 互質的整數的數量。這也可以使用排容原理來計算。
+歐拉函數 $\varphi(N)$ 表示從 $1$ 到 $N$ 中與 $N$ 互質的整數的數量。這也可以使用[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)來計算。
 
 設 $N$ 的質因數為 $p_1, p_2, \dots, p_k$ 。
 設全集為 $U = \{1, 2, \dots, N\}$ ， $A_i$ 為「 $p_i$ 的倍數的集合」。
@@ -143,7 +143,7 @@ $$
 \varphi(N) = N - \left| \bigcup_{i=1}^k A_i \right|
 $$
 
-應用排容原理並進行化簡可得出這個著名的公式：
+應用[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)並進行化簡可得出這個著名的公式：
 
 $$
 \varphi(N) = N \left(1 - \frac{1}{p_1}\right) \left(1 - \frac{1}{p_2}\right) \dots \left(1 - \frac{1}{p_k}\right)
@@ -156,7 +156,7 @@ $$
 設 $A_i$ 為「 $i$ 在第 $i$ 個位置的排列的集合」。全集的元素數量為 $n!$ 。
 我們要求的是 $n! - |A_1 \cup A_2 \cup \dots \cup A_n|$ 。
 
-任何 $k$ 個集合交集的元素數量是 $(n-k)!$ ，而選擇這些 $k$ 個集合的方法有 $\binom{n}{k}$ 種。應用排容原理，錯排的數量 $D_n$ 如下：
+任何 $k$ 個集合交集的元素數量是 $(n-k)!$ ，而選擇這些 $k$ 個集合的方法有 $\binom{n}{k}$ 種。應用[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)，錯排的數量 $D_n$ 如下：
 
 $$
 D_n = n! \sum_{k=0}^n \frac{(-1)^k}{k!}
@@ -164,7 +164,7 @@ $$
 
 ## 8. 透過程式設計計算和實作
 
-排容原理在程式設計中非常有用。特別是當結合位元運算全排列搜尋（二進制枚舉）時，$n$ 個條件的排容原理可以被簡潔地實作。
+[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)在程式設計中非常有用。特別是當結合位元運算全排列搜尋（二進制枚舉）時，$n$ 個條件的[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)可以被簡潔地實作。
 
 以下是使用 Python 來尋找「在1到 $M$ 之間能被給定列表中的任何質數整除的整數數量」的程式碼。
 
@@ -203,7 +203,7 @@ print(f"結果: {count_multiples(M, primes)}")
 
 ## 9. 結論
 
-排容原理是一個神奇的數學公式，它將看似複雜的集合重疊分解為簡單而機械的加減法重複。
+[排容原理](https://kenji.blog/p/inclusion-exclusion-principle/)是一個神奇的數學公式，它將看似複雜的集合重疊分解為簡單而機械的加減法重複。
 
 它的應用範圍異常廣泛，從基本的機率問題到高級的競賽程式設計，以及與密碼學相關的歐拉函數計算。
 掌握這門強大的技巧將大大提高您在數學和演算法領域的解決問題的能力。請務必嘗試將其應用於各種問題中，並體驗其威力。

@@ -121,7 +121,7 @@ O Paradoxo de Richard ocorreu porque ele tentou secretamente misturar um "númer
 Este Paradoxo de Richard causou um grande choque na comunidade matemática da época.
 "Se não tivermos cuidado, a linguagem (e os sistemas lógicos) humana pode facilmente gerar autocontradições. O que devemos fazer para tornar a matemática perfeita e livre de contradições?"
 
-Em 1931, quem colocou um fim definitivo a este problema foi o jovem gênio matemático Kurt Gödel, de apenas 25 anos.
+Em 1931, quem colocou um fim definitivo a este problema foi o jovem gênio matemático [Kurt Gödel](https://kenji.blog/p/godel/), de apenas 25 anos.
 Gödel conseguiu traduzir e reproduzir perfeitamente a estrutura deste paradoxo que Richard causou usando a "ambiguidade da linguagem humana", através de **"fórmulas matemáticas rigorosas (Números de Gödel)"**.
 
 O resultado deduzido a partir disso é o famoso **"Teorema da Incompletude de Gödel"**.

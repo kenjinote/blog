@@ -9,7 +9,7 @@ categories: ["programming", "ai", "productivity"]
 tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 ---
 
-# Boosting Development Efficiency by Combining Copilot and Local AI: A Complete Guide to the Hybrid AI Development Workflow
+# [Boosting Development Efficiency by Combining Copilot and Local AI](https://kenji.blog/p/hybrid-ai-development-workflow/): A Complete Guide to the Hybrid AI Development Workflow
 
 In modern software development, the utilization of AI assistants has evolved from a "nice-to-have" tool to an "indispensable" infrastructure. Particularly since the advent of GitHub Copilot, the coding experience for developers has changed dramatically. However, relying on cloud-based AI for all tasks is not always the optimal solution.
 

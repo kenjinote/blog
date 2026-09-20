@@ -9,7 +9,7 @@ categories: ["career", "ai", "software-engineering"]
 tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 ---
 
-# AI가 코드를 작성하는 시대에 요구되는 '인간 고유의 엔지니어 스킬'
+# [AI가 코드를 작성하는 시대에 요구되는 '인간 고유의 엔지니어 스킬'](https://kenji.blog/p/human_engineer_skills/)
 
 최근 Generative AI(생성형 AI)와 대규모 언어 모델(LLM)의 비약적인 발전으로, 소프트웨어 엔지니어링의 풍경은 극적으로 변화했습니다. GitHub Copilot이나 각종 AI 코딩 어시스턴트가 일상적으로 사용되면서, "자연어로 지시를 내리면 AI가 순식간에 코드를 생성한다"는 현상은 더 이상 미래의 SF가 아닌 오늘의 현실이 되었습니다.
 

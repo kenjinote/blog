@@ -35,7 +35,7 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 
 ## Philosophie & Denken
 
-> Das Herz hat seine Gründe, die der Verstand nicht kennt. (Blaise Pascal)
+> Das Herz hat seine Gründe, die der Verstand nicht kennt. ([Blaise Pascal](https://kenji.blog/p/pascal/))
 
 > Gott ist tot. (Friedrich Nietzsche)
 
@@ -54,7 +54,7 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 > Alles fließt. (Heraklit)
 
 
-> Ich denke, also bin ich. (René Descartes)
+> Ich denke, also bin ich. ([René Descartes](https://kenji.blog/p/descartes/))
 
 > Ich weiß, dass ich nichts weiß. (Sokrates)
 
@@ -62,7 +62,7 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 
 > Der Mensch ist von Natur aus ein politisches Lebewesen. (Aristoteles)
 
-> Der Mensch ist ein denkendes Schilfrohr. (Blaise Pascal)
+> Der Mensch ist ein denkendes Schilfrohr. ([Blaise Pascal](https://kenji.blog/p/pascal/))
 
 > Wissen ist Macht. (Francis Bacon)
 
@@ -76,9 +76,9 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 
 ## Wissenschaft, Mathematik & Technologie
 
-> Die Mathematik ist die Königin der Wissenschaften. (Carl Friedrich Gauß)
+> Die Mathematik ist die Königin der Wissenschaften. ([Carl Friedrich Gauß](https://kenji.blog/p/gauss/))
 
-> Wir müssen wissen, wir werden wissen. (David Hilbert)
+> Wir müssen wissen, wir werden wissen. ([David Hilbert](https://kenji.blog/p/hilbert/))
 
 > Es gibt keinen Zweig der Mathematik, wie abstrakt er auch sein mag, der nicht eines Tages auf Phänomene der realen Welt angewandt werden könnte. (Nikolai Lobatschewski)
 
@@ -90,7 +90,7 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 
 > Das Gute an der Wissenschaft ist, dass sie wahr ist, egal ob man daran glaubt oder nicht. (Neil deGrasse Tyson)
 
-> In der Mathematik ist die Kunst, Fragen zu stellen, wertvoller als die Kunst, sie zu lösen. (Georg Cantor)
+> In der Mathematik ist die Kunst, Fragen zu stellen, wertvoller als die Kunst, sie zu lösen. ([Georg Cantor](https://kenji.blog/p/cantor/))
 
 > Wenn wir wüssten, was wir tun, würde man es nicht Forschung nennen, oder? (Albert Einstein)
 
@@ -107,11 +107,11 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 
 > Wer noch nie einen Fehler gemacht hat, hat sich noch nie an etwas Neuem versucht. (Albert Einstein)
 
-> Wenn ich weiter sehen konnte, so deshalb, weil ich auf den Schultern von Riesen stand. (Isaac Newton)
+> Wenn ich weiter sehen konnte, so deshalb, weil ich auf den Schultern von Riesen stand. ([Isaac Newton](https://kenji.blog/p/newton/))
 
 > Und sie bewegt sich doch! (Galileo Galilei)
 
-> In der Geometrie gibt es keinen Königsweg. (Euklid)
+> In der Geometrie gibt es keinen Königsweg. ([Euklid](https://kenji.blog/p/euclid/))
 
 > Gebt mir einen festen Punkt, und ich werde die Erde aus den Angeln heben. (Archimedes)
 

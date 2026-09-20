@@ -10,7 +10,7 @@ tags: ["Abel", "Algebra", "Geschichte", "Mathematik"]
 
 # 1. Einführung: Das junge Genie Abel
 
-In der Geschichte der Mathematik gibt es einige Genies, die in jungen Jahren verstorben sind, aber einen entscheidenden Einfluss auf zukünftige Generationen hinterlassen haben. Unter ihnen ragt der norwegische Mathematiker **Niels Henrik Abel** neben Évariste Galois als eines der berühmtesten tragischen Genies heraus. In seinem kurzen Leben von nur 26 Jahren bewies er, dass „es keine allgemeine algebraische Lösung für Gleichungen fünften oder höheren Grades gibt“, ein Problem, das Mathematiker seit Jahrhunderten geplagt hatte.
+In der Geschichte der Mathematik gibt es einige Genies, die in jungen Jahren verstorben sind, aber einen entscheidenden Einfluss auf zukünftige Generationen hinterlassen haben. Unter ihnen ragt der norwegische Mathematiker **[Niels Henrik Abel](https://kenji.blog/p/abel/)** neben [Évariste Galois](https://kenji.blog/p/galois/) als eines der berühmtesten tragischen Genies heraus. In seinem kurzen Leben von nur 26 Jahren bewies er, dass „es keine allgemeine algebraische Lösung für Gleichungen fünften oder höheren Grades gibt“, ein Problem, das Mathematiker seit Jahrhunderten geplagt hatte.
 
 In diesem Artikel werden wir uns mit Abels Leben befassen, das trotz Armut und Krankheit von seiner Leidenschaft für die Mathematik angetrieben wurde, und mit seinen monumentalen Errungenschaften wie „Abelschen Gruppen“ und „Abelschen Integralen“.
 
@@ -18,7 +18,7 @@ In diesem Artikel werden wir uns mit Abels Leben befassen, das trotz Armut und K
 
 ## 2.1 Frühe Kindheit und das Treffen mit seinem Mentor Holmboe
 
-Niels Henrik Abel wurde am 5. August 1802 in dem kleinen norwegischen Dorf Finnøy als Sohn eines Pastors geboren. Norwegen war zu dieser Zeit wirtschaftlich verarmt, und Abels Familie bildete da keine Ausnahme.
+[Niels Henrik Abel](https://kenji.blog/p/abel/) wurde am 5. August 1802 in dem kleinen norwegischen Dorf Finnøy als Sohn eines Pastors geboren. Norwegen war zu dieser Zeit wirtschaftlich verarmt, und Abels Familie bildete da keine Ausnahme.
 
 Sein Schicksal änderte sich maßgeblich, als er 1817 in die Kathedralschule in Oslo eintrat und seinen Mathematiklehrer **Bernt Michael Holmboe** traf. Holmboe erkannte sofort Abels außergewöhnliches Talent und lehrte ihn fortgeschrittene Mathematik auf Universitätsniveau. Durch das Verschlingen der Werke von Meistern wie Euler, Lagrange und Laplace nahm Abel schnell modernste Mathematik auf.
 
@@ -49,7 +49,7 @@ Es ist allgemein unmöglich, die Wurzeln dieser Gleichung in einer endlichen Anz
 
 # 4. Reise nach Europa und Treffen mit Crelle
 
-Im Jahr 1825 erhielt Abel ein Stipendium der norwegischen Regierung und hatte die Möglichkeit, auf dem europäischen Festland zu studieren. Sein Ziel war es, Paris, das damalige Zentrum der Mathematik, und Göttingen zu besuchen, wo der große Mathematiker Carl Friedrich Gauss lebte.
+Im Jahr 1825 erhielt Abel ein Stipendium der norwegischen Regierung und hatte die Möglichkeit, auf dem europäischen Festland zu studieren. Sein Ziel war es, Paris, das damalige Zentrum der Mathematik, und Göttingen zu besuchen, wo der große Mathematiker [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) lebte.
 
 Abel schickte seine Arbeit an Gauss, aber Gauss ignorierte sie, ohne sie überhaupt zu lesen. Da er die Hoffnung aufgab, Gauss zu treffen, reiste Abel nach Berlin.
 
@@ -59,7 +59,7 @@ In Berlin lernte er **August Leopold Crelle** kennen, einen Bauingenieur und lei
 
 1826 kam Abel in Paris an. Hier reichte er der Französischen Akademie der Wissenschaften eine Arbeit über ein „Umfassendes Theorem über transzendente Funktionen“ ein, die als sein Meisterwerk angesehen werden könnte. Diese Arbeit enthielt bahnbrechende Inhalte, die später als **Abelsches Theorem** bekannt wurden.
 
-Das Unglück schlug jedoch erneut zu. Der große Mathematiker **Augustin-Louis Cauchy**, der mit der Überprüfung beauftragt wurde, verlegte Abels Arbeit in einem Stapel von Dokumenten in seinem Zimmer und überprüfte sie nie.
+Das Unglück schlug jedoch erneut zu. Der große Mathematiker **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)**, der mit der Überprüfung beauftragt wurde, verlegte Abels Arbeit in einem Stapel von Dokumenten in seinem Zimmer und überprüfte sie nie.
 
 Getrieben von Verzweiflung, Geldmangel und der fortschreitenden Tuberkulose, war Abel gezwungen, Paris zu verlassen.
 
@@ -107,4 +107,4 @@ Dieser Satz wird noch heute häufig in Theorien wie der analytischen Fortsetzung
 
 # 8. Fazit
 
-Niels Henrik Abels Leben passte wirklich zu dem Wort „Tragödie“. Die Leidenschaft, die er in die Mathematik steckte, und die zahlreichen Theoreme, die er hervorbrachte, werden jedoch niemals verblassen. Die von ihm hinterlassenen Theorien inspirieren Mathematiker bis zum heutigen Tag.
+[Niels Henrik Abel](https://kenji.blog/p/abel/)s Leben passte wirklich zu dem Wort „Tragödie“. Die Leidenschaft, die er in die Mathematik steckte, und die zahlreichen Theoreme, die er hervorbrachte, werden jedoch niemals verblassen. Die von ihm hinterlassenen Theorien inspirieren Mathematiker bis zum heutigen Tag.

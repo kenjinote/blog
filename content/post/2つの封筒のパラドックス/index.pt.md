@@ -140,7 +140,7 @@ A dúvida é se podemos realmente dizer que os 5.000 ienes e 20.000 ienes estão
 
 Por exemplo, suponha que o orçamento do programa tenha um limite máximo de 100 milhões de ienes. Se você abrir o envelope A e encontrar "60 milhões de ienes", a probabilidade de o envelope B ter "120 milhões de ienes" é zero (pois excederia o orçamento). Em outras palavras, à medida que a quantia no envelope A aumenta, a probabilidade de o envelope B ser o "dobro" deve diminuir, e a probabilidade de ser a "metade" deve aumentar.
 
-Se assumirmos qualquer distribuição a priori $P(x)$ e calcularmos o valor esperado usando o Teorema de Bayes, foi provado matematicamente que **não existe uma distribuição mágica onde "sempre é vantajoso trocar" para qualquer quantia $X$, seja qual for a distribuição de probabilidade realista (cuja soma seja 1) que você usar**.
+Se assumirmos qualquer distribuição a priori $P(x)$ e calcularmos o valor esperado usando o [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/), foi provado matematicamente que **não existe uma distribuição mágica onde "sempre é vantajoso trocar" para qualquer quantia $X$, seja qual for a distribuição de probabilidade realista (cuja soma seja 1) que você usar**.
 
 ---
 

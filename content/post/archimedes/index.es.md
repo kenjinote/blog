@@ -124,7 +124,7 @@ Como resultado, demostró que el número no excedería $8 \times 10^{63}$ (en no
 
 En 1906, se descubrió en Constantinopla (la actual Estambul) un palimpsesto (un manuscrito cuyo texto fue raspado y reutilizado) que contenía muchas de las obras perdidas de Arquímedes. Este "Palimpsesto de Arquímedes" contenía un tratado invaluable titulado "El Método de los Teoremas Mecánicos".
 
-En esta obra, Arquímedes revela su "proceso de pensamiento" sobre cómo llegó a numerosos descubrimientos geométricos. Dividió las figuras en colecciones de "líneas" o "planos" infinitamente delgados y adivinó sus áreas y volúmenes utilizando un modelo mecánico de equilibrarlos en una balanza. Este enfoque es esencialmente el mismo que el "cálculo integral" establecido en épocas posteriores por Isaac Newton y Gottfried Leibniz, mostrando que Arquímedes había llegado a solo unos pasos del concepto de cálculo.
+En esta obra, Arquímedes revela su "proceso de pensamiento" sobre cómo llegó a numerosos descubrimientos geométricos. Dividió las figuras en colecciones de "líneas" o "planos" infinitamente delgados y adivinó sus áreas y volúmenes utilizando un modelo mecánico de equilibrarlos en una balanza. Este enfoque es esencialmente el mismo que el "cálculo integral" establecido en épocas posteriores por [Isaac Newton](https://kenji.blog/p/newton/) y [Gottfried Leibniz](https://kenji.blog/p/leibniz/), mostrando que Arquímedes había llegado a solo unos pasos del concepto de cálculo.
 
 ## 3.6 Sólidos Arquimedianos
 
@@ -166,7 +166,7 @@ Se dice que fue inventado mientras estaba en Egipto para bombear agua del río N
 
 # 5. Influencia en la Posteridad y Legado
 
-Las obras dejadas por Arquímedes se convirtieron en una biblia para los eruditos desde el período helenístico hasta la época romana, y más tarde en el mundo árabe medieval y la Europa renacentista. Galileo Galilei elogió a Arquímedes como una "figura sobrehumana" y estudió con entusiasmo sus métodos. Johannes Kepler, René Descartes y Newton, que perfeccionó el cálculo, también se vieron muy influenciados por los escritos de Arquímedes, directa e indirectamente.
+Las obras dejadas por Arquímedes se convirtieron en una biblia para los eruditos desde el período helenístico hasta la época romana, y más tarde en el mundo árabe medieval y la Europa renacentista. Galileo Galilei elogió a Arquímedes como una "figura sobrehumana" y estudió con entusiasmo sus métodos. Johannes Kepler, [René Descartes](https://kenji.blog/p/descartes/) y Newton, que perfeccionó el cálculo, también se vieron muy influenciados por los escritos de Arquímedes, directa e indirectamente.
 
 Su espíritu de investigación y metodología continúan brillando no simplemente como reliquias antiguas, sino como el arquetipo del pensamiento científico. Arquímedes es la persona que por sí sola encarnó los tres pilares de la ciencia moderna: demostración rigurosa en matemáticas, modelado matemático de fenómenos físicos y desarrollo tecnológico práctico aplicando la teoría.
 

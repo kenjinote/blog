@@ -121,10 +121,10 @@ Richard's Paradox exploded into self-contradiction because it secretly tried to 
 This Richard's Paradox sent a massive shockwave through the mathematical community of the time.
 "Human language (and logical systems) can easily cause self-contradiction if we are not careful. How can we make mathematics perfect and free of contradiction?"
 
-In 1931, it was the 25-year-old genius mathematician Kurt Gödel who brought a final resolution to this problem.
+In 1931, it was the 25-year-old genius mathematician [Kurt Gödel](https://kenji.blog/p/godel/) who brought a final resolution to this problem.
 Gödel perfectly translated and reproduced the structure of this paradox, which Richard caused using the "ambiguity of language," by using **"rigorous mathematical formulas (Gödel numbering)"**.
 
-The result derived from this was the famous **"Gödel's Incompleteness Theorems"**.
+The result derived from this was the famous **"[Gödel's Incompleteness Theorems](https://kenji.blog/p/godels-incompleteness-theorems/)"**.
 It was a monumental discovery proving the limits of human knowledge: "No matter how rigorously mathematical rules are established, 'truths that can neither be proved nor disproved' will inevitably arise within those rules (mathematics is incomplete)."
 
 Richard's Paradox began as a mere contradictory play on words, and eventually evolved into the ultimate weapon to shatter the "absoluteness" of mathematics itself.

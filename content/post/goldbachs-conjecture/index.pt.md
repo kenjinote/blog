@@ -11,7 +11,7 @@ tags:
   - "Conjectura de Goldbach"
 ---
 
-## O que é a Conjectura de Goldbach?
+## O que é a [Conjectura de Goldbach](https://kenji.blog/p/goldbachs-conjecture/)?
 
 A **conjectura de Goldbach** é um dos problemas não resolvidos mais antigos e famosos da teoria dos números. Sua afirmação é tão simples que até um aluno do ensino fundamental pode entendê-la.
 
@@ -29,7 +29,7 @@ Como você pode ver, pequenos números pares podem, de fato, ser expressos como 
 
 ## Contexto Histórico
 
-Esta conjectura foi mencionada pela primeira vez em uma carta enviada em 1742 pelo matemático prussiano **Christian Goldbach** ao grande matemático suíço **Leonhard Euler**.
+Esta conjectura foi mencionada pela primeira vez em uma carta enviada em 1742 pelo matemático prussiano **Christian Goldbach** ao grande matemático suíço **[Leonhard Euler](https://kenji.blog/p/euler/)**.
 
 ```mermaid
 graph TD

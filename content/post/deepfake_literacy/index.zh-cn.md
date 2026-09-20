@@ -54,7 +54,7 @@ flowchart LR
 
 近年来，在画质和稳定性上超越GAN，并成为Midjourney和Stable Diffusion底层技术的，便是“扩散模型”。扩散模型由逐步向数据中添加噪声的“前向扩散过程”和从噪声中恢复原始数据的“逆向扩散过程”组成。
 
-**前向扩散过程（Forward Process）** ：针对清晰图像 $x_0$，在每个时间步 $t$ 中加入高斯噪声。该过程作为马尔可夫链，用以下公式表示：
+**前向扩散过程（Forward Process）** ：针对清晰图像 $x_0$，在每个时间步 $t$ 中加入高斯噪声。该过程作为[马尔可夫链](https://kenji.blog/p/markov-chain/)，用以下公式表示：
 
 $$
 q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t \mathbf{I})

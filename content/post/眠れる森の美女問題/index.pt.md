@@ -84,9 +84,9 @@ Essa é uma opinião poderosa, baseada no "frequentismo" ou no "princípio antr�
 
 ---
 
-## 3. Tentando calcular com o Teorema de Bayes
+## 3. Tentando calcular com o [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)
 
-Há também tentativas de resolver esse problema usando o "Teorema de Bayes", uma ferramenta matemática para atualizar probabilidades.
+Há também tentativas de resolver esse problema usando o "[Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)", uma ferramenta matemática para atualizar probabilidades.
 Vamos organizar a lógica dos "Terceiristas (1/3)" sob a perspectiva da probabilidade condicional.
 
 O estado em que se encontra ao acordar é um dos três seguintes:

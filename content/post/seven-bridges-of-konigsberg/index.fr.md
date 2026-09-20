@@ -10,11 +10,11 @@ tags: ["Théorie des graphes", "Topologie", "Euler", "Mathématiques"]
 
 ## Introduction
 
-Dans l'histoire des mathématiques, des questions futiles ou des jeux du quotidien ont parfois été le point de départ de domaines mathématiques totalement nouveaux. L'un des exemples les plus célèbres et les plus beaux est le problème des **« sept ponts de Königsberg »** (Seven Bridges of Königsberg).
+Dans l'histoire des mathématiques, des questions futiles ou des jeux du quotidien ont parfois été le point de départ de domaines mathématiques totalement nouveaux. L'un des exemples les plus célèbres et les plus beaux est le problème des **« sept ponts de Königsberg »** ([Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)).
 
 Au 18ème siècle, la ville de Königsberg dans le royaume de Prusse (aujourd'hui Kaliningrad, dans la Fédération de Russie), était traversée par un grand fleuve, la Pregolia (Pregel), où sept ponts avaient été construits pour relier les îles (bancs de sable) aux deux rives. Lors de leurs promenades au crépuscule, les habitants de l'époque ont imaginé le jeu suivant : « Est-il possible de se promener dans la ville en traversant chacun des sept ponts une et une seule fois, et de revenir à son point de départ ? »
 
-Lorsque ce problème, qui semblait n'être qu'un simple casse-tête, est parvenu au mathématicien de génie **Leonhard Euler** (Leonhard Euler), une révolution s'est produite dans le monde des mathématiques. Euler a non seulement prouvé que ce problème était impossible, mais au cours de ce processus, il a redéfini la nature de l'espace sous une perspective totalement nouvelle, posant ainsi les bases de deux domaines extrêmement importants des mathématiques modernes : la **théorie des graphes** (Graph Theory) et la **topologie** (Topology).
+Lorsque ce problème, qui semblait n'être qu'un simple casse-tête, est parvenu au mathématicien de génie **[Leonhard Euler](https://kenji.blog/p/euler/)** ([Leonhard Euler](https://kenji.blog/p/euler/)), une révolution s'est produite dans le monde des mathématiques. Euler a non seulement prouvé que ce problème était impossible, mais au cours de ce processus, il a redéfini la nature de l'espace sous une perspective totalement nouvelle, posant ainsi les bases de deux domaines extrêmement importants des mathématiques modernes : la **théorie des graphes** (Graph Theory) et la **topologie** (Topology).
 
 Dans cet article, nous explorerons en profondeur le contexte historique du problème des sept ponts de Königsberg, la brillante méthode de résolution d'Euler, et comment cela est lié aux sciences et technologies modernes, en incluant des détails mathématiques. Au-delà d'une simple introduction historique, profitez de la beauté de la structure mathématique qui se cache derrière ce problème.
 
@@ -36,7 +36,7 @@ Les intellectuels et les citoyens de Königsberg de l'époque, lors de leurs pro
 
 ## D'un puzzle de ponts à un problème mathématique : Le rêve de Leibniz et l'intuition d'Euler
 
-Ces rumeurs parmi les citoyens parvinrent finalement aux oreilles de **Leonhard Euler**, le grand mathématicien d'origine suisse qui séjournait à l'Académie des sciences de Saint-Pétersbourg en Russie. C'était en 1735.
+Ces rumeurs parmi les citoyens parvinrent finalement aux oreilles de **[Leonhard Euler](https://kenji.blog/p/euler/)**, le grand mathématicien d'origine suisse qui séjournait à l'Académie des sciences de Saint-Pétersbourg en Russie. C'était en 1735.
 
 Au début, Euler semblait penser à propos de ce problème : « Ce n'est pas des mathématiques, mais juste un simple jeu de logique. » Le courant principal des mathématiques à l'époque était la géométrie euclidienne (qui traite de la longueur, de l'angle, de la surface, du volume, etc.), l'algèbre, ou le calcul différentiel et intégral nouvellement fondé par Newton et Leibniz. Le problème des ponts de Königsberg ne dépendait absolument d'aucune propriété géométrique traditionnelle, telle que la longueur des ponts en mètres, la surface des îles, ou l'angle auquel les ponts enjambaient le fleuve. Ce qui importait, c'était purement la relation de **connexion (connexité)** : « Quelle masse terrestre est reliée à quelle masse terrestre, et par combien de ponts ? »
 
@@ -157,7 +157,7 @@ La théorie des graphes est également active à diverses échelles des sciences
 
 ## Conclusion
 
-L'article « Solution d'un problème relatif à la géométrie de position » publié par Leonhard Euler en 1736 a fourni une réponse complète au casse-tête trivial de promenade du dimanche des citoyens de Königsberg. Cependant, ce qu'il signifiait vraiment n'était pas la fin d'un problème, mais la naissance d'un vaste univers mathématique aux applications innombrables.
+L'article « Solution d'un problème relatif à la géométrie de position » publié par [Leonhard Euler](https://kenji.blog/p/euler/) en 1736 a fourni une réponse complète au casse-tête trivial de promenade du dimanche des citoyens de Königsberg. Cependant, ce qu'il signifiait vraiment n'était pas la fin d'un problème, mais la naissance d'un vaste univers mathématique aux applications innombrables.
 
 C'est la **force de l'abstraction** de percevoir avec perspicacité uniquement la structure la plus essentielle de « comment quoi est connecté à quoi », sans se laisser piéger par la forme superficielle ou la taille des choses. L'histoire des sept ponts de Königsberg nous enseigne, au-delà des époques, comment la pensée mathématique abstraite peut devenir une arme puissante pour démystifier le monde réel et créer les technologies de demain.
 

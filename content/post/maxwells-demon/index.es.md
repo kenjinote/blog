@@ -91,7 +91,7 @@ $$
 \Delta S < 0
 $$
 
-Maxwell mismo intentó demostrar a través de este experimento mental que la segunda ley de la termodinámica no es una ley mecánica absoluta, sino simplemente "una ley probabilística que solo se cumple cuando se trata estadísticamente un gran número de moléculas". Sin embargo, si pudiéramos crear artificialmente un ser como este demonio, completaríamos una "máquina de movimiento perpetuo de segunda especie". El demonio de Maxwell planteó una clara contradicción con la segunda ley de la termodinámica.
+Maxwell mismo intentó demostrar a través de este experimento mental que la segunda ley de la termodinámica no es una ley mecánica absoluta, sino simplemente "una ley probabilística que solo se cumple cuando se trata estadísticamente un gran número de moléculas". Sin embargo, si pudiéramos crear artificialmente un ser como este demonio, completaríamos una "máquina de movimiento perpetuo de segunda especie". [El demonio de Maxwell](https://kenji.blog/p/maxwells-demon/) planteó una clara contradicción con la segunda ley de la termodinámica.
 
 ## El motor de Szilard: Obtención de información y conversión de trabajo
 

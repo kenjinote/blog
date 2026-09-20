@@ -29,7 +29,7 @@ tags:
 
 ## 歴史的背景
 
-この予想は、1742年にプロイセンの数学者 **クリスティアン・ゴールドバッハ** （Christian Goldbach）が、スイスの偉大な数学者 **レオンハルト・[オイラー](https://kenji.blog/p/euler/)** （Leonhard Euler）宛てに送った手紙の中で初めて言及されました。
+この予想は、1742年にプロイセンの数学者 **クリスティアン・ゴールドバッハ** （Christian Goldbach）が、スイスの偉大な数学者 **レオンハルト・[オイラー](https://kenji.blog/p/euler/)** （[Leonhard Euler](https://kenji.blog/p/euler/)）宛てに送った手紙の中で初めて言及されました。
 
 ```mermaid
 graph TD

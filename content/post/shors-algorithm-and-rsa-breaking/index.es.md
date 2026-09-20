@@ -96,7 +96,7 @@ El problema de encontrar el entero positivo más pequeño $ r $ que cumpla con e
 
 Si se encuentra este período $ r $, y si $ r $ es par, entonces $ a^r - 1 \equiv 0 \pmod N $, y usando la fórmula de factorización se puede transformar en:
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $
-A partir de aquí, al calcular el máximo común divisor de $ N $ y $ a^{r/2} \pm 1 $ usando el algoritmo de Euclides, se puede obtener un factor primo de $ N $ con una probabilidad extremadamente alta.
+A partir de aquí, al calcular el máximo común divisor de $ N $ y $ a^{r/2} \pm 1 $ usando el algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/), se puede obtener un factor primo de $ N $ con una probabilidad extremadamente alta.
 
 Para encontrar el período $ r $ en una computadora clásica, en última instancia, se requieren pasos exponenciales y no se puede acelerar. Sin embargo, una computadora cuántica puede encontrar este período $ r $ en un instante (en tiempo polinómico).
 

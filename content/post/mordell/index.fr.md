@@ -24,7 +24,7 @@ En 1906, à l'âge de 18 ans, Mordell voyage seul en Angleterre avec très peu d
 
 ## 3. Passion pour les Équations Diophantiennes
 
-Au centre des recherches de Mordell se trouvaient toujours les **équations diophantiennes**. Une équation diophantienne est un problème consistant à trouver des solutions entières ou rationnelles à des équations polynomiales à coefficients entiers. Elle tire son nom de l'ancien mathématicien grec Diophante.
+Au centre des recherches de Mordell se trouvaient toujours les **équations diophantiennes**. Une équation diophantienne est un problème consistant à trouver des solutions entières ou rationnelles à des équations polynomiales à coefficients entiers. Elle tire son nom de l'ancien mathématicien grec [Diophante](https://kenji.blog/p/diophantus/).
 
 L'exemple le plus célèbre d'équation diophantienne est celui lié au théorème de Pythagore :
 
@@ -42,7 +42,7 @@ Mordell a accordé une attention particulière à la forme de l'équation mainte
 
 $$ y^2 = x^3 + k $$
 
-Ici, $k$ est un entier non nul. Cette équation est l'une des formes les plus simples d'une courbe elliptique. Depuis que Pierre de Fermat a prouvé au XVIIe siècle que pour $k = -2$, c'est-à-dire $y^2 = x^3 - 2$, les seules solutions entières sont $(x, y) = (3, \pm 5)$, de nombreuses équations de ce type ont été étudiées.
+Ici, $k$ est un entier non nul. Cette équation est l'une des formes les plus simples d'une courbe elliptique. Depuis que [Pierre de Fermat](https://kenji.blog/p/fermat/) a prouvé au XVIIe siècle que pour $k = -2$, c'est-à-dire $y^2 = x^3 - 2$, les seules solutions entières sont $(x, y) = (3, \pm 5)$, de nombreuses équations de ce type ont été étudiées.
 
 Mordell a mené des recherches approfondies sur les méthodes générales pour trouver des solutions entières à cette équation et sur la finitude de ses solutions. Son approche appliquait la théorie des classes d'idéaux dans la théorie algébrique des nombres, représentant un bond en avant significatif par rapport aux méthodes classiques.
 
@@ -58,7 +58,7 @@ Ici, $E(\mathbb{Q})_{\text{tors}}$ est un **sous-groupe de torsion** composé d'
 
 Ce théorème signifie que pour trouver tous les points rationnels en nombre infini d'une courbe elliptique, il suffit de trouver un nombre fini de points de « base ». C'est un résultat monumental en géométrie arithmétique. La preuve de Mordell était un raffinement moderne de la « Méthode de descente infinie » de Fermat.
 
-Plus tard, en 1928, le mathématicien français André Weil a généralisé ce théorème à des corps de nombres généraux et à des variétés abéliennes, c'est pourquoi on l'appelle aujourd'hui souvent le **Théorème de Mordell-Weil**.
+Plus tard, en 1928, le mathématicien français [André Weil](https://kenji.blog/p/weil/) a généralisé ce théorème à des corps de nombres généraux et à des variétés abéliennes, c'est pourquoi on l'appelle aujourd'hui souvent le **Théorème de Mordell-Weil**.
 
 ```mermaid
 graph TD
@@ -83,13 +83,13 @@ L'affirmation pour le cas $g \ge 2$ est la Conjecture de Mordell. Cette conjectu
 
 $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
-Cette conjecture est restée non résolue pendant plus de 60 ans. Cependant, en 1983, elle a finalement été prouvée par le mathématicien allemand Gerd Faltings, devenant ainsi le **Théorème de Faltings**. Pour cet accomplissement, Faltings a reçu la Médaille Fields en 1986.
+Cette conjecture est restée non résolue pendant plus de 60 ans. Cependant, en 1983, elle a finalement été prouvée par le mathématicien allemand [Gerd Faltings](https://kenji.blog/p/faltings/), devenant ainsi le **Théorème de Faltings**. Pour cet accomplissement, Faltings a reçu la Médaille Fields en 1986.
 
 De plus, l'équation du Dernier Théorème de Fermat, $x^n + y^n = z^n$, a un genre supérieur ou égal à 3 lorsque $n \ge 4$. Par conséquent, d'après la Conjecture de Mordell (Théorème de Faltings), il s'ensuit immédiatement que l'équation de Fermat a au plus un nombre fini de solutions rationnelles pour chaque $n$.
 
 ## 7. Implication avec Ramanujan et les Formes Modulaires
 
-Les réalisations de Mordell ne se sont pas limitées aux équations diophantiennes. Il a également apporté des contributions significatives aux problèmes non résolus laissés par le génie mathématique Srinivasa Ramanujan.
+Les réalisations de Mordell ne se sont pas limitées aux équations diophantiennes. Il a également apporté des contributions significatives aux problèmes non résolus laissés par le génie mathématique [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/).
 
 Ramanujan avait conjecturé plusieurs propriétés surprenantes concernant la fonction tau de Ramanujan $\tau(n)$, définie comme suit :
 
@@ -129,16 +129,16 @@ Mordell avait également un œil vif pour repérer le talent des autres. L'une d
 
 ## 11. Héritage pour les Mathématiques Modernes
 
-L'héritage que Louis Mordell a laissé dans le monde mathématique est profondément enraciné dans les fondements des mathématiques modernes.
+L'héritage que [Louis Mordell](https://kenji.blog/p/mordell/) a laissé dans le monde mathématique est profondément enraciné dans les fondements des mathématiques modernes.
 
 1. **Fondements de la Géométrie Arithmétique** : Le Théorème de Mordell et la Conjecture de Mordell ont fortement stimulé le développement de la « Géométrie Arithmétique », qui considère les objets arithmétiques d'un point de vue géométrique.
 2. **Théorie des Formes Modulaires** : Les techniques qu'il a utilisées dans la preuve de la conjecture de Ramanujan sont devenues le point de départ d'une théorie massive qui s'étend jusqu'au Programme de Langlands moderne.
 3. **Résolution d'Équations Diophantiennes** : Ses approches concrètes et ses nombreux articles servent toujours de base aux méthodes algorithmiques actuelles de résolution d'équations à l'aide d'ordinateurs.
 
-Lorsque le Dernier Théorème de Fermat a été prouvé par Andrew Wiles, des concepts impliquant profondément Mordell, tels que les courbes elliptiques et les formes modulaires, étaient indispensables à sa base théorique.
+Lorsque le Dernier Théorème de Fermat a été prouvé par [Andrew Wiles](https://kenji.blog/p/wiles/), des concepts impliquant profondément Mordell, tels que les courbes elliptiques et les formes modulaires, étaient indispensables à sa base théorique.
 
 ## 12. Conclusion
 
-Louis Mordell est passé d'un jeune autodidacte passionné à un géant de la théorie des nombres représentant le XXe siècle. Son nom est gravé à jamais dans l'histoire des mathématiques sous la forme du **Théorème de Mordell** et de la **Conjecture de Mordell**.
+[Louis Mordell](https://kenji.blog/p/mordell/) est passé d'un jeune autodidacte passionné à un géant de la théorie des nombres représentant le XXe siècle. Son nom est gravé à jamais dans l'histoire des mathématiques sous la forme du **Théorème de Mordell** et de la **Conjecture de Mordell**.
 
 Avec son engagement fort à résoudre des problèmes concrets et la chaleur humaine qui a sauvé les mathématiciens réfugiés, la vie et les réalisations de Mordell sont un excellent modèle montrant comment la discipline des mathématiques se développe et comment une personne peut y contribuer. Le monde des équations diophantiennes qu'il a exploré continue de fasciner de nombreux mathématiciens à ce jour.

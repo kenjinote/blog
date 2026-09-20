@@ -10,15 +10,15 @@ tags: ["topology", "combinatorics", "fixed-point-theorem"]
 
 # 1. Introduction: The Mystery of Mathematics Starting from a Puzzle
 
-The beauty of mathematics often lies in how extremely simple rules can lead to profound and completely unexpected results. One of the most iconic examples of this is **Sperner's Lemma**. Published in 1928 by the German mathematician Emanuel Sperner, this lemma, at first glance, seems to be nothing more than a "triangle coloring puzzle" that even an elementary school student could understand.
+The beauty of mathematics often lies in how extremely simple rules can lead to profound and completely unexpected results. One of the most iconic examples of this is **[Sperner's Lemma](https://kenji.blog/p/sperners-lemma/)**. Published in 1928 by the German mathematician Emanuel Sperner, this lemma, at first glance, seems to be nothing more than a "triangle coloring puzzle" that even an elementary school student could understand.
 
 However, this simple puzzle holds an extremely important position in modern mathematics. In particular, it serves as a powerful tool for a combinatorial and constructive proof of the **Brouwer Fixed-Point Theorem**, which is a fundamental theorem in topology and is widely applied in fields like game theory in economics (such as proving the existence of Nash Equilibrium).
 
-In this article, we will explain Sperner's Lemma in detail with diagrams, covering everything from its intuitive meaning and rigorous mathematical proof to its application to fixed-point theorems that bridge to the continuous world.
+In this article, we will explain [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) in detail with diagrams, covering everything from its intuitive meaning and rigorous mathematical proof to its application to fixed-point theorems that bridge to the continuous world.
 
 # 2. Simplices and Simplicial Complexes: The Foundations of Geometry
 
-To understand Sperner's Lemma, we must first clarify the concepts of a **Simplex** and a **Simplicial Complex** (or Triangulation).
+To understand [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/), we must first clarify the concepts of a **Simplex** and a **Simplicial Complex** (or Triangulation).
 
 ## 2.1. What is a Simplex?
 
@@ -48,7 +48,7 @@ graph TD
     %% This is an example of a simple triangulation
 ```
 
-For the network of triangles divided in this way, coloring each vertex sets the stage for Sperner's Lemma.
+For the network of triangles divided in this way, coloring each vertex sets the stage for [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/).
 
 # 3. Sperner Coloring: The Boundary Rules
 
@@ -65,11 +65,11 @@ However, you must color them according to the following strict **Sperner Conditi
 
 A coloring that follows these rules is called a **Sperner Coloring**.
 
-# 4. The Statement of Sperner's Lemma
+# 4. The Statement of [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/)
 
-When you finish coloring according to the rules of Sperner coloring, what phenomenon occurs? Sperner's Lemma asserts the following astonishing fact.
+When you finish coloring according to the rules of Sperner coloring, what phenomenon occurs? [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) asserts the following astonishing fact.
 
-> **Sperner's Lemma (2D)**
+> **[Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) (2D)**
 > In any Sperner coloring, the number of small triangles where all three vertices are painted in different colors (color 1, color 2, and color 3) **must be an odd number**.
 > Because it is an odd number (1, 3, 5, ...), such a "complete small triangle with all 3 colors" **must exist at least once**.
 
@@ -135,7 +135,7 @@ With this, it is perfectly proven that there is at least one complete triangle.
 
 # 6. Generalization to Higher Dimensions
 
-Sperner's Lemma is not limited to 2D triangles but holds for any $n$-dimensional simplex.
+[Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) is not limited to 2D triangles but holds for any $n$-dimensional simplex.
 
 In the case of an $n$-dimensional simplex (e.g., a tetrahedron for $n=3$), there are $n+1$ vertices, and we use $n+1$ colors, $1, 2, \dots, n+1$.
 The boundary condition is generalized as follows: "The vertices on any $k$-dimensional face (facet) must only use the same colors as the $k+1$ vertices that constitute that face."
@@ -146,7 +146,7 @@ The proof uses mathematical induction.
 
 # 7. Application to Brouwer's Fixed-Point Theorem
 
-Why is Sperner's Lemma considered so important? It is because this discrete theorem acts as a bridge to prove a continuous topological theorem, the **Brouwer Fixed-Point Theorem**.
+Why is [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) considered so important? It is because this discrete theorem acts as a bridge to prove a continuous topological theorem, the **Brouwer Fixed-Point Theorem**.
 
 ## 7.1. What is Brouwer's Fixed-Point Theorem?
 
@@ -155,9 +155,9 @@ Why is Sperner's Lemma considered so important? It is because this discrete theo
 
 This is a famous theorem often explained with the metaphor: when you stir your coffee and put the cup down, there is always at least one coffee particle that is in the exact same position as before you started stirring.
 
-## 7.2. Approach from Sperner's Lemma
+## 7.2. Approach from [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/)
 
-The logic of deriving the fixed-point theorem from Sperner's Lemma is highly elegant.
+The logic of deriving the fixed-point theorem from [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) is highly elegant.
 
 1. **Evaluation of Barycentric Coordinates and Displacement Vectors**
    Apply the continuous mapping $f$ to an arbitrary point $x$ on the simplex and look at the destination $f(x)$. Assign a color to point $x$ based on the direction in which it moved (which component of the barycentric coordinates decreased).
@@ -167,7 +167,7 @@ The logic of deriving the fixed-point theorem from Sperner's Lemma is highly ele
    Because of the nature of continuous mapping where you cannot move outside on the boundaries, this coloring method satisfies exactly the conditions of Sperner coloring.
 
 3. **Transition to the Limit**
-   We triangulate the triangle finer and finer. In each triangulation, by Sperner's Lemma, there is always a small triangle where all 3 colors are present.
+   We triangulate the triangle finer and finer. In each triangulation, by [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/), there is always a small triangle where all 3 colors are present.
    
 4. **Compactness and Convergence**
    We take the limit as the size of the division approaches zero. By the Bolzano-Weierstrass Theorem (a sequence in a compact space has a convergent subsequence), this sequence of complete triangles converges to a single point $x^*$.
@@ -177,15 +177,15 @@ The logic of deriving the fixed-point theorem from Sperner's Lemma is highly ele
 
 # 8. Other Applications: Fair Division and Economics
 
-Besides the fixed-point theorem, Sperner's Lemma is directly applied to real-world problems.
+Besides the fixed-point theorem, [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) is directly applied to real-world problems.
 Typical examples are the "fair rent division problem" and the "cake cutting problem".
 
-When multiple people share a house, conflicts can arise over who rents which room and for how much, because the size and conditions of the rooms vary. Using algorithms applying Sperner's Lemma (like Su's algorithm), it can be proven that there always exists a fair allocation where "everyone is satisfied with their chosen room and rent, and the sum of the rents matches the original amount", and furthermore, it can be found approximately.
+When multiple people share a house, conflicts can arise over who rents which room and for how much, because the size and conditions of the rooms vary. Using algorithms applying [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) (like Su's algorithm), it can be proven that there always exists a fair allocation where "everyone is satisfied with their chosen room and rent, and the sum of the rents matches the original amount", and furthermore, it can be found approximately.
 
-Also, the "existence of Nash Equilibrium" proven by John Nash in economics depends on Brouwer's or Kakutani's fixed-point theorems, fundamentally concealing combinatorial structures like Sperner's Lemma.
+Also, the "existence of Nash Equilibrium" proven by John Nash in economics depends on Brouwer's or Kakutani's fixed-point theorems, fundamentally concealing combinatorial structures like [Sperner's Lemma](https://kenji.blog/p/sperners-lemma/).
 
 # 9. Conclusion
 
-Sperner's Lemma starts with an almost game-like setup of coloring the vertices of a triangle according to rules. However, within that simple logic of "counting the number of doors", profound truths about the continuity and invariance of space were hidden.
+[Sperner's Lemma](https://kenji.blog/p/sperners-lemma/) starts with an almost game-like setup of coloring the vertices of a triangle according to rules. However, within that simple logic of "counting the number of doors", profound truths about the continuity and invariance of space were hidden.
 
 Discrete mathematics and continuous mathematics. The fact that these two seemingly completely different worlds are connected by such a beautiful theorem is arguably one of the greatest appeals of mathematics as a discipline. We encourage readers to grab a piece of paper and pen, divide a triangle arbitrarily, and paint it in 3 colors. When you find the "complete triangle" that is always hiding there, you too should be able to touch the mystery of mathematics.

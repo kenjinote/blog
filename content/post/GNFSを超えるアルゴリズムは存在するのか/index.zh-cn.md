@@ -42,7 +42,7 @@ $$
 
 ## 3. GNFS（普通数域筛选法）算法全貌与数学结构
 
-GNFS拥有非常复杂且高级的数学基础。其基本思想是费马小定理和二次筛选法（QS）的延伸，即寻找满足同余式 $X^2 \equiv Y^2 \pmod n$ 且 $X \not\equiv \pm Y \pmod n$ 的非平凡组合 $(X, Y)$，从而推导出 $n$ 的因子 $\gcd(X-Y, n)$。
+GNFS拥有非常复杂且高级的数学基础。其基本思想是[费马小定理](https://kenji.blog/p/fermats-little-theorem/)和二次筛选法（QS）的延伸，即寻找满足同余式 $X^2 \equiv Y^2 \pmod n$ 且 $X \not\equiv \pm Y \pmod n$ 的非平凡组合 $(X, Y)$，从而推导出 $n$ 的因子 $\gcd(X-Y, n)$。
 
 然而，GNFS的精髓在于，它不仅仅在有理数域 $\mathbb{Q}$ 中进行计算，而是同时在称为代数数域（Algebraic Number Field）的扩域 $\mathbb{Q}(\alpha)$ 和有理数域中寻找“光滑数（Smooth numbers）”，并通过同态映射构建同余关系。
 

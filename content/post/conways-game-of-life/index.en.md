@@ -15,9 +15,9 @@ tags:
   - "Python"
 ---
 
-## 1. What is Conway's Game of Life?
+## 1. What is [Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/)?
 
-**Conway's Game of Life** is a type of **cellular automaton** devised by the British mathematician John Horton Conway in 1970. Although it is called a game, it is a "zero-player game," meaning that its evolution is determined by its initial state, requiring no further input.
+**[Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/)** is a type of **cellular automaton** devised by the British mathematician John Horton Conway in 1970. Although it is called a game, it is a "zero-player game," meaning that its evolution is determined by its initial state, requiring no further input.
 
 The greatest appeal of this system lies in the fact that **unpredictable and complex life-like behaviors (emergence) are generated from extremely simple deterministic rules**.
 
@@ -135,4 +135,4 @@ plt.show()
 
 ## 6. Conclusion
 
-Conway's Game of Life is one of the most beautiful and intuitive examples of **emergence**, where complexity is generated from simple rules. Situated at the boundaries of mathematics, computer science, physics, and biology, this model continues to provide a powerful metaphor for our understanding of the concepts of "life" and "computation".
+[Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/) is one of the most beautiful and intuitive examples of **emergence**, where complexity is generated from simple rules. Situated at the boundaries of mathematics, computer science, physics, and biology, this model continues to provide a powerful metaphor for our understanding of the concepts of "life" and "computation".

@@ -10,13 +10,13 @@ slug: "central-limit-theorem"
 
 ## 1. Introduction
 
-When studying data science and statistics, the **Central Limit Theorem** (CLT) is unavoidable. This theorem has an almost magical property: "No matter what distribution the data has, the distribution of its sample mean approaches a normal distribution as the sample size increases."
+When studying data science and statistics, the **[Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/)** (CLT) is unavoidable. This theorem has an almost magical property: "No matter what distribution the data has, the distribution of its sample mean approaches a normal distribution as the sample size increases."
 
-In this article, we will broadly explain the Central Limit Theorem, from an intuitive image to a strict mathematical definition and practical application examples.
+In this article, we will broadly explain the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/), from an intuitive image to a strict mathematical definition and practical application examples.
 
-## 2. What is the Central Limit Theorem?
+## 2. What is the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/)?
 
-The Central Limit Theorem (CLT) is one of the most powerful and surprising results in probability theory and statistics. Simply put, the sum (or average) of a large number of independent random variables sampled randomly is approximated by a normal distribution, regardless of the original variables' distribution.
+The [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/) (CLT) is one of the most powerful and surprising results in probability theory and statistics. Simply put, the sum (or average) of a large number of independent random variables sampled randomly is approximated by a normal distribution, regardless of the original variables' distribution.
 
 ### 2.1 Intuitive Understanding
 
@@ -26,7 +26,7 @@ Consider dice. When you roll one die, the distribution of the outcomes is a unif
 
 Suppose $n$ samples $X_1, X_2, \dots, X_n$ randomly drawn from a population follow identically independent distributions (i.i.d.). Let the mean (expected value) of this population be $\mu$ and the variance be $\sigma^2$.
 
-Let the sample mean be $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. According to the Central Limit Theorem, when $n$ is sufficiently large, the standardized variable $Z$ as shown below converges to the standard normal distribution $\mathcal{N}(0, 1)$.
+Let the sample mean be $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. According to the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/), when $n$ is sufficiently large, the standardized variable $Z$ as shown below converges to the standard normal distribution $\mathcal{N}(0, 1)$.
 
 
 $$
@@ -36,9 +36,9 @@ $$
 
 Here, $\xrightarrow{d}$ means convergence in distribution. $\text{ as } n \to \infty$ indicates that the sample size approaches infinity.
 
-## 3. Visualization of the Central Limit Theorem
+## 3. Visualization of the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/)
 
-To visually understand how the Central Limit Theorem works, here is a process diagram using Mermaid.
+To visually understand how the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/) works, here is a process diagram using Mermaid.
 
 ```mermaid
 graph TD
@@ -96,37 +96,37 @@ plt.show()
 
 When you run this code, you can see that it's a uniform distribution when $n=1$, but as $n$ gets larger, the histogram approaches the red line's normal distribution.
 
-## 5. Importance and Applications of the Central Limit Theorem
+## 5. Importance and Applications of the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/)
 
-Why is the Central Limit Theorem so important? Because even if we don't know exactly what distribution many real-world datasets have, we can assume a normal distribution when using statistics like the sample mean to conduct hypothesis testing and construct confidence intervals.
+Why is the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/) so important? Because even if we don't know exactly what distribution many real-world datasets have, we can assume a normal distribution when using statistics like the sample mean to conduct hypothesis testing and construct confidence intervals.
 
 ### 5.1 Foundation of Statistical Inference
-When we infer something from data, such as in public opinion polls, quality control, or A/B testing, much of the rationale relies on the Central Limit Theorem.
+When we infer something from data, such as in public opinion polls, quality control, or A/B testing, much of the rationale relies on the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/).
 
 ### 5.2 Accumulation of Errors
 Measurement errors and many noises in nature can also be modeled as the sum of many small, independent factors, so they often follow a normal distribution. This is why it is also called the Gaussian distribution.
 
 ## 6. Going Deeper: Approach to the Proof
 
-Characteristic functions and Taylor expansion are used for a strict proof of the Central Limit Theorem. Here is a brief overview.
+Characteristic functions and Taylor expansion are used for a strict proof of the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/). Here is a brief overview.
 
 Using the characteristic function $\phi_X(t) = E[e^{itX}]$, the characteristic function of the sum of independent random variables is the product of their respective characteristic functions. When we calculate the characteristic function of the standardized variable $Z$ and take the limit as $n \to \infty$, it can be shown to converge to $e^{-t^2/2}$, which is the characteristic function of the standard normal distribution. This proves that the distribution itself converges to a normal distribution.
 
 ## 7. Conclusion
 
-The Central Limit Theorem is a very beautiful theorem that shows the order hidden behind chaotic data. By understanding this theorem, you will be able to gain deeper insights into data analysis and statistical modeling.
+The [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/) is a very beautiful theorem that shows the order hidden behind chaotic data. By understanding this theorem, you will be able to gain deeper insights into data analysis and statistical modeling.
 
 
 ## Appendix: Detailed Mathematical Background and History
 
 ### Appendix 1: Development in Probability Theory
-The history of the Central Limit Theorem is deep, originating from Abraham de Moivre showing the normal approximation of the binomial distribution. It was later expanded by Pierre-Simon Laplace, and Aleksandr Lyapunov provided a proof under more general conditions. In modern probability theory, there are various extensions such as the Lindeberg condition and the Lyapunov condition. These conditions ensure that individual random variables do not have a dominant influence on the total sum. This provides an answer to the fundamental question of why diverse phenomena in nature and social sciences can be approximated by a normal distribution.
+The history of the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/) is deep, originating from Abraham de Moivre showing the normal approximation of the binomial distribution. It was later expanded by Pierre-Simon Laplace, and Aleksandr Lyapunov provided a proof under more general conditions. In modern probability theory, there are various extensions such as the Lindeberg condition and the Lyapunov condition. These conditions ensure that individual random variables do not have a dominant influence on the total sum. This provides an answer to the fundamental question of why diverse phenomena in nature and social sciences can be approximated by a normal distribution.
 
 ### Appendix 2: Application Conditions and the Meaning of the Theorem
 
 In the basic form discussed in this text, it is required that $X_1,\ldots,X_n$ are independent and identically distributed, with a finite mean $\mu$ and a finite, positive variance $0<\sigma^2<\infty$. Please understand the explanation "any distribution" within the scope of these conditions. What approaches a normal distribution is the distribution of the standardized sum or sample mean, and the distribution of the individual observations does not change.
 
-### Appendix 3: Standard Error and the Law of Large Numbers
+### Appendix 3: Standard Error and the [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/)
 
 Due to independence, the expected value and variance of the sample mean are as follows. The standard error is the dispersion of the sample mean and is different from the standard deviation of the individual data.
 
@@ -134,7 +134,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-Quadrupling the number of samples halves the standard error. The law of large numbers states that the sample mean approaches $\mu$, and the Central Limit Theorem describes the shape of the distribution by multiplying the fluctuation around it by $\sqrt{n}$.
+Quadrupling the number of samples halves the standard error. The law of large numbers states that the sample mean approaches $\mu$, and the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/) describes the shape of the distribution by multiplying the fluctuation around it by $\sqrt{n}$.
 
 ### Appendix 4: Supplementary Proof Using Characteristic Functions
 

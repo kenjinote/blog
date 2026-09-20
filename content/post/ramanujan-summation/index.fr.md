@@ -23,9 +23,9 @@ $$
 1 + 2 + 3 + 4 + \dots = -\frac{1}{12}
 $$
 
-Bien que nous additionnions des entiers positifs à l'infini, la somme devient inexplicablement une **fraction négative**. Ce résultat contre-intuitif est devenu célèbre lorsque le génie des mathématiques indien Srinivasa Ramanujan l'a mentionné dans une lettre adressée au mathématicien britannique G. H. Hardy.
+Bien que nous additionnions des entiers positifs à l'infini, la somme devient inexplicablement une **fraction négative**. Ce résultat contre-intuitif est devenu célèbre lorsque le génie des mathématiques indien [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) l'a mentionné dans une lettre adressée au mathématicien britannique G. H. Hardy.
 
-Dans cet article, nous expliquerons la méthode appelée « sommation de Ramanujan » (Ramanujan Summation), comment cette valeur étrange est dérivée, et comment elle est liée aux phénomènes physiques du monde réel.
+Dans cet article, nous expliquerons la méthode appelée « sommation de Ramanujan » ([Ramanujan Summation](https://kenji.blog/p/ramanujan-summation/)), comment cette valeur étrange est dérivée, et comment elle est liée aux phénomènes physiques du monde réel.
 
 ---
 

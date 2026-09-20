@@ -16,19 +16,19 @@ tags:
 
 ## 1. Pendahuluan
 
-Dalam sejarah matematika, ada sosok yang dikenal sebagai "Bapak Aljabar". Sosok tersebut adalah **Diophantus** (Diophantus dari Alexandria), yang aktif di Alexandria kuno. Karya utamanya, *Arithmetica*, memiliki pengaruh besar pada matematikawan selanjutnya di dunia Islam dan matematikawan di Eropa zaman Renaisans. Khususnya, "Teorema Terakhir Fermat", yang ditulis Pierre de Fermat di pinggir halaman *Arithmetica*, sangatlah terkenal.
+Dalam sejarah matematika, ada sosok yang dikenal sebagai "Bapak Aljabar". Sosok tersebut adalah **[Diophantus](https://kenji.blog/p/diophantus/)** ([Diophantus](https://kenji.blog/p/diophantus/) dari Alexandria), yang aktif di Alexandria kuno. Karya utamanya, *Arithmetica*, memiliki pengaruh besar pada matematikawan selanjutnya di dunia Islam dan matematikawan di Eropa zaman Renaisans. Khususnya, "[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)", yang ditulis [Pierre de Fermat](https://kenji.blog/p/fermat/) di pinggir halaman *Arithmetica*, sangatlah terkenal.
 
-Dalam artikel ini, kita akan menggali lebih dalam kehidupan Diophantus, pencapaian matematikanya, rincian mahakaryanya *Arithmetica*, dan "persamaan Diophantine" yang menyandang namanya. Selain itu, kita juga akan mengungkap misteri "batu nisan" (epitaph) miliknya, yang dari situ umur hidupnya dapat disimpulkan.
+Dalam artikel ini, kita akan menggali lebih dalam kehidupan [Diophantus](https://kenji.blog/p/diophantus/), pencapaian matematikanya, rincian mahakaryanya *Arithmetica*, dan "persamaan Diophantine" yang menyandang namanya. Selain itu, kita juga akan mengungkap misteri "batu nisan" (epitaph) miliknya, yang dari situ umur hidupnya dapat disimpulkan.
 
-## 2. Kehidupan Diophantus dan Latar Belakang Sejarah
+## 2. Kehidupan [Diophantus](https://kenji.blog/p/diophantus/) dan Latar Belakang Sejarah
 
 ### 2.1 Kehidupan yang Diselimuti Misteri
 
-Hampir tidak ada catatan akurat yang tersisa mengenai kapan Diophantus lahir atau kapan ia meninggal. Umumnya, diyakini bahwa ia aktif di Alexandria, Mesir sekitar abad ke-3 M (antara 200 dan 284 M). Dari tanggal tokoh-tokoh yang ia sebutkan (seperti Hypsicles), kita tahu bahwa itu setelah 150 SM, dan karena Theon dari Alexandria (abad ke-4 M) menyebutkan Diophantus, sudah pasti sebelum 364 M. Sejarawan modern memperkirakan ia berjaya sekitar tahun 250 M.
+Hampir tidak ada catatan akurat yang tersisa mengenai kapan [Diophantus](https://kenji.blog/p/diophantus/) lahir atau kapan ia meninggal. Umumnya, diyakini bahwa ia aktif di Alexandria, Mesir sekitar abad ke-3 M (antara 200 dan 284 M). Dari tanggal tokoh-tokoh yang ia sebutkan (seperti Hypsicles), kita tahu bahwa itu setelah 150 SM, dan karena Theon dari Alexandria (abad ke-4 M) menyebutkan [Diophantus](https://kenji.blog/p/diophantus/), sudah pasti sebelum 364 M. Sejarawan modern memperkirakan ia berjaya sekitar tahun 250 M.
 
 ### 2.2 Budaya Helenistik dan Alexandria
 
-Pada saat itu, Alexandria adalah pusat budaya dan pembelajaran Helenistik, membanggakan perpustakaan raksasa (Perpustakaan Alexandria) dan berfungsi sebagai pusat pengetahuan tempat banyak sarjana berkumpul. Di kota ini di mana pengetahuan dari Yunani, Mesir, Babilonia, dan bahkan India bersilangan, Diophantus diperkirakan memiliki akses ke warisan matematika masa lalu yang luas. Berbeda dengan tradisi geometris yang dibangun oleh matematikawan besar Yunani seperti Euclid, Archimedes, dan Apollonius, beberapa teori menunjukkan bahwa Diophantus sangat dipengaruhi oleh pendekatan aljabar dari Babilonia.
+Pada saat itu, Alexandria adalah pusat budaya dan pembelajaran Helenistik, membanggakan perpustakaan raksasa (Perpustakaan Alexandria) dan berfungsi sebagai pusat pengetahuan tempat banyak sarjana berkumpul. Di kota ini di mana pengetahuan dari Yunani, Mesir, Babilonia, dan bahkan India bersilangan, [Diophantus](https://kenji.blog/p/diophantus/) diperkirakan memiliki akses ke warisan matematika masa lalu yang luas. Berbeda dengan tradisi geometris yang dibangun oleh matematikawan besar Yunani seperti [Euclid](https://kenji.blog/p/euclid/), Archimedes, dan Apollonius, beberapa teori menunjukkan bahwa [Diophantus](https://kenji.blog/p/diophantus/) sangat dipengaruhi oleh pendekatan aljabar dari Babilonia.
 
 ```mermaid
 timeline
@@ -44,16 +44,16 @@ timeline
 
 ## 3. Dampak Mahakaryanya *Arithmetica*
 
-Pencapaian terbesar Diophantus adalah bukunya *Arithmetica*, yang dikatakan terdiri dari 13 volume. Sayangnya, hanya enam di antaranya yang bertahan dalam bahasa Yunani hingga saat ini, dan empat lagi telah ditemukan dalam terjemahan bahasa Arab.
+Pencapaian terbesar [Diophantus](https://kenji.blog/p/diophantus/) adalah bukunya *Arithmetica*, yang dikatakan terdiri dari 13 volume. Sayangnya, hanya enam di antaranya yang bertahan dalam bahasa Yunani hingga saat ini, dan empat lagi telah ditemukan dalam terjemahan bahasa Arab.
 
 ### 3.1 Fajar Aljabar Simbolik
 
-Aspek terobosan dari *Arithmetica* adalah penggunaannya akan **simbol-simbol** untuk merepresentasikan sesuatu yang tidak diketahui (variabel), pangkatnya (kuadrat, kubik, dll.), dan operasi (penambahan, pengurangan, persamaan, dll.). Dalam matematika Yunani sebelum dirinya (seperti Euclid), masalah matematika sebagian besar digambarkan menggunakan bangun geometri dan dijelaskan dengan kata-kata (ini disebut aljabar retorika). Namun, Diophantus memungkinkan penanganan persamaan yang lebih abstrak dan kompleks dengan menyimbolkan ekspresi matematika (fase transisi yang disebut aljabar sinkopasi).
+Aspek terobosan dari *Arithmetica* adalah penggunaannya akan **simbol-simbol** untuk merepresentasikan sesuatu yang tidak diketahui (variabel), pangkatnya (kuadrat, kubik, dll.), dan operasi (penambahan, pengurangan, persamaan, dll.). Dalam matematika Yunani sebelum dirinya (seperti [Euclid](https://kenji.blog/p/euclid/)), masalah matematika sebagian besar digambarkan menggunakan bangun geometri dan dijelaskan dengan kata-kata (ini disebut aljabar retorika). Namun, [Diophantus](https://kenji.blog/p/diophantus/) memungkinkan penanganan persamaan yang lebih abstrak dan kompleks dengan menyimbolkan ekspresi matematika (fase transisi yang disebut aljabar sinkopasi).
 
 Ia menggunakan simbol khusus (setara dengan $x$ modern) untuk merepresentasikan variabel, dan memberikan notasi unik pada konstanta dan kebalikan dari variabel.
 
 $$
-\text{Contoh polinomial Diophantus (notasi modern):} \\
+\text{Contoh polinomial [Diophantus](https://kenji.blog/p/diophantus/) (notasi modern):} \\
 3x^3 - 2x^2 + 5x - 1 = 0
 $$
 
@@ -61,11 +61,11 @@ $$
 
 *Arithmetica* berisi sekitar 130 masalah mengenai sistem persamaan linear, persamaan kuadrat, dan bahkan persamaan derajat tinggi. Fitur utama dari masalah-masalah ini adalah, tidak seperti matematikawan modern yang mencari solusi bilangan riil atau kompleks, ia terutama mencari **solusi bilangan rasional (pecahan positif atau bilangan bulat)**. Konsep bilangan negatif, nol, dan bilangan irasional belum sepenuhnya terbentuk pada masa itu, dan ia tidak mengakuinya sebagai solusi. Baginya, "angka" berarti bilangan rasional positif.
 
-Misalnya, ketika Diophantus menemukan persamaan seperti $4x + 20 = 4$, ia menganggapnya "absurd" (konyol) karena solusinya akan menjadi bilangan negatif ($x = -4$).
+Misalnya, ketika [Diophantus](https://kenji.blog/p/diophantus/) menemukan persamaan seperti $4x + 20 = 4$, ia menganggapnya "absurd" (konyol) karena solusinya akan menjadi bilangan negatif ($x = -4$).
 
 ## 4. Persamaan Diophantine
 
-Saat ini, istilah "Persamaan Diophantine" merujuk pada **persamaan polinomial dengan koefisien bilangan bulat yang mana hanya solusi bilangan bulat yang dicari**. Meskipun Diophantus sendiri juga mencari solusi bilangan rasional, hal ini berkembang menjadi cabang penting dari "teori bilangan" dalam matematika selanjutnya.
+Saat ini, istilah "Persamaan Diophantine" merujuk pada **persamaan polinomial dengan koefisien bilangan bulat yang mana hanya solusi bilangan bulat yang dicari**. Meskipun [Diophantus](https://kenji.blog/p/diophantus/) sendiri juga mencari solusi bilangan rasional, hal ini berkembang menjadi cabang penting dari "teori bilangan" dalam matematika selanjutnya.
 
 ### 4.1 Persamaan Diophantine Linear
 
@@ -91,13 +91,13 @@ $$
 x^2 + y^2 = z^2
 $$
 
-Himpunan bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini disebut **Tripel Pythagoras**. Contoh terkenal antara lain $(3, 4, 5)$ dan $(5, 12, 13)$. Dalam Buku II, Masalah 8 dari *Arithmetica*, Diophantus membahas masalah pembagian suatu bilangan kuadrat menjadi jumlah dari dua bilangan kuadrat (misalnya, mencari bilangan rasional $x, y$ sehingga $16 = x^2 + y^2$).
+Himpunan bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini disebut **Tripel Pythagoras**. Contoh terkenal antara lain $(3, 4, 5)$ dan $(5, 12, 13)$. Dalam Buku II, Masalah 8 dari *Arithmetica*, [Diophantus](https://kenji.blog/p/diophantus/) membahas masalah pembagian suatu bilangan kuadrat menjadi jumlah dari dua bilangan kuadrat (misalnya, mencari bilangan rasional $x, y$ sehingga $16 = x^2 + y^2$).
 
-Di bagian pinggir di sebelah masalah ini, Pierre de Fermat, seorang hakim Prancis abad ke-17 dan matematikawan amatir, meninggalkan catatan berikut:
+Di bagian pinggir di sebelah masalah ini, [Pierre de Fermat](https://kenji.blog/p/fermat/), seorang hakim Prancis abad ke-17 dan matematikawan amatir, meninggalkan catatan berikut:
 
 > "Tidak mungkin untuk memisahkan bilangan pangkat tiga menjadi dua bilangan pangkat tiga, atau pangkat empat menjadi dua bilangan pangkat empat, atau secara umum, setiap pangkat yang lebih tinggi dari pangkat dua, menjadi dua pangkat yang sama. Saya telah menemukan bukti yang benar-benar menakjubkan dari hal ini, yang mana pinggir halaman ini terlalu sempit untuk memuatnya."
 
-Ini adalah **Teorema Terakhir Fermat** yang terkenal (bahwa $x^n + y^n = z^n \ (n \ge 3)$ tidak memiliki solusi bilangan bulat positif). Teorema ini terus menolak tantangan matematikawan jenius di seluruh dunia selama sekitar 350 tahun setelah diajukan, sampai akhirnya dibuktikan oleh Andrew Wiles pada tahun 1995. Tanpa buku Diophantus, drama besar ini mungkin tidak akan pernah terjadi.
+Ini adalah **[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)** yang terkenal (bahwa $x^n + y^n = z^n \ (n \ge 3)$ tidak memiliki solusi bilangan bulat positif). Teorema ini terus menolak tantangan matematikawan jenius di seluruh dunia selama sekitar 350 tahun setelah diajukan, sampai akhirnya dibuktikan oleh [Andrew Wiles](https://kenji.blog/p/wiles/) pada tahun 1995. Tanpa buku [Diophantus](https://kenji.blog/p/diophantus/), drama besar ini mungkin tidak akan pernah terjadi.
 
 ```mermaid
 graph TD
@@ -109,13 +109,13 @@ graph TD
     B --> G["Penyelesaian via Algoritma Euclidean"]
 ```
 
-## 5. Batu Nisan (Epitaph) Diophantus
+## 5. Batu Nisan (Epitaph) [Diophantus](https://kenji.blog/p/diophantus/)
 
-Petunjuk yang paling menarik, dan mungkin satu-satunya yang spesifik untuk memahami kehidupan Diophantus, adalah teka-teki aljabar yang konon diukir di batu nisannya. Ini dicatat dalam *Greek Anthology* yang disusun oleh Metrodorus sekitar abad ke-5, dan memungkinkan seseorang untuk menyimpulkan umur Diophantus dengan memecahkan persamaan linear.
+Petunjuk yang paling menarik, dan mungkin satu-satunya yang spesifik untuk memahami kehidupan [Diophantus](https://kenji.blog/p/diophantus/), adalah teka-teki aljabar yang konon diukir di batu nisannya. Ini dicatat dalam *Greek Anthology* yang disusun oleh Metrodorus sekitar abad ke-5, dan memungkinkan seseorang untuk menyimpulkan umur [Diophantus](https://kenji.blog/p/diophantus/) dengan memecahkan persamaan linear.
 
 ### 5.1 Isi Batu Nisan
 
-> Di sini terbaring Diophantus. Angka-angka menceritakan panjang hidupnya.
+> Di sini terbaring [Diophantus](https://kenji.blog/p/diophantus/). Angka-angka menceritakan panjang hidupnya.
 > Selama $\frac{1}{6}$ dari hidupnya ia adalah seorang anak laki-laki.
 > Setelah $\frac{1}{12}$ lagi, janggutnya mulai tumbuh.
 > Setelah $\frac{1}{7}$ lagi, ia menikah.
@@ -125,7 +125,7 @@ Petunjuk yang paling menarik, dan mungkin satu-satunya yang spesifik untuk memah
 
 ### 5.2 Penyelesaian dengan Persamaan
 
-Jika kita memisalkan $x$ sebagai umur Diophantus (tahun-tahun ia hidup), teks di atas dapat dinyatakan sebagai persamaan berikut:
+Jika kita memisalkan $x$ sebagai umur [Diophantus](https://kenji.blog/p/diophantus/) (tahun-tahun ia hidup), teks di atas dapat dinyatakan sebagai persamaan berikut:
 
 $$
 \frac{x}{6} + \frac{x}{12} + \frac{x}{7} + 5 + \frac{x}{2} + 4 = x
@@ -160,28 +160,28 @@ $$
 x = 84
 $$
 
-Oleh karena itu, kita dapat melihat bahwa Diophantus meninggal pada usia **84** tahun. Mengingat angka harapan hidup rata-rata pada masa itu, ia berumur sangat panjang. Garis waktu kehidupannya adalah sebagai berikut:
+Oleh karena itu, kita dapat melihat bahwa [Diophantus](https://kenji.blog/p/diophantus/) meninggal pada usia **84** tahun. Mengingat angka harapan hidup rata-rata pada masa itu, ia berumur sangat panjang. Garis waktu kehidupannya adalah sebagai berikut:
 
 - Masa kecil: $84 \times \frac{1}{6} = 14$ tahun (usia 0-14)
 - Masa muda: $84 \times \frac{1}{12} = 7$ tahun (usia 14-21)
 - Sampai menikah: $84 \times \frac{1}{7} = 12$ tahun (usia 21-33)
 - Kelahiran putra: 5 tahun setelah menikah (33 + 5 = 38 tahun)
 - Umur putra: $84 \times \frac{1}{2} = 42$ tahun
-- Kematian putra: saat Diophantus berusia 80 tahun (38 + 42 = 80 tahun)
-- Kematian Diophantus: 4 tahun setelah kematian putra (80 + 4 = 84 tahun)
+- Kematian putra: saat [Diophantus](https://kenji.blog/p/diophantus/) berusia 80 tahun (38 + 42 = 80 tahun)
+- Kematian [Diophantus](https://kenji.blog/p/diophantus/): 4 tahun setelah kematian putra (80 + 4 = 84 tahun)
 
 ## 6. Pengaruh pada Generasi Selanjutnya dan Warisan
 
-Karya-karya Diophantus sempat hilang di dunia Eropa Barat bersama dengan kemunduran Kekaisaran Romawi. Namun, karya-karya tersebut dilestarikan dan dipelajari dengan cermat di Kekaisaran Romawi Timur (Bizantium) dan dunia Islam. Pada akhir abad ke-4, Hypatia dari Alexandria konon telah menulis komentar tentang *Arithmetica*.
+Karya-karya [Diophantus](https://kenji.blog/p/diophantus/) sempat hilang di dunia Eropa Barat bersama dengan kemunduran Kekaisaran Romawi. Namun, karya-karya tersebut dilestarikan dan dipelajari dengan cermat di Kekaisaran Romawi Timur (Bizantium) dan dunia Islam. Pada akhir abad ke-4, Hypatia dari Alexandria konon telah menulis komentar tentang *Arithmetica*.
 
-Secara khusus, matematikawan di Bagdad pada abad ke-9 menerjemahkan *Arithmetica* ke dalam bahasa Arab, yang sangat berkontribusi pada perkembangan aljabar Islam. Matematikawan Islam seperti Al-Karaji mengadopsi dan mengembangkan metode Diophantus lebih lanjut.
+Secara khusus, matematikawan di Bagdad pada abad ke-9 menerjemahkan *Arithmetica* ke dalam bahasa Arab, yang sangat berkontribusi pada perkembangan aljabar Islam. Matematikawan Islam seperti Al-Karaji mengadopsi dan mengembangkan metode [Diophantus](https://kenji.blog/p/diophantus/) lebih lanjut.
 
-Pada abad ke-16, ketika karya klasik Yunani ditemukan kembali di Eropa zaman Renaisans, *Arithmetica* diterjemahkan ke dalam bahasa Latin. Edisi dwibahasa Yunani dan Latin yang diterbitkan oleh Claude Gaspard Bachet de Méziriac pada tahun 1621 dibaca secara luas. Edisi Bachet dari *Arithmetica* inilah yang dipelajari Fermat dengan saksama, yang memicu terbukanya pintu baru dalam matematika.
+Pada abad ke-16, ketika karya klasik Yunani ditemukan kembali di Eropa zaman Renaisans, *Arithmetica* diterjemahkan ke dalam bahasa Latin. Edisi dwibahasa Yunani dan Latin yang diterbitkan oleh [Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac pada tahun 1621 dibaca secara luas. Edisi Bachet dari *Arithmetica* inilah yang dipelajari Fermat dengan saksama, yang memicu terbukanya pintu baru dalam matematika.
 
-Teori persamaan Diophantine kemudian dipelajari secara mendalam oleh para raksasa seperti Leonhard Euler, Joseph-Louis Lagrange, dan Carl Friedrich Gauss. Penelitian mereka berkembang menjadi bidang matematika modern yang luas, yaitu "teori bilangan aljabar" dan "geometri aljabar". Masalah ke-10 dari 23 masalah Hilbert adalah "menemukan algoritma umum untuk menentukan apakah persamaan Diophantine tertentu dapat diselesaikan", dan pada tahun 1970 Yuri Matiyasevich membuktikan bahwa "algoritma semacam itu tidak ada". Nama Diophantus terukir dalam-dalam di garda terdepan matematika modern.
+Teori persamaan Diophantine kemudian dipelajari secara mendalam oleh para raksasa seperti [Leonhard Euler](https://kenji.blog/p/euler/), [Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/), dan [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). Penelitian mereka berkembang menjadi bidang matematika modern yang luas, yaitu "teori bilangan aljabar" dan "geometri aljabar". Masalah ke-10 dari 23 masalah Hilbert adalah "menemukan algoritma umum untuk menentukan apakah persamaan Diophantine tertentu dapat diselesaikan", dan pada tahun 1970 Yuri Matiyasevich membuktikan bahwa "algoritma semacam itu tidak ada". Nama [Diophantus](https://kenji.blog/p/diophantus/) terukir dalam-dalam di garda terdepan matematika modern.
 
 ## 7. Kesimpulan
 
-Diophantus adalah seorang pelopor yang meletakkan dasar-dasar aljabar modern dengan menggunakan simbol untuk ekspresi matematika dan menangani variabel (sesuatu yang tidak diketahui). *Arithmetica* yang ia tinggalkan bukan sekadar kumpulan teka-teki atau masalah perhitungan, tetapi berisi wawasan mendalam tentang sifat-sifat angka. Masalah yang ia sajikan terus memesona matematikawan selama ribuan tahun dan telah menjadi kekuatan pendorong yang sangat menggerakkan sejarah matematika.
+[Diophantus](https://kenji.blog/p/diophantus/) adalah seorang pelopor yang meletakkan dasar-dasar aljabar modern dengan menggunakan simbol untuk ekspresi matematika dan menangani variabel (sesuatu yang tidak diketahui). *Arithmetica* yang ia tinggalkan bukan sekadar kumpulan teka-teki atau masalah perhitungan, tetapi berisi wawasan mendalam tentang sifat-sifat angka. Masalah yang ia sajikan terus memesona matematikawan selama ribuan tahun dan telah menjadi kekuatan pendorong yang sangat menggerakkan sejarah matematika.
 
-Batu nisannya, yang secara diam-diam menceritakan kisah hidup 84 tahun melalui rumus-rumus, mengajarkan kepada kita keindahan universal matematika dan pengejaran kebenaran abadi. Diophantus benar-benar dapat disebut sebagai tokoh besar yang meletakkan landasan pertama dari bangunan agung aljabar.
+Batu nisannya, yang secara diam-diam menceritakan kisah hidup 84 tahun melalui rumus-rumus, mengajarkan kepada kita keindahan universal matematika dan pengejaran kebenaran abadi. [Diophantus](https://kenji.blog/p/diophantus/) benar-benar dapat disebut sebagai tokoh besar yang meletakkan landasan pertama dari bangunan agung aljabar.

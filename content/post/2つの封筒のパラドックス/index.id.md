@@ -140,7 +140,7 @@ Pertanyaannya adalah: dapatkah dikatakan bahwa peluang masing-masing 5.000 Yen d
 
 Sebagai contoh, misalkan anggaran maksimum acara tersebut adalah 100 juta Yen. Jika Anda membuka Amplop A dan terdapat "60 juta Yen", probabilitas Amplop B berisi "120 juta Yen" adalah nol (karena melebihi anggaran). Dengan kata lain, semakin besar jumlah di Amplop A, probabilitas Amplop B berisi "dua kali lipat" akan semakin menurun, dan probabilitas berisi "setengah" seharusnya semakin meningkat.
 
-Jika kita mengasumsikan distribusi apriori $P(x)$ yang berubah-ubah, saat menghitung nilai harapan menggunakan Teorema Bayes, secara matematis telah dibuktikan bahwa **tidak ada distribusi ajaib yang membuat "menukar menjadi lebih menguntungkan" untuk semua nilai $X$, pada distribusi probabilitas realistis manapun (di mana jumlah totalnya adalah 1)**.
+Jika kita mengasumsikan distribusi apriori $P(x)$ yang berubah-ubah, saat menghitung nilai harapan menggunakan [Teorema Bayes](https://kenji.blog/p/bayes-theorem/), secara matematis telah dibuktikan bahwa **tidak ada distribusi ajaib yang membuat "menukar menjadi lebih menguntungkan" untuk semua nilai $X$, pada distribusi probabilitas realistis manapun (di mana jumlah totalnya adalah 1)**.
 
 ---
 

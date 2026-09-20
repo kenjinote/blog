@@ -60,7 +60,7 @@ Keamanan kriptografi berbasis kisi bergantung pada kesulitan memecahkan masalah 
 SVP adalah masalah yang paling klasik dan terkenal dalam teori kisi.
 
 **Definisi (SVP):**
-Diberikan sembarang basis kisi $B$, temukan vektor $\mathbf{v}$ dengan norma Euclidean (panjang) terkecil di antara vektor-vektor bukan nol yang termasuk dalam kisi $\mathcal{L}(B)$ tersebut.
+Diberikan sembarang basis kisi $B$, temukan vektor $\mathbf{v}$ dengan norma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an (panjang) terkecil di antara vektor-vektor bukan nol yang termasuk dalam kisi $\mathcal{L}(B)$ tersebut.
 
 Dinyatakan dalam rumus, ini adalah masalah mencari $\mathbf{v}$ sehingga $\min_{\mathbf{v} \in \mathcal{L}(B) \setminus \{\mathbf{0}\}} \| \mathbf{v} \|$. Panjang minimum ini ditulis sebagai $\lambda_1(\mathcal{L})$ dan disebut "Minimum berurutan pertama (First successive minimum) dari kisi".
 

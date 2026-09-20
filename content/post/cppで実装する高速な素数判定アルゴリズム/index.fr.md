@@ -54,9 +54,9 @@ La complexité de cet algorithme est de $O(\sqrt{N})$. Si $N \le 10^{12}$, il pe
 
 Ce qui a été conçu pour surmonter les limites de la méthode des divisions successives est l'"algorithme probabiliste (Probabilistic Algorithm)" qui utilise des théorèmes de la théorie des nombres. L'exemple typique en est le "test de primalité de Fermat" utilisant le petit théorème de Fermat.
 
-## Le petit théorème de Fermat (Fermat's Little Theorem)
+## Le petit théorème de Fermat ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-Ce théorème, découvert par Pierre de Fermat, affirme ce qui suit :
+Ce théorème, découvert par [Pierre de Fermat](https://kenji.blog/p/fermat/), affirme ce qui suit :
 
 > Pour tout nombre premier $p$ et tout entier $a$ qui lui est premier (non multiple de $p$), la congruence suivante est vraie :
 > $$ a^{p-1} \equiv 1 \pmod p $$

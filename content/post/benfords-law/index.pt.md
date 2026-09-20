@@ -19,13 +19,13 @@ Por exemplo, se você extrair o primeiro dígito de diversos dados na natureza e
 
 O número que aparece com mais frequência entre eles é o **"1"**. Surpreendentemente, cerca de 30% de todos os dados começam com 1. Intuitivamente, poderíamos esperar que os números de 1 a 9 aparecessem cerca de 11,1% das vezes cada, mas os dados do mundo real não funcionam assim.
 
-A lei matemática que explica esse fenômeno misterioso é a **Lei de Benford (Benford's Law)**.
+A lei matemática que explica esse fenômeno misterioso é a **[Lei de Benford](https://kenji.blog/p/benfords-law/) ([Benford's Law](https://kenji.blog/p/benfords-law/))**.
 
-Neste artigo, explicaremos em detalhes como a Lei de Benford funciona, por que esse fenômeno ocorre e como essa lei é aplicada para detectar fraudes.
+Neste artigo, explicaremos em detalhes como a [Lei de Benford](https://kenji.blog/p/benfords-law/) funciona, por que esse fenômeno ocorre e como essa lei é aplicada para detectar fraudes.
 
-## O que é a Lei de Benford?
+## O que é a [Lei de Benford](https://kenji.blog/p/benfords-law/)?
 
-A Lei de Benford (também conhecida como a Lei do Primeiro Dígito) afirma que, em muitas coleções de dados numéricos da vida real, a probabilidade de o primeiro dígito (o dígito não zero mais significativo) aparecer é maior para números menores.
+A [Lei de Benford](https://kenji.blog/p/benfords-law/) (também conhecida como a Lei do Primeiro Dígito) afirma que, em muitas coleções de dados numéricos da vida real, a probabilidade de o primeiro dígito (o dígito não zero mais significativo) aparecer é maior para números menores.
 
 Especificamente, a probabilidade $P(d)$ de o primeiro dígito ser $d$ ($d \in \{1, 2, ..., 9\}$) é expressa pela seguinte equação logarítmica:
 
@@ -57,7 +57,7 @@ Por que ocorre esse viés contraintuitivo? As explicações intuitivas para ente
 
 ### Invariância de Escala
 
-Se existe uma lei natural universal, a própria lei não deve mudar mesmo se a unidade de medida for alterada. Por exemplo, se a distância for medida em quilômetros ou milhas, a probabilidade de distribuição do primeiro dígito deve ser a mesma. Matematicamente, quando se busca uma distribuição de probabilidade que satisfaça a condição de que a distribuição permaneça inalterada mesmo quando multiplicada por uma constante (invariância de escala), chega-se inevitavelmente à distribuição logarítmica da Lei de Benford.
+Se existe uma lei natural universal, a própria lei não deve mudar mesmo se a unidade de medida for alterada. Por exemplo, se a distância for medida em quilômetros ou milhas, a probabilidade de distribuição do primeiro dígito deve ser a mesma. Matematicamente, quando se busca uma distribuição de probabilidade que satisfaça a condição de que a distribuição permaneça inalterada mesmo quando multiplicada por uma constante (invariância de escala), chega-se inevitavelmente à distribuição logarítmica da [Lei de Benford](https://kenji.blog/p/benfords-law/).
 
 ### Escala Logarítmica e Crescimento
 
@@ -71,7 +71,7 @@ $$ \text{Tempo de permanência} \propto \log_{10}(d+1) - \log_{10}(d) $$
 
 ## A que tipo de dados se aplica?
 
-A Lei de Benford não pode ser aplicada a todos os dados. Existe uma diferença clara entre os dados a que se aplica e os dados a que não se aplica.
+A [Lei de Benford](https://kenji.blog/p/benfords-law/) não pode ser aplicada a todos os dados. Existe uma diferença clara entre os dados a que se aplica e os dados a que não se aplica.
 
 ### Exemplos de dados aplicáveis
 - **Dados amplamente distribuídos**: Dados que abrangem várias ordens de grandeza (ex: dados distribuídos de 10 a 1.000.000).
@@ -85,13 +85,13 @@ A Lei de Benford não pode ser aplicada a todos os dados. Existe uma diferença 
 
 ## Aplicação na Detecção de Fraudes
 
-Atualmente, um dos campos em que a Lei de Benford é usada de forma mais prática é a **Detecção de Fraude (Fraud Detection)**.
+Atualmente, um dos campos em que a [Lei de Benford](https://kenji.blog/p/benfords-law/) é usada de forma mais prática é a **Detecção de Fraude (Fraud Detection)**.
 
-Quando os humanos tentam fabricar ou manipular números aleatoriamente para criar dados, inconscientemente tentam usar cada número igualmente ou evitar certos números. No entanto, como os dados naturais seguem a Lei de Benford, os dados fabricados se desviarão significativamente desta lei.
+Quando os humanos tentam fabricar ou manipular números aleatoriamente para criar dados, inconscientemente tentam usar cada número igualmente ou evitar certos números. No entanto, como os dados naturais seguem a [Lei de Benford](https://kenji.blog/p/benfords-law/), os dados fabricados se desviarão significativamente desta lei.
 
 ### Uso em Auditorias Contábeis
 
-Autoridades fiscais e empresas de auditoria contábil examinam livros e relatórios de despesas corporativas para verificar automaticamente se o primeiro dígito (ou o segundo dígito) dos números segue a Lei de Benford.
+Autoridades fiscais e empresas de auditoria contábil examinam livros e relatórios de despesas corporativas para verificar automaticamente se o primeiro dígito (ou o segundo dígito) dos números segue a [Lei de Benford](https://kenji.blog/p/benfords-law/).
 
 ```mermaid
 graph TD
@@ -102,15 +102,15 @@ graph TD
     E --> F["Realizar Auditoria Detalhada"]
 ```
 
-Se uma grande quantidade de "despesas fictícias" for inflada, a distribuição desses valores se tornará antinatural e sairá da curva da Lei de Benford. Esse método é incrivelmente poderoso e, de fato, muitos casos de peculato e fraudes contábeis foram descobertos a partir desta lei.
+Se uma grande quantidade de "despesas fictícias" for inflada, a distribuição desses valores se tornará antinatural e sairá da curva da [Lei de Benford](https://kenji.blog/p/benfords-law/). Esse método é incrivelmente poderoso e, de fato, muitos casos de peculato e fraudes contábeis foram descobertos a partir desta lei.
 
 ### Alegações de Fraude Eleitoral
 
-Além disso, em dados de contagem de votos eleitorais, se os resultados agregados de cada seção eleitoral seguem a Lei de Benford é às vezes usado como indicador para verificar fraudes eleitorais (no entanto, no caso de dados eleitorais, às vezes é difícil de aplicar dependendo do tamanho dos distritos, o que é um assunto de debate).
+Além disso, em dados de contagem de votos eleitorais, se os resultados agregados de cada seção eleitoral seguem a [Lei de Benford](https://kenji.blog/p/benfords-law/) é às vezes usado como indicador para verificar fraudes eleitorais (no entanto, no caso de dados eleitorais, às vezes é difícil de aplicar dependendo do tamanho dos distritos, o que é um assunto de debate).
 
 ## Conclusão
 
-A **Lei de Benford** é uma das belas ordens matemáticas ocultas em um mundo aparentemente caótico.
+A **[Lei de Benford](https://kenji.blog/p/benfords-law/)** é uma das belas ordens matemáticas ocultas em um mundo aparentemente caótico.
 
 Nossa intuição tende a pensar que "os números aparecem igualmente", mas, na realidade, o "1" tem uma presença esmagadora. Conhecer essa lei pode mudar um pouco a maneira como você vê os dados que vê nos noticiários, nas demonstrações financeiras das empresas e até mesmo na vastidão do mundo natural.
 

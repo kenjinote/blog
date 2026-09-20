@@ -10,13 +10,13 @@ slug: "central-limit-theorem"
 
 ## 1. Introduction
 
-Lorsque l'on étudie la science des données et les statistiques, il est impossible d'éviter le **Théorème Central Limite** (TCL). Ce théorème possède une propriété presque magique : "Peu importe la distribution des données, la distribution de sa moyenne d'échantillon s'approche d'une distribution normale à mesure que la taille de l'échantillon augmente."
+Lorsque l'on étudie la science des données et les statistiques, il est impossible d'éviter le **[Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/)** (TCL). Ce théorème possède une propriété presque magique : "Peu importe la distribution des données, la distribution de sa moyenne d'échantillon s'approche d'une distribution normale à mesure que la taille de l'échantillon augmente."
 
-Dans cet article, nous expliquerons largement le Théorème Central Limite, depuis une image intuitive jusqu'à une définition mathématique stricte et des exemples d'applications pratiques.
+Dans cet article, nous expliquerons largement le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/), depuis une image intuitive jusqu'à une définition mathématique stricte et des exemples d'applications pratiques.
 
-## 2. Qu'est-ce que le Théorème Central Limite ?
+## 2. Qu'est-ce que le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/) ?
 
-Le Théorème Central Limite (TCL) est l'un des résultats les plus puissants et surprenants de la théorie des probabilités et des statistiques. En termes simples, la somme (ou la moyenne) d'un grand nombre de variables aléatoires indépendantes tirées au hasard s'approche d'une distribution normale, indépendamment de la distribution des variables d'origine.
+Le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/) (TCL) est l'un des résultats les plus puissants et surprenants de la théorie des probabilités et des statistiques. En termes simples, la somme (ou la moyenne) d'un grand nombre de variables aléatoires indépendantes tirées au hasard s'approche d'une distribution normale, indépendamment de la distribution des variables d'origine.
 
 ### 2.1 Compréhension Intuitive
 
@@ -26,7 +26,7 @@ Prenons l'exemple des dés. Lorsque vous lancez un seul dé, la distribution des
 
 Supposons que $n$ échantillons $X_1, X_2, \dots, X_n$ tirés au hasard d'une population suivent des distributions identiques et indépendantes (i.i.d.). Soit la moyenne (valeur espérée) de cette population $\mu$ et la variance $\sigma^2$.
 
-Soit la moyenne d'échantillon $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. Selon le Théorème Central Limite, lorsque $n$ est suffisamment grand, la variable standardisée $Z$ comme illustré ci-dessous converge vers la distribution normale standard $\mathcal{N}(0, 1)$.
+Soit la moyenne d'échantillon $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. Selon le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/), lorsque $n$ est suffisamment grand, la variable standardisée $Z$ comme illustré ci-dessous converge vers la distribution normale standard $\mathcal{N}(0, 1)$.
 
 
 $$
@@ -36,9 +36,9 @@ $$
 
 Ici, $\xrightarrow{d}$ signifie la convergence en distribution. $\text{ pour } n \to \infty$ indique que la taille de l'échantillon approche de l'infini.
 
-## 3. Visualisation du Théorème Central Limite
+## 3. Visualisation du [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/)
 
-Pour comprendre visuellement comment fonctionne le Théorème Central Limite, voici un diagramme de processus utilisant Mermaid.
+Pour comprendre visuellement comment fonctionne le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/), voici un diagramme de processus utilisant Mermaid.
 
 ```mermaid
 graph TD
@@ -96,31 +96,31 @@ plt.show()
 
 Lorsque vous exécutez ce code, vous pouvez confirmer que pour $n=1$, c'est une distribution uniforme, mais à mesure que $n$ augmente, l'histogramme s'approche de la ligne rouge de la distribution normale.
 
-## 5. Importance et Applications du Théorème Central Limite
+## 5. Importance et Applications du [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/)
 
-Pourquoi le Théorème Central Limite est-il si important ? C'est parce que même si nous ne savons pas exactement quelle distribution ont de nombreuses données du monde réel, nous pouvons supposer une distribution normale lors de l'utilisation de statistiques comme la moyenne d'échantillon pour effectuer des tests d'hypothèses et construire des intervalles de confiance.
+Pourquoi le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/) est-il si important ? C'est parce que même si nous ne savons pas exactement quelle distribution ont de nombreuses données du monde réel, nous pouvons supposer une distribution normale lors de l'utilisation de statistiques comme la moyenne d'échantillon pour effectuer des tests d'hypothèses et construire des intervalles de confiance.
 
 ### 5.1 Fondement de l'Inférence Statistique
-Lorsque nous déduisons quelque chose à partir des données, comme dans les sondages d'opinion, le contrôle qualité ou les tests A/B, une grande partie du raisonnement repose sur le Théorème Central Limite.
+Lorsque nous déduisons quelque chose à partir des données, comme dans les sondages d'opinion, le contrôle qualité ou les tests A/B, une grande partie du raisonnement repose sur le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/).
 
 ### 5.2 Accumulation des Erreurs
 Les erreurs de mesure et de nombreux bruits dans la nature peuvent également être modélisés comme la somme de nombreux petits facteurs indépendants, de sorte qu'ils suivent souvent une distribution normale. C'est pourquoi on l'appelle aussi la distribution gaussienne.
 
 ## 6. Pour Aller Plus Loin : Approche de la Preuve
 
-Les fonctions caractéristiques et le développement de Taylor sont utilisés pour une preuve stricte du Théorème Central Limite. En voici un bref aperçu.
+Les fonctions caractéristiques et le développement de Taylor sont utilisés pour une preuve stricte du [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/). En voici un bref aperçu.
 
 En utilisant la fonction caractéristique $\phi_X(t) = E[e^{itX}]$, la fonction caractéristique de la somme de variables aléatoires indépendantes est le produit de leurs fonctions caractéristiques respectives. Lorsque nous calculons la fonction caractéristique de la variable standardisée $Z$ et prenons la limite pour $n \to \infty$, on peut montrer qu'elle converge vers $e^{-t^2/2}$, qui est la fonction caractéristique de la distribution normale standard. Cela prouve que la distribution elle-même converge vers une distribution normale.
 
 ## 7. Conclusion
 
-Le Théorème Central Limite est un théorème extrêmement beau qui montre l'ordre caché derrière des données chaotiques. En comprenant ce théorème, vous pourrez acquérir des connaissances plus approfondies dans l'analyse de données et la construction de modèles statistiques.
+Le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/) est un théorème extrêmement beau qui montre l'ordre caché derrière des données chaotiques. En comprenant ce théorème, vous pourrez acquérir des connaissances plus approfondies dans l'analyse de données et la construction de modèles statistiques.
 
 
 ## Annexe : Contexte Mathématique Détaillé et Histoire
 
 ### Annexe 1 : Développement dans la Théorie des Probabilités
-L'histoire du Théorème Central Limite est profonde, trouvant son origine avec Abraham de Moivre qui a montré l'approximation normale de la distribution binomiale. Elle a ensuite été étendue par Pierre-Simon Laplace, et Aleksandr Lyapunov a fourni une preuve sous des conditions plus générales. Dans la théorie des probabilités moderne, il existe diverses extensions telles que la condition de Lindeberg et la condition de Lyapunov. Ces conditions garantissent que les variables aléatoires individuelles n'ont pas d'influence dominante sur la somme totale. Cela donne une réponse à la question fondamentale de savoir pourquoi divers phénomènes dans la nature et les sciences sociales peuvent être approximés par une distribution normale.
+L'histoire du [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/) est profonde, trouvant son origine avec Abraham de Moivre qui a montré l'approximation normale de la distribution binomiale. Elle a ensuite été étendue par Pierre-Simon Laplace, et Aleksandr Lyapunov a fourni une preuve sous des conditions plus générales. Dans la théorie des probabilités moderne, il existe diverses extensions telles que la condition de Lindeberg et la condition de Lyapunov. Ces conditions garantissent que les variables aléatoires individuelles n'ont pas d'influence dominante sur la somme totale. Cela donne une réponse à la question fondamentale de savoir pourquoi divers phénomènes dans la nature et les sciences sociales peuvent être approximés par une distribution normale.
 
 ### Annexe 2 : Conditions d'Application et Signification du Théorème
 
@@ -134,7 +134,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-Quadrupler le nombre d'échantillons réduit de moitié l'erreur standard. La loi des grands nombres stipule que la moyenne d'échantillon s'approche de $\mu$, et le Théorème Central Limite décrit la forme de la distribution en multipliant la fluctuation autour d'elle par $\sqrt{n}$.
+Quadrupler le nombre d'échantillons réduit de moitié l'erreur standard. [La loi des grands nombres](https://kenji.blog/p/law-of-large-numbers/) stipule que la moyenne d'échantillon s'approche de $\mu$, et le [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/) décrit la forme de la distribution en multipliant la fluctuation autour d'elle par $\sqrt{n}$.
 
 ### Annexe 4 : Preuve Supplémentaire Utilisant des Fonctions Caractéristiques
 

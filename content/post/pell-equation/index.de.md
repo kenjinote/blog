@@ -15,11 +15,11 @@ tags:
 
 # Einführung
 
-Im Gebiet der Zahlentheorie ist die **Pellsche Gleichung** (Pell's equation) als eine der schönsten diophantischen Gleichungen mit einem tiefgreifenden theoretischen Hintergrund bekannt. In diesem Artikel werden wir eine sehr detaillierte Erklärung geben, beginnend mit der grundlegenden Definition und den Eigenschaften dieser Gleichung, bis hin zu einer eleganten und effizienten Lösungsmethode mithilfe von Kettenbrüchen (Continued fractions) und dem Mechanismus zur Generierung ihrer unendlich vielen Lösungen. Für alle, die die Mathematik lieben, haben wir alles abgedeckt, von der Herleitung von Formeln bis zur Visualisierung von Algorithmen und der Implementierung mit einer Programmiersprache.
+Im Gebiet der Zahlentheorie ist die **[Pellsche Gleichung](https://kenji.blog/p/pell-equation/)** (Pell's equation) als eine der schönsten diophantischen Gleichungen mit einem tiefgreifenden theoretischen Hintergrund bekannt. In diesem Artikel werden wir eine sehr detaillierte Erklärung geben, beginnend mit der grundlegenden Definition und den Eigenschaften dieser Gleichung, bis hin zu einer eleganten und effizienten Lösungsmethode mithilfe von Kettenbrüchen (Continued fractions) und dem Mechanismus zur Generierung ihrer unendlich vielen Lösungen. Für alle, die die Mathematik lieben, haben wir alles abgedeckt, von der Herleitung von Formeln bis zur Visualisierung von Algorithmen und der Implementierung mit einer Programmiersprache.
 
-## 1. Was ist die Pellsche Gleichung?
+## 1. Was ist die [Pellsche Gleichung](https://kenji.blog/p/pell-equation/)?
 
-Die Pellsche Gleichung bezeichnet eine quadratische diophantische Gleichung in zwei Variablen mit der folgenden Form:
+Die [Pellsche Gleichung](https://kenji.blog/p/pell-equation/) bezeichnet eine quadratische diophantische Gleichung in zwei Variablen mit der folgenden Form:
 
 $$ x^2 - ny^2 = 1 $$
 
@@ -32,17 +32,17 @@ Da $x$, $y$ und $k$ alle ganze Zahlen sind, müssen $(x - ky)$ und $(x + ky)$ eb
 
 ## 2. Historischer Hintergrund: Pell, Fermat und alte indische Mathematiker
 
-Obwohl diese Gleichung den Namen "Pell" trägt, offenbart die Erforschung der historischen Fakten einen etwas seltsamen Hintergrund. Tatsächlich war die erste Person im modernen Europa, die eine allgemeine Lösung für diese Gleichung studierte und nachdrücklich behauptete, dass immer eine Lösung existiert, der große französische Mathematiker **Pierre de Fermat**.
+Obwohl diese Gleichung den Namen "Pell" trägt, offenbart die Erforschung der historischen Fakten einen etwas seltsamen Hintergrund. Tatsächlich war die erste Person im modernen Europa, die eine allgemeine Lösung für diese Gleichung studierte und nachdrücklich behauptete, dass immer eine Lösung existiert, der große französische Mathematiker **[Pierre de Fermat](https://kenji.blog/p/fermat/)**.
 
-Später brachte **Leonhard Euler** fälschlicherweise den Namen des englischen Mathematikers **John Pell** mit dieser Gleichung in Verbindung, und seitdem ist sie weithin als "Pellsche Gleichung" bekannt. Pell selbst spielte keine zentrale Rolle bei der Lösungsmethode für diese Gleichung.
+Später brachte **[Leonhard Euler](https://kenji.blog/p/euler/)** fälschlicherweise den Namen des englischen Mathematikers **John Pell** mit dieser Gleichung in Verbindung, und seitdem ist sie weithin als "[Pellsche Gleichung](https://kenji.blog/p/pell-equation/)" bekannt. Pell selbst spielte keine zentrale Rolle bei der Lösungsmethode für diese Gleichung.
 
 Wenn man weiter in die Vergangenheit zurückgeht, so berechneten die indischen Mathematiker **Brahmagupta** und **Bhāskara II** hunderte Jahre vor Fermat Lösungen für Gleichungen dieser Art unter Verwendung eines ausgeklügelten Algorithmus, der als Chakravala-Methode bezeichnet wird. Die Geschichte der Erforschung durch Mathematiker von der Antike über das Mittelalter bis in die Neuzeit ist in dieser Gleichung eingeschrieben.
 
 ## 3. Der Unterschied zwischen trivialen und nicht-trivialen Lösungen
 
-Für die Pellsche Gleichung $x^2 - ny^2 = 1$ gibt es unabhängig vom Wert von $n$ immer die Lösung $(x, y) = (\pm 1, 0)$. Setzt man diese in die Gleichung ein, so erhält man $1^2 - n \cdot 0^2 = 1$, was offensichtlich wahr ist. Dies wird als **triviale Lösung** (trivial solution) bezeichnet.
+Für die [Pellsche Gleichung](https://kenji.blog/p/pell-equation/) $x^2 - ny^2 = 1$ gibt es unabhängig vom Wert von $n$ immer die Lösung $(x, y) = (\pm 1, 0)$. Setzt man diese in die Gleichung ein, so erhält man $1^2 - n \cdot 0^2 = 1$, was offensichtlich wahr ist. Dies wird als **triviale Lösung** (trivial solution) bezeichnet.
 
-Was Mathematiker jedoch wirklich interessiert, ist eine **nicht-triviale Lösung** (non-trivial solution), bei der $y \neq 0$ ist. Erstaunlicherweise wurde mathematisch bewiesen, dass die Pellsche Gleichung **unendlich viele nicht-triviale Lösungen** besitzt, wenn $n$ eine positive ganze Zahl ist, die kein perfektes Quadrat ist. Unter diesen unendlichen Lösungen wird außerdem die kleinste Lösung, bei der sowohl $x$ als auch $y$ positive ganze Zahlen sind, als **Fundamentallösung** (fundamental solution) bezeichnet, und sobald diese gefunden ist, können alle anderen Lösungen leicht durch algebraische Operationen generiert werden.
+Was Mathematiker jedoch wirklich interessiert, ist eine **nicht-triviale Lösung** (non-trivial solution), bei der $y \neq 0$ ist. Erstaunlicherweise wurde mathematisch bewiesen, dass die [Pellsche Gleichung](https://kenji.blog/p/pell-equation/) **unendlich viele nicht-triviale Lösungen** besitzt, wenn $n$ eine positive ganze Zahl ist, die kein perfektes Quadrat ist. Unter diesen unendlichen Lösungen wird außerdem die kleinste Lösung, bei der sowohl $x$ als auch $y$ positive ganze Zahlen sind, als **Fundamentallösung** (fundamental solution) bezeichnet, und sobald diese gefunden ist, können alle anderen Lösungen leicht durch algebraische Operationen generiert werden.
 
 ## 4. Die tiefe Verbindung zwischen Kettenbrüchen und der Pellschen Gleichung
 
@@ -85,7 +85,7 @@ flowchart TD
 
 ## 6. Konkretes Beispiel: Kettenbruchentwicklung und Fundamentallösung für n = 7
 
-Anstatt nur bei abstrakter Theorie zu bleiben, wollen wir die Berechnungen für den konkreten Fall $n = 7$ nachvollziehen. Die Pellsche Gleichung wird zu $x^2 - 7y^2 = 1$.
+Anstatt nur bei abstrakter Theorie zu bleiben, wollen wir die Berechnungen für den konkreten Fall $n = 7$ nachvollziehen. Die [Pellsche Gleichung](https://kenji.blog/p/pell-equation/) wird zu $x^2 - 7y^2 = 1$.
 
 Zuerst ist der ganzzahlige Teil von $\sqrt{7}$ $a_0 = 2$. Durch Wiederholen der Operation, den Kehrwert des verbleibenden Dezimalteils zu nehmen und den ganzzahligen Teil zu extrahieren, ergibt sich die Kettenbruchentwicklung von $\sqrt{7}$ wie folgt:
 
@@ -199,12 +199,12 @@ Wenn dieser Code ausgeführt wird, wird die Fundamentallösung $(x, y) = (8, 3)$
 
 ## 10. Brücke zur algebraischen Zahlentheorie: Beziehung zum Dirichletschen Einheitensatz
 
-Die Pellsche Gleichung ist nicht bloß ein Zahlenrätsel. In der modernen Mathematik ist sie als wichtiges Tor zur Theorie der **reell-quadratischen Zahlkörper** $\mathbb{Q}(\sqrt{n})$ positioniert.
+Die [Pellsche Gleichung](https://kenji.blog/p/pell-equation/) ist nicht bloß ein Zahlenrätsel. In der modernen Mathematik ist sie als wichtiges Tor zur Theorie der **reell-quadratischen Zahlkörper** $\mathbb{Q}(\sqrt{n})$ positioniert.
 
-Die Lösungen der Pellschen Gleichung entsprechen eng den **Einheiten** (Elemente, deren Inverse ebenfalls algebraische ganze Zahlen sind) im Ring der algebraischen ganzen Zahlen eines reell-quadratischen Zahlkörpers. Die Fundamentallösung entspricht der **Grundeinheit** (fundamental unit), die diese Einheitengruppe erzeugt, und die Tatsache, dass unendlich viele Lösungen für die Pellsche Gleichung existieren, kann als Sonderfall eines fortgeschritteneren Satzes, des **Dirichletschen Einheitensatzes** (Dirichlet's unit theorem), angesehen werden. Das Verständnis der Eigenschaften der Grundeinheit ist äußerst entscheidend, um Formeln für die Klassenzahl quadratischer Körper und die Struktur von Idealklassen tiefgehend zu erforschen.
+Die Lösungen der Pellschen Gleichung entsprechen eng den **Einheiten** (Elemente, deren Inverse ebenfalls algebraische ganze Zahlen sind) im Ring der algebraischen ganzen Zahlen eines reell-quadratischen Zahlkörpers. Die Fundamentallösung entspricht der **Grundeinheit** (fundamental unit), die diese Einheitengruppe erzeugt, und die Tatsache, dass unendlich viele Lösungen für die [Pellsche Gleichung](https://kenji.blog/p/pell-equation/) existieren, kann als Sonderfall eines fortgeschritteneren Satzes, des **Dirichletschen Einheitensatzes** (Dirichlet's unit theorem), angesehen werden. Das Verständnis der Eigenschaften der Grundeinheit ist äußerst entscheidend, um Formeln für die Klassenzahl quadratischer Körper und die Struktur von Idealklassen tiefgehend zu erforschen.
 
 ## 11. Fazit
 
-In diesem Artikel haben wir eine der faszinierendsten diophantischen Gleichungen, die **Pellsche Gleichung**, von ihren Grundlagen bis zu ihren Anwendungen im Detail untersucht. Wir haben die überraschende Tatsache erklärt, dass es für jedes nicht quadratische $n$ immer unendliche nicht-triviale Lösungen gibt, einen effizienten Algorithmus zur Suche nach Lösungen mittels Kettenbruchentwicklungen sowie die Dynamik der Synthese neuer Lösungen nacheinander aus der generierten Fundamentallösung unter Verwendung von Matrizen.
+In diesem Artikel haben wir eine der faszinierendsten diophantischen Gleichungen, die **[Pellsche Gleichung](https://kenji.blog/p/pell-equation/)**, von ihren Grundlagen bis zu ihren Anwendungen im Detail untersucht. Wir haben die überraschende Tatsache erklärt, dass es für jedes nicht quadratische $n$ immer unendliche nicht-triviale Lösungen gibt, einen effizienten Algorithmus zur Suche nach Lösungen mittels Kettenbruchentwicklungen sowie die Dynamik der Synthese neuer Lösungen nacheinander aus der generierten Fundamentallösung unter Verwendung von Matrizen.
 
 Die Tatsache, dass klassische Probleme, die von Fermat und Brahmagupta vor Hunderten von Jahren betrachtet wurden, auf wunderbare Weise als moderne Computeralgorithmen implementiert werden können und darüber hinaus eine Verbindung zur fortgeschrittenen algebraischen Zahlentheorie herstellen, ruft eine tiefe und zeitlose mathematische Romantik hervor. Wir hoffen, dass Sie diese Gelegenheit nutzen werden, um mithilfe des Python-Codes die Welt der Pellschen Gleichung für verschiedene Werte von $n$ zu erkunden und die tiefgreifenden Eigenschaften von Zahlen kennenzulernen.

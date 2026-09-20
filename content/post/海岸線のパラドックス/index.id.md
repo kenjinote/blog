@@ -50,7 +50,7 @@ Lewis Fry Richardson menemukan fenomena ini secara empiris pada tahun 1951. Seir
 
 ## Dimensi Fraktal: Di Antara 1 Dimensi dan 2 Dimensi
 
-Matematikawan Benoit Mandelbrot adalah orang yang memberikan penjelasan matematis terhadap paradoks ini. Pada tahun 1967, ia menerbitkan sebuah makalah terkenal di jurnal Science yang berjudul "Seberapa Panjang Garis Pantai Inggris? Kemiripan Diri dan Dimensi Fraktal".
+Matematikawan Benoit Mandelbrot adalah orang yang memberikan penjelasan matematis terhadap paradoks ini. Pada tahun 1967, ia menerbitkan sebuah makalah terkenal di jurnal Science yang berjudul "[Seberapa Panjang Garis Pantai Inggris?](https://kenji.blog/p/海岸線のパラドックス/) Kemiripan Diri dan Dimensi Fraktal".
 
 Mandelbrot menunjukkan bahwa bentuk-bentuk di alam seperti garis pantai memiliki **kemiripan diri (fraktal)**, yaitu "struktur kompleks yang serupa akan muncul seberapa banyak pun kita memperbesarnya".
 

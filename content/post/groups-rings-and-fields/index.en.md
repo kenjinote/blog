@@ -8,7 +8,7 @@ categories: ["mathematics"]
 tags: ["algebra", "group theory", "ring theory", "field theory"]
 ---
 
-# Groups, Rings, and Fields: The Beauty of "Structure" Depicted by Modern Algebra
+# [Groups, Rings, and Fields](https://kenji.blog/p/groups-rings-and-fields/): The Beauty of "Structure" Depicted by Modern Algebra
 
 For many of us, the "mathematics" we first learn in school is a world of adding and multiplying numbers, namely the "four basic operations." Calculations like $1 + 1 = 2$ and $3 \times 4 = 12$ are extremely useful for describing the quantities and sizes of the real world we interact with daily.
 
@@ -185,9 +185,9 @@ A "shape-preserving mapping" between these structures is called a **Homomorphism
 
 ---
 
-## 8. Galois Theory: The Beautiful Intersection of Equations and Groups
+## 8. [Galois Theory](https://kenji.blog/p/galois-theory/): The Beautiful Intersection of Equations and Groups
 
-Further beyond field theory is **Galois Theory**, which can be considered the monumental achievement of algebra. The brilliant French mathematician Évariste Galois fused group theory and field theory to clarify the "conditions under which equations can be solved algebraically."
+Further beyond field theory is **[Galois Theory](https://kenji.blog/p/galois-theory/)**, which can be considered the monumental achievement of algebra. The brilliant French mathematician [Évariste Galois](https://kenji.blog/p/galois/) fused group theory and field theory to clarify the "conditions under which equations can be solved algebraically."
 
 When considering the field extension (splitting field) that contains all the roots of an equation, the structure of the automorphism group (Galois group) of that field completely determines the properties of the equation's roots. The long-standing conundrum that "there is no general solution formula for equations of degree 5 or higher (Abel-Ruffini theorem)" was elegantly proven by showing that the Galois group lacks a specific property (solvability).
 

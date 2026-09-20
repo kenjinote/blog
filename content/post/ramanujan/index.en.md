@@ -17,7 +17,7 @@ tags:
 
 ## Introduction: The Man Who Received Formulas from the Gods
 
-Srinivasa Ramanujan (1887–1920) was an Indian mathematical genius who appeared like a comet in the early 20th-century mathematical world before his tragically short life ended. Despite having almost no formal mathematical education, he derived numerous astonishing theorems and formulas through sheer intuition and unique insight. His surviving notebooks continue to influence cutting-edge research in modern mathematics and physics, more than a century after his death.
+[Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) (1887–1920) was an Indian mathematical genius who appeared like a comet in the early 20th-century mathematical world before his tragically short life ended. Despite having almost no formal mathematical education, he derived numerous astonishing theorems and formulas through sheer intuition and unique insight. His surviving notebooks continue to influence cutting-edge research in modern mathematics and physics, more than a century after his death.
 
 In this article, we delve deep into Ramanujan's turbulent life, his fateful interactions with the British mathematician G.H. Hardy who discovered him, and the brilliant mathematical legacy he left behind. His life stands as a powerful testament to how passion and talent can overcome adversity and change the world.
 
@@ -138,7 +138,7 @@ In 1919, after the end of World War I, his health recovered slightly, and he ret
 
 The final notebook Ramanujan wrote on his deathbed was lost for a long time, but it was discovered in the library of Cambridge University by American mathematician George Andrews in 1976. This became known as "The Lost Notebook" and once again sent shockwaves through the mathematical community. It contained about 600 new formulas, and research into their meaning and applications continues to this day.
 
-The turbulent life of Srinivasa Ramanujan was depicted in Robert Kanigel's biography *The Man Who Knew Infinity* and its 2015 film adaptation of the same name, inspiring countless people beyond the mathematical community.
+The turbulent life of [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) was depicted in Robert Kanigel's biography *The Man Who Knew Infinity* and its 2015 film adaptation of the same name, inspiring countless people beyond the mathematical community.
 
 His greatest legacy is the myriad formulas left in his notebooks. Since they were often devoid of proofs, later mathematicians spent decades proving each one. Thanks to the tireless efforts of mathematicians like Bruce Berndt, the deciphering of his notebooks has progressed, but the new mysteries and research themes derived from them are still far from exhausted.
 

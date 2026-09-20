@@ -14,7 +14,7 @@ tags:
 
 ## Pendahuluan
 
-Teorema Sisa Tiongkok (Chinese Remainder Theorem, disingkat CRT) adalah salah satu teorema yang paling penting dan indah dalam teori bilangan. Asal-usulnya berawal dari naskah matematika Tiongkok kuno "Sunzi Suanjing" yang diyakini disusun antara abad ke-3 hingga ke-5. Berawal dari masalah aritmatika sederhana di zaman kuno, teorema ini kini memainkan peran yang sangat penting dalam teknologi kriptografi kunci publik, seperti **Kriptografi RSA**, yang mengamankan komunikasi internet kita sehari-hari setelah ribuan tahun.
+Teorema Sisa Tiongkok ([Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/), disingkat CRT) adalah salah satu teorema yang paling penting dan indah dalam teori bilangan. Asal-usulnya berawal dari naskah matematika Tiongkok kuno "Sunzi Suanjing" yang diyakini disusun antara abad ke-3 hingga ke-5. Berawal dari masalah aritmatika sederhana di zaman kuno, teorema ini kini memainkan peran yang sangat penting dalam teknologi kriptografi kunci publik, seperti **Kriptografi RSA**, yang mengamankan komunikasi internet kita sehari-hari setelah ribuan tahun.
 
 Pada artikel ini, kita akan membahas **Teorema Sisa Tiongkok** secara detail, mulai dari latar belakang sejarahnya, definisi matematis yang ketat, langkah-langkah komputasi konkret, hingga aplikasinya dalam teori kriptografi modern, disertai dengan ilustrasi dan contoh konkret.
 
@@ -63,7 +63,7 @@ Hal yang menakjubkan dari teorema ini adalah teorema ini tidak hanya menjamin ke
 
 1. Hitung hasil kali keseluruhan $M = m_1 m_2 \dots m_k$.
 2. Untuk setiap $i$, hitung $M_i = \frac{M}{m_i}$. ($M_i$ adalah hasil kali semua modulus kecuali $m_i$)
-3. Karena $\gcd(M_i, m_i) = 1$, maka terdapat invers perkalian $y_i$ dari $M_i$ dalam modulo $m_i$. Yaitu, kita mencari $y_i$ yang memenuhi $M_i y_i \equiv 1 \pmod{m_i}$ menggunakan algoritma Euclidean yang diperluas.
+3. Karena $\gcd(M_i, m_i) = 1$, maka terdapat invers perkalian $y_i$ dari $M_i$ dalam modulo $m_i$. Yaitu, kita mencari $y_i$ yang memenuhi $M_i y_i \equiv 1 \pmod{m_i}$ menggunakan algoritma [Euclide](https://kenji.blog/p/euclid/)an yang diperluas.
 4. Solusi akhir $x$ diberikan oleh rumus berikut.
 
 $$

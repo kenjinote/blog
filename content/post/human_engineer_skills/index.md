@@ -9,7 +9,7 @@ categories: ["career", "ai", "software-engineering"]
 tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 ---
 
-# AIがコードを書く時代に求められる「人間ならではのエンジニアスキル」
+# [AIがコードを書く時代に求められる「人間ならではのエンジニアスキル」](https://kenji.blog/p/human_engineer_skills/)
 
 近年、Generative AI（生成AI）や大規模言語モデル（LLM）の飛躍的な進化により、ソフトウェアエンジニアリングの風景は劇的に変化しました。GitHub Copilotや各種AIコーディングアシスタントが日常的に利用されるようになり、「自然言語で指示を出せば、AIが瞬時にコードを生成する」という事象は、もはや未来のSFではなく今日の現実となっています。
 

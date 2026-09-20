@@ -20,7 +20,7 @@ Durante sus días de escuela en Sherborne, ya demostró un talento extraordinari
 
 # 3. La máquina de Turing y la teoría de la computabilidad
 
-Uno de los mayores problemas sin resolver en el mundo matemático en ese momento era el "Entscheidungsproblem" (Problema de decisión) propuesto por David Hilbert en 1928. Esta era una pregunta fundamental: "Dada cualquier declaración matemática, ¿existe un procedimiento algorítmico mecánico para determinar si es verdadera o falsa?"
+Uno de los mayores problemas sin resolver en el mundo matemático en ese momento era el "Entscheidungsproblem" (Problema de decisión) propuesto por [David Hilbert](https://kenji.blog/p/hilbert/) en 1928. Esta era una pregunta fundamental: "Dada cualquier declaración matemática, ¿existe un procedimiento algorítmico mecánico para determinar si es verdadera o falsa?"
 
 Turing abordó este problema con un enfoque completamente nuevo. En su innovador artículo de 1936 "Sobre los números computables, con una aplicación al Entscheidungsproblem", definió una máquina de computación abstracta, la **Máquina de Turing**.
 
@@ -139,4 +139,4 @@ El 7 de junio de 1954, falleció a la temprana edad de 41 años. La causa de la 
 
 Sin embargo, décadas después de su muerte, avanzó la reevaluación mundial de sus logros y la restauración de su honor. En 2009, el gobierno británico se disculpó oficialmente por el trato injusto que recibió en ese momento, y en 2013, la reina Isabel II le concedió un indulto real póstumo.
 
-Hoy en día, el premio más importante del mundo en informática (a menudo llamado el "Premio Nobel de Informática") se llama **Premio Turing** para honrar siempre sus logros. Alan Turing poseía ideas que se adelantaron enormemente a su tiempo en diversos campos: matemáticas, criptografía, informática, inteligencia artificial y biología. Las teorías e ideas que dejó atrás continúan respirando poderosamente hoy como la base de nuestra sociedad digital moderna.
+Hoy en día, el premio más importante del mundo en informática (a menudo llamado el "Premio Nobel de Informática") se llama **Premio Turing** para honrar siempre sus logros. [Alan Turing](https://kenji.blog/p/turing/) poseía ideas que se adelantaron enormemente a su tiempo en diversos campos: matemáticas, criptografía, informática, inteligencia artificial y biología. Las teorías e ideas que dejó atrás continúan respirando poderosamente hoy como la base de nuestra sociedad digital moderna.

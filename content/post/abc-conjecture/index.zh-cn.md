@@ -8,19 +8,19 @@ categories: ["mathematics", "science"]
 tags: ["ABC猜想", "数论", "IUT理论", "望月新一"]
 ---
 
-# 导言：什么是ABC猜想？
+# 导言：什么是[ABC猜想](https://kenji.blog/p/abc-conjecture/)？
 
-在数论领域，存在着许多未解决的问题，其中最受重视的便是 **ABC猜想** （ABC Conjecture）。这个猜想于1985年由约瑟夫·奥斯特莱（Joseph Oesterlé）和大卫·马瑟（David Masser）独立提出。
+在数论领域，存在着许多未解决的问题，其中最受重视的便是 **[ABC猜想](https://kenji.blog/p/abc-conjecture/)** （ABC Conjecture）。这个猜想于1985年由约瑟夫·奥斯特莱（Joseph Oesterlé）和大卫·马瑟（David Masser）独立提出。
 
-ABC猜想暗示了整数的加法和乘法（质因数分解）之间存在着深刻的联系。它描述了看似简单的等式 $a + b = c$ 背后隐藏的令人惊叹的性质。
+[ABC猜想](https://kenji.blog/p/abc-conjecture/)暗示了整数的加法和乘法（质因数分解）之间存在着深刻的联系。它描述了看似简单的等式 $a + b = c$ 背后隐藏的令人惊叹的性质。
 
-## ABC猜想的严格定义
+## [ABC猜想](https://kenji.blog/p/abc-conjecture/)的严格定义
 
 考虑互质的正整数对 $(a, b, c)$ ，满足 $a + b = c$ 。这里，我们将整数 $n$ 的 **根基** （radical）定义为 $\text{根基}(n)$ 。这是 $n$ 的不同质因数的乘积。
 
 $$ \text{根基}(n) = \prod_{p | n} p $$
 
-ABC猜想主张，对于任意的 $\epsilon > 0$ ，满足以下条件的互质正整数对 $(a, b, c)$ 只有有限个。
+[ABC猜想](https://kenji.blog/p/abc-conjecture/)主张，对于任意的 $\epsilon > 0$ ，满足以下条件的互质正整数对 $(a, b, c)$ 只有有限个。
 
 $$ c > \text{根基}(abc)^{1 + \epsilon} $$
 
@@ -28,7 +28,7 @@ $$ c > \text{根基}(abc)^{1 + \epsilon} $$
 
 # 宇宙际Teichmüller理论（IUT理论）的登场
 
-长期以来，ABC猜想的证明一直困扰着数学家们，但在2012年，京都大学的望月新一教授利用名为 **宇宙际Teichmüller理论** （Inter-Universal Teichmüller Theory，简称IUT理论）的全新数学框架，发表了该猜想的证明。
+长期以来，[ABC猜想](https://kenji.blog/p/abc-conjecture/)的证明一直困扰着数学家们，但在2012年，京都大学的望月新一教授利用名为 **宇宙际Teichmüller理论** （Inter-Universal Teichmüller Theory，简称IUT理论）的全新数学框架，发表了该猜想的证明。
 
 IUT理论从根本上重构了传统的数学框架（集合论和标准的代数几何学），其晦涩难懂和新颖性给数学界带来了巨大的冲击。
 
@@ -53,21 +53,21 @@ $$ \Theta \text{-链接} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal
 
 Theta链接（$\Theta$-link）在不同的Hodge剧场之间发挥着传递特定单值群信息（关于Theta函数值的信息）的作用。与传统的环论结构（保持加法和乘法的同构映射）不同，这种链接仅部分地保持乘法结构，同时故意“破坏”并随后重建加法结构。
 
-# ABC猜想得出的惊人结论
+# [ABC猜想](https://kenji.blog/p/abc-conjecture/)得出的惊人结论
 
-如果ABC猜想（通过IUT理论或其他方法）被完全证明，数论中许多重要的定理将迎刃而解。让我们将其与 **莫德尔猜想** （现在被称为法尔廷斯定理）或 **费马大定理** 等进行比较。
+如果[ABC猜想](https://kenji.blog/p/abc-conjecture/)（通过IUT理论或其他方法）被完全证明，数论中许多重要的定理将迎刃而解。让我们将其与 **莫德尔猜想** （现在被称为法尔廷斯定理）或 **[费马大定理](https://kenji.blog/p/fermats-last-theorem/)** 等进行比较。
 
-## 在费马大定理中的应用
+## 在[费马大定理](https://kenji.blog/p/fermats-last-theorem/)中的应用
 
-费马大定理指出，当 $n \ge 3$ 时，不存在满足 $x^n + y^n = z^n$ 的正整数对 $(x, y, z)$ 。安德鲁·怀尔斯在1995年证明了该定理，但使用了非常高深和复杂的数学。
+[费马大定理](https://kenji.blog/p/fermats-last-theorem/)指出，当 $n \ge 3$ 时，不存在满足 $x^n + y^n = z^n$ 的正整数对 $(x, y, z)$ 。[安德鲁·怀尔斯](https://kenji.blog/p/wiles/)在1995年证明了该定理，但使用了非常高深和复杂的数学。
 
-如果假设ABC猜想是正确的，令人惊奇的是，费马大定理（至少在 $n$ 足够大时）只需寥寥数行即可证明。
+如果假设[ABC猜想](https://kenji.blog/p/abc-conjecture/)是正确的，令人惊奇的是，[费马大定理](https://kenji.blog/p/fermats-last-theorem/)（至少在 $n$ 足够大时）只需寥寥数行即可证明。
 
-设 $x^n + y^n = z^n$ ，并假设 $(x, y, z)$ 互质。将ABC猜想应用于 $a=x^n$, $b=y^n$, $c=z^n$ ，得：
+设 $x^n + y^n = z^n$ ，并假设 $(x, y, z)$ 互质。将[ABC猜想](https://kenji.blog/p/abc-conjecture/)应用于 $a=x^n$, $b=y^n$, $c=z^n$ ，得：
 
 $$ z^n < \text{根基}(x^n y^n z^n)^{1+\epsilon} = \text{根基}(xyz)^{1+\epsilon} \le (xyz)^{1+\epsilon} < (z^3)^{1+\epsilon} $$
 
-取足够小的 $\epsilon$ ，当 $n$ 大于 $3(1+\epsilon)$ 时（即 $n \ge 4$ 左右），该不等式会导致矛盾。因此，可以立即得知当 $n$ 较大时不存在解。就这样，ABC猜想发挥着数论中强大的 **万能钥匙** （master key）的作用。
+取足够小的 $\epsilon$ ，当 $n$ 大于 $3(1+\epsilon)$ 时（即 $n \ge 4$ 左右），该不等式会导致矛盾。因此，可以立即得知当 $n$ 较大时不存在解。就这样，[ABC猜想](https://kenji.blog/p/abc-conjecture/)发挥着数论中强大的 **万能钥匙** （master key）的作用。
 
 # IUT理论在数学界的接受度与争议
 
@@ -92,6 +92,6 @@ sequenceDiagram
 
 # 结论与未来展望
 
-ABC猜想与宇宙际Teichmüller理论是21世纪数学界最伟大的戏剧之一。加法和乘法，这两个我们在小学就学过的最简单的概念，其深不可测的内涵正在考验着人类智能的极限。
+[ABC猜想](https://kenji.blog/p/abc-conjecture/)与宇宙际Teichmüller理论是21世纪数学界最伟大的戏剧之一。加法和乘法，这两个我们在小学就学过的最简单的概念，其深不可测的内涵正在考验着人类智能的极限。
 
 IUT理论究竟是开辟了真正全新的数学天地，还是需要进一步的修正？在得出最终结论之前，仍需要大量时间以及新一代数学家们的持续研究。然而，该理论所提出的 **连接不同的数学宇宙** 的愿景，无疑将继续为未来数学的发展提供巨大的灵感。

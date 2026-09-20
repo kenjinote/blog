@@ -8,16 +8,16 @@ categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 
-# ¿Qué es el algoritmo de Euclides?
+# ¿Qué es el algoritmo de [Euclides](https://kenji.blog/p/euclid/)?
 
-El **algoritmo de Euclides** (Euclidean algorithm) es un método eficiente para calcular el máximo común divisor (MCD) de dos números naturales (o enteros). Descrito alrededor del año 300 a.C. por el antiguo matemático griego Euclides en el Libro VII de su tratado matemático "Elementos" (Elements), es ampliamente conocido como uno de los "algoritmos más antiguos de la humanidad".
+El **algoritmo de [Euclides](https://kenji.blog/p/euclid/)** ([Euclide](https://kenji.blog/p/euclid/)an algorithm) es un método eficiente para calcular el máximo común divisor (MCD) de dos números naturales (o enteros). Descrito alrededor del año 300 a.C. por el antiguo matemático griego [Euclides](https://kenji.blog/p/euclid/) en el Libro VII de su tratado matemático "Elementos" (Elements), es ampliamente conocido como uno de los "algoritmos más antiguos de la humanidad".
 
-La forma más ingenua de encontrar el MCD es calcular la factorización prima de ambos números y multiplicar los factores primos comunes. Sin embargo, a medida que los números crecen, la complejidad computacional de la factorización prima en sí misma se vuelve enorme, lo que dificulta su resolución en un tiempo realista. Por otro lado, al utilizar el **algoritmo de Euclides** , es posible calcular el MCD extremadamente rápido, incluso para números gigantescos que abarcan miles de dígitos.
+La forma más ingenua de encontrar el MCD es calcular la factorización prima de ambos números y multiplicar los factores primos comunes. Sin embargo, a medida que los números crecen, la complejidad computacional de la factorización prima en sí misma se vuelve enorme, lo que dificulta su resolución en un tiempo realista. Por otro lado, al utilizar el **algoritmo de [Euclides](https://kenji.blog/p/euclid/)** , es posible calcular el MCD extremadamente rápido, incluso para números gigantescos que abarcan miles de dígitos.
 
 ## Teorema básico y mecánica
 
 Sea $\gcd(a, b)$ el máximo común divisor de dos números naturales $a$ y $b$ (donde $a \ge b$).
-El algoritmo de Euclides se basa en el siguiente teorema simple:
+[El algoritmo de Euclides](https://kenji.blog/p/euclidean-algorithm/) se basa en el siguiente teorema simple:
 
 $$
 a = bq + r \implies \gcd(a, b) = \gcd(b, r)
@@ -39,7 +39,7 @@ En otras palabras, utiliza la propiedad: "Cuando $a$ se divide por $b$ , con el 
 
 ## Diagrama de flujo del algoritmo
 
-Aprovechando esta propiedad, el algoritmo de Euclides realiza divisiones repetidamente hasta que el resto llega a $0$ .
+Aprovechando esta propiedad, el algoritmo de [Euclides](https://kenji.blog/p/euclid/) realiza divisiones repetidamente hasta que el resto llega a $0$ .
 
 ```mermaid
 flowchart TD
@@ -109,24 +109,24 @@ int main() {
 
 ## Complejidad temporal y teorema de Lamé
 
-¿Qué tan rápido es el algoritmo de Euclides? En cuanto a su complejidad computacional, el **teorema de Lamé** (Lamé's theorem), demostrado por el matemático francés Gabriel Lamé en 1844, es muy conocido.
+¿Qué tan rápido es el algoritmo de [Euclides](https://kenji.blog/p/euclid/)? En cuanto a su complejidad computacional, el **teorema de Lamé** (Lamé's theorem), demostrado por el matemático francés [Gabriel Lamé](https://kenji.blog/p/lame/) en 1844, es muy conocido.
 
 > **Teorema de Lamé**
-> El número de pasos de división requeridos para aplicar el algoritmo de Euclides a dos números naturales $a, b$ ($a > b$) es como máximo $5$ veces el número de dígitos en la representación decimal de $b$ .
+> El número de pasos de división requeridos para aplicar el algoritmo de [Euclides](https://kenji.blog/p/euclid/) a dos números naturales $a, b$ ($a > b$) es como máximo $5$ veces el número de dígitos en la representación decimal de $b$ .
 
 Como resultado, la complejidad temporal del algoritmo es $O(\log(\min(a, b)))$ .
 
 El peor de los casos (donde se maximiza el número de divisiones) ocurre cuando se proporcionan dos números consecutivos de la sucesión de Fibonacci. Por ejemplo, en el proceso de encontrar el MCD de $F_{n+2}$ y $F_{n+1}$ , el cociente es siempre $1$ , transitando continuamente a números de Fibonacci más pequeños.
 
-## Algoritmo de Euclides extendido
+## Algoritmo de [Euclides](https://kenji.blog/p/euclid/) extendido
 
-Una extensión del algoritmo para encontrar enteros $x, y$ que satisfagan la siguiente identidad de Bézout (Bézout's identity), además de encontrar el máximo común divisor, se llama **algoritmo de Euclides extendido** (Extended Euclidean algorithm).
+Una extensión del algoritmo para encontrar enteros $x, y$ que satisfagan la siguiente identidad de Bézout (Bézout's identity), además de encontrar el máximo común divisor, se llama **algoritmo de [Euclides](https://kenji.blog/p/euclid/) extendido** (Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm).
 
 $$
 ax + by = \gcd(a, b)
 $$
 
-### Implementación del algoritmo de Euclides extendido
+### Implementación del algoritmo de [Euclides](https://kenji.blog/p/euclid/) extendido
 
 En el proceso de retorno de las llamadas recursivas, retrocedemos para calcular los coeficientes $x$ e $y$ .
 
@@ -152,10 +152,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 
 ## Aplicaciones en la sociedad moderna (Criptografía RSA, etc.)
 
-El algoritmo de Euclides extendido no es solo un rompecabezas matemático, sino una tecnología esencial que respalda la sociedad moderna de Internet.
+[El algoritmo de Euclides](https://kenji.blog/p/euclidean-algorithm/) extendido no es solo un rompecabezas matemático, sino una tecnología esencial que respalda la sociedad moderna de Internet.
 Un excelente ejemplo es la **criptografía RSA** . En el proceso de generación de claves del cifrado RSA, es necesario encontrar una clave privada $d$ (inverso modular) que satisfaga $e d \equiv 1 \pmod{\phi(N)}$ para un número dado $e$ y la función indicatriz de Euler $\phi(N)$ .
-Debido a que esto se puede reorganizar en la forma $ed + k\phi(N) = 1$ , podemos usar el algoritmo de Euclides extendido para calcular $d$ a velocidades extremadamente altas.
+Debido a que esto se puede reorganizar en la forma $ed + k\phi(N) = 1$ , podemos usar el algoritmo de [Euclides](https://kenji.blog/p/euclid/) extendido para calcular $d$ a velocidades extremadamente altas.
 
 ## Conclusión
 
-A pesar de haber sido descubierto hace mucho tiempo en la era antes de Cristo, el algoritmo de Euclides continúa sustentando los cimientos de la informática moderna debido a su lógica simplificada y su alta eficiencia computacional. Aunque a menudo es el primer tema que se encuentra al estudiar algoritmos, está repleto de belleza matemática y sentido práctico detrás de escena.
+A pesar de haber sido descubierto hace mucho tiempo en la era antes de Cristo, el algoritmo de [Euclides](https://kenji.blog/p/euclid/) continúa sustentando los cimientos de la informática moderna debido a su lógica simplificada y su alta eficiencia computacional. Aunque a menudo es el primer tema que se encuentra al estudiar algoritmos, está repleto de belleza matemática y sentido práctico detrás de escena.

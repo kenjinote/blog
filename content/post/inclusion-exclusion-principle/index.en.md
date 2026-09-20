@@ -17,13 +17,13 @@ tags:
 
 In mathematics and computer science, we frequently encounter situations where we need to count the number of elements that satisfy multiple conditions. However, when there are multiple conditions, the sets of elements satisfying each condition often overlap (have intersections). Simply adding them up will result in counting elements multiple times.
 
-A powerful method to accurately eliminate these overlaps and derive the correct number of elements is the **Inclusion-Exclusion Principle**.
+A powerful method to accurately eliminate these overlaps and derive the correct number of elements is the **[Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/)**.
 
-In this article, we will comprehensively explain the Inclusion-Exclusion Principle in detail, from its basic concepts to generalized mathematical formulas, mathematical proofs, and concrete application examples (such as Euler's totient function and derangements). Furthermore, we will introduce programming implementation examples to deepen your understanding from both theoretical and practical perspectives.
+In this article, we will comprehensively explain the [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/) in detail, from its basic concepts to generalized mathematical formulas, mathematical proofs, and concrete application examples (such as Euler's totient function and derangements). Furthermore, we will introduce programming implementation examples to deepen your understanding from both theoretical and practical perspectives.
 
 ## 2. Basics of Sets and Cardinality
 
-Before learning the Inclusion-Exclusion Principle, let's review basic set notation.
+Before learning the [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/), let's review basic set notation.
 
 - $A, B$ : Sets
 - $|A|$ : Number of elements (cardinality) of set $A$
@@ -32,7 +32,7 @@ Before learning the Inclusion-Exclusion Principle, let's review basic set notati
 
 What we want to find is the cardinality of the union of multiple sets, namely $|A \cup B \cup \dots|$.
 
-## 3. Inclusion-Exclusion Principle for 2 Sets
+## 3. [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/) for 2 Sets
 
 Let's consider the simplest case with two sets, $A$ and $B$.
 
@@ -59,7 +59,7 @@ flowchart TD
     B -->|"Overlap"| AandB
 ```
 
-## 4. Inclusion-Exclusion Principle for 3 Sets
+## 4. [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/) for 3 Sets
 
 When there are three sets, it gets slightly more complex. Consider sets $A, B, C$.
 
@@ -98,7 +98,7 @@ $$
 $$
 Therefore, there are **74** numbers divisible by 2, 3, or 5.
 
-## 5. General Inclusion-Exclusion Principle for $n$ Sets
+## 5. General [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/) for $n$ Sets
 
 Generalizing this to $n$ sets $A_1, A_2, \dots, A_n$ gives the following beautiful formula.
 
@@ -133,7 +133,7 @@ This proves that every element is counted exactly once without duplication.
 
 ## 6. Application Example 1: Euler's Totient Function
 
-Euler's totient function $\varphi(N)$ represents the number of integers from $1$ to $N$ that are coprime to $N$. This can also be calculated using the Inclusion-Exclusion Principle.
+Euler's totient function $\varphi(N)$ represents the number of integers from $1$ to $N$ that are coprime to $N$. This can also be calculated using the [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/).
 
 Let the prime factors of $N$ be $p_1, p_2, \dots, p_k$.
 Let the universal set be $U = \{1, 2, \dots, N\}$, and $A_i$ be "the set of multiples of $p_i$".
@@ -143,7 +143,7 @@ $$
 \varphi(N) = N - \left| \bigcup_{i=1}^k A_i \right|
 $$
 
-Applying the Inclusion-Exclusion Principle and simplifying leads to this famous formula:
+Applying the [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/) and simplifying leads to this famous formula:
 
 $$
 \varphi(N) = N \left(1 - \frac{1}{p_1}\right) \left(1 - \frac{1}{p_2}\right) \dots \left(1 - \frac{1}{p_k}\right)
@@ -156,7 +156,7 @@ A derangement is a permutation of the numbers $1$ to $n$ such that no $i$-th num
 Let $A_i$ be "the set of permutations where $i$ is in the $i$-th position". The cardinality of the universal set is $n!$.
 We want to find $n! - |A_1 \cup A_2 \cup \dots \cup A_n|$.
 
-The cardinality of the intersection of any $k$ sets is $(n-k)!$, and there are $\binom{n}{k}$ ways to choose such $k$ sets. Applying the Inclusion-Exclusion Principle, the number of derangements $D_n$ is obtained as follows:
+The cardinality of the intersection of any $k$ sets is $(n-k)!$, and there are $\binom{n}{k}$ ways to choose such $k$ sets. Applying the [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/), the number of derangements $D_n$ is obtained as follows:
 
 $$
 D_n = n! \sum_{k=0}^n \frac{(-1)^k}{k!}
@@ -164,7 +164,7 @@ $$
 
 ## 8. Calculation and Implementation via Programming
 
-The Inclusion-Exclusion Principle is extremely useful in programming. Especially when combined with bitwise exhaustive search, the Inclusion-Exclusion Principle for $n$ conditions can be implemented concisely.
+The [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/) is extremely useful in programming. Especially when combined with bitwise exhaustive search, the [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/) for $n$ conditions can be implemented concisely.
 
 Below is Python code to find "the number of integers from 1 to $M$ that are divisible by any of the prime numbers in a given list".
 
@@ -203,7 +203,7 @@ The time complexity of this algorithm is $O(n \cdot 2^n)$, which runs sufficient
 
 ## 9. Conclusion
 
-The Inclusion-Exclusion Principle is a magical mathematical formula that breaks down seemingly complex overlaps of sets into a simple and mechanical repetition of addition and subtraction.
+The [Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/) is a magical mathematical formula that breaks down seemingly complex overlaps of sets into a simple and mechanical repetition of addition and subtraction.
 
 Its range of application is exceptionally broad, spanning from basic probability problems to advanced competitive programming, and the calculation of Euler's totient function related to cryptography.
 Mastering this powerful technique will dramatically improve your problem-solving abilities in mathematics and algorithms. By all means, try applying it to various problems and experience its power.

@@ -10,7 +10,7 @@ tags: ["Euler", "Mathematik", "Wissenschaft"]
 
 # Was ist die Eulersche Identität?
 
-Die **Eulersche Identität** (Euler's Identity) ist als die schönste und tiefgründigste Beziehung in der Mathematik bekannt. Diese Formel verbindet 5 grundlegende mathematische Konstanten aus völlig unterschiedlichen Bereichen in einer erstaunlich einfachen Form.
+Die **Eulersche Identität** ([Euler's Identity](https://kenji.blog/p/eulers-identity/)) ist als die schönste und tiefgründigste Beziehung in der Mathematik bekannt. Diese Formel verbindet 5 grundlegende mathematische Konstanten aus völlig unterschiedlichen Bereichen in einer erstaunlich einfachen Form.
 
 $$
 e^{i\pi} + 1 = 0
@@ -63,7 +63,7 @@ Auf diese Weise wird eine erstaunlich einfache Formel abgeleitet.
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -84,7 +84,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -105,7 +105,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -126,7 +126,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -147,7 +147,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -168,7 +168,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -189,7 +189,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -210,7 +210,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -231,7 +231,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 
@@ -252,7 +252,7 @@ Indem man hier $x = ix$ einsetzt und vereinfacht, wird die Eulersche Formel herg
 
 ## Historischer Hintergrund
 
-Leonhard Euler (Leonhard Euler) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) war ein führender Mathematiker des 18. Jahrhunderts und hinterließ Errungenschaften in vielen Bereichen wie Physik, Astronomie und Logik. Diese Identität, die seinen Namen trägt, kann als einer der Höhepunkte seiner umfangreichen Forschungen angesehen werden.
 
 ### Die Entdeckung der komplexen Exponentialfunktion
 

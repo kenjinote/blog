@@ -84,9 +84,9 @@ This is a powerful opinion based on "frequentism" or the "anthropic principle," 
 
 ---
 
-## 3. Calculating with Bayes' Theorem
+## 3. Calculating with [Bayes' Theorem](https://kenji.blog/p/bayes-theorem/)
 
-There is also an attempt to unravel this problem using "Bayes' Theorem," a tool for mathematically updating probabilities.
+There is also an attempt to unravel this problem using "[Bayes' Theorem](https://kenji.blog/p/bayes-theorem/)," a tool for mathematically updating probabilities.
 Let's organize the logic of the "1/3 faction" from the perspective of conditional probability.
 
 Your state when you awaken is one of the following three:

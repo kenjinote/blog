@@ -12,13 +12,13 @@ tags:
   - "História"
 ---
 
-# 1. Introdução: O que é a Teoria de Galois?
+# 1. Introdução: O que é a [Teoria de Galois](https://kenji.blog/p/galois-theory/)?
 
-Na história da matemática, uma das teorias mais dramáticas e profundas é a **Teoria de Galois**.
-Esta teoria foi construída no início do século XIX pelo jovem matemático francês Évariste Galois.
-A Teoria de Galois resolveu de forma brilhante o antigo problema, "Por que não existe uma fórmula geral de resolução para equações de grau 5 ou superior?", usando um conceito totalmente novo: **Grupo**.
+Na história da matemática, uma das teorias mais dramáticas e profundas é a **[Teoria de Galois](https://kenji.blog/p/galois-theory/)**.
+Esta teoria foi construída no início do século XIX pelo jovem matemático francês [Évariste Galois](https://kenji.blog/p/galois/).
+A [Teoria de Galois](https://kenji.blog/p/galois-theory/) resolveu de forma brilhante o antigo problema, "Por que não existe uma fórmula geral de resolução para equações de grau 5 ou superior?", usando um conceito totalmente novo: **Grupo**.
 
-Neste artigo, explicaremos desde as ideias básicas da Teoria de Galois, passando por seu contexto histórico, até seu impacto na matemática moderna, da forma mais profunda e acessível possível. Vamos abrir a porta da álgebra e tocar na beleza da simetria.
+Neste artigo, explicaremos desde as ideias básicas da [Teoria de Galois](https://kenji.blog/p/galois-theory/), passando por seu contexto histórico, até seu impacto na matemática moderna, da forma mais profunda e acessível possível. Vamos abrir a porta da álgebra e tocar na beleza da simetria.
 
 ## 1.1 O que é a fórmula de resolução de uma equação?
 
@@ -64,14 +64,14 @@ Galois provou que uma equação "pode ser resolvida por radicais" (as soluções
 
 # 3. Por que a equação do 5º grau não pode ser resolvida?
 
-Usando a Teoria de Galois, fica surpreendentemente claro por que as equações de grau 5 ou superior não possuem uma fórmula de resolução.
+Usando a [Teoria de Galois](https://kenji.blog/p/galois-theory/), fica surpreendentemente claro por que as equações de grau 5 ou superior não possuem uma fórmula de resolução.
 
 ## 3.1 Extensão de Corpos e Correspondência de Galois
 
 O processo de resolver uma equação pode ser visto como o processo de expandir gradualmente um conjunto de números (**Corpo**). Um corpo é um conjunto onde as quatro operações aritméticas podem ser realizadas livremente (ex: conjunto dos números racionais, conjunto dos números reais).
 Por exemplo, começando com o conjunto dos números racionais $\mathbb{Q}$ e adicionando as raízes que são componentes das soluções da equação, criamos um novo corpo. Isso é chamado de **Extensão de corpo**.
 
-O Teorema Fundamental, que é o coração da Teoria de Galois, mostra que existe uma bela correspondência biunívoca (**Correspondência de Galois**) entre os "corpos intermediários da extensão de corpos" e os "subgrupos do Grupo de Galois". Existe uma magnífica relação inversa: corpos maiores correspondem a grupos menores, e corpos menores correspondem a grupos maiores.
+O Teorema Fundamental, que é o coração da [Teoria de Galois](https://kenji.blog/p/galois-theory/), mostra que existe uma bela correspondência biunívoca (**Correspondência de Galois**) entre os "corpos intermediários da extensão de corpos" e os "subgrupos do Grupo de Galois". Existe uma magnífica relação inversa: corpos maiores correspondem a grupos menores, e corpos menores correspondem a grupos maiores.
 
 ```mermaid
 graph LR
@@ -109,9 +109,9 @@ $$
 
 Isso não significa apenas que "a fórmula ainda não foi encontrada", mas mostra o fato conclusivo de que "tal fórmula não pode existir matematicamente".
 
-# 4. A Vida de Évariste Galois
+# 4. A Vida de [Évariste Galois](https://kenji.blog/p/galois/)
 
-Embora a beleza da Teoria de Galois brilhe na história da matemática, a vida dramática do próprio Galois continua fascinando muitas pessoas.
+Embora a beleza da [Teoria de Galois](https://kenji.blog/p/galois-theory/) brilhe na história da matemática, a vida dramática do próprio Galois continua fascinando muitas pessoas.
 
 Galois nasceu em 1811, perto de Paris, França. Seu talento extraordinário para a matemática desabrochou na adolescência, mas as autoridades matemáticas da época (como Cauchy, Fourier e Poisson) não compreenderam a extrema novidade de sua teoria. Seus artigos foram perdidos ou devolvidos com comentários de que "as explicações eram insuficientes e incompreensíveis", o que o levou a sofrer com a falta de reconhecimento. Ele também falhou duas vezes no exame de admissão da École Polytechnique após conflitos com os examinadores.
 
@@ -124,17 +124,17 @@ Diz-se que nas margens dessa carta, as dolorosas palavras "Não tenho tempo! (Je
 Galois foi baleado no abdômen durante o duelo no dia 30 de maio, vindo a falecer no dia seguinte, com apenas 20 anos de idade.
 As anotações difíceis que ele deixou foram cuidadosamente decifradas e organizadas por Joseph Liouville mais de 10 anos depois, e finalmente publicadas em uma revista acadêmica em 1846. Foi muito tempo após a sua morte que o seu conteúdo surpreendente se tornou conhecido no mundo e chocou a comunidade matemática.
 
-# 5. O Impacto da Teoria de Galois na Matemática Moderna
+# 5. O Impacto da [Teoria de Galois](https://kenji.blog/p/galois-theory/) na Matemática Moderna
 
 As sementes abstratas de "grupo" e "extensão de corpos" que Galois plantou transformaram grandemente a matemática subsequente.
-Não é exagero dizer que a **Álgebra Abstrata** moderna se desenvolveu a partir da Teoria de Galois. Estabeleceu-se a abordagem de encontrar e estudar as estruturas não apenas em conjuntos de números, mas em coleções de qualquer objeto, como polinômios, matrizes ou funções.
+Não é exagero dizer que a **Álgebra Abstrata** moderna se desenvolveu a partir da [Teoria de Galois](https://kenji.blog/p/galois-theory/). Estabeleceu-se a abordagem de encontrar e estudar as estruturas não apenas em conjuntos de números, mas em coleções de qualquer objeto, como polinômios, matrizes ou funções.
 
 Além disso, a ideia de entender a simetria como um grupo desempenha um papel fundamental em uma ampla gama de campos, não apenas na matemática, mas também na física, na química e na ciência da informação.
-Por exemplo, o Modelo Padrão da física de partículas é construído sobre a teoria de grupos contínuos chamados Grupos de Lie, e a criptografia, que garante a segurança da comunicação de informações, bem como a teoria de códigos de correção de erros para comunicação de dados (como os códigos Reed-Solomon usados em CDs, DVDs, códigos QR, etc.), são aplicações diretas da Teoria de Galois sobre corpos finitos.
+Por exemplo, o Modelo Padrão da física de partículas é construído sobre a teoria de grupos contínuos chamados Grupos de Lie, e a criptografia, que garante a segurança da comunicação de informações, bem como a teoria de códigos de correção de erros para comunicação de dados (como os códigos Reed-Solomon usados em CDs, DVDs, códigos QR, etc.), são aplicações diretas da [Teoria de Galois](https://kenji.blog/p/galois-theory/) sobre corpos finitos.
 
 # 6. Resumo e Perspectivas
 
-A Teoria de Galois nos ensina que, por trás de equações que parecem apenas sequências complexas de fórmulas matemáticas, esconde-se uma bela estrutura geométrica chamada simetria.
+A [Teoria de Galois](https://kenji.blog/p/galois-theory/) nos ensina que, por trás de equações que parecem apenas sequências complexas de fórmulas matemáticas, esconde-se uma bela estrutura geométrica chamada simetria.
 O fato de uma teoria nascida para mostrar o resultado "negativo" de que as equações do 5º grau não podem ser resolvidas ter se tornado uma luz gigantesca que iluminou toda a matemática moderna e abriu um mundo matemático inteiramente novo pode ser considerado o maior paradoxo e milagre na história da ciência.
 
 A jornada para explorar a beleza da simetria oculta nas equações começou com Galois e continua até as matemáticas de ponta atuais (como o Programa de Langlands). O insight que Galois deixou em sua curta vida, quase 200 anos depois, ainda continua a nos dar inspiração infinita.

@@ -35,7 +35,7 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 ## Philosophie et Pensée
 
-> Le cœur a ses raisons que la raison ne connaît point (Blaise Pascal)
+> Le cœur a ses raisons que la raison ne connaît point ([Blaise Pascal](https://kenji.blog/p/pascal/))
 
 > Dieu est mort (Friedrich Nietzsche)
 
@@ -54,7 +54,7 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 > Tout s'écoule (Héraclite)
 
 
-> Je pense, donc je suis (René Descartes)
+> Je pense, donc je suis ([René Descartes](https://kenji.blog/p/descartes/))
 
 > Je sais que je ne sais rien (Socrate)
 
@@ -62,7 +62,7 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 > L'homme est un animal politique (Aristote)
 
-> L'homme est un roseau pensant (Blaise Pascal)
+> L'homme est un roseau pensant ([Blaise Pascal](https://kenji.blog/p/pascal/))
 
 > Savoir, c'est pouvoir (Francis Bacon)
 
@@ -76,9 +76,9 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 ## Science, Mathématiques et Technologie
 
-> Les mathématiques sont la reine des sciences (Carl Friedrich Gauss)
+> Les mathématiques sont la reine des sciences ([Carl Friedrich Gauss](https://kenji.blog/p/gauss/))
 
-> Nous devons savoir, nous saurons (David Hilbert)
+> Nous devons savoir, nous saurons ([David Hilbert](https://kenji.blog/p/hilbert/))
 
 > Il n'y a aucune branche des mathématiques, aussi abstraite soit-elle, qui ne puisse un jour s'appliquer aux phénomènes du monde réel (Nikolaï Lobatchevski)
 
@@ -90,7 +90,7 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 > Ce qui est bien avec la science, c'est qu'elle est vraie, que vous y croyiez ou non (Neil deGrasse Tyson)
 
-> En mathématiques, l'art de poser une question a plus de valeur que celui de la résoudre (Georg Cantor)
+> En mathématiques, l'art de poser une question a plus de valeur que celui de la résoudre ([Georg Cantor](https://kenji.blog/p/cantor/))
 
 > Si nous savions ce que nous faisions, cela ne s'appellerait pas de la recherche, n'est-ce pas ? (Albert Einstein)
 
@@ -107,11 +107,11 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 > Une personne qui n'a jamais commis d'erreur n'a jamais rien essayé de nouveau (Albert Einstein)
 
-> Si j'ai vu plus loin, c'est en me tenant sur les épaules de géants (Isaac Newton)
+> Si j'ai vu plus loin, c'est en me tenant sur les épaules de géants ([Isaac Newton](https://kenji.blog/p/newton/))
 
 > Et pourtant elle tourne (Galilée)
 
-> Il n'y a pas de voie royale en géométrie (Euclide)
+> Il n'y a pas de voie royale en géométrie ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/))
 
 > Donnez-moi un point d'appui et je soulèverai le monde (Archimède)
 

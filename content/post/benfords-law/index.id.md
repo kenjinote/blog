@@ -19,13 +19,13 @@ Misalnya, jika Anda mengekstrak digit pertama dari beragam data di alam dan masy
 
 Angka yang paling sering muncul di antara angka-angka tersebut adalah **"1"**. Mengejutkannya, sekitar 30% dari semua data dimulai dengan 1. Secara intuitif, kita mungkin berharap angka 1 hingga 9 masing-masing muncul sekitar 11,1% dari waktu, tetapi data dunia nyata tidak berfungsi seperti itu.
 
-Hukum matematika yang menjelaskan fenomena misterius ini adalah **Hukum Benford (Benford's Law)**.
+Hukum matematika yang menjelaskan fenomena misterius ini adalah **[Hukum Benford](https://kenji.blog/p/benfords-law/) ([Benford's Law](https://kenji.blog/p/benfords-law/))**.
 
-Dalam artikel ini, kami akan menjelaskan secara menyeluruh bagaimana Hukum Benford bekerja, mengapa fenomena ini terjadi, dan bagaimana hukum ini diterapkan untuk mendeteksi penipuan.
+Dalam artikel ini, kami akan menjelaskan secara menyeluruh bagaimana [Hukum Benford](https://kenji.blog/p/benfords-law/) bekerja, mengapa fenomena ini terjadi, dan bagaimana hukum ini diterapkan untuk mendeteksi penipuan.
 
-## Apa itu Hukum Benford?
+## Apa itu [Hukum Benford](https://kenji.blog/p/benfords-law/)?
 
-Hukum Benford (juga dikenal sebagai Hukum Digit Pertama) menyatakan bahwa dalam banyak kumpulan data numerik di kehidupan nyata, probabilitas munculnya digit pertama (digit bukan nol yang paling signifikan) lebih tinggi untuk angka yang lebih kecil.
+[Hukum Benford](https://kenji.blog/p/benfords-law/) (juga dikenal sebagai Hukum Digit Pertama) menyatakan bahwa dalam banyak kumpulan data numerik di kehidupan nyata, probabilitas munculnya digit pertama (digit bukan nol yang paling signifikan) lebih tinggi untuk angka yang lebih kecil.
 
 Secara spesifik, probabilitas $P(d)$ bahwa digit pertama adalah $d$ ($d \in \{1, 2, ..., 9\}$) dinyatakan dengan persamaan logaritmik berikut:
 
@@ -57,7 +57,7 @@ Mengapa bias yang berlawanan dengan intuisi ini terjadi? Penjelasan intuitif unt
 
 ### Invariansi Skala
 
-Jika ada hukum alam universal yang ada, hukum itu sendiri tidak boleh berubah meskipun satuan pengukurannya diubah. Misalnya, baik jarak diukur dalam kilometer atau mil, probabilitas distribusi digit pertama harus sama. Secara matematis, ketika mencari distribusi probabilitas yang memenuhi kondisi bahwa distribusi tetap tidak berubah bahkan ketika dikalikan dengan konstanta (invariansi skala), seseorang pasti akan sampai pada distribusi logaritmik Hukum Benford.
+Jika ada hukum alam universal yang ada, hukum itu sendiri tidak boleh berubah meskipun satuan pengukurannya diubah. Misalnya, baik jarak diukur dalam kilometer atau mil, probabilitas distribusi digit pertama harus sama. Secara matematis, ketika mencari distribusi probabilitas yang memenuhi kondisi bahwa distribusi tetap tidak berubah bahkan ketika dikalikan dengan konstanta (invariansi skala), seseorang pasti akan sampai pada distribusi logaritmik [Hukum Benford](https://kenji.blog/p/benfords-law/).
 
 ### Skala Logaritmik dan Pertumbuhan
 
@@ -71,7 +71,7 @@ $$ \text{Waktu singgah} \propto \log_{10}(d+1) - \log_{10}(d) $$
 
 ## Untuk Jenis Data Apa Ini Berlaku?
 
-Hukum Benford tidak dapat diterapkan pada semua data. Ada perbedaan yang jelas antara data yang berlaku dan data yang tidak berlaku.
+[Hukum Benford](https://kenji.blog/p/benfords-law/) tidak dapat diterapkan pada semua data. Ada perbedaan yang jelas antara data yang berlaku dan data yang tidak berlaku.
 
 ### Contoh Data yang Berlaku
 - **Data yang tersebar luas**: Data yang mencakup berbagai urutan besaran (misalnya, data yang tersebar dari 10 hingga 1.000.000).
@@ -85,13 +85,13 @@ Hukum Benford tidak dapat diterapkan pada semua data. Ada perbedaan yang jelas a
 
 ## Penerapan dalam Deteksi Penipuan
 
-Saat ini, salah satu bidang di mana Hukum Benford digunakan paling praktis adalah **Deteksi Penipuan (Fraud Detection)**.
+Saat ini, salah satu bidang di mana [Hukum Benford](https://kenji.blog/p/benfords-law/) digunakan paling praktis adalah **Deteksi Penipuan (Fraud Detection)**.
 
-Ketika manusia mencoba membuat atau memanipulasi angka secara acak untuk membuat data, mereka secara tidak sadar mencoba menggunakan setiap angka secara setara atau menghindari angka-angka tertentu. Namun, karena data alam mengikuti Hukum Benford, data yang dibuat-buat akan menyimpang secara signifikan dari hukum ini.
+Ketika manusia mencoba membuat atau memanipulasi angka secara acak untuk membuat data, mereka secara tidak sadar mencoba menggunakan setiap angka secara setara atau menghindari angka-angka tertentu. Namun, karena data alam mengikuti [Hukum Benford](https://kenji.blog/p/benfords-law/), data yang dibuat-buat akan menyimpang secara signifikan dari hukum ini.
 
 ### Penggunaan dalam Audit Akuntansi
 
-Otoritas pajak dan firma audit akuntansi memindai buku besar perusahaan dan laporan pengeluaran untuk secara otomatis memeriksa apakah digit pertama (atau digit kedua) dari angka-angka tersebut mengikuti Hukum Benford.
+Otoritas pajak dan firma audit akuntansi memindai buku besar perusahaan dan laporan pengeluaran untuk secara otomatis memeriksa apakah digit pertama (atau digit kedua) dari angka-angka tersebut mengikuti [Hukum Benford](https://kenji.blog/p/benfords-law/).
 
 ```mermaid
 graph TD
@@ -102,15 +102,15 @@ graph TD
     E --> F["Lakukan Audit Mendetail"]
 ```
 
-Jika sejumlah besar "pengeluaran fiktif" digelembungkan, distribusi jumlah tersebut akan menjadi tidak wajar dan menonjol dari kurva Hukum Benford. Metode ini sangat kuat, dan faktanya, banyak kasus penggelapan dan penipuan akuntansi telah terungkap yang dipicu oleh hukum ini.
+Jika sejumlah besar "pengeluaran fiktif" digelembungkan, distribusi jumlah tersebut akan menjadi tidak wajar dan menonjol dari kurva [Hukum Benford](https://kenji.blog/p/benfords-law/). Metode ini sangat kuat, dan faktanya, banyak kasus penggelapan dan penipuan akuntansi telah terungkap yang dipicu oleh hukum ini.
 
 ### Tuduhan Kecurangan Pemilu
 
-Selain itu, dalam data penghitungan suara pemilu, apakah hasil agregat dari setiap tempat pemungutan suara mengikuti Hukum Benford terkadang digunakan sebagai indikator untuk memverifikasi kecurangan pemilu (namun, dalam kasus data pemilu, terkadang sulit untuk diterapkan tergantung pada ukuran distrik, yang merupakan bahan perdebatan).
+Selain itu, dalam data penghitungan suara pemilu, apakah hasil agregat dari setiap tempat pemungutan suara mengikuti [Hukum Benford](https://kenji.blog/p/benfords-law/) terkadang digunakan sebagai indikator untuk memverifikasi kecurangan pemilu (namun, dalam kasus data pemilu, terkadang sulit untuk diterapkan tergantung pada ukuran distrik, yang merupakan bahan perdebatan).
 
 ## Kesimpulan
 
-**Hukum Benford** adalah salah satu tatanan matematika indah yang tersembunyi di dunia yang tampak kacau.
+**[Hukum Benford](https://kenji.blog/p/benfords-law/)** adalah salah satu tatanan matematika indah yang tersembunyi di dunia yang tampak kacau.
 
 Intuisi kita cenderung berpikir bahwa "angka muncul secara setara," tetapi kenyataannya, "1" memiliki kehadiran yang luar biasa. Mengetahui hukum ini mungkin sedikit mengubah cara Anda memandang data yang Anda lihat di berita, laporan keuangan perusahaan, dan bahkan luasnya alam.
 

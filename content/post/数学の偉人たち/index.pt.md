@@ -16,17 +16,17 @@ Matemático e filósofo da Grécia Antiga. Defendeu a ideia de que "tudo é núm
 ### Arquimedes (Archimedes, c. 287 a.C. - 212 a.C.)
 Matemático, físico e inventor da Grécia Antiga. Calculou com precisão uma aproximação para Pi usando o método da exaustão e descobriu as fórmulas para o volume e a área da superfície de uma esfera. É considerado o maior matemático da antiguidade por ter usado métodos que podem ser vistos como o germe do cálculo diferencial e integral. A anedota de que, ao descobrir o "Princípio de Arquimedes", ficou tão empolgado que correu nu pelas ruas gritando "Eureka! (Descobri!)" é extremamente famosa. Na defesa de Siracusa, inventou várias novas armas que atormentaram o exército romano, mas foi morto por um soldado enquanto estava absorto em uma figura geométrica que havia desenhado no chão.
 
-### Euclides (Euclid, c. século III a.C.)
+### [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) ([Euclid](https://kenji.blog/p/euclid/), c. século III a.C.)
 Matemático grego do Egito Antigo, que se acredita ter atuado em Alexandria. Em seu livro "Os Elementos", estabeleceu um sistema axiomático que derivou logicamente teoremas a partir de um pequeno número de axiomas e postulados, o que teve um impacto imensurável no desenvolvimento posterior da matemática e da ciência. Diz a lenda que quando o rei perguntou se havia um atalho para aprender geometria, ele respondeu resolutamente: "Não há estrada real para a geometria". A geometria euclidiana que ele construiu reinou como uma verdade absoluta até o nascimento da geometria não euclidiana no século XIX.
 
-### Diofanto (Diophantus, c. 207 - c. 291)
+### [Diofanto](https://kenji.blog/p/diophantus/) ([Diophantus](https://kenji.blog/p/diophantus/), c. 207 - c. 291)
 Matemático grego, frequentemente chamado de o "pai da álgebra". Famoso pela introdução de simbolismos e pelo estudo de soluções racionais para equações. Embora pouco se saiba sobre sua vida, há uma lenda de que seu epitáfio contém um problema algébrico cuja solução revela a idade em que ele morreu. Sua obra-prima é "Aritmética", e o campo que busca soluções inteiras ou racionais para equações é chamado até hoje de "Equações Diofantinas". Mais tarde, Fermat leu este livro e deixou o famoso "Último Teorema de Fermat" escrito em suas margens.
 
 ### Fibonacci (L. Fibonacci, c. 1175 - c. 1250)
 Matemático italiano da Idade Média. Seu nome verdadeiro era Leonardo de Pisa. Escreveu a sua principal obra "Liber Abaci", e introduziu e popularizou os numerais indo-arábicos e a notação posicional, que eram muito mais convenientes para o cálculo do que os numerais romanos, então comuns na Europa. É mundialmente famoso como o descobridor da "Sequência de Fibonacci" (1, 1, 2, 3, 5, 8...), derivada de um problema que modelava o crescimento de uma população de coelhos. Esta sequência é conhecida por estar intimamente relacionada com a proporção áurea que aparece em todas as partes da natureza.
 
 ### Bachet (C. G. Bachet, 1581-1638)
-Nobre francês do século XVII e matemático amador que se dedicava aos quebra-cabeças numéricos e à pesquisa matemática como passatempo. Fez uma grande contribuição ao traduzir do original grego para o latim e publicar a "Aritmética" de Diofanto, incluindo suas próprias pesquisas como anotações. Foi por ler esta edição de Bachet que Fermat deixou inúmeras anotações nas margens, o que mudaria significativamente o mundo da matemática posteriormente. Ele também publicou uma coleção clássica de problemas matemáticos recreativos.
+Nobre francês do século XVII e matemático amador que se dedicava aos quebra-cabeças numéricos e à pesquisa matemática como passatempo. Fez uma grande contribuição ao traduzir do original grego para o latim e publicar a "Aritmética" de [Diofanto](https://kenji.blog/p/diophantus/), incluindo suas próprias pesquisas como anotações. Foi por ler esta edição de Bachet que Fermat deixou inúmeras anotações nas margens, o que mudaria significativamente o mundo da matemática posteriormente. Ele também publicou uma coleção clássica de problemas matemáticos recreativos.
 
 ### Mersenne (M. Mersenne, 1588-1648)
 Padre e monge francês da Ordem dos Mínimos. Ele deixou seu nome nos "Números de Mersenne", embora se diga que esses números foram, na verdade, concebidos por seu amigo Fermat. Tendo seu mosteiro como base, ele se correspondia com os maiores estudiosos de toda a Europa da época, atuando como uma "Academia de Ciências ambulante" que intermediava as pesquisas deles e desempenhando um papel de extrema importância no desenvolvimento da ciência. Também obteve realizações no campo da acústica, descobrindo as "Leis de Mersenne".
@@ -35,7 +35,7 @@ Padre e monge francês da Ordem dos Mínimos. Ele deixou seu nome nos "Números 
 Original filósofo e matemático francês do século XVII. Conhecido pela proposição "Penso, logo existo". Sua maior contribuição para a matemática foi a invenção do sistema de coordenadas cartesianas, que cruza ortogonalmente um eixo X e um eixo Y em um plano. Isso tornou possível expressar figuras geométricas através de equações algébricas, fundando a geometria analítica, que integrou a geometria e a álgebra. Existe uma famosa anedota de que ele teve a ideia das coordenadas ao observar uma mosca rastejando no teto enquanto estava na cama.
 
 ### Fermat (P. de Fermat, 1601-1665)
-Matemático francês do século XVII. Sua principal ocupação era juiz, e a matemática era apenas um hobby praticado nas horas vagas; ele é o "Rei dos Matemáticos Amadores". Estabeleceu as bases da geometria analítica, da teoria das probabilidades e do cálculo diferencial e integral. Também é o fundador da teoria dos números e escreveu nas margens da "Aritmética" de Diofanto o "Último Teorema de Fermat", que atormentou os gênios matemáticos de todo o mundo por mais de 360 anos.
+Matemático francês do século XVII. Sua principal ocupação era juiz, e a matemática era apenas um hobby praticado nas horas vagas; ele é o "Rei dos Matemáticos Amadores". Estabeleceu as bases da geometria analítica, da teoria das probabilidades e do cálculo diferencial e integral. Também é o fundador da teoria dos números e escreveu nas margens da "Aritmética" de [Diofanto](https://kenji.blog/p/diophantus/) o "Último Teorema de Fermat", que atormentou os gênios matemáticos de todo o mundo por mais de 360 anos.
 
 ### Roberval (G. P. de Roberval, 1602-1675)
 Matemático francês do século XVII. Incomum para a época, era um profissional que obteve o cargo de professor de matemática no Collège Royal. Conhecido por pesquisas no cálculo da área da cicloide. Ele fez contribuições pioneiras para o cálculo diferencial usando o raciocínio dos indivisíveis. Para manter sua posição como professor, ele mantinha em segredo os teoremas e métodos que descobria, não publicando imediatamente os artigos e frequentemente travando disputas de prioridade com outros matemáticos.
@@ -44,18 +44,18 @@ Matemático francês do século XVII. Incomum para a época, era um profissional
 Matemático inglês do século XVII e professor da Universidade de Oxford. Em sua principal obra, deu forma matemática ao conceito de limite, contribuindo para estabelecer as bases do cálculo que seria continuado por Newton. Ele é a pessoa que inventou o símbolo de infinito "∞". Além disso, foi um gênio na decodificação de mensagens criptografadas e decifrou os documentos dos realistas em prol dos parlamentaristas durante a Revolução Puritana.
 
 ### Brouncker (W. Brouncker, 1620-1684)
-Nobre irlandês e primeiro presidente da Royal Society da Inglaterra. Tinha um profundo amor pela matemática e interagia ativamente com estudiosos como Wallis. Descobriu uma bela fórmula de "fração contínua" para representar o Pi. Além disso, no problema da Equação de Pell de Fermat, colaborou com Wallis para derivar um método único de resolução, desempenhando um papel importante no desenvolvimento da matemática no século XVII.
+Nobre irlandês e primeiro presidente da Royal Society da Inglaterra. Tinha um profundo amor pela matemática e interagia ativamente com estudiosos como Wallis. Descobriu uma bela fórmula de "fração contínua" para representar o Pi. Além disso, no problema da [Equação de Pell](https://kenji.blog/p/pell-equation/) de Fermat, colaborou com Wallis para derivar um método único de resolução, desempenhando um papel importante no desenvolvimento da matemática no século XVII.
 
 ### Pascal (B. Pascal, 1623-1662)
 Filósofo, matemático, físico e pensador religioso francês do século XVII. Famoso pela frase "O homem é um caniço pensante". Inventou a primeira calculadora mecânica do mundo, a "Pascaline", para ajudar nos cálculos de impostos de seu pai. Também é conhecido por estabelecer as bases da teoria das probabilidades, através de sua correspondência com Fermat. Mais tarde, converteu-se ao jansenismo e abandonou a matemática para se dedicar às atividades religiosas.
 
-### Isaac Newton (I. Newton, 1642-1727)
+### [Isaac Newton](https://kenji.blog/p/newton/) (I. Newton, 1642-1727)
 Físico, matemático e astrônomo inglês. Considerado um dos maiores cientistas da história. Ele obteve inspiração para a lei da gravitação universal, o cálculo diferencial e integral, e a óptica durante o "ano miraculoso" quando a universidade fechou devido à peste. Ele criou o cálculo independentemente de Leibniz, mas depois entraram em uma amarga disputa pela prioridade. Sua principal obra, os "Principia", estabeleceu os fundamentos da mecânica clássica.
 
 ### Seki Takakazu (T. Seki, c. 1642-1708)
 Matemático japonês do início do período Edo. Ele elevou a matemática tradicional japonesa (Wasan) a um sistema avançado e é aclamado como o "Santo da Matemática". Descobriu o conceito correspondente ao determinante antes de Leibniz e descobriu de forma independente os números de Bernoulli. Calculou o Pi até 11 casas decimais e estabeleceu as bases do cálculo diferencial no Japão isolado.
 
-### Gottfried Leibniz (G. W. Leibniz, 1646-1716)
+### [Gottfried Leibniz](https://kenji.blog/p/leibniz/) (G. W. Leibniz, 1646-1716)
 Filósofo e matemático alemão. Foi um gênio universal que atuou como diplomata e bibliotecário. Fundou o cálculo diferencial e integral independentemente de Newton e inventou os símbolos de cálculo (dy/dx, ∫) que usamos hoje. Também contribuiu para a pesquisa do sistema binário e a formalização da lógica. Ele também é conhecido por propor a filosofia do otimismo, afirmando que este mundo é o melhor de todos os mundos possíveis.
 
 ### Euler (L. Euler, 1707-1783)
@@ -91,7 +91,7 @@ Matemático alemão. Introduziu o conceito de número ideal na teoria algébrica
 ### Galois (É. Galois, 1811-1832)
 Matemático francês. Um gênio inigualável que iniciou a álgebra moderna ao introduzir o conceito de grupo para elucidar as condições em que uma equação pode ser resolvida algebricamente. As suas teorias eram demasiado precoces e ignoradas em vida. Ativista político republicano fervoroso, viveu uma vida turbulenta e morreu em um duelo aos 20 anos, mas o seu testamento matemático alterou toda a matemática futura.
 
-### Karl Weierstrass (K. Weierstrass, 1815-1897)
+### [Karl Weierstrass](https://kenji.blog/p/weierstrass/) (K. Weierstrass, 1815-1897)
 Matemático alemão. Estabeleceu a rigorosa definição epsilon-delta, consolidando os fundamentos da análise matemática e ganhando o título de Pai da Análise Moderna. Apresentou uma função contínua em todo lado mas não diferenciável em lado nenhum, chocando os contemporâneos. Trabalhou muito tempo como professor de ensino médio, onde até lecionava ginástica, e era conhecido pelo seu caráter amável.
 
 ### Kronecker (L. Kronecker, 1823-1891)
@@ -100,7 +100,7 @@ Matemático alemão de origem judaica. Conhecido pelo "Delta de Kronecker", fez 
 ### Riemann (B. Riemann, 1826-1866)
 Matemático alemão e discípulo de Gauss. Inventou conceitos que estruturam a matemática e física modernas, como a superfície de Riemann, a integral de Riemann e a geometria Riemanniana, que serviu de base para a Relatividade Geral de Einstein. A "Hipótese de Riemann", proposta em 1859, é o maior problema não resolvido da matemática. Faleceu precocemente de tuberculose aos 39 anos.
 
-### Georg Cantor (G. Cantor, 1845-1918)
+### [Georg Cantor](https://kenji.blog/p/cantor/) (G. Cantor, 1845-1918)
 Matemático alemão. Fundou sozinho a "Teoria dos Conjuntos", a linguagem da matemática moderna, e provou que existem diferentes tamanhos (cardinalidades) de infinitos. A sua teoria revolucionária atraiu zombarias e ataques furiosos de contemporâneos como Kronecker e Poincaré. Sofreu muito com problemas de saúde mental, vindo a falecer num sanatório, mas hoje é visto como um dos maiores revolucionários da história matemática.
 
 ### Poincaré (H. Poincaré, 1854-1912)
@@ -115,14 +115,14 @@ Matemático alemão. Liderou a matemática mundial na transição do século XIX
 ### Takagi Teiji (T. Takagi, 1875-1960)
 Matemático japonês. Após estudar na Alemanha com Hilbert, desenvolveu de forma solitária a grandiosa "Teoria dos Corpos de Classes" relativa a extensões abelianas. O seu feito elevou o nível da matemática japonesa para o patamar mundial. Atuou como júri das primeiras Medalhas Fields e os seus livros escolares em japonês continuam a influenciar milhares de estudantes.
 
-### Emmy Noether (A. E. Noether, 1882-1935)
+### [Emmy Noether](https://kenji.blog/p/noether/) (A. E. Noether, 1882-1935)
 Matemática alemã que fundou a "álgebra abstrata" moderna de anéis e ideais. Na física, provou o essencial "Teorema de Noether", conectando simetrias e leis de conservação. Devido a preconceitos de género, trabalhou sem receber salário durante anos, mas os seus brilhantes alunos mantiveram-se ao seu lado. Pelas suas raízes judaicas, fugiu do nazismo para os EUA e faleceu de forma súbita.
 
-### Srinivasa Ramanujan (S. Ramanujan, 1887-1920)
+### [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) (S. Ramanujan, 1887-1920)
 Matemático indiano, amplamente autodidata. Usando forte intuição, encontrou centenas de fórmulas milagrosas, sendo apelidado de O Mago da Índia. Através de correspondência com G. H. Hardy, foi até à Inglaterra. Famoso por alegar que a sua deusa protetora lhe revelava equações em sonhos. Adoecido pela fraca adaptação europeia, sucumbiu com 32 anos de idade, deixando cadernos que intrigam matemáticos até hoje.
 
 ### Mordell (L. J. Mordell, 1888-1972)
-Matemático britânico nascido nos Estados Unidos. Provou o Teorema de Mordell na teoria das curvas elípticas. O seu teorema foi generalizado por Weil para o célebre Teorema de Mordell-Weil. A sua célebre Conjectura de Mordell foi demonstrada mais tarde de modo retumbante pelo alemão Gerd Faltings.
+Matemático britânico nascido nos Estados Unidos. Provou o Teorema de Mordell na teoria das curvas elípticas. O seu teorema foi generalizado por Weil para o célebre Teorema de Mordell-Weil. A sua célebre Conjectura de Mordell foi demonstrada mais tarde de modo retumbante pelo alemão [Gerd Faltings](https://kenji.blog/p/faltings/).
 
 ### Siegel (C. L. Siegel, 1896-1981)
 Matemático e teórico alemão em números. Famoso pelo Teorema de Siegel e Lema de Siegel. Opôs-se abertamente às correntes abstracionistas em voga como o grupo Bourbaki, preferindo exaltar o uso minucioso das fórmulas da análise tradicional, com as quais granjeou incalculável respeito global no século XX.
@@ -139,10 +139,10 @@ Especialista da matemática da Hungria emigrado, de genialidade absurda assente 
 ### Weil (A. Weil, 1906-1998)
 Polímata de matemática francês que criou e guiou o grupo Bourbaki na matemática abstrata do mundo atual. Conjecturou as bases de Weil que serviram nas pontes fundamentais no arranque desmedido da análise nas curvas e espaços na geometria do seu tempo para as de hoje. Detido por recusar o serviço militar na guerra mundial.
 
-### Kurt Gödel (K. Gödel, 1906-1978)
+### [Kurt Gödel](https://kenji.blog/p/godel/) (K. Gödel, 1906-1978)
 Lógico austríaco com amizade de longa de data com Albert Einstein. Abriu fendas formidáveis por vias do teorema da incompletude em 1931, derrubando convicções matemáticas infalíveis ao revelar as propriedades indemonstráveis nas aritméticas base, abanando o rumo do conhecimento teórico humano em bases inabaláveis da altura e falecendo temendo males envenenados no encerramento trágico vital.
 
-### Alan Turing (A. Turing, 1912-1954)
+### [Alan Turing](https://kenji.blog/p/turing/) (A. Turing, 1912-1954)
 Pai fundador do ramo nas áreas da ciência da computação com as famosas idealizações de máquina universal base dos computadores de hoje em dia. Notório quebrador criptográfico durante o enredo britânico da Enigma mundial. Punido a pretexto devido à homossexualidade consumindo mortífera toxina num mordisco fatal de maçã.
 
 ### Kodaira Kunihiko (K. Kodaira, 1915-1997)
@@ -154,7 +154,7 @@ Criou do nada teorias nas bases do Lema de Ito para o ramo das finanças do alea
 ### Taniyama Yutaka (Y. Taniyama, 1927-1958)
 Com curtos e gloriosos 28 anos avançou e desenhou as fortes elípticas e modeladas conjecturas (Taniyama-Shimura) numa via assombrosa. Essa rota tornou-se a glorificada e vitoriosa ponte para a resolução da equação de Fermat com que se atestou provando anos mais depois pelos parceiros ao findar suicídio na jovem vida tragicamente precoce.
 
-### Alexander Grothendieck (A. Grothendieck, 1928-2014)
+### [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) (A. Grothendieck, 1928-2014)
 Francês que reciclou radicalmente as visões gerais das topologias com noções teóricas gigantes a atestar nas bases da geometria da era moderna. Abandonou palcos após recusar os prêmios ou envolvimentos de guerras na reclusão para o recanto da montanhas de cordilheiras e abandonou milhares das obras teóricas sem publicação.
 
 ### Shimura Goro (G. Shimura, 1930-2019)
@@ -173,4 +173,4 @@ Matemático do Reino Unido, finalizador heroico atrelado no encerramento do Últ
 Revolucionário alemão que aos 28 anos em 1983 provou a Conjectura de Mordell, atestando e espantando o mundo da matemática. Ganhou a Medalha Fields de 1986. Provou também problemas grandiosos atrelados a Tate e Shafarevich com base nas teorias de esquema de Grothendieck e até hoje continua expoente mundial na aritmética geométrica.
 
 ### Referências
-O Último Teorema de Fermat foi Solucionado! Da Demonstração de Euler à Demonstração de Wiles, Editora Kodansha.
+[O Último Teorema de Fermat](https://kenji.blog/p/fermats-last-theorem/) foi Solucionado! Da Demonstração de Euler à Demonstração de Wiles, Editora Kodansha.

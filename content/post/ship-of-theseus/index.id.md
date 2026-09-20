@@ -8,19 +8,19 @@ tags: ["Kapal Theseus", "Refactoring", "Microservices", "Pemrograman Berorientas
 slug: "ship-of-theseus"
 ---
 
-Halo. Apakah Anda pernah mendengar tentang paradoks (eksperimen pemikiran) **Kapal Theseus**?
+Halo. Apakah Anda pernah mendengar tentang paradoks (eksperimen pemikiran) **[Kapal Theseus](https://kenji.blog/p/ship-of-theseus/)**?
 
 Kapal yang ditumpangi oleh pahlawan mitologi Yunani, Theseus, dilestarikan sebagai monumen oleh generasi berikutnya. Namun, karena terbuat dari kayu, seiring berjalannya waktu bagian-bagian kapal mulai melapuk. Orang-orang terus memperbaiki kapal tersebut dengan mengganti kayu yang lapuk dengan kayu yang baru. Bertahun-tahun kemudian, akhirnya **tidak ada satu pun bagian dari kapal asli yang tersisa**.
 
 Di sinilah muncul sebuah pertanyaan.
 
-"Apakah kapal yang semua bagiannya telah diganti masih bisa disebut sama dengan **Kapal Theseus yang asli**?"
+"Apakah kapal yang semua bagiannya telah diganti masih bisa disebut sama dengan **[Kapal Theseus](https://kenji.blog/p/ship-of-theseus/) yang asli**?"
 
 Eksperimen pemikiran ini telah lama diperdebatkan dalam filsafat sebagai pertanyaan tentang apa itu "identitas". Dan yang mengejutkan, masalah ini juga menjadi tema yang sering kita temui dalam **rekayasa perangkat lunak** dan **pengembangan sistem** modern.
 
-Artikel ini akan menjadikan paradoks **Kapal Theseus** sebagai titik awal untuk mengkaji secara mendalam tentang refactoring, migrasi sistem warisan (legacy systems), serta "identitas" dalam pemrograman berorientasi objek.
+Artikel ini akan menjadikan paradoks **[Kapal Theseus](https://kenji.blog/p/ship-of-theseus/)** sebagai titik awal untuk mengkaji secara mendalam tentang refactoring, migrasi sistem warisan (legacy systems), serta "identitas" dalam pemrograman berorientasi objek.
 
-## 1. "Kapal Theseus" dalam Perangkat Lunak
+## 1. "[Kapal Theseus](https://kenji.blog/p/ship-of-theseus/)" dalam Perangkat Lunak
 
 Dalam pengembangan perangkat lunak modern, sangat jarang sebuah sistem yang telah dirilis beroperasi terus-menerus tanpa ada perubahan. Kode terus ditulis ulang karena berbagai alasan, seperti penambahan kebutuhan bisnis, perbaikan bug, peningkatan kinerja, atau pembaruan teknologi dasar.
 
@@ -41,7 +41,7 @@ graph LR
 
 Proses ini ketika selesai, struktur internal sistem yang diakses oleh pengguna telah menjadi **sesuatu yang sepenuhnya berbeda**. Mungkin tidak ada satu baris pun kode lama yang tersisa. Namun, dari sudut pandang pengguna, itu adalah "layanan yang biasa", dan baik URL maupun nama mereknya tidak berubah.
 
-Ini benar-benar mencerminkan **Kapal Theseus**. Meskipun semua komponen (bagian) yang menyusun sistem telah diganti, "identitas" sistem secara keseluruhan dianggap tetap terjaga.
+Ini benar-benar mencerminkan **[Kapal Theseus](https://kenji.blog/p/ship-of-theseus/)**. Meskipun semua komponen (bagian) yang menyusun sistem telah diganti, "identitas" sistem secara keseluruhan dianggap tetap terjaga.
 
 ## 2. "Identitas" dalam Pemrograman Berorientasi Objek
 
@@ -50,7 +50,7 @@ Saat memikirkan "identitas" di tingkat kode, konsep yang paling relevan adalah *
 1. **Kesetaraan Referensi (Reference Equality)**: Apakah merujuk ke lokasi memori yang sama (apakah pointernya sama)
 2. **Kesetaraan Nilai (Value Equality)**: Apakah semua atribut (data) yang dimiliki sama
 
-Dalam konteks Kapal Theseus, argumen "karena semua bagiannya telah diganti, maka ini adalah kapal yang berbeda" adalah pandangan yang menitikberatkan pada **kesetaraan nilai**. Sebaliknya, argumen "karena memiliki konteks historis dan sosial yang berkelanjutan, maka ini adalah kapal yang sama" dapat dikatakan mendekati **kesetaraan referensi**.
+Dalam konteks [Kapal Theseus](https://kenji.blog/p/ship-of-theseus/), argumen "karena semua bagiannya telah diganti, maka ini adalah kapal yang berbeda" adalah pandangan yang menitikberatkan pada **kesetaraan nilai**. Sebaliknya, argumen "karena memiliki konteks historis dan sosial yang berkelanjutan, maka ini adalah kapal yang sama" dapat dikatakan mendekati **kesetaraan referensi**.
 
 ### "Entity" dan "Value Object" dalam DDD (Domain-Driven Design)
 
@@ -59,7 +59,7 @@ Metode pemodelan yang dapat memecahkan masalah ini dengan elegan terlihat dalam 
 - **Entity**: Objek yang mempertahankan identitasnya meskipun atributnya berubah. Identitasnya dinilai dari ID (pengenal).
 - **Value Object**: Objek di mana identitasnya ditentukan oleh atribut itu sendiri. Jika satu saja atributnya berbeda, maka itu adalah objek yang berbeda.
 
-Jika diterapkan pada Kapal Theseus, pemodelan yang sangat jelas dapat dilakukan.
+Jika diterapkan pada [Kapal Theseus](https://kenji.blog/p/ship-of-theseus/), pemodelan yang sangat jelas dapat dilakukan.
 
 - **Kapal (Ship)** adalah sebuah **Entity**
 - **Bagian kapal (Plank / Kayu)** adalah sebuah **Value Object**
@@ -102,11 +102,11 @@ graph TD
     end
 ```
 
-Yang menjamin "perilaku yang terlihat dari luar" ini adalah **pengujian otomatis (automated testing)**. Selama semua pengujian terus berhasil dilewati, tidak peduli seberapa banyak bagian di dalamnya (metode, kelas, atau seluruh arsitektur) diganti, perangkat lunak tersebut akan tetap menjadi "hal yang sama" seperti Kapal Theseus.
+Yang menjamin "perilaku yang terlihat dari luar" ini adalah **pengujian otomatis (automated testing)**. Selama semua pengujian terus berhasil dilewati, tidak peduli seberapa banyak bagian di dalamnya (metode, kelas, atau seluruh arsitektur) diganti, perangkat lunak tersebut akan tetap menjadi "hal yang sama" seperti [Kapal Theseus](https://kenji.blog/p/ship-of-theseus/).
 
-## 4. "Kapal Theseus" dalam Tim Proyek
+## 4. "[Kapal Theseus](https://kenji.blog/p/ship-of-theseus/)" dalam Tim Proyek
 
-Tidak hanya sistem perangkat lunaknya saja, **tim pengembang** yang membuatnya juga bisa menjadi Kapal Theseus.
+Tidak hanya sistem perangkat lunaknya saja, **tim pengembang** yang membuatnya juga bisa menjadi [Kapal Theseus](https://kenji.blog/p/ship-of-theseus/).
 
 Dalam proyek jangka panjang, anggota awal secara bertahap akan pergi dan anggota baru akan bergabung. Beberapa tahun kemudian, tidak jarang ditemui tim di mana tidak ada satu pun anggota pendiri yang tersisa.
 
@@ -119,9 +119,9 @@ Sebaliknya, jika proses orientasi (onboarding) dan dokumentasi tidak dilakukan d
 
 ## 5. Masalah Ekstensi Hobbes: Kapal yang Dirakit Ulang dari Bagian-Bagian Lama
 
-Paradoks Kapal Theseus memiliki versi ekstensi terkenal yang ditambahkan oleh filsuf Thomas Hobbes.
+Paradoks [Kapal Theseus](https://kenji.blog/p/ship-of-theseus/) memiliki versi ekstensi terkenal yang ditambahkan oleh filsuf Thomas Hobbes.
 
-> Jika seseorang mengumpulkan semua "bagian-bagian lama yang lapuk" yang telah dilepas dari kapal, lalu merakitnya kembali untuk membuat "kapal yang lain", manakah yang merupakan Kapal Theseus yang asli?
+> Jika seseorang mengumpulkan semua "bagian-bagian lama yang lapuk" yang telah dilepas dari kapal, lalu merakitnya kembali untuk membuat "kapal yang lain", manakah yang merupakan [Kapal Theseus](https://kenji.blog/p/ship-of-theseus/) yang asli?
 
 Satu sisi adalah "kapal yang telah diperbaiki sepenuhnya dengan bagian-bagian baru dan terus berlabuh di pelabuhan".
 Di sisi lain adalah "kapal yang berada di tempat berbeda, yang hanya terdiri dari bagian-bagian lama yang asli".
@@ -162,12 +162,12 @@ Lebih dari sekadar kesinambungan bagian fisik (kode sumber), konsep abstrak tent
 
 ## 7. Kesimpulan: Terus Berubah Itulah Identitas
 
-Filsafat Yunani "Kapal Theseus" mengajarkan kita bahwa akan timbul kontradiksi jika kita mencari identitas pada wujud fisik.
+Filsafat Yunani "[Kapal Theseus](https://kenji.blog/p/ship-of-theseus/)" mengajarkan kita bahwa akan timbul kontradiksi jika kita mencari identitas pada wujud fisik.
 
 Di dunia perangkat lunak, wujud fisik yang disebut kode (rangkaian byte) sangatlah cair (fluid). Sebaliknya, **terus berubah** justru merupakan syarat mutlak agar perangkat lunak dapat bertahan hidup dan terus memberikan nilai.
 
 Sebuah sistem di mana semuanya telah ditulis ulang. Itu tidak diragukan lagi adalah **sistem yang asli**, namun pada saat yang sama juga merupakan **sistem yang sama sekali baru**.
 
-Bagi kita yang mengembangkan dan memelihara perangkat lunak, ini sama dengan terlibat dalam pemeliharaan Kapal Theseus yang epik ini. Sambil mengganti bagian-bagiannya satu per satu dengan yang lebih baik, kita membawa identitas berupa "tujuan" dan "nilai" yang terkandung di dalam sistem ke masa depan.
+Bagi kita yang mengembangkan dan memelihara perangkat lunak, ini sama dengan terlibat dalam pemeliharaan [Kapal Theseus](https://kenji.blog/p/ship-of-theseus/) yang epik ini. Sambil mengganti bagian-bagiannya satu per satu dengan yang lebih baik, kita membawa identitas berupa "tujuan" dan "nilai" yang terkandung di dalam sistem ke masa depan.
 
-Kali berikutnya Anda melakukan refactoring pada kode warisan (legacy code), cobalah untuk mengingatnya kembali. Bahwa saat ini, Anda sedang memperbarui satu bagian penting dari Kapal Theseus yang bersejarah.
+Kali berikutnya Anda melakukan refactoring pada kode warisan (legacy code), cobalah untuk mengingatnya kembali. Bahwa saat ini, Anda sedang memperbarui satu bagian penting dari [Kapal Theseus](https://kenji.blog/p/ship-of-theseus/) yang bersejarah.

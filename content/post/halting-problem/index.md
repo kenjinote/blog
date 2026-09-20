@@ -10,9 +10,9 @@ slug: "halting-problem"
 
 プログラミングをしていると、「このプログラム、どこかで無限ループになっていないかな？」と不安になることがあります。もし、 **任意のプログラムが無限ループするかどうかを確実に判定してくれるツール** があれば、開発やデバッグは劇的に簡単になるでしょう。
 
-しかし、計算機科学の分野では、そのような夢のツールは **「絶対に作れない」** ことが数学的に証明されています。これが有名な **「停止性問題（Halting Problem）」** です。
+しかし、計算機科学の分野では、そのような夢のツールは **「絶対に作れない」** ことが数学的に証明されています。これが有名な **「[停止性問題（Halting Problem）](https://kenji.blog/p/halting-problem/)」** です。
 
-本記事では、1936年に[アラン・チューリング](https://kenji.blog/p/turing/)（Alan Turing）によって証明されたこの問題について、直感的な具体例、数式（KaTeX）、そして図解（Mermaid）を用いて、わかりやすく解説します。
+本記事では、1936年に[アラン・チューリング](https://kenji.blog/p/turing/)（[Alan Turing](https://kenji.blog/p/turing/)）によって証明されたこの問題について、直感的な具体例、数式（KaTeX）、そして図解（Mermaid）を用いて、わかりやすく解説します。
 
 ## 停止性問題とは何か？
 
@@ -158,7 +158,7 @@ graph TD
 
 ## [ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)との深い関係
 
-停止性問題の証明の根底にある「自己言及のパラドックス」は、[チューリング](https://kenji.blog/p/turing/)の少し前、1931年に[クルト・ゲーデル](https://kenji.blog/p/godel/)（Kurt Gödel）が発表した **「[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)（Incompleteness Theorems）」** と深い繋がりを持っています。
+停止性問題の証明の根底にある「自己言及のパラドックス」は、[チューリング](https://kenji.blog/p/turing/)の少し前、1931年に[クルト・ゲーデル](https://kenji.blog/p/godel/)（[Kurt Gödel](https://kenji.blog/p/godel/)）が発表した **「[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)（Incompleteness Theorems）」** と深い繋がりを持っています。
 
 [ゲーデル](https://kenji.blog/p/godel/)の第一[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)は、「自然数論を含む十分に強力な公理系の中には、証明も反証もできない真の命題が必ず存在する」というものです。[ゲーデル](https://kenji.blog/p/godel/)はこの定理を証明する際に、「この命題は証明できない」という自己言及的な命題を数学的に構成しました。
 

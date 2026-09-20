@@ -10,7 +10,7 @@ tags: ["Millennium-Probleme", "Topologie", "Algebraische Geometrie", "Hodge-Verm
 
 # Einführung
 
-In der Welt der Mathematik gibt es viele noch ungelöste Rätsel. Eines der wichtigsten und als große Mauer in der modernen Mathematik stehenden ist ein **Millennium-Problem** (Millennium Prize Problems). Die sieben ungelösten Probleme, die im Jahr 2000 vom Clay Mathematics Institute angekündigt wurden, sind mit einem Preisgeld von jeweils einer Million Dollar dotiert, und brillante Mathematiker auf der ganzen Welt versuchen, sie zu lösen. In diesem Artikel werden wir uns eingehend mit einem dieser Millennium-Probleme befassen, der **Hodge-Vermutung** (Hodge Conjecture), einer sehr schönen Vermutung, die die algebraische Geometrie und die Topologie verbindet.
+In der Welt der Mathematik gibt es viele noch ungelöste Rätsel. Eines der wichtigsten und als große Mauer in der modernen Mathematik stehenden ist ein **Millennium-Problem** (Millennium Prize Problems). Die sieben ungelösten Probleme, die im Jahr 2000 vom Clay Mathematics Institute angekündigt wurden, sind mit einem Preisgeld von jeweils einer Million Dollar dotiert, und brillante Mathematiker auf der ganzen Welt versuchen, sie zu lösen. In diesem Artikel werden wir uns eingehend mit einem dieser Millennium-Probleme befassen, der **Hodge-Vermutung** ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/)), einer sehr schönen Vermutung, die die algebraische Geometrie und die Topologie verbindet.
 
 Zusammenfassend lässt sich sagen, dass es sich bei der Hodge-Vermutung um eine Vermutung über die tiefe Beziehung zwischen "geometrischen Formen" und "algebraischen Gleichungen" handelt. Genauer gesagt stellt sie die Frage, ob Objekte mit bestimmten topologischen Eigenschaften auf einer nicht-singulären projektiven algebraischen Varietät über dem Körper der komplexen Zahlen als Kombinationen von algebraischen Untervarietäten dargestellt werden können.
 
@@ -68,7 +68,7 @@ gehört, nennt man eine **Hodge-Klasse** (Hodge Class).
 
 Wir sind nun vorbereitet. Die Aussage der Hodge-Vermutung ist sehr einfach, aber erstaunlich mächtig.
 
-> **Hodge-Vermutung (Hodge Conjecture)**
+> **[Hodge-Vermutung ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))](https://kenji.blog/p/hodge-conjecture/)**
 > Jede Hodge-Klasse auf einer nicht-singulären projektiven algebraischen Varietät X über dem Körper der komplexen Zahlen kann als Linearkombination von algebraischen Zykeln mit rationalen Koeffizienten dargestellt werden.
 
 Mit anderen Worten wird behauptet: "Kohomologieklassen (Hodge-Klassen), die aus Sicht der Topologie und komplexen Analysis algebraisch-geometrisch aussehen, stammen tatsächlich von Figuren (algebraischen Zykeln), die durch algebraische Gleichungen konstruiert wurden."
@@ -106,7 +106,7 @@ Eine allgemeine Methode zur Rekonstruktion spezifischer algebraischer Gleichunge
 
 Es gibt verschiedene Verallgemeinerungen und verwandte Vermutungen zur Hodge-Vermutung.
 
-- **Verallgemeinerte Hodge-Vermutung (Generalized Hodge Conjecture)**: Dies ist ein Versuch, die Hodge-Vermutung auf einen allgemeineren Rahmen (z. B. Mannigfaltigkeiten mit Singularitäten oder offene Mannigfaltigkeiten) zu erweitern. Sie wurde von Alexander Grothendieck (Alexander Grothendieck) und anderen formuliert, aber es wurden Gegenbeispiele gefunden, was die Formulierung selbst zu einer schwierigen Aufgabe macht.
+- **Verallgemeinerte Hodge-Vermutung (Generalized [Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))**: Dies ist ein Versuch, die Hodge-Vermutung auf einen allgemeineren Rahmen (z. B. Mannigfaltigkeiten mit Singularitäten oder offene Mannigfaltigkeiten) zu erweitern. Sie wurde von [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/p/grothendieck/)) und anderen formuliert, aber es wurden Gegenbeispiele gefunden, was die Formulierung selbst zu einer schwierigen Aufgabe macht.
 - **Tate-Vermutung (Tate Conjecture)**: Bekannt als ein zahlentheoretisches Analogon der Hodge-Vermutung. Sie ist nicht für Mannigfaltigkeiten über dem Körper der komplexen Zahlen formuliert, sondern für Mannigfaltigkeiten über endlichen Körpern, unter Verwendung des Konzepts der Étale-Kohomologie (Étale Cohomology). Dies ist ebenfalls ein extrem schwieriges, ungelöstes Problem.
 
 ## 6. Zusammenfassung und zukünftige Aussichten
@@ -145,7 +145,7 @@ Die Hodge-Vermutung ist kein isoliertes Problem, sondern tief mit vielen anderen
 
 ### 8.1 Grothendiecks Standardvermutungen (Grothendieck's Standard Conjectures)
 
-Alexander Grothendieck formulierte eine Reihe großartiger Vermutungen über algebraische Zykel auf algebraischen Varietäten. Dies sind die **Standardvermutungen** (Standard Conjectures on Algebraic Cycles).
+[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) formulierte eine Reihe großartiger Vermutungen über algebraische Zykel auf algebraischen Varietäten. Dies sind die **Standardvermutungen** (Standard Conjectures on Algebraic Cycles).
 
 Die Standardvermutungen umfassen die Schnitttheorie algebraischer Zykel und die Verallgemeinerung des Satzes von Lefschetz auf beliebige Dimensionen. Wenn die Hodge-Vermutung wahr ist, wird angenommen, dass für Mannigfaltigkeiten über dem Körper der komplexen Zahlen ein Teil der Standardvermutungen daraus folgt. Umgekehrt, wenn die Standardvermutungen gelöst sind, würden sie ein starkes Werkzeug für die Hodge-Vermutung liefern. Dies sind unverzichtbare Puzzleteile für die Vollendung der "Motivtheorie" (Theory of Motives), dem ultimativen Ziel der algebraischen Geometrie.
 

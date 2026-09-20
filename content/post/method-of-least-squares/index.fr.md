@@ -16,7 +16,7 @@ tags:
 
 Les données observées dans le monde réel contiennent presque toujours du "bruit" ou de la "variance". Pour trouver les règles sous-jacentes de ces données et prédire l'avenir ou estimer des données inconnues, nous devons construire un modèle mathématique qui s'**ajuste le mieux** aux données.
 
-La méthode la plus fondamentale, qui joue toujours un rôle extrêmement important en tant que base de l'apprentissage automatique moderne, est la **Méthode des moindres carrés** (Method of Least Squares).
+La méthode la plus fondamentale, qui joue toujours un rôle extrêmement important en tant que base de l'apprentissage automatique moderne, est la **[Méthode des moindres carrés](https://kenji.blog/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)).
 
 Dans cet article, plutôt que de simplement mémoriser des formules, nous explorerons en profondeur **"pourquoi ce calcul trouve la droite qui s'ajuste le mieux"** du point de vue géométrique magnifique de l'algèbre linéaire (projection orthogonale).
 
@@ -170,6 +170,6 @@ L'exécution de ce code calcule l'ordonnée à l'origine et la pente de la ligne
 
 La méthode des moindres carrés est la technique la plus puissante et la plus standard pour estimer les paramètres d'un modèle à partir de données. En utilisant les connaissances du calcul, elle peut être dérivée comme "le point où le gradient de la fonction d'erreur devient 0", mais en la comprenant du point de vue de l'algèbre linéaire comme une "projection orthogonale sur l'espace des colonnes", la beauté de sa structure mathématique ressort.
 
-Cette méthode ne se limite pas à un simple ajustement de ligne (régression simple). En ajoutant des termes tels que $x^2, x^3$ aux colonnes de la matrice de conception $A$, elle peut être naturellement étendue à la **Régression polynomiale**, et elle peut également être développée en **Méthode des moindres carrés pondérés**, qui pondère l'importance de chaque point de données.
+Cette méthode ne se limite pas à un simple ajustement de ligne (régression simple). En ajoutant des termes tels que $x^2, x^3$ aux colonnes de la matrice de conception $A$, elle peut être naturellement étendue à la **Régression polynomiale**, et elle peut également être développée en **[Méthode des moindres carrés](https://kenji.blog/p/method-of-least-squares/) pondérés**, qui pondère l'importance de chaque point de données.
 
 En tant que première étape pour se rapprocher de la vérité derrière les données, une compréhension essentielle de la méthode des moindres carrés a une valeur inestimable.

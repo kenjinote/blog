@@ -23,9 +23,9 @@ $$
 1 + 2 + 3 + 4 + \dots = -\frac{1}{12}
 $$
 
-Even though we are adding positive integers infinitely, for some reason it becomes a **negative fraction**. This counterintuitive result became famous when the genius Indian mathematician Srinivasa Ramanujan mentioned it in a letter to the British mathematician G.H. Hardy.
+Even though we are adding positive integers infinitely, for some reason it becomes a **negative fraction**. This counterintuitive result became famous when the genius Indian mathematician [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) mentioned it in a letter to the British mathematician G.H. Hardy.
 
-In this article, we will explain this technique called "Ramanujan Summation", how this strange value is derived, and how it is connected to physical phenomena in the real world.
+In this article, we will explain this technique called "[Ramanujan Summation](https://kenji.blog/p/ramanujan-summation/)", how this strange value is derived, and how it is connected to physical phenomena in the real world.
 
 ---
 
@@ -85,7 +85,7 @@ $$
 
 Solving this gives **$S_2 = \frac{1}{4}$**.
 
-### Finally to Ramanujan Summation
+### Finally to [Ramanujan Summation](https://kenji.blog/p/ramanujan-summation/)
 
 The preparations are complete. Let's consider our main topic, the sum of all natural numbers, $S$.
 

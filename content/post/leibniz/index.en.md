@@ -42,7 +42,7 @@ In the mining project in particular, he devised an advanced pump system using wi
 
 Leibniz proposed the establishment of academic academies to various monarchs and served as the first president of the Prussian Academy of Sciences, playing a central role in Europe's academic network. He also had an audience with Peter the Great of Russia and provided advice on reforming the Russian education system.
 
-In his later years, however, his reputation was deeply tarnished by the "calculus priority dispute" that erupted with Isaac Newton. Furthermore, even after his lord in Hanover left for London as King George I of Great Britain, Leibniz was ordered to complete the compilation of the history books and was forced to remain in Hanover, enduring a period of misfortune. When he died at the age of 70 in 1716, it is said that only his secretary attended his funeral.
+In his later years, however, his reputation was deeply tarnished by the "calculus priority dispute" that erupted with [Isaac Newton](https://kenji.blog/p/newton/). Furthermore, even after his lord in Hanover left for London as King George I of Great Britain, Leibniz was ordered to complete the compilation of the history books and was forced to remain in Hanover, enduring a period of misfortune. When he died at the age of 70 in 1716, it is said that only his secretary attended his funeral.
 
 ## 2. Mathematical Achievements: Building the Foundation of Modern Science
 
@@ -64,7 +64,7 @@ $$
 
 ### 2.2 The Priority Dispute with Newton
 
-Over calculus, one of the most famous disputes in the history of science occurred with the English physicist Isaac Newton. Newton had arrived at the concept of calculus (the method of fluxions) earlier than Leibniz but had not published it for a long time. Meanwhile, Leibniz discovered calculus independently and published it first in a paper in 1684.
+Over calculus, one of the most famous disputes in the history of science occurred with the English physicist [Isaac Newton](https://kenji.blog/p/newton/). Newton had arrived at the concept of calculus (the method of fluxions) earlier than Leibniz but had not published it for a long time. Meanwhile, Leibniz discovered calculus independently and published it first in a paper in 1684.
 
 Today, it is the common consensus among historians that **both men discovered calculus completely independently**. While Newton's method was rooted in physics and kinematics, Leibniz's method was based on a more formal and algebraic approach.
 
@@ -99,7 +99,7 @@ In solving systems of linear equations, Leibniz independently arrived at the con
 
 ### 2.5 The Invention of the Stepped Reckoner
 
-Leibniz was not only a theoretical mathematician but also a practical inventor who carved his name into the history of mechanical calculators. He improved upon Blaise Pascal's calculator (the Pascaline), which could only perform addition and subtraction, and invented a calculator using the "Leibniz wheel" (the Stepped Reckoner) capable of multiplication and division.
+Leibniz was not only a theoretical mathematician but also a practical inventor who carved his name into the history of mechanical calculators. He improved upon [Blaise Pascal](https://kenji.blog/p/pascal/)'s calculator (the Pascaline), which could only perform addition and subtraction, and invented a calculator using the "Leibniz wheel" (the Stepped Reckoner) capable of multiplication and division.
 
 This mechanism was revolutionary and continued to be adopted as the standard structure for mechanical calculators over the next several hundred years.
 
@@ -133,7 +133,7 @@ Leibniz also made significant contributions to logic. He proposed the "Principle
 
 Leibniz believed that human thought could be reduced to mathematical calculation. He dreamed of constructing a "Universal characteristic" (*Characteristica universalis*) that would symbolize all concepts, and a "Calculus ratiocinator" to manipulate those symbols according to rules.
 
-The phrase he left behind, "Let us calculate" (*Calculemus*), symbolizes his ideal of deriving truth through calculation rather than argument whenever disagreements arose. This concept was a forerunner of symbolic logic and a historical vision that directly connects to the computational theories of Alan Turing and others, as well as the modern concept of **Artificial Intelligence (AI)**.
+The phrase he left behind, "Let us calculate" (*Calculemus*), symbolizes his ideal of deriving truth through calculation rather than argument whenever disagreements arose. This concept was a forerunner of symbolic logic and a historical vision that directly connects to the computational theories of [Alan Turing](https://kenji.blog/p/turing/) and others, as well as the modern concept of **Artificial Intelligence (AI)**.
 
 ## 5. Conclusion
 

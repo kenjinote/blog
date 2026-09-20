@@ -42,7 +42,7 @@ Pour le projet minier, il inventa un système sophistiqué de pompage éolien, m
 
 Leibniz proposa à divers monarques de créer des académies scientifiques et devint le premier président de l'Académie royale des sciences de Prusse, jouant un rôle central dans les réseaux académiques européens. Il rencontra également Pierre le Grand, à qui il conseilla de réformer le système éducatif russe.
 
-Cependant, à la fin de sa vie, sa réputation fut gravement ternie par la violente controverse sur la priorité de l'invention du calcul infinitésimal qui l'opposa à Isaac Newton. De plus, quand l'Électeur de Hanovre fut couronné roi de Grande-Bretagne sous le nom de George Ier et partit pour Londres, on ordonna à Leibniz de rester à Hanovre pour achever ses travaux historiques. Lorsqu'il mourut à 70 ans en 1716, on rapporte que seul son secrétaire assista à ses funérailles.
+Cependant, à la fin de sa vie, sa réputation fut gravement ternie par la violente controverse sur la priorité de l'invention du calcul infinitésimal qui l'opposa à [Isaac Newton](https://kenji.blog/p/newton/). De plus, quand l'Électeur de Hanovre fut couronné roi de Grande-Bretagne sous le nom de George Ier et partit pour Londres, on ordonna à Leibniz de rester à Hanovre pour achever ses travaux historiques. Lorsqu'il mourut à 70 ans en 1716, on rapporte que seul son secrétaire assista à ses funérailles.
 
 ## 2. L'œuvre mathématique : Les fondations de la science moderne
 
@@ -64,7 +64,7 @@ $$
 
 ### 2.2 La querelle de priorité avec Newton
 
-Le calcul infinitésimal fut l'objet d'une des querelles les plus célèbres de l'histoire des sciences, opposant Leibniz au Britannique Isaac Newton. Newton avait conçu sa méthode des fluxions avant Leibniz, mais tarda à la publier. De son côté, Leibniz découvrit le calcul de manière indépendante et fut le premier à publier ses résultats, en 1684.
+Le calcul infinitésimal fut l'objet d'une des querelles les plus célèbres de l'histoire des sciences, opposant Leibniz au Britannique [Isaac Newton](https://kenji.blog/p/newton/). Newton avait conçu sa méthode des fluxions avant Leibniz, mais tarda à la publier. De son côté, Leibniz découvrit le calcul de manière indépendante et fut le premier à publier ses résultats, en 1684.
 
 Aujourd'hui, les historiens s'accordent à dire que **les deux hommes ont découvert le calcul infinitésimal de manière totalement indépendante**. L'approche de Newton était enracinée dans la physique et la cinématique, tandis que celle de Leibniz s'appuyait sur une méthode plus formelle et algébrique.
 
@@ -99,7 +99,7 @@ En cherchant à résoudre les systèmes d'équations linéaires, Leibniz découv
 
 ### 2.5 L'invention de la machine à calculer à cylindres cannelés
 
-Théoricien brillant, Leibniz n'en fut pas moins un inventeur pratique qui laissa son nom dans l'histoire des calculatrices mécaniques. Il améliora la machine de Blaise Pascal (la Pascaline), qui ne pouvait faire que des additions et des soustractions, en concevant une machine utilisant un « cylindre de Leibniz » (le multiplicateur à cylindres cannelés) capable d'effectuer des multiplications et des divisions.
+Théoricien brillant, Leibniz n'en fut pas moins un inventeur pratique qui laissa son nom dans l'histoire des calculatrices mécaniques. Il améliora la machine de [Blaise Pascal](https://kenji.blog/p/pascal/) (la Pascaline), qui ne pouvait faire que des additions et des soustractions, en concevant une machine utilisant un « cylindre de Leibniz » (le multiplicateur à cylindres cannelés) capable d'effectuer des multiplications et des divisions.
 
 Ce mécanisme ingénieux devint le standard de l'architecture des calculatrices mécaniques pour les siècles à venir.
 
@@ -133,7 +133,7 @@ Leibniz a également apporté une contribution majeure à la logique avec son «
 
 Leibniz était persuadé que la pensée humaine pouvait être ramenée à des calculs mathématiques. Il rêvait de construire une « Caractéristique universelle » (*Characteristica universalis*) pour symboliser tous les concepts humains, couplée à un *Calculus ratiocinator* (calcul des raisonnements) permettant de manipuler ces symboles selon des règles strictes.
 
-Son célèbre mot d'ordre « Calculons » (*Calculemus*) exprime son idéal consistant à résoudre tout différend non par des querelles, mais par le calcul exact de la vérité. Cette idée préfigurait la logique symbolique et l'informatique théorique développée par Alan Turing, et constitue l'ancêtre spirituel du concept moderne de l' **Intelligence Artificielle (IA)**.
+Son célèbre mot d'ordre « Calculons » (*Calculemus*) exprime son idéal consistant à résoudre tout différend non par des querelles, mais par le calcul exact de la vérité. Cette idée préfigurait la logique symbolique et l'informatique théorique développée par [Alan Turing](https://kenji.blog/p/turing/), et constitue l'ancêtre spirituel du concept moderne de l' **Intelligence Artificielle (IA)**.
 
 ## 5. Conclusion
 

@@ -18,7 +18,7 @@ En este artículo, profundizaremos en la turbulenta vida de Fibonacci, el impact
 
 ### Nacimiento en Pisa y el Origen del Nombre "Fibonacci"
 
-Leonardo Fibonacci nació alrededor de 1170 en la ciudad-estado italiana de Pisa. Pisa en ese momento florecía como un centro de comercio mediterráneo, una república próspera con una poderosa armada y red comercial. Su padre, Guglielmo Bonacci, era un rico comerciante que también trabajaba como funcionario de aduanas para Pisa.
+[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) nació alrededor de 1170 en la ciudad-estado italiana de Pisa. Pisa en ese momento florecía como un centro de comercio mediterráneo, una república próspera con una poderosa armada y red comercial. Su padre, Guglielmo Bonacci, era un rico comerciante que también trabajaba como funcionario de aduanas para Pisa.
 
 El nombre "Fibonacci" en realidad no se usó durante su vida. Es un término acuñado por historiadores posteriores, que abrevia el latín "filius Bonacci" (hijo de Bonacci). Él se llamaba a sí mismo "Leonardo Pisano" (Leonardo de Pisa) o, debido a su amor por los viajes, "Bigollo" (que significa vagabundo o perezoso).
 
@@ -168,6 +168,6 @@ Sorprendentemente, su nombre también se escucha con frecuencia en el mundo de l
 
 ## Conclusión
 
-Leonardo Fibonacci tendió un puente entre el conocimiento del mundo islámico y Europa, trayendo la luz de las matemáticas al mundo occidental. Sin los números arábigos que popularizó a través del "Liber Abaci", la posterior Revolución Científica y la sociedad digital moderna podrían no haber existido.
+[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) tendió un puente entre el conocimiento del mundo islámico y Europa, trayendo la luz de las matemáticas al mundo occidental. Sin los números arábigos que popularizó a través del "Liber Abaci", la posterior Revolución Científica y la sociedad digital moderna podrían no haber existido.
 
 Además, la sucesión nacida del lúdico "Problema de los Conejos" encarna la belleza de las matemáticas puras y continúa cautivándonos hoy como una ley universal que se extiende desde el crecimiento de las plantas hasta las espirales galácticas e incluso la actividad económica humana. El legado de Fibonacci nos enseña a través del tiempo que las matemáticas no son solo una técnica de cálculo, sino un "lenguaje común" para desbloquear las verdades del universo.

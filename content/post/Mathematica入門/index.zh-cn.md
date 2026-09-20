@@ -107,7 +107,7 @@ Inverse[m]
 {{-2, 1}, {1.5, -0.5}}
 ```
 
-## 求特征值与特征向量
+## 求[特征值与特征向量](https://kenji.blog/p/eigenvalues-and-eigenvectors/)
 ```
 Eigensystem[m]
 ```

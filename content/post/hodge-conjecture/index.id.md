@@ -10,7 +10,7 @@ tags: ["Masalah Hadiah Milenium", "Topologi", "Geometri Aljabar", "Konjektur Hod
 
 # Pendahuluan
 
-Di dunia matematika, terdapat banyak misteri yang belum terpecahkan. Di antaranya yang sangat penting dan berdiri sebagai tembok besar matematika modern adalah **Masalah Hadiah Milenium** (Millennium Prize Problems). Diumumkan oleh Clay Mathematics Institute pada tahun 2000, tujuh masalah yang belum terpecahkan ini masing-masing memiliki hadiah sebesar 1 juta dolar, dan para ahli matematika jenius dari seluruh dunia sedang menantang diri mereka untuk memecahkannya. Dalam artikel ini, kita akan menggali lebih dalam salah satu dari Masalah Hadiah Milenium tersebut, yaitu **Konjektur Hodge** (Hodge Conjecture), sebuah konjektur yang sangat indah yang menghubungkan geometri aljabar dan topologi.
+Di dunia matematika, terdapat banyak misteri yang belum terpecahkan. Di antaranya yang sangat penting dan berdiri sebagai tembok besar matematika modern adalah **Masalah Hadiah Milenium** (Millennium Prize Problems). Diumumkan oleh Clay Mathematics Institute pada tahun 2000, tujuh masalah yang belum terpecahkan ini masing-masing memiliki hadiah sebesar 1 juta dolar, dan para ahli matematika jenius dari seluruh dunia sedang menantang diri mereka untuk memecahkannya. Dalam artikel ini, kita akan menggali lebih dalam salah satu dari Masalah Hadiah Milenium tersebut, yaitu **Konjektur Hodge** ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/)), sebuah konjektur yang sangat indah yang menghubungkan geometri aljabar dan topologi.
 
 Secara singkat, Konjektur Hodge adalah sebuah konjektur mengenai hubungan mendalam antara "bentuk geometris" dan "persamaan aljabar". Lebih tepatnya, ia mempertanyakan apakah pada varietas aljabar proyektif non-singular di atas lapangan bilangan kompleks, objek-objek dengan sifat topologis tertentu dapat diekspresikan oleh kombinasi dari subvarietas aljabar.
 
@@ -68,7 +68,7 @@ elemen yang termasuk ke dalamnya disebut **Kelas Hodge** (Hodge Class).
 
 Persiapan sudah selesai. Pernyataan dari Konjektur Hodge sangat sederhana, namun luar biasa kuat.
 
-> **Konjektur Hodge (Hodge Conjecture)**
+> **[Konjektur Hodge ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))](https://kenji.blog/p/hodge-conjecture/)**
 > Sembarang kelas Hodge pada varietas aljabar proyektif non-singular X di atas lapangan bilangan kompleks dapat diekspresikan oleh kombinasi linear dengan koefisien bilangan rasional dari siklus-siklus aljabar.
 
 Dengan kata lain, ini menyatakan bahwa "kelas kohomologi (kelas Hodge) yang terlihat bersifat geometri aljabar dari sudut pandang topologi dan analisis kompleks, sebenarnya berasal dari bangun yang dibuat dari persamaan aljabar (siklus aljabar)".
@@ -106,7 +106,7 @@ Metode umum untuk merekonstruksi persamaan aljabar konkret dari data analitik ma
 
 Terdapat berbagai generalisasi dan konjektur terkait dari Konjektur Hodge.
 
-- **Konjektur Hodge yang Digeneralisasi (Generalized Hodge Conjecture)**: Ini merupakan upaya untuk memperluas Konjektur Hodge ke dalam kerangka yang lebih umum (misalnya, ke manifold yang memiliki singularitas, atau manifold terbuka). Ini dirumuskan oleh Alexander Grothendieck dan ilmuwan lainnya, tetapi menemukan perumusan yang tepat itu sendiri merupakan tantangan yang sulit, karena berbagai contoh sangkalan telah ditemukan.
+- **Konjektur Hodge yang Digeneralisasi (Generalized [Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))**: Ini merupakan upaya untuk memperluas Konjektur Hodge ke dalam kerangka yang lebih umum (misalnya, ke manifold yang memiliki singularitas, atau manifold terbuka). Ini dirumuskan oleh [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) dan ilmuwan lainnya, tetapi menemukan perumusan yang tepat itu sendiri merupakan tantangan yang sulit, karena berbagai contoh sangkalan telah ditemukan.
 - **Konjektur Tate (Tate Conjecture)**: Dikenal sebagai padanan teoretis-bilangan dari Konjektur Hodge. Alih-alih manifold di atas lapangan bilangan kompleks, ini dirumuskan untuk manifold di atas lapangan hingga dengan menggunakan konsep Kohomologi Étale (Étale Cohomology). Ini juga merupakan masalah tak terpecahkan yang sangat sulit.
 
 ## 6. Kesimpulan dan Prospek Masa Depan
@@ -144,7 +144,7 @@ Konjektur Hodge bukanlah masalah yang terisolasi, melainkan berhubungan erat den
 
 ### 8.1 Konjektur Standar Grothendieck (Grothendieck's Standard Conjectures)
 
-Alexander Grothendieck merumuskan serangkaian konjektur besar yang berkaitan dengan siklus aljabar pada varietas aljabar. Inilah **Konjektur Standar** (Standard Conjectures on Algebraic Cycles).
+[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) merumuskan serangkaian konjektur besar yang berkaitan dengan siklus aljabar pada varietas aljabar. Inilah **Konjektur Standar** (Standard Conjectures on Algebraic Cycles).
 
 Konjektur standar mencakup teori perpotongan dari siklus aljabar dan generalisasi Teorema Lefschetz ke sembarang dimensi. Diyakini bahwa jika Konjektur Hodge benar, maka sebagian dari konjektur standar akan menyusul untuk manifold di atas lapangan bilangan kompleks. Sebaliknya, jika konjektur standar dipecahkan, ia akan menyediakan alat yang kuat bagi Konjektur Hodge. Ini semua adalah kepingan yang sangat penting dalam penyempurnaan "Teori Motif" (Theory of Motives), yang merupakan tujuan akhir dalam geometri aljabar.
 

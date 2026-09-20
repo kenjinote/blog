@@ -61,7 +61,7 @@ graph TD
 
 ## 4. Formalização Matemática via Inferência Bayesiana
 
-Vamos tentar formalizar matematicamente, e com rigor, este pressentimento, através da **Inferência Bayesiana**. O Teorema de Bayes explica como a probabilidade de uma hipótese (probabilidade a posteriori) deve ser atualizada de acordo com os novos dados observacionais fornecidos (a prova).
+Vamos tentar formalizar matematicamente, e com rigor, este pressentimento, através da **Inferência Bayesiana**. O [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) explica como a probabilidade de uma hipótese (probabilidade a posteriori) deve ser atualizada de acordo com os novos dados observacionais fornecidos (a prova).
 
 $$ P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)} $$
 
@@ -88,7 +88,7 @@ Em seguida, calcula-se a verosimilhança de cada hipótese $P(E|H)$. Com base no
 $$ P(n | H_{DOOM}) = \frac{1}{N_{DOOM}} = \frac{1}{2 \times 10^{11}} $$
 $$ P(n | H_{BOOM}) = \frac{1}{N_{BOOM}} = \frac{1}{2 \times 10^{13}} $$
 
-Através desta constatação, vamos descobrir a probabilidade a posteriori de $H_{DOOM}$. Ao abrirmos o Teorema de Bayes recorrendo à Teoria da Probabilidade Total obter-se-á a fórmula abaixo.
+Através desta constatação, vamos descobrir a probabilidade a posteriori de $H_{DOOM}$. Ao abrirmos o [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) recorrendo à Teoria da Probabilidade Total obter-se-á a fórmula abaixo.
 
 $$ P(H_{DOOM} | n) = \frac{P(n | H_{DOOM}) P(H_{DOOM})}{P(n | H_{DOOM}) P(H_{DOOM}) + P(n | H_{BOOM}) P(H_{BOOM})} $$
 

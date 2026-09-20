@@ -14,7 +14,7 @@ tags:
 
 ## 引言
 
-最优传输问题 (Optimal Transport Problem) 是一个数学问题，探讨在将某处的物质（如沙堆）移动到另一处（如坑洞）时， **“如何以最小的代价完成移动？”** 
+[最优传输问题](https://kenji.blog/p/optimal-transport-problem/) ([Optimal Transport Problem](https://kenji.blog/p/optimal-transport-problem/)) 是一个数学问题，探讨在将某处的物质（如沙堆）移动到另一处（如坑洞）时， **“如何以最小的代价完成移动？”** 
 
 它由法国数学家加斯帕尔·蒙日 (Gaspard Monge) 在18世纪提出，并在20世纪由列昂尼德·康托罗维奇 (Leonid Kantorovich) 进行了现代形式的表述。如今，它被广泛应用于从经济学的资源分配到机器学习等各个领域。
 
@@ -33,7 +33,7 @@ flowchart LR
 用数学语言来表达，假设原沙堆的分布是 $X$ 上的概率测度 $\mu$，坑洞的分布是 $Y$ 上的概率测度 $\nu$。
 我们设 $T: X \to Y$ 是一个映射（函数），决定了每个地点 $x \in X$ 到 $y \in Y$ 的移动目的地。这个 $T$ 必须将 $\mu$ 转移（前推）到 $\nu$。也就是说， $T_{\#}\mu = \nu$。
 
-假设移动带来的成本函数为 $c(x, y)$，蒙日最优传输问题就是要找到一个使以下总成本最小化的映射 $T$。
+假设移动带来的成本函数为 $c(x, y)$，蒙日[最优传输问题](https://kenji.blog/p/optimal-transport-problem/)就是要找到一个使以下总成本最小化的映射 $T$。
 
 $$
 \inf_{T_{\#}\mu = \nu} \int_X c(x, T(x)) d\mu(x)
@@ -65,7 +65,7 @@ flowchart TD
     X2 -->|"运输量 π(x_2, y_2)"| Y2
 ```
 
-康托罗维奇最优传输问题就是要找到一个使以下总成本最小化的联合分布 $\pi$。
+康托罗维奇[最优传输问题](https://kenji.blog/p/optimal-transport-problem/)就是要找到一个使以下总成本最小化的联合分布 $\pi$。
 
 $$
 \inf_{\pi \in \Pi(\mu, \nu)} \int_{X \times Y} c(x, y) d\pi(x, y)
@@ -95,4 +95,4 @@ $$
 
 通过最小化生成器 (Generator) 生成的数据分布与实际数据分布之间的 Wasserstein 距离，实现了更稳定的训练，并使生成的图像质量得到了飞跃性的提升。
 
-最优传输问题始于纯粹的数学探索，如今已成为支撑数据科学的强大工具。这种衡量分布与分布间“差异”的直观思想，在未来必定会继续在各个领域中得到应用。
+[最优传输问题](https://kenji.blog/p/optimal-transport-problem/)始于纯粹的数学探索，如今已成为支撑数据科学的强大工具。这种衡量分布与分布间“差异”的直观思想，在未来必定会继续在各个领域中得到应用。

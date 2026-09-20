@@ -36,7 +36,7 @@ graph LR
     style D stroke:#ff9900,stroke-width:2px
 ```
 
-## Definisi Nilai Eigen dan Vektor Eigen dan Latar Belakang Matematika
+## Definisi [Nilai Eigen dan Vektor Eigen](https://kenji.blog/p/eigenvalues-and-eigenvectors/) dan Latar Belakang Matematika
 
 Secara matematis, untuk matriks persegi $A$, jika terdapat vektor bukan nol $\mathbf{v}$ dan skalar $\lambda$ yang memenuhi kondisi berikut, $\mathbf{v}$ disebut **vektor eigen** dari matriks $A$, dan $\lambda$ disebut **nilai eigen**.
 
@@ -124,7 +124,7 @@ $$
 
 Sekarang, kita telah menemukan semua nilai eigen dan vektor eigen untuk matriks $A$.
 
-## Menghitung Nilai Eigen dan Vektor Eigen dengan Python
+## Menghitung [Nilai Eigen dan Vektor Eigen](https://kenji.blog/p/eigenvalues-and-eigenvectors/) dengan Python
 
 Dalam kerja praktik modern, Anda tidak pernah menghitung nilai eigen dari matriks besar dengan tangan. Dengan menggunakan NumPy, perpustakaan komputasi numerik dengan Python, Anda dapat menghitungnya hanya dalam beberapa baris kode.
 
@@ -178,9 +178,9 @@ $$
 D^{100} = \begin{pmatrix} 2^{100} & 0 \\ 0 & 5^{100} \end{pmatrix}
 $$
 
-Properti ini merupakan teknik yang sangat penting saat memprediksi keadaan jangka panjang dalam model probabilitas seperti Rantai Markov, saat menyelesaikan sistem persamaan diferensial, atau bahkan saat mencari suku umum barisan Fibonacci.
+Properti ini merupakan teknik yang sangat penting saat memprediksi keadaan jangka panjang dalam model probabilitas seperti [Rantai Markov](https://kenji.blog/p/markov-chain/), saat menyelesaikan sistem persamaan diferensial, atau bahkan saat mencari suku umum barisan Fibonacci.
 
-## Aplikasi Nilai Eigen dan Vektor Eigen di Dunia Nyata
+## Aplikasi [Nilai Eigen dan Vektor Eigen](https://kenji.blog/p/eigenvalues-and-eigenvectors/) di Dunia Nyata
 
 Kita telah melihat aspek matematika sejauh ini, tetapi konsep-konsep ini bertindak sebagai mesin yang memecahkan berbagai tantangan dunia nyata.
 

@@ -9,7 +9,7 @@ categories: ["programming", "git"]
 tags: ["Git", "Version Control", "Troubleshooting"]
 ---
 
-# A Collection of Common Mistakes and Solutions for Git Beginners (Including Conflict Resolution)
+# [A Collection of Common Mistakes and Solutions for Git Beginners (Including Conflict Resolution)](https://kenji.blog/p/git-beginners-mistakes-and-solutions/)
 
 ## 1. Introduction: Why Do We Make Mistakes in Git?
 

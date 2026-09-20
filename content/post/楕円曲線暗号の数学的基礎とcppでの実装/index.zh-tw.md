@@ -67,8 +67,8 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 **乘法反元素（Modular Multiplicative Inverse）** 的計算在密碼學實作中非常重要。要找到滿足 $b \times b^{-1} \equiv 1 \pmod p$ 的 $b^{-1}$，主要使用以下兩種演算法：
 
-1. **擴展歐幾里得演算法（Extended Euclidean Algorithm）**: 速度快，但根據實作方式，處理時間可能會依賴於輸入值，從而存在計時攻擊的風險。
-2. **費馬小定理（Fermat's Little Theorem）**: 當 $p$ 為質數且 $b \neq 0$ 時，$b^{p-1} \equiv 1 \pmod p$ 成立。兩邊同除以 $b$，可得 $b^{p-2} \equiv b^{-1} \pmod p$。也就是說，透過計算 $b$ 的 $p-2$ 次方即可求得反元素。因為指數運算較容易以常數時間（Constant-time）實作，密碼學實作中通常偏好此方法。
+1. **擴展[歐幾里得](https://kenji.blog/p/euclid/)演算法（Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm）**: 速度快，但根據實作方式，處理時間可能會依賴於輸入值，從而存在計時攻擊的風險。
+2. **[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)）**: 當 $p$ 為質數且 $b \neq 0$ 時，$b^{p-1} \equiv 1 \pmod p$ 成立。兩邊同除以 $b$，可得 $b^{p-2} \equiv b^{-1} \pmod p$。也就是說，透過計算 $b$ 的 $p-2$ 次方即可求得反元素。因為指數運算較容易以常數時間（Constant-time）實作，密碼學實作中通常偏好此方法。
 
 ---
 
@@ -278,7 +278,7 @@ Montgomery Ladder的優美之處在於，無論位元是 `0` 還是 `1`，都 **
 我們假設使用 `boost::multiprecision::cpp_int` 來處理大整數運算。
 
 ### 8.1. 模運算與反元素
-首先，定義有限體上運算的輔助函式。我們實作利用費馬小定理計算反元素的方法。
+首先，定義有限體上運算的輔助函式。我們實作利用[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)計算反元素的方法。
 
 ```cpp
 #include <iostream>

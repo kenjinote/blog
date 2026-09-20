@@ -8,27 +8,27 @@ categories: ["matemática", "biografia"]
 tags: ["Goro Shimura", "Teoria dos Números", "Conjectura de Taniyama-Shimura", "Último Teorema de Fermat"]
 ---
 
-## 1. Introdução: Um Gigante da Teoria dos Números, Goro Shimura
+## 1. Introdução: Um Gigante da Teoria dos Números, [Goro Shimura](https://kenji.blog/p/shimura-goro/)
 
-Na história da matemática moderna, há um matemático japonês que teve um impacto decisivo no campo da geometria aritmética. Seu nome é **Goro Shimura** (1930 - 2019). Suas conquistas são imensuráveis, tendo proposto a "Conjectura de Taniyama-Shimura" (agora conhecida como Teorema da Modularidade), que mais tarde se tornou a maior chave para a prova do "Último Teorema de Fermat", e construindo as "variedades de Shimura", um objeto extremamente importante na moderna teoria dos números.
+Na história da matemática moderna, há um matemático japonês que teve um impacto decisivo no campo da geometria aritmética. Seu nome é **[Goro Shimura](https://kenji.blog/p/shimura-goro/)** (1930 - 2019). Suas conquistas são imensuráveis, tendo proposto a "Conjectura de Taniyama-Shimura" (agora conhecida como Teorema da Modularidade), que mais tarde se tornou a maior chave para a prova do "Último Teorema de Fermat", e construindo as "variedades de Shimura", um objeto extremamente importante na moderna teoria dos números.
 
-Neste artigo, ao relembrar a vida de Goro Shimura, um matemático solitário, nos aprofundaremos nas conquistas monumentais que ele estabeleceu no mundo matemático, e a feroz filosofia e estética por trás delas. Não é exagero dizer que entender suas conquistas é sinônimo de entender como a matemática se desenvolveu no final do século XX.
+Neste artigo, ao relembrar a vida de [Goro Shimura](https://kenji.blog/p/shimura-goro/), um matemático solitário, nos aprofundaremos nas conquistas monumentais que ele estabeleceu no mundo matemático, e a feroz filosofia e estética por trás delas. Não é exagero dizer que entender suas conquistas é sinônimo de entender como a matemática se desenvolveu no final do século XX.
 
 ## 2. Primeiros Anos e Despertar para a Matemática
 
 ### 2.1 A Sombra da Guerra e a Sede de Conhecimento
 
-Goro Shimura nasceu em 23 de fevereiro de 1930, na cidade de Hamamatsu, província de Shizuoka. Sua infância foi exatamente a dura época em que as nuvens escuras da Segunda Guerra Mundial se formavam. Mesmo em meio à escassez de materiais do tempo de guerra e ao terror dos ataques aéreos, sua curiosidade intelectual nunca se perdeu. No caótico período do pós-guerra, quando muitos jovens lutavam apenas para sobreviver, Shimura cultivou um profundo interesse por matemática, física e literatura.
+[Goro Shimura](https://kenji.blog/p/shimura-goro/) nasceu em 23 de fevereiro de 1930, na cidade de Hamamatsu, província de Shizuoka. Sua infância foi exatamente a dura época em que as nuvens escuras da Segunda Guerra Mundial se formavam. Mesmo em meio à escassez de materiais do tempo de guerra e ao terror dos ataques aéreos, sua curiosidade intelectual nunca se perdeu. No caótico período do pós-guerra, quando muitos jovens lutavam apenas para sobreviver, Shimura cultivou um profundo interesse por matemática, física e literatura.
 
 Segundo o seu livro "The Map of My Life", lia livros de matemática avançada por conta própria e, por vezes, aventurava-se em difíceis textos matemáticos em francês. Esta atitude de "explorar a verdade pelos próprios meios sem ser ensinado por ninguém" formaria a base do estilo matemático de Shimura ao longo da sua vida.
 
 ### 2.2 Dias na Universidade de Tóquio
 
-Em 1949, Shimura ingressou no Departamento de Matemática, Faculdade de Ciências, da Universidade de Tóquio. Na época, a comunidade matemática japonesa, embora baseada na teoria dos corpos de classes de Teiji Takagi e outros, enfrentava o desafio de como se atualizar com as tendências globais durante o período de reconstrução do pós-guerra. Lá, Shimura conheceu **Yutaka Taniyama**, com quem mais tarde faria uma profunda amizade e compartilharia um destino comum.
+Em 1949, Shimura ingressou no Departamento de Matemática, Faculdade de Ciências, da Universidade de Tóquio. Na época, a comunidade matemática japonesa, embora baseada na teoria dos corpos de classes de Teiji Takagi e outros, enfrentava o desafio de como se atualizar com as tendências globais durante o período de reconstrução do pós-guerra. Lá, Shimura conheceu **[Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/)**, com quem mais tarde faria uma profunda amizade e compartilharia um destino comum.
 
 Taniyama era um gênio da matemática com ideias intuitivas e desinibidas, enquanto Shimura era um perfeccionista que valorizava o rigor e nunca permitia concessões nos detalhes da lógica. O encontro dessas duas figuras contrastantes acabaria por dar origem à semente de uma teoria massiva que abalaria o mundo matemático.
 
-## 3. Encontro com Yutaka Taniyama e a "Conjectura de Taniyama-Shimura"
+## 3. Encontro com [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) e a "Conjectura de Taniyama-Shimura"
 
 ### 3.1 Um Encontro Fatídico
 
@@ -36,9 +36,9 @@ Diz-se que o gatilho para que Shimura e Taniyama se tornassem próximos foi uma 
 
 ### 3.2 O Simpósio de Nikko de 1955
 
-Em 1955, um simpósio internacional sobre teoria algébrica dos números foi realizado em Nikko, na província de Tochigi. Esta conferência contou com a presença de matemáticos de classe mundial, como André Weil e Jean-Pierre Serre.
+Em 1955, um simpósio internacional sobre teoria algébrica dos números foi realizado em Nikko, na província de Tochigi. Esta conferência contou com a presença de matemáticos de classe mundial, como [André Weil](https://kenji.blog/p/weil/) e Jean-Pierre Serre.
 
-Para este simpósio, jovens matemáticos japoneses trouxeram os seus problemas não resolvidos e compilaram uma coleção de problemas. Incluídos entre estes estavam vários problemas submetidos por Yutaka Taniyama. Este é o protótipo do que mais tarde viria a ser chamado de "Conjectura de Taniyama-Shimura".
+Para este simpósio, jovens matemáticos japoneses trouxeram os seus problemas não resolvidos e compilaram uma coleção de problemas. Incluídos entre estes estavam vários problemas submetidos por [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/). Este é o protótipo do que mais tarde viria a ser chamado de "Conjectura de Taniyama-Shimura".
 
 ### 3.3 A Ponte Entre Curvas Elípticas e Formas Modulares
 
@@ -81,7 +81,7 @@ Inicialmente, essa conjectura era tão bizarra que mesmo grandes matemáticos co
 
 ## 4. A Tragédia de Taniyama e a Determinação de Shimura
 
-Em 1958, quando a construção da teoria começava a sério, ocorreu uma tragédia. Yutaka Taniyama tirou a própria vida na tenra idade de 23 anos. A sua nota de suicídio falava de "gratidão àqueles que me criaram até agora" e "fadiga para a qual nem eu posso definir claramente uma razão". Além disso, algumas semanas depois, seguiu-se um evento trágico onde a mulher noiva de Taniyama também tirou a própria vida para se juntar a ele.
+Em 1958, quando a construção da teoria começava a sério, ocorreu uma tragédia. [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) tirou a própria vida na tenra idade de 23 anos. A sua nota de suicídio falava de "gratidão àqueles que me criaram até agora" e "fadiga para a qual nem eu posso definir claramente uma razão". Além disso, algumas semanas depois, seguiu-se um evento trágico onde a mulher noiva de Taniyama também tirou a própria vida para se juntar a ele.
 
 Para Shimura, a dor de perder Taniyama, o seu melhor entendedor e colaborador, era imensurável. No entanto, Shimura superou a dor e abrigou um forte senso de missão para provar as ideias inacabadas que Taniyama deixou para trás com as suas próprias mãos e fazer com que o mundo as reconhecesse. Mais tarde, Shimura mudou-se para os Estados Unidos, continuando as suas pesquisas na Universidade de Princeton e noutros lugares, ao mesmo tempo em que formulava esta conjectura numa forma mais precisa e elevava o seu perfil internacional. Por causa disso, a conjectura passou a ser chamada de "Conjectura de Taniyama-Shimura".
 
@@ -99,15 +99,15 @@ Frey conjeturou que, por esta curva ter propriedades extraordinariamente anormai
 
 Em 1986, Ken Ribet provou completamente a conjectura de Frey (a conjectura epsilon). Com isso, o Último Teorema de Fermat, que estava sem solução há 350 anos, foi completamente reduzido ao problema de provar a Conjectura de Taniyama-Shimura.
 
-### 5.2 A Prova por Andrew Wiles
+### 5.2 A Prova por [Andrew Wiles](https://kenji.blog/p/wiles/)
 
-Aquele que se levantou ao ouvir esta notícia foi o matemático britânico **Andrew Wiles**. Após sete anos de pesquisa secreta, ele anunciou uma prova da Conjectura de Taniyama-Shimura para curvas elípticas semiestáveis em 1993. Ao longo do caminho, houve uma crise onde uma falha crítica foi encontrada na prova, mas com a ajuda do seu ex-aluno Richard Taylor, foi completamente corrigida em 1994.
+Aquele que se levantou ao ouvir esta notícia foi o matemático britânico **[Andrew Wiles](https://kenji.blog/p/wiles/)**. Após sete anos de pesquisa secreta, ele anunciou uma prova da Conjectura de Taniyama-Shimura para curvas elípticas semiestáveis em 1993. Ao longo do caminho, houve uma crise onde uma falha crítica foi encontrada na prova, mas com a ajuda do seu ex-aluno Richard Taylor, foi completamente corrigida em 1994.
 
 A prova de Wiles (de uma parte) da Conjectura de Taniyama-Shimura significou uma prova completa do Último Teorema de Fermat. Foi um dos maiores dramas da história da matemática.
 
 ### 5.3 A Reação de Shimura: "Eu avisei"
 
-Quando a prova de Wiles foi anunciada e o mundo estava engolido num turbilhão de entusiasmo, Goro Shimura, quando um repórter pediu a sua opinião, respondeu calmamente mas firmemente:
+Quando a prova de Wiles foi anunciada e o mundo estava engolido num turbilhão de entusiasmo, [Goro Shimura](https://kenji.blog/p/shimura-goro/), quando um repórter pediu a sua opinião, respondeu calmamente mas firmemente:
 
 > **"I told you so."** (Eu avisei-vos)
 
@@ -115,7 +115,7 @@ Estas palavras continham uma confiança absoluta de que a sua intuição (e de T
 
 ## 6. Variedades de Shimura: Um Novo Horizonte na Geometria Aritmética
 
-Embora frequentemente ofuscada pela Conjectura de Taniyama-Shimura, o que solidifica ainda mais o nome de Goro Shimura no mundo matemático profissional é a teoria das **"Variedades de Shimura"**.
+Embora frequentemente ofuscada pela Conjectura de Taniyama-Shimura, o que solidifica ainda mais o nome de [Goro Shimura](https://kenji.blog/p/shimura-goro/) no mundo matemático profissional é a teoria das **"Variedades de Shimura"**.
 
 ### 6.1 Teoria da Multiplicação Complexa de Dimensões Superiores
 
@@ -131,7 +131,7 @@ Hoje, as variedades de Shimura desempenham um papel central no "Programa de Lang
 
 ### 7.1 Uma Atitude Intransigente e Rigorosa
 
-Goro Shimura manteve uma atitude extremamente rigorosa e intransigente em relação à matemática. Nos seus artigos e livros, ele eliminou completamente expressões ambíguas e provas incompletas. Ele também às vezes criticava implacavelmente erros ou inadequações de outros matemáticos, e muitos temiam-no por causa do seu rigor.
+[Goro Shimura](https://kenji.blog/p/shimura-goro/) manteve uma atitude extremamente rigorosa e intransigente em relação à matemática. Nos seus artigos e livros, ele eliminou completamente expressões ambíguas e provas incompletas. Ele também às vezes criticava implacavelmente erros ou inadequações de outros matemáticos, e muitos temiam-no por causa do seu rigor.
 
 No entanto, esse rigor também era direcionado a si mesmo. Ele mantinha a forte crença de que "a matemática deve ser bonita", e detestava provas feias e teorias artificiais. A atitude de buscar a beleza natural e a verdade absoluta estava na raiz da sua matemática.
 
@@ -143,12 +143,12 @@ Ele também era bem versado na literatura japonesa e nos clássicos chineses, e 
 
 ### 7.3 O que "The Map of My Life" nos diz
 
-No seu ensaio autobiográfico "The Map of My Life" publicado nos seus últimos anos, o seu intelecto aguçado, o seu humor ocasional e a sua profunda afeição pelas pessoas que amava (especialmente Yutaka Taniyama) são contados com franqueza. Ler este livro permite conhecer o complexo e rico mundo interior do humano Goro Shimura, que vai além da mera imagem de um "matemático rigoroso".
+No seu ensaio autobiográfico "The Map of My Life" publicado nos seus últimos anos, o seu intelecto aguçado, o seu humor ocasional e a sua profunda afeição pelas pessoas que amava (especialmente [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/)) são contados com franqueza. Ler este livro permite conhecer o complexo e rico mundo interior do humano [Goro Shimura](https://kenji.blog/p/shimura-goro/), que vai além da mera imagem de um "matemático rigoroso".
 
-## 8. Conclusão: A Luz Deixada por Goro Shimura
+## 8. Conclusão: A Luz Deixada por [Goro Shimura](https://kenji.blog/p/shimura-goro/)
 
-Em 3 de maio de 2019, Goro Shimura encerrou os seus 89 anos de vida em Nova Jersey, EUA. Mesmo depois de deixar este mundo, o seu nome está gravado eternamente na história da matemática como a "Conjectura de Taniyama-Shimura" e as "Variedades de Shimura".
+Em 3 de maio de 2019, [Goro Shimura](https://kenji.blog/p/shimura-goro/) encerrou os seus 89 anos de vida em Nova Jersey, EUA. Mesmo depois de deixar este mundo, o seu nome está gravado eternamente na história da matemática como a "Conjectura de Taniyama-Shimura" e as "Variedades de Shimura".
 
-Partindo das ruínas do pós-guerra, Goro Shimura escalou o cume da matemática global armado apenas com o seu próprio intelecto e vontade resiliente. A sua vida mostra o quão sublime é o espírito humano em busca da verdade, e como isso pode produzir grandes coisas.
+Partindo das ruínas do pós-guerra, [Goro Shimura](https://kenji.blog/p/shimura-goro/) escalou o cume da matemática global armado apenas com o seu próprio intelecto e vontade resiliente. A sua vida mostra o quão sublime é o espírito humano em busca da verdade, e como isso pode produzir grandes coisas.
 
-Os matemáticos modernos que lidam com problemas não resolvidos na teoria dos números ainda caminham sobre as vastas terras pioneiras de Goro Shimura. A luz matemática que ele acendeu certamente continuará a brilhar forte e por muito tempo.
+Os matemáticos modernos que lidam com problemas não resolvidos na teoria dos números ainda caminham sobre as vastas terras pioneiras de [Goro Shimura](https://kenji.blog/p/shimura-goro/). A luz matemática que ele acendeu certamente continuará a brilhar forte e por muito tempo.

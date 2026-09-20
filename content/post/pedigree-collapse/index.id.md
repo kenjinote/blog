@@ -14,7 +14,7 @@ slug: "pedigree-collapse"
 
 # 1. Pendahuluan: Misteri Leluhur yang Berkembang Biak Tanpa Batas
 
-Ketika kita memikirkan akar kita sendiri, yaitu "pohon keluarga", kita pasti akan menghadapi kontradiksi matematis aneh yang tak terelakkan. Itulah **Paradoks Leluhur** (Ancestor Paradox).
+Ketika kita memikirkan akar kita sendiri, yaitu "pohon keluarga", kita pasti akan menghadapi kontradiksi matematis aneh yang tak terelakkan. Itulah **[Paradoks Leluhur](https://kenji.blog/p/pedigree-collapse/)** ([Ancestor Paradox](https://kenji.blog/p/pedigree-collapse/)).
 
 Silsilah manusia pada dasarnya dapat dimodelkan sebagai pohon biner (binary tree) sederhana. Anda memiliki 2 orang tua (ayah dan ibu), dan masing-masing memiliki 2 orang tua (kakek-nenek). Selanjutnya, orang tua mereka masing-masing memiliki 2 orang tua (buyut). Dengan kata lain, jika kita menganggap generasi sebagai $g$ (diri sendiri adalah generasi ke-0), jumlah leluhur $g$ generasi sebelumnya seharusnya adalah $2^g$ orang.
 
@@ -36,7 +36,7 @@ Artinya, "jumlah leluhur Anda secara perhitungan" jauh melebihi "total populasi 
 
 Jika kita telusuri lebih jauh ke 40 generasi sebelumnya (sekitar 1000 tahun yang lalu), jumlah leluhur melampaui **1 triliun orang** (tepatnya $1,099,511,627,776$ orang). Angka ini bahkan jauh melebihi total populasi semua manusia yang pernah hidup di bumi sejak manusia pertama kali muncul (diperkirakan sekitar 100 miliar hingga 110 miliar orang).
 
-Inilah identitas asli dari **Paradoks Leluhur**. Mengapa kontradiksi seperti ini bisa terjadi? Apakah ada kegagalan secara matematis? Jawabannya terletak pada konsep **Keruntuhan Silsilah** (Pedigree Collapse). Dalam artikel ini, kita akan menggali lebih dalam tentang **Keruntuhan Silsilah** ini, memadukan model matematis, contoh nyata dalam sejarah, dan temuan terbaru dalam genetika populasi.
+Inilah identitas asli dari **[Paradoks Leluhur](https://kenji.blog/p/pedigree-collapse/)**. Mengapa kontradiksi seperti ini bisa terjadi? Apakah ada kegagalan secara matematis? Jawabannya terletak pada konsep **Keruntuhan Silsilah** (Pedigree Collapse). Dalam artikel ini, kita akan menggali lebih dalam tentang **Keruntuhan Silsilah** ini, memadukan model matematis, contoh nyata dalam sejarah, dan temuan terbaru dalam genetika populasi.
 
 # 2. Apa itu Keruntuhan Silsilah (Pedigree Collapse)?
 
@@ -150,7 +150,7 @@ Dengan kata lain, siapa pun yang hidup ribuan tahun yang lalu di Mesir kuno, Mes
 
 # 6. Kesimpulan: Kita Semua adalah Sepupu Derajat ke-50
 
-**Paradoks Leluhur** pada pandangan pertama tampak hanya seperti teka-teki matematika atau trik perhitungan. Namun, dengan memahami mekanisme **Keruntuhan Silsilah** di baliknya, kita dapat melihat sifat sebenarnya dari pernikahan dan hubungan interaksi dalam sejarah umat manusia.
+**[Paradoks Leluhur](https://kenji.blog/p/pedigree-collapse/)** pada pandangan pertama tampak hanya seperti teka-teki matematika atau trik perhitungan. Namun, dengan memahami mekanisme **Keruntuhan Silsilah** di baliknya, kita dapat melihat sifat sebenarnya dari pernikahan dan hubungan interaksi dalam sejarah umat manusia.
 
 Kita cenderung berpikir bahwa diri kita terpisah-pisah sebagai ras atau kelompok etnis yang berbeda. Karena batas negara, bahasa, dan perbedaan budaya, kita percaya bahwa kita adalah "orang lain" yang sama sekali tidak ada hubungannya satu sama lain. Namun, hanya dengan menelusuri kembali cabang-cabang pohon keluarga sedikit saja, cabang-cabang itu akan dengan cepat saling terkait dan akhirnya menyatu menjadi satu jaringan besar.
 

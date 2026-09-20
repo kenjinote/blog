@@ -22,9 +22,9 @@ Damals war Budapest ein globales Zentrum für Kultur und Wissenschaft und bracht
 
 ## 3. Beiträge zu den Grundlagen der Mathematik: Axiomatische Mengenlehre
 
-Eine der wichtigsten frühen Errungenschaften von Neumanns war seine Forschung zur Axiomatisierung der Mengenlehre. Die von Georg Cantor begründete Mengenlehre sollte die Grundlage der Mathematik bilden, stieß jedoch auf logische Widersprüche (Paradoxien) wie die Russellsche Antinomie. Um dieses Problem zu lösen, bauten Ernst Zermelo, Adolf Fraenkel und andere die axiomatische Mengenlehre auf, aber von Neumann wählte einen anderen Ansatz.
+Eine der wichtigsten frühen Errungenschaften von Neumanns war seine Forschung zur Axiomatisierung der Mengenlehre. Die von [Georg Cantor](https://kenji.blog/p/cantor/) begründete Mengenlehre sollte die Grundlage der Mathematik bilden, stieß jedoch auf logische Widersprüche (Paradoxien) wie die Russellsche Antinomie. Um dieses Problem zu lösen, bauten Ernst Zermelo, Adolf Fraenkel und andere die axiomatische Mengenlehre auf, aber von Neumann wählte einen anderen Ansatz.
 
-Er führte das Konzept der "Klassen" ein und vermied die Paradoxien auf brillante Weise, indem er streng zwischen normalen Mengen und Klassen unterschied, die zu groß sind, um Mengen zu sein (echte Klassen). Dieses System wurde später von Paul Bernays und Kurt Gödel verbessert und ist heute als **Von-Neumann-Bernays-Gödel-Mengenlehre** (NBG-Mengenlehre) bekannt.
+Er führte das Konzept der "Klassen" ein und vermied die Paradoxien auf brillante Weise, indem er streng zwischen normalen Mengen und Klassen unterschied, die zu groß sind, um Mengen zu sein (echte Klassen). Dieses System wurde später von Paul Bernays und [Kurt Gödel](https://kenji.blog/p/godel/) verbessert und ist heute als **Von-Neumann-Bernays-Gödel-Mengenlehre** (NBG-Mengenlehre) bekannt.
 
 $$
 \forall X \ ( X \in V \iff \exists Y \ (X \in Y) )

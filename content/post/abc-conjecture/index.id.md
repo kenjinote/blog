@@ -8,19 +8,19 @@ categories: ["mathematics", "science"]
 tags: ["Konjektur ABC", "Teori Bilangan", "Teori IUT", "Shinichi Mochizuki"]
 ---
 
-# Pendahuluan: Apa itu Konjektur ABC?
+# Pendahuluan: Apa itu [Konjektur ABC](https://kenji.blog/p/abc-conjecture/)?
 
-Di bidang teori bilangan, ada banyak masalah yang belum terpecahkan, tetapi di antaranya yang paling dianggap penting adalah **Konjektur ABC** (ABC Conjecture). Konjektur ini dirumuskan secara independen oleh Joseph Oesterlé dan David Masser pada tahun 1985.
+Di bidang teori bilangan, ada banyak masalah yang belum terpecahkan, tetapi di antaranya yang paling dianggap penting adalah **[Konjektur ABC](https://kenji.blog/p/abc-conjecture/)** (ABC Conjecture). Konjektur ini dirumuskan secara independen oleh Joseph Oesterlé dan David Masser pada tahun 1985.
 
-Konjektur ABC mengisyaratkan hubungan yang mendalam antara penjumlahan dan perkalian (faktorisasi prima) dari bilangan bulat. Secara sekilas, konjektur ini menyatakan sifat menakjubkan yang tersembunyi di balik persamaan sederhana $a + b = c$.
+[Konjektur ABC](https://kenji.blog/p/abc-conjecture/) mengisyaratkan hubungan yang mendalam antara penjumlahan dan perkalian (faktorisasi prima) dari bilangan bulat. Secara sekilas, konjektur ini menyatakan sifat menakjubkan yang tersembunyi di balik persamaan sederhana $a + b = c$.
 
-## Definisi Ketat dari Konjektur ABC
+## Definisi Ketat dari [Konjektur ABC](https://kenji.blog/p/abc-conjecture/)
 
 Pertimbangkan pasangan bilangan bulat positif koprima $(a, b, c)$ yang memenuhi $a + b = c$. Di sini, **radikal** (radical) dari bilangan bulat $n$ didefinisikan sebagai $\text{radikal}(n)$. Ini adalah produk dari faktor prima yang berbeda dari $n$.
 
 $$ \text{radikal}(n) = \prod_{p | n} p $$
 
-Konjektur ABC mengklaim bahwa, untuk setiap $\epsilon > 0$, hanya ada sejumlah terhingga dari pasangan bilangan bulat positif koprima $(a, b, c)$ yang memenuhi hal berikut:
+[Konjektur ABC](https://kenji.blog/p/abc-conjecture/) mengklaim bahwa, untuk setiap $\epsilon > 0$, hanya ada sejumlah terhingga dari pasangan bilangan bulat positif koprima $(a, b, c)$ yang memenuhi hal berikut:
 
 $$ c > \text{radikal}(abc)^{1 + \epsilon} $$
 
@@ -28,7 +28,7 @@ Ketidaksamaan ini berarti bahwa jika $a$ dan $b$ memiliki banyak faktor prima ya
 
 # Kemunculan Teori Teichmüller Antar-Semesta (Teori IUT)
 
-Pembuktian Konjektur ABC telah membingungkan para matematikawan selama bertahun-tahun, tetapi pada tahun 2012, Profesor Shinichi Mochizuki dari Universitas Kyoto menerbitkan bukti dari konjektur ini menggunakan kerangka matematika yang sama sekali baru yang disebut **Teori Teichmüller Antar-Semesta** (Inter-Universal Teichmüller Theory, disingkat Teori IUT).
+Pembuktian [Konjektur ABC](https://kenji.blog/p/abc-conjecture/) telah membingungkan para matematikawan selama bertahun-tahun, tetapi pada tahun 2012, Profesor Shinichi Mochizuki dari Universitas Kyoto menerbitkan bukti dari konjektur ini menggunakan kerangka matematika yang sama sekali baru yang disebut **Teori Teichmüller Antar-Semesta** (Inter-Universal Teichmüller Theory, disingkat Teori IUT).
 
 Teori IUT secara mendasar merekonstruksi kerangka matematika konvensional (teori himpunan dan geometri aljabar standar), dan karena kompleksitas dan kebaruannya, teori ini memberikan kejutan besar bagi dunia matematika.
 
@@ -53,21 +53,21 @@ $$ \Theta \text{-link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F
 
 Tautan theta ($\Theta$-link) berperan mentransmisikan informasi monodromi spesifik (informasi mengenai nilai fungsi theta) di antara Teater Hodge yang berbeda. Tidak seperti struktur teoretis cincin konvensional (isomorfisme yang mempertahankan baik penjumlahan maupun perkalian), tautan ini secara parsial mempertahankan hanya struktur perkalian sambil secara sengaja "menghancurkan" lalu merekonstruksi struktur penjumlahan.
 
-# Konsekuensi Mengejutkan dari Konjektur ABC
+# Konsekuensi Mengejutkan dari [Konjektur ABC](https://kenji.blog/p/abc-conjecture/)
 
-Jika Konjektur ABC terbukti sepenuhnya (oleh Teori IUT atau metode lainnya), banyak teorema penting dalam teori bilangan akan segera diturunkan. Mari kita bandingkan ini dengan **Konjektur Mordell** (sekarang dikenal sebagai Teorema Faltings) dan **Teorema Terakhir Fermat**.
+Jika [Konjektur ABC](https://kenji.blog/p/abc-conjecture/) terbukti sepenuhnya (oleh Teori IUT atau metode lainnya), banyak teorema penting dalam teori bilangan akan segera diturunkan. Mari kita bandingkan ini dengan **Konjektur Mordell** (sekarang dikenal sebagai Teorema Faltings) dan **[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)**.
 
-## Aplikasi pada Teorema Terakhir Fermat
+## Aplikasi pada [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)
 
-Teorema Terakhir Fermat menyatakan bahwa tidak ada pasangan bilangan bulat positif $(x, y, z)$ yang memenuhi $x^n + y^n = z^n$ untuk $n \ge 3$. Itu dibuktikan oleh Andrew Wiles pada tahun 1995, tetapi menggunakan matematika yang sangat maju dan kompleks.
+[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/) menyatakan bahwa tidak ada pasangan bilangan bulat positif $(x, y, z)$ yang memenuhi $x^n + y^n = z^n$ untuk $n \ge 3$. Itu dibuktikan oleh [Andrew Wiles](https://kenji.blog/p/wiles/) pada tahun 1995, tetapi menggunakan matematika yang sangat maju dan kompleks.
 
-Jika kita mengasumsikan Konjektur ABC benar, secara mengejutkan, Teorema Terakhir Fermat (setidaknya untuk $n$ yang cukup besar) dapat dibuktikan hanya dalam beberapa baris.
+Jika kita mengasumsikan [Konjektur ABC](https://kenji.blog/p/abc-conjecture/) benar, secara mengejutkan, [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/) (setidaknya untuk $n$ yang cukup besar) dapat dibuktikan hanya dalam beberapa baris.
 
-Misalkan $x^n + y^n = z^n$ dan $(x, y, z)$ adalah koprima. Menerapkan Konjektur ABC ke $a=x^n$, $b=y^n$, $c=z^n$,
+Misalkan $x^n + y^n = z^n$ dan $(x, y, z)$ adalah koprima. Menerapkan [Konjektur ABC](https://kenji.blog/p/abc-conjecture/) ke $a=x^n$, $b=y^n$, $c=z^n$,
 
 $$ z^n < \text{radikal}(x^n y^n z^n)^{1+\epsilon} = \text{radikal}(xyz)^{1+\epsilon} \le (xyz)^{1+\epsilon} < (z^3)^{1+\epsilon} $$
 
-Jika $\epsilon$ diambil cukup kecil, dan ketika $n$ lebih besar dari $3(1+\epsilon)$ (yaitu, sekitar $n \ge 4$), ketidaksamaan ini menyebabkan kontradiksi. Oleh karena itu, kita dapat segera melihat bahwa tidak ada solusi ketika $n$ besar. Dengan cara ini, Konjektur ABC bertindak sebagai **kunci master** (master key) yang kuat dalam teori bilangan.
+Jika $\epsilon$ diambil cukup kecil, dan ketika $n$ lebih besar dari $3(1+\epsilon)$ (yaitu, sekitar $n \ge 4$), ketidaksamaan ini menyebabkan kontradiksi. Oleh karena itu, kita dapat segera melihat bahwa tidak ada solusi ketika $n$ besar. Dengan cara ini, [Konjektur ABC](https://kenji.blog/p/abc-conjecture/) bertindak sebagai **kunci master** (master key) yang kuat dalam teori bilangan.
 
 # Penerimaan dan Perdebatan Teori IUT di Dunia Matematika
 
@@ -92,6 +92,6 @@ Pada tahun 2021, makalah Profesor Mochizuki secara resmi diterbitkan di jurnal k
 
 # Kesimpulan dan Prospek Masa Depan
 
-Konjektur ABC dan Teori Teichmüller Antar-Semesta adalah salah satu drama terbesar dalam matematika abad ke-21. Kedalaman tak terduga dari konsep paling sederhana yang dipelajari di sekolah dasar, penjumlahan dan perkalian, kini menguji batas-batas kecerdasan manusia.
+[Konjektur ABC](https://kenji.blog/p/abc-conjecture/) dan Teori Teichmüller Antar-Semesta adalah salah satu drama terbesar dalam matematika abad ke-21. Kedalaman tak terduga dari konsep paling sederhana yang dipelajari di sekolah dasar, penjumlahan dan perkalian, kini menguji batas-batas kecerdasan manusia.
 
 Apakah Teori IUT akan benar-benar membuka cakrawala baru dalam matematika, atau akankah itu memerlukan revisi lebih lanjut? Akan memakan banyak waktu dan penelitian dari generasi baru matematikawan sebelum kesimpulan akhir dicapai. Namun, visi yang diajukan oleh teori ini, yaitu **menghubungkan semesta matematika yang berbeda**, tidak diragukan lagi akan terus memberikan inspirasi besar bagi perkembangan matematika di masa depan.

@@ -10,12 +10,12 @@ tags: ["Hipótese do Contínuo", "Cantor", "Infinito", "Matemática"]
 
 ## 1. Introdução: Medindo o tamanho do infinito
 
-No mundo da matemática, o conceito de "infinito" tem sido objeto de debate filosófico desde os tempos antigos. No entanto, até o final do século XIX, quando Georg Cantor apareceu, não havia um método matemático rigoroso para comparar o tamanho do infinito. Cantor fundou a teoria dos conjuntos e provou que existem **tamanhos diferentes** (cardinalidade) mesmo no infinito.
+No mundo da matemática, o conceito de "infinito" tem sido objeto de debate filosófico desde os tempos antigos. No entanto, até o final do século XIX, quando [Georg Cantor](https://kenji.blog/p/cantor/) apareceu, não havia um método matemático rigoroso para comparar o tamanho do infinito. Cantor fundou a teoria dos conjuntos e provou que existem **tamanhos diferentes** (cardinalidade) mesmo no infinito.
 
 Considerando o conjunto dos números naturais $\mathbb{N}$ e o conjunto dos números reais $\mathbb{R}$, o argumento da diagonalização de Cantor mostrou que o conjunto dos números reais é "verdadeiramente maior" que o conjunto dos números naturais. A cardinalidade dos números naturais é denotada como $\aleph_0$ (Aleph-zero) e a cardinalidade dos números reais como $\mathfrak{c}$ (cardinalidade do contínuo) ou $2^{\aleph_0}$. De acordo com o teorema de Cantor, $\aleph_0 < 2^{\aleph_0}$.
 
 Neste ponto, Cantor teve uma pergunta natural: "Existe um conjunto cuja cardinalidade está localizada no **meio** entre a cardinalidade dos números naturais e a cardinalidade dos números reais?"
-Este é o início da **Hipótese do Contínuo** (Continuum Hypothesis, CH), que mais tarde abalaria os fundamentos da matemática.
+Este é o início da **Hipótese do Contínuo** ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH), que mais tarde abalaria os fundamentos da matemática.
 
 ## 2. Definição rigorosa da Hipótese do Contínuo (CH)
 
@@ -35,11 +35,11 @@ Portanto, para o conjunto dos números naturais $\mathbb{N}$,
 $$ |\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| $$
 é válido. A CH é a afirmação de que não existem outras cardinalidades entre essas duas.
 
-## 3. O sofrimento de Cantor e a proposta de David Hilbert
+## 3. O sofrimento de Cantor e a proposta de [David Hilbert](https://kenji.blog/p/hilbert/)
 
 Cantor passou toda a sua vida tentando provar essa hipótese, mas nunca obteve sucesso. Às vezes, ele acreditava ter "provado" e, outras vezes, acreditava ter "refutado"; seu estado mental foi muito desgastado por esse problema difícil.
 
-Em 1900, no Segundo Congresso Internacional de Matemáticos, realizado em Paris, David Hilbert propôs os "23 Problemas de Hilbert" que a matemática do século XX deveria resolver. Aquele memorável **primeiro problema** era exatamente "A prova da Hipótese do Contínuo".
+Em 1900, no Segundo Congresso Internacional de Matemáticos, realizado em Paris, [David Hilbert](https://kenji.blog/p/hilbert/) propôs os "23 Problemas de Hilbert" que a matemática do século XX deveria resolver. Aquele memorável **primeiro problema** era exatamente "A prova da Hipótese do Contínuo".
 
 ## 4. Axiomatização da Teoria dos Conjuntos: O Sistema de Axiomas ZFC
 
@@ -58,9 +58,9 @@ O sistema de axiomas ZFC consiste nos 9 axiomas (ou esquemas de axiomas) a segui
 
 Usando esses axiomas, os matemáticos tentaram determinar a veracidade da CH.
 
-## 5. Kurt Gödel e o "Universo Construtível"
+## 5. [Kurt Gödel](https://kenji.blog/p/godel/) e o "Universo Construtível"
 
-Em 1940, Kurt Gödel publicou um resultado surpreendente. Ele provou que, se assumirmos que o sistema de axiomas ZFC não tem contradições, **"Adicionar a CH ao sistema de axiomas ZFC não produzirá uma contradição"**.
+Em 1940, [Kurt Gödel](https://kenji.blog/p/godel/) publicou um resultado surpreendente. Ele provou que, se assumirmos que o sistema de axiomas ZFC não tem contradições, **"Adicionar a CH ao sistema de axiomas ZFC não produzirá uma contradição"**.
 
 Gödel construiu um modelo de conjuntos chamado **Universo Construtível** (Constructible Universe, $L$). Dentro de $L$, todos os conjuntos são construídos hierarquicamente por fórmulas lógicas. Gödel mostrou que o sistema de axiomas ZFC é totalmente satisfeito dentro deste $L$ e, além disso, a **CH também é verdadeira**.
 
@@ -135,7 +135,7 @@ A independência da CH levanta problemas profundos para a filosofia da matemáti
 
 ## 10. Conclusão
 
-A busca de Georg Cantor pela hierarquia do infinito teve um final dramático de ser "impossível de provar ou refutar" por dois gênios, Gödel e Cohen. No entanto, isso não significa uma derrota da matemática. Pelo contrário, criou a poderosa ferramenta do forcing e desenvolveu o campo da teoria dos conjuntos para torná-lo mais rico e complexo do que nunca.
+A busca de [Georg Cantor](https://kenji.blog/p/cantor/) pela hierarquia do infinito teve um final dramático de ser "impossível de provar ou refutar" por dois gênios, Gödel e Cohen. No entanto, isso não significa uma derrota da matemática. Pelo contrário, criou a poderosa ferramenta do forcing e desenvolveu o campo da teoria dos conjuntos para torná-lo mais rico e complexo do que nunca.
 
 A hipótese do contínuo continua a nos fazer perguntas fundamentais: "O que é o infinito?" e "O que é a verdade matemática?".
 

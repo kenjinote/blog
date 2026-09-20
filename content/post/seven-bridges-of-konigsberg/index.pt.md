@@ -10,11 +10,11 @@ tags: ["Teoria dos Grafos", "Topologia", "Euler", "Matemática"]
 
 ## Introdução
 
-Na história da matemática, questões triviais e brincadeiras cotidianas às vezes servem como catalisadores para abrir campos matemáticos inteiramente novos. Um dos exemplos mais famosos e belos disso é o problema das **"Sete Pontes de Königsberg"** (Seven Bridges of Königsberg).
+Na história da matemática, questões triviais e brincadeiras cotidianas às vezes servem como catalisadores para abrir campos matemáticos inteiramente novos. Um dos exemplos mais famosos e belos disso é o problema das **"Sete Pontes de Königsberg"** ([Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)).
 
 No século XVIII, a cidade de Königsberg (atual Kaliningrado, na Federação Russa), no Reino da Prússia, era atravessada pelo grande rio Pregel. Havia sete pontes construídas para conectar suas ilhas às margens. Os cidadãos da época criaram um jogo durante seus passeios ao entardecer: "Seria possível passear pela cidade atravessando todas as sete pontes exatamente uma vez e retornar ao ponto de partida?"
 
-Quando este problema, que parecia ser apenas um mero quebra-cabeça, chegou às mãos do genial matemático **Leonhard Euler** , ocorreu uma revolução no mundo da matemática. Euler não apenas provou que isso era impossível, mas nesse processo reconceitualizou as propriedades do espaço de uma perspectiva totalmente nova, lançando as bases de dois campos extremamente importantes na matemática moderna: a **Teoria dos Grafos** (Graph Theory) e a **Topologia** (Topology).
+Quando este problema, que parecia ser apenas um mero quebra-cabeça, chegou às mãos do genial matemático **[Leonhard Euler](https://kenji.blog/p/euler/)** , ocorreu uma revolução no mundo da matemática. Euler não apenas provou que isso era impossível, mas nesse processo reconceitualizou as propriedades do espaço de uma perspectiva totalmente nova, lançando as bases de dois campos extremamente importantes na matemática moderna: a **Teoria dos Grafos** (Graph Theory) e a **Topologia** (Topology).
 
 Neste artigo, aprofundaremos no contexto histórico do problema das Sete Pontes de Königsberg, na solução brilhante de Euler e em como isso se conecta com a ciência e tecnologia modernas, incluindo os detalhes matemáticos. Mais do que apenas uma introdução histórica, aprecie a beleza das estruturas matemáticas que estão por trás disso.
 
@@ -36,7 +36,7 @@ Intelectuais e cidadãos de Königsberg na época tentavam encontrar uma rota de
 
 ## De um Quebra-Cabeça de Pontes a um Problema Matemático: O Sonho de Leibniz e a Intuição de Euler
 
-Esse boato dos cidadãos acabou chegando aos ouvidos do grande matemático suíço **Leonhard Euler** , que na época estava na Academia de Ciências de São Petersburgo, na Rússia. O ano era 1735.
+Esse boato dos cidadãos acabou chegando aos ouvidos do grande matemático suíço **[Leonhard Euler](https://kenji.blog/p/euler/)** , que na época estava na Academia de Ciências de São Petersburgo, na Rússia. O ano era 1735.
 
 Inicialmente, parece que Euler sentiu que "isso não é matemática, mas sim um mero jogo de lógica". A corrente principal da matemática da época era a geometria euclidiana (que lidava com comprimento, ângulo, área, volume, etc.), a álgebra, e o cálculo diferencial e integral que havia acabado de ser fundado por Newton e Leibniz. O problema das pontes de Königsberg não dependia em nada de propriedades geométricas tradicionais, como quantos metros as pontes tinham de comprimento, qual era a área das ilhas ou em que ângulo as pontes cruzavam o rio. O importante era apenas a relação de **conexão** pura: "qual massa de terra está conectada a qual massa de terra e por quantas pontes".
 
@@ -157,7 +157,7 @@ A teoria dos grafos também está ativa em várias escalas das ciências naturai
 
 ## Conclusão
 
-Em 1736, um único artigo publicado por Leonhard Euler, "A Solução de um Problema Relativo à Geometria de Posição", deu uma resposta completa ao quebra-cabeça de passeio de domingo dos cidadãos de Königsberg. No entanto, o que isso realmente significava não era o fim de um problema, mas o nascimento de um vasto universo matemático com inúmeras aplicações.
+Em 1736, um único artigo publicado por [Leonhard Euler](https://kenji.blog/p/euler/), "A Solução de um Problema Relativo à Geometria de Posição", deu uma resposta completa ao quebra-cabeça de passeio de domingo dos cidadãos de Königsberg. No entanto, o que isso realmente significava não era o fim de um problema, mas o nascimento de um vasto universo matemático com inúmeras aplicações.
 
 É a **força da abstração** de não ser limitado pela forma ou tamanho superficial das coisas, mas de discernir agudamente apenas a estrutura mais essencial de "o que está conectado a quê e como". A história das Sete Pontes de Königsberg nos ensina através das eras como o pensamento matemático abstrato pode desvendar o mundo real e se tornar uma arma poderosa para criar as tecnologias do futuro.
 

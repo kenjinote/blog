@@ -32,9 +32,9 @@ Dado que $x$, $y$ y $k$ son todos enteros, $(x - ky)$ y $(x + ky)$ también debe
 
 ## 2. Antecedentes Históricos: Pell, Fermat y los Matemáticos Indios Antiguos
 
-Aunque esta ecuación lleva el nombre de "Pell", explorar los hechos históricos revela un trasfondo un tanto extraño. De hecho, la primera persona en la Europa moderna que estudió una solución general para esta ecuación y afirmó firmemente que siempre existe una solución fue el gran matemático francés **Pierre de Fermat**.
+Aunque esta ecuación lleva el nombre de "Pell", explorar los hechos históricos revela un trasfondo un tanto extraño. De hecho, la primera persona en la Europa moderna que estudió una solución general para esta ecuación y afirmó firmemente que siempre existe una solución fue el gran matemático francés **[Pierre de Fermat](https://kenji.blog/p/fermat/)**.
 
-Más tarde, **Leonhard Euler** vinculó por error el nombre del matemático inglés **John Pell** a esta ecuación, y desde entonces ha sido ampliamente conocida como la "ecuación de Pell". El propio Pell no desempeñó un papel central en el método de resolución de esta ecuación.
+Más tarde, **[Leonhard Euler](https://kenji.blog/p/euler/)** vinculó por error el nombre del matemático inglés **John Pell** a esta ecuación, y desde entonces ha sido ampliamente conocida como la "ecuación de Pell". El propio Pell no desempeñó un papel central en el método de resolución de esta ecuación.
 
 Yendo más atrás en el tiempo, los matemáticos indios **Brahmagupta** y **Bhāskara II** calcularon soluciones a ecuaciones de este tipo utilizando un algoritmo sofisticado llamado el método Chakravala, cientos de años antes que Fermat. La historia de la exploración por matemáticos desde la antigüedad a través de la Edad Media hasta la era moderna está inscrita en esta ecuación.
 
@@ -44,7 +44,7 @@ Para la ecuación de Pell $x^2 - ny^2 = 1$, independientemente del valor de $n$,
 
 Sin embargo, lo que realmente interesa a los matemáticos es una **solución no trivial** (non-trivial solution) donde $y \neq 0$. Sorprendentemente, si $n$ es un número entero positivo que no es un cuadrado perfecto, se ha demostrado matemáticamente que la ecuación de Pell tiene **infinitas soluciones no triviales**. Además, entre estas soluciones infinitas, la solución más pequeña donde tanto $x$ como $y$ son enteros positivos se llama la **solución fundamental** (fundamental solution), y una vez que se encuentra, todas las demás soluciones pueden generarse fácilmente mediante operaciones algebraicas.
 
-## 4. La Profunda Conexión Entre Fracciones Continuas y la Ecuación de Pell
+## 4. La Profunda Conexión Entre Fracciones Continuas y la [Ecuación de Pell](https://kenji.blog/p/pell-equation/)
 
 La herramienta más poderosa y estándar para encontrar de manera eficiente la solución fundamental es la **fracción continua** (Continued fraction). Dado que el número irracional $\sqrt{n}$ no puede representarse mediante una fracción finita, puede expresarse maravillosamente como una fracción continua regular periódica que continúa infinitamente.
 

@@ -56,7 +56,7 @@ flowchart LR
 
 Es por esto que puedes bisecar dos objetos simultáneamente en el caso 2D.
 
-## 3. Extensión a 3D: El Teorema del Sándwich de Jamón
+## 3. Extensión a 3D: [El Teorema del Sándwich de Jamón](https://kenji.blog/p/ham-sandwich-theorem/)
 
 Ahora, finalmente pasemos a la historia tridimensional. Cuando la dimensión aumenta en uno, el número de objetos que puedes dividir también aumenta en uno.
 
@@ -98,7 +98,7 @@ Para una función $f(x) = \left( \text{Temperatura}, \text{Presión} \right)$ qu
 
 ### Esbozo de la Prueba del Teorema del Sándwich de Jamón
 
-El Teorema del Sándwich de Jamón (versión 3D) se puede probar utilizando el caso $n=2$ del Teorema de Borsuk-Ulam. A continuación se presenta un esbozo de su hermosa prueba.
+[El Teorema del Sándwich de Jamón](https://kenji.blog/p/ham-sandwich-theorem/) (versión 3D) se puede probar utilizando el caso $n=2$ del Teorema de Borsuk-Ulam. A continuación se presenta un esbozo de su hermosa prueba.
 
 1. Considera un punto $p$ en la esfera unitaria $S^2$ centrada en el origen (esto representa el vector normal del plano, es decir, la "dirección" del plano).
 2. Cuando la dirección $p$ se fija, un plano que biseca el volumen del "pan superior" se determina de forma única (llamemos a esto Plano $H(p)$).
@@ -150,6 +150,6 @@ Por ejemplo, cuando existe una cantidad masiva de puntos de datos (nubes de punt
 
 ## 7. Conclusión
 
-El Teorema del Sándwich de Jamón podría parecer una broma con un nombre divertido a primera vista, pero en realidad, es un hermoso resultado aplicado de un poderoso teorema en las matemáticas modernas, específicamente en la topología algebraica. El hecho de que una teoría matemática abstracta se exprese a través de algo tan concreto y cotidiano como un sándwich es, sin duda, uno de los aspectos fascinantes de las matemáticas.
+[El Teorema del Sándwich de Jamón](https://kenji.blog/p/ham-sandwich-theorem/) podría parecer una broma con un nombre divertido a primera vista, pero en realidad, es un hermoso resultado aplicado de un poderoso teorema en las matemáticas modernas, específicamente en la topología algebraica. El hecho de que una teoría matemática abstracta se exprese a través de algo tan concreto y cotidiano como un sándwich es, sin duda, uno de los aspectos fascinantes de las matemáticas.
 
 La próxima vez que cortes casualmente un sándwich, es posible que haya un momento en el que los tres ingredientes se reduzcan a la mitad por coincidencia. Durante tu próximo descanso para el almuerzo, mientras agarras tu cuchillo, ¿por qué no dejas que tus pensamientos divaguen hacia espacios de dimensiones superiores y el Teorema de Borsuk-Ulam?

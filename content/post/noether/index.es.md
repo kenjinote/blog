@@ -8,17 +8,17 @@ categories: ["Matemáticas", "Biografía"]
 tags: ["Emmy Noether", "Álgebra abstracta", "Física", "Mujeres en STEM"]
 ---
 
-En la historia de las matemáticas y la física, existe una genio que hizo algunas de las contribuciones más significativas, pero cuyo nombre no es ampliamente conocido por el público en general. Esa persona es la matemática de origen alemán **Emmy Noether** (1882–1935). A menudo aclamada como la "Madre del álgebra moderna", transformó por completo el campo del álgebra abstracta. Además, en física, demostró el **teorema de Noether**, que conecta elegantemente la simetría con las leyes de conservación, sentando las bases para la teoría de la relatividad general de Einstein y la física de partículas moderna.
+En la historia de las matemáticas y la física, existe una genio que hizo algunas de las contribuciones más significativas, pero cuyo nombre no es ampliamente conocido por el público en general. Esa persona es la matemática de origen alemán **[Emmy Noether](https://kenji.blog/p/noether/)** (1882–1935). A menudo aclamada como la "Madre del álgebra moderna", transformó por completo el campo del álgebra abstracta. Además, en física, demostró el **teorema de Noether**, que conecta elegantemente la simetría con las leyes de conservación, sentando las bases para la teoría de la relatividad general de Einstein y la física de partículas moderna.
 
-Tras su muerte, Albert Einstein escribió un tributo en The New York Times afirmando: "A juicio de los matemáticos vivos más competentes, la señorita Noether fue la genio matemática creativa más importante que se haya producido hasta ahora desde que comenzó la educación superior de las mujeres". En este artículo, exploraremos a fondo la vida de Emmy Noether, quien superó numerosas dificultades y mantuvo una pasión pura por el conocimiento, y el tremendo legado que dejó.
+Tras su muerte, Albert Einstein escribió un tributo en The New York Times afirmando: "A juicio de los matemáticos vivos más competentes, la señorita Noether fue la genio matemática creativa más importante que se haya producido hasta ahora desde que comenzó la educación superior de las mujeres". En este artículo, exploraremos a fondo la vida de [Emmy Noether](https://kenji.blog/p/noether/), quien superó numerosas dificultades y mantuvo una pasión pura por el conocimiento, y el tremendo legado que dejó.
 
 ## 1. Primeros años y dificultades iniciales
 
-Amalie Emmy Noether nació el 23 de marzo de 1882 en Erlangen, Baviera, Alemania. Su padre, Max Noether, también fue un destacado matemático que hizo importantes contribuciones a la geometría algebraica. La familia Noether era de ascendencia judía, y ella creció en un ambiente familiar que valoraba mucho la búsqueda académica.
+Amalie [Emmy Noether](https://kenji.blog/p/noether/) nació el 23 de marzo de 1882 en Erlangen, Baviera, Alemania. Su padre, Max Noether, también fue un destacado matemático que hizo importantes contribuciones a la geometría algebraica. La familia Noether era de ascendencia judía, y ella creció en un ambiente familiar que valoraba mucho la búsqueda académica.
 
 Sin embargo, en la sociedad alemana de la época, era extremadamente difícil para las mujeres seguir una carrera académica. A las mujeres no se les permitía inscribirse como estudiantes regulares en las universidades, e incluso asistir a conferencias como oyentes requería un permiso especial de los profesores. La joven Emmy se destacaba en los idiomas e inicialmente obtuvo calificaciones para convertirse en profesora de francés e inglés, pero su corazón quedó gradualmente cautivado por las matemáticas.
 
-En 1900, comenzó a tomar clases de matemáticas en la Universidad de Erlangen como oyente. Entre cientos de estudiantes, solo había dos mujeres, incluida ella. Demostró un talento matemático excepcional y aprobó el examen de calificación de ingreso a la universidad (Abitur) en Núremberg en 1903. Posteriormente, estudió como oyente en la Universidad de Gotinga, asistiendo a las conferencias de algunos de los más grandes matemáticos y físicos de la época, como Karl Schwarzschild, Hermann Minkowski, Felix Klein y David Hilbert.
+En 1900, comenzó a tomar clases de matemáticas en la Universidad de Erlangen como oyente. Entre cientos de estudiantes, solo había dos mujeres, incluida ella. Demostró un talento matemático excepcional y aprobó el examen de calificación de ingreso a la universidad (Abitur) en Núremberg en 1903. Posteriormente, estudió como oyente en la Universidad de Gotinga, asistiendo a las conferencias de algunos de los más grandes matemáticos y físicos de la época, como Karl Schwarzschild, Hermann Minkowski, Felix Klein y [David Hilbert](https://kenji.blog/p/hilbert/).
 
 ```mermaid
 flowchart TD
@@ -35,11 +35,11 @@ flowchart TD
 
 En 1904, la Universidad de Erlangen finalmente permitió la inscripción regular de mujeres, y Noether se inscribió de inmediato en el programa de grado en matemáticas. Avanzó en su investigación bajo la dirección de Paul Gordan, una autoridad en la teoría de invariantes, y en 1907 obtuvo su doctorado (Ph.D.) con los más altos honores por su disertación titulada "Sobre los sistemas completos de invariantes para formas bicuadráticas ternarias". En este artículo, demostró el pináculo del poder de cálculo y la paciencia calculando exhaustivamente 331 invariantes específicos.
 
-A pesar de haber obtenido su doctorado, no había ningún puesto universitario disponible para ella simplemente porque era mujer. Continuó su investigación en la Universidad de Erlangen sin recibir pago, a veces sustituyendo a su padre enfermo para dar clases. Durante este período, su estilo de investigación cambió significativamente de los métodos constructivos que enfatizaban los cálculos concretos, como los de Gordan, a los métodos más abstractos y conceptuales iniciados por David Hilbert. Influenciada también por Ernst Fischer, comenzó a abrir la puerta al álgebra abstracta moderna.
+A pesar de haber obtenido su doctorado, no había ningún puesto universitario disponible para ella simplemente porque era mujer. Continuó su investigación en la Universidad de Erlangen sin recibir pago, a veces sustituyendo a su padre enfermo para dar clases. Durante este período, su estilo de investigación cambió significativamente de los métodos constructivos que enfatizaban los cálculos concretos, como los de Gordan, a los métodos más abstractos y conceptuales iniciados por [David Hilbert](https://kenji.blog/p/hilbert/). Influenciada también por Ernst Fischer, comenzó a abrir la puerta al álgebra abstracta moderna.
 
 ## 3. Invitación a Gotinga y el "Teorema de Noether"
 
-En 1915, David Hilbert y Felix Klein de la Universidad de Gotinga invitaron a Noether a Gotinga para ayudar a resolver problemas matemáticos relacionados con la conservación de la energía en la teoría de la relatividad general de Albert Einstein. Su profundo conocimiento de la teoría de invariantes se consideraba indispensable.
+En 1915, [David Hilbert](https://kenji.blog/p/hilbert/) y Felix Klein de la Universidad de Gotinga invitaron a Noether a Gotinga para ayudar a resolver problemas matemáticos relacionados con la conservación de la energía en la teoría de la relatividad general de Albert Einstein. Su profundo conocimiento de la teoría de invariantes se consideraba indispensable.
 
 Sin embargo, su posible nombramiento como miembro regular de la facultad (Privatdozent) se encontró con una feroz oposición por parte de profesores de otras disciplinas dentro de la Facultad de Filosofía, de nuevo simplemente porque era una "mujer". Argumentaban: "¿Qué pensarán nuestros soldados cuando regresen a la universidad y descubran que deben aprender a los pies de una mujer?" A esto, Hilbert replicó famosamente:
 
@@ -140,10 +140,10 @@ Sus restos están enterrados bajo el pasillo de la biblioteca en el Bryn Mawr Co
 
 El matemático Norbert Wiener comentó sobre ella: "La señorita Noether es... la matemática más grande que jamás haya existido; y la mujer científica más grande de cualquier tipo que vive ahora, y una erudita al menos en el plano de Madame Curie".
 
-Los conceptos de álgebra abstracta iniciados por Emmy Noether continúan fluyendo en los cimientos de la criptografía actual, la informática y la geometría algebraica. Además, su teorema sobre la simetría y las leyes de conservación perdura como un lenguaje indispensable en la física de vanguardia, como el descubrimiento del bosón de Higgs y el estudio de los agujeros negros.
+Los conceptos de álgebra abstracta iniciados por [Emmy Noether](https://kenji.blog/p/noether/) continúan fluyendo en los cimientos de la criptografía actual, la informática y la geometría algebraica. Además, su teorema sobre la simetría y las leyes de conservación perdura como un lenguaje indispensable en la física de vanguardia, como el descubrimiento del bosón de Higgs y el estudio de los agujeros negros.
 
-Frente a la discriminación de género, Emmy Noether simplemente amaba las matemáticas de manera pura y continuó buscando la verdad. Su espíritu indomable y su abrumador intelecto continúan brindándonos una inspiración infinita a través de los tiempos.
+Frente a la discriminación de género, [Emmy Noether](https://kenji.blog/p/noether/) simplemente amaba las matemáticas de manera pura y continuó buscando la verdad. Su espíritu indomable y su abrumador intelecto continúan brindándonos una inspiración infinita a través de los tiempos.
 
 ---
 
-*(Este artículo fue escrito para honrar los logros de Emmy Noether, dirigido a aquellos interesados en la historia de las matemáticas y los fundamentos de la física).*
+*(Este artículo fue escrito para honrar los logros de [Emmy Noether](https://kenji.blog/p/noether/), dirigido a aquellos interesados en la historia de las matemáticas y los fundamentos de la física).*

@@ -14,19 +14,19 @@ tags:
 
 ## Introduction
 
-In the field of mathematics known as topology, there are many theorems that are intuitively interesting and powerful. One of the most famous among them is the **Hairy Ball Theorem**. This theorem is often expressed in very visual and easy-to-understand terms: "You can't comb a hairy ball flat without creating a cowlick."
+In the field of mathematics known as topology, there are many theorems that are intuitively interesting and powerful. One of the most famous among them is the **[Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)**. This theorem is often expressed in very visual and easy-to-understand terms: "You can't comb a hairy ball flat without creating a cowlick."
 
 However, deep mathematical meaning is hidden behind it, influencing the weather of our Earth, computer graphics, and even the fundamental laws of physics. In this article, we will explain this theorem in detail, from its intuitive meaning to its mathematical formulation, and its surprising applications.
 
-## What is the Hairy Ball Theorem?
+## What is the [Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)?
 
-The Hairy Ball Theorem was first stated by Henri Poincaré in 1885 and rigorously proved by Luitzen Egbertus Jan Brouwer in 1912.
+The [Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/) was first stated by [Henri Poincaré](https://kenji.blog/p/poincare/) in 1885 and rigorously proved by Luitzen Egbertus Jan Brouwer in 1912.
 
 ### Intuitive Understanding
 
 Imagine a sphere completely covered in fine hair, like a tennis ball or a coconut. You are trying to comb the hair on this ball flat using a comb. Can you comb all the hair smoothly along the surface of the ball without creating any "cowlicks" or "parts" anywhere?
 
-The Hairy Ball Theorem asserts that **"it is absolutely impossible."**
+The [Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/) asserts that **"it is absolutely impossible."**
 
 No matter how cleverly you comb the hair, there will always be at least one place where the hair stands straight up (a cowlick) or a point with no hair at all (a singularity).
 
@@ -99,13 +99,13 @@ graph LR
 
 ## Surprising Real-World Applications
 
-The Hairy Ball Theorem is not just a mathematical puzzle. It helps explain various phenomena in the real world, such as in physics, meteorology, and engineering.
+The [Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/) is not just a mathematical puzzle. It helps explain various phenomena in the real world, such as in physics, meteorology, and engineering.
 
 ### 1. Meteorology: Winds on Earth
 
 Let's consider the Earth as a large sphere $S^2$. Wind is the movement of air blowing along the Earth's surface, which is exactly a "tangent vector field" on a sphere.
 
-Assuming wind speed and direction change continuously on the Earth, the Hairy Ball Theorem applies directly. In other words, **there is always a place somewhere on Earth where the wind speed is completely zero**.
+Assuming wind speed and direction change continuously on the Earth, the [Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/) applies directly. In other words, **there is always a place somewhere on Earth where the wind speed is completely zero**.
 
 This mathematically proves that "there is always a place with no wind (a singularity like the eye of a typhoon) somewhere on Earth." It is topologically impossible for the wind to blow simultaneously across the entire Earth.
 
@@ -121,13 +121,13 @@ To avoid this, CG software uses techniques such as modifying the topology of the
 
 There is a magnetic confinement method called the "Tokamak" type among devices being researched for the realization of fusion power generation.
 
-To stably confine the plasma, the magnetic field lines must be arranged smoothly along the surface of the container. If the shape of the container were a sphere ($S^2$), the Hairy Ball Theorem states that a point where the magnetic field becomes zero (a singularity) would inevitably occur, leading to a fatal problem of plasma leaking from there.
+To stably confine the plasma, the magnetic field lines must be arranged smoothly along the surface of the container. If the shape of the container were a sphere ($S^2$), the [Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/) states that a point where the magnetic field becomes zero (a singularity) would inevitably occur, leading to a fatal problem of plasma leaking from there.
 
 That is precisely why the plasma confinement container of a Tokamak nuclear reactor is not a sphere, but a **torus (donut shape)**. With a torus shape ($\chi = 0$), it is possible to arrange the magnetic field lines smoothly without creating a singularity.
 
 ## Conclusion
 
-The "Hairy Ball Theorem" is a theorem that has a seemingly humorous name and an intuitive image, but at its core lies the powerful mathematical concept of topology.
+The "[Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)" is a theorem that has a seemingly humorous name and an intuitive image, but at its core lies the powerful mathematical concept of topology.
 
 *   **Intuitive conclusion:** A hairy ball cannot be combed without creating a cowlick.
 *   **Mathematical truth:** A continuous tangent vector field on a sphere with an Euler characteristic of 2 always has a point where it becomes zero.

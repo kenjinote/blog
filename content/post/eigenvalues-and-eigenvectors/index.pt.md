@@ -36,7 +36,7 @@ graph LR
     style D stroke:#ff9900,stroke-width:2px
 ```
 
-## Definição de Autovalores e Autovetores e Contexto Matemático
+## Definição de [Autovalores e Autovetores](https://kenji.blog/p/eigenvalues-and-eigenvectors/) e Contexto Matemático
 
 Matematicamente, para uma matriz quadrada $A$, se existir um vetor não nulo $\mathbf{v}$ e um escalar $\lambda$ que satisfaçam a seguinte condição, $\mathbf{v}$ é chamado de **autovetor** da matriz $A$, e $\lambda$ é chamado de **autovalor**.
 
@@ -124,7 +124,7 @@ $$
 
 Agora, encontramos todos os autovalores e autovetores para a matriz $A$.
 
-## Calculando Autovalores e Autovetores com Python
+## Calculando [Autovalores e Autovetores](https://kenji.blog/p/eigenvalues-and-eigenvectors/) com Python
 
 No trabalho prático moderno, nunca calculamos os autovalores de grandes matrizes à mão. Usando NumPy, uma biblioteca de computação numérica em Python, você pode calculá-los em apenas algumas linhas de código.
 
@@ -180,7 +180,7 @@ $$
 
 Esta propriedade é uma técnica indispensável ao prever estados de longo prazo em modelos de probabilidade como cadeias de Markov, ao resolver sistemas de equações diferenciais, ou mesmo ao procurar o termo geral da sequência de Fibonacci.
 
-## Aplicações no Mundo Real de Autovalores e Autovetores
+## Aplicações no Mundo Real de [Autovalores e Autovetores](https://kenji.blog/p/eigenvalues-and-eigenvectors/)
 
 Até agora examinamos os aspectos matemáticos, mas esses conceitos atuam como motores para resolver vários desafios no mundo real.
 

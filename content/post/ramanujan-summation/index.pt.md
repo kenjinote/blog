@@ -23,9 +23,9 @@ $$
 1 + 2 + 3 + 4 + \dots = -\frac{1}{12}
 $$
 
-Apesar de somarmos infinitamente inteiros positivos, por algum motivo o resultado se torna uma **fração negativa** . Este resultado contraintuitivo tornou-se famoso quando o gênio matemático indiano Srinivasa Ramanujan mencionou isso em uma carta ao matemático britânico G.H. Hardy.
+Apesar de somarmos infinitamente inteiros positivos, por algum motivo o resultado se torna uma **fração negativa** . Este resultado contraintuitivo tornou-se famoso quando o gênio matemático indiano [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) mencionou isso em uma carta ao matemático britânico G.H. Hardy.
 
-Neste artigo, explicaremos esse método chamado "Soma de Ramanujan (Ramanujan Summation)", como esse valor bizarro é derivado e como ele está conectado aos fenômenos físicos do mundo real.
+Neste artigo, explicaremos esse método chamado "[Soma de Ramanujan ([Ramanujan Summation](https://kenji.blog/p/ramanujan-summation/))](https://kenji.blog/p/ramanujan-summation/)", como esse valor bizarro é derivado e como ele está conectado aos fenômenos físicos do mundo real.
 
 ---
 

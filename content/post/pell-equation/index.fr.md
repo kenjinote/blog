@@ -32,9 +32,9 @@ Puisque $x$, $y$ et $k$ sont tous des entiers, $(x - ky)$ et $(x + ky)$ doivent 
 
 ## 2. Contexte historique : Pell, Fermat et les mathématiciens indiens de l'Antiquité
 
-Bien que cette équation porte le nom de « Pell », l'exploration des faits historiques révèle un contexte quelque peu étrange. En fait, la première personne dans l'Europe moderne à avoir étudié une solution générale pour cette équation et affirmé fermement qu'une solution existe toujours fut le grand mathématicien français **Pierre de Fermat**.
+Bien que cette équation porte le nom de « Pell », l'exploration des faits historiques révèle un contexte quelque peu étrange. En fait, la première personne dans l'Europe moderne à avoir étudié une solution générale pour cette équation et affirmé fermement qu'une solution existe toujours fut le grand mathématicien français **[Pierre de Fermat](https://kenji.blog/p/fermat/)**.
 
-Plus tard, **Leonhard Euler** a lié par erreur le nom du mathématicien anglais **John Pell** à cette équation, et elle est depuis largement connue sous le nom d'« équation de Pell ». Pell lui-même n'a pas joué de rôle central dans la méthode de résolution de cette équation.
+Plus tard, **[Leonhard Euler](https://kenji.blog/p/euler/)** a lié par erreur le nom du mathématicien anglais **John Pell** à cette équation, et elle est depuis largement connue sous le nom d'« équation de Pell ». Pell lui-même n'a pas joué de rôle central dans la méthode de résolution de cette équation.
 
 En remontant plus loin dans le temps, les mathématiciens indiens **Brahmagupta** et **Bhāskara II** ont calculé des solutions à des équations de ce type à l'aide d'un algorithme sophistiqué appelé méthode Chakravala, des centaines d'années avant Fermat. L'histoire de l'exploration par les mathématiciens de l'Antiquité, en passant par le Moyen Âge jusqu'à l'ère moderne, est inscrite dans cette équation.
 

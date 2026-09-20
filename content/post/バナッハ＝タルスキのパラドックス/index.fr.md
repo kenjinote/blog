@@ -125,7 +125,7 @@ Cependant, accepter cet axiome du choix implique d'accepter l'existence d'ensemb
 
 ## 6. Conclusion : le "monde au-delà de l'intuition" décrit par les mathématiques
 
-Le paradoxe de Banach-Tarski n'est pas un paradoxe au sens d'"incohérence logique". C'est un paradoxe dans le sens où **la logique est correcte à 100 %, mais la conclusion à laquelle elle aboutit contredit violemment l'intuition humaine et les lois de la physique**.
+[Le paradoxe de Banach-Tarski](https://kenji.blog/p/バナッハ＝タルスキのパラドックス/) n'est pas un paradoxe au sens d'"incohérence logique". C'est un paradoxe dans le sens où **la logique est correcte à 100 %, mais la conclusion à laquelle elle aboutit contredit violemment l'intuition humaine et les lois de la physique**.
 
 Lorsque ce théorème a été publié, certains mathématiciens ont soutenu que "si une conclusion aussi insensée en ressort, l'axiome du choix doit être erroné !".
 Cependant, aujourd'hui, la plupart des mathématiciens acceptent l'axiome du choix, et le théorème de Banach-Tarski est également accepté comme "une propriété étrange mais belle de l'espace tridimensionnel et des ensembles infinis".
@@ -133,5 +133,5 @@ Cependant, aujourd'hui, la plupart des mathématiciens acceptent l'axiome du cho
 Puisque le monde physique dans lequel nous vivons est constitué de "particules ayant une taille (finies)" appelées atomes, il est impossible de donner à un petit pois la taille du Soleil.
 Cependant, sur la toile des "mathématiques" créée par le cerveau humain, la taille d'un point est nulle, et des opérations infinies sont permises.
 
-Le paradoxe de Banach-Tarski nous enseigne **à quel point le concept de "l'infini" surpasse allègrement notre simple intuition humaine**, et on peut dire que c'est l'un des plus grands chefs-d'œuvre des mathématiques modernes.
+[Le paradoxe de Banach-Tarski](https://kenji.blog/p/バナッハ＝タルスキのパラドックス/) nous enseigne **à quel point le concept de "l'infini" surpasse allègrement notre simple intuition humaine**, et on peut dire que c'est l'un des plus grands chefs-d'œuvre des mathématiques modernes.
 

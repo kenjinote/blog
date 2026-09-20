@@ -14,7 +14,7 @@ tags:
   - "pohon"
 ---
 
-## 1. Pendahuluan: Apa itu Bilangan Catalan?
+## 1. Pendahuluan: Apa itu [Bilangan Catalan](https://kenji.blog/p/catalan-numbers/)?
 
 Dalam dunia matematika dan ilmu komputer, kita sering melihat fenomena indah di mana berbagai masalah yang tampaknya berbeda sebenarnya memiliki struktur dasar yang sama persis. Salah satu contoh menonjol adalah **bilangan Catalan**.
 
@@ -24,7 +24,7 @@ $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C
 
 Deret ini muncul sebagai solusi untuk berbagai macam masalah kombinatorika yang sangat beragam. Dalam artikel ini, kita akan memperkenalkan empat contoh terkenal yang melibatkan bilangan Catalan (urutan kurung yang valid, pohon biner, triangulasi poligon, dan lintasan Dyck). Kita akan menguraikan struktur rekursif di baliknya untuk memahami mengapa semuanya menghasilkan deret yang sama persis. Selain itu, kita akan mendalami algoritma komputasi menggunakan Pemrograman Dinamis (DP) dan derivasi matematika melalui fungsi pembangkit.
 
-## 2. Empat Contoh Konkret Bilangan Catalan
+## 2. Empat Contoh Konkret [Bilangan Catalan](https://kenji.blog/p/catalan-numbers/)
 
 ### Contoh 1: Tanda Kurung yang Valid (Valid Parentheses)
 
@@ -74,13 +74,13 @@ graph TD
 
 ### Contoh 3: Triangulasi Poligon
 
-Bilangan Catalan juga muncul dalam geometri. Jumlah cara membagi poligon cembung dengan $(n+2)$ sisi menjadi $n$ segitiga dengan menggambar diagonal yang tidak saling berpotongan antar titik sudut tepat sama dengan $C_n$.
+[Bilangan Catalan](https://kenji.blog/p/catalan-numbers/) juga muncul dalam geometri. Jumlah cara membagi poligon cembung dengan $(n+2)$ sisi menjadi $n$ segitiga dengan menggambar diagonal yang tidak saling berpotongan antar titik sudut tepat sama dengan $C_n$.
 
 Misalnya, ketika $n = 3$, kita mempertimbangkan cara untuk mentriangulasi sebuah segilima ($3+2=5$). Terdapat tepat 5 cara menggambar diagonal untuk membentuk 3 segitiga. Sekali lagi, kita melihat angka $C_3 = 5$.
 
 ### Contoh 4: Lintasan Dyck (Dyck Paths)
 
-Bilangan Catalan juga muncul dalam masalah lintasan kisi (grid). Pada grid berukuran $n \times n$, pertimbangkan lintasan terpendek dari sudut kiri bawah $(0, 0)$ ke sudut kanan atas $(n, n)$ yang hanya bergerak ke kanan atau ke atas satu unit pada satu waktu. Jumlah lintasan yang tidak pernah melintasi di atas diagonal $y = x$ (artinya mereka selalu memenuhi $y \le x$) adalah $C_n$. Ini disebut **lintasan Dyck**.
+[Bilangan Catalan](https://kenji.blog/p/catalan-numbers/) juga muncul dalam masalah lintasan kisi (grid). Pada grid berukuran $n \times n$, pertimbangkan lintasan terpendek dari sudut kiri bawah $(0, 0)$ ke sudut kanan atas $(n, n)$ yang hanya bergerak ke kanan atau ke atas satu unit pada satu waktu. Jumlah lintasan yang tidak pernah melintasi di atas diagonal $y = x$ (artinya mereka selalu memenuhi $y \le x$) adalah $C_n$. Ini disebut **lintasan Dyck**.
 
 Jika kita melambangkan pergerakan ke kanan sebagai `R` dan pergerakan ke atas sebagai `U`, kondisinya mengharuskan dalam setiap awalan lintasan, jumlah `U` tidak pernah melebihi jumlah `R`. Ini secara ketat ekuivalen dengan hubungan antara `(` dan `)` dalam string kurung yang valid.
 
@@ -88,7 +88,7 @@ Jika kita melambangkan pergerakan ke kanan sebagai `R` dan pergerakan ke atas se
 
 Mengapa semua masalah yang tampaknya tidak berhubungan ini menghasilkan deret Catalan yang sama? Jawabannya terletak pada fakta bahwa mereka semua berbagi **struktur rekursif yang persis sama**.
 
-Bilangan Catalan $C_n$ didefinisikan oleh relasi perulangan berikut:
+[Bilangan Catalan](https://kenji.blog/p/catalan-numbers/) $C_n$ didefinisikan oleh relasi perulangan berikut:
 
 $$ C_0 = 1 $$
 $$ C_{n} = \sum_{i=0}^{n-1} C_i C_{n-1-i} \quad (n \ge 1) $$
@@ -122,7 +122,7 @@ Dekomposisi persis sama juga berlaku untuk "Pohon Biner". Jika kita menunjuk sua
 
 ## 4. Penurunan Matematis dari Rumus Bentuk Tertutup
 
-Bilangan Catalan dapat dinyatakan dengan **rumus bentuk tertutup** (Closed-form formula) yang sangat sederhana menggunakan notasi kombinatorika:
+[Bilangan Catalan](https://kenji.blog/p/catalan-numbers/) dapat dinyatakan dengan **rumus bentuk tertutup** (Closed-form formula) yang sangat sederhana menggunakan notasi kombinatorika:
 
 $$ C_n = \frac{1}{n+1} \binom{2n}{n} = \frac{(2n)!}{(n+1)!n!} $$
 
@@ -148,7 +148,7 @@ Kita dapat menyederhanakannya secara aljabar:
 
 $$ C_n = \binom{2n}{n} - \frac{n}{n+1} \binom{2n}{n} = \left( 1 - \frac{n}{n+1} \right) \binom{2n}{n} = \frac{1}{n+1} \binom{2n}{n} $$
 
-### 4.2. Pendekatan melalui Fungsi Pembangkit (Generating Functions)
+### 4.2. Pendekatan melalui [Fungsi Pembangkit](https://kenji.blog/p/generating-functions/) ([Generating Functions](https://kenji.blog/p/generating-functions/))
 
 Misalkan fungsi pembangkit untuk bilangan Catalan adalah $C(x) = \sum_{n=0}^\infty C_n x^n$.
 Menggunakan relasi perulangan $C_{n} = \sum_{i=0}^{n-1} C_i C_{n-1-i}$, kita menemukan bahwa fungsi pembangkit memenuhi persamaan berikut:
@@ -165,7 +165,7 @@ $$ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x} $$
 
 Dengan mengekspansi $\sqrt{1 - 4x} = (1 - 4x)^{1/2}$ menggunakan teorema binomial umum (deret Taylor) dan membandingkan koefisiennya, kita sampai pada kesimpulan $C_n = \frac{1}{n+1} \binom{2n}{n}$.
 
-## 5. Algoritma Komputasi untuk Bilangan Catalan
+## 5. Algoritma Komputasi untuk [Bilangan Catalan](https://kenji.blog/p/catalan-numbers/)
 
 Saat menghitung bilangan Catalan secara terprogram, pada dasarnya ada tiga pendekatan.
 

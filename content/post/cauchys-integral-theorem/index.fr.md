@@ -201,7 +201,7 @@ $$
 
 Cette formule montre la rigidité étonnante des fonctions holomorphes : "Tant que les valeurs de la fonction sur la frontière de la courbe fermée sont connues, la valeur de la fonction en chaque point à l'intérieur du domaine est complètement déterminée par le calcul intégral."
 
-### Domaines Multiplement Connexes et Théorème des Résidus
+### Domaines Multiplement Connexes et [Théorème des Résidus](https://kenji.blog/p/residue-theorem/)
 
 Si le domaine a des "trous" et n'est pas simplement connexe (domaine multiplement connexe), le théorème intégral de Cauchy ne peut pas être appliqué tel quel. Par exemple, la fonction $f(z) = 1/z$ n'est pas définie à l'origine $z=0$ et n'y est pas holomorphe. Si nous intégrons le long du cercle unité entourant l'origine, le résultat n'est pas nul, mais la valeur $2\pi i$.
 

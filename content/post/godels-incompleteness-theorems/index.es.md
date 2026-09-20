@@ -11,7 +11,7 @@ tags:
 slug: "godels-incompleteness-theorems"
 ---
 
-"Las matemáticas son absolutamente correctas"── Seguramente todos hemos pensado eso alguna vez. Sin embargo, en 1931, el joven matemático Kurt Gödel publicó un artículo que destrozó este sentido común desde sus cimientos. Estos son los **Teoremas de la incompletitud de Gödel**.
+"Las matemáticas son absolutamente correctas"── Seguramente todos hemos pensado eso alguna vez. Sin embargo, en 1931, el joven matemático [Kurt Gödel](https://kenji.blog/p/godel/) publicó un artículo que destrozó este sentido común desde sus cimientos. Estos son los **[Teoremas de la incompletitud de Gödel](https://kenji.blog/p/godels-incompleteness-theorems/)**.
 
 En este artículo explicaremos exhaustivamente el significado y la estructura de la demostración de este impactante teorema, que declara la existencia de "verdades que son absolutamente imposibles de demostrar", con la ayuda de ejemplos y diagramas.
 
@@ -19,7 +19,7 @@ En este artículo explicaremos exhaustivamente el significado y la estructura de
 
 ## 1. El escenario: El Programa de Hilbert y la crisis de las matemáticas
 
-Desde finales del siglo XIX hasta principios del XX, el mundo de las matemáticas enfrentaba la "paradoja de la teoría de conjuntos" (como la paradoja de Russell) y sus bases temblaban. Quien se alzó para salvar esta "crisis de las matemáticas" fue la máxima autoridad matemática de la época, David Hilbert.
+Desde finales del siglo XIX hasta principios del XX, el mundo de las matemáticas enfrentaba la "paradoja de la teoría de conjuntos" (como la paradoja de Russell) y sus bases temblaban. Quien se alzó para salvar esta "crisis de las matemáticas" fue la máxima autoridad matemática de la época, [David Hilbert](https://kenji.blog/p/hilbert/).
 
 Hilbert intentó simbolizar completamente todo el razonamiento matemático y reconstruir las matemáticas únicamente mediante reglas mecánicas. Lo que su propuesto "Programa de Hilbert" buscaba era demostrar las siguientes 3 propiedades dentro de un Sistema Formal (Formal System) para las matemáticas:
 
@@ -51,7 +51,7 @@ Hilbert pensó que si expandía estos sistemas formales, algún día se abarcar�
 
 ## 3. El impacto del Primer Teorema de Incompletitud: Proposiciones "verdaderas pero no demostrables"
 
-Sin embargo, en 1931, Kurt Gödel, de solo 25 años en ese entonces, publicó un documento que hizo añicos el sueño de Hilbert. Este es el **Primer Teorema de Incompletitud**.
+Sin embargo, en 1931, [Kurt Gödel](https://kenji.blog/p/godel/), de solo 25 años en ese entonces, publicó un documento que hizo añicos el sueño de Hilbert. Este es el **Primer Teorema de Incompletitud**.
 
 > **Primer Teorema de Incompletitud**
 > Cualquier sistema formal consistente que incluya la aritmética de Peano, contendrá forzosamente proposiciones que, a pesar de ser verdaderas, no pueden ser demostradas dentro de ese sistema.
@@ -136,7 +136,7 @@ Debido a su nombre dramático, a menudo el Teorema de Incompletitud de Gödel se
 
 ## 7. El paso de la antorcha a la Máquina de Turing: El amanecer de las Ciencias de la Computación
 
-El impacto del teorema de Gödel no se limitó a las matemáticas. En 1936, el matemático británico Alan Turing reemplazó el concepto de "sistema formal" de Gödel por un proceso de cálculo físico, ideando un modelo de calculadora teórica conocido como "Máquina de Turing".
+El impacto del teorema de Gödel no se limitó a las matemáticas. En 1936, el matemático británico [Alan Turing](https://kenji.blog/p/turing/) reemplazó el concepto de "sistema formal" de Gödel por un proceso de cálculo físico, ideando un modelo de calculadora teórica conocido como "Máquina de Turing".
 
 Turing aplicó el teorema de incompletitud de Gödel al mundo de las computadoras y demostró que "no existe un algoritmo universal que pueda determinar de antemano si un programa de ordenador terminará de ejecutarse algún día o se quedará calculando eternamente". Este es el famoso **Problema de la parada** (Halting Problem).
 
@@ -152,8 +152,8 @@ Los límites de las matemáticas que decían que "hay verdades que no se pueden 
 
 ## 8. Conclusión: Un viaje sin fin hacia el "conocimiento"
 
-La "máquina matemática perfecta, capaz de demostrarlo todo automáticamente" con la que soñaba David Hilbert, resultó ser solo una ilusión debido a los teoremas de incompletitud de Gödel. Sin embargo, esto no representa de ninguna manera la derrota de las matemáticas.
+La "máquina matemática perfecta, capaz de demostrarlo todo automáticamente" con la que soñaba [David Hilbert](https://kenji.blog/p/hilbert/), resultó ser solo una ilusión debido a los teoremas de incompletitud de Gödel. Sin embargo, esto no representa de ninguna manera la derrota de las matemáticas.
 
 Si las matemáticas pudieran automatizarse por completo, el trabajo de los matemáticos habría quedado reducido a meras tareas operativas y eventualmente habrían llegado a su fin. Pero, la existencia de "proposiciones que son verdaderas pero indemostrables" revelada por Gödel, comprobó que el universo de las matemáticas es infinitamente más vasto e insondable de lo que podríamos haber imaginado.
 
-Kurt Gödel, quien usando la lógica más estricta que existe —las propias matemáticas—, logró **demostrar** la existencia de "verdades que nunca podrán ser demostradas". Su Teorema de Incompletitud nos enseña que la búsqueda humana del "conocimiento" es un viaje sin retorno, que continuará para toda la eternidad.
+[Kurt Gödel](https://kenji.blog/p/godel/), quien usando la lógica más estricta que existe —las propias matemáticas—, logró **demostrar** la existencia de "verdades que nunca podrán ser demostradas". Su Teorema de Incompletitud nos enseña que la búsqueda humana del "conocimiento" es un viaje sin retorno, que continuará para toda la eternidad.

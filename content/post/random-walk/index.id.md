@@ -10,7 +10,7 @@ tags: ["Jalan Acak", "Probabilitas", "Persamaan Difusi", "Gerak Brown", "Python"
 
 # Pengantar: Apa itu Jalan Acak?
 
-Jalan acak (Random Walk) adalah konsep matematika di mana posisi berikutnya ditentukan secara acak (probabilistik). Sering disebut juga "langkah pemabuk".
+Jalan acak ([Random Walk](https://kenji.blog/p/random-walk/)) adalah konsep matematika di mana posisi berikutnya ditentukan secara acak (probabilistik). Sering disebut juga "langkah pemabuk".
 
 ## Rumus (1D)
 

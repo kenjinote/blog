@@ -24,7 +24,7 @@ In 1906, at the age of 18, Mordell traveled to England alone with very little mo
 
 ## 3. Passion for Diophantine Equations
 
-At the center of Mordell's research was always **Diophantine equations**. A Diophantine equation is a problem of finding integer or rational solutions to polynomial equations with integer coefficients. It is named after the ancient Greek mathematician Diophantus.
+At the center of Mordell's research was always **Diophantine equations**. A Diophantine equation is a problem of finding integer or rational solutions to polynomial equations with integer coefficients. It is named after the ancient Greek mathematician [Diophantus](https://kenji.blog/p/diophantus/).
 
 The most famous example of a Diophantine equation is the one related to the Pythagorean theorem:
 
@@ -42,7 +42,7 @@ Mordell paid particular attention to the form of equation now known as **Mordell
 
 $$ y^2 = x^3 + k $$
 
-Here, $k$ is a non-zero integer. This equation is one of the simplest forms of an elliptic curve. Since Pierre de Fermat in the 17th century proved that for $k = -2$, i.e., $y^2 = x^3 - 2$, the only integer solutions are $(x, y) = (3, \pm 5)$, many such equations have been studied.
+Here, $k$ is a non-zero integer. This equation is one of the simplest forms of an elliptic curve. Since [Pierre de Fermat](https://kenji.blog/p/fermat/) in the 17th century proved that for $k = -2$, i.e., $y^2 = x^3 - 2$, the only integer solutions are $(x, y) = (3, \pm 5)$, many such equations have been studied.
 
 Mordell deeply researched general methods for finding integer solutions to this equation and the finiteness of its solutions. His approach applied the theory of ideal classes in algebraic number theory, representing a significant leap forward from classical methods.
 
@@ -58,7 +58,7 @@ Here, $E(\mathbb{Q})_{\text{tors}}$ is a **torsion subgroup** consisting of a fi
 
 This theorem means that in order to find all infinitely many rational points of an elliptic curve, it is sufficient to find a finite number of "basis" points. It is a monumental result in arithmetic geometry. Mordell's proof was a modern refinement of Fermat's "Method of infinite descent".
 
-Later, in 1928, the French mathematician André Weil generalized this theorem to general number fields and abelian varieties, so it is now often called the **Mordell-Weil Theorem**.
+Later, in 1928, the French mathematician [André Weil](https://kenji.blog/p/weil/) generalized this theorem to general number fields and abelian varieties, so it is now often called the **Mordell-Weil Theorem**.
 
 ```mermaid
 graph TD
@@ -83,13 +83,13 @@ The claim for the $g \ge 2$ case is the Mordell Conjecture. This conjecture sugg
 
 $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
-This conjecture remained unsolved for over 60 years. However, in 1983, it was finally proved by the German mathematician Gerd Faltings, becoming **Faltings's Theorem**. For this achievement, Faltings was awarded the Fields Medal in 1986.
+This conjecture remained unsolved for over 60 years. However, in 1983, it was finally proved by the German mathematician [Gerd Faltings](https://kenji.blog/p/faltings/), becoming **Faltings's Theorem**. For this achievement, Faltings was awarded the Fields Medal in 1986.
 
 Furthermore, the equation for [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/), $x^n + y^n = z^n$, has a genus of 3 or more when $n \ge 4$. Therefore, from the Mordell Conjecture (Faltings's Theorem), it immediately follows that the Fermat equation has at most finitely many rational solutions for each $n$.
 
 ## 7. Involvement with Ramanujan and Modular Forms
 
-Mordell's achievements were not limited to Diophantine equations. He also made significant contributions to unresolved problems left by the genius mathematician Srinivasa Ramanujan.
+Mordell's achievements were not limited to Diophantine equations. He also made significant contributions to unresolved problems left by the genius mathematician [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/).
 
 Ramanujan conjectured several surprising properties about the Ramanujan tau function $\tau(n)$, defined as follows:
 
@@ -129,16 +129,16 @@ Mordell also had a keen eye for spotting the talent of others. One of his great 
 
 ## 11. Legacy to Modern Mathematics
 
-The legacy that Louis Mordell left in the mathematical world is deeply rooted in the foundations of modern mathematics.
+The legacy that [Louis Mordell](https://kenji.blog/p/mordell/) left in the mathematical world is deeply rooted in the foundations of modern mathematics.
 
 1. **Foundations of Arithmetic Geometry**: Mordell's Theorem and the Mordell Conjecture strongly spurred the development of "Arithmetic Geometry," which views number-theoretic objects from a geometric perspective.
 2. **Theory of Modular Forms**: The techniques he used in the proof of Ramanujan's conjecture became the starting point for a massive theory that extends to the modern Langlands Program.
 3. **Solving Diophantine Equations**: His concrete approaches and numerous papers still serve as the basis for algorithmic methods of solving equations using computers today.
 
-When [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) was proved by Andrew Wiles, concepts deeply involving Mordell, such as elliptic curves and modular forms, were indispensable to its theoretical background.
+When [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) was proved by [Andrew Wiles](https://kenji.blog/p/wiles/), concepts deeply involving Mordell, such as elliptic curves and modular forms, were indispensable to its theoretical background.
 
 ## 12. Conclusion
 
-Louis Mordell rose from a passionate self-taught youth to a giant of number theory representing the 20th century. His name is eternally engraved in the history of mathematics in the form of **Mordell's Theorem** and the **Mordell Conjecture**.
+[Louis Mordell](https://kenji.blog/p/mordell/) rose from a passionate self-taught youth to a giant of number theory representing the 20th century. His name is eternally engraved in the history of mathematics in the form of **Mordell's Theorem** and the **Mordell Conjecture**.
 
 With his strong commitment to solving concrete problems and the warm humanity that saved refugee mathematicians, Mordell's life and achievements are an excellent model showing how the discipline of mathematics develops and how a person can contribute to that development. The world of Diophantine equations he explored continues to fascinate many mathematicians to this day.

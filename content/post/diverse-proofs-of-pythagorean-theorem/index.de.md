@@ -36,9 +36,9 @@ graph TD
 
 ---
 
-## 1. Geometrischer Beweis basierend auf Euklids "Elementen"
+## 1. Geometrischer Beweis basierend auf [Euklid](https://kenji.blog/p/euclid/)s "Elementen"
 
-Der antike griechische Mathematiker Euklid lieferte in seinem Buch "Elemente" (Buch I, Proposition 47) einen visuellen und strengen Beweis, der manchmal auch als **Windmühlenbeweis** bezeichnet wird.
+Der antike griechische Mathematiker [Euklid](https://kenji.blog/p/euclid/) lieferte in seinem Buch "Elemente" (Buch I, Proposition 47) einen visuellen und strengen Beweis, der manchmal auch als **Windmühlenbeweis** bezeichnet wird.
 
 ### Beweisidee
 

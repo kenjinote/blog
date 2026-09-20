@@ -14,7 +14,7 @@ Neste artigo, explicaremos detalhadamente este **Problema dos Generais Bizantino
 
 ## 1. O que é o Problema dos Generais Bizantinos?
 
-O Problema dos Generais Bizantinos é uma experiência mental sobre a formação de consenso em computação distribuída, proposta por Leslie Lamport e outros em 1982.
+[O Problema dos Generais Bizantinos](https://kenji.blog/p/byzantine-generals-problem/) é uma experiência mental sobre a formação de consenso em computação distribuída, proposta por Leslie Lamport e outros em 1982.
 
 ### Exemplo concreto: Os generais do Império Bizantino
 

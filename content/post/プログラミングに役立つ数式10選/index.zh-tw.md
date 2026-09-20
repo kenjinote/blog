@@ -19,7 +19,7 @@ tags: ["Math", "Algorithms", "Python", "C++"]
 
 ---
 
-## 1. 歐拉恆等式 (Euler's Identity)
+## 1. 歐拉恆等式 ([Euler's Identity](https://kenji.blog/p/eulers-identity/))
 
 ### 公式的優美與概要
 被譽為「人類的至寶」、「世界上最優美的數學公式」的歐拉恆等式。數學中 5 個最重要常數（自然對數的底數 $e$、虛數單位 $i$、圓周率 $\pi$、乘法單位元素 $1$、加法單位元素 $0$）被整合在一個簡單的等式中。
@@ -132,10 +132,10 @@ print(f"Taylor series sin: {taylor_sin(angle, terms=5)}")
 
 ---
 
-## 3. 貝氏定理 (Bayes' Theorem)
+## 3. [貝氏定理](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
 
 ### 公式的優美與概要
-貝氏定理是一個根據與某個事件相關的先驗知識（先驗機率），來更新該事件發生機率（後驗機率）的定理。它是機率論與統計學中最重要的公式之一。
+[貝氏定理](https://kenji.blog/p/bayes-theorem/)是一個根據與某個事件相關的先驗知識（先驗機率），來更新該事件發生機率（後驗機率）的定理。它是機率論與統計學中最重要的公式之一。
 
 $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
 
@@ -559,12 +559,12 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. 歐幾里得距離與畢氏定理 (Euclidean Distance & Pythagorean Theorem)
+## 10. [歐幾里得](https://kenji.blog/p/euclid/)距離與畢氏定理 ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### 公式的優美與概要
 這是自古希臘傳承下來的幾何學基礎，也是定義 $n$ 維空間中兩點間直線距離的公式。在二維空間中，它本身就是畢氏定理（$a^2 + b^2 = c^2$）。
 
-三維空間中點 $P(x_1, y_1, z_1)$ 和 $Q(x_2, y_2, z_2)$ 之間的歐幾里得距離 $d$ 表示如下。
+三維空間中點 $P(x_1, y_1, z_1)$ 和 $Q(x_2, y_2, z_2)$ 之間的[歐幾里得](https://kenji.blog/p/euclid/)距離 $d$ 表示如下。
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

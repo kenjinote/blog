@@ -79,9 +79,9 @@ graph TD
 
 ---
 
-## 3. 베이즈 정리에 의한 엄밀한 증명
+## 3. [베이즈 정리](https://kenji.blog/p/bayes-theorem/)에 의한 엄밀한 증명
 
-수학적으로 이 문제를 엄밀하게 풀기 위해서는 조건부 확률을 계산하는 '베이즈 정리'를 사용합니다.
+수학적으로 이 문제를 엄밀하게 풀기 위해서는 조건부 확률을 계산하는 '[베이즈 정리](https://kenji.blog/p/bayes-theorem/)'를 사용합니다.
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -111,7 +111,7 @@ $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-드디어 베이즈 정리를 적용하여 문 A와 문 C의 사후 확률을 계산합니다.
+드디어 [베이즈 정리](https://kenji.blog/p/bayes-theorem/)를 적용하여 문 A와 문 C의 사후 확률을 계산합니다.
 
 **문 A(바꾸지 않을 경우)에 새 차가 있을 확률:**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

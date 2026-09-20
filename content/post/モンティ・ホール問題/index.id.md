@@ -79,9 +79,9 @@ Oleh karena itu, peluang kemenangan jika Anda mengganti pilihan pintu adalah $\f
 
 ---
 
-## 3. Bukti Ketat menggunakan Teorema Bayes
+## 3. Bukti Ketat menggunakan [Teorema Bayes](https://kenji.blog/p/bayes-theorem/)
 
-Untuk menyelesaikan masalah ini secara matematis dengan ketat, kita menggunakan "Teorema Bayes" untuk menghitung probabilitas bersyarat.
+Untuk menyelesaikan masalah ini secara matematis dengan ketat, kita menggunakan "[Teorema Bayes](https://kenji.blog/p/bayes-theorem/)" untuk menghitung probabilitas bersyarat.
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -111,7 +111,7 @@ Selanjutnya, kita cari probabilitas total pembawa acara membuka Pintu B, $P(M_B)
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-Sekarang, kita terapkan Teorema Bayes untuk menghitung probabilitas posterior untuk Pintu A dan Pintu C.
+Sekarang, kita terapkan [Teorema Bayes](https://kenji.blog/p/bayes-theorem/) untuk menghitung probabilitas posterior untuk Pintu A dan Pintu C.
 
 **Probabilitas mobil berada di Pintu A (jika tidak mengganti pilihan):**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

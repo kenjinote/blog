@@ -56,7 +56,7 @@ Why does such a line always exist? Let's think using the concept of continuity.
 
 This is why you can bisect two objects simultaneously in the 2D case.
 
-## 3. Extension to 3D: The Ham Sandwich Theorem
+## 3. Extension to 3D: [The Ham Sandwich Theorem](https://kenji.blog/p/ham-sandwich-theorem/)
 
 Now, let's finally move to the 3-dimensional story. When the dimension goes up by one, the number of objects you can divide also increases by one.
 
@@ -88,7 +88,7 @@ The general claim of the Borsuk-Ulam theorem is as follows:
 
 > For any continuous mapping $f: S^n \to \mathbb{R}^n$, there always exists a point $x \in S^n$ such that $f(x) = f(-x)$.
 
-Here, $S^n$ is the $n$-dimensional sphere in $(n+1)$-dimensional space (for example, $S^2$ is an ordinary sphere like the surface of the Earth we live on), and $\mathbb{R}^n$ is the $n$-dimensional Euclidean space. Also, $x$ and $-x$ refer to **antipodal points** on the sphere (points on opposite sides of a straight line passing through the center, like the North and South Poles on Earth, or Tokyo and off the coast of Brazil).
+Here, $S^n$ is the $n$-dimensional sphere in $(n+1)$-dimensional space (for example, $S^2$ is an ordinary sphere like the surface of the Earth we live on), and $\mathbb{R}^n$ is the $n$-dimensional [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an space. Also, $x$ and $-x$ refer to **antipodal points** on the sphere (points on opposite sides of a straight line passing through the center, like the North and South Poles on Earth, or Tokyo and off the coast of Brazil).
 
 If we interpret this theorem in the familiar case of $n=2$ ( $S^2 \to \mathbb{R}^2$ ), we can state the following interesting fact:
 
@@ -98,7 +98,7 @@ For a function $f(x) = \left( \text{Temperature}, \text{Pressure} \right)$ that 
 
 ### Proof Sketch of the Ham Sandwich Theorem
 
-The Ham Sandwich Theorem (3D version) can be proved using the $n=2$ case of the Borsuk-Ulam Theorem. Below is a sketch of its beautiful proof.
+[The Ham Sandwich Theorem](https://kenji.blog/p/ham-sandwich-theorem/) (3D version) can be proved using the $n=2$ case of the Borsuk-Ulam Theorem. Below is a sketch of its beautiful proof.
 
 1. Consider a point $p$ on the unit sphere $S^2$ centered at the origin (this represents the normal vector of the plane, i.e., the "direction" of the plane).
 2. When the direction $p$ is fixed, a plane that bisects the volume of the "top bread" is uniquely determined (let's call this Plane $H(p)$).
@@ -150,6 +150,6 @@ For example, when a massive amount of data points (point clouds) exist in space,
 
 ## 7. Conclusion
 
-The Ham Sandwich Theorem might seem like a joke with a funny name at first glance, but in reality, it is a beautiful result applied from a powerful theorem in modern mathematics, specifically algebraic topology. The fact that an abstract mathematical theory is expressed through something as concrete and everyday as a sandwich is arguably one of the fascinating aspects of mathematics.
+[The Ham Sandwich Theorem](https://kenji.blog/p/ham-sandwich-theorem/) might seem like a joke with a funny name at first glance, but in reality, it is a beautiful result applied from a powerful theorem in modern mathematics, specifically algebraic topology. The fact that an abstract mathematical theory is expressed through something as concrete and everyday as a sandwich is arguably one of the fascinating aspects of mathematics.
 
 The next time you casually cut a sandwich, there might just be a moment when all three ingredients are perfectly halved by coincidence. During your next lunch break, as you grip your knife, why not let your thoughts drift to higher-dimensional spaces and the Borsuk-Ulam Theorem?

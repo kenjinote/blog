@@ -56,11 +56,11 @@ $$
 
 Here, it is known that $c_{n-1} = -\text{tr}(A)$ (the negative trace) and $c_0 = (-1)^n \det(A)$.
 
-## 4. Statement of the Cayley-Hamilton Theorem
+## 4. Statement of the [Cayley-Hamilton Theorem](https://kenji.blog/p/cayley-hamilton-theorem/)
 
 Now we come to the core of the **Cayley-Hamilton theorem**. The statement of the theorem is very simple yet profound.
 
-> **Theorem (Cayley-Hamilton Theorem)**
+> **Theorem ([Cayley-Hamilton Theorem](https://kenji.blog/p/cayley-hamilton-theorem/))**
 > For any $n \times n$ square matrix $A$ and its characteristic polynomial $p(\lambda) = \det(\lambda I - A)$, substituting the matrix $A$ for the variable $\lambda$ in the polynomial yields the zero matrix $O$. That is,
 > $$ p(A) = A^n + c_{n-1}A^{n-1} + \dots + c_1 A + c_0 I = O $$
 > holds true.
@@ -153,7 +153,7 @@ By definition of the characteristic polynomial, each eigenvalue $\lambda_i$ sati
 
 However, since not all matrices are diagonalizable (e.g., those without a full set of eigenvectors), this explanation does not constitute a complete proof. A different approach is needed for a general proof.
 
-## 7. Rigorous Proof of the Cayley-Hamilton Theorem
+## 7. Rigorous Proof of the [Cayley-Hamilton Theorem](https://kenji.blog/p/cayley-hamilton-theorem/)
 
 Here is a general proof (using the adjugate matrix) that holds for any $n \times n$ square matrix $A$. This proof is very elegant and showcases algebraic ingenuity.
 

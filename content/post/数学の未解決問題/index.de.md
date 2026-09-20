@@ -27,7 +27,7 @@ aber es wurde noch nicht bewiesen.
 
 ## Goldbachsche Vermutung
 
-Die Goldbachsche Vermutung besagt, dass jede gerade Zahl größer als 2 als Summe zweier Primzahlen dargestellt werden kann.
+[Die Goldbachsche Vermutung](https://kenji.blog/p/goldbachs-conjecture/) besagt, dass jede gerade Zahl größer als 2 als Summe zweier Primzahlen dargestellt werden kann.
 (Hierbei ist eine Primzahl eine natürliche Zahl, die außer 1 und sich selbst keine weiteren Teiler hat.)
 
 Zum Beispiel,

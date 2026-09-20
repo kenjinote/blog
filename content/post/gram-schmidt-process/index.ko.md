@@ -213,7 +213,7 @@ flowchart LR
     D --> E
 ```
 
-기계학습의 맥락에서는 다중 회귀 분석에서 최적의 파라미터를 구하는 "최소제곱법"의 계산을 안정적이고 빠르게 수행하기 위해 QR 분해가 이용됩니다. 정규 방정식($A^T A \mathbf{x} = A^T \mathbf{b}$)을 직접 푸는 접근법은 행렬 $A^T A$ 의 조건수가 악화되기 쉽고 수치 오차에 극히 취약하기 때문에, 실무에서는 $A=QR$ 로 분해하여 $R \mathbf{x} = Q^T \mathbf{b}$ 를 후방 대입법(back substitution)으로 푸는 것이 정석입니다.
+기계학습의 맥락에서는 다중 회귀 분석에서 최적의 파라미터를 구하는 "[최소제곱법](https://kenji.blog/p/method-of-least-squares/)"의 계산을 안정적이고 빠르게 수행하기 위해 QR 분해가 이용됩니다. 정규 방정식($A^T A \mathbf{x} = A^T \mathbf{b}$)을 직접 푸는 접근법은 행렬 $A^T A$ 의 조건수가 악화되기 쉽고 수치 오차에 극히 취약하기 때문에, 실무에서는 $A=QR$ 로 분해하여 $R \mathbf{x} = Q^T \mathbf{b}$ 를 후방 대입법(back substitution)으로 푸는 것이 정석입니다.
 
 ## 9. 맺음말: 정돈된 공간의 아름다움
 

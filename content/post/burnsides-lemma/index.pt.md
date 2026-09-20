@@ -21,7 +21,7 @@ Um exemplo típico disso é a **"enumeração de objetos com simetria"**. Simetr
 
 Por exemplo, suponha que façamos um colar juntando quatro miçangas em um loop. As cores das miçangas disponíveis são "vermelho" e "azul". Neste caso, quantos designs de colares diferentes existem no total?
 
-Neste artigo, a partir desta questão aparentemente simples, explicaremos em detalhes a poderosa ferramenta matemática para contar com a simetria considerada, o **"Lema de Burnside"**, desde o básico até suas aplicações. Este é um tópico perfeito para uma introdução prática à Teoria dos Grupos, então, por favor, fique conosco até o fim.
+Neste artigo, a partir desta questão aparentemente simples, explicaremos em detalhes a poderosa ferramenta matemática para contar com a simetria considerada, o **"[Lema de Burnside](https://kenji.blog/p/burnsides-lemma/)"**, desde o básico até suas aplicações. Este é um tópico perfeito para uma introdução prática à Teoria dos Grupos, então, por favor, fique conosco até o fim.
 
 ## 2. As Armadilhas da Contagem Simples
 
@@ -79,9 +79,9 @@ Por exemplo, a aplicação das operações de $G$ ao padrão "Vermelho-Azul-Azul
 
 Esses 4 padrões pertencem à mesma "Órbita". O "número de designs essencialmente diferentes" que queremos saber é exatamente **"em quantas órbitas diferentes todo o conjunto $X$ está dividido"**. Isso é denotado pela fórmula $|X/G|$.
 
-## 5. Lema de Burnside
+## 5. [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/)
 
-Aqui, finalmente, a estrela desta vez, o **Lema de Burnside**, faz sua aparição. Às vezes, também é chamado de lema de Cauchy-Frobenius. Este é um teorema surpreendente que nos permite calcular facilmente o "número de órbitas (número de padrões essencialmente diferentes)" quando um grupo $G$ age sobre um conjunto finito $X$.
+Aqui, finalmente, a estrela desta vez, o **[Lema de Burnside](https://kenji.blog/p/burnsides-lemma/)**, faz sua aparição. Às vezes, também é chamado de lema de Cauchy-Frobenius. Este é um teorema surpreendente que nos permite calcular facilmente o "número de órbitas (número de padrões essencialmente diferentes)" quando um grupo $G$ age sobre um conjunto finito $X$.
 
 A fórmula para o teorema é a seguinte:
 
@@ -97,13 +97,13 @@ Vamos olhar para o significado de cada símbolo que aparece na fórmula em detal
 - $X^g$: O conjunto de padrões que "não mudam (são fixados)" mesmo quando a operação $g$ é realizada.
 - $|X^g|$: O número de padrões fixados pela operação $g$. Isso é chamado de **"número de pontos fixos"**.
 
-O que esta fórmula significa é muito intuitivo. O Lema de Burnside afirma que podemos obter o número desejado de órbitas **"contando o 'número de padrões imutáveis (número de pontos fixos)' para cada operação, somando-os todos e dividindo pelo número total de operações (ou seja, tirando a média)"**.
+O que esta fórmula significa é muito intuitivo. O [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/) afirma que podemos obter o número desejado de órbitas **"contando o 'número de padrões imutáveis (número de pontos fixos)' para cada operação, somando-os todos e dividindo pelo número total de operações (ou seja, tirando a média)"**.
 
 A maior força deste teorema é que ele pode dividir o julgamento complexo de duplicatas em cálculos independentes e simples de "contar o que não muda em cada operação".
 
 ## 6. Aplicação e Cálculo para o Problema do Colar
 
-Agora, vamos usar o Lema de Burnside para calcular o número de designs para um colar com 4 miçangas (2 cores, vermelho e azul).
+Agora, vamos usar o [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/) para calcular o número de designs para um colar com 4 miçangas (2 cores, vermelho e azul).
 O número de elementos no conjunto original de padrões $X$ é $16$. Vamos investigar o número de pontos fixos $|X^g|$ para cada operação $g \in G$ do grupo $G$ um por um.
 
 ### 6.1. Pontos fixos por não fazer nada ($R_0$)
@@ -128,7 +128,7 @@ Portanto, existem apenas $2$ maneiras: "tudo vermelho" ou "tudo azul".
 $$ |X^{R_{270}}| = 2 $$
 
 ### 6.5. Cálculo do resultado final
-Agora, temos todos os números de pontos fixos para todas as operações. Nós os substituímos na fórmula do Lema de Burnside.
+Agora, temos todos os números de pontos fixos para todas as operações. Nós os substituímos na fórmula do [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/).
 
 $$
 |X/G| = \frac{|X^{R_0}| + |X^{R_{90}}| + |X^{R_{180}}| + |X^{R_{270}}|}{|G|}
@@ -188,7 +188,7 @@ $$
 
 Coincidentemente, neste caso específico (4 miçangas, 2 cores), verificou-se que os tipos essencialmente distintos permanecem **$6$ maneiras** mesmo quando a reflexão é considerada. Isso ocorre porque todos os $6$ padrões que encontramos anteriormente já incluíam seus próprios padrões refletidos (se a rotação for incluída). No entanto, se o número de miçangas ou cores aumentar, os resultados diferirão muito entre o grupo de apenas rotações $C_n$ e o grupo diédrico $D_n$.
 
-## 8. Esboço da Prova do Lema de Burnside
+## 8. Esboço da Prova do [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/)
 
 Por que tirar a "média do número de pontos fixos" resulta no "número de órbitas"? Por trás disso está um teorema muito importante na teoria dos grupos chamado de **"Teorema de Órbita-Estabilizador"**.
 
@@ -215,27 +215,27 @@ $$
 |G| \sum_{x \in X} \frac{1}{|O_x|} = |G| \times |X/G|
 $$
 
-Dividindo ambos os lados por $|G|$, obtemos a fórmula para o Lema de Burnside. É um desenvolvimento lógico muito bonito e sofisticado.
+Dividindo ambos os lados por $|G|$, obtemos a fórmula para o [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/). É um desenvolvimento lógico muito bonito e sofisticado.
 
 ## 9. Desenvolvimento para o Teorema de Enumeração de Pólya
 
-O Lema de Burnside é poderoso, mas encontrar manualmente o número de pontos fixos um a um torna-se difícil à medida que a escala do problema aumenta. Por exemplo, para um problema como "De quantas maneiras há para pintar cada face de um dodecaedro regular com 3 cores?", existem 60 tipos de operações de rotação, tornando o cálculo enorme.
+O [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/) é poderoso, mas encontrar manualmente o número de pontos fixos um a um torna-se difícil à medida que a escala do problema aumenta. Por exemplo, para um problema como "De quantas maneiras há para pintar cada face de um dodecaedro regular com 3 cores?", existem 60 tipos de operações de rotação, tornando o cálculo enorme.
 
 Generalizar isso ainda mais e permitir o cálculo mecânico usando polinômios algébricos (Índice de Ciclo) é o **"Teorema de Enumeração de Pólya"**.
 
-O Lema de Burnside é um passo importante para a compreensão do teorema de Pólya, estabelecendo as bases para a enumeração da teoria dos grupos.
+O [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/) é um passo importante para a compreensão do teorema de Pólya, estabelecendo as bases para a enumeração da teoria dos grupos.
 
-## 10. Antecedentes Históricos do Lema de Burnside
+## 10. Antecedentes Históricos do [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/)
 
 Na verdade, este teorema não foi descoberto pela primeira vez por William Burnside. Ele foi introduzido no livro de Burnside "Teoria dos Grupos de Ordem Finita", publicado em 1897, e se tornou amplamente popularizado, e é por isso que leva o seu nome.
 
-No entanto, historicamente, Augustin-Louis Cauchy já havia publicado um caso especial desse teorema (em relação a grupos simétricos) em 1845, e mais tarde em 1887 Ferdinand Georg Frobenius deu uma prova para grupos finitos em geral.
+No entanto, historicamente, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) já havia publicado um caso especial desse teorema (em relação a grupos simétricos) em 1845, e mais tarde em 1887 Ferdinand Georg Frobenius deu uma prova para grupos finitos em geral.
 
 Portanto, aqueles que tentam ser rigorosos sobre a história da matemática às vezes chamam de brincadeira esse teorema de **"Lema de Cauchy-Frobenius"** ou **"O Lema que não é de Burnside"**. Independentemente da origem de seu nome, a magnitude do papel que este lema tem desempenhado na história da teoria dos grupos e combinatória é imensurável.
 
 ## 11. Exemplo 2: Colorindo as Faces de um Cubo
 
-Para perceber ainda mais o poder do Lema de Burnside, vamos dar outro exemplo famoso. É o problema: "De quantas maneiras há para pintar as 6 faces de um cubo com 2 cores, vermelho e azul?" Aqui também, tratamos aqueles que se tornam os mesmos quando rotacionados como idênticos.
+Para perceber ainda mais o poder do [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/), vamos dar outro exemplo famoso. É o problema: "De quantas maneiras há para pintar as 6 faces de um cubo com 2 cores, vermelho e azul?" Aqui também, tratamos aqueles que se tornam os mesmos quando rotacionados como idênticos.
 
 O grupo de rotação de um cubo consiste nas seguintes 24 operações:
 1. **Não fazer nada**: 1 operação
@@ -245,17 +245,17 @@ O grupo de rotação de um cubo consiste nas seguintes 24 operações:
 
 Há um total de $1 + 9 + 8 + 6 = 24$ elementos ($|G| = 24$).
 
-Calculando o número de pontos fixos (colorações em que as cores não mudam) para cada operação de rotação e tirando a média, o número total de maneiras de colorir o cubo pode ser encontrado. Mesmo para um problema que é extremamente difícil de contar intuitivamente, o uso do Lema de Burnside reduz isso a problemas "locais" de simetria ao longo de cada eixo de rotação. Como resultado, sabe-se que o número de maneiras de colorir este cubo é de **$10$ maneiras**.
+Calculando o número de pontos fixos (colorações em que as cores não mudam) para cada operação de rotação e tirando a média, o número total de maneiras de colorir o cubo pode ser encontrado. Mesmo para um problema que é extremamente difícil de contar intuitivamente, o uso do [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/) reduz isso a problemas "locais" de simetria ao longo de cada eixo de rotação. Como resultado, sabe-se que o número de maneiras de colorir este cubo é de **$10$ maneiras**.
 
 ## 12. Conclusão
 
-O que você achou? Neste artigo, usando o número de designs de colares como exemplo, explicamos detalhadamente o Lema de Burnside.
+O que você achou? Neste artigo, usando o número de designs de colares como exemplo, explicamos detalhadamente o [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/).
 
 *   Permutações e combinações simples não lidam bem com duplicações devido à simetria.
 *   A simetria pode ser descrita matematicamente usando um **"Grupo"**.
-*   Usando o **Lema de Burnside**, o número de padrões essencialmente diferentes pode ser calculado pelo procedimento mecânico de "calcular a média do número de pontos fixos em cada operação".
+*   Usando o **[Lema de Burnside](https://kenji.blog/p/burnsides-lemma/)**, o número de padrões essencialmente diferentes pode ser calculado pelo procedimento mecânico de "calcular a média do número de pontos fixos em cada operação".
 *   Este teorema baseia-se numa propriedade profunda da teoria dos grupos chamada Teorema de Órbita-Estabilizador.
 
-O Lema de Burnside é um teorema muito prático aplicado a uma ampla gama de campos, como enumerar isômeros moleculares na química, determinar o isomorfismo de grafos na teoria de grafos e até mesmo a mecânica estatística na física.
+O [Lema de Burnside](https://kenji.blog/p/burnsides-lemma/) é um teorema muito prático aplicado a uma ampla gama de campos, como enumerar isômeros moleculares na química, determinar o isomorfismo de grafos na teoria de grafos e até mesmo a mecânica estatística na física.
 
 Através dos conceitos básicos introduzidos desta vez, esperamos que você possa ter um vislumbre de como o campo da matemática chamado "Teoria dos Grupos", que tende a parecer abstrato, pode resolver de forma brilhante problemas concretos do mundo real.

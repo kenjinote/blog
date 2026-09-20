@@ -94,7 +94,7 @@ Pour le codage, des performances de 1000Hz sont plus que suffisantes, mais cela 
 
 Le **N-Key Rollover (NKRO)** est une fonctionnalité garantissant que lorsque plusieurs touches sont pressées simultanément, toutes sont reconnues avec précision. Dans le passé, en raison des limites de la connexion USB, il y avait des restrictions telles que "jusqu'à 6 touches", mais les claviers haut de gamme actuels permettent une pression simultanée pratiquement illimitée (Full NKRO) en manipulant astucieusement les rapports HID USB.
 
-Pour les ingénieurs qui utilisent beaucoup de raccourcis complexes (ex: `Ctrl + Shift + Alt + une touche quelconque`) dans des éditeurs comme Vim ou Emacs, un NKRO complet est une condition indispensable.
+[Pour les ingénieurs](https://kenji.blog/p/[エンジニア向け](https://kenji.blog/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)プロンプトエンジニアリングの基本と開発への応用/) qui utilisent beaucoup de raccourcis complexes (ex: `Ctrl + Shift + Alt + une touche quelconque`) dans des éditeurs comme Vim ou Emacs, un NKRO complet est une condition indispensable.
 
 ### 2.3 Délai anti-rebond (Debounce Delay)
 

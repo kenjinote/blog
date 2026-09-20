@@ -52,11 +52,11 @@ Kompleksitas waktu dari algoritma ini adalah $O(\sqrt{N})$. Jika $N \le 10^{12}$
 
 # 2. Uji Fermat: Awal dari Pengujian Keprimaan Probabilistik
 
-Untuk mengatasi batasan metode pembagian coba-coba, "Algoritma Probabilistik (Probabilistic Algorithm)" menggunakan teorema teori bilangan dirancang. Perwakilan dari ini adalah "Uji Keprimaan Fermat (Fermat Primality Test)", yang menggunakan Teorema Kecil Fermat.
+Untuk mengatasi batasan metode pembagian coba-coba, "Algoritma Probabilistik (Probabilistic Algorithm)" menggunakan teorema teori bilangan dirancang. Perwakilan dari ini adalah "Uji Keprimaan Fermat (Fermat Primality Test)", yang menggunakan [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/).
 
-## Teorema Kecil Fermat (Fermat's Little Theorem)
+## [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-Teorema yang ditemukan oleh Pierre de Fermat ini menyatakan sebagai berikut.
+Teorema yang ditemukan oleh [Pierre de Fermat](https://kenji.blog/p/fermat/) ini menyatakan sebagai berikut.
 
 > Untuk sembarang bilangan prima $p$ dan sembarang bilangan bulat $a$ yang koprima dengannya (bukan kelipatan $p$), kongruensi berikut berlaku.
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -98,13 +98,13 @@ Saat ini, ini paling banyak digunakan sebagai algoritma pengujian keprimaan berk
 
 ## Prinsip Matematika
 
-Selain Teorema Kecil Fermat, algoritma Miller-Rabin menggunakan properti bahwa "dalam bidang sisa (residual field) modulo bilangan prima ($\mathbb{Z}/p\mathbb{Z}$), solusi dari $x^2 \equiv 1 \pmod p$ terbatas pada $x \equiv 1$ atau $x \equiv -1$" (jika modulo bilangan komposit, mungkin ada akar kuadrat non-trivial lainnya).
+Selain [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/), algoritma Miller-Rabin menggunakan properti bahwa "dalam bidang sisa (residual field) modulo bilangan prima ($\mathbb{Z}/p\mathbb{Z}$), solusi dari $x^2 \equiv 1 \pmod p$ terbatas pada $x \equiv 1$ atau $x \equiv -1$" (jika modulo bilangan komposit, mungkin ada akar kuadrat non-trivial lainnya).
 
 Jika Anda mengurangi $1$ dari bilangan ganjil $N$ yang akan diuji, $N-1$ selalu menjadi genap. Oleh karena itu, $N-1$ dibagi dengan $2$ sebanyak mungkin, dan dinyatakan dalam bentuk berikut.
 $$ N-1 = d \cdot 2^s $$
 (Di mana $d$ ganjil dan $s \ge 1$)
 
-Untuk basis acak $a$ ($1 < a < N-1$), diverifikasi apakah $a^{N-1} \equiv 1 \pmod N$ sesuai dengan Teorema Kecil Fermat, tetapi perhitungannya dilakukan secara bertahap.
+Untuk basis acak $a$ ($1 < a < N-1$), diverifikasi apakah $a^{N-1} \equiv 1 \pmod N$ sesuai dengan [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/), tetapi perhitungannya dilakukan secara bertahap.
 Secara khusus, ini terus mengkuadratkan dalam urutan: $a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$.
 
 Kondisi agar Uji Miller-Rabin menentukan $N$ sebagai "prima (atau kemungkinkan besar prima)" adalah jika **salah satu** dari hal berikut berlaku.

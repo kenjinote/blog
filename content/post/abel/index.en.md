@@ -10,7 +10,7 @@ tags: ["Abel", "Algebra", "History", "Math"]
 
 # 1. Introduction: The Young Genius Abel
 
-In the history of mathematics, there are a few geniuses who passed away at a young age but left a decisive impact on future generations. Among them, the Norwegian-born **Niels Henrik Abel** stands alongside Évariste Galois as one of the most famous tragic geniuses. In his short life of only 26 years, he proved that "there is no general algebraic solution for equations of degree five or higher," a problem that had plagued mathematicians for centuries.
+In the history of mathematics, there are a few geniuses who passed away at a young age but left a decisive impact on future generations. Among them, the Norwegian-born **[Niels Henrik Abel](https://kenji.blog/p/abel/)** stands alongside [Évariste Galois](https://kenji.blog/p/galois/) as one of the most famous tragic geniuses. In his short life of only 26 years, he proved that "there is no general algebraic solution for equations of degree five or higher," a problem that had plagued mathematicians for centuries.
 
 In this article, we will delve into Abel's life, driven by his passion for mathematics despite poverty and illness, and his monumental achievements such as "Abelian groups" and "Abelian integrals."
 
@@ -18,7 +18,7 @@ In this article, we will delve into Abel's life, driven by his passion for mathe
 
 ## 2.1 Early Childhood and Meeting His Mentor Holmboe
 
-Niels Henrik Abel was born on August 5, 1802, in the small Norwegian village of Finnøy, as the son of a pastor. Norway at the time was economically impoverished, and Abel's family was no exception.
+[Niels Henrik Abel](https://kenji.blog/p/abel/) was born on August 5, 1802, in the small Norwegian village of Finnøy, as the son of a pastor. Norway at the time was economically impoverished, and Abel's family was no exception.
 
 His destiny changed significantly when he entered the Cathedral School in Oslo in 1817 and met his mathematics teacher, **Bernt Michael Holmboe**. Holmboe immediately recognized Abel's extraordinary talent and taught him university-level advanced mathematics. By devouring the works of masters like Euler, Lagrange, and Laplace, Abel quickly absorbed cutting-edge mathematics.
 
@@ -49,7 +49,7 @@ It is generally impossible to express the roots of this equation in a finite num
 
 # 4. Journey to Europe and Meeting Crelle
 
-In 1825, Abel obtained a scholarship from the Norwegian government and had the opportunity to study in continental Europe. His goal was to visit Paris, the center of mathematics at the time, and Göttingen, where the great mathematician Carl Friedrich Gauss resided.
+In 1825, Abel obtained a scholarship from the Norwegian government and had the opportunity to study in continental Europe. His goal was to visit Paris, the center of mathematics at the time, and Göttingen, where the great mathematician [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) resided.
 
 Abel sent his paper to Gauss, but Gauss ignored it without even reading it. Giving up on meeting Gauss, Abel headed to Berlin.
 
@@ -59,7 +59,7 @@ In Berlin, he met **August Leopold Crelle**, a civil engineer and passionate mat
 
 In 1826, Abel arrived in Paris. Here he submitted a paper to the French Academy of Sciences on a "Broad theorem concerning transcendental functions," which could be considered his masterpiece. This paper contained groundbreaking content that would later be known as **Abel's theorem**.
 
-However, misfortune struck again. The great mathematician **Augustin-Louis Cauchy**, who was assigned to review it, misplaced Abel's paper in a pile of documents in his room and never reviewed it.
+However, misfortune struck again. The great mathematician **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)**, who was assigned to review it, misplaced Abel's paper in a pile of documents in his room and never reviewed it.
 
 Driven out by despair, lack of funds, and the creeping disease of tuberculosis, Abel was forced to leave Paris.
 
@@ -107,4 +107,4 @@ This theorem is still frequently used today in theories such as analytic continu
 
 # 8. Conclusion
 
-Niels Henrik Abel's life was truly fitting of the word "tragedy." However, the passion he poured into mathematics and the numerous theorems he produced will never fade. The theories he left behind continue to provide new inspiration to mathematicians to this day.
+[Niels Henrik Abel](https://kenji.blog/p/abel/)'s life was truly fitting of the word "tragedy." However, the passion he poured into mathematics and the numerous theorems he produced will never fade. The theories he left behind continue to provide new inspiration to mathematicians to this day.

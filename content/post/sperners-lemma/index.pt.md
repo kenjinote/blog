@@ -10,7 +10,7 @@ tags: ["topologia", "combinatória", "teorema-do-ponto-fixo"]
 
 # 1. Introdução: O Mistério da Matemática a Partir de um Quebra-Cabeça
 
-A beleza da matemática muitas vezes reside em como regras extremamente simples podem levar a resultados profundos e completamente inesperados. Um dos exemplos mais icônicos disso é o **Lema de Sperner** (Sperner's Lemma). Publicado em 1928 pelo matemático alemão Emanuel Sperner, este lema, à primeira vista, parece não ser mais do que um "quebra-cabeça de colorir triângulos" que até mesmo um estudante do ensino fundamental poderia entender.
+A beleza da matemática muitas vezes reside em como regras extremamente simples podem levar a resultados profundos e completamente inesperados. Um dos exemplos mais icônicos disso é o **Lema de Sperner** ([Sperner's Lemma](https://kenji.blog/p/sperners-lemma/)). Publicado em 1928 pelo matemático alemão Emanuel Sperner, este lema, à primeira vista, parece não ser mais do que um "quebra-cabeça de colorir triângulos" que até mesmo um estudante do ensino fundamental poderia entender.
 
 No entanto, este simples quebra-cabeça ocupa uma posição extremamente importante na matemática moderna. Em particular, serve como uma ferramenta poderosa para uma prova combinatória e construtiva do **Teorema do Ponto Fixo de Brouwer** (Brouwer Fixed-Point Theorem), que é um teorema fundamental na topologia e é amplamente aplicado em campos como a teoria dos jogos na economia (como na demonstração da existência do Equilíbrio de Nash).
 
@@ -67,7 +67,7 @@ Uma coloração que segue estas regras é chamada de **Coloração de Sperner** 
 
 # 4. A Afirmação do Lema de Sperner
 
-Quando você termina de colorir de acordo com as regras da coloração de Sperner, que fenômeno ocorre? O Lema de Sperner afirma o seguinte fato surpreendente.
+Quando você termina de colorir de acordo com as regras da coloração de Sperner, que fenômeno ocorre? [O Lema de Sperner](https://kenji.blog/p/sperners-lemma/) afirma o seguinte fato surpreendente.
 
 > **Lema de Sperner (2D)**
 > Em qualquer coloração de Sperner, o número de pequenos triângulos onde os três vértices são pintados com cores diferentes (cor 1, cor 2 e cor 3) **deve ser um número ímpar**.
@@ -135,7 +135,7 @@ Com isso, fica perfeitamente provado que existe pelo menos um triângulo complet
 
 # 6. Generalização para Dimensões Superiores
 
-O Lema de Sperner não se limita a triângulos 2D, mas é válido para qualquer simplexo $n$-dimensional.
+[O Lema de Sperner](https://kenji.blog/p/sperners-lemma/) não se limita a triângulos 2D, mas é válido para qualquer simplexo $n$-dimensional.
 
 No caso de um simplexo $n$-dimensional (por exemplo, um tetraedro para $n=3$), há $n+1$ vértices, e usamos $n+1$ cores, $1, 2, \dots, n+1$.
 A condição de fronteira é generalizada da seguinte forma: "Os vértices em qualquer face $k$-dimensional (faceta) devem usar apenas as mesmas cores que os $k+1$ vértices que constituem essa face."
@@ -186,6 +186,6 @@ Além disso, a "existência do Equilíbrio de Nash" provada por John Nash na eco
 
 # 9. Conclusão
 
-O Lema de Sperner começa com uma configuração quase parecida com um jogo de colorir os vértices de um triângulo de acordo com as regras. No entanto, dentro dessa simples lógica de "contar o número de portas", ocultavam-se verdades profundas sobre a continuidade e invariância do espaço.
+[O Lema de Sperner](https://kenji.blog/p/sperners-lemma/) começa com uma configuração quase parecida com um jogo de colorir os vértices de um triângulo de acordo com as regras. No entanto, dentro dessa simples lógica de "contar o número de portas", ocultavam-se verdades profundas sobre a continuidade e invariância do espaço.
 
 Matemática discreta e matemática contínua. O fato de esses dois mundos aparentemente completamente diferentes estarem conectados por um teorema tão belo é, indiscutivelmente, um dos maiores atrativos da matemática como disciplina. Incentivamos os leitores a pegar papel e caneta, dividir um triângulo arbitrariamente e pintá-lo de 3 cores. Quando você encontrar o "triângulo completo" que sempre se esconde lá, você também deverá ser capaz de tocar o mistério da matemática.

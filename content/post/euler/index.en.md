@@ -10,7 +10,7 @@ tags: ["Euler", "History of Mathematics", "Genius", "Physics"]
 
 ## Introduction
 
-When looking back at the history of mathematics, it is absolutely impossible to omit the name of **Leonhard Euler** (1707–1783). He is widely recognized as one of the most prolific and influential mathematicians in human history. From calculus and number theory to graph theory, mechanics, optics, and astronomy, his inquisitive mind and footprints extend to every field of science.
+When looking back at the history of mathematics, it is absolutely impossible to omit the name of **[Leonhard Euler](https://kenji.blog/p/euler/)** (1707–1783). He is widely recognized as one of the most prolific and influential mathematicians in human history. From calculus and number theory to graph theory, mechanics, optics, and astronomy, his inquisitive mind and footprints extend to every field of science.
 
 In this article, we will delve deeply into the turbulent life of the genius Euler and the brilliant achievements he left for future generations. The laws and formulas he discovered form the foundation of today's science and technology, making his work deeply relevant to those of us living in the modern world.
 
@@ -72,9 +72,9 @@ $$
 
 With this discovery, he instantly captured the attention of all of Europe.
 
-### 4.2 The Seven Bridges of Königsberg
+### 4.2 The [Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)
 
-In 1736, Euler solved a puzzle known as "The Seven Bridges of Königsberg." The problem was: "Is it possible to walk across all seven bridges over the Pregel River exactly once and return to the starting point?"
+In 1736, Euler solved a puzzle known as "The [Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)." The problem was: "Is it possible to walk across all seven bridges over the Pregel River exactly once and return to the starting point?"
 
 Euler modeled this problem as an abstract network, treating the landmasses as "vertices" (nodes) and the bridges as "edges".
 
@@ -93,12 +93,12 @@ He mathematically proved that for a path to cross every bridge exactly once (an 
 
 This discovery was groundbreaking, laying the foundation for modern **graph theory** and **topology**.
 
-### 4.3 Euler's Identity
+### 4.3 [Euler's Identity](https://kenji.blog/p/eulers-identity/)
 
-Often praised as the "most beautiful formula" in mathematics is **Euler's Identity**.
+Often praised as the "most beautiful formula" in mathematics is **[Euler's Identity](https://kenji.blog/p/eulers-identity/)**.
 
 $$
-e^{i\pi} + 1 = 0 \quad (\text{Euler's Identity})
+e^{i\pi} + 1 = 0 \quad (\text{[Euler's Identity](https://kenji.blog/p/eulers-identity/)})
 $$
 
 This short equation elegantly connects five deeply important mathematical constants:
@@ -133,6 +133,6 @@ In the math textbooks we study today, Euler's breath can be felt everywhere. Wit
 
 ## Conclusion
 
-Leonhard Euler was not just a calculating genius; he possessed extraordinary intuition and insight, allowing him to discern the essential structures within complex phenomena and express them as beautiful formulas and concepts.
+[Leonhard Euler](https://kenji.blog/p/euler/) was not just a calculating genius; he possessed extraordinary intuition and insight, allowing him to discern the essential structures within complex phenomena and express them as beautiful formulas and concepts.
 
 Even in the desperate situation of losing his eyesight, Euler never lost his passion for mathematics, continuing to soar through the universe of the mind with incredible memory and concentration. The beautiful formulas and theorems he left behind will forever shine as the intellectual property of humanity. His life teaches us how incredibly powerful and noble the human spirit can be.

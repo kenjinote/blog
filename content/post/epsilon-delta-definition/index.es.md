@@ -28,11 +28,11 @@ En este artículo, exploraremos por qué la definición intuitiva es insuficient
 
 ## 2. Historia del Cálculo y la Crisis del Rigor
 
-Cuando Isaac Newton y Gottfried Leibniz fundaron el cálculo en el siglo XVII, dependían en gran medida del concepto de "infinitesimales" (cantidades que son infinitamente pequeñas pero no cero). Si bien sus cálculos produjeron resultados notables en física y geometría, la base matemática era extremadamente frágil.
+Cuando [Isaac Newton](https://kenji.blog/p/newton/) y [Gottfried Leibniz](https://kenji.blog/p/leibniz/) fundaron el cálculo en el siglo XVII, dependían en gran medida del concepto de "infinitesimales" (cantidades que son infinitamente pequeñas pero no cero). Si bien sus cálculos produjeron resultados notables en física y geometría, la base matemática era extremadamente frágil.
 
 El filósofo George Berkeley criticó severamente este concepto de infinitesimales en ese momento, llamándolos los " **fantasmas de cantidades que se han desvanecido** ". Señaló la inconsistencia lógica de tratarlos como cantidades distintas de cero durante la división en medio de un cálculo, solo para descartarlos convenientemente como cero al final.
 
-El cálculo continuó desarrollándose a lo largo del siglo XVIII, pero al entrar en el siglo XIX, se descubrieron una tras otra "funciones patológicas" que no podían manejarse solo por intuición, lo que aumentó la sensación de crisis de los matemáticos. Para superar esto, Augustin-Louis Cauchy y Karl Weierstrass desterraron el dudoso concepto de infinitesimales y reconstruyeron el cálculo utilizando únicamente las propiedades de los números reales y las desigualdades. Esto marcó el nacimiento de la definición $\varepsilon-\delta$.
+El cálculo continuó desarrollándose a lo largo del siglo XVIII, pero al entrar en el siglo XIX, se descubrieron una tras otra "funciones patológicas" que no podían manejarse solo por intuición, lo que aumentó la sensación de crisis de los matemáticos. Para superar esto, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) y [Karl Weierstrass](https://kenji.blog/p/weierstrass/) desterraron el dudoso concepto de infinitesimales y reconstruyeron el cálculo utilizando únicamente las propiedades de los números reales y las desigualdades. Esto marcó el nacimiento de la definición $\varepsilon-\delta$.
 
 ## 3. La Definición Formal ε-δ
 

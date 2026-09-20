@@ -8,9 +8,9 @@ categories: ["mathematics", "biography"]
 tags: ["Siegel", "Zahlentheorie", "Mathematiker", "Himmelsmechanik", "analytische Zahlentheorie", "diophantische Gleichungen"]
 ---
 
-## 1. Einleitung: Wer ist Carl Ludwig Siegel?
+## 1. Einleitung: Wer ist [Carl Ludwig Siegel](https://kenji.blog/p/siegel/)?
 
-Carl Ludwig Siegel (31. Dezember 1896 – 4. April 1981) war einer der herausragendsten deutschen Mathematiker des 20. Jahrhunderts und hinterließ ein gewaltiges Vermächtnis in der mathematischen Welt. Seine Forschung konzentrierte sich hauptsächlich auf die Zahlentheorie (analytische und algebraische Zahlentheorie), diophantische Gleichungen, diophantische Approximationen und die Himmelsmechanik (komplexe dynamische Systeme). Seine Errungenschaften nehmen auch in der modernen Mathematik weiterhin eine äußerst wichtige Stellung ein.
+[Carl Ludwig Siegel](https://kenji.blog/p/siegel/) (31. Dezember 1896 – 4. April 1981) war einer der herausragendsten deutschen Mathematiker des 20. Jahrhunderts und hinterließ ein gewaltiges Vermächtnis in der mathematischen Welt. Seine Forschung konzentrierte sich hauptsächlich auf die Zahlentheorie (analytische und algebraische Zahlentheorie), diophantische Gleichungen, diophantische Approximationen und die Himmelsmechanik (komplexe dynamische Systeme). Seine Errungenschaften nehmen auch in der modernen Mathematik weiterhin eine äußerst wichtige Stellung ein.
 
 Siegel war bekannt für seine erstaunliche Rechenleistung, seine tiefe Einsicht und seine Fähigkeit, komplexe analytische Techniken meisterhaft zu handhaben. In einer mathematischen Landschaft des 20. Jahrhunderts, die sich rasch in Richtung Abstraktion und Axiomatisierung bewegte, legte er vor allem Wert auf konkretes Problemlösen und die Verfeinerung klassischer Methoden und bewahrte sich einen entschieden unabhängigen Stil. Er ist auch berühmt für seine starke Kritik an der extremen Abstraktion, die von der französischen Mathematikergruppe Bourbaki gefördert wurde. Dieser Artikel befasst sich eingehend mit seinen außergewöhnlichen mathematischen Leistungen neben Episoden aus seinem turbulenten Leben.
 
@@ -20,7 +20,7 @@ Siegel war bekannt für seine erstaunliche Rechenleistung, seine tiefe Einsicht 
 
 Siegel wurde 1896 in Berlin im Deutschen Kaiserreich geboren. Schon früh zeigte er außergewöhnliches Talent in Mathematik und Naturwissenschaften und trat 1915 in die Humboldt-Universität zu Berlin (Berliner Universität) ein. Dort hatte er das Glück, bei einigen der größten Gelehrten dieser Zeit zu lernen, darunter der Physiker Max Planck und der Meister der Algebra und Gruppentheorie, Ferdinand Georg Frobenius. Zunächst interessierte sich Siegel auch für Astronomie und Physik, doch Frobenius' leidenschaftliche Vorlesungen weckten ein tiefes Interesse an der Zahlentheorie und wurden zum entscheidenden Auslöser für ihn, einen Weg in der Mathematik einzuschlagen.
 
-Der Ausbruch des Ersten Weltkriegs erzwang jedoch eine Unterbrechung seines Studiums. 1917 wurde Siegel zum Militärdienst eingezogen, den er jedoch aufgrund seiner starken Antikriegsgesinnung und seiner persönlichen Überzeugung verweigerte. Damals war die Verweigerung des Militärdienstes in Deutschland ein schweres Verbrechen, und er musste die harte Tortur der Einweisung in eine psychiatrische Klinik ertragen. Aus dieser verzweifelten Situation wurde er durch den bedeutenden Mathematiker Edmund Landau gerettet. Durch Landaus Bemühungen befreit, wechselte Siegel 1917 an die Universität Göttingen. Göttingen war damals ein weltweites Mekka der Mathematik und die Heimat von Giganten wie David Hilbert und Felix Klein. In diesem Umfeld florierte Siegel und ließ seine Talente wahrhaft aufblühen.
+Der Ausbruch des Ersten Weltkriegs erzwang jedoch eine Unterbrechung seines Studiums. 1917 wurde Siegel zum Militärdienst eingezogen, den er jedoch aufgrund seiner starken Antikriegsgesinnung und seiner persönlichen Überzeugung verweigerte. Damals war die Verweigerung des Militärdienstes in Deutschland ein schweres Verbrechen, und er musste die harte Tortur der Einweisung in eine psychiatrische Klinik ertragen. Aus dieser verzweifelten Situation wurde er durch den bedeutenden Mathematiker Edmund Landau gerettet. Durch Landaus Bemühungen befreit, wechselte Siegel 1917 an die Universität Göttingen. Göttingen war damals ein weltweites Mekka der Mathematik und die Heimat von Giganten wie [David Hilbert](https://kenji.blog/p/hilbert/) und Felix Klein. In diesem Umfeld florierte Siegel und ließ seine Talente wahrhaft aufblühen.
 
 ```mermaid
 graph TD
@@ -46,7 +46,7 @@ In den USA wurde er am Institute for Advanced Study (IAS) in Princeton, New Jers
 
 Nach dem Ende des Zweiten Weltkriegs entschied sich Siegel, nicht dauerhaft in den USA zu bleiben, und traf 1951 die wichtige Entscheidung, in seine Heimat Deutschland zurückzukehren. Er kehrte als Professor an die Universität Göttingen zurück, an der er einst studiert hatte, und widmete sich dem Wiederaufbau der deutschen Mathematikergemeinschaft, die durch den Krieg zerstört worden war. Er setzte seine energischen Forschungsaktivitäten fort und bildete viele herausragende Nachfolger aus. Seine Vorlesungen waren rigoros und klar, was ihm den tiefen Respekt seiner Studenten einbrachte.
 
-In Anerkennung seiner außergewöhnlichen Lebensleistungen wurde ihm 1978 gemeinsam mit Israel Gelfand der erste Wolf-Preis für Mathematik verliehen, eine der höchsten Auszeichnungen der mathematischen Welt. Am 4. April 1981 verstarb Carl Ludwig Siegel in Göttingen und beendete damit sein ereignisreiches 84-jähriges Leben.
+In Anerkennung seiner außergewöhnlichen Lebensleistungen wurde ihm 1978 gemeinsam mit Israel Gelfand der erste Wolf-Preis für Mathematik verliehen, eine der höchsten Auszeichnungen der mathematischen Welt. Am 4. April 1981 verstarb [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) in Göttingen und beendete damit sein ereignisreiches 84-jähriges Leben.
 
 ## 3. Große mathematische Errungenschaften
 
@@ -64,7 +64,7 @@ $$
 
 Während es beispielsweise unendlich viele reelle oder rationale Lösungen für eine elliptische Kurve (Geschlecht $g=1$) wie $x^3 + y^3 = c$ (wobei $c$ eine von Null verschiedene ganze Zahl ist) geben kann, garantiert dieser Satz, dass es bei Beschränkung auf **ganzzahlige Lösungen** immer nur endlich viele geben wird.
 
-Dieses Ergebnis war bahnbrechend hinsichtlich der Endlichkeit von Lösungen diophantischer Gleichungen und wurde zu einem entscheidenden historischen Schritt, der den Weg für den späteren Beweis des Satzes von Mordell-Weil (die Endlichkeit rationaler Punkte auf Kurven des Geschlechts 2 oder höher) durch Gerd Faltings ebnete. Siegel leitete dieses erstaunliche Ergebnis ab, indem er Axel Thues Satz über diophantische Approximationen erheblich erweiterte und ihn mit der Theorie der Jacobivarietäten über abelschen Varietäten kombinierte.
+Dieses Ergebnis war bahnbrechend hinsichtlich der Endlichkeit von Lösungen diophantischer Gleichungen und wurde zu einem entscheidenden historischen Schritt, der den Weg für den späteren Beweis des Satzes von Mordell-Weil (die Endlichkeit rationaler Punkte auf Kurven des Geschlechts 2 oder höher) durch [Gerd Faltings](https://kenji.blog/p/faltings/) ebnete. Siegel leitete dieses erstaunliche Ergebnis ab, indem er Axel Thues Satz über diophantische Approximationen erheblich erweiterte und ihn mit der Theorie der Jacobivarietäten über abelschen Varietäten kombinierte.
 
 ### 3.2 Siegel-Nullstelle
 
@@ -107,11 +107,11 @@ Auch auf dem Gebiet der transzendenten Zahlentheorie bewies er einen extrem star
 
 Die Aussage des Satzes lautet wie folgt: "In einem System simultaner linearer Gleichungen, bei denen die Koeffizienten ganze Zahlen sind, existiert immer eine nichttriviale ganzzahlige Lösung, bei der der Absolutwert jeder Komponente relativ klein ist (entsprechend der Größe der Koeffizienten nach oben beschränkt), wenn die Anzahl der Unbekannten $N$ ausreichend größer ist als die Anzahl der Gleichungen $M$ ( $N > M$ )."
 
-Mit einem eleganten Beweis unter Verwendung des Schubfachprinzips (Dirichletsches Boxprinzip) wird dieses Lemma häufig als unverzichtbares Grundwerkzeug in der modernen Transzendenztheorie verwendet, wie zum Beispiel bei der Konstruktion transzendenter Zahlen, diophantischen Approximationen und später in Alan Bakers Theorie der Linearformen in Logarithmen.
+Mit einem eleganten Beweis unter Verwendung des Schubfachprinzips (Dirichletsches Boxprinzip) wird dieses Lemma häufig als unverzichtbares Grundwerkzeug in der modernen Transzendenztheorie verwendet, wie zum Beispiel bei der Konstruktion transzendenter Zahlen, diophantischen Approximationen und später in [Alan Baker](https://kenji.blog/p/baker/)s Theorie der Linearformen in Logarithmen.
 
 ### 3.5 Himmelsmechanik und das Problem der kleinen Nenner
 
-Siegel beschränkte sich nicht auf die reine Mathematik; er brannte mit einer außergewöhnlichen Besessenheit für die Himmelsmechanik, insbesondere für das Dreikörperproblem, das die Bewegung von Vielteilchensystemen beschreibt. Er entwickelte das von Henri Poincaré pionierhaft begonnene Studium dynamischer Systeme weiter und hinterließ bahnbrechende Ergebnisse bezüglich der Stabilität von Lösungen von Differentialgleichungen.
+Siegel beschränkte sich nicht auf die reine Mathematik; er brannte mit einer außergewöhnlichen Besessenheit für die Himmelsmechanik, insbesondere für das Dreikörperproblem, das die Bewegung von Vielteilchensystemen beschreibt. Er entwickelte das von [Henri Poincaré](https://kenji.blog/p/poincare/) pionierhaft begonnene Studium dynamischer Systeme weiter und hinterließ bahnbrechende Ergebnisse bezüglich der Stabilität von Lösungen von Differentialgleichungen.
 
 1941 bewies er das "Siegelsche Zentrumstheorem" in der analytischen Mechanik und in komplexen dynamischen Systemen. Dies löste die Frage, wann eine holomorphe Funktion in der Umgebung ihres Fixpunktes in der komplexen Ebene linearisierbar ist. In der Taylor-Entwicklung der Funktion tauchen, wenn $\lambda$ den Wert der Ableitung darstellt und $\lambda$ einen Wert nahe einer Einheitswurzel annimmt, sehr kleine Werte im Nenner auf, was zur Divergenz der Reihe führt – ein Phänomen, das als das Problem der "kleinen Nenner" (small divisor problem) bekannt ist.
 
@@ -135,7 +135,7 @@ Aufgrund dieser starken Überzeugung ist das Lesen seiner Arbeiten sehr lohnend;
 
 ## 5. Fazit und Siegels Vermächtnis
 
-Durch sein beispielloses analytisches Talent und seine tiefe Ehrfurcht vor der klassischen Mathematik hinterließ Carl Ludwig Siegel entscheidende, epochemachende Errungenschaften in der Zahlentheorie, der diophantischen Geometrie und der Himmelsmechanik.
+Durch sein beispielloses analytisches Talent und seine tiefe Ehrfurcht vor der klassischen Mathematik hinterließ [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) entscheidende, epochemachende Errungenschaften in der Zahlentheorie, der diophantischen Geometrie und der Himmelsmechanik.
 
 Die zahlreichen Konzepte und Sätze, die seinen Namen tragen, wie die Siegel-Nullstelle, der Satz von Siegel, Siegelsche Modulformen und das Siegelsche Lemma, sind zu einer gemeinsamen Sprache geworden, die von modernen Mathematikern täglich verwendet wird, und dienen als unverzichtbare Grundlagen auch in der laufenden, hochmodernen Forschung.
 

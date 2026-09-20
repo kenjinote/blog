@@ -10,15 +10,15 @@ slug: "maxwells-demon"
 
 ## Pendahuluan
 
-Dalam sejarah fisika, salah satu eksperimen pikiran yang paling terkenal dan banyak diperdebatkan adalah **Iblis Maxwell**. Iblis ini, yang diusulkan oleh fisikawan abad ke-19 James Clerk Maxwell pada tahun 1867, telah membingungkan para fisikawan di seluruh dunia selama bertahun-tahun. Pasalnya, keberadaan iblis ini tampaknya secara langsung melanggar **Hukum Kedua Termodinamika**, salah satu hukum fisika yang paling kokoh dan mengatur ireversibilitas (ketidakbalikan) alam semesta.
+Dalam sejarah fisika, salah satu eksperimen pikiran yang paling terkenal dan banyak diperdebatkan adalah **[Iblis Maxwell](https://kenji.blog/p/maxwells-demon/)**. Iblis ini, yang diusulkan oleh fisikawan abad ke-19 James Clerk Maxwell pada tahun 1867, telah membingungkan para fisikawan di seluruh dunia selama bertahun-tahun. Pasalnya, keberadaan iblis ini tampaknya secara langsung melanggar **Hukum Kedua Termodinamika**, salah satu hukum fisika yang paling kokoh dan mengatur ireversibilitas (ketidakbalikan) alam semesta.
 
 Jika iblis ini benar-benar ada, kita akan mampu mengekstraksi energi panas tak terbatas dari udara dan mengubahnya menjadi kerja, menciptakan "mesin abadi jenis kedua". Hal ini berarti masalah energi akan terselesaikan selamanya, tetapi pada saat yang sama, ini berarti runtuhnya premis hukum fisika yang kita kenal.
 
-Dalam artikel ini, kita akan membahas secara rinci paradoks apa yang disajikan oleh Iblis Maxwell ini, dan bagaimana, setelah sekitar satu abad, ia dipecahkan oleh konsep yang tampaknya tidak berhubungan dengan fisika, yaitu "informasi", dengan menggunakan banyak rumus matematika dan ilustrasi.
+Dalam artikel ini, kita akan membahas secara rinci paradoks apa yang disajikan oleh [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/) ini, dan bagaimana, setelah sekitar satu abad, ia dipecahkan oleh konsep yang tampaknya tidak berhubungan dengan fisika, yaitu "informasi", dengan menggunakan banyak rumus matematika dan ilustrasi.
 
 ## Hukum Kedua Termodinamika dan Hukum Peningkatan Entropi
 
-Untuk memahami dengan benar ancaman dari Iblis Maxwell, mari kita tinjau kembali dasar-dasar **Hukum Kedua Termodinamika** (Hukum Peningkatan Entropi).
+Untuk memahami dengan benar ancaman dari [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/), mari kita tinjau kembali dasar-dasar **Hukum Kedua Termodinamika** (Hukum Peningkatan Entropi).
 
 Hukum Kedua Termodinamika adalah aturan mutlak di alam yang menyatakan, "Entropi (tingkat ketidakteraturan) dalam sistem terisolasi selalu meningkat atau tetap konstan". Jika dinyatakan dalam rumus matematika, bentuknya adalah sebagai berikut:
 
@@ -38,7 +38,7 @@ Di sini, $k_B$ adalah konstanta Boltzmann ($1.38 \times 10^{-23} \ \mathrm{J/K}$
 
 Sebagai contoh sehari-hari, mari kita pertimbangkan secangkir kopi panas dan susu dingin yang dituangkan ke dalam cangkir yang sama. Seiring berjalannya waktu, keduanya akan bercampur secara alami menjadi kafe au lait yang hangat. Dalam proses ini, sistem menjadi lebih tidak teratur dan entropi meningkat. Namun sebaliknya, tidak akan pernah terjadi bahwa kafe au lait yang hangat secara spontan terpisah kembali menjadi kopi panas dan susu dingin. Dengan demikian, fenomena di alam memiliki arah yang ireversibel, dan hal ini diekspresikan dalam bentuk peningkatan entropi.
 
-## Eksperimen Pikiran Iblis Maxwell
+## Eksperimen Pikiran [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/)
 
 Terhadap hukum yang menjadi landasan fisika ini, Maxwell mengusulkan eksperimen pikiran yang cerdik sebagai berikut:
 
@@ -91,13 +91,13 @@ $$
 \Delta S < 0
 $$
 
-Maxwell sendiri bermaksud menggunakan eksperimen pikiran ini untuk menunjukkan bahwa Hukum Kedua Termodinamika bukanlah hukum mekanika absolut, melainkan "hukum probabilistik yang hanya berlaku secara statistik ketika berhadapan dengan molekul dalam jumlah besar". Namun, jika entitas seperti iblis ini dapat diciptakan secara buatan, sebuah "mesin abadi jenis kedua" akan tercipta. Iblis Maxwell menghadirkan kontradiksi yang jelas terhadap Hukum Kedua Termodinamika.
+Maxwell sendiri bermaksud menggunakan eksperimen pikiran ini untuk menunjukkan bahwa Hukum Kedua Termodinamika bukanlah hukum mekanika absolut, melainkan "hukum probabilistik yang hanya berlaku secara statistik ketika berhadapan dengan molekul dalam jumlah besar". Namun, jika entitas seperti iblis ini dapat diciptakan secara buatan, sebuah "mesin abadi jenis kedua" akan tercipta. [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/) menghadirkan kontradiksi yang jelas terhadap Hukum Kedua Termodinamika.
 
 ## Mesin Szilard: Pemerolehan Informasi dan Konversi Kerja
 
 Paradoks iblis ini menenggelamkan para fisikawan dalam jurang kebingungan selama satu abad penuh. Pasalnya, sang iblis hanyalah mengoperasikan pembukaan dan penutupan pintu berdasarkan informasi (secara teoritis, jika pintunya bermassa nol, maka tidak diperlukan energi), dan sama sekali tidak diketahui di bagian sistem mana entropi meningkat.
 
-Langkah pertama menuju pemecahan teka-teki ini diambil pada tahun 1929 oleh fisikawan Leo Szilard. Szilard merancang **Mesin Szilard**, sebuah eksperimen pikiran yang sangat disederhanakan yang mengekstraksi esensi dari Iblis Maxwell.
+Langkah pertama menuju pemecahan teka-teki ini diambil pada tahun 1929 oleh fisikawan Leo Szilard. Szilard merancang **Mesin Szilard**, sebuah eksperimen pikiran yang sangat disederhanakan yang mengekstraksi esensi dari [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/).
 
 Mesin Szilard terdiri dari sebuah silinder yang hanya berisi 1 molekul gas, dan sebuah sekat (piston) yang dapat disisipkan di tengahnya. Prosedurnya adalah sebagai berikut:
 
@@ -146,9 +146,9 @@ $$
 
 "Menuliskan" atau "menghitung" informasi pada prinsipnya dapat dilakukan tanpa menghabiskan energi. Namun, dalam operasi ireversibel berupa "melupakan" atau "menghapus" informasi, harga termodinamika mutlak harus dibayar.
 
-## Kematian Iblis Maxwell dan Akhir dari Paradoks
+## Kematian [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/) dan Akhir dari Paradoks
 
-Pada tahun 1982, Charles Bennett menggunakan Prinsip Landauer untuk akhirnya memukul palu pada paradoks Iblis Maxwell secara utuh.
+Pada tahun 1982, Charles Bennett menggunakan Prinsip Landauer untuk akhirnya memukul palu pada paradoks [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/) secara utuh.
 
 Logika Bennett adalah sebagai berikut:
 
@@ -192,11 +192,11 @@ graph LR
 
 ## Termodinamika Informasi dan Perkembangannya di Masa Depan
 
-Paradoks Iblis Maxwell mengungkapkan bahwa konsep abstrak "informasi" pada akhirnya setara dengan dan berkaitan erat dengan konsep fisik "energi" dan "entropi".
+Paradoks [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/) mengungkapkan bahwa konsep abstrak "informasi" pada akhirnya setara dengan dan berkaitan erat dengan konsep fisik "energi" dan "entropi".
 
 Penemuan epik ini saat ini berkembang pesat sebagai garda depan baru dalam fisika, yaitu **Termodinamika Informasi** dan **Mekanika Statistik Non-Ekuilibrium**.
 
-Baru-baru ini, studi telah dilakukan tentang bagaimana mesin-mesin molekul biologis yang beroperasi di dalam sel hidup, seperti DNA polimerase dan kinesin, menggunakan informasi untuk secara efisien mengubah energi dan menciptakan gerakan searah layaknya Iblis Maxwell. Prinsip-prinsip termodinamika informasi juga sangat terlibat dalam akar fenomena kehidupan.
+Baru-baru ini, studi telah dilakukan tentang bagaimana mesin-mesin molekul biologis yang beroperasi di dalam sel hidup, seperti DNA polimerase dan kinesin, menggunakan informasi untuk secara efisien mengubah energi dan menciptakan gerakan searah layaknya [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/). Prinsip-prinsip termodinamika informasi juga sangat terlibat dalam akar fenomena kehidupan.
 
 Selain itu, batas Landauer, yang merupakan batas energi absolut yang diperlukan untuk pemrosesan informasi, telah menjadi landasan teoretis paling penting dalam mempertimbangkan komputer hemat energi di masa mendatang. Untuk menembus dinding penghalang fisik berupa timbulnya panas secara mendasar karena penghapusan informasi, penelitian tentang "komputasi reversibel" yang tidak menghapus informasi juga terus digalakkan.
 
@@ -206,4 +206,4 @@ Iblis kecil yang dilepaskan oleh Maxwell pada abad ke-19 ini telah menjadi ekspe
 
 "Mengetahui", dan kemudian "melupakan".
 
-Di balik pemrosesan informasi yang selalu kita lakukan sehari-hari, termodinamika—hukum fundamental alam semesta—selalu mengawasi. **Informasi** dan **energi** adalah dua sisi mata uang yang sama. Keterkaitan mendalam ini niscaya akan terus menciptakan revolusi-revolusi baru dalam berbagai bidang di masa depan. Meskipun Iblis Maxwell telah tiada, ia akan terus membukakan pintu pengetahuan yang baru bagi kita.
+Di balik pemrosesan informasi yang selalu kita lakukan sehari-hari, termodinamika—hukum fundamental alam semesta—selalu mengawasi. **Informasi** dan **energi** adalah dua sisi mata uang yang sama. Keterkaitan mendalam ini niscaya akan terus menciptakan revolusi-revolusi baru dalam berbagai bidang di masa depan. Meskipun [Iblis Maxwell](https://kenji.blog/p/maxwells-demon/) telah tiada, ia akan terus membukakan pintu pengetahuan yang baru bagi kita.

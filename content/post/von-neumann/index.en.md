@@ -22,9 +22,9 @@ At the time, Budapest was a global center of culture and scholarship, producing 
 
 ## 3. Contributions to the Foundations of Mathematics: Axiomatic Set Theory
 
-One of von Neumann's most important early achievements was his research on the axiomatization of set theory. Set theory, founded by Georg Cantor, was expected to be the foundation of mathematics, but it faced logical contradictions (paradoxes) such as Russell's paradox. To solve this problem, Ernst Zermelo, Adolf Fraenkel, and others were constructing axiomatic set theory, but von Neumann took a different approach.
+One of von Neumann's most important early achievements was his research on the axiomatization of set theory. Set theory, founded by [Georg Cantor](https://kenji.blog/p/cantor/), was expected to be the foundation of mathematics, but it faced logical contradictions (paradoxes) such as Russell's paradox. To solve this problem, Ernst Zermelo, Adolf Fraenkel, and others were constructing axiomatic set theory, but von Neumann took a different approach.
 
-He introduced the concept of "classes" and brilliantly avoided the paradoxes by strictly distinguishing between normal sets and classes that are too large to be sets (proper classes). This system was later improved by Paul Bernays and Kurt Gödel, and is now known as the **von Neumann–Bernays–Gödel set theory** (NBG set theory).
+He introduced the concept of "classes" and brilliantly avoided the paradoxes by strictly distinguishing between normal sets and classes that are too large to be sets (proper classes). This system was later improved by Paul Bernays and [Kurt Gödel](https://kenji.blog/p/godel/), and is now known as the **von Neumann–Bernays–Gödel set theory** (NBG set theory).
 
 $$
 \forall X \ ( X \in V \iff \exists Y \ (X \in Y) )

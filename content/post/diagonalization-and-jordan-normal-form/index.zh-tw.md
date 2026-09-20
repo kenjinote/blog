@@ -111,11 +111,11 @@ e^{At} = P e^{Dt} P^{-1}
 $$
 對於喬丹區塊，這清晰地展示了 $te^{\lambda t}$ 這類長期項在微分方程式解中出現的機制。
 
-## 凱萊-哈密頓定理與最小多項式
+## [凱萊-哈密頓定理](https://kenji.blog/p/cayley-hamilton-theorem/)與最小多項式
 
 所有的方陣 $A$ 都會滿足其自身的特徵多項式 $p(A) = 0$。**最小多項式** 是判斷矩陣是否可對角化的有力工具。
 
-## 對角化與奇異值分解 (SVD) 的區別
+## 對角化與[奇異值分解 (SVD)](https://kenji.blog/p/singular-value-decomposition/) 的區別
 
 ```mermaid
 graph LR

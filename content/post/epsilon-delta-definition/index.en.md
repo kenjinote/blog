@@ -28,11 +28,11 @@ In this article, we will explore why the intuitive definition is insufficient st
 
 ## 2. History of Calculus and the Crisis of Rigor
 
-When Isaac Newton and Gottfried Leibniz founded calculus in the 17th century, they relied heavily on the concept of "infinitesimals" (quantities that are infinitely small but not zero). While their calculations yielded remarkable results in physics and geometry, the mathematical foundation was extremely fragile.
+When [Isaac Newton](https://kenji.blog/p/newton/) and [Gottfried Leibniz](https://kenji.blog/p/leibniz/) founded calculus in the 17th century, they relied heavily on the concept of "infinitesimals" (quantities that are infinitely small but not zero). While their calculations yielded remarkable results in physics and geometry, the mathematical foundation was extremely fragile.
 
 The philosopher George Berkeley at the time severely criticized this concept of infinitesimals, calling them the " **ghosts of departed quantities** ". He pointed out the logical inconsistency of treating them as non-zero quantities during division in the middle of a calculation, only to conveniently dismiss them as zero at the end.
 
-Calculus continued to develop throughout the 18th century, but entering the 19th century, "pathological functions" that could not be handled by intuition alone were discovered one after another, heightening mathematicians' sense of crisis. To overcome this, Augustin-Louis Cauchy and Karl Weierstrass banished the dubious concept of infinitesimals and reconstructed calculus using only the properties of real numbers and inequalities. This marked the birth of the $\varepsilon-\delta$ definition.
+Calculus continued to develop throughout the 18th century, but entering the 19th century, "pathological functions" that could not be handled by intuition alone were discovered one after another, heightening mathematicians' sense of crisis. To overcome this, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) and [Karl Weierstrass](https://kenji.blog/p/weierstrass/) banished the dubious concept of infinitesimals and reconstructed calculus using only the properties of real numbers and inequalities. This marked the birth of the $\varepsilon-\delta$ definition.
 
 ## 3. The Formal ε-δ Definition
 

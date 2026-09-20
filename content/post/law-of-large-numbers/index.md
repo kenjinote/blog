@@ -15,13 +15,13 @@ tags:
 
 ## 1. はじめに：カジノはなぜ「ギャンブル」をしないのか？
 
-世界中にある豪華絢爛なカジノ。一晩で大金を手にするプレイヤーもいれば、すべてを失うプレイヤーもいます。しかし、カジノの運営側は決して **ギャンブル** をしていません。彼らは確固たる数学的根拠、すなわち **[大数の法則](https://kenji.blog/p/law-of-large-numbers/)（Law of Large Numbers）** に基づいてビジネスを行っています。
+世界中にある豪華絢爛なカジノ。一晩で大金を手にするプレイヤーもいれば、すべてを失うプレイヤーもいます。しかし、カジノの運営側は決して **ギャンブル** をしていません。彼らは確固たる数学的根拠、すなわち **[大数の法則](https://kenji.blog/p/law-of-large-numbers/)（[Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/)）** に基づいてビジネスを行っています。
 
 この記事では、確率論の最も基本的かつ重要な定理である「[大数の法則](https://kenji.blog/p/law-of-large-numbers/)」について、直感的な理解から厳密な数学的定義までを網羅的に解説します。さらに、日常に潜む誤解や、社会でどのように応用されているかについても深く掘り下げます。
 
 ## 2. [大数の法則](https://kenji.blog/p/law-of-large-numbers/)とは何か？
 
-[大数の法則](https://kenji.blog/p/law-of-large-numbers/)（Law of Large Numbers, LLN）とは、簡単に言えば **「試行回数を十分に増やせば、事象の発生確率は理論値（期待値）に収束する」** という法則です。
+[大数の法則](https://kenji.blog/p/law-of-large-numbers/)（[Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), LLN）とは、簡単に言えば **「試行回数を十分に増やせば、事象の発生確率は理論値（期待値）に収束する」** という法則です。
 
 コイン投げを想像してください。表が出る確率は $1/2$（$50\%$）です。しかし、10回投げただけで表が5回、裏が5回出るとは限りません。表が7回出ることもあれば、2回しか出ないこともあります。
 しかし、1万回、10万回と試行を繰り返すと、表が出る割合は限りなく $50\%$ に近づいていきます。
@@ -64,7 +64,7 @@ sequenceDiagram
 
 ## 4. [大数の法則](https://kenji.blog/p/law-of-large-numbers/)の数学的定義
 
-[大数の法則](https://kenji.blog/p/law-of-large-numbers/)には、収束の強さに応じて **大数の弱法則** （Weak Law of Large Numbers, WLLN）と **大数の強法則** （Strong Law of Large Numbers, SLLN）の2種類が存在します。数学的に厳密に表現すると以下のようになります。
+[大数の法則](https://kenji.blog/p/law-of-large-numbers/)には、収束の強さに応じて **大数の弱法則** （Weak [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), WLLN）と **大数の強法則** （Strong [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), SLLN）の2種類が存在します。数学的に厳密に表現すると以下のようになります。
 
 ### 4.1. 大数の弱法則 (WLLN)
 

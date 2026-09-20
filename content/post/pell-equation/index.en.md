@@ -17,7 +17,7 @@ tags:
 
 In the field of number theory, **Pell's equation** is known as one of the most beautiful Diophantine equations with a deep theoretical background. In this article, we will provide a very detailed explanation starting from the basic definition and properties of this equation, to an elegant and efficient solution using continued fractions, and the mechanism for generating its infinitely many solutions. For everyone who loves mathematics, we have covered everything from the derivation of formulas to the visualization of algorithms and implementation using a programming language.
 
-## 1. What is Pell's Equation?
+## 1. What is [Pell's Equation](https://kenji.blog/p/pell-equation/)?
 
 Pell's equation refers to a quadratic Diophantine equation in two variables having the following form:
 
@@ -32,9 +32,9 @@ Since $x$, $y$, and $k$ are all integers, $(x - ky)$ and $(x + ky)$ must also be
 
 ## 2. Historical Background: Pell, Fermat, and Ancient Indian Mathematicians
 
-Although this equation bears the name "Pell," exploring the historical facts reveals a somewhat strange background. Actually, the first person in modern Europe to study a general solution for this equation and strongly assert that a solution always exists was the great French mathematician **Pierre de Fermat**.
+Although this equation bears the name "Pell," exploring the historical facts reveals a somewhat strange background. Actually, the first person in modern Europe to study a general solution for this equation and strongly assert that a solution always exists was the great French mathematician **[Pierre de Fermat](https://kenji.blog/p/fermat/)**.
 
-Later, **Leonhard Euler** mistakenly linked the name of the English mathematician **John Pell** to this equation, and it has been widely known as "Pell's equation" ever since. Pell himself did not play a central role in the method of solving this equation.
+Later, **[Leonhard Euler](https://kenji.blog/p/euler/)** mistakenly linked the name of the English mathematician **John Pell** to this equation, and it has been widely known as "Pell's equation" ever since. Pell himself did not play a central role in the method of solving this equation.
 
 Going further back in time, Indian mathematicians **Brahmagupta** and **Bhāskara II** computed solutions to equations of this type using a sophisticated algorithm called the Chakravala method, hundreds of years before Fermat. The history of exploration by mathematicians from ancient times through the Middle Ages to the modern era is inscribed in this equation.
 
@@ -44,7 +44,7 @@ For Pell's equation $x^2 - ny^2 = 1$, regardless of the value of $n$, there is a
 
 However, what mathematicians are truly interested in is a **non-trivial solution** where $y \neq 0$. Amazingly, if $n$ is a positive integer that is not a perfect square, it has been mathematically proven that Pell's equation has **infinitely many non-trivial solutions**. Moreover, among these infinite solutions, the smallest solution where both $x$ and $y$ are positive integers is called the **fundamental solution**, and once this is found, all other solutions can be easily generated through algebraic operations.
 
-## 4. The Deep Connection Between Continued Fractions and Pell's Equation
+## 4. The Deep Connection Between Continued Fractions and [Pell's Equation](https://kenji.blog/p/pell-equation/)
 
 The most powerful and standard tool for efficiently finding the fundamental solution is the **continued fraction**. Since the irrational number $\sqrt{n}$ cannot be represented by a finite fraction, it can be beautifully expressed as an infinitely continuing periodic regular continued fraction.
 

@@ -54,7 +54,7 @@ flowchart LR
 
 近年、GANを凌駕する画質と安定性を誇り、MidjourneyやStable Diffusionの基盤技術となっているのが「拡散モデル」です。拡散モデルは、データに徐々にノイズを加えていく「前向き拡散プロセス」と、ノイズから元のデータを復元する「逆拡散プロセス」から成り立っています。
 
-**前向き拡散プロセス（Forward Process）** では、クリーンな画像 $x_0$ に対して、時間ステップ $t$ ごとに[ガウス](https://kenji.blog/p/gauss/)ノイズを加えていきます。この過程はマルコフ連鎖として以下の数式で表されます。
+**前向き拡散プロセス（Forward Process）** では、クリーンな画像 $x_0$ に対して、時間ステップ $t$ ごとに[ガウス](https://kenji.blog/p/gauss/)ノイズを加えていきます。この過程は[マルコフ連鎖](https://kenji.blog/p/markov-chain/)として以下の数式で表されます。
 
 $$
 q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t \mathbf{I})

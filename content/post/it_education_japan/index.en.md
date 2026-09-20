@@ -142,7 +142,7 @@ While superficial security education like "Let's make passwords complex" and "Do
 
 The HTTPS communications and digital signatures we use every day are protected by public-key cryptography, such as RSA cryptography. The security of RSA relies on the mathematical difficulty (considered an NP-intermediate problem) that "the prime factorization of massive integers cannot be solved within a realistic time frame by current classical computers."
 
-The mathematical formulas underlying RSA cryptography are beautiful applications of Euler's totient function and Fermat's Little Theorem.
+The mathematical formulas underlying RSA cryptography are beautiful applications of Euler's totient function and [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/).
 
 1. Choose two massive prime numbers $p$ and $q$
 2. Calculate $n = p \times q$ (This becomes part of the public key)

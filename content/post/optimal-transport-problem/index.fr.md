@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-Le problème du transport optimal (Optimal Transport Problem) est un problème mathématique qui demande **« comment déplacer de la matière avec un minimum d'effort »** lors du déplacement d'une substance (comme un tas de sable) d'un endroit à un autre (comme un trou).
+Le problème du transport optimal ([Optimal Transport Problem](https://kenji.blog/p/optimal-transport-problem/)) est un problème mathématique qui demande **« comment déplacer de la matière avec un minimum d'effort »** lors du déplacement d'une substance (comme un tas de sable) d'un endroit à un autre (comme un trou).
 
 Il a été posé par le mathématicien français Gaspard Monge au 18ème siècle, et une formulation moderne a été établie par Leonid Kantorovich au 20ème siècle. Aujourd'hui, il est largement appliqué dans des domaines allant de l'allocation des ressources en économie à l'apprentissage automatique.
 

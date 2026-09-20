@@ -10,13 +10,13 @@ tags: ["William Brouncker", "Pi", "Pecahan Berlanjut", "Persamaan Pell", "Royal 
 
 ## 1. Pendahuluan
 
-Eropa abad ke-17 berada di tengah-tengah revolusi ilmiah. Itu adalah era ketika matematika dan fisika membuat lompatan maju yang dramatis, seperti yang dicontohkan oleh penemuan kalkulus oleh Isaac Newton dan Gottfried Wilhelm Leibniz. Di tengah-tengah ini, institusi yang memainkan peran sentral dalam pengembangan akademisi Inggris adalah **The Royal Society**.
+Eropa abad ke-17 berada di tengah-tengah revolusi ilmiah. Itu adalah era ketika matematika dan fisika membuat lompatan maju yang dramatis, seperti yang dicontohkan oleh penemuan kalkulus oleh [Isaac Newton](https://kenji.blog/p/newton/) dan Gottfried Wilhelm Leibniz. Di tengah-tengah ini, institusi yang memainkan peran sentral dalam pengembangan akademisi Inggris adalah **The Royal Society**.
 
-Artikel ini memberikan penjelasan terperinci tentang kehidupan dan pencapaian matematika luar biasa dari **William Brouncker**, yang menjabat sebagai Presiden pertama Royal Society dan meninggalkan jejaknya dalam sejarah sebagai matematikawan dengan "representasi pecahan berlanjut dari Pi" dan "solusi persamaan Pell". Brouncker berinteraksi dengan para pemikir top Eropa pada saat itu dan mengatasi banyak masalah yang menantang. Pencapaiannya berkontribusi secara signifikan dalam meletakkan dasar bagi perlakuan matematis yang ketat terhadap konsep ketakterhinggaan.
+Artikel ini memberikan penjelasan terperinci tentang kehidupan dan pencapaian matematika luar biasa dari **[William Brouncker](https://kenji.blog/p/brouncker/)**, yang menjabat sebagai Presiden pertama Royal Society dan meninggalkan jejaknya dalam sejarah sebagai matematikawan dengan "representasi pecahan berlanjut dari Pi" dan "solusi persamaan Pell". Brouncker berinteraksi dengan para pemikir top Eropa pada saat itu dan mengatasi banyak masalah yang menantang. Pencapaiannya berkontribusi secara signifikan dalam meletakkan dasar bagi perlakuan matematis yang ketat terhadap konsep ketakterhinggaan.
 
 ## 2. Kehidupan Awal dan Karier
 
-William Brouncker (1620 - 5 April 1684) lahir sebagai putra sulung William Brouncker, Viscount Brouncker ke-1, dan Winifred Leigh. Meskipun ada banyak detail yang tidak diketahui tentang tempat kelahiran dan pendidikan awalnya, diyakini bahwa ia belajar di Universitas Oxford, menumbuhkan keterampilan bahasa yang sangat baik dan bakat matematika. Pada tahun 1645, setelah kematian ayahnya, ia menjadi Viscount Brouncker ke-2.
+[William Brouncker](https://kenji.blog/p/brouncker/) (1620 - 5 April 1684) lahir sebagai putra sulung [William Brouncker](https://kenji.blog/p/brouncker/), Viscount Brouncker ke-1, dan Winifred Leigh. Meskipun ada banyak detail yang tidak diketahui tentang tempat kelahiran dan pendidikan awalnya, diyakini bahwa ia belajar di Universitas Oxford, menumbuhkan keterampilan bahasa yang sangat baik dan bakat matematika. Pada tahun 1645, setelah kematian ayahnya, ia menjadi Viscount Brouncker ke-2.
 
 Pada saat itu, Inggris berada dalam periode kacau Revolusi Puritan (Perang Saudara Inggris), tetapi Brouncker lebih mengabdikan dirinya pada dunia akademis daripada panggung politik. Dia memiliki minat yang sangat kuat pada matematika dan musik, mulai membangun teorinya sendiri. Pada tahun 1647, ia dianugerahi gelar Doctor of Medicine dari Universitas Oxford, tetapi minat utamanya selalu berada pada ilmu eksakta. Adik laki-lakinya, Henry Brouncker, juga dikenal aktif di dunia politik dan istana sambil mempertahankan minat pada catur dan matematika.
 
@@ -24,7 +24,7 @@ Pada saat itu, Inggris berada dalam periode kacau Revolusi Puritan (Perang Sauda
 
 Royal Society adalah salah satu perkumpulan ilmiah tertua di dunia, yang didedikasikan untuk meningkatkan pengetahuan alam. Asal-usulnya terletak pada pertemuan yang dibentuk setelah kuliah oleh Christopher Wren di London pada tahun 1660, dan secara resmi diluncurkan pada tahun 1662 setelah menerima Piagam Kerajaan dari Raja Charles II.
 
-Yang terpilih sebagai **Presiden Pertama** perkumpulan bersejarah ini adalah William Brouncker. Di tengah terbentuknya perkumpulan tersebut melalui upaya Robert Moray dan kawan-kawan, Brouncker menjabat sebagai presiden untuk periode yang panjang yaitu selama 15 tahun dari 1662 hingga 1677, mendedikasikan dirinya untuk membangun fondasi perkumpulan.
+Yang terpilih sebagai **Presiden Pertama** perkumpulan bersejarah ini adalah [William Brouncker](https://kenji.blog/p/brouncker/). Di tengah terbentuknya perkumpulan tersebut melalui upaya Robert Moray dan kawan-kawan, Brouncker menjabat sebagai presiden untuk periode yang panjang yaitu selama 15 tahun dari 1662 hingga 1677, mendedikasikan dirinya untuk membangun fondasi perkumpulan.
 
 ```mermaid
 graph TD
@@ -40,7 +40,7 @@ Brouncker memainkan peran penting dalam menyatukan ilmuwan terkemuka seperti Rob
 
 ## 4. Pencapaian Matematika: Representasi Pecahan Berlanjut Pi
 
-Pencapaian matematika paling terkenal dari Brouncker adalah penemuan pecahan berlanjut umum untuk rasio keliling $\pi$. Hal ini diperkenalkan dalam buku *Arithmetica Infinitorum* (1655) oleh matematikawan kontemporer John Wallis, yang membuatnya dikenal luas.
+Pencapaian matematika paling terkenal dari Brouncker adalah penemuan pecahan berlanjut umum untuk rasio keliling $\pi$. Hal ini diperkenalkan dalam buku *Arithmetica Infinitorum* (1655) oleh matematikawan kontemporer [John Wallis](https://kenji.blog/p/wallis/), yang membuatnya dikenal luas.
 
 ### Rumus Wallis dan Transformasi Brouncker
 
@@ -62,9 +62,9 @@ Pecahan berlanjut ini memikat banyak matematikawan dengan keindahan dan keteratu
 
 Pecahan berlanjut adalah alat yang sangat ampuh untuk memperkirakan bilangan irasional. Meskipun rumus Brouncker konvergen dengan sangat lambat dan karenanya tidak cocok untuk perhitungan praktis Pi, rumus ini berdampak besar pada matematika selanjutnya sebagai contoh perintis ekspansi pecahan berlanjut dalam analisis. Euler nantinya akan menggeneralisasi rumus ini lebih jauh, mengembangkan teori pecahan berlanjut secara mendalam.
 
-## 5. Pencapaian Matematika: Menyelesaikan Persamaan Pell
+## 5. Pencapaian Matematika: Menyelesaikan [Persamaan Pell](https://kenji.blog/p/pell-equation/)
 
-Pencapaian signifikan lainnya adalah penyelesaian untuk **persamaan Pell**. Persamaan Pell adalah persamaan Diophantine (persamaan polinomial dengan koefisien bilangan bulat) dengan bentuk berikut untuk bilangan bulat positif $n$ yang bukan merupakan kuadrat sempurna:
+Pencapaian signifikan lainnya adalah penyelesaian untuk **persamaan Pell**. [Persamaan Pell](https://kenji.blog/p/pell-equation/) adalah persamaan Diophantine (persamaan polinomial dengan koefisien bilangan bulat) dengan bentuk berikut untuk bilangan bulat positif $n$ yang bukan merupakan kuadrat sempurna:
 
 $$
 x^2 - n y^2 = 1 \quad (\text{di mana } x, y \text{ adalah bilangan bulat})
@@ -72,7 +72,7 @@ $$
 
 ### Tantangan dari Fermat
 
-Pada tahun 1657, matematikawan besar Prancis Pierre de Fermat mengirimkan tantangan kepada matematikawan Inggris untuk menemukan solusi bilangan bulat untuk persamaan ini. Fermat mengutip kasus-kasus sulit seperti $n=61$ sebagai contoh.
+Pada tahun 1657, matematikawan besar Prancis [Pierre de Fermat](https://kenji.blog/p/fermat/) mengirimkan tantangan kepada matematikawan Inggris untuk menemukan solusi bilangan bulat untuk persamaan ini. Fermat mengutip kasus-kasus sulit seperti $n=61$ sebagai contoh.
 
 ### Algoritma Brouncker
 
@@ -98,13 +98,13 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-Brouncker menunjukkan bahwa bahkan solusi raksasa seperti itu dapat diturunkan secara sistematis menggunakan metodenya. Ironisnya, karena kesalahpahaman oleh Leonhard Euler, persamaan ini kemudian dinamai dengan nama matematikawan Inggris John Pell, tetapi kontribusi terbesar dalam menetapkan metode penyelesaiannya tidak dapat disangkal adalah milik Brouncker.
+Brouncker menunjukkan bahwa bahkan solusi raksasa seperti itu dapat diturunkan secara sistematis menggunakan metodenya. Ironisnya, karena kesalahpahaman oleh [Leonhard Euler](https://kenji.blog/p/euler/), persamaan ini kemudian dinamai dengan nama matematikawan Inggris John Pell, tetapi kontribusi terbesar dalam menetapkan metode penyelesaiannya tidak dapat disangkal adalah milik Brouncker.
 
 ## 6. Pencapaian Lainnya dan Tahun-Tahun Terakhir
 
 ### Kontribusi pada Teori Musik
 
-Brouncker tertarik tidak hanya pada matematika tetapi juga pada teori musik. Dia menerjemahkan *Musicae Compendium* karya René Descartes ke dalam bahasa Inggris dan menerbitkannya secara anonim. Dalam melakukannya, ia tidak hanya menerjemahkannya tetapi juga menambahkan lampiran yang mengusulkan sistem penalaannya sendiri (temperamen setara 17 nada) yang membagi sebuah oktaf menjadi 17 interval yang sama. Ini adalah upaya perintis untuk menganalisis tangga nada musik secara matematis menggunakan logaritma.
+Brouncker tertarik tidak hanya pada matematika tetapi juga pada teori musik. Dia menerjemahkan *Musicae Compendium* karya [René Descartes](https://kenji.blog/p/descartes/) ke dalam bahasa Inggris dan menerbitkannya secara anonim. Dalam melakukannya, ia tidak hanya menerjemahkannya tetapi juga menambahkan lampiran yang mengusulkan sistem penalaannya sendiri (temperamen setara 17 nada) yang membagi sebuah oktaf menjadi 17 interval yang sama. Ini adalah upaya perintis untuk menganalisis tangga nada musik secara matematis menggunakan logaritma.
 
 ### Kuadratur Parabola dan Kurva Logaritma
 
@@ -118,6 +118,6 @@ Di tahun-tahun terakhirnya, bahkan setelah mundur dari jabatan Presiden Royal So
 
 ## 7. Kesimpulan
 
-William Brouncker adalah seorang pemimpin luar biasa dan matematikawan orisinal yang mendorong komunitas ilmiah Inggris abad ke-17. Pencapaiannya dalam meletakkan dasar-dasar sains modern sebagai Presiden pertama Royal Society sangat besar. Selain itu, pencapaian matematikanya, seperti representasi pecahan berlanjut dari Pi dan penyelesaian persamaan Pell, menjadi tonggak penting dalam pengembangan analisis, yang berhubungan dengan konsep ketakterhinggaan, dan teori bilangan.
+[William Brouncker](https://kenji.blog/p/brouncker/) adalah seorang pemimpin luar biasa dan matematikawan orisinal yang mendorong komunitas ilmiah Inggris abad ke-17. Pencapaiannya dalam meletakkan dasar-dasar sains modern sebagai Presiden pertama Royal Society sangat besar. Selain itu, pencapaian matematikanya, seperti representasi pecahan berlanjut dari Pi dan penyelesaian persamaan Pell, menjadi tonggak penting dalam pengembangan analisis, yang berhubungan dengan konsep ketakterhinggaan, dan teori bilangan.
 
 Pendekatannya melambangkan masa transisi dari geometri yang ketat menuju analisis yang menggunakan aljabar dan deret tak terhingga. Meskipun namanya sering kali dibayangi oleh raksasa seperti Newton dan Fermat, tanpa keberadaan **Brouncker**, kekayaan matematika saat ini tidak akan bisa dibahas. Keingintahuan intelektual dan semangat penyelidikannya terus bersinar di hadapan kita sebagai keindahan matematika, bahkan setelah ratusan tahun kemudian.

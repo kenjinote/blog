@@ -10,15 +10,15 @@ tags: ["topologi", "kombinatorika", "teorema-titik-tetap"]
 
 # 1. Pendahuluan: Misteri Matematika Mulai dari Teka-teki
 
-Keindahan matematika sering kali terletak pada bagaimana aturan yang sangat sederhana dapat mengarah pada hasil yang mendalam dan sama sekali tidak terduga. Salah satu contoh paling ikonik dari hal ini adalah **Lemma Sperner** (Sperner's Lemma). Diterbitkan pada tahun 1928 oleh ahli matematika Jerman Emanuel Sperner, lemma ini, pada pandangan pertama, seolah-olah tidak lebih dari "teka-teki mewarnai segitiga" yang bahkan dapat dipahami oleh siswa sekolah dasar.
+Keindahan matematika sering kali terletak pada bagaimana aturan yang sangat sederhana dapat mengarah pada hasil yang mendalam dan sama sekali tidak terduga. Salah satu contoh paling ikonik dari hal ini adalah **[Lemma Sperner](https://kenji.blog/p/sperners-lemma/)** ([Sperner's Lemma](https://kenji.blog/p/sperners-lemma/)). Diterbitkan pada tahun 1928 oleh ahli matematika Jerman Emanuel Sperner, lemma ini, pada pandangan pertama, seolah-olah tidak lebih dari "teka-teki mewarnai segitiga" yang bahkan dapat dipahami oleh siswa sekolah dasar.
 
 Namun, teka-teki sederhana ini memegang posisi yang sangat penting dalam matematika modern. Secara khusus, ini berfungsi sebagai alat yang ampuh untuk bukti kombinatorial dan konstruktif dari **Teorema Titik Tetap Brouwer** (Brouwer Fixed-Point Theorem), yang merupakan teorema fundamental dalam topologi dan diterapkan secara luas di bidang-bidang seperti teori permainan di bidang ekonomi (seperti dalam membuktikan keberadaan Ekuilibrium Nash).
 
-Dalam artikel ini, kami akan menjelaskan Lemma Sperner secara rinci dengan diagram, mencakup segala hal mulai dari makna intuitif dan bukti matematisnya yang ketat, hingga penerapannya pada teorema titik tetap yang menjembatani dunia kontinu.
+Dalam artikel ini, kami akan menjelaskan [Lemma Sperner](https://kenji.blog/p/sperners-lemma/) secara rinci dengan diagram, mencakup segala hal mulai dari makna intuitif dan bukti matematisnya yang ketat, hingga penerapannya pada teorema titik tetap yang menjembatani dunia kontinu.
 
 # 2. Simpleks dan Kompleks Simplisial: Dasar-dasar Geometri
 
-Untuk memahami Lemma Sperner, pertama-tama kita harus memperjelas konsep **Simpleks** (Simplex) dan **Kompleks Simplisial** (Simplicial Complex / Triangulation).
+Untuk memahami [Lemma Sperner](https://kenji.blog/p/sperners-lemma/), pertama-tama kita harus memperjelas konsep **Simpleks** (Simplex) dan **Kompleks Simplisial** (Simplicial Complex / Triangulation).
 
 ## 2.1. Apa itu Simpleks?
 
@@ -48,7 +48,7 @@ graph TD
     %% Ini adalah contoh kompleks simplisial sederhana
 ```
 
-Untuk jaringan segitiga yang dibagi dengan cara ini, mewarnai setiap titik sudut menyiapkan panggung untuk Lemma Sperner.
+Untuk jaringan segitiga yang dibagi dengan cara ini, mewarnai setiap titik sudut menyiapkan panggung untuk [Lemma Sperner](https://kenji.blog/p/sperners-lemma/).
 
 # 3. Pewarnaan Sperner: Aturan Batas
 
@@ -65,11 +65,11 @@ Namun, Anda harus mewarnainya menurut **Kondisi Sperner** yang ketat berikut ini
 
 Pewarnaan yang mengikuti aturan-aturan ini disebut **Pewarnaan Sperner** (Sperner Coloring).
 
-# 4. Pernyataan Lemma Sperner
+# 4. Pernyataan [Lemma Sperner](https://kenji.blog/p/sperners-lemma/)
 
-Ketika Anda selesai mewarnai menurut aturan pewarnaan Sperner, fenomena apa yang terjadi? Lemma Sperner menegaskan fakta mencengangkan berikut ini.
+Ketika Anda selesai mewarnai menurut aturan pewarnaan Sperner, fenomena apa yang terjadi? [Lemma Sperner](https://kenji.blog/p/sperners-lemma/) menegaskan fakta mencengangkan berikut ini.
 
-> **Lemma Sperner (2D)**
+> **[Lemma Sperner](https://kenji.blog/p/sperners-lemma/) (2D)**
 > Dalam pewarnaan Sperner apa pun, jumlah segitiga kecil di mana ketiga titik sudut dicat dengan warna yang berbeda (warna 1, warna 2, dan warna 3) **harus berupa bilangan ganjil**.
 > Karena ini adalah bilangan ganjil (1, 3, 5, ...), maka "segitiga kecil lengkap dengan ketiga warna" seperti itu **pasti ada setidaknya satu kali**.
 
@@ -135,7 +135,7 @@ Dengan ini, terbukti dengan sempurna bahwa setidaknya ada satu segitiga lengkap.
 
 # 6. Generalisasi ke Dimensi yang Lebih Tinggi
 
-Lemma Sperner tidak terbatas pada segitiga 2D tetapi berlaku untuk setiap simpleks dimensi-$n$.
+[Lemma Sperner](https://kenji.blog/p/sperners-lemma/) tidak terbatas pada segitiga 2D tetapi berlaku untuk setiap simpleks dimensi-$n$.
 
 Dalam kasus simpleks dimensi-$n$ (misalnya, tetrahedron untuk $n=3$), ada $n+1$ titik sudut, dan kita menggunakan $n+1$ warna, $1, 2, \dots, n+1$.
 Kondisi batas digeneralisasikan sebagai berikut: "Titik sudut pada permukaan (faset) berdimensi-$k$ apa pun hanya boleh menggunakan warna yang sama dengan $k+1$ titik sudut yang membentuk permukaan tersebut."
@@ -146,7 +146,7 @@ Bukti tersebut menggunakan induksi matematika.
 
 # 7. Penerapan pada Teorema Titik Tetap Brouwer
 
-Mengapa Lemma Sperner dianggap sangat penting? Itu karena teorema diskrit ini bertindak sebagai jembatan untuk membuktikan teorema topologis kontinu, **Teorema Titik Tetap Brouwer**.
+Mengapa [Lemma Sperner](https://kenji.blog/p/sperners-lemma/) dianggap sangat penting? Itu karena teorema diskrit ini bertindak sebagai jembatan untuk membuktikan teorema topologis kontinu, **Teorema Titik Tetap Brouwer**.
 
 ## 7.1. Apa itu Teorema Titik Tetap Brouwer?
 
@@ -155,9 +155,9 @@ Mengapa Lemma Sperner dianggap sangat penting? Itu karena teorema diskrit ini be
 
 Ini adalah teorema terkenal yang sering dijelaskan dengan metafora: ketika Anda mengaduk kopi dan meletakkan cangkirnya, selalu ada setidaknya satu partikel kopi yang berada di posisi yang sama persis dengan sebelum Anda mulai mengaduk.
 
-## 7.2. Pendekatan dari Lemma Sperner
+## 7.2. Pendekatan dari [Lemma Sperner](https://kenji.blog/p/sperners-lemma/)
 
-Logika untuk menurunkan teorema titik tetap dari Lemma Sperner sangat elegan.
+Logika untuk menurunkan teorema titik tetap dari [Lemma Sperner](https://kenji.blog/p/sperners-lemma/) sangat elegan.
 
 1. **Evaluasi Koordinat Barycentric dan Vektor Perpindahan**
    Terapkan pemetaan kontinu $f$ ke titik arbitrer $x$ pada simpleks dan lihat tujuannya $f(x)$. Tetapkan warna ke titik $x$ berdasarkan arah perpindahannya (komponen koordinat barycentric mana yang menurun).
@@ -167,7 +167,7 @@ Logika untuk menurunkan teorema titik tetap dari Lemma Sperner sangat elegan.
    Karena sifat pemetaan kontinu di mana Anda tidak dapat bergerak ke luar pada batas-batasnya, metode pewarnaan ini persis memenuhi kondisi pewarnaan Sperner.
 
 3. **Transisi ke Batas**
-   Kita mentriangulasi segitiga menjadi lebih halus dan lebih halus lagi. Dalam setiap triangulasi, berdasarkan Lemma Sperner, selalu ada segitiga kecil di mana ketiga warna hadir.
+   Kita mentriangulasi segitiga menjadi lebih halus dan lebih halus lagi. Dalam setiap triangulasi, berdasarkan [Lemma Sperner](https://kenji.blog/p/sperners-lemma/), selalu ada segitiga kecil di mana ketiga warna hadir.
    
 4. **Kekompakan dan Konvergensi**
    Kita mengambil batas saat ukuran pembagian mendekati nol. Menurut Teorema Bolzano-Weierstrass (barisan dalam ruang kompak memiliki subbarisan yang konvergen), barisan segitiga lengkap ini konvergen ke satu titik $x^*$.
@@ -177,15 +177,15 @@ Logika untuk menurunkan teorema titik tetap dari Lemma Sperner sangat elegan.
 
 # 8. Aplikasi Lain: Pembagian yang Adil dan Ekonomi
 
-Selain teorema titik tetap, Lemma Sperner diterapkan secara langsung pada masalah dunia nyata.
+Selain teorema titik tetap, [Lemma Sperner](https://kenji.blog/p/sperners-lemma/) diterapkan secara langsung pada masalah dunia nyata.
 Contoh tipikal adalah "masalah pembagian sewa yang adil" dan "masalah pemotongan kue".
 
-Ketika beberapa orang berbagi rumah, konflik bisa timbul mengenai siapa yang menyewa kamar mana dan untuk berapa harga, karena ukuran dan kondisi kamar bervariasi. Menggunakan algoritma yang menerapkan Lemma Sperner (seperti algoritma Su), dapat dibuktikan bahwa selalu ada alokasi yang adil di mana "setiap orang puas dengan kamar dan sewa yang mereka pilih, dan jumlah sewanya sesuai dengan jumlah aslinya", dan terlebih lagi, ini dapat ditemukan secara perkiraan.
+Ketika beberapa orang berbagi rumah, konflik bisa timbul mengenai siapa yang menyewa kamar mana dan untuk berapa harga, karena ukuran dan kondisi kamar bervariasi. Menggunakan algoritma yang menerapkan [Lemma Sperner](https://kenji.blog/p/sperners-lemma/) (seperti algoritma Su), dapat dibuktikan bahwa selalu ada alokasi yang adil di mana "setiap orang puas dengan kamar dan sewa yang mereka pilih, dan jumlah sewanya sesuai dengan jumlah aslinya", dan terlebih lagi, ini dapat ditemukan secara perkiraan.
 
-Selain itu, "keberadaan Ekuilibrium Nash" yang dibuktikan oleh John Nash di bidang ekonomi bergantung pada teorema titik tetap Brouwer atau Kakutani, yang pada dasarnya menyembunyikan struktur kombinatorial seperti Lemma Sperner.
+Selain itu, "keberadaan Ekuilibrium Nash" yang dibuktikan oleh John Nash di bidang ekonomi bergantung pada teorema titik tetap Brouwer atau Kakutani, yang pada dasarnya menyembunyikan struktur kombinatorial seperti [Lemma Sperner](https://kenji.blog/p/sperners-lemma/).
 
 # 9. Kesimpulan
 
-Lemma Sperner dimulai dengan pengaturan yang hampir seperti permainan berupa mewarnai titik-titik sudut dari sebuah segitiga sesuai aturan. Namun, di dalam logika sederhana "menghitung jumlah pintu", kebenaran mendalam tentang kontinuitas dan invariansi ruang tersembunyi.
+[Lemma Sperner](https://kenji.blog/p/sperners-lemma/) dimulai dengan pengaturan yang hampir seperti permainan berupa mewarnai titik-titik sudut dari sebuah segitiga sesuai aturan. Namun, di dalam logika sederhana "menghitung jumlah pintu", kebenaran mendalam tentang kontinuitas dan invariansi ruang tersembunyi.
 
 Matematika diskrit dan matematika kontinu. Fakta bahwa kedua dunia yang tampaknya sama sekali berbeda ini dihubungkan oleh teorema yang begitu indah merupakan salah satu daya tarik terbesar matematika sebagai suatu disiplin ilmu. Kami mendorong para pembaca untuk mengambil kertas dan pena, membagi segitiga secara sembarang dan melukisnya dengan 3 warna. Ketika Anda menemukan "segitiga lengkap" yang selalu bersembunyi di sana, Anda juga akan dapat menyentuh misteri matematika.

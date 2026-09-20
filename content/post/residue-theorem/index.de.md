@@ -18,7 +18,7 @@ $$
 
 Während dieses Integral selbst mit $\arctan(x)$ gelöst werden kann, wird es praktisch unmöglich, eine Stammfunktion (unbestimmtes Integral) als reelle Funktion zu finden, wenn der Nenner ein Polynom höheren Grades wird oder wenn trigonometrische Funktionen wie Sinus und Kosinus stark involviert sind.
 
-Hier kommt eine mächtige Waffe der **Funktionentheorie** (komplexe Analysis), die weithin als eine der schönsten Theorien der Mathematik gilt, ins Spiel: der **Residuensatz von Cauchy**. Indem man ein Integral, das auf der reellen Zahlengeraden (eindimensional) ausgeführt wird, mutig auf die **komplexe Ebene** (zweidimensional) erweitert, können unmögliche reelle Integrale meisterhaft gelöst werden.
+Hier kommt eine mächtige Waffe der **Funktionentheorie** (komplexe Analysis), die weithin als eine der schönsten Theorien der Mathematik gilt, ins Spiel: der **[Residuensatz](https://kenji.blog/p/residue-theorem/) von Cauchy**. Indem man ein Integral, das auf der reellen Zahlengeraden (eindimensional) ausgeführt wird, mutig auf die **komplexe Ebene** (zweidimensional) erweitert, können unmögliche reelle Integrale meisterhaft gelöst werden.
 
 ## Komplexe Integration und Singularitäten
 
@@ -56,9 +56,9 @@ $$
 
 Warum ist nur der Koeffizient von $(z - z_0)^{-1}$ besonders? Weil, wenn Sie $\frac{1}{(z - z_0)^n}$ entlang eines winzigen Kreises $C$ integrieren, der die Singularität umschließt, nur für $n = 1$ der Wert $2\pi i$ übrig bleibt; für alle anderen Werte von $n$ ergibt das Integral $0$.
 
-## Der Residuensatz von Cauchy
+## Der [Residuensatz](https://kenji.blog/p/residue-theorem/) von Cauchy
 
-Die Integration dieser Konzepte führt zum **Residuensatz**. Wenn eine geschlossene Kurve $C$ mehrere isolierte Singularitäten $z_1, z_2, \dots, z_k$ in ihrem Inneren enthält, kann das komplexe Integral entlang $C$ wie folgt berechnet werden:
+Die Integration dieser Konzepte führt zum **[Residuensatz](https://kenji.blog/p/residue-theorem/)**. Wenn eine geschlossene Kurve $C$ mehrere isolierte Singularitäten $z_1, z_2, \dots, z_k$ in ihrem Inneren enthält, kann das komplexe Integral entlang $C$ wie folgt berechnet werden:
 
 $$
 \oint_C f(z) dz = 2\pi i \sum_{j=1}^{k} \text{Res}(f, z_j)
@@ -68,7 +68,7 @@ Mit anderen Worten, egal wie komplex das Konturintegral ist, Sie müssen keine m
 
 ## Anwendung: Lösen reeller Integrale
 
-Lassen Sie uns den Residuensatz tatsächlich verwenden, um das zu Beginn eingeführte Integral zu lösen.
+Lassen Sie uns den [Residuensatz](https://kenji.blog/p/residue-theorem/) tatsächlich verwenden, um das zu Beginn eingeführte Integral zu lösen.
 
 $$
 I = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
@@ -106,8 +106,8 @@ $$
 \text{Res}(f, i) = \lim_{z \to i} (z - i) f(z) = \lim_{z \to i} \frac{1}{z + i} = \frac{1}{2i}
 $$
 
-### Schritt 3: Anwendung des Residuensatzes
-Nach dem Residuensatz wird das Integral auf der geschlossenen Kurve $C$ zu:
+### Schritt 3: Anwendung des [Residuensatz](https://kenji.blog/p/residue-theorem/)es
+Nach dem [Residuensatz](https://kenji.blog/p/residue-theorem/) wird das Integral auf der geschlossenen Kurve $C$ zu:
 
 $$
 \oint_C f(z) dz = 2\pi i \times \text{Res}(f, i) = 2\pi i \times \frac{1}{2i} = \pi
@@ -139,7 +139,7 @@ $$
 \text{Res}(f, ia) = \lim_{z \to ia} (z - ia) \frac{e^{ikz}}{(z - ia)(z + ia)} = \frac{e^{-ka}}{2ia}
 $$
 
-Wenden Sie den Residuensatz an:
+Wenden Sie den [Residuensatz](https://kenji.blog/p/residue-theorem/) an:
 
 $$
 \int_{-\infty}^{\infty} \frac{e^{ikx}}{x^2 + a^2} dx = 2\pi i \times \frac{e^{-ka}}{2ia} = \frac{\pi e^{-ka}}{a}
@@ -153,7 +153,7 @@ $$
 
 ## Verzweigungsschnitte und Schlüssellochkonturen
 
-Eine fortgeschrittenere Anwendung des Residuensatzes beinhaltet die Integration von mehrdeutigen Funktionen (Funktionen, die mehrere Ausgaben für eine einzelne Eingabe haben). Typische Beispiele sind Integrale mit der logarithmischen Funktion $\log(z)$ oder gebrochenen Potenzen $z^a$. Um diese als eindeutige Funktionen zu behandeln, ist es notwendig, einen Schlitz namens **Verzweigungsschnitt** (Branch Cut) in der komplexen Ebene einzuführen.
+Eine fortgeschrittenere Anwendung des [Residuensatz](https://kenji.blog/p/residue-theorem/)es beinhaltet die Integration von mehrdeutigen Funktionen (Funktionen, die mehrere Ausgaben für eine einzelne Eingabe haben). Typische Beispiele sind Integrale mit der logarithmischen Funktion $\log(z)$ oder gebrochenen Potenzen $z^a$. Um diese als eindeutige Funktionen zu behandeln, ist es notwendig, einen Schlitz namens **Verzweigungsschnitt** (Branch Cut) in der komplexen Ebene einzuführen.
 
 Betrachten Sie als Beispiel das folgende Integral (wobei $0 < a < 1$):
 
@@ -179,6 +179,6 @@ $$
 
 ## Fazit
 
-Der Residuensatz ist der Inbegriff mathematischer Eleganz und verbindet meisterhaft scheinbar nicht zusammenhängende "komplexe Pole" und "reelle Integrale". Um ein Problem mit einer reellen Funktion zu lösen, springen Sie vorübergehend in die breitere Welt der komplexen Ebene, untersuchen nur die Eigenschaften (Residuen) der "Hindernisse" (Singularitäten), und wenn Sie in die ursprüngliche Welt zurückkehren, ist das Problem brillant gelöst.
+Der [Residuensatz](https://kenji.blog/p/residue-theorem/) ist der Inbegriff mathematischer Eleganz und verbindet meisterhaft scheinbar nicht zusammenhängende "komplexe Pole" und "reelle Integrale". Um ein Problem mit einer reellen Funktion zu lösen, springen Sie vorübergehend in die breitere Welt der komplexen Ebene, untersuchen nur die Eigenschaften (Residuen) der "Hindernisse" (Singularitäten), und wenn Sie in die ursprüngliche Welt zurückkehren, ist das Problem brillant gelöst.
 
-Dieses Konzept geht über bloße Rechentechniken hinaus und wird in jeder Szene der modernen Wissenschaft und Technologie angewendet, wie z. B. bei der inversen Laplace-Transformation, der Auswertung von Feynman-Diagrammen in der Quantenfeldtheorie und der Filtertheorie in der Signalverarbeitung. Die Welt der Funktionentheorie bietet den ultimativen Aussichtspunkt, um die Welt der reellen Zahlen zu überblicken.
+Dieses Konzept geht über bloße Rechentechniken hinaus und wird in jeder Szene der modernen Wissenschaft und Technologie angewendet, wie z. B. bei der inversen [Laplace-Transformation](https://kenji.blog/p/laplace-transform/), der Auswertung von Feynman-Diagrammen in der Quantenfeldtheorie und der Filtertheorie in der Signalverarbeitung. Die Welt der Funktionentheorie bietet den ultimativen Aussichtspunkt, um die Welt der reellen Zahlen zu überblicken.

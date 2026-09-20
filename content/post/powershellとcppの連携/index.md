@@ -307,7 +307,7 @@ WMI（Windows Management Instrumentation）やCIM（Common Information Model）�
 
 ## まとめ
 
-PowerShellとC++の連携は、システム管理の自動化において、スクリプト言語の手軽さとネイティブ言語のパワーを両立させる最強の組み合わせです。
+[PowerShellとC++の連携](https://kenji.blog/p/powershellとcppの連携/)は、システム管理の自動化において、スクリプト言語の手軽さとネイティブ言語のパワーを両立させる最強の組み合わせです。
 
 P/Invokeを用いたC++ DLLの呼び出しにより、計算負荷の高いタスクをオフロードし、実行時間を劇的に短縮できます。逆に、C++アプリケーションからプロセス起動やパイプラインを通じてPowerShellの豊富なシステム管理モジュールを活用することで、開発コストを大幅に削減できます。
 

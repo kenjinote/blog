@@ -8,7 +8,7 @@ categories: ["Matemáticas"]
 tags: ["Paseo Aleatorio", "Probabilidad", "Ecuación de Difusión", "Movimiento Browniano", "Python"]
 ---
 
-# Introducción: ¿Qué es un Paseo Aleatorio?
+# Introducción: ¿Qué es un [Paseo Aleatorio](https://kenji.blog/p/random-walk/)?
 
 Un paseo aleatorio (o camino aleatorio) es un concepto matemático que se refiere a un movimiento donde la siguiente posición se determina aleatoriamente (probabilísticamente). A menudo se le llama "el paseo del borracho", ya que se asemeja a una persona ebria tambaleándose de izquierda a derecha con pasos inestables. A primera vista, parece un movimiento caótico e impredecible, pero a medida que aumenta el número de pasos, emergen leyes matemáticas asombrosamente hermosas y regulares.
 

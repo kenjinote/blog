@@ -107,7 +107,7 @@ Inverse[m]
 {{-2, 1}, {1.5, -0.5}}
 ```
 
-## 固有値と固有ベクトルを求める
+## [固有値と固有ベクトル](https://kenji.blog/p/eigenvalues-and-eigenvectors/)を求める
 ```
 Eigensystem[m]
 ```

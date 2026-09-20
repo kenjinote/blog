@@ -10,7 +10,7 @@ tags: ["Euler", "Matemáticas", "Ciencia"]
 
 # ¿Qué es la identidad de Euler?
 
-La **identidad de Euler** (Euler's Identity) es conocida como la relación más hermosa y profunda de las matemáticas. Esta ecuación conecta cinco constantes matemáticas fundamentales que aparecen en campos completamente diferentes de una manera sorprendentemente simple.
+La **identidad de Euler** ([Euler's Identity](https://kenji.blog/p/eulers-identity/)) es conocida como la relación más hermosa y profunda de las matemáticas. Esta ecuación conecta cinco constantes matemáticas fundamentales que aparecen en campos completamente diferentes de una manera sorprendentemente simple.
 
 $$
 e^{i\pi} + 1 = 0
@@ -63,7 +63,7 @@ De esta manera, se deduce una fórmula asombrosamente simple.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -84,7 +84,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -105,7 +105,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -126,7 +126,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -147,7 +147,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -168,7 +168,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -189,7 +189,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -210,7 +210,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -231,7 +231,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 
@@ -252,7 +252,7 @@ Sustituyendo aquí $x = ix$ y simplificando, se deriva la fórmula de Euler.
 
 ## Antecedentes históricos
 
-Leonhard Euler fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
+[Leonhard Euler](https://kenji.blog/p/euler/) fue un matemático representativo del siglo XVIII que dejó logros en una amplia gama de campos como la física, la astronomía y la lógica. Esta identidad, que lleva su nombre, puede considerarse una de las culminaciones de su extensa investigación.
 
 ### Descubrimiento de la función exponencial compleja
 

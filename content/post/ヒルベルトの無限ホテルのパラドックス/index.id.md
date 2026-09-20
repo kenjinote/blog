@@ -16,7 +16,7 @@ tags:
 
 ## 1. Selamat Datang di Hotel Paling Mutakhir
 
-Matematikawan besar Jerman, David Hilbert, merancang eksperimen pemikiran yang menarik berikut ini untuk menjelaskan betapa konsep "tak terhingga" sangat jauh dari intuisi manusia.
+Matematikawan besar Jerman, [David Hilbert](https://kenji.blog/p/hilbert/), merancang eksperimen pemikiran yang menarik berikut ini untuk menjelaskan betapa konsep "tak terhingga" sangat jauh dari intuisi manusia.
 
 Bayangkan. Di suatu tempat di alam semesta, ada sebuah hotel bernama **"Hotel Tak Terhingga Hilbert"**.
 Di hotel ini, terdapat **jumlah tak terhingga** kamar tamu yang diberi nomor, seperti kamar 1, kamar 2, kamar 3, dan seterusnya.
@@ -158,7 +158,7 @@ Dengan cara ini, manajer berhasil menampung sejumlah **"tak terhingga $\times$ t
 
 Apa yang diajarkan oleh Hotel Tak Terhingga Hilbert adalah fakta bahwa **"tak terhingga yang dapat dihitung (tak terhingga yang bisa Anda hitung dengan memberikan angka seperti 1, 2, 3...)" pada akhirnya akan masuk ke dalam kategori "tak terhingga yang dapat dihitung" yang ukurannya sama, tidak peduli seberapa banyak Anda menambah atau mengalikannya**.
 
-Namun, matematikawan Georg Cantor menemukan fakta yang lebih menakutkan.
+Namun, matematikawan [Georg Cantor](https://kenji.blog/p/cantor/) menemukan fakta yang lebih menakutkan.
 "Bilangan asli" dan "pecahan" semuanya dapat ditampung di Hotel Tak Terhingga ini. Namun, **jika ada tamu dari "bilangan real (semua desimal termasuk bilangan irasional)" yang datang, bahkan dengan menggunakan Hotel Tak Terhingga ini, tidak mungkin untuk menampung semuanya**.
 
 Jumlah bilangan real terbukti sebagai "tak terhingga yang secara mendasar lebih besar (level yang lebih tinggi)" daripada jumlah kamar di Hotel Tak Terhingga (tak terhingga yang dapat dihitung).

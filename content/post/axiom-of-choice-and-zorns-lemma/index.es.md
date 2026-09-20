@@ -8,7 +8,7 @@ categories: ["matemáticas", "teoría-de-conjuntos"]
 tags: ["Axioma de elección", "Lema de Zorn", "Sistema axiomático ZFC", "Fundamentos de las matemáticas", "Mermaid", "KaTeX"]
 ---
 
-# El axioma de elección y el lema de Zorn: El concepto de «elección» que sacudió los fundamentos de las matemáticas
+# [El axioma de elección y el lema de Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/): El concepto de «elección» que sacudió los fundamentos de las matemáticas
 
 En la historia de las matemáticas, ningún axioma ha generado tanta controversia y, al mismo tiempo, se ha vuelto tan indispensable para las matemáticas modernas como el **axioma de elección** (Axiom of Choice). En este artículo, profundizamos en el axioma de elección y en su proposición equivalente, el **lema de Zorn** (Zorn's Lemma), desde sus bases. Ofrecemos una explicación integral que abarca la comprensión intuitiva, la formalización matemática rigurosa, el contexto histórico y las aplicaciones en diversos campos de las matemáticas modernas.
 
@@ -73,7 +73,7 @@ graph TD
 
 ## 3. La red de equivalencias: axioma de elección, lema de Zorn y teorema del buen orden
 
-El axioma de elección y el lema de Zorn parecen ser afirmaciones completamente diferentes, pero bajo el sistema axiomático ZF son equivalentes (si uno es verdadero, el otro también lo es). En esta red de pruebas de equivalencia, el **teorema del buen orden** (Well-ordering theorem), demostrado por Ernst Zermelo, desempeña un papel crucial.
+[El axioma de elección y el lema de Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) parecen ser afirmaciones completamente diferentes, pero bajo el sistema axiomático ZF son equivalentes (si uno es verdadero, el otro también lo es). En esta red de pruebas de equivalencia, el **teorema del buen orden** (Well-ordering theorem), demostrado por Ernst Zermelo, desempeña un papel crucial.
 
 ### 3.1. ¿Qué es el teorema del buen orden?
 
@@ -156,6 +156,6 @@ La razón es sencilla. Si se rechaza el axioma de elección (adoptando solo el s
 
 ## 7. Conclusión: un puente sobre el abismo del infinito
 
-El axioma de elección y el lema de Zorn demuestran cómo la operación de «elección» – tan obvia en dominios finitos que ni siquiera se percibe – da lugar a estructuras profundamente profundas, aterradoras y hermosas en el momento en que se adentra en el reino del infinito.
+[El axioma de elección y el lema de Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) demuestran cómo la operación de «elección» – tan obvia en dominios finitos que ni siquiera se percibe – da lugar a estructuras profundamente profundas, aterradoras y hermosas en el momento en que se adentra en el reino del infinito.
 
 El lema de Zorn, como una poderosa varita mágica que garantiza la existencia de lo «maximal» al final de las cadenas infinitas, ha impulsado el desarrollo del álgebra y el análisis. En la base de los teoremas matemáticos que utilizamos casualmente cada día yace esta profunda filosofía llamada «axioma de elección». Los fundamentos de las matemáticas no son meros rompecabezas lógicos, sino un gran drama sobre cómo la razón humana se enfrenta al concepto del infinito.

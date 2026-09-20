@@ -10,7 +10,7 @@ slug: "central-limit-theorem"
 
 ## 1. はじめに
 
-データサイエンスや統計学を学ぶ上で、避けて通れないのが **[中心極限定理](https://kenji.blog/p/central-limit-theorem/)** (Central Limit Theorem) です。この定理は、「どんな分布を持つデータであっても、その標本平均の分布は、サンプルサイズが大きくなるにつれて正規分布に近づく」という、まるで魔法のような性質を持っています。
+データサイエンスや統計学を学ぶ上で、避けて通れないのが **[中心極限定理](https://kenji.blog/p/central-limit-theorem/)** ([Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/)) です。この定理は、「どんな分布を持つデータであっても、その標本平均の分布は、サンプルサイズが大きくなるにつれて正規分布に近づく」という、まるで魔法のような性質を持っています。
 
 本記事では、この[中心極限定理](https://kenji.blog/p/central-limit-theorem/)について、直感的なイメージから厳密な数学的定義、そして実際の応用例までを幅広く解説します。
 
@@ -144,7 +144,7 @@ $$
 \phi_Y(t)=E[e^{itY}]=1-\frac{t^2}{2}+o(t^2)\quad(t\to0).
 $$
 
-独立性から次式が得られます。極限は標準正規分布の特性関数なので、レヴィの連続性定理により分布収束が従います。特性関数と積率母関数は別物であり、この証明に積率母関数の存在は必要ありません。
+独立性から次式が得られます。極限は標準正規分布の特性関数なので、レヴィの連続性定理により分布収束が従います。特性関数と積率[母関数](https://kenji.blog/p/generating-functions/)は別物であり、この証明に積率[母関数](https://kenji.blog/p/generating-functions/)の存在は必要ありません。
 
 $$
 \phi_{Z_n}(t)=\left[\phi_Y\!\left(\frac{t}{\sqrt n}\right)\right]^n

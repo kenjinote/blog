@@ -12,7 +12,7 @@ tags: ["Cantor", "Diagonal Argument", "Infinity", "Mathematics", "Proof"]
 
 The concept of "infinity" that we normally think of literally means "having no end." Natural numbers ($1, 2, 3, \dots$) can be counted forever, so their number is infinite. On the other hand, real numbers (all points on a number line) also exist infinitely in the same way.
 
-Intuitively, we tend to think that "infinity is infinity, and both are equally endless," but the 19th-century mathematician Georg Cantor proved the astonishing fact that **"there are differences in size (cardinality) among infinities."**
+Intuitively, we tend to think that "infinity is infinity, and both are equally endless," but the 19th-century mathematician [Georg Cantor](https://kenji.blog/p/cantor/) proved the astonishing fact that **"there are differences in size (cardinality) among infinities."**
 
 In this article, we will explain in detail how the set of real numbers is "overwhelmingly larger" than the set of natural numbers, using the **Diagonal Argument**, a groundbreaking proof method devised by Cantor.
 
@@ -158,7 +158,7 @@ In conclusion, it has been proven that **the set of real numbers cannot form a o
 
 ---
 
-## The Path to the Continuum Hypothesis
+## The Path to the [Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/)
 
 Cantor's diagonal argument showed that a "hierarchy" exists within infinity.
 If we denote the cardinality of natural numbers as $\aleph_0$ and the cardinality of real numbers as $\aleph_1$ or $2^{\aleph_0}$, the following relationship holds:
@@ -169,9 +169,9 @@ $$
 
 Here, Cantor faced one massive question: **"Does there exist an infinite set with a cardinality intermediate between $\aleph_0$ and $2^{\aleph_0}$?"**
 
-The hypothesis that "no intermediate cardinality exists" is called the **Continuum Hypothesis (CH)**. Cantor devoted his life to proving this, but could not solve it.
+The hypothesis that "no intermediate cardinality exists" is called the **[Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/) (CH)**. Cantor devoted his life to proving this, but could not solve it.
 
-Later, Kurt Gödel and Paul Cohen proved that the continuum hypothesis is **"neither provable nor disprovable (it is independent) within the current axiom system of mathematics (ZFC)."** This is one of the most profound discoveries in 20th-century mathematics.
+Later, [Kurt Gödel](https://kenji.blog/p/godel/) and Paul Cohen proved that the continuum hypothesis is **"neither provable nor disprovable (it is independent) within the current axiom system of mathematics (ZFC)."** This is one of the most profound discoveries in 20th-century mathematics.
 
 ---
 
@@ -183,4 +183,4 @@ Cantor's diagonal argument looks like a simple puzzle at first glance, but behin
 2. Up to rational numbers, they have the same size as natural numbers (countably infinite).
 3. By shifting the diagonal to create a new number, it is proved that there are more real numbers than natural numbers (uncountably infinite).
 
-The absolute beauty of logic, which contradicts this intuition, can be said to be the greatest charm of the discipline of mathematics. The diagonal argument was later applied to theories fundamental to computer science and mathematical logic, such as Alan Turing's halting problem and the proof of [Gödel's incompleteness theorems](https://kenji.blog/p/godels-incompleteness-theorems/).
+The absolute beauty of logic, which contradicts this intuition, can be said to be the greatest charm of the discipline of mathematics. The diagonal argument was later applied to theories fundamental to computer science and mathematical logic, such as [Alan Turing](https://kenji.blog/p/turing/)'s halting problem and the proof of [Gödel's incompleteness theorems](https://kenji.blog/p/godels-incompleteness-theorems/).

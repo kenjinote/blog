@@ -138,7 +138,7 @@ For every 1 bit increase in the number of digits (the number doubles), the compu
 
 ## 2. Fermat's Factorization Method
 
-This is a method devised by the 17th-century mathematician Pierre de Fermat. Given an odd composite number $N$, it attempts to express $N$ as the difference of two squares.
+This is a method devised by the 17th-century mathematician [Pierre de Fermat](https://kenji.blog/p/fermat/). Given an odd composite number $N$, it attempts to express $N$ as the difference of two squares.
 
 $$ N = x^2 - y^2 = (x - y)(x + y) $$
 

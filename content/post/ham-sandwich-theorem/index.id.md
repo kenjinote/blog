@@ -12,11 +12,11 @@ tags:
   - "Matematika"
 ---
 
-Ada banyak teorema unik dalam matematika dengan nama sehari-hari. Di antaranya, salah satu yang paling terkenal dan menarik secara intuitif adalah **Teorema Sandwich Ham (Ham Sandwich Theorem)**.
+Ada banyak teorema unik dalam matematika dengan nama sehari-hari. Di antaranya, salah satu yang paling terkenal dan menarik secara intuitif adalah **[Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/) (Ham Sandwich Theorem)**.
 
 Saat Anda membuat sandwich, Anda mungkin membayangkan dua potong roti dengan sepotong ham di antaranya. Teorema ini mengklaim fakta yang mengejutkan: **"Tidak peduli seberapa terdistorsi bentuknya, atau seberapa tersebar mereka di udara, satu potongan dengan pisau (satu bidang tunggal) dapat membagi dua dengan sempurna volume dua potong roti dan satu potong ham secara bersamaan."**
 
-Dalam artikel ini, kami akan menjelaskan Teorema Sandwich Ham ini secara menyeluruh, dari pemahaman intuitif hingga teorema topologi aljabar kuat di baliknya, **Teorema Borsuk-Ulam**.
+Dalam artikel ini, kami akan menjelaskan [Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/) ini secara menyeluruh, dari pemahaman intuitif hingga teorema topologi aljabar kuat di baliknya, **Teorema Borsuk-Ulam**.
 
 ## 1. Pendahuluan: Dari Kehidupan Sehari-hari ke Matematika
 
@@ -24,11 +24,11 @@ Bayangkan memotong sandwich menjadi dua untuk sarapan atau makan siang. Anda men
 
 Secara intuitif, jika roti ditumpuk dengan sempurna, potongan bersih di tengah akan cukup. Tapi bagaimana jika seseorang bermain lelucon, meletakkan roti atas di tepi kanan meja, roti bawah di tepi kiri, dan menempelkan ham ke langit-langit?
 
-Hebatnya, menurut sebuah teorema matematika, **bahkan dengan kondisi seperti itu, jika Anda menggunakan pisau raksasa (sebuah bidang), Anda dapat membagi ketiganya secara bersamaan**. Inilah esensi dari "Teorema Sandwich Ham". Tidak ada persyaratan untuk posisi relatif atau bentuk objek, mereka juga tidak perlu berupa potongan tunggal yang terus-menerus.
+Hebatnya, menurut sebuah teorema matematika, **bahkan dengan kondisi seperti itu, jika Anda menggunakan pisau raksasa (sebuah bidang), Anda dapat membagi ketiganya secara bersamaan**. Inilah esensi dari "[Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/)". Tidak ada persyaratan untuk posisi relatif atau bentuk objek, mereka juga tidak perlu berupa potongan tunggal yang terus-menerus.
 
 ## 2. Mulai dari 2D: Teorema Pancake
 
-Sebelum mempertimbangkan Teorema Sandwich Ham 3D, mari kita lihat kasus 2 dimensi (bidang). Versi 2D kadang-kadang disebut **Teorema Pancake (Pancake Theorem)**.
+Sebelum mempertimbangkan [Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/) 3D, mari kita lihat kasus 2 dimensi (bidang). Versi 2D kadang-kadang disebut **Teorema Pancake (Pancake Theorem)**.
 
 Teorema Pancake mengklaim hal berikut:
 
@@ -56,7 +56,7 @@ Mengapa garis seperti itu selalu ada? Mari kita berpikir menggunakan konsep kont
 
 Inilah sebabnya mengapa Anda dapat membagi dua objek secara bersamaan dalam kasus 2D.
 
-## 3. Ekstensi ke 3D: Teorema Sandwich Ham
+## 3. Ekstensi ke 3D: [Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/)
 
 Sekarang, mari kita beralih ke cerita tiga dimensi. Ketika dimensi naik satu, jumlah objek yang dapat Anda bagi juga bertambah satu.
 
@@ -80,7 +80,7 @@ Hal yang luar biasa tentang teorema ini adalah sama sekali tidak ada batasan pad
 
 ## 4. Senjata Kuat di Baliknya: Teorema Borsuk-Ulam
 
-Untuk membuktikan Teorema Sandwich Ham secara matematis dan ketat, digunakan teorema yang sangat penting dalam topologi: **Teorema Borsuk-Ulam**.
+Untuk membuktikan [Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/) secara matematis dan ketat, digunakan teorema yang sangat penting dalam topologi: **Teorema Borsuk-Ulam**.
 
 ### Apa itu Teorema Borsuk-Ulam?
 
@@ -88,7 +88,7 @@ Klaim umum dari teorema Borsuk-Ulam adalah sebagai berikut:
 
 > Untuk setiap pemetaan kontinu $f: S^n \to \mathbb{R}^n$, selalu ada titik $x \in S^n$ sedemikian rupa sehingga $f(x) = f(-x)$.
 
-Di sini, $S^n$ adalah bola berdimensi $n$ dalam ruang berdimensi $(n+1)$ (misalnya, $S^2$ adalah bola biasa seperti permukaan Bumi tempat kita tinggal), dan $\mathbb{R}^n$ adalah ruang Euclidean berdimensi $n$. Juga, $x$ dan $-x$ mengacu pada **titik antipodal** pada bola (titik di sisi berlawanan dari garis lurus yang melewati pusat, seperti Kutub Utara dan Selatan di Bumi, atau Tokyo dan di lepas pantai Brasil).
+Di sini, $S^n$ adalah bola berdimensi $n$ dalam ruang berdimensi $(n+1)$ (misalnya, $S^2$ adalah bola biasa seperti permukaan Bumi tempat kita tinggal), dan $\mathbb{R}^n$ adalah ruang [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an berdimensi $n$. Juga, $x$ dan $-x$ mengacu pada **titik antipodal** pada bola (titik di sisi berlawanan dari garis lurus yang melewati pusat, seperti Kutub Utara dan Selatan di Bumi, atau Tokyo dan di lepas pantai Brasil).
 
 Jika kita menafsirkan teorema ini dalam kasus yang sudah dikenal dari $n=2$ ( $S^2 \to \mathbb{R}^2$ ), kita dapat menyatakan fakta menarik berikut:
 
@@ -96,9 +96,9 @@ Jika kita menafsirkan teorema ini dalam kasus yang sudah dikenal dari $n=2$ ( $S
 
 Untuk fungsi $f(x) = \left( \text{Suhu}, \text{Tekanan} \right)$ yang memiliki dua nilai kontinu, itu berarti nilai-nilai tersebut cocok dengan sempurna pada titik berlawanan $-x$ di Bumi. Ini mungkin tampak berlawanan dengan intuisi, tetapi ini adalah fakta yang tak tergoyahkan dan terbukti secara matematis.
 
-### Sketsa Bukti Teorema Sandwich Ham
+### Sketsa Bukti [Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/)
 
-Teorema Sandwich Ham (versi 3D) dapat dibuktikan menggunakan kasus $n=2$ dari Teorema Borsuk-Ulam. Di bawah ini adalah sketsa bukti indahnya.
+[Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/) (versi 3D) dapat dibuktikan menggunakan kasus $n=2$ dari Teorema Borsuk-Ulam. Di bawah ini adalah sketsa bukti indahnya.
 
 1. Pertimbangkan sebuah titik $p$ pada bola satuan $S^2$ yang berpusat pada titik asal (ini mewakili vektor normal bidang, yaitu, "arah" bidang).
 2. Ketika arah $p$ ditetapkan, sebuah bidang yang membagi dua volume "roti atas" ditentukan secara unik (mari kita sebut Bidang ini $H(p)$).
@@ -120,7 +120,7 @@ flowchart LR
     Eq -->|"Semua bahan dibagi dua!"| Success["Bukti selesai"]
 ```
 
-## 5. Teorema Sandwich Ham n-dimensi yang Diperumum
+## 5. [Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/) n-dimensi yang Diperumum
 
 Para matematikawan telah memperumum teorema ini ke dimensi yang lebih tinggi.
 
@@ -129,7 +129,7 @@ Para matematikawan telah memperumum teorema ini ke dimensi yang lebih tinggi.
 Dengan kata lain, seiring dengan meningkatnya dimensi, jumlah objek yang dapat Anda bagi dua secara bersamaan juga meningkat.
 - $n=1$ (Garis): Membagi 1 segmen garis dengan 1 titik.
 - $n=2$ (Bidang): Membagi dua area dari 2 bentuk dengan 1 garis (Teorema Pancake).
-- $n=3$ (Ruang): Membagi dua volume dari 3 padatan dengan 1 bidang (Teorema Sandwich Ham).
+- $n=3$ (Ruang): Membagi dua volume dari 3 padatan dengan 1 bidang ([Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/)).
 - $n=4$: Membagi dua hipervolume dari empat objek 4D secara bersamaan dengan satu ruang 3D.
 
 Dengan cara ini, hukum indah ini berlaku dalam dimensi apa pun.
@@ -144,12 +144,12 @@ flowchart LR
 
 ## 6. Apakah Ini Praktis? (Aplikasi dalam Geometri Komputasi)
 
-"Teorema Sandwich Ham" sering diceritakan sebagai topik yang menyenangkan dalam matematika murni, tetapi sebenarnya ia memiliki aplikasi praktis dalam bidang seperti **Geometri Komputasi (Computational Geometry)** dan **Ilmu Komputer**.
+"[Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/)" sering diceritakan sebagai topik yang menyenangkan dalam matematika murni, tetapi sebenarnya ia memiliki aplikasi praktis dalam bidang seperti **Geometri Komputasi (Computational Geometry)** dan **Ilmu Komputer**.
 
-Misalnya, ketika sejumlah besar titik data (point cloud) ada dalam ruang, versi algoritmik dari Teorema Sandwich Ham kadang-kadang digunakan untuk mempartisi dan memproses data tersebut secara efisien. Dengan secara bersamaan membagi dua data yang diklasifikasikan ke dalam beberapa kelas, ini membantu dalam membangun algoritma pemrosesan data dan pencarian yang efisien menggunakan pendekatan Divide and Conquer.
+Misalnya, ketika sejumlah besar titik data (point cloud) ada dalam ruang, versi algoritmik dari [Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/) kadang-kadang digunakan untuk mempartisi dan memproses data tersebut secara efisien. Dengan secara bersamaan membagi dua data yang diklasifikasikan ke dalam beberapa kelas, ini membantu dalam membangun algoritma pemrosesan data dan pencarian yang efisien menggunakan pendekatan Divide and Conquer.
 
 ## 7. Kesimpulan
 
-Teorema Sandwich Ham mungkin tampak seperti lelucon dengan nama yang lucu pada pandangan pertama, tetapi pada kenyataannya, ini adalah hasil indah yang diterapkan dari teorema yang kuat dalam matematika modern, khususnya topologi aljabar. Fakta bahwa teori matematika abstrak diekspresikan melalui sesuatu yang sangat konkret dan sehari-hari seperti sandwich bisa dibilang merupakan salah satu aspek matematika yang menakjubkan.
+[Teorema Sandwich Ham](https://kenji.blog/p/ham-sandwich-theorem/) mungkin tampak seperti lelucon dengan nama yang lucu pada pandangan pertama, tetapi pada kenyataannya, ini adalah hasil indah yang diterapkan dari teorema yang kuat dalam matematika modern, khususnya topologi aljabar. Fakta bahwa teori matematika abstrak diekspresikan melalui sesuatu yang sangat konkret dan sehari-hari seperti sandwich bisa dibilang merupakan salah satu aspek matematika yang menakjubkan.
 
 Lain kali Anda dengan santai memotong sandwich, mungkin ada momen di mana ketiga bahan dibelah dua dengan sempurna secara kebetulan. Selama istirahat makan siang Anda berikutnya, saat Anda memegang pisau Anda, mengapa tidak membiarkan pikiran Anda melayang ke ruang berdimensi lebih tinggi dan Teorema Borsuk-Ulam?

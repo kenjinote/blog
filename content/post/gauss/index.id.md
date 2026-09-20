@@ -10,7 +10,7 @@ tags: ["Gauss", "Sejarah Matematika", "Jenius", "Geometri", "Teori Bilangan"]
 
 ## 1. Pendahuluan: Pria yang Dikenal sebagai "Pangeran Matematika"
 
-Johann Carl Friedrich Gauss (30 April 1777 - 23 Februari 1855) adalah seorang matematikawan, astronom, dan fisikawan besar Jerman. Karena kecerdasannya yang luar biasa dan kontribusi yang menentukan dalam berbagai bidang, ia dipuji sebagai **"Pangeran Matematika"** (Princeps mathematicorum). Pencapaian Gauss mencakup spektrum yang sangat luas, dari teori mendalam dalam matematika murni hingga matematika terapan yang menggambarkan fenomena fisik di dunia nyata.
+Johann [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) (30 April 1777 - 23 Februari 1855) adalah seorang matematikawan, astronom, dan fisikawan besar Jerman. Karena kecerdasannya yang luar biasa dan kontribusi yang menentukan dalam berbagai bidang, ia dipuji sebagai **"Pangeran Matematika"** (Princeps mathematicorum). Pencapaian Gauss mencakup spektrum yang sangat luas, dari teori mendalam dalam matematika murni hingga matematika terapan yang menggambarkan fenomena fisik di dunia nyata.
 
 Berbagai teorema dan konsep yang ia tinggalkan membentuk fondasi matematika dan sains modern. Hukum-hukum yang ditemukan oleh Gauss memberikan kehidupan pada teknologi yang kita manfaatkan setiap hari. Dalam artikel ini, kita akan mengikuti kehidupan jenius yang belum pernah ada sebelumnya ini secara kronologis, menggali lebih dalam episode detail dan pencapaian matematikanya untuk melihat bagaimana ia mencapai begitu banyak prestasi besar.
 
@@ -85,13 +85,13 @@ $$
 
 Gauss menyebut hukum ini "Teorema Emas" dan menerbitkan delapan bukti berbeda tentang hal itu sepanjang hidupnya.
 
-## 4. Kontribusi dalam Astronomi: Perhitungan Orbit Ceres dan Metode Kuadrat Terkecil
+## 4. Kontribusi dalam Astronomi: Perhitungan Orbit Ceres dan [Metode Kuadrat Terkecil](https://kenji.blog/p/method-of-least-squares/)
 
 Bakat Gauss tidak terbatas pada matematika murni; ia juga mencapai hasil yang fenomenal dalam astronomi.
 
 Pada tanggal 1 Januari 1801, astronom Italia Giuseppe Piazzi menemukan benda langit baru (kemudian disebut planet katai Ceres). Namun, setelah beberapa hari observasi, benda langit itu bersembunyi di balik matahari dan hilang dari pandangan. Para astronom pada waktu itu berusaha memprediksi orbitnya selanjutnya hanya dari beberapa hari data observasi, namun semuanya gagal.
 
-Di sinilah Gauss masuk. Ia menghitung orbit Ceres menggunakan teknik matematika baru yang secara rahasia telah ia bangun selama beberapa waktu, **"Metode Kuadrat Terkecil"**. Metode kuadrat terkecil adalah teknik untuk memperkirakan parameter yang paling mungkin untuk meminimalkan kesalahan yang terkandung dalam data pengamatan.
+Di sinilah Gauss masuk. Ia menghitung orbit Ceres menggunakan teknik matematika baru yang secara rahasia telah ia bangun selama beberapa waktu, **"[Metode Kuadrat Terkecil](https://kenji.blog/p/method-of-least-squares/)"**. Metode kuadrat terkecil adalah teknik untuk memperkirakan parameter yang paling mungkin untuk meminimalkan kesalahan yang terkandung dalam data pengamatan.
 
 Dengan asumsi nilai yang diamati adalah $y_i$ dan nilai teoritisnya adalah $f(x_i, \boldsymbol{\theta})$, kita menemukan parameter $\boldsymbol{\theta}$ yang meminimalkan jumlah kesalahan kuadrat $S$.
 
@@ -123,7 +123,7 @@ $$
 
 (Di mana $E, F, G$ adalah koefisien bentuk fundamental pertama, dan $L, M, N$ adalah koefisien bentuk fundamental kedua)
 
-Menurut teorema ini, terbukti secara matematis bahwa, misalnya, tidak peduli bagaimana selembar kertas datar (kelengkungan 0) digulung, tidak mungkin membuat bola (kelengkungan positif) tanpa distorsi. Gagasan geometri diferensial Gauss ini kemudian digeneralisasikan ke dimensi yang lebih tinggi oleh Bernhard Riemann (geometri Riemannian) dan selanjutnya menjadi sangat diperlukan sebagai dasar matematis untuk teori relativitas umum Albert Einstein di tahun-tahun berikutnya.
+Menurut teorema ini, terbukti secara matematis bahwa, misalnya, tidak peduli bagaimana selembar kertas datar (kelengkungan 0) digulung, tidak mungkin membuat bola (kelengkungan positif) tanpa distorsi. Gagasan geometri diferensial Gauss ini kemudian digeneralisasikan ke dimensi yang lebih tinggi oleh [Bernhard Riemann](https://kenji.blog/p/riemann/) (geometri Riemannian) dan selanjutnya menjadi sangat diperlukan sebagai dasar matematis untuk teori relativitas umum Albert Einstein di tahun-tahun berikutnya.
 
 ## 6. Distribusi Gaussian dan Elektromagnetisme
 
@@ -151,13 +151,13 @@ $$
 
 Satuan rapat fluks magnetik, "Gauss (G)", juga dinamai menurut namanya.
 
-## 7. Wawasan Tersembunyi tentang Geometri Non-Euclidean
+## 7. Wawasan Tersembunyi tentang Geometri Non-[Euclide](https://kenji.blog/p/euclid/)an
 
-Episode yang menunjukkan pandangan ke depan Gauss yang menakjubkan adalah anekdot mengenai **"Geometri Non-Euclidean"**. Apakah postulat paralel Euclid (melalui titik di luar garis, ada tepat satu garis paralel) dapat dibuktikan telah menjadi misteri matematika besar selama lebih dari 2.000 tahun.
+Episode yang menunjukkan pandangan ke depan Gauss yang menakjubkan adalah anekdot mengenai **"Geometri Non-[Euclide](https://kenji.blog/p/euclid/)an"**. Apakah postulat paralel [Euclid](https://kenji.blog/p/euclid/) (melalui titik di luar garis, ada tepat satu garis paralel) dapat dibuktikan telah menjadi misteri matematika besar selama lebih dari 2.000 tahun.
 
 Dalam catatan-catatannya yang tidak dipublikasikan, Gauss sepenuhnya sadar akan keberadaan geometri baru (geometri hiperbolik) di mana postulat paralel tidak berlaku, dan telah membangun sistemnya. Namun, dalam lingkaran filosofis konservatif pada saat itu (era di mana filsafat Kantian adalah arus utama), ia khawatir terlibat dalam kritik dan kontroversi yang tidak dipahami (dalam kata-kata Gauss, "teriakan orang-orang Boeotia") jika ia menerbitkan sebuah teori yang menyangkal keabsolutan ruang, sehingga ia tidak pernah mempublikasikannya selama hidupnya.
 
-Kemudian, ketika Nikolai Lobachevsky dan János Bolyai secara independen menerbitkan geometri non-Euclidean, Gauss, setelah menerima makalah dari ayah Bolyai (teman lama Gauss), menjawab, "Memujinya sama dengan memuji diri saya sendiri. Karena keseluruhan isi karya tersebut hampir persis sama dengan renungan saya sendiri yang telah memenuhi pikiran saya selama tiga puluh hingga tiga puluh lima tahun." Dikatakan bahwa Bolyai muda sangat kecewa dengan hal ini, tetapi pada saat yang sama, ini berfungsi sebagai bukti betapa jauh di depan zamannya Gauss.
+Kemudian, ketika Nikolai Lobachevsky dan János Bolyai secara independen menerbitkan geometri non-[Euclide](https://kenji.blog/p/euclid/)an, Gauss, setelah menerima makalah dari ayah Bolyai (teman lama Gauss), menjawab, "Memujinya sama dengan memuji diri saya sendiri. Karena keseluruhan isi karya tersebut hampir persis sama dengan renungan saya sendiri yang telah memenuhi pikiran saya selama tiga puluh hingga tiga puluh lima tahun." Dikatakan bahwa Bolyai muda sangat kecewa dengan hal ini, tetapi pada saat yang sama, ini berfungsi sebagai bukti betapa jauh di depan zamannya Gauss.
 
 ## 8. Tahun-tahun Terakhir dan Warisan
 
@@ -165,6 +165,6 @@ Gauss adalah seorang yang perfeksionis, dengan moto **"Sedikit, namun matang"** 
 
 Ia juga menjadi mentor bagi generasi berikutnya. Selain Riemann yang disebutkan di atas, ahli matematika hebat dari generasi berikutnya seperti Richard Dedekind dan Ferdinand Gotthold Max Eisenstein menerima bimbingan Gauss.
 
-Pada tanggal 23 Februari 1855, Carl Friedrich Gauss meninggal di Göttingen pada usia 77 tahun. Warisannya melampaui batas-batas matematika dan mengalir di akar semua ilmu pengetahuan dan teknologi modern. Dari pemikiran abstrak murni hingga perhitungan orbit planet, dan turun ke fenomena fisik elektromagnetik, cahaya kecerdasannya terus bersinar hingga hari ini.
+Pada tanggal 23 Februari 1855, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) meninggal di Göttingen pada usia 77 tahun. Warisannya melampaui batas-batas matematika dan mengalir di akar semua ilmu pengetahuan dan teknologi modern. Dari pemikiran abstrak murni hingga perhitungan orbit planet, dan turun ke fenomena fisik elektromagnetik, cahaya kecerdasannya terus bersinar hingga hari ini.
 
 Ketika kita menatap langit malam atau menggunakan komunikasi di ponsel pintar kita, jejak besar Gauss, "Pangeran Matematika," pastilah ada di sana.

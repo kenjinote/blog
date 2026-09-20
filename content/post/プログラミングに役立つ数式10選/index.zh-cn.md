@@ -19,7 +19,7 @@ tags: ["Math", "Algorithms", "Python", "C++"]
 
 ---
 
-## 1. 欧拉恒等式 (Euler's Identity)
+## 1. 欧拉恒等式 ([Euler's Identity](https://kenji.blog/p/eulers-identity/))
 
 ### 公式的优美性与概述
 被誉为“人类的瑰宝”、“世界上最美的数学公式”的欧拉恒等式。它将数学中最重要的5个常数（自然对数的底 $e$、虚数单位 $i$、圆周率 $\pi$、乘法单位元 $1$、加法单位元 $0$）整合到了一个极其简单的公式中。
@@ -132,10 +132,10 @@ print(f"Taylor series sin: {taylor_sin(angle, terms=5)}")
 
 ---
 
-## 3. 贝叶斯定理 (Bayes' Theorem)
+## 3. [贝叶斯定理](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
 
 ### 公式的优美性与概述
-贝叶斯定理是一个基于与某事件相关的先验知识（先验概率），来更新该事件发生概率（后验概率）的定理。它是概率论和统计学中最重要的公式之一。
+[贝叶斯定理](https://kenji.blog/p/bayes-theorem/)是一个基于与某事件相关的先验知识（先验概率），来更新该事件发生概率（后验概率）的定理。它是概率论和统计学中最重要的公式之一。
 
 $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
 
@@ -559,12 +559,12 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. 欧几里得距离与勾股定理 (Euclidean Distance & Pythagorean Theorem)
+## 10. [欧几里得](https://kenji.blog/p/euclid/)距离与勾股定理 ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### 公式的优美性与概述
 这是流传自古希腊的几何学基础，也是定义 $n$ 维空间中两点间直线距离的公式。在二维空间中，它就是勾股定理（$a^2 + b^2 = c^2$）本身。
 
-三维空间中点 $P(x_1, y_1, z_1)$ 和 $Q(x_2, y_2, z_2)$ 之间的欧几里得距离 $d$ 表示如下：
+三维空间中点 $P(x_1, y_1, z_1)$ 和 $Q(x_2, y_2, z_2)$ 之间的[欧几里得](https://kenji.blog/p/euclid/)距离 $d$ 表示如下：
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

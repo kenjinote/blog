@@ -15,7 +15,7 @@ description: '介紹能讓人感受到數學深度與美感的迷人數學公式
 ## 歐拉公式
 $e^{iπ}+1=0$
 
-## 費馬最後定理
+## [費馬最後定理](https://kenji.blog/p/fermats-last-theorem/)
 對於任何整數 $n≥3$，不存在滿足 $x^n+y^n=z^n$ 的正整數組 $x,y,z$。
 
 ## 巴塞爾問題

@@ -10,7 +10,7 @@ tags: ["Abel", "Álgebra", "Historia", "Matemáticas"]
 
 # 1. Introducción: El Joven Genio Abel
 
-En la historia de las matemáticas, existen algunos genios que fallecieron a una edad temprana pero dejaron un impacto decisivo en las generaciones futuras. Entre ellos, el noruego **Niels Henrik Abel** destaca, junto a Évariste Galois, como uno de los genios trágicos más famosos. En su corta vida de solo 26 años, demostró que "no existe una solución algebraica general para ecuaciones de grado cinco o superior", un problema que había atormentado a los matemáticos durante siglos.
+En la historia de las matemáticas, existen algunos genios que fallecieron a una edad temprana pero dejaron un impacto decisivo en las generaciones futuras. Entre ellos, el noruego **[Niels Henrik Abel](https://kenji.blog/p/abel/)** destaca, junto a [Évariste Galois](https://kenji.blog/p/galois/), como uno de los genios trágicos más famosos. En su corta vida de solo 26 años, demostró que "no existe una solución algebraica general para ecuaciones de grado cinco o superior", un problema que había atormentado a los matemáticos durante siglos.
 
 En este artículo, profundizaremos en la vida de Abel, impulsada por su pasión por las matemáticas a pesar de la pobreza y la enfermedad, y en sus logros monumentales como los "grupos abelianos" y las "integrales abelianas".
 
@@ -18,7 +18,7 @@ En este artículo, profundizaremos en la vida de Abel, impulsada por su pasión 
 
 ## 2.1 Primera Infancia y el Encuentro con su Mentor Holmboe
 
-Niels Henrik Abel nació el 5 de agosto de 1802 en el pequeño pueblo noruego de Finnøy, como hijo de un pastor. Noruega en ese momento estaba económicamente empobrecida, y la familia de Abel no era una excepción.
+[Niels Henrik Abel](https://kenji.blog/p/abel/) nació el 5 de agosto de 1802 en el pequeño pueblo noruego de Finnøy, como hijo de un pastor. Noruega en ese momento estaba económicamente empobrecida, y la familia de Abel no era una excepción.
 
 Su destino cambió significativamente cuando ingresó en la Escuela Catedralicia de Oslo en 1817 y conoció a su profesor de matemáticas, **Bernt Michael Holmboe**. Holmboe reconoció inmediatamente el extraordinario talento de Abel y le enseñó matemáticas avanzadas de nivel universitario. Devorando las obras de maestros como Euler, Lagrange y Laplace, Abel absorbió rápidamente las matemáticas de vanguardia.
 
@@ -49,7 +49,7 @@ Generalmente es imposible expresar las raíces de esta ecuación en un número f
 
 # 4. Viaje a Europa y el Encuentro con Crelle
 
-En 1825, Abel obtuvo una beca del gobierno noruego y tuvo la oportunidad de estudiar en Europa continental. Su objetivo era visitar París, el centro de las matemáticas en ese momento, y Gotinga, donde residía el gran matemático Carl Friedrich Gauss.
+En 1825, Abel obtuvo una beca del gobierno noruego y tuvo la oportunidad de estudiar en Europa continental. Su objetivo era visitar París, el centro de las matemáticas en ese momento, y Gotinga, donde residía el gran matemático [Carl Friedrich Gauss](https://kenji.blog/p/gauss/).
 
 Abel envió su artículo a Gauss, pero Gauss lo ignoró sin siquiera leerlo. Renunciando a conocer a Gauss, Abel se dirigió a Berlín.
 
@@ -59,7 +59,7 @@ En Berlín, conoció a **August Leopold Crelle**, un ingeniero civil y apasionad
 
 En 1826, Abel llegó a París. Aquí presentó un artículo a la Academia de Ciencias de Francia sobre un "Teorema amplio sobre funciones trascendentes", que podría considerarse su obra maestra. Este artículo contenía contenido innovador que más tarde se conocería como el **teorema de Abel**.
 
-Sin embargo, la desgracia golpeó de nuevo. El gran matemático **Augustin-Louis Cauchy**, que fue asignado para revisarlo, traspapeló el artículo de Abel en una pila de documentos en su habitación y nunca lo revisó.
+Sin embargo, la desgracia golpeó de nuevo. El gran matemático **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)**, que fue asignado para revisarlo, traspapeló el artículo de Abel en una pila de documentos en su habitación y nunca lo revisó.
 
 Expulsado por la desesperación, la falta de fondos y la enfermedad progresiva de la tuberculosis, Abel se vio obligado a abandonar París.
 
@@ -107,4 +107,4 @@ Este teorema todavía se usa con frecuencia hoy en día en teorías como la cont
 
 # 8. Conclusión
 
-La vida de Niels Henrik Abel encaja verdaderamente con la palabra "tragedia". Sin embargo, la pasión que vertió en las matemáticas y los numerosos teoremas que produjo nunca se desvanecerán. Las teorías que dejó atrás continúan proporcionando nueva inspiración a los matemáticos hasta el día de hoy.
+La vida de [Niels Henrik Abel](https://kenji.blog/p/abel/) encaja verdaderamente con la palabra "tragedia". Sin embargo, la pasión que vertió en las matemáticas y los numerosos teoremas que produjo nunca se desvanecerán. Las teorías que dejó atrás continúan proporcionando nueva inspiración a los matemáticos hasta el día de hoy.

@@ -17,7 +17,7 @@ tags:
 
 ## Pengantar
 
-Dalam sejarah matematika, abad ke-19 adalah periode krusial ketika analisis dan aljabar berkembang menjadi bentuk modernnya. Di pusat pergerakan ini terdapat matematikawan Prancis **Joseph Liouville** (1809–1882). Ia meletakkan dasar-dasar teorema dalam analisis kompleks dan menjadi orang pertama dalam sejarah manusia yang secara konkret membuktikan keberadaan "bilangan transenden". Ia juga dikenal luas sebagai dermawan yang menguraikan dan menerbitkan manuskrip-manuskrip Évariste Galois yang menantang. Dalam artikel ini, kita akan menggali lebih dalam kehidupan Liouville yang penuh gejolak dan berbagai **pencapaian matematis**-nya.
+Dalam sejarah matematika, abad ke-19 adalah periode krusial ketika analisis dan aljabar berkembang menjadi bentuk modernnya. Di pusat pergerakan ini terdapat matematikawan Prancis **Joseph Liouville** (1809–1882). Ia meletakkan dasar-dasar teorema dalam analisis kompleks dan menjadi orang pertama dalam sejarah manusia yang secara konkret membuktikan keberadaan "bilangan transenden". Ia juga dikenal luas sebagai dermawan yang menguraikan dan menerbitkan manuskrip-manuskrip [Évariste Galois](https://kenji.blog/p/galois/) yang menantang. Dalam artikel ini, kita akan menggali lebih dalam kehidupan Liouville yang penuh gejolak dan berbagai **pencapaian matematis**-nya.
 
 ## Kehidupan Awal dan Pendidikan
 
@@ -27,7 +27,7 @@ Pada tahun 1825, ia masuk ke **École Polytechnique** yang bergengsi, di mana ia
 
 ## Menyelamatkan Manuskrip Galois
 
-Saat membahas Liouville, orang tidak dapat mengabaikan kisah tentang bagaimana ia menyelamatkan manuskrip jenius muda **Évariste Galois**. Galois kehilangan nyawanya dalam duel di usia muda 20 tahun, tetapi tepat sebelum kematiannya, ia mempercayakan penemuan matematisnya kepada temannya, Auguste Chevalier.
+Saat membahas Liouville, orang tidak dapat mengabaikan kisah tentang bagaimana ia menyelamatkan manuskrip jenius muda **[Évariste Galois](https://kenji.blog/p/galois/)**. Galois kehilangan nyawanya dalam duel di usia muda 20 tahun, tetapi tepat sebelum kematiannya, ia mempercayakan penemuan matematisnya kepada temannya, Auguste Chevalier.
 
 Liouville-lah yang menjelaskan teori Galois, yang telah lama diabaikan dan disalahpahami. Pada tahun 1843, ia mempelajari secara menyeluruh makalah Galois dan menyadari bahwa makalah-makalah itu berisi penemuan yang sangat penting mengenai kelarutan persamaan aljabar. Pada tahun 1846, Liouville menerbitkan makalah Galois di jurnal akademik yang didirikannya, *Journal de Mathématiques Pures et Appliquées*, dengan demikian memperkenalkannya kepada dunia.
 

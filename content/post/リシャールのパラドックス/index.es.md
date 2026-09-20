@@ -121,7 +121,7 @@ La paradoja de Richard estalló creando una autocontradicción porque intentó i
 Esta paradoja de Richard causó un gran impacto en el mundo de las matemáticas de aquel entonces.
 "Si no tenemos cuidado, las palabras humanas (y los sistemas lógicos) provocan autocontradicciones de inmediato. ¿Cómo podemos hacer que las matemáticas sean perfectas y libres de contradicciones?"
 
-En 1931, el matemático genio Kurt Gödel, de tan solo 25 años, dio una solución final a este problema.
+En 1931, el matemático genio [Kurt Gödel](https://kenji.blog/p/godel/), de tan solo 25 años, dio una solución final a este problema.
 Gödel logró traducir y reproducir perfectamente la estructura de esta paradoja —que Richard había provocado usando "la ambigüedad del español"— utilizando **"fórmulas matemáticas estrictas (Números de Gödel)"**.
 
 El resultado que derivó de esto es el famoso **"Teorema de Incompletitud de Gödel"**.

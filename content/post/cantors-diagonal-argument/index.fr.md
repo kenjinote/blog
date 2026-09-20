@@ -12,7 +12,7 @@ tags: ["Cantor", "Argument de la diagonale", "Infini", "Mathématiques", "Preuve
 
 Le concept d'« infini » auquel nous pensons au quotidien signifie littéralement « sans fin ». Puisque l'on peut continuer à compter les entiers naturels ($1, 2, 3, \dots$) sans limite, leur nombre est infini. D'autre part, les nombres réels (tous les points sur la droite des réels) existent aussi en nombre infini.
 
-Intuitivement, on a tendance à penser que « l'infini est l'infini, et les deux sont également sans fin », mais le mathématicien du 19ème siècle Georg Cantor a prouvé un fait étonnant : **il existe des différences de taille (cardinalité) dans l'infini** .
+Intuitivement, on a tendance à penser que « l'infini est l'infini, et les deux sont également sans fin », mais le mathématicien du 19ème siècle [Georg Cantor](https://kenji.blog/p/cantor/) a prouvé un fait étonnant : **il existe des différences de taille (cardinalité) dans l'infini** .
 
 Dans cet article, nous expliquerons en détail pourquoi l'ensemble des nombres réels est « écrasamment plus grand » que l'ensemble des entiers naturels, en utilisant **l'argument de la diagonale** (Diagonal Argument) , une méthode de preuve révolutionnaire conçue par Cantor.
 
@@ -158,7 +158,7 @@ En conclusion, il a été prouvé que **l'ensemble des nombres réels ne peut pa
 
 ---
 
-## Vers l'hypothèse du continu (Continuum Hypothesis)
+## Vers l'hypothèse du continu ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/))
 
 L'argument de la diagonale de Cantor a montré qu'il existe des « hiérarchies » au sein de l'infini.
 Si l'on note la cardinalité des entiers naturels $\aleph_0$, et la cardinalité des nombres réels $\aleph_1$ ou $2^{\aleph_0}$, la relation suivante est établie :
@@ -169,9 +169,9 @@ $$
 
 Ici, Cantor a été confronté à une question gigantesque : **« Existe-t-il un ensemble infini ayant une cardinalité intermédiaire entre $\aleph_0$ et $2^{\aleph_0}$ ? »** 
 
-L'hypothèse selon laquelle « il n'existe pas de cardinalité intermédiaire » est appelée **l'hypothèse du continu** (Continuum Hypothesis, CH) . Cantor a consacré sa vie à essayer de la prouver, mais n'a pas pu la résoudre.
+L'hypothèse selon laquelle « il n'existe pas de cardinalité intermédiaire » est appelée **l'hypothèse du continu** ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH) . Cantor a consacré sa vie à essayer de la prouver, mais n'a pas pu la résoudre.
 
-Plus tard, Kurt Gödel et Paul Cohen ont prouvé que l'hypothèse du continu est **« indécidable (indépendante) et ne peut être ni prouvée ni réfutée dans le système d'axiomes actuel des mathématiques (ZFC) »** . C'est l'une des découvertes les plus profondes des mathématiques du 20ème siècle.
+Plus tard, [Kurt Gödel](https://kenji.blog/p/godel/) et Paul Cohen ont prouvé que l'hypothèse du continu est **« indécidable (indépendante) et ne peut être ni prouvée ni réfutée dans le système d'axiomes actuel des mathématiques (ZFC) »** . C'est l'une des découvertes les plus profondes des mathématiques du 20ème siècle.
 
 ---
 
@@ -183,4 +183,4 @@ L'argument de la diagonale de Cantor ressemble à première vue à un simple puz
 2. Jusqu'aux nombres rationnels, la taille est la même que celle des entiers naturels (infini dénombrable).
 3. L'argument de créer un nouveau nombre en décalant la diagonale prouve qu'il y a plus de nombres réels que d'entiers naturels (infini indénombrable).
 
-Cette beauté de la logique absolue, qui défie l'intuition, est sans doute le plus grand attrait de la discipline mathématique. L'argument de la diagonale sera plus tard appliqué aux théories fondamentales de l'informatique et de la logique mathématique, telles que la preuve du problème de l'arrêt d'Alan Turing ou le théorème d'incomplétude de Gödel.
+Cette beauté de la logique absolue, qui défie l'intuition, est sans doute le plus grand attrait de la discipline mathématique. L'argument de la diagonale sera plus tard appliqué aux théories fondamentales de l'informatique et de la logique mathématique, telles que la preuve du problème de l'arrêt d'[Alan Turing](https://kenji.blog/p/turing/) ou le théorème d'incomplétude de Gödel.

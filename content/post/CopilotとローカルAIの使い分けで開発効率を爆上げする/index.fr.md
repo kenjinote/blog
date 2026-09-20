@@ -9,7 +9,7 @@ categories: ["programming", "ai", "productivity"]
 tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 ---
 
-# Booster l'efficacité de développement en combinant Copilot et l'IA locale : le guide complet du flux de travail de développement IA hybride
+# [Booster l'efficacité de développement en combinant Copilot et l'IA locale](https://kenji.blog/p/hybrid-ai-development-workflow/) : le guide complet du flux de travail de développement IA hybride
 
 Dans le développement logiciel moderne, l'utilisation d'assistants IA est passée d'un outil « pratique à avoir » à une infrastructure « indispensable ». Surtout depuis l'apparition de GitHub Copilot, l'expérience de codage des développeurs a radicalement changé. Cependant, s'appuyer sur l'IA dans le cloud pour toutes les tâches n'est pas toujours la solution optimale.
 

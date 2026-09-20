@@ -11,19 +11,19 @@ tags: ["Pascal", "Teori Probabilitas", "Geometri Proyektif", "Teorema Pascal", "
 ## 1. Pengantar: Sang Jenius yang Mengubah Dunia Hanya dalam 39 Tahun Kehidupannya
 
 "Manusia hanyalah sebatang alang-alang, hal yang paling rapuh di alam; tetapi ia adalah alang-alang yang berpikir."
-Blaise Pascal (19 Juni 1623 - 19 Agustus 1662), yang meninggalkan kutipan terkenal ini, adalah raksasa intelektual yang mewakili Prancis pada abad ke-17. Sebagai seorang matematikawan, fisikawan, filsuf, dan teolog Kristen, ia meninggalkan pencapaian monumental yang terukir dalam sejarah manusia di berbagai bidang.
+[Blaise Pascal](https://kenji.blog/p/pascal/) (19 Juni 1623 - 19 Agustus 1662), yang meninggalkan kutipan terkenal ini, adalah raksasa intelektual yang mewakili Prancis pada abad ke-17. Sebagai seorang matematikawan, fisikawan, filsuf, dan teolog Kristen, ia meninggalkan pencapaian monumental yang terukir dalam sejarah manusia di berbagai bidang.
 
 Kehidupannya adalah pertempuran konstan melawan penyakit, dan ia meninggal pada usia muda, 39 tahun. Namun, selama hidupnya yang singkat ini, ia meletakkan dasar-dasar geometri proyektif, menemukan kalkulator mekanis praktis pertama di dunia, merintis bidang matematika baru yaitu teori probabilitas, dan menetapkan prinsip-prinsip dasar fisika mengenai mekanika fluida dan tekanan atmosfer. Artikel ini merinci kehidupan jenius yang wafat di usia muda ini, bagaimana ia sampai pada penemuan-penemuan inovatif ini, dan dampak mendalam yang ia berikan pada generasi-generasi berikutnya.
 
 ## 2. Kelahiran Sang Anak Ajaib dan Lingkungan Pendidikan yang Unik (1623 - 1639)
 
 ### 2.1. Kelahiran di Auvergne dan Kematian Ibunya
-Blaise Pascal lahir pada tahun 1623 di Clermont-Ferrand, Auvergne, di bagian tengah-selatan Prancis. Ayahnya, Étienne Pascal, adalah tokoh terkemuka yang menjabat sebagai presiden Pengadilan Pajak (Court of Aids) setempat dan juga seorang matematikawan yang ulung. Keluarga Pascal berada di lingkungan intelektual yang sangat istimewa, tetapi ketika Blaise baru berusia tiga tahun, ibunya, Antoinette, meninggal dunia. Ayahnya Étienne memutuskan untuk tidak menikah lagi dan mengabdikan dirinya sepenuhnya untuk pendidikan ketiga anaknya: Blaise, kakak perempuannya Gilberte, dan adik perempuannya Jacqueline.
+[Blaise Pascal](https://kenji.blog/p/pascal/) lahir pada tahun 1623 di Clermont-Ferrand, Auvergne, di bagian tengah-selatan Prancis. Ayahnya, Étienne Pascal, adalah tokoh terkemuka yang menjabat sebagai presiden Pengadilan Pajak (Court of Aids) setempat dan juga seorang matematikawan yang ulung. Keluarga Pascal berada di lingkungan intelektual yang sangat istimewa, tetapi ketika Blaise baru berusia tiga tahun, ibunya, Antoinette, meninggal dunia. Ayahnya Étienne memutuskan untuk tidak menikah lagi dan mengabdikan dirinya sepenuhnya untuk pendidikan ketiga anaknya: Blaise, kakak perempuannya Gilberte, dan adik perempuannya Jacqueline.
 
 ### 2.2. Pindah ke Paris dan Kebijakan Pendidikan Étienne
 Pada tahun 1631, untuk memberikan pendidikan terbaik bagi anak-anaknya, Étienne memindahkan keluarganya ke Paris. Karena tidak puas dengan pendidikan sekolah pada saat itu, Étienne memilih untuk menjadi guru privat bagi anak-anaknya sendiri. Kebijakan pendidikannya sangat unik: "Jangan ajarkan matematika, yang merupakan mata pelajaran yang terlalu abstrak, sampai nalar anak cukup berkembang." Ia memprioritaskan bahasa dan sejarah, dan menyingkirkan semua buku matematika dari rumah.
 
-Namun, "larangan" ini secara paradoks sangat merangsang rasa ingin tahu Blaise muda. Pada usia 12 tahun, Blaise mulai mengeksplorasi geometri sendiri selama waktu bermainnya. Dengan menggambar bangun datar di lantai menggunakan arang, ia secara mandiri membuktikan dalil ke-32 dalam *Elemen* Euklides: "Jumlah sudut dalam sebuah segitiga sama dengan dua sudut siku-siku (180 derajat)." Menyaksikan kilasan bakat yang luar biasa ini, ayahnya mengubah kebijakannya, mengizinkannya untuk belajar matematika, dan mulai membawanya ke pertemuan para intelektual terbesar Eropa yang dipandu oleh Pastor Mersenne (pendahulu Akademi Sains Prancis).
+Namun, "larangan" ini secara paradoks sangat merangsang rasa ingin tahu Blaise muda. Pada usia 12 tahun, Blaise mulai mengeksplorasi geometri sendiri selama waktu bermainnya. Dengan menggambar bangun datar di lantai menggunakan arang, ia secara mandiri membuktikan dalil ke-32 dalam *Elemen* [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/): "Jumlah sudut dalam sebuah segitiga sama dengan dua sudut siku-siku (180 derajat)." Menyaksikan kilasan bakat yang luar biasa ini, ayahnya mengubah kebijakannya, mengizinkannya untuk belajar matematika, dan mulai membawanya ke pertemuan para intelektual terbesar Eropa yang dipandu oleh Pastor Mersenne (pendahulu Akademi Sains Prancis).
 
 ## 3. Pencapaian Inovatif dalam Matematika
 
@@ -66,7 +66,7 @@ graph TD
     Q -.->|"Garis Pascal"| R
 ```
 
-Penemuan ini mengirimkan gelombang kejutan besar-besaran melalui komunitas matematika pada masa itu. Terdapat sebuah anekdot bahwa bahkan matematikawan besar René Descartes menolak untuk percaya bahwa seorang anak laki-laki berusia 16 tahun telah menghasilkan pembuktian tingkat lanjut seperti itu, dan curiga bahwa hal tersebut "pasti ditulis oleh sang ayah." Pascal menurunkan lebih dari 400 akibat wajar dari teorema ini, dan secara signifikan memajukan geometri di masanya.
+Penemuan ini mengirimkan gelombang kejutan besar-besaran melalui komunitas matematika pada masa itu. Terdapat sebuah anekdot bahwa bahkan matematikawan besar [René Descartes](https://kenji.blog/p/descartes/) menolak untuk percaya bahwa seorang anak laki-laki berusia 16 tahun telah menghasilkan pembuktian tingkat lanjut seperti itu, dan curiga bahwa hal tersebut "pasti ditulis oleh sang ayah." Pascal menurunkan lebih dari 400 akibat wajar dari teorema ini, dan secara signifikan memajukan geometri di masanya.
 
 ### 3.2. Kalkulator Mekanis Pertama di Dunia: "Pascaline"
 
@@ -93,7 +93,7 @@ Salah satu peran Pascal yang paling krusial dalam sejarah matematika adalah pend
 **Masalah Pembagian Taruhan**:
 > Dua pemain dengan keterampilan yang sama sedang memainkan sebuah permainan di mana yang pertama mencapai jumlah kemenangan tertentu (misalnya, 3 kemenangan) mengambil seluruh total hadiah. Namun, permainan terpaksa dihentikan ketika salah satu pemain meraih 2 kemenangan dan yang lainnya meraih 1 kemenangan. Bagaimana total hadiah harus didistribusikan secara paling adil pada titik ini?
 
-Untuk mengatasi masalah sulit ini, Pascal menulis surat kepada Pierre de Fermat, ahli matematika jenius lainnya yang tinggal di Toulouse. Keduanya sampai pada solusi tersebut melalui pendekatan yang sama sekali berbeda.
+Untuk mengatasi masalah sulit ini, Pascal menulis surat kepada [Pierre de Fermat](https://kenji.blog/p/fermat/), ahli matematika jenius lainnya yang tinggal di Toulouse. Keduanya sampai pada solusi tersebut melalui pendekatan yang sama sekali berbeda.
 
 - **Pendekatan Fermat**: Sebuah metode kombinatorial yang mencantumkan semua kemungkinan skenario masa depan (diagram pohon) dan menghitung probabilitas terjadinya masing-masing skenario untuk menentukan rasio distribusi.
 - **Pendekatan Pascal**: Sebuah metode rekursif yang menghitung "Nilai harapan" (Expected value) dari memainkan permainan tunggal berikutnya dari keadaan saat ini dan menyelesaikannya secara rekursif.
@@ -148,7 +148,7 @@ Menyusul pengalaman ini, ia menarik diri dari penelitian ilmiah sekuler dan meng
 
 Meskipun mengabdikan diri pada agama, Pascal pernah satu kali kembali ke penelitian matematika. Pada tahun 1658, karena menderita sakit gigi yang parah, Pascal mulai memikirkan masalah matematika mengenai "Sikloid (lintasan yang digambar oleh suatu titik pada keliling lingkaran saat ia bergulir di sepanjang garis lurus)" untuk mengalihkan perhatiannya. Secara misterius, rasa sakit itu hilang, yang dianggap Pascal sebagai wahyu ilahi. Hanya dalam waktu delapan hari, ia menemukan metode inovatif untuk menemukan luas, titik berat, dan volume benda putar dari sikloid.
 
-Ia mengumumkan sayembara berhadiah mengenai masalah ini dengan nama samaran Amos Dettonville, dan menerbitkan sendiri solusi yang sempurna. "Metode tak terpisahkan" yang ia gunakan di sini berfungsi sebagai jembatan penting menuju penemuan kalkulus oleh Isaac Newton dan Gottfried Wilhelm Leibniz di kemudian hari.
+Ia mengumumkan sayembara berhadiah mengenai masalah ini dengan nama samaran Amos Dettonville, dan menerbitkan sendiri solusi yang sempurna. "Metode tak terpisahkan" yang ia gunakan di sini berfungsi sebagai jembatan penting menuju penemuan kalkulus oleh [Isaac Newton](https://kenji.blog/p/newton/) dan Gottfried Wilhelm Leibniz di kemudian hari.
 
 ### 5.3. Taruhan Pascal dan Teori Keputusan
 
@@ -179,7 +179,7 @@ Pascal menghadapi fakta bahwa dibandingkan dengan keluasan dan kekuatan makrokos
 
 ## 6. Kesimpulan: Warisan Pascal yang Terus Hidup Hari Ini
 
-Masa 39 tahun yang dilalui Blaise Pascal secara keseluruhan terlalu singkat dan dipenuhi dengan penderitaan akibat penyakit. Namun, intuisi dan pemikiran mendalamnya yang tajam melampaui batas-batas matematika, fisika, teknik, dan filsafat dengan mudah, memperluas cakrawala pengetahuan manusia secara signifikan.
+Masa 39 tahun yang dilalui [Blaise Pascal](https://kenji.blog/p/pascal/) secara keseluruhan terlalu singkat dan dipenuhi dengan penderitaan akibat penyakit. Namun, intuisi dan pemikiran mendalamnya yang tajam melampaui batas-batas matematika, fisika, teknik, dan filsafat dengan mudah, memperluas cakrawala pengetahuan manusia secara signifikan.
 
 Benih-benih yang ia tabur memberi napas pada data tekanan atmosfer (hektopascal) yang kita gunakan sehari-hari dalam prakiraan cuaca, rem mobil (prinsip Pascal), penilaian risiko dalam asuransi dan keuangan (teori probabilitas), dan bahkan dalam fondasi dari arsitektur komputer. Bahasa pemrograman "Pascal," yang dikembangkan oleh Niklaus Wirth pada tahun 1970, diberi nama untuk menghormatinya, sang pencipta kalkulator pertama di dunia.
 

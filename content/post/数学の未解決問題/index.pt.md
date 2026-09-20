@@ -25,7 +25,7 @@ Por exemplo,
 Atualmente, apenas 51 foram descobertos, e espera-se que existam infinitos,
 mas isso ainda não foi provado.
 
-## Conjectura de Goldbach
+## [Conjectura de Goldbach](https://kenji.blog/p/goldbachs-conjecture/)
 
 A conjectura de Goldbach é a conjectura de que todo número par maior que 2 pode ser expresso como a soma de dois números primos.
 (Aqui, um número primo é um número natural que não tem outros divisores além de 1 e ele mesmo.)

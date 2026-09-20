@@ -12,13 +12,13 @@ tags: ["Kiyosi Ito", "Stochastische Differentialgleichungen", "Finanzmathematik"
 
 Unsere Welt ist voll von unvorhersehbaren Ereignissen und Ungewissheiten. Von Schwankungen der Aktienkurse und der Bewegung von Partikeln in der Luft bis hin zur Strömung von Flüssen und den Lernprozessen neuronaler Netze sind Phänomene, die vom Zufall bestimmt werden, unzählig. Ein mächtiges Werkzeug zur mathematisch strengen Beschreibung, Vorhersage und Analyse solcher „zufälligen Bewegungen“ sind **stochastische Differentialgleichungen (SDE)** .
 
-Der japanische Mathematiker, der die Theorie dieser stochastischen Differentialgleichungen begründete und das als **Ito-Lemma** oder **Ito-Formel** bekannte Monument errichtete, ist der große **Kiyosi Ito** . In diesem Artikel werfen wir einen tiefen Blick auf die Episoden seines Lebens und den Kern seiner mathematischen Errungenschaften, die nicht nur auf die mathematische Welt, sondern auch auf die Wirtschaft, Physik und Ingenieurwissenschaften weiterhin einen immensen Einfluss haben.
+Der japanische Mathematiker, der die Theorie dieser stochastischen Differentialgleichungen begründete und das als **Ito-Lemma** oder **Ito-Formel** bekannte Monument errichtete, ist der große **[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)** . In diesem Artikel werfen wir einen tiefen Blick auf die Episoden seines Lebens und den Kern seiner mathematischen Errungenschaften, die nicht nur auf die mathematische Welt, sondern auch auf die Wirtschaft, Physik und Ingenieurwissenschaften weiterhin einen immensen Einfluss haben.
 
-## 2. Kiyosi Itos Leben und historischer Hintergrund
+## 2. [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)s Leben und historischer Hintergrund
 
 ### 2.1 Frühes Leben und das Erwachen für die Mathematik
 
-Kiyosi Ito wurde am 7. September 1915 im Bezirk Inabe (heute Stadt Inabe) in der Präfektur Mie geboren. Er zeichnete sich schon in jungen Jahren in der Schule aus und ging über die Achte Höhere Schule (heute Universität Nagoya) an das Institut für Mathematik der Naturwissenschaftlichen Fakultät der Kaiserlichen Universität Tokio (heute Universität Tokio).
+[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) wurde am 7. September 1915 im Bezirk Inabe (heute Stadt Inabe) in der Präfektur Mie geboren. Er zeichnete sich schon in jungen Jahren in der Schule aus und ging über die Achte Höhere Schule (heute Universität Nagoya) an das Institut für Mathematik der Naturwissenschaftlichen Fakultät der Kaiserlichen Universität Tokio (heute Universität Tokio).
 
 Zu dieser Zeit führten große Mathematiker wie Teiji Takagi (Begründer der Klassenkörpertheorie) in der japanischen Mathematikergemeinschaft Forschungen auf Weltniveau durch. Die Wahrscheinlichkeitstheorie wurde jedoch oft noch als „Ketzer der Mathematik“ oder lediglich als „angewandtes Gebiet“ behandelt, und ihr Status als reine Mathematik war noch nicht etabliert. Dennoch war Ito tief beeindruckt von den *Grundbegriffen der Wahrscheinlichkeitsrechnung*, die Andrey Kolmogorov 1933 veröffentlichte. Unter Verwendung des Lebesgue-Integrals und der Maßtheorie axiomatisierte Kolmogorov die Wahrscheinlichkeitstheorie und stellte sie auf ein strenges mathematisches Fundament.
 
@@ -38,7 +38,7 @@ Der Wiener-Prozess hatte jedoch eine fatale mathematische Eigenschaft: Er ist **
 
 ### 3.2 Die Geburt des Ito-Integrals
 
-Um dieses Problem zu lösen, konstruierte Kiyosi Ito ein neues Integrationskonzept. Dies ist das **Ito-Integral** .
+Um dieses Problem zu lösen, konstruierte [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) ein neues Integrationskonzept. Dies ist das **Ito-Integral** .
 
 $$
 \int_0^T f(t, \omega) dW_t(\omega)
@@ -71,11 +71,11 @@ $$
 
 Der Term in der Klammer auf der rechten Seite dieser Gleichung ist genau der **Ito-Term** . Er zeigt, dass die Kombination aus Unsicherheit (Varianz $\sigma^2$) und der Krümmung der Funktion (zweite Ableitung) einen durchschnittlichen Aufwärts- (oder Abwärts-) Druckeffekt auf das gesamte System bewirkt. Dies ist ein tiefgreifendes, kontraintuitives Ergebnis und verdient wahrlich die Bezeichnung „Newton-Leibniz-Formel“ der Wahrscheinlichkeitstheorie.
 
-## 4. Kiyosi Itos Philosophie und Persönlichkeit
+## 4. [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)s Philosophie und Persönlichkeit
 
 ### 4.1 „Schönheit“ in der Mathematik
 
-Kiyosi Ito liebte zutiefst die „Schönheit“ an der Basis der Mathematik. Er verglich die mathematische Forschung oft mit dem Erschaffen von Poesie oder Musik. „Ein exzellenter mathematischer Satz offenbart die einfache und schöne Struktur hinter komplexen Phänomenen“, sagte er. Für ihn waren stochastische Differentialgleichungen nicht nur Rechenwerkzeuge, sondern Kunstwerke, um die Harmonie tief im Zufall der natürlichen Welt auszudrücken.
+[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) liebte zutiefst die „Schönheit“ an der Basis der Mathematik. Er verglich die mathematische Forschung oft mit dem Erschaffen von Poesie oder Musik. „Ein exzellenter mathematischer Satz offenbart die einfache und schöne Struktur hinter komplexen Phänomenen“, sagte er. Für ihn waren stochastische Differentialgleichungen nicht nur Rechenwerkzeuge, sondern Kunstwerke, um die Harmonie tief im Zufall der natürlichen Welt auszudrücken.
 
 ### 4.2 Der Wall-Street-Wahn und seine eigene Verwirrung
 
@@ -101,10 +101,10 @@ graph TD
     E -->|"Stochastischer Gradientenabstieg (SGD)"| E1["Maschinelles Lernen & Deep Learning (KI)"]
 ```
 
-Besonders in den letzten Jahren rückt Itos Theorie im Bereich des maschinellen Lernens wieder ins Rampenlicht. Die Optimierung von Lernprozessen im Deep Learning (der Prozess, bei dem Rauschen im stochastischen Gradientenabstieg hinzugefügt wird) und die in der Bildgenerierungs-KI verwendeten **Diffusionsmodelle (Diffusion Models)** sind direkte Anwendungen von Itos Theorie, da sie im wahrsten Sinne des Wortes stochastische Differentialgleichungen in umgekehrter Zeit lösen. Kiyosi Itos Forschung stützt genau die mathematischen Grundlagen der modernen KI-Revolution.
+Besonders in den letzten Jahren rückt Itos Theorie im Bereich des maschinellen Lernens wieder ins Rampenlicht. Die Optimierung von Lernprozessen im Deep Learning (der Prozess, bei dem Rauschen im stochastischen Gradientenabstieg hinzugefügt wird) und die in der Bildgenerierungs-KI verwendeten **Diffusionsmodelle (Diffusion Models)** sind direkte Anwendungen von Itos Theorie, da sie im wahrsten Sinne des Wortes stochastische Differentialgleichungen in umgekehrter Zeit lösen. [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)s Forschung stützt genau die mathematischen Grundlagen der modernen KI-Revolution.
 
 ## 6. Fazit: Der erste Gauss-Preis und ein ewiges Vermächtnis
 
-Im Jahr 2006 stiftete der Internationale Mathematikerkongress (ICM) den **Gauss-Preis** , um die Anwendung und den Beitrag der Mathematik zur Gesellschaft zu ehren, und wählte den 90-jährigen Kiyosi Ito als ersten Empfänger. Der Grund für seine Wahl war die „Grundlegung der Theorie der stochastischen Differentialgleichungen und ihrer vielfältigen Anwendungen“. Es ist historisch selten, dass ein tiefgreifendes Streben nach reiner Mathematik zu derart weitreichenden und praktischen Auswirkungen auf die menschliche Gesellschaft führt.
+Im Jahr 2006 stiftete der Internationale Mathematikerkongress (ICM) den **Gauss-Preis** , um die Anwendung und den Beitrag der Mathematik zur Gesellschaft zu ehren, und wählte den 90-jährigen [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) als ersten Empfänger. Der Grund für seine Wahl war die „Grundlegung der Theorie der stochastischen Differentialgleichungen und ihrer vielfältigen Anwendungen“. Es ist historisch selten, dass ein tiefgreifendes Streben nach reiner Mathematik zu derart weitreichenden und praktischen Auswirkungen auf die menschliche Gesellschaft führt.
 
-Kiyosi Ito verstarb 2008 im Alter von 93 Jahren, aber sein Name ist für immer als „Ito-Lemma“ und „Ito-Integral“ in den Lehrbüchern auf der ganzen Welt verankert. Für uns, die wir in einer unsicheren Welt leben, werden die von Kiyosi Ito hinterlassenen Formeln der schönste und stärkste Leuchtturm bleiben, der sein Licht in das Chaos wirft.
+[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) verstarb 2008 im Alter von 93 Jahren, aber sein Name ist für immer als „Ito-Lemma“ und „Ito-Integral“ in den Lehrbüchern auf der ganzen Welt verankert. Für uns, die wir in einer unsicheren Welt leben, werden die von [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) hinterlassenen Formeln der schönste und stärkste Leuchtturm bleiben, der sein Licht in das Chaos wirft.

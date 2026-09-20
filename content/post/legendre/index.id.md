@@ -8,11 +8,11 @@ categories: ["matematika", "biografi"]
 tags: ["Legendre", "Teori Bilangan", "Geometri", "Sejarah Matematika"]
 ---
 
-# Adrien-Marie Legendre: Raksasa Bayangan Matematika dan Kehidupannya yang Penuh Gejolak
+# [Adrien-Marie Legendre](https://kenji.blog/p/legendre/): Raksasa Bayangan Matematika dan Kehidupannya yang Penuh Gejolak
 
-Dalam sejarah matematika, ada tokoh-tokoh yang namanya memahkotai banyak teorema dan konsep, namun kehidupan pribadi dan wajah asli mereka secara mengejutkan tetap tidak diketahui. Matematikawan besar Prancis **Adrien-Marie Legendre** (1752–1833) bisa dibilang adalah contoh utamanya.
+Dalam sejarah matematika, ada tokoh-tokoh yang namanya memahkotai banyak teorema dan konsep, namun kehidupan pribadi dan wajah asli mereka secara mengejutkan tetap tidak diketahui. Matematikawan besar Prancis **[Adrien-Marie Legendre](https://kenji.blog/p/legendre/)** (1752–1833) bisa dibilang adalah contoh utamanya.
 
-Dalam artikel ini, kita mendalami kehidupan Legendre, kontribusinya yang luar biasa terhadap dunia matematika, perseteruan sengitnya dengan jenius kontemporer Carl Friedrich Gauss, dan "misteri potret" yang baru terungkap akhir-akhir ini. Dengan melacak lintasan hidupnya, Anda akan dapat merasakan napas komunitas ilmiah Prancis dari abad ke-18 hingga abad ke-19.
+Dalam artikel ini, kita mendalami kehidupan Legendre, kontribusinya yang luar biasa terhadap dunia matematika, perseteruan sengitnya dengan jenius kontemporer [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), dan "misteri potret" yang baru terungkap akhir-akhir ini. Dengan melacak lintasan hidupnya, Anda akan dapat merasakan napas komunitas ilmiah Prancis dari abad ke-18 hingga abad ke-19.
 
 ## 1. Kehidupan dan Konteks Sejarah: Seorang Matematikawan yang Bertahan dari Prancis yang Penuh Gejolak
 
@@ -42,7 +42,7 @@ Pencapaian Legendre mencakup hampir semua bidang matematika pada masanya, termas
 
 ### 2.1 Hasrat pada Teori Bilangan dan Simbol Legendre
 
-Legendre sangat terpesona oleh teori bilangan, yang dipelopori oleh pendahulunya seperti Pierre de Fermat dan Leonhard Euler. Salah satu pencapaian terbesarnya adalah karyanya tentang "Hukum timbal balik kuadratik". Hukum ini adalah salah satu teorema paling indah dan penting dalam teori bilangan untuk menentukan apakah bilangan prima kongruen dengan modulo persegi bilangan prima lainnya.
+Legendre sangat terpesona oleh teori bilangan, yang dipelopori oleh pendahulunya seperti [Pierre de Fermat](https://kenji.blog/p/fermat/) dan [Leonhard Euler](https://kenji.blog/p/euler/). Salah satu pencapaian terbesarnya adalah karyanya tentang "Hukum timbal balik kuadratik". Hukum ini adalah salah satu teorema paling indah dan penting dalam teori bilangan untuk menentukan apakah bilangan prima kongruen dengan modulo persegi bilangan prima lainnya.
 
 Ia merumuskan hukum ini dan memberikan bukti parsial (bukti lengkap kemudian diberikan oleh Gauss muda). Selain itu, untuk mengungkapkan penelitian ini secara ringkas dan elegan, ia memperkenalkan notasi yang dikenal saat ini sebagai **simbol Legendre**.
 
@@ -55,7 +55,7 @@ $$
 \end{cases}
 $$
 
-Berkat notasi terobosan ini, proposisi dan bukti kompleks dalam teori bilangan menjadi sangat transparan, membawa manfaat luar biasa bagi matematikawan berikutnya. Ia juga meninggalkan banyak jejak di jurang teori bilangan, seperti buktinya tentang Teorema Terakhir Fermat untuk $ n=5 $ (dibuktikan secara independen sekitar waktu yang sama oleh Dirichlet) dan dugaannya tentang teorema Dirichlet tentang progresi aritmatika.
+Berkat notasi terobosan ini, proposisi dan bukti kompleks dalam teori bilangan menjadi sangat transparan, membawa manfaat luar biasa bagi matematikawan berikutnya. Ia juga meninggalkan banyak jejak di jurang teori bilangan, seperti buktinya tentang [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/) untuk $ n=5 $ (dibuktikan secara independen sekitar waktu yang sama oleh Dirichlet) dan dugaannya tentang teorema Dirichlet tentang progresi aritmatika.
 
 ### 2.2 Integral Eliptik dan Polinomial Legendre
 
@@ -77,9 +77,9 @@ Polinomial ini telah menjadi alat yang sangat diperlukan dalam segala jenis perh
 
 ### 2.3 'Éléments de géométrie' dan Dampak Besarnya pada Pendidikan Matematika
 
-Bersamaan dengan kegiatan penelitiannya, Legendre juga seorang pendidik yang luar biasa. Bukunya "Éléments de géométrie" (Elemen Geometri), yang diterbitkan pada tahun 1794, menata ulang "Elemen" Euclid agar lebih mudah diakses dan ketat bagi siswa pada masanya.
+Bersamaan dengan kegiatan penelitiannya, Legendre juga seorang pendidik yang luar biasa. Bukunya "Éléments de géométrie" (Elemen Geometri), yang diterbitkan pada tahun 1794, menata ulang "Elemen" [Euclid](https://kenji.blog/p/euclid/) agar lebih mudah diakses dan ketat bagi siswa pada masanya.
 
-Buku pelajaran ini mencapai kesuksesan fenomenal, diterjemahkan ke dalam bahasa Inggris dan bahasa lain serta dibaca di seluruh dunia, tidak hanya di Prancis. Buku ini diadopsi secara luas di Amerika Serikat dan tetap menjadi standar mutlak untuk pendidikan geometri sepanjang abad ke-19. Dalam buku ini, ia terus-menerus berusaha untuk membuktikan postulat paralel (postulat kelima Euclid), menambahkan bukti baru pada setiap edisi, meskipun pada akhirnya semuanya terbukti cacat. Namun, kegigihannya menjadi salah satu kekuatan pendorong penting yang mendorong lahirnya geometri non-Euclidean.
+Buku pelajaran ini mencapai kesuksesan fenomenal, diterjemahkan ke dalam bahasa Inggris dan bahasa lain serta dibaca di seluruh dunia, tidak hanya di Prancis. Buku ini diadopsi secara luas di Amerika Serikat dan tetap menjadi standar mutlak untuk pendidikan geometri sepanjang abad ke-19. Dalam buku ini, ia terus-menerus berusaha untuk membuktikan postulat paralel (postulat kelima [Euclid](https://kenji.blog/p/euclid/)), menambahkan bukti baru pada setiap edisi, meskipun pada akhirnya semuanya terbukti cacat. Namun, kegigihannya menjadi salah satu kekuatan pendorong penting yang mendorong lahirnya geometri non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an.
 
 ### 2.4 Tantangan pada Teorema Bilangan Prima
 
@@ -95,9 +95,9 @@ Belakangan terungkap bahwa Gauss juga membuat dugaan serupa menggunakan integral
 
 ## 3. Perseteruan dengan Gauss: Tragedi Atas Penemuan Kuadrat Terkecil
 
-Dalam membahas kehidupan Legendre, orang tidak dapat menghindari perselisihan prioritas yang sengit, terutama mengenai **Metode Kuadrat Terkecil**, dengan Carl Friedrich Gauss, "Pangeran Matematika" dari Jerman.
+Dalam membahas kehidupan Legendre, orang tidak dapat menghindari perselisihan prioritas yang sengit, terutama mengenai **[Metode Kuadrat Terkecil](https://kenji.blog/p/method-of-least-squares/)**, dengan [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), "Pangeran Matematika" dari Jerman.
 
-Pada tahun 1805, dalam bukunya tentang menghitung orbit komet, Legendre mengumumkan secara publik "Metode Kuadrat Terkecil" untuk pertama kalinya di dunia—sebuah metode untuk menemukan nilai yang paling mungkin dengan meminimalkan kesalahan data pengamatan. Ini adalah teknik revolusioner yang membentuk dasar setiap bidang yang berhubungan dengan data, dari astronomi dan geodesi hingga statistik modern dan pembelajaran mesin.
+Pada tahun 1805, dalam bukunya tentang menghitung orbit komet, Legendre mengumumkan secara publik "[Metode Kuadrat Terkecil](https://kenji.blog/p/method-of-least-squares/)" untuk pertama kalinya di dunia—sebuah metode untuk menemukan nilai yang paling mungkin dengan meminimalkan kesalahan data pengamatan. Ini adalah teknik revolusioner yang membentuk dasar setiap bidang yang berhubungan dengan data, dari astronomi dan geodesi hingga statistik modern dan pembelajaran mesin.
 
 ```mermaid
 flowchart LR
@@ -116,7 +116,7 @@ Lebih jauh, mengenai teorema bilangan prima (dugaan Legendre dari $ \pi(x) \appr
 
 Episode paling aneh dan, bagi kita saat ini, yang paling lucu tentang Legendre berkaitan dengan misteri "potret"-nya.
 
-Selama bertahun-tahun, di buku teks matematika dan buku sejarah sains di seluruh dunia, potret tertentu telah digunakan sebagai wajah Adrien-Marie Legendre. Itu adalah litograf yang menggambarkan profil seorang pria dengan ekspresi buritan dan pemarah. Semua orang percaya tanpa keraguan bahwa ini adalah wajah matematikawan besar Legendre.
+Selama bertahun-tahun, di buku teks matematika dan buku sejarah sains di seluruh dunia, potret tertentu telah digunakan sebagai wajah [Adrien-Marie Legendre](https://kenji.blog/p/legendre/). Itu adalah litograf yang menggambarkan profil seorang pria dengan ekspresi buritan dan pemarah. Semua orang percaya tanpa keraguan bahwa ini adalah wajah matematikawan besar Legendre.
 
 Namun, pada tahun 2005, sebuah fakta mengejutkan terungkap yang mengguncang komunitas sejarah matematika. Secara mengejutkan, potret yang telah diterbitkan sebagai "Matematikawan Legendre" selama lebih dari 200 tahun ternyata milik orang yang sama sekali berbeda: **Louis Legendre** (1752–1797), seorang politikus selama Revolusi Prancis!
 
@@ -129,7 +129,7 @@ Di sana, alih-alih profil tegas politisi Louis Legendre, ada sosok pria tua yang
 
 ## 5. Kesimpulan
 
-Adrien-Marie Legendre menutup usianya di Paris pada tahun 1833. Di tahun-tahun terakhirnya, ia menghadapi peristiwa-peristiwa malang, seperti diputusnya uang pensiun karena penentangannya terhadap kebijakan pemerintah.
+[Adrien-Marie Legendre](https://kenji.blog/p/legendre/) menutup usianya di Paris pada tahun 1833. Di tahun-tahun terakhirnya, ia menghadapi peristiwa-peristiwa malang, seperti diputusnya uang pensiun karena penentangannya terhadap kebijakan pemerintah.
 
 Ia sering diperlakukan sebagai "tokoh bayangan" di hadapan kecemerlangan luar biasa dari para jenius tingkat atas pada masanya, seperti Gauss dan Laplace. Namun, perannya dalam membangun fondasi matematika modern tak terukur. Warisan yang ia tinggalkan, seperti polinomial Legendre, simbol Legendre, dan perumusan metode kuadrat terkecil, terus mendukung inti sains dan teknologi modern.
 

@@ -18,7 +18,7 @@ Quando tomamos decisões em sociedade, o método mais comum é a "eleição" ou 
 
 Na verdade, a resposta matemática a esta questão é **"Não"**.
 
-Em 1951, o economista Kenneth Arrow provou matematicamente que não existe uma regra perfeita para a tomada de decisões que satisfaça um conjunto de condições razoáveis. Este é o **"Teorema da Impossibilidade de Arrow (Arrow's Impossibility Theorem)"**. Pela sua contribuição para a Teoria da Escolha Social, incluindo este feito, Arrow recebeu o Prémio Nobel de Economia em 1972.
+Em 1951, o economista Kenneth Arrow provou matematicamente que não existe uma regra perfeita para a tomada de decisões que satisfaça um conjunto de condições razoáveis. Este é o **"Teorema da Impossibilidade de Arrow ([Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/))"**. Pela sua contribuição para a Teoria da Escolha Social, incluindo este feito, Arrow recebeu o Prémio Nobel de Economia em 1972.
 
 Neste artigo, explicaremos em detalhe o que significa este teorema, com exemplos concretos, fórmulas e diagramas.
 
@@ -56,7 +56,7 @@ O sistema não deve permitir que a opinião de um indivíduo específico (o dita
 
 ---
 
-O Teorema da Impossibilidade de Arrow provou matematicamente o facto chocante de que **"não existe nenhuma função de bem-estar social que satisfaça estas quatro condições ao mesmo tempo (impor a não-ditadura leva sempre a contradições)"**.
+[O Teorema da Impossibilidade de Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) provou matematicamente o facto chocante de que **"não existe nenhuma função de bem-estar social que satisfaça estas quatro condições ao mesmo tempo (impor a não-ditadura leva sempre a contradições)"**.
 
 ```mermaid
 graph TD
@@ -195,7 +195,7 @@ Na prática, a nossa sociedade funciona ao afrouxar ligeiramente algumas das "co
 
 ## Notas finais
 
-O Teorema da Impossibilidade de Arrow provou, usando a fria linguagem da matemática, a **"ausência de uma regra perfeita para todos"**. Contudo, isso não significa a derrota da democracia.
+[O Teorema da Impossibilidade de Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) provou, usando a fria linguagem da matemática, a **"ausência de uma regra perfeita para todos"**. Contudo, isso não significa a derrota da democracia.
 
 Pelo contrário, devemos recebê-lo como uma mensagem bastante construtiva e instrutiva: **"Como qualquer sistema tem invariavelmente fraquezas, é importante compreendê-las, escolher as regras ideais adequadas para cada situação, e esgotar o debate."**
 

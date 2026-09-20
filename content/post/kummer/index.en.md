@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Number Theory", "Regular Primes"]
 ---
 
-# Ernst Kummer: Father of Ideal Numbers and the Dawn of Algebraic Number Theory
+# [Ernst Kummer](https://kenji.blog/p/kummer/): Father of Ideal Numbers and the Dawn of Algebraic Number Theory
 
 In the history of mathematics, it is not uncommon for a challenge to a specific open problem to carve out entirely new fields of study. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) is a 19th-century German mathematical giant who created exactly such a historic turning point. During his profound struggle with **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ), he introduced the groundbreaking concept of **Ideal Numbers** ( **Ideal Numbers** ), laying the foundation for modern algebraic number theory.
 
@@ -20,7 +20,7 @@ In this article, we will delve deeply into Kummer's turbulent life, the humanizi
 
 ### Early Life and Shift from Theology
 
-Ernst Kummer was born on January 29, 1810, in Sorau ( **Sorau** ), Kingdom of Prussia (now in Poland). His father, a physician, passed away when Kummer was very young, and he was raised by his mother. Despite being poor, Kummer received a dedicated education and entered the University of Halle in 1828.
+[Ernst Kummer](https://kenji.blog/p/kummer/) was born on January 29, 1810, in Sorau ( **Sorau** ), Kingdom of Prussia (now in Poland). His father, a physician, passed away when Kummer was very young, and he was raised by his mother. Despite being poor, Kummer received a dedicated education and entered the University of Halle in 1828.
 
 Initially, he majored in Protestant theology, but under the influence of Professor Heinrich Ferdinand Scherk ( **Heinrich Ferdinand Scherk** ), he became captivated by the beauty and depth of mathematics. Guided by Professor Scherk, Kummer dedicated himself to mathematics and earned his doctorate just three years later, in 1831.
 
@@ -32,9 +32,9 @@ One of these students was Leopold Kronecker ( **Leopold Kronecker** ), who would
 
 ### Glory as a University Professor
 
-His remarkable research achievements attracted the attention of the leading mathematicians of the time. In 1842, upon the recommendation of Carl Gustav Jacob Jacobi ( **Carl Gustav Jacob Jacobi** ) and Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), Kummer became a full professor at the University of Breslau. Furthermore, in 1855, he was appointed professor at the University of Berlin to succeed Dirichlet, who had moved to Göttingen.
+His remarkable research achievements attracted the attention of the leading mathematicians of the time. In 1842, upon the recommendation of [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/)** ) and Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), Kummer became a full professor at the University of Breslau. Furthermore, in 1855, he was appointed professor at the University of Berlin to succeed Dirichlet, who had moved to Göttingen.
 
-At the University of Berlin, Kummer, along with Karl Weierstrass ( **Karl Weierstrass** ) and his former student Kronecker, elevated Berlin into a global center of mathematics. His lectures were extremely clear and passionate, attracting many brilliant students from all over Europe.
+At the University of Berlin, Kummer, along with [Karl Weierstrass](https://kenji.blog/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** ) and his former student Kronecker, elevated Berlin into a global center of mathematics. His lectures were extremely clear and passionate, attracting many brilliant students from all over Europe.
 
 ---
 
@@ -64,7 +64,7 @@ $$
 
 There are no positive integer solutions $(x, y, z)$ that satisfy this equation.
 
-In 1847, French mathematicians Gabriel Lamé ( **Gabriel Lamé** ) and Augustin-Louis Cauchy ( **Augustin-Louis Cauchy** ) announced that they had succeeded in proving this theorem. Their approach was to extend factorization into the realm of complex numbers (cyclotomic fields).
+In 1847, French mathematicians [Gabriel Lamé](https://kenji.blog/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/p/lame/)** ) and [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** ) announced that they had succeeded in proving this theorem. Their approach was to extend factorization into the realm of complex numbers (cyclotomic fields).
 
 Using the primitive $p$-th root of unity $\zeta$ (where $\zeta^p = 1, \zeta \neq 1$), the equation $x^p + y^p = z^p$ can be factored as follows:
 
@@ -138,7 +138,7 @@ This surface would later play a vital role in a wide range of fields, from Abeli
 
 ## Conclusion
 
-Ernst Kummer expanded the very framework of mathematics while tackling the "unsolvable puzzle" of [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/). His idea of **Ideal Numbers** became an indispensable language in later algebra and continues to influence every branch of modern mathematics.
+[Ernst Kummer](https://kenji.blog/p/kummer/) expanded the very framework of mathematics while tackling the "unsolvable puzzle" of [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/). His idea of **Ideal Numbers** became an indispensable language in later algebra and continues to influence every branch of modern mathematics.
 
 Possessing a human side of being poor at calculation, yet endowed with the insight to discover "invisible ideal numbers" beyond human intuition, Kummer's brilliance is truly worthy of the title of genius. Kummer's achievements teach us the importance of reconsidering the framework itself when faced with seemingly impossible problems.
 

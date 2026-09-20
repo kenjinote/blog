@@ -14,13 +14,13 @@ tags:
 
 ## Einleitung
 
-In dem mathematischen Bereich der Topologie (Topologie) gibt es viele intuitiv interessante und mächtige Sätze. Einer der berühmtesten unter ihnen ist der **Igel-Satz** (Hairy Ball Theorem). Dieser Satz wird in einer sehr visuellen und leicht verständlichen Formulierung ausgedrückt: "Man kann einen behaarten Ball nicht glatt kämmen, ohne dass mindestens ein Wirbel entsteht."
+In dem mathematischen Bereich der Topologie (Topologie) gibt es viele intuitiv interessante und mächtige Sätze. Einer der berühmtesten unter ihnen ist der **Igel-Satz** ([Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)). Dieser Satz wird in einer sehr visuellen und leicht verständlichen Formulierung ausgedrückt: "Man kann einen behaarten Ball nicht glatt kämmen, ohne dass mindestens ein Wirbel entsteht."
 
 Doch dahinter verbirgt sich eine tiefgehende mathematische Bedeutung, die das Wetter auf unserer Erde, Computergrafiken und sogar die grundlegenden physikalischen Gesetze beeinflusst. In diesem Artikel werden wir die intuitive Bedeutung dieses Satzes, seine mathematische Formulierung und überraschende Anwendungsbeispiele im Detail erklären.
 
 ## Was ist der Igel-Satz?
 
-Der Igel-Satz wurde 1885 erstmals von Henri Poincaré erwähnt und 1912 von Luitzen Egbertus Jan Brouwer streng bewiesen.
+Der Igel-Satz wurde 1885 erstmals von [Henri Poincaré](https://kenji.blog/p/poincare/) erwähnt und 1912 von Luitzen Egbertus Jan Brouwer streng bewiesen.
 
 ### Intuitives Verständnis
 

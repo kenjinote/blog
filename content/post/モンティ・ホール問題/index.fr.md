@@ -156,7 +156,7 @@ Si vous n'êtes toujours pas convaincu, essayons d'augmenter le nombre de portes
 Maintenant, allez-vous changer de porte ?
 Dans ce cas, si vous croyez avoir réussi le miracle de « 1 sur 1 million » lors du premier choix, vous ne devriez pas changer. Cependant, en réalité, vous pouvez intuitivement comprendre que la probabilité que la voiture se trouve derrière la **« seule porte que le présentateur ne pouvait absolument pas ouvrir »** est de $\frac{999,999}{1,000,000}$.
 
-Le problème de Monty Hall (3 portes) n'est qu'un phénomène qui réduit l'échelle de cette situation à « 1 million de portes ».
+[Le problème de Monty Hall](https://kenji.blog/p/モンティ・ホール問題/) (3 portes) n'est qu'un phénomène qui réduit l'échelle de cette situation à « 1 million de portes ».
 
 ```mermaid
 pie title Effet du changement de porte (100 simulations)
@@ -166,7 +166,7 @@ pie title Effet du changement de porte (100 simulations)
 
 ## 6. Conclusion : les leçons que la théorie des probabilités enseigne pour les affaires et la vie
 
-Le problème de Monty Hall dépasse le cadre d'un simple quiz et nous enseigne des leçons importantes.
+[Le problème de Monty Hall](https://kenji.blog/p/モンティ・ホール問題/) dépasse le cadre d'un simple quiz et nous enseigne des leçons importantes.
 
 1. **L'intuition se trompe souvent** : Le cerveau humain n'a pas évolué pour traiter intuitivement des probabilités conditionnelles complexes. Il est dangereux de s'en remettre uniquement à l'intuition lors de prises de décisions importantes.
 2. **Mettre à jour les probabilités avec de nouvelles informations (mise à jour bayésienne)** : Lorsque la situation change et que de nouvelles informations (comme quelle porte le présentateur a ouverte) sont apportées, la clé du succès est de pouvoir mettre à jour de manière flexible ses probabilités et ses stratégies, au lieu de s'en tenir à des idées préconçues.

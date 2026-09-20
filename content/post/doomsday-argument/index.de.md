@@ -64,7 +64,7 @@ graph TD
 
 ## 4. Mathematische Formulierung mit Bayes'scher Inferenz
 
-Lassen Sie uns diese Intuition mit **Bayes'scher Inferenz** (Bayesian Inference) rigoros mathematisch formulieren. Der Satz von Bayes beschreibt, wie die Wahrscheinlichkeit einer Hypothese (A-posteriori-Wahrscheinlichkeit) aktualisiert werden sollte, wenn ein neuer Beweis (Beobachtungsdaten) gefunden wird.
+Lassen Sie uns diese Intuition mit **Bayes'scher Inferenz** (Bayesian Inference) rigoros mathematisch formulieren. Der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) beschreibt, wie die Wahrscheinlichkeit einer Hypothese (A-posteriori-Wahrscheinlichkeit) aktualisiert werden sollte, wenn ein neuer Beweis (Beobachtungsdaten) gefunden wird.
 
 $$ P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)} $$
 

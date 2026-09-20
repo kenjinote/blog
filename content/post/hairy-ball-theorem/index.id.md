@@ -14,13 +14,13 @@ tags:
 
 ## Pendahuluan
 
-Di bidang matematika yang disebut topologi, terdapat banyak teorema yang secara intuitif menarik dan sangat kuat. Salah satu yang paling terkenal di antaranya adalah **Teorema Bola Berbulu** (Hairy Ball Theorem). Teorema ini diungkapkan dengan kata-kata yang sangat visual dan mudah dipahami: "Anda tidak bisa menyisir rapi bola yang berbulu tanpa membuat setidaknya satu pusaran".
+Di bidang matematika yang disebut topologi, terdapat banyak teorema yang secara intuitif menarik dan sangat kuat. Salah satu yang paling terkenal di antaranya adalah **Teorema Bola Berbulu** ([Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)). Teorema ini diungkapkan dengan kata-kata yang sangat visual dan mudah dipahami: "Anda tidak bisa menyisir rapi bola yang berbulu tanpa membuat setidaknya satu pusaran".
 
 Namun, di baliknya tersembunyi makna matematis yang mendalam, yang memengaruhi cuaca di planet Bumi tempat kita tinggal, grafik komputer, dan bahkan hukum dasar fisika. Artikel ini akan menjelaskan secara rinci makna intuitif dari teorema ini, rumusan matematisnya, serta contoh aplikasinya yang menakjubkan.
 
 ## Apa itu Teorema Bola Berbulu?
 
-Teorema Bola Berbulu pertama kali disebutkan oleh Henri Poincaré pada tahun 1885 dan dibuktikan secara ketat oleh Luitzen Egbertus Jan Brouwer pada tahun 1912.
+Teorema Bola Berbulu pertama kali disebutkan oleh [Henri Poincaré](https://kenji.blog/p/poincare/) pada tahun 1885 dan dibuktikan secara ketat oleh Luitzen Egbertus Jan Brouwer pada tahun 1912.
 
 ### Pemahaman Intuitif
 

@@ -32,7 +32,7 @@ Ia kemudian melanjutkan ke Departemen Matematika di Sekolah Tinggi Sains di Univ
 
 Pada tahun 1898, Takagi pergi ke Jerman sebagai mahasiswa luar negeri dari Kementerian Pendidikan. Ia awalnya belajar di Universitas Berlin, tetapi kemudian pindah ke Universitas Göttingen, yang merupakan pusat matematika di dunia pada saat itu.
 
-Menunggunya di sana adalah matematikawan hebat yang meninggalkan nama mereka dalam sejarah matematika, seperti David Hilbert dan Felix Klein. Secara khusus, Hilbert baru saja menerbitkan "Zahlbericht" (Laporan tentang Bilangan) miliknya, yang merupakan puncak dari teori bilangan aljabar, dan isinya berdampak mendalam pada Takagi. Di bawah bimbingan Hilbert, ia memecahkan bagian dari "Mimpi Masa Muda Kronecker" (sebuah masalah mengenai teori perkalian kompleks), memperoleh gelar doktornya pada tahun 1903, dan kembali ke Jepang.
+Menunggunya di sana adalah matematikawan hebat yang meninggalkan nama mereka dalam sejarah matematika, seperti [David Hilbert](https://kenji.blog/p/hilbert/) dan Felix Klein. Secara khusus, Hilbert baru saja menerbitkan "Zahlbericht" (Laporan tentang Bilangan) miliknya, yang merupakan puncak dari teori bilangan aljabar, dan isinya berdampak mendalam pada Takagi. Di bawah bimbingan Hilbert, ia memecahkan bagian dari "Mimpi Masa Muda Kronecker" (sebuah masalah mengenai teori perkalian kompleks), memperoleh gelar doktornya pada tahun 1903, dan kembali ke Jepang.
 
 ## 2. Terobosan dalam Isolasi: Lahirnya Teori Medan Kelas
 
@@ -80,7 +80,7 @@ Teori Medan Kelas Takagi sepenuhnya menentukan medan seperti apa yang memainkan 
 
 Pada tahun 1920, di Kongres Internasional Matematikawan yang diadakan di Strasbourg setelah berakhirnya Perang Dunia I, Takagi mempresentasikan Teori Medan Kelas ini. Namun, karena isinya sangat inovatif pada awalnya, hal itu tidak sepenuhnya dipahami.
 
-Kemudian, mengirimkan cetak ulang makalahnya kepada Carl Siegel di Jerman menarik perhatian matematikawan pendatang baru seperti Emil Artin dan Helmut Hasse. Mereka segera memahami kehebatan teori Takagi dan memajukan penelitian lebih lanjut berdasarkan fondasi ini.
+Kemudian, mengirimkan cetak ulang makalahnya kepada Carl Siegel di Jerman menarik perhatian matematikawan pendatang baru seperti Emil Artin dan [Helmut Hasse](https://kenji.blog/p/hasse/). Mereka segera memahami kehebatan teori Takagi dan memajukan penelitian lebih lanjut berdasarkan fondasi ini.
 
 Secara khusus, Artin membuktikan **Hukum Timbal Balik Artin** menggunakan teori Takagi, menyelesaikan perumusan Teori Medan Kelas. Dengan ini, nama Teiji Takagi terukir selamanya dalam sejarah matematika.
 
@@ -109,7 +109,7 @@ Di luar pencapaian matematikanya, Teiji Takagi memberikan kontribusi yang tak te
 - **"Pelajaran tentang Teori Bilangan Dasar"**: Buku teks yang menjelaskan semuanya mulai dari dasar-dasar teori bilangan hingga hukum timbal balik Gauss.
 - **"Kisah Sejarah Matematika Modern"**: Buku sejarah yang dengan jelas menggambarkan kelompok matematikawan di abad ke-19. Buku ini menyampaikan drama perkembangan matematika.
 
-Benih yang ditaburnya diwariskan kepada matematikawan Jepang yang nantinya akan aktif di seluruh dunia, seperti Kunihiko Kodaira, Kiyoshi Ito, dan selanjutnya, Goro Shimura dan Yutaka Taniyama.
+Benih yang ditaburnya diwariskan kepada matematikawan Jepang yang nantinya akan aktif di seluruh dunia, seperti [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/), Kiyoshi Ito, dan selanjutnya, [Goro Shimura](https://kenji.blog/p/shimura-goro/) dan [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/).
 
 ## Kesimpulan
 

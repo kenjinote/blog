@@ -23,9 +23,9 @@ $$
 1 + 2 + 3 + 4 + \dots = -\frac{1}{12}
 $$
 
-正の整数を無限に足し合わせているのに、なぜか **負の分数** になってしまうのです。この直感に反する結果は、インドの天才数学者[シュリニヴァーサ・ラマヌジャン](https://kenji.blog/p/ramanujan/)（Srinivasa Ramanujan）がイギリスの数学者G.H.ハーディに宛てた手紙の中で言及したことで有名になりました。
+正の整数を無限に足し合わせているのに、なぜか **負の分数** になってしまうのです。この直感に反する結果は、インドの天才数学者[シュリニヴァーサ・ラマヌジャン](https://kenji.blog/p/ramanujan/)（[Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/)）がイギリスの数学者G.H.ハーディに宛てた手紙の中で言及したことで有名になりました。
 
-この記事では、この「[ラマヌジャン](https://kenji.blog/p/ramanujan/)の和（Ramanujan Summation）」と呼ばれる手法について、どのようにしてこの奇妙な値が導き出されるのか、そしてそれが現実世界の物理現象とどう結びついているのかを解説します。
+この記事では、この「[ラマヌジャン](https://kenji.blog/p/ramanujan/)の和（[Ramanujan Summation](https://kenji.blog/p/ramanujan-summation/)）」と呼ばれる手法について、どのようにしてこの奇妙な値が導き出されるのか、そしてそれが現実世界の物理現象とどう結びついているのかを解説します。
 
 ---
 

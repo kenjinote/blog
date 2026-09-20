@@ -15,7 +15,7 @@ tags:
 
 ## O que é o Teorema dos Números Primos?
 
-Um dos resultados mais belos no campo da matemática é o **Teorema dos Números Primos** (Prime Number Theorem, PNT). Ele mostra que os números primos, que à primeira vista parecem aparecer de forma irregular e aleatória, possuem uma regularidade surpreendentemente suave quando vistos macroscopicamente.
+Um dos resultados mais belos no campo da matemática é o **Teorema dos Números Primos** ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT). Ele mostra que os números primos, que à primeira vista parecem aparecer de forma irregular e aleatória, possuem uma regularidade surpreendentemente suave quando vistos macroscopicamente.
 
 Especificamente, se definirmos a "quantidade de números primos menores ou iguais a um número real $x$" como $\pi(x)$ (função de contagem de números primos), o teorema afirma que quando $x$ é muito grande, $\pi(x)$ é assintótico a $x / \ln(x)$.
 
@@ -42,11 +42,11 @@ graph TD;
 
 ## Contexto Histórico: Da conjectura de Gauss à demonstração
 
-A história do teorema dos números primos remonta ao final do século XVIII. O jovem gênio matemático de apenas 15 anos, Carl Friedrich Gauss, ao observar tabelas de números primos, percebeu que a frequência de ocorrência dos números primos estava relacionada à função logarítmica. Na mesma época, Adrien-Marie Legendre também formulou independentemente uma conjectura semelhante.
+A história do teorema dos números primos remonta ao final do século XVIII. O jovem gênio matemático de apenas 15 anos, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), ao observar tabelas de números primos, percebeu que a frequência de ocorrência dos números primos estava relacionada à função logarítmica. Na mesma época, [Adrien-Marie Legendre](https://kenji.blog/p/legendre/) também formulou independentemente uma conjectura semelhante.
 
 No entanto, eles não conseguiram provar isso rigorosamente.
 
-Um grande avanço na demonstração foi trazido pelo artigo inovador de Bernhard Riemann de 1859, "Sobre o Número de Primos Menores que uma Dada Grandeza". Riemann propôs uma abordagem completamente nova de converter o problema da distribuição dos números primos em um problema no plano complexo, usando a **função zeta** $\zeta(s)$, que é uma função complexa.
+Um grande avanço na demonstração foi trazido pelo artigo inovador de [Bernhard Riemann](https://kenji.blog/p/riemann/) de 1859, "Sobre o Número de Primos Menores que uma Dada Grandeza". Riemann propôs uma abordagem completamente nova de converter o problema da distribuição dos números primos em um problema no plano complexo, usando a **função zeta** $\zeta(s)$, que é uma função complexa.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ primo}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 

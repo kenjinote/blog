@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Introduction : Le mystère cosmique des nombres premiers et l'hypothèse de Riemann
 
-Les « nombres premiers » (Prime Numbers) sont des entiers naturels qui ne sont divisibles que par 1 et par eux-mêmes, et sont souvent appelés les « atomes » du monde mathématique. La suite 2, 3, 5, 7, 11, 13... semble à première vue désordonnée et aléatoire. Depuis que le mathématicien grec antique Euclide a prouvé qu'« il existe une infinité de nombres premiers », d'innombrables mathématiciens ont tenté de percer les régularités cachées dans cette suite de nombres premiers.
+Les « nombres premiers » (Prime Numbers) sont des entiers naturels qui ne sont divisibles que par 1 et par eux-mêmes, et sont souvent appelés les « atomes » du monde mathématique. La suite 2, 3, 5, 7, 11, 13... semble à première vue désordonnée et aléatoire. Depuis que le mathématicien grec antique [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) a prouvé qu'« il existe une infinité de nombres premiers », d'innombrables mathématiciens ont tenté de percer les régularités cachées dans cette suite de nombres premiers.
 
-Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de Riemann » (Riemann Hypothesis)**, proposée en 1859 par le mathématicien allemand Bernhard Riemann. L'hypothèse de Riemann est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
+Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de Riemann » (Riemann Hypothesis)**, proposée en 1859 par le mathématicien allemand [Bernhard Riemann](https://kenji.blog/p/riemann/). L'hypothèse de Riemann est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
 
 À première vue, un problème difficile de mathématiques pures concernant la distribution des nombres premiers peut sembler sans rapport avec notre vie quotidienne. Cependant, la sécurité de l'infrastructure d'Internet qui soutient la société moderne, en particulier **les technologies de cryptographie moderne telles que le chiffrement RSA et la cryptographie sur les courbes elliptiques (ECC)**, dépend profondément des propriétés des nombres premiers géants.
 
@@ -30,13 +30,13 @@ Par exemple :
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-Carl Friedrich Gauss, mathématicien de génie de 15 ans, a calculé d'énormes tables de nombres premiers et a découvert que la fréquence d'apparition des nombres premiers diminue de manière inversement proportionnelle au logarithme népérien $\ln x$. En d'autres termes, il a conjecturé que la probabilité de trouver un nombre premier autour d'un certain nombre $x$ est d'environ $\frac{1}{\ln x}$.
+[Carl Friedrich Gauss](https://kenji.blog/p/gauss/), mathématicien de génie de 15 ans, a calculé d'énormes tables de nombres premiers et a découvert que la fréquence d'apparition des nombres premiers diminue de manière inversement proportionnelle au logarithme népérien $\ln x$. En d'autres termes, il a conjecturé que la probabilité de trouver un nombre premier autour d'un certain nombre $x$ est d'environ $\frac{1}{\ln x}$.
 
 L'expression de cela à l'aide d'une intégrale est le **logarithme intégral (Logarithmic integral)** $\text{Li}(x)$.
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-La conjecture de Gauss a ensuite été prouvée indépendamment en 1896 par Jacques Hadamard et Charles-Jean de La Vallée Poussin, et a été établie en tant que **théorème des nombres premiers (Prime Number Theorem, PNT)**.
+La conjecture de Gauss a ensuite été prouvée indépendamment en 1896 par Jacques Hadamard et Charles-Jean de La Vallée Poussin, et a été établie en tant que **théorème des nombres premiers ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT)**.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ Grâce à ce théorème, nous savons que les nombres premiers ont une distributi
 
 # 3. La fonction zêta de Riemann et le produit eulerien
 
-L'arme la plus puissante pour analyser la distribution des nombres premiers est la **fonction zêta de Riemann (Riemann Zeta Function)**. À l'origine, il s'agissait d'une série infinie définie par Leonhard Euler pour les nombres réels $s > 1$.
+L'arme la plus puissante pour analyser la distribution des nombres premiers est la **fonction zêta de Riemann (Riemann Zeta Function)**. À l'origine, il s'agissait d'une série infinie définie par [Leonhard Euler](https://kenji.blog/p/euler/) pour les nombres réels $s > 1$.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 

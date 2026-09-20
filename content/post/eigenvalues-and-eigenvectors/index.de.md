@@ -12,13 +12,13 @@ tags: ["lineare-algebra", "eigenwert", "eigenvektor", "mathematik", "maschinelle
 
 Beim Erlernen der linearen Algebra sind die ersten Hürden, auf die viele Menschen stoßen, möglicherweise die "Matrixmultiplikation" oder die "Determinanten". Jenseits dieser Hürden liegt jedoch die wahre Quelle der immensen Macht der linearen Algebra in der modernen Wissenschaft und Technik: **Eigenwerte** (Eigenvalues) und **Eigenvektoren** (Eigenvectors).
 
-Von der Dimensionsreduktion (PCA) beim maschinellen Lernen und dem PageRank-Algorithmus, der die Google-Suchmaschine angetrieben hat, bis hin zum erdbebensicheren Design von Gebäuden und der Schrödinger-Gleichung in der Quantenmechanik tauchen Eigenwerte und Eigenvektoren überall auf.
+Von der Dimensionsreduktion (PCA) beim maschinellen Lernen und dem PageRank-Algorithmus, der die Google-Suchmaschine angetrieben hat, bis hin zum erdbebensicheren Design von Gebäuden und der Schrödinger-Gleichung in der Quantenmechanik tauchen [Eigenwerte und Eigenvektoren](https://kenji.blog/p/eigenvalues-and-eigenvectors/) überall auf.
 
 Das Ziel dieses Artikels ist es nicht nur, mathematischen Formeln zu folgen, sondern ihre "geometrische Bedeutung" intuitiv zu verstehen. Wir erklären umfassend alles von praktischen Berechnungsmethoden bis hin zu realen Anwendungen.
 
 ## Lineare Transformationen und geometrische Intuition
 
-Um Eigenwerte und Eigenvektoren zu verstehen, müssen Sie zunächst Ihre Perspektive darauf ändern, "was eine Matrix ist". Eine Matrix ist nicht nur ein Gitter von Zahlen. Sie ist ein **Transformator (Transformation)** im Raum.
+Um [Eigenwerte und Eigenvektoren](https://kenji.blog/p/eigenvalues-and-eigenvectors/) zu verstehen, müssen Sie zunächst Ihre Perspektive darauf ändern, "was eine Matrix ist". Eine Matrix ist nicht nur ein Gitter von Zahlen. Sie ist ein **Transformator (Transformation)** im Raum.
 
 Die Operation $A\mathbf{v}$, bei der Sie einen Vektor $\mathbf{v}$ mit einer Matrix $A$ multiplizieren, bedeutet die Transformation des Vektors $\mathbf{v}$ in einen anderen, neuen Vektor $\mathbf{v}'$.
 
@@ -58,7 +58,7 @@ Dies wird die **charakteristische Gleichung (Characteristic Equation)** genannt.
 
 ## Charakteristische Gleichung und spezifische Berechnungsschritte
 
-Lassen Sie uns nun die Eigenwerte und Eigenvektoren mit einer bestimmten $2 \times 2$-Matrix von Hand berechnen. Dies ist ein sehr häufiger Schritt in Klausuren zur linearen Algebra.
+Lassen Sie uns nun die [Eigenwerte und Eigenvektoren](https://kenji.blog/p/eigenvalues-and-eigenvectors/) mit einer bestimmten $2 \times 2$-Matrix von Hand berechnen. Dies ist ein sehr häufiger Schritt in Klausuren zur linearen Algebra.
 
 Betrachten wir als Beispiel die folgende Matrix $A$:
 
@@ -122,7 +122,7 @@ $$
 \mathbf{v}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
 $$
 
-Jetzt haben wir alle Eigenwerte und Eigenvektoren für die Matrix $A$ gefunden.
+Jetzt haben wir alle [Eigenwerte und Eigenvektoren](https://kenji.blog/p/eigenvalues-and-eigenvectors/) für die Matrix $A$ gefunden.
 
 ## Berechnung von Eigenwerten und Eigenvektoren mit Python
 
@@ -188,7 +188,7 @@ Bisher haben wir die mathematischen Aspekte untersucht, aber diese Konzepte dien
 
 In den Bereichen des maschinellen Lernens und der Datenwissenschaft gibt es eine Technik namens **Hauptkomponentenanalyse (PCA)**, die hochdimensionale Daten (z. B. Bilddaten mit Hunderten von Pixeln oder eine große Menge von Benutzerverhaltenshistorien) in eine analysierbare niedrigere Dimension komprimiert.
 
-Bei der PCA berechnen wir die Eigenwerte und Eigenvektoren der Kovarianzmatrix der Daten.
+Bei der PCA berechnen wir die [Eigenwerte und Eigenvektoren](https://kenji.blog/p/eigenvalues-and-eigenvectors/) der Kovarianzmatrix der Daten.
 - **Eigenvektor**: Repräsentiert die Richtung der "neuen Achse (Hauptkomponente)", in der die Varianz der Daten maximiert wird.
 - **Eigenwert**: Repräsentiert die Menge der Varianz (Informationsmenge) der Daten entlang dieser neuen Achse.
 
@@ -224,7 +224,7 @@ Auch in der klassischen Physik, wie bei der Schwingungsanalyse von Brücken und 
 
 ## Fazit
 
-Auf den ersten Blick mögen Eigenwerte und Eigenvektoren wie abstrakte mathematische Rätsel erscheinen. Geometrisch betrachtet handelt es sich jedoch um die Operation der Extraktion der "wesentlichen Achsen, die sich bei komplexen Transformationen durch Matrizen niemals ändern", und ihre Anwendungen reichen von Informatik über Datenwissenschaft bis hin zur theoretischen Physik und dem Maschinenbau.
+Auf den ersten Blick mögen [Eigenwerte und Eigenvektoren](https://kenji.blog/p/eigenvalues-and-eigenvectors/) wie abstrakte mathematische Rätsel erscheinen. Geometrisch betrachtet handelt es sich jedoch um die Operation der Extraktion der "wesentlichen Achsen, die sich bei komplexen Transformationen durch Matrizen niemals ändern", und ihre Anwendungen reichen von Informatik über Datenwissenschaft bis hin zur theoretischen Physik und dem Maschinenbau.
 
 - **Eigenvektor**: Die wesentliche Richtung oder der Modus eines Systems, das seine Ausrichtung nach einer Transformation nicht ändert.
 - **Eigenwert**: Der Skalierungsfaktor (Wichtigkeit, Energie, Frequenz usw.), der darstellt, wie sehr diese Richtung durch die Transformation gestreckt oder gestaucht wird.

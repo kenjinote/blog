@@ -8,7 +8,7 @@ categories: ["mathematik", "mengenlehre"]
 tags: ["Auswahlaxiom", "Lemma von Zorn", "ZFC-Axiomensystem", "Grundlagen der Mathematik", "Mermaid", "KaTeX"]
 ---
 
-# Das Auswahlaxiom und das Lemma von Zorn: Das Konzept der „Wahl“, das die Grundlagen der Mathematik erschütterte
+# [Das Auswahlaxiom und das Lemma von Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/): Das Konzept der „Wahl“, das die Grundlagen der Mathematik erschütterte
 
 In der Geschichte der Mathematik gibt es kein Axiom, das so viel Diskussion hervorgerufen hat und gleichzeitig so unverzichtbar für die moderne Mathematik geworden ist wie das **Auswahlaxiom** (Axiom of Choice). In diesem Artikel gehen wir dem Auswahlaxiom und der dazu äquivalenten Aussage, dem **Lemma von Zorn** (Zorn's Lemma), von Grund auf nach. Wir bieten eine umfassende Erläuterung, die von intuitivem Verständnis über strenge mathematische Formalisierung und historischen Hintergrund bis hin zu Anwendungen in verschiedenen Bereichen der modernen Mathematik reicht.
 
@@ -73,7 +73,7 @@ graph TD
 
 ## 3. Das Netzwerk der Äquivalenzen: Auswahlaxiom, Lemma von Zorn und Wohlordnungssatz
 
-Das Auswahlaxiom und das Lemma von Zorn scheinen völlig verschiedene Behauptungen zu sein, sind jedoch unter dem ZF-Axiomensystem äquivalent (wenn eines wahr ist, ist auch das andere wahr). In diesem Netzwerk von Äquivalenzbeweisen spielt der von Ernst Zermelo bewiesene **Wohlordnungssatz** (Well-ordering theorem) eine entscheidende Rolle.
+[Das Auswahlaxiom und das Lemma von Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) scheinen völlig verschiedene Behauptungen zu sein, sind jedoch unter dem ZF-Axiomensystem äquivalent (wenn eines wahr ist, ist auch das andere wahr). In diesem Netzwerk von Äquivalenzbeweisen spielt der von Ernst Zermelo bewiesene **Wohlordnungssatz** (Well-ordering theorem) eine entscheidende Rolle.
 
 ### 3.1. Was ist der Wohlordnungssatz?
 
@@ -156,6 +156,6 @@ Der Grund ist einfach. Wenn das Auswahlaxiom abgelehnt wird (und nur das ZF-Axio
 
 ## 7. Fazit: Eine Brücke über den Abgrund der Unendlichkeit
 
-Das Auswahlaxiom und das Lemma von Zorn zeigen, wie die Operation der „Wahl“ – im endlichen Bereich so selbstverständlich, dass sie nicht einmal wahrgenommen wird – in dem Moment, in dem man den Bereich der Unendlichkeit betritt, zutiefst tiefe, furchteinflößende und wunderschöne Strukturen hervorbringt.
+[Das Auswahlaxiom und das Lemma von Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) zeigen, wie die Operation der „Wahl“ – im endlichen Bereich so selbstverständlich, dass sie nicht einmal wahrgenommen wird – in dem Moment, in dem man den Bereich der Unendlichkeit betritt, zutiefst tiefe, furchteinflößende und wunderschöne Strukturen hervorbringt.
 
 Das Lemma von Zorn hat als mächtiger Zauberstab, der die Existenz des „Maximalen" am Ende unendlicher Ketten garantiert, die Entwicklung der Algebra und Analysis vorangetrieben. Den mathematischen Sätzen, die wir alltäglich bedenkenlos verwenden, liegt diese tiefgründige Philosophie namens „Auswahlaxiom" zugrunde. Die Grundlagen der Mathematik sind nicht bloß logische Puzzles, sondern ein großartiges Drama darüber, wie die menschliche Vernunft dem Konzept der Unendlichkeit begegnet.

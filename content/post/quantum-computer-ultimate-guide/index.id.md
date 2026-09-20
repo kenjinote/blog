@@ -59,7 +59,7 @@ Hanya dengan mencoba menyimulasikan $N = 300$ qubit (Qubit) saja, jumlah bilanga
 
 Ide intuitif Feynman diformulasikan secara ketat dalam kerangka ilmu komputer teoretis oleh David Deutsch, seorang fisikawan di Universitas Oxford. Dalam sebuah makalah terobosan pada tahun 1985, Deutsch menunjukkan kemungkinan bahwa "Tesis Church-Turing Kuat (Strong Church-Turing Thesis)", yang menyatakan bahwa "semua proses fisik dapat disimulasikan sepenuhnya dengan cara yang terbatas", mungkin tidak berlaku di dunia fisik yang diatur oleh mekanika kuantum.
 
-Deutsch memperluas mesin Turing deterministik yang diajukan oleh Alan Turing, dan mendefinisikan konsep "Mesin Turing Kuantum (Quantum Turing Machine)". Ini adalah sebuah mesin di mana keadaan internal, simbol-simbol pada pita, dan posisi kepala pembaca dapat berada dalam "keadaan superposisi" kuantum, dan transisi keadaannya dijelaskan oleh operator uniter (Unitary Operator) $U$.
+Deutsch memperluas mesin Turing deterministik yang diajukan oleh [Alan Turing](https://kenji.blog/p/turing/), dan mendefinisikan konsep "Mesin Turing Kuantum (Quantum Turing Machine)". Ini adalah sebuah mesin di mana keadaan internal, simbol-simbol pada pita, dan posisi kepala pembaca dapat berada dalam "keadaan superposisi" kuantum, dan transisi keadaannya dijelaskan oleh operator uniter (Unitary Operator) $U$.
 
 Unit dasar komputasi kuantum adalah "qubit (Qubit)". Berbeda dengan bit klasik yang hanya dapat mengambil keadaan pasti antara $0$ atau $1$, qubit dapat mengambil keadaan superposisi linear arbitrer dari $|0\rangle$ dan $|1\rangle$.
 
@@ -1825,7 +1825,7 @@ Dalam masyarakat digital modern, fondasi yang menjamin komunikasi yang aman di i
 
 Pertama, mari kita formulasikan mekanisme kriptografi RSA secara matematis. Pembuatan kunci kriptografi RSA dimulai dengan memilih dua bilangan prima raksasa $p$ dan $q$ secara acak (saat ini, masing-masing direkomendasikan berukuran 2048 bit atau lebih). Bilangan komposit yang merupakan perkalian dari keduanya, $N = pq$, dihitung, dan nilai ini dipublikasikan secara umum sebagai bagian dari kunci publik. Selanjutnya, fungsi totient Euler $\phi(N)$ dihitung. Berdasarkan sifat bilangan prima, nilai ini adalah $\phi(N) = (p-1)(q-1)$.
 
-Eksponen enkripsi $e$, yang menjadi kunci enkripsi, dipilih sedemikian rupa sehingga memenuhi $1 < e < \phi(N)$ dan $\text{gcd}(e, \phi(N)) = 1$ (yaitu koprima dengan $\phi(N)$). Kemudian, eksponen dekripsi $d$, yang menjadi kunci privat, dihitung agar memenuhi persamaan kongruensi $ed \equiv 1 \pmod{\phi(N)}$. Nilai ini dapat dengan mudah dicari dalam waktu polinomial menggunakan algoritma Euclidean yang diperluas.
+Eksponen enkripsi $e$, yang menjadi kunci enkripsi, dipilih sedemikian rupa sehingga memenuhi $1 < e < \phi(N)$ dan $\text{gcd}(e, \phi(N)) = 1$ (yaitu koprima dengan $\phi(N)$). Kemudian, eksponen dekripsi $d$, yang menjadi kunci privat, dihitung agar memenuhi persamaan kongruensi $ed \equiv 1 \pmod{\phi(N)}$. Nilai ini dapat dengan mudah dicari dalam waktu polinomial menggunakan algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an yang diperluas.
 
 Jika teks asal (plaintext) dinyatakan sebagai bilangan bulat $M$ (dengan $0 \le M < N$), enkripsi dilakukan melalui perpangkatan modulo $N$ sebagai berikut:
 
@@ -1853,7 +1853,7 @@ Namun, algoritma kuantum yang diterbitkan oleh Peter Shor pada tahun 1994 membal
 
 Wawasan jenius dari Algoritma Shor terletak pada kenyataan bahwa "alih-alih menyelesaikan masalah faktorisasi prima secara langsung, ia mereduksinya menjadi masalah pencarian periode". Berdasarkan teorema teori bilangan murni, telah dibuktikan bahwa faktorisasi prima ekuivalen dengan masalah yang disebut "Masalah Pencarian Ordo" (Order-Finding Problem). Proses reduksi ini sendiri merupakan algoritma klasik sepenuhnya dan tidak memerlukan komputasi kuantum.
 
-Mari kita telusuri langkah-langkah untuk memfaktorkan bilangan komposit $N$ yang diberikan. Pertama, kita memilih bilangan bulat acak $a$ yang memenuhi $1 < a < N$. Menggunakan algoritma Euclidean, kita menghitung faktor persekutuan terbesar $\text{gcd}(a, N)$. Jika nilai ini lebih besar dari $1$, kita beruntung karena kita telah menemukan faktor non-trivial dari $N$, dan komputasi selesai (namun, probabilitas hal ini terjadi secara kebetulan untuk bilangan sangat besar seperti yang digunakan dalam kriptografi sangatlah kecil secara astronomis).
+Mari kita telusuri langkah-langkah untuk memfaktorkan bilangan komposit $N$ yang diberikan. Pertama, kita memilih bilangan bulat acak $a$ yang memenuhi $1 < a < N$. Menggunakan algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an, kita menghitung faktor persekutuan terbesar $\text{gcd}(a, N)$. Jika nilai ini lebih besar dari $1$, kita beruntung karena kita telah menemukan faktor non-trivial dari $N$, dan komputasi selesai (namun, probabilitas hal ini terjadi secara kebetulan untuk bilangan sangat besar seperti yang digunakan dalam kriptografi sangatlah kecil secara astronomis).
 
 Jika $\text{gcd}(a, N) = 1$, maka $a$ dan $N$ saling koprima. Di sini, kita mendefinisikan fungsi eksponensial modulo sebagai berikut:
 
@@ -2191,7 +2191,7 @@ $$
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
 $$
 
-Di sini, teorema yang sangat indah yang ditenun oleh geometri Euclidean dan aljabar linear mengambil peran utama. Teorema ini menyatakan bahwa "komposisi dari dua refleksi (Reflection) dengan sumbu simetris berupa dua garis yang saling berpotongan akan menjadi rotasi murni (Rotation) dengan sudut dua kali lipat dari sudut antara kedua garis tersebut."
+Di sini, teorema yang sangat indah yang ditenun oleh geometri [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an dan aljabar linear mengambil peran utama. Teorema ini menyatakan bahwa "komposisi dari dua refleksi (Reflection) dengan sumbu simetris berupa dua garis yang saling berpotongan akan menjadi rotasi murni (Rotation) dengan sudut dua kali lipat dari sudut antara kedua garis tersebut."
 
 Dari analisis sejauh ini, dijamin bahwa vektor keadaan, tidak peduli operasi apa pun yang dikenakan, akan selalu tetap berada di dalam ruang vektor riil 2 dimensi (bidang) yang direntangkan oleh $|s^\perp\rangle$ dan $|w\rangle$. Mari kita pastikan kembali aksi dari setiap operator di dalam bidang ini.
 
@@ -2355,7 +2355,7 @@ Terakhir, mari kita bahas sebuah teorema yang sangat penting dari perspektif fis
 
 Apa makna dari hal ini? Hal itu merupakan fakta mendalam bahwa **"kompleksitas komputasi $O(\sqrt{N})$ yang dicapai oleh algoritma Grover adalah batas teoretis absolut yang diizinkan oleh hukum alam (mekanika kuantum), dan percepatan yang lebih dari ini tidak mungkin dilakukan terlepas dari hukum fisika mana pun di alam semesta yang digunakan."** Grover tidak hanya menemukan algoritma yang unggul, tetapi juga telah mencapai batas akhir antara informasi dan hukum fisika.
 
-Selain itu, paradigma "Amplifikasi Amplitudo" (Amplitude Amplification) itu sendiri yang dirinci dalam bab ini telah diaplikasikan secara luas sebagai blok bangunan dasar untuk menyusun algoritma kuantum tingkat lanjut yang tak terhitung jumlahnya, seperti subrutin dalam Quantum Random Walks (Langkah Acak Kuantum) atau Quantum Machine Learning (Pembelajaran Mesin Kuantum). Metode yang indah dan elegan yang ditemukan Grover, yaitu "secara geometris memutar dan memperkuat amplitudo probabilitas dengan menggunakan refleksi ganda terhadap dua sumbu yang ortogonal," akan terus bersinar sebagai salah satu pilar yang paling kuat dan sangat diperlukan yang menopang struktur raksasa keilmuan yaitu ilmu informasi kuantum dari akar-akarnya.
+Selain itu, paradigma "Amplifikasi Amplitudo" (Amplitude Amplification) itu sendiri yang dirinci dalam bab ini telah diaplikasikan secara luas sebagai blok bangunan dasar untuk menyusun algoritma kuantum tingkat lanjut yang tak terhitung jumlahnya, seperti subrutin dalam Quantum [Random Walk](https://kenji.blog/p/random-walk/)s (Langkah Acak Kuantum) atau Quantum Machine Learning (Pembelajaran Mesin Kuantum). Metode yang indah dan elegan yang ditemukan Grover, yaitu "secara geometris memutar dan memperkuat amplitudo probabilitas dengan menggunakan refleksi ganda terhadap dua sumbu yang ortogonal," akan terus bersinar sebagai salah satu pilar yang paling kuat dan sangat diperlukan yang menopang struktur raksasa keilmuan yaitu ilmu informasi kuantum dari akar-akarnya.
 
 # Bab 10: Koreksi Kesalahan Kuantum dan Komputasi Toleransi Kesalahan
 

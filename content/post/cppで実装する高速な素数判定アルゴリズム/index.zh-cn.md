@@ -52,11 +52,11 @@ bool is_prime_trial_division(long long n) {
 
 # 2. 费马测试：概率性素数判定的开端
 
-为了突破试除法的局限性，人们利用数论定理提出了“概率性算法（Probabilistic Algorithm）”。其中最具代表性的就是利用费马小定理的“费马测试（Fermat Primality Test）”。
+为了突破试除法的局限性，人们利用数论定理提出了“概率性算法（Probabilistic Algorithm）”。其中最具代表性的就是利用[费马小定理](https://kenji.blog/p/fermats-little-theorem/)的“费马测试（Fermat Primality Test）”。
 
-## 费马小定理 (Fermat's Little Theorem)
+## [费马小定理](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-皮埃尔·德·费马（Pierre de Fermat）发现的这一定理主张如下：
+[皮埃尔·德·费马](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）发现的这一定理主张如下：
 
 > 对于任意素数 $p$ 和任意与 $p$ 互质（不是 $p$ 的倍数）的整数 $a$，以下同余式成立：
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -98,13 +98,13 @@ long long mod_pow(long long a, long long b, long long m) {
 
 ## 数学原理
 
-米勒-拉宾算法除了利用费马小定理外，还利用了这样一个性质：“在以素数为模的剩余系（$\mathbb{Z}/p\mathbb{Z}$）中，方程 $x^2 \equiv 1 \pmod p$ 的解仅限于 $x \equiv 1$ 或 $x \equiv -1$”（当模为合数时，可能存在除此以外的非平凡平方根）。
+米勒-拉宾算法除了利用[费马小定理](https://kenji.blog/p/fermats-little-theorem/)外，还利用了这样一个性质：“在以素数为模的剩余系（$\mathbb{Z}/p\mathbb{Z}$）中，方程 $x^2 \equiv 1 \pmod p$ 的解仅限于 $x \equiv 1$ 或 $x \equiv -1$”（当模为合数时，可能存在除此以外的非平凡平方根）。
 
 待判定的奇数 $N$ 减去 $1$ 得到的 $N-1$ 必定是偶数。因此，我们可以将 $N-1$ 尽可能多地除以 $2$，表示为以下形式：
 $$ N-1 = d \cdot 2^s $$
 （其中，$d$ 为奇数，$s \ge 1$）
 
-对于任意底数 $a$ （$1 < a < N-1$），我们会根据费马小定理验证 $a^{N-1} \equiv 1 \pmod N$ 是否成立，但这个计算是分阶段进行的。
+对于任意底数 $a$ （$1 < a < N-1$），我们会根据[费马小定理](https://kenji.blog/p/fermats-little-theorem/)验证 $a^{N-1} \equiv 1 \pmod N$ 是否成立，但这个计算是分阶段进行的。
 具体来说，就是依次连续进行平方计算：$a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$。
 
 米勒-拉宾测试判定 $N$ 为“素数（或者以极高的概率为素数）”的条件是，以下 **任意一项** 成立：

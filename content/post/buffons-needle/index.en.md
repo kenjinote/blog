@@ -11,7 +11,7 @@ tags:
   - "Geometric probability"
 ---
 
-# What is Buffon's Needle?
+# What is [Buffon's Needle](https://kenji.blog/p/buffons-needle/)?
 
 In the world of mathematics, there are many beautiful theorems where astonishing facts that counter intuition or seemingly unrelated events beautifully connect. One of the most famous and fascinating problems among them is **Buffon's needle problem**.
 
@@ -19,7 +19,7 @@ This problem was proposed in 1733 by Georges-Louis Leclerc, Comte de Buffon, an 
 
 Surprisingly, this problem states that through the extremely physical and random act of "dropping a needle randomly on the floor", one can determine one of the most important constants in mathematics, **Pi $\pi$**. This is known as one of the earliest problems in geometric probability and was a groundbreaking discovery that can be said to be a pioneer of the later Monte Carlo method.
 
-In this article, we will explain in detail and in an easy-to-understand manner, from the problem setting of **Buffon's Needle**, its mathematical proof, to the estimation of Pi by simulation using modern computers.
+In this article, we will explain in detail and in an easy-to-understand manner, from the problem setting of **[Buffon's Needle](https://kenji.blog/p/buffons-needle/)**, its mathematical proof, to the estimation of Pi by simulation using modern computers.
 
 ## Basic Setting of the Problem
 

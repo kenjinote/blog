@@ -142,7 +142,7 @@ int main() {
 
 我們每天使用的 HTTPS 通訊和數位簽章，都是受到 RSA 密碼等公開金鑰密碼系統的保護。RSA 密碼的安全性依賴於「巨大的整數質因數分解，在現今的古典電腦上無法在合理時間內解開」這個數學難題（被認為是 NP 中間問題）。
 
-作為 RSA 密碼基礎的數學公式，是尤拉函數（Euler's totient function）和費馬小定理（Fermat's Little Theorem）應用的優美展現：
+作為 RSA 密碼基礎的數學公式，是尤拉函數（Euler's totient function）和[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)）應用的優美展現：
 
 1. 選擇兩個巨大的質數 $p$ 和 $q$
 2. 計算 $n = p \times q$（這將成為公鑰的一部分）

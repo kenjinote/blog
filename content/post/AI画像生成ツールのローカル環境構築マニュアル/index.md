@@ -33,7 +33,7 @@ AI画像生成技術は、Stable Diffusionのオープンソース化を皮切�
 
 拡散モデルの基本原理は、元のデータ（画像）に対して段階的に[ガウス](https://kenji.blog/p/gauss/)ノイズを加え、最終的に完全なノイズにする「Forward Process」と、そのノイズから元の画像を復元する「Reverse Process」から成り立ちます。
 
-Forward Process はマルコフ連鎖として定義され、ステップ $t$ における状態 $x_t$ は以下の式で表されます。
+Forward Process は[マルコフ連鎖](https://kenji.blog/p/markov-chain/)として定義され、ステップ $t$ における状態 $x_t$ は以下の式で表されます。
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 

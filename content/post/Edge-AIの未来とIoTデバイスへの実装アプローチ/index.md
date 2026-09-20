@@ -9,7 +9,7 @@ categories: ["ai", "iot", "edge-computing"]
 tags: ["Edge AI", "IoT", "ONNX", "NPU"]
 ---
 
-# Edge AIの未来とIoTデバイスへの実装アプローチ
+# [Edge AIの未来とIoTデバイスへの実装アプローチ](https://kenji.blog/p/edge-ai-future-iot-implementation/)
 
 ## 1. はじめに：なぜ今、エッジAI（Edge AI）なのか？
 

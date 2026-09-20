@@ -16,11 +16,11 @@ tags:
 
 Data yang diamati di dunia nyata hampir selalu mengandung "kebisingan" atau "varians". Untuk menemukan aturan yang mendasari dari data tersebut dan memprediksi masa depan atau memperkirakan data yang tidak diketahui, kita perlu membangun model matematika yang **paling sesuai** dengan data tersebut.
 
-Metode paling mendasar, yang masih memainkan peran yang sangat penting sebagai fondasi pembelajaran mesin modern, adalah **Metode Kuadrat Terkecil** (Method of Least Squares).
+Metode paling mendasar, yang masih memainkan peran yang sangat penting sebagai fondasi pembelajaran mesin modern, adalah **[Metode Kuadrat Terkecil](https://kenji.blog/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)).
 
 Dalam artikel ini, daripada sekadar menghafal rumus, kita akan mengeksplorasi secara mendalam **"mengapa perhitungan ini menemukan garis yang paling sesuai"** dari perspektif geometris yang indah dari aljabar linier (proyeksi ortogonal).
 
-## 2. Ide Intuitif tentang Metode Kuadrat Terkecil
+## 2. Ide Intuitif tentang [Metode Kuadrat Terkecil](https://kenji.blog/p/method-of-least-squares/)
 
 Misalkan kita memiliki $n$ titik data $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$. Saat memplot titik-titik ini pada plot sebaran, mereka mungkin tidak berbaris lurus dengan sempurna, tetapi secara keseluruhan tampaknya mengikuti tren garis tertentu.
 
@@ -30,7 +30,7 @@ Untuk setiap titik data $x_i$, nilai yang diprediksi oleh garis ini adalah $\hat
 
 $$ e_i = y_i - \hat{y}_i = y_i - (c + d x_i) $$
 
-Metode Kuadrat Terkecil adalah teknik untuk menemukan parameter $c$ dan $d$ yang meminimalkan **jumlah kuadrat** kesalahan. Jumlah kesalahan kuadrat $E$ didefinisikan sebagai berikut:
+[Metode Kuadrat Terkecil](https://kenji.blog/p/method-of-least-squares/) adalah teknik untuk menemukan parameter $c$ dan $d$ yang meminimalkan **jumlah kuadrat** kesalahan. Jumlah kesalahan kuadrat $E$ didefinisikan sebagai berikut:
 
 $$ E = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n} (y_i - c - d x_i)^2 \quad (\text{Definisi fungsi kesalahan}) $$
 
@@ -170,6 +170,6 @@ Menjalankan kode ini akan menghitung titik potong dan kemiringan garis yang pali
 
 Metode kuadrat terkecil adalah teknik yang paling kuat dan standar untuk memperkirakan parameter model dari data. Dengan menggunakan pengetahuan tentang kalkulus, ini dapat diturunkan sebagai "titik di mana gradien fungsi kesalahan menjadi 0", tetapi dengan memahaminya dari perspektif aljabar linier sebagai "proyeksi ortogonal ke ruang kolom", keindahan struktur matematisnya menonjol.
 
-Metode ini tidak terbatas pada pencocokan garis sederhana (regresi sederhana). Dengan menambahkan suku-suku seperti $x^2, x^3$ ke kolom matriks desain $A$, secara alami dapat diperluas ke **Regresi Polinomial**, dan juga dapat dikembangkan menjadi **Metode Kuadrat Terkecil Tertimbang**, yang membobotkan pentingnya setiap titik data.
+Metode ini tidak terbatas pada pencocokan garis sederhana (regresi sederhana). Dengan menambahkan suku-suku seperti $x^2, x^3$ ke kolom matriks desain $A$, secara alami dapat diperluas ke **Regresi Polinomial**, dan juga dapat dikembangkan menjadi **[Metode Kuadrat Terkecil](https://kenji.blog/p/method-of-least-squares/) Tertimbang**, yang membobotkan pentingnya setiap titik data.
 
 Sebagai langkah pertama untuk lebih dekat dengan kebenaran di balik data, pemahaman penting tentang metode kuadrat terkecil memiliki nilai yang tak terukur.

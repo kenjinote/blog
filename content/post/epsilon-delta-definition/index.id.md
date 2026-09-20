@@ -28,11 +28,11 @@ Dalam artikel ini, kita akan mengeksplorasi mengapa definisi intuitif tidak mema
 
 ## 2. Sejarah Kalkulus dan Krisis Ketelitian
 
-Ketika Isaac Newton dan Gottfried Leibniz mendirikan kalkulus pada abad ke-17, mereka sangat bergantung pada konsep "infinitesimal" (kuantitas yang sangat kecil tetapi tidak nol). Meskipun perhitungan mereka membuahkan hasil luar biasa dalam fisika dan geometri, fondasi matematikanya sangat rapuh.
+Ketika [Isaac Newton](https://kenji.blog/p/newton/) dan [Gottfried Leibniz](https://kenji.blog/p/leibniz/) mendirikan kalkulus pada abad ke-17, mereka sangat bergantung pada konsep "infinitesimal" (kuantitas yang sangat kecil tetapi tidak nol). Meskipun perhitungan mereka membuahkan hasil luar biasa dalam fisika dan geometri, fondasi matematikanya sangat rapuh.
 
 Filsuf George Berkeley pada saat itu mengkritik keras konsep infinitesimal ini, menyebutnya sebagai " **hantu dari kuantitas yang telah menghilang** ". Ia menunjukkan inkonsistensi logis dalam memperlakukannya sebagai kuantitas bukan nol selama pembagian di tengah perhitungan, hanya untuk dengan mudah mengabaikannya sebagai nol pada akhirnya.
 
-Kalkulus terus berkembang sepanjang abad ke-18, tetapi memasuki abad ke-19, "fungsi patologis" yang tidak dapat ditangani hanya dengan intuisi ditemukan satu demi satu, meningkatkan rasa krisis di kalangan matematikawan. Untuk mengatasinya, Augustin-Louis Cauchy dan Karl Weierstrass membuang konsep infinitesimal yang meragukan tersebut dan merekonstruksi kalkulus hanya dengan menggunakan sifat-sifat bilangan real dan pertidaksamaan. Ini menandai lahirnya definisi $\varepsilon-\delta$.
+Kalkulus terus berkembang sepanjang abad ke-18, tetapi memasuki abad ke-19, "fungsi patologis" yang tidak dapat ditangani hanya dengan intuisi ditemukan satu demi satu, meningkatkan rasa krisis di kalangan matematikawan. Untuk mengatasinya, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) dan [Karl Weierstrass](https://kenji.blog/p/weierstrass/) membuang konsep infinitesimal yang meragukan tersebut dan merekonstruksi kalkulus hanya dengan menggunakan sifat-sifat bilangan real dan pertidaksamaan. Ini menandai lahirnya definisi $\varepsilon-\delta$.
 
 ## 3. Definisi Formal ε-δ
 

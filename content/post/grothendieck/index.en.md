@@ -8,9 +8,9 @@ categories: ["Mathematics", "Biography"]
 tags: ["Grothendieck", "Algebraic Geometry", "Scheme Theory", "Category Theory"]
 ---
 
-# Alexander Grothendieck: The Life and Achievements of the 20th Century's Greatest Mathematician
+# [[Alexander Grothendieck](https://kenji.blog/p/grothendieck/): The Life and Achievements of the 20th Century's Greatest Mathematician](https://kenji.blog/p/grothendieck/)
 
-Alexander Grothendieck is one of the greatest mathematicians in history who brought about a fundamental paradigm shift in the mathematics community of the late 20th century, particularly in the field of algebraic geometry. His achievements went far beyond solving individual open problems; they fundamentally reconstructed the very language and conceptual framework of mathematics itself. In this article, we will provide a detailed explanation of his extraordinary and dramatic life, as well as his immeasurable impact on modern mathematics.
+[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) is one of the greatest mathematicians in history who brought about a fundamental paradigm shift in the mathematics community of the late 20th century, particularly in the field of algebraic geometry. His achievements went far beyond solving individual open problems; they fundamentally reconstructed the very language and conceptual framework of mathematics itself. In this article, we will provide a detailed explanation of his extraordinary and dramatic life, as well as his immeasurable impact on modern mathematics.
 
 ## 1. A Tumultuous Childhood and the Shadow of War
 
@@ -124,4 +124,4 @@ In the 1980s, he wrote a massive memoir titled *Récoltes et Semailles* (Reaping
 
 ## Conclusion
 
-Alexander Grothendieck was a giant who brought an entirely new landscape to the discipline of mathematics. The concepts he left behind transcend the mere framework of mathematics, demonstrating the expanding possibilities of human logical thought. The profound world he gazed upon continues to bear rich fruit even today.
+[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) was a giant who brought an entirely new landscape to the discipline of mathematics. The concepts he left behind transcend the mere framework of mathematics, demonstrating the expanding possibilities of human logical thought. The profound world he gazed upon continues to bear rich fruit even today.

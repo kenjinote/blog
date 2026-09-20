@@ -10,7 +10,7 @@ tags: ["Euler", "Matemática", "Ciência"]
 
 # O que é a Identidade de Euler?
 
-A **Identidade de Euler** (Euler's Identity) é conhecida como a relação mais bela e profunda da matemática. Esta equação conecta cinco constantes matemáticas fundamentais que surgem de campos completamente diferentes, de uma forma surpreendentemente simples.
+A **Identidade de Euler** ([Euler's Identity](https://kenji.blog/p/eulers-identity/)) é conhecida como a relação mais bela e profunda da matemática. Esta equação conecta cinco constantes matemáticas fundamentais que surgem de campos completamente diferentes, de uma forma surpreendentemente simples.
 
 $$
 e^{i\pi} + 1 = 0
@@ -63,7 +63,7 @@ Desta forma, uma equação surpreendentemente simples é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -84,7 +84,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -105,7 +105,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -126,7 +126,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -147,7 +147,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -168,7 +168,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -189,7 +189,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -210,7 +210,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -231,7 +231,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 
@@ -252,7 +252,7 @@ Substituindo $x = ix$ aqui e simplificando, a Fórmula de Euler é derivada.
 
 ## Contexto Histórico
 
-Leonhard Euler foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
+[Leonhard Euler](https://kenji.blog/p/euler/) foi um matemático representativo do século 18, deixando conquistas em diversos campos como física, astronomia e lógica. Esta identidade, que leva o seu nome, pode ser considerada uma das culminações de suas extensas pesquisas.
 
 ### A Descoberta da Função Exponencial Complexa
 

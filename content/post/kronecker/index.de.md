@@ -29,7 +29,7 @@ Diese Aussage war nicht nur poetisch; sie wurde durch seinen vehementen Glauben 
 
 Kronecker wurde 1823 in eine wohlhabende jüdische Familie in Liegnitz, Preußen (heute Legnica, Polen), geboren. Schon früh zeigte er einen außergewöhnlichen Intellekt und besuchte das örtliche Gymnasium.
 
-Hier fand eine schicksalhafte Begegnung statt. Ein neuer Lehrer kam an das Gymnasium – **Ernst Kummer** , der später ein Pionier der Idealtheorie werden sollte. Kummer erkannte Kroneckers Talent sofort und bot ihm fortgeschrittenen, persönlichen Mathematikunterricht.
+Hier fand eine schicksalhafte Begegnung statt. Ein neuer Lehrer kam an das Gymnasium – **[Ernst Kummer](https://kenji.blog/p/kummer/)** , der später ein Pionier der Idealtheorie werden sollte. Kummer erkannte Kroneckers Talent sofort und bot ihm fortgeschrittenen, persönlichen Mathematikunterricht.
 
 ```mermaid
 graph TD
@@ -41,7 +41,7 @@ graph TD
 
 ## 2.2. Akademiker und Erfolg als Geschäftsmann
 
-Im Jahr 1841 trat Kronecker in die Universität Berlin ein und studierte bei hochkarätigen Mathematikern wie Peter Gustav Lejeune Dirichlet und Carl Gustav Jacob Jacobi. Bis 1845 promovierte er mit einer herausragenden Arbeit über die algebraische Zahlentheorie.
+Im Jahr 1841 trat Kronecker in die Universität Berlin ein und studierte bei hochkarätigen Mathematikern wie Peter Gustav Lejeune Dirichlet und [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/). Bis 1845 promovierte er mit einer herausragenden Arbeit über die algebraische Zahlentheorie.
 
 Danach schlug Kronecker jedoch einen ungewöhnlichen Karriereweg ein. Anstatt eine Universitätsstelle zu suchen, kehrte er in seine Heimatstadt zurück, um das riesige landwirtschaftliche Gut und das Bankgeschäft seines Onkels zu übernehmen. Er erzielte als Geschäftsmann enormen Erfolg und häufte großen Reichtum an. Während dieser gesamten Zeit setzte er seine mathematische Forschung als Hobby fort, was ihn im Grunde zum stärksten Amateurmathematiker seiner Zeit machte.
 
@@ -59,15 +59,15 @@ Wenn man über Kroneckers Leben spricht, darf man seine heftigen Debatten mit an
 
 Kronecker hatte die feste Überzeugung, dass "nur Dinge, die in einer endlichen Anzahl von Operationen explizit berechnet und konstruiert werden können, mathematisch existieren". Er verabscheute nicht-konstruktive Existenzbeweise durch Widerspruch (die Logik, dass "wenn wir annehmen, es existiere nicht, ein Widerspruch entsteht; folglich existiert es") zutiefst.
 
-Zum Beispiel argumentierte er in Bezug auf den Fundamentalsatz der Algebra, dass der bloße Beweis, dass "eine Wurzel existiert", unzureichend sei; es müsse ein Algorithmus beigebracht werden, der detailliert beschreibt, "wie die Wurzel explizit konstruiert wird".
+Zum Beispiel argumentierte er in Bezug auf den [Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/), dass der bloße Beweis, dass "eine Wurzel existiert", unzureichend sei; es müsse ein Algorithmus beigebracht werden, der detailliert beschreibt, "wie die Wurzel explizit konstruiert wird".
 
 ## 3.2. Zusammenstöße mit Cantor und Weierstraß
 
 Diese extreme Ideologie brachte ihn in Konflikt mit seinen Zeitgenossen.
 
-Am berühmtesten war seine vehemente Kritik an **Georg Cantor** und dessen Mengenlehre. Kronecker verurteilte Cantors Konzepte der Mächtigkeiten unendlicher Mengen und transfiniter Zahlen als "Mystizismus, nicht Mathematik" und ergriff sogar Maßnahmen, um die Veröffentlichung von Cantors Arbeiten zu behindern.
+Am berühmtesten war seine vehemente Kritik an **[Georg Cantor](https://kenji.blog/p/cantor/)** und dessen Mengenlehre. Kronecker verurteilte Cantors Konzepte der Mächtigkeiten unendlicher Mengen und transfiniter Zahlen als "Mystizismus, nicht Mathematik" und ergriff sogar Maßnahmen, um die Veröffentlichung von Cantors Arbeiten zu behindern.
 
-Er stieß auch mit **Karl Weierstrass** zusammen, der einst ein enger Freund war. Bezüglich der weierstraßschen Analysis (wie der Konstruktion stetiger, nirgends differenzierbarer Funktionen) kritisierte Kronecker solche Funktionen als "pathologisch" und erklärte, sie existierten nicht.
+Er stieß auch mit **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** zusammen, der einst ein enger Freund war. Bezüglich der weierstraßschen Analysis (wie der Konstruktion stetiger, nirgends differenzierbarer Funktionen) kritisierte Kronecker solche Funktionen als "pathologisch" und erklärte, sie existierten nicht.
 
 # 4. Große Beiträge zur Mathematik
 

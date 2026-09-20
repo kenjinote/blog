@@ -15,9 +15,9 @@ tags:
   - "Python"
 ---
 
-## 1. Apa itu Game of Life Conway?
+## 1. Apa itu [Game of Life Conway](https://kenji.blog/p/conways-game-of-life/)?
 
-**Game of Life Conway** adalah jenis **cellular automaton** yang dirancang oleh ahli matematika Inggris John Horton Conway pada tahun 1970. Meskipun disebut permainan, ini adalah "permainan nol pemain," yang berarti evolusinya ditentukan oleh keadaan awalnya, tidak memerlukan input lebih lanjut.
+**[Game of Life Conway](https://kenji.blog/p/conways-game-of-life/)** adalah jenis **cellular automaton** yang dirancang oleh ahli matematika Inggris John Horton Conway pada tahun 1970. Meskipun disebut permainan, ini adalah "permainan nol pemain," yang berarti evolusinya ditentukan oleh keadaan awalnya, tidak memerlukan input lebih lanjut.
 
 Daya tarik terbesar dari sistem ini terletak pada fakta bahwa **perilaku tidak terduga dan kompleks seperti kehidupan (kemunculan) dihasilkan dari aturan deterministik yang sangat sederhana**.
 
@@ -135,4 +135,4 @@ plt.show()
 
 ## 6. Kesimpulan
 
-Game of Life Conway adalah salah satu contoh **kemunculan** (emergence) yang paling indah dan intuitif, tempat kompleksitas dihasilkan dari aturan sederhana. Berada di perbatasan matematika, ilmu komputer, fisika, dan biologi, model ini terus memberikan metafora yang kuat untuk pemahaman kita tentang konsep "kehidupan" dan "komputasi".
+[Game of Life Conway](https://kenji.blog/p/conways-game-of-life/) adalah salah satu contoh **kemunculan** (emergence) yang paling indah dan intuitif, tempat kompleksitas dihasilkan dari aturan sederhana. Berada di perbatasan matematika, ilmu komputer, fisika, dan biologi, model ini terus memberikan metafora yang kuat untuk pemahaman kita tentang konsep "kehidupan" dan "komputasi".

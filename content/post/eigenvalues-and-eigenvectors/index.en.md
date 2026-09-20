@@ -36,7 +36,7 @@ graph LR
     style D stroke:#ff9900,stroke-width:2px
 ```
 
-## Definition of Eigenvalues and Eigenvectors and Mathematical Background
+## Definition of [Eigenvalues and Eigenvectors](https://kenji.blog/p/eigenvalues-and-eigenvectors/) and Mathematical Background
 
 Mathematically, for a square matrix $A$, if there exists a non-zero vector $\mathbf{v}$ and a scalar $\lambda$ that satisfy the following condition, $\mathbf{v}$ is called an **eigenvector** of matrix $A$, and $\lambda$ is called an **eigenvalue**.
 
@@ -124,7 +124,7 @@ $$
 
 Now, we have found all the eigenvalues and eigenvectors for matrix $A$.
 
-## Calculating Eigenvalues and Eigenvectors with Python
+## Calculating [Eigenvalues and Eigenvectors](https://kenji.blog/p/eigenvalues-and-eigenvectors/) with Python
 
 In modern practical work, you never calculate the eigenvalues of large matrices by hand. Using NumPy, a numerical computation library in Python, you can calculate them in just a few lines.
 
@@ -180,7 +180,7 @@ $$
 
 This property is an indispensable technique when predicting long-term states in probability models like Markov chains, when solving systems of differential equations, or even when finding the general term of the Fibonacci sequence.
 
-## Real-World Applications of Eigenvalues and Eigenvectors
+## Real-World Applications of [Eigenvalues and Eigenvectors](https://kenji.blog/p/eigenvalues-and-eigenvectors/)
 
 We have looked at the mathematical aspects so far, but these concepts serve as the engines that solve various real-world problems.
 

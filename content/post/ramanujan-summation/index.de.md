@@ -23,7 +23,7 @@ $$
 1 + 2 + 3 + 4 + \dots = -\frac{1}{12}
 $$
 
-Obwohl wir positive ganze Zahlen unendlich addieren, erhalten wir einen **negativen Bruch**. Dieses kontraintuitive Ergebnis wurde berühmt, als der indische Mathematikgenie Srinivasa Ramanujan es in einem Brief an den britischen Mathematiker G.H. Hardy erwähnte.
+Obwohl wir positive ganze Zahlen unendlich addieren, erhalten wir einen **negativen Bruch**. Dieses kontraintuitive Ergebnis wurde berühmt, als der indische Mathematikgenie [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) es in einem Brief an den britischen Mathematiker G.H. Hardy erwähnte.
 
 Dieser Artikel erklärt die „Ramanujan-Summation" genannte Methode: Wie kommt man zu diesem seltsamen Wert und wie hängt er mit realen physikalischen Phänomenen zusammen?
 

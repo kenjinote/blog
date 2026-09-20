@@ -13,7 +13,7 @@ tags:
   - "Physique"
 ---
 
-Si nous devions nommer une personne qui a eu l'impact le plus profond sur le développement de la science dans l'histoire de l'humanité, beaucoup nommeraient **Isaac Newton** . Il a réalisé des découvertes révolutionnaires dans divers domaines tels que la physique, les mathématiques et l'astronomie. Il n'est pas exagéré de dire que ses réalisations n'étaient pas de simples découvertes d'une seule époque, mais ont construit les fondements mêmes de la science moderne.
+Si nous devions nommer une personne qui a eu l'impact le plus profond sur le développement de la science dans l'histoire de l'humanité, beaucoup nommeraient **[Isaac Newton](https://kenji.blog/p/newton/)** . Il a réalisé des découvertes révolutionnaires dans divers domaines tels que la physique, les mathématiques et l'astronomie. Il n'est pas exagéré de dire que ses réalisations n'étaient pas de simples découvertes d'une seule époque, mais ont construit les fondements mêmes de la science moderne.
 
 Dans cet article, nous retracerons les épisodes extraordinaires de l'éducation de Newton jusqu'à ses dernières années, et explorerons profondément ses exploits mathématiques et physiques, en nous concentrant particulièrement sur le **calcul** (la méthode des fluxions), le **théorème du binôme généralisé** , et la **méthode de Newton** .
 
@@ -21,7 +21,7 @@ Dans cet article, nous retracerons les épisodes extraordinaires de l'éducation
 
 ### Une enfance solitaire et sa naissance à Woolsthorpe
 
-Isaac Newton est né le jour de Noël en 1642 (calendrier julien ; 4 janvier 1643 dans le calendrier grégorien) dans le petit village de Woolsthorpe, Lincolnshire, en Angleterre. Né prématurément, son corps était extrêmement petit et, au début, sa survie était incertaine. Pour aggraver les choses, le père de Newton était décédé trois mois avant sa naissance.
+[Isaac Newton](https://kenji.blog/p/newton/) est né le jour de Noël en 1642 (calendrier julien ; 4 janvier 1643 dans le calendrier grégorien) dans le petit village de Woolsthorpe, Lincolnshire, en Angleterre. Né prématurément, son corps était extrêmement petit et, au début, sa survie était incertaine. Pour aggraver les choses, le père de Newton était décédé trois mois avant sa naissance.
 
 Lorsqu'il eut trois ans, sa mère se remaria et confia Newton aux soins de sa grand-mère pour rejoindre son nouveau mari. On dit que cette expérience précoce de séparation avec son parent a profondément influencé la personnalité de Newton, contribuant au caractère extrêmement secret et méfiant qu'il a développé plus tard dans sa vie.
 
@@ -29,7 +29,7 @@ Lorsqu'il a commencé à fréquenter l'école locale, Newton n'était au départ
 
 ### L'Université de Cambridge et "l'Année des Merveilles"
 
-En 1661, Newton entre au Trinity College de Cambridge. Alors que l'université de l'époque enseignait principalement la philosophie aristotélicienne, Newton était fortement attiré par les nouvelles pensées scientifiques de René Descartes, Galiléo Galilei et Johannes Kepler. Il a laissé une note dans son carnet déclarant : **"Amicus Plato amicus Aristoteles magis amica veritas"** (Platon est mon ami, Aristote est mon ami, mais ma plus grande amie est la vérité).
+En 1661, Newton entre au Trinity College de Cambridge. Alors que l'université de l'époque enseignait principalement la philosophie aristotélicienne, Newton était fortement attiré par les nouvelles pensées scientifiques de [René Descartes](https://kenji.blog/p/descartes/), Galiléo Galilei et Johannes Kepler. Il a laissé une note dans son carnet déclarant : **"Amicus Plato amicus Aristoteles magis amica veritas"** (Platon est mon ami, Aristote est mon ami, mais ma plus grande amie est la vérité).
 
 En 1665, une grave épidémie de la Grande Peste frappe Londres, forçant l'université à fermer. Newton est retourné dans sa ville natale de Woolsthorpe et s'est plongé dans la contemplation pendant environ un an et demi. Au cours de cette période calme et solitaire, il a trouvé l'inspiration de ses trois grandes réalisations : les fondements du calcul, l'optique (analyse spectrale de la lumière à l'aide d'un prisme) et la loi de la gravitation universelle. Dans l'histoire des sciences, cette période est connue sous le nom de **Annus Mirabilis** (Année des Merveilles).
 
@@ -164,4 +164,4 @@ Ces mots expriment son respect, reconnaissant que ses découvertes n'ont été p
 
 Le système de mécanique classique qu'il a établi est resté le fondement absolu de la physique pendant environ 200 ans jusqu'à ce qu'Albert Einstein publie la théorie de la relativité au début du 20e siècle. Aujourd'hui encore, la mécanique newtonienne est utilisée de manière extrêmement précise et efficace pour calculer les phénomènes physiques de notre échelle quotidienne et les orbites des sondes spatiales.
 
-Isaac Newton, partant d'une enfance solitaire, a percé les vérités de l'univers grâce à sa concentration extraordinaire et son intuition géniale. Les nombreuses lois et théorèmes mathématiques qu'il a laissés derrière lui continuent de soutenir notre technologie et notre société à ce jour.
+[Isaac Newton](https://kenji.blog/p/newton/), partant d'une enfance solitaire, a percé les vérités de l'univers grâce à sa concentration extraordinaire et son intuition géniale. Les nombreuses lois et théorèmes mathématiques qu'il a laissés derrière lui continuent de soutenir notre technologie et notre société à ce jour.

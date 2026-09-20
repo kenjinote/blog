@@ -52,11 +52,11 @@ bool is_prime_trial_division(long long n) {
 
 # 2. 費馬質數性檢驗：機率性質數判定的開端
 
-為了突破試除法的極限，人們發想出運用數論定理的「機率性演算法（Probabilistic Algorithm）」。其代表性例子便是利用費馬小定理的「費馬質數性檢驗（Fermat Primality Test）」。
+為了突破試除法的極限，人們發想出運用數論定理的「機率性演算法（Probabilistic Algorithm）」。其代表性例子便是利用[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)的「費馬質數性檢驗（Fermat Primality Test）」。
 
-## 費馬小定理 (Fermat's Little Theorem)
+## [費馬小定理](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-皮埃爾·德·費馬（Pierre de Fermat）所發現的這個定理，其主張如下：
+[皮埃爾·德·費馬](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）所發現的這個定理，其主張如下：
 
 > 對於任意質數 $p$ 與互質的（非 $p$ 的倍數）任意整數 $a$，下列同餘式成立：
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -99,13 +99,13 @@ long long mod_pow(long long a, long long b, long long m) {
 
 ## 數學原理
 
-米勒-拉賓演算法除了費馬小定理外，還利用了「在以質數為模的餘數體（$\mathbb{Z}/p\mathbb{Z}$）中，$x^2 \equiv 1 \pmod p$ 的解僅限於 $x \equiv 1$ 或 $x \equiv -1$」的性質（若以合成數為模，則可能存在這兩個解以外的非平凡平方根）。
+米勒-拉賓演算法除了[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)外，還利用了「在以質數為模的餘數體（$\mathbb{Z}/p\mathbb{Z}$）中，$x^2 \equiv 1 \pmod p$ 的解僅限於 $x \equiv 1$ 或 $x \equiv -1$」的性質（若以合成數為模，則可能存在這兩個解以外的非平凡平方根）。
 
 將想判定的奇數 $N$ 減去 $1$ 得到的 $N-1$ 必然是偶數。因此，將 $N-1$ 不斷除以 $2$ 直到無法整除為止，並以下列形式表示：
 $$ N-1 = d \cdot 2^s $$
 （其中，$d$ 為奇數，$s \ge 1$）
 
-對於任意底數 $a$（$1 < a < N-1$），我們會依據費馬小定理驗證是否滿足 $a^{N-1} \equiv 1 \pmod N$，但這個計算將分階段進行。
+對於任意底數 $a$（$1 < a < N-1$），我們會依據[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)驗證是否滿足 $a^{N-1} \equiv 1 \pmod N$，但這個計算將分階段進行。
 具體來說，我們會依序重複進行平方：$a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$。
 
 米勒-拉賓檢驗將 $N$ 判定為「質數（或有極高機率為質數）」的條件是，滿足以下 **任一** 情況：

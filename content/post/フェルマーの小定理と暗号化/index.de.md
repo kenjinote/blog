@@ -13,7 +13,7 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 In der modernen digitalen Gesellschaft, insbesondere bei der Kommunikation über das Internet, ist "Verschlüsselung" zu einer unverzichtbaren Basistechnologie geworden. Dass wir Websites über HTTPS sicher in einem Webbrowser durchsuchen, Finanztransaktionen im Online-Banking durchführen und privat in Messaging-Apps kommunizieren können, liegt daran, dass kryptographische Protokolle, die durch fortgeschrittene mathematische Theorien gestützt werden, im Hintergrund arbeiten. Eine besonders wichtige Rolle spielt dabei die "Public-Key-Kryptographie", deren prominentester Vertreter die **RSA-Verschlüsselung** ist.
 
-Die Sicherheit und Gültigkeit vieler kryptographischer Algorithmen, einschließlich RSA, hängt stark von einem sehr schönen und mächtigen Satz ab, der im 17. Jahrhundert vom französischen Mathematiker Pierre de Fermat entdeckt wurde. Das ist der **kleine Satz von Fermat**. Darüber hinaus spielt der Satz von Leonhard Euler, der diesen verallgemeinert, eine entscheidende Rolle in der Kryptographietheorie.
+Die Sicherheit und Gültigkeit vieler kryptographischer Algorithmen, einschließlich RSA, hängt stark von einem sehr schönen und mächtigen Satz ab, der im 17. Jahrhundert vom französischen Mathematiker [Pierre de Fermat](https://kenji.blog/p/fermat/) entdeckt wurde. Das ist der **kleine Satz von Fermat**. Darüber hinaus spielt der Satz von [Leonhard Euler](https://kenji.blog/p/euler/), der diesen verallgemeinert, eine entscheidende Rolle in der Kryptographietheorie.
 
 In diesem Artikel werden wir von Grund auf ausführlich erklären, wie die Entdeckung der reinen Mathematik, der kleine Satz von Fermat, in der modernen, praktischen Kryptographie, insbesondere beim "Primzahltest" und bei der "RSA-Verschlüsselung", Anwendung findet. Dies ist ein sehr detaillierter technischer Leitfaden, der mathematische Beweise, Ver- und Entschlüsselungsmechanismen sowie spezifische Algorithmus-Implementierungen in C++ und Python abdeckt.
 
@@ -52,9 +52,9 @@ Nachdem wir nun die Grundlagen der modularen Arithmetik behandelt haben, kommen 
 
 ### 3.1 Definition des Satzes
 
-Der kleine Satz von Fermat wird wie folgt formuliert:
+[Der kleine Satz von Fermat](https://kenji.blog/p/fermats-little-theorem/) wird wie folgt formuliert:
 
-> **Kleiner Satz von Fermat (Fermat's Little Theorem)**
+> **Kleiner Satz von Fermat ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**
 > Sei $p$ eine Primzahl und $a$ eine beliebige ganze Zahl, die kein Vielfaches von $p$ ist (d.h. $a$ und $p$ sind teilerfremd). Dann gilt die folgende Kongruenz:
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
@@ -112,7 +112,7 @@ Dies ist der Beweis für den kleinen Satz von Fermat.
 
 ## 4. Eulersche Phi-Funktion und der Satz von Euler
 
-Der kleine Satz von Fermat ist ein Satz über "Primzahlen $p$", aber Leonhard Euler verallgemeinerte ihn für "beliebige positive ganze Zahlen $n$". Diese Erweiterung ist entscheidend, um die RSA-Verschlüsselung zu verstehen.
+[Der kleine Satz von Fermat](https://kenji.blog/p/fermats-little-theorem/) ist ein Satz über "Primzahlen $p$", aber [Leonhard Euler](https://kenji.blog/p/euler/) verallgemeinerte ihn für "beliebige positive ganze Zahlen $n$". Diese Erweiterung ist entscheidend, um die RSA-Verschlüsselung zu verstehen.
 
 ### 4.1 Die Eulersche Phi-Funktion $\phi(n)$
 
@@ -132,7 +132,7 @@ Euler verallgemeinerte den kleinen Satz von Fermat wie folgt:
 > Für eine positive ganze Zahl $n$ und eine zu ihr teilerfremde ganze Zahl $a$ gilt:
 > $$ a^{\phi(n)} \equiv 1 \pmod n $$
 
-Wenn $n$ eine Primzahl $p$ ist, dann ist $\phi(p) = p - 1$, also ist dies genau der kleine Satz von Fermat ($a^{p-1} \equiv 1 \pmod p$). Der kleine Satz von Fermat ist also nur ein Spezialfall des Satzes von Euler.
+Wenn $n$ eine Primzahl $p$ ist, dann ist $\phi(p) = p - 1$, also ist dies genau der kleine Satz von Fermat ($a^{p-1} \equiv 1 \pmod p$). [Der kleine Satz von Fermat](https://kenji.blog/p/fermats-little-theorem/) ist also nur ein Spezialfall des Satzes von Euler.
 
 ---
 
@@ -466,7 +466,7 @@ Wenn Sie diesen Code ausführen, können Sie sehen, wie ein Array von Zeichen in
 
 ## 9. Fazit: Die Kreuzung von mathematischer Schönheit und Praktikabilität
 
-Als Pierre de Fermat im 17. Jahrhundert diesen "kleinen Satz" entdeckte, dachte niemand, dass er für irgendetwas nützlich sein würde. Fermat selbst betrieb zahlentheoretische Forschung aus reiner mathematischer Neugier.
+Als [Pierre de Fermat](https://kenji.blog/p/fermat/) im 17. Jahrhundert diesen "kleinen Satz" entdeckte, dachte niemand, dass er für irgendetwas nützlich sein würde. Fermat selbst betrieb zahlentheoretische Forschung aus reiner mathematischer Neugier.
 
 Etwa 300 Jahre später, in den 1970er Jahren, an den Anfängen von Computernetzwerken, feierte der Satz von Fermat jedoch ein dramatisches Comeback als unverzichtbare Verschlüsselungstechnologie zur Etablierung sicherer Kommunikationsprotokolle. Die Primzahltesttechnologie, die auf dem kleinen Satz von Fermat basiert, und die RSA-Verschlüsselung, die auf dem Satz von Euler basiert, stützen buchstäblich die moderne Internet-Infrastruktur.
 

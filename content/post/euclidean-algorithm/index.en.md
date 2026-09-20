@@ -8,16 +8,16 @@ categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 
-# What is the Euclidean Algorithm?
+# What is the [Euclide](https://kenji.blog/p/euclid/)an Algorithm?
 
-The **Euclidean algorithm** is an efficient method for computing the greatest common divisor (GCD) of two natural numbers (or integers). Described around 300 BC by the ancient Greek mathematician Euclid in Book VII of his mathematical treatise "Elements," it is widely known as one of the "oldest algorithms in humanity."
+The **[Euclide](https://kenji.blog/p/euclid/)an algorithm** is an efficient method for computing the greatest common divisor (GCD) of two natural numbers (or integers). Described around 300 BC by the ancient Greek mathematician [Euclid](https://kenji.blog/p/euclid/) in Book VII of his mathematical treatise "Elements," it is widely known as one of the "oldest algorithms in humanity."
 
-The most naive way to find the GCD is to find the prime factorization of both numbers and multiply the common prime factors. However, as the numbers grow larger, the computational complexity of prime factorization becomes enormous, making it difficult to solve in a realistic timeframe. On the other hand, by using the **Euclidean algorithm**, it is possible to calculate the GCD extremely quickly, even for massive numbers spanning thousands of digits.
+The most naive way to find the GCD is to find the prime factorization of both numbers and multiply the common prime factors. However, as the numbers grow larger, the computational complexity of prime factorization becomes enormous, making it difficult to solve in a realistic timeframe. On the other hand, by using the **[Euclide](https://kenji.blog/p/euclid/)an algorithm**, it is possible to calculate the GCD extremely quickly, even for massive numbers spanning thousands of digits.
 
 ## Basic Theorem and Mechanics
 
 Let $\gcd(a, b)$ denote the greatest common divisor of two natural numbers $a$ and $b$ (where $a \ge b$).
-The Euclidean algorithm is based on the following simple theorem:
+The [Euclide](https://kenji.blog/p/euclid/)an algorithm is based on the following simple theorem:
 
 $$
 a = bq + r \implies \gcd(a, b) = \gcd(b, r)
@@ -39,7 +39,7 @@ Why does $\gcd(a, b) = \gcd(b, r)$ hold true? Let's prove it briefly.
 
 ## Algorithm Flowchart
 
-By taking advantage of this property, the Euclidean algorithm repeatedly performs division until the remainder reaches $0$.
+By taking advantage of this property, the [Euclide](https://kenji.blog/p/euclid/)an algorithm repeatedly performs division until the remainder reaches $0$.
 
 ```mermaid
 flowchart TD
@@ -109,24 +109,24 @@ int main() {
 
 ## Time Complexity and Lamé's Theorem
 
-How fast is the Euclidean algorithm? Regarding its computational complexity, **Lamé's theorem**, proven by the French mathematician Gabriel Lamé in 1844, is well known.
+How fast is the [Euclide](https://kenji.blog/p/euclid/)an algorithm? Regarding its computational complexity, **Lamé's theorem**, proven by the French mathematician [Gabriel Lamé](https://kenji.blog/p/lame/) in 1844, is well known.
 
 > **Lamé's Theorem**
-> The number of division steps required to apply the Euclidean algorithm to two natural numbers $a, b$ ($a > b$) is at most $5$ times the number of digits in the decimal representation of $b$.
+> The number of division steps required to apply the [Euclide](https://kenji.blog/p/euclid/)an algorithm to two natural numbers $a, b$ ($a > b$) is at most $5$ times the number of digits in the decimal representation of $b$.
 
 As a result, the time complexity of the algorithm is $O(\log(\min(a, b)))$.
 
 The worst-case scenario (where the number of divisions is maximized) occurs when two consecutive numbers of the Fibonacci sequence are provided. For example, in the process of finding the GCD of $F_{n+2}$ and $F_{n+1}$, the quotient is always $1$, continuously transitioning to smaller Fibonacci numbers.
 
-## Extended Euclidean Algorithm
+## Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm
 
-An extension of the algorithm to find integers $x, y$ that satisfy the following Bézout's identity, in addition to finding the greatest common divisor, is called the **Extended Euclidean algorithm**.
+An extension of the algorithm to find integers $x, y$ that satisfy the following Bézout's identity, in addition to finding the greatest common divisor, is called the **Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm**.
 
 $$
 ax + by = \gcd(a, b)
 $$
 
-### Implementation of the Extended Euclidean Algorithm
+### Implementation of the Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm
 
 In the process of returning from recursive calls, we backtrack to calculate the coefficients $x$ and $y$.
 
@@ -152,10 +152,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 
 ## Applications in Modern Society (RSA Cryptography, etc.)
 
-The Extended Euclidean algorithm is not just a math puzzle, but an essential technology supporting modern internet society.
+The Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm is not just a math puzzle, but an essential technology supporting modern internet society.
 A prime example is **RSA cryptography**. In the key generation process of RSA encryption, it is necessary to find a private key $d$ (modular inverse) that satisfies $e d \equiv 1 \pmod{\phi(N)}$ for a given number $e$ and Euler's totient function $\phi(N)$.
-Because this can be rearranged into the form $ed + k\phi(N) = 1$, we can use the Extended Euclidean algorithm to compute $d$ at extremely high speeds.
+Because this can be rearranged into the form $ed + k\phi(N) = 1$, we can use the Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm to compute $d$ at extremely high speeds.
 
 ## Conclusion
 
-Despite being discovered long ago in the BC era, the Euclidean algorithm continues to underpin the foundation of modern computer science due to its streamlined logic and high computational efficiency. Although it is often the first topic encountered when studying algorithms, it is packed with mathematical beauty and practicality behind the scenes.
+Despite being discovered long ago in the BC era, the [Euclide](https://kenji.blog/p/euclid/)an algorithm continues to underpin the foundation of modern computer science due to its streamlined logic and high computational efficiency. Although it is often the first topic encountered when studying algorithms, it is packed with mathematical beauty and practicality behind the scenes.

@@ -14,13 +14,13 @@ tags:
 
 ## Introduction
 
-The Chinese Remainder Theorem (CRT) is one of the most important and beautiful theorems in number theory. Its origins can be traced back to the ancient Chinese mathematical text "Sunzi Suanjing", believed to have been compiled between the 3rd and 5th centuries. Starting from a simple arithmetic problem of antiquity, this theorem has spanned millennia to play an essential role today in public-key cryptography technologies like **RSA Cryptography**, which secures our daily internet communications.
+The [Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/) (CRT) is one of the most important and beautiful theorems in number theory. Its origins can be traced back to the ancient Chinese mathematical text "Sunzi Suanjing", believed to have been compiled between the 3rd and 5th centuries. Starting from a simple arithmetic problem of antiquity, this theorem has spanned millennia to play an essential role today in public-key cryptography technologies like **RSA Cryptography**, which secures our daily internet communications.
 
-In this article, we will explain the **Chinese Remainder Theorem** in detail, with illustrations and concrete examples, covering its historical background, strict mathematical definition, specific calculation steps, and applications in modern cryptography.
+In this article, we will explain the **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** in detail, with illustrations and concrete examples, covering its historical background, strict mathematical definition, specific calculation steps, and applications in modern cryptography.
 
 ## Historical Background: Sunzi's Problem
 
-The roots of the Chinese Remainder Theorem lie in the following famous problem recorded in Question 26 of the lower volume of "Sunzi Suanjing".
+The roots of the [Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/) lie in the following famous problem recorded in Question 26 of the lower volume of "Sunzi Suanjing".
 
 > "There are certain things whose number is unknown. If we count them by threes, we have two left over; by fives, we have three left over; and by sevens, two are left over. How many things are there?"
 
@@ -34,11 +34,11 @@ x \equiv 2 \pmod 7
 \end{cases}
 $$
 
-The solution to this problem is $x = 23$. "Sunzi Suanjing" also provides the specific calculation procedure to derive this solution, which is considered the first example of a concrete constructive method for the Chinese Remainder Theorem.
+The solution to this problem is $x = 23$. "Sunzi Suanjing" also provides the specific calculation procedure to derive this solution, which is considered the first example of a concrete constructive method for the [Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/).
 
 ## Mathematical Definition and Theorem Statement
 
-In modern mathematics, the **Chinese Remainder Theorem** is formulated as follows.
+In modern mathematics, the **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** is formulated as follows.
 
 ### Theorem Statement
 
@@ -63,7 +63,7 @@ The brilliant part of this theorem is that it not only guarantees the existence 
 
 1. Calculate the overall product $M = m_1 m_2 \dots m_k$.
 2. For each $i$, calculate $M_i = \frac{M}{m_i}$. ($M_i$ is the product of all moduli except $m_i$)
-3. Since $\gcd(M_i, m_i) = 1$, the modular multiplicative inverse $y_i$ of $M_i$ modulo $m_i$ exists. That is, find $y_i$ satisfying $M_i y_i \equiv 1 \pmod{m_i}$ using methods like the Extended Euclidean Algorithm.
+3. Since $\gcd(M_i, m_i) = 1$, the modular multiplicative inverse $y_i$ of $M_i$ modulo $m_i$ exists. That is, find $y_i$ satisfying $M_i y_i \equiv 1 \pmod{m_i}$ using methods like the Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm.
 4. The final solution $x$ is given by the following formula:
 
 $$
@@ -105,7 +105,7 @@ Thus, the smallest positive solution is **23**, which perfectly matches Sunzi's 
 
 ## Applications in the Modern Era: RSA Cryptography and CRT
 
-The **Chinese Remainder Theorem**, once an ancient puzzle, has extremely practical uses in our modern digital society. A prime example is the acceleration of decryption and signature generation in **RSA Cryptography**.
+The **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)**, once an ancient puzzle, has extremely practical uses in our modern digital society. A prime example is the acceleration of decryption and signature generation in **RSA Cryptography**.
 
 ### Overview of RSA Cryptography
 
@@ -119,7 +119,7 @@ Here, $N$ is an enormously large number (e.g., 2048 bits), and $d$ is of a simil
 
 ### Acceleration with CRT (RSA-CRT)
 
-This is where the **Chinese Remainder Theorem** comes into play. Instead of performing a huge calculation modulo $N$, the approach divides it into two smaller calculations modulo $p$ and modulo $q$, which are the prime factors of $N$, and finally reconstructs the original solution using CRT.
+This is where the **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** comes into play. Instead of performing a huge calculation modulo $N$, the approach divides it into two smaller calculations modulo $p$ and modulo $q$, which are the prime factors of $N$, and finally reconstructs the original solution using CRT.
 
 Specifically, the following steps are taken:
 
@@ -142,9 +142,9 @@ graph TD
 
 When the modulus is halved in bit length (e.g., 1024 bits), the cost of exponentiation becomes about 1/8. Even doing this twice, the overall cost is about 1/4. Thus, using RSA-CRT can speed up decryption and signature generation by **approximately 4 times**. In devices with limited computational resources like smartphones and IC cards, this acceleration is extremely important.
 
-## Programming Implementation of the Chinese Remainder Theorem
+## Programming Implementation of the [Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)
 
-Beyond theory, let's actually write a program to implement the **Chinese Remainder Theorem**. Here, we implement Gauss's algorithm using Python.
+Beyond theory, let's actually write a program to implement the **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)**. Here, we implement Gauss's algorithm using Python.
 
 ```python
 def extended_gcd(a, b):
@@ -192,11 +192,11 @@ result = chinese_remainder_theorem(a, m)
 print(f"Solution to Sunzi's problem: {result}") # Output: 23
 ```
 
-In this way, the **Chinese Remainder Theorem** can be replicated on a computer with just a few dozen lines of code. This implementation is a basic algorithm frequently used in competitive programming and similar fields.
+In this way, the **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** can be replicated on a computer with just a few dozen lines of code. This implementation is a basic algorithm frequently used in competitive programming and similar fields.
 
 ## Generalization in Abstract Algebra: Rings and Ideals
 
-The **Chinese Remainder Theorem** extends beyond a mere property of integers to a more general form in **Abstract Algebra**, an important field of modern mathematics.
+The **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** extends beyond a mere property of integers to a more general form in **Abstract Algebra**, an important field of modern mathematics.
 
 Consider a commutative ring $R$ and its ideals $I_1, I_2, \dots, I_k$. When these ideals are pairwise coprime (that is, $I_i + I_j = R$ holds for any $i \neq j$), we can define a natural ring homomorphism $\phi$ as follows:
 
@@ -207,7 +207,7 @@ $$
 \phi(x) = (x \pmod{I_1}, x \pmod{I_2}, \dots, x \pmod{I_k})
 $$
 
-The **Chinese Remainder Theorem** in abstract algebra asserts that this homomorphism $\phi$ is surjective, and its kernel is the intersection of the ideals $\bigcap_{i=1}^k I_i$ (which coincides with the product of the ideals $\prod_{i=1}^k I_i$).
+The **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** in abstract algebra asserts that this homomorphism $\phi$ is surjective, and its kernel is the intersection of the ideals $\bigcap_{i=1}^k I_i$ (which coincides with the product of the ideals $\prod_{i=1}^k I_i$).
 
 Therefore, by the first isomorphism theorem, the following natural isomorphism holds:
 
@@ -217,13 +217,13 @@ $$
 
 ### Application to Polynomial Rings
 
-One of the most important applications of this generalized theorem is the **Chinese Remainder Theorem** in the univariate polynomial ring $F[x]$ over a field $F$.
+One of the most important applications of this generalized theorem is the **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** in the univariate polynomial ring $F[x]$ over a field $F$.
 
 "Coprime integers" in the integer case correspond to "polynomials without common roots (whose greatest common divisor is a constant)" in the polynomial ring. This polynomial version of CRT provides the theoretical backing for Lagrange interpolation, perfectly matching the algorithm to uniquely determine a polynomial of minimum degree passing through a given set of points. Additionally, this forms the mathematical foundation of **Reed-Solomon codes**, a type of error-correcting code.
 
 ## Massively Parallel Computing using Residue Number System (RNS)
 
-As an engineering application of the **Chinese Remainder Theorem**, we should also mention the **Residue Number System (RNS)**.
+As an engineering application of the **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)**, we should also mention the **Residue Number System (RNS)**.
 
 Normally, computers represent numbers and perform calculations in binary. However, when adding or multiplying, carry propagation occurs, causing the problem of increased circuit delay as the bit width grows.
 
@@ -239,10 +239,10 @@ $$
 X \times Y \leftrightarrow ( (x_1y_1)\pmod{m_1}, \dots, (x_k y_k)\pmod{m_k} )
 $$
 
-Since computations in each modulus are completely independent, assembling parallel circuits allows for extremely high-speed operations. When converting the final result back to a normal number, the **Chinese Remainder Theorem** is precisely what is used. This technology is still being researched and put into practical use in digital signal processing (DSP), where real-time performance is demanded, and in the design of specific cryptographic processing circuits.
+Since computations in each modulus are completely independent, assembling parallel circuits allows for extremely high-speed operations. When converting the final result back to a normal number, the **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** is precisely what is used. This technology is still being researched and put into practical use in digital signal processing (DSP), where real-time performance is demanded, and in the design of specific cryptographic processing circuits.
 
 ## Conclusion
 
-The **Chinese Remainder Theorem** began as a simple math puzzle, was sublimated into the structure theorem of ideals in abstract algebra, and has evolved into foundational technology for modern cryptography and computer science.
+The **[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)** began as a simple math puzzle, was sublimated into the structure theorem of ideals in abstract algebra, and has evolved into foundational technology for modern cryptography and computer science.
 
 The fact that the wisdom of ancient Chinese mathematicians lives on across millennia as cryptographic processing in our smartphones is a testament to the universality and power of the discipline of mathematics.

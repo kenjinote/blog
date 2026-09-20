@@ -52,11 +52,11 @@ bool is_prime_trial_division(long long n) {
 
 # 2. フェルマーテスト：確率的素数判定の幕開け
 
-試し割り法の限界を突破するために考え出されたのが、数論の定理を用いた「確率的アルゴリズム（Probabilistic Algorithm）」です。その代表例が、フェルマーの小定理を利用した「フェルマーテスト（Fermat Primality Test）」です。
+試し割り法の限界を突破するために考え出されたのが、数論の定理を用いた「確率的アルゴリズム（Probabilistic Algorithm）」です。その代表例が、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)を利用した「フェルマーテスト（Fermat Primality Test）」です。
 
-## フェルマーの小定理 (Fermat's Little Theorem)
+## [フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-ピエール・ド・フェルマー（Pierre de Fermat）が発見したこの定理は、次のように主張しています。
+[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）が発見したこの定理は、次のように主張しています。
 
 > 任意の素数 $p$ と、互いに素な（$p$ の倍数ではない）任意の整数 $a$ について、以下の合同式が成り立つ。
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -98,13 +98,13 @@ long long mod_pow(long long a, long long b, long long m) {
 
 ## 数学的原理
 
-ミラー・ラビンのアルゴリズムは、フェルマーの小定理に加えて、「素数を法とする剰余体（$\mathbb{Z}/p\mathbb{Z}$）においては、$x^2 \equiv 1 \pmod p$ の解は $x \equiv 1$ または $x \equiv -1$ に限られる」という性質を利用します（合成数を法とする場合は、これ以外の非自明な平方根が存在し得ます）。
+ミラー・ラビンのアルゴリズムは、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)に加えて、「素数を法とする剰余体（$\mathbb{Z}/p\mathbb{Z}$）においては、$x^2 \equiv 1 \pmod p$ の解は $x \equiv 1$ または $x \equiv -1$ に限られる」という性質を利用します（合成数を法とする場合は、これ以外の非自明な平方根が存在し得ます）。
 
 判定したい奇数 $N$ から $1$ を引いた $N-1$ は必ず偶数になります。そこで、$N-1$ を $2$ で割れるだけ割り、次のような形式で表します。
 $$ N-1 = d \cdot 2^s $$
 （ここで、$d$ は奇数、$s \ge 1$）
 
-任意の底 $a$ （$1 < a < N-1$）について、$a^{N-1} \equiv 1 \pmod N$ であるかをフェルマーの小定理に従って検証しますが、その計算を段階的に行います。
+任意の底 $a$ （$1 < a < N-1$）について、$a^{N-1} \equiv 1 \pmod N$ であるかを[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)に従って検証しますが、その計算を段階的に行います。
 具体的には、$a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$ と順番に2乗を繰り返していきます。
 
 ミラー・ラビンテストが $N$ を「素数である（あるいは強い確率で素数である）」と判定するための条件は、以下の **いずれか** が成立することです。

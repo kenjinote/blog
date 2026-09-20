@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introduction
 
-René Descartes (1596-1650) was a French philosopher, mathematician, and scientist. He left the famous phrase "I think, therefore I am (Cogito, ergo sum)" and is widely known as the father of modern philosophy. However, the role he played in the history of mathematics was as immense as his philosophical achievements.
+[René Descartes](https://kenji.blog/p/descartes/) (1596-1650) was a French philosopher, mathematician, and scientist. He left the famous phrase "I think, therefore I am (Cogito, ergo sum)" and is widely known as the father of modern philosophy. However, the role he played in the history of mathematics was as immense as his philosophical achievements.
 
 Descartes' greatest mathematical achievement was the creation of **analytic geometry**, which merged algebra and geometry. In this article, we will explain in detail the episodes of his life and the revolution he brought to the world of mathematics.
 
@@ -66,7 +66,7 @@ $$
 
 ## 4. Impact on Philosophy and Science
 
-Descartes' analytic geometry became an indispensable foundation for the subsequent development of mathematics and physics. It can be said that the creation of calculus by Isaac Newton and Gottfried Leibniz was only possible because of the stage provided by the Cartesian coordinate system.
+Descartes' analytic geometry became an indispensable foundation for the subsequent development of mathematics and physics. It can be said that the creation of calculus by [Isaac Newton](https://kenji.blog/p/newton/) and [Gottfried Leibniz](https://kenji.blog/p/leibniz/) was only possible because of the stage provided by the Cartesian coordinate system.
 
 In addition, his "methodological doubt" in philosophy, an approach to finding certain truths after doubting everything, established the spirit of rationalism that serves as the foundation of scientific inquiry.
 
@@ -74,4 +74,4 @@ In addition, his "methodological doubt" in philosophy, an approach to finding ce
 
 Descartes was a man who loved thought so much that an anecdote remains that he stayed in bed until late in the morning observing the movement of a fly on the ceiling. (According to one theory, trying to express the movement of this fly led to the idea of the coordinate system).
 
-The life and thought of René Descartes continue to give us much inspiration today, transcending the boundaries of academic disciplines. When we consider that today's computer graphics, AI, and all kinds of scientific technology operate on the coordinate system he left behind, we can once again realize his greatness.
+The life and thought of [René Descartes](https://kenji.blog/p/descartes/) continue to give us much inspiration today, transcending the boundaries of academic disciplines. When we consider that today's computer graphics, AI, and all kinds of scientific technology operate on the coordinate system he left behind, we can once again realize his greatness.

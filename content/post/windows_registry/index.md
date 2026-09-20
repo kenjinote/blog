@@ -9,7 +9,7 @@ categories: ["windows", "administration", "programming"]
 tags: ["Registry", "PowerShell", "C#", "Windows 11"]
 ---
 
-# Windowsレジストリの基礎知識と、プログラマブルな安全な編集方法
+# [Windowsレジストリの基礎知識と、プログラマブルな安全な編集方法](https://kenji.blog/p/windows_registry/)
 
 Windowsオペレーティングシステムにおいて、「レジストリ（Registry）」はシステムおよびアプリケーションの各種設定を格納する巨大な階層型データベースです。本記事では、Windowsレジストリの基礎的なアーキテクチャから、PowerShellやC#を用いたプログラマブルかつ安全なレジストリの編集手法について、非常に詳細に解説します。
 

@@ -12,7 +12,7 @@ slug: "doomsday-argument"
 
 When will humanity go extinct? This question has long been treated as a theme in religion, philosophy, and science fiction. However, since the 1980s, researchers have emerged who attempted a mathematical approach to this question using **Probability Theory** and **Bayesian Inference**. That is the **Doomsday Argument**, which we will introduce this time.
 
-The Doomsday Argument was first proposed by the physicist Brandon Carter, and later refined by the philosopher John Leslie, astrophysicist J. Richard Gott, and Nick Bostrom among others. The astonishing point of this argument is that it derives an extremely pessimistic prediction about the survival period of humanity based solely on "principles of probability" and "statistical inference," without using complex climate change models, nuclear war simulations, or asteroid collision probabilities.
+[The Doomsday Argument](https://kenji.blog/p/doomsday-argument/) was first proposed by the physicist Brandon Carter, and later refined by the philosopher John Leslie, astrophysicist J. Richard Gott, and Nick Bostrom among others. The astonishing point of this argument is that it derives an extremely pessimistic prediction about the survival period of humanity based solely on "principles of probability" and "statistical inference," without using complex climate change models, nuclear war simulations, or asteroid collision probabilities.
 
 In this article, we will explain in detail what kind of logical structure this **Doomsday Argument** has, starting from the underlying Copernican principle, through mathematical formulas using Bayesian inference, and even discussing counterarguments and its significance in modern times, incorporating diagrams.
 
@@ -22,7 +22,7 @@ The key to deeply understanding the Doomsday Argument is the **Copernican Princi
 
 Looking back at history, the Earth was not the center of the universe (heliocentrism), the solar system was not the center of the Milky Way galaxy, and our galaxy was not the center of the universe. Humanity has always advanced science by accepting the fact that "we are not in a special position."
 
-The Doomsday Argument extends this Copernican Principle not only to "space" but also to "time" and "birth order."
+[The Doomsday Argument](https://kenji.blog/p/doomsday-argument/) extends this Copernican Principle not only to "space" but also to "time" and "birth order."
 In other words, it considers that "the fact that you were born in this era, at a specific rank in the entire history of humanity, is by no means special, but merely a random result."
 
 Suppose humanity flourishes for billions of years to come, and trillions or quadrillions of humans are born. In that case, the probability of "you" being born as one of the approximately 100 billion people born up to now would be extremely low. Probabilistically, it is more reasonable to think that "the total number of humanity is not that large, and you were born in a very average middle stage" than to think that you are "a very rare early human in human history." This is also a type of Observation Selection Effect.
@@ -61,7 +61,7 @@ graph TD
 
 ## 4. Mathematical Formulation Using Bayesian Inference
 
-Let's formulate this intuition strictly mathematically using **Bayesian Inference**. Bayes' Theorem is a theorem that shows how to update the probability of a certain hypothesis (posterior probability) when new evidence (observation data) is obtained.
+Let's formulate this intuition strictly mathematically using **Bayesian Inference**. [Bayes' Theorem](https://kenji.blog/p/bayes-theorem/) is a theorem that shows how to update the probability of a certain hypothesis (posterior probability) when new evidence (observation data) is obtained.
 
 $$ P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)} $$
 
@@ -88,7 +88,7 @@ Next, we calculate the likelihood $P(E|H)$ under each hypothesis. Based on the C
 $$ P(n | H_{DOOM}) = \frac{1}{N_{DOOM}} = \frac{1}{2 \times 10^{11}} $$
 $$ P(n | H_{BOOM}) = \frac{1}{N_{BOOM}} = \frac{1}{2 \times 10^{13}} $$
 
-Using this, we calculate the posterior probability of $H_{DOOM}$. Expanding Bayes' Theorem using the Law of Total Probability gives the following:
+Using this, we calculate the posterior probability of $H_{DOOM}$. Expanding [Bayes' Theorem](https://kenji.blog/p/bayes-theorem/) using the Law of Total Probability gives the following:
 
 $$ P(H_{DOOM} | n) = \frac{P(n | H_{DOOM}) P(H_{DOOM})}{P(n | H_{DOOM}) P(H_{DOOM}) + P(n | H_{BOOM}) P(H_{BOOM})} $$
 

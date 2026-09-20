@@ -12,7 +12,7 @@ tags: ["Função Gama", "Euler", "Análise Complexa", "Cálculo"]
 
 Ao estudar matemática, às vezes nos deparamos com a pergunta: "Um conceito discreto pode ser estendido para um contínuo?" Um dos exemplos mais belos e importantes disso é a **Função Gama**.
 
-A função Gama estende o "fatorial" ($n!$), definido para números naturais, para números reais positivos e até mesmo para todo o plano complexo. Descoberta pelo grande matemático do século 18, Leonhard Euler, essa função aparece em quase todos os campos, desde a análise matemática e teoria da probabilidade até a estatística e física.
+A função Gama estende o "fatorial" ($n!$), definido para números naturais, para números reais positivos e até mesmo para todo o plano complexo. Descoberta pelo grande matemático do século 18, [Leonhard Euler](https://kenji.blog/p/euler/), essa função aparece em quase todos os campos, desde a análise matemática e teoria da probabilidade até a estatística e física.
 
 Neste artigo, veremos mais de perto os fundamentos da função Gama e suas propriedades profundas.
 

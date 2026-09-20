@@ -19,7 +19,7 @@ tags: ["Math", "Algorithms", "Python", "C++"]
 
 ---
 
-## 1. यूलर की सर्वसमिका (Euler's Identity)
+## 1. यूलर की सर्वसमिका ([Euler's Identity](https://kenji.blog/p/eulers-identity/))
 
 ### सूत्र की सुंदरता और अवलोकन
 इसे "मानव जाति का खजाना" और "दुनिया का सबसे सुंदर गणितीय सूत्र" कहा जाता है। गणित के पांच सबसे महत्वपूर्ण स्थिरांक (constants) (नेपियर की संख्या $e$, काल्पनिक इकाई $i$, पाई $\pi$, गुणात्मक तत्समक (multiplicative identity) $1$, और योगात्मक तत्समक (additive identity) $0$) को एक ही सरल समीकरण में एकीकृत किया गया है।
@@ -132,7 +132,7 @@ print(f"Taylor series sin: {taylor_sin(angle, terms=5)}")
 
 ---
 
-## 3. बेयस की प्रमेय (Bayes' Theorem)
+## 3. बेयस की प्रमेय ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
 
 ### सूत्र की सुंदरता और अवलोकन
 बेयस की प्रमेय किसी घटना से जुड़े पूर्व ज्ञान (पूर्व प्रायिकता - prior probability) के आधार पर उस घटना की प्रायिकता (पश्च प्रायिकता - posterior probability) को अपडेट करने के लिए एक प्रमेय है। यह संभाव्यता सिद्धांत (probability theory) और सांख्यिकी (statistics) में सबसे महत्वपूर्ण सूत्रों में से short एक है।
@@ -559,12 +559,12 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. यूक्लिडियन दूरी और पाइथागोरस प्रमेय (Euclidean Distance & Pythagorean Theorem)
+## 10. [यूक्लिड](https://kenji.blog/p/euclid/)ियन दूरी और पाइथागोरस प्रमेय ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### सूत्र की सुंदरता और अवलोकन
 यह प्राचीन ग्रीस (Ancient Greece) की ज्यामिति (geometry) की नींव है, और यह गणितीय सूत्र $n$-आयामी (n-dimensional) स्थान में दो बिंदुओं के बीच की सीधी रेखा की दूरी को परिभाषित करता है। 2D स्पेस में यह पाइथागोरस प्रमेय ($a^2 + b^2 = c^2$) है।
 
-3D स्पेस में बिंदु $P(x_1, y_1, z_1)$ और $Q(x_2, y_2, z_2)$ के बीच की यूक्लिडियन दूरी $d$ इस प्रकार व्यक्त की जाती है:
+3D स्पेस में बिंदु $P(x_1, y_1, z_1)$ और $Q(x_2, y_2, z_2)$ के बीच की [यूक्लिड](https://kenji.blog/p/euclid/)ियन दूरी $d$ इस प्रकार व्यक्त की जाती है:
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

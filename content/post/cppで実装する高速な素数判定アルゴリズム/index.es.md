@@ -54,9 +54,9 @@ La complejidad computacional de este algoritmo es $O(\sqrt{N})$. Si $N \le 10^{1
 
 Para superar los límites del método de división por tentativa, se idearon "Algoritmos probabilísticos (Probabilistic Algorithm)" utilizando teoremas de la teoría de números. Un ejemplo representativo es la "Prueba de Fermat (Fermat Primality Test)", que utiliza el pequeño teorema de Fermat.
 
-## Pequeño teorema de Fermat (Fermat's Little Theorem)
+## Pequeño teorema de Fermat ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-Este teorema, descubierto por Pierre de Fermat, afirma lo siguiente:
+Este teorema, descubierto por [Pierre de Fermat](https://kenji.blog/p/fermat/), afirma lo siguiente:
 
 > Para cualquier número primo $p$ y cualquier entero $a$ que sea coprimo con $p$ (que no sea un múltiplo de $p$), se cumple la siguiente congruencia:
 > $$ a^{p-1} \equiv 1 \pmod p $$

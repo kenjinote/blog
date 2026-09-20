@@ -8,9 +8,9 @@ categories: ["mathematics", "physics"]
 tags: ["Géométrie", "Relativité", "Histoire des Sciences", "Mathématiques"]
 ---
 
-## 1. Introduction : L'Emprise d'Euclide
+## 1. Introduction : L'Emprise d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)
 
-Au IIIe siècle av. J.-C., le mathématicien grec antique Euclide a systématisé axiomatiquement les connaissances géométriques de son époque dans son ouvrage *Éléments*. Il a présenté cinq postulats, mais le cinquième, appelé le **postulat des parallèles**, était plus complexe que les quatre autres et a causé bien des tourments aux mathématiciens par la suite.
+Au IIIe siècle av. J.-C., le mathématicien grec antique [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) a systématisé axiomatiquement les connaissances géométriques de son époque dans son ouvrage *Éléments*. Il a présenté cinq postulats, mais le cinquième, appelé le **postulat des parallèles**, était plus complexe que les quatre autres et a causé bien des tourments aux mathématiciens par la suite.
 
 $$
 \text{5e postulat : Si une ligne droite tombant sur deux lignes droites fait les angles intérieurs du même côté plus petits que deux angles droits, les deux lignes droites, si elles sont prolongées indéfiniment, se rencontrent du côté où les angles sont plus petits que deux angles droits.}
@@ -34,7 +34,7 @@ graph TD
 
 ## 3. La Découverte de l'« Espace Courbe » : Naissance de la Géométrie Hyperbolique
 
-Au XIXe siècle, une révolution éclate enfin. L'Allemand Carl Friedrich Gauss, le Hongrois János Bolyai et le Russe Nikolaï Lobatchevski parviennent indépendamment à la conclusion que « le 5e postulat est indépendant des autres postulats, et il existe une géométrie entièrement nouvelle où il n'est pas vérifié ».
+Au XIXe siècle, une révolution éclate enfin. L'Allemand [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), le Hongrois János Bolyai et le Russe Nikolaï Lobatchevski parviennent indépendamment à la conclusion que « le 5e postulat est indépendant des autres postulats, et il existe une géométrie entièrement nouvelle où il n'est pas vérifié ».
 
 La géométrie qu'ils ont découverte est aujourd'hui appelée **géométrie hyperbolique**. Dans cet espace, il existe une « infinité » de droites parallèles passant par un point extérieur à une droite. De plus, la somme des angles intérieurs d'un triangle est toujours inférieure à 180 degrés.
 
@@ -46,7 +46,7 @@ Gauss, craignant l'incompréhension du public face à l'innovation radicale de c
 
 ## 4. La Géométrie Riemannienne : Généralisation du Concept d'Espace
 
-Le prochain bond en avant de la géométrie non euclidienne a été réalisé par Bernhard Riemann, un élève de Gauss. Lors de sa leçon d'habilitation en 1854, Riemann a présenté des idées révolutionnaires sur les fondements de la géométrie.
+Le prochain bond en avant de la géométrie non euclidienne a été réalisé par [Bernhard Riemann](https://kenji.blog/p/riemann/), un élève de Gauss. Lors de sa leçon d'habilitation en 1854, Riemann a présenté des idées révolutionnaires sur les fondements de la géométrie.
 
 Il a introduit le **tenseur métrique** pour définir localement la courbure de l'espace, et a construit une géométrie plus générale (**la géométrie riemannienne**) où la dimension et la courbure de l'espace peuvent varier selon le lieu.
 
@@ -80,6 +80,6 @@ Dans l'équation d'Einstein ci-dessus, le côté gauche représente la structure
 
 ## 6. Conclusion
 
-L'exploration de la géométrie non euclidienne, qui a commencé par un simple doute sur le 5e postulat d'Euclide, a brisé les idées reçues intuitives de l'humanité sur l'espace et a prouvé la liberté des mathématiques. Et cela a finalement abouti à la théorie de la relativité générale, qui élucide la structure fondamentale de l'univers.
+L'exploration de la géométrie non euclidienne, qui a commencé par un simple doute sur le 5e postulat d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/), a brisé les idées reçues intuitives de l'humanité sur l'espace et a prouvé la liberté des mathématiques. Et cela a finalement abouti à la théorie de la relativité générale, qui élucide la structure fondamentale de l'univers.
 
 La poursuite de la logique pure en mathématiques deviendra plus tard le langage indispensable pour décrire les vérités les plus profondes du monde physique. L'histoire de la géométrie non euclidienne nous enseigne la grandeur de l'intellect humain et le mystère étonnant du monde naturel.

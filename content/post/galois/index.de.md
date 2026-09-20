@@ -8,13 +8,13 @@ categories: ["Mathematik", "Biografie"]
 tags: ["Galois-Theorie", "Algebra", "Gruppentheorie", "Geschichte"]
 ---
 
-In der Geschichte der Mathematik gibt es nur wenige, deren Leben so dramatisch und tragisch verlief wie das von Évariste Galois (1811–1832). Dieser junge Franzose, der im Alter von nur 20 Jahren in einem Duell sein Leben verlor, legte in einem Brief, den er am Vorabend seines Todes schrieb, den Grundstein für eine großartige Theorie, die die nachfolgende Mathematik grundlegend verändern sollte. In diesem Artikel tauchen wir tief in das turbulente Leben von Galois und sein größtes Erbe, die **Galois-Theorie**, ein.
+In der Geschichte der Mathematik gibt es nur wenige, deren Leben so dramatisch und tragisch verlief wie das von [Évariste Galois](https://kenji.blog/p/galois/) (1811–1832). Dieser junge Franzose, der im Alter von nur 20 Jahren in einem Duell sein Leben verlor, legte in einem Brief, den er am Vorabend seines Todes schrieb, den Grundstein für eine großartige Theorie, die die nachfolgende Mathematik grundlegend verändern sollte. In diesem Artikel tauchen wir tief in das turbulente Leben von Galois und sein größtes Erbe, die **Galois-Theorie**, ein.
 
 ## 1. Ein turbulentes Leben: Leidenschaft und Frustration
 
 ### Frühes Leben und das Erwachen der Mathematik
 
-Évariste Galois wurde 1811 in Bourg-la-Reine, einem Vorort von Paris, geboren. Sein Vater war ein gebildeter Republikaner, der später als Bürgermeister der Stadt diente. Zunächst von seiner Mutter unterrichtet, trat Galois im Alter von 12 Jahren in das Lycée Louis-le-Grand in Paris ein.
+[Évariste Galois](https://kenji.blog/p/galois/) wurde 1811 in Bourg-la-Reine, einem Vorort von Paris, geboren. Sein Vater war ein gebildeter Republikaner, der später als Bürgermeister der Stadt diente. Zunächst von seiner Mutter unterrichtet, trat Galois im Alter von 12 Jahren in das Lycée Louis-le-Grand in Paris ein.
 
 Das Schulleben am Lycée war für ihn langweilig, aber sein Leben veränderte sich im Alter von 15 Jahren grundlegend, als er Legendres *Éléments de Géométrie* entdeckte. Es wird gesagt, dass Galois dieses schwierige Buch innerhalb von Tagen las, als würde er einen Roman lesen. Von da an ignorierte er normale Lehrbücher und begann, die Schriften der größten Mathematiker der Zeit, wie Lagrange und Cauchy, zu verschlingen.
 
@@ -114,6 +114,6 @@ So wurde die Tatsache, dass "allgemeine Gleichungen vom Grad 5 oder höher nicht
 
 Nach dem Tod von Galois wurden seine Briefe von seinem engen Freund Chevalier aufbewahrt und allmählich unter Mathematikern bekannt. Im Jahr 1846 organisierte dann der französische Mathematiker Joseph Liouville die Schriften von Galois und veröffentlichte sie in einer mathematischen Zeitschrift mit eigenen Kommentaren, womit die Galois-Theorie schließlich ans Licht gebracht wurde.
 
-Das von Galois eingeführte Konzept der "Gruppe" wurde in der Folge nicht nur zur Grundsprache der Algebra, sondern aller wissenschaftlichen Bereiche, einschließlich der Geometrie, der Topologie und der Physik (wie der Teilchenphysik und der Kristallographie). Heute ist die abstrakte Algebra, die algebraische Systeme wie "Gruppen, Ringe und Körper" untersucht, zu einer der wichtigsten Säulen der modernen Mathematik geworden.
+Das von Galois eingeführte Konzept der "Gruppe" wurde in der Folge nicht nur zur Grundsprache der Algebra, sondern aller wissenschaftlichen Bereiche, einschließlich der Geometrie, der Topologie und der Physik (wie der Teilchenphysik und der Kristallographie). Heute ist die abstrakte Algebra, die algebraische Systeme wie "[Gruppen, Ringe und Körper](https://kenji.blog/p/groups-rings-and-fields/)" untersucht, zu einer der wichtigsten Säulen der modernen Mathematik geworden.
 
-Évariste Galois verstarb im jungen Alter von 20 Jahren. Das monumentale Werk, das er in seinem kurzen Leben geschaffen hat, ist jedoch selbst nach fast 200 Jahren nicht verblasst und strahlt weiterhin ein starkes Licht aus, das die Tiefen der modernen Mathematik beleuchtet. Seine letzten Worte: "Ich habe keine Zeit", scheinen uns stark mit der Grenzenlosigkeit des menschlichen Intellekts und der Kürze des Lebens zu konfrontieren.
+[Évariste Galois](https://kenji.blog/p/galois/) verstarb im jungen Alter von 20 Jahren. Das monumentale Werk, das er in seinem kurzen Leben geschaffen hat, ist jedoch selbst nach fast 200 Jahren nicht verblasst und strahlt weiterhin ein starkes Licht aus, das die Tiefen der modernen Mathematik beleuchtet. Seine letzten Worte: "Ich habe keine Zeit", scheinen uns stark mit der Grenzenlosigkeit des menschlichen Intellekts und der Kürze des Lebens zu konfrontieren.

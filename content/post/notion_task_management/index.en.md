@@ -9,7 +9,7 @@ categories: ["productivity", "notion", "project-management"]
 tags: ["Notion API", "Python", "Kanban", "PARA"]
 ---
 
-# Task Management Techniques for Personal Development and Blogging using Notion
+# [Task Management Techniques for Personal Development and Blogging using Notion](https://kenji.blog/p/notion_task_management/)
 
 When consistently working on personal development and blogging, managing tasks, maintaining motivation, and efficiently storing and utilizing daily ideas are crucial themes. As projects grow larger, the number of tasks increases, often leaving you wondering what to tackle first. Furthermore, deciding where and how to store daily information, such as blog post ideas and technical notes, becomes a challenge.
 

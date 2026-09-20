@@ -10,7 +10,7 @@ tags: ["Euler", "Matematika", "Sains"]
 
 # Apa itu Identitas Euler?
 
-**Identitas Euler** (Euler's Identity) dikenal sebagai hubungan matematis yang paling indah dan mendalam. Rumus ini menghubungkan 5 konstanta matematika dasar yang muncul dari bidang yang sama sekali berbeda ke dalam bentuk yang sangat sederhana.
+**Identitas Euler** ([Euler's Identity](https://kenji.blog/p/eulers-identity/)) dikenal sebagai hubungan matematis yang paling indah dan mendalam. Rumus ini menghubungkan 5 konstanta matematika dasar yang muncul dari bidang yang sama sekali berbeda ke dalam bentuk yang sangat sederhana.
 
 $$
 e^{i\pi} + 1 = 0
@@ -63,7 +63,7 @@ Dengan cara inilah rumus yang sangat sederhana ini dihasilkan.
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -84,7 +84,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -105,7 +105,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -126,7 +126,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -147,7 +147,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -168,7 +168,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -189,7 +189,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -210,7 +210,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -231,7 +231,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 
@@ -252,7 +252,7 @@ Dengan mensubstitusikan $x = ix$ ke dalamnya dan menyederhanakannya, Rumus Euler
 
 ## Latar Belakang Sejarah
 
-Leonhard Euler (Leonhard Euler) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
+[Leonhard Euler](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) adalah seorang ahli matematika terkemuka di abad ke-18 yang meninggalkan pencapaian dalam berbagai bidang termasuk fisika, astronomi, dan logika. Identitas ini, yang menyandang namanya, dapat dikatakan sebagai salah satu puncak dari penelitiannya yang luas.
 
 ### Penemuan Fungsi Eksponensial Kompleks
 

@@ -59,7 +59,7 @@ $$
 \mathcal{O}_{\mathbb{C}^n} \text{ 是凝聚层（Coherent Sheaf）。}
 $$
 
-这一定理成为了亨利·嘉当“嘉当定理A、B”的基础，随后更被让-皮埃尔·塞尔和亚历山大·格罗滕迪克应用于代数几何学。现代数学的通用语言“层论（Sheaf Theory）”，正是在冈洁孤独的奋斗中诞生的。
+这一定理成为了亨利·嘉当“嘉当定理A、B”的基础，随后更被让-皮埃尔·塞尔和[亚历山大·格罗滕迪克](https://kenji.blog/p/grothendieck/)应用于代数几何学。现代数学的通用语言“层论（Sheaf Theory）”，正是在冈洁孤独的奋斗中诞生的。
 
 ```mermaid
 sequenceDiagram

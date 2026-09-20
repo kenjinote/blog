@@ -63,7 +63,7 @@ El problema de encontrar puntos racionales ha sido estudiado desde la antigüeda
 
 ## 3. Teorema de Mordell y el rango
 
-En 1922, Louis Mordell demostró un teorema decisivo sobre la estructura del grupo de puntos racionales $E(\mathbb{Q})$. Posteriormente, André Weil lo generalizó a cuerpos de números algebraicos y variedades abelianas, y hoy se conoce como el teorema de Mordell-Weil.
+En 1922, [Louis Mordell](https://kenji.blog/p/mordell/) demostró un teorema decisivo sobre la estructura del grupo de puntos racionales $E(\mathbb{Q})$. Posteriormente, [André Weil](https://kenji.blog/p/weil/) lo generalizó a cuerpos de números algebraicos y variedades abelianas, y hoy se conoce como el teorema de Mordell-Weil.
 
 ### 3.1. Teorema de Mordell
 
@@ -134,7 +134,7 @@ flowchart LR
 
 Para plantear la conjetura BSD, el aspecto críticamente importante es si $L(E, s)$ se puede extender mediante continuación analítica a todo el plano complejo. En particular, como veremos más adelante, queremos conocer su comportamiento en $s=1$, pero el producto que la define no converge en $s=1$.
 
-Este problema fue resuelto mediante el **teorema de la modularidad** (anteriormente conocido como conjetura de Taniyama-Shimura), completamente demostrado en 2001. Gracias al monumental trabajo de Andrew Wiles, Richard Taylor, Christophe Breuil, Brian Conrad y Fred Diamond, se demostró que "todas las curvas elípticas sobre el cuerpo de los números racionales son modulares".
+Este problema fue resuelto mediante el **teorema de la modularidad** (anteriormente conocido como conjetura de Taniyama-Shimura), completamente demostrado en 2001. Gracias al monumental trabajo de [Andrew Wiles](https://kenji.blog/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad y Fred Diamond, se demostró que "todas las curvas elípticas sobre el cuerpo de los números racionales son modulares".
 
 Ser modular significa que $L(E, s)$ coincide exactamente con la función L $L(f, s)$ de cierta forma modular $f$ de peso 2. Por la teoría de Hecke, la función L de una forma modular se extiende analíticamente a todo el plano complejo y satisface una ecuación funcional del siguiente tipo:
 

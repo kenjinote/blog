@@ -12,7 +12,7 @@ Lorsque l'on programme, il arrive d'être inquiet et de se demander : « Ce prog
 
 Cependant, dans le domaine de l'informatique, il a été mathématiquement prouvé qu'un tel outil de rêve est **« absolument impossible à créer »**. C'est le célèbre **« problème de l'arrêt (Halting Problem) »**.
 
-Cet article explique clairement, à l'aide d'exemples concrets intuitifs, de formules mathématiques (KaTeX) et de schémas (Mermaid), ce problème dont la solution a été prouvée par Alan Turing en 1936.
+Cet article explique clairement, à l'aide d'exemples concrets intuitifs, de formules mathématiques (KaTeX) et de schémas (Mermaid), ce problème dont la solution a été prouvée par [Alan Turing](https://kenji.blog/p/turing/) en 1936.
 
 ## Qu'est-ce que le problème de l'arrêt ?
 
@@ -150,7 +150,7 @@ Comme le montre le schéma, dès l'instant où l'on donne $D$ lui-même en entr�
 
 ## L'histoire des ordinateurs et la machine de Turing
 
-C'est en 1936, à une époque où les ordinateurs électroniques modernes n'existaient pas encore, qu'Alan Turing a soulevé et prouvé ce problème. Afin de définir mathématiquement et rigoureusement « qu'est-ce qu'un calcul ? », il a inventé une machine conceptuelle appelée **« la machine de Turing (Turing Machine) »**.
+C'est en 1936, à une époque où les ordinateurs électroniques modernes n'existaient pas encore, qu'[Alan Turing](https://kenji.blog/p/turing/) a soulevé et prouvé ce problème. Afin de définir mathématiquement et rigoureusement « qu'est-ce qu'un calcul ? », il a inventé une machine conceptuelle appelée **« la machine de Turing (Turing Machine) »**.
 
 Une machine de Turing se compose d'un ruban infiniment long, d'une tête de lecture/écriture pour lire et écrire les informations sur le ruban, et d'un tableau de transition d'états gérant l'état de la machine. Il est admis que même les programmes modernes les plus complexes peuvent théoriquement être réduits à cette machine de Turing. C'est ce que l'on appelle la **« thèse de Church-Turing (Church-Turing Thesis) »**.
 
@@ -158,7 +158,7 @@ Turing a tenté de tracer la limite entre « les problèmes calculables » et «
 
 ## Une profonde connexion avec les théorèmes d'incomplétude de Gödel
 
-Le « paradoxe de l'autoréférence » qui sous-tend la preuve du problème de l'arrêt est intimement lié aux **« théorèmes d'incomplétude (Incompleteness Theorems) »** publiés par Kurt Gödel en 1931, juste avant Turing.
+Le « paradoxe de l'autoréférence » qui sous-tend la preuve du problème de l'arrêt est intimement lié aux **« théorèmes d'incomplétude (Incompleteness Theorems) »** publiés par [Kurt Gödel](https://kenji.blog/p/godel/) en 1931, juste avant Turing.
 
 Le premier théorème d'incomplétude de Gödel stipule que « dans un système axiomatique suffisamment puissant comprenant l'arithmétique des nombres entiers, il existera toujours des propositions vraies qui ne peuvent être ni prouvées ni réfutées ». Pour prouver ce théorème, Gödel a construit mathématiquement une proposition autoréférentielle du type « Cette proposition est indémontrable ».
 

@@ -14,7 +14,7 @@ tags:
 
 ## Einführung
 
-Der Chinesische Restsatz (Chinese Remainder Theorem, kurz CRT) ist einer der wichtigsten und schönsten Sätze in der Zahlentheorie. Sein Ursprung lässt sich auf den antiken chinesischen mathematischen Text „Sunzi Suanjing“ zurückverfolgen, der vermutlich zwischen dem 3. und 5. Jahrhundert zusammengestellt wurde. Angefangen bei einem einfachen Rechenproblem aus der Antike, spielt dieser Satz nach Jahrtausenden heute eine unverzichtbare Rolle in der Public-Key-Kryptographie, wie der **RSA-Kryptographie**, die unsere tägliche sichere Kommunikation im Internet gewährleistet.
+Der Chinesische Restsatz ([Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/), kurz CRT) ist einer der wichtigsten und schönsten Sätze in der Zahlentheorie. Sein Ursprung lässt sich auf den antiken chinesischen mathematischen Text „Sunzi Suanjing“ zurückverfolgen, der vermutlich zwischen dem 3. und 5. Jahrhundert zusammengestellt wurde. Angefangen bei einem einfachen Rechenproblem aus der Antike, spielt dieser Satz nach Jahrtausenden heute eine unverzichtbare Rolle in der Public-Key-Kryptographie, wie der **RSA-Kryptographie**, die unsere tägliche sichere Kommunikation im Internet gewährleistet.
 
 In diesem Artikel erklären wir den **Chinesischen Restsatz** im Detail, von seinem historischen Hintergrund über die strenge mathematische Definition und die konkreten Berechnungsschritte bis hin zu seinen Anwendungen in der modernen Kryptographie, ergänzt durch Illustrationen und konkrete Beispiele.
 
@@ -63,7 +63,7 @@ Das Brillante an diesem Satz ist, dass er nicht nur die Existenz einer Lösung g
 
 1. Berechne das Gesamtprodukt $M = m_1 m_2 \dots m_k$.
 2. Berechne für jedes $i$ den Wert $M_i = \frac{M}{m_i}$. ($M_i$ ist das Produkt aller Moduli außer $m_i$)
-3. Da $\gcd(M_i, m_i) = 1$, existiert das modulare multiplikative Inverse $y_i$ von $M_i$ modulo $m_i$. Das bedeutet, finde ein $y_i$, das $M_i y_i \equiv 1 \pmod{m_i}$ erfüllt, beispielsweise mithilfe des Erweiterten Euklidischen Algorithmus.
+3. Da $\gcd(M_i, m_i) = 1$, existiert das modulare multiplikative Inverse $y_i$ von $M_i$ modulo $m_i$. Das bedeutet, finde ein $y_i$, das $M_i y_i \equiv 1 \pmod{m_i}$ erfüllt, beispielsweise mithilfe des Erweiterten [Euklid](https://kenji.blog/p/euclid/)ischen Algorithmus.
 4. Die endgültige Lösung $x$ ist durch die folgende Formel gegeben:
 
 $$

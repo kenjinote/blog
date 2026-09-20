@@ -79,9 +79,9 @@ graph TD
 
 ---
 
-## 3. 透過貝氏定理的嚴密證明
+## 3. 透過[貝氏定理](https://kenji.blog/p/bayes-theorem/)的嚴密證明
 
-為了在數學上嚴密地解開這個問題，我們使用計算條件機率的「貝氏定理」。
+為了在數學上嚴密地解開這個問題，我們使用計算條件機率的「[貝氏定理](https://kenji.blog/p/bayes-theorem/)」。
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -111,7 +111,7 @@ $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-終於要應用貝氏定理，來計算門A與門C的事後機率了。
+終於要應用[貝氏定理](https://kenji.blog/p/bayes-theorem/)，來計算門A與門C的事後機率了。
 
 **新車在門A（不換的情況）的機率：**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

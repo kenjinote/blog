@@ -25,9 +25,9 @@ Major companies target mass markets with a huge TAM (Total Addressable Market). 
 
 In contrast, the strength of solo developers lies in having an **"extremely low break-even point."** If you can generate a few hundred thousand yen in profit per month, it is perfectly viable as a business for an individual. This is where the sweet spot of the "Long Tail Theory" exists.
 
-## Zipf's Law and Market Distribution
+## [Zipf's Law](https://kenji.blog/p/zipfs-law/) and Market Distribution
 
-The relationship between the rank of a market and its size often follows Zipf's Law or the Pareto principle. If we let the rank of the market be $k$ and its market size (revenue potential) be $P(k)$, it can be expressed by the following power-law model:
+The relationship between the rank of a market and its size often follows [Zipf's Law](https://kenji.blog/p/zipfs-law/) or the Pareto principle. If we let the rank of the market be $k$ and its market size (revenue potential) be $P(k)$, it can be expressed by the following power-law model:
 
 $$ P(k) \propto \frac{1}{k^\alpha} $$
 

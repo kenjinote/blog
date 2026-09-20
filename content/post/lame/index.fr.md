@@ -8,19 +8,19 @@ categories: ["Mathématiques", "Biographie"]
 tags: ["Gabriel Lamé", "Histoire des mathématiques", "Théorie des nombres", "Élasticité", "Géométrie"]
 ---
 
-## 1. Introduction : Qui était Gabriel Lamé ?
+## 1. Introduction : Qui était [Gabriel Lamé](https://kenji.blog/p/lame/) ?
 
-Gabriel Lamé (22 juillet 1795 – 1er mai 1870) était un éminent mathématicien, physicien et ingénieur français du XIXe siècle. Ses contributions ont couvert un vaste domaine, des mathématiques pures aux mathématiques appliquées, jusqu'au génie civil pratique. Aujourd'hui encore, son nom reste profondément gravé dans les manuels de mathématiques et de physique à travers la **courbe de Lamé** (superellipse), le **théorème de Lamé** dans l'algorithme d'Euclide, et les **coefficients de Lamé** dans la théorie de l'élasticité.
+[Gabriel Lamé](https://kenji.blog/p/lame/) (22 juillet 1795 – 1er mai 1870) était un éminent mathématicien, physicien et ingénieur français du XIXe siècle. Ses contributions ont couvert un vaste domaine, des mathématiques pures aux mathématiques appliquées, jusqu'au génie civil pratique. Aujourd'hui encore, son nom reste profondément gravé dans les manuels de mathématiques et de physique à travers la **courbe de Lamé** (superellipse), le **théorème de Lamé** dans l'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/), et les **coefficients de Lamé** dans la théorie de l'élasticité.
 
 Dans cet article, nous retracerons la trajectoire mouvementée de la vie de Lamé tout en expliquant de manière exhaustive et systématique les réalisations mathématiques et physiques révolutionnaires qu'il a laissées derrière lui. Comprendre sa vie et son processus de réflexion offre une perspective extrêmement précieuse sur la façon dont la science du XIXe siècle a jeté les bases de l'ère moderne.
 
-## 2. Vie et carrière de Gabriel Lamé
+## 2. Vie et carrière de [Gabriel Lamé](https://kenji.blog/p/lame/)
 
 La vie de Lamé était profondément liée à la société européenne turbulente du début du XIXe siècle. Sa carrière ne s'est pas limitée à une tour d'ivoire académique, mais s'est appuyée sur de dures expériences pratiques sur le terrain.
 
 ### 2.1 Naissance et éducation à une époque troublée
 
-Gabriel Lamé est né en 1795 dans la ville de Tours, au centre de la France. C'était au lendemain de la Révolution française, une période où la société tout entière subissait de profondes transformations. Son talent en mathématiques s'est épanoui très tôt, et en 1813, il est entré à la prestigieuse **École polytechnique**. Là, il a étudié aux côtés de nombreux esprits brillants qui allaient plus tard diriger le monde scientifique. Après l'obtention de son diplôme, il a approfondi ses connaissances pratiques en ingénierie à l'**École des mines**.
+[Gabriel Lamé](https://kenji.blog/p/lame/) est né en 1795 dans la ville de Tours, au centre de la France. C'était au lendemain de la Révolution française, une période où la société tout entière subissait de profondes transformations. Son talent en mathématiques s'est épanoui très tôt, et en 1813, il est entré à la prestigieuse **École polytechnique**. Là, il a étudié aux côtés de nombreux esprits brillants qui allaient plus tard diriger le monde scientifique. Après l'obtention de son diplôme, il a approfondi ses connaissances pratiques en ingénierie à l'**École des mines**.
 
 ### 2.2 Travail en Russie : La pratique en tant qu'ingénieur
 
@@ -95,15 +95,15 @@ def calculate_lame_curve(a, b, n, num_points=100):
     return points
 ```
 
-## 4. Contributions à la théorie des nombres : Le théorème de Lamé et l'algorithme d'Euclide
+## 4. Contributions à la théorie des nombres : Le théorème de Lamé et l'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)
 
 En informatique et en théorie des nombres, ce qui a rendu le nom de Lamé le plus célèbre est le **théorème de Lamé**. Il est connu comme l'un des premiers exemples de l'histoire évaluant de manière rigoureuse et mathématique la complexité algorithmique (temps d'exécution) d'un algorithme.
 
 ### 4.1 Aperçu et signification du théorème
 
-L'**algorithme d'Euclide**, transmis depuis la Grèce antique, est un algorithme efficace pour trouver le plus grand commun diviseur (PGCD) de deux entiers naturels. Cependant, jusqu'à Lamé en 1844, personne n'avait prouvé avec précision « à quelle vitesse » cet algorithme se terminait. Le théorème de Lamé énonce ce qui suit :
+L'**algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)**, transmis depuis la Grèce antique, est un algorithme efficace pour trouver le plus grand commun diviseur (PGCD) de deux entiers naturels. Cependant, jusqu'à Lamé en 1844, personne n'avait prouvé avec précision « à quelle vitesse » cet algorithme se terminait. Le théorème de Lamé énonce ce qui suit :
 
-> « Lors de la recherche du plus grand commun diviseur de deux nombres entiers à l'aide de l'algorithme d'Euclide, le nombre de divisions requises (étapes) ne dépasse jamais 5 fois le nombre de chiffres décimaux du plus petit nombre. »
+> « Lors de la recherche du plus grand commun diviseur de deux nombres entiers à l'aide de l'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/), le nombre de divisions requises (étapes) ne dépasse jamais 5 fois le nombre de chiffres décimaux du plus petit nombre. »
 
 Exprimé sous forme de formule, cela donne :
 
@@ -111,7 +111,7 @@ $$ \text{Nombre d'étapes} \le 5 \times \text{Nombre de chiffres du plus petit n
 
 ### 4.2 Lien profond avec la suite de Fibonacci
 
-En prouvant ce théorème, Lamé a découvert que le pire des cas (c'est-à-dire celui nécessitant le plus d'étapes) pour l'algorithme d'Euclide se produit lorsque les entrées sont deux **nombres de Fibonacci** consécutifs. En utilisant le taux de croissance de la suite de Fibonacci et les propriétés du nombre d'or, il a dérivé cette magnifique borne supérieure. Grâce à cette réalisation, Lamé est considéré comme l'un des « pères de la théorie de la complexité » dans l'informatique moderne.
+En prouvant ce théorème, Lamé a découvert que le pire des cas (c'est-à-dire celui nécessitant le plus d'étapes) pour l'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) se produit lorsque les entrées sont deux **nombres de Fibonacci** consécutifs. En utilisant le taux de croissance de la suite de Fibonacci et les propriétés du nombre d'or, il a dérivé cette magnifique borne supérieure. Grâce à cette réalisation, Lamé est considéré comme l'un des « pères de la théorie de la complexité » dans l'informatique moderne.
 
 ## 5. Contributions à la physique : Théorie de l'élasticité et coefficients de Lamé
 
@@ -141,7 +141,7 @@ En particulier, pour résoudre l'**équation de Laplace**, qui décrit les phén
 
 Un épisode dramatique dans la vie de Lamé fut sa tentative de prouver le **dernier théorème de Fermat** en 1847. En mars de cette année-là, Lamé annonça fièrement à l'Académie des sciences qu'il avait « complètement prouvé le dernier théorème de Fermat ». Sa preuve impliquait une approche très innovante et puissante pour l'époque : la factorisation de l'équation à l'aide de nombres complexes cyclotomiques.
 
-Cependant, immédiatement après sa présentation, son collègue, le mathématicien Joseph Liouville, souligna judicieusement que « la preuve repose sur l'hypothèse tacite et non prouvée que "l'unicité de la factorisation en nombres premiers" est également valable dans le domaine des nombres complexes ». Peu après, une lettre du mathématicien allemand Ernst Kummer est arrivée indiquant que « l'unicité de la factorisation en nombres premiers n'est généralement pas valable », rendant la preuve de Lamé effectivement invalide.
+Cependant, immédiatement après sa présentation, son collègue, le mathématicien Joseph Liouville, souligna judicieusement que « la preuve repose sur l'hypothèse tacite et non prouvée que "l'unicité de la factorisation en nombres premiers" est également valable dans le domaine des nombres complexes ». Peu après, une lettre du mathématicien allemand [Ernst Kummer](https://kenji.blog/p/kummer/) est arrivée indiquant que « l'unicité de la factorisation en nombres premiers n'est généralement pas valable », rendant la preuve de Lamé effectivement invalide.
 
 Ce fut un revers majeur pour Lamé, mais cette série de discussions a déclenché la naissance de la théorie des « nombres idéaux » (idéaux) de Kummer, qui a ensuite ouvert l'immense champ mathématique de la théorie algébrique des nombres. Le défi audacieux de Lamé a finalement fait avancer l'histoire des mathématiques de manière significative.
 
@@ -155,6 +155,6 @@ Dans ses dernières années, Lamé a eu le malheur de perdre l'ouïe, ce qui a r
 
 ## 9. Conclusion : Ce que Lamé a laissé à l'ère moderne
 
-En repensant à la vie et aux réalisations de Gabriel Lamé, il est clair qu'il a parfaitement fusionné la « beauté abstraite des mathématiques pures » avec « l'utilité des mathématiques appliquées et de la physique ».
+En repensant à la vie et aux réalisations de [Gabriel Lamé](https://kenji.blog/p/lame/), il est clair qu'il a parfaitement fusionné la « beauté abstraite des mathématiques pures » avec « l'utilité des mathématiques appliquées et de la physique ».
 
 Sur le balcon du premier étage de la tour Eiffel, les noms de 72 grands savants ayant contribué à la science et à la technologie françaises sont gravés, et parmi eux figure fièrement le nom de Lamé (LAMÉ). Les théorèmes, les constantes et les approches innovantes qu'il a laissés derrière lui continuent de vivre aujourd'hui à la pointe de la science et de la technologie, entre les mains des ingénieurs et mathématiciens modernes.

@@ -16,7 +16,7 @@ tags:
 
 ## Einleitung
 
-In der Geschichte der Mathematik ist das 19. Jahrhundert als "Ära der Strenge" bekannt. Der französische Mathematiker **Augustin-Louis Cauchy** (1789-1857) war es, der der Infinitesimalrechnung, die zuvor intuitiv behandelt wurde, ein festes logisches Fundament gab. Sein Name krönt so viele Theoreme und Konzepte, dass jeder, der moderne Mathematik studiert, zwangsläufig auf ihn stößt.
+In der Geschichte der Mathematik ist das 19. Jahrhundert als "Ära der Strenge" bekannt. Der französische Mathematiker **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** (1789-1857) war es, der der Infinitesimalrechnung, die zuvor intuitiv behandelt wurde, ein festes logisches Fundament gab. Sein Name krönt so viele Theoreme und Konzepte, dass jeder, der moderne Mathematik studiert, zwangsläufig auf ihn stößt.
 
 Dieser Artikel beleuchtet das turbulente Leben von Cauchy, einem Giganten der mathematischen Welt, und die brillanten mathematischen Errungenschaften, die er hinterlassen hat.
 
@@ -95,6 +95,6 @@ Seine Forschungsthemen beschränkten sich nicht auf die Analysis, sondern erstre
 
 ## Fazit
 
-Augustin-Louis Cauchy schmiedete die Mathematik, die sich auf Intuition verlassen hatte, durch die Kraft der Logik zu einer strengen akademischen Disziplin. Die Konzepte und Theoreme, die er geschaffen hat, sind überall in der modernen Mathematik tief verwurzelt.
+[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) schmiedete die Mathematik, die sich auf Intuition verlassen hatte, durch die Kraft der Logik zu einer strengen akademischen Disziplin. Die Konzepte und Theoreme, die er geschaffen hat, sind überall in der modernen Mathematik tief verwurzelt.
 
 Obwohl sein Leben nicht glatt verlief, da er das Exil als Märtyrer seiner politischen Überzeugungen wählte, geriet seine Leidenschaft für die Suche nach der Wahrheit nie ins Wanken. Das immense intellektuelle Erbe, das er hinterlassen hat, leitet Mathematiker und Wissenschaftler auf der ganzen Welt bis heute.

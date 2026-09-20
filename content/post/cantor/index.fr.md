@@ -14,17 +14,17 @@ tags:
   - "Histoire des mathématiques"
 ---
 
-# Qui était Georg Cantor ?
+# Qui était [Georg Cantor](https://kenji.blog/p/cantor/) ?
 
-Dans l'histoire des mathématiques, le concept d'« infini » a longtemps été considéré comme un tabou. L'infini était strictement traité comme un « état sans fin (infini potentiel) » et il était jugé dangereux de le traiter comme un « tout achevé (infini actuel) ». Cependant, à la fin du 19ème siècle, un homme a défié ce tabou de front et a fait de l'infini lui-même un sujet de mathématiques. Cet homme était **Georg Cantor**.
+Dans l'histoire des mathématiques, le concept d'« infini » a longtemps été considéré comme un tabou. L'infini était strictement traité comme un « état sans fin (infini potentiel) » et il était jugé dangereux de le traiter comme un « tout achevé (infini actuel) ». Cependant, à la fin du 19ème siècle, un homme a défié ce tabou de front et a fait de l'infini lui-même un sujet de mathématiques. Cet homme était **[Georg Cantor](https://kenji.blog/p/cantor/)**.
 
 Sa création de la « Théorie des ensembles » est devenue le fondement de tous les domaines des mathématiques modernes. Dans cet article, nous examinerons en détail la vie de Cantor et ses étonnantes réalisations mathématiques.
 
 ## Une vie mouvementée
 
-Georg Cantor est né en 1845 à Saint-Pétersbourg, en Russie. Son père était un riche marchand originaire du Danemark et sa mère une musicienne russe. Faisant preuve d'un talent extraordinaire pour les mathématiques dès son plus jeune âge, il s'installe finalement en Allemagne et étudie les mathématiques à l'Université de Berlin.
+[Georg Cantor](https://kenji.blog/p/cantor/) est né en 1845 à Saint-Pétersbourg, en Russie. Son père était un riche marchand originaire du Danemark et sa mère une musicienne russe. Faisant preuve d'un talent extraordinaire pour les mathématiques dès son plus jeune âge, il s'installe finalement en Allemagne et étudie les mathématiques à l'Université de Berlin.
 
-À l'Université de Berlin, il fut guidé par les figures de proue du monde mathématique de l'époque, **Karl Weierstrass** et **Leopold Kronecker**. Kronecker, en particulier, deviendra plus tard le plus grand adversaire de Cantor.
+À l'Université de Berlin, il fut guidé par les figures de proue du monde mathématique de l'époque, **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** et **Leopold Kronecker**. Kronecker, en particulier, deviendra plus tard le plus grand adversaire de Cantor.
 
 ### La quête de l'infini et le conflit avec Kronecker
 
@@ -44,7 +44,7 @@ graph TD
 
 Le fait que sa théorie n'ait pas été comprise et qu'il ait continué à subir les attaques incessantes de son ancien professeur a profondément miné la santé mentale de Cantor. Il a développé une dépression et a multiplié les allers-retours dans les hôpitaux psychiatriques.
 
-Cependant, sa théorie a progressivement été soutenue par les jeunes générations de mathématiciens, tels que **David Hilbert**. Hilbert a fait l'éloge de Cantor avec les plus grands compliments, déclarant : « Nul ne nous chassera du paradis que Cantor a créé pour nous. » Cantor a terminé sa vie dans un hôpital psychiatrique de Halle en 1918, mais après sa mort, la théorie des ensembles a établi une position inébranlable en tant que fondement le plus important des mathématiques.
+Cependant, sa théorie a progressivement été soutenue par les jeunes générations de mathématiciens, tels que **[David Hilbert](https://kenji.blog/p/hilbert/)**. Hilbert a fait l'éloge de Cantor avec les plus grands compliments, déclarant : « Nul ne nous chassera du paradis que Cantor a créé pour nous. » Cantor a terminé sa vie dans un hôpital psychiatrique de Halle en 1918, mais après sa mort, la théorie des ensembles a établi une position inébranlable en tant que fondement le plus important des mathématiques.
 
 ## Réalisations mathématiques : Compter l'infini
 
@@ -113,8 +113,8 @@ graph TD
 
 Existe-t-il une cardinalité intermédiaire entre la cardinalité des entiers naturels $\aleph_0$ et la cardinalité des nombres réels $\mathfrak{c}$ ? Cantor a émis l'hypothèse qu'« aucune telle cardinalité intermédiaire n'existe ». C'est l' **Hypothèse du continu (HC)**.
 
-Cantor a passé une grande partie de ses dernières années à essayer de prouver cette hypothèse, mais il n'a finalement pas pu la résoudre. Plus tard, grâce aux recherches de Kurt Gödel et Paul Cohen, il a été découvert que l'hypothèse du continu est une proposition indépendante qui ne peut « ni être prouvée ni être réfutée » à partir des axiomes standard de la théorie des ensembles (axiomes ZFC), donnant une fois de plus un grand choc à la communauté mathématique.
+Cantor a passé une grande partie de ses dernières années à essayer de prouver cette hypothèse, mais il n'a finalement pas pu la résoudre. Plus tard, grâce aux recherches de [Kurt Gödel](https://kenji.blog/p/godel/) et Paul Cohen, il a été découvert que l'hypothèse du continu est une proposition indépendante qui ne peut « ni être prouvée ni être réfutée » à partir des axiomes standard de la théorie des ensembles (axiomes ZFC), donnant une fois de plus un grand choc à la communauté mathématique.
 
 ## Conclusion
 
-Georg Cantor a montré que la raison humaine peut atteindre le domaine divin de l'« infini ». Sa vie tragique raconte l'histoire de la solitude d'un génie qui était beaucoup trop en avance sur son temps, mais le vaste « Paradis de Cantor » qu'il a sculpté continue de fasciner les mathématiciens du monde entier aujourd'hui. Il n'est pas exagéré de dire que les mathématiques modernes reposent sur les fondements de sa quête désespérée.
+[Georg Cantor](https://kenji.blog/p/cantor/) a montré que la raison humaine peut atteindre le domaine divin de l'« infini ». Sa vie tragique raconte l'histoire de la solitude d'un génie qui était beaucoup trop en avance sur son temps, mais le vaste « Paradis de Cantor » qu'il a sculpté continue de fasciner les mathématiciens du monde entier aujourd'hui. Il n'est pas exagéré de dire que les mathématiques modernes reposent sur les fondements de sa quête désespérée.

@@ -63,7 +63,7 @@ Masalah mencari titik rasional telah diteliti sebagai masalah utama dalam persam
 
 ## 3. Teorema Mordell dan Rank (Pangkat)
 
-Pada tahun 1922, Louis Mordell membuktikan sebuah teorema definitif mengenai struktur dari grup titik rasional $E(\mathbb{Q})$. Teorema ini kemudian diperluas ke lapangan aljabar dan varietas abelian yang lebih umum oleh André Weil, dan dikenal sebagai Teorema Mordell-Weil.
+Pada tahun 1922, [Louis Mordell](https://kenji.blog/p/mordell/) membuktikan sebuah teorema definitif mengenai struktur dari grup titik rasional $E(\mathbb{Q})$. Teorema ini kemudian diperluas ke lapangan aljabar dan varietas abelian yang lebih umum oleh [André Weil](https://kenji.blog/p/weil/), dan dikenal sebagai Teorema Mordell-Weil.
 
 ### 3.1. Teorema Mordell (Mordell's Theorem)
 
@@ -134,7 +134,7 @@ flowchart LR
 
 Hal yang sangat penting dalam merumuskan Konjektur BSD adalah pertanyaan: apakah $L(E, s)$ dapat diperluas secara analitik (analytic continuation) ke seluruh bidang kompleks? Secara khusus, seperti yang akan kita bahas nanti, kita ingin mengetahui perilakunya di $s=1$, tetapi rumus definisinya tidak konvergen pada $s=1$.
 
-Masalah ini diselesaikan oleh **Teorema Modularitas** (sebelumnya Konjektur Taniyama-Shimura) yang dibuktikan sepenuhnya pada tahun 2001. Berkat pencapaian besar dari Andrew Wiles, Richard Taylor, Christophe Breuil, Brian Conrad, dan Fred Diamond, ditunjukkan bahwa "semua kurva eliptik atas lapangan rasional adalah modular".
+Masalah ini diselesaikan oleh **Teorema Modularitas** (sebelumnya Konjektur Taniyama-Shimura) yang dibuktikan sepenuhnya pada tahun 2001. Berkat pencapaian besar dari [Andrew Wiles](https://kenji.blog/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad, dan Fred Diamond, ditunjukkan bahwa "semua kurva eliptik atas lapangan rasional adalah modular".
 
 Modular berarti bahwa $L(E, s)$ sepenuhnya setara dengan fungsi L $L(f, s)$ dari sebuah bentuk modular $f$ dengan bobot 2. Melalui teori Hecke, fungsi L dari bentuk modular dapat diperluas secara analitik ke seluruh bidang kompleks dan memenuhi persamaan fungsional berikut:
 

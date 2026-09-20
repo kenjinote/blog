@@ -10,11 +10,11 @@ tags: ["Kunihiko Kodaira", "Fields-Medaille", "Komplexe Geometrie"]
 
 ## 1. Einleitung
 
-Der große japanische Mathematiker **Kunihiko Kodaira** (1915–1997) war Japans erster Fields-Medaillen-Gewinner und leistete im 20. Jahrhundert immense Beiträge zur algebraischen Geometrie und zur Theorie komplexer Mannigfaltigkeiten. Sein Werk beeinflusste nicht nur die moderne Mathematik tiefgreifend, sondern auch die theoretische Physik, wie die Stringtheorie. In diesem Artikel erkunden wir das Leben von Kodaira und seine mathematisch intuitive Welt.
+Der große japanische Mathematiker **[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/)** (1915–1997) war Japans erster Fields-Medaillen-Gewinner und leistete im 20. Jahrhundert immense Beiträge zur algebraischen Geometrie und zur Theorie komplexer Mannigfaltigkeiten. Sein Werk beeinflusste nicht nur die moderne Mathematik tiefgreifend, sondern auch die theoretische Physik, wie die Stringtheorie. In diesem Artikel erkunden wir das Leben von Kodaira und seine mathematisch intuitive Welt.
 
 ## 2. Lebenslauf
 
-Kunihiko Kodaira wurde 1915 in Tokio geboren. Er spielte schon in jungen Jahren gerne Klavier, und man sagt, dass seine tiefe Liebe zur Musik später sein mathematisches Denken beeinflusste. Sein Zitat "Mathematik zu verstehen ist wie Musik zu hören und zu spüren, dass sie schön ist" ist berühmt.
+[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) wurde 1915 in Tokio geboren. Er spielte schon in jungen Jahren gerne Klavier, und man sagt, dass seine tiefe Liebe zur Musik später sein mathematisches Denken beeinflusste. Sein Zitat "Mathematik zu verstehen ist wie Musik zu hören und zu spüren, dass sie schön ist" ist berühmt.
 
 ```mermaid
 flowchart TD
@@ -74,4 +74,4 @@ Nach seiner Rückkehr nach Japan im Jahr 1967 lehrte er an der Universität Toki
 
 ## 5. Fazit
 
-Die von Kunihiko Kodaira hinterlassene Mathematik gleicht einer großen Symphonie, in der Analysis, Algebra und Geometrie wunderbar harmonieren. Sein intuitiver Ansatz und seine tiefen Einsichten faszinieren auch heute noch viele Mathematiker.
+Die von [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) hinterlassene Mathematik gleicht einer großen Symphonie, in der Analysis, Algebra und Geometrie wunderbar harmonieren. Sein intuitiver Ansatz und seine tiefen Einsichten faszinieren auch heute noch viele Mathematiker.

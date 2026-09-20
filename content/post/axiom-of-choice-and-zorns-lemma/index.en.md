@@ -8,7 +8,7 @@ categories: ["mathematics", "set-theory"]
 tags: ["Axiom of Choice", "Zorn's Lemma", "ZFC Axiom System", "Foundations of Mathematics", "Mermaid", "KaTeX"]
 ---
 
-# The Axiom of Choice and Zorn's Lemma: The Concept of "Choice" That Shook the Foundations of Mathematics
+# [The Axiom of Choice and Zorn's Lemma](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/): The Concept of "Choice" That Shook the Foundations of Mathematics
 
 In the history of mathematics, no axiom has been as controversial—and yet as indispensable to modern mathematics—as the **Axiom of Choice** (AC). In this article, we take a deep dive into the Axiom of Choice and its equivalent statement, **Zorn's Lemma**, from their foundations. We provide a comprehensive explanation covering intuitive understanding, rigorous mathematical formalization, historical context, and applications across various fields of modern mathematics.
 
@@ -73,7 +73,7 @@ graph TD
 
 ## 3. The Network of Equivalences: Axiom of Choice, Zorn's Lemma, and the Well-Ordering Theorem
 
-The Axiom of Choice and Zorn's Lemma appear to be entirely different claims, but under the ZF axiom system they are equivalent (if one is true, the other is also true). In this network of equivalence proofs, the **Well-Ordering Theorem**, proved by Ernst Zermelo, plays a crucial role.
+[The Axiom of Choice and Zorn's Lemma](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) appear to be entirely different claims, but under the ZF axiom system they are equivalent (if one is true, the other is also true). In this network of equivalence proofs, the **Well-Ordering Theorem**, proved by Ernst Zermelo, plays a crucial role.
 
 ### 3.1. What Is the Well-Ordering Theorem?
 
@@ -130,7 +130,7 @@ While the Axiom of Choice grants tremendous power to mathematics, it also leads 
 
 ### 5.1. The Content of the Paradox
 
-> A solid ball in three-dimensional Euclidean space can be partitioned into a finite number of pieces (for example, 5 fragments). By rearranging these pieces using only rotations and translations (rigid motions) and reassembling them, one can create **two** balls of exactly the same size as the original.
+> A solid ball in three-dimensional [Euclide](https://kenji.blog/p/euclid/)an space can be partitioned into a finite number of pieces (for example, 5 fragments). By rearranging these pieces using only rotations and translations (rigid motions) and reassembling them, one can create **two** balls of exactly the same size as the original.
 
 $$
 1 \text{ Sphere} \xrightarrow{\text{Cut into } 5 \text{ pieces, Rotate \& Translate}} 2 \text{ Spheres of same size}
@@ -156,6 +156,6 @@ The reason is straightforward. If the Axiom of Choice is rejected (adopting only
 
 ## 7. Conclusion: A Bridge Over the Abyss of Infinity
 
-The Axiom of Choice and Zorn's Lemma demonstrate how the operation of "choice"—so obvious in finite domains that it goes unnoticed—gives rise to profoundly deep, terrifying, and beautiful structures the moment one steps into the realm of infinity.
+[The Axiom of Choice and Zorn's Lemma](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) demonstrate how the operation of "choice"—so obvious in finite domains that it goes unnoticed—gives rise to profoundly deep, terrifying, and beautiful structures the moment one steps into the realm of infinity.
 
 Zorn's Lemma, as a powerful magic wand guaranteeing the existence of "maximal objects" at the end of infinite chains, has driven the development of algebra and analysis. At the foundation of the mathematical theorems we casually use every day lies this profound philosophy called the "Axiom of Choice." The foundations of mathematics are not merely logical puzzles, but a grand drama of how human reason confronts the concept of infinity.

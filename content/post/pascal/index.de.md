@@ -11,19 +11,19 @@ tags: ["Pascal", "Wahrscheinlichkeitstheorie", "Projektive Geometrie", "Satz von
 ## 1. Einleitung: Das Genie, das in nur 39 Lebensjahren die Welt veränderte
 
 „Der Mensch ist nur ein Schilfrohr, das schwächste der Natur; aber er ist ein denkendes Schilfrohr.“
-Blaise Pascal (19. Juni 1623 - 19. August 1662), der dieses berühmte Zitat hinterließ, ist ein Gigant des Intellekts, der das Frankreich des 17. Jahrhunderts repräsentiert. Als Mathematiker, Physiker, Philosoph und christlicher Theologe hinterließ er monumentale Errungenschaften, die sich in verschiedenen Bereichen tief in die Menschheitsgeschichte eingeprägt haben.
+[Blaise Pascal](https://kenji.blog/p/pascal/) (19. Juni 1623 - 19. August 1662), der dieses berühmte Zitat hinterließ, ist ein Gigant des Intellekts, der das Frankreich des 17. Jahrhunderts repräsentiert. Als Mathematiker, Physiker, Philosoph und christlicher Theologe hinterließ er monumentale Errungenschaften, die sich in verschiedenen Bereichen tief in die Menschheitsgeschichte eingeprägt haben.
 
 Sein Leben war ein ständiger Kampf gegen Krankheiten, und er verstarb im frühen Alter von 39 Jahren. Dennoch legte er in diesem kurzen Leben die Grundlagen der projektiven Geometrie, erfand die erste praktische mechanische Rechenmaschine der Welt, war Pionier auf dem neuen mathematischen Gebiet der Wahrscheinlichkeitstheorie und etablierte grundlegende Prinzipien der Physik in Bezug auf Strömungsmechanik und Luftdruck. Dieser Artikel beschreibt das Leben dieses früh verstorbenen Genies, wie er zu diesen bahnbrechenden Entdeckungen gelangte und welch tiefgreifenden Einfluss er auf nachfolgende Generationen hatte.
 
 ## 2. Geburt eines Wunderkindes und ein einzigartiges Bildungsumfeld (1623 - 1639)
 
 ### 2.1. Geburt in der Auvergne und der Tod seiner Mutter
-Blaise Pascal wurde 1623 in Clermont-Ferrand, Auvergne, im südlichen Zentrum Frankreichs geboren. Sein Vater, Étienne Pascal, war eine prominente Persönlichkeit, die als Präsident des örtlichen Steuergerichtshofs fungierte und zudem ein hervorragender Mathematiker war. Die Familie Pascal befand sich in einem höchst privilegierten intellektuellen Umfeld, doch als Blaise erst drei Jahre alt war, verstarb seine Mutter Antoinette. Sein Vater Étienne beschloss, nicht wieder zu heiraten, und widmete sich ganz der Ausbildung seiner drei Kinder: Blaise, seiner älteren Schwester Gilberte und seiner jüngeren Schwester Jacqueline.
+[Blaise Pascal](https://kenji.blog/p/pascal/) wurde 1623 in Clermont-Ferrand, Auvergne, im südlichen Zentrum Frankreichs geboren. Sein Vater, Étienne Pascal, war eine prominente Persönlichkeit, die als Präsident des örtlichen Steuergerichtshofs fungierte und zudem ein hervorragender Mathematiker war. Die Familie Pascal befand sich in einem höchst privilegierten intellektuellen Umfeld, doch als Blaise erst drei Jahre alt war, verstarb seine Mutter Antoinette. Sein Vater Étienne beschloss, nicht wieder zu heiraten, und widmete sich ganz der Ausbildung seiner drei Kinder: Blaise, seiner älteren Schwester Gilberte und seiner jüngeren Schwester Jacqueline.
 
 ### 2.2. Umzug nach Paris und Étiennes Bildungspolitik
 Um seinen Kindern die bestmögliche Ausbildung zu bieten, zog Étienne 1631 mit der Familie nach Paris. Unzufrieden mit der damaligen Schulbildung, entschied sich Étienne, selbst Privatlehrer für seine Kinder zu werden. Seine Bildungspolitik war sehr eigenwillig: „Lehre keine Mathematik, die ein allzu abstraktes Fach ist, bevor die Vernunft des Kindes ausreichend entwickelt ist.“ Er räumte Sprachen und Geschichte Vorrang ein und verbannte sämtliche Mathematikbücher aus dem Haus.
 
-Dieses „Verbot“ regte die Neugier des jungen Blaise jedoch paradoxerweise intensiv an. Im Alter von 12 Jahren begann Blaise, die Geometrie während seiner Spielzeit auf eigene Faust zu erkunden. Indem er mit Kohle Figuren auf den Boden zeichnete, bewies er unabhängig die 32. Proposition in Euklids *Elementen*: „Die Summe der Innenwinkel eines Dreiecks ist gleich zwei rechten Winkeln (180 Grad).“ Als sein Vater diesen überwältigenden Beweis an Talent miterlebte, änderte er seine Politik, erlaubte ihm, Mathematik zu studieren, und begann, ihn zu den Versammlungen der größten Intellektuellen Europas mitzunehmen, die von Pater Mersenne (dem Vorläufer der französischen Akademie der Wissenschaften) ausgerichtet wurden.
+Dieses „Verbot“ regte die Neugier des jungen Blaise jedoch paradoxerweise intensiv an. Im Alter von 12 Jahren begann Blaise, die Geometrie während seiner Spielzeit auf eigene Faust zu erkunden. Indem er mit Kohle Figuren auf den Boden zeichnete, bewies er unabhängig die 32. Proposition in [Euklid](https://kenji.blog/p/euclid/)s *Elementen*: „Die Summe der Innenwinkel eines Dreiecks ist gleich zwei rechten Winkeln (180 Grad).“ Als sein Vater diesen überwältigenden Beweis an Talent miterlebte, änderte er seine Politik, erlaubte ihm, Mathematik zu studieren, und begann, ihn zu den Versammlungen der größten Intellektuellen Europas mitzunehmen, die von Pater Mersenne (dem Vorläufer der französischen Akademie der Wissenschaften) ausgerichtet wurden.
 
 ## 3. Innovative Errungenschaften in der Mathematik
 
@@ -66,7 +66,7 @@ graph TD
     Q -.->|"Pascalsche Gerade"| R
 ```
 
-Diese Entdeckung sandte eine massive Schockwelle durch die damalige mathematische Gemeinschaft. Es gibt eine Anekdote, dass selbst der große Mathematiker René Descartes sich weigerte zu glauben, dass ein 16-jähriger Junge einen derart fortgeschrittenen Beweis erbracht hatte, und vermutete, dass er „vom Vater geschrieben worden sein müsse“. Pascal leitete über 400 Korollare aus diesem Satz ab und brachte die Geometrie seiner Zeit maßgeblich voran.
+Diese Entdeckung sandte eine massive Schockwelle durch die damalige mathematische Gemeinschaft. Es gibt eine Anekdote, dass selbst der große Mathematiker [René Descartes](https://kenji.blog/p/descartes/) sich weigerte zu glauben, dass ein 16-jähriger Junge einen derart fortgeschrittenen Beweis erbracht hatte, und vermutete, dass er „vom Vater geschrieben worden sein müsse“. Pascal leitete über 400 Korollare aus diesem Satz ab und brachte die Geometrie seiner Zeit maßgeblich voran.
 
 ### 3.2. Die erste mechanische Rechenmaschine der Welt: Die „Pascaline“
 
@@ -93,7 +93,7 @@ Eine von Pascals entscheidendsten Rollen in der Geschichte der Mathematik war di
 **Das Teilungsproblem**:
 > Zwei gleich starke Spieler spielen ein Spiel, bei dem der Erste, der eine bestimmte Anzahl von Siegen (z. B. 3 Siege) erreicht, den gesamten Preistopf gewinnt. Das Spiel muss jedoch abgebrochen werden, wenn ein Spieler 2 Siege und der andere 1 Sieg hat. Wie sollte der Preistopf zu diesem Zeitpunkt am fairsten aufgeteilt werden?
 
-Um dieses schwierige Problem anzugehen, schrieb Pascal Briefe an Pierre de Fermat, ein weiteres in Toulouse lebendes Mathematikgenie. Die beiden gelangten durch völlig unterschiedliche Ansätze zur Lösung.
+Um dieses schwierige Problem anzugehen, schrieb Pascal Briefe an [Pierre de Fermat](https://kenji.blog/p/fermat/), ein weiteres in Toulouse lebendes Mathematikgenie. Die beiden gelangten durch völlig unterschiedliche Ansätze zur Lösung.
 
 - **Fermats Ansatz**: Eine kombinatorische Methode, die alle möglichen zukünftigen Szenarien (Baumdiagramm) auflistet und die Wahrscheinlichkeit des Eintretens jedes einzelnen berechnet, um das Verteilungsverhältnis zu bestimmen.
 - **Pascals Ansatz**: Eine rekursive Methode, die den „Erwartungswert“ (Expected value) des Spielens des nächsten einzelnen Spiels ausgehend vom aktuellen Zustand berechnet und ihn rekursiv löst.
@@ -148,7 +148,7 @@ Nach dieser Erfahrung zog er sich aus der säkularen wissenschaftlichen Forschun
 
 Obwohl er sich der Religion widmete, kehrte Pascal nur ein einziges Mal zur mathematischen Forschung zurück. 1658 begann Pascal, der an starken Zahnschmerzen litt, über mathematische Probleme im Zusammenhang mit der „Zykloide (der von einem Punkt auf dem Umfang eines Kreises gezeichneten Bahn, während dieser auf einer geraden Linie abrollt)“ nachzudenken, um sich abzulenken. Mysteriöserweise verschwanden die Schmerzen, was Pascal als göttliche Offenbarung auffasste. In nur acht Tagen entdeckte er innovative Methoden, um den Flächeninhalt, den Schwerpunkt und das Volumen von Rotationskörpern der Zykloide zu ermitteln.
 
-Er kündigte unter dem Pseudonym Amos Dettonville ein Preisausschreiben zu diesem Problem an und veröffentlichte selbst perfekte Lösungen. Die von ihm hierbei angewandte „Methode der Indivisiblen“ diente später als wesentliche Brücke zur Entdeckung der Infinitesimalrechnung durch Isaac Newton und Gottfried Wilhelm Leibniz.
+Er kündigte unter dem Pseudonym Amos Dettonville ein Preisausschreiben zu diesem Problem an und veröffentlichte selbst perfekte Lösungen. Die von ihm hierbei angewandte „Methode der Indivisiblen“ diente später als wesentliche Brücke zur Entdeckung der Infinitesimalrechnung durch [Isaac Newton](https://kenji.blog/p/newton/) und Gottfried Wilhelm Leibniz.
 
 ### 5.3. Die Pascalsche Wette und die Entscheidungstheorie
 
@@ -179,7 +179,7 @@ Pascal stellte sich der Tatsache, dass der menschliche Körper im Vergleich zur 
 
 ## 6. Fazit: Pascals Vermächtnis lebt heute weiter
 
-Die 39 Jahre, die Blaise Pascal durchlebte, waren insgesamt viel zu kurz und geprägt von den Qualen seiner Krankheit. Seine geschärfte Intuition und sein tiefgründiges Denken übersprangen jedoch mühelos die Grenzen von Mathematik, Physik, Ingenieurwesen und Philosophie und erweiterten den Horizont des menschlichen Wissens enorm.
+Die 39 Jahre, die [Blaise Pascal](https://kenji.blog/p/pascal/) durchlebte, waren insgesamt viel zu kurz und geprägt von den Qualen seiner Krankheit. Seine geschärfte Intuition und sein tiefgründiges Denken übersprangen jedoch mühelos die Grenzen von Mathematik, Physik, Ingenieurwesen und Philosophie und erweiterten den Horizont des menschlichen Wissens enorm.
 
 Die Samen, die er säte, verleihen den Luftdruckdaten (Hektopascal), die wir täglich in Wettervorhersagen verwenden, Automobilbremsen (Pascalsches Prinzip), der Risikobewertung bei Versicherungen und Finanzen (Wahrscheinlichkeitstheorie) und sogar den Grundlagen der Computerarchitektur selbst Leben. Die 1970 von Niklaus Wirth entwickelte Programmiersprache „Pascal“ wurde ihm zu Ehren benannt, dem Schöpfer der ersten Rechenmaschine der Welt.
 

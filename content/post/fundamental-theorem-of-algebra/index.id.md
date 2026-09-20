@@ -21,19 +21,19 @@ Untuk memecahkan masalah ini, angka hipotetis yang kuadratnya adalah $-1$ diperk
 
 Di sini, muncul pertanyaan besar: "Jika kita memperluas sistem bilangan ke bilangan kompleks, dapatkah kita mengatakan bahwa setiap persamaan akan selalu memiliki solusi?" Atau, "Akankah kita perlu memperkenalkan jenis bilangan baru lainnya?"
 
-Matematika memberikan jawaban yang sangat jelas dan indah untuk pertanyaan ini. Itulah pokok bahasan artikel ini: **Teorema Fundamental Aljabar**. Teorema ini menegaskan bahwa "sebarang polinomial berderajat $n$ dengan koefisien kompleks selalu memiliki akar (solusi) dalam bilangan kompleks". Dengan kata lain, di dalam lautan bilangan kompleks yang luas, solusi dari persamaan apa pun selalu ada, menjamin bahwa tidak perlu lagi menemukan bilangan baru.
+Matematika memberikan jawaban yang sangat jelas dan indah untuk pertanyaan ini. Itulah pokok bahasan artikel ini: **[Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/)**. Teorema ini menegaskan bahwa "sebarang polinomial berderajat $n$ dengan koefisien kompleks selalu memiliki akar (solusi) dalam bilangan kompleks". Dengan kata lain, di dalam lautan bilangan kompleks yang luas, solusi dari persamaan apa pun selalu ada, menjamin bahwa tidak perlu lagi menemukan bilangan baru.
 
-Dalam artikel ini, kita akan menjelaskan **Teorema Fundamental Aljabar** ini secara terperinci, mulai dari latar belakang sejarahnya, beralih ke pendekatan intuitif berdasarkan topologi, dan akhirnya menyajikan bukti yang ketat dan indah menggunakan analisis kompleks.
+Dalam artikel ini, kita akan menjelaskan **[Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/)** ini secara terperinci, mulai dari latar belakang sejarahnya, beralih ke pendekatan intuitif berdasarkan topologi, dan akhirnya menyajikan bukti yang ketat dan indah menggunakan analisis kompleks.
 
-## Latar Belakang Sejarah Teorema Fundamental Aljabar
+## Latar Belakang Sejarah [Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/)
 
-**Teorema Fundamental Aljabar** tidak dibuktikan dalam semalam. Banyak ahli matematika hebat berjuang untuk mencapai bukti yang lengkap, tidak pernah meragukan kebenaran teorema tersebut.
+**[Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/)** tidak dibuktikan dalam semalam. Banyak ahli matematika hebat berjuang untuk mencapai bukti yang lengkap, tidak pernah meragukan kebenaran teorema tersebut.
 
-Pada abad ke-17, ahli matematika seperti René Descartes dan Albert Girard sudah mengetahui secara empiris bahwa "persamaan derajat $n$ harus memiliki $n$ akar". Namun, dalam kerangka matematika pada waktu itu, tidak ada cara yang ketat untuk membuktikannya.
+Pada abad ke-17, ahli matematika seperti [René Descartes](https://kenji.blog/p/descartes/) dan Albert Girard sudah mengetahui secara empiris bahwa "persamaan derajat $n$ harus memiliki $n$ akar". Namun, dalam kerangka matematika pada waktu itu, tidak ada cara yang ketat untuk membuktikannya.
 
-Memasuki abad ke-18, raksasa matematika seperti Jean le Rond d'Alembert dan Leonhard Euler mencoba pembuktiannya. D'Alembert menerbitkan bukti pada tahun 1746, dan teorema itu terkadang disebut "teorema d'Alembert" di Prancis; namun, menurut standar modern, buktinya kurang memiliki keketatan topologi di bidang-bidang tertentu. Euler juga mencoba untuk menunjukkan bahwa sebarang polinomial dengan koefisien real dapat difaktorkan menjadi produk dari polinomial linear dan kuadrat, tetapi meninggalkan celah logika.
+Memasuki abad ke-18, raksasa matematika seperti Jean le Rond d'Alembert dan [Leonhard Euler](https://kenji.blog/p/euler/) mencoba pembuktiannya. D'Alembert menerbitkan bukti pada tahun 1746, dan teorema itu terkadang disebut "teorema d'Alembert" di Prancis; namun, menurut standar modern, buktinya kurang memiliki keketatan topologi di bidang-bidang tertentu. Euler juga mencoba untuk menunjukkan bahwa sebarang polinomial dengan koefisien real dapat difaktorkan menjadi produk dari polinomial linear dan kuadrat, tetapi meninggalkan celah logika.
 
-Bukti pertama yang pada dasarnya lengkap dari teorema yang tak tertembus ini diberikan oleh Carl Friedrich Gauss. Dalam disertasi doktoralnya tahun 1799, ia menunjukkan kelemahan dalam bukti-bukti para ahli matematika sebelumnya dan menyajikan bukti yang didasarkan pada intuisi geometris. Gauss memberikan empat bukti berbeda untuk teorema ini sepanjang hidupnya, yang menunjukkan betapa pentingnya ia melampirkan hal itu.
+Bukti pertama yang pada dasarnya lengkap dari teorema yang tak tertembus ini diberikan oleh [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). Dalam disertasi doktoralnya tahun 1799, ia menunjukkan kelemahan dalam bukti-bukti para ahli matematika sebelumnya dan menyajikan bukti yang didasarkan pada intuisi geometris. Gauss memberikan empat bukti berbeda untuk teorema ini sepanjang hidupnya, yang menunjukkan betapa pentingnya ia melampirkan hal itu.
 
 Bukti yang paling standar dan elegan saat ini dianggap sebagai bukti yang didasarkan pada teori analisis kompleks, yang dibangun oleh ahli matematika Prancis Joseph Liouville dan lainnya. Pada paruh kedua artikel ini, kita akan memperkenalkan bukti yang menggunakan teorema Liouville.
 
@@ -41,7 +41,7 @@ Bukti yang paling standar dan elegan saat ini dianggap sebagai bukti yang didasa
 
 Pertama-tama, mari kita jelaskan penegasan teorema dalam istilah yang tepat secara matematis.
 
-**Teorema (Teorema Fundamental Aljabar)**
+**Teorema ([Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/))**
 Untuk setiap bilangan asli $n \ge 1$ dan koefisien kompleks $a_0, a_1, \dots, a_n$ (di mana $a_n \neq 0$), polinomial $P(z)$ didefinisikan sebagai berikut:
 
 $$
@@ -95,9 +95,9 @@ Di sini, "terbatas" berarti bahwa untuk semua bilangan kompleks $z$, nilai absol
 
 Dalam dunia bilangan real, suatu fungsi seperti $f(x) = \sin(x)$ dapat dideiferensiasikan di seluruh garis bilangan dan dibatasi oleh $-1 \le \sin(x) \le 1$. Fungsi ini bukanlah fungsi konstan. Namun, teorema Liouville menegaskan bahwa ini tidak akan pernah terjadi di dunia kompleks. Jika sebuah fungsi bersifat holomorfik di seluruh bidang kompleks dan nilainya tidak menyimpang menuju ketakterhinggaan, fungsi tersebut hanyalah sebuah konstanta datar.
 
-## Bukti Ketat Teorema Fundamental Aljabar
+## Bukti Ketat [Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/)
 
-Sekarang mari kita buktikan Teorema Fundamental Aljabar dengan menggunakan teorema Liouville. Anda akan kagum dengan kecemerlangan bukti ini. Di sini, kita menggunakan pembuktian dengan kontradiksi.
+Sekarang mari kita buktikan [Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/) dengan menggunakan teorema Liouville. Anda akan kagum dengan kecemerlangan bukti ini. Di sini, kita menggunakan pembuktian dengan kontradiksi.
 
 **Bukti**
 
@@ -152,15 +152,15 @@ Jadi, berdasarkan kontradiksi, terbukti bahwa $P(z) = 0$ memiliki setidaknya sat
 
 ## Akibat Teorema: Faktorisasi ke dalam Faktor Linear
 
-Teorema Fundamental Aljabar menjamin keberadaan "setidaknya satu solusi". Dengan menggabungkan fakta ini dengan **Teorema Faktor** untuk pembagian polinomial, kita dapat membuktikan bahwa polinomial dapat difaktorkan sepenuhnya ke dalam produk bentuk linear.
+[Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/) menjamin keberadaan "setidaknya satu solusi". Dengan menggabungkan fakta ini dengan **Teorema Faktor** untuk pembagian polinomial, kita dapat membuktikan bahwa polinomial dapat difaktorkan sepenuhnya ke dalam produk bentuk linear.
 
-Mengingat polinomial $P_n(z)$ derajat $n$, Teorema Fundamental Aljabar menyatakan bahwa terdapat solusi $\alpha_1$ sedemikian rupa sehingga $P_n(\alpha_1) = 0$. Menurut Teorema Faktor, $P_n(z)$ memiliki $(z - \alpha_1)$ sebagai sebuah faktor. Yaitu, dapat difaktorkan sebagai berikut:
+Mengingat polinomial $P_n(z)$ derajat $n$, [Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/) menyatakan bahwa terdapat solusi $\alpha_1$ sedemikian rupa sehingga $P_n(\alpha_1) = 0$. Menurut Teorema Faktor, $P_n(z)$ memiliki $(z - \alpha_1)$ sebagai sebuah faktor. Yaitu, dapat difaktorkan sebagai berikut:
 
 $$
 P_n(z) = (z - \alpha_1) P_{n-1}(z)
 $$
 
-Di sini, $P_{n-1}(z)$ adalah polinomial berderajat $n-1$. Jika $n-1 \ge 1$, kita dapat menerapkan Teorema Fundamental Aljabar lagi untuk menemukan solusi $\alpha_2$ dari $P_{n-1}(z)$. Dengan mengulangi ini $n$ kali, kita dapat memfaktorkannya sepenuhnya sebagai berikut:
+Di sini, $P_{n-1}(z)$ adalah polinomial berderajat $n-1$. Jika $n-1 \ge 1$, kita dapat menerapkan [Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/) lagi untuk menemukan solusi $\alpha_2$ dari $P_{n-1}(z)$. Dengan mengulangi ini $n$ kali, kita dapat memfaktorkannya sepenuhnya sebagai berikut:
 
 $$
 P_n(z) = a_n (z - \alpha_1)(z - \alpha_2) \dots (z - \alpha_n)
@@ -172,8 +172,8 @@ Lebih dari itu, untuk polinomial di mana semua koefisiennya berupa bilangan real
 
 ## Kesimpulan
 
-Dalam artikel ini, kita telah melihat secara rinci pada Teorema Fundamental Aljabar, mencakup latar belakang sejarahnya, intuisi topologi, dan bukti analitis kompleksnya yang menggunakan teorema Liouville.
+Dalam artikel ini, kita telah melihat secara rinci pada [Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/), mencakup latar belakang sejarahnya, intuisi topologi, dan bukti analitis kompleksnya yang menggunakan teorema Liouville.
 
 Sepintas, ini adalah teorema tentang persamaan aljabar, tetapi fakta bahwa buktinya yang paling elegan meminjam kekuatan analisis (kalkulus) dan topologi menunjukkan kedalaman matematika dan keindahan bagaimana berbagai bidang saling terkait erat.
 
-Pencarian panjang umat manusia untuk menemukan akar-akar persamaan memperoleh panggung bidang kompleks yang luas melalui diperkenalkannya bilangan-bilangan imajiner baru, dan kelengkapan panggung ini dibuktikan oleh Teorema Fundamental Aljabar. Teorema ini menjadi kunci yang membuka pintu-pintu cemerlang yang mengarah pada teori Galois dan geometri aljabar, yang menjadi landasan matematika modern.
+Pencarian panjang umat manusia untuk menemukan akar-akar persamaan memperoleh panggung bidang kompleks yang luas melalui diperkenalkannya bilangan-bilangan imajiner baru, dan kelengkapan panggung ini dibuktikan oleh [Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/). Teorema ini menjadi kunci yang membuka pintu-pintu cemerlang yang mengarah pada teori Galois dan geometri aljabar, yang menjadi landasan matematika modern.

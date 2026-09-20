@@ -60,7 +60,7 @@ $$ B' = B U $$
 SVPは、格子理論において最も古典的で有名な問題です。
 
 **定義（SVP）:**
-任意の格子基底 $B$ が与えられたとき、その格子 $\mathcal{L}(B)$ に属する非ゼロベクトルの中で、ユークリッドノルム（長さ）が最小となるベクトル $\mathbf{v}$ を見つけよ。
+任意の格子基底 $B$ が与えられたとき、その格子 $\mathcal{L}(B)$ に属する非ゼロベクトルの中で、[ユークリッド](https://kenji.blog/p/euclid/)ノルム（長さ）が最小となるベクトル $\mathbf{v}$ を見つけよ。
 
 数式で表すと、$\min_{\mathbf{v} \in \mathcal{L}(B) \setminus \{\mathbf{0}\}} \| \mathbf{v} \|$ となる $\mathbf{v}$ を求める問題です。この最小の長さを $\lambda_1(\mathcal{L})$ と書き、「格子の第一連続最小値（First successive minimum）」と呼びます。
 

@@ -18,7 +18,7 @@ $$
 
 Bien que cette intégrale elle-même puisse être résolue en utilisant $\arctan(x)$, si le dénominateur devient un polynôme de degré supérieur, ou si des fonctions trigonométriques comme le sinus et le cosinus sont intimement impliquées, trouver une primitive (intégrale indéfinie) en tant que fonction réelle devient pratiquement impossible.
 
-C'est là qu'intervient une arme puissante de l'**analyse complexe** (la théorie des fonctions complexes), largement considérée comme l'une des plus belles théories des mathématiques : le **Théorème des Résidus de Cauchy**. En étendant audacieusement une intégrale effectuée sur la droite numérique réelle (unidimensionnelle) au **plan complexe** (bidimensionnel), des intégrales réelles impossibles peuvent être résolues avec brio.
+C'est là qu'intervient une arme puissante de l'**analyse complexe** (la théorie des fonctions complexes), largement considérée comme l'une des plus belles théories des mathématiques : le **[Théorème des Résidus](https://kenji.blog/p/residue-theorem/) de Cauchy**. En étendant audacieusement une intégrale effectuée sur la droite numérique réelle (unidimensionnelle) au **plan complexe** (bidimensionnel), des intégrales réelles impossibles peuvent être résolues avec brio.
 
 ## Intégration Complexe et Singularités
 
@@ -56,9 +56,9 @@ $$
 
 Pourquoi seul le coefficient de $(z - z_0)^{-1}$ est-il spécial ? Parce que si vous intégrez $\frac{1}{(z - z_0)^n}$ le long d'un minuscule cercle $C$ enfermant la singularité, ce n'est que lorsque $n = 1$ que la valeur $2\pi i$ reste ; pour toutes les autres valeurs de $n$, l'intégrale s'évalue à $0$.
 
-## Théorème des Résidus de Cauchy
+## [Théorème des Résidus](https://kenji.blog/p/residue-theorem/) de Cauchy
 
-L'intégration de ces concepts donne le **Théorème des Résidus**. Si une courbe fermée $C$ contient plusieurs singularités isolées $z_1, z_2, \dots, z_k$ à l'intérieur, l'intégrale complexe le long de $C$ peut être calculée comme suit :
+L'intégration de ces concepts donne le **[Théorème des Résidus](https://kenji.blog/p/residue-theorem/)**. Si une courbe fermée $C$ contient plusieurs singularités isolées $z_1, z_2, \dots, z_k$ à l'intérieur, l'intégrale complexe le long de $C$ peut être calculée comme suit :
 
 $$
 \oint_C f(z) dz = 2\pi i \sum_{j=1}^{k} \text{Res}(f, z_j)
@@ -106,7 +106,7 @@ $$
 \text{Res}(f, i) = \lim_{z \to i} (z - i) f(z) = \lim_{z \to i} \frac{1}{z + i} = \frac{1}{2i}
 $$
 
-### Étape 3 : Application du Théorème des Résidus
+### Étape 3 : Application du [Théorème des Résidus](https://kenji.blog/p/residue-theorem/)
 Par le théorème des résidus, l'intégrale sur la courbe fermée $C$ devient :
 
 $$

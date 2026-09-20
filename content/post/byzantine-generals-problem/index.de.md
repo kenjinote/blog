@@ -18,7 +18,7 @@ In diesem Artikel werden wir dieses **Problem der byzantinischen Generäle** von
 
 ## 1. Was ist das Problem der byzantinischen Generäle?
 
-Das Problem der byzantinischen Generäle ist ein Gedankenexperiment zur Konsensfindung in verteilten Computersystemen, das 1982 von Leslie Lamport und anderen vorgeschlagen wurde.
+[Das Problem der byzantinischen Generäle](https://kenji.blog/p/byzantine-generals-problem/) ist ein Gedankenexperiment zur Konsensfindung in verteilten Computersystemen, das 1982 von Leslie Lamport und anderen vorgeschlagen wurde.
 
 ### Ein konkretes Beispiel: Die Generäle des Byzantinischen Reiches
 

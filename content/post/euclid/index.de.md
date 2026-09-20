@@ -8,18 +8,18 @@ categories: ["Mathematik", "Biografie"]
 tags: ["Euklid", "Geometrie", "Geschichte der Mathematik", "Antikes Griechenland", "Elemente", "Euklidischer Algorithmus"]
 ---
 
-Wenn man über die Geschichte der Mathematik spricht, gibt es einen gigantischen Stern, der nicht ignoriert werden kann. Das ist der antike griechische Mathematiker **Euklid**. Auch bekannt als "Vater der Geometrie", war er der Pionier, der die Mathematik als logisches System etablierte. In diesem Artikel werden wir in die Episoden von Euklids Leben, die Inhalte seines historischen Meisterwerks "Elemente" und die wichtigen mathematischen Errungenschaften, die er hinterlassen hat, eintauchen.
+Wenn man über die Geschichte der Mathematik spricht, gibt es einen gigantischen Stern, der nicht ignoriert werden kann. Das ist der antike griechische Mathematiker **[Euklid](https://kenji.blog/p/euclid/)**. Auch bekannt als "Vater der Geometrie", war er der Pionier, der die Mathematik als logisches System etablierte. In diesem Artikel werden wir in die Episoden von [Euklid](https://kenji.blog/p/euclid/)s Leben, die Inhalte seines historischen Meisterwerks "Elemente" und die wichtigen mathematischen Errungenschaften, die er hinterlassen hat, eintauchen.
 
-## Euklids Leben und Episoden
+## [Euklid](https://kenji.blog/p/euclid/)s Leben und Episoden
 
-Über das Leben von Euklid (um 300 v. Chr.) gibt es tatsächlich sehr wenige endgültige historische Aufzeichnungen. Wo er geboren wurde und was für ein Leben er führte, lässt sich nur aus fragmentarischen Beschreibungen von Gelehrten späterer Epochen ableiten. Es ist jedoch weithin bekannt, dass er im ägyptischen **Alexandria** aktiv war und während der Herrschaft von Ptolemaios I. eine Mathematikschule leitete.
+Über das Leben von [Euklid](https://kenji.blog/p/euclid/) (um 300 v. Chr.) gibt es tatsächlich sehr wenige endgültige historische Aufzeichnungen. Wo er geboren wurde und was für ein Leben er führte, lässt sich nur aus fragmentarischen Beschreibungen von Gelehrten späterer Epochen ableiten. Es ist jedoch weithin bekannt, dass er im ägyptischen **Alexandria** aktiv war und während der Herrschaft von Ptolemaios I. eine Mathematikschule leitete.
 
 ### "Es gibt keinen Königsweg zur Geometrie"
 
-Eine der berühmtesten Episoden im Zusammenhang mit Euklid ist seine Interaktion mit dem ägyptischen König Ptolemaios I.
-Der König versuchte, Euklids Buch "Elemente" zu studieren, aber da der Inhalt zu schwierig und langwierig war, fragte er Euklid:
+Eine der berühmtesten Episoden im Zusammenhang mit [Euklid](https://kenji.blog/p/euclid/) ist seine Interaktion mit dem ägyptischen König Ptolemaios I.
+Der König versuchte, [Euklid](https://kenji.blog/p/euclid/)s Buch "Elemente" zu studieren, aber da der Inhalt zu schwierig und langwierig war, fragte er [Euklid](https://kenji.blog/p/euclid/):
 "Gibt es keinen kürzeren oder einfacheren Weg, um Geometrie zu lernen?"
-Darauf soll Euklid entschieden geantwortet haben:
+Darauf soll [Euklid](https://kenji.blog/p/euclid/) entschieden geantwortet haben:
 
 > "Mein Herr, es gibt keinen Königsweg zur Geometrie."
 
@@ -27,7 +27,7 @@ Dieser Satz trifft die Wahrheit, dass es beim Lernen keine Abkürzungen oder bes
 
 ## Der größte Bestseller der Geschichte: "Elemente"
 
-Euklids größte und dauerhafteste Errungenschaft ist die Zusammenstellung des Mathematikbuches **"Elemente"**, das aus 13 Bänden besteht. Dieses Buch ist eine Zusammenstellung antiken griechischen mathematischen Wissens und soll nach der Bibel das am meisten veröffentlichte Buch der Welt sein.
+[Euklid](https://kenji.blog/p/euclid/)s größte und dauerhafteste Errungenschaft ist die Zusammenstellung des Mathematikbuches **"Elemente"**, das aus 13 Bänden besteht. Dieses Buch ist eine Zusammenstellung antiken griechischen mathematischen Wissens und soll nach der Bibel das am meisten veröffentlichte Buch der Welt sein.
 
 Der bahnbrechende Aspekt der "Elemente" ist, dass es einen **axiomatischen Ansatz** etablierte, anstatt nur einzelne Sätze aufzulisten. Die Methode, von wenigen selbstverständlichen Prämissen (Axiomen und Postulaten) auszugehen und alle Sätze ausschließlich durch logische Deduktion zu beweisen, bestimmte den zukünftigen Kurs von Mathematik und Wissenschaft.
 
@@ -49,15 +49,15 @@ Im ersten Band der "Elemente" werden fünf Postulate (geometrische Prämissen) a
 
 "Wenn eine gerade Linie zwei gerade Linien schneidet und dabei auf derselben Seite zwei innere Winkel bildet, deren Summe kleiner ist als zwei rechte Winkel, so schneiden sich die beiden Linien, wenn man sie unendlich verlängert, auf derjenigen Seite, auf der die Winkel liegen, deren Summe kleiner als zwei rechte Winkel ist."
 
-Dieses Postulat war komplexer als die anderen vier, und viele Mathematiker vermuteten: "Ist dies nicht ein Satz, der aus den anderen Postulaten bewiesen werden kann, anstatt ein Postulat selbst?" Versuche, es über Tausende von Jahren hinweg zu beweisen, scheiterten alle. Im 19. Jahrhundert wurde jedoch schließlich die **Nichteuklidische Geometrie** entdeckt, eine Geometrie, in der das fünfte Postulat nicht gilt, was eine Revolution in der mathematischen Welt auslöste. Man kann sagen, dass dieses Ereignis paradoxerweise die Schärfe von Euklids Intuition bewies.
+Dieses Postulat war komplexer als die anderen vier, und viele Mathematiker vermuteten: "Ist dies nicht ein Satz, der aus den anderen Postulaten bewiesen werden kann, anstatt ein Postulat selbst?" Versuche, es über Tausende von Jahren hinweg zu beweisen, scheiterten alle. Im 19. Jahrhundert wurde jedoch schließlich die **Nichteuklidische Geometrie** entdeckt, eine Geometrie, in der das fünfte Postulat nicht gilt, was eine Revolution in der mathematischen Welt auslöste. Man kann sagen, dass dieses Ereignis paradoxerweise die Schärfe von [Euklid](https://kenji.blog/p/euclid/)s Intuition bewies.
 
-## Euklids große mathematische Errungenschaften
+## [Euklid](https://kenji.blog/p/euclid/)s große mathematische Errungenschaften
 
-Euklid hinterließ nicht nur in der Geometrie, sondern auch im Bereich der Zahlentheorie herausragende Errungenschaften. Hier stellen wir zwei besonders berühmte Errungenschaften vor.
+[Euklid](https://kenji.blog/p/euclid/) hinterließ nicht nur in der Geometrie, sondern auch im Bereich der Zahlentheorie herausragende Errungenschaften. Hier stellen wir zwei besonders berühmte Errungenschaften vor.
 
-### 1. Euklidischer Algorithmus
+### 1. [Euklid](https://kenji.blog/p/euclid/)ischer Algorithmus
 
-Der **Euklidische Algorithmus** ist ein Algorithmus zur effizienten Bestimmung des größten gemeinsamen Teilers (ggT) zweier natürlicher Zahlen. Er wird auch als einer der ältesten Algorithmen in der Geschichte der Menschheit bezeichnet.
+Der **[Euklid](https://kenji.blog/p/euclid/)ische Algorithmus** ist ein Algorithmus zur effizienten Bestimmung des größten gemeinsamen Teilers (ggT) zweier natürlicher Zahlen. Er wird auch als einer der ältesten Algorithmen in der Geschichte der Menschheit bezeichnet.
 
 Sei der größte gemeinsame Teiler zweier natürlicher Zahlen $a$ und $b$ (wobei $a > b$) $\gcd(a, b)$. Wenn der Quotient bei der Division von $a$ durch $b$ $q$ ist und der Rest $r$ ist, gilt folgende Beziehung:
 
@@ -71,7 +71,7 @@ Durch Wiederholen dieses Vorgangs, bis der Rest $r$ zu $0$ wird, kann der größ
 
 ### 2. Beweis der Unendlichkeit der Primzahlen
 
-Im 9. Band der "Elemente" bewies Euklid durch einen sehr schönen und eleganten Widerspruchsbeweis, dass es unendlich viele Primzahlen gibt.
+Im 9. Band der "Elemente" bewies [Euklid](https://kenji.blog/p/euclid/) durch einen sehr schönen und eleganten Widerspruchsbeweis, dass es unendlich viele Primzahlen gibt.
 
 **Skizze des Beweises:**
 Nehmen wir an, es gäbe nur endlich viele Primzahlen, und die Menge aller Primzahlen sei $p_1, p_2, \dots, p_n$.
@@ -84,8 +84,8 @@ Daher ist entweder $P$ selbst eine neue Primzahl, oder sie ist durch eine neue P
 In jedem Fall widerspricht dies der ursprünglichen Annahme, dass "es nur endlich viele Primzahlen gibt".
 Damit ist bewiesen, dass **Primzahlen unendlich existieren**.
 
-## Fazit: Euklids Vermächtnis
+## Fazit: [Euklid](https://kenji.blog/p/euclid/)s Vermächtnis
 
-Euklids "Elemente" geht darüber hinaus, nur ein Mathematikbuch zu sein; es hat spätere große Wissenschaftler wie Newton und Einstein als ultimatives Lehrmaterial für die Menschheit zum Erlernen des logischen Denkens stark beeinflusst.
+[Euklid](https://kenji.blog/p/euclid/)s "Elemente" geht darüber hinaus, nur ein Mathematikbuch zu sein; es hat spätere große Wissenschaftler wie Newton und Einstein als ultimatives Lehrmaterial für die Menschheit zum Erlernen des logischen Denkens stark beeinflusst.
 
-Der von ihm etablierte Stil, "logisch Schlussfolgerungen aus Prämissen abzuleiten", hat über den Rahmen der Mathematik hinaus in Philosophie, Wissenschaft und das Fundament der modernen Informatik tief Fuß gefasst. Wann immer wir logisch über Dinge nachdenken, können wir immer den Atem von Euklid spüren.
+Der von ihm etablierte Stil, "logisch Schlussfolgerungen aus Prämissen abzuleiten", hat über den Rahmen der Mathematik hinaus in Philosophie, Wissenschaft und das Fundament der modernen Informatik tief Fuß gefasst. Wann immer wir logisch über Dinge nachdenken, können wir immer den Atem von [Euklid](https://kenji.blog/p/euclid/) spüren.

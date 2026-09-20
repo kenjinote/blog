@@ -54,9 +54,9 @@ bool is_prime_trial_division(long long n) {
 
 Чтобы преодолеть ограничения метода пробных делений, были придуманы «вероятностные алгоритмы» (Probabilistic Algorithm), использующие теоремы теории чисел. Ярким примером является «Тест Ферма на простоту» (Fermat Primality Test), основанный на малой теореме Ферма.
 
-## Малая теорема Ферма (Fermat's Little Theorem)
+## [Малая теорема Ферма](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 
-Эта теорема, открытая Пьером де Ферма (Pierre de Fermat), утверждает следующее:
+Эта теорема, открытая Пьером де Ферма ([Pierre de Fermat](https://kenji.blog/p/fermat/)), утверждает следующее:
 
 > Для любого простого числа $p$ и любого целого числа $a$, взаимно простого с $p$ (не кратного $p$), выполняется следующее сравнение:
 > $$ a^{p-1} \equiv 1 \pmod p $$

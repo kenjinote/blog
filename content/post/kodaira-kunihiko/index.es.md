@@ -10,11 +10,11 @@ tags: ["Kunihiko Kodaira", "Medalla Fields", "Geometría Compleja"]
 
 ## 1. Introducción
 
-El gran matemático japonés **Kunihiko Kodaira** (1915–1997) fue el primer medallista Fields de Japón y realizó inmensas contribuciones a la geometría algebraica y a la teoría de variedades complejas en el siglo XX. Su trabajo ha influido profundamente no solo en las matemáticas modernas, sino también en la física teórica, como la teoría de cuerdas. En este artículo, exploramos la vida de Kodaira y su mundo matemático lleno de intuición.
+El gran matemático japonés **[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/)** (1915–1997) fue el primer medallista Fields de Japón y realizó inmensas contribuciones a la geometría algebraica y a la teoría de variedades complejas en el siglo XX. Su trabajo ha influido profundamente no solo en las matemáticas modernas, sino también en la física teórica, como la teoría de cuerdas. En este artículo, exploramos la vida de Kodaira y su mundo matemático lleno de intuición.
 
 ## 2. Trayectoria vital
 
-Kunihiko Kodaira nació en Tokio en 1915. Disfrutaba tocando el piano desde muy joven, y se dice que su profundo amor por la música influyó posteriormente en su pensamiento matemático. Es famosa su frase: "Entender las matemáticas es como escuchar música y sentir que es hermosa".
+[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) nació en Tokio en 1915. Disfrutaba tocando el piano desde muy joven, y se dice que su profundo amor por la música influyó posteriormente en su pensamiento matemático. Es famosa su frase: "Entender las matemáticas es como escuchar música y sentir que es hermosa".
 
 ```mermaid
 flowchart TD
@@ -74,4 +74,4 @@ Tras regresar a Japón en 1967, fue profesor en la Universidad de Tokio y otras 
 
 ## 5. Conclusión
 
-Las matemáticas que nos dejó Kunihiko Kodaira son como una gran sinfonía en la que el análisis, el álgebra y la geometría armonizan maravillosamente. Su enfoque intuitivo y sus profundos conocimientos siguen fascinando a muchos matemáticos en la actualidad.
+Las matemáticas que nos dejó [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) son como una gran sinfonía en la que el análisis, el álgebra y la geometría armonizan maravillosamente. Su enfoque intuitivo y sus profundos conocimientos siguen fascinando a muchos matemáticos en la actualidad.

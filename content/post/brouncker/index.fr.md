@@ -10,13 +10,13 @@ tags: ["William Brouncker", "Pi", "Fraction continue", "Équation de Pell", "Roy
 
 ## 1. Introduction
 
-L'Europe du 17ème siècle était au cœur d'une révolution scientifique. Ce fut une époque où les mathématiques et la physique firent des bonds spectaculaires en avant, comme l'illustre la découverte du calcul infinitésimal par Isaac Newton et Gottfried Wilhelm Leibniz. Dans ce contexte, l'institution qui a joué un rôle central dans le développement du monde universitaire britannique fut **La Royal Society**.
+L'Europe du 17ème siècle était au cœur d'une révolution scientifique. Ce fut une époque où les mathématiques et la physique firent des bonds spectaculaires en avant, comme l'illustre la découverte du calcul infinitésimal par [Isaac Newton](https://kenji.blog/p/newton/) et Gottfried Wilhelm Leibniz. Dans ce contexte, l'institution qui a joué un rôle central dans le développement du monde universitaire britannique fut **La Royal Society**.
 
-Cet article fournit une explication détaillée de la vie et des réalisations mathématiques remarquables de **William Brouncker**, qui fut le premier président de la Royal Society et qui a marqué l'histoire en tant que mathématicien grâce à sa « représentation en fraction continue de Pi » et sa « solution de l'équation de Pell ». Brouncker a interagi avec les plus grands esprits de l'Europe de l'époque et s'est attaqué à de nombreux problèmes ardus. Ses réalisations ont grandement contribué à jeter les bases d'un traitement mathématiquement rigoureux du concept d'infini.
+Cet article fournit une explication détaillée de la vie et des réalisations mathématiques remarquables de **[William Brouncker](https://kenji.blog/p/brouncker/)**, qui fut le premier président de la Royal Society et qui a marqué l'histoire en tant que mathématicien grâce à sa « représentation en fraction continue de Pi » et sa « solution de l'équation de Pell ». Brouncker a interagi avec les plus grands esprits de l'Europe de l'époque et s'est attaqué à de nombreux problèmes ardus. Ses réalisations ont grandement contribué à jeter les bases d'un traitement mathématiquement rigoureux du concept d'infini.
 
 ## 2. Jeunesse et début de carrière
 
-William Brouncker (1620 - 5 avril 1684) est né en tant que fils aîné de William Brouncker, 1er vicomte Brouncker, et de Winifred Leigh. Bien qu'il y ait beaucoup de détails inconnus concernant son lieu de naissance exact et son éducation précoce, on pense qu'il a étudié à l'Université d'Oxford, y cultivant d'excellentes compétences linguistiques et un sens mathématique. En 1645, suite au décès de son père, il devint le 2ème vicomte Brouncker.
+[William Brouncker](https://kenji.blog/p/brouncker/) (1620 - 5 avril 1684) est né en tant que fils aîné de [William Brouncker](https://kenji.blog/p/brouncker/), 1er vicomte Brouncker, et de Winifred Leigh. Bien qu'il y ait beaucoup de détails inconnus concernant son lieu de naissance exact et son éducation précoce, on pense qu'il a étudié à l'Université d'Oxford, y cultivant d'excellentes compétences linguistiques et un sens mathématique. En 1645, suite au décès de son père, il devint le 2ème vicomte Brouncker.
 
 À l'époque, l'Angleterre traversait la période chaotique de la Révolution puritaine (Première révolution anglaise), mais Brouncker s'est davantage consacré au monde universitaire qu'à la scène politique. Il avait un intérêt particulièrement fort pour les mathématiques et la musique, commençant à construire ses propres théories. En 1647, il obtint un doctorat en médecine de l'Université d'Oxford, mais son intérêt principal a toujours résidé dans les sciences exactes. Son jeune frère, Henry Brouncker, était également connu pour être actif dans le monde politique et à la cour, tout en maintenant un intérêt pour les échecs et les mathématiques.
 
@@ -24,7 +24,7 @@ William Brouncker (1620 - 5 avril 1684) est né en tant que fils aîné de Willi
 
 La Royal Society est l'une des plus anciennes sociétés scientifiques au monde, dédiée à l'amélioration des connaissances naturelles. Ses origines remontent à un rassemblement formé après une conférence de Christopher Wren à Londres en 1660, et elle fut officiellement lancée en 1662 après avoir reçu une charte royale du roi Charles II.
 
-Celui qui fut élu **Premier Président** de cette société historique fut William Brouncker. Alors que la société prenait forme grâce aux efforts de Robert Moray et d'autres, Brouncker a occupé le poste de président pendant une longue période de 15 ans, de 1662 à 1677, se consacrant à la consolidation des fondations de la société.
+Celui qui fut élu **Premier Président** de cette société historique fut [William Brouncker](https://kenji.blog/p/brouncker/). Alors que la société prenait forme grâce aux efforts de Robert Moray et d'autres, Brouncker a occupé le poste de président pendant une longue période de 15 ans, de 1662 à 1677, se consacrant à la consolidation des fondations de la société.
 
 ```mermaid
 graph TD
@@ -40,7 +40,7 @@ Brouncker a joué un rôle crucial en réunissant des scientifiques exceptionnel
 
 ## 4. Réalisation mathématique : Représentation en fraction continue de Pi
 
-La réalisation mathématique la plus célèbre de Brouncker est la découverte de la fraction continue généralisée pour le rapport de circonférence $\pi$. Celle-ci a été introduite dans le livre *Arithmetica Infinitorum* (1655) du mathématicien contemporain John Wallis, ce qui l'a rendue largement connue.
+La réalisation mathématique la plus célèbre de Brouncker est la découverte de la fraction continue généralisée pour le rapport de circonférence $\pi$. Celle-ci a été introduite dans le livre *Arithmetica Infinitorum* (1655) du mathématicien contemporain [John Wallis](https://kenji.blog/p/wallis/), ce qui l'a rendue largement connue.
 
 ### Formule de Wallis et transformation de Brouncker
 
@@ -72,7 +72,7 @@ $$
 
 ### Le défi de Fermat
 
-En 1657, le grand mathématicien français Pierre de Fermat a lancé un défi aux mathématiciens anglais pour trouver des solutions entières à cette équation. Fermat citait en exemple des cas difficiles comme $n=61$.
+En 1657, le grand mathématicien français [Pierre de Fermat](https://kenji.blog/p/fermat/) a lancé un défi aux mathématiciens anglais pour trouver des solutions entières à cette équation. Fermat citait en exemple des cas difficiles comme $n=61$.
 
 ### L'algorithme de Brouncker
 
@@ -98,13 +98,13 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-Brouncker a démontré que même des solutions aussi gigantesques pouvaient être dérivées de manière systématique en utilisant sa méthode. Ironiquement, en raison d'un malentendu de Leonhard Euler, cette équation a été nommée plus tard d'après le mathématicien anglais John Pell, mais la plus grande contribution à l'établissement de la méthode de résolution appartient indéniablement à Brouncker.
+Brouncker a démontré que même des solutions aussi gigantesques pouvaient être dérivées de manière systématique en utilisant sa méthode. Ironiquement, en raison d'un malentendu de [Leonhard Euler](https://kenji.blog/p/euler/), cette équation a été nommée plus tard d'après le mathématicien anglais John Pell, mais la plus grande contribution à l'établissement de la méthode de résolution appartient indéniablement à Brouncker.
 
 ## 6. Autres réalisations et dernières années
 
 ### Contributions à la théorie musicale
 
-Brouncker s'intéressait non seulement aux mathématiques mais aussi à la théorie musicale. Il a traduit le *Musicae Compendium* de René Descartes en anglais et l'a publié anonymement. Ce faisant, il ne s'est pas contenté de le traduire, mais a ajouté une annexe proposant son propre système d'accordage (tempérament égal à 17 tons) qui divisait une octave en 17 intervalles égaux. Il s'agissait d'une tentative pionnière d'analyser les gammes musicales mathématiquement en utilisant les logarithmes.
+Brouncker s'intéressait non seulement aux mathématiques mais aussi à la théorie musicale. Il a traduit le *Musicae Compendium* de [René Descartes](https://kenji.blog/p/descartes/) en anglais et l'a publié anonymement. Ce faisant, il ne s'est pas contenté de le traduire, mais a ajouté une annexe proposant son propre système d'accordage (tempérament égal à 17 tons) qui divisait une octave en 17 intervalles égaux. Il s'agissait d'une tentative pionnière d'analyser les gammes musicales mathématiquement en utilisant les logarithmes.
 
 ### Quadrature de la parabole et courbe logarithmique
 
@@ -118,6 +118,6 @@ Dans ses dernières années, même après avoir quitté son poste de président 
 
 ## 7. Conclusion
 
-William Brouncker était un leader exceptionnel et un mathématicien original qui a stimulé la communauté scientifique britannique du 17ème siècle. Ses réalisations dans l'établissement des fondations de la science moderne en tant que premier président de la Royal Society sont incommensurables. De plus, ses réalisations mathématiques, telles que la représentation en fraction continue de Pi et la solution de l'équation de Pell, sont devenues des jalons importants dans le développement de l'analyse, qui traite du concept d'infini, et de la théorie des nombres.
+[William Brouncker](https://kenji.blog/p/brouncker/) était un leader exceptionnel et un mathématicien original qui a stimulé la communauté scientifique britannique du 17ème siècle. Ses réalisations dans l'établissement des fondations de la science moderne en tant que premier président de la Royal Society sont incommensurables. De plus, ses réalisations mathématiques, telles que la représentation en fraction continue de Pi et la solution de l'équation de Pell, sont devenues des jalons importants dans le développement de l'analyse, qui traite du concept d'infini, et de la théorie des nombres.
 
 Son approche symbolise la période de transition de la géométrie rigoureuse à l'analyse utilisant l'algèbre et les séries infinies. Bien que son nom soit souvent éclipsé par des géants comme Newton et Fermat, sans l'existence de **Brouncker**, la richesse des mathématiques d'aujourd'hui ne peut être discutée. Sa curiosité intellectuelle et son esprit de recherche continuent de briller devant nous comme la beauté des mathématiques, même des centaines d'années plus tard.

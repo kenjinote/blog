@@ -25,7 +25,7 @@ Dalam artikel ini, kita akan menjelaskan secara mendalam teori kekacauan dan efe
 
 ## 2. Latar Belakang Sejarah: Dari Poincaré hingga Lorenz
 
-Benih-benih teori kekacauan dapat ditelusuri kembali ke penelitian matematikawan besar Prancis abad ke-19, Henri Poincaré. Pada saat itu, salah satu tantangan terbesar dalam fisika adalah "masalah tiga benda." Ini adalah masalah memprediksi pergerakan tiga benda langit, seperti Matahari, Bumi, dan Bulan, yang saling memberikan gaya gravitasi berdasarkan mekanika Newton.
+Benih-benih teori kekacauan dapat ditelusuri kembali ke penelitian matematikawan besar Prancis abad ke-19, [Henri Poincaré](https://kenji.blog/p/poincare/). Pada saat itu, salah satu tantangan terbesar dalam fisika adalah "masalah tiga benda." Ini adalah masalah memprediksi pergerakan tiga benda langit, seperti Matahari, Bumi, dan Bulan, yang saling memberikan gaya gravitasi berdasarkan mekanika Newton.
 
 Sambil mempelajari masalah ini secara mendalam, Poincaré menemukan bahwa pergerakan benda langit bisa menjadi sangat kompleks. Ia secara matematis menyarankan bahwa kesalahan yang sangat kecil pada posisi atau kecepatan awal dapat meluas seiring waktu, pada akhirnya mengarah pada lintasan benda langit yang sama sekali berbeda. Ini secara virtual merupakan penemuan pertama dari perilaku kacau, menunjukkan bahwa bahkan dalam sistem deterministik (sistem di mana hukum-hukumnya diketahui sepenuhnya), prediksi jangka panjang kadang-kadang bisa menjadi tidak mungkin. Namun, karena keterbatasan metode matematika dan daya komputasi (ketiadaan komputer) pada saat itu, penemuan inovatif ini tidak dieksplorasi secara mendalam selama beberapa dekade sesudahnya.
 

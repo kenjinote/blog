@@ -18,7 +18,7 @@ tags:
 
 ## 1. Introduction: A Giant of Modern Number Theory
 
-Gerd Faltings is widely recognized as one of the deepest and most influential arithmetic geometers in the mathematics community from the late 20th century into the 21st century. In particular, his proof of the **Mordell Conjecture** achieved in 1983 stands as a brilliant monumental landmark in the history of number theory and algebraic geometry. In this article, we will thoroughly explain his life, his unique mathematical approach, and the revolutionary achievements he brought to the mathematical world.
+[Gerd Faltings](https://kenji.blog/p/faltings/) is widely recognized as one of the deepest and most influential arithmetic geometers in the mathematics community from the late 20th century into the 21st century. In particular, his proof of the **Mordell Conjecture** achieved in 1983 stands as a brilliant monumental landmark in the history of number theory and algebraic geometry. In this article, we will thoroughly explain his life, his unique mathematical approach, and the revolutionary achievements he brought to the mathematical world.
 
 ## 2. Early Life and Career
 
@@ -28,7 +28,7 @@ In 1978, he obtained his Ph.D. under the supervision of Hans-Joachim Nastold. Hi
 
 ## 3. Historic Achievement: Solving the Mordell Conjecture
 
-What eternally engraved Faltings' name into the history of mathematics was undoubtedly his resolution of the **Mordell Conjecture**. Proposed by Louis Mordell in 1922, this conjecture was a profoundly deep problem regarding the number of rational solutions to Diophantine equations.
+What eternally engraved Faltings' name into the history of mathematics was undoubtedly his resolution of the **Mordell Conjecture**. Proposed by [Louis Mordell](https://kenji.blog/p/mordell/) in 1922, this conjecture was a profoundly deep problem regarding the number of rational solutions to Diophantine equations.
 
 The statement of the conjecture is as follows:
 
@@ -36,7 +36,7 @@ The statement of the conjecture is as follows:
 
 This conjecture was deeply related to the Pythagorean theorem and [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/), and it was a formidable problem that many genius mathematicians had challenged and failed over the years.
 
-Faltings attacked this problem by skillfully manipulating the massive machinery of algebraic geometry built by Alexander Grothendieck, such as scheme theory and étale cohomology, and by further introducing a new framework called Arakelov geometry.
+Faltings attacked this problem by skillfully manipulating the massive machinery of algebraic geometry built by [Alexander Grothendieck](https://kenji.blog/p/grothendieck/), such as scheme theory and étale cohomology, and by further introducing a new framework called Arakelov geometry.
 
 Although the logical structure of his proof is highly complex, the core idea can be divided into the following three stages (proofs of conjectures).
 
@@ -88,6 +88,6 @@ Throughout his time as a professor at Princeton University and as the director o
 
 ## 7. Conclusion
 
-The name of Gerd Faltings will forever be passed down as the solver of the **Mordell Conjecture**. Yet, his true greatness lies not merely in solving a single hard problem, but in creating new mathematical paradigms such as Arakelov geometry and p-adic Hodge theory.
+The name of [Gerd Faltings](https://kenji.blog/p/faltings/) will forever be passed down as the solver of the **Mordell Conjecture**. Yet, his true greatness lies not merely in solving a single hard problem, but in creating new mathematical paradigms such as Arakelov geometry and p-adic Hodge theory.
 
 Even today, the theories and philosophy he created continue to provide immense inspiration to mathematicians around the world. Whenever we try to touch the abyss of number theory, the path forged by Faltings always lies ahead of us.

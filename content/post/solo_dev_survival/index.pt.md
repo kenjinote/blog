@@ -25,7 +25,7 @@ O que as grandes empresas visam é o mercado de massa, onde o TAM (Total Address
 
 Em contraste, a força dos desenvolvedores solo reside no fato de que o **"ponto de equilíbrio é extremamente baixo"**. Se houver um lucro de centenas de milhares por mês, o negócio já se sustenta plenamente para um indivíduo. É aqui que reside o ponto ideal da "Teoria da Cauda Longa".
 
-## A Lei de Zipf (Zipf's Law) e a Distribuição de Mercado
+## [A Lei de Zipf](https://kenji.blog/p/zipfs-law/) ([Zipf's Law](https://kenji.blog/p/zipfs-law/)) e a Distribuição de Mercado
 
 A relação entre o tamanho e o número de mercados frequentemente segue a Lei de Zipf ou o Princípio de Pareto. Seja $k$ a classificação do mercado e $P(k)$ o seu tamanho (potencial de vendas), ela pode ser expressa pelo seguinte modelo de lei de potência:
 

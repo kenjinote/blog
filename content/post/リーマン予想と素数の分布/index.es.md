@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Introducción: El misterio cósmico de los números primos y la Hipótesis de Riemann
 
-Los "números primos" (Prime Numbers) son números naturales divisibles únicamente por 1 y por sí mismos, y también se les llama los "átomos" del mundo de las matemáticas. Esta secuencia que continúa con 2, 3, 5, 7, 11, 13... parece a primera vista aparecer de manera caótica y aleatoria. Desde que el matemático de la antigua Grecia, Euclides, demostró que "los números primos son infinitos", innumerables matemáticos han intentado desentrañar la regularidad oculta en esta disposición de números primos.
+Los "números primos" (Prime Numbers) son números naturales divisibles únicamente por 1 y por sí mismos, y también se les llama los "átomos" del mundo de las matemáticas. Esta secuencia que continúa con 2, 3, 5, 7, 11, 13... parece a primera vista aparecer de manera caótica y aleatoria. Desde que el matemático de la antigua Grecia, [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/), demostró que "los números primos son infinitos", innumerables matemáticos han intentado desentrañar la regularidad oculta en esta disposición de números primos.
 
-Quien más se acercó a este misterio de los números primos fue el matemático alemán Bernhard Riemann, quien en 1859 propuso la **"Hipótesis de Riemann" (Riemann Hypothesis)**. La Hipótesis de Riemann es uno de los problemas más importantes y no resueltos de las matemáticas modernas, y tiene una recompensa de 1 millón de dólares al ser uno de los Problemas del Milenio establecidos por el Instituto Clay de Matemáticas.
+Quien más se acercó a este misterio de los números primos fue el matemático alemán [Bernhard Riemann](https://kenji.blog/p/riemann/), quien en 1859 propuso la **"Hipótesis de Riemann" (Riemann Hypothesis)**. La Hipótesis de Riemann es uno de los problemas más importantes y no resueltos de las matemáticas modernas, y tiene una recompensa de 1 millón de dólares al ser uno de los Problemas del Milenio establecidos por el Instituto Clay de Matemáticas.
 
 A primera vista, un problema tan difícil de matemáticas puras relacionado con la distribución de los números primos puede parecer ajeno a nuestra vida diaria. Sin embargo, la seguridad de Internet que sustenta la infraestructura de la sociedad moderna, en particular **las tecnologías criptográficas modernas como la criptografía RSA y la criptografía de curva elíptica (ECC)**, dependen profundamente de las propiedades de los números primos gigantes.
 
@@ -30,13 +30,13 @@ Por ejemplo:
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-El matemático prodigio de 15 años Carl Friedrich Gauss calculó tablas masivas de números primos y descubrió que la frecuencia de aparición de los números primos disminuye en proporción inversa al logaritmo natural $\ln x$. En otras palabras, conjeturó que la probabilidad de encontrar un número primo cerca de un cierto número $x$ es aproximadamente $\frac{1}{\ln x}$.
+El matemático prodigio de 15 años [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) calculó tablas masivas de números primos y descubrió que la frecuencia de aparición de los números primos disminuye en proporción inversa al logaritmo natural $\ln x$. En otras palabras, conjeturó que la probabilidad de encontrar un número primo cerca de un cierto número $x$ es aproximadamente $\frac{1}{\ln x}$.
 
 La expresión de esto utilizando integrales es la **integral logarítmica (Logarithmic integral)** $\text{Li}(x)$.
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-La conjetura de Gauss fue demostrada de forma independiente en 1896 por Jacques Hadamard y Charles-Jean de La Vallée Poussin, y se estableció como el **Teorema de los Números Primos (Prime Number Theorem, PNT)**.
+La conjetura de Gauss fue demostrada de forma independiente en 1896 por Jacques Hadamard y Charles-Jean de La Vallée Poussin, y se estableció como el **Teorema de los Números Primos ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT)**.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ Gracias a este teorema, sabemos que, a nivel macroscópico, los números primos 
 
 # 3. La función zeta de Riemann y el producto de Euler
 
-El arma más poderosa para analizar la distribución de los números primos es la **función zeta de Riemann (Riemann Zeta Function)**. Originalmente fue una serie infinita definida por Leonhard Euler para números reales $s > 1$.
+El arma más poderosa para analizar la distribución de los números primos es la **función zeta de Riemann (Riemann Zeta Function)**. Originalmente fue una serie infinita definida por [Leonhard Euler](https://kenji.blog/p/euler/) para números reales $s > 1$.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -184,7 +184,7 @@ A veces se cuenta como una leyenda urbana que "si se resuelve la Hipótesis de R
 La demostración de la Hipótesis de Riemann en sí misma no produciría inmediatamente un algoritmo mágico que acelere drásticamente la factorización de números primos. Esto se debe a que la Hipótesis de Riemann es simplemente un teorema sobre la "regularidad de la distribución macroscópica" de los números primos, y no nos indica directamente qué números primos dividen a un número particular $N$ (propiedad local).
 
 Sin embargo, el impacto no es nulo.
-Existe una probabilidad extremadamente alta de que, en el proceso de demostrar la Hipótesis de Riemann, se descubran **"nuevas herramientas matemáticas" y "métodos analíticos desconocidos"**. Si observamos la historia, cuando se demostró el Último Teorema de Fermat o la Conjetura de Poincaré, las nuevas teorías desarrolladas en el proceso hicieron avanzar enormemente a todas las matemáticas.
+Existe una probabilidad extremadamente alta de que, en el proceso de demostrar la Hipótesis de Riemann, se descubran **"nuevas herramientas matemáticas" y "métodos analíticos desconocidos"**. Si observamos la historia, cuando se demostró el Último Teorema de Fermat o la [Conjetura de Poincaré](https://kenji.blog/p/poincare-conjecture/), las nuevas teorías desarrolladas en el proceso hicieron avanzar enormemente a todas las matemáticas.
 
 Si se establecen métodos desconocidos de geometría algebraica o geometría no conmutativa que puedan manipular por completo las propiedades de los ceros de la función zeta de Riemann, no se puede descartar la posibilidad de que conduzcan al descubrimiento de algoritmos de factorización innovadores (por ejemplo, algoritmos clásicos que reduzcan la complejidad computacional a tiempo polinómico). En ese sentido, los criptógrafos nunca pueden quitarle los ojos de encima al progreso de la Hipótesis de Riemann.
 

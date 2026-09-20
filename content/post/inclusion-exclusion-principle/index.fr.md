@@ -17,7 +17,7 @@ tags:
 
 En mathématiques et en informatique, nous rencontrons fréquemment des situations où nous devons compter le nombre d'éléments qui satisfont à de multiples conditions. Cependant, lorsqu'il y a plusieurs conditions, les ensembles d'éléments satisfaisant chaque condition se chevauchent souvent (ont des intersections). Les additionner simplement reviendrait à compter les éléments plusieurs fois.
 
-Une méthode puissante pour éliminer précisément ces chevauchements et obtenir le nombre correct d'éléments est le **Principe d'inclusion-exclusion**.
+Une méthode puissante pour éliminer précisément ces chevauchements et obtenir le nombre correct d'éléments est le **[Principe d'inclusion-exclusion](https://kenji.blog/p/inclusion-exclusion-principle/)**.
 
 Dans cet article, nous expliquerons de manière exhaustive le principe d'inclusion-exclusion en détail, de ses concepts de base aux formules mathématiques généralisées, aux preuves mathématiques et aux exemples d'applications concrets (comme l'indicatrice d'Euler et les dérangements). De plus, nous introduirons des exemples d'implémentation en programmation pour approfondir votre compréhension sous des angles à la fois théoriques et pratiques.
 
@@ -32,7 +32,7 @@ Avant d'apprendre le principe d'inclusion-exclusion, passons en revue la notatio
 
 Ce que nous cherchons à trouver est la cardinalité de l'union de plusieurs ensembles, à savoir $|A \cup B \cup \dots|$.
 
-## 3. Principe d'inclusion-exclusion pour 2 ensembles
+## 3. [Principe d'inclusion-exclusion](https://kenji.blog/p/inclusion-exclusion-principle/) pour 2 ensembles
 
 Considérons le cas le plus simple avec deux ensembles, $A$ et $B$.
 
@@ -59,7 +59,7 @@ flowchart TD
     B -->|"Chevauchement"| AandB
 ```
 
-## 4. Principe d'inclusion-exclusion pour 3 ensembles
+## 4. [Principe d'inclusion-exclusion](https://kenji.blog/p/inclusion-exclusion-principle/) pour 3 ensembles
 
 Lorsqu'il y a trois ensembles, cela devient un peu plus complexe. Considérons les ensembles $A, B, C$.
 

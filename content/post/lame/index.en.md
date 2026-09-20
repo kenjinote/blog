@@ -8,19 +8,19 @@ categories: ["Mathematics", "Biography"]
 tags: ["Gabriel Lamé", "History of Mathematics", "Number Theory", "Elasticity", "Geometry"]
 ---
 
-## 1. Introduction: Who was Gabriel Lamé?
+## 1. Introduction: Who was [Gabriel Lamé](https://kenji.blog/p/lame/)?
 
-Gabriel Lamé (July 22, 1795 – May 1, 1870) was a prominent French mathematician, physicist, and engineer of the 19th century. His contributions spanned a vast range, from pure mathematics to applied mathematics, and even practical civil engineering. Today, his name remains deeply etched in mathematics and physics textbooks through the **Lamé curve** (superellipse), **Lamé's Theorem** in the Euclidean algorithm, and the **Lamé parameters** in the theory of elasticity.
+[Gabriel Lamé](https://kenji.blog/p/lame/) (July 22, 1795 – May 1, 1870) was a prominent French mathematician, physicist, and engineer of the 19th century. His contributions spanned a vast range, from pure mathematics to applied mathematics, and even practical civil engineering. Today, his name remains deeply etched in mathematics and physics textbooks through the **Lamé curve** (superellipse), **Lamé's Theorem** in the [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm, and the **Lamé parameters** in the theory of elasticity.
 
 In this article, we will trace the eventful trajectory of Lamé's life while comprehensively and systematically explaining the groundbreaking mathematical and physical achievements he left behind. Understanding his life and thought processes provides a highly valuable perspective on how 19th-century science laid the foundations for the modern era.
 
-## 2. Life and Career of Gabriel Lamé
+## 2. Life and Career of [Gabriel Lamé](https://kenji.blog/p/lame/)
 
 Lamé's life was deeply intertwined with the turbulent European society of the early 19th century. His career was not confined to an academic ivory tower but was grounded in harsh practical experiences in the field.
 
 ### 2.1 Birth and Education in Turbulent Times
 
-Gabriel Lamé was born in 1795 in the city of Tours in central France. This was the aftermath of the French Revolution, a period when society as a whole was undergoing massive transformation. His mathematical talent blossomed early, and in 1813 he entered the prestigious **École Polytechnique**. There, he competed and studied alongside many brilliant minds who would later lead the scientific world. After graduating, he furthered his practical engineering knowledge at the **École des Mines**.
+[Gabriel Lamé](https://kenji.blog/p/lame/) was born in 1795 in the city of Tours in central France. This was the aftermath of the French Revolution, a period when society as a whole was undergoing massive transformation. His mathematical talent blossomed early, and in 1813 he entered the prestigious **École Polytechnique**. There, he competed and studied alongside many brilliant minds who would later lead the scientific world. After graduating, he furthered his practical engineering knowledge at the **École des Mines**.
 
 ### 2.2 Work in Russia: Practice as an Engineer
 
@@ -95,15 +95,15 @@ def calculate_lame_curve(a, b, n, num_points=100):
     return points
 ```
 
-## 4. Contributions to Number Theory: Lamé's Theorem and the Euclidean Algorithm
+## 4. Contributions to Number Theory: Lamé's Theorem and the [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm
 
 In computer science and number theory, what makes Lamé's name most famous is **Lamé's Theorem**. This is known as one of the earliest examples in history of mathematically and rigorously evaluating the computational complexity (execution time) of an algorithm.
 
 ### 4.1 Overview and Significance of the Theorem
 
-The **Euclidean algorithm**, passed down from ancient Greece, is an efficient algorithm for finding the greatest common divisor of two natural numbers. However, until Lamé in 1844, no one had accurately proven exactly "how fast" this algorithm finishes. Lamé's theorem states the following:
+The **[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm**, passed down from ancient Greece, is an efficient algorithm for finding the greatest common divisor of two natural numbers. However, until Lamé in 1844, no one had accurately proven exactly "how fast" this algorithm finishes. Lamé's theorem states the following:
 
-> "When finding the greatest common divisor of two integers using the Euclidean algorithm, the number of required divisions (steps) never exceeds 5 times the number of decimal digits of the smaller number."
+> "When finding the greatest common divisor of two integers using the [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm, the number of required divisions (steps) never exceeds 5 times the number of decimal digits of the smaller number."
 
 Expressed as a formula, it is:
 
@@ -111,7 +111,7 @@ $$ \text{Number of steps} \le 5 \times \text{Number of digits of the smaller num
 
 ### 4.2 Deep Connection with the Fibonacci Sequence
 
-In the process of proving this theorem, Lamé discovered that the worst-case scenario (meaning the one taking the most steps) for the Euclidean algorithm occurs when the inputs are two consecutive **Fibonacci numbers**. By utilizing the growth rate of the Fibonacci sequence and the properties of the golden ratio, he derived this beautiful upper bound. Due to this achievement, Lamé is considered one of the "fathers of complexity theory" in modern computer science.
+In the process of proving this theorem, Lamé discovered that the worst-case scenario (meaning the one taking the most steps) for the [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm occurs when the inputs are two consecutive **Fibonacci numbers**. By utilizing the growth rate of the Fibonacci sequence and the properties of the golden ratio, he derived this beautiful upper bound. Due to this achievement, Lamé is considered one of the "fathers of complexity theory" in modern computer science.
 
 ## 5. Contributions to Physics: Elasticity Theory and Lamé Parameters
 
@@ -141,7 +141,7 @@ In particular, to solve **Laplace's equation**, which describes heat conduction 
 
 A dramatic episode in Lamé's life was his attempt to prove **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** in 1847. In March of that year, Lamé proudly announced at the French Academy of Sciences that he had "completely proven [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)." His proof involved a highly innovative and powerful approach for the time: factoring the equation using cyclotomic complex numbers.
 
-However, immediately after his presentation, his colleague, mathematician Joseph Liouville, sharply pointed out that "the proof rests on the unproven, tacit assumption that 'unique prime factorization' also holds in the realm of complex numbers." Shortly after, a letter arrived from German mathematician Ernst Kummer indicating that "unique prime factorization does not generally hold," effectively rendering Lamé's proof invalid.
+However, immediately after his presentation, his colleague, mathematician Joseph Liouville, sharply pointed out that "the proof rests on the unproven, tacit assumption that 'unique prime factorization' also holds in the realm of complex numbers." Shortly after, a letter arrived from German mathematician [Ernst Kummer](https://kenji.blog/p/kummer/) indicating that "unique prime factorization does not generally hold," effectively rendering Lamé's proof invalid.
 
 This was a major setback for Lamé, but this series of discussions sparked the birth of Kummer's theory of "ideal numbers" (ideals), which later opened up the massive mathematical field of algebraic number theory. Lamé's bold challenge ultimately pushed the history of mathematics significantly forward.
 
@@ -155,6 +155,6 @@ In his later years, Lamé suffered the misfortune of losing his hearing, which m
 
 ## 9. Conclusion: What Lamé Left for the Modern Era
 
-Looking back on the life and achievements of Gabriel Lamé, it is clear that he perfectly fused the "abstract beauty of pure mathematics" with the "utility of applied mathematics and physics."
+Looking back on the life and achievements of [Gabriel Lamé](https://kenji.blog/p/lame/), it is clear that he perfectly fused the "abstract beauty of pure mathematics" with the "utility of applied mathematics and physics."
 
 On the first-floor balcony of the Eiffel Tower, the names of 72 great scientists who contributed to French science and technology are engraved, and among them proudly stands the name Lamé (LAMÉ). The theorems, constants, and innovative approaches he left behind continue to live on today at the cutting edge of science and technology, in the hands of modern engineers and mathematicians.

@@ -12,17 +12,17 @@ tags:
   - "Matematika terapan"
 ---
 
-## Pengantar: Apa itu Transformasi Laplace?
+## Pengantar: Apa itu [Transformasi Laplace](https://kenji.blog/p/laplace-transform/)?
 
-Dalam bidang seperti fisika, teknik, dan ekonomi, **persamaan diferensial** adalah alat penting untuk menggambarkan fenomena yang berubah seiring waktu. Namun, menyelesaikan persamaan diferensial yang kompleks secara langsung terkadang bisa sangat sulit. Di sinilah **Transformasi Laplace** (Laplace Transform) berperan.
+Dalam bidang seperti fisika, teknik, dan ekonomi, **persamaan diferensial** adalah alat penting untuk menggambarkan fenomena yang berubah seiring waktu. Namun, menyelesaikan persamaan diferensial yang kompleks secara langsung terkadang bisa sangat sulit. Di sinilah **[Transformasi Laplace](https://kenji.blog/p/laplace-transform/)** ([Laplace Transform](https://kenji.blog/p/laplace-transform/)) berperan.
 
 Secara sederhana, transformasi Laplace adalah "alat ajaib yang mengubah persamaan diferensial yang sulit menjadi persamaan aljabar sederhana (persamaan yang dapat diselesaikan hanya dengan menggunakan empat operasi dasar aritmatika)". Prosedurnya melibatkan pemetaan masalah kompleks yang diekspresikan dalam domain waktu ($t$) ke domain frekuensi kompleks ($s$), menyelesaikannya dengan mudah di sana, dan kemudian mentransformasikannya kembali ke domain waktu.
 
 Dalam artikel ini, kami akan menjelaskan secara rinci segala hal mulai dari dasar-dasar transformasi Laplace hingga sifat-sifatnya yang kuat dan langkah-langkah konkret untuk benar-benar menyelesaikan persamaan diferensial.
 
-## Definisi Transformasi Laplace
+## Definisi [Transformasi Laplace](https://kenji.blog/p/laplace-transform/)
 
-Transformasi Laplace $\mathcal{L}\{f(t)\}$ untuk fungsi bernilai riil $f(t)$ yang didefinisikan untuk waktu $t \ge 0$ didefinisikan oleh integral tak wajar berikut:
+[Transformasi Laplace](https://kenji.blog/p/laplace-transform/) $\mathcal{L}\{f(t)\}$ untuk fungsi bernilai riil $f(t)$ yang didefinisikan untuk waktu $t \ge 0$ didefinisikan oleh integral tak wajar berikut:
 
 $$
 F(s) = \mathcal{L}\{f(t)\} = \int_{0}^{\infty} f(t) e^{-st} dt
@@ -32,16 +32,16 @@ Di sini, $s$ adalah variabel kompleks (frekuensi kompleks) dan dinyatakan sebaga
 
 Agar integral ini tidak menyebar (divergen) hingga tak terhingga tetapi ada sebagai nilai terbatas (konvergen), bagian nyata dari $s$, $\sigma$, harus lebih besar dari nilai tertentu. Wilayah yang memenuhi kondisi ini disebut **wilayah konvergensi**.
 
-## Mengapa Transformasi Laplace Berguna?
+## Mengapa [Transformasi Laplace](https://kenji.blog/p/laplace-transform/) Berguna?
 
 Alasan mengapa transformasi Laplace sangat kuat dalam menyelesaikan persamaan diferensial terutama terletak pada dua poin berikut:
 
 1. **Diferensiasi berubah menjadi "perkalian"**: Operasi diferensiasi $d/dt$ dalam domain waktu diubah menjadi operasi aljabar sederhana "mengalikan dengan $s$" dalam domain $s$.
 2. **Kondisi awal digabungkan secara alami**: Karena rumus transformasi menyertakan nilai awal seperti $f(0)$, ini menghemat kesulitan mengganti kondisi awal nanti dan membantu mengurangi kesalahan perhitungan.
 
-## Sifat Penting Transformasi Laplace
+## Sifat Penting [Transformasi Laplace](https://kenji.blog/p/laplace-transform/)
 
-Transformasi Laplace memiliki beberapa sifat penting yang secara drastis menyederhanakan perhitungan.
+[Transformasi Laplace](https://kenji.blog/p/laplace-transform/) memiliki beberapa sifat penting yang secara drastis menyederhanakan perhitungan.
 
 ### 1. Linearitas
 
@@ -59,7 +59,7 @@ $$
 \mathcal{L}\{e^{at} f(t)\} = F(s - a)
 $$
 
-### 3. Transformasi Laplace dari Turunan
+### 3. [Transformasi Laplace](https://kenji.blog/p/laplace-transform/) dari Turunan
 
 Ini adalah rumus paling penting untuk menyelesaikan persamaan diferensial.
 
@@ -107,7 +107,7 @@ $$
 
 Misalkan kondisi awalnya adalah $q(0) = 0$.
 
-**Langkah 1: Transformasi Laplace**
+**Langkah 1: [Transformasi Laplace](https://kenji.blog/p/laplace-transform/)**
 Ambil transformasi Laplace dari kedua sisi. Misalkan transformasi Laplace dari $q(t)$ dinotasikan sebagai $Q(s)$.
 
 $$
@@ -133,7 +133,7 @@ $$
 Q(s) = C E \left( \frac{1}{s} - \frac{1}{s + \frac{1}{RC}} \right)
 $$
 
-**Langkah 3: Transformasi Laplace Invers**
+**Langkah 3: [Transformasi Laplace](https://kenji.blog/p/laplace-transform/) Invers**
 Kembali ke domain waktu menggunakan tabel transformasi. Manfaatkan fakta bahwa $\frac{1}{s}$ kembali ke $1$, dan $\frac{1}{s + a}$ kembali ke $e^{-at}$.
 
 $$
@@ -144,6 +144,6 @@ Ini adalah solusi yang diinginkan. Kita berhasil menurunkan keadaan di mana muat
 
 ## Kesimpulan
 
-Transformasi Laplace mungkin tampak seperti konsep yang abstrak dan sulit pada pandangan pertama. Namun, berkat sifatnya yang kuat yaitu "mengubah diferensiasi menjadi perkalian", ia adalah alat yang sangat diperlukan yang secara drastis menyederhanakan analisis sistem yang kompleks dalam teknik dan fisika.
+[Transformasi Laplace](https://kenji.blog/p/laplace-transform/) mungkin tampak seperti konsep yang abstrak dan sulit pada pandangan pertama. Namun, berkat sifatnya yang kuat yaitu "mengubah diferensiasi menjadi perkalian", ia adalah alat yang sangat diperlukan yang secara drastis menyederhanakan analisis sistem yang kompleks dalam teknik dan fisika.
 
 Dengan terlebih dahulu memahami tabel transformasi dasar dan mencoba menyelesaikan persamaan diferensial sederhana dengan tangan, Anda seharusnya dapat menyadari nilai sebenarnya dari "teknik ajaib" ini.

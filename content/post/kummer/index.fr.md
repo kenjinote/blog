@@ -8,7 +8,7 @@ categories: ["mathématiques", "biographie"]
 tags: ["Ernst Kummer", "Dernier théorème de Fermat", "Nombres idéaux", "Théorie algébrique des nombres", "Nombres premiers réguliers"]
 ---
 
-# Ernst Kummer : Père des nombres idéaux et l'aube de la théorie algébrique des nombres
+# [Ernst Kummer](https://kenji.blog/p/kummer/) : Père des nombres idéaux et l'aube de la théorie algébrique des nombres
 
 Dans l'histoire des mathématiques, il n'est pas rare que la confrontation à un problème ouvert spécifique ouvre des domaines de recherche entièrement nouveaux. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) est un géant des mathématiques allemand du XIXe siècle qui a créé exactement un tel tournant historique. Au cours de sa lutte acharnée avec le **dernier théorème de Fermat** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ), il a introduit le concept révolutionnaire de **nombres idéaux** ( **Ideal Numbers** ), jetant les bases de la théorie algébrique moderne des nombres.
 
@@ -20,7 +20,7 @@ Dans cet article, nous plongerons profondément dans la vie tumultueuse de Kumme
 
 ### Jeunesse et abandon de la théologie
 
-Ernst Kummer est né le 29 janvier 1810 à Sorau ( **Sorau** ), dans le Royaume de Prusse (aujourd'hui en Pologne). Son père, médecin, est décédé alors que Kummer était très jeune, et il a été élevé par sa mère. Bien que pauvre, Kummer a reçu une éducation dévouée et est entré à l'Université de Halle en 1828.
+[Ernst Kummer](https://kenji.blog/p/kummer/) est né le 29 janvier 1810 à Sorau ( **Sorau** ), dans le Royaume de Prusse (aujourd'hui en Pologne). Son père, médecin, est décédé alors que Kummer était très jeune, et il a été élevé par sa mère. Bien que pauvre, Kummer a reçu une éducation dévouée et est entré à l'Université de Halle en 1828.
 
 Initialement, il s'est spécialisé en théologie protestante, mais sous l'influence du professeur Heinrich Ferdinand Scherk ( **Heinrich Ferdinand Scherk** ), il a été captivé par la beauté et la profondeur des mathématiques. Guidé par le professeur Scherk, Kummer s'est consacré aux mathématiques et a obtenu son doctorat seulement trois ans plus tard, en 1831.
 
@@ -32,9 +32,9 @@ L'un de ces étudiants était Leopold Kronecker ( **Leopold Kronecker** ), qui d
 
 ### La gloire en tant que professeur d'université
 
-Ses remarquables résultats de recherche ont attiré l'attention des plus grands mathématiciens de l'époque. En 1842, sur recommandation de Carl Gustav Jacob Jacobi ( **Carl Gustav Jacob Jacobi** ) et de Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), Kummer devient professeur titulaire à l'Université de Breslau. De plus, en 1855, il est nommé professeur à l'Université de Berlin pour succéder à Dirichlet, parti pour Göttingen.
+Ses remarquables résultats de recherche ont attiré l'attention des plus grands mathématiciens de l'époque. En 1842, sur recommandation de [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/)** ) et de Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), Kummer devient professeur titulaire à l'Université de Breslau. De plus, en 1855, il est nommé professeur à l'Université de Berlin pour succéder à Dirichlet, parti pour Göttingen.
 
-À l'Université de Berlin, Kummer, avec Karl Weierstrass ( **Karl Weierstrass** ) et son ancien élève Kronecker, a fait de Berlin un centre mondial des mathématiques. Ses cours étaient extrêmement clairs et passionnés, attirant de nombreux étudiants brillants de toute l'Europe.
+À l'Université de Berlin, Kummer, avec [Karl Weierstrass](https://kenji.blog/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** ) et son ancien élève Kronecker, a fait de Berlin un centre mondial des mathématiques. Ses cours étaient extrêmement clairs et passionnés, attirant de nombreux étudiants brillants de toute l'Europe.
 
 ---
 
@@ -54,7 +54,7 @@ Cette anecdote est encore racontée aujourd'hui parmi les mathématiciens comme 
 
 ---
 
-## Le dernier théorème de Fermat et l'effondrement de la factorisation unique
+## [Le dernier théorème de Fermat](https://kenji.blog/p/fermats-last-theorem/) et l'effondrement de la factorisation unique
 
 La plus grande réussite de Kummer fut son approche du **dernier théorème de Fermat** en théorie des nombres. Le théorème stipule ce qui suit :
 
@@ -64,7 +64,7 @@ $$
 
 Il n'existe aucune solution entière positive $(x, y, z)$ satisfaisant cette équation.
 
-En 1847, les mathématiciens français Gabriel Lamé ( **Gabriel Lamé** ) et Augustin-Louis Cauchy ( **Augustin-Louis Cauchy** ) annoncèrent avoir réussi à prouver ce théorème. Leur approche consistait à étendre la factorisation dans le domaine des nombres complexes (corps cyclotomiques).
+En 1847, les mathématiciens français [Gabriel Lamé](https://kenji.blog/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/p/lame/)** ) et [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** ) annoncèrent avoir réussi à prouver ce théorème. Leur approche consistait à étendre la factorisation dans le domaine des nombres complexes (corps cyclotomiques).
 
 En utilisant la racine primitive $p$-ième de l'unité $\zeta$ (où $\zeta^p = 1, \zeta \neq 1$), l'équation $x^p + y^p = z^p$ peut être factorisée comme suit :
 
@@ -138,7 +138,7 @@ Cette surface jouera plus tard un rôle vital dans un large éventail de domaine
 
 ## Conclusion
 
-Ernst Kummer a élargi le cadre même des mathématiques tout en s'attaquant au "puzzle insoluble" du dernier théorème de Fermat. Son idée de **nombres idéaux** est devenue un langage indispensable dans l'algèbre ultérieure et continue d'influencer chaque branche des mathématiques modernes.
+[Ernst Kummer](https://kenji.blog/p/kummer/) a élargi le cadre même des mathématiques tout en s'attaquant au "puzzle insoluble" du dernier théorème de Fermat. Son idée de **nombres idéaux** est devenue un langage indispensable dans l'algèbre ultérieure et continue d'influencer chaque branche des mathématiques modernes.
 
 Possédant le trait humain d'être mauvais en calcul, mais doté de la perspicacité nécessaire pour découvrir des "nombres idéaux invisibles" au-delà de l'intuition humaine, l'éclat de Kummer est vraiment digne du titre de génie. Les réalisations de Kummer nous enseignent l'importance de reconsidérer le cadre lui-même face à des problèmes apparemment impossibles.
 

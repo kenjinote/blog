@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. はじめに：素数という宇宙の神秘と[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)
 
-「素数（Prime Numbers）」は、1と自分自身でしか割り切れない自然数であり、数学の世界における「原子」とも呼ばれます。2, 3, 5, 7, 11, 13... と続くこの数列は、一見すると無秩序でランダムに現れるように見えます。古代ギリシャの数学者ユークリッドが「素数が無限に存在すること」を証明して以来、数え切れないほどの数学者たちがこの素数の並びに潜む規則性を解き明かそうと挑んできました。
+「素数（Prime Numbers）」は、1と自分自身でしか割り切れない自然数であり、数学の世界における「原子」とも呼ばれます。2, 3, 5, 7, 11, 13... と続くこの数列は、一見すると無秩序でランダムに現れるように見えます。古代ギリシャの数学者[ユークリッド](https://kenji.blog/p/euclid/)が「素数が無限に存在すること」を証明して以来、数え切れないほどの数学者たちがこの素数の並びに潜む規則性を解き明かそうと挑んできました。
 
-その素数の謎に最も肉薄したのが、1859年にドイツの数学者ベルンハルト・リーマン（Bernhard Riemann）が提唱した **「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)（Riemann Hypothesis）」** です。[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)は、現代数学において最も重要かつ未解決の難問の一つであり、クレイ数学研究所が定めるミレニアム懸賞問題の一つとして100万ドルの賞金が懸けられています。
+その素数の謎に最も肉薄したのが、1859年にドイツの数学者[ベルンハルト・リーマン](https://kenji.blog/p/riemann/)（[Bernhard Riemann](https://kenji.blog/p/riemann/)）が提唱した **「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)（Riemann Hypothesis）」** です。[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)は、現代数学において最も重要かつ未解決の難問の一つであり、クレイ数学研究所が定めるミレニアム懸賞問題の一つとして100万ドルの賞金が懸けられています。
 
 一見すると、素数の分布に関する純粋数学の難問は、私たちの日常生活とは無縁に思えるかもしれません。しかし、現代社会のインフラを支えるインターネットのセキュリティ、特に **RSA暗号や楕円曲線暗号（ECC）といった現代暗号技術** は、巨大な素数の性質に深く依存しています。
 
@@ -30,13 +30,13 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-15歳の天才数学者カール・フリードリヒ・[ガウス](https://kenji.blog/p/gauss/)（Carl Friedrich Gauss）は、膨大な素数の表を計算し、素数の出現頻度が自然対数 $\ln x$ に反比例して減少していくことを見出しました。つまり、ある数 $x$ の付近で素数が見つかる確率は約 $\frac{1}{\ln x}$ であると予想したのです。
+15歳の天才数学者カール・フリードリヒ・[ガウス](https://kenji.blog/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/p/gauss/)）は、膨大な素数の表を計算し、素数の出現頻度が自然対数 $\ln x$ に反比例して減少していくことを見出しました。つまり、ある数 $x$ の付近で素数が見つかる確率は約 $\frac{1}{\ln x}$ であると予想したのです。
 
 これを積分を用いて表現したものが、 **対数積分（Logarithmic integral）** $\text{Li}(x)$ です。
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-[ガウス](https://kenji.blog/p/gauss/)の予想は、後に1896年にジャック・アダマールとシャルル＝ジャン・ド・ラ・ヴァレ・プーサンによって独立に証明され、 **素数定理（Prime Number Theorem, PNT）** として確立されました。
+[ガウス](https://kenji.blog/p/gauss/)の予想は、後に1896年にジャック・アダマールとシャルル＝ジャン・ド・ラ・ヴァレ・プーサンによって独立に証明され、 **素数定理（[Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT）** として確立されました。
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. リーマンゼータ関数と[オイラー](https://kenji.blog/p/euler/)積
 
-素数の分布を解析する上で最強の武器となるのが **リーマンゼータ関数（Riemann Zeta Function）** です。もともとはレオンハルト・[オイラー](https://kenji.blog/p/euler/)（Leonhard Euler）によって実数 $s > 1$ に対して定義された無限級数でした。
+素数の分布を解析する上で最強の武器となるのが **リーマンゼータ関数（Riemann Zeta Function）** です。もともとはレオンハルト・[オイラー](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）によって実数 $s > 1$ に対して定義された無限級数でした。
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -74,7 +74,7 @@ $$ \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}} = \left( \frac{1}{1 -
 
 $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s) $$
 
-ここで $\Gamma(x)$ はガンマ関数です。この等式により、右半平面の性質から左半平面の性質を知ることができます。
+ここで $\Gamma(x)$ は[ガンマ関数](https://kenji.blog/p/gamma-function/)です。この等式により、右半平面の性質から左半平面の性質を知ることができます。
 
 ### 零点（Zeros of the Zeta Function）
 ゼータ関数の値が 0 になる複素数 $s$ を「零点」と呼びます。

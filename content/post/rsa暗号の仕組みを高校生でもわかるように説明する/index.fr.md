@@ -139,7 +139,7 @@ Cette propriété agit comme la « porte dérobée secrète (trapdoor) » de la 
 
 ### 4.2 Le théorème d'Euler
 
-Leonhard Euler a prouvé le magnifique théorème suivant en utilisant cette $\phi(N)$.
+[Leonhard Euler](https://kenji.blog/p/euler/) a prouvé le magnifique théorème suivant en utilisant cette $\phi(N)$.
 
 **Théorème d'Euler :**
 Si les entiers $a$ et $N$ sont premiers entre eux, la congruence suivante est vraie :
@@ -267,11 +267,11 @@ Si vous exécutez `(48 ** 103) % 143` sur une calculatrice, le résultat est mag
 
 ---
 
-## 8. Comment trouver la clé privée $d$ : L'algorithme d'Euclide étendu
+## 8. Comment trouver la clé privée $d$ : [L'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)](https://kenji.blog/p/euclidean-algorithm/) étendu
 
-Dans l'exemple de calcul manuel, nous avons trouvé $k$ par intuition pour découvrir $d=103$, mais cette méthode est impossible lorsque les nombres atteignent des centaines de chiffres. Dans les programmes réels, nous utilisons un algorithme appelé **« algorithme d'Euclide étendu »**.
+Dans l'exemple de calcul manuel, nous avons trouvé $k$ par intuition pour découvrir $d=103$, mais cette méthode est impossible lorsque les nombres atteignent des centaines de chiffres. Dans les programmes réels, nous utilisons un algorithme appelé **« algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) étendu »**.
 
-Résoudre $7d \equiv 1 \pmod{120}$ équivaut à trouver des entiers $d, y$ qui satisfont $7d + 120y = 1$. En calculant à l'envers avec l'algorithme d'Euclide, nous pouvons le trouver mécaniquement.
+Résoudre $7d \equiv 1 \pmod{120}$ équivaut à trouver des entiers $d, y$ qui satisfont $7d + 120y = 1$. En calculant à l'envers avec l'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/), nous pouvons le trouver mécaniquement.
 
 1. $120 \div 7 = 17$ reste $1$ 
 2. En transformant cela, $1 = 120 - 17 \times 7$

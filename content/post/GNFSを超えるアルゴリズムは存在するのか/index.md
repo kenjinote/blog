@@ -42,7 +42,7 @@ $$
 
 ## 3. GNFS（一般数体篩法）のアルゴリズム全容と数学的構造
 
-GNFSは非常に複雑で高度な数学的基盤を持っています。基本的なアイデアは、フェルマーの小定理や二次篩法（QS）の延長線上にあり、合同式 $X^2 \equiv Y^2 \pmod n$ を満たし、かつ $X \not\equiv \pm Y \pmod n$ となる非自明な組 $(X, Y)$ を見つけることで、$n$ の因数 $\gcd(X-Y, n)$ を導出するというものです。
+GNFSは非常に複雑で高度な数学的基盤を持っています。基本的なアイデアは、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)や二次篩法（QS）の延長線上にあり、合同式 $X^2 \equiv Y^2 \pmod n$ を満たし、かつ $X \not\equiv \pm Y \pmod n$ となる非自明な組 $(X, Y)$ を見つけることで、$n$ の因数 $\gcd(X-Y, n)$ を導出するというものです。
 
 しかし、GNFSの真髄は、これを有理数体 $\mathbb{Q}$ のみで行うのではなく、代数体（Algebraic Number Field）と呼ばれる拡大体 $\mathbb{Q}(\alpha)$ と有理数体の両方で同時に「滑らかな数（Smooth numbers）」を探索し、準同型写像を通じて合同関係を構築する点にあります。
 

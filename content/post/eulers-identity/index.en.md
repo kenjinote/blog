@@ -8,9 +8,9 @@ categories: ["mathematics"]
 tags: ["Euler", "Math", "Science"]
 ---
 
-# What is Euler's Identity?
+# What is [Euler's Identity](https://kenji.blog/p/eulers-identity/)?
 
-**Euler's Identity** is known as the most beautiful and profound relational equation in mathematics. This equation connects five fundamental mathematical constants that appear from completely different fields in a surprisingly simple form.
+**[Euler's Identity](https://kenji.blog/p/eulers-identity/)** is known as the most beautiful and profound relational equation in mathematics. This equation connects five fundamental mathematical constants that appear from completely different fields in a surprisingly simple form.
 
 $$
 e^{i\pi} + 1 = 0
@@ -63,7 +63,7 @@ In this way, a surprisingly simple equation is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -84,7 +84,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -105,7 +105,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -126,7 +126,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -147,7 +147,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -168,7 +168,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -189,7 +189,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -210,7 +210,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -231,7 +231,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 
@@ -252,7 +252,7 @@ By substituting $x = ix$ into this and rearranging, Euler's formula is derived.
 
 ## Historical Background
 
-Leonhard Euler was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
+[Leonhard Euler](https://kenji.blog/p/euler/) was a leading mathematician of the 18th century, who left behind achievements in a wide range of fields including physics, astronomy, and logic. This identity, which bears his name, can be said to be one of the culminations of his extensive research.
 
 ### Discovery of the Complex Exponential Function
 

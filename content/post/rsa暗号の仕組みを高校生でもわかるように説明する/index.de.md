@@ -139,7 +139,7 @@ Diese Eigenschaft fungiert als „geheime Hintertür (Trapdoor)“ der RSA-Versc
 
 ### 4.2 Der Satz von Euler
 
-Leonhard Euler bewies mit Hilfe dieser Funktion $\phi(N)$ den folgenden schönen Satz.
+[Leonhard Euler](https://kenji.blog/p/euler/) bewies mit Hilfe dieser Funktion $\phi(N)$ den folgenden schönen Satz.
 
 **Der Satz von Euler:**
 Wenn eine ganze Zahl $a$ und $N$ teilerfremd sind, gilt die folgende Kongruenz:

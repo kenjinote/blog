@@ -124,7 +124,7 @@ As a result, he showed that the number would not exceed $8 \times 10^{63}$ (in m
 
 In 1906, a palimpsest (a manuscript whose text was scraped off and reused) containing many of Archimedes' lost works was discovered in Constantinople (modern-day Istanbul). This "Archimedes Palimpsest" contained an invaluable treatise titled "Method of Mechanical Theorems."
 
-In this work, Archimedes reveals his "thought process" on how he arrived at numerous geometric discoveries. He divided figures into collections of infinitely thin "lines" or "planes" and guessed their areas and volumes using a mechanical model of balancing them on a scale. This approach is essentially the same as the "integral calculus" established in later eras by Isaac Newton and Gottfried Leibniz, showing that Archimedes had arrived just a few steps short of the concept of calculus.
+In this work, Archimedes reveals his "thought process" on how he arrived at numerous geometric discoveries. He divided figures into collections of infinitely thin "lines" or "planes" and guessed their areas and volumes using a mechanical model of balancing them on a scale. This approach is essentially the same as the "integral calculus" established in later eras by [Isaac Newton](https://kenji.blog/p/newton/) and [Gottfried Leibniz](https://kenji.blog/p/leibniz/), showing that Archimedes had arrived just a few steps short of the concept of calculus.
 
 ## 3.6 Archimedean Solids
 
@@ -166,7 +166,7 @@ It is said to have been invented while he was staying in Egypt to pump water fro
 
 # 5. Influence on Posterity and Legacy
 
-The works left by Archimedes became a bible for scholars from the Hellenistic period to the Roman era, and later in the medieval Arabic world and Renaissance Europe. Galileo Galilei praised Archimedes as a "superhuman figure" and enthusiastically studied his methods. Johannes Kepler, René Descartes, and Newton, who perfected calculus, were also greatly influenced by Archimedes' writings, directly and indirectly.
+The works left by Archimedes became a bible for scholars from the Hellenistic period to the Roman era, and later in the medieval Arabic world and Renaissance Europe. Galileo Galilei praised Archimedes as a "superhuman figure" and enthusiastically studied his methods. Johannes Kepler, [René Descartes](https://kenji.blog/p/descartes/), and Newton, who perfected calculus, were also greatly influenced by Archimedes' writings, directly and indirectly.
 
 His spirit of inquiry and methodology continue to shine not merely as ancient relics, but as the archetype of scientific thought. Archimedes is the very person who single-handedly embodied the three pillars of modern science: rigorous proof in mathematics, mathematical modeling of physical phenomena, and practical technological development applying theory.
 

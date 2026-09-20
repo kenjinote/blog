@@ -32,7 +32,7 @@ Sin embargo, la respuesta matemática correcta es **"aproximadamente 0,98% (meno
 
 ¿Por qué, a pesar de tener una precisión del 99%, la probabilidad real termina siendo menor al 1%?
 
-## El Teorema de Bayes y la visualización del total
+## El [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) y la visualización del total
 
 La clave para resolver este problema no es solo la precisión de la prueba, sino considerar **"qué tan rara es originalmente esa enfermedad (tasa base / probabilidad previa)"**.
 Visualicemos este fenómeno contraintuitivo utilizando una gran población de 1 millón de personas.
@@ -87,7 +87,7 @@ A pesar de que te hayan dicho "positivo", la probabilidad de que estés sano (fa
 
 ## ¿Por qué se equivoca la intuición?
 
-Este fenómeno se explica matemáticamente por el **"Teorema de Bayes"**, que calcula probabilidades condicionales, pero el cerebro humano es muy malo en este cálculo.
+Este fenómeno se explica matemáticamente por el **"[Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)"**, que calcula probabilidades condicionales, pero el cerebro humano es muy malo en este cálculo.
 
 La razón por la que cometemos errores es que nos distraemos con la información individual e intensa que se nos proporciona de inmediato ("¡El resultado de tu prueba es positivo! ¡La precisión es del 99%!"), e ignoramos los enormes y aburridos datos estadísticos de fondo ("Para empezar, solo 1 de cada 10.000 personas tiene esta enfermedad (tasa base)").
 

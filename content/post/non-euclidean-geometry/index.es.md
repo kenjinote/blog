@@ -8,9 +8,9 @@ categories: ["mathematics", "physics"]
 tags: ["Geometría", "Relatividad", "Historia de la Ciencia", "Matemáticas"]
 ---
 
-## 1. Introducción: La atadura de Euclides
+## 1. Introducción: La atadura de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)
 
-En el siglo III a.C., el matemático griego antiguo Euclides sistematizó axiomáticamente los conocimientos geométricos de su tiempo en su libro *Los Elementos*. Presentó 5 postulados (demandas), pero el quinto postulado, el llamado **postulado de las paralelas**, era más complejo que los otros cuatro y terminaría atormentando a muchos matemáticos.
+En el siglo III a.C., el matemático griego antiguo [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) sistematizó axiomáticamente los conocimientos geométricos de su tiempo en su libro *Los Elementos*. Presentó 5 postulados (demandas), pero el quinto postulado, el llamado **postulado de las paralelas**, era más complejo que los otros cuatro y terminaría atormentando a muchos matemáticos.
 
 $$
 \text{Quinto postulado: Si una línea recta corta a otras dos rectas y forma de un mismo lado ángulos interiores cuya suma es menor que dos ángulos rectos, las dos rectas, prolongadas indefinidamente, se cortarán del lado en el que están los ángulos menores que dos rectos.}
@@ -34,7 +34,7 @@ graph TD
 
 ## 3. El descubrimiento del "espacio curvo": El nacimiento de la geometría hiperbólica
 
-En el siglo XIX, finalmente ocurrió una revolución. El alemán Carl Friedrich Gauss, el húngaro János Bolyai y el ruso Nikolai Lobachevsky llegaron de forma independiente a la conclusión de que "el quinto postulado es independiente de los demás postulados, y existe una geometría completamente nueva en la que este no se cumple".
+En el siglo XIX, finalmente ocurrió una revolución. El alemán [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), el húngaro János Bolyai y el ruso Nikolai Lobachevsky llegaron de forma independiente a la conclusión de que "el quinto postulado es independiente de los demás postulados, y existe una geometría completamente nueva en la que este no se cumple".
 
 La geometría que descubrieron se llama actualmente **geometría hiperbólica**. En este espacio, existen "infinitas" líneas paralelas que pasan por un punto exterior a una recta. Además, la suma de los ángulos interiores de un triángulo es siempre menor a 180 grados.
 
@@ -46,7 +46,7 @@ Debido a la naturaleza tan innovadora de este descubrimiento, Gauss temió la in
 
 ## 4. Geometría de Riemann: Generalización del concepto de espacio
 
-El siguiente gran salto en la geometría no euclidiana fue dado por Bernhard Riemann, estudiante de Gauss. En su conferencia de habilitación de 1854, Riemann presentó ideas revolucionarias sobre los fundamentos de la geometría.
+El siguiente gran salto en la geometría no euclidiana fue dado por [Bernhard Riemann](https://kenji.blog/p/riemann/), estudiante de Gauss. En su conferencia de habilitación de 1854, Riemann presentó ideas revolucionarias sobre los fundamentos de la geometría.
 
 Introdujo el **tensor métrico**, que define localmente la curvatura del espacio, y construyó una geometría más general (**geometría de Riemann**) en la que la dimensión y la curvatura del espacio pueden variar según la ubicación.
 
@@ -80,6 +80,6 @@ En la ecuación de Einstein anterior, el lado izquierdo representa la estructura
 
 ## 6. Conclusión
 
-La exploración de la geometría no euclidiana, que comenzó como una pequeña duda sobre el quinto postulado de Euclides, rompió las suposiciones intuitivas humanas sobre el espacio y demostró la libertad de las matemáticas. Y finalmente culminó en la teoría de la relatividad general, que desentraña la estructura fundamental del universo.
+La exploración de la geometría no euclidiana, que comenzó como una pequeña duda sobre el quinto postulado de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/), rompió las suposiciones intuitivas humanas sobre el espacio y demostró la libertad de las matemáticas. Y finalmente culminó en la teoría de la relatividad general, que desentraña la estructura fundamental del universo.
 
 La búsqueda de la lógica pura en las matemáticas se convirtió más tarde en un lenguaje indispensable para describir las verdades más profundas del mundo físico. La historia de la geometría no euclidiana nos enseña la grandeza del intelecto humano y los sorprendentes misterios del mundo natural.

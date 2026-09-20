@@ -270,7 +270,7 @@ $X^2 - Y^2 \equiv 0 \pmod N$
 Das heißt, $(X-Y)(X+Y)$ ist ein Vielfaches von $N$.
 
 Wenn $X \not\equiv \pm Y \pmod N$ (eine nicht-triviale Lösung) gilt, gibt es zwischen $(X-Y)$ und $N$ einen "gemeinsamen Teiler größer als 1 und kleiner als $N$".
-Wenn wir hier den Euklidischen Algorithmus anwenden, um ** $\gcd(X-Y, N)$ ** zu berechnen, finden wir die Primfaktoren von $N$ sehr leicht.
+Wenn wir hier den [Euklid](https://kenji.blog/p/euclid/)ischen Algorithmus anwenden, um ** $\gcd(X-Y, N)$ ** zu berechnen, finden wir die Primfaktoren von $N$ sehr leicht.
 
 Jedoch ist die Suche nach diesen $X$ und $Y$ wie die Suche nach der Nadel im Heuhaufen. Daher wählt GNFS den genialen Ansatz, ** "zwei Welten" ** zu erschaffen – die "Welt der realen ganzen Zahlen" und die "Welt der algebraischen Zahlkörper von Polynomen" – und die Berechnungen aufzuteilen.
 

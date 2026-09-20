@@ -10,7 +10,7 @@ slug: "doomsday-argument"
 
 ## 1. Pendahuluan: Apakah Kita Hidup di Era yang "Spesial"?
 
-Kapan umat manusia akan punah? Pertanyaan ini telah lama menjadi tema dalam agama, filsafat, dan fiksi ilmiah (SF). Namun, sejak tahun 1980-an, muncul para peneliti yang mencoba melakukan pendekatan matematis terhadap pertanyaan ini menggunakan **teori probabilitas** dan **inferensi Bayesian**. Itulah **Argumen Hari Kiamat (Doomsday Argument)** yang akan kita bahas kali ini.
+Kapan umat manusia akan punah? Pertanyaan ini telah lama menjadi tema dalam agama, filsafat, dan fiksi ilmiah (SF). Namun, sejak tahun 1980-an, muncul para peneliti yang mencoba melakukan pendekatan matematis terhadap pertanyaan ini menggunakan **teori probabilitas** dan **inferensi Bayesian**. Itulah **[Argumen Hari Kiamat (Doomsday Argument)](https://kenji.blog/p/doomsday-argument/)** yang akan kita bahas kali ini.
 
 Argumen Hari Kiamat pertama kali diajukan oleh fisikawan Brandon Carter, dan kemudian disempurnakan oleh filsuf John Leslie, astrofisikawan J. Richard Gott, dan Nick Bostrom. Hal yang mengejutkan dari argumen ini adalah kemampuannya untuk menarik prediksi yang sangat pesimis mengenai durasi kelangsungan hidup umat manusia hanya dari "prinsip probabilitas" dan "penalaran statistik" murni, tanpa menggunakan model perubahan iklim yang kompleks, simulasi perang nuklir, atau probabilitas tabrakan asteroid.
 
@@ -61,7 +61,7 @@ graph TD
 
 ## 4. Formulasi Matematika Menggunakan Inferensi Bayesian
 
-Mari kita formulasikan intuisi ini secara matematis dengan ketat menggunakan **inferensi Bayesian**. Teorema Bayes adalah teorema yang menunjukkan bagaimana kita harus memperbarui probabilitas suatu hipotesis (probabilitas posterior) ketika ada bukti baru (data observasi) yang diperoleh.
+Mari kita formulasikan intuisi ini secara matematis dengan ketat menggunakan **inferensi Bayesian**. [Teorema Bayes](https://kenji.blog/p/bayes-theorem/) adalah teorema yang menunjukkan bagaimana kita harus memperbarui probabilitas suatu hipotesis (probabilitas posterior) ketika ada bukti baru (data observasi) yang diperoleh.
 
 $$ P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)} $$
 
@@ -88,7 +88,7 @@ Selanjutnya, kita menghitung likelihood $P(E|H)$ di bawah setiap hipotesis. Berd
 $$ P(n | H_{DOOM}) = \frac{1}{N_{DOOM}} = \frac{1}{2 \times 10^{11}} $$
 $$ P(n | H_{BOOM}) = \frac{1}{N_{BOOM}} = \frac{1}{2 \times 10^{13}} $$
 
-Dengan menggunakan ini, kita menghitung probabilitas posterior untuk $H_{DOOM}$. Jika kita menjabarkan Teorema Bayes menggunakan Hukum Probabilitas Total, hasilnya adalah sebagai berikut:
+Dengan menggunakan ini, kita menghitung probabilitas posterior untuk $H_{DOOM}$. Jika kita menjabarkan [Teorema Bayes](https://kenji.blog/p/bayes-theorem/) menggunakan Hukum Probabilitas Total, hasilnya adalah sebagai berikut:
 
 $$ P(H_{DOOM} | n) = \frac{P(n | H_{DOOM}) P(H_{DOOM})}{P(n | H_{DOOM}) P(H_{DOOM}) + P(n | H_{BOOM}) P(H_{BOOM})} $$
 

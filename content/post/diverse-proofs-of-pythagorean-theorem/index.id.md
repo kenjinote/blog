@@ -36,9 +36,9 @@ graph TD
 
 ---
 
-## 1. Bukti Geometris Berdasarkan "Elements" karya Euclid
+## 1. Bukti Geometris Berdasarkan "Elements" karya [Euclid](https://kenji.blog/p/euclid/)
 
-Matematikawan Yunani kuno Euclid memberikan bukti visual dan teliti dalam bukunya "Elements" (Buku I, Proposisi 47), yang terkadang disebut sebagai **bukti Kincir Angin**.
+Matematikawan Yunani kuno [Euclid](https://kenji.blog/p/euclid/) memberikan bukti visual dan teliti dalam bukunya "Elements" (Buku I, Proposisi 47), yang terkadang disebut sebagai **bukti Kincir Angin**.
 
 ### Ide Bukti
 

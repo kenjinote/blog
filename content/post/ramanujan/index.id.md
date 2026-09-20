@@ -17,7 +17,7 @@ tags:
 
 ## Pendahuluan: Pria yang Menerima Rumus dari Para Dewa
 
-Srinivasa Ramanujan (1887–1920) adalah seorang jenius matematika India yang muncul seperti komet di dunia matematika awal abad ke-20 sebelum hidupnya yang tragis dan singkat berakhir. Meskipun hampir tidak memiliki pendidikan matematika formal, ia merumuskan banyak teorema dan rumus mencengangkan melalui intuisi murni dan wawasan uniknya. Buku catatannya yang masih ada terus memengaruhi penelitian mutakhir dalam matematika dan fisika modern, lebih dari seabad setelah kematiannya.
+[Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) (1887–1920) adalah seorang jenius matematika India yang muncul seperti komet di dunia matematika awal abad ke-20 sebelum hidupnya yang tragis dan singkat berakhir. Meskipun hampir tidak memiliki pendidikan matematika formal, ia merumuskan banyak teorema dan rumus mencengangkan melalui intuisi murni dan wawasan uniknya. Buku catatannya yang masih ada terus memengaruhi penelitian mutakhir dalam matematika dan fisika modern, lebih dari seabad setelah kematiannya.
 
 Dalam artikel ini, kami mendalami kehidupan Ramanujan yang bergejolak, pertemuannya yang menentukan nasib dengan matematikawan Inggris G.H. Hardy yang menemukannya, dan warisan matematika brilian yang ditinggalkannya. Hidupnya berdiri sebagai bukti kuat bagaimana hasrat dan bakat dapat mengatasi kesulitan dan mengubah dunia.
 

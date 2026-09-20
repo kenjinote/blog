@@ -10,13 +10,13 @@ tags: ["William Brouncker", "Pi", "Kettenbruch", "Pellsche Gleichung", "Royal So
 
 ## 1. Einleitung
 
-Das Europa des 17. Jahrhunderts befand sich inmitten einer wissenschaftlichen Revolution. Es war eine Ära, in der Mathematik und Physik dramatische Sprünge nach vorne machten, wie die Entdeckung der Infinitesimalrechnung durch Isaac Newton und Gottfried Wilhelm Leibniz verdeutlicht. Inmitten dieser Entwicklung war die Institution, die eine zentrale Rolle in der Entwicklung der britischen akademischen Welt spielte, die **Royal Society**.
+Das Europa des 17. Jahrhunderts befand sich inmitten einer wissenschaftlichen Revolution. Es war eine Ära, in der Mathematik und Physik dramatische Sprünge nach vorne machten, wie die Entdeckung der Infinitesimalrechnung durch [Isaac Newton](https://kenji.blog/p/newton/) und Gottfried Wilhelm Leibniz verdeutlicht. Inmitten dieser Entwicklung war die Institution, die eine zentrale Rolle in der Entwicklung der britischen akademischen Welt spielte, die **Royal Society**.
 
-Dieser Artikel bietet eine detaillierte Erklärung des Lebens und der bemerkenswerten mathematischen Errungenschaften von **William Brouncker**, der als erster Präsident der Royal Society fungierte und in der Geschichte als Mathematiker mit seiner „Kettenbruchdarstellung von Pi“ und der „Lösung der Pellschen Gleichung“ seine Spuren hinterließ. Brouncker interagierte mit den klügsten Köpfen Europas seiner Zeit und nahm sich zahlreicher herausfordernder Probleme an. Seine Errungenschaften trugen maßgeblich dazu bei, den Grundstein für die mathematisch strenge Behandlung des Unendlichkeitsbegriffs zu legen.
+Dieser Artikel bietet eine detaillierte Erklärung des Lebens und der bemerkenswerten mathematischen Errungenschaften von **[William Brouncker](https://kenji.blog/p/brouncker/)**, der als erster Präsident der Royal Society fungierte und in der Geschichte als Mathematiker mit seiner „Kettenbruchdarstellung von Pi“ und der „Lösung der Pellschen Gleichung“ seine Spuren hinterließ. Brouncker interagierte mit den klügsten Köpfen Europas seiner Zeit und nahm sich zahlreicher herausfordernder Probleme an. Seine Errungenschaften trugen maßgeblich dazu bei, den Grundstein für die mathematisch strenge Behandlung des Unendlichkeitsbegriffs zu legen.
 
 ## 2. Frühes Leben und Karriere
 
-William Brouncker (1620 - 5. April 1684) wurde als ältester Sohn von William Brouncker, 1. Viscount Brouncker, und Winifred Leigh geboren. Obwohl viele Details über seinen genauen Geburtsort und seine frühe Bildung unbekannt sind, wird angenommen, dass er an der Universität Oxford studierte und dort exzellente sprachliche Fähigkeiten und ein mathematisches Gespür entwickelte. Im Jahr 1645 wurde er nach dem Tod seines Vaters der 2. Viscount Brouncker.
+[William Brouncker](https://kenji.blog/p/brouncker/) (1620 - 5. April 1684) wurde als ältester Sohn von [William Brouncker](https://kenji.blog/p/brouncker/), 1. Viscount Brouncker, und Winifred Leigh geboren. Obwohl viele Details über seinen genauen Geburtsort und seine frühe Bildung unbekannt sind, wird angenommen, dass er an der Universität Oxford studierte und dort exzellente sprachliche Fähigkeiten und ein mathematisches Gespür entwickelte. Im Jahr 1645 wurde er nach dem Tod seines Vaters der 2. Viscount Brouncker.
 
 Zu dieser Zeit befand sich England in der chaotischen Phase der Puritanischen Revolution (Englischer Bürgerkrieg), aber Brouncker widmete sich mehr der akademischen Welt als der politischen Bühne. Er hatte ein besonders starkes Interesse an Mathematik und Musik und begann, seine eigenen Theorien aufzustellen. Im Jahr 1647 wurde ihm ein Doktortitel in Medizin von der Universität Oxford verliehen, aber sein Hauptinteresse galt stets den exakten Wissenschaften. Sein jüngerer Bruder, Henry Brouncker, war ebenfalls dafür bekannt, in der politischen und höfischen Welt aktiv zu sein, während er ein Interesse an Schach und Mathematik beibehielt.
 
@@ -24,7 +24,7 @@ Zu dieser Zeit befand sich England in der chaotischen Phase der Puritanischen Re
 
 Die Royal Society ist eine der ältesten wissenschaftlichen Gesellschaften der Welt, die sich der Verbesserung des naturwissenschaftlichen Wissens widmet. Ihre Ursprünge liegen in einer Versammlung, die sich nach einem Vortrag von Christopher Wren in London im Jahr 1660 bildete. Sie wurde offiziell 1662 nach Erhalt einer königlichen Charta (Royal Charter) von König Karl II. gegründet.
 
-Zum **ersten Präsidenten** dieser historischen Gesellschaft wurde William Brouncker gewählt. Während die Gesellschaft durch die Bemühungen von Robert Moray und anderen Gestalt annahm, diente Brouncker 15 Jahre lang, von 1662 bis 1677, als Präsident und widmete sich dem Aufbau der Fundamente der Gesellschaft.
+Zum **ersten Präsidenten** dieser historischen Gesellschaft wurde [William Brouncker](https://kenji.blog/p/brouncker/) gewählt. Während die Gesellschaft durch die Bemühungen von Robert Moray und anderen Gestalt annahm, diente Brouncker 15 Jahre lang, von 1662 bis 1677, als Präsident und widmete sich dem Aufbau der Fundamente der Gesellschaft.
 
 ```mermaid
 graph TD
@@ -40,7 +40,7 @@ Brouncker spielte eine entscheidende Rolle dabei, herausragende Wissenschaftler 
 
 ## 4. Mathematische Errungenschaft: Kettenbruchdarstellung von Pi
 
-Brounckers berühmteste mathematische Errungenschaft ist die Entdeckung des verallgemeinerten Kettenbruchs für die Kreiszahl $\pi$. Diese wurde in dem Buch *Arithmetica Infinitorum* (1655) des zeitgenössischen Mathematikers John Wallis vorgestellt, was sie weithin bekannt machte.
+Brounckers berühmteste mathematische Errungenschaft ist die Entdeckung des verallgemeinerten Kettenbruchs für die Kreiszahl $\pi$. Diese wurde in dem Buch *Arithmetica Infinitorum* (1655) des zeitgenössischen Mathematikers [John Wallis](https://kenji.blog/p/wallis/) vorgestellt, was sie weithin bekannt machte.
 
 ### Wallis' Formel und Brounckers Transformation
 
@@ -64,7 +64,7 @@ Kettenbrüche sind sehr mächtige Werkzeuge zur Approximation irrationaler Zahle
 
 ## 5. Mathematische Errungenschaft: Lösung der Pellschen Gleichung
 
-Eine weitere bedeutende Errungenschaft ist die Lösung der sogenannten **Pellschen Gleichung**. Die Pellsche Gleichung ist eine diophantische Gleichung (eine Polynomgleichung mit ganzzahligen Koeffizienten) in folgender Form für eine positive ganze Zahl $n$, die keine Quadratzahl ist:
+Eine weitere bedeutende Errungenschaft ist die Lösung der sogenannten **Pellschen Gleichung**. Die [Pellsche Gleichung](https://kenji.blog/p/pell-equation/) ist eine diophantische Gleichung (eine Polynomgleichung mit ganzzahligen Koeffizienten) in folgender Form für eine positive ganze Zahl $n$, die keine Quadratzahl ist:
 
 $$
 x^2 - n y^2 = 1 \quad (\text{wobei } x, y \text{ ganze Zahlen sind})
@@ -72,7 +72,7 @@ $$
 
 ### Fermats Herausforderung
 
-Im Jahr 1657 schickte der große französische Mathematiker Pierre de Fermat eine Herausforderung an die englischen Mathematiker, ganzzahlige Lösungen für diese Gleichung zu finden. Fermat nannte als Beispiele schwierige Fälle wie $n=61$.
+Im Jahr 1657 schickte der große französische Mathematiker [Pierre de Fermat](https://kenji.blog/p/fermat/) eine Herausforderung an die englischen Mathematiker, ganzzahlige Lösungen für diese Gleichung zu finden. Fermat nannte als Beispiele schwierige Fälle wie $n=61$.
 
 ### Brounckers Algorithmus
 
@@ -98,13 +98,13 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-Brouncker demonstrierte, dass mit seiner Methode selbst solch gigantische Lösungen systematisch abgeleitet werden können. Ironischerweise wurde diese Gleichung später aufgrund eines Missverständnisses von Leonhard Euler nach dem englischen Mathematiker John Pell benannt, aber der größte Beitrag zur Etablierung der Lösungsmethode gehört unbestreitbar Brouncker.
+Brouncker demonstrierte, dass mit seiner Methode selbst solch gigantische Lösungen systematisch abgeleitet werden können. Ironischerweise wurde diese Gleichung später aufgrund eines Missverständnisses von [Leonhard Euler](https://kenji.blog/p/euler/) nach dem englischen Mathematiker John Pell benannt, aber der größte Beitrag zur Etablierung der Lösungsmethode gehört unbestreitbar Brouncker.
 
 ## 6. Weitere Errungenschaften und späte Jahre
 
 ### Beiträge zur Musiktheorie
 
-Brouncker interessierte sich nicht nur für Mathematik, sondern auch für Musiktheorie. Er übersetzte René Descartes' *Musicae Compendium* ins Englische und veröffentlichte es anonym. Dabei übersetzte er es nicht nur, sondern fügte einen Anhang hinzu, in dem er sein eigenes Stimmungssystem (17-stufige gleichschwebende Stimmung) vorschlug, das eine Oktave in 17 gleiche Intervalle unterteilte. Dies war ein wegweisender Versuch, Tonleitern mithilfe von Logarithmen mathematisch zu analysieren.
+Brouncker interessierte sich nicht nur für Mathematik, sondern auch für Musiktheorie. Er übersetzte [René Descartes](https://kenji.blog/p/descartes/)' *Musicae Compendium* ins Englische und veröffentlichte es anonym. Dabei übersetzte er es nicht nur, sondern fügte einen Anhang hinzu, in dem er sein eigenes Stimmungssystem (17-stufige gleichschwebende Stimmung) vorschlug, das eine Oktave in 17 gleiche Intervalle unterteilte. Dies war ein wegweisender Versuch, Tonleitern mithilfe von Logarithmen mathematisch zu analysieren.
 
 ### Quadratur der Parabel und logarithmische Kurve
 
@@ -118,6 +118,6 @@ In seinen späteren Jahren, selbst nach seinem Rücktritt als Präsident der Roy
 
 ## 7. Fazit
 
-William Brouncker war ein herausragender Anführer und origineller Mathematiker, der die britische wissenschaftliche Gemeinschaft im 17. Jahrhundert vorantrieb. Seine Verdienste bei der Grundsteinlegung der modernen Wissenschaft als erster Präsident der Royal Society sind unermesslich. Darüber hinaus wurden seine mathematischen Errungenschaften, wie die Kettenbruchdarstellung von Pi und die Lösung der Pellschen Gleichung, zu bedeutenden Meilensteinen in der Entwicklung der Analysis, die sich mit dem Unendlichkeitsbegriff befasst, und der Zahlentheorie.
+[William Brouncker](https://kenji.blog/p/brouncker/) war ein herausragender Anführer und origineller Mathematiker, der die britische wissenschaftliche Gemeinschaft im 17. Jahrhundert vorantrieb. Seine Verdienste bei der Grundsteinlegung der modernen Wissenschaft als erster Präsident der Royal Society sind unermesslich. Darüber hinaus wurden seine mathematischen Errungenschaften, wie die Kettenbruchdarstellung von Pi und die Lösung der Pellschen Gleichung, zu bedeutenden Meilensteinen in der Entwicklung der Analysis, die sich mit dem Unendlichkeitsbegriff befasst, und der Zahlentheorie.
 
 Sein Ansatz symbolisiert die Übergangsphase von der strengen Geometrie zur Analysis unter Verwendung von Algebra und unendlichen Reihen. Während sein Name oft von Giganten wie Newton und Fermat in den Schatten gestellt wird, lässt sich der Reichtum der heutigen Mathematik ohne die Existenz von **Brouncker** nicht diskutieren. Seine intellektuelle Neugier und sein Forscherdrang leuchten auch nach Hunderten von Jahren als Schönheit der Mathematik vor uns.

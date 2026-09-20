@@ -8,7 +8,7 @@ categories: ["mathematics", "science"]
 tags: ["Geometri", "Gauss", "Teorema Pizza", "Theorema Egregium", "Geometri Diferensial"]
 ---
 
-Dalam dunia matematika, konsep yang sekilas terlihat abstrak dan sulit dipahami terkadang berguna di situasi yang tidak terduga dalam kehidupan sehari-hari kita. Salah satu contoh terbaik dari hal ini adalah ** Teorema Mengagumkan ** (Theorema Egregium) yang ditemukan oleh Carl Friedrich Gauss. Teorema ini dikenal sebagai salah satu hasil paling penting dan indah dalam bidang geometri diferensial.
+Dalam dunia matematika, konsep yang sekilas terlihat abstrak dan sulit dipahami terkadang berguna di situasi yang tidak terduga dalam kehidupan sehari-hari kita. Salah satu contoh terbaik dari hal ini adalah ** Teorema Mengagumkan ** (Theorema Egregium) yang ditemukan oleh [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). Teorema ini dikenal sebagai salah satu hasil paling penting dan indah dalam bidang geometri diferensial.
 
 Pada artikel ini, kita akan menggali lebih dalam, mulai dari makna matematis dari ** Teorema Mengagumkan ** ini, apa itu permukaan lengkung, hingga mengapa teorema ini sangat berguna ketika kita makan pizza.
 
@@ -35,7 +35,7 @@ graph TD
     A -->|"K = 0"| D("Bidang datar / Permukaan silinder (Kelengkungan nol)")
 ```
 
-## 2. Esensi dari Theorema Egregium (Teorema Mengagumkan)
+## 2. Esensi dari [Theorema Egregium (Teorema Mengagumkan)](https://kenji.blog/p/theorema-egregium/)
 
 Pada tahun 1828, Gauss menerbitkan sebuah makalah terobosan mengenai permukaan melengkung. Di sanalah ** Theorema Egregium ** (bahasa Latin yang berarti "Teorema Mengagumkan") diperkenalkan. Teorema ini menyatakan hal berikut:
 
@@ -92,10 +92,10 @@ Tidak hanya pada cara makan pizza, prinsip ini juga dapat ditemukan di mana-mana
 - ** Daun tanaman **: Banyak daun dan kelopak bunga secara alami berevolusi menjadi bentuk bergelombang untuk menahan angin dan beratnya sendiri.
 - ** Bangunan **: Pada struktur bangunan yang menutupi ruang besar dengan material tipis, seperti struktur cangkang (shell), kekuatan mekanis dan sifat geometris dari permukaan melengkung dimanfaatkan.
 
-Teorema yang ditemukan oleh Gauss ini, kemudian diperluas ke manifold berdimensi tinggi oleh muridnya, Bernhard Riemann (Geometri Riemann), dan pada akhirnya menjadi fondasi matematis dalam Teori Relativitas Umum Albert Einstein untuk mendeskripsikan gravitasi sebagai "lengkungan ruang-waktu".
+Teorema yang ditemukan oleh Gauss ini, kemudian diperluas ke manifold berdimensi tinggi oleh muridnya, [Bernhard Riemann](https://kenji.blog/p/riemann/) (Geometri Riemann), dan pada akhirnya menjadi fondasi matematis dalam Teori Relativitas Umum Albert Einstein untuk mendeskripsikan gravitasi sebagai "lengkungan ruang-waktu".
 
 ## 5. Penutup
 
 Di balik tindakan "melipat pinggiran pizza" yang kita lakukan secara tidak sadar, tersembunyi hukum matematika yang mendalam dan indah, yang bahkan terhubung dengan kosmologi Einstein.
 
-** Teorema Mengagumkan ** bisa dikatakan sebagai contoh yang paling lezat dan mudah dipahami yang menunjukkan bagaimana matematika abstrak menguasai dunia nyata. Saat Anda makan pizza berikutnya, silakan nikmati potongan yang dilipat ke dalam bentuk sempurna sambil mengenang Carl Friedrich Gauss dan penemuannya yang luar biasa.
+** Teorema Mengagumkan ** bisa dikatakan sebagai contoh yang paling lezat dan mudah dipahami yang menunjukkan bagaimana matematika abstrak menguasai dunia nyata. Saat Anda makan pizza berikutnya, silakan nikmati potongan yang dilipat ke dalam bentuk sempurna sambil mengenang [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) dan penemuannya yang luar biasa.

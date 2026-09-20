@@ -10,7 +10,7 @@ tags: ["Abel", "Aljabar", "Sejarah", "Matematika"]
 
 # 1. Pendahuluan: Jenius Muda Abel
 
-Dalam sejarah matematika, ada beberapa jenius yang meninggal di usia muda namun meninggalkan dampak yang menentukan bagi generasi mendatang. Di antara mereka, **Niels Henrik Abel** kelahiran Norwegia menonjol, bersama Évariste Galois, sebagai salah satu jenius tragis yang paling terkenal. Dalam hidupnya yang singkat, hanya 26 tahun, ia membuktikan bahwa "tidak ada solusi aljabar umum untuk persamaan derajat lima atau lebih tinggi", sebuah masalah yang telah mengganggu para matematikawan selama berabad-abad.
+Dalam sejarah matematika, ada beberapa jenius yang meninggal di usia muda namun meninggalkan dampak yang menentukan bagi generasi mendatang. Di antara mereka, **[Niels Henrik Abel](https://kenji.blog/p/abel/)** kelahiran Norwegia menonjol, bersama [Évariste Galois](https://kenji.blog/p/galois/), sebagai salah satu jenius tragis yang paling terkenal. Dalam hidupnya yang singkat, hanya 26 tahun, ia membuktikan bahwa "tidak ada solusi aljabar umum untuk persamaan derajat lima atau lebih tinggi", sebuah masalah yang telah mengganggu para matematikawan selama berabad-abad.
 
 Dalam artikel ini, kita akan mempelajari kehidupan Abel, yang didorong oleh hasratnya terhadap matematika terlepas dari kemiskinan dan penyakit, serta pencapaian monumentalnya seperti "Grup Abelian" dan "Integral Abelian".
 
@@ -18,7 +18,7 @@ Dalam artikel ini, kita akan mempelajari kehidupan Abel, yang didorong oleh hasr
 
 ## 2.1 Masa Kecil dan Pertemuan dengan Mentornya Holmboe
 
-Niels Henrik Abel lahir pada 5 Agustus 1802, di desa kecil Finnøy, Norwegia, sebagai putra seorang pendeta. Norwegia pada saat itu miskin secara ekonomi, dan keluarga Abel tidak terkecuali.
+[Niels Henrik Abel](https://kenji.blog/p/abel/) lahir pada 5 Agustus 1802, di desa kecil Finnøy, Norwegia, sebagai putra seorang pendeta. Norwegia pada saat itu miskin secara ekonomi, dan keluarga Abel tidak terkecuali.
 
 Takdirnya berubah secara signifikan ketika ia memasuki Sekolah Katedral di Oslo pada tahun 1817 dan bertemu dengan guru matematikanya, **Bernt Michael Holmboe**. Holmboe segera mengenali bakat luar biasa Abel dan mengajarinya matematika tingkat lanjut setingkat universitas. Dengan melahap karya-karya master seperti Euler, Lagrange, dan Laplace, Abel dengan cepat menyerap matematika mutakhir.
 
@@ -49,7 +49,7 @@ Secara umum tidak mungkin menyatakan akar-akar persamaan ini dalam jumlah suku y
 
 # 4. Perjalanan ke Eropa dan Pertemuan dengan Crelle
 
-Pada tahun 1825, Abel memperoleh beasiswa dari pemerintah Norwegia dan memiliki kesempatan untuk belajar di benua Eropa. Tujuannya adalah mengunjungi Paris, pusat matematika saat itu, dan Göttingen, tempat tinggal matematikawan hebat Carl Friedrich Gauss.
+Pada tahun 1825, Abel memperoleh beasiswa dari pemerintah Norwegia dan memiliki kesempatan untuk belajar di benua Eropa. Tujuannya adalah mengunjungi Paris, pusat matematika saat itu, dan Göttingen, tempat tinggal matematikawan hebat [Carl Friedrich Gauss](https://kenji.blog/p/gauss/).
 
 Abel mengirimkan makalahnya ke Gauss, tetapi Gauss mengabaikannya tanpa membacanya. Menyerah untuk bertemu Gauss, Abel menuju ke Berlin.
 
@@ -59,7 +59,7 @@ Di Berlin, dia bertemu **August Leopold Crelle**, seorang insinyur sipil dan pen
 
 Pada tahun 1826, Abel tiba di Paris. Di sini dia menyerahkan sebuah makalah kepada Akademi Ilmu Pengetahuan Prancis tentang "Teorema luas mengenai fungsi transenden", yang dapat dianggap sebagai mahakaryanya. Makalah ini berisi konten terobosan yang kemudian dikenal sebagai **Teorema Abel**.
 
-Namun, kemalangan kembali melanda. Matematikawan hebat **Augustin-Louis Cauchy**, yang ditugaskan untuk meninjaunya, salah meletakkan makalah Abel di tumpukan dokumen di kamarnya dan tidak pernah meninjaunya.
+Namun, kemalangan kembali melanda. Matematikawan hebat **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)**, yang ditugaskan untuk meninjaunya, salah meletakkan makalah Abel di tumpukan dokumen di kamarnya dan tidak pernah meninjaunya.
 
 Terdorong oleh keputusasaan, kekurangan dana, dan penyakit tuberkulosis yang semakin parah, Abel terpaksa meninggalkan Paris.
 
@@ -107,4 +107,4 @@ Teorema ini masih sering digunakan sampai sekarang dalam teori-teori seperti kel
 
 # 8. Kesimpulan
 
-Kehidupan Niels Henrik Abel benar-benar cocok dengan kata "tragedi". Namun, hasrat yang dia curahkan ke dalam matematika dan banyak teorema yang dia hasilkan tidak akan pernah pudar. Teori-teori yang ditinggalkannya terus memberikan inspirasi baru bagi para matematikawan hingga saat ini.
+Kehidupan [Niels Henrik Abel](https://kenji.blog/p/abel/) benar-benar cocok dengan kata "tragedi". Namun, hasrat yang dia curahkan ke dalam matematika dan banyak teorema yang dia hasilkan tidak akan pernah pudar. Teori-teori yang ditinggalkannya terus memberikan inspirasi baru bagi para matematikawan hingga saat ini.

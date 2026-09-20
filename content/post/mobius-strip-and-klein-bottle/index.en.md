@@ -37,7 +37,7 @@ graph TD
 
 ### 2.2 Mathematical Representation (Parameterization)
 
-The parametric representation of a Möbius strip in 3-dimensional Euclidean space $\mathbb{R}^3$ is as follows. It is expressed using parameters $u$ and $v$.
+The parametric representation of a Möbius strip in 3-dimensional [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an space $\mathbb{R}^3$ is as follows. It is expressed using parameters $u$ and $v$.
 
 $$
 \begin{aligned}

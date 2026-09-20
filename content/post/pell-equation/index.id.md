@@ -15,11 +15,11 @@ tags:
 
 # Pengantar
 
-Dalam bidang teori bilangan, **Persamaan Pell** (Pell's equation) dikenal sebagai salah satu persamaan Diophantine yang paling indah dan memiliki latar belakang teoretis yang dalam. Dalam artikel ini, kami akan memberikan penjelasan yang sangat rinci mulai dari definisi dasar dan sifat persamaan ini, hingga metode penyelesaian yang elegan dan efisien menggunakan pecahan berlanjut (Continued fractions), serta mekanisme untuk menghasilkan solusi tak terhingganya. Bagi siapa saja yang menyukai matematika, kami telah mencakup segalanya dari derivasi rumus hingga visualisasi algoritma dan implementasi menggunakan bahasa pemrograman.
+Dalam bidang teori bilangan, **[Persamaan Pell](https://kenji.blog/p/pell-equation/)** (Pell's equation) dikenal sebagai salah satu persamaan Diophantine yang paling indah dan memiliki latar belakang teoretis yang dalam. Dalam artikel ini, kami akan memberikan penjelasan yang sangat rinci mulai dari definisi dasar dan sifat persamaan ini, hingga metode penyelesaian yang elegan dan efisien menggunakan pecahan berlanjut (Continued fractions), serta mekanisme untuk menghasilkan solusi tak terhingganya. Bagi siapa saja yang menyukai matematika, kami telah mencakup segalanya dari derivasi rumus hingga visualisasi algoritma dan implementasi menggunakan bahasa pemrograman.
 
-## 1. Apa itu Persamaan Pell?
+## 1. Apa itu [Persamaan Pell](https://kenji.blog/p/pell-equation/)?
 
-Persamaan Pell mengacu pada persamaan Diophantine kuadrat dalam dua variabel yang memiliki bentuk berikut:
+[Persamaan Pell](https://kenji.blog/p/pell-equation/) mengacu pada persamaan Diophantine kuadrat dalam dua variabel yang memiliki bentuk berikut:
 
 $$ x^2 - ny^2 = 1 $$
 
@@ -32,9 +32,9 @@ Karena $x$, $y$, dan $k$ semuanya adalah bilangan bulat, $(x - ky)$ dan $(x + ky
 
 ## 2. Latar Belakang Sejarah: Pell, Fermat, dan Matematikawan India Kuno
 
-Meskipun persamaan ini menyandang nama "Pell," menjelajahi fakta-fakta sejarah mengungkapkan latar belakang yang agak aneh. Sebenarnya, orang pertama di Eropa modern yang mempelajari solusi umum untuk persamaan ini dan dengan kuat menegaskan bahwa solusi selalu ada adalah matematikawan hebat Prancis **Pierre de Fermat**.
+Meskipun persamaan ini menyandang nama "Pell," menjelajahi fakta-fakta sejarah mengungkapkan latar belakang yang agak aneh. Sebenarnya, orang pertama di Eropa modern yang mempelajari solusi umum untuk persamaan ini dan dengan kuat menegaskan bahwa solusi selalu ada adalah matematikawan hebat Prancis **[Pierre de Fermat](https://kenji.blog/p/fermat/)**.
 
-Kemudian, **Leonhard Euler** secara keliru menghubungkan nama matematikawan Inggris **John Pell** dengan persamaan ini, dan sejak itu dikenal luas sebagai "persamaan Pell". Pell sendiri tidak memainkan peran sentral dalam metode penyelesaian persamaan ini.
+Kemudian, **[Leonhard Euler](https://kenji.blog/p/euler/)** secara keliru menghubungkan nama matematikawan Inggris **John Pell** dengan persamaan ini, dan sejak itu dikenal luas sebagai "persamaan Pell". Pell sendiri tidak memainkan peran sentral dalam metode penyelesaian persamaan ini.
 
 Mundur lebih jauh ke belakang, matematikawan India **Brahmagupta** dan **Bhāskara II** menghitung solusi persamaan jenis ini menggunakan algoritma canggih yang disebut metode Chakravala, ratusan tahun sebelum Fermat. Sejarah penjelajahan oleh para matematikawan dari zaman kuno melalui Abad Pertengahan hingga era modern tertulis dalam persamaan ini.
 
@@ -44,7 +44,7 @@ Untuk persamaan Pell $x^2 - ny^2 = 1$, terlepas dari nilai $n$, selalu ada solus
 
 Namun, yang benar-benar diminati matematikawan adalah **solusi non-trivial** (non-trivial solution) di mana $y \neq 0$. Hebatnya, jika $n$ adalah bilangan bulat positif yang bukan kuadrat sempurna, secara matematis telah dibuktikan bahwa persamaan Pell memiliki **solusi non-trivial tak terhingga**. Selain itu, di antara solusi tak terhingga ini, solusi terkecil di mana baik $x$ maupun $y$ adalah bilangan bulat positif disebut **solusi fundamental** (fundamental solution), dan begitu ditemukan, semua solusi lainnya dapat dengan mudah dihasilkan melalui operasi aljabar.
 
-## 4. Hubungan Mendalam Antara Pecahan Berlanjut dan Persamaan Pell
+## 4. Hubungan Mendalam Antara Pecahan Berlanjut dan [Persamaan Pell](https://kenji.blog/p/pell-equation/)
 
 Alat yang paling kuat dan standar untuk secara efisien menemukan solusi fundamental adalah **pecahan berlanjut** (Continued fraction). Karena bilangan irasional $\sqrt{n}$ tidak dapat diwakili oleh pecahan terbatas, ini dapat diekspresikan dengan indah sebagai pecahan berlanjut reguler periodik yang berlanjut tanpa batas.
 
@@ -85,7 +85,7 @@ flowchart TD
 
 ## 6. Contoh Khusus: Ekspansi Pecahan Berlanjut dan Solusi Fundamental untuk n = 7
 
-Daripada hanya sekadar teori abstrak, mari kita telusuri perhitungan untuk kasus spesifik $n = 7$. Persamaan Pell menjadi $x^2 - 7y^2 = 1$.
+Daripada hanya sekadar teori abstrak, mari kita telusuri perhitungan untuk kasus spesifik $n = 7$. [Persamaan Pell](https://kenji.blog/p/pell-equation/) menjadi $x^2 - 7y^2 = 1$.
 
 Pertama, bagian bilangan bulat dari $\sqrt{7}$ adalah $a_0 = 2$. Dengan mengulangi operasi pengambilan kebalikan dari sisa bagian desimal dan mengekstraksi bagian bilangan bulat, ekspansi pecahan berlanjut dari $\sqrt{7}$ ditemukan sebagai berikut:
 
@@ -199,7 +199,7 @@ Ketika kode ini dijalankan, solusi fundamental $(x, y) = (8, 3)$ akan dihasilkan
 
 ## 10. Jembatan ke Teori Bilangan Aljabar: Hubungan dengan Teorema Unit Dirichlet
 
-Persamaan Pell bukan sekadar teka-teki bilangan bulat. Dalam matematika modern, itu diposisikan sebagai pintu gerbang vital menuju teori **medan kuadrat riil** $\mathbb{Q}(\sqrt{n})$.
+[Persamaan Pell](https://kenji.blog/p/pell-equation/) bukan sekadar teka-teki bilangan bulat. Dalam matematika modern, itu diposisikan sebagai pintu gerbang vital menuju teori **medan kuadrat riil** $\mathbb{Q}(\sqrt{n})$.
 
 Solusi dari persamaan Pell berkaitan erat dengan **unit** (elemen yang inversnya juga merupakan bilangan bulat aljabar) dalam cincin bilangan bulat aljabar dari medan kuadrat riil. Solusi fundamental berkaitan dengan **unit fundamental** (fundamental unit) yang menghasilkan grup unit ini, dan fakta bahwa ada solusi tak terhingga untuk persamaan Pell dapat dilihat sebagai kasus khusus dari teorema yang lebih tinggi, **teorema unit Dirichlet** (Dirichlet's unit theorem). Memahami sifat-sifat unit fundamental sangat penting untuk meneliti secara mendalam rumus untuk bilangan kelas dari medan kuadrat dan struktur kelas ideal.
 

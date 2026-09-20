@@ -16,11 +16,11 @@ tags:
 
 Os dados observados no mundo real quase sempre contêm "ruído" ou "variância". Para encontrar as regras subjacentes a partir de tais dados e prever o futuro ou estimar dados desconhecidos, precisamos construir um modelo matemático que **melhor se ajuste** aos dados.
 
-O método mais fundamental, que ainda desempenha um papel extremamente importante como base do aprendizado de máquina moderno, é o **Método dos Mínimos Quadrados** (Method of Least Squares).
+O método mais fundamental, que ainda desempenha um papel extremamente importante como base do aprendizado de máquina moderno, é o **[Método dos Mínimos Quadrados](https://kenji.blog/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)).
 
 Neste artigo, em vez de apenas memorizar fórmulas, exploraremos profundamente **"por que esse cálculo encontra a linha de melhor ajuste"** a partir da bela perspectiva geométrica da álgebra linear (projeção ortogonal).
 
-## 2. Ideia Intuitiva do Método dos Mínimos Quadrados
+## 2. Ideia Intuitiva do [Método dos Mínimos Quadrados](https://kenji.blog/p/method-of-least-squares/)
 
 Suponha que temos $n$ pontos de dados $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$. Ao plotar esses pontos em um gráfico de dispersão, eles podem não se alinhar perfeitamente retos, mas no geral parecem seguir a tendência de uma certa linha.
 
@@ -30,7 +30,7 @@ Para cada ponto de dados $x_i$, o valor previsto por esta linha é $\hat{y}_i = 
 
 $$ e_i = y_i - \hat{y}_i = y_i - (c + d x_i) $$
 
-O Método dos Mínimos Quadrados é uma técnica para encontrar os parâmetros $c$ e $d$ que minimizam a **soma dos quadrados** dos erros. A soma dos erros quadráticos $E$ é definida da seguinte forma:
+O [Método dos Mínimos Quadrados](https://kenji.blog/p/method-of-least-squares/) é uma técnica para encontrar os parâmetros $c$ e $d$ que minimizam a **soma dos quadrados** dos erros. A soma dos erros quadráticos $E$ é definida da seguinte forma:
 
 $$ E = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n} (y_i - c - d x_i)^2 \quad (\text{Definição da função de erro}) $$
 
@@ -170,6 +170,6 @@ A execução deste código calcula a interceptação e a inclinação da linha q
 
 O método dos mínimos quadrados é a técnica mais poderosa e padrão para estimar parâmetros de modelo a partir de dados. Usando o conhecimento de cálculo, ele pode ser derivado como "o ponto onde o gradiente da função de erro se torna 0", mas ao entendê-lo da perspectiva da álgebra linear como uma "projeção ortogonal no espaço de colunas", a beleza de sua estrutura matemática se destaca.
 
-Este método não se limita ao simples ajuste de linha (regressão simples). Adicionando termos como $x^2, x^3$ às colunas da matriz de design $A$, ele pode ser estendido naturalmente à **Regressão Polinomial**, e também pode ser desenvolvido no **Método dos Mínimos Quadrados Ponderados**, que pesa a importância de cada ponto de dados.
+Este método não se limita ao simples ajuste de linha (regressão simples). Adicionando termos como $x^2, x^3$ às colunas da matriz de design $A$, ele pode ser estendido naturalmente à **Regressão Polinomial**, e também pode ser desenvolvido no **[Método dos Mínimos Quadrados](https://kenji.blog/p/method-of-least-squares/) Ponderados**, que pesa a importância de cada ponto de dados.
 
 Como primeiro passo para se aproximar da verdade por trás dos dados, uma compreensão essencial do método dos mínimos quadrados tem um valor imensurável.

@@ -16,11 +16,11 @@ tags:
 
 Los datos observados en el mundo real casi siempre contienen "ruido" o "varianza". Para encontrar las reglas subyacentes de dichos datos y predecir el futuro o estimar datos desconocidos, necesitamos construir un modelo matemático que **mejor se ajuste** a los datos.
 
-El método más fundamental, que aún juega un papel extremadamente importante como la base del aprendizaje automático moderno, es el **Método de Mínimos Cuadrados** (Method of Least Squares).
+El método más fundamental, que aún juega un papel extremadamente importante como la base del aprendizaje automático moderno, es el **[Método de Mínimos Cuadrados](https://kenji.blog/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)).
 
 En este artículo, en lugar de simplemente memorizar fórmulas, exploraremos profundamente **"por qué este cálculo encuentra la línea de mejor ajuste"** desde la hermosa perspectiva geométrica del álgebra lineal (proyección ortogonal).
 
-## 2. Idea Intuitiva del Método de Mínimos Cuadrados
+## 2. Idea Intuitiva del [Método de Mínimos Cuadrados](https://kenji.blog/p/method-of-least-squares/)
 
 Supongamos que tenemos $n$ puntos de datos $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$. Al trazar estos puntos en un diagrama de dispersión, es posible que no se alineen perfectamente rectos, pero en general parecen seguir la tendencia de una cierta línea.
 
@@ -30,7 +30,7 @@ Para cada punto de datos $x_i$, el valor predicho por esta línea es $\hat{y}_i 
 
 $$ e_i = y_i - \hat{y}_i = y_i - (c + d x_i) $$
 
-El Método de Mínimos Cuadrados es una técnica para encontrar los parámetros $c$ y $d$ que minimizan la **suma de los cuadrados** de los errores. La suma de los errores al cuadrado $E$ se define de la siguiente manera:
+El [Método de Mínimos Cuadrados](https://kenji.blog/p/method-of-least-squares/) es una técnica para encontrar los parámetros $c$ y $d$ que minimizan la **suma de los cuadrados** de los errores. La suma de los errores al cuadrado $E$ se define de la siguiente manera:
 
 $$ E = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n} (y_i - c - d x_i)^2 \quad (\text{Definición de la función de error}) $$
 
@@ -170,6 +170,6 @@ La ejecución de este código calcula la intersección y la pendiente de la lín
 
 El método de mínimos cuadrados es la técnica más poderosa y estándar para estimar los parámetros del modelo a partir de los datos. Usando el conocimiento del cálculo, puede derivarse como "el punto donde el gradiente de la función de error se convierte en 0", pero al entenderlo desde la perspectiva del álgebra lineal como una "proyección ortogonal sobre el espacio de columnas", destaca la belleza de su estructura matemática.
 
-Este método no se limita al ajuste de líneas simples (regresión simple). Al agregar términos como $x^2, x^3$ a las columnas de la matriz de diseño $A$, puede extenderse naturalmente a la **Regresión Polinomial**, y también puede desarrollarse en el **Método de Mínimos Cuadrados Ponderados**, que pondera la importancia de cada punto de datos.
+Este método no se limita al ajuste de líneas simples (regresión simple). Al agregar términos como $x^2, x^3$ a las columnas de la matriz de diseño $A$, puede extenderse naturalmente a la **Regresión Polinomial**, y también puede desarrollarse en el **[Método de Mínimos Cuadrados](https://kenji.blog/p/method-of-least-squares/) Ponderados**, que pondera la importancia de cada punto de datos.
 
 Como primer paso para acercarse a la verdad detrás de los datos, una comprensión esencial del método de mínimos cuadrados tiene un valor inmensurable.

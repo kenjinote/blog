@@ -88,6 +88,6 @@ In other words, attempting to "solve the paradox simultaneously in a single tria
 
 The Paradox of the Court has the same **self-referential structure** as the "Liar Paradox ('This sentence is false')" and "Russell's Paradox." A proposition (the conclusion of the trial) affects the condition (the fulfillment of the contract) that determines its own truth or falsity.
 
-This kind of paradox is deeply related to problems that demonstrate the fundamental limits of logic and computation, such as the "Halting Problem (it is impossible to create a program that determines whether a given program will halt or not)" in modern computer science, and Gödel's Incompleteness Theorems.
+This kind of paradox is deeply related to problems that demonstrate the fundamental limits of logic and computation, such as the "Halting Problem (it is impossible to create a program that determines whether a given program will halt or not)" in modern computer science, and [Gödel's Incompleteness Theorems](https://kenji.blog/p/godels-incompleteness-theorems/).
 
 The Paradox of the Court is a 2,400-year-old warning teaching us that systems of human-made rules (laws and contracts) can internally collapse through clever self-reference.

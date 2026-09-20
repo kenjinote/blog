@@ -33,7 +33,7 @@ AI图像生成技术以Stable Diffusion的开源为契机，取得了爆发式�
 
 扩散模型的基本原理分为“Forward Process”和“Reverse Process”，前者对原始数据（图像）逐步添加高斯噪声，最终使其完全变为噪声；后者则从该噪声中恢复出原始图像。
 
-Forward Process被定义为马尔可夫链，步骤 $t$ 的状态 $x_t$ 用以下公式表示：
+Forward Process被定义为[马尔可夫链](https://kenji.blog/p/markov-chain/)，步骤 $t$ 的状态 $x_t$ 用以下公式表示：
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 

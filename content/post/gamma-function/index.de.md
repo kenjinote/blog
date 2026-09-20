@@ -12,7 +12,7 @@ tags: ["Gammafunktion", "Euler", "Funktionentheorie", "Analysis"]
 
 Beim Studium der Mathematik stehen wir manchmal vor der Frage: "Kann ein diskretes Konzept zu einem kontinuierlichen erweitert werden?" Eines der schönsten und wichtigsten Beispiele hierfür ist die **Gammafunktion**.
 
-Die Gammafunktion erweitert die für natürliche Zahlen definierte „Fakultät“ ($n!$) auf positive reelle und sogar auf die gesamte komplexe Zahlenebene. Diese vom großen Mathematiker des 18. Jahrhunderts, Leonhard Euler, entdeckte Funktion taucht in fast jedem Bereich auf, von der Analysis und Wahrscheinlichkeitstheorie bis hin zu Statistik und Physik.
+[Die Gammafunktion](https://kenji.blog/p/gamma-function/) erweitert die für natürliche Zahlen definierte „Fakultät“ ($n!$) auf positive reelle und sogar auf die gesamte komplexe Zahlenebene. Diese vom großen Mathematiker des 18. Jahrhunderts, [Leonhard Euler](https://kenji.blog/p/euler/), entdeckte Funktion taucht in fast jedem Bereich auf, von der Analysis und Wahrscheinlichkeitstheorie bis hin zu Statistik und Physik.
 
 In diesem Artikel werden wir uns die Grundlagen der Gammafunktion und ihre tiefgreifenden Eigenschaften genauer ansehen.
 
@@ -35,7 +35,7 @@ graph TD
 
 # Definition der Gammafunktion
 
-Die Gammafunktion $\Gamma(z)$ wird normalerweise durch das folgende Integral (Eulersches Integral zweiter Art) definiert:
+[Die Gammafunktion](https://kenji.blog/p/gamma-function/) $\Gamma(z)$ wird normalerweise durch das folgende Integral (Eulersches Integral zweiter Art) definiert:
 
 $$ \Gamma(z) = \int_0^\infty t^{z-1} e^{-t} dt $$
 
@@ -59,7 +59,7 @@ Die zuvor gezeigte Integraldefinition gilt nur für $\text{Re}(z) > 0$. Wenn wir
 
 Für ein $z$ im Bereich $-1 < \text{Re}(z) < 0$ kann beispielsweise $\Gamma(z+1)$ berechnet werden, da der Realteil positiv ist. Durch Division durch $z$ wird der Wert von $\Gamma(z)$ bestimmt.
 
-Durch Wiederholen dieser Operation wird die Gammafunktion zu einer meromorphen Funktion, die über die gesamte komplexe Ebene definiert ist, mit Ausnahme von $z = 0, -1, -2, \dots$ (alle nicht positiven ganzen Zahlen). Die Gammafunktion divergiert bei nicht positiven ganzen Zahlen, und an jedem dieser Punkte existiert ein **Pol**.
+Durch Wiederholen dieser Operation wird die Gammafunktion zu einer meromorphen Funktion, die über die gesamte komplexe Ebene definiert ist, mit Ausnahme von $z = 0, -1, -2, \dots$ (alle nicht positiven ganzen Zahlen). [Die Gammafunktion](https://kenji.blog/p/gamma-function/) divergiert bei nicht positiven ganzen Zahlen, und an jedem dieser Punkte existiert ein **Pol**.
 
 ```mermaid
 graph LR
@@ -82,7 +82,7 @@ Daher ist $\Gamma\left(\frac{1}{2}\right) = \sqrt{\pi}$. Dies ist ein entscheide
 
 # Beziehung zur Betafunktion
 
-Die Gammafunktion ist eng verwandt mit einer anderen wichtigen speziellen Funktion, der **Betafunktion**. Die Betafunktion $B(x, y)$ ist wie folgt definiert:
+[Die Gammafunktion](https://kenji.blog/p/gamma-function/) ist eng verwandt mit einer anderen wichtigen speziellen Funktion, der **Betafunktion**. Die Betafunktion $B(x, y)$ ist wie folgt definiert:
 
 $$ B(x, y) = \int_0^1 t^{x-1} (1-t)^{y-1} dt $$
 
@@ -106,10 +106,10 @@ Diese Näherung ist unabdingbar bei der Berechnung der Entropie in der statistis
 
 # Anwendungen und Fazit
 
-Die Gammafunktion ist nicht nur ein Produkt mathematischer Neugier. Sie spielt in vielen Bereichen eine praktische Rolle, wie zum Beispiel:
+[Die Gammafunktion](https://kenji.blog/p/gamma-function/) ist nicht nur ein Produkt mathematischer Neugier. Sie spielt in vielen Bereichen eine praktische Rolle, wie zum Beispiel:
 
 1. **Wahrscheinlichkeitstheorie und Statistik**: Die Gammaverteilung, Chi-Quadrat-Verteilung und die Student-t-Verteilung werden unter Verwendung der Gammafunktion definiert.
 2. **Physik**: Bei der dimensionalen Regularisierung innerhalb der Quantenmechanik und der Quantenfeldtheorie spielt die Gammafunktion eine Rolle bei der Kontrolle von Divergenzen.
 3. **Analytische Zahlentheorie**: Durch ihre Beziehung zur Riemannschen Zetafunktion nimmt sie eine zentrale Stellung bei der Untersuchung der Primzahlverteilung ein.
 
-Die Suche, die mit einer einfachen Frage zur Erweiterung der Fakultät auf reelle Zahlen begann, offenbarte eine großartige Struktur, die sich durch die gesamte Mathematik zieht. Die Gammafunktion ist wahrlich Eulers Meisterwerk und schlägt eine Brücke zwischen der diskreten und der kontinuierlichen Welt.
+Die Suche, die mit einer einfachen Frage zur Erweiterung der Fakultät auf reelle Zahlen begann, offenbarte eine großartige Struktur, die sich durch die gesamte Mathematik zieht. [Die Gammafunktion](https://kenji.blog/p/gamma-function/) ist wahrlich Eulers Meisterwerk und schlägt eine Brücke zwischen der diskreten und der kontinuierlichen Welt.

@@ -18,7 +18,7 @@ tags:
 
 ## 1. Einführung: Ein Gigant der modernen Zahlentheorie
 
-Gerd Faltings ist weithin als einer der tiefgründigsten und einflussreichsten arithmetischen Geometer in der mathematischen Gemeinschaft vom späten 20. Jahrhundert bis ins 21. Jahrhundert anerkannt. Insbesondere sein 1983 vollbrachter Beweis der **Mordell-Vermutung** (Mordell Conjecture) steht als leuchtender Meilenstein in der Geschichte der Zahlentheorie und der algebraischen Geometrie. In diesem Artikel werden wir sein Leben, seinen einzigartigen mathematischen Ansatz und die revolutionären Errungenschaften, die er in die mathematische Welt brachte, ausführlich erläutern.
+[Gerd Faltings](https://kenji.blog/p/faltings/) ist weithin als einer der tiefgründigsten und einflussreichsten arithmetischen Geometer in der mathematischen Gemeinschaft vom späten 20. Jahrhundert bis ins 21. Jahrhundert anerkannt. Insbesondere sein 1983 vollbrachter Beweis der **Mordell-Vermutung** (Mordell Conjecture) steht als leuchtender Meilenstein in der Geschichte der Zahlentheorie und der algebraischen Geometrie. In diesem Artikel werden wir sein Leben, seinen einzigartigen mathematischen Ansatz und die revolutionären Errungenschaften, die er in die mathematische Welt brachte, ausführlich erläutern.
 
 ## 2. Frühes Leben und Karriere
 
@@ -28,7 +28,7 @@ Faltings wurde am 28. Juli 1954 in Gelsenkirchen, Nordrhein-Westfalen, im damali
 
 ## 3. Historische Errungenschaft: Die Lösung der Mordell-Vermutung
 
-Was den Namen Faltings für immer in die Geschichte der Mathematik einprägte, war zweifellos seine Lösung der **Mordell-Vermutung**. Diese 1922 von Louis Mordell aufgestellte Vermutung war ein tiefgreifendes Problem bezüglich der Anzahl rationaler Lösungen von diophantischen Gleichungen.
+Was den Namen Faltings für immer in die Geschichte der Mathematik einprägte, war zweifellos seine Lösung der **Mordell-Vermutung**. Diese 1922 von [Louis Mordell](https://kenji.blog/p/mordell/) aufgestellte Vermutung war ein tiefgreifendes Problem bezüglich der Anzahl rationaler Lösungen von diophantischen Gleichungen.
 
 Die Aussage der Vermutung lautet wie folgt:
 
@@ -36,7 +36,7 @@ Die Aussage der Vermutung lautet wie folgt:
 
 Diese Vermutung war eng mit dem Satz des Pythagoras und dem Großen Fermatschen Satz verbunden und war ein gewaltiges Problem, an dem viele geniale Mathematiker im Laufe der Jahre gescheitert waren.
 
-Faltings griff dieses Problem an, indem er die gewaltige Maschinerie der algebraischen Geometrie, die von Alexander Grothendieck aufgebaut worden war, wie die Schema-Theorie und die étale Kohomologie, geschickt manipulierte und außerdem einen neuen Rahmen namens Arakelov-Geometrie einführte.
+Faltings griff dieses Problem an, indem er die gewaltige Maschinerie der algebraischen Geometrie, die von [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) aufgebaut worden war, wie die Schema-Theorie und die étale Kohomologie, geschickt manipulierte und außerdem einen neuen Rahmen namens Arakelov-Geometrie einführte.
 
 Obwohl die logische Struktur seines Beweises hochkomplex ist, lässt sich die Kernidee in die folgenden drei Phasen (Beweise von Vermutungen) unterteilen.
 
@@ -88,6 +88,6 @@ Während seiner Zeit als Professor an der Princeton University und als Direktor 
 
 ## 7. Fazit
 
-Der Name Gerd Faltings wird für immer als der Löser der **Mordell-Vermutung** überliefert werden. Seine wahre Größe liegt jedoch nicht nur in der Lösung eines einzigen schwierigen Problems, sondern in der Schaffung neuer mathematischer Paradigmen wie der Arakelov-Geometrie und der p-adischen Hodge-Theorie.
+Der Name [Gerd Faltings](https://kenji.blog/p/faltings/) wird für immer als der Löser der **Mordell-Vermutung** überliefert werden. Seine wahre Größe liegt jedoch nicht nur in der Lösung eines einzigen schwierigen Problems, sondern in der Schaffung neuer mathematischer Paradigmen wie der Arakelov-Geometrie und der p-adischen Hodge-Theorie.
 
 Noch heute bieten die von ihm geschaffenen Theorien und Philosophien Mathematikern auf der ganzen Welt immense Inspiration. Wann immer wir versuchen, den Abgrund der Zahlentheorie zu berühren, liegt der von Faltings geschmiedete Weg immer vor uns.

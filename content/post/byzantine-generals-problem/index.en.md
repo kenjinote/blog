@@ -14,7 +14,7 @@ In this article, we will explain this **Byzantine Generals Problem** in detail, 
 
 ## 1. What is the Byzantine Generals Problem?
 
-The Byzantine Generals Problem is a thought experiment about consensus in distributed computing proposed by Leslie Lamport and others in 1982.
+[The Byzantine Generals Problem](https://kenji.blog/p/byzantine-generals-problem/) is a thought experiment about consensus in distributed computing proposed by Leslie Lamport and others in 1982.
 
 ### Concrete Example: Generals of the Byzantine Empire
 

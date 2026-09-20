@@ -17,7 +17,7 @@ tags:
 
 ## Introduction : L'Homme Qui Recevait des Formules des Dieux
 
-Srinivasa Ramanujan (1887-1920) était un génie mathématique indien apparu comme une comète dans le monde mathématique du début du 20e siècle, avant que sa vie tragiquement courte ne s'achève. Bien qu'il n'ait eu presque aucune éducation mathématique formelle, il a déduit de nombreux théorèmes et formules stupéfiants grâce à sa seule intuition et sa vision unique. Ses carnets de notes continuent d'influencer la recherche de pointe en mathématiques et en physique modernes, plus d'un siècle après sa mort.
+[Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) (1887-1920) était un génie mathématique indien apparu comme une comète dans le monde mathématique du début du 20e siècle, avant que sa vie tragiquement courte ne s'achève. Bien qu'il n'ait eu presque aucune éducation mathématique formelle, il a déduit de nombreux théorèmes et formules stupéfiants grâce à sa seule intuition et sa vision unique. Ses carnets de notes continuent d'influencer la recherche de pointe en mathématiques et en physique modernes, plus d'un siècle après sa mort.
 
 Dans cet article, nous plongeons dans la vie mouvementée de Ramanujan, ses interactions décisives avec le mathématicien britannique G.H. Hardy qui l'a découvert, et le brillant héritage mathématique qu'il a laissé derrière lui. Sa vie est un puissant témoignage de la façon dont la passion et le talent peuvent surmonter l'adversité et changer le monde.
 
@@ -138,7 +138,7 @@ En 1919, après la fin de la Première Guerre mondiale, sa santé s'étant lég�
 
 Le dernier carnet que Ramanujan a écrit sur son lit de mort a été perdu pendant longtemps, mais il a été découvert dans la bibliothèque de l'Université de Cambridge par le mathématicien américain George Andrews en 1976. Il est devenu connu sous le nom de "Carnet Perdu" et a de nouveau envoyé une onde de choc dans la communauté mathématique. Il contenait environ 600 nouvelles formules, et les recherches sur leur signification et leurs applications se poursuivent encore aujourd'hui.
 
-La vie mouvementée de Srinivasa Ramanujan a été décrite dans la biographie de Robert Kanigel *L'Homme qui défiait l'infini* et son adaptation cinématographique de 2015 du même nom, inspirant d'innombrables personnes au-delà de la communauté mathématique.
+La vie mouvementée de [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) a été décrite dans la biographie de Robert Kanigel *L'Homme qui défiait l'infini* et son adaptation cinématographique de 2015 du même nom, inspirant d'innombrables personnes au-delà de la communauté mathématique.
 
 Son plus grand héritage réside dans la myriade de formules laissées dans ses carnets. Comme elles étaient souvent dépourvues de preuves, les mathématiciens ultérieurs ont passé des décennies à les prouver une par une. Grâce aux efforts inlassables de mathématiciens comme Bruce Berndt, le déchiffrement de ses carnets a progressé, mais les nouveaux mystères et thèmes de recherche qui en découlent sont encore loin d'être épuisés.
 

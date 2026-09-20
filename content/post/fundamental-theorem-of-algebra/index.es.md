@@ -21,19 +21,19 @@ Para resolver este problema, se introdujo un número hipotético cuyo cuadrado e
 
 Aquí surge una gran pregunta: "Si expandimos el sistema de números a los números complejos, ¿podemos decir que cualquier ecuación siempre tendrá una solución?" O bien, "¿Alguna vez necesitaremos introducir otro nuevo tipo de número?"
 
-Las matemáticas proporcionan una respuesta muy clara y hermosa a esta pregunta. Ese es el tema de este artículo: el **Teorema Fundamental del Álgebra**. Este teorema afirma que "cualquier polinomio de grado $n$ con coeficientes complejos siempre tiene una raíz (solución) dentro de los números complejos". En otras palabras, dentro del vasto océano de los números complejos, la solución a cualquier ecuación siempre existe, garantizando que no hay necesidad de inventar más números nuevos.
+Las matemáticas proporcionan una respuesta muy clara y hermosa a esta pregunta. Ese es el tema de este artículo: el **[Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)**. Este teorema afirma que "cualquier polinomio de grado $n$ con coeficientes complejos siempre tiene una raíz (solución) dentro de los números complejos". En otras palabras, dentro del vasto océano de los números complejos, la solución a cualquier ecuación siempre existe, garantizando que no hay necesidad de inventar más números nuevos.
 
-En este artículo, explicaremos este **Teorema Fundamental del Álgebra** en detalle, comenzando desde sus antecedentes históricos, pasando a un enfoque intuitivo basado en la topología, y finalmente presentando una demostración rigurosa y hermosa usando análisis complejo.
+En este artículo, explicaremos este **[Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)** en detalle, comenzando desde sus antecedentes históricos, pasando a un enfoque intuitivo basado en la topología, y finalmente presentando una demostración rigurosa y hermosa usando análisis complejo.
 
-## Antecedentes Históricos del Teorema Fundamental del Álgebra
+## Antecedentes Históricos del [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)
 
-El **Teorema Fundamental del Álgebra** no se demostró de la noche a la mañana. Muchos grandes matemáticos lucharon por lograr una demostración completa, sin dudar nunca de la verdad del teorema.
+El **[Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)** no se demostró de la noche a la mañana. Muchos grandes matemáticos lucharon por lograr una demostración completa, sin dudar nunca de la verdad del teorema.
 
-En el siglo XVII, matemáticos como René Descartes y Albert Girard ya sabían empíricamente que "una ecuación de grado $n$ debería tener $n$ raíces". Sin embargo, dentro del marco matemático de la época, no había un medio riguroso para demostrarlo.
+En el siglo XVII, matemáticos como [René Descartes](https://kenji.blog/p/descartes/) y Albert Girard ya sabían empíricamente que "una ecuación de grado $n$ debería tener $n$ raíces". Sin embargo, dentro del marco matemático de la época, no había un medio riguroso para demostrarlo.
 
-Al entrar en el siglo XVIII, gigantes matemáticos como Jean le Rond d'Alembert y Leonhard Euler intentaron la demostración. D'Alembert publicó una demostración en 1746, y el teorema a veces se llama "teorema de d'Alembert" en Francia; sin embargo, según los estándares modernos, su demostración carecía de rigor topológico en ciertas áreas. Euler también intentó mostrar que cualquier polinomio con coeficientes reales podía factorizarse en el producto de polinomios lineales y cuadráticos, pero dejó una brecha lógica.
+Al entrar en el siglo XVIII, gigantes matemáticos como Jean le Rond d'Alembert y [Leonhard Euler](https://kenji.blog/p/euler/) intentaron la demostración. D'Alembert publicó una demostración en 1746, y el teorema a veces se llama "teorema de d'Alembert" en Francia; sin embargo, según los estándares modernos, su demostración carecía de rigor topológico en ciertas áreas. Euler también intentó mostrar que cualquier polinomio con coeficientes reales podía factorizarse en el producto de polinomios lineales y cuadráticos, pero dejó una brecha lógica.
 
-La primera demostración esencialmente completa de este teorema inexpugnable fue dada nada menos que por Carl Friedrich Gauss. En su disertación doctoral de 1799, señaló las fallas en las demostraciones de los matemáticos precedentes y presentó una demostración basada en la intuición geométrica. Gauss proporcionó cuatro demostraciones diferentes para este teorema a lo largo de su vida, indicando la importancia que le atribuía.
+La primera demostración esencialmente completa de este teorema inexpugnable fue dada nada menos que por [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). En su disertación doctoral de 1799, señaló las fallas en las demostraciones de los matemáticos precedentes y presentó una demostración basada en la intuición geométrica. Gauss proporcionó cuatro demostraciones diferentes para este teorema a lo largo de su vida, indicando la importancia que le atribuía.
 
 La demostración más estándar y elegante hoy en día se considera la basada en la teoría del análisis complejo, construida por el matemático francés Joseph Liouville y otros. En la segunda mitad de este artículo, introduciremos la demostración utilizando el teorema de Liouville.
 
@@ -41,7 +41,7 @@ La demostración más estándar y elegante hoy en día se considera la basada en
 
 Primero, describamos la afirmación del teorema en términos matemáticamente precisos.
 
-**Teorema (Teorema Fundamental del Álgebra)**
+**Teorema ([Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/))**
 Para cualquier número natural $n \ge 1$ y coeficientes complejos $a_0, a_1, \dots, a_n$ (donde $a_n \neq 0$), se define un polinomio $P(z)$ de la siguiente manera:
 
 $$
@@ -95,9 +95,9 @@ Aquí, "acotada" significa que para todos los números complejos $z$, el valor a
 
 En el mundo de los números reales, una función como $f(x) = \sin(x)$ es diferenciable sobre toda la recta numérica y está acotada por $-1 \le \sin(x) \le 1$. No es una función constante. Sin embargo, el teorema de Liouville afirma que esto nunca puede suceder en el mundo complejo. Si una función es holomorfa sobre todo el plano complejo y su valor no diverge hacia el infinito, es meramente una constante plana.
 
-## Demostración Rigurosa del Teorema Fundamental del Álgebra
+## Demostración Rigurosa del [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)
 
-Demostremos ahora el Teorema Fundamental del Álgebra usando el teorema de Liouville. Te sorprenderá la brillantez de esta demostración. Aquí, usamos una demostración por contradicción (reducción al absurdo).
+Demostremos ahora el [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) usando el teorema de Liouville. Te sorprenderá la brillantez de esta demostración. Aquí, usamos una demostración por contradicción (reducción al absurdo).
 
 **Demostración**
 
@@ -152,15 +152,15 @@ Por lo tanto, por contradicción, se demuestra que $P(z) = 0$ tiene al menos una
 
 ## Corolario del Teorema: Factorización en Factores Lineales
 
-El Teorema Fundamental del Álgebra garantiza la existencia de "al menos una solución". Al combinar este hecho con el **Teorema del factor** para la división de polinomios, podemos demostrar que un polinomio se puede factorizar completamente en un producto de términos lineales.
+El [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) garantiza la existencia de "al menos una solución". Al combinar este hecho con el **Teorema del factor** para la división de polinomios, podemos demostrar que un polinomio se puede factorizar completamente en un producto de términos lineales.
 
-Dado un polinomio $P_n(z)$ de grado $n$, el Teorema Fundamental del Álgebra establece que existe una solución $\alpha_1$ tal que $P_n(\alpha_1) = 0$. Según el Teorema del factor, $P_n(z)$ tiene a $(z - \alpha_1)$ como factor. Es decir, se puede factorizar de la siguiente manera:
+Dado un polinomio $P_n(z)$ de grado $n$, el [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) establece que existe una solución $\alpha_1$ tal que $P_n(\alpha_1) = 0$. Según el Teorema del factor, $P_n(z)$ tiene a $(z - \alpha_1)$ como factor. Es decir, se puede factorizar de la siguiente manera:
 
 $$
 P_n(z) = (z - \alpha_1) P_{n-1}(z)
 $$
 
-Aquí, $P_{n-1}(z)$ es un polinomio de grado $n-1$. Si $n-1 \ge 1$, podemos aplicar nuevamente el Teorema Fundamental del Álgebra para encontrar una solución $\alpha_2$ para $P_{n-1}(z)$. Repitiendo esto $n$ veces, podemos factorizarlo completamente de la siguiente manera:
+Aquí, $P_{n-1}(z)$ es un polinomio de grado $n-1$. Si $n-1 \ge 1$, podemos aplicar nuevamente el [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) para encontrar una solución $\alpha_2$ para $P_{n-1}(z)$. Repitiendo esto $n$ veces, podemos factorizarlo completamente de la siguiente manera:
 
 $$
 P_n(z) = a_n (z - \alpha_1)(z - \alpha_2) \dots (z - \alpha_n)
@@ -172,8 +172,8 @@ Además, para los polinomios donde todos los coeficientes son números reales, s
 
 ## Conclusión
 
-En este artículo, hemos analizado en detalle el Teorema Fundamental del Álgebra, cubriendo sus antecedentes históricos, intuición topológica y demostración analítica compleja utilizando el teorema de Liouville.
+En este artículo, hemos analizado en detalle el [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/), cubriendo sus antecedentes históricos, intuición topológica y demostración analítica compleja utilizando el teorema de Liouville.
 
 A primera vista, es un teorema sobre ecuaciones algebraicas, pero el hecho de que su demostración más elegante tome prestado el poder del análisis (cálculo) y la topología demuestra la profundidad de las matemáticas y la belleza de cómo diferentes campos están estrechamente entrelazados.
 
-La larga búsqueda de la humanidad para encontrar las raíces de las ecuaciones ganó el vasto escenario del plano complejo a través de la introducción de los nuevos números imaginarios, y la integridad de este escenario fue demostrada por el Teorema Fundamental del Álgebra. Este teorema se convirtió en la llave que abrió las brillantes puertas que conducen a la teoría de Galois y la geometría algebraica, que forman la base de las matemáticas modernas.
+La larga búsqueda de la humanidad para encontrar las raíces de las ecuaciones ganó el vasto escenario del plano complejo a través de la introducción de los nuevos números imaginarios, y la integridad de este escenario fue demostrada por el [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/). Este teorema se convirtió en la llave que abrió las brillantes puertas que conducen a la teoría de Galois y la geometría algebraica, que forman la base de las matemáticas modernas.

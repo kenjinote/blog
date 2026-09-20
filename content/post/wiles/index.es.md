@@ -10,15 +10,15 @@ tags: ["Andrew Wiles", "Fermat", "Teoría de números"]
 
 ## Introducción
 
-En la historia de las matemáticas, pocas historias son tan dramáticas e inspiradoras como esta. El matemático británico **Andrew Wiles** logró la hazaña monumental de demostrar el "Último Teorema de Fermat", un problema que había permanecido sin resolver durante más de 350 años.
+En la historia de las matemáticas, pocas historias son tan dramáticas e inspiradoras como esta. El matemático británico **[Andrew Wiles](https://kenji.blog/p/wiles/)** logró la hazaña monumental de demostrar el "Último Teorema de Fermat", un problema que había permanecido sin resolver durante más de 350 años.
 
 El viaje de su vida se lee como una película, comenzando con un sueño romántico de la infancia, seguido de siete años de investigación solitaria y secreta, el descubrimiento devastador de un error y un regreso milagroso. Este artículo profundiza en los episodios de la vida de Wiles y los profundos logros matemáticos que emprendió.
 
 ## Un sueño de niño: Un encuentro a los 10 años
 
-Andrew Wiles nació el 11 de abril de 1953 en Cambridge, Inglaterra. Su destino quedó marcado cuando tenía solo 10 años. En su biblioteca local, tomó un libro de matemáticas titulado "Hombres de la Matemática" (de E. T. Bell).
+[Andrew Wiles](https://kenji.blog/p/wiles/) nació el 11 de abril de 1953 en Cambridge, Inglaterra. Su destino quedó marcado cuando tenía solo 10 años. En su biblioteca local, tomó un libro de matemáticas titulado "Hombres de la Matemática" (de E. T. Bell).
 
-En ese libro, se encontró con lo que se consideraba el mayor misterio en la historia de las matemáticas: el Último Teorema de Fermat. Es el famoso teorema en el que el matemático francés Pierre de Fermat escribió en el margen de un libro: "Tengo una demostración verdaderamente maravillosa de esta proposición, que este margen es demasiado estrecho para contener".
+En ese libro, se encontró con lo que se consideraba el mayor misterio en la historia de las matemáticas: el Último Teorema de Fermat. Es el famoso teorema en el que el matemático francés [Pierre de Fermat](https://kenji.blog/p/fermat/) escribió en el margen de un libro: "Tengo una demostración verdaderamente maravillosa de esta proposición, que este margen es demasiado estrecho para contener".
 
 Como niño de 10 años, Wiles estaba profundamente fascinado por lo simple que parecía el teorema, pero por cómo había frustrado los esfuerzos de grandes matemáticos durante siglos. "Seré la primera persona en demostrar este teorema", se juró el niño. Esta **pasión pura** se convirtió en la fuerza motriz del resto de su vida.
 
@@ -85,7 +85,7 @@ En septiembre de 1994, Wiles finalmente decidió darse por vencido y pensó en e
 
 De repente, una idea cruzó por su mente para combinar el enfoque de la teoría de Iwasawa previamente abandonado con este método de Kolyvagin-Flach. Fue un momento de pura revelación, donde la debilidad de uno complementaba perfectamente al otro.
 
-> "Fue una revelación increíble. Fue tan hermoso, tan simple, y no podía entender cómo lo había pasado por alto." (Andrew Wiles)
+> "Fue una revelación increíble. Fue tan hermoso, tan simple, y no podía entender cómo lo había pasado por alto." ([Andrew Wiles](https://kenji.blog/p/wiles/))
 
 Gracias a este "momento mágico", el defecto de la demostración se reparó por completo. En octubre 1994, Wiles y Taylor presentaron dos artículos corregidos, poniendo fin por completo al mayor misterio del mundo matemático después de 350 años.
 
@@ -99,6 +99,6 @@ Por este logro, Wiles recibió numerosos premios prestigiosos, incluido el tribu
 
 ## Conclusión
 
-La historia de Andrew Wiles demuestra las infinitas posibilidades de los seres humanos impulsadas por la curiosidad pura y un espíritu indomable. El sueño aparentemente **imprudente** albergado por un niño de 10 años se hizo realidad décadas después, superando numerosos contratiempos.
+La historia de [Andrew Wiles](https://kenji.blog/p/wiles/) demuestra las infinitas posibilidades de los seres humanos impulsadas por la curiosidad pura y un espíritu indomable. El sueño aparentemente **imprudente** albergado por un niño de 10 años se hizo realidad décadas después, superando numerosos contratiempos.
 
-Aunque el Último Teorema de Fermat ha sido resuelto, muchos matemáticos continúan explorando los fértiles nuevos campos de las matemáticas abiertos por Wiles en busca de la siguiente verdad. Su nombre, junto con Pierre de Fermat, quedará grabado para siempre en la historia del intelecto humano.
+Aunque el Último Teorema de Fermat ha sido resuelto, muchos matemáticos continúan explorando los fértiles nuevos campos de las matemáticas abiertos por Wiles en busca de la siguiente verdad. Su nombre, junto con [Pierre de Fermat](https://kenji.blog/p/fermat/), quedará grabado para siempre en la historia del intelecto humano.

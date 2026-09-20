@@ -8,11 +8,11 @@ categories: ["Matematika"]
 tags: ["Fungsi Gamma", "Euler", "Analisis Kompleks", "Kalkulus"]
 ---
 
-# Apa itu Fungsi Gamma?
+# Apa itu [Fungsi Gamma](https://kenji.blog/p/gamma-function/)?
 
-Saat belajar matematika, kita terkadang dihadapkan pada pertanyaan: "Bisakah konsep yang diskrit diperluas menjadi konsep yang kontinu?" Salah satu contoh paling indah dan penting dari ini adalah **Fungsi Gamma**.
+Saat belajar matematika, kita terkadang dihadapkan pada pertanyaan: "Bisakah konsep yang diskrit diperluas menjadi konsep yang kontinu?" Salah satu contoh paling indah dan penting dari ini adalah **[Fungsi Gamma](https://kenji.blog/p/gamma-function/)**.
 
-Fungsi Gamma memperluas "faktorial" ($n!$), yang didefinisikan untuk bilangan asli, ke bilangan real positif dan bahkan ke seluruh bidang kompleks. Ditemukan oleh ahli matematika hebat abad ke-18 Leonhard Euler, fungsi ini muncul di hampir setiap bidang, mulai dari analisis matematika dan teori probabilitas hingga statistik dan fisika.
+[Fungsi Gamma](https://kenji.blog/p/gamma-function/) memperluas "faktorial" ($n!$), yang didefinisikan untuk bilangan asli, ke bilangan real positif dan bahkan ke seluruh bidang kompleks. Ditemukan oleh ahli matematika hebat abad ke-18 [Leonhard Euler](https://kenji.blog/p/euler/), fungsi ini muncul di hampir setiap bidang, mulai dari analisis matematika dan teori probabilitas hingga statistik dan fisika.
 
 Dalam artikel ini, kita akan melihat lebih dekat dasar-dasar fungsi Gamma dan sifat-sifatnya yang mendalam.
 
@@ -33,9 +33,9 @@ graph TD
     B -.->|"Generalisasi / Perluasan"| D
 ```
 
-# Definisi Fungsi Gamma
+# Definisi [Fungsi Gamma](https://kenji.blog/p/gamma-function/)
 
-Fungsi Gamma $\Gamma(z)$ biasanya didefinisikan oleh integral berikut (integral Euler jenis kedua):
+[Fungsi Gamma](https://kenji.blog/p/gamma-function/) $\Gamma(z)$ biasanya didefinisikan oleh integral berikut (integral Euler jenis kedua):
 
 $$ \Gamma(z) = \int_0^\infty t^{z-1} e^{-t} dt $$
 
@@ -59,7 +59,7 @@ Definisi integral yang ditunjukkan sebelumnya hanya berlaku untuk $\text{Re}(z) 
 
 Misalnya, untuk $z$ dalam rentang $-1 < \text{Re}(z) < 0$, $\Gamma(z+1)$ dapat dihitung karena bagian realnya positif. Dengan membaginya dengan $z$, nilai $\Gamma(z)$ ditentukan.
 
-Dengan mengulangi operasi ini, fungsi Gamma menjadi fungsi meromorfik yang didefinisikan di seluruh bidang kompleks, kecuali untuk $z = 0, -1, -2, \dots$ (semua bilangan bulat non-positif). Fungsi Gamma divergen pada bilangan bulat non-positif, dan terdapat sebuah **Kutub** (Pole) di setiap titik ini.
+Dengan mengulangi operasi ini, fungsi Gamma menjadi fungsi meromorfik yang didefinisikan di seluruh bidang kompleks, kecuali untuk $z = 0, -1, -2, \dots$ (semua bilangan bulat non-positif). [Fungsi Gamma](https://kenji.blog/p/gamma-function/) divergen pada bilangan bulat non-positif, dan terdapat sebuah **Kutub** (Pole) di setiap titik ini.
 
 ```mermaid
 graph LR
@@ -82,7 +82,7 @@ Oleh karena itu, $\Gamma\left(\frac{1}{2}\right) = \sqrt{\pi}$. Ini adalah hasil
 
 # Hubungan dengan Fungsi Beta
 
-Fungsi Gamma berkaitan erat dengan fungsi khusus penting lainnya, yaitu **Fungsi Beta**. Fungsi Beta $B(x, y)$ didefinisikan sebagai berikut:
+[Fungsi Gamma](https://kenji.blog/p/gamma-function/) berkaitan erat dengan fungsi khusus penting lainnya, yaitu **Fungsi Beta**. Fungsi Beta $B(x, y)$ didefinisikan sebagai berikut:
 
 $$ B(x, y) = \int_0^1 t^{x-1} (1-t)^{y-1} dt $$
 
@@ -106,10 +106,10 @@ Aproksimasi ini sangat diperlukan saat menghitung entropi dalam mekanika statist
 
 # Aplikasi dan Kesimpulan
 
-Fungsi Gamma bukan hanya sekadar produk keingintahuan matematika. Ia memainkan peran praktis di banyak bidang, seperti:
+[Fungsi Gamma](https://kenji.blog/p/gamma-function/) bukan hanya sekadar produk keingintahuan matematika. Ia memainkan peran praktis di banyak bidang, seperti:
 
 1. **Probabilitas dan Statistik**: Distribusi Gamma, distribusi Chi-kuadrat, dan distribusi t Student didefinisikan menggunakan fungsi Gamma.
 2. **Fisika**: Dalam regularisasi dimensional di dalam mekanika kuantum dan teori medan kuantum, fungsi Gamma berperan dalam mengendalikan divergensi.
 3. **Teori Bilangan Analitik**: Melalui hubungannya dengan fungsi zeta Riemann, ia memegang posisi sentral dalam studi distribusi bilangan prima.
 
-Pencarian yang dimulai dengan pertanyaan sederhana tentang memperluas faktorial ke bilangan real mengungkapkan struktur luar biasa yang membentang di seluruh matematika. Fungsi Gamma benar-benar mahakarya Euler, yang menjembatani dunia diskrit dan kontinu.
+Pencarian yang dimulai dengan pertanyaan sederhana tentang memperluas faktorial ke bilangan real mengungkapkan struktur luar biasa yang membentang di seluruh matematika. [Fungsi Gamma](https://kenji.blog/p/gamma-function/) benar-benar mahakarya Euler, yang menjembatani dunia diskrit dan kontinu.

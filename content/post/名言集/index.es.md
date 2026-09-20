@@ -35,7 +35,7 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 ## Filosofía y Pensamiento
 
-> El corazón tiene sus razones, que la razón no conoce (Blaise Pascal)
+> El corazón tiene sus razones, que la razón no conoce ([Blaise Pascal](https://kenji.blog/p/pascal/))
 
 > Dios ha muerto (Friedrich Nietzsche)
 
@@ -54,7 +54,7 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 > Todo fluye (Heráclito)
 
 
-> Pienso, luego existo (René Descartes)
+> Pienso, luego existo ([René Descartes](https://kenji.blog/p/descartes/))
 
 > Solo sé que no sé nada (Sócrates)
 
@@ -62,7 +62,7 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 > El hombre es por naturaleza un animal político (Aristóteles)
 
-> El hombre no es más que un junco, el más débil de la naturaleza, pero es un junco que piensa (Blaise Pascal)
+> El hombre no es más que un junco, el más débil de la naturaleza, pero es un junco que piensa ([Blaise Pascal](https://kenji.blog/p/pascal/))
 
 > El conocimiento es poder (Francis Bacon)
 
@@ -76,9 +76,9 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 ## Ciencia, Matemáticas y Tecnología
 
-> Las matemáticas son la reina de las ciencias (Carl Friedrich Gauss)
+> Las matemáticas son la reina de las ciencias ([Carl Friedrich Gauss](https://kenji.blog/p/gauss/))
 
-> Debemos saber, y sabremos (David Hilbert)
+> Debemos saber, y sabremos ([David Hilbert](https://kenji.blog/p/hilbert/))
 
 > No hay rama de las matemáticas, por abstracta que sea, que no pueda aplicarse algún día a los fenómenos del mundo real (Nikolai Lobachevsky)
 
@@ -90,7 +90,7 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 > Lo bueno de la ciencia es que es verdad, creas o no en ella (Neil deGrasse Tyson)
 
-> En matemáticas, el arte de proponer una pregunta debe tener un valor mayor que resolverla (Georg Cantor)
+> En matemáticas, el arte de proponer una pregunta debe tener un valor mayor que resolverla ([Georg Cantor](https://kenji.blog/p/cantor/))
 
 > Si supiéramos lo que estamos haciendo, no se llamaría investigación (Albert Einstein)
 
@@ -107,11 +107,11 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 > Una persona que nunca ha cometido un error, nunca ha intentado nada nuevo (Albert Einstein)
 
-> Si he visto más lejos, ha sido subiéndome a hombros de gigantes (Isaac Newton)
+> Si he visto más lejos, ha sido subiéndome a hombros de gigantes ([Isaac Newton](https://kenji.blog/p/newton/))
 
 > Y sin embargo, se mueve (Galileo Galilei)
 
-> No hay camino real hacia la geometría (Euclides)
+> No hay camino real hacia la geometría ([[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/))
 
 > Dame un punto de apoyo y moveré el mundo (Arquímedes)
 

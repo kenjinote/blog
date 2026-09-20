@@ -59,7 +59,7 @@ Selbst beim Versuch, nur $N = 300$ Qubits (Qubit) zu simulieren, beträgt die An
 
 Die intuitive Idee von Feynman wurde von dem Oxforder Physiker David Deutsch im Rahmen der theoretischen Informatik rigoros formalisiert. In seiner bahnbrechenden Publikation von 1985 wies Deutsch auf die Möglichkeit hin, dass die „starke Church-Turing-These“ (Strong Church-Turing Thesis), welche besagt, dass „jeder physikalische Prozess durch endliche Mittel vollständig simuliert werden kann“, in einer von der Quantenmechanik dominierten physikalischen Welt möglicherweise nicht gilt.
 
-Deutsch erweiterte die von Alan Turing vorgeschlagene deterministische Turingmaschine und definierte das Konzept der „Quanten-Turingmaschine“ (Quantum Turing Machine). Dies ist eine Maschine, bei der der interne Zustand, das Symbol auf dem Band und die Position des Kopfes einen quantenmechanischen „Überlagerungszustand“ annehmen können und die Zustandsübergänge durch einen unitären Operator (Unitary Operator) $U$ beschrieben werden.
+Deutsch erweiterte die von [Alan Turing](https://kenji.blog/p/turing/) vorgeschlagene deterministische Turingmaschine und definierte das Konzept der „Quanten-Turingmaschine“ (Quantum Turing Machine). Dies ist eine Maschine, bei der der interne Zustand, das Symbol auf dem Band und die Position des Kopfes einen quantenmechanischen „Überlagerungszustand“ annehmen können und die Zustandsübergänge durch einen unitären Operator (Unitary Operator) $U$ beschrieben werden.
 
 Die grundlegende Einheit der Quantenberechnung ist das „Qubit“ (Qubit). Während ein klassisches Bit nur die bestimmten Zustände $0$ oder $1$ annehmen kann, kann ein Qubit einen beliebigen linearen Überlagerungszustand von $|0\rangle$ und $|1\rangle$ annehmen:
 
@@ -115,7 +115,7 @@ Wirklich nützliche Quantenalgorithmen (wie zum Beispiel der Shor-Algorithmus zu
 
 ## 1.5 Visualisierung von Konzepten: Der Mechanismus der Quanteninterferenz
 
-Das folgende Konzeptdiagramm zeigt den Unterschied zwischen einem klassischen stochastischen Prozess und einem quantenmechanischen Interferenzprozess (der in etwa einem Mach-Zehnder-Interferometer oder der sukzessiven Anwendung von Hadamard-Gattern entspricht). Beim klassischen Random Walk werden die Wahrscheinlichkeiten einfach addiert, während beim Quantenprozess die Amplituden der Pfade als komplexe Zahlen addiert werden und so Interferenz auslösen.
+Das folgende Konzeptdiagramm zeigt den Unterschied zwischen einem klassischen stochastischen Prozess und einem quantenmechanischen Interferenzprozess (der in etwa einem Mach-Zehnder-Interferometer oder der sukzessiven Anwendung von Hadamard-Gattern entspricht). Beim klassischen [Random Walk](https://kenji.blog/p/random-walk/) werden die Wahrscheinlichkeiten einfach addiert, während beim Quantenprozess die Amplituden der Pfade als komplexe Zahlen addiert werden und so Interferenz auslösen.
 
 ```mermaid
 graph TD
@@ -2356,7 +2356,7 @@ Schließlich verdient ein Satz besondere Erwähnung, der aus der Sicht der theor
 
 Was besagt diese Erkenntnis im Kern? Sie besagt nichts Geringeres als: **„Die vom Grover-Algorithmus erzielte Komplexität von $O(\sqrt{N})$ stellt die absolute theoretische Grenze dar, die im Rahmen der Gesetze der Natur (der Quantenmechanik) überhaupt erreichbar ist; eine schnellere unstrukturierte Suche ist nach den Gesetzen unseres physikalischen Universums prinzipiell unmöglich.“** Grover hat damit nicht lediglich ein hocheffizientes Rechenverfahren ersonnen, sondern ist unmittelbar an die fundamentale Grenze zwischen Information und Physik vorgestoßen.
 
-Darüber hinaus dient das in diesem Kapitel analysierte Paradigma der „Amplitudenverstärkung (Amplitude Amplification)“ heute als universeller Grundbaustein für eine Vielzahl fortgeschrittener Quantenverfahren – etwa in Quanten-Random-Walks (Quantum Random Walks) oder als elementare Subroutine im Bereich des quantengestützten maschinellen Lernens (Quantum Machine Learning). Grovers so einfache wie geniale Entdeckung, Wahrscheinlichkeitsamplituden über eine zweifache Spiegelung an zwei Achsen geometrisch gezielt zu rotieren und zu verstärken, bildet eine der tragfähigsten und unerschütterlichsten Säulen im gesamten Gebäude der modernen Quanteninformationswissenschaft.
+Darüber hinaus dient das in diesem Kapitel analysierte Paradigma der „Amplitudenverstärkung (Amplitude Amplification)“ heute als universeller Grundbaustein für eine Vielzahl fortgeschrittener Quantenverfahren – etwa in Quanten-Random-Walks (Quantum [Random Walk](https://kenji.blog/p/random-walk/)s) oder als elementare Subroutine im Bereich des quantengestützten maschinellen Lernens (Quantum Machine Learning). Grovers so einfache wie geniale Entdeckung, Wahrscheinlichkeitsamplituden über eine zweifache Spiegelung an zwei Achsen geometrisch gezielt zu rotieren und zu verstärken, bildet eine der tragfähigsten und unerschütterlichsten Säulen im gesamten Gebäude der modernen Quanteninformationswissenschaft.
 
 # Kapitel 10: Quantenfehlerkorrektur und fehlertolerantes Rechnen
 

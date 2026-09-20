@@ -15,7 +15,7 @@ tags:
 
 ## Einleitung: Einer der Schönsten Sätze der Mathematik
 
-In der Welt der Mathematik gibt es einige magische Formeln, die erstaunliche Verbindungen zwischen scheinbar unzusammenhängenden Phänomenen aufdecken. Darunter sticht der von Leonhard Euler entdeckte **Eulersche Polyedersatz** durch seine absolute Einfachheit und Universalität hervor.
+In der Welt der Mathematik gibt es einige magische Formeln, die erstaunliche Verbindungen zwischen scheinbar unzusammenhängenden Phänomenen aufdecken. Darunter sticht der von [Leonhard Euler](https://kenji.blog/p/euler/) entdeckte **Eulersche Polyedersatz** durch seine absolute Einfachheit und Universalität hervor.
 
 Die Formel ist schlichtweg diese:
 
@@ -46,7 +46,7 @@ Tatsächlich, egal welches reguläre Polyeder wir wählen, das Ergebnis ist wund
 
 ## Ein Intuitiver Beweis des Eulerschen Satzes
 
-Warum ist das Ergebnis immer gleich **$2$**? Schauen wir uns einen intuitiven Beweis des französischen Mathematikers Augustin-Louis Cauchy (1811) an. Dieser Beweis verfolgt einen bahnbrechenden Ansatz, indem er einen 3D-Körper in einen „planaren Graphen“ transformiert.
+Warum ist das Ergebnis immer gleich **$2$**? Schauen wir uns einen intuitiven Beweis des französischen Mathematikers [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) (1811) an. Dieser Beweis verfolgt einen bahnbrechenden Ansatz, indem er einen 3D-Körper in einen „planaren Graphen“ transformiert.
 
 ### Schritt 1: Den Körper auf eine Ebene drücken
 
@@ -90,7 +90,7 @@ flowchart TD
 
 ## Das Geheime Manuskript von Descartes: Eine Weitere Entdeckungsgeschichte
 
-Tatsächlich hatte der französische Philosoph und Mathematiker René Descartes etwa ein Jahrhundert bevor Euler diesen Satz veröffentlichte, im Wesentlichen den gleichen Satz aufgestellt.
+Tatsächlich hatte der französische Philosoph und Mathematiker [René Descartes](https://kenji.blog/p/descartes/) etwa ein Jahrhundert bevor Euler diesen Satz veröffentlichte, im Wesentlichen den gleichen Satz aufgestellt.
 Descartes konzentrierte sich auf das Konzept des „Winkeldefekts“ an den Ecken eines Polyeders.
 Die Summe der Winkel, die an einer einzigen Ecke zusammentreffen, beträgt auf einer Ebene $360^\circ$, aber an der Ecke eines Körpers ist sie immer kleiner als $360^\circ$. Dieser Fehlbetrag zu $360^\circ$ wird „Winkeldefekt“ genannt.
 
@@ -135,7 +135,7 @@ flowchart LR
 
 ## Die Euler-Poincaré-Formel: Ein Sprung in die Multidimensionalität
 
-Vom späten 19. bis ins 20. Jahrhundert erweiterten Mathematiker wie Henri Poincaré den Eulerschen Satz in Räume noch höherer Dimensionen. Dies wurde zur **Euler-Poincaré-Formel**.
+Vom späten 19. bis ins 20. Jahrhundert erweiterten Mathematiker wie [Henri Poincaré](https://kenji.blog/p/poincare/) den Eulerschen Satz in Räume noch höherer Dimensionen. Dies wurde zur **Euler-Poincaré-Formel**.
 Durch die Verallgemeinerung der Elemente eines Polyeders betrachteten sie die alternierende Summe der Anzahl der Elemente in einer $n$-dimensionalen Form.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$

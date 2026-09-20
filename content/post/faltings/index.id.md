@@ -18,7 +18,7 @@ tags:
 
 ## 1. Pendahuluan: Raksasa Teori Bilangan Modern
 
-Gerd Faltings secara luas diakui sebagai salah satu ahli geometri aritmatika yang paling mendalam dan berpengaruh dalam komunitas matematika dari akhir abad ke-20 hingga abad ke-21. Secara khusus, buktinya tentang **Dugaan Mordell** (Mordell Conjecture) yang dicapai pada tahun 1983 berdiri sebagai tonggak sejarah yang monumental dan brilian dalam sejarah teori bilangan dan geometri aljabar. Dalam artikel ini, kami akan menjelaskan secara mendetail tentang kehidupannya, pendekatan matematikanya yang unik, dan pencapaian revolusioner yang ia bawa ke dunia matematika.
+[Gerd Faltings](https://kenji.blog/p/faltings/) secara luas diakui sebagai salah satu ahli geometri aritmatika yang paling mendalam dan berpengaruh dalam komunitas matematika dari akhir abad ke-20 hingga abad ke-21. Secara khusus, buktinya tentang **Dugaan Mordell** (Mordell Conjecture) yang dicapai pada tahun 1983 berdiri sebagai tonggak sejarah yang monumental dan brilian dalam sejarah teori bilangan dan geometri aljabar. Dalam artikel ini, kami akan menjelaskan secara mendetail tentang kehidupannya, pendekatan matematikanya yang unik, dan pencapaian revolusioner yang ia bawa ke dunia matematika.
 
 ## 2. Kehidupan Awal dan Karier
 
@@ -28,15 +28,15 @@ Pada tahun 1978, ia memperoleh gelar Ph.D. di bawah bimbingan Hans-Joachim Nasto
 
 ## 3. Pencapaian Bersejarah: Menyelesaikan Dugaan Mordell
 
-Apa yang selamanya mengukir nama Faltings ke dalam sejarah matematika tidak diragukan lagi adalah penyelesaiannya atas **Dugaan Mordell**. Diajukan oleh Louis Mordell pada tahun 1922, dugaan ini adalah masalah yang sangat mendalam mengenai jumlah solusi rasional untuk persamaan Diophantine.
+Apa yang selamanya mengukir nama Faltings ke dalam sejarah matematika tidak diragukan lagi adalah penyelesaiannya atas **Dugaan Mordell**. Diajukan oleh [Louis Mordell](https://kenji.blog/p/mordell/) pada tahun 1922, dugaan ini adalah masalah yang sangat mendalam mengenai jumlah solusi rasional untuk persamaan Diophantine.
 
 Pernyataan dugaannya adalah sebagai berikut:
 
 > Sebuah kurva aljabar pada lapangan bilangan aljabar $K$ dari genus $g \ge 2$ hanya memiliki sejumlah titik rasional yang berhingga pada $K$.
 
-Dugaan ini sangat berkaitan dengan teorema Pythagoras dan Teorema Terakhir Fermat, dan itu adalah masalah yang tangguh yang telah ditantang oleh banyak ahli matematika jenius dan gagal selama bertahun-tahun.
+Dugaan ini sangat berkaitan dengan teorema Pythagoras dan [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/), dan itu adalah masalah yang tangguh yang telah ditantang oleh banyak ahli matematika jenius dan gagal selama bertahun-tahun.
 
-Faltings menyerang masalah ini dengan memanipulasi secara terampil mesin besar geometri aljabar yang dibangun oleh Alexander Grothendieck, seperti teori skema dan kohomologi etale, dan dengan memperkenalkan lebih lanjut kerangka kerja baru yang disebut geometri Arakelov.
+Faltings menyerang masalah ini dengan memanipulasi secara terampil mesin besar geometri aljabar yang dibangun oleh [Alexander Grothendieck](https://kenji.blog/p/grothendieck/), seperti teori skema dan kohomologi etale, dan dengan memperkenalkan lebih lanjut kerangka kerja baru yang disebut geometri Arakelov.
 
 Meskipun struktur logis dari buktinya sangat kompleks, ide intinya dapat dibagi menjadi tiga tahap berikut (bukti dugaan).
 
@@ -88,6 +88,6 @@ Sepanjang waktunya sebagai profesor di Universitas Princeton dan sebagai direktu
 
 ## 7. Kesimpulan
 
-Nama Gerd Faltings akan selamanya diturunkan sebagai pemecah **Dugaan Mordell**. Namun, kehebatannya yang sebenarnya tidak hanya terletak pada memecahkan satu masalah sulit, tetapi pada menciptakan paradigma matematika baru seperti geometri Arakelov dan teori Hodge p-adic.
+Nama [Gerd Faltings](https://kenji.blog/p/faltings/) akan selamanya diturunkan sebagai pemecah **Dugaan Mordell**. Namun, kehebatannya yang sebenarnya tidak hanya terletak pada memecahkan satu masalah sulit, tetapi pada menciptakan paradigma matematika baru seperti geometri Arakelov dan teori Hodge p-adic.
 
 Bahkan hingga saat ini, teori dan filosofi yang ia ciptakan terus memberikan inspirasi luar biasa bagi para matematikawan di seluruh dunia. Kapan pun kita mencoba menyentuh jurang teori bilangan, jalan yang ditempa oleh Faltings selalu terbentang di hadapan kita.

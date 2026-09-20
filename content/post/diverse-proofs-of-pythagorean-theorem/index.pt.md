@@ -36,9 +36,9 @@ graph TD
 
 ---
 
-## 1. Prova Geométrica baseada nos "Elementos" de Euclides
+## 1. Prova Geométrica baseada nos "Elementos" de [Euclides](https://kenji.blog/p/euclid/)
 
-O antigo matemático grego Euclides forneceu uma prova visual e rigorosa em seu livro "Elementos" (Livro I, Proposição 47), que às vezes é referida como a **prova do moinho de vento**.
+O antigo matemático grego [Euclides](https://kenji.blog/p/euclid/) forneceu uma prova visual e rigorosa em seu livro "Elementos" (Livro I, Proposição 47), que às vezes é referida como a **prova do moinho de vento**.
 
 ### Ideia da Prova
 

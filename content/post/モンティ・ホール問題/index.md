@@ -79,9 +79,9 @@ graph TD
 
 ---
 
-## 3. ベイズの定理による厳密な証明
+## 3. [ベイズの定理](https://kenji.blog/p/bayes-theorem/)による厳密な証明
 
-数学的にこの問題を厳密に解くためには、条件付き確率を計算する「ベイズの定理」を用います。
+数学的にこの問題を厳密に解くためには、条件付き確率を計算する「[ベイズの定理](https://kenji.blog/p/bayes-theorem/)」を用います。
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -111,7 +111,7 @@ $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-いよいよベイズの定理を適用して、ドアAとドアCの事後確率を計算します。
+いよいよ[ベイズの定理](https://kenji.blog/p/bayes-theorem/)を適用して、ドアAとドアCの事後確率を計算します。
 
 **ドアA（変更しない場合）に新車がある確率：**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

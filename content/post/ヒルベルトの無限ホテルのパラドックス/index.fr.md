@@ -16,9 +16,9 @@ tags:
 
 ## 1. Bienvenue dans l'hôtel ultime
 
-Le grand mathématicien allemand David Hilbert a conçu l'expérience de pensée amusante suivante pour expliquer à quel point le concept d'« infini » est éloigné de l'intuition humaine.
+Le grand mathématicien allemand [David Hilbert](https://kenji.blog/p/hilbert/) a conçu l'expérience de pensée amusante suivante pour expliquer à quel point le concept d'« infini » est éloigné de l'intuition humaine.
 
-Imaginez. Quelque part dans l'univers, il y a un hôtel appelé **« L'Hôtel Infini de Hilbert »**.
+Imaginez. Quelque part dans l'univers, il y a un hôtel appelé **« [L'Hôtel Infini de Hilbert](https://kenji.blog/p/ヒルベルトの無限ホテルのパラドックス/) »**.
 Cet hôtel possède un nombre **infini** de chambres numérotées : chambre 1, chambre 2, chambre 3...
 
 Un jour, un grand événement a eu lieu dans l'univers, et cet hôtel infini s'est retrouvé **« complet »**, toutes les chambres étant occupées.
@@ -158,7 +158,7 @@ C'est ainsi que le directeur a réussi à loger de manière spectaculaire un nom
 
 Ce que l'Hôtel Infini de Hilbert nous apprend, c'est le fait que **l'« infini dénombrable » (l'infini que l'on peut compter en attribuant des numéros 1, 2, 3...), peu importe combien on l'additionne ou le multiplie, finit toujours par tenir dans le cadre d'un « infini dénombrable » de la même taille.**
 
-Cependant, le mathématicien Georg Cantor a découvert un fait encore plus terrifiant.
+Cependant, le mathématicien [Georg Cantor](https://kenji.blog/p/cantor/) a découvert un fait encore plus terrifiant.
 Les « entiers naturels » et les « fractions » peuvent tous être logés dans cet hôtel infini. Mais, **si les clients des « nombres réels » (tous les nombres décimaux, y compris les nombres irrationnels) arrivaient, il serait absolument impossible de tous les loger, même en utilisant cet hôtel infini.**
 
 Il a été prouvé que la quantité de nombres réels est un « infini (de niveau supérieur) fondamentalement plus grand » que le nombre de chambres de l'Hôtel Infini (infini dénombrable).
@@ -168,7 +168,7 @@ On a tendance à tout regrouper sous le mot « infini », mais en réalité, il 
 
 ## 6. Conclusion : L'« infini » qui détruit l'intuition humaine
 
-L'Hôtel Infini de Hilbert illustre de manière éclatante à quel point le « bon sens du fini » cultivé dans notre vie quotidienne ne s'applique pas au « monde de l'infini ».
+[L'Hôtel Infini de Hilbert](https://kenji.blog/p/ヒルベルトの無限ホテルのパラドックス/) illustre de manière éclatante à quel point le « bon sens du fini » cultivé dans notre vie quotidienne ne s'applique pas au « monde de l'infini ».
 
 « Le tout est plus grand que la partie »
 « Personne ne peut entrer dans un hôtel complet »

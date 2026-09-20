@@ -14,7 +14,7 @@ tags:
 
 ## Introduction : Qu'est-ce que la transformée de Laplace ?
 
-Dans des domaines tels que la physique, l'ingénierie ou l'économie, les **équations différentielles** sont un outil essentiel pour décrire les phénomènes qui changent au fil du temps. Cependant, il est parfois extrêmement difficile de résoudre directement des équations différentielles complexes. C'est là qu'intervient la **Transformée de Laplace** (Laplace Transform).
+Dans des domaines tels que la physique, l'ingénierie ou l'économie, les **équations différentielles** sont un outil essentiel pour décrire les phénomènes qui changent au fil du temps. Cependant, il est parfois extrêmement difficile de résoudre directement des équations différentielles complexes. C'est là qu'intervient la **[Transformée de Laplace](https://kenji.blog/p/laplace-transform/)** ([Laplace Transform](https://kenji.blog/p/laplace-transform/)).
 
 En termes simples, la transformée de Laplace est un « outil magique qui convertit les équations différentielles difficiles en équations algébriques simples (des équations qui peuvent être résolues en utilisant uniquement les quatre opérations de base) ». La procédure consiste à projeter un problème complexe exprimé dans le domaine temporel ($t$) vers le domaine fréquentiel complexe ($s$), à le résoudre facilement dans ce domaine, puis à revenir au domaine temporel.
 
@@ -59,7 +59,7 @@ $$
 \mathcal{L}\{e^{at} f(t)\} = F(s - a)
 $$
 
-### 3. Transformée de Laplace des dérivées
+### 3. [Transformée de Laplace](https://kenji.blog/p/laplace-transform/) des dérivées
 
 C'est la formule la plus importante pour résoudre les équations différentielles.
 
@@ -107,7 +107,7 @@ $$
 
 Soit la condition initiale $q(0) = 0$.
 
-**Étape 1 : Transformée de Laplace**
+**Étape 1 : [Transformée de Laplace](https://kenji.blog/p/laplace-transform/)**
 Appliquez la transformée de Laplace des deux côtés. Soit la transformée de Laplace de $q(t)$ notée $Q(s)$.
 
 $$
@@ -133,7 +133,7 @@ $$
 Q(s) = C E \left( \frac{1}{s} - \frac{1}{s + \frac{1}{RC}} \right)
 $$
 
-**Étape 3 : Transformée de Laplace inverse**
+**Étape 3 : [Transformée de Laplace](https://kenji.blog/p/laplace-transform/) inverse**
 Revenez au domaine temporel en utilisant le tableau des transformées. Utilisez le fait que $\frac{1}{s}$ revient à $1$, et $\frac{1}{s + a}$ revient à $e^{-at}$.
 
 $$

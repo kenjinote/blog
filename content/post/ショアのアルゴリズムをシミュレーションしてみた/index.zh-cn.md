@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 如果 $r$ 是偶数，就可以使用平方差公式进行因式分解：
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-这意味着 $N$ 与 $(a^{r/2} - 1)$ 或 $(a^{r/2} + 1)$ 之一有公约数（但必须满足条件 $a^{r/2} \not\equiv -1 \pmod N$）。因此，使用欧几里得算法计算：
+这意味着 $N$ 与 $(a^{r/2} - 1)$ 或 $(a^{r/2} + 1)$ 之一有公约数（但必须满足条件 $a^{r/2} \not\equiv -1 \pmod N$）。因此，使用[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)计算：
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$

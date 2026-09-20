@@ -146,4 +146,4 @@ print(np.round(T, 4))
 ```
 
 ## 결론
-대각화와 조르단 표준형은 복잡한 시스템의 행동을 명확하게 파악할 수 있도록 해주는 수학적 기초입니다.
+[대각화와 조르단 표준형](https://kenji.blog/p/diagonalization-and-jordan-normal-form/)은 복잡한 시스템의 행동을 명확하게 파악할 수 있도록 해주는 수학적 기초입니다.

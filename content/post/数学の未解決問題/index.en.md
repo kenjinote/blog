@@ -24,7 +24,7 @@ For example,
 
 Currently, only 51 perfect numbers have been discovered. It is conjectured that there are infinitely many, but this has not yet been proven.
 
-## Goldbach's Conjecture
+## [Goldbach's Conjecture](https://kenji.blog/p/goldbachs-conjecture/)
 
 Goldbach's conjecture states that every even integer greater than 2 can be expressed as the sum of two primes.
 (Here, a prime number is a natural number that has no positive divisors other than 1 and itself.)

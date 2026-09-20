@@ -12,13 +12,13 @@ tags:
   - "Números Primos"
 ---
 
-Na sociedade moderna da internet, devemos nossa capacidade de comunicação segura à **criptografia**. Na própria base desta criptografia reside um belo teorema descoberto pelo matemático do século XVII Pierre de Fermat.
+Na sociedade moderna da internet, devemos nossa capacidade de comunicação segura à **criptografia**. Na própria base desta criptografia reside um belo teorema descoberto pelo matemático do século XVII [Pierre de Fermat](https://kenji.blog/p/fermat/).
 
 Neste artigo, explicaremos **o Pequeno Teorema de Fermat**, uma pedra angular crucial da teoria dos números, de uma maneira fácil de entender, cobrindo seu significado, prova e como ele é aplicado na moderna criptografia RSA.
 
 ## O que é o Pequeno Teorema de Fermat?
 
-O Pequeno Teorema de Fermat é um teorema extremamente simples, mas poderoso, que demonstra a relação entre números primos e inteiros.
+[O Pequeno Teorema de Fermat](https://kenji.blog/p/fermats-little-theorem/) é um teorema extremamente simples, mas poderoso, que demonstra a relação entre números primos e inteiros.
 
 O teorema afirma o seguinte:
 
@@ -116,6 +116,6 @@ Pelo Teorema de Euler, as chaves ($e$ e $d$) são projetadas de forma que $M^{ed
 
 ## Conclusão
 
-Um pequeno teorema descoberto por Pierre de Fermat no século XVII tornou-se um elemento indispensável que sustenta a base da segurança da informação na sociedade moderna centenas de anos depois.
+Um pequeno teorema descoberto por [Pierre de Fermat](https://kenji.blog/p/fermat/) no século XVII tornou-se um elemento indispensável que sustenta a base da segurança da informação na sociedade moderna centenas de anos depois.
 
-**O Pequeno Teorema de Fermat** pode ser considerado um dos mais belos exemplos que demonstram como a matemática pura se conecta à tecnologia prática (criptografia e algoritmos). Não se pode deixar de se surpreender com a profundidade da matemática e a amplitude de sua aplicabilidade.
+**[O Pequeno Teorema de Fermat](https://kenji.blog/p/fermats-little-theorem/)** pode ser considerado um dos mais belos exemplos que demonstram como a matemática pura se conecta à tecnologia prática (criptografia e algoritmos). Não se pode deixar de se surpreender com a profundidade da matemática e a amplitude de sua aplicabilidade.

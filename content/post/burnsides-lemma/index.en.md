@@ -21,7 +21,7 @@ A typical example of this is the **"enumeration of objects with symmetry"**. Sym
 
 For example, suppose we make a necklace by stringing four beads together into a loop. The colors of the beads available are "red" and "blue". In this case, how many different necklace designs are there in total?
 
-In this article, starting from this seemingly simple question, we will explain in detail the powerful mathematical tool for counting with symmetry considered, **"Burnside's Lemma"**, from the basics to its applications. This is a perfect topic for a practical introduction to Group Theory, so please stay with us until the end.
+In this article, starting from this seemingly simple question, we will explain in detail the powerful mathematical tool for counting with symmetry considered, **"[Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/)"**, from the basics to its applications. This is a perfect topic for a practical introduction to Group Theory, so please stay with us until the end.
 
 ## 2. The Pitfalls of Simple Counting
 
@@ -79,9 +79,9 @@ For instance, applying the operations of $G$ to the pattern "Red-Blue-Blue-Blue"
 
 These 4 patterns belong to the same "Orbit". The "number of essentially different designs" we want to know is exactly nothing but **"how many different orbits the entire set $X$ is partitioned into"**. This is denoted by the formula $|X/G|$.
 
-## 5. Burnside's Lemma
+## 5. [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/)
 
-Here finally, the star of this time, **Burnside's Lemma**, makes its appearance. It is also sometimes called the Cauchy-Frobenius lemma. This is an astonishing theorem that allows us to easily calculate the "number of orbits (number of essentially different patterns)" when a group $G$ acts on a finite set $X$.
+Here finally, the star of this time, **[Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/)**, makes its appearance. It is also sometimes called the Cauchy-Frobenius lemma. This is an astonishing theorem that allows us to easily calculate the "number of orbits (number of essentially different patterns)" when a group $G$ acts on a finite set $X$.
 
 The formula for the theorem is as follows:
 
@@ -97,13 +97,13 @@ Let's look at the meaning of each symbol appearing in the formula in detail:
 - $X^g$: The set of patterns that "do not change (are fixed)" even when operation $g$ is performed.
 - $|X^g|$: The number of patterns fixed by operation $g$. This is called the **"number of fixed points"**.
 
-What this formula means is very intuitive. Burnside's Lemma asserts that we can obtain the desired number of orbits by **"counting the 'number of unchanging patterns (number of fixed points)' for each operation, adding them all up, and dividing by the total number of operations (i.e., taking the average)"**.
+What this formula means is very intuitive. [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/) asserts that we can obtain the desired number of orbits by **"counting the 'number of unchanging patterns (number of fixed points)' for each operation, adding them all up, and dividing by the total number of operations (i.e., taking the average)"**.
 
 The greatest strength of this theorem is that it can break down the complex judgment of duplicates into independent, simple calculations of "counting what does not change under each operation".
 
 ## 6. Application and Calculation for the Necklace Problem
 
-Now, let's actually use Burnside's Lemma to calculate the number of designs for a necklace with 4 beads (2 colors, red and blue).
+Now, let's actually use [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/) to calculate the number of designs for a necklace with 4 beads (2 colors, red and blue).
 The number of elements in the original set of patterns $X$ is $16$. We will investigate the number of fixed points $|X^g|$ for each operation $g \in G$ of the group $G$ one by one.
 
 ### 6.1. Fixed points for doing nothing ($R_0$)
@@ -128,7 +128,7 @@ Therefore, there are only $2$ ways: "all red" or "all blue".
 $$ |X^{R_{270}}| = 2 $$
 
 ### 6.5. Calculation of the final result
-Now, we have all the numbers of fixed points for all operations. We substitute these into the formula of Burnside's Lemma.
+Now, we have all the numbers of fixed points for all operations. We substitute these into the formula of [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/).
 
 $$
 |X/G| = \frac{|X^{R_0}| + |X^{R_{90}}| + |X^{R_{180}}| + |X^{R_{270}}|}{|G|}
@@ -188,7 +188,7 @@ $$
 
 Coincidentally, in this specific case (4 beads, 2 colors), it was found that the essentially distinct types remain **$6$ ways** even when reflection is considered. This is because all $6$ patterns we found earlier already included their own reflected patterns (if rotation is included). However, if the number of beads or colors increases, the results will differ greatly between the group of rotations only $C_n$ and the dihedral group $D_n$.
 
-## 8. Sketch of the Proof of Burnside's Lemma
+## 8. Sketch of the Proof of [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/)
 
 Why does taking the "average of the number of fixed points" result in the "number of orbits"? Behind this lies a very important theorem in group theory called the **"Orbit-Stabilizer Theorem"**.
 
@@ -215,27 +215,27 @@ $$
 |G| \sum_{x \in X} \frac{1}{|O_x|} = |G| \times |X/G|
 $$
 
-By dividing both sides by $|G|$, we get the formula for Burnside's Lemma. It is a very beautiful and sophisticated logical development.
+By dividing both sides by $|G|$, we get the formula for [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/). It is a very beautiful and sophisticated logical development.
 
 ## 9. Development into Pólya Enumeration Theorem
 
-Burnside's Lemma is powerful, but manually finding the number of fixed points one by one becomes difficult as the scale of the problem increases. For example, for a problem like "How many ways are there to paint each face of a regular dodecahedron with 3 colors?", there are 60 types of rotation operations, making the calculation enormous.
+[Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/) is powerful, but manually finding the number of fixed points one by one becomes difficult as the scale of the problem increases. For example, for a problem like "How many ways are there to paint each face of a regular dodecahedron with 3 colors?", there are 60 types of rotation operations, making the calculation enormous.
 
 Generalizing this further and enabling mechanical calculation using algebraic polynomials (Cycle Index) is the **"Pólya Enumeration Theorem"**.
 
-Burnside's Lemma is an important step toward understanding Pólya's theorem, laying the foundation for group-theoretic enumeration.
+[Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/) is an important step toward understanding Pólya's theorem, laying the foundation for group-theoretic enumeration.
 
-## 10. Historical Background of Burnside's Lemma
+## 10. Historical Background of [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/)
 
 Actually, this theorem was not first discovered by William Burnside. It was introduced in Burnside's book "Theory of Groups of Finite Order" published in 1897 and became widely popularized, so it bears his name.
 
-However, historically, Augustin-Louis Cauchy had already published a special case of this theorem (regarding symmetric groups) in 1845, and later in 1887 Ferdinand Georg Frobenius gave a proof for general finite groups.
+However, historically, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) had already published a special case of this theorem (regarding symmetric groups) in 1845, and later in 1887 Ferdinand Georg Frobenius gave a proof for general finite groups.
 
 Therefore, those who try to be rigorous about mathematical history sometimes playfully call this theorem the **"Cauchy-Frobenius Lemma"** or **"The Lemma that is not Burnside's"**. Regardless of the origin of its name, the magnitude of the role this lemma has played in the history of group theory and combinatorics is immeasurable.
 
 ## 11. Example 2: Coloring the Faces of a Cube
 
-To further realize the power of Burnside's Lemma, let's give another famous example. It is the problem: "How many ways are there to paint the 6 faces of a cube with 2 colors, red and blue?" Here too, we treat those that become the same when rotated as identical.
+To further realize the power of [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/), let's give another famous example. It is the problem: "How many ways are there to paint the 6 faces of a cube with 2 colors, red and blue?" Here too, we treat those that become the same when rotated as identical.
 
 The rotation group of a cube consists of the following 24 operations:
 1. **Do nothing**: 1 operation
@@ -245,17 +245,17 @@ The rotation group of a cube consists of the following 24 operations:
 
 There is a total of $1 + 9 + 8 + 6 = 24$ elements ($|G| = 24$).
 
-By calculating the number of fixed points (colorings where the colors do not change) for each rotation operation and taking the average, the total number of ways to color the cube can be found. Even for a problem that is extremely difficult to count intuitively, using Burnside's Lemma reduces it to "local" problems of symmetry along each rotation axis. As a result, it is known that the number of ways to color this cube is **$10$ ways**.
+By calculating the number of fixed points (colorings where the colors do not change) for each rotation operation and taking the average, the total number of ways to color the cube can be found. Even for a problem that is extremely difficult to count intuitively, using [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/) reduces it to "local" problems of symmetry along each rotation axis. As a result, it is known that the number of ways to color this cube is **$10$ ways**.
 
 ## 12. Conclusion
 
-How was it? In this article, using the number of necklace designs as an example, we explained Burnside's Lemma in detail.
+How was it? In this article, using the number of necklace designs as an example, we explained [Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/) in detail.
 
 *   Simple permutation and combination cannot handle duplication due to symmetry well.
 *   Symmetry can be described mathematically using a **"Group"**.
-*   Using **Burnside's Lemma**, the number of essentially different patterns can be calculated by the mechanical procedure of "averaging the number of fixed points in each operation".
+*   Using **[Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/)**, the number of essentially different patterns can be calculated by the mechanical procedure of "averaging the number of fixed points in each operation".
 *   This theorem is based on a deep property of group theory called the Orbit-Stabilizer Theorem.
 
-Burnside's Lemma is a very practical theorem applied in a wide range of fields, such as enumerating molecular isomers in chemistry, determining graph isomorphism in graph theory, and even statistical mechanics in physics.
+[Burnside's Lemma](https://kenji.blog/p/burnsides-lemma/) is a very practical theorem applied in a wide range of fields, such as enumerating molecular isomers in chemistry, determining graph isomorphism in graph theory, and even statistical mechanics in physics.
 
 Through the basics introduced this time, we hope you could feel a glimpse of how the field of mathematics called "Group Theory", which tends to look abstract, can brilliantly solve concrete real-world problems.

@@ -13,7 +13,7 @@ tags:
   - "Física"
 ---
 
-Si tuviéramos que nombrar a una persona que tuvo el impacto más profundo en el desarrollo de la ciencia en la historia de la humanidad, muchos nombrarían a **Isaac Newton** . Logró descubrimientos revolucionarios en diversos campos como la física, las matemáticas y la astronomía. No es exagerado decir que sus logros no fueron meros descubrimientos de una sola época, sino que construyeron los cimientos mismos de la ciencia moderna.
+Si tuviéramos que nombrar a una persona que tuvo el impacto más profundo en el desarrollo de la ciencia en la historia de la humanidad, muchos nombrarían a **[Isaac Newton](https://kenji.blog/p/newton/)** . Logró descubrimientos revolucionarios en diversos campos como la física, las matemáticas y la astronomía. No es exagerado decir que sus logros no fueron meros descubrimientos de una sola época, sino que construyeron los cimientos mismos de la ciencia moderna.
 
 En este artículo, rastrearemos los episodios extraordinarios desde la educación de Newton hasta sus últimos años, y exploraremos profundamente sus hazañas matemáticas y físicas, centrándonos particularmente en el **cálculo** (el método de las fluxiones), el **teorema del binomio generalizado** y el **método de Newton** .
 
@@ -21,7 +21,7 @@ En este artículo, rastrearemos los episodios extraordinarios desde la educació
 
 ### Una infancia solitaria y su nacimiento en Woolsthorpe
 
-Isaac Newton nació el día de Navidad de 1642 (calendario juliano; 4 de enero de 1643 en el calendario gregoriano) en el pequeño pueblo de Woolsthorpe, Lincolnshire, Inglaterra. Nacido prematuramente, su cuerpo era extremadamente pequeño, y al principio se dudaba de su supervivencia. Para empeorar las cosas, el padre de Newton había fallecido tres meses antes de su nacimiento.
+[Isaac Newton](https://kenji.blog/p/newton/) nació el día de Navidad de 1642 (calendario juliano; 4 de enero de 1643 en el calendario gregoriano) en el pequeño pueblo de Woolsthorpe, Lincolnshire, Inglaterra. Nacido prematuramente, su cuerpo era extremadamente pequeño, y al principio se dudaba de su supervivencia. Para empeorar las cosas, el padre de Newton había fallecido tres meses antes de su nacimiento.
 
 Cuando tenía tres años, su madre se volvió a casar y dejó a Newton al cuidado de su abuela para unirse a su nuevo marido. Se dice que esta temprana experiencia de separación de su progenitor influyó profundamente en la personalidad de Newton, contribuyendo al carácter extremadamente reservado y desconfiado que desarrolló más tarde en su vida.
 
@@ -29,7 +29,7 @@ Cuando comenzó a asistir a la escuela local, Newton inicialmente no era un estu
 
 ### La Universidad de Cambridge y el "Año de las Maravillas"
 
-En 1661, Newton ingresó en el Trinity College de Cambridge. Si bien la universidad de la época enseñaba principalmente la filosofía aristotélica, Newton se sintió fuertemente atraído por los nuevos pensamientos científicos de René Descartes, Galileo Galilei y Johannes Kepler. Dejó una nota en su cuaderno afirmando: **"Amicus Plato amicus Aristoteles magis amica veritas"** (Platón es mi amigo, Aristóteles es mi amigo, pero mi mejor amiga es la verdad).
+En 1661, Newton ingresó en el Trinity College de Cambridge. Si bien la universidad de la época enseñaba principalmente la filosofía aristotélica, Newton se sintió fuertemente atraído por los nuevos pensamientos científicos de [René Descartes](https://kenji.blog/p/descartes/), Galileo Galilei y Johannes Kepler. Dejó una nota en su cuaderno afirmando: **"Amicus Plato amicus Aristoteles magis amica veritas"** (Platón es mi amigo, Aristóteles es mi amigo, pero mi mejor amiga es la verdad).
 
 En 1665, un grave brote de la Gran Peste azotó Londres, lo que obligó a la universidad a cerrar. Newton regresó a su ciudad natal de Woolsthorpe y se sumergió en la contemplación durante aproximadamente un año y medio. Durante este período tranquilo y solitario, encontró la inspiración para sus tres grandes logros: los fundamentos del cálculo, la óptica (análisis espectral de la luz usando un prisma) y la ley de la gravitación universal. En la historia de la ciencia, este período se conoce como el **Annus Mirabilis** (Año de las Maravillas).
 
@@ -164,4 +164,4 @@ Estas palabras expresan su respeto, reconociendo que sus descubrimientos solo fu
 
 El sistema de mecánica clásica que estableció siguió siendo la base absoluta de la física durante unos 200 años hasta que Albert Einstein publicó la teoría de la relatividad a principios del siglo XX. Incluso hoy en día, la mecánica newtoniana se utiliza con extrema precisión y eficacia para calcular los fenómenos físicos de nuestra escala diaria y las órbitas de las sondas espaciales.
 
-Isaac Newton, partiendo de una infancia solitaria, descubrió las verdades del universo a través de su extraordinaria concentración y genial intuición. Las numerosas leyes y teoremas matemáticos que dejó siguen sustentando nuestra tecnología y sociedad hasta el día de hoy.
+[Isaac Newton](https://kenji.blog/p/newton/), partiendo de una infancia solitaria, descubrió las verdades del universo a través de su extraordinaria concentración y genial intuición. Las numerosas leyes y teoremas matemáticos que dejó siguen sustentando nuestra tecnología y sociedad hasta el día de hoy.

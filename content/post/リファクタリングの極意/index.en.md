@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Refactoring", "Modern C++", "Legacy Code"]
 ---
 
-# The Secret of Refactoring: Safely Improving Legacy C++ Code
+# [[The Secret of Refactoring](https://kenji.blog/p/[リファクタリングの極意](https://kenji.blog/p/リファクタリングの極意/)/): Safely Improving Legacy C++ Code](https://kenji.blog/p/[リファクタリングの極意](https://kenji.blog/p/リファクタリングの極意/)/)
 
 In modern software development, the battle against "legacy code" is inevitable. Especially in a language like C++, legacy code poses a threat beyond comparison to that of other languages. Manual memory management (a storm of raw pointers and `new` / `delete`), abuse of global variables, lack of exception safety, and above all, the fact that "there are no tests." Michael Feathers boldly asserted in his renowned book *Working Effectively with Legacy Code* that "Code without tests is legacy code."
 

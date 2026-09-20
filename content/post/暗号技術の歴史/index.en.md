@@ -95,10 +95,10 @@ During World War II, the "Enigma," used by Nazi Germany, became the most famous 
 
 Because the rotors advanced with every letter typed on the keyboard, typing the same letter consecutively would output different ciphertext letters (the pinnacle of polyalphabetic ciphers). Its key space (combinations of settings) reached approximately $1.58 \times 10^{19}$ (about 15.8 quintillion), and with the technology of that time, brute-force decryption was considered impossible.
 
-## Alan Turing and the "Bombe"
+## [Alan Turing](https://kenji.blog/p/turing/) and the "Bombe"
 Challenging this impregnable Enigma was the decryption team at Bletchley Park in the UK, building upon the early achievements of Polish mathematician Marian Rejewski and others.
 
-In particular, Alan Turing developed an electromechanical decryption machine called the "Bombe," which utilized guesses of the plaintext corresponding to parts of the ciphertext (Cribs). The Bombe quickly detected logical contradictions and successively eliminated impossible rotor settings, successfully breaking Enigma. It is said that this great achievement advanced the Allied victory by several years.
+In particular, [Alan Turing](https://kenji.blog/p/turing/) developed an electromechanical decryption machine called the "Bombe," which utilized guesses of the plaintext corresponding to parts of the ciphertext (Cribs). The Bombe quickly detected logical contradictions and successively eliminated impossible rotor settings, successfully breaking Enigma. It is said that this great achievement advanced the Allied victory by several years.
 
 ---
 

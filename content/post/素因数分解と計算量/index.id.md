@@ -138,7 +138,7 @@ Setiap kali jumlah digit bertambah 1 bit (nilainya menjadi dua kali lipat), wakt
 
 ## 2. Metode Faktorisasi Fermat (Fermat's Factorization Method)
 
-Ini adalah metode yang dirancang oleh matematikawan abad ke-17, Pierre de Fermat. Ketika diberikan bilangan komposit ganjil $N$, ia mencoba merepresentasikan $N$ sebagai selisih dari dua bilangan kuadrat.
+Ini adalah metode yang dirancang oleh matematikawan abad ke-17, [Pierre de Fermat](https://kenji.blog/p/fermat/). Ketika diberikan bilangan komposit ganjil $N$, ia mencoba merepresentasikan $N$ sebagai selisih dari dua bilangan kuadrat.
 
 $$ N = x^2 - y^2 = (x - y)(x + y) $$
 

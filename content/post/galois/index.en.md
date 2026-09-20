@@ -8,13 +8,13 @@ categories: ["mathematics", "biography"]
 tags: ["Galois Theory", "Algebra", "Group Theory", "History"]
 ---
 
-In the history of mathematics, few have led a life as dramatic and tragic as Évariste Galois (1811–1832). This young Frenchman, who lost his life in a duel at the tender age of 20, laid the foundations for a magnificent theory that would fundamentally change subsequent mathematics in a letter written on the eve of his death. In this article, we delve deeply into Galois's turbulent life and his greatest legacy, **Galois Theory**.
+In the history of mathematics, few have led a life as dramatic and tragic as [Évariste Galois](https://kenji.blog/p/galois/) (1811–1832). This young Frenchman, who lost his life in a duel at the tender age of 20, laid the foundations for a magnificent theory that would fundamentally change subsequent mathematics in a letter written on the eve of his death. In this article, we delve deeply into Galois's turbulent life and his greatest legacy, **[Galois Theory](https://kenji.blog/p/galois-theory/)**.
 
 ## 1. A Turbulent Life: Passion and Frustration
 
 ### Early Life and Awakening to Mathematics
 
-Évariste Galois was born in 1811 in Bourg-la-Reine, a suburb of Paris. His father was an educated Republican who later served as the town's mayor. Initially educated by his mother, Galois entered the Lycée Louis-le-Grand in Paris at the age of 12.
+[Évariste Galois](https://kenji.blog/p/galois/) was born in 1811 in Bourg-la-Reine, a suburb of Paris. His father was an educated Republican who later served as the town's mayor. Initially educated by his mother, Galois entered the Lycée Louis-le-Grand in Paris at the age of 12.
 
 School life at the lycée was boring for him, but his life changed completely at the age of 15 when he encountered Legendre's *Éléments de Géométrie*. It is said that Galois read this difficult book in a matter of days, as if reading a novel. From then on, he ignored normal textbooks and began devouring the papers of the greatest mathematicians of the time, such as Lagrange and Cauchy.
 
@@ -48,9 +48,9 @@ On the eve of the duel, having a premonition of his death, Galois wrote a long l
 
 The next morning, May 30, 1832, Galois was shot in the abdomen and died the following day. He was 20 years old. His last words to his weeping younger brother were, "Don't cry. I need all my courage to die at twenty."
 
-## 2. Mathematical Achievements: What is Galois Theory?
+## 2. Mathematical Achievements: What is [Galois Theory](https://kenji.blog/p/galois-theory/)?
 
-Galois's greatest legacy is what is now called **Galois Theory**. This provided a complete and fundamental answer to a long-standing mathematical problem: "Why can't equations of degree 5 or higher be solved algebraically?"
+Galois's greatest legacy is what is now called **[Galois Theory](https://kenji.blog/p/galois-theory/)**. This provided a complete and fundamental answer to a long-standing mathematical problem: "Why can't equations of degree 5 or higher be solved algebraically?"
 
 ### Equation Roots and Symmetry
 
@@ -62,7 +62,7 @@ Galois focused on the **symmetry** hidden behind the roots of an equation. He co
 
 ### Groups and Fields: Galois Correspondence
 
-The core of Galois Theory lies in showing that a beautiful correspondence exists between two seemingly completely different mathematical objects: "Fields" and "Groups."
+The core of [Galois Theory](https://kenji.blog/p/galois-theory/) lies in showing that a beautiful correspondence exists between two seemingly completely different mathematical objects: "Fields" and "Groups."
 
 - **Field**: A set of numbers where the four basic arithmetic operations (addition, subtraction, multiplication, division) can be performed freely. It represents the expanse of the space containing the coefficients and roots of an equation.
 - **Group**: A collection of symmetries or transformations. It represents the structure of the operations (automorphisms) that permute the roots of an equation.
@@ -116,4 +116,4 @@ After Galois's death, his letters were kept by his close friend Chevalier and gr
 
 The concept of "group" introduced by Galois subsequently became the foundational language not only for algebra but for all scientific fields, including geometry, topology, and physics (such as particle physics and crystallography). Today, abstract algebra, which studies algebraic systems like "groups, rings, and fields," has become one of the most important pillars of modern mathematics.
 
-Évariste Galois passed away at the young age of 20. However, the monumental achievement he established during his short life has not faded even after nearly 200 years, and it continues to shine a powerful light illuminating the depths of modern mathematics. His dying words, "I have not the time," seem to strongly confront us with the boundlessness of human intellect and the brevity of life.
+[Évariste Galois](https://kenji.blog/p/galois/) passed away at the young age of 20. However, the monumental achievement he established during his short life has not faded even after nearly 200 years, and it continues to shine a powerful light illuminating the depths of modern mathematics. His dying words, "I have not the time," seem to strongly confront us with the boundlessness of human intellect and the brevity of life.

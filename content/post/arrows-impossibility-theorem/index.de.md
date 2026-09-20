@@ -16,7 +16,7 @@ Wenn politische Wahlen oder Abstimmungen anstehen, hört man oft Stimmen der Unz
 
 Doch in den 1950er Jahren wurde in der Wirtschaftswissenschaft ein schockierendes mathematisches Theorem bewiesen. Es lautet: **„Ein absolut gerechtes und perfektes Wahlsystem existiert logischerweise nicht.“**
 
-Dieses Theorem, das als **Unmöglichkeitssatz von Arrow** (Arrow's Impossibility Theorem) bekannt ist, wurde von dem Ökonomen Kenneth Arrow (Nobelpreisträger für Wirtschaftswissenschaften) formuliert. In diesem Artikel werden wir die Essenz des Unmöglichkeitssatzes von Arrow ohne allzu komplexe mathematische Formeln und leicht verständlich erklären.
+Dieses Theorem, das als **Unmöglichkeitssatz von Arrow** ([Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/)) bekannt ist, wurde von dem Ökonomen Kenneth Arrow (Nobelpreisträger für Wirtschaftswissenschaften) formuliert. In diesem Artikel werden wir die Essenz des Unmöglichkeitssatzes von Arrow ohne allzu komplexe mathematische Formeln und leicht verständlich erklären.
 
 ## Die Schwierigkeit von Wahlen (Das Condorcet-Paradoxon)
 
@@ -67,7 +67,7 @@ Ob die Gesellschaft A gegenüber B bevorzugt, darf **nur von den Präferenzen de
 ### 4. Keine Diktatur (Non-dictatorship)
 Das Wahlsystem darf nicht den Präferenzen einer bestimmten einzelnen Person (des Diktators) Vorrang geben und die Meinungen aller anderen ignorieren. Es ist keine Demokratie, wenn ein „Diktator“ das Ergebnis unabhängig von den restlichen Stimmen im Alleingang bestimmen kann.
 
-## Der Unmöglichkeitssatz von Arrow
+## [Der Unmöglichkeitssatz von Arrow](https://kenji.blog/p/arrows-impossibility-theorem/)
 
 Diese vier Bedingungen sind so grundlegend, dass jeder zustimmen würde: „Ein faires Wahlsystem sollte diese natürlich erfüllen.“ Arrows mathematischer Beweis hat jedoch folgende unbarmherzige Tatsache aufgedeckt:
 
@@ -89,7 +89,7 @@ graph TD
 
 ## Was bedeutet das für die Realität?
 
-Der Unmöglichkeitssatz von Arrow bedeutet nicht: „Deshalb sind Wahlen sinnlos und die Demokratie hat versagt.“ Er besagt vielmehr: **„Eine Abstimmung ist lediglich ein Werkzeug und nicht perfekt; wir müssen das System wählen, das am ehesten dem entspricht, worauf wir Wert legen.“**
+[Der Unmöglichkeitssatz von Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) bedeutet nicht: „Deshalb sind Wahlen sinnlos und die Demokratie hat versagt.“ Er besagt vielmehr: **„Eine Abstimmung ist lediglich ein Werkzeug und nicht perfekt; wir müssen das System wählen, das am ehesten dem entspricht, worauf wir Wert legen.“**
 
 Wenn wir uns tatsächliche Wahlsysteme ansehen, werden wir feststellen, dass sie alle auf irgendeine Weise bestimmte Bedingungen „opfern“ (insbesondere Bedingung 3: Unabhängigkeit von irrelevanten Alternativen).
 

@@ -8,11 +8,11 @@ categories: ["mathématiques", "biographie"]
 tags: ["Legendre", "Théorie des nombres", "Géométrie", "Histoire des mathématiques"]
 ---
 
-# Adrien-Marie Legendre : Le géant de l'ombre des mathématiques et sa vie mouvementée
+# [Adrien-Marie Legendre](https://kenji.blog/p/legendre/) : Le géant de l'ombre des mathématiques et sa vie mouvementée
 
-Dans l'histoire des mathématiques, il y a des figures dont les noms couronnent de nombreux théorèmes et concepts, mais dont la vie personnelle et le véritable visage restent étonnamment méconnus. Le grand mathématicien français **Adrien-Marie Legendre** (1752–1833) en est sans doute un parfait exemple.
+Dans l'histoire des mathématiques, il y a des figures dont les noms couronnent de nombreux théorèmes et concepts, mais dont la vie personnelle et le véritable visage restent étonnamment méconnus. Le grand mathématicien français **[Adrien-Marie Legendre](https://kenji.blog/p/legendre/)** (1752–1833) en est sans doute un parfait exemple.
 
-Dans cet article, nous plongeons profondément dans la vie de Legendre, ses immenses contributions au monde mathématique, sa querelle féroce avec le génie contemporain Carl Friedrich Gauss, et le "mystère du portrait" qui n'a été élucidé que récemment. En retraçant la trajectoire de sa vie, vous pourrez ressentir le souffle de la communauté scientifique française du XVIIIe au XIXe siècle.
+Dans cet article, nous plongeons profondément dans la vie de Legendre, ses immenses contributions au monde mathématique, sa querelle féroce avec le génie contemporain [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), et le "mystère du portrait" qui n'a été élucidé que récemment. En retraçant la trajectoire de sa vie, vous pourrez ressentir le souffle de la communauté scientifique française du XVIIIe au XIXe siècle.
 
 ## 1. Vie et contexte historique : Un mathématicien survivant à une France turbulente
 
@@ -42,7 +42,7 @@ Les réalisations de Legendre couvrent presque tous les domaines des mathématiq
 
 ### 2.1 Passion pour la théorie des nombres et le symbole de Legendre
 
-Legendre était profondément fasciné par la théorie des nombres, initiée par des prédécesseurs tels que Pierre de Fermat et Leonhard Euler. L'une de ses plus grandes réalisations est son travail sur la "Loi de réciprocité quadratique". Cette loi est l'un des théorèmes les plus beaux et les plus importants de la théorie des nombres pour déterminer si un nombre premier est congruent à un carré modulo un autre nombre premier.
+Legendre était profondément fasciné par la théorie des nombres, initiée par des prédécesseurs tels que [Pierre de Fermat](https://kenji.blog/p/fermat/) et [Leonhard Euler](https://kenji.blog/p/euler/). L'une de ses plus grandes réalisations est son travail sur la "Loi de réciprocité quadratique". Cette loi est l'un des théorèmes les plus beaux et les plus importants de la théorie des nombres pour déterminer si un nombre premier est congruent à un carré modulo un autre nombre premier.
 
 Il a formulé cette loi et en a donné une preuve partielle (une preuve complète a ensuite été fournie par le jeune Gauss). De plus, pour exprimer cette recherche de manière concise et élégante, il a introduit une notation connue aujourd'hui sous le nom de **symbole de Legendre**.
 
@@ -77,9 +77,9 @@ Ces polynômes sont devenus un outil indispensable dans toutes sortes de calculs
 
 ### 2.3 'Éléments de géométrie' et son grand impact sur l'enseignement des mathématiques
 
-Parallèlement à ses activités de recherche, Legendre était également un éducateur exceptionnel. Son livre "Éléments de géométrie", publié en 1794, a réorganisé les "Éléments" d'Euclide pour les rendre plus accessibles et rigoureux pour les étudiants de son époque.
+Parallèlement à ses activités de recherche, Legendre était également un éducateur exceptionnel. Son livre "Éléments de géométrie", publié en 1794, a réorganisé les "Éléments" d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) pour les rendre plus accessibles et rigoureux pour les étudiants de son époque.
 
-Ce manuel a connu un succès phénoménal, étant traduit en anglais et dans d'autres langues et lu dans le monde entier, pas seulement en France. Il a été largement adopté aux États-Unis et est resté la norme absolue pour l'enseignement de la géométrie tout au long du XIXe siècle. Dans ce livre, il a continuellement tenté de prouver le postulat des parallèles (le cinquième postulat d'Euclide), ajoutant de nouvelles preuves à chaque édition, bien qu'en fin de compte elles se soient toutes révélées imparfaites. Cependant, sa persévérance est devenue l'une des forces motrices importantes incitant la naissance de la géométrie non euclidienne.
+Ce manuel a connu un succès phénoménal, étant traduit en anglais et dans d'autres langues et lu dans le monde entier, pas seulement en France. Il a été largement adopté aux États-Unis et est resté la norme absolue pour l'enseignement de la géométrie tout au long du XIXe siècle. Dans ce livre, il a continuellement tenté de prouver le postulat des parallèles (le cinquième postulat d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)), ajoutant de nouvelles preuves à chaque édition, bien qu'en fin de compte elles se soient toutes révélées imparfaites. Cependant, sa persévérance est devenue l'une des forces motrices importantes incitant la naissance de la géométrie non euclidienne.
 
 ### 2.4 Défi au théorème des nombres premiers
 
@@ -95,7 +95,7 @@ Il a été révélé plus tard que Gauss avait également fait une conjecture si
 
 ## 3. Querelle avec Gauss : La tragédie autour de la découverte des moindres carrés
 
-En discutant de la vie de Legendre, on ne peut éviter le féroce différend de priorité, en particulier concernant la **méthode des moindres carrés**, avec Carl Friedrich Gauss, le "prince des mathématiques" allemand.
+En discutant de la vie de Legendre, on ne peut éviter le féroce différend de priorité, en particulier concernant la **méthode des moindres carrés**, avec [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), le "prince des mathématiques" allemand.
 
 En 1805, dans son livre sur le calcul des orbites des comètes, Legendre annonça publiquement pour la première fois au monde la "méthode des moindres carrés" — une méthode pour trouver la valeur la plus probable en minimisant les erreurs des données d'observation. C'était une technique révolutionnaire qui forme la base de tous les domaines traitant des données, de l'astronomie et de la géodésie aux statistiques modernes et à l'apprentissage automatique.
 
@@ -116,7 +116,7 @@ De plus, concernant le théorème des nombres premiers (la conjecture de Legendr
 
 L'épisode le plus étrange et, pour nous aujourd'hui, le plus amusant concernant Legendre concerne le mystère de son "portrait".
 
-Pendant de nombreuses années, dans les manuels de mathématiques et les livres d'histoire des sciences du monde entier, un portrait particulier a été utilisé comme le visage d'Adrien-Marie Legendre. C'était une lithographie représentant le profil d'un homme à l'expression sévère et grincheuse. Tout le monde croyait sans l'ombre d'un doute qu'il s'agissait du visage du grand mathématicien Legendre.
+Pendant de nombreuses années, dans les manuels de mathématiques et les livres d'histoire des sciences du monde entier, un portrait particulier a été utilisé comme le visage d'[Adrien-Marie Legendre](https://kenji.blog/p/legendre/). C'était une lithographie représentant le profil d'un homme à l'expression sévère et grincheuse. Tout le monde croyait sans l'ombre d'un doute qu'il s'agissait du visage du grand mathématicien Legendre.
 
 Cependant, en 2005, un fait surprenant fut mis en lumière et secoua la communauté de l'histoire des mathématiques. Étonnamment, le portrait qui avait été publié en tant que "mathématicien Legendre" pendant plus de 200 ans appartenait en réalité à une personne complètement différente : **Louis Legendre** (1752–1797), un politicien pendant la Révolution française !
 
@@ -129,7 +129,7 @@ Là, au lieu du profil sévère du politicien Louis Legendre, se trouvait la fig
 
 ## 5. Conclusion
 
-Adrien-Marie Legendre a terminé sa vie à Paris en 1833. Dans ses dernières années, il a fait face à des événements malheureux, comme la suspension de sa pension en raison de son opposition aux politiques gouvernementales.
+[Adrien-Marie Legendre](https://kenji.blog/p/legendre/) a terminé sa vie à Paris en 1833. Dans ses dernières années, il a fait face à des événements malheureux, comme la suspension de sa pension en raison de son opposition aux politiques gouvernementales.
 
 Il est souvent traité comme une "figure de l'ombre" devant la brillance écrasante des génies de premier plan de son époque, comme Gauss et Laplace. Cependant, le rôle qu'il a joué dans la construction des fondations des mathématiques modernes est incommensurable. L'héritage qu'il a laissé, comme les polynômes de Legendre, le symbole de Legendre et la formulation de la méthode des moindres carrés, continue de soutenir le cœur de la science et de la technologie modernes.
 

@@ -138,7 +138,7 @@ Para cada aumento de 1 bit (o número dobra), o tempo de computação é multipl
 
 ## 2. Método de Fatoração de Fermat (Fermat's Factorization Method)
 
-Este é um método concebido pelo matemático do século 17, Pierre de Fermat. Dado um número composto ímpar $N$, ele tenta expressar $N$ como a diferença de dois quadrados perfeitos.
+Este é um método concebido pelo matemático do século 17, [Pierre de Fermat](https://kenji.blog/p/fermat/). Dado um número composto ímpar $N$, ele tenta expressar $N$ como a diferença de dois quadrados perfeitos.
 
 $$ N = x^2 - y^2 = (x - y)(x + y) $$
 

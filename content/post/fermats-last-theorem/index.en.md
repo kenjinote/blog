@@ -13,7 +13,7 @@ tags:
 
 ## 1. Introduction: The Most Famous Mathematical Mystery in the World
 
-In the history of mathematics, there is a problem that has fascinated and tormented the greatest number of people. That is **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)**. From a short note left in the margin of his favorite book, Diophantus's "Arithmetica," by Pierre de Fermat, a 17th-century French judge and amateur mathematician, a grand mathematical drama spanning 360 years began.
+In the history of mathematics, there is a problem that has fascinated and tormented the greatest number of people. That is **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)**. From a short note left in the margin of his favorite book, [Diophantus](https://kenji.blog/p/diophantus/)'s "Arithmetica," by [Pierre de Fermat](https://kenji.blog/p/fermat/), a 17th-century French judge and amateur mathematician, a grand mathematical drama spanning 360 years began.
 
 The content of the theorem itself is simple enough for a junior high school student to understand.
 
@@ -27,7 +27,7 @@ However, proving this simple assertion was a journey of unimaginable difficulty 
 
 ## 2. The "Devil's Temptation" Left in the Margin
 
-Pierre de Fermat was not a professional mathematician. He enjoyed mathematics in his spare time while working as a judge at the Parlement of Toulouse. However, his mathematical intuition and talent were at the highest level of his time, and he is considered to have built the foundation of modern number theory.
+[Pierre de Fermat](https://kenji.blog/p/fermat/) was not a professional mathematician. He enjoyed mathematics in his spare time while working as a judge at the Parlement of Toulouse. However, his mathematical intuition and talent were at the highest level of his time, and he is considered to have built the foundation of modern number theory.
 
 Fermat had a habit of writing down ideas and theorems that came to him while reading in the margins of his books. Among the notes he left behind, the one that remained unproven until the end was this "Last Theorem." Fermat left the following famous words in the margin:
 
@@ -39,9 +39,9 @@ These words became a letter of challenge to mathematicians of later generations.
 
 After Fermat's death, other theorems he left behind were proven one after another, but this Last Theorem stood as an insurmountable wall. Many mathematicians attempted to prove it for specific values of $n$.
 
-- **Leonhard Euler**: The greatest mathematician of the 18th century, Euler succeeded in proving the cases for $n = 3$ and $n = 4$ (it is said that Fermat himself had proven the case for $n = 4$).
+- **[Leonhard Euler](https://kenji.blog/p/euler/)**: The greatest mathematician of the 18th century, Euler succeeded in proving the cases for $n = 3$ and $n = 4$ (it is said that Fermat himself had proven the case for $n = 4$).
 - **Sophie Germain**: In the early 19th century, female mathematician Sophie Germain showed that the theorem holds for primes satisfying specific conditions (today called "Sophie Germain primes"). This was a major step toward a general proof.
-- **Ernst Kummer**: In the mid-19th century, Kummer introduced the concept of "ideal numbers" and proved the theorem for a large class of prime numbers called regular primes.
+- **[Ernst Kummer](https://kenji.blog/p/kummer/)**: In the mid-19th century, Kummer introduced the concept of "ideal numbers" and proved the theorem for a large class of prime numbers called regular primes.
 
 However, the goal of proving it for all infinite natural numbers $n$ still remained far out of reach.
 
@@ -58,7 +58,7 @@ graph TD
 
 Entering the 20th century, [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) became connected to a completely seemingly unrelated field of mathematics. That was the **Taniyama-Shimura Conjecture**.
 
-In 1955, Yutaka Taniyama and Goro Shimura, two young Japanese mathematicians, made a bold conjecture: "All elliptic curves are modular."
+In 1955, [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) and [Goro Shimura](https://kenji.blog/p/shimura-goro/), two young Japanese mathematicians, made a bold conjecture: "All elliptic curves are modular."
 
 - **Elliptic Curves**: Curves represented by an equation of the form $y^2 = x^3 + ax + b$.
 - **Modular Forms**: Special functions with very high symmetry on the complex plane.
@@ -81,9 +81,9 @@ graph LR
     C ==>|"Proof Complete"| A
 ```
 
-## 5. The Glory of Andrew Wiles
+## 5. The Glory of [Andrew Wiles](https://kenji.blog/p/wiles/)
 
-It was **Andrew Wiles**, a British-born mathematician, who was strongly inspired by this dramatic development. He is a person who encountered a book on [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) in a library when he was 10 years old and aspired to become a mathematician.
+It was **[Andrew Wiles](https://kenji.blog/p/wiles/)**, a British-born mathematician, who was strongly inspired by this dramatic development. He is a person who encountered a book on [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) in a library when he was 10 years old and aspired to become a mathematician.
 
 Wiles suspended all his other research and secluded himself in his attic to work secretly on proving the **Taniyama-Shimura Conjecture**. After seven years of solitary research, in June 1993, at the end of a lecture at Cambridge University, he wrote the conclusion of his proof on the blackboard and quietly declared, "I think I'll stop here." The venue was enveloped in thunderous applause.
 

@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-Le théorème des restes chinois (Chinese Remainder Theorem, en abrégé TRC) est l'un des théorèmes les plus importants et les plus beaux de la théorie des nombres. Son origine remonte au manuel de mathématiques de la Chine antique, le « Sunzi Suanjing » (Classique mathématique de Sunzi), qui aurait été compilé entre le IIIe et le Ve siècle. Ce théorème, qui a commencé par de simples problèmes de calcul dans l'Antiquité, joue un rôle indispensable dans la technologie de la cryptographie à clé publique, telle que la **cryptographie RSA**, qui soutient les communications sécurisées sur Internet que nous utilisons quotidiennement aujourd'hui, après des milliers d'années.
+Le théorème des restes chinois ([Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/), en abrégé TRC) est l'un des théorèmes les plus importants et les plus beaux de la théorie des nombres. Son origine remonte au manuel de mathématiques de la Chine antique, le « Sunzi Suanjing » (Classique mathématique de Sunzi), qui aurait été compilé entre le IIIe et le Ve siècle. Ce théorème, qui a commencé par de simples problèmes de calcul dans l'Antiquité, joue un rôle indispensable dans la technologie de la cryptographie à clé publique, telle que la **cryptographie RSA**, qui soutient les communications sécurisées sur Internet que nous utilisons quotidiennement aujourd'hui, après des milliers d'années.
 
 Dans cet article, nous expliquerons en détail ce **théorème des restes chinois**, de son contexte historique à sa définition mathématique rigoureuse, en passant par des procédures de calcul spécifiques et ses applications dans la théorie de la cryptographie moderne, le tout accompagné de diagrammes et d'exemples concrets.
 
@@ -63,7 +63,7 @@ Ce qui est formidable avec ce théorème, c'est qu'il ne garantit pas seulement 
 
 1. Calculez le produit total $M = m_1 m_2 \dots m_k$.
 2. Pour chaque $i$, calculez $M_i = \frac{M}{m_i}$. ($M_i$ est le produit de tous les modules sauf $m_i$)
-3. Puisque $\gcd(M_i, m_i) = 1$, il existe l'inverse multiplicatif $y_i$ de $M_i$ modulo $m_i$. Autrement dit, trouvez $y_i$ satisfaisant $M_i y_i \equiv 1 \pmod{m_i}$ en utilisant l'algorithme d'Euclide étendu, etc.
+3. Puisque $\gcd(M_i, m_i) = 1$, il existe l'inverse multiplicatif $y_i$ de $M_i$ modulo $m_i$. Autrement dit, trouvez $y_i$ satisfaisant $M_i y_i \equiv 1 \pmod{m_i}$ en utilisant l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) étendu, etc.
 4. La solution finale $x$ est donnée par la formule suivante.
 
 $$

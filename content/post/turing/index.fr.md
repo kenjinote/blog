@@ -20,7 +20,7 @@ Pendant ses années d'école à Sherborne, il a déjà fait preuve d'un talent e
 
 # 3. La machine de Turing et la théorie de la calculabilité
 
-L'un des plus grands problèmes non résolus dans le monde mathématique à l'époque était l'« Entscheidungsproblem » (Problème de la décision) proposé par David Hilbert en 1928. Il s'agissait d'une question fondamentale : « Étant donné une proposition mathématique quelconque, existe-t-il une procédure algorithmique mécanique pour déterminer si elle est vraie ou fausse ? »
+L'un des plus grands problèmes non résolus dans le monde mathématique à l'époque était l'« Entscheidungsproblem » (Problème de la décision) proposé par [David Hilbert](https://kenji.blog/p/hilbert/) en 1928. Il s'agissait d'une question fondamentale : « Étant donné une proposition mathématique quelconque, existe-t-il une procédure algorithmique mécanique pour déterminer si elle est vraie ou fausse ? »
 
 Turing s'est attaqué à ce problème avec une approche entièrement nouvelle. Dans son article novateur de 1936, « Sur les nombres calculables, avec une application à l'Entscheidungsproblem », il a défini une machine à calculer abstraite, la **Machine de Turing**.
 
@@ -139,4 +139,4 @@ Le 7 juin 1954, il est décédé au jeune âge de 41 ans. La cause du décès é
 
 Cependant, des décennies après sa mort, la réévaluation mondiale de ses réalisations et la restauration de son honneur ont progressé. En 2009, le gouvernement britannique s'est officiellement excusé pour le traitement injuste qu'il a reçu à l'époque, et en 2013, il a obtenu un pardon royal posthume de la reine Elizabeth II.
 
-Aujourd'hui, la plus haute récompense mondiale en informatique (souvent appelée le « prix Nobel de l'informatique ») est nommée le **Prix Turing** pour honorer à jamais ses réalisations. Alan Turing possédait des idées qui étaient largement en avance sur son temps dans divers domaines : mathématiques, cryptographie, informatique, intelligence artificielle et biologie. Les théories et les idées qu'il a laissées derrière lui continuent de respirer puissamment aujourd'hui comme le fondement de notre société numérique moderne.
+Aujourd'hui, la plus haute récompense mondiale en informatique (souvent appelée le « prix Nobel de l'informatique ») est nommée le **Prix Turing** pour honorer à jamais ses réalisations. [Alan Turing](https://kenji.blog/p/turing/) possédait des idées qui étaient largement en avance sur son temps dans divers domaines : mathématiques, cryptographie, informatique, intelligence artificielle et biologie. Les théories et les idées qu'il a laissées derrière lui continuent de respirer puissamment aujourd'hui comme le fondement de notre société numérique moderne.

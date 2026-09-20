@@ -8,7 +8,7 @@ categories: ["Mathématiques", "Biographie"]
 tags: ["Bachet", "Théorie des Nombres", "Histoire des Mathématiques", "Mathématiques Récréatives", "Diophante"]
 ---
 
-Dans l'histoire des mathématiques, certaines figures ont joué des rôles cruciaux, même si elles restent parfois dans l'ombre de grandes découvertes ultérieures. Le mathématicien français du XVIIe siècle **Claude Gaspard Bachet de Méziriac (1581–1638)** est l'une d'entre elles. Il est célèbre pour son influence sur Pierre de Fermat, mais ses propres réalisations furent également vastes et diverses.
+Dans l'histoire des mathématiques, certaines figures ont joué des rôles cruciaux, même si elles restent parfois dans l'ombre de grandes découvertes ultérieures. Le mathématicien français du XVIIe siècle **[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac (1581–1638)** est l'une d'entre elles. Il est célèbre pour son influence sur [Pierre de Fermat](https://kenji.blog/p/fermat/), mais ses propres réalisations furent également vastes et diverses.
 
 Dans cet article, nous allons plonger dans la vie de Bachet et ses accomplissements mathématiques majeurs.
 
@@ -27,13 +27,13 @@ flowchart TD
     D -->|"Publié en 1612"| F["'Problèmes plaisans et délectables'"]
 ```
 
-## La traduction latine de l'"Arithmetica" de Diophante
+## La traduction latine de l'"Arithmetica" de [Diophante](https://kenji.blog/p/diophantus/)
 
-L'une des réalisations les plus connues de Bachet est sa traduction de l'"Arithmetica" du mathématicien grec antique Diophante en latin, en y ajoutant des commentaires, et sa publication en 1621.
+L'une des réalisations les plus connues de Bachet est sa traduction de l'"Arithmetica" du mathématicien grec antique [Diophante](https://kenji.blog/p/diophantus/) en latin, en y ajoutant des commentaires, et sa publication en 1621.
 
-Ce livre traduit devint le texte de référence pour les mathématiciens européens de l'époque souhaitant étudier l'algèbre antique et la théorie des nombres. L'une des anecdotes les plus célèbres est que Pierre de Fermat a écrit son fameux "Dernier Théorème de Fermat" dans la marge de son exemplaire de cette édition de Bachet.
+Ce livre traduit devint le texte de référence pour les mathématiciens européens de l'époque souhaitant étudier l'algèbre antique et la théorie des nombres. L'une des anecdotes les plus célèbres est que [Pierre de Fermat](https://kenji.blog/p/fermat/) a écrit son fameux "Dernier Théorème de Fermat" dans la marge de son exemplaire de cette édition de Bachet.
 
-Bachet ne s'est pas arrêté à une simple traduction ; il a ajouté ses propres et excellents commentaires et généralisations aux problèmes de Diophante. Sans ses intuitions mathématiques, le développement de la théorie des nombres au XVIIe siècle aurait peut-être été beaucoup plus lent.
+Bachet ne s'est pas arrêté à une simple traduction ; il a ajouté ses propres et excellents commentaires et généralisations aux problèmes de [Diophante](https://kenji.blog/p/diophantus/). Sans ses intuitions mathématiques, le développement de la théorie des nombres au XVIIe siècle aurait peut-être été beaucoup plus lent.
 
 ## L'équation de Bachet
 
@@ -79,8 +79,8 @@ $$
 ax + by = 1
 $$
 
-$x$ et $y$ peuvent être concrètement calculés en développant l'algorithme d'Euclide (l'algorithme d'Euclide étendu), qui est devenu un théorème fondamental indispensable dans la cryptographie moderne (comme RSA). Dans les contextes qui valorisent l'exactitude historique, cela est parfois appelé le **théorème de Bachet**.
+$x$ et $y$ peuvent être concrètement calculés en développant l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) (l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) étendu), qui est devenu un théorème fondamental indispensable dans la cryptographie moderne (comme RSA). Dans les contextes qui valorisent l'exactitude historique, cela est parfois appelé le **théorème de Bachet**.
 
 ## Conclusion
 
-Claude Gaspard Bachet n'était pas seulement un "personnage de l'ombre" pour le Dernier Théorème de Fermat. Il fut un grand pionnier qui a ouvert les portes des mathématiques modernes en ravivant la sagesse antique tout en explorant ses propres équations et en systématisant les mathématiques récréatives. Ses commentaires sur l'"Arithmetica" et ses énigmes mathématiques continuent d'inspirer les amoureux des mathématiques aujourd'hui, des siècles après sa disparition.
+[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) n'était pas seulement un "personnage de l'ombre" pour le Dernier Théorème de Fermat. Il fut un grand pionnier qui a ouvert les portes des mathématiques modernes en ravivant la sagesse antique tout en explorant ses propres équations et en systématisant les mathématiques récréatives. Ses commentaires sur l'"Arithmetica" et ses énigmes mathématiques continuent d'inspirer les amoureux des mathématiques aujourd'hui, des siècles après sa disparition.

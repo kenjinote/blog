@@ -15,7 +15,7 @@ tags:
 
 ## 1. Introdução: O que são os Problemas do Milênio
 
-Em 2000, o Instituto Clay de Matemática ofereceu um prêmio de 1 milhão de dólares para cada um de sete problemas não resolvidos extremamente importantes da matemática. Eles são chamados de **Problemas do Milênio**. Entre eles estão a famosa "Hipótese de Riemann" e o "Problema P versus NP", mas há um problema profundamente relacionado com a física. Trata-se das **"Equações de Yang-Mills e a Lacuna de Massa"** (Yang-Mills and Mass Gap).
+Em 2000, o Instituto Clay de Matemática ofereceu um prêmio de 1 milhão de dólares para cada um de sete problemas não resolvidos extremamente importantes da matemática. Eles são chamados de **Problemas do Milênio**. Entre eles estão a famosa "Hipótese de Riemann" e o "Problema P versus NP", mas há um problema profundamente relacionado com a física. Trata-se das **"[Equações de Yang-Mills e a Lacuna de Massa](https://kenji.blog/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
 
 Este problema visa estabelecer a base matemática do "Modelo Padrão" da física de partículas, que descreve as forças fundamentais da natureza. O comportamento da matéria e das forças que compõem o nosso mundo foi confirmado experimentalmente com altíssima precisão, mas prová-lo rigorosamente de forma matemática continua sendo um dos maiores desafios da matemática moderna.
 

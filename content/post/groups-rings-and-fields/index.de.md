@@ -8,7 +8,7 @@ categories: ["Mathematik"]
 tags: ["Algebra", "Gruppentheorie", "Ringtheorie", "Körpertheorie"]
 ---
 
-# Gruppen, Ringe und Körper: Die Schönheit der „Struktur“ in der modernen Algebra
+# [Gruppen, Ringe und Körper](https://kenji.blog/p/groups-rings-and-fields/): Die Schönheit der „Struktur“ in der modernen Algebra
 
 Für viele von uns ist die „Mathematik“, die wir in der Schule lernen, eine Welt der Addition und Multiplikation von Zahlen, nämlich der „vier Grundrechenarten“. Berechnungen wie $1 + 1 = 2$ und $3 \times 4 = 12$ sind äußerst nützlich.
 

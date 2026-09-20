@@ -22,9 +22,9 @@ Pada saat itu, Budapest adalah pusat budaya dan keilmuan global, menghasilkan ba
 
 ## 3. Kontribusi pada Fondasi Matematika: Teori Himpunan Aksiomatik
 
-Salah satu pencapaian awal von Neumann yang paling penting adalah penelitiannya tentang aksiomatisasi teori himpunan. Teori himpunan, yang didirikan oleh Georg Cantor, diharapkan menjadi fondasi matematika, tetapi menghadapi kontradiksi logis (paradoks) seperti paradoks Russell. Untuk menyelesaikan masalah ini, Ernst Zermelo, Adolf Fraenkel, dan lainnya membangun teori himpunan aksiomatik, tetapi von Neumann mengambil pendekatan yang berbeda.
+Salah satu pencapaian awal von Neumann yang paling penting adalah penelitiannya tentang aksiomatisasi teori himpunan. Teori himpunan, yang didirikan oleh [Georg Cantor](https://kenji.blog/p/cantor/), diharapkan menjadi fondasi matematika, tetapi menghadapi kontradiksi logis (paradoks) seperti paradoks Russell. Untuk menyelesaikan masalah ini, Ernst Zermelo, Adolf Fraenkel, dan lainnya membangun teori himpunan aksiomatik, tetapi von Neumann mengambil pendekatan yang berbeda.
 
-Ia memperkenalkan konsep "kelas" dan dengan cemerlang menghindari paradoks dengan membedakan secara ketat antara himpunan normal dan kelas yang terlalu besar untuk menjadi himpunan (kelas sebenarnya). Sistem ini kemudian disempurnakan oleh Paul Bernays dan Kurt Gödel, dan sekarang dikenal sebagai **teori himpunan von Neumann-Bernays-Gödel** (teori himpunan NBG).
+Ia memperkenalkan konsep "kelas" dan dengan cemerlang menghindari paradoks dengan membedakan secara ketat antara himpunan normal dan kelas yang terlalu besar untuk menjadi himpunan (kelas sebenarnya). Sistem ini kemudian disempurnakan oleh Paul Bernays dan [Kurt Gödel](https://kenji.blog/p/godel/), dan sekarang dikenal sebagai **teori himpunan von Neumann-Bernays-Gödel** (teori himpunan NBG).
 
 $$
 \forall X \ ( X \in V \iff \exists Y \ (X \in Y) )

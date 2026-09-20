@@ -98,7 +98,7 @@ La resolución del sistema de ecuaciones da lo siguiente:
 
 Resolviendo esto obtenemos $\pi_{\text{Soleado}} = \frac{4}{7} \approx 0.57$ y $\pi_{\text{Lluvioso}} = \frac{3}{7} \approx 0.43$. En otras palabras, a largo plazo, hay aproximadamente un 57% de probabilidad de que esté soleado y un 43% de probabilidad de que llueva.
 
-## Aplicaciones de las Cadenas de Markov
+## Aplicaciones de las [Cadenas de Markov](https://kenji.blog/p/markov-chain/)
 
 Las cadenas de Markov no se limitan al mundo de las matemáticas; se aplican a varios sistemas del mundo real.
 

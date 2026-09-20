@@ -21,9 +21,9 @@ Einen leistungsstarken Rahmen zu bieten, um diese Netzwerke, die auf den ersten 
 
 Dieser Artikel erklärt die Graphentheorie umfassend und systematisch, beginnend bei ihren historischen Ursprüngen, über grundlegende mathematische Definitionen und Datenstrukturen für die Computerprogrammierung bis hin zur Vorstellung repräsentativer Algorithmen, die das Fundament der modernen Technologie bilden.
 
-## 2. Die Geburt der Graphentheorie: Die sieben Brücken von Königsberg
+## 2. Die Geburt der Graphentheorie: [Die sieben Brücken von Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)
 
-Die Geschichte der Graphentheorie reicht bis ins 18. Jahrhundert zurück. Im Jahr 1736 löste der brillante Schweizer Mathematiker Leonhard Euler auf elegante Weise ein berühmtes mathematisches Rätsel und markierte damit den Beginn dieses Bereichs. Dieses Rätsel ist als die „Sieben Brücken von Königsberg“ bekannt.
+Die Geschichte der Graphentheorie reicht bis ins 18. Jahrhundert zurück. Im Jahr 1736 löste der brillante Schweizer Mathematiker [Leonhard Euler](https://kenji.blog/p/euler/) auf elegante Weise ein berühmtes mathematisches Rätsel und markierte damit den Beginn dieses Bereichs. Dieses Rätsel ist als die „Sieben Brücken von Königsberg“ bekannt.
 
 In der schönen Stadt Königsberg im Königreich Preußen (heute Kaliningrad, Russland) floss der Fluss Pregel, in dessen Mitte sich zwei Inseln befanden, die durch insgesamt sieben Brücken mit den Flussufern verbunden waren. Unter den Bürgern wurde ein Spiel populär: „Ist es möglich, jede Brücke genau einmal zu überqueren und zum ursprünglichen Startpunkt zurückzukehren?“ Viele Menschen versuchten es, aber niemand war erfolgreich.
 

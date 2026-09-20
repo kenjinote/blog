@@ -25,7 +25,7 @@ Ce que visent les grandes entreprises, ce sont les marchés de masse où le TAM 
 
 En revanche, la force des développeurs solos réside dans leur **"seuil de rentabilité extrêmement bas"**. Si un bénéfice de quelques milliers de dollars par mois est généré, c'est suffisant pour être considéré comme une entreprise viable pour un individu. C'est là que se trouve le point idéal de la "théorie de la longue traîne".
 
-## Loi de Zipf et distribution du marché
+## [Loi de Zipf](https://kenji.blog/p/zipfs-law/) et distribution du marché
 
 La relation entre la taille d'un marché et son nombre suit souvent la loi de Zipf ou la loi de Pareto. Si le rang du marché est $k$, et sa taille (potentiel de vente) est $P(k)$, elle peut être exprimée par le modèle de loi de puissance suivant :
 

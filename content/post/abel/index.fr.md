@@ -10,7 +10,7 @@ tags: ["Abel", "Algèbre", "Histoire", "Mathématiques"]
 
 # 1. Introduction : Le Jeune Génie Abel
 
-Dans l'histoire des mathématiques, il y a quelques génies qui sont décédés à un jeune âge mais qui ont laissé un impact décisif sur les générations futures. Parmi eux, le Norvégien **Niels Henrik Abel** se distingue, aux côtés d'Évariste Galois, comme l'un des génies tragiques les plus célèbres. Au cours de sa courte vie de seulement 26 ans, il a prouvé qu'« il n'existe pas de solution algébrique générale pour les équations de degré cinq ou supérieur », un problème qui tourmentait les mathématiciens depuis des siècles.
+Dans l'histoire des mathématiques, il y a quelques génies qui sont décédés à un jeune âge mais qui ont laissé un impact décisif sur les générations futures. Parmi eux, le Norvégien **[Niels Henrik Abel](https://kenji.blog/p/abel/)** se distingue, aux côtés d'[Évariste Galois](https://kenji.blog/p/galois/), comme l'un des génies tragiques les plus célèbres. Au cours de sa courte vie de seulement 26 ans, il a prouvé qu'« il n'existe pas de solution algébrique générale pour les équations de degré cinq ou supérieur », un problème qui tourmentait les mathématiciens depuis des siècles.
 
 Dans cet article, nous plongerons dans la vie d'Abel, propulsée par sa passion pour les mathématiques malgré la pauvreté et la maladie, et dans ses réalisations monumentales telles que les « groupes abéliens » et les « intégrales abéliennes ».
 
@@ -18,7 +18,7 @@ Dans cet article, nous plongerons dans la vie d'Abel, propulsée par sa passion 
 
 ## 2.1 Petite Enfance et Rencontre avec son Mentor Holmboe
 
-Niels Henrik Abel est né le 5 août 1802 dans le petit village norvégien de Finnøy, en tant que fils de pasteur. La Norvège de l'époque était économiquement appauvrie, et la famille d'Abel ne faisait pas exception.
+[Niels Henrik Abel](https://kenji.blog/p/abel/) est né le 5 août 1802 dans le petit village norvégien de Finnøy, en tant que fils de pasteur. La Norvège de l'époque était économiquement appauvrie, et la famille d'Abel ne faisait pas exception.
 
 Son destin a radicalement changé lorsqu'il est entré à l'École Cathédrale d'Oslo en 1817 et a rencontré son professeur de mathématiques, **Bernt Michael Holmboe**. Holmboe a immédiatement reconnu le talent extraordinaire d'Abel et lui a enseigné des mathématiques avancées de niveau universitaire. En dévorant les œuvres de maîtres tels qu'Euler, Lagrange et Laplace, Abel a rapidement absorbé les mathématiques de pointe.
 
@@ -49,7 +49,7 @@ Il est généralement impossible d'exprimer les racines de cette équation en un
 
 # 4. Voyage en Europe et Rencontre avec Crelle
 
-En 1825, Abel a obtenu une bourse du gouvernement norvégien et a eu l'opportunité d'étudier en Europe continentale. Son objectif était de visiter Paris, le centre des mathématiques à l'époque, et Göttingen, où résidait le grand mathématicien Carl Friedrich Gauss.
+En 1825, Abel a obtenu une bourse du gouvernement norvégien et a eu l'opportunité d'étudier en Europe continentale. Son objectif était de visiter Paris, le centre des mathématiques à l'époque, et Göttingen, où résidait le grand mathématicien [Carl Friedrich Gauss](https://kenji.blog/p/gauss/).
 
 Abel a envoyé son article à Gauss, mais Gauss l'a ignoré sans même le lire. Renonçant à rencontrer Gauss, Abel s'est dirigé vers Berlin.
 
@@ -59,7 +59,7 @@ Abel a envoyé son article à Gauss, mais Gauss l'a ignoré sans même le lire. 
 
 En 1826, Abel arriva à Paris. Ici, il a soumis un article à l'Académie des Sciences de France sur un « Théorème étendu sur les fonctions transcendantes », qui pourrait être considéré comme son chef-d'œuvre. Cet article contenait un contenu révolutionnaire qui sera plus tard connu sous le nom de **théorème d'Abel**.
 
-Cependant, le malheur a encore frappé. Le grand mathématicien **Augustin-Louis Cauchy**, chargé de l'examiner, a égaré l'article d'Abel dans une pile de documents dans sa chambre et ne l'a jamais examiné.
+Cependant, le malheur a encore frappé. Le grand mathématicien **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)**, chargé de l'examiner, a égaré l'article d'Abel dans une pile de documents dans sa chambre et ne l'a jamais examiné.
 
 Poussé par le désespoir, le manque de fonds et la maladie progressive de la tuberculose, Abel a été contraint de quitter Paris.
 
@@ -107,4 +107,4 @@ Ce théorème est encore fréquemment utilisé aujourd'hui dans des théories te
 
 # 8. Conclusion
 
-La vie de Niels Henrik Abel correspond vraiment au mot « tragédie ». Cependant, la passion qu'il a insufflée aux mathématiques et les nombreux théorèmes qu'il a produits ne s'effaceront jamais. Les théories qu'il a laissées continuent de fournir une nouvelle inspiration aux mathématiciens jusqu'à ce jour.
+La vie de [Niels Henrik Abel](https://kenji.blog/p/abel/) correspond vraiment au mot « tragédie ». Cependant, la passion qu'il a insufflée aux mathématiques et les nombreux théorèmes qu'il a produits ne s'effaceront jamais. Les théories qu'il a laissées continuent de fournir une nouvelle inspiration aux mathématiciens jusqu'à ce jour.
