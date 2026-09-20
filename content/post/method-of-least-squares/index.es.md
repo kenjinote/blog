@@ -52,9 +52,9 @@ Suponiendo que todos los puntos de datos se encuentran perfectamente en la líne
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ Expresando esto en forma matricial, obtenemos:
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 Escribimos esto simplemente como $A\mathbf{x} = \mathbf{b}$. Aquí,
 - $A$ es una **Matriz de Diseño** de $n \times 2$
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ es el **vector de parámetros** que queremos encontrar
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ es el **vector de parámetros** que queremos encontrar
 - $\mathbf{b}$ es el **vector de variables objetivo** de los valores observados
 
 Cuando los datos tienen varianza (3 o más puntos no están en una línea recta), no hay solución $\mathbf{x}$ que satisfaga perfectamente esta ecuación $A\mathbf{x} = \mathbf{b}$. Es decir, el sistema de ecuaciones es **inconsistente**.

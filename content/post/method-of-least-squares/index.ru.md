@@ -52,9 +52,9 @@ flowchart TD
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ $$
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 Мы записываем это просто как $A\mathbf{x} = \mathbf{b}$. Здесь,
 - $A$ — это $n \times 2$ **Матрица плана** (Design Matrix)
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ — это **вектор параметров**, который мы хотим найти
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ — это **вектор параметров**, который мы хотим найти
 - $\mathbf{b}$ — это **вектор целевой переменной** наблюдаемых значений
 
 Когда данные имеют дисперсию (3 или более точек не лежат на одной прямой), не существует решения $\mathbf{x}$, которое идеально удовлетворяет этому уравнению $A\mathbf{x} = \mathbf{b}$. То есть система уравнений **несовместна**.

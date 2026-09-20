@@ -52,9 +52,9 @@ Assuming all data points lie perfectly on the line $y = c + dx$, we get the foll
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ Expressing this in matrix form, we get:
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 We write this simply as $A\mathbf{x} = \mathbf{b}$. Here,
 - $A$ is an $n \times 2$ **Design Matrix**
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ is the **parameter vector** we want to find
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ is the **parameter vector** we want to find
 - $\mathbf{b}$ is the **target variable vector** of observed values
 
 When the data has variance (3 or more points are not on a straight line), there is no solution $\mathbf{x}$ that perfectly satisfies this equation $A\mathbf{x} = \mathbf{b}$. That is, the system of equations is **inconsistent**.

@@ -52,9 +52,9 @@ flowchart TD
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ $$
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 نكتب هذا ببساطة كـ $A\mathbf{x} = \mathbf{b}$. هنا،
 - $A$ هي **مصفوفة تصميم** بحجم $n \times 2$
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ هو **متجه المعلمات** الذي نريد العثور عليه
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ هو **متجه المعلمات** الذي نريد العثور عليه
 - $\mathbf{b}$ هو **متجه المتغير المستهدف** للقيم الملاحظة
 
 عندما تحتوي البيانات على تباين (3 نقاط أو أكثر ليست على خط مستقيم)، لا يوجد حل $\mathbf{x}$ يلبي هذه المعادلة $A\mathbf{x} = \mathbf{b}$ تمامًا. أي أن نظام المعادلات **غير متسق**.

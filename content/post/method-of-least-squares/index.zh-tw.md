@@ -52,9 +52,9 @@ flowchart TD
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ $$
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 我們將其簡寫為 $A\mathbf{x} = \mathbf{b}$。這裡，
 - $A$ 是一個 $n \times 2$ 的 **設計矩陣** (Design Matrix)
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ 是我們想要尋找的 **參數向量**
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ 是我們想要尋找的 **參數向量**
 - $\mathbf{b}$ 是觀測值的 **目標變數向量**
 
 當數據具有變異數時（3個或更多點不在同一直線上），不存在完美滿足此方程式 $A\mathbf{x} = \mathbf{b}$ 的解 $\mathbf{x}$。也就是說，聯立方程式是 **不一致的** (inconsistent)。

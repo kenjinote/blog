@@ -52,9 +52,9 @@ flowchart TD
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ $$
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 我们将其简写为 $A\mathbf{x} = \mathbf{b}$。这里，
 - $A$ 是一个 $n \times 2$ 的 **设计矩阵** (Design Matrix)
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ 是我们想要寻找的 **参数向量**
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ 是我们想要寻找的 **参数向量**
 - $\mathbf{b}$ 是观测值的 **目标变量向量**
 
 当数据具有方差时（3个或更多点不在同一直线上），不存在完美满足此方程 $A\mathbf{x} = \mathbf{b}$ 的解 $\mathbf{x}$。也就是说，方程组是 **不一致的** (inconsistent)。

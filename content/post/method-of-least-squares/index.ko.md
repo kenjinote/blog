@@ -52,9 +52,9 @@ flowchart TD
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ $$
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 이것을 $A\mathbf{x} = \mathbf{b}$로 간결하게 표기합니다. 여기서,
 - $A$는 $n \times 2$의 **계획 행렬** (Design Matrix)
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$는 구하고자 하는 **파라미터 벡터**
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$는 구하고자 하는 **파라미터 벡터**
 - $\mathbf{b}$는 관측값의 **목적 변수 벡터**
 
 데이터에 산포가 있는(3점 이상이 일직선상에 없는) 경우, 이 방정식 $A\mathbf{x} = \mathbf{b}$를 완전히 만족하는 해 $\mathbf{x}$는 존재하지 않습니다. 즉, 연립방정식은 **불능** (inconsistent)이 됩니다.

@@ -52,9 +52,9 @@ Unter der Annahme, dass alle Datenpunkte perfekt auf der Geraden $y = c + dx$ li
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ Ausgedrückt in Matrixform erhalten wir:
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 Wir schreiben dies einfach als $A\mathbf{x} = \mathbf{b}$. Hier ist:
 - $A$ eine $n \times 2$ **Designmatrix**
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ der **Parametervektor**, den wir finden wollen
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ der **Parametervektor**, den wir finden wollen
 - $\mathbf{b}$ der **Zielvariablenvektor** der beobachteten Werte
 
 Wenn die Daten Varianz aufweisen (3 oder mehr Punkte liegen nicht auf einer geraden Linie), gibt es keine Lösung $\mathbf{x}$, die diese Gleichung $A\mathbf{x} = \mathbf{b}$ perfekt erfüllt. Das heißt, das Gleichungssystem ist **inkonsistent**.

@@ -52,9 +52,9 @@ flowchart TD
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ $$
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 これを $A\mathbf{x} = \mathbf{b}$ と簡潔に表記します。ここで、
 - $A$ は $n \times 2$ の **計画行列** (Design Matrix)
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ は求めたい **パラメータベクトル**
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ は求めたい **パラメータベクトル**
 - $\mathbf{b}$ は観測値の **目的変数ベクトル**
 
 データにばらつきがある（3点以上が一直線上にない）場合、この方程式 $A\mathbf{x} = \mathbf{b}$ を完全に満たす解 $\mathbf{x}$ は存在しません。つまり、連立方程式は **不能** (inconsistent) となります。

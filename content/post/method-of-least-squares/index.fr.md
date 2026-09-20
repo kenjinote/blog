@@ -52,9 +52,9 @@ En supposant que tous les points de données se trouvent parfaitement sur la lig
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ En exprimant cela sous forme matricielle, nous obtenons :
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 Nous écrivons cela simplement comme $A\mathbf{x} = \mathbf{b}$. Ici,
 - $A$ est une **Matrice de conception** de $n \times 2$
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ est le **vecteur de paramètres** que nous voulons trouver
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ est le **vecteur de paramètres** que nous voulons trouver
 - $\mathbf{b}$ est le **vecteur de variable cible** des valeurs observées
 
 Lorsque les données présentent une variance (3 points ou plus ne sont pas sur une ligne droite), il n'y a pas de solution $\mathbf{x}$ qui satisfait parfaitement cette équation $A\mathbf{x} = \mathbf{b}$. C'est-à-dire que le système d'équations est **inconsistant**.

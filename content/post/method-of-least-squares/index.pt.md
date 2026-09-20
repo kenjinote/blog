@@ -52,9 +52,9 @@ Assumindo que todos os pontos de dados estejam perfeitamente na linha $y = c + d
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ Expressando isso em forma de matriz, obtemos:
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 Escrevemos isso simplesmente como $A\mathbf{x} = \mathbf{b}$. Aqui,
 - $A$ é uma **Matriz de Design** $n \times 2$
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ é o **vetor de parâmetros** que queremos encontrar
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ é o **vetor de parâmetros** que queremos encontrar
 - $\mathbf{b}$ é o **vetor de variável de destino** dos valores observados
 
 Quando os dados têm variância (3 ou mais pontos não estão em uma linha reta), não há solução $\mathbf{x}$ que satisfaça perfeitamente essa equação $A\mathbf{x} = \mathbf{b}$. Ou seja, o sistema de equações é **inconsistente**.

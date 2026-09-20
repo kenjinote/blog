@@ -52,9 +52,9 @@ flowchart TD
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ $$
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 हम इसे केवल $A\mathbf{x} = \mathbf{b}$ के रूप में लिखते हैं। यहाँ,
 - $A$ एक $n \times 2$ **डिज़ाइन मैट्रिक्स** है
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ वह **पैरामीटर वेक्टर** है जिसे हम खोजना चाहते हैं
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ वह **पैरामीटर वेक्टर** है जिसे हम खोजना चाहते हैं
 - $\mathbf{b}$ देखे गए मूल्यों का **लक्ष्य चर वेक्टर** है
 
 जब डेटा में भिन्नता होती है (3 या अधिक बिंदु सीधी रेखा में नहीं होते हैं), तो कोई समाधान $\mathbf{x}$ नहीं होता है जो इस समीकरण $A\mathbf{x} = \mathbf{b}$ को पूरी तरह से संतुष्ट करता हो। अर्थात्, समीकरणों की प्रणाली **असंगत** है।

@@ -52,9 +52,9 @@ Dengan asumsi semua titik data terletak sempurna pada garis $y = c + dx$, kita m
 
 $$
 \begin{cases}
-c + d x_1 = y_1 \\
-c + d x_2 = y_2 \\
-\vdots \\
+c + d x_1 = y_1 \\\\
+c + d x_2 = y_2 \\\\
+\vdots \\\\
 c + d x_n = y_n
 \end{cases}
 $$
@@ -63,27 +63,27 @@ Mengekspresikan ini dalam bentuk matriks, kita mendapatkan:
 
 $$
 \begin{bmatrix}
-1 & x_1 \\
-1 & x_2 \\
-\vdots & \vdots \\
+1 & x_1 \\\\
+1 & x_2 \\\\
+\vdots & \vdots \\\\
 1 & x_n
 \end{bmatrix}
 \begin{bmatrix}
-c \\
+c \\\\
 d
 \end{bmatrix}
 =
 \begin{bmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
+y_1 \\\\
+y_2 \\\\
+\vdots \\\\
 y_n
 \end{bmatrix}
 $$
 
 Kita menulis ini secara sederhana sebagai $A\mathbf{x} = \mathbf{b}$. Di sini,
 - $A$ adalah **Matriks Desain** berukuran $n \times 2$
-- $\mathbf{x} = \begin{bmatrix} c \\ d \end{bmatrix}$ adalah **vektor parameter** yang ingin kita temukan
+- $\mathbf{x} = \begin{bmatrix} c \\\\ d \end{bmatrix}$ adalah **vektor parameter** yang ingin kita temukan
 - $\mathbf{b}$ adalah **vektor variabel target** dari nilai yang diamati
 
 Bila data memiliki varians (3 titik atau lebih tidak berada pada garis lurus), tidak ada solusi $\mathbf{x}$ yang secara sempurna memenuhi persamaan $A\mathbf{x} = \mathbf{b}$ ini. Artinya, sistem persamaannya **tidak konsisten**.
