@@ -19,7 +19,7 @@ In this article, I will thoroughly compare and explain the "pros" and "cons" tha
 
 ---
 
-# 1. The Paradigm Shift in Memory Management: From RAII to Ownership and Borrowing
+# 1. The Paradigm Shift in [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/): From RAII to Ownership and Borrowing
 
 ## The Limits of RAII and Smart Pointers in C++
 
@@ -57,7 +57,7 @@ int main() {
 
 In C++, there is always a risk of mistakenly accessing an object whose contents have been emptied by `std::move` (a valid but unspecified state). This can lead directly to runtime crashes or, in the worst case, security holes.
 
-## Rust's Ownership and the Absolute Defense of the Borrow Checker
+## Rust's Ownership and the Absolute Defense of the [Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)
 
 Rust incorporates this concept of "Ownership" into the core design of the language, performing strict static analysis via a compiler feature called the **Borrow Checker**.
 
@@ -297,7 +297,7 @@ By simply adding one line with the name and version of a dependency library (cra
 
 I have discussed Rust's strengths so far, but there are certainly "walls" and disadvantages that C++ engineers will face when trying to deploy Rust in practice.
 
-## 1. The Struggle with the Relentless Borrow Checker
+## 1. The Struggle with the Relentless [Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)
 If you try to implement data structures in Rust exactly as you did in C++ where you "somehow linked them with raw pointers" (for example, doubly linked lists, graph structures, or self-referential structs), compilation will fail due to ownership and lifetime constraints. To satisfy the borrow checker, you need to either use complex wrappers like `Rc<RefCell<T>>` or fundamentally redesign your architecture towards arena allocators or index-based management.
 
 ## 2. Long Compilation Times

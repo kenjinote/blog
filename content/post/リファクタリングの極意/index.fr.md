@@ -83,7 +83,7 @@ En utilisant ces éléments, vous pouvez isoler les dépendances en remplaçant 
 
 ---
 
-## 4. Briser le couplage fort : l'Injection de Dépendances (Dependency Injection)
+## 4. Briser le couplage fort : l'Injection de Dépendances ([Dependency Injection](https://kenji.blog/fr/p/design-patterns-modern-practices/))
 
 L'Injection de Dépendances (DI : Dependency Injection) est un modèle puissant pour retirer la responsabilité de la création d'objets de l'intérieur d'une classe vers l'extérieur.
 

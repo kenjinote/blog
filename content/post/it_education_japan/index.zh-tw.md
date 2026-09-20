@@ -92,7 +92,7 @@ $$
 
 ## 4. 記憶體管理與系統架構的黑箱化
 
-更深層的問題在於，對記憶體管理（Memory Management）和 CPU 架構的理解完全缺失。現今學校教的都是具備垃圾回收機制（Garbage Collection, GC）的高階語言，如 Python 或 JavaScript，學習這些語言的學生一輩子都不會去意識到變數或物件被配置在實體記憶體（RAM）的哪裡（是堆積空間還是堆疊空間）、是如何被分配的，以及何時用什麼方式被釋放的。
+更深層的問題在於，對記憶體管理（[Memory Management](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）和 CPU 架構的理解完全缺失。現今學校教的都是具備垃圾回收機制（[Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/), GC）的高階語言，如 Python 或 JavaScript，學習這些語言的學生一輩子都不會去意識到變數或物件被配置在實體記憶體（RAM）的哪裡（是堆積空間還是堆疊空間）、是如何被分配的，以及何時用什麼方式被釋放的。
 
 ```c
 // C語言中明確且直接的記憶體分配與指標操作範例

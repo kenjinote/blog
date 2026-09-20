@@ -212,7 +212,7 @@ reqwest = "0.11" # <- 如果需要更新，可以一键修复
 
 ### ⑥ Error Lens
 
-`Error Lens` 是一款革命性的扩展功能，它直接在编辑器的对应行右侧，以内联的方式高亮显示 C++ 冗长的模板错误，或是 Rust 严格的借用检查器（Borrow Checker）错误。
+`Error Lens` 是一款革命性的扩展功能，它直接在编辑器的对应行右侧，以内联的方式高亮显示 C++ 冗长的模板错误，或是 Rust 严格的借用检查器（[Borrow Checker](https://kenji.blog/zh-cn/p/memory-management-garbage-collection/)）错误。
 
 通常，在 VSCode 中要查看错误的详细信息，需要打开屏幕底部的“问题（Problems）”面板，或是将鼠标光标准确停留在文本的红色波浪线上等待悬停弹窗。然而，这些操作会增加认知负荷，并阻碍编码的心流状态。
 

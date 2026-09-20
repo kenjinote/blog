@@ -180,7 +180,7 @@ Pada umumnya terdapat 3 jenis catatan dalam Zettelkasten:
 2. **Literature Notes (Catatan Literatur)**: Ringkasan dengan kata-kata sendiri setelah membaca artikel atau buku.
 3. **Permanent Notes (Catatan Permanen)**: Berisi pemikiran utuh mengenai satu topik. Inilah yang menjadi benih langsung dari artikel blog.
 
-Dengan menggunakan fitur backlink Obsidian (`[[Nama Catatan]]`), misalnya dengan menautkan catatan "Kepemilikan di Rust" dan "Sejarah Garbage Collection", Anda dapat menemukan koneksi ide yang tidak terduga.
+Dengan menggunakan fitur backlink Obsidian (`[[Nama Catatan]]`), misalnya dengan menautkan catatan "Kepemilikan di Rust" dan "Sejarah [Garbage Collection](https://kenji.blog/id/p/memory-management-garbage-collection/)", Anda dapat menemukan koneksi ide yang tidak terduga.
 
 ## 5. Pencarian Semantik Menggunakan Database Vektor (Pinecone) dan OpenAI Embeddings
 

@@ -273,7 +273,7 @@ flowchart TD
 
 Pourquoi adopter une architecture aussi complexe ? Comme scénario spécifique, considérons « l'analyse de journaux IIS personnalisés de plusieurs gigaoctets ».
 
-En utilisant `Get-Content` dans PowerShell et en analysant ligne par ligne avec des expressions régulières, une quantité massive de temps CPU est consommée en raison de la surcharge liée à la création d'objets et au ramasse-miettes (Garbage Collection, GC).
+En utilisant `Get-Content` dans PowerShell et en analysant ligne par ligne avec des expressions régulières, une quantité massive de temps CPU est consommée en raison de la surcharge liée à la création d'objets et au ramasse-miettes ([Garbage Collection](https://kenji.blog/fr/p/memory-management-garbage-collection/), GC).
 
 Le nombre d'allocations de mémoire $A$ et le nombre de déclenchements du GC $G$ sont proportionnels à l'exécution du script comme suit :
 

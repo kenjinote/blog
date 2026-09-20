@@ -254,7 +254,7 @@ sequenceDiagram
 雖然 WebAssembly 能以接近原生的速度執行，但「跨越 JavaScript 與 WebAssembly 邊界的通訊（Interop）」是存在開銷的。
 
 * **呼叫開銷（Call Overhead）** ：這是 JavaScript 引擎呼叫 Wasm 函式的切換成本。雖然現在已經大幅最佳化，但仍應避免在每一幀呼叫極輕量的函式數萬次這樣的設計。
-* **記憶體複製成本** ：當傳遞字串或陣列給 Wasm 時，會發生將資料從 JS 的垃圾回收（Garbage Collection）管理的記憶體中，複製到 Wasm 線性記憶體（ArrayBuffer）的動作。當傳遞大容量資料時，會需要一種「零拷貝（Zero-copy）」的設計，也就是一開始就在 Wasm 記憶體上建構資料，而 JS 端則透過 TypedArray 的視圖（例如 `Uint8Array`）來進行存取。
+* **記憶體複製成本** ：當傳遞字串或陣列給 Wasm 時，會發生將資料從 JS 的垃圾回收（[Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）管理的記憶體中，複製到 Wasm 線性記憶體（ArrayBuffer）的動作。當傳遞大容量資料時，會需要一種「零拷貝（Zero-copy）」的設計，也就是一開始就在 Wasm 記憶體上建構資料，而 JS 端則透過 TypedArray 的視圖（例如 `Uint8Array`）來進行存取。
 
 例如，在遊戲引擎或物理運算引擎中，一般的架構會將所有狀態保存在 Wasm 的線性記憶體內，而 JavaScript 僅負責每幀發出「更新」的觸發訊號，以及畫面渲染（呼叫 WebGL/WebGPU API）。
 

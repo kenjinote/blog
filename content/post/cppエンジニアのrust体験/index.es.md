@@ -57,7 +57,7 @@ int main() {
 
 En C++, siempre existe el riesgo de acceder por error a un objeto que ha sido vaciado por `std::move` (un estado válido pero no especificado). Esto puede provocar bloqueos (crashes) en tiempo de ejecución o, en el peor de los casos, directamente vulnerabilidades de seguridad.
 
-## Propiedad (Ownership) en Rust y la defensa absoluta del Borrow Checker
+## Propiedad (Ownership) en Rust y la defensa absoluta del [Borrow Checker](https://kenji.blog/es/p/memory-management-garbage-collection/)
 
 Rust incorpora este concepto de "propiedad" en el diseño central del lenguaje, y realiza un análisis estático estricto mediante una característica del compilador llamada **Borrow Checker**.
 
@@ -297,7 +297,7 @@ Con solo agregar una línea en `Cargo.toml` con el nombre y la versión de la bi
 
 Hasta ahora, he hablado de las ventajas de Rust, pero ciertamente existen "muros" y desventajas que un ingeniero de C++ enfrentará al implementarlo en la práctica.
 
-## 1. La feroz lucha con el Borrow Checker
+## 1. La feroz lucha con el [Borrow Checker](https://kenji.blog/es/p/memory-management-garbage-collection/)
 Si intentas implementar de la misma manera en Rust una estructura de datos que en C++ simplemente "conectabas de alguna manera con punteros crudos" (por ejemplo, listas doblemente enlazadas, estructuras de grafos, estructuras autorreferenciadas, etc.), la compilación fallará debido a las restricciones de propiedad y tiempos de vida. Para satisfacer al Borrow Checker, necesitas hacer envolturas complejas como `Rc<RefCell<T>>`, o rediseñar desde la raíz usando un asignador de arena (arena allocator) o una gestión basada en índices.
 
 ## 2. Largos tiempos de compilación
@@ -314,4 +314,4 @@ C++ seguirá desempeñando un papel importante en el desarrollo de motores de ju
 
 Sin embargo, para "proyectos de programación de sistemas creados desde cero", siento que hoy en día **es más difícil encontrar razones para no elegir Rust**. Una vez que pasas la compilación, te liberas del miedo a los comportamientos indefinidos y a la corrupción de memoria, y puedes ejecutar un procesamiento concurrente seguro y con alto rendimiento; esta "certeza" de Rust mejora drásticamente el modelo mental del ingeniero.
 
-Para los ingenieros de C++, aprender Rust no es solo memorizar una nueva sintaxis, sino la mejor experiencia para adquirir una nueva perspectiva sobre "cómo gestionar de forma segura la memoria y los hilos". Te invito a experimentar la comodidad de Cargo y la severidad del Borrow Checker.
+Para los ingenieros de C++, aprender Rust no es solo memorizar una nueva sintaxis, sino la mejor experiencia para adquirir una nueva perspectiva sobre "cómo gestionar de forma segura la memoria y los hilos". Te invito a experimentar la comodidad de Cargo y la severidad del [Borrow Checker](https://kenji.blog/es/p/memory-management-garbage-collection/).

@@ -23,7 +23,7 @@ In diesem Artikel werden wir die detaillierten Entwicklungsschritte erläutern, 
 In der Trainingsphase von KI ist Python mit seiner Flexibilität und seinem umfangreichen Ökosystem überwältigend im Vorteil. In der Bereitstellungs- oder „Inferenz“-Phase wird C++ jedoch aus den folgenden Gründen zu einer leistungsstarken Option.
 
 1. **Reduzierung von Overhead**: Das Global Interpreter Lock (GIL) von Python und der Runtime-Overhead können vollständig eliminiert werden.
-2. **Speichereffizienz und Arena-Allokation**: Da die Zuweisung und Freigabe von Speicher manuell gesteuert werden können, lassen sich unvorhersehbare Spitzen (Spikes) durch die Garbage Collection verhindern.
+2. **Speichereffizienz und Arena-Allokation**: Da die Zuweisung und Freigabe von Speicher manuell gesteuert werden können, lassen sich unvorhersehbare Spitzen (Spikes) durch die [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) verhindern.
 3. **Direkter Zugriff auf die Hardware**: SIMD-Intrinsics wie AVX-512, AVX2 und ARM NEON können direkt aufgerufen werden, um die Rechenleistung der CPU zu maximieren.
 4. **Keine Abhängigkeiten**: ggml ist eine C/C++-Bibliothek ohne Abhängigkeiten (Zero dependencies) und kann problemlos auf Windows-Umgebungen mit MSVC kompiliert werden, solange ein Compiler vorhanden ist.
 

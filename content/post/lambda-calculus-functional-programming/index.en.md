@@ -14,7 +14,7 @@ tags:
   - history
 ---
 
-## 1. Introduction: The Philosophy Underlying Functional Programming
+## 1. Introduction: The Philosophy Underlying [Functional Programming](https://kenji.blog/en/p/oop-vs-fp-vs-dop/)
 
 In modern software development, **functional programming** is no longer a niche approach for a subset of enthusiasts, but has become a widely adopted paradigm. From frontend technologies like React to Rust and Scala, and even object-oriented languages like Java and C#, concepts such as treating functions as first-class objects and eliminating side effects have been incorporated.
 
@@ -198,7 +198,7 @@ graph LR
 
 This powerful mathematical foundation later evolved into an approach that guarantees program correctness through type systems, paving the way for modern statically typed functional languages.
 
-## 8. The Emergence of Haskell and the Pinnacle of Pure Functional Programming
+## 8. The Emergence of Haskell and the Pinnacle of Pure [Functional Programming](https://kenji.blog/en/p/oop-vs-fp-vs-dop/)
 
 In the late 1980s, researchers of functional languages established a committee to create a standardized, lazy-evaluation-based pure functional language. This led to the birth of **Haskell**, named after the logician Haskell Curry.
 

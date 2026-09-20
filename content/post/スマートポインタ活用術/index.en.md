@@ -13,7 +13,7 @@ Memory management in C++ has been one of the biggest challenges for developers f
 
 In this article, we will provide an extremely detailed explanation of the mechanisms and advanced usage of `std::unique_ptr`, `std::shared_ptr`, and `std::weak_ptr`—powerful tools for eradicating memory leaks and achieving safe and efficient resource management. We will cover their internal implementation (control blocks and atomic operations), performance impact, and the mathematical formulation of reference counting.
 
-## 1. Introduction: The Dark Age of C++ Memory Management and the Dawn of Modern C++
+## 1. Introduction: The Dark Age of C++ [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and the Dawn of Modern C++
 
 In past C++ development, developers themselves were responsible for freeing memory allocated on the heap.
 

@@ -92,7 +92,7 @@ Dalam analisis big data modern dan pemrosesan lalu lintas skala web (web-scale),
 
 ## 4. Manajemen Memori dan Kotak Hitam Arsitektur Sistem
 
-Permasalahan pada tingkat yang lebih dalam adalah kurangnya pemahaman seutuhnya mengenai manajemen memori (Memory Management) dan arsitektur CPU. Pelajar yang hanya mempelajari bahasa pemrograman tingkat tinggi dengan fitur Garbage Collection (GC) seperti Python atau JavaScript—yang kini diajarkan di sekolah—tidak akan pernah menyadari di mana variabel dan objek dialokasikan di dalam memori fisik (RAM), apakah itu di bagian heap atau stack, bagaimana memori itu dialokasikan, serta kapan dan bagaimana memori itu dilepaskan.
+Permasalahan pada tingkat yang lebih dalam adalah kurangnya pemahaman seutuhnya mengenai manajemen memori ([Memory Management](https://kenji.blog/id/p/memory-management-garbage-collection/)) dan arsitektur CPU. Pelajar yang hanya mempelajari bahasa pemrograman tingkat tinggi dengan fitur [Garbage Collection](https://kenji.blog/id/p/memory-management-garbage-collection/) (GC) seperti Python atau JavaScript—yang kini diajarkan di sekolah—tidak akan pernah menyadari di mana variabel dan objek dialokasikan di dalam memori fisik (RAM), apakah itu di bagian heap atau stack, bagaimana memori itu dialokasikan, serta kapan dan bagaimana memori itu dilepaskan.
 
 ```c
 // Contoh alokasi memori secara eksplisit dan langsung serta operasi pointer dalam bahasa C

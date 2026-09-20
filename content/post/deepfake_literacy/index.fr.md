@@ -120,7 +120,7 @@ Ce manque de naturel dans le domaine fréquentiel survient car, bien que l'IA pu
 
 # 3. Détection des signaux biométriques : Vérification du "battement de la vie" par rPPG
 
-En plus des technologies de détection d'images (fixes), l'**extraction des signaux biométriques (Biological Signals)** constitue une approche révolutionnaire pour la détection de deepfakes dans les vidéos.
+En plus des technologies de détection d'images (fixes), l'**extraction des signaux biométriques (Biological [Signals](https://kenji.blog/fr/p/state-management-history-future/))** constitue une approche révolutionnaire pour la détection de deepfakes dans les vidéos.
 
 Tant qu'un être humain est en vie, son sang circule dans son corps au rythme des battements de son cœur. L'hémoglobine présente dans le sang absorbant bien certaines longueurs d'onde (notamment la lumière verte, environ 530 nm), la couleur de la peau du visage subit des changements minimes (invisibles à l'œil nu) synchronisés avec le rythme cardiaque. La technologie permettant d'estimer de manière non tactile la fréquence cardiaque à partir de la vidéo d'une caméra RGB ordinaire en utilisant ce principe est appelée **rPPG (Photopléthysmographie à distance, remote Photoplethysmography)**.
 

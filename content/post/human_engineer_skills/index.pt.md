@@ -135,7 +135,7 @@ A IA pode até escrever "código que prioriza C" ou "código que prioriza A", ma
 ### 4.2 Comunicação Assíncrona e Consistência Eventual (Eventual Consistency)
 
 Conforme os sistemas escalam, a interação entre serviços passa de comunicações síncronas via APIs REST para comunicações assíncronas usando filas de mensagens (Kafka, RabbitMQ, etc.). Nesses cenários, a consistência dos dados muda de imediata para "Consistência Eventual".
-Em que momento introduzir padrões de arquitetura avançados como o padrão Saga ou CQRS (Command Query Responsibility Segregation)? Fazer essas escolhas difíceis e elaborar a planta de todo o sistema é a verdadeira demonstração de valor de um engenheiro sênior.
+Em que momento introduzir padrões de arquitetura avançados como o padrão Saga ou [CQRS](https://kenji.blog/pt/p/event-driven-architecture-async/) (Command Query Responsibility Segregation)? Fazer essas escolhas difíceis e elaborar a planta de todo o sistema é a verdadeira demonstração de valor de um engenheiro sênior.
 
 ```mermaid
 flowchart LR
@@ -201,7 +201,7 @@ Na era da IA, o engenheiro eleva-se de "digitador de código" para "maestro resp
 
 ## 7. Conclusão: Navegar pela onda em vez de rejeitar a evolução
 
-A "era da IA que escreve código" não é uma ameaça para o engenheiro, mas sim a maior oportunidade da história. Assim como a passagem da linguagem Assembly para a linguagem C e a evolução do gerenciamento de ponteiros de memória para o Garbage Collection no Java, a geração de código por IA é apenas "mais uma elevação no nível de abstração".
+A "era da IA que escreve código" não é uma ameaça para o engenheiro, mas sim a maior oportunidade da história. Assim como a passagem da linguagem Assembly para a linguagem C e a evolução do gerenciamento de ponteiros de memória para o [Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/) no Java, a geração de código por IA é apenas "mais uma elevação no nível de abstração".
 
 O engenheiro do futuro não se preocupará excessivamente com especificações minuciosas de linguagens de programação ou atualizações de versões de frameworks. Pelo contrário, ele concentrará seus recursos na resolução de problemas de mais alto nível e mais humanos, como **"Quais são os problemas do negócio?", "Como devemos segmentar e integrar os dados?"** e **"Como restaurar o sistema rapidamente caso ele saia do ar?"**.
 

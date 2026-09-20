@@ -83,7 +83,7 @@ Indem Sie diese voll ausschöpfen, können Sie Abhängigkeiten isolieren, indem 
 
 ---
 
-## 4. Das Brechen enger Kopplungen: Abhängigkeitsinjektion (Dependency Injection)
+## 4. Das Brechen enger Kopplungen: Abhängigkeitsinjektion ([Dependency Injection](https://kenji.blog/de/p/design-patterns-modern-practices/))
 
 Die Abhängigkeitsinjektion (DI: Dependency Injection) ist ein mächtiges Muster, um die Verantwortung für die Objekterstellung vom Inneren einer Klasse nach außen zu verlagern.
 

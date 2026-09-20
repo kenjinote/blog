@@ -90,9 +90,9 @@ $$
 
 In modern big data analytics and web-scale traffic processing, the order of $N$ is massive, reaching hundreds of millions or billions. If an ignorant programmer implements an inefficient $O(N^2)$ algorithm, it would require a staggering $10^{12}$ (1 trillion) useless comparison operations for data size $N = 10^6$, effectively causing the system to freeze and crash. On the other hand, $O(N \log N)$ would complete in about $2 \times 10^7$ (20 million) operations. To claim "I can program" without this cruelly rigorous mathematical backing is like building a skyscraper without knowing structural mechanics, which is extremely dangerous.
 
-## 4. The Black-Boxing of Memory Management and System Architecture
+## 4. The Black-Boxing of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and System Architecture
 
-At an even deeper layer is the complete omission of the understanding of Memory Management and CPU architecture. Learners who have only been taught high-level languages with Garbage Collection (GC), like Python and JavaScript, in schools today will never in their lives be conscious of where variables and objects are physically allocated in RAM (heap vs. stack), how they are assigned, and when and how they are freed.
+At an even deeper layer is the complete omission of the understanding of Memory Management and CPU architecture. Learners who have only been taught high-level languages with [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC), like Python and JavaScript, in schools today will never in their lives be conscious of where variables and objects are physically allocated in RAM (heap vs. stack), how they are assigned, and when and how they are freed.
 
 ```c
 // Example of explicit and direct memory allocation and pointer manipulation in C

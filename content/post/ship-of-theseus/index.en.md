@@ -43,7 +43,7 @@ When this process is complete, the internal structure of the system the user is 
 
 This is exactly **[The Ship of Theseus](https://kenji.blog/en/p/ship-of-theseus/)**. Even if all the components (parts) that make up the system are replaced, the "identity" of the system as a whole is considered to be maintained.
 
-## 2. "Identity" in Object-Oriented Programming
+## 2. "Identity" in [Object-Oriented](https://kenji.blog/en/p/oop-vs-fp-vs-dop/) Programming
 
 When considering "identity" at the code level, the most deeply related concept is **Object-Oriented Programming (OOP)**. In OOP, there are broadly two criteria for determining identity.
 

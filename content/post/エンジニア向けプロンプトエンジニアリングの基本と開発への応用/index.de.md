@@ -376,7 +376,7 @@ Dies ermöglicht es, Leistungsrückgänge (Regressionen) beim Anpassen von Promp
 
 In einer Zeit, in der KI Code schreibt, hört man oft vom „Ende des Programmierens“, aber die Realität sieht anders aus. Für Ingenieure hat sich lediglich die erforderliche Abstraktionsebene um eine Stufe erhöht.
 
-In der Vergangenheit haben wir den Übergang von der Assemblersprache zu C und dann zu höheren Programmiersprachen mit Garbage Collection vollzogen, was uns von der mühsamen Speicherverwaltung befreite und es uns ermöglichte, uns auf komplexere Geschäftslogik zu konzentrieren. LLMs und Prompt Engineering sind die nächste Welle der Abstraktion, die darauf folgt.
+In der Vergangenheit haben wir den Übergang von der Assemblersprache zu C und dann zu höheren Programmiersprachen mit [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) vollzogen, was uns von der mühsamen Speicherverwaltung befreite und es uns ermöglichte, uns auf komplexere Geschäftslogik zu konzentrieren. LLMs und Prompt Engineering sind die nächste Welle der Abstraktion, die darauf folgt.
 
 1. **Verständnis der Architektur**: Verstehen Sie die probabilistische Natur von LLMs (Autoregression, Attention, Temperature), um die Nicht-Determiniertheit des Systems zu steuern.
 2. **Kontextdesign**: Klare Übermittlung der Absicht durch Einschränkungen im System Prompt und die Nutzung von Few-Shot/CoT.

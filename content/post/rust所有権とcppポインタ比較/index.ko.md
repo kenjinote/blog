@@ -138,7 +138,7 @@ Rust의 차용에는 2가지 종류가 있습니다.
 - **불변 참조(Immutable Reference)**: `&T` (C++의 `const T&`와 유사)
 - **가변 참조(Mutable Reference)**: `&mut T` (C++의 `T&`와 유사)
 
-### 보로우 체커(Borrow Checker)의 냉혹한 규칙
+### 보로우 체커([Borrow Checker](https://kenji.blog/ko/p/memory-management-garbage-collection/))의 냉혹한 규칙
 
 Rust 컴파일러에는 참조의 정당성을 검증하는 '보로우 체커'가 내장되어 있습니다. 보로우 체커는 다음의 엄격한 규칙을 강제합니다.
 

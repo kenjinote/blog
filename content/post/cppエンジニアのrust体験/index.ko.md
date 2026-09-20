@@ -59,7 +59,7 @@ C++에서는 `std::move`에 의해 내용이 비워진(유효하지만 지정되
 
 ## Rust의 소유권(Ownership)과 빌림 검사기의 절대적 방어
 
-Rust는 이 '소유권'이라는 개념을 언어의 핵심 설계에 통합하고, **빌림 검사기(Borrow Checker)** 라고 불리는 컴파일러 기능을 통해 엄격한 정적 분석을 수행합니다.
+Rust는 이 '소유권'이라는 개념을 언어의 핵심 설계에 통합하고, **빌림 검사기([Borrow Checker](https://kenji.blog/ko/p/memory-management-garbage-collection/))** 라고 불리는 컴파일러 기능을 통해 엄격한 정적 분석을 수행합니다.
 
 ```rust
 fn consume(s: String) {

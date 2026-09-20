@@ -118,7 +118,7 @@ This unnaturalness in the frequency domain arises because while AI can learn "lo
 
 ---
 
-# 3. Detection of Biological Signals: Confirming the "Beat of Life" via rPPG
+# 3. Detection of Biological [Signals](https://kenji.blog/en/p/state-management-history-future/): Confirming the "Beat of Life" via rPPG
 
 In addition to detection technologies for images (still images), a groundbreaking approach to deepfake detection in videos is the **extraction of biological signals**.
 

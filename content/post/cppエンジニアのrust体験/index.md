@@ -19,7 +19,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 ---
 
-# 1. メモリ管理のパラダイムシフト：RAIIから所有権と借用へ
+# 1. [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)のパラダイムシフト：RAIIから所有権と借用へ
 
 ## C++のRAIIとスマートポインタの限界
 
@@ -59,7 +59,7 @@ C++では、`std::move`によって中身が空になった（有効だが未規
 
 ## Rustの所有権（Ownership）とボローチェッカーの絶対的防御
 
-Rustは、この「所有権」という概念を言語のコア設計に組み込み、 **ボローチェッカー（Borrow Checker）** と呼ばれるコンパイラの機能によって厳密な静的解析を行います。
+Rustは、この「所有権」という概念を言語のコア設計に組み込み、 **ボローチェッカー（[Borrow Checker](https://kenji.blog/p/memory-management-garbage-collection/)）** と呼ばれるコンパイラの機能によって厳密な静的解析を行います。
 
 ```rust
 fn consume(s: String) {
@@ -243,7 +243,7 @@ C++のポリモーフィズムは、主にクラスの継承と仮想関数（`v
 
 $$ T_{dispatch} = T_{lookup\_in\_vtable} + T_{dereference} $$
 
-Rustは古典的なオブジェクト指向の「クラス継承」を切り捨て、代わりに「 **トレイト（Traits）** 」という概念を採用しました（C++20のConceptに似ていますが、より多機能です）。
+Rustは古典的な[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)の「クラス継承」を切り捨て、代わりに「 **トレイト（Traits）** 」という概念を採用しました（C++20のConceptに似ていますが、より多機能です）。
 
 ```rust
 trait Drawable {

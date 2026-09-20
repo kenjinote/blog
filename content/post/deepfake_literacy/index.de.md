@@ -120,7 +120,7 @@ Diese Unnatürlichkeit im Frequenzbereich entsteht, weil die KI zwar "lokale Kon
 
 # 3. Erkennung biologischer Signale: Bestätigung des "Lebenspulses" durch rPPG
 
-Zusätzlich zu den Erkennungstechnologien für Bilder (Standbilder) ist die **Extraktion biologischer Signale (Biological Signals)** ein bahnbrechender Ansatz zur Erkennung von Deepfakes in Videos.
+Zusätzlich zu den Erkennungstechnologien für Bilder (Standbilder) ist die **Extraktion biologischer Signale (Biological [Signals](https://kenji.blog/de/p/state-management-history-future/))** ein bahnbrechender Ansatz zur Erkennung von Deepfakes in Videos.
 
 Solange ein Mensch lebt, zirkuliert Blut im Takt des Herzschlags durch den Körper. Da Hämoglobin im Blut bestimmte Wellenlängen (insbesondere grünes Licht, etwa 530 nm) gut absorbiert, verändert sich die Farbe der Gesichtshaut leicht (auf einem für das menschliche Auge unsichtbaren Niveau) im Rhythmus des Herzschlags. Die Technologie, die dieses Prinzip nutzt, um die Herzfrequenz berührungslos aus normalen RGB-Kameravideos zu schätzen, wird **rPPG (remote Photoplethysmography)** genannt.
 

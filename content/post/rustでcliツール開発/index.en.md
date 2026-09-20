@@ -61,7 +61,7 @@ graph TD
 
 ---
 
-## 4. Mathematical Background of Asynchronous Processing and Performance
+## 4. Mathematical Background of [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Processing and Performance
 
 The tool we develop in this tutorial will send concurrent requests to multiple API endpoints. Let's look at the mathematical background of why using an asynchronous runtime like `tokio` makes it dramatically faster.
 

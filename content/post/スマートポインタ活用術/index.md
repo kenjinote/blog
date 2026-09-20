@@ -9,11 +9,11 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-C++におけるメモリ管理は、長年にわたり開発者にとって最大の課題の一つでした。手動での `new` と `delete` に依存する従来のメモリ管理スタイルは、メモリリークやダングリングポインタ、二重解放といった深刻なバグを引き起こす温床となっていました。しかし、Modern C++（C++11以降）の登場により、状況は劇的に変化しました。その中核をなすのが「スマートポインタ（Smart Pointers）」です。
+C++における[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は、長年にわたり開発者にとって最大の課題の一つでした。手動での `new` と `delete` に依存する従来の[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)スタイルは、メモリリークやダングリングポインタ、二重解放といった深刻なバグを引き起こす温床となっていました。しかし、Modern C++（C++11以降）の登場により、状況は劇的に変化しました。その中核をなすのが「スマートポインタ（Smart Pointers）」です。
 
 本記事では、メモリリークを根絶し、安全かつ効率的なリソース管理を実現するための強力なツールである `std::unique_ptr`、`std::shared_ptr`、そして `std::weak_ptr` の仕組みと高度な活用術について、内部実装（コントロールブロックやアトミック操作）、パフォーマンスへの影響、数学的モデルによる参照カウントの定式化を交えて極めて詳細に解説します。
 
-## 1. 導入：C++メモリ管理の暗黒時代とModern C++の夜明け
+## 1. 導入：C++[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の暗黒時代とModern C++の夜明け
 
 かつてのC++開発では、ヒープ上に確保されたメモリは開発者自身が責任を持って解放する必要がありました。
 
@@ -28,7 +28,7 @@ void legacy_function() {
 }
 ```
 
-上記のようなコードでは、例外が発生した場合や早期リターンが行われた場合に `delete` がスキップされ、メモリリークが発生します。これを防ぐためのパラダイムが「RAII（Resource Acquisition Is Initialization）」です。RAIIは、リソースの確保をオブジェクトの初期化（コンストラクタ）に、リソースの解放をオブジェクトの破棄（デストラクタ）に結びつける手法です。スマートポインタは、このRAIIイディオムをメモリ管理に応用した標準ライブラリのクラススタックです。
+上記のようなコードでは、例外が発生した場合や早期リターンが行われた場合に `delete` がスキップされ、メモリリークが発生します。これを防ぐためのパラダイムが「RAII（Resource Acquisition Is Initialization）」です。RAIIは、リソースの確保をオブジェクトの初期化（コンストラクタ）に、リソースの解放をオブジェクトの破棄（デストラクタ）に結びつける手法です。スマートポインタは、このRAIIイディオムを[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)に応用した標準ライブラリのクラススタックです。
 
 ## 2. `std::unique_ptr`：ゼロオーバーヘッドの排他的所有権
 
@@ -261,7 +261,7 @@ $$ S(t) + W(t) = 0 $$
 
 ## 7. 結論
 
-Modern C++におけるメモリ管理は、もはや手動で `new`/`delete` を管理する時代ではありません。
+Modern C++における[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は、もはや手動で `new`/`delete` を管理する時代ではありません。
 
 1.  デフォルトでは常に **`std::unique_ptr`** を使用し、ゼロオーバーヘッドの恩恵を受けつつ明確な所有権を設計に組み込みます。
 2.  本当に複数の所有者間でライフサイクルを共有する必要がある場合にのみ **`std::shared_ptr`** を使用し、生成には `std::make_shared` を用います。

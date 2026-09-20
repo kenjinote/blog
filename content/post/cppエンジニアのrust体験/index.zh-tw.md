@@ -59,7 +59,7 @@ int main() {
 
 ## Rust的所有權（Ownership）與借用檢查器的絕對防禦
 
-Rust將這個「所有權」的概念融入語言的核心設計中，並透過稱為 **借用檢查器（Borrow Checker）** 的編譯器功能進行嚴格的靜態分析。
+Rust將這個「所有權」的概念融入語言的核心設計中，並透過稱為 **借用檢查器（[Borrow Checker](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）** 的編譯器功能進行嚴格的靜態分析。
 
 ```rust
 fn consume(s: String) {

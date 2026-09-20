@@ -344,7 +344,7 @@ Transitioning to C++26 requires a massive paradigm shift, similar to C++11, but 
 
 1.  **Revamping Metaprogramming**: By rewriting serializers and ORM (Object-Relational Mapping) frameworks composed of complex `template` and nested `constexpr if` with C++26 reflection, maintainability can be dramatically improved, and compile times could potentially be reduced to a fraction of their current length.
 2.  **API Design with Contracts**: Class library designers should explicitly state specifications at the language level using Contracts (`pre` / `post`) rather than relying on documentation comments like Doxygen. This allows for early detection of invalid calls by the user.
-3.  **Modernizing Asynchronous Processing**: By migrating custom implementations or asynchronous processing that depended on Boost.Asio to `std::execution` (Senders/Receivers), you can build a standardized concurrent processing foundation that transcends platforms and hardware.
+3.  **Modernizing [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Processing**: By migrating custom implementations or asynchronous processing that depended on Boost.Asio to `std::execution` (Senders/Receivers), you can build a standardized concurrent processing foundation that transcends platforms and hardware.
 
 ## Cautions During Transition: ABI Stability and Compiler Support
 

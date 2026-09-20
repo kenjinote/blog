@@ -36,7 +36,7 @@ tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 
 AI PCの進化に伴い、要求スペックも変化しています。
 
-- **OS**: Windows 11 Pro (24H2以降)。WSL2の完全な機能と高度なメモリ管理、さらにはDirectMLの最新APIを利用するために必須です。
+- **OS**: Windows 11 Pro (24H2以降)。WSL2の完全な機能と高度な[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)、さらにはDirectMLの最新APIを利用するために必須です。
 - **CPU**: Intel Core Ultra 200シリーズ以上、またはAMD Ryzen 9000シリーズ以上。CPU推論を併用する場合、広帯域メモリ通信が不可欠です。
 - **RAM**: 最低32GB、推奨64GB以上。メインメモリの帯域幅（MB/s）がCPU推論時やオフロード時の決定的なボトルネックになります。DDR5-6000以上の高速メモリが理想的です。
 - **GPU**: NVIDIA RTX 4000/5000シリーズ。ローカルLLMにおいて最も重要なのは演算性能ではなく「VRAM容量」です。
@@ -208,7 +208,7 @@ CursorやContinue.devといったVS Code拡張機能のバックエンド設定�
 
 # 6. 実践2：llama.cppによる極限のパフォーマンスチューニング
 
-細かなメモリ管理や、最新フォーマット（EXL2やIQ量子化など）をいち早く試したい場合は、コアエンジンである `llama.cpp` を直接操作します。
+細かな[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)や、最新フォーマット（EXL2やIQ量子化など）をいち早く試したい場合は、コアエンジンである `llama.cpp` を直接操作します。
 
 ## 6.1 llama.cpp のビルド手順
 

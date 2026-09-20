@@ -120,7 +120,7 @@ def extract_high_frequency_features(image_path):
 
 # 3. 生理訊號檢測：透過 rPPG 確認「生命的脈動」
 
-除了圖像（靜態圖片）的檢測技術外，針對影片的深偽檢測還有一項劃時代的方法，那就是 **生理訊號（Biological Signals）的提取** 。
+除了圖像（靜態圖片）的檢測技術外，針對影片的深偽檢測還有一項劃時代的方法，那就是 **生理訊號（Biological [Signals](https://kenji.blog/zh-tw/p/state-management-history-future/)）的提取** 。
 
 只要人還活著，血液就會配合心臟的跳動在體內循環。血液中的血紅素會吸收特定波長（尤其是綠光，約 530nm），因此臉部皮膚的顏色會隨著心跳產生微小（人類肉眼無法察覺）的變化。利用這個原理，從一般 RGB 攝影機的影像中非接觸式估算心率的技術，被稱為 **rPPG（遠端光體積變化描記圖法, remote Photoplethysmography）** 。
 

@@ -120,7 +120,7 @@ def extract_high_frequency_features(image_path):
 
 # 3. 生体信号の検知：rPPGによる「命の鼓動」の確認
 
-画像（静止画）の検知技術に加え、動画におけるディープフェイク検知として画期的なアプローチが **生体信号（Biological Signals）の抽出** です。
+画像（静止画）の検知技術に加え、動画におけるディープフェイク検知として画期的なアプローチが **生体信号（Biological [Signals](https://kenji.blog/p/state-management-history-future/)）の抽出** です。
 
 人間が生きている限り、心臓の鼓動に合わせて血液が体内を循環しています。血液中のヘモグロビンは特定の波長（特に緑色光、約530nm）をよく吸収するため、心拍に合わせて顔の皮膚の色が微小に（人間の目には見えないレベルで）変化します。この原理を用いて、通常のRGBカメラの映像から心拍数を非接触で推定する技術を **rPPG（リモート・フォトプレチスモグラフィ, remote Photoplethysmography）** と呼びます。
 

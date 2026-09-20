@@ -83,7 +83,7 @@ By making full use of these to swap production environment modules with Mock obj
 
 ---
 
-## 4. Breaking Tight Coupling: Dependency Injection
+## 4. Breaking Tight Coupling: [Dependency Injection](https://kenji.blog/en/p/design-patterns-modern-practices/)
 
 Dependency Injection (DI) is a powerful pattern for stripping the responsibility of object creation from inside a class to the outside.
 
@@ -209,7 +209,7 @@ The solution is to eliminate implicit dependencies on global state and pass requ
 
 ---
 
-## 6. Modernizing Memory Management and the Essence of RAII
+## 6. Modernizing [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and the Essence of RAII
 
 In code from the C++98/03 era, `new` and `delete` are scattered everywhere, serving as a hotbed for memory leaks and dangling pointers. In Modern C++ (C++11 and later), the concept of **Ownership** is supported at the language level, and safe resource management using smart pointers has become the standard.
 

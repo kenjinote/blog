@@ -273,7 +273,7 @@ flowchart TD
 
 Por que adotamos uma arquitetura tão complexa? Considere um cenário prático: "analisar arquivos de log personalizados do IIS de vários gigabytes de tamanho".
 
-Quando usamos o `Get-Content` no PowerShell para analisar linha por linha usando expressões regulares, uma grande quantidade de tempo de CPU é gasta devido à geração de objetos e a sobrecarga (overhead) de coleta de lixo (Garbage Collection - GC).
+Quando usamos o `Get-Content` no PowerShell para analisar linha por linha usando expressões regulares, uma grande quantidade de tempo de CPU é gasta devido à geração de objetos e a sobrecarga (overhead) de coleta de lixo ([Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/) - GC).
 
 O número de alocações de memória $A$ e o número de vezes que a GC é acionada $G$ são proporcionais durante a execução do script conforme abaixo:
 

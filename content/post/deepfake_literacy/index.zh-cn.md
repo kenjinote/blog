@@ -120,7 +120,7 @@ def extract_high_frequency_features(image_path):
 
 # 3. 生物信号检测：通过rPPG确认“生命的跳动”
 
-除了图像（静态图片）的检测技术，在视频深度伪造检测领域，一种具有突破性意义的方法是 **提取生物信号（Biological Signals）** 。
+除了图像（静态图片）的检测技术，在视频深度伪造检测领域，一种具有突破性意义的方法是 **提取生物信号（Biological [Signals](https://kenji.blog/zh-cn/p/state-management-history-future/)）** 。
 
 只要人还活着，血液就会随着心脏的跳动在体内循环。因为血液中的血红蛋白能很好地吸收特定波长（特别是绿光，约530nm），所以脸部皮肤的颜色会随着心跳发生微小变化（人类肉眼无法察觉的级别）。利用这一原理，从普通RGB摄像头的画面中非接触式地估算心率的技术，被称为 **rPPG（远程光电容积脉搏波描记法，remote Photoplethysmography）** 。
 

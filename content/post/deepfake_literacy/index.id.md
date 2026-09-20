@@ -121,7 +121,7 @@ Ketidakwajaran dalam domain frekuensi ini muncul karena meskipun AI dapat mempel
 
 # 3. Deteksi Sinyal Biologis: Memeriksa "Denyut Kehidupan" melalui rPPG
 
-Selain teknologi deteksi untuk gambar (gambar diam), pendekatan revolusioner lainnya untuk deteksi Deepfake dalam video adalah **ekstraksi sinyal biologis (Biological Signals)**.
+Selain teknologi deteksi untuk gambar (gambar diam), pendekatan revolusioner lainnya untuk deteksi Deepfake dalam video adalah **ekstraksi sinyal biologis (Biological [Signals](https://kenji.blog/id/p/state-management-history-future/))**.
 
 Selama seseorang masih hidup, darah akan beredar ke seluruh tubuhnya, berdetak seiring dengan jantung. Hemoglobin dalam darah menyerap panjang gelombang tertentu (khususnya cahaya hijau, sekitar 530nm), sehingga warna kulit wajah sedikit berubah (pada tingkat yang tak terlihat oleh mata manusia) setiap kali jantung berdenyut. Memanfaatkan prinsip ini, teknologi yang memperkirakan detak jantung dari rekaman kamera RGB konvensional tanpa kontak disebut **rPPG (remote Photoplethysmography)**.
 

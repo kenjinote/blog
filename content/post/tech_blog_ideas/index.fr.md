@@ -180,7 +180,7 @@ Il existe principalement 3 types de notes dans Zettelkasten :
 2. **Literature Notes (Notes de lecture)** : Des résumés dans vos propres mots après avoir lu des articles ou des livres.
 3. **Permanent Notes (Notes permanentes)** : Des réflexions complètes sur un sujet donné. Celles-ci deviendront les germes directs de vos articles de blog.
 
-En utilisant la fonctionnalité de rétrolien (backlink) d'Obsidian (`[[Nom de la note]]`), par exemple en liant la note "Propriété dans Rust" avec la note "Histoire du Garbage Collection", vous pouvez découvrir des connexions d'idées inattendues.
+En utilisant la fonctionnalité de rétrolien (backlink) d'Obsidian (`[[Nom de la note]]`), par exemple en liant la note "Propriété dans Rust" avec la note "Histoire du [Garbage Collection](https://kenji.blog/fr/p/memory-management-garbage-collection/)", vous pouvez découvrir des connexions d'idées inattendues.
 
 ## 5. Recherche sémantique à l'aide de bases de données vectorielles (Pinecone) et d'OpenAI Embeddings
 

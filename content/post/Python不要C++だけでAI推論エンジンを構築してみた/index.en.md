@@ -50,7 +50,7 @@ We will assemble these using the powerful features of C++ (templates, pointer ar
 
 ---
 
-## 3. The Secret of Memory Management: Memory Arena and SIMD Alignment
+## 3. The Secret of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/): Memory Arena and SIMD Alignment
 
 Memory management in an inference engine is one of the most critical factors directly linked to performance. During inference, especially as data passes through each layer of a Transformer model, a massive number of intermediate tensors are generated. If you allocate and free these with standard `malloc` every time, heap fragmentation and OS context switches will cause a fatal slowdown.
 

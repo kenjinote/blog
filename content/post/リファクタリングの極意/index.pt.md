@@ -83,7 +83,7 @@ Aproveitando essas costuras, substituímos os módulos do ambiente de produção
 
 ---
 
-## 4. Quebrando o Forte Acoplamento: Injeção de Dependência (Dependency Injection)
+## 4. Quebrando o Forte Acoplamento: Injeção de Dependência ([Dependency Injection](https://kenji.blog/pt/p/design-patterns-modern-practices/))
 
 A Injeção de Dependência (DI: Dependency Injection) é um padrão poderoso para separar a responsabilidade de criação de objetos do interior de uma classe para o exterior.
 

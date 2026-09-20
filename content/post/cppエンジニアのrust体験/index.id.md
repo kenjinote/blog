@@ -57,7 +57,7 @@ int main() {
 
 Di C++, selalu ada risiko bahwa Anda secara tidak sengaja mengakses objek yang isinya telah dikosongkan (valid tetapi dalam keadaan yang tidak ditentukan) oleh `std::move`. Ini dapat langsung berujung pada crash saat runtime, atau dalam kasus terburuk, lubang keamanan.
 
-## Kepemilikan (Ownership) Rust dan Pertahanan Absolut Borrow Checker
+## Kepemilikan (Ownership) Rust dan Pertahanan Absolut [Borrow Checker](https://kenji.blog/id/p/memory-management-garbage-collection/)
 
 Rust menggabungkan konsep "kepemilikan" ini ke dalam desain inti bahasanya, dan melakukan analisis statis yang ketat melalui fitur kompilator yang disebut **Borrow Checker (Pengecek Peminjaman)**.
 
@@ -297,7 +297,7 @@ Hanya dengan menambahkan satu baris nama dan versi dari pustaka dependensi (crat
 
 Sejauh ini saya telah membicarakan tentang kelebihan Rust, tetapi "dinding" dan kekurangan yang pasti dihadapi oleh insinyur C++ ketika mencoba untuk menempatkan Rust ke dalam praktik pertempuran yang sesungguhnya tentu saja ada.
 
-## 1. Pergulatan Sengit dengan Borrow Checker
+## 1. Pergulatan Sengit dengan [Borrow Checker](https://kenji.blog/id/p/memory-management-garbage-collection/)
 Jika Anda mencoba untuk secara langsung mengimplementasikan struktur data yang di C++ "biasanya dihubungkan dengan pointer mentah (raw pointer)" (seperti doubly linked list, struktur graf, atau struktur yang mereferensikan dirinya sendiri) ke dalam Rust, kode tersebut tidak akan lulus kompilasi karena adanya batasan pada kepemilikan dan lifetime. Untuk memuaskan Borrow Checker, Anda perlu menerapkan pembungkus yang rumit seperti `Rc<RefCell<T>>`, atau secara fundamental merombak desain menjadi pengelolaan berbasis indeks atau menggunakan arena allocator.
 
 ## 2. Lamanya Waktu Kompilasi
@@ -314,4 +314,4 @@ C++ di masa mendatang akan terus memainkan peran penting dalam pengembangan mesi
 
 Namun, untuk "proyek pemrograman sistem yang baru dimulai," saya merasa sekarang **lebih sulit menemukan alasan untuk TIDAK memilih Rust**. "Kepastian (certainty)" yang ditawarkan oleh Rust, di mana selama kodenya lulus dikompilasi maka Anda terbebas dari ketakutan akan perilaku tidak terdefinisi dan kerusakan memori, serta kemampuan untuk memproses secara paralel dengan aman dan pada kinerja tinggi, secara dramatis meningkatkan model mental seorang insinyur.
 
-Bagi seorang insinyur C++, mempelajari Rust bukan sekadar tentang menghafal sintaksis baru, melainkan sebuah pengalaman terbaik untuk mendapatkan perspektif baru terhadap "metode pengelolaan memori dan thread yang aman". Saya harap Anda semua juga dapat merasakan secara langsung nyamannya penggunaan Cargo sekaligus ketegasan yang diberikan oleh Borrow Checker.
+Bagi seorang insinyur C++, mempelajari Rust bukan sekadar tentang menghafal sintaksis baru, melainkan sebuah pengalaman terbaik untuk mendapatkan perspektif baru terhadap "metode pengelolaan memori dan thread yang aman". Saya harap Anda semua juga dapat merasakan secara langsung nyamannya penggunaan Cargo sekaligus ketegasan yang diberikan oleh [Borrow Checker](https://kenji.blog/id/p/memory-management-garbage-collection/).

@@ -408,7 +408,7 @@ $$
 
 Die Bedeutung und die typische Dauer jeder Variablen sind wie folgt:
 
-- $ T_{hw\_input} $: Die Hardwareverzögerung von der Aktivierung des mechanischen Schalters der Tastatur bis zum Abfragen über den USB-Controller und dem Senden des Interrupt-Signals (ca. 1–5 ms).
+- $ T_{hw\_input} $: Die Hardwareverzögerung von der Aktivierung des mechanischen Schalters der Tastatur bis zum Abfragen über den USB-Controller und dem Senden des Interrupt-[Signals](https://kenji.blog/de/p/state-management-history-future/) (ca. 1–5 ms).
 - $ T_{os} $: Die Nachrichtenwarteschlangen-Verarbeitungsverzögerung durch die OS HID (Human Interface Device) Treiberschicht (ca. 1–2 ms).
 - $ T_{pty} $: Die Verzögerung der Pufferung und der Zeichencodierungskonvertierung (z.B. UTF-8 in UTF-16) durch ConPTY (Pseudo-Terminal) (ca. 2–10 ms).
 - $ T_{app} $: Die Verarbeitungszeit für die Befehlsinterpretation auf der Shell-Seite (PowerShell/Bash) und die Bestimmung der Bildschirmausgabe. Dies schließt auch die Verarbeitungszeit für Aufgaben wie das Abrufen des Git-Status durch Oh My Posh oder Starship ein (ca. 10–50 ms).

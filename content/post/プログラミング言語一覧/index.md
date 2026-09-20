@@ -87,7 +87,7 @@ INRIA（フランス国立情報学自動制御研究所）で開発されてい
 D言語は強い静的型付け言語
 
 ## Eiffel
-Eiffelはオブジェクト指向プログラミング言語のひとつ
+Eiffelは[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)プログラミング言語のひとつ
 
 ## Ada
 Adaはオブジェクト指向プログラミング言語のひとつ
@@ -108,7 +108,7 @@ Adaはオブジェクト指向プログラミング言語のひとつ
 手続き型プログラミング言語のひとつ。 名前は「beginners' all-purpose symbolic instruction code」のバクロニムである。
 
 ## Smalltalk
-オブジェクト指向プログラミング言語
+[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)プログラミング言語
 
 ## Lisp
 前置記法で記述するプログラミング言語

@@ -138,7 +138,7 @@ sequenceDiagram
 - **Неизменяемая ссылка (Immutable Reference)**: `&T` (похоже на `const T&` в C++)
 - **Изменяемая ссылка (Mutable Reference)**: `&mut T` (похоже на `T&` в C++)
 
-### Безжалостные правила Borrow Checker'а
+### Безжалостные правила [Borrow Checker](https://kenji.blog/ru/p/memory-management-garbage-collection/)'а
 
 В компилятор Rust встроен «borrow checker» (проверщик заимствований), который проверяет корректность ссылок. Borrow checker принудительно применяет следующие строгие правила:
 

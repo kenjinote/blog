@@ -138,7 +138,7 @@ Ada dua jenis peminjaman di Rust:
 - **Referensi Imutabel (Immutable Reference)**: `&T` (Mirip dengan `const T&` dalam C++)
 - **Referensi Mutabel (Mutable Reference)**: `&mut T` (Mirip dengan `T&` dalam C++)
 
-### Aturan Kejam dari Borrow Checker
+### Aturan Kejam dari [Borrow Checker](https://kenji.blog/id/p/memory-management-garbage-collection/)
 
 Kompiler Rust memiliki mekanisme bawaan bernama "borrow checker" yang memvalidasi kebenaran referensi. Borrow checker memaksakan aturan ketat berikut:
 

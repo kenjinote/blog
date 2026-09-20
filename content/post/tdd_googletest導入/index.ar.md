@@ -159,7 +159,7 @@ int Calculator::Add(int a, int b) {
 
 في مشاريع C++ الفعلية، تحدث التبعيات للأنظمة الخارجية مثل الوصول إلى قواعد البيانات، أو الاتصالات الشبكية، أو التحكم في الأجهزة بشكل حتمي. إذا تُركت هذه التبعيات كما هي، فإن اختبار الوحدة يصبح صعباً للغاية.
 
-هنا يأتي دور **حقن التبعية (Dependency Injection: DI)** وإنشاء Mock للواجهات باستخدام **GoogleMock**.
+هنا يأتي دور **حقن التبعية ([Dependency Injection](https://kenji.blog/ar/p/design-patterns-modern-practices/): DI)** وإنشاء Mock للواجهات باستخدام **GoogleMock**.
 
 ```mermaid
 flowchart LR

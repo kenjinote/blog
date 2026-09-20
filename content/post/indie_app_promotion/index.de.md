@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-Zum Beispiel platzieren wir am Ende eines Artikels über "Wie man Redux-Boilerplate reduziert" einen kontextbezogenen CTA wie: "Wenn Sie mit der Komplexität des State-Managements zu kämpfen haben, probieren Sie mein neu entwickeltes Visualisierungstool für State-Management, StateViewer, aus."
+Zum Beispiel platzieren wir am Ende eines Artikels über "Wie man [Redux](https://kenji.blog/de/p/state-management-history-future/)-Boilerplate reduziert" einen kontextbezogenen CTA wie: "Wenn Sie mit der Komplexität des State-Managements zu kämpfen haben, probieren Sie mein neu entwickeltes Visualisierungstool für State-Management, StateViewer, aus."
 
 ### 2.2 Mathematisches Modell der Conversion-Rate
 

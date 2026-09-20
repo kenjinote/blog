@@ -83,7 +83,7 @@ flowchart TD
 
 ---
 
-## 4. 打破緊密耦合：依賴注入 (Dependency Injection)
+## 4. 打破緊密耦合：依賴注入 ([Dependency Injection](https://kenji.blog/zh-tw/p/design-patterns-modern-practices/))
 
 依賴注入 (DI: Dependency Injection) 是一種強大的模式，用於將物件的建立責任從類別內部抽離至外部。
 

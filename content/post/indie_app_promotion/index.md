@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-例えば、「Reduxのボイラープレートを減らす方法」という記事の最後に、「もしあなたが状態管理の複雑さに悩んでいるなら、私が開発した新しい状態管理可視化ツール『StateViewer』を試してみてください」というコンテキストに沿ったCTAを配置します。
+例えば、「[Redux](https://kenji.blog/p/state-management-history-future/)のボイラープレートを減らす方法」という記事の最後に、「もしあなたが[状態管理](https://kenji.blog/p/state-management-history-future/)の複雑さに悩んでいるなら、私が開発した新しい状態管理可視化ツール『StateViewer』を試してみてください」というコンテキストに沿ったCTAを配置します。
 
 ### 2.2 コンバージョン率の数理モデル
 

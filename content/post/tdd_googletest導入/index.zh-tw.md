@@ -159,7 +159,7 @@ int Calculator::Add(int a, int b) {
 
 在實際的 C++ 專案中，必定會發生對外部系統的依賴，如資料庫存取、網路通訊、硬體控制等。如果將這些依賴關係放著不管，單元測試會變得非常困難。
 
-這時就要用到 **依賴注入（Dependency Injection: DI）** ，以及使用 **GoogleMock** 進行介面的 Mock 化。
+這時就要用到 **依賴注入（[Dependency Injection](https://kenji.blog/zh-tw/p/design-patterns-modern-practices/): DI）** ，以及使用 **GoogleMock** 進行介面的 Mock 化。
 
 ```mermaid
 flowchart LR

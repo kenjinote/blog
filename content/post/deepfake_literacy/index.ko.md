@@ -120,7 +120,7 @@ def extract_high_frequency_features(image_path):
 
 # 3. 생체 신호 탐지: rPPG를 통한 '생명의 고동' 확인
 
-이미지(정지 화상) 탐지 기술에 더해, 동영상에서의 딥페이크 탐지로서 획기적인 접근법이 **생체 신호(Biological Signals) 추출** 입니다.
+이미지(정지 화상) 탐지 기술에 더해, 동영상에서의 딥페이크 탐지로서 획기적인 접근법이 **생체 신호(Biological [Signals](https://kenji.blog/ko/p/state-management-history-future/)) 추출** 입니다.
 
 인간이 살아있는 한, 심장의 고동에 맞춰 혈액이 체내를 순환하고 있습니다. 혈액 속의 헤모글로빈은 특정 파장(특히 녹색광, 약 530nm)을 잘 흡수하기 때문에, 심박에 맞춰 얼굴 피부의 색이 미세하게(인간의 눈에는 보이지 않는 수준으로) 변화합니다. 이 원리를 이용하여 일반적인 RGB 카메라 영상에서 심박수를 비접촉으로 추정하는 기술을 **rPPG(원격 광용적맥파, remote Photoplethysmography)** 라고 부릅니다.
 

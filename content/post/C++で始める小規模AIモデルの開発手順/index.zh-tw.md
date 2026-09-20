@@ -23,7 +23,7 @@ description: '本文詳細解說如何使用C++與ggml，在本地環境中針�
 在 AI 的訓練階段，擁有高靈活性與豐富生態系的 Python 佔有絕對的優勢。然而，在部署與「推論（Inference）」階段，基於以下理由，C++ 成為了強大的選擇：
 
 1. **減少額外負擔（Overhead）**: 可以完全消除 Python 的全域直譯器鎖（GIL）以及執行時期的額外負擔。
-2. **記憶體效率與 Arena 分配（Arena Allocation）**: 由於可以手動控制記憶體的配置與釋放，能防止垃圾回收（Garbage Collection）所造成無法預測的效能突波。
+2. **記憶體效率與 Arena 分配（Arena Allocation）**: 由於可以手動控制記憶體的配置與釋放，能防止垃圾回收（[Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）所造成無法預測的效能突波。
 3. **直接存取硬體**: 能夠直接呼叫 AVX-512、AVX2、ARM NEON 等 SIMD 內建函式（Intrinsics），將 CPU 的運算能力發揮到極致。
 4. **排除依賴關係**: ggml 是一個零依賴（Zero dependencies）的 C/C++ 函式庫，只要有編譯器，即使在 Windows 的 MSVC 環境下也能輕鬆編譯。
 

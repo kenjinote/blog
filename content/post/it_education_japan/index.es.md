@@ -92,7 +92,7 @@ En el análisis moderno de Big Data o el procesamiento de tráfico a escala web,
 
 ## 4. La caja negra de la gestión de memoria y la arquitectura del sistema
 
-Como un problema de un nivel aún más profundo, existe el hecho de que la comprensión de la gestión de memoria (Memory Management) y la arquitectura de la CPU está completamente ausente. Los estudiantes que solo han aprendido lenguajes de alto nivel con recolección de basura (GC) como Python y JavaScript, que se enseñan actualmente en las escuelas, nunca en su vida sabrán dónde se colocan las variables y los objetos en la memoria física (RAM) (si en el área del montón o en el área de la pila), cómo se asignan, o cuándo y cómo se liberan.
+Como un problema de un nivel aún más profundo, existe el hecho de que la comprensión de la gestión de memoria ([Memory Management](https://kenji.blog/es/p/memory-management-garbage-collection/)) y la arquitectura de la CPU está completamente ausente. Los estudiantes que solo han aprendido lenguajes de alto nivel con recolección de basura (GC) como Python y JavaScript, que se enseñan actualmente en las escuelas, nunca en su vida sabrán dónde se colocan las variables y los objetos en la memoria física (RAM) (si en el área del montón o en el área de la pila), cómo se asignan, o cuándo y cómo se liberan.
 
 ```c
 // Ejemplo de asignación de memoria explícita y directa y operaciones de punteros en C

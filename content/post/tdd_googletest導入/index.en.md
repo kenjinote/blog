@@ -155,7 +155,7 @@ When using GoogleTest, there are two types of assertion macros: `EXPECT_*` and `
 - **`EXPECT_EQ(expected, actual)`**: Even if the test fails, execution of the current test function **continues**. This is suitable when you want to verify multiple states within a single test.
 - **`ASSERT_EQ(expected, actual)`**: If the test fails, execution of the current test function is **aborted immediately (fatal failure)**. Use this when further verification is meaningless (e.g., dereferencing a pointer right after checking that it is not `nullptr`).
 
-## 5. Dependency Injection (DI) and Mocking with GoogleMock
+## 5. [Dependency Injection](https://kenji.blog/en/p/design-patterns-modern-practices/) (DI) and Mocking with GoogleMock
 
 In a real C++ project, dependencies on external systems such as database access, network communication, and hardware control inevitably arise. Leaving these dependencies as they are makes unit testing extremely difficult.
 
@@ -339,7 +339,7 @@ The existence of tests allows you to split functions or replace them with polymo
 In this article, we explained in detail how to introduce Test-Driven Development (TDD) using GoogleTest and GoogleMock to a C++ project.
 1. Modern project configuration using **CMake FetchContent**
 2. Practicing the **Red-Green-Refactor** cycle
-3. Interface mocking using **GoogleMock and Dependency Injection (DI)**
+3. Interface mocking using **GoogleMock and [Dependency Injection](https://kenji.blog/en/p/design-patterns-modern-practices/) (DI)**
 4. Visualizing test coverage with **gcov/lcov**
 
 Although TDD is an approach that takes time to master, its return on investment is immeasurable in system programming like C++, where both performance and safety are required. By all means, start practicing TDD little by little in your next project to obtain robust and maintainable C++ code.

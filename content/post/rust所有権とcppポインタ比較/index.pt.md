@@ -10,7 +10,7 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "Uma comparação aprofundada dos ponteiros do C++ e do modelo de propriedade e empréstimo do Rust. Dos ponteiros brutos e ponteiros inteligentes ao borrow checker, explicamos a essência da segurança de memória."
 ---
 
-Na programação de sistemas moderna, conciliar desempenho e segurança de memória é um desafio eterno. O C++ reina como líder absoluto nessa área há muitos anos, mas o Rust vem ameaçando essa posição ultimamente. A principal característica do Rust reside nos conceitos de "Propriedade" (Ownership) e "Empréstimo" (Borrowing), que garantem a segurança da memória em tempo de compilação sem a necessidade de um coletor de lixo (Garbage Collection).
+Na programação de sistemas moderna, conciliar desempenho e segurança de memória é um desafio eterno. O C++ reina como líder absoluto nessa área há muitos anos, mas o Rust vem ameaçando essa posição ultimamente. A principal característica do Rust reside nos conceitos de "Propriedade" (Ownership) e "Empréstimo" (Borrowing), que garantem a segurança da memória em tempo de compilação sem a necessidade de um coletor de lixo ([Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/)).
 
 Neste artigo, vamos comparar detalhadamente os ponteiros do C++ (ponteiros brutos, `std::unique_ptr`, `std::shared_ptr`) e o modelo de propriedade do Rust, e explicaremos minuciosamente, com exemplos de código e diagramas, como o compilador do Rust (borrow checker) previne o Use-After-Free (uso após liberação) e as corridas de dados (Data Race).
 
@@ -138,7 +138,7 @@ Existem dois tipos de empréstimos no Rust:
 - **Referência Imutável (Immutable Reference)**: `&T` (Semelhante ao `const T&` do C++)
 - **Referência Mutável (Mutable Reference)**: `&mut T` (Semelhante ao `T&` do C++)
 
-### As Regras Implacáveis do Borrow Checker
+### As Regras Implacáveis do [Borrow Checker](https://kenji.blog/pt/p/memory-management-garbage-collection/)
 
 O compilador do Rust possui um "Borrow Checker" integrado que verifica a validade das referências. O borrow checker impõe a seguinte regra rigorosa:
 

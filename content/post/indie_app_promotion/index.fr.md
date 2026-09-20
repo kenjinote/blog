@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-Par exemple, à la fin d'un article intitulé "Comment réduire le code passe-partout de Redux", placez un CTA contextualisé tel que : "Si vous êtes frustré par la complexité de la gestion d'état, essayez 'StateViewer', un nouvel outil de visualisation de gestion d'état que j'ai développé".
+Par exemple, à la fin d'un article intitulé "Comment réduire le code passe-partout de [Redux](https://kenji.blog/fr/p/state-management-history-future/)", placez un CTA contextualisé tel que : "Si vous êtes frustré par la complexité de la gestion d'état, essayez 'StateViewer', un nouvel outil de visualisation de gestion d'état que j'ai développé".
 
 ### 2.2 Modèle mathématique du taux de conversion
 

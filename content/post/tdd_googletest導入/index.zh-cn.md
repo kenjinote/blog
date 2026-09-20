@@ -159,7 +159,7 @@ int Calculator::Add(int a, int b) {
 
 在实际的C++项目中，必然会产生对外部系统（如数据库访问、网络通信、硬件控制等）的依赖。如果将这些依赖关系原封不动地保留，单元测试将变得非常困难。
 
-这时就需要用到 **依赖注入（Dependency Injection: DI）** ，以及使用 **GoogleMock** 对接口进行Mock化。
+这时就需要用到 **依赖注入（[Dependency Injection](https://kenji.blog/zh-cn/p/design-patterns-modern-practices/): DI）** ，以及使用 **GoogleMock** 对接口进行Mock化。
 
 ```mermaid
 flowchart LR

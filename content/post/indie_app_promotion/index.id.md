@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-Misalnya, di akhir artikel yang berjudul "Cara Mengurangi Boilerplate Redux", kita menempatkan CTA yang sesuai dengan konteks: "Jika Anda kesulitan dengan kompleksitas manajemen state, cobalah alat visualisasi manajemen state baru 'StateViewer' yang saya kembangkan."
+Misalnya, di akhir artikel yang berjudul "Cara Mengurangi Boilerplate [Redux](https://kenji.blog/id/p/state-management-history-future/)", kita menempatkan CTA yang sesuai dengan konteks: "Jika Anda kesulitan dengan kompleksitas manajemen state, cobalah alat visualisasi manajemen state baru 'StateViewer' yang saya kembangkan."
 
 ### 2.2 Model Matematis dari Rasio Konversi
 

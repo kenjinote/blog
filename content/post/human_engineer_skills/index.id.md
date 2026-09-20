@@ -135,7 +135,7 @@ Meskipun AI dapat menulis "kode yang memprioritaskan C" atau "kode yang memprior
 ### 4.2 Komunikasi Asinkron dan Konsistensi Akhir (Eventual Consistency)
 
 Ketika sistem menjadi berskala besar, koordinasi antar layanan beralih dari komunikasi sinkron melalui REST API ke komunikasi asinkron menggunakan message queue (seperti Kafka, RabbitMQ). Konsistensi data di sini berubah dari konsistensi instan menjadi "konsistensi akhir" (Eventual Consistency).
-Kapan pola arsitektur tingkat lanjut seperti Saga Pattern atau CQRS (Command Query Responsibility Segregation) harus diperkenalkan? Membuat keputusan kompleks ini dan menggambar cetak biru keseluruhan sistem adalah kompetensi utama dari insinyur senior (senior engineer).
+Kapan pola arsitektur tingkat lanjut seperti Saga Pattern atau [CQRS](https://kenji.blog/id/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) harus diperkenalkan? Membuat keputusan kompleks ini dan menggambar cetak biru keseluruhan sistem adalah kompetensi utama dari insinyur senior (senior engineer).
 
 ```mermaid
 flowchart LR

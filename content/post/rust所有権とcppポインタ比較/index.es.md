@@ -138,7 +138,7 @@ Hay dos tipos de préstamos en Rust:
 - **Referencia inmutable (Immutable Reference)**: `&T` (Similar a `const T&` en C++)
 - **Referencia mutable (Mutable Reference)**: `&mut T` (Similar a `T&` en C++)
 
-### La regla despiadada del comprobador de préstamos (Borrow Checker)
+### La regla despiadada del comprobador de préstamos ([Borrow Checker](https://kenji.blog/es/p/memory-management-garbage-collection/))
 
 El compilador de Rust lleva incorporado un "comprobador de préstamos" que verifica la validez de las referencias. El comprobador de préstamos impone las siguientes reglas estrictas:
 

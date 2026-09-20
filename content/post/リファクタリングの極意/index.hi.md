@@ -83,7 +83,7 @@ flowchart TD
 
 ---
 
-## 4. घनिष्ठ युग्मन (Tight Coupling) को तोड़ना: डिपेंडेंसी इंजेक्शन (Dependency Injection)
+## 4. घनिष्ठ युग्मन (Tight Coupling) को तोड़ना: डिपेंडेंसी इंजेक्शन ([Dependency Injection](https://kenji.blog/hi/p/design-patterns-modern-practices/))
 
 डिपेंडेंसी इंजेक्शन (DI) ऑब्जेक्ट निर्माण की जिम्मेदारी को क्लास के अंदर से बाहर निकालने का एक शक्तिशाली पैटर्न है।
 

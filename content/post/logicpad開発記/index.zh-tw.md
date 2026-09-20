@@ -14,7 +14,7 @@ description: '這是一篇技術部落格文章，回顧了從開發原生Window
 
 在現代應用程式開發中，Electron、Tauri、React Native 等跨平台技術無疑已經成為主流。使用網頁技術「寫一次，到處執行 (Write Once, Run Anywhere)」的方法，從開發速度和可維護性的角度來看非常合理。然而，我卻選擇了另一條路，將「LogicPad」這個應用程式，開發成完全針對 Windows 最佳化的原生應用程式。
 
-LogicPad 是一款針對硬體工程師和邏輯電路學習者的數位邏輯電路模擬器兼文字編輯器。它需要即時模擬數萬個邏輯閘，並同時無延遲地渲染複雜的波形資料。在這種要求極限效能的領域中，垃圾回收 (Garbage Collection) 所造成的數毫秒暫停 (Micro-stutter) 以及 Web View 的渲染開銷，都會導致使用者體驗受到致命的影響。
+LogicPad 是一款針對硬體工程師和邏輯電路學習者的數位邏輯電路模擬器兼文字編輯器。它需要即時模擬數萬個邏輯閘，並同時無延遲地渲染複雜的波形資料。在這種要求極限效能的領域中，垃圾回收 ([Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)) 所造成的數毫秒暫停 (Micro-stutter) 以及 Web View 的渲染開銷，都會導致使用者體驗受到致命的影響。
 
 在本文中，我將以非常詳細的技術解說，回顧 LogicPad 從開發構想，到使用 C++ 和 WinUI 3 (Windows App SDK) 進行實作、突破特有的技術瓶頸、MSIX 打包，最後透過 Microsoft Store 向全世界發布的整個軌跡。希望透過分享個人開發者如何打造出企業級品質的原生 Windows 應用程式的過程，能為同樣挑戰原生開發的人們提供指引。
 

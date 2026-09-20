@@ -43,7 +43,7 @@ graph TD
 
 1. **テンソル（Tensor）管理**: 多次元配列のデータ構造と、次元ごとのストライド（Stride）を管理。
 2. **計算グラフ（Computation Graph）**: ニューラルネットワークの各層の演算を、有向非巡回グラフ（DAG）として表現。
-3. **メモリアリーナ（Memory Arena）**: 動的メモリ確保（`malloc`や`new`）のオーバーヘッドを避けるための、事前確保型メモリ管理機構。
+3. **メモリアリーナ（Memory Arena）**: 動的メモリ確保（`malloc`や`new`）のオーバーヘッドを避けるための、事前確保型[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)機構。
 4. **バックエンド（Backend）**: CPUやGPUなど、特定のハードウェアに最適化された演算の実装（カーネル）。
 
 これらをC++の強力な機能（テンプレート、ポインタ演算、RAIIなど）を用いて組み上げていきます。
@@ -183,7 +183,7 @@ graph LR
     D --> E["Execute Nodes In Order"]
 ```
 
-グラフを評価する際（フォワードパス）は、トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)を用いて依存関係のないノードから順に処理を実行します。推論のみであればバックプロパゲーション用の勾配を保持する必要がないため、メモリ管理は非常にシンプルになります。
+グラフを評価する際（フォワードパス）は、トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)を用いて依存関係のないノードから順に処理を実行します。推論のみであればバックプロパゲーション用の勾配を保持する必要がないため、[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は非常にシンプルになります。
 
 ---
 

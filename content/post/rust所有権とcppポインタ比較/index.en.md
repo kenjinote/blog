@@ -10,11 +10,11 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'A thorough comparison between C++ pointers and Rust ownership/borrowing models. Explains the essence of memory safety from raw pointers and smart pointers to the borrow checker.'
 ---
 
-Modern system programming constantly faces the challenge of balancing performance and memory safety. While C++ has reigned as the king of this domain for many years, Rust has recently emerged to threaten its position. The most prominent feature of Rust lies in its concepts of "Ownership" and "Borrowing", which guarantee memory safety at compile time without relying on Garbage Collection (GC).
+Modern system programming constantly faces the challenge of balancing performance and memory safety. While C++ has reigned as the king of this domain for many years, Rust has recently emerged to threaten its position. The most prominent feature of Rust lies in its concepts of "Ownership" and "Borrowing", which guarantee memory safety at compile time without relying on [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC).
 
-In this article, we will thoroughly compare C++ pointers (raw pointers, `std::unique_ptr`, `std::shared_ptr`) with the Rust ownership model. We will use code examples and diagrams to explain how the Rust compiler (Borrow Checker) prevents Use-After-Free (using memory after it has been freed) and Data Races.
+In this article, we will thoroughly compare C++ pointers (raw pointers, `std::unique_ptr`, `std::shared_ptr`) with the Rust ownership model. We will use code examples and diagrams to explain how the Rust compiler ([Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)) prevents Use-After-Free (using memory after it has been freed) and Data Races.
 
-## 1. Basics of Memory Management: Stack and Heap
+## 1. Basics of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/): Stack and Heap
 
 To understand the basics of memory management, let's first review how a program utilizes memory. Memory regions are broadly categorized into the "Stack" and the "Heap".
 
@@ -138,7 +138,7 @@ There are two types of borrowing in Rust:
 - **Immutable Reference**: `&T` (Similar to `const T&` in C++)
 - **Mutable Reference**: `&mut T` (Similar to `T&` in C++)
 
-### The Ruthless Laws of the Borrow Checker
+### The Ruthless Laws of the [Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)
 
 The Rust compiler has a built-in "Borrow Checker" that verifies the validity of references. The borrow checker enforces the following strict rules:
 

@@ -83,7 +83,7 @@ extern "C" {
 }
 ```
 
-### Memory Management and String Conversion (`BSTR`, `LPWSTR`)
+### [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and String Conversion (`BSTR`, `LPWSTR`)
 
 When exchanging data between C++ and PowerShell (.NET), the most important things to pay attention to are **string encoding** and **memory management**.
 
@@ -273,7 +273,7 @@ flowchart TD
 
 Why adopt such a complex architecture? As a specific scenario, consider "parsing custom IIS log files spanning several gigabytes."
 
-When parsing line by line using regular expressions with `Get-Content` in PowerShell, a massive amount of CPU time is consumed due to object creation and Garbage Collection (GC) overhead.
+When parsing line by line using regular expressions with `Get-Content` in PowerShell, a massive amount of CPU time is consumed due to object creation and [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC) overhead.
 
 The number of memory allocations $A$ and the number of GC triggers $G$ are proportional to the following in script execution.
 
@@ -297,7 +297,7 @@ Monitoring information from proprietary hardware devices (e.g., specialized PCIe
 - **Role of C++**: A DLL that makes `DeviceIoControl` calls to the device driver to retrieve and parse binary data.
 - **Role of PowerShell**: Periodically call the DLL, format the parsing results into JSON, and send it to the monitoring server's REST API.
 
-## Best Practices for Memory Management and Troubleshooting
+## Best Practices for [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and Troubleshooting
 
 The most common bugs that occur during integration are **memory leaks** and **Access Violations (0xC0000005)**.
 

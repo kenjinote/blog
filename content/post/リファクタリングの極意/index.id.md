@@ -83,7 +83,7 @@ Dengan memanfaatkan hal-hal ini, dependensi dapat diisolasi dengan mengganti mod
 
 ---
 
-## 4. Mendobrak Penggabungan Erat: Injeksi Dependensi (Dependency Injection)
+## 4. Mendobrak Penggabungan Erat: Injeksi Dependensi ([Dependency Injection](https://kenji.blog/id/p/design-patterns-modern-practices/))
 
 Injeksi Dependensi (DI: Dependency Injection) adalah pola (pattern) yang kuat untuk menarik tanggung jawab pembuatan objek dari dalam kelas ke luar.
 

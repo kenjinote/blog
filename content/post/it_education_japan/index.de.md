@@ -92,7 +92,7 @@ Bei moderner Big-Data-Analyse und der Verarbeitung von Traffic im Web-Maßstab e
 
 ## 4. Speicherverwaltung und das Blackboxing der Systemarchitektur
 
-Ein Problem auf einer noch tieferen Ebene ist, dass das Verständnis für Speicherverwaltung (Memory Management) und CPU-Architektur komplett fehlt. Lernende, die nur High-Level-Sprachen mit Garbage Collection (GC) wie Python und JavaScript gelernt haben, die derzeit in Schulen unterrichtet werden, werden sich in ihrem ganzen Leben nie bewusst machen, wo Variablen und Objekte im physischen Speicher (RAM) abgelegt (Heap oder Stack), wie sie allokiert und wann und wie sie freigegeben werden.
+Ein Problem auf einer noch tieferen Ebene ist, dass das Verständnis für Speicherverwaltung ([Memory Management](https://kenji.blog/de/p/memory-management-garbage-collection/)) und CPU-Architektur komplett fehlt. Lernende, die nur High-Level-Sprachen mit [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC) wie Python und JavaScript gelernt haben, die derzeit in Schulen unterrichtet werden, werden sich in ihrem ganzen Leben nie bewusst machen, wo Variablen und Objekte im physischen Speicher (RAM) abgelegt (Heap oder Stack), wie sie allokiert und wann und wie sie freigegeben werden.
 
 ```c
 // Ein Beispiel für explizite und direkte Speicherallokation und Zeigeroperationen in C

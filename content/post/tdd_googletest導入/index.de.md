@@ -155,7 +155,7 @@ Wenn Sie GoogleTest verwenden, gibt es zwei Arten von Assertion-Makros: `EXPECT_
 - **`EXPECT_EQ(expected, actual)`**: Setzt die Ausführung der aktuellen Testfunktion **fort**, auch wenn der Test fehlschlägt. Geeignet, wenn Sie mehrere Zustände in einem einzigen Test überprüfen möchten.
 - **`ASSERT_EQ(expected, actual)`**: Bricht die Ausführung der aktuellen Testfunktion sofort **ab (fataler Fehler)**, wenn der Test fehlschlägt. Wird verwendet, wenn eine weitere Überprüfung keinen Sinn mehr ergibt (z.B. bei der Dereferenzierung eines Zeigers, kurz nachdem bestätigt wurde, dass er nicht `nullptr` ist).
 
-## 5. Dependency Injection (DI) und Mocking mit GoogleMock
+## 5. [Dependency Injection](https://kenji.blog/de/p/design-patterns-modern-practices/) (DI) und Mocking mit GoogleMock
 
 In echten C++-Projekten treten immer Abhängigkeiten von externen Systemen auf, wie z.B. Datenbankzugriff, Netzwerkkommunikation oder Hardwaresteuerung. Wenn diese Abhängigkeiten unverändert bleiben, werden Unit-Tests sehr schwierig.
 
@@ -324,7 +324,7 @@ Es ist äußerst schwierig, TDD nachträglich auf eine bestehende riesige, monol
 
 ## 8. TDD als Software-Design
 
-TDD ist ein Sicherheitsnetz zur Aufrechterhaltung der Codequalität und gleichzeitig ein Treiber zur Verbesserung des C++-Codedesigns. Da beim Schreiben von Tests die Dependency Injection (DI) erzwungen wird, verringert sich die Kopplung (Coupling) zwischen den Klassen und die Kohäsion (Cohesion) steigt.
+TDD ist ein Sicherheitsnetz zur Aufrechterhaltung der Codequalität und gleichzeitig ein Treiber zur Verbesserung des C++-Codedesigns. Da beim Schreiben von Tests die [Dependency Injection](https://kenji.blog/de/p/design-patterns-modern-practices/) (DI) erzwungen wird, verringert sich die Kopplung (Coupling) zwischen den Klassen und die Kohäsion (Cohesion) steigt.
 
 Beim Refactoring ist es auch wichtig, sich der zyklomatischen Komplexität (McCabe's Cyclomatic Complexity) bewusst zu sein.
 

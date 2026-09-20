@@ -123,7 +123,7 @@ int main() {
 ```
 
 #### Pythonの例 (`pathlib`)
-古くは `os.path.join()` が使われていましたが、現在ではオブジェクト指向の `pathlib` モジュールを使用するのが標準的です。
+古くは `os.path.join()` が使われていましたが、現在では[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)の `pathlib` モジュールを使用するのが標準的です。
 
 ```python
 from pathlib import Path
@@ -188,7 +188,7 @@ with open("data.txt", "w", encoding="utf-8") as f:
 ビルドスクリプトや開発用ツールを実行する際のシェル（コマンドラインインタプリタ）の違いも、クロスプラットフォームにおける大きな壁です。
 
 *   **macOS / Linux**: `bash` または `zsh` が主流。テキストベースのパイプライン処理を行います。
-*   **Windows**: コマンドプロンプト (`cmd.exe`) または `PowerShell`。PowerShellは.NETベースであり、強力なオブジェクト指向パイプラインを持ちますが、文法がPOSIXシェルと全く異なります。
+*   **Windows**: コマンドプロンプト (`cmd.exe`) または `PowerShell`。PowerShellは.NETベースであり、強力な[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)パイプラインを持ちますが、文法がPOSIXシェルと全く異なります。
 
 環境変数の参照方法や設定方法が異なるため、Node.jsの `package.json` の `scripts` 領域などでOS依存の書き方をすると、他の環境で動かなくなります。
 
@@ -269,7 +269,7 @@ endif()
 
 ## 7. アーキテクチャパターンの活用：OS抽象化層 (OSAL)
 
-システムに依存する処理（ファイル操作、プロセス/スレッドの生成、メモリ管理、ソケット通信など）をアプリケーションのコアとなるビジネスロジックから完全に分離することが、クロスプラットフォーム開発の要です。
+システムに依存する処理（ファイル操作、プロセス/スレッドの生成、[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)、ソケット通信など）をアプリケーションのコアとなるビジネスロジックから完全に分離することが、クロスプラットフォーム開発の要です。
 
 これを実現するために **OS抽象化層 (OS Abstraction Layer, OSAL)** というパターンを使用します。
 

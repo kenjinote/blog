@@ -212,7 +212,7 @@ Isso ajuda a prevenir bugs e vulnerabilidades oriundos de versões antigas de bi
 
 ### ⑥ Error Lens
 
-O `Error Lens` é uma extensão inovadora que exibe erros longos de templates do C++ ou erros rigorosos do verificador de empréstimo (Borrow Checker) do Rust de forma destacada, inline (na própria linha) à direita.
+O `Error Lens` é uma extensão inovadora que exibe erros longos de templates do C++ ou erros rigorosos do verificador de empréstimo ([Borrow Checker](https://kenji.blog/pt/p/memory-management-garbage-collection/)) do Rust de forma destacada, inline (na própria linha) à direita.
 
 Geralmente, no VSCode, para conferir os detalhes de um erro, é necessário abrir o painel "Problemas" ou passar o mouse precisamente em cima do sublinhado vermelho e aguardar o popup. Esse processo aumenta a carga cognitiva e prejudica o fluxo de codificação.
 

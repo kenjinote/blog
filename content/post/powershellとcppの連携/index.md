@@ -16,7 +16,7 @@ Windowsのシステム管理や自動化において、PowerShellは事実上の
 
 ここで強力な解決策となるのが、「C++との連携」です。C++はネイティブな実行速度と、Win32 APIやCOMオブジェクトへの完全なアクセスを提供します。PowerShellの「高い生産性・柔軟性」とC++の「圧倒的なパフォーマンス・低レイヤー制御」を組み合わせることで、エンタープライズ環境における極めて複雑かつ大規模なシステム管理タスクを最適化することが可能になります。
 
-本記事では、PowerShellとC++を双方向に連携させるための具体的なアーキテクチャ、実装手法、およびメモリ管理や文字列変換のベストプラクティスについて、非常に詳細に解説します。
+本記事では、PowerShellとC++を双方向に連携させるための具体的なアーキテクチャ、実装手法、および[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)や文字列変換のベストプラクティスについて、非常に詳細に解説します。
 
 ## なぜPowerShellとC++を連携させるのか？
 
@@ -83,9 +83,9 @@ extern "C" {
 }
 ```
 
-### メモリ管理と文字列変換 (`BSTR`, `LPWSTR`)
+### [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)と文字列変換 (`BSTR`, `LPWSTR`)
 
-C++とPowerShell（.NET）間でデータをやり取りする際、最も注意すべきは **文字列のエンコーディング** と **メモリ管理** です。
+C++とPowerShell（.NET）間でデータをやり取りする際、最も注意すべきは **文字列のエンコーディング** と **[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)** です。
 
 - **`LPCWSTR` / `LPWSTR`**: C/C++のワイド文字列ポインタ（UTF-16LE）。Windows APIの `W` 系関数で標準的に使用されます。P/Invokeでは `CharSet = CharSet.Unicode` を指定することで、.NETの `String` や `StringBuilder` と自動的にマーシャリングされます。
 - **`BSTR`**: COM (Component Object Model) で使用される長さプレフィックス付きのワイド文字列。`SysAllocString` や `SysFreeString` でメモリを管理する必要があります。P/Invokeで `[MarshalAs(UnmanagedType.BStr)]` を指定します。
@@ -273,7 +273,7 @@ flowchart TD
 
 なぜこのような複雑なアーキテクチャを採用するのでしょうか。具体的なシナリオとして、「数ギガバイトに及ぶカスタムIISログファイルの解析」を考えます。
 
-PowerShellで `Get-Content` を使用し、正規表現を用いて1行ずつパースする場合、オブジェクトの生成とガベージコレクション（GC）のオーバーヘッドにより、CPU時間を大量に消費します。
+PowerShellで `Get-Content` を使用し、正規表現を用いて1行ずつパースする場合、オブジェクトの生成と[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)（GC）のオーバーヘッドにより、CPU時間を大量に消費します。
 
 メモリのアロケーション回数 $A$ とGCのトリガー回数 $G$ は、スクリプト実行において以下のように比例します。
 
@@ -297,7 +297,7 @@ WMI（Windows Management Instrumentation）やCIM（Common Information Model）�
 - **C++の役割**: デバイスドライバに対する `DeviceIoControl` 呼び出しを行い、バイナリデータを取得・解析するDLL。
 - **PowerShellの役割**: 定期的にDLLを呼び出し、解析結果をJSONにフォーマットして監視サーバーのREST APIに送信する。
 
-## メモリ管理とトラブルシューティングのベストプラクティス
+## [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)とトラブルシューティングのベストプラクティス
 
 連携において最も多く発生するバグは、 **メモリリーク** と **アクセス違反（Access Violation: 0xC0000005）** です。
 
@@ -311,7 +311,7 @@ WMI（Windows Management Instrumentation）やCIM（Common Information Model）�
 
 P/Invokeを用いたC++ DLLの呼び出しにより、計算負荷の高いタスクをオフロードし、実行時間を劇的に短縮できます。逆に、C++アプリケーションからプロセス起動やパイプラインを通じてPowerShellの豊富なシステム管理モジュールを活用することで、開発コストを大幅に削減できます。
 
-境界部分でのメモリ管理や文字列変換には注意が必要ですが、本記事で紹介したアーキテクチャパターンと実装テクニックをマスターすることで、より高度で堅牢なWindowsシステム管理ツールを構築できるようになるでしょう。
+境界部分での[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)や文字列変換には注意が必要ですが、本記事で紹介したアーキテクチャパターンと実装テクニックをマスターすることで、より高度で堅牢なWindowsシステム管理ツールを構築できるようになるでしょう。
 
 ---
 

@@ -23,7 +23,7 @@ description: 'C++とggmlを用いて、TinyLLaMAのような小規模AIモデル
 AIの学習段階においては、柔軟性と豊富なエコシステムを持つPythonが圧倒的に有利です。しかし、デプロイや「推論（Inference）」のフェーズにおいては、以下の理由からC++が強力な選択肢となります。
 
 1. **オーバーヘッドの削減**: Pythonのグローバルインタプリタロック（GIL）やランタイムのオーバーヘッドを完全に排除できます。
-2. **メモリ効率とアリーナアロケーション**: メモリの確保と解放をマニュアルで制御できるため、ガベージコレクションによる予測不能なスパイクを防げます。
+2. **メモリ効率とアリーナアロケーション**: メモリの確保と解放をマニュアルで制御できるため、[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)による予測不能なスパイクを防げます。
 3. **ハードウェアへの直接アクセス**: AVX-512、AVX2、ARM NEONなどのSIMD組み込み関数（Intrinsics）を直接呼び出し、CPUの演算能力を極限まで引き出せます。
 4. **依存関係の排除**: ggmlは依存関係ゼロ（Zero dependencies）のC/C++ライブラリであり、コンパイラさえあればWindows上のMSVC環境でも容易にビルド可能です。
 
@@ -133,7 +133,7 @@ $$ \text{Swish}(z) = z \cdot \sigma(z) = z \cdot \frac{1}{1 + e^{-z}} $$
 
 ---
 
-## 5. ggmlによる計算グラフの構築とメモリ管理
+## 5. ggmlによる計算グラフの構築と[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)
 
 ggmlは、推論のための静的な計算グラフを構築し、それを後から評価（evaluate）する「Define-and-Run」のアプローチを取ります。
 

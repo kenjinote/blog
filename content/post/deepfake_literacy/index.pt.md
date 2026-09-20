@@ -120,7 +120,7 @@ Esta irregularidade no domínio da frequência ocorre porque, embora a IA possa 
 
 # 3. Deteção através de Sinais Biométricos: Verificando a "Pulsação da Vida" usando rPPG
 
-Além das técnicas de deteção de imagens (estáticas), uma abordagem revolucionária para detetar deepfakes em vídeos é a **extração de sinais biométricos (Biological Signals)**.
+Além das técnicas de deteção de imagens (estáticas), uma abordagem revolucionária para detetar deepfakes em vídeos é a **extração de sinais biométricos (Biological [Signals](https://kenji.blog/pt/p/state-management-history-future/))**.
 
 Enquanto os seres humanos estão vivos, o sangue circula nos seus corpos em sincronia com as batidas do coração. Como a hemoglobina no sangue absorve muito bem certos comprimentos de onda de luz (especificamente a luz verde, em torno de 530 nm), a cor da pele facial muda ligeiramente (a um nível invisível aos olhos humanos) a cada batimento cardíaco. A tecnologia que utiliza este princípio para estimar a frequência cardíaca remotamente a partir de imagens normais de câmaras RGB é denominada **rPPG (Fotopletismografia Remota, do inglês remote Photoplethysmography)**.
 

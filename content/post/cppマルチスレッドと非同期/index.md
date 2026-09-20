@@ -9,9 +9,9 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Multithreading", "Async", "Modern C++"]
 ---
 
-現代のソフトウェア開発において、マルチコアCPUのパフォーマンスを最大限に引き出すためには、マルチスレッドプログラミングが不可欠です。C++はC++11から標準ライブラリとしてマルチスレッドおよび非同期処理のAPI（`<thread>`, `<mutex>`, `<condition_variable>`, `<future>`）を導入し、プラットフォーム依存のコード（POSIXスレッドやWindows APIなど）を書くことなく、ポータブルで安全な並行処理を実装できるようになりました。さらに、C++14、C++17、C++20とバージョンアップを重ねるごとに、`std::scoped_lock` や `std::jthread` といったより安全で高度な機能が追加されています。
+現代のソフトウェア開発において、マルチコアCPUのパフォーマンスを最大限に引き出すためには、マルチスレッドプログラミングが不可欠です。C++はC++11から標準ライブラリとしてマルチスレッドおよび[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)のAPI（`<thread>`, `<mutex>`, `<condition_variable>`, `<future>`）を導入し、プラットフォーム依存のコード（POSIXスレッドやWindows APIなど）を書くことなく、ポータブルで安全な並行処理を実装できるようになりました。さらに、C++14、C++17、C++20とバージョンアップを重ねるごとに、`std::scoped_lock` や `std::jthread` といったより安全で高度な機能が追加されています。
 
-本記事では、C++のマルチスレッドプログラミングの基礎から、データ競合を防ぐための同期機構、そして現代的な非同期処理（`std::async`）やスレッドプールの概念までを、詳細なコード例とともに徹底的に解説します。
+本記事では、C++のマルチスレッドプログラミングの基礎から、データ競合を防ぐための同期機構、そして現代的な[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)（`std::async`）やスレッドプールの概念までを、詳細なコード例とともに徹底的に解説します。
 
 ---
 
@@ -218,9 +218,9 @@ int main() {
 
 ---
 
-## 5. 抽象度の高い非同期処理：`std::future`, `std::promise`, `std::async`
+## 5. 抽象度の高い[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)：`std::future`, `std::promise`, `std::async`
 
-ここまでの `std::thread` や `std::mutex` は強力ですが、OSの低レベルなスレッド機構をそのままC++に持ち込んだものであり、結果の取得や例外の伝播を扱うにはコードが煩雑になりがちです。戻り値を持つ並行処理や、より高レベルな非同期処理を行いたい場合は、`<future>` ヘッダの機能を使用します。
+ここまでの `std::thread` や `std::mutex` は強力ですが、OSの低レベルなスレッド機構をそのままC++に持ち込んだものであり、結果の取得や例外の伝播を扱うにはコードが煩雑になりがちです。戻り値を持つ並行処理や、より高レベルな[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)を行いたい場合は、`<future>` ヘッダの機能を使用します。
 
 ### `std::promise` と `std::future`
 

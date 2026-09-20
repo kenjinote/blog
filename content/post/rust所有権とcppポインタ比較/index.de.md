@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Ein umfassender Vergleich von C++ Zeigern und Rusts Ownership- und Borrowing-Modell. Von rohen Zeigern und Smart Pointern bis hin zum Borrow Checker wird das Wesen der Speichersicherheit erklärt.'
 ---
 
-In der modernen Systemprogrammierung ist die Vereinbarkeit von Leistung und Speichersicherheit eine ständige Herausforderung. C++ war lange Zeit der unangefochtene König in diesem Bereich, aber in den letzten Jahren hat Rust begonnen, diese Position zu bedrohen. Das größte Merkmal von Rust ist die Garantie der Speichersicherheit zur Kompilierzeit ohne Garbage Collection (GC), was durch die Konzepte von "Ownership" (Eigentum) und "Borrowing" (Ausleihen) erreicht wird.
+In der modernen Systemprogrammierung ist die Vereinbarkeit von Leistung und Speichersicherheit eine ständige Herausforderung. C++ war lange Zeit der unangefochtene König in diesem Bereich, aber in den letzten Jahren hat Rust begonnen, diese Position zu bedrohen. Das größte Merkmal von Rust ist die Garantie der Speichersicherheit zur Kompilierzeit ohne [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC), was durch die Konzepte von "Ownership" (Eigentum) und "Borrowing" (Ausleihen) erreicht wird.
 
-In diesem Artikel werden wir C++ Zeiger (rohe Zeiger, `std::unique_ptr`, `std::shared_ptr`) und das Rust-Ownership-Modell detailliert vergleichen. Wir werden anhand von Codebeispielen und Diagrammen ausführlich erklären, wie der Rust-Compiler (Borrow Checker) Use-After-Free (Verwendung nach Freigabe) und Datenrennen (Data Races) verhindert.
+In diesem Artikel werden wir C++ Zeiger (rohe Zeiger, `std::unique_ptr`, `std::shared_ptr`) und das Rust-Ownership-Modell detailliert vergleichen. Wir werden anhand von Codebeispielen und Diagrammen ausführlich erklären, wie der Rust-Compiler ([Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)) Use-After-Free (Verwendung nach Freigabe) und Datenrennen (Data Races) verhindert.
 
 ## 1. Grundlagen der Speicherverwaltung: Stack und Heap
 
@@ -26,7 +26,7 @@ Dies ist der Bereich, in dem lokale Variablen bei Funktionsaufrufen abgelegt wer
 
 Hier werden Daten platziert, deren Größe zur Laufzeit dynamisch bestimmt wird, oder Daten, die über den Gültigkeitsbereich einer Funktion hinaus existieren müssen. Auf sie wird über Zeiger (oder Referenzen) zugegriffen.
 
-In C++ und Rust, die keine Garbage Collection haben, kann der Verwaltungsaufwand für den Heapspeicher als Formel wie folgt modelliert werden. Wenn die Gesamtzahl der Objekte $N$ ist, die durchschnittliche Zeit für die Allokation $T_{alloc}$ und die durchschnittliche Zeit für die Deallokation $T_{dealloc}$ ist, dann ist der Gesamtaufwand für die Speicherverwaltung $C_{memory}$:
+In C++ und Rust, die keine [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) haben, kann der Verwaltungsaufwand für den Heapspeicher als Formel wie folgt modelliert werden. Wenn die Gesamtzahl der Objekte $N$ ist, die durchschnittliche Zeit für die Allokation $T_{alloc}$ und die durchschnittliche Zeit für die Deallokation $T_{dealloc}$ ist, dann ist der Gesamtaufwand für die Speicherverwaltung $C_{memory}$:
 
 $$ C_{memory} = \sum_{i=1}^{N} (T_{alloc, i} + T_{dealloc, i}) + O_{sync} $$
 
@@ -140,7 +140,7 @@ In Rust gibt es zwei Arten von Borrowing:
 - **Unveränderliche Referenz (Immutable Reference)**: `&T` (ähnlich wie `const T&` in C++)
 - **Veränderliche Referenz (Mutable Reference)**: `&mut T` (ähnlich wie `T&` in C++)
 
-### Die unerbittlichen Regeln des Borrow Checkers
+### Die unerbittlichen Regeln des [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)s
 
 Der Rust-Compiler enthält einen "Borrow Checker", der die Gültigkeit von Referenzen überprüft. Der Borrow Checker erzwingt die folgenden strengen Regeln:
 
@@ -169,7 +169,7 @@ fn main() {
 
 ## 5. Verhinderung der Iterator-Ungültigmachung (Iterator Invalidation)
 
-Als konkretes Beispiel, bei dem die Leistungsfähigkeit des Borrow Checkers am deutlichsten wird, betrachten wir den klassischen Bug der "Iterator-Ungültigmachung".
+Als konkretes Beispiel, bei dem die Leistungsfähigkeit des [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)s am deutlichsten wird, betrachten wir den klassischen Bug der "Iterator-Ungültigmachung".
 
 ### Iterator-Ungültigmachung in C++ (Laufzeitabsturz)
 
@@ -279,7 +279,7 @@ Zeiger und Smart Pointer in C++ bieten Entwicklern ein hohes Maß an Kontrolle u
 
 Auf der anderen Seite erkennt Rust diese Fehler zur **Kompilierzeit** anstatt zur Laufzeit, indem es die Regeln von "Ownership" und "Borrowing" in den Compiler integriert. Die starke Garantie, dass "wenn es kompiliert, speichersicher ist", ist der Hauptgrund, warum Rust in der Systemprogrammierung schnell an Popularität gewinnt.
 
-Der Kampf mit dem Borrow Checker von Rust ("Fighting the borrow checker") ist für Anfänger eine große Hürde, aber letztendlich übernimmt der Compiler nur streng die komplexe Berechnung der "Verfolgung der Lebensdauer von Zeigern", die C++ Programmierer ursprünglich in ihren Köpfen durchführten.
+Der Kampf mit dem [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/) von Rust ("Fighting the borrow checker") ist für Anfänger eine große Hürde, aber letztendlich übernimmt der Compiler nur streng die komplexe Berechnung der "Verfolgung der Lebensdauer von Zeigern", die C++ Programmierer ursprünglich in ihren Köpfen durchführten.
 
 Wenn man Rust lernt, nachdem man die Freiheit und die Gefahren von C++ Zeigern verstanden hat, wird man die Philosophie hinter dem Ownership-Modell und das "Warum es so entworfen wurde" tiefgründiger verstehen können.
 

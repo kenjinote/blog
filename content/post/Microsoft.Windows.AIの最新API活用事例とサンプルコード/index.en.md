@@ -294,7 +294,7 @@ int main() {
 }
 ```
 
-### 6.1 The Importance of Memory Management and Zero-Copy Inference in C++
+### 6.1 The Importance of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and Zero-Copy Inference in C++
 The greatest advantage of using DirectML in C++ is that tight integration with DirectX 12 (DX12) is possible. The above code includes standard data copying from CPU memory for educational purposes, but in actual game engines and video processing applications, there are many cases where images (textures) are already held in the GPU or NPU memory space using DX12.
 
 In this case, by utilizing the advanced binding features of `OrtDmlApi`, you can achieve "**Zero-Copy Inference**", which directly maps DX12 resources as ONNX Runtime tensors. By doing this, the data transfer overhead across the PCIe bus (consumption of the aforementioned bandwidth $BW$) completely vanishes, dramatically improving the frame rate in real-time video processing.

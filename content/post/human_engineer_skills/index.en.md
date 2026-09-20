@@ -131,10 +131,10 @@ Since partitions are unavoidable in real-world networks, engineers must make sev
 
 While AI can write "code that prioritizes C" or "code that prioritizes A", it cannot autonomously make the decision of "which should be prioritized," a decision that involves business risks.
 
-### 4.2 Asynchronous Communication and Eventual Consistency
+### 4.2 [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Communication and Eventual Consistency
 
 As systems scale up, inter-service coordination transitions from synchronous communication via REST APIs to asynchronous communication using message queues (such as Kafka or RabbitMQ). Here, data consistency shifts from immediate consistency to "Eventual Consistency."
-At what point should advanced architectural patterns like the Saga pattern or CQRS (Command Query Responsibility Segregation) be introduced? Making these complex decisions and drawing the blueprint for the entire system is exactly where the true worth of a senior engineer shines.
+At what point should advanced architectural patterns like the Saga pattern or [CQRS](https://kenji.blog/en/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) be introduced? Making these complex decisions and drawing the blueprint for the entire system is exactly where the true worth of a senior engineer shines.
 
 ```mermaid
 flowchart LR

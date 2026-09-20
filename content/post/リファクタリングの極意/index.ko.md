@@ -83,7 +83,7 @@ flowchart TD
 
 ---
 
-## 4. 강결합의 타파: 의존성 주입 (Dependency Injection)
+## 4. 강결합의 타파: 의존성 주입 ([Dependency Injection](https://kenji.blog/ko/p/design-patterns-modern-practices/))
 
 의존성 주입(DI: Dependency Injection)은 객체의 생성 책임을 클래스 내부에서 외부로 떼어내기 위한 강력한 패턴입니다.
 

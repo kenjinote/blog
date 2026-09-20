@@ -138,7 +138,7 @@ sequenceDiagram
 - **不可變參考（Immutable Reference）**: `&T` （類似於C++的 `const T&`）
 - **可變參考（Mutable Reference）**: `&mut T` （類似於C++的 `T&`）
 
-### 借用檢查器（Borrow Checker）的冷酷鐵律
+### 借用檢查器（[Borrow Checker](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）的冷酷鐵律
 
 Rust的編譯器內建了驗證參考正確性的「借用檢查器」。借用檢查器會強制執行以下嚴格的規則。
 

@@ -307,7 +307,7 @@ export class UserController {
 }
 ```
 
-### 6.4. Hauptkomponente (Dependency Injection: DI)
+### 6.4. Hauptkomponente ([Dependency Injection](https://kenji.blog/de/p/design-patterns-modern-practices/): DI)
 
 Beim Starten der Anwendung werden alle Abhängigkeiten konstruiert (Wiring). Dies wird als Composition Root bezeichnet.
 

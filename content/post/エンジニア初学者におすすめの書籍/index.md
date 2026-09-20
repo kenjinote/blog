@@ -38,6 +38,6 @@ description: 'プログラミング初心者から中級者へステップアッ
 ![img_2.png](img_2.webp)
 14. Being Geek
 ![img_1.png](img_1.webp)
-15. オブジェクト指向でなぜつくるのか
+15. [オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)でなぜつくるのか
 ![img_16.png](img_16.webp)
 

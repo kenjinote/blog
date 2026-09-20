@@ -227,7 +227,7 @@ As a countermeasure, we use a technique where we **"always run inference includi
 
 ---
 
-## 7. Memory Management and Optimization for Edge Devices
+## 7. [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and Optimization for Edge Devices
 
 Let's delve deeper into performance and memory efficiency, which are the greatest advantages of `whisper.cpp`.
 

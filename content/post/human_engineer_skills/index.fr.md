@@ -135,7 +135,7 @@ L'IA peut écrire "du code qui privilégie C" ou "du code qui privilégie A", ma
 ### 4.2 Communication asynchrone et cohérence à terme (Eventual Consistency)
 
 À mesure que les systèmes se développent, la communication entre les services passe d'une communication synchrone via des API REST à une communication asynchrone à l'aide de files d'attente de messages (Kafka, RabbitMQ, etc.). Ici, la cohérence des données passe d'une cohérence immédiate à une "cohérence à terme (Eventual Consistency)".
-À quel moment faut-il introduire des modèles d'architecture avancés tels que le modèle Saga ou CQRS (Command Query Responsibility Segregation) ? Prendre ces décisions complexes et dessiner le plan directeur de l'ensemble du système est précisément la véritable valeur d'un ingénieur senior.
+À quel moment faut-il introduire des modèles d'architecture avancés tels que le modèle Saga ou [CQRS](https://kenji.blog/fr/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) ? Prendre ces décisions complexes et dessiner le plan directeur de l'ensemble du système est précisément la véritable valeur d'un ingénieur senior.
 
 ```mermaid
 flowchart LR

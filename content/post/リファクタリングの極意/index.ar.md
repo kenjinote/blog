@@ -83,7 +83,7 @@ flowchart TD
 
 ---
 
-## 4. كسر الاقتران الوثيق: حقن التبعية (Dependency Injection)
+## 4. كسر الاقتران الوثيق: حقن التبعية ([Dependency Injection](https://kenji.blog/ar/p/design-patterns-modern-practices/))
 
 حقن التبعية (DI: Dependency Injection) هو نمط قوي لنزع مسؤولية إنشاء الكائنات من داخل الفئة إلى الخارج.
 

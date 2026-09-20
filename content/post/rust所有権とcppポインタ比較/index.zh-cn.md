@@ -138,7 +138,7 @@ Rust中的借用分为两种：
 - **不可变引用（Immutable Reference）**: `&T` （类似于C++的 `const T&`）
 - **可变引用（Mutable Reference）**: `&mut T` （类似于C++的 `T&`）
 
-### 借用检查器（Borrow Checker）的冷酷法则
+### 借用检查器（[Borrow Checker](https://kenji.blog/zh-cn/p/memory-management-garbage-collection/)）的冷酷法则
 
 Rust编译器内置了“借用检查器”来验证引用的有效性。借用检查器强制执行以下严格规则：
 

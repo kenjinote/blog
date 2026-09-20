@@ -180,7 +180,7 @@ Zettelkasten 主要有三種筆記：
 2. **Literature Notes（文獻筆記）** ：閱讀文章或書籍後，用自己的話語總結的內容。
 3. **Permanent Notes（永久筆記）** ：針對一個主題寫下完整考察的筆記。這些將直接成為部落格文章的種子。
 
-透過使用 Obsidian 的反向連結功能（`[[筆記名稱]]`），例如可以將「Rust 的所有權」與「垃圾回收 (Garbage Collection) 的歷史」這兩篇筆記連結起來，進而發現出乎意料的點子關聯。
+透過使用 Obsidian 的反向連結功能（`[[筆記名稱]]`），例如可以將「Rust 的所有權」與「垃圾回收 ([Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)) 的歷史」這兩篇筆記連結起來，進而發現出乎意料的點子關聯。
 
 ## 5. 利用向量資料庫（Pinecone）與 OpenAI Embeddings 進行語意搜尋
 

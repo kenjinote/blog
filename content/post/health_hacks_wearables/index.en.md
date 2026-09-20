@@ -52,7 +52,7 @@ Here,
 
 For engineers, if the HRV (RMSSD) upon waking up in the morning is significantly lower than their personal baseline (the moving average of the past few weeks), they can make a data-driven decision: "Today should be a day to avoid high cognitive load architecture design or deploying to the production environment, and instead focus on expanding test codes or writing documentation".
 
-### 3.2 RHR (Resting Heart Rate) and Recovery Signals
+### 3.2 RHR (Resting Heart Rate) and Recovery [Signals](https://kenji.blog/en/p/state-management-history-future/)
 RHR is the number of heartbeats per minute when the body is in a state of complete rest (usually during sleep). When the body is allocating energy to internal metabolism or immune responses, such as after drinking alcohol, late-night overeating, or early symptoms of illness (e.g., infections), RHR rises several to over ten bpm above the baseline.
 
 A lower RHR means that the heart muscle can pump more blood with a single beat (higher stroke volume), indicating high aerobic capacity and the degree of recovery from fatigue. Ideally, a "hammock-shaped" curve where the RHR reaches its lowest value in the first half of sleep indicates the highest quality of recovery.

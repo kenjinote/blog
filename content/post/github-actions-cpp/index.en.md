@@ -25,7 +25,7 @@ When introducing CI/CD into a C++ project, the main challenges faced are as foll
 2. **Compiler Differences**: Major compilers like Microsoft Visual C++ (MSVC), GNU Compiler Collection (GCC), and Clang differ in their implementation levels and interpretations of C++ standards (C++17, C++20, C++23), as well as the strictness of their warnings.
 3. **Build Time**: For large-scale C++ projects, it is not uncommon for builds to take anywhere from tens of minutes to several hours. In a CI environment with limited computing resources, caching strategies and parallelization are required to build efficiently.
 4. **Dependency Management**: C++ lacks an absolute standard package manager like npm or pip. You need to correctly resolve libraries in the CI environment every time using tools like vcpkg, Conan, or CMake's `FetchContent`.
-5. **Memory Management and Undefined Behavior**: Since pointer operations and manual memory management are involved, it is necessary to automate the detection of memory leaks and undefined behaviors, not just test the logic.
+5. **[Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and Undefined Behavior**: Since pointer operations and manual memory management are involved, it is necessary to automate the detection of memory leaks and undefined behaviors, not just test the logic.
 
 To solve these challenges, GitHub Actions is the optimal solution, as it allows you to provision various OS virtual machines on-demand and define complex workflows as code (Configuration as Code).
 

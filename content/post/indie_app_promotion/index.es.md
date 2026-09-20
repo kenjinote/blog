@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-Por ejemplo, al final de un artículo titulado "Cómo reducir el código boilerplate de Redux", colocarías un CTA contextualizado como: "Si estás luchando con la complejidad de la gestión de estados, prueba 'StateViewer', una nueva herramienta de visualización de gestión de estados que he desarrollado".
+Por ejemplo, al final de un artículo titulado "Cómo reducir el código boilerplate de [Redux](https://kenji.blog/es/p/state-management-history-future/)", colocarías un CTA contextualizado como: "Si estás luchando con la complejidad de la gestión de estados, prueba 'StateViewer', una nueva herramienta de visualización de gestión de estados que he desarrollado".
 
 ### 2.2 Modelo matemático de la tasa de conversión
 

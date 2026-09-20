@@ -10,9 +10,9 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "Une comparaison approfondie entre les pointeurs C++ et le modèle de possession et d'emprunt de Rust. Des pointeurs bruts et pointeurs intelligents jusqu'au vérificateur d'emprunts, nous expliquons l'essence de la sécurité de la mémoire."
 ---
 
-Dans la programmation système moderne, concilier performances et sécurité de la mémoire est un défi éternel. C++ règne en maître dans ce domaine depuis de nombreuses années, mais Rust menace récemment cette position. La principale caractéristique de Rust réside dans les concepts de « Possession » (Ownership) et d'« Emprunt » (Borrowing), qui garantissent la sécurité de la mémoire à la compilation sans avoir recours à un ramasse-miettes (Garbage Collection - GC).
+Dans la programmation système moderne, concilier performances et sécurité de la mémoire est un défi éternel. C++ règne en maître dans ce domaine depuis de nombreuses années, mais Rust menace récemment cette position. La principale caractéristique de Rust réside dans les concepts de « Possession » (Ownership) et d'« Emprunt » (Borrowing), qui garantissent la sécurité de la mémoire à la compilation sans avoir recours à un ramasse-miettes ([Garbage Collection](https://kenji.blog/fr/p/memory-management-garbage-collection/) - GC).
 
-Dans cet article, nous comparerons en détail les pointeurs C++ (pointeurs bruts, `std::unique_ptr`, `std::shared_ptr`) avec le modèle de possession de Rust, et nous expliquerons de manière approfondie comment le compilateur de Rust (le Borrow Checker ou vérificateur d'emprunts) prévient les problèmes de type Use-After-Free (utilisation après libération) et de Data Race (accès concurrent aux données), à l'aide d'exemples de code et de diagrammes.
+Dans cet article, nous comparerons en détail les pointeurs C++ (pointeurs bruts, `std::unique_ptr`, `std::shared_ptr`) avec le modèle de possession de Rust, et nous expliquerons de manière approfondie comment le compilateur de Rust (le [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/) ou vérificateur d'emprunts) prévient les problèmes de type Use-After-Free (utilisation après libération) et de Data Race (accès concurrent aux données), à l'aide d'exemples de code et de diagrammes.
 
 ## 1. Les bases de la gestion de la mémoire : Pile (Stack) et Tas (Heap)
 
@@ -138,7 +138,7 @@ Il existe deux types d'emprunt en Rust :
 - **Référence immuable (Immutable Reference)** : `&T` (Proche de `const T&` en C++)
 - **Référence mutable (Mutable Reference)** : `&mut T` (Proche de `T&` en C++)
 
-### La règle impitoyable du Borrow Checker
+### La règle impitoyable du [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/)
 
 Le compilateur de Rust intègre un « Borrow Checker » qui vérifie la validité des références. Le Borrow Checker impose la règle stricte suivante :
 
@@ -167,7 +167,7 @@ fn main() {
 
 ## 5. Prévention de l'invalidation d'itérateur (Iterator Invalidation)
 
-Pour illustrer concrètement la puissance du Borrow Checker, examinons un bug classique appelé « invalidation d'itérateur ».
+Pour illustrer concrètement la puissance du [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/), examinons un bug classique appelé « invalidation d'itérateur ».
 
 ### Invalidation d'itérateur en C++ (Plantage à l'exécution)
 
@@ -277,7 +277,7 @@ Les pointeurs C++ et les pointeurs intelligents offrent aux développeurs un con
 
 D'un autre côté, Rust intègre les règles de possession (Ownership) et d'emprunt (Borrowing) au compilateur, ce qui permet de détecter ces erreurs au moment de la **compilation** plutôt qu'à l'exécution. La garantie forte qui dit que « si cela compile, c'est que la mémoire est sûre » est la principale raison pour laquelle Rust gagne rapidement le soutien du monde de la programmation système.
 
-Le fait de lutter contre le Borrow Checker de Rust (Fight the borrow checker) représente un mur important pour les débutants, mais ce n'est rien de plus que le compilateur effectuant strictement à votre place le calcul complexe du « suivi de la durée de vie des pointeurs » que les programmeurs C++ faisaient traditionnellement dans leur tête.
+Le fait de lutter contre le [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/) de Rust (Fight the borrow checker) représente un mur important pour les débutants, mais ce n'est rien de plus que le compilateur effectuant strictement à votre place le calcul complexe du « suivi de la durée de vie des pointeurs » que les programmeurs C++ faisaient traditionnellement dans leur tête.
 
 Si vous apprenez Rust après avoir compris la liberté et les dangers des pointeurs C++, vous pourrez comprendre bien plus en profondeur la philosophie qui se cache derrière la conception du modèle de possession, à savoir « pourquoi cela a-t-il été conçu ainsi ? ».
 

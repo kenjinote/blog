@@ -38,5 +38,5 @@ description: 'للمهندسين الذين يرغبون في الانتقال �
 ![img_2.png](img_2.webp)
 14. Being Geek
 ![img_1.png](img_1.webp)
-15. لماذا نبني بالبرمجة كائنية التوجه (Object-Oriented)
+15. لماذا نبني بالبرمجة كائنية التوجه ([Object-Oriented](https://kenji.blog/ar/p/oop-vs-fp-vs-dop/))
 ![img_16.png](img_16.webp)

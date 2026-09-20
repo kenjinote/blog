@@ -120,7 +120,7 @@ Esta falta de naturalidad en el dominio de la frecuencia ocurre porque, aunque l
 
 # 3. Detección de señales biológicas: Confirmando el "latido de la vida" mediante rPPG
 
-Además de las tecnologías de detección de imágenes (imágenes fijas), un enfoque revolucionario para la detección de deepfakes en videos es la **extracción de señales biológicas (Biological Signals)**.
+Además de las tecnologías de detección de imágenes (imágenes fijas), un enfoque revolucionario para la detección de deepfakes en videos es la **extracción de señales biológicas (Biological [Signals](https://kenji.blog/es/p/state-management-history-future/))**.
 
 Mientras un humano esté vivo, la sangre circula por el cuerpo al ritmo de los latidos del corazón. Dado que la hemoglobina en la sangre absorbe fuertemente longitudes de onda específicas (especialmente la luz verde, de unos 530 nm), el color de la piel de la cara cambia de manera minúscula (a un nivel invisible para el ojo humano) en sincronía con el ritmo cardíaco. La tecnología que utiliza este principio para estimar la frecuencia cardíaca sin contacto a partir de un video de cámara RGB normal se denomina **rPPG (Fotopletismografía Remota, remote Photoplethysmography)**.
 

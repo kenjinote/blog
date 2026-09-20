@@ -83,7 +83,7 @@ flowchart TD
 
 ---
 
-## 4. 打破紧密耦合：依赖注入 (Dependency Injection)
+## 4. 打破紧密耦合：依赖注入 ([Dependency Injection](https://kenji.blog/zh-cn/p/design-patterns-modern-practices/))
 
 依赖注入 (DI: Dependency Injection) 是一种强大的模式，用于将对象的创建责任从类内部剥离到外部。
 

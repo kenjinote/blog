@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-예를 들어, 'Redux의 보일러플레이트를 줄이는 방법'이라는 기사의 마지막에, '만약 상태 관리의 복잡성으로 고민하고 있다면, 제가 개발한 새로운 상태 관리 시각화 도구인 「StateViewer」를 사용해 보세요'라는 문맥에 맞는 CTA를 배치합니다.
+예를 들어, '[Redux](https://kenji.blog/ko/p/state-management-history-future/)의 보일러플레이트를 줄이는 방법'이라는 기사의 마지막에, '만약 상태 관리의 복잡성으로 고민하고 있다면, 제가 개발한 새로운 상태 관리 시각화 도구인 「StateViewer」를 사용해 보세요'라는 문맥에 맞는 CTA를 배치합니다.
 
 ### 2.2 컨버전율의 수리 모델
 

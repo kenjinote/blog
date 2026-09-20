@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introducción: La filosofía subyacente de la programación funcional
 
-En el desarrollo de software moderno, la **programación funcional** (Functional Programming) ya no es un enfoque para unos pocos entusiastas, sino que se ha convertido en un paradigma ampliamente adoptado. Desde tecnologías frontend como React, hasta Rust y Scala, e incluso en lenguajes orientados a objetos como Java y C#, se han incorporado conceptos como el tratamiento de funciones como objetos de primera clase y la eliminación de efectos secundarios.
+En el desarrollo de software moderno, la **programación funcional** ([Functional Programming](https://kenji.blog/es/p/oop-vs-fp-vs-dop/)) ya no es un enfoque para unos pocos entusiastas, sino que se ha convertido en un paradigma ampliamente adoptado. Desde tecnologías frontend como React, hasta Rust y Scala, e incluso en lenguajes orientados a objetos como Java y C#, se han incorporado conceptos como el tratamiento de funciones como objetos de primera clase y la eliminación de efectos secundarios.
 
 Sin embargo, detrás de este paradigma existe una profunda teoría matemática construida en la década de 1930, antes del nacimiento físico de los ordenadores. Se trata del **cálculo lambda** ( $\lambda$-calculus ) propuesto por Alonzo Church.
 

@@ -155,7 +155,7 @@ Saat menggunakan GoogleTest, ada 2 jenis macro assertion, yaitu `EXPECT_*` dan `
 - **`EXPECT_EQ(expected, actual)`**: Meskipun tes gagal, eksekusi fungsi tes saat ini akan **dilanjutkan**. Hal ini cocok ketika Anda ingin memverifikasi beberapa kondisi/status di dalam satu tes.
 - **`ASSERT_EQ(expected, actual)`**: Jika tes gagal, eksekusi fungsi tes saat ini akan **dihentikan (kegagalan fatal)** saat itu juga. Hal ini digunakan jika verifikasi selanjutnya tidak akan bermakna (Contoh: Melakukan dereference segera setelah memastikan bahwa pointer bukan `nullptr`).
 
-## 5. Dependency Injection (DI) dan Mocking dengan GoogleMock
+## 5. [Dependency Injection](https://kenji.blog/id/p/design-patterns-modern-practices/) (DI) dan Mocking dengan GoogleMock
 
 Dalam proyek C++ yang sesungguhnya, dependensi pada sistem eksternal seperti akses database, komunikasi jaringan (network), dan kontrol perangkat keras pasti akan terjadi. Jika dependensi ini dibiarkan begitu saja, unit testing akan menjadi sangat sulit.
 
@@ -324,7 +324,7 @@ Menerapkan TDD di kemudian hari pada kode monolitik besar yang sudah ada, sangat
 
 ## 8. TDD sebagai Desain Perangkat Lunak
 
-Selain sebagai jaring pengaman untuk mempertahankan kualitas kode, TDD juga bertindak sebagai pendorong (driver) untuk meningkatkan desain kode C++. Karena untuk menulis tes, Dependency Injection (DI) akan "dipaksakan", yang mengakibatkan Coupling (tingkat ketergantungan) antarkelas menurun, dan Cohesion (kepaduan) meningkat.
+Selain sebagai jaring pengaman untuk mempertahankan kualitas kode, TDD juga bertindak sebagai pendorong (driver) untuk meningkatkan desain kode C++. Karena untuk menulis tes, [Dependency Injection](https://kenji.blog/id/p/design-patterns-modern-practices/) (DI) akan "dipaksakan", yang mengakibatkan Coupling (tingkat ketergantungan) antarkelas menurun, dan Cohesion (kepaduan) meningkat.
 
 Selama tahap refactoring, penting juga untuk menyadari tentang Cyclomatic Complexity (McCabe's Cyclomatic Complexity).
 

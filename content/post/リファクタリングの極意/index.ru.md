@@ -83,7 +83,7 @@ flowchart TD
 
 ---
 
-## 4. Разрушение сильной связности: Внедрение зависимостей (Dependency Injection)
+## 4. Разрушение сильной связности: Внедрение зависимостей ([Dependency Injection](https://kenji.blog/ru/p/design-patterns-modern-practices/))
 
 Внедрение зависимостей (DI: Dependency Injection) — это мощный паттерн для переноса ответственности за создание объектов изнутри класса наружу.
 

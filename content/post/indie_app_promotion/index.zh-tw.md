@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-例如，在「如何減少 Redux 樣板程式碼」這篇文章的最後，放置一個符合脈絡的 CTA：「如果您正為狀態管理的複雜性所苦，不妨試試我開發的全新狀態管理視覺化工具『StateViewer』。」
+例如，在「如何減少 [Redux](https://kenji.blog/zh-tw/p/state-management-history-future/) 樣板程式碼」這篇文章的最後，放置一個符合脈絡的 CTA：「如果您正為狀態管理的複雜性所苦，不妨試試我開發的全新狀態管理視覺化工具『StateViewer』。」
 
 ### 2.2 轉換率的數學模型
 

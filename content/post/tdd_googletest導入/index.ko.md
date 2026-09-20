@@ -159,7 +159,7 @@ GoogleTest를 사용할 때, 어서션 매크로로 `EXPECT_*`와 `ASSERT_*` 2�
 
 실제 C++ 프로젝트에서는 데이터베이스 접근, 네트워크 통신, 하드웨어 제어 등 외부 시스템에 대한 의존이 반드시 발생합니다. 이러한 의존 관계를 그대로 두면 단위 테스트가 매우 곤란해집니다.
 
-그래서 등장하는 것이 **의존성 주입(Dependency Injection: DI)** 과 **GoogleMock** 을 사용한 인터페이스의 모의화입니다.
+그래서 등장하는 것이 **의존성 주입([Dependency Injection](https://kenji.blog/ko/p/design-patterns-modern-practices/): DI)** 과 **GoogleMock** 을 사용한 인터페이스의 모의화입니다.
 
 ```mermaid
 flowchart LR

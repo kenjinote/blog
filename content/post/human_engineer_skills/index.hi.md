@@ -132,10 +132,10 @@ $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 
 AI "C को प्राथमिकता देने वाला कोड" या "A को प्राथमिकता देने वाला कोड" लिख सकता है, लेकिन वह अपने-आप यह तय नहीं कर सकता कि "किसे प्राथमिकता देनी चाहिए", क्योंकि इस फैसले में व्यावसायिक जोखिम (business risk) शामिल होता है।
 
-### 4.2 असिंक्रोनस कम्युनिकेशन (Asynchronous Communication) और इवेंचुअल कंसिस्टेंसी (Eventual Consistency)
+### 4.2 असिंक्रोनस कम्युनिकेशन ([Asynchronous](https://kenji.blog/hi/p/event-driven-architecture-async/) Communication) और इवेंचुअल कंसिस्टेंसी (Eventual Consistency)
 
 जब सिस्टम बड़े हो जाते हैं, तो सेवाओं के बीच संपर्क (communication) REST API के ज़रिए होने वाले सिंक्रोनस संचार से हटकर, मैसेज क्यू (जैसे Kafka, RabbitMQ) का उपयोग करने वाले असिंक्रोनस संचार (asynchronous communication) में बदल जाता है। ऐसे में, डेटा की एकरूपता तुरंत (immediate consistency) के बजाय "इवेंचुअल कंसिस्टेंसी (Eventual Consistency - अंततः एकरूपता)" में बदल जाती है।
-सागा पैटर्न (Saga Pattern) या CQRS (Command Query Responsibility Segregation) जैसे उन्नत आर्किटेक्चर पैटर्न (architecture patterns) को कब लागू करना चाहिए? ऐसे जटिल फैसले लेना और पूरे सिस्टम का ब्लूप्रिंट तैयार करना, एक अनुभवी (senior) इंजीनियर की ही असली खूबी है।
+सागा पैटर्न (Saga Pattern) या [CQRS](https://kenji.blog/hi/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) जैसे उन्नत आर्किटेक्चर पैटर्न (architecture patterns) को कब लागू करना चाहिए? ऐसे जटिल फैसले लेना और पूरे सिस्टम का ब्लूप्रिंट तैयार करना, एक अनुभवी (senior) इंजीनियर की ही असली खूबी है।
 
 ```mermaid
 flowchart LR

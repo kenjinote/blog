@@ -83,7 +83,7 @@ Haciendo pleno uso de estas, aislamos las dependencias reemplazando los módulos
 
 ---
 
-## 4. Rompiendo el fuerte acoplamiento: Inyección de dependencias (Dependency Injection)
+## 4. Rompiendo el fuerte acoplamiento: Inyección de dependencias ([Dependency Injection](https://kenji.blog/es/p/design-patterns-modern-practices/))
 
 La Inyección de Dependencias (DI) es un patrón poderoso para extraer la responsabilidad de crear objetos desde el interior de una clase hacia el exterior.
 

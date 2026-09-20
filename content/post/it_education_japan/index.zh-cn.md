@@ -92,7 +92,7 @@ $$
 
 ## 4. 内存管理与系统架构的黑盒化
 
-更深层次的问题在于，对内存管理（Memory Management）和CPU架构的理解被完全遗漏。现在的学校只教授带有垃圾回收（GC）机制的高级语言（如Python或JavaScript），学习者一生都不会意识到变量或对象被配置在物理内存（RAM）的什么地方（堆区还是栈区），它们是如何被分配以及何时、如何被释放的。
+更深层次的问题在于，对内存管理（[Memory Management](https://kenji.blog/zh-cn/p/memory-management-garbage-collection/)）和CPU架构的理解被完全遗漏。现在的学校只教授带有垃圾回收（GC）机制的高级语言（如Python或JavaScript），学习者一生都不会意识到变量或对象被配置在物理内存（RAM）的什么地方（堆区还是栈区），它们是如何被分配以及何时、如何被释放的。
 
 ```c
 // C语言中显式且直接的内存分配与指针操作示例

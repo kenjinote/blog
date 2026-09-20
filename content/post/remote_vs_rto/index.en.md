@@ -136,7 +136,7 @@ Using the SPACE framework, the light and shadow of remote work become clear. Whi
 
 ---
 
-# The Cost and Cognitive Load of Asynchronous Communication
+# The Cost and Cognitive Load of [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Communication
 
 The key to successful full remote work lies in the transition from "synchronous communication" (meetings, hallway chats) to "asynchronous communication" (documents, tickets, chats). Fully remote pioneering companies like GitLab and Automattic achieve this through a thorough documentation culture. However, over-reliance on asynchronous communication creates another kind of "cost."
 

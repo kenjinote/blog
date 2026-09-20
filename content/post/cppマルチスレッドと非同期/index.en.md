@@ -218,7 +218,7 @@ In this example, `std::condition_variable::wait` puts the thread to sleep until 
 
 ---
 
-## 5. High-level Asynchronous Processing: `std::future`, `std::promise`, `std::async`
+## 5. High-level [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Processing: `std::future`, `std::promise`, `std::async`
 
 The `std::thread` and `std::mutex` introduced so far are powerful, but they bring the OS's low-level thread mechanisms directly into C++, which often leads to verbose code when handling result retrieval and exception propagation. If you want to perform concurrent processing that returns a value or higher-level asynchronous processing, you use the features of the `<future>` header.
 

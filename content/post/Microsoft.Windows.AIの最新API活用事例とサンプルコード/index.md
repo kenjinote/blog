@@ -184,7 +184,7 @@ namespace WindowsAI.Sample
 ### 5.1 C#実装におけるアーキテクチャの解説
 このコードの核心は、`LanguageModel.CheckAvailabilityAsync()` による実行前検証と、`GenerateResponseStreamAsync` による非同期ストリーミングです。OSのバックグラウンドで動作するCopilot Runtimeは、このAPI呼び出しを受け取ると、内部的にONNX Runtimeを起動し、システムの構成に応じて最適なExecution Provider（多くの最新PCではDirectML + NPU）を選択します。
 
-開発者は、モデルのテンソル形状、トークナイザーの実装、KVキャッシュのメモリ管理などを一切意識することなく、数行のC#コードで最先端のAI推論パイプラインをアプリケーションに統合できます。
+開発者は、モデルのテンソル形状、トークナイザーの実装、KVキャッシュの[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)などを一切意識することなく、数行のC#コードで最先端のAI推論パイプラインをアプリケーションに統合できます。
 
 ## 6. 【Deep Dive 2】C++とDirectMLによるカスタムモデルの高速推論
 
@@ -294,7 +294,7 @@ int main() {
 }
 ```
 
-### 6.1 C++におけるメモリ管理とゼロコピー推論の重要性
+### 6.1 C++における[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)とゼロコピー推論の重要性
 C++でDirectMLを使用する最大の利点は、DirectX 12 (DX12) との緊密な統合が可能である点です。上記のコードは教育的観点から標準的なCPUメモリからのデータコピーを含んでいますが、実際のゲームエンジンや映像処理アプリケーションでは、DX12を用いて画像（テクスチャ）を既にGPUやNPUのメモリ空間上に保持しているケースが多々あります。
 
 この場合、`OrtDmlApi` の高度なバインディング機能を利用して、DX12のリソースを直接ONNX Runtimeのテンソルとしてマッピングする「 **ゼロコピー推論 (Zero-Copy Inference)** 」を実現できます。これにより、PCIeバス間のデータ転送オーバーヘッド（上述した帯域幅 $BW$ の消費）が完全に消失し、リアルタイム動画処理におけるフレームレートが劇的に向上します。
@@ -337,7 +337,7 @@ sequenceDiagram
     Note over ORT,NPU: "完了するまでこのループを高速で繰り返す"
 ```
 
-このシーケンス図は、UIスレッドを一切ブロックすることなく、最下層のNPUハードウェアからアプリケーションのプレゼンテーション層まで、データが流れるようにストリーミングされる非同期処理の美しさを示しています。
+このシーケンス図は、UIスレッドを一切ブロックすることなく、最下層のNPUハードウェアからアプリケーションのプレゼンテーション層まで、データが流れるようにストリーミングされる[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)の美しさを示しています。
 
 ## 8. 将来の展望とWindows AIの進化
 

@@ -180,7 +180,7 @@ Im Zettelkasten-System gibt es hauptsächlich drei Arten von Notizen:
 2. **Literatur-Notizen (Literature Notes)**: Zusammenfassungen in eigenen Worten von gelesenen Artikeln oder Büchern.
 3. **Dauerhafte Notizen (Permanent Notes)**: Abgeschlossene Überlegungen, die zu einem bestimmten Thema aufgeschrieben wurden. Diese bilden oft den direkten Keim für zukünftige Blogartikel.
 
-Durch die Nutzung der Backlink-Funktion (`[[Notizname]]`) von Obsidian kann man beispielsweise eine Notiz über "Ownership in Rust" mit einer Notiz über die "Geschichte der Garbage Collection" verknüpfen und so völlig unerwartete ideelle Zusammenhänge entdecken.
+Durch die Nutzung der Backlink-Funktion (`[[Notizname]]`) von Obsidian kann man beispielsweise eine Notiz über "Ownership in Rust" mit einer Notiz über die "Geschichte der [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/)" verknüpfen und so völlig unerwartete ideelle Zusammenhänge entdecken.
 
 ## 5. Semantische Suche mit einer Vektordatenbank (Pinecone) und OpenAI Embeddings
 

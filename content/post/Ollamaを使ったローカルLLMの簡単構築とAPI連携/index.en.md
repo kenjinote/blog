@@ -296,7 +296,7 @@ def chat_with_ollama(user_input):
 print(chat_with_ollama("Please explain the three main approaches of machine learning."))
 ```
 
-## Using Asynchronous Streaming
+## Using [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Streaming
 
 When developing web applications (FastAPI or Starlette) or Discord/Slack bots, it's important to use the asynchronous API and streaming to avoid blocking.
 

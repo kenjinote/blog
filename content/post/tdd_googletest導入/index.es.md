@@ -159,7 +159,7 @@ Al usar GoogleTest, existen dos tipos de macros de aserción: `EXPECT_*` y `ASSE
 
 En proyectos C++ reales, siempre surgen dependencias de sistemas externos, como acceso a bases de datos, comunicaciones de red o control de hardware. Si se dejan estas dependencias tal cual, las pruebas unitarias se vuelven extremadamente difíciles.
 
-Aquí es donde entra en juego la **Inyección de Dependencias (Dependency Injection: DI)** y la creación de mocks (simulaciones) para interfaces usando **GoogleMock**.
+Aquí es donde entra en juego la **Inyección de Dependencias ([Dependency Injection](https://kenji.blog/es/p/design-patterns-modern-practices/): DI)** y la creación de mocks (simulaciones) para interfaces usando **GoogleMock**.
 
 ```mermaid
 flowchart LR

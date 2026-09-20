@@ -11,7 +11,7 @@ description: 'Erklärt leicht verständlich die Hauptmerkmale der von Mozilla en
 # Eigenschaften von Rust
 
 - Eine relativ neue Open-Source-Programmiersprache, die von Mozilla entwickelt wird
-- Eine schnelle Sprache ohne Garbage Collection, die auf Systemprogrammierung spezialisiert ist
+- Eine schnelle Sprache ohne [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/), die auf Systemprogrammierung spezialisiert ist
 - Garantiert Speichersicherheit durch einzigartige Mechanismen für Besitz (ownership) und Ausleihen (borrowing) als Teil der Sprachspezifikation
 - Funktioniert plattformübergreifend
 - Besitzt standardmäßig den hervorragenden Paketmanager Cargo

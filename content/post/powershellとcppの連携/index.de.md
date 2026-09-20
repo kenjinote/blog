@@ -273,7 +273,7 @@ flowchart TD
 
 Warum wird eine so komplexe Architektur gewählt? Betrachten wir als konkretes Szenario die "Analyse von benutzerdefinierten IIS-Protokolldateien, die mehrere Gigabyte groß sind".
 
-Wenn `Get-Content` in PowerShell verwendet wird, um jede Zeile einzeln mit regulären Ausdrücken zu parsen, wird durch den Overhead der Objekterstellung und der Garbage Collection (GC) eine enorme Menge an CPU-Zeit verbraucht.
+Wenn `Get-Content` in PowerShell verwendet wird, um jede Zeile einzeln mit regulären Ausdrücken zu parsen, wird durch den Overhead der Objekterstellung und der [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC) eine enorme Menge an CPU-Zeit verbraucht.
 
 Die Anzahl der Speicherzuweisungen $A$ und die Anzahl der GC-Auslöser $G$ verhalten sich bei der Skriptausführung proportional wie folgt:
 

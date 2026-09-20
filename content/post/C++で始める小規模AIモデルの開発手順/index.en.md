@@ -133,7 +133,7 @@ In the computation graph, it is represented by combining the `ggml_silu` operato
 
 ---
 
-## 5. Computation Graph Construction and Memory Management with ggml
+## 5. Computation Graph Construction and [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) with ggml
 
 ggml uses a "Define-and-Run" approach, constructing a static computation graph for inference and evaluating it later.
 

@@ -57,7 +57,7 @@ int main() {
 
 In C++ besteht immer das Risiko, versehentlich auf ein Objekt zuzugreifen, das durch `std::move` entleert wurde (ein gültiger, aber unspezifizierter Zustand). Dies führt unmittelbar zu Abstürzen zur Laufzeit oder im schlimmsten Fall zu Sicherheitslücken.
 
-## Rusts Eigentümerschaft (Ownership) und die absolute Verteidigung des Borrow Checkers
+## Rusts Eigentümerschaft (Ownership) und die absolute Verteidigung des [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)s
 
 Rust hat dieses Konzept der "Eigentümerschaft" in das Kerndesign der Sprache integriert und führt durch eine Compiler-Funktion namens **Borrow Checker** eine strenge statische Analyse durch.
 
@@ -297,7 +297,7 @@ Indem man einfach eine einzige Zeile mit dem Namen und der Version der Abhängig
 
 Bisher habe ich über die Vorteile von Rust gesprochen, aber es gibt definitiv "Barrieren" und Nachteile, auf die C++-Entwickler stoßen, wenn sie Rust in der Praxis einsetzen.
 
-## 1. Der harte Kampf mit dem Borrow Checker
+## 1. Der harte Kampf mit dem [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)
 Wenn man versucht, Datenstrukturen, die in C++ "irgendwie mit rohen Zeigern verbunden waren" (z. B. doppelt verkettete Listen, Graphenstrukturen oder selbstreferenzielle Strukturen), unverändert in Rust zu implementieren, wird die Kompilierung aufgrund von Eigentümerschafts- und Lebensdauerbeschränkungen fehlschlagen. Um den Borrow Checker zufriedenzustellen, muss man entweder komplexe Wrapper wie `Rc<RefCell<T>>` verwenden oder das Design grundlegend überdenken, hin zu Arena-Allokatoren oder indexbasiertem Management.
 
 ## 2. Lange Kompilierungszeiten
@@ -314,4 +314,4 @@ C++ wird auch in Zukunft eine wichtige Rolle in der Entwicklung von Spiele-Engin
 
 Bei "neu gestarteten Systemprogrammierungsprojekten" fällt es mir jedoch zunehmend schwerer, **Gründe zu finden, sich nicht für Rust zu entscheiden**. Die "Gewissheit" von Rust – dass man, sobald der Code kompiliert ist, von der Angst vor undefiniertem Verhalten und Speicherbeschädigung befreit ist und Nebenläufigkeit bei hoher Leistung sicher ausführen kann – verbessert das mentale Modell der Entwickler drastisch.
 
-Für einen C++-Entwickler bedeutet das Erlernen von Rust nicht nur das Auswendiglernen einer neuen Syntax, sondern ist eine großartige Erfahrung, um eine neue Perspektive auf "die sichere Verwaltung von Speicher und Threads" zu gewinnen. Ich lade Sie alle ein, den Komfort von Cargo und die Strenge des Borrow Checkers selbst zu erleben.
+Für einen C++-Entwickler bedeutet das Erlernen von Rust nicht nur das Auswendiglernen einer neuen Syntax, sondern ist eine großartige Erfahrung, um eine neue Perspektive auf "die sichere Verwaltung von Speicher und Threads" zu gewinnen. Ich lade Sie alle ein, den Komfort von Cargo und die Strenge des [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)s selbst zu erleben.

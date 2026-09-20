@@ -92,7 +92,7 @@ Em análises de Big Data modernas e processamento de tráfego em escala web, $N$
 
 ## 4. A Caixa Preta do Gerenciamento de Memória e Arquitetura de Sistemas
 
-Em uma camada ainda mais profunda, existe a falta completa de compreensão em gerenciamento de memória (Memory Management) e arquitetura de CPU. Estudantes que aprenderam apenas linguagens de alto nível com Coletor de Lixo (Garbage Collection - GC), como Python e JavaScript que são ensinadas nas escolas atualmente, nunca estarão cientes de onde variáveis e objetos são alocados fisicamente na memória (RAM) (na área de heap ou na de stack), como são alocados e quando e como são liberados.
+Em uma camada ainda mais profunda, existe a falta completa de compreensão em gerenciamento de memória ([Memory Management](https://kenji.blog/pt/p/memory-management-garbage-collection/)) e arquitetura de CPU. Estudantes que aprenderam apenas linguagens de alto nível com Coletor de Lixo ([Garbage Collection](https://kenji.blog/pt/p/memory-management-garbage-collection/) - GC), como Python e JavaScript que são ensinadas nas escolas atualmente, nunca estarão cientes de onde variáveis e objetos são alocados fisicamente na memória (RAM) (na área de heap ou na de stack), como são alocados e quando e como são liberados.
 
 ```c
 // Exemplo de alocação de memória direta explícita e manipulação de ponteiros em C

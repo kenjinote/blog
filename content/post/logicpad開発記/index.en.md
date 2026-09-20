@@ -54,7 +54,7 @@ WinUI 3 is a native UI framework that runs on top of this Windows App SDK and fu
 ### 3.2. Why choose C++ (C++/WinRT) instead of C#?
 C# and C++ are supported as development languages for WinUI 3. Using C# and .NET would dramatically improve development efficiency, but LogicPad adopted **C++/WinRT** for the following reasons:
 
-1. **Deterministic Memory Management**: Since there is no garbage collector (GC), the timing of memory allocation and deallocation can be fully controlled. This prevents GC pauses from occurring during the simulation loop.
+1. **Deterministic [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/)**: Since there is no garbage collector (GC), the timing of memory allocation and deallocation can be fully controlled. This prevents GC pauses from occurring during the simulation loop.
 2. **SIMD and Cache Optimization**: In C++, physical memory layouts (such as Struct of Arrays) can be strictly defined, maximizing the CPU cache hit rate.
 3. **Native ABI Boundary**: C++/WinRT is a modern C++ projection of COM (Component Object Model). It can call native OS APIs directly without the P/Invoke overhead found in C#.
 
@@ -64,7 +64,7 @@ COM exists at the foundation of C++/WinRT. All WinRT objects are essentially COM
 
 WinUI 3 development using C++/WinRT is powerful but comes with specific complexities. Here, I will explain in detail two major technical challenges I struggled with during the development of LogicPad and their solutions.
 
-### 4.1. The Terror of Asynchronous UI Updates in C++ and Coroutines
+### 4.1. The Terror of [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) UI Updates in C++ and Coroutines
 
 The golden rule of modern UI applications is "never block the UI thread." In LogicPad, we need to run simulation calculations for huge circuits on a background thread and reflect the results on the UI thread.
 

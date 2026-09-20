@@ -212,7 +212,7 @@ reqwest = "0.11" # <- 업데이트가 필요한 경우 원클릭으로 수정 �
 
 ### ⑥ Error Lens
 
-`Error Lens`는 C++의 긴 템플릿 오류나 Rust의 엄격한 빌림 검사기(Borrow Checker) 오류를 에디터 해당 줄의 오른쪽에 직접 인라인으로 강조 표시하는 획기적인 확장 프로그램입니다.
+`Error Lens`는 C++의 긴 템플릿 오류나 Rust의 엄격한 빌림 검사기([Borrow Checker](https://kenji.blog/ko/p/memory-management-garbage-collection/)) 오류를 에디터 해당 줄의 오른쪽에 직접 인라인으로 강조 표시하는 획기적인 확장 프로그램입니다.
 
 보통 VSCode에서 오류의 자세한 내용을 확인하려면 화면 하단의 '문제(Problems)' 패널을 열거나 텍스트 상의 빨간 물결선에 정확히 마우스 커서를 올리고 호버 팝업을 기다려야 합니다. 그러나 이 조작은 인지 부하를 높이고 코딩의 흐름 상태를 방해합니다.
 

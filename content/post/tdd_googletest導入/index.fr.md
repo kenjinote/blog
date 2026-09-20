@@ -159,7 +159,7 @@ Lors de l'utilisation de GoogleTest, il existe deux types de macros d'assertion 
 
 Dans un projet C++ réel, il y a toujours des dépendances envers des systèmes externes, comme l'accès aux bases de données, les communications réseau, le contrôle de matériel, etc. Si on laisse ces dépendances telles quelles, les tests unitaires deviennent très difficiles.
 
-C'est là qu'interviennent l'**injection de dépendances (Dependency Injection : DI)** et le "mocking" d'interfaces avec **GoogleMock**.
+C'est là qu'interviennent l'**injection de dépendances ([Dependency Injection](https://kenji.blog/fr/p/design-patterns-modern-practices/) : DI)** et le "mocking" d'interfaces avec **GoogleMock**.
 
 ```mermaid
 flowchart LR

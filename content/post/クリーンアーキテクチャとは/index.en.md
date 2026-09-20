@@ -307,7 +307,7 @@ export class UserController {
 }
 ```
 
-### 6.4. Main Component (Dependency Injection: DI)
+### 6.4. Main Component ([Dependency Injection](https://kenji.blog/en/p/design-patterns-modern-practices/): DI)
 
 At application startup, we build (wire) all dependencies. This is called the Composition Root.
 

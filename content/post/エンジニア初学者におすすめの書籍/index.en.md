@@ -38,5 +38,5 @@ description: 'A must-see for engineers looking to step up from programming begin
 ![img_2.png](img_2.webp)
 14. Being Geek
 ![img_1.png](img_1.webp)
-15. Why Object-Oriented Programming?
+15. Why [Object-Oriented](https://kenji.blog/en/p/oop-vs-fp-vs-dop/) Programming?
 ![img_16.png](img_16.webp)

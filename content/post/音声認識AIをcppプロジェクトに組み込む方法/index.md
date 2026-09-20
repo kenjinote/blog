@@ -247,7 +247,7 @@ graph LR
 
 ---
 
-## 7. メモリ管理とエッジデバイス向けの最適化
+## 7. [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)とエッジデバイス向けの最適化
 
 `whisper.cpp` 最大の利点であるパフォーマンスとメモリ効率について深く掘り下げます。
 

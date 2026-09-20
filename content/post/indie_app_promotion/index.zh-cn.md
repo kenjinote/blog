@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-例如，在一篇名为“如何减少Redux样板代码”的文章末尾，可以放置一个符合上下文的CTA：“如果你正为状态管理的复杂性而烦恼，不妨试试我开发的新型状态管理可视化工具‘StateViewer’。”
+例如，在一篇名为“如何减少[Redux](https://kenji.blog/zh-cn/p/state-management-history-future/)样板代码”的文章末尾，可以放置一个符合上下文的CTA：“如果你正为状态管理的复杂性而烦恼，不妨试试我开发的新型状态管理可视化工具‘StateViewer’。”
 
 ### 2.2 转化率的数学模型
 

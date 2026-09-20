@@ -16,7 +16,7 @@ tags:
 
 ## 1. 引言：流淌在函数式编程根底的哲学
 
-在现代软件开发中， **函数式编程** （Functional Programming）早已不再是仅面向部分狂热爱好者的方案，而是成为了广泛普及的范式。从React等前端技术，到Rust和Scala，甚至Java和C#等面向对象语言，都引入了将函数作为一等公民对待以及消除副作用等概念。
+在现代软件开发中， **函数式编程** （[Functional Programming](https://kenji.blog/zh-cn/p/oop-vs-fp-vs-dop/)）早已不再是仅面向部分狂热爱好者的方案，而是成为了广泛普及的范式。从React等前端技术，到Rust和Scala，甚至Java和C#等面向对象语言，都引入了将函数作为一等公民对待以及消除副作用等概念。
 
 然而，在这个范式的背后，存在着在计算机被物理制造出来之前的1930年代所构建的深奥数学理论。那就是由阿隆佐·邱奇（Alonzo Church）提出的 **Lambda演算** （ $\lambda$-calculus ）。
 
