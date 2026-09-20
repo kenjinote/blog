@@ -4,7 +4,7 @@ description: "चयन अभिगृहीत और ज़ॉर्न क�
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["गणित", "समुच्चय-सिद्धांत"]
 tags: ["चयन अभिगृहीत", "ज़ॉर्न की प्रमेयिका", "ZFC अभिगृहीत प्रणाली", "गणित की नींव", "Mermaid", "KaTeX"]
 ---
 
@@ -23,7 +23,7 @@ tags: ["चयन अभिगृहीत", "ज़ॉर्न की प्�
 समुच्चय सिद्धांत की मानक अभिगृहीत प्रणाली ज़रमेलो-फ्रेंकल समुच्चय सिद्धांत (ZF) में, चयन अभिगृहीत (AC) को इस प्रकार सूत्रबद्ध किया जाता है:
 
 $$
-\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{s.t.} \quad \forall A \in X, f(A) \in A \right)
+\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{ताकि} \quad \forall A \in X, f(A) \in A \right)
 $$
 
 यहाँ, फलन $f$ को **चयन फलन** (choice function) कहा जाता है। अर्थात, यह दावा करता है कि समुच्चयों के कुटुंब $X$ में किसी भी अरिक्त समुच्चय $A$ के लिए, उसका एक अवयव $f(A)$ निर्दिष्ट करने वाला फलन अस्तित्व में है।
@@ -50,7 +50,7 @@ $$
 > एक अरिक्त आंशिक क्रमित समुच्चय $(P, \le)$ में, यदि उसके प्रत्येक पूर्ण क्रमित उपसमुच्चय (शृंखला) का एक ऊपरी परिबंध है, तो $P$ में कम से कम एक उच्चतमक अवयव होता है।
 
 $$
-\text{If every chain } C \subseteq P \text{ has an upper bound, then } P \text{ has a maximal element.}
+\text{यदि प्रत्येक शृंखला } C \subseteq P \text{ का एक ऊपरी परिबंध है, तो } P \text{ का एक उच्चतमक अवयव है।}
 $$
 
 ### 2.2. पारिभाषिक शब्दों की व्यवस्था
@@ -133,7 +133,7 @@ graph LR
 > त्रिआयामी यूक्लिडीय अंतरिक्ष में एक ठोस गोले को परिमित टुकड़ों (उदाहरण के लिए 5 खंडों) में विभाजित किया जा सकता है। उन खंडों को केवल घूर्णन और समांतर स्थानांतरण (दृढ़ पिंड गति) द्वारा पुनर्व्यवस्थित और पुनः जोड़ने पर, मूल गोले के समान आकार के **दो** गोले बनाए जा सकते हैं।
 
 $$
-1 \text{ Sphere} \xrightarrow{\text{Cut into } 5 \text{ pieces, Rotate \& Translate}} 2 \text{ Spheres of same size}
+1 \text{ गोला} \xrightarrow{\text{काटा गया } 5 \text{ टुकड़ों में, घूर्णन \& स्थानांतरण}} 2 \text{ समान आकार के गोले}
 $$
 
 ### 5.2. ऐसा क्यों होता है?
@@ -147,7 +147,7 @@ $$
 लेकिन आधुनिक मानक गणित ने ज़रमेलो-फ्रेंकल समुच्चय सिद्धांत में चयन अभिगृहीत जोड़कर बनी **ZFC अभिगृहीत प्रणाली** (Zermelo-Fraenkel set theory with the axiom of Choice) को सुदृढ़ आधार के रूप में अपनाया है।
 
 $$
-\text{ZFC} = \text{ZF} + \text{Axiom of Choice}
+\text{ZFC} = \text{ZF} + \text{चयन अभिगृहीत}
 $$
 
 ### ZFC को क्यों स्वीकार किया गया?

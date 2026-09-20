@@ -4,7 +4,7 @@ description: "Uma análise aprofundada do Axioma da Escolha e do Lema de Zorn, d
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["matemática", "teoria-dos-conjuntos"]
 tags: ["Axioma da Escolha", "Lema de Zorn", "Sistema axiomático ZFC", "Fundamentos da Matemática", "Mermaid", "KaTeX"]
 ---
 
@@ -23,7 +23,7 @@ No senso comum, se tivermos várias caixas, cada uma contendo pelo menos uma bol
 No sistema axiomático padrão da teoria dos conjuntos, a teoria dos conjuntos de Zermelo-Fraenkel (ZF), o Axioma da Escolha (AC) é formalizado da seguinte forma:
 
 $$
-\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{s.t.} \quad \forall A \in X, f(A) \in A \right)
+\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{t.q.} \quad \forall A \in X, f(A) \in A \right)
 $$
 
 Aqui, a função $f$ é chamada de **função de escolha** (choice function). Ou seja, afirma-se a existência de uma função que atribui a cada conjunto não vazio $A$ pertencente à família de conjuntos $X$ um de seus elementos $f(A)$.
@@ -50,7 +50,7 @@ O Lema de Zorn é a seguinte afirmação sobre conjuntos parcialmente ordenados:
 > Em um conjunto parcialmente ordenado não vazio $(P, \le)$, se todo subconjunto totalmente ordenado (cadeia) possui uma cota superior, então $P$ possui pelo menos um elemento maximal.
 
 $$
-\text{If every chain } C \subseteq P \text{ has an upper bound, then } P \text{ has a maximal element.}
+\text{Se toda cadeia } C \subseteq P \text{ tem um limite superior, então } P \text{ tem um elemento maximal.}
 $$
 
 ### 2.2. Esclarecimento da terminologia
@@ -133,7 +133,7 @@ Embora o Axioma da Escolha confira um poder formidável à matemática, ele tamb
 > Uma bola sólida no espaço euclidiano tridimensional pode ser dividida em um número finito de peças (por exemplo, 5 fragmentos). Reorganizando essas peças apenas por rotações e translações (movimentos rígidos) e remontando-as, é possível criar **duas** bolas de exatamente o mesmo tamanho que a original.
 
 $$
-1 \text{ Sphere} \xrightarrow{\text{Cut into } 5 \text{ pieces, Rotate \& Translate}} 2 \text{ Spheres of same size}
+1 \text{ Esfera} \xrightarrow{\text{Cortado em } 5 \text{ pedaços, Rotação \& Translação}} 2 \text{ Esferas do mesmo tamanho}
 $$
 
 ### 5.2. Por que isso acontece?
@@ -147,7 +147,7 @@ Devido a resultados contraintuitivos como o Teorema de Banach-Tarski, muitos mat
 No entanto, a matemática moderna padrão adotou o **sistema axiomático ZFC** (teoria dos conjuntos de Zermelo-Fraenkel com o Axioma da Escolha) como seu fundamento sólido.
 
 $$
-\text{ZFC} = \text{ZF} + \text{Axiom of Choice}
+\text{ZFC} = \text{ZF} + \text{Axioma da Escolha}
 $$
 
 ### Por que o ZFC foi aceito?

@@ -1,82 +1,82 @@
 ---
-title: "Buffons Nadel (Buffon's Needle) - Der Klassiker der Wahrscheinlichkeitstheorie, bei dem man Pi allein durch das Fallenlassen einer Nadel bestimmen kann"
-description: "Kann man die Kreiszahl π ermitteln, indem man einfach eine Nadel auf den Boden fallen lässt? Wir erklären ausführlich das klassische Problem der Wahrscheinlichkeitstheorie 'Buffons Nadel', das im 18. Jahrhundert vorgeschlagen wurde – vom mathematischen Beweis bis zur Simulation."
+title: "Das Buffonsche Nadelproblem - Das klassische Wahrscheinlichkeitsproblem, bei dem das Fallenlassen einer Nadel Pi findet"
+description: "Kannst du Pi (π) finden, indem du einfach eine Nadel auf den Boden fallen lässt? Wir erklären im Detail das erstaunliche klassische Problem der Wahrscheinlichkeitstheorie, das im 18. Jahrhundert vorgeschlagen wurde, das Buffonsche Nadelproblem, von seinem mathematischen Beweis bis zur Simulation."
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "probability-theory"]
 tags:
-  - "Kreiszahl"
+  - "Pi"
   - "Simulation"
   - "Geometrische Wahrscheinlichkeit"
 ---
 
-# Was ist Buffons Nadel?
+# Was ist das Buffonsche Nadelproblem?
 
-In der Welt der Mathematik gibt es viele erstaunliche Fakten, die der Intuition widersprechen, und wunderschöne Theoreme, die scheinbar unzusammenhängende Phänomene brillant miteinander verbinden. Eines der berühmtesten und faszinierendsten Probleme darunter ist **„Buffons Nadel"** (Buffon's needle problem).
+In der Welt der Mathematik gibt es viele schöne Theoreme, in denen erstaunliche Tatsachen, die der Intuition widersprechen, oder scheinbar unzusammenhängende Ereignisse wunderbar miteinander verbunden sind. Eines der berühmtesten und faszinierendsten Probleme unter ihnen ist das **Buffonsche Nadelproblem**.
 
-Dieses Problem wurde 1733 vom französischen Naturforscher und Mathematiker des 18. Jahrhunderts, Georges-Louis Leclerc, Comte de Buffon, aufgestellt und 1777 erstmals gelöst.
+Dieses Problem wurde 1733 von Georges-Louis Leclerc, Comte de Buffon, einem französischen Naturforscher und Mathematiker des 18. Jahrhunderts, vorgeschlagen und 1777 erstmals gelöst.
 
-Erstaunlicherweise zeigt dieses Problem, dass eine der wichtigsten mathematischen Konstanten – die **Kreiszahl $\pi$** – durch den äußerst physischen und zufälligen Akt des „zufälligen Fallenlassens einer Nadel auf den Boden" bestimmt werden kann. Es gilt als eines der frühesten Probleme der geometrischen Wahrscheinlichkeit (Geometric probability) und war eine bahnbrechende Entdeckung, die als Vorläufer der Monte-Carlo-Methode (Monte Carlo method) angesehen werden kann.
+Überraschenderweise besagt dieses Problem, dass man durch den extrem physischen und zufälligen Akt des "zufälligen Fallenlassens einer Nadel auf den Boden" eine der wichtigsten Konstanten in der Mathematik bestimmen kann, **Pi $\pi$**. Dies ist als eines der frühesten Probleme der geometrischen Wahrscheinlichkeit bekannt und war eine bahnbrechende Entdeckung, die als Pionier der späteren Monte-Carlo-Methode gelten kann.
 
-In diesem Artikel erklären wir **Buffons Nadel** ausführlich und verständlich – von der Problemstellung über den mathematischen Beweis bis hin zur Schätzung der Kreiszahl durch Simulation mit modernen Computern.
+In diesem Artikel werden wir ausführlich und leicht verständlich von der Problemstellung des **Buffonschen Nadelproblems**, seinem mathematischen Beweis bis hin zur Schätzung von Pi durch Simulation mit modernen Computern erklären.
 
-## Grundlegende Problemstellung
+## Grundlegende Einstellung des Problems
 
-Die Problemstellung von Buffons Nadel ist bemerkenswert einfach.
+Die Problemstellung der Buffonschen Nadel ist sehr einfach.
 
-1. Auf einem flachen Boden sind zahlreiche parallele Linien im gleichmäßigen Abstand $d$ gezeichnet.
+1. Auf einem flachen Boden werden viele parallele gerade Linien in gleichen Abständen $d$ gezeichnet.
 2. Eine einzelne Nadel der Länge $l$ wird vorbereitet.
-3. Die Nadel wird zufällig auf den Boden fallen gelassen.
+3. Diese Nadel wird zufällig (willkürlich) auf den Boden fallen gelassen.
 
-Die von Buffon gestellte Frage lautet: **„Wie groß ist die Wahrscheinlichkeit, dass die gefallene Nadel eine der auf dem Boden gezeichneten parallelen Linien kreuzt?"**
+Zu diesem Zeitpunkt lautet das von Buffon vorgeschlagene Problem: **"Wie groß ist die Wahrscheinlichkeit, dass die fallen gelassene Nadel eine der auf dem Boden gezeichneten parallelen Linien kreuzt?"**
 
 Das folgende Diagramm zeigt den konzeptionellen Ablauf dieses Experiments.
 
 ```mermaid
 graph TD
-    A["Nadel zufällig fallen lassen"] -->|"Schwerkraft und Luftwiderstand"| B["Landet auf dem Boden"]
+    A["Nadel zufällig fallen lassen"] -->|"Schwerkraft und Luftwiderstand"| B["Auf dem Boden landen"]
     B --> C{"Hat sie eine Linie gekreuzt?"}
-    C -->|"Ja"| D["Kreuzung zählen (+1)"]
+    C -->|"Ja"| D["Kreuzungen zählen (+1)"]
     C -->|"Nein"| E["Keine Kreuzung"]
     D --> F["Wahrscheinlichkeit P berechnen"]
     E --> F
-    F -->|"P = 2l / (πd)"| G["Kreiszahl π zurückrechnen"]
+    F -->|"P = 2l / (πd)"| G["Pi π rückwärts berechnen"]
 ```
 
-Hier betrachten wir zur Vereinfachung des Problems den Fall einer **kurzen Nadel**, bei der die Nadellänge $l$ kleiner oder gleich dem Linienabstand $d$ ist ($l \le d$). Unter dieser Bedingung kann die Nadel niemals mehr als eine Linie gleichzeitig kreuzen.
+Um das Problem zu vereinfachen, betrachten wir hier den Fall einer **kurzen Nadel**, bei dem die Länge der Nadel $l$ kleiner oder gleich dem Abstand der parallelen Linien $d$ ist ($l \le d$). Unter dieser Bedingung wird die Nadel niemals zwei oder mehr gerade Linien gleichzeitig kreuzen.
 
-## Mathematische Modellierung und Herleitung der Wahrscheinlichkeit
+## Mathematische Modellierung und Ableitung der Wahrscheinlichkeit
 
-Um dieses Problem mathematisch zu lösen, müssen wir den Zustand der Nadel quantifizieren (parametrisieren). Wir nehmen an, dass Position und Ausrichtung der Nadel beim Auftreffen auf dem Boden vollständig zufällig sind.
+Um dieses Problem mathematisch zu lösen, ist es notwendig, den Zustand der Nadel zu quantifizieren (zu parametrisieren). Wenn die Nadel auf den Boden fällt, gehen wir davon aus, dass ihre Position und Ausrichtung völlig zufällig sind.
 
-Zur Bestimmung der Nadelposition definieren wir die folgenden zwei Variablen.
+Um die Position der Nadel zu bestimmen, definieren wir die folgenden zwei Variablen.
 
-1. $x$: Der senkrechte Abstand vom Mittelpunkt der Nadel zur nächsten parallelen Linie.
-2. $\theta$: Der spitze Winkel (oder rechte Winkel) zwischen der Nadel und den parallelen Linien.
+1. $x$ : Der vertikale Abstand von der Mitte der Nadel zur nächsten parallelen Linie.
+2. $\theta$ : Der spitze Winkel (oder rechte Winkel), der von der Nadel und den parallelen Linien gebildet wird.
 
-### Wertebereich der Variablen
+### Möglicher Wertebereich der Variablen
 
-Zunächst überlegen wir, welche Werte jede Variable annehmen kann.
+Lassen Sie uns zunächst überlegen, welche Werte jede Variable annehmen kann.
 
-- **Abstand $x$:** Der Mittelpunkt der Nadel fällt irgendwo zwischen zwei benachbarte parallele Linien. Da wir den Abstand zur nächsten Linie betrachten, ist der Minimalwert von $x$ gleich $0$ (wenn der Mittelpunkt der Nadel auf einer Linie liegt) und der Maximalwert gleich $\frac{d}{2}$ (wenn der Mittelpunkt genau in der Mitte zwischen zwei Linien liegt). Das heißt, $0 \le x \le \frac{d}{2}$. Da die Nadel zufällig fallen gelassen wird, folgt $x$ einer **Gleichverteilung** über diesen Bereich. Die Wahrscheinlichkeitsdichtefunktion beträgt $\frac{2}{d}$.
-- **Winkel $\theta$:** Der Winkel zwischen der Nadel und den parallelen Linien reicht von $0$, wenn die Nadel parallel zu den Linien liegt, bis $\frac{\pi}{2}$ (90 Grad), wenn sie senkrecht steht. Aufgrund der Symmetrie müssen wir keine größeren Winkel berücksichtigen. Daher gilt $0 \le \theta \le \frac{\pi}{2}$. Da auch die Ausrichtung der Nadel zufällig ist, folgt $\theta$ ebenfalls einer **Gleichverteilung** über diesen Bereich. Die Wahrscheinlichkeitsdichtefunktion beträgt $\frac{2}{\pi}$.
+- **Bezüglich des Abstands $x$:** Die Mitte der Nadel fällt irgendwo zwischen zwei benachbarte parallele Linien. Da wir den Abstand zur nächsten Linie betrachten, ist der Mindestwert von $x$ $0$ (wenn sich die Mitte der Nadel auf der Linie befindet) und der Höchstwert $\frac{d}{2}$ (wenn sich die Mitte der Nadel genau in der Mitte zwischen zwei Linien befindet). Das heißt, $0 \le x \le \frac{d}{2}$. Da die Nadel zufällig fallen gelassen wird, folgt $x$ in diesem Bereich einer **Gleichverteilung**. Die Wahrscheinlichkeitsdichtefunktion ist $\frac{2}{d}$.
+- **Bezüglich des Winkels $\theta$:** Der von der Nadel und der parallelen Linie gebildete Winkel nimmt einen Wert von $0$ an, wenn die Nadel parallel zur geraden Linie ist, bis $\frac{\pi}{2}$ (90 Grad), wenn sie senkrecht ist. Aus Symmetriegründen ist es nicht erforderlich, größere Winkel als diesen zu betrachten. Daher gilt $0 \le \theta \le \frac{\pi}{2}$. Da die Ausrichtung der Nadel ebenfalls zufällig ist, folgt auch $\theta$ in diesem Bereich einer **Gleichverteilung**. Die Wahrscheinlichkeitsdichtefunktion ist $\frac{2}{\pi}$.
 
-Da die Variablen $x$ und $\theta$ voneinander unabhängig sind, ergibt sich die gemeinsame Wahrscheinlichkeitsdichtefunktion $f(x, \theta)$ für ein bestimmtes Paar $(x, \theta)$ als Produkt der einzelnen Wahrscheinlichkeitsdichtefunktionen.
+Da die Variablen $x$ und $\theta$ unabhängig voneinander sind, wird die gemeinsame Wahrscheinlichkeitsdichtefunktion $f(x, \theta)$, dass sie ein bestimmtes Paar $(x, \theta)$ annehmen, als Produkt ihrer jeweiligen Wahrscheinlichkeitsdichtefunktionen ausgedrückt.
 
 $$
 f(x, \theta) = \frac{2}{d} \times \frac{2}{\pi} = \frac{4}{d\pi}
 $$
 
-### Kreuzungsbedingung
+### Kreuzungsbedingungen
 
-Als Nächstes betrachten wir die Bedingung dafür, dass die Nadel eine Linie kreuzt.
-Die Nadel kreuzt eine Linie, wenn die senkrechte Ausdehnung vom Mittelpunkt der Nadel bis zu ihrer Spitze größer oder gleich dem Abstand $x$ zur nächsten Linie ist.
+Betrachten Sie als Nächstes die Bedingungen, unter denen die Nadel eine gerade Linie kreuzt.
+Die Nadel kreuzt eine gerade Linie, wenn die vertikale Länge von der Mitte der Nadel bis zu ihrem Ende größer oder gleich dem Abstand $x$ zur nächsten Linie ist.
 
-Da die Nadellänge $l$ beträgt, ist der Abstand vom Mittelpunkt zur Spitze $\frac{l}{2}$.
-Bei einem Winkel $\theta$ beträgt die senkrechte Distanz, die diese Hälfte der Nadel einnimmt (die projizierte Länge), $\frac{l}{2} \sin \theta$.
+Da die Länge der Nadel $l$ ist, beträgt die Länge von der Mitte bis zum Ende $\frac{l}{2}$.
+Wenn der Winkel $\theta$ ist, beträgt der Abstand, den diese Hälfte der Nadel in vertikaler Richtung einnimmt (projizierte Länge), $\frac{l}{2} \sin \theta$.
 
-Daher wird die Bedingung für eine Kreuzung der Nadel mit einer Linie durch die folgende Ungleichung ausgedrückt.
+Daher wird die Bedingung, dass die Nadel eine gerade Linie kreuzt, durch die folgende Ungleichung ausgedrückt.
 
 $$
 x \le \frac{l}{2} \sin \theta
@@ -87,77 +87,77 @@ $$
 Die Wahrscheinlichkeit $P$, dass die Nadel eine Linie kreuzt, wird durch Integration der gemeinsamen Wahrscheinlichkeitsdichtefunktion $f(x, \theta)$ über den Bereich erhalten, der die Kreuzungsbedingung erfüllt.
 
 $$
-P = \iint_{\text{Kreuzungsbereich}} f(x, \theta) \, dx \, d\theta
+P = \iint_{\text{Schnittbereich}} f(x, \theta) \, dx \, d\theta
 $$
 
-Die konkreten Integrationsgrenzen sind: $\theta$ variiert von $0$ bis $\frac{\pi}{2}$, und $x$ variiert von $0$ bis zum Kreuzungsschwellenwert $\frac{l}{2} \sin \theta$.
+Der spezifische Integrationsbereich ist dort, wo sich $\theta$ von $0$ bis $\frac{\pi}{2}$ ändert und sich $x$ von $0$ bis zum Grenzwert der Kreuzung $\frac{l}{2} \sin \theta$ ändert.
 
 $$
 P = \int_{0}^{\frac{\pi}{2}} \int_{0}^{\frac{l}{2} \sin \theta} \frac{4}{d\pi} \, dx \, d\theta
 $$
 
-Zunächst berechnen wir das innere Integral bezüglich $x$.
+Zuerst berechnen wir das innere Integral in Bezug auf $x$.
 
 $$
 \int_{0}^{\frac{l}{2} \sin \theta} \frac{4}{d\pi} \, dx = \frac{4}{d\pi} \left[ x \right]_{0}^{\frac{l}{2} \sin \theta} = \frac{4}{d\pi} \left( \frac{l}{2} \sin \theta - 0 \right) = \frac{2l}{d\pi} \sin \theta
 $$
 
-Dann berechnen wir das äußere Integral bezüglich $\theta$.
+Als Nächstes berechnen wir das äußere Integral in Bezug auf $\theta$.
 
 $$
 P = \int_{0}^{\frac{\pi}{2}} \frac{2l}{d\pi} \sin \theta \, d\theta = \frac{2l}{d\pi} \int_{0}^{\frac{\pi}{2}} \sin \theta \, d\theta
 $$
 
-Da das Integral von $\sin \theta$ gleich $-\cos \theta$ ist,
+Da das Integral von $\sin \theta$ $-\cos \theta$ ist,
 
 $$
 \int_{0}^{\frac{\pi}{2}} \sin \theta \, d\theta = \left[ -\cos \theta \right]_{0}^{\frac{\pi}{2}} = (-\cos \frac{\pi}{2}) - (-\cos 0) = -0 - (-1) = 1
 $$
 
-Somit ergibt sich die gesuchte Wahrscheinlichkeit $P$ wie folgt.
+Daher ist die erforderliche Wahrscheinlichkeit $P$ wie folgt.
 
 $$
 P = \frac{2l}{d\pi} \times 1 = \frac{2l}{\pi d}
 $$
 
-Dies ist die grundlegende Formel von **Buffons Nadel**. Die Wahrscheinlichkeit, dass die Nadel eine Linie kreuzt, entspricht dem Doppelten der Nadellänge $l$, geteilt durch das Produkt aus der Kreiszahl $\pi$ und dem Linienabstand $d$.
+Dies ist die Grundformel der **Buffonschen Nadel**. Die Wahrscheinlichkeit, dass die Nadel eine Linie kreuzt, ist das Zweifache der Länge der Nadel $l$, geteilt durch das Produkt aus Pi $\pi$ und dem Intervall der Linien $d$.
 
-## Schätzung der Kreiszahl π (Monte-Carlo-Methode)
+## Schätzung von Pi (Monte-Carlo-Methode)
 
-Die hergeleitete Formel $P = \frac{2l}{\pi d}$ enthält auf elegante Weise $\pi$. Löst man nach $\pi$ auf, erhält man:
+Die abgeleitete Formel $P = \frac{2l}{\pi d}$ enthält auf wunderbare Weise $\pi$. Wenn man dies nach $\pi$ auflöst, ergibt sich Folgendes.
 
 $$
 \pi = \frac{2l}{P d}
 $$
 
-Diese Gleichung bedeutet, dass wir die Kreiszahl $\pi$ berechnen können, wenn wir die Wahrscheinlichkeit $P$ kennen. Natürlich erfordert die wahre Wahrscheinlichkeit $P$ unendlich viele Versuche, aber durch häufiges Fallenlassen der Nadel in einem tatsächlichen Experiment können wir eine Näherung von $P$ erhalten.
+Diese Gleichung bedeutet, dass Pi $\pi$ berechnet werden kann, wenn nur die Wahrscheinlichkeit $P$ bekannt ist. Natürlich kann die wahre Wahrscheinlichkeit $P$ ohne eine unendliche Anzahl von Versuchen nicht bekannt sein, aber indem man die Nadel in einem tatsächlichen Experiment viele Male fallen lässt, kann ein ungefährer Wert von $P$ erhalten werden.
 
-Sei $N$ die Gesamtzahl der Nadelwürfe und $C$ die Anzahl der Kreuzungen mit einer Linie.
-Wenn die Anzahl der Versuche $N$ ausreichend groß ist, nähert sich gemäß dem Gesetz der großen Zahlen die empirische Wahrscheinlichkeit $\frac{C}{N}$ der theoretischen Wahrscheinlichkeit $P$ an.
+Sei $N$ die Gesamtzahl der Fälle, in denen die Nadel fallen gelassen wurde, und $C$ die Anzahl der Fälle, in denen die Nadel eine Linie kreuzte.
+Wenn die Anzahl der Versuche $N$ groß genug ist, nähert sich nach dem Gesetz der großen Zahlen die empirische Wahrscheinlichkeit $\frac{C}{N}$ der theoretischen Wahrscheinlichkeit $P$ an.
 
 $$
 P \approx \frac{C}{N}
 $$
 
-Setzt man dies in die vorherige Gleichung ein, erhält man eine Formel zur Näherung der Kreiszahl $\pi$.
+Das Einsetzen in die vorherige Gleichung ergibt eine Formel zum Ermitteln des Näherungswerts von Pi $\pi$.
 
 $$
 \pi \approx \frac{2l \cdot N}{C \cdot d}
 $$
 
-Die einfachste Berechnung ergibt sich, wenn Nadellänge $l$ und Linienabstand $d$ gleich sind ($l = d$). In diesem Fall vereinfacht sich die Formel weiter.
+Die einfachste Berechnung ist, wenn die Nadellänge $l$ und das Linienintervall $d$ gleich sind ($l = d$). Zu diesem Zeitpunkt wird die Formel noch einfacher.
 
 $$
 \pi \approx \frac{2N}{C}
 $$
 
-Mit anderen Worten: Man kann die Kreiszahl bestimmen, indem man einfach die doppelte Anzahl der Nadelwürfe durch die Anzahl der Kreuzungen teilt!
+Mit anderen Worten, teile einfach das Zweifache der "Anzahl, wie oft die Nadel fallen gelassen wurde" durch die "Anzahl, wie oft sie sich kreuzte", und Pi wird erhalten!
 
-### Python-Simulation
+### Simulation mit Python
 
-Tausende Male von Hand eine Nadel fallen zu lassen, ist eine äußerst mühsame Aufgabe (obwohl es in der Geschichte tatsächlich Mathematiker gab, die Tausende solcher Experimente durchführten). In der heutigen Zeit können wir dieses Experiment leicht mit einem Computer simulieren.
+Das tausendfache Fallenlassen einer Nadel von Hand ist eine sehr mühsame Aufgabe (obwohl es historisch gesehen Mathematiker gibt, die tatsächlich Tausende von Experimenten durchgeführt haben). Heute können wir dieses Experiment problemlos mit einem Computer simulieren.
 
-Im Folgenden finden Sie ein einfaches Python-Codebeispiel, das Buffons Nadelexperiment simuliert und die Kreiszahl schätzt.
+Nachfolgend finden Sie ein einfaches Codebeispiel, in dem Python verwendet wird, um das Buffonsche Nadelexperiment zu simulieren und Pi zu schätzen.
 
 ```python
 import random
@@ -165,54 +165,54 @@ import math
 
 def buffons_needle_simulation(num_trials, l, d):
     """
-    Funktion zur Simulation von Buffons Nadel und Schätzung der Kreiszahl
-
-    :param num_trials: Anzahl der Nadelwürfe
+    Eine Funktion zur Simulation der Buffonschen Nadel und zur Schätzung von Pi
+    
+    :param num_trials: Wie oft die Nadel fallen gelassen werden soll
     :param l: Länge der Nadel
-    :param d: Abstand der parallelen Linien
-    :return: Geschätzte Kreiszahl
+    :param d: Intervall paralleler Linien
+    :return: Geschätztes Pi
     """
     crosses = 0
     
     for _ in range(num_trials):
-        # Zufällige Erzeugung des Abstands x vom Mittelpunkt der Nadel zur nächsten Linie (0 bis d/2)
+        # Generiere zufällig den Abstand x von der Mitte der Nadel zur nächsten Linie (0 bis d/2)
         x = random.uniform(0, d / 2.0)
         
-        # Zufällige Erzeugung des Nadelwinkels theta (0 bis pi/2)
+        # Generiere zufällig den Winkel theta der Nadel (0 bis pi/2)
         theta = random.uniform(0, math.pi / 2.0)
         
-        # Prüfen, ob die Kreuzungsbedingung erfüllt ist
+        # Prüfe, ob die Kreuzungsbedingung erfüllt ist
         if x <= (l / 2.0) * math.sin(theta):
             crosses += 1
             
-    # Ausnahmebehandlung, um Fehler zu vermeiden, wenn keine Kreuzung auftritt
+    # Ausnahmebehandlung, um Fehler zu vermeiden, falls sie sich nie kreuzt
     if crosses == 0:
         return float('inf')
         
-    # Berechnung der geschätzten Kreiszahl
+    # Schätzungsberechnung von Pi
     estimated_pi = (2.0 * l * num_trials) / (d * crosses)
     return estimated_pi
 
 # Parametereinstellungen
-N = 1000000  # Anzahl der Versuche (1 Million)
+N = 1000000  # Anzahl der Versuche (1 Million Mal)
 needle_length = 1.0
 line_distance = 1.0
 
-# Simulation ausführen
+# Führe die Simulation aus
 estimated_pi = buffons_needle_simulation(N, needle_length, line_distance)
 
-print(f"Anzahl der Versuche: {N:,}")
-print(f"Geschätzte Kreiszahl: {estimated_pi}")
-print(f"Tatsächliche Kreiszahl: {math.pi}")
-print(f"Fehler:                 {abs(math.pi - estimated_pi)}")
+print(f"Anzahl der Versuche: {N:,} Mal")
+print(f"Geschätztes Pi:      {estimated_pi}")
+print(f"Tatsächliches Pi:    {math.pi}")
+print(f"Fehler:              {abs(math.pi - estimated_pi)}")
 ```
 
-Wenn Sie diesen Code ausführen, wird eine große Anzahl virtueller Nadeln mithilfe von Zufallszahlen fallen gelassen, und Sie können überprüfen, dass eine sehr genaue Näherung von $3,1415...$ – dem Wert der Kreiszahl – erzielt wird. Diese Technik, bei der Zufallszahlen verwendet werden, um Näherungslösungen für probabilistische Probleme zu finden, wird als **Monte-Carlo-Methode** bezeichnet.
+Das Ausführen dieses Codes lässt eine große Anzahl virtueller Nadeln mithilfe von Zufallszahlen fallen, und es kann bestätigt werden, dass ein Näherungswert für Pi von $3.1415...$ mit sehr hoher Genauigkeit erhalten wird. Die Methode, Zufallszahlen zu verwenden, um auf diese Weise Näherungslösungen für probabilistische Probleme zu finden, wird **Monte-Carlo-Methode** genannt.
 
 ## Zusammenfassung
 
-Auf den ersten Blick mag Buffons Nadel wie ein bloßes Spiel des physischen Zufalls erscheinen, doch dahinter verbirgt sich eine solide mathematische Theorie. Die Art und Weise, wie zufällige Ereignisse (Wahrscheinlichkeit), geometrische Formen (Geraden und Strecken) und die ultimative irrationale Zahl $\pi$ in einer einzigen einfachen Formel verschmelzen, verkörpert wahrhaft die Schönheit der Mathematik.
+Die Buffonsche Nadel scheint auf den ersten Blick ein reines physikalisches Glücksspiel zu sein, aber dahinter verbirgt sich eine solide mathematische Theorie. Die Art und Weise, wie zufällige Ereignisse (Wahrscheinlichkeit), geometrische Formen (Linien und Liniensegmente) und die ultimative irrationale Zahl $\pi$ zu einer einzigen einfachen mathematischen Formel verschmelzen, verkörpert die Schönheit der Mathematik.
 
-Darüber hinaus hat dieses Problem als Ursprung der Monte-Carlo-Methode, die für die moderne Wissenschaft und Technologie unverzichtbar ist, eine große historische Bedeutung. Von der Simulation komplexer Systeme bis zur Berechnung von Integralen, die analytisch schwer zu lösen sind – Buffons Idee unterstützt unsere Welt bis heute in vielfältiger Form.
+Darüber hinaus ist dieses Problem als Ursprung der Monte-Carlo-Methode, die für die moderne Wissenschaft und Technologie unverzichtbar ist, von historischer Bedeutung. Die Simulation komplexer Systeme und die Berechnung von Integralen, die analytisch schwer zu lösen sind, Buffons Idee unterstützt unsere Welt auch heute noch in verschiedenen Formen.
 
-Warum nicht Papier, Stift und ein paar Zahnstocher bereithalten und dieses großartige Stück Mathematikgeschichte zu Hause selbst erleben?
+Warum nicht etwas Papier, einen Stift und ein paar Zahnstocher vorbereiten und einen Teil dieser großartigen mathematischen Geschichte zu Hause erleben?

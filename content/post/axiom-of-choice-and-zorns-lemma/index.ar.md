@@ -4,7 +4,7 @@ description: "نتعمق في بديهية الاختيار ومبرهنة زو�
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["رياضيات", "نظرية-المجموعات"]
 tags: ["بديهية الاختيار", "مبرهنة زورن", "نظام بديهيات ZFC", "أسس الرياضيات", "Mermaid", "KaTeX"]
 ---
 
@@ -23,7 +23,7 @@ tags: ["بديهية الاختيار", "مبرهنة زورن", "نظام بد�
 في نظام بديهيات زيرميلو-فرينكل (ZF)، وهو النظام البديهي المعياري في نظرية المجموعات، تُصاغ بديهية الاختيار (AC) على النحو التالي:
 
 $$
-\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{s.t.} \quad \forall A \in X, f(A) \in A \right)
+\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{بحيث} \quad \forall A \in X, f(A) \in A \right)
 $$
 
 هنا، تُسمى الدالة $f$ **دالة الاختيار** (choice function). أي أنها تدّعي وجود دالة تُعيّن لكل مجموعة غير فارغة $A$ تنتمي إلى عائلة المجموعات $X$ عنصراً $f(A)$ منها.
@@ -50,7 +50,7 @@ $$
 > في مجموعة مرتبة جزئياً $(P, \le)$ غير فارغة، إذا كان لكل مجموعة جزئية مرتبة كلياً (سلسلة) حد أعلى، فإن $P$ تحتوي على عنصر أعظمي واحد على الأقل.
 
 $$
-\text{If every chain } C \subseteq P \text{ has an upper bound, then } P \text{ has a maximal element.}
+\text{إذا كانت كل سلسلة } C \subseteq P \text{ لها حد أعلى، فإن } P \text{ لها عنصر أعظمي.}
 $$
 
 ### 2.2. ترتيب المصطلحات
@@ -133,7 +133,7 @@ graph LR
 > يمكن تقسيم كرة مصمتة في الفضاء الإقليدي ثلاثي الأبعاد إلى عدد منتهٍ من الأجزاء (مثلاً 5 قطع). ثم بإعادة ترتيب هذه الأجزاء بالدوران والانسحاب فقط (حركات جسم صلب) وتجميعها مجدداً، يمكن تكوين **كرتين** بنفس حجم الكرة الأصلية تماماً.
 
 $$
-1 \text{ Sphere} \xrightarrow{\text{Cut into } 5 \text{ pieces, Rotate \& Translate}} 2 \text{ Spheres of same size}
+1 \text{ كرة} \xrightarrow{\text{تقسيم إلى } 5 \text{ قطع، تدوير وإزاحة}} 2 \text{ كرتان بنفس الحجم}
 $$
 
 ### 5.2. لماذا يحدث هذا؟
@@ -147,7 +147,7 @@ $$
 ومع ذلك، تتبنى الرياضيات المعيارية الحديثة **نظام بديهيات ZFC** (Zermelo-Fraenkel set theory with the axiom of Choice) — أي نظرية زيرميلو-فرينكل مع بديهية الاختيار — كأساس راسخ.
 
 $$
-\text{ZFC} = \text{ZF} + \text{Axiom of Choice}
+\text{ZFC} = \text{ZF} + \text{بديهية الاختيار}
 $$
 
 ### لماذا قُبل نظام ZFC؟

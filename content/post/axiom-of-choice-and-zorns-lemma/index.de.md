@@ -4,7 +4,7 @@ description: "Ein tiefer Einblick in das Auswahlaxiom und das Lemma von Zorn –
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["mathematik", "mengenlehre"]
 tags: ["Auswahlaxiom", "Lemma von Zorn", "ZFC-Axiomensystem", "Grundlagen der Mathematik", "Mermaid", "KaTeX"]
 ---
 
@@ -23,7 +23,7 @@ Im Alltagsverständnis erscheint es, wenn man mehrere Kisten hat, die jeweils mi
 Im Standardaxiomensystem der Mengenlehre, der Zermelo-Fraenkel-Mengenlehre (ZF), wird das Auswahlaxiom (AC) wie folgt formalisiert:
 
 $$
-\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{s.t.} \quad \forall A \in X, f(A) \in A \right)
+\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{s.d.} \quad \forall A \in X, f(A) \in A \right)
 $$
 
 Dabei wird die Funktion $f$ als **Auswahlfunktion** (choice function) bezeichnet. Das heißt, es wird die Existenz einer Funktion behauptet, die jeder nichtleeren Menge $A$ aus der Mengenfamilie $X$ eines ihrer Elemente $f(A)$ zuordnet.
@@ -50,7 +50,7 @@ Das Lemma von Zorn ist die folgende Behauptung über halbgeordnete Mengen:
 > In einer nichtleeren halbgeordneten Menge $(P, \le)$ besitzt $P$ mindestens ein maximales Element, wenn jede total geordnete Teilmenge (Kette) eine obere Schranke hat.
 
 $$
-\text{If every chain } C \subseteq P \text{ has an upper bound, then } P \text{ has a maximal element.}
+\text{Wenn jede Kette } C \subseteq P \text{ eine obere Schranke hat, dann hat } P \text{ ein maximales Element.}
 $$
 
 ### 2.2. Begriffsklärung
@@ -133,7 +133,7 @@ Während das Auswahlaxiom der Mathematik enorme Macht verleiht, führt es auch z
 > Eine Vollkugel im dreidimensionalen euklidischen Raum kann in endlich viele Teile (zum Beispiel 5 Stücke) zerlegt werden. Durch Umordnung dieser Teile ausschließlich durch Drehungen und Verschiebungen (starre Bewegungen) und erneutes Zusammensetzen können **zwei** Kugeln von exakt derselben Größe wie die ursprüngliche erzeugt werden.
 
 $$
-1 \text{ Sphere} \xrightarrow{\text{Cut into } 5 \text{ pieces, Rotate \& Translate}} 2 \text{ Spheres of same size}
+1 \text{ Kugel} \xrightarrow{\text{Zerlegt in } 5 \text{ Teile, Rotation \& Translation}} 2 \text{ Kugeln gleicher Größe}
 $$
 
 ### 5.2. Warum geschieht das?
@@ -147,7 +147,7 @@ Aufgrund kontraintuitiver Ergebnisse wie dem Satz von Banach-Tarski lehnten viel
 Die moderne Standardmathematik hat jedoch das **ZFC-Axiomensystem** (Zermelo-Fraenkel-Mengenlehre mit dem Auswahlaxiom) als ihr festes Fundament übernommen.
 
 $$
-\text{ZFC} = \text{ZF} + \text{Axiom of Choice}
+\text{ZFC} = \text{ZF} + \text{Auswahlaxiom}
 $$
 
 ### Warum wurde ZFC akzeptiert?

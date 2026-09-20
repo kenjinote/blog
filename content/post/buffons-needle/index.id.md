@@ -1,96 +1,96 @@
 ---
-title: Jarum Buffon - Probabilitas Klasik yang Menemukan Pi hanya dengan Menjatuhkan Jarum
-description: Bisakah kamu mencari nilai pi hanya dengan menjatuhkan jarum ke lantai? Kami memberikan penjelasan rinci tentang jarum Buffon, masalah probabilitas klasik yang diajukan pada abad ke-18, mencakup segala hal mulai dari pembuktian matematis hingga simulasi.
-slug: buffons-needle
-date: '2026-09-14T13:20:38+09:00'
-image: eyecatch.jpg
+title: "Jarum Buffon - Masalah probabilitas klasik di mana menjatuhkan jarum menemukan Pi"
+description: "Bisakah Anda menemukan Pi (π) hanya dengan menjatuhkan jarum di lantai? Kami menjelaskan secara rinci masalah klasik teori probabilitas yang menakjubkan yang diusulkan pada abad ke-18, Jarum Buffon, dari pembuktian matematisnya hingga simulasi."
+slug: "buffons-needle"
+date: 2026-09-14T13:20:38+09:00
+image: "eyecatch.jpg"
 categories: ["mathematics", "probability-theory"]
 tags:
-- Pi
-- Simulasi
-- Probabilitas Geometris
+  - "Pi"
+  - "Simulasi"
+  - "Probabilitas geometris"
 ---
 
-# Apa Itu Jarum Buffon?
+# Apa itu Jarum Buffon?
 
-Dunia matematika mengandung banyak fakta mengejutkan yang menentang intuisi, dan teorema indah yang secara cemerlang menghubungkan fenomena yang tampaknya tidak berhubungan. Di antara masalah yang paling terkenal dan menarik adalah **"Jarum Buffon"** (masalah jarum Buffon).
+Di dunia matematika, ada banyak teorema indah di mana fakta mengejutkan yang berlawanan dengan intuisi atau peristiwa yang tampaknya tidak berhubungan terhubung dengan indah. Salah satu masalah yang paling terkenal dan menarik di antaranya adalah **masalah jarum Buffon**.
 
-Masalah ini diajukan pada tahun 1733 dan pertama kali diselesaikan pada tahun 1777 oleh Georges-Louis Leclerc, Comte de Buffon, seorang naturalis dan matematikawan Perancis abad ke-18.
+Masalah ini diusulkan pada tahun 1733 oleh Georges-Louis Leclerc, Comte de Buffon, seorang naturalis dan matematikawan Prancis abad ke-18, dan pertama kali dipecahkan pada tahun 1777.
 
-Hebatnya, soal ini menunjukkan bahwa salah satu konstanta terpenting dalam matematika — **pi $\pi$** — dapat ditentukan melalui tindakan yang sangat fisik dan acak, yaitu "menjatuhkan jarum secara acak ke lantai". Hal ini dikenal sebagai salah satu masalah paling awal dalam probabilitas geometri, dan merupakan penemuan inovatif yang dapat dianggap sebagai pendahulu metode Monte Carlo.
+Yang mengejutkan, masalah ini menyatakan bahwa melalui tindakan yang sangat fisik dan acak yaitu "menjatuhkan jarum secara acak di lantai", seseorang dapat menentukan salah satu konstanta terpenting dalam matematika, **Pi $\pi$**. Ini dikenal sebagai salah satu masalah paling awal dalam probabilitas geometris dan merupakan penemuan perintis yang dapat dikatakan sebagai pelopor metode Monte Carlo di kemudian hari.
 
-Pada artikel ini, kami memberikan penjelasan rinci dan mudah diakses tentang **Jarum Buffon**, yang mencakup pengaturan masalah, pembuktian matematisnya, dan estimasi pi melalui simulasi menggunakan komputer modern.
+Dalam artikel ini, kami akan menjelaskan secara rinci dan dengan cara yang mudah dipahami, mulai dari pengaturan masalah **Jarum Buffon**, pembuktian matematisnya, hingga perkiraan Pi melalui simulasi menggunakan komputer modern.
 
-## Pengaturan Masalah Dasar
+## Pengaturan Dasar Masalah
 
-Penyelesaian masalah jarum suntik Buffon sangatlah sederhana.
+Pengaturan masalah jarum Buffon sangat sederhana.
 
-1. Di lantai datar, banyak garis sejajar ditarik dengan interval yang sama $d$.
+1. Di lantai yang datar, banyak garis lurus paralel digambar dengan jarak yang sama $d$.
 2. Sebuah jarum tunggal dengan panjang $l$ disiapkan.
-3. Jarum dijatuhkan secara acak ke lantai.
+3. Jarum ini dijatuhkan secara acak di lantai.
 
-Pertanyaan yang diajukan Buffon adalah: **"Berapa peluang jarum yang terjatuh melewati salah satu garis sejajar yang tergambar di lantai?"**
+Pada saat ini, **"Berapa probabilitas jarum yang dijatuhkan akan melintasi salah satu garis paralel yang digambar di lantai?"** adalah masalah yang diusulkan oleh Buffon.
 
-Diagram berikut menunjukkan alur konseptual percobaan ini.
+Diagram berikut menunjukkan alur konseptual dari eksperimen ini.
 
 ```mermaid
 graph TD
     A["Jatuhkan jarum secara acak"] -->|"Gravitasi dan hambatan udara"| B["Mendarat di lantai"]
-    B --> C{"Apakah itu melewati batas?"}
-    C -->|"Ya"| D["Dihitung sebagai penyeberangan (+1)"]
-    C -->|"TIDAK"| E["Tidak boleh menyeberang"]
+    B --> C{"Apakah melintasi garis?"}
+    C -->|"Ya"| D["Hitung persilangan (+1)"]
+    C -->|"Tidak"| E["Tidak ada persilangan"]
     D --> F["Hitung probabilitas P"]
     E --> F
-    F -->|"P = 2l / (πd)"| G["Hitung pi mundur"]
+    F -->|"P = 2l / (πd)"| G["Hitung mundur Pi π"]
 ```
 
-Di sini, untuk menyederhanakan masalah, kami mempertimbangkan kasus **jarum pendek** di mana panjang jarum $l$ kurang dari atau sama dengan jarak garis $d$ ($l \le d$). Dalam kondisi ini, jarum tidak akan pernah bisa melewati lebih dari satu garis dalam satu waktu.
+Di sini, untuk menyederhanakan masalah, kami mempertimbangkan kasus **jarum pendek**, di mana panjang jarum $l$ kurang dari atau sama dengan jarak garis paralel $d$ ($l \le d$). Di bawah kondisi ini, jarum tidak akan pernah melintasi dua garis lurus atau lebih pada saat yang bersamaan.
 
-## Pemodelan Matematika dan Penurunan Probabilitas
+## Pemodelan Matematis dan Derivasi Probabilitas
 
-Untuk menyelesaikan masalah ini secara matematis, kita perlu mengukur (memparameterkan) keadaan jarum. Kami berasumsi bahwa posisi dan orientasi jarum saat mendarat di lantai sepenuhnya acak.
+Untuk memecahkan masalah ini secara matematis, keadaan jarum perlu diukur (diparameterisasi). Ketika jarum jatuh ke lantai, kami berasumsi posisi dan orientasinya benar-benar acak.
 
-Untuk menentukan posisi jarum, kita mendefinisikan dua variabel berikut.
+Untuk menentukan posisi jarum, kami mendefinisikan dua variabel berikut.
 
-1. $x$ : Jarak tegak lurus dari pusat jarum ke garis sejajar terdekat.
-2. $\theta$ : Sudut lancip (atau sudut siku-siku) antara jarum dan garis sejajar.
+1. $x$ : Jarak vertikal dari pusat jarum ke garis paralel terdekat.
+2. $\theta$ : Sudut lancip (atau sudut siku-siku) yang dibentuk oleh jarum dan garis paralel.
 
-### Rentang Variabel
+### Rentang Variabel yang Memungkinkan
 
-Pertama, mari kita pertimbangkan nilai apa yang dapat diambil oleh setiap variabel.
+Pertama, mari pertimbangkan nilai apa yang dapat diambil setiap variabel.
 
-- **Jarak $x$:** Bagian tengah jarum berada di antara dua garis sejajar yang berdekatan. Karena kita memperhitungkan jarak ke garis terdekat, maka nilai minimum $x$ adalah $0$ (saat titik tengah jarum berada pada satu garis) dan nilai maksimumnya adalah $\frac{d}{2}$ (saat titik tengah jarum tepat berada di tengah-tengah dua garis). Yaitu, $0 \le x \le \frac{d}{2}$. Karena jarum dijatuhkan secara acak, $x$ mengikuti **distribusi seragam** pada rentang ini. Fungsi kepadatan probabilitas adalah $\frac{2}{d}$.
-- **Sudut $\theta$:** Sudut antara jarum dan garis sejajar berkisar dari $0$ saat jarum sejajar dengan garis, hingga $\frac{\pi}{2}$ (90 derajat) saat tegak lurus. Berdasarkan simetri, kita tidak perlu mempertimbangkan sudut di luar ini. Oleh karena itu, $0 \le \theta \le \frac{\pi}{2}$. Karena orientasi jarum juga acak, $\theta$ mengikuti **distribusi seragam** pada rentang ini. Fungsi kepadatan probabilitas adalah $\frac{2}{\pi}$.
+- **Mengenai jarak $x$:** Pusat jarum jatuh di suatu tempat antara dua garis paralel yang berdekatan. Karena kita mempertimbangkan jarak ke garis terdekat, nilai minimum $x$ adalah $0$ (ketika pusat jarum berada di garis), dan nilai maksimumnya adalah $\frac{d}{2}$ (ketika pusat jarum tepat berada di tengah antara dua garis). Artinya, $0 \le x \le \frac{d}{2}$. Karena jarum dijatuhkan secara acak, $x$ mengikuti **distribusi seragam** dalam rentang ini. Fungsi kepadatan probabilitasnya adalah $\frac{2}{d}$.
+- **Mengenai sudut $\theta$:** Sudut yang dibentuk oleh jarum dan garis paralel mengambil nilai dari $0$ ketika jarum sejajar dengan garis lurus, hingga $\frac{\pi}{2}$ (90 derajat) ketika tegak lurus. Dari simetri, tidak perlu mempertimbangkan sudut yang lebih besar dari ini. Oleh karena itu, $0 \le \theta \le \frac{\pi}{2}$. Karena orientasi jarum juga acak, $\theta$ juga mengikuti **distribusi seragam** dalam rentang ini. Fungsi kepadatan probabilitasnya adalah $\frac{2}{\pi}$.
 
-Karena variabel $x$ dan $\theta$ tidak bergantung satu sama lain, fungsi kepadatan probabilitas gabungan $f(x, \theta)$ untuk pasangan tertentu $(x, \theta)$ dinyatakan sebagai produk dari fungsi kepadatan probabilitas individualnya.
+Karena variabel $x$ dan $\theta$ independen satu sama lain, fungsi kepadatan probabilitas gabungan $f(x, \theta)$ bahwa mereka mengambil pasangan tertentu $(x, \theta)$ dinyatakan sebagai produk dari fungsi kepadatan probabilitas masing-masing.
 
 $$
 f(x, \theta) = \frac{2}{d} \times \frac{2}{\pi} = \frac{4}{d\pi}
 $$
 
-### Kondisi Persimpangan
+### Kondisi Persilangan
 
-Selanjutnya mari kita perhatikan kondisi jarum melewati suatu garis.
-Jarum melintasi suatu garis bila jarak vertikal dari pusat jarum ke ujungnya lebih besar atau sama dengan jarak $x$ ke garis terdekat.
+Selanjutnya, pertimbangkan kondisi agar jarum melintasi garis lurus.
+Jarum melintasi garis lurus ketika panjang vertikal dari pusat jarum ke ujungnya lebih besar dari atau sama dengan jarak $x$ ke garis terdekat.
 
-Karena panjang jarum adalah $l$, maka jarak dari pusat ke ujung adalah $\frac{l}{2}$.
-Jika sudutnya adalah $\theta$, jarak vertikal yang ditempati oleh separuh jarum ini (panjang yang diproyeksikan) adalah $\frac{l}{2} \sin \theta$.
+Karena panjang jarum adalah $l$, panjang dari pusat ke ujung adalah $\frac{l}{2}$.
+Ketika sudutnya adalah $\theta$, jarak yang ditempati setengah jarum ini dalam arah vertikal (panjang yang diproyeksikan) adalah $\frac{l}{2} \sin \theta$.
 
-Oleh karena itu, syarat jarum melewati suatu garis dinyatakan dengan pertidaksamaan berikut.
+Oleh karena itu, kondisi agar jarum melintasi garis lurus dinyatakan oleh pertidaksamaan berikut.
 
 $$
 x \le \frac{l}{2} \sin \theta
 $$
 
-### Menghitung Probabilitas
+### Perhitungan Probabilitas
 
-Probabilitas $P$ bahwa jarum melintasi garis diperoleh dengan mengintegrasikan fungsi kepadatan probabilitas gabungan $f(x, \theta)$ pada wilayah yang memenuhi kondisi perpotongan.
+Probabilitas $P$ bahwa jarum melintasi garis diperoleh dengan mengintegrasikan fungsi kepadatan probabilitas gabungan $f(x, \theta)$ atas wilayah yang memenuhi kondisi persilangan.
 
 $$
-P = \iint_{\text{crossing region}} f(x, \theta) \, dx \, d\theta
+P = \iint_{\text{Area perpotongan}} f(x, \theta) \, dx \, d\theta
 $$
 
-Batas integrasi spesifiknya adalah: $\theta$ bervariasi dari $0$ hingga $\frac{\pi}{2}$, dan $x$ bervariasi dari $0$ hingga ambang batas $\frac{l}{2} \sin \theta$.
+Rentang integrasi spesifik adalah di mana $\theta$ berubah dari $0$ hingga $\frac{\pi}{2}$, dan $x$ berubah dari $0$ hingga nilai batas persilangan $\frac{l}{2} \sin \theta$.
 
 $$
 P = \int_{0}^{\frac{\pi}{2}} \int_{0}^{\frac{l}{2} \sin \theta} \frac{4}{d\pi} \, dx \, d\theta
@@ -108,56 +108,56 @@ $$
 P = \int_{0}^{\frac{\pi}{2}} \frac{2l}{d\pi} \sin \theta \, d\theta = \frac{2l}{d\pi} \int_{0}^{\frac{\pi}{2}} \sin \theta \, d\theta
 $$
 
-Karena integral $\sin \theta$ adalah $-\cos \theta$,
+Karena integral dari $\sin \theta$ adalah $-\cos \theta$,
 
 $$
 \int_{0}^{\frac{\pi}{2}} \sin \theta \, d\theta = \left[ -\cos \theta \right]_{0}^{\frac{\pi}{2}} = (-\cos \frac{\pi}{2}) - (-\cos 0) = -0 - (-1) = 1
 $$
 
-Oleh karena itu, probabilitas $P$ yang diinginkan adalah sebagai berikut.
+Oleh karena itu, probabilitas yang dibutuhkan $P$ adalah sebagai berikut.
 
 $$
 P = \frac{2l}{d\pi} \times 1 = \frac{2l}{\pi d}
 $$
 
-Ini adalah rumus dasar **Jarum Buffon**. Peluang jarum melintasi garis sama dengan dua kali panjang jarum $l$ dibagi hasil kali pi $\pi$ dan jarak garis $d$.
+Ini adalah rumus dasar **Jarum Buffon**. Probabilitas bahwa jarum melintasi garis adalah dua kali panjang jarum $l$, dibagi dengan produk Pi $\pi$ dan jarak antar garis $d$.
 
 ## Memperkirakan Pi (Metode Monte Carlo)
 
-Rumus turunan $P = \frac{2l}{\pi d}$ dengan indahnya mengandung $\pi$. Memecahkan $\pi$, kita mendapatkan:
+Rumus yang diturunkan $P = \frac{2l}{\pi d}$ dengan indah mencakup $\pi$. Memecahkan ini untuk $\pi$ memberikan yang berikut.
 
 $$
 \pi = \frac{2l}{P d}
 $$
 
-Persamaan ini berarti jika kita mengetahui probabilitas $P$, kita dapat menghitung pi $\pi$. Tentu saja, probabilitas sebenarnya $P$ memerlukan jumlah percobaan yang tak terhingga, namun dengan menjatuhkan jarum berkali-kali dalam eksperimen sebenarnya, kita dapat memperoleh perkiraan $P$.
+Persamaan ini berarti bahwa jika hanya probabilitas $P$ yang diketahui, Pi $\pi$ dapat dihitung. Tentu saja, probabilitas sejati $P$ tidak dapat diketahui tanpa percobaan dalam jumlah tak terbatas, tetapi dengan menjatuhkan jarum berkali-kali dalam eksperimen yang sebenarnya, nilai perkiraan $P$ dapat diperoleh.
 
-Misalkan $N$ adalah jumlah total jarum yang jatuh, dan $C$ adalah berapa kali jarum melintasi garis.
-Jika jumlah percobaan $N$ cukup besar, berdasarkan hukum bilangan besar, probabilitas empiris $\frac{C}{N}$ mendekati probabilitas teoritis $P$.
+Misalkan $N$ menjadi jumlah total jarum yang dijatuhkan, dan $C$ menjadi jumlah jarum yang melintasi garis.
+Jika jumlah percobaan $N$ cukup besar, menurut hukum bilangan besar, probabilitas empiris $\frac{C}{N}$ mendekati probabilitas teoritis $P$.
 
 $$
 P \approx \frac{C}{N}
 $$
 
-Mengganti persamaan ini ke persamaan sebelumnya memberi kita rumus untuk memperkirakan pi $\pi$.
+Mengganti ini ke dalam persamaan sebelumnya memberikan rumus untuk menemukan nilai perkiraan Pi $\pi$.
 
 $$
 \pi \approx \frac{2l \cdot N}{C \cdot d}
 $$
 
-Perhitungan paling sederhana terjadi ketika panjang jarum $l$ dan jarak garis $d$ sama ($l = d$). Dalam hal ini, rumusnya lebih disederhanakan.
+Perhitungan termudah adalah ketika panjang jarum $l$ dan jarak garis $d$ sama ($l = d$). Pada saat ini, rumus menjadi lebih sederhana.
 
 $$
 \pi \approx \frac{2N}{C}
 $$
 
-Dengan kata lain, Anda dapat mencari pi hanya dengan membagi dua kali jumlah jarum yang jatuh dengan jumlah persilangan!
+Dengan kata lain, cukup bagi dua kali "jumlah jarum yang dijatuhkan" dengan "jumlah jarum yang melintas", dan Pi diperoleh!
 
-### Simulasi Python
+### Simulasi dengan Python
 
-Menjatuhkan jarum ribuan kali dengan tangan adalah tugas yang sangat membosankan (walaupun secara historis, ada ahli matematika yang benar-benar melakukan ribuan eksperimen semacam itu). Di zaman modern ini, kita dapat dengan mudah melakukan simulasi percobaan ini menggunakan komputer.
+Menjatuhkan jarum ribuan kali dengan tangan adalah tugas yang sangat melelahkan (walaupun secara historis, ada matematikawan yang benar-benar melakukan eksperimen ribuan kali). Saat ini, kita dapat dengan mudah mensimulasikan eksperimen ini menggunakan komputer.
 
-Di bawah ini adalah contoh kode Python sederhana yang menyimulasikan eksperimen jarum Buffon dan memperkirakan pi.
+Di bawah ini adalah contoh kode sederhana menggunakan Python untuk mensimulasikan eksperimen jarum Buffon dan memperkirakan Pi.
 
 ```python
 import random
@@ -165,54 +165,54 @@ import math
 
 def buffons_needle_simulation(num_trials, l, d):
     """
-    Function to simulate Buffon's needle and estimate pi
-
-    :param num_trials: Number of needle drops
-    :param l: Length of the needle
-    :param d: Spacing between parallel lines
-    :return: Estimated value of pi
+    Sebuah fungsi untuk mensimulasikan jarum Buffon dan memperkirakan Pi
+    
+    :param num_trials: Jumlah jarum yang dijatuhkan
+    :param l: Panjang jarum
+    :param d: Jarak garis paralel
+    :return: Perkiraan Pi
     """
     crosses = 0
     
     for _ in range(num_trials):
-        # Randomly generate distance x from the needle's center to the nearest line (0 to d/2)
+        # Hasilkan secara acak jarak x dari pusat jarum ke garis terdekat (0 hingga d/2)
         x = random.uniform(0, d / 2.0)
         
-        # Randomly generate needle angle theta (0 to pi/2)
+        # Hasilkan secara acak sudut theta dari jarum (0 hingga pi/2)
         theta = random.uniform(0, math.pi / 2.0)
         
-        # Check if the crossing condition is satisfied
+        # Periksa apakah kondisi persilangan terpenuhi
         if x <= (l / 2.0) * math.sin(theta):
             crosses += 1
             
-    # Exception handling to avoid errors when no crossings occur
+    # Penanganan pengecualian untuk menghindari kesalahan jika tidak pernah melintas
     if crosses == 0:
         return float('inf')
         
-    # Estimate pi
+    # Perhitungan perkiraan Pi
     estimated_pi = (2.0 * l * num_trials) / (d * crosses)
     return estimated_pi
 
-# Parameter settings
-N = 1000000  # Number of trials (1 million)
+# Pengaturan parameter
+N = 1000000  # Jumlah percobaan (1 juta kali)
 needle_length = 1.0
 line_distance = 1.0
 
-# Run the simulation
+# Jalankan simulasi
 estimated_pi = buffons_needle_simulation(N, needle_length, line_distance)
 
-print(f"Number of trials: {N:,}")
-print(f"Estimated pi:     {estimated_pi}")
-print(f"Actual pi:        {math.pi}")
-print(f"Error:            {abs(math.pi - estimated_pi)}")
+print(f"Jumlah percobaan: {N:,} kali")
+print(f"Perkiraan Pi:     {estimated_pi}")
+print(f"Pi sebenarnya:    {math.pi}")
+print(f"Kesalahan:        {abs(math.pi - estimated_pi)}")
 ```
 
-Saat Anda menjalankan kode ini, sejumlah besar jarum virtual dijatuhkan menggunakan angka acak, dan Anda dapat memverifikasi bahwa perkiraan $3.1415...$ — nilai pi — yang sangat akurat diperoleh. Teknik menggunakan bilangan acak untuk menemukan solusi perkiraan masalah probabilistik disebut **metode Monte Carlo**.
+Menjalankan kode ini menjatuhkan sejumlah besar jarum virtual menggunakan angka acak, dan dapat dikonfirmasi bahwa nilai perkiraan Pi sebesar $3.1415...$ diperoleh dengan akurasi yang sangat tinggi. Metode menggunakan angka acak untuk menemukan solusi perkiraan untuk masalah probabilistik dengan cara ini disebut **metode Monte Carlo**.
 
-## Kesimpulan
+## Ringkasan
 
-Pada pandangan pertama, jarum Buffon mungkin tampak seperti permainan peluang fisik belaka, namun di baliknya terdapat teori matematika yang kuat. Cara kejadian acak (probabilitas), bentuk geometris (garis dan ruas garis), dan bilangan irasional akhir $\pi$ digabungkan menjadi satu rumus sederhana benar-benar mewujudkan keindahan matematika.
+Jarum Buffon sekilas tampak hanya permainan peluang fisik, tetapi ada teori matematika yang kuat di baliknya. Cara peristiwa acak (probabilitas), bentuk geometris (garis dan segmen garis), dan bilangan irasional pamungkas $\pi$ bergabung menjadi satu rumus matematika sederhana mewujudkan keindahan matematika.
 
-Lebih jauh lagi, masalah ini memiliki makna sejarah sebagai asal mula metode Monte Carlo, yang sangat diperlukan dalam ilmu pengetahuan dan teknologi modern. Dari simulasi sistem yang kompleks hingga penghitungan integral yang sulit diselesaikan secara analitis, ide Buffon terus mendukung dunia kita dalam berbagai bentuk hingga saat ini.
+Juga, masalah ini memiliki kepentingan sejarah sebagai asal dari metode Monte Carlo, yang sangat diperlukan untuk ilmu pengetahuan dan teknologi modern. Mensimulasikan sistem yang kompleks dan menghitung integral yang sulit dipecahkan secara analitis, gagasan Buffon masih mendukung dunia kita dalam berbagai bentuk saat ini.
 
-Mengapa tidak mengambil kertas, pena, dan beberapa tusuk gigi, dan merasakan sejarah matematika yang luar biasa ini di rumah?
+Mengapa tidak menyiapkan kertas, pena, dan beberapa tusuk gigi, dan rasakan sebagian dari sejarah matematika yang hebat ini di rumah?

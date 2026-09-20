@@ -4,7 +4,7 @@ description: "Mendalami aksioma pilihan dan lemma Zorn, dari makna intuitifnya h
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["matematika", "teori-himpunan"]
 tags: ["Aksioma Pilihan", "Lemma Zorn", "Sistem Aksioma ZFC", "Fondasi Matematika", "Mermaid", "KaTeX"]
 ---
 
@@ -23,7 +23,7 @@ Dalam kehidupan sehari-hari, jika ada beberapa kotak dan setiap kotak berisi set
 Dalam teori himpunan Zermelo-Fraenkel (ZF), yaitu sistem aksioma standar dalam teori himpunan, aksioma pilihan (AC) diformulasikan sebagai berikut:
 
 $$
-\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{s.t.} \quad \forall A \in X, f(A) \in A \right)
+\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{s.d.} \quad \forall A \in X, f(A) \in A \right)
 $$
 
 Di sini, fungsi $f$ disebut **fungsi pilihan** (choice function). Artinya, pernyataan ini mengklaim bahwa terdapat fungsi yang menetapkan elemen $f(A)$ untuk setiap himpunan tak kosong $A$ yang termasuk dalam keluarga himpunan $X$.
@@ -50,7 +50,7 @@ Lemma Zorn adalah pernyataan mengenai himpunan terurut parsial:
 > Dalam himpunan terurut parsial $(P, \le)$ yang tak kosong, jika setiap subhimpunan terurut total (rantai) memiliki batas atas, maka $P$ memiliki setidaknya satu elemen maksimal.
 
 $$
-\text{If every chain } C \subseteq P \text{ has an upper bound, then } P \text{ has a maximal element.}
+\text{Jika setiap rantai } C \subseteq P \text{ memiliki batas atas, maka } P \text{ memiliki elemen maksimal.}
 $$
 
 ### 2.2. Penataan Istilah
@@ -133,7 +133,7 @@ Sementara aksioma pilihan memberikan kekuatan besar pada matematika, ia juga men
 > Sebuah bola pejal dalam ruang Euklides tiga dimensi dapat dipecah menjadi sejumlah hingga bagian (misalnya 5 potongan). Dengan mengatur ulang dan merakit kembali bagian-bagian tersebut hanya melalui rotasi dan translasi (gerak benda tegar), dapat dibuat **dua** bola dengan ukuran yang persis sama dengan bola aslinya.
 
 $$
-1 \text{ Sphere} \xrightarrow{\text{Cut into } 5 \text{ pieces, Rotate \& Translate}} 2 \text{ Spheres of same size}
+1 \text{ Bola} \xrightarrow{\text{Dipotong menjadi } 5 \text{ bagian, Rotasi \& Translasi}} 2 \text{ Bola dengan ukuran yang sama}
 $$
 
 ### 5.2. Mengapa Hal Ini Bisa Terjadi?
@@ -147,7 +147,7 @@ Karena hasil yang berlawanan dengan intuisi seperti teorema Banach-Tarski, banya
 Namun, matematika standar modern mengadopsi **sistem aksioma ZFC** (Zermelo-Fraenkel set theory with the axiom of Choice) — teori himpunan Zermelo-Fraenkel ditambah aksioma pilihan — sebagai fondasi yang kokoh.
 
 $$
-\text{ZFC} = \text{ZF} + \text{Axiom of Choice}
+\text{ZFC} = \text{ZF} + \text{Aksioma Pilihan}
 $$
 
 ### Mengapa ZFC Diterima?

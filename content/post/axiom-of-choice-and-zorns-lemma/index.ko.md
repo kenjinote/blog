@@ -4,7 +4,7 @@ description: "선택 공리와 초른의 보조정리에 대해, 직관적인 �
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["수학", "집합론"]
 tags: ["선택 공리", "초른의 보조정리", "ZFC 공리계", "수학기초론", "Mermaid", "KaTeX"]
 ---
 
@@ -50,7 +50,7 @@ $$
 > 공이 아닌 반순서 집합 $(P, \le)$에서, 그 임의의 전순서 부분집합(사슬)이 상계를 가지면, $P$는 적어도 하나의 극대 원소를 가진다.
 
 $$
-\text{If every chain } C \subseteq P \text{ has an upper bound, then } P \text{ has a maximal element.}
+\text{모든 사슬 } C \subseteq P \text{ 이 상계를 가지면, } P \text{ 는 극대 원소를 가진다.}
 $$
 
 ### 2.2. 용어 정리
@@ -133,7 +133,7 @@ graph LR
 > 3차원 유클리드 공간 안의 구체(속이 찬 공)를 유한 개의 조각(예를 들어 5개의 조각)으로 분할한다. 그 조각들을 회전과 평행 이동(강체 운동)만으로 재배치하여 다시 조립하면, 원래 공과 완전히 같은 크기의 구체를 **2개** 만들 수 있다.
 
 $$
-1 \text{ Sphere} \xrightarrow{\text{Cut into } 5 \text{ pieces, Rotate \& Translate}} 2 \text{ Spheres of same size}
+1 \text{ 구} \xrightarrow{\text{분할 } 5 \text{ 조각, 회전 \& 평행이동}} 2 \text{ 같은 크기의 구}
 $$
 
 ### 5.2. 왜 이런 일이 발생하는가?
@@ -147,7 +147,7 @@ $$
 하지만, 현대의 표준적인 수학은 체르멜로-프렌켈 집합론에 선택 공리를 더한 **ZFC 공리계** (Zermelo-Fraenkel set theory with the axiom of Choice)를 확고한 기초로 채택하고 있습니다.
 
 $$
-\text{ZFC} = \text{ZF} + \text{Axiom of Choice}
+\text{ZFC} = \text{ZF} + \text{선택 공리}
 $$
 
 ### 왜 ZFC가 받아들여졌는가?

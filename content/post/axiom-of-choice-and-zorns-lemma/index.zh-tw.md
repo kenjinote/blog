@@ -4,7 +4,7 @@ description: "深入探討選擇公理與佐恩引理，從直觀含義到數學
 slug: "axiom-of-choice-and-zorns-lemma"
 date: 2026-09-14T13:20:37+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["數學", "集合論"]
 tags: ["選擇公理", "佐恩引理", "ZFC 公理系統", "數學基礎", "Mermaid", "KaTeX"]
 ---
 
@@ -23,7 +23,7 @@ tags: ["選擇公理", "佐恩引理", "ZFC 公理系統", "數學基礎", "Merm
 在集合論的標準公理體系——策梅洛-弗蘭克爾集合論（ZF）中，選擇公理（AC）被形式化如下：
 
 $$
-\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{s.t.} \quad \forall A \in X, f(A) \in A \right)
+\forall X \left( \emptyset \notin X \implies \exists f: X \to \bigcup X \quad \text{使得} \quad \forall A \in X, f(A) \in A \right)
 $$
 
 其中，函數 $f$ 被稱為 **選擇函數** （choice function）。也就是說，它主張存在一個函數，能夠為集合族 $X$ 中的每一個非空集合 $A$ 分配其中的一個元素 $f(A)$。
@@ -50,7 +50,7 @@ $$
 > 在一個非空偏序集 $(P, \le)$ 中，如果其任意全序子集（鏈）都有上界，則 $P$ 至少有一個極大元。
 
 $$
-\text{If every chain } C \subseteq P \text{ has an upper bound, then } P \text{ has a maximal element.}
+\text{如果每個鏈 } C \subseteq P \text{ 都有上界，那麼 } P \text{ 至少有一個極大元。}
 $$
 
 ### 2.2. 術語整理
@@ -133,7 +133,7 @@ graph LR
 > 將三維歐幾里得空間中的一個球體（實心球）分割成有限個部分（例如5個碎片）。僅通過旋轉和平移（剛體運動）重新排列這些部分並重新組裝，就可以製造出與原來完全相同大小的球體 **2個** 。
 
 $$
-1 \text{ Sphere} \xrightarrow{\text{Cut into } 5 \text{ pieces, Rotate \& Translate}} 2 \text{ Spheres of same size}
+1 \text{ 球體} \xrightarrow{\text{切分成 } 5 \text{ 塊，旋轉 \& 平移}} 2 \text{ 同等大小的球體}
 $$
 
 ### 5.2. 為什麼會發生這樣的事？
@@ -147,7 +147,7 @@ $$
 然而，現代標準數學已將策梅洛-弗蘭克爾集合論加上選擇公理的 **ZFC 公理系統** （Zermelo-Fraenkel set theory with the axiom of Choice）作為堅實的基礎。
 
 $$
-\text{ZFC} = \text{ZF} + \text{Axiom of Choice}
+\text{ZFC} = \text{ZF} + \text{選擇公理}
 $$
 
 ### 為什麼 ZFC 被接受了？
