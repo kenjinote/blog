@@ -3,7 +3,7 @@ title: "कूपन संग्राहक समस्या: सभी प�
 description: "समान संभावना वाले 10 प्रकार के कार्ड इकट्ठा करने में औसतन लगभग 29.3 चयन लगते हैं, लेकिन 30 चयन तक पूरा होने की संभावना केवल लगभग 63% है। सूत्रों, ग्राफ़ और Python सिमुलेशन से समझें।"
 date: "2026-09-15T21:20:00+09:00"
 image: "eyecatch.png"
-categories: ["mathematics", "statistics"]
+categories: ["गणित", "statistics"]
 tags: ["प्रायिकता", "अपेक्षित मान", "कूपन संग्राहक समस्या", "Python"]
 slug: "coupon-collector-problem"
 math: true

@@ -4,7 +4,7 @@ description: "Глубокое погружение в существовани�
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["Математика", "physics"]
 tags: ["Уравнения Навье-Стокса", "Гидродинамика", "Задачи тысячелетия"]
 ---
 

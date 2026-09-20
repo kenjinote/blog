@@ -7,7 +7,7 @@ categories: ["probability-theory", "thought-experiment", "philosophy"]
 tags:
   - "Bayesian Inference"
   - "Doomsday Argument"
-  - "Mathematics"
+  - "Mathematik"
 slug: "doomsday-argument"
 ---
 

@@ -4,7 +4,7 @@ description: "日本で初めてフィールズ賞を受賞した数学者、小
 slug: "kodaira-kunihiko"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["Kodaira Kunihiko", "Fields Medal", "Complex Geometry"]
 ---
 

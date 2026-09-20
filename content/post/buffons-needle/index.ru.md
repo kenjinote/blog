@@ -4,7 +4,7 @@ description: "Можно ли найти Пи (π), просто бросив и
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "probability-theory"]
+categories: ["Математика", "probability-theory"]
 tags:
   - "Пи"
   - "Симуляция"

@@ -4,7 +4,7 @@ description: "An in-depth explanation of Siegel's life and his great mathematica
 slug: "siegel"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["Siegel", "number theory", "mathematician", "celestial mechanics", "analytic number theory", "Diophantine equations"]
 ---
 

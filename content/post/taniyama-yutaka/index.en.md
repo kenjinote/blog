@@ -4,7 +4,7 @@ description: 'A deep dive into the life of Yutaka Taniyama, the brilliant Japane
 slug: "taniyama-yutaka"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["Yutaka Taniyama", "Mathematics", "Fermat's Last Theorem", "Taniyama-Shimura Conjecture", "Elliptic Curves", "Modular Forms"]
 ---
 

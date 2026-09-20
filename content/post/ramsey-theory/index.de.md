@@ -3,7 +3,7 @@ title: "Ramsey-Theorie: Ordnung entsteht selbst im Chaos – Beweis anhand von B
 description: "Kommen 6 Personen zusammen, gibt es garantiert entweder 3 Personen, die sich alle kennen, oder 3 Personen, die sich alle nicht kennen. Dieser Artikel beweist die Ramsey-Zahl R(3,3)=6 anhand farbiger Diagramme, zeigt das 5-Personen-Gegenbeispiel, prüft alle 32.768 Färbungen und erklärt Anwendungen auf Zahlenfolgen sowie Netzwerke."
 date: 2026-09-16T20:05:00+09:00
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["Mathematik"]
 tags: ["Ramsey-Theorie", "Graphentheorie", "Kombinatorik", "Schubfachprinzip", "Python"]
 slug: "ramsey-theory"
 math: true

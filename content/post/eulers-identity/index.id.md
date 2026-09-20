@@ -4,7 +4,7 @@ description: "Penjelasan mendalam tentang latar belakang dan makna Identitas Eul
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Matematika"]
 tags: ["Euler", "Matematika", "Sains"]
 ---
 

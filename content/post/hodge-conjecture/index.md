@@ -4,7 +4,7 @@ description: "クレイ数学研究所のミレニアム懸賞問題の1つで�
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["数学", "science"]
 tags: ["Millennium Prize Problems", "Topology", "Algebraic Geometry", "Hodge Conjecture"]
 ---
 

@@ -4,7 +4,7 @@ description: "클레이 수학연구소의 밀레니엄 문제 중 하나인 나
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["수학", "physics"]
 tags: ["나비에-스토크스", "유체역학", "밀레니엄 문제"]
 ---
 

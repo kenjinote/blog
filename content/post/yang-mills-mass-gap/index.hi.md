@@ -4,7 +4,7 @@ description: "सहस्राब्दी पुरस्कार समस�
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["physics", "mathematics"]
+categories: ["physics", "गणित"]
 tags:
   - "यांग-मिल्स"
   - "मास गैप"

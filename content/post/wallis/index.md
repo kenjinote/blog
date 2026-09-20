@@ -5,13 +5,13 @@ slug: "wallis"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
-  - "biography"
+  - "数学"
+  - "人物伝"
 tags:
   - "John Wallis"
   - "Calculus"
   - "Infinity"
-  - "History of Mathematics"
+  - "History of 数学"
 ---
 
 ## はじめに：無限を記号化した17世紀の天才

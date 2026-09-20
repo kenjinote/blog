@@ -5,7 +5,7 @@ slug: "optimal-transport-problem"
 date: 2026-09-20T12:00:00+09:00
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
+  - "수학"
 tags:
   - "최적 운송"
   - "바서슈타인 거리"

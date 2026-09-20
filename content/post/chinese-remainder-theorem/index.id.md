@@ -4,7 +4,7 @@ description: "Menjelaskan tentang Teorema Sisa Tiongkok (CRT), yang berawal dari
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "cryptography"]
+categories: ["Matematika", "cryptography"]
 tags:
   - "Teorema Sisa Tiongkok"
   - "CRT"

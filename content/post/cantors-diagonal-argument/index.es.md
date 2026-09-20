@@ -4,7 +4,7 @@ description: "El infinito tiene diferencias de «tamaño». Explicamos detallada
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
+categories: ["Matemáticas", "foundations-of-Matemáticas", "set-theory"]
 tags: ["Cantor", "Argumento diagonal", "Infinito", "Matemáticas", "Demostración"]
 ---
 

@@ -4,7 +4,7 @@ description: "Una explicación detallada y matemática sobre la conjetura de Bir
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Matemáticas"]
 tags: ["Teoría de Números", "Curvas Elípticas", "Conjetura BSD", "Problemas del Milenio"]
 ---
 

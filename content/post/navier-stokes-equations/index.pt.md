@@ -4,7 +4,7 @@ description: "Um mergulho profundo na existência e suavidade das soluções das
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["Matemática", "physics"]
 tags: ["Navier-Stokes", "Dinâmica dos Fluidos", "Problemas do Prêmio Millennium"]
 ---
 

@@ -4,7 +4,7 @@ description: "Penjelasan mendalam tentang Teorema Bilangan Prima (Prime Number T
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "algorithms"]
+categories: ["Matematika", "algorithms"]
 tags:
   - "Teorema Bilangan Prima"
   - "Hipotesis Riemann"

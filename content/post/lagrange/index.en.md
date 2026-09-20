@@ -5,8 +5,8 @@ slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
-  - "biography"
+  - "Mathematics"
+  - "Biography"
 tags:
   - "Lagrange"
   - "Calculus of Variations"

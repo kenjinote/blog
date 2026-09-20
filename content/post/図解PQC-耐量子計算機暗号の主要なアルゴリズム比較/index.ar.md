@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "quantum-computing", "mathematics"]
+categories: ["cryptography", "quantum-computing", "رياضيات"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'شرح مفصل للتهديد الذي يمثله صعود الحواسيب الكمومية على أمان التشفير، والخوارزميات القياسية من NIST لتشفير ما بعد الكم (PQC) التي تتصدى له، مثل Kyber، Dilithium، FALCON، SPHINCS+ وغيرها، بدءاً من الأساس الرياضي للتشفير الشبكي (مشكلة LWE) ووصولاً إلى الآليات التفصيلية ومقارنة الأداء.'
 ---

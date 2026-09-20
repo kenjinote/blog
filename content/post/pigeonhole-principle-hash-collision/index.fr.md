@@ -3,7 +3,7 @@ title: "Le principe des tiroirs (ou des pigeons) et les collisions de hachage : 
 image: "eyecatch.jpg"
 date: "2026-09-14T00:00:00+09:00"
 description: "Pourquoi le concept si intuitif du « principe des tiroirs » est-il devenu la notion la plus importante pour la sécurité des technologies cryptographiques et des fonctions de hachage modernes ? Nous l'expliquons en détail à l'aide d'exemples concrets, de formules mathématiques et de schémas."
-categories: ["technology", "cryptography", "mathematics"]
+categories: ["technology", "cryptography", "Mathématiques"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]
 slug: "pigeonhole-principle-hash-collision"
 ---

@@ -4,7 +4,7 @@ description: "An easy-to-understand explanation of the physical background and m
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["physics", "mathematics"]
+categories: ["physics", "Mathematics"]
 tags:
   - "Yang-Mills"
   - "Mass Gap"

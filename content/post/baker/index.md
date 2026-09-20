@@ -4,7 +4,7 @@ description: "1970年にフィールズ賞を受賞したイギリスの数学�
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["Alan Baker", "Number Theory", "Fields Medal", "Transcendental Number Theory"]
 ---
 

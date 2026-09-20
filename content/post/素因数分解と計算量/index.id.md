@@ -5,7 +5,7 @@ date: '2026-09-11T23:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
-categories: ["mathematics", "computer-science", "cryptography"]
+categories: ["Matematika", "computer-science", "cryptography"]
 tags: ["Notasi Big O", "Faktorisasi Prima", "Algoritma", "RSA"]
 ---
 

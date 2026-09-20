@@ -4,7 +4,7 @@ description: '천재 수학자 존 폰 노이만의 생애, 게임 이론부터 
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['mathematics', 'biography']
+categories: ['수학', '전기']
 tags: ['존 폰 노이만', '양자역학', '게임 이론', '컴퓨터 과학', '수학자', '천재']
 ---
 

@@ -4,7 +4,7 @@ description: "Wir erklären ausführlich den berühmten \"Igel-Satz\" (Hairy Bal
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "topology"]
+categories: ["Mathematik", "topology"]
 tags:
   - "Math"
   - "Topology"

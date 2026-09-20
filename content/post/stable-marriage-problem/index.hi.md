@@ -3,7 +3,7 @@ title: "स्थिर विवाह समस्या: सबकी पस�
 description: "समीकरणों, आरेखों, पसंद की तालिकाओं और Python से गेल–शैप्ली एल्गोरिदम समझें। जानें कि स्थिर मिलान और सबको संतुष्ट करने वाला मिलान अलग क्यों हैं।"
 date: "2026-09-16T14:30:00+09:00"
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["गणित"]
 tags: ["स्थिर विवाह समस्या", "एल्गोरिदम", "खेल सिद्धांत", "मिलान", "Python"]
 slug: "stable-marriage-problem"
 math: true

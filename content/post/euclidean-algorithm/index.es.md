@@ -4,7 +4,7 @@ description: "Una guía completa sobre el algoritmo de Euclides para calcular el
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Matemáticas"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 

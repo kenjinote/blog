@@ -4,7 +4,7 @@ description: "Un guide complet sur l'algorithme d'Euclide pour calculer le plus 
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Mathématiques"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 

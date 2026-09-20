@@ -4,7 +4,7 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "في أي نقطة من تاريخ البشرية نحن؟ نشرح \"حجة يوم القيامة\" التي تتنبأ بوقت انقراض البشرية احتماليًا باستخدام مبدأ كوبرنيكوس والاستدلال البايزي، مع الرسوم التوضيحية والصيغ."
 categories: ["probability-theory", "thought-experiment", "philosophy"]
-tags: ["Bayesian Inference", "Doomsday Argument", "Mathematics"]
+tags: ["Bayesian Inference", "Doomsday Argument", "رياضيات"]
 slug: "doomsday-argument"
 ---
 

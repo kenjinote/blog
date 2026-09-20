@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["quantum-computing", "python", "mathematics"]
+categories: ["quantum-computing", "python", "Matemática"]
 tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: 'Uma explicação detalhada de como os computadores quânticos podem quebrar a criptografia atual, desde a base matemática do algoritmo de Shor até sua implementação em Python.'
 ---

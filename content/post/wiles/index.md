@@ -4,7 +4,7 @@ description: "「フェルマーの最終定理」を証明し、数学界に歴
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["Andrew Wiles", "Fermat", "Number Theory"]
 ---
 

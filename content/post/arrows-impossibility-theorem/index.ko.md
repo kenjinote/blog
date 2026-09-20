@@ -3,7 +3,7 @@ title: "애로의 불가능성 정리: 완벽한 '민주주의(선거)'는 수�
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "'누구에게나 공평한 선거 제도'는 만들 수 있을까요? 경제학자 케네스 애로가 증명한 '애로의 불가능성 정리'를 통해 민주주의의 수학적 한계와 우리가 어떻게 선거나 의사결정을 마주해야 하는지를 해설합니다."
-categories: ["mathematics", "economics"]
+categories: ["수학", "economics"]
 tags:
   - "의사결정론"
   - "애로의 불가능성 정리"

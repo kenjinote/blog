@@ -4,7 +4,7 @@ description: 'Подробное объяснение жизни гениаль�
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['mathematics', 'biography']
+categories: ['Математика', 'Биография']
 tags: ['Джон фон Нейман', 'Квантовая механика', 'Теория игр', 'Информатика', 'Математик', 'Гений']
 ---
 

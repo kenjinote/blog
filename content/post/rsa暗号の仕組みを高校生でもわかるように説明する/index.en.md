@@ -5,7 +5,7 @@ date: "2026-09-11T13:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["mathematics", "cryptography"]
+categories: ["Mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 

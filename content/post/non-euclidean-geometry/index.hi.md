@@ -4,7 +4,7 @@ description: "यूक्लिड की समानांतर अभिध
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["गणित", "physics"]
 tags: ["ज्यामिति", "सापेक्षता", "विज्ञान का इतिहास", "गणित"]
 ---
 

@@ -4,7 +4,7 @@ description: "「谷山・志村予想」で知られる日本の天才数学者
 slug: "taniyama-yutaka"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["谷山豊", "数学", "フェルマーの最終定理", "谷山・志村予想", "楕円曲線", "モジュラー形式"]
 ---
 

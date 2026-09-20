@@ -4,7 +4,7 @@ description: "प्राचीन चीनी अंकगणितीय प
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "cryptography"]
+categories: ["गणित", "cryptography"]
 tags:
   - "चीनी शेषफल प्रमेय"
   - "CRT"

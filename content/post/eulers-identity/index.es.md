@@ -4,7 +4,7 @@ description: "Explicaremos en profundidad los antecedentes y el significado de l
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Matemáticas"]
 tags: ["Euler", "Matemáticas", "Ciencia"]
 ---
 

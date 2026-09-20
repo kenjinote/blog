@@ -4,7 +4,7 @@ description: "هل يمكنك إيجاد باي (π) بمجرد إسقاط إب�
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "probability-theory"]
+categories: ["رياضيات", "probability-theory"]
 tags:
   - "باي"
   - "محاكاة"

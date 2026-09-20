@@ -4,7 +4,7 @@ description: "Uma explicação detalhada sobre a história, a abordagem de prova
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "computer-science"]
+categories: ["Matemática", "computer-science"]
 tags: ["Teorema das Quatro Cores", "Teoria dos Grafos", "Prova Assistida por Computador", "Topologia"]
 ---
 

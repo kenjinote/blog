@@ -5,7 +5,7 @@ slug: "pell-equation"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
+  - "数学"
 tags:
   - "pell-equation"
   - "diophantine-equation"

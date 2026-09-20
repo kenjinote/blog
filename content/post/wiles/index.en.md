@@ -4,7 +4,7 @@ description: "Exploring the life and mathematical achievements of Andrew Wiles, 
 slug: "wiles"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["Andrew Wiles", "Fermat", "Number Theory"]
 ---
 

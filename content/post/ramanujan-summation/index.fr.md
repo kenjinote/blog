@@ -4,7 +4,7 @@ description: "Que se passe-t-il si l'on additionne « 1+2+3+4+... » à l'infini
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["Mathématiques", "physics"]
 tags:
   - "Série infinie"
   - "Prolongement analytique"

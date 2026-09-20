@@ -4,7 +4,7 @@ description: "自然言語から都市の規模、経済まで、世界を支配
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "data-science", "linguistics"]
+categories: ["数学", "data-science", "linguistics"]
 tags:
   - "Zipf's Law"
   - "Power Law"

@@ -4,7 +4,7 @@ description: "What happens if you infinitely add 1+2+3+4+...? Normally, it diver
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["Mathematics", "physics"]
 tags:
   - "Infinite series"
   - "Analytic continuation"

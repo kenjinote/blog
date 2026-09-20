@@ -4,7 +4,7 @@ description: "Unendlichkeiten können unterschiedliche „Größen“ haben. Wir
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
+categories: ["Mathematik", "foundations-of-Mathematik", "set-theory"]
 tags: ["Cantor", "Diagonalargument", "Unendlichkeit", "Mathematik", "Beweis"]
 ---
 

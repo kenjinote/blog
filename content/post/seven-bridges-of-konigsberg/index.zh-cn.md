@@ -4,7 +4,7 @@ description: "由18世纪数学家莱昂哈德·欧拉解决的“柯尼斯堡�
 slug: "seven-bridges-of-konigsberg"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "history"]
+categories: ["数学", "history"]
 tags: ["图论", "拓扑学", "欧拉", "数学"]
 ---
 

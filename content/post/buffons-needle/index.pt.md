@@ -4,7 +4,7 @@ description: "Você consegue encontrar Pi (π) apenas deixando cair uma agulha n
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "probability-theory"]
+categories: ["Matemática", "probability-theory"]
 tags:
   - "Pi"
   - "Simulação"

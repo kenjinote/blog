@@ -5,7 +5,7 @@ date: "2026-09-11T11:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "security", "mathematics"]
+categories: ["cryptography", "security", "رياضيات"]
 tags: ["FHE", "Homomorphic Encryption", "Cloud Computing", "Privacy"]
 ---
 

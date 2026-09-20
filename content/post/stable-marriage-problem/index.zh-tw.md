@@ -3,7 +3,7 @@ title: "穩定婚姻問題：如何組合所有人的意願？"
 description: "透過公式、關係圖、排名比較圖、表格與 Python，理解蓋爾–沙普利演算法，分清「穩定的配對」和「讓所有人滿意的配對」。"
 date: "2026-09-16T14:30:00+09:00"
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["數學"]
 tags: ["穩定婚姻問題", "演算法", "賽局理論", "配對", "Python"]
 slug: "stable-marriage-problem"
 math: true

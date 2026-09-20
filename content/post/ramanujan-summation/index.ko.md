@@ -4,7 +4,7 @@ description: "「1+2+3+4+...」을 무한히 더하면 어떻게 될까요? 평�
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["수학", "physics"]
 tags:
   - "무한급수"
   - "해석적 연속"

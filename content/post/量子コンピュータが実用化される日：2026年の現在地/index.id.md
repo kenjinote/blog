@@ -5,7 +5,7 @@ date: "2026-09-11T06:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["quantum-computing", "technology", "mathematics"]
+categories: ["quantum-computing", "technology", "Matematika"]
 tags: ["Quantum", "Error Correction", "Qubit", "2026"]
 ---
 

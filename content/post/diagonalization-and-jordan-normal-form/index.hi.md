@@ -4,7 +4,7 @@ description: "रैखिक बीजगणित में विकर्ण
 slug: "diagonalization-and-jordan-normal-form"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["गणित"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]
 ---
 

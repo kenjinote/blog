@@ -5,8 +5,8 @@ date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "cpp", "mathematics"]
-tags: ["ECC", "Cryptography", "C++", "Mathematics"]
+categories: ["cryptography", "cpp", "数学"]
+tags: ["ECC", "Cryptography", "C++", "数学"]
 ---
 
 # [楕円曲線暗号（ECC）の数学的基礎とC++での実装](https://kenji.blog/p/楕円曲線暗号の数学的基礎とcppでの実装/)

@@ -4,7 +4,7 @@ description: "カール・フリードリヒ・ガウスが発見した「驚異
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["数学", "science"]
 tags: ["幾何学", "ガウス", "ピザの定理", "Theorema Egregium", "微分幾何学"]
 ---
 

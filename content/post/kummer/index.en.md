@@ -4,7 +4,7 @@ description: "An in-depth look at the life of the great German mathematician Ern
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Number Theory", "Regular Primes"]
 ---
 

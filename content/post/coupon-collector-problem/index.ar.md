@@ -3,7 +3,7 @@ title: "مسألة جامع القسائم: كم سحبة نحتاج لإكما�
 description: "جمع 10 أنواع متساوية الاحتمال يحتاج إلى نحو 29.3 سحبة في المتوسط، لكن احتمال الاكتمال خلال 30 سحبة لا يتجاوز نحو 63%. شرح بالمعادلات والرسوم البيانية ومحاكاة Python."
 date: "2026-09-15T21:20:00+09:00"
 image: "eyecatch.png"
-categories: ["mathematics", "statistics"]
+categories: ["رياضيات", "statistics"]
 tags: ["الاحتمالات", "القيمة المتوقعة", "مسألة جامع القسائم", "Python"]
 slug: "coupon-collector-problem"
 math: true

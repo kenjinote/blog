@@ -4,7 +4,7 @@ description: "20歳で決闘によりこの世を去った天才数学者エヴ�
 slug: "galois"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["ガロア理論", "代数学", "群論", "歴史"]
 ---
 

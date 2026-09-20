@@ -4,7 +4,7 @@ description: "Can you find Pi (π) just by dropping a needle on the floor? We ex
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "probability-theory"]
+categories: ["Mathematics", "probability-theory"]
 tags:
   - "Pi"
   - "Simulation"

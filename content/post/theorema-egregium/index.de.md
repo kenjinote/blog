@@ -4,7 +4,7 @@ description: "Eine tiefergehende Erklärung über das von Carl Friedrich Gauss e
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["Mathematik", "science"]
 tags: ["Geometrie", "Gauss", "Pizza-Theorem", "Theorema Egregium", "Differentialgeometrie"]
 ---
 

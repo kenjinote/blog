@@ -4,7 +4,7 @@ description: "離散的な階乗を滑らかな曲線へとつなぐガンマ関
 slug: "gamma-function"
 date: 2026-09-20T14:40:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["数学"]
 tags: ["Gamma Function", "Euler", "Complex Analysis", "Calculus"]
 ---
 

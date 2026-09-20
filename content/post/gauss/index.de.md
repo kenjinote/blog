@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung des Lebens, erstaunlicher Episoden un
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematik", "Biografie"]
 tags: ["Gauß", "Mathematikgeschichte", "Genie", "Geometrie", "Zahlentheorie"]
 ---
 

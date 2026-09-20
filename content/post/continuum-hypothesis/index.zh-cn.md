@@ -4,7 +4,7 @@ description: "深入探讨由格奥尔格·康托尔提出的连续统假设（C
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["数学", "set-theory"]
 tags: ["连续统假设", "康托尔", "无穷", "数学"]
 ---
 

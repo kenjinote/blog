@@ -4,7 +4,7 @@ description: "全面解析用于计算最大公约数(GCD)的欧几里得算法�
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["数学"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 

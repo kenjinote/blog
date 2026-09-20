@@ -4,7 +4,7 @@ description: "Pouvez-vous trouver Pi (π) juste en lâchant une aiguille sur le 
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "probability-theory"]
+categories: ["Mathématiques", "probability-theory"]
 tags:
   - "Pi"
   - "Simulation"

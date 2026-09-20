@@ -4,7 +4,7 @@ description: "Penjelasan matematis terperinci tentang Konjektur Birch dan Swinne
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Matematika"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]
 ---
 

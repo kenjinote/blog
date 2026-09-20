@@ -5,7 +5,7 @@ slug: "laplace-transform"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
+  - "数学"
 tags:
   - "ラプラス変換"
   - "微分方程式"

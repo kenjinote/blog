@@ -4,7 +4,7 @@ description: "從對歐幾里得平行公設的質疑開始，解說由高斯、
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["數學", "physics"]
 tags: ["幾何學", "相對論", "科學史", "數學"]
 ---
 

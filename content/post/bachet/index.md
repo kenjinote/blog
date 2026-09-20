@@ -4,8 +4,8 @@ description: "ディオファントスの『算術』の翻訳やバシェ方程
 slug: "bachet"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
-tags: ["Bachet", "Number Theory", "History of Mathematics", "Recreational Mathematics", "Diophantus"]
+categories: ["数学", "人物伝"]
+tags: ["Bachet", "Number Theory", "History of 数学", "Recreational 数学", "Diophantus"]
 ---
 
 数学の歴史において、時には後世の偉大な発見の影に隠れながらも、極めて重要な役割を果たした人物が存在します。17世紀フランスの数学者、 **クロード＝ガスパール・[バシェ](https://kenji.blog/p/bachet/)・ド・メジリアック ([Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac, 1581–1638)** もその一人です。彼は[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)に影響を与えたことで有名ですが、彼自身の業績もまた非常に多岐にわたります。

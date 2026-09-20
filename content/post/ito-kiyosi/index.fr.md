@@ -4,7 +4,7 @@ description: "Un examen approfondi de la vie du mathématicien Kiyosi Ito, cél�
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathématiques", "Biographie"]
 tags: ["Kiyosi Ito", "Équations Différentielles Stochastiques", "Ingénierie Financière", "Histoire des Mathématiques"]
 ---
 

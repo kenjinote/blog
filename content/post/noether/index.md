@@ -4,7 +4,7 @@ description: "現代代数学の基礎を築き、物理学における「ネー
 slug: "noether"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["Emmy Noether", "Abstract Algebra", "Physics", "Women in STEM"]
 ---
 

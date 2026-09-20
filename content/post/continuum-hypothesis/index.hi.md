@@ -4,7 +4,7 @@ description: "जॉर्ज कैंटर द्वारा प्रस्
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["गणित", "set-theory"]
 tags: ["सातत्यक परिकल्पना", "कैंटर", "अनंत", "गणित"]
 ---
 

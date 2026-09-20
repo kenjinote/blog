@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["quantum-computing", "python", "mathematics"]
+categories: ["quantum-computing", "python", "Mathematik"]
 tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: 'Wie Quantencomputer aktuelle Kryptographie zerstören könnten: Eine detaillierte Erklärung des mathematischen Hintergrunds von Shors Algorithmus bis hin zur Implementierung in Python.'
 ---

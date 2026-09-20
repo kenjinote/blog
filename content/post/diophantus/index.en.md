@@ -5,8 +5,8 @@ slug: "diophantus"
 date: 2026-09-20T18:40:00+09:00
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
-  - "biography"
+  - "Mathematics"
+  - "Biography"
 tags:
   - "Diophantus"
   - "Algebra"

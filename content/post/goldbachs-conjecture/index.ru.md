@@ -4,7 +4,7 @@ description: "Подробное объяснение 'Проблемы Голь
 slug: "goldbachs-conjecture"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "unsolved-problems"]
+categories: ["Математика", "unsolved-problems"]
 tags:
   - "Простые числа"
   - "Теория чисел"

@@ -4,7 +4,7 @@ description: "Eine tiefe Erklärung des mathematischen Meilensteins über die Re
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "algorithms"]
+categories: ["Mathematik", "algorithms"]
 tags:
   - "Primzahlsatz"
   - "Riemannsche Vermutung"

@@ -4,7 +4,7 @@ description: "A comprehensive guide to chaos theory and the butterfly effect, no
 slug: "chaos-theory"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["science", "mathematics"]
+categories: ["science", "Mathematics"]
 tags:
   - "Chaos Theory"
   - "Physics"

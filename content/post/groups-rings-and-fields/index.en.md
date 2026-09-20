@@ -4,7 +4,7 @@ description: "In mathematics, 'algebra' evolved from methods for solving equatio
 slug: "groups-rings-and-fields"
 date: "2026-09-20T15:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Mathematics"]
 tags: ["algebra", "group theory", "ring theory", "field theory"]
 ---
 

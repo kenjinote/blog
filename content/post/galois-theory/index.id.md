@@ -4,7 +4,7 @@ description: "Apa itu Teori Galois? Mengapa tidak ada rumus solusi untuk persama
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "algebra"]
+categories: ["Matematika", "algebra"]
 tags:
   - "Teori Galois"
   - "Teori Grup"

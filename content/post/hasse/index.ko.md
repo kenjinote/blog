@@ -5,8 +5,8 @@ slug: "hasse"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
-  - "biography"
+  - "수학"
+  - "전기"
 tags:
   - "헬무트 하세"
   - "정수론"

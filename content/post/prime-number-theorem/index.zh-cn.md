@@ -4,7 +4,7 @@ description: "深入解析关于素数出现规律性的数学里程碑——素
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "algorithms"]
+categories: ["数学", "algorithms"]
 tags:
   - "素数定理"
   - "黎曼猜想"

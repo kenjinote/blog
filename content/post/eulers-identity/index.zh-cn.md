@@ -4,7 +4,7 @@ description: "深入解析被誉为数学史上最美的欧拉恒等式的背景
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["数学"]
 tags: ["欧拉", "数学", "科学"]
 ---
 

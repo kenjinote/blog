@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["quantum-computing", "python", "mathematics"]
+categories: ["quantum-computing", "python", "Математика"]
 tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: 'Мы подробно объясним, как квантовые компьютеры могут разрушить современные технологии шифрования, начиная с математических основ алгоритма Шора и заканчивая его реализацией на Python.'
 ---

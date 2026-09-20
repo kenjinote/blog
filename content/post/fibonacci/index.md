@@ -4,8 +4,8 @@ description: "フィボナッチの生涯、『算盤の書』によるアラビ
 slug: "fibonacci"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
-tags: ["Fibonacci", "Mathematics", "History", "Golden Ratio", "Liber Abaci"]
+categories: ["数学", "人物伝"]
+tags: ["Fibonacci", "数学", "History", "Golden Ratio", "Liber Abaci"]
 ---
 
 ## はじめに：暗黒時代を照らした数学の光

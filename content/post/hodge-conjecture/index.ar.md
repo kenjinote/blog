@@ -4,7 +4,7 @@ description: "شرح شامل لحدسية هودج، إحدى مسائل جائ
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["رياضيات", "science"]
 tags: ["مسائل جائزة الألفية", "الطوبولوجيا", "الهندسة الجبرية", "حدسية هودج"]
 ---
 

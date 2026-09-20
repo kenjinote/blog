@@ -4,7 +4,7 @@ description: "シラクサのアルキメデス。彼の「エウレカ」の逸
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["Archimedes", "Ancient Greece", "Geometry", "Physics", "Calculus"]
 ---
 

@@ -3,7 +3,7 @@ title: "拉姆齊理論：混亂之中必有秩序——以雙色圖解證明 6 
 description: "只要聚集 6 個人，就必然存在 3 個互相認識的人，或是 3 個互相不認識的人。本文透過雙色圖解證明拉姆齊數 R(3,3)=6，剖析 5 人的反例、完整驗證全部 32768 種著色情形，並延伸探討數列與網路中的實際應用。"
 date: 2026-09-16T20:05:00+09:00
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["數學"]
 tags: ["拉姆齊理論", "圖論", "組合數學", "鴿籠原理", "Python"]
 slug: "ramsey-theory"
 math: true

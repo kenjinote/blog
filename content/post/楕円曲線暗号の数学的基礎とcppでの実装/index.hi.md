@@ -5,8 +5,8 @@ date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "cpp", "mathematics"]
-tags: ["ECC", "Cryptography", "C++", "Mathematics"]
+categories: ["cryptography", "cpp", "गणित"]
+tags: ["ECC", "Cryptography", "C++", "गणित"]
 ---
 
 # एलिप्टिक कर्व क्रिप्टोग्राफी (ECC) का गणितीय आधार और C++ में इसका कार्यान्वयन

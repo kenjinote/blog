@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "quantum-computing", "mathematics"]
+categories: ["cryptography", "quantum-computing", "Matemáticas"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'Se explica detalladamente la amenaza de vulnerabilidad criptográfica por el auge de las computadoras cuánticas y los algoritmos como Kyber, Dilithium, FALCON y SPHINCS+, que son estándares de criptografía poscuántica (PQC) del NIST para contrarrestarlo, desde los fundamentos matemáticos de la criptografía basada en retículos (problema LWE) hasta su funcionamiento interno y la comparación de rendimiento.'
 ---

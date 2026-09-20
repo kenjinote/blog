@@ -4,7 +4,7 @@ description: "Penjelasan mendalam tentang kehidupan Siegel dan pencapaian matema
 slug: "siegel"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Matematika", "Biografi"]
 tags: ["Siegel", "teori bilangan", "matematikawan", "mekanika benda langit", "teori bilangan analitik", "persamaan Diophantine"]
 ---
 

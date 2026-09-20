@@ -3,7 +3,7 @@ title: "Принцип Дирихле и коллизии хеш-функций:
 image: "eyecatch.jpg"
 date: "2026-09-14T00:00:00+09:00"
 description: "Почему «принцип Дирихле», понятный интуитивно, становится важнейшей концепцией в безопасности современной криптографии и хеш-функций? Мы глубоко объясняем это с использованием конкретных примеров, математических формул и диаграмм."
-categories: ["technology", "cryptography", "mathematics"]
+categories: ["technology", "cryptography", "Математика"]
 tags: ["Hash", "Pigeonhole Principle", "Security", "Algorithm", "KaTeX", "Mermaid"]
 slug: "pigeonhole-principle-hash-collision"
 ---

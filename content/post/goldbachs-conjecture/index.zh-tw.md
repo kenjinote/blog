@@ -4,7 +4,7 @@ description: "詳細解釋數學中最著名的未解決問題之一的「哥德
 slug: "goldbachs-conjecture"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "unsolved-problems"]
+categories: ["數學", "unsolved-problems"]
 tags:
   - "質數"
   - "數論"

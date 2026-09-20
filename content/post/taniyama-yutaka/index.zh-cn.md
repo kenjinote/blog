@@ -4,7 +4,7 @@ description: '深入探讨以“谷山-志村猜想”闻名的日本天才数�
 slug: "taniyama-yutaka"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "传记"]
 tags: ["谷山丰", "数学", "费马大定理", "谷山-志村猜想", "椭圆曲线", "模形式"]
 ---
 

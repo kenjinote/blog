@@ -4,7 +4,7 @@ description: "갈루아 이론이란 무엇인가? 왜 5차 이상의 방정식�
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "algebra"]
+categories: ["수학", "algebra"]
 tags:
   - "갈루아 이론"
   - "군론"

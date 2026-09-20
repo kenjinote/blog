@@ -4,7 +4,7 @@ description: "شرح مفصل لنظرية الباقي الصينية (CRT)، �
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "cryptography"]
+categories: ["رياضيات", "cryptography"]
 tags:
   - "نظرية الباقي الصينية"
   - "CRT"

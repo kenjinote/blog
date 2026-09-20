@@ -4,7 +4,7 @@ description: "¿Qué es la Teoría de Galois? ¿Por qué no existe una fórmula 
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "algebra"]
+categories: ["Matemáticas", "algebra"]
 tags:
   - "Teoría de Galois"
   - "Teoría de grupos"

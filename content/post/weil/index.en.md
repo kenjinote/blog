@@ -4,7 +4,7 @@ description: "An in-depth exploration of André Weil's dramatic life, the foundi
 slug: "weil"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["André Weil", "Bourbaki", "Algebraic Geometry", "Number Theory"]
 ---
 

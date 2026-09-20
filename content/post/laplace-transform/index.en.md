@@ -5,11 +5,11 @@ slug: "laplace-transform"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
+  - "Mathematics"
 tags:
   - "Laplace transform"
   - "Differential equations"
-  - "Applied mathematics"
+  - "Applied Mathematics"
 ---
 
 ## Introduction: What is the [Laplace Transform](https://kenji.blog/en/p/laplace-transform/)?

@@ -4,7 +4,7 @@ description: "Ein tiefer Einblick in die Existenz und Glattheit der Lösungen de
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["Mathematik", "physics"]
 tags: ["Navier-Stokes", "Strömungsmechanik", "Millennium-Probleme"]
 ---
 

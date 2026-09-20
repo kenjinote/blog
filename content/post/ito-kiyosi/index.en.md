@@ -4,7 +4,7 @@ description: "An in-depth look at the life of Kiyosi Ito, known for Ito's Lemma,
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["Kiyosi Ito", "Stochastic Differential Equations", "Financial Engineering", "History of Mathematics"]
 ---
 

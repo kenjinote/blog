@@ -4,7 +4,7 @@ description: "深入浅出地解释千禧年大奖难题之一的「杨-米尔�
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["physics", "mathematics"]
+categories: ["physics", "数学"]
 tags:
   - "杨-米尔斯"
   - "质量间隙"

@@ -4,7 +4,7 @@ description: "'이토의 보조정리'로 알려진 수학자 이토 기요시�
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["수학", "전기"]
 tags: ["이토 기요시", "확률미분방정식", "금융공학", "수학사"]
 ---
 

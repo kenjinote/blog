@@ -4,7 +4,7 @@ description: "什麼是伽羅瓦理論？為何五次以上方程式不存在公
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "algebra"]
+categories: ["數學", "algebra"]
 tags:
   - "伽羅瓦理論"
   - "群論"

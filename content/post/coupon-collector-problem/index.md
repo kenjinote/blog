@@ -3,7 +3,7 @@ title: "クーポンコレクター問題：全種類そろえるには何回必
 description: "全10種類のカードをそろえる平均回数は約29.3回。でも30回でそろう確率は約63％です。クーポンコレクター問題を、期待値の導出、完了確率のグラフ、Pythonシミュレーションでわかりやすく解説します。"
 date: 2026-09-15T21:20:00+09:00
 image: "eyecatch.png"
-categories: ["mathematics", "statistics"]
+categories: ["数学", "statistics"]
 tags: ["確率", "期待値", "クーポンコレクター問題", "Python"]
 slug: "coupon-collector-problem"
 math: true

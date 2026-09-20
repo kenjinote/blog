@@ -4,7 +4,7 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "計算機科学における最も有名な未解決問題（証明済み）の一つ、停止性問題について解説します。背理法による証明、直感的な具体例、数式や図解を用いてわかりやすく説明します。"
 categories: ["computer-science", "theory-of-computation"]
-tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
+tags: ["Halting Problem", "Alan Turing", "Algorithm", "数学"]
 slug: "halting-problem"
 ---
 

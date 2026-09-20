@@ -4,7 +4,7 @@ description: "Uma explicação detalhada da 'Conjectura de Goldbach', um dos pro
 slug: "goldbachs-conjecture"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "unsolved-problems"]
+categories: ["Matemática", "unsolved-problems"]
 tags:
   - "Números Primos"
   - "Teoria dos Números"

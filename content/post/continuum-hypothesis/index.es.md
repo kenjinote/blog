@@ -4,7 +4,7 @@ description: "Profundizamos en la historia de la Hipótesis del continuo (CH) pr
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "set-theory"]
+categories: ["Matemáticas", "set-theory"]
 tags: ["Hipótesis del continuo", "Cantor", "Infinito", "Matemáticas"]
 ---
 

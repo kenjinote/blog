@@ -4,7 +4,7 @@ description: "「現代解析学の父」と呼ばれる数学者カール・ワ
 slug: "weierstrass"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["math", "Weierstrass", "analysis", "history"]
 ---
 

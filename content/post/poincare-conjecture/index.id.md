@@ -4,7 +4,7 @@ description: "Penjelasan lengkap tentang 'Konjektur Poincaré' yang membingungka
 date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["Matematika", "science"]
 tags: ["Topology", "Poincare Conjecture", "Grigori Perelman", "Math"]
 ---
 

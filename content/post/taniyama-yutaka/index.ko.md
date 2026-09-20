@@ -4,7 +4,7 @@ description: '「타니야마-시무라 추측」으로 알려진 일본의 천�
 slug: "taniyama-yutaka"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["수학", "전기"]
 tags: ["타니야마 유타카", "수학", "페르마의 마지막 정리", "타니야마-시무라 추측", "타원 곡선", "모듈러 형식"]
 ---
 

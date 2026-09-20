@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung der 'Goldbachschen Vermutung', eines 
 slug: "goldbachs-conjecture"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "unsolved-problems"]
+categories: ["Mathematik", "unsolved-problems"]
 tags:
   - "Primzahlen"
   - "Zahlentheorie"

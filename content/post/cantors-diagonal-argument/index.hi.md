@@ -4,7 +4,7 @@ description: "अनंत में भी 'आकार' का अंतर �
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
+categories: ["गणित", "foundations-of-गणित", "set-theory"]
 tags: ["Cantor", "विकर्ण तर्क", "अनंत", "गणित", "प्रमाण"]
 ---
 

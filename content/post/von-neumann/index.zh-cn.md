@@ -4,7 +4,7 @@ description: '详细解说天才数学家约翰·冯·诺伊曼的一生，从�
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['mathematics', 'biography']
+categories: ['数学', '传记']
 tags: ['约翰·冯·诺伊曼', '量子力学', '博弈论', '计算机科学', '数学家', '天才']
 ---
 

@@ -4,7 +4,7 @@ description: "A detailed account of the life of the great French mathematician A
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["Legendre", "Number Theory", "Geometry", "History of Mathematics"]
 ---
 

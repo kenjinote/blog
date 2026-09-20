@@ -4,7 +4,7 @@ description: "Archimedes of Syracuse. From the 'Eureka' episode to the calculati
 slug: "archimedes"
 date: "2026-09-20T18:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["Archimedes", "Ancient Greece", "Geometry", "Physics", "Calculus"]
 ---
 

@@ -4,7 +4,7 @@ description: "關於千禧年大獎難題之一的貝赫和斯維納通-戴爾�
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["數學"]
 tags: ["數論", "橢圓曲線", "BSD猜想", "千禧年大獎難題"]
 ---
 

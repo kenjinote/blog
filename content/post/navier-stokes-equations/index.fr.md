@@ -4,7 +4,7 @@ description: "Une plongée approfondie dans l'existence et la régularité des s
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "physics"]
+categories: ["Mathématiques", "physics"]
 tags: ["Navier-Stokes", "Dynamique des fluides", "Problèmes du prix du millénaire"]
 ---
 

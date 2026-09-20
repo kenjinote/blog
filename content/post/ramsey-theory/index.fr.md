@@ -3,7 +3,7 @@ title: "Théorie de Ramsey : l'ordre émerge inévitablement du désordre — D�
 description: "Dans un groupe de 6 personnes, il existe toujours 3 personnes qui se connaissent toutes mutuellement ou 3 personnes qui ne se connaissent pas du tout. Démonstration du nombre de Ramsey R(3,3) = 6 par les graphes bicolores, contre-exemple à 5 personnes, vérification des 32 768 configurations, et applications aux suites et aux réseaux."
 date: 2026-09-16T20:05:00+09:00
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["Mathématiques"]
 tags: ["Théorie de Ramsey", "Théorie des graphes", "Combinatoire", "Principe des tiroirs", "Python"]
 slug: "ramsey-theory"
 math: true

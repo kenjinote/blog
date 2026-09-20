@@ -5,7 +5,7 @@ slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
 image: 'eyecatch.jpg'
 categories:
-  - 'mathematics'
+  - '수학'
 tags:
   - '복소해석학'
   - '코시의 적분 정리'

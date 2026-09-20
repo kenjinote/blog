@@ -4,7 +4,7 @@ description: "Una mirada en profundidad a la vida de Kiyosi Ito, conocido por el
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Matemáticas", "Biografía"]
 tags: ["Kiyosi Ito", "Ecuaciones Diferenciales Estocásticas", "Ingeniería Financiera", "Historia de las Matemáticas"]
 ---
 

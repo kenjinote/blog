@@ -3,7 +3,7 @@ title: "阿羅不可能定理：完美的「民主（選舉）」在數學上是
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "能制定出「對所有人都公平的選舉制度」嗎？透過經濟學家肯尼斯·阿羅（Kenneth Arrow）證明的「阿羅不可能定理」，為您解說民主在數學上的極限，以及我們應該如何面對選舉與決策。"
-categories: ["mathematics", "economics"]
+categories: ["數學", "economics"]
 tags:
   - "決策論"
   - "阿羅不可能定理"

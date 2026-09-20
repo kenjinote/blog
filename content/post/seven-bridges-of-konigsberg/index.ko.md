@@ -4,8 +4,8 @@ description: "18세기 수학자 레온하르트 오일러가 해결한 '쾨니�
 slug: "seven-bridges-of-konigsberg"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "history"]
-tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]
+categories: ["수학", "history"]
+tags: ["Graph Theory", "Topology", "Euler", "수학"]
 ---
 
 ## 들어가며

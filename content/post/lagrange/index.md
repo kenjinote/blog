@@ -5,14 +5,14 @@ slug: "lagrange"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
-  - "biography"
+  - "数学"
+  - "人物伝"
 tags:
   - "Lagrange"
   - "Calculus of Variations"
   - "Analytical Mechanics"
   - "Number Theory"
-  - "History of Mathematics"
+  - "History of 数学"
 ---
 
 ## はじめに

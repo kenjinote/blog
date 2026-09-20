@@ -4,7 +4,7 @@ description: "수학의 미해결 난제 중에서도 특히 유명한 '골드�
 slug: "goldbachs-conjecture"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "unsolved-problems"]
+categories: ["수학", "unsolved-problems"]
 tags:
   - "소수"
   - "정수론"

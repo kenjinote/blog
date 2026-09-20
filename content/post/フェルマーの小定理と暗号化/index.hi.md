@@ -5,7 +5,7 @@ date: "2026-09-11T22:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["mathematics", "cryptography", "programming"]
+categories: ["गणित", "cryptography", "programming"]
 tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C++"]
 ---
 

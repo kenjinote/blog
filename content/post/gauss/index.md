@@ -4,7 +4,7 @@ description: "「数学の王」と称されるカール・フリードリヒ・
 slug: "gauss"
 date: 2026-09-20T19:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "人物伝"]
 tags: ["ガウス", "数学史", "天才", "幾何学", "数論"]
 ---
 

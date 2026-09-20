@@ -4,7 +4,7 @@ description: "O problema não resolvido mais famoso da história da matemática,
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "history"]
+categories: ["Matemática", "history"]
 tags:
   - "O Último Teorema de Fermat"
   - "Andrew Wiles"

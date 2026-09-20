@@ -3,7 +3,7 @@ title: "阿罗的不可能定理：完美的“民主主义（选举）”在数
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "能够制定出“对谁都公平的选举制度”吗？通过经济学家肯尼斯·阿罗所证明的“阿罗的不可能定理”，解说民主主义在数学上的局限性，以及我们应如何看待选举和决策。"
-categories: ["mathematics", "economics"]
+categories: ["数学", "economics"]
 tags:
   - "决策论"
   - "阿罗的不可能定理"

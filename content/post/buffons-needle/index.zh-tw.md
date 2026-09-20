@@ -4,7 +4,7 @@ description: "僅僅在地上投針就能求出圓周率π？我們將從數學�
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "probability-theory"]
+categories: ["數學", "probability-theory"]
 tags:
   - "圓周率"
   - "模擬"

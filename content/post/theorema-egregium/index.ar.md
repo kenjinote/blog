@@ -4,7 +4,7 @@ description: "شرح عميق لـ \"المبرهنة الرائعة\" التي 
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["رياضيات", "science"]
 tags: ["هندسة", "غاوس", "مبرهنة البيتزا", "Theorema Egregium", "هندسة تفاضلية"]
 ---
 

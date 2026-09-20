@@ -3,7 +3,7 @@ title: "Der Unmöglichkeitssatz von Arrow: Warum das „perfekte Wahlsystem“ m
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Eine verständliche Erklärung des „Unmöglichkeitssatzes von Arrow“, der beweist, dass es unmöglich ist, ein perfektes demokratisches Wahlsystem zu entwerfen. Wir betrachten die Bedingungen der Demokratie und die Grenzen von Abstimmungen aus mathematischer Sicht."
-categories: ["mathematics", "economics", "political-science"]
+categories: ["Mathematik", "economics", "political-science"]
 tags:
   - "Arrow's Impossibility Theorem"
   - "Voting"

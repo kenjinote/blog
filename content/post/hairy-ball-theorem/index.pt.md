@@ -4,7 +4,7 @@ description: "Explicamos detalhadamente o famoso \"Teorema da Bola Cabeluda\" (H
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "topology"]
+categories: ["Matemática", "topology"]
 tags:
   - "Math"
   - "Topology"

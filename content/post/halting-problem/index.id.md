@@ -4,7 +4,7 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Menjelaskan tentang Masalah Penghentian (Halting Problem), salah satu masalah tak terpecahkan yang paling terkenal (dan telah dibuktikan) dalam ilmu komputer. Penjelasan dibuat mudah dipahami menggunakan pembuktian melalui kontradiksi, contoh konkret yang intuitif, rumus matematika, dan diagram ilustrasi."
 categories: ["computer-science", "theory-of-computation"]
-tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
+tags: ["Halting Problem", "Alan Turing", "Algorithm", "Matematika"]
 slug: "halting-problem"
 ---
 

@@ -4,7 +4,7 @@ description: "Uma explicação profunda do Teorema dos Números Primos (Prime Nu
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "algorithms"]
+categories: ["Matemática", "algorithms"]
 tags:
   - "Teorema dos Números Primos"
   - "Hipótese de Riemann"

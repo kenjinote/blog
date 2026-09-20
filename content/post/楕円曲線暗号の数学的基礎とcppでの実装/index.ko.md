@@ -5,8 +5,8 @@ date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "cpp", "mathematics"]
-tags: ["ECC", "Cryptography", "C++", "Mathematics"]
+categories: ["cryptography", "cpp", "수학"]
+tags: ["ECC", "Cryptography", "C++", "수학"]
 ---
 
 # 타원곡선 암호(ECC)의 수학적 기초와 C++에서의 구현

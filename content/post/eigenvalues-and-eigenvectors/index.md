@@ -4,7 +4,7 @@ description: "線形代数における最も重要な概念の一つである固
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["数学"]
 tags: ["linear-algebra", "eigenvalue", "eigenvector", "math", "machine-learning", "python", "data-science"]
 ---
 

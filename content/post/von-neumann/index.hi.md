@@ -4,7 +4,7 @@ description: 'प्रतिभाशाली गणितज्ञ जॉन 
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['mathematics', 'biography']
+categories: ['गणित', 'जीवनी']
 tags: ['जॉन वॉन न्यूमैन', 'क्वांटम यांत्रिकी', 'गेम थ्योरी', 'कंप्यूटर विज्ञान', 'गणितज्ञ', 'जीनियस']
 ---
 

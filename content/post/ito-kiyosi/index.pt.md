@@ -4,7 +4,7 @@ description: "Um olhar profundo sobre a vida de Kiyosi Ito, conhecido pelo Lema 
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Matemática", "Biografia"]
 tags: ["Kiyosi Ito", "Equações Diferenciais Estocásticas", "Engenharia Financeira", "História da Matemática"]
 ---
 

@@ -4,7 +4,7 @@ description: "Eine tiefe Erklärung des Hintergrunds und der Bedeutung der Euler
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Mathematik"]
 tags: ["Euler", "Mathematik", "Wissenschaft"]
 ---
 

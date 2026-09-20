@@ -5,8 +5,8 @@ slug: "ramanujan"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "mathematics"
-  - "biography"
+  - "数学"
+  - "人物伝"
 tags:
   - "Ramanujan"
   - "G.H. Hardy"

@@ -3,7 +3,7 @@ title: "集齐优惠券问题：抽多少次才能集齐？用公式与图表解
 description: "10种等概率卡片平均需要抽取约29.3次才能集齐，但30次以内集齐的概率仅约63%。通过期望推导、概率图表和Python模拟，理解集齐优惠券问题。"
 date: "2026-09-15T21:20:00+09:00"
 image: "eyecatch.png"
-categories: ["mathematics", "statistics"]
+categories: ["数学", "statistics"]
 tags: ["概率", "期望值", "集齐优惠券问题", "Python"]
 slug: "coupon-collector-problem"
 math: true

@@ -4,7 +4,7 @@ description: "सबसे बड़ा सामान्य भाजक (GCD)
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["गणित"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 

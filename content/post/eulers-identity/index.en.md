@@ -4,7 +4,7 @@ description: "A deep explanation of the background and meaning of Euler's identi
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Mathematics"]
 tags: ["Euler", "Math", "Science"]
 ---
 

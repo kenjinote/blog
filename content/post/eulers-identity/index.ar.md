@@ -4,7 +4,7 @@ description: "نشرح بعمق خلفية ومعنى متطابقة أويلر�
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["رياضيات"]
 tags: ["أويلر", "رياضيات", "علوم"]
 ---
 

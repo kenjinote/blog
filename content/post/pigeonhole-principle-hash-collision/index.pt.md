@@ -3,7 +3,7 @@ title: "Princípio da Casa dos Pombos e Colisão de Hashes: Desvendando os limit
 image: "eyecatch.jpg"
 date: "2026-09-14T00:00:00+09:00"
 description: "Por que o 'Princípio da Casa dos Pombos', que pode ser entendido intuitivamente, é o conceito mais importante na segurança da criptografia moderna e das funções de hash? Explicaremos profundamente usando exemplos concretos, fórmulas e diagramas."
-categories: ["technology", "cryptography", "mathematics"]
+categories: ["technology", "cryptography", "Matemática"]
 tags: ["Hash", "Princípio da Casa dos Pombos", "Segurança", "Algoritmo", "KaTeX", "Mermaid"]
 slug: "pigeonhole-principle-hash-collision"
 ---

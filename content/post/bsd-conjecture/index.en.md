@@ -4,7 +4,7 @@ description: "A detailed mathematical explanation of the Birch and Swinnerton-Dy
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]
 ---
 

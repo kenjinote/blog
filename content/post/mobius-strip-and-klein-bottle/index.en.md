@@ -4,7 +4,7 @@ description: "An in-depth explanation of non-orientable surfaces in topology, sp
 slug: "mobius-strip-and-klein-bottle"
 date: 2026-09-20T15:15:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Mathematics"]
 tags: ["topology", "geometry", "mobius-strip", "klein-bottle"]
 ---
 

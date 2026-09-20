@@ -4,7 +4,7 @@ description: "कार्ल फ्रेडरिक गॉस द्वार
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["गणित", "science"]
 tags: ["ज्यामिति", "गॉस", "पिज़्ज़ा का प्रमेय", "Theorema Egregium", "डिफरेंशियल ज्यामिति"]
 ---
 

@@ -4,7 +4,7 @@ description: "数学史上最も有名な未解決問題「フェルマーの最
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "history"]
+categories: ["数学", "history"]
 tags:
   - "フェルマーの最終定理"
   - "アンドリュー・ワイルズ"

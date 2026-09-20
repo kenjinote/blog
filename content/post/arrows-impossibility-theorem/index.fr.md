@@ -3,7 +3,7 @@ title: "Le théorème d'impossibilité d'Arrow : une « démocratie (élections)
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Est-il possible de créer un « système électoral équitable pour tous » ? À travers le « théorème d'impossibilité d'Arrow » prouvé par l'économiste Kenneth Arrow, nous expliquons les limites mathématiques de la démocratie et la manière dont nous devons appréhender les élections et la prise de décision."
-categories: ["mathematics", "economics"]
+categories: ["Mathématiques", "economics"]
 tags:
   - "Théorie de la décision"
   - "Théorème d'impossibilité d'Arrow"

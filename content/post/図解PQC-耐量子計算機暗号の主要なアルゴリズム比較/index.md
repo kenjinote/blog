@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "quantum-computing", "mathematics"]
+categories: ["cryptography", "quantum-computing", "数学"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: '量子コンピュータの台頭による暗号危殆化の脅威と、それに対抗するNIST標準の耐量子計算機暗号(PQC)であるKyber、Dilithium、FALCON、SPHINCS+等のアルゴリズムについて、格子暗号の数学的基盤（LWE問題）から詳細な仕組み、性能比較までを徹底解説します。'
 ---

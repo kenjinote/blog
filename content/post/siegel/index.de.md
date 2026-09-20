@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung von Siegels Leben und seinen großen 
 slug: "siegel"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematik", "Biografie"]
 tags: ["Siegel", "Zahlentheorie", "Mathematiker", "Himmelsmechanik", "analytische Zahlentheorie", "diophantische Gleichungen"]
 ---
 

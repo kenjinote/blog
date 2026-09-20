@@ -4,7 +4,7 @@ description: "What is the Secretary Problem? Through this classic example of the
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "algorithms", "decision-making"]
+categories: ["Mathematics", "algorithms", "decision-making"]
 tags:
   - "Optimal Stopping"
   - "Secretary Problem"

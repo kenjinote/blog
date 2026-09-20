@@ -3,7 +3,7 @@ title: "安定結婚問題：全員の希望をどう組み合わせるか？ゲ
 description: "全員の第1希望がかなわなくても、安定した組み合わせは作れます。安定結婚問題を、3組の具体例、希望順位の比較グラフ、ゲール＝シャプレーのアルゴリズムとPythonコードで解説。安定・満足・公平の違いも考えます。"
 date: 2026-09-16T14:30:00+09:00
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["数学"]
 tags: ["安定結婚問題", "アルゴリズム", "ゲーム理論", "マッチング", "Python"]
 slug: "stable-marriage-problem"
 math: true

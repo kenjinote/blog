@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "quantum-computing", "mathematics"]
+categories: ["cryptography", "quantum-computing", "गणित"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'क्वांटम कंप्यूटर के उदय से उत्पन्न क्रिप्टोग्राफी के खतरे और इसका मुकाबला करने वाले NIST मानक पोस्ट-क्वांटम क्रिप्टोग्राफी (PQC) जैसे Kyber, Dilithium, FALCON, SPHINCS+ एल्गोरिदम के बारे में, लैटिस क्रिप्टोग्राफी (Lattice cryptography) के गणितीय आधार (LWE समस्या) से लेकर विस्तृत तंत्र और प्रदर्शन तुलना तक की गहन व्याख्या।'
 ---

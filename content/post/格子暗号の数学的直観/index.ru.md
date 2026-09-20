@@ -5,7 +5,7 @@ date: "2026-09-11T21:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "mathematics", "security"]
+categories: ["cryptography", "Математика", "security"]
 tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 ---
 

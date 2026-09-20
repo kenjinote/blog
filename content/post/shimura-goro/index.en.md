@@ -4,7 +4,7 @@ description: 'Goro Shimura, a world-renowned mathematician known for the Taniyam
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["Mathematics", "Biography"]
 tags: ["Goro Shimura", "Number Theory", "Taniyama-Shimura Conjecture", "Fermat's Last Theorem"]
 ---
 

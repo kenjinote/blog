@@ -5,8 +5,8 @@ date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "cpp", "mathematics"]
-tags: ["ECC", "Cryptography", "C++", "Mathematics"]
+categories: ["cryptography", "cpp", "數學"]
+tags: ["ECC", "Cryptography", "C++", "數學"]
 ---
 
 # 橢圓曲線密碼學（ECC）的數學基礎與C++實作

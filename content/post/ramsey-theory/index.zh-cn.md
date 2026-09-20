@@ -3,7 +3,7 @@ title: "拉姆齐理论：完全无序中必有规则——通过6人社交关�
 description: "只要聚集6个人，就必定存在互为熟人的3人，或者互不相识的3人。本文通过着色图证明拉姆齐数 R(3,3)=6，并深入解析5人时的反例、全部32768种涂色情况的程序验证，以及在数列和网络中的实际应用。"
 date: 2026-09-16T20:05:00+09:00
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["数学"]
 tags: ["拉姆齐理论", "图论", "组合数学", "鸽巢原理", "Python"]
 slug: "ramsey-theory"
 math: true

@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["quantum-computing", "python", "mathematics"]
+categories: ["quantum-computing", "python", "数学"]
 tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: '我们将详细讲解量子计算机如何可能破坏当前的密码技术，从秀尔算法的数学背景到在Python中的实现。'
 ---

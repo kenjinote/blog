@@ -4,7 +4,7 @@ description: "선형대수학의 대각화와 대각화할 수 없는 행렬을 
 slug: "diagonalization-and-jordan-normal-form"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["수학"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]
 ---
 

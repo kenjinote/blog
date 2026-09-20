@@ -3,7 +3,7 @@ title: "稳定婚姻问题：如何组合所有人的意愿？"
 description: "通过公式、关系图、排名比较图、表格与 Python，理解盖尔–沙普利算法，分清“稳定的匹配”和“让所有人满意的匹配”。"
 date: "2026-09-16T14:30:00+09:00"
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["数学"]
 tags: ["稳定婚姻问题", "算法", "博弈论", "匹配", "Python"]
 slug: "stable-marriage-problem"
 math: true

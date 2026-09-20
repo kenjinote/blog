@@ -3,7 +3,7 @@ title: "Le problème des mariages stables : comment concilier les préférences 
 description: "Découvrez l’algorithme de Gale–Shapley avec des équations, des schémas, des tableaux et du Python. Un appariement stable ne rend pas nécessairement tout le monde satisfait."
 date: "2026-09-16T14:30:00+09:00"
 image: "eyecatch.png"
-categories: ["mathematics"]
+categories: ["Mathématiques"]
 tags: ["Mariages stables", "Algorithmes", "Théorie des jeux", "Appariement", "Python"]
 slug: "stable-marriage-problem"
 math: true

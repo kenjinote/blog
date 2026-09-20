@@ -4,8 +4,8 @@ description: "日本が世界に誇る数学者、岡潔。その生涯のエピ
 slug: "oka-kiyoshi"
 date: 2026-09-20T20:20:00+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
-tags: ["Kiyosi Oka", "Complex Analysis", "History of Mathematics"]
+categories: ["数学", "人物伝"]
+tags: ["Kiyosi Oka", "Complex Analysis", "History of 数学"]
 ---
 
 # [岡潔](https://kenji.blog/p/oka-kiyoshi/)：数学と情緒の融合

@@ -5,7 +5,7 @@ date: "2026-09-12T01:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["mathematics", "programming", "algorithms"]
+categories: ["数学", "programming", "algorithms"]
 tags: ["Math", "Algorithms", "Python", "C++"]
 ---
 

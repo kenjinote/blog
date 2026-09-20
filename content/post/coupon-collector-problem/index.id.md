@@ -3,7 +3,7 @@ title: "Masalah pengumpul kupon: berapa kali mengambil agar koleksi lengkap?"
 description: "Mengumpulkan 10 jenis kartu dengan peluang sama memerlukan rata-rata sekitar 29,3 pengambilan. Namun, hanya sekitar 63% koleksi lengkap dalam 30 pengambilan. Pelajari rumus, grafik, dan simulasi Python-nya."
 date: "2026-09-15T21:20:00+09:00"
 image: "eyecatch.png"
-categories: ["mathematics", "statistics"]
+categories: ["Matematika", "statistics"]
 tags: ["Peluang", "Nilai harapan", "Masalah pengumpul kupon", "Python"]
 slug: "coupon-collector-problem"
 math: true

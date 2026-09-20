@@ -4,7 +4,7 @@ description: "Что такое теория Галуа? Почему не су�
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "algebra"]
+categories: ["Математика", "algebra"]
 tags:
   - "Теория Галуа"
   - "Теория групп"

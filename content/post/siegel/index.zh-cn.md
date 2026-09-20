@@ -4,7 +4,7 @@ description: "深入解读西格尔的生平及其在数论与天体力学领域
 slug: "siegel"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["数学", "传记"]
 tags: ["西格尔", "数论", "数学家", "天体力学", "解析数论", "丢番图方程"]
 ---
 

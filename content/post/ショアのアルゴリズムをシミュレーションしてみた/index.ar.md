@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["quantum-computing", "python", "mathematics"]
+categories: ["quantum-computing", "python", "رياضيات"]
 tags: ["خوارزمية شور", "Qiskit", "تحويل فورييه الكمومي"]
 description: 'شرح مفصل لكيفية تدمير الحواسيب الكمومية لتقنيات التشفير الحالية، بدءًا من الخلفية الرياضية لخوارزمية شور وحتى تنفيذها في بايثون.'
 ---

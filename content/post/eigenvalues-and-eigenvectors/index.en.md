@@ -4,7 +4,7 @@ description: "A detailed explanation of eigenvalues and eigenvectors, one of the
 slug: "eigenvalues-and-eigenvectors"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics"]
+categories: ["Mathematics"]
 tags: ["linear-algebra", "eigenvalue", "eigenvector", "math", "machine-learning", "python", "data-science"]
 ---
 

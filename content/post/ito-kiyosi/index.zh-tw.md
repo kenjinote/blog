@@ -4,7 +4,7 @@ description: "深入探討以「伊藤引理」聞名的數學家伊藤清的一
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "biography"]
+categories: ["數學", "傳記"]
 tags: ["伊藤清", "隨機微分方程", "金融工程", "數學史"]
 ---
 

@@ -4,7 +4,7 @@ description: "수학계의 난제였던 4색 정리의 역사, 증명 접근법,
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "computer-science"]
+categories: ["수학", "computer-science"]
 tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topology"]
 ---
 

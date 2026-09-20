@@ -4,7 +4,7 @@ description: "Подробное объяснение «Замечательно
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["Математика", "science"]
 tags: ["Геометрия", "Гаусс", "Теорема о пицце", "Theorema Egregium", "Дифференциальная геометрия"]
 ---
 

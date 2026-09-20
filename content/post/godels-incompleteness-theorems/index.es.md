@@ -3,7 +3,7 @@ title: "Teoremas de la incompletitud de Gödel: La demostración matemática de 
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Explicamos de forma clara y comprensible el histórico Teorema de Incompletitud de Gödel, que evidenció los límites de las matemáticas. Utilizaremos ejemplos y diagramas para detallar su significado y su mecanismo de prueba."
-categories: ["mathematics", "computer-science"]
+categories: ["Matemáticas", "computer-science"]
 tags:
   - Lógica
   - Gödel

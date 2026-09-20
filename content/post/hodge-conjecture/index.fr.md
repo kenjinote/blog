@@ -4,7 +4,7 @@ description: "Nous expliquons en détail la conjecture de Hodge, l'un des probl�
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["mathematics", "science"]
+categories: ["Mathématiques", "science"]
 tags: ["Problèmes du prix du millénaire", "Topologie", "Géométrie algébrique", "Conjecture de Hodge"]
 ---
 
