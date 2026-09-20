@@ -12,13 +12,13 @@ description: '量子電腦驚人的運算能力即將動搖區塊鏈的根基，
 
 ## 1. 簡介：後量子時代的腳步聲與區塊鏈的危機
 
-自2009年中本聰（Satoshi Nakamoto）創造比特幣（Bitcoin）以來，區塊鏈技術作為「去中心化且不可篡改的帳本」，已發展成為全球金融系統與應用程式的基礎。支撐這種強大安全性的，正是 **公開金鑰密碼學（Public Key Cryptography）** 與 **密碼雜湊函數（Cryptographic Hash Functions）** 等現代密碼技術。
+自2009年中本聰（Satoshi Nakamoto）創造[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)（[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)）以來，區塊鏈技術作為「去中心化且不可篡改的帳本」，已發展成為全球金融系統與應用程式的基礎。支撐這種強大安全性的，正是 **公開金鑰密碼學（Public Key [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）** 與 **密碼雜湊函數（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphic Hash Functions）** 等現代密碼技術。
 
 這些密碼技術的安全性，建立在數學上的「計算困難度」之上，即使是傳統電腦（我們目前使用的個人電腦或超級電腦）花費等同宇宙壽命的時間，也無法破解。
 
 然而，這個前提正因為物理學與資訊科學的前沿—— **量子電腦（Quantum Computers）** 的快速發展與實用化，而面臨根本性的顛覆。利用量子力學特有的「疊加（Superposition）」與「量子糾纏（Entanglement）」特性的量子電腦，在特定數學問題上展現出壓倒傳統電腦的運算能力，也就是所謂的「量子霸權（Quantum Supremacy）」。
 
-在本文中，我們將從技術與數學的角度，徹底深入探討區塊鏈技術具體面臨了量子電腦的哪些威脅，以及作為解決方案的 **後量子密碼學（PQC：Post-Quantum Cryptography）** 最新動態和加密資產網路的過渡方案。
+在本文中，我們將從技術與數學的角度，徹底深入探討區塊鏈技術具體面臨了量子電腦的哪些威脅，以及作為解決方案的 **後量子密碼學（PQC：Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）** 最新動態和加密資產網路的過渡方案。
 
 ---
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 橢圓曲線密碼學（ECDSA）的基礎與計算困難度
 
-包括比特幣和以太坊（Ethereum）在內的許多區塊鏈，都採用 **橢圓曲線數位簽章演算法（ECDSA：Elliptic Curve Digital Signature Algorithm）** 作為數位簽章演算法。具體來說，比特幣使用的是名為 `secp256k1` 參數的橢圓曲線。
+包括[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在內的許多區塊鏈，都採用 **橢圓曲線數位簽章演算法（ECDSA：Elliptic Curve Digital Signature Algorithm）** 作為數位簽章演算法。具體來說，[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)使用的是名為 `secp256k1` 參數的橢圓曲線。
 
 橢圓曲線密碼學的安全性依賴於 **橢圓曲線離散對數問題（ECDLP：Elliptic Curve Discrete Logarithm Problem）** 的計算困難度。
 橢圓曲線由以下Weierstrass標準式的方程式定義：
@@ -51,7 +51,7 @@ $$
 y^2 \equiv x^3 + ax + b \pmod{p}
 $$
 
-在比特幣的 `secp256k1` 中，$a = 0, b = 7$，且 $p$ 是一個非常大的質數。
+在[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)的 `secp256k1` 中，$a = 0, b = 7$，且 $p$ 是一個非常大的質數。
 假設曲線上的一個基點（基準點）為 $G$，隨機選擇一個256位元的巨大整數作為私鑰 $k$。此時，公鑰 $K$ 可透過將基點進行 $k$ 次加法（純量乘法）來求得。
 
 $$
@@ -112,7 +112,7 @@ $$
 
 另一個威脅是Lov Grover在1996年提出的 **Grover演算法** 。這對雜湊函數（如：SHA-256）產生了巨大影響。
 
-在區塊鏈中，雜湊函數被用來確保資料完整性、產生地址，以及作為比特幣中 **PoW（工作量證明）挖礦** 的基礎。雜湊函數的反推（原像計算）可以被視為在未結構化的資料庫中搜尋，也就是針對特定輸出值 $y$，尋找能使 $H(x) = y$ 的輸入值 $x$。
+在區塊鏈中，雜湊函數被用來確保資料完整性、產生地址，以及作為[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)中 **PoW（工作量證明）挖礦** 的基礎。雜湊函數的反推（原像計算）可以被視為在未結構化的資料庫中搜尋，也就是針對特定輸出值 $y$，尋找能使 $H(x) = y$ 的輸入值 $x$。
 
 在傳統電腦中，為了從 $N$ 個可能性中找到正確答案，平均需要 $\frac{N}{2}$ 次嘗試，最壞的情況下需要 $N$ 次嘗試。換言之，運算複雜度為 $\mathcal{O}(N)$。
 然而，Grover演算法使用了稱為「振幅放大（Amplitude Amplification）」的量子技術。透過在疊加態的所有可能性中，反覆放大正確狀態的機率振幅，可將搜尋時間縮短至平方根。
@@ -132,16 +132,16 @@ $$
 
 ---
 
-## 3. 對現有加密資產（Bitcoin, Ethereum）具體影響的分析
+## 3. 對現有加密資產（[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/), Ethereum）具體影響的分析
 
-在一個量子電腦能夠破解ECDSA的世界中，加密資產網路究竟會面臨什麼樣的漏洞？在這裡，我們以比特幣的運作機制為例，從 **「公鑰暴露的時機」** 這一觀點進行詳細分析。
+在一個量子電腦能夠破解ECDSA的世界中，加密資產網路究竟會面臨什麼樣的漏洞？在這裡，我們以[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)的運作機制為例，從 **「公鑰暴露的時機」** 這一觀點進行詳細分析。
 
 ### 3.1. 地址的產生與公鑰的「非公開性」
 
-比特幣的地址（如P2PKH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）並非使用公鑰本身，而是將公鑰進行多次雜湊後生成。
+[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)的地址（如P2PKH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）並非使用公鑰本身，而是將公鑰進行多次雜湊後生成。
 
 $$
-\text{Bitcoin Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
 $$
 
 如前所述，由於雜湊函數對量子攻擊（Grover演算法）具有抵抗力，即使是量子電腦也無法從身為雜湊值的「地址」反推回原始的「公鑰」。
@@ -182,11 +182,11 @@ sequenceDiagram
 
 更嚴重的問題在於，過去只要曾經發送過一次資金的地址（例如被當作找零地址重複使用的情況），其公鑰就已經永久記錄在區塊鏈上。這些地址不需要等待發送交易，隨時都暴露在被計算出私鑰並盜取餘額的危險之中。
 
-此外，包含中本聰初期挖礦獎勵（約超過100萬枚BTC）在內，在2009年至2010年期間主流的 **P2PK（Pay-to-Public-Key）** 格式中，地址並非雜湊值，而是直接將公鑰本身記錄在區塊鏈上。這些大量休眠的比特幣，將成為量子電腦最容易下手的目標。一旦它們被集體盜取並在市場上傾銷，可能會引發價格的崩盤。
+此外，包含中本聰初期挖礦獎勵（約超過100萬枚BTC）在內，在2009年至2010年期間主流的 **P2PK（Pay-to-Public-Key）** 格式中，地址並非雜湊值，而是直接將公鑰本身記錄在區塊鏈上。這些大量休眠的[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)，將成為量子電腦最容易下手的目標。一旦它們被集體盜取並在市場上傾銷，可能會引發價格的崩盤。
 
 ---
 
-## 4. 邁向後量子密碼學（PQC: Post-Quantum Cryptography）的過渡方案
+## 4. 邁向後量子密碼學（PQC: Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）的過渡方案
 
 為了避免這種「Q-Day（量子電腦攻破密碼學之日）」的災難發生，密碼學界與區塊鏈社群正在計畫過渡至即使是量子演算法也難以破解的 **後量子密碼學（PQC）** 。
 美國國家標準暨技術研究院（NIST）多年來一直推動PQC的標準化流程，經過多輪嚴格評估後，幾個具潛力的密碼演算法已被選定為最終標準。
@@ -238,7 +238,7 @@ $$
 這個過程在數學上極其簡單，只要量子電腦無法對 $H$ 進行反推，就不可能偽造簽章。然而，一旦進行簽章，一半的私鑰就會暴露在網路上。如果用同一對金鑰對另一則訊息進行簽章，暴露的私鑰組合起來就會給攻擊者提供偽造空間。這產生了強烈的「一次性（One-Time）」限制。
 為了使其能實際應用，人們開發了使用Merkle Tree將大量一次性金鑰綁定到單一根公鑰的 **XMSS** ，以及無狀態的 **SPHINCS+** 等技術，但它們都有簽章大小達到數十KB的缺點。
 
-### 4.2. 晶格密碼學（Lattice-Based Cryptography）
+### 4.2. 晶格密碼學（Lattice-Based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 
 目前作為PQC主流備受期待，並被NIST採納為主要標準規格（FIPS 204: ML-DSA / 前身為CRYSTALS-Dilithium，以及Falcon等）的，是 **晶格密碼學** 。
 
@@ -264,14 +264,14 @@ $$
 
 ## 5. 區塊鏈轉向PQC的技術挑戰
 
-儘管存在PQC演算法（如Dilithium和SPHINCS+），這並不代表我們明天就能將其導入比特幣或以太坊。仍有許多分散式系統特有的沉重挑戰需要克服。
+儘管存在PQC演算法（如Dilithium和SPHINCS+），這並不代表我們明天就能將其導入[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)或以太坊。仍有許多分散式系統特有的沉重挑戰需要克服。
 
 ### 5.1. 簽章大小膨脹與可擴展性的崩潰
 
 導入PQC最大的障礙在於資料大小的大幅膨脹。
 目前ECDSA的簽章大小約為70位元組，而晶格密碼學的Dilithium（ML-DSA）的簽章大小則高達約2,420到4,595位元組（視安全等級而定），公鑰大小也超過1,300位元組。至於基於雜湊的SPHINCS+，光是簽章就可能達到數萬位元組。
 
-如果比特幣在保持現有區塊大小上限（含SegWit約4MB的權重）的情況下導入PQC，單個區塊能容納的交易數量將大幅減少。網路吞吐量（TPS：Transactions Per Second）將遭受毀滅性打擊，網路壅塞將成為常態。
+如果[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)在保持現有區塊大小上限（含SegWit約4MB的權重）的情況下導入PQC，單個區塊能容納的交易數量將大幅減少。網路吞吐量（TPS：Transactions Per Second）將遭受毀滅性打擊，網路壅塞將成為常態。
 為了解決這個問題，必須大幅提高區塊大小。然而，這將增加全節點的儲存空間及網路頻寬需求，使個人運行節點變得困難，最終陷入導致 **網路中心化** 的困境。
 
 ```mermaid
@@ -293,7 +293,7 @@ pie title 區塊鏈中的簽章資料大小比較 (概念圖)
 
 ### 5.3. 硬分叉達成共識的困難度
 
-要更改基礎的簽章演算法，必須進行更新整個網路協定的 **硬分叉（Hard Fork）** 。然而，在像比特幣這種重視「不改變規則、去中心化」的社群中，達成共識的過程在政治上也極為困難。關於過渡至PQC的BIP（比特幣改進提案）從提出到落實，可能需要長達數年的討論與測試。
+要更改基礎的簽章演算法，必須進行更新整個網路協定的 **硬分叉（Hard Fork）** 。然而，在像[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)這種重視「不改變規則、去中心化」的社群中，達成共識的過程在政治上也極為困難。關於過渡至PQC的BIP（[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)改進提案）從提出到落實，可能需要長達數年的討論與測試。
 
 ---
 
@@ -314,7 +314,7 @@ pie title 區塊鏈中的簽章資料大小比較 (概念圖)
 需要注意的是，SNARKs的某些構造（如Groth16）本身具備量子脆弱性，因此採用僅依賴抗量子雜湊函數的 **ZK-STARKs** 將成為關鍵。
 
 ### 階段3：協定層級的硬分叉（2030年左右）
-當NIST的PQC標準化完全確立，業界標準函式庫齊備並經過充分測試後，預期Bitcoin或Ethereum等主流公鏈將執行硬分叉，把預設簽章方式全面過渡到PQC。在這個過渡期，將會對用戶發出大規模公告，「呼籲用戶將資金從舊錢包轉移到支援PQC的新錢包」。
+當NIST的PQC標準化完全確立，業界標準函式庫齊備並經過充分測試後，預期[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)或Ethereum等主流公鏈將執行硬分叉，把預設簽章方式全面過渡到PQC。在這個過渡期，將會對用戶發出大規模公告，「呼籲用戶將資金從舊錢包轉移到支援PQC的新錢包」。
 
 ### 先驅專案案例
 
@@ -335,14 +335,14 @@ Shor演算法和Grover演算法這兩把量子電腦的利劍，分別威脅著�
 身為一般加密資產用戶或投資者的我們，現在不需要恐慌地拋售所有資產。但是，具備以下基本素養與自我保護意識非常重要。
 
 * **避免重複使用地址** ：不僅基於隱私考量，基於安全考量更應嚴格遵守，不要將資金長時間存放在「已使用的地址（只要發送過一次資金，公鑰就暴露在區塊鏈上的地址）」。
-* **關注科技趨勢** ：留意比特幣BIP或以太坊EIP等主要網路關於PQC過渡的討論及硬分叉新聞，在必要的時機，妥善進行錢包轉移操作。
+* **關注科技趨勢** ：留意[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)BIP或以太坊EIP等主要網路關於PQC過渡的討論及硬分叉新聞，在必要的時機，妥善進行錢包轉移操作。
 
 區塊鏈的歷史，一直都是一段面對新技術威脅不斷升級與展現韌性（回復力）的歷史。正如我們克服了可擴展性問題與環境問題（如PoW過渡到PoS），面對這場前所未見的量子威脅，整個生態系也將會探索出解決方案並加以適應。
 我們期待，代表人類新智慧的量子電腦，與作為信任科技的去中心化分散式帳本，並不會在衝突中走向毀滅，而是能在更高層次上融合，昇華為一個更堅固的系統。
 
 ---
 *參考文獻・相關連結:*
-* National Institute of Standards and Technology (NIST) - Post-Quantum Cryptography Standardization Project
+* National Institute of Standards and Technology (NIST) - Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy Standardization Project
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.

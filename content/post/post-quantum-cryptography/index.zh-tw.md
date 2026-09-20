@@ -18,15 +18,15 @@ description: '隨著量子電腦的實用化，公鑰密碼學在未來面臨被
 
 更嚴重的是，「Harvest Now, Decrypt Later（現在竊取並儲存數據，等到未來能夠解密時再破解）」這種攻擊手法的存在。國家的機密情報、企業的智慧財產、個人的生物特徵等需要保密數十年的數據，現在可能已經成為以未來解密為前提的竊取目標。
 
-為了應對這場前所未有的危機，世界各地的密碼學家與研究機構正傾全力開發能夠抵禦量子電腦攻擊的次世代密碼技術，也就是 **抗量子計算機密碼學（PQC：Post-Quantum Cryptography）** 。本篇文章將從PQC的基礎開始，詳細解說主要演算法的機制，以及美國國家標準技術研究所（NIST）推動的全球標準化最新動向。
+為了應對這場前所未有的危機，世界各地的密碼學家與研究機構正傾全力開發能夠抵禦量子電腦攻擊的次世代密碼技術，也就是 **抗量子計算機密碼學（PQC：Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）** 。本篇文章將從PQC的基礎開始，詳細解說主要演算法的機制，以及美國國家標準技術研究所（NIST）推動的全球標準化最新動向。
 
 ---
 
 ## 什麼是抗量子計算機密碼學（PQC）？
 
-抗量子計算機密碼學（Post-Quantum Cryptography, PQC）是能在現有古典電腦上運行，且被設計成能夠抵抗未來可能出現的大型量子電腦攻擊（如蕭爾演算法等）的密碼演算法的總稱。
+抗量子計算機密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy, PQC）是能在現有古典電腦上運行，且被設計成能夠抵抗未來可能出現的大型量子電腦攻擊（如蕭爾演算法等）的密碼演算法的總稱。
 
-經常被混淆的技術有「量子密碼學（Quantum Cryptography）」和「量子金鑰分發（QKD）」，但這些是完全不同的方法。量子密碼學（QKD）是利用量子力學的物理定律（如觀測會改變狀態的特性），在物理上讓通訊路徑上的竊聽變得不可能的基於硬體的技術。它需要專用的光纖或特殊設備，並面臨導入成本和距離限制等課題。
+經常被混淆的技術有「量子密碼學（Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）」和「量子金鑰分發（QKD）」，但這些是完全不同的方法。量子密碼學（QKD）是利用量子力學的物理定律（如觀測會改變狀態的特性），在物理上讓通訊路徑上的竊聽變得不可能的基於硬體的技術。它需要專用的光纖或特殊設備，並面臨導入成本和距離限制等課題。
 
 另一方面， **PQC 則是完全以「數學」為基礎，基於軟體的密碼技術** 。因此，它可以作為軟體更新整合到現有的網際網路基礎設施、伺服器、智慧型手機、瀏覽器中，具有極高的現實社會適用性。全球的IT企業與政府機構目前的當務之急，是將現行使用的 RSA 或 ECC 替換（轉移）為這項 PQC。
 
@@ -55,7 +55,7 @@ graph LR
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-### 1. 晶格密碼學（Lattice-based Cryptography）
+### 1. 晶格密碼學（Lattice-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 
 目前在 PQC 領域中最被看好且成為主流的，就是這項「晶格密碼學」。晶格密碼學是以多維空間中規律排列的點（晶格點）相關的問題作為安全性的基礎。著名的問題包括「最短向量問題（SVP：Shortest Vector Problem）」與「錯誤學習問題（LWE：Learning With Errors）」等。
 
@@ -69,7 +69,7 @@ graph LR
 
 目前 NIST 正在進行標準化的演算法中，有許多（如 ML-KEM 或 ML-DSA 等）都採用了這項晶格密碼學。
 
-### 2. 雜湊密碼學（Hash-based Cryptography）
+### 2. 雜湊密碼學（Hash-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 
 雜湊密碼學是專門用於數位簽章的 PQC 演算法。其安全性的基礎，僅依賴於 SHA-2 或 SHA-3 等安全的「密碼學雜湊函數」所具備的抗碰撞性與單向性。
 
@@ -87,7 +87,7 @@ graph LR
 
 NIST 已經將作為無狀態雜湊簽章的「SLH-DSA (舊名 SPHINCS+)」予以標準化。
 
-### 3. 多變數多項式密碼學（Multivariate Cryptography）
+### 3. 多變數多項式密碼學（Multivariate [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 
 多變數多項式密碼學是以解開包含多個變數的聯立二次多項式系統的困難度（MQ 問題：Multivariate Quadratic problem）作為安全性基礎的方法。這個問題已知屬於 NP 困難。
 
@@ -102,7 +102,7 @@ NIST 已經將作為無狀態雜湊簽章的「SLH-DSA (舊名 SPHINCS+)」予�
 - 公鑰的大小非常大（有時可達數十到數百 KB）。
 - 過去曾有有力的演算法（如 Rainbow 等）被古典攻擊破解的案例，與其他方法相比，在建立對安全性的信任方面有較困難的一面。
 
-### 4. 編碼密碼學（Code-based Cryptography）
+### 4. 編碼密碼學（Code-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 
 編碼密碼學是將用於修正通訊路徑上錯誤的「錯誤更正碼」理論應用於密碼學中。1978 年提出的「McEliece 密碼學」最為著名，也是 PQC 中歷史最悠久的方法之一。
 
@@ -143,7 +143,7 @@ NIST 已經將作為無狀態雜湊簽章的「SLH-DSA (舊名 SPHINCS+)」予�
 
 ### 追求更多的多樣性
 
-NIST 在完成首批標準化流程的同時，仍持續探索更多的演算法。特別是因為標準偏向「晶格密碼學」，因此確保 **演算法的多樣性（Crypto Diversity）** 被視為一項重點。作為金鑰共享的備用標準，目前正推動對編碼密碼學等進行評估，PQC 的基礎預計在未來將變得更加穩固。
+NIST 在完成首批標準化流程的同時，仍持續探索更多的演算法。特別是因為標準偏向「晶格密碼學」，因此確保 **演算法的多樣性（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Diversity）** 被視為一項重點。作為金鑰共享的備用標準，目前正推動對編碼密碼學等進行評估，PQC 的基礎預計在未來將變得更加穩固。
 
 ---
 
@@ -155,11 +155,11 @@ NIST 在完成首批標準化流程的同時，仍持續探索更多的演算法
 
 由於 PQC 演算法較為新穎，與古典密碼學相比尚未經歷過「時間的考驗」。考慮到實作中潛藏的錯誤或可能發現新攻擊手法的風險，在過渡時期建議採用 **「混合式方法」** 。這是一種結合具有實績的現有密碼學（例：ECDHE）與新的 PQC（例：ML-KEM）來進行金鑰交換的方法。目前，主流瀏覽器與雲端服務正快速推進這種方法的測試導入。
 
-### 實現密碼敏捷性（Crypto-Agility）
+### 實現密碼敏捷性（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)-Agility）
 
-企業與系統開發者今後最應該意識到的，是確保 **「密碼敏捷性（Crypto-Agility）」** 。當未來演算法被發現缺陷或出現新標準時，必須具備能夠在不停止系統運作的情況下，迅速更換與更新密碼演算法的彈性架構設計。
+企業與系統開發者今後最應該意識到的，是確保 **「密碼敏捷性（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)-Agility）」** 。當未來演算法被發現缺陷或出現新標準時，必須具備能夠在不停止系統運作的情況下，迅速更換與更新密碼演算法的彈性架構設計。
 
-精確掌握自家系統內部「在何處」、「使用了哪種密碼」、「基於何種目的」來建立密碼物料清單（CBOM：Cryptography Bill of Materials），將是邁向 PQC 轉移的重要第一步。
+精確掌握自家系統內部「在何處」、「使用了哪種密碼」、「基於何種目的」來建立密碼物料清單（CBOM：[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy Bill of Materials），將是邁向 PQC 轉移的重要第一步。
 
 ---
 

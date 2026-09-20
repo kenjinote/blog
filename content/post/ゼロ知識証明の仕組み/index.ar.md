@@ -127,7 +127,7 @@ $$ e(g_1^a, g_2^b) = e(g_1, g_2)^{ab} $$
 
 ### 1. التزامات متعددات الحدود وبروتوكول FRI
 
-لا يعتمد zk-STARKs على تشفير المنحنى الإهليلجي، بل يؤسس أمانه **فقط على دوال التجزئة**. ولذلك، يمتلك خصائص مقاومة للتشفير ما بعد الكم (Post-Quantum Cryptography).
+لا يعتمد zk-STARKs على تشفير المنحنى الإهليلجي، بل يؤسس أمانه **فقط على دوال التجزئة**. ولذلك، يمتلك خصائص مقاومة للتشفير ما بعد الكم (Post-Quantum [Crypto](https://kenji.blog/ar/p/cryptocurrency-and-bitcoin/)graphy).
 
 يتم التحقق من الحسابات بعد تحويلها إلى تنسيق يسمى AIR (Algebraic Intermediate Representation)، باستخدام خصائص متعددات الحدود أحادية أو متعددة الأبعاد. يكمن جوهر STARKs في بروتوكول **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 

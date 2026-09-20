@@ -112,7 +112,7 @@ Quantum computers truly shine only when applied to **"specific problems where th
 
 #### 1. Prime Factorization and Cryptanalysis (Shor's Algorithm)
 Currently, secure communications on the Internet (such as credit card payments and sending personal information) are protected by "RSA encryption," which is based on the premise that "prime factorization of huge numbers is practically impossible (takes an enormous amount of time) for classical computers."
-However, by using "Shor's Algorithm" discovered by mathematician Peter Shor in 1994, a quantum computer can skillfully use interference to solve this at a dramatic speed (polynomial time). Because of this, there is a risk that the current cryptographic systems will collapse in the future, and central banks and government agencies worldwide are rushing to transition to "Post-Quantum Cryptography."
+However, by using "Shor's Algorithm" discovered by mathematician Peter Shor in 1994, a quantum computer can skillfully use interference to solve this at a dramatic speed (polynomial time). Because of this, there is a risk that the current cryptographic systems will collapse in the future, and central banks and government agencies worldwide are rushing to transition to "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy."
 
 #### 2. Quantum Chemistry Calculations, New Materials, and Drug Discovery
 The behavior of molecules and atoms in the natural world originally follows the laws of quantum mechanics. When trying to simulate the behavior of complex molecules on a classical computer, the combinations of electron interactions explode, hitting the computational limits even for relatively small molecules.

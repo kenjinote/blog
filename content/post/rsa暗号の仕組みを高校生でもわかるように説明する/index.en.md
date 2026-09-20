@@ -17,21 +17,21 @@ In this article, taking high school math knowledge as a starting point, I will t
 
 ---
 
-## 1. Symmetric-key and Public-key Cryptography
+## 1. Symmetric-key and Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Before getting into the mathematical mechanisms of RSA encryption, let's first organize the basic ideas of cryptography. Cryptographic methods can be broadly divided into two types: "Symmetric-key Cryptography" and "Public-key Cryptography".
+Before getting into the mathematical mechanisms of RSA encryption, let's first organize the basic ideas of cryptography. [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic methods can be broadly divided into two types: "Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" and "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy".
 
-### 1.1 Limitations of Symmetric-key Cryptography
+### 1.1 Limitations of Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Many of the traditionally used ciphers are what is called the "Symmetric-key Cryptography" method. This is a method that uses **the same key for both "encryption (converting a message into secret ciphertext)" and "decryption (restoring the ciphertext back to the original message)"**.
+Many of the traditionally used ciphers are what is called the "Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" method. This is a method that uses **the same key for both "encryption (converting a message into secret ciphertext)" and "decryption (restoring the ciphertext back to the original message)"**.
 
 For example, suppose Alice sends a secret letter to Bob. Alice uses a padlock (symmetric key) to put the letter in a box and lock it. In order for Bob to open that box, he needs to have the exact same key that Alice used.
 
 There is a major problem with this method. It is the "key distribution problem". When Alice and Bob, who are far apart, communicate for the first time, how should they share the key without it being eavesdropped on? If the key is stolen by a third party while being mailed, all subsequent encrypted communications will be completely leaked.
 
-### 1.2 The Breakthrough Invention: "Public-key Cryptography"
+### 1.2 The Breakthrough Invention: "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy"
 
-"Public-key Cryptography" was invented to solve this key distribution problem. RSA encryption is also one of this kind.
+"Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" was invented to solve this key distribution problem. RSA encryption is also one of this kind.
 
 In public-key cryptography, we use **two different keys: a "key for encryption (public key)" and a "key for decryption (private key)"**.
 
@@ -340,7 +340,7 @@ Python's `pow(base, exp, mod)` function internally uses a fast algorithm called 
 
 ---
 
-## 11. Conclusion and Future Cryptographic Technology
+## 11. Conclusion and Future [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Technology
 
 Based on the knowledge of high school mathematics, we have uncovered how RSA encryption works.
 

@@ -130,7 +130,7 @@ The abstract seeds of "groups" and "field extensions" that [Galois](https://kenj
 It is no exaggeration to say that modern **abstract algebra** developed with [Galois theory](https://kenji.blog/en/p/galois-theory/) as its starting point. The style of finding structures in collections of all kinds of objects—not just numbers, but polynomials, matrices, and functions—and studying them has become firmly established.
 
 Furthermore, the idea of capturing symmetry as a group plays a fundamental role not only in mathematics but also in a wide range of fields such as physics, chemistry, and information science.
-For example, the Standard Model of particle physics is built on the continuous group theory called Lie groups. Cryptographic theories that support the security of information communication, and coding theories that correct errors in data communication (for instance, the Reed-Solomon codes used in CDs, DVDs, QR codes, etc.) are also direct applications of [Galois theory](https://kenji.blog/en/p/galois-theory/) over finite fields.
+For example, the Standard Model of particle physics is built on the continuous group theory called Lie groups. [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic theories that support the security of information communication, and coding theories that correct errors in data communication (for instance, the Reed-Solomon codes used in CDs, DVDs, QR codes, etc.) are also direct applications of [Galois theory](https://kenji.blog/en/p/galois-theory/) over finite fields.
 
 # 6. Conclusion and Outlook
 

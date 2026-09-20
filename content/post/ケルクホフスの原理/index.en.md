@@ -22,7 +22,7 @@ Some of you might be thinking, "I've never heard of 'Kerckhoffs's Principle,' an
 
 ---
 
-## What does "Secure Cryptography" mean?
+## What does "Secure [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" mean?
 
 For example, imagine someone telling you, "This safe can only be opened by someone who knows the secret way to open it."
 

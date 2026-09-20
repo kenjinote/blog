@@ -200,5 +200,5 @@ En este artículo, comparamos profundamente los antecedentes matemáticos y las 
 
 Mientras que el GNFS redujo la complejidad temporal al tiempo subexponencial mediante elaboradas técnicas matemáticas como la selección de polinomios y el cálculo de enormes matrices, el algoritmo de Shor fusionó la superposición y la interferencia, que son los principios básicos de la mecánica cuántica, con herramientas matemáticas (QFT) para lograr un avance hacia el tiempo polinomial de un solo golpe.
 
-Actualmente, no existe una computadora cuántica tolerante a fallas (FTQC) que pueda ejecutar el algoritmo de Shor a una escala práctica (miles de qubits). Sin embargo, la existencia misma de este cambio de paradigma matemático y teórico es la mayor razón por la que en todo el mundo se está acelerando la transición a la criptografía poscuántica (PQC: Post-Quantum Cryptography).
+Actualmente, no existe una computadora cuántica tolerante a fallas (FTQC) que pueda ejecutar el algoritmo de Shor a una escala práctica (miles de qubits). Sin embargo, la existencia misma de este cambio de paradigma matemático y teórico es la mayor razón por la que en todo el mundo se está acelerando la transición a la criptografía poscuántica (PQC: Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy).
 

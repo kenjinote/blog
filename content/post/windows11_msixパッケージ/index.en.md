@@ -127,7 +127,7 @@ MakeAppx.exe pack /d "C:\Path\To\AppFolder" /p "C:\Path\To\Output\AwesomeApp_1.0
 ```
 This completes an unsigned MSIX file, but it cannot be installed on Windows in this state.
 
-## 5. Mathematical Background of Digital Signatures and Cryptography
+## 5. Mathematical Background of Digital Signatures and [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 To deeply understand why an MSIX package requires a signature, you need to understand the cryptographic mechanisms behind digital signatures. A digital signature guarantees that the package was "certainly created by the specified publisher (Authentication)" and that it "has not been tampered with by a third party between creation and the present (Integrity)".
 

@@ -9,13 +9,13 @@ categories: ["cryptography", "mathematics", "security"]
 tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 ---
 
-# 1. Introduction: The Dawn of Post-Quantum Cryptography (PQC) and the Rise of Lattice-based Cryptography
+# 1. Introduction: The Dawn of Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) and the Rise of Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-The digital infrastructure of modern society is supported by public-key cryptography technologies such as RSA cryptography and Elliptic Curve Cryptography (ECC). These cryptographic schemes base their security on the mathematical difficulty of problems like the "prime factorization problem" and the "discrete logarithm problem," which are believed to be inefficient (requiring exponential time) to solve with conventional classical computers.
+The digital infrastructure of modern society is supported by public-key cryptography technologies such as RSA cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC). These cryptographic schemes base their security on the mathematical difficulty of problems like the "prime factorization problem" and the "discrete logarithm problem," which are believed to be inefficient (requiring exponential time) to solve with conventional classical computers.
 
 However, "Shor's algorithm," published by Peter Shor in 1994, sent shockwaves through the cryptographic world. This algorithm mathematically proved that once a large-scale quantum computer is realized, it would be able to solve the prime factorization problem and the discrete logarithm problem in polynomial time. This means that the widely used public-key cryptography of today will become completely decipherable in the future.
 
-To counter such a "Quantum Threat," research into new cryptographic schemes that are difficult to break even with quantum computers became an urgent task. This field is called "Post-Quantum Cryptography (PQC)" or "quantum-resistant cryptography."
+To counter such a "Quantum Threat," research into new cryptographic schemes that are difficult to break even with quantum computers became an urgent task. This field is called "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)" or "quantum-resistant cryptography."
 
 There are several strong candidates for PQC. Examples include hash-based cryptography, code-based cryptography, multivariate polynomial cryptography, and isogeny-based cryptography. Among them, "Lattice-based cryptography" is currently attracting the most attention and is at the center of the PQC standardization process by NIST (National Institute of Standards and Technology). Compared to other methods, lattice-based cryptography has extremely fast encryption and decryption processing speeds, and it has the outstanding feature of an extremely strong security proof in cryptographic theory: a reduction from "worst-case complexity" to "average-case complexity."
 
@@ -142,7 +142,7 @@ graph TD
     style C fill:#ccccff,stroke:#0000ff,stroke-width:2px,color:#000
 ```
 
-# 5. Construction of a Public-Key Cryptosystem (Regev's Cryptosystem) using LWE
+# 5. Construction of a Public-Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)system (Regev's [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)system) using LWE
 
 Now that we understand the difficulty of the LWE problem, let's look at the basic public-key cryptosystem proposed by Oded Regev to see how it is used for encryption and decryption. Here, we will explain the most basic mechanism for encrypting a 1-bit message $M \in \{0, 1\}$.
 
@@ -227,7 +227,7 @@ flowchart LR
     Dec --> M_out["Recovered Message M"]
 ```
 
-# 6. Toy Example of LWE Cryptography Using Specific Numerical Values
+# 6. Toy Example of LWE [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Using Specific Numerical Values
 
 Since simply listing formulas might make it hard to get a real sense of it, let's actually set very small numerical parameters and follow the calculations from encryption to decryption.
 (* In actual cryptographic systems, values of $n$ of 500 or more and $q$ of several thousands or more are used to ensure security)
@@ -312,7 +312,7 @@ Currently, "CRYSTALS-Kyber" (standardized name: ML-KEM), which NIST selected as 
 
 Finally, let's touch upon the core issue: "Why is lattice-based cryptography considered unbreakable even when using quantum computers?"
 
-Shor's algorithm, which allows quantum computers to break RSA cryptography and Elliptic Curve Cryptography, is essentially an algorithm that solves the "Hidden Subgroup Problem (HSP)." The mathematical structure (finite abelian groups) behind RSA and ECC has periodicity, and by using a specific operation of quantum algorithms called the Quantum Fourier Transform (QFT), this period (hidden subgroup) can be extracted all at once.
+Shor's algorithm, which allows quantum computers to break RSA cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy, is essentially an algorithm that solves the "Hidden Subgroup Problem (HSP)." The mathematical structure (finite abelian groups) behind RSA and ECC has periodicity, and by using a specific operation of quantum algorithms called the Quantum Fourier Transform (QFT), this period (hidden subgroup) can be extracted all at once.
 
 However, lattice problems are fundamentally different. Although lattices also have periodicity, what is required in SVP and CVP is a geometric, non-linear property such as "shortest distance" or "removal of noise." Even if a "Quantum Fourier Transform over an abelian group" like Shor's algorithm is applied directly, useful information that would be the answer to the lattice problem cannot be efficiently extracted. To date, no quantum algorithm that can solve SVP or LWE in polynomial time has been discovered, and it is widely believed that even with the parallel computing power of quantum computers, the only effective means is near-brute-force search (about the level of square root speedup by Grover's algorithm).
 
@@ -322,7 +322,7 @@ In this article, we explained the mathematical intuition of lattice-based crypto
 
 1. A **Lattice** is a discrete space represented by integer-coefficient linear combinations of basis vectors, and finding a "good basis" close to orthogonal (SVP) becomes difficult in high dimensions.
 2. The **LWE (Learning With Errors) problem** is the problem of solving a system of linear equations with noise, and since it is tied to the difficulty of worst-case problems on lattices, it provides a powerful security foundation.
-3. By using the LWE problem, encryption and decryption (**Regev's Cryptosystem**) are realized through an ingenious mechanism of intentionally adding and removing noise.
+3. By using the LWE problem, encryption and decryption (**Regev's [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)system**) are realized through an ingenious mechanism of intentionally adding and removing noise.
 4. In real-world protocols, **Ring-LWE** and **Module-LWE** using polynomial rings are adopted to improve communication efficiency and computation speed, serving as the foundation for the NIST-standard **ML-KEM**.
 
 As the unprecedented computational paradigm shift of quantum computers approaches, it is quite romantic that "lattice-based cryptography," born from the depths of classical linear algebra and number theory, will bear the foundation of future internet security. The math that forms the foundation of lattice-based cryptography is by no means too esoteric, and anyone with a basic knowledge of linear algebra and probability can fully understand its beautiful structure. We hope this article has helped you understand lattice-based cryptography, the core of PQC.

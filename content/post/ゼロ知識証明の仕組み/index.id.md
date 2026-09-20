@@ -127,7 +127,7 @@ STARKs yang dikembangkan oleh Eli Ben-Sasson dan kawan-kawan memiliki karakteris
 
 ### 1. Komitmen Polinomial dan Protokol FRI
 
-zk-STARKs tidak menggunakan kriptografi kurva eliptik, melainkan mendasarkan keamanannya **hanya pada fungsi hash**. Oleh karena itu, ia memiliki sifat sebagai kriptografi pasca-kuantum (Post-Quantum Cryptography).
+zk-STARKs tidak menggunakan kriptografi kurva eliptik, melainkan mendasarkan keamanannya **hanya pada fungsi hash**. Oleh karena itu, ia memiliki sifat sebagai kriptografi pasca-kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy).
 
 Verifikasi perhitungan dilakukan menggunakan sifat polinomial satu dimensi atau multi-dimensi setelah diubah menjadi format yang disebut AIR (Algebraic Intermediate Representation). Inti dari STARKs terletak pada protokol **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 

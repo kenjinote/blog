@@ -337,11 +337,11 @@ Para quebrar a criptografia RSA de 2048 bits, estima-se que sejam necessários m
 
 # 7. Transição para Criptografia Pós-Quântica (PQC)
 
-Em preparação para a chegada desse "Q-Day (O dia em que os computadores quânticos quebrarão a criptografia)", os pesquisadores de criptografia do mundo todo, liderados pelo Instituto Nacional de Padrões e Tecnologia dos EUA (NIST), estão avançando no desenvolvimento da **Criptografia Pós-Quântica (Post-Quantum Cryptography, PQC)**.
+Em preparação para a chegada desse "Q-Day (O dia em que os computadores quânticos quebrarão a criptografia)", os pesquisadores de criptografia do mundo todo, liderados pelo Instituto Nacional de Padrões e Tecnologia dos EUA (NIST), estão avançando no desenvolvimento da **Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy, PQC)**.
 
 A PQC se baseia em novos problemas matemáticos (como problemas de reticulados, polinômios multivariados, funções hash, etc.) que são matematicamente considerados como ineficientes de se resolver, mesmo utilizando o algoritmo de Shor (ou o algoritmo de Grover). Já foram escolhidos algoritmos como "CRYSTALS-Kyber" e "CRYSTALS-Dilithium" como normas padrão, e sua introdução gradual começou em serviços como o iMessage da Apple e em protocolos de comunicação de vários navegadores da web.
 
-Para os engenheiros que gerenciam a infraestrutura de TI, incorporar a "Cripto-Agilidade (Crypto-Agility: a capacidade de alterar o esquema de criptografia rapidamente)" em seus sistemas para fazer a transição da criptografia RSA e de curvas elípticas existente para a PQC será uma grande missão nos próximos anos.
+Para os engenheiros que gerenciam a infraestrutura de TI, incorporar a "Cripto-Agilidade ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)-Agility: a capacidade de alterar o esquema de criptografia rapidamente)" em seus sistemas para fazer a transição da criptografia RSA e de curvas elípticas existente para a PQC será uma grande missão nos próximos anos.
 
 ---
 

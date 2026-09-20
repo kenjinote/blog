@@ -11,7 +11,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # 타원곡선 암호(ECC)의 수학적 기초와 C++에서의 구현
 
-현대 암호 기술에서 **타원곡선 암호(Elliptic Curve Cryptography: ECC)** 는 매우 중요한 역할을 담당하고 있습니다. 우리의 일상적인 인터넷 통신(HTTPS/TLS)부터 스마트폰의 보안 엔클레이브(Secure Enclave), SSH를 통한 서버 인증, FIDO와 같은 패스워드리스 인증, 심지어 비트코인이나 이더리움과 같은 암호화폐에 이르기까지 현대 디지털 사회의 신뢰 기반은 ECC에 의해 지탱되고 있다고 해도 과언이 아닙니다.
+현대 암호 기술에서 **타원곡선 암호(Elliptic Curve [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy: ECC)** 는 매우 중요한 역할을 담당하고 있습니다. 우리의 일상적인 인터넷 통신(HTTPS/TLS)부터 스마트폰의 보안 엔클레이브(Secure Enclave), SSH를 통한 서버 인증, FIDO와 같은 패스워드리스 인증, 심지어 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 이더리움과 같은 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)에 이르기까지 현대 디지털 사회의 신뢰 기반은 ECC에 의해 지탱되고 있다고 해도 과언이 아닙니다.
 
 본 기사에서는 이 타원곡선 암호가 어떻게 기능하는지, 그 이면에 있는 아름답고도 난해한 수학적 이론(유한체 상의 대수기하학)에서 출발하여 실제 C++를 이용한 구현 방법, 나아가 부채널 공격(타이밍 공격)을 방지하기 위한 안전한 코딩 기법까지 압도적인 분량으로 철저하게 해설합니다.
 
@@ -444,7 +444,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 실제 프로덕션 환경에서 동작하는 암호 라이브러리를 직접 만드는 것은 보안상 위험이 매우 높기 때문에 권장되지 않습니다("Don't roll your own crypto"). 하지만 그 내부에서 동작하고 있는 알고리즘과 수학적 배경을 깊이 이해하는 것은 더 안전하고 퍼포먼스가 높은 시스템을 설계 및 운영하는 엔지니어에게 둘도 없이 강력한 무기가 될 것입니다.
 
-다음 기사에서는 이 타원곡선을 이용한 디지털 서명 알고리즘인 **ECDSA(Elliptic Curve Digital Signature Algorithm)** 의 메커니즘이나, 비트코인에서 채택된 **Schnorr 서명(슈노르 서명)** 에 대해 한층 더 깊이 파고들어 보고자 합니다.
+다음 기사에서는 이 타원곡선을 이용한 디지털 서명 알고리즘인 **ECDSA(Elliptic Curve Digital Signature Algorithm)** 의 메커니즘이나, [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)에서 채택된 **Schnorr 서명(슈노르 서명)** 에 대해 한층 더 깊이 파고들어 보고자 합니다.
 
 
 

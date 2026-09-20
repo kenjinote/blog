@@ -168,13 +168,13 @@ Il est prématuré de penser : "Nous sommes en sécurité car cela prendra encor
 
 Ce que l'on craint ici, c'est une méthode d'attaque appelée ** "Store Now, Decrypt Later" (Stockez maintenant, décryptez plus tard) **. Des pays ou des organisations malveillants interceptent toutes les données de communication cryptées avec le RSA ou ECC (cryptographie sur les courbes elliptiques) actuels et les stockent. Puis, 10 ou 20 ans plus tard, au moment où un puissant ordinateur quantique est achevé, ils utilisent l'algorithme de Shor pour décrypter toutes les données passées et révéler des secrets.
 
-Pour lutter contre cette menace de décalage temporel, le NIST (National Institute of Standards and Technology des États-Unis) a dirigé le processus de standardisation de la ** "Cryptographie post-quantique (PQC: Post-Quantum Cryptography)" ** à un rythme effréné.
+Pour lutter contre cette menace de décalage temporel, le NIST (National Institute of Standards and Technology des États-Unis) a dirigé le processus de standardisation de la ** "[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie post-quantique (PQC: Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)" ** à un rythme effréné.
 
 La PQC est un nouvel algorithme cryptographique basé sur des problèmes mathématiques difficiles à décrypter même à l'aide d'ordinateurs quantiques (c'est-à-dire que l'algorithme de Shor ne peut pas être appliqué). Les principales approches incluent :
 
-* ** Cryptographie basée sur les réseaux euclidiens (Lattice-based cryptography) ** : Basée sur des problèmes tels que LWE (Learning with Errors). Actuellement le courant dominant dans la standardisation du NIST (Kyber, Dilithium, etc.).
-* ** Cryptographie basée sur les codes (Code-based cryptography) ** : Repose sur la difficulté de décodage des codes correcteurs d'erreurs.
-* ** Cryptographie multivariée (Multivariate cryptography) ** : Repose sur la difficulté de résoudre un système d'équations quadratiques à plusieurs variables.
+* ** [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur les réseaux euclidiens (Lattice-based cryptography) ** : Basée sur des problèmes tels que LWE (Learning with Errors). Actuellement le courant dominant dans la standardisation du NIST (Kyber, Dilithium, etc.).
+* ** [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur les codes (Code-based cryptography) ** : Repose sur la difficulté de décodage des codes correcteurs d'erreurs.
+* ** [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie multivariée (Multivariate cryptography) ** : Repose sur la difficulté de résoudre un système d'équations quadratiques à plusieurs variables.
 * ** Signatures basées sur le hachage (Hash-based signatures) ** : Signatures numériques qui reposent uniquement sur la sécurité des fonctions de hachage.
 
 Les principaux logiciels et plateformes tels que Google Chrome et Apple iMessage ont déjà commencé les tests de déploiement de la PQC et des implémentations hybrides.

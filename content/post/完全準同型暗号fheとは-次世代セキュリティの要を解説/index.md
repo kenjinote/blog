@@ -77,7 +77,7 @@ FHEは長らく「暗号界の聖杯」と呼ばれ、実現不可能ではな�
 
 ## 3. FHEの数学的基盤：LWE問題とRing-LWE
 
-現在の主流となっているFHEスキームの多くは、耐量子計算機暗号（Post-Quantum Cryptography）としても知られる「格子暗号（Lattice-based Cryptography）」の数学的難問である **LWE (Learning With Errors) 問題** に基づいています。
+現在の主流となっているFHEスキームの多くは、耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）としても知られる「格子暗号（Lattice-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）」の数学的難問である **LWE (Learning With Errors) 問題** に基づいています。
 
 ### LWE問題の直感的な理解
 連立一次方程式を解くことは、[ガウス](https://kenji.blog/p/gauss/)の消去法などを用いれば簡単です。

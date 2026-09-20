@@ -43,7 +43,7 @@ This property is the exact mathematical formula that explains the fundamental ca
 
 ## 2. Hash Functions and the Mechanism of Hash Collisions
 
-### What is a Cryptographic Hash Function?
+### What is a [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Hash Function?
 
 A **Hash Function** is a function that takes input data of arbitrary length (messages, files, passwords, etc.) and converts it into output data of a fixed length (hash value, digest). Representative cryptographic hash functions include SHA-256 and SHA-3, which are widely used today.
 
@@ -60,7 +60,7 @@ Now, let's apply the Pigeonhole Principle to hash functions and consider it.
 * **Pigeons**: The set of input data. Since combinations of file contents and character strings exist infinitely, the number of elements $|A|$ is virtually "infinite."
 * **Holes**: The set of hash values. Since hash values have a fixed length, the number of elements $|B|$ is "finite."
 
-For example, the output of SHA-256, which is also used in blockchain technologies like Bitcoin, is 256 bits. Therefore, the types of possible hash values are $2^{256}$ (about $1.15 \times 10^{77}$). This is an enormous number approaching the total number of atoms in the observable universe, but it is ultimately a **finite number**.
+For example, the output of SHA-256, which is also used in blockchain technologies like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/), is 256 bits. Therefore, the types of possible hash values are $2^{256}$ (about $1.15 \times 10^{77}$). This is an enormous number approaching the total number of atoms in the observable universe, but it is ultimately a **finite number**.
 
 On the other hand, the variations of text and image files that can be considered as input data exist **infinitely**.
 Therefore, because the inequality "total number of input data" $>$ "total number of hash values" holds, according to the Pigeonhole Principle, **there will always exist two different input data that result in the same hash value**. This phenomenon is called a **"Hash Collision."**
@@ -175,7 +175,7 @@ To resolve this collision, algorithms like the following are incorporated:
 
 Behind the scenes of programming languages (like `dict` in Python or `HashMap` in Java), sophisticated contrivances are devised to handle the collisions caused by the Pigeonhole Principle as quickly and efficiently as possible.
 
-## 6. Ensuring Security in Cryptography and the Future
+## 6. Ensuring Security in [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and the Future
 
 Since it is impossible to create a "hash function that absolutely never collides" due to the Pigeonhole Principle, the world of information security takes the approach of **"designing it so that a collision can never be found within a realistic amount of time and computational resources."**
 
@@ -224,7 +224,7 @@ This time, we explained how the simple and intuitive mathematical theorem known 
 
 * **Inevitability of the Pigeonhole Principle**: Hash functions with infinite inputs and finite outputs mathematically always have collisions.
 * **Threat of the Birthday Attack**: Due to the birthday paradox, for a hash value space $N$, a collision can be found with just about $\sqrt{N}$ calculations.
-* **Design Philosophy of Modern Cryptography**: Since it is impossible to reduce collisions to zero, the output length is made sufficiently large to make collision discovery computationally impossible.
+* **Design Philosophy of Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**: Since it is impossible to reduce collisions to zero, the output length is made sufficiently large to make collision discovery computationally impossible.
 
 Deeply understanding these principles connects directly to understanding the foundations of modern security systems like blockchain, digital signatures, and password management.
 It is an extremely profound and interesting aspect of information science that cryptographic technologies, which at first glance seem difficult and complex, conceal familiar principles and probability theory like "pigeons and holes" and "birthdays" at their core.

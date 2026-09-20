@@ -14,7 +14,7 @@ description: '양자 컴퓨터의 대두로 인한 암호 무력화 위협과 �
 
 현대 인터넷 사회에서 통신의 기밀성과 데이터의 무결성을 보호하기 위해 공개키 암호 기술은 인프라로서 필수 불가결합니다. 현재 널리 사용되고 있는 RSA 암호나 타원 곡선 암호(ECC)는 각각 '거대한 합성수의 소인수분해의 어려움'이나 '타원 곡선 상의 이산대수 문제의 어려움'이라는 수학적인 장벽에 의존하여 안전성을 담보하고 있습니다. 고전적인 컴퓨터(슈퍼컴퓨터를 포함하여 현재 우리가 사용하고 있는 컴퓨터)에서는 이러한 수학적 문제를 풀기 위해서는 우주의 나이보다 더 오랜 시간이 걸린다고 증명되어 있으며, 그것이 안전성의 근거가 되어 왔습니다.
 
-그러나 이 견고한 전제는 **양자 컴퓨터 ** 의 이론과 실용화의 진전으로 인해 근본적으로 뒤집히려 하고 있습니다. 1994년에 암호학자 피터 쇼어(Peter Shor)가 발표한 '**쇼어의 알고리즘(Shor's Algorithm)**'은 충분한 성능을 가진 오류 내성 범용 양자 컴퓨터(CRQC: Cryptographically Relevant Quantum Computer)에서 실행함으로써 소인수분해 문제나 이산대수 문제를 '다항식 시간'에 해독할 수 있음을 이론적으로 증명했습니다. 이는 현재 사용되고 있는 공개키 암호가 모두 무력화됨을 의미합니다.
+그러나 이 견고한 전제는 **양자 컴퓨터 ** 의 이론과 실용화의 진전으로 인해 근본적으로 뒤집히려 하고 있습니다. 1994년에 암호학자 피터 쇼어(Peter Shor)가 발표한 '**쇼어의 알고리즘(Shor's Algorithm)**'은 충분한 성능을 가진 오류 내성 범용 양자 컴퓨터(CRQC: [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer)에서 실행함으로써 소인수분해 문제나 이산대수 문제를 '다항식 시간'에 해독할 수 있음을 이론적으로 증명했습니다. 이는 현재 사용되고 있는 공개키 암호가 모두 무력화됨을 의미합니다.
 
 ```mermaid
 graph TD
@@ -30,7 +30,7 @@ graph TD
 
 또한 대칭키 암호(AES 등)나 해시 함수(SHA-256 등)에 대해서도 1996년에 발견된 **그로버의 알고리즘(Grover's Algorithm)** 이 존재합니다. 이로 인해 무차별 대입 공격(브루트 포스)의 계산량이 제곱근으로 감소합니다. 즉, AES-128의 보안 수준은 실질적으로 2의 64승으로 반감되기 때문에, 양자 시대에는 AES-256이나 SHA-384와 같은 더 긴 키나 해시 길이를 사용하는 것이 권장됩니다.
 
-이 전례 없는 암호 위기에 대항하기 위해 탄생한 것이 바로 양자 컴퓨터를 사용해도 해독이 어려운 새로운 수학적 문제에 기반한 **양자 내성 암호(Post-Quantum Cryptography: PQC)** 입니다. 본 기사에서는 미국 국립표준기술연구소(NIST)가 주도하여 진행해 온 PQC 표준화 프로세스의 결과에 바탕을 두고, 주요 PQC 알고리즘에 대해 그 수학적 배경부터 작동 원리, 아키텍처 비교까지 매우 상세하게 해설합니다.
+이 전례 없는 암호 위기에 대항하기 위해 탄생한 것이 바로 양자 컴퓨터를 사용해도 해독이 어려운 새로운 수학적 문제에 기반한 **양자 내성 암호(Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy: PQC)** 입니다. 본 기사에서는 미국 국립표준기술연구소(NIST)가 주도하여 진행해 온 PQC 표준화 프로세스의 결과에 바탕을 두고, 주요 PQC 알고리즘에 대해 그 수학적 배경부터 작동 원리, 아키텍처 비교까지 매우 상세하게 해설합니다.
 
 ---
 
@@ -49,7 +49,7 @@ graph TD
 - **FIPS 205 (SLH-DSA)**: SPHINCS+ 기반 상태 비저장(Stateless) 해시 기반 서명
 - **(향후 책정 예정) FN-DSA**: FALCON 기반 디지털 서명
 
-선정된 이 알고리즘들은 의존하는 수학적인 '어려움 문제'가 각각 달라서, 어느 한 알고리즘에서 장래 치명적인 취약점이 발견되더라도 시스템 전체가 붕괴하지 않도록 다양성(Crypto Agility)이 확보되어 있습니다. 표준화 과정에서는 주로 성능 면에서 격자 기반 암호(Lattice-based cryptography)가 주역이 되었지만, 해시 기반 암호나 코드 기반 암호가 강력한 백업으로 채택되었습니다.
+선정된 이 알고리즘들은 의존하는 수학적인 '어려움 문제'가 각각 달라서, 어느 한 알고리즘에서 장래 치명적인 취약점이 발견되더라도 시스템 전체가 붕괴하지 않도록 다양성([Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Agility)이 확보되어 있습니다. 표준화 과정에서는 주로 성능 면에서 격자 기반 암호(Lattice-based cryptography)가 주역이 되었지만, 해시 기반 암호나 코드 기반 암호가 강력한 백업으로 채택되었습니다.
 
 ---
 
@@ -57,15 +57,15 @@ graph TD
 
 PQC 알고리즘은 그 안전성의 근거가 되는 수학적 문제에 따라 주로 다음 5가지 카테고리로 크게 나뉩니다. 본 기사에서는 특히 상위 3가지에 대해 자세히 파고듭니다.
 
-1. **격자 기반 암호 (Lattice-based Cryptography)**:
+1. **격자 기반 암호 (Lattice-based [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)**:
    다차원 격자 공간에서의 최단 벡터 문제(SVP)나 최근접 벡터 문제(CVP), 그리고 여기서 파생된 LWE 문제에 기반합니다. NIST 표준화의 중심이며, Kyber, Dilithium, FALCON이 이에 해당합니다. 처리 속도, 공개키 크기, 암호문 크기의 균형이 가장 뛰어나 범용적인 사용에 적합합니다.
-2. **해시 기반 암호 (Hash-based Cryptography)**:
+2. **해시 기반 암호 (Hash-based [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)**:
    암호학적 해시 함수(SHA-2, SHAKE 등)의 '충돌 저항성'과 '일방향성'에만 안전성의 근거를 둡니다. 디지털 서명(SPHINCS+ 등)에만 적용 가능하지만, 안전성 증명이 가장 확고하며 미지의 수학적 공격에 대한 내성이 극히 높은 것이 특징입니다.
-3. **코드 기반 암호 (Code-based Cryptography)**:
+3. **코드 기반 암호 (Code-based [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)**:
    오류 정정 코드 이론에 기반하여 신드롬 복호화 문제(Syndrome Decoding Problem)의 어려움에 의존합니다. 1970년대에 제안된 Classic McEliece가 대표적으로, 매우 긴 역사와 입증된 안전성을 가지는 반면 공개키의 크기가 메가바이트 단위로 극단적으로 큽니다.
-4. **다변수 다항식 암호 (Multivariate Polynomial Cryptography)**:
+4. **다변수 다항식 암호 (Multivariate Polynomial [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)**:
    유한체 상의 다변수 연립 이차방정식의 해를 구하는 것(MQ 문제)의 어려움에 기반합니다. 주로 디지털 서명(Rainbow 등)으로 제안되었으나, NIST의 최종 라운드 진행 중에 PC 1대로 며칠 만에 해독되는 강력한 공격 기법이 발견되어 많은 알고리즘이 표준화에서 탈락했습니다.
-5. **동종 사상 암호 (Isogeny-based Cryptography)**:
+5. **동종 사상 암호 (Isogeny-based [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)**:
    타원 곡선의 동종 사상(Isogeny) 그래프 상에서의 경로 탐색 문제에 기반합니다. 키 크기가 매우 작아 ECC의 정당한 후계자로 기대되었으나, 최종 후보였던 'SIKE'가 2022년에 고전적인 수학(Castryck-Decru 공격 등)을 이용하여 일반 PC에서 불과 몇 시간 만에 완전히 해독되어 PQC 설계의 어려움과 두려움을 상징하는 극적인 결말을 맞았습니다.
 
 ---
@@ -294,7 +294,7 @@ NIST의 표준화가 완료되고 FIPS 규격이 정식으로 발행됨에 따�
 
 하지만 새로운 암호 알고리즘으로 갑자기 완전히 전환하는 데에는 매우 높은 위험이 따릅니다. 만약 Kyber와 같은 격자 암호에 대해 몇 년 뒤 어떤 천재 수학자가 치명적인 공격 기법(고전 컴퓨터로도 풀 수 있는 수학적 결함)을 발견할 경우, 그에 의존하고 있는 시스템 전체가 순식간에 발가벗겨지게 됩니다.
 
-이러한 불확실성 위험을 경감하기 위한 현실적이고 권장되는 접근 방식이 '**하이브리드 암호(Hybrid Cryptography)**'입니다.
+이러한 불확실성 위험을 경감하기 위한 현실적이고 권장되는 접근 방식이 '**하이브리드 암호(Hybrid [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)**'입니다.
 
 하이브리드 암호에서는 다년간의 실적이 있는 현행 고전적 암호(예: X25519 등의 타원 곡선 암호)와 새로운 PQC(예: Kyber768)를 모두 동시에 사용하여 키 교환을 수행합니다. 각각의 알고리즘에서 개별적으로 대칭키 성분을 생성하고 마지막으로 안전한 키 도출 함수(KDF)를 이용하여 두 성분을 혼합해 최종적인 마스터 시크릿을 생성합니다.
 
@@ -310,7 +310,7 @@ graph TD
 
 이를 통해 "만일 양자 컴퓨터가 실현되어 ECC가 깨지더라도 Kyber가 통신을 지키고", 반대로 "만일 Kyber에 미지의 수학적 결함이 발견되더라도 ECC가 통신을 지킨다"는 견고한 이중 안전성을 실현할 수 있습니다. 대표적인 예로 IETF에서 표준화가 진행 중인 **X25519MLKEM768 (구 X25519Kyber768)** 초안이 있으며, 현재 웹 브라우저와 최첨단 서버 간의 통신은 바로 이 하이브리드 방식을 이용하여 이루어지고 있습니다.
 
-또한 시스템 설계에 있어서 "특정 암호 알고리즘에 과도하게 의존하지 않고 알고리즘이 파탄 났을 때 신속하게 다른 알고리즘(예: Kyber에서 McEliece로, Dilithium에서 SPHINCS+로)으로 전환할 수 있는 아키텍처"를 구축하는 **Crypto Agility(암호 민첩성)** 의 개념이 향후 시스템 개발에 있어 필수 요건이 됩니다.
+또한 시스템 설계에 있어서 "특정 암호 알고리즘에 과도하게 의존하지 않고 알고리즘이 파탄 났을 때 신속하게 다른 알고리즘(예: Kyber에서 McEliece로, Dilithium에서 SPHINCS+로)으로 전환할 수 있는 아키텍처"를 구축하는 **[Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Agility(암호 민첩성)** 의 개념이 향후 시스템 개발에 있어 필수 요건이 됩니다.
 
 ---
 
@@ -324,7 +324,7 @@ NIST의 FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA) 표준화 완�
 
 ---
 *References:*
-* *NIST Post-Quantum Cryptography Standardization Program*
+* *NIST Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*

@@ -12,7 +12,7 @@ description: 'Desde el antiguo cifrado César hasta Enigma, la criptografía de 
 
 # 1. Introducción: ¿Qué es la criptografía?
 
-La criptografía (Cryptography) es la tecnología utilizada para mantener el secreto de la información y ha evolucionado junto con la historia de la humanidad. Desde la transmisión de órdenes secretas en las guerras antiguas hasta la protección de la información de tarjetas de crédito en el internet moderno, el propósito de la criptografía ha sido constante. Es "garantizar que solo el destinatario previsto pueda entender la información y que no pueda ser descifrada por terceros".
+La criptografía ([Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy) es la tecnología utilizada para mantener el secreto de la información y ha evolucionado junto con la historia de la humanidad. Desde la transmisión de órdenes secretas en las guerras antiguas hasta la protección de la información de tarjetas de crédito en el internet moderno, el propósito de la criptografía ha sido constante. Es "garantizar que solo el destinatario previsto pueda entender la información y que no pueda ser descifrada por terceros".
 
 En la seguridad de la información moderna, la criptografía no se limita simplemente al "secreto de la información (Confidencialidad: Confidentiality)", sino que desempeña roles cruciales como la "Integridad (Integrity)", la "Autenticación (Authentication)" y el "No repudio (Non-repudiation)" de los datos.
 
@@ -140,7 +140,7 @@ graph TD
 La criptografía de clave simétrica tenía una debilidad fatal. Ese era el "Problema de distribución de claves (Key Distribution Problem)". Este es el problema de cómo compartir de forma segura una "clave común" con una parte lejana antes de iniciar una comunicación cifrada. La "criptografía de clave pública", nacida en la década de 1970, resolvió este problema.
 
 ## Intercambio de claves Diffie-Hellman
-En 1976, Whitfield Diffie y Martin Hellman publicaron el artículo pionero "New Directions in Cryptography". Propusieron un método para compartir claves de forma segura incluso en un canal de comunicación interceptado, explotando la dificultad matemática del "Problema del logaritmo discreto (Discrete Logarithm Problem)".
+En 1976, Whitfield Diffie y Martin Hellman publicaron el artículo pionero "New Directions in [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy". Propusieron un método para compartir claves de forma segura incluso en un canal de comunicación interceptado, explotando la dificultad matemática del "Problema del logaritmo discreto (Discrete Logarithm Problem)".
 
 1. Se publican un número primo grande $p$ y un generador $g$.
 2. Alice elige un valor secreto $a$ y envía $A = g^a \pmod{p}$ a Bob.
@@ -197,7 +197,7 @@ rsa_example()
 
 Aunque la criptografía RSA es poderosa, a medida que el rendimiento de las computadoras ha mejorado, se ha vuelto necesario utilizar longitudes de clave más largas (actualmente 2048 o 3072 bits) para mantener la seguridad, lo que aumenta los costos de cálculo.
 
-Por lo tanto, en 1985 se propuso la "Criptografía de curva elíptica (Elliptic Curve Cryptography: ECC)". Esto utiliza la suma de puntos en curvas elípticas (generalmente en la forma $y^2 = x^3 + ax + b$) sobre cuerpos finitos.
+Por lo tanto, en 1985 se propuso la "Criptografía de curva elíptica (Elliptic Curve [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy: ECC)". Esto utiliza la suma de puntos en curvas elípticas (generalmente en la forma $y^2 = x^3 + ax + b$) sobre cuerpos finitos.
 
 Se sabe que el problema del logaritmo discreto de curva elíptica (ECDLP) es aún más difícil de resolver que el problema de factorización de enteros, y **la misma seguridad que RSA de 3072 bits se puede lograr con ECC utilizando una longitud de clave de solo 256 bits**. Esto ha permitido una comunicación cifrada rápida y segura (como ECDSA y ECDH) incluso en entornos con recursos informáticos limitados, como teléfonos inteligentes y dispositivos IoT.
 
@@ -209,10 +209,10 @@ Aunque la tecnología criptográfica parecía sólida como una roca, el "algorit
 
 Las computadoras cuánticas utilizan las propiedades de la mecánica cuántica como la "superposición" y el "entrelazamiento cuántico" para realizar cálculos. Se demostró matemáticamente que ejecutar el algoritmo de Shor en una computadora cuántica suficientemente potente puede resolver el problema de factorización de enteros y el problema del logaritmo discreto en "tiempo polinomial". En otras palabras, el día en que se perfeccionen las computadoras cuánticas prácticas (Q-Day), las criptografías de clave pública que se utilizan actualmente, como RSA y ECC, se romperán instantáneamente.
 
-## La llegada de PQC (Post-Quantum Cryptography)
-En preparación para esta amenaza sin precedentes, se está acelerando la investigación sobre la "criptografía poscuántica (PQC: Post-Quantum Cryptography)", basada en nuevos problemas matemáticos que son difíciles de resolver incluso para las computadoras cuánticas. El NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.) ha estado avanzando en el proceso de estandarización de PQC durante muchos años, y los siguientes enfoques matemáticos se consideran los más prometedores:
+## La llegada de PQC (Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)
+En preparación para esta amenaza sin precedentes, se está acelerando la investigación sobre la "criptografía poscuántica (PQC: Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)", basada en nuevos problemas matemáticos que son difíciles de resolver incluso para las computadoras cuánticas. El NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.) ha estado avanzando en el proceso de estandarización de PQC durante muchos años, y los siguientes enfoques matemáticos se consideran los más prometedores:
 
-### 1. Criptografía basada en retículos (Lattice-based Cryptography)
+### 1. Criptografía basada en retículos (Lattice-based [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)
 Actualmente es el enfoque más prometedor y también se adopta en los algoritmos de estandarización del NIST (ML-KEM / Kyber, ML-DSA / Dilithium). Se basa en la dificultad de problemas como encontrar puntos específicos en un "retículo (Lattice)" de un espacio multidimensional (Problema del vector más corto: SVP, etc.) o el problema LWE (Learning With Errors: Aprendizaje con errores).
 
 El concepto del problema LWE aprovecha la propiedad de que si se añade intencionalmente un "pequeño ruido (error)" a un sistema de ecuaciones lineales, de repente se vuelve difícil encontrar la solución.
@@ -238,10 +238,10 @@ b = (np.dot(A, s) + e) % q
 # Se considera extremadamente difícil restaurar s a partir de A y b incluso usando una computadora cuántica
 ```
 
-### 2. Criptografía basada en hash (Hash-based Cryptography)
+### 2. Criptografía basada en hash (Hash-based [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)
 Es un esquema de firma digital que basa su seguridad únicamente en la resistencia a colisiones de las funciones hash. Dado que no tiene una estructura matemática, es resistente a los ataques cuánticos, pero los tamaños de firma tienden a ser grandes (como SPHINCS+).
 
-### 3. Criptografía basada en códigos (Code-based Cryptography)
+### 3. Criptografía basada en códigos (Code-based [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)
 Es un esquema criptográfico basado en la teoría de códigos de corrección de errores. El cifrado McEliece propuesto en 1978 es famoso, tiene una larga historia y una seguridad bien establecida, pero tiene el problema de que el tamaño de la clave pública es muy grande (a veces alcanza varios megabytes).
 
 ```mermaid
@@ -263,7 +263,7 @@ La historia de la criptografía es la historia de una batalla interminable entre
 
 El cifrado César fue derrotado por el análisis de frecuencias, y la invencible Enigma fue derrotada por el genio de Turing y el poder de las máquinas. Y ahora, las poderosas criptografías como RSA y ECC, que sustentan la sociedad de Internet moderna, también están amenazadas por una nueva "espada", las computadoras cuánticas.
 
-Sin embargo, la humanidad ya está mirando hacia el futuro y preparando un nuevo "escudo", la criptografía poscuántica (PQC). Actualmente, prepararse para la transición de la criptografía de clave pública existente a PQC (garantizar la agilidad criptográfica: Crypto Agility) es una tarea urgente para la infraestructura de TI en todo el mundo.
+Sin embargo, la humanidad ya está mirando hacia el futuro y preparando un nuevo "escudo", la criptografía poscuántica (PQC). Actualmente, prepararse para la transición de la criptografía de clave pública existente a PQC (garantizar la agilidad criptográfica: [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) Agility) es una tarea urgente para la infraestructura de TI en todo el mundo.
 
 La tecnología criptográfica no es solo un complejo rompecabezas matemático, sino el baluarte más fuerte para proteger nuestra privacidad, propiedad y la infraestructura social misma.
 

@@ -18,15 +18,15 @@ description: '随着量子计算机的实用化，公钥密码学在未来将面
 
 更加严重的是存在一种被称为“Harvest Now, Decrypt Later（先窃取存储，待未来能破解时再解密）”的攻击手法。对于国家机密、企业知识产权、个人生物特征信息等需要保密几十年的数据，现在可能已经成为为了未来解密而被窃取的目标。
 
-为了应对这一前所未有的危机，全世界的密码学家和研究机构正全力以赴开发即使面对量子计算机的攻击也能保持安全的新一代密码技术—— **后量子密码学（PQC：Post-Quantum Cryptography）** 。本文将详细介绍PQC的基础、主要算法的机制，以及美国国家标准与技术研究院（NIST）推进的全球标准化最新动向。
+为了应对这一前所未有的危机，全世界的密码学家和研究机构正全力以赴开发即使面对量子计算机的攻击也能保持安全的新一代密码技术—— **后量子密码学（PQC：Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）** 。本文将详细介绍PQC的基础、主要算法的机制，以及美国国家标准与技术研究院（NIST）推进的全球标准化最新动向。
 
 ---
 
 ## 什么是后量子密码学（PQC）？
 
-后量子密码学（Post-Quantum Cryptography, PQC）是指设计为既能在现有的经典计算机上运行，又能够抵御未来出现的大规模量子计算机攻击（如肖尔算法等）的一类密码算法的总称。
+后量子密码学（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy, PQC）是指设计为既能在现有的经典计算机上运行，又能够抵御未来出现的大规模量子计算机攻击（如肖尔算法等）的一类密码算法的总称。
 
-常被混淆的技术有“量子密码学（Quantum Cryptography）”和“量子密钥分发（QKD）”，但它们是完全不同的路径。量子密码学（QKD）是利用量子力学的物理法则（如观测会改变状态的特性等），在物理层面上使通信路径上的窃听变得不可能的硬件基础技术。它需要专用的光纤和特殊设备，面临着导入成本和距离限制等挑战。
+常被混淆的技术有“量子密码学（Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）”和“量子密钥分发（QKD）”，但它们是完全不同的路径。量子密码学（QKD）是利用量子力学的物理法则（如观测会改变状态的特性等），在物理层面上使通信路径上的窃听变得不可能的硬件基础技术。它需要专用的光纤和特殊设备，面临着导入成本和距离限制等挑战。
 
 另一方面， **PQC说到底是基于“数学”的软件基础密码技术** 。因此，它作为软件更新集成到现有的互联网基础设施、服务器、智能手机和浏览器中是可行的，具有极高的现实社会适用性。全世界的IT企业和政府机构当前的当务之急是将目前使用的RSA或ECC替换（迁移）为这种PQC。
 
@@ -55,7 +55,7 @@ graph LR
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-### 1. 基于格的密码（Lattice-based Cryptography）
+### 1. 基于格的密码（Lattice-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 
 目前，在PQC领域最被看好且成为主流的是这种“基于格的密码”。格密码的安全性基于多维空间中规则排列的点（格点）相关的问题。著名的问题包括“最短向量问题（SVP：Shortest Vector Problem）”和“LWE问题（Learning With Errors）”等。
 
@@ -69,7 +69,7 @@ graph LR
 
 目前NIST正在标准化的算法中，很多（如ML-KEM和ML-DSA）都采用了这种基于格的密码。
 
-### 2. 基于哈希的密码（Hash-based Cryptography）
+### 2. 基于哈希的密码（Hash-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 
 基于哈希的密码是专注于数字签名的PQC算法。其安全性的基础仅仅依赖于安全的“密码学哈希函数”（如SHA-2或SHA-3）所具备的抗碰撞性和单向性。
 
@@ -87,7 +87,7 @@ graph LR
 
 NIST已将“SLH-DSA（旧称 SPHINCS+）”作为无状态哈希签名进行了标准化。
 
-### 3. 多变量多项式密码（Multivariate Cryptography）
+### 3. 多变量多项式密码（Multivariate [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 
 多变量多项式密码的安全性依据是求解具有众多变量的非线性方程组系统（MQ问题：Multivariate Quadratic problem）的困难程度。已知该问题是NP困难的。
 
@@ -102,7 +102,7 @@ NIST已将“SLH-DSA（旧称 SPHINCS+）”作为无状态哈希签名进行了
 - 公钥尺寸非常大（有时可达数十至数百千字节）。
 - 过去曾出现过有力的算法（如Rainbow）被经典攻击攻破的案例，因此与其他方式相比，建立对其安全性的信任较为困难。
 
-### 4. 基于编码的密码（Code-based Cryptography）
+### 4. 基于编码的密码（Code-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 
 基于编码的密码是将用于纠正通信路径上错误的“纠错码”理论应用到密码学中。1978年提出的“McEliece密码”最为著名，也是PQC中历史最悠久的算法之一。
 
@@ -143,7 +143,7 @@ NIST已将“SLH-DSA（旧称 SPHINCS+）”作为无状态哈希签名进行了
 
 ### 追求进一步的多样性
 
-尽管NIST完成了最初的标准化进程，但仍在继续探索更多的算法。尤其是由于标准过于偏向“基于格的密码”，因此确保 **算法的多样性（Crypto Diversity）** 被认为非常重要。作为密钥共享的备用标准，基于编码的密码等算法的评估正在推进中，预计未来PQC的基础将变得更加牢固。
+尽管NIST完成了最初的标准化进程，但仍在继续探索更多的算法。尤其是由于标准过于偏向“基于格的密码”，因此确保 **算法的多样性（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/) Diversity）** 被认为非常重要。作为密钥共享的备用标准，基于编码的密码等算法的评估正在推进中，预计未来PQC的基础将变得更加牢固。
 
 ---
 
@@ -155,11 +155,11 @@ NIST已将“SLH-DSA（旧称 SPHINCS+）”作为无状态哈希签名进行了
 
 因为PQC算法较新，与经典密码相比尚未经过“时间的考验”。考虑到实现中潜藏的缺陷或发现新攻击方法的风险，在过渡期建议采用 **“混合方式”** 。这是一种将现有且经过验证的密码（例如：ECDHE）与新型PQC（例如：ML-KEM）结合起来进行密钥交换的方法。目前，主流浏览器和云服务中这种方式的试验性导入正在快速推进。
 
-### 实现密码敏捷性（Crypto-Agility）
+### 实现密码敏捷性（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)-Agility）
 
-企业和系统开发者今后最应该意识到的是确保 **“密码敏捷性（Crypto-Agility）”** 。当未来算法被发现缺陷或出现新标准时，必须具备能够在不停止系统的情况下，迅速更换和更新密码算法的灵活架构设计。
+企业和系统开发者今后最应该意识到的是确保 **“密码敏捷性（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)-Agility）”** 。当未来算法被发现缺陷或出现新标准时，必须具备能够在不停止系统的情况下，迅速更换和更新密码算法的灵活架构设计。
 
-准确掌握自己系统内部“在哪里”、“使用了什么密码”、“为了什么目的”，从而制定密码材料清单（CBOM：Cryptography Bill of Materials），是迈向PQC迁移的重要第一步。
+准确掌握自己系统内部“在哪里”、“使用了什么密码”、“为了什么目的”，从而制定密码材料清单（CBOM：[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy Bill of Materials），是迈向PQC迁移的重要第一步。
 
 ---
 

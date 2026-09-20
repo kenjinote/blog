@@ -127,7 +127,7 @@ zk-SNARKs（特别是早期的Groth16等）最大的弱点在于生成秘密点 
 
 ### 1. 多项式承诺与FRI协议
 
-zk-STARKs不使用椭圆曲线密码学，而是将安全性基础完全建立在 **哈希函数** 上。因此，它具有抗量子计算密码学（Post-Quantum Cryptography）的特性。
+zk-STARKs不使用椭圆曲线密码学，而是将安全性基础完全建立在 **哈希函数** 上。因此，它具有抗量子计算密码学（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）的特性。
 
 计算的验证在被转化为名为AIR（Algebraic Intermediate Representation，代数中间表示）的格式后，利用一维或多维多项式的性质进行。STARKs的核心在于 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity，快速里德-所罗门交互式预言机近似证明）** 协议。
 
@@ -209,7 +209,7 @@ ZKP毫无疑问是下一代的基础技术，但仍存在一些挑战。
 
 ## 结语
 
-零知识证明（ZKP）已经从单纯的“提高加密货币匿名性的技术”，进化为“重新定义整个互联网信任机制的通用技术”。在深奥的数学公式与密码学理论中计算出的微小证明，将无限扩展区块链的可扩展性，并成为坚固保护我们隐私的盾牌。
+零知识证明（ZKP）已经从单纯的“提高[加密货币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)匿名性的技术”，进化为“重新定义整个互联网信任机制的通用技术”。在深奥的数学公式与密码学理论中计算出的微小证明，将无限扩展区块链的可扩展性，并成为坚固保护我们隐私的盾牌。
 
 在迈向Web3的真正大规模普及（Mass Adoption）以及构建安全、隐私的下一代互联网的过程中，零知识证明将继续作为最重要的一块拼图发挥作用。ZKP技术的未来发展绝对不容错过。
 

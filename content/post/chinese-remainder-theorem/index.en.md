@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-The [Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/) (CRT) is one of the most important and beautiful theorems in number theory. Its origins can be traced back to the ancient Chinese mathematical text "Sunzi Suanjing", believed to have been compiled between the 3rd and 5th centuries. Starting from a simple arithmetic problem of antiquity, this theorem has spanned millennia to play an essential role today in public-key cryptography technologies like **RSA Cryptography**, which secures our daily internet communications.
+The [Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/) (CRT) is one of the most important and beautiful theorems in number theory. Its origins can be traced back to the ancient Chinese mathematical text "Sunzi Suanjing", believed to have been compiled between the 3rd and 5th centuries. Starting from a simple arithmetic problem of antiquity, this theorem has spanned millennia to play an essential role today in public-key cryptography technologies like **RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**, which secures our daily internet communications.
 
 In this article, we will explain the **[Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/)** in detail, with illustrations and concrete examples, covering its historical background, strict mathematical definition, specific calculation steps, and applications in modern cryptography.
 
@@ -103,11 +103,11 @@ $233 \equiv 23 \pmod{105}$
 
 Thus, the smallest positive solution is **23**, which perfectly matches Sunzi's solution.
 
-## Applications in the Modern Era: RSA Cryptography and CRT
+## Applications in the Modern Era: RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and CRT
 
-The **[Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/)**, once an ancient puzzle, has extremely practical uses in our modern digital society. A prime example is the acceleration of decryption and signature generation in **RSA Cryptography**.
+The **[Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/)**, once an ancient puzzle, has extremely practical uses in our modern digital society. A prime example is the acceleration of decryption and signature generation in **RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**.
 
-### Overview of RSA Cryptography
+### Overview of RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 In RSA cryptography, two large prime numbers $p$ and $q$ are used, and their product $N = pq$ forms part of the public key. The computation to decrypt the plaintext $M$ from the ciphertext $C$ is performed using the private key $d$ as follows:
 

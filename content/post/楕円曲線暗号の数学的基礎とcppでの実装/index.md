@@ -11,7 +11,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # [楕円曲線暗号（ECC）の数学的基礎とC++での実装](https://kenji.blog/p/楕円曲線暗号の数学的基礎とcppでの実装/)
 
-現代の暗号技術において、 **楕円曲線暗号（Elliptic Curve Cryptography: ECC）** は極めて重要な役割を果たしています。私たちの日常的なインターネット通信（HTTPS/TLS）から、スマートフォンのセキュアエンクレーブ、SSHによるサーバー認証、FIDOなどのパスワードレス認証、さらにはビットコインやイーサリアムなどの暗号資産に至るまで、現代のデジタル社会の信頼基盤はECCによって支えられていると言っても過言ではありません。
+現代の暗号技術において、 **楕円曲線暗号（Elliptic Curve [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: ECC）** は極めて重要な役割を果たしています。私たちの日常的なインターネット通信（HTTPS/TLS）から、スマートフォンのセキュアエンクレーブ、SSHによるサーバー認証、FIDOなどのパスワードレス認証、さらには[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)やイーサリアムなどの[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)に至るまで、現代のデジタル社会の信頼基盤はECCによって支えられていると言っても過言ではありません。
 
 本記事では、この楕円曲線暗号がいかにして機能しているのか、その背後にある美しくも難解な数学的理論（有限体上の代数幾何学）から出発し、実際のC++を用いた実装方法、さらにはサイドチャネル攻撃（タイミング攻撃）を防ぐためのセキュアなコーディング手法まで、圧倒的なボリュームで徹底的に解説します。
 
@@ -444,7 +444,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 実際にプロダクション環境で動作する暗号ライブラリを自作することは、セキュリティ上のリスクが極めて高いため非推奨（"Don't roll your own crypto"）とされています。しかし、その内部で動いているアルゴリズムと数学的背景を深く理解することは、よりセキュアでパフォーマンスの高いシステムを設計・運用するエンジニアにとって、かけがえのない強力な武器となるはずです。
 
-次回の記事では、この楕円曲線を用いたデジタル署名アルゴリズムである **ECDSA (Elliptic Curve Digital Signature Algorithm)** のメカニズムや、ビットコインで採用されている **Schnorr署名** についてさらに深く掘り下げていきたいと思います。
+次回の記事では、この楕円曲線を用いたデジタル署名アルゴリズムである **ECDSA (Elliptic Curve Digital Signature Algorithm)** のメカニズムや、[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)で採用されている **Schnorr署名** についてさらに深く掘り下げていきたいと思います。
 
 
 

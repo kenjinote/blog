@@ -270,7 +270,7 @@ graph LR
 Dalam Algoritma Shor, proses "penemuan periode (period finding)" yang menjadi hambatan (bottleneck) pada algoritma klasik, dapat dihitung secara instan dan paralel oleh "Transformasi Fourier Kuantum (QFT)" yang menggunakan keterikatan kuantum dan superposisi kuantum.
 Jika nanti dapat dieksekusi pada komputer kuantum skala praktis (dengan noise rendah dan memiliki jumlah qubit logis yang memadai), kriptografi RSA 2048-bit yang saat ini dianggap aman berpotensi dapat dipecahkan sepenuhnya dalam waktu beberapa jam hingga beberapa hari.
 
-Untuk bersiap menghadapi ancaman ini, ahli kriptografi di seluruh dunia dan NIST (Institut Standar dan Teknologi Nasional AS) saat ini mempercepat proses standardisasi menuju transisi ke "Kriptografi Pasca-Kuantum (Post-Quantum Cryptography: PQC)" yang sulit untuk dipecahkan bahkan oleh komputer kuantum sekalipun. Kriptografi berbasis kisi (Lattice-based cryptography) adalah salah satu contoh yang representatif, di mana mereka mendasarkan keamanan pada kesulitan matematis yang sama sekali berbeda dengan masalah faktorisasi prima (contohnya masalah vektor terpendek).
+Untuk bersiap menghadapi ancaman ini, ahli kriptografi di seluruh dunia dan NIST (Institut Standar dan Teknologi Nasional AS) saat ini mempercepat proses standardisasi menuju transisi ke "Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy: PQC)" yang sulit untuk dipecahkan bahkan oleh komputer kuantum sekalipun. Kriptografi berbasis kisi (Lattice-based cryptography) adalah salah satu contoh yang representatif, di mana mereka mendasarkan keamanan pada kesulitan matematis yang sama sekali berbeda dengan masalah faktorisasi prima (contohnya masalah vektor terpendek).
 
 ---
 

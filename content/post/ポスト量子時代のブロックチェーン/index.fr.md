@@ -12,13 +12,13 @@ description: "L'arrivée du 'Q-Day', où la puissance de calcul phénoménale de
 
 ## 1. Introduction : L'approche de l'ère post-quantique et la crise de la blockchain
 
-Depuis la création du Bitcoin par Satoshi Nakamoto en 2009, la technologie de la blockchain s'est développée pour devenir l'infrastructure des systèmes financiers et des applications à travers le monde, en tant que « registre décentralisé et infalsifiable ». Cette sécurité robuste repose sur des technologies cryptographiques modernes : la **cryptographie à clé publique (Public Key Cryptography)** et les **fonctions de hachage cryptographique (Cryptographic Hash Functions)**.
+Depuis la création du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) par Satoshi Nakamoto en 2009, la technologie de la blockchain s'est développée pour devenir l'infrastructure des systèmes financiers et des applications à travers le monde, en tant que « registre décentralisé et infalsifiable ». Cette sécurité robuste repose sur des technologies cryptographiques modernes : la **cryptographie à clé publique (Public Key [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** et les **fonctions de hachage cryptographique ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)**.
 
 Ces technologies cryptographiques garantissent la sécurité en s'appuyant sur la « difficulté de calcul » mathématique, c'est-à-dire qu'un ordinateur classique (les PC ou supercalculateurs que nous utilisons aujourd'hui) mettrait un temps comparable à l'âge de l'univers pour les déchiffrer.
 
 Cependant, cette prémisse est sur le point d'être fondamentalement bouleversée par le développement rapide et la mise en pratique des **ordinateurs quantiques (Quantum Computers)**, qui représentent la frontière de la physique et des sciences de l'information. Les ordinateurs quantiques, qui utilisent les propriétés de la mécanique quantique telles que la « superposition (Superposition) » et l'« intrication (Entanglement) », font preuve d'une puissance de calcul surpassant de loin les ordinateurs classiques pour certains problèmes mathématiques, ce que l'on appelle la « suprématie quantique (Quantum Supremacy) ».
 
-Dans cet article, nous explorerons en profondeur, d'un point de vue technique et mathématique, les menaces spécifiques auxquelles la technologie de la blockchain est confrontée à cause des ordinateurs quantiques, ainsi que les dernières tendances de la **cryptographie post-quantique (PQC : Post-Quantum Cryptography)** qui s'annonce comme la solution, et les scénarios de transition pour les réseaux de crypto-actifs.
+Dans cet article, nous explorerons en profondeur, d'un point de vue technique et mathématique, les menaces spécifiques auxquelles la technologie de la blockchain est confrontée à cause des ordinateurs quantiques, ainsi que les dernières tendances de la **cryptographie post-quantique (PQC : Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** qui s'annonce comme la solution, et les scénarios de transition pour les réseaux de crypto-actifs.
 
 ---
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Les fondements de la cryptographie sur les courbes elliptiques (ECDSA) et la difficulté de calcul
 
-De nombreuses blockchains, dont le Bitcoin et l'Ethereum, utilisent l'**algorithme de signature numérique sur courbe elliptique (ECDSA : Elliptic Curve Digital Signature Algorithm)** comme algorithme de signature numérique. Plus précisément, le Bitcoin utilise une courbe elliptique avec le paramètre `secp256k1`.
+De nombreuses blockchains, dont le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et l'Ethereum, utilisent l'**algorithme de signature numérique sur courbe elliptique (ECDSA : Elliptic Curve Digital Signature Algorithm)** comme algorithme de signature numérique. Plus précisément, le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) utilise une courbe elliptique avec le paramètre `secp256k1`.
 
 La sécurité de la cryptographie sur les courbes elliptiques dépend de la difficulté de calcul du **problème du logarithme discret sur courbe elliptique (ECDLP : Elliptic Curve Discrete Logarithm Problem)**.
 La courbe elliptique est définie par l'équation sous forme de Weierstrass suivante :
@@ -51,7 +51,7 @@ $$
 y^2 \equiv x^3 + ax + b \pmod{p}
 $$
 
-Pour le `secp256k1` du Bitcoin, $a = 0, b = 7$, et $p$ est un très grand nombre premier.
+Pour le `secp256k1` du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/), $a = 0, b = 7$, et $p$ est un très grand nombre premier.
 Soit $G$ un point de base sur cette courbe, et $k$ la clé privée, qui est un très grand nombre entier de 256 bits choisi au hasard. Alors, la clé publique $K$ est obtenue par l'addition de $G$ à lui-même $k$ fois (multiplication scalaire).
 
 $$
@@ -112,7 +112,7 @@ Le nombre de portes quantiques requis pour l'ensemble de ce processus est $\math
 
 L'autre menace est l'**algorithme de Grover**, proposé par Lov Grover en 1996. Celui-ci a un impact majeur sur les fonctions de hachage (ex. : SHA-256).
 
-Dans la blockchain, les fonctions de hachage sont utilisées pour garantir l'intégrité des données, générer des adresses et servent de base au **minage PoW (Proof of Work)** du Bitcoin. L'inversion d'une fonction de hachage (calcul de la préimage) peut être considérée comme un « problème de recherche dans une base de données non structurée », consistant à trouver une valeur d'entrée $x$ telle que $H(x) = y$ pour une valeur de sortie $y$ donnée.
+Dans la blockchain, les fonctions de hachage sont utilisées pour garantir l'intégrité des données, générer des adresses et servent de base au **minage PoW (Proof of Work)** du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/). L'inversion d'une fonction de hachage (calcul de la préimage) peut être considérée comme un « problème de recherche dans une base de données non structurée », consistant à trouver une valeur d'entrée $x$ telle que $H(x) = y$ pour une valeur de sortie $y$ donnée.
 
 Dans un ordinateur classique, pour trouver la bonne réponse parmi $N$ possibilités, il faut en moyenne $\frac{N}{2}$ essais, et $N$ essais dans le pire des cas. En d'autres termes, la complexité est $\mathcal{O}(N)$.
 Cependant, l'algorithme de Grover utilise une technique quantique appelée « amplification d'amplitude (Amplitude Amplification) ». En amplifiant itérativement l'amplitude de probabilité de l'état correspondant à la bonne réponse parmi toutes les possibilités dans un état de superposition, le temps de recherche est réduit à sa racine carrée.
@@ -132,16 +132,16 @@ En conclusion, on peut dire que la menace quantique pesant sur les fonctions de 
 
 ---
 
-## 3. Analyse des impacts concrets sur les crypto-actifs actuels (Bitcoin, Ethereum)
+## 3. Analyse des impacts concrets sur les crypto-actifs actuels ([Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/), Ethereum)
 
-Dans un monde où le déchiffrement de l'ECDSA par un ordinateur quantique deviendrait possible, à quelles vulnérabilités spécifiques les réseaux de crypto-actifs seront-ils confrontés ? Nous ferons ici une analyse détaillée en prenant l'exemple du fonctionnement du Bitcoin, du point de vue du **« timing d'exposition de la clé publique »**.
+Dans un monde où le déchiffrement de l'ECDSA par un ordinateur quantique deviendrait possible, à quelles vulnérabilités spécifiques les réseaux de crypto-actifs seront-ils confrontés ? Nous ferons ici une analyse détaillée en prenant l'exemple du fonctionnement du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/), du point de vue du **« timing d'exposition de la clé publique »**.
 
 ### 3.1. Génération d'adresses et « confidentialité » de la clé publique
 
-Les adresses Bitcoin (P2PKH : Pay-to-Public-Key-Hash ou P2WPKH : Pay-to-Witness-Public-Key-Hash) n'utilisent pas la clé publique elle-même, mais un hachage multiple de la clé publique.
+Les adresses [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) (P2PKH : Pay-to-Public-Key-Hash ou P2WPKH : Pay-to-Witness-Public-Key-Hash) n'utilisent pas la clé publique elle-même, mais un hachage multiple de la clé publique.
 
 $$
-\text{Bitcoin Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
 $$
 
 Comme mentionné précédemment, les fonctions de hachage résistent aux attaques quantiques (l'algorithme de Grover), il est donc impossible, même pour un ordinateur quantique, de retrouver la « clé publique » d'origine à partir de « l'adresse » (la valeur de hachage).
@@ -186,7 +186,7 @@ De plus, dans le format **P2PK (Pay-to-Public-Key)**, qui était dominant autour
 
 ---
 
-## 4. Scénarios de transition vers la cryptographie post-quantique (PQC : Post-Quantum Cryptography)
+## 4. Scénarios de transition vers la cryptographie post-quantique (PQC : Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)
 
 Afin d'éviter la catastrophe du « Q-Day (le jour où les ordinateurs quantiques briseront la cryptographie) », la communauté cryptographique et celle de la blockchain prévoient de migrer vers une **cryptographie post-quantique (PQC)** difficile à déchiffrer même avec des algorithmes quantiques.
 Le National Institute of Standards and Technology (NIST) des États-Unis mène depuis de nombreuses années un processus de standardisation PQC, et après plusieurs phases d'évaluations rigoureuses, quelques systèmes de chiffrement prometteurs ont été sélectionnés comme normes finales.
@@ -238,7 +238,7 @@ $$
 Ce processus est mathématiquement très simple, et à moins qu'un ordinateur quantique ne puisse inverser $H$, il est impossible de falsifier une signature. Cependant, une fois signée, la moitié de la clé privée est exposée au réseau. Si la même paire de clés est utilisée pour signer un autre message, les clés privées exposées se combinent, donnant à un attaquant la possibilité de forger des signatures. Cela crée une forte contrainte : la clé ne peut être utilisée qu'**« une seule fois (One-Time) »**.
 Pour rendre cela pratique, des technologies comme **XMSS**, qui utilise un arbre de Merkle pour regrouper de nombreuses clés à usage unique en une seule clé publique racine, ou **SPHINCS+**, qui est sans état, ont été développées, mais elles présentent l'inconvénient de tailles de signature atteignant des dizaines de kilo-octets.
 
-### 4.2. Cryptographie fondée sur les réseaux euclidiens (Lattice-Based Cryptography)
+### 4.2. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie fondée sur les réseaux euclidiens (Lattice-Based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)
 
 Actuellement, la cryptographie qui suscite le plus d'attentes en tant que courant principal du PQC, et qui a été adoptée comme norme principale du NIST (FIPS 204 : ML-DSA / anciennement CRYSTALS-Dilithium, ou Falcon), est la **cryptographie fondée sur les réseaux euclidiens**.
 
@@ -264,14 +264,14 @@ Dans les algorithmes réels utilisés dans les blockchains et ailleurs (comme Di
 
 ## 5. Les défis techniques de la migration PQC pour la blockchain
 
-Ce n'est pas parce que des algorithmes PQC (comme Dilithium ou SPHINCS+) existent qu'ils peuvent être introduits demain dans Bitcoin ou Ethereum. Plusieurs défis majeurs spécifiques aux systèmes décentralisés se posent.
+Ce n'est pas parce que des algorithmes PQC (comme Dilithium ou SPHINCS+) existent qu'ils peuvent être introduits demain dans [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) ou Ethereum. Plusieurs défis majeurs spécifiques aux systèmes décentralisés se posent.
 
 ### 5.1. L'augmentation de la taille des signatures et l'effondrement de la scalabilité
 
 Le plus grand obstacle à l'introduction de la PQC est l'augmentation significative de la taille des données.
 Alors que la taille actuelle d'une signature ECDSA est d'environ 70 octets, dans le cas du Dilithium (ML-DSA) basé sur les réseaux, la taille de la signature est d'environ 2 420 octets à 4 595 octets (selon le niveau de sécurité), et la taille de la clé publique dépasse 1 300 octets. Quant au SPHINCS+ basé sur le hachage, la signature seule atteint des dizaines de milliers d'octets.
 
-Si le Bitcoin introduisait la PQC en conservant la limite de taille de bloc actuelle (un poids d'environ 4 Mo en incluant SegWit), le nombre de transactions pouvant être stockées dans un seul bloc chuterait considérablement. Le débit du réseau (TPS : Transactions Per Second) s'effondrerait, et les congestions de transferts deviendraient la norme.
+Si le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) introduisait la PQC en conservant la limite de taille de bloc actuelle (un poids d'environ 4 Mo en incluant SegWit), le nombre de transactions pouvant être stockées dans un seul bloc chuterait considérablement. Le débit du réseau (TPS : Transactions Per Second) s'effondrerait, et les congestions de transferts deviendraient la norme.
 Pour résoudre ce problème, il faudrait augmenter considérablement la taille des blocs, mais cela accroîtrait les besoins en stockage et en bande passante des nœuds complets, rendant difficile l'exploitation de nœuds par des particuliers et entraînant en conséquence **une centralisation du réseau**, créant ainsi un dilemme.
 
 ```mermaid
@@ -293,7 +293,7 @@ Pour éviter cela, il est nécessaire, via un hard fork du réseau, d'intégrer 
 
 ### 5.3. La difficulté d'atteindre un consensus par hard fork
 
-Pour modifier l'algorithme de signature sous-jacent, un **hard fork (Hard Fork)** mettant à jour le protocole de l'ensemble du réseau est indispensable. Cependant, dans les communautés qui accordent une grande importance à « ne pas changer les règles et rester décentralisé » comme le Bitcoin, le processus de recherche de consensus est politiquement très difficile. Il faudra probablement des années de discussions et de tests entre la proposition d'un BIP (Bitcoin Improvement Proposal) pour la transition PQC et sa mise en œuvre.
+Pour modifier l'algorithme de signature sous-jacent, un **hard fork (Hard Fork)** mettant à jour le protocole de l'ensemble du réseau est indispensable. Cependant, dans les communautés qui accordent une grande importance à « ne pas changer les règles et rester décentralisé » comme le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/), le processus de recherche de consensus est politiquement très difficile. Il faudra probablement des années de discussions et de tests entre la proposition d'un BIP ([Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) Improvement Proposal) pour la transition PQC et sa mise en œuvre.
 
 ---
 
@@ -314,7 +314,7 @@ Plutôt que d'écrire d'énormes données de signature PQC directement sur la co
 Il convient de noter que certaines configurations de SNARKs (comme Groth16) sont intrinsèquement vulnérables au niveau quantique, de sorte que l'adoption des **ZK-STARKs**, qui ne dépendent que des fonctions de hachage résistantes au quantique, sera essentielle.
 
 ### Phase 3 : Hard fork au niveau du protocole (vers 2030)
-Une fois la standardisation de la PQC par le NIST pleinement établie, et que les bibliothèques standards de l'industrie seront disponibles et suffisamment testées, un hard fork devrait être effectué sur les principales chaînes telles que Bitcoin et Ethereum pour migrer complètement l'algorithme de signature par défaut vers la PQC. Durant cette période de transition, des annonces à grande échelle exhorteront les utilisateurs à « transférer leurs fonds de leurs anciens portefeuilles vers de nouveaux portefeuilles compatibles PQC ».
+Une fois la standardisation de la PQC par le NIST pleinement établie, et que les bibliothèques standards de l'industrie seront disponibles et suffisamment testées, un hard fork devrait être effectué sur les principales chaînes telles que [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et Ethereum pour migrer complètement l'algorithme de signature par défaut vers la PQC. Durant cette période de transition, des annonces à grande échelle exhorteront les utilisateurs à « transférer leurs fonds de leurs anciens portefeuilles vers de nouveaux portefeuilles compatibles PQC ».
 
 ### Exemples de projets pionniers
 
@@ -335,14 +335,14 @@ Cependant, le monde de la technologie et la communauté de la blockchain ne se c
 En tant qu'utilisateurs ordinaires de crypto-actifs et investisseurs, nous n'avons pas besoin de paniquer immédiatement ni de vendre tous nos fonds. Toutefois, il est important d'avoir les connaissances de base suivantes et d'être conscient de l'importance de l'autoprotection :
 
 * **Éviter la réutilisation des adresses** : Pour des raisons non seulement de confidentialité mais aussi de sécurité, assurez-vous de ne pas conserver vos fonds à long terme sur des « adresses utilisées (des adresses ayant envoyé des fonds au moins une fois, dont la clé publique a été exposée sur la blockchain) ».
-* **Prêter attention aux tendances technologiques** : Restez à l'affût des actualités concernant les discussions sur la transition PQC et les hard forks des principaux réseaux, comme les BIP de Bitcoin et les EIP d'Ethereum, afin de pouvoir procéder à la migration de votre portefeuille de manière appropriée lorsque cela sera nécessaire.
+* **Prêter attention aux tendances technologiques** : Restez à l'affût des actualités concernant les discussions sur la transition PQC et les hard forks des principaux réseaux, comme les BIP de [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et les EIP d'Ethereum, afin de pouvoir procéder à la migration de votre portefeuille de manière appropriée lorsque cela sera nécessaire.
 
 L'histoire de la blockchain est aussi l'histoire d'améliorations constantes et de résilience (capacité de récupération) face aux nouvelles menaces technologiques. Tout comme l'écosystème a surmonté les problèmes de scalabilité et les problèmes environnementaux (par la transition du PoW au PoS, par exemple), il cherchera sans aucun doute des solutions et s'adaptera globalement à cette menace quantique sans précédent.
 Plutôt que d'être détruites par leur confrontation, on peut s'attendre à ce que la nouvelle sagesse de l'humanité qu'est l'ordinateur quantique et la technologie de confiance qu'est le registre décentralisé soient sublimées en un système robuste fusionné à un niveau supérieur.
 
 ---
 *Références et liens utiles :*
-* National Institute of Standards and Technology (NIST) - Post-Quantum Cryptography Standardization Project
+* National Institute of Standards and Technology (NIST) - Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy Standardization Project
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.

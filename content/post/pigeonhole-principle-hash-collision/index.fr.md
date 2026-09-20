@@ -60,7 +60,7 @@ Appliquons maintenant le principe des tiroirs mentionné précédemment aux fonc
 * **Les pigeons** : L'ensemble des données d'entrée. Puisque les combinaisons de contenus de fichiers ou de chaînes de caractères sont infinies, le nombre d'éléments $|A|$ est virtuellement « infini ».
 * **Les nids** : L'ensemble des valeurs de hachage. Puisque la valeur de hachage est de taille fixe, le nombre d'éléments $|B|$ est « fini ».
 
-Par exemple, la sortie de SHA-256, également utilisée dans des technologies de blockchain comme le Bitcoin, est de 256 bits. Par conséquent, le nombre de valeurs de hachage possibles est de $2^{256}$ (soit environ $1.15 \times 10^{77}$). Bien que ce nombre soit gigantesque et s'approche du nombre total d'atomes dans l'univers observable, il reste un **nombre fini**.
+Par exemple, la sortie de SHA-256, également utilisée dans des technologies de blockchain comme le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/), est de 256 bits. Par conséquent, le nombre de valeurs de hachage possibles est de $2^{256}$ (soit environ $1.15 \times 10^{77}$). Bien que ce nombre soit gigantesque et s'approche du nombre total d'atomes dans l'univers observable, il reste un **nombre fini**.
 
 En revanche, le nombre de variations de textes ou d'images pouvant servir de données d'entrée est **infini**.
 Par conséquent, puisque l'inégalité « nombre total de données d'entrée » $>$ « nombre total de valeurs de hachage » se vérifie, d'après le principe des tiroirs, il existera **inévitablement deux données d'entrée différentes ayant la même valeur de hachage**. C'est le phénomène que l'on nomme « **collision de hachage (Hash Collision)** ».

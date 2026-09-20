@@ -10,17 +10,17 @@ tags: ["Cryptography", "Security", "History", "PQC"]
 description: "From the ancient Caesar cipher, through Enigma and public-key cryptography, to Post-Quantum Cryptography (PQC) preparing for the future threat of quantum computers, this article thoroughly explains the epic history and technological evolution of cryptography."
 ---
 
-# 1. Introduction: What is Cryptography?
+# 1. Introduction: What is [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy?
 
-Cryptography is the technology used to maintain the confidentiality of information, and it has evolved alongside human history. From the transmission of secret commands in ancient wars to the protection of credit card information on the modern internet, the purpose of cryptography has remained consistent: "to ensure that only the intended recipient can understand the information, and that it cannot be deciphered by third parties."
+[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy is the technology used to maintain the confidentiality of information, and it has evolved alongside human history. From the transmission of secret commands in ancient wars to the protection of credit card information on the modern internet, the purpose of cryptography has remained consistent: "to ensure that only the intended recipient can understand the information, and that it cannot be deciphered by third parties."
 
 In modern information security, cryptography goes beyond simple "information concealment (Confidentiality)" and plays crucial roles in ensuring data "Integrity," "Authentication," and "Non-repudiation."
 
-In this article, we will thoroughly unravel the history of cryptographic evolution from a technical and mathematical perspective, starting from simple ancient substitution ciphers, through mechanical ciphers, modern symmetric and public-key cryptography, to the era of "Post-Quantum Cryptography (PQC)" brought about by the practical application of quantum computers.
+In this article, we will thoroughly unravel the history of cryptographic evolution from a technical and mathematical perspective, starting from simple ancient substitution ciphers, through mechanical ciphers, modern symmetric and public-key cryptography, to the era of "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)" brought about by the practical application of quantum computers.
 
 ---
 
-# 2. The Era of Classical Cryptography: Letter Substitution and Transposition
+# 2. The Era of Classical [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: Letter Substitution and Transposition
 
 The origins of cryptography date back to Before Christ (B.C.). Early cryptography mainly consisted of two approaches: "Transposition" and "Substitution."
 
@@ -102,7 +102,7 @@ In particular, [Alan Turing](https://kenji.blog/en/p/turing/) developed an elect
 
 ---
 
-# 4. The Dawn of Modern Cryptography: Symmetric-key Cryptography (DES and AES)
+# 4. The Dawn of Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (DES and AES)
 
 After the war, with the advent of computers, cryptography underwent a dramatic paradigm shift from manipulating "letters" to manipulating "bits (0 and 1)."
 
@@ -135,12 +135,12 @@ graph TD
 
 ---
 
-# 5. The Public-key Cryptography Revolution: From Diffie-Hellman to RSA
+# 5. The Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Revolution: From Diffie-Hellman to RSA
 
 Symmetric-key cryptography had a fatal weakness. It was the "Key Distribution Problem": how to securely share a "common key" with a distant party before starting encrypted communication. The "public-key cryptography" born in the 1970s solved this problem.
 
 ## Diffie-Hellman Key Exchange
-In 1976, Whitfield Diffie and Martin Hellman published a groundbreaking paper, "New Directions in Cryptography." They proposed a method that allows for the secure sharing of keys even over wiretapped communication channels by utilizing the mathematical difficulty of the "Discrete Logarithm Problem."
+In 1976, Whitfield Diffie and Martin Hellman published a groundbreaking paper, "New Directions in [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy." They proposed a method that allows for the secure sharing of keys even over wiretapped communication channels by utilizing the mathematical difficulty of the "Discrete Logarithm Problem."
 
 1. Publish a large prime number $p$ and a generator $g$.
 2. Alice chooses a secret value $a$ and sends $A = g^a \pmod{p}$ to Bob.
@@ -148,7 +148,7 @@ In 1976, Whitfield Diffie and Martin Hellman published a groundbreaking paper, "
 4. Alice calculates $K = B^a \pmod{p}$, and Bob calculates $K = A^b \pmod{p}$.
 5. By the laws of exponents, $K = (g^b)^a = (g^a)^b = g^{ab} \pmod{p}$, and they successfully share the exact same key $K$.
 
-## RSA Cryptography
+## RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 The following year, in 1977, "RSA cryptography" was devised by Ron Rivest, Adi Shamir, and Leonard Adleman. It is based on the property that "factoring the product of two very large prime numbers is difficult."
 
 **Mathematical Mechanism of RSA:**
@@ -193,26 +193,26 @@ rsa_example()
 
 ---
 
-# 6. The Rise of Elliptic Curve Cryptography (ECC)
+# 6. The Rise of Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)
 
 While RSA cryptography is powerful, as computer performance improved, it became necessary to increase the key length to maintain security (currently 2048 or 3072 bits), which caused the problem of increased computational cost.
 
-Thus, in 1985, "Elliptic Curve Cryptography (ECC)" was proposed. This utilizes point addition on elliptic curves over finite fields (generally of the form $y^2 = x^3 + ax + b$).
+Thus, in 1985, "Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)" was proposed. This utilizes point addition on elliptic curves over finite fields (generally of the form $y^2 = x^3 + ax + b$).
 
 The Elliptic Curve Discrete Logarithm Problem (ECDLP) is known to be even harder to solve than the integer factorization problem, and **ECC can achieve security equivalent to a 3072-bit RSA key with a key length of only 256 bits**. This made fast and secure encrypted communication (such as ECDSA and ECDH) possible even in environments with limited computational resources, like smartphones and IoT devices.
 
 ---
 
-# 7. The Threat of Quantum Computers and Post-Quantum Cryptography (PQC)
+# 7. The Threat of Quantum Computers and Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)
 
-Cryptographic technology seemed rock-solid, but in 1994, a massive shockwave hit with the announcement of "Shor's Algorithm" by Peter Shor.
+[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic technology seemed rock-solid, but in 1994, a massive shockwave hit with the announcement of "Shor's Algorithm" by Peter Shor.
 
 Quantum computers perform calculations utilizing the properties of quantum mechanics, namely "superposition" and "quantum entanglement." It was mathematically proven that if Shor's algorithm is executed on a sufficiently capable quantum computer, the integer factorization problem and the discrete logarithm problem could be solved in "polynomial time." This means that on the day a practical quantum computer is completed (Q-Day), all currently used public-key cryptosystems like RSA and ECC will instantaneously collapse.
 
-## The Emergence of PQC (Post-Quantum Cryptography)
-To prepare for this unprecedented threat, research is rapidly progressing on "Post-Quantum Cryptography (PQC)," based on new mathematical problems that are difficult to break even for quantum computers. NIST (National Institute of Standards and Technology) has been running a PQC standardization process for many years, and the following mathematical approaches are primarily considered the most promising.
+## The Emergence of PQC (Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy)
+To prepare for this unprecedented threat, research is rapidly progressing on "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)," based on new mathematical problems that are difficult to break even for quantum computers. NIST (National Institute of Standards and Technology) has been running a PQC standardization process for many years, and the following mathematical approaches are primarily considered the most promising.
 
-### 1. Lattice-based Cryptography
+### 1. Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 This is currently the most promising approach and has been adopted in NIST's standardized algorithms (ML-KEM / Kyber, ML-DSA / Dilithium). It is based on the difficulty of problems like finding specific points on a "lattice" in a multi-dimensional space (Shortest Vector Problem: SVP, etc.) or the LWE (Learning With Errors) problem.
 
 The concept of the LWE problem utilizes the property that if you intentionally add a "small noise (error)" to a system of linear equations, it suddenly becomes extremely difficult to find the solution.
@@ -238,10 +238,10 @@ b = (np.dot(A, s) + e) % q
 # Even with a quantum computer, recovering s from A and b is considered extremely difficult
 ```
 
-### 2. Hash-based Cryptography
+### 2. Hash-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 This is a digital signature scheme that bases its security solely on the collision resistance of hash functions. Since it does not have a mathematical structure, it is resilient to quantum attacks, but the signature sizes tend to be large (e.g., SPHINCS+).
 
-### 3. Code-based Cryptography
+### 3. Code-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 An encryption scheme based on the theory of error-correcting codes. The McEliece cryptosystem, proposed in 1978, is famous; it has a long history and an established reputation for security, but it faces the challenge of extremely large public key sizes (sometimes reaching several megabytes).
 
 ```mermaid
@@ -263,8 +263,8 @@ The history of cryptography is a history of an endless battle between the invent
 
 The Caesar cipher was defeated by frequency analysis, and the invincible Enigma was defeated by Turing's genius mind and the power of machines. And now, the powerful ciphers like RSA and ECC that form the backbone of modern internet society are exposed to the threat of a new "spear," the quantum computer.
 
-However, humanity is already looking towards the future beyond that and is preparing a new "shield" called Post-Quantum Cryptography (PQC). Currently, preparing for the transition from existing public-key cryptography to PQC (ensuring Crypto Agility) is an urgent task for IT infrastructures worldwide.
+However, humanity is already looking towards the future beyond that and is preparing a new "shield" called Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC). Currently, preparing for the transition from existing public-key cryptography to PQC (ensuring [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Agility) is an urgent task for IT infrastructures worldwide.
 
-Cryptography is not just an arcane mathematical puzzle; it is the strongest defensive wall for protecting our privacy, property, and the social infrastructure itself.
+[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy is not just an arcane mathematical puzzle; it is the strongest defensive wall for protecting our privacy, property, and the social infrastructure itself.
 
 

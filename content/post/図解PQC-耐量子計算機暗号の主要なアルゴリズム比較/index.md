@@ -14,7 +14,7 @@ description: '量子コンピュータの台頭による暗号危殆化の脅威
 
 現代のインターネット社会において、通信の機密性やデータの完全性を守るために公開鍵暗号技術はインフラとして必要不可欠です。現在広く利用されているRSA暗号や楕円曲線暗号（ECC）は、それぞれ「巨大な合成数の素因数分解の困難性」や「楕円曲線上の離散対数問題の困難性」という数学的な壁に依存して安全性を担保しています。古典的なコンピュータ（スーパーコンピュータを含む現在私たちが使っているコンピュータ）では、これらの数学的問題を解くためには宇宙の年齢よりも長い時間がかかると証明されており、それが安全性の根拠となってきました。
 
-しかし、この堅牢な前提は **量子コンピュータ** の理論と実用化の進展によって根底から覆されようとしています。1994年に暗号学者ピーター・ショア（Peter Shor）が発表した「 **Shorのアルゴリズム** 」は、十分な性能を持つ誤り耐性汎用量子コンピュータ（CRQC: Cryptographically Relevant Quantum Computer）上で実行することで、素因数分解問題や離散対数問題を「多項式時間」で解読できることを理論的に証明しました。これは、現在使われている公開鍵暗号がすべて無力化されることを意味します。
+しかし、この堅牢な前提は **量子コンピュータ** の理論と実用化の進展によって根底から覆されようとしています。1994年に暗号学者ピーター・ショア（Peter Shor）が発表した「 **Shorのアルゴリズム** 」は、十分な性能を持つ誤り耐性汎用量子コンピュータ（CRQC: [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer）上で実行することで、素因数分解問題や離散対数問題を「多項式時間」で解読できることを理論的に証明しました。これは、現在使われている公開鍵暗号がすべて無力化されることを意味します。
 
 ```mermaid
 graph TD
@@ -30,7 +30,7 @@ graph TD
 
 また、対称鍵暗号（AESなど）やハッシュ関数（SHA-256など）に対しても、1996年に発見された **Groverのアルゴリズム** が存在します。これにより、総当たり攻撃（ブルートフォース）の計算量が平方根に削減されます。つまり、AES-128のセキュリティレベルは実質的に2の64乗に半減するため、量子時代においてはAES-256やSHA-384といった、より長い鍵やハッシュ長を使用することが推奨されています。
 
-この未曾有の暗号危機に対抗するために誕生したのが、量子コンピュータを用いても解読が困難な新しい数学的問題に基づいた **耐量子計算機暗号（Post-Quantum Cryptography: PQC）** です。本記事では、米国国立標準技術研究所（NIST）が主導して進めてきたPQC標準化プロセスの結果に基づき、主要なPQCアルゴリズムについて、その数学的背景から仕組み、アーキテクチャの比較までを極めて詳細に解説します。
+この未曾有の暗号危機に対抗するために誕生したのが、量子コンピュータを用いても解読が困難な新しい数学的問題に基づいた **耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: PQC）** です。本記事では、米国国立標準技術研究所（NIST）が主導して進めてきたPQC標準化プロセスの結果に基づき、主要なPQCアルゴリズムについて、その数学的背景から仕組み、アーキテクチャの比較までを極めて詳細に解説します。
 
 ---
 
@@ -49,7 +49,7 @@ graph TD
 - **FIPS 205 (SLH-DSA)**: SPHINCS+に基づくステートレスハッシュベース署名
 - **（今後の策定予定）FN-DSA**: FALCONに基づくデジタル署名
 
-これらの選定されたアルゴリズムは、依拠する数学的な「困難性問題」がそれぞれ異なっており、ある一つのアルゴリズムに将来致命的な脆弱性が発見された場合でも、システム全体が崩壊しないように多様性（Crypto Agility）が確保されています。標準化プロセスでは、主に格子暗号（Lattice-based cryptography）が性能の面から主役となりましたが、ハッシュベース暗号や符号ベース暗号が強力なバックアップとして採用されています。
+これらの選定されたアルゴリズムは、依拠する数学的な「困難性問題」がそれぞれ異なっており、ある一つのアルゴリズムに将来致命的な脆弱性が発見された場合でも、システム全体が崩壊しないように多様性（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Agility）が確保されています。標準化プロセスでは、主に格子暗号（Lattice-based cryptography）が性能の面から主役となりましたが、ハッシュベース暗号や符号ベース暗号が強力なバックアップとして採用されています。
 
 ---
 
@@ -57,15 +57,15 @@ graph TD
 
 PQCアルゴリズムは、その安全性の根拠となる数学的な問題によって、主に以下の5つのカテゴリに大別されます。本記事では特に上位3つについて詳しく掘り下げます。
 
-1. **格子暗号 (Lattice-based Cryptography)**:
+1. **格子暗号 (Lattice-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    多次元の格子空間における最短ベクトル問題（SVP）や最近接ベクトル問題（CVP）、およびそこから派生したLWE問題に基づきます。NIST標準化の中心であり、Kyber、Dilithium、FALCONが該当します。処理速度、公開鍵サイズ、暗号文サイズのバランスが最も優れており、汎用的な利用に適しています。
-2. **ハッシュベース暗号 (Hash-based Cryptography)**:
+2. **ハッシュベース暗号 (Hash-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    暗号学的ハッシュ関数（SHA-2やSHAKEなど）の「衝突耐性」と「一方向性」のみに安全性の根拠を置きます。デジタル署名（SPHINCS+など）にのみ適用可能ですが、安全性の証明が最も強固であり、未知の数学的攻撃に対する耐性が極めて高いのが特徴です。
-3. **符号ベース暗号 (Code-based Cryptography)**:
+3. **符号ベース暗号 (Code-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    誤り訂正符号の理論に基づき、シンドローム復号問題（Syndrome Decoding Problem）の困難性に依存します。1970年代に提案されたClassic McElieceが代表的で、非常に長い歴史と実績のある安全性を持つ反面、公開鍵のサイズがメガバイト単位と極端に大きくなります。
-4. **多変数多項式暗号 (Multivariate Polynomial Cryptography)**:
+4. **多変数多項式暗号 (Multivariate Polynomial [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    有限体上の多変数連立二次方程式の解を求めること（MQ問題）の困難性に基づきます。主にデジタル署名（Rainbowなど）として提案されましたが、NISTの最終ラウンドの最中にパソコン1台で数日で解読されるという強力な攻撃手法が発見され、多くのアルゴリズムが標準化から脱落しました。
-5. **同種写像暗号 (Isogeny-based Cryptography)**:
+5. **同種写像暗号 (Isogeny-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    楕円曲線の同種写像（Isogeny）グラフ上での経路探索問題に基づきます。鍵サイズが非常に小さく、ECCの正当な後継として期待されていましたが、最終候補であった「SIKE」が2022年に古典的な数学（Castryck-Decru攻撃など）を用いて通常のPCでわずか数時間で完全に解読されてしまい、PQC設計の難しさと恐ろしさを象徴する劇的な幕引きとなりました。
 
 ---
@@ -294,7 +294,7 @@ NISTによる標準化が完了し、FIPS規格が正式に発行されたこと
 
 しかし、新しい暗号アルゴリズムにいきなり完全に切り替えることには非常に高いリスクが伴います。仮にKyberなどの格子暗号に対して、数年後にある天才数学者が致命的な攻撃手法（古典コンピュータでも解けるような数学的欠陥）を発見した場合、それに依存しているシステム全体が一瞬にして丸裸になってしまいます。
 
-この不確実性リスクを軽減するための現実的かつ推奨されるアプローチが「 **ハイブリッド暗号 (Hybrid Cryptography)** 」です。
+この不確実性リスクを軽減するための現実的かつ推奨されるアプローチが「 **ハイブリッド暗号 (Hybrid [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)** 」です。
 
 ハイブリッド暗号では、長年の実績がある現行の古典的暗号（例：X25519などの楕円曲線暗号）と、新しいPQC（例：Kyber768）の両方を同時に使用して鍵交換を行います。それぞれのアルゴリズムで個別に共通鍵成分を生成し、最後に安全な鍵導出関数（KDF）を用いて二つの成分を混ぜ合わせ、最終的なマスターシークレットを生成します。
 
@@ -310,7 +310,7 @@ graph TD
 
 これにより、「万が一量子コンピュータが実現してECCが破られてもKyberが通信を守り」、逆に「万が一Kyberに未知の数学的欠陥が見つかってもECCが通信を守る」という、堅牢な二段構えの安全性を実現できます。代表的な例として、IETFで標準化が進められている **X25519MLKEM768 (旧 X25519Kyber768)** ドラフトがあり、現在のWebブラウザと最先端のサーバー間の通信は、まさにこのハイブリッド方式を用いて行われています。
 
-また、システム設計において「特定の暗号アルゴリズムに過度に依存せず、アルゴリズムが破綻した際に迅速に別のアルゴリズム（例：KyberからMcElieceへ、DilithiumからSPHINCS+へ）に切り替えられるアーキテクチャ」を構築する **Crypto Agility（暗号の俊敏性）** の概念が、今後のシステム開発において必須の要件となります。
+また、システム設計において「特定の暗号アルゴリズムに過度に依存せず、アルゴリズムが破綻した際に迅速に別のアルゴリズム（例：KyberからMcElieceへ、DilithiumからSPHINCS+へ）に切り替えられるアーキテクチャ」を構築する **[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Agility（暗号の俊敏性）** の概念が、今後のシステム開発において必須の要件となります。
 
 ---
 
@@ -324,7 +324,7 @@ NISTによるFIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) の標�
 
 ---
 *References:*
-* *NIST Post-Quantum Cryptography Standardization Program*
+* *NIST Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*

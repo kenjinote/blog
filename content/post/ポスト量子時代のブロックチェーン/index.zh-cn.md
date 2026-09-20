@@ -12,13 +12,13 @@ description: '量子计算机惊人的计算能力将动摇区块链的根基，
 
 ## 1. 引言：后量子时代的脚步声与区块链的危机
 
-自2009年中本聪（Satoshi Nakamoto）创造比特币（Bitcoin）以来，区块链技术作为“去中心化且不可篡改的账本”，已成长为全球金融系统和应用程序的基础设施。支撑这种坚如磐石的安全性的是 **公钥密码学（Public Key Cryptography）** 和 **密码学哈希函数（Cryptographic Hash Functions）** 等现代密码技术。
+自2009年中本聪（Satoshi Nakamoto）创造[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)（[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)）以来，区块链技术作为“去中心化且不可篡改的账本”，已成长为全球金融系统和应用程序的基础设施。支撑这种坚如磐石的安全性的是 **公钥密码学（Public Key [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）** 和 **密码学哈希函数（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphic Hash Functions）** 等现代密码技术。
 
 这些密码技术保证安全性的依据是数学上的“计算困难性”，即使用经典计算机（我们现在使用的个人电脑和超级计算机），即使花费宇宙寿命般漫长的时间也无法破解。
 
 然而，这一前提正随着物理学和信息科学的前沿领域—— **量子计算机（Quantum Computers）** 的快速发展和实用化，面临着被彻底颠覆的危险。利用量子力学特有的“叠加态（Superposition）”和“量子纠缠（Entanglement）”，量子计算机在某些特定数学问题上展现出压倒传统经典计算机的计算能力，即所谓的“量子霸权（Quantum Supremacy）”。
 
-本文将深入探讨区块链技术具体面临着量子计算机的哪些威胁，并从技术和数学的角度，彻底解析作为解决方案的 **抗量子计算密码学（PQC：Post-Quantum Cryptography）** 的最新动态，以及加密资产网络的过渡方案。
+本文将深入探讨区块链技术具体面临着量子计算机的哪些威胁，并从技术和数学的角度，彻底解析作为解决方案的 **抗量子计算密码学（PQC：Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）** 的最新动态，以及加密资产网络的过渡方案。
 
 ---
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 椭圆曲线密码学（ECDSA）的基础与计算困难性
 
-包括比特币和以太坊（Ethereum）在内的许多区块链，都采用了 **椭圆曲线数字签名算法（ECDSA：Elliptic Curve Digital Signature Algorithm）** 作为其数字签名算法。具体而言，比特币使用的是参数名为 `secp256k1` 的椭圆曲线。
+包括[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在内的许多区块链，都采用了 **椭圆曲线数字签名算法（ECDSA：Elliptic Curve Digital Signature Algorithm）** 作为其数字签名算法。具体而言，[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)使用的是参数名为 `secp256k1` 的椭圆曲线。
 
 椭圆曲线密码学的安全性依赖于 **椭圆曲线离散对数问题（ECDLP：Elliptic Curve Discrete Logarithm Problem）** 的计算困难性。
 椭圆曲线由以下Weierstrass标准形式的方程定义：
@@ -51,7 +51,7 @@ $$
 y^2 \equiv x^3 + ax + b \pmod{p}
 $$
 
-在比特币的 `secp256k1` 中，$a = 0, b = 7$，且 $p$ 是一个极大的素数。
+在[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)的 `secp256k1` 中，$a = 0, b = 7$，且 $p$ 是一个极大的素数。
 设该曲线上的一基点（参考点）为 $G$，随机选择的256位巨大整数（私钥）为 $k$。此时，公钥 $K$ 可以通过对基点进行 $k$ 次加法（标量乘法）求得。
 
 $$
@@ -112,7 +112,7 @@ $$
 
 另一个威胁是洛夫·格罗弗（Lov Grover）在1996年提出的 **Grover算法** 。这会对哈希函数（例如：SHA-256）产生重大影响。
 
-在区块链中，哈希函数被用于保证数据的完整性、生成地址，以及作为比特币 **PoW（工作量证明）挖矿** 的基础。哈希函数的反向计算（原像计算）可以被视为一个“非结构化数据库搜索问题”，即寻找一个输入值 $x$，使得 $H(x)$ 等于某个特定的输出值 $y$。
+在区块链中，哈希函数被用于保证数据的完整性、生成地址，以及作为[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/) **PoW（工作量证明）挖矿** 的基础。哈希函数的反向计算（原像计算）可以被视为一个“非结构化数据库搜索问题”，即寻找一个输入值 $x$，使得 $H(x)$ 等于某个特定的输出值 $y$。
 
 在经典计算机中，要从 $N$ 个可能性中找到正确答案，平均需要 $\frac{N}{2}$ 次尝试，最坏情况下需要 $N$ 次尝试。即计算复杂度为 $\mathcal{O}(N)$。
 然而，Grover算法使用了一种称为“振幅放大（Amplitude Amplification）”的量子技术。通过迭代放大处于叠加态的所有可能性中正确答案状态的概率振幅，将搜索时间缩短到其平方根。
@@ -132,16 +132,16 @@ $$
 
 ---
 
-## 3. 对当前加密资产（Bitcoin, Ethereum）的具体影响分析
+## 3. 对当前加密资产（[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/), Ethereum）的具体影响分析
 
-在一个能够用量子计算机破解ECDSA的世界里，加密资产网络具体会面临怎样的漏洞呢？在这里，我们将以比特币的机制为例，从 **“公钥暴露时机”** 的角度进行详细分析。
+在一个能够用量子计算机破解ECDSA的世界里，加密资产网络具体会面临怎样的漏洞呢？在这里，我们将以[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)的机制为例，从 **“公钥暴露时机”** 的角度进行详细分析。
 
 ### 3.1. 地址的生成与公钥的“非公开性”
 
-比特币地址（如P2PKH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）并不是公钥本身，而是经过多次哈希处理后的公钥。
+[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)地址（如P2PKH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）并不是公钥本身，而是经过多次哈希处理后的公钥。
 
 $$
-\text{比特币地址} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{公钥})))
+\text{[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)地址} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{公钥})))
 $$
 
 如前所述，哈希函数对量子攻击（Grover算法）具有抗性，因此即使是量子计算机，也无法从作为哈希值的“地址”反推出原始的“公钥”。
@@ -182,11 +182,11 @@ sequenceDiagram
 
 更严重的问题是，那些过去哪怕只发送过一次资金的地址（例如被重复用作找零地址的情况），其公钥已经永久记录在区块链上了。这些地址根本不需要等待发送交易，随时都面临着被计算出私钥并盗走余额的风险。
 
-此外，包括中本聪早期挖矿奖励（约100万枚以上的BTC）在内的，在2009年至2010年间主流的 **P2PK（Pay-to-Public-Key）** 格式中，公钥本身并没有经过哈希处理，而是直接作为地址记录在区块链上。这些大量休眠的比特币将成为量子计算机最容易攻击的目标，一旦被集中盗取并在市场上抛售，可能会引发价格的暴跌。
+此外，包括中本聪早期挖矿奖励（约100万枚以上的BTC）在内的，在2009年至2010年间主流的 **P2PK（Pay-to-Public-Key）** 格式中，公钥本身并没有经过哈希处理，而是直接作为地址记录在区块链上。这些大量休眠的[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)将成为量子计算机最容易攻击的目标，一旦被集中盗取并在市场上抛售，可能会引发价格的暴跌。
 
 ---
 
-## 4. 向抗量子计算密码学（PQC: Post-Quantum Cryptography）的过渡方案
+## 4. 向抗量子计算密码学（PQC: Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）的过渡方案
 
 为了避免这种“Q-Day（量子计算机破解密码之日）”的灾难，密码学界和区块链社区正在计划向 **抗量子计算密码学（PQC）** 过渡，这种密码学即使使用量子算法也很难破解。
 美国国家标准与技术研究院（NIST）多年来一直在推进PQC的标准化进程，经过多轮严格的评估，已选定了几种极具潜力的密码方案作为最终标准。
@@ -238,9 +238,9 @@ $$
 这个过程在数学上极其简单，只要量子计算机无法对 $H$ 进行逆向计算，就不可能伪造签名。但是，由于一旦签名，一半的私钥就会暴露在网络上，如果使用同一个密钥对为另一条消息签名，暴露的私钥组件就会增加，从而给攻击者留下伪造的余地。因此产生了“只能使用一次（One-Time）”的强限制。
 为了使其能够投入实际应用，研究人员开发了使用默克尔树（Merkle Tree）将大量一次性密钥捆绑到一个根公钥上的 **XMSS** 技术，以及无状态的 **SPHINCS+** 等技术，但它们的缺点是签名大小动辄达到几十KB。
 
-### 4.2. 基于格的密码学（Lattice-Based Cryptography）
+### 4.2. 基于格的密码学（Lattice-Based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 
-目前作为PQC主流最受期待，并且被NIST采纳为主要标准规格（FIPS 204: ML-DSA / 前称CRYSTALS-Dilithium，以及Falcon等）的，就是 **格密码学（Lattice-Based Cryptography）** 。
+目前作为PQC主流最受期待，并且被NIST采纳为主要标准规格（FIPS 204: ML-DSA / 前称CRYSTALS-Dilithium，以及Falcon等）的，就是 **格密码学（Lattice-Based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）** 。
 
 格密码学的安全性依赖于“多维格中的最短向量问题（SVP: Shortest Vector Problem）”以及“带错学习问题（LWE: Learning With Errors）”等在数学上已被证明为困难的问题。即使使用量子计算机，目前也还没有发现能够有效解决格问题的算法。
 
@@ -264,14 +264,14 @@ $$
 
 ## 5. 区块链向PQC过渡中的技术挑战
 
-尽管PQC算法（如Dilithium或SPHINCS+等）已经存在，但这并不意味着我们明天就可以直接将其引入到比特币或以太坊中。分布式系统特有的许多沉重课题仍然存在。
+尽管PQC算法（如Dilithium或SPHINCS+等）已经存在，但这并不意味着我们明天就可以直接将其引入到[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)或以太坊中。分布式系统特有的许多沉重课题仍然存在。
 
 ### 5.1. 签名大小膨胀与可扩展性的崩溃
 
 引入PQC面临的最大障碍是数据量的大幅膨胀。
 目前的ECDSA签名大小约为70字节，而格密码学Dilithium（ML-DSA）的签名大小约为2,420到4,595字节（取决于安全级别），公钥大小也超过1,300字节。基于哈希的SPHINCS+的单个签名大小更是高达几万字节。
 
-如果比特币在不改变现有区块大小上限（包含SegWit在内约4MB的权重）的情况下引入PQC，那么一个区块能容纳的交易数量将急剧下降。网络的吞吐量（TPS：Transactions Per Second）将遭到毁灭性打击，转账拥堵将成为常态。
+如果[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)在不改变现有区块大小上限（包含SegWit在内约4MB的权重）的情况下引入PQC，那么一个区块能容纳的交易数量将急剧下降。网络的吞吐量（TPS：Transactions Per Second）将遭到毁灭性打击，转账拥堵将成为常态。
 为了解决这个问题，需要大幅提高区块大小，但这会增加全节点的存储和网络带宽要求，让个人运行节点变得更加困难，从而陷入导致 **网络中心化** 的困境。
 
 ```mermaid
@@ -293,7 +293,7 @@ pie title 区块链中签名数据大小比较 (概念图)
 
 ### 5.3. 硬分叉达成共识的困难性
 
-要更改底层的签名算法，就必须进行 **硬分叉（Hard Fork）** 以更新整个网络的协议。然而，在一个像比特币这样极度重视“不改变规则、保持去中心化”的社区中，达成共识的过程在政治层面上是极其艰难的。关于过渡到PQC的BIP（比特币改进提案）从提出到最终实现，可能需要长达数年的讨论和测试。
+要更改底层的签名算法，就必须进行 **硬分叉（Hard Fork）** 以更新整个网络的协议。然而，在一个像[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)这样极度重视“不改变规则、保持去中心化”的社区中，达成共识的过程在政治层面上是极其艰难的。关于过渡到PQC的BIP（[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)改进提案）从提出到最终实现，可能需要长达数年的讨论和测试。
 
 ---
 
@@ -314,7 +314,7 @@ pie title 区块链中签名数据大小比较 (概念图)
 需要注意的是，部分SNARKs的构造（如Groth16等）本身也具有量子脆弱性，因此采用仅依赖具有抗量子能力的哈希函数的 **ZK-STARKs** 将成为关键。
 
 ### 阶段3：协议层面的硬分叉（2030年左右）
-当NIST的PQC标准化完全落地，行业标准库也已齐备并经过充分测试后，预计Bitcoin和Ethereum等主流公链将进行硬分叉，把默认的签名方式完全迁移到PQC。在这一过渡期，各方将会进行大规模的宣发，呼吁用户“将资金从旧钱包转移到支持PQC的新钱包”。
+当NIST的PQC标准化完全落地，行业标准库也已齐备并经过充分测试后，预计[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)和Ethereum等主流公链将进行硬分叉，把默认的签名方式完全迁移到PQC。在这一过渡期，各方将会进行大规模的宣发，呼吁用户“将资金从旧钱包转移到支持PQC的新钱包”。
 
 ### 先锋项目案例
 
@@ -335,14 +335,14 @@ Shor算法和Grover算法这两把量子计算机的利剑，分别威胁着当�
 对于我们普通的加密资产用户和投资者而言，现在无需恐慌并立刻抛售所有资产。但重要的是，我们必须具备以下基本的认知和自我保护意识：
 
 * **避免地址重用** ：不仅出于隐私保护的考量，更应从安全性出发，坚决不在“已使用的地址（哪怕只发送过一次资金，公钥已暴露在区块链上的地址）”中长期存放资金。
-* **关注技术动向** ：时刻留意主要网络关于PQC迁移的讨论或硬分叉新闻（如Bitcoin的BIP、Ethereum的EIP等），确保在需要时能妥善完成钱包的迁移工作。
+* **关注技术动向** ：时刻留意主要网络关于PQC迁移的讨论或硬分叉新闻（如[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)的BIP、Ethereum的EIP等），确保在需要时能妥善完成钱包的迁移工作。
 
 区块链的历史，也是一部不断应对新技术威胁进行升级与自我修复（Resilience）的历史。正如克服可扩展性问题和环境问题（从PoW转向PoS等）一样，面对这前所未有的量子威胁，整个生态系统也定会摸索出解决方案并成功适应。
 我们有理由期待，量子计算机这一人类新智慧的结晶，与去中心化分布式账本这一信任技术的碰撞，将不会走向毁灭，而是升华为更高维度、更加坚不可摧的融合系统。
 
 ---
 *参考文献・相关链接:*
-* National Institute of Standards and Technology (NIST) - Post-Quantum Cryptography Standardization Project
+* National Institute of Standards and Technology (NIST) - Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy Standardization Project
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.

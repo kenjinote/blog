@@ -149,7 +149,7 @@ Through this process, even if there are $m$ faulty or malicious nodes in the net
 
 ### Nakamoto Consensus (Proof of Work)
 
-Satoshi Nakamoto, the creator of Bitcoin, addressed this problem with a completely new approach. This is the **Nakamoto Consensus**, combining **Proof of Work** (PoW) with a rule that considers the longest chain as the correct one.
+Satoshi Nakamoto, the creator of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/), addressed this problem with a completely new approach. This is the **Nakamoto Consensus**, combining **Proof of Work** (PoW) with a rule that considers the longest chain as the correct one.
 
 In Nakamoto Consensus, only the one who wins a mathematical computational race (mining) gains the right to propose a block. To make the network recognize fake information, it is necessary to control the majority (51% or more) of the computing power of the entire network, which is designed to be extremely difficult in reality. As a result, it is evaluated as having probabilistically solved the Byzantine Generals Problem in an open network with an unspecified number of participants.
 

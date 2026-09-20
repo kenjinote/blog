@@ -153,7 +153,7 @@ Durch diesen Prozess können Anfragen in der richtigen Reihenfolge verarbeitet w
 
 ### Nakamoto-Konsens (Proof of Work)
 
-Satoshi Nakamoto, der Erfinder von Bitcoin, ging dieses Problem mit einem völlig neuen Ansatz an. Dies ist der **Nakamoto-Konsens**, eine Kombination aus **Proof of Work** (PoW) und der Regel, dass die längste Kette als gültig betrachtet wird.
+Satoshi Nakamoto, der Erfinder von [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/), ging dieses Problem mit einem völlig neuen Ansatz an. Dies ist der **Nakamoto-Konsens**, eine Kombination aus **Proof of Work** (PoW) und der Regel, dass die längste Kette als gültig betrachtet wird.
 
 Beim Nakamoto-Konsens erhält nur derjenige, der einen mathematischen Rechenwettbewerb (Mining) gewinnt, das Recht, einen Block vorzuschlagen. Um dem Netzwerk falsche Informationen aufzuzwingen, müsste man die Mehrheit (mehr als 51 %) der Rechenleistung des gesamten Netzwerks kontrollieren, was in der Realität extrem schwierig ist. Dadurch wird davon ausgegangen, dass das Problem der byzantinischen Generäle in einem offenen Netzwerk mit einer unbestimmten Anzahl von Teilnehmern probabilistisch gelöst wurde.
 

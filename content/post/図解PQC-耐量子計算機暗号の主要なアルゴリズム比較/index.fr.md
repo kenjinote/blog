@@ -14,7 +14,7 @@ description: 'Nous expliquons en détail la menace de la compromission cryptogra
 
 Dans la société Internet moderne, la cryptographie à clé publique est une infrastructure indispensable pour protéger la confidentialité des communications et l'intégrité des données. Les méthodes de cryptographie largement utilisées aujourd'hui, telles que RSA et la cryptographie sur les courbes elliptiques (ECC), reposent sur des barrières mathématiques telles que la « difficulté de la factorisation de très grands nombres composés » ou la « difficulté du problème du logarithme discret sur les courbes elliptiques » pour garantir leur sécurité. Avec les ordinateurs classiques (les ordinateurs que nous utilisons actuellement, y compris les superordinateurs), il a été prouvé qu'il faudrait plus de temps que l'âge de l'univers pour résoudre ces problèmes mathématiques, ce qui constitue le fondement de leur sécurité.
 
-Cependant, cette prémisse solide est sur le point d'être fondamentalement bouleversée par l'avancée de la théorie et de la mise en pratique des **ordinateurs quantiques**. En 1994, l'algorithme de Shor, publié par le cryptographe Peter Shor (« **Algorithme de Shor** »), a prouvé théoriquement que les problèmes de factorisation et de logarithme discret pourraient être résolus en « temps polynomial » s'ils étaient exécutés sur un ordinateur quantique universel tolérant aux pannes (CRQC : Cryptographically Relevant Quantum Computer) d'une capacité suffisante. Cela signifie que toutes les cryptographies à clé publique utilisées actuellement seront rendues inefficaces.
+Cependant, cette prémisse solide est sur le point d'être fondamentalement bouleversée par l'avancée de la théorie et de la mise en pratique des **ordinateurs quantiques**. En 1994, l'algorithme de Shor, publié par le cryptographe Peter Shor (« **Algorithme de Shor** »), a prouvé théoriquement que les problèmes de factorisation et de logarithme discret pourraient être résolus en « temps polynomial » s'ils étaient exécutés sur un ordinateur quantique universel tolérant aux pannes (CRQC : [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer) d'une capacité suffisante. Cela signifie que toutes les cryptographies à clé publique utilisées actuellement seront rendues inefficaces.
 
 ```mermaid
 graph TD
@@ -30,7 +30,7 @@ Il est très dangereux de penser que « l'achèvement à grande échelle des ord
 
 De plus, il existe l'**algorithme de Grover**, découvert en 1996, qui s'applique à la cryptographie à clé symétrique (comme AES) et aux fonctions de hachage (comme SHA-256). Cet algorithme réduit la complexité de l'attaque par force brute à sa racine carrée. En d'autres termes, le niveau de sécurité de l'AES-128 est effectivement réduit de moitié, pour atteindre 2 à la puissance 64. Par conséquent, à l'ère quantique, il est recommandé d'utiliser des longueurs de clés et des longueurs de hachage plus grandes, telles que l'AES-256 et le SHA-384.
 
-Pour faire face à cette crise cryptographique sans précédent, une nouvelle **cryptographie post-quantique (Post-Quantum Cryptography : PQC)** a vu le jour, reposant sur de nouveaux problèmes mathématiques difficiles à déchiffrer même avec des ordinateurs quantiques. Cet article explique de manière très détaillée, sur la base des résultats du processus de standardisation PQC mené par le National Institute of Standards and Technology (NIST) des États-Unis, les principaux algorithmes PQC, depuis leur contexte mathématique jusqu'à leurs mécanismes et la comparaison de leurs architectures.
+Pour faire face à cette crise cryptographique sans précédent, une nouvelle **cryptographie post-quantique (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy : PQC)** a vu le jour, reposant sur de nouveaux problèmes mathématiques difficiles à déchiffrer même avec des ordinateurs quantiques. Cet article explique de manière très détaillée, sur la base des résultats du processus de standardisation PQC mené par le National Institute of Standards and Technology (NIST) des États-Unis, les principaux algorithmes PQC, depuis leur contexte mathématique jusqu'à leurs mécanismes et la comparaison de leurs architectures.
 
 ---
 
@@ -39,7 +39,7 @@ Pour faire face à cette crise cryptographique sans précédent, une nouvelle **
 La transition des technologies cryptographiques, qui implique la refonte des protocoles, la mise à jour des systèmes et le remplacement du matériel, prendra des années, voire des décennies. C'est pourquoi les cryptographes du monde entier ont commencé très tôt à faire des recherches sur la PQC. Le NIST (National Institute of Standards and Technology) américain a joué un rôle central dans ce domaine. En 2016, le NIST a lancé un appel public pour le processus de standardisation de la PQC et a accepté des propositions de tout nouveaux algorithmes cryptographiques de la part de la communauté cryptographique mondiale.
 
 Les deux principales catégories ciblées par la standardisation étaient les suivantes :
-1. **Cryptographie à clé publique / Mécanisme d'encapsulation de clé (KEM : Key Encapsulation Mechanism)** : Mécanisme permettant de partager (distribuer) en toute sécurité une clé symétrique pour chiffrer le canal de communication dans des connexions telles que TLS.
+1. **[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie à clé publique / Mécanisme d'encapsulation de clé (KEM : Key Encapsulation Mechanism)** : Mécanisme permettant de partager (distribuer) en toute sécurité une clé symétrique pour chiffrer le canal de communication dans des connexions telles que TLS.
 2. **Signatures numériques (Digital Signatures)** : Mécanisme permettant de prouver, dans les mises à jour logicielles et les certificats électroniques, que les données n'ont pas été altérées et qu'il n'y a pas d'usurpation d'identité de l'expéditeur (authenticité).
 
 Après environ six années de concurrence acharnée en matière d'évaluation, d'analyse et de cryptanalyse (Round 1 à Round 3), une évaluation supplémentaire (Round 4) a été menée pour certains algorithmes. En conséquence, les algorithmes suivants ont été officiellement publiés en tant que Federal Information Processing Standards (FIPS) en 2024, s'établissant comme les futures normes mondiales.
@@ -49,7 +49,7 @@ Après environ six années de concurrence acharnée en matière d'évaluation, d
 - **FIPS 205 (SLH-DSA)** : Signature basée sur le hachage sans état (stateless) reposant sur SPHINCS+
 - **(À formuler ultérieurement) FN-DSA** : Signature numérique basée sur FALCON
 
-Ces algorithmes sélectionnés reposent chacun sur des « problèmes de difficulté » mathématiques différents. Ainsi, si une vulnérabilité fatale venait à être découverte dans l'un des algorithmes à l'avenir, la diversité (Crypto Agility) est assurée pour éviter que l'ensemble du système ne s'effondre. Dans le processus de standardisation, la cryptographie basée sur les réseaux (Lattice-based cryptography) a joué le rôle principal en raison de ses performances, mais la cryptographie basée sur le hachage et la cryptographie basée sur les codes ont été adoptées comme de solides solutions de secours.
+Ces algorithmes sélectionnés reposent chacun sur des « problèmes de difficulté » mathématiques différents. Ainsi, si une vulnérabilité fatale venait à être découverte dans l'un des algorithmes à l'avenir, la diversité ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) Agility) est assurée pour éviter que l'ensemble du système ne s'effondre. Dans le processus de standardisation, la cryptographie basée sur les réseaux (Lattice-based cryptography) a joué le rôle principal en raison de ses performances, mais la cryptographie basée sur le hachage et la cryptographie basée sur les codes ont été adoptées comme de solides solutions de secours.
 
 ---
 
@@ -57,15 +57,15 @@ Ces algorithmes sélectionnés reposent chacun sur des « problèmes de difficul
 
 Les algorithmes PQC sont principalement classés en cinq catégories en fonction des problèmes mathématiques qui sous-tendent leur sécurité. Dans cet article, nous approfondirons particulièrement les trois premiers.
 
-1. **Cryptographie basée sur les réseaux (Lattice-based Cryptography)** :
+1. **[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur les réseaux (Lattice-based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** :
    Elle repose sur le problème du vecteur le plus court (SVP) et le problème du vecteur le plus proche (CVP) dans un espace de réseau multidimensionnel, ainsi que sur le problème LWE qui en dérive. Elle est au cœur de la standardisation du NIST, et Kyber, Dilithium et FALCON en font partie. Elle offre le meilleur équilibre entre la vitesse de traitement, la taille de la clé publique et la taille du texte chiffré, ce qui la rend adaptée à une utilisation polyvalente.
-2. **Cryptographie basée sur le hachage (Hash-based Cryptography)** :
+2. **[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur le hachage (Hash-based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** :
    Elle fonde sa sécurité uniquement sur la « résistance aux collisions » et la « propriété unidirectionnelle » des fonctions de hachage cryptographique (telles que SHA-2 et SHAKE). Bien qu'elle ne soit applicable qu'aux signatures numériques (comme SPHINCS+), ses preuves de sécurité sont les plus robustes et elle se caractérise par une résistance extrêmement élevée aux attaques mathématiques inconnues.
-3. **Cryptographie basée sur les codes (Code-based Cryptography)** :
+3. **[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur les codes (Code-based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** :
    Basée sur la théorie des codes correcteurs d'erreurs, elle dépend de la difficulté du problème du décodage de syndrome (Syndrome Decoding Problem). Le Classic McEliece, proposé dans les années 1970, en est représentatif et possède une très longue histoire et une sécurité éprouvée, bien que la taille de la clé publique soit extrêmement importante (de l'ordre du mégaoctet).
-4. **Cryptographie polynomiale multivariée (Multivariate Polynomial Cryptography)** :
+4. **[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie polynomiale multivariée (Multivariate Polynomial [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** :
    Elle repose sur la difficulté de résoudre des systèmes d'équations quadratiques à plusieurs variables sur un corps fini (problème MQ). Principalement proposée pour les signatures numériques (comme Rainbow), une méthode d'attaque puissante permettant de la déchiffrer en quelques jours sur un simple PC a été découverte lors du dernier round du NIST, entraînant l'élimination de nombreux algorithmes de la standardisation.
-5. **Cryptographie basée sur les isogénies (Isogeny-based Cryptography)** :
+5. **[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur les isogénies (Isogeny-based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** :
    Elle repose sur le problème de recherche de chemin sur des graphes d'isogénies de courbes elliptiques. Avec des tailles de clé très petites, elle était attendue comme le successeur légitime de l'ECC, mais « SIKE », le candidat final, a été complètement déchiffré en seulement quelques heures sur un PC normal en 2022 à l'aide de mathématiques classiques (comme l'attaque de Castryck-Decru), symbolisant la fin dramatique, ainsi que la difficulté et le danger liés à la conception de la PQC.
 
 ---
@@ -251,7 +251,7 @@ La seule et plus grande faiblesse de SPHINCS+ est que **la taille de sa signatur
 
 ---
 
-## 9. Cryptographie basée sur les codes : Classic McEliece, le bon vieux géant
+## 9. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur les codes : Classic McEliece, le bon vieux géant
 
 Dans le processus de standardisation du NIST, **Classic McEliece**, de la **cryptographie basée sur les codes**, est une approche importante dont l'évaluation se poursuit toujours en tant que candidat final de la phase 4.
 
@@ -294,7 +294,7 @@ Avec l'achèvement de la standardisation par le NIST et la publication officiell
 
 Cependant, basculer soudainement et complètement vers de nouveaux algorithmes de cryptographie comporte des risques très élevés. Si un brillant mathématicien venait à découvrir dans quelques années une faille mathématique fatale dans la cryptographie sur les réseaux (comme Kyber) qui pourrait être résolue même par un ordinateur classique, l'ensemble des systèmes qui en dépendent seraient instantanément exposés.
 
-L'approche réaliste et recommandée pour atténuer ce risque d'incertitude est la « **cryptographie hybride (Hybrid Cryptography)** ».
+L'approche réaliste et recommandée pour atténuer ce risque d'incertitude est la « **cryptographie hybride (Hybrid [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** ».
 
 Dans la cryptographie hybride, l'échange de clés est effectué en utilisant simultanément les cryptographies classiques actuelles ayant fait leurs preuves depuis longtemps (par exemple, la cryptographie sur courbe elliptique comme X25519) et les nouvelles PQC (par exemple, Kyber768). Les composants de la clé partagée sont générés individuellement par chaque algorithme, puis enfin, une fonction de dérivation de clé (KDF) sécurisée est utilisée pour mélanger les deux composants et générer le secret maître final.
 
@@ -310,7 +310,7 @@ graph TD
 
 Grâce à cela, il est possible d'atteindre une sécurité robuste à deux niveaux : « même si un ordinateur quantique est réalisé et que l'ECC est brisé, Kyber protège la communication », et inversement, « même si un défaut mathématique inconnu est trouvé dans Kyber, l'ECC protège la communication ». Un exemple typique est le brouillon **X25519MLKEM768 (anciennement X25519Kyber768)** en cours de standardisation à l'IETF, et la communication entre les navigateurs Web actuels et les serveurs de pointe est précisément réalisée à l'aide de cette méthode hybride.
 
-De plus, le concept de **Crypto Agility (Agilité cryptographique)**, qui consiste à concevoir des systèmes avec « une architecture qui ne dépend pas excessivement d'un algorithme cryptographique spécifique et qui permet de basculer rapidement vers un autre algorithme (par exemple, de Kyber à McEliece, de Dilithium à SPHINCS+) en cas de compromission de l'algorithme », deviendra une exigence indispensable dans le développement futur des systèmes.
+De plus, le concept de **[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) Agility (Agilité cryptographique)**, qui consiste à concevoir des systèmes avec « une architecture qui ne dépend pas excessivement d'un algorithme cryptographique spécifique et qui permet de basculer rapidement vers un autre algorithme (par exemple, de Kyber à McEliece, de Dilithium à SPHINCS+) en cas de compromission de l'algorithme », deviendra une exigence indispensable dans le développement futur des systèmes.
 
 ---
 
@@ -324,7 +324,7 @@ La bataille entre l'ordinateur quantique et la cryptographie est un domaine pass
 
 ---
 *Références :*
-* *NIST Post-Quantum Cryptography Standardization Program*
+* *NIST Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*

@@ -77,7 +77,7 @@ FHE 長期以來被譽為「密碼學界的聖杯」，甚至曾被認為是不�
 
 ## 3. FHE 的數學基礎：LWE 問題與 Ring-LWE
 
-目前主流的 FHE 方案中，有許多都是建構在「格密碼學（Lattice-based Cryptography）」（亦被稱為後量子密碼學，Post-Quantum Cryptography）中的一項數學難題上，也就是 **LWE (Learning With Errors) 問題** 。
+目前主流的 FHE 方案中，有許多都是建構在「格密碼學（Lattice-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）」（亦被稱為後量子密碼學，Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）中的一項數學難題上，也就是 **LWE (Learning With Errors) 問題** 。
 
 ### LWE 問題的直觀理解
 只要使用高斯消去法等方法，解聯立一次方程式非常簡單。

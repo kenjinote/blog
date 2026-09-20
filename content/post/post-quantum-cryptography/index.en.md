@@ -8,9 +8,9 @@ categories: ["math-cryptography-quantum"]
 description: 'Public key cryptography faces the risk of being decrypted in the future due to the practical application of quantum computers. This article explains in detail the mechanism and importance of ''Post-Quantum Cryptography (PQC)'', a next-generation security technology being developed to counter this threat (the Y2Q problem).'
 ---
 
-## Introduction: The "Threat" Quantum Computers Pose to Cryptography
+## Introduction: The "Threat" Quantum Computers Pose to [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Currently, many of the communications we conduct daily on the internet—such as online banking payments, website browsing (HTTPS), messaging app exchanges, and blockchain/crypto asset transactions—are protected by a technology called "Public Key Cryptography". Specifically, algorithms like RSA and Elliptic Curve Cryptography (ECC) form the foundation supporting the reliability of our modern digital society.
+Currently, many of the communications we conduct daily on the internet—such as online banking payments, website browsing (HTTPS), messaging app exchanges, and blockchain/crypto asset transactions—are protected by a technology called "Public Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy". Specifically, algorithms like RSA and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) form the foundation supporting the reliability of our modern digital society.
 
 These cryptographic methods rely on mathematical hard problems, such as "prime factorization of large numbers" and the "discrete logarithm problem," which would take astronomical amounts of time for current classical computers (including supercomputers) to solve. However, when **"quantum computers,"** which have been making remarkable progress in recent years, become practically viable, this premise will be fundamentally overturned.
 
@@ -18,15 +18,15 @@ Shor's Algorithm, introduced by Peter Shor in 1994, mathematically proved that a
 
 Even more serious is the existence of the "Harvest Now, Decrypt Later" attack method (stealing and storing data now to decrypt it in the future when cryptography can be broken). Data that needs to remain confidential for decades, such as state secrets, corporate intellectual property, and personal biometric information, may already be the target of theft with the premise of future decryption.
 
-To respond to this unprecedented crisis, cryptographers and research institutions around the world are working together to develop **Post-Quantum Cryptography (PQC)**, a next-generation cryptographic technology designed to maintain security against attacks by quantum computers. This article will explain the basics of PQC, the mechanisms of its major algorithms, and the latest trends in global standardization driven by the National Institute of Standards and Technology (NIST).
+To respond to this unprecedented crisis, cryptographers and research institutions around the world are working together to develop **Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)**, a next-generation cryptographic technology designed to maintain security against attacks by quantum computers. This article will explain the basics of PQC, the mechanisms of its major algorithms, and the latest trends in global standardization driven by the National Institute of Standards and Technology (NIST).
 
 ---
 
-## What is Post-Quantum Cryptography (PQC)?
+## What is Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)?
 
-Post-Quantum Cryptography (PQC) is a general term for cryptographic algorithms designed to run on existing classical computers while also being resistant to attacks by large-scale quantum computers expected in the future (such as Shor's algorithm).
+Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) is a general term for cryptographic algorithms designed to run on existing classical computers while also being resistant to attacks by large-scale quantum computers expected in the future (such as Shor's algorithm).
 
-It is often confused with "Quantum Cryptography" or "Quantum Key Distribution (QKD)," but these take entirely different approaches. Quantum Cryptography (QKD) is a hardware-based technology that uses the physical laws of quantum mechanics (such as the property that observing a quantum state changes it) to make eavesdropping on communication paths physically impossible. It requires dedicated optical fibers and specialized equipment, posing challenges related to deployment costs and distance limitations.
+It is often confused with "Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" or "Quantum Key Distribution (QKD)," but these take entirely different approaches. Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (QKD) is a hardware-based technology that uses the physical laws of quantum mechanics (such as the property that observing a quantum state changes it) to make eavesdropping on communication paths physically impossible. It requires dedicated optical fibers and specialized equipment, posing challenges related to deployment costs and distance limitations.
 
 On the other hand, **PQC is strictly a software-based cryptographic technology based on "mathematics."** Therefore, it can be integrated into existing internet infrastructure, servers, smartphones, and browsers as software updates, making it highly applicable to the real world. IT companies and government agencies around the world consider replacing (migrating) the currently used RSA and ECC with PQC as an urgent priority.
 
@@ -38,7 +38,7 @@ Various PQC algorithms have been proposed based on mathematical hard problems (s
 
 
 
-### Major Approaches to Post-Quantum Cryptography (PQC)
+### Major Approaches to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)
 
 ```mermaid
 graph LR
@@ -55,9 +55,9 @@ graph LR
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-### 1. Lattice-based Cryptography
+### 1. Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Currently, "Lattice-based Cryptography" is considered the most promising and mainstream approach in the field of PQC. It bases its security on problems related to points (lattice points) regularly arranged in a multidimensional space. Famous problems include the "Shortest Vector Problem (SVP)" and the "Learning With Errors (LWE) problem."
+Currently, "Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" is considered the most promising and mainstream approach in the field of PQC. It bases its security on problems related to points (lattice points) regularly arranged in a multidimensional space. Famous problems include the "Shortest Vector Problem (SVP)" and the "Learning With Errors (LWE) problem."
 
 **Mechanism Overview:** 
 Imagine countless points arranged in a grid within a very high-dimensional (hundreds to thousands of dimensions) space. Finding a specific lattice point is easy in 2 or 3 dimensions, but in hundreds of dimensions, no efficient algorithm has been found for either classical or quantum computers. The LWE problem, in particular, exploits the property that "if small 'noise (errors)' is intentionally added to a system of linear equations, deducing the original variables becomes drastically harder."
@@ -69,7 +69,7 @@ Imagine countless points arranged in a grid within a very high-dimensional (hund
 
 Many of the algorithms currently being standardized by NIST (such as ML-KEM and ML-DSA) adopt this lattice-based cryptography.
 
-### 2. Hash-based Cryptography
+### 2. Hash-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 Hash-based cryptography is a PQC algorithm specialized for digital signatures. Its security relies entirely on the collision resistance and one-wayness of secure "cryptographic hash functions" like SHA-2 and SHA-3.
 
@@ -87,7 +87,7 @@ It starts with a one-time signature scheme called "Lamport Signature." By bundli
 
 NIST has standardized "SLH-DSA (formerly SPHINCS+)" as a stateless hash-based signature.
 
-### 3. Multivariate Cryptography
+### 3. Multivariate [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 Multivariate cryptography bases its security on the difficulty of solving systems of multivariate quadratic polynomial equations (the Multivariate Quadratic problem, or MQ problem). This problem is known to be NP-hard.
 
@@ -102,9 +102,9 @@ The sender creates a ciphertext (or signature) by substituting plaintext (or has
 - Public key sizes are very large (ranging from tens to hundreds of kilobytes).
 - There have been cases where prominent algorithms (like Rainbow) were broken by classical attacks in the past, making it somewhat more challenging to establish trust in its security compared to other methods.
 
-### 4. Code-based Cryptography
+### 4. Code-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Code-based cryptography applies the theory of "error-correcting codes," which are used to correct errors over communication channels, to cryptography. The "McEliece Cryptosystem," proposed in 1978, is the most famous and one of the oldest in PQC.
+Code-based cryptography applies the theory of "error-correcting codes," which are used to correct errors over communication channels, to cryptography. The "McEliece [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)system," proposed in 1978, is the most famous and one of the oldest in PQC.
 
 **Mechanism Overview:** 
 The sender encodes the plaintext using the receiver's public key (a generator matrix of an error-correcting code with a hidden structure) and intentionally adds errors (noise) before sending. The receiver removes the errors using their private key to retrieve the plaintext. An attacker must correct the errors from a seemingly random code without knowing its structure, a problem known as general "syndrome decoding," which has been proven to be NP-hard.
@@ -128,26 +128,26 @@ In 2024, NIST finally published the following three algorithms as official Feder
 
 1. **FIPS 203: ML-KEM (Formerly: CRYSTALS-Kyber)** 
    - **Use Case:** Key Encapsulation Mechanism (KEM) / Encryption & Key Exchange
-   - **Underlying Tech:** Lattice-based Cryptography (Module-LWE)
+   - **Underlying Tech:** Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Module-LWE)
    - **Features:** It offers an excellent balance of key size and speed, serving as the default PQC key exchange for general internet use, such as web communications (TLS) and secure messaging apps.
 
 2. **FIPS 204: ML-DSA (Formerly: CRYSTALS-Dilithium)** 
    - **Use Case:** Digital Signatures
-   - **Underlying Tech:** Lattice-based Cryptography (Module-LWE)
+   - **Underlying Tech:** Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Module-LWE)
    - **Features:** The primary standard for digital signatures. It allows for efficient processing and will become the new standard for all electronic signature applications, including software signing and document authentication.
 
 3. **FIPS 205: SLH-DSA (Formerly: SPHINCS+)** 
    - **Use Case:** Digital Signatures
-   - **Underlying Tech:** Hash-based Cryptography (Stateless)
+   - **Underlying Tech:** Hash-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Stateless)
    - **Features:** Plays a crucial role by serving as a backup in case vulnerabilities are ever found in lattice-based cryptography. Although the signature size is larger, it is suitable for applications requiring long-term reliability.
 
 ### The Pursuit of Further Diversity
 
-While NIST has completed the initial standardization process, it continues to explore further algorithms. In particular, because the standards lean heavily toward "lattice-based cryptography," ensuring **Crypto Diversity** is seen as critical. The evaluation of code-based cryptography and others is ongoing as backup standards for key exchange, aiming to make the foundation of PQC even more robust in the future.
+While NIST has completed the initial standardization process, it continues to explore further algorithms. In particular, because the standards lean heavily toward "lattice-based cryptography," ensuring **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Diversity** is seen as critical. The evaluation of code-based cryptography and others is ongoing as backup standards for key exchange, aiming to make the foundation of PQC even more robust in the future.
 
 ---
 
-## PQC Migration Scenarios and Challenges: The Importance of "Crypto-Agility"
+## PQC Migration Scenarios and Challenges: The Importance of "[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)-Agility"
 
 With the release of official standards from NIST, government agencies, financial institutions, and tech companies around the world will begin transitioning (migrating) from existing RSA/ECC to PQC in earnest. Guidelines from organizations like the NSA (National Security Agency) also recommend early completion of this migration.
 
@@ -155,16 +155,16 @@ With the release of official standards from NIST, government agencies, financial
 
 Because PQC algorithms are new, they have not withstood the "test of time" compared to classical cryptography. Considering the risks of hidden bugs in implementations or the discovery of new attack methods, a **"Hybrid Approach"** is recommended during this transitional period. This method involves performing key exchanges by combining proven existing cryptography (e.g., ECDHE) with the new PQC (e.g., ML-KEM). Trial introductions of this approach are rapidly advancing in major browsers and cloud services.
 
-### Achieving Crypto-Agility
+### Achieving [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)-Agility
 
-What companies and system developers must focus on most moving forward is ensuring **"Crypto-Agility."** When flaws are found in algorithms or new standards emerge, it is essential to have a flexible architectural design that allows cryptographic algorithms to be swapped or updated quickly without stopping the system.
+What companies and system developers must focus on most moving forward is ensuring **"[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)-Agility."** When flaws are found in algorithms or new standards emerge, it is essential to have a flexible architectural design that allows cryptographic algorithms to be swapped or updated quickly without stopping the system.
 
-Creating a Cryptography Bill of Materials (CBOM) to accurately grasp "where," "what cryptography," and "for what purpose" it is being used within a company's systems is a critical first step toward PQC migration.
+Creating a [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Bill of Materials (CBOM) to accurately grasp "where," "what cryptography," and "for what purpose" it is being used within a company's systems is a critical first step toward PQC migration.
 
 ---
 
 ## Conclusion: Preparing for the Coming "Q-Day"
 
-The evolution of quantum computers will bring tremendous benefits to humanity, while simultaneously posing the greatest threat to the cryptographic security that forms the foundation of our modern digital society. Post-Quantum Cryptography (PQC) is no longer a "research topic of the distant future." Following the milestone of NIST's publication of the FIPS standards, PQC has fully entered the phase of "implementation and migration."
+The evolution of quantum computers will bring tremendous benefits to humanity, while simultaneously posing the greatest threat to the cryptographic security that forms the foundation of our modern digital society. Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) is no longer a "research topic of the distant future." Following the milestone of NIST's publication of the FIPS standards, PQC has fully entered the phase of "implementation and migration."
 
 Given the threat of "Harvest Now, Decrypt Later," transitioning to PQC is an immediate, top-priority task for all organizations handling highly sensitive data. By deeply understanding next-generation cryptographic technologies and enhancing your system's crypto-agility, we can safely navigate the approaching quantum computer era.

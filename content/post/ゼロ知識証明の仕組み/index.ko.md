@@ -127,7 +127,7 @@ Eli Ben-Sasson 등이 개발한 STARKs는 "투명성(Transparent)"이라는 이�
 
 ### 1. 다항식 커미트먼트와 FRI 프로토콜
 
-zk-STARKs는 타원 곡선 암호가 아닌, **해시 함수에만** 보안의 근거를 두고 있습니다. 따라서 양자 내성 암호(Post-Quantum Cryptography)로서의 성질을 가집니다.
+zk-STARKs는 타원 곡선 암호가 아닌, **해시 함수에만** 보안의 근거를 두고 있습니다. 따라서 양자 내성 암호(Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)로서의 성질을 가집니다.
 
 계산의 검증은 AIR(Algebraic Intermediate Representation)라는 형식으로 변환된 후, 1차원 또는 다차원 다항식의 성질을 이용하여 수행됩니다. STARKs의 핵심은 **FRI(Fast Reed-Solomon Interactive Oracle Proof of Proximity)** 프로토콜에 있습니다.
 
@@ -209,7 +209,7 @@ ZKP는 틀림없는 차세대 기반 기술이지만, 몇 가지 과제도 남�
 
 ## 마무리
 
-영지식 증명(ZKP)은 단순한 "암호화폐의 익명성을 높이는 기술"에서 "인터넷 전체의 신뢰(Trust)를 재정의하는 범용 기술"로 진화했습니다. 수식과 암호 이론의 깊은 곳에서 계산된 작은 증명이 블록체인의 확장성을 무한히 넓히고 우리의 프라이버시를 강력하게 지키는 방패가 됩니다.
+영지식 증명(ZKP)은 단순한 "[암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 익명성을 높이는 기술"에서 "인터넷 전체의 신뢰(Trust)를 재정의하는 범용 기술"로 진화했습니다. 수식과 암호 이론의 깊은 곳에서 계산된 작은 증명이 블록체인의 확장성을 무한히 넓히고 우리의 프라이버시를 강력하게 지키는 방패가 됩니다.
 
 Web3의 진정한 대중화(Mass Adoption), 그리고 안전하고 프라이빗한 차세대 인터넷 구축을 향해 영지식 증명은 가장 중요한 퍼즐 조각으로 계속 기능할 것입니다. 앞으로의 ZKP 기술 진화에서 눈을 뗄 수 없습니다.
 

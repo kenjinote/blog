@@ -136,9 +136,9 @@ Database operations are defined by the following basic operations based on set t
 
 Furthermore, learning the structure of the "B-Tree index" to instantly search for the desired data from a vast number of records is the best practical application of data structures. The B-Tree minimizes disk I/O operations while guaranteeing a search speed of $O(\log N)$. Without knowing the ACID properties (Atomicity, Consistency, Isolation, Durability) of a transaction, it is impossible to build robust systems.
 
-## 6. Security and Cryptography: The Social Infrastructure Supported by the Difficulty of Prime Factorization
+## 6. Security and [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: The Social Infrastructure Supported by the Difficulty of Prime Factorization
 
-While superficial security education like "Let's make passwords complex" and "Don't click on suspicious links" is conducted in information literacy education, the mathematics of "Cryptography" that fundamentally supports internet society is almost never taught.
+While superficial security education like "Let's make passwords complex" and "Don't click on suspicious links" is conducted in information literacy education, the mathematics of "[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" that fundamentally supports internet society is almost never taught.
 
 The HTTPS communications and digital signatures we use every day are protected by public-key cryptography, such as RSA cryptography. The security of RSA relies on the mathematical difficulty (considered an NP-intermediate problem) that "the prime factorization of massive integers cannot be solved within a realistic time frame by current classical computers."
 

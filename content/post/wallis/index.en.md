@@ -28,7 +28,7 @@ In 1632, he entered Emmanuel College, Cambridge University. At Cambridge at the 
 
 Having obtained his master's degree in 1640, [Wallis](https://kenji.blog/en/p/wallis/) proceeded on the path of a clergyman, working as a minister in places like London. During this period, he also participated in theological disputes, cultivating his logical and precise thinking skills.
 
-## The English Civil War and Activity as a Cryptographer
+## The English Civil War and Activity as a [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)grapher
 
 In the 1640s, England was engulfed in the **Puritan Revolution** (English Civil War), a war between the Royalists who supported King Charles I and the Parliamentarians who supported Parliament. Based on his political and religious beliefs, [Wallis](https://kenji.blog/en/p/wallis/) belonged to the Parliamentarian faction, and it was here that a major turning point in his life occurred. He possessed a unique talent for decrypting the encrypted letters of the enemy.
 

@@ -149,7 +149,7 @@ Grâce à ce processus, même s'il y a $m$ nœuds défaillants ou malveillants d
 
 ### Consensus de Nakamoto (Proof of Work)
 
-Satoshi Nakamoto, le créateur de Bitcoin, a abordé ce problème avec une approche complètement différente. Il s'agit du **Proof of Work** (PoW) associé à la règle selon laquelle la chaîne la plus longue est considérée comme la bonne, formant ainsi le **Consensus de Nakamoto**.
+Satoshi Nakamoto, le créateur de [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/), a abordé ce problème avec une approche complètement différente. Il s'agit du **Proof of Work** (PoW) associé à la règle selon laquelle la chaîne la plus longue est considérée comme la bonne, formant ainsi le **Consensus de Nakamoto**.
 
 Dans le Consensus de Nakamoto, seul celui qui remporte la compétition de calcul mathématique (minage) gagne le droit de proposer un bloc. Pour forcer le réseau à accepter de fausses informations, il faudrait contrôler la majorité de la puissance de calcul (plus de 51%) du réseau, ce qui est extrêmement difficile dans la réalité. C'est pourquoi on considère que cette approche résout le problème des généraux byzantins d'un point de vue probabiliste dans un réseau ouvert comptant de très nombreux participants.
 

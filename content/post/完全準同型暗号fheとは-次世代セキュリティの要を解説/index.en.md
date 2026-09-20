@@ -77,7 +77,7 @@ FHE was long called the "holy grail of cryptography" and was even said to be imp
 
 ## 3. Mathematical Foundations of FHE: The LWE Problem and Ring-LWE
 
-Many of the current mainstream FHE schemes are based on the **LWE (Learning With Errors) problem**, a mathematical hard problem in "Lattice-based Cryptography," which is also known as Post-Quantum Cryptography.
+Many of the current mainstream FHE schemes are based on the **LWE (Learning With Errors) problem**, a mathematical hard problem in "Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy," which is also known as Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy.
 
 ### Intuitive Understanding of the LWE Problem
 Solving a system of linear equations is easy if you use methods like Gaussian elimination.
@@ -257,7 +257,7 @@ Now that FHE is approaching practical speeds, disruptive innovations are expecte
 
 ---
 
-## 9. Conclusion: The Future of Cryptography is "Unseen Computation"
+## 9. Conclusion: The Future of [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy is "Unseen Computation"
 
 Just as the invention of public key cryptography (RSA) in the 1970s enabled secure communication on the Internet (such as HTTPS), Craig Gentry's invention of FHE is one of the most important milestones in the history of cryptography.
 

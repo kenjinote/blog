@@ -100,7 +100,7 @@ $$ P(x) = H(x) \cdot Z(x) $$
 
 The verifier only needs to check whether this equation $P(s) = H(s) \cdot Z(s)$ holds at a certain random secret point $s$ to instantly verify that the entire computation was performed correctly. This is the secret of its "Succinctness."
 
-### 3. Elliptic Curve Cryptography and Bilinear Pairings
+### 3. Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and Bilinear Pairings
 
 However, if the verifier knows the secret point $s$, it would be possible for the prover to fabricate a fake polynomial to satisfy the equation (a collapse of soundness). Therefore, it is necessary to perform computations while keeping $s$ encrypted (using homomorphic encryption) so that no one knows it.
 
@@ -127,7 +127,7 @@ Developed by Eli Ben-Sasson and others, STARKs feature no need for a trusted set
 
 ### 1. Polynomial Commitments and the FRI Protocol
 
-zk-STARKs base their security entirely on **hash functions**, rather than elliptic curve cryptography. Therefore, they have the properties of Post-Quantum Cryptography.
+zk-STARKs base their security entirely on **hash functions**, rather than elliptic curve cryptography. Therefore, they have the properties of Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy.
 
 Computation verification is performed by utilizing the properties of one-dimensional or multi-dimensional polynomials after being converted into a format called AIR (Algebraic Intermediate Representation). The core of STARKs lies in the **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)** protocol.
 
@@ -149,7 +149,7 @@ The verifier requests the disclosure of several random points and uses Merkle pr
 
 | Feature | zk-SNARKs | zk-STARKs |
 | :--- | :--- | :--- |
-| **Cryptographic Assumptions** | Elliptic curves, Pairings | Collision-resistant hash functions |
+| **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Assumptions** | Elliptic curves, Pairings | Collision-resistant hash functions |
 | **Trusted Setup** | Required (Universal for Plonk, etc.) | Not required (Transparent) |
 | **Quantum Resistance** | No | Yes |
 | **Proof Size** | Very small (~200 Bytes) | Somewhat large (Tens of KB) |

@@ -14,7 +14,7 @@ description: '針對量子電腦崛起帶來的密碼學危機威脅，以及作
 
 在現代的網際網路社會中，為了保護通訊的機密性與資料的完整性，公開金鑰密碼技術是不可或缺的基礎設施。目前廣泛使用的RSA密碼與橢圓曲線密碼（ECC），分別依賴於「大質數整數分解的困難度」與「橢圓曲線上的離散對數問題的困難度」等數學壁壘來確保安全性。在古典電腦（包含超級電腦在內，我們現在正在使用的電腦）上，要解開這些數學問題所需的時間被證明比宇宙的年齡還要長，這一直以來都是安全性的依據。
 
-然而，這個堅固的前提正因為 **量子電腦** 的理論與實用化進展而面臨徹底被推翻的危機。1994年，密碼學家彼得·秀爾（Peter Shor）發表的「 **Shor演算法（秀爾演算法）** 」在理論上證明，只要在具備足夠效能的容錯通用量子電腦（CRQC: Cryptographically Relevant Quantum Computer）上執行，就能在「多項式時間」內破解整數分解問題與離散對數問題。這意味著目前使用的公開金鑰密碼將全部失效。
+然而，這個堅固的前提正因為 **量子電腦** 的理論與實用化進展而面臨徹底被推翻的危機。1994年，密碼學家彼得·秀爾（Peter Shor）發表的「 **Shor演算法（秀爾演算法）** 」在理論上證明，只要在具備足夠效能的容錯通用量子電腦（CRQC: [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer）上執行，就能在「多項式時間」內破解整數分解問題與離散對數問題。這意味著目前使用的公開金鑰密碼將全部失效。
 
 ```mermaid
 graph TD
@@ -30,7 +30,7 @@ graph TD
 
 此外，針對對稱金鑰密碼（如AES）與雜湊函數（如SHA-256），也存在1996年發現的 **Grover演算法** 。這能將暴力破解攻擊（Brute-force）的運算量減少到平方根。也就是說，AES-128的安全級別實質上將減半至2的64次方，因此在量子時代，建議使用如AES-256或SHA-384等更長長度的金鑰與雜湊值。
 
-為對抗這場前所未有的密碼危機而誕生的，就是即使使用量子電腦也難以破解、基於全新數學問題的 **抗量子密碼學（Post-Quantum Cryptography: PQC）** 。本文將根據美國國家標準暨技術研究院（NIST）主導的PQC標準化流程結果，針對主要的PQC演算法，從其數學背景、機制到架構比較進行極為詳細的解說。
+為對抗這場前所未有的密碼危機而誕生的，就是即使使用量子電腦也難以破解、基於全新數學問題的 **抗量子密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy: PQC）** 。本文將根據美國國家標準暨技術研究院（NIST）主導的PQC標準化流程結果，針對主要的PQC演算法，從其數學背景、機制到架構比較進行極為詳細的解說。
 
 ---
 
@@ -49,7 +49,7 @@ graph TD
 - **FIPS 205 (SLH-DSA)** ：基於SPHINCS+的無狀態雜湊基數位簽章
 - **（預計未來制定）FN-DSA** ：基於FALCON的數位簽章
 
-這些被選定的演算法所依賴的數學「困難度問題」各不相同，這是為了確保即使某一個演算法在未來被發現有致命漏洞，整個系統也不會崩潰的「密碼敏捷性 (Crypto Agility)」。在標準化過程中，雖然晶格密碼 (Lattice-based cryptography) 因為效能優勢成為主角，但雜湊基密碼與編碼基密碼也被採用作為強大的後盾。
+這些被選定的演算法所依賴的數學「困難度問題」各不相同，這是為了確保即使某一個演算法在未來被發現有致命漏洞，整個系統也不會崩潰的「密碼敏捷性 ([Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Agility)」。在標準化過程中，雖然晶格密碼 (Lattice-based cryptography) 因為效能優勢成為主角，但雜湊基密碼與編碼基密碼也被採用作為強大的後盾。
 
 ---
 
@@ -57,15 +57,15 @@ graph TD
 
 PQC演算法根據其安全性基礎的數學問題，主要可分為以下5大類。本文將特別針對前3類進行深入探討。
 
-1. **晶格密碼 (Lattice-based Cryptography)** ：
+1. **晶格密碼 (Lattice-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy)** ：
    基於多維晶格空間中的最短向量問題（SVP）與最近向量問題（CVP），以及由此衍生出的LWE問題。這是NIST標準化的核心，Kyber、Dilithium、FALCON皆屬此類。其處理速度、公開金鑰大小與密文大小的平衡最為優異，適合通用。
-2. **雜湊基密碼 (Hash-based Cryptography)** ：
+2. **雜湊基密碼 (Hash-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy)** ：
    僅將安全性基礎建立在密碼學雜湊函數（如SHA-2或SHAKE等）的「抗碰撞性」與「單向性」上。雖然只能應用於數位簽章（如SPHINCS+等），但其安全性證明最為強固，對未知數學攻擊的抵抗力極高。
-3. **編碼基密碼 (Code-based Cryptography)** ：
+3. **編碼基密碼 (Code-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy)** ：
    基於錯誤更正碼理論，依賴於症狀解碼問題（Syndrome Decoding Problem）的困難度。1970年代提出的Classic McEliece是其代表，雖然擁有非常悠久的歷史與經過驗證的安全性，但公開金鑰的尺寸會極端龐大（達到MB等級）。
-4. **多變數多項式密碼 (Multivariate Polynomial Cryptography)** ：
+4. **多變數多項式密碼 (Multivariate Polynomial [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy)** ：
    基於在有限體上求解多變數聯立二次方程式（MQ問題）的困難度。主要被提案作為數位簽章（如Rainbow等），但在NIST最後一輪評估期間，被發現能用一台普通電腦在幾天內破解的強大攻擊手法，導致許多演算法退出了標準化。
-5. **同源密碼 (Isogeny-based Cryptography)** ：
+5. **同源密碼 (Isogeny-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy)** ：
    基於橢圓曲線同源（Isogeny）圖上的路徑搜尋問題。金鑰尺寸非常小，曾被期待作為ECC的正統繼承者，但在2022年，最終候選者「SIKE」被利用古典數學（如Castryck-Decru攻擊）在一般PC上僅花幾小時就完全破解，以戲劇性的方式落幕，象徵了PQC設計的困難與可怕。
 
 ---
@@ -294,7 +294,7 @@ Classic McEliece令人驚訝之處在於， **從提出至今已經超過40年�
 
 然而，突然完全切換到新的密碼演算法伴隨著極高的風險。假設幾年後有天才數學家對Kyber等晶格密碼發現了致命的攻擊手法（如在古典電腦上也能解開的數學缺陷），那麼依賴該演算法的整個系統就會在一瞬間形同裸奔。
 
-為減輕這種不確定性風險，既現實又被推薦的方法就是「 **混合密碼 (Hybrid Cryptography)** 」。
+為減輕這種不確定性風險，既現實又被推薦的方法就是「 **混合密碼 (Hybrid [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy)** 」。
 
 在混合密碼中，會同時使用擁有長年實績的現行古典密碼（例如：X25519等橢圓曲線密碼）與新的PQC（例如：Kyber768）來進行金鑰交換。各演算法分別生成共同金鑰成分，最後再使用安全的金鑰衍生函數（KDF）將兩個成分混合，生成最終的主秘密金鑰 (Master Secret)。
 
@@ -310,7 +310,7 @@ graph TD
 
 透過這種方式，就能實現「萬一量子電腦實現且ECC被破解，還有Kyber能保護通訊」，反之「萬一Kyber被發現有未知數學缺陷，還有ECC能保護通訊」這種堅固的雙重防護安全性。代表性的例子就是IETF正在進行標準化的 **X25519MLKEM768 (舊稱 X25519Kyber768)** 草案，目前網頁瀏覽器與最先進的伺服器之間的通訊，正是採用這種混合方式。
 
-此外，在系統設計時，建立「不過度依賴特定密碼演算法，當演算法崩潰時能迅速切換到另一個演算法（如從Kyber切換到McEliece，從Dilithium切換到SPHINCS+）的架構」，這種被稱為 **密碼敏捷性 (Crypto Agility)** 的概念，將成為未來系統開發中不可或缺的需求。
+此外，在系統設計時，建立「不過度依賴特定密碼演算法，當演算法崩潰時能迅速切換到另一個演算法（如從Kyber切換到McEliece，從Dilithium切換到SPHINCS+）的架構」，這種被稱為 **密碼敏捷性 ([Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Agility)** 的概念，將成為未來系統開發中不可或缺的需求。
 
 ---
 
@@ -324,7 +324,7 @@ NIST完成 FIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) 的標準�
 
 ---
 *參考文獻 (References):*
-* *NIST Post-Quantum Cryptography Standardization Program*
+* *NIST Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*

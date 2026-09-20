@@ -80,7 +80,7 @@ Le FHE a longtemps été considéré comme le « Saint Graal de la cryptographie
 
 ## 3. Les bases mathématiques du FHE : le problème LWE et Ring-LWE
 
-La plupart des schémas FHE actuellement dominants sont basés sur le **problème LWE (Learning With Errors)**, un défi mathématique de la « cryptographie fondée sur les réseaux (Lattice-based Cryptography) », également connue sous le nom de cryptographie post-quantique.
+La plupart des schémas FHE actuellement dominants sont basés sur le **problème LWE (Learning With Errors)**, un défi mathématique de la « cryptographie fondée sur les réseaux (Lattice-based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy) », également connue sous le nom de cryptographie post-quantique.
 
 ### Compréhension intuitive du problème LWE
 

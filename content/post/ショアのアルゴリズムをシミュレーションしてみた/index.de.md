@@ -337,11 +337,11 @@ Um eine 2048-Bit-RSA-Verschlüsselung zu knacken, werden Tausende von perfekten 
 
 # 7. Übergang zur Post-Quanten-Kryptographie (PQC)
 
-In Vorbereitung auf die Ankunft eines solchen "Q-Day (der Tag, an dem Quantencomputer Verschlüsselungen knacken)" standardisieren Kryptographen weltweit, allen voran das amerikanische National Institute of Standards and Technology (NIST), die **Post-Quanten-Kryptographie (Post-Quantum Cryptography, PQC)**.
+In Vorbereitung auf die Ankunft eines solchen "Q-Day (der Tag, an dem Quantencomputer Verschlüsselungen knacken)" standardisieren Kryptographen weltweit, allen voran das amerikanische National Institute of Standards and Technology (NIST), die **Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy, PQC)**.
 
 PQC basiert auf neuen mathematischen Problemen (Gitterprobleme, multivariate Polynome, hashbasiert usw.), von denen mathematisch angenommen wird, dass sie selbst mit Shors Algorithmus (oder Grovers Algorithmus) nicht effizient lösbar sind. Algorithmen wie "CRYSTALS-Kyber" und "CRYSTALS-Dilithium" wurden bereits als Standard ausgewählt und schrittweise in Apples iMessage und verschiedene Webbrowser-Kommunikationsprotokolle eingeführt.
 
-Für Ingenieure, die IT-Infrastrukturen verwalten, wird der Einbau von "Crypto-Agility (Krypto-Agilität: das Design zum schnellen Wechseln von Verschlüsselungsmethoden)" von bestehenden RSA- oder elliptischen Kurven zu PQC eine wichtige zukünftige Aufgabe sein.
+Für Ingenieure, die IT-Infrastrukturen verwalten, wird der Einbau von "[Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility (Krypto-Agilität: das Design zum schnellen Wechseln von Verschlüsselungsmethoden)" von bestehenden RSA- oder elliptischen Kurven zu PQC eine wichtige zukünftige Aufgabe sein.
 
 ---
 

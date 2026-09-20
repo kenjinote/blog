@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 ---
 
-## 1. Introduction: Integer Factorization and the Foundation of Modern Cryptography
+## 1. Introduction: Integer Factorization and the Foundation of Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 The security of internet communication in modern society heavily relies on the security of the RSA cryptosystem, a public-key encryption. And the security of RSA is based on the mathematical assumption of "the difficulty of factoring huge composite numbers". If an extremely efficient integer factorization algorithm were discovered, the world's communication infrastructure would collapse from its foundation.
 
@@ -173,7 +173,7 @@ The current scientific consensus on the question "Are there classical algorithms
 
 1. **Practical improvements continue, but there are no asymptotic leaps**: Attempts to improve the constant term $c$ of GNFS, such as MNFS, optimization of polynomial selection, and parallelization of the Block Wiedemann method, are ongoing. However, the possibility of discovering a classical algorithm with $\alpha$ falling below $1/3$ is considered extremely low.
 2. **The security of RSA on classical computers remains strong**: The computational complexity of GNFS remains enormous, and RSA-2048 and RSA-4096 will continue to maintain their security against attacks by classical computers for decades to come.
-3. **The true threat is quantum algorithms**: What crossed the barrier of computational complexity was Shor's algorithm, based on the principles of quantum mechanics. As a result, the world is forced to transition to Post-Quantum Cryptography (PQC). The transition to new mathematical problems that are considered difficult to solve even for quantum computers (cannot be solved in polynomial time), such as lattice-based cryptography and hash-based cryptography, is currently at the forefront of cryptography.
+3. **The true threat is quantum algorithms**: What crossed the barrier of computational complexity was Shor's algorithm, based on the principles of quantum mechanics. As a result, the world is forced to transition to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC). The transition to new mathematical problems that are considered difficult to solve even for quantum computers (cannot be solved in polynomial time), such as lattice-based cryptography and hash-based cryptography, is currently at the forefront of cryptography.
 
 The General Number Field Sieve (GNFS) is one of the "highest peaks" humanity has reached by challenging the limits of classical mathematics and algorithm design. Understanding the profound mathematical structure of GNFS is not merely learning the history of cryptanalysis, but also an intellectual journey of exploration that touches upon the beauty of computational complexity theory and algebraic number theory. Until the day quantum computers are put into practical use, GNFS will likely continue to defend its throne as the strongest integer factorization algorithm.
 

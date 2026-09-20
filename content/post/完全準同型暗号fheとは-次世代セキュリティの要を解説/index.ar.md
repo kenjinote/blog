@@ -77,7 +77,7 @@ PHE هو نظام تشفير يمكنه إجراء **إما** الجمع أو ا
 
 ## 3. الأساس الرياضي لـ FHE: مشكلة LWE و Ring-LWE
 
-تستند العديد من أنظمة FHE السائدة حاليًا إلى **مشكلة التعلم مع الأخطاء (LWE: Learning With Errors)** ، وهي مشكلة رياضية صعبة في "التشفير القائم على الشبكات" (Lattice-based Cryptography)، والمعروفة أيضًا باسم تشفير ما بعد الكم (Post-Quantum Cryptography).
+تستند العديد من أنظمة FHE السائدة حاليًا إلى **مشكلة التعلم مع الأخطاء (LWE: Learning With Errors)** ، وهي مشكلة رياضية صعبة في "التشفير القائم على الشبكات" (Lattice-based [Crypto](https://kenji.blog/ar/p/cryptocurrency-and-bitcoin/)graphy)، والمعروفة أيضًا باسم تشفير ما بعد الكم (Post-Quantum [Crypto](https://kenji.blog/ar/p/cryptocurrency-and-bitcoin/)graphy).
 
 ### فهم بديهي لمشكلة LWE
 من السهل حل نظام من المعادلات الخطية باستخدام طرق مثل الحذف الغاوسي (Gaussian elimination).

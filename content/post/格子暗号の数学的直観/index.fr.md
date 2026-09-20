@@ -15,7 +15,7 @@ L'infrastructure numérique de la société moderne repose sur des technologies 
 
 Cependant, en 1994, l'algorithme de Shor, publié par Peter Shor, a provoqué une onde de choc dans le monde de la cryptographie. Cet algorithme a prouvé mathématiquement qu'une fois qu'un ordinateur quantique à grande échelle sera réalisé, il pourra résoudre les problèmes de factorisation en nombres premiers et de logarithme discret en un temps polynomial. Cela signifie que la cryptographie à clé publique largement utilisée aujourd'hui deviendra complètement décryptable à l'avenir.
 
-Pour contrer cette "menace quantique (Quantum Threat)", il est devenu urgent de rechercher de nouvelles méthodes cryptographiques difficiles à décrypter, même avec un ordinateur quantique. C'est le domaine appelé "Cryptographie Post-Quantique (Post-Quantum Cryptography : PQC)" ou "Cryptographie résistante aux ordinateurs quantiques".
+Pour contrer cette "menace quantique (Quantum Threat)", il est devenu urgent de rechercher de nouvelles méthodes cryptographiques difficiles à décrypter, même avec un ordinateur quantique. C'est le domaine appelé "[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie Post-Quantique (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy : PQC)" ou "[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie résistante aux ordinateurs quantiques".
 
 Il existe plusieurs candidats prometteurs pour la PQC, tels que la cryptographie basée sur les fonctions de hachage, sur les codes, sur des polynômes multivariés et sur les isogénies. Parmi eux, celle qui attire actuellement le plus l'attention et qui est au cœur du processus de standardisation PQC par le NIST (Institut national des normes et de la technologie des États-Unis) est la "cryptographie basée sur les réseaux (Lattice-based cryptography)". Comparée à d'autres méthodes, la cryptographie basée sur les réseaux se distingue par une vitesse de traitement très élevée pour le chiffrement et le déchiffrement. De plus, elle possède une caractéristique remarquable en théorie cryptographique : une preuve de sécurité extrêmement solide basée sur la réduction de la "complexité dans le pire des cas (Worst-case complexity)" à la "complexité en moyenne (Average-case complexity)".
 
@@ -142,7 +142,7 @@ graph TD
     style C fill:#ccccff,stroke:#0000ff,stroke-width:2px,color:#000
 ```
 
-# 5. Construction du cryptosystème à clé publique basé sur LWE (Cryptosystème de Regev)
+# 5. Construction du cryptosystème à clé publique basé sur LWE ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)système de Regev)
 
 Maintenant que nous avons compris la difficulté du problème LWE, examinons le cryptosystème à clé publique de base proposé par Oded Regev pour voir comment il est utilisé pour le chiffrement et le déchiffrement. Nous expliquerons ici le mécanisme le plus fondamental de chiffrement d'un message d'un bit $M \in \{0, 1\}$.
 
@@ -322,7 +322,7 @@ Dans cet article, nous avons expliqué en détail l'intuition mathématique de l
 
 1. **Le réseau (Lattice)** est un espace discret représenté par des combinaisons linéaires à coefficients entiers de vecteurs de base, et il devient difficile de trouver une "bonne base" proche de l'orthogonalité dans les dimensions élevées (SVP).
 2. **Le problème LWE (Learning With Errors)** est le problème de la résolution d'équations linéaires simultanées avec du bruit, ce qui est lié à la difficulté du problème du pire cas du réseau, fournissant ainsi une base solide de sécurité.
-3. En utilisant le problème LWE, le chiffrement et le déchiffrement (**Cryptosystème de Regev**) sont réalisés grâce à un mécanisme ingénieux d'ajout et de suppression intentionnelle de bruit.
+3. En utilisant le problème LWE, le chiffrement et le déchiffrement (**[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)système de Regev**) sont réalisés grâce à un mécanisme ingénieux d'ajout et de suppression intentionnelle de bruit.
 4. Dans les protocoles réels, **Ring-LWE** et **Module-LWE** utilisant des anneaux de polynômes sont adoptés pour améliorer l'efficacité de la communication et la vitesse de calcul, et servent de base au **ML-KEM** standard du NIST.
 
 À l'approche du changement de paradigme informatique sans précédent que représentent les ordinateurs quantiques, il est très romantique de penser que la "cryptographie sur les réseaux", née des profondeurs de l'algèbre linéaire classique et de la théorie des nombres, soutiendra la fondation de la sécurité Internet de demain. Les mathématiques qui sous-tendent la cryptographie sur les réseaux ne sont en aucun cas trop complexes, et avec des connaissances de base en algèbre linéaire et en probabilités, vous pouvez parfaitement comprendre sa belle structure. Nous espérons que cet article vous aidera à comprendre la cryptographie basée sur les réseaux, qui est au cœur de la PQC.

@@ -12,11 +12,11 @@ description: "De l'ancien chiffre de César à la machine Enigma, en passant par
 
 # 1. Introduction : Qu'est-ce que la cryptographie ?
 
-La cryptographie (Cryptography) est la technologie permettant de préserver la confidentialité des informations, et a évolué avec l'histoire de l'humanité. De la transmission d'ordres secrets lors des guerres antiques à la protection des informations de cartes de crédit sur l'Internet moderne, le but de la cryptographie est resté le même. Il s'agit de « s'assurer que seul le destinataire prévu peut comprendre l'information, et qu'elle ne peut pas être déchiffrée par des tiers ».
+La cryptographie ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy) est la technologie permettant de préserver la confidentialité des informations, et a évolué avec l'histoire de l'humanité. De la transmission d'ordres secrets lors des guerres antiques à la protection des informations de cartes de crédit sur l'Internet moderne, le but de la cryptographie est resté le même. Il s'agit de « s'assurer que seul le destinataire prévu peut comprendre l'information, et qu'elle ne peut pas être déchiffrée par des tiers ».
 
 Dans la sécurité de l'information moderne, la cryptographie ne se limite pas à la simple « dissimulation de l'information (Confidentialité) », mais joue également un rôle important dans l'« Intégrité (Integrity) » des données, l'« Authentification (Authentication) », et la « Non-répudiation (Non-repudiation) ».
 
-Cet article retrace en détail l'histoire de l'évolution de la cryptographie d'un point de vue technologique et mathématique, en commençant par les simples chiffrements par substitution de l'Antiquité, en passant par les chiffrements mécaniques, la cryptographie moderne à clé symétrique et publique, jusqu'à l'ère de la « Cryptographie Post-Quantique (PQC) » provoquée par l'utilisation pratique des ordinateurs quantiques.
+Cet article retrace en détail l'histoire de l'évolution de la cryptographie d'un point de vue technologique et mathématique, en commençant par les simples chiffrements par substitution de l'Antiquité, en passant par les chiffrements mécaniques, la cryptographie moderne à clé symétrique et publique, jusqu'à l'ère de la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie Post-Quantique (PQC) » provoquée par l'utilisation pratique des ordinateurs quantiques.
 
 ---
 
@@ -86,7 +86,7 @@ graph TD
 
 ---
 
-# 3. Cryptographie mécanique et guerres mondiales : Enigma et son déchiffrement
+# 3. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie mécanique et guerres mondiales : Enigma et son déchiffrement
 
 Au 20ème siècle, alors que les moyens de communication passaient des lettres au télégraphe et à la radio, la vitesse et la complexité du chiffrement sont devenues nécessaires. C'est là que la « cryptographie mécanique », combinant des rotors (disques rotatifs), est apparue.
 
@@ -102,7 +102,7 @@ En particulier, [Alan Turing](https://kenji.blog/fr/p/turing/) a développé la 
 
 ---
 
-# 4. L'aube de la cryptographie moderne : Cryptographie à clé symétrique (DES et AES)
+# 4. L'aube de la cryptographie moderne : [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie à clé symétrique (DES et AES)
 
 Après la guerre, avec l'avènement des ordinateurs, la cryptographie a subi un changement de paradigme radical, passant de la manipulation de « caractères » à la manipulation de « bits (0 et 1) ».
 
@@ -140,7 +140,7 @@ graph TD
 La cryptographie à clé symétrique avait une faiblesse fatale. C'était le « Problème de distribution de clés (Key Distribution Problem) ». C'est la question de savoir comment partager en toute sécurité une « clé commune » avec une partie distante avant de commencer la communication chiffrée. Ce problème a été résolu par la « cryptographie à clé publique », née dans les années 1970.
 
 ## L'échange de clés Diffie-Hellman
-En 1976, Whitfield Diffie et Martin Hellman ont publié l'article révolutionnaire « New Directions in Cryptography ». Ils ont proposé une méthode permettant de partager des clés en toute sécurité, même sur un canal de communication écouté, en utilisant la difficulté mathématique du « Problème du logarithme discret (Discrete Logarithm Problem) ».
+En 1976, Whitfield Diffie et Martin Hellman ont publié l'article révolutionnaire « New Directions in [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy ». Ils ont proposé une méthode permettant de partager des clés en toute sécurité, même sur un canal de communication écouté, en utilisant la difficulté mathématique du « Problème du logarithme discret (Discrete Logarithm Problem) ».
 
 1. Un grand nombre premier $p$ et un générateur $g$ sont rendus publics.
 2. Alice choisit une valeur secrète $a$ et envoie $A = g^a \pmod{p}$ à Bob.
@@ -197,7 +197,7 @@ rsa_example()
 
 Le chiffrement RSA est puissant, mais à mesure que les performances des ordinateurs s'améliorent, il est devenu nécessaire d'augmenter la longueur de la clé (actuellement 2048 bits ou 3072 bits) pour maintenir la sécurité, ce qui a entraîné le problème de l'augmentation des coûts de calcul.
 
-Ainsi, la « Cryptographie sur les courbes elliptiques (Elliptic Curve Cryptography : ECC) » a été proposée en 1985. Elle utilise l'addition de points sur une courbe elliptique (généralement de la forme $y^2 = x^3 + ax + b$) sur un corps fini.
+Ainsi, la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie sur les courbes elliptiques (Elliptic Curve [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy : ECC) » a été proposée en 1985. Elle utilise l'addition de points sur une courbe elliptique (généralement de la forme $y^2 = x^3 + ax + b$) sur un corps fini.
 
 Le problème du logarithme discret sur courbe elliptique (ECDLP) est connu pour être encore plus difficile à résoudre que le problème de factorisation en nombres premiers, et **la sécurité équivalente à 3072 bits pour RSA peut être atteinte avec une longueur de clé de seulement 256 bits pour ECC**. Cela a rendu possible une communication chiffrée rapide et sécurisée (comme ECDSA et ECDH) même dans des environnements avec des ressources de calcul limitées, comme les smartphones et les appareils IoT.
 
@@ -209,10 +209,10 @@ La technologie cryptographique semblait solide comme un roc, mais l'algorithme d
 
 Les ordinateurs quantiques effectuent des calculs en utilisant les propriétés de la mécanique quantique que sont la « superposition » et l'« intrication quantique ». Il a été mathématiquement prouvé que l'exécution de l'algorithme de Shor sur un ordinateur quantique suffisamment performant pourrait résoudre le problème de factorisation en nombres premiers et le problème du logarithme discret en « temps polynomial ». En d'autres termes, le jour où un ordinateur quantique pratique sera achevé (Q-Day), toute la cryptographie à clé publique actuellement utilisée, comme RSA et ECC, s'effondrera instantanément.
 
-## L'émergence de la PQC (Post-Quantum Cryptography)
-Pour se préparer à cette menace sans précédent, la recherche sur la « Cryptographie Post-Quantique (PQC) », basée sur de nouveaux problèmes mathématiques difficiles à déchiffrer même pour les ordinateurs quantiques, progresse rapidement. Le NIST (National Institute of Standards and Technology des États-Unis) mène un processus de normalisation de la PQC depuis de nombreuses années, et les approches mathématiques suivantes sont considérées comme les plus prometteuses :
+## L'émergence de la PQC (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)
+Pour se préparer à cette menace sans précédent, la recherche sur la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie Post-Quantique (PQC) », basée sur de nouveaux problèmes mathématiques difficiles à déchiffrer même pour les ordinateurs quantiques, progresse rapidement. Le NIST (National Institute of Standards and Technology des États-Unis) mène un processus de normalisation de la PQC depuis de nombreuses années, et les approches mathématiques suivantes sont considérées comme les plus prometteuses :
 
-### 1. Cryptographie basée sur les réseaux euclidiens (Lattice-based Cryptography)
+### 1. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur les réseaux euclidiens (Lattice-based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)
 C'est actuellement l'approche la plus prometteuse et elle a été adoptée pour les algorithmes de normalisation du NIST (ML-KEM / Kyber, ML-DSA / Dilithium). Elle est basée sur la difficulté de trouver un point spécifique sur un « réseau (Lattice) » dans un espace multidimensionnel (comme le problème du plus court vecteur : SVP) et sur le problème LWE (Learning With Errors).
 
 Le concept du problème LWE utilise la propriété que si un « petit bruit (erreur) » est intentionnellement ajouté à un système d'équations linéaires, il devient soudainement très difficile de trouver la solution.
@@ -238,10 +238,10 @@ b = (np.dot(A, s) + e) % q
 # Même en utilisant un ordinateur quantique, il est considéré comme très difficile de récupérer s à partir de A et b
 ```
 
-### 2. Cryptographie basée sur le hachage (Hash-based Cryptography)
+### 2. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur le hachage (Hash-based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)
 Il s'agit d'un système de signature numérique qui fonde sa sécurité uniquement sur la résistance aux collisions des fonctions de hachage. Comme il n'a pas de structure mathématique, il résiste aux attaques quantiques, mais la taille de la signature a tendance à être importante (comme SPHINCS+).
 
-### 3. Cryptographie basée sur les codes (Code-based Cryptography)
+### 3. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie basée sur les codes (Code-based [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)
 Il s'agit d'un système de chiffrement basé sur la théorie des codes correcteurs d'erreurs. Le chiffrement de McEliece, proposé en 1978, est célèbre, a une longue histoire et une réputation de sécurité établie, mais son défi est que la taille de la clé publique est extrêmement grande (parfois de plusieurs mégaoctets).
 
 ```mermaid

@@ -337,11 +337,11 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 
 # 7. 轉移至後量子密碼學（PQC）
 
-為了因應這種「Q-Day（量子電腦破解密碼之日）」的到來，以美國國家標準暨技術研究院（NIST）為首，全世界的密碼學家正在積極制定 **後量子密碼學（Post-Quantum Cryptography, PQC）** 標準。
+為了因應這種「Q-Day（量子電腦破解密碼之日）」的到來，以美國國家標準暨技術研究院（NIST）為首，全世界的密碼學家正在積極制定 **後量子密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy, PQC）** 標準。
 
 PQC 建立在被認為即使使用秀爾演算法（或葛羅佛演算法）也無法在數學上有效解開的全新數學問題（如晶格問題、多變數多項式問題、雜湊函數等）基礎上。目前像是「CRYSTALS-Kyber」與「CRYSTALS-Dilithium」等演算法已經被選為標準規格，並正逐漸導入 Apple 的 iMessage 或是各大網頁瀏覽器的通訊協定中。
 
-對管理IT基礎設施的工程師來說，在系統中導入從現有 RSA 或橢圓曲線密碼轉換到 PQC 的「密碼敏捷性（Crypto-Agility：能快速切換密碼系統的設計）」，將會是未來的一大任務。
+對管理IT基礎設施的工程師來說，在系統中導入從現有 RSA 或橢圓曲線密碼轉換到 PQC 的「密碼敏捷性（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)-Agility：能快速切換密碼系統的設計）」，將會是未來的一大任務。
 
 ---
 

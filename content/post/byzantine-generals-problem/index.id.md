@@ -149,7 +149,7 @@ Dengan melalui proses ini, meskipun terdapat $m$ node yang gagal atau jahat di d
 
 ### Konsensus Nakamoto (Proof of Work)
 
-Pencipta Bitcoin, Satoshi Nakamoto, menangani masalah ini dengan pendekatan yang sama sekali baru. Itulah **Konsensus Nakamoto**, yang menggabungkan **Proof of Work** (PoW) dengan aturan yang menganggap chain terpanjang sebagai yang valid.
+Pencipta [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/), Satoshi Nakamoto, menangani masalah ini dengan pendekatan yang sama sekali baru. Itulah **Konsensus Nakamoto**, yang menggabungkan **Proof of Work** (PoW) dengan aturan yang menganggap chain terpanjang sebagai yang valid.
 
 Dalam Konsensus Nakamoto, hanya mereka yang memenangkan kompetisi perhitungan matematis (penambangan/mining) yang mendapatkan hak untuk mengusulkan blok. Untuk membuat jaringan mengakui informasi palsu, seseorang harus menguasai lebih dari mayoritas (51% atau lebih) dari kekuatan komputasi seluruh jaringan, yang mana ini adalah desain yang sangat sulit diwujudkan di dunia nyata. Dengan ini, dinilai bahwa ia telah menyelesaikan [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) secara probabilistik di dalam jaringan terbuka di mana jumlah peserta tidak ditentukan.
 

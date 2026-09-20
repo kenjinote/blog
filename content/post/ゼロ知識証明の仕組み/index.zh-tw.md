@@ -127,7 +127,7 @@ zk-SNARKs（特別是早期的Groth16等）最大的弱點在於，它需要生�
 
 ### 1. 多項式承諾與FRI協定
 
-zk-STARKs不依賴橢圓曲線密碼學，而是將安全性基礎 **僅建立在雜湊函數上** 。因此，它具備抗量子計算機密碼學（Post-Quantum Cryptography）的特性。
+zk-STARKs不依賴橢圓曲線密碼學，而是將安全性基礎 **僅建立在雜湊函數上** 。因此，它具備抗量子計算機密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）的特性。
 
 計算的驗證會在轉換為被稱為AIR（Algebraic Intermediate Representation）的格式後，利用一維或多維多項式的性質來進行。STARKs的核心在於 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity）** 協定。
 
@@ -209,7 +209,7 @@ ZKP無疑是次世代的基礎技術，但也仍有一些挑戰需要解決。
 
 ## 結語
 
-零知識證明（ZKP）已經從單純「提高加密貨幣匿名性的技術」，進化為「重新定義整個網際網路信任（Trust）的通用技術」。在數學公式與密碼理論深處計算出的小小證明，將無限擴展區塊鏈的擴展性，並成為堅固保護我們隱私的盾牌。
+零知識證明（ZKP）已經從單純「提高[加密貨幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)匿名性的技術」，進化為「重新定義整個網際網路信任（Trust）的通用技術」。在數學公式與密碼理論深處計算出的小小證明，將無限擴展區塊鏈的擴展性，並成為堅固保護我們隱私的盾牌。
 
 為了實現Web3的真正大規模採用（Mass Adoption），並建立安全且私密的次世代網際網路，零知識證明將持續扮演最重要的拼圖。ZKP技術未來的發展絕對不容錯過。
 

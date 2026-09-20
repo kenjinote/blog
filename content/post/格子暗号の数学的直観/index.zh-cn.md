@@ -15,7 +15,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 然而，彼得·秀尔（Peter Shor）在1994年提出的“Shor算法”在密码学界引起了轩然大波。该算法在数学上证明了，一旦大规模量子计算机问世，便能在多项式时间内解决整数分解问题和离散对数问题。这意味着目前被广泛使用的公钥密码在未来将变得完全可以被破解。
 
-为了应对这种“量子计算机的威胁（Quantum Threat）”，亟需研究即使使用量子计算机也难以破解的新型密码方案。这就是被称为“后量子密码（Post-Quantum Cryptography: PQC）”或“抗量子计算密码”的领域。
+为了应对这种“量子计算机的威胁（Quantum Threat）”，亟需研究即使使用量子计算机也难以破解的新型密码方案。这就是被称为“后量子密码（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: PQC）”或“抗量子计算密码”的领域。
 
 PQC有几种有力的候选方案。包括基于哈希的密码、基于编码的密码、多变量多项式密码、同源密码等，其中目前最受瞩目、也是NIST（美国国家标准与技术研究院）PQC标准化进程核心的便是“格密码（Lattice-based cryptography）”。与其他方案相比，格密码的加解密处理速度非常快，而且具有被称为“从最坏情况复杂度（Worst-case complexity）归约到平均情况复杂度（Average-case complexity）”的特性，在密码学理论中拥有极强的安全性证明。
 

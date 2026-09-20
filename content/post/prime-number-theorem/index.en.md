@@ -134,7 +134,7 @@ for i in range(len(x_values)):
 
 When you run this code, you can observe that as $x$ increases, the ratio $\pi(x) / (x/\ln(x))$ approaches 1. This is one of the strong pieces of evidence for the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/).
 
-## Applications to Modern Cryptography
+## Applications to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 The properties of prime numbers are not just interesting subjects in pure mathematics, but they are also important elements that support the security infrastructure of modern society.
 

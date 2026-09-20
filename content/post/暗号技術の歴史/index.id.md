@@ -12,7 +12,7 @@ description: 'Dari sandi Caesar kuno, mesin Enigma, kriptografi kunci publik, hi
 
 # 1. Pendahuluan: Apa itu Kriptografi?
 
-Kriptografi (Cryptography) adalah teknologi untuk menjaga kerahasiaan informasi, dan telah berevolusi bersamaan dengan sejarah umat manusia. Dari transmisi perintah rahasia dalam perang kuno hingga perlindungan informasi kartu kredit di internet modern, tujuan kriptografi tetap konsisten. Tujuannya adalah "memastikan bahwa hanya penerima yang dituju yang dapat memahami informasi tersebut, dan tidak dapat diuraikan oleh pihak ketiga".
+Kriptografi ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy) adalah teknologi untuk menjaga kerahasiaan informasi, dan telah berevolusi bersamaan dengan sejarah umat manusia. Dari transmisi perintah rahasia dalam perang kuno hingga perlindungan informasi kartu kredit di internet modern, tujuan kriptografi tetap konsisten. Tujuannya adalah "memastikan bahwa hanya penerima yang dituju yang dapat memahami informasi tersebut, dan tidak dapat diuraikan oleh pihak ketiga".
 
 Dalam keamanan informasi modern, kriptografi tidak hanya terbatas pada "kerahasiaan informasi (Kerahasiaan: Confidentiality)", tetapi juga memainkan peran penting dalam "Integritas (Integrity)", "Otentikasi (Authentication)", dan "Nirsangkal (Non-repudiation)" dari data.
 
@@ -140,7 +140,7 @@ graph TD
 Kriptografi kunci simetris memiliki kelemahan fatal: "Masalah Distribusi Kunci (Key Distribution Problem)". Masalahnya adalah bagaimana berbagi "kunci bersama" dengan aman dengan pihak yang berada jauh sebelum memulai komunikasi terenkripsi. "Kriptografi Kunci Publik" yang lahir pada tahun 1970-an memecahkan masalah ini.
 
 ## Pertukaran Kunci Diffie-Hellman
-Pada tahun 1976, Whitfield Diffie dan Martin Hellman menerbitkan makalah terobosan "Arah Baru dalam Kriptografi (New Directions in Cryptography)". Mereka mengusulkan metode untuk berbagi kunci dengan aman bahkan melalui saluran komunikasi yang disadap, menggunakan kesulitan matematis yang disebut "Masalah Logaritma Diskrit (Discrete Logarithm Problem)".
+Pada tahun 1976, Whitfield Diffie dan Martin Hellman menerbitkan makalah terobosan "Arah Baru dalam Kriptografi (New Directions in [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)". Mereka mengusulkan metode untuk berbagi kunci dengan aman bahkan melalui saluran komunikasi yang disadap, menggunakan kesulitan matematis yang disebut "Masalah Logaritma Diskrit (Discrete Logarithm Problem)".
 
 1. Publikasikan bilangan prima besar $p$ dan generator $g$.
 2. Alice memilih nilai rahasia $a$, menghitung $A = g^a \pmod{p}$, dan mengirimkannya ke Bob.
@@ -197,7 +197,7 @@ rsa_example()
 
 Meskipun kriptografi RSA kuat, dengan peningkatan kinerja komputer, menjadi perlu untuk memperpanjang kunci (saat ini 2048 atau 3072 bit) untuk menjaga keamanan, yang mengakibatkan masalah peningkatan biaya komputasi.
 
-Sebagai solusinya, "Kriptografi Kurva Eliptik (ECC: Elliptic Curve Cryptography)" diusulkan pada tahun 1985. Ini menggunakan penambahan titik pada kurva eliptik di atas medan berhingga (umumnya dalam bentuk $y^2 = x^3 + ax + b$).
+Sebagai solusinya, "Kriptografi Kurva Eliptik (ECC: Elliptic Curve [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)" diusulkan pada tahun 1985. Ini menggunakan penambahan titik pada kurva eliptik di atas medan berhingga (umumnya dalam bentuk $y^2 = x^3 + ax + b$).
 
 Masalah logaritma diskrit pada kurva eliptik (ECDLP) diketahui lebih sulit dipecahkan daripada masalah faktorisasi prima, sehingga **ECC dapat mencapai tingkat keamanan yang setara dengan RSA 3072-bit hanya dengan panjang kunci 256-bit**. Hal ini memungkinkan komunikasi terenkripsi yang cepat dan aman (seperti ECDSA dan ECDH) bahkan di lingkungan dengan sumber daya komputasi terbatas seperti smartphone dan perangkat IoT.
 
@@ -209,10 +209,10 @@ Teknologi kriptografi tampaknya sangat solid, tetapi algoritma Shor yang diterbi
 
 Komputer kuantum melakukan komputasi menggunakan sifat mekanika kuantum dari "superposisi" dan "keterikatan kuantum (quantum entanglement)". Telah terbukti secara matematis bahwa ketika algoritma Shor dieksekusi pada komputer kuantum dengan kinerja yang memadai, masalah faktorisasi prima dan masalah logaritma diskrit dapat diselesaikan dalam "waktu polinomial". Ini berarti bahwa pada hari ketika komputer kuantum yang praktis selesai (Q-Day), semua kriptografi kunci publik yang digunakan saat ini seperti RSA dan ECC akan hancur seketika.
 
-## Kemunculan PQC (Post-Quantum Cryptography)
+## Kemunculan PQC (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 Untuk mempersiapkan diri terhadap ancaman yang belum pernah terjadi sebelumnya ini, penelitian mengenai "Kriptografi Pasca-Kuantum (PQC)" dengan cepat dimajukan. PQC didasarkan pada masalah matematika baru yang sulit dipecahkan bahkan oleh komputer kuantum. NIST (Institut Nasional Standar dan Teknologi AS) telah memajukan proses standardisasi PQC selama bertahun-tahun, dan pendekatan matematika berikut ini sebagian besar dianggap paling menjanjikan:
 
-### 1. Kriptografi Berbasis Kisi (Lattice-based Cryptography)
+### 1. Kriptografi Berbasis Kisi (Lattice-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 Ini adalah pendekatan paling menjanjikan saat ini, dan telah diadopsi dalam algoritma standardisasi NIST (ML-KEM / Kyber, ML-DSA / Dilithium). Hal ini didasarkan pada kesulitan menemukan titik tertentu pada "kisi (Lattice)" dalam ruang multidimensi (seperti Shortest Vector Problem: SVP) dan kesulitan masalah LWE (Learning With Errors).
 
 Konsep masalah LWE memanfaatkan sifat bahwa jika "derau kecil (kesalahan)" secara sengaja ditambahkan ke sistem persamaan linear, maka secara tiba-tiba akan menjadi sangat sulit untuk menemukan solusinya.
@@ -238,10 +238,10 @@ b = (np.dot(A, s) + e) % q
 # Bahkan dengan menggunakan komputer kuantum, sangat sulit untuk memulihkan s dari A dan b
 ```
 
-### 2. Kriptografi Berbasis Hash (Hash-based Cryptography)
+### 2. Kriptografi Berbasis Hash (Hash-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 Ini adalah skema tanda tangan digital yang mendasarkan keamanannya semata-mata pada ketahanan bentrokan (collision resistance) dari fungsi hash. Ia kuat terhadap serangan kuantum karena tidak memiliki struktur matematis, tetapi cenderung menghasilkan ukuran tanda tangan yang besar (seperti SPHINCS+).
 
-### 3. Kriptografi Berbasis Kode (Code-based Cryptography)
+### 3. Kriptografi Berbasis Kode (Code-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 Ini adalah skema kriptografi berdasarkan teori kode koreksi kesalahan (error-correcting codes). Kriptografi McEliece yang diusulkan pada tahun 1978 terkenal dan memiliki sejarah panjang serta reputasi keamanan yang baik, tetapi memiliki kelemahan yaitu ukuran kunci publik yang sangat besar (terkadang mencapai beberapa megabyte).
 
 ```mermaid
@@ -263,7 +263,7 @@ Sejarah teknologi kriptografi adalah sejarah pertarungan tanpa akhir antara pene
 
 Sandi Caesar dikalahkan oleh analisis frekuensi, dan Enigma yang konon tak terkalahkan dihancurkan oleh otak jenius Turing dan kekuatan mesin. Dan kini, kriptografi kuat seperti RSA dan ECC yang mendukung fondasi masyarakat internet modern, dihadapkan pada ancaman dari "tombak" baru yang disebut komputer kuantum.
 
-Namun, umat manusia telah melihat masa depan dan sedang bersiap dengan "perisai" baru yang disebut Kriptografi Pasca-Kuantum (PQC). Saat ini, mempersiapkan transisi dari kriptografi kunci publik yang ada menuju PQC (memastikan Crypto Agility) adalah tugas mendesak di infrastruktur TI di seluruh dunia.
+Namun, umat manusia telah melihat masa depan dan sedang bersiap dengan "perisai" baru yang disebut Kriptografi Pasca-Kuantum (PQC). Saat ini, mempersiapkan transisi dari kriptografi kunci publik yang ada menuju PQC (memastikan [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Agility) adalah tugas mendesak di infrastruktur TI di seluruh dunia.
 
 Kriptografi bukan sekadar teka-teki matematika yang sulit, melainkan benteng pertahanan terkuat untuk melindungi privasi, properti, dan infrastruktur sosial kita.
 

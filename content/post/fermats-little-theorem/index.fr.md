@@ -92,7 +92,7 @@ flowchart TD
 
 Cependant, parce qu'il existe des nombres exceptionnels appelés **nombres de Carmichael**, qui sont des nombres composés mais satisfont à $a^{n-1} \equiv 1 \pmod n$, ce test seul ne peut pas prouver définitivement la primalité. Par conséquent, dans la pratique, des méthodes comme le test de primalité de Miller-Rabin sont utilisées.
 
-## Application à la cryptographie moderne : Cryptographie RSA
+## Application à la cryptographie moderne : [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie RSA
 
 L'application la plus importante du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) (et de sa généralisation, le **théorème d'Euler**) est la **cryptographie RSA**, qui sous-tend la sécurité d'Internet.
 

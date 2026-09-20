@@ -191,7 +191,7 @@ Sollten unbekannte Methoden der algebraischen Geometrie oder der nichtkommutativ
 ### Quantencomputer und Shors Algorithmus
 Eine direktere und realistischere Bedrohung für die Kryptographie ist nicht der Beweis der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung, sondern **Quantencomputer**. Der 1994 von Peter Shor veröffentlichte "Shor-Algorithmus" bewies, dass ein Quantencomputer mit ausreichender Leistung die Primfaktorzerlegung in Polynomzeit lösen kann. Dies würde die RSA-Kryptographie und die Elliptische-Kurven-Kryptographie grundlegend brechen.
 
-Derzeit wird weltweit der Übergang zur "Post-Quanten-Kryptographie (Post-Quantum Cryptography, PQC)" (wie gitterbasierte Kryptographie) vorangetrieben, die selbst von Quantencomputern nicht geknackt werden kann. Die von Primzahlen abhängige Kryptographie könnte in gewissem Sinne ihr goldenes Zeitalter beenden, aber der mathematische Wert der Primzahlen selbst wird niemals verloren gehen.
+Derzeit wird weltweit der Übergang zur "Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy, PQC)" (wie gitterbasierte Kryptographie) vorangetrieben, die selbst von Quantencomputern nicht geknackt werden kann. Die von Primzahlen abhängige Kryptographie könnte in gewissem Sinne ihr goldenes Zeitalter beenden, aber der mathematische Wert der Primzahlen selbst wird niemals verloren gehen.
 
 ---
 

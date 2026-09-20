@@ -12,7 +12,7 @@ description: '从古代的凯撒密码，到恩尼格玛、公钥密码，再到
 
 # 1. 引言：什么是密码技术？
 
-密码技术（Cryptography）是保持信息机密性的技术，伴随着人类历史不断演进。从古代战争中秘密指令的传递，到现代互联网中信用卡信息的保护，密码的目的始终如一，即“让预期的接收者能够理解信息，而让第三方无法解读”。
+密码技术（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）是保持信息机密性的技术，伴随着人类历史不断演进。从古代战争中秘密指令的传递，到现代互联网中信用卡信息的保护，密码的目的始终如一，即“让预期的接收者能够理解信息，而让第三方无法解读”。
 
 在现代信息安全中，密码技术不仅仅局限于“信息的隐藏（机密性：Confidentiality）”，还承担着保障数据“完整性（Integrity）”、“认证（Authentication）”和“不可否认性（Non-repudiation）”等重要作用。
 
@@ -197,7 +197,7 @@ rsa_example()
 
 RSA密码虽然强大，但随着计算机性能的提高，为了保持安全性，必须增加密钥长度（目前通常为2048或3072比特），这就导致了计算成本激增的问题。
 
-因此，1985年有人提出了“椭圆曲线密码（Elliptic Curve Cryptography: ECC）”。它利用了有限域上椭圆曲线（通常形式为 $y^2 = x^3 + ax + b$）上点的加法运算。
+因此，1985年有人提出了“椭圆曲线密码（Elliptic Curve [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: ECC）”。它利用了有限域上椭圆曲线（通常形式为 $y^2 = x^3 + ax + b$）上点的加法运算。
 
 众所周知，椭圆曲线上的离散对数问题（ECDLP）比素数分解问题更难求解。 **利用ECC，仅需256比特的密钥长度就能实现与3072比特RSA相当的安全性** 。这也使得在智能手机或物联网（IoT）设备等计算资源有限的环境下，仍能实现高速且安全的加密通信（如ECDSA或ECDH等）。
 
@@ -212,7 +212,7 @@ RSA密码虽然强大，但随着计算机性能的提高，为了保持安全�
 ## PQC（后量子密码/抗量子密码）的登场
 为了应对这一前所未有的威胁，基于量子计算机也难以破解的新数学难题的“抗量子密码（PQC）”研究正在紧锣密鼓地进行。NIST（美国国家标准技术研究所）多年来一直在推进PQC的标准化进程，目前主要有以下几种被寄予厚望的数学方法：
 
-### 1. 基于格的密码（Lattice-based Cryptography）
+### 1. 基于格的密码（Lattice-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 这是目前最有希望的方法，并已被NIST的标准化算法（ML-KEM / Kyber, ML-DSA / Dilithium）所采用。其基于在多维空间的“格（Lattice）”中寻找特定点的问题（如最短向量问题：SVP）以及LWE（Learning With Errors：容错学习）问题的困难性。
 
 LWE问题的概念是，在联立一次方程组中故意加入“微小的噪声（误差）”，利用这会立刻导致难以求解的性质。
@@ -238,10 +238,10 @@ b = (np.dot(A, s) + e) % q
 # 即使使用量子计算机，从 A 和 b 还原 s 也被认为极其困难
 ```
 
-### 2. 基于哈希的密码（Hash-based Cryptography）
+### 2. 基于哈希的密码（Hash-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 这是一种仅将安全性建立在哈希函数抗碰撞性之上的数字签名方案。由于不具备数学结构，因此能有效抵御量子攻击，但其签名尺寸通常偏大（如SPHINCS+等）。
 
-### 3. 基于编码的密码（Code-based Cryptography）
+### 3. 基于编码的密码（Code-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 这是基于纠错码理论的加密方法。例如1978年提出的McEliece密码就颇为著名，其历史悠久且安全性备受肯定，但也存在公钥体积过大（甚至可达数兆字节）的问题。
 
 ```mermaid
@@ -263,7 +263,7 @@ timeline
 
 凯撒密码败给了频率分析，曾号称无敌的恩尼格玛则败给了图灵的天才头脑与机器的力量。而如今，支撑现代互联网社会根基的RSA和ECC等强力密码，也面临着量子计算机这一全新“矛”的威胁。
 
-然而，人类已经着眼于更遥远的未来，正在准备抗量子密码（PQC）这一面崭新的“盾”。目前，对于全球的IT基础设施而言，从现有的公钥密码向PQC过渡的准备工作（确保密码敏捷性，Crypto Agility）已成为当务之急。
+然而，人类已经着眼于更遥远的未来，正在准备抗量子密码（PQC）这一面崭新的“盾”。目前，对于全球的IT基础设施而言，从现有的公钥密码向PQC过渡的准备工作（确保密码敏捷性，[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/) Agility）已成为当务之急。
 
 密码技术不仅仅是深奥晦涩的数学难题，它更是保护我们的隐私、财产乃至整个社会基础设施的最强防线。
 

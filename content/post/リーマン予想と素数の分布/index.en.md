@@ -15,7 +15,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 The closest anyone has come to the mystery of prime numbers is the **"[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis"** proposed by the German mathematician [Bernhard Riemann](https://kenji.blog/en/p/riemann/) in 1859. The [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is one of the most important and unsolved difficult problems in modern mathematics, and carries a $1 million prize as one of the Millennium Prize Problems designated by the Clay Mathematics Institute.
 
-At first glance, a difficult problem in pure mathematics regarding the distribution of prime numbers may seem unrelated to our daily lives. However, internet security, which supports the infrastructure of modern society, especially **modern cryptographic technologies such as RSA cryptography and Elliptic Curve Cryptography (ECC)**, relies deeply on the properties of gigantic prime numbers.
+At first glance, a difficult problem in pure mathematics regarding the distribution of prime numbers may seem unrelated to our daily lives. However, internet security, which supports the infrastructure of modern society, especially **modern cryptographic technologies such as RSA cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)**, relies deeply on the properties of gigantic prime numbers.
 
 In this article, we will embark on a mathematical journey from the distribution of prime numbers to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/), the [Riemann](https://kenji.blog/en/p/riemann/) Zeta function, and the core of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis. We will provide an extremely detailed and deep explanation of how it is connected to modern cryptography and what would happen to the world if the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis were proven.
 
@@ -120,13 +120,13 @@ In other words, **if the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis 
 
 ---
 
-# 6. The Inseparable Relationship Between Modern Cryptography and Prime Numbers
+# 6. The Inseparable Relationship Between Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and Prime Numbers
 
 So far, we have been in the realm of profound pure mathematics, but this property of prime numbers fundamentally supports modern digital society. A representative example of this is public-key cryptography, such as **RSA cryptography**.
 
 The security of all communications, such as credit card payments on the internet, password transmissions, and electronic signatures in blockchains, relies on "prime numbers."
 
-### How RSA Cryptography Works
+### How RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Works
 The security of RSA cryptography is based on the mathematical fact that "factorizing a composite number with a large number of digits is extremely difficult" (the integer factorization problem).
 
 1. **Key Generation**:
@@ -156,7 +156,7 @@ To break RSA cryptography, one must find (factorize) the original primes $p$ and
 
 ---
 
-# 7. The Impact of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis on Cryptography
+# 7. The Impact of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis on [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 So, how do the "[Riemann](https://kenji.blog/en/p/riemann/) Hypothesis," which sits at the pinnacle of pure mathematics, and "cryptography" intersect?
 
@@ -177,7 +177,7 @@ To strictly evaluate how frequently smooth numbers appear, a deep understanding 
 
 ---
 
-# 8. Will Cryptography be Broken if the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is Proven?
+# 8. Will [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy be Broken if the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is Proven?
 
 There is an urban legend that says, "If the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis is solved, RSA cryptography will instantly collapse," but **this is mathematically inaccurate**.
 
@@ -189,9 +189,9 @@ This is because, in the process of proving the [Riemann](https://kenji.blog/en/p
 If unknown algebraic geometry methods or non-commutative geometry methods are established that can completely manipulate the properties of the zeros of the [Riemann](https://kenji.blog/en/p/riemann/) Zeta function, it cannot be denied that this might ultimately lead to the discovery of a groundbreaking integer factorization algorithm (for example, a classical algorithm that reduces the computational complexity to polynomial time). In that sense, cryptographers can never take their eyes off the developments surrounding the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis.
 
 ### Quantum Computers and Shor's Algorithm
-A more direct and realistic threat to cryptography is not the proof of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis, but **quantum computers**. "Shor's Algorithm," published by Peter Shor in 1994, proved that integer factorization can be solved in polynomial time if a quantum computer with sufficient performance exists. Consequently, RSA cryptography and Elliptic Curve Cryptography will be fundamentally broken.
+A more direct and realistic threat to cryptography is not the proof of the [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis, but **quantum computers**. "Shor's Algorithm," published by Peter Shor in 1994, proved that integer factorization can be solved in polynomial time if a quantum computer with sufficient performance exists. Consequently, RSA cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy will be fundamentally broken.
 
-Currently, a transition to "Post-Quantum Cryptography (PQC)" (such as lattice-based cryptography), which cannot be decrypted even by quantum computers, is progressing worldwide. Cryptography relying on prime numbers may be coming to the end of its golden age in a sense, but the mathematical value of prime numbers themselves will never be lost.
+Currently, a transition to "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)" (such as lattice-based cryptography), which cannot be decrypted even by quantum computers, is progressing worldwide. [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy relying on prime numbers may be coming to the end of its golden age in a sense, but the mathematical value of prime numbers themselves will never be lost.
 
 ---
 

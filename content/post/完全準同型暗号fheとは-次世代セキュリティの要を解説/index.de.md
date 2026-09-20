@@ -77,7 +77,7 @@ FHE wurde lange Zeit als der "Heilige Gral der Kryptographie" bezeichnet und man
 
 ## 3. Mathematische Grundlagen von FHE: Das LWE-Problem und Ring-LWE
 
-Viele der heutigen Mainstream-FHE-Schemata basieren auf dem **LWE (Learning With Errors)-Problem**, einer mathematischen Herausforderung der "gitterbasierten Kryptographie" (Lattice-based Cryptography), die auch als Post-Quanten-Kryptographie (Post-Quantum Cryptography) bekannt ist.
+Viele der heutigen Mainstream-FHE-Schemata basieren auf dem **LWE (Learning With Errors)-Problem**, einer mathematischen Herausforderung der "gitterbasierten Kryptographie" (Lattice-based [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy), die auch als Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy) bekannt ist.
 
 ### Intuitives Verständnis des LWE-Problems
 Das Lösen von linearen Gleichungssystemen ist mit Methoden wie der Gaußschen Elimination einfach.

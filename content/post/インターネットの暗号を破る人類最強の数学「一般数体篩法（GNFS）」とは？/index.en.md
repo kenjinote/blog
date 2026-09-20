@@ -9,7 +9,7 @@ categories: ["math-cryptography-quantum"]
 description: 'Explains the mechanism of ''General Number Field Sieve (GNFS)'', humanity''s strongest mathematics for breaking the RSA encryption that protects internet communications. Omits jargon to reveal the tricks of this magical algorithm, understandable with just junior high school math.'
 ---
 
-# What is the "General Number Field Sieve (GNFS)", Humanity's Strongest Math that Breaks Internet Cryptography?
+# What is the "General Number Field Sieve (GNFS)", Humanity's Strongest Math that Breaks Internet [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy?
 
 The internet we use every day. LINE messages, YouTube, Amazon shopping—all communications are protected by "cryptography."
 Currently, the most widely used cryptography in the world is "RSA cryptography."
@@ -124,7 +124,7 @@ By splitting the problem into two worlds, the size of the numbers handled become
 
 Then, you sift and collect only the miracle pairs $(a, b)$ where **"Both in the real world and in the world of algebraic expressions, they are 'made only of small prime numbers (gold dust)'"**. This is the origin of the name "Number Field Sieve."
 
-### The Moment the Cryptography is Finally Broken
+### The Moment the [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy is Finally Broken
 Once tens of millions of "gold dust cards" are collected from both worlds, using the giant matrix calculations of supercomputers, you find the "combination where the number of prime numbers all become even", just as we did in Chapter 2.
 
 Once the combination is found,

@@ -77,7 +77,7 @@ FHE telah lama disebut sebagai "Cawan Suci dunia kriptografi", dan bahkan dikata
 
 ## 3. Fondasi Matematika FHE: Masalah LWE dan Ring-LWE
 
-Sebagian besar skema FHE utama saat ini didasarkan pada **Masalah LWE (Learning With Errors)**, yang merupakan masalah matematika sulit dalam "Lattice-based Cryptography (Kriptografi berbasis kisi)", yang juga dikenal sebagai kriptografi tahan kuantum (Post-Quantum Cryptography).
+Sebagian besar skema FHE utama saat ini didasarkan pada **Masalah LWE (Learning With Errors)**, yang merupakan masalah matematika sulit dalam "Lattice-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy (Kriptografi berbasis kisi)", yang juga dikenal sebagai kriptografi tahan kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy).
 
 ### Pemahaman Intuitif tentang Masalah LWE
 Menyelesaikan persamaan linear simultan adalah mudah jika Anda menggunakan metode seperti eliminasi Gauss.

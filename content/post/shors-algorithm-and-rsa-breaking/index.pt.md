@@ -166,7 +166,7 @@ Concluir que "estamos seguros porque ainda levará mais de 10 anos" é precipita
 
 A preocupação aqui é o método de ataque chamado **"Store Now, Decrypt Later" (Armazene Agora, Descriptografe Depois)**. Nações ou organizações mal-intencionadas interceptam todos os dados de comunicação atualmente criptografados usando RSA ou ECC (Criptografia de Curva Elíptica) e os guardam no armazenamento. E então, no momento em que um poderoso computador quântico for concluído em 10 ou 20 anos, eles usarão o algoritmo de Shor para descriptografar todos os dados do passado e expor os segredos.
 
-Para combater essa ameaça de tempo, liderado pelo NIST (Instituto Nacional de Padrões e Tecnologia dos EUA), o processo de padronização da **"Criptografia Pós-Quântica" (PQC: Post-Quantum Cryptography)** tem sido acelerado em ritmo acelerado.
+Para combater essa ameaça de tempo, liderado pelo NIST (Instituto Nacional de Padrões e Tecnologia dos EUA), o processo de padronização da **"Criptografia Pós-Quântica" (PQC: Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)** tem sido acelerado em ritmo acelerado.
 
 A PQC é um novo algoritmo de criptografia baseado em problemas matemáticos que são difíceis de descriptografar mesmo usando um computador quântico (ou seja, o algoritmo de Shor não pode ser aplicado). Como principais abordagens, temos:
 

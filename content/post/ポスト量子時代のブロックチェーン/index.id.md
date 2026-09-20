@@ -12,13 +12,13 @@ description: 'Kedatangan "Q-Day" ketika daya komputasi luar biasa dari komputer 
 
 ## 1. Pendahuluan: Langkah Era Pasca-Kuantum dan Krisis Blockchain
 
-Sejak Bitcoin diciptakan oleh Satoshi Nakamoto pada tahun 2009, teknologi blockchain telah berkembang menjadi fondasi sistem keuangan dan aplikasi di seluruh dunia sebagai "buku besar yang terdesentralisasi dan tidak dapat diubah". Keamanan yang kuat ini didukung oleh teknologi kriptografi modern yaitu **Kriptografi Kunci Publik (Public Key Cryptography)** dan **Fungsi Hash Kriptografi (Cryptographic Hash Functions)**.
+Sejak [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) diciptakan oleh Satoshi Nakamoto pada tahun 2009, teknologi blockchain telah berkembang menjadi fondasi sistem keuangan dan aplikasi di seluruh dunia sebagai "buku besar yang terdesentralisasi dan tidak dapat diubah". Keamanan yang kuat ini didukung oleh teknologi kriptografi modern yaitu **Kriptografi Kunci Publik (Public Key [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)** dan **Fungsi Hash Kriptografi ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)**.
 
 Teknologi kriptografi ini menjamin keamanan berdasarkan "kesulitan komputasi" matematis, di mana komputer klasik (PC dan superkomputer yang kita gunakan saat ini) tidak akan dapat memecahkannya bahkan jika menghabiskan waktu selama umur alam semesta.
 
 Namun, premis ini akan segera runtuh dari akarnya akibat perkembangan pesat dan komersialisasi **Komputer Kuantum (Quantum Computers)**, yang merupakan batas terdepan dari fisika dan ilmu informasi. Komputer kuantum, yang memanfaatkan "Superposisi (Superposition)" dan "Keterikatan Kuantum (Entanglement)" khusus untuk mekanika kuantum, menunjukkan daya komputasi yang mengalahkan komputer klasik konvensional dalam masalah matematika tertentu, yang disebut "Keunggulan Kuantum (Quantum Supremacy)".
 
-Dalam artikel ini, kami akan menjelaskan secara mendalam dari perspektif teknis dan matematis tentang ancaman spesifik apa yang dihadapi teknologi blockchain dari komputer kuantum, serta tren terbaru dalam **Kriptografi Pasca-Kuantum (PQC: Post-Quantum Cryptography)** yang akan menjadi solusinya, dan skenario transisi untuk jaringan aset kripto.
+Dalam artikel ini, kami akan menjelaskan secara mendalam dari perspektif teknis dan matematis tentang ancaman spesifik apa yang dihadapi teknologi blockchain dari komputer kuantum, serta tren terbaru dalam **Kriptografi Pasca-Kuantum (PQC: Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)** yang akan menjadi solusinya, dan skenario transisi untuk jaringan aset kripto.
 
 ---
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Dasar dan Kesulitan Komputasi Kriptografi Kurva Eliptik (ECDSA)
 
-Banyak blockchain, termasuk Bitcoin dan Ethereum, menggunakan **Algoritma Tanda Tangan Digital Kurva Eliptik (ECDSA: Elliptic Curve Digital Signature Algorithm)** sebagai algoritma tanda tangan digital. Secara khusus, Bitcoin menggunakan kurva eliptik dengan parameter `secp256k1`.
+Banyak blockchain, termasuk [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dan Ethereum, menggunakan **Algoritma Tanda Tangan Digital Kurva Eliptik (ECDSA: Elliptic Curve Digital Signature Algorithm)** sebagai algoritma tanda tangan digital. Secara khusus, [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) menggunakan kurva eliptik dengan parameter `secp256k1`.
 
 Keamanan kriptografi kurva eliptik bergantung pada kesulitan komputasi dari **Masalah Logaritma Diskrit Kurva Eliptik (ECDLP: Elliptic Curve Discrete Logarithm Problem)**.
 Kurva eliptik didefinisikan oleh persamaan dalam bentuk standar Weierstrass berikut.
@@ -51,7 +51,7 @@ $$
 y^2 \equiv x^3 + ax + b \pmod{p}
 $$
 
-Pada `secp256k1` Bitcoin, $a = 0, b = 7$, dan $p$ adalah bilangan prima yang sangat besar.
+Pada `secp256k1` [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/), $a = 0, b = 7$, dan $p$ adalah bilangan prima yang sangat besar.
 Misalkan titik dasar (base point) pada kurva ini adalah $G$, dan kunci privat adalah bilangan bulat raksasa 256-bit yang dipilih secara acak $k$. Pada saat ini, kunci publik $K$ diperoleh dengan menambahkan titik dasar sebanyak $k$ kali (perkalian skalar).
 
 $$
@@ -112,7 +112,7 @@ Jumlah gerbang kuantum yang diperlukan dalam seluruh proses ini adalah $\mathcal
 
 Ancaman lainnya adalah **Algoritma Grover**, yang diusulkan oleh Lov Grover pada tahun 1996. Ini berdampak besar pada fungsi hash (misalnya SHA-256).
 
-Dalam blockchain, fungsi hash digunakan untuk memastikan integritas data, menghasilkan alamat, dan sebagai dasar penambangan **PoW (Proof of Work)** pada Bitcoin. Perhitungan mundur dari fungsi hash (komputasi pracitra) dapat dianggap sebagai "masalah pencarian basis data tidak terstruktur" untuk menemukan nilai input $x$ sehingga $H(x) = y$ untuk nilai output tertentu $y$.
+Dalam blockchain, fungsi hash digunakan untuk memastikan integritas data, menghasilkan alamat, dan sebagai dasar penambangan **PoW (Proof of Work)** pada [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/). Perhitungan mundur dari fungsi hash (komputasi pracitra) dapat dianggap sebagai "masalah pencarian basis data tidak terstruktur" untuk menemukan nilai input $x$ sehingga $H(x) = y$ untuk nilai output tertentu $y$.
 
 Dalam komputer klasik, diperlukan rata-rata $\frac{N}{2}$ percobaan, dan paling banyak $N$ percobaan, untuk menemukan jawaban yang benar dari $N$ kemungkinan. Artinya, kompleksitas komputasi adalah $\mathcal{O}(N)$.
 Namun, algoritma Grover menggunakan teknologi kuantum yang disebut "Amplifikasi Amplitudo (Amplitude Amplification)". Dengan memperkuat amplitudo probabilitas status yang menjadi jawaban yang benar secara iteratif dari semua kemungkinan dalam status superposisi, waktu pencarian dipersingkat menjadi akar kuadrat.
@@ -132,16 +132,16 @@ Kesimpulannya, ancaman kuantum terhadap fungsi hash "ringan dan dapat diatasi", 
 
 ---
 
-## 3. Analisis Dampak Spesifik pada Aset Kripto Saat Ini (Bitcoin, Ethereum)
+## 3. Analisis Dampak Spesifik pada Aset Kripto Saat Ini ([Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/), Ethereum)
 
-Di dunia di mana komputer kuantum dapat memecahkan ECDSA, kerentanan spesifik apa yang akan dihadapi oleh jaringan aset kripto? Di sini, dengan menggunakan mekanisme Bitcoin sebagai contoh, kita akan melakukan analisis terperinci dari perspektif **"waktu pemaparan kunci publik"**.
+Di dunia di mana komputer kuantum dapat memecahkan ECDSA, kerentanan spesifik apa yang akan dihadapi oleh jaringan aset kripto? Di sini, dengan menggunakan mekanisme [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) sebagai contoh, kita akan melakukan analisis terperinci dari perspektif **"waktu pemaparan kunci publik"**.
 
 ### 3.1. Pembuatan Alamat dan Sifat "Tertutup" dari Kunci Publik
 
-Alamat Bitcoin (seperti P2PKH: Pay-to-Public-Key-Hash atau P2WPKH: Pay-to-Witness-Public-Key-Hash) tidak menggunakan kunci publik itu sendiri, melainkan hash dari kunci publik yang diproses beberapa kali.
+Alamat [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) (seperti P2PKH: Pay-to-Public-Key-Hash atau P2WPKH: Pay-to-Witness-Public-Key-Hash) tidak menggunakan kunci publik itu sendiri, melainkan hash dari kunci publik yang diproses beberapa kali.
 
 $$
-\text{Bitcoin Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
 $$
 
 Seperti disebutkan di atas, karena fungsi hash tahan terhadap serangan kuantum (Algoritma Grover), komputer kuantum tidak dapat menghitung mundur "kunci publik" asli dari "alamat" yang merupakan nilai hash.
@@ -182,7 +182,7 @@ Rangkaian aliran ini disebut **Serangan Front-running (Front-running Attack)**, 
 
 Masalah yang lebih serius adalah alamat yang pernah digunakan untuk mengirim dana sekali saja di masa lalu (misalnya jika digunakan kembali sebagai alamat kembalian) memiliki kunci publik yang telah dicatat secara permanen di blockchain. Alamat-alamat ini selalu berisiko kehilangan saldonya dengan kunci privat yang dihitung tanpa harus menunggu transaksi dikirim.
 
-Selain itu, hadiah penambangan awal Satoshi Nakamoto (lebih dari 1 juta BTC), format yang lazim dari tahun 2009 hingga 2010 yaitu **P2PK (Pay-to-Public-Key)**, mencatat kunci publik secara langsung ke dalam blockchain, bukan sebagai hash. Bitcoin dorman dalam jumlah besar ini akan menjadi target paling mudah bagi komputer kuantum, dan berpotensi memicu keruntuhan harga besar-besaran karena dicuri sekaligus dan di-dump di pasar.
+Selain itu, hadiah penambangan awal Satoshi Nakamoto (lebih dari 1 juta BTC), format yang lazim dari tahun 2009 hingga 2010 yaitu **P2PK (Pay-to-Public-Key)**, mencatat kunci publik secara langsung ke dalam blockchain, bukan sebagai hash. [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dorman dalam jumlah besar ini akan menjadi target paling mudah bagi komputer kuantum, dan berpotensi memicu keruntuhan harga besar-besaran karena dicuri sekaligus dan di-dump di pasar.
 
 ---
 
@@ -238,7 +238,7 @@ $$
 Proses ini sangat sederhana secara matematis, dan tidak mungkin untuk memalsukan tanda tangan kecuali jika komputer kuantum dapat menghitung mundur $H$. Namun, karena setengah dari kunci privat diekspos ke jaringan setelah ditandatangani, terdapat kendala kuat bahwa ini hanya dapat digunakan "satu kali (One-Time)", karena menandatangani pesan lain dengan pasangan kunci yang sama akan menggabungkan kunci privat yang terekspos dan memberikan ruang bagi penyerang untuk melakukan pemalsuan.
 Untuk membuatnya praktis, teknologi seperti **XMSS**, yang menggunakan Merkle Tree untuk mengelompokkan sejumlah besar kunci sekali pakai ke dalam satu kunci publik root, dan **SPHINCS+** yang stateless, telah dikembangkan, tetapi mereka memiliki kelemahan ukuran tanda tangan mencapai puluhan kilobyte.
 
-### 4.2. Kriptografi Berbasis Kisi (Lattice-Based Cryptography)
+### 4.2. Kriptografi Berbasis Kisi (Lattice-Based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 
 Saat ini, yang paling diharapkan sebagai arus utama PQC dan diadopsi sebagai standar utama NIST (FIPS 204: ML-DSA / sebelumnya CRYSTALS-Dilithium, Falcon, dll.) adalah **Kriptografi Kisi**.
 
@@ -264,14 +264,14 @@ Dalam algoritma yang sebenarnya digunakan di blockchain dan sejenisnya (seperti 
 
 ## 5. Tantangan Teknis Transisi PQC di Blockchain
 
-Fakta bahwa algoritma PQC (seperti Dilithium dan SPHINCS+) ada tidak berarti bahwa mereka dapat segera diterapkan ke Bitcoin atau Ethereum. Terdapat beberapa tantangan berat yang khusus untuk sistem terdesentralisasi.
+Fakta bahwa algoritma PQC (seperti Dilithium dan SPHINCS+) ada tidak berarti bahwa mereka dapat segera diterapkan ke [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) atau Ethereum. Terdapat beberapa tantangan berat yang khusus untuk sistem terdesentralisasi.
 
 ### 5.1. Peningkatan Ukuran Tanda Tangan dan Keruntuhan Skalabilitas
 
 Hambatan terbesar dalam mengadopsi PQC adalah peningkatan ukuran data yang signifikan.
 Sementara ukuran tanda tangan ECDSA saat ini sekitar 70 byte, ukuran tanda tangan untuk ML-DSA (Dilithium) kriptografi kisi adalah sekitar 2.420 byte hingga 4.595 byte (tergantung pada tingkat keamanan), dan ukuran kunci publik melebihi 1.300 byte. Untuk SPHINCS+ berbasis hash, ukuran tanda tangan mencapai puluhan ribu byte.
 
-Jika Bitcoin mengadopsi PQC sambil mempertahankan batas ukuran blok saat ini (berat sekitar 4MB termasuk SegWit), jumlah transaksi yang dapat ditampung dalam satu blok akan menurun drastis. Throughput jaringan (TPS: Transactions Per Second) akan turun secara tak terhindarkan, dan kemacetan transfer akan menjadi normal.
+Jika [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) mengadopsi PQC sambil mempertahankan batas ukuran blok saat ini (berat sekitar 4MB termasuk SegWit), jumlah transaksi yang dapat ditampung dalam satu blok akan menurun drastis. Throughput jaringan (TPS: Transactions Per Second) akan turun secara tak terhindarkan, dan kemacetan transfer akan menjadi normal.
 Untuk mengatasi ini, batas ukuran blok perlu ditingkatkan secara signifikan, namun ini akan meningkatkan persyaratan penyimpanan dan bandwidth jaringan node penuh, membuat operasi node oleh individu menjadi sulit, yang pada akhirnya mengarah pada dilema **sentralisasi jaringan**.
 
 ```mermaid
@@ -293,7 +293,7 @@ Untuk menghindari ini, diperlukan untuk mengintegrasikan kontrak pra-kompilasi b
 
 ### 5.3. Kesulitan Membangun Konsensus melalui Hard Fork
 
-Untuk mengubah algoritma tanda tangan yang mendasarinya, **Hard Fork**, yang memperbarui protokol di seluruh jaringan, sangat penting. Namun, dalam komunitas seperti Bitcoin yang berfokus pada "tidak mengubah aturan dan tetap terdesentralisasi", proses membangun konsensus sangat sulit dari sudut pandang politik. Mulai dari mengajukan BIP (Bitcoin Improvement Proposal) mengenai transisi PQC hingga diimplementasikan, kemungkinan akan memakan waktu perdebatan dan pengujian bertahun-tahun.
+Untuk mengubah algoritma tanda tangan yang mendasarinya, **Hard Fork**, yang memperbarui protokol di seluruh jaringan, sangat penting. Namun, dalam komunitas seperti [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) yang berfokus pada "tidak mengubah aturan dan tetap terdesentralisasi", proses membangun konsensus sangat sulit dari sudut pandang politik. Mulai dari mengajukan BIP ([Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Improvement Proposal) mengenai transisi PQC hingga diimplementasikan, kemungkinan akan memakan waktu perdebatan dan pengujian bertahun-tahun.
 
 ---
 
@@ -314,7 +314,7 @@ Daripada menulis data tanda tangan PQC berukuran sangat besar langsung ke Layer 
 Perlu dicatat, karena beberapa konfigurasi SNARKs (seperti Groth16) rentan secara kuantum, penerapan **ZK-STARKs** yang hanya bergantung pada fungsi hash tahan kuantum akan menjadi kunci.
 
 ### Fase 3: Hard Fork Tingkat Protokol (Sekitar 2030)
-Setelah standardisasi NIST untuk PQC sepenuhnya mapan, dan standar industri dirilis dan diuji secara memadai, diharapkan bahwa blockchain utama seperti Bitcoin dan Ethereum akan melakukan hard fork yang sepenuhnya mentransisikan metode tanda tangan default ke PQC. Selama masa transisi ini, akan ada pengumuman besar-besaran kepada pengguna yang mendesak mereka untuk "memindahkan dana dari dompet lama ke dompet baru yang mendukung PQC".
+Setelah standardisasi NIST untuk PQC sepenuhnya mapan, dan standar industri dirilis dan diuji secara memadai, diharapkan bahwa blockchain utama seperti [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dan Ethereum akan melakukan hard fork yang sepenuhnya mentransisikan metode tanda tangan default ke PQC. Selama masa transisi ini, akan ada pengumuman besar-besaran kepada pengguna yang mendesak mereka untuk "memindahkan dana dari dompet lama ke dompet baru yang mendukung PQC".
 
 ### Studi Kasus Proyek Perintis
 
@@ -335,14 +335,14 @@ Namun, dunia teknologi dan komunitas blockchain tidak hanya duduk diam menunggu 
 Tidak perlu bagi kita pengguna dan investor aset kripto pada umumnya untuk panik saat ini dan menjual seluruh dana. Akan tetapi, sangat penting untuk memiliki literasi mendasar dan kesadaran pertahanan diri sebagai berikut.
 
 * **Hindari menggunakan ulang alamat**: Untuk menegakkan keamanan, bukan hanya privasi, disarankan untuk tidak menyimpan dana dalam jangka waktu lama di "alamat yang telah digunakan (alamat yang pernah digunakan untuk mengirim dana sekali saja, sehingga kunci publiknya terpapar di blockchain)".
-* **Mengamati tren teknologi**: Terus awasi diskusi tentang transisi PQC di jaringan utama seperti BIP Bitcoin atau EIP Ethereum, serta berita mengenai hard fork, agar Anda dapat melakukan operasi migrasi dompet pada waktu yang diperlukan dengan benar.
+* **Mengamati tren teknologi**: Terus awasi diskusi tentang transisi PQC di jaringan utama seperti BIP [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) atau EIP Ethereum, serta berita mengenai hard fork, agar Anda dapat melakukan operasi migrasi dompet pada waktu yang diperlukan dengan benar.
 
 Sejarah blockchain adalah sejarah berkelanjutan antara ketahanan (resiliensi) dan pembaruan sistem dalam menghadapi ancaman teknis baru. Sama seperti mereka yang mengatasi masalah skalabilitas dan isu lingkungan (seperti transisi dari PoW ke PoS), seluruh ekosistem kemungkinan besar akan mencari solusi dan beradaptasi terhadap ancaman kuantum yang belum pernah terjadi ini.
 Kita dapat berharap pada masa depan di mana komputer kuantum sebagai kearifan baru umat manusia dan teknologi tepercaya berupa buku besar terdesentralisasi, bukan bertabrakan dan hancur, namun menyatu menjadi sistem kuat di dimensi yang lebih tinggi.
 
 ---
 *Referensi & Tautan Terkait:*
-* National Institute of Standards and Technology (NIST) - Post-Quantum Cryptography Standardization Project
+* National Institute of Standards and Technology (NIST) - Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy Standardization Project
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.

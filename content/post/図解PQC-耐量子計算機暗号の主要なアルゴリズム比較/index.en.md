@@ -10,11 +10,11 @@ tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'A comprehensive guide on the threat of cryptography compromise due to the rise of quantum computers and the NIST standard Post-Quantum Cryptography (PQC) algorithms such as Kyber, Dilithium, FALCON, and SPHINCS+ that counter it, from the mathematical foundation of lattice-based cryptography (LWE problem) to detailed mechanisms and performance comparisons.'
 ---
 
-## 1. Introduction: The "Cryptography Crisis" Brought by Quantum Computers
+## 1. Introduction: The "[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Crisis" Brought by Quantum Computers
 
-In modern internet society, public-key cryptography is indispensable infrastructure for protecting the confidentiality of communications and data integrity. The widely used RSA cryptography and Elliptic Curve Cryptography (ECC) rely on the mathematical barriers of "the difficulty of factoring large composite numbers" and "the difficulty of the discrete logarithm problem on elliptic curves," respectively. It has been proven that classical computers (including the supercomputers we use today) would take longer than the age of the universe to solve these mathematical problems, which has been the basis of their security.
+In modern internet society, public-key cryptography is indispensable infrastructure for protecting the confidentiality of communications and data integrity. The widely used RSA cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) rely on the mathematical barriers of "the difficulty of factoring large composite numbers" and "the difficulty of the discrete logarithm problem on elliptic curves," respectively. It has been proven that classical computers (including the supercomputers we use today) would take longer than the age of the universe to solve these mathematical problems, which has been the basis of their security.
 
-However, this solid premise is about to be completely overturned by the theory and practical advancement of **quantum computers**. The "**Shor's Algorithm**", published by cryptographer Peter Shor in 1994, theoretically proved that the integer factorization problem and the discrete logarithm problem can be solved in "polynomial time" by running it on a sufficiently capable Cryptographically Relevant Quantum Computer (CRQC). This means that all public-key cryptography currently in use will be rendered powerless.
+However, this solid premise is about to be completely overturned by the theory and practical advancement of **quantum computers**. The "**Shor's Algorithm**", published by cryptographer Peter Shor in 1994, theoretically proved that the integer factorization problem and the discrete logarithm problem can be solved in "polynomial time" by running it on a sufficiently capable [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer (CRQC). This means that all public-key cryptography currently in use will be rendered powerless.
 
 ```mermaid
 graph TD
@@ -30,7 +30,7 @@ It is extremely dangerous to think that "there is no problem because the full-sc
 
 Furthermore, for symmetric-key cryptography (such as AES) and hash functions (such as SHA-256), there is **Grover's Algorithm**, discovered in 1996. This reduces the computational complexity of a brute-force attack to its square root. In other words, the security level of AES-128 is effectively halved to $2^{64}$, so it is recommended to use longer keys and hash lengths, such as AES-256 and SHA-384, in the quantum era.
 
-To counter this unprecedented cryptography crisis, **Post-Quantum Cryptography (PQC)** was born, which is based on new mathematical problems that are difficult to decrypt even with a quantum computer. This article provides an extremely detailed explanation of the major PQC algorithms, from their mathematical background to their mechanisms and architectural comparisons, based on the results of the PQC standardization process led by the National Institute of Standards and Technology (NIST) in the United States.
+To counter this unprecedented cryptography crisis, **Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)** was born, which is based on new mathematical problems that are difficult to decrypt even with a quantum computer. This article provides an extremely detailed explanation of the major PQC algorithms, from their mathematical background to their mechanisms and architectural comparisons, based on the results of the PQC standardization process led by the National Institute of Standards and Technology (NIST) in the United States.
 
 ---
 
@@ -39,7 +39,7 @@ To counter this unprecedented cryptography crisis, **Post-Quantum Cryptography (
 Transitioning cryptographic technologies takes years to decades, including redesigning protocols, updating systems, and replacing hardware. Therefore, cryptographers around the world have been advancing PQC research since early on. The US NIST (National Institute of Standards and Technology) has played a central role in this. In 2016, NIST announced a public call for the PQC standardization process and accepted entirely new cryptographic algorithm proposals from the global cryptographic community.
 
 The targets for standardization were the following two main categories:
-1. **Public-Key Cryptography / Key Encapsulation Mechanism (KEM)**: A mechanism for securely sharing (distributing) a shared key to encrypt the communication path, such as in TLS connections.
+1. **Public-Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy / Key Encapsulation Mechanism (KEM)**: A mechanism for securely sharing (distributing) a shared key to encrypt the communication path, such as in TLS connections.
 2. **Digital Signatures**: A mechanism to prove that data has not been tampered with and that there is no spoofing of the sender (authenticity) in software updates and electronic certificates.
 
 After a fierce competition of evaluation, analysis, and cryptanalysis spanning about 6 years (Round 1 to Round 3), further evaluation for Round 4 was conducted for some algorithms. As a result, the following algorithms were officially published as Federal Information Processing Standards (FIPS) in 2024 and established as the future global standards:
@@ -49,7 +49,7 @@ After a fierce competition of evaluation, analysis, and cryptanalysis spanning a
 - **FIPS 205 (SLH-DSA)**: Stateless hash-based signature based on SPHINCS+
 - **(Scheduled for future formulation) FN-DSA**: Digital signature based on FALCON
 
-These selected algorithms rely on different mathematical "hardness problems," ensuring diversity (Crypto Agility) so that even if a fatal vulnerability is discovered in one algorithm in the future, the entire system will not collapse. In the standardization process, lattice-based cryptography became the main player mainly due to its performance, but hash-based cryptography and code-based cryptography were adopted as powerful backups.
+These selected algorithms rely on different mathematical "hardness problems," ensuring diversity ([Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Agility) so that even if a fatal vulnerability is discovered in one algorithm in the future, the entire system will not collapse. In the standardization process, lattice-based cryptography became the main player mainly due to its performance, but hash-based cryptography and code-based cryptography were adopted as powerful backups.
 
 ---
 
@@ -57,20 +57,20 @@ These selected algorithms rely on different mathematical "hardness problems," en
 
 PQC algorithms are broadly divided into the following five categories based on the mathematical problems that form the basis of their security. This article delves deeply into the top three in particular.
 
-1. **Lattice-based Cryptography**:
+1. **Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**:
    Based on the Shortest Vector Problem (SVP) and Closest Vector Problem (CVP) in multidimensional lattice spaces, and the derived LWE problem. It is the center of NIST standardization, and Kyber, Dilithium, and FALCON fall into this category. It has the best balance of processing speed, public key size, and ciphertext size, making it suitable for general-purpose use.
-2. **Hash-based Cryptography**:
+2. **Hash-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**:
    Relies solely on the "collision resistance" and "one-wayness" of cryptographic hash functions (such as SHA-2 and SHAKE) for its security basis. It is only applicable to digital signatures (such as SPHINCS+), but its security proof is the strongest, and it features extremely high resistance to unknown mathematical attacks.
-3. **Code-based Cryptography**:
+3. **Code-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**:
    Based on the theory of error-correcting codes, it relies on the difficulty of the Syndrome Decoding Problem. Classic McEliece, proposed in the 1970s, is a representative example, having a very long history and proven security, but on the other hand, the public key size is extremely large, in the megabyte range.
-4. **Multivariate Polynomial Cryptography**:
+4. **Multivariate Polynomial [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**:
    Based on the difficulty of finding a solution to a system of multivariate quadratic equations over a finite field (MQ problem). It was mainly proposed as digital signatures (such as Rainbow), but during the final round of NIST, a powerful attack method that could crack it in a few days on a single PC was discovered, and many algorithms dropped out of the standardization.
-5. **Isogeny-based Cryptography**:
+5. **Isogeny-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**:
    Based on the path-finding problem on an isogeny graph of elliptic curves. The key size is very small, and it was expected to be a legitimate successor to ECC, but "SIKE," the final candidate, was completely broken in just a few hours on a normal PC in 2022 using classical mathematics (such as the Castryck-Decru attack), marking a dramatic end that symbolized the difficulty and terror of PQC design.
 
 ---
 
-## 4. The Abyss of Lattice Cryptography: Mathematical Foundation of the LWE Problem and Module-LWE
+## 4. The Abyss of Lattice [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: Mathematical Foundation of the LWE Problem and Module-LWE
 
 **Lattice-based cryptography** is currently considered the most promising and has become the center of standardization. At the root of its security is the **LWE (Learning with Errors) problem**. Proposed by Oded Regev in 2005, this groundbreaking achievement earned him the Gödel Prize. One cannot talk about modern PQC without understanding the LWE problem.
 
@@ -251,7 +251,7 @@ The sole and greatest weakness of SPHINCS+ is that its **signature size is extre
 
 ---
 
-## 9. Code-Based Cryptography: The Good Old Giant, Classic McEliece
+## 9. Code-Based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: The Good Old Giant, Classic McEliece
 
 In the NIST standardization process, an important approach still being evaluated as a final candidate for Round 4 is **Classic McEliece** of **code-based cryptography**.
 
@@ -288,15 +288,15 @@ In the world of PQC, there is no single magical algorithm that has "small size, 
 
 ---
 
-## 11. Challenges Toward Practical Application and the Practical Solution of "Hybrid Cryptography"
+## 11. Challenges Toward Practical Application and the Practical Solution of "Hybrid [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy"
 
 With the completion of standardization by NIST and the official issuance of FIPS standards, the PQC migration of IT infrastructure worldwide has begun in earnest. Google's Chrome browser, Apple's iMessage (PQ3 protocol), and network providers like Cloudflare have already implemented PQC support in their protocols and started actual operations.
 
 However, completely switching to new cryptographic algorithms all at once comes with a very high risk. If a brilliant mathematician were to discover a fatal attack method (a mathematical flaw solvable even by classical computers) against lattice cryptography like Kyber a few years from now, entire systems relying on it would instantly become completely defenseless.
 
-A practical and recommended approach to mitigate this uncertainty risk is "**Hybrid Cryptography**".
+A practical and recommended approach to mitigate this uncertainty risk is "**Hybrid [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**".
 
-In hybrid cryptography, key exchange is performed using both a classical cryptographic algorithm with a long track record (e.g., Elliptic Curve Cryptography like X25519) and a new PQC algorithm (e.g., Kyber768) simultaneously. Shared key components are generated individually with each algorithm, and finally, a secure Key Derivation Function (KDF) is used to mix the two components to generate the final master secret.
+In hybrid cryptography, key exchange is performed using both a classical cryptographic algorithm with a long track record (e.g., Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy like X25519) and a new PQC algorithm (e.g., Kyber768) simultaneously. Shared key components are generated individually with each algorithm, and finally, a secure Key Derivation Function (KDF) is used to mix the two components to generate the final master secret.
 
 ```mermaid
 graph TD
@@ -310,13 +310,13 @@ graph TD
 
 This achieves a robust two-tiered security: "even if a quantum computer becomes a reality and ECC is broken, Kyber protects the communication," and conversely, "even if an unknown mathematical flaw is found in Kyber, ECC protects the communication." A representative example is the **X25519MLKEM768 (formerly X25519Kyber768)** draft being standardized by the IETF, and communications between current web browsers and cutting-edge servers are already being carried out precisely using this hybrid method.
 
-Furthermore, the concept of **Crypto Agility**, building a system architecture that "does not overly rely on a specific cryptographic algorithm and can quickly switch to another algorithm (e.g., from Kyber to McEliece, or Dilithium to SPHINCS+) in the event an algorithm fails," will be an essential requirement in future system development.
+Furthermore, the concept of **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Agility**, building a system architecture that "does not overly rely on a specific cryptographic algorithm and can quickly switch to another algorithm (e.g., from Kyber to McEliece, or Dilithium to SPHINCS+) in the event an algorithm fails," will be an essential requirement in future system development.
 
 ---
 
-## 12. Conclusion: A New Horizon for Cryptographic Technology
+## 12. Conclusion: A New Horizon for [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Technology
 
-Ironically, quantum computers, the dream technology of humanity, have become the greatest threat to breaking the mathematical defenses of "integer factorization" and "discrete logarithm problems" that we have trusted for many years. However, cryptographers around the world did not succumb to this; they pioneered more complex and profound multi-dimensional mathematical fields such as lattice theory, hash function trees, and error-correcting codes, and built a new defense called Post-Quantum Cryptography (PQC).
+Ironically, quantum computers, the dream technology of humanity, have become the greatest threat to breaking the mathematical defenses of "integer factorization" and "discrete logarithm problems" that we have trusted for many years. However, cryptographers around the world did not succumb to this; they pioneered more complex and profound multi-dimensional mathematical fields such as lattice theory, hash function trees, and error-correcting codes, and built a new defense called Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC).
 
 The completion of standardizations by NIST for FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA) is not the goal. It is just the first step in the grand journey of PQC migration that will continue for decades to come. For software engineers and system architects, how to optimally adapt the "increased key sizes" and "changed computational costs" brought by these new algorithms into network protocols and systems will be a major technical challenge moving forward.
 
@@ -324,7 +324,7 @@ The battle between quantum computers and cryptography is an exciting area where 
 
 ---
 *References:*
-* *NIST Post-Quantum Cryptography Standardization Program*
+* *NIST Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*

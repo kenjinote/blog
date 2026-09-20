@@ -337,7 +337,7 @@ Se estima que para romper la criptografía RSA de 2048 bits se requieren miles d
 
 # 7. Transición hacia la Criptografía Post-Cuántica (PQC)
 
-En preparación para la llegada de ese "Día Q (Q-Day)" (el día en que las computadoras cuánticas rompan la criptografía), los criptógrafos de todo el mundo, liderados por el Instituto Nacional de Estándares y Tecnología de EE. UU. (NIST), están avanzando en el desarrollo de la **Criptografía Post-Cuántica (Post-Quantum Cryptography, PQC)**.
+En preparación para la llegada de ese "Día Q (Q-Day)" (el día en que las computadoras cuánticas rompan la criptografía), los criptógrafos de todo el mundo, liderados por el Instituto Nacional de Estándares y Tecnología de EE. UU. (NIST), están avanzando en el desarrollo de la **Criptografía Post-Cuántica (Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy, PQC)**.
 
 La PQC se basa en nuevos problemas matemáticos (problemas basados en retículos, polinomios multivariantes, funciones hash, etc.) que se consideran matemáticamente difíciles de resolver de manera eficiente incluso utilizando el algoritmo de Shor (o el algoritmo de Grover). Algoritmos como "CRYSTALS-Kyber" y "CRYSTALS-Dilithium" ya han sido seleccionados como estándares y su implementación en protocolos de comunicación para navegadores web e iMessage de Apple está comenzando gradualmente.
 

@@ -11,7 +11,7 @@ tags: ["ECC", "Kriptografi", "C++", "Matematika"]
 
 # Dasar Matematika Kriptografi Kurva Eliptik (ECC) dan Implementasinya dalam C++
 
-Dalam teknologi kriptografi modern, **Kriptografi Kurva Eliptik (Elliptic Curve Cryptography: ECC)** memainkan peran yang sangat penting. Dari komunikasi internet harian kita (HTTPS/TLS), secure enclave di smartphone, autentikasi server melalui SSH, autentikasi tanpa kata sandi seperti FIDO, hingga aset kripto seperti Bitcoin dan Ethereum, tidak berlebihan untuk mengatakan bahwa fondasi kepercayaan masyarakat digital saat ini didukung oleh ECC.
+Dalam teknologi kriptografi modern, **Kriptografi Kurva Eliptik (Elliptic Curve [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy: ECC)** memainkan peran yang sangat penting. Dari komunikasi internet harian kita (HTTPS/TLS), secure enclave di smartphone, autentikasi server melalui SSH, autentikasi tanpa kata sandi seperti FIDO, hingga aset kripto seperti [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dan Ethereum, tidak berlebihan untuk mengatakan bahwa fondasi kepercayaan masyarakat digital saat ini didukung oleh ECC.
 
 Dalam artikel ini, kami akan menjelaskan secara menyeluruh dengan detail yang luar biasa tentang bagaimana kriptografi kurva eliptik ini berfungsi, mulai dari teori matematika yang indah namun rumit di baliknya (geometri aljabar di atas lapangan berhingga), metode implementasi aktual menggunakan C++, hingga teknik pengkodean yang aman untuk mencegah serangan saluran samping (serangan waktu).
 
@@ -444,7 +444,7 @@ Dalam artikel ini, kami menjelaskan poin-poin penting berikut:
 
 Membuat perpustakaan kriptografi Anda sendiri yang sebenarnya berjalan di lingkungan produksi sangat tidak disarankan ("Don't roll your own crypto") karena risiko keamanannya sangat tinggi. Namun, pemahaman mendalam tentang algoritma dan latar belakang matematika yang beroperasi di dalamnya harus menjadi senjata yang sangat berharga bagi insinyur yang merancang dan mengoperasikan sistem yang lebih aman dan berkinerja tinggi.
 
-Pada artikel berikutnya, kami ingin menggali lebih dalam tentang mekanisme **ECDSA (Elliptic Curve Digital Signature Algorithm)**, yaitu algoritma tanda tangan digital menggunakan kurva eliptik ini, serta **Tanda Tangan Schnorr** yang diadopsi pada Bitcoin.
+Pada artikel berikutnya, kami ingin menggali lebih dalam tentang mekanisme **ECDSA (Elliptic Curve Digital Signature Algorithm)**, yaitu algoritma tanda tangan digital menggunakan kurva eliptik ini, serta **Tanda Tangan Schnorr** yang diadopsi pada [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/).
 
 
 

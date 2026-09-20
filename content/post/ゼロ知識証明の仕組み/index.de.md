@@ -127,7 +127,7 @@ Die von Eli Ben-Sasson und anderen entwickelten STARKs benötigen, wie der Name 
 
 ### 1. Polynom-Commitment und das FRI-Protokoll
 
-zk-STARKs basieren nicht auf elliptischer Kurven-Kryptographie, sondern stützen ihre Sicherheit **ausschließlich auf Hashfunktionen**. Daher besitzen sie die Eigenschaften von Post-Quanten-Kryptographie (Post-Quantum Cryptography).
+zk-STARKs basieren nicht auf elliptischer Kurven-Kryptographie, sondern stützen ihre Sicherheit **ausschließlich auf Hashfunktionen**. Daher besitzen sie die Eigenschaften von Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy).
 
 Die Überprüfung der Berechnung erfolgt unter Ausnutzung der Eigenschaften von ein- oder mehrdimensionalen Polynomen, nachdem sie in ein Format namens AIR (Algebraic Intermediate Representation) konvertiert wurde. Der Kern von STARKs liegt im **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**-Protokoll.
 
@@ -209,7 +209,7 @@ ZKP ist zweifellos eine Basistechnologie der nächsten Generation, es bleiben je
 
 ## Fazit
 
-Zero-Knowledge-Proofs (ZKP) haben sich von einer reinen "Technologie zur Erhöhung der Anonymität von Kryptowährungen" zu einer "universellen Technologie, die das Vertrauen (Trust) im gesamten Internet neu definiert" entwickelt. Kleine Beweise, die tief in mathematischen Formeln und der Kryptographie berechnet werden, erweitern die Skalierbarkeit der Blockchain grenzenlos und dienen als robuster Schild zum Schutz unserer Privatsphäre.
+Zero-Knowledge-Proofs (ZKP) haben sich von einer reinen "Technologie zur Erhöhung der Anonymität von [Kryptowährung](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)en" zu einer "universellen Technologie, die das Vertrauen (Trust) im gesamten Internet neu definiert" entwickelt. Kleine Beweise, die tief in mathematischen Formeln und der Kryptographie berechnet werden, erweitern die Skalierbarkeit der Blockchain grenzenlos und dienen als robuster Schild zum Schutz unserer Privatsphäre.
 
 Auf dem Weg zu einer echten Massenadaption von Web3 und dem Aufbau eines sicheren und privaten Internets der nächsten Generation wird das Zero-Knowledge-Proof weiterhin als wichtigstes Puzzleteil fungieren. Die zukünftige Entwicklung der ZKP-Technologie sollte man unbedingt im Auge behalten.
 

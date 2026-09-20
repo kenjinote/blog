@@ -14,7 +14,7 @@ description: 'Uma explicação detalhada sobre a ameaça de comprometimento da c
 
 Na sociedade da internet moderna, a tecnologia de criptografia de chave pública é infraestrutura indispensável para proteger a confidencialidade das comunicações e a integridade dos dados. A criptografia RSA e a criptografia de curva elíptica (ECC), amplamente utilizadas hoje, dependem de barreiras matemáticas, respectivamente a "dificuldade de fatoração de números compostos gigantescos" e a "dificuldade do problema do logaritmo discreto em curvas elípticas", para garantir a segurança. Em computadores clássicos (os computadores que usamos hoje, incluindo supercomputadores), está provado que resolver esses problemas matemáticos levaria mais tempo do que a idade do universo, o que tem sido a base de sua segurança.
 
-No entanto, essa premissa robusta está prestes a ser fundamentalmente derrubada pelo progresso na teoria e aplicação prática dos **computadores quânticos**. O "**Algoritmo de Shor**", publicado em 1994 pelo criptógrafo Peter Shor, provou teoricamente que problemas de fatoração de primos e logaritmos discretos podem ser resolvidos em "tempo polinomial" executando-os em um computador quântico universal tolerante a falhas (CRQC: Cryptographically Relevant Quantum Computer) com desempenho suficiente. Isso significa que toda a criptografia de chave pública atualmente em uso será neutralizada.
+No entanto, essa premissa robusta está prestes a ser fundamentalmente derrubada pelo progresso na teoria e aplicação prática dos **computadores quânticos**. O "**Algoritmo de Shor**", publicado em 1994 pelo criptógrafo Peter Shor, provou teoricamente que problemas de fatoração de primos e logaritmos discretos podem ser resolvidos em "tempo polinomial" executando-os em um computador quântico universal tolerante a falhas (CRQC: [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer) com desempenho suficiente. Isso significa que toda a criptografia de chave pública atualmente em uso será neutralizada.
 
 ```mermaid
 graph TD
@@ -49,7 +49,7 @@ Após quase 6 anos de feroz avaliação, análise e competição criptoanalític
 - **FIPS 205 (SLH-DSA)**: Assinatura baseada em hash sem estado baseada em SPHINCS+
 - **(Planejado para formulação futura) FN-DSA**: Assinatura digital baseada em FALCON
 
-Cada um desses algoritmos selecionados se baseia em diferentes "problemas de dificuldade" matemáticos, garantindo diversidade (Crypto Agility) de modo que, mesmo se uma vulnerabilidade fatal for descoberta em um algoritmo no futuro, o sistema inteiro não entrará em colapso. No processo de padronização, a criptografia baseada em reticulados (Lattice-based cryptography) assumiu o papel principal principalmente do ponto de vista do desempenho, mas a criptografia baseada em hash e a criptografia baseada em código foram adotadas como backups fortes.
+Cada um desses algoritmos selecionados se baseia em diferentes "problemas de dificuldade" matemáticos, garantindo diversidade ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) Agility) de modo que, mesmo se uma vulnerabilidade fatal for descoberta em um algoritmo no futuro, o sistema inteiro não entrará em colapso. No processo de padronização, a criptografia baseada em reticulados (Lattice-based cryptography) assumiu o papel principal principalmente do ponto de vista do desempenho, mas a criptografia baseada em hash e a criptografia baseada em código foram adotadas como backups fortes.
 
 ---
 
@@ -57,15 +57,15 @@ Cada um desses algoritmos selecionados se baseia em diferentes "problemas de dif
 
 Os algoritmos PQC são categorizados principalmente nas 5 áreas a seguir com base nos problemas matemáticos em que baseiam sua segurança. Neste artigo, nos aprofundaremos principalmente nas três primeiras.
 
-1. **Criptografia baseada em reticulados (Lattice-based Cryptography)**:
+1. **Criptografia baseada em reticulados (Lattice-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)**:
    Baseia-se no Problema do Vetor Mais Curto (SVP) e no Problema do Vetor Mais Próximo (CVP) em espaços de reticulados multidimensionais, e no problema LWE derivado deles. É o centro da padronização do NIST, incluindo Kyber, Dilithium e FALCON. Possui o melhor equilíbrio entre velocidade de processamento, tamanho da chave pública e tamanho do texto cifrado, sendo adequado para uso geral.
-2. **Criptografia baseada em hash (Hash-based Cryptography)**:
+2. **Criptografia baseada em hash (Hash-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)**:
    Baseia sua segurança unicamente na "resistência à colisão" e "unidirecionalidade" das funções de hash criptográficas (como SHA-2 e SHAKE). É aplicável apenas a assinaturas digitais (SPHINCS+, etc.), mas tem a prova matemática mais forte de segurança e é caracterizada por uma resistência extremamente alta a ataques matemáticos desconhecidos.
-3. **Criptografia baseada em código (Code-based Cryptography)**:
+3. **Criptografia baseada em código (Code-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)**:
    Baseado na teoria de códigos de correção de erros, depende da dificuldade do Problema de Decodificação de Síndrome (Syndrome Decoding Problem). O Classic McEliece, proposto na década de 1970, é representativo e, embora tenha uma longa história e segurança comprovada, o tamanho da chave pública é extremamente grande, chegando a megabytes.
-4. **Criptografia polinomial multivariada (Multivariate Polynomial Cryptography)**:
+4. **Criptografia polinomial multivariada (Multivariate Polynomial [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)**:
    Baseia-se na dificuldade de encontrar soluções para um sistema de equações quadráticas simultâneas multivariadas sobre um corpo finito (problema MQ). Foi proposto principalmente para assinaturas digitais (como Rainbow), mas durante a rodada final do NIST, descobriu-se um método de ataque poderoso que o decifrou em alguns dias em um único PC, levando muitos algoritmos a serem retirados da padronização.
-5. **Criptografia baseada em isogenia (Isogeny-based Cryptography)**:
+5. **Criptografia baseada em isogenia (Isogeny-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)**:
    Baseado no problema de encontrar caminhos em grafos de isogenia (Isogeny) de curvas elípticas. Com um tamanho de chave muito pequeno, era esperado que fosse o sucessor legítimo da ECC, mas seu candidato final, "SIKE", foi completamente decifrado em poucas horas num PC normal usando matemática clássica (como o ataque de Castryck-Decru) em 2022, resultando num final dramático que simboliza a dificuldade e o terror do design de PQC.
 
 ---
@@ -294,7 +294,7 @@ Com a conclusão da padronização pelo NIST e a emissão oficial do FIPS, a tra
 
 Porém, existe um risco muito elevado em realizar uma transição completa e imediata para novos algoritmos de criptografia. Se, por exemplo, um matemático genial descobrir uma falha fatal de ataque (uma vulnerabilidade matemática decifrável até mesmo em um computador clássico) na criptografia de reticulado como o Kyber nos próximos anos, todo o sistema que depende dele será exposto instantaneamente.
 
-Uma abordagem realística e recomendada para mitigar este risco de incerteza é a "**Criptografia Híbrida (Hybrid Cryptography)**".
+Uma abordagem realística e recomendada para mitigar este risco de incerteza é a "**Criptografia Híbrida (Hybrid [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)**".
 
 Na criptografia híbrida, você usa simultaneamente a criptografia clássica com longo histórico de confiabilidade (por exemplo: criptografia de curva elíptica como X25519) e o novo PQC (por exemplo: Kyber768) para realizar a troca de chaves. Os componentes de chaves comuns são gerados de forma independente por cada algoritmo e, finalmente, as duas partes são combinadas por meio de uma Função de Derivação de Chave (KDF) segura para gerar o segredo mestre final.
 
@@ -310,7 +310,7 @@ graph TD
 
 Isso realiza uma postura de segurança robusta de dois níveis: "Mesmo que um computador quântico seja construído e a ECC seja quebrada, o Kyber protegerá a comunicação", e inversamente, "Mesmo que uma falha matemática desconhecida seja descoberta no Kyber, a ECC protegerá a comunicação". Como exemplo representativo, existe o rascunho **X25519MLKEM768 (antigo X25519Kyber768)** sendo padronizado na IETF, e a comunicação entre os navegadores Web atuais e servidores de ponta já é realizada usando exatamente esse método híbrido.
 
-Além disso, na concepção do sistema, o conceito de "**Crypto Agility (Agilidade Criptográfica)**" – a arquitetura que permite não depender excessivamente de um algoritmo de criptografia específico e de poder mudar rapidamente para outro algoritmo (por exemplo, de Kyber para McEliece, de Dilithium para SPHINCS+) se um algoritmo for quebrado – se tornará um requisito indispensável para o desenvolvimento de sistemas no futuro.
+Além disso, na concepção do sistema, o conceito de "**[Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) Agility (Agilidade Criptográfica)**" – a arquitetura que permite não depender excessivamente de um algoritmo de criptografia específico e de poder mudar rapidamente para outro algoritmo (por exemplo, de Kyber para McEliece, de Dilithium para SPHINCS+) se um algoritmo for quebrado – se tornará um requisito indispensável para o desenvolvimento de sistemas no futuro.
 
 ---
 

@@ -11,7 +11,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # Fondements mathématiques de la cryptographie sur les courbes elliptiques (ECC) et implémentation en C++
 
-Dans les technologies de cryptographie modernes, la **cryptographie sur les courbes elliptiques (Elliptic Curve Cryptography : ECC)** joue un rôle extrêmement important. De nos communications Internet quotidiennes (HTTPS/TLS) aux enclaves sécurisées des smartphones, en passant par l'authentification des serveurs via SSH, l'authentification sans mot de passe comme FIDO, et même les crypto-actifs tels que Bitcoin et Ethereum, on peut dire sans exagérer que la base de confiance de la société numérique moderne est soutenue par l'ECC.
+Dans les technologies de cryptographie modernes, la **cryptographie sur les courbes elliptiques (Elliptic Curve [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy : ECC)** joue un rôle extrêmement important. De nos communications Internet quotidiennes (HTTPS/TLS) aux enclaves sécurisées des smartphones, en passant par l'authentification des serveurs via SSH, l'authentification sans mot de passe comme FIDO, et même les crypto-actifs tels que [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et Ethereum, on peut dire sans exagérer que la base de confiance de la société numérique moderne est soutenue par l'ECC.
 
 Dans cet article, nous expliquerons en profondeur, avec un volume de contenu impressionnant, le fonctionnement de cette cryptographie sur les courbes elliptiques. Nous partirons de la théorie mathématique sous-jacente, belle mais complexe (géométrie algébrique sur les corps finis), pour aller jusqu'à la méthode d'implémentation réelle en C++, et enfin aux techniques de codage sécurisé pour prévenir les attaques par canaux auxiliaires (attaques temporelles).
 
@@ -443,7 +443,7 @@ Cet article a expliqué les points importants suivants :
 
 Écrire soi-même une bibliothèque cryptographique fonctionnant en environnement de production est fortement déconseillé ("Don't roll your own crypto") car les risques de sécurité sont extrêmement élevés. Cependant, comprendre en profondeur les algorithmes et le contexte mathématique qui fonctionnent en son sein devrait être une arme incroyablement puissante pour les ingénieurs concevant et exploitant des systèmes plus sécurisés et plus performants.
 
-Dans le prochain article, nous approfondirons le mécanisme de l'**ECDSA (Elliptic Curve Digital Signature Algorithm)**, un algorithme de signature numérique utilisant ces courbes elliptiques, ainsi que les **signatures de Schnorr** adoptées par Bitcoin.
+Dans le prochain article, nous approfondirons le mécanisme de l'**ECDSA (Elliptic Curve Digital Signature Algorithm)**, un algorithme de signature numérique utilisant ces courbes elliptiques, ainsi que les **signatures de Schnorr** adoptées par [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/).
 
 
 

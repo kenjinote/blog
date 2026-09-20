@@ -100,7 +100,7 @@ $$ P(x) = H(x) \cdot Z(x) $$
 
 Le vérificateur peut vérifier instantanément que l'ensemble du calcul a été effectué correctement en vérifiant simplement si cette équation $P(s) = H(s) \cdot Z(s)$ tient pour un point secret aléatoire $s$. C'est le secret de la « concision (Succinct) ».
 
-### 3. Cryptographie sur les courbes elliptiques et couplages (Bilinear Pairings)
+### 3. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie sur les courbes elliptiques et couplages (Bilinear Pairings)
 
 Cependant, si le vérificateur connaît le point secret $s$, il devient possible pour le prouveur de forger de faux polynômes pour satisfaire l'équation (effondrement de la solidité). Par conséquent, il est nécessaire d'effectuer le calcul tout en gardant $s$ chiffré (en utilisant le chiffrement homomorphe) afin que personne ne le connaisse.
 
@@ -127,7 +127,7 @@ Développés par Eli Ben-Sasson et d'autres, les STARKs se caractérisent, comme
 
 ### 1. Engagements polynomiaux et protocole FRI
 
-Les zk-STARKs fondent leur sécurité **uniquement sur des fonctions de hachage**, et non sur la cryptographie des courbes elliptiques. Par conséquent, ils possèdent les propriétés d'une cryptographie post-quantique (Post-Quantum Cryptography).
+Les zk-STARKs fondent leur sécurité **uniquement sur des fonctions de hachage**, et non sur la cryptographie des courbes elliptiques. Par conséquent, ils possèdent les propriétés d'une cryptographie post-quantique (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy).
 
 La vérification du calcul est effectuée en utilisant les propriétés de polynômes unidimensionnels ou multidimensionnels, après que le calcul ait été converti dans un format appelé AIR (Algebraic Intermediate Representation). Le cœur des STARKs réside dans le protocole **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 

@@ -11,17 +11,17 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # [Mathematical Foundations of Elliptic Curve Cryptography (ECC) and Implementation in C++](https://kenji.blog/en/p/楕円曲線暗号の数学的基礎とcppでの実装/)
 
-In modern cryptographic technology, **Elliptic Curve Cryptography (ECC)** plays a tremendously important role. It is no exaggeration to say that the foundation of trust in our modern digital society—from everyday Internet communications (HTTPS/TLS) and smartphone secure enclaves, to server authentication via SSH, passwordless authentication like FIDO, and even crypto assets like Bitcoin and Ethereum—is supported by ECC.
+In modern cryptographic technology, **Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)** plays a tremendously important role. It is no exaggeration to say that the foundation of trust in our modern digital society—from everyday Internet communications (HTTPS/TLS) and smartphone secure enclaves, to server authentication via SSH, passwordless authentication like FIDO, and even crypto assets like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) and Ethereum—is supported by ECC.
 
 In this article, we will thoroughly explain how elliptic curve cryptography works, starting from the beautiful yet complex mathematical theory behind it (algebraic geometry over finite fields), to actual implementation methods in C++, and even secure coding techniques to prevent side-channel attacks (timing attacks), with an overwhelming volume of detail.
 
 ---
 
-## 1. Why Elliptic Curve Cryptography? (Comparison with RSA)
+## 1. Why Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy? (Comparison with RSA)
 
 For a long time, **RSA cryptography** was synonymous with public-key cryptography. The security of RSA relies on the "difficulty of factoring large composite numbers." However, as the computational power of computers has increased, it has become necessary to continuously lengthen the RSA key size (number of modulus bits) to maintain security. Currently, a key size of at least 2048 bits is recommended, and 3072 or 4096 bits if greater security is desired.
 
-In contrast, Elliptic Curve Cryptography (ECC) bases its security on a different mathematical difficulty: the **"Elliptic Curve Discrete Logarithm Problem (ECDLP)"**. To this day, no efficient algorithms (such as sub-exponential time algorithms) for solving the ECDLP have been discovered, and even the most efficient known attack methods require exponential time.
+In contrast, Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) bases its security on a different mathematical difficulty: the **"Elliptic Curve Discrete Logarithm Problem (ECDLP)"**. To this day, no efficient algorithms (such as sub-exponential time algorithms) for solving the ECDLP have been discovered, and even the most efficient known attack methods require exponential time.
 
 Because of this property, ECC has the decisive advantage of being able to **achieve security strength equivalent to RSA with significantly shorter key lengths**.
 
@@ -271,7 +271,7 @@ However, if a branch (`if (k_i == 0)`) itself exists, the risk of execution time
 
 ---
 
-## 8. Implementation of Elliptic Curve Cryptography in C++
+## 8. Implementation of Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy in C++
 
 From here, we will translate the theory into C++ code. While practical cryptographic libraries (like OpenSSL or libsodium) use highly advanced assembly optimizations and [Jacobi](https://kenji.blog/en/p/jacobi/)an coordinates, we present the skeleton of an **easy-to-understand Constant-Time implementation using affine coordinates** to deepen mathematical understanding.
 
@@ -432,7 +432,7 @@ With this implementation logic, whether each bit of the scalar $k$ is `0` or `1`
 
 ## 9. Conclusion
 
-At first glance, Elliptic Curve Cryptography (ECC) might seem puzzling: "Why does a geometric operation like drawing a line and reflecting the intersection point become cryptography?" However, by mapping it to the discrete world of finite fields, an excellent one-way function (the discrete logarithm problem) can be constructed, making it a product of the miraculous fusion of mathematics and cryptography.
+At first glance, Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) might seem puzzling: "Why does a geometric operation like drawing a line and reflecting the intersection point become cryptography?" However, by mapping it to the discrete world of finite fields, an excellent one-way function (the discrete logarithm problem) can be constructed, making it a product of the miraculous fusion of mathematics and cryptography.
 
 In this article, we covered the following key points:
 
@@ -444,7 +444,7 @@ In this article, we covered the following key points:
 
 Writing your own cryptographic library to run in a production environment is highly discouraged ("Don't roll your own crypto") because the security risks are extremely high. However, deeply understanding the underlying algorithms and mathematical background should serve as an invaluable and powerful weapon for engineers designing and operating more secure and performant systems.
 
-In the next article, we would like to dig even deeper into the mechanics of the **ECDSA (Elliptic Curve Digital Signature Algorithm)**, which is a digital signature algorithm using these elliptic curves, as well as **Schnorr signatures**, which are adopted in Bitcoin.
+In the next article, we would like to dig even deeper into the mechanics of the **ECDSA (Elliptic Curve Digital Signature Algorithm)**, which is a digital signature algorithm using these elliptic curves, as well as **Schnorr signatures**, which are adopted in [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/).
 
 
 

@@ -12,7 +12,7 @@ description: 'Da antiga cifra de César ao Enigma, à criptografia de chave púb
 
 # 1. Introdução: O que é Criptografia?
 
-A criptografia (Cryptography) é uma tecnologia para preservar o sigilo das informações e tem evoluído junto com a história da humanidade. Desde a transmissão de comandos secretos em guerras antigas até a proteção de informações de cartão de crédito na internet moderna, o propósito da criptografia tem sido consistente. Consiste em "garantir que apenas os destinatários pretendidos possam entender as informações e que terceiros não consigam decifrá-las".
+A criptografia ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy) é uma tecnologia para preservar o sigilo das informações e tem evoluído junto com a história da humanidade. Desde a transmissão de comandos secretos em guerras antigas até a proteção de informações de cartão de crédito na internet moderna, o propósito da criptografia tem sido consistente. Consiste em "garantir que apenas os destinatários pretendidos possam entender as informações e que terceiros não consigam decifrá-las".
 
 Na segurança da informação moderna, a tecnologia criptográfica não se limita apenas ao "sigilo da informação (Confidencialidade: Confidentiality)", mas desempenha papéis cruciais como a "Integridade (Integrity)" dos dados, a "Autenticação (Authentication)" e o "Não-repúdio (Non-repudiation)".
 
@@ -140,7 +140,7 @@ graph TD
 A criptografia de chave simétrica possuía uma fraqueza decisiva. Trata-se do "Problema de Distribuição de Chaves (Key Distribution Problem)". É o problema de como compartilhar de forma segura uma "chave comum" com uma parte distante antes de iniciar a comunicação criptografada. Este problema foi resolvido pela "Criptografia de Chave Pública", nascida na década de 1970.
 
 ## Troca de Chaves de Diffie-Hellman
-Em 1976, Whitfield Diffie e Martin Hellman publicaram o artigo revolucionário "New Directions in Cryptography". Eles utilizaram a dificuldade matemática chamada "Problema do Logaritmo Discreto (Discrete Logarithm Problem)" e propuseram um método para compartilhar chaves de forma segura, mesmo em canais de comunicação interceptados.
+Em 1976, Whitfield Diffie e Martin Hellman publicaram o artigo revolucionário "New Directions in [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy". Eles utilizaram a dificuldade matemática chamada "Problema do Logaritmo Discreto (Discrete Logarithm Problem)" e propuseram um método para compartilhar chaves de forma segura, mesmo em canais de comunicação interceptados.
 
 1. Um número primo grande $p$ e um gerador $g$ são tornados públicos.
 2. Alice escolhe um valor secreto $a$ e envia $A = g^a \pmod{p}$ para Bob.
@@ -197,7 +197,7 @@ rsa_example()
 
 A criptografia RSA é forte, mas com a melhoria no desempenho dos computadores, tornou-se necessário aumentar o tamanho da chave para manter a segurança (atualmente 2048 bits ou 3072 bits), o que gerou o problema do aumento do custo computacional.
 
-Portanto, em 1985 foi proposta a "Criptografia de Curva Elíptica (Elliptic Curve Cryptography: ECC)". Isso utiliza a adição de pontos em uma curva elíptica sobre um campo finito (geralmente na forma de $y^2 = x^3 + ax + b$).
+Portanto, em 1985 foi proposta a "Criptografia de Curva Elíptica (Elliptic Curve [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy: ECC)". Isso utiliza a adição de pontos em uma curva elíptica sobre um campo finito (geralmente na forma de $y^2 = x^3 + ax + b$).
 
 Sabe-se que o Problema do Logaritmo Discreto em Curvas Elípticas (ECDLP) é ainda mais difícil de resolver do que o problema da fatoração de primos, e **o ECC pode alcançar a mesma segurança que o RSA de 3072 bits com um tamanho de chave de apenas 256 bits**. Isso possibilitou uma comunicação criptografada de alta velocidade e segurança (como ECDSA e ECDH) até mesmo em ambientes com recursos computacionais limitados, como smartphones e dispositivos IoT.
 
@@ -209,10 +209,10 @@ A tecnologia criptográfica parecia sólida, mas em 1994, o "Algoritmo de Shor" 
 
 Os computadores quânticos realizam cálculos utilizando as propriedades da mecânica quântica de "superposição" e "emaranhamento quântico". Foi matematicamente provado que a execução do algoritmo de Shor em um computador quântico de desempenho suficiente pode resolver o problema de fatoração de primos e o problema do logaritmo discreto em "tempo polinomial". Ou seja, no dia em que um computador quântico prático for concluído (Q-Day), as criptografias de chave pública usadas atualmente, como RSA e ECC, serão corrompidas instantaneamente.
 
-## O Surgimento da PQC (Post-Quantum Cryptography)
+## O Surgimento da PQC (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 Em preparação para esta ameaça sem precedentes, pesquisas em "Criptografia Pós-Quântica (PQC)", baseada em novos problemas matemáticos difíceis de resolver mesmo para computadores quânticos, estão avançando a passos largos. O NIST (Instituto Nacional de Padrões e Tecnologia dos EUA) tem conduzido um processo de padronização da PQC ao longo de muitos anos, e as seguintes abordagens matemáticas são consideradas as mais promissoras.
 
-### 1. Criptografia Baseada em Reticulados (Lattice-based Cryptography)
+### 1. Criptografia Baseada em Reticulados (Lattice-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 Atualmente é a abordagem mais promissora, sendo também adotada nos algoritmos de padronização do NIST (ML-KEM / Kyber, ML-DSA / Dilithium). Ela baseia-se na dificuldade de encontrar pontos específicos (como o Problema do Vetor Mais Curto: SVP) em "reticulados (Lattice)" no espaço multidimensional e no problema LWE (Learning With Errors: Aprendizado Com Erros).
 
 O conceito do problema LWE aproveita a propriedade de que se um "pequeno ruído (erro)" for adicionado intencionalmente a um sistema de equações lineares simultâneas, de repente torna-se difícil encontrar a solução.
@@ -238,10 +238,10 @@ b = (np.dot(A, s) + e) % q
 # Mesmo utilizando um computador quântico, é considerado extremamente difícil recuperar s a partir de A e b
 ```
 
-### 2. Criptografia Baseada em Hash (Hash-based Cryptography)
+### 2. Criptografia Baseada em Hash (Hash-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 É um esquema de assinatura digital que baseia a sua segurança unicamente na resistência a colisões de funções hash. Por não possuir uma estrutura matemática, é forte contra ataques quânticos, mas tende a ter tamanhos de assinatura grandes (como SPHINCS+).
 
-### 3. Criptografia Baseada em Código (Code-based Cryptography)
+### 3. Criptografia Baseada em Código (Code-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 É um sistema criptográfico baseado na teoria de códigos de correção de erros. A Criptografia de McEliece, proposta em 1978, é famosa; possui uma longa história e uma segurança estabelecida, mas tem o desafio de que o tamanho da chave pública é extremamente grande (podendo chegar a vários megabytes).
 
 ```mermaid
@@ -263,7 +263,7 @@ A história da tecnologia criptográfica é a história de uma batalha intermin�
 
 A Cifra de César foi derrotada pela análise de frequência, e a outrora invencível Enigma foi derrotada pelo gênio de Turing e o poder das máquinas. E agora, as fortes criptografias como RSA e ECC, que sustentam as bases da sociedade moderna da internet, estão sob a ameaça da nova "lança", que é o computador quântico.
 
-No entanto, a humanidade já vislumbra o futuro e está se preparando para o novo "escudo", a Criptografia Pós-Quântica (PQC). Atualmente, as preparações para a transição (Garantia de Agilidade Criptográfica - Crypto Agility) das criptografias de chave pública existentes para a PQC em infraestruturas de TI ao redor do mundo são uma questão de urgência.
+No entanto, a humanidade já vislumbra o futuro e está se preparando para o novo "escudo", a Criptografia Pós-Quântica (PQC). Atualmente, as preparações para a transição (Garantia de Agilidade Criptográfica - [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) Agility) das criptografias de chave pública existentes para a PQC em infraestruturas de TI ao redor do mundo são uma questão de urgência.
 
 A tecnologia criptográfica não é apenas um quebra-cabeça matemático obscuro, mas sim a barreira mais forte para proteger nossa privacidade, nossas propriedades e as próprias infraestruturas da sociedade.
 

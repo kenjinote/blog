@@ -140,7 +140,7 @@ graph TD
 Die symmetrische Kryptographie hatte eine entscheidende Schwachstelle. Das war das "Schlüsselverteilungsproblem (Key Distribution Problem)". Es war das Problem, wie ein "gemeinsamer Schlüssel" sicher mit einer weit entfernten Partei geteilt werden konnte, bevor die verschlüsselte Kommunikation begann. Dieses Problem wurde durch die "Public-Key-Kryptographie" gelöst, die in den 1970er Jahren geboren wurde.
 
 ## Diffie-Hellman-Schlüsselaustausch
-1976 veröffentlichten Whitfield Diffie und Martin Hellman ein bahnbrechendes Papier mit dem Titel "New Directions in Cryptography". Sie schlugen eine Methode vor, um Schlüssel auch über einen abgehörten Kommunikationsweg sicher zu teilen, indem sie die mathematische Schwierigkeit des "diskreten Logarithmusproblems (Discrete Logarithm Problem)" ausnutzten.
+1976 veröffentlichten Whitfield Diffie und Martin Hellman ein bahnbrechendes Papier mit dem Titel "New Directions in [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy". Sie schlugen eine Methode vor, um Schlüssel auch über einen abgehörten Kommunikationsweg sicher zu teilen, indem sie die mathematische Schwierigkeit des "diskreten Logarithmusproblems (Discrete Logarithm Problem)" ausnutzten.
 
 1. Eine große Primzahl $p$ und ein Erzeuger $g$ werden veröffentlicht.
 2. Alice wählt einen geheimen Wert $a$ und sendet $A = g^a \pmod{p}$ an Bob.
@@ -197,7 +197,7 @@ rsa_example()
 
 Die RSA-Kryptographie ist mächtig, aber mit der Verbesserung der Computerleistung wurde es notwendig, die Schlüssellängen zu verlängern, um die Sicherheit aufrechtzuerhalten (derzeit 2048 Bit oder 3072 Bit), was zu dem Problem erhöhter Rechenkosten führte.
 
-Daher wurde 1985 die "Elliptische Kurvenkryptographie (Elliptic Curve Cryptography: ECC)" vorgeschlagen. Sie nutzt die Addition von Punkten auf einer elliptischen Kurve über einem endlichen Körper (im Allgemeinen in der Form $y^2 = x^3 + ax + b$).
+Daher wurde 1985 die "Elliptische Kurvenkryptographie (Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy: ECC)" vorgeschlagen. Sie nutzt die Addition von Punkten auf einer elliptischen Kurve über einem endlichen Körper (im Allgemeinen in der Form $y^2 = x^3 + ax + b$).
 
 Es ist bekannt, dass das Problem des diskreten Logarithmus auf elliptischen Kurven (ECDLP) noch schwerer zu lösen ist als das Primfaktorzerlegungsproblem, und **ECC kann dieselbe Sicherheit wie RSA mit 3072 Bit mit einer Schlüssellänge von nur 256 Bit erreichen**. Dies ermöglichte eine schnelle und sichere kryptographische Kommunikation (wie ECDSA und ECDH) auch in Umgebungen mit begrenzten Rechenressourcen, wie Smartphones und IoT-Geräten.
 
@@ -209,10 +209,10 @@ Die Kryptographie schien unerschütterlich, bis Peter Shor 1994 "Shors Algorithm
 
 Quantencomputer führen Berechnungen durch, indem sie die quantenmechanischen Eigenschaften der "Superposition" und der "Quantenverschränkung" ausnutzen. Wenn Shors Algorithmus auf einem ausreichend leistungsstarken Quantencomputer ausgeführt wird, wurde mathematisch bewiesen, dass das Primfaktorzerlegungsproblem und das diskrete Logarithmusproblem in "polynomieller Zeit" gelöst werden können. Das bedeutet, dass an dem Tag, an dem ein praktischer Quantencomputer fertiggestellt wird (Q-Day), alle derzeit verwendeten Public-Key-Kryptographien wie RSA und ECC sofort zusammenbrechen werden.
 
-## Die Entstehung von PQC (Post-Quantum Cryptography)
+## Die Entstehung von PQC (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 Um sich auf diese beispiellose Bedrohung vorzubereiten, schreitet die Forschung an "Post-Quanten-Kryptographie (PQC)" in schnellem Tempo voran, basierend auf neuen mathematischen Problemen, die selbst für Quantencomputer schwer zu lösen sind. Das NIST (National Institute of Standards and Technology der USA) führt seit vielen Jahren einen PQC-Standardisierungsprozess durch, bei dem hauptsächlich die folgenden mathematischen Ansätze als vielversprechend angesehen werden.
 
-### 1. Gitterbasierte Kryptographie (Lattice-based Cryptography)
+### 1. Gitterbasierte Kryptographie (Lattice-based [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 Dies ist derzeit der vielversprechendste Ansatz und wurde in den Standardisierungsalgorithmen von NIST (ML-KEM / Kyber, ML-DSA / Dilithium) übernommen. Es basiert auf der Schwierigkeit, bestimmte Punkte auf einem "Gitter (Lattice)" in mehrdimensionalen Räumen zu finden (Shortest Vector Problem: SVP usw.) oder auf dem LWE-Problem (Learning With Errors).
 
 Das Konzept des LWE-Problems nutzt die Eigenschaft, dass das Finden einer Lösung extrem schwierig wird, wenn man absichtlich "kleines Rauschen (Fehler)" zu einem System linearer Gleichungen hinzufügt.
@@ -238,10 +238,10 @@ b = (np.dot(A, s) + e) % q
 # Selbst mit einem Quantencomputer wird es als extrem schwierig angesehen, s aus A und b wiederherzustellen
 ```
 
-### 2. Hash-basierte Kryptographie (Hash-based Cryptography)
+### 2. Hash-basierte Kryptographie (Hash-based [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 Ein digitales Signaturschema, das seine Sicherheit ausschließlich auf die Kollisionsresistenz von Hash-Funktionen stützt. Da es keine mathematische Struktur besitzt, ist es widerstandsfähig gegen Quantenangriffe, neigt jedoch zu großen Signaturgrößen (wie SPHINCS+).
 
-### 3. Code-basierte Kryptographie (Code-based Cryptography)
+### 3. Code-basierte Kryptographie (Code-based [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 Ein kryptographisches Verfahren, das auf der Theorie fehlerkorrigierender Codes basiert. Das 1978 vorgeschlagene McEliece-Kryptosystem ist ein berühmtes Beispiel; es hat eine lange Geschichte und einen etablierten Ruf für Sicherheit, leidet jedoch unter dem Problem sehr großer öffentlicher Schlüssel (die manchmal mehrere Megabyte erreichen).
 
 ```mermaid

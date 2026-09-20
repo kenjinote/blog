@@ -92,7 +92,7 @@ flowchart TD
 
 However, because there exist exceptional numbers called **Carmichael numbers**, which are composite numbers yet satisfy $a^{n-1} \equiv 1 \pmod n$, this test alone cannot definitively prove primality. Therefore, in practice, methods like the Miller-Rabin primality test are used.
 
-## Application to Modern Cryptography: RSA Cryptography
+## Application to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 The most important application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and its generalization, **Euler's Theorem**) is **RSA cryptography**, which underpins internet security.
 

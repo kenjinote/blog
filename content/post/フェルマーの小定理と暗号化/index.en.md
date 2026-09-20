@@ -9,9 +9,9 @@ categories: ["mathematics", "cryptography", "programming"]
 tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C++"]
 ---
 
-## 1. Introduction: The Mystery of Mathematics Supporting Modern Cryptography
+## 1. Introduction: The Mystery of Mathematics Supporting Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-In modern digital society, especially in communication over the Internet, "encryption" has become an indispensable foundational technology. The reason we can securely browse websites via HTTPS, perform financial transactions through online banking, and exchange private messages on messaging apps is because cryptographic protocols backed by highly advanced mathematical theories are working behind the scenes. Among them, "Public-Key Cryptography" plays a particularly important role, and its prime representative is **RSA cryptography**.
+In modern digital society, especially in communication over the Internet, "encryption" has become an indispensable foundational technology. The reason we can securely browse websites via HTTPS, perform financial transactions through online banking, and exchange private messages on messaging apps is because cryptographic protocols backed by highly advanced mathematical theories are working behind the scenes. Among them, "Public-Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" plays a particularly important role, and its prime representative is **RSA cryptography**.
 
 The security and correctness of many cryptographic algorithms, including RSA cryptography, depend heavily on a very beautiful and powerful theorem discovered by the 17th-century French mathematician [Pierre de Fermat](https://kenji.blog/en/p/fermat/). That is **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**. Furthermore, [Leonhard Euler](https://kenji.blog/en/p/euler/)'s theorem, which generalizes this, also plays a decisive role in cryptographic theory.
 
@@ -281,14 +281,14 @@ else:
 
 ---
 
-## 7. Application to RSA Cryptography: Where [Fermat](https://kenji.blog/en/p/fermat/) and Euler Bear Fruit
+## 7. Application to RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: Where [Fermat](https://kenji.blog/en/p/fermat/) and Euler Bear Fruit
 
 The greatest application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and Euler's Theorem) is **RSA cryptography**, developed in 1977 by Rivest, Shamir, and Adleman.
 RSA cryptography is an epoch-making system called "public-key cryptography", realizing a mechanism where the key for encryption (public key) is published to the whole world, while the key for decryption (private key) is known only to the receiver themselves.
 
 This asymmetry is based on the computational security that "factorizing a giant composite number into its prime factors is extremely difficult."
 
-### 7.1 Mechanism of RSA Cryptography (Key Generation, Encryption, Decryption)
+### 7.1 Mechanism of RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Key Generation, Encryption, Decryption)
 
 Let's check the overall communication flow of RSA cryptography with a Mermaid sequence diagram.
 
@@ -365,7 +365,7 @@ $M$ is beautifully restored! The properties of numbers discovered hundreds of ye
 
 ---
 
-## 8. Toy Implementation of RSA Cryptography (Python)
+## 8. Toy Implementation of RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Python)
 
 It's hard to get a real feel from theory alone, so let's actually implement the key generation, encryption, and decryption process of RSA cryptography using Python. This is a "toy implementation" for educational purposes, but the math used is exactly the same as the real thing.
 

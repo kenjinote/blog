@@ -393,7 +393,7 @@ Unlike the older Block Lanczos method, the Block Wiedemann method can completely
 
 ---
 
-## 7. Phase 5: Algebraic Square Root and Cryptographic Collapse
+## 7. Phase 5: Algebraic Square Root and [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Collapse
 
 ```cpp
 class AlgebraicSquareRoot {

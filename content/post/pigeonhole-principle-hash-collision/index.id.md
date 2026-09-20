@@ -60,7 +60,7 @@ Sekarang, mari kita terapkan Prinsip Sarang Merpati tadi pada fungsi hash.
 * **Merpati**: Himpunan data input. Karena kombinasi isi file atau teks bisa tak terbatas, maka jumlah elemen $|A|$ secara praktis adalah "tak terhingga".
 * **Sarang**: Himpunan nilai hash. Karena nilai hash memiliki panjang tetap, maka jumlah elemen $|B|$ adalah "terbatas".
 
-Sebagai contoh, output dari SHA-256, yang digunakan dalam teknologi blockchain seperti Bitcoin, adalah 256 bit. Dengan demikian, jenis nilai hash yang mungkin dihasilkan ada sebanyak $2^{256}$ (sekitar $1.15 \times 10^{77}$). Meskipun ini adalah angka yang sangat besar dan mendekati total jumlah atom di alam semesta yang dapat diamati, pada akhirnya angka ini adalah **terbatas**.
+Sebagai contoh, output dari SHA-256, yang digunakan dalam teknologi blockchain seperti [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/), adalah 256 bit. Dengan demikian, jenis nilai hash yang mungkin dihasilkan ada sebanyak $2^{256}$ (sekitar $1.15 \times 10^{77}$). Meskipun ini adalah angka yang sangat besar dan mendekati total jumlah atom di alam semesta yang dapat diamati, pada akhirnya angka ini adalah **terbatas**.
 
 Di sisi lain, variasi dokumen atau file gambar yang dapat dianggap sebagai data input jumlahnya **tak terbatas**.
 Oleh karena itu, karena pertidaksamaan "Total data input" > "Total nilai hash" selalu benar, berdasarkan Prinsip Sarang Merpati, **pasti akan ada dua data input berbeda yang menghasilkan nilai hash yang sama**. Fenomena inilah yang disebut dengan **"Kolisi Hash (Hash Collision)"**.

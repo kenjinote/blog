@@ -103,7 +103,7 @@ $233 \equiv 23 \pmod{105}$
 
 Par conséquent, la plus petite solution positive est **23**, ce qui correspond parfaitement à la solution de Sunzi.
 
-## Application moderne : Cryptographie RSA et TRC
+## Application moderne : [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie RSA et TRC
 
 Le **théorème des restes chinois**, qui était une énigme de l'Antiquité, a des applications extrêmement pratiques dans la société numérique moderne. L'exemple typique est l'accélération du déchiffrement et de la génération de signature dans la **cryptographie RSA**.
 

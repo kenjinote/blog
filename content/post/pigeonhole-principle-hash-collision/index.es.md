@@ -60,7 +60,7 @@ Consideremos el principio del palomar que vimos antes aplicándolo a las funcion
 * **Palomas**: El conjunto de los datos de entrada. Dado que las combinaciones de contenidos de archivos o cadenas de texto son infinitas, el número de elementos $|A|$ es, en efecto, "infinito".
 * **Nidos**: El conjunto de valores hash. Al tener una longitud fija, su número de elementos $|B|$ es "finito".
 
-Por ejemplo, la salida de SHA-256, usada en tecnologías como la blockchain de Bitcoin, es de 256 bits. Por lo tanto, el número de posibles valores hash es de $2^{256}$ variantes (aprox. $1.15 \times 10^{77}$). Esta cifra es monumentalmente enorme, rozando el número total de átomos en el universo observable, pero sigue siendo un **número finito**.
+Por ejemplo, la salida de SHA-256, usada en tecnologías como la blockchain de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/), es de 256 bits. Por lo tanto, el número de posibles valores hash es de $2^{256}$ variantes (aprox. $1.15 \times 10^{77}$). Esta cifra es monumentalmente enorme, rozando el número total de átomos en el universo observable, pero sigue siendo un **número finito**.
 
 Por el contrario, el número de variantes posibles de textos o archivos de imagen como datos de entrada es **infinito**.
 Dado que se cumple la desigualdad "número total de datos de entrada" $>$ "número total de valores hash", por el principio del palomar, **necesariamente van a existir dos conjuntos diferentes de datos de entrada que resulten en exactamente el mismo valor de hash**. A este fenómeno se le conoce como **"Colisión Hash" (Hash Collision)**.

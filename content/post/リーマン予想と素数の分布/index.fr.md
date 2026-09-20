@@ -191,7 +191,7 @@ Si des méthodes géométriques algébriques inconnues ou des méthodes géomét
 ### Ordinateurs quantiques et algorithme de Shor
 Une menace plus directe et réaliste pour la cryptographie n'est pas la preuve de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/), mais les **ordinateurs quantiques**. « L'algorithme de Shor » publié par Peter Shor en 1994 a prouvé qu'avec un ordinateur quantique suffisamment performant, la factorisation peut être résolue en temps polynomial. Cela casserait fondamentalement le chiffrement RSA et la cryptographie sur les courbes elliptiques.
 
-Actuellement, une transition vers la « cryptographie post-quantique (Post-Quantum Cryptography, PQC) » (comme la cryptographie fondée sur les réseaux) qui ne peut pas être déchiffrée même par des ordinateurs quantiques progresse dans le monde entier. Les technologies de cryptographie basées sur les nombres premiers peuvent en un sens atteindre la fin de leur âge d'or, mais la valeur mathématique des nombres premiers eux-mêmes ne sera jamais perdue.
+Actuellement, une transition vers la « cryptographie post-quantique (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy, PQC) » (comme la cryptographie fondée sur les réseaux) qui ne peut pas être déchiffrée même par des ordinateurs quantiques progresse dans le monde entier. Les technologies de cryptographie basées sur les nombres premiers peuvent en un sens atteindre la fin de leur âge d'or, mais la valeur mathématique des nombres premiers eux-mêmes ne sera jamais perdue.
 
 ---
 

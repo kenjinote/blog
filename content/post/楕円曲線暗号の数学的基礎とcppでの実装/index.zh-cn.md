@@ -11,7 +11,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # 椭圆曲线密码学（ECC）的数学基础与C++实现
 
-在现代密码技术中， **椭圆曲线密码学（Elliptic Curve Cryptography: ECC）** 发挥着极其重要的作用。从我们日常的互联网通信（HTTPS/TLS）、智能手机的安全隔离区（Secure Enclave）、通过SSH进行的服务器身份验证、FIDO等无密码认证，甚至到比特币和以太坊等加密资产，可以说现代数字社会的信任基础正是由ECC支撑的。
+在现代密码技术中， **椭圆曲线密码学（Elliptic Curve [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: ECC）** 发挥着极其重要的作用。从我们日常的互联网通信（HTTPS/TLS）、智能手机的安全隔离区（Secure Enclave）、通过SSH进行的服务器身份验证、FIDO等无密码认证，甚至到[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)和以太坊等加密资产，可以说现代数字社会的信任基础正是由ECC支撑的。
 
 本文将从其背后的优美且深奥的数学理论（有限体上的代数几何学）出发，深入探讨椭圆曲线密码学是如何运作的，并结合C++的实际实现方法，乃至防止侧信道攻击（计时攻击）的安全编码技巧，以压倒性的篇幅为您进行彻底的讲解。
 
@@ -444,7 +444,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 实际上，因为极高的安全风险，业界不建议（"Don't roll your own crypto"）自行编写用于生产环境的密码学库。然而，深入理解其内部运行的算法和数学背景，对于设计和运维更安全、高性能系统的工程师来说，必定是一件不可或缺的强大武器。
 
-在下一篇文章中，我们将进一步深入探讨使用这种椭圆曲线的数字签名算法—— **ECDSA（Elliptic Curve Digital Signature Algorithm）** 的机制，以及比特币中所采用的 **Schnorr 签名** 。
+在下一篇文章中，我们将进一步深入探讨使用这种椭圆曲线的数字签名算法—— **ECDSA（Elliptic Curve Digital Signature Algorithm）** 的机制，以及[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)中所采用的 **Schnorr 签名** 。
 
 
 

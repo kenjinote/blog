@@ -12,13 +12,13 @@ description: "The arrival of 'Q-Day', where the astonishing computational power 
 
 ## 1. Introduction: The Footsteps of the Post-Quantum Era and the Crisis of Blockchain
 
-Since the birth of Bitcoin by Satoshi Nakamoto in 2009, blockchain technology has grown to become the foundation of financial systems and applications worldwide as a "decentralized and tamper-proof ledger." This robust security is supported by modern cryptographic technologies: **Public Key Cryptography** and **Cryptographic Hash Functions**.
+Since the birth of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) by Satoshi Nakamoto in 2009, blockchain technology has grown to become the foundation of financial systems and applications worldwide as a "decentralized and tamper-proof ledger." This robust security is supported by modern cryptographic technologies: **Public Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy** and **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Hash Functions**.
 
 These cryptographic technologies guarantee security based on the mathematical "computational difficulty" that classical computers (the PCs and supercomputers we currently use) cannot decipher even if they took time equivalent to the lifespan of the universe.
 
 However, this premise is about to be fundamentally overturned by the rapid development and practical application of **Quantum Computers**, the frontier of physics and information science. Quantum computers, which utilize quantum mechanics specifics such as "Superposition" and "Entanglement," demonstrate computational power that overwhelms conventional classical computers in specific mathematical problems, a phenomenon known as "Quantum Supremacy."
 
-In this article, we will thoroughly and deeply delve into what specific threats blockchain technology faces from quantum computers, the latest trends in **Post-Quantum Cryptography (PQC)** that serve as a solution, and the transition scenarios for crypto asset networks from a technical and mathematical perspective.
+In this article, we will thoroughly and deeply delve into what specific threats blockchain technology faces from quantum computers, the latest trends in **Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)** that serve as a solution, and the transition scenarios for crypto asset networks from a technical and mathematical perspective.
 
 ---
 
@@ -40,9 +40,9 @@ graph TD
     style I fill:#ffff99,stroke:#cccc00,stroke-width:2px;
 ```
 
-### 2.1. Basics of Elliptic Curve Cryptography (ECDSA) and Computational Difficulty
+### 2.1. Basics of Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECDSA) and Computational Difficulty
 
-Many blockchains, including Bitcoin and Ethereum, employ the **Elliptic Curve Digital Signature Algorithm (ECDSA)** as their digital signature algorithm. Specifically, Bitcoin uses an elliptic curve with the parameter `secp256k1`.
+Many blockchains, including [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) and Ethereum, employ the **Elliptic Curve Digital Signature Algorithm (ECDSA)** as their digital signature algorithm. Specifically, [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) uses an elliptic curve with the parameter `secp256k1`.
 
 The security of elliptic curve cryptography relies on the computational difficulty of the **Elliptic Curve Discrete Logarithm Problem (ECDLP)**.
 An elliptic curve is defined by the following equation in the Weierstrass normal form:
@@ -51,7 +51,7 @@ $$
 y^2 \equiv x^3 + ax + b \pmod{p}
 $$
 
-In Bitcoin's `secp256k1`, $a = 0, b = 7$, and $p$ is a very large prime number.
+In [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)'s `secp256k1`, $a = 0, b = 7$, and $p$ is a very large prime number.
 Let $G$ be the base point (reference point) on this curve, and $k$ be the private key, which is a randomly chosen massive 256-bit integer. The public key $K$ is then obtained by adding the base point $k$ times (scalar multiplication).
 
 $$
@@ -112,7 +112,7 @@ The number of quantum gates required for this entire process is $\mathcal{O}(\lo
 
 Another threat is **Grover's Algorithm**, proposed by Lov Grover in 1996. This significantly impacts hash functions (e.g., SHA-256).
 
-In blockchain, hash functions are used to ensure data integrity, generate addresses, and serve as the foundation for **PoW (Proof of Work) mining** in Bitcoin. Reversing a hash function (preimage computation) can be seen as an "unstructured database search problem" to find the input value $x$ such that $H(x) = y$ for a specific output value $y$.
+In blockchain, hash functions are used to ensure data integrity, generate addresses, and serve as the foundation for **PoW (Proof of Work) mining** in [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/). Reversing a hash function (preimage computation) can be seen as an "unstructured database search problem" to find the input value $x$ such that $H(x) = y$ for a specific output value $y$.
 
 For classical computers, finding the correct answer out of $N$ possibilities requires an average of $\frac{N}{2}$ trials and a worst-case of $N$ trials. That is, the computational complexity is $\mathcal{O}(N)$.
 However, Grover's algorithm uses a quantum technique called "Amplitude Amplification." By iteratively amplifying the probability amplitude of the correct state from among all possibilities in a superposition state, it reduces the search time to its square root.
@@ -132,16 +132,16 @@ In conclusion, the quantum threat to hash functions is "minor and manageable," w
 
 ---
 
-## 3. Specific Impact Analysis on Current Crypto Assets (Bitcoin, Ethereum)
+## 3. Specific Impact Analysis on Current [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Assets ([Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/), Ethereum)
 
-In a world where ECDSA decryption by quantum computers is possible, what specific vulnerabilities will crypto asset networks face? Here, we provide a detailed analysis using Bitcoin's mechanism as an example, from the perspective of **"the timing of public key exposure."**
+In a world where ECDSA decryption by quantum computers is possible, what specific vulnerabilities will crypto asset networks face? Here, we provide a detailed analysis using [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)'s mechanism as an example, from the perspective of **"the timing of public key exposure."**
 
 ### 3.1. Address Generation and the "Privacy" of Public Keys
 
-Bitcoin addresses (P2PKH: Pay-to-Public-Key-Hash or P2WPKH: Pay-to-Witness-Public-Key-Hash) use a public key hashed multiple times rather than the public key itself.
+[Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) addresses (P2PKH: Pay-to-Public-Key-Hash or P2WPKH: Pay-to-Witness-Public-Key-Hash) use a public key hashed multiple times rather than the public key itself.
 
 $$
-\text{Bitcoin Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
 $$
 
 As mentioned earlier, since hash functions are resistant to quantum attacks (Grover's algorithm), reversing the original "public key" from the "address" (which is a hash value) is impossible even for a quantum computer.
@@ -182,13 +182,13 @@ This series of events is called a **Front-running Attack**, and in a world where
 
 An even more serious problem is that addresses that have sent funds at least once in the past (such as when reused as change addresses) already have their public keys permanently recorded on the blockchain. These are in danger of having their private keys calculated and balances stolen at any time, without even waiting to send a transaction.
 
-Additionally, in the **P2PK (Pay-to-Public-Key)** format, which was mainstream around 2009-2010 and includes Satoshi Nakamoto's early mining rewards (over 1 million BTC), the public key itself was recorded directly on the blockchain as the address instead of a hash. These massive amounts of dormant Bitcoins would be the easiest targets for quantum computers, and if stolen all at once and dumped on the market, could cause a massive price crash.
+Additionally, in the **P2PK (Pay-to-Public-Key)** format, which was mainstream around 2009-2010 and includes Satoshi Nakamoto's early mining rewards (over 1 million BTC), the public key itself was recorded directly on the blockchain as the address instead of a hash. These massive amounts of dormant [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)s would be the easiest targets for quantum computers, and if stolen all at once and dumped on the market, could cause a massive price crash.
 
 ---
 
-## 4. Transition Scenarios to Post-Quantum Cryptography (PQC)
+## 4. Transition Scenarios to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)
 
-To avoid such a "Q-Day (the day quantum computers break cryptography)" catastrophe, the cryptography and blockchain communities are planning a transition to **Post-Quantum Cryptography (PQC)**, which is difficult even for quantum algorithms to decrypt.
+To avoid such a "Q-Day (the day quantum computers break cryptography)" catastrophe, the cryptography and blockchain communities are planning a transition to **Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)**, which is difficult even for quantum algorithms to decrypt.
 The National Institute of Standards and Technology (NIST) has been progressing with the standardization process of PQC for many years, and after several rounds of rigorous evaluation, some promising cryptographic schemes have been selected as final standards.
 
 We will explain in detail the major PQC algorithms that are drawing attention as digital signature alternatives for blockchains, along with their mathematical mechanisms.
@@ -238,9 +238,9 @@ $$
 This process is mathematically extremely simple, and it is impossible to forge a signature unless a quantum computer can reverse $H$. However, once signed, half of the private key is exposed to the network, so if another message is signed with the same key pair, the exposed private keys combine to give the attacker room for forgery, creating a strong restriction that it can only be used "One-Time."
 To make this practical, technologies like **XMSS**, which bundles many one-time keys into a single root public key using a Merkle tree, and the stateless **SPHINCS+** have been developed, but they have the drawback of signature sizes reaching tens of kilobytes.
 
-### 4.2. Lattice-Based Cryptography
+### 4.2. Lattice-Based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Currently, the most anticipated mainstream of PQC, adopted as NIST's main standard specification (FIPS 204: ML-DSA / formerly CRYSTALS-Dilithium, and Falcon, etc.), is **Lattice-Based Cryptography**.
+Currently, the most anticipated mainstream of PQC, adopted as NIST's main standard specification (FIPS 204: ML-DSA / formerly CRYSTALS-Dilithium, and Falcon, etc.), is **Lattice-Based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy**.
 
 The security of lattice cryptography depends on mathematically proven hard problems such as the "Shortest Vector Problem (SVP) in multi-dimensional lattices" or the "Learning With Errors (LWE) problem." No algorithm has been found to solve lattice problems efficiently even using quantum computers.
 
@@ -264,14 +264,14 @@ In actual algorithms used in blockchain and elsewhere (like Dilithium), **Ring-L
 
 ## 5. Technical Challenges in Migrating Blockchains to PQC
 
-Just because PQC algorithms (like Dilithium and SPHINCS+) exist doesn't mean they can be introduced to Bitcoin or Ethereum tomorrow. There are several heavy challenges unique to decentralized systems.
+Just because PQC algorithms (like Dilithium and SPHINCS+) exist doesn't mean they can be introduced to [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) or Ethereum tomorrow. There are several heavy challenges unique to decentralized systems.
 
 ### 5.1. Signature Size Bloat and the Collapse of Scalability
 
 The biggest barrier to introducing PQC is the significant bloat in data size.
 While the current ECDSA signature size is about 70 bytes, the lattice-based Dilithium (ML-DSA) has a signature size of about 2,420 to 4,595 bytes (depending on the security level), and a public key size exceeding 1,300 bytes. For the hash-based SPHINCS+, the signature alone reaches tens of thousands of bytes.
 
-If Bitcoin introduces PQC with the current block size limit (about 4MB weight including SegWit), the number of transactions that can be stored in one block will drastically decrease. Network throughput (TPS: Transactions Per Second) would fall devastatingly, and transaction congestion would become normal.
+If [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) introduces PQC with the current block size limit (about 4MB weight including SegWit), the number of transactions that can be stored in one block will drastically decrease. Network throughput (TPS: Transactions Per Second) would fall devastatingly, and transaction congestion would become normal.
 To solve this, a massive increase in block size is necessary, but this would increase the storage and network bandwidth requirements for full nodes, making it difficult for individuals to operate nodes, resulting in the dilemma of causing **centralization of the network**.
 
 ```mermaid
@@ -293,7 +293,7 @@ To avoid this, it is necessary to incorporate a new Precompiled Contract for PQC
 
 ### 5.3. Difficulties in Consensus Building Through Hard Forks
 
-Changing the underlying signature algorithm inherently requires a **Hard Fork** that updates the entire network protocol. However, in communities like Bitcoin that emphasize "not changing rules, being decentralized," the consensus-building process is politically very difficult. From the time a BIP (Bitcoin Improvement Proposal) for migrating to PQC is proposed until it is implemented, years of discussion and testing will be required.
+Changing the underlying signature algorithm inherently requires a **Hard Fork** that updates the entire network protocol. However, in communities like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) that emphasize "not changing rules, being decentralized," the consensus-building process is politically very difficult. From the time a BIP ([Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Improvement Proposal) for migrating to PQC is proposed until it is implemented, years of discussion and testing will be required.
 
 ---
 
@@ -314,7 +314,7 @@ Instead of writing massive PQC signature data directly to Layer 1 (the main chai
 Note that since some SNARKs configurations (like Groth16) are themselves vulnerable to quantum attacks, adopting **ZK-STARKs**, which rely solely on quantum-resistant hash functions, is key.
 
 ### Phase 3: Protocol-Level Hard Forks (Around 2030)
-Once NIST's PQC standardization is fully established, and industry-standard libraries are available and well-tested, it is expected that a hard fork completely transitioning the default signature scheme to PQC will be implemented on major chains like Bitcoin and Ethereum. During this transition period, a massive announcement urging users to "move funds from old wallets to new PQC-compatible wallets" will take place.
+Once NIST's PQC standardization is fully established, and industry-standard libraries are available and well-tested, it is expected that a hard fork completely transitioning the default signature scheme to PQC will be implemented on major chains like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) and Ethereum. During this transition period, a massive announcement urging users to "move funds from old wallets to new PQC-compatible wallets" will take place.
 
 ### Pioneering Project Examples
 
@@ -324,25 +324,25 @@ Some blockchain projects have anticipated this quantum threat and have been deve
 
 ---
 
-## 7. Conclusion: The Future of Crypto Assets and Protecting Our Wealth
+## 7. Conclusion: The Future of [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Assets and Protecting Our Wealth
 
 The arrival of the "Post-Quantum Era" goes beyond mere science fiction fantasy; it is already looming before us as a concrete technical challenge to real-world cryptographic systems.
 
-The two swords of quantum computers, Shor's algorithm and Grover's algorithm, threaten public key cryptography and hash functions, respectively, which are the foundations of current blockchains. In particular, the vulnerability of ECDSA is fatal, and to avoid the risk of fund theft through front-running attacks, transitioning to Post-Quantum Cryptography (PQC) is an absolutely unavoidable path.
+The two swords of quantum computers, Shor's algorithm and Grover's algorithm, threaten public key cryptography and hash functions, respectively, which are the foundations of current blockchains. In particular, the vulnerability of ECDSA is fatal, and to avoid the risk of fund theft through front-running attacks, transitioning to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) is an absolutely unavoidable path.
 
 However, the technology sector and blockchain community are not just twiddling their thumbs waiting for destruction. The selection and standardization of PQC algorithms like lattice cryptography and hash-based signatures are steadily progressing, and a path to overcoming PQC's biggest hurdle, "data size bloat," is beginning to emerge by utilizing Zero-Knowledge Proofs (ZK-STARKs) and Layer 2 scaling technologies.
 
 There is no need for everyday crypto asset users and investors to panic right now and sell all their funds. However, it is important to have the following basic literacy and sense of self-defense:
 
 * **Avoid address reuse**: Thoroughly avoid keeping funds long-term in "used addresses (addresses that have sent funds even once, exposing their public key on the blockchain)" from a security perspective, not just a privacy one.
-* **Pay attention to technology trends**: Keep an antenna up for discussions on major networks' PQC transitions and hard fork news (like Bitcoin's BIPs and Ethereum's EIPs), so that you can appropriately transition your wallet when necessary.
+* **Pay attention to technology trends**: Keep an antenna up for discussions on major networks' PQC transitions and hard fork news (like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)'s BIPs and Ethereum's EIPs), so that you can appropriately transition your wallet when necessary.
 
 The history of blockchain is also a history of continuous upgrades and resilience against new technological threats. Just as it has overcome scalability issues and environmental problems (like the transition from PoW to PoS), the entire ecosystem will surely seek solutions and adapt to this unprecedented quantum threat.
 We look forward to a future where the new human wisdom of quantum computers and the trusted technology of decentralized ledgers do not collapse through collision, but rather sublimate into a higher-dimension, robustly fused system.
 
 ---
 *References & Related Links:*
-* National Institute of Standards and Technology (NIST) - Post-Quantum Cryptography Standardization Project
+* National Institute of Standards and Technology (NIST) - Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Standardization Project
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.

@@ -24,9 +24,9 @@ Para responder a essa crise sem precedentes, criptógrafos e instituições de p
 
 ## O que é a Criptografia Pós-Quântica (PQC)?
 
-A Criptografia Pós-Quântica (Post-Quantum Cryptography, PQC) é um termo genérico para algoritmos de criptografia projetados para operar em computadores clássicos existentes e, ao mesmo tempo, serem resistentes a ataques (como o algoritmo de Shor) de computadores quânticos de grande escala que surgirão no futuro.
+A Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy, PQC) é um termo genérico para algoritmos de criptografia projetados para operar em computadores clássicos existentes e, ao mesmo tempo, serem resistentes a ataques (como o algoritmo de Shor) de computadores quânticos de grande escala que surgirão no futuro.
 
-Tecnologias frequentemente confundidas com ela são a "Criptografia Quântica (Quantum Cryptography)" e a "Distribuição Quântica de Chaves (QKD)", mas estas são abordagens completamente diferentes. A criptografia quântica (QKD) é uma tecnologia baseada em hardware que utiliza as leis físicas da mecânica quântica (como a propriedade de que o estado muda ao ser observado) para tornar a espionagem nos canais de comunicação fisicamente impossível. Ela requer fibras ópticas dedicadas e equipamentos especiais, enfrentando desafios como custos de implementação e limitações de distância.
+Tecnologias frequentemente confundidas com ela são a "Criptografia Quântica (Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)" e a "Distribuição Quântica de Chaves (QKD)", mas estas são abordagens completamente diferentes. A criptografia quântica (QKD) é uma tecnologia baseada em hardware que utiliza as leis físicas da mecânica quântica (como a propriedade de que o estado muda ao ser observado) para tornar a espionagem nos canais de comunicação fisicamente impossível. Ela requer fibras ópticas dedicadas e equipamentos especiais, enfrentando desafios como custos de implementação e limitações de distância.
 
 Por outro lado, **a PQC é uma tecnologia de criptografia baseada em software, fundamentada puramente em "matemática"** . Portanto, ela pode ser incorporada à infraestrutura de internet existente, servidores, smartphones, navegadores, etc., como uma atualização de software, sendo altamente aplicável ao mundo real. Empresas de TI e governos de todo o mundo consideram urgente substituir (migrar) o RSA e o ECC atualmente em uso por esta PQC.
 
@@ -55,7 +55,7 @@ graph LR
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-### 1. Criptografia baseada em reticulados (Lattice-based Cryptography)
+### 1. Criptografia baseada em reticulados (Lattice-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 
 Atualmente, esta "criptografia baseada em reticulados" é considerada a mais promissora e é a principal tendência no campo da PQC. A criptografia de reticulados baseia sua segurança em problemas relacionados a pontos dispostos regularmente (pontos de reticulado) em um espaço multidimensional. Problemas famosos incluem o "Problema do Vetor Mais Curto (SVP: Shortest Vector Problem)" e o "Problema de Aprendizado com Erros (LWE: Learning With Errors)".
 
@@ -69,7 +69,7 @@ Imagine que inumeráveis pontos estão dispostos em forma de grade (reticulado) 
 
 Muitos dos algoritmos atualmente sendo padronizados pelo NIST (como ML-KEM e ML-DSA) adotam essa criptografia baseada em reticulados.
 
-### 2. Criptografia baseada em hash (Hash-based Cryptography)
+### 2. Criptografia baseada em hash (Hash-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 
 A criptografia baseada em hash é um algoritmo PQC especializado em assinaturas digitais. A base de sua segurança depende exclusivamente da resistência à colisão e da unidirecionalidade de "funções de hash criptográficas" seguras, como SHA-2 e SHA-3.
 
@@ -87,7 +87,7 @@ Ela tem como ponto de partida um esquema de assinatura descartável de uso únic
 
 O NIST padronizou o "SLH-DSA (anteriormente SPHINCS+)" como uma assinatura baseada em hash stateless.
 
-### 3. Criptografia multivariada (Multivariate Cryptography)
+### 3. Criptografia multivariada (Multivariate [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 
 A criptografia de polinômios multivariados baseia sua segurança na dificuldade de resolver um sistema de equações polinomiais quadráticas simultâneas com muitas variáveis (Problema MQ: Multivariate Quadratic problem). Sabe-se que este problema é NP-difícil.
 
@@ -102,7 +102,7 @@ O remetente cria um texto cifrado (assinatura) substituindo o texto simples (ou 
 - O tamanho da chave pública é muito grande (pode chegar a dezenas ou centenas de kilobytes).
 - No passado, algoritmos proeminentes (como Rainbow) foram quebrados por ataques clássicos, tornando mais difícil estabelecer a confiança na segurança em comparação com outros métodos.
 
-### 4. Criptografia baseada em códigos (Code-based Cryptography)
+### 4. Criptografia baseada em códigos (Code-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 
 A criptografia baseada em códigos aplica a teoria dos "códigos de correção de erros", usados para corrigir erros nos canais de comunicação, à criptografia. A "Criptografia McEliece", proposta em 1978, é a mais famosa e uma das mais antigas entre as PQC.
 
@@ -143,7 +143,7 @@ Em 2024, o NIST finalmente anunciou os seguintes três algoritmos como Padrões 
 
 ### Busca por Maior Diversidade
 
-Embora o NIST tenha concluído o processo inicial de padronização, ele continua buscando mais algoritmos. Especialmente porque os padrões estão muito inclinados para a "criptografia baseada em reticulados", a garantia da **diversidade de algoritmos (Crypto Diversity)** é altamente valorizada. A avaliação da criptografia baseada em códigos e outros métodos está em andamento como padrão de backup para compartilhamento de chaves, e a base da PQC deve se tornar ainda mais robusta no futuro.
+Embora o NIST tenha concluído o processo inicial de padronização, ele continua buscando mais algoritmos. Especialmente porque os padrões estão muito inclinados para a "criptografia baseada em reticulados", a garantia da **diversidade de algoritmos ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) Diversity)** é altamente valorizada. A avaliação da criptografia baseada em códigos e outros métodos está em andamento como padrão de backup para compartilhamento de chaves, e a base da PQC deve se tornar ainda mais robusta no futuro.
 
 ---
 
@@ -155,11 +155,11 @@ Com o lançamento de padrões oficiais pelo NIST, agências governamentais, inst
 
 Como os algoritmos PQC são novos, eles não passaram pelo "teste do tempo" em comparação com a criptografia clássica. Considerando os riscos de bugs ocultos em implementações ou a descoberta de novos métodos de ataque, recomenda-se uma **"abordagem híbrida"** durante o período de transição. Isso envolve realizar a troca de chaves combinando criptografia existente e comprovada (por exemplo, ECDHE) com a nova PQC (por exemplo, ML-KEM). Atualmente, as principais implementações de teste dessa abordagem estão avançando rapidamente em navegadores e serviços em nuvem.
 
-### Atingindo a Agilidade Criptográfica (Crypto-Agility)
+### Atingindo a Agilidade Criptográfica ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)-Agility)
 
-O que empresas e desenvolvedores de sistemas devem ter mais em mente daqui para frente é garantir a **"Agilidade Criptográfica (Crypto-Agility)"** . É essencial ter um projeto arquitetônico flexível que permita a substituição e atualização rápida dos algoritmos de criptografia sem paralisar o sistema, caso falhas sejam encontradas nos algoritmos no futuro ou surjam novos padrões.
+O que empresas e desenvolvedores de sistemas devem ter mais em mente daqui para frente é garantir a **"Agilidade Criptográfica ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)-Agility)"** . É essencial ter um projeto arquitetônico flexível que permita a substituição e atualização rápida dos algoritmos de criptografia sem paralisar o sistema, caso falhas sejam encontradas nos algoritmos no futuro ou surjam novos padrões.
 
-Criar um inventário criptográfico (CBOM: Cryptography Bill of Materials) que identifique com precisão "onde", "qual criptografia" e "para qual propósito" está sendo usada dentro do sistema da empresa é um primeiro passo vital em direção à transição para PQC.
+Criar um inventário criptográfico (CBOM: [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy Bill of Materials) que identifique com precisão "onde", "qual criptografia" e "para qual propósito" está sendo usada dentro do sistema da empresa é um primeiro passo vital em direção à transição para PQC.
 
 ---
 

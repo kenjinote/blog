@@ -127,7 +127,7 @@ Las STARKs, desarrolladas por Eli Ben-Sasson y otros, no requieren de una config
 
 ### 1. Compromiso polinómico y protocolo FRI
 
-Las zk-STARKs no basan su seguridad en la criptografía de curva elíptica, sino **exclusivamente en funciones hash**. Por lo tanto, poseen propiedades de criptografía poscuántica (Post-Quantum Cryptography).
+Las zk-STARKs no basan su seguridad en la criptografía de curva elíptica, sino **exclusivamente en funciones hash**. Por lo tanto, poseen propiedades de criptografía poscuántica (Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy).
 
 La verificación del cálculo se realiza utilizando las propiedades de polinomios de una o múltiples dimensiones después de convertirse a un formato llamado AIR (Algebraic Intermediate Representation). El núcleo de las STARKs reside en el protocolo **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 

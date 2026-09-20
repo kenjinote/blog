@@ -11,7 +11,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # Fundamentos matemáticos de la criptografía de curva elíptica (ECC) e implementación en C++
 
-En la tecnología criptográfica moderna, la **criptografía de curva elíptica (Elliptic Curve Cryptography: ECC)** juega un papel extremadamente importante. Desde nuestras comunicaciones diarias en Internet (HTTPS/TLS), los enclaves seguros de los teléfonos inteligentes, la autenticación de servidores mediante SSH, la autenticación sin contraseña como FIDO, e incluso en criptomonedas como Bitcoin y Ethereum, no es una exageración decir que la base de confianza de la sociedad digital moderna está respaldada por ECC.
+En la tecnología criptográfica moderna, la **criptografía de curva elíptica (Elliptic Curve [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy: ECC)** juega un papel extremadamente importante. Desde nuestras comunicaciones diarias en Internet (HTTPS/TLS), los enclaves seguros de los teléfonos inteligentes, la autenticación de servidores mediante SSH, la autenticación sin contraseña como FIDO, e incluso en criptomonedas como [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) y Ethereum, no es una exageración decir que la base de confianza de la sociedad digital moderna está respaldada por ECC.
 
 En este artículo, explicaremos exhaustivamente con un volumen abrumador cómo funciona esta criptografía de curva elíptica, partiendo de la hermosa pero compleja teoría matemática detrás de ella (geometría algebraica sobre campos finitos), los métodos de implementación prácticos usando C++, y además, técnicas de codificación seguras para prevenir ataques de canal lateral (ataques de tiempo).
 
@@ -443,7 +443,7 @@ En este artículo explicamos los siguientes puntos clave:
 
 Crear por tu cuenta una biblioteca criptográfica para entornos de producción generalmente no se recomienda ("Don't roll your own crypto") debido a los riesgos de seguridad extremadamente altos. Sin embargo, comprender profundamente los algoritmos subyacentes y el contexto matemático puede ser una herramienta invaluable y poderosa para los ingenieros que diseñan y operan sistemas más seguros y eficientes.
 
-En el próximo artículo, nos gustaría profundizar más en el mecanismo de **ECDSA (Elliptic Curve Digital Signature Algorithm)**, un algoritmo de firma digital que utiliza esta curva elíptica, y en las **firmas de Schnorr** adoptadas en Bitcoin.
+En el próximo artículo, nos gustaría profundizar más en el mecanismo de **ECDSA (Elliptic Curve Digital Signature Algorithm)**, un algoritmo de firma digital que utiliza esta curva elíptica, y en las **firmas de Schnorr** adoptadas en [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/).
 
 
 

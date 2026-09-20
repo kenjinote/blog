@@ -15,7 +15,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 然而，彼得·秀爾（Peter Shor）於1994年發表的「秀爾演算法（Shor's algorithm）」在密碼學界引發了震撼。該演算法在數學上證明了，一旦大規模的量子電腦問世，就能在多項式時間內解決質因數分解問題與離散對數問題。這意味著目前被廣泛使用的公鑰密碼學，在未來將完全可能被破解。
 
-為了對抗這種「量子威脅（Quantum Threat）」，迫切需要研究即使使用量子電腦也難以破解的新型密碼系統。這就是被稱為「後量子密碼學（Post-Quantum Cryptography: PQC）」或「抗量子計算密碼學」的領域。
+為了對抗這種「量子威脅（Quantum Threat）」，迫切需要研究即使使用量子電腦也難以破解的新型密碼系統。這就是被稱為「後量子密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy: PQC）」或「抗量子計算密碼學」的領域。
 
 PQC 有幾個有力的候選方案。包括基於雜湊的密碼學、基於編碼的密碼學、多變數多項式密碼學以及同源密碼學等，但其中目前最受矚目，且處於 NIST（美國國家標準暨技術研究院）PQC 標準化流程核心的，就是「格子密碼學（Lattice-based cryptography）」。與其他方法相比，格子密碼學具有極快的加密和解密處理速度，並具備一個在密碼理論中極為強大的安全性證明：將「最壞情況複雜度（Worst-case complexity）」歸約至「平均情況複雜度（Average-case complexity）」。
 

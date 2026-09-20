@@ -127,7 +127,7 @@ Desenvolvido por Eli Ben-Sasson e outros, o STARKs não requer nenhuma Configura
 
 ### 1. Compromisso Polinomial e Protocolo FRI
 
-Os zk-STARKs não dependem de criptografia de curva elíptica, mas ancoram a sua segurança **apenas em funções hash**. Portanto, eles possuem propriedades de criptografia pós-quântica (Post-Quantum Cryptography).
+Os zk-STARKs não dependem de criptografia de curva elíptica, mas ancoram a sua segurança **apenas em funções hash**. Portanto, eles possuem propriedades de criptografia pós-quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy).
 
 A verificação do cálculo é realizada convertendo-o num formato chamado AIR (Algebraic Intermediate Representation) e, em seguida, utilizando as propriedades dos polinómios unidimensionais ou multidimensionais. O núcleo do STARKs está no protocolo **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 

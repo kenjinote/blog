@@ -94,7 +94,7 @@ You can see how important the difference in computational complexity is in selec
 
 ---
 
-# The Mechanism of RSA Cryptography and the Prime Factorization Problem
+# The Mechanism of RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and the Prime Factorization Problem
 
 To understand why prime factorization is important, let's briefly review the mechanism of RSA cryptography. RSA cryptography is a public-key cryptosystem developed in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman.
 
@@ -230,7 +230,7 @@ This means that although it hasn't reached polynomial time ($\gamma=0$), the com
 
 ---
 
-# The Limits of Modern Cryptography and Quantum Computers
+# The Limits of Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and Quantum Computers
 
 As we have seen so far, humanity has continued to challenge the wall of prime factorization by bringing together mathematical wisdom and advancing algorithms from Trial Division to GNFS. However, even with GNFS, prime factorization still cannot be solved in "polynomial time" on classical computers.
 
@@ -270,7 +270,7 @@ graph LR
 In Shor's algorithm, the process of "period finding," which was a bottleneck in classical algorithms, is computed in parallel and instantaneously by the "Quantum Fourier Transform (QFT)" using quantum entanglement and quantum superposition.
 When it becomes executable on a practical-scale quantum computer (with low noise and a sufficient number of logical qubits), the 2048-bit RSA cipher currently considered safe could be completely decrypted in a matter of hours or days.
 
-To prepare for this threat, cryptographers around the world and NIST (National Institute of Standards and Technology) are currently accelerating standardization efforts to transition to "Post-Quantum Cryptography (PQC)," which is difficult to break even with quantum computers. Lattice-based cryptography is a representative example of this, and their security relies on entirely different mathematical difficulties (such as the shortest vector problem) rather than the prime factorization problem.
+To prepare for this threat, cryptographers around the world and NIST (National Institute of Standards and Technology) are currently accelerating standardization efforts to transition to "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)," which is difficult to break even with quantum computers. Lattice-based cryptography is a representative example of this, and their security relies on entirely different mathematical difficulties (such as the shortest vector problem) rather than the prime factorization problem.
 
 ---
 

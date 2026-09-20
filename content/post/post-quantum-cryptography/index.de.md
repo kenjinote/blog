@@ -24,9 +24,9 @@ Um auf diese beispiellose Krise zu reagieren, bündeln Kryptographen und Forschu
 
 ## Was ist Post-Quanten-Kryptographie (PQC)?
 
-Post-Quanten-Kryptographie (Post-Quantum Cryptography, PQC) ist ein Sammelbegriff für kryptographische Algorithmen, die so konzipiert sind, dass sie auf bestehenden klassischen Computern laufen und gleichzeitig resistent gegen Angriffe durch zukünftige große Quantencomputer (wie den Shor-Algorithmus) sind.
+Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy, PQC) ist ein Sammelbegriff für kryptographische Algorithmen, die so konzipiert sind, dass sie auf bestehenden klassischen Computern laufen und gleichzeitig resistent gegen Angriffe durch zukünftige große Quantencomputer (wie den Shor-Algorithmus) sind.
 
-Technologien, die oft damit verwechselt werden, sind die "Quantenkryptographie (Quantum Cryptography)" und die "Quantenschlüsselverteilung (QKD)", aber diese verfolgen völlig andere Ansätze. Die Quantenkryptographie (QKD) ist eine hardwarebasierte Technologie, die physikalische Gesetze der Quantenmechanik (wie die Eigenschaft, dass sich der Zustand bei Beobachtung ändert) nutzt, um Abhören auf dem Kommunikationsweg physikalisch unmöglich zu machen. Sie erfordert dedizierte Glasfasern und spezielle Geräte, was zu Herausforderungen hinsichtlich Einführungskosten und Entfernungsbeschränkungen führt.
+Technologien, die oft damit verwechselt werden, sind die "Quantenkryptographie (Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)" und die "Quantenschlüsselverteilung (QKD)", aber diese verfolgen völlig andere Ansätze. Die Quantenkryptographie (QKD) ist eine hardwarebasierte Technologie, die physikalische Gesetze der Quantenmechanik (wie die Eigenschaft, dass sich der Zustand bei Beobachtung ändert) nutzt, um Abhören auf dem Kommunikationsweg physikalisch unmöglich zu machen. Sie erfordert dedizierte Glasfasern und spezielle Geräte, was zu Herausforderungen hinsichtlich Einführungskosten und Entfernungsbeschränkungen führt.
 
 Andererseits ist die **PQC eine rein "mathematisch" basierte, softwarebasierte kryptographische Technologie** . Daher kann sie als Software-Update in bestehende Internet-Infrastrukturen, Server, Smartphones, Browser usw. integriert werden und zeichnet sich durch eine sehr hohe Anwendbarkeit in der realen Welt aus. Für IT-Unternehmen und Regierungsbehörden weltweit ist es eine dringende Aufgabe, die derzeit verwendeten RSA und ECC durch diese PQC zu ersetzen (zu migrieren).
 
@@ -55,7 +55,7 @@ graph LR
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-### 1. Gitterbasierte Kryptographie (Lattice-based Cryptography)
+### 1. Gitterbasierte Kryptographie (Lattice-based [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 
 Derzeit gilt die "gitterbasierte Kryptographie" als die vielversprechendste und am weitesten verbreitete Methode im Bereich der PQC. Gitterbasierte Kryptographie stützt ihre Sicherheit auf Probleme im Zusammenhang mit regelmäßig angeordneten Punkten (Gitterpunkten) in vieldimensionalen Räumen. Bekannte Probleme sind das "Kürzeste-Vektor-Problem (SVP: Shortest Vector Problem)" und das "Learning With Errors (LWE)"-Problem.
 
@@ -69,7 +69,7 @@ Stellen Sie sich unzählige Punkte vor, die in einem gitterartigen Muster in ein
 
 Viele der derzeit vom NIST standardisierten Algorithmen (wie ML-KEM und ML-DSA) verwenden diese gitterbasierte Kryptographie.
 
-### 2. Hash-basierte Kryptographie (Hash-based Cryptography)
+### 2. Hash-basierte Kryptographie (Hash-based [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 
 Die hashbasierte Kryptographie ist ein auf digitale Signaturen spezialisierter PQC-Algorithmus. Die Grundlage ihrer Sicherheit hängt ausschließlich von der Kollisionsresistenz und Einwegfunktion sicherer "kryptographischer Hash-Funktionen" wie SHA-2 und SHA-3 ab.
 
@@ -87,7 +87,7 @@ Der Ausgangspunkt ist ein Einweg-Signaturschema (One-Time-Signatur), das nur ein
 
 NIST standardisiert "SLH-DSA (ehemals SPHINCS+)" als zustandslose hashbasierte Signatur.
 
-### 3. Multivariate Kryptographie (Multivariate Cryptography)
+### 3. Multivariate Kryptographie (Multivariate [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 
 Multivariate Kryptographie basiert auf der Schwierigkeit, Systeme multivariater quadratischer Polynome mit vielen Variablen (MQ-Problem: Multivariate Quadratic problem) zu lösen. Dieses Problem ist bekanntermaßen NP-schwer.
 
@@ -102,7 +102,7 @@ Der Sender erstellt einen Chiffretext (Signatur), indem er Klartext (oder einen 
 - Die Größe des öffentlichen Schlüssels ist sehr groß (oft von mehreren Dutzend bis Hunderten von Kilobyte).
 - Es gibt Fälle in der Vergangenheit, in denen vielversprechende Algorithmen (wie Rainbow) durch klassische Angriffe gebrochen wurden, was es schwieriger macht, Vertrauen in ihre Sicherheit aufzubauen als bei anderen Methoden.
 
-### 4. Codebasierte Kryptographie (Code-based Cryptography)
+### 4. Codebasierte Kryptographie (Code-based [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 
 Die codebasierte Kryptographie wendet die Theorie der "Fehlerkorrekturcodes", die zur Korrektur von Fehlern auf Kommunikationswegen verwendet werden, auf die Kryptographie an. Das 1978 vorgeschlagene "McEliece-Kryptosystem" ist das bekannteste und eines der ältesten in der PQC.
 
@@ -143,11 +143,11 @@ Im Jahr 2024 veröffentlichte NIST schließlich die folgenden drei Algorithmen a
 
 ### Das Streben nach weiterer Diversität
 
-Während das NIST seinen ersten Standardisierungsprozess abgeschlossen hat, setzt es die Suche nach weiteren Algorithmen fort. Insbesondere weil die Standards derzeit auf "Gitterbasierte Kryptographie" ausgerichtet sind, wird der Gewährleistung von **kryptographischer Diversität (Crypto Diversity)** große Bedeutung beigemessen. Codebasierte Kryptographie und andere werden als Backup-Standards für den Schlüsselaustausch evaluiert, und das Fundament der PQC soll in Zukunft noch robuster werden.
+Während das NIST seinen ersten Standardisierungsprozess abgeschlossen hat, setzt es die Suche nach weiteren Algorithmen fort. Insbesondere weil die Standards derzeit auf "Gitterbasierte Kryptographie" ausgerichtet sind, wird der Gewährleistung von **kryptographischer Diversität ([Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) Diversity)** große Bedeutung beigemessen. Codebasierte Kryptographie und andere werden als Backup-Standards für den Schlüsselaustausch evaluiert, und das Fundament der PQC soll in Zukunft noch robuster werden.
 
 ---
 
-## Übergangsszenarien zur PQC und Herausforderungen: Die Bedeutung der "Crypto-Agility"
+## Übergangsszenarien zur PQC und Herausforderungen: Die Bedeutung der "[Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility"
 
 Mit der Veröffentlichung formeller Standards durch das NIST werden Regierungsbehörden, Finanzinstitute und Technologieunternehmen auf der ganzen Welt den Übergang (Migration) vom bestehenden RSA/ECC zur PQC ernsthaft einleiten. Richtlinien von Organisationen wie der NSA (National Security Agency) empfehlen ebenfalls einen baldigen Abschluss der Migration.
 
@@ -155,11 +155,11 @@ Mit der Veröffentlichung formeller Standards durch das NIST werden Regierungsbe
 
 Da PQC-Algorithmen neu sind, haben sie im Vergleich zur klassischen Kryptographie nicht den "Test der Zeit" bestanden. Um das Risiko von Fehlern in der Implementierung oder der Entdeckung neuer Angriffsmethoden zu berücksichtigen, wird während der Übergangsphase ein **"hybrider Ansatz"** empfohlen. Hierbei wird ein bewährtes bestehendes Kryptosystem (z. B. ECDHE) mit einem neuen PQC (z. B. ML-KEM) für den Schlüsselaustausch kombiniert. Derzeit schreitet die probeweise Einführung dieses Ansatzes in großen Browsern und Cloud-Diensten rasant voran.
 
-### Erreichen von Crypto-Agility (Kryptographische Agilität)
+### Erreichen von [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility (Kryptographische Agilität)
 
-Was Unternehmen und Systementwickler in Zukunft am meisten im Auge behalten sollten, ist die Gewährleistung der **"Crypto-Agility"** . Eine flexible Architektur, die es ermöglicht, kryptographische Algorithmen schnell auszutauschen und zu aktualisieren, ohne das System anzuhalten, wenn in Zukunft Schwachstellen in einem Algorithmus entdeckt werden oder neue Standards aufkommen, ist unerlässlich.
+Was Unternehmen und Systementwickler in Zukunft am meisten im Auge behalten sollten, ist die Gewährleistung der **"[Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility"** . Eine flexible Architektur, die es ermöglicht, kryptographische Algorithmen schnell auszutauschen und zu aktualisieren, ohne das System anzuhalten, wenn in Zukunft Schwachstellen in einem Algorithmus entdeckt werden oder neue Standards aufkommen, ist unerlässlich.
 
-Die Erstellung eines Kryptographie-Inventars (CBOM: Cryptography Bill of Materials), um genau zu verstehen, "wo", "welche Kryptographie" und "zu welchem Zweck" in den eigenen Systemen verwendet wird, ist ein wichtiger erster Schritt in Richtung PQC-Migration.
+Die Erstellung eines Kryptographie-Inventars (CBOM: [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy Bill of Materials), um genau zu verstehen, "wo", "welche Kryptographie" und "zu welchem Zweck" in den eigenen Systemen verwendet wird, ist ein wichtiger erster Schritt in Richtung PQC-Migration.
 
 ---
 
@@ -167,4 +167,4 @@ Die Erstellung eines Kryptographie-Inventars (CBOM: Cryptography Bill of Materia
 
 Während die Entwicklung von Quantencomputern der Menschheit enorme Vorteile bringen wird, stellt sie gleichzeitig die größte Bedrohung für die kryptographische Sicherheit dar, die die Grundlage unserer derzeitigen digitalen Gesellschaft bildet. Die Post-Quanten-Kryptographie (PQC) ist kein "Forschungsthema der fernen Zukunft" mehr. Durch den Meilenstein der Veröffentlichung von FIPS-Standards durch das NIST ist die PQC in eine vollwertige Phase der "Implementierung und Migration" eingetreten.
 
-In Anbetracht der Bedrohung durch "Harvest Now, Decrypt Later" ist der Übergang zur PQC eine oberste Priorität, die für jede Organisation, die mit hochsensiblen Daten umgeht, "jetzt sofort" angegangen werden muss. Lassen Sie uns die Technologie der Kryptographie der nächsten Generation tief verstehen und die Crypto-Agility unserer Systeme erhöhen, um das kommende Quantencomputer-Zeitalter sicher zu meistern.
+In Anbetracht der Bedrohung durch "Harvest Now, Decrypt Later" ist der Übergang zur PQC eine oberste Priorität, die für jede Organisation, die mit hochsensiblen Daten umgeht, "jetzt sofort" angegangen werden muss. Lassen Sie uns die Technologie der Kryptographie der nächsten Generation tief verstehen und die [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility unserer Systeme erhöhen, um das kommende Quantencomputer-Zeitalter sicher zu meistern.

@@ -12,13 +12,13 @@ description: "양자 컴퓨터의 경이적인 계산 능력이 블록체인의 
 
 ## 1. 인트로덕션: 포스트 양자 시대의 발소리와 블록체인의 위기
 
-2009년 사토시 나카모트에 의해 비트코인(Bitcoin)이 탄생한 이래, 블록체인 기술은 '탈중앙화되고 위변조가 불가능한 원장'으로서 전 세계 금융 시스템과 애플리케이션의 기반으로 성장했습니다. 이러한 견고한 보안을 지탱하고 있는 것이 **공개키 암호(Public Key Cryptography)** 와 **암호학적 해시 함수(Cryptographic Hash Functions)** 라는 현대 암호 기술입니다.
+2009년 사토시 나카모트에 의해 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)([Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/))이 탄생한 이래, 블록체인 기술은 '탈중앙화되고 위변조가 불가능한 원장'으로서 전 세계 금융 시스템과 애플리케이션의 기반으로 성장했습니다. 이러한 견고한 보안을 지탱하고 있는 것이 **공개키 암호(Public Key [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)** 와 **암호학적 해시 함수([Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)** 라는 현대 암호 기술입니다.
 
 이러한 암호 기술은 고전적인 컴퓨터(현재 우리가 사용하고 있는 PC나 슈퍼컴퓨터)로는 우주의 수명만큼의 시간을 들여도 해독할 수 없다는 수학적인 '계산 곤란성(Computational Hardness)'을 근거로 안전성을 보장하고 있습니다.
 
 하지만 이 전제는 물리학과 정보과학의 프론티어인 **양자 컴퓨터(Quantum Computers)** 의 급속한 발전과 실용화로 인해 근본부터 뒤집히려 하고 있습니다. 양자역학 특유의 '중첩(Superposition)'이나 '양자 얽힘(Entanglement)'을 이용하는 양자 컴퓨터는 특정 수학적 문제에 있어 기존의 고전 컴퓨터를 압도하는 계산 능력, 이른바 '양자 초월성(Quantum Supremacy)'을 발휘합니다.
 
-본 기사에서는 블록체인 기술이 양자 컴퓨터에 의해 구체적으로 어떤 위협에 직면해 있는지, 그리고 그 해결책이 될 **내양자 암호(PQC: Post-Quantum Cryptography)** 의 최신 동향과 암호자산 네트워크의 전환 시나리오에 대해 기술적이고 수리적인 관점에서 철저하게 깊이 파고들어 해설합니다.
+본 기사에서는 블록체인 기술이 양자 컴퓨터에 의해 구체적으로 어떤 위협에 직면해 있는지, 그리고 그 해결책이 될 **내양자 암호(PQC: Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)** 의 최신 동향과 암호자산 네트워크의 전환 시나리오에 대해 기술적이고 수리적인 관점에서 철저하게 깊이 파고들어 해설합니다.
 
 ---
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 타원곡선 암호(ECDSA)의 기초와 계산 곤란성
 
-비트코인이나 이더리움(Ethereum)을 비롯한 많은 블록체인은 디지털 서명 알고리즘으로 **타원곡선 디지털 서명 알고리즘(ECDSA: Elliptic Curve Digital Signature Algorithm)** 을 채택하고 있습니다. 구체적으로 비트코인은 `secp256k1`이라는 매개변수의 타원곡선을 사용합니다.
+[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 이더리움(Ethereum)을 비롯한 많은 블록체인은 디지털 서명 알고리즘으로 **타원곡선 디지털 서명 알고리즘(ECDSA: Elliptic Curve Digital Signature Algorithm)** 을 채택하고 있습니다. 구체적으로 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)은 `secp256k1`이라는 매개변수의 타원곡선을 사용합니다.
 
 타원곡선 암호의 안전성은 **타원곡선 이산대수 문제(ECDLP: Elliptic Curve Discrete Logarithm Problem)** 의 계산 곤란성에 의존하고 있습니다.
 타원곡선은 아래의 바이어슈트라스(Weierstrass) 표준형으로 표현되는 방정식으로 정의됩니다.
@@ -51,7 +51,7 @@ $$
 y^2 \equiv x^3 + ax + b \pmod{p}
 $$
 
-비트코인의 `secp256k1`에서는 $a = 0, b = 7$이며, $p$는 매우 큰 소수입니다.
+[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 `secp256k1`에서는 $a = 0, b = 7$이며, $p$는 매우 큰 소수입니다.
 이 곡선 상에 있는 베이스 포인트(기준점)를 $G$라 하고, 무작위로 선택된 256비트의 거대한 정수인 비밀키를 $k$라고 합니다. 이때, 공개키 $K$는 베이스 포인트의 $k$번 덧셈(스칼라 곱셈)을 통해 구해집니다.
 
 $$
@@ -112,7 +112,7 @@ $$
 
 또 다른 위협은 1996년 로브 그로버(Lov Grover)가 제안한 **그로버의 알고리즘** 입니다. 이는 해시 함수(예: SHA-256)에 큰 영향을 미칩니다.
 
-블록체인에서 해시 함수는 데이터 무결성 보장, 주소 생성, 그리고 비트코인의 **PoW(Proof of Work) 마이닝** 기반으로 사용되고 있습니다. 해시 함수의 역산(원상 계산)은 특정 출력값 $y$에 대해 $H(x) = y$가 되는 입력값 $x$를 찾는 '비구조화 데이터베이스 탐색 문제'로 간주할 수 있습니다.
+블록체인에서 해시 함수는 데이터 무결성 보장, 주소 생성, 그리고 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 **PoW(Proof of Work) 마이닝** 기반으로 사용되고 있습니다. 해시 함수의 역산(원상 계산)은 특정 출력값 $y$에 대해 $H(x) = y$가 되는 입력값 $x$를 찾는 '비구조화 데이터베이스 탐색 문제'로 간주할 수 있습니다.
 
 고전 컴퓨터에서는 $N$개의 가능성 중에서 정답을 찾기 위해 평균적으로 $\frac{N}{2}$번, 최악의 경우 $N$번의 시도가 필요합니다. 즉, 계산량은 $\mathcal{O}(N)$입니다.
 하지만 그로버의 알고리즘은 '진폭 증폭(Amplitude Amplification)'이라 불리는 양자 기술을 사용합니다. 중첩 상태에 있는 모든 가능성 중에서 정답이 되는 상태의 확률 진폭을 반복적으로 증폭시킴으로써 탐색 시간을 제곱근으로 단축시킵니다.
@@ -132,16 +132,16 @@ SHA-256의 경우 $N = 2^{256}$이므로 고전적인 무차별 대입(Brute-for
 
 ---
 
-## 3. 현재의 암호자산(Bitcoin, Ethereum)에 미치는 구체적인 영향 분석
+## 3. 현재의 암호자산([Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/), Ethereum)에 미치는 구체적인 영향 분석
 
-양자 컴퓨터에 의한 ECDSA 해독이 가능해진 세계에서 암호자산 네트워크는 구체적으로 어떤 취약성에 직면하게 될까요? 여기서는 비트코인의 구조를 예로 들어 **'공개키의 노출 타이밍'** 이라는 관점에서 상세한 분석을 진행합니다.
+양자 컴퓨터에 의한 ECDSA 해독이 가능해진 세계에서 암호자산 네트워크는 구체적으로 어떤 취약성에 직면하게 될까요? 여기서는 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 구조를 예로 들어 **'공개키의 노출 타이밍'** 이라는 관점에서 상세한 분석을 진행합니다.
 
 ### 3.1. 주소 생성과 공개키의 '비공개성'
 
-비트코인의 주소(P2PKH: Pay-to-Public-Key-Hash나 P2WPKH: Pay-to-Witness-Public-Key-Hash)는 공개키 그 자체가 아니라 공개키를 여러 번 해시화한 것을 사용합니다.
+[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 주소(P2PKH: Pay-to-Public-Key-Hash나 P2WPKH: Pay-to-Witness-Public-Key-Hash)는 공개키 그 자체가 아니라 공개키를 여러 번 해시화한 것을 사용합니다.
 
 $$
-\text{Bitcoin Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
 $$
 
 앞서 언급했듯이 해시 함수는 양자 공격(그로버의 알고리즘)에 대해 내성을 가지므로, 해시값인 '주소'로부터 원래의 '공개키'를 역산하는 것은 양자 컴퓨터로도 불가능합니다.
@@ -182,11 +182,11 @@ sequenceDiagram
 
 더욱 심각한 문제로, 과거에 한 번이라도 송금을 한 적이 있는 주소(잔돈 주소 등으로 재사용하고 있는 경우)는 이미 블록체인 상에 공개키가 영구적으로 기록되어 있습니다. 이들은 트랜잭션 송신을 기다릴 것도 없이 언제든지 비밀키가 계산되어 잔고를 빼앗길 위험에 노출되어 있습니다.
 
-또한, 사토시 나카모토의 초기 마이닝 보상(약 100만 BTC 이상)을 포함하여 2009년~2010년경에 주류였던 **P2PK(Pay-to-Public-Key)** 포맷에서는 주소로 해시가 아닌 공개키 자체가 직접 블록체인에 기록되었습니다. 이러한 대량의 휴면 비트코인은 양자 컴퓨터에게 가장 쉬운 표적이 되어 일제히 도난당하고 시장에 덤핑됨으로써 가격 대폭락을 일으킬 가능성이 있습니다.
+또한, 사토시 나카모토의 초기 마이닝 보상(약 100만 BTC 이상)을 포함하여 2009년~2010년경에 주류였던 **P2PK(Pay-to-Public-Key)** 포맷에서는 주소로 해시가 아닌 공개키 자체가 직접 블록체인에 기록되었습니다. 이러한 대량의 휴면 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)은 양자 컴퓨터에게 가장 쉬운 표적이 되어 일제히 도난당하고 시장에 덤핑됨으로써 가격 대폭락을 일으킬 가능성이 있습니다.
 
 ---
 
-## 4. 내양자 암호(PQC: Post-Quantum Cryptography)로의 전환 시나리오
+## 4. 내양자 암호(PQC: Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)로의 전환 시나리오
 
 이러한 'Q-Day(양자 컴퓨터에 의한 암호 돌파의 날)'의 파국을 피하기 위해, 암호학계와 블록체인 커뮤니티는 양자 알고리즘으로도 해독이 어려운 **내양자 암호(PQC)** 로의 전환을 계획하고 있습니다.
 미국 국립표준기술연구소(NIST)는 수년간 PQC의 표준화 프로세스를 진행해 왔으며, 수차례에 걸친 엄격한 평가를 거쳐 유망한 몇 가지 암호 방식이 최종 표준으로 선정되었습니다.
@@ -238,7 +238,7 @@ $$
 이 프로세스는 수학적으로 지극히 단순하며, 양자 컴퓨터가 $H$의 역산을 할 수 없는 한 서명을 위조하는 것은 불가능합니다. 하지만 한 번 서명을 하면 비밀키의 절반이 네트워크에 노출되기 때문에 같은 키 쌍으로 다른 메시지에 서명하게 되면 노출된 비밀키들이 조합되어 공격자에게 위조의 여지를 주게 되므로, '단 한 번(One-Time)'밖에 쓸 수 없다는 강한 제약이 생깁니다.
 이를 실용화하기 위해 머클 트리(Merkle Tree)를 사용하여 다수의 원타임 키를 하나의 루트 공개키로 묶는 **XMSS** 나 상태 비저장(Stateless) 방식인 **SPHINCS+** 등의 기술이 개발되었으나, 서명 크기가 수십 킬로바이트에 달한다는 단점이 있습니다.
 
-### 4.2. 격자 기반 암호(Lattice-Based Cryptography)
+### 4.2. 격자 기반 암호(Lattice-Based [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)
 
 현재 PQC의 주류로서 가장 기대받고 있으며, NIST의 메인 표준 규격(FIPS 204: ML-DSA / 구 CRYSTALS-Dilithium이나 Falcon 등)으로 채택된 것이 **격자 기반 암호** 입니다.
 
@@ -264,14 +264,14 @@ $$
 
 ## 5. 블록체인의 PQC 전환에 있어서의 기술적 과제
 
-PQC 알고리즘(Dilithium이나 SPHINCS+ 등)이 존재한다고 해서 이를 내일 당장 비트코인이나 이더리움에 도입할 수 있는 것은 아닙니다. 분산형 시스템 특유의 무거운 과제들이 여러 가지 존재합니다.
+PQC 알고리즘(Dilithium이나 SPHINCS+ 등)이 존재한다고 해서 이를 내일 당장 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 이더리움에 도입할 수 있는 것은 아닙니다. 분산형 시스템 특유의 무거운 과제들이 여러 가지 존재합니다.
 
 ### 5.1. 서명 크기의 비대화와 확장성의 붕괴
 
 PQC 도입에 있어서 가장 큰 장벽은 데이터 크기의 대폭적인 비대화입니다.
 현재 ECDSA의 서명 크기가 약 70바이트인 것에 반해, 격자 기반 암호인 Dilithium(ML-DSA)에서는 서명 크기가 약 2,420바이트~4,595바이트(보안 레벨에 따라 다름)이며 공개키 크기도 1,300바이트를 넘습니다. 해시 기반인 SPHINCS+에 이르러서는 서명만으로 수만 바이트에 달합니다.
 
-만약 비트코인이 현재와 동일한 블록 크기 상한(SegWit 포함 약 4MB의 가중치) 그대로 PQC를 도입할 경우, 1개의 블록에 저장할 수 있는 트랜잭션의 수는 격감합니다. 네트워크의 처리량(TPS: Transactions Per Second)은 파멸적으로 저하되고 송금 지연이 상태화될 것입니다.
+만약 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이 현재와 동일한 블록 크기 상한(SegWit 포함 약 4MB의 가중치) 그대로 PQC를 도입할 경우, 1개의 블록에 저장할 수 있는 트랜잭션의 수는 격감합니다. 네트워크의 처리량(TPS: Transactions Per Second)은 파멸적으로 저하되고 송금 지연이 상태화될 것입니다.
 이를 해결하기 위해서는 블록 크기를 대폭 늘려야 하지만, 이는 풀 노드의 스토리지 요구 사항이나 네트워크 대역폭 요구 사항을 증대시켜 개인의 노드 운영을 어렵게 만들고, 결과적으로 **네트워크의 중앙집권화** 를 초래한다는 딜레마에 빠지게 됩니다.
 
 ```mermaid
@@ -293,7 +293,7 @@ pie title 블록체인에서의 서명 데이터 크기 비교 (개념도)
 
 ### 5.3. 하드포크를 통한 합의 형성의 어려움
 
-기반이 되는 서명 알고리즘을 변경하려면 네트워크 전체의 프로토콜을 갱신하는 **하드포크(Hard Fork)** 가 불가피합니다. 하지만 비트코인처럼 '규칙을 바꾸지 않는 것, 탈중앙화되어 있을 것'에 무게를 두는 커뮤니티에서 합의를 이끌어내는 프로세스는 정치적으로도 매우 어렵습니다. PQC로의 전환에 관한 BIP(Bitcoin Improvement Proposal)가 제안된 후 구현에 이르기까지는 수년에 걸친 논의와 테스트가 필요할 것입니다.
+기반이 되는 서명 알고리즘을 변경하려면 네트워크 전체의 프로토콜을 갱신하는 **하드포크(Hard Fork)** 가 불가피합니다. 하지만 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)처럼 '규칙을 바꾸지 않는 것, 탈중앙화되어 있을 것'에 무게를 두는 커뮤니티에서 합의를 이끌어내는 프로세스는 정치적으로도 매우 어렵습니다. PQC로의 전환에 관한 BIP([Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Improvement Proposal)가 제안된 후 구현에 이르기까지는 수년에 걸친 논의와 테스트가 필요할 것입니다.
 
 ---
 
@@ -314,7 +314,7 @@ PQC의 가장 큰 약점인 '서명 데이터의 비대화'를 해결할 비장�
 참고로 SNARKs의 일부 구성(Groth16 등)은 그 자체가 양자 컴퓨터에 취약하기 때문에 내양자성을 가진 해시 함수에만 의존하는 **ZK-STARKs** 의 채택이 핵심이 됩니다.
 
 ### 3단계: 프로토콜 레벨의 하드포크 (2030년경)
-NIST에 의한 PQC 표준화가 완전히 정착되고 업계 표준 라이브러리가 갖추어져 충분히 테스트된 단계에서, Bitcoin이나 Ethereum 등 주요 체인의 기본 서명 방식을 완전히 PQC로 전환하는 하드포크가 실시될 것으로 예상됩니다. 이 전환기에는 사용자에게 '오래된 지갑에서 PQC를 지원하는 새로운 지갑으로 자금을 이동하도록 촉구하는' 대규모 공지가 이루어지게 될 것입니다.
+NIST에 의한 PQC 표준화가 완전히 정착되고 업계 표준 라이브러리가 갖추어져 충분히 테스트된 단계에서, [Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 Ethereum 등 주요 체인의 기본 서명 방식을 완전히 PQC로 전환하는 하드포크가 실시될 것으로 예상됩니다. 이 전환기에는 사용자에게 '오래된 지갑에서 PQC를 지원하는 새로운 지갑으로 자금을 이동하도록 촉구하는' 대규모 공지가 이루어지게 될 것입니다.
 
 ### 선구적인 프로젝트 사례
 
@@ -335,14 +335,14 @@ NIST에 의한 PQC 표준화가 완전히 정착되고 업계 표준 라이브�
 우리 일반 암호자산 사용자나 투자자가 지금 당장 패닉에 빠져 자금을 모두 매각할 필요는 없습니다. 하지만 다음과 같은 기본적인 리터러시와 자기방어 의식을 가지는 것이 중요합니다.
 
 * **주소 재사용을 피한다**: '사용된 주소(한 번이라도 자금을 송금하여 공개키가 블록체인 상에 노출된 주소)'에는 자금을 장기간 보관하지 않도록, 프라이버시 관점뿐만 아니라 보안 관점에서도 철저히 한다.
-* **기술 동향에 주목한다**: Bitcoin의 BIP나 Ethereum의 EIP 등 주요 네트워크의 PQC 전환에 관한 논의나 하드포크 뉴스에 촉각을 곤두세우고, 필요해진 타이밍에 적절히 지갑 전환 작업을 수행할 수 있도록 한다.
+* **기술 동향에 주목한다**: [Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 BIP나 Ethereum의 EIP 등 주요 네트워크의 PQC 전환에 관한 논의나 하드포크 뉴스에 촉각을 곤두세우고, 필요해진 타이밍에 적절히 지갑 전환 작업을 수행할 수 있도록 한다.
 
 블록체인의 역사는 항상 새로운 기술적 위협에 대한 업그레이드와 레질리언스(회복력)의 역사이기도 합니다. 확장성 문제나 환경 문제(PoW에서 PoS로의 전환 등)를 극복해 온 것처럼, 이 전대미문의 양자 위협에 대해서도 생태계 전체가 해결책을 모색하고 적응해 나갈 것입니다.
 양자 컴퓨터라는 인류의 새로운 지혜와 탈중앙화된 분산 원장이라는 신뢰의 기술이 충돌로 인해 붕괴하는 것이 아니라, 더 높은 차원에서 융합된 견고한 시스템으로 승화되어 가는 미래를 기대해 봅니다.
 
 ---
 *참고 문헌 및 관련 링크:*
-* National Institute of Standards and Technology (NIST) - Post-Quantum Cryptography Standardization Project
+* National Institute of Standards and Technology (NIST) - Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy Standardization Project
 * Shor, P. W. (1994). Algorithms for quantum computation: discrete logarithms and factoring.
 * Grover, L. K. (1996). A fast quantum mechanical algorithm for database search.
 * Buterin, V. (2024). How to hard-fork to save most users' funds in a quantum emergency.

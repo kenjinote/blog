@@ -130,7 +130,7 @@ $$\prod_{S} (a - b\alpha) = \gamma^2$$
 
 ---
 
-## Phase Finale : La Fusion des Mondes et l'Effondrement Cryptographique
+## Phase Finale : La Fusion des Mondes et l'Effondrement [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphique
 
 Enfin, toutes les pièces du puzzle sont en place.
 

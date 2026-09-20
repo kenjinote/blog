@@ -167,7 +167,7 @@ Die Skalierung von Tausenden physikalischen Qubits auf ** 20 Millionen ** prakti
 
 Es ist jedoch voreilig zu denken, dass "wir sicher sind, wenn es noch mehr als 10 Jahre dauert". Derzeit gibt es Daten wie nationale Geheimnisse, medizinische Daten und langfristige Infrastrukturdesigns, deren Geheimhaltung für Jahrzehnte garantiert werden muss.
 
-Die Besorgnis betrifft die Angriffsmethode ** "Store Now, Decrypt Later" ** . Böswillige Staaten oder Organisationen fangen alle mit aktueller RSA oder ECC (Elliptic Curve Cryptography) verschlüsselten Kommunikationsdaten ab und speichern sie. Wenn dann in 10 oder 20 Jahren leistungsstarke Quantencomputer fertiggestellt sind, nutzen sie den Shor-Algorithmus, um alle vergangenen Daten zu entschlüsseln und Geheimnisse zu lüften.
+Die Besorgnis betrifft die Angriffsmethode ** "Store Now, Decrypt Later" ** . Böswillige Staaten oder Organisationen fangen alle mit aktueller RSA oder ECC (Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy) verschlüsselten Kommunikationsdaten ab und speichern sie. Wenn dann in 10 oder 20 Jahren leistungsstarke Quantencomputer fertiggestellt sind, nutzen sie den Shor-Algorithmus, um alle vergangenen Daten zu entschlüsseln und Geheimnisse zu lüften.
 
 Um der Bedrohung durch diese zeitliche Verzögerung entgegenzuwirken, hat das NIST (National Institute of Standards and Technology) in den USA den Standardisierungsprozess für ** "Post-Quanten-Kryptographie (PQC)" ** rasch vorangetrieben.
 

@@ -34,7 +34,7 @@ En 1994, Peter Shor publicó el "Algoritmo de Shor", demostrando matemáticament
 
 Aún más grave es la existencia de una técnica de ataque llamada "Cosechar ahora, descifrar después" (Harvest Now, Decrypt Later), en la cual los datos se roban y almacenan hoy para descifrarlos en el futuro cuando la tecnología lo permita. Los datos que requieren mantenerse confidenciales durante décadas, como la información clasificada del estado, la propiedad intelectual corporativa y la información biométrica personal, ya podrían ser objeto de robo con la premisa de ser descifrados en el futuro.
 
-Para hacer frente a esta crisis sin precedentes, criptógrafos e institutos de investigación de todo el mundo están aunando esfuerzos para desarrollar una tecnología criptográfica de próxima generación que pueda mantener la seguridad incluso contra ataques de computadoras cuánticas: la **Criptografía Post-Cuántica (PQC: Post-Quantum Cryptography)**. En este artículo, explicaremos en detalle desde los fundamentos de la PQC hasta cómo funcionan sus principales algoritmos, así como las últimas tendencias de estandarización global impulsadas por el Instituto Nacional de Estándares y Tecnología de los Estados Unidos (NIST).
+Para hacer frente a esta crisis sin precedentes, criptógrafos e institutos de investigación de todo el mundo están aunando esfuerzos para desarrollar una tecnología criptográfica de próxima generación que pueda mantener la seguridad incluso contra ataques de computadoras cuánticas: la **Criptografía Post-Cuántica (PQC: Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)**. En este artículo, explicaremos en detalle desde los fundamentos de la PQC hasta cómo funcionan sus principales algoritmos, así como las últimas tendencias de estandarización global impulsadas por el Instituto Nacional de Estándares y Tecnología de los Estados Unidos (NIST).
 
 ---
 
@@ -71,7 +71,7 @@ graph LR
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-### 1. Criptografía basada en retículos (Lattice-based Cryptography)
+### 1. Criptografía basada en retículos (Lattice-based [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)
 
 Actualmente, la criptografía basada en retículos es la más prometedora y predominante en el campo de la PQC. Su seguridad se fundamenta en problemas relacionados con puntos dispuestos regularmente (puntos de retículo) en espacios multidimensionales. Problemas famosos incluyen el "Problema del Vector Más Corto (SVP)" y el "Aprendizaje con Errores (LWE)".
 
@@ -85,7 +85,7 @@ Imagine innumerables puntos dispuestos como una cuadrícula (retículo) en un es
 
 Muchos de los algoritmos actualmente estandarizados por el NIST (como ML-KEM y ML-DSA) utilizan esta criptografía basada en retículos.
 
-### 2. Criptografía basada en hash (Hash-based Cryptography)
+### 2. Criptografía basada en hash (Hash-based [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)
 
 La criptografía basada en hash es un algoritmo PQC especializado en firmas digitales. La base de su seguridad depende únicamente de la resistencia a colisiones y la unidireccionalidad de "funciones hash criptográficas" seguras como SHA-2 y SHA-3.
 
@@ -103,7 +103,7 @@ Comienza con un esquema de firma de un solo uso llamado "Firma de Lamport". Al a
 
 NIST ha estandarizado "SLH-DSA (anteriormente SPHINCS+)" como una firma basada en hash sin estado.
 
-### 3. Criptografía multivariante (Multivariate Cryptography)
+### 3. Criptografía multivariante (Multivariate [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)
 
 La criptografía de polinomios multivariantes basa su seguridad en la dificultad de resolver un sistema de ecuaciones polinómicas cuadráticas simultáneas con múltiples variables (el problema MQ). Se sabe que este problema es NP-difícil.
 
@@ -118,7 +118,7 @@ El remitente crea un texto cifrado (firma) sustituyendo el texto sin formato (o 
 - El tamaño de la clave pública es muy grande (puede ser de decenas a cientos de kilobytes).
 - En el pasado, algoritmos prominentes (como Rainbow) han sido quebrados por ataques clásicos, lo que dificulta establecer la confianza en su seguridad en comparación con otros métodos.
 
-### 4. Criptografía basada en códigos (Code-based Cryptography)
+### 4. Criptografía basada en códigos (Code-based [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)
 
 La criptografía basada en códigos aplica a la criptografía la teoría de los "códigos de corrección de errores" utilizados para corregir errores en las rutas de comunicación. El "criptosistema McEliece", propuesto en 1978, es el más famoso y uno de los más antiguos de la PQC.
 
@@ -159,7 +159,7 @@ En 2024, el NIST anunció finalmente los siguientes tres algoritmos como Estánd
 
 ### En busca de una mayor diversidad
 
-Si bien el NIST ha completado su proceso de estandarización inicial, continúa explorando más algoritmos. Debido a que el estándar está fuertemente sesgado hacia la "criptografía de retículos", se hace hincapié en asegurar la **"Diversidad Criptográfica" (Crypto Diversity)**. Se están evaluando métodos como la criptografía basada en códigos como estándares de respaldo para el intercambio de claves, lo que fortalecerá aún más la base de la PQC en el futuro.
+Si bien el NIST ha completado su proceso de estandarización inicial, continúa explorando más algoritmos. Debido a que el estándar está fuertemente sesgado hacia la "criptografía de retículos", se hace hincapié en asegurar la **"Diversidad Criptográfica" ([Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) Diversity)**. Se están evaluando métodos como la criptografía basada en códigos como estándares de respaldo para el intercambio de claves, lo que fortalecerá aún más la base de la PQC en el futuro.
 
 ---
 
@@ -171,11 +171,11 @@ Con el lanzamiento de las normas oficiales por parte del NIST, agencias gubernam
 
 Como los algoritmos PQC son nuevos, no han superado la "prueba del tiempo" en comparación con la criptografía clásica. Considerando el riesgo de posibles errores de implementación o el descubrimiento de nuevos métodos de ataque, se recomienda un **"enfoque híbrido"** durante el período de transición. Esto implica combinar criptografía existente probada (por ejemplo, ECDHE) con la nueva PQC (por ejemplo, ML-KEM) para el intercambio de claves. Actualmente, los principales navegadores y servicios en la nube están avanzando rápidamente en implementaciones de prueba de este método.
 
-### Lograr la Agilidad Criptográfica (Crypto-Agility)
+### Lograr la Agilidad Criptográfica ([Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)-Agility)
 
-Lo que las empresas y los desarrolladores de sistemas deben tener más presente en el futuro es asegurar la **"Agilidad Criptográfica" (Crypto-Agility)**. Es indispensable diseñar una arquitectura flexible que permita reemplazar y actualizar rápidamente los algoritmos criptográficos sin detener el sistema, en caso de que se descubran fallos en los algoritmos en el futuro o surjan nuevos estándares.
+Lo que las empresas y los desarrolladores de sistemas deben tener más presente en el futuro es asegurar la **"Agilidad Criptográfica" ([Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)-Agility)**. Es indispensable diseñar una arquitectura flexible que permita reemplazar y actualizar rápidamente los algoritmos criptográficos sin detener el sistema, en caso de que se descubran fallos en los algoritmos en el futuro o surjan nuevos estándares.
 
-El primer y crucial paso para la transición a PQC es la creación de un Inventario Criptográfico (CBOM: Cryptography Bill of Materials), que permita saber exactamente "dónde", "qué criptografía" y "con qué propósito" se está utilizando dentro de los sistemas de la empresa.
+El primer y crucial paso para la transición a PQC es la creación de un Inventario Criptográfico (CBOM: [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy Bill of Materials), que permita saber exactamente "dónde", "qué criptografía" y "con qué propósito" se está utilizando dentro de los sistemas de la empresa.
 
 ---
 

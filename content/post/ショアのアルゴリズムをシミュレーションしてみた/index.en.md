@@ -10,7 +10,7 @@ tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: "A detailed explanation of how quantum computers could break modern cryptography, covering the mathematical background of Shor's algorithm to its implementation in Python."
 ---
 
-# 1. Introduction: The Cryptographic Crisis Brought by Quantum Computers
+# 1. Introduction: The [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Crisis Brought by Quantum Computers
 
 Much of the security in modern internet society relies on **public-key cryptography** (especially RSA encryption). When we transmit credit card information for online shopping or exchange highly confidential data, the content of that communication is strongly protected by RSA encryption.
 
@@ -335,9 +335,9 @@ To break 2048-bit RSA encryption, it is estimated that thousands of perfect logi
 
 ---
 
-# 7. Transitioning to Post-Quantum Cryptography (PQC)
+# 7. Transitioning to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)
 
-In preparation for the arrival of "Q-Day" (the day quantum computers break cryptography), cryptographers around the world, spearheaded by the National Institute of Standards and Technology (NIST) in the US, are pushing forward with the standardization of **Post-Quantum Cryptography (PQC)**.
+In preparation for the arrival of "Q-Day" (the day quantum computers break cryptography), cryptographers around the world, spearheaded by the National Institute of Standards and Technology (NIST) in the US, are pushing forward with the standardization of **Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)**.
 
 PQC is based on new mathematical problems (such as lattice problems, multivariate polynomial problems, and hash-based functions) that are mathematically considered inefficient to solve even using Shor's algorithm (or Grover's algorithm). Algorithms like "CRYSTALS-Kyber" and "CRYSTALS-Dilithium" have already been selected as standard specifications, and their integration into Apple's iMessage and various web browser communication protocols is gradually beginning.
 

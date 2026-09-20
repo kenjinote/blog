@@ -14,7 +14,7 @@ description: '针对量子计算机崛起带来的密码学危机威胁，以及
 
 在现代互联网社会中，为了保护通信的机密性和数据的完整性，公钥密码技术作为基础设施是不可或缺的。目前广泛使用的RSA加密和椭圆曲线加密（ECC），分别依赖于“大整数素数分解的困难性”和“椭圆曲线上离散对数问题的困难性”等数学壁垒来保证安全性。在经典计算机（包括超级计算机在内的我们目前使用的计算机）上，解开这些数学问题被证明需要比宇宙年龄还要长的时间，这一直是其安全性的依据。
 
-然而，这一坚固的前提正随着 **量子计算机** 的理论与实用化进展而面临被彻底颠覆的危险。1994年，密码学家彼得·秀尔（Peter Shor）发表了“ **Shor算法** ”，理论上证明了在具备足够性能的容错通用量子计算机（CRQC: Cryptographically Relevant Quantum Computer）上运行该算法，能够在“多项式时间”内破解素数分解问题和离散对数问题。这意味着目前使用的所有公钥密码都将被使其无效化。
+然而，这一坚固的前提正随着 **量子计算机** 的理论与实用化进展而面临被彻底颠覆的危险。1994年，密码学家彼得·秀尔（Peter Shor）发表了“ **Shor算法** ”，理论上证明了在具备足够性能的容错通用量子计算机（CRQC: [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer）上运行该算法，能够在“多项式时间”内破解素数分解问题和离散对数问题。这意味着目前使用的所有公钥密码都将被使其无效化。
 
 ```mermaid
 graph TD
@@ -30,7 +30,7 @@ graph TD
 
 此外，针对对称密钥加密（如AES）和哈希函数（如SHA-256），1996年发现的 **Grover算法** 也同样存在。它能够将暴力破解（穷举攻击）的计算量减少到原来的平方根。也就是说，AES-128的安全级别实际上减半到了2的64次方，因此在量子时代，建议使用AES-256和SHA-384等更长的密钥和哈希长度。
 
-为了应对这场前所未有的密码危机，基于即便使用量子计算机也难以破解的新数学问题的 **抗量子密码学（Post-Quantum Cryptography: PQC）** 应运而生。本文将基于美国国家标准与技术研究院（NIST）主导推进的PQC标准化进程的结果，从数学背景、机制到架构比较，极其详尽地解说主要的PQC算法。
+为了应对这场前所未有的密码危机，基于即便使用量子计算机也难以破解的新数学问题的 **抗量子密码学（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: PQC）** 应运而生。本文将基于美国国家标准与技术研究院（NIST）主导推进的PQC标准化进程的结果，从数学背景、机制到架构比较，极其详尽地解说主要的PQC算法。
 
 ---
 
@@ -49,7 +49,7 @@ graph TD
 - **FIPS 205 (SLH-DSA)**: 基于SPHINCS+的无状态基于哈希的签名
 - **（未来计划制定）FN-DSA**: 基于FALCON的数字签名
 
-这些被选定的算法所依赖的数学“困难性问题”各不相同，确保了即使某个算法将来被发现存在致命漏洞，整个系统也不会崩溃的多样性（Crypto Agility）。在标准化流程中，基于性能方面的考虑，格密码学（Lattice-based cryptography）成为了主力，而基于哈希的密码和基于编码的密码则作为强大的备份被采用。
+这些被选定的算法所依赖的数学“困难性问题”各不相同，确保了即使某个算法将来被发现存在致命漏洞，整个系统也不会崩溃的多样性（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/) Agility）。在标准化流程中，基于性能方面的考虑，格密码学（Lattice-based cryptography）成为了主力，而基于哈希的密码和基于编码的密码则作为强大的备份被采用。
 
 ---
 
@@ -57,15 +57,15 @@ graph TD
 
 PQC算法根据其安全性依据的数学问题，主要分为以下五大类。本文将特别深入探讨前三类。
 
-1. **格密码学 (Lattice-based Cryptography)**:
+1. **格密码学 (Lattice-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy)**:
    基于多维格空间中的最短向量问题（SVP）、最近向量问题（CVP）及其衍生出的LWE问题。它是NIST标准化的核心，Kyber、Dilithium、FALCON均属于此类。处理速度、公钥大小和密文大小的平衡最出色，适合通用场景。
-2. **基于哈希的密码学 (Hash-based Cryptography)**:
+2. **基于哈希的密码学 (Hash-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy)**:
    仅依赖于密码学哈希函数（如SHA-2、SHAKE等）的“抗碰撞性”和“单向性”作为安全性依据。只能应用于数字签名（如SPHINCS+），但其安全性证明最为坚固，对未知的数学攻击具有极高的抵抗力。
-3. **基于编码的密码学 (Code-based Cryptography)**:
+3. **基于编码的密码学 (Code-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy)**:
    基于纠错码理论，依赖于伴随式解码问题（Syndrome Decoding Problem）的困难性。代表是20世纪70年代提出的Classic McEliece，拥有悠久的历史和已被验证的安全性，但缺点是公钥尺寸极大，达到兆字节级别。
-4. **多变量多项式密码学 (Multivariate Polynomial Cryptography)**:
+4. **多变量多项式密码学 (Multivariate Polynomial [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy)**:
    基于求解有限域上多变量非线性二次方程组（MQ问题）的困难性。主要作为数字签名提出（如Rainbow等），但在NIST最后一轮评估期间，被发现只需一台普通电脑运行几天即可破解的强大攻击手段，导致许多算法退出了标准化。
-5. **基于同源的密码学 (Isogeny-based Cryptography)**:
+5. **基于同源的密码学 (Isogeny-based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy)**:
    基于椭圆曲线同源（Isogeny）图上的路径搜索问题。密钥尺寸非常小，曾被寄予厚望成为ECC的正统继任者，但最终候选者“SIKE”在2022年被利用经典数学（如Castryck-Decru攻击）在一台普通PC上仅耗时数小时就被完全破解，这场戏剧性的落幕象征着PQC设计的艰难与可怕。
 
 ---
@@ -294,7 +294,7 @@ Classic McEliece令人惊叹之处在于， **它提出已逾40年，经历了�
 
 但是，突然完全切换到新密码算法伴随着非常高的风险。假设几年后有一位天才数学家发现了针对Kyber等格密码学的致命攻击手法（甚至连经典计算机也能利用的数学缺陷），那么依赖该算法的所有系统将会瞬间裸奔。
 
-为了减轻这种不确定性风险，一个务实且被推荐的策略是“ **混合加密 (Hybrid Cryptography)** ”。
+为了减轻这种不确定性风险，一个务实且被推荐的策略是“ **混合加密 (Hybrid [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy)** ”。
 
 混合加密中，同时使用拥有多年实际验证的现行经典加密（如X25519等椭圆曲线加密）与新的PQC（如Kyber768）来进行密钥交换。各自的算法分别生成对称密钥的成分，最后使用安全的密钥派生函数（KDF）将两个成分混合，生成最终的主密钥。
 
@@ -310,7 +310,7 @@ graph TD
 
 如此一来，就实现了坚固的双重安全保障：“万一量子计算机实现并破解了ECC，Kyber能保护通信”；反之，“万一Kyber被发现了未知的数学缺陷，ECC依然能保护通信”。作为典型代表，IETF正在推进标准化的 **X25519MLKEM768 (原 X25519Kyber768)** 草案，正是目前Web浏览器与最先进的服务器间通信所采用的混合方式。
 
-此外，在系统设计中，构建一种“不过度依赖特定密码算法，当算法崩溃时能迅速切换到另一算法（如从Kyber切换至McEliece，从Dilithium切换至SPHINCS+）的架构”的理念，即 **Crypto Agility（密码敏捷性）** ，将成为未来系统开发中的必备要求。
+此外，在系统设计中，构建一种“不过度依赖特定密码算法，当算法崩溃时能迅速切换到另一算法（如从Kyber切换至McEliece，从Dilithium切换至SPHINCS+）的架构”的理念，即 **[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/) Agility（密码敏捷性）** ，将成为未来系统开发中的必备要求。
 
 ---
 
@@ -324,7 +324,7 @@ NIST完成了 FIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) 的标�
 
 ---
 *References:*
-* *NIST Post-Quantum Cryptography Standardization Program*
+* *NIST Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*

@@ -12,7 +12,7 @@ description: '從古代的凱撒密碼，到恩尼格瑪密碼機、公開金鑰
 
 # 1. 簡介：什麼是密碼學？
 
-密碼學（Cryptography）是為了保持資訊機密性的一門技術，它伴隨著人類歷史不斷演進。從古代戰爭中傳遞秘密指令，到現代網際網路保護信用卡資訊，密碼學的目的始終如一：即「確保只有預期的接收者能理解資訊，而第三方無法解密」。
+密碼學（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）是為了保持資訊機密性的一門技術，它伴隨著人類歷史不斷演進。從古代戰爭中傳遞秘密指令，到現代網際網路保護信用卡資訊，密碼學的目的始終如一：即「確保只有預期的接收者能理解資訊，而第三方無法解密」。
 
 在現代資訊安全中，密碼學不僅僅是「隱藏資訊（機密性: Confidentiality）」，它還擔負著確保資料「完整性（Integrity）」、「身分鑑別（Authentication）」與「不可否認性（Non-repudiation）」等重要角色。
 
@@ -197,7 +197,7 @@ rsa_example()
 
 RSA 加密雖然強大，但隨著電腦效能的提升，為了維持安全性必須加長金鑰長度（目前為 2048 位元或 3072 位元），這導致了運算成本增加的問題。
 
-因此在 1985 年提出了「橢圓曲線密碼學（Elliptic Curve Cryptography: ECC）」。這利用了有限體上橢圓曲線（通常為 $y^2 = x^3 + ax + b$ 形式）的點加法。
+因此在 1985 年提出了「橢圓曲線密碼學（Elliptic Curve [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy: ECC）」。這利用了有限體上橢圓曲線（通常為 $y^2 = x^3 + ax + b$ 形式）的點加法。
 
 橢圓曲線上的離散對數問題（ECDLP）已知比質因數分解問題更難求解， **ECC 只要 256 位元的金鑰長度，就能實現與 RSA 3072 位元同等的安全性** 。這使得在智慧型手機或 IoT 裝置等運算資源有限的環境中，也能進行高速且安全的加密通訊（如 ECDSA 或 ECDH 等）。
 
@@ -212,7 +212,7 @@ RSA 加密雖然強大，但隨著電腦效能的提升，為了維持安全性�
 ## PQC（後量子密碼學）的登場
 為防範這個前所未有的威脅，基於連量子電腦也難以破解的新數學問題的「後量子密碼學（PQC）」研究正快馬加鞭地進行著。NIST（美國國家標準暨技術研究院）長年來持續推動 PQC 的標準化流程，主要以下列數學方法最具潛力。
 
-### 1. 晶格密碼學（Lattice-based Cryptography）
+### 1. 晶格密碼學（Lattice-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 這是目前最有潛力的方法，也被 NIST 的標準化演算法（ML-KEM / Kyber、ML-DSA / Dilithium）所採用。它基於在多維空間的「晶格（Lattice）」上尋找特定點的問題（如最短向量問題: SVP 等），以及 LWE（Learning With Errors: 錯誤學習）問題的困難性。
 
 LWE 問題的概念利用了當我們在聯立一次方程式中刻意加入「小雜訊（誤差）」時，求解會瞬間變得極為困難的特性。
@@ -238,10 +238,10 @@ b = (np.dot(A, s) + e) % q
 # 即使使用量子電腦，要從 A 和 b 還原 s 也被認為是非常困難的
 ```
 
-### 2. 雜湊基礎密碼學（Hash-based Cryptography）
+### 2. 雜湊基礎密碼學（Hash-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 這是一種僅以雜湊函數的抗碰撞性作為安全性基礎的數位簽章方案。由於不具備數學結構，因此能有效抵抗量子攻擊，但簽章大小往往較大（如 SPHINCS+ 等）。
 
-### 3. 編碼基礎密碼學（Code-based Cryptography）
+### 3. 編碼基礎密碼學（Code-based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 這是一種基於錯誤更正碼理論的加密方式。1978 年提出的 McEliece 加密等較為著名，歷史悠久且安全性備受肯定，但存在公開金鑰尺寸極大（有時高達數 MB）的課題。
 
 ```mermaid
@@ -263,7 +263,7 @@ timeline
 
 凱撒密碼敗給了頻率分析，號稱無敵的恩尼格瑪密碼機則敗給了圖靈的天才頭腦與機器的力量。而現在，支撐現代網際網路社會根基的 RSA 與 ECC 等強大密碼，也正暴露在量子電腦這個全新的「矛」的威脅之下。
 
-然而，人類已經放眼未來的下一步，正在準備名為後量子密碼學（PQC）的全新「盾」。目前，在全世界的 IT 基礎設施中，確保從現有公開金鑰加密轉移至 PQC 的準備（確保密碼靈活性，Crypto Agility）已成為當務之急。
+然而，人類已經放眼未來的下一步，正在準備名為後量子密碼學（PQC）的全新「盾」。目前，在全世界的 IT 基礎設施中，確保從現有公開金鑰加密轉移至 PQC 的準備（確保密碼靈活性，[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Agility）已成為當務之急。
 
 密碼技術不僅僅是艱澀難懂的數學謎題，它是為了保護我們的隱私、財產，乃至社會基礎設施本身的最強防壁。
 

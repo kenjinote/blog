@@ -8,7 +8,7 @@ categories: ["math-cryptography-quantum"]
 description: 'Explains how RSA encryption, which supports modern communication infrastructure, is threatened by the rise of quantum computers. Discusses the future of next-generation cryptanalysis and security, from the mechanics of Shor''s algorithm to the current state of hardware in the NISQ era.'
 ---
 
-## Introduction: The Intersection of Cryptography and Quantum Computers
+## Introduction: The Intersection of [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and Quantum Computers
 
 In modern Internet society, "public-key cryptography" is the foundation for protecting the secrecy of communications. A representative example of this is "RSA encryption," developed in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman. From online shopping payments we use every day to website browsing (HTTPS) and email transmission/reception, RSA encryption functions as the heart of the Internet infrastructure.
 
@@ -165,9 +165,9 @@ Scaling up from a few thousand physical qubits to **20 million** practical physi
 
 It is premature to think, "We are safe since it will still take more than 10 years." Currently, there is data that must remain secret for decades to come, such as national classified information, medical data, and long-term infrastructure designs.
 
-What is feared here is the threat of an attack method known as **"Store Now, Decrypt Later"**. Malicious nations or organizations intercept all communication data currently encrypted with RSA or ECC (Elliptic Curve Cryptography) and store it in storage. Then, 10 or 20 years later, the moment a powerful quantum computer is completed, they use Shor's algorithm to decrypt all past data and expose secrets.
+What is feared here is the threat of an attack method known as **"Store Now, Decrypt Later"**. Malicious nations or organizations intercept all communication data currently encrypted with RSA or ECC (Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy) and store it in storage. Then, 10 or 20 years later, the moment a powerful quantum computer is completed, they use Shor's algorithm to decrypt all past data and expose secrets.
 
-To counter this time lag threat, the standardization process for **"Post-Quantum Cryptography (PQC)"** has been rapidly advancing, primarily led by NIST (National Institute of Standards and Technology).
+To counter this time lag threat, the standardization process for **"Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)"** has been rapidly advancing, primarily led by NIST (National Institute of Standards and Technology).
 
 PQC is a new cryptographic algorithm based on mathematical problems that are difficult to solve even with a quantum computer (i.e., Shor's algorithm cannot be applied). The main approaches include the following:
 

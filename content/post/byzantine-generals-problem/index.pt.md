@@ -149,7 +149,7 @@ Através deste processo, mesmo se houver $m$ nós defeituosos ou maliciosos na r
 
 ### Consenso Nakamoto (Proof of Work)
 
-Satoshi Nakamoto, o criador do Bitcoin, lidou com este problema com uma abordagem completamente nova. Essa é a combinação do **Proof of Work** (PoW) e da regra de que a cadeia mais longa é a correta, conhecido como **Consenso Nakamoto**.
+Satoshi Nakamoto, o criador do [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/), lidou com este problema com uma abordagem completamente nova. Essa é a combinação do **Proof of Work** (PoW) e da regra de que a cadeia mais longa é a correta, conhecido como **Consenso Nakamoto**.
 
 No Consenso Nakamoto, apenas aquele que vence a competição de cálculo matemático (mineração) ganha o direito de propor um bloco. Para forçar a rede a aceitar informações falsas, seria necessário controlar mais de metade (mais de 51%) do poder computacional de toda a rede, o que na realidade foi concebido para ser extremamente difícil. Isso resolve probabilisticamente o Problema dos Generais Bizantinos numa rede aberta, da qual pode participar um número indeterminado de pessoas.
 

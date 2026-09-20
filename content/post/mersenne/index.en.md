@@ -91,7 +91,7 @@ At the time, checking the primality of huge numbers by hand was practically impo
 
 Verification by later mathematicians revealed that there were several errors in [Mersenne](https://kenji.blog/en/p/mersenne/)'s list ($n = 67$ and $257$ are composite, while in reality it is prime for $n = 61, 89, 107$). It took about three centuries (until 1947) for the list to be completely corrected. Nevertheless, the problem he posed continued to fascinate mathematicians for centuries.
 
-### Applications to Modern Cryptography and GIMPS
+### Applications to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and GIMPS
 
 Today, [Mersenne](https://kenji.blog/en/p/mersenne/) primes continue to be explored by "GIMPS" (Great Internet [Mersenne](https://kenji.blog/en/p/mersenne/) Prime Search), a project dedicated to finding the world's largest prime numbers. Because there is a special, fast primality test called the Lucas-Lehmer test, [Mersenne](https://kenji.blog/en/p/mersenne/) numbers are extremely well-suited for discovering gigantic primes.
 

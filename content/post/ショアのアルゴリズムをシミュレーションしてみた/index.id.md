@@ -337,7 +337,7 @@ Diperkirakan untuk mematahkan enkripsi RSA 2048-bit, ribuan qubit logis yang sem
 
 # 7. Transisi menuju Kriptografi Pasca-Kuantum (PQC)
 
-Untuk bersiap menghadapi datangnya "Q-Day (Hari di mana komputer kuantum mematahkan kriptografi)", ahli kriptografi dari seluruh dunia, dipimpin oleh Institut Nasional Standar dan Teknologi (NIST) di Amerika Serikat, sedang merumuskan **Kriptografi Pasca-Kuantum (Post-Quantum Cryptography, PQC)**.
+Untuk bersiap menghadapi datangnya "Q-Day (Hari di mana komputer kuantum mematahkan kriptografi)", ahli kriptografi dari seluruh dunia, dipimpin oleh Institut Nasional Standar dan Teknologi (NIST) di Amerika Serikat, sedang merumuskan **Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy, PQC)**.
 
 PQC didasarkan pada masalah matematis baru (seperti masalah kisi (lattice-based), polinomial multivariat, dan berbasis fungsi hash) yang secara matematis dianggap tidak dapat diselesaikan secara efisien bahkan jika menggunakan Algoritma Shor (ataupun Algoritma Grover). Algoritma seperti "CRYSTALS-Kyber" dan "CRYSTALS-Dilithium" telah dipilih sebagai standar, dan penerapannya secara bertahap mulai dilakukan pada iMessage milik Apple dan berbagai protokol komunikasi browser web.
 

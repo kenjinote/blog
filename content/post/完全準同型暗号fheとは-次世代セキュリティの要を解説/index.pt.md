@@ -77,7 +77,7 @@ Por muito tempo, a FHE foi chamada de o "Santo Graal do mundo da criptografia" e
 
 ## 3. A Base Matemática da FHE: O Problema LWE e Ring-LWE
 
-Muitos esquemas modernos de FHE baseiam-se no **problema LWE (Learning With Errors)**, um difícil problema matemático da "Criptografia baseada em Reticulados (Lattice-based Cryptography)", também conhecida como Criptografia Pós-Quântica (Post-Quantum Cryptography).
+Muitos esquemas modernos de FHE baseiam-se no **problema LWE (Learning With Errors)**, um difícil problema matemático da "Criptografia baseada em Reticulados (Lattice-based [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)", também conhecida como Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy).
 
 ### Entendimento Intuitivo do Problema LWE
 Resolver um sistema de equações lineares é fácil usando métodos como a eliminação de Gauss.

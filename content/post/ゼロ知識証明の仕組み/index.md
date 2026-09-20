@@ -127,7 +127,7 @@ Eli Ben-Sassonらによって開発されたSTARKsは、「Transparent（透明�
 
 ### 1. 多項式コミットメントとFRIプロトコル
 
-zk-STARKsは楕円曲線暗号ではなく、 **ハッシュ関数のみ** にセキュリティの根拠を置いています。そのため、耐量子計算機暗号（Post-Quantum Cryptography）としての性質を持ちます。
+zk-STARKsは楕円曲線暗号ではなく、 **ハッシュ関数のみ** にセキュリティの根拠を置いています。そのため、耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）としての性質を持ちます。
 
 計算の検証は、AIR（Algebraic Intermediate Representation）と呼ばれる形式に変換された後、一次元または多次元の多項式の性質を利用して行われます。STARKsの核心は、 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity）** プロトコルにあります。
 

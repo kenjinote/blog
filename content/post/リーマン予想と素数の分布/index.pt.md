@@ -192,7 +192,7 @@ Se for estabelecido um método desconhecido de geometria algébrica ou de geomet
 ### Computadores Quânticos e o Algoritmo de Shor
 Uma ameaça mais direta e realista à criptografia não é a prova da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), mas os **computadores quânticos**. O "Algoritmo de Shor", anunciado por Peter Shor em 1994, provou que, com um computador quântico de capacidade suficiente, a fatoração pode ser resolvida em tempo polinomial. Isso fundamentalmente quebraria a criptografia RSA e a criptografia de curva elíptica.
 
-Atualmente, ao redor do mundo, há uma transição em andamento para a "Criptografia Pós-Quântica (Post-Quantum Cryptography, PQC)" (como a criptografia baseada em reticulados), que não pode ser decifrada nem por computadores quânticos. As tecnologias de criptografia baseadas em números primos podem, de certa forma, estar encerrando sua era de ouro, mas o valor matemático dos números primos em si nunca se perderá.
+Atualmente, ao redor do mundo, há uma transição em andamento para a "Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy, PQC)" (como a criptografia baseada em reticulados), que não pode ser decifrada nem por computadores quânticos. As tecnologias de criptografia baseadas em números primos podem, de certa forma, estar encerrando sua era de ouro, mas o valor matemático dos números primos em si nunca se perderá.
 
 ---
 

@@ -337,11 +337,11 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 
 # 7. 向抗量子计算密码（PQC）过渡
 
-为了应对这样的“Q-Day（量子计算机破解密码之日）”的到来，以美国国家标准与技术研究院（NIST）为首，全世界的密码学家都在推动 **抗量子计算密码（Post-Quantum Cryptography, PQC）** 的制定。
+为了应对这样的“Q-Day（量子计算机破解密码之日）”的到来，以美国国家标准与技术研究院（NIST）为首，全世界的密码学家都在推动 **抗量子计算密码（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy, PQC）** 的制定。
 
 PQC基于新的数学问题（如格问题、多变量多项式问题、基于哈希函数等），在数学上被认为即使使用秀尔算法（或使用格罗弗算法）也无法高效求解。已经有诸如“CRYSTALS-Kyber”和“CRYSTALS-Dilithium”等算法被选为标准规范，并正逐步引入Apple的iMessage和各种Web浏览器的通信协议中。
 
-对于管理IT基础设施的工程师来说，将系统从现有的RSA或椭圆曲线加密向PQC过渡，并建立“密码敏捷性（Crypto-Agility：能够快速切换加密方式的设计）”，将是未来的重要使命。
+对于管理IT基础设施的工程师来说，将系统从现有的RSA或椭圆曲线加密向PQC过渡，并建立“密码敏捷性（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)-Agility：能够快速切换加密方式的设计）”，将是未来的重要使命。
 
 ---
 

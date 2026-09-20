@@ -167,7 +167,7 @@ Adalah terlalu dini untuk berpikir bahwa "Aman karena masih butuh lebih dari 10 
 
 Yang menjadi perhatian di sini adalah metode serangan ** "Store Now, Decrypt Later" (Simpan Sekarang, Dekripsi Nanti) **. Negara atau organisasi yang berniat jahat dapat mencegat semua data komunikasi yang saat ini dienkripsi dengan RSA atau ECC, dan menyimpannya. Kemudian, dalam 10 atau 20 tahun, segera setelah komputer kuantum yang kuat selesai dibangun, mereka akan menggunakan algoritma Shor untuk memecahkan semua data yang lalu dan mengungkap rahasianya.
 
-Untuk mengatasi ancaman kelambatan waktu ini, proses standardisasi ** "Kriptografi Pasca-Kuantum" (PQC: Post-Quantum Cryptography) ** telah berjalan dengan kecepatan penuh, berpusat di NIST (National Institute of Standards and Technology AS).
+Untuk mengatasi ancaman kelambatan waktu ini, proses standardisasi ** "Kriptografi Pasca-Kuantum" (PQC: Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy) ** telah berjalan dengan kecepatan penuh, berpusat di NIST (National Institute of Standards and Technology AS).
 
 PQC adalah algoritma enkripsi baru berdasarkan masalah matematika yang sulit dipecahkan bahkan dengan komputer kuantum (dengan kata lain, algoritma Shor tidak dapat diterapkan). Pendekatan utamanya adalah:
 

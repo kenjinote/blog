@@ -17,7 +17,7 @@ Dans cet article, en partant des connaissances mathématiques du lycée, nous ex
 
 ---
 
-## 1. Cryptographie à clé symétrique et cryptographie à clé publique
+## 1. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie à clé symétrique et cryptographie à clé publique
 
 Avant d'aborder le mécanisme mathématique de la cryptographie RSA, passons d'abord en revue les concepts de base de la cryptographie. Les méthodes de chiffrement sont généralement divisées en deux types : la « cryptographie à clé symétrique » (ou clé secrète) et la « cryptographie à clé publique ».
 
@@ -29,7 +29,7 @@ Par exemple, supposons qu'Alice veuille envoyer une lettre secrète à Bob. Alic
 
 Cette méthode pose un problème majeur : le « problème de distribution des clés ». Lorsque Alice et Bob, éloignés l'un de l'autre, communiquent pour la première fois, comment peuvent-ils partager la clé sans être sur écoute ? Si la clé est volée par un tiers pendant son envoi par la poste, toutes les communications chiffrées ultérieures seront complètement compromises.
 
-### 1.2 L'invention révolutionnaire : la « Cryptographie à clé publique »
+### 1.2 L'invention révolutionnaire : la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie à clé publique »
 
 La « cryptographie à clé publique » a été inventée pour résoudre ce problème de distribution des clés. La cryptographie RSA en est un type.
 

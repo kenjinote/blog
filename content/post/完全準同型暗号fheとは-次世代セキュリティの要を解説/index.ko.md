@@ -77,7 +77,7 @@ FHE는 오랫동안 '암호계의 성배'로 불리며 실현 불가능한 것�
 
 ## 3. FHE의 수학적 기반: LWE 문제와 Ring-LWE
 
-현재 주류가 되고 있는 FHE 체계의 대부분은 내양자 컴퓨터 암호(Post-Quantum Cryptography)로도 알려진 '격자 기반 암호(Lattice-based Cryptography)'의 수학적 난제인 **LWE (Learning With Errors) 문제** 에 기반하고 있습니다.
+현재 주류가 되고 있는 FHE 체계의 대부분은 내양자 컴퓨터 암호(Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)로도 알려진 '격자 기반 암호(Lattice-based [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)'의 수학적 난제인 **LWE (Learning With Errors) 문제** 에 기반하고 있습니다.
 
 ### LWE 문제의 직관적인 이해
 연립일차방정식을 푸는 것은 가우스 소거법 등을 이용하면 간단합니다.

@@ -69,7 +69,7 @@ Wenn Hash-Kollisionen definitiv existieren, könnte es dann nicht gefährlich se
 
 Die Antwort lautet **„Theoretisch ist es möglich, aber in der Praxis ist es absolut unmöglich (Kollisionsresistenz)“**. Der Grund dafür ist die schiere „Größe der Fächer (Hash-Werte)“.
 
-Betrachten wir als Beispiel SHA-256 (256-Bit-Länge), das in Bitcoin und anderen Systemen verwendet wird.
+Betrachten wir als Beispiel SHA-256 (256-Bit-Länge), das in [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) und anderen Systemen verwendet wird.
 Die Anzahl der Taubenschläge (die Gesamtzahl der möglichen Kombinationen von Hash-Werten) für SHA-256 beträgt $2^{256}$.
 
 $$

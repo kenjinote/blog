@@ -191,7 +191,7 @@ Jika suatu metode geometri aljabar atau geometri non-komutatif yang belum diketa
 ### Komputer Kuantum dan Algoritma Shor
 Ancaman yang lebih langsung dan nyata bagi teknologi kriptografi bukanlah pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), melainkan **komputer kuantum**. "Algoritma Shor", yang dipublikasikan oleh Peter Shor pada tahun 1994, membuktikan bahwa jika terdapat komputer kuantum dengan performa yang cukup, faktorisasi prima dapat dipecahkan dalam waktu polinomial. Hal ini secara mendasar akan mematahkan kriptografi RSA maupun kriptografi kurva eliptik.
 
-Saat ini, transisi menuju "Kriptografi Pasca-Kuantum (Post-Quantum Cryptography, PQC)" (seperti kriptografi kisi/lattice-based cryptography), yang bahkan tidak dapat dipecahkan oleh komputer kuantum, sedang digalakkan di seluruh dunia. Teknologi kriptografi yang bergantung pada bilangan prima dalam beberapa artian mungkin sedang mendekati akhir masa keemasannya, namun nilai matematis dari bilangan prima itu sendiri tidak akan pernah pudar selamanya.
+Saat ini, transisi menuju "Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy, PQC)" (seperti kriptografi kisi/lattice-based cryptography), yang bahkan tidak dapat dipecahkan oleh komputer kuantum, sedang digalakkan di seluruh dunia. Teknologi kriptografi yang bergantung pada bilangan prima dalam beberapa artian mungkin sedang mendekati akhir masa keemasannya, namun nilai matematis dari bilangan prima itu sendiri tidak akan pernah pudar selamanya.
 
 ---
 

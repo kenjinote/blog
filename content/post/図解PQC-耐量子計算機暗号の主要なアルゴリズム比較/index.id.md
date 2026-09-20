@@ -14,7 +14,7 @@ description: 'Penjelasan mendetail mengenai ancaman kompromi kriptografi akibat 
 
 Dalam masyarakat internet modern, teknologi kriptografi kunci publik sangat diperlukan sebagai infrastruktur untuk melindungi kerahasiaan komunikasi dan integritas data. Kriptografi RSA dan Kriptografi Kurva Eliptik (ECC) yang banyak digunakan saat ini, masing-masing bergantung pada penghalang matematis berupa "kesulitan pemfaktoran bilangan komposit besar" dan "kesulitan masalah logaritma diskrit pada kurva eliptik" untuk menjamin keamanannya. Pada komputer klasik (termasuk superkomputer yang kita gunakan saat ini), telah dibuktikan bahwa memecahkan masalah matematis ini membutuhkan waktu yang lebih lama dari usia alam semesta, yang mana hal ini menjadi dasar dari keamanan tersebut.
 
-Namun, premis yang kokoh ini akan dirobohkan oleh teori dan kemajuan praktis dari **komputer kuantum**. Pada tahun 1994, kriptografer Peter Shor menerbitkan "**Algoritma Shor**", yang secara teoretis membuktikan bahwa masalah pemfaktoran prima dan logaritma diskrit dapat dipecahkan dalam "waktu polinomial" dengan menjalankannya di atas komputer kuantum toleransi kesalahan tujuan umum (CRQC: Cryptographically Relevant Quantum Computer) dengan kinerja yang memadai. Ini berarti bahwa semua kriptografi kunci publik yang digunakan saat ini akan menjadi tidak berguna.
+Namun, premis yang kokoh ini akan dirobohkan oleh teori dan kemajuan praktis dari **komputer kuantum**. Pada tahun 1994, kriptografer Peter Shor menerbitkan "**Algoritma Shor**", yang secara teoretis membuktikan bahwa masalah pemfaktoran prima dan logaritma diskrit dapat dipecahkan dalam "waktu polinomial" dengan menjalankannya di atas komputer kuantum toleransi kesalahan tujuan umum (CRQC: [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer) dengan kinerja yang memadai. Ini berarti bahwa semua kriptografi kunci publik yang digunakan saat ini akan menjadi tidak berguna.
 
 ```mermaid
 graph TD
@@ -30,7 +30,7 @@ Adalah sangat berbahaya jika berpikir bahwa "tidak ada masalah karena penyelesai
 
 Selain itu, ada juga **Algoritma Grover**, yang ditemukan pada tahun 1996, yang memengaruhi kriptografi kunci simetris (seperti AES) dan fungsi hash (seperti SHA-256). Hal ini mengurangi kompleksitas komputasi serangan brute force (uji coba menyeluruh) menjadi akar kuadratnya. Dengan kata lain, tingkat keamanan AES-128 secara efektif berkurang setengahnya menjadi 2 pangkat 64, sehingga pada era kuantum, penggunaan kunci yang lebih panjang dan panjang hash seperti AES-256 dan SHA-384 direkomendasikan.
 
-Untuk melawan krisis kriptografi yang belum pernah terjadi sebelumnya ini, **Kriptografi Pasca-Kuantum (Post-Quantum Cryptography: PQC)** dilahirkan, yang didasarkan pada masalah matematis baru yang sulit dipecahkan bahkan dengan menggunakan komputer kuantum. Berdasarkan hasil proses standarisasi PQC yang dipimpin oleh National Institute of Standards and Technology (NIST) Amerika Serikat, artikel ini akan menjelaskan secara sangat rinci mengenai algoritma PQC utama, mulai dari latar belakang matematis, mekanisme, hingga perbandingan arsitekturnya.
+Untuk melawan krisis kriptografi yang belum pernah terjadi sebelumnya ini, **Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy: PQC)** dilahirkan, yang didasarkan pada masalah matematis baru yang sulit dipecahkan bahkan dengan menggunakan komputer kuantum. Berdasarkan hasil proses standarisasi PQC yang dipimpin oleh National Institute of Standards and Technology (NIST) Amerika Serikat, artikel ini akan menjelaskan secara sangat rinci mengenai algoritma PQC utama, mulai dari latar belakang matematis, mekanisme, hingga perbandingan arsitekturnya.
 
 ---
 
@@ -49,7 +49,7 @@ Setelah sekitar 6 tahun evaluasi, analisis, dan kompetisi kriptanalisis yang san
 - **FIPS 205 (SLH-DSA)**: Tanda tangan berbasis hash tanpa status berdasarkan SPHINCS+
 - **(Rencana untuk draf masa depan) FN-DSA**: Tanda tangan digital berdasarkan FALCON
 
-Algoritma yang terpilih ini bergantung pada "masalah kesulitan" matematis yang berbeda, memastikan keberagaman (Crypto Agility) sehingga sistem keseluruhan tidak akan runtuh jika kerentanan fatal ditemukan pada salah satu algoritma di masa depan. Dalam proses standarisasi, kriptografi berbasis kisi (Lattice-based cryptography) menjadi pemeran utama dari segi kinerja, sedangkan kriptografi berbasis hash dan kriptografi berbasis kode diadopsi sebagai cadangan yang kuat.
+Algoritma yang terpilih ini bergantung pada "masalah kesulitan" matematis yang berbeda, memastikan keberagaman ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Agility) sehingga sistem keseluruhan tidak akan runtuh jika kerentanan fatal ditemukan pada salah satu algoritma di masa depan. Dalam proses standarisasi, kriptografi berbasis kisi (Lattice-based cryptography) menjadi pemeran utama dari segi kinerja, sedangkan kriptografi berbasis hash dan kriptografi berbasis kode diadopsi sebagai cadangan yang kuat.
 
 ---
 
@@ -57,15 +57,15 @@ Algoritma yang terpilih ini bergantung pada "masalah kesulitan" matematis yang b
 
 Algoritma PQC diklasifikasikan ke dalam lima kategori utama berikut berdasarkan masalah matematis yang menjadi dasar keamanannya. Artikel ini secara khusus akan menggali lebih dalam tentang tiga pendekatan teratas.
 
-1. **Kriptografi Berbasis Kisi (Lattice-based Cryptography)**:
+1. **Kriptografi Berbasis Kisi (Lattice-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)**:
    Didasarkan pada Masalah Vektor Terpendek (SVP) dan Masalah Vektor Terdekat (CVP) dalam ruang kisi multidimensi, serta Masalah LWE yang diturunkan darinya. Ini merupakan inti dari standarisasi NIST, dengan contoh algoritma seperti Kyber, Dilithium, dan FALCON. Memiliki keseimbangan terbaik antara kecepatan pemrosesan, ukuran kunci publik, dan ukuran cipherteks (teks sandi), menjadikannya ideal untuk penggunaan serbaguna.
-2. **Kriptografi Berbasis Hash (Hash-based Cryptography)**:
+2. **Kriptografi Berbasis Hash (Hash-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)**:
    Keamanannya hanya bergantung pada "ketahanan bentrokan (collision resistance)" dan "sifat satu arah (one-wayness)" dari fungsi hash kriptografis (seperti SHA-2 dan SHAKE). Hanya dapat diterapkan pada tanda tangan digital (seperti SPHINCS+), namun bukti keamanannya adalah yang paling kuat, dan ketahanannya terhadap serangan matematis yang belum diketahui sangat tinggi.
-3. **Kriptografi Berbasis Kode (Code-based Cryptography)**:
+3. **Kriptografi Berbasis Kode (Code-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)**:
    Didasarkan pada teori kode koreksi kesalahan, bergantung pada kesulitan Masalah Dekode Sindrom (Syndrome Decoding Problem). Classic McEliece yang diusulkan pada tahun 1970-an adalah algoritma yang paling representatif, dengan sejarah dan rekam jejak keamanan yang sangat panjang, namun di sisi lain ukuran kunci publiknya sangat besar, mencapai satuan megabita.
-4. **Kriptografi Polinomial Multivariat (Multivariate Polynomial Cryptography)**:
+4. **Kriptografi Polinomial Multivariat (Multivariate Polynomial [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)**:
    Didasarkan pada kesulitan menemukan solusi untuk sistem persamaan kuadrat multivariat pada medan berhingga (Masalah MQ). Terutama diusulkan untuk tanda tangan digital (seperti Rainbow), tetapi selama putaran final NIST, metode serangan kuat ditemukan yang memungkinkan algoritma tersebut dibobol hanya dalam beberapa hari menggunakan satu komputer pribadi, sehingga banyak algoritma dari jenis ini keluar dari standar.
-5. **Kriptografi Berbasis Isogeni (Isogeny-based Cryptography)**:
+5. **Kriptografi Berbasis Isogeni (Isogeny-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)**:
    Didasarkan pada masalah pencarian jalur dalam grafik isogeni dari kurva eliptik. Ukuran kuncinya sangat kecil dan diharapkan menjadi penerus yang sah untuk ECC. Namun, kandidat finalnya yaitu "SIKE", sepenuhnya dipecahkan hanya dalam beberapa jam di PC biasa menggunakan matematika klasik (seperti serangan Castryck-Decru) pada tahun 2022. Ini menjadi akhir dramatis yang melambangkan kesulitan dan kengerian dalam mendesain PQC.
 
 ---
@@ -294,7 +294,7 @@ Dengan selesainya proses standarisasi oleh NIST dan penerbitan standar FIPS seca
 
 Namun, mengalihkan seluruh sistem sepenuhnya secara mendadak ke algoritma kriptografi yang baru memiliki risiko yang sangat tinggi. Misalnya, jika seorang matematikawan jenius dalam beberapa tahun ke depan menemukan teknik serangan fatal terhadap kriptografi kisi seperti Kyber (suatu cacat matematis yang bahkan dapat diselesaikan oleh komputer klasik), maka sistem mana pun yang bergantung padanya akan segera terekspos tanpa perlindungan sedikit pun.
 
-Pendekatan yang realistis dan direkomendasikan untuk memitigasi risiko ketidakpastian ini adalah menggunakan "**Kriptografi Hibrida (Hybrid Cryptography)**".
+Pendekatan yang realistis dan direkomendasikan untuk memitigasi risiko ketidakpastian ini adalah menggunakan "**Kriptografi Hibrida (Hybrid [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)**".
 
 Dalam Kriptografi Hibrida, kriptografi klasik saat ini yang memiliki rekam jejak panjang (seperti Kriptografi Kurva Eliptik X25519) dan PQC baru (seperti Kyber768) digunakan secara bersamaan untuk melakukan pertukaran kunci. Masing-masing algoritma digunakan untuk menghasilkan komponen kunci simetris secara mandiri. Kemudian, pada tahap akhir, komponen-komponen ini dicampur menggunakan Fungsi Derivasi Kunci (KDF: Key Derivation Function) yang aman guna menghasilkan rahasia utama (master secret) yang final.
 
@@ -310,7 +310,7 @@ graph TD
 
 Dengan metode ini, dicapai keamanan dua lapis yang kokoh: "bahkan jika komputer kuantum terwujud dan mematahkan ECC, Kyber akan melindungi komunikasi", dan sebaliknya, "bahkan jika cacat matematis yang tidak diketahui ditemukan pada Kyber, ECC akan melindungi komunikasi". Contoh representatifnya adalah draf **X25519MLKEM768 (sebelumnya X25519Kyber768)**, yang saat ini sedang distandarisasi di IETF. Komunikasi antara peramban web saat ini dan server-server mutakhir benar-benar menggunakan metode hibrida ini.
 
-Selain itu, konsep **Crypto Agility (Kelincahan Kriptografi)**, yakni "membangun arsitektur yang tidak bergantung secara berlebihan pada satu algoritma kriptografi tertentu, dan mampu beralih dengan cepat ke algoritma lain (misalnya dari Kyber ke McEliece, atau dari Dilithium ke SPHINCS+) apabila algoritma tersebut terkompromi", akan menjadi persyaratan mutlak dalam pengembangan sistem di masa mendatang.
+Selain itu, konsep **[Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Agility (Kelincahan Kriptografi)**, yakni "membangun arsitektur yang tidak bergantung secara berlebihan pada satu algoritma kriptografi tertentu, dan mampu beralih dengan cepat ke algoritma lain (misalnya dari Kyber ke McEliece, atau dari Dilithium ke SPHINCS+) apabila algoritma tersebut terkompromi", akan menjadi persyaratan mutlak dalam pengembangan sistem di masa mendatang.
 
 ---
 
@@ -324,7 +324,7 @@ Pertarungan antara komputer kuantum dan kriptografi merupakan area yang paling m
 
 ---
 *Referensi:*
-* *NIST Post-Quantum Cryptography Standardization Program*
+* *NIST Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
 * *FIPS 204: Module-Lattice-Based Digital Signature Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*

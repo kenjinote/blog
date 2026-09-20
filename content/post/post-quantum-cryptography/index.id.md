@@ -18,15 +18,15 @@ Pada tahun 1994, Peter Shor menerbitkan "Algoritma Shor", yang membuktikan secar
 
 Lebih parah lagi, ada metode serangan yang disebut "Harvest Now, Decrypt Later (Curi data sekarang dan simpan, dekripsi nanti saat kriptografi dapat dipecahkan)". Data yang perlu dirahasiakan selama beberapa dekade, seperti informasi rahasia negara, kekayaan intelektual perusahaan, dan informasi biometrik individu, mungkin telah menjadi sasaran pencurian dengan premis bahwa mereka akan didekripsi di masa depan.
 
-Untuk mengatasi krisis yang belum pernah terjadi sebelumnya ini, kriptografer dan lembaga penelitian di seluruh dunia mengerahkan seluruh upaya untuk mengembangkan teknologi kriptografi generasi berikutnya yang dapat mempertahankan keamanan dari serangan komputer kuantum, yaitu **Kriptografi Pasca-Kuantum (PQC: Post-Quantum Cryptography)** . Artikel ini akan menjelaskan secara rinci mulai dari dasar-dasar PQC, mekanisme algoritma utama, hingga tren standardisasi global terbaru yang didorong oleh Institut Nasional Standar dan Teknologi AS (NIST).
+Untuk mengatasi krisis yang belum pernah terjadi sebelumnya ini, kriptografer dan lembaga penelitian di seluruh dunia mengerahkan seluruh upaya untuk mengembangkan teknologi kriptografi generasi berikutnya yang dapat mempertahankan keamanan dari serangan komputer kuantum, yaitu **Kriptografi Pasca-Kuantum (PQC: Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)** . Artikel ini akan menjelaskan secara rinci mulai dari dasar-dasar PQC, mekanisme algoritma utama, hingga tren standardisasi global terbaru yang didorong oleh Institut Nasional Standar dan Teknologi AS (NIST).
 
 ---
 
 ## Apa itu Kriptografi Pasca-Kuantum (PQC)?
 
-Kriptografi Pasca-Kuantum (Post-Quantum Cryptography, PQC) adalah istilah umum untuk algoritma kriptografi yang dirancang agar dapat beroperasi di komputer klasik yang ada, namun tetap tahan terhadap serangan oleh komputer kuantum skala besar di masa depan (seperti Algoritma Shor).
+Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy, PQC) adalah istilah umum untuk algoritma kriptografi yang dirancang agar dapat beroperasi di komputer klasik yang ada, namun tetap tahan terhadap serangan oleh komputer kuantum skala besar di masa depan (seperti Algoritma Shor).
 
-Teknologi yang sering dibingungkan adalah "Kriptografi Kuantum (Quantum Cryptography)" dan "Distribusi Kunci Kuantum (QKD)", namun ini adalah pendekatan yang sama sekali berbeda. Kriptografi Kuantum (QKD) adalah teknologi berbasis perangkat keras yang menggunakan hukum fisika mekanika kuantum (seperti sifat di mana status berubah saat diamati) untuk membuat penyadapan di jalur komunikasi tidak mungkin secara fisik. Ini membutuhkan serat optik khusus atau peralatan khusus, dan memiliki tantangan seperti biaya implementasi serta batasan jarak.
+Teknologi yang sering dibingungkan adalah "Kriptografi Kuantum (Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)" dan "Distribusi Kunci Kuantum (QKD)", namun ini adalah pendekatan yang sama sekali berbeda. Kriptografi Kuantum (QKD) adalah teknologi berbasis perangkat keras yang menggunakan hukum fisika mekanika kuantum (seperti sifat di mana status berubah saat diamati) untuk membuat penyadapan di jalur komunikasi tidak mungkin secara fisik. Ini membutuhkan serat optik khusus atau peralatan khusus, dan memiliki tantangan seperti biaya implementasi serta batasan jarak.
 
 Di sisi lain, **PQC adalah teknologi kriptografi berbasis perangkat lunak yang murni berdasar pada "matematika"** . Oleh karena itu, ia dapat diintegrasikan sebagai pembaruan perangkat software ke infrastruktur internet yang ada, server, ponsel pintar, peramban, dan lainnya, sehingga memiliki penerapan yang sangat tinggi dalam dunia nyata. Perusahaan TI dan lembaga pemerintah di seluruh dunia kini menganggap penting dan mendesak untuk menggantikan (migrasi) RSA dan ECC yang saat ini digunakan dengan PQC ini.
 
@@ -53,7 +53,7 @@ graph LR
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-### 1. Kriptografi Berbasis Kisi (Lattice-based Cryptography)
+### 1. Kriptografi Berbasis Kisi (Lattice-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 
 Saat ini, "kriptografi kisi" adalah yang paling menjanjikan dan menjadi arus utama di bidang PQC. Kriptografi kisi mendasarkan keamanannya pada masalah titik-titik yang tersusun teratur (titik kisi) dalam ruang multidimensi. Masalah yang terkenal termasuk "Masalah Vektor Terpendek (SVP: Shortest Vector Problem)" dan "Masalah Pembelajaran dengan Kesalahan (LWE: Learning With Errors)".
 
@@ -67,7 +67,7 @@ Bayangkan titik-titik yang tak terhitung jumlahnya tersusun dalam pola kisi dala
 
 Sebagian besar algoritma yang saat ini distandarisasi oleh NIST (seperti ML-KEM dan ML-DSA) mengadopsi kriptografi berbasis kisi ini.
 
-### 2. Kriptografi Berbasis Hash (Hash-based Cryptography)
+### 2. Kriptografi Berbasis Hash (Hash-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 
 Kriptografi berbasis hash adalah algoritma PQC yang dikhususkan untuk tanda tangan digital. Keamanannya murni bergantung pada ketahanan terhadap benturan dan fungsi satu arah dari "fungsi hash kriptografis" yang aman, seperti SHA-2 atau SHA-3.
 
@@ -85,7 +85,7 @@ Ini dimulai dengan skema tanda tangan sekali pakai (one-time signature) yang dis
 
 NIST menstandarisasi "SLH-DSA (sebelumnya SPHINCS+)" sebagai tanda tangan berbasis hash yang stateless.
 
-### 3. Kriptografi Berbasis Polinomial Multivariabel (Multivariate Cryptography)
+### 3. Kriptografi Berbasis Polinomial Multivariabel (Multivariate [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 
 Kriptografi polinomial multivariabel mendasarkan keamanannya pada kesulitan menyelesaikan sistem polinomial kuadratik yang memiliki banyak variabel (Masalah MQ: Multivariate Quadratic problem). Masalah ini diketahui merupakan NP-hard.
 
@@ -100,7 +100,7 @@ Pengirim membuat ciphertext (tanda tangan) dengan mensubstitusikan plaintext (at
 - Ukuran kunci publik sangat besar (bisa mencapai puluhan hingga ratusan kilobyte).
 - Di masa lalu, beberapa algoritma yang menonjol (seperti Rainbow) telah dipecahkan oleh serangan klasik, sehingga sedikit lebih sulit untuk membangun kepercayaan terhadap keamanannya dibandingkan dengan metode lain.
 
-### 4. Kriptografi Berbasis Kode (Code-based Cryptography)
+### 4. Kriptografi Berbasis Kode (Code-based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 
 Kriptografi berbasis kode adalah penerapan teori "kode koreksi kesalahan" yang digunakan untuk memperbaiki kesalahan di jalur komunikasi ke dalam kriptografi. "Kriptografi McEliece" yang diusulkan pada tahun 1978 adalah yang paling terkenal, dan merupakan salah satu yang tertua di PQC.
 
@@ -141,7 +141,7 @@ Pada tahun 2024, NIST akhirnya mengumumkan tiga algoritma berikut sebagai Standa
 
 ### Mengejar Keragaman Lebih Lanjut
 
-Meskipun NIST telah menyelesaikan proses standardisasi awal, mereka terus mencari algoritma tambahan. Mengingat bahwa standarnya cenderung "kriptografi kisi", memastikan **Keragaman Kripto (Crypto Diversity)** dianggap sangat penting. Evaluasi kriptografi berbasis kode dan lainnya sedang berlangsung sebagai standar cadangan untuk pembagian kunci, dan fondasi PQC akan menjadi lebih kuat di masa depan.
+Meskipun NIST telah menyelesaikan proses standardisasi awal, mereka terus mencari algoritma tambahan. Mengingat bahwa standarnya cenderung "kriptografi kisi", memastikan **Keragaman Kripto ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Diversity)** dianggap sangat penting. Evaluasi kriptografi berbasis kode dan lainnya sedang berlangsung sebagai standar cadangan untuk pembagian kunci, dan fondasi PQC akan menjadi lebih kuat di masa depan.
 
 ---
 
@@ -155,9 +155,9 @@ Karena algoritma PQC masih baru, mereka belum melalui "ujian waktu" seperti krip
 
 ### Mencapai Agility Kripto (Kelincahan Kriptografi)
 
-Hal terpenting yang perlu disadari oleh perusahaan dan pengembang sistem ke depan adalah memastikan **"Agility Kripto (Crypto-Agility)"** . Desain arsitektur yang fleksibel yang memungkinkan algoritma kriptografi untuk dipertukarkan atau diperbarui dengan cepat tanpa menghentikan sistem saat cacat ditemukan pada algoritma atau standar baru muncul sangatlah penting.
+Hal terpenting yang perlu disadari oleh perusahaan dan pengembang sistem ke depan adalah memastikan **"Agility Kripto ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)-Agility)"** . Desain arsitektur yang fleksibel yang memungkinkan algoritma kriptografi untuk dipertukarkan atau diperbarui dengan cepat tanpa menghentikan sistem saat cacat ditemukan pada algoritma atau standar baru muncul sangatlah penting.
 
-Langkah pertama yang penting menuju migrasi PQC adalah membuat Inventaris Kriptografi (CBOM: Cryptography Bill of Materials) untuk memahami secara akurat "di mana", "kriptografi apa", dan "untuk tujuan apa" ia digunakan di dalam sistem internal.
+Langkah pertama yang penting menuju migrasi PQC adalah membuat Inventaris Kriptografi (CBOM: [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy Bill of Materials) untuk memahami secara akurat "di mana", "kriptografi apa", dan "untuk tujuan apa" ia digunakan di dalam sistem internal.
 
 ---
 
