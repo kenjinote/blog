@@ -1,9 +1,3 @@
 ---
-{
-  "title": "Matemáticas",
-  "aliases": [
-    "/es/categories/matemáticas/",
-    "/es/categories/math/"
-  ]
-}
+title: "Matemáticas"
 ---
